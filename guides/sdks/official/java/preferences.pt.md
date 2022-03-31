@@ -5,27 +5,29 @@
 [[[
 ```java
 
+// SDK do Mercado Pago
+import com.mercadopago.MercadoPagoConfig;
+
+// Configure as credenciais
+MercadoPagoConfig.setAccessToken("PROD_ACCESS_TOKEN");
+
+// Crie um cliente da API de preferência
 PreferenceClient client = new PreferenceClient();
 
+// Crie um item para adicionar à preferência
 List<PreferenceItemRequest> items = new ArrayList<>();
 PreferenceItemRequest item =
    PreferenceItemRequest.builder()
-       .title("Dummy Title")
-       .description("Dummy description")
-       .pictureUrl("http://www.myapp.com/myimage.jpg")
+       .title("Meu produto")
        .quantity(1)
-       .currencyId("US")
-       .unitPrice(new BigDecimal("10"))
+       .unitPrice(new BigDecimal("100"))
        .build();
 items.add(item);
 
-List<PreferenceTrackRequest> tracks = new ArrayList<>();
-PreferenceTrackRequest googleTrack = PreferenceTrackRequest.builder().type("google_ad").build();
+// Associe o item à preferência
+PreferenceRequest request = PreferenceRequest.builder().items(items).build();
 
-tracks.add(googleTrack);
-
-PreferenceRequest request = PreferenceRequest.builder().items(items).tracks(tracks).build();
-
+// Salve a preferência
 client.create(request);
 
 ```

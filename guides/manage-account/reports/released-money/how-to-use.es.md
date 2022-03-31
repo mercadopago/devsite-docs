@@ -29,14 +29,14 @@ Verás el dinero disponible de las operaciones liquidadas en las columnas `NET_C
 
 Si esto pasa, el reporte sigue siendo válido. El dinero vuelve a tu cuenta y la operación aparecerá en el reporte como una nueva línea en la columna `NET_CREDIT`.
 
-----[mlm, mlb, mlc, mco, mlu, mla]----
+----[mlm, mlb, mlc, mco, mla]----
 > NOTE
 >
 > Nota
 >
 > Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/glossary) de ------------ ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mla, mpe]---- para revisarlo cuando lo necesites o quieras consultar algún término técnico.------------
 
-----[mpe]----
+----[mpe, mlu]----
 > Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/glossary) de Liberaciones para revisarlo cuando lo necesites o quieras consultar algún término técnico.
 ------------
 

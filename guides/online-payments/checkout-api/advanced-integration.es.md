@@ -57,22 +57,27 @@ mercadopago.customers.create(customer_data).then(function (customer) {
 ```
 ```java
 
-import com.mercadopago.*;
-MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+MercadoPagoConfig.setAccessToken("ENV_ACCESS_TOKEN");
 
-Customer customer = new Customer();
-customer.setEmail("john@yourdomain.com");
-customer.save();
+CustomerClient customerClient = new CustomerClient();
+CustomerCardClient customerCardClient = new CustomerCardClient();
 
-Issuer issuer = new Issuer();
-issuer.setId("3245612");
+CustomerRequest customerRequest = CustomerRequest.builder()
+   .email("john@test.com")
+   .build();
+Customer customer = customerClient.create(customerRequest);
 
-Card card = new Card();
-card.setToken("9b2d63e00d66a8c721607214cedaecda");
-card.setCustomerId(customer.getId());
-card.setIssuer(issuer);
-card.setPaymentMethodId("debit_card");
-card.save();
+CustomerCardIssuer issuer = CustomerCardIssuer.builder()
+   .id("3245612")
+   .build();
+
+CustomerCardCreateRequest cardCreateRequest = CustomerCardCreateRequest.builder()
+   .token("9b2d63e00d66a8c721607214cedaecda")
+   .issuer(issuer)
+   .paymentMethodId("debit_card")
+   .build();
+
+customerCardClient.create(customer.getId(), cardCreateRequest);
 
 ```
 ```ruby
@@ -236,22 +241,27 @@ mercadopago.customers.search({
 ```
 ```java
 
-import com.mercadopago.*;
-MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+MercadoPagoConfig.setAccessToken("ENV_ACCESS_TOKEN");
 
-Customer customer = Customer.findById("247711297-jxOV430go9fx2e");
+CustomerClient customerClient = new CustomerClient();
+CustomerCardClient customerCardClient = new CustomerCardClient();
 
-Issuer issuer = new Issuer();
-issuer.setId("3245612");
+CustomerRequest customerRequest = CustomerRequest.builder()
+   .email("john@test.com")
+   .build();
+Customer customer = customerClient.create(customerRequest);
 
-Card card = new Card();
-card.setToken("9b2d63e00d66a8c721607214cedaecda");
-card.setCustomerId(customer.getID());
-card.setIssuer(issuer);
-card.setPaymentMethodId("debit_card");
-card.save();
+CustomerCardIssuer issuer = CustomerCardIssuer.builder()
+   .id("3245612")
+   .build();
 
-System.out.print(card.toString());
+CustomerCardCreateRequest cardCreateRequest = CustomerCardCreateRequest.builder()
+   .token("9b2d63e00d66a8c721607214cedaecda")
+   .issuer(issuer)
+   .paymentMethodId("debit_card")
+   .build();
+
+customerCardClient.create(customer.getId(), cardCreateRequest);
 
 ```
 ```ruby
@@ -396,8 +406,12 @@ Primero, obtén el listado de guardadas para que tu cliente pueda elegir con cu�
 ```
 ```java
 
-  Customer customer = Customer.findById(customerId);
-  ArrayList<Cards> cards = customer.getCards();
+MercadoPagoConfig.setAccessToken("ENV_ACCESS_TOKEN");
+
+CustomerClient customerClient = new CustomerClient();
+
+Customer customer = customerClient.get("247711297-jxOV430go9fx2e");
+customerClient.listCards(customer.getId());
 
 ```
 ```ruby
@@ -553,20 +567,21 @@ mercadopago.payment.create(payment_data).then(function (data) {
 ```
 ```java
 
-import com.mercadopago.*;
-MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+MercadoPagoConfig.setAccessToken("ENV_ACCESS_TOKEN");
 
-Payer payer = new Payer();
-payer.setType(Payer.type.customer);
-payer.setId("123456789-jxOV430go9fx2e");
+PaymentClient client = new PaymentClient();
 
-Payment payment = new Payment();
-payment.setTransactionAmount(100f);
-payment.setInstallments(1);
-payment.setToken('ff8080814c11e237014c1ff593b57b4d');
-payment.setPayer(payer);
+PaymentCreateRequest request = PaymentCreateRequest.builder()
+   .transactionAmount(new BigDecimal("100"))
+   .installments(1)
+   .token("ff8080814c11e237014c1ff593b57b4d")
+   .payer(PaymentPayerRequest.builder()
+       .type("customer")
+       .id("247711297-jxOV430go9fx2e")
+       .build())
+   .build();
 
-payment.save();
+client.create(request);
 
 ```
 ```ruby
@@ -685,10 +700,15 @@ Puedes buscar información sobre tu cliente si lo necesitas. Por ejemplo, en el 
 ```
 ```java
 
-  Map<String, String> filters = new HashMap<>();
-  filters.put("email", "test_payer_12345@testuser.com");
+CustomerClient client = new CustomerClient();
 
-  ArrayList<Customer> customers = Customer.search(filters, false).resources();
+Map<String, Object> filters = new HashMap<>();
+filters.put("email", "test_payer_12345@testuser.com");
+
+MPSearchRequest searchRequest =
+   MPSearchRequest.builder().offset(0).limit(0).filters(filters).build();
+
+client.search(searchRequest);
 
 
 ```
@@ -806,8 +826,12 @@ curl -X GET \
 ```
 ```java
 
-  Customer customer = Customer.findById(customerId);
-  ArrayList<Cards> cards = customer.getCards();
+MercadoPagoConfig.setAccessToken("ENV_ACCESS_TOKEN");
+
+CustomerClient customerClient = new CustomerClient();
+
+Customer customer = customerClient.get("247711297-jxOV430go9fx2e");
+customerClient.listCards(customer.getId());
 
 ```
 ```ruby
@@ -925,33 +949,33 @@ mercadopago.customers.update(customer_data).then(function (customer) {
 
 ```java
 
-import com.mercadopago.*;
-MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+MercadoPagoConfig.setAccessToken("ENV_ACCESS_TOKEN");
 
-Phone phone = new Phone();
-phone.setAreaCode("[FAKER][PHONE_NUMBER][AREA_CODE]");
-phone.setNumber("001234567");
+CustomerClient client = new CustomerClient();
 
-DefaultAddress defaultAddress = new DefaultAddress();
-defaultAddress.setZipCode("[FAKER][ADDRESS][ZIP_CODE]");
-defaultAddress.setStreetName("[FAKER][ADDRESS][STREET_NAME]");
-defaultAddress.setStreetNumber(2);
+CustomerRequest request = CustomerRequest.builder()
+   .email("user@user.com")
+   .firstName("John")
+   .lastName("Wagner")
+   .defaultAddress("Casa")
+   .phone(PhoneRequest.builder()
+       .areaCode("11")
+       .number("001234567")
+       .build())
+   .identification(IdentificationRequest.builder()
+       .type("CPF")
+       .number("12341234")
+       .build())
+   .description("Informações do cliente")
+   .defaultCard("None")
+   .address(CustomerAddressRequest.builder()
+       .zipCode("52")
+       .streetName("Av. das Nações Unidas")
+       .streetNumber(2)
+       .build())
+   .build();
 
-Identification identification = new Identification();
-identification.setType("[FAKER][IDENTIFICATION][TYPE]");
-identification.setNumber(12341234);
-
-Customer customer = new Customer();
-customer.setEmail("user@user.com");
-customer.setFirstName("john");
-customer.setLastName("wagner");
-customer.setDefaultAddress("Casa");
-customer.setPhone(phone);
-customer.setIdentification(identification);
-customer.setDescription("Información del cliente");
-customer.setDefaultCard("None");
-cusotmer.setAddress(defaultAddress);
-customer.update();
+client.update("247711297-jxOV430go9fx2e", request);
 
 ```
 ```ruby

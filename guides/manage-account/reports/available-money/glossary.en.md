@@ -11,7 +11,7 @@ We know, some terms are technical and you may not be familiar with all of them. 
 
 | Name on the report column | What it means |
 | --- | --- |
-| DATE | Release, block or unlock date, as appropriate. |
+| DATE | Release, blocking or unblocking date, as applicable. |
 | SOURCE_ID | Operation ID in Mercado Pago (for example, the payment of a sale). |
 | EXTERNAL_REFERENCE | <br/> ID that helps identify the origin of the operation. For example, it can be the sale through the order ID or the shipment (if it is a cart purchase) or the own ID provided by the seller in case of an external integration. <br/><br/> Keep in mind that it is possible that this field is empty for some cases such as ticket payment or money transfer, among others. <br/> <br/> |
 | RECORD_TYPE | <br/> `initial_available_balance` → Money available from the previous period.<br/><br/> `block` → Money blocked by a complaint or chargeback. <br/><br/> `unblock` → Money released because a complaint or chargeback was resolved. <br/><br/> `release` → Money from a collection that was released. <br/><br/> `fullblock` → Money blocked by restriction. <br/><br/> `subtotal` → Sum of the amounts of each record type. <br/><br/> `total` → Total Net Amount. <br/> <br/> |
@@ -30,7 +30,7 @@ We know, some terms are technical and you may not be familiar with all of them. 
 | PAYMENT METHOD | Payment method. ----[mla]---- [It can be](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods/#bookmark_argentina) ------------ ----[mlb]---- [It can be](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods/#bookmark_brasil) ------------ ----[mpe]---- [It can be](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods/#bookmark_perú) ------------ ----[mco]---- [It can be](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods/#bookmark_colombia) ------------ ----[mlm]---- [It can be](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods/#bookmark_méxico) ------------ ----[mlu]---- [It can be](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods/#bookmark_uruguay) ------------ ----[mlc]---- [It can be](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods/#bookmark_chile) ------------ |
 | TAX_DETAIL | <br/> Description of the tax withheld by operation in `TAXES_AMOUNT`. ----[mla]---- You can consider the following values depending on the jurisdiction: <br/>cordoba<br/>corrientes<br/>mendoza<br/>la_pampa<br/>santa_fe<br/>tucuman<br/>entre_rios<br/>catamarca<br/>neuquen<br/>santiago_del_estero<br/>rio_negro<br/>jujuy ------------ <br/><br/> |
 | TAX_AMOUNT_TELCO | It is the value of the tax on telecommunications companies that is deducted from the gross value. |
-| TRANSACTION_APPROVAL_DATE | Date of approval of the operation. |
+| TRANSACTION_APPROVAL_DATE | Date of operation approval. |
 | POS_ID | Cash ID if the payment is made through a physical commerce. |
 | POS_NAME | Cash name for the payment made through a physical commerce. |
 | EXTERNAL_POS_ID | User-defined cashier ID for payment made through a physical commerce. |

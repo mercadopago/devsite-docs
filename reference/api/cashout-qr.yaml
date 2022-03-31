@@ -1,0 +1,90 @@
+openapi: 3.0.0
+servers:
+  - url: https://api.mercadopago.com
+info:
+  title: Mercado Pago API Reference
+  version: '1.0'
+paths:
+  /instore/orders/{merchant_order_id}/confirmation:
+    post:
+      tags:
+        - $ref: '#/tags/cash-out'
+        - $ref: '#/tags/qr-code'
+      summary: Confirm cashout status
+      description: After complete a cashout transaction physically, confirm the status of the money delivered. This endpoint works until 5 minutes after the transaction was done
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                status:
+                  $ref: '#/components/schemas/status'
+                status_detail:
+                  $ref: '#/components/schemas/status_detail'
+                description:
+                  type: string
+                  description: Custom description of status.
+                  example: connection lost
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  order_id:
+                    type: number
+                    example: 123456789
+                    description: Merchant order id asociated to transaction
+                  status:
+                    type: string
+                    example: confirmed
+                    description: Transaction status
+        '400':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                  type: string
+                  enum:
+                    - 400-invalid_status_detail--the-status-detail-is-not-correct
+                    - 400-invalid_status--the-cashout-status-is-not-correct
+        '409':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                  type: string
+                  enum:
+                    - 409-already_confirmed--Order-already-confirmed-
+                    - 409-already_notified--Order-already-notified-with-status:-{STATUS}     
+components:
+  schemas:
+    status:
+      type: string
+      description: Status of the money. If the status of cashout and payment (if applies) is not confirmed, the amount will be refunded to the payer.
+      example: confirmed
+      enum:
+        - confirmed -- the money was delivered correctly to the payer.
+        - fail -- the transaction failed by one or some errors.
+        - cancelled -- cashout cancelled for any reason.
+    status_detail:
+      type: string
+      description: Detail of the status.
+      example: confirmed
+      enum:
+        - internal_comunication_error -- an error occurs in seller infraestructure (only for fail status).
+        - manually_cancelled -- cancelled manually for the cashier (only for cancelled status).
+        - confirmation_not_received -- the notification for this transaction was not received by the seller (only for cancelled status).
+        - merchant_order_not_found -- merchant order associated to the transaction not found (only for cancelled status).
+        - other -- other error (only for cancelled and fail status).
+        - confirmed -- cashout confirmed (only for confirmed status).
+    

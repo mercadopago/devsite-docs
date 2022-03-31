@@ -37,7 +37,7 @@ Abaixo explicaremos como indicar as URLs que serão notificadas e como configura
 
 É possível configurar a URL de notificação de modo mais específico, para cada pagamento utilizando o campo `notification_url`. Veja abaixo como fazer isso com uso dos SDKs.
 
-1. No campo `notificaction_url`, indique a URL da qual serão recebidas as notificações como exemplificado abaixo.
+1. No campo `notification_url`, indique a URL da qual serão recebidas as notificações como exemplificado abaixo.
 
 [[[
 ```php
@@ -98,30 +98,30 @@ mercadopago.payment.save(payment_data)
   });
 ```
 ```java
-MercadoPago.SDK.setAccessToken("YOUR_ACCESS_TOKEN");
+MercadoPagoConfig.setAccessToken("YOUR_ACCESS_TOKEN");
 
-Payment payment = new Payment();
-payment.setTransactionAmount(Float.valueOf(request.getParameter("transactionAmount")))
-       .setToken(request.getParameter("token"))
-       .setDescription(request.getParameter("description"))
-       .setInstallments(Integer.valueOf(request.getParameter("installments")))
-       .setPaymentMethodId(request.getParameter("paymentMethodId"))
-       .setNotificationUrl("http://requestbin.fullcontact.com/1ogudgk1");
+PaymentClient client = new PaymentClient();
 
-Identification identification = new Identification();----[mla, mlb, mlu, mlc, mpe, mco]----
-identification.setType(request.getParameter("docType"))
-              .setNumber(request.getParameter("docNumber"));------------ ----[mlm]----
-identification.setNumber(request.getParameter("docNumber"));------------
+PaymentCreateRequest createRequest =
+   PaymentCreateRequest.builder()
+       .transactionAmount(new BigDecimal("100"))
+       .token("token")
+       .description("description")
+       .installments(1)
+       .paymentMethodId("visa")
+       .notificationUrl("http://test.com")
+       .payer(
+           PaymentPayerRequest.builder()
+               .email("test@test.com")
+               .identification(
+                   IdentificationRequest.builder()
+                       .type("CPF")
+                       .number("19119119100")
+                       .build())
+               .build())
+       .build();
 
-Payer payer = new Payer();
-payer.setEmail(request.getParameter("email"))
-     .setIdentification(identification);
-     
-payment.setPayer(payer);
-
-payment.save();
-
-System.out.println(payment.getStatus());
+client.create(createRequest);
 
 ```
 ```ruby

@@ -70,23 +70,22 @@ var payer = {
 ```
 ```java
 // ...
-Payer payer = new Payer();
-payer.setName("Charles")
-     .setSurname("Luevano")
-     .setEmail("charles@hotmail.com")
-     .setDateCreated("2018-06-02T12:58:41.425-04:00")
-     .setPhone(new Phone()
-        .setAreaCode("")
-        .setPhoneNumber("949 128 866"))
-      ----[mla, mlb, mlu, mco, mlc, mpe]----
-     .setIdentification(new Identification()
-        .setType("DNI")
-        .setNumber("12345678"))
-      ------------
-     .setAddress(new Address()
-        .setStreetName("Cuesta Miguel Armendáriz")
-        .setBuildingNumber("1004")
-        .setZipCode("11020"));
+PreferencePayerRequest payer =
+   PreferencePayerRequest.builder()
+       .name("Joao")
+       .surname("Silva")
+       .email("user@email.com")
+       .dateCreated(OffsetDateTime.now())
+       .phone(PhoneRequest.builder().areaCode("11").number("4444-4444").build())
+       .identification(
+           IdentificationRequest.builder().type("CPF").number("19119119100").build())
+       .address(
+           AddressRequest.builder()
+               .streetName("Street")
+               .streetNumber("123")
+               .zipCode("06233200")
+               .build())
+       .build();
 // ...
 ```
 ```ruby
@@ -208,14 +207,15 @@ items: [
 ```
 ```java
 // ...
-Item item = new Item();
-item.setId("1234")
-    .setTitle("Lightweight Paper Table")
-    .setDescription("Inspired by the classic foldable art of origami")
-    .setCategoryId("home")
-    .setQuantity(3)
-    .setCurrencyId("[FAKER][CURRENCY][ACRONYM]")
-    .setUnitPrice((float) 55.41);
+PreferenceItemRequest item = PreferenceItemRequest.builder()
+   .id("1234")
+   .title("Lightweight Paper Table")
+   .description("Inspired by the classic foldable art of origami")
+   .categoryId("home")
+   .quantity(3)
+   .currencyId("BRL")
+   .unitPrice(new BigDecimal("100"))
+   .build();
 // ...
 ```
 ```ruby
@@ -339,14 +339,15 @@ preference = {
 }
 ```
 ```java
-Preference preference = new Preference();
+PreferenceBackUrlsRequest backUrls =
 // ...
-BackUrls backUrls = new BackUrls(
-                    "https://www.tu-sitio/success",
-                    "http://www.tu-sitio/pending",
-                    "http://www.tu-sitio/failure");
+   PreferenceBackUrlsRequest.builder()
+       .success("https://www.seu-site/success")
+       .pending("https://www.seu-site/pending")
+       .failure("https://www.seu-site/failure")
+       .build();
 
-preference.setBackUrls(backUrls);
+PreferenceRequest request = PreferenceRequest.builder().backUrls(backUrls).build();
 // ...
 ```
 ```ruby

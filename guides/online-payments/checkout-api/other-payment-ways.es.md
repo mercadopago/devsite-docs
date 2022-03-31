@@ -54,11 +54,10 @@ var response = await mercadopago.payment_methods.listAll();
 var payment_methods = response.body;
 ```
 ```java
-import com.mercadopago.*;
-MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+MercadoPagoConfig.setAccessToken("ENV_ACCESS_TOKEN");
 
-new PaymentMethod();
-MPResourceArray methods = PaymentMethod.all();
+PaymentMethodClient client = new PaymentMethodClient();
+client.list();
 
 ```
 ```ruby
@@ -3670,32 +3669,25 @@ mercadopago.payment.create(payment_data).then(function (data) {
 
 ```
 ```java
-import com.mercadopago.*;
+PaymentClient client = new PaymentClient();
 
-MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+PaymentCreateRequest paymentCreateRequest =
+   PaymentCreateRequest.builder()
+       .transactionAmount(new BigDecimal("100"))
+       .description("Título do produto")
+       .paymentMethodId("bolbradesco")
+       .dateOfExpiration(OffsetDateTime.of(2023, 1, 10, 10, 10, 10, 0, ZoneOffset.UTC))
+       .payer(
+           PaymentPayerRequest.builder()
+               .email("test@test.com")
+               .firstName("Test")
+               .lastName("User")
+               .identification(
+                   IdentificationRequest.builder().type("CPF").number("19119119100").build())
+               .build())
+       .build();
 
-Payment payment = new Payment();
-
-payment.setTransactionAmount(100f)
-       .setDescription("Título do produto")
-       .setPaymentMethodId("bolbradesco")
-       .setPayer(new Payer()
-           .setEmail("test@test.com")
-           .setFirstName("Test")
-           .setLastName("User")
-           .setIdentification(new Identification()
-               .setType("CPF")
-               .setNumber("19119119100"))
-           .setAddress(new Address()
-               .setZipCode("06233200")
-               .setStreetName("Av. das Nações Unidas")
-               .setStreetNumber(3003)
-               .setNeighborhood("Bonfim")
-               .setCity("Osasco")
-               .setFederalUnit("SP"))
-);
-
-payment.save();
+client.create(paymentCreateRequest);
 ```
 ```ruby
 require 'mercadopago'

@@ -84,16 +84,23 @@ mercadopago.preferences.create(preference)
 El modo billetera funciona agregando el atributo _purpose_ en la preferencia.
 ===
 // Crea un objeto de preferencia
-Preference preference = new Preference();
+PreferenceClient client = new PreferenceClient();
 
 // Crea un ítem en la preferencia
-Item item = new Item();
-item.setTitle("Mi producto")
-    .setQuantity(1)
-    .setUnitPrice((float) 75);
-preference.appendItem(item);
-preference.setPurpose("wallet_purchase");
-preference.save();
+PreferenceItemRequest item =
+   PreferenceItemRequest.builder()
+       .title("Meu produto")
+       .quantity(1)
+       .unitPrice(new BigDecimal("75"))
+       .build();
+
+List<PreferenceItemRequest> items = new ArrayList<>();
+items.add(item);
+
+PreferenceRequest request =
+   PreferenceRequest.builder().items(items).purpose("wallet_purchase").build();
+
+client.create(request);
 ```
 ```ruby
 ===
