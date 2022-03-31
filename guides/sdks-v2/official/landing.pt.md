@@ -4,8 +4,11 @@ content_section_with_media:
  - message: Com as bibliotecas de SDKs do Mercado Pago você pode reduzir o tempo de integração client-side e server-side.
  - media_image: /sdk/library-media-1.png
 ---
+--- mini_landing_separator ---
+
+>>>> Disponibilidade por país <<<<
 ---
-available_countries: mla, mlm, mco, mpe, mlu, mlm, mlc
+available_countries: mla, mlm, mco, mpe, mlu, mlm, mlc, mlb
 ---
 
 ---
@@ -19,7 +22,7 @@ bullet_section_with_media:
 ---
 bullet_section_with_media: 
  - title: Server-side
- - type: reversed
+ - type: normal
  - message: O uso dos SDKs de backend é opcional. Com eles, você pode obter funcionalidades server-side das nossas soluções de pagamento on-line como criar e saber o status de diferentes pagamentos, integrar pagamentos com cartão e outros meios de pagamento e fazer devoluções ou estornos.
  - image: /sdk/library-media-3.png
----
+—--
