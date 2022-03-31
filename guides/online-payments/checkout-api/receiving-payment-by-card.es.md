@@ -123,7 +123,7 @@ const cardForm = mp.cardForm({
     },
     cardExpirationDate: {
       id: "form-checkout__cardExpirationDate",
-      placeholder: "Data de vencimiento (MM/YYYY)",
+      placeholder: "Fecha de vencimiento (MM/YYYY)",
     },
     securityCode: {
       id: "form-checkout__securityCode",
@@ -402,7 +402,7 @@ payment_data = {
         "identification": {----[mla, mlb, mlu, mlc, mpe, mco]----
             "type": request.POST.get("identificationType"), ------------
             "number": request.POST.get("identificationNumber")
-        }
+        },
         "first_name": request.POST.get("cardholderName")
     }
 }
