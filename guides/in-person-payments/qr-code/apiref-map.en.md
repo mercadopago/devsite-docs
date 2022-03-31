@@ -22,12 +22,6 @@ The following actions are available for **QR Code**.
 |[Update POS](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/pos/_pos_id/put)|Renew the data of a Point of Sale.|
 |[Delete POS](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/pos/_pos_id/delete)|Delete a Point of Sale whenever you need it with the ID of the POS.|
 
-### Cashout
-
-|Action|Description|
-|---|---|
-|[Confirm cashout status](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/cashout-qr/_instore_orders_merchant_order_id_confirmation/post)| Confirm the cashout status.|
-
 ### Attended Model
 
 #### Instore Orders
