@@ -86,7 +86,6 @@ We have released the new version 5.7.4 for WooCommerce.
 >
 > [Check GitHub](https://github.com/mercadopago/cart-woocommerce/releases/tag/v5.7.4) for further details regarding this release.
 
-
 ### February 16th
 
 > CHANGELOG
