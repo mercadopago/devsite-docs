@@ -14,13 +14,3 @@ Ofrece la posibilidad de realizar una autorización antes de generar una captura
 
 Por ejemplo, para realizar una autorización a la hora de reservar un auto o con un precio estimado de una compra previo a su confirmación.
 
----
-## Próximos pasos
-
-> LEFT_BUTTON_RECOMMENDED_ES
->
-> Otras funcionalidades
->
-> Obtén más información sobre cómo realizar una reserva de fondos.
->
-> [Realiza una reserva de fondos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/checkout-api/reserve-funds)

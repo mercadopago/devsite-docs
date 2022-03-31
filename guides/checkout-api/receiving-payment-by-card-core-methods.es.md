@@ -599,21 +599,3 @@ Por último, es importante que estés siempre informado sobre la creación de nu
 
 [Configura notificaciones webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/webhooks/webhooks) o [notificaciones IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn/introduction).
 
----
-### Próximos pasos
-
-> LEFT_BUTTON_REQUIRED_ES
->
-> Prueba tu integración
->
-> Revisa que esté todo bien en tu integración con los usuarios de prueba.
->
-> [Prueba tu integración](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/testing)
-
-> RIGHT_BUTTON_RECOMMENDED_ES
->
-> Integra otros medios de pago
->
-> Conoce todas las opciones de pago disponibles y cómo ofrecerlas.
->
-> [Integra otros medios de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/other-payment-ways)

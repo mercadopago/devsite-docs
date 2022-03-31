@@ -3927,22 +3927,4 @@ For more information, check the [Refunds and Cancellations section](https://www.
 Check [credit times by payment method](https://www.mercadopago.com.br/ajuda/meios-de-pagamento-parcelamento_265) whenever you need to.
 
 ------------
----
 
-### Next steps
-
-> LEFT_BUTTON_RECOMMENDED_EN
->
-> Test your integration
->
-> Check that everything works in your integration with test users.
->
-> [Test your integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/test-integration)
-
-> RIGHT_BUTTON_RECOMMENDED_EN
->
-> Advanced integration
->
-> Enhance your integration and improve your sales management.
->
-> [Advanced integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/remember-customers-and-cards)

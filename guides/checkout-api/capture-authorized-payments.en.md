@@ -105,14 +105,3 @@ The answer will return that the payment is approved and accredited.
 >
 > If you don't add an amount, the total reserved amount will be captured.
 
-
----
-## Next steps
-
-> LEFT_BUTTON_RECOMMENDED_EN
->
-> Other features
->
-> Get more information about how to capture payments for less than the reserved amount.
->
-> [Capture payments for less than the reserved amount](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/capture-payments-less-amount)

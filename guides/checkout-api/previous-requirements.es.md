@@ -11,7 +11,7 @@ Las credenciales son las **claves que te proporcionamos para que puedas configur
 
 Para poder encontrarlas, ve la [sección de Credenciales]([FAKER][CREDENTIALS][URL]).
 
-> ¿Tienes dudas sobre credenciales? Lee [Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/credentials/credentials) para obtener más información.
+> ¿Tienes dudas sobre credenciales? Lee [Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/credentials/credentials) para obtener más información.
 
 ## Utiliza nuestras librerías siempre
 Te recomendamos usar las librerías oficiales para tu integración. Esto permite cuidar los datos sensibles de tus clientes, cumplir con los estándares de seguridad requeridos y estar siempre actualizado.
@@ -108,31 +108,4 @@ Al realizar tu integración, es necesario que tengas en cuenta todos los [requis
 
 Cuando tengas lista tu integración y quieras comenzar a recibir pagos, solo tienes que completar el formulario para ir producción desde la [sección de Credenciales]([FAKER][CREDENTIALS][URL]).
 
----
-### Próximos pasos
-----[mlb]----
-> LEFT_BUTTON_REQUIRED_ES
->
-> Integrar Checkout Transparente con tarjeta
->
-> Construye y configura tu propia experiencia de pagos.
->
-> [Integrar Checkout Transparente de Mercado Pago con tarjeta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/checkout-api/receiving-payment-by-card)
-------------
-----[mla, mlm, mpe, mco, mlu, mlc]----
-> LEFT_BUTTON_REQUIRED_ES
->
-> Integrar Checkout API con tarjeta
->
-> Construye y configura tu propia experiencia de pagos.
->
-> [Integrar Checkout API de Mercado Pago con tarjeta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/checkout-api/receiving-payment-by-card)
-------------
 
-> RIGHT_BUTTON_RECOMMENDED_ES
->
-> Referencias de API
->
-> Encuentra toda la información necesaria para interactuar con nuestras APIs.
->
-> [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference)

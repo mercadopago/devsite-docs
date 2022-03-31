@@ -6,21 +6,3 @@ Isto significa que seus clientes têm mais formas de te pagar e podem ter acesso
 
 ![Checkout-Wallet](/images/web-payment-checkout/cho-wallet-landing-pt.png)
 
----
-## Próximos passos
-
-> LEFT_BUTTON_RECOMMENDED_PT
->
-> Benefícios
->
-> Obtenha mais informações sobre os benefícios da carteira Mercado Pago.
->
-> [Benefícios da carteira do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/checkout-api/wallet-benefits)
-
-> RIGHT_BUTTON_RECOMMENDED_PT
->
-> Adicione-a ao seu site
->
-> Obtenha mais informações sobre como adicionar a carteira ao seu site.
->
-> [Como adicionar a carteira no seu site](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/checkout-api/wallet-addto-website)

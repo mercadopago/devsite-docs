@@ -203,13 +203,3 @@ It can be rejected or remain pending. Take into account that authorized funds ca
 > * You need to save the payment ID to complete the process.
 ------------
 
----
-## Next steps
-
-> LEFT_BUTTON_RECOMMENDED_EN
->
-> Other features
->
-> Get more information about how to capture an authorized payment.
->
-> [Capture an authorized payment](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/capture-authorized-payments)

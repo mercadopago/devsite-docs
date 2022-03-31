@@ -629,21 +629,3 @@ Se você quiser saber mais sobre outros eventos customizados, acesse nossa docum
 >
 > Se você deseja implementar seu servidor com alguma outra tecnologia, te deixamos um [exemplo completo do formulário de pagamento](https://drive.google.com/file/d/10csLR_4NwMbXtHObxZ1Ej9fvB2Zkr7AS/view?usp=sharing) no GitHub para que você possa fazer o download.
 
----
-### Próximos passos
-
-> LEFT_BUTTON_REQUIRED_PT
->
-> Teste sua integração
->
-> Confirme que está tudo bem com a sua integração e com os usuários de teste.
->
-> [Teste sua integração](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/testing)
-
-> RIGHT_BUTTON_RECOMMENDED_PT
->
-> Integrar outros meios de pagamento
->
-> Conheça todas as opções de pagamentos disponíveis e como oferê-las.
->
-> [Integrar outros meios de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways)

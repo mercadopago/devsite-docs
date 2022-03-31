@@ -587,21 +587,4 @@ Finally, you always need to be notified of new payments and status updates.  For
 
 [Configure webhook notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/webhooks/webhooks) or [IPN notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn/introduction).
 
----
-### Next steps
 
-> LEFT_BUTTON_REQUIRED_EN
->
-> Test your integration
->
-> Check that everything works in your integration with test users.
->
-> [Test your integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/testing)
-
-> RIGHT_BUTTON_RECOMMENDED_EN
->
-> Integrate other payment methods
->
-> Learn about all the available payment options and how to offer them.
->
-> [Integrate other payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways)

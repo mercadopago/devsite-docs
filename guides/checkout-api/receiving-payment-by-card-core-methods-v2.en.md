@@ -618,21 +618,4 @@ If you wish to know more about other customized events, access our [GitHub](http
 >
 > If you want to deploy other technology in your server, you can [download a complete payment form sample](https://drive.google.com/file/d/10csLR_4NwMbXtHObxZ1Ej9fvB2Zkr7AS/view?usp=sharing) from GitHub.
 
----
-### Next steps
 
-> LEFT_BUTTON_REQUIRED_EN
->
-> Test your integration
->
-> Check that everything works in your integration with test users.
->
-> [Test your integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/testing)
-
-> RIGHT_BUTTON_RECOMMENDED_EN
->
-> Integrate other payment methods
->
-> Learn about all the available payment options and how to offer them.
->
-> [Integrate other payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways)
