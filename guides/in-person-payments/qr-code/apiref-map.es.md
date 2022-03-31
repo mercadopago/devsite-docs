@@ -22,12 +22,6 @@ Las siguientes acciones están disponibles para **Código QR**.
 |[Actualizar caja](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/pos/_pos_id/put)|Renueva los datos de un punto de venta.|
 |[Eliminar caja](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/pos/_pos_id/delete)|Elimina un punto de venta siempre que lo necesites con el ID de la caja.|
 
-### Retiro de dinero (Cashout)
-
-|Acción|Descripción|
-|---|---|
-|[Confirmar el estado de retiro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/cashout-qr/_instore_orders_merchant_order_id_confirmation/post)|Confirmar el estado del retiro de diñero (cashout).|
-
 ### Modelo Atendido
 
 #### Órdenes presenciales
