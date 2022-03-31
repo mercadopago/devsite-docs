@@ -10,7 +10,7 @@ Configura la [public key de producción]([FAKER][CREDENTIALS][URL]) de tu **usua
 
 Inicia tu integración configurada con las credenciales de tu usuario de prueba vendedor:
 
-1. Completa los datos de una [tarjeta de prueba](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/checkout-api/test-cards).
+1. Completa los datos de una [tarjeta de prueba](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/checkout-api/integration-test/test-cards).
 1. Ingresa el e-mail de tu usuario de prueba comprador.
 1. Confirma la compra, ¡y listo!
 

@@ -96,7 +96,7 @@ curl -X GET \
 
 The result will be a list of payment methods and their features. For example, `payment_type_id` payment methods with `ticket` as value refer to cash payment method.
 
-Keep in mind that the answer will return all the payment methods. For this reason, you have to filter the options you want to offer according to the [list of available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/other-payment-methods#bookmark_payment_methods).
+Keep in mind that the answer will return all the payment methods. For this reason, you have to filter the options you want to offer according to the [list of available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/payment-methods/other-payment-methods#bookmark_payment_methods).
 
 ```json
 [
@@ -153,7 +153,7 @@ Keep in mind that the answer will return all the payment methods. For this reaso
 
 To capture sensitive data from your customer, **please use our form with the corresponding attributes,** which ensures information security.
 
-Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/other-payment-methods#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
+Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/payment-methods/other-payment-methods#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
 
 Add the following form with the styles you want.
 
@@ -608,7 +608,7 @@ curl -X GET \
 
 The result will be a list of payment methods and their features. For example, `payment_type_id` payment methods with `ticket` as value refer to cash payment method.
 
-Keep in mind that the answer will return all the payments methods. For this reason, you have to filter the options you want to offer according to the [list of available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/other-payment-methods#bookmark_payment_methods).
+Keep in mind that the answer will return all the payments methods. For this reason, you have to filter the options you want to offer according to the [list of available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/payment-methods/other-payment-methods#bookmark_payment_methods).
 
 ```json
 [
@@ -771,7 +771,7 @@ Keep in mind that the answer will return all the payments methods. For this reas
 
 To capture sensitive data from your customer, **please use our form with the corresponding attributes,** which ensures information security.
 
-Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/other-payment-methods#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
+Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/payment-methods/other-payment-methods#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
 
 Add the following form with the styles you want.
 
@@ -1130,7 +1130,7 @@ curl -X GET \
 
 The result will be a list of payment methods and their features. For example, `payment_type_id` payment methods with `ticket` as value refer to cash payment method.
 
-Keep in mind that the answer will return all the payments methods. For this reason, you have to filter the options you want to offer according to the [list of available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/other-payment-methods#bookmark_payment_methods).
+Keep in mind that the answer will return all the payments methods. For this reason, you have to filter the options you want to offer according to the [list of available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/payment-methods/other-payment-methods#bookmark_payment_methods).
 
 ```json
 
@@ -1203,7 +1203,7 @@ Keep in mind that the answer will return all the payments methods. For this reas
 
 To capture sensitive data from your customer, **please use our form with the corresponding attributes,** which ensures information security.
 
-Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/other-payment-methods#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
+Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/payment-methods/other-payment-methods#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
 
 Add the following form with the styles you want.
 
@@ -1591,7 +1591,7 @@ curl -X GET \
 
 The result will be a list of payment methods and their features. For example, `payment_type_id` payment methods with `ticket` as value refer to cash payment method.
 
-Keep in mind that the answer will return all the payments methods. For this reason, you have to filter the options you want to offer according to the [list of available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/other-payment-methods#bookmark_payment_methods).
+Keep in mind that the answer will return all the payments methods. For this reason, you have to filter the options you want to offer according to the [list of available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/payment-methods/other-payment-methods#bookmark_payment_methods).
 
 ```json
 [
@@ -1681,7 +1681,7 @@ Keep in mind that the answer will return all the payments methods. For this reas
 
 To capture sensitive data from your customer, **please use our form with the corresponding attributes,** which ensures information security.
 
-Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/other-payment-methods#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
+Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/payment-methods/other-payment-methods#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
 
 Add the following form with the styles you want.
 
@@ -2315,7 +2315,7 @@ curl -X GET \
 
 The result will be a list of payment methods and their features. For example, `payment_type_id` payment methods with `ticket` as value refer to cash payment method.
 
-Keep in mind that the answer will return all the payments methods. For this reason, you have to filter the options you want to offer according to the [list of available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/other-payment-methods#bookmark_payment_methods).
+Keep in mind that the answer will return all the payments methods. For this reason, you have to filter the options you want to offer according to the [list of available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/payment-methods/other-payment-methods#bookmark_payment_methods).
 
 ```json
 [
@@ -2390,7 +2390,7 @@ Keep in mind that the answer will return all the payments methods. For this reas
 
 To capture sensitive data from your customer, **please use our form with the corresponding attributes,** which ensures information security.
 
-Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/other-payment-methods#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
+Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/payment-methods/other-payment-methods#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
 
 Add the following form with the styles you want.
 
@@ -2974,7 +2974,7 @@ curl -X GET \
 
 The result will be a list of payment methods and their features. For example, `payment_type_id` payment methods with `ticket` as value refer to cash payment method.
 
-Keep in mind that the answer will return all the payments methods. For this reason, you have to filter the options you want to offer according to the [list of available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/other-payment-methods#bookmark_payment_methods).
+Keep in mind that the answer will return all the payments methods. For this reason, you have to filter the options you want to offer according to the [list of available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/payment-methods/other-payment-methods#bookmark_payment_methods).
 
 ```json
 [
@@ -3024,7 +3024,7 @@ Keep in mind that the answer will return all the payments methods. For this reas
 
 To capture sensitive data from your customer, **please use our form with the corresponding attributes,** which ensures information security.
 
-Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/other-payment-methods#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
+Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/payment-methods/other-payment-methods#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
 
 Add the following form with the styles you want.
 
@@ -3419,7 +3419,7 @@ curl -X GET \
 
 The result will be a list of payment methods and their features. For example, `payment_type_id` payment methods with `ticket` as value refer to cash payment.
 
-Keep in mind that the answer will return all the payments methods. For this reason, you have to filter the options you want to offer according to the [list of available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/other-payment-methods#bookmark_payment_methods).
+Keep in mind that the answer will return all the payments methods. For this reason, you have to filter the options you want to offer according to the [list of available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/payment-methods/other-payment-methods#bookmark_payment_methods).
 
 ```json
 [
@@ -3486,7 +3486,7 @@ Keep in mind that the answer will return all the payments methods. For this reas
 
 To capture sensitive data from your customer, **please use our form with the corresponding attributes,** which ensures information security.
 
-Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/other-payment-methods#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
+Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/payment-methods/other-payment-methods#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
 
 Add the following form with the styles you want.
 

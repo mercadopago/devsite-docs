@@ -8,7 +8,7 @@ Use our [sample projects](#bookmark_sample_projects) for a complete integration.
 
 ![API-integration-flowchart](/images/api/api-integration-flowchart-cardform-en.png)
 
-> If you want to make a customized payment flow, we share all the [methods available for advanced integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/receiving-payment-by-card-core-methods).
+> If you want to make a customized payment flow, we share all the [methods available for advanced integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/payment-methods/receiving-payment-by-card-core-methods).
 
 <br>
 
@@ -458,7 +458,7 @@ For improved payment approval, you need to correctly inform results to your cust
 
 This will prevent rejections and chargebacks in the case of already approved transactions.  For example, this allows you to correct data upload mistakes or change payment methods.
 
-We recommend using [response handling](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/handling-responses) and the suggested communication in each case.
+We recommend using [response handling](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/response-handling) and the suggested communication in each case.
 
 > NOTE
 >
@@ -470,7 +470,7 @@ We recommend using [response handling](https://www.mercadopago[FAKER][URL][DOMAI
 
 Finally, you always need to be notified of new payments and status updates.  For example, if they were approved, rejected, or are pending.
 
-[Configure webhook notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/webhooks/webhooks) or [IPN notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn/introduction).
+[Configure webhook notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/webhooks/webhooks) or [IPN notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/additional-content/notifications/ipn).
 
 ## Sample projects
 
