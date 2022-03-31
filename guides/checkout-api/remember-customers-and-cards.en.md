@@ -497,7 +497,7 @@ And you can prepare the form like this:
 
 ### 2. Capture security code
 
-The customer needs to enter the security code in a flow similar to [card data capture](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/receiving-payment-by-card/#bookmark_card_data_capture). You need to create a token by submitting the form with card ID and security code.
+The customer needs to enter the security code in a flow similar to [card data capture](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/payment-methods/receiving-payment-by-card/#bookmark_card_data_capture). You need to create a token by submitting the form with card ID and security code.
 
 ```javascript
 (async function createToken() {
@@ -1152,13 +1152,3 @@ Example of response without including the `customers_id` parameter:
 > If you don't have the `customer_id`, [check the Customers API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/customers/_customers_search/get) and generate an` HTTP GET` request using the `email` parameter to get it.
 
 
----
-## Next steps
-
-> LEFT_BUTTON_RECOMMENDED_EN
->
-> Cancellations and refunds
->
-> Get more information about cancellations and refunds.
->
-> [Cancellations and refunds](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/cancellations-and-refunds)

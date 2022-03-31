@@ -97,14 +97,3 @@ curl -X PUT \
   ...
 }
 ```
-
----
-## Próximos passos
-
-> LEFT_BUTTON_RECOMMENDED_PT
->
-> Entrar em produção
->
-> Requisitos para entrar em produção.
->
-> [Entrar em produção](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/checkout-api/goto-production)

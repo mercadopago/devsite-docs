@@ -490,7 +490,7 @@ Y puedes armar el formulario de la siguiente manera:
 
 ### 2. Captura el código de seguridad
 
-El cliente tiene que ingresar el código de seguridad en un flujo similar al que realizaste para la [captura de los datos de la tarjeta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/checkout-api/receiving-payment-by-card/#bookmark_captura_los_datos_de_la_tarjeta). Debes crear un token enviando el formulario con el ID de la tarjeta y el código de seguridad.
+El cliente tiene que ingresar el código de seguridad en un flujo similar al que realizaste para la [captura de los datos de la tarjeta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/checkout-api/payment-methods/receiving-payment-by-card/#bookmark_captura_los_datos_de_la_tarjeta). Debes crear un token enviando el formulario con el ID de la tarjeta y el código de seguridad.
 
 ```javascript
 (async function createToken() {
@@ -1147,13 +1147,3 @@ Ejemplo de respuesta sin incluir el parámetro `customers_id`:
 >
 > Si no tienes el `customer_id`, [consulta la API de Clientes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/customers/_customers_search/get) y genera una solicitud `HTTP GET` utilizando el parámetro `email` para obtenerlo. 
 
----
-## Próximos pasos
-
-> LEFT_BUTTON_RECOMMENDED_ES
->
-> Cancelaciones y reembolsos
->
-> Obtén más información sobre cancelaciones y reembolsos.
->
-> [Cancelaciones y reembolsos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/checkout-api/cancellations-and-refunds)

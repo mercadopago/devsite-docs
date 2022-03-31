@@ -4,7 +4,7 @@ After registering the Pix key, follow the documentation to perform the integrati
 
 ## Configure a payment with Pix
 
-After [capturing the data for payment](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/other-payment-methods#bookmark_data_capture_for_payment), in the form, to start getting Pix payments you will need to send the buyer's email address, document type and number, method of payment and amount.
+After [capturing the data for payment](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/payment-methods/other-payment-methods#bookmark_data_capture_for_payment), in the form, to start getting Pix payments you will need to send the buyer's email address, document type and number, method of payment and amount.
 
 [[[
 ```php

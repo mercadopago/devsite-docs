@@ -23,21 +23,3 @@ Puedes usar las SDKs oficiales o interactuar directamente con nuestras APIs.
 * Recuerda las tarjetas usadas de tus clientes para futuros pagos.
 * Puedes utilizar todos los medios de pago, como también, ofrecer solamente los que quieras.
 
----
-### Próximos pasos
-
-> LEFT_BUTTON_REQUIRED_ES
->
-> Requisitos para integrar
->
-> Conoce todos los requisitos necesarios para comenzar a integrar.
->
-> [Requisitos previos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/checkout-api/previous-requirements)
-
-> RIGHT_BUTTON_RECOMMENDED_ES
->
-> Referencias de API
->
-> Encuentra toda la información necesaria para interactuar con nuestras APIs.
->
-> [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference)

@@ -34,14 +34,14 @@ Puedes ver más información en la [sección de Mejora la aprobación](https://w
 ## Notificaciones y búsqueda de pagos
 
 Para poder aprovechar al máximo los beneficios de la integración de Mercado Pago, uno de los puntos claves a destacar es la utilización de notificaciones para la actualización de los pedidos en tiempo real en tu sistema.
-Ambos tipos de notificaciones, [IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn/introduction) o [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/webhooks/webhooks), se envían de un servidor a otro mediante una llamada `HTTP POST` en relación a tus transacciones.
+Ambos tipos de notificaciones, [IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/checkout-api/additional-content/notifications/ipn) o [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/webhooks/webhooks), se envían de un servidor a otro mediante una llamada `HTTP POST` en relación a tus transacciones.
 Implementando estas notificaciones, podrás enterarte de todas las actualizaciones de tus transacciones en el momento.
 
 ## Experiencia de usuario
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mostrar los correctos mensajes de respuesta
 
-Como se menciona en la [sección de Mensajes de respuesta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/checkout-api/handling-responses), se le deben mostrar los mensajes correspondientes al cliente, dependiendo el resultado del pago, para que el mismo pueda accionar de la manera correcta.
+Como se menciona en la [sección de Mensajes de respuesta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/checkout-api/response-handling), se le deben mostrar los mensajes correspondientes al cliente, dependiendo el resultado del pago, para que el mismo pueda accionar de la manera correcta.
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sé transparente con las promociones y financiación
 
@@ -59,21 +59,4 @@ Debes aclarar que las promociones son ofrecidas por Mercado Pago. Puedes [inclui
 
 Debes disponer de una política de términos y condiciones y aclarar que sos responsable por todos los datos que sean ingresados en tu sitio.
 
----
-## Próximos pasos
 
-> LEFT_BUTTON_RECOMMENDED_ES
->
-> Acepta pagos con la billetera de Mercado Pago
->
-> Permite pagos solo de usuarios registrados en Mercado Pago, con tarjetas y dinero disponible.
->
-> [Usuarios registrados](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/checkout-api/wallet-integration)
-
-> RIGHT_BUTTON
->
-> Referencias de API
->
-> Encuentra toda la información necesaria para interactuar con nuestras APIs.
->
-> [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference)

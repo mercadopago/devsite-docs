@@ -34,14 +34,14 @@ You can see more information in the [Improves approval section](https://www.merc
 ## Notifications and payment search
 
 In order to take full advantage of the Mercado Pago integration, one of the key points to highlight is the use of notifications to update orders in real time in your system.
-Both types of notifications, [IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn/introduction) or [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/webhooks/webhooks), are sent from one server to another through an `HTTP POST` request informing your transactions.
+Both types of notifications, [IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/additional-content/notifications/ipn) or [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/webhooks/webhooks), are sent from one server to another through an `HTTP POST` request informing your transactions.
 By implementing these notifications, you will be able to find out all the updates of your transactions at the moment.
 
 ## User experience
 
 ### Response Handling
 
-As mentioned in the [Handling Responses](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/handling-responses) section, you should be shown the messages corresponding to the client, depending on the result of the payment, so that they can act in the correct way.
+As mentioned in the [Response handling](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/response-handling) section, you should be shown the messages corresponding to the client, depending on the result of the payment, so that they can act in the correct way.
 
 ### Be transparent with promotions and financing
 
@@ -59,21 +59,4 @@ You need to be clear about which promotions are offered by Mercado Pago. You can
 
 You need to have a policy on terms and conditions and make it clear that you are responsible for all the data uploaded to your website.
 
----
-## Next steps
 
-> LEFT_BUTTON_RECOMMENDED_EN
->
-> Receive payments by Mercado Pago wallet
->
-> It allows payments only from Mercado Pago registered users, with cards and available balance.
->
-> [Registered users](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/wallet-integration)
-
-> RIGHT_BUTTON
->
-> API References
->
-> Find all the information required to interact with our APIs.
->
-> [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference)
