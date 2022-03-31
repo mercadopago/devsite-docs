@@ -1,4 +1,4 @@
-## Ativação do modo produção
+# Ativação do modo produção
 
 A ativação do modo produção permitirá que sua loja receba vendas reais. Para ativá-lo siga os passos abaixo.
 

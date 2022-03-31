@@ -123,7 +123,7 @@ const cardForm = mp.cardForm({
     },
     cardExpirationDate: {
       id: "form-checkout__cardExpirationDate",
-      placeholder: "Data de vencimiento (MM/YYYY)",
+      placeholder: "Fecha de vencimiento (MM/YYYY)",
     },
     securityCode: {
       id: "form-checkout__securityCode",
