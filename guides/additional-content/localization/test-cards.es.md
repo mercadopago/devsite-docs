@@ -1,3 +1,5 @@
+# Tarjetas de prueba locales
+
 Puedes usar tarjetas de prueba de métodos de pago locales y simular diferentes respuestas de pago, sin necesidad de usar una tarjeta real.
 
 > WARNING
@@ -68,7 +70,7 @@ Para eso, dependiendo de tu país, utiliza una de las tarjetas que te proporcion
 
 ------------
  
-Para **probar diferentes resultados de pago**, completa el estado deseado en el nombre del titular de la tarjeta:
+Para **probar diferentes resultados de pago** con Checkout Pro, completa el estado deseado en el nombre del titular de la tarjeta:
  
 | Estado de pago | Descripción |
 | --- | --- |

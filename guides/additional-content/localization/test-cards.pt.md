@@ -1,3 +1,5 @@
+# Cartões nacionais de teste
+
 Você pode utilizar cartões de teste de métodos de pagamento locais e simular diferentes respostas dos pagamentos, sem a necessidade de usar um cartão real.
 
 > WARNING
@@ -68,7 +70,7 @@ Para isso, de acordo com o seu país, utilize algum dos cartões que disponibili
 
 ------------
  
-Para **testar diferentes resultados de pagamento**, preencha o status desejado no nome do titular do cartão:
+Para **testar diferentes resultados de pagamento** com o Checkout Pro, preencha o status desejado no nome do titular do cartão:
  
 | Status de pagamento | Descrição |
 | --- | --- |
