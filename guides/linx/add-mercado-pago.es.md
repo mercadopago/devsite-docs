@@ -3,7 +3,7 @@
   - mlb
 ---
 
-# Agrega a Mercado Pago como medio de pago
+# Agrega Mercado Pago como medio de pago
 
 Para **agregar Mercado Pago en tu tienda**, sigue estos pasos:
 

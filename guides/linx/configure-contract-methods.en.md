@@ -3,7 +3,7 @@
   - mlb
 ---
 
-# Define contract methods of payment
+# Define contract payment methods
 
 To **define contract methods of payment** follow these steps: 
 
