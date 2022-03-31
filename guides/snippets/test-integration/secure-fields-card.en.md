@@ -41,7 +41,7 @@ With MercadoPago.js V2 library CardForm functionality you can get and validate a
 
 CardForm provides secure implementation and correct token of card data. 
 
-For the PCI fields (**Card Number**, **Expiration Date** and **CVV**) you must create `divs` that will serve as containers for the `iFrames`.
+For the PCI fields (**Card Number**, **Expiration Date** and **Security Code**) you must create `divs` that will serve as containers for the `iFrames`.
 
 Use the following form and add the styles of your choice.
 
