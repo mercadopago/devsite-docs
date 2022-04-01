@@ -310,5 +310,3 @@ curl -X POST \
 > Formulario de pago
 >
 > Si quieres implementar tu servidor con alguna otra tecnología, te dejamos un [ejemplo completo del formulario de pago](https://drive.google.com/file/d/12gSCPLfZCE36iKFbM4BTUwf6lnM7lVEL/view?usp=sharing) en GitHub para que puedas descargar.
-
-

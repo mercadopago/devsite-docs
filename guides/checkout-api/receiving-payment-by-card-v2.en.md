@@ -291,5 +291,3 @@ curl -X POST \
 > Payment form
 >
 > If you want to deploy other technology in your server, you can [download a complete payment form sample](https://drive.google.com/file/d/12gSCPLfZCE36iKFbM4BTUwf6lnM7lVEL/view?usp=sharing) from GitHub.
-
-
