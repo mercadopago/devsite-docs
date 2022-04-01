@@ -30,8 +30,8 @@ Para obtener más información, accede a **inventario** en el [manual de la plat
 
 > PREV_STEP_CARD_ES
 >
-> Procesamiento de ventas
+> E-mail de notificación
 >
-> Conoce los principales status durante el procesamiento de ventas.
+> Aprenda a configurar el envío de correos electrónicos que notificarán al usuario de sus transacciones.
 >
-> [Procesamiento de ventas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/woocommerce/sales-processing)
+> [E-mail de notificación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/woocommerce/notification-email)

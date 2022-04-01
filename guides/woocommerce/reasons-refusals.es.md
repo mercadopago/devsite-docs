@@ -1,27 +1,18 @@
-# Status de pago
+# Motivos de los rechazos
 
-Cada venta genera un status de pago que muestra la situación de la venta, incluida la confirmación, el pendiente o recusa del pago y otras informaciones importantes sobre la transacción. 
+En cuanto a la **aprobación de pagos** en su tienda, hay tres razones principales que pueden afectar directamente estos resultados. 
 
-Hay dos estados en una venta de WooCommerce: **status del pago** y **status del pedido**. En la siguiente tabla, podrás encontrar los detalles sobre cómo se correlaciona esta información.
+A continuación, detallamos los factores que influyen en lo rechazo de un pago:
 
-| Mercado Pago status (pago) | WooCommerce status(pedido) |
-|---|---|
-| Pending | Pending |
-| Approved | Processing |
-| Inprocess | On hold |
-| Inmediation | On hold|
-| Rejected | Failed |
-| Cancelled | Cancelled |
-| Refunded | Refunded |
-| Chargedback| Refunded|
-
-Para obtener más información, accede a la sección [Actividades](https://www.mercadopago[FAKER][URL][DOMAIN]/activities) de tu cuenta de Mercado Pago y al [manual de pedidos de WooCommerce](https://docs.woocommerce.com/document/gestion-de-pedidos/).
-
-Además, puedes acceder a los detalles de cada intento de pago que ocurrió en su tienda. Para hacer esto, ve al panel de WordPress y luego haz clic en **WooCommerce > Pedidos > Detalles del pedido**.
+| Motivo | Situación | Cómo evitarlo |
+|---|---|---|
+| Comprador | Errores en la cumplimentación de la dirección, CPF o datos de la tarjeta. | Checkout con información clara en el paso a paso de la compra. |
+| Rechazos bancarios | Tarjetas con fecha de vencimiento, falta de límite, saldo insuficiente o inhabilitadas para compras online.| Ofrecer alternativas a otros medios y/o condiciones de pago.|
+| Prevención del fraude | El sistema antifraude de Mercado Pago protege tu negocio contra ataques maliciosos que pueden generar pérdidas.| Este tipo de rechazo es beneficioso para tu tienda. |
 
 > NEXT_STEP_CARD_ES
 >
-> Motivos de los rechazos
+> Preguntas frecuentes
 >
 > Consulta las principales dudas sobre la integración.
 >

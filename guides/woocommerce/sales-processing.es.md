@@ -8,23 +8,10 @@ Esta información está disponible en la sección **Notas del pedido** en el pan
 
 En esta sección, tendrás acceso a detalles del posible status y motivos de cada devolución.
 
-
-## Motivos de los rechazos
-
-En cuanto a la **aprobación de pagos** en su tienda, hay tres razones principales que pueden afectar directamente estos resultados. 
-
-A continuación, detallamos los factores que influyen en lo rechazo de un pago:
-
-| Motivo | Situación | Cómo evitarlo |
-|---|---|---|
-| Comprador | Errores en la cumplimentación de la dirección, CPF o datos de la tarjeta. | Checkout con información clara en el paso a paso de la compra. |
-| Rechazos bancarios | Tarjetas con fecha de vencimiento, falta de límite, saldo insuficiente o inhabilitadas para compras online.| Ofrecer alternativas a otros medios y/o condiciones de pago.|
-| Prevención del fraude | El sistema antifraude de Mercado Pago protege tu negocio contra ataques maliciosos que pueden generar pérdidas.| Este tipo de rechazo es beneficioso para tu tienda. |
-
 > NEXT_STEP_CARD_ES
 >
-> Preguntas frecuentes
+> Status de pago
 >
-> Consulta las principales dudas sobre la integración.
+> Conoce los status de pago que muestran el estado de la venta.
 >
-> [Preguntas frecuentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/woocommerce/faq)
+> [Status de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/woocommerce/payment-status)

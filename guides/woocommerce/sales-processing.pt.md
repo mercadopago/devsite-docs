@@ -10,6 +10,6 @@ Nesta seção, você terá acesso aos detalhes dos possíveis status e motivos d
 >
 > Status de pagamentos
 >
-> Conheça os status de pagamento que mostram a situação da venda.
+> Conoce los status de pago que muestran el estado de la venta.
 >
 > [Status de pagamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/woocommerce/payment-status)

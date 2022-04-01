@@ -30,8 +30,8 @@ Para mais informações, acesse o tópico **inventário**, no [manual da platafo
 
 > PREV_STEP_CARD_PT
 >
-> Processamento de vendas
+> E-mail de notificação
 >
-> Conheça os principais status durante o processamento das vendas.
+> Saiba como configurar o envio de e-mails que notificarão o usuário de suas transações.
 >
-> [Processamento de vendas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/woocommerce/sales-processing)
+> [E-mail de notificação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/woocommerce/notification-email)

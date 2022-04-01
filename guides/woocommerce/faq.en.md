@@ -30,8 +30,8 @@ For more information, access the **Inventory** topic in [the platform manual](ht
 
 > PREV_STEP_CARD_EN
 >
-> Sales processing
+> Notification email
 >
-> Learn the main statuses during sales processing.
+> Learn how to configure sending emails that will notify the user of their transactions.
 >
-> [Sales processing](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/woocommerce/sales-processing)
+> [Notification email](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/woocommerce/notification-email)

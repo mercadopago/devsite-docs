@@ -11,7 +11,7 @@ Existem dois status em uma venda via WooCommerce: **status do pagamento** e **st
 | Inprocess | On hold |
 | Inmediation | On hold|
 | Rejected | Failed |
-| Cancelled | Cancelled |
+| Cancelled | Cancelled | 
 | Refunded | Refunded |
 | Chargedback| Refunded|
 

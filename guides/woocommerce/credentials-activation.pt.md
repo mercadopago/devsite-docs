@@ -19,6 +19,6 @@ Com as credenciais preenchidas, configure as informações de negócio.
 >
 > Informações de negócio
 >
-> Saiba quais são as informações de negócio são necessárias para identificar sua loja.
+> Saiba quais são as informações de negócio que são necessárias para identificar sua loja.
 >
 > [Informações de negócio](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/woocommerce/business-information)

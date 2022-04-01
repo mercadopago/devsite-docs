@@ -40,6 +40,6 @@ Além das configurações anteriores, você encontra diferentes opções relacio
 >
 > E-mail de notificação
 >
-> Saiba como realizar uma compra teste e garantir o funcionamento da integração.
+> Saiba como configurar o envio de e-mails que notificarão o usuário de suas transações.
 >
 > [E-mail de notificação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/woocommerce/notification-email)
