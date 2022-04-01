@@ -29,11 +29,3 @@ Habiendo seleccionado **Checkout API** para recibir pagos de tu tienda, es impor
 4. Envía un **e-mail de prueba** para asegurarte de que la plataforma está enviando correos electrónicos correctamente.
 
 ¡Listo! El envío de correos electrónicos se ha configurado correctamente.
-
-> PREV_STEP_CARD_ES
->
-> Configuración de Checkout Pro
->
-> Conoce cómo configurar el plugin para aceptar pagos con Checkout Pro.
->
-> [Configuración de Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/magento-two/checkout-pro-configuration)

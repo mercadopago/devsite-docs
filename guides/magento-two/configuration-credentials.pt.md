@@ -9,7 +9,7 @@ Primeiro, você deve inserir suas credenciais para poder habilitar os meios de p
 Existem dois tipos de credenciais:
 
 * **Modo sandbox**: As credenciais neste modo são usadas para fins de teste.
-* **Modo de produção**: As credenciais neste modo são usadas para receber pagamentos em produção. Para usar as credenciais do modo de produção, você deve ativá-las. Veja mais informações em [Credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/credentials)
+* **Modo de produção**: As credenciais neste modo são usadas para receber pagamentos em produção. Para usar as credenciais do modo de produção, você deve ativá-las. Veja mais informações em [Credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/credentials/credentials)
 
 3. Depois de definir suas credenciais, clique no botão **Save Config** no canto superior direito.
 

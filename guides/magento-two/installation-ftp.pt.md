@@ -8,6 +8,6 @@
 
 4. Copie a pasta **MercadoPago**, localizada na pasta **code/src**.
 
-5. Em seguida, siga as instruções em [Instalação via Composer](#bookmark_instalação_via_composer)
+5. Em seguida, siga as instruções em [Instalação via Composer](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/magento-two/installation/installation-composer)
 
 Pronto! Você instalou com sucesso o plugin Mercado Pago para Magento 2.

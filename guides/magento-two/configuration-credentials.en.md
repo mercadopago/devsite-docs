@@ -10,7 +10,7 @@ There are two types of credentials:
 
 - **Sandbox Mode:** The credentials in this mode are used for testing.
 - **Production Mode:** The credentials in this mode are used to receive payments in Production. To use the production mode credentials you must activate your credentials.
-- Read [Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials)
+- Read [Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/credentials/credentials)
 
 3. Once you've entered your credentials, click on the **Save Config** button located in the upper right corner. 
 

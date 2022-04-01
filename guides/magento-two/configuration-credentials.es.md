@@ -10,7 +10,7 @@ Existen dos tipos de credenciales:
 
 - **Modo Sandbox:** Las credenciales de este modo se utilizan para realizar pruebas.
 - **Modo Producción:** Las credenciales de este modo se utilizan para recibir los pagos en Producción. Para utilizar las credenciales del modo de producción debes activar tus credenciales.
-- Lee [Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/credentials) para más información.
+- Lee [Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/credentials/credentials) para más información.
 
 3. Una vez que hayas colocado las credenciales, haz clic en el botón **Save Config** que se encuentra en la esquina superior derecha. 
 

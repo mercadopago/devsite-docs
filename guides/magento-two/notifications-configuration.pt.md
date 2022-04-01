@@ -28,11 +28,3 @@ Tendo selecionado o **Checkout Transparente** para receber os pagamento de sua l
 4. Envie um **e-mail de teste** para garantir que a plataforma está enviando os e-mails corretamente.
 
 Pronto! O envio dos e-mails foi configurado com sucesso.
-
-> PREV_STEP_CARD_PT
->
-> Configuração do Checkout Pro
->
-> Saiba como configurar o plugin para aceitar pagamentos com o Checkout Pro.
->
-> [Configuração do Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/magento-two/checkout-pro-configuration)

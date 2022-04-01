@@ -29,11 +29,3 @@ Having selected **Checkout API** to receive payments from your store, it is impo
 4. Send a **test email** to ensure the platform is sending emails correctly.
 
 Ready! email notifications have been successfully configured.
-
-> PREV_STEP_CARD_EN
->
-> Checkout Pro configuration
->
-> Know how to configure the module to accept payments with Checkout Pro.
->
-> [Checkout Pro configuration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/magento-two/checkout-pro-configuration)
