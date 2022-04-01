@@ -1,12 +1,13 @@
-## Como aceitar dois meios de pagamento
+## Como aceitar pagamentos com dois meios de pagamento
 
-Aceitar pagamentos com dois cartões é a funcionalidade que permite aos compradores realizar pagamentos utilizando mais de um cartão de crédito diretamente no checkout.
+Aceitar pagamentos com dois meios de pagamento é a funcionalidade que permite aos compradores realizar pagamentos utilizando mais de uma forma de pagamento diretamente no checkout.
 
- No momento do pagamento, o usuário deverá informar os dados de cada um dos cartões e a divisão do valor será automática.
+Para realizar essa configuração, siga as etapas abaixo.
 
 1. Acesse sua conta do Mercado Pago.
 2. Clique em **Seu negócio > Configurações**. 
 3. Em **Preferências de pagamento**, habilite a opção **Receber com dois meios de pagamento diferentes**.
-4. Clique em **Confirmar**.
 
 Pronto! Concluindo essas etapas, a opção de pagar utilizando dois meios de pagamento terá sido habilitada.
+
+No momento do pagamento, o usuário deverá informar os dados de cada uma das formas de pagamento e a divisão do valor será automática.
