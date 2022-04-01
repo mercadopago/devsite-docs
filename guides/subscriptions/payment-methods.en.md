@@ -30,7 +30,7 @@ To offer subscriptions with payments via boleto bancário, send a POST with the 
 ------------
 
 
-### Proportional amount (Pro rata)
+### Proportional amount (pro rata)
 
 Pro rata is the amount billed to the subscriber if the subscription starts on a day other than the billing date set by the seller. When creating a subscription, the seller can decide whether or not to offer this option.
 
