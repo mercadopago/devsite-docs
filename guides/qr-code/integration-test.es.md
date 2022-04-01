@@ -6,32 +6,14 @@ Para realizar las pruebas es necesario que tengas como mínimo dos usuarios: un 
 
 > Si no generaste tus usuarios en este punto, puedes hacerlo en los [requisitos previos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code/pre-requisites).
 
-
 | Tipos de usuarios | Descripción |
 | --- | --- |
 | Vendedor | Es la **cuenta de pruebas que usas para obtener las credenciales** a configurar en tu sistema para poder interactuar con las APIs de Mercado Pago. También podrás acceder a la [cuenta de Mercado Pago](https://www.mercadopago.com.ar/activities) y revisar las transacciones probadas. |
 | Comprador | Es la **cuenta de pruebas que usas para probar el proceso de compra**. Debes acceder a la app de Mercado Pago con los datos de este usuario. En caso de tener disponible dinero en cuenta o tarjetas guardadas, estarán habilitadas como medio de pago. |
 
-
-
 ## Tarjetas de prueba
 
-### Datos del pagador
-
-| Simulación de pago | Nombre del titular | Documento de identidad |
-| --- | --- | --- |
-| Pago aprobado | APRO | 123456789 |
-| Pago rechazado | OTHE | 123456789 |
-
-### Datos de la tarjeta
-
-| Tarjeta | Número | CVV | Fecha de vencimiento |
-| --- | --- | --- | --- |
-| MasterCard | 5031 7557 3453 0604 | 123 | 11/25 |
-| Visa | 4170 0688 1010 8020 | 123 | 11/25 |
-| American Express | 3711 8030 3257 522 | 1234 | 11/25 |
-
-Aquí podras encontrar mas [tarjetas de prueba](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/local-cards). 
+[TXTSNIPPET][/guides/snippets/test-integration/test-cards]
 
 ## Prueba el flujo de pago
 
