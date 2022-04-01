@@ -30,7 +30,7 @@ Para ofrecer el pago de suscripciones a través de boleto bancario, envía un PO
 ------------
 
 
-### Monto proporcional (Prorrateo)
+### Monto proporcional (prorrateo)
 
 El prorrateo es la cantidad facturada al suscriptor si la suscripción comienza en un día diferente a la fecha de facturación establecida por el vendedor. Al crear una suscripción, el vendedor puede decidir si ofrece o no esta opción. 
 

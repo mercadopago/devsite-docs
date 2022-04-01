@@ -28,7 +28,7 @@ Para oferecer pagamento de assinaturas via boleto bancário, envie um POST com o
 
 ------------
 
-### Valor proporcional (Pro rata)
+### Valor proporcional (pro rata)
 
 Pro rata é o valor cobrado do assinante caso a assinatura comece em um dia diferente da data de cobrança definida pelo vendedor. Ao criar uma assinatura o vendedor pode decidir se deseja ou não oferecer esta opção. 
 
