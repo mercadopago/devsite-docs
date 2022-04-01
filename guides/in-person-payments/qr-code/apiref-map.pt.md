@@ -12,7 +12,6 @@ As ações a seguir estão disponíveis para **Código QR**.
 |[Atualizar loja](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/stores/_users_user_id_stores_id/put)|Renovar os dados de um estabelecimento físico.|
 |[Excluir loja](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/stores/_users_user_id_stores_id/delete)|Exclua um estabelecimento físico sempre que for necessário com o ID da loja.|
 
-
 ### Caixas
 
 |Ação|Descrição|

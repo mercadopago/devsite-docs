@@ -52,8 +52,8 @@ Por ejemplo, si la tarjeta no tiene saldo suficiente para la compra, puedes reco
 | 220 | parameter cardIssuerId can not be null/empty | Ingresa tu banco. |
 | 221 | parameter cardholderName can not be null/empty | Ingresa el nombre y apellido. |
 | 224 | parameter securityCode can not be null/empty | Ingresa el código de seguridad. |
+| E203 | invalid parameter securityCode | Revisa el código de seguridad. |
 | E301 | invalid parameter cardNumber | Ingresa un número de tarjeta válido. |
-| E302 | invalid parameter securityCode | Revisa el código de seguridad. |
 | 316 | invalid parameter cardholderName | Ingresa un nombre válido. |
 | 322 | invalid parameter docType | El tipo de documento es inválido. |
 | 323 | invalid parameter cardholder.document.subtype | Revisa tu documento. |

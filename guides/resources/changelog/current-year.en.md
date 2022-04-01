@@ -4,7 +4,107 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 ---
 
+## March 2022
+
+### March 31th
+
+> CHANGELOG
+>
+> New WooCommerce plugin version
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: WOOCOMMERCE
+
+We have released the new version 5.7.5 for WooCommerce.
+
+[Go to WooCommerce documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/woocommerce/introduction)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-woocommerce/releases/tag/v5.7.5) for further details regarding this release.
+
+### March 21st
+
+> CHANGELOG
+>
+> New PrestaShop plugin version
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: PRESTASHOP
+
+We have released the new version 4.10.0 for PrestaShop.
+
+[Go to PrestaShop documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/prestashop/introduction)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.10.0) for further details regarding this release.
+
+> CHANGELOG
+>
+> New Magento 2 plugin version
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: MAGENTO 2
+
+We have released the new version 3.15.0 for Magento 2.
+
+[Go to Magento 2 documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/magento-two/introduction)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-magento2/releases/tag/v3.15.0) for further details regarding this release.
+
 ## February 2022
+
+### February 25th
+
+> CHANGELOG
+>
+> New WooCommerce plugin version
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: WOOCOMMERCE
+
+We have released the new version 5.7.4 for WooCommerce.
+
+[Go to WooCommerce documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/woocommerce/introduction)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-woocommerce/releases/tag/v5.7.4) for further details regarding this release.
+
+### February 16th
+
+> CHANGELOG
+>
+> New WooCommerce plugin version
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: WOOCOMMERCE
+
+We have released the new version 5.7.3 for WooCommerce.
+
+[Go to WooCommerce documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/woocommerce/introduction)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-woocommerce/releases/tag/v5.7.3) for further details regarding this release.
 
 ### February 14th
 

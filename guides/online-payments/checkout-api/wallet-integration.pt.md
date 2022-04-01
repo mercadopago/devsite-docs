@@ -84,16 +84,23 @@ mercadopago.preferences.create(preference)
 O modo carteira funciona adicionando o atributo _purpose_ na preferência.
 ===
 // Cria um objeto de preferência
-Preference preference = new Preference();
+PreferenceClient client = new PreferenceClient();
 
 // Cria um item na preferência
-Item item = new Item();
-item.setTitle("Meu produto")
-    .setQuantity(1)
-    .setUnitPrice((float) 75);
-preference.appendItem(item);
-preference.setPurpose("wallet_purchase");
-preference.save();
+PreferenceItemRequest item =
+   PreferenceItemRequest.builder()
+       .title("Meu produto")
+       .quantity(1)
+       .unitPrice(new BigDecimal("75"))
+       .build();
+
+List<PreferenceItemRequest> items = new ArrayList<>();
+items.add(item);
+
+PreferenceRequest request =
+   PreferenceRequest.builder().items(items).purpose("wallet_purchase").build();
+
+client.create(request);
 ```
 ```ruby
 ===
@@ -203,7 +210,7 @@ Depois, do seu frontend, adicione o seguinte código para exibir o botão de pag
 <script>
 // Adicione as credenciais do SDK
 const mp = new MercadoPago('PUBLIC_KEY', {
-      locale: 'es-AR'
+      locale: 'pt-BR'
 });
 
 const preferenceId = "<?php echo $preference->id; ?>"
@@ -214,7 +221,7 @@ mp.checkout({
       id: preferenceId
     },
     render: {
-      container: '.cho-container', // Indica onde o botão de pagamento será exibido
+      container: '.cho-container', // Indique o nome da class onde será exibido o botão de pagamento
       label: 'Pagar com Mercado Pago', // Muda o texto do botão de pagamento (opcional)
       type: 'wallet', // Aplica a marca do Mercado Pago ao botão
     }
@@ -227,7 +234,7 @@ mp.checkout({
 <script>
 // Adicione as credenciais do SDK
 const mp = new MercadoPago('PUBLIC_KEY', {
-      locale: 'es-AR'
+      locale: 'pt-BR'
 });
 
 // Inicializa o checkout
@@ -250,7 +257,7 @@ mp.checkout({
 <script>
 // Adicione as credenciais do SDK
 const mp = new MercadoPago('PUBLIC_KEY', {
-      locale: 'es-AR'
+      locale: 'pt-BR'
 });
 
 const preferenceId = ${preference.id};
@@ -274,7 +281,7 @@ mp.checkout({
 <script>
 # Adicione as credenciais do SDK
 const mp = new MercadoPago('PUBLIC_KEY', {
-      locale: 'es-AR'
+      locale: 'pt-BR'
 });
 
 const preferenceId = "<%= @preference_id %>";
@@ -298,7 +305,7 @@ mp.checkout({
 <script>
 // Adicione as credenciais do SDK
 const mp = new MercadoPago('PUBLIC_KEY', {
-      locale: 'es-AR'
+      locale: 'pt-BR'
 });
 
 const preferenceId = @Html.DisplayFor(model => model.id);
@@ -322,7 +329,7 @@ mp.checkout({
 <script>
 # Adicione as credenciais do SDK
 const mp = new MercadoPago('PUBLIC_KEY', {
-      locale: 'es-AR'
+      locale: 'pt-BR'
 });
 
 const preferenceId = {{ preference_id }}

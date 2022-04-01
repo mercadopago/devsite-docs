@@ -53,8 +53,8 @@ For example, if the card has insufficient balance, you can suggest trying again 
 | 220 | parameter cardIssuerId can not be null/empty | Enter your bank. |
 | 221 | parameter cardholderName can not be null/empty | Enter name and surname. |
 | 224 | parameter securityCode can not be null/empty | Enter security code. |
+| E203 | invalid parameter securityCode | Check security code. |
 | E301 | invalid parameter cardNumber | Enter a valid card number. |
-| E302 | invalid parameter securityCode | Check security code. |
 | 316 | invalid parameter cardholderName | Enter a valid name. |
 | 322 | invalid parameter docType | Invalid ID type. |
 | 323 | invalid parameter cardholder.document.subtype | Check your ID. |

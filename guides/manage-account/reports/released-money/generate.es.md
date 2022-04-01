@@ -42,7 +42,7 @@ Considera estas opciones a la hora de descargar tu reporte:
 | Formatos de descarga | .csv, .xlsx <br/><br/>Tip: descarga el reporte en .csv para importar los datos y usarlos en otras aplicaciones. Descárgalo en .xlsx para leer la información en las tablas de la hoja de cálculo. |
 | Archivo | Los reportes generados quedan guardados en tu cuenta de Mercado Pago. |
 
-----[mlm, mlb, mlc, mco, mlu, mla]----
+----[mlm, mlb, mlc, mco, mla]----
 > INFO
 >
 > Nota
@@ -50,7 +50,7 @@ Considera estas opciones a la hora de descargar tu reporte:
 > Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/glossary) de ------------ ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu]---- Liberaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mla]----para revisarlo cuando lo necesites o quieras consultar algún término técnico.
 ------------
 
-----[mpe]----
+----[mpe, mlu]----
 > Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/glossary) de Liberaciones para revisarlo cuando lo necesites o quieras consultar algún término técnico.
 
 > INFO

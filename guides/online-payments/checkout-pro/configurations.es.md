@@ -227,14 +227,25 @@ preference = {
 }
 ```
 ```java
-Preference preference = new Preference();
+PreferenceClient client = new PreferenceClient();
 //...
-PaymentMethods paymentMethods = new PaymentMethods();
-paymentMethods.setExcludedPaymentMethods("master", "amex");
-paymentMethods.setExcludedPaymentTypes("ticket");
-paymentMethods.setInstallments(12);
+List<PreferencePaymentMethodRequest> excludedPaymentMethods = new ArrayList<>();
+excludedPaymentMethods.add(PreferencePaymentMethodRequest.builder().id("master").build());
+excludedPaymentMethods.add(PreferencePaymentMethodRequest.builder().id("amex").build());
 
-preference.setPaymentMethods(paymentMethods);
+List<PreferencePaymentTypeRequest> excludedPaymentTypes = new ArrayList<>();
+excludedPaymentTypes.add(PreferencePaymentTypeRequest.builder().id("ticket").build());
+
+PreferencePaymentMethodsRequest paymentMethods =
+   PreferencePaymentMethodsRequest.builder()
+       .excludedPaymentMethods(excludedPaymentMethods)
+       .excludedPaymentTypes(excludedPaymentTypes)
+       .installments(12)
+       .build();
+
+PreferenceRequest request = PreferenceRequest.builder().paymentMethods(paymentMethods).build();
+
+client.create(request);
 //...
 ```
 ```ruby
@@ -495,25 +506,33 @@ mercadopago.preferences.create(preference)
 ```
 ```java
 // Crea un objeto preferencia
-Preference preference = new Preference();
+PreferenceClient client = new PreferenceClient();
 // Crea ítems en la preferencia
-Item item1 = new Item();
-item1.setId("1234")
-    .setTitle("Producto 1")
-    .setQuantity(2)
-    .setCurrencyId("[FAKER][CURRENCY][ACRONYM]")
-    .setUnitPrice((float) 75.56);
+List<PreferenceItemRequest> items = new ArrayList<>();
 
-Item item2 = new Item();
-item2.setId("12")
-    .setTitle("Producto 2")
-    .setQuantity(1)
-    .setCurrencyId("[FAKER][CURRENCY][ACRONYM]")
-    .setUnitPrice((float) 75.56);
+PreferenceItemRequest item1 =
+   PreferenceItemRequest.builder()
+       .id("1234")
+       .title("Produto 1")
+       .quantity(2)
+       .currencyId("BRL")
+       .unitPrice(new BigDecimal("100"))
+       .build();   
+PreferenceItemRequest item2 =
+   PreferenceItemRequest.builder()
+       .id("12")
+       .title("Produto 2")
+       .quantity(1)
+       .currencyId("BRL")
+       .unitPrice(new BigDecimal("100"))
+       .build();
 
-preference.appendItem(item1, item2);
+items.add(item1);
+items.add(item2);
+
+PreferenceRequest request = PreferenceRequest.builder().items(items).build();
 // Guardar y postear la preferencia
-preference.save();
+client.create(request);
 ```
 ```ruby
 sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
@@ -705,20 +724,20 @@ var preference = {
 Agrega el código en la preferencia y reemplaza el valor <code>PIXEL_ID</code> por tu identificador.
 ===
 // Crea un objeto preferencia
-Preference preference = new Preference();
+PreferenceClient client = new PreferenceClient();
 
 // Asocia tu píxel de Facebook
-Track trackFacebook = new Track()
-                .setType("facebook_ad")
-                .setValues(new TrackValues()
-                        .setPixelId("PIXEL_ID")
-                );
+List<PreferenceTrackRequest> tracks = new ArrayList<>();
+PreferenceTrackRequest trackFacebook = PreferenceTrackRequest.builder()
+   .type("facebook_ad")
+   .values(PreferenceTrackValuesRequest.builder().pixelId("PIXEL_ID").build())
+   .build();
+tracks.add(trackFacebook);
 
-Preference preference = new Preference()
-        .appendTrack(trackFacebook);
+PreferenceRequest request = PreferenceRequest.builder().tracks(tracks).build();
 
 // Guardar y postear la preferencia
-preference.save();
+client.create(request);
 ```
 ```csharp
 ===
@@ -860,22 +879,25 @@ var preference = {
 Agrega el código en la preferencia y reemplaza los valores <code>CONVERSION\_ID</code> y <code>CONVERSION\_LABEL</code> por los datos de tu _tag_.
 ===
 // Crea un objeto preferencia
-Preference preference = new Preference();
+PreferenceClient client = new PreferenceClient();
 
 // Asocia tu etiqueta
-Track trackGoogle = new Track()
-                .setType("google_ad")
-                .setValues(new TrackValues()
-                        .setConversionId("CONVERSION_ID")
-                        .setConversionLabel("CONVERSION_LABEL")
-                );
+List<PreferenceTrackRequest> tracks = new ArrayList<>();
+PreferenceTrackRequest trackGoogle =
+   PreferenceTrackRequest.builder()
+       .type("google_ad")
+       .values(
+           PreferenceTrackValuesRequest.builder()
+               .conversionId("CONVERSION_ID")
+               .conversionLabel("CONVERSION_LABEL")
+               .build())
+       .build();
+tracks.add(trackGoogle);
 
-
-Preference preference = new Preference()
-        .appendTrack(Google);
+PreferenceRequest request = PreferenceRequest.builder().tracks(tracks).build();
 
 // Guardar y postear la preferencia
-preference.save();
+client.create(request);
 ```
 ```csharp
 ===

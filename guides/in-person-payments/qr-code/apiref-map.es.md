@@ -12,7 +12,6 @@ Las siguientes acciones están disponibles para **Código QR**.
 |[Actualizar sucursal](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/stores/_users_user_id_stores_id/put)|Renueva los datos de una tienda física.|
 |[Eliminar sucursal](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/stores/_users_user_id_stores_id/delete)|Elimina una tienda física siempre que lo necesites con el ID de la sucursal.|
 
-
 ### Cajas
 
 |Acción|Descripción|
