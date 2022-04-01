@@ -1,7 +1,6 @@
 # Configuration
  
-To ensure a better shopping experience and tighter integration with Shopify apps, it's important to customize specific information on your store's checkout. To do so, follow the steps below.
- 
+To ensure a better shopping experience and tighter integration with Shopify apps, it's important to customize specific information on your store's checkout. To do so, follow the steps below. 
  
 1. Go to the **Administration Panel** of your store and click on **Settings > Checkout**.
 2. On **Form options**, flag the field **Company name** as **Required**.
