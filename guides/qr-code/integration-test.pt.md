@@ -13,22 +13,7 @@ Pra realizar os testes, é necessário ter pelo menos dois usuários: um comprad
 
 ## Cartões de teste
 
-### Detalhes do pagador
-
-| Simulação de pagamento | Nome do titular | Identidade |
-| --- | --- | --- |
-| Pagamento aprovado | APRO | 123456789 |
-| Pagamento rejeitado | OTHE | 123456789 |
-
-### Dados do cartão
-
-| Cartão | Número | CVV | Data de Validade |
-| --- | --- | --- | --- |
-| MasterCard | 5031 7557 3453 0604 | 123 | 11/25 |
-| Visa | 4170 0688 1010 8020 | 123 | 11/25 |
-| American Express | 3711 8030 3257 522 | 1234 | 11/25 |
-
-Aqui você encontra mais [cartões de teste](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/local-cards).
+[TXTSNIPPET][/guides/snippets/test-integration/test-cards]
 
 ## Teste o fluxo de pagamento
 

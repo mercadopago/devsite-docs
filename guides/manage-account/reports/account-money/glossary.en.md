@@ -45,6 +45,7 @@ We know, some terms are technical and you may not be familiar with all of them. 
 | POI_ID | Point ID if payment is made through a physical retailer. |
 | POI_WALLET_NAME | Name of the digital wallet that a virtual payment comes from. Allows you to identify the origin of a transaction when you charge with a Mercado Pago QR Code.|
 | POI_BANK_NAME | Name of the bank that a virtual payment comes from. Allows you to identify the origin of a transaction when you charge with a Mercado Pago QR Code.|
+| CARD_INITIAL_NUMBER | It corresponds to the first digits of the credit or debit card that you used to make the purchase. |
 
 <hr/>
 

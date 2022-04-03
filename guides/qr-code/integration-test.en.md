@@ -6,7 +6,6 @@ To carry out the tests, you need to have at least two users: a buyer and a selle
 
 > If you did not generate your users at this point, you can do so in the [previous requirements](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/qr-code/pre-requisites).
 
-
 | Test user types | Description |
 | --- | --- |
 | Seller | **Test account that you use to obtain credentials to set up in your system and interact with Mercado Pago APIs**. You can also access [Mercado Pago account](https://www.mercadopago.com.ar/activities) and check approved transactions. |
@@ -14,22 +13,7 @@ To carry out the tests, you need to have at least two users: a buyer and a selle
 
 ## Test cards
 
-### Payer details
-
-| Payment simulation | Name of the holder | Identification document |
-| --- | --- | --- |
-| Payment approved | APRO | 123456789 |
-| Payment rejected | OTHE | 123456789 |
-
-### Card data
-
-| Card | Number | CVV | Expiration date |
-| --- | --- | --- | --- |
-| MasterCard | 5031 7557 3453 0604 | 123 | 11/25 |
-| Visa | 4170 0688 1010 8020 | 123 | 11/25 |
-| American Express | 3711 8030 3257 522 | 1234 | 11/25 |
-
-Here you can find more [test cards](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/local-cards).
+[TXTSNIPPET][/guides/snippets/test-integration/test-cards]
 
 ## Test payment process
 

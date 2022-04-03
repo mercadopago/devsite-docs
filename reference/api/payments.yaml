@@ -353,7 +353,7 @@ paths:
                   taxes_amount:
                     type: number
                     example: 0
-                    description: taxes_amount
+                    description: Corresponds to the tax values ​​calculated for the payment.
                   counter_currency:
                     type: string
                     format: nullable
@@ -1294,7 +1294,7 @@ paths:
                   taxes_amount:
                     type: number
                     example: 0
-                    description: taxes_amount
+                    description: Corresponds to the tax values ​​calculated for the payment.
                   counter_currency:
                     type: string
                     format: nullable
@@ -1718,16 +1718,16 @@ paths:
                         total:
                           type: number
                           example: 17493
-                          description: total
+                          description: The total number of items in the collection.
                         limit:
                           type: number
                           example: 30
-                          description: limit
+                          description: The maximum number of entries to return.
                         offset:
                           type: number
                           example: 0
-                          description: offset
-                      description: paging
+                          description: Numeric field used to paginate the response.
+                      description: Information for pagination of search results.
                     results:
                       type: array
                       items:
@@ -1963,7 +1963,7 @@ paths:
                             type: string
                             format: nullable
                             description: Merchant number (Applies to gateway model).
-                      description: results
+                      description: Search results
         '400':
           description: Error
           content:
@@ -2133,7 +2133,7 @@ components:
         - rejected -- Payment was rejected. The user may retry payment.
         - cancelled -- Payment was cancelled by one of the parties or because time for payment has expired
         - refunded -- Payment was refunded to the user.
-        - charged_back -- Was made a chargeback in the buyer’s credit card.
+        - charged_back -- A chargeback was made in the buyer’s credit card.
     payment_type_id:
       type: string
       description: Type of payment method chosen.
