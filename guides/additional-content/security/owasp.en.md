@@ -15,7 +15,7 @@ Due to the integration you are doing with Mercado Pago, to protect us against th
 >It is important to follow good coding practices at all stages of the software's development life cycle to maintain security in all transactions. 
 
 
-## Input validation
+### Input validation
 
 The [input validation](https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html) guarantees that all data is syntactically and semantically correct before entering our system's workflow, allowing us to detect unauthorized inputs before they are processed by the application.
 
@@ -31,7 +31,7 @@ For its implementation, any programming technique that allows the efficient appl
 It is critical to ensure that any input validation performed on the client-side also should be performed on the server-side since they could be bypassed on the client-side by an attacker. 
 
 
-## Server-Side Request Forgery (SSRF)
+### Server-Side Request Forgery (SSRF)
 
 [Server-Side Request Forgery](https://cheatsheetseries.owasp.org/cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet.html) (SSRF) is an attack vector that abuses an application to interact with the internal and/or external network, or with our application machine itself. Depending on the functionality and requirements of the application, there are two use cases in which SSRF can occur:
 

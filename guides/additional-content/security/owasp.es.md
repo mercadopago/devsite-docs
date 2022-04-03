@@ -14,7 +14,7 @@ Debido a la integración que estas realizando con Mercado Pago, para protegernos
 >
 >Es importante seguir buenas prácticas de codificación en todas las etapas del ciclo de vida del desarrollo del software para poder mantener la seguridad en todas las transacciones. 
 
-## Input validation
+### Input validation
 El [input validation](https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html) se realiza para garantizar que todos los datos sean correctos (sintáctica y semánticamente) antes de ingresar al flujo de trabajo de nuestro sistema, permitiéndonos detectar entradas no autorizadas antes de que sean procesadas por la aplicación.
 
 De esta manera, evitamos que datos incorrectos persistan en nuestras bases de datos y como consecuencia, provoquen un mal funcionamiento en nuestro sistema. Todos los datos de fuentes no confiables deben estar sujetos a esta validación.
@@ -27,7 +27,7 @@ Para su implementación, se utiliza cualquier técnica de programación que perm
 
 Es importante asegurar que cualquier validación de entrada realizada en el cliente también sea realizada en el servidor, ya que las mismas podrían ser omitidas del lado del cliente por un atacante. 
 
-## Server-Side Request Forgery (SSRF)
+### Server-Side Request Forgery (SSRF)
 Server-Side Request Forgery (SSRF) es un vector de ataque que abusa de una aplicación para interactuar con la red interna y/o externa, o con la propia máquina de nuestra aplicación. Dependiendo de la funcionalidad y los requisitos de la aplicación, hay dos casos de uso en los que puede ocurrir SSRF:
 
 1. **La aplicación puede enviar una solicitud solo a las aplicaciones identificadas y de confianza**
