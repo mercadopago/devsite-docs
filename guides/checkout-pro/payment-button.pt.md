@@ -7,7 +7,7 @@ Por padrão, o Checkout Pro é aberto com um botão de pagamento direcionando o 
 Além disso, o Checkout Pro também pode ser aberto de forma automática, sem necessidade de qualquer ação por parte do comprador.
 
 
-### Abertura com botão personalizado 
+#### Abertura com botão personalizado 
 
 
 A abertura com botão personalizado é feita através do método `open`, que permite abrir o Checkout a partir de qualquer elemento do site, sem necessariamente mostrar o botão de pagamento para o comprador.
@@ -50,7 +50,7 @@ Para configurar a abertura com um botão personalizado, insira o HTML abaixo dir
 
 
 
-### Abertura automática 
+#### Abertura automática 
 
 A abertura automática é feita através do parâmetro `autoOpen` nas opções de inicialização do checkout. Este parâmetro permitirá a interação dos compradores com um botão ou qualquer outro elemento para abrir o checkout.
 

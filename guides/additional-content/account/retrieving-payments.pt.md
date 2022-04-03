@@ -1,8 +1,8 @@
-# Gestão de pagamentos recebidos
+## Gestão de pagamentos recebidos
 
 Encontre todas as informações sobre os pagamentos gerados através de nossas APIs.
 
-## Obtenha pagamentos criados a partir de sua ID
+### Obtenha pagamentos criados a partir de sua ID
 
 Para obter informações sobre um pagamento a partir de sua _ID_, deve-se fazer a seguinte _requisição_:
 ```curl
@@ -49,7 +49,7 @@ Resposta esperada:
 
 As informações sobre todas as variáveis retornadas podem ser obtidas na [referência da API do recurso Payments](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_id/get).
 
-## Buscar pagamentos
+### Buscar pagamentos
 
 Para buscar pagamentos, utilize a API `Payment Search`:
 

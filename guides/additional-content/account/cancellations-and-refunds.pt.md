@@ -15,7 +15,7 @@ Nesta documentação, você encontra as instruções e os links das APIs necess�
 >
 > Ao executar as APIs citadas nesta documentação, você poderá encontrar o atributo **X-Idempotency-Key**. Seu preenchimento é importante para garantir a execução e re-execução de requisições sem que haja efeitos colaterais como por exemplo, pagamentos em duplicidade em casos de reembolso.
 
-## Cancelamentos
+### Cancelamentos
 
 Antes de realizar o cancelamento de uma compra, é preciso atentar-se os seguintes fatores: 
 
@@ -32,7 +32,7 @@ Antes de realizar o cancelamento de uma compra, é preciso atentar-se os seguint
 Considerando as informações acima, [clique aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/chargebacks/_payments_payment_id/put
 ) e visite nossa Referência API para ter acesso à API de cancelamento.
 
-## Reembolsos
+### Reembolsos
 
 Reembolsos podem ser feitos de duas maneiras: **integral**, quando o valor total da venda é devolvido ao comprador ou **parcial**, quando apenas parte do valor pago é retornado ao comprador.
 
