@@ -4,8 +4,8 @@ Assinaturas sem plano associado é quando diferentes assinaturas possuem caracte
 
 Este modelo de assinatura pode ser feito de duas maneiras:
 
-* [**com pagamento autorizado**](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/subscriptions/integration-configuration/subscription-no-associated-plan#bookmark_assinaturas_com_pagamento_autorizado) 
-* [**com pagamento pendente**](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/subscriptions/integration-configuration/subscription-no-associated-plan#bookmark_assinaturas_com_pagamento_pendente) 
+* [Com pagamento autorizado](/developers/pt/guides/subscriptions/integration-configuration/subscription-no-associated-plan#bookmark_assinaturas_com_pagamento_autorizado) 
+* [Com pagamento pendente](/developers/pt/guides/subscriptions/integration-configuration/subscription-no-associated-plan#bookmark_assinaturas_com_pagamento_pendente) 
 
 ### Assinaturas com pagamento autorizado
 

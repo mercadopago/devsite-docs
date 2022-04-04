@@ -4,8 +4,8 @@ Subscriptions with no associated plan are when different subscriptions have diff
 
 This subscription model can be 
 
-* [**With authorized payments**](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/subscriptions/integration-configuration/subscription-no-associated-plan#bookmark_subscriptions_with_authorized_payment)
-* [**Pending payments**](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/subscriptions/integration-configuration/subscription-no-associated-plan#bookmark_subcriptions_with_pending_payment)
+* [With authorized payments](/developers/en/guides/subscriptions/integration-configuration/subscription-no-associated-plan#bookmark_subscriptions_with_authorized_payment)
+* [Pending payments](/developers/en/guides/subscriptions/integration-configuration/subscription-no-associated-plan#bookmark_subcriptions_with_pending_payment)
 
 
 ### Subscriptions with authorized payment
