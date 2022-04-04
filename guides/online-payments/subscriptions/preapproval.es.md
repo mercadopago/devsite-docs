@@ -4,8 +4,16 @@
 
 # Pagos sin CVV
 
->INFO
+> NOTE
 >
+> Importante
+>
+> Esta documentación es solo para uso por parte del equipo interno, ya que fue deprecada o es un producto exclusivo. Para más detalles, hablar con el equipo comercial o de integraciones.
+>
+> En el caso de tarjetas de crédito Master y Amex, en la tarjeta de crédito aparecerá como: “MERPAG*<brand_name>”. Por lo que para estos medios de pago podrán comunicar: “En tu resumen verás el cargo como MERPAG*<brand_name>” donde <Brand_name> se configura desde la cuenta de Mercado Pago del vendedor: Menu -> Configuracion > Nombre de mi negocio.
+> 
+> Con los pagos sin cvv, se podrán realizar cobros recurrentes con Mercado Pago teniendo la libertad de amoldar la solución de la forma más óptima para tu negocio.
+
 > Consideraciones
 >
 > Se facilita este instructivo con el objetivo de  brindarle todas las herramientas para poder realizar la integración de la solución.
@@ -16,14 +24,6 @@
 > B. En caso de que usuarios o clientes existentes del Vendedor estuvieran siendo migrados a la plataforma de Pagos Recurrentes de Mercado Pago, el Vendedor deberá comunicarlo por escrito indicando que Mercado Pago procesará los pagos, informando que en el resumen verá el cargo como Mercado Pago/Mercado Libre” (*).
 >
 > C. Pre-Approval solo está disponible a través del Checkout Pro personalizado o Web Tokenize Checkout, es decir, vía la utilización de nuestras API’s.
-
-> NOTE
->
-> Nota
->
-> En el caso de tarjetas de crédito Master y Amex, en la tarjeta de crédito aparecerá como: “MERPAG*<brand_name>”. Por lo que para estos medios de pago podrán comunicar: “En tu resumen verás el cargo como MERPAG*<brand_name>” donde <Brand_name> se configura desde la cuenta de Mercado Pago del vendedor: Menu -> Configuracion > Nombre de mi negocio.
-
-Con los pagos sin cvv, se podrán realizar cobros recurrentes con Mercado Pago teniendo la libertad de amoldar la solución de la forma más óptima para tu negocio.
 
 ## Crea una aplicación
 

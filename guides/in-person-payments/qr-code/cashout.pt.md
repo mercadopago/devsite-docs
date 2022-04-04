@@ -1,5 +1,11 @@
 # Retirada de dinheiro (CashOut)
 
+> NOTE
+>
+> Importante
+>
+> Esta documentação é apenas para uso interno da equipe porque está obsoleta ou é um produto exclusivo. Para mais detalhes, fale com a equipe de vendas ou de integrações.
+
 Esta funcionalidade permite que o operador possa fornecer dinheiro ao cliente, descontando o valor diretamente do saldo em conta do comprador que realizou uma transação. 
 
 As características principais são:

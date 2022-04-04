@@ -9,6 +9,12 @@ sites_supported:
 ---
 # Mobile Checkout
 
+> NOTE
+>
+> Important
+>
+> This documentation is for internal team use only,  as it has been deprecated or is an exclusive product. For further details, talk to the sales or integrations team.
+
 Mercado Pago SDK makes it easy to create a payment experience in your application. You will instantly offer your users:
 
 ----[mla, mpe, mlb, mlm]----
