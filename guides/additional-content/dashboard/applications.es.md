@@ -4,7 +4,7 @@ Llamamos aplicaciones a las distintas integraciones contenidas en una o varias t
  
 Cada aplicación tiene un conjunto de credenciales y la posibilidad de configurar sus propias notificaciones. Cada tarjeta representa una aplicación creada y muestra el **nombre**, la **descripción**, el **ID de la aplicación** y un botón que permite administrar la aplicación.
  
-## Crear nueva aplicación
+### Crear nueva aplicación
  
 Para crear una aplicación, sigue los pasos a continuación.
  
@@ -18,7 +18,7 @@ Con cada aplicación creada, se crea automáticamente una nueva tarjeta en la p�
 
 ## Administrar aplicación
  
-## Edita una aplicación
+### Edita una aplicación
 Después de crear tu aplicación, puedes hacer clic en el botón "Editar" para ver la configuración avanzada, que incluye los datos de tu aplicación y el producto que se integrará.
  
 * **Los datos de tu aplicación**. Esta sección define los datos básicos de la aplicación e incluye:
@@ -40,7 +40,7 @@ Si necesita eliminar una aplicación en su Dashboard, haz clic en los 3 puntos v
 >
 > Ten en cuenta que cuando eliminas una aplicación, tu tienda ya no recibirá pagos a través de la integración asociada con la aplicación y se perderán todas las configuraciones, incluidas las credenciales asociadas. Una vez que se elimina una aplicación, no se puede recuperar.
  
-## Detalles de la aplicación
+### Detalles de la aplicación
  
 Al hacer clic en la tarjeta de una aplicación, tendrás acceso a los detalles de la aplicación, que incluyen:
  

@@ -2,7 +2,10 @@
 
 Las suscripciones sin plan asociado se utilizan cuando distintas suscripciones tienen características diferentes por ser específicas de cada pagador. Por ejemplo: una suscripción de un solo mes con un descuento específico.
 
-Este modelo de suscripción se puede realizar de dos formas: **con pago autorizado** o **con pago pendiente**.
+Este modelo de suscripción se puede realizar de dos formas: 
+
+* [**Con pago autorizado**](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/subscriptions/integration-configuration/subscription-no-associated-plan#bookmark_suscripciones_con_pago_autorizado) 
+* [**Con pago pendiente**](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/subscriptions/integration-configuration/subscription-no-associated-plan#bookmark_suscripciones_con_pago_pendiente)
 
 
 ### Suscripciones con pago autorizado

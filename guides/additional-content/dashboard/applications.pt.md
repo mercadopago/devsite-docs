@@ -4,7 +4,7 @@ As aplicações são as diferentes integrações contidas em uma ou mais lojas. 
  
 Cada aplicação possui um conjunto de credenciais e a possibilidade de configurar suas próprias notificações. Cada card representa uma aplicação criada e exibe o **nome**, a **descrição**, o **ID da aplicação** e um botão que permite gerenciar a aplicação.
  
-## Criar nova aplicação
+### Criar nova aplicação
  
 Para criar uma aplicação, siga os passos abaixo.
  
@@ -40,7 +40,7 @@ Caso seja necessário excluir uma aplicação em seu Dashboard, clique nos 3 pon
 >
 > Tenha em conta que ao excluir uma aplicação, sua loja deixará de receber pagamentos através da integração associada à aplicação e todas as configurações serão perdidas, incluindo as credenciais associadas. Uma vez excluída uma aplicação, não é possível recuperá-la.
  
-## Detalhes da aplicação
+### Detalhes da aplicação
  
 Ao clicar no card de uma aplicação, você terá acesso aos seus detalhes, incluindo:
  

@@ -4,7 +4,7 @@ Applications are the different integrations contained in one or more stores. You
  
 Each application has a set of credentials and the possibility to configure its own notifications. Each card represents a created application and displays the **name**, the **description**, the **application ID** and a button that allows managing the application.
  
-## Create new application
+### Create new application
  
 To create an application, follow the steps below:
  
@@ -40,7 +40,7 @@ If you need to delete an application in your Dashboard, click on the 3 vertical 
 >
 > Note that when you delete an app, your store will no longer receive payments through the integration associated with it, and all settings will be lost, including associated credentials. Once you delete an application, you cannot retrieve it.
 
-## Application details
+### Application details
  
 By clicking on an application card, you will have access to its details, including:
  
