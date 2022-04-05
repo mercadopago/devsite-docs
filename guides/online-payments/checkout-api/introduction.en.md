@@ -1,11 +1,5 @@
 # Checkout API
 
-> NOTE
->
-> Important
->
-> This documentation is for internal team use only,  as it has been deprecated or is an exclusive product. For further details, talk to the sales or integrations team.
-
 ## Create your own payment processor
 
 Use our APIs to create your own payment experience on your website or mobile application. From basic to advanced configurations, you control the whole experience.

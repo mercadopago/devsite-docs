@@ -5,12 +5,6 @@
 # Checkout API
 ------------
 
-> NOTE
->
-> Importante
->
-> Esta documentação é apenas para uso interno da equipe porque está obsoleta ou é um produto exclusivo. Para mais detalhes, fale com a equipe de vendas ou de integrações.
-
 ## Construa seu processador de pagamentos
 
 Use nossas APIs para construir sua própria experiência de pagamento no seu website ou aplicação móvel. De configurações básicas a avançadas, controle toda a experiência.
