@@ -8,10 +8,4 @@ Para comenzar a recibir pagos, debes activar el modo de producción. Para hacer 
 2. En la pantalla de administración del plugin, confirma que las [credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/credentials/credentials) de producción son las mismas que las de la cuenta de la cual que obtienes dinero por las ventas. Esta información se puede ver en tu [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/dashboard/introduction).
 3. Luego haz clic en **sí** para activar el modo de producción.
  
-> NOTE
->
-> Importante
->
-> Consulta los [requisitos para entrar en producción](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/go-live-requirements) si tienes preguntas sobre el proceso.
- 
 ¡Listo! El módulo Mercado Pago está listo para recibir pagos en línea.

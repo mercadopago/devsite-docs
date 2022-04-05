@@ -8,10 +8,4 @@ To start receiving payments you need to activate Production mode. To do this, fo
 2. On the plugin management screen, confirm that the production [credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/credentials/credentials) are the same as the account that you get money from sales. This information can be viewed on your [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/dashboard/introduction).
 3. Then click on **yes** to activate Production mode.
  
-> NOTE
->
-> Important
->
-> Check the [requirements to go into production](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/go-live-requirements) if you have any questions with the process.
- 
 Ready! The Mercado Pago plugin is ready to receive payments online.
