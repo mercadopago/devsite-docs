@@ -1,5 +1,11 @@
 # PCI DSS
 
+> NOTE
+>
+> Important
+>
+> This documentation is for internal team use only,  as it has been deprecated or is an exclusive product. For further details, talk to the sales or integrations team.
+
 At Mercado Pago we ensure the Confidentiality, Availability and Integrity of all our processes following the best market practices so that you can use all our products safely. 
 
 In addition, for Mercado Pago to be able to operate with credit and debit cards, we must comply with one of the most demanding security standards in the payment industry: Payment Card Industry Data Security Standard.

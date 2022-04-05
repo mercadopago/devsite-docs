@@ -4,8 +4,16 @@
 
 # Payments without CVV
 
->INFO 
+> NOTE
 >
+> Important
+>
+> This documentation is for internal team use only,  as it has been deprecated or is an exclusive product. For further details, talk to the sales or integrations team.
+> 
+> In the case of Master and Amex credit cards, the credit card will appear as: "MERPAG * <brand_name>". So for these means that for this payments methods you can communicate: "In your summary you will see the charge as MERPAG * <brand_name>" where <Brand_name> is configured from the Market account Seller payment: Menu -> Settings> Name of my business.
+>
+> With the payments without cvv, you can make recurring charges with Mercado Pago having the freedom to adapt the solution in the most optimal way for your business
+
 > Considerations
 >
 > This information is provided with the aim of providing all the tools to be able to perform the integration of the solution.
@@ -16,26 +24,18 @@
 > B. In the event that existing users or customers of the Seller are being migrated to the Payments Recurrent Payment Market platform, the Seller must communicate in writing indicating that Mercado Pago will process the payments, informing that in the summary it will see the charge as MercadoPago / MercadoLibre" (*).
 >
 > C. Pre-Approval is only available through the personalized Checkout Pro or web tokenize checkout, that is, via the use of our API's.
+ 
+## Create an application
 
-> NOTE
->
-> Note
->
-> In the case of Master and Amex credit cards, the credit card will appear as: "MERPAG * <brand_name>". So for these means that for this payments methods you can communicate: "In your summary you will see the charge as MERPAG * <brand_name>" where <Brand_name> is configured from the Market account Seller payment: Menu -> Settings> Name of my business.
-
- With the payments without cvv, you can make recurring charges with Mercado Pago having the freedom to adapt the solution in the most optimal way for your business
+To create an application you have to enter with your Mercado Pago account at: [https://applications.mercadopago.com/](https://applications.mercadopago.com/) To be able to operate payments without CVP, the application must be enabled for that purpose. These permits are assigned from Mercado Pago, so you must send us the APP ID obtained to make the corresponding configuration.
  
- ## Create an application
+## Charge the first payment
  
- To create an application you have to enter with your Mercado Pago account at: [https://applications.mercadopago.com/](https://applications.mercadopago.com/) To be able to operate payments without CVP, the application must be enabled for that purpose. These permits are assigned from Mercado Pago, so you must send us the APP ID obtained to make the corresponding configuration.
+For the first transaction you will always have to request the data of the card, and pay the payment with security code. It can be done following the steps of our integration by [API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card).
  
- ## Charge the first payment
+## Create a customer and associate the used card
  
- For the first transaction you will always have to request the data of the card, and pay the payment with security code. It can be done following the steps of our integration by [API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card).
- 
- ## Create a customer and associate the used card
- 
- Once the first payment has been made, and having been assured that the card is valid, create a Customer that will be associated with your account and associate a card with it. You can do this following the step by step indicating in our integration of [Users and Cards](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/advanced-integration)
+Once the first payment has been made, and having been assured that the card is valid, create a Customer that will be associated with your account and associate a card with it. You can do this following the step by step indicating in our integration of [Users and Cards](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/advanced-integration)
 
 ## Recurring your customers
 

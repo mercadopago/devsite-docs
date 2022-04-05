@@ -1,5 +1,11 @@
 # CashOut
 
+> NOTE
+>
+> Important
+>
+> This documentation is for internal team use only,  as it has been deprecated or is an exclusive product. For further details, talk to the sales or integrations team.
+
 This functionality allows the operator to provide money to the customer, deducting the amount directly from the balance in the account of the buyer who carried out a transaction.
 
 The main features are:

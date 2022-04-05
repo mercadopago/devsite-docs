@@ -1,5 +1,11 @@
 # Pagos QR modelo dinámico
 
+> NOTE
+>
+> Importante
+>
+> Esta documentación es solo para uso por parte del equipo interno, ya que fue deprecada o es un producto exclusivo. Para más detalles, hablar con el equipo comercial o de integraciones.
+
 ## ¿Qué es QR modelo dinámico?
 
 Permite que el monto a cobrar ya esté incluido en el código QR. Cada QR representa un pedido y tiene un valor único. Tiene como **característica principal el pago único**, es decir, una vez realizado el pago ya no se podrá reutilizar el QR.

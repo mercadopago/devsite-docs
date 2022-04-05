@@ -1,5 +1,10 @@
 # Checkout API
 
+> NOTE
+>
+> Important
+>
+> This documentation is for internal team use only,  as it has been deprecated or is an exclusive product. For further details, talk to the sales or integrations team.
 
 ## Create your own payment processor
 

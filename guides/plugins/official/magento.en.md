@@ -4,6 +4,12 @@
 
 # Magento 1
 
+> NOTE
+>
+> Important
+>
+> This documentation is for internal team use only,  as it has been deprecated or is an exclusive product. For further details, talk to the sales or integrations team.
+
 Mercado Pago supports the integration of payment checkouts on open source ecommerce platforms. Users are able to choose between several ecommerce platforms compatible with Mercado Pago. Mercado Pago does not endorse any particular platform.
 
 If you’re currently working with Magento 1 as your ecommerce platform, we remind you that, on August 6th 2020, Adobe [announced](https://magento.com/blog/magento-news/support-magento-1-software-ends-june-30-2020) that Magento 1 and every related extension would no longer be available on Magento’s repository.

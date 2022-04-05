@@ -1,5 +1,11 @@
 # Retiros de efectivo (CashOut)
 
+> NOTE
+>
+> Importante
+>
+> Esta documentación es solo para uso por parte del equipo interno, ya que fue deprecada o es un producto exclusivo. Para más detalles, hablar con el equipo comercial o de integraciones.
+
 Esta funcionalidad le permite al operador proporcionar dinero al cliente, descontando el monto directamente del saldo en la cuenta del comprador que realizó la transacción.
 
 Las características principales son:
