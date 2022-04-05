@@ -5,7 +5,11 @@
 | Customization moment  | When rendering the brick  |
 | Property  | customization.hidePaymentButton  |
 | Type  | Boolean  |
-| Comments  | When true, the form submit button is not displayed and it becomes necessary to use the getCardFormData function to get the form data (see example below). <br><br> <button type="button" onclick="createPayment();">Custom Payment Button</button>
+| Comments  | When true, the form submit button is not displayed and it becomes necessary to use the getCardFormData function to get the form data (see example below). |
+
+[[[
+```html
+ <br><br> <button type="button" onclick="createPayment();">Custom Payment Button</button>
 <script>
    function createPayment(){
        cardPaymentBrick.getCardFormData()
@@ -23,5 +27,7 @@
                console.warn('error getting data', error)
        }
    }
-</script> |
+</script> 
+```
+]]]
 
