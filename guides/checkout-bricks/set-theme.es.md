@@ -1,0 +1,13 @@
+## Definir tema
+
+De forma predeterminada, Card Payment Brick se instancia/renderiza con el tema predeterminado. Sin embargo, es posible seleccionar otro tema configurando el parámetro "theme" al instanciar/renderizar el brick.
+
+[[[
+```javascript
+const bricks = mp.bricks({theme: 'dark'});
+```
+]]]
+
+Si estableces el tema en la creación de **instancias** de bricks, el cambio de tema se aplicará a todos los bricks que se puedan instanciar. Por otro lado, si el tema está configurado en el **render**, los cambios en el tema solo se reflejarán en el brick que se está creando.
+
+Consulta [Temas]() para obtener detalles sobre los temas disponibles.
