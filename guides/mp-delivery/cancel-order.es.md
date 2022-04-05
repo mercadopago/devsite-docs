@@ -4,6 +4,14 @@ Para cancelar una orden que fue aceptada en el TPV, realiza un PUT enviando el `
 
 Consulta [Seguridad](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/security/oauth/introduction) para obtener más información sobre OAuth.
 
+> PREV_STEP_CARD_ES
+>
+> Imprimir recibo de orden
+>
+> Aprende a imprimir comprobantes de órdenes con Mercado Pago Delivery.
+>
+> [Imprimir recibo de orden](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/mp-delivery/print-order-receipt)
+
 > NEXT_STEP_CARD_ES
 >
 > Administración de tiendas

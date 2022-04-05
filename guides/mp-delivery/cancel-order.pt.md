@@ -4,6 +4,14 @@ Para cancelar um pedido que foi aceito no PDV, realize um PUT enviando o `shipme
 
 Veja [Segurança](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/security/oauth/introduction) para mais informações sobre OAuth.
 
+> PREV_STEP_CARD_PT
+>
+> Imprimir comprovante do pedido
+>
+> Saiba como imprimir o comprovante dos pedidos com o Mercado Pago Delivery.
+>
+> [Imprimir comprovante do pedido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/mp-delivery/print-order-receipt)
+
 > NEXT_STEP_CARD_PT
 >
 > Gerenciamento de lojas

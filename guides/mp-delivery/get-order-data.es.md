@@ -27,6 +27,14 @@ Para consultar los datos de una orden, realiza un GET enviando `shipment_id` y `
   * **Out_for_delivery**: la orden salió para su entrega.
   * **Delivery_failed**: entrega no completada.
 
+> PREV_STEP_CARD_ES
+>
+> Administración de órdenes
+>
+> Aprende a gestionar órdenes con Mercado Pago Delivery.
+>
+> [Administración de órdenes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/mp-delivery/order-management)
+
 > NEXT_STEP_CARD_ES
 >
 > Aceptar órdenes

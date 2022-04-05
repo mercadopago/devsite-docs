@@ -12,6 +12,14 @@ When accepting the order, the status will be changed and the new order status wi
 >
 > It is important to know that only in the statuses **ready_to_ship** and **ready_to_print** it is possible to accept an order. After accepting the order, the substatus will be **printed**. If the order is not accepted 5 minutes after its creation, it will be automatically cancelled.
 
+> PREV_STEP_CARD_EN
+>
+> Get order data
+>
+> Learn how to get order data with Mercado Pago Delivery.
+>
+> [Get order data](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/mp-delivery/get-order-data)
+
 > NEXT_STEP_CARD_EN
 >
 > Print order receipt

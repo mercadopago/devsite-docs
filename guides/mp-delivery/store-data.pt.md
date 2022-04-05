@@ -14,6 +14,14 @@ Esse endpoint point retorna todas os dados do endpoint anterior, além de inform
 > </br>
 > Para saber como criar um ID externo para a sua loja e utilizá-lo como identificador para o sistema de software de gestão de pedidos, acesse [Alterar ID externo da loja](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/mp-delivery/change-store-external-id).
 
+> PREV_STEP_CARD_PT
+>
+> Gerenciamento de lojas
+>
+> Saiba consultar e gerenciar informações das lojas.
+>
+> [Gerenciamento de lojas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/mp-delivery/store-management)
+
 > NEXT_STEP_CARD_PT
 >
 > Alterar status da loja

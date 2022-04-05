@@ -14,6 +14,14 @@ Este endpoint devuelve todos los datos del endpoint anterior, además de informa
 > </br>
 > Para saber cómo crear un ID externo para tu sucursal y utilizarlo como identificador para el sistema de software de gestión de pedidos, accede a [Cambiar ID externo de la sucursal](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/mp_delivery/change-store-external-id)
 
+> PREV_STEP_CARD_ES
+>
+> Administración de tiendas
+>
+> Aprende a consultar y gestionar la información de tu sucursal.
+>
+> [Administración de sucursales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/mp-delivery/store-management)
+
 > NEXT_STEP_CARD_ES
 >
 > Cambiar el estado de la sucursal

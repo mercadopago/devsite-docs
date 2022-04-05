@@ -9,6 +9,14 @@ A partir requisição feita através de APIs REST, com a identificação retorna
 
 Com o `store_id` vocë poderá verificar e alterar o status de funcionamento da loja, além de poder criar um ID externo que será utilizado como identificador para um sistema de software de gestão de pedidos.
 
+> PREV_STEP_CARD_PT
+>
+> Cancelar pedido
+>
+> Saiba como cancelar pedidos no Mercado Pago Delivery.
+>
+> [Cancelar pedido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/mp-delivery/cancel-order)
+
 > NEXT_STEP_CARD_PT
 >
 > Obter dados da loja

@@ -6,6 +6,14 @@ To print it, perform a GET sending the `shipment_id` and `access-token` (generat
 
 The receipt can always be printed, except when the order has [status canceled or sent](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/mp-delivery/get-order-data). 
 
+> PREV_STEP_CARD_EN
+>
+> Accept order
+>
+> Learn how to accept orders with Mercado Pago Delivery.
+>
+>[Accept order](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/mp-delivery/accept-order)
+
 > NEXT_STEP_CARD_EN
 >
 > Cancel order

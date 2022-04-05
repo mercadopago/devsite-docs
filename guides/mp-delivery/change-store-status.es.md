@@ -8,6 +8,14 @@ Los estados de funcionamiento se definen de la siguiente manera:
 
 Para cambiarlos, debes realizar un PUT enviando el `store_id` y el `access-token` (generados por el proceso de autenticación OAuth) al endpoint [/proximity-integration/stores/{store_id}/status](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/mp_delivery/_proximity-integration_users_seller_id_stores/get). Consulta [Seguridad](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/security/oauth/introduction) para obtener más información sobre OAuth.
 
+> PREV_STEP_CARD_ES
+>
+> Obtener datos de la sucursal
+>
+> Más información sobre cómo obtener datos de la sucursal.
+>
+> [Obtener datos de la sucursal](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/mp-delivery/store-data)
+
 > NEXT_STEP_CARD_ES
 >
 > Cambiar ID externo de la sucursal

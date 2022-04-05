@@ -8,10 +8,18 @@ To be able to integrate Mercado Pago Delivery with your POS, you must meet the r
 |Credentials| The [credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials) are unique passwords with which we identify an integration in your account, and which are used to capture payments in virtual stores and other applications securely.|
 |Access Token| You will need a valid access token in the different requests of public origin to have access to protected resources of other Mercado Pago accounts. In addition, through the OAuth authorization protocol, it will be possible to receive notifications of orders from restaurants. Check [OAuth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/security/oauth/introduction) to learn how to get an access token.|
 
+> PREV_STEP_CARD_EN
+>
+> Introduction
+>
+> Find out how Mercado Pago Delivery works.
+>
+> [Introduction](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/mp-delivery/introduction)
+
 > NEXT_STEP_CARD_EN
 >
-> Configuration
+> Integration setup
 >
 > Learn how to configure the integration with Mercado Pago Delivery.
 >
-> [Configuration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/mp-delivery/integration)
+> [Integration setup](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/mp-delivery/integration)

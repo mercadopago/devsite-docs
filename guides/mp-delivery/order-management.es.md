@@ -13,6 +13,14 @@ Con `shipping_id` en la mano, puede:
 * Imprimir el recibo de la orden.
 * Cancelar la orden.
 
+> PREV_STEP_CARD_ES
+>
+> Configuración de integración
+>
+> Aprende a configurar la integración con Mercado Pago Delivery.
+>
+> [Configuración de integración](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/mp-delivery/integration)
+
 > NEXT_STEP_CARD_ES
 >
 > Obtener datos de la orden

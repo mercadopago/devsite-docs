@@ -27,6 +27,14 @@ Para consultar dados de um pedido, realize um GET enviando o `shipment_id` e o `
   * **Out_for_delivery**: pedido saiu para entrega. 
   * **Delivery_failed**: entrega não concluída.
 
+> PREV_STEP_CARD_PT
+>
+> Gerenciamento de pedidos
+>
+> Saiba gerenciar os pedidos com o Mercado Pago Delivery.
+>
+> [Gerenciamento de pedidos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/mp-delivery/order-management)
+
 > NEXT_STEP_CARD_PT
 >
 > Aceitar pedido

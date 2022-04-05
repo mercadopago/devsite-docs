@@ -13,6 +13,14 @@ Com o `shipment_id` em mãos, você consegue:
 * Imprimir o comprovante do pedido.
 * Cancelar o pedido.
 
+> PREV_STEP_CARD_PT
+>
+> Configuração da integração
+>
+> Saiba como configurar a integração com o Mercado Pago Delivery.
+>
+> [Configuração da integração](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/mp-delivery/integration)
+
 > NEXT_STEP_CARD_PT
 >
 > Obter dados do pedido

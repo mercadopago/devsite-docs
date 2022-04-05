@@ -4,6 +4,14 @@ To cancel an order that was accepted in the POS, perform a PUT sending the `ship
 
 Check [Security](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/security/oauth/introduction) for more information about OAuth.
 
+> PREV_STEP_CARD_EN
+>
+> Print order receipt
+>
+> Learn how to print proof of orders with Mercado Pago Delivery.
+>
+> [Print order receipt](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/mp-delivery/print-order-receipt)
+
 > NEXT_STEP_CARD_EN
 >
 > Store management

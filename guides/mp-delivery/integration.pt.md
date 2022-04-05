@@ -8,6 +8,14 @@ Para configurar a integração com o Mercado Pago Delivery, siga os passos abaix
 3. Utilize as APIs disponíveis para consultar e gerenciar informações das lojas. [Gerenciamento de lojas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/proximity-mp-delivery/store-management).
 5. Utilize as APIs disponíveis para gerenciar os pedidos. Veja [Gerenciamento de pedidos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/proximity-mp-delivery/order-management).
 
+> PREV_STEP_CARD_PT
+>
+> Pré-requisitos
+>
+> Conheça os pré-requisitos para realizar a integração.
+>
+> [Pré-requisitos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/mp-delivery/previous-requirements)
+
 > NEXT_STEP_CARD_PT
 >
 > Gerenciamento de pedidos

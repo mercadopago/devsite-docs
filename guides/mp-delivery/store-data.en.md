@@ -14,6 +14,14 @@ This endpoint point returns all data from the previous endpoint, plus informatio
 > </br>
 > To learn how to create an external ID for your store and use it as an identifier for the order management software system, access [Change external store ID](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/mp-delivery/change-store-external-id).
 
+> PREV_STEP_CARD_EN
+>
+> Store management
+>
+> Learn how to consult and manage store information.
+>
+> [Store management](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/mp-delivery/store-management)
+
 > NEXT_STEP_CARD_EN
 >
 > Change store status

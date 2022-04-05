@@ -13,10 +13,18 @@ With `shipment_id` in hand you can:
 * Print the order receipt.
 * Cancel the order.
 
+> PREV_STEP_CARD_EN
+>
+> Integration setup
+>
+> Learn how to configure the integration with Mercado Pago Delivery.
+>
+> [Integration setup](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/mp-delivery/integration)
+
 > NEXT_STEP_CARD_EN
 >
 > Get order data
 >
 > Learn how to get order data with Mercado Pago Delivery.
 >
-> [Obter dados do pedido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/mp-delivery/get-order-data)
+> [Get order data](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/mp-delivery/get-order-data)

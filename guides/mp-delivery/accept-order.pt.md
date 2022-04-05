@@ -12,6 +12,14 @@ Ao aceitar o pedido, o status será alterado e no response será indicado o novo
 >
 > É importante saber que apenas nos estados **ready_to_ship** e **ready_to_print** é possível aceitar um pedido. Após aceitar o pedido, o substatus passará a ser “printed”. Caso o pedido não seja aceito 5 minutos após a sua criação, o mesmo será cancelado automaticamente.  
 
+> PREV_STEP_CARD_PT
+>
+> Obter dados do pedido
+>
+> Saiba como obter dados de pedidos com o Mercado Pago Delivery.
+>
+> [Obter dados do pedido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/mp-delivery/get-order-data)
+
 > NEXT_STEP_CARD_PT
 >
 > Imprimir comprovante do pedido

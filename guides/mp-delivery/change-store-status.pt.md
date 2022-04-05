@@ -8,6 +8,14 @@ Os status de funcionamento estão definidos da seguinte forma:
 
 Para alterá-los, você deverá realizar um PUT enviando o `store_id` e o `access-token` (gerado pelo processo de autenticação do OAuth) ao endpoint [/proximity-integration/stores/{store_id}/status](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/mp_delivery/_proximity-integration_users_seller_id_stores/get). Veja [Segurança](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/security/oauth/introduction) para mais informações sobre OAuth.
 
+> PREV_STEP_CARD_PT
+>
+> Alterar status da loja
+>
+> Saiba como alterar o status de funcionamento da loja da loja.
+>
+> [Alterar status da loja](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/mp-delivery/change-store-status)
+
 > NEXT_STEP_CARD_PT
 >
 > Alterar ID externo da loja

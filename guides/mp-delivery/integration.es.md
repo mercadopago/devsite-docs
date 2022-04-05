@@ -8,6 +8,14 @@ Para configurar la integración con Mercado Pago Delivery, sigue los pasos a con
 4. Utiliza las API disponibles para consultar y gestionar información de tus sucursales. Ver [Administración de tiendas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/mp-delivery/store-management).
 5. Utiliza las API disponibles para gestionar las órdenes. Ver [Administración de órdenes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/mp-delivery/order-management).
 
+> PREV_STEP_CARD_ES
+>
+> Requisitos prévios
+>
+> Conoce los requisitos previos para llevar a cabo la integración.
+>
+> [Requisitos previos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/mp-delivery/previous-requirements)
+
 > NEXT_STEP_CARD_ES
 >
 > Administración de órdenes

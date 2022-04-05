@@ -9,6 +9,14 @@ A partir de la solicitud realizada a través de APIs REST, con la identificació
 
 Con `store_id` puede consultar y cambiar el estado operativo de la sucursal, además de poder crear una identificación externa que se utilizará como identificador para un sistema de software de gestión de pedidos.
 
+> PREV_STEP_CARD_ES
+>
+> Cancelar orden
+>
+> Conoce cómo cancelar órdenes en Mercado Pago Delivery.
+>
+> [Cancelar orden](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/mp-delivery/cancel-order)
+
 > NEXT_STEP_CARD_ES
 >
 > Obtener datos de la sucursal
