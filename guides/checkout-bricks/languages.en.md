@@ -1,0 +1,9 @@
+## Languages
+
+The Card Payment Brick can be instantiated/rendered in three different languages:
+
+* Portuguese
+* English 
+* Spanish
+
+See [Select language](/docs/checkout-bricks/configurations/choose-language) for instructions on how to select the language of the brick.
