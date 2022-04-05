@@ -223,7 +223,7 @@ La respuesta va a mostrar el estado pendiente del pago y toda la información qu
       "net_received_amount": 0,
       "total_paid_amount": 100,
       "overpaid_amount": 0,
-      "external_resource_url": "https://www.mercadopago.com/mlb/payments/bank_transfer/helper?payment_id=123456789&payment_method_reference_id= 123456789&caller_id=123456",
+      "external_resource_url": null,
       "installment_amount": 0,
       "financial_institution": null
   },
@@ -232,11 +232,12 @@ La respuesta va a mostrar el estado pendiente del pago y toda la información qu
       "sub_type": null,
       "application_data": {
         "name": "NAME_SDK",
-        "version": "VERSION_NUMBER",
+        "version": "VERSION_NUMBER"
       },
       "transaction_data": {
         "qr_code_base64": "iVBORw0KGgoAAAANSUhEUgAABRQAAAUUCAYAAACu5p7oAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAIABJREFUeJzs2luO3LiWQNFmI+Y/Zd6vRt36KGNXi7ZOBtcagHD4kNLeiLX33v8DAAAAABD879sDAAAAAAA/h6AIAAAAAGSCIgAAAACQCYoAAAAAQCYoAgAAAACZoAgAAAAAZIIiAAAAAJAJigAAAABAJigCAAAAAJmgCAAAAABkgiIAAAAAkAmKAAAAAEAmKAIAAAAAmaAIAAAAAGSCIgAAAACQCYoAAAAAQCYoAgAAAACZoAgAAAAAZIIiAAAAAJAJigAAAABAJigCA...",
         "qr_code": "00020126600014br.gov.bcb.pix0117john@yourdomain.com0217additional data520400005303986540510.005802BR5913Maria Silva6008Brasilia62070503***6304E2CA",
+        "ticket_url": "https://www.mercadopago.com.br/payments/123456789/ticket?caller_id=123456&hash=123e4567-e89b-12d3-a456-426655440000"
       }
   }
   ...,
