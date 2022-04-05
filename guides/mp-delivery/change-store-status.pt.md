@@ -10,11 +10,11 @@ Para alterá-los, você deverá realizar um PUT enviando o `store_id` e o `acces
 
 > PREV_STEP_CARD_PT
 >
-> Alterar status da loja
+> Obter dados da loja
 >
-> Saiba como alterar o status de funcionamento da loja da loja.
+> Saiba como obter dados das lojas.
 >
-> [Alterar status da loja](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/mp-delivery/change-store-status)
+> [Obter dados da loja](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/mp-delivery/store-data)
 
 > NEXT_STEP_CARD_PT
 >
