@@ -45,8 +45,8 @@ Para **probar diferentes resultados de pago**, completa el estado deseado en el 
  
 | Estado de pago | Descripción | Documento de identidad |
 | --- | --- | --- |
-| `APRO` | Pago aprobado | (CPF)12345678909 |
-| `OTHE` | Rechazado por error general | (CPF)12345678909 |
+| `APRO` | Pago aprobado | (CPF) 12345678909 |
+| `OTHE` | Rechazado por error general | (CPF) 12345678909 |
 | `CONT` | Pendiente de pago |
 | `CALL` | Rechazado con validación para autorizar |
 | `FUND` | Rechazado por importe insuficiente |

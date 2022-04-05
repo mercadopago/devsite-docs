@@ -43,8 +43,8 @@ To **test different payment results**, fill in the desired status in the cardhol
  
 | Payment Status | Description | Identity document |
 | --- | --- | --- |
-| `APRO` | Approved payment | (CPF)12345678909 |
-| `OTHE` | Declined for general error | (CPF)12345678909 |
+| `APRO` | Approved payment | (CPF) 12345678909 |
+| `OTHE` | Declined for general error | (CPF) 12345678909 |
 | `CONT` | Pending payment |
 | `CALL` | Declined with validation to authorize |
 | `FUND` | Declined for insufficient amount |

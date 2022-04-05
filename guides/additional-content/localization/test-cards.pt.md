@@ -16,7 +16,7 @@ Para **testar diferentes resultados de pagamento**, preencha o status desejado n
  
 | Status de pagamento | Descrição | Documento de identidade |
 | --- | --- | --- |
-| `APRO` | Pagamento aprovado | 123456789 | DNI do usuário de teste |
+| `APRO` | Pagamento aprovado | DNI do usuário de teste |
 | `OTHE` | Recusado por erro geral | DNI do usuário de teste |
 | `CONT` | Pagamento pendente |
 | `CALL` | Recusado com validação para autorizar |
@@ -45,8 +45,8 @@ Para **testar diferentes resultados de pagamento**, preencha o status desejado n
  
 | Status de pagamento | Descrição | Documento de identidade |
 | --- | --- | --- |
-| `APRO` | Pagamento aprovado | 123456789 | (CPF)12345678909 |
-| `OTHE` | Recusado por erro geral | (CPF)12345678909 |
+| `APRO` | Pagamento aprovado | (CPF) 12345678909 |
+| `OTHE` | Recusado por erro geral | (CPF) 12345678909 |
 | `CONT` | Pagamento pendente |
 | `CALL` | Recusado com validação para autorizar |
 | `FUND` | Recusado por quantia insuficiente |

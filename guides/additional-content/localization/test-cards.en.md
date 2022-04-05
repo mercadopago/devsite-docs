@@ -29,7 +29,7 @@ To **test different payment results**, fill in the desired status in the cardhol
 >
 > Important
 >
->The DNI associated with the card must be the same as the test user making the purchase. To confirm this information, go to your Mercado Pago user account, access **Your profile > Your information** and review the **Document** field, ensuring that it will be the same to be associated with the card.
+> The DNI associated with the card must be the same as the test user making the purchase. To confirm this information, go to your Mercado Pago user account, access **Your profile > Your information** and review the **Document** field, ensuring that it will be the same to be associated with the card.
 
 ------------
 
@@ -45,8 +45,8 @@ To **test different payment results**, fill in the desired status in the cardhol
  
 | Payment Status | Description | Identity document |
 | --- | --- | --- |
-| `APRO` | Approved payment | (CPF)12345678909 |
-| `OTHE` | Declined for general error | (CPF)12345678909 |
+| `APRO` | Approved payment | (CPF) 12345678909 |
+| `OTHE` | Declined for general error | (CPF) 12345678909 |
 | `CONT` | Pending payment |
 | `CALL` | Declined with validation to authorize |
 | `FUND` | Declined for insufficient amount |
