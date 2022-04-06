@@ -9,7 +9,7 @@ content_section_with_media:
 
 >>>> Navegadores compatíveis <<<<
 
-/sdk/mpjsv1-2.png
+![compatible navigators](/sdk/mpjsv1-2.png) 
 
 --- mini_landing_separator ---
 

@@ -9,7 +9,7 @@ content_section_with_media:
 
 >>>> Navegadores compatíveis <<<<
 
-/sdk/mpjsv2.png
+[Compatible navigators](/sdk/mpjsv2.png)
 
 ---
 bullet_section_with_media: 
