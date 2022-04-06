@@ -45,8 +45,8 @@ For example, if the card has insufficient balance, you can suggest trying again 
 | Code | Description | Suggested communication |
 | --- | --- | --- |
 | 205 | parameter cardNumber can not be null/empty | Enter card number. |
-| 208 | parameter cardExpirationMonth can not be null/empty | Select month. |
-| 209 | parameter cardExpirationYear can not be null/empty | Select year. |
+| 208 | parameter expirationMonth can not be null/empty | Select month. |
+| 209 | parameter expirationYear can not be null/empty | Select year. |
 | 212 | parameter docType can not be null/empty | Enter your ID type. |
 | 213 | The parameter cardholder.document.subtype can not be null or empty | Enter your ID. |
 | 214 | parameter docNumber can not be null/empty | Enter your ID. |
@@ -59,8 +59,8 @@ For example, if the card has insufficient balance, you can suggest trying again 
 | 322 | invalid parameter docType | Invalid ID type. |
 | 323 | invalid parameter cardholder.document.subtype | Check your ID. |
 | 324 | invalid parameter docNumber | Invalid ID. |
-| 325 | invalid parameter cardExpirationMonth | Invalid month. |
-| 326 | invalid parameter cardExpirationYear | Invalid year. |
+| 325 | invalid parameter expirationMonth | Invalid month. |
+| 326 | invalid parameter expirationYear | Invalid year. |
 | default | Another error code | Check data. |
 
 ## Card token generation errors

@@ -72,8 +72,8 @@ No exemplo a seguir, assume-se que os dados `transactionAmount` e `description` 
 ```html
 <form id="form-checkout" method="POST" action="/process_payment">
     <input type="text" id="form-checkout__cardNumber" placeholder="Número do cartão" />
-    <input type="text" id="form-checkout__cardExpirationMonth" placeholder="Mês de vencimiento (MM)" />
-    <input type="text" id="form-checkout__cardExpirationYear" placeholder="Ano de vencimiento (YY o YYYY)" />
+    <input type="text" id="form-checkout__expirationMonth" placeholder="Mês de vencimiento (MM)" />
+    <input type="text" id="form-checkout__expirationYear" placeholder="Ano de vencimiento (YY o YYYY)" />
     <input type="text" name="cardholderName" id="form-checkout__cardholderName" placeholder="Titular do cartão"/>
     <input type="email" name="cardholderEmail" id="form-checkout__cardholderEmail" placeholder="E-mail" />
     <input type="text" id="form-checkout__securityCode" placeholder="Código de segurança"/>
@@ -298,8 +298,8 @@ const createCardToken = async (event) => {
                identificationType: document.getElementById('form-checkout__identificationType').value,------------
                identificationNumber: document.getElementById('form-checkout__identificationNumber').value,
                securityCode: document.getElementById('form-checkout__securityCode').value,
-               cardExpirationMonth: document.getElementById('form-checkout__cardExpirationMonth').value,
-               cardExpirationYear: document.getElementById('form-checkout__cardExpirationYear').value
+               cardExpirationMonth: document.getElementById('form-checkout__expirationMonth').value,
+               cardExpirationYear: document.getElementById('form-checkout__expirationYear').value
            });
 
            tokenElement.value = token.id;
