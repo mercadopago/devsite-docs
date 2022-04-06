@@ -10,7 +10,7 @@ To integrate it, you need to [generate the payment preference](https://www.merca
 >
 > h3
 >
-> 1. Generate your preference
+> Generate your preference
 
 To start, you need to generate your payment preference from your backend with the [Mercado Pago SDK](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/previous-requirements#bookmark_always_use_our_libraries) you used in your Checkout API. 
 
@@ -177,7 +177,7 @@ curl -X POST \
 >
 > h3
 >
-> 2. Add the checkout to your website
+> Add the checkout to your website
 
 Then, from your frontend, add the following code to display the Checkout Pro Wallet Mode payment button where you want it to appear.
 

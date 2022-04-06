@@ -10,7 +10,7 @@ Para integrá-lo, você deve [gerar a preferência de pagamento](https://www.mer
 >
 > h3
 >
-> 1. Gere sua preferência
+> Gere sua preferência
 
 Para começar, você precisa gerar sua preferência de pagamento pelo seu backend com a [SDK do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/checkout-api/previous-requirements#bookmark_sempre_utilize_nossas_bibliotecas) que você usou na sua API de Checkout. 
 
@@ -177,7 +177,7 @@ curl -X POST \
 >
 > h3
 >
-> 2. Adicione o checkout ao seu site
+> Adicione o checkout ao seu site
 
 Depois, do seu frontend, adicione o seguinte código para exibir o botão de pagamento do Checkout Pro modo carteira onde você quiser que ele apareça.
 

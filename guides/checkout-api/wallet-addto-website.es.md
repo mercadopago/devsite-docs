@@ -10,7 +10,7 @@ Para integrarlo, tienes que [generar la preferencia de pago](https://www.mercado
 >
 > h3
 >
-> 1. Genera tu preferencia
+> Genera tu preferencia
 
 Para comenzar, tienes que generar tu preferencia de pago desde tu backend con la [SDK de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/checkout-api/previous-requirements#bookmark_utiliza_nuestras_librer%C3%ADas_siempre) que utilizaste en tu Checkout API. 
 
@@ -177,7 +177,7 @@ curl -X POST \
 >
 > h3
 >
-> 2. Suma el checkout a tu sitio
+> Suma el checkout a tu sitio
 
 Luego, desde tu frontend, agrega el siguiente código para mostrar el botón de pago de Checkout Pro modo billetera en el lugar que quieras que aparezca.
 
