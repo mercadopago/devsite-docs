@@ -10,4 +10,3 @@ const bricks = mp.bricks({theme: 'dark'});
 
 Si estableces el tema en la creación de **instancias** de bricks, el cambio de tema se aplicará a todos los bricks que se puedan instanciar. Por otro lado, si el tema está configurado en el **render**, los cambios en el tema solo se reflejarán en el brick que se está creando.
 
-Consulta [Temas]() para obtener detalles sobre los temas disponibles.

@@ -11,8 +11,11 @@ Durante el proceso de integración del Brick, es posible que **al momento de ins
 | Ausencia de la propiedad locale (idioma deseado)  | [Initialization error] Locale property is required  | missing_locale_property  |
 | Error genérico ocurrido durante la inicialización del brick, generalmente alguna validación que falló debido a un valor enviado por el integrador  | [Initialization error] Brick incorrectly initialized: {error}  | incorrect_initialization  |
 
+<br>
 
 ## Comunicación con servicios externos (APIs de Mercado Pago)
+
+<br>
 
 | Error  | Mensaje para el usuario  | Mensaje para el integrador  | ¿Crítico?  | Código de causa  |
 | --- | --- | --- | --- | --- |

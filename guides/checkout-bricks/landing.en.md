@@ -10,7 +10,7 @@ bullet_section_with_media:
  - title: 
  - type: normal
  - message: The bricks have UI component control flows and data validation, which makes the integration process happen from the initial configurations, methods, and callbacks used by each brick. In addition, the bricks guarantee the security of sensitive data through automatic tokenization, preventing this data from traveling on the server.
- - image: /checkout-bricks/cho_bricks_landing__pt.png
+ - image: /checkout-bricks/cho-bricks-landing.png
 ---
 
 --- mini_landing_separator ---
@@ -23,9 +23,13 @@ available_countries: mla, mlb, mlm, mlu, mlc, mco, mpe
 --- mini_landing_separator ---
 
 >>>> Bricks <<<<
-| [Card Payment Brick (/checkout-bricks/new-button__EN.png)]| [Local Payment Brick] (/checkout-bricks/soon-button_EN.png)| [Payment Options Brick] (/checkout-bricks/soon-button_EN.png)| [Shipping Brick] (/checkout-bricks/soon-button_EN.png)|
-|---------------------|---------------------|-----------------------|----------------|
-| [Personal Data Brick] (/checkout-bricks/soon-button_EN.png)| [Feedback Brick] (/checkout-bricks/soon-button_EN.png)| [Summary Brick] (/checkout-bricks/soon-button_EN.png)| [Wallet  Brick] (/checkout-bricks/soon-button_EN.png) |
+
+| | | | |
+|---|---|---|---|
+| Card Payment Brick ![new](checkout-bricks/new-button__EN.png)| **Local Payment Brick** ![soon](checkout-bricks/soon-button_EN.png)| **Payment Options Brick** ![soon](checkout-bricks/soon-button_EN.png) | **Shipping Brick** ![soon](checkout-bricks/soon-button_EN.png) |
+| **Personal Data Brick** ![soon](checkout-bricks/soon-button_EN.png) | **Feedback Brick** <br> ![soon](checkout-bricks/soon-button_EN.png) | **Summary Brick** <br> ![soon](checkout-bricks/soon-button_EN.png) | **Wallet Brick** <br> ![soon](checkout-bricks/soon-button_EN.png) |
+
+<br>
 
 --- mini_landing_separator ---
 
@@ -33,4 +37,4 @@ available_countries: mla, mlb, mlm, mlu, mlc, mco, mpe
 > 
 > Important
 >
-> Remember that to use the bricks to build your checkout front, you will need the Checkout API backend. See the [Checkout API] integration manual (link) for instructions.
+> Remember that to use the bricks to build your checkout front, you will need the Checkout API backend. See the [Checkout API](/developers/en/docs/checkout-api/introduction) integration manual for instructions.

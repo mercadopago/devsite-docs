@@ -10,7 +10,7 @@ bullet_section_with_media:
  - title: 
  - type: normal
  - message: Os bricks possuem fluxos de controle do componente de UI e validação dos dados, o que faz com que o processo de integração ocorra a partir de configurações iniciais, métodos e callbacks utilizados por cada brick. Além disso, os bricks garantem segurança de dados sensíveis através da tokenização automática prevenindo esses dados de trafegarem no servidor.
- - image:/checkout-bricks/cho_bricks_landing__pt.png
+ - image:/checkout-bricks/cho-bricks-landing.png
 ---
 
 --- mini_landing_separator ---
@@ -23,9 +23,13 @@ available_countries: mla, mlb, mlm, mlu, mlc, mco, mpe
 --- mini_landing_separator ---
 
 >>>> Bricks <<<<
-| [Card Payment Brick](link)| [Local Payment Brick](link)| [Payment Options Brick](link)| [Shipping Brick](link)|
-|---------------------|---------------------|-----------------------|----------------|
-| [Personal Data Brick](link)| [Feedback Brick](link)| [Summary Brick](link)| [Wallet  Brick](link) |
+
+| | | | |
+|---|---|---|---|
+| Card Payment Brick ![new](checkout-bricks/new-button__PT.png) | **Local Payment Brick** ![soon](checkout-bricks/soon-button__PT.png) | **Payment Options Brick** ![soon](checkout-bricks/soon-button__PT.png) | **Shipping Brick** ![soon](checkout-bricks/soon-button__PT.png) |
+| **Personal Data Brick** ![soon](checkout-bricks/soon-button__PT.png) | **Feedback Brick** <br> ![soon](checkout-bricks/soon-button__PT.png) | **Summary Brick** <br> ![soon](checkout-bricks/soon-button__PT.png) | **Wallet Brick** ![soon](checkout-bricks/soon-button__PT.png) |
+
+<br>
 
 --- mini_landing_separator ---
 
@@ -33,4 +37,4 @@ available_countries: mla, mlb, mlm, mlu, mlc, mco, mpe
 > 
 > Importante
 >
-> Lembre-se que para poder utilizar os bricks para construir o front do seu checkout, você vai precisar do backend do Checkout Transparente. Veja o manual de integração do [Checkout Transparente] (link) para instruções.
+> Lembre-se que para poder utilizar os bricks para construir o front do seu checkout, você vai precisar do backend do Checkout Transparente. Veja o manual de integração do [Checkout Transparente](/developers/pt/docs/checkout-api/introduction) para instruções.

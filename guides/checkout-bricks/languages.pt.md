@@ -6,4 +6,4 @@ O Card Payment Brick pode ser instanciado/renderizado em três idiomas diferente
 * Inglês 
 * Espanhol
 
-Veja [Escolher idioma](/guides/checkout-bricks/configurations/choose-language) para instruções de como selecionar o idioma do brick.
+Veja [Escolher idioma](/developers/pt/docs/checkout-bricks/configurations/choose-language) para instruções de como selecionar o idioma do brick.

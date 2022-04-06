@@ -12,10 +12,12 @@ Durante o processo de integração do brick, é possível que diferentes erros r
 | Ausência da propriedade locale (idioma desejado) | [Card Payment Brick error] Locale property is required | missing_locale_property |
 | Erro genérico ocorrido durante a inicialização do brick, geralmente alguma validação que falhou por causa de um valor enviado pelo integrador | [Card Payment Brick error] Brick incorrectly initialized: {error}|incorrect_initialization |
 
+<br>
 
 
 ## Comunicação com serviços externos (APIs do Mercado Pago)
 
+<br>
 
 | Erro | Mensagem para o usuário | Mensagem para o integrador | Crítico? |Código da causa |
 |--- |--- |--- |--- |--- |
