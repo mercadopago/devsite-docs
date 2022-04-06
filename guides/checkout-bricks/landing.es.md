@@ -23,9 +23,9 @@ available_countries: mla, mlb, mlm, mlu, mlc, mco, mpe
 --- mini_landing_separator ---
 
 >>>> Bricks <<<<
-| [Card Payment Brick (devsite-docs/images/checkout-bricks/new-button__ES-cópia.png)]| [Local Payment Brick] (images/checkout-bricks/soon-button__ES.png)| [Payment Options Brick] (images/checkout-bricks/soon-button__ES.png)| [Shipping Brick] (images/checkout-bricks/soon-button__ES.png)|
+| Card Payment Brick ![new](/checkout-bricks/new-button__ES-cópia.png)]| Local Payment Brick ![soon](/checkout-bricks/soon-button__ES.png)| Payment Options Brick ![soon](/checkout-bricks/soon-button__ES.png)| Shipping Brick ![soon](images/checkout-bricks/soon-button__ES.png)|
 |---------------------|---------------------|-----------------------|----------------|
-| [Personal Data Brick] (images/checkout-bricks/soon-button__ES.png)| [Feedback Brick] (images/checkout-bricks/soon-button__ES.png)| [Summary Brick] (images/checkout-bricks/soon-button__ES.png)| [Wallet  Brick] (images/checkout-bricks/soon-button__ES.png) |
+| Personal Data Brick ![soon](images/checkout-bricks/soon-button__ES.png)| Feedback Brick ![soon](images/checkout-bricks/soon-button__ES.png)| Summary Brick ![soon](images/checkout-bricks/soon-button__ES.png)| Wallet Brick ![soon](images/checkout-bricks/soon-button__ES.png) |
 
 --- mini_landing_separator ---
 
