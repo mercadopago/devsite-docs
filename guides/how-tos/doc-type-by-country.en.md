@@ -1,108 +1,30 @@
+# Document types
 
-# Identification types
+The document types accepted when charging through Mercado Pago vary by country.
 
-The types of documents accepted when making a payment through Mercado Pago vary by country.<br>
-
-> WARNING
+> NOTE
 >
 > Important
 >
-> Keep in mind that this information does not apply to Mexico.
-
-<br>
+> The information below does not apply to Mexico.
 
 ## Get the document types
 
-You can get the document types accepted as follows:
+The document types accepted can be obtained as follows:
 
-**GET /v1/identification_types**
+To consult all the document types available by country and obtain a list with the identification and details of each one of them, perform a GET to the endpoint [/v1/identification_types](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/identification_types/_identification_types/get).
 
+You can get more information about the attributes in [Get Document Types](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/identification_types/_identification_types/get) in API references.
+ 
+## Availability of documents by country
 
-[[[
-```php
-    <?php
-        require ('mercadopago.php');
-        $mp = new MP ('ACCESS_TOKEN');
-        $identification_types = $mp->get('/v1/identification_types');
-        print_r ($identification_types);
-    ?>
-```
-```curl
-curl -X GET \
--H "Content-Type: application/json" \
-'https://api.mercadopago.com/v1/identification_types?public_key=PUBLIC_KEY'
-```
-]]]
+See below the document types accepted according to each country.
 
-**Response**
-
-
-[[[
-```json
-    [
-        {
-            "id": "DNI",
-            "name": "DNI",
-            "type": "number",
-            "min_length": 7,
-            "max_length": 8
-          },
-          ...
-      ]
-```
-]]]
-
-The results included in this response will coincide with the country associated with your Mercado Pago account. For more information about this feature and its attributes, go to  [API reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/identification_types/_identification_types/get).
-
-## Identification types by country
-
-The document types accepted by country are listed below.
-
-### Argentina
-
-| Identification type | ID |
-| :--- | :--- |
-| Documento Nacional de Identidad | `DNI` |
-| Cédula de Identidad | `CI` |
-| Libreta Cívica | `LC` |
-| Libreta de Enrolamiento | `LE` |
-| Others | `Otro` |
-
-### Brazil
-
-| Identification type | ID |
-| :--- | :--- |
-| Cadastro de Pessoas Físicas | `CPF` |
-| Cadastro Nacional da Pessoa Jurídica | `CNPJ` |
-
-
-### Chile
-
-| Identification type | ID |
-| :--- | :--- |
-| Rol Único Tributario | `RUT` |
-| Others | `Otro` |
-
-### Colombia
-
-| Identification type | ID |
-| :--- | :--- |
-| Cédula de Ciudadanía | `CC` |
-| Cédula de Extranjeria | `CE` |
-| Número de Identificación Tributaria | `NIT` |
-| Others | `Otro` |
-
-### Peru
-
-| Identification type | ID |
-| :--- | :--- |
-| Documento Nacional de Identidad | `DNI` |
-| Carné de Extranjería | `CE` |
-| Registro Único de Contribuyentes | `RUC` |
-
-### Uruguay
-
-| Identification type | ID |
-| :--- | :--- |
-| Cédula de Identidad | `CI` |
-| Others | `Otro` |
+| Country | Document type | ID |
+| :--- | :--- | :--- |
+| Argentina | Documento Nacional de Identidad <br/> Cédula de Identidad <br/>	Libreta Cívica <br>	Libreta de Enrolamiento <br/> Others | DNI <br/> CI <br/> LC <br/> LE <br/> Otro  |
+| Brazil | Cadastro de Pessoas Físicas <br/> Cadastro Nacional da Pessoa Jurídica|CPF <br/> CNPJ |
+| Chile | Rol Único Tributario <br/> Others | RUT <br/> Otro |
+| Colombia | Cédula de Ciudadanía <br/> Cédula de Extranjeria <br/> Número de Identificación Tributaria	<br/> Others | CC <br/> CE <br/> NIT <br/> Otro|
+| Peru | Documento Nacional de Identidad  <br/>	Carné de Extranjería  <br/>	Registro Único de Contribuyentes | DNI <br/> CE  <br/> RUC |
+| Uruguay | Cédula de Identidad <br/> Others | CI <br/> Otro |

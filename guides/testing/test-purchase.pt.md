@@ -1,4 +1,4 @@
-## Realizar compra teste
+# Realizar compra teste
 
 Com seu usuário e senha de teste, siga as próximas etapas:
 
@@ -8,3 +8,11 @@ Com seu usuário e senha de teste, siga as próximas etapas:
 4. Confirme a compra.
 
 Pronto! Com o teste concluído corretamente, seu produto/serviço já poderão ser disponibilizados para os seus clientes.
+
+> PREV_STEP_CARD_PT
+>
+> Criar usuário de teste
+>
+> Crie usuários de teste para analisar se a integração ocorreu corretamente e se a aquisição de assinaturas está funcionando sem erros.
+>
+> [Criar usuário de teste](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/testing/create-test-user)

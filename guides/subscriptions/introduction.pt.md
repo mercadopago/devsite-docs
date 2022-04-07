@@ -12,3 +12,11 @@ Existem dois tipos de assinaturas disponíveis para integração:
 Abaixo mostramos um diagrama que explica o fluxo de cada modelo de assinatura.
 
 ![Basic-subscriptions](/images/subscriptions/Integrations-PT.png)
+
+> NEXT_STEP_CARD_PT
+>
+> Pré-requisitos
+>
+> Confira todos os requisitos necessários para começar a integrar.
+>
+> [Pré-requisitos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/subscriptions/requirements)

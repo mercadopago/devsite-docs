@@ -8,7 +8,6 @@ Apesar de serem transações similares, é importante ter em mente que o cancela
 
 Nesta documentação, você encontra as instruções e os links das APIs necessárias para realizar uma reembolso integral, parcial, e cancelar uma compra em sua loja.
 
-
 > WARNING
 >
 > Important
@@ -22,7 +21,6 @@ Antes de realizar o cancelamento de uma compra, é preciso atentar-se os seguint
 - **Status de pagamento**: Os cancelamentos somente poderão ser realizados caso o status de pagamento esteja como Pending ou In process. Esses status são exibidos na resposta da chamada à API de cancelamento nos campos *Status* e *Status detail*, respectivamente.
 
 - **Prazo de vencimento**: Um pagamento expira após 30 dias sem confirmação e o cancelamento é automático. O status final dessa transação aparecerá como *cancelled* ou *expired*. Essas informações serão exibidas na resposta da chamada à API de cancelamento, nos campos *Status* e *Status detail*, respectivamente. 
-
 
 ----[mlb]----
 - **Boleto bancário**: Se o prazo de validade de um boleto expirar, o usuário poderá gerá-lo novamente inserindo o ID da transação da sua conta no Mercado Pago. Contudo, caso queira evitar problemas de retenção de estoque, por exemplo, é possível optar por não disponibilizar uma nova emissão deste boleto. Para isso, basta realizar seu cancelamento.
@@ -46,3 +44,11 @@ Para realizar reembolsos integrais ou parciais de um pagamento e consultar os re
 
 - [Inserir reembolsos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/chargebacks/_payments_id_refunds/post)
 - [Obter lista de reembolsos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/chargebacks/_payments_id_refunds/get)
+
+> PREV_STEP_CARD_PT
+>
+> Gerenciamento de operações contestadas
+>
+> Encontre toda a informação sobre contestação de pagamentos, como preveni-las e gerenciá-las pela API.
+>
+> [Gerenciamento de operações contestadas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/sales-processing/chargebacks)

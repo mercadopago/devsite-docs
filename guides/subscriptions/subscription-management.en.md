@@ -1,4 +1,4 @@
-## Subscription management
+# Subscription management
 
 Through subscription management, it is possible to pause, cancel or reactivate an already created subscription, in addition to making other specific changes within its initial settings.
 
@@ -13,3 +13,19 @@ In the following table, you will find more information about the management poss
 | Change billing date | For subscriptions with a monthly payment frequency, you can choose a fixed day of the month for billing to occur. To do so, send a PUT with the necessary parameters to the [/preapproval/{id}](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/subscriptions/_preapproval_id/put) endpoint and execute the request. |
 | Set pro rata | You can set a prorated amount for billing an individual subscription. To do so, send a PUT with the necessary parameters to the [/preapproval/{id}](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/subscriptions/_preapproval_id/put) endpoint and execute the request. |
 | Offer free trial | It is possible to offer a free trial period for customers to test the product and service before purchasing it. To do so, send a PUT with the `free_trial`, `frequency`, and `frequency_type` parameters setting the number of days and the type (days/months) to the [/preapproval_plan/{id}](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/subscriptions/_preapproval_plan_id/put) endpoint and execute the request. |
+
+> PREV_STEP_CARD_EN
+>
+> Make test purchase
+>
+> Saiba to make a test purchase and validate the operation of the enrollment.
+>
+> [Make test purchase](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/testing/test-purchase)
+
+> NEXT_STEP_CARD_EN
+>
+> Processing of sales
+>
+> Saiba to perform two payments, returns and reimbursements.
+>
+> [Processing of sales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/sales-processing/retrieving-payments)

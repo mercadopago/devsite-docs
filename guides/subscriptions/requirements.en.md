@@ -10,3 +10,19 @@ To perform a signature integration, you must meet the requirements listed below.
  | Minimum transaction amount | ----[mlb]---- The minimum amount allowed to create a subscription is R$1.00, and the maximum is R$500.00 ------------ ----[mla]---- The minimum amount allowed to create a subscription is $2,00, and the maximum is $250.00,00 ------------ ----[mlm]---- The minimum amount allowed to create a subscription is $100,00, and the maximum is $200.00,00 ------------ ----[mlc]---- The minimum amount allowed to create a subscription is $100,00, and the maximum is $350.00,00 ------------ ----[mco]---- The minimum amount allowed to create a subscription is $1.500,00,  and the maximum is $30.000.000 ------------ ----[mpe]---- The minimum amount allowed to create a subscription is $2,00, e o máximo é de $1.500 ------------ ----[mlu]---- The minimum amount allowed to create a subscription is $15,00, and the maximum is $300.000 ------------ |
  
 If all the prerequisites were met, you can perform the subscription integration.
+
+> PREV_STEP_CARD_EN
+>
+> Introduction
+>
+> See more information about Subscriptions and their characteristics.
+>
+> [Introduction](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/subscriptions/introduction)
+
+> NEXT_STEP_CARD_EN
+>
+> Subscriptions with associated plan
+>
+> See more information about the signatures used when it is necessary to have the same signature on different occasions and organize them into identifiable groups.
+>
+> [Subscriptions with associated plan](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/subscriptions/subscriptions-associated-plan)

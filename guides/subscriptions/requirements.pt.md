@@ -10,3 +10,19 @@ Para realizar a integração de assinaturas, é preciso atender aos requisitos l
 | Valor mínimo para transação | ----[mlb]---- O valor mínimo permitido para criar uma assinatura é de R$1,00 e o máximo é de R$700,00 ------------ ----[mla]---- O valor mínimo permitido para criar uma assinatura é de $2,00 e o máximo é de $250.00,00 ------------ ----[mlm]---- O valor mínimo permitido para criar uma assinatura é de $100,00 e o máximo é de $200.00,00 ------------ ----[mlc]---- O valor mínimo permitido para criar uma assinatura é de $100,00 e o máximo é de $350.00,00 ------------ ----[mco]---- O valor mínimo permitido para criar uma assinatura é de $1.500,00 e o máximo é de $30.000.000 ------------ ----[mpe]---- O valor mínimo permitido para criar uma assinatura é de $2,00 e o máximo é de $1.500 ------------ ----[mlu]---- O valor mínimo permitido para criar uma assinatura é de $15,00 e o máximo é de $300.000 ------------ | 
 
 Se todos os pré-requisitos foram atendidos, você poderá realizar a integração das assinaturas.
+
+> PREV_STEP_CARD_PT
+>
+> Introdução
+>
+> Veja mais informações sobre as Assinaturas e suas característcas.
+>
+> [Introdução](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/subscriptions/introduction)
+
+> NEXT_STEP_CARD_PT
+>
+> Assinaturas com plano associado
+>
+> Veja mais informações sobre as assinaturas utilizadas quando é necessário ter a mesma assinatura em ocasiões diferentes e organizá-las em grupos identificáveis. 
+>
+> [Assinaturas com plano associado](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/subscriptions/subscriptions-associated-plan)

@@ -1,4 +1,4 @@
-# Refunds and Cancellations
+# Refunds and cancellations
 
 **Refunds** are transactions made when a certain charge is reversed and the amounts paid are returned to the buyer. This means that the customer will receive back the amount paid for the purchase of a certain product or service on their account or credit card statement.
 
@@ -7,7 +7,6 @@
 Although they are similar transactions, it is important to keep in mind that the cancellation is made on the same day as the payment is captured, returning the limit to the buyer's card within the period defined by the issuing bank. The return referring to the reversal is made directly on the credit card bill, or on the checking account in cases of payment via Pix, boleto bancário or debit.
 
 In this documentation, you will find the necessary information to perform a full and partial refund, and cancel a purchase in your store.
-
 
 > WARNING
 >
@@ -45,3 +44,11 @@ To make full or partial refunds of a payment and check the refunds made in your 
 
 - [Post refunds](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/chargebacks/_payments_id_refunds/post)
 - [Check refunds list](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/chargebacks/_payments_id_refunds/get)
+
+> PREV_STEP_CARD_PT
+>
+> Chargeback management
+>
+> Encuentra toda la información sobre los contracargos, cómo prevenirlos y gestionarlos por API.
+>
+> [Chargeback management](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/sales-processing/chargebacks)

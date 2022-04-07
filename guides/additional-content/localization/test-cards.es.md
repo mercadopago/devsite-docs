@@ -18,12 +18,12 @@ Para **probar diferentes resultados de pago**, completa el estado deseado en el 
 | --- | --- | --- |
 | `APRO` | Pago aprobado | DNI del usuario de prueba |
 | `OTHE` | Rechazado por error general | DNI del usuario de prueba |
-| `CONT` | Pendiente de pago | 
-| `CALL` | Rechazado con validación para autorizar |
-| `FUND` | Rechazado por importe insuficiente |
-| `SECU` | Rechazado por código de seguridad inválido |
-| `EXPI` | Rechazado debido a un problema de fecha de vencimiento |
-| `FORM` | Rechazado debido a un error de formulario |
+| `CONT` | Pendiente de pago | - | 
+| `CALL` | Rechazado con validación para autorizar | - |
+| `FUND` | Rechazado por importe insuficiente | - |
+| `SECU` | Rechazado por código de seguridad inválido | - |
+| `EXPI` | Rechazado debido a un problema de fecha de vencimiento | - |
+| `FORM` | Rechazado debido a un error de formulario | - |
 
 > WARNING
 >
@@ -47,12 +47,12 @@ Para **probar diferentes resultados de pago**, completa el estado deseado en el 
 | --- | --- | --- |
 | `APRO` | Pago aprobado | (CPF) 12345678909 |
 | `OTHE` | Rechazado por error general | (CPF) 12345678909 |
-| `CONT` | Pendiente de pago |
-| `CALL` | Rechazado con validación para autorizar |
-| `FUND` | Rechazado por importe insuficiente |
-| `SECU` | Rechazado por código de seguridad inválido |
-| `EXPI` | Rechazado debido a un problema de fecha de vencimiento |
-| `FORM` | Rechazado debido a un error de formulario |
+| `CONT` | Pendiente de pago | - |
+| `CALL` | Rechazado con validación para autorizar | - |
+| `FUND` | Rechazado por importe insuficiente | - |
+| `SECU` | Rechazado por código de seguridad inválido | - |
+| `EXPI` | Rechazado debido a un problema de fecha de vencimiento | - |
+| `FORM` | Rechazado debido a un error de formulario | - |
 
 ------------
 
@@ -70,12 +70,12 @@ Para **probar diferentes resultados de pago**, completa el estado deseado en el 
 | --- | --- | --- |
 | `APRO` | Pago aprobado | (otro) 123456789 |
 | `OTHE` | Rechazado por error general | (otro) 123456789 |
-| `CONT` | Pendiente de pago |
-| `CALL` | Rechazado con validación para autorizar |
-| `FUND` | Rechazado por importe insuficiente |
-| `SECU` | Rechazado por código de seguridad inválido |
-| `EXPI` | Rechazado debido a un problema de fecha de vencimiento |
-| `FORM` | Rechazado debido a un error de formulario |
+| `CONT` | Pendiente de pago | - |
+| `CALL` | Rechazado con validación para autorizar | - |
+| `FUND` | Rechazado por importe insuficiente | - |
+| `SECU` | Rechazado por código de seguridad inválido | - |
+| `EXPI` | Rechazado debido a un problema de fecha de vencimiento | - |
+| `FORM` | Rechazado debido a un error de formulario | - |
 
 ------------
 
@@ -93,12 +93,12 @@ Para **probar diferentes resultados de pago**, completa el estado deseado en el 
 | --- | --- | --- |
 | `APRO` | Pago aprobado | 123456789 |
 | `OTHE` | Rechazado por error general | 123456789 |
-| `CONT` | Pendiente de pago |
-| `CALL` | Rechazado con validación para autorizar |
-| `FUND` | Rechazado por importe insuficiente |
-| `SECU` | Rechazado por código de seguridad inválido |
-| `EXPI` | Rechazado debido a un problema de fecha de vencimiento |
-| `FORM` | Rechazado debido a un error de formulario |
+| `CONT` | Pendiente de pago | - |
+| `CALL` | Rechazado con validación para autorizar | - |
+| `FUND` | Rechazado por importe insuficiente | - |
+| `SECU` | Rechazado por código de seguridad inválido | - |
+| `EXPI` | Rechazado debido a un problema de fecha de vencimiento | - |
+| `FORM` | Rechazado debido a un error de formulario | - |
 
 ------------
 
@@ -138,12 +138,12 @@ Para **probar diferentes resultados de pago**, completa el estado deseado en el 
 (CI) 12345678  |
 | `CONT` | Pendiente de pago | otro) 123456789 <br/>
 (CI) 12345678 |
-| `OTHE` | Rechazado por error general |
-| `CALL` | Rechazado con validación para autorizar |
-| `FUND` | Rechazado por importe insuficiente |
-| `SECU` | Rechazado por código de seguridad inválido |
-| `EXPI` | Rechazado debido a un problema de fecha de vencimiento |
-| `FORM` | Rechazado debido a un error de formulario |
+| `OTHE` | Rechazado por error general | - |
+| `CALL` | Rechazado con validación para autorizar | - |
+| `FUND` | Rechazado por importe insuficiente | - |
+| `SECU` | Rechazado por código de seguridad inválido | - |
+| `EXPI` | Rechazado debido a un problema de fecha de vencimiento | - |
+| `FORM` | Rechazado debido a un error de formulario | - |
 
 ------------
 
@@ -161,11 +161,11 @@ Para **probar diferentes resultados de pago**, completa el estado deseado en el 
 | --- | --- | --- |
 | `APRO` | Pago aprobado | 123456789 |
 | `OTHE` | Rechazado por error general | 123456789 |
-| `CONT` | Pendiente de pago |
-| `CALL` | Rechazado con validación para autorizar |
-| `FUND` | Rechazado por importe insuficiente |
-| `SECU` | Rechazado por código de seguridad inválido |
-| `EXPI` | Rechazado debido a un problema de fecha de vencimiento |
-| `FORM` | Rechazado debido a un error de formulario |
+| `CONT` | Pendiente de pago | - |
+| `CALL` | Rechazado con validación para autorizar | - |
+| `FUND` | Rechazado por importe insuficiente | - |
+| `SECU` | Rechazado por código de seguridad inválido | v
+| `EXPI` | Rechazado debido a un problema de fecha de vencimiento | - |
+| `FORM` | Rechazado debido a un error de formulario | - |
 
 ------------
