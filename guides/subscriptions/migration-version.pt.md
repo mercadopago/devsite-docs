@@ -1,4 +1,4 @@
-# Migração V1 para V0
+# Migração V1 para V0 
 
 A partir de 8 de março de 2022 uma nova versão do motor de assinaturas relacionados às entidades abaixo estará disponível com novas funcionalidades. 
 
@@ -45,3 +45,11 @@ curl --location
 > Importante
 > 
 > Vamos notificá-lo por e-mail quando chegar a data limite da sua migração. É importante que você se programe e tenha as mudanças preparadas para a migração, pois todos os `Plans` e `Subscriptions`com status **cancelled**, **inactive** e/ou **finished**, bem como `Ìnvoices` com mais de seis meses, não serão migrados. 
+
+> PREV_STEP_CARD_PT 
+>
+> Processamento de vendas
+>
+> Saiba realizar a gestão dos pagamentos, estornos e reembolsos.
+>
+> [Realizar compra teste](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/sales-processing/retrieving-payments)

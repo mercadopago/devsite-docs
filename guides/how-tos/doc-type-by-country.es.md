@@ -1,106 +1,30 @@
+# Tipos de documentos
 
-# Tipos de documento
+Los tipos de documento aceptados para cobrar a través de Mercado Pago varían según el país.
 
-Los tipos de documento aceptados a la hora de hacer un cobro a través de Mercado Pago varían según cada país.<br>
-
-> WARNING
+> NOTE
 >
 > Importante
 >
-> Ten en cuenta que esta información no aplica para México.
+> La siguiente información no se aplica para México.
 
-<br>
+## Obtener los tipos de documento
 
-## Obteniendo los tipos de documento
+Los tipos de documento aceptados se pueden obtener de la siguiente manera:
 
-Los tipos de documento aceptados pueden ser obtenidos de la siguiente forma:
+Para consultar todos los tipos de documento disponibles por país y obtener un listado con la identificación y detalle de cada uno de ellos, realiza un GET al endpoint [/v1/identification_types](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/identification_types/_identification_types/get).
 
-**GET /v1/identification_types**
+Puedes obtener más información sobre los atributos en [Obtener tipos de documento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/identification_types/_identification_types/get) en referencias API.
+ 
+## Disponibilidad de documentos por país
 
-[[[
-```php
-    <?php
-        require ('mercadopago.php');
-        $mp = new MP ('ACCESS_TOKEN');
-        $identification_types = $mp->get('/v1/identification_types');
-        print_r ($identification_types);
-    ?>
-```
-```curl
-curl -X GET \
--H "Content-Type: application/json" \
-'https://api.mercadopago.com/v1/identification_types?public_key=PUBLIC_KEY'
-```
-]]]
+Lee a continuación los tipos de documento aceptados según cada país.
 
-**Respuesta**
-
-[[[
-```json
-    [
-        {
-            "id": "DNI",
-            "name": "DNI",
-            "type": "number",
-            "min_length": 7,
-            "max_length": 8
-          },
-          ...
-      ]
-```
-]]]
-
-Los resultados incluídos en esta respuesta coincidirán con el país asociado a tu cuenta de Mercado Pago. Puedes obtener más información sobre este recurso y sus atributos en la [Referencia de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/identification_types/_identification_types/get).
-
-## Tipos de documento por país
-
-A continuación se indican los tipos de documento aceptados para cada país.
-
-### Argentina
-
-| Tipo de documento | ID |
-| :--- | :--- |
-| Documento Nacional de Identidad | `DNI` |
-| Cédula de Identidad | `CI` |
-| Libreta Cívica | `LC` |
-| Libreta de Enrolamiento | `LE` |
-| Otro | `Otro` |
-
-### Brasil
-
-| Tipo de documento | ID |
-| :--- | :--- |
-| Cadastro de Pessoas Físicas | `CPF` |
-| Cadastro Nacional da Pessoa Jurídica | `CNPJ` |
-
-
-### Chile
-
-| Tipo de documento | ID |
-| :--- | :--- |
-| Rol Único Tributario | `RUT` |
-| Otro | `Otro` |
-
-### Colombia
-
-| Tipo de documento | ID |
-| :--- | :--- |
-| Cédula de Ciudadanía | `CC` |
-| Cédula de Extranjeria | `CE`                     |
-| Número de Identificación Tributaria | `NIT` |
-| Otro | `Otro` |
-
-### Perú
-
-| Tipo de documento | ID |
-| :--- | :--- |
-| Documento Nacional de Identidad | `DNI` |
-| Carné de Extranjería | `CE` |
-| Registro Único de Contribuyentes | `RUC` |
-
-### Uruguay
-
-| Tipo de documento | ID |
-| :--- | :--- |
-| Cédula de Identidad | `CI` |
-| Otro | `Otro` |
+| País | Tipo de documento | Identificación |
+| :--- | :--- | :--- |
+| Argentina | Documento Nacional de Identidad <br/> Cédula de Identidad <br/>	Libreta Cívica <br>	Libreta de Enrolamiento <br/> Otros | DNI <br/> CI <br/> LC <br/> LE <br/> Otro  |
+| Brasil | Cadastro de Pessoas Físicas <br/> Cadastro Nacional da Pessoa Jurídica |CPF <br/> CNPJ |
+| Chile | Rol Único Tributario <br/> Otros | RUT <br/> Otro |
+| Colombia | Cédula de Ciudadanía <br/> Cédula de Extranjeria <br/> Número de Identificación Tributaria	<br/> Otros | CC <br/> CE <br/> NIT <br/> Otro|
+| Perú | Documento Nacional de Identidad  <br/>	Carné de Extranjería  <br/>	Registro Único de Contribuyentes | DNI <br/> CE  <br/> RUC |
+| Uruguay | Cédula de Identidad <br/> Otros | CI <br/> Otro |

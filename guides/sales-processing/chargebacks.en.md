@@ -1,4 +1,4 @@
-# Chargeback Management
+# Chargeback management
 
 Find all the information about chargebacks, how to prevent them, and how to manage them via API.
 
@@ -168,3 +168,19 @@ Eventually, the chargeback may have two types of possible resolutions in the `co
 | **false** | Shows that the decision was against the seller and the money is discounted.
 
 Upon resolution, a new IPN notification will be sent so that you can verify the case.
+
+> PREV_STEP_CARD_EN
+>
+> Received payments management
+>
+> Check more informations about generated payments using our APIs.
+>
+> [Received payments management](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/sales-processing/chargebacks)
+
+> NEXT_STEP_CARD_EN
+>
+> Refunds and cancellations
+>
+> Check more informations to perform a full and partial refund, and cancel a purchase in your store.
+>
+> [Refunds and cancellations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/sales-processing/chargebacks)

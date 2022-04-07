@@ -12,3 +12,11 @@ Hay dos tipos de suscripciones disponibles para la integración:
 A continuación mostramos un diagrama que explica el flujo de cada modelo de suscripción.
 
 ![Basic-subscriptions](/images/subscriptions/Integrations-ES.png)
+
+> NEXT_STEP_CARD_ES
+>
+> Requisitos previos
+>
+> Consulta todos los requisitos necesarios para empezar a integrarte.
+>
+> [Requisitos previos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/subscriptions/requirements)

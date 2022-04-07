@@ -45,3 +45,11 @@ curl --location
 > Important
 >
 > We will notify you by email when the due date for your migration is reached. It is important that you schedule and have the changes prepared for the migration, as all `Plans` and `Subscriptions` with status **cancelled**, **inactive** and/or **finished**, as well as `Invoices` older than six months will not be migrated.
+
+> PREV_STEP_CARD_EN
+>
+> Sales processing
+>
+> Know how to manage payments, chargebacks and refunds.
+>
+> [Sales processing](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/sales-processing/retrieving-payments)

@@ -168,3 +168,19 @@ Eventualmente el contracargo podrá tener dos tipos de resoluciones posibles en 
 | **false** | Indica que se falló en contra del vendedor y se le descuenta el dinero.
 
 Al resolverse, se enviará una nueva notificación IPN para que puedas verificar el caso.
+
+> PREV_STEP_CARD_ES
+>
+> Gestión de pagos recibidos
+>
+> Consulta más información sobre pagos generados usando nuestras APIs.
+>
+> [Gestión de pagos recibidos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/sales-processing/chargebacks)
+
+> NEXT_STEP_CARD_ES
+>
+> Devoluciones y cancelaciones
+>
+> Consulta más información para realizar un reembolso total, parcial y cancelar una compra en tu tienda.
+>
+> [Devoluciones y cancelaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/sales-processing/chargebacks)

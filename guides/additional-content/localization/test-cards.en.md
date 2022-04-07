@@ -18,12 +18,12 @@ To **test different payment results**, fill in the desired status in the cardhol
 | --- | --- | --- |
 | `APRO` | Approved payment | DNI of the test user |
 | `OTHE` | Declined for general error | DNI of the test user |
-| `CONT` | Pending payment |
-| `CALL` | Declined with validation to authorize |
-| `FUND` | Declined for insufficient amount |
-| `SECU` | Declined for invalid security code |
-| `EXPI` | Declined due to due date issue |
-| `FORM` | Declined due to form error |
+| `CONT` | Pending payment | - |
+| `CALL` | Declined with validation to authorize | - |
+| `FUND` | Declined for insufficient amount | - |
+| `SECU` | Declined for invalid security code | - |
+| `EXPI` | Declined due to due date issue | - |
+| `FORM` | Declined due to form error | - |
 
 > WARNING
 >
@@ -47,12 +47,12 @@ To **test different payment results**, fill in the desired status in the cardhol
 | --- | --- | --- |
 | `APRO` | Approved payment | (CPF) 12345678909 |
 | `OTHE` | Declined for general error | (CPF) 12345678909 |
-| `CONT` | Pending payment |
-| `CALL` | Declined with validation to authorize |
-| `FUND` | Declined for insufficient amount |
-| `SECU` | Declined for invalid security code |
-| `EXPI` | Declined due to due date issue |
-| `FORM` | Declined due to form error |
+| `CONT` | Pending payment | - |
+| `CALL` | Declined with validation to authorize | - |
+| `FUND` | Declined for insufficient amount | - |
+| `SECU` | Declined for invalid security code | - |
+| `EXPI` | Declined due to due date issue | - |
+| `FORM` | Declined due to form error | - |
 
 ------------
 
@@ -70,12 +70,12 @@ To **test different payment results**, fill in the desired status in the cardhol
 | --- | --- | --- |
 | `APRO` | Approved payment | (otro) 123456789 |
 | `OTHE` | Declined for general error | (otro) 123456789 |
-| `CONT` | Pending payment |
-| `CALL` | Declined with validation to authorize |
-| `FUND` | Declined for insufficient amount |
-| `SECU` | Declined for invalid security code |
-| `EXPI` | Declined due to due date issue |
-| `FORM` | Declined due to form error |
+| `CONT` | Pending payment | - |
+| `CALL` | Declined with validation to authorize | - |
+| `FUND` | Declined for insufficient amount | - |
+| `SECU` | Declined for invalid security code | - |
+| `EXPI` | Declined due to due date issue | - |
+| `FORM` | Declined due to form error | - |
 
 ------------
 
@@ -93,12 +93,12 @@ To **test different payment results**, fill in the desired status in the cardhol
 | --- | --- | --- |
 | `APRO` | Approved payment | 123456789 |
 | `OTHE` | Declined for general error | 123456789 |
-| `CONT` | Pending payment |
-| `CALL` | Declined with validation to authorize |
-| `FUND` | Declined for insufficient amount |
-| `SECU` | Declined for invalid security code |
-| `EXPI` | Declined due to due date issue |
-| `FORM` | Declined due to form error |
+| `CONT` | Pending payment | - |
+| `CALL` | Declined with validation to authorize | - |
+| `FUND` | Declined for insufficient amount | - |
+| `SECU` | Declined for invalid security code | - |
+| `EXPI` | Declined due to due date issue | - |
+| `FORM` | Declined due to form error | - |
 
 ------------
 
@@ -138,12 +138,12 @@ To **test different payment results**, fill in the desired status in the cardhol
 (CI) 12345678  |
 | `OTHE` | Declined for general error | (otro) 123456789 <br/>
 (CI) 12345678  |
-| `CONT` | Pending payment |
-| `CALL` | Declined with validation to authorize |
-| `FUND` | Declined for insufficient amount |
-| `SECU` | Declined for invalid security code |
-| `EXPI` | Declined due to due date issue |
-| `FORM` | Declined due to form error |
+| `CONT` | Pending payment | - |
+| `CALL` | Declined with validation to authorize | - |
+| `FUND` | Declined for insufficient amount | - |
+| `SECU` | Declined for invalid security code | - |
+| `EXPI` | Declined due to due date issue | - |
+| `FORM` | Declined due to form error | - |
 
 ------------
 
@@ -161,11 +161,11 @@ To **test different payment results**, fill in the desired status in the cardhol
 | --- | --- | --- |
 | `APRO` | Approved payment | 123456789 |
 | `OTHE` | Declined for general error | 123456789 |
-| `CONT` | Pending payment |
-| `CALL` | Declined with validation to authorize |
-| `FUND` | Declined for insufficient amount |
-| `SECU` | Declined for invalid security code |
-| `EXPI` | Declined due to due date issue |
-| `FORM` | Declined due to form error |
+| `CONT` | Pending payment | - |
+| `CALL` | Declined with validation to authorize | - |
+| `FUND` | Declined for insufficient amount | - |
+| `SECU` | Declined for invalid security code | - |
+| `EXPI` | Declined due to due date issue | - |
+| `FORM` | Declined due to form error | - |
 
 ------------
