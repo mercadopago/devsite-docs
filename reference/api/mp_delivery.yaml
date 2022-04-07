@@ -447,14 +447,30 @@ paths:
                             example: "44905357"
                           externalCode:
                             type: string
-                            description: An optional field that refeers to a external code that can be used on a point of sale. This external code can be set by the Mercado Pago Delivery API.
+                            description: An optional field that refers to a external code that can be used on a point of sale. This external code can be set by the Mercado Pago Delivery API.
                             example: "UNID01"
+                      qr:
+                        type: object
+                        description: Information needed to generate a QR Code to insert into a custom order coupon. The QR Code must be read through the Mercado Envios Flex application by the delivery person, to start the flow of sending an order.
+                        properties:
+                          id:
+                            type: number
+                            example: 41034141533
+                          senderId: 
+                            type: number
+                            example: 1070421029
+                          hashCode: 
+                            type: string
+                            example: "kL5kTMV9gwz5tcs1Ky/bu3rI8URZNDTvLCbzdNGCCtY="
+                          securityDigit:
+                            type: string
+                            example: "0"
   /proximity-integration/shipments/{shipment_id}/accept:
     put:
       tags:
         - $ref: '#/tags/mp-delivery'
       summary: Accept order
-      description: This endpoint is used to accept an order, and change its status
+      description: This endpoint is used to accept an order, and change its status. Usually used when you do not want to use the Mercado Pago coupon for the order. Thus, if a custom order coupon is made, the QR Code must be inserted to carry out the delivery flow of an order. The information for assembling the QR Code can be obtained in the "extension.qr" attribute of the response of the endpoint to return order information (/proximity-integration/v1/orders/{shipment_id}).
       parameters:
         - name: shipment_id
           in: path
