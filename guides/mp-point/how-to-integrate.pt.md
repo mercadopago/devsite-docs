@@ -27,62 +27,6 @@ Existem dois cenários na hora de integrar Point:
 > * Disponível para Android versão 2.8.0 ou superior, iOS versão 1.7.0 ou superior e, somente quando executa, em iOS 9 ou superior.
 
 
-## Integração via Deep Linking
-
-Uma das formas de integrar-se com Mercado Pago Point é mediante um _deep linking_. Quando se chama o _link_, o mesmo será aceito como um _Point-handled address_ por parte da aplicação de Mercado Pago.
-
-Na chamada a este _link_ se pode evitar diferentes parâmetros que seriam levantados pela aplicação de Mercado Pago e impactados no pagamento. Uma vez que se faça a chamada a este _link_, o usuário será redirecionado a tela da aplicação de Mercado Pago para informar o cartão do cliente e assim realizar a cobrança.
-
-Uma vez que o pagamento é processado, o usuário será redirecionado a `success_url` ou `fail_url`, dependendo do estado do pagamento. Este deverá ser interceptado para retornar o usuário ao fluxo da aplicação.
-
-### Diagrama do Fluxo
-
-![Deep linking flow diagram Mercado Pago Point](/images/point_diagram.png)
-
-
-### Criação do Deep Linking
-
-A URL a ser interceptada é a seguinte: `https://www.mercadopago.com/mp-brasil/point/lojas`
-
-Os parâmetros que se podem incluir são:
-
-* `amount`: O valor que será cobrado do cliente (\*).
-* `description`: Uma descrição da operação (Máx.: 20 caracteres) (\*).
-* `external_reference`: O código de referência do seu sistema, o mesmo permitirá conciliar seu pedido de compra com o pagamento.
-* `notification_url`: É a URL que receberá a notificação desse pagamento.
-* `payer_email`: É o email do pagador.
-* `success_url`: É a URL para onde o usuário será redirecionado logo após o pagamento ser aprovado.
-* `fail_url`: É a URL para onde o usuário será redirecionado logo após o pagamento ser rejeitado.
-
-> WARNING
->
-> Importante
->
-> * Os campos marcados com (\*) são campos obrigatórios.
-
-
-No artigo do [GitHub](https://github.com/mercadopago/point-android_integration#deep-linking) é possível obter mais informação e o exemplo correspondente.
-
-
-## Integração via Intent-Based
-
-> WARNING
->
-> Importante
->
-> * Esta integração só está disponível para Android versão 2.8.0 ou superior.
-
-
-Outra forma de integrar-se com a aplicação de Mercado Pago é mediante código nativo de Android, mediante o conceito de _Intent-Based_.
-
-Deve utilizar o método “startActivityForResult” para iniciar diretamente o processo de pagamento. O resultado do pagamento irá retornar como “activityResult”.
-
-É muito importante que o código trate a possibilidade de que o usuário não tenha instalada a aplicação do Mercado Pago em seu dispositivo. Neste caso recomendamos redirecionar o usuário a Play Store para baixar a mesma.
-
-Como referência é possível utilizar o código de exemplo e documentação que tem o formato para poder enviar a informação do pagamento e tratar o objeto de retorno.
-
-
-No artigo do [GitHub](https://github.com/mercadopago/point-android_integration#intent) é possível obter mais informação e o exemplo correspondente.
 
 ## Integração via API
 

@@ -26,63 +26,6 @@ There are two different possible situations to integrate Point:
 > * The user must be logged in with their Mercado Pago account in the application. 
 > * Avaliable for Android version 2.8.0 or superior, iOS version 1.7.0 or superior and only when it´s in a iOS 9 environment or superior.
 
-
-## Integration via Deep Linking
-
-One of the ways to integrate with Mercado Pago is via Deep Linking. When said _link_ is called, it is intercepted as a _Point-handled address_ by the Mercado Pago application.
-
-In the "call" to this _link_ you can send different parameters that will be taken by the Mercado Pago application and will impact the payment. Once you´ve made that call to the previously defined link, the user will be redirected to the Mercado Pago application to swipe the card and make the purchase. 
-
-Once the payment is proccesed, the user will be redirected to the `success_url` or `fail_url`, depending on the result. This must be intercepted to return the user to the application. 
-
-### Flow chart
-
-![Deep linking flow diagram Mercado Pago Point](/images/point_diagram.png)
-
-
-### Deep Linking creation
-
-The URL to be intercepted is the following: `https://www.mercadopago.com/point/integrations`
-
-The parameters that you can include are:
-
-* `amount`: The amount that will be charged to the client (\*).
-* `description`: Description of the operation (Máx.: 20 caracters) (\*).
-* `external_reference`: The `external_reference` is a reference code that allows you to track the Mercado Pago `payment_id` in your system. 
-* `notification_url`: The URL where you will receive the notifications.
-* `payer_email`: Email of the payer.
-* `success_url`: The URL where the user will be redirected when the payment succeeds.
-* `fail_url`: The URL where the user will be redirected when the payment is rejected.
-
-> WARNING
->
-> Important
->
-> * The fields with an (\*), are mandatory.
-
-
-In the following [GitHub] article (https://github.com/mercadopago/point-android_integration#deep-linking) you can find more information, as well as a descriptive example.
-
-
-## Integration via Intent-Based
-
-> WARNING
->
-> Important
->
-> * This integration is only available for Android version 2.8.0 or superior.
-
-
-Another way to integrate is by using Androids native code, via _Intent-Based_.
-
-You must use the “startActivityForResult” method to start directly the payment process. The result of the payment is going to come as “activityResult”.
-
-It its very important that the code has the ability to handle the situation where the user does not have the Mercado Pago application installed in his/her device. In this case, we recommend to redirect the user to the Play store in order to be able to download it. 
-
-As a reference you can use the example code and the documentation that has the structure set to send the payment info and handle the return object. 
-
-In the [GitHub](https://github.com/mercadopago/point-android_integration#intent) article you can find more information and the corresponding example. 
-
 ## Integration via API
 
 > WARNING
