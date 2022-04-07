@@ -2,6 +2,12 @@
 
 El layout de Card Payment Brick se basa en las mejores prácticas de UX para que sea posible ofrecer la mejor experiencia de compra sin que debas preocuparte por detalles de diseño. El layout presenta los elementos que se detallan a continuación.
 
+> WARNING
+>
+> Atención
+>
+> Los bricks se crearon no solo para satisfacer las necesidades técnicas de implementación y seguridad, sino también para brindar la mejor experiencia al comprador. La personalización de un brick puede cambiar drásticamente la experiencia del comprador. Nuestra recomendación es que siempre hagas uso del brick con la menor personalización adicional posible para garantizar siempre la mejor experiencia.
+
 | Elemento  | Características  | Observaciones  |
 | --- | --- | --- |
 | Título y banderas aceptados <br><br> Propiedad: formTitle  | **Valor (título):** Tarjeta de crédito <br> **Label:** N/A <br> **Placeholder:** N/A <br> **Tipo:** text/imagen <br> **Formato:** N/A <br> **Máx. caracteres:** N/A  | Opcional <br> Personalizable* <br><br> *Las banderas se muestran junto con el título. La única personalización disponible para ellos es ocultarlos junto al título del formulario, dejando de mostrar esa información.  |
@@ -14,9 +20,3 @@ El layout de Card Payment Brick se basa en las mejores prácticas de UX para que
 | Subtítulo <br><br> Propiedad: emailSectionTitle  | **Valor:** Completa tus datos <br>  **Label:** N/A <br> **Placeholder:** N/A <br> **Tipo:** text <br> **Formato:** N/A <br> **Máx. caracteres:** N/A  | Obligatorio  |
 | Campo para ingresar el correo electrónico del comprador <br> Propiedad: cardholderEmail  | **Valor:** N/A <br> **Label:** Email <br> **Placeholder:** joaosilva@email.com <br> **Tipo:** string <br> **Formato:** formato de e-mail convencional (ejemplo@email.com)  **Máx. caracteres:** X  | Obligatorio* <br> personalizable (label, placeholder) <br><br> *Si los datos se proporcionaron y guardaron previamente, este elemento se vuelve opcional.  |
 | Botón de pago <br> Propiedad: formSubmit  | **Valor:** [imagen] Pagar <br> **Label:** N/A  **Placeholder:** N/A <br> **Tipo:** text <br> **callback:** onSubmit <br> **função**: promise(cardFormData)  | Opcional <br> Ocultable y personalizable <br><br> *La función recibe los datos del formulario, incluido el token de la tarjeta, y presenta una animación de carga.  |
-
-> WARNING
->
-> Atención
->
-> Los bricks se crearon no solo para satisfacer las necesidades técnicas de implementación y seguridad, sino también para brindar la mejor experiencia al comprador. La personalización de un brick puede cambiar drásticamente la experiencia del comprador. Nuestra recomendación es que siempre hagas uso del brick con la menor personalización adicional posible para garantizar siempre la mejor experiencia.

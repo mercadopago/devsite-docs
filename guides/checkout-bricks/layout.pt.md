@@ -2,6 +2,12 @@
 
 O layout do Card Payment Brick foi construído com base nas melhores práticas de UX para que seja possível entregar ao comprador a melhor experiência sem que você precise se preocupar com detalhes de design. O layout traz os elementos detalhados abaixo.
 
+> WARNING
+>
+> Atenção
+>
+> Os bricks foram criados para atender não somente necessidades técnicas de implementação e segurança, mas também para prover a melhor experiência ao comprador. Customizar um brick pode mudar drasticamente a experiência do comprador. Nossa recomendação é que você sempre faça uso do brick com a menor quantidade possível de customizações adicionais para garantir sempre a melhor experiência.
+
 ![cardform](checkout-bricks/card-form__pt.png)
 
 | Elemento | Características | Observações |
@@ -16,9 +22,3 @@ O layout do Card Payment Brick foi construído com base nas melhores práticas d
 | Subtítulo <br><br> Propriedade: emailSectionTitle | **Valor:** Preencha seus dados <br> *Label:* N/A <br> *Placeholder:* N/A <br> **Tipo:** text <br> **Formato:** N/A <br> **Máx. caracteres:** N/A | Obrigatório |
 | Campo para inserção do email do comprador <br><br> Propriedade: cardholderEmail | **Valor:** N/A <br> **Label:** Email <br> **Placeholder:** joaosilva@email.com <br> **Tipo:** string <br> **Formato:** padrão de e-mail convencional (exemplo@email.com) <br> **Máx. caracteres:* X | Obrigatório* <br> Customizável  (label, placeholder) <br><br> *Se os dados foram fornecidos e salvos anteriormente, este elemento se torna opcional. |
 | Botão de pagamento <br><br> Propriedade: formSubmit | **Valor:** [imagem] Pagar <br> **Label:** N/A <br> **Placeholder:** N/A <br> **Tipo:** text <br> **callback:** onSubmit <br> **função**: promise(cardFormData) | Opcional <br> Ocultável e customizável  <br><br> *A função recebe os dados do formulário, incluindo o token do cartão e apresenta animação de carregamento. |
-
->WARNING
->
-> Atenção
->
-> Os bricks foram criados para atender não somente necessidades técnicas de implementação e segurança, mas também para prover a melhor experiência ao comprador. Customizar um brick pode mudar drasticamente a experiência do comprador. Nossa recomendação é que você sempre faça uso do brick com a menor quantidade possível de customizações adicionais para garantir sempre a melhor experiência.
