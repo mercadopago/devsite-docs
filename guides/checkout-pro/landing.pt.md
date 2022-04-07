@@ -30,7 +30,7 @@ bullet_section_with_media:
 
 >>>> Diferenças entre Checkout Pro e Checkout Transparente <<<<
 ----[mla, mlb]----
-|                                       | Checkout Pro | API |
+|   Benefícios                          | Checkout Pro | Checkout API |
 | :--- | :---: | :---: |
 | Dificuldade de integração             | Baixa | Alta |
 | Design UI/UX                          | ✔ |   |
@@ -43,7 +43,7 @@ bullet_section_with_media:
 | Pagamento com dois cartões            | ✔ |   |
 ------------
 ----[mlm, mlu, mco, mlc, mpe]----
-|                                       | Checkout Pro | API |
+|   Benefícios                          | Checkout Pro | API |
 | :--- | :---: | :---: |
 | Dificuldade de integração             | Baixa | Alta |
 | Design UI/UX                          | ✔ |   |
@@ -54,9 +54,13 @@ bullet_section_with_media:
 | Prevenção de fraude                   | ✔ | ✔ |
 | Tela de finalização de pagamento      | ✔ |   |
 ------------
+
+<br>
+
 --- mini_landing_separator ---
 
 >>>> Meios de pagamento aceitos <<<<
+
 ----[mlb]----
 ---
 available_payments: credit, debit, mercadopago, ticket, pix, pec
