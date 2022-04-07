@@ -3,11 +3,13 @@
 
 Generate the Released money report manually as many times as you want or schedule it according to the desired frequency through our API.
 
+----[mlm, mlb, mlc, mco, mla]----
 > WARNING
 >
-> The Available Balance report will be disabled from March 1st, 2022.
+> Important
 >
-> You can use the [Release report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/introduction) to reconcile the transactions that affect the balance available in your account, including your bank withdrawals.
+> The Money withdrawn report will be disabled in the coming months. To keep track of the withdrawals, transfers and movements of your available balance, [please use the Release report.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/introduction)
+------------
 
 ## Set up your reports
 
