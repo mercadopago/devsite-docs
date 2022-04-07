@@ -51,6 +51,14 @@ paths:
                         type: string
                         example: U$
                         description: Unique ID to identify the currency. ISO_4217 code. Some sites allow local currency and USD, but it is important to note that the amount is converted to local currency when the preference is created, as the checkout always processes transactions using local currency. If you use USD please take into consideration that this value is not automatically updated if the value of local currency changes in relation to USD.
+                        enum:
+                          - ARS -- Argentine peso.
+                          - BRL -- Brazilian real.
+                          - CLP -- Chilean peso.
+                          - MXN -- Mexican peso.
+                          - COP -- Colombian peso.
+                          - PEN -- Peruvian sol.
+                          - UYU -- Uruguayan peso.
                       unit_price:
                         type: number
                         example: 10
@@ -306,6 +314,14 @@ paths:
                           type: string
                           example: $
                           description: Unique ID to identify the currency. ISO_4217 code. Some sites allow local currency and USD, but it is important to note that the amount is converted to local currency when the preference is created, as the checkout always processes transactions using local currency. If you use USD please take into consideration that this value is not automatically updated if the value of local currency changes in relation to USD.
+                          enum:
+                            - ARS -- Argentine peso.
+                            - BRL -- Brazilian real.
+                            - CLP -- Chilean peso.
+                            - MXN -- Mexican peso.
+                            - COP -- Colombian peso.
+                            - PEN -- Peruvian sol.
+                            - UYU -- Uruguayan peso.
                         quantity:
                           type: number
                           example: 1
@@ -790,6 +806,14 @@ paths:
                           type: string
                           example: $
                           description: Unique ID to identify the currency. ISO_4217 code. Some sites allow local currency and USD, but it is important to note that the amount is converted to local currency when the preference is created, as the checkout always processes transactions using local currency. If you use USD please take into consideration that this value is not automatically updated if the value of local currency changes in relation to USD.
+                          enum:
+                            - ARS -- Argentine peso.
+                            - BRL -- Brazilian real.
+                            - CLP -- Chilean peso.
+                            - MXN -- Mexican peso.
+                            - COP -- Colombian peso.
+                            - PEN -- Peruvian sol.
+                            - UYU -- Uruguayan peso.
                         title:
                           type: string
                           example: Practical Granite Shirt
@@ -1032,6 +1056,14 @@ paths:
                         type: string
                         example: U$
                         description: Unique ID to identify the currency. ISO_4217 code. Some sites allow local currency and USD, but it is important to note that the amount is converted to local currency when the preference is created, as the checkout always processes transactions using local currency. If you use USD please take into consideration that this value is not automatically updated if the value of local currency changes in relation to USD.
+                        enum:
+                          - ARS -- Argentine peso.
+                          - BRL -- Brazilian real.
+                          - CLP -- Chilean peso.
+                          - MXN -- Mexican peso.
+                          - COP -- Colombian peso.
+                          - PEN -- Peruvian sol.
+                          - UYU -- Uruguayan peso.
                       unit_price:
                         type: number
                         example: 10
@@ -1330,6 +1362,14 @@ paths:
                           type: string
                           example: $
                           description: Unique ID to identify the currency. ISO_4217 code. Some sites allow local currency and USD, but it is important to note that the amount is converted to local currency when the preference is created, as the checkout always processes transactions using local currency. If you use USD please take into consideration that this value is not automatically updated if the value of local currency changes in relation to USD.
+                          enum:
+                            - ARS -- Argentine peso.
+                            - BRL -- Brazilian real.
+                            - CLP -- Chilean peso.
+                            - MXN -- Mexican peso.
+                            - COP -- Colombian peso.
+                            - PEN -- Peruvian sol.
+                            - UYU -- Uruguayan peso.
                         quantity:
                           type: number
                           example: 1
