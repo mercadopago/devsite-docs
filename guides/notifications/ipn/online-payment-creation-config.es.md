@@ -200,6 +200,8 @@ curl -X POST \
 
 2. Implementa el receptor de notificaciones usando el siguiente código como ejemplo:
 
+
+[[[
 ```php
 <?php
    MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
@@ -239,6 +241,52 @@ curl -X POST \
   
 ?>
 ```
+```node
+var mercadopago = require("mercadopago");
+
+mercadopago.configurations.setAccessToken("YOUR_ACCESS_TOKEN");
+
+router.post("/notifications", async (req, res) => {
+    const { id, topic } = req.query;
+
+    var merchant_order = null;
+    var payment = null;
+
+    switch () {
+        case "payment":
+            payment = await mercadopago.payment.findById(id);
+            // Obtenga el pago y el correspondiente merchant_order reportado por el IPN.
+            merchant_order = await mercadopago.merchant_orders.findById(payment.body.order.id);
+            break;
+        case "merchant_order":
+            merchant_order = await mercadopago.merchant_orders.findById(id);
+            break;
+    }
+
+    var paid_amount = 0;
+    merchant_order.body.payments.forEach(payment => {
+        if (payment.status === "approved") {
+            paid_amount += payment.transaction_amount;
+        }
+    })
+
+    // Si el importe de la transacción del pago es igual (o mayor) que el importe de merchant_order puedes liberar tus artículos
+    if (paid_amount >= merchant_order.body.total_amount) {
+        if (merchant_order.body.shipments.length > 0) {
+            if (merchant_order.body.shipments[0].status === "ready_to_ship") {
+                console.log("Totalmente pagado. Imprima la etiqueta y libere su artículo.-")
+            }
+        } else {
+            console.log("Totalmente pagado. Libere su artículo.")
+        }
+    } else { // El merchant_order no tiene ningún envío
+        console.log("Todavía no se ha pagado. No liberar su artículo.")
+    }
+
+    res.status(200).json(["HTTP/1.1 200 OK"]);
+})
+```
+]]]
 
 3. Una vez realizada la configuración, Mercado Pago notificará esta URL con dos parámetros cada vez que se cree o actualice un recurso:
 
