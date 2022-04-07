@@ -9,7 +9,7 @@ content_section_with_media:
 
 >>>> Navegadores compatíveis <<<<
 
-![compatible navigators](/sdk/mpjsv1-2.png) 
+![compatible navigators](sdk/mp-jsv1.png) 
 
 --- mini_landing_separator ---
 
@@ -32,5 +32,5 @@ window.Mercadopago.setPublishableKey("YOUR_PUBLIC_KEY");
 ]]]
 
 >
->Saiba mais sobre a public key em Credenciais.
+> Saiba mais sobre a public key em Credenciais.
 >
