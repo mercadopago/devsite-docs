@@ -4,6 +4,26 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ---
 
+## Abril 2022
+
+### 07 de abril
+
+> CHANGELOG
+>
+> Novidades MercadoPago.js V2
+>
+> NEWS: NOVIDADES
+>
+> PRODUCT: MERCADO PAGO
+
+Adicionamos novos callbacks ao Card Form: **onError**, **onValidityChange** e **onReady**.
+
+Alteramos a nomenclatura de alguns campos no Card Form. Os campos **cardExpirationMonth**, **cardExpirationYear** e **cardExpirationDate** tornaram-se **expirationMonth**, **expirationYear** e **expirationDate**, respectivamente.
+
+Adicionamos uma nova forma mais segura de integração por [Card Form](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/receiving-payment-by-card-v2) e [Métodos Core](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/receiving-payment-by-card-core-methods-v2), chamada Secure Fields.
+
+Mais informações podem ser encontradas em nossa [referência técnica](https://github.com/mercadopago/sdk-js).
+
 ## Março 2022
 
 ### 31 de março
