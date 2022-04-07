@@ -286,7 +286,7 @@ router.post("/notifications", async (req, res) => {
     res.status(200).json(["HTTP/1.1 200 OK"]);
 })
 ```
-]]]-
+]]]
 
 3. Una vez realizada la configuración, Mercado Pago notificará esta URL con dos parámetros cada vez que se cree o actualice un recurso:
 
