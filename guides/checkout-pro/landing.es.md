@@ -2,7 +2,7 @@
 content_section_with_media: 
  - title: Checkout Pro
  - message: Checkout Pro es una solución que permite a tus clientes realizar compras a través del formulario web de Mercado Pago. Al pagar con Checkout Pro, el comprador es dirigido a una página de Mercado Pago donde completará la transacción de manera segura y rápida y podrá pagar con los principales métodos de pago disponibles actualmente.
- - media_video: https://www.youtube.com/embed/<iframe width="560" height="315" src="https://www.youtube.com/embed/yQZ5KjnUfbM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ - media_video: https://www.youtube.com/embed/yQZ5KjnUfbM
 ---
 
 --- mini_landing_separator ---
