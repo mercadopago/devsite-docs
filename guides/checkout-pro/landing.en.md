@@ -2,7 +2,7 @@
 content_section_with_media: 
  - title: Checkout Pro
  - message: Checkout Pro is a solution that allows your customers to make purchases through the Mercado Pago web form. When paying with Checkout Pro, the buyer is directed to a Mercado Pago page where they will complete the transaction safely and quickly and can pay with the main payment methods currently available.
- - media_video: https://www.youtube.com/embed/yQZ5KjnUfbM
+ - media_image: /subscriptions/mini-landing-3-pt.png
 ---
 
 --- mini_landing_separator ---

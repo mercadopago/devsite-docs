@@ -1,8 +1,8 @@
 ---
 content_section_with_media: 
  - title: Checkout Bricks
- - message: Checkout Bricks is a library of UI (user interface) components that aims to allow the client-side integration of Checkout API in a modular way through configurable, secure structures and with a simplified and unified integration.
- - media_video: https://www.youtube.com/embed/jv9oCydWV78
+ - message: Checkout Bricks is a library of UI (user interface) components that aims to allow a client-side integration in a modular way through configurable, secure structures and with a simplified and unified integration.
+ - media_image: /subscriptions/mini-landing-3-pt.png
 ---
 
 ---

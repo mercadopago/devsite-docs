@@ -1,8 +1,8 @@
 ---
 content_section_with_media: 
  - title: Checkout Bricks
- - message: Checkout Bricks es una biblioteca de componentes de UI (interfaz de usuario) que tiene como objetivo permitir la integración client-side del Checkout Transparente de forma modular a través de estructuras configurables, seguras y con una integración simplificada y unificada.
- - media_video: https://www.youtube.com/embed/jv9oCydWV78
+ - message: Checkout Bricks es una biblioteca de componentes de UI (interfaz de usuario) que tiene como objetivo permitir una integración client-side de forma modular a través de estructuras configurables, seguras y con una integración simplificada y unificada.
+ - media_video: https://www.youtube.com/embed/6TbS1jicMWg
 ---
 
 ---
