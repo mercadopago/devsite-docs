@@ -7,11 +7,3 @@ Suas integrações lidam com informações confidenciais e, portanto, é necess�
 No Mercado Pago garantimos a confidencialidade, disponibilidade e integridade de todos os nossos processos seguindo as melhores práticas de mercado para que você possa utilizar todos os nossos produtos com segurança. Você pode aprender mais sobre essas práticas lendo as documentações de [OWASP](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/security/owasp) e de [PCI DSS](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/security/pci).
 
 Neste guia, mostraremos quais são as melhores práticas que você pode realizar para que suas integrações sejam seguras de ponta a ponta, em todos os momentos.
-
-> NEXT_STEP_CARD_PT
->
-> Mantenha suas credenciais seguras
->
-> Saiba quais ações tomar para manter sua integração segura.
->
-> [Credenciais seguras](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/best-practices/safety-for-your-credentials/secure-credentials)

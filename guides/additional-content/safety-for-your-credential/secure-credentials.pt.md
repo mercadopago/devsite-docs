@@ -61,11 +61,3 @@ Você pode remover essas permissões a qualquer momento no painel de credenciais
 OAuth é um protocolo de autorização que permite que aplicativos tenham acesso limitado às informações privadas das contas do Mercado Pago, por meio do protocolo HTTP que introduz uma camada de autenticação e autorização na qual você solicita acesso aos recursos protegidos dos vendedores, por meio de um token de acesso limitado a um determinado aplicativo, sem a necessidade das credenciais dos vendedores através dos fluxos de acesso.
 
 Para saber mais sobre o OAuth, acesse [esta documentação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/security/oauth/introduction).
-
-> PREV_STEP_CARD_PT
->
-> Boas práticas de segurança para suas credenciais
->
-> Proteja seus dados e os das contas que você gerencia para que estejam sempre seguros.
->
->[Introdução](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/best-practices/safety-for-your-credentials/introduction)

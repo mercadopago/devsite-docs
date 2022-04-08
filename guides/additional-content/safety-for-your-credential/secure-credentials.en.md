@@ -62,12 +62,3 @@ You can remove these permissions at any time from the **Credentials** panel.
 OAuth is an authorization protocol that allows applications to have limited access to the private information of Mercado Pago accounts, through the HTTP protocol that introduces an authentication and authorization layer in which you request access to the protected resources of sellers, through an access token limited to a particular application, without the need for the credentials of the sellers through the access flows.
 
 To learn more about OAuth, go to [this documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/security/oauth/introduction).
-
-
-> PREV_STEP_CARD_EN
->
-> Best practices for your credentials
->
-> Protect your data and those of the accounts you manage so that they are always safe.
->
-> [Introduction](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/best-practices/safety-for-your-credentials/introduction)
