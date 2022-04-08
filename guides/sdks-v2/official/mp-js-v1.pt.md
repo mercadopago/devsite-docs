@@ -18,7 +18,7 @@ content_section_with_media:
 Para instalar o SDK de frontend, você deve incluir o MercadoPago.js no HTML da sua aplicação conforme o código abaixo.
 
 [[[
-```html
+```javascript
 <script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
 ```
 ]]]
