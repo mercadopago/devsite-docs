@@ -17,7 +17,7 @@ To offer subscriptions with payments via boleto bancário, send a POST with the 
 >
 > See more information about the different subscriptions that have different characteristics as they are specific to each payer.
 >
-> [Subscriptions without associated plan](hhttps://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/subscriptions/subscriptions-no-associated-plan)
+> [Subscriptions without associated plan](/developers/en/docs/subscriptions/integration-configuration/subscriptions-no-associated-plan)
 
 > NEXT_STEP_CARD_PT
 >
@@ -25,6 +25,6 @@ To offer subscriptions with payments via boleto bancário, send a POST with the 
 >
 > See how to set the amount charged to the subscriber if the subscription starts on a day other than the billing date set by the seller.
 >
-> [Proportional value (Pro rata)](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/subscriptions/proportional-amount)
+> [Proportional value (Pro rata)](/developers/en/docs/subscriptions/integration-customization/payment-methods/proportional-amount)
 
 ------------

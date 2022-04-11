@@ -17,7 +17,7 @@ Para ofrecer el pago de suscripciones a través de boleto bancario, envía un PO
 >
 > Vea más informaciónes sobre las diferentes suscripciones que tienen características diferentes ya que son específicas de cada pagador.
 >
-> [Suscripciones sin plan asociado](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/subscriptions/subscriptions-no-associated-plan)
+> [Suscripciones sin plan asociado](/developers/es/docs/subscriptions/integration-configuration/subscriptions-no-associated-plan)
 
 > NEXT_STEP_CARD_PT
 >
@@ -25,6 +25,6 @@ Para ofrecer el pago de suscripciones a través de boleto bancario, envía un PO
 >
 > Vea cómo configurar el monto que se le cobrará al suscriptor si la suscripción comienza en un día diferente a la fecha de facturación establecida por el vendedor.
 >
-> [Valor proporcional (Pro rata)](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/subscriptions/proportional-amount)
+> [Valor proporcional (Pro rata)](/developers/es/docs/subscriptions/integration-customization/payment-methods/proportional-amount)
 
 ------------

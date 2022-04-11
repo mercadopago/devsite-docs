@@ -17,7 +17,7 @@ Para oferecer pagamento de assinaturas via boleto bancário, envie um POST com o
 >
 > Veja mais informações sobre as diferentes assinaturas que possuem características distintas por serem específicas para cada pagador.
 >
-> [Assinaturas sem plano associado](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/subscriptions/subscriptions-no-associated-plan)
+> [Assinaturas sem plano associado](/developers/pt/docs/subscriptions/integration-configuration/subscriptions-no-associated-plan)
 
 > NEXT_STEP_CARD_PT
 >
@@ -25,6 +25,6 @@ Para oferecer pagamento de assinaturas via boleto bancário, envie um POST com o
 >
 > Veja como definir o valor cobrado do assinante caso a assinatura comece em um dia diferente da data de cobrança definida pelo vendedor.
 >
-> [Valor proporcional (Pro rata)](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/subscriptions/proportional-amount)
+> [Valor proporcional (Pro rata)](/developers/pt/docs/subscriptions/integration-customization/payment-methods/proportional-amount)
 
 ------------
