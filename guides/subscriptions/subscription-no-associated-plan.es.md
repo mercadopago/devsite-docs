@@ -37,7 +37,7 @@ Después de completar los campos, ejecute la solicitud.
 >
 > Ver más información sobre las firmas utilizadas cuando es necesario tener la misma firma en diferentes ocasiones y organizarlas en grupos identificables.
 >
-> [Suscripciones con plan asociado](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/subscriptions/subscriptions-associated-plan)
+> [Suscripciones con plan asociado](/developers/es/docs/subscriptions/integration-configuration/subscriptions-associated-plan)
 
 ----[mlb]----
 > NEXT_STEP_CARD_ES
@@ -46,7 +46,7 @@ Después de completar los campos, ejecute la solicitud.
 >
 > Infórmese de cómo poner a disposición del suscriptor la opción de pagar la suscripción con boleto bancário
 >
-> [Boleto bancário](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/subscriptions/boleto-bancario)
+> [Boleto bancário](/developers/es/docs/subscriptions/integration-customization/payment-methods/boleto-bancario)
 ------------
 
 ----[mla, mlm, mpe, mco, mlu, mlc]----
@@ -56,4 +56,4 @@ Después de completar los campos, ejecute la solicitud.
 >
 > Vea cómo configurar el monto que se le cobrará al suscriptor si la suscripción comienza en un día diferente a la fecha de facturación establecida por el vendedor.
 >
-> [Valor proporcional (Pro rata)](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/subscriptions/proportional-amount)
+> [Valor proporcional (Pro rata)](/developers/es/docs/subscriptions/integration-customization/payment-methods/proportional-amount)

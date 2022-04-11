@@ -24,7 +24,7 @@ Cuando termines de llenar los atributos, ejecuta la solicitud y ¡listo! Se habr
 >
 > Consulta todos los requisitos necesarios para empezar a integrarte.
 >
-> [Requisitos previos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/subscriptions/requeriments)
+> [Requisitos previos](/developers/es/docs/subscriptions/requirements)
 
 > NEXT_STEP_CARD_ES
 >
@@ -32,4 +32,4 @@ Cuando termines de llenar los atributos, ejecuta la solicitud y ¡listo! Se habr
 >
 > Ver más información sobre las diferentes suscripciones que tienen características diferentes ya que son específicas de cada pagador.
 >
-> [Suscripciones sin plan asociado](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/subscriptions/subscriptions-no-associated-plan)
+> [Suscripciones sin plan asociado](/developers/es/docs/subscriptions/integration-configuration/subscription-no-associated-plan)

@@ -24,7 +24,7 @@ When you finish filling in the attributes, execute the request, and that's it! Y
 >
 > Check out all the necessary requirements to start integrating.
 >
-> [Prerequisites](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/subscriptions/requeriments)
+> [Prerequisites](/developers/pt/docs/subscriptions/requirements)
 
 > NEXT_STEP_CARD_EN
 >
@@ -32,4 +32,4 @@ When you finish filling in the attributes, execute the request, and that's it! Y
 >
 > See more information about the different subscriptions that have different characteristics as they are specific to each payer.
 >
-> [Subscriptions without associated plan](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/subscriptions/subscriptions-no-associated-plan)
+> [Subscriptions without associated plan](/developers/en/docs/subscriptions/integration-configuration/subscription-no-associated-plan)

@@ -20,7 +20,7 @@ En la siguiente tabla encontrarás más información sobre las posibilidades de 
 >
 > Sepa cómo hacer una compra de prueba y validar los trabajos de suscripción.
 >
-> [Haz una compra de prueba](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/testing/test-purchase)
+> [Haz una compra de prueba](/developers/es/docs/subscriptions/integration-test/payment-approval)
 
 > NEXT_STEP_CARD_ES
 >
@@ -28,4 +28,4 @@ En la siguiente tabla encontrarás más información sobre las posibilidades de 
 >
 > Sepa gestionar pagos, contracargos y devoluciones.
 >
-> [Procesamiento de ventas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/sales-processing/retrieving-payments)
+> [Procesamiento de ventas](/developers/es/docs/subscriptions/production-mode/sales-processing/payment-methods)

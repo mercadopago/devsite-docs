@@ -21,17 +21,17 @@ Para definir uma pro-rata no pagamento de assinaturas, envie um POST com os par�
 >
 > Saiba como disponibilizar para o assinante a opção de pagar a assinatura com boleto bancário.
 >
-> [Boleto bancário](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/subscriptions/boleto-bancario)
+> [Boleto bancário](/developers/pt/docs/subscriptions/integration-customization/payment-methods/boleto-bancario)
 ------------
 
-----[mla, mlm, mpe, mco, mlu, mlc]----
+----[mla, mlm, mpe, mco, mlu, mlc]---- 
 > PREV_STEP_CARD_PT
 >
 > Assinaturas sem plano associado 
 >
 > Veja mais informações sobre as diferentes assinaturas que possuem características distintas por serem específicas para cada pagador.
 >
-> [Assinaturas com plano associado](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/subscriptions/subscriptions-associated-plan)
+> [Assinaturas com plano associado](/developers/pt/docs/subscriptions/integration-configuration/subscription-no-associated-plan)
 ------------
 
 > NEXT_STEP_CARD_PT
@@ -40,4 +40,4 @@ Para definir uma pro-rata no pagamento de assinaturas, envie um POST com os par�
 >
 > Analise se a integração foi feita de maneira correta e se a aquisição de assinaturas está funcionando sem erros.
 >
-> [Criar usuário de teste](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/testing/create-test-user)
+> [Criar usuário de teste](/developers/pt/docs/subscriptions/integration-test/create-test-user)

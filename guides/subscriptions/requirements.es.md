@@ -17,7 +17,7 @@ Si se cumplieron todos los requisitos previos, podrás realizar la integración 
 >
 > Ver más información sobre Suscripciones y sus características.
 >
-> [Introducción](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/subscriptions/introduction)
+> [Introducción](/developers/es/docs/subscriptions/landing)
 
 > NEXT_STEP_CARD_ES
 >
@@ -25,4 +25,4 @@ Si se cumplieron todos los requisitos previos, podrás realizar la integración 
 >
 > Ver más información sobre las firmas utilizadas cuando es necesario tener la misma firma en diferentes ocasiones y organizarlas en grupos identificables.
 >
-> [Suscripciones con plan asociado](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/subscriptions/subscriptions-associated-plan)
+> [Suscripciones con plan asociado](/developers/es/docs/subscriptions/integration-configuration/subscriptions-associated-plan)

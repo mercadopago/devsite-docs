@@ -19,4 +19,4 @@ A continuación mostramos un diagrama que explica el flujo de cada modelo de sus
 >
 > Consulta todos los requisitos necesarios para empezar a integrarte.
 >
-> [Requisitos previos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/subscriptions/requirements)
+> [Requisitos previos](developers/es/docs/subscriptions/requirements)

@@ -20,4 +20,4 @@ Below we show a diagram that explains the flow of each subscription model:
 >
 > Check out all the necessary requirements to start integrating.
 >
-> [Prerequisites](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/subscriptions/requirements)
+> [Prerequisites](developers/en/docs/subscriptions/requirements)

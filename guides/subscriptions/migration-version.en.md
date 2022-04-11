@@ -52,4 +52,4 @@ curl --location
 >
 > Know how to manage payments, chargebacks and refunds.
 >
-> [Sales processing](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/sales-processing/retrieving-payments)
+> [Sales processing](/developers/en/docs/subscriptions/production-mode/sales-processing/payment-methods)

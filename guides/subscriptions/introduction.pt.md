@@ -19,4 +19,4 @@ Abaixo mostramos um diagrama que explica o fluxo de cada modelo de assinatura.
 >
 > Confira todos os requisitos necessários para começar a integrar.
 >
-> [Pré-requisitos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/subscriptions/requirements)
+> [Pré-requisitos](/developers/pt/docs/subscriptions/requirements)

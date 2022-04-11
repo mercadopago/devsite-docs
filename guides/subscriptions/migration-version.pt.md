@@ -52,4 +52,4 @@ curl --location
 >
 > Saiba realizar a gestão dos pagamentos, estornos e reembolsos.
 >
-> [Realizar compra teste](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/sales-processing/retrieving-payments)
+> [Realizar compra teste](/developers/pt/docs/subscriptions/production-mode/sales-processing/payment-methods)

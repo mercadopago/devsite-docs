@@ -24,7 +24,7 @@ Ao finalizar o preenchimento dos atributos, execute a requisição e pronto! A a
 >
 > Confira todos os requisitos necessários para começar a integrar.
 >
-> [Pré-requisitos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/subscriptions/requeriments)
+> [Pré-requisitos](/developers/en/docs/subscriptions/requirements)
 
 > NEXT_STEP_CARD_PT
 >
@@ -32,4 +32,4 @@ Ao finalizar o preenchimento dos atributos, execute a requisição e pronto! A a
 >
 > Veja mais informações sobre as diferentes assinaturas que possuem características distintas por serem específicas para cada pagador.
 >
-> [Assinaturas sem plano associado](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/subscriptions/subscriptions-no-associated-plan)
+> [Assinaturas sem plano associado](/developers/pt/docs/subscriptions/integration-configuration/subscription-no-associated-plan)

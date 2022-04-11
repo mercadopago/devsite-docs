@@ -20,7 +20,7 @@ Na tabela abaixo você encontra mais informações sobre as possibilidades de ge
 >
 > Saiba realizar uma compra teste e validar o funcionamento da assinatura.
 >
-> [Realizar compra teste](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/testing/test-purchase)
+> [Realizar compra teste](/developers/pt/docs/subscriptions/integration-test/payment-approval)
 
 > NEXT_STEP_CARD_PT
 >
@@ -28,4 +28,4 @@ Na tabela abaixo você encontra mais informações sobre as possibilidades de ge
 >
 > Saiba realizar a gestão dos pagamentos, estornos e reembolsos.
 >
-> [Realizar compra teste](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/sales-processing/retrieving-payments)
+> [Realizar compra teste](/developers/pt/docs/subscriptions/production-mode/sales-processing/payment-methods)

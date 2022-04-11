@@ -19,25 +19,25 @@ Para establecer un prorrateo para el pago de suscripciones, envía un POST con l
 >
 > Boleto bancário
 >
-> Saiba como disponibilizar para o assinante a opção de pagar a assinatura com boleto bancário.
+> Infórmese de cómo poner a disposición del suscriptor la opción de pagar la suscripción con boleto bancário
 >
-> [Boleto bancário](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/subscriptions/boleto-bancario)
+> [Boleto bancário](/developers/es/docs/subscriptions/integration-customization/payment-methods/boleto-bancario)
 ------------
 
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 > PREV_STEP_CARD_ES
 >
-> Assinaturas sem plano associado 
+> Suscripciones sin plan asociado
 >
-> Veja mais informações sobre as diferentes assinaturas que possuem características distintas por serem específicas para cada pagador.
+> Ver más información sobre las diferentes suscripciones que tienen características diferentes ya que son específicas de cada pagador.
 >
-> [Assinaturas com plano associado](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/subscriptions/subscriptions-associated-plan)
+> [Suscripciones sin plan asociado](/developers/es/docs/subscriptions/integration-configuration/subscription-no-associated-plan)
 ------------
 
 > NEXT_STEP_CARD_ES
 >
-> Criar usuário de teste
+> Crear usuario de prueba
 >
-> Analise se a integração foi feita de maneira correta e se a aquisição de assinaturas está funcionando sem erros.
+> Cree usuarios de prueba para analizar si la incorporación se realizó sin problemas y si la adquisición de la suscripción funciona sin errores.
 >
-> [Criar usuário de teste](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/testing/create-test-user)
+> [Criar usuário de teste](/developers/es/docs/subscriptions/integration-test/create-test-user)

@@ -37,7 +37,7 @@ Finalizando o preenchimento dos campos, execute a requisição.
 >
 > Veja mais informações sobre as assinaturas utilizadas quando é necessário ter a mesma assinatura em ocasiões diferentes e organizá-las em grupos identificáveis. 
 >
-> [Assinaturas com plano associado](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/subscriptions/subscriptions-associated-plan)
+> [Assinaturas com plano associado](/developers/pt/docs/subscriptions/integration-configuration/subscriptions-associated-plan)
 
 ----[mlb]----
 > NEXT_STEP_CARD_PT
@@ -46,7 +46,7 @@ Finalizando o preenchimento dos campos, execute a requisição.
 >
 > Saiba como disponibilizar para o assinante a opção de pagar a assinatura com boleto bancário.
 >
-> [Boleto bancário](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/subscriptions/boleto-bancario)
+> [Boleto bancário](/developers/es/docs/subscriptions/integration-customization/payment-methods/boleto-bancario)
 ------------
 
 ----[mla, mlm, mpe, mco, mlu, mlc]----
@@ -56,5 +56,5 @@ Finalizando o preenchimento dos campos, execute a requisição.
 >
 > Veja como definir o valor cobrado do assinante caso a assinatura comece em um dia diferente da data de cobrança definida pelo vendedor.
 >
-> [Valor proporcional (Pro rata)](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/subscriptions/proportional-amount)
+> [Valor proporcional (Pro rata)](/developers/pt/docs/subscriptions/integration-customization/payment-methods/proportional-amount)
 ------------

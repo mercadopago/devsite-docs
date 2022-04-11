@@ -21,7 +21,7 @@ To define a pro rata for subscriptions payments, send a POST to the [/preapprova
 >
 > Find out how to make available to the subscriber the option of paying the subscription with a boleto bancário.
 >
-> [Boleto bancário](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/subscriptions/boleto-bancario)
+> [Boleto bancário](/developers/en/docs/subscriptions/integration-customization/payment-methods/boleto-bancario)
 ------------
 
 ----[mla, mlm, mpe, mco, mlu, mlc]----
@@ -31,7 +31,7 @@ To define a pro rata for subscriptions payments, send a POST to the [/preapprova
 >
 > See more information about the different subscriptions that have different characteristics as they are specific to each payer.
 >
-> [Subscriptions without associated plan](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/subscriptions/subscriptions-associated-plan)
+> [Subscriptions without associated plan](/developers/en/docs/subscriptions/integration-configuration/subscription-no-associated-plan)
 ------------
 
 > NEXT_STEP_CARD_EN
@@ -40,4 +40,4 @@ To define a pro rata for subscriptions payments, send a POST to the [/preapprova
 >
 > Check that the integration was done correctly and that the subscription acquisition is working without errors.
 >
-> [Create test user](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/testing/create-test-user)
+> [Create test user](/developers/en/docs/subscriptions/integration-test/create-test-user)

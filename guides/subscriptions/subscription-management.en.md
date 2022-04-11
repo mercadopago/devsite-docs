@@ -20,7 +20,7 @@ In the following table, you will find more information about the management poss
 >
 > Saiba to make a test purchase and validate the operation of the enrollment.
 >
-> [Make test purchase](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/testing/test-purchase)
+> [Make test purchase](/developers/en/docs/subscriptions/integration-test/payment-approval)
 
 > NEXT_STEP_CARD_EN
 >
@@ -28,4 +28,4 @@ In the following table, you will find more information about the management poss
 >
 > Saiba to perform two payments, returns and reimbursements.
 >
-> [Processing of sales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/sales-processing/retrieving-payments)
+> [Processing of sales](/developers/en/docs/subscriptions/production-mode/sales-processing/payment-methods)

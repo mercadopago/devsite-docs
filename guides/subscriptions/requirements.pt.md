@@ -17,7 +17,7 @@ Se todos os pré-requisitos foram atendidos, você poderá realizar a integraç�
 >
 > Veja mais informações sobre as Assinaturas e suas característcas.
 >
-> [Introdução](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/subscriptions/introduction)
+> [Introdução](/developers/pt/docs/subscriptions/landing)
 
 > NEXT_STEP_CARD_PT
 >
@@ -25,4 +25,4 @@ Se todos os pré-requisitos foram atendidos, você poderá realizar a integraç�
 >
 > Veja mais informações sobre as assinaturas utilizadas quando é necessário ter a mesma assinatura em ocasiões diferentes e organizá-las em grupos identificáveis. 
 >
-> [Assinaturas com plano associado](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/subscriptions/subscriptions-associated-plan)
+> [Assinaturas com plano associado](/developers/pt/docs/subscriptions/integration-configuration/subscriptions-associated-plan)
