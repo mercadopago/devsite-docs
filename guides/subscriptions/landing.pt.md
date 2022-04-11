@@ -33,8 +33,5 @@ bullet_section_with_media:
 
 >>>> Meios de pagamento aceitos <<<<
 ---
-available_payments: credit, mercadopago
+available_payments: credit, mercadopago, ticket
 ---
-
->
->Saiba mais sobre as vantagens em [ferramentas para vender](https://www.mercadopago.com.br/ferramentas-para-vender/assinaturas). 
