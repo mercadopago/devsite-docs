@@ -1,6 +1,4 @@
-
 # Glosario
-
 
 Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado con todos ellos. ¡Usa este glosario para no perderte!
 
@@ -16,11 +14,11 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 | TRANSACTION_AMOUNT | Monto bruto de la operación. |
 | TRANSACTION_CURRENCY | Puede tomar algunos de estos valores según corresponda:<br><br> MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasilero)<br>PEN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br><br> |
 | SELLER_AMOUNT | Monto recibido por compras por split. |
-| TRANSACTION_DATE | Fecha de acreditación de la operación. |
+| TRANSACTION_DATE | Fecha en que se origina la operación. |
 | FEE_AMOUNT | Sumatoria de las comisiones de procesamiento, envíos, financiamiento y cupones si fue asumido por el vendedor. Incluyen IVA. |
 | SETTLEMENT_NET_AMOUNT | Monto neto de la operación que impactó en el dinero. Se le descontaron todas las comisiones involucradas del `TRANSACTION_AMOUNT`. |
 | SETTLEMENT_CURRENCY | Puede tomar algunos de estos valores según corresponda:<br><br> MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasilero)<br>PEN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br><br> |
-| SETTLEMENT_DATE | Fecha en que se acreditó el dinero de la operación. |
+| SETTLEMENT_DATE | Fecha de aprobación de la operación. |
 | REAL_AMOUNT | Monto neto de la operación, si es un *settlement*, se le descuentan los montos por contracargos, reclamos o devoluciones. |
 | COUPON_AMOUNT | Monto del cupón de descuento. **Solo se descuenta del monto bruto** (`TRANSACTION_AMOUNT`) **si está provisto por el vendedor**. |
 | METADATA | ----[mlu, mla, mlm, mco, mlc, mlb]---- Datos extras como por ejemplo el ID de las devoluciones parciales o datos provistos por el vendedor en caso de tener una integración externa.------------ ----[mpe]---- Datos extras, como por ejemplo, datos provistos por el vendedor en caso de tener una integración externa.------------ |
