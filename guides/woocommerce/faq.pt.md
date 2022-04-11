@@ -27,11 +27,3 @@ Você pode configurar as opções de parcelamento e a forma como serão creditad
 O WooCommerce permite que seus usuários configurem por quanto tempo um pedido permanecerá como pendente. Essa funcionalidade pode ser acessada através do **menu de configurações** do WooCommerce, em  **Produtos > Inventário**.
 
 Para mais informações, acesse o tópico **inventário**, no [manual da plataforma](https://docs.woocommerce.com/document/perguntas-frequentes-sobre-reservas/).
-
-> PREV_STEP_CARD_PT
->
-> E-mail de notificação
->
-> Saiba como configurar o envio de e-mails que notificarão o usuário de suas transações.
->
-> [E-mail de notificação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/woocommerce/notification-email)

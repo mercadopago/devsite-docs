@@ -10,10 +10,10 @@ Abaixo, detalhamos os fatores que influenciam na recusa de um pagamento:
 | Recusas bancárias | Cartões com expiração da validade, falta de limite, saldo insuficiente ou desabilitado para compras online.| Oferecer alternativas para outros meios e/ou condições de pagamentos. | 
 | Prevenção contra fraude | O sistema anti-fraude do Mercado Pago faz a proteção do seu negócio contra ataques maliciosos que podem gerar prejuízos. | Este tipo de recusa é benéfico para sua loja. |
 
-> NEXT_STEP_CARD_PT
+> PREV_STEP_CARD_PT
 >
-> FAQ
+> Status de pagamentos
 >
-> Conheça as principais dúvidas sobre a integração.
+> Conoce los status de pago que muestran el estado de la venta.
 >
-> [FAQ](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/woocommerce/faq)
+> [Status de pagamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/woocommerce/payment-status)

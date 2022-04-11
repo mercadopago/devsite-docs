@@ -8,4 +8,4 @@ No campo **País de operação** você deverá selecionar o país no qual sua co
 >
 > Saiba como ativar as suas credenciais de produção e teste.
 >
-> [Ativação de credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/woocommerce/credential-activation)
+> [Ativação de credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/woocommerce/credentials-activation)

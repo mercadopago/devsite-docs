@@ -25,4 +25,4 @@ Pronto! Sua loja está em Produção e habilitada para realizar suas vendas.
 >
 > Conheça os principais status durante o processamento das vendas.
 >
-> [Processamento de vendas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/woocommerce/sales-processing)
+> [Processamento de vendas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/woocommerce/sales-processing)

@@ -27,11 +27,3 @@ Puedes configurar las opciones de cuotas y cómo se acreditarán tus cuentas por
 WooCommerce permite a sus usuarios configurar cuánto tiempo permanecerá pendiente un pedido. Se puede acceder a esta funcionalidad a través del menú **Ajustes** de WooCommerce, en **Productos > Inventario**. 
 
 Para obtener más información, accede a **inventario** en el [manual de la plataforma](https://docs.woocommerce.com/document/preguntas-frecuentes-sobre-woocommerce-bookings/).
-
-> PREV_STEP_CARD_ES
->
-> E-mail de notificación
->
-> Aprenda a configurar el envío de correos electrónicos que notificarán al usuario de sus transacciones.
->
-> [E-mail de notificación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/woocommerce/notification-email)
