@@ -52,4 +52,4 @@ curl --location
 >
 > Saber gestionar pagos, contracargos y devoluciones.
 >
-> [Procesamiento de ventas](/developers/es/docs/subscriptions/production-mode/sales-processing/payment-methods)
+> [Procesamiento de ventas](/developers/es/docs/subscriptions/production-mode/sales-processing/cancellations-and-refunds)

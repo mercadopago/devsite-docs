@@ -52,4 +52,4 @@ curl --location
 >
 > Know how to manage payments, chargebacks and refunds.
 >
-> [Sales processing](/developers/en/docs/subscriptions/production-mode/sales-processing/payment-methods)
+> [Sales processing](/developers/en/docs/subscriptions/production-mode/sales-processing/cancellations-and-refunds)

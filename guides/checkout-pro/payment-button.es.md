@@ -1,4 +1,4 @@
-## Botón de pago
+# Botón de pago
 
 Después de integrar Checkout Pro, es posible definir y personalizar la interfaz que se muestra al usuario, incluido el modo de entrada a la pantalla de checkout.
 
@@ -6,14 +6,11 @@ Por defecto, Checkout Pro se abre con un botón de pago direccionando al usuario
 
 Además, Checkout Pro también se puede abrir automáticamente, sin ninguna acción por parte del comprador.
 
-
-### Apertura de botón personalizado
-
+## Apertura de botón personalizado
 
 La apertura con botón personalizado se realiza a través del método `open`, que permite abrir el Checkout desde cualquier elemento del sitio web, sin que necesariamente se muestre el botón de pago al comprador.
 
 Para configurar la apertura con un botón personalizado, agrega el siguiente código HTML directamente en su proyecto.
-
 
 [[[
 ```html
@@ -47,13 +44,11 @@ Para configurar la apertura con un botón personalizado, agrega el siguiente có
 ```
 ]]]
 
-
-### Apertura automática
+## Apertura automática
 
 La apertura automática se realiza a través del parámetro `autoOpen` en las opciones de inicio de pago. Este parámetro permitirá a los compradores interactuar con un botón o cualquier otro elemento para abrir el checkout.
 
 Para configurar la apertura automática, agrega el siguiente código directamente en su proyecto.
-
 
 [[[
 ```html
@@ -80,3 +75,19 @@ Para configurar la apertura automática, agrega el siguiente código directament
 </html>
 ```
 ]]]
+
+> PREV_STEP_CARD_ES
+>
+> Esquema de apertura
+>
+> Aprenda a definir cómo se abrirá Checkout Pro para el usuario. 
+>
+> [Esquema de apertura](/developers/es/docs/checkout-pro/checkout-customization/user-interface/opening-schema)
+
+> NEXT_STEP_CARD_ES
+>
+> Redireccionamiento  
+>
+> Aprenda a redirigir al comprador a otro entorno del sitio al final del proceso de pago. 
+>
+> [Redireccionamiento](/developers/es/docs/checkout-pro/checkout-customization/user-interface/redirection)

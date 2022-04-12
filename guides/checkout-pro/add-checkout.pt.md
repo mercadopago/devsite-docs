@@ -1,9 +1,8 @@
-## Adicionar checkout
+# Adicionar checkout
 
 Após ter criado a preferência em seu backend, será necessário instalar o SDK de frontend do Mercado Pago ao seu projeto para adicionar o botão do Checkout Pro.
 
 A instalação é feita em duas etapas: incluindo o SDK do Mercado Pago ao projeto com suas credenciais configuradas e iniciando o checkout a partir do ID da preferência gerado anteriormente.
-
 
 1. Para incluir o SDK Mercado Pago.js V2, adicione o código abaixo no HTML do projeto.
 
@@ -47,7 +46,6 @@ A instalação é feita em duas etapas: incluindo o SDK do Mercado Pago ao proje
 ```
 ]]]
 
-
 No exemplo acima, um botão de pagamento será renderizado e ficará responsável por abrir o Checkout Pro. Caso queira personalizar a forma como o checkout será aberto, veja a seção Esquema de abertura
 
 > WARNING
@@ -55,3 +53,19 @@ No exemplo acima, um botão de pagamento será renderizado e ficará responsáve
 > Importante
 >
 > Para testar o checkout é preciso acessá-lo através de outro navegador ou encerrar a sessão da sua conta do Mercado Pago. Isso porque estar logado na mesma conta responsável por criar o formulário de pagamento impossibilita testar o fluxo de pagamento e garantir seu funcionamento.
+
+> PREV_STEP_CARD_PT
+>
+> Criar preferências
+>
+> Veja como criar conjuntos de informações sobre um produto e/ou serviço.
+>
+> [Criar preferências](/developers/pt/docs/checkout-pro/requirements)
+
+> NEXT_STEP_CARD_PT
+>
+> Vigência da preferência 
+>
+> Saiba como definir o período de validade para determinada preferência de pagamento.
+>
+> [Vigência da preferência](/developers/pt/docs/checkout-pro/checkout-customization/preferences/term-of-preference)

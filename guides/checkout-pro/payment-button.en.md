@@ -1,4 +1,4 @@
-## Payment Button
+# Payment Button
  
 After integrating Checkout Pro it is possible to define and customize the interface displayed to the user, including the checkout screen input mode. 
  
@@ -6,7 +6,7 @@ By default, Checkout Pro opens with a payment button directing the user to compl
  
 In addition, Checkout Pro can also be opened automatically, without any action on the part of the buyer.
  
-### Opening with custom button
+## Opening with custom button
  
 Opening with a custom button is done through the `open` method, which allows opening the Checkout from any element of the website, without necessarily showing the payment button to the buyer.
  
@@ -44,7 +44,7 @@ To configure opening with a custom button, insert the HTML below directly into y
 ```
 ]]]
  
-### Automatic opening
+## Automatic opening
  
 Automatic opening is done via the `autoOpen` parameter in the checkout launch options. This parameter will allow buyers to interact with a button or any other element to open the checkout.
  
@@ -75,3 +75,19 @@ To configure automatic opening, insert the code below directly into your project
 </html>
 ```
 ]]]
+
+> PREV_STEP_CARD_EN
+>
+> Opening schema
+>
+> Learn how to define how Checkout Pro will open to the user. 
+>
+> [Opening schema](/developers/en/docs/checkout-pro/checkout-customization/user-interface/opening-schema)
+
+> NEXT_STEP_CARD_EN
+>
+> Redirection  
+>
+> Learn how to redirect the buyer to another site environment at the end of the payment process. 
+>
+> [Redirection](/developers/en/docs/checkout-pro/checkout-customization/user-interface/redirection)

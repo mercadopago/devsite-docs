@@ -28,4 +28,4 @@ Na tabela abaixo você encontra mais informações sobre as possibilidades de ge
 >
 > Saiba realizar a gestão dos pagamentos, estornos e reembolsos.
 >
-> [Realizar compra teste](/developers/pt/docs/subscriptions/production-mode/sales-processing/payment-methods)
+> [Processamento de vendas](/developers/pt/docs/subscriptions/production-mode/sales-processing/payment-methods)

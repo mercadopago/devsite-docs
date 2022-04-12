@@ -1,4 +1,4 @@
-## Modo binário
+# Modo binário
 
 Modo binário é uma função que permite a aprovação ou recusa automática de um pagamento. Isso significa que quando ativado, os pagamentos realizados serão automaticamente aprovados ou recusados sem a necessidade de ação por parte do vendedor.
 
@@ -12,5 +12,18 @@ Para ativar o modo binário, envie o parâmetro `binary_mode`  ao endpoint [/che
 | Campo para inserção da data de vencimento do cartão <br><br> Propriedade: cardExpirationDate | **Valor:** N/A <br> **Label:** Data de vencimento <br> **Placeholder:** MM/AA <br> **Tipo:** date <br> **Formato:** MM/AA <br> **Máx. caracteres:** 5 | Obrigatório <br> <br> Customizável (label, placeholder) |
 | Campo para inserção do código de segurança <br><br> Propriedade: cardSecurityCode | **Valor:** N/A <br> **Label:** Nome do titular como aparece no cartão <br> **Placeholder:** João Silva <br> **Tipo:** string <br> **Formato:** N/A <br> **Máx. caracteres:** 100 | Obrigatório <br><br> Customizável (label, placeholder) |
 
+> PREV_STEP_CARD_PT
+>
+> Meios de pagamento 
+>
+> Saiba como customizar a integração do Checkout Pro e determinar os meios de pagamento que serão aceitos.
+>
+> [Meios de pagamento](/developers/pt/docs/checkout-pro/checkout-customization/preferences/payment-methods)
 
-
+> NEXT_STEP_CARD_PT
+>
+> Descrição de fatura
+>
+> Veja como definir o nome do estabelecimento que será exibido na fatura do comprador.
+>
+> [Descrição de fatura](/developers/pt/docs/checkout-pro/checkout-customization/preferences/invoice-description)

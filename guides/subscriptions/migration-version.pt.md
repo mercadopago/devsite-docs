@@ -52,4 +52,4 @@ curl --location
 >
 > Saiba realizar a gestão dos pagamentos, estornos e reembolsos.
 >
-> [Realizar compra teste](/developers/pt/docs/subscriptions/production-mode/sales-processing/payment-methods)
+> [Realizar compra teste](/developers/pt/docs/subscriptions/production-mode/sales-processing/cancellations-and-refunds)
