@@ -34,6 +34,12 @@ Além disso, você pode usar o relatório para ver o histórico do seu dinheiro 
 
 Opcionalmente, o relatório traz colunas com o agendamento das previsões de liberações de pagamentos, possibilitando um melhor planejamento dos recebíveis.
 
+#### Atenção
+
+<i>Quando você incluir as novas colunas de previsibilidade de liberações, fique atento que as informações somente serão agregadas ao relatório depois que a configuração for atualizada e o relatório for processado ao menos uma vez com as novas colunas.
+Relatórios com data retroativa à data dessa nova configuração com as colunas novas não apresentarão as informações de previsibilidade.</i>
+
+  
 > NOTE
 >
 > Nota
