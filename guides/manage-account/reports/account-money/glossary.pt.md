@@ -1,6 +1,4 @@
-
 # Glossário
-
 
 Sabemos que alguns termos são técnicos e você pode não estar familiarizado com todos eles. Use este glossário para não se perder!
 
@@ -16,11 +14,11 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 | TRANSACTION_AMOUNT | Valor bruto da transação. |
 | TRANSACTION_CURRENCY | Moeda:<br><br>MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasileiro)<br>EN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br><br> |
 | SELLER_AMOUNT | Valor recebido por compras com split. |
-| TRANSACTION_DATE | Data de aprovação da transação. |
+| TRANSACTION_DATE | Data em que a operação é originada. |
 | FEE_AMOUNT | É a somatória das tarifas de processamento, shipping, financiamento e boleto, se foi assumido pelo vendedor. |
 | SETTLEMENT_NET_AMOUNT | Valor líquido da transação que impactou o dinheiro em conta. Foram descontadas todas as comissões envolvidas da `TRANSACTION_AMOUNT`. |
 | SETTLEMENT_CURRENCY | Moeda:<br><br> MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasileiro)<br>PEN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br><br> |
-| SETTLEMENT_DATE | Data em que o valor da transação foi creditada. |
+| SETTLEMENT_DATE | Data de aprovação da operação. |
 | REAL_AMOUNT | Valor líquido da transação, se é um settlement, os valores para estornos, reclamações ou devoluções são descontados. |
 | COUPON_AMOUNT | Valor do cupom de desconto. **Apenas o valor bruto** (`TRANSACTION_AMOUNT`) **é descontado se fornecido pelo vendedor**. |
 | METADATA | ----[mlu, mla, mlm, mco, mlc, mlb]---- Dados adicionais como, por exemplo, o ID das devoluções parciais ou dados informados pelo vendedor em caso de integração externa. ------------ ----[mpe]---- Dados adicionais como, por exemplo, ou dados informados pelo vendedor em caso de integração externa. ------------|
