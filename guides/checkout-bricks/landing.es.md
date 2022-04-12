@@ -37,4 +37,4 @@ available_countries: mla, mlb, mlm, mlu, mlc, mco, mpe
 > 
 > Importante
 >
-> Recuerda que para usar los bricks para construir el front de tu checkout, necesitarás el backend de Checkout Transparente. Consulta el manual de integración de [Checkout Transparente]((/developers/es/docs/checkout-api/introduction) ) para obtener instrucciones.
+> Recuerda que para usar los bricks para construir el front de tu checkout, necesitarás el backend de Checkout Transparente. Consulta el manual de integración de [Checkout Transparente](/developers/es/docs/checkout-api/introduction) para obtener instrucciones.
