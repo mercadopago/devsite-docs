@@ -7,6 +7,12 @@
 >
 > Criamos novas colunas que permitem que você identifique as carteiras digitais ou os bancos que seus clientes utilizam ao pagarem com um código QR do Mercado Pago. Atualize suas preferências de configuração [no painel](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports/settlement/settings) ou [via API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/account-money/api) para incluir as colunas nos seus relatórios.
 
+## Atenção
+
+O relatório somente irá gerar informações após configuração do relatório ter sido feita e este seja executado a primeira vez.
+Desse modo, a primeira execução terá um relatório vazio.
+Não é possível gerar o relatório com informações retroativas à data da configuração e primeira execução.
+
 ## Canais de geração
 
 Há duas formas de gerar um relatório de Dinheiro em conta:
