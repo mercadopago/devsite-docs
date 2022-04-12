@@ -237,3 +237,20 @@ request(options, callback);
 
 <hr/>
 
+### Next steps
+
+> LEFT_BUTTON_REQUIRED_EN
+>
+> Generating from Mercado Pago
+>
+> You can generate your Available Balance reports from the Mercado Pago panel in three simple steps.
+>
+> [Generating from Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/available-money/panel)
+
+> RIGHT_BUTTON_REQUIRED_EN
+>
+> Generating through API
+>
+> Create reports in scheduled and manual ways through an integration with Mercado Pago.
+>
+> [Generating through API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/available-money/api)

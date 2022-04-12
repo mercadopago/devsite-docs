@@ -68,3 +68,21 @@ A versão padrão mostrará uma visualização estendida das colunas. O relatór
 >Por exemplo, imagine que você tenha R$ 3.000 disponíveis para retirar para uma conta bancária, mas retira apenas R$ 2.000. A retirada é parcial, mas o valor total do relatório continuará a mostrar o valor do saldo inicial que estava no momento da retirada, ou seja, os R$ 3.000 disponíveis. Por outro lado, se você retirar os R$ 3.000, o valor total do relatório corresponderá ao valor dessa retirada.
 
 <hr/>
+
+### Próximos passos
+
+> LEFT_BUTTON_REQUIRED_PT
+>
+> Gere seus relatórios
+>
+> Saiba as formas de gerar um relatório e siga as etapas para configurar suas preferências.
+>
+> [Gere seus relatórios](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/available-money/generate)
+
+> RIGHT_BUTTON_RECOMMENDED_PT
+>
+> Glossário
+>
+> Saiba o que significa cada termo e os detalhes das colunas que compõem o relatório.
+>
+> [Glossário](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/available-money/glossary)

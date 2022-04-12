@@ -1,7 +1,8 @@
-# Campos do relatório
+
+# Glossário
 
 
-Sabemos que alguns termos são técnicos e você pode não estar familiarizado com todos eles. Use esta tabela para não se perder!
+Sabemos que alguns termos são técnicos e você pode não estar familiarizado com todos eles. Use este glossário para não se perder!
 
 | Nome da coluna do relatório | O que significa |
 | --- | --- |
@@ -45,8 +46,26 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 | POI_BANK_NAME | Nome da instituição bancária de onde um pagamento virtual saiu. Permite identificar a origem de uma transação quando você cobra com um código QR do Mercado Pago.|
 | DESCRIPTION | Ajuda a identificar transações ou operações registradas em um período de tempo.<br> Quando se tratar de pagamento parcelado, a linha será identificada como "INSTALLMENT".|
 | MONEY_RELEASE_DATE | Data de previsão da liberação do pagamento de cada parcela ou da parcela única.|
+| CARD_INITIAL_NUMBER | Corresponde aos primeiros dígitos do cartão de crédito ou débito utilizado para fazer a compra. |
 ----[mlb]----| INSTALLMENT_NUMBER* | Indica o número da parcela que será paga, do total de parcelas contratadas.<br> Essa informação aparece quando o cliente solicita o parcelamento da compra.<br> Por exemplo: 2 / 5 indica o pagamento da segunda parcela, de um total das 5 parcelas contratadas.<br> Quando o pagamento é liberado em uma única parcela essa coluna não estará preenchida.|------------
 ----[mlb]----| INSTALLMENT_NET_AMOUNT* | Mostra o valor líquido da parcela que será paga.<br> Essa informação aparece quando o cliente escolhe pagar o valor total da compra em parcelas mensais. |------------
 
 <hr/>
 
+### Próximos passos
+
+> LEFT_BUTTON_RECOMMENDED_PT
+>
+> Como usar o relatório
+>
+> Saiba como o relatório é composto e aprenda a analisá-lo.
+>
+> [Como usar o relatório](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/account-money/how-to-use)
+
+> RIGHT_BUTTON_REQUIRED_PT
+>
+> Gere seus relatórios
+>
+> Saiba as formas de gerar um relatório e siga as etapas para configurar suas preferências.
+>
+> [Gere seus relatórios](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/account-money/generate)

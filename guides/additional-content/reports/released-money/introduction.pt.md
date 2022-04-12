@@ -47,3 +47,20 @@ Além disso, você pode usar o relatório para saber o histórico de dinheiro --
 
 <hr/>
 
+### Próximos passos
+
+> LEFT_BUTTON_RECOMMENDED_PT
+>
+> Como usar o relatório
+>
+> Saiba como o relatório é composto e aprenda a analisá-lo para fazer sua conciliação.
+>
+> [Como usar o relatório](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/how-to-use)
+
+> RIGHT_BUTTON_REQUIRED_PT
+>
+> Gere seus relatórios
+>
+> Saiba as formas de gerar um relatório e siga as etapas para configurar suas preferências.
+>
+> [Gere seus relatórios](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/generate)

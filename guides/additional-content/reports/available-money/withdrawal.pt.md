@@ -264,3 +264,20 @@ Como resposta, você receberá um `HTTP STATUS 200 (Ok)`
 
 <hr/>
 
+### Próximos passos
+
+> LEFT_BUTTON_RECOMMENDED_PT
+>
+> Geração a partir do Mercado Pago
+>
+> Gere seus relatórios de Dinheiro Disponível a partir do painel do Mercado Pago em 3 etapas simples. 
+>
+> [Geração a partir do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/available-money/panel)
+
+> RIGHT_BUTTON_RECOMMENDED_PT
+>
+> Geração via API
+>
+> Crie relatórios de forma programada e manual por meio de uma integração com o Mercado Pago.
+>
+> [Geração via API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/available-money/api)

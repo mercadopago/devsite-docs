@@ -1,4 +1,4 @@
-# Campos do relatório
+# Glossário
 
 > WARNING
 >
@@ -7,7 +7,7 @@
 > Você pode usar o [relatório de ----[mla]----Liquidações------------ ----[mlm, mlb, mlc, mco, mlu, mpe]----Liberações------------](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/introduction) para fazer a reconciliação das transações que afetem o saldo disponível na sua conta, incluindo seus saques bancários.
 
 
-Sabemos que alguns termos são técnicos e você pode não estar familiarizado com todos eles. Use esta tabela para não se perder!
+Sabemos que alguns termos são técnicos e você pode não estar familiarizado com todos eles. Use este glossário para não se perder!
 
 | Nome da coluna do relatório | O que significa |
 | --- | --- |
@@ -47,3 +47,20 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 
 <hr/>
 
+### Próximos passos
+
+> LEFT_BUTTON_RECOMMENDED_PT
+>
+> Como usar o relatório
+>
+> Saiba como o relatório é composto e aprenda a analisá-lo.
+>
+> [Como usar o relatório](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/available-money/how-to-use)
+
+> RIGHT_BUTTON_REQUIRED_PT
+>
+> Gere seus relatórios
+>
+> Saiba as formas de gerar um relatório e siga as etapas para configurar suas preferências.
+>
+> [Gere seus relatórios](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/available-money/generate)

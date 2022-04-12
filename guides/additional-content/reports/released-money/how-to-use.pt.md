@@ -53,3 +53,21 @@ Observe como está composto o relatório de dinheiro ----[mla]---- liquidado ---
 A versão padrão mostrará uma visualização estendida das colunas. O relatório final terá a maior quantidade de detalhes possível. 
 
 <hr/>
+
+### Próximos passos
+
+> LEFT_BUTTON_REQUIRED_PT
+>
+> Gere seus relatórios
+>
+> Saiba as formas de gerar um relatório e siga as etapas para configurar suas preferências.
+>
+> [Gere seus relatórios](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/generate)
+
+> RIGHT_BUTTON_RECOMMENDED_PT
+>
+> Glossário
+>
+> Saiba o que significa cada termo e os detalhes das colunas que compõem o relatório.
+>
+> [Glossário](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/glossary)

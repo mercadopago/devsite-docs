@@ -39,3 +39,22 @@ Opcionalmente, o relatório traz colunas com o agendamento das previsões de lib
 > Nota
 >
 > Tenha em mãos o [Glossário do relatório](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/account-money/glossary) de Dinheiro em conta para consultá-lo quando precisar ou queira conferir algum termo técnico.
+
+
+### Próximos passos
+
+> LEFT_BUTTON_RECOMMENDED_PT
+>
+> Como usar o relatório
+>
+> Saiba como o relatório é composto e aprenda a analisá-lo.
+>
+> [Como usar o relatório](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/account-money/how-to-use)
+
+> RIGHT_BUTTON_REQUIRED_PT
+>
+> Gere seus relatórios
+>
+> Saiba as formas de gerar um relatório e siga as etapas para configurar suas preferências.
+>
+> [Gere seus relatórios](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/account-money/generate)

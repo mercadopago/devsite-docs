@@ -51,3 +51,20 @@ Todas as opções disponíveis na hora de baixar seu relatório.
 
 <hr/>
 
+### Próximos passos
+
+> LEFT_BUTTON_RECOMMENDED_PT
+>
+> Glossário
+>
+> Saiba o que significa cada termo e os detalhes das colunas que compõem o relatório.
+>
+> [Glossário](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/glossary)
+
+> RIGHT_BUTTON_RECOMMENDED_PT
+>
+> Como usar o relatório
+>
+> Saiba o que é o relatório de ----[mla]---- Liquidações ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------ e para que serve. 
+>
+> [Como usar o relatório](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/how-to-use)

@@ -7,11 +7,20 @@ Una vez listo y descargado el reporte, tendrás un archivo para consultar las pl
 
 Para consultar el reporte te recomendamos descargarlo en formato .csv para abrirlo en el programa que lo visualices. Configura tu programa para que soporte el formato UTF-8, así evitas problemas de lectura.
 
+----[mlm, mlb, mlc, mco, mla]----
 > WARNING
 >
-> El reporte de Dinero retirado será deshabilitado desde el 1 de marzo de 2022.
+> Importante
 >
-> Puedes usar el [reporte de ----[mla]----Liquidaciones------------ ----[mlm, mlb, mlc, mco, mlu, mpe]----Liberaciones------------](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/introduction) para conciliar las transacciones del dinero disponible en tu cuenta, incluidos tus retiros bancarios.
+> El reporte de Dinero retirado será deshabilitado desde el 1 de marzo de 2022. Usa el [reporte de Liberaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/introduction) para conciliar las transacciones del dinero disponible en tu cuenta, incluidos tus retiros bancarios.
+------------
+----[mpe, mlu]----
+> WARNING
+>
+> Importante
+>
+> A partir del 15 de mayo no podrás crear nuevos reportes. Tendrás a disposición tu historial para que puedas descargar los archivos que necesites. Para seguir llevando el control de todos los retiros y movimientos de tu dinero disponible puedes usar el [reporte de liberaciones.](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/23879?utm_source=faq_mp&utm_medium=faq&utm_campaign=bank_disable)
+------------
 
 ## ¿Qué contiene el reporte?
 
@@ -101,3 +110,21 @@ Observa cómo está compuesto el reporte de Dinero retirado en este ejemplo para
 
 ------------
 <hr/>
+
+### Próximos pasos
+
+> LEFT_BUTTON_REQUIRED_ES
+>
+> Genera tus reportes
+>
+> Conoce las formas de generar un reporte y sigue los pasos para configurar tus preferencias.
+>
+> [Genera tus reportes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/available-money/generate)
+
+> RIGHT_BUTTON_RECOMMENDED_ES
+>
+> Glosario
+>
+> Conoce qué significa cada término y el detalle de las columnas que componen al reporte.
+>
+> [Glosario](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/available-money/glossary)

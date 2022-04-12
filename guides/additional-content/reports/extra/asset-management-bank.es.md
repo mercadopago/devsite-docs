@@ -72,3 +72,22 @@ Cuando en la columna `DESCRIPTION` aparece el valor `asset_management_retention`
 > Nota
 >
 > Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/available-money/glossary) de Dinero retirado para revisarlo cuando lo necesites o quieras consultar algún término técnico.
+
+
+### Próximos pasos
+
+> LEFT_BUTTON_RECOMMENDED_ES
+>
+> Genera tu reporte de Dinero retirado
+>
+> Conoce las formas de generar un reporte y sigue los pasos para configurar tus preferencias.
+>
+> [Genera tu reporte de Dinero retirado](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/available-money/generate)
+
+> RIGHT_BUTTON_RECOMMENDED_ES
+>
+> Detalle de información sobre tu reporte
+>
+> Te explicamos toda la información necesaria sobre los datos de tus reportes y cómo leerlos.
+>
+> [Detalle de información sobre tu reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/extra/reports-information-details)

@@ -74,3 +74,22 @@ Para identificarlos en tus reportes, vas a encontrar que los datos de las column
 > Nota
 >
 > Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/account-money/glossary) de Todas las transacciones para revisarlo cuando necesites o quieras consultar algún término técnico.
+
+
+### Próximos pasos
+
+> LEFT_BUTTON_RECOMMENDED_ES
+>
+> Genera tu reporte de Todas las transacciones
+>
+> Conoce las formas de generar un reporte y sigue los pasos para configurar tus preferencias.
+>
+> [Genera tu reporte de Todas las transacciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/account-money/generate)
+
+> RIGHT_BUTTON_REQUIRED_ES
+>
+> Detalle de información sobre tu reporte
+>
+> Te explicamos toda la información necesaria sobre los datos de tus reportes y cómo leerlos.
+>
+> [Detalle de información sobre tu reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/extra/reports-information-details)

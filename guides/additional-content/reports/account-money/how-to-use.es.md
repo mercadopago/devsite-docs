@@ -40,3 +40,21 @@ Observa cómo está compuesto el reporte de Todas las transacciones en este ejem
 La versión por defecto mostrará una vista extendida de las columnas. El informe tendrá la mayor cantidad de detalle posible.
 
 <hr/>
+
+### Próximos pasos
+
+> LEFT_BUTTON_REQUIRED_ES
+>
+> Genera tus reportes
+>
+> Conoce las formas de generar un reporte y sigue los pasos para configurar tus preferencias.
+>
+> [Genera tus reportes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/account-money/generate)
+
+> RIGHT_BUTTON_RECOMMENDED_ES
+>
+> Glosario
+>
+> Conoce qué significa cada término y el detalle de las columnas que componen al reporte.
+>
+> [Glosario](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/account-money/glossary)

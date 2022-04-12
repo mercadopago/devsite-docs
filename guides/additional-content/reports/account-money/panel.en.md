@@ -19,3 +19,21 @@ Done! You will see your report *In preparation*.
 > Have the [Glossary of the Account Money report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/account-money/glossary) on hand to review it when needed or want to review a technical term.
 
 <hr/>
+
+### Next steps
+
+> LEFT_BUTTON_RECOMMENDED_EN
+>
+> Generating through API
+>
+> Create reports in scheduled and manual ways through an integration with Mercado Pago.
+>
+> [Generating through API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/account-money/api)
+
+> RIGHT_BUTTON_RECOMMENDED_EN
+>
+> Glossary
+>
+> Know what each term means and the detail of the columns that make up the report.
+>
+> [Glossary](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/account-money/glossary)

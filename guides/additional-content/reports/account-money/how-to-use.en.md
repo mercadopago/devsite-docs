@@ -40,3 +40,21 @@ Note how the Account Money report is composed in this example to identify the op
 The default version will show an extended view of the columns. The final report will have as much detail as possible.
 
 <hr/>
+
+### Next steps
+
+> LEFT_BUTTON_REQUIRED_EN
+>
+> Generate your reports
+>
+> Learn the ways to generate a report and follow the steps to set your preferences.
+>
+> [Generate your reports](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/account-money/generate)
+
+> RIGHT_BUTTON_RECOMMENDED_EN
+>
+> Glossary
+>
+> Know what each term means and the detail of the columns that make up the report.
+>
+> [Glossary](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/account-money/glossary)

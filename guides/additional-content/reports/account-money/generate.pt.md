@@ -70,3 +70,20 @@ Todas as opções disponíveis na hora de baixar seu relatório.
 
 <hr/>
 
+### Próximos passos
+
+> LEFT_BUTTON_RECOMMENDED_PT
+>
+> Geração a partir do Mercado Pago 
+>
+> Baixe seus relatórios de forma manual ou programada na sua conta do Mercado Pago.
+>
+> [Geração a partir do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/account-money/panel)
+
+> RIGHT_BUTTON_RECOMMENDED_PT
+>
+> Geração via API
+>
+> Crie relatórios de forma programada e manual através de uma integração com o Mercado Pago.
+>
+> [Geração via API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/account-money/api)

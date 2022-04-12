@@ -64,3 +64,21 @@ The default version will show an extended view of the columns. The final report 
 > For example, imagine that you have $ 3,000 available to withdraw to a bank account but only withdraw $ 2,000. The withdrawal is partial but the total value of the report will continue to show you the amount of the initial balance that was at the time of withdrawal, that is, the $ 3,000 you had available. On the other hand, if you withdraw the $ 3,000, the total value of the report will match the value of that withdrawal.
 
 <hr/>
+
+### Next steps
+
+> LEFT_BUTTON_REQUIRED_EN
+>
+> Generate your reports
+>
+> Learn the ways to generate a report and follow the steps to set your preferences.
+>
+> [Generate your reports](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/available-money/generate)
+
+> RIGHT_BUTTON_RECOMMENDED_EN
+>
+> Glossary
+>
+> Know what each term means and the detail of the columns that make up the report.
+>
+> [Glossary](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/available-money/glossary)

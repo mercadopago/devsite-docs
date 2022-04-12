@@ -27,3 +27,20 @@ Você também pode programar a geração destes relatórios [por cada retirada d
 
 <hr/>
 
+### Próximos passos
+
+> LEFT_BUTTON_RECOMMENDED_PT
+>
+> Geração via API
+>
+> Crie relatórios de forma programada ou manual através de uma integração com o Mercado Pago.
+>
+> [Geração via API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/available-money/api)
+
+> RIGHT_BUTTON_RECOMMENDED_PT
+>
+> Geração por retirada
+>
+> É possível gerar um relatório cada vez que você retirar o dinheiro disponível para uma conta bancária.
+>
+> [Geração por retirada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/available-money/withdrawal)

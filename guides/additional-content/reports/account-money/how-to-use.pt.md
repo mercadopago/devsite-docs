@@ -43,3 +43,21 @@ A versão padrão mostrará uma visualização estendida das colunas. O relatór
 <hr/>
 
 Para transações do tipo PNF - Pagamento no Fluxo, acesse [Pagamentos no fluxo no relatório de dinheiro disponível](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/extra/pnf-bank) para mais informações sobre como utilizar o relatório **Dinheiro em conta** para planejar sua agenda de recebimento das cotas a serem liberadas.
+
+### Próximos passos
+
+> LEFT_BUTTON_REQUIRED_PT
+>
+> Gere seus relatórios
+>
+> Saiba as formas de gerar um relatório e siga as etapas para configurar suas preferências.
+>
+> [Gere seus relatórios](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/account-money/generate)
+
+> RIGHT_BUTTON_RECOMMENDED_PT
+>
+> Glossário
+>
+> Saiba o que significa cada termo e os detalhes das colunas que compõem o relatório.
+>
+> [Glossário](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/account-money/glossary)

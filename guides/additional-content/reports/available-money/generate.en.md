@@ -70,3 +70,21 @@ All the options you have available when downloading your report.
 > Have the [Glossary](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/available-money/glossary) of the Available Balance report on hand to review it when needed or want to review a technical term.
 
 <hr/>
+
+### Next steps
+
+> LEFT_BUTTON_REQUIRED_EN
+>
+> Generating from Mercado Pago  
+>
+> Create your reports manually or scheduled from your Mercado Pago account.
+>
+> [Generating from Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/available-money/panel)
+
+> RIGHT_BUTTON_REQUIRED_EN
+>
+> Generating through API
+>
+> Create reports in a scheduled and manual way through an integration with Mercado Pago.
+>
+> [Generating through API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/available-money/api)

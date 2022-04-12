@@ -54,3 +54,21 @@ In addition, you can use the report to know the history of balance available bet
 > Have the [Glossary of the Available Balance report](https://www.mercadopago.com.ar/ayuda/_2118) on hand to review it when needed or want to review a technical term.
 
 <hr/>
+
+### Next steps
+
+> LEFT_BUTTON_RECOMMENDED_EN
+>
+> How to use the report
+>
+> Learn the composition of the report and how to read it to make your reconciliation.
+>
+> [How to use the report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/available-money/how-to-use)
+
+> RIGHT_BUTTON_REQUIRED_EN
+>
+> Generate your reports
+>
+> Learn the ways to generate a report and follow the steps to set your preferences.
+>
+> [Generate your reports](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/available-money/generate)

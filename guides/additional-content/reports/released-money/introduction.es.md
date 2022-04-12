@@ -59,3 +59,20 @@ Además, puedes usar el reporte para conocer el historial de dinero ----[mla]---
 ------------
 <hr/>
 
+### Próximos pasos
+
+> LEFT_BUTTON_RECOMMENDED_ES
+>
+> Cómo usar el reporte
+>
+> Conoce la composición del reporte y aprende a leerlo para hacer tu conciliación.
+>
+> [Cómo usar el reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/how-to-use)
+
+> RIGHT_BUTTON_REQUIRED_ES
+>
+> Genera tus reportes
+>
+> Conoce las formas de generar un reporte y sigue los pasos para configurar tus preferencias.
+>
+> [Genera tus reportes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/generate)

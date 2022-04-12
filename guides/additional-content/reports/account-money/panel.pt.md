@@ -21,3 +21,20 @@ Pronto! Você verá seu relatório *Em preparação*.
 
 <hr/>
 
+### Próximos passos
+
+> LEFT_BUTTON_RECOMMENDED_PT
+>
+> Geração via API
+>
+> Crie relatórios de forma programada e manual através de uma integração com o Mercado Pago.
+>
+> [Geração via API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/account-money/api)
+
+> RIGHT_BUTTON_RECOMMENDED_PT
+>
+> Glossário
+>
+> Saiba o que significa cada termo e os detalhes das colunas que compõem o relatório.
+>
+> [Glossário](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/account-money/glossary)

@@ -4,12 +4,6 @@
 Gere o relatório de ----[mla]----Liquidações------------ ----[mlm, mlb, mlc, mco, mlu, mpe]----Liberações------------ manualmente quantas vezes quiser ou programe-o de acordo com a frequência desejada por meio de nossa API.
 
 
-> WARNING
->
-> A partir do dia 1º de março de 2022, o relatório Dinheiro disponível será desabilitado
->
-> Use o [relatório de ----[mla]----Liquidações------------ ----[mlm, mlb, mlc, mco, mlu, mpe]----Liberações------------](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/introduction) para fazer a reconciliação das transações que afetem o saldo disponível na sua conta, incluindo seus saques bancários.
-
 ## Configure seus relatórios
 
 > NOTE
@@ -1119,3 +1113,21 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 > Para consultar a versão anterior, por favor, acesse a [seção Geração por API antiga](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/v1/api).
 
 <hr/>
+
+### Próximos passos
+
+> LEFT_BUTTON_RECOMMENDED_PT
+>
+> Geração a partir do Mercado Pago
+>
+> Gere seus relatórios de Dinheiro Disponível a partir do painel do Mercado Pago em 3 etapas simples.
+>
+> [Geração a partir do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/panel)
+
+> RIGHT_BUTTON_RECOMMENDED_PT
+>
+> Geração por API
+>
+> Gere um relatório a cada vez que retirar dinheiro para uma conta bancária.
+>
+> [Geração por API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/rreports/released-money/api)

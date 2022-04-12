@@ -37,3 +37,21 @@ Además, puedes usar el reporte para conocer el historial de tu dinero entre dos
 >
 > Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/account-money/glossary) de Todas las transacciones para revisarlo cuando necesites o quieras consultar algún término técnico.
 
+
+### Próximos pasos
+
+> LEFT_BUTTON_RECOMMENDED_ES
+>
+> Cómo usar el reporte
+>
+> Conoce la composición del reporte y aprende a leerlo.
+>
+> [Cómo usar el reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/account-money/how-to-use)
+
+> RIGHT_BUTTON_REQUIRED_ES
+>
+> Genera tus reportes
+>
+> Elige la forma de generar tu reporte y sigue los pasos para configurar tus preferencias.
+>
+> [Genera tus reportes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/account-money/generate)

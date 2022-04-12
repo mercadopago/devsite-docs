@@ -1,7 +1,8 @@
-# Report fields
+
+# Glossary
 
 
-We know, some terms are technical and you may not be familiar with all of them. Use this table to not get lost!
+We know, some terms are technical and you may not be familiar with all of them. Use this glossary to not get lost!
 
 | Name on the report column | What it means |
 | --- | --- |
@@ -44,5 +45,24 @@ We know, some terms are technical and you may not be familiar with all of them. 
 | POI_ID | Point ID if payment is made through a physical retailer. |
 | POI_WALLET_NAME | Name of the digital wallet that a virtual payment comes from. Allows you to identify the origin of a transaction when you charge with a Mercado Pago QR Code.|
 | POI_BANK_NAME | Name of the bank that a virtual payment comes from. Allows you to identify the origin of a transaction when you charge with a Mercado Pago QR Code.|
+| CARD_INITIAL_NUMBER | It corresponds to the first digits of the credit or debit card that you used to make the purchase. |
 
 <hr/>
+
+### Next steps
+
+> LEFT_BUTTON_RECOMMENDED_EN
+>
+> How to use the report
+>
+> Learn the composition of the report and how to read it.
+>
+> [How to use the report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/account-money/how-to-use)
+
+> RIGHT_BUTTON_REQUIRED_EN
+>
+> Generate your reports
+>
+> Learn the ways to generate a report and follow the steps to set your preferences.
+>
+> [Generate your reports](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/account-money/generate)

@@ -42,7 +42,7 @@ Considera estas opciones a la hora de descargar tu reporte:
 | Formatos de descarga | .csv, .xlsx <br/><br/>Tip: descarga el reporte en .csv para importar los datos y usarlos en otras aplicaciones. Descárgalo en .xlsx para leer la información en las tablas de la hoja de cálculo. |
 | Archivo | Los reportes generados quedan guardados en tu cuenta de Mercado Pago. |
 
-----[mlm, mlb, mlc, mco, mlu, mla]----
+----[mlm, mlb, mlc, mco, mla]----
 > INFO
 >
 > Nota
@@ -50,7 +50,7 @@ Considera estas opciones a la hora de descargar tu reporte:
 > Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/glossary) de ------------ ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu]---- Liberaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mla]----para revisarlo cuando lo necesites o quieras consultar algún término técnico.
 ------------
 
-----[mpe]----
+----[mpe, mlu]----
 > Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/glossary) de Liberaciones para revisarlo cuando lo necesites o quieras consultar algún término técnico.
 
 > INFO
@@ -61,3 +61,21 @@ Considera estas opciones a la hora de descargar tu reporte:
 ------------
 
 <hr/>
+
+### Próximos pasos
+
+> LEFT_BUTTON_RECOMMENDED_ES
+>
+> Glosario
+>
+> Conoce qué significa cada término y el detalle de las columnas que componen al reporte.
+>
+> [Glosario](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/glossary)
+
+> RIGHT_BUTTON_RECOMMENDED_ES
+>
+> Cómo usar el reporte
+>
+> Qué es y para qué sirve el reporte de ----[mla]---- Liquidaciones.------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberaciones.------------ Descubre ejemplos y casos de uso.
+>
+> [Cómo usar el reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/how-to-use)

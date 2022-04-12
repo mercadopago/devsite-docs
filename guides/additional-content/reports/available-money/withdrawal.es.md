@@ -4,11 +4,11 @@
 
 Puedes crear un reporte de Dinero retirado de forma automática cada vez que hagas un retiro de dinero de tu cuenta de Mercado Pago a una cuenta bancaria. Programa esta opción desde tu panel de Mercado Pago o vía API.
 
-> WARNING
+>WARNING
 >
-> El reporte de Dinero retirado será deshabilitado a partir del 1 de marzo de 2022
+> Importante
 >
-> Puedes usar el [reporte de ----[mla]----Liquidaciones------------ ----[mlm, mlb, mlc, mco, mlu, mpe]----Liberaciones------------](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/introduction) para conciliar las transacciones del dinero disponible en tu cuenta, incluidos tus retiros bancarios.
+>A partir del 15 de mayo no podrás crear nuevos reportes. Tendrás a disposición tu historial para que puedas descargar los archivos que necesites. Para seguir llevando el control de todos los retiros y movimientos de tu dinero disponible puedes usar el [reporte de ----[mla]----Liquidaciones------------ ----[mlm, mlb, mlc, mco, mlu, mpe]----Liberaciones------------](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/introduction)
 
 ## Generar desde el panel de Mercado Pago
 
@@ -265,3 +265,20 @@ Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
 
 <hr/>
 
+### Próximos pasos
+
+> LEFT_BUTTON_RECOMMENDED_ES
+>
+> Generación desde Mercado Pago
+>
+> Puedes generar tus reportes de Dinero retirado desde el panel de Mercado Pago en tres simples pasos.
+>
+> [Generación desde Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/available-money/panel)
+
+> RIGHT_BUTTON_RECOMMENDED_ES
+>
+> Generación por API
+>
+> Crea reportes de forma programada y manual por medio de una integración con Mercado Pago.
+>
+> [Generación por API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/available-money/api)

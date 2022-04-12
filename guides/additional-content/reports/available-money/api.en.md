@@ -1113,3 +1113,20 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 
 <hr/>
 
+### Next steps
+
+> LEFT_BUTTON_REQUIRED_EN
+>
+> Generating from Mercado Pago
+>
+> You can generate your Available Balance reports from the Mercado Pago panel in three simple steps.
+>
+> [Generating from Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/available-money/panel)
+
+> RIGHT_BUTTON_REQUIRED_EN
+>
+> Generating per withdrawal
+>
+> You can generate a report every time you withdraw available money to a bank account.
+>
+> [Generating per withdrawal](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/available-money/withdrawal)

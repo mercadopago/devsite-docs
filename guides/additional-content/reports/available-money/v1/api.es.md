@@ -993,3 +993,21 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 > Para ver la versión más reciente, visita la [sección de Generación por API nueva](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/available-money/api).
 
 <hr/>
+
+### Próximos pasos
+
+> LEFT_BUTTON_RECOMMENDED_ES
+>
+> Generación desde Mercado Pago
+>
+> Puedes generar tus reportes de Dinero retirado desde el panel de Mercado Pago en tres simples pasos.
+>
+> [Generación desde Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/available-money/panel)
+
+> RIGHT_BUTTON_RECOMMENDED_ES
+>
+> Generación por retiro
+>
+> Puedes generar un reporte cada vez que retires dinero a una cuenta bancaria.
+>
+> [Generación por retiro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/available-money/withdrawal)
