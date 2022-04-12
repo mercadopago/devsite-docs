@@ -30,11 +30,3 @@ available_countries: mla, mlb, mlm, mlu, mlc, mco, mpe
 | **Personal Data Brick** ![soon](checkout-bricks/soon-button_EN.png) | **Feedback Brick** <br> ![soon](checkout-bricks/soon-button_EN.png) | **Summary Brick** <br> ![soon](checkout-bricks/soon-button_EN.png) | **Wallet Brick** <br> ![soon](checkout-bricks/soon-button_EN.png) |
 
 <br>
-
---- mini_landing_separator ---
-
-> WARNING
-> 
-> Important
->
-> Remember that to use the bricks to build your checkout front, you will need the Checkout API backend. See the [Checkout API](/developers/en/docs/checkout-api/introduction) integration manual for instructions.
