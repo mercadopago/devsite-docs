@@ -3,6 +3,6 @@
 | Brick | Card Payment Form |
 |--- |--- |
 | Momento de customização | Ao renderizar brick |
-| Propriedade | hideFormTitle |
+| Propriedade | customization.hideFormTitle |
 | Tipo | Boolean |
 | Observações | Quando **true**, oculta a linha de título e as bandeiras aceitas. |
