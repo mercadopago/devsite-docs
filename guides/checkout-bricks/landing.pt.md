@@ -26,7 +26,7 @@ available_countries: mla, mlb, mlm, mlu, mlc, mco, mpe
 
 | | | | |
 |---|---|---|---|
-| Card Payment Brick ![new](checkout-bricks/new-button__PT.png) | **Local Payment Brick** ![soon](checkout-bricks/soon-button__PT.png) | **Payment Options Brick** ![soon](checkout-bricks/soon-button__PT.png) | **Shipping Brick** ![soon](checkout-bricks/soon-button__PT.png) |
-| **Personal Data Brick** ![soon](checkout-bricks/soon-button__PT.png) | **Feedback Brick** <br> ![soon](checkout-bricks/soon-button__PT.png) | **Summary Brick** <br> ![soon](checkout-bricks/soon-button__PT.png) | **Wallet Brick** ![soon](checkout-bricks/soon-button__PT.png) |
+| [Card Payment Brick](developers/pt/docs/checkout-bricks/cardpaymentbrick) ![new](checkout-bricks/new-button__PT.png) | [**Regional Payment Brick**](/developers/pt/docs/checkout-bricks/regional-payment-brick) ![soon](checkout-bricks/soon-button__PT.png) | [**Payment Options Brick**](/developers/pt/docs/checkout-bricks/payment-options-brick) ![soon](checkout-bricks/soon-button__PT.png) | [**Shipping Brick**](/developers/pt/docs/checkout-bricks/shipping-brick) ![soon](checkout-bricks/soon-button__PT.png) |
+| [**Personal Data Brick**](/developers/pt/docs/checkout-bricks/personal-data-brick) ![soon](checkout-bricks/soon-button__PT.png) | **Feedback Brick** <br> ![soon](checkout-bricks/soon-button__PT.png) | [**Summary Brick**](/developers/pt/docs/checkout-bricks/summary-brick) <br> ![soon](checkout-bricks/soon-button__PT.png) | [**Wallet Brick**](/developers/pt/docs/checkout-bricks/wallet-brick) ![soon](checkout-bricks/soon-button__PT.png) |
 
 <br>
