@@ -5,4 +5,4 @@
 | Momento da customização  | Ao renderizar Brick  |
 | Propriedade  | initialization.payer.email  |
 | Tipo  | string  |
-| Observações  | Quando é enviado um email válido, o campo de email é ocultado.  |
+| Observações  | Quando um e-mail válido é enviado, o campo de email é ocultado.  |
