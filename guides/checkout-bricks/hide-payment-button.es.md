@@ -9,7 +9,6 @@
 
 [[[
 ```html
-
 <button type="button" onclick="createPayment();">Custom Payment Button</button>
 <script>
    function createPayment(){
