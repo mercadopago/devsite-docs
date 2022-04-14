@@ -21,17 +21,15 @@ const settings = {
       // callback llamado cuando Brick esté listo
     },
     onSubmit: (data) => {
-      // callback llamado cuando el usuario haga clic en el botón enviar
-      // los datos
+      // callback llamado cuando el usuario haga clic en el botón enviar los datos
     },
     onError: (error: string) => { 
-      // callback llamado para todos los casos de error de Brick (WIP)
+      // callback llamado para todos los casos de error de Brick
     },
   },
 };
 
-const cardPaymentBrick = bricks
-  .create('cardPayment', settings)
-  .render('cardPaymentBrick_container');
+const brick = await bricks.create('cardPayment', settings);
+const cardPaymentBrick = await brick.render('cardPaymentBrick_container');
 ```
 ]]]

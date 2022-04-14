@@ -14,13 +14,13 @@ const settings = {
     },
     callbacks: {
         onSubmit: (data) => {
-            //do something
+            // callback called when the user clicks on the submit data button
         },
         onReady: (error) => {
-            //do something
+            // callback called when the brick is ready
         },
         onError: (error) => {
-            //do something
+            // callback called to all error cases related to the Brick
         },
     },
     locale: language,
