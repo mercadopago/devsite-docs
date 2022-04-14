@@ -28,7 +28,7 @@ To install the frontend SDK, you must include MercadoPago.js in the HTML of your
 
 [[[
 ```javascript
-<script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
+<script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 ]]]
 
@@ -36,7 +36,7 @@ Then, you must add the Public Key of the account you are integrating so that it 
 
 [[[
 ```javascript
-window.Mercadopago.setPublishableKey("YOUR_PUBLIC_KEY");
+const mp = new MercadoPago('YOUR_PUBLIC_KEY');
 ```
 ]]]
 
