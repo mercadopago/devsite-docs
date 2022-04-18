@@ -57,3 +57,4 @@ After completing the fields, execute the request.
 > See how to set the amount charged to the subscriber if the subscription starts on a different day than the billing date set by the seller.
 >
 > [Valor proporcional (Pro rata)](/developers/en/docs/subscriptions/integration-customization/payment-methods/proportional-amount)
+------------

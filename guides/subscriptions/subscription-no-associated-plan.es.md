@@ -57,3 +57,4 @@ Después de completar los campos, ejecute la solicitud.
 > Vea cómo configurar el monto que se le cobrará al suscriptor si la suscripción comienza en un día diferente a la fecha de facturación establecida por el vendedor.
 >
 > [Valor proporcional (Pro rata)](/developers/es/docs/subscriptions/integration-customization/payment-methods/proportional-amount)
+------------
