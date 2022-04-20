@@ -14,7 +14,7 @@ available_countries: mla, mlb, mlm, mlu, mco, mlc, mpe
 
 ---
 bullet_section_with_media: 
- - title: Vantagens
+ - title: Ventajas
  - type: normal
  - message: Además de contar con los principales medios de pago del país, Checkout Pro cuenta con una experiencia de compra adaptada y accesible desde cualquier dispositivo.
  - image: /cow/cho-pro-landing__pt.png
