@@ -18,7 +18,7 @@ Al aceptar la orden, se cambiará el estado y en la respuesta se indicará el es
 >
 > Conoce cómo obtener datos de órdenes con Mercado Pago Delivery.
 >
-> [Obtener datos de la orden](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/mp-delivery/get-order-data)
+> [Obtener datos de la orden](/developers/es/docs/mp-delivery/order-management/get-order-data)
 
 > NEXT_STEP_CARD_ES
 >
@@ -26,4 +26,4 @@ Al aceptar la orden, se cambiará el estado y en la respuesta se indicará el es
 >
 > Aprende a imprimir comprobantes de órdenes con Mercado Pago Delivery.
 >
-> [Imprimir recibo de orden](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/mp-delivery/print-order-receipt)
+> [Imprimir recibo de orden](/developers/es/docs/mp-delivery/order-management/print-order-receipt)
