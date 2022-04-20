@@ -8,7 +8,7 @@ content_section_with_media:
 
 >>>> Disponibilidad por país <<<<
 ---
-available_countries: mla, mlm, mco, mpe, mlu, mlm, mlc
+available_countries: mla, mlb, mlm, mco, mpe, mlu, mlc
 ---
 
 ---
