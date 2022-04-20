@@ -45,10 +45,3 @@ Para realizar reembolsos totales o parciales de un pago y verificar los reembols
 - [Inserir reembolsos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/chargebacks/_payments_id_refunds/post)
 - [Obtener lista de reembolsos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/chargebacks/_payments_id_refunds/get)
 
-> PREV_STEP_CARD_PT
->
-> Gestión de contracargos
->
-> Encuentra toda la información sobre los contracargos, cómo prevenirlos y gestionarlos por API.
->
-> [Gestión de contracargos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/sales-processing/chargebacks)

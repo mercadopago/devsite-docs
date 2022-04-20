@@ -44,11 +44,3 @@ To make full or partial refunds of a payment and check the refunds made in your 
 
 - [Post refunds](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/chargebacks/_payments_id_refunds/post)
 - [Check refunds list](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/chargebacks/_payments_id_refunds/get)
-
-> PREV_STEP_CARD_PT
->
-> Chargeback management
->
-> Encuentra toda la información sobre los contracargos, cómo prevenirlos y gestionarlos por API.
->
-> [Chargeback management](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/sales-processing/chargebacks)
