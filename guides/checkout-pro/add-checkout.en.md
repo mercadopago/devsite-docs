@@ -59,7 +59,7 @@ In the example above, a payment button will be rendered and will be responsible 
 >
 > Check how to create information sets about a product and/or service.
 >
-> [Create preferences](/developers/es/docs/checkout-pro/requirements)
+> [Create preferences](/developers/es/docs/checkout-pro/create-preference)
 
 > NEXT_STEP_CARD_EN
 >
