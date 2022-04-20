@@ -169,19 +169,3 @@ Eventualmente, a contestação poderá ter dois tipos de resoluções possíveis
 | **false** | Indica que a decisão foi contra o vendedor e o dinheiro será descontado.
 
 Após a resolução, será enviada uma nova notificação IPN para você conferir o caso.
-
-> PREV_STEP_CARD_PT
->
-> Gestão de pagamentos recebidos
->
-> Confira mais informações sobre pagamentos gerados usando nossas APIs.
->
-> [Gestão de pagamentos recebidos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/sales-processing/chargebacks)
-
-> NEXT_STEP_CARD_PT
->
-> Devoluções e cancelamentos
->
-> Consulte mais informações para efetuar o reembolso total e parcial, e cancelar uma compra em sua loja.
->
-> [Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/sales-processing/chargebacks)
