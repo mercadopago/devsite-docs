@@ -32,7 +32,7 @@ const renderCardPaymentBrick = async (bricksBuilder) => {
                 resolve();
             })
             .catch((error) => {
-                // tratar el error al intentar crear el pago
+                // tratar respuesta de error al intentar crear el pago
                 reject();
             })
           });

@@ -1,14 +1,10 @@
 ## Instantiate brick
 
-With the container created, the next step is to instantiate the brick builder, which will allow generating the brick. To create the brick instance, insert the code below into the project's command sequence tag.
+With the container created and our SDK JS installed, the next step is to instantiate the brick builder, which will allow generating the brick. To create the brick instance, insert the code below after the previous step.
 
-
-[[[
 ```javascript
-const bricks = mp.bricks();
+const bricksBuilder = mp.bricks();
 ```
-]]]
-
 
 > WARNING
 >
