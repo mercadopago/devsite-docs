@@ -18,7 +18,7 @@ Ao aceitar o pedido, o status será alterado e no response será indicado o novo
 >
 > Saiba como obter dados de pedidos com o Mercado Pago Delivery.
 >
-> [Obter dados do pedido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/mp-delivery/get-order-data)
+> [Obter dados do pedido](/developers/pt/docs/mp-delivery/order-management/get-order-data)
 
 > NEXT_STEP_CARD_PT
 >
@@ -26,4 +26,4 @@ Ao aceitar o pedido, o status será alterado e no response será indicado o novo
 >
 > Saiba como imprimir o comprovante dos pedidos com o Mercado Pago Delivery.
 >
-> [Imprimir comprovante do pedido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/mp-delivery/print-order-receipt)
+> [Imprimir comprovante do pedido](/developers/pt/docs/mp-delivery/order-management/print-order-receipt)

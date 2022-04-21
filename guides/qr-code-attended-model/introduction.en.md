@@ -21,4 +21,4 @@ The main characteristics are:
 >
 > Learn to integrate this model step by step.
 >
-> [How to Integrate attended model](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/qr-code/qr-attended/integrations)
+> [How to Integrate attended model](/developers/en/docs/qr-code/qr-attended-model/integrations)

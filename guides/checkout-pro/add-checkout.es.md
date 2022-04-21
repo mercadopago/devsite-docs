@@ -59,7 +59,7 @@ En el ejemplo anterior, se mostrará un botón de pago y será responsable de ab
 >
 > Vea cómo crear conjuntos de información sobre un producto y/o servicio.
 >
-> [Crear preferencias](/developers/es/docs/checkout-pro/requirements)
+> [Crear preferencias](/developers/es/docs/checkout-pro/create-preference)
 
 > NEXT_STEP_CARD_ES
 >

@@ -44,11 +44,3 @@ Para realizar reembolsos integrais ou parciais de um pagamento e consultar os re
 
 - [Inserir reembolsos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/chargebacks/_payments_id_refunds/post)
 - [Obter lista de reembolsos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/chargebacks/_payments_id_refunds/get)
-
-> PREV_STEP_CARD_PT
->
-> Gerenciamento de operações contestadas
->
-> Encontre toda a informação sobre contestação de pagamentos, como preveni-las e gerenciá-las pela API.
->
-> [Gerenciamento de operações contestadas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/sales-processing/chargebacks)

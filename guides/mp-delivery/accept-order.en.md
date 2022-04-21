@@ -18,7 +18,7 @@ When accepting the order, the status will be changed and the new order status wi
 >
 > Learn how to get order data with Mercado Pago Delivery.
 >
-> [Get order data](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/mp-delivery/get-order-data)
+> [Get order data](/developers/en/docs/mp-delivery/order-management/get-order-data)
 
 > NEXT_STEP_CARD_EN
 >
@@ -26,4 +26,4 @@ When accepting the order, the status will be changed and the new order status wi
 >
 > Learn how to print proof of orders with Mercado Pago Delivery.
 >
-> [Print order receipt](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/mp-delivery/print-order-receipt)
+> [Print order receipt](/developers/en/docs/mp-delivery/order-management/print-order-receipt)
