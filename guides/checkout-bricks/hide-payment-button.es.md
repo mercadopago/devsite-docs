@@ -3,7 +3,7 @@
 | Brick  | Card Payment Form  |
 | --- | --- |
 | Momento de personalización  |  Al renderizar el brick  |
-| Propiedad  | customization.hidePaymentButton  |
+| Propiedad  | settings.customization.hidePaymentButton  |
 | Tipo  | Boolean  |
 | Observaciones  | Cuando true, el botón de envío del formulario no se muestra y pasa a ser necesario usar la función getCardFormData para obtener los datos del formulario (ver el ejemplo a continuación).  |
 

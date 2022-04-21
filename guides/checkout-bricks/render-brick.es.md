@@ -48,6 +48,7 @@ const renderCardPaymentBrick = async (bricksBuilder) => {
 };
 
 renderCardPaymentBrick(bricksBuilder);
+
 ```
 
 > WARNING
