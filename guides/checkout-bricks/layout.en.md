@@ -2,14 +2,13 @@
 
 The Card Payment Brick layout is based on the best UX practices, so that it is possible to offer the best shopping experience without having to worry about design details. The layout offers the elements detailed below.
 
+![cardform](checkout-bricks/card-form__es.png)
+
 > WARNING
 >
 > Attention
 >
 > The bricks were created not only to meet the technical needs of implementation and security, but also to provide the best experience for the buyer. Customizing a brick can drastically change the buyer's experience. Our recommendation is that you always use the brick with as little additional customization as possible to always ensure the best experience.
-
-![cardform](checkout-bricks/card-form__es.png)
-
 
 | Element  | Characteristics  | Comments  |
 | --- | --- | --- |
