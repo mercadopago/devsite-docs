@@ -6,3 +6,15 @@
 | Propriedade  | customization.paymentMethods.minInstallments && customization.paymentMethods.maxInstallments  |
 | Tipo  | number  |
 | Observações  | Quando é passado um valor para min ou maxInstallments, o número de parcelas será restringido pelos valores passados.  |
+
+```javascript
+const settings = {
+    ...,
+    customization: {
+        paymentMethods: {
+            minInstallments: number,
+            maxInstallments: number,
+        },
+    },
+}
+```

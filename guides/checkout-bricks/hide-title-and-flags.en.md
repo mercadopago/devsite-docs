@@ -7,3 +7,11 @@
 | Type  | Boolean  |
 | Comments  | When **true**, hides the title line and accepted flags.  |
 
+```javascript
+const settings = {
+   ...,
+   customization: {
+       hideFormTitle: true
+   }
+}
+```

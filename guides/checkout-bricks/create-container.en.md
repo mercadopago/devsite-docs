@@ -9,9 +9,6 @@ You will need to create a container to define where the brick will be placed on 
 >
 > The value shown in the `id` property below is just an example and can be altered, however, it should always match the `id` indicated in the render.
 
-
-[[[
 ```html
   <div id="cardPaymentBrick_container"></div>
 ```
-]]]
