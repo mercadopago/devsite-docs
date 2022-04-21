@@ -55,4 +55,4 @@ renderCardPaymentBrick(bricksBuilder);
 > 
 > Importante
 >
-> Ao finalizar a renderização do brick, é necessário enviar o pagamento ao Mercado Pago para garantir que seu backend possa receber a informação do Card Payment Form. Para isso, veja a seção [Envie o pagamento ao Mercado Pago](/developers/pt/docs/checkout-api/payment-methods/receiving-payment-by-card#bookmark_envie_o_pagamento_ao_mercado_pago) da documentação Checkout Transparente para instruções.
+> É necessário enviar as informações coletadas pelo Card Payment Brick ao Mercado Pago de seu backend para concluir o pagamento com segurança. Para isso, veja a seção [Envie o pagamento ao Mercado Pago](/developers/pt/docs/checkout-api/payment-methods/receiving-payment-by-card#bookmark_envie_o_pagamento_ao_mercado_pago) da documentação Checkout Transparente para instruções.

@@ -55,4 +55,4 @@ renderCardPaymentBrick(bricksBuilder);
 >
 > Important
 >
-> When you finish rendering the brick, it is necessary to send the payment to Mercado Pago to ensure that your backend can receive the information from the Card Payment Form. To do this, see the [Payment submission to Mercado Pago](/developers/en/docs/checkout-api/payment-methods/receiving-payment-by-card#bookmark_payment_submission_to_mercado_pago) section of the Checkout API documentation for instructions.
+> It is necessary to send the information collected by the Card Payment Brick to Mercado Pago from your backend and complete the payment securely. To do this, see the [Payment submission to Mercado Pago](/developers/en/docs/checkout-api/payment-methods/receiving-payment-by-card#bookmark_payment_submission_to_mercado_pago) section of the Checkout API documentation for instructions.
