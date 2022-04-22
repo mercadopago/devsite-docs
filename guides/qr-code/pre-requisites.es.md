@@ -7,7 +7,7 @@ Ten en cuenta estos aspectos antes de empezar:
 
 Para poder comenzar la integración, es necesario **contar con una cuenta de Mercado Pago o Mercado Libre**. 
 
-Puedes [Ingresar](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code/pre-requisites) a una cuenta que ya exista o [Crear una cuenta nueva](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
+Puedes [Ingresar](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/in-person-payments/qr-code/pre-requisites) a una cuenta que ya exista o [Crear una cuenta nueva](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
 
 ## 2. Crea una aplicación
 
@@ -80,7 +80,7 @@ Una vez creados los usuarios de pruebas, ya puedes comenzar con la integración 
 Si eres un integrador que trabajará con varios comercios para que operen con Mercado Pago, te recomendamos realizar el proceso 
 OAuth - autenticación entre cuentas, este proceso consiste en que el cliente permita que sus datos sean compartidos con un sistema de terceros de forma segura. 
  
-El access token no se puede compartir de ninguna otra forma que no sea mediante OAuth. [Mas informaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/credentials)
+El access token no se puede compartir de ninguna otra forma que no sea mediante OAuth. [Mas informaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/resources/credentials)
 
 ## 5. Cómo identificar tu integración (Sponsor ID)
 
@@ -99,4 +99,4 @@ Paso a paso:
 >
 > Para realizar la integración, primero debes configurar tus sucursales y cajas.
 >
-> [Sucursales y Cajas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/qr-code/stores-pos/introduction)
+> [Sucursales y Cajas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/qr-code/stores-pos/introduction)
