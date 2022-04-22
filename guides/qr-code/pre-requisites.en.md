@@ -75,7 +75,7 @@ Once the test users are created, you can start with the integration and create t
 
 For you integrator, who will work with several stores that use Mercado Pago digital wallet, we advise you to do the OAuth process - authentication between accounts, this process consists of the customer allowing their data to be shared with a third party system in a secure way.
 
-The access token cannot be shared in any way other than OAuth. [More information](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/en/docs/resources/credentials)
+The access token cannot be shared in any way other than OAuth. [More information](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/en/docs/qr-code/additional-content/credentials)
 
 ## 5. Cómo identificar tu integración
 
