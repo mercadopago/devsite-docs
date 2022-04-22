@@ -9,7 +9,7 @@ Para recibir pagos con QR en tu negocio **puedes imprimirlo y pegarlo en un luga
 > 
 > Nota
 > 
-> Si tu modelo no requiere de una integración con un sistema de punto de venta,  puedes consultar toda la información disponible en [generar QR desde el panel de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code/integrations-front). 
+> Si tu modelo no requiere de una integración con un sistema de punto de venta,  puedes consultar toda la información disponible en [generar QR desde el panel de Mercado Pago](/developers/es/guides/in-person-payments/qr-code/integrations-front). 
 
 
 > PREV_STEP_CARD_ES
@@ -18,7 +18,7 @@ Para recibir pagos con QR en tu negocio **puedes imprimirlo y pegarlo en un luga
 >
 > Conoce qué es Código QR.
 >
-> [Introducción](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/qr-code/introduction)
+> [Introducción](/developers/es/guides/qr-code/introduction)
 
 
 > NEXT_STEP_CARD_ES
@@ -27,4 +27,4 @@ Para recibir pagos con QR en tu negocio **puedes imprimirlo y pegarlo en un luga
 >
 > Te contamos los beneficios de Código QR.
 >
-> [Cuáles son los beneficios](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es /guides/qr-code/introduction/benefits)
+> [Cuáles son los beneficios](/developers/es/guides/qr-code/introduction/benefits)
