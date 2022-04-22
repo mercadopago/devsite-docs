@@ -18,7 +18,7 @@ Para recibir pagos con QR en tu negocio **puedes imprimirlo y pegarlo en un luga
 >
 > Conoce qué es Código QR.
 >
-> [Introducción](/developers/es/guides/qr-code/introduction)
+> [Introducción](/developers/es/docs/qr-code/introduction)
 
 
 > NEXT_STEP_CARD_ES
@@ -27,4 +27,4 @@ Para recibir pagos con QR en tu negocio **puedes imprimirlo y pegarlo en un luga
 >
 > Te contamos los beneficios de Código QR.
 >
-> [Cuáles son los beneficios](/developers/es/guides/qr-code/introduction/benefits)
+> [Cuáles son los beneficios](/developers/es/docs/qr-code/introduction/benefits)
