@@ -9,7 +9,7 @@ Para recibir pagos con QR en tu negocio **puedes imprimirlo y pegarlo en un luga
 > 
 > Nota
 > 
-> Si tu modelo no requiere de una integración con un sistema de punto de venta,  puedes consultar toda la información disponible en [generar QR desde el panel de Mercado Pago](/developers/es/guides/in-person-payments/qr-code/integrations-front). 
+> Si tu modelo no requiere de una integración con un sistema de punto de venta,  puedes consultar toda la información disponible en [generar QR desde el panel de Mercado Pago](/developers/es/docs/in-person-payments/qr-code/integrations-front). 
 
 
 > PREV_STEP_CARD_ES
