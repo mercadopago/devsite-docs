@@ -47,6 +47,7 @@ Você pode achar todos os casos na [seção de Testes](https://www.mercadopago[F
 Veja mais detalhes neste [vídeo tutorial](https://youtu.be/izpBBw3Ivi4?list=PLCazXKuqZp3g4WfhNlhsB3FL9-1z7gUny).
 
 ---
+
 > NEXT_STEP_CARD_ES
 >
 > Teste sua integração

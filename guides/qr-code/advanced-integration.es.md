@@ -49,7 +49,7 @@ Puedes encontrar todos los casos en la [sección de Pruebas](https://www.mercado
 Vea más detalles en este [video tutorial](https://youtu.be/oQqJkqyjegk?list=PLCazXKuqZp3hGVY3bBhEO0ItFhIic5UpK).
 
 ---
-NEXT_STEP_CARD_ES
+> NEXT_STEP_CARD_ES
 >
 > Prueba tu integración
 >

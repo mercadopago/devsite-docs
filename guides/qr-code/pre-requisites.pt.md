@@ -6,7 +6,7 @@ Observe estes pontos antes de começar:
 
 Para poder começar a integração, é necessário **contar com uma conta de Mercado Pago ou Mercado Livre**. 
 
-Você pode [Entrar](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/qr-code/pre-requisites) em uma conta existente ou [Criar uma nova conta](https://www.mercadopago[FAKER][URL][DOMAIN]).
+Você pode [Entrar](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/in-person-payments/qr-code/pre-requisites) em uma conta existente ou [Criar uma nova conta](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
 
 ## 2. Crie uma aplicação
 
@@ -26,7 +26,7 @@ Caso não tenha nenhuma aplicação cadastrada, [veja o tutorial](https://youtu.
 > 
 > Nota
 >
-> Caso sua integração seja um PDV integrado a vários lojistas/Vendedores, veja o tópico 4 e 5. Fique atento à segurança de sua integração e faça a implantação [Oauth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/security/oauth/introdution).
+> Caso sua integração seja um PDV integrado a vários lojistas/Vendedores, veja o tópico 4 e 5. Fique atento à segurança de sua integração e faça a implantação [Oauth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/security/oauth/introdution).
 
 ## 3. Gerar usuários de teste
 
@@ -77,7 +77,7 @@ Uma vez que os usuários de teste são criados, você pode começar com a integr
 
 Para você integrador que irá trabalhar com diversas lojas que utilizam carteira digital Mercado Pago, orientamos que faça o processo de OAuth - autenticação entre contas, esse processo consiste no processo do vendedor permitir que seus dados sejam compartilhados com um sistema terceiro de forma segura.
 
-O access token não poderá ser compartilhado de outra maneira que não seja o OAuth. [Clique aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/credentials) para mais informações.
+O access token não poderá ser compartilhado de outra maneira que não seja o OAuth. [Clique aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/qr-code/additional-content/credentials) para mais informações.
 
 ## 5. Como Identificar sua integração (Sponsor ID)
 
@@ -95,4 +95,4 @@ Passo a Passo:
 >
 > Para realizar a integração, primeiramente deverá configurar suas lojas e caixas.
 >
-> [Lojas e Caixas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/qr-code/stores-pos/introduction)
+> [Lojas e Caixas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/qr-code/stores-pos/introduction)

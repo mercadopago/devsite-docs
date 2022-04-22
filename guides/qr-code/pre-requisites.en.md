@@ -6,7 +6,7 @@ Keep these aspects in mind before you start:
 
 To start the integration, you must **have a Mercado Pago or Mercado Libre account**. 
 
-You can [Sign in](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/qr-code/pre-requisites) with an existing account or [Create a new account](https://www.mercadopago[FAKER][URL][DOMAIN]).
+You can [Sign in](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/in-person-payments/qr-code/pre-requisites) with an existing account or [Create a new account](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
 
 ## 2. Create an application
 
@@ -75,7 +75,7 @@ Once the test users are created, you can start with the integration and create t
 
 For you integrator, who will work with several stores that use Mercado Pago digital wallet, we advise you to do the OAuth process - authentication between accounts, this process consists of the customer allowing their data to be shared with a third party system in a secure way.
 
-The access token cannot be shared in any way other than OAuth. [More information](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials)
+The access token cannot be shared in any way other than OAuth. [More information](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/en/docs/qr-code/additional-content/credentials)
 
 ## 5. Cómo identificar tu integración
 
@@ -93,4 +93,4 @@ Step by step:
 >
 > To build the integration, you must set up your stores and POS first.
 >
-> [Stores and POS](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/qr-code/stores-pos/introduction)
+> [Stores and POS](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/qr-code/stores-pos/introduction)
