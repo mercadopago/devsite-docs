@@ -18,5 +18,5 @@ There are **two types** of notifications available for configuration which ,once
 
 | Type | Description |
 | --- | --- |
-| **Webhooks** | It uses HTTP REST and instantly notifies updates. To learn how to configure webhook notifications [click here](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/webhooks/webhooks). |
+| **Webhooks** | It uses HTTP REST and instantly notifies updates. To learn how to configure webhook notifications [click here](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/notifications/webhooks/webhooks). |
 | **IPN** | The notification may take a few moments to send. To learn how to configure IPN notifications [click here](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn/introduction). |

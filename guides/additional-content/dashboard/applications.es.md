@@ -26,7 +26,7 @@ Después de crear tu aplicación, puedes hacer clic en el botón "Editar" para v
   - Nombre de la aplicación (límite de 50 caracteres).
   - Descripción de la aplicación (límite de 150 caracteres).
   - Permisos de la aplicación. Este campo muestra las opciones de acceso para tu aplicación, las cuales son: lectura (read), acceso sin conexión (offline access) y escritura (write). De forma predeterminada, tu aplicación se crea con todos los permisos habilitados. Pero puedes deshabilitar un permiso haciendo clic en la casilla de verificación del que deseas cambiar.
-  - Redirigir URL. Este campo define la URL en la que deseas recibir el código de autorización cuando tu integración se configura como Marketplace o se realiza a través de OAuth. Lee [OAuth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/security/oauth/introduction) para más detalles.
+  - Redirigir URL. Este campo define la URL en la que deseas recibir el código de autorización cuando tu integración se configura como Marketplace o se realiza a través de OAuth. Lee [OAuth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/security/oauth/introduction) para más detalles.
   - Bloqueo de aplicaciones. Si lo hay, indicará el motivo por el cual la aplicación está bloqueada para su uso. Haz clic en **Detalles del bloqueo** para verificar [la solución](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/support/23066) para el bloqueo informado.
   <br/>
 * **Producto a integrar**. Esta sección define el producto que se integrará en tu aplicación. El campo "Productos disponibles" presenta la lista de productos disponibles para integrar. De forma predeterminada, el valor de este campo se completa con el valor ingresado al crear la aplicación, pero puedes cambiar el producto elegido sin tener que reconfigurar la integración. Este campo sirve como campo informativo para el producto al que se refiere la aplicación.
@@ -46,7 +46,7 @@ Al hacer clic en la tarjeta de una aplicación, tendrás acceso a los detalles d
  
 * **Nombre e ID de la aplicación**. En esta área puede seleccionar la aplicación que desees en función de su ID. Simplemente haz clic en el número que se muestra y selecciona la identificación deseada.
 * **Mis credenciales**. Contraseñas únicas con las que identificamos una integración en tu cuenta. Sirven para capturar pagos en tiendas online y otras aplicaciones. Lee [Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/credentials) para obtener más información.
-* **Notificaciones de webhook**. Notificaciones que puedes recibir a través de llamadas HTTP POST siempre que haya un evento relacionado con una transacción en tu aplicación. Lee [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/webhooks/webhooks) para obtener más información.
+* **Notificaciones de webhook**. Notificaciones que puedes recibir a través de llamadas HTTP POST siempre que haya un evento relacionado con una transacción en tu aplicación. Lee [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/notifications/webhooks/webhooks) para obtener más información.
  
 ### ID de aplicación
 Los ID se utilizan para identificar tus aplicaciones y se crean automáticamente cada vez que se crea una nueva aplicación.
@@ -67,4 +67,4 @@ De forma predeterminada, las credenciales de producción estarán deshabilitadas
 También existe la posibilidad de compartir las credenciales con otra cuenta de Mercado Pago, solo haz clic en **compartir mis credenciales** y completa el correo electrónico de la cuenta que recibirá la información.
  
 ### Notificaciones de webhook
-Configura las URL de producción y prueba desde las que se recibirán las notificaciones de webhook y selecciona los eventos que serán responsables de generar estas notificaciones. Lee [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/webhooks/webhooks) para más información.
+Configura las URL de producción y prueba desde las que se recibirán las notificaciones de webhook y selecciona los eventos que serán responsables de generar estas notificaciones. Lee [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/notifications/webhooks/webhooks) para más información.
