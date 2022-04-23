@@ -78,7 +78,7 @@ Solicite a seus compradores a carteira de identidade no momento de fazer o pagam
 
 ### Apresentação da contestação
 
-Vamos avisar via [notificações IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/notifications/ipn/introduction) toda vez que você receber uma contestação. Para [começar a receber notificações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications/ipn/introduction), você deve preencher seus dados e escolher a opção Chargebacks.
+Vamos avisar via [notificações IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/notifications/ipn/introduction) toda vez que você receber uma contestação. Para [começar a receber notificações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications/ipn), você deve preencher seus dados e escolher a opção Chargebacks.
 
 ### Consulte sobre a contestação
 
