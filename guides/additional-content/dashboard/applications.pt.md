@@ -14,7 +14,7 @@ Para criar uma aplicação, siga os passos abaixo.
 4. Aceite nossos Termos e Condições.
 5. Crie a aplicação clicando no botão "Criar aplicação".
  
-A cada aplicação criada, um novo card contendo o nome, descrição e ID da aplicação é automaticamente criado na página inicial do seu [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/dashboard/introduction) de desenvolvedor.
+A cada aplicação criada, um novo card contendo o nome, descrição e ID da aplicação é automaticamente criado na página inicial do seu [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel) de desenvolvedor.
 
 ## Gerenciar aplicação
  
