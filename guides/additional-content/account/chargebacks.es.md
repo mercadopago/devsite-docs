@@ -78,7 +78,7 @@ Pide el documento de tus compradores a la hora de hacer el pago y comprueba que 
 
 ### Aparición del contracargo
 
-Te avisaremos vía [notificaciones IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn/introduction) cada vez que recibas un contracargo. Para [comenzar a recibir notificaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications/ipn/introduction), debes completar tus datos y elegir la opción Chargebacks.
+Te avisaremos vía [notificaciones IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/notifications/ipn/introduction) cada vez que recibas un contracargo. Para [comenzar a recibir notificaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications/ipn/introduction), debes completar tus datos y elegir la opción Chargebacks.
 
 ### Consulta del contracargo
 

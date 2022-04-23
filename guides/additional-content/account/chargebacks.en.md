@@ -78,7 +78,7 @@ Ask your buyers for an ID when they make a payment and check that the data and s
 
 ### A chargeback emerges
 
-We will advise you via [IPN notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn/introduction) every time you receive a chargeback. To [start receiving notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications/ipn/introduction), fill out your data and choose Chargebacks.
+We will advise you via [IPN notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/notifications/ipn/introduction) every time you receive a chargeback. To [start receiving notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications/ipn/introduction), fill out your data and choose Chargebacks.
 
 ### Chargeback query
 
