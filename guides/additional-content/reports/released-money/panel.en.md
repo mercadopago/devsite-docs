@@ -16,7 +16,7 @@ Done! You will see your report *In preparation*.
 >
 > Note
 >
-> Have the [Glossary of Releases report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/glossary) on hand to review it when needed or want to review a technical term.
+> Have the [Glossary of Releases report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/released-money/glossary) on hand to review it when needed or want to review a technical term.
 
 <hr/>
 
@@ -28,7 +28,7 @@ Done! You will see your report *In preparation*.
 >
 > Learn the ways to generate a report and follow the steps to set your preferences.
 >
-> [Generate your report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/generate)
+> [Generate your report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/released-money/generate)
 
 > RIGHT_BUTTON_RECOMMENDED_EN
 >
@@ -36,4 +36,4 @@ Done! You will see your report *In preparation*.
 >
 > Know what each term means and the detail of the columns that make up the report.
 >
-> [Glossary](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/glossary)
+> [Glossary](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/released-money/glossary)

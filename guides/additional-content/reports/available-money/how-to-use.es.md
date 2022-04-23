@@ -12,7 +12,7 @@ Para consultar el reporte te recomendamos descargarlo en formato .csv para abrir
 >
 > Importante
 >
-> El reporte de Dinero retirado será deshabilitado desde el 1 de marzo de 2022. Usa el [reporte de Liberaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/introduction) para conciliar las transacciones del dinero disponible en tu cuenta, incluidos tus retiros bancarios.
+> El reporte de Dinero retirado será deshabilitado desde el 1 de marzo de 2022. Usa el [reporte de Liberaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/introduction) para conciliar las transacciones del dinero disponible en tu cuenta, incluidos tus retiros bancarios.
 ------------
 ----[mpe, mlu]----
 > WARNING
@@ -53,11 +53,11 @@ Si esto pasa, el reporte sigue siendo válido. El dinero vuelve a tu cuenta y la
 >
 > Nota
 >
-> Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/available-money/glossary) de Dinero retirado para revisarlo cuando lo necesites o quieras consultar algún término técnico.
+> Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/available-money/glossary) de Dinero retirado para revisarlo cuando lo necesites o quieras consultar algún término técnico.
 ------------
 
 ----[mpe]----
-> Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/available-money/glossary) de Dinero retirado para revisarlo cuando lo necesites o quieras consultar algún término técnico.
+> Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/available-money/glossary) de Dinero retirado para revisarlo cuando lo necesites o quieras consultar algún término técnico.
 ------------
 ## Ejemplo de un reporte
 
@@ -91,7 +91,7 @@ Cuando retires todo tu dinero disponible, el total del reporte va a coincidir co
 Los reportes que generes a partir de  ------------ ----[mpe]----enero de 2022 ------------  ----[mlu]---- marzo de 2022 ------------ ----[mpe, mlu]---- tienen las siguientes características:
 1. Los movimientos se presentan en el orden en que ocurrieron, con lo cual podrás identificarlos con mayor facilidad y controlar mejor tus ventas. 
 2. Cuando se presenta alguna reclamación o contracargo por algún problema con el servicio o producto que vendiste, tu dinero es retenido hasta que la mediación se resuelva. Esta información se visualiza en tu reporte y la reconoces porque su descripción lleva el prefijo reserve_.
-3. Los movimientos relacionados con los retiros sobre tu dinero disponible se muestran como payout y todas las mediaciones que surgen cuando se inicia o resuelve un reclamo se presentan como dispute. Para conocer la descripción de otros movimientos y términos, puedes usar [este glosario](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/glossary). 
+3. Los movimientos relacionados con los retiros sobre tu dinero disponible se muestran como payout y todas las mediaciones que surgen cuando se inicia o resuelve un reclamo se presentan como dispute. Para conocer la descripción de otros movimientos y términos, puedes usar [este glosario](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/glossary). 
 
 ## ¿Qué contiene el reporte?
 
@@ -119,7 +119,7 @@ Observa cómo está compuesto el reporte de Dinero retirado en este ejemplo para
 >
 > Conoce las formas de generar un reporte y sigue los pasos para configurar tus preferencias.
 >
-> [Genera tus reportes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/available-money/generate)
+> [Genera tus reportes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/available-money/generate)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
@@ -127,4 +127,4 @@ Observa cómo está compuesto el reporte de Dinero retirado en este ejemplo para
 >
 > Conoce qué significa cada término y el detalle de las columnas que componen al reporte.
 >
-> [Glosario](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/available-money/glossary)
+> [Glosario](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/available-money/glossary)

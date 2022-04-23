@@ -8,7 +8,7 @@ The Available Balance report is a **downloadable report that allows you to know 
 >
 > The Available Balance report will be disabled from March 1st, 2022.
 >
-> You can use the [Releases report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/introduction) to reconcile the transactions that affect the balance available in your account, including your bank withdrawals.
+> You can use the [Releases report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/released-money/introduction) to reconcile the transactions that affect the balance available in your account, including your bank withdrawals.
 
 ## How do I download the report?
 
@@ -63,7 +63,7 @@ In addition, you can use the report to know the history of balance available bet
 >
 > Learn the composition of the report and how to read it to make your reconciliation.
 >
-> [How to use the report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/available-money/how-to-use)
+> [How to use the report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/available-money/how-to-use)
 
 > RIGHT_BUTTON_REQUIRED_EN
 >
@@ -71,4 +71,4 @@ In addition, you can use the report to know the history of balance available bet
 >
 > Learn the ways to generate a report and follow the steps to set your preferences.
 >
-> [Generate your reports](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/available-money/generate)
+> [Generate your reports](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/available-money/generate)

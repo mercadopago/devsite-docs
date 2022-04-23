@@ -43,7 +43,7 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 >
 > Algunas definiciones ya no están disponibles o han cambiado
 >
-> Usa este glosario para conocer los términos de los reportes que generes con fechas anteriores a enero de 2022. Para los reportes que abarquen fechas posteriores [consulta este Glosario.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/glossary)
+> Usa este glosario para conocer los términos de los reportes que generes con fechas anteriores a enero de 2022. Para los reportes que abarquen fechas posteriores [consulta este Glosario.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/glossary)
 ------------
 <hr/>
 
@@ -55,7 +55,7 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 >
 > Qué es y para qué sirve el reporte de ----[mla]---- liquidaciones.------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- liberaciones.------------ Descubre ejemplos y casos de uso.
 >
-> [Cómo usar el reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/how-to-use)
+> [Cómo usar el reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/how-to-use)
 
 > RIGHT_BUTTON
 >
@@ -63,4 +63,4 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 >
 > Conoce las formas de generar un reporte y sigue los pasos para configurar tus preferencias.
 >
-> [Genera tus reportes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/generate)
+> [Genera tus reportes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/generate)

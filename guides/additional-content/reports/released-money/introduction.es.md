@@ -42,7 +42,7 @@ Genera el reporte de ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc
 Además, puedes usar el reporte para conocer el historial de dinero ----[mla]---- liquidado ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- liberado ------------ entre dos fechas, el detalle de los eventos que componen una transferencia bancaria, el detalle de disputas, reembolsos, envíos, contracargos, impuestos y otras operaciones. También verás el detalle de las cuotas liquidadas y las cuotas que aún faltan saldar.
 
 ----[mpe, mlu]----
-> Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/glossary) de  Liberaciones para revisarlo cuando lo necesites o quieras consultar algún término técnico.
+> Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/glossary) de  Liberaciones para revisarlo cuando lo necesites o quieras consultar algún término técnico.
 
 > INFO
 >
@@ -55,7 +55,7 @@ Además, puedes usar el reporte para conocer el historial de dinero ----[mla]---
 >
 > Nota
 >
-> Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/glossary) de ------------ ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu]---- Liberaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mla]---- para revisarlo cuando lo necesites o quieras consultar algún término técnico.
+> Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/glossary) de ------------ ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu]---- Liberaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mla]---- para revisarlo cuando lo necesites o quieras consultar algún término técnico.
 ------------
 <hr/>
 
@@ -67,7 +67,7 @@ Además, puedes usar el reporte para conocer el historial de dinero ----[mla]---
 >
 > Conoce la composición del reporte y aprende a leerlo para hacer tu conciliación.
 >
-> [Cómo usar el reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/how-to-use)
+> [Cómo usar el reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/how-to-use)
 
 > RIGHT_BUTTON_REQUIRED_ES
 >
@@ -75,4 +75,4 @@ Además, puedes usar el reporte para conocer el historial de dinero ----[mla]---
 >
 > Conoce las formas de generar un reporte y sigue los pasos para configurar tus preferencias.
 >
-> [Genera tus reportes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/generate)
+> [Genera tus reportes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/generate)

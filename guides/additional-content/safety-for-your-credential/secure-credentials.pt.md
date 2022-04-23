@@ -2,7 +2,7 @@
 
 Ao integrar as soluções do Mercado Pago, você lidará com dados confidenciais que deve proteger de possíveis perdas ou vulnerabilidades. Esses dados podem ser suas credenciais, as de suas integrações e as de seus clientes.
 
-Credenciais são senhas exclusivas com as quais identificamos uma integração em sua conta. Elas são usadas ​​para capturar pagamentos em lojas online e outras aplicações de forma segura. Para obter informações detalhadas sobre as credenciais, acesse [Credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/credentials/credentials).
+Credenciais são senhas exclusivas com as quais identificamos uma integração em sua conta. Elas são usadas ​​para capturar pagamentos em lojas online e outras aplicações de forma segura. Para obter informações detalhadas sobre as credenciais, acesse [Credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/credentials).
 
 Mostraremos como você pode otimizar a segurança de suas integrações de forma simples e rápida.
 
@@ -24,7 +24,7 @@ https://api.mercadolibre.com/users/me
 
 ## Use a Public Key no front-end
 
-A Public Key é uma chave pública da aplicação que normalmente é utilizada no frontend e permite, por exemplo, conhecer os métodos de pagamento e encriptar os dados do cartão. Lembre-se de usar apenas esse tipo de chave no lado público de sua integração. Para saber mais, acesse [Credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/credentials/credentials).
+A Public Key é uma chave pública da aplicação que normalmente é utilizada no frontend e permite, por exemplo, conhecer os métodos de pagamento e encriptar os dados do cartão. Lembre-se de usar apenas esse tipo de chave no lado público de sua integração. Para saber mais, acesse [Credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/credentials).
 
 # Renove suas credenciais periodicamente
 

@@ -2,7 +2,7 @@
 
 Al integrar las soluciones de Mercado Pago, manejarás datos sensibles que deberás proteger de posibles pérdidas o vulnerabilidades. Estos datos pueden ser tus credenciales, las de tus integraciones y las de tus clientes. 
 
-Las credenciales son contraseñas únicas con las que identificamos una integración en tu cuenta. Sirven para capturar pagos en tiendas online y otras aplicaciones de forma segura. Para conocer información en detalle de las credenciales, ve a [Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/credentials/credentials).
+Las credenciales son contraseñas únicas con las que identificamos una integración en tu cuenta. Sirven para capturar pagos en tiendas online y otras aplicaciones de forma segura. Para conocer información en detalle de las credenciales, ve a [Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/credentials).
 
 Te mostraremos cómo puedes optimizar la seguridad de tus integraciones de manera simple y rápida.
 
@@ -24,7 +24,7 @@ https://api.mercadolibre.com/users/me
 > Mantén siempre tus credenciales ocultas. Nunca expongas tu Access Token en algún parámetro o del lado público de tu integración.
 ## Usa la Public Key en el front-end
 
-Public Key es una llave pública de la aplicación que normalmente se utiliza en el frontend y permite, por ejemplo, conocer los métodos de pago y cifrar los datos de la tarjeta. Recuerda utilizar únicamente este tipo de llave del lado público end de tu integración. Para conocer más, ve a [Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/credentials/credentials).
+Public Key es una llave pública de la aplicación que normalmente se utiliza en el frontend y permite, por ejemplo, conocer los métodos de pago y cifrar los datos de la tarjeta. Recuerda utilizar únicamente este tipo de llave del lado público end de tu integración. Para conocer más, ve a [Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/credentials).
 
 ## Renueva tus credeciales periódicamente
 

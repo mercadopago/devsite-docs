@@ -19,12 +19,12 @@ Ao estar disponível, ele ficará na sua bandeja de relatórios e você poderá 
 
 ### Valores do relatório
 
-Dependendo das [tarifas e prazos](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/release-options) que você escolher, o dinheiro que você ganhar pela venda será liberado um tempo depois que o pagamento for creditado. Por isso, o valor total exibido no relatório nem sempre vai coincidir com o seu saldo total ou com o valor total que aparece nos relatórios de faturamento.
+Dependendo das [tarifas e prazos](/settings/release-options) que você escolher, o dinheiro que você ganhar pela venda será liberado um tempo depois que o pagamento for creditado. Por isso, o valor total exibido no relatório nem sempre vai coincidir com o seu saldo total ou com o valor total que aparece nos relatórios de faturamento.
 
 Os prazos de liberação têm relação com os tempos dos bancos ou com os fluxos de intermediação quando as transações são feitas no Mercado Livre. Outras transações que podem afetar a liberação do seu dinheiro são as Contestações e Reclamações que você possa receber na venda.
 
 
-> Para saber a data exata que o dinheiro de uma transação vai estar disponível, revise os [detalhes dos seus pagamentos creditados](https://www.mercadopago[FAKER][URL][DOMAIN]/activities/balance).
+> Para saber a data exata que o dinheiro de uma transação vai estar disponível, revise os [detalhes dos seus pagamentos creditados](/activities/balance).
 
 ## Para que usar o relatório
 
@@ -43,7 +43,7 @@ Além disso, você pode usar o relatório para saber o histórico de dinheiro --
 >
 > Nota
 >
-> Tenha em mãos o [Glossário do relatório](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/glossary) de dinheiro ----[mla]---- Liquidações ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------ para revisá-lo quando precisar ou caso queira consultar algum termo técnico.
+> Tenha em mãos o [Glossário do relatório](/developers/pt/guides/additional-content/reports/released-money/glossary) de dinheiro ----[mla]---- Liquidações ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------ para revisá-lo quando precisar ou caso queira consultar algum termo técnico.
 
 <hr/>
 
@@ -55,7 +55,7 @@ Além disso, você pode usar o relatório para saber o histórico de dinheiro --
 >
 > Saiba como o relatório é composto e aprenda a analisá-lo para fazer sua conciliação.
 >
-> [Como usar o relatório](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/how-to-use)
+> [Como usar o relatório](/developers/pt/guides/additional-content/reports/released-money/how-to-use)
 
 > RIGHT_BUTTON_REQUIRED_PT
 >
@@ -63,4 +63,4 @@ Além disso, você pode usar o relatório para saber o histórico de dinheiro --
 >
 > Saiba as formas de gerar um relatório e siga as etapas para configurar suas preferências.
 >
-> [Gere seus relatórios](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/generate)
+> [Gere seus relatórios](/developers/pt/guides/additional-content/reports/released-money/generate)
