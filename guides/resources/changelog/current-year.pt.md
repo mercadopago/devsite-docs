@@ -26,6 +26,72 @@ Lançamos a nova versão 5.7.5 para WooCommerce.
 >
 > Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v5.7.5).
 
+### 30 de março
+
+> CHANGELOG
+>
+> Nova versão SDK .Net
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK .NET
+Lançamos a nova versão 1.11.1 do SDK .Net.
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub os detalhes das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-dotnet/releases/tag/1.11.1).
+
+### 29 de março
+
+> CHANGELOG
+>
+> Nova versão SDK Java
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK JAVA
+Lançamos a nova versão 1.11.3 do SDK Java.
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub os detalhes das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-java/releases/tag/1.11.3).
+
+> CHANGELOG
+>
+> Nova versão SDK Java
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK JAVA
+Lançamos a nova versão 2.0.1 do SDK Java.
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub os detalhes das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-java/releases/tag/2.0.1).
+
+### 24 de março
+
+> CHANGELOG
+>
+> Nova versão SDK .Net
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK .NET
+Lançamos a nova versão 2.2.0 do SDK .Net.
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub os detalhes das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-dotnet/releases/tag/2.2.0).
+
 ### 21 de março
 
 > CHANGELOG
@@ -63,6 +129,23 @@ Lançamos a nova versão 3.15.0 para Magento 2.
 > GitHub
 >
 > Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-magento2/releases/tag/v3.15.0).
+
+### 17 de março
+
+> CHANGELOG
+>
+> Nova versão SDK Java
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK JAVA
+Lançamos a nova versão 2.0.0 do SDK Java.
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub os detalhes das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-java/releases/tag/2.0.0).
 
 ## Fevereiro 2022
 
@@ -236,6 +319,23 @@ Lançamos a nova versão 3.14.2 para Magento 2.
 > GitHub
 >
 > Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-magento2/releases/tag/v3.14.2).
+
+### 26 de janeiro
+
+> CHANGELOG
+>
+> Nova versão SDK NodeJS
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK NODEJS
+Lançamos a nova versão 1.5.12 do SDK NodeJS.
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub os detalhes das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-nodejs/releases/tag/1.5.12).
 
 ### 24 de janeiro
 

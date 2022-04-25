@@ -4,8 +4,10 @@ Verifique quais campos você pode enviar de acordo com o seu setor para melhorar
 
 > WARNING 
 > 
+> Atenção
+>
 > Uso de exemplos
-> 
+>
 > Essas informações funcionam apenas para a API de Preferências.
 
 ## Apparel

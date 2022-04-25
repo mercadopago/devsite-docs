@@ -200,6 +200,7 @@ curl -X POST \
 
 2. Implemente o receptor de notificações usando o seguinte código como exemplo:
 
+[[[
 ```php
 <?php
    MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
@@ -239,6 +240,52 @@ curl -X POST \
   
 ?>
 ```
+```node
+var mercadopago = require("mercadopago");
+
+mercadopago.configurations.setAccessToken("YOUR_ACCESS_TOKEN");
+
+router.post("/notifications", async (req, res) => {
+    const { id, topic } = req.query;
+
+    var merchant_order = null;
+    var payment = null;
+
+    switch () {
+        case "payment":
+            payment = await mercadopago.payment.findById(id);
+            // Get the payment and the corresponding merchant_order reported by the IPN.
+            merchant_order = await mercadopago.merchant_orders.findById(payment.body.order.id);
+            break;
+        case "merchant_order":
+            merchant_order = await mercadopago.merchant_orders.findById(id);
+            break;
+    }
+
+    var paid_amount = 0;
+    merchant_order.body.payments.forEach(payment => {
+        if (payment.status === "approved") {
+            paid_amount += payment.transaction_amount;
+        }
+    })
+
+    // If the payment's transaction amount is equal (or bigger) than the merchant_order's amount you can release your items
+    if (paid_amount >= merchant_order.body.total_amount) {
+        if (merchant_order.body.shipments.length > 0) { // The merchant_order has shipments
+            if (merchant_order.body.shipments[0].status === "ready_to_ship") {
+                console.log("Totally paid. Print the label and release your item.")
+            }
+        } else {
+            console.log("Totally paid. Release your item.")
+        }
+    } else { // El merchant_order no tiene ningún envío
+        console.log("Not paid yet. Do not release your item.")
+    }
+
+    res.status(200).json(["HTTP/1.1 200 OK"]);
+})
+```
+]]]
 
 3. Feitas as configurações, o Mercado Pago notificará essa URL com dois parâmetros a cada vez que um recurso for criado, ou atualizado:
 

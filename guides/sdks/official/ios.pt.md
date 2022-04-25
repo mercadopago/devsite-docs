@@ -2,6 +2,13 @@
   indexable: false
 ---
 # Mercado Pago iOS (Swift 3.1) SDK
+
+> NOTE
+>
+> Importante
+>
+> Esta documentação é apenas para uso interno da equipe porque está obsoleta ou é um produto exclusivo. Para mais detalhes, fale com a equipe de vendas ou de integrações.
+
 The Mercado Pago iOS SDK make it easy to collect your users' credit card details inside your iOS app. By creating tokens, Mercado Pago handles the bulk of PCI compliance by preventing sensitive card data from hitting your server.
 
 ![Screenshot iOS](images/sdk/ios.png)

@@ -1,17 +1,18 @@
 # Glossário
 
+----[mlm, mlb, mlc, mco, mla]----
 > WARNING
 >
-> A partir do dia 1º de março de 2022, o relatório Dinheiro disponível será desabilitado
+> Importante
 >
-> Você pode usar o [relatório de ----[mla]----Liquidações------------ ----[mlm, mlb, mlc, mco, mlu, mpe]----Liberações------------](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/introduction) para fazer a reconciliação das transações que afetem o saldo disponível na sua conta, incluindo seus saques bancários.
-
+> O relatório Dinheiro disponível será desativado nos próximos meses. Para continuar acompanhando todos os saques, transferências e movimentações do seu saldo disponível, por favor, use o relatório [Liberações.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/introduction)
+------------
 
 Sabemos que alguns termos são técnicos e você pode não estar familiarizado com todos eles. Use este glossário para não se perder!
 
 | Nome da coluna do relatório | O que significa |
 | --- | --- |
-| DATE| Data de liberação, bloqueio ou desbloqueio, conforme se aplicar. |
+| DATE| Data de liberação, bloqueio ou desbloqueio, conforme apropriado. |
 | SOURCE_ID | ID da operação no Mercado Pago (por exemplo, o pagamento de uma venda).|
 | EXTERNAL_REFERENCE | <br/> ID que ajuda a identificar a origem da operação. Por exemplo, pode ser a venda através do ID do pedido ou do envio (se for uma compra de carrinho) ou o próprio ID fornecido pelo vendedor no caso de uma integração externa. <br/><br/> Lembre-se de que é possível que este campo esteja vazio para alguns casos, como pagamento de boletos ou envio de dinheiro, entre outros. <br/> <br/> |
 | RECORD_TYPE | <br/> `initial_available_balance` → Dinheiro disponível do período anterior.<br/><br/> `block` → Dinheiro bloqueado por uma reclamação ou contestação.<br/><br/> `unblock` → Dinheiro liberado porque foi resolvida uma reclamação ou estorno.<br/><br/> `release` → Dinheiro de uma cobrança que foi liberado.<br/><br/> `fullblock` → Diheiro bloqueado por restrição.<br/><br/> `subtotal` → Soma dos valores de cada record type.<br/><br/> `total` → Valor líquido total. <br/> <br/> |

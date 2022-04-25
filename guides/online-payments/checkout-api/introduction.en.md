@@ -1,6 +1,5 @@
 # Checkout API
 
-
 ## Create your own payment processor
 
 Use our APIs to create your own payment experience on your website or mobile application. From basic to advanced configurations, you control the whole experience.

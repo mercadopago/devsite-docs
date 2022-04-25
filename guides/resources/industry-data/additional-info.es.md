@@ -4,6 +4,8 @@ Revisa que campos puedes enviar según tu industria para mejorar tu aprobación.
 
 > WARNING 
 > 
+> Atención
+>
 > Uso de ejemplos
 > 
 > Esta información solo funciona para la API de Preferencias.

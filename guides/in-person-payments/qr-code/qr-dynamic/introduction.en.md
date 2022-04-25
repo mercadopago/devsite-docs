@@ -1,5 +1,11 @@
 # QR dynamic model
 
+> NOTE
+>
+> Important
+>
+> This documentation is for internal team use only,  as it has been deprecated or is an exclusive product. For further details, talk to the sales or integrations team.
+
 ## What is the dynamic QR model?
 
 It allows to have the amount collectible already included in the QR code. Each QR represents a single order and amount. **Its main characteristic is the one-time payment**, that is, once the payment is made, the QR cannot be reused.

@@ -3,6 +3,12 @@
 ---
 # MercadoPago - Android SDK
 
+> NOTE
+>
+> Importante
+>
+> Esta documentação é apenas para uso interno da equipe porque está obsoleta ou é um produto exclusivo. Para mais detalhes, fale com a equipe de vendas ou de integrações.
+
 The Mercado Pago Android SDK makes it easy to collect your user's credit card details inside your android app. By creating tokens, Mercado Pago handles the bulk of PCI compliance by preventing sensitive card data from hitting your server.
 
 ![Screenshot MercadoPago](images/sdk/android.png)

@@ -3,6 +3,11 @@
 ---
 # SDK Mercado Pago para Python
 
+> NOTE
+>
+> Importante
+>
+> Esta documentación es solo para uso por parte del equipo interno, ya que fue deprecada o es un producto exclusivo. Para más detalles, hablar con el equipo comercial o de integraciones.
 
 * [Instalación](#bookmark_instalación)
 * [Checkout Pro](#bookmark_checkout_pro)

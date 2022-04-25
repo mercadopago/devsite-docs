@@ -4,6 +4,12 @@
 
 # Magento 1
 
+> NOTE
+>
+> Importante
+>
+> Esta documentación es solo para uso por parte del equipo interno, ya que fue deprecada o es un producto exclusivo. Para más detalles, hablar con el equipo comercial o de integraciones.
+
 Mercado Pago soporta la integración de checkouts de pago en plataformas de ecommerce "open source". Los usuarios vendedores pueden elegir distintas plataformas de ecommerce compatibles con Mercado Pago. Mercado Pago no recomienda ninguna plataforma en particular.  
 
 Si actualmente estás trabajando con Magento 1 cómo tu plataforma de comercio electrónico, te recordamos que Adobe [anunció](https://magento.com/blog/magento-news/support-magento-1-software-ends-june-30-2020) que a partir del 6 de agosto de 2020, Magento 1 y todas las extensiones de Magento 1 ya no estarán disponibles en el repositorio de Magento.

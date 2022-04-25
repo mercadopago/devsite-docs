@@ -1,5 +1,11 @@
 # PCI DSS
 
+> NOTE
+>
+> Importante
+>
+> Esta documentación es solo para uso por parte del equipo interno, ya que fue deprecada o es un producto exclusivo. Para más detalles, hablar con el equipo comercial o de integraciones.
+
 En Mercado Pago aseguramos la confidencialidad, disponibilidad e integridad de todos nuestros procesos siguiendo las mejores prácticas del mercado para que puedas utilizar todos nuestros productos de forma segura. 
 
 Además, para que Mercado Pago pueda operar con tarjetas de crédito y débito debemos cumplir con uno de los estándares de seguridad más exigentes de la industria de pagos: Payment Card Industry Data Security Standard.

@@ -688,6 +688,10 @@ paths:
                             type: string
                             example: 00020126600014br.gov.bcb.pix0117test@testuser.com0217dados adicionais520400005303986540510.005802BR5913Maria Silva6008Brasilia62070503***6304E2CA
                             description: Alphanumeric code to copy and paste, used to finalize the payment
+                          ticket_url:
+                            type: string
+                            example: https://www.mercadopago.com.br/payments/123456789/ticket?caller_id=123456&hash=123e4567-e89b-12d3-a456-426655440000
+                            description: A link to the rendered pix, with QR codes and instructions to pay
                         description: Information on the pending payment that was generated
                     description: Information from the application that processes the payment and receives regulatory data
         '400':
@@ -1629,6 +1633,10 @@ paths:
                             type: string
                             example: 00020126600014br.gov.bcb.pix0117test@testuser.com0217dados adicionais520400005303986540510.005802BR5913Maria Silva6008Brasilia62070503***6304E2CA
                             description: Alphanumeric code to copy and paste, used to finalize the payment
+                          ticket_url:
+                            type: string
+                            example: https://www.mercadopago.com.br/payments/123456789/ticket?caller_id=123456&hash=123e4567-e89b-12d3-a456-426655440000
+                            description: A link to the rendered pix, with QR codes and instructions to pay
                         description: Information on the pending payment that was generated
                     description: Information from the application that processes the payment and receives regulatory data
         '400':

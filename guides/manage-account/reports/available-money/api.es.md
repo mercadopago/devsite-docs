@@ -8,14 +8,14 @@ Genera el informe de dinero liberado manualmente tantas veces como desees o prog
 >
 > Importante
 >
-> El reporte de Dinero retirado será deshabilitado desde el 1 de marzo de 2022. Usa el [Reporte de liberaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/introduction) para conciliar las transacciones del dinero disponible en tu cuenta, incluidos tus retiros bancarios.
+> El reporte Dinero retirado será deshabilitado en los próximos meses. Para seguir llevando el control de todos los retiros y movimientos de tu dinero disponible usa el [reporte de------------ ----[mla]----Liquidaciones------------ ----[mlm, mlb, mlc, mco]----Liberaciones------------ ----[mlm, mlb, mlc, mco, mla]----](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/introduction)
 ------------
 ----[mpe, mlu]----
 > WARNING
 >
 > Importante
 >
->> A partir del 15 de mayo no podrás crear nuevos reportes. Tendrás a disposición tu historial para que puedas descargar los archivos que necesites. Para seguir llevando el control de todos los retiros y movimientos de tu dinero disponible puedes usar el [reporte de liberaciones.](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/23879?utm_source=faq_mp&utm_medium=faq&utm_campaign=bank_disable)
+> A partir del 15 de mayo no podrás crear nuevos reportes. Tendrás a disposición tu historial para que puedas descargar los archivos que necesites. Para seguir llevando el control de todos los retiros y movimientos de tu dinero disponible puedes usar el [reporte de liberaciones.](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/23879?utm_source=faq_mp&utm_medium=faq&utm_campaign=bank_disable)
 ------------
 
 ## Configura tus reportes
