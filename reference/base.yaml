@@ -63,6 +63,13 @@ tags:
       es: 'Retiros de efectivo'
     externalDocs: 
       url: '/guides/in-person-payments/qr-code/introduction'
+  mp-delivery:
+    description:
+      pt: 'Mercado Pago Delivery'
+      en: 'Mercado Pago Delivery'
+      es: 'Mercado Pago Delivery'
+    externalDocs: 
+      url: '/guides/mp-delivery/introduction'
   
 #------DEFAULT - ALL ARCHIVES - END------
 
