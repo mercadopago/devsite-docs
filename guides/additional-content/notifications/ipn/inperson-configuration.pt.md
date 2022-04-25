@@ -14,5 +14,5 @@ Por cada escaneamento do QR é gerada uma `merchant_order` diferente. Lembre que
 
 O processo de confirmação de pagamento é dividido em duas partes:
 
-1. [Eventos de notificação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/ipn/inperson-notification-events)
-2. [Consulta do pedido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/ipn/inperson-order-query)
+1. [Eventos de notificação](/developers/pt/guides/additional-content/notifications/ipn/inperson-notification-events)
+2. [Consulta do pedido](/developers/pt/guides/additional-content/notifications/ipn/inperson-order-query)

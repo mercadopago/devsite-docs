@@ -7,8 +7,8 @@ You can generate a Release report from your Mercado Pago account:
 
 | Channels | Description |
 | --- | --- |
-| Mercado Pago panel | To manually generate the report from your Mercado Pago panel, go to [Reports](https://www.mercadopago[FAKER][URL][DOMAIN]/movements) and choose "Created reports".<br/><br/>Follow the step by step to [generate reports from your panel](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/panel).|
-| API integration | <br/>Schedule the frequency of your report according to your needs. It can be both manually and on a scheduled basis.<br/><br/>Read the documentation to [generate reports through API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/api).|
+| Mercado Pago panel | To manually generate the report from your Mercado Pago panel, go to [Reports](https://www.mercadopago[FAKER][URL][DOMAIN]/movements) and choose "Created reports".<br/><br/>Follow the step by step to [generate reports from your panel](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/released-money/panel).|
+| API integration | <br/>Schedule the frequency of your report according to your needs. It can be both manually and on a scheduled basis.<br/><br/>Read the documentation to [generate reports through API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/released-money/api).|
 
 
 
@@ -47,7 +47,7 @@ All the options you have available when downloading your report.
 >
 > Note
 >
-> Have the [Glossary of Releases report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/glossary) on hand to review it when needed or want to review a technical term.
+> Have the [Glossary of Releases report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/released-money/glossary) on hand to review it when needed or want to review a technical term.
 
 <hr/>
 
@@ -59,7 +59,7 @@ All the options you have available when downloading your report.
 >
 > Know what each term means and the detail of the columns that make up the report.
 >
-> [Glossary](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/glossary)
+> [Glossary](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/released-money/glossary)
 
 > RIGHT_BUTTON_RECOMMENDED_EN
 >
@@ -67,4 +67,4 @@ All the options you have available when downloading your report.
 >
 > Learn how the report is composed and how to analyze it to make your reconciliation. 
 >
-> [How to use this report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/how-to-use)
+> [How to use this report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/released-money/how-to-use)

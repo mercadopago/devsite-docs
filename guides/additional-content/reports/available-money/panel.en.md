@@ -7,7 +7,7 @@ Generate your Available Balance reports from your Mercado Pago panel. You can sc
 >
 > The Available Balance report will be disabled from March 1st, 2022
 >
-> Use the [Releases report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/introduction) to reconcile the transactions that affect the balance available in your account, including your bank withdrawals.
+> Use the [Releases report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/released-money/introduction) to reconcile the transactions that affect the balance available in your account, including your bank withdrawals.
 
 Follow these steps to generate your reports:
 
@@ -17,14 +17,14 @@ Follow these steps to generate your reports:
 
 Done! You will see your report *In preparation*.
 
-You can also schedule the generation of these reports [for each money withdrawal](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/available-money/withdrawal).
+You can also schedule the generation of these reports [for each money withdrawal](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/available-money/withdrawal).
 
 
 > NOTE
 >
 > Note
 >
-> Have the [Glossary](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/available-money/glossary) of the Available Balance report on hand to review it when needed or want to review a technical term.
+> Have the [Glossary](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/available-money/glossary) of the Available Balance report on hand to review it when needed or want to review a technical term.
 
 <hr/>
 
@@ -36,7 +36,7 @@ You can also schedule the generation of these reports [for each money withdrawal
 >
 > Create reports in scheduled and manual ways through an integration with Mercado Pago.
 >
-> [Generating through API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/available-money/api)
+> [Generating through API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/available-money/api)
 
 > RIGHT_BUTTON_REQUIRED_EN
 >
@@ -44,4 +44,4 @@ You can also schedule the generation of these reports [for each money withdrawal
 >
 > You can generate a report every time you withdraw available money to a bank account.
 >
-> [Generating per withdrawal](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/available-money/withdrawal)
+> [Generating per withdrawal](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/available-money/withdrawal)

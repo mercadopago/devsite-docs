@@ -68,7 +68,7 @@ Você pode obter mais informações sobre cada atributo nas [Referências de API
 
 ### Faça a devolução de pagamentos suspeitos
 
-Se detectarmos um comportamento irregular ou recebermos uma notificação de que o cartão utilizado foi roubado, entraremos em contato via email para avisar você dessa ocorrência. Recomendamos que [cancele a compra](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds) e faça a devolução do dinheiro ao comprador para evitar a contestação do pagamento.
+Se detectarmos um comportamento irregular ou recebermos uma notificação de que o cartão utilizado foi roubado, entraremos em contato via email para avisar você dessa ocorrência. Recomendamos que [cancele a compra](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/account/cancellations-and-refunds) e faça a devolução do dinheiro ao comprador para evitar a contestação do pagamento.
 
 ### Revise os dados ao cobrar com Point
 
@@ -78,7 +78,7 @@ Solicite a seus compradores a carteira de identidade no momento de fazer o pagam
 
 ### Apresentação da contestação
 
-Vamos avisar via [notificações IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn/introduction) toda vez que você receber uma contestação. Para [começar a receber notificações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications/ipn/introduction), você deve preencher seus dados e escolher a opção Chargebacks.
+Vamos avisar via [notificações IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/notifications/ipn/introduction) toda vez que você receber uma contestação. Para [começar a receber notificações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications/ipn), você deve preencher seus dados e escolher a opção Chargebacks.
 
 ### Consulte sobre a contestação
 

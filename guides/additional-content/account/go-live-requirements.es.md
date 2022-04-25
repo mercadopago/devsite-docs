@@ -17,6 +17,6 @@ Con este proceso, se puede garantizar la seguridad de lo datos de tus clientes, 
 
 Te compartimos algunos puntos a tener en cuenta para elevar la calidad de tus integraciones:
 
-+ Mejora la [aprobación del pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/payment-rejections) enviando información del ítem y del pagador, datos de envío e información de industria.
-+ Mantén actualizado el estado de las órdenes en tus sistemas usando y procesando de forma correcta las notificaciones [IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn/introduction) o [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/webhooks/webhooks).
++ Mejora la [aprobación del pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/account/payment-rejections) enviando información del ítem y del pagador, datos de envío e información de industria.
++ Mantén actualizado el estado de las órdenes en tus sistemas usando y procesando de forma correcta las notificaciones [IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/notifications/ipn/introduction) o [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/notifications/webhooks/webhooks).
 + Consume reportes de conciliación vía API para mejorar la gestión financiera del negocio.

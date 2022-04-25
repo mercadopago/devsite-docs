@@ -12,9 +12,9 @@ Las siguientes acciones están disponibles para **IPN**.
 >
 > Recuerda que también puedes hacer consultas a la API sumando query params para:
 > <br>
-> [Búsqueda de órdenes a demanda](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn/troubleshooting)
+> [Búsqueda de órdenes a demanda](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/notifications/ipn/troubleshooting)
 > <br>
-> [Búsqueda de pagos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn/additional-tools)
+> [Búsqueda de pagos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/notifications/ipn/additional-tools)
 
 > PREV_STEP_CARD_ES
 >
@@ -22,4 +22,4 @@ Las siguientes acciones están disponibles para **IPN**.
 >
 > Aprende sobre herramientas adicionales para búsqueda de pagos.
 >
-> [Herramientas adicionales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn/additional-tools)
+> [Herramientas adicionales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/notifications/ipn/additional-tools)

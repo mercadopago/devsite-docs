@@ -68,7 +68,7 @@ Puedes obtener más información sobre cada atributo en las [Referencias de API]
 
 ### Devuelve los pagos sospechosos
 
-Cuando detectamos un comportamiento irregular o recibimos una notificación de que la tarjeta usada fue robada, nos contactaremos vía e-mail para avisarte. Te recomendamos que [canceles la compra](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds) y le devuelvas el dinero al comprador para evitar el contracargo.
+Cuando detectamos un comportamiento irregular o recibimos una notificación de que la tarjeta usada fue robada, nos contactaremos vía e-mail para avisarte. Te recomendamos que [canceles la compra](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/account/cancellations-and-refunds) y le devuelvas el dinero al comprador para evitar el contracargo.
 
 ### Revisa los datos al cobrar con Point
 
@@ -78,7 +78,7 @@ Pide el documento de tus compradores a la hora de hacer el pago y comprueba que 
 
 ### Aparición del contracargo
 
-Te avisaremos vía [notificaciones IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn/introduction) cada vez que recibas un contracargo. Para [comenzar a recibir notificaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications/ipn/introduction), debes completar tus datos y elegir la opción Chargebacks.
+Te avisaremos vía [notificaciones IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/notifications/ipn/introduction) cada vez que recibas un contracargo. Para [comenzar a recibir notificaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications/ipn), debes completar tus datos y elegir la opción Chargebacks.
 
 ### Consulta del contracargo
 

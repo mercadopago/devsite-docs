@@ -57,7 +57,7 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 >
 > Conoce la composición del reporte y aprende a leerlo.    
 >
-> [Cómo usar el reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/account-money/how-to-use)
+> [Cómo usar el reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/account-money/how-to-use)
 
 > RIGHT_BUTTON_REQUIRED_ES
 >
@@ -65,4 +65,4 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 >
 > Conoce las formas de generar un reporte y sigue los pasos para configurar tus preferencias.
 >
-> [Genera tus reportes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/account-money/generate)
+> [Genera tus reportes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/account-money/generate)

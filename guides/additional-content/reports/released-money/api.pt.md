@@ -10,7 +10,7 @@ Gere o relatório de ----[mla]----Liquidações------------ ----[mlm, mlb, mlc, 
 >
 > Nota
 >
-> Tenha em mãos o [Glossário](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/glossary) para conferir termos técnicos durante a geração do seu relatório.
+> Tenha em mãos o [Glossário](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/released-money/glossary) para conferir termos técnicos durante a geração do seu relatório.
 Execute o _curl_ que você precisa para consultar, gerar e atualizar os seus relatórios.
 
 ### Consulte seus configurações
@@ -605,7 +605,7 @@ Confira os campos que você pode configurar para ajustar as suas preferências a
 
 | Campo configurável | Descrição |
 | --- | --- |
-| `columns` | <br/>Campo com os detalhes das colunas a serem incluídas no seu relatório. Encontre todos os valores possíveis na seção [Glossário](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/glossary).<br/><br/>|
+| `columns` | <br/>Campo com os detalhes das colunas a serem incluídas no seu relatório. Encontre todos os valores possíveis na seção [Glossário](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/released-money/glossary).<br/><br/>|
 | `file_name_prefix` | <br/>Prefixo que compõe o nome do relatório assim que estiver gerado e pronto para baixar.<br/><br/> |
 | `frequency` | <br/>Indica a frequência diária, semanal ou mensal dos relatórios programados.<br/><br/> - `frequency` aplica type *monthly* ao dia do mês ou *weekly* ao dia da semana<br/> - `hour` hora do dia que o relatório deve ser gerado<br/> - `type` indica o tipo de frequência: *daily* (diária), *weekly* (semanal) y *monthly* (mensal).<br/><br/> |
 | `sftp_info` (opcional) | <br/>Indica os dados para subir a SFTP quando precisar.<br/><br/> |
@@ -1110,7 +1110,7 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 >
 > Esta documentação corresponde à nova versão da API
 >
-> Para consultar a versão anterior, por favor, acesse a [seção Geração por API antiga](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/v1/api).
+> Para consultar a versão anterior, por favor, acesse a [seção Geração por API antiga](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/released-money/v1/api).
 
 <hr/>
 
@@ -1122,7 +1122,7 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 >
 > Gere seus relatórios de Dinheiro Disponível a partir do painel do Mercado Pago em 3 etapas simples.
 >
-> [Geração a partir do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/panel)
+> [Geração a partir do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/released-money/panel)
 
 > RIGHT_BUTTON_RECOMMENDED_PT
 >
@@ -1130,4 +1130,4 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 >
 > Gere um relatório a cada vez que retirar dinheiro para uma conta bancária.
 >
-> [Geração por API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/rreports/released-money/api)
+> [Geração por API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/rreports/released-money/api)

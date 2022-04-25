@@ -17,7 +17,7 @@ O Mercado Pago permite a você realizar a liberação das suas cobranças de for
 ## Como visualizar as cobranças de pagamentos no fluxo em seus relatórios
 
 Vamos lhe explicar como ver as informações de seus [pagamentos no fluxo
- no relatório de Dinheiro disponível](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/extra/pnf-bank).
+ no relatório de Dinheiro disponível](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/extra/pnf-bank).
 
 ------------
 
@@ -28,6 +28,6 @@ Vamos lhe explicar como ver as informações de seus [pagamentos no fluxo
 > Desculpe
 >
 > No momento, esta página não está disponível em português.<br>
-> [Ver documentação em espanhol](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/extra/reports-information-details)
+> [Ver documentação em espanhol](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/extra/reports-information-details)
 
 ------------

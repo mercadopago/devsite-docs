@@ -13,9 +13,9 @@ The following actions are available for **IPN**.
 >
 > Remember that you can also make API calls using query params for the following:
 > <br>
-> [On demand order search](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn/troubleshooting)
+> [On demand order search](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/notifications/ipn/troubleshooting)
 > <br>
-> [Search payments](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn/additional-tools)
+> [Search payments](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/notifications/ipn/additional-tools)
 
 > PREV_STEP_CARD_EN
 >
@@ -23,4 +23,4 @@ The following actions are available for **IPN**.
 >
 > Learn about additional tools for payments search.
 >
-> [Additional tools](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn/additional-tools)
+> [Additional tools](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/notifications/ipn/additional-tools)

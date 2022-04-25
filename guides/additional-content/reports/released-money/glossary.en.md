@@ -50,7 +50,7 @@ If you have any doubts about the technical terms used, check the glossary below.
 >
 > Learn how the report is composed and how to analyze it to make your reconciliation. 
 >
-> [How to use this report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/how-to-use)
+> [How to use this report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/released-money/how-to-use)
 
 > RIGHT_BUTTON
 >
@@ -58,4 +58,4 @@ If you have any doubts about the technical terms used, check the glossary below.
 >
 > Learn the ways to generate a report and follow the steps to set your preferences.
 >
-> [Generate your report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/generate)
+> [Generate your report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/released-money/generate)

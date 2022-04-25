@@ -10,7 +10,7 @@ To review the report we recommend downloading it in .csv format to open it in th
 >
 > TThe Available Balance report will be disabled from March 01, 2022
 >
-> Use the [Releases report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/introduction) to reconcile the transactions that affect the balance available in your account, including your bank withdrawals.
+> Use the [Releases report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/released-money/introduction) to reconcile the transactions that affect the balance available in your account, including your bank withdrawals.
 
 ## What does the report contain?
 
@@ -73,7 +73,7 @@ The default version will show an extended view of the columns. The final report 
 >
 > Learn the ways to generate a report and follow the steps to set your preferences.
 >
-> [Generate your reports](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/available-money/generate)
+> [Generate your reports](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/available-money/generate)
 
 > RIGHT_BUTTON_RECOMMENDED_EN
 >
@@ -81,4 +81,4 @@ The default version will show an extended view of the columns. The final report 
 >
 > Know what each term means and the detail of the columns that make up the report.
 >
-> [Glossary](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/available-money/glossary)
+> [Glossary](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/available-money/glossary)
