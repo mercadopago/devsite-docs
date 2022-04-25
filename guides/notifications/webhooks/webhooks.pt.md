@@ -2,7 +2,7 @@
 
 O Webhooks (também conhecido como retorno de chamada web) é um método simples que facilita com que um app ou sistema forneça informações em tempo real sempre que um evento acontece, ou seja, é um modo de receber dados entre dois sistemas de forma passiva através de um `HTTP POST`. 
 
-As notificações Webhooks poderão ser configuradas para uma ou mais aplicações criadas em seu [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/dashboard/introduction).
+As notificações Webhooks poderão ser configuradas para uma ou mais aplicações criadas em seu [Dashboard](/developers/pt/guides/additional-content/dashboard/introduction).
 
 Uma vez configurado, o Webhook será enviado sempre que ocorrer um ou mais eventos cadastrados, evitando que haja um trabalho de pesquisa a cada minuto em busca de uma resposta e, por consequência, que ocorra uma sobrecarga do sistema e a perda de dados sempre que houver alguma situação. Após receber uma notificação na sua plataforma, o Mercado Pago aguardará uma resposta para validar se você a recebeu corretamente.
 
@@ -14,8 +14,8 @@ Abaixo explicaremos como indicar as URLs que serão notificadas e como configura
 
 ![webhooks](/images/notifications/webhooks_pt.png)
 
-1. Caso ainda não tenha, crie uma aplicação na página inicial de seu [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel).
-2. Com a aplicação criada, acesse a aba Notificações Webhooks em seu Dashboard e configure as [URLs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications) de **produção** e **teste** da qual serão recebidas as notificações. 
+1. Caso ainda não tenha, crie uma aplicação na página inicial de seu [Dashboard](/developers/panel).
+2. Com a aplicação criada, acesse a aba Notificações Webhooks em seu Dashboard e configure as [URLs](/developers/panel/notifications) de **produção** e **teste** da qual serão recebidas as notificações. 
 3. Você também poderá experimentar e testar se a URL indicada está recebendo as notificações corretamente, podendo verificar a solicitação, a resposta dada pelo servidor e a descrição do evento.
 4. Caso seja necessário identificar múltiplas contas, no final do URL indicada você poderá indicar o parâmetro `?cliente=(nomedovendedor) endpoint` para identificar os vendedores.
 5. Em seguida, selecione os **eventos** dos quais você receberá notificações em formato `json` através de um `HTTP POST` para a URL especificada anteriormente. Um evento é qualquer tipo de atualização no objeto relatado, incluindo alterações de status ou atributo. Veja na tabela abaixo os eventos que poderão ser configurados.
@@ -264,7 +264,7 @@ curl -X POST \
 >
 > Importante
 >
-> Para o tipo de evento `point_integration_wh`, o formato da notificação muda. [Clique aqui](https://www.mercadopago[FAKER][URL][DOMÍNIO]/developers/pt/guides/in-person-payments/mp-point/introduction) para consultar a documentação do **Mercado Pago Point**.
+> Para o tipo de evento `point_integration_wh`, o formato da notificação muda. [Clique aqui](/developers/pt/guides/mp-point/introduction) para consultar a documentação do **Mercado Pago Point**.
 
 ```json
 {
@@ -311,6 +311,6 @@ Depois de dar um retorno à notificação e confirmar o seu recebimento, você o
 | subscription_preapproval | `https://api.mercadopago.com/preapproval` | [ver documentação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/subscriptions/_preapproval/post) |
 | subscription_preapproval_plan | `https://api.mercadopago.com/preapproval_plan` | - |
 | subscription_authorized_payment | `https://api.mercadopago.com/authorized_payments` | - |
-| point_integration_wh | - | [ver documentação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/mp-point/introduction) |
+| point_integration_wh | - | [ver documentação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/mp-point/introduction) |
 
 Com essas informações, você poderá realizar as atualizações necessárias na sua plataforma como, por exemplo, atualizar um pagamento aprovado. 

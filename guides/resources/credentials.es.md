@@ -1,6 +1,6 @@
 # Credenciales
 
-Las credenciales son contraseñas únicas con las que identificamos una integración en tu cuenta. Sirven para capturar pagos en tiendas online y otras aplicaciones de forma segura. Puedes encontrarlas en el [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/dashboard/introduction) o en tu cuenta de Mercado Pago en [Tu Negocio> Configuración> Gestión y Administración> Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).
+Las credenciales son contraseñas únicas con las que identificamos una integración en tu cuenta. Sirven para capturar pagos en tiendas online y otras aplicaciones de forma segura. Puedes encontrarlas en el [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/credentials) o en tu cuenta de Mercado Pago en [Tu Negocio> Configuración> Gestión y Administración> Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).
 
 > WARNING 
 > 
@@ -11,7 +11,7 @@ Las credenciales son contraseñas únicas con las que identificamos una integrac
 Hay dos tipos diferentes de credenciales:
 
 * **Credenciales de prueba**. Las credenciales de prueba deben usarse para probar tus integraciones y pueden ser utilizadas junto con tarjetas de crédito de prueba para simular recibos de tarjetas. Se recomienda utilizarlas antes de las credenciales de producción para garantizar que las integraciones funcionen correctamente.
-* **Credenciales de producción**. Las credenciales de producción se utilizan para recibir pagos. Antes de entrar en producción, verifica los [requisitos para salir a producción](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/go-live-requirements).
+* **Credenciales de producción**. Las credenciales de producción se utilizan para recibir pagos.
 
 Ambos tipos de credenciales se componen de dos pares de llaves que debes usar según el producto que elijas. 
  Te recomendamos consultar la documentación de cada producto para obtener detalles sobre qué llaves usar.
