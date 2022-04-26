@@ -131,7 +131,7 @@ Also, before finalizing the purchase, allow your users to **review** the entire 
 >
 > An introduction to the guide of best practices.
 >
-> [Introduction](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/best-practices/ux-for-checkouts/introduction)
+> [Introduction](/developers/en/guides/additional-content/best-practices/ux-for-checkouts/introduction)
 
 > NEXT_STEP_CARD_EN
 >
@@ -139,4 +139,4 @@ Also, before finalizing the purchase, allow your users to **review** the entire 
 >
 > Follow these steps to create an easy to navigate and understand checkout.
 >
-> [Ease of conversions](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/best-practices/ux-for-checkouts/ease-of-conversion)
+> [Ease of conversions](/developers/en/guides/additional-content/best-practices/ux-for-checkouts/ease-of-conversion)

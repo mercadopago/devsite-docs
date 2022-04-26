@@ -24,5 +24,5 @@ Now you have everything you need to create the best payment experience for your 
 >
 > Learn about the main components of a checkout and how to optimize them to offer a better experience for your users and get more conversion.
 >
-> [Optimized experience](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/best-practices/ux-for-checkouts/optimized-experience)
+> [Optimized experience](/developers/en/guides/additional-content/best-practices/ux-for-checkouts/optimized-experience)
 

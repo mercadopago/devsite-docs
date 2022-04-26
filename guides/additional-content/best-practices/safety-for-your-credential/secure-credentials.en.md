@@ -1,8 +1,8 @@
-# Keep your credentials safe
+# Keep your credentials safe 
 
 By integrating Mercado Pago solutions, you will handle sensitive data that you must protect from possible losses or vulnerabilities. This data can be your credentials, those of your integrations and those of your clients.
 
-Credentials are unique passwords with which we identify an integration in your account. They are used to capture payments in online stores and other applications securely. To find out detailed information about credentials, go to [Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials).
+Credentials are unique passwords with which we identify an integration in your account. They are used to capture payments in online stores and other applications securely. To find out detailed information about credentials, go to [Credentials](/developers/en/guides/additional-content/credentials/credentials).
 
 We will show you how you can optimize the security of your integrations simply and quickly.
 
@@ -22,9 +22,10 @@ https://api.mercadolibre.com/users/me
 > Important
 > 
 > Always keep your credentials hidden. Never expose your Access Token in any parameter or on the public side of your integration.
+
 ## Use the Public Key on the front-end
 
-Public Key is a key of the application that is normally used in the frontend and allows, for example, to know the payment methods and to encrypt the card data. Remember to only use this type of key in the public side of your integration. To learn more, go to [Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials).
+Public Key is a key of the application that is normally used in the frontend and allows, for example, to know the payment methods and to encrypt the card data. Remember to only use this type of key in the public side of your integration. To learn more, go to [Credentials](/developers/en/guides/additional-content/credentials/credentials).
 
 ## Renew your credentials periodically
 
@@ -61,4 +62,12 @@ You can remove these permissions at any time from the **Credentials** panel.
 
 OAuth is an authorization protocol that allows applications to have limited access to the private information of Mercado Pago accounts, through the HTTP protocol that introduces an authentication and authorization layer in which you request access to the protected resources of sellers, through an access token limited to a particular application, without the need for the credentials of the sellers through the access flows.
 
-To learn more about OAuth, go to [this documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/security/oauth/introduction).
+To learn more about OAuth, go to [this documentation](/developers/en/guides/additional-content/security/oauth/introduction).
+
+> PREV_STEP_CARD_EN
+>
+> Practices for your credentials
+>
+> Check the best practices that you can carry out are, so that your integrations are secure.
+>
+> [Practices for your credentials](/developers/en/guides/additional-content/best-practices/safety-for-your-credential/introduction)

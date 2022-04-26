@@ -122,14 +122,13 @@ Além disso, antes da conclusão da compra, permita que os usuários possam **re
 
 ![pt confrima tu compra](/images/best-practices-guide/PortAspectosGeneralesConfirmaTuCompra_V2.gif)
 
-
 > PREV_STEP_CARD_PT
 >
 > UX para checkouts
 >
 > Conheça o guia de boas práticas pensado para desenvolvedores, vendedores e agências.
 >
-> [Introdução](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/best-practices/ux-for-checkouts/introduction)
+> [Introdução](/developers/pt/guides/additional-content/best-practices/ux-for-checkouts/introduction)
 
 > NEXT_STEP_CARD_PT
 >
@@ -137,4 +136,4 @@ Além disso, antes da conclusão da compra, permita que os usuários possam **re
 >
 > Siga estas etapas para criar um checkout fácil de navegar e entender.
 >
-> [Facilidade de conversão](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/best-practices/ux-for-checkouts/ease-of-conversion)
+> [Facilidade de conversão](/developers/pt/guides/additional-content/best-practices/ux-for-checkouts/ease-of-conversion)

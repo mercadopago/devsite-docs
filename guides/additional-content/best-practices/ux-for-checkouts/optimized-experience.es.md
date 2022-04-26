@@ -129,12 +129,12 @@ Además, antes de finalizar la compra, permite que tus usuarios puedan **revisar
 >
 > Una introducción a la guía de buenas prácticas-
 >
-> [Introducción](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/best-practices/ux-for-checkouts/introduction)
+> [Introducción](/developers/es/guides/additional-content/best-practices/ux-for-checkouts/introduction)
 
-> NEXT_STEP_CARD_ES
+> NEXT_STEP_CARD_ESadditional-content/
 >
 > Facilita las conversiones
 >
 > Sigue los pasos para crear un checkout fácil de recorrer y entender.
 >
-> [Facilidad de conversión](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/best-practices/ux-for-checkouts/ease-of-conversion)
+> [Facilidad de conversión](/developers/es/guides/additional-content/best-practices/ux-for-checkouts/ease-of-conversion)

@@ -26,5 +26,4 @@ Agora, você conta com todas as informações necessárias para criar a melhor e
 >
 > Confira os componentes principais de um checkout e saiba como otimizá-los para aumentar a conversão de vendas e oferecer uma experiência de compra ainda melhor.
 >
-> [Experiência otimizada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/best-practices/ux-for-checkouts/optimized-experience)
-
+> [Experiência otimizada](/developers/pt/guides/additional-content/best-practices/ux-for-checkouts/optimized-experience)
