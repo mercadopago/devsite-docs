@@ -1,6 +1,6 @@
 # Obtener datos de la orden
 
-Para consultar los datos de una orden, realiza un GET enviando `shipment_id` y `access-token` (generados por el proceso de autenticación OAuth) al endpoint[/proximity-integration/v1/orders/{shipmentId}](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/mp_delivery/_proximity-integrationorders_shipment_id/get). Consulta [Seguridad](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/security/oauth/introduction) para obtener más información sobre OAuth.
+Para consultar los datos de una orden, realiza un GET enviando `shipment_id` y `access-token` (generados por el proceso de autenticación OAuth) al endpoint[/proximity-integration/v1/orders/{shipmentId}](/developers/es/reference/mp_delivery/_proximity-integrationorders_shipment_id/get). Consulta [Seguridad](/developers/es/guides/additional-content/security/oauth/introduction) para obtener más información sobre OAuth.
 
 * **Merchant**: información sobre el restaurante que recibió la orden.
 * **Items**: descripción de los artículos y artículos adicionales en la orden.
@@ -33,7 +33,7 @@ Para consultar los datos de una orden, realiza un GET enviando `shipment_id` y `
 >
 > Aprende a gestionar órdenes con Mercado Pago Delivery.
 >
-> [Administración de órdenes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/mp-delivery/order-management)
+> [Administración de órdenes](/developers/es/docs/mp-delivery/order-management)
 
 > NEXT_STEP_CARD_ES
 >
@@ -41,4 +41,4 @@ Para consultar los datos de una orden, realiza un GET enviando `shipment_id` y `
 >
 > Conoce cómo aceptar órdenes con Mercado Pago Delivery.
 >
-> [Aceptar órdenes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/mp-delivery/accept-order)
+> [Aceptar órdenes](/developers/es/docs/mp-delivery/order-management/accept-order)

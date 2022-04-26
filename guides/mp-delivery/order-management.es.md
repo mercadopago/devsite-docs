@@ -19,7 +19,7 @@ Con `shipping_id` en la mano, puede:
 >
 > Aprende a configurar la integración con Mercado Pago Delivery.
 >
-> [Configuración de integración](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/mp-delivery/integration)
+> [Configuración de integración](/developers/es/docs/mp-delivery/integration-configuration)
 
 > NEXT_STEP_CARD_ES
 >
@@ -27,4 +27,4 @@ Con `shipping_id` en la mano, puede:
 >
 > Conoce cómo obtener datos de órdenes con Mercado Pago Delivery.
 >
-> [Obtener datos de la orden](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/mp-delivery/get-order-data)
+> [Obtener datos de la orden](/developers/es/docs/mp-delivery/order-management/get-order-data)
