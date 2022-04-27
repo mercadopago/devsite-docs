@@ -241,7 +241,7 @@ paths:
                     example: additional information
                     description: Additional information.
                   application_id:
-                    type: number
+                    type: string
                     example: 10000000000000000
                     description: application identifier.
                   order_status:
@@ -826,7 +826,7 @@ paths:
                           example: additional information
                           description: Additional information.
                         application_id:
-                          type: number
+                          type: string
                           example: 10000000000000000
                           description: application identifier.
                         order_status:
@@ -1310,7 +1310,7 @@ paths:
                     example: additional information
                     description: Additional information.
                   application_id:
-                    type: number
+                    type: string
                     example: 10000000000000000
                     description: application identifier.
                   order_status:
@@ -1596,7 +1596,7 @@ paths:
                     example: additional information
                     description: Additional information.
                   application_id:
-                    type: number
+                    type: string
                     example: 10000000000000000
                     description: application identifier.
                   order_status:
