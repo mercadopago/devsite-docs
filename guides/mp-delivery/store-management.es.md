@@ -15,7 +15,7 @@ Con `store_id` puede consultar y cambiar el estado operativo de la sucursal, ade
 >
 > Conoce cómo cancelar órdenes en Mercado Pago Delivery.
 >
-> [Cancelar orden](/developers/es/docs/mp-delivery/cancel-order)
+> [Cancelar orden](/developers/es/docs/mp-delivery/order-management/cancel-order)
 
 > NEXT_STEP_CARD_ES
 >
@@ -23,4 +23,4 @@ Con `store_id` puede consultar y cambiar el estado operativo de la sucursal, ade
 >
 > Más información sobre cómo obtener datos de la sucursal.
 >
-> [Obtener datos de la sucursal](/developers/es/docs/mp-delivery/store-data)
+> [Obtener datos de la sucursal](/developers/es/docs/mp-delivery/store-management/get-store-data) 

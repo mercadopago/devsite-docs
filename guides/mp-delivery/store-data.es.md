@@ -2,7 +2,7 @@
 
 Para obtener información sobre todas las sucursales que están vinculadas a **un usuario específico**, realiza un GET enviando el `user_id` y el `access-token` (generados por el proceso de autenticación de OAuth) al punto final [[/proximity-integration/users/{seller_id}/stores](/developers/es/reference/mp_delivery/_proximity-integration_users_seller_id_stores/get). Consulta [Seguridad](/developers/es/guides/additinal-content/security/oauth/introduction) para obtener más información sobre OAuth.
 
-También es posible consultar información de una **sucursal específica** usando su **ID**. Para ello, realiza un GET enviando el `store_id` y el `access-token` al endpoint [/proximity-integration/stores/{StoreID}](/developers/es/reference/mp_delivery/_proximity-integration_stores_store_id/get).
+También es posible consultar información de una **sucursal específica** usando su **ID**. Para ello, realiza un GET enviando el `store_id` y el `access-token` al endpoint [/proximity-integration/stores/{StoreID}](/developers/es/reference/mp_delivery/_proximity-integration_users_SellerID_stores_external_id_ExternalID/get).
 
 Este endpoint devuelve todos los datos del endpoint anterior, además de información sobre el estado actual del almacenamiento ("enabled", "paused" o "disabled"). Consulta [Cambiar estado de la sucursal](/developers/es/docs/mp-delivery/store-management/change-store-status) para obtener más información sobre los estados.
 
@@ -28,4 +28,4 @@ Este endpoint devuelve todos los datos del endpoint anterior, además de informa
 >
 > Aprenda a cambiar el estado de funcionamiento de la sucursal.
 >
-> [Cambiar estado de sucursal](/developers/es/docs/mp-delivery/change-store-status)
+> [Cambiar estado de sucursal](/developers/es/docs/mp-delivery/store-management/change-store-status)
