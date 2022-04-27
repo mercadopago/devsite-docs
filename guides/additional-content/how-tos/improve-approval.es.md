@@ -58,7 +58,7 @@ Te ayudamos a detectar comportamientos inusuales de los clientes con nuestro có
 >
 > Nota
 >
-> Si utilizas Checkout Pro o Web Tokenize Checkout, ya cuentas con toda la seguridad para prevenir fraude. 
+> Si utilizas Checkout Pro, ya cuentas con toda la seguridad para prevenir fraude. 
 
 ### Suma nuestro código de seguridad en tu sitio
 

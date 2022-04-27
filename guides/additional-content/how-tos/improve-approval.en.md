@@ -58,7 +58,7 @@ We can help you detect unusual client behaviour with our security code and Devic
 >
 > Note
 >
-> If you use Checkout Pro or Web Tokenize Checkout, you already implement our security methods to prevent fraud.
+> If you use Checkout Pro, you already implement our security methods to prevent fraud.
 
 ### Add our security code into your website
 
