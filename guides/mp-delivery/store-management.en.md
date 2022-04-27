@@ -15,7 +15,7 @@ With `store_id` you can check and change the store's operating status, in additi
 >
 > Learn how to cancel orders at Mercado Pago Delivery.
 >
-> [Cancel order](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/mp-delivery/cancel-order)
+> [Cancel order](/developers/en/docs/mp-delivery/order-management/cancel-order)
 
 > NEXT_STEP_CARD_EN
 >
@@ -23,4 +23,4 @@ With `store_id` you can check and change the store's operating status, in additi
 >
 > Learn how to get store data.
 >
-> [Get store data](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/mp-delivery/store-data)
+> [Get store data](/developers/en/docs/mp-delivery/store-management/get-store-data) 

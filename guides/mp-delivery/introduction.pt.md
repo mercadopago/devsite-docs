@@ -20,4 +20,4 @@ O software de gestão de pedidos, após realizar a integração, receberá notif
 >
 > Conheça os pré-requisitos para realizar a integração.
 >
-> [Pré-requisitos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/mp-delivery/previous-requirements)
+> [Pré-requisitos](/developers/pt/docs/mp-delivery/previous-requirements)

@@ -20,4 +20,4 @@ The order management software, after performing the integration, will receive no
 >
 > Learn about the prerequisites for performing the integration.
 >
-> [Prerequisites](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/mp-delivery/previous-requirements)
+> [Prerequisites](/developers/en/docs/mp-delivery/previous-requirements)

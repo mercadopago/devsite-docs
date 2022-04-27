@@ -15,7 +15,7 @@ Com o `store_id` vocë poderá verificar e alterar o status de funcionamento da 
 >
 > Saiba como cancelar pedidos no Mercado Pago Delivery.
 >
-> [Cancelar pedido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/mp-delivery/cancel-order)
+> [Cancelar pedido](/developers/pt/docs/mp-delivery/order-management/cancel-order)
 
 > NEXT_STEP_CARD_PT
 >
@@ -23,4 +23,4 @@ Com o `store_id` vocë poderá verificar e alterar o status de funcionamento da 
 >
 > Saiba como obter dados das lojas.
 >
-> [Obter dados da loja](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/mp-delivery/store-data)
+> [Obter dados da loja](/developers/pt/docs/mp-delivery/store-management/get-store-data) 
