@@ -24,6 +24,23 @@ We have released the new version 5.7.6 for WooCommerce.
 >
 > [Check GitHub](https://github.com/mercadopago/cart-woocommerce/releases/tag/v5.7.6) for further details regarding this release.
 
+### April 7th
+
+> CHANGELOG
+>
+> News MercadoPago.js V2
+>
+> NEWS: NEWS
+>
+> PRODUCT: MERCADO PAGO
+We added new callbacks on Card Form: **onError**, **onValidityChange** e **onReady**.
+
+We modified the nomenclature of some fields on Card Form. Fields **cardExpirationMonth**, **cardExpirationYear** and **cardExpirationDate** became **expirationMonth**, **expirationYear** e **expirationDate**, respectively.
+
+We added a new safer way of integrating with [Card Form](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card-v2) and [Core Methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card-core-methods-v2), called Secure Fields.
+
+For more information, check our [technical reference](https://github.com/mercadopago/sdk-js).
+
 ## March 2022
 
 ### March 31th
