@@ -14,7 +14,7 @@ Consulta [Seguridad](/developers/es/guides/additional-content/security/oauth/int
 
 > NEXT_STEP_CARD_ES
 >
-> Administración de tiendas
+> Administración de sucursales
 >
 > Aprende a consultar y gestionar la información de tu sucursal.
 >

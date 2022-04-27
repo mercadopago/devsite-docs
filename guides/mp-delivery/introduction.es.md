@@ -20,4 +20,4 @@ El software de gestión de pedidos, luego de realizar la integración, recibirá
 >
 > Conoce los requisitos previos para llevar a cabo la integración.
 >
-> [Requisitos previos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/mp-delivery/previous-requirements)
+> [Requisitos previos](/developers/es/docs/mp-delivery/previous-requirements)
