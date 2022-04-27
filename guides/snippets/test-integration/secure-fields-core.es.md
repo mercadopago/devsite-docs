@@ -43,7 +43,7 @@ En el siguiente ejemplo se asume que los datos `transactionAmount` y `descriptio
 ```html
 <form id="form-checkout" method="POST" action="/process_payment">
   <div id="form-checkout__cardNumber-container"></div>
-  <div id="form-checkout__cardExpirationDate-container" class="input"></div>
+  <div id="form-checkout__expirationDate-container" class="input"></div>
   <input type="text" name="cardholderName" id="form-checkout__cardholderName" placeholder="Titular de la tarjeta" />
   <input type="email" name="cardholderEmail" id="form-checkout__cardholderEmail" placeholder="E-mail" />
   <div id="form-checkout__securityCode-container"></div>
@@ -108,7 +108,7 @@ Un ejemplo de código con `cardNumber`, `expirationDate` y `securityCode` sería
  
   const expirationDateElement = mp.fields.create('expirationDate', {
     placeholder: "Data de vencimiento (MM/YYYY)"
-  }).mount('form-checkout__cardExpirationDate-container');
+  }).mount('form-checkout__expirationDate-container');
  
   const securityCodeElement = mp.fields.create('securityCode', {
     placeholder: "Código de seguridad"  
