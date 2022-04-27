@@ -1,4 +1,3 @@
-
 # How to generate your Account Money report?
 
 > NOTE
@@ -56,18 +55,14 @@ All the options you have available when downloading your report.
 | File | <br/>The generated reports are saved in your Mercado Pago account.<br/><br/> |
 | Set up available via API | <br/>- Columns to generate per report.<br/> - File prefix for easy identification.<br/> - SFTP upload.<br/> - Column separator (period or semicolon).<br/> - Email notification.<br/><br/> |
 
-
 > NOTE
 >
 > Note
 >
 > Have the [Glossary of the Account Money report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/account-money/glossary) on hand to review it when needed or want to review a technical term.
 
-<hr/>
 
-### Next steps
-
-> LEFT_BUTTON_RECOMMENDED_EN
+> NEXT_STEP_CARD_EN
 >
 > Generating from Mercado Pago  
 >
@@ -75,7 +70,7 @@ All the options you have available when downloading your report.
 >
 > [Generating from Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/account-money/panel)
 
-> RIGHT_BUTTON_RECOMMENDED_EN
+> NEXT_STEP_CARD_EN
 >
 > Generating through API
 >

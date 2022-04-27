@@ -1,8 +1,6 @@
-
 # Generación por panel de Mercado Pago
 
 Genera los reportes de Todas las transacciones desde tu panel de Mercado Pago.
-
 
 Sigue estos pasos para generar tus reportes:
 
@@ -12,18 +10,13 @@ Sigue estos pasos para generar tus reportes:
 
 ¡Y listo! Vas a ver tu reporte *En preparación*.
 
-
 > NOTE
 >
 > Nota
 >
 > Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/account-money/glossary) de Todas las transacciones para revisarlo cuando necesites o quieras consultar algún término técnico.
 
-<hr/>
-
-### Próximos pasos
-
-> LEFT_BUTTON_RECOMMENDED_ES
+> NEXT_STEP_CARD_ES
 >
 > Generación por API
 >
@@ -31,7 +24,7 @@ Sigue estos pasos para generar tus reportes:
 >
 > [Generación por API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/account-money/api)
 
-> RIGHT_BUTTON_RECOMMENDED_ES
+> NEXT_STEP_CARD_ES
 >
 > Glosario
 >

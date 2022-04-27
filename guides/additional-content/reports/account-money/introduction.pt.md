@@ -1,6 +1,4 @@
-
 # O que é o relatório de Dinheiro em conta?
-
 
 O relatório de Dinheiro em conta é um **relatório para baixar que te permite ver as transações que afetaram o seu dinheiro em conta**, ou seja, as movimentações que afetaram o seu saldo no Mercado Pago.
 
@@ -14,7 +12,6 @@ Ao estar disponível, ele ficará na sua bandeja de relatórios e você poderá 
 
 * Por um link de download que enviaremos via e-mail.
 * Na sua conta do Mercado Pago, acesse ----[mla]---- [seus relatórios](https://www.mercadopago.com.ar/balance/reports?page=1#!/settlement-report) ------------ ----[mlm]---- [seus relatórios](https://www.mercadopago.com.mx/balance/reports?page=1#!/settlement-report) ------------ ----[mlu]---- [seus relatórios](https://www.mercadopago.com.uy/balance/reports?page=1#!/settlement-report) ------------ ----[mlc]---- [seus relatórios](https://www.mercadopago.cl/balance/reports?page=1#!/settlement-report) ------------ ----[mco]---- [seus relatórios](https://www.mercadopago.com.co/balance/reports?page=1#!/settlement-report) ------------ ----[mpe]---- [seus relatórios](https://www.mercadopago.com.pe/balance/reports?page=1#!/settlement-report) ------------ ----[mlb]---- [seus relatórios](https://www.mercadopago.com.br/balance/reports?page=1#!/settlement-report) ------------ e selecione a opção *Relatórios de dinheiro em conta*.
-
 
 ## Valores do relatório
 
@@ -36,25 +33,24 @@ Opcionalmente, o relatório traz colunas com o agendamento das previsões de lib
 
 > NOTE
 >
-> Nota
+> Atenção
 >
-> Tenha em mãos o [Glossário do relatório](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/account-money/glossary) de Dinheiro em conta para consultá-lo quando precisar ou queira conferir algum termo técnico.
+> Quando você incluir as novas colunas de previsibilidade de liberações, fique atento que as informações somente serão agregadas ao relatório depois que a configuração for atualizada e o relatório for processado ao menos uma vez com as novas colunas. Relatórios com data retroativa à data dessa nova configuração com as colunas novas não apresentarão as informações de previsibilidade.
+> <br/>
+> Tenha em mãos o [Glossário do relatório](/developers/pt/guides/additional-content/reports/account-money/glossary) de Dinheiro em conta para consultá-lo quando precisar ou queira conferir algum termo técnico.
 
-
-### Próximos passos
-
-> LEFT_BUTTON_RECOMMENDED_PT
+> NEXT_STEP_CARD_PT
 >
 > Como usar o relatório
 >
 > Saiba como o relatório é composto e aprenda a analisá-lo.
 >
-> [Como usar o relatório](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/account-money/how-to-use)
+> [Como usar o relatório](/developers/pt/guides/additional-content/reports/account-money/how-to-use)
 
-> RIGHT_BUTTON_REQUIRED_PT
+> NEXT_STEP_CARD_PT
 >
 > Gere seus relatórios
 >
 > Saiba as formas de gerar um relatório e siga as etapas para configurar suas preferências.
 >
-> [Gere seus relatórios](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/account-money/generate)
+> [Gere seus relatórios](/developers/pt/guides/additional-content/reports/account-money/generate)

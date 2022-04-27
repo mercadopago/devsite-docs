@@ -1,6 +1,4 @@
-
 # Glosario
-
 
 Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado con todos ellos. ¡Usa este glosario para no perderte!
 
@@ -47,11 +45,7 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 | POI_BANK_NAME | Nombre de la entidad bancaria desde la que se origina un pago digital. Permite identificar el origen de una operación cuando cobras con un ----[mla]----[código QR interoperable](https://vendedores.mercadolibre.com.ar/nota/cobra-a-otras-billeteras-con-tu-qr-de-mercado-pago)------------ ----[mlu, mpe, mlm, mco, mlc, mlb]----código QR de Mercado Pago------------.|
 | CARD_INITIAL_NUMBER | Corresponde a los primeros dígitos de la tarjeta crédito o débito con la que se hizo la compra. |
 
-<hr/>
-
-### Próximos pasos
-
-> LEFT_BUTTON_RECOMMENDED_ES
+> NEXT_STEP_CARD_ES
 >
 > Cómo usar el reporte
 >
@@ -59,7 +53,7 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 >
 > [Cómo usar el reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/account-money/how-to-use)
 
-> RIGHT_BUTTON_REQUIRED_ES
+> NEXT_STEP_CARD_ES
 >
 > Genera tus reportes
 >

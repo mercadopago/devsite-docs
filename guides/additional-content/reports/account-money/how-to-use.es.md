@@ -8,8 +8,6 @@ Para consultar el reporte te recomendamos descargarlo en formato .csv para abrir
 
 El reporte está compuesto por distintos tipo de transacciones que puedes ver en la columna `TRANSACTION_TYPE`. Cada una de ellas tendrá el monto bruto de la operación.
 
-<br/>
-
 | Transacciones | Tipo de operación |
 | --- | --- |
 | *SETTLEMENT* |<br/> Operación aprobada.<br/><br/>|
@@ -39,11 +37,7 @@ Observa cómo está compuesto el reporte de Todas las transacciones en este ejem
 
 La versión por defecto mostrará una vista extendida de las columnas. El informe tendrá la mayor cantidad de detalle posible.
 
-<hr/>
-
-### Próximos pasos
-
-> LEFT_BUTTON_REQUIRED_ES
+> NEXT_STEP_CARD_ES
 >
 > Genera tus reportes
 >
@@ -51,7 +45,7 @@ La versión por defecto mostrará una vista extendida de las columnas. El inform
 >
 > [Genera tus reportes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/account-money/generate)
 
-> RIGHT_BUTTON_RECOMMENDED_ES
+> NEXT_STEP_CARD_ES
 >
 > Glosario
 >

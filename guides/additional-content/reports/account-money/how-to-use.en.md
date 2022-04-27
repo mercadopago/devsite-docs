@@ -8,8 +8,6 @@ To review the report we recommend downloading it in .csv format to open it in th
 
 The report is made up of different types of transactions that you can see in the `TRANSACTION_TYPE` column. Each of them will have the gross amount of the operation.
 
-<br/>
-
 | Transactions | Transaction type |
 | --- | --- |
 | *SETTLEMENT* |<br/> Approved <br/><br/>|
@@ -39,11 +37,7 @@ Note how the Account Money report is composed in this example to identify the op
 
 The default version will show an extended view of the columns. The final report will have as much detail as possible.
 
-<hr/>
-
-### Next steps
-
-> LEFT_BUTTON_REQUIRED_EN
+> NEXT_STEP_CARD_EN
 >
 > Generate your reports
 >
@@ -51,7 +45,7 @@ The default version will show an extended view of the columns. The final report 
 >
 > [Generate your reports](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/account-money/generate)
 
-> RIGHT_BUTTON_RECOMMENDED_EN
+> NEXT_STEP_CARD_EN
 >
 > Glossary
 >

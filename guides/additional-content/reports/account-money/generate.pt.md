@@ -1,11 +1,13 @@
-
-# Como gerar o seu relatório de Dinheiro em conta?
+# Como gerar o seu relatório de Dinheiro em conta
 
 > NOTE
 >
-> Gerencie suas vendas com código QR de um jeito fácil
+> Atenção
 >
-> Criamos novas colunas que permitem que você identifique as carteiras digitais ou os bancos que seus clientes utilizam ao pagarem com um código QR do Mercado Pago. Atualize suas preferências de configuração [no painel](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports/settlement/settings) ou [via API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/account-money/api) para incluir as colunas nos seus relatórios.
+> Gerencie suas vendas com código QR de um jeito fácil. Criamos novas colunas que permitem que você identifique as carteiras digitais ou os bancos que seus clientes utilizam ao pagarem com um código QR do Mercado Pago. Atualize suas preferências de configuração [no painel](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports/settlement/settings) ou [via API](/developers/pt/guides/additional-content/reports/account-money/api) para incluir as colunas nos seus relatórios.
+> <br/>
+> O relatório somente irá gerar informações após configuração do relatório ter sido feita e este seja executado a primeira vez.
+Desse modo, a primeira execução terá um relatório vazio. Não é possível gerar o relatório com informações retroativas à data da configuração e primeira execução.
 
 ## Canais de geração
 
@@ -13,7 +15,7 @@ Há duas formas de gerar um relatório de Dinheiro em conta:
 
 | Canais | Descrição |
 | --- | --- |
-| Painel do Mercado Pago | <br/>É muito rápido e simples. Para gerar a partir da sua conta do Mercado Pago, vá até [seus Relatórios](https://www.mercadopago.com.br/balance/reports?page=1#!/settlement-report) e selecione uma opção de *Relatórios*.<br/><br/>No painel é possível efetuar customizações e programar a geração automática do relatório.<br/><br/>Siga o passo a passo para [gerar relatórios a partir do painel](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/account-money/panel).<br/><br/> |
+| Painel do Mercado Pago | <br/>É muito rápido e simples. Para gerar a partir da sua conta do Mercado Pago, vá até [seus Relatórios](https://www.mercadopago.com.br/balance/reports?page=1#!/settlement-report) e selecione uma opção de *Relatórios*.<br/><br/>No painel é possível efetuar customizações e programar a geração automática do relatório.<br/><br/>Siga o passo a passo para [gerar relatórios a partir do painel](/developers/pt/guides/additional-content/reports/account-money/panel).<br/><br/> |
 | Integração via API | <br/>Programa a frequência do seu relatório de acordo com as suas necessidades. Pode ser tanto de forma manual como de forma programada.<br/><br/>Como no painel, também é possível efetuar customizações no relatório.<br/><br/>Leia a documentação para [gerar relatórios por API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/account-money/api). <br/><br/> |
 
 <br/>
@@ -32,11 +34,9 @@ Programe como e com que frequência você quer gerar seus relatórios.
 | Programação | <br/>- Diária<br/> - Semanal<br/>- Mensal<br/><br/> |
 | Geração | <br/>- Manual<br/><br/> | <br/>- Automática<br/><br/> |
 
-
 ### Estrutura do relatório
 
 Saiba as características dos elementos que compõem seu relatório.
-
 
 | Elemento ou ação | Características |
 | --- | --- |
@@ -47,7 +47,6 @@ Saiba as características dos elementos que compõem seu relatório.
 | Fuso horário das colunas: | <br/> GMT-3 (Horário de Brasília) <br/> <br> Tome como referência o lugar de onde o relatório é baixado. <br/><br/> |
 | Seleção de datas via API |<br/> Formato do fuso horário: UTC / GMT-0 <br/> <br/> |
 | Seleção de datas via web | <br/> Deve ter como base o fuso horário da conta do usuário.<br/> Por exemplo, a conta do usuário cadastrada no Brasil corresponde ao fuso horário de São Paulo. <br/> <br/> |
-
 
 ### Exportação do relatório
 
@@ -60,30 +59,24 @@ Todas as opções disponíveis na hora de baixar seu relatório.
 | Arquivo | <br/>Os relatórios gerados ficam salvos na sua conta do Mercado Pago.<br/><br/> |
 | Configuração disponível via API | <br/>- Colunas a gerar por relatório<br/> - Prefixo do arquivo para identificá-lo facilmente<br/> - Envio por SFTP<br/> - Separador de colunas (ponto ou ponto e vírgula)<br/> - Notificação por e-mail<br/><br/> |
 
-
-
 > NOTE
 >
 > Nota
 >
-> Tenha em mãos o [Glossário do relatório](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/account-money/glossary) de Dinheiro em conta para consultá-lo quando precisar ou queira conferir algum termo técnico.
+> Tenha em mãos o [Glossário do relatório](/developers/pt/guides/additional-content/reports/account-money/glossary) de Dinheiro em conta para consultá-lo quando precisar ou queira conferir algum termo técnico.
 
-<hr/>
-
-### Próximos passos
-
-> LEFT_BUTTON_RECOMMENDED_PT
+> NEXT_STEP_CARD_PT
 >
 > Geração a partir do Mercado Pago 
 >
 > Baixe seus relatórios de forma manual ou programada na sua conta do Mercado Pago.
 >
-> [Geração a partir do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/account-money/panel)
+> [Geração a partir do Mercado Pago](/developers/pt/guides/additional-content/reports/account-money/panel)
 
-> RIGHT_BUTTON_RECOMMENDED_PT
+> NEXT_STEP_CARD_PT
 >
 > Geração via API
 >
 > Crie relatórios de forma programada e manual através de uma integração com o Mercado Pago.
 >
-> [Geração via API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/account-money/api)
+> [Geração via API](/developers/pt/guides/additional-content/reports/account-money/api)
