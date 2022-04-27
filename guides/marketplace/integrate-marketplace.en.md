@@ -6,8 +6,8 @@ In addition to the structure needed to make sales, some marketplaces take care o
 
 If you choose to sell through a Marketplace, it is possible to integrate **two types of Mercado Pago checkout** to process payments made.
 
-* [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/introduction): In this checkout model, the buyer is directed to a Mercado Pago page to complete the payment.
-* [Checkout API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/introduction): This checkout model allows the buyer to make the payment within the marketplace environment.
+* [Checkout Pro](/developers/en/guides/checkout-pro/landing): In this checkout model, the buyer is directed to a Mercado Pago page to complete the payment.
+* [Checkout API](/developers/en/guides/checkout-api/introduction): This checkout model allows the buyer to make the payment within the marketplace environment.
 
 Both checkouts automatically split the amounts between the seller and the marketplace through the _split_ payment
 
@@ -19,8 +19,8 @@ Both checkouts automatically split the amounts between the seller and the market
 
 To perform the integration you will need to follow the usual integration flow of the chosen checkout necessarily using an access token for each seller, obtained through OAuth. Below we list the steps required to integrate a checkout with the marketplace.
 
-1. Follow the steps described in the [OAuth documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/security/oauth/introduction) to get each `access_token`. This information will be needed during the checkout integration process into the marketplace.
-2. Choose the type of checkout you want ([Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/introduction) or [Checkout API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/introduction)) and follow the entire onboarding flow.
+1. Follow the steps described in the [OAuth documentation](/developers/en/guides/additional-content/security/oauth/introduction) to get each `access_token`. This information will be needed during the checkout integration process into the marketplace.
+2. Choose the type of checkout you want ([Checkout Pro](/developers/en/guides/checkout-pro/landing) or [Checkout API](/developers/en/guides/checkout-api/introduction) and follow the entire onboarding flow.
 3. In the checkout integration, use the `public_key` of your integrator account in the frontend and insert the seller's `access_token` obtained in step 1, in the backend or in the request header.
 4. To determine the marketplace commission percentage:
 
