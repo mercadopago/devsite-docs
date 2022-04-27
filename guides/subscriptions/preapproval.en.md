@@ -9,21 +9,18 @@
 > Important
 >
 > This documentation is for internal team use only,  as it has been deprecated or is an exclusive product. For further details, talk to the sales or integrations team.
-> 
+> <br/>
 > In the case of Master and Amex credit cards, the credit card will appear as: "MERPAG * <brand_name>". So for these means that for this payments methods you can communicate: "In your summary you will see the charge as MERPAG * <brand_name>" where <Brand_name> is configured from the Market account Seller payment: Menu -> Settings> Name of my business.
->
+> <br/>
 > With the payments without cvv, you can make recurring charges with Mercado Pago having the freedom to adapt the solution in the most optimal way for your business
-
-> Considerations
+> <br/>
+> This information is provided with the aim of providing all the tools to be able to perform the integration of the solution. The Seller must comply with the integration policies of Mercado Pago:
+> <br/>
+> 1. The Seller must communicate clearly and unequivocally to its user base or clients that the payment platform on its website is provided by Mercado Pago, and the terms or dates and the amounts of recurring payments.
 >
-> This information is provided with the aim of providing all the tools to be able to perform the integration of the solution.
-> The Seller must comply with the integration policies of Mercado Pago:
+> 2. In the event that existing users or customers of the Seller are being migrated to the Payments Recurrent Payment Market platform, the Seller must communicate in writing indicating that Mercado Pago will process the payments, informing that in the summary it will see the charge as MercadoPago / MercadoLibre" (*).
 >
-> A. The Seller must communicate clearly and unequivocally to its user base or clients that the payment platform on its website is provided by Mercado Pago, and the terms or dates and the amounts of recurring payments.
->
-> B. In the event that existing users or customers of the Seller are being migrated to the Payments Recurrent Payment Market platform, the Seller must communicate in writing indicating that Mercado Pago will process the payments, informing that in the summary it will see the charge as MercadoPago / MercadoLibre" (*).
->
-> C. Pre-Approval is only available through the personalized Checkout Pro or web tokenize checkout, that is, via the use of our API's.
+> 3. Pre-Approval is only available through the personalized Checkout Pro or web tokenize checkout, that is, via the use of our API's.
  
 ## Create an application
 
@@ -31,7 +28,7 @@ To create an application you have to enter with your Mercado Pago account at: [h
  
 ## Charge the first payment
  
-For the first transaction you will always have to request the data of the card, and pay the payment with security code. It can be done following the steps of our integration by [API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card).
+For the first transaction you will always have to request the data of the card, and pay the payment with security code. It can be done following the steps of our integration by [API](/developers/en/guides/checkout-api/receiving-payment-by-card).
  
 ## Create a customer and associate the used card
  
@@ -84,7 +81,7 @@ print_r ($card_token);
 >
 > Note
 >
-> Follow the step by step and avoid fraudulent payments with our recommendations to [improve the approval process](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/pci-compliant-merchants/receiving-payment-by-card/#bookmark_get_approval_faster_by_submitting_the_device_fingerprint).
+> Follow the step by step and avoid fraudulent payments with our recommendations to [improve the approval process](/guides/additional-content/resources/pci-compliant-merchants/receiving-payment-by-card/#bookmark_get_approval_faster_by_submitting_the_device_fingerprint).
 
 ### Do the Payment:
 
@@ -110,12 +107,11 @@ $payment = $mp->post("/v1/payments", $payment_data);
 
 ## Listen for notifications of payments
 
- Every time a payment is made and there is a novelty about the payment, Mercado Pago will send you a notification so you can update your systems. You can see the step by step in our section of [notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/webhooks/webhooks)
+ Every time a payment is made and there is a novelty about the payment, Mercado Pago will send you a notification so you can update your systems. You can see the step by step in our section of [notifications](/developers/en/guides/additional-content/notifications/webhooks/webhooks)
  
  ## Retries
 
  If the payment without cvv is rejected, we recommend that you follow a retry logic according to the rejection status. For example, if the payment was rejected by expired card it does not make sense for a retry to be made. The client must be asked to inform another card to pay the following charges. In case the rejection is for insufficient funds, it makes sense that a logic of retries be made.
- You can see all the rejections [here](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/handling-responses)
  
  ## Test your integration
 
@@ -134,7 +130,7 @@ $payment = $mp->post("/v1/payments", $payment_data);
 | Perú | 4009 1753 3280 6176 | no disponible | no disponible |
 | Uruguay | 4157 2362 1173 6486 |5808 8877 7464 1586| no disponible |
 
-Also [you can use test cards of local payment methods in each country](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/local-cards).
+Also [you can use test cards of local payment methods in each country](/developers/en/guides/additional-content/testing/test-cards).
 Test all possible scenarios of approved, pending or rejected payment. To do this you must enter in the form in the field `card_holder_name` any of the following prefixes:
 
 * **APRO**: Pago aprobado.  

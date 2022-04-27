@@ -11,8 +11,8 @@ Para generar el código de autorización, es preciso cumplir con los requisitos 
 | Requisitos | Descripción | Especificaciones |
 | --- | --- | --- |
 | Cuentas de vendedor de Mercado Pago | Se requerirán cuentas de vendedor de Mercado Pago. Uno para ti y otro para el vendedor. | Cuenta de vendedor en Mercado Pago. Si no la tienes, haz [clic aquí](https://www.mercadopago[FAKER][URL[DOMAIN]/hub/registration/landing) para crear. |
-| Aplicación | Las aplicaciones son las distintas integraciones contenidas en una o varias tiendas. Puedes crear una aplicación para cada solución que implementes, con el fin de tener todo organizado y mantener un control que facilite la gestión. | Para usar OAuth necesitarás tener una aplicación creada. Consulta la documentación del [Dashboard](https://www.mercadopago[FAKER][URL[DOMAIN]/developers/es/guides/additional-content/dashboard/introduction) para obtener información sobre cómo crear una aplicación. |
-| Credenciales | Las [credenciales](https://www.mercadopago[FAKER][URL[DOMAIN]/developers/es/guides/resources/credentials) son contraseñas únicas con las que identificamos una integración en tu cuenta y sirven para capturar pagos de forma segura en tiendas virtuales y otras aplicaciones. | Para realizar pruebas y garantizar que la integración funcione, se requerirán credenciales de prueba. Después de este paso, necesitarás credenciales de producción para recibir pagos reales. |
+| Aplicación | Las aplicaciones son las distintas integraciones contenidas en una o varias tiendas. Puedes crear una aplicación para cada solución que implementes, con el fin de tener todo organizado y mantener un control que facilite la gestión. | Para usar OAuth necesitarás tener una aplicación creada. Consulta la documentación del [Dashboard](/developers/es/guides/additional-content/dashboard/introduction) para obtener información sobre cómo crear una aplicación. |
+| Credenciales | Las [credenciales](/developers/es/guides/additional-content/credentials/credentials) son contraseñas únicas con las que identificamos una integración en tu cuenta y sirven para capturar pagos de forma segura en tiendas virtuales y otras aplicaciones. | Para realizar pruebas y garantizar que la integración funcione, se requerirán credenciales de prueba. Después de este paso, necesitarás credenciales de producción para recibir pagos reales. |
 | Redirect URL | Dirección a la que deseas reenviar a los vendedores después de haberlos vinculado correctamente. | Esta es una dirección en tu servidor donde se recibirán los access tokens. |
 | URL de autenticación | Dirección a la que desea enviar a los vendedores para autorizar el acceso a datos privados. | Esta es una dirección en el servidor de Mercado Pago donde se otorga expresamente el permiso para acceder a los datos privados. |
  
@@ -22,14 +22,14 @@ Para generar el código de autorización, es preciso cumplir con los requisitos 
 >
 > Recuerda que utilizarás información sensible de tus vendedores. Asegúrate de guardarla de forma segura. No la utilices en la URL de autenticación y gestiona todo el proceso únicamente desde tu servidor.
  
-1. Edita tu aplicación para que contenga tu Redirect URL. Consulta [Editar aplicación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/dashboard/applications).
+1. Edita tu aplicación para que contenga tu Redirect URL. Consulta [Editar aplicación](/developers/es/guides/additional-content/dashboard/applications).
 2. Envie a URL de autenticación para o vendedor cuja conta você deseja vincular à sua com os seguintes campos:
 
    |Descripción|URL| 
    |---|---|
    | URL de autenticación | https://auth.mercadopago.com/authorization?client_id=APP_ID&response_type=code&platform_id=mp&state=RANDOM_ID&redirect_uri=https://www.redirect-url.com |
  
-     * **client_id**: edita tu aplicación para que contenga tu Redirect  URL. Consulta [ID de aplicación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/dashboard/applications).
+     * **client_id**: edita tu aplicación para que contenga tu Redirect  URL. Consulta [ID de aplicación](/developers/es/guides/additional-content/dashboard/applications).
      * **state**: reemplaza el valor "RANDOM_ID" con un identificador que sea único para cada intento y que no incluya información confidencial para que puedas identificar de quién es el código recibido.
      * **redirect_uri**: agrega la URL informada en el campo Redirect URL de tu aplicación.
      <br/>
@@ -41,11 +41,26 @@ Para generar el código de autorización, es preciso cumplir con los requisitos 
    |---|---|
    | Redirect URL | https://www.redirect-url.com?code=CODE&state=RANDOM_ID |
  
-5. Envía tus credenciales y código de autorización al endpoint [/oauth/token](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/oauth/_oauth_token/post) para recibir el access token como respuesta.
+5. Envía tus credenciales y código de autorización al endpoint [/oauth/token](/developers/es/reference/oauth/_oauth_token/post) para recibir el access token como respuesta.
  
 > WARNING
 >
 > Atención
 >
 > Se recomienda realizar este procedimiento de una única vez junto con el usuario, ya que el código recibido por la Redirect URL después de la autorización tiene una validez de 10 minutos y el access token recibido a través del endpoint tiene una validez de 180 días.
- 
+
+> PREV_STEP_CARD_ES
+>
+> Introducción
+>
+> Vea más información sobre las principales características de OAuth.
+>
+> [Introducción](/developers/es/guides/additional-content/security/oauth/introduction)
+
+> NEXT_STEP_CARD_ES
+>
+> Renovación del access token
+>
+> Lee sobre el flujo de renovación de un access token caducado.
+>
+> [Renovación](/developers/es/guides/additional-content/security/oauth/renewal)

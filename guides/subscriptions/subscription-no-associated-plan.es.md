@@ -11,7 +11,7 @@ Este modelo de suscripción se puede realizar de dos formas:
 
 Las suscripciones con pago autorizado permiten generar y facturar la cuota de una suscripción en función de la periodicidad definida, lo que hace que el motor de suscripciones programe y cree automáticamente pagos en función del método de pago definido en el momento de la creación de la firma.
 
-Para ofrecer **suscripciones sin plan asociado y con pago autorizado**, envía un POST con los atributos necesarios al endpoint [/preapproval](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/subscriptions/_preapproval/post) y presta atención al parámetro `status`, que debe ser rellenado con el valor `autorizado`. 
+Para ofrecer **suscripciones sin plan asociado y con pago autorizado**, envía un POST con los atributos necesarios al endpoint [/preapproval](/developers/es/reference/subscriptions/_preapproval/post) y presta atención al parámetro `status`, que debe ser rellenado con el valor `autorizado`. 
 
 Después de completar los campos, ejecuta la solicitud.
 
@@ -25,9 +25,9 @@ Después de completar los campos, ejecuta la solicitud.
 
 Las suscripciones con pago pendiente son un modelo de suscripción donde no se define un método de pago en el momento de su creación. Cuando esto ocurre, los pagos pasan automáticamente al estado `pending` y dependen de que el usuario busque una forma de completar el pago.
 
-En este caso, es posible actualizar la suscripción y definir un medio de pago a través del endpoint [/preapproval/{id}](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/subscriptions/_preapproval_id/put), o compartir un link de pago para que el comprador pueda completar la compra con el método de pago de su elección.
+En este caso, es posible actualizar la suscripción y definir un medio de pago a través del endpoint [/preapproval/{id}](/developers/es/reference/subscriptions/_preapproval_id/put), o compartir un link de pago para que el comprador pueda completar la compra con el método de pago de su elección.
 
-Para ofrecer **suscripciones sin plan asociado y con pago pendiente**, envía un POST con los atributos necesarios al endpoint [/preapproval](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/subscriptions/_preapproval/post) y presta atención al parámetro `status`, que debe ser rellenado con el valor `pending`. 
+Para ofrecer **suscripciones sin plan asociado y con pago pendiente**, envía un POST con los atributos necesarios al endpoint [/preapproval](/developers/es/reference/subscriptions/_preapproval/post) y presta atención al parámetro `status`, que debe ser rellenado con el valor `pending`. 
 
 Después de completar los campos, ejecute la solicitud.
 

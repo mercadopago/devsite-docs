@@ -12,7 +12,7 @@ The flow allows you to continue using a valid access token with the same charact
  
 To renew the **access token**:
  
-1. Send the `refresh_token` code, your **credentials**, and the `authorization_code` (see [Creation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/security/oauth/creation)) to the [/oauth/token](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/oauth/_oauth_token/post) endpoint with the `refresh_token` code in the `grant_type` parameter to receive a new response with a new access token and a new `refresh_token`.
+1. Send the `refresh_token` code, your **credentials**, and the `authorization_code` (see [Creation](/developers/en/guides/additional-content/security/oauth/creation)) to the [/oauth/token](/developers/en/reference/oauth/_oauth_token/post) endpoint with the `refresh_token` code in the `grant_type` parameter to receive a new response with a new access token and a new `refresh_token`.
 2. Update the application with the access token received in the response.
  
 > WARNING
@@ -20,4 +20,19 @@ To renew the **access token**:
 > Important
 >
 > Remember that every time you refresh the access token, the `refresh_token` will also be refreshed, so you will need to store it again.
- 
+
+> PREV_STEP_CARD_EN
+>
+> Access creation
+>
+> Know the data access authorization flow.
+>
+> [Creation](/developers/en/guides/additional-content/security/oauth/creation)
+
+> NEXT_STEP_CARD_EN
+>
+> OAuth Management
+>
+> See how to disabled and invalidated features.
+>
+> [Management](/developers/en/guides/additional-content/security/oauth//management) 

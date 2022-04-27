@@ -12,7 +12,7 @@ O fluxo permite continuar utilizando um access token válido com as mesmas carac
  
 Para renovar o **access token**:
  
-1. Envie o código do `refresh_token`, as suas **credenciais** e o `authorization_code` (veja [Criação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/security/oauth/creation)) ao endpoint [/oauth/token](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/oauth/_oauth_token/post) com o código do `refresh_token` no parâmetro `grant_type` para receber uma nova resposta com um novo `access_token` e um novo `refresh_token`.
+1. Envie o código do `refresh_token`, as suas **credenciais** e o `authorization_code` (veja [Criação](/developers/pt/guides/additional-content/security/oauth/creation)) ao endpoint [/oauth/token](/developers/pt/reference/oauth/_oauth_token/post) com o código do `refresh_token` no parâmetro `grant_type` para receber uma nova resposta com um novo `access_token` e um novo `refresh_token`.
 2. Atualize a aplicação com o access token recebido na resposta.
  
 > WARNING
@@ -21,3 +21,18 @@ Para renovar o **access token**:
 >
 > Lembre-se que cada vez que você renovar o `access_token`, o `refresh_token` também vai ser renovado, por tanto, você deverá armazená-lo novamente.
  
+> PREV_STEP_CARD_PT
+>
+> Criação de acesso
+>
+> Conheça o fluxo de autorização de acesso aos dados.
+>
+> [Criação](/developers/pt/guides/additional-content/security/oauth/creation)
+
+> NEXT_STEP_CARD_PT
+>
+> Genrenciamento do OAuth
+>
+> Veja como desabilitar e invalidar os recursos.
+>
+> [Gerenciamento](developers/pt/guides/additional-content/security/oauth/management)

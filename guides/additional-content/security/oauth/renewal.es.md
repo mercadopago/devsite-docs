@@ -12,7 +12,7 @@ El flujo permite continuar utilizando un access token válido con las mismas car
  
 Para renovar el **access token**:
  
-1. Envía el código de `refresh_token`, tus credenciales y el `authorization_code` (consulta [Creación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/security/oauth/creation)) del endpoint [/oauth/token](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/oauth/_oauth_token/post) con el código de `refresh_token` en el parámetro `grant_type` para recibir una nueva respuesta con un nuevo access token y un nuevo `refresh_token`.
+1. Envía el código de `refresh_token`, tus credenciales y el `authorization_code` (consulta [Creación](/developers/es/guides/additional-content/security/oauth/creation)) del endpoint [/oauth/token](/developers/es/reference/oauth/_oauth_token/post) con el código de `refresh_token` en el parámetro `grant_type` para recibir una nueva respuesta con un nuevo access token y un nuevo `refresh_token`.
 2. Actualiza la aplicación con el access token recibido en la respuesta.
  
 > WARNING
@@ -20,4 +20,19 @@ Para renovar el **access token**:
 > Importante
 >
 > Recuerda que cada vez que renueves el access token, también se renovará el `refresh_token`, por lo que deberás almacenarlo nuevamente.
+
+> PREV_STEP_CARD_ES
+>
+> Creación de acceso
+>
+> Conoce el flujo de autorización de acceso a datos.
+>
+> [Creación](developers/es/guides/additional-content/security/oauth/creation)
  
+> NEXT_STEP_CARD_ES
+>
+> Administración de OAuth.
+>
+> Aprende cómo deshabilitar e invalidar funciones.
+>
+> [Administración](/developers/es/guides/additional-content/security/oauth/management)
