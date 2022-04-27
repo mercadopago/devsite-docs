@@ -79,7 +79,7 @@ Utiliza el siguiente formulario y agrega los estilos que desees.
 <!-- Step #2 -->
 <form id="form-checkout" >
    <input type="text" name="cardNumber" id="form-checkout__cardNumber" />
-   <input type="text" name="cardExpirationDate" id="form-checkout__cardExpirationDate" />
+    <input type="text" name="expirationDate" id="form-checkout__expirationDate" />
    <input type="text" name="cardholderName" id="form-checkout__cardholderName"/>
    <input type="email" name="cardholderEmail" id="form-checkout__cardholderEmail"/>
    <input type="text" name="securityCode" id="form-checkout__securityCode" />
@@ -121,8 +121,8 @@ const cardForm = mp.cardForm({
       id: "form-checkout__cardNumber",
       placeholder: "Número de la tarjeta",
     },
-    cardExpirationDate: {
-      id: "form-checkout__cardExpirationDate",
+    expirationDate: {
+      id: "form-checkout__expirationDate",
       placeholder: "Fecha de vencimiento (MM/YYYY)",
     },
     securityCode: {
