@@ -1,6 +1,4 @@
-
 # Glossary
-
 
 We know, some terms are technical and you may not be familiar with all of them. Use this glossary to not get lost!
 
@@ -47,11 +45,7 @@ We know, some terms are technical and you may not be familiar with all of them. 
 | POI_BANK_NAME | Name of the bank that a virtual payment comes from. Allows you to identify the origin of a transaction when you charge with a Mercado Pago QR Code.|
 | CARD_INITIAL_NUMBER | It corresponds to the first digits of the credit or debit card that you used to make the purchase. |
 
-<hr/>
-
-### Next steps
-
-> LEFT_BUTTON_RECOMMENDED_EN
+> NEXT_STEP_CARD_EN
 >
 > How to use the report
 >
@@ -59,7 +53,7 @@ We know, some terms are technical and you may not be familiar with all of them. 
 >
 > [How to use the report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/account-money/how-to-use)
 
-> RIGHT_BUTTON_REQUIRED_EN
+> NEXT_STEP_CARD_EN
 >
 > Generate your reports
 >

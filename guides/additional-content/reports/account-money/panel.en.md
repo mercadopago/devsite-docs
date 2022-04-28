@@ -1,8 +1,6 @@
-
 # Generation by the Mercado Pago panel
 
 Generate your Account Money reports from your Mercado Pago panel.
-
 
 Follow these steps to generate your reports:
 
@@ -18,11 +16,7 @@ Done! You will see your report *In preparation*.
 >
 > Have the [Glossary of the Account Money report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/account-money/glossary) on hand to review it when needed or want to review a technical term.
 
-<hr/>
-
-### Next steps
-
-> LEFT_BUTTON_RECOMMENDED_EN
+> NEXT_STEP_CARD_EN
 >
 > Generating through API
 >
@@ -30,7 +24,7 @@ Done! You will see your report *In preparation*.
 >
 > [Generating through API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/account-money/api)
 
-> RIGHT_BUTTON_RECOMMENDED_EN
+> NEXT_STEP_CARD_EN
 >
 > Glossary
 >

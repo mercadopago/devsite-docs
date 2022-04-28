@@ -1,11 +1,8 @@
-
 # ¿Qué es el reporte de Todas las transacciones?
-
 
 El reporte de Todas las transacciones es un **informe descargable que te permite conocer las operaciones que afectaron el balance de tu dinero.**
 
 Contiene, por ejemplo, el detalle de tus pagos, los ingresos de dinero, los contracargos y las devoluciones, en un periodo de tiempo con su desglose en bruto y neto. Está compuesto por la suma del dinero disponible, el dinero a liquidar y el dinero embargado o retenido. Es decir, todo el dinero que hay en tu cuenta independientemente del estado en el que se encuentre. 
-
 
 ## ¿Cómo descargo el reporte?
 
@@ -15,7 +12,6 @@ Una vez disponible, estará en tu bandeja de reportes y siempre lo podrás desca
 
 * Desde un link de descarga que te enviaremos por e-mail.
 * Desde tu cuenta de Mercado Pago, ve a ----[mla]---- [tus reportes](https://www.mercadopago.com.ar/balance/reports?page=1#!/settlement-report) ------------ ----[mlm]---- [tus reportes](https://www.mercadopago.com.mx/balance/reports?page=1#!/settlement-report) ------------ ----[mlu]---- [tus reportes](https://www.mercadopago.com.uy/balance/reports?page=1#!/settlement-report) ------------ ----[mlc]---- [tus reportes](https://www.mercadopago.cl/balance/reports?page=1#!/settlement-report) ------------ ----[mco]---- [tus reportes](https://www.mercadopago.com.co/balance/reports?page=1#!/settlement-report) ------------ ----[mpe]---- [tus reportes](https://www.mercadopago.com.pe/balance/reports?page=1#!/settlement-report) ------------ ----[mlb]---- [tus reportes](https://www.mercadopago.com.br/balance/reports?page=1#!/settlement-report) ------------ y elige la opción *Todas tus transacciones*.
-
 
 ### Valores del reporte
 
@@ -37,10 +33,7 @@ Además, puedes usar el reporte para conocer el historial de tu dinero entre dos
 >
 > Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/account-money/glossary) de Todas las transacciones para revisarlo cuando necesites o quieras consultar algún término técnico.
 
-
-### Próximos pasos
-
-> LEFT_BUTTON_RECOMMENDED_ES
+> NEXT_STEP_CARD_ES
 >
 > Cómo usar el reporte
 >
@@ -48,7 +41,7 @@ Además, puedes usar el reporte para conocer el historial de tu dinero entre dos
 >
 > [Cómo usar el reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/account-money/how-to-use)
 
-> RIGHT_BUTTON_REQUIRED_ES
+> NEXT_STEP_CARD_ES
 >
 > Genera tus reportes
 >

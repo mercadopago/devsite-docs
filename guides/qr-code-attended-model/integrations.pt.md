@@ -54,7 +54,7 @@ https://api.mercadopago.com/instore/qr/seller/collectors/USER_ID/stores/EXTERNAL
 Pode obter mais informações em [Referências do API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_stores_external_store_id_pos_external_pos_id_orders/put).
 
 ----[mco]----
-> Se você precisa pagar o IVA para os produtos do seu pedido, visite a [seção de Considerações IVA Colômbia](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/iva-colombia).
+> Se você precisa pagar o IVA para os produtos do seu pedido, visite a [seção de Considerações IVA Colômbia](/developers/pt/guides/additional-content/localization/iva-colombia).
 ------------
 
 Assim que o pedido for criado, ele estará disponível para ser **digitalizado e pago**.
@@ -78,11 +78,11 @@ A resposta será um `HTTP 204 No Content`.
 
 ## Receba notificações de suas ordens 
 
-As [notificações IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn/introduction) (Instant Payment Notification) são a **forma automática de aviso da criação de novas ordens e as atualizações de seus estados**. Por exemplo, se foram aprovadas, recusadas ou se estiverem pendentes. 
+As [notificações IPN](/developers/pt/guides/notifications/ipn/introduction) (Instant Payment Notification) são a **forma automática de aviso da criação de novas ordens e as atualizações de seus estados**. Por exemplo, se foram aprovadas, recusadas ou se estiverem pendentes. 
 
 Implementa IPN de `merchant_order` junto com uma busca do pedido por `external_reference` como método de contingência.
 
-[Receber notificações IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn/introduction)
+[Receber notificações IPN](/developers/pt/docs/qr-code/additional-content/notifications/ipn)
 
 ---
 
@@ -92,7 +92,7 @@ Implementa IPN de `merchant_order` junto com uma busca do pedido por `external_r
 >
 > Uma introdução ao modelo QR atendido
 >
-> [Introdução](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/qr-code/qr-attended
+> [Introdução](/developers/pt/docs/qr-code/qr-attended-model/introduction)
 
 > NEXT_STEP_CARD_PT
 >
@@ -100,4 +100,4 @@ Implementa IPN de `merchant_order` junto com uma busca do pedido por `external_r
 >
 > Conheça as opções disponibilizadas para chegar à integração para o seguinte nível.
 >
-> [Integración avanzada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/qr-code/advanced-integration)
+> [Integración avanzada](/developers/pt/guides/qr-code/advanced-integration)

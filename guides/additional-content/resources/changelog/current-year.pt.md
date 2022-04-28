@@ -1,8 +1,45 @@
 # Changelog
-
 Descubra tudo sobre as novas versões e atualizações das integrações do Mercado Pago.
 
 ---
+
+## Abril 2022
+
+### 19 de abril
+
+> CHANGELOG
+>
+> Nova versão WooCommerce
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: WOOCOMMERCE
+Lançamos a nova versão 5.7.6 para WooCommerce.
+
+[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v5.7.6).
+
+### 07 de abril
+
+> CHANGELOG
+>
+> Novidades MercadoPago.js V2
+>
+> NEWS: NOVIDADES
+>
+> PRODUCT: MERCADO PAGO
+Adicionamos novos callbacks ao Card Form: **onError**, **onValidityChange** e **onReady**.
+
+Alteramos a nomenclatura de alguns campos no Card Form. Os campos **cardExpirationMonth**, **cardExpirationYear** e **cardExpirationDate** tornaram-se **expirationMonth**, **expirationYear** e **expirationDate**, respectivamente.
+
+Adicionamos uma nova forma mais segura de integração por [Card Form](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/receiving-payment-by-card-v2) e [Métodos Core](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/receiving-payment-by-card-core-methods-v2), chamada Secure Fields.
+
+Mais informações podem ser encontradas em nossa [referência técnica](https://github.com/mercadopago/sdk-js).
 
 ## Março 2022
 

@@ -1,4 +1,3 @@
-
 # Geração via API
 
 Você pode gerar seu relatório via API, tanto de forma manual quanto programada.
@@ -639,11 +638,9 @@ Como resposta, você receberá um `HTTP STATUS 200 (Ok)`
 }
 ```
 
-
 ## Atributos configuráveis
 
 Confira os campos que você pode configurar para ajustar suas preferências antes de começar:
-
 
 | Campos configuráveis | Descrição |
 | --- | --- |
@@ -1035,7 +1032,6 @@ Como resposta, você receberá um  `HTTP STATUS 200 (Ok)`
 }
 ```
 
-
 ### 2. Configuração
 
 Execute o curl que precisar para iniciar e cancelar a geração programada dos seus relatórios.
@@ -1213,11 +1209,7 @@ EXTERNAL_REFERENCE;SOURCE_ID;USER_ID;PAYMENT_METHOD_TYPE;PAYMENT_METHOD;SITE;TRA
 >
 > Para consultar a versão anterior, por favor, acesse a [seção Geração por API antiga](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/account-money/v1/api).
 
-<hr/>
-
-### Próximos passos
-
-> LEFT_BUTTON_RECOMMENDED_PT
+> NEXT_STEP_CARD_PT
 >
 > Geração a partir do Mercado Pago
 >
@@ -1225,7 +1217,7 @@ EXTERNAL_REFERENCE;SOURCE_ID;USER_ID;PAYMENT_METHOD_TYPE;PAYMENT_METHOD;SITE;TRA
 >
 > [Geração a partir do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/account-money/panel)
 
-> RIGHT_BUTTON_RECOMMENDED_PT
+> NEXT_STEP_CARD_PT
 >
 > Glossário
 >

@@ -1,8 +1,6 @@
-
 # Geração pelo painel do Mercado Pago
 
 Gere seus relatórios de Dinheiro em conta a partir do seu painel do Mercado Pago.
-
 
 Siga estas etapas para gerar seus relatórios:
 
@@ -12,18 +10,13 @@ Siga estas etapas para gerar seus relatórios:
 
 Pronto! Você verá seu relatório *Em preparação*.
 
-
 > NOTE
 >
 > Nota
 >
 > Tenha em mãos o [Glossário do relatório](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/account-money/glossary) de Dinheiro em conta para consultá-lo quando precisar ou queira conferir algum termo técnico.
 
-<hr/>
-
-### Próximos passos
-
-> LEFT_BUTTON_RECOMMENDED_PT
+> NEXT_STEP_CARD_PT
 >
 > Geração via API
 >
@@ -31,7 +24,7 @@ Pronto! Você verá seu relatório *Em preparação*.
 >
 > [Geração via API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/account-money/api)
 
-> RIGHT_BUTTON_RECOMMENDED_PT
+> NEXT_STEP_CARD_PT
 >
 > Glossário
 >

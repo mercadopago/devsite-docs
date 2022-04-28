@@ -1,4 +1,3 @@
-
 # Generación por API
 
 Puedes generar tu reporte por API, tanto de forma manual como de forma programada. Gana tiempo y **automatiza la frecuencia de generación del reporte** de Todas las transacciones las veces que quieras.
@@ -376,7 +375,6 @@ Recibirás como respuesta un `HTTP STATUS 201 (Created)`
 
 Cuando necesites actualizar tu configuración, puedes ajustar los siguientes atributos:
 
-
 [[[
 ```curl
 curl -X PUT \
@@ -637,11 +635,9 @@ Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
 }
 ```
 
-
 ## Atributos configurables
 
 Conoce los campos que puedes configurar para ajustar tus preferencias antes de empezar:
-
 
 | Campos configurables | Descripción |
 | --- | --- |
@@ -666,7 +662,6 @@ Conoce los campos que puedes configurar para ajustar tus preferencias antes de e
 > Nota
 >
 > Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/account-money/glossary) de Todas las transacciones para revisarlo cuando necesites o quieras consultar algún término técnico.
-
 
 ## Generar de forma manual
 
@@ -1029,11 +1024,9 @@ Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
 }
 ```
 
-
 ### 2. Configuración
 
 Ejecuta el curl que necesites para cancelar la generación programada de tus reportes.
-
 
 [[[
 ```curl
@@ -1125,7 +1118,6 @@ Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
 
 Descarga el archivo con este comando:
 
-
 [[[
 ```curl
 curl -X GET \
@@ -1207,11 +1199,7 @@ EXTERNAL_REFERENCE;SOURCE_ID;USER_ID;PAYMENT_METHOD_TYPE;PAYMENT_METHOD;SITE;TRA
 >
 > Para consultar la versión anterior, visita la [sección de Generación por API antigua](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/account-money/v1/api).
 
-<hr/>
-
-### Próximos pasos
-
-> LEFT_BUTTON_RECOMMENDED_ES
+> NEXT_STEP_CARD_ES
 >
 > Generación desde Mercado Pago
 >
@@ -1219,7 +1207,7 @@ EXTERNAL_REFERENCE;SOURCE_ID;USER_ID;PAYMENT_METHOD_TYPE;PAYMENT_METHOD;SITE;TRA
 >
 > [Generación desde Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/account-money/panel)
 
-> RIGHT_BUTTON_RECOMMENDED_ES
+> NEXT_STEP_CARD_ES
 >
 > Glosario
 >

@@ -23,4 +23,4 @@ Para integrar Checkout Pro, es importante que se cumplan todos los requisitos pr
 >
 > Vea cómo crear conjuntos de información sobre un producto y/o servicio.
 >
-> [Crear preferencias](/developers/es/docs/checkout-pro/requirements)
+> [Crear preferencias](/developers/es/docs/checkout-pro/create-preference)

@@ -1,4 +1,3 @@
-
 # Generating through API
 
 You can generate your report through API both manually and on a scheduled basis. 
@@ -664,7 +663,6 @@ Know the fields you can configure to adjust your preferences before you start:
 >
 > Have the [Glossary of the Account Money report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/account-money/glossary) on hand to review it when needed or want to review a technical term.
 
-
 ## Generating manually 
 
 Generate your reports manually by configuring three instances: generation, search and download.
@@ -1201,11 +1199,7 @@ EXTERNAL_REFERENCE;SOURCE_ID;USER_ID;PAYMENT_METHOD_TYPE;PAYMENT_METHOD;SITE;TRA
 >
 > To check the previous version, please go to the [old API Generation section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/account-money/v1/api).
 
-<hr/>
-
-### Next steps
-
-> LEFT_BUTTON_RECOMMENDED_EN
+> NEXT_STEP_CARD_EN
 >
 > Generating from Mercado Pago
 >
@@ -1213,7 +1207,7 @@ EXTERNAL_REFERENCE;SOURCE_ID;USER_ID;PAYMENT_METHOD_TYPE;PAYMENT_METHOD;SITE;TRA
 >
 > [Generating from Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/account-money/panel)
 
-> RIGHT_BUTTON_RECOMMENDED_EN
+> NEXT_STEP_CARD_EN
 >
 > Glossary
 >

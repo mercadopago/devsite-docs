@@ -1,6 +1,5 @@
 # Glossário
 
-
 Sabemos que alguns termos são técnicos e você pode não estar familiarizado com todos eles. Use este glossário para não se perder!
 
 | Nome da coluna do relatório | O que significa |
@@ -49,11 +48,7 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 ----[mlb]----| INSTALLMENT_NUMBER* | Indica o número da parcela que será paga, do total de parcelas contratadas.<br> Essa informação aparece quando o cliente solicita o parcelamento da compra.<br> Por exemplo: 2 / 5 indica o pagamento da segunda parcela, de um total das 5 parcelas contratadas.<br> Quando o pagamento é liberado em uma única parcela essa coluna não estará preenchida.|------------
 ----[mlb]----| INSTALLMENT_NET_AMOUNT* | Mostra o valor líquido da parcela que será paga.<br> Essa informação aparece quando o cliente escolhe pagar o valor total da compra em parcelas mensais. |------------
 
-<hr/>
-
-### Próximos passos
-
-> LEFT_BUTTON_RECOMMENDED_PT
+> NEXT_STEP_CARD_PT
 >
 > Como usar o relatório
 >
@@ -61,7 +56,7 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 >
 > [Como usar o relatório](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/account-money/how-to-use)
 
-> RIGHT_BUTTON_REQUIRED_PT
+> NEXT_STEP_CARD_PT
 >
 > Gere seus relatórios
 >

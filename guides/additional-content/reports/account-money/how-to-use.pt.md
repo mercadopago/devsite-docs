@@ -8,7 +8,6 @@ Para consultar o relatório, recomendamos baixá-lo em formato .csv para poder a
 
 O relatório está composto por diferentes tipos de transações que você pode ver na coluna `TRANSACTION_TYPE`. Cada uma delas terá um valor bruto da operação.
 
-<br/>
 
 | Transações | Tipo de operação |
 | --- | --- |
@@ -40,13 +39,10 @@ Observe como está composto o relatório de Dinheiro em conta neste exemplo para
 
 A versão padrão mostrará uma visualização estendida das colunas. O relatório final terá a maior quantidade de detalhes possível.
 
-<hr/>
 
 Para transações do tipo PNF - Pagamento no Fluxo, acesse [Pagamentos no fluxo no relatório de dinheiro disponível](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/extra/pnf-bank) para mais informações sobre como utilizar o relatório **Dinheiro em conta** para planejar sua agenda de recebimento das cotas a serem liberadas.
 
-### Próximos passos
-
-> LEFT_BUTTON_REQUIRED_PT
+> NEXT_STEP_CARD_PT
 >
 > Gere seus relatórios
 >
@@ -54,7 +50,7 @@ Para transações do tipo PNF - Pagamento no Fluxo, acesse [Pagamentos no fluxo 
 >
 > [Gere seus relatórios](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/account-money/generate)
 
-> RIGHT_BUTTON_RECOMMENDED_PT
+> NEXT_STEP_CARD_PT
 >
 > Glossário
 >
