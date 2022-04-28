@@ -52,10 +52,10 @@ https://api.mercadopago.com/instore/qr/seller/collectors/USER_ID/stores/EXTERNAL
 }
 ```
 
-Puedes obtener más información en la [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_stores_external_store_id_pos_external_pos_id_orders/put).
+Puedes obtener más información en la [Referencias de API](/developers/es/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_stores_external_store_id_pos_external_pos_id_orders/put).
 
 ----[mco]----
-> Si debes pagar IVA para los productos de tu orden, visita la [sección de Consideraciones IVA Colombia](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/iva-colombia).
+> Si debes pagar IVA para los productos de tu orden, visita la [sección de Consideraciones IVA Colombia](/developers/es/guides/additional-content/localization/iva-colombia).
 ------------
 
 Una vez creada la orden, ya se encuentra disponible para ser **escaneada y pagada**.
@@ -85,7 +85,7 @@ Las notificaciones IPN (Instant Payment Notification) son la **forma automática
 
 Implementa IPN de `merchant_order` junto con una búsqueda de la orden por `external_reference` como método de contingencia.
 
-[Recibir notificaciones IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn/introduction)
+[Recibir notificaciones IPN](/developers/es/docs/qr-code/additional-content/notifications/ipn)
 
 ---
 
@@ -95,7 +95,7 @@ Implementa IPN de `merchant_order` junto con una búsqueda de la orden por `exte
 >
 > Una introducción a QR Modelo atendido
 >
-> [Introducción](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es /guides/qr-code/qr-attended)
+> [Introducción](/developers/es/docs/qr-code/qr-attended-model/introduction)
 
 > NEXT_STEP_CARD_ES
 >
@@ -103,4 +103,4 @@ Implementa IPN de `merchant_order` junto con una búsqueda de la orden por `exte
 >
 > Conoce las opciones que dispones para llevar tu integración al siguiente nivel.
 >
-> [Integración avanzada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/qr-code/advanced-integration)
+> [Integración avanzada](/developers/es/guides/qr-code/advanced-integration)

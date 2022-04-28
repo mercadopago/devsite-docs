@@ -52,10 +52,10 @@ https://api.mercadopago.com/instore/qr/seller/collectors/USER_ID/stores/EXTERNAL
 }
 ```
 
-Obtain more information in our [API Reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_stores_external_store_id_pos_external_pos_id_orders/put).
+Obtain more information in our [API Reference](/developers/en/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_stores_external_store_id_pos_external_pos_id_orders/put).
 
 ----[mco]----
-> If you must pay IVA for the products in your order, visit the [Considerations IVA Colombia section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/iva-colombia).
+> If you must pay IVA for the products in your order, visit the [Considerations IVA Colombia section](/developers/en/guides/additional-content/localization/iva-colombia).
 ------------
 
 Once the order is created, it is available to be **scanned and paid**.
@@ -81,11 +81,11 @@ The response will be `HTTP 204 No Content`.
 
 ## Receive notifications of your orders
 
-[IPN notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn/introduction) are an **automatic way of receiving notifications for order creation and status updates**. I.e.: when orders are approved, rejected or pending. 
+[IPN notifications](/developers/en/guides/notifications/ipn/introduction) are an **automatic way of receiving notifications for order creation and status updates**. I.e.: when orders are approved, rejected or pending. 
 
 Implement IPN `merchant_order` with an order search by `external_reference` as a contingency method.
 
-[Receive IPN notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn/introduction)
+[Receive IPN notifications](/developers/en/docs/qr-code/additional-content/notifications/ipn)
 
 ---
 > PREV_STEP_CARD_EN
@@ -94,7 +94,7 @@ Implement IPN `merchant_order` with an order search by `external_reference` as a
 >
 > An introduction to QR attended model
 >
-> [Introduction](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/qr-code/qr-attended)
+> [Introduction](/developers/en/docs/qr-code/qr-attended-model/introduction)
 
 > NEXT_STEP_CARD_EN
 >
@@ -102,4 +102,4 @@ Implement IPN `merchant_order` with an order search by `external_reference` as a
 >
 > Learn the options to take your integration to the next level.
 >
-> [Advanced Integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/qr-code/advanced-integration)
+> [Advanced Integration](/developers/en/guides/qr-code/advanced-integration)

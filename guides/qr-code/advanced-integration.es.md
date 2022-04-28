@@ -5,14 +5,14 @@
 ----[mla, mlm, mco, mlu, mlb, mlc]----
 
 Las devoluciones suceden cuando el pago se realizó pero el vendedor decide anularlo total o parcialmente.
-Puedes encontrar toda la información en la [sección Devoluciones y cancelaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds).
+Puedes encontrar toda la información en la [sección Devoluciones y cancelaciones](developers/es/guides/additional-content/sales-processing/cancellations-and-refunds).
 
 ------------
 
 ----[mpe]----
 
 Las devoluciones suceden cuando el pago se realizó pero el vendedor decide anularlo totalmente.
-Puedes encontrar toda la información en la [sección Devoluciones y cancelaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds).
+Puedes encontrar toda la información en la [sección Devoluciones y cancelaciones](/developers/es/guides/additional-content/sales-processing/cancellations-and-refunds).
 
 ------------
 
@@ -34,17 +34,17 @@ curl -X GET \
 -H 'Authorization: Bearer ACCESS_TOKEN' \
 https://api.mercadopago.com/instore/qr/seller/collectors/USER_ID/pos/EXTERNAL_POS_ID/orders
 ```
-Puedes obtener más información en la [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_pos_external_pos_id_orders/get).
+Puedes obtener más información en la [Referencias de API](/developers/es/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_pos_external_pos_id_orders/get).
 
 
 ## Genera reportes de tus ventas
 
-Integra los [reportes de conciliación de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/general-considerations/reconciliation-reports) con tu sistema para conciliar tus ventas y conocer los movimientos de tu cuenta.
+Integra los [reportes de conciliación de Mercado Pago](/developers/es/guides/additional-content/reports/general-considerations/reconciliation-reports) con tu sistema para conciliar tus ventas y conocer los movimientos de tu cuenta.
 
 ## Prueba y valida tu integración
 
 Detallamos todos los casos necesarios que debes probar para validar que tu sistema esté integrado correctamente con Mercado Pago. 
-Puedes encontrar todos los casos en la [sección de Pruebas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/qr-code/integration-test).
+Puedes encontrar todos los casos en la [sección de Pruebas](/developers/es/guides/qr-code/integration-test).
 
 Vea más detalles en este [video tutorial](https://youtu.be/oQqJkqyjegk?list=PLCazXKuqZp3hGVY3bBhEO0ItFhIic5UpK).
 
@@ -55,4 +55,4 @@ Vea más detalles en este [video tutorial](https://youtu.be/oQqJkqyjegk?list=PLC
 >
 > Realiza los casos de uso más frecuentes para validar tu integración.
 >
-> [Prueba tu integración](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/qr-code/integration-test)
+> [Prueba tu integración](/developers/es/guides/qr-code/integration-test)
