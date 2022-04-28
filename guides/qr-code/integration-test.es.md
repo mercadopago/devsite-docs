@@ -4,7 +4,7 @@ Los usuarios de prueba te permiten probar la integración de tu sistema con Merc
 
 Para realizar las pruebas es necesario que tengas como mínimo dos usuarios: un comprador y un vendedor. 
 
-> Si no generaste tus usuarios en este punto, puedes hacerlo en los [requisitos previos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code/pre-requisites).
+> Si no generaste tus usuarios en este punto, puedes hacerlo en los [requisitos previos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/qr-code/pre-requisites).
 
 | Tipos de usuarios | Descripción |
 | --- | --- |
