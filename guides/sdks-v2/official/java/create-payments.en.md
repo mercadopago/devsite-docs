@@ -1,4 +1,4 @@
-## Create payment
+# Create payment
 
 You can create and add payment information using the SDK below. For details on the request parameters, check the [Create payment](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments/post) API.
 
@@ -62,7 +62,7 @@ client.create(createRequest);
 ```
 ]]]
 
-## Search payments
+# Search payments
 
 You can search for payments made in the last twelve months from the search date using the SDK below. For details of the request parameters, access the [Search Payments](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_search/get) API.
 
@@ -83,7 +83,7 @@ client.search(searchRequest);
 ```
 ]]]
 
-## Get payment
+# Get payment
 
 It is possible to query all the information of a payment through the payment ID using the SDK below. For details of the request parameters, access the [Get Payment](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_id/get) API.
 
@@ -97,7 +97,7 @@ client.get(paymentId);
 ```
 ]]]
 
-## Update payment
+# Update payment
 
 It is possible to change the data of a certain payment by sending the parameters with the information you want to update through the SDK below. For details of the request parameters, access the [Update payment](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_id/put) API.
 

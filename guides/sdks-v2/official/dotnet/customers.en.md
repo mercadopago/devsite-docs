@@ -1,4 +1,4 @@
-## Create customer
+# Create customer
 
 It is possible to create customers using the SDK below. For details on the request parameters, check the [Create customer](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/customers/_customers/post) API.
 

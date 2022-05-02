@@ -1,4 +1,4 @@
-## Create preference
+# Create preference
 
 It is possible to create Preferences using the SDK below. For details on request parameters, check the [Create preferences](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/preferences/_checkout_preferences/post) API.
 
