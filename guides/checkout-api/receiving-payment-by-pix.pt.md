@@ -4,7 +4,7 @@ Após cadastrar a chave Pix, siga a documentação para realizar a integração 
 
 ## Configurar pagamento com Pix
 
-Após cadastrar a chave Pix e [capturar os dados para pagamento com o formulário](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/checkout-api/payment-methods/other-payment-methods#bookmark_capture_os_dados_para_pagamento), você deve encaminhar o e-mail do comprador, o tipo e número de documento, o meio de pagamento utilizado e o detalhe do valor. 
+Após cadastrar a chave Pix e [capturar os dados para pagamento com o formulário](/developers/pt/docs/checkout-api/payment-methods/other-payment-methods#bookmark_capture_os_dados_para_pagamento), você deve encaminhar o e-mail do comprador, o tipo e número de documento, o meio de pagamento utilizado e o detalhe do valor. 
 
 [[[
 ```php
@@ -321,4 +321,4 @@ Para renderizar o QR code e disponibilizar o recurso de copia e cola, siga os pa
 >
 > Importante
 >
-> Encontre as informações necessárias para devolver um pagamento feito por transferência Pix no artigo de [devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/account/cancellations-and-refunds).
+> Encontre as informações necessárias para devolver um pagamento feito por transferência Pix no artigo de [devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/sales-processing/cancellations-and-refunds).
