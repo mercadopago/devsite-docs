@@ -15,7 +15,7 @@ En base a tu modelo de negocio, puedes escoger alguna de las opciones para ofrec
 >
 > Te contamos los beneficios de Código QR.
 >
-> [Cuáles son los beneficios](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es /guides/qr-code/introduction/benefits)
+> [Cuáles son los beneficios](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/qr-code/introduction/benefits)
 
 
 > NEXT_STEP_CARD_EN
