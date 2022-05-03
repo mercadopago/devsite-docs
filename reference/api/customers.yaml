@@ -8,9 +8,9 @@ paths:
   /v1/customers:
     post:
       tags:
-        - $ref: '#/tags/marketplace'
         - $ref: '#/tags/mobile-checkout'
-      summary: Create a customer
+        - $ref: '#/tags/checkout-api'
+      summary: Create customer
       description: Create a customer with all its data and save the cards used to simplify the payment process
       requestBody:
         content:
@@ -41,7 +41,7 @@ paths:
                     number:
                       type: String
                       example: '991234567'
-                      description: Phone's number.
+                      description: Phone number.
                 identification:
                   type: object
                   description: Customer identification's information.
@@ -49,11 +49,11 @@ paths:
                     type:
                       type: String
                       example: 'CPF'
-                      description: Identification's type.
+                      description: Identification type.
                     number:
                       type: String
                       example: '12345678900'
-                      description: Identification's number.
+                      description: Identification number.
                 default_address:
                   type: String
                   example: "Home"
@@ -80,7 +80,7 @@ paths:
                       description: Street number.
                 date_registered:
                   type: Date(ISO_8601)
-                  example: '2000-01-18'
+                  example: '2021-10-20T11:37:30.000-04:00'
                   description: Customer's registration date.
                 description:
                   type: String
@@ -101,43 +101,43 @@ paths:
                   id:
                     type: string
                     example: 000000001-sT93QZFAsfxU9P5
-                    description: id
+                    description: Customer ID.
                   email:
                     type: string
                     example: jhon@doe.com
-                    description: email
+                    description: Customer's email.
                   first_name:
                     type: string
                     example: Bruce
-                    description: first_name
+                    description: Customer's name.
                   last_name:
                     type: string
                     example: Wayne
-                    description: last_name
+                    description: Customer's last name.
                   phone:
                     type: object
                     properties:
                       area_code:
                         type: string
                         example: 23
-                        description: area_code
+                        description: Phone's area code.
                       number:
                         type: string
                         example: 12345678
-                        description: number
-                    description: phone
+                        description: Phone number.
+                    description: Customer phone's information.
                   identification:
                     type: object
                     properties:
                       type:
                         type: string
                         example: DNI
-                        description: type
+                        description: Identification type.
                       number:
                         type: string
                         example: 12345678
-                        description: number
-                    description: identification
+                        description: Identification number.
+                    description: Customer identification's information.
                   address:
                     type: object
                     properties:
@@ -145,36 +145,36 @@ paths:
                         type: string
                         example: '1162600094'
                         format: nullable
-                        description: id
+                        description: Address ID.
                       zip_code:
                         type: string
                         example: SG1 2AX
-                        description: zip_code
+                        description: Zip code.
                       street_name:
                         type: string
                         example: Old Knebworth Ln
-                        description: street_name
+                        description: Street name.
                       street_number:
                         type: number
                         format: nullable
-                        description: street_number
-                    description: address
+                        description: Street number.
+                    description: Default address's information.
                   date_registered:
                     type: string
                     format: nullable
-                    description: date_registered
+                    description: Customer's registration date.
                   description:
                     type: string
                     example: This is my description
-                    description: description
+                    description: Customer's description.
                   date_created:
                     type: string
                     example: '2018-02-20T15:36:23.541Z'
-                    description: date_created
+                    description: Customer's date created.
                   date_last_updated:
                     type: string
                     format: nullable
-                    description: date_last_updated
+                    description: Last modified date.
                   metadata:
                     type: object
                     properties:
@@ -185,26 +185,26 @@ paths:
                   default_card:
                     type: string
                     format: nullable
-                    description: default_card
+                    description: Customer's default card.
                   default_address:
                     type: string
                     example: '1162600094'
                     format: nullable
-                    description: default_address
+                    description: Customer's default address.
                   cards:
                     type: array
                     items:
                       type: object
-                    description: cards
+                    description: Customer's cards.
                   addresses:
                     type: array
                     items:
                       type: object
-                    description: addresses
+                    description: Customer's addresses.
                   live_mode:
                     type: boolean
                     example: true
-                    description: live_mode
+                    description: Whether the customers will be in sandbox or in production mode.
         '400':
           description: Error
           content:
@@ -288,15 +288,15 @@ paths:
   /v1/customers/{id}:
     put:
       tags:
-        - $ref: '#/tags/marketplace'
         - $ref: '#/tags/mobile-checkout'
-      summary: Update a customer
+        - $ref: '#/tags/checkout-api'
+      summary: Update customer
       description: Renew the data of a customer. Indicate the customer ID and send the parameters with the information you want to update
       parameters:
         - name: id
           in: path
           required: true
-          description: Customer's Id
+          description: Customer ID.
           schema:
             type: number
             example: 123123
@@ -329,7 +329,7 @@ paths:
                     number:
                       type: String
                       example: '991234567'
-                      description: Phone's number.
+                      description: Phone number.
                 identification:
                   type: object
                   description: Customer identification's information.
@@ -337,11 +337,11 @@ paths:
                     type:
                       type: String
                       example: 'CPF'
-                      description: Identification's type.
+                      description: Identification type.
                     number:
                       type: String
                       example: '12345678900'
-                      description: Identification's number.
+                      description: Identification number.
                 default_address:
                   type: String
                   example: "Home"
@@ -368,7 +368,7 @@ paths:
                       description: Street number.
                 date_registered:
                   type: Date(ISO_8601)
-                  example: '2000-01-18'
+                  example: '22021-10-20T11:37:30.000-04:00'
                   description: Customer's registration date.
                 description:
                   type: String
@@ -389,103 +389,103 @@ paths:
                   id:
                     type: string
                     example: 000000001-sT93QZFAsfxU9P5
-                    description: id
+                    description: Customer ID.
                   email:
                     type: string
                     example: jhon@doe.com
-                    description: email
+                    description: Customer's email.
                   first_name:
                     type: string
                     example: Bruce
-                    description: first_name
+                    description: Customer's name.
                   last_name:
                     type: string
                     example: Wayne
-                    description: last_name
+                    description: Customer's last name.
                   phone:
                     type: object
                     properties:
                       area_code:
                         type: string
                         example: 23
-                        description: area_code
+                        description: Phone's area code.
                       number:
                         type: string
                         example: 12345678
-                        description: number
-                    description: phone
+                        description: Phone number.
+                    description: Customer phone's information.
                   identification:
                     type: object
                     properties:
                       type:
                         type: string
                         example: DNI
-                        description: type
+                        description: Identification type.
                       number:
                         type: string
                         example: 12345678
-                        description: number
-                    description: identification
+                        description: Identification number.
+                    description: Customer identification's information.
                   address:
                     type: object
                     properties:
                       id:
                         type: string
                         format: nullable
-                        description: id
+                        description: Address ID.
                       zip_code:
                         type: string
                         example: SG1 2AX
-                        description: zip_code
+                        description: Zip code.
                       street_name:
                         type: string
                         example: Old Knebworth Ln
-                        description: street_name
+                        description: Street name.
                       street_number:
                         type: number
                         format: nullable
-                        description: street_number
-                    description: address
+                        description: Street number.
+                    description: Default address's information.
                   date_registered:
                     type: string
                     format: nullable
-                    description: date_registered
+                    description: Customer's registration date.
                   description:
                     type: string
                     example: This is my description
-                    description: description
+                    description: Customer's description.
                   date_created:
                     type: string
                     example: 2018-02-20T15:36:23.541Z
-                    description: date_created
+                    description: Customer's date created.
                   date_last_updated:
                     type: string
                     format: nullable
-                    description: date_last_updated
+                    description: Last modified date.
                   metadata:
                     type: object
                     description: metadata
                   default_card:
                     type: string
                     format: nullable
-                    description: default_card
+                    description: Customer's default card.
                   default_address:
                     type: string
                     format: nullable
-                    description: default_address
+                    description: Customer's default address.
                   cards:
                     type: array
                     items:
                       type: object
-                    description: cards
+                    description: Customer's cards.
                   addresses:
                     type: array
                     items:
                       type: object
-                    description: addresses
+                    description: Customer's addresses.
                   live_mode:
                     type: boolean
-                    description: live_mode
+                    description: Whether the customers will be in sandbox or in production mode.
         '400':
           description: Error
           content:
@@ -568,15 +568,15 @@ paths:
                       - not_found--not-found-
     get:
       tags:
-        - $ref: '#/tags/marketplace'
         - $ref: '#/tags/mobile-checkout'
-      summary: Get a customer
+        - $ref: '#/tags/checkout-api'
+      summary: Get customer
       description: Check all the information of a client created with the client ID of your choice
       parameters:
         - name: id
           in: path
           required: true
-          description: Customer's Id
+          description: Customer ID.
           schema:
             type: number
             example: 123123
@@ -614,7 +614,7 @@ paths:
                       number:
                         type: string
                         example: '97654321'
-                        description: Phone's number.
+                        description: Phone number.
                     description: Customer phone's information.
                   identification:
                     type: object
@@ -622,11 +622,11 @@ paths:
                       type:
                         type: string
                         example: CPF
-                        description: Identification's type.
+                        description: Identification type.
                       number:
                         type: string
                         example: '19119119100'
-                        description: Identification's number.
+                        description: Identification number.
                     description: Customer identification's information.
                   address:
                     type: object
@@ -949,14 +949,14 @@ paths:
   /v1/customers/search:
     get:
       tags:
-        - $ref: '#/tags/marketplace'
         - $ref: '#/tags/mobile-checkout'
-      summary: Search for a customer
+        - $ref: '#/tags/checkout-api'
+      summary: Search customers
       description: Find all customer information using specific filters
       parameters:
         - name: email
           in: query
-          description: The user e-mail for search
+          description: Customer's email.
           required: true
           schema:
             type: string
@@ -975,16 +975,16 @@ paths:
                       limit:
                         type: number
                         example: 10
-                        description: limit
+                        description: The maximum number of entries to return.
                       offset:
                         type: number
                         example: 0
-                        description: offset
+                        description: The offset of the first item in the collection to return.
                       total:
                         type: number
                         example: 1
-                        description: total
-                    description: paging
+                        description: The total number of items in the collection.
+                    description: Information for pagination of search results.
                   results:
                     type: array
                     items:
@@ -996,92 +996,92 @@ paths:
                             id:
                               type: string
                               format: nullable
-                              description: id
+                              description: Address ID.
                               example: '1162600213'
                             street_name:
                               type: string
                               format: nullable
-                              description: street_name
+                              description: Street name.
                               example: Caetano Poli, 12
                             street_number:
                               type: number
                               format: nullable
-                              description: street_number
+                              description: Street number.
                             zip_code:
                               type: string
                               format: nullable
-                              description: zip_code
+                              description: Zip code.
                               example: '05187010'
-                          description: address
+                          description: Default address's information.
                         addresses:
                           type: array
                           items:
                             type: object
-                          description: addresses
+                          description: Customer's addresses.
                         cards:
                           type: array
                           items:
                             type: object
-                          description: cards
+                          description: Customer's cards.
                         date_created:
                           type: string
                           example: 2017-05-05T04:00:00.000Z
-                          description: date_created
+                          description: Customer's date created.
                         date_last_updated:
                           type: string
                           example: 2017-05-05T13:23:25.021Z
-                          description: date_last_updated
+                          description: Last modified date.
                         date_registered:
                           type: string
                           format: nullable
-                          description: date_registered
+                          description: Customer's registration date.
                         default_address:
                           type: string
                           format: nullable
-                          description: default_address
+                          description: Customer's default address.
                           example: '1162600213'
                         default_card:
                           type: string
                           example: 1493990563105
-                          description: default_card
+                          description: Customer's default card.
                         description:
                           type: string
                           format: nullable
-                          description: description
+                          description: Customer's description.
                         email:
                           type: string
                           example: test@test.com
-                          description: email
+                          description: Customer's email.
                         first_name:
                           type: string
-                          description: first_name
+                          description: Customer's name.
                           example: Customer
                         id:
                           type: string
                           example: 123456789-jxOV430go9fx2e
-                          description: id
+                          description: Customer ID.
                         identification:
                           type: object
                           properties:
                             number:
                               type: string
                               format: nullable
-                              description: number
+                              description: Identification number.
                               example: '19119119100'
                             type:
                               type: string
                               format: nullable
-                              description: type
+                              description: Identification type.
                               example: CPF
-                          description: identification
+                          description: Customer identification's information.
                         last_name:
                           type: string
                           format: nullable
-                          description: last_name
+                          description: Customer's last name.
                           example: Tester
                         live_mode:
                           type: boolean
-                          description: live_mode
+                          description: Whether the customers will be in sandbox or in production mode.
                           example: true
                         metadata:
                           type: object
@@ -1092,15 +1092,15 @@ paths:
                             area_code:
                               type: string
                               format: nullable
-                              description: area_code
+                              description: Phone's area code.
                               example: '11'
                             number:
                               type: string
                               format: nullable
-                              description: number
+                              description: Phone number.
                               example: '987654321'
-                          description: phone
-                    description: results
+                          description: Customer phone's information.
+                    description: The page of items. This will be an empty array if there are no results.
         '400':
           description: Error
           content:

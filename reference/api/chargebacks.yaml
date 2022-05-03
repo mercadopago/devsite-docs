@@ -8,13 +8,13 @@ paths:
   /v1/chargebacks/{id}:
     get:
       tags:
-        - $ref: '#/tags/marketplace'
-      summary: Get a chargeback
+        - $ref: '#/tags/checkout-api'
+      summary: Get chargeback
       description: Check all the information related to a chargeback for your product or service with the ID of the chargeback you want
       parameters:
         - name: id
           in: path
-          description: Chargeback Id
+          description: Unique chargeback identifier
           required: true
           schema:
             type: string
@@ -29,26 +29,24 @@ paths:
                 properties:
                   id:
                     type: string
-                    description: Chargeback identifier
+                    description: Unique chargeback identifier
                   payments:
                     type: array
-                    description: List of payments ids associated to the case
+                    description: List of payments IDs associated to the case
                     items:
                       type: number
                   currency:
                     type: string
-                    description: Amount's currency
+                    description: Chergeback amount currency
                   amount:
                     type: number
-                    description: Chargeback's amount
+                    description: Chergeback amount
                   coverage_applied:
                     type: boolean
                     description: Whether the seller has been covered or not
                   coverage_elegible:
                     type: boolean
-                    description: >-
-                      Whether the chargeback complies with the conditions to be
-                      covered
+                    description: Indicates if the money returned to the buyer can be covered by Mercado Pago. It is only possible to continue with the rest of the steps if the chargeback can be covered.
                   documentation_required:
                     type: boolean
                     description: >-
@@ -75,7 +73,7 @@ paths:
                           description: Documentation's file type
                         url:
                           type: string
-                          description: Url to see the documentation file
+                          description: URL to see the documentation file
                         description:
                           type: string
                           description: Documentation's description
@@ -93,14 +91,12 @@ paths:
                     description: Chargeback's last modified date
                   live_mode:
                     type: boolean
-                    description: >-
-                      Whether the chargeback will be processed in sandbox or in
-                      production mode
+                    description: Whether the chargeback will be processed in sandbox or in production mode. If TRUE, then the chargeback will be processed in production mode. If FALSE, then the chargeback will be processed in sandbox mode.
   /v1/payments/{id}/refunds:
     get:
       tags:
-          - $ref: "#/tags/marketplace"
-      summary: Check refunds list
+        - $ref: '#/tags/checkout-api'
+      summary: Get refunds list
       description: Get all Refunds for a specific payment
       parameters:
         - name: id
@@ -132,26 +128,26 @@ paths:
                     description: Payment identifier
                   metadata:
                     type: array
-                    description: List of metadata
+                    description: Contains payment metadata that is sent to us in the payment post
                     items:
                   source:
                     type: array
-                    description: List of source
+                    description: Contains the data to identify who originated the refund (contains ID, name and type)
                     items:
                       type: object
                       properties:
                         name:
                           type: string
                           example: "Firstname Lastname"
-                          description: Name  
+                          description: The name of the user who submitted the refund request  
                         id:
                           type: string
                           example: "1003743392"
-                          description: Identifier
+                          description: The ID of the user who submitted the refund request (collector, operator, owner of the marketplace)
                         type:
                           type: string
                           example: "collector"
-                          description: Type
+                          description: Source type. The possible values are Admin, Collector, BPP, and Marketplace.
                   date_created:
                     type: string
                     example: "2021-11-24T13:58:49.312-04:00"
@@ -160,7 +156,7 @@ paths:
                   unique_sequence_number:
                     type: string
                     example: null
-                    description: Sequence number
+                    description: It is an identifier of the refund that was generated by the card processor.
                   refund_mode:
                     type: string
                     example: "standard"
@@ -173,18 +169,24 @@ paths:
                     type: string
                     example: "approved"
                     description: Refund status
+                    enum:
+                      - approved -- The payment has been approved and accredited.
+                      - in_process -- Payment is being reviewed.
+                      - rejected -- Payment was rejected. The user may retry payment.
+                      - cancelled -- Payment was cancelled by one of the parties or because time for payment has expired.
+                      - authorized -- The payment has been authorized but not captured yet.
                   reason:
                     type: string
                     example: null
                     description: Refund reason
                   label:
                     type: array
-                    description: List of label
+                    description: Information relevant to the refund. Currently only one label called hidden is used. When the payment search is made, refunds with the hidden label are not returned in the response JSON.
                     items:
                       type: object
                   partition_details:
                     type: array
-                    description: details
+                    description: Indicates the amount returned for each of the partitions with which the payment was generated. Currently, payments with several money partitions are created only for one product from Brazil (Valeras), so it does not apply to all. Valeras allows offering benefits to employees, and is currently turned on in Brazil only for some employers.
                     items:
                       type: object        
         '400':
@@ -222,8 +224,8 @@ paths:
                       - 2000--Payment-not-found--Payment_Id_does_not_exist-
     post:
       tags:
-        - $ref: "#/tags/marketplace"
-      summary: Post refunds
+        - $ref: '#/tags/checkout-api'
+      summary: Create refund
       description: Create Partial/Full Refund for a specific payment. If the amount field is filled, it will create a partial refund, if not, it will create a full refund
       parameters:
         - name: id
@@ -272,27 +274,27 @@ paths:
                     description: Refund amount
                   metadata:
                     type: array
-                    description: Metadata
+                    description: Contains payment metadata that is sent to us in the payment post
                     items:
                       type: object
                   source:
                     type: array
-                    description: List of source
+                    description: Contains the data to identify who originated the refund (contains ID, name and type)
                     items:
                       type: object
                       properties:
                         name:
                           type: string
                           example: "Firstname Lastname"
-                          description: Name  
+                          description: The name of the user who submitted the refund request  
                         id:
                           type: string
                           example: "1003743392"
-                          description: Identifier
+                          description: The ID of the user who submitted the refund request (collector, operator, owner of the marketplace)
                         type:
                           type: string
                           example: "collector"
-                          description: Type
+                          description: Source type. The possible values are Admin, Collector, BPP, and Marketplace.
                   date_created:
                     type: string
                     example: "2021-11-24T13:58:49.312-04:00"
@@ -301,7 +303,7 @@ paths:
                   unique_sequence_number:
                     type: string
                     example: null
-                    description: Sequence number
+                    description: It is an identifier of the refund that was generated by the card processor.
                   refund_mode:
                     type: string
                     example: "standard"
@@ -314,18 +316,24 @@ paths:
                     type: string
                     example: "approved"
                     description: Refund status
+                    enum:
+                      - approved -- The payment has been approved and accredited.
+                      - in_process -- Payment is being reviewed.
+                      - rejected -- Payment was rejected. The user may retry payment.
+                      - cancelled -- Payment was cancelled by one of the parties or because time for payment has expired.
+                      - authorized -- The payment has been authorized but not captured yet.
                   reason:
                     type: string
                     example: null
                     description: Refund reason
                   label:
                     type: array
-                    description: List of label
+                    description: Information relevant to the refund. Currently only one label called hidden is used. When the payment search is made, refunds with the hidden label are not returned in the response JSON.
                     items:
                       type: object
                   partition_details:
                     type: array
-                    description: Details
+                    description: Indicates the amount returned for each of the partitions with which the payment was generated. Currently, payments with several money partitions are created only for one product from Brazil (Valeras), so it does not apply to all. Valeras allows offering benefits to employees, and is currently turned on in Brazil only for some employers.
                     items:
                       type: object        
         '400':
@@ -367,7 +375,7 @@ paths:
   /v1/payments/{id}/refunds/{refund_id}:
     get:
       tags:
-        - $ref: "#/tags/marketplace"
+        - $ref: '#/tags/checkout-api'
       summary: Get specific refund
       description: Get a specific Refund from a specific payment
       parameters:
@@ -407,27 +415,27 @@ paths:
                     description: Refund amount
                   metadata:
                     type: array
-                    description: Metadata
+                    description: Contains payment metadata that is sent to us in the payment post
                     items:
                       type: object
                   source:
                     type: array
-                    description: List of source
+                    description: Contains the data to identify who originated the refund (contains ID, name and type)
                     items:
                       type: object
                       properties:
                         name:
                           type: string
                           example: "Firstname Lastname"
-                          description: Name  
+                          description: The name of the user who submitted the refund request  
                         id:
                           type: string
                           example: "1003743392"
-                          description: Identifier
+                          description: The ID of the user who submitted the refund request (collector, operator, owner of the marketplace)
                         type:
                           type: string
                           example: "collector"
-                          description: Type
+                          description: Source type. The possible values are Admin, Collector, BPP, and Marketplace.
                   date_created:
                     type: string
                     example: "2021-11-24T13:58:49.312-04:00"
@@ -436,7 +444,7 @@ paths:
                   unique_sequence_number:
                     type: string
                     example: null
-                    description: Sequence number
+                    description: It is an identifier of the refund that was generated by the card processor.
                   refund_mode:
                     type: string
                     example: "standard"
@@ -449,18 +457,24 @@ paths:
                     type: string
                     example: "approved"
                     description: Refund status
+                    enum:
+                      - approved -- The payment has been approved and accredited.
+                      - in_process -- Payment is being reviewed.
+                      - rejected -- Payment was rejected. The user may retry payment.
+                      - cancelled -- Payment was cancelled by one of the parties or because time for payment has expired.
+                      - authorized -- The payment has been authorized but not captured yet.
                   reason:
                     type: string
                     example: null
                     description: Refund reason
                   label:
                     type: array
-                    description: List of label
+                    description: Information relevant to the refund. Currently only one label called hidden is used. When the payment search is made, refunds with the hidden label are not returned in the response JSON.
                     items:
                       type: object
                   partition_details:
                     type: array
-                    description: details
+                    description: Indicates the amount returned for each of the partitions with which the payment was generated. Currently, payments with several money partitions are created only for one product from Brazil (Valeras), so it does not apply to all. Valeras allows offering benefits to employees, and is currently turned on in Brazil only for some employers.
                     items:
                       type: object     
         '400':
@@ -500,8 +514,8 @@ paths:
   /v1/payments/{payment_id}:
     put:
       tags:
-        - $ref: '#/tags/marketplace'
-      summary: Create a cancellation
+        - $ref: '#/tags/checkout-api'
+      summary: Create cancellation
       description: Cancel a sale for a specific payment
       parameters:
         - name: payment_id
@@ -511,6 +525,16 @@ paths:
           schema:
             type: string
             example: 12123adfasdf123u4u
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                status:
+                  type: String
+                  example: cancelled
+                  description: Payment status.
       responses:
         '200':
           description: success
@@ -583,7 +607,7 @@ paths:
                   live_mode:
                     type: string
                     example: 
-                    description: Live mode
+                    description: Whether the chargeback will be processed in sandbox or in production mode. If TRUE, then the chargeback will be processed in production mode. If FALSE, then the chargeback will be processed in sandbox mode.
                   sponsor_id:
                     type: string
                     example: 
@@ -667,11 +691,11 @@ paths:
                               number:
                                 type: string
                                 example: "32659430"
-                                description: Number
+                                description: Identification number.
                               type:
                                 type: string
                                 example: "DNI"
-                                description: Type
+                                description: Identification type.
                         phone:
                           type: array
                           description: List of phones
@@ -708,7 +732,7 @@ paths:
                     description: Marketplace owner
                   metadata:
                     type: array
-                    description: List of metadata
+                    description: Contains payment metadata that is sent to us in the payment post
                     items:
                   additional_info:
                     type: array
@@ -729,7 +753,7 @@ paths:
                               title:
                                 type: string
                                 example: "My product"
-                                description: Title
+                                description: Item title.
                               description:
                                 type: string
                                 example: "E-commerce store cellphone"
@@ -822,7 +846,7 @@ paths:
                         id:
                           type: string
                           example: "3754501423"
-                          description: Identifier
+                          description: Order identifier
                   external_reference:
                     type: string
                     example: "firstname@gmail.com"
