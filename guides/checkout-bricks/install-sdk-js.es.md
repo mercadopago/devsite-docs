@@ -1,4 +1,4 @@
-## Incluye y configura la librería MercadoPago.js
+# Incluye y configura la librería MercadoPago.js
 
 **Usa nuestra librería oficial para acceder a las funcionalidades de Mercado Pago** desde tu frontend de forma segura.
 
