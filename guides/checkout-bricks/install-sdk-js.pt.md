@@ -1,6 +1,6 @@
 # Inclua e configure a biblioteca MercadoPago.js
 
-**Utilize nossa biblioteca oficial para acessar as funcionalidades de Mercado Pago** desde seu frontend de forma segura.
+**Utilize a nossa biblioteca oficial para acessar as funcionalidades do Mercado Pago** com segurança desde seu frontend.
 
 Você precisará instalar o SDK adicionando o seguinte em seu código HTML:
 
