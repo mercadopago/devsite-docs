@@ -1,4 +1,4 @@
-## Create customer
+# Create customer
 
 It is possible to create customers using the SDK below. For details on the request parameters, check the [Create customer](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/customers/_customers/post) API.
 
@@ -33,7 +33,7 @@ client.create(customerRequest);
 ```
 ]]]
 
-## Search customers
+# Search customers
 
 It is possible to search customers using the SDK below. For details on the request parameters, check the [Search customer](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/customers/_customers_search/get) API.
 
@@ -54,7 +54,7 @@ client.search(searchRequest);
 ```
 ]]]
 
-## Update customer
+# Update customer
 
 It is possible to update customers using the SDK below. For details on the request parameters, check the [Update customer](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/customers/_customers_id/put) API.
 
@@ -86,7 +86,7 @@ CustomerRequest customerRequest =
 ```
 ]]] 
 
-## Get customer
+# Get customer
 
 It is possible to get all the information of a customer from their identification using the SDK below. For details of the request parameters, access the API [Get Customer](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/customers/_customers_id/get)
 

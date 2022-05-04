@@ -18,7 +18,7 @@ Al crear la preferencia tendrás acceso a un campo llamado `id` el cual te devol
 >
 > Vea cuáles son los requisitos para integrar Checkout Pro.
 >
-> [Requisitos previos](/developers/es/docs/docs/checkout-pro/requirements)
+> [Requisitos previos](/developers/es/docs/checkout-pro/requirements)
 
 > NEXT_STEP_CARD_ES
 >

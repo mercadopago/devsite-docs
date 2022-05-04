@@ -1,4 +1,4 @@
-## Save card
+# Save card
 
 
 It is possible to securely store the reference to a card used by the customer in the payment on our servers through the SDK below. For details of the request parameters, check the [Save card](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/cards/_customers_customer_id_cards/post) API.
@@ -17,7 +17,7 @@ client.create(customerId, request);
 ```
 ]]]
 
-## Get customer cards
+# Get customer cards
 
 It is possible to get the card data of a certain customer through their customer ID using the SDK below. For details on the request parameters, check the [Get customer cards](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/cards/_customers_customer_id_cards/get) API.
 
@@ -31,7 +31,7 @@ client.listAll(customerId);
 ```
 ]]]
 
-## Get card
+# Get card
 
 You can consult the reference information of a stored card associated with a customer using the SDK below. For details of the request parameters, check the  [Get Card](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/cards/_customers_customer_id_cards_id/get) API.
 

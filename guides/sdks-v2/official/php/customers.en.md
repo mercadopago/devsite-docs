@@ -1,4 +1,4 @@
-## Create customer
+# Create customer
 
 It is possible to create customers using the SDK below. For details on the request parameters, check the [Create customer](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/customers/_customers/post) API.
 
@@ -25,7 +25,7 @@ It is possible to create customers using the SDK below. For details on the reque
 ```
 ]]]
 
-## Search customers
+# Search customers
 
 It is possible to search customers using the SDK below. For details on the request parameters, check the [Search customer](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/customers/_customers_search/get) API.
 
@@ -46,7 +46,7 @@ It is possible to search customers using the SDK below. For details on the reque
 ```
 ]]]
 
-## Update customer
+# Update customer
 
 It is possible to update customers using the SDK below. For details on the request parameters, check the [Update customer](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/customers/_customers_id/put) API.
 

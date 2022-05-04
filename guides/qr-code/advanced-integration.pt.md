@@ -4,13 +4,13 @@
 
 ----[mla, mlm, mco, mlu, mlb, mlc]----
 
-As devoluções acontecem quando o pagamento foi realizado, porém, o vendedor decide anulá-lo total ou parcialmente. Você poderá achar todas as informações na [seção Devoluções e cancelamentos](/developers/pt/guides/additional-content/sales-processing/cancellations-and-refunds).
+As devoluções acontecem quando o pagamento foi realizado, porém, o vendedor decide anulá-lo total ou parcialmente. Você poderá achar todas as informações na [seção Reembolsos e cancelamentos](/developers/pt/guides/additional-content/sales-processing/cancellations-and-refunds).
 
 ------------
 
 ----[mpe]----
 
-As devoluções acontecem quando o pagamento foi realizado, porém, o vendedor decide anulá-lo totalmente. Você poderá achar todas as informações na [seção Devoluções e cancelamentos](/developers/pt/guides/additional-content/sales-processing/cancellations-and-refunds).
+As devoluções acontecem quando o pagamento foi realizado, porém, o vendedor decide anulá-lo totalmente. Você poderá achar todas as informações na [seção Reembolsos e cancelamentos](/developers/pt/guides/additional-content/sales-processing/cancellations-and-refunds).
 
 ------------
 

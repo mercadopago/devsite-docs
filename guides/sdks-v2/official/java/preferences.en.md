@@ -1,4 +1,4 @@
-## Create preference
+# Create preference
 
 You can create a preference using the SDK below. For details of the request parameters, check the [Create preference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/preferences/_checkout_preferences/post) API.
 
@@ -31,7 +31,7 @@ client.create(request);
 ```
 ]]]
 
-## Search preferences
+# Search preferences
 
 You can find all the preferences information generated through specific filters or by a specific date range using the SDK below. For details of the request parameters, access the [Search Preferences](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/preferences/_checkout_preferences_search/get) API.
 
@@ -53,7 +53,7 @@ client.search(searchRequest);
 ```
 ]]]
 
-## Get preference
+# Get preference
 
 You can get all payment information for a product or service with the desired preference ID using the SDK below. For details on the request parameters, access the [Get Preference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/preferences/_checkout_preferences_id/get) API.
 
@@ -67,10 +67,9 @@ client.get(preferenceId);
 ```
 ]]]
 
-## Update preference
+# Update preference
 
 You can update the details of a payment preference using the preference ID. For details of the request parameters, access the [Update Preference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/preferences/_checkout_preferences_id/put) API.
-
 
 [[[
 ```java

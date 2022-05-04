@@ -1,4 +1,4 @@
-## Criar preferência
+# Criar preferência
 
 É possível criar uma preferência utilizando o SDK abaixo. Para detalhamento dos parâmetros de requisição, verifique a API [Criar preferência](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/preferences/_checkout_preferences/post).
 
@@ -31,7 +31,7 @@ client.create(request);
 ```
 ]]]
 
-## Pesquisar preferências
+# Pesquisar preferências
 
 É possível encontrar todas as informações das preferências geradas através de filtros específicos ou por uma faixa de datas específica utilizando o SDK abaixo. Para detalhamento dos parâmetros de requisição, acesse a API [Pesquisar preferências](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/preferences/_checkout_preferences_search/get).
 
@@ -53,7 +53,7 @@ client.search(searchRequest);
 ```
 ]]]
 
-## Obter preferência
+# Obter preferência
 
 É possível obter todas as informações de pagamento de um produto ou serviço com a identificação da preferência desejada utilizando o SDK abaixo. Para detalhamento dos parâmetros de requisição, acesse a API [Obter preferência](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/preferences/_checkout_preferences_id/get).
 
@@ -70,7 +70,6 @@ client.get(preferenceId);
 ## Atualizar preferência
 
 É possível atualizar os detalhes de uma preferência de pagamento através do ID da preferência. Para detalhamento dos parâmetros de requisição, acesse a API [Atualizar preferência](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/preferences/_checkout_preferences_id/put).
-
 
 [[[
 ```java
@@ -97,4 +96,3 @@ PreferenceRequest request = PreferenceRequest.builder().items(items).build();
 client.update(preferenceId, request);
 ```
 ]]]
-

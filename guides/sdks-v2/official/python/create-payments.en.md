@@ -1,4 +1,4 @@
-## Create payment
+# Create payment
 
 You can create and add payment information using the SDK below. For details on request parameters, check the [Create payment](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments/post) API.
 

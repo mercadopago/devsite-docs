@@ -1,4 +1,4 @@
-## Criar cliente
+# Criar cliente
 
 É possível criar clientes utilizando o SDK abaixo. Para detalhamento dos parâmetros de requisição, verifique a API [Criar cliente](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/customers/_customers/post).
 
@@ -33,7 +33,7 @@ client.create(customerRequest);
 ```
 ]]]
 
-## Pesquisar clientes
+# Pesquisar clientes
 
 É possível pesquisar clientes utilizando o SDK abaixo. Para detalhamento dos parâmetros de requisição, verifique a API [Pesquisar clientes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/customers/_customers_search/get).
 
@@ -53,7 +53,7 @@ client.search(searchRequest);
 ```
 ]]]
 
-## Atualizar cliente
+# Atualizar cliente
 
 É possível atualizar clientes utilizando o SDK abaixo. Para detalhamento dos parâmetros de requisição, verifique a API [Atualizar cliente](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/customers/_customers_id/put).
 
@@ -85,7 +85,7 @@ CustomerRequest customerRequest =
 ```
 ]]]
 
-## Obter cliente
+# Obter cliente
 
 É possível obter todas as informações de um cliente a partir da sua identificação utilizando o SDK abaixo. Para detalhamento dos parâmetros de requisição, acesse a API [Obter cliente](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/customers/_customers_id/get)
 

@@ -1,4 +1,4 @@
-## Create full refund
+# Create full refund
 
 You can create a full refund using the SDK below. For details on the request parameters, check the [Create refund](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/chargebacks/_payments_id_refunds/post) API. 
 
@@ -11,7 +11,7 @@ client.Refund(payment_id);
 ```
 ]]]
 
-## Create partial refund
+# Create partial refund
 
 You can create a partial refund using the SDK below. For details on the request parameters, check the [Create refund](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/chargebacks/_payments_id_refunds/post) API. 
 

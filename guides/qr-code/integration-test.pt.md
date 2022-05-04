@@ -40,7 +40,7 @@ Comprove que tenha recebido as notificações do estado do pedido em seu sistema
 | **Pagamento aprovado**. O usuário realiza um pagamento aprovado. | O sistema de Ponto de Venda recebe as informações de um pagamento aprovado. | Verifique recebimento de [notificações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn/introduction). |
 | **Pagamento recusado**. O usuário realiza um pagamento recusado. | O sistema de Ponto de Venda recebe as informações de um pagamento recusado e continua esperando o pagamento do pedido.| O `status` da `merchant_order` deve ser **opened**. |
 | **Segunda tentativa de pagamento**. O usuário realiza primeiramente um pagamento recusado e depois um pagamento aprovado.| O sistema de Ponto de Venda recebe as informações de um pagamento recusado e depois um pagamento aprovado. | Não remover a ordem depois de um pagamento recusado. |
-| **Restituição de pagamento**. Uma restituição é realizada desde o Ponto de Venda. | Na conta do comprador impacta a restituição. | Ver [devoluções](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds/#bookmark_devolu%C3%A7%C3%B5es). |
+| **Restituição de pagamento**. Uma restituição é realizada desde o Ponto de Venda. | Na conta do comprador impacta a restituição. | Ver [devoluções](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/sales-processing/cancellations-and-refunds/#bookmark_devolu%C3%A7%C3%B5es). |
 | **Cancelar ordem**. O usuário se arrepende e decide pagar em dinheiro.  | O pedido é eliminado e, portanto, ao escanear o QR somente é mostrada a tela de espera. | Remover a ordem de pagamento do caixa. |
 
 ## Quero entrar em produção
