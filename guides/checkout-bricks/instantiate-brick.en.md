@@ -1,4 +1,4 @@
-## Instantiate brick
+# Instantiate brick
 
 With the container created and our SDK JS installed, the next step is to instantiate the brick builder, which will allow generating the brick. To create the brick instance, insert the code below after the previous step.
 

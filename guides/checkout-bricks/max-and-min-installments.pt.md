@@ -1,4 +1,4 @@
-## Configurar quantidade máxima e mínima de parcelas
+# Configurar quantidade máxima e mínima de parcelas
 
 | Brick  | Card Payment Brick  |
 | --- | --- |

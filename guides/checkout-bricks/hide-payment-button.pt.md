@@ -1,5 +1,4 @@
-## Ocultar botão de pagamento
-
+# Ocultar botão de pagamento
 
 | Brick | Card Payment Form |
 |--- |--- |

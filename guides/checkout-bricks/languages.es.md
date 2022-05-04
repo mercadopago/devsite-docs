@@ -1,4 +1,4 @@
-## Idiomas
+# Idiomas
 
 El Brick de pago con tarjeta se puede instanciar/representar en tres idiomas diferentes:
 

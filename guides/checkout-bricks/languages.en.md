@@ -1,4 +1,4 @@
-## Languages
+# Languages
 
 The Card Payment Brick can be instantiated/rendered in three different languages:
 

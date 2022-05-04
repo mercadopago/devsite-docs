@@ -1,4 +1,4 @@
-## Hide title and flags
+# Hide title and flags
 
 | Brick  | Card Payment Form  |
 | --- | --- |

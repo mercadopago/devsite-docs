@@ -1,4 +1,4 @@
-##  Configure maximum and minimum amount of installments
+#  Configure maximum and minimum amount of installments
 
 | Brick | Card Payment Brick |
 | --- | --- |

@@ -1,4 +1,4 @@
-## Iniciar Brick com email
+# Iniciar Brick com email
 
 | Brick  | Card Payment Brick  |
 | --- | --- |

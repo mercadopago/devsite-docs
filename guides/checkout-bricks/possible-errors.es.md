@@ -1,4 +1,4 @@
-## Variables pasadas por el integrador
+# Variables pasadas por el integrador
 
 Durante el proceso de integración del Brick, es posible que **al momento de instanciar el Brick **se muestren al integrador diferentes errores relacionados con el envío de variables. Estos errores se mostrarán mediante un log en la consola del navegador (el comprador no recibe ningún mensaje).
 

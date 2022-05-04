@@ -1,4 +1,4 @@
-## Ocultar título e bandeiras
+# Ocultar título e bandeiras
 
 | Brick | Card Payment Form |
 |--- |--- |

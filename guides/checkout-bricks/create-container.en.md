@@ -1,7 +1,6 @@
-## Create container
+# Create container
 
 You will need to create a container to define where the brick will be placed on the screen. The creation of the container is done by inserting an element (for example, a div) in the HTML code of the page where the brick will be rendered (see the code below).
-
 
 >NOTE
 > 

@@ -1,4 +1,4 @@
-## Modify CSS variables
+# Modify CSS variables
 
 | Brick | Card Payment Brick |
 | --- | --- |

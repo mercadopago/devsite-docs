@@ -1,4 +1,4 @@
-## Renderizar brick
+# Renderizar brick
 
 Una vez instanciado el builder, nuestro brick puede ser renderizado y tener todas sus configuraciones compiladas para que la estructura final sea generada.
 

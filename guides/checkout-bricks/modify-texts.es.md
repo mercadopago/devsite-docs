@@ -1,4 +1,4 @@
-## Modificar textos
+# Modificar textos
 
 | Brick  | Card Payment Brick  |
 | --- | --- |

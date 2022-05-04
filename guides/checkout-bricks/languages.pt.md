@@ -1,4 +1,4 @@
-## Idiomas 
+# Idiomas 
 
 O Card Payment Brick pode ser instanciado/renderizado em três idiomas diferentes: 
 

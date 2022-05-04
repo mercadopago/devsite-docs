@@ -1,4 +1,4 @@
-## Card Payment Brick
+# Card Payment Brick
 
 Card Payment Brick ofrece un formulario de pago con un diseño optimizado y diferentes temas, trayendo todos los campos necesarios para realizar un pago con tarjeta de crédito y/o débito, e incluye los mecanismos necesarios para recibir automáticamente los datos necesarios para crear el pago en el back-end.
 

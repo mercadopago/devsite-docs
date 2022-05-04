@@ -1,4 +1,4 @@
-## Instanciar brick
+# Instanciar brick
 
 Com o container criado e o SDK JS instalado, o próximo passo é instanciar o brick builder, que permitirá gerar o brick. Para instanciar o brick, insira o código abaixo após a etapa anterior.
 

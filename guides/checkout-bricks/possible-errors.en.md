@@ -1,7 +1,6 @@
-## Variables passed by the integrator
+# Variables passed by the integrator
 
 During the Brick integration process, it is possible that **when the Brick is instantiated**, different errors related to sending variables may be shown to the integrator. These errors will be shown through a log in the browser console (the buyer does not receive any message).
-
 
 | Error  | Message  | Cause code  |
 | --- | --- | --- |

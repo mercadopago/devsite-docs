@@ -1,4 +1,4 @@
-##  Configurar monto máximo y mínimo de cuotas
+#  Configurar monto máximo y mínimo de cuotas
 
 | Brick | Card Payment Brick |
 | --- | --- |

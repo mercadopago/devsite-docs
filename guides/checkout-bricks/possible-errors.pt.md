@@ -1,7 +1,6 @@
-## Variáveis passadas pelo integrador
+# Variáveis passadas pelo integrador
 
 Durante o processo de integração do brick, é possível que diferentes erros relacionados ao envio das variáveis sejam exibidos ao integrador **no momento de instanciar o Brick**. Esses erros serão mostrados através de um log no console do navegador (o comprador não recebe qualquer mensagem).
-
 
 | Erro | Mensagem | Código da causa |
 |--- |--- |--- |

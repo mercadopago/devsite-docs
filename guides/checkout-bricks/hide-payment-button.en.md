@@ -1,4 +1,4 @@
-## Hide payment button
+# Hide payment button
 
 | Brick  | Card Payment Form  |
 | --- | --- |
