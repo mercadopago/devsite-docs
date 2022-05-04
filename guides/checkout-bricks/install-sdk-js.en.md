@@ -1,4 +1,4 @@
-## Include and configure MercadoPago.js library
+# Include and configure MercadoPago.js library
 
 **Use our official library to access Mercado Pago features** from your frontend securely.
 
