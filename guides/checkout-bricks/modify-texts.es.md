@@ -7,3 +7,16 @@
 | Atributo  | label, placeholder  |
 | Tipo  | String  |
 | Observaciones  | Al enviar texto vacío, la pantalla presentará el texto definido por el layout predeterminado. Por otro lado, al enviar un texto personalizado, reemplazará el texto predeterminado. Para comprobar cuáles son los textos por defecto, consulta la sección Layout del brick deseado.  Si los textos personalizados son más grandes que el espacio disponible, el texto mostrado se interrumpirá hasta el tamaño máximo permitido y el excedente será reemplazado por el símbolo "...".  |
+
+```javascript
+const settings = {
+    ...,
+    customization: {
+        texts: {
+            formTitle: 'string',
+            installmentsSectionTitle: 'string',
+            ...,
+        },
+    },
+}
+```

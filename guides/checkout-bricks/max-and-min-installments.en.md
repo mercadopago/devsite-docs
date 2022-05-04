@@ -6,3 +6,15 @@
 | Property | customization.paymentMethods.minInstallments && customization.paymentMethods.maxInstallments |
 | Type | number |
 | Comments | When a value is passed for min or maxInstallments, the number of installments will be constrained by the values ​​passed. |
+
+```javascript
+const settings = {
+    ...,
+    customization: {
+        paymentMethods: {
+            minInstallments: number,
+            maxInstallments: number,
+        },
+    },
+}
+```
