@@ -1,48 +1,47 @@
----
-  indexable: false
----
-
 # Credenciales
 
-Mercado Pago tiene dos tipos de pares de credenciales, **CLIENT_ID** | **CLIENT_SECRET** y **PUBLIC_KEY** | **ACCESS_TOKEN**. Estas credenciales sirven como un tipo de clave personal para que usted cree su método de pago e integre el Mercado Pago con su tienda virtual. El siguiente es el procedimiento para obtener las credenciales.
+Las credenciales son contraseñas únicas con las que identificamos una integración en tu cuenta. Sirven para capturar pagos en tiendas online y otras aplicaciones de forma segura. Puedes encontrarlas en el [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/credentials) o en tu cuenta de Mercado Pago en [Tu Negocio> Configuración> Gestión y Administración> Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).
 
-## Acceder a la cuenta de Mercado Pago
+> WARNING 
+> 
+> Importante
+> 
+> Si no eres desarrollador, te recomendamos que verifiques tus credenciales en tu cuenta de Mercado Pago. Y, si alguien te está ayudando a configurar las integraciones de tu tienda, puedes compartirle tus credenciales.
 
-Para obtener sus credenciales, primero acceda a su cuenta de Mercado Pago en el link [https://www.mercadopago.com/](https://www.mercadopago.com.ar/).
-Si no tienes una cuenta, haz clic en **"Inscríbete"**. Rellene el formulario de acuerdo con el tipo de cuenta que desee. Recuerde que esta cuenta estará vinculada a su tienda virtual.
+Hay dos tipos diferentes de credenciales:
 
-![painelMercadoPago](/images/painelMercadoPago.gif)
+* **Credenciales de prueba**. Las credenciales de prueba deben usarse para probar tus integraciones y pueden ser utilizadas junto con tarjetas de crédito de prueba para simular recibos de tarjetas. Se recomienda utilizarlas antes de las credenciales de producción para garantizar que las integraciones funcionen correctamente.
+* **Credenciales de producción**. Las credenciales de producción se utilizan para recibir pagos.
 
-## Accdet Credenciales
+Ambos tipos de credenciales se componen de dos pares de llaves que debes usar según el producto que elijas. 
+ Te recomendamos consultar la documentación de cada producto para obtener detalles sobre qué llaves usar.
 
-Una vez Autenticado en su cuenta de Mercado Pago, acceda a lo siguiente link: [https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mla/account/credentials/]([FAKER][CREDENTIALS][URL]).
-Usted accede a la página de credenciales de su cuenta.
+ | Tipo | Descripción |
+| :--- | :--- |
+| Public key | Llave pública de la aplicación que normalmente se utiliza en el frontend y permite, por ejemplo, conocer los métodos de pago y cifrar los datos de la tarjeta. |
+| Access token | Llave privada que se utiliza en algunos plugins para generar pagos. Es muy importante que estos datos estén protegidos en tus servidores y no sean accesibles por ningún usuario o atacante. |
 
-![paginaCredenciais](/images/paginaCredenciais.gif)
+| Type | Descripción |
+| :--- | :--- |
+| Client ID | ID único que identifica tu integración. |
+| Client secret | Llave privada que se utiliza en algunos complementos para generar pagos. Es muy importante que estos datos estén protegidos en tus servidores y no sean accesibles por ningún usuario o atacante. |
 
-En esta página usted tendrá acceso a las claves de configuración de su cuenta Mercado Pago para instalar la integración por API o Checkout Pro (Redirect, LightBox o Iframe) en su Tienda Virtual.
 
 > NOTE
->
+> 
 > Nota
 >
-> Para configurar la integración por API será necesario informar las credenciales **PUBLIC_KEY** y **ACCESS_TOKEN**.
-> Para configurar el Checkout Pro (Redirect, LightBox o Iframe) será necesario informar las credenciales **CLIENT_ID** y **CLIENT_SECRET**.
+>Tienes la opción de renovar tus credenciales por razones de seguridad o por el motivo que necesites. Para renovarlas, simplemente haz clic en Más opciones > Renovar.
 
-## Formulario Quiero ir a Producción
 
-Al elegir la opción de integración por API, será necesario rellenar el formulario "Quiero ir a producción", de lo contrario su integración quedará inhabilitado para recibir pagos.
-Haga clic en "Quiero ir a la producción" para acceder al formulario.
+## Compartir credenciales
 
-![queroIrParaProducao](/images/queroIrParaProducao.gif)
+Comparte tus credenciales de forma segura con quien te ayude a integrar o configurar tus canales de pago. Para hacerlo, accede a tu cuenta de Mercado Pago y en [Tu negocio> Configuraciones> Gestión y Administración> Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials), elige la opción “Compartir mis credenciales” e ingresa el correo electrónico de la persona a la que quieres darle acceso. 
+Recuerda que el correo electrónico de la persona debe estar asociado a una cuenta de Mercado Pago. 
 
-* En **"Sitio web o App"** escribir URL del sitio;
-* En **"Nombre"** escribir su nombre;
-* En **"Documento"** escribir el tipo (DNI, CI, LC, SE, Otro) e insertar solamente los dígitos (por ejemplo DNI99999999R);
-* En **"Fecha de nacimiento"** insertar la fecha del dueño del documento;
-* En **"Dirección postal"** rellene la dirección completa con calle, número, complemento, barrio, ciudad, estado y código postal;
-* En **"Comentarios"** describir el segmento que trabajará y los productos que vendrá en su tienda;
-* Marque los **"checks"** de las 3 afirmaciones;
-* Haga clic en **"Enviar"**.
 
-Listo! Usted será redirigido a la página inicial de las credenciales, y su integración por API configurada en su tienda virtual estará en condiciones de transacción.
+> WARNING 
+> 
+> Importante
+>
+>Una vez que tu integración esté completa, elimina los permisos para compartir credenciales para garantizar la privacidad y la seguridad.
