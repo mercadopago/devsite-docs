@@ -1,15 +1,15 @@
 # Configurações de preferência
 
-Você pode adaptar a integração do Checkout Pro ao seu modelo negócio configurando [atributos de preferência](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/preferences/_checkout_preferences/post). 
+Você pode adaptar a integração do Checkout Pro ao seu modelo negócio configurando [atributos de preferência](https://www.mercadopago.com/developers/pt/reference/preferences/_checkout_preferences/post). 
 
 ----[mla, mlb]----
-Se você oferece compras de valores altos, por exemplo, pode aceitar [pagamentos com dois cartões de crédito](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations#bookmark_aceite_pagamentos_com_2_cartoes_de_credito) ou ainda [excluir meios de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations#bookmark_defina_os_meios_de_pagamento_desejados) indesejados para a sua operação. 
+Se você oferece compras de valores altos, por exemplo, pode aceitar [pagamentos com dois cartões de crédito](#bookmark_aceite_pagamentos_com_2_cartões_de_crédito) ou ainda [excluir meios de pagamento](#bookmark_defina_os_meios_de_pagamento_desejados) indesejados para a sua operação. 
 ------------
 ----[mlm, mlc, mlu, mco, mpe]----
-Se você oferece compras de valores altos, por exemplo, pode [excluir meios de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations#bookmark_defina_os_meios_de_pagamento_desejados) indesejados para a sua operação.
+Se você oferece compras de valores altos, por exemplo, pode [excluir meios de pagamento](#bookmark_defina_os_meios_de_pagamento_desejados) indesejados para a sua operação.
 ------------
 
-As configurações dos atributos de preferência te permitem ainda [obter informações de negócio](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations#bookmark_trabalhe_com_metricas_de_negocio) e [mensurar a efetividade dos seus anúncios](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations#bookmark_otimize_a_conversao_dos_seus_anuncios) em plataformas como Facebook e Google. 
+As configurações dos atributos de preferência te permitem ainda [obter informações de negócio](#bookmark_trabalhe_com_métricas_de_negócio) e [mensurar a efetividade dos seus anúncios](#bookmark_otimize_a_conversão_dos_seus_anúncios) em plataformas como Facebook e Google. 
 
 ## Exemplo de preferência completa
 
@@ -164,7 +164,7 @@ Por padrão, todos os meios de pagamento são oferecidos no Checkout Pro. Por me
 | Atributo de preferência | Descrição |
 | --- | --- |
 | `payment_methods` | Classe que descreve os atributos e métodos de meios de pagamento do Checkout Pro. |
-| `excluded_payment_types` | Método que exclui [meios de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/payment-methods#bookmark_meios_de_pagamento_por_país) indesejados, como cartão de crédito, ticket (boleto ou pagamento em lotérica), entre outros. |
+| `excluded_payment_types` | Método que exclui meios de pagamento indesejados, como cartão de crédito, ticket (boleto ou pagamento em lotérica), entre outros. |
 | `excluded_payment_methods` | Método que exclui bandeiras específicas de cartões de crédito e débito, como Visa, Mastercard, American Express, entre outros. |
 | `installments` | Método que define o número máximo de parcelas a serem ofertadas. |
 | `purpose` | Ao indicar o valor "wallet_purchase" neste método, o Checkout Pro apenas aceitará pagamentos de usuários cadastrados no Mercado Pago, com cartão e saldo em conta. |
@@ -296,7 +296,7 @@ preference_data = {
 
 Você pode ativar a opção de oferecer pagamentos com dois cartões de crédito a partir da conta do Mercado Pago. 
 
-Para ativar essa opção de pagamento, acesse [`Opcões de negócio`](https://www.mercadopago.com.ar/settings/my-business) e selecione a opção `Receber pagamentos com 2 cartões de crédito`.
+Para ativar essa opção de pagamento, acesse [`Opcões de negócio`](https://www.mercadopago.com.br/settings/my-business) e selecione a opção `Receber pagamentos com 2 cartões de crédito`.
 
 ![Config pago 2 tarjetas](/images/web-payment-checkout/config_pago_dos_tarjetas_br.gif)
 ------------
@@ -389,7 +389,7 @@ A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 >
 > O prazo de creditação está entre 1 dia e 2 dias úteis de acordo com o meio de pagamento escolhido. Por isso, recomendamos que você defina a data de expiração com no mínimo 3 dias de intervalo para garantir a realização do pagamento.
 
-Revise os [tempos de creditação por meio de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/_265) para executar a configuração corretamente.
+Revise os [tempos de creditação por meio de pagamento](https://www.mercadopago.com.br/ajuda/_265) para executar a configuração corretamente.
 
 > WARNING
 >
@@ -975,7 +975,7 @@ Ao concluir a configuração, uma conversão será associada à _tag_ especifica
 
 ## Trabalhe com métricas de negócio
 
-Nossos membros certificados no [Dev Program](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/developer-program) podem obter métricas de negócio a partir do Checkout Pro. 
+Nossos membros certificados no [Dev Program](https://www.mercadopago.com/developers/pt/developer-program) podem obter métricas de negócio a partir do Checkout Pro. 
 
 Para trabalhar com métricas, utilize _headers_ na sua preferência de pagamento, agregando o código de identificação de acordo com o cenário desejado (não é obrigatório completar os três campos mencionados abaixo): 
 
@@ -989,7 +989,7 @@ Para trabalhar com métricas, utilize _headers_ na sua preferência de pagamento
 >
 > Nota
 >
-> Não deixe de adicionar o _header_ `integrator_id` em suas integrações para receber benefícios adicionais do programa. Você consegue encontrar seu `integrator_id` no seu [Dashboard de desenvolvedor](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/dashboard/introduction). 
+> Não deixe de adicionar o _header_ `integrator_id` em suas integrações para receber benefícios adicionais do programa. Você consegue encontrar seu `integrator_id` no seu [Dashboard de desenvolvedor](/developers/pt/docs/checkout-pro/additional-content/dashboard/introduction). 
 
 [[[
 ```php

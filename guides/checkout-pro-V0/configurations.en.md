@@ -1,15 +1,15 @@
 # Preference configurations
 
-You can adapt the Checkout Pro integration to your business model by setting [preference attributes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/preferences/_checkout_preferences/post).
+You can adapt the Checkout Pro integration to your business model by setting [preference attributes](https://www.mercadopago.com/developers/en/reference/preferences/_checkout_preferences/post).
 
 ----[mla, mlb]----
-If you offer high-value purchases, for example, you can accept [payments with two credit cards](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations#bookmark_accept_payments_with_2_credit_cards) or [delete undesired payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations#bookmark_define_the_desired_payment_methods) for your operation.
+If you offer high-value purchases, for example, you can accept [payments with two credit cards](#bookmark_accept_payments_with_2_credit_cards) or [delete undesired payment methods](#bookmark_define_the_desired_payment_methods) for your operation.
 ------------
 ----[mlm, mlc, mlu, mco, mpe]----
-If you offer high-value purchases, for example, you can [exclude undesired payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations#bookmark_define_the_desired_payment_methods) for your operation.
+If you offer high-value purchases, for example, you can [exclude undesired payment methods](#bookmark_define_the_desired_payment_methods) for your operation.
 ------------
 
-Preference attribute settings also allow you to [obtain business information](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations#bookmark_work_with_business_metrics) and [measure the effectiveness of your ads](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations#bookmark_optimize_your_ad_conversion) on platforms like Facebook and Google.
+Preference attribute settings also allow you to [obtain business information](#bookmark_work_with_business_metrics) and [measure the effectiveness of your ads](#bookmark_optimize_your_ad_conversion) on platforms like Facebook and Google.
 
 ## Example of complete preference
 
@@ -164,7 +164,7 @@ By default, all payment methods are offered in Checkout Pro. Through payment pre
 | Preference attribute | Description |
 | --- | --- |
 | `payment_methods` | Class describing Checkout Pro's payment methods and attributes. |
-| `excluded_payment_types` | Method that excludes undesired [payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/payment-methods#bookmark_payment_means_by_country) for your operation, such as credit card, ticket, among others. |
+| `excluded_payment_types` | Method that excludes undesired payment methods for your operation, such as credit card, ticket, among others. |
 | `excluded_payment_methods` | Method that excludes specific credit and debit card brands, such as Visa, Mastercard, American Express, among others. |
 | `installments` | Method that defines the maximum number of installments to be offered. |
 | `purpose` | By indicating the value "wallet_purchase" in this method, Checkout Pro will only accept payments from registered users in Mercado Pago, with card and account balance. |
@@ -391,7 +391,7 @@ The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
 >
 > The crediting period is between one day and two working days, depending on the chosen payment method. Therefore, we recommend setting the expiration date at least three days apart to ensure that payment is made.
 
-Review the [credit times according to each payment method](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/_265) to perform the configuration correctly.
+Review the [credit times according to each payment method](https://www.mercadopago.com/ajuda/_265) to perform the configuration correctly.
 
 > WARNING
 >
@@ -973,7 +973,7 @@ When your action is complete, a conversion will be associated with the specified
 
 ## Work with business metrics
 
-Our certified members in the [Dev Program](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/developer-program) can obtain business metrics from Checkout Pro.
+Our certified members in the [Dev Program](https://www.mercadopago.com/developers/en/developer-program) can obtain business metrics from Checkout Pro.
 
 Use headers in your payment preference to work with metrics, adding the identification code according to the desired scenario (it is not mandatory to complete the three fields mentioned below):
 
@@ -987,7 +987,7 @@ Use headers in your payment preference to work with metrics, adding the identifi
 >
 > Note
 >
-> Remember to add the `integrator_id` it to your integrations to receive additional benefits of the program. You can find your `integrator_id` in your developer [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/dashboard/introduction).
+> Remember to add the `integrator_id` it to your integrations to receive additional benefits of the program. You can find your `integrator_id` in your developer [Dashboard](/developers/en/docs/checkout-pro/additional-content/dashboard/introduction).
 
 [[[
 ```php

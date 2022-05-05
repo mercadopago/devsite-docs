@@ -72,7 +72,7 @@ Em seguida, configure a preferência de acordo com o seu produto ou serviço:
 
 ----[mla, mlb, mlu, mpe, mlm]----
 
-> Considere que é necessário configurar as `back_urls` se você quiser retornar ao seu _site_ ao final do pagamento. Para mais informações, visite a seção [Configurações adicionais](/developers/pt/docs/checkout-pro/checkout-customization/additional-configuration#bookmark_url_de_retorno).
+> Considere que é necessário configurar as `back_urls` se você quiser retornar ao seu _site_ ao final do pagamento. Para mais informações, visite a seção [Configurações adicionais](/developers/pt/docs/checkout-pro/checkout-customization/additional-configuration).
 
 [[[
  ```php
