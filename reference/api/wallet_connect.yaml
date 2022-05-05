@@ -14,9 +14,10 @@ paths:
       parameters:
         - name: client.id
           in: query
-          type: number
           description: Unique ID that identifies a specific Client
-          example: 2451675580092619
+          schema:
+            type: number
+            example: 2451675580092619
       requestBody:
         description: Here are the fields needed to complete a request for create an Agreement
         content:
@@ -61,12 +62,12 @@ paths:
                       description: Description of what is the user trying to do
                       example: Test agreement
       responses:
-        '201':
+        '200':
           description: Agreement created
           content:
             application/json:
               schema:
-                description: Agreement that contains an unique identifier and a success URI.
+                description: Agreement that contains an unique identifier and a success URL.
                 type: object
                 properties:
                   agreement_id:
@@ -104,3 +105,155 @@ paths:
                     type: string
                     enum:
                       - 409--Bad-Request--Only an unique “active” agreement must exist for an external_user_id
+  /v2/wallet_connect/agreements/{agreementId}/payer_token:
+    post:
+      tags:
+        - $ref: '#/tags/checkout-api'
+      summary: Create payer token
+      description: A payer token is an ID that represents the authorization the user gave to the seller
+      parameters:
+        - name: agreement_id
+          in: path
+          description: Unique ID that identifies an Agreement
+          required: true
+          schema:
+            type: string
+            example: b1234e5678b91c23a456e78912345b67
+        - name: client.id
+          in: query
+          description: Unique ID that identifies a specific Client
+          required: true
+          schema:
+            type: number
+            example: 1451895580758649
+        - name: caller.id
+          in: query
+          description: Unique ID that identifies a specific Caller
+          required: true
+          schema:
+            type: number
+            example: 832564722
+      requestBody:
+        content:
+          application/json:
+            schema:
+              description: It's a reference of the authorization that the user gave to the seller
+              type: object
+              properties:
+                code:
+                  type: string
+                  description: This is the payer token. It's a reference to the Id that represents the authorization of the user
+                  example: aeecea3e11f2545d1e7790eb6591ff68df74c57930551ed980239f4538a7e530
+      responses:
+        '200':
+          description: Payer token created
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  payer_token:
+                    type: string
+                    description: This is the token of the payer.
+                    example: abcdef1e23f4567d8e9123eb6591ff68df74c57930551ed980239f4538a7e530
+        '400':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 400--Bad-Request--Parameter agreement_id is required
+                      - 400--Bad-Request--Parameter agreementId has more than 32 characters
+                      - 400--Bad-Request--Parameter agreement_id must be an alfanumeric value
+                      - 400--Bad-Request--Invalid value for back_url. Must be a valid URL
+                      - 400--Bad-Request--Parameter client.id must be a valid id
+                      - 400--Bad-Request--Parameter caller.id must be a valid id
+        '404':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                  type: string
+                  enum:
+                    - 404--Not-Found--The agreement_id does not exist
+                    - 404--Not-Found--The client.id does not exist
+                    - 404--Not-Found--The caller.id does not exist
+        '500':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500--Error--Internal server error
+  /v2/wallet_connect/agreements/{agreementId}:
+    delete:
+      tags:
+        - $ref: '#/tags/checkout-api'
+      summary: Cancel agreement
+      description: Endpoint to cancel an agreement by id. An agreement is an authorization link that the buyer receives
+       to allow the seller to access their Mercado Pago wallet to debit the payment. You'll need to cancel an agreement
+       when the vinculation flow has ended.
+      parameters:
+        - name: agreementId
+          in: path
+          description: Unique ID that identifies an Agreement
+          required: true
+          schema:
+            type: string
+            example: b1234e5678b91c23a456e78912345b67
+        - name: client.id
+          in: query
+          description: Unique ID that identifies a Client
+          required: false
+          schema:
+            type: number
+            example: 1451895580758649
+      responses: 
+        '200':
+          description: Success
+          name: Agreement cancelled
+        '400':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                errorKey:
+                  type: string
+                  enum:
+                    - 400--Bad-Request--Parameter agreement_id is required
+                    - 400--Bad-Request--Parameter agreementId has more than 32 characters
+                    - 400--Bad-Request--Parameter agreement_id must be an alfanumeric value
+        '404':
+          content:
+          application/json:
+            schema:
+              type: object
+              properties:
+              errorKey:
+                type: string
+                enum:
+                  - 404--Not-Found--The Agreement with that id
+        '500':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500--Error--Internal server error
