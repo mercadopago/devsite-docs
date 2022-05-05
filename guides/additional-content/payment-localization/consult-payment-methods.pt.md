@@ -12,7 +12,7 @@ Ao consultar os meios de pagamento disponíveis, no `response` serão indicados 
  
 See below which are the **products available by country** and, from that, which **means of payment will or will not be available by product and by country**.
  
-### Pagamentos:
+## Pagamentos:
  
 ----[mlb]----
 | Produto | ARG | BRA | CHL | COL | MEX | PER | URY | VEN |
@@ -21,7 +21,9 @@ See below which are the **products available by country** and, from that, which 
 | Checkout Pro | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 | Mobile Checkout | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | | ✔ |
 | Chackout Transparente | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+
 ------------
+
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 | Produto | ARG | BRA | CHL | COL | MEX | PER | URY | VEN |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -29,9 +31,10 @@ See below which are the **products available by country** and, from that, which 
 | Checkout Pro | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 | Mobile Checkout | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | | ✔ |
 | Chackout API | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+
 ------------
  
-### Assinaturas:
+## Assinaturas:
  
 ----[mlb]----
 | Produto | ARG | BRA | CHL | COL | MEX | PER | URY | VEN |
@@ -39,13 +42,16 @@ See below which are the **products available by country** and, from that, which 
 | Link de pagamento | ✔ | ✔ | | | ✔ | | | |
 | Checkout Pro | ✔ | ✔ | | | ✔ | | | |
 | Checkout Transparente | ✔ | ✔ | | | ✔ | | | |
+
 ------------
+
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 | Produto | ARG | BRA | CHL | COL | MEX | PER | URY | VEN |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Link de pagamento | ✔ | ✔ | | | ✔ | | | |
 | Checkout Pro | ✔ | ✔ | | | ✔ | | | |
 | Checkout API | ✔ | ✔ | | | ✔ | | | |
+
 ------------
  
 A partir das informações anteriores, abaixo estão detalhados quais meios de pagamento estão e não estão disponíveis por país.
@@ -94,7 +100,9 @@ Assinaturas | Checkout Pro |`naranja`, `nativa`, `shopping`, `debvisa`, `debmast
 Assinaturas | Checkout Transparente | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`, `cobroexpress`|
 | Marketplace | Checkout Pro | N/A |
 | Marketplace | Checkout Transparente | N/A |
+
 ------------
+
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 | Produto | Solução | Meios de pagamento não disponíveis |
 | :--- | :--- | :--- |
@@ -107,6 +115,7 @@ Assinaturas | Checkout Pro |`naranja`, `nativa`, `shopping`, `debvisa`, `debmast
 Assinaturas | Checkout API | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`, `cobroexpress`|
 | Marketplace | Checkout Pro | N/A |
 | Marketplace | Checkout API | N/A |
+
 ------------
  
 ### Brasil
@@ -143,7 +152,9 @@ Assinaturas | Checkout API | `naranja`, `nativa`, `shopping`, `debvisa`, `debmas
 | Assinaturas | Checkout Transparente | `bolbradesco`, `giftcard`, `pix` |
 | Marketplace | Checkout Pro | `pix` |
 | Marketplace | Checkout Transparente | `pix` |
+
 ------------
+
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 | Produto | Solução | Meios de pagamento não disponíveis |
 | :--- | :--- | :--- |
@@ -156,6 +167,7 @@ Assinaturas | Checkout API | `naranja`, `nativa`, `shopping`, `debvisa`, `debmas
 | Assinaturas | Checkout API | `bolbradesco`, `giftcard`, `pix`  |
 | Marketplace | Checkout Pro | `pix` |
 | Marketplace | Checkout API | `pix` |
+
 ------------
  
 ## Chile
@@ -187,7 +199,9 @@ Assinaturas | Checkout API | `naranja`, `nativa`, `shopping`, `debvisa`, `debmas
 | Pagamentos | Checkout Transparente | N/A|
 | Marketplace | Checkout Pro | N/A |
 | Marketplace | Checkout Transparente | N/A |
+
 ------------
+
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 | Produto | Solução | Meios de pagamento não disponíveis |
 | :--- | :--- | :--- |
@@ -197,9 +211,10 @@ Assinaturas | Checkout API | `naranja`, `nativa`, `shopping`, `debvisa`, `debmas
 | Pagamentos | Checkout API | N/A|
 | Marketplace | Checkout Pro | N/A |
 | Marketplace | Checkout API | N/A |
+
 ------------
  
-### Colômbia
+## Colômbia
  
 * **Disponíveis:**
  
@@ -227,7 +242,9 @@ Assinaturas | Checkout API | `naranja`, `nativa`, `shopping`, `debvisa`, `debmas
 | Pagamentos | Checkout Transparente | `account_money` |
 | Marketplace | Checkout Pro | N/A |
 | Marketplace | Checkout Transparente | `account_money` |
+
 ------------
+
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 | Produto | Solução | Meios de pagamento não disponíveis |
 | :--- | :--- | :--- |
@@ -237,9 +254,10 @@ Assinaturas | Checkout API | `naranja`, `nativa`, `shopping`, `debvisa`, `debmas
 | Pagamentos | Checkout API | `account_money` |
 | Marketplace | Checkout Pro | N/A |
 | Marketplace | Checkout API | `account_money` |
+
 ------------
  
-### México
+## México
  
 * **Disponíveis:**
  
@@ -274,7 +292,9 @@ Assinaturas | Checkout API | `naranja`, `nativa`, `shopping`, `debvisa`, `debmas
 | Assinaturas | Checkout Transparente | `amex`, `mercadopagocard`, `oxxo`, `bancomer`, `banamex`, `serfin`, `bitcoin` |
 | Marketplace | Checkout Pro | N/A |
 | Marketplace | Checkout Transparente | N/A |
+
 ------------
+
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 | Produto | Solução | Meios de pagamento não disponíveis |
 | :--- | :--- | :--- |
@@ -287,6 +307,7 @@ Assinaturas | Checkout API | `naranja`, `nativa`, `shopping`, `debvisa`, `debmas
 | Assinaturas | Checkout API | `amex`, `mercadopagocard`, `oxxo`, `bancomer`, `banamex`, `serfin`, `bitcoin` |
 | Marketplace | Checkout Pro | N/A |
 | Marketplace | Checkout API | N/A |
+
 ------------
  
 ### Peru
@@ -313,7 +334,9 @@ Assinaturas | Checkout API | `naranja`, `nativa`, `shopping`, `debvisa`, `debmas
 | Pagamentos | Checkout Transparente | N/A |
 | Marketplace | Checkout Pro | N/A |
 | Marketplace | Checkout Transparente | N/A |
+
 ------------
+
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 | Produto | Solução | Meios de pagamento não disponíveis |
 | :--- | :--- | :--- |
@@ -323,6 +346,7 @@ Assinaturas | Checkout API | `naranja`, `nativa`, `shopping`, `debvisa`, `debmas
 | Pagamentos | Checkout API | N/A |
 | Marketplace | Checkout Pro | N/A |
 | Marketplace | Checkout API | N/A |
+
 ------------
  
 ### Uruguai

@@ -43,8 +43,10 @@ const renderCardPaymentBrick = async (bricksBuilder) => {
     },
   };
 
-  const cardPaymentBrick = await bricksBuilder.create('cardPayment', settings);
-  window.cardPaymentBrickController = await cardPaymentBrick.render('cardPaymentBrick_container');
+
+  cardPaymentBrickController = await bricksBuilder.create('cardPayment', 'cardPaymentBrick_container', settings);
+  https://github.com/meliguicarvalho/sdk-js
+
 };
 
 renderCardPaymentBrick(bricksBuilder);

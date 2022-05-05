@@ -12,7 +12,7 @@ When consulting the available payment methods, the `response` will indicate the 
  
 It may be that some payment methods are not available for some products. Payment methods availability by product and by country are detailed below.
  
-### Payments:
+## Payments:
  
 | Product | ARG | BRA | CHL | COL | MEX | PER | URY | VEN |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -21,7 +21,7 @@ It may be that some payment methods are not available for some products. Payment
 | Mobile Checkout | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | | ✔ |
 | Chackout API | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
  
-### Subscriptions:
+## Subscriptions:
  
 | Product | ARG | BRA | CHL | COL | MEX | PER | URY | VEN |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -31,7 +31,7 @@ It may be that some payment methods are not available for some products. Payment
  
 Based on the previous information, below we detail which payment methods are available/unavailable by country.
 
-### Argentina
+## Argentina
  
 * **Available:**
  
@@ -75,7 +75,7 @@ Based on the previous information, below we detail which payment methods are ava
 | Marketplace | Checkout Pro | N/A |
 | Marketplace | Checkout API | N/A |
  
-### Brazil
+## Brazil
  
 * **Available:**
  
@@ -138,7 +138,7 @@ Based on the previous information, below we detail which payment methods are ava
 | Marketplace | Checkout Pro | N/A |
 | Marketplace | Checkout API | N/A |
  
-### Colombia
+## Colombia
  
 * **Available:**
  
@@ -166,7 +166,7 @@ Based on the previous information, below we detail which payment methods are ava
 | Marketplace | Checkout Pro | N/A |
 | Marketplace | Checkout API | `account_money` |
  
-### Mexico
+## Mexico
  
 * **Available:**
  
@@ -201,7 +201,7 @@ Based on the previous information, below we detail which payment methods are ava
 | Marketplace | Checkout Pro | N/A |
 | Marketplace | Checkout API | N/A |
  
-### Peru
+## Peru
  
 * **Available:**
  
@@ -225,7 +225,7 @@ Based on the previous information, below we detail which payment methods are ava
 | Marketplace | Checkout Pro | N/A |
 | Marketplace | Checkout API | N/A |
  
-### Uruguay
+## Uruguay
  
 * **Available:**
  
