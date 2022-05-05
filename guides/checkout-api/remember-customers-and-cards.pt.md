@@ -896,6 +896,12 @@ Os campos que podem ser modificados de um cliente são:
 | `phone` | Telefone cadastrado. |
 | `identification` | Tipo e número do documento. |
 
+> NOTE
+>
+> Nota
+>
+> O campo `email` só pode ser atualizado se o cliente ainda não tiver um e-mail associado.
+
 [[[
 ```php
 
