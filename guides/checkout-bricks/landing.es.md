@@ -10,8 +10,7 @@ bullet_section_with_media:
  - title: 
  - type: normal
  - message: Los bricks tienen flujos de control de componentes de UI y validación de datos, lo que hace que el proceso de integración ocurra a partir de las configuraciones iniciales, los métodos y los callbacks utilizados por cada brick. Además, los bricks garantizan la seguridad de los datos confidenciales a través de la tokenización automática, evitando que estos datos viajen en el servidor.
- - image: /checkout-bricks/cho-bricks-landing.png
----
+ - image: /checkout-bricks/cho-bricks-landing-v2.gif
 
 --- mini_landing_separator ---
 

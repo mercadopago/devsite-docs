@@ -10,7 +10,7 @@ bullet_section_with_media:
  - title: 
  - type: normal
  - message: The bricks have UI component control flows and data validation, which makes the integration process happen from the initial configurations, methods, and callbacks used by each brick. In addition, the bricks guarantee the security of sensitive data through automatic tokenization, preventing this data from traveling on the server.
- - image: /checkout-bricks/cho-bricks-landing.png
+ - image: /checkout-bricks/cho-bricks-landing-v2.gif
 ---
 
 --- mini_landing_separator ---

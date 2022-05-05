@@ -2,7 +2,7 @@
 
 O layout do Card Payment Brick foi construído com base nas melhores práticas de UX para que seja possível entregar ao comprador a melhor experiência sem que você precise se preocupar com detalhes de design. O layout traz os elementos detalhados abaixo.
 
-![cardform](checkout-bricks/card-form__pt.png)
+![cardform](checkout-bricks/card-form-pt.png)
 
 > WARNING
 >

@@ -10,4 +10,4 @@ const bricksBuilder = mp.bricks();
 >
 > Attention
 >
-> During brick instantiation, different errors may appear. For more details on each of them, see the [Possible Errors](/developers/en/docs/checkout-bricks/additional-content/possible-errors) section.
+> During brick instantiation, different errors may appear. For more details on each of them, see the [Possible Errors](/developers/en/docs/checkout-bricks-beta/additional-content/possible-errors) section.
