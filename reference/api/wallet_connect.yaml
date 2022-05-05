@@ -1,0 +1,106 @@
+openapi: 3.0.0
+servers:
+  - url: https://api.mercadopago.com
+info:
+  title: Mercado Pago API Reference
+  version: '1.0'
+paths:
+  /v2/wallet_connect/agreements:
+    post:
+      tags:
+        - $ref: '#/tags/checkout-api'
+      summary: Create Agreement
+      description: An agreement is an authorization link that the buyer receives to allow the seller to access their Mercado Pago wallet to debit the payment
+      parameters:
+        - name: client.id
+          in: query
+          type: number
+          description: Unique ID that identifies a specific Client
+          example: 2451675580092619
+      requestBody:
+        description: Here are the fields needed to complete a request for create an Agreement
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                return_url:
+                  type: string
+                  description: It is the url to which the user must be redirected to return to the seller
+                  example: https://www.mercadopago.com/
+                external_flow_id:
+                  type: string
+                  description: Identifies the Seller side flow current state
+                  example: EXTERNAL_FLOW_ID
+                external_user:
+                  type: object
+                  description: The external_user contains the data that the Seller will need to use to indentify a User, so then it can continue with their own flow.
+                  properties:
+                    id:
+                      required: true
+                      type: string
+                      description: Unique ID that is going to be used by the Seller to identify the external_user
+                      example: usertest
+                    description:
+                      required: true
+                      type: string
+                      description: A brief description with information of the user. It can contains for example the name of the user
+                      example: Test account
+                agreement_data:
+                  type: object
+                  description: Contains data about what is going to do the user and how much it's going to pay
+                  properties:
+                    validation_amount:
+                      required: false
+                      type: number
+                      description: Amount that the user is going to pay
+                      example: 3.14
+                    description:
+                      type: string
+                      required: false
+                      description: Description of what is the user trying to do
+                      example: Test agreement
+      responses:
+        '201':
+          description: Agreement created
+          content:
+            application/json:
+              schema:
+                description: Agreement that contains an unique identifier and a success URI.
+                type: object
+                properties:
+                  agreement_id:
+                    type: string
+                    description: Unique ID that identifies an Agreement
+                    example: b1234e5678b91c23a456e78912345b67
+                  agreement_url:
+                    type: string
+                    description: This is the ur to redirect the user to the wallet vinculation in the frontend
+                    example: https://beta.mercadopago.com.ar/v1/wallet_agreement/b1234e5678b91c23a456e78912345b67
+        '400':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 400--Bad-Request--Field return_url is required
+                      - 400--Bad-Request--Field external_flow_id is required
+                      - 400--Bad-Request--Field return_url must not be grater than 300 characters
+                      - 400--Bad-Request--Field external_flow_id must not be grater than 300 characters
+                      - 400--Bad-Request--Field external_user must not be blank
+                      - 400--Bad-Request--Field id must not be blank
+        '409':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 409--Bad-Request--Only an unique “active” agreement must exist for an external_user_id
