@@ -1,12 +1,11 @@
-## Responsividade
+# Responsividade
 
-O brick possui capacidades responsivas no que tange o tamanho do espaço em tela. O brick vai sempre ocupar o espaço que lhe foi definido e será responsivo quando este espaço sofrer alterações de visualização durante seu uso. 
+O Brick possui capacidades responsivas no que tange o tamanho do espaço em tela. O brick vai sempre ocupar o espaço que lhe foi definido e será responsivo quando este espaço sofrer alterações de visualização durante seu uso. 
 
 ![responsiveness](checkout-bricks/responsive-theme-pt.gif)
-
 
 > NOTE
 >
 > Atenção
 >
-> O breakpoint do brick para dispositivos pequenos é de 480px.
+> O breakpoint do Brick para dispositivos pequenos é de 480px.

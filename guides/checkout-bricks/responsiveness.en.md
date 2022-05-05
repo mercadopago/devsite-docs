@@ -8,4 +8,4 @@ The Brick has responsive capabilities in terms of the size within the screen. Th
 >
 > Attention
 >
-> The brick breaking point for small devices is 480px.
+> The Brick breaking point for small devices is 480px.

@@ -18,6 +18,7 @@ bullet_section_with_media:
 >>>> Disponibilidade por país <<<<
 ---
 available_countries: mla, mlb, mlm, mlu, mlc, mco, mpe
+
 ---
 
 --- mini_landing_separator ---
@@ -30,3 +31,11 @@ available_countries: mla, mlb, mlm, mlu, mlc, mco, mpe
 | [**Personal Data Brick**](/developers/pt/docs/checkout-bricks/personal-data-brick) ![soon](checkout-bricks/soon-button-pt.png) | **Feedback Brick** <br> ![soon](checkout-bricks/soon-button-pt.png) | [**Summary Brick**](/developers/pt/docs/checkout-bricks/summary-brick) <br> ![soon](checkout-bricks/soon-button-pt.png) | [**Wallet Brick**](/developers/pt/docs/checkout-bricks/wallet-brick) <br> ![soon](checkout-bricks/soon-button-pt.png) |
 
 <br>
+
+> NEXT_STEP_CARD_PT
+>
+> Configuração da integração
+>
+> Saiba como configurar a integração com o Mercado Pago Delivery.
+>
+> [Configuração da integração](/developers/pt/docs/mp-delivery/integration-configuration)

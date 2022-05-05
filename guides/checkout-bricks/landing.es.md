@@ -11,6 +11,7 @@ bullet_section_with_media:
  - type: normal
  - message: Los bricks tienen flujos de control de componentes de UI y validación de datos, lo que hace que el proceso de integración ocurra a partir de las configuraciones iniciales, los métodos y los callbacks utilizados por cada brick. Además, los bricks garantizan la seguridad de los datos confidenciales a través de la tokenización automática, evitando que estos datos viajen en el servidor.
  - image: /checkout-bricks/cho-bricks-landing-v2.gif
+---
 
 --- mini_landing_separator ---
 
@@ -29,3 +30,11 @@ available_countries: mla, mlb, mlm, mlu, mlc, mco, mpe
 | [**Personal Data Brick**](/developers/es/docs/checkout-bricks/personal-data-brick) ![soon](checkout-bricks/soon-button__ES.png) | **Feedback Brick** <br> ![soon](checkout-bricks/soon-button__ES.png) | [**Summary Brick**](/developers/es/docs/checkout-bricks/summary-brick) <br> ![soon](checkout-bricks/soon-button__ES.png) | [**Wallet Brick**](/developers/es/docs/checkout-bricks/wallet-brick) <br> ![soon](checkout-bricks/soon-button__ES.png) |
 
 <br>
+
+> NEXT_STEP_CARD_PT
+>
+> Configuração da integração
+>
+> Saiba como configurar a integração com o Mercado Pago Delivery.
+>
+> [Configuração da integração](/developers/pt/docs/mp-delivery/integration-configuration)

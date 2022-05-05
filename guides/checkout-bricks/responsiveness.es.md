@@ -1,4 +1,4 @@
-## Responsividad
+# Responsividad
 
 El Brick posee capacidades responsivas en términos del tamaño del espacio en la pantalla. El brick siempre ocupará el espacio que se le ha definido y responderá cuando este espacio cambie durante su uso.
 
@@ -8,4 +8,4 @@ El Brick posee capacidades responsivas en términos del tamaño del espacio en l
 >
 > Atención
 >
-> El punto de quiebre de brick para dispositivos pequeños es de 480px.
+> El punto de quiebre de Brick para dispositivos pequeños es de 480px.
