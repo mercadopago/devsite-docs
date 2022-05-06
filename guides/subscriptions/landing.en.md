@@ -10,6 +10,7 @@ content_section_with_media:
 >>>> Availability by country <<<<
 ---
 available_countries: mla, mlb, mlm, mlu, mlc, mco, mpe
+
 ---
 
 ---
@@ -28,9 +29,24 @@ bullet_section_with_media:
  - image: /subscriptions/mini-landing-3-pt.png
 ---
 
+---
+bullet_section_with_media: 
+ - title: Benefits
+ - type: normal
+ - message: Create a plan tailored to a product or service.
+ - benefit_title: Customizable frequency
+ - benefit_message: Charge monthly installments or receive payments in other frequency, from weekly to annually.
+ - benefit_title: Free trial
+ - benefit_message: Provide a free trial period allowing customers to experience the service.
+ - benefit_title: Open value
+ - benefit_message: Allow customers to choose the amount they will pay, if you prefer. It is ideal to receive donations.
+ - image: /subscriptions/mini-landing-4-pt.png
+---
+
 --- mini_landing_separator ---
 
 >>>> Accepted payment methods <<<<
 ---
 available_payments: credit, mercadopago, ticket
+
 ---
