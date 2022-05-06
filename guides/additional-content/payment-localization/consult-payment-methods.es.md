@@ -2,17 +2,17 @@
 
 Los productos y medios de pago que ofrece Mercado Pago varían según cada país. Lee a continuación cómo consultar todos los métodos de pago que están disponibles y, a partir de eso, cuáles están o no disponibles por producto y por país.
 
-## Consultar formas de pago
+# Consultar formas de pago
 
-Para consultar todos los métodos de pago disponibles y obtener un listado con el detalle de cada uno de ellos y sus propiedades, realiza un GET al endpoint[/v1/payment_methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payment_methods/_payment_methods/get). Puedes obtener más información sobre los atributos en [Obtener medios de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payment_methods/_payment_methods/get) en las referencias de la API.
+Para consultar todos los métodos de pago disponibles y obtener un listado con el detalle de cada uno de ellos y sus propiedades, realiza un GET al endpoint[/v1/payment_methods](/developers/es/reference/payment_methods/_payment_methods/get). Puedes obtener más información sobre los atributos en [Obtener medios de pago](developers/es/reference/payment_methods/_payment_methods/get) en las referencias de la API.
 
 Al consultar los métodos de pago disponibles, la `response` te indicará los resultados que coinciden con el país asociado a tu cuenta de Mercado Pago.
 
-## Productos y métodos de pago disponibles por país
+# Productos y métodos de pago disponibles por país
  
 Vea a continuación cuáles son los **productos disponibles por país** y, a partir de ahí, qué **medios de pago estarán o no disponibles por producto y por país**.
  
-### Pagos:
+## Pagos:
  
 ----[mlb]----
 | Producto | ARG | BRA | CHL | COL | MEX | PER | URY | VEN |
@@ -21,7 +21,9 @@ Vea a continuación cuáles son los **productos disponibles por país** y, a par
 | Checkout Pro | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 | Mobile Checkout | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | | ✔ |
 | Chackout Transparente | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+
 ------------
+
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 | Producto | ARG | BRA | CHL | COL | MEX | PER | URY | VEN |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -29,9 +31,10 @@ Vea a continuación cuáles son los **productos disponibles por país** y, a par
 | Checkout Pro | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 | Mobile Checkout | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | | ✔ |
 | Chackout API | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+
 ------------
  
-### Suscripciones:
+## Suscripciones:
  
 ----[mlb]----
 | Producto | ARG | BRA | CHL | COL | MEX | PER | URY | VEN |
@@ -39,18 +42,21 @@ Vea a continuación cuáles son los **productos disponibles por país** y, a par
 | Link de pago	 | ✔ | ✔ | | | ✔ | | | |
 | Checkout Pro | ✔ | ✔ | | | ✔ | | | |
 | Checkout Transparente | ✔ | ✔ | | | ✔ | | | |
+
 ------------
+
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 | Producto | ARG | BRA | CHL | COL | MEX | PER | URY | VEN |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Link de pago	 | ✔ | ✔ | | | ✔ | | | |
 | Checkout Pro | ✔ | ✔ | | | ✔ | | | |
 | Checkout API | ✔ | ✔ | | | ✔ | | | |
+
 ------------
  
 Con base en la información anterior, a continuación se detallan qué métodos de pago están y no están disponibles por país.
 
-### Argentina
+## Argentina
  
 * **Disponible:**
  
@@ -94,7 +100,9 @@ Con base en la información anterior, a continuación se detallan qué métodos 
 | Suscripciones | Checkout Transparente | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`, `cobroexpress`|
 | Marketplace | Checkout Pro | N/A |
 | Marketplace | Checkout Transparente | N/A |
+
 ------------
+
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 | Producto | Solución | Medios de pago no disponibles |
 | :--- | :--- | :--- |
@@ -107,9 +115,10 @@ Con base en la información anterior, a continuación se detallan qué métodos 
 | Suscripciones | Checkout API | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`, `cobroexpress`|
 | Marketplace | Checkout Pro | N/A |
 | Marketplace | Checkout API | N/A |
+
 ------------
  
-### Brasil
+## Brasil
  
 * **Disponible:**
  
@@ -143,7 +152,9 @@ Con base en la información anterior, a continuación se detallan qué métodos 
 | Suscripciones | Checkout Transparente | `bolbradesco`, `giftcard`, `pix` |
 | Marketplace | Checkout Pro | `pix` |
 | Marketplace | Checkout Transparente | `pix` |
+
 ------------
+
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 | Producto | Solución | Medios de pago no disponibles|
 | :--- | :--- | :--- |
@@ -156,6 +167,7 @@ Con base en la información anterior, a continuación se detallan qué métodos 
 | Suscripciones | Checkout API | `bolbradesco`, `giftcard`, `pix`  |
 | Marketplace | Checkout Pro | `pix` |
 | Marketplace | Checkout API | `pix` |
+
 ------------
  
 ## Chile
@@ -187,7 +199,9 @@ Con base en la información anterior, a continuación se detallan qué métodos 
 | Pagos | Checkout Transparente | N/A|
 | Marketplace | Checkout Pro | N/A |
 | Marketplace | Checkout Transparente | N/A |
+
 ------------
+
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 | Producto | Solución | Medios de pago no disponibles |
 | :--- | :--- | :--- |
@@ -197,9 +211,10 @@ Con base en la información anterior, a continuación se detallan qué métodos 
 | Pagos | Checkout API | N/A|
 | Marketplace | Checkout Pro | N/A |
 | Marketplace | Checkout API | N/A |
+
 ------------
  
-### Colombia
+## Colombia
  
 * **Disponible:**
  
@@ -227,7 +242,9 @@ Con base en la información anterior, a continuación se detallan qué métodos 
 | Pagos | Checkout Transparente | `account_money` |
 | Marketplace | Checkout Pro | N/A |
 | Marketplace | Checkout Transparente | `account_money` |
+
 ------------
+
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 | Producto | Solución | Medios de pago no disponibles|
 | :--- | :--- | :--- |
@@ -237,9 +254,10 @@ Con base en la información anterior, a continuación se detallan qué métodos 
 | Pagos | Checkout API | `account_money` |
 | Marketplace | Checkout Pro | N/A |
 | Marketplace | Checkout API | `account_money` |
+
 ------------
  
-### México
+## México
  
 * **Disponible:**
  
@@ -274,7 +292,9 @@ Con base en la información anterior, a continuación se detallan qué métodos 
 | Suscripciones | Checkout Transparente | `amex`, `mercadopagocard`, `oxxo`, `bancomer`, `banamex`, `serfin`, `bitcoin` |
 | Marketplace | Checkout Pro | N/A |
 | Marketplace | Checkout Transparente | N/A |
+
 ------------
+
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 | Producto | Solución | Medios de pago no disponibles |
 | :--- | :--- | :--- |
@@ -287,9 +307,10 @@ Con base en la información anterior, a continuación se detallan qué métodos 
 | Suscripciones | Checkout API | `amex`, `mercadopagocard`, `oxxo`, `bancomer`, `banamex`, `serfin`, `bitcoin` |
 | Marketplace | Checkout Pro | N/A |
 | Marketplace | Checkout API | N/A |
+
 ------------
  
-### Peru
+## Peru
  
 * **Disponible:**
  
@@ -313,7 +334,9 @@ Con base en la información anterior, a continuación se detallan qué métodos 
 | Pagos | Checkout Transparente | N/A |
 | Marketplace | Checkout Pro | N/A |
 | Marketplace | Checkout Transparente | N/A |
+
 ------------
+
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 | Producto | Solución | Medios de pago no disponibles |
 | :--- | :--- | :--- |
@@ -323,9 +346,10 @@ Con base en la información anterior, a continuación se detallan qué métodos 
 | Pagos | Checkout API | N/A |
 | Marketplace | Checkout Pro | N/A |
 | Marketplace | Checkout API | N/A |
+
 ------------
  
-### Uruguay
+## Uruguay
  
 * **Disponible:**
  
