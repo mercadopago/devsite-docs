@@ -31,9 +31,12 @@ bullet_section_with_media:
 
 ---
 bullet_section_with_media: 
- - title: Crie um plano com a cara do seu produto ou serviço
+ - title: Vantagens
  - type: normal
- - message: Crie um plano de assinatura, compartilhe com seus clientes e comece a cobrar de forma recorrente sem precisar fazer mais nada. Por exemplo, cobre mensalidades ou receba os pagamentos em qualquer outra frequência (de semanal a anual), ofereça um período sem custos para que seus clientes conheçam o seu serviço e, se quiser, deixe que escolham quanto vão te pagar (ideal para receber doações).
+ - message: 
+ * Frequência personalizável: cobre mensalidades ou receba os pagamentos em qualquer outra frequência, de semanal a anual.
+ * Teste grátis: ofereça um período sem custos para que seus clientes conheçam o seu serviço.
+ * Valor aberto: se quiser, deixe que escolham quanto vão te pagar (ideal para receber doações).
  - image: /subscriptions/mini-landing-4-pt.png
 ---
 
