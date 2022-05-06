@@ -33,10 +33,13 @@ bullet_section_with_media:
 bullet_section_with_media: 
  - title: Vantagens
  - type: normal
- - message: 
- - Frequência personalizável: cobre mensalidades ou receba os pagamentos em qualquer outra frequência, de semanal a anual.  
- - Teste grátis: ofereça um período sem custos para que seus clientes conheçam o seu serviço. 
- - Valor aberto: se quiser, deixe que escolham quanto vão te pagar (ideal para receber doações).
+ - message: Crie um plano com a cara do seu produto ou serviço
+ - benefit_title: Frequência personalizável:
+ - benefit_message: Cobre mensalidades ou receba os pagamentos em qualquer outra frequência, de semanal a anual. 
+ - benefit_title: Teste grátis
+ - benefit_message: Ofereça um período sem custos para que seus clientes conheçam o seu serviço. 
+ - benefit_title: Valor aberto
+ - benefit_message: Se quiser, deixe que escolham quanto vão te pagar (ideal para receber doações).
  - image: /subscriptions/mini-landing-4-pt.png
 ---
 
