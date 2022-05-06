@@ -181,7 +181,7 @@ curl -X POST \
 > Importante
 > 
 > - Se você receber uma mensagem de erro do tipo `"invalid parameter"` com código de estado HTTP 400, certifique-se de que está preenchendo corretamente os campos `payment_method_id` e `issuer_id`.
-> - Quando utilizando as suas credenciais de teste, tenha em mente o seguinte formato para o e-mail do cliente: `test_payer_[0-9]{1,10}@testuser.com`. Por exemplo: `test_payer_12345@testuser.com`.
+> - Quando utilizando usuários de teste, tenha em mente o seguinte formato para o e-mail do cliente: `test_payer_[0-9]{1,10}@testuser.com`. Por exemplo: `test_payer_12345@testuser.com`.
 
 ## Adicione novos cartões a um cliente
 
