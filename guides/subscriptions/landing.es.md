@@ -31,16 +31,16 @@ bullet_section_with_media:
 
 ---
 bullet_section_with_media: 
-  - title: Ventajas
-  - type: normal
-  - message: Crea un plan que se adecue al producto o servicio.
-  - benefit_title: Frecuencia personalizable
-  - benefit_message: Cobra cuotas mensuales o recibe pagos con otra frecuencia, desde semanal hasta anual.
-  - benefit_title: Prueba gratuita
-  - benefit_message: Ofrece un período de prueba gratuito para que los clientes conozcan tu servicio.
-  - benefit_title: Valor abierto
-  - benefit_message: Si lo deseas, permite que ellos elijan el monto que pagarán. Es ideal para recibir donaciones.
-  - image: /subscriptions/mini-landing-4-pt.png
+ - title: Ventajas
+ - type: normal
+ - message: Crea un plan que se adecue al producto o servicio.
+ - benefit_title: Frecuencia personalizable
+ - benefit_message: Cobra cuotas mensuales o recibe pagos con otra frecuencia, desde semanal hasta anual.
+ - benefit_title: Prueba gratuita
+ - benefit_message: Ofrece un período de prueba gratuito para que los clientes conozcan tu servicio.
+ - benefit_title: Valor abierto
+ - benefit_message: Si lo deseas, permite que ellos elijan el monto que pagarán. Es ideal para recibir donaciones.
+ - image: /subscriptions/mini-landing-4-pt.png
 ---
 
 --- mini_landing_separator ---
