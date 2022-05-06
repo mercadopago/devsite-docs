@@ -29,6 +29,14 @@ bullet_section_with_media:
  - image: /subscriptions/mini-landing-3-pt.png
 ---
 
+---
+bullet_section_with_media: 
+ - title: Crie um plano com a cara do seu produto ou serviço
+ - type: normal
+ - message: Crie um plano de assinatura, compartilhe com seus clientes e comece a cobrar de forma recorrente sem precisar fazer mais nada. Por exemplo, cobre mensalidades ou receba os pagamentos em qualquer outra frequência (de semanal a anual), ofereça um período sem custos para que seus clientes conheçam o seu serviço e, se quiser, deixe que escolham quanto vão te pagar (ideal para receber doações).
+ - image: /subscriptions/mini-landing-4-pt.png
+---
+
 --- mini_landing_separator ---
 
 >>>> Meios de pagamento aceitos <<<<
