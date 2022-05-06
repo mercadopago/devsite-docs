@@ -105,7 +105,7 @@ paths:
                     type: string
                     enum:
                       - 409--Bad-Request--Only an unique “active” agreement must exist for an external_user_id
-  /v2/wallet_connect/agreements/{agreementId}/payer_token:
+  /v2/wallet_connect/agreements/{agreement_id}/payer_token:
     post:
       tags:
         - $ref: '#/tags/checkout-api'
@@ -196,7 +196,7 @@ paths:
                     type: string
                     enum:
                       - 500--Error--Internal server error
-  /v2/wallet_connect/agreements/{agreementId}:
+  /v2/wallet_connect/agreements/{agreement_id}:
     delete:
       tags:
         - $ref: '#/tags/checkout-api'
