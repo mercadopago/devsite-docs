@@ -1090,13 +1090,18 @@ curl -X POST \
 
 ---
 
-### Próximo paso
-
-> LEFT_BUTTON_REQUIRED_ES
+> PREV_STEP_CARD_ES
 >
-> Integración avanzada
+> Prueba tu integración con Checkout Pro
+>
+> Revisa que esté todo bien con tu integración utilizando usuarios de prueba.
+>
+> [Prueba tu integración con Checkout Pro](/developers/es/docs/checkout-pro/test-integration)
+
+> NEXT_STEP_CARD_ES
+>
+> Interfaz de usuario
 >
 > Optimiza tu integración con Checkout Pro y mejora la gestión de tus ventas.
 >
-> [Integración avanzada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/advanced-integration)
-
+> [Interfaz de usuario](/developers/es/docs/checkout-pro/checkout-customization/user-interface)

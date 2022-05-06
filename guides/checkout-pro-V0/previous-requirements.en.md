@@ -85,12 +85,10 @@ You can find the information of each one in the [Credentials](/developers/en/doc
 
 ---
 
-### Next step
-
-> LEFT_BUTTON_REQUIRED_EN
+> NEXT_STEP_CARD_EN
 >
 > Integrate with Checkout Pro
 >
 > Follow the step by step to start receiving payments on your website through Checkout Pro.
 >
-> [Integrate with Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/integration)
+> [Integrate with Checkout Pro](/developers/en/docs/checkout-pro/integration-configuration/integrate-checkout-pro)

@@ -51,15 +51,21 @@ Antes ativá-las, certifique-se de que as credenciais usadas na sua integração
 
 ---
 
-### Próximo passo
+> PREV_STEP_CARD_PT
+>
+> Integrar Checkout Pro
+>
+> Siga o passo a passo para começar a receber pagamentos em seu site através do Checkout Pro
+>
+> [Integrar Checkout Pro](/developers/pt/docs/checkout-pro/integration-configuration/integrate-checkout-pro)
 
-> LEFT_BUTTON_REQUIRED_PT
+> NEXT_STEP_CARD_PT
 >
 > Configuração de preferências
 >
-> Configure os atributos de suas preferências e adapte o Checkout Pro ao seu modelo de negócios. 
+> Configure os atributos de suas preferências e adapte o Checkout Pro ao seu modelo de negócios.
 >
-> [Configuração de preferências](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations)
+> [Configuração de preferências](/developers/pt/docs/checkout-pro/checkout-customization/preferences)
 
 
 

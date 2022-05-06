@@ -83,13 +83,10 @@ Para encontrarlas, consulta la sección [Credenciales](/developers/es/docs/check
 
 ---
 
-### Próximo paso
-
-> LEFT_BUTTON_REQUIRED_ES
+> NEXT_STEP_CARD_ES
 >
 > Integra con Checkout Pro
 >
 > Sigue el paso a paso para comenzar a recibir pagos en tu sitio por medio de Checkout Pro.
 >
-> [Integra con Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/integration)
-
+> [Integra con Checkout Pro](/developers/es/docs/checkout-pro/integration-configuration/integrate-checkout-pro)

@@ -407,13 +407,18 @@ Confira o [exemplo completo de integração](http://github.com/mercadopago/check
 
 ---
 
-### Próximo passo
+> PREV_STEP_CARD_PT
+>
+> Pré-requisitos
+>
+> Veja os pré-requisitos necessários para integrar com o Checkout Pro
+>
+> [Pré-requisitos](/developers/pt/docs/checkout-pro/requirements)
 
-> LEFT_BUTTON_REQUIRED_PT
+> NEXT_STEP_CARD_PT
 >
 > Teste a sua integração com o Checkout Pro
 >
 > Confira se a sua integração está funcionando corretamente com usuários de teste.
 >
-> [Teste a sua integração](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/test-integration)
-
+> [Teste de integração](/developers/pt/docs/checkout-pro/test-integration)

@@ -414,14 +414,3 @@ Un contracargo (o _chargeback_) se produce cuando el comprador se comunica con l
 Aprende a gestionar contracargos de pago con nuestra [documentación de Gestión de contracargos](/developers/es/docs/checkout-pro/additional-content/chargebacks).
 
 ---
-
-### Próximo paso
-
-
-> LEFT_BUTTON_REQUIRED_ES
-> 
-> Personalizaciones
->
-> Adapta el estilo de tu marca en la experiencia de compra de Checkout Pro.
->
-> [Personalizaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/customizations)

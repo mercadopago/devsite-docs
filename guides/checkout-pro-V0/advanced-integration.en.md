@@ -417,14 +417,3 @@ A chargeback occurs when the buyer contacts the entity that the card issuer and 
 Access our [Chargeback Management documentation](/developers/en/docs/checkout-pro/additional-content/chargebacks) and learn how to manage payment chargebacks.
 
 ---
-
-### Next step
-
-
-> LEFT_BUTTON_REQUIRED_EN
-> 
-> Customization
->
-> Adapt the style of your brand to the Checkout Pro shopping experience.
->
-> [Customization](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/customizations)

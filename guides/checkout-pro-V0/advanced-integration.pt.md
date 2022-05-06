@@ -413,13 +413,3 @@ Uma contestação (ou *chargeback*) acontece quando o comprador entra em contato
 Acesse nossa [documentação de Gerenciamento de operações contestadas](/developers/pt/docs/checkout-pro/additional-content/chargebacks) e saiba como gerenciar contestações de pagamentos.
 
 ---
-
-### Próximo passo
-
-> LEFT_BUTTON_REQUIRED_PT
->
-> Customizações
->
-> Adapte o estilo da sua marca na experiência de compra do Checkout Pro.
->
-> [Customizações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/customizations)

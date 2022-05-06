@@ -283,3 +283,20 @@ theme: {
 ```
 
 ![Dark Color Button](/images/web-payment-checkout/dark_color_button.png)
+
+
+> PREV_STEP_CARD_EN
+>
+> Preferences configurations
+>
+> Configure the attributes of your preferences and adapt the Checkout Pro to your business model.
+>
+> [Preferences configurations](/developers/en/docs/checkout-pro/checkout-customization/preferences)
+
+> NEXT_STEP_CARD_EN
+>
+> Additional configuration
+>
+> Adapt the style of your brand to the Checkout Pro shopping experience.
+>
+> [Additional configuration](/developers/en/docs/checkout-pro/checkout-customization/additional-configuration)

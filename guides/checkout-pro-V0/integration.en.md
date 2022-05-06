@@ -397,12 +397,18 @@ Check out the [full integration example](http://github.com/mercadopago/checkout-
 
 ---
 
-### Next step
+> PREV_STEP_CARD_EN
+>
+> Prerequisites
+>
+> Check the necessary prerequisites to integrate with Checkout ProVeja os pré-requisitos necessários para integrar com o Checkout Pro
+>
+> [Prerequisites](/developers/en/docs/checkout-pro/requirements)
 
-> LEFT_BUTTON_REQUIRED_EN
+> NEXT_STEP_CARD_EN
 >
 > Test your integration with Checkout Pro
 >
-> Check if everything is properly working in your integration with test users.
+> Check if your integration works correctly with the test users.
 >
-> [Test your integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/test-integration)
+> [Integration test](/developers/en/docs/checkout-pro/test-integration)
