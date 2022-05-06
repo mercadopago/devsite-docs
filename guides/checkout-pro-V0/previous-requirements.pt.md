@@ -20,7 +20,7 @@ Siga os seguintes passos antes de começar a sua integração:
 
 Para começar a integração, é necessário ter uma conta do Mercado Pago ou do Mercado Livre.
 
-Você pode [entrar](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/previous-requirements) em uma conta já existente ou [criar uma nova conta](https://www.mercadopago[FAKER][URL][DOMAIN]) do zero.
+Você pode [entrar](/developers/pt/docs/checkout-pro/requirements) em uma conta já existente ou criar uma nova conta do zero.
 
 ### 2. Instale o SDK do Mercado Pago
 
@@ -82,7 +82,7 @@ Para encontrá-las, veja a [seção de Credenciais](/developers/pt/docs/checkout
 >
 > Nota
 > 
-> Ainda tem dúvidas? Leia a nossa documentação de [Credenciais](/developers/es/docs/checkout-pro/additional-content/credentials) para mais informações. 
+> Ainda tem dúvidas? Leia a nossa documentação de [Credenciais](/developers/pt/docs/checkout-pro/additional-content/credentials) para mais informações. 
 
 ---
 

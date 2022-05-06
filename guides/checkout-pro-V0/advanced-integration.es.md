@@ -6,7 +6,7 @@ Checkout Pro tiene características extra que te permiten optimizar su integraci
 
 Las notificaciones IPN (_Notificación de Pago Instantáneo_) son una forma automática de notificar la creación de nuevos pagos y las actualizaciones de su _estado_, es decir, si fueron aprobados, rechazados o si están pendientes.
 
-Las notificaciones automáticas te permiten administrar tu inventario y mantener tu sistema sincronizado con los flujos de pago de tu negocio. Aprende a recibir notificaciones IPN [aquí](/docs/checkout-pro/additional-content/notifications/ipn/introduction).
+Las notificaciones automáticas te permiten administrar tu inventario y mantener tu sistema sincronizado con los flujos de pago de tu negocio. Aprende a recibir notificaciones IPN [aquí](/developers/es/docs/checkout-pro/additional-content/notifications/ipn/introduction).
 
 ## Agrega información adicional a la preferencia
 
@@ -285,7 +285,7 @@ Si quieres que la redirección sea automática para los pagos aprobados, sin mos
 >
 > Nota
 >
-> Ten en cuenta que el atributo `auto_return` solo funciona para el modo `redirect` y `mobile` de Checkout Pro. No funciona en [modo modal](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/integration), ya que en este último el comprador permanece en el sitio durante todo el proceso de pago.
+> Ten en cuenta que el atributo `auto_return` solo funciona para el modo `redirect` y `mobile` de Checkout Pro. No funciona en modo modal, ya que en este último el comprador permanece en el sitio durante todo el proceso de pago.
 
 ![autoreturn](/images/web-payment-checkout/autoreturn-img.png)
 
@@ -393,7 +393,7 @@ preference_data = {
 
 Un pago puede ser rechazado porque el emisor del medio de pago detecta un problema en el flujo, como no se cumplir con los requisitos de seguridad necesarios.
 
-Evita pagos rechazados con nuestras buenas prácticas y [mejora la aprobación de tus pagos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/payment-rejections).
+Evita pagos rechazados con nuestras buenas prácticas y [mejora la aprobación de tus pagos](/developers/es/docs/checkout-pro/how-tos/payment-approval).
 
 ## Gestiona cancelaciones y devoluciones
 
@@ -405,13 +405,13 @@ Las cancelaciones se efectúan cuando el pago en efectivo no se concretó antes 
 Las cancelaciones se efectúan cuando el pago en efectivo no se concretó antes de la fecha de vencimiento y el vendedor decide cancelarlo. Las devoluciones, a su vez, suceden cuando el pago se realizó pero el vendedor decide anularlo totalmente.
 ------------
 
-Para más información, accede nuestra documentación para [administrar mejor tus cancelaciones de pago y devoluciones de cargo](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds).
+Para más información, accede nuestra documentación para [administrar mejor tus cancelaciones de pago y devoluciones de cargo](/developers/es/docs/checkout-pro/additional-content/cancellations-and-refunds).
 
 ## Gestiona contracargos
 
 Un contracargo (o _chargeback_) se produce cuando el comprador se comunica con la entidad que emitió su tarjeta y desconoce el pago. En la práctica, esto quiere decir que el dinero del vendedor por ese pago será retenido de su cuenta de Mercado Pago hasta que se solucione la situación.
 
-Aprende a gestionar contracargos de pago con nuestra [documentación de Gestión de contracargos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/chargebacks).
+Aprende a gestionar contracargos de pago con nuestra [documentación de Gestión de contracargos](/developers/es/docs/checkout-pro/additional-content/chargebacks).
 
 ---
 

@@ -6,7 +6,7 @@ O Checkout Pro dispõe de funcionalidades extras que permitem otimizar sua integ
 
 As notificações IPN (_Instant Payment Notification_) são notificações automáticas sobre a criação de novos pagamentos e atualizações de status, informando se as transações foram aprovadas, recusadas ou estão pendentes.
 
-Os avisos automáticos permitem que você administre seu estoque e mantenha seu sistema sincronizado com os fluxos de pagamento do seu negócio. Aprenda como receber as notificações IPN [aqui](/docs/checkout-pro/additional-content/notifications/ipn/introduction).
+Os avisos automáticos permitem que você administre seu estoque e mantenha seu sistema sincronizado com os fluxos de pagamento do seu negócio. Aprenda como receber as notificações IPN [aqui](/developers/pt/docs/checkout-pro/additional-content/notifications/ipn/introduction).
 
 ## Insira informações adicionais à preferência
 
@@ -284,7 +284,7 @@ Se deseja que o redirecionamento para os pagamentos aprovados seja automático, 
 >
 > Nota
 >
-> Tenha em conta que o atributo `auto_return` só funciona para o modo `redirect` e `mobile` do Checkout Pro. O mesmo não funciona no [modo modal](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/integration), já que nesse último o comprador segue no _site_ durante todo o processo de pagamento.
+> Tenha em conta que o atributo `auto_return` só funciona para o modo `redirect` e `mobile` do Checkout Pro. O mesmo não funciona no modo modal, já que nesse último o comprador segue no _site_ durante todo o processo de pagamento.
 
 ![autoreturn](/images/web-payment-checkout/autoreturn-img-br.png)
 
@@ -392,7 +392,7 @@ preference_data = {
 
 Um pagamento pode ser recusado porque o emissor do meio de pagamento detectou um problema no fluxo, como falta dos requisitos de segurança necessários.
 
-Evite pagamentos recusados com as nossas [boas práticas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/payment-rejections) e melhore a taxa de aprovação dos seus pagamentos.
+Evite pagamentos recusados com as nossas [boas práticas](/developers/pt/docs/checkout-pro/how-tos/payment-approval) e melhore a taxa de aprovação dos seus pagamentos.
 
 ## Gerencie cancelamentos e estornos
 
@@ -404,13 +404,13 @@ Os cancelamentos são feitos quando o pagamento não foi concluído antes da dat
 Os cancelamentos são feitos quando o pagamento não foi concluído antes da data de vencimento e o vendedor decide então cancelá-lo. As devoluções, por sua vez, acontecem quando o pagamento foi feito pelo comprador, mas o vendedor decide estorná-lo totalmente.
 ------------
 
-Para mais informações, acesse a nossa documentação sobre [gerenciar os cancelamentos e estornos dos seus pagamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds).
+Para mais informações, acesse a nossa documentação sobre [gerenciar os cancelamentos e estornos dos seus pagamentos](/developers/pt/docs/checkout-pro/additional-content/cancellations-and-refunds).
 
 ## Gerencie contestações
 
 Uma contestação (ou *chargeback*) acontece quando o comprador entra em contato com a entidade emissora do cartão e desconhece o pagamento. Na prática, isso significa que o dinheiro desse pagamento será retido da sua conta Mercado Pago até que a situação seja solucionada.
 
-Acesse nossa [documentação de Gerenciamento de operações contestadas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/chargebacks) e saiba como gerenciar contestações de pagamentos.
+Acesse nossa [documentação de Gerenciamento de operações contestadas](/developers/pt/docs/checkout-pro/additional-content/chargebacks) e saiba como gerenciar contestações de pagamentos.
 
 ---
 

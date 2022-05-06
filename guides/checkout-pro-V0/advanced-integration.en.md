@@ -6,9 +6,9 @@ Checkout Pro has features that allow you to improve the management of your sales
 
 IPN notifications (_Instant Payment Notification_) are automatic notifications that can be sent when there are payments and/or status updates, letting you know if transactions have been approved, declined, or are pending.
 
-[Receive IPN notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn/introduction)
+[Receive IPN notifications](/developers/en/docs/checkout-pro/additional-content/notifications/ipn/introduction)
 
-Automatic notifications allow you to manage your inventory and keep your system in sync with your business payment flows. Learn how to receive IPN notifications [here](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn/introduction).
+Automatic notifications allow you to manage your inventory and keep your system in sync with your business payment flows. Learn how to receive IPN notifications [here](/developers/en/docs/checkout-pro/additional-content/notifications/ipn/introduction).
 
 ## Enter additional information to the preference
 
@@ -288,7 +288,7 @@ You can also add the `auto_return` attribute with the `approved` value if you wa
 >
 > Note
 >
-> Note that the `auto_return` attribute only works for Checkout Pro's `redirect` and `mobile` mode. It does not work in [modal mode](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/integration) since in the latter the buyer remains on the site throughout the payment process.
+> Note that the `auto_return` attribute only works for Checkout Pro's `redirect` and `mobile` mode. It does not work in modal mode since in the latter the buyer remains on the site throughout the payment process.
 
 ![autoreturn](/images/web-payment-checkout/autoreturn-img.png)
 
@@ -396,7 +396,7 @@ preference_data = {
 
 A payment can be rejected because the payment method issuer has detected a problem with the flow, such as a lack of necessary security requirements.
 
-Avoid rejected payments with our [recommendations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/payment-rejections) and improve the approval process.
+Avoid rejected payments with our [recommendations](/developers/en/docs/checkout-pro/how-tos/payment-approval) and improve the approval process.
 
 ## Manage cancellations and returns
 
@@ -408,13 +408,13 @@ Cancellations happen when a payment has not been completed before the due date a
 Cancellations happen when payment has not been completed before the due date, and the seller then decides to cancel it. Returns, in turn, happen when the buyer completes the payment, but the seller decides to cancel it totally.
 ------------
 
-For more information, visit our documentation [on how to manage your payment cancellations and returns](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds).
+For more information, visit our documentation [on how to manage your payment cancellations and returns](/developers/en/docs/checkout-pro/additional-content/cancellations-and-refunds).
 
 ## Manage chargebacks
 
 A chargeback occurs when the buyer contacts the entity that the card issuer and communicates that they do not recognize the payment. In practice, this means that the money from this payment will be withheld from your Mercado Pago account until the situation is resolved.
 
-Access our [Chargeback Management documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/chargebacks) and learn how to manage payment chargebacks.
+Access our [Chargeback Management documentation](/developers/en/docs/checkout-pro/additional-content/chargebacks) and learn how to manage payment chargebacks.
 
 ---
 
