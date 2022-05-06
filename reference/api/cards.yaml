@@ -676,20 +676,34 @@ paths:
       summary: Update card
       description: Renew the details of a card associated with a customer. Indicate the IDs and send the parameters with the information you want to update
       parameters:
-        - name: customer_id
-          in: path
-          description: Customer's Id
-          required: true
+        - name: expiration_month
+          in: requestBody
+          description: Card's expiration month.
+          required: false
+          schema:
+            type: number
+            example: 12
+        - name: expiration_year
+          in: requestBody
+          description: Card's expiration year.
+          required: false
+          schema:
+            type: number
+            example: 2025
+        - name: cardholder.name
+          in: requestBody
+          description: Card's name.
+          required: false
           schema:
             type: string
-            example: 12123adfasdf123u4u
-        - name: id
-          in: path
-          description: Card's Id
-          required: true
+            example: Juan Pérez
+        - name: cardholder.identification
+          in: requestBody
+          description: Card's owner identification
+          required: false
           schema:
             type: string
-            example: 12123adfasdf123u4u
+            example: 27009907
       requestBody:
         content:
           application/json:
