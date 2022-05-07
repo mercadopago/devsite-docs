@@ -12,7 +12,7 @@ As credenciais são as **chaves que te oferecemos para que possa configurar sua 
 
 Para poder encontrá-las, veja a [seção de Credenciais]([FAKER][CREDENTIALS][URL]).
 
-> Tem dúvidas sobre credenciais? Leia [Credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/credentials/credentials) para mais informações. 
+> Tem dúvidas sobre credenciais? Leia [Credenciais](/developers/pt/guides/additional-content/credentials/credentials) para mais informações. 
 
 ## Sempre utilize nossas bibliotecas
 Recomendamos que utilize as bibliotecas oficiais para sua integração. Isso permite cuidar dos dados sensíveis dos seus clientes, cumprir com os padrões de segurança requeridos e estar sempre atualizado.
@@ -23,7 +23,7 @@ Recomendamos que utilize as bibliotecas oficiais para sua integração. Isso per
 >
 > h3
 >
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inclua MercadoPago.js
+> Inclua MercadoPago.js
 
 MercadoPago.js te permite gerenciar os dados do cartão para cumprir com os requerimentos de segurança necessários e evitar o envio de dados sensíveis para seus servidores. Para isso, nossa biblioteca gera um token que representa esta informação e te permite operar de forma segura. Pode-se utiliza-lo adicionando o seguinte código ao seu site:
 
@@ -31,22 +31,15 @@ MercadoPago.js te permite gerenciar os dados do cartão para cumprir com os requ
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 
-----[mla, mlm, mpe, mco, mlu, mlc]----
-> Esta documentación utiliza la nueva versión de MercadoPago.js V2. ara ver a versão anterior, vá para a [seção de Checkout API anterior](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/v1/previous-requirements).
-------------
-----[mlb]----
-> Esta documentação utiliza a nova versão de MercadoPago.js V2. Para ver a versão anterior, vá para a [seção de Checkout Transparente anterior](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/v1/previous-requirements).
-------------
-
 <br>
 
 > SERVER_SIDE
 >
 > h3
 >
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instale o SDK do Mercado Pago
+> Instale o SDK do Mercado Pago
 
-Instale o [SDKs oficial](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/sdks) para simplificar sua integração com nossas APIs.
+Instale o [SDKs oficial](/developers/pt/guides/sdks) para simplificar sua integração com nossas APIs.
 
 [[[
 ```php
@@ -101,13 +94,11 @@ pip3 install mercadopago
 
 ## Conheça nossas Referências de API
 
-Se não pode utilizar nossos SDKs oficiais, tenha disponível toda a informação sobre consultas e respostas de dados para interagir diretamente com nossas APIs em [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments/post).
+Se não pode utilizar nossos SDKs oficiais, tenha disponível toda a informação sobre consultas e respostas de dados para interagir diretamente com nossas APIs em [Referências de API](/developers/pt/reference/payments/_payments/post).
 
 ## Cumpra com os requisitos para ir a produção
 
-Ao finalizar sua integração, é necessário que tenha em conta todos os [requisitos para ir a produção](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/checkout-api/goto-production).
+Ao finalizar sua integração, é necessário que tenha em conta todos os [requisitos para ir a produção](/developers/pt/guides/checkout-api/goto-production).
 Com esse processo, garante-se a segurança dos dados dos seus clientes, o cumprimento das normas e disposições legais de cada país e ofereça a melhor experiência de compra para suas vendas.
 
 Quando sua integração estiver pronta e quiser começar a receber pagamentos, complete o formulário para ir a produção na [seção de Credenciais]([FAKER][CREDENTIALS][URL]).
-
-

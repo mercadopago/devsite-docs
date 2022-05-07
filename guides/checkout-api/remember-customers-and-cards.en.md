@@ -880,6 +880,7 @@ curl -X GET \
 To modify a client you need to send the `customer_id` and the fields you want to update in a `HTTP PUT` request. 
 
 The fields that can be modified from a client are:
+
 | Attribute | Description |
 | -------- | ----------- |
 | `address` | Address. |
@@ -891,6 +892,12 @@ The fields that can be modified from a client are:
 | `last_name` | Last name. |
 | `phone` | Registered phone. |
 | `identification` | Document type and number. |
+
+> NOTE
+>
+> Note
+>
+> The field `email` can only be updated if the customer has not yet associated an email.
 
 [[[
 ```php
