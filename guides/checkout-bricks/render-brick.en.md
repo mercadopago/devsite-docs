@@ -9,7 +9,7 @@ const renderCardPaymentBrick = async (bricksBuilder) => {
 
   const settings = {
     initialization: {
-      amount: number, //value to be charged
+      amount: 100, //value to be charged
     },
     callbacks: {
       onReady: () => {

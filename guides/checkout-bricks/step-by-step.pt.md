@@ -1,3 +1,49 @@
+# Passo a passo da integração
+
+## Criar container
+
+Você vai precisar criar um container para definir o local que o brick será inserido na tela. A criação do container é feita inserindo um elemento (por exemplo, uma div) no código HTML da página no qual o brick será renderizado (veja código abaixo). 
+
+> NOTE
+>
+> Atenção
+>
+> O valor exibido na propriedade `id` a seguir é apenas um exemplo, e pode ser alterado, mas deve sempre corresponder ao `id` indicado na renderização.
+
+```html
+  <div id="cardPaymentBrick_container"></div>
+```
+
+## Inclua e configure a biblioteca MercadoPago.js
+
+**Utilize a nossa biblioteca oficial para acessar as funcionalidades do Mercado Pago** com segurança desde seu frontend.
+
+Você precisará instalar o SDK adicionando o seguinte em seu código HTML:
+
+```html
+<script src="https://beta-sdk.mercadopago.com/gama/js/v2"></script>
+```
+
+Em seguida, inicialize o SDK definindo sua [chave pública]([FAKER][CREDENTIALS][URL]) usando código JavaScript:
+
+```javascript
+const mp = new MercadoPago('YOUR_PUBLIC_KEY');
+```
+
+## Instanciar brick
+
+Com o container criado e o SDK JS instalado, o próximo passo é instanciar o brick builder, que permitirá gerar o brick. Para instanciar o brick, insira o código abaixo após a etapa anterior.
+
+```javascript
+const bricksBuilder = mp.bricks();
+```
+
+> WARNING
+>
+> Atenção
+>
+> Durante a instanciação do brick, é possível que apareçam diferentes erros. Para detalhamento de cada um deles, veja a seção [Possíveis erros](/developers/pt/docs/checkout-bricks-beta/additional-content/possible-errors).
+
 # Renderizar brick
 
 Uma vez instanciado, o brick pode ser renderizado e ter todas as suas configurações compiladas de modo que a estrutura final do brick seja gerada.
@@ -52,9 +98,3 @@ const renderCardPaymentBrick = async (bricksBuilder) => {
 renderCardPaymentBrick(bricksBuilder);
 
 ```
-
-> WARNING
-> 
-> Importante
->
-> É necessário enviar as informações coletadas pelo Card Payment Brick ao Mercado Pago de seu backend para concluir o pagamento com segurança. Para isso, veja a seção [Envie o pagamento ao Mercado Pago](/developers/pt/docs/checkout-api/payment-methods/receiving-payment-by-card#bookmark_envie_o_pagamento_ao_mercado_pago) da documentação Checkout Transparente para instruções.
