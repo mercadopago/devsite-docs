@@ -61,10 +61,33 @@ Todas las opciones que tienes disponible a la hora de descargar tu reporte.
 
 
 
-> NOTE
->
-> Nota
->
+## Notificaciones
+
+### Webhook
+
+Webhook (también conocido como devolución de llamada web) es un método simple que facilita que una aplicación o sistema proporcione información en tiempo real cada vez que ocurre un evento, es decir, es una forma de recibir datos pasivamente entre dos sistemas a través de un HTTP POST. Para el caso de los reportes que se utilizan para conciliar se enviará una notificación al usuario que tenga configurado este servicio cuando sus archivos sean generados.
+
+| Atributo | Descripción |
+| --- | --- |
+| transaction_id | ID de la transacción |
+| request_date    | Fecha de la solicitud |
+| generation_date | Fecha de la generación |
+| files | Archivos disponibles |
+| type | Formato del archivo |
+| url | Enlace de descarga |
+| name | Nombre del archivo |
+| status | Estado del reporte |
+| creation_type | Creación manual o programada |
+| report_type | Tipo de reporte |
+| is_test | Define si es una prueba |
+| Signature | Firma digital de la notificación |
+
+
+###Clave pública
+
+La clave pública se usa para enviar firmado el payload así: signature = SHA512({{transaction_id}}-{{public_key}}-{{generation_date}}). El objetivo es validar que el origen de la petición tipo POST entrega información propia de Mercado Pago para confirmar que la notificación no se trata de phishing.
+Para validar la originalidad del mensaje se descrifra el signature enviado en el payload usando el SHA512, también se puede cifrar la información correspondiente al {{transaction_id}}-{{public_key}}-{{generation_date}} y compararlo con el campo signature proveniente del payload. (Ver imagen de payload)
+
 > Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/account-money/glossary) de Todas las transacciones para revisarlo cuando necesites o quieras consultar algún término técnico.
 
 <hr/>

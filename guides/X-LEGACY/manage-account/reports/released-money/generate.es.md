@@ -42,11 +42,35 @@ Considera estas opciones a la hora de descargar tu reporte:
 | Formatos de descarga | .csv, .xlsx <br/><br/>Tip: descarga el reporte en .csv para importar los datos y usarlos en otras aplicaciones. Descárgalo en .xlsx para leer la información en las tablas de la hoja de cálculo. |
 | Archivo | Los reportes generados quedan guardados en tu cuenta de Mercado Pago. |
 
+
+## Notifications
+
+### Webhook
+
+Webhook (also known as "web callback") is a simple method that allows an application or system to send real-time data whenever a particular event takes place, that is, it is a way to passively receive information between two systems via an HTTP POST. In the case of the reports used for reconciliation, a notification is sent to the user who has set up this service when their files are generated.
+
+| Atributo | Descripción |
+| --- | --- |
+| transaction_id | Transaction ID |
+| request_date    | Request date |
+| generation_date | Generation date |
+| files | Available files |
+| type | File format |
+| url | Download link |
+| name | File name |
+| status | Report status |
+| creation_type | Manual or scheduled creation |
+| report_type | Report type |
+| is_test | Determines if it is a test |
+| Signature | Firma digital de la notificación |
+
+
+###Clave pública
+
+La clave pública se usa para enviar firmado el payload así: signature = SHA512({{transaction_id}}-{{public_key}}-{{generation_date}}). El objetivo es validar que el origen de la petición tipo POST entrega información propia de Mercado Pago para confirmar que la notificación no se trata de phishing.
+Para validar la originalidad del mensaje se descrifra el signature enviado en el payload usando el SHA512, también se puede cifrar la información correspondiente al {{transaction_id}}-{{public_key}}-{{generation_date}} y compararlo con el campo signature proveniente del payload. (Ver imagen de payload)
+
 ----[mlm, mlb, mlc, mco, mla]----
-> INFO
->
-> Nota
->
 > Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/glossary) de ------------ ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu]---- Liberaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mla]----para revisarlo cuando lo necesites o quieras consultar algún término técnico.
 ------------
 
