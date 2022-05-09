@@ -5,3 +5,5 @@ Card Payment Brick offers a payment form with an optimized design and different 
 This brick, in addition to containing the fields to collect the personal data of the cardholder (name of the cardholder and ID), also has fields to collect the card number, the expiration date and the security code (CVV), which already comply with [PCI](/developers/en/docs/checkout-bricks/additional-content/security/pci) security standards, eliminating the need to process this data.
 
 In addition to collecting the necessary fields to make the payment, this component also helps the user to complete the screen with alerts for incomplete fields and possible input errors.
+
+![card payment brick](checkout-bricks/card-payment.png)
