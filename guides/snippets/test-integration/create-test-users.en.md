@@ -1,4 +1,9 @@
-To perform the tests, **you must have at least two users:** a seller and a buyer.
+To perform the tests, **you must have at least two users**:
+
+| Type of test users | Description |
+| --- | --- |
+| Seller | It is the account you use to **configure the application and credentials for collection**. |
+| Buyer | It is the account you use to **test the purchase process.**. |
 
 Execute the following curl to generate a test user:
 
@@ -24,7 +29,7 @@ The answer will have a structure similar to the following example:
 }
 ```
 
-For more information about test user API parameters and responses, check [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference)
+For more information about test user API parameters and responses, check [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/test_user/_users_test_user/post)
 
 >WARNING
 >
