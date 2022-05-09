@@ -3,6 +3,28 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ---
 
+## Mayo 2022
+
+### 05 de mayo
+
+> CHANGELOG
+>
+> Nueva versión Magento 2
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: MAGENTO 2
+
+Lanzamos la nueva versión 3.16.0 para Magento 2.
+
+[Ir a documentación de Magento 2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/magento-two/introduction)
+
+> GIT
+>
+> GitHub
+>
+> Consulta en GitHub el detalle de los [últimos cambios productivos](https://github.com/mercadopago/cart-magento2/releases/tag/v3.16.0).
+
 ## Abril 2022
 
 ### 19 de abril
