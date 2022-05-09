@@ -43,10 +43,34 @@ All the options you have available when downloading your report.
 | File | Generated reports are saved in your Mercado Pago account. |
 
 
-> NOTE
->
-> Note
->
+## Notifications
+
+### Webhook
+
+Webhook (also known as "web callback") is a simple method that allows an application or system to send real-time data whenever a particular event takes place, that is, it is a way to passively receive information between two systems via an HTTP POST. In the case of the reports used for reconciliation, a notification is sent to the user who has set up this service when their files are generated.
+
+| Atributo | Descripción |
+| --- | --- |
+| transaction_id | Transaction ID |
+| request_date    | Request date |
+| generation_date | Generation date |
+| files | Available files |
+| type | File format |
+| url | Download link |
+| name | File name |
+| status | Report status |
+| creation_type | Manual or scheduled creation |
+| report_type | Report type |
+| is_test | Determines if it is a test |
+| Signature | Notification digital signature |
+
+
+### public key
+
+The public key is used to send the signed payload as follows: signature = SHA512({{transaction_id}}-{{public_key}}-{{generation_date}}). The objective is to validate that the origin of the POST request delivers Mercado Pago's own information to confirm that the notification is not phishing.
+
+To validate the originality of the message, the signature sent in the payload is decrypted using SHA512. The information corresponding to {{transaction_id}}-{{{public_key}}-{{{generation_date}}} can also be encrypted and compared with the signature field coming from the payload. (View payload image)
+
 > Have the [Glossary of Releases report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/released-money/glossary) on hand to review it when needed or want to review a technical term.
 
 <hr/>
