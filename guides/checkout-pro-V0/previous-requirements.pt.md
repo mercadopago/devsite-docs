@@ -93,4 +93,4 @@ Para encontrá-las, veja a [seção de Credenciais](/developers/pt/docs/checkout
 >
 > Siga o passo a passo para começar a receber pagamentos em seu site através do Checkout Pro
 >
-> [Integrar Checkout Pro](/developers/pt/docs/checkout-pro/integration-configuration/integrate-checkout-pro)
+> [Integrar Checkout Pro](/developers/pt/docs/checkout-pro/integrate-checkout-pro)

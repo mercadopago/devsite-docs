@@ -89,4 +89,4 @@ Para encontrarlas, consulta la sección [Credenciales](/developers/es/docs/check
 >
 > Sigue el paso a paso para comenzar a recibir pagos en tu sitio por medio de Checkout Pro.
 >
-> [Integra con Checkout Pro](/developers/es/docs/checkout-pro/integration-configuration/integrate-checkout-pro)
+> [Integra con Checkout Pro](/developers/es/docs/checkout-pro/integrate-checkout-pro)

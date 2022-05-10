@@ -91,4 +91,4 @@ You can find the information of each one in the [Credentials](/developers/en/doc
 >
 > Follow the step by step to start receiving payments on your website through Checkout Pro.
 >
-> [Integrate with Checkout Pro](/developers/en/docs/checkout-pro/integration-configuration/integrate-checkout-pro)
+> [Integrate with Checkout Pro](/developers/en/docs/checkout-pro/integrate-checkout-pro)
