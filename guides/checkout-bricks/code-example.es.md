@@ -12,10 +12,8 @@ Para facilitar y optimizar su proceso de integración, vea a continuación un ej
         <script>
             const mp = new MercadoPago('YOUR_PUBLIC_KEY');
             const bricksBuilder = mp.bricks();
-        
             const renderCardPaymentBrick = async (bricksBuilder) => {
-        
-                const settings = {
+            const settings = {
                     initialization: {
                         amount: 100, //valor do processamento a ser realizado
                         payer: {
@@ -31,7 +29,6 @@ Para facilitar y optimizar su proceso de integración, vea a continuación un ej
                         },
                         onSubmit: (cardFormData) => {
                         // callback chamado o usuário clicar no botão de submissão dos dados
-        
                         // ejemplo de envío de los datos recolectados por el Brick a su servidor
                         return new Promise((resolve, reject) => {
                             fetch("/process_payment", {
@@ -56,13 +53,9 @@ Para facilitar y optimizar su proceso de integración, vea a continuación un ej
                         },
                     },
                 };
-        
                 window.cardPaymentBrickController = await bricksBuilder.create('cardPayment', 'cardPaymentBrick_container', settings);
-        
             };
-        
             renderCardPaymentBrick(bricksBuilder);
-            
         </script>
     </body>
 </html>

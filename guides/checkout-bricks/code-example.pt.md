@@ -12,10 +12,8 @@ Para facilitar e otimizar o seu processo de integração, veja abaixo um exemplo
         <script>
             const mp = new MercadoPago('YOUR_PUBLIC_KEY');
             const bricksBuilder = mp.bricks();
-        
             const renderCardPaymentBrick = async (bricksBuilder) => {
-        
-                const settings = {
+            const settings = {
                     initialization: {
                         amount: 100, //valor do processamento a ser realizado
                         payer: {
@@ -31,7 +29,6 @@ Para facilitar e otimizar o seu processo de integração, veja abaixo um exemplo
                         },
                         onSubmit: (cardFormData) => {
                         // callback chamado o usuário clicar no botão de submissão dos dados
-        
                         // ejemplo de envío de los datos recolectados por el Brick a su servidor
                         return new Promise((resolve, reject) => {
                             fetch("/process_payment", {
@@ -56,13 +53,25 @@ Para facilitar e otimizar o seu processo de integração, veja abaixo um exemplo
                         },
                     },
                 };
-        
                 window.cardPaymentBrickController = await bricksBuilder.create('cardPayment', 'cardPaymentBrick_container', settings);
-        
             };
-        
             renderCardPaymentBrick(bricksBuilder);
-            
         </script>
     </body>
 </html>
+
+> PREV_STEP_CARD_PT
+>
+> Enviar pagamento ao Mercado Pago
+>
+> Após configurar a integração, veja como enviar o pagamento ao Mercado Pago.
+>
+> [Enviar pagamento ao Mercado Pago](/developers/pt/docs/checkout-bricks-beta/payment-submission)
+
+> NEXT_STEP_CARD_PT
+>
+> Testar a integração
+>
+> Veja como realizar testes para garantir o funcionamento correto de sua integração.
+>
+> [Enviar pagamento ao Mercado Pago](/developers/pt/docs/checkout-bricks-beta/integration-test)

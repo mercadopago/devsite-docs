@@ -7,3 +7,19 @@ Este brick, além de conter os campos de coleta dos dados pessoais do titular do
 Além de coletar os campos necessários para efetuar o pagamento, este componente ainda auxilia o usuário a finalizar o preenchimento da tela com alertas de campos incompletos e possíveis erros no preenchimento. Veja a seguir as principais caracteristicas deste brick. 
 
 ![card payment brick](checkout-bricks/card-payment.png)
+
+> PREV_STEP_CARD_PT
+>
+> Introdução
+>
+> Saiba mais informações sobre o o Checkout Bricks, uma biblioteca de componentes de UI (User interface) que tem como objetivo viabilizar uma integração client-side.
+>
+> [Landind](/developers/pt/docs/checkout-bricks-beta/landind)
+
+> NEXT_STEP_CARD_PT
+>
+> Idiomas
+>
+> Veja em quais idiomas o Card Payment Brick pode ser instanciado/renderizado.
+>
+> [Idiomas](/developers/pt/docs/checkout-bricks-beta/languages)

@@ -30,12 +30,10 @@ available_countries: mla, mlb, mlm, mlu, mlc, mco, mpe
 | [Card Payment Brick](developers/pt/docs/checkout-bricks/card-payment-brick) <br> ![new](checkout-bricks/new-button-pt.png) | [**Regional Payment Brick**](/developers/pt/docs/checkout-bricks/regional-payment-brick) ![soon](checkout-bricks/soon-button-pt.png) | [**Payment Options Brick**](/developers/pt/docs/checkout-bricks/payment-options-brick) ![soon](checkout-bricks/soon-button-pt.png) | [**Shipping Brick**](/developers/pt/docs/checkout-bricks/shipping-brick) <br> ![soon](checkout-bricks/soon-button-pt.png) |
 | [**Personal Data Brick**](/developers/pt/docs/checkout-bricks/personal-data-brick) ![soon](checkout-bricks/soon-button-pt.png) | **Feedback Brick** <br> ![soon](checkout-bricks/soon-button-pt.png) | [**Summary Brick**](/developers/pt/docs/checkout-bricks/summary-brick) <br> ![soon](checkout-bricks/soon-button-pt.png) | [**Wallet Brick**](/developers/pt/docs/checkout-bricks/wallet-brick) <br> ![soon](checkout-bricks/soon-button-pt.png) |
 
-<br>
-
 > NEXT_STEP_CARD_PT
 >
-> Configuração da integração
+> Card Payment Brick
 >
-> Saiba como configurar a integração com o Mercado Pago Delivery.
+> Saiba mais informações sobre o Card Payment Brick.
 >
-> [Configuração da integração](/developers/pt/docs/mp-delivery/integration-configuration)
+> [Card Payment Brick](/developers/pt/docs/checkout-bricks-beta/card-payment-brick)

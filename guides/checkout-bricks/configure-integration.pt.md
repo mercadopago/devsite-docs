@@ -1,4 +1,4 @@
-# Passo a passo da integração
+# Configure a integração
 
 ## Criar container
 
@@ -17,6 +17,12 @@ Você vai precisar criar um container para definir o local que o brick será ins
 ## Inclua e configure a biblioteca MercadoPago.js
 
 **Utilize a nossa biblioteca oficial para acessar as funcionalidades do Mercado Pago** com segurança desde seu frontend.
+
+> NOTE
+>
+> Atenção
+>
+> O codigo JS pode ser incluido em uma tag <script> ou um arquivo JS separado.
 
 Você precisará instalar o SDK adicionando o seguinte em seu código HTML:
 
@@ -98,3 +104,20 @@ const renderCardPaymentBrick = async (bricksBuilder) => {
 renderCardPaymentBrick(bricksBuilder);
 
 ```
+![cardform](checkout-bricks/card-form-pt.png)
+
+> PREV_STEP_CARD_PT
+>
+> Temas
+>
+> Veja mais informações sobre quais temas o Card Payment Brick pode ser instanciado/renderizado.
+>
+> [Temas](/developers/pt/docs/checkout-bricks-beta/themes)
+
+> NEXT_STEP_CARD_PT
+>
+> Enviar pagamento ao Mercado Pago
+>
+> Após configurar a integração, veja como enviar o pagamento ao Mercado Pago.
+>
+> [Enviar pagamento ao Mercado Pago](/developers/pt/docs/checkout-bricks-beta/payment-submission)

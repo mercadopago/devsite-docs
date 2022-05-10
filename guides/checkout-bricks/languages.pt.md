@@ -10,16 +10,16 @@ Veja [Selecionar idioma](/developers/pt/docs/checkout-bricks-beta/additional-cus
 
 > PREV_STEP_CARD_PT
 >
-> Introdução
+> Card Payment Brick
 >
-> Conheça como funciona o Mercado Pago Delivery.
+> Saiba mais informações sobre o Card Payment Brick.
 >
-> [Introdução](/developers/pt/docs/mp-delivery/landing)
+> [Card Payment Brick](/developers/pt/docs/checkout-bricks-beta/card-payment-brick)
 
 > NEXT_STEP_CARD_PT
 >
-> Configuração da integração
+> Layout
 >
-> Saiba como configurar a integração com o Mercado Pago Delivery.
+> Veja quais elementos compõem o Card Payment Brick.
 >
-> [Configuração da integração](/developers/pt/docs/mp-delivery/integration-configuration)
+> [Layout](/developers/pt/docs/checkout-bricks-beta/layout)

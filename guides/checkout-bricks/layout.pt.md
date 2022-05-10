@@ -25,16 +25,16 @@ O layout do Card Payment Brick foi construído com base nas melhores práticas d
 
 > PREV_STEP_CARD_PT
 >
-> Introdução
+> Idiomas
 >
-> Conheça como funciona o Mercado Pago Delivery.
+> Veja em quais idiomas o Card Payment Brick pode ser instanciado/renderizado.
 >
-> [Introdução](/developers/pt/docs/mp-delivery/landing)
+> [Idiomas](/developers/pt/docs/checkout-bricks-beta/languages)
 
 > NEXT_STEP_CARD_PT
 >
-> Configuração da integração
+> Responsividade
 >
-> Saiba como configurar a integração com o Mercado Pago Delivery.
+> Veja mais informações sobre a capacidade responsiva o Card Payment Brick.
 >
-> [Configuração da integração](/developers/pt/docs/mp-delivery/integration-configuration)
+> [Responsividade](/developers/pt/docs/checkout-bricks-beta/responsiviness)
