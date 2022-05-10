@@ -57,8 +57,13 @@ gem install mercadopago-sdk
 ===
 ----[mlb]----
 Para instalar la SDK debes ejecutar el siguiente código en la línea de comandos de tu terminal usando [NuGet](https://docs.microsoft.com/pt-br/nuget/reference/nuget-exe-cli-reference):
+
+------------
+
 ----[mla, mlm, mco, mlc, mlu]----
 Para instalar la SDK debes ejecutar el siguiente código en la línea de comandos de tu terminal usando [NuGet](https://docs.microsoft.com/es-es/nuget/reference/nuget-exe-cli-reference):
+
+------------
 ===
 nuget install mercadopago-sdk
 ```
