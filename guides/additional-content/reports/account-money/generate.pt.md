@@ -83,9 +83,9 @@ Webhook (também conhecido como "retorno de chamada web"), é um método simples
 
 ### chave pública
 
-A chave pública é usada para enviar o payload assinado da seguinte maneira: signature = SHA512({{transaction_id}}-{{public_key}}-{{generation_date}}). O objetivo é validar se a origem da solicitação tipo POST entrega informações próprias do Mercado Pago, para confirmar que a notificação não se trata de phishing.
+A chave pública é usada para enviar o payload assinado da seguinte maneira: `signature = SHA512({{transaction_id}}-{{public_key}}-{{generation_date}}).` O objetivo é validar se a origem da solicitação tipo POST entrega informações próprias do Mercado Pago, para confirmar que a notificação não se trata de phishing.
 
-Para validar a originalidade da mensagem, a signature enviada no payload é descriptografada usando o SHA512. Também é possível criptografar a informação correspondente a {{transaction_id}}-{{public_key}}-{{generation_date}} e compará-la com o campo "Signature", proveniente do payload. (Ver imagem de payload)
+Para validar a originalidade da mensagem, a signature enviada no payload é descriptografada usando o SHA512. Também é possível criptografar a informação correspondente a `{{transaction_id}}-{{public_key}}-{{generation_date}}` e compará-la com o campo "Signature", proveniente do payload.
 
 > Tenha em mãos o [Glossário do relatório](/developers/pt/guides/additional-content/reports/account-money/glossary) de Dinheiro em conta para consultá-lo quando precisar ou queira conferir algum termo técnico.
 

@@ -65,9 +65,9 @@ Webhook (also known as "web callback") is a simple method that allows an applica
 
 
 ### Clave pública
-La clave pública se usa para enviar firmado el payload así: signature = SHA512({{transaction_id}}-{{public_key}}-{{generation_date}}). El objetivo es validar que el origen de la petición tipo POST entrega información propia de Mercado Pago para confirmar que la notificación no se trata de phishing.
+La clave pública se usa para enviar firmado el payload así:  `signature = SHA512({{transaction_id}}-{{public_key}}-{{generation_date}}).` El objetivo es validar que el origen de la petición tipo POST entrega información propia de Mercado Pago para confirmar que la notificación no se trata de phishing.
 
-Para validar la originalidad del mensaje se descrifra el signature enviado en el payload usando el SHA512, también se puede cifrar la información correspondiente al {{transaction_id}}-{{public_key}}-{{generation_date}} y compararlo con el campo signature proveniente del payload. (Ver imagen de payload)
+Para validar la originalidad del mensaje se descrifra el signature enviado en el payload usando el SHA512, también se puede cifrar la información correspondiente al  `{{transaction_id}}-{{public_key}}-{{generation_date}}` y compararlo con el campo signature proveniente del payload.
 
 ----[mlm, mlb, mlc, mco, mla]----
 > Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/glossary) de ------------ ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu]---- Liberaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mla]----para revisarlo cuando lo necesites o quieras consultar algún término técnico.

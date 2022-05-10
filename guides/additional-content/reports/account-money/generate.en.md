@@ -79,9 +79,9 @@ Webhook (also known as "web callback") is a simple method that allows an applica
 
 ### public key
 
-The public key is used to send the signed payload as follows: signature = SHA512({{transaction_id}}-{{public_key}}-{{generation_date}}). The objective is to validate that the origin of the POST request delivers Mercado Pago's own information to confirm that the notification is not phishing.
+The public key is used to send the signed payload as follows: `signature = SHA512({{transaction_id}}-{{public_key}}-{{generation_date}}).` The objective is to validate that the origin of the POST request delivers Mercado Pago's own information to confirm that the notification is not phishing.
 
-To validate the originality of the message, the signature sent in the payload is decrypted using SHA512. The information corresponding to {{transaction_id}}-{{{public_key}}-{{{generation_date}}} can also be encrypted and compared with the signature field coming from the payload. (View payload image)
+To validate the originality of the message, the signature sent in the payload is decrypted using SHA512. The information corresponding to `{{transaction_id}}-{{{public_key}}-{{{generation_date}}}` can also be encrypted and compared with the signature field coming from the payload.
 
 > Have the [Glossary of the Account Money report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/account-money/glossary) on hand to review it when needed or want to review a technical term.
 
