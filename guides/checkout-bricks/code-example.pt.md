@@ -2,7 +2,7 @@
 
 Para facilitar e otimizar o seu processo de integração, veja abaixo um exemplo completo em `html`da integração com o Checkout Bricks.
 
-<!DOCTYPE html>
+```html
 <html>
     <head>
         <script src="https://beta-sdk.mercadopago.com/gama/js/v2"></script>
@@ -59,6 +59,7 @@ Para facilitar e otimizar o seu processo de integração, veja abaixo um exemplo
         </script>
     </body>
 </html>
+```
 
 ## Enviar pagamento ao Mercado Pago
 
@@ -283,14 +284,13 @@ curl -X POST \
 }
 ```
 
-
 > PREV_STEP_CARD_PT
 >
 > Enviar pagamento ao Mercado Pago
 >
 > Após configurar a integração, veja como enviar o pagamento ao Mercado Pago.
 >
-> [Enviar pagamento ao Mercado Pago](/developers/pt/docs/checkout-bricks-beta/payment-submission)
+> [Enviar pagamento ao Mercado Pago](/developers/pt/docs/checkout-bricks-beta/integration/payment-submission)
 
 > NEXT_STEP_CARD_PT
 >
@@ -298,4 +298,4 @@ curl -X POST \
 >
 > Veja como realizar testes para garantir o funcionamento correto de sua integração.
 >
-> [Enviar pagamento ao Mercado Pago](/developers/pt/docs/checkout-bricks-beta/integration-test)
+> [Enviar pagamento ao Mercado Pago](/developers/pt/docs/checkout-bricks-beta/integration/integration-test)

@@ -2,9 +2,11 @@
 
 [TXTSNIPPET][/guides/snippets/test-integration/create-test-users]
 
+</br>
+
 # Prueba el flujo de pago
 
-## 1. Configura la integración con los datos de tu usuario vendedor
+### 1. Configura la integración con los datos de tu usuario vendedor
 
 Configura la [public key de producción]([FAKER][CREDENTIALS][URL]) de tu **usuario de prueba vendedor** en el frontend de tu aplicación y el [access token de producción]([FAKER][CREDENTIALS][URL]) en el backend.
 

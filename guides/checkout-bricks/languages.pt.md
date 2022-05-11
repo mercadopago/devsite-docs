@@ -22,4 +22,4 @@ Veja [Selecionar idioma](/developers/pt/docs/checkout-bricks-beta/additional-cus
 >
 > Veja quais elementos compõem o Card Payment Brick.
 >
-> [Layout](/developers/pt/docs/checkout-bricks-beta/layout)
+> [Layout](/developers/pt/docs/checkout-bricks-beta/characteristics/layout)

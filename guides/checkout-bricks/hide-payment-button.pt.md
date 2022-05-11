@@ -3,7 +3,7 @@
 | Brick | Card Payment Form |
 |--- |--- |
 | Momento de customização | Ao renderizar brick |
-| Propriedade | customization.hidePaymentButton |
+| Propriedade | customization.visual.hidePaymentButton |
 | Tipo | Boolean |
 | Observações | Quando **true** não mostra o botão de enviar o formulário e passa a ser necessário utilizar a função getCardFormData para obter os dados do formulário (veja exemplo abaixo). |
 
@@ -19,7 +19,9 @@ const settings = {
         },
     },
     customization: {
-        hidePaymentButton: true
+        visual: {
+            hidePaymentButton: true
+        }
     }
 }
 ```
@@ -46,3 +48,19 @@ function createPayment(){
         });
 };
 ```
+
+> PREV_STEP_CARD_PT
+>
+> Configurar quantidade máxima e mínima de parcelas 
+>
+> Caso deseje, saiba como configurar quantidade máxima e mínima de parcelas aceitas no Card Payment Brick.
+>
+> [Configurar quantidade máxima e mínima de parcelas](/developers/pt/docs/checkout-bricks-beta/additional-customization/max-and-min-installments)
+
+> NEXT_STEP_CARD_PT
+>
+> Ocultar título e bandeiras 
+>
+> Caso deseje, veja como ocultar a linha de título e as bandeiras aceitas no Card Payment Brick.
+>
+> [Ocultar título e bandeiras](/developers/pt/docs/checkout-bricks-beta/additional-customization/hide-title-and-flags)

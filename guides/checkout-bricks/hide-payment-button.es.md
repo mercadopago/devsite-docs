@@ -3,7 +3,7 @@
 | Brick  | Card Payment Form  |
 | --- | --- |
 | Momento de personalización  |  Al renderizar el brick  |
-| Propiedad  | customization.hidePaymentButton  |
+| Propiedad  | customization.visual.hidePaymentButton  |
 | Tipo  | Boolean  |
 | Observaciones  | Cuando true, el botón de envío del formulario no se muestra y pasa a ser necesario usar la función getCardFormData para obtener los datos del formulario (ver el ejemplo a continuación).  |
 
@@ -12,14 +12,16 @@ const settings = {
     ...,
     callbacks: {
         onReady: () => {
-            // callback llamado cuando Brick esté listo
+            // callback chamado quando o Brick estiver pronto
         },
-        onError: (error) => {
-            // callback llamado para todos los casos de error de Brick
+        onError: (error) => { 
+            // callback chamado para todos os casos de erro do Brick
         },
     },
     customization: {
-        hidePaymentButton: true
+        visual: {
+            hidePaymentButton: true
+        }
     }
 }
 ```

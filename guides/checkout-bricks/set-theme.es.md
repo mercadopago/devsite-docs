@@ -10,10 +10,14 @@ Si estableces el tema en la creación de **instancias de la classe bricks**, el 
 
 ```javascript
 const settings = {
-   ...,
-   style: {
-       theme: 'dark' | 'default' | 'bootstrap' | 'flat'
-   }
+    ...,
+    customization: {
+        visual: {
+            style: {
+                theme: 'dark' | 'default' | 'bootstrap' | 'flat'
+           }
+        }
+    }    
 }
 ```
 

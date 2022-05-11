@@ -16,7 +16,7 @@ O Brick possui capacidades responsivas no que tange o tamanho do espaço em tela
 >
 > Veja quais elementos compõem o Card Payment Brick.
 >
-> [Layout](/developers/pt/docs/checkout-bricks-beta/layout)
+> [Layout](/developers/pt/docs/checkout-bricks-beta/characteristics/layout)
 
 > NEXT_STEP_CARD_PT
 >
@@ -24,4 +24,4 @@ O Brick possui capacidades responsivas no que tange o tamanho do espaço em tela
 >
 > Veja mais informações sobre quais temas o Card Payment Brick pode ser instanciado/renderizado.
 >
-> [Temas](/developers/pt/docs/checkout-bricks-beta/themes)
+> [Temas](/developers/pt/docs/checkout-bricks-beta/characteristics/themes) 

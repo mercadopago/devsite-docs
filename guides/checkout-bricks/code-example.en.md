@@ -2,6 +2,7 @@
 
 To facilitate and optimize your integration process, see below a complete `html` example of the Checkout Bricks integration.
 
+```html
 <!DOCTYPE html>
 <html>
     <head>
@@ -59,3 +60,4 @@ To facilitate and optimize your integration process, see below a complete `html`
         </script>
     </body>
 </html>
+```

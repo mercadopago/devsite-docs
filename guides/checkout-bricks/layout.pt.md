@@ -29,7 +29,7 @@ O layout do Card Payment Brick foi construído com base nas melhores práticas d
 >
 > Veja em quais idiomas o Card Payment Brick pode ser instanciado/renderizado.
 >
-> [Idiomas](/developers/pt/docs/checkout-bricks-beta/languages)
+> [Idiomas](/developers/pt/docs/checkout-bricks-beta/characteristics/languages)
 
 > NEXT_STEP_CARD_PT
 >
@@ -37,4 +37,4 @@ O layout do Card Payment Brick foi construído com base nas melhores práticas d
 >
 > Veja mais informações sobre a capacidade responsiva o Card Payment Brick.
 >
-> [Responsividade](/developers/pt/docs/checkout-bricks-beta/responsiviness)
+> [Responsividade](/developers/pt/docs/checkout-bricks-beta/characteristics/responsiviness)

@@ -11,7 +11,9 @@
 const settings = {
    ...,
    customization: {
-       hideFormTitle: true
+       visual: {
+           hideFormTitle: true
+       }
    }
 }
 ```

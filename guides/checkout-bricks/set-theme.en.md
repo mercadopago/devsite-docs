@@ -11,8 +11,12 @@ If you set the theme on the **instantiation of the brick class**, the theme chan
 ```javascript
 const settings = {
     ...,
-    style: {
-        theme: 'dark' | 'default' | 'bootstrap' | 'flat'
-    }
+    customization: {
+        visual: {
+            style: {
+                theme: 'dark' | 'default' | 'bootstrap' | 'flat'
+           }
+        }
+    }    
 }
 ```

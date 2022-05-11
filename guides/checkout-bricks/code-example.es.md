@@ -2,7 +2,7 @@
 
 Para facilitar y optimizar su proceso de integración, vea a continuación un ejemplo `html` completo de la integración de Checkout Bricks.
 
-<!DOCTYPE html>
+```html
 <html>
     <head>
         <script src="https://beta-sdk.mercadopago.com/gama/js/v2"></script>
@@ -59,3 +59,4 @@ Para facilitar y optimizar su proceso de integración, vea a continuación un ej
         </script>
     </body>
 </html>
+```

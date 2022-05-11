@@ -10,7 +10,7 @@ O Card Payment Brick pode ser instanciado/renderizado com diferentes temas e car
 >
 > Veja mais informações sobre a capacidade responsiva o Card Payment Brick.
 >
-> [Responsividade](/developers/pt/docs/checkout-bricks-beta/responsiviness)
+> [Responsividade](/developers/pt/docs/checkout-bricks-beta/characteristics/responsiviness)
 
 > NEXT_STEP_CARD_PT
 >
@@ -18,4 +18,4 @@ O Card Payment Brick pode ser instanciado/renderizado com diferentes temas e car
 >
 > Saiba como realizar o passo a passo de integração dos Bricks.
 >
-> [Configurar a integração](/developers/pt/docs/checkout-bricks-beta/configure-integration)
+> [Configurar a integração](/developers/pt/docs/checkout-bricks-beta/integration/configure-integration) 
