@@ -20,7 +20,7 @@ Follow the following steps before starting your integration:
 
 It is necessary to have a Mercado Pago or Mercado Libre account to start your integration.
 
-You can [sign in](/developers/en/docs/checkout-pro/requirements) to an existing account or create a new account from scratch.
+You can [sign in](https://www.mercadolivre.com/jms/mlb/lgz/msl/login/H4sIAAAAAAAEAzWNQU7EMBAE_9Jnk0hIe8BHPmJNnHFisDPWeIIXrfbvKAKOre6qfqDIlo9g343hwfdWcswGh1bIkmgNeYVHbXDo2fgvluWakFJlY-3wj0u08frOSfRSJSqd4UCn7SEVGfC_X3DIPfDdWA8qYfDylflq_4lN4LGbte7neYwxVdZIqzTaZIpSp0Vn-jhXmms-dnqJchiF19vbDU-HRN2CKcVPeNOTnz_j_vCy4wAAAA/user) to an existing account or create a new account from scratch.
 
 ### 2. Install the Mercado Pago SDK
 Install the official SDK to simplify your interaction with our APIs.

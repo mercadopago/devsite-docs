@@ -19,7 +19,7 @@ Sigue estos pasos antes de comenzar tu integración:
 ### 1. Accede a una cuenta
 Para poder comenzar la integración, es necesario contar con una cuenta de Mercado Pago o Mercado Libre.
 
-Puedes [acceder](/developers/es/docs/checkout-pro/requirements) a una cuenta que ya exista o crear una cuenta nueva.
+Puedes [acceder](https://www.mercadolivre.com/jms/mlb/lgz/msl/login/H4sIAAAAAAAEAzWNQU7EMBAE_9Jnk0hIe8BHPmJNnHFisDPWeIIXrfbvKAKOre6qfqDIlo9g343hwfdWcswGh1bIkmgNeYVHbXDo2fgvluWakFJlY-3wj0u08frOSfRSJSqd4UCn7SEVGfC_X3DIPfDdWA8qYfDylflq_4lN4LGbte7neYwxVdZIqzTaZIpSp0Vn-jhXmms-dnqJchiF19vbDU-HRN2CKcVPeNOTnz_j_vCy4wAAAA/user) a una cuenta que ya exista o crear una cuenta nueva.
 
 ### 2. Instala la SDK de Mercado Pago
 Instala la SDK oficial para simplificar tu interacción con nuestras APIs.
