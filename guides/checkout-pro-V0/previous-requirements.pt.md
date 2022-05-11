@@ -20,7 +20,15 @@ Siga os seguintes passos antes de começar a sua integração:
 
 Para começar a integração, é necessário ter uma conta do Mercado Pago ou do Mercado Livre.
 
+----[mlb]----
 Você pode [entrar](https://www.mercadolivre.com/jms/mlb/lgz/msl/login/H4sIAAAAAAAEAzWNQU7EMBAE_9Jnk0hIe8BHPmJNnHFisDPWeIIXrfbvKAKOre6qfqDIlo9g343hwfdWcswGh1bIkmgNeYVHbXDo2fgvluWakFJlY-3wj0u08frOSfRSJSqd4UCn7SEVGfC_X3DIPfDdWA8qYfDylflq_4lN4LGbte7neYwxVdZIqzTaZIpSp0Vn-jhXmms-dnqJchiF19vbDU-HRN2CKcVPeNOTnz_j_vCy4wAAAA/user) em uma conta já existente ou criar uma nova conta do zero.
+
+------------
+
+----[mla, mlm, mpe, mco, mlu, mlc]----
+Você pode [entrar](https://www.mercadolibre.com/jms/mlb/lgz/msl/login/H4sIAAAAAAAEAzWNQU7EMBAE_9Jnk0hIe8BHPmJNnHFisDPWeIIXrfbvKAKOre6qfqDIlo9g343hwfdWcswGh1bIkmgNeYVHbXDo2fgvluWakFJlY-3wj0u08frOSfRSJSqd4UCn7SEVGfC_X3DIPfDdWA8qYfDylflq_4lN4LGbte7neYwxVdZIqzTaZIpSp0Vn-jhXmms-dnqJchiF19vbDU-HRN2CKcVPeNOTnz_j_vCy4wAAAA/user) em uma conta já existente ou criar uma nova conta do zero.
+
+------------
 
 ### 2. Instale o SDK do Mercado Pago
 
