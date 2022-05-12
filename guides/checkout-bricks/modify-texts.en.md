@@ -1,4 +1,8 @@
-# Modify texts
+> CLIENT_SIDE
+>
+> h1
+>
+> Modify texts
 
 | Brick  | Card Payment Brick  |
 | --- | --- |

@@ -1,4 +1,8 @@
-# Configurar quantidade máxima e mínima de parcelas 
+> CLIENT_SIDE
+>
+> h1
+>
+> Configurar quantidade máxima e mínima de parcelas 
 
 | Brick  | Card Payment Brick  |
 | --- | --- |

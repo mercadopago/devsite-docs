@@ -14,7 +14,7 @@ Além de coletar os campos necessários para efetuar o pagamento, este component
 >
 > Saiba mais informações sobre o o Checkout Bricks, uma biblioteca de componentes de UI (User interface) que tem como objetivo viabilizar uma integração client-side.
 >
-> [Landind](/developers/pt/docs/checkout-bricks-beta/landing)
+> [Landing](/developers/pt/docs/checkout-bricks-beta/landing)
 
 > NEXT_STEP_CARD_PT
 >

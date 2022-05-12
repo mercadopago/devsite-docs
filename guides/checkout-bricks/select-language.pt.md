@@ -1,4 +1,8 @@
-# Selecionar idioma 
+> CLIENT_SIDE
+>
+> h1
+>
+> Selecionar idioma 
 
 Você pode selecionar o idioma do brick de duas formas diferentes: no momento da inicialização ou via SDK.
 
@@ -42,3 +46,11 @@ const mp = new MercadoPago('YOUR_PUBLIC_KEY', {
 > Caso deseje, veja como alterar os textos do layout escolhido no Card Payment Brick
 >
 > [Alterar textos](/developers/pt/docs/checkout-bricks-beta/additional-customization/modify-texts)
+
+> NEXT_STEP_CARD_PT
+>
+> Possíveis erros
+>
+> Saiba quais são os possíveis erros exibidos ao integrador no momento de instanciar o Brick.
+>
+> [Possíveis erros](/developers/pt/docs/checkout-bricks-beta/additional-content/possible-errors)

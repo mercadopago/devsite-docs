@@ -38,11 +38,10 @@ available_countries: mla, mlb, mlm, mlu, mlc, mco, mpe
 >
 > [Card Payment Brick](/developers/pt/docs/checkout-bricks-beta/card-payment-brick)
 
-
-> RECOMMENDED_STEP_CARD_PT
+> NEXT_STEP_CARD_PT
 >
-> Card Payment Brick
+> Configurar a integração
 >
-> Saiba mais informações sobre o Card Payment Brick.
+> Saiba como realizar o passo a passo de integração dos Bricks.
 >
-> [Card Payment Brick](/developers/pt/docs/checkout-bricks-beta/card-payment-brick)
+> [Configurar a integração](/developers/pt/docs/checkout-bricks-beta/integration/configure-integration) 

@@ -1,6 +1,12 @@
 # Exemplo de código
+ 
+Para facilitar e otimizar o seu processo de integração, veja abaixo um exemplo completo da integração com o Checkout Bricks e de como, após realizar a integração, enviar o pagamento ao Mercado Pago.
 
-Para facilitar e otimizar o seu processo de integração, veja abaixo um exemplo completo em `html`da integração com o Checkout Bricks.
+> CLIENT_SIDE
+>
+> h2
+>
+> Configuração da integração
 
 ```html
 <html>
@@ -61,7 +67,11 @@ Para facilitar e otimizar o seu processo de integração, veja abaixo um exemplo
 </html>
 ```
 
-## Enviar pagamento ao Mercado Pago
+> SERVER_SIDE
+>
+> h2
+>
+> Enviar pagamento ao Mercado Pago
 
 [[[
 ```php
@@ -266,7 +276,7 @@ curl -X POST \
 ```
 ]]]
 
-## Resposta
+### Resposta
 
 ```json
 {

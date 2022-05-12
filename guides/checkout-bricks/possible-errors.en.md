@@ -11,11 +11,7 @@ During the Brick integration process, it is possible that **when the Brick is in
 | Absence of the property locale (preferred language)  | [Initialization error] Locale property is required  | missing_locale_property  |
 | Generic error occurred during brick initialization, usually some validation that failed due to a value sent by the integrator  | [Initialization error] Brick incorrectly initialized: {error}  | incorrect_initialization  |
 
-<br>
-
 ## Communication with external services (Mercado Pago APIs)
-
-<br>
 
 | Error | Message for the user | Message for the integrator | Critical? | Cause code |
 | --- | --- | --- | --- | --- |

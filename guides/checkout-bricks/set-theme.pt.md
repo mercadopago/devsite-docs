@@ -1,4 +1,8 @@
-# Definir tema 
+> CLIENT_SIDE
+>
+> h1
+>
+> Definir tema 
 
 Por padrão, o Card Payment Brick é instanciado/renderizado com o tema padrão. Contudo, é possível selecionar outro tema definindo o parâmetro "theme" ao instanciar a classe `bricks`.
 

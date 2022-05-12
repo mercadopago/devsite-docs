@@ -1,4 +1,8 @@
-# Modify CSS variables
+> CLIENT_SIDE
+>
+> h1
+>
+> Modify CSS variables
 
 | Brick | Card Payment Brick |
 | --- | --- |

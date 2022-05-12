@@ -1,10 +1,18 @@
-# Crie usuários de teste
+> CLIENT_SIDE
+>
+> h1
+>
+> Crie usuários de teste
 
 [TXTSNIPPET][/guides/snippets/test-integration/create-test-users]
 
 </br>
 
-# Teste o fluxo de pagamento
+> CLIENT_SIDE
+>
+> h1
+>
+> Teste o fluxo de pagamento
  
 ## 1. Configure a integração com os dados do seu usuário vendedor
  
@@ -16,15 +24,9 @@ Configure a [public key de produção]([FAKER][CREDENTIALS][URL]) do seu **usuá
  
 Inicie sua integração configurada com as credenciais do seu usuário de teste vendedor:
  
-1. Preencha os dados de um [cartão de teste](/developers/pt/guides/checkout-api/integration-test/test-cards).
+1. Preencha os dados de um [cartão de teste](/developers/pt/guides/additional-content/testing/test-cards).
 1. Insira o e-mail do seu usuário de teste comprador.
 2. Confirme a compra e pronto!
- 
-### Começar a receber pagamentos
- 
-Para começar a cobrar, você deve cumprir os [requisitos para entrar em produção](/developers/pt/guides/checkout-api/goto-production) e [ativar suas credenciais]([FAKER][CREDENTIALS][URL]).
- 
-Antes de ativá-las, certifique-se de que as credenciais na sua integração sejam as da conta que recebe o dinheiro das vendas.
 
 > PREV_STEP_CARD_PT
 >
@@ -32,7 +34,7 @@ Antes de ativá-las, certifique-se de que as credenciais na sua integração sej
 >
 > Para facilitar e otimizar o seu processo de integração, veja um exemplo completo integração com o Checkout Bricks.
 >
-> [Enviar pagamento ao Mercado Pago](/developers/pt/docs/checkout-bricks-beta/code-example)
+> [Exemplo de código](/developers/pt/docs/checkout-bricks-beta/code-example)
 
 > NEXT_STEP_CARD_PT
 >
@@ -40,4 +42,4 @@ Antes de ativá-las, certifique-se de que as credenciais na sua integração sej
 >
 > Caso deseje, veja como selecionar outro tema ao instanciar/renderizar o Card Payment Brick.
 >
-> [Definir tema ](/developers/pt/docs/checkout-bricks-beta/additional-customization/set-theme)
+> [Definir tema](/developers/pt/docs/checkout-bricks-beta/integration/code-example)

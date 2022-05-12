@@ -1,4 +1,8 @@
-# Selecionar idioma
+> CLIENT_SIDE
+>
+> h1
+>
+> Selecionar idioma
 
 Puedes seleccionar el idioma del brick de dos maneras diferentes: al inicio o mediante SDK.
 
@@ -34,4 +38,3 @@ const mp = new MercadoPago('YOUR_PUBLIC_KEY', {
 | Español  | Peru  | 'es-PE'  |
 | Portugués  | Brasil  | 'pt-BR'  |
 | Inglés  | Estados Unidos  | 'en-US'  |
-

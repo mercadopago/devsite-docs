@@ -1,10 +1,14 @@
 # Configure the integration
 
-## Create container
+> CLIENT_SIDE
+>
+> h2
+>
+> Create container
 
 You will need to create a container to define where the brick will be placed on the screen. The creation of the container is done by inserting an element (for example, a div) in the HTML code of the page where the brick will be rendered (see the code below).
 
->NOTE
+> NOTE
 > 
 > Attention
 >
@@ -14,9 +18,19 @@ You will need to create a container to define where the brick will be placed on 
   <div id="cardPaymentBrick_container"></div>
 ```
 
-## Include and configure MercadoPago.js library
+> CLIENT_SIDE
+>
+> h2
+>
+> Include and configure MercadoPago.js library
 
 **Use our official library to access Mercado Pago features** from your frontend securely.
+
+> NOTE
+>
+> Attention
+>
+> JS code can be included in a `<script>` tag or a separate JS file.
 
 You will need to install the SDK by adding the following in your HTML code:
 
@@ -30,7 +44,70 @@ Next, initialize the SDK by setting your [public key]([FAKER][CREDENTIALS][URL])
 const mp = new MercadoPago('YOUR_PUBLIC_KEY');
 ```
 
-## Instantiate brick
+> SERVER_SIDE
+>
+> h3
+>
+> Install Mercado Pago SDK
+
+Install an [official SDK](/developers/en/guides/sdks) to simplify your interaction with our APIs.
+
+[[[
+```php
+===
+[Install Composer](https://getcomposer.org/download) to use the SDK.
+
+Then run the following code on the command line:
+===
+php composer.phar require "mercadopago/dx-php:dev-master"
+```
+```node
+===
+To install the SDK you must execute the following code on the command line of your terminal using [npm](https://www.npmjs.com/get-npm):
+===
+npm install mercadopago
+```
+```java
+===
+To install the SDK in your [Maven](http://maven.apache.org/install.html) project, add the following dependency in your pom.xml file and then run ´maven install´.
+===
+<dependency>
+   <groupId>com.mercadopago</groupId>
+   <artifactId>sdk-java</artifactId>
+   <version>2.0.0</version>
+</dependency>
+```
+```ruby
+===
+The Mercado Pago SDK is available as a [gem](https://rubygems.org/gems/mercadopago-sdk), to install it you must execute the following code on the command line:
+===
+gem install mercadopago-sdk
+```
+```csharp
+===
+----[mlb]----
+Use [NuGet](https://docs.microsoft.com/pt-br/nuget/reference/nuget-exe-cli-reference) to install the Mercado Pago SDK .NET.
+------------
+----[mla, mco, mlu, mlc, mlm]----
+Use [NuGet](https://docs.microsoft.com/es-es/nuget/reference/nuget-exe-cli-reference) to install the Mercado Pago SDK .NET.
+------------
+To do this, run the following command on your terminal:
+===
+nuget install mercadopago-sdk
+```
+```python
+===
+The Mercado Pago SDK is available as a [pip](https://pypi.org/project/mercadopago/), to install it you must execute the following code on the command line:
+===
+pip3 install mercadopago
+```
+]]]
+
+> CLIENT_SIDE
+>
+> h2
+>
+> Instantiate brick
 
 With the container created and our SDK JS installed, the next step is to instantiate the brick builder, which will allow generating the brick. To create the brick instance, insert the code below after the previous step.
 
@@ -44,7 +121,11 @@ const bricksBuilder = mp.bricks();
 >
 > During brick instantiation, different errors may appear. For more details on each of them, see the [Possible Errors](/developers/en/docs/checkout-bricks-beta/additional-content/possible-errors) section.
 
-## Render brick
+> CLIENT_SIDE
+>
+> h2
+>
+> Render brick
 
 Once instantiated, the brick can be rendered and have all its configurations compiled so that the final structure of the brick is generated.
 

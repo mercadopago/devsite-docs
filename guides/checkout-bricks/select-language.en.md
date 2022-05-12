@@ -1,4 +1,8 @@
-# Select language
+> CLIENT_SIDE
+>
+> h1
+>
+> Select language
 
 You can select the brick language in two different ways: at the time of initialization of the brick or via SDK.
 

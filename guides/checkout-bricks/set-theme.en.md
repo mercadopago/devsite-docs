@@ -1,4 +1,8 @@
-# Set Theme
+> CLIENT_SIDE
+>
+> h1
+>
+> Set Theme
 
 By default, the Card Payment Brick is instantiated/rendered with the default theme. However, it is possible to select another theme by setting the "theme" parameter when instantiating/rendering the brick.
 

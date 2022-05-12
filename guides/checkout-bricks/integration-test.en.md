@@ -14,6 +14,6 @@ Configure your **seller test user's** [productive public key]([FAKER][CREDENTIAL
 
 Start the integration with your test seller user credentials:
 
-1. Fill out [test card data](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/integration-test/test-cards).
+1. Fill out [test card data](/developers/en/guides/additional-content/testing/test-cards).
 1. Enter your test buyer user e-mail.
 1. Confirm purchase. Done!
