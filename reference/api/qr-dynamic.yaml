@@ -122,7 +122,7 @@ paths:
                       type: number
                       description: Amount to withdraw in local currency.
       responses:
-        '201':
+        '200':
           description: Success
           content:
             application/json:
