@@ -1,8 +1,12 @@
-## Select language
+> CLIENT_SIDE
+>
+> h1
+>
+> Select language
 
 You can select the brick language in two different ways: at the time of initialization of the brick or via SDK.
 
-### Select language while initializing
+## Select language while initializing
 
 To select the language when starting the brick, insert the code below into your project paying attention to the `locale` parameter, which must be filled in with the defined language following the following pattern: `es` , `pt-BR` and `en` for Spanish, Portuguese and English respectively.
 
@@ -13,7 +17,7 @@ const settings = {
 }
 ```
 
-### Select language via SDK
+## Select language via SDK
 
 To select the language via SDK, insert the code below into your project and fill the `locale` parameter with the desired language following the pattern shown in the following table.
 

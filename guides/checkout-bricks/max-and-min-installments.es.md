@@ -1,4 +1,8 @@
-##  Configurar monto máximo y mínimo de cuotas
+> CLIENT_SIDE
+>
+> h1
+>
+> Configurar monto máximo y mínimo de cuotas
 
 | Brick | Card Payment Brick |
 | --- | --- |
