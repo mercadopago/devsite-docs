@@ -1,0 +1,368 @@
+openapi: 3.0.0
+servers:
+  - url: https://api.mercadopago.com
+info:
+  title: Mercado Pago API Reference
+  version: '1.0'
+paths:
+  /instore/orders/qr/seller/collectors/{user_id}/pos/{external_pos_id}/qrs:
+    post:
+      tags:
+        - $ref: '#/tags/qr-code'
+      summary: Create a QR tramma
+      description: Generate a QR tramma that will be added to an image
+      parameters:
+        - name: user_id
+          in: path
+          description: Find the User ID in your developer dashboard at our devsite
+          required: true
+          schema:
+            type: string
+            example: 446566691
+        - name: external_pos_id
+          in: path
+          description: Custom POS ID associated to the order.
+          required: true
+          schema:
+            type: string
+            example: SUC001POS001
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                external_reference:
+                  type: string
+                  description: Custom order ID you can synchronize with your sale system.
+                  example: 12345
+                title:
+                  type: string
+                  description: Purchase title.
+                  example: Product order
+                description:
+                  type: string
+                  description: Purchase description.
+                notification_url:
+                  type: string
+                  description: >-
+                    URL where you'd like to receive a payment or merchant_order
+                    notification.
+                  example: www.yourserver.com
+                expiration_date:
+                  type: string
+                  description: Expiration date with format "2020-08-22T16:34:56.559-04:00"
+                total_amount:
+                  type: number
+                  description: Total amount of the transaction in local currency.
+                  example: 100
+                items:
+                  type: array
+                  description: Information on the products involved in the order.
+                  items:
+                    type: object
+                    properties:
+                      sku_number:
+                        type: string
+                        description: Item code.
+                        example: A123K9191938
+                      category:
+                        type: string
+                        description: Item category.
+                        example: marketplace
+                      title:
+                        type: string
+                        description: Item title.
+                        example: Point Mini
+                      description:
+                        type: string
+                        description: Item description.
+                        example: This is the Point Mini
+                      unit_price:
+                        type: number
+                        description: Unit price of the item (maximum 2 decimals).
+                        example: 100
+                      quantity:
+                        type: number
+                        description: Number of item units.
+                        example: 1
+                      unit_measure:
+                        $ref: '#/components/schemas/unit_measure'
+                      total_amount:
+                        type: string
+                        description: Item total.
+                        example: 100
+                taxes:
+                  type: array
+                  description: Information about the paid taxes.
+                  items:
+                    type: object
+                    properties:
+                      value:
+                        type: number
+                        description: Total amount of tax payed. This amount is not included in the total sum of the order.
+                        example: 19
+                      type:
+                        type: string
+                        description: type of tax payed.
+                        example: IVA
+                sponsor: 
+                  type: object
+                  description: Integrator information.
+                  properties:
+                    id:
+                      type: number
+                      description: Mercado Pago's USER_ID of the integrator system.
+                      example: 446566691
+                cash_out:
+                  type: object
+                  description: Cash withdrawal (Commercial contact required)
+                  properties:
+                    amount:
+                      type: number
+                      description: Amount to withdraw in local currency.
+      responses:
+        '201':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  qr_data:
+                    type: string
+                    description: EMVCo tramma for the QR generation
+                    example: 00020101021243650016COM.MERCADOLIBRE02013063638f1192a-5fd1-4180-a180-8bcae3556bc35204000053039865802BR5925IZABEL AAAA DE MELO6007BARUERI62070503***63040B6D
+        '400':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - invalid_collectorId--user-id-must-be-a-number-
+                      - invalid_externalPosId--externalPosId-must-be-present-
+                      - >-
+                        invalid_external_reference--external-reference-must-be-present-
+                      - invalid_total_amount--total-amount-must-be-present-
+                      - >-
+                        invalid_items.sku_number--items-sku-number-must-be-string-
+                      - invalid_items.category--items-category-must-be-string-
+                      - invalid_items.title--items-title-must-be-string-
+                      - >-
+                        invalid_items.description--items-description-must-be-string-
+                      - >-
+                        invalid_items.unit_measure--items-unit-measure-must-be-string-
+                      - invalid_items.quantity--items-quantity-must-be-number-
+                      - >-
+                        invalid_items.currency_id--items-currency-id-must-be-string-
+                      - >-
+                        invalid_items.unit_price--items-unit-price-must-be-number-
+                      - >-
+                        invalid_items.total_amount--items-total-amount-must-be-number-
+                      - invalid_title--title-must-be-string-
+                      - invalid_unit_measure--unit-measure-must-be-present-
+                      - invalid_quantity--quantity-must-be-present-
+                      - invalid_unit_price--unit-price-must-be-present-
+                      - invalid_description--description-must-be-present-
+                      - invalid_sponsor.id--sponsor-id-must-be-number-
+                      - invalid_id--sponsor-id-must-be-present-
+                      - invalid_cash_out.amount--cash-out-amount-must-be-number-
+                      - invalid_amount--cash-out-amount-must-be-present-
+                      - >-
+                        error_creating_seller_qr_order--The-cash-out-is-required-when-order-has-no-items-
+                      - >-
+                        invalid_expiration_date--Expiration-date-must-be-a-valid-and-future-date-
+        '500':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - in_store_order_creation_error--Failed-to-create-order-
+    put:
+      tags:
+        - $ref: '#/tags/qr-code'
+      summary: Create an order
+      description: Generate a payment order with all the payment information for your product or service and associate it with the Point of Sale you want
+      parameters:
+        - name: user_id
+          in: path
+          description: Find the User ID in your developer dashboard at our devsite
+          required: true
+          schema:
+            type: string
+            example: 446566691
+        - name: external_pos_id
+          in: path
+          description: Custom POS ID associated to the order.
+          required: true
+          schema:
+            type: string
+            example: SUC001POS001
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                external_reference:
+                  type: string
+                  description: Custom order ID you can synchronize with your sale system.
+                  example: 12345
+                title:
+                  type: string
+                  description: Purchase title.
+                  example: Product order
+                description:
+                  type: string
+                  description: Purchase description.
+                notification_url:
+                  type: string
+                  description: >-
+                    URL where you'd like to receive a payment or merchant_order
+                    notification.
+                  example: www.yourserver.com
+                expiration_date:
+                  type: string
+                  description: Expiration date with format "2020-08-22T16:34:56.559-04:00"
+                total_amount:
+                  type: number
+                  description: Total amount of the transaction in local currency.
+                  example: 100
+                items:
+                  type: array
+                  description: Information on the products involved in the order.
+                  items:
+                    type: object
+                    properties:
+                      sku_number:
+                        type: string
+                        description: Item code.
+                        example: A123K9191938
+                      category:
+                        type: string
+                        description: Item category.
+                        example: marketplace
+                      title:
+                        type: string
+                        description: Item title.
+                        example: Point Mini
+                      description:
+                        type: string
+                        description: Item description.
+                        example: This is the Point Mini
+                      unit_price:
+                        type: number
+                        description: Unit price of the item (maximum 2 decimals).
+                        example: 100
+                      quantity:
+                        type: number
+                        description: Number of item units.
+                        example: 1
+                      unit_measure:
+                        $ref: '#/components/schemas/unit_measure'
+                      total_amount:
+                        type: string
+                        description: Item total.
+                        example: 100
+                taxes:
+                  type: array
+                  description: Information about the paid taxes.
+                  items:
+                    type: object
+                    properties:
+                      value:
+                        type: number
+                        description: Total amount of tax payed. This amount is not included in the total sum of the order.
+                        example: 19
+                      type:
+                        type: string
+                        description: type of tax payed.
+                        example: IVA
+                sponsor: 
+                  type: object
+                  description: Integrator information.
+                  properties:
+                    id:
+                      type: number
+                      description: Mercado Pago's USER_ID of the integrator system.
+                      example: 446566691
+                cash_out:
+                  type: object
+                  description: Cash withdrawal (Commercial contact required)
+                  properties:
+                    amount:
+                      type: number
+                      description: Amount to withdraw in local currency.
+      responses:
+        '400':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - invalid_collectorId--user-id-must-be-a-number-
+                      - invalid_externalPosId--externalPosId-must-be-present-
+                      - >-
+                        invalid_external_reference--external-reference-must-be-present-
+                      - invalid_total_amount--total-amount-must-be-present-
+                      - >-
+                        invalid_items.sku_number--items-sku-number-must-be-string-
+                      - invalid_items.category--items-category-must-be-string-
+                      - invalid_items.title--items-title-must-be-string-
+                      - >-
+                        invalid_items.description--items-description-must-be-string-
+                      - >-
+                        invalid_items.unit_measure--items-unit-measure-must-be-string-
+                      - invalid_items.quantity--items-quantity-must-be-number-
+                      - >-
+                        invalid_items.currency_id--items-currency-id-must-be-string-
+                      - >-
+                        invalid_items.unit_price--items-unit-price-must-be-number-
+                      - >-
+                        invalid_items.total_amount--items-total-amount-must-be-number-
+                      - invalid_title--title-must-be-string-
+                      - invalid_unit_measure--unit-measure-must-be-present-
+                      - invalid_quantity--quantity-must-be-present-
+                      - invalid_unit_price--unit-price-must-be-present-
+                      - invalid_description--description-must-be-present-
+                      - invalid_sponsor.id--sponsor-id-must-be-number-
+                      - invalid_id--sponsor-id-must-be-present-
+                      - invalid_cash_out.amount--cash-out-amount-must-be-number-
+                      - invalid_amount--cash-out-amount-must-be-present-
+                      - >-
+                        error_creating_seller_qr_order--The-cash-out-is-required-when-order-has-no-items-
+                      - >-
+                        invalid_expiration_date--Expiration-date-must-be-a-valid-and-future-date-
+        '500':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - in_store_order_creation_error--Failed-to-create-order-
+components:
+  schemas:
+    unit_measure:
+      type: string
+      description: Unit of measure of the item.
+      example: unit
+      enum: 
+        - unit -- Unit
+        - pack -- Pack
