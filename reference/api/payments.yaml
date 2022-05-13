@@ -230,10 +230,10 @@ paths:
                       description: Identification of the associated payer.
                     email:
                       type: string
-                      description: email associated to the payer.
+                      description: Email associated to the payer. It will only be returned when status=approved or status=authorized.
                     identification:
                       type: object
-                      description: Personal identification.
+                      description: Personal identification. It will only be returned when status=approved or status=authorized.
                       properties:
                         type:
                           type: string
@@ -385,7 +385,7 @@ paths:
                       email:
                         type: string
                         example: test_user_80507629@testuser.com
-                        description: email associated to the payer.
+                        description: Email associated to the payer. It will only be returned when status=approved or status=authorized. 
                       identification:
                         type: object
                         properties:
@@ -397,7 +397,7 @@ paths:
                             type: string
                             example: CPF
                             description: Identification type.
-                        description: Personal identification.
+                        description: Personal identification. It will only be returned when status=approved or status=authorized.
                       type:
                         $ref: '#/components/schemas/payer_type'
                     description: Payer data - ID (identifying number), email address, identification (type and number of id)
@@ -629,7 +629,7 @@ paths:
                                 type: string
                                 example: CPF
                                 description: Identification type.
-                            description: Personal identification.
+                            description: Personal identification. 
                         description: Cardholder details.
                     description: Card details.
                   notification_url:
@@ -943,10 +943,10 @@ paths:
                       email:
                         type: string
                         example: afriend@gmail.com
-                        description: email associated to the payer.
+                        description: Email associated to the payer. It will only be returned when status=approved or status=authorized.
                       identification:
                         type: object
-                        description: Personal identification.
+                        description: Personal identification. It will only be returned when status=approved or status=authorized.
                         properties:
                           type:
                             type: string
@@ -1331,19 +1331,19 @@ paths:
                       email:
                         type: string
                         example: test_user_80507629@testuser.com
-                        description: email associated to the payer.
+                        description: Email associated to the payer. It will only be returned when status=approved or status=authorized.
                       identification:
                         type: object
                         properties:
                           number:
                             type: string
                             example: 19119119100
-                            description: Identification number.
+                            description: Identification number. 
                           type:
                             type: string
                             example: CPF
                             description: Identification type.
-                        description: Personal identification.
+                        description: Personal identification. It will only be returned when status=approved or status=authorized.
                       type:
                         $ref: '#/components/schemas/payer_type'
                   metadata:
@@ -1839,10 +1839,10 @@ paths:
                               email:
                                 type: string
                                 example: afriend@gmail.com
-                                description: email associated to the payer.
+                                description: Email associated to the payer. It will only be returned when status=approved or status=authorized. It will only be returned when status=approved or status=authorized.
                               identification:
                                 type: object
-                                description: Personal identification.
+                                description: Personal identification. It will only be returned when status=approved or status=authorized.
                                 properties:
                                   type:
                                     type: string
