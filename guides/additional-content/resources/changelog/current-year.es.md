@@ -5,6 +5,23 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ## Mayo 2022
 
+### 13 de mayo
+
+> CHANGELOG
+>
+> Reporte Dinero retirado: restricciones integración vía API
+>
+> PRODUCT: MERCADO PAGO
+Limitamos el uso de la API a la consulta y descarga manual de reportes históricos, como consecuencia del deprecado del reporte Dinero retirado en los próximos meses.
+
+Por lo tanto, ya no es posible configurar las instancias de generación, configuración y descarga para programar reportes.
+
+Tampoco será posible usar las llamadas a la API para crear, consultar y actualizar reportes.
+
+Seguirán teniendo soporte únicamente la consulta y descarga manual de reportes creados.
+
+No se presentan cambios en la documentación.
+
 ### 05 de mayo
 
 > CHANGELOG
