@@ -10,7 +10,7 @@ paths:
       tags:
         - $ref: '#/tags/qr-code'
       summary: Create a QR tramma
-      description: Generate a QR tramma that will be added to an image
+      description: Generates a QR tramma that will be added to an image
       parameters:
         - name: user_id
           in: path
@@ -21,7 +21,7 @@ paths:
             example: 446566691
         - name: external_pos_id
           in: path
-          description: Custom POS ID associated to the order.
+          description: Custom POS ID associated to the order
           required: true
           schema:
             type: string
@@ -34,7 +34,7 @@ paths:
               properties:
                 external_reference:
                   type: string
-                  description: Custom order ID you can synchronize with your sale system.
+                  description: Custom order ID you can synchronize with your sale system
                   example: 12345
                 title:
                   type: string
@@ -45,9 +45,7 @@ paths:
                   description: Purchase description.
                 notification_url:
                   type: string
-                  description: >-
-                    URL where you'd like to receive a payment or merchant_order
-                    notification.
+                  description: URL where you'd like to receive a payment or merchant_order notification.
                   example: www.yourserver.com
                 expiration_date:
                   type: string
@@ -94,17 +92,17 @@ paths:
                         example: 100
                 taxes:
                   type: array
-                  description: Information about the paid taxes.
+                  description: Information about the paid taxes
                   items:
                     type: object
                     properties:
                       value:
                         type: number
-                        description: Total amount of tax payed. This amount is not included in the total sum of the order.
+                        description: Total amount of tax payed. This amount is not included in the total sum of the order
                         example: 19
                       type:
                         type: string
-                        description: type of tax payed.
+                        description: type of tax paid
                         example: IVA
                 sponsor: 
                   type: object
@@ -191,7 +189,7 @@ paths:
       tags:
         - $ref: '#/tags/qr-code'
       summary: Create an order
-      description: Generate a payment order with all the payment information for your product or service and associate it with the Point of Sale you want
+      description: Generates a payment order with all the payment information for your product or service and associate it with the Point of Sale you want. The success response consists of an empty 201 code.
       parameters:
         - name: user_id
           in: path
@@ -202,7 +200,7 @@ paths:
             example: 446566691
         - name: external_pos_id
           in: path
-          description: Custom POS ID associated to the order.
+          description: Custom POS ID associated to the order
           required: true
           schema:
             type: string
@@ -215,7 +213,7 @@ paths:
               properties:
                 external_reference:
                   type: string
-                  description: Custom order ID you can synchronize with your sale system.
+                  description: Custom order ID you can synchronize with your sale system
                   example: 12345
                 title:
                   type: string
@@ -226,9 +224,7 @@ paths:
                   description: Purchase description.
                 notification_url:
                   type: string
-                  description: >-
-                    URL where you'd like to receive a payment or merchant_order
-                    notification.
+                  description: URL where you'd like to receive a payment or merchant_order notification.
                   example: www.yourserver.com
                 expiration_date:
                   type: string
@@ -275,17 +271,17 @@ paths:
                         example: 100
                 taxes:
                   type: array
-                  description: Information about the paid taxes.
+                  description: Information about the paid taxes
                   items:
                     type: object
                     properties:
                       value:
                         type: number
-                        description: Total amount of tax payed. This amount is not included in the total sum of the order.
+                        description: Total amount of tax payed. This amount is not included in the total sum of the order
                         example: 19
                       type:
                         type: string
-                        description: type of tax payed.
+                        description: type of tax paid
                         example: IVA
                 sponsor: 
                   type: object
