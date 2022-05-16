@@ -33,6 +33,6 @@ available_countries: mla, mlb, mlm, mlu, mlc, mco, mpe
 >
 > Card Payment Brick
 >
-> Obtenga más información sobre el Card Payment Brick.
+> Obtén más información sobre el Card Payment Brick.
 >
 > [Card Payment Brick](/developers/es/docs/checkout-bricks-beta/card-payment-brick)

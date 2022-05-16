@@ -45,7 +45,7 @@ Como se menciona en la [sección de Mensajes de respuesta](/developers/es/guides
 
 ### Sé transparente con las promociones y financiación
 
-Debes aclarar que las promociones son ofrecidas por Mercado Pago. Puedes [incluir un banner de medios de pago](/developers/es/guides/additional-content/resources/banners/introduction) o [sumar el link a la sección de promociones](https://www.mercadopago.com/mla/credit_card_promos.htm). Como también, debes informar los [costos de financiación que aplican a tus clientes](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/costos-financiacion_621).
+Debes aclarar que las promociones son ofrecidas por Mercado Pago. Puedes [incluir un banner de medios de pago](/developers/es/guides/additional-content/resources/banners/introduction) o [sumar el link a la sección de promociones](https://www.mercadopago.com/mla/credit_card_promos.htm). Adicionalmente, debes informar los [costos de financiación que aplican a tus clientes](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/costos-financiacion_621).
 
 ----[mla]----
 > NOTE

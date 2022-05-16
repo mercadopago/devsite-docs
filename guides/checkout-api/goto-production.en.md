@@ -45,7 +45,7 @@ As mentioned in the [Response handling](/developers/en/guides/checkout-api/respo
 
 ### Be transparent with promotions and financing
 
-You need to be clear about which promotions are offered by Mercado Pago. You can [include a payment method banner](/developers/en/guides/additional-content/resources/banners/introduction) or [add a link to the promotions section](https://www.mercadopago.com/mla/credit_card_promos.htm). Besides, you need to inform [financing costs applicable to your customers](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/costos-financiacion_621).
+You need to be clear about which promotions are offered by Mercado Pago. You can [include a payment method banner](/developers/en/guides/additional-content/resources/banners/introduction) or [add a link to the promotions section](https://www.mercadopago.com/mla/credit_card_promos.htm). Additionally, you need to inform [financing costs applicable to your customers](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/costos-financiacion_621).
 
 ----[mla]----
 > NOTE
