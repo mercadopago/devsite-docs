@@ -239,12 +239,12 @@ curl -X POST \
 >
 > Saiba como realizar o passo a passo de integração dos Bricks.
 >
-> [Configurar a integração](/developers/pt/docs/checkout-bricks-beta/configure-integration)
+> [Configurar a integração](/developers/pt/docs/checkout-bricks-beta/integration/configure-integration)
 
 > NEXT_STEP_CARD_PT
 >
-> Exemplo de código
+> Testar a integração
 >
-> Para facilitar e otimizar o seu processo de integração, veja um exemplo completo integração com o Checkout Bricks.
+> Veja como realizar testes para garantir o funcionamento correto de sua integração.
 >
-> [Enviar pagamento ao Mercado Pago](/developers/pt/docs/checkout-bricks-beta/code-example)
+> [Enviar pagamento ao Mercado Pago](/developers/pt/docs/checkout-bricks-beta/integration/integration-test) 

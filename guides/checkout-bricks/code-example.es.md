@@ -291,3 +291,18 @@ curl -X POST \
     ...
 }
 ```
+> PREV_STEP_CARD_ES
+>
+> Probar la integración
+>
+> Consulta cómo realizar pruebas para garantizar el buen funcionamiento de la integración.
+>
+> [Enviar pago a Mercado Pago](/developers/es/docs/checkout-bricks-beta/integration/integration-test)
+
+> NEXT_STEP_CARD_ES
+>
+> Definir tema
+>
+> Si lo deseas, aprende a seleccionar otro tema al instanciar/renderizar Card Payment Brick.
+>
+> [Definir tema ](/developers/es/docs/checkout-bricks-beta/additional-customization/set-theme)

@@ -296,16 +296,16 @@ curl -X POST \
 
 > PREV_STEP_CARD_PT
 >
-> Enviar pagamento ao Mercado Pago
->
-> Após configurar a integração, veja como enviar o pagamento ao Mercado Pago.
->
-> [Enviar pagamento ao Mercado Pago](/developers/pt/docs/checkout-bricks-beta/integration/payment-submission)
-
-> NEXT_STEP_CARD_PT
->
 > Testar a integração
 >
 > Veja como realizar testes para garantir o funcionamento correto de sua integração.
 >
-> [Enviar pagamento ao Mercado Pago](/developers/pt/docs/checkout-bricks-beta/integration/integration-test)
+> [Enviar pagamento ao Mercado Pago](/developers/pt/docs/checkout-bricks-beta/integration/integration-test) 
+
+> NEXT_STEP_CARD_PT
+>
+> Definir tema 
+>
+> Caso deseje, veja como selecionar outro tema ao instanciar/renderizar o Card Payment Brick.
+>
+> [Definir tema](/developers/pt/docs/checkout-bricks-beta/integration/code-example)
