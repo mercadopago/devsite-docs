@@ -2,7 +2,7 @@
 >
 > h1
 >
-> Configure maximum and minimum amount of installments
+> Configure maximum and minimum number of installments
 
 | Brick | Card Payment Brick |
 | --- | --- |

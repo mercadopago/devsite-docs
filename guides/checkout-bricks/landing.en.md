@@ -30,11 +30,3 @@ available_countries: mla, mlb, mlm, mlu, mlc, mco, mpe
 | [**Personal Data Brick**](/developers/en/docs/checkout-bricks/personal-data-brick) ![soon](checkout-bricks/soon-button-en.png) | **Feedback Brick** <br> ![soon](checkout-bricks/soon-button-en.png) | [**Summary Brick**](/developers/en/docs/checkout-bricks/summary-brick) <br> ![soon](checkout-bricks/soon-button-en.png) | [**Wallet Brick**](/developers/en/docs/checkout-bricks/wallet-brick) <br> ![soon](checkout-bricks/soon-button-en.png) |
 
 <br>
-
-> NEXT_STEP_CARD_PT
->
-> Configuração da integração
->
-> Saiba como configurar a integração com o Mercado Pago Delivery.
->
-> [Configuração da integração](/developers/pt/docs/mp-delivery/integration-configuration)
