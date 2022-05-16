@@ -230,3 +230,19 @@ curl -X POST \
 ```
 
 > Conoce todos los campos disponibles para realizar un pago completo en las [Referencias de API](/developers/es/reference/payments/_payments/post).
+
+> PREV_STEP_CARD_ES
+>
+> Configurar la integración
+>
+> Aprende a realizar la integración de los Bricks paso a paso.
+>
+> [Configurar la integración](/developers/es/docs/checkout-bricks-beta/integration/configure-integration)
+
+> NEXT_STEP_CARD_ES
+>
+> Probar la integración
+>
+> Consulta cómo realizar pruebas para garantizar el buen funcionamiento de la integración.
+>
+> [Enviar pago a Mercado Pago](/developers/es/docs/checkout-bricks-beta/integration/integration-test)

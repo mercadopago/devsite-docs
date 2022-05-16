@@ -23,18 +23,18 @@ El layout de Card Payment Brick se basa en las mejores prácticas de UX para que
 | Campo para ingresar el correo electrónico del comprador <br> Propiedad: cardholderEmail  | **Valor:** N/A <br> **Label:** Email <br> **Placeholder:** joaosilva@email.com <br> **Tipo:** string <br> **Formato:** formato de e-mail convencional (ejemplo@email.com)  **Máx. caracteres:** X  | Obligatorio* <br> personalizable (label, placeholder) <br><br> *Si los datos se proporcionaron y guardaron previamente, este elemento se vuelve opcional.  |
 | Botón de pago <br> Propiedad: formSubmit  | **Valor:** [imagen] Pagar <br> **Label:** N/A  **Placeholder:** N/A <br> **Tipo:** text <br> **callback:** onSubmit <br> **função**: promise(cardFormData)  | Opcional <br> Ocultable y personalizable <br><br> *La función recibe los datos del formulario, incluido el token de la tarjeta, y presenta una animación de carga.  |
 
-> PREV_STEP_CARD_PT
+> PREV_STEP_CARD_ES
 >
-> Introdução
+> Idiomas
 >
-> Conheça como funciona o Mercado Pago Delivery.
+> Consulta en qué idiomas se puede instanciar/renderizar Card Payment Brick.
 >
-> [Introdução](/developers/pt/docs/mp-delivery/landing)
+> [Idiomas](/developers/es/docs/checkout-bricks-beta/characteristics/languages)
 
-> NEXT_STEP_CARD_PT
+> NEXT_STEP_CARD_ES
 >
-> Configuração da integração
+> Capacidad de respuesta
 >
-> Saiba como configurar a integração com o Mercado Pago Delivery.
+> Obtén más información sobre la capacidad de respuesta de Card Payment Brick.
 >
-> [Configuração da integração](/developers/pt/docs/mp-delivery/integration-configuration)
+> [Capacidad de respuesta](/developers/es/docs/checkout-bricks-beta/characteristics/responsiviness)

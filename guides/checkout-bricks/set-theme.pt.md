@@ -27,11 +27,11 @@ const settings = {
 
 > PREV_STEP_CARD_PT
 >
-> Testar a integração
+> Exemplo de código
 >
-> Veja como realizar testes para garantir o funcionamento correto de sua integração.
+> Para facilitar e otimizar o seu processo de integração, veja um exemplo completo integração com o Checkout Bricks.
 >
-> [Testar a integração](/developers/pt/docs/checkout-bricks-beta/integration/integration-test)
+> [Exemplo de código](/developers/pt/docs/checkout-bricks-beta/integration/code-example)
 
 > NEXT_STEP_CARD_PT
 >

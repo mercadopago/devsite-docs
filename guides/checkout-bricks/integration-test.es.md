@@ -27,3 +27,19 @@ Inicia tu integración configurada con las credenciales de tu usuario de prueba 
 1. Completa los datos de una [tarjeta de prueba](/developers/es/guides/additional-content/testing/test-cards).
 1. Ingresa el e-mail de tu usuario de prueba comprador.
 1. Confirma la compra, ¡y listo!
+
+> PREV_STEP_CARD_ES
+>
+> Enviar pago a Mercado Pago
+>
+> Después de configurar la integración, consulta cómo enviar el pago a Mercado Pago.
+>
+> [Enviar pago a Mercado Pago](/developers/es/docs/checkout-bricks-beta/integration/payment-submission)
+
+> NEXT_STEP_CARD_ES
+>
+> Ejemplo de código
+>
+> Para facilitar y optimizar el proceso de integración, consulta un ejemplo de integración con Checkout Bricks.
+>
+> [Enviar pago a Mercado Pago](/developers/es/docs/checkout-bricks-beta/code-example)

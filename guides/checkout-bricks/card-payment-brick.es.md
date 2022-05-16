@@ -12,14 +12,14 @@ Además de recopilar los campos necesarios para realizar el pago, este component
 >
 > Introducción
 >
-> Saiba mais informações sobre o o Checkout Bricks, uma biblioteca de componentes de UI (User interface) que tem como objetivo viabilizar uma integração client-side.
+> Obtén más información sobre Checkout Bricks, una biblioteca de componentes de UI (User Interface) cuyo objetivo es permitir una integración client-side.
 >
-> [Landing](/developers/pt/docs/checkout-bricks-beta/landing)
-
+> [Landing](/developers/es/docs/checkout-bricks-beta/landing)
+ 
 > NEXT_STEP_CARD_ES
 >
-> Card Payment Brick
+> Idiomas
 >
-> Saiba mais informações sobre o Card Payment Brick.
+> Consulta en qué idiomas se puede instanciar/renderizar Card Payment Brick.
 >
-> [Card Payment Brick](/developers/pt/docs/checkout-bricks-beta/card-payment-brick)
+> [Idiomas](/developers/es/docs/checkout-bricks-beta/characteristics/languages)

@@ -48,3 +48,19 @@ function createPayment(){
         });
 };
 ```
+
+> PREV_STEP_CARD_ES
+>
+> Configurar la cantidad máxima y mínima de cuotas
+>
+> Si lo deseas, puedes configurar la cantidad máxima y mínima de cuotas. Aprende cómo.
+>
+> [Configurar cantidad máxima y mínima de cuotas](/developers/es/docs/checkout-bricks-beta/additional-customization/max-and-min-installments)
+
+> NEXT_STEP_CARD_ES
+>
+> Ocultar títulos y banderas
+>
+> Además, si lo deseas, puedes ocultar los títulos de la UI y las banderas admitidas en Card Payment Brick.
+>
+> [Ocultar títulos y banderas](/developers/es/docs/checkout-bricks-beta/additional-customization/hide-title-and-flags)

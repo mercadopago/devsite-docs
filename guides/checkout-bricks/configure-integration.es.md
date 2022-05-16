@@ -1,5 +1,17 @@
 # Configurar la integración
 
+Para configurar la integración de los bricks, debe seguir los pasos a continuación:
+
+1. [Crear container](/developers/es/docs/checkout-bricks-beta/integration/configure-integration#bookmark_crear_container)
+2. [Incluir y configurar la librería MercadoPago.js](/developers/es/docs/checkout-bricks-beta/integration/configure-integration#bookmark_incluir_y_configurar_la_librería_mercadopago.js)
+3. [Instanciar brick](/developers/es/docs/checkout-bricks-beta/integration/configure-integration#bookmark_instanciar_brick)
+4. [Renderizar brick](h/developers/es/docs/checkout-bricks-beta/integration/configure-integration#bookmark_renderizar_brick)
+5. [Instalar la SDK de Mercado Pago](/developers/es/docs/checkout-bricks-beta/integration/configure-integration#bookmark_instalar_la_sdk_de_mercado_pago)
+
+Los pasos se realizan en el backend o frontend. Las pills **Client-Side** y **Server-Side** ubicadas inmediatamente al lado del título lo ayudan a identificar qué paso se realiza en qué instancia.
+
+Y, para ayudar, hemos preparado un completo [ejemplo de código](developers/es/docs/checkout-bricks-beta/integration/code-example#bookmark_configurar_la_integración) que puede usar como modelo.
+
 > CLIENT_SIDE
 >
 > h2
@@ -43,65 +55,6 @@ Luego, inicializa la SDK y configura tu [clave pública]([FAKER][CREDENTIALS][UR
 ```javascript
 const mp = new MercadoPago('YOUR_PUBLIC_KEY');
 ```
-
-> SERVER_SIDE
->
-> h3
->
-> Instalar la SDK de Mercado Pago
-
-Instala un [SDKs oficial](/developers/es/guides/sdks) para simplificar tu interacción con nuestras APIs.
-
-[[[
-```php
-===
-[Instala Composer](https://getcomposer.org/download) para usar el SDK.
-
-Luego ejecuta el siguiente código en la línea de comandos:
-===
-php composer.phar require "mercadopago/dx-php"
-```
-```node
-===
-Para instalar la SDK debes ejecutar el siguiente código en la línea de comandos de tu terminal usando [npm](https://www.npmjs.com/get-npm):
-===
-npm install mercadopago
-```
-```java
-===
-Para instalar la SDK en tu proyecto [Maven](http://maven.apache.org/install.html) agrega la siguiente dependencia en tu archivo pom.xml y luego ejecuta 'maven install'.
-===
-<dependency>
-   <groupId>com.mercadopago</groupId>
-   <artifactId>sdk-java</artifactId>
-   <version>2.0.0</version>
-</dependency>
-```
-```ruby
-===
-La SDK de Mercado Pago está disponible como [gema](https://rubygems.org/gems/mercadopago-sdk), para instalarla debes ejecutar el siguiente código en la línea de comandos:
-===
-gem install mercadopago-sdk
-```
-```csharp
-===
-----[mlb]----
-Usa [NuGet](https://docs.microsoft.com/pt-br/nuget/reference/nuget-exe-cli-reference) para instalar la SDK .NET de Mercado Pago.
-------------
-----[mla, mlm, mco, mlc, mlu]----
-Usa [NuGet](https://docs.microsoft.com/es-es/nuget/reference/nuget-exe-cli-reference) para instalar la SDK .NET de Mercado Pago.
-------------
-Para hacerlo ejecuta el siguiente comando en tu terminal:
-===
-nuget install mercadopago-sdk
-```
-```python
-===
-El SDK de Mercado Pago está disponible como [pip](https://pypi.org/project/mercadopago/), para instalarla debes ejecutar el siguiente código en la línea de comandos:
-===
-pip3 install mercadopago
-```
-]]]
 
 > CLIENT_SIDE
 >
@@ -175,3 +128,78 @@ renderCardPaymentBrick(bricksBuilder);
 ```
 
 ![cardform](checkout-bricks/card-form-es.png)
+
+> SERVER_SIDE
+>
+> h2
+>
+> Instalar la SDK de Mercado Pago
+
+Instala un [SDKs oficial](/developers/es/guides/sdks) para simplificar tu interacción con nuestras APIs.
+
+[[[
+```php
+===
+[Instala Composer](https://getcomposer.org/download) para usar el SDK.
+
+Luego ejecuta el siguiente código en la línea de comandos:
+===
+php composer.phar require "mercadopago/dx-php"
+```
+```node
+===
+Para instalar la SDK debes ejecutar el siguiente código en la línea de comandos de tu terminal usando [npm](https://www.npmjs.com/get-npm):
+===
+npm install mercadopago
+```
+```java
+===
+Para instalar la SDK en tu proyecto [Maven](http://maven.apache.org/install.html) agrega la siguiente dependencia en tu archivo pom.xml y luego ejecuta 'maven install'.
+===
+<dependency>
+   <groupId>com.mercadopago</groupId>
+   <artifactId>sdk-java</artifactId>
+   <version>2.0.0</version>
+</dependency>
+```
+```ruby
+===
+La SDK de Mercado Pago está disponible como [gema](https://rubygems.org/gems/mercadopago-sdk), para instalarla debes ejecutar el siguiente código en la línea de comandos:
+===
+gem install mercadopago-sdk
+```
+```csharp
+===
+----[mlb]----
+Usa [NuGet](https://docs.microsoft.com/pt-br/nuget/reference/nuget-exe-cli-reference) para instalar la SDK .NET de Mercado Pago.
+------------
+----[mla, mlm, mco, mlc, mlu]----
+Usa [NuGet](https://docs.microsoft.com/es-es/nuget/reference/nuget-exe-cli-reference) para instalar la SDK .NET de Mercado Pago.
+------------
+Para hacerlo ejecuta el siguiente comando en tu terminal:
+===
+nuget install mercadopago-sdk
+```
+```python
+===
+El SDK de Mercado Pago está disponible como [pip](https://pypi.org/project/mercadopago/), para instalarla debes ejecutar el siguiente código en la línea de comandos:
+===
+pip3 install mercadopago
+```
+]]]
+
+> PREV_STEP_CARD_ES
+>
+> Temas
+>
+> Obtén más información sobre los temas en que se puede instanciar/renderizar Card Payment Brick.
+>
+> [Temas](/developers/es/docs/checkout-bricks-beta/characteristics/themes)
+ 
+> NEXT_STEP_CARD_ES
+>
+> Enviar pago a Mercado Pago
+>
+> Después de configurar la integración, consulta cómo enviar el pago a Mercado Pago.
+>
+> [Enviar pago a Mercado Pago](/developers/es/docs/checkout-bricks-beta/integration/payment-submission)
