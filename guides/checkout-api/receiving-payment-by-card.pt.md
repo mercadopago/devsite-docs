@@ -18,7 +18,7 @@ Use os [exemplos para download](#bookmark_exemplos_para_download) para conhecer 
 
 ![API-integration-flowchart](/images/api/api-integration-flowchart-cardform-pt.png)
 
-> Caso deseje realizar um fluxo de pagamento personalizado, compartilhamos todos os [métodos disponíveis para integrar de forma avançada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/checkout-api/payment-methods/receiving-payment-by-card-core-methods).
+> Caso deseje realizar um fluxo de pagamento personalizado, compartilhamos todos os [métodos disponíveis para integrar de forma avançada](/developers/pt/docs/online-payments/checkout-api/receiving-payment-by-card-core-methods-v2).
 
 <br>
 
@@ -32,9 +32,9 @@ Ao usar nosso Checkout API do Mercado Pago, é importante ter em conta duas inst
 1. Primeiro, é preciso um frontend para coletar os dados do cartão e gerar um token de segurança com a informação para poder criar o pagamento.
 2. Segundo, um backend que tome o token gerado e os dados do pagamento, como por exemplo o valor e o item, e possa confirmar e efetuar o pagamento.
 
-Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/checkout-api/previous-requirements#bookmark_sempre_utilize_nossas_bibliotecas) para poder coletar os dados sensíveis dos seus usuários de maneira segura.
+Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](/developers/pt/guides/checkout-api/previous-requirements#bookmark_sempre_utilize_nossas_bibliotecas) para poder coletar os dados sensíveis dos seus usuários de maneira segura.
 
-> Obtenha mais informações nas [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/cards/_customers_customer_id_cards/post).
+> Obtenha mais informações nas [Referências de API](/developers/pt/reference/cards/_customers_customer_id_cards/post).
 
 <br>
 
@@ -46,7 +46,7 @@ Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](h
 
 Para criar um pagamento é necessário fazer a captura dos dados do cartão através do navegador do comprador. Por questões de segurança, **é muito importante que os dados nunca cheguem aos seus servidores**.
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Inclua e configure a biblioteca MercadoPago.js
+### 1. Inclua e configure a biblioteca MercadoPago.js
 
 **Utilize nossa biblioteca oficial para acessar a API de Mercado Pago** desde seu frontend para coletar os dados de forma segura e configure sua [chave pública]([FAKER][CREDENTIALS][URL]) da forma a seguir:
 
@@ -63,11 +63,9 @@ Para criar um pagamento é necessário fazer a captura dos dados do cartão atra
 
 > Se ainda não possui conta para ver suas credenciais, [registre-se](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
 
-> Esta documentação utiliza a nova versão da biblioteca. Para ver a versão anterior, vá para a [seção de Integrar pagamentos com cartão com MercadoPago.js V1](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/v1/receiving-payment-by-card).
-
 A informação do cartão será convertida em um token para que envie os dados aos seus servidores de modo seguro.
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Adicione o formulário de pagamento
+### 2. Adicione o formulário de pagamento
 
 Para capturar os dados do cartão, primeiro deve oferecer um formulário para carregar toda a informação.
 
@@ -103,7 +101,7 @@ Utilize o formulário seguinte e adicione os estilos que desejar.
 > Procure informações acerca dos distintos atributos nas [referências técnicas](https://github.com/mercadopago/sdk-js).
 
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Integre o formulário com a biblioteca MercadoPago.js
+### 3. Integre o formulário com a biblioteca MercadoPago.js
 
 
 Agora, para inicializar o CardForm, deve relacionar a ID de cada campo do formulário com os atributos correspondentes. A biblioteca será responsável pelo preenchimento, obtenção e validação de todos os dados necessários na hora de confirmar o pagamento.
@@ -444,7 +442,7 @@ curl -X POST \
 ```
 ]]]
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resposta
+#### Resposta
 
 ```json
 {
@@ -462,7 +460,7 @@ curl -X POST \
 }
 ```
 
-> Conheça todos os campos disponíveis para realizar um pagamento completo nas [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments/post).
+> Conheça todos os campos disponíveis para realizar um pagamento completo nas [Referências de API](/developers/pt/reference/payments/_payments/post).
 
 ## Mensagens de respostas
 
@@ -476,19 +474,19 @@ Para ajudar a melhorar a aprovação dos seus pagamentos, é fundamental que pos
 
 Isso ajudará a evitar casos de rejeição e estornos nos casos de transações inicialmente aprovadas. Por exemplo, permite que se possa corrigir os erros de carga de dados ou ajudar a alterar o meio de pagamento.
 
-Te recomendamos usar as [mensagens de respostas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/checkout-api/response-handling) e utilizar a comunicação sugerida em cada um dos casos.
+Te recomendamos usar as [mensagens de respostas](/developers/pt/guides/checkout-api/response-handling) e utilizar a comunicação sugerida em cada um dos casos.
 
 > NOTE
 >
 > Nota
 >
-> Evite pagamentos rejeitados com nossas [recomendações para melhorar a aprovação dos seus pagamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/account/payment-rejections).
+> Evite pagamentos rejeitados com nossas [recomendações para melhorar a aprovação dos seus pagamentos](//developers/pt/guides/additional-content/sales-processing/payment-rejections).
 
 ## Receba notificações de pagamento
 
 Por último, é importante que esteja sempre informado sobre a criação nos novos pagamentos e as atualizações dos seus estados. Por exemplo se foram aprovados, rejeitados ou caso encontram-se pendentes.
 
-[Configure notificações webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/webhooks/webhooks) ou [notificações IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/checkout-api/additional-content/notifications/ipn).
+[Configure notificações webhooks](/developers/pt/guides/additional-content/notifications/webhooks/webhooks) ou [notificações IPN](/developers/pt/guides/additional-content/notifications/ipn/introduction).
 
 ## Exemplos para download
 
@@ -506,4 +504,3 @@ Por último, é importante que esteja sempre informado sobre a criação nos nov
 >
 > Disponibilizamos [exemplos completos de integração](http://github.com/mercadopago/card-payment-sample) no GitHub para que você possa fazer o download imediatamente.
 ------------
-

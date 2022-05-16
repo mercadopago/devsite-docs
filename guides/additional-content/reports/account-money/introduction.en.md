@@ -35,20 +35,3 @@ In addition, you can use the report to view the history of your account balance 
 > Note
 >
 > Have the [Glossary of the Account Money report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/account-money/glossary) on hand to review it when needed or want to review a technical term.
-
-
-> NEXT_STEP_CARD_EN
->
-> How to use the report
->
-> Learn the composition of the report and how to read it.
->
-> [How to use the report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/account-money/how-to-use)
-
-> NEXT_STEP_CARD_EN
->
-> Generate your reports
->
-> Learn the ways to generate a report and follow the steps to set your preferences.
->
-> [Generate your reports](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/account-money/generate)

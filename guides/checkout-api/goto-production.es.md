@@ -41,11 +41,11 @@ Implementando estas notificaciones, podrás enterarte de todas las actualizacion
 
 ### Mostrar los correctos mensajes de respuesta
 
-Como se menciona en la [sección de Mensajes de respuesta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/checkout-api/response-handling), se le deben mostrar los mensajes correspondientes al cliente, dependiendo el resultado del pago, para que el mismo pueda accionar de la manera correcta.
+Como se menciona en la [sección de Mensajes de respuesta](/developers/es/guides/checkout-api/response-handling), se le deben mostrar los mensajes correspondientes al cliente, dependiendo el resultado del pago, para que el mismo pueda accionar de la manera correcta.
 
 ### Sé transparente con las promociones y financiación
 
-Debes aclarar que las promociones son ofrecidas por Mercado Pago. Puedes [incluir un banner de medios de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/resources/banners/introduction) o [sumar el link a la sección de promociones](https://www.mercadopago.com/mla/credit_card_promos.htm). Como también, debes informar los [costos de financiación que aplican a tus clientes](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/costos-financiacion_621).
+Debes aclarar que las promociones son ofrecidas por Mercado Pago. Puedes [incluir un banner de medios de pago](/developers/es/guides/additional-content/resources/banners/introduction) o [sumar el link a la sección de promociones](https://www.mercadopago.com/mla/credit_card_promos.htm). Adicionalmente, debes informar los [costos de financiación que aplican a tus clientes](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/costos-financiacion_621).
 
 ----[mla]----
 > NOTE

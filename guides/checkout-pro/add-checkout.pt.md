@@ -59,7 +59,7 @@ No exemplo acima, um botão de pagamento será renderizado e ficará responsáve
 >
 > Veja como criar conjuntos de informações sobre um produto e/ou serviço.
 >
-> [Criar preferências](/developers/pt/docs/checkout-pro/create-preference)
+> [Criar preferências](/developers/pt/docs/checkout-pro/integration-configuration/create-preference)
 
 > NEXT_STEP_CARD_PT
 >

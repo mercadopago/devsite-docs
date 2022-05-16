@@ -1,4 +1,4 @@
-## Render brick
+# Render brick
 
 Once instantiated, the brick can be rendered and have all its configurations compiled so that the final structure of the brick is generated.
 
@@ -9,7 +9,7 @@ const renderCardPaymentBrick = async (bricksBuilder) => {
 
   const settings = {
     initialization: {
-      amount: number, //value to be charged
+      amount: 100, //value to be charged
     },
     callbacks: {
       onReady: () => {
@@ -43,8 +43,8 @@ const renderCardPaymentBrick = async (bricksBuilder) => {
     },
   };
 
-  const cardPaymentBrick = await bricksBuilder.create('cardPayment', settings);
-  window.cardPaymentBrickController = await cardPaymentBrick.render('cardPaymentBrick_container');
+  cardPaymentBrickController = await bricksBuilder.create('cardPayment', 'cardPaymentBrick_container', settings);
+  https://github.com/meliguicarvalho/sdk-js
 };
 
 renderCardPaymentBrick(bricksBuilder);
