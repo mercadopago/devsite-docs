@@ -22,3 +22,19 @@ const settings = {
     },
 }
 ```
+
+> PREV_STEP_CARD_EN
+>
+> Initiate Brick with identity document
+>
+> If you prefer, check how to initiate Card Payment Brick with an identity document.
+>
+> [Initiate Brick with identity document](/developers/en/docs/checkout-bricks-beta/additional-customization/initiate-brick-document)
+
+> NEXT_STEP_CARD_EN
+>
+> Hide Payment button
+>
+> Learn how you can hide the Payment Button in the Card Payment Brick.
+>
+> [Hide Payment button](/developers/en/docs/checkout-bricks-beta/additional-customization/hide-payment-button)

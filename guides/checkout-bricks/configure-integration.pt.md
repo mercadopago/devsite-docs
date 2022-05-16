@@ -190,7 +190,7 @@ pip3 install mercadopago
 >
 > Temas
 >
-> Veja mais informações sobre quais temas o Card Payment Brick pode ser instanciado/renderizado.
+> Veja mais informações sobre os temas em que o Card Payment Brick pode ser instanciado/renderizado.
 >
 > [Temas](/developers/pt/docs/checkout-bricks-beta/characteristics/themes)
 

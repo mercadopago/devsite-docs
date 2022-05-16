@@ -202,4 +202,4 @@ pip3 install mercadopago
 >
 > After you set up the integration, here's how to send payments to Mercado Pago.
 >
-> [Send payments to Mercado Pago](/developers/en/docs/checkout-bricks-beta/integration/payment-submission)
+> [Send payments to Mercado Pago](/developers/en/docs/checkout-bricks-beta/integration/payment-submission) 

@@ -40,6 +40,6 @@ Inicie sua integração configurada com as credenciais do seu usuário de teste 
 >
 > Exemplo de código
 >
-> Para facilitar e otimizar o seu processo de integração, veja um exemplo completo integração com o Checkout Bricks.
+> Para facilitar e otimizar o seu processo de integração, veja um exemplo completo da integração com o Checkout Bricks.
 >
 > [Exemplo de código](/developers/pt/docs/checkout-bricks-beta/integration/code-example)
