@@ -16,7 +16,7 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 > PRODUCT: WOOCOMMERCE
 Lanzamos la nueva versión 6.0.0 para WooCommerce.
 
-[Ir a documentación de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/woocommerce/introduction)
+[Ir a documentación de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/woocommerce/introduction)
 
 > GIT
 >
