@@ -81,11 +81,19 @@ Webhook (também conhecido como "retorno de chamada web"), é um método simples
 | Signature | Assinatura digital da notificação |
 
 
-### chave pública
+### Senha para criptografia
 
-A chave pública é usada para enviar o payload assinado da seguinte maneira: `signature = SHA512({{transaction_id}}-{{public_key}}-{{generation_date}}).` O objetivo é validar se a origem da solicitação tipo POST entrega informações próprias do Mercado Pago, para confirmar que a notificação não se trata de phishing.
+Para garantir o processo de notificação ao sistema, será enviado no corpo da mensagem (payload) um atributo chamado **_"Signature"_** para validar que a notificação Webhook teve origem no Mercado Pago e que não se trata de uma imitação.
 
-Para validar a originalidade da mensagem, a signature enviada no payload é descriptografada usando o SHA512. Também é possível criptografar a informação correspondente a `{{transaction_id}}-{{public_key}}-{{generation_date}}` e compará-la com o campo "Signature", proveniente do payload.
+A Signature é criada ao unir o `transaction_id` com a `senha criptografada` na seção **_"Notificação por Webhook"_** e o `generation_date` do relatório. Assim que os valores forem vinculados, eles são criptografados usando o algoritmo **_BCrypt_** da seguinte maneira:
+
+`signature = BCrypt(transaction_id + '-' + password_for_encryption + '-' + generation_date)`
+
+Para validar que foi o Mercado Pago quem emitiu a notificação, é necessário usar a função de verificação oferecida pelo algoritmo do BCrypt para a linguagem desejada.
+
+**Exemplo Java:**
+
+`BCrypt.checkpw(transaction_id + '-' + password_for_encryption + '-' + generation_date, payload_signature)`
 
 > Tenha em mãos o [Glossário do relatório](/developers/pt/guides/additional-content/reports/account-money/glossary) de Dinheiro em conta para consultá-lo quando precisar ou queira conferir algum termo técnico.
 

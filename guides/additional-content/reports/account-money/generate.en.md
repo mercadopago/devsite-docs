@@ -77,11 +77,19 @@ Webhook (also known as "web callback") is a simple method that allows an applica
 | Signature | Notification digital signature |
 
 
-### public key
+### Password for encryption
 
-The public key is used to send the signed payload as follows: `signature = SHA512({{transaction_id}}-{{public_key}}-{{generation_date}}).` The objective is to validate that the origin of the POST request delivers Mercado Pago's own information to confirm that the notification is not phishing.
+To ensure the notification process to the system, an attribute called **_Signature_** will be sent in the body of the message (payload) in order to validate that the Webhook notification originated from Mercado Pago and that it is not an imitation.
 
-To validate the originality of the message, the signature sent in the payload is decrypted using SHA512. The information corresponding to `{{transaction_id}}-{{{public_key}}-{{{generation_date}}}` can also be encrypted and compared with the signature field coming from the payload.
+The **_Signature_** is build up by joining the `transaction_id` with the `password for encryption` configured in the **_"Webhook Notification"_** section, plus the `generation_date` of the report. Once the values are joined, they are encrypted using the **_BCrypt_** algorithm as follows:
+
+`signature = BCrypt(transaction_id + '-' + password_for_encryption + '-' + generation_date)`
+
+To validate that it is Mercado Pago who issued the notification, the **_verification function_** offered by the **_BCrypt_** algorithm for the desired language must be used.
+
+**Java example:**
+
+`BCrypt.checkpw(transaction_id + '-' + password_for_encryption + '-' + generation_date, payload_signature)`
 
 > Have the [Glossary of the Account Money report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/account-money/glossary) on hand to review it when needed or want to review a technical term.
 
