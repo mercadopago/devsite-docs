@@ -64,26 +64,33 @@ Todas las opciones que tienes disponible a la hora de descargar tu reporte.
 
 Webhook (also known as "web callback") is a simple method that allows an application or system to send real-time data whenever a particular event takes place, that is, it is a way to passively receive information between two systems via an HTTP POST. In the case of the reports used for reconciliation, a notification is sent to the user who has set up this service when their files are generated.
 
-| Atributo | Descripción |
-| --- | --- |
-| transaction_id | Transaction ID |
-| request_date    | Request date |
-| generation_date | Generation date |
-| files | Available files |
-| type | File format |
-| url | Download link |
-| name | File name |
-| status | Report status |
-| creation_type | Manual or scheduled creation |
-| report_type | Report type |
-| is_test | Determines if it is a test |
-| Signature | Firma digital de la notificación |
+| Atributo        | Descripción                  |
+|-----------------|------------------------------|
+| transaction_id  | Transaction ID               |
+| request_date    | Request date                 |
+| generation_date | Generation date              |
+| files           | Available files              |
+| type            | File format                  |
+| url             | Download link                |
+| name            | File name                    |
+| status          | Report status                |
+| creation_type   | Manual or scheduled creation |
+| report_type     | Report type                  |
+| is_test         | Determines if it is a test   |
+| signature       | Firma de la notificación     |
 
+### Contraseña para cifrado
 
-### Clave pública
+Para hacer seguro el proceso de notificación hacia el sistema se enviará en el cuerpo del mensaje (payload) un atributo llamado **_Signature_**, con el objetivo de validar que la notificación Webhook se haya originado desde Mercado Pago y no se trate de una suplantación.
 
-La clave pública se usa para enviar firmado el payload así: `signature = SHA512({{transaction_id}}-{{public_key}}-{{generation_date}}).` El objetivo es validar que el origen de la petición tipo POST entrega información propia de Mercado Pago para confirmar que la notificación no se trata de phishing.
+El **_Signature_** se construye uniendo el `transaction_id` con la `contraseña para cifrado` configurada en la sección de **_Notificación por Webhook_**, más el `generation_date` del reporte. Una vez concatenados los valores se cifran haciendo uso del algoritmo **_BCrypt_** de la siguiente manera:
 
-Para validar la originalidad del mensaje se descrifra el signature enviado en el payload usando el SHA512, también se puede cifrar la información correspondiente al `{{transaction_id}}-{{public_key}}-{{generation_date}}` y compararlo con el campo signature proveniente del payload.
+`signature = BCrypt(transaction_id + '-' + password_for_encryption + '-' + generation_date)`
+
+Para validar que sea Mercado Pago quien emitió la notificación se debe usar la **_función de verificación_** que ofrece el algoritmo de **_BCrypt_** para el lenguaje deseado.
+
+**Ejemplo Java:**
+
+`BCrypt.checkpw(transaction_id + '-' + password_for_encryption + '-' + generation_date, payload_signature)`
 
 > Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/account-money/glossary) de Todas las transacciones para revisarlo cuando necesites o quieras consultar algún término técnico.
