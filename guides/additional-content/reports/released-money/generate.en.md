@@ -49,27 +49,35 @@ All the options you have available when downloading your report.
 
 Webhook (also known as "web callback") is a simple method that allows an application or system to send real-time data whenever a particular event takes place, that is, it is a way to passively receive information between two systems via an HTTP POST. In the case of the reports used for reconciliation, a notification is sent to the user who has set up this service when their files are generated.
 
-| Atributo | Descripción |
-| --- | --- |
-| transaction_id | Transaction ID |
+| Atributo        | Descripción |
+|-----------------| --- |
+| transaction_id  | Transaction ID |
 | request_date    | Request date |
 | generation_date | Generation date |
-| files | Available files |
-| type | File format |
-| url | Download link |
-| name | File name |
-| status | Report status |
-| creation_type | Manual or scheduled creation |
-| report_type | Report type |
-| is_test | Determines if it is a test |
-| Signature | Notification digital signature |
+| files           | Available files |
+| type            | File format |
+| url             | Download link |
+| name            | File name |
+| status          | Report status |
+| creation_type   | Manual or scheduled creation |
+| report_type     | Report type |
+| is_test         | Determines if it is a test |
+| signature       | Notification signature |
 
 
-### public key
+### Password for encryption
 
-The public key is used to send the signed payload as follows: `signature = SHA512({{transaction_id}}-{{public_key}}-{{generation_date}}).` The objective is to validate that the origin of the POST request delivers Mercado Pago's own information to confirm that the notification is not phishing.
+To ensure the notification process to the system, an attribute called **_Signature_** will be sent in the body of the message (payload) in order to validate that the Webhook notification originated from Mercado Pago and that it is not an imitation.
 
-To validate the originality of the message, the signature sent in the payload is decrypted using SHA512. The information corresponding to `{{transaction_id}}-{{{public_key}}-{{{generation_date}}}` can also be encrypted and compared with the signature field coming from the payload.
+The **_Signature_** is build up by joining the `transaction_id` with the `password for encryption` configured in the **_"Webhook Notification"_** section, plus the `generation_date` of the report. Once the values are joined, they are encrypted using the **_BCrypt_** algorithm as follows:
+
+`signature = BCrypt(transaction_id + '-' + password_for_encryption + '-' + generation_date)`
+
+To validate that it is Mercado Pago who issued the notification, the **_verification function_** offered by the **_BCrypt_** algorithm for the desired language must be used.
+
+**Java example:**
+
+`BCrypt.checkpw(transaction_id + '-' + password_for_encryption + '-' + generation_date, payload_signature)`
 
 > Have the [Glossary of Releases report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/released-money/glossary) on hand to review it when needed or want to review a technical term.
 
