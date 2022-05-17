@@ -1,4 +1,4 @@
-## Idiomas
+# Idiomas
 
 El Brick de pago con tarjeta se puede instanciar/representar en tres idiomas diferentes:
 
@@ -6,4 +6,4 @@ El Brick de pago con tarjeta se puede instanciar/representar en tres idiomas dif
 * Inglés 
 * Español
 
-Consulta [Elegir idioma](/developers/es/docs/checkout-bricks/additional-customization/select-language) para obtener instrucciones sobre cómo seleccionar el idioma del brick.
+Consulta [Elegir idioma](/developers/es/docs/checkout-bricks-beta/additional-customization/select-language) para obtener instrucciones sobre cómo seleccionar el idioma del brick.

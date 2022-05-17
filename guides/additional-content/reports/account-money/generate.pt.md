@@ -112,3 +112,4 @@ Para validar que foi o Mercado Pago quem emitiu a notificação, é necessário 
 > Crie relatórios de forma programada e manual através de uma integração com o Mercado Pago.
 >
 > [Geração via API](/developers/pt/guides/additional-content/reports/account-money/api)
+

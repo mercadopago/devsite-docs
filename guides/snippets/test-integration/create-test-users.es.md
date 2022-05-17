@@ -1,4 +1,9 @@
-Para realizar las pruebas **es necesario que tengas como mínimo dos usuarios**: un vendedor y un comprador.
+Para realizar las pruebas **es necesario que tengas como mínimo dos usuarios**:
+
+| Tipo de usuarios de prueba | Descripción |
+| --- | --- |
+| Vendedor | Es la cuenta que usas para **configurar la aplicación y credenciales para el cobro**. |
+| Comprador | Es la cuenta que usas para **probar el proceso de compra.**. |
 
 Ejecuta el siguiente curl para generar un usuario de prueba:
 
@@ -24,7 +29,7 @@ La respuesta tendrá una estructura similar al siguiente ejemplo:
 }
 ```
 
-Para más información sobre los parámetros y respuestas de la API del usuario de prueba, accede a [Referencias API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference)
+Para más información sobre los parámetros y respuestas de la API del usuario de prueba, accede a [Referencias API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/test_user/_users_test_user/post)
 
 >WARNING
 >

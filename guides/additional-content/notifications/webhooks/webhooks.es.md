@@ -2,7 +2,7 @@
 
 Webhook (también conocido como devolución de llamada web) es un método simple que facilita que una aplicación o sistema proporcione información en tiempo real cada vez que ocurre un evento, es decir, es una forma de recibir datos pasivamente entre dos sistemas a través de un `HTTP POST`.
 
-Las notificaciones de webhook se pueden configurar para una o más aplicaciones creadas en su [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/dashboard/introduction).
+Las notificaciones de webhook se pueden configurar para una o más aplicaciones creadas en su [Dashboard](/developers/es/guides/additional-content/dashboard/introduction).
 
 Una vez configurado, el Webhook se enviará siempre que se produzcan uno o más eventos registrados, evitando un trabajo de búsqueda cada minuto en busca de una respuesta y, en consecuencia, una sobrecarga del sistema y pérdida de datos siempre que se presente alguna situación. Luego de recibir una notificación en su plataforma, Mercado Pago esperará una respuesta para validar si la recibió correctamente.
 
@@ -32,6 +32,7 @@ A continuación explicaremos cómo indicar las URLs que serán notificadas y có
 | `point_integration_wh` | `state_FINISHED`| Intento de pago finalizado |
 | `point_integration_wh` | `state_CANCELED` | Intento de pago cancelado |
 | `point_integration_wh` | `state_ERROR`| Ocurrió un error al procesar el intento de pago |
+| `shipments` | `shipment.updated`| Datos de envío y actualización de pedidos |
 
 ## Configuración al crear pagos
 
@@ -264,7 +265,9 @@ curl -X POST \
 >
 > Importante
 >
-> Para el tipo point_integration_wh el formato de notificación cambia. [Haz clic aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/mp-point/introduction) para consultar la documentación de **Mercado Pago Point**.
+> Para el tipo `point_integration_wh` el formato de notificación cambia. [Haz clic aquí](/developers/es/guides/mp-point/introduction) para consultar la documentación de **Mercado Pago Point**.
+> <br/>
+> En el caso del evento `shipments`, también tendremos algunos atributos diferentes en la respuesta. Consulte la siguiente tabla para ver estas características.
 
 ```json
 {
@@ -297,6 +300,11 @@ Esto indica que el pago **999999999** fue creado para el usuario **44444** en mo
 | **api_version** | Indica si es una notificación duplicada o no|
 | **action** | Tipo de notificación recibida, indicando si es la actualización de un recurso o bien la creación de un nuevo |
 | **data - id**  | ID del payment o merchant_order |
+| **attempts** (shipments) | Número de veces que se envió una notificación|
+| **received** (shipments) | Fecha de creación del recurso |
+| **resource** (shipments) | Tipo de notificación recibida, indicando si se trata de una actualización de una característica o de la creación de una nueva |
+| **sent** (shipments) | Fecha de envío de la notificación |
+| **topic** (shipments) | Tipo de notificación recibida |
 
 4. Si deseas recibir notificaciones solo de Webhook y no de IPN, puedes agregar en el `notification_url` el parámetro`source_news=webhooks`. Por ejemplo: https://www.yourserver.com/notifications?source_news=webhooks
 
@@ -308,10 +316,11 @@ Luego de devolver la notificación y confirmar su recepción, obtendrás la info
 
 | Tipo | URL | Documentación |
 | --- | --- | --- |
-| payment | `https://api.mercadopago.com/v1/payments/[ID]` | [ver documentación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/get)  |
-| subscription_preapproval | `https://api.mercadopago.com/preapproval` | [ver documentación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/subscriptions/_preapproval/post) |
-| subscription_preapproval_plan | `https://api.mercadopago.com/preapproval_plan` | - |
-| subscription_authorized_payment | `https://api.mercadopago.com/authorized_payments` | - |
-| point_integration_wh| - | [ver documentación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/mp-point/introduction) |
+| payment | `https://api.mercadopago.com/v1/payments/[ID]` | [ver documentación](/developers/es/reference/payments/_payments_id/get)  |
+| subscription_preapproval | `https://api.mercadopago.com/preapproval` | [ver documentación](/developers/es/reference/subscriptions/_preapproval/post) |
+| subscription_preapproval_plan | `https://api.mercadopago.com/preapproval_plan` | [ver documentación](/developers/es/reference/subscriptions/_preapproval_plan/post)  |
+| subscription_authorized_payment | `https://api.mercadopago.com/authorized_payments` | [ver documentación](/developers/es/reference/subscriptions/_authorized_payments_id/get)  |
+| point_integration_wh| - | [ver documentación](/developers/es/guides/mp-point/introduction) |
+| shipments | - | [ver documentación](/developers/es/reference/mp_delivery/_proximity-integration_shipments_shipment_id_accept/put)
 
 Con esta información podrás realizar las actualizaciones necesarias a tu plataforma, como actualizar un pago aprobado.

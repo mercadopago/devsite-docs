@@ -1,8 +1,9 @@
-## Layout 
+# Layout 
 
 O layout do Card Payment Brick foi construído com base nas melhores práticas de UX para que seja possível entregar ao comprador a melhor experiência sem que você precise se preocupar com detalhes de design. O layout traz os elementos detalhados abaixo.
 
-![cardform](checkout-bricks/card-form__pt.png)
+![cardform](checkout-bricks/card-form-pt.png)
+
 > WARNING
 >
 > Atenção
@@ -21,3 +22,19 @@ O layout do Card Payment Brick foi construído com base nas melhores práticas d
 | Subtítulo <br><br> Propriedade: emailSectionTitle | **Valor:** Preencha seus dados <br> *Label:* N/A <br> *Placeholder:* N/A <br> **Tipo:** text <br> **Formato:** N/A <br> **Máx. caracteres:** N/A | Obrigatório |
 | Campo para inserção do email do comprador <br><br> Propriedade: cardholderEmail | **Valor:** N/A <br> **Label:** Email <br> **Placeholder:** joaosilva@email.com <br> **Tipo:** string <br> **Formato:** padrão de e-mail convencional (exemplo@email.com) <br> **Máx. caracteres:* X | Obrigatório* <br> Customizável  (label, placeholder) <br><br> *Se os dados foram fornecidos e salvos anteriormente, este elemento se torna opcional. |
 | Botão de pagamento <br><br> Propriedade: formSubmit | **Valor:** [imagem] Pagar <br> **Label:** N/A <br> **Placeholder:** N/A <br> **Tipo:** text <br> **callback:** onSubmit <br> **função**: promise(cardFormData) | Opcional <br> Ocultável e customizável  <br><br> *A função recebe os dados do formulário, incluindo o token do cartão e apresenta animação de carregamento. |
+
+> PREV_STEP_CARD_PT
+>
+> Idiomas
+>
+> Veja em quais idiomas o Card Payment Brick pode ser instanciado/renderizado.
+>
+> [Idiomas](/developers/pt/docs/checkout-bricks-beta/characteristics/languages)
+
+> NEXT_STEP_CARD_PT
+>
+> Responsividade
+>
+> Veja mais informações sobre a capacidade responsiva o Card Payment Brick.
+>
+> [Responsividade](/developers/pt/docs/checkout-bricks-beta/characteristics/responsiviness)

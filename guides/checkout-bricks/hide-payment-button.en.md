@@ -1,9 +1,9 @@
-## Hide payment button
+# Hide payment button
 
 | Brick  | Card Payment Form  |
 | --- | --- |
 | Customization moment  | When rendering the brick  |
-| Property  | customization.hidePaymentButton  |
+| Property  | customization.visual.hidePaymentButton  |
 | Type  | Boolean  |
 | Comments  | When true, the form submit button is not displayed and it becomes necessary to use the getCardFormData function to get the form data (see example below). |
 
@@ -12,14 +12,16 @@ const settings = {
     ...,
     callbacks: {
         onReady: () => {
-            // callback called when the brick is ready
+            // callback chamado quando o Brick estiver pronto
         },
         onError: (error) => { 
-            // callback called to all error cases related to the Brick
+            // callback chamado para todos os casos de erro do Brick
         },
     },
     customization: {
-        hidePaymentButton: true
+        visual: {
+            hidePaymentButton: true
+        }
     }
 }
 ```

@@ -1,4 +1,8 @@
-##  Configure maximum and minimum amount of installments
+> CLIENT_SIDE
+>
+> h1
+>
+> Configure maximum and minimum amount of installments
 
 | Brick | Card Payment Brick |
 | --- | --- |

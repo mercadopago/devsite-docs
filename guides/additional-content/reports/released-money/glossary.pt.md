@@ -22,7 +22,7 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 | COUPON_AMOUNT | Valor do cupom de desconto. Apenas o valor bruto (`GROSS_AMOUNT`) é descontado se fornecido pelo vendedor. |
 | INSTALLMENTS | Número de parcelas em que a transação foi realizada. |
 | PAYMENT METHOD | Meios de pagamentos disponíveis de acordo com o país com o qual você opera no Mercado Pago. |
-| TAX_DETAIL | <br/> Descrição do imposto retido por operação no `TAXES_AMOUNT`. ----[mla]---- Você pode considerar os seguintes valores conforme a jurisdição: <br/>cordoba<br/>corrientes<br/>mendoza<br/>la_pampa<br/>santa_fe<br/>tucuman<br/>entre_rios<br/>catamarca<br/>neuquen<br/>santiago_del_estero<br/>rio_negro<br/>jujuy ------------ <br/><br/> |
+| TAX_DETAIL | <br/> Descrição do imposto retido por operação no `TAXES_AMOUNT`. ----[mla]---- Você pode considerar os seguintes valores conforme a jurisdição: <br/>cordoba<br/>corrientes<br/>mendoza<br/>la_pampa<br/>santa_fe<br/>tucuman<br/>entre_rios<br/>catamarca<br/>neuquen<br/>santiago_del_estero<br/>rio_negro<br/>jujuy ------------ ----[mco]---- Você pode considerar os seguintes valores conforme a jurisdição: <br/>fuente<br/>iva<br/>ica<br/>gmf<br/>------------<br/><br/> |
 | TAX_AMOUNT_TELCO | É o valor do imposto às empresas de telecomunicação descontado do valor bruto. |
 | TRANSACTION_APPROVAL_DATE | Data de aprovação da operação. |
 | POS_ID | ID do caixa, se o pagamento é feito através de um comércio físico. |
@@ -39,8 +39,8 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 | EFFECTIVE_COUPON_AMOUNT | Custo de oferecer desconto. |
 | POI_ID | ID da maquininha se o pagamento é feito em uma loja física. |
 | CARD_INITIAL_NUMBER | Corresponde aos primeiros dígitos do cartão de crédito ou débito utilizado para realizar a compra. |
-
-<hr/>
+| OPERATION_TAGS | São etiquetas para categorizar e/ou segmentar diferentes aspectos da transação, como por exemplo, os canais usados para fazer um pagamento. Eles são identificados como:<br>WHATSAPP_PAY: Esta etiqueta indica que o pagamento foi feito via WhatsApp<br>QR: Esta etiqueta indica que o pagamento foi feito por código QR<br>PO: Esta etiqueta indica que o pagamento foi feito com a Point<br>MARKETPLACE: Esta etiqueta indica que o pagamento foi feito diretamente no Mercado Livre.|
+| ITEM_ID | Identificador do produto vendido. |
 
 ### Próximos passos
 

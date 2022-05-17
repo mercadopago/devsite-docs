@@ -2,15 +2,13 @@
 
 Para receber pagamentos com QR em seu negócio, **você pode imprimi-lo e colá-lo em local visível ou exibi-lo em seu dispositivo móvel** e receber desde o app de Mercado Pago.
 
-
 ![Flujo QR](/images/mobile/qr_flujo.pt.png)
 
-<span></span>
 > NOTE
 >
 > Nota
 >
-> Caso seu modelo não necessite de integração com sistema de ponto de venda, você pode consultar todas as informações disponíveis em [geração de QR pelo painel do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/in-person-payments/qr-code/integrations-front).
+> Caso seu modelo não necessite de integração com sistema de ponto de venda, você pode consultar todas as informações disponíveis em [geração de QR pelo painel do Mercado Pago](/developers/pt/docs/qr-code/integrations-front).
 
 > PREV_STEP_CARD_PT
 >
@@ -19,7 +17,6 @@ Para receber pagamentos com QR em seu negócio, **você pode imprimi-lo e colá-
 > Saiba o que é QR Code.
 >
 > [Introdução](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/qr-code/introduction)
-
 
 > NEXT_STEP_CARD_PT
 >
