@@ -49,20 +49,20 @@ Todas as opções disponíveis na hora de baixar seu relatório.
 
 Webhook (também conhecido como "retorno de chamada web"), é um método simples que permite que um aplicativo ou sistema forneça informações em tempo real toda vez que um evento acontece, ou seja, é uma maneira de receber dados entre dois sistemas de forma passiva, por meio de um HTTP POST. No caso dos relatórios usados na reconciliação, uma notificação é enviada ao usuário que tiver configurado este serviço quando seus arquivos forem gerados.
 
-| Atributo        | Descripción                        |
-|-----------------|------------------------------------|
-| transaction_id  | ID da transação                    |
-| request_date    | Data da solicitação                |
-| generation_date | Data da geração                    |
-| files           | Arquivos disponíveis               |
-| type            | Formato do arquivo                 |
-| url             | Link de download                   |
-| name            | Nome do arquivo                    |
-| status          | Status do relatório                |
-| creation_type   | Criação manual ou agendada         |
-| report_type     | Tipo de relatório                  |
-| is_test         | Determina se é um teste            |
-| signature       | Assinatura digital da notificação  |
+| Atributo        | Descrição                         |
+|-----------------|-----------------------------------|
+| transaction_id  | ID da transação                   |
+| request_date    | Data da solicitação               |
+| generation_date | Data da geração                   |
+| files           | Arquivos disponíveis              |
+| type            | Formato do arquivo                |
+| url             | Link de download                  |
+| name            | Nome do arquivo                   |
+| status          | Status do relatório               |
+| creation_type   | Criação manual ou agendada        |
+| report_type     | Tipo de relatório                 |
+| is_test         | Determina se é um teste           |
+| signature       | Assinatura digital da notificação |
 
 ### Senha para criptografia
 

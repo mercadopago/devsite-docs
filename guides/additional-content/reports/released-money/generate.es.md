@@ -46,21 +46,21 @@ Considera estas opciones a la hora de descargar tu reporte:
 
 ### Webhook
 
-Webhook (also known as "web callback") is a simple method that allows an application or system to send real-time data whenever a particular event takes place, that is, it is a way to passively receive information between two systems via an HTTP POST. In the case of the reports used for reconciliation, a notification is sent to the user who has set up this service when their files are generated.
+Webhook (también conocido como devolución de llamada web) es un método simple que facilita que una aplicación o sistema proporcione información en tiempo real cada vez que ocurre un evento, es decir, es una forma de recibir datos pasivamente entre dos sistemas a través de un HTTP POST. Para el caso de los reportes que se utilizan para conciliar se enviará una notificación al usuario que tenga configurado este servicio cuando sus archivos sean generados.
 
 | Atributo        | Descripción                  |
 |-----------------|------------------------------|
-| transaction_id  | Transaction ID               |
-| request_date    | Request date                 |
-| generation_date | Generation date              |
-| files           | Available files              |
-| type            | File format                  |
-| url             | Download link                |
-| name            | File name                    |
-| status          | Report status                |
-| creation_type   | Manual or scheduled creation |
-| report_type     | Report type                  |
-| is_test         | Determines if it is a test   |
+| transaction_id  | ID de la transacción         |
+| request_date    | Fecha de la solicitud        |
+| generation_date | Fecha de la generación       |
+| files           | Archivos disponibles         |
+| type            | Formato del archivo          |
+| url             | Enlace de descarga           |
+| name            | Nombre del archivo           |
+| status          | Estado del reporte           |
+| creation_type   | Creación manual o programada |
+| report_type     | Tipo de reporte              |
+| is_test         | Define si es una prueba      |
 | signature       | Firma de la notificación     |
 
 ### Contraseña para cifrado

@@ -61,7 +61,7 @@ All the options you have available when downloading your report.
 
 Webhook (also known as "web callback") is a simple method that allows an application or system to send real-time data whenever a particular event takes place, that is, it is a way to passively receive information between two systems via an HTTP POST. In the case of the reports used for reconciliation, a notification is sent to the user who has set up this service when their files are generated.
 
-| Atributo        | Descripción                  |
+| Attribute       | Description                  |
 |-----------------|------------------------------|
 | transaction_id  | Transaction ID               |
 | request_date    | Request date                 |
