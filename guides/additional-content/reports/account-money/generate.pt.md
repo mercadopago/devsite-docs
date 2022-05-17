@@ -104,3 +104,10 @@ Para validar a originalidade da mensagem, a signature enviada no payload é desc
 > Crie relatórios de forma programada e manual através de uma integração com o Mercado Pago.
 >
 > [Geração via API](/developers/pt/guides/additional-content/reports/account-money/api)
+
+> NOTE
+>
+> Nota
+>
+> Tenha em mãos o [Glossário do relatório](/developers/pt/guides/additional-content/reports/account-money/glossary) de Dinheiro em conta para consultá-lo quando precisar ou queira conferir algum termo técnico.
+

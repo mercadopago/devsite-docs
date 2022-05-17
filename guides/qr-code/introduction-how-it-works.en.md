@@ -4,12 +4,11 @@ In order to receive payments with QR, you can **print and paste it in a visible 
 
 ![QR flow](/images/mobile/qr_flujo.en.png)
 
-<span></span>
 > NOTE
 >
 > Note
 >
-> If your model does not require integration with a point of sale system, you can consult all the information available in [generate QR from the Mercado Pago panel](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/in-person-payments/qr-code/integrations-front).
+> If your model does not require integration with a point of sale system, you can consult all the information available in [generate QR from the Mercado Pago panel](/developers/en/docs/qr-code/integrations-front).
 
 > PREV_STEP_CARD_EN
 >
@@ -17,8 +16,7 @@ In order to receive payments with QR, you can **print and paste it in a visible 
 >
 > Learn what QR Code is.
 >
-> [Introduction](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/qr-code/introduction)
-
+> [Introduction](/developers/en/docs/qr-code/introduction)
 
 > NEXT_STEP_CARD_EN
 >
@@ -26,4 +24,4 @@ In order to receive payments with QR, you can **print and paste it in a visible 
 >
 > Learn about the benefits of QR Code.
 >
-> [What are the benefits](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/qr-code/introduction/benefits)
+> [What are the benefits](/developers/en/docs/qr-code/introduction/benefits)

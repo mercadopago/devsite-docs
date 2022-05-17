@@ -1,4 +1,8 @@
-## Set Theme
+> CLIENT_SIDE
+>
+> h1
+>
+> Set Theme
 
 By default, the Card Payment Brick is instantiated/rendered with the default theme. However, it is possible to select another theme by setting the "theme" parameter when instantiating/rendering the brick.
 
@@ -11,8 +15,12 @@ If you set the theme on the **instantiation of the brick class**, the theme chan
 ```javascript
 const settings = {
     ...,
-    style: {
-        theme: 'dark' | 'default' | 'bootstrap' | 'flat'
-    }
+    customization: {
+        visual: {
+            style: {
+                theme: 'dark' | 'default' | 'bootstrap' | 'flat'
+           }
+        }
+    }    
 }
 ```

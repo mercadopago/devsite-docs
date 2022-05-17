@@ -2,6 +2,12 @@
 
 **Utilize a nossa biblioteca oficial para acessar as funcionalidades do Mercado Pago** com segurança desde seu frontend.
 
+> NOTE
+>
+> Atenção
+>
+> O codigo JS pode ser incluido em uma tag <script> ou um arquivo JS separado.
+
 Você precisará instalar o SDK adicionando o seguinte em seu código HTML:
 
 ```html

@@ -1,4 +1,4 @@
-## Initiate brick with document
+# Initiate brick with document
 
 | Brick | Card Payment Brick |
 | --- | --- |

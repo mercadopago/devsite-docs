@@ -84,20 +84,3 @@ The public key is used to send the signed payload as follows: `signature = SHA51
 To validate the originality of the message, the signature sent in the payload is decrypted using SHA512. The information corresponding to `{{transaction_id}}-{{{public_key}}-{{{generation_date}}}` can also be encrypted and compared with the signature field coming from the payload.
 
 > Have the [Glossary of the Account Money report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/account-money/glossary) on hand to review it when needed or want to review a technical term.
-
-
-> NEXT_STEP_CARD_EN
->
-> Generating from Mercado Pago  
->
-> Download your reports manually or scheduled from your Mercado Pago account.
->
-> [Generating from Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/account-money/panel)
-
-> NEXT_STEP_CARD_EN
->
-> Generating through API
->
-> Create reports in a scheduled and manual way through an integration with Mercado Pago.
->
-> [Generating through API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/account-money/api)

@@ -7,7 +7,7 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 | EXTERNAL_REFERENCE | <br/> ID que ajuda a identificar a origem da operação. Por exemplo, pode ser a venda através do ID do pedido ou do envio (se for uma compra de carrinho) ou o próprio ID fornecido pelo vendedor no caso de uma integração externa.<br/><br/> Lembre-se que é possível que este campo esteja vazio para alguns casos, como pagamento de boletos ou envio de dinheiro, entre outros. <br/> <br/> |
 | SOURCE_ID | ID da transação no Mercado Pago (por exemplo, o pagamento de uma venda). |
 | USER_ID | Código da conta do vendedor. (Cust ID) |
-| PAYMENT_METHOD | Confira os meios de pagamento disponíveis de acordo com o país no qual você opera com o Mercado Pago. |
+| PAYMENT_METHOD | Confira os ----[mla]---- [meios de pagamento disponíveis](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/payment-localization/consult-payment-methods/#bookmark_argentina)  ------------ ----[mlb]---- [meios de pagamento disponíveis](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/payment-localization/consult-payment-methods/#bookmark_brasil) ------------ ----[mpe]---- [meios de pagamento disponíveis](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/payment-localization/consult-payment-methods/#bookmark_perú)  ------------ ----[mco]---- [meios de pagamento disponíveis](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/payment-localization/consult-payment-methods/#bookmark_colombia)  ------------ ----[mlm]---- [meios de pagamento disponíveis](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/payment-localization/consult-payment-methods/#bookmark_méxico) ------------ ----[mlu]---- [medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/payment-localization/consult-payment-methods/#bookmark_uruguay) ------------ ----[mlc]---- [meios de pagamento disponíveis](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/payment-localization/consult-payment-methods/#bookmark_chile) ------------ de acordo com o país no qual você opera com o Mercado Pago. |
 | PAYMENT_METHOD_TYPE | Tipo de meio de pagamento.<br><br> Pode ser:<br>*credit_card*: cartão de crédito.<br>*debit_card*: cartão de débito.<br>*bank_transfer*: transferência.<br>*atm*: caixa eletrônico.<br>*ticket*: à vista<br>*account_money*: dinheiro em conta.<br>*PIX*:transferência.<br><br/> |
 | SITE | MLB: Brasil |
 | TRANSACTION_TYPE | Tipo de operação. Pode ser:<br><br> *SETTLEMENT*: pagamento aprovado.<br> ----[mlu, mla, mlm, mco, mlc, mlb]---- *REFUND*: pagamento totalmente devolvido ou devolução parcial.------------ ----[mpe]---- *REFUND*: pagamento totalmente devolvido.------------<br>*CHARGEBACK*: o comprador fez uma contestação (desconhece o pagamento) no seu cartão de crédito.<br>*DISPUTE*: o comprador iniciou uma reclamação por esse pagamento.<br>*WITHDRAWAL*: retirada para a conta bancária.<br>*WITHDRAWAL_CANCEL*: retirada para a conta bancária que foi cancelada.<br>*PAYOUT*: saque em dinheiro ou transferência por PIX de saldo disponível no Mercado Pago. ----[mlb]---- <br>*TRAVA_DE_RECEBIVEL*: trava de recebível. ------------ <br><br> |
@@ -45,21 +45,6 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 | DESCRIPTION | Ajuda a identificar transações ou operações registradas em um período de tempo.<br> Quando se tratar de pagamento parcelado, a linha será identificada como "INSTALLMENT".|
 | MONEY_RELEASE_DATE | Data de previsão da liberação do pagamento de cada parcela ou da parcela única.|
 | CARD_INITIAL_NUMBER | Corresponde aos primeiros dígitos do cartão de crédito ou débito utilizado para fazer a compra. |
+| OPERATION_TAGS | São etiquetas para categorizar e/ou segmentar diferentes aspectos da transação, como por exemplo, os canais usados para fazer um pagamento. Eles são identificados como:<br>WHATSAPP_PAY: Esta etiqueta indica que o pagamento foi feito via WhatsApp<br>QR: Esta etiqueta indica que o pagamento foi feito por código QR<br>PO: Esta etiqueta indica que o pagamento foi feito com a Point<br>MARKETPLACE: Esta etiqueta indica que o pagamento foi feito diretamente no Mercado Livre.|
 ----[mlb]----| INSTALLMENT_NUMBER* | Indica o número da parcela que será paga, do total de parcelas contratadas.<br> Essa informação aparece quando o cliente solicita o parcelamento da compra.<br> Por exemplo: 2 / 5 indica o pagamento da segunda parcela, de um total das 5 parcelas contratadas.<br> Quando o pagamento é liberado em uma única parcela essa coluna não estará preenchida.|------------
 ----[mlb]----| INSTALLMENT_NET_AMOUNT* | Mostra o valor líquido da parcela que será paga.<br> Essa informação aparece quando o cliente escolhe pagar o valor total da compra em parcelas mensais. |------------
-
-> NEXT_STEP_CARD_PT
->
-> Como usar o relatório
->
-> Saiba como o relatório é composto e aprenda a analisá-lo.
->
-> [Como usar o relatório](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/account-money/how-to-use)
-
-> NEXT_STEP_CARD_PT
->
-> Gere seus relatórios
->
-> Saiba as formas de gerar um relatório e siga as etapas para configurar suas preferências.
->
-> [Gere seus relatórios](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/account-money/generate)
