@@ -18,7 +18,7 @@ The columns `POI_WALLET_NAME` y `POI_BANK_NAME` allow businesses that charge wit
 
 By default, these columns are disabled. To display them in the **"Release"** report it is necessary to update the settings preferences from the dashboard or via API.
 
-Go to settings [from the panel](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports/settlement/settings) or [via API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/account-money/api).
+Go to settings [from the panel](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports/release/settings) or [via API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/api).
 
 ### May 16th
 

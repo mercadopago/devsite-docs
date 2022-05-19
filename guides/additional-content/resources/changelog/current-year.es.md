@@ -18,7 +18,7 @@ Las columnas `POI_WALLET_NAME` y `POI_BANK_NAME` permiten que los negocios que c
 
 Por defecto, estas columnas están deshabilitadas. Para que se visualicen en el reporte de **Liberaciones** es necesario actualizar las preferencias de configuración desde el panel o vía API.
 
-Ir a configuración [desde el panel](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports/settlement/settings) o [vía API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/account-money/api).
+Ir a configuración [desde el panel](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports/release/settings) o [vía API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/api).
 
 ### 19 de mayo
 
