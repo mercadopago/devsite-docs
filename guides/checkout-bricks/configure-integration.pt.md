@@ -188,11 +188,11 @@ pip3 install mercadopago
 
 > PREV_STEP_CARD_PT
 >
-> Temas
+> Pré-requisitos
 >
-> Veja mais informações sobre os temas em que o Card Payment Brick pode ser instanciado/renderizado.
+> Conheça os pré-requisitos necessários para integrar o Checkout Bricks.
 >
-> [Temas](/developers/pt/docs/checkout-bricks-beta/characteristics/themes)
+> [Pré-requisitos](/developers/pt/docs/checkout-bricks-beta/integration/prerequisites)
 
 > NEXT_STEP_CARD_PT
 >
@@ -200,4 +200,4 @@ pip3 install mercadopago
 >
 > Após configurar a integração, veja como enviar o pagamento ao Mercado Pago.
 >
-> [Enviar pagamento ao Mercado Pago](/developers/pt/docs/checkout-bricks-beta/integration/payment-submission)
+> [Enviar pagamento ao Mercado Pago](/developers/pt/docs/checkout-bricks-beta/integration/payment-submission) 

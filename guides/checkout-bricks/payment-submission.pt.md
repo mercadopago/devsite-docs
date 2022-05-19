@@ -247,4 +247,4 @@ curl -X POST \
 >
 > Veja como realizar testes para garantir o funcionamento correto de sua integração.
 >
-> [Enviar pagamento ao Mercado Pago](/developers/pt/docs/checkout-bricks-beta/integration/integration-test) 
+> [Enviar pagamento ao Mercado Pago](/developers/pt/docs/checkout-bricks-beta/integration/integration-test)
