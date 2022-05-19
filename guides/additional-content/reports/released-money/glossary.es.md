@@ -45,13 +45,17 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
  ----[mla]---- | PAYER_ID_TYPE* | Tipo de identificación de la persona que hace un pago o una donación. Puede ser CUIL, CUIT o DNI. | ------------
  ----[mla]---- | PAYER_ID_NUMBER* | Número de identificación de la persona que hace un pago o una donación. | ------------
 
-<br> * Esta información sólo estará disponible cuando se trate de pagos hechos con QR, transferencias o cuando se haya hecho una donación. <br>
 ----[mpe, mlu]----
 > INFO
 >
 > Algunas definiciones ya no están disponibles o han cambiado
 >
 > Usa este glosario para conocer los términos de los reportes que generes a partir de ------------ ----[mpe]----enero de 2022. ------------  ----[mlu]---- marzo de 2022. ------------ ----[mpe, mlu]---- Para los reportes que abarquen fechas previas [consulta este Glosario.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/glossary-old)
+------------
+----[mla]----
+> INFO
+>
+> (*)Esta información sólo estará disponible cuando se trate de pagos hechos con QR, transferencias o cuando se haya hecho una donación.
 ------------
 <hr/>
 

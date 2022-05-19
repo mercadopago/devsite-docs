@@ -49,4 +49,8 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
  ----[mla]---- | PAYER_ID_TYPE* | Tipo de identificación de la persona que hace un pago o una donación. Puede ser CUIL, CUIT o DNI. | ------------
  ----[mla]---- | PAYER_ID_NUMBER* | Número de identificación de la persona que hace un pago o una donación. | ------------
 
-<br> * Esta información sólo estará disponible cuando se trate de pagos hechos con QR, transferencias o cuando se haya hecho una donación. <br>
+----[mla]----
+> INFO
+>
+> (*)Esta información sólo estará disponible cuando se trate de pagos hechos con QR, transferencias o cuando se haya hecho una donación.
+------------

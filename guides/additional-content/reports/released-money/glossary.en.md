@@ -44,8 +44,12 @@ If you have any doubts about the technical terms used, check the glossary below.
 ----[mla]---- | PAYER_NAME* | Name of the person who is making a payment or donation. | ------------
  ----[mla]---- | PAYER_ID_TYPE* | Type of identification of the person who is making a payment or donation. | ------------
  ----[mla]---- | PAYER_ID_NUMBER* | Identification number of the person who is making a payment or donation. | ------------
-
-<br> * These information will only be available for payments made with QR code, transfers or donations.  <br>
+ 
+ ----[mla]----
+> INFO
+>
+> (*)This information will only be available for payments made with QR code, transfers or donations.
+------------
 
 ### Next steps
 
