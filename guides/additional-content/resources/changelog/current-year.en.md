@@ -9,7 +9,7 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 > CHANGELOG
 >
-> New columns in "All transactions" report
+> New columns in "Release" report
 >
 > NEWS: FEATURE
 >

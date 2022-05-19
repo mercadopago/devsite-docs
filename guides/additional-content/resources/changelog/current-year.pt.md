@@ -9,7 +9,7 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 > CHANGELOG
 >
-> Novas colunas no relatório "Dinheiro em conta"
+> Novas colunas no relatório "Liberações"
 >
 > NEWS: FEATURE
 >
