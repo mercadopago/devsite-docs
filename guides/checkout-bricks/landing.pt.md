@@ -5,26 +5,10 @@ content_section_with_media:
  - media_video: https://www.youtube.com/embed/jv9oCydWV78
 ---
 
---- mini_landing_separator ---
-
 ---
 bullet_section_with_media: 
  - title: 
  - type: normal
- - message: Os bricks possuem fluxos de controle do componente de UI e validação dos dados, o que faz com que o processo de integração ocorra a partir de configurações iniciais, métodos e callbacks utilizados por cada brick. Além disso, os bricks garantem segurança de dados sensíveis através da tokenização automática prevenindo esses dados de trafegarem no servidor.
- - image:/checkout-bricks/cho-bricks-landing-v3.png
----
-
----
-bullet_section_with_media: 
- - title: 
- - message: Os bricks possuem fluxos de controle do componente de UI e validação dos dados, o que faz com que o processo de integração ocorra a partir de configurações iniciais, métodos e callbacks utilizados por cada brick. Além disso, os bricks garantem segurança de dados sensíveis através da tokenização automática prevenindo esses dados de trafegarem no servidor.
- - image:/checkout-bricks/cho-bricks-landing-v3.png
----
-
----
-content_section_with_media: 
- - title: 
  - message: Os bricks possuem fluxos de controle do componente de UI e validação dos dados, o que faz com que o processo de integração ocorra a partir de configurações iniciais, métodos e callbacks utilizados por cada brick. Além disso, os bricks garantem segurança de dados sensíveis através da tokenização automática prevenindo esses dados de trafegarem no servidor.
  - image:/checkout-bricks/cho-bricks-landing-v3.png
 ---

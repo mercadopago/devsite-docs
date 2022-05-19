@@ -127,65 +127,6 @@ renderCardPaymentBrick(bricksBuilder);
 ```
 ![cardform](checkout-bricks/card-form-pt.png)
 
-> SERVER_SIDE
->
-> h2
->
-> Instalar o SDK do Mercado Pago
-
-Instale o [SDKs oficial](developers/pt/guides/sdks) para simplificar sua integração com nossas APIs.
-
-[[[
-```php
-===
-[Instale Composer](https://getcomposer.org/download) para usar o SDK.
-
-Execute o seguinte código na sua linha de comando:
-===
-php composer.phar require "mercadopago/dx-php"
-```
-```node
-===
-Para instalar o SDK execute o seguinte código via linha de comandos do seu terminal usando [npm](https://www.npmjs.com/get-npm):
-===
-npm install mercadopago
-```
-```java
-===
-Para instalar o SDK no seu projeto [Maven](http://maven.apache.org/install.html) adicione a seguinte dependência no seu arquivo pom.xml e em seguida execute 'maven install'.
-===
-<dependency>
-   <groupId>com.mercadopago</groupId>
-   <artifactId>sdk-java</artifactId>
-   <version>2.0.0</version>
-</dependency>
-```
-```ruby
-===
-O SDK de Mercado Pago está disponível como [gema](https://rubygems.org/gems/mercadopago-sdk), para instá-la execute o seguinte código na sua linha de comandos:
-===
-gem install mercadopago-sdk
-```
-```csharp
-===
-----[mlb]----
-Use [NuGet](https://docs.microsoft.com/pt-br/nuget/reference/nuget-exe-cli-reference) para instalar o SDK .NET de Mercado Pago.
-------------
-----[mla, mlm, mco, mlc, mlu]----
-Use [NuGet](https://docs.microsoft.com/es-es/nuget/reference/nuget-exe-cli-reference) para instalar el SDK .NET de Mercado Pago.
-------------
-Execute o seguinte comando no seu terminal:
-===
-nuget install mercadopago-sdk
-```
-```python
-===
-O SDK de Mercado Pago está disponível como [pip](https://pypi.org/project/mercadopago/), para instalá-la execute o seguinte código na sua linha de comandos:
-===
-pip3 install mercadopago
-```
-]]]
-
 > PREV_STEP_CARD_PT
 >
 > Pré-requisitos
