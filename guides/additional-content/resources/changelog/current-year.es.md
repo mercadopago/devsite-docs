@@ -18,7 +18,7 @@ Las columnas `POI_WALLET_NAME` y `POI_BANK_NAME` permiten que los negocios que c
 
 Ambas conformarán las últimas columnas del reporte, razón por la cual no se genera ningún conflicto por posición de referencia (Número de columna) o mapeo de la columna por keys (Encabezado).
 
-Por defecto, estas columnas están deshabilitadas. Para que se visualicen en el reporte de **Todas las transacciones** es necesario actualizar las preferencias de configuración desde el panel o vía API.
+Por defecto, estas columnas están deshabilitadas. Para que se visualicen en el reporte de **Liberaciones** es necesario actualizar las preferencias de configuración desde el panel o vía API.
 
 Ir a configuración [desde el panel](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports/settlement/settings) o [vía API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/account-money/api).
 
