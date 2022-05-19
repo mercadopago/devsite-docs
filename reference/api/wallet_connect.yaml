@@ -74,7 +74,7 @@ paths:
                     type: string
                     description: Unique ID that identifies an Agreement
                     example: b1234e5678b91c23a456e78912345b67
-                  agreement_url:
+                  agreement_uri:
                     type: string
                     description: This is the ur to redirect the user to the wallet vinculation in the frontend
                     example: https://beta.mercadopago.com.ar/v1/wallet_agreement/b1234e5678b91c23a456e78912345b67
@@ -88,9 +88,9 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 400--Bad-Request--Field return_url is required
+                      - 400--Bad-Request--Field return_uri is required
                       - 400--Bad-Request--Field external_flow_id is required
-                      - 400--Bad-Request--Field return_url must not be grater than 300 characters
+                      - 400--Bad-Request--Field return_uri must not be grater than 300 characters
                       - 400--Bad-Request--Field external_flow_id must not be grater than 300 characters
                       - 400--Bad-Request--Field external_user must not be blank
                       - 400--Bad-Request--Field id must not be blank
