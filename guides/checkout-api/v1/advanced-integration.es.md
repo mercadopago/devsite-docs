@@ -137,10 +137,16 @@ card = card_response["response"]
 ```curl
 
 curl -X POST \
-  -H 'Content-Type: application/json' \
-  -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
-  'https://api.mercadopago.com/v1/customers/CUSTOMER_ID/cards' \
-  -d '{"token": "9b2d63e00d66a8c721607214cedaecda", "issuer_id": "3245612", "payment_method_id": "debit_card"}'
+    -H 'Content-Type: application/json' \
+    -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/customers' \
+    -d '{"email": "test_payer_12345@testuser.com"}'
+
+curl -X POST \
+    -H 'Content-Type: application/json' \
+    -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/customers/CUSTOMER_ID/cards' \
+    -d '{"token": "9b2d63e00d66a8c721607214cedaecda", "issuer": {"id": "25"}, "payment_method_id":"debit_card"}'
 
 ```
 ]]]
@@ -309,17 +315,15 @@ print(card)
 ```
 ```curl
 
-curl -X POST \
-  -H 'Content-Type: application/json' \
-  -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
-  'https://api.mercadopago.com/v1/customers' \
-  -d '{"email": "test_payer_12345@testuser.com"}'
-
-curl -X POST \
-  -H 'Content-Type: application/json' \
+curl -X GET \
   -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
   'https://api.mercadopago.com/v1/customers/CUSTOMER_ID/cards' \
-  -d '{"token": "9b2d63e00d66a8c721607214cedaecda", "issuer_id": "3245612", "payment_method_id":"debit_card"}'
+
+curl -X POST \
+    -H 'Content-Type: application/json' \
+    -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/customers/CUSTOMER_ID/cards' \
+    -d '{"token": "9b2d63e00d66a8c721607214cedaecda", "issuer": {"id": "25"}, "payment_method_id":"debit_card"}'
 
 ```
 ]]]
