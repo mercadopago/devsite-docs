@@ -5,6 +5,22 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ## Maio 2022
 
+### 24 de Maio
+
+> CHANGELOG
+>
+> Novas colunas no relatório "Dinheiro em conta"
+>
+> NEWS: FEATURE
+>
+> PRODUCT: RELATÓRIOS
+As colunas `POI_WALLET_NAME` y `POI_BANK_NAME` permitem que os estabelecimentos que cobram com um código QR do Mercado Pago identifiquem de quais carteiras digitais ou bancos eles receberam seus pagamentos.
+
+Como as duas colunas são as últimas do relatório, não há nenhum conflito por posição de referência (número da coluna) ou mapeamento da coluna por keys (cabeçalho).
+
+Por padrão, essas colunas estão desativadas. Para que elas sejam mostradas no relatório **Dinheiro em conta**, é necessário atualizar as preferências de configuração pelo painel ou via API.
+
+Acesse a configuração pelo [painel](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports/settlement/settings) ou [via API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/account-money/api).
 
 ### 16 de maio
 
