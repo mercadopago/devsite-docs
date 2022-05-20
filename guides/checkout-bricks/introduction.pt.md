@@ -2,9 +2,9 @@
 
 Checkout Bricks viabiliza uma integração client-side de forma modular por meio de estruturas configuráveis, seguras e com integração simplificada e unificada. Todos os bricks possuem fluxos de controle do componente de UI e validação dos dados, o que faz com que o processo de integração ocorra a partir de configurações iniciais, métodos e callbacks utilizados por cada brick além de possuírem as seguintes características básicas:
 
-* [Responsividade](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/checkout-bricks-beta/introduction#bookmark_responsividade)
-* [Temas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/checkout-bricks-beta/introduction#bookmark_temas)
-* [Idiomas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/checkout-bricks-beta/introduction#bookmark_idiomas)
+* [Responsividade](https://omega.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/checkout-bricks-beta/introduction#bookmark_responsividade)
+* [Temas](https://omega.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/checkout-bricks-beta/introduction#bookmark_temas)
+* [Idiomas](https://omega.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/checkout-bricks-beta/introduction#bookmark_idiomas)
 
 ## Responsividade
 
@@ -27,6 +27,12 @@ O Card Payment Brick pode ser instanciado/renderizado em três idiomas diferente
 * Espanhol
 
 Veja [Selecionar idioma](/developers/pt/docs/checkout-bricks-beta/additional-customization/select-language) para instruções de como selecionar o idioma do brick.
+
+--- mini_landing_separator ---
+
+## Bricks
+
+>>>> Bricks <<<<
 
 Confira na tabela abaixo uma breve descrição sobre cada um dos bricks que estarão disponíveis para integração.
 
