@@ -2,7 +2,7 @@
 >
 > h1
 >
-> Envie o pagamento ao Mercado Pago
+> Enviar pagamento ao Mercado Pago
 
 Para continuar o processo de pagamento ao Mercado Pago, é necessário que seu backend possa receber a informação do formulário com o token gerado e os dados completos. O seu backend deverá disponibilizar um endpoint `/process_payment` para receber ali todos os dados depois de realizar a ação submit.
 

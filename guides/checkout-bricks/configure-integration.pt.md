@@ -1,4 +1,4 @@
-# Configurar a integração
+# Configurar a integração 
 
 Para configurar a integração dos bricks você precisa seguir os passos abaixo:
 
