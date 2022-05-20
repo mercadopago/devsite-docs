@@ -54,7 +54,7 @@ curl -X POST \
 ```
 
 ----[mco]----
-> Se você precisa pagar o IVA para os produtos do seu pedido, visite a [seção de Considerações IVA Colômbia](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/iva-colombia).
+> Se você precisa pagar o IVA para os produtos do seu pedido, visite a [seção de Considerações IVA Colômbia](/developers/pt/guides/additional-content/localization/iva-colombia).
 ------------
 
 Você pode obter mais informações nas [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_stores_external_store_id_pos_external_pos_id_orders/put).

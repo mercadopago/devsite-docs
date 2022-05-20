@@ -3,6 +3,62 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 ---
 
+## May 2022
+
+### May 24th
+
+> CHANGELOG
+>
+> New columns in "Release" report
+>
+> NEWS: FEATURE
+>
+> PRODUCT: REPORTS
+The columns `POI_WALLET_NAME` y `POI_BANK_NAME` allow businesses that charge with a Mercado Pago QR code to identify which digital wallets or banks their payments came from.
+
+By default, these columns are disabled. To display them in the **"Release"** report it is necessary to update the settings preferences from the dashboard or via API.
+
+Go to settings [from the panel](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports/release/settings) or [via API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/released-money/api).
+
+### May 16th
+
+> CHANGELOG
+>
+> New WooCommerce plugin version
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: WOOCOMMERCE
+We have released the new version 6.0.0 for WooCommerce.
+
+[Go to WooCommerce documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/woocommerce/introduction)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-woocommerce/releases/tag/v6.0.0) for further details regarding this release.
+
+### May 5th
+
+> CHANGELOG
+>
+> New Magento 2 plugin version
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: MAGENTO 2
+
+We have released the new version 3.16.0 for Magento 2.
+
+[Go to Magento 2 documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/magento-two/introduction)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-magento2/releases/tag/v3.16.0) for further details regarding this release.
+
 ## April 2022
 
 ### April 19th

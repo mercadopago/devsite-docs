@@ -1,4 +1,4 @@
-# Integrate Checkout API payment for Pix
+# Payment with Pix
 
 You can offer the option to receive payments instantly with Pix (`bank_transfer`) from any bank or digital wallet, either via a **QR code** or a **payment code** where you can set an expiration date for the payment to be made.
 

@@ -63,21 +63,3 @@ Todas las opciones que tienes disponible a la hora de descargar tu reporte.
 > Nota
 >
 > Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/account-money/glossary) de Todas las transacciones para revisarlo cuando necesites o quieras consultar algún término técnico.
-
-<hr/>
-
-> NEXT_STEP_CARD_ES
->
-> Generación desde Mercado Pago  
->
-> Crea tus reportes de forma manual o programada desde tu cuenta de Mercado Pago.
->
-> [Generación desde Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/account-money/panel)
-
-> NEXT_STEP_CARD_ES
->
-> Generación por API
->
-> Crea reportes de forma programada y manual por medio de una integración con Mercado Pago.
->
-> [Generación por API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/account-money/api)

@@ -3,8 +3,6 @@
       - mlm
 ---
 
-
-
 # Cross Border
 
 La solución Cross Border de Mercado Pago te permite cobrar de manera local pero retirar los fondos en una cuenta bancaria en otro país diferente a donde estas vendiendo.
@@ -18,9 +16,8 @@ Por el momento, las monedas en las que se permite recibir los fondos son:
 
 Tene en cuenta que el pagador va a realizar el pago en la moneda local, de esta manera, el mismo podrá aprovechar la financiación ofrecida por Mercado Pago.
 
-
-
 ## Creación de la cuenta
+
 Como se mencionó anteriormente la cuenta de Mercado Pago deberá ser creada por Mercado Pago para poder utilizar la solución de CrossBorder. Para la creación de la cuenta es necesario que nos envien la siguiente información:
 
 - Nombre de la compañia.
@@ -88,8 +85,6 @@ Finalmente, en el pago vas a ver el valor en USD y el rate con que fue convertid
 }
 ```
 
-
-
 ## API Exchange Rate
 
 Para la integración de Cross Border será fundamental la utilización de la API de Exchange Rate, ya que como se mencionó anteriormente, el monto de la operación debe ser realizado en moneda local.
@@ -115,8 +110,6 @@ La respuesta que vas a obtener es similar a la siguiente:
 
 > El campo rate esta expresado en la moneda correspondiente al 'to' de la call de la API. En este ejemplo, es en MXN.
 
-
-
 ## Integración con Checkout Básico
 
 El Checkout Básico es la solución estandar de Mercado Pago. Dicha solución consiste en la generación de una preferencia de pago, la cual retorna un `init_point` que al abrirlo redirecciona al usuario a un checkout donde toda la experiencia es manejada por Mercado Pago.
@@ -133,9 +126,7 @@ El Checkout Básico es la solución estandar de Mercado Pago. Dicha solución co
 > * No permite modificar la experiencia de pago.
 > * El usuario es redigido fuera de la aplicación para realizar el pago.
 
-
-Para llevar a cabo la integración deberás seguir la documentación que podrás encontrar ingresando en el siguiente [link](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/introduction)
-
+Para llevar a cabo la integración deberás seguir la documentación que podrás encontrar ingresando en el siguiente [link](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/checkout-pro/introduction)
 
 Este sería un ejemplo de la creación de la preferencia de pago:
 
@@ -447,9 +438,8 @@ Este es un ejemplo de la respuesta del pago:
 }
 ```
 
-
-
 ## Integración con el Tokenizador
+
 El Tokenizador es la solución de Mercado Pago que rápidamente te permite obtener un card token de la tarjeta de tu cliente. Dicha solución consiste en la generación de una orden de pago utilizando Javascript que abre un checkout para que el pagador cargue los datos de la tarjeta. Luego, recibirás en tu backend el card token para que hagas un POST del pago.
 
 > VENTAJAS
@@ -463,9 +453,6 @@ El Tokenizador es la solución de Mercado Pago que rápidamente te permite obten
 > * No permite modificar el diseño del checkout.
 > * No permite modificar la experiencia de pago.
 > * No incluye todos los medios de pago.
-
-
-Para llevar a cabo la integración deberás seguir la documentación que podrás encontrar ingresando en el siguiente [link](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/tokenize-checkout/introduction)
 
 
 Este sería un ejemplo de la creación del checkout:
@@ -708,8 +695,7 @@ El Checkout Personalizado es la solución más customizable de Mercado Pago. Dic
 > * Manejo de los mensajes de error y estados de pago.
 > * Debes integrar cada medio de pagos por separado.
 
-
-Para llevar a cabo la integración deberás seguir la documentación que podrás encontrar ingresando en el siguiente  [link](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/introduction)
+Para llevar a cabo la integración deberás seguir la documentación que podrás encontrar ingresando en el siguiente  [link](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/checkout-api/introduction)
 
 Deberás generar un formulario de tarjeta como se indica en la documentación que te permita obtener un card-token de la tarjeta del pagador para luego llevar a tu servidor y así hacer el POST del pago:
 
@@ -751,7 +737,6 @@ Deberás generar un formulario de tarjeta como se indica en la documentación qu
 ...
 
 ```
-
 
 Este sería un ejemplo de la creación del pago:
 

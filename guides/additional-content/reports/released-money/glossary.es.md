@@ -22,7 +22,7 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 | COUPON_AMOUNT | Monto del cupón de descuento. Solo se descuenta del monto bruto (`GROSS_AMOUNT`) si está provisto por el vendedor.|
 | INSTALLMENTS | Cantidad de cuotas en las que se realizó la operación. |
 | PAYMENT METHOD | ----[mla]---- [Medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods/#bookmark_argentina) ------------ ----[mlb]---- [Medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods/#bookmark_brasil) ------------ ----[mpe]---- [Medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods/#bookmark_perú) ------------ ----[mco]---- [Medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods/#bookmark_colombia) ------------ ----[mlm]---- [Medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods/#bookmark_méxico) ------------ ----[mlu]---- [Medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods/#bookmark_uruguay) ------------ ----[mlc]---- [Medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods/#bookmark_chile) ------------ según el país con el que operes en Mercado Pago. |
-| TAX_DETAIL | <br/> Descripción del impuesto retenido por operación en el `TAXES_AMOUNT`. ----[mla]---- Puede tomar los siguientes valores según la jurisdicción: <br/>cordoba<br/>corrientes<br/>mendoza<br/>la_pampa<br/>santa_fe<br/>tucuman<br/>entre_rios<br/>catamarca<br/>neuquen<br/>santiago_del_estero<br/>rio_negro<br/>jujuy<br/><br/>También se puede visualizar devolución_percepción_gral cuando la operación es la devolución de este impuesto. ------------ ----[mco]---- Puede tomar el valor de: <br/>fuente<br/>iva<br/>ica<br/> ------------ <br/><br/> |
+| TAX_DETAIL | <br/> Descripción del impuesto retenido por operación en el `TAXES_AMOUNT`. ----[mla]---- Puede tomar los siguientes valores según la jurisdicción: <br/>cordoba<br/>corrientes<br/>mendoza<br/>la_pampa<br/>santa_fe<br/>tucuman<br/>entre_rios<br/>catamarca<br/>neuquen<br/>santiago_del_estero<br/>rio_negro<br/>jujuy<br/><br/>También se puede visualizar devolución_percepción_gral cuando la operación es la devolución de este impuesto. ------------ ----[mco]---- Puede tomar el valor de: <br/>fuente<br/>iva<br/>ica<br/>gmf<br/>------------ <br/><br/> |
 | TAX_AMOUNT_TELCO | Es el valor del impuesto a las empresas de telecomunicaciones que se descuenta del valor bruto. |
 | TRANSACTION_APPROVAL_DATE | Fecha de aprobación de la operación. |
 | POS_ID | ID de caja si el pago se realiza a través de un comercio físico. |
@@ -39,6 +39,14 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 | EFFECTIVE_COUPON_AMOUNT | Costo por ofrecer descuento. |
 | POI_ID | ID del lector si el pago se realiza a través de un comercio físico. |
 | CARD_INITIAL_NUMBER | Corresponde a los primeros dígitos de la tarjeta crédito o débito con la que se hizo la compra. |
+| OPERATION_TAGS | Son las etiquetas para categorizar y/o segmentar diferentes aspectos de la transacción, como por ejemplo los canales usados para hacer un pago.Se identifican como:<br>WHATSAPP_PAY: Esta etiqueta indica que el pago fue hecho a través de whatsApp<br>QR: Esta etiqueta indica que el pago fue hecho a través de un código QR<br>PO: Esta etiqueta indica que el pago fue hecho con un Point<br>MARKETPLACE: Esta etiqueta indica que el pago fue hecho directamente en Mercado Libre. |
+| ITEM_ID | Identificador del producto vendido. |
+----[mla]---- | PAYER_NAME* | Nombre de la persona que hace un pago o una donación. | ------------
+----[mla]---- | PAYER_ID_TYPE* | Tipo de identificación de la persona que hace un pago o una donación. Puede ser CUIL, CUIT o DNI. | ------------
+----[mla]---- | PAYER_ID_NUMBER* | Número de identificación de la persona que hace un pago o una donación. | ------------
+| POI_WALLET_NAME | Nombre de la billetera virtual desde la que se origina un pago digital. Permite identificar el origen de una operación cuando cobras con un ----[mla]----[código QR interoperable](https://vendedores.mercadolibre.com.ar/nota/cobra-a-otras-billeteras-con-tu-qr-de-mercado-pago)------------ ----[mlu, mpe, mlm, mco, mlc, mlb]----código QR de Mercado Pago------------.|
+| POI_BANK_NAME | Nombre de la entidad bancaria desde la que se origina un pago digital. Permite identificar el origen de una operación cuando cobras con un ----[mla]----[código QR interoperable](https://vendedores.mercadolibre.com.ar/nota/cobra-a-otras-billeteras-con-tu-qr-de-mercado-pago)------------ ----[mlu, mpe, mlm, mco, mlc, mlb]----código QR de Mercado Pago------------.|
+
 ----[mpe, mlu]----
 > INFO
 >
@@ -46,7 +54,11 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 >
 > Usa este glosario para conocer los términos de los reportes que generes a partir de ------------ ----[mpe]----enero de 2022. ------------  ----[mlu]---- marzo de 2022. ------------ ----[mpe, mlu]---- Para los reportes que abarquen fechas previas [consulta este Glosario.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/glossary-old)
 ------------
-<hr/>
+----[mla]----
+> INFO
+>
+> (*)Esta información sólo estará disponible cuando se trate de pagos hechos con QR, transferencias o cuando se haya hecho una donación.
+------------
 
 ### Próximos pasos
 

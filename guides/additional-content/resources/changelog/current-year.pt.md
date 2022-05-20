@@ -3,6 +3,63 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ---
 
+## Maio 2022
+
+### 24 de Maio
+
+> CHANGELOG
+>
+> Novas colunas no relatório "Liberações"
+>
+> NEWS: FEATURE
+>
+> PRODUCT: RELATÓRIOS
+As colunas `POI_WALLET_NAME` y `POI_BANK_NAME` permitem que os estabelecimentos que cobram com um código QR do Mercado Pago identifiquem de quais carteiras digitais ou bancos eles receberam seus pagamentos.
+
+Por padrão, essas colunas estão desativadas. Para que elas sejam mostradas no relatório **Liberações**, é necessário atualizar as preferências de configuração pelo painel ou via API.
+
+Acesse a configuração pelo [painel](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports/release/settings) ou [via API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/released-money/api).
+
+### 16 de maio
+
+> CHANGELOG
+>
+> Nova versão WooCommerce
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: WOOCOMMERCE
+Lançamos a nova versão 6.0.0 para WooCommerce.
+
+[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/woocommerce/introduction)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v6.0.0).
+> 
+
+### 05 de maio
+
+> CHANGELOG
+>
+> Nova versão Magento 2
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: MAGENTO 2
+
+Lançamos a nova versão 3.16.0 para Magento 2.
+
+[Ir para a documentação de Magento 2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/magento-two/introduction)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-magento2/releases/tag/v3.16.0).
+
 ## Abril 2022
 
 ### 19 de abril

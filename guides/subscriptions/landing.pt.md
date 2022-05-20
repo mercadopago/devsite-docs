@@ -10,6 +10,7 @@ content_section_with_media:
 >>>> Disponibilidade por país <<<<
 ---
 available_countries: mla, mlb, mlm, mlu, mlc, mco, mpe
+
 ---
 
 ---
@@ -25,8 +26,21 @@ bullet_section_with_media:
  - title: Assinaturas sem plano associado
  - type: reversed
  - message: Assinaturas sem plano associado são utilizadas em situações nas quais diferentes assinaturas possuem diferentes características por serem específicas para cada pagador. Por exemplo, uma assinatura que, de acordo com as opções selecionadas pelo pagador, tem seu preço final alterado.
-
  - image: /subscriptions/mini-landing-3-pt.png
+---
+
+---
+bullet_section_with_media: 
+ - title: Vantagens
+ - type: normal
+ - message: Crie um plano com a cara do produto ou serviço.
+ - benefit_title: Frequência personalizável
+ - benefit_message: Cobre mensalidades ou receba os pagamentos em qualquer outra frequência, de semanal a anual. 
+ - benefit_title: Teste grátis
+ - benefit_message: Ofereça um período sem custos para que os clientes conheçam o serviço. 
+ - benefit_title: Valor aberto
+ - benefit_message: Se quiser, deixe que escolham quanto vão pagar. Ideal para receber doações.
+ - image: /subscriptions/mini-landing-4-pt.png
 ---
 
 --- mini_landing_separator ---
@@ -34,4 +48,5 @@ bullet_section_with_media:
 >>>> Meios de pagamento aceitos <<<<
 ---
 available_payments: credit, mercadopago, ticket
+
 ---

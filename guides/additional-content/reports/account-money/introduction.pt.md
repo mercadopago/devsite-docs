@@ -38,19 +38,3 @@ Opcionalmente, o relatório traz colunas com o agendamento das previsões de lib
 > Quando você incluir as novas colunas de previsibilidade de liberações, fique atento que as informações somente serão agregadas ao relatório depois que a configuração for atualizada e o relatório for processado ao menos uma vez com as novas colunas. Relatórios com data retroativa à data dessa nova configuração com as colunas novas não apresentarão as informações de previsibilidade.
 > <br/>
 > Tenha em mãos o [Glossário do relatório](/developers/pt/guides/additional-content/reports/account-money/glossary) de Dinheiro em conta para consultá-lo quando precisar ou queira conferir algum termo técnico.
-
-> NEXT_STEP_CARD_PT
->
-> Como usar o relatório
->
-> Saiba como o relatório é composto e aprenda a analisá-lo.
->
-> [Como usar o relatório](/developers/pt/guides/additional-content/reports/account-money/how-to-use)
-
-> NEXT_STEP_CARD_PT
->
-> Gere seus relatórios
->
-> Saiba as formas de gerar um relatório e siga as etapas para configurar suas preferências.
->
-> [Gere seus relatórios](/developers/pt/guides/additional-content/reports/account-money/generate)

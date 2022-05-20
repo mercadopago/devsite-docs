@@ -182,7 +182,7 @@ curl -X POST \
 > Important
 > 
 > - If you receive an error message of type `"invalid parameter"` with HTTP 400 status code, make sure you are completing the fields `payment_method_id` and `issuer_id` correctly.
-> - When you are using your test credentials, remember to follow this particular format for the customer's email: `test_payer_[0-9]{1,10}@testuser.com`. For example: `test_payer_12345@testuser.com`.
+> - When you are using your test users, remember to follow this particular format for the customer's email: `test_payer_[0-9]{1,10}@testuser.com`. For example: `test_payer_12345@testuser.com`.
 
 ## Add new cards to a customer
 
@@ -880,6 +880,7 @@ curl -X GET \
 To modify a client you need to send the `customer_id` and the fields you want to update in a `HTTP PUT` request. 
 
 The fields that can be modified from a client are:
+
 | Attribute | Description |
 | -------- | ----------- |
 | `address` | Address. |
@@ -891,6 +892,12 @@ The fields that can be modified from a client are:
 | `last_name` | Last name. |
 | `phone` | Registered phone. |
 | `identification` | Document type and number. |
+
+> NOTE
+>
+> Note
+>
+> The field `email` can only be updated if the customer has not yet associated an email.
 
 [[[
 ```php

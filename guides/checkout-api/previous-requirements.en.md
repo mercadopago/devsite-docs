@@ -11,8 +11,7 @@ Your credentials are the **keys we provide you to configure your integrations**.
 
 Check the [Credentials]([FAKER][CREDENTIALS][URL]) section to learn how to obtain these informations.
 
-> Do you have any questions about credentials? Read [Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/credentials/credentials) for more information.
-
+> Do you have any questions about credentials? Read [Credentials](/developers/en/guides/additional-content/credentials/credentials) for more information.
 
 ## Always use our libraries
 We recommend that you use our official libraries for your integration. This helps protect your customer's sensitive data, meet the required security standards, and keep yourself up to date.
@@ -23,7 +22,7 @@ We recommend that you use our official libraries for your integration. This help
 >
 > h3
 >
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Include MercadoPago.js
+> Include MercadoPago.js
 
 MercadoPago.js allows you to manage the card data to comply with the necessary security requirements and avoid sending sensitive data to your servers. For this, our library generates a payment token that represents this information and allows you to operate safely. You can use it by adding the following code to your website:
 
@@ -31,17 +30,15 @@ MercadoPago.js allows you to manage the card data to comply with the necessary s
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 
-> This documentation uses the new MercadoPago.js V2 version. To see the previous version, go to the [old Checkout API section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v1/previous-requirements).
-
 <br>
 
 > SERVER_SIDE
 >
 > h3
 >
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Install Mercado Pago SDK
+> Install Mercado Pago SDK
 
-Install an [official SDK](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/sdks) to simplify your interaction with our APIs.
+Install an [official SDK](/developers/en/guides/sdks) to simplify your interaction with our APIs.
 
 [[[
 ```php
@@ -96,13 +93,10 @@ pip3 install mercadopago
 
 ## Learn our API References
 
-If you can't use our official SDKs, you will have all the information about data queries and responses available to interact directly with our APIs in [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments/post).
+If you can't use our official SDKs, you will have all the information about data queries and responses available to interact directly with our APIs in [API References](/developers/en/reference/payments/_payments/post).
 
 ## Meet the requirements for the production environment
 
-When you develop your integration, consider all the [requirements for the production environment](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/goto-production). This process can ensure your customer's data security, compliance with legal standards or provisions in each country, and the best shopping experience for your customers.
+When you develop your integration, consider all the [requirements for the production environment](/developers/en/guides/checkout-api/goto-production). This process can ensure your customer's data security, compliance with legal standards or provisions in each country, and the best shopping experience for your customers.
 
 Once your integration is ready, you just need to fill out the form for to go to production in the [Credentials section]([FAKER][CREDENTIALS][URL]) to start receiving payments.
-
-
-

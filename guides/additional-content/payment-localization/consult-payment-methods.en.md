@@ -2,17 +2,17 @@
 
 The products and payment methods offered by Mercado Pago vary according to each country. See below how to consult all the payment methods that are available and, from that, which will or will not be available by product and by country.
 
-## Consult payment methods
+# Consult payment methods
 
-To consult all available payment methods and obtain a list with the details of each one of them and their properties, perform a GET to the endpoint[/v1/payment_methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payment_methods/_payment_methods/get). You can get more information about the attributes in [Get payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payment_methods/_payment_methods/get) in the API references.
+To consult all available payment methods and obtain a list with the details of each one of them and their properties, perform a GET to the endpoint[/v1/payment_methods](/developers/en/reference/payment_methods/_payment_methods/get). You can get more information about the attributes in [Get payment methods](/developers/en/reference/payment_methods/_payment_methods/get) in the API references.
 
 When consulting the available payment methods, the `response` will indicate the results that will coincide with the country associated with your Mercado Pago account.
 
-## Products and payment methods available by country
+# Products and payment methods available by country
  
 It may be that some payment methods are not available for some products. Payment methods availability by product and by country are detailed below.
  
-### Payments:
+## Payments:
  
 | Product | ARG | BRA | CHL | COL | MEX | PER | URY | VEN |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -21,7 +21,7 @@ It may be that some payment methods are not available for some products. Payment
 | Mobile Checkout | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | | ✔ |
 | Chackout API | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
  
-### Subscriptions:
+## Subscriptions:
  
 | Product | ARG | BRA | CHL | COL | MEX | PER | URY | VEN |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -31,7 +31,7 @@ It may be that some payment methods are not available for some products. Payment
  
 Based on the previous information, below we detail which payment methods are available/unavailable by country.
 
-### Argentina
+## Argentina
  
 * **Available:**
  
@@ -75,7 +75,7 @@ Based on the previous information, below we detail which payment methods are ava
 | Marketplace | Checkout Pro | N/A |
 | Marketplace | Checkout API | N/A |
  
-### Brazil
+## Brazil
  
 * **Available:**
  
@@ -138,7 +138,7 @@ Based on the previous information, below we detail which payment methods are ava
 | Marketplace | Checkout Pro | N/A |
 | Marketplace | Checkout API | N/A |
  
-### Colombia
+## Colombia
  
 * **Available:**
  
@@ -166,7 +166,7 @@ Based on the previous information, below we detail which payment methods are ava
 | Marketplace | Checkout Pro | N/A |
 | Marketplace | Checkout API | `account_money` |
  
-### Mexico
+## Mexico
  
 * **Available:**
  
@@ -201,7 +201,7 @@ Based on the previous information, below we detail which payment methods are ava
 | Marketplace | Checkout Pro | N/A |
 | Marketplace | Checkout API | N/A |
  
-### Peru
+## Peru
  
 * **Available:**
  
@@ -225,7 +225,7 @@ Based on the previous information, below we detail which payment methods are ava
 | Marketplace | Checkout Pro | N/A |
 | Marketplace | Checkout API | N/A |
  
-### Uruguay
+## Uruguay
  
 * **Available:**
  

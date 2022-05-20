@@ -3,6 +3,79 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ---
 
+## Mayo 2022
+
+### 24 de Mayo
+
+> CHANGELOG
+>
+> Nuevas columnas en reporte de "Liberaciones"
+>
+> NEWS: FEATURE
+>
+> PRODUCT: REPORTES
+Las columnas `POI_WALLET_NAME` y `POI_BANK_NAME` permiten que los negocios que cobren con un código QR de Mercado Pago, identifiquen desde qué otras billeteras virtuales o bancos recibieron sus pagos.
+
+Por defecto, estas columnas están deshabilitadas. Para que se visualicen en el reporte de **Liberaciones** es necesario actualizar las preferencias de configuración desde el panel o vía API.
+
+Ir a configuración [desde el panel](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports/release/settings) o [vía API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/api).
+
+### 19 de mayo
+
+> CHANGELOG
+>
+> Nueva versión WooCommerce
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: WOOCOMMERCE
+Lanzamos la nueva versión 6.0.0 para WooCommerce.
+
+[Ir a documentación de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/woocommerce/introduction)
+
+> GIT
+>
+> GitHub
+>
+> Consulta en GitHub el detalle de los [últimos cambios productivos](https://github.com/mercadopago/cart-woocommerce/releases/tag/v6.0.0).
+
+### 13 de mayo
+
+> CHANGELOG
+>
+> Reporte Dinero retirado: restricciones integración vía API
+>
+> PRODUCT: MERCADO PAGO
+Limitamos el uso de la API a la consulta y descarga manual de reportes históricos, como consecuencia del deprecado del reporte Dinero retirado en los próximos meses.
+
+Por lo tanto, ya no es posible configurar las instancias de generación, configuración y descarga para programar reportes.
+
+Tampoco será posible usar las llamadas a la API para crear, consultar y actualizar reportes.
+
+Seguirán teniendo soporte únicamente la consulta y descarga manual de reportes creados.
+
+No se presentan cambios en la documentación.
+
+### 05 de mayo
+
+> CHANGELOG
+>
+> Nueva versión Magento 2
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: MAGENTO 2
+
+Lanzamos la nueva versión 3.16.0 para Magento 2.
+
+[Ir a documentación de Magento 2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/magento-two/introduction)
+
+> GIT
+>
+> GitHub
+>
+> Consulta en GitHub el detalle de los [últimos cambios productivos](https://github.com/mercadopago/cart-magento2/releases/tag/v3.16.0).
+
 ## Abril 2022
 
 ### 19 de abril

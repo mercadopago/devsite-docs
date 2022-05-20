@@ -1,6 +1,8 @@
-## Layout 
+# Layout 
 
 El layout de Card Payment Brick se basa en las mejores prácticas de UX para que sea posible ofrecer la mejor experiencia de compra sin que debas preocuparte por detalles de diseño. El layout presenta los elementos que se detallan a continuación.
+
+![cardform](checkout-bricks/card-form__es.png)
 
 > WARNING
 >
@@ -20,3 +22,19 @@ El layout de Card Payment Brick se basa en las mejores prácticas de UX para que
 | Subtítulo <br><br> Propiedad: emailSectionTitle  | **Valor:** Completa tus datos <br>  **Label:** N/A <br> **Placeholder:** N/A <br> **Tipo:** text <br> **Formato:** N/A <br> **Máx. caracteres:** N/A  | Obligatorio  |
 | Campo para ingresar el correo electrónico del comprador <br> Propiedad: cardholderEmail  | **Valor:** N/A <br> **Label:** Email <br> **Placeholder:** joaosilva@email.com <br> **Tipo:** string <br> **Formato:** formato de e-mail convencional (ejemplo@email.com)  **Máx. caracteres:** X  | Obligatorio* <br> personalizable (label, placeholder) <br><br> *Si los datos se proporcionaron y guardaron previamente, este elemento se vuelve opcional.  |
 | Botón de pago <br> Propiedad: formSubmit  | **Valor:** [imagen] Pagar <br> **Label:** N/A  **Placeholder:** N/A <br> **Tipo:** text <br> **callback:** onSubmit <br> **função**: promise(cardFormData)  | Opcional <br> Ocultable y personalizable <br><br> *La función recibe los datos del formulario, incluido el token de la tarjeta, y presenta una animación de carga.  |
+
+> PREV_STEP_CARD_PT
+>
+> Introdução
+>
+> Conheça como funciona o Mercado Pago Delivery.
+>
+> [Introdução](/developers/pt/docs/mp-delivery/landing)
+
+> NEXT_STEP_CARD_PT
+>
+> Configuração da integração
+>
+> Saiba como configurar a integração com o Mercado Pago Delivery.
+>
+> [Configuração da integração](/developers/pt/docs/mp-delivery/integration-configuration)

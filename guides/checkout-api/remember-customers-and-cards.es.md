@@ -182,7 +182,7 @@ curl -X POST \
 > Importante
 > 
 > - Si recibes un mensaje de error del tipo `"invalid parameter"` con código de estado HTTP 400, asegúrate de estar completando correctamente los campos `payment_method_id` e `issuer_id`.
-> - Cuando estés utilizando tus credenciales de prueba, recuerda respetar el siguiente formato para el email del cliente: `test_payer_[0-9]{1,10}@testuser.com`. Por ejemplo: `test_payer_12345@testuser.com`.
+> - Cuando estés utilizando usuarios de prueba, recuerda respetar el siguiente formato para el email del cliente: `test_payer_[0-9]{1,10}@testuser.com`. Por ejemplo: `test_payer_12345@testuser.com`.
 
 ## Agrega nuevas tarjetas a un cliente
 
@@ -887,6 +887,12 @@ Los campos que se pueden modificar de un cliente son:
 | `last_name` | Apellido. |
 | `phone` | Teléfono registrado. |
 | `identification` | Tipo de documento y número. |
+
+> NOTE
+>
+> Nota
+>
+> El campo `email` solo puede ser actualizado cuando el cliente no tiene un email asociado aún.
 
 [[[
 ```php

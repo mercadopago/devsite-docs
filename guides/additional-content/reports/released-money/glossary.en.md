@@ -22,7 +22,7 @@ If you have any doubts about the technical terms used, check the glossary below.
 | COUPON_AMOUNT | Discount coupon amount. Only the gross amount (`GROSS_AMOUNT`) is discounted if provided by the seller. |
 | INSTALLMENTS | Number of installments in which the operation was carried out. |
 | PAYMENT METHOD | ----[mla]---- [Payment methods available](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods/#bookmark_argentina) ------------ ----[mlb]---- [Payment methods available](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods/#bookmark_brasil) ------------ ----[mpe]---- [Payment methods available](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods/#bookmark_perú) ------------ ----[mco]---- [Payment methods available](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods/#bookmark_colombia) ------------ ----[mlm]---- [Payment methods available](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods/#bookmark_méxico) ------------ ----[mlu]---- [Payment methods available](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods/#bookmark_uruguay) ------------ ----[mlc]---- [Payment methods available](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods/#bookmark_chile) ------------ according to the country with which you operate in Mercado Pago. |
-| TAX_DETAIL | <br/> Description of the tax withheld by operation in `TAXES_AMOUNT`. ----[mla]---- You can consider the following values depending on the jurisdiction: <br/>cordoba<br/>corrientes<br/>mendoza<br/>la_pampa<br/>santa_fe<br/>tucuman<br/>entre_rios<br/>catamarca<br/>neuquen<br/>santiago_del_estero<br/>rio_negro<br/>jujuy ------------ <br/><br/> |
+| TAX_DETAIL | <br/> Description of the tax withheld by operation in `TAXES_AMOUNT`. ----[mla]---- You can consider the following values depending on the jurisdiction: <br/>cordoba<br/>corrientes<br/>mendoza<br/>la_pampa<br/>santa_fe<br/>tucuman<br/>entre_rios<br/>catamarca<br/>neuquen<br/>santiago_del_estero<br/>rio_negro<br/>jujuy ------------ ----[mco]---- You can consider the following values depending on the jurisdiction: <br/>fuente<br/>iva<br/>ica<br/>gmf<br/>------------ <br/><br/> |
 | TAX_AMOUNT_TELCO | It is the value of the tax on telecommunications companies that is deducted from the gross value. |
 | TRANSACTION_APPROVAL_DATE | Date of approval of the operation. |
 | POS_ID | Cash ID if the payment is made through a physical commerce. |
@@ -39,8 +39,20 @@ If you have any doubts about the technical terms used, check the glossary below.
 | EFFECTIVE_COUPON_AMOUNT | Cost for offering discount. |
 | POI_ID | Point ID if payment is made through a physical retailer. |
 | CARD_INITIAL_NUMBER | It corresponds to the first digits of the credit or debit card that you used to make the purchase. |
+| OPERATION_TAGS | These are labels to categorize and/or segment different aspects of the transaction, such as the channels used to make a payment. They are identified as:<br>WHATSAPP_PAY: This label indicates that the payment was made via WhatsApp<br>QR: This label indicates that the payment was made with a QR code<br>PO: This label indicates that the payment was made with Point<br>MARKETPLACE: This label indicates that the payment was made directly in Mercado Libre. |
+| ITEM_ID | Identifier of the product sold. |
+----[mla]---- | PAYER_NAME* | Name of the person who is making a payment or donation. | ------------
+ ----[mla]---- | PAYER_ID_TYPE* | Type of identification of the person who is making a payment or donation. | ------------
+ ----[mla]---- | PAYER_ID_NUMBER* | Identification number of the person who is making a payment or donation. | ------------
 
-<hr/>
+ ----[mla]----
+> INFO
+>
+> (*)This information will only be available for payments made with QR code, transfers or donations.
+------------
+=======
+| POI_WALLET_NAME | Name of the digital wallet that a virtual payment comes from. Allows you to identify the origin of a transaction when you charge with a Mercado Pago QR Code.|
+| POI_BANK_NAME | Name of the bank that a virtual payment comes from. Allows you to identify the origin of a transaction when you charge with a Mercado Pago QR Code.|
 
 ### Next steps
 

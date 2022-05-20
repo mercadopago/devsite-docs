@@ -39,7 +39,7 @@ Comprueba que hayas recibido las notificaciones del estado de la orden en tu sis
 | **Pago aprobado**. El usuario realiza un pago aprobado.| El sistema de Punto de Venta recibe la información de un pago aprobado. | Verifica recepción de [notificaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn/introduction). |
 | **Pago rechazado**. El usuario realiza un pago rechazado.| El sistema de Punto de Venta recibe la información de un pago rechazado y continua esperando el pago de la orden.| El `status` de la `merchant_order` debe ser **opened**. |
 | **Segundo intento de pago**. El usuario realiza primero un pago rechazado y después un pago aprobado.| El sistema de Punto de Venta recibe la información de un pago rechazado y luego un pago aprobado.| No eliminar la orden luego de un pago rechazado. |
-| **Devolución de pago**. Se hace una devolución de un pago desde el Punto de Venta.| En la cuenta del comprador se impacta la devolución.| Ver [devoluciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds/#bookmark_devoluciones). |
+| **Devolución de pago**. Se hace una devolución de un pago desde el Punto de Venta.| En la cuenta del comprador se impacta la devolución.| Ver [devoluciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/sales-processing/cancellations-and-refunds/#bookmark_devoluciones). |
 | **Cancelar orden**. El usuario se arrepiente y decide pagar en efectivo. | Se elimina la orden, y por ende al escanear el QR sólo se muestra la pantalla de espera. | Eliminar la orden de la caja. |
 
 ## Quiero salir a producción

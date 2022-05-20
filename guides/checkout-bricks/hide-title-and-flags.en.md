@@ -1,4 +1,4 @@
-## Hide title and flags
+# Hide title and flags
 
 | Brick  | Card Payment Form  |
 | --- | --- |
@@ -7,3 +7,13 @@
 | Type  | Boolean  |
 | Comments  | When **true**, hides the title line and accepted flags.  |
 
+```javascript
+const settings = {
+   ...,
+   customization: {
+       visual: {
+           hideFormTitle: true
+       }
+   }
+}
+```

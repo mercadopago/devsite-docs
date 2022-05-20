@@ -1,4 +1,4 @@
-## Criar pedido 
+# Criar pedido 
 
 É possível criar um pedido para associá-lo à preferência de pagamento e obter a URL necessária para iniciar o fluxo de pagamento através do SDK abaixo. Para detalhamento dos parâmetros de requisição, acesse a API [Criar pedido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/merchant_orders/_merchant_orders/post).
 
@@ -37,7 +37,7 @@ client.create(createRequest);
 ```
 ]]]
 
-## Pesquisar pedidos
+# Pesquisar pedidos
 
 É possível encontrar todas as informações dos pedidos criados através de filtros específicos ou por um intervalo de datas específico através do SDK abaixo. Para detalhamento dos parâmetros de requisição, acesse a API [Pesquisar pedidos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/merchant_orders/_merchant_orders_search/get).
 
@@ -61,7 +61,7 @@ client.search(searchRequest);
 ```
 ]]]
 
-## Obter pedido
+# Obter pedido
 
 É possível obter todas as informações de pagamento de um produto ou serviço com a identificação do pedido de sua escolha através do SDK abaixo. Para detalhamento dos parâmetros de requisição, acesse a API [Obter pedido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/merchant_orders/_merchant_orders_id/get).
 
@@ -75,7 +75,7 @@ client.get(orderId);
 ```
 ]]]
 
-## Atualizar pedido
+# Atualizar pedido
 
 É possível atualizar os dados de um pagamento indicando o ID do pedido e enviando as informações que atualizar utilizando o SDK abaixo. Para detalhamento dos parâmetros de requisição, acesse a API [Atualizar pedido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/merchant_orders/_merchant_orders_id/put).
 

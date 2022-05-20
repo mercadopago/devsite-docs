@@ -1,4 +1,9 @@
-Para realizar os testes de integração, **é necessário que você tenha pelo menos dois usuários:** um vendedor e um comprador.
+Para realizar os testes de integração, **é necessário que você tenha pelo menos dois usuários**:
+
+| Tipo de usuários de teste | Descrição |
+| --- | --- |
+| Vendedor | É a conta que você usa para **configurar a aplicação e as credenciais para a cobrança**. |
+| Comprador | É a conta que você usa para **testar o processo de compra.**. |
 
 Execute o seguinte curl para gerar um usuário de teste:
 
@@ -24,7 +29,7 @@ A resposta terá estrutura similar a do exemplo abaixo:
 }
 ```
 
-Para mais informações sobre os parâmetros e as respostas da API de usuário de teste, acesse as [Referências da API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference)
+Para mais informações sobre os parâmetros e as respostas da API de usuário de teste, acesse as [Referências da API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/test_user/_users_test_user/post)
 
 > WARNING
 >

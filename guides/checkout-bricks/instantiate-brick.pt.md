@@ -1,17 +1,13 @@
-## Instanciar brick
+# Instanciar brick
 
-Com o container criado, o passo seguinte é instanciar o brick builder, que permitirá gerar o brick. Para instanciar o brick, insira o código abaixo na tag script do projeto.
+Com o container criado e o SDK JS instalado, o próximo passo é instanciar o brick builder, que permitirá gerar o brick. Para instanciar o brick, insira o código abaixo após a etapa anterior.
 
-
-[[[
 ```javascript
-const bricks = mp.bricks();
+const bricksBuilder = mp.bricks();
 ```
-]]]
-
 
 > WARNING
 >
 > Atenção
 >
-> Durante a instanciação do brick, é possível que apareçam diferentes erros. Para detalhamento de cada um deles, veja a seção [Possíveis erros](/developers/pt/docs/checkout-bricks/additional-content/possible-errors).
+> Durante a instanciação do brick, é possível que apareçam diferentes erros. Para detalhamento de cada um deles, veja a seção [Possíveis erros](/developers/pt/docs/checkout-bricks-beta/additional-content/possible-errors).

@@ -1,4 +1,4 @@
-## Crear pago
+# Crear pago
 
 Puede crear y agregar información de pago utilizando el SDK a continuación. Para obtener detalles sobre los parámetros de la solicitud, consulte la API [Crear pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments/post).
 
@@ -61,7 +61,7 @@ client.create(createRequest);
 ```
 ]]]
 
-## Buscar pagos
+# Buscar pagos
 
 Puede buscar los pagos realizados en los últimos doce meses a partir de la fecha de búsqueda utilizando el SDK a continuación. Para detalles de los parámetros de la solicitud, acceda a la API [Buscar Pagos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_search/get).
 
@@ -82,7 +82,7 @@ client.search(searchRequest);
 ```
 ]]]
 
-## Obtener pago
+# Obtener pago
 
 Es posible consultar toda la información de un pago a través del ID de pago utilizando el SDK a continuación. Para detalles de los parámetros de la solicitud, acceda a la API [Obtener Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/get).
 
@@ -96,7 +96,7 @@ client.get(paymentId);
 ```
 ]]]
 
-## Actualizar pago
+# Actualizar pago
 
 Es posible cambiar los datos de un determinado pago enviando los parámetros con la información que desea actualizar a través del SDK a continuación. Para detalles de los parámetros de la solicitud, acceda a la API [Actualizar pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/put)
 

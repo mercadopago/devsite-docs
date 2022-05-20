@@ -36,19 +36,3 @@ Note how the Account Money report is composed in this example to identify the op
 ![Reporte de dinero en cuenta Ejemplos Mercado Pago](/images/manage-account/reports/example-settlement-en.jpg)
 
 The default version will show an extended view of the columns. The final report will have as much detail as possible.
-
-> NEXT_STEP_CARD_EN
->
-> Generate your reports
->
-> Learn the ways to generate a report and follow the steps to set your preferences.
->
-> [Generate your reports](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/account-money/generate)
-
-> NEXT_STEP_CARD_EN
->
-> Glossary
->
-> Know what each term means and the detail of the columns that make up the report.
->
-> [Glossary](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/account-money/glossary)

@@ -1,46 +1,31 @@
-## Select language
+> CLIENT_SIDE
+>
+> h1
+>
+> Select language
 
 You can select the brick language in two different ways: at the time of initialization of the brick or via SDK.
 
-### Select language while initializing
+## Select language while initializing
 
-To select the language when starting the brick, insert the code below into your project paying attention to the `locale` parameter, which must be filled in with the defined language following the following pattern: `es` , `pt-BR` and `en ` for Spanish, Portuguese and English respectively.
+To select the language when starting the brick, insert the code below into your project paying attention to the `locale` parameter, which must be filled in with the defined language following the following pattern: `es` , `pt-BR` and `en` for Spanish, Portuguese and English respectively.
 
-[[[
 ```javascript
 const settings = {
-    initialization: {
-        amount,
-    },
-    callbacks: {
-        onSubmit: (data) => {
-            // callback called when the user clicks on the submit data button
-        },
-        onReady: (error) => {
-            // callback called when the brick is ready
-        },
-        onError: (error) => {
-            // callback called to all error cases related to the Brick
-        },
-    },
-    locale: language,
+    ...,
+    locale: 'en',
 }
-const bricks = mp.bricks();
-const cardPayment = await bricks.create('cardPayment', settings);
 ```
-]]]
 
-### Select language via SDK
+## Select language via SDK
 
 To select the language via SDK, insert the code below into your project and fill the `locale` parameter with the desired language following the pattern shown in the following table.
 
-[[[
 ```javascript
 const mp = new MercadoPago('YOUR_PUBLIC_KEY', {
   locale: 'en-US',
 })
 ```
-]]]
 
 | Language | Country | Value |
 |---|---|---|

@@ -309,7 +309,7 @@ paths:
                 email:
                   type: String
                   example: "jhon@doe.com"
-                  description: Customer's email. 
+                  description: Customer's email. It can only be updated if the customer has not yet associated an email.
                 first_name:
                   type: String
                   example: Jhon

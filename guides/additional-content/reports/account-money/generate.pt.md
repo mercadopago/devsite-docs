@@ -64,19 +64,3 @@ Todas as opções disponíveis na hora de baixar seu relatório.
 > Nota
 >
 > Tenha em mãos o [Glossário do relatório](/developers/pt/guides/additional-content/reports/account-money/glossary) de Dinheiro em conta para consultá-lo quando precisar ou queira conferir algum termo técnico.
-
-> NEXT_STEP_CARD_PT
->
-> Geração a partir do Mercado Pago 
->
-> Baixe seus relatórios de forma manual ou programada na sua conta do Mercado Pago.
->
-> [Geração a partir do Mercado Pago](/developers/pt/guides/additional-content/reports/account-money/panel)
-
-> NEXT_STEP_CARD_PT
->
-> Geração via API
->
-> Crie relatórios de forma programada e manual através de uma integração com o Mercado Pago.
->
-> [Geração via API](/developers/pt/guides/additional-content/reports/account-money/api)
