@@ -37,7 +37,7 @@ Veja [Selecionar idioma](/developers/pt/docs/checkout-bricks-beta/additional-cus
 
 Confira na tabela abaixo uma breve descrição sobre cada um dos bricks que estarão disponíveis para integração.
 | Brick | - | Descrição |
-|---|---|
+|---|---|---|
 | [Card Payment Brick](/developers/pt/docs/checkout-bricks-beta/card-payment-brick) | ![new](checkout-bricks/new-button-pt.png) | Oferece um formulário de pagamento com um layout otimizado e temas diferentes, trazendo todos os campos necessários para se efetuar um pagamento através de cartão de crédito e/ou débito. | 
 | [**Payment Options Brick**](/developers/pt/docs/checkout-bricks-beta/payment-options-brick) | ![soon](checkout-bricks/soon-button-pt.png) | Responsável pela exibição dos meios de pagamento que o comprador pode escolher durante o fluxo de compra.  |
 | [**Personal Data Brick**](/developers/pt/docs/checkout-bricks-beta/personal-data-brick) | ![soon](checkout-bricks/soon-button-pt.png) | Interface para coleta de dados pessoais do comprador. |

@@ -17,6 +17,8 @@ Durante o processo de integração do brick, é possível que diferentes erros r
 
 ## Comunicação com serviços externos (APIs do Mercado Pago)
 
+Durante o processo de integração do brick, é possível que diferentes erros relacionados à **comunicação com as APIs do Mercado Pago** aconteçam.
+
 | Erro | Mensagem para o usuário | Mensagem para o integrador | Crítico? |Código da causa |
 |--- |--- |--- |--- |--- |
 | Impossibilidade de renderização dos Secure Fields dentro do formulário do brick de Card Payment | Ocorreu um erro. | The integration with Secure Fields failed | Sim | fields_setup_failed |
