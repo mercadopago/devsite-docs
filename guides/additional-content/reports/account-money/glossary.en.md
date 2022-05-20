@@ -45,3 +45,12 @@ We know, some terms are technical and you may not be familiar with all of them. 
 | POI_BANK_NAME | Name of the bank that a virtual payment comes from. Allows you to identify the origin of a transaction when you charge with a Mercado Pago QR Code.|
 | CARD_INITIAL_NUMBER | It corresponds to the first digits of the credit or debit card that you used to make the purchase. |
 | OPERATION_TAGS | These are labels to categorize and/or segment different aspects of the transaction, such as the channels used to make a payment. They are identified as:<br>WHATSAPP_PAY: This label indicates that the payment was made via WhatsApp<br>QR: This label indicates that the payment was made with a QR code<br>PO: This label indicates that the payment was made with Point<br>MARKETPLACE: This label indicates that the payment was made directly in Mercado Libre.|
+----[mla]---- | PAYER_NAME* | Name of the person who is making a payment or donation. | ------------
+ ----[mla]---- | PAYER_ID_TYPE* | Type of identification of the person who is making a payment or donation. | ------------
+ ----[mla]---- | PAYER_ID_NUMBER* | Identification number of the person who is making a payment or donation. | ------------
+
+ ----[mla]----
+> INFO
+>
+> (*)This information will only be available for payments made with QR code, transfers or donations.
+------------
