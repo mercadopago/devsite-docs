@@ -44,12 +44,15 @@ If you have any doubts about the technical terms used, check the glossary below.
 ----[mla]---- | PAYER_NAME* | Name of the person who is making a payment or donation. | ------------
  ----[mla]---- | PAYER_ID_TYPE* | Type of identification of the person who is making a payment or donation. | ------------
  ----[mla]---- | PAYER_ID_NUMBER* | Identification number of the person who is making a payment or donation. | ------------
- 
+
  ----[mla]----
 > INFO
 >
 > (*)This information will only be available for payments made with QR code, transfers or donations.
 ------------
+=======
+| POI_WALLET_NAME | Name of the digital wallet that a virtual payment comes from. Allows you to identify the origin of a transaction when you charge with a Mercado Pago QR Code.|
+| POI_BANK_NAME | Name of the bank that a virtual payment comes from. Allows you to identify the origin of a transaction when you charge with a Mercado Pago QR Code.|
 
 ### Next steps
 
