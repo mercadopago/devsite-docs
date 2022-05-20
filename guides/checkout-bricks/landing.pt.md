@@ -20,11 +20,3 @@ bullet_section_with_media:
 available_countries: mla, mlb, mlm, mlu, mlc, mco, mpe
 
 ---
-
-> NEXT_STEP_CARD_PT
->
-> Introdução
->
-> Saiba mais informações sobre as vantagens de utilizar o Checkouts Bricks e conheça os bricks que irão compor o checkout.
->
-> [Introdução](/developers/pt/docs/checkout-bricks-beta/introduction)

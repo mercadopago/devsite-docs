@@ -2,13 +2,13 @@
 
 Para configurar la integración de los bricks, debe seguir los pasos a continuación:
 
-1. [Crear container](/developers/es/docs/checkout-bricks-beta/integration/configure-integration#bookmark_crear_container)
-2. [Incluir y configurar la librería MercadoPago.js](/developers/es/docs/checkout-bricks-beta/integration/configure-integration#bookmark_incluir_y_configurar_la_librería_mercadopago.js)
-3. [Instanciar brick](/developers/es/docs/checkout-bricks-beta/integration/configure-integration#bookmark_instanciar_brick)
-4. [Renderizar brick](h/developers/es/docs/checkout-bricks-beta/integration/configure-integration#bookmark_renderizar_brick)
-5. [Instalar la SDK de Mercado Pago](/developers/es/docs/checkout-bricks-beta/integration/configure-integration#bookmark_instalar_la_sdk_de_mercado_pago)
+1. [Crear container](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/checkout-bricks-beta/integration/configure-integration#bookmark_crear_container)
+2. [Incluir y configurar la librería MercadoPago.js](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/checkout-bricks-beta/integration/configure-integration#bookmark_incluir_y_configurar_la_librería_mercadopago.js)
+3. [Instanciar brick](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/checkout-bricks-beta/integration/configure-integration#bookmark_instanciar_brick)
+4. [Renderizar brick](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/checkout-bricks-beta/integration/configure-integration#bookmark_renderizar_brick)
+5. [Instalar la SDK de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/checkout-bricks-beta/integration/configure-integration#bookmark_instalar_la_sdk_de_mercado_pago)
 
-Los pasos se realizan en el backend o frontend. Las pills **Client-Side** y **Server-Side** ubicadas inmediatamente al lado del título lo ayudan a identificar qué paso se realiza en qué instancia.
+> Los pasos se realizan en el backend o frontend. Las pills **Client-Side** y **Server-Side** ubicadas inmediatamente al lado del título lo ayudan a identificar qué paso se realiza en qué instancia.
 
 Y, para ayudar, hemos preparado un completo [ejemplo de código](developers/es/docs/checkout-bricks-beta/integration/code-example#bookmark_configurar_la_integración) que puede usar como modelo.
 

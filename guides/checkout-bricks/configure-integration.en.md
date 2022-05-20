@@ -2,13 +2,13 @@
 
 To configure brick integration you need to follow the steps below:
 
-1. [Create container](/developers/en/docs/checkout-bricks-beta/integration/configure-integration#bookmark_create_container)
-2. [Include and configure MercadoPago.js library](/developers/en/docs/checkout-bricks-beta/integration/configure-integration#bookmark_include_and_configure_mercadopago.js_library)
-3. [Instantiate brick](/developers/en/docs/checkout-bricks-beta/integration/configure-integration#bookmark_instantiate_brick)
-4. [Render brick](h/developers/en/docs/checkout-bricks-beta/integration/configure-integration#bookmark_render_brick)
-5. [Install Mercado Pago SDK](/developers/en/docs/checkout-bricks-beta/integration/configure-integration#bookmark_install_mercado_pago_sdk)
+1. [Create container](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/checkout-bricks-beta/integration/configure-integration#bookmark_create_container)
+2. [Include and configure MercadoPago.js library](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/checkout-bricks-beta/integration/configure-integration#bookmark_include_and_configure_mercadopago.js_library)
+3. [Instantiate brick](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/checkout-bricks-beta/integration/configure-integration#bookmark_instantiate_brick)
+4. [Render brick](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/checkout-bricks-beta/integration/configure-integration#bookmark_render_brick)
+5. [Install Mercado Pago SDK](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/checkout-bricks-beta/integration/configure-integration#bookmark_install_mercado_pago_sdk)
 
-The steps are performed on the backend or frontend. The **Client-Side** and **Server-Side** pills located immediately next to the title help you to identify which step is performed in which instance.
+> The steps are performed on the backend or frontend. The **Client-Side** and **Server-Side** pills located immediately next to the title help you to identify which step is performed in which instance.
 
 And, to help, we have prepared a complete [code example](/developers/en/docs/checkout-bricks-beta/integration/code-example#bookmark_configure_the_integration) that you can use as a template.
 

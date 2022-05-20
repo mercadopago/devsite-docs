@@ -1,8 +1,14 @@
-Veja na tabela abaixo uma breve descrição sobre cada um dos bricks que estarão disponíveis para integração e, em seguida, conheça as principais vantagens de integrar o checkout.
+# Introdução
 
---- mini_landing_separator ---
+A partir da integração simplificada com estruturas configuráveis do Checkout Bricks, você poderá [definir o tema](/developers/pt/docs/checkout-bricks-beta/additional-customization/set-theme) que possuir mais características que se adequem melhor ao visual da loja. 
 
->>>> Bricks <<<<
+Oa bricks também possuem capacidades responsivas no que tange o tamanho do espaço em tela, sempre ocupando o espaço que lhe foi definido e sendo responsivos quando este espaço sofrer alterações de visualização durante seu uso. 
+
+A seleção do idioma em que os bricks são instanciados/renderizados poderá ser definida para **português**, **inglês** e **espanhol**. Veja [Selecionar idioma](/developers/pt/docs/checkout-bricks-beta/additional-customization/select-language) para instruções de como selecionar o idioma do brick.
+
+![themes](checkout-bricks/themes-paymentcard-pt.png)
+
+Veja na tabela abaixo uma breve descrição sobre cada um dos bricks que estarão disponíveis para integração.
 
 | Brick | Descrição |
 |---|---|
@@ -13,34 +19,6 @@ Veja na tabela abaixo uma breve descrição sobre cada um dos bricks que estarã
 | [**Shipping Brick**](/developers/pt/docs/checkout-bricks-beta/shipping-brick) <br/> ![soon](checkout-bricks/soon-button-pt.png) | Responsável pela coleta dos dados necessários para envio de produtos físicos. | 
 | [**Summary Brick**](/developers/pt/docs/checkout-bricks-beta/summary-brick) <br/> ![soon](checkout-bricks/soon-button-pt.png) | Permite que o integrador associe um componente do resumo da compra em seu site. | 
 | [**Wallet Brick**](/developers/pt/docs/checkout-bricks-beta/wallet-brick) <br/> ![soon](checkout-bricks/soon-button-pt.png) | Permite associar a carteira digital do Mercado Pago diretamente ao ----[mlb]---- Checkout Transparente. ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API. ------------ | 
-
---- mini_landing_separator ---
-
->>>> Vantagens <<<< 
-
----
-bullet_section_with_media: 
- - title: Idiomas
- - type: normal
- - message: Os bricks podem ser instanciados/renderizados em 3 idiomas, sendo: português, inglês e espanhol. Veja [Selecionar idioma](/developers/pt/docs/checkout-bricks-beta/additional-customization/select-language) para instruções de como selecionar o idioma do brick.
- - image:/checkout-bricks/cho-bricks-landing-v3.png
----
-
----
-bullet_section_with_media: 
- - title: Responsividade
- - type: reversed
- - message: Os bricks possui capacidades responsivas no que tange o tamanho do espaço em tela. O brick vai sempre ocupar o espaço que lhe foi definido e será responsivo quando este espaço sofrer alterações de visualização durante seu uso. 
- - image:/checkout-bricks/responsive-theme-pt.gif
----
-
----
-bullet_section_with_media: 
- - title: Temas
- - type: normal
- - message: Os bricks podem ser instanciados/renderizados com diferentes temas e características que podem se adequar melhor ao visual da loja. As características de cada um dos temas disponíveis estão detalhadas abaixo. Veja [Definir tema](/developers/pt/docs/checkout-bricks-beta/additional-customization/set-theme) para instruções de como alterar o tema do brick).
- - image:/checkout-bricks/themes-paymentcard-pt.png
----
 
 > PREV_STEP_CARD_PT
 >
