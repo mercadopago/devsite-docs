@@ -7,3 +7,19 @@ This brick, in addition to containing the fields to collect the personal data of
 In addition to collecting the necessary fields to make the payment, this component also helps the user to complete the screen with alerts for incomplete fields and possible input errors. See below the main features of this brick.
 
 ![card payment brick](checkout-bricks/card-payment.png)
+ 
+> PREV_STEP_CARD_EN
+>
+> Introduction
+>
+> Learn more about Checkout Bricks, a UI (User Interface) component library that aims to enable client-side integration.
+>
+> [Landing](/developers/en/docs/checkout-bricks-beta/landing)
+ 
+> NEXT_STEP_CARD_EN
+>
+> Languages
+>
+> Check the available languages to instantiate/render Card Payment Brick in.
+>
+> [Languages](/developers/en/docs/checkout-bricks-beta/characteristics/languages)

@@ -30,6 +30,6 @@ const settings = {
 >
 > Alterar textos
 >
-> Caso deseje, veja como alterar os textos do layout escolhido no Card Payment Brick
+> Caso deseje, veja como alterar os textos do layout escolhido no Card Payment Brick.
 >
 > [Alterar textos](/developers/pt/docs/checkout-bricks-beta/additional-customization/modify-texts)

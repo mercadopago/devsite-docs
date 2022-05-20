@@ -21,3 +21,19 @@ const settings = {
    ...
 }
 ```
+
+> PREV_STEP_CARD_ES
+>
+> Iniciar Brick con email
+>
+> Consulta cómo iniciar Card Payment Brick con un email, si lo deseas.
+>
+> [Iniciar Brick con email](/developers/es/docs/checkout-bricks-beta/additional-customization/initiate-brick-email)
+
+> NEXT_STEP_CARD_ES
+>
+> Configurar la cantidad máxima y mínima de cuotas
+>
+> Si lo deseas, puedes configurar la cantidad máxima y mínima de cuotas. Aprende cómo.
+>
+> [Configurar cantidad máxima y mínima de cuotas](/developers/es/docs/checkout-bricks-beta/additional-customization/max-and-min-installments)

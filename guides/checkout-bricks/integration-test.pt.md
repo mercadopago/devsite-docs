@@ -30,16 +30,16 @@ Inicie sua integração configurada com as credenciais do seu usuário de teste 
 
 > PREV_STEP_CARD_PT
 >
-> Exemplo de código
+> Enviar pagamento ao Mercado Pago
 >
-> Para facilitar e otimizar o seu processo de integração, veja um exemplo completo integração com o Checkout Bricks.
+> Após configurar a integração, veja como enviar o pagamento ao Mercado Pago.
 >
-> [Exemplo de código](/developers/pt/docs/checkout-bricks-beta/code-example)
+> [Enviar pagamento ao Mercado Pago](/developers/pt/docs/checkout-bricks-beta/integration/payment-submission)
 
 > NEXT_STEP_CARD_PT
 >
-> Definir tema 
+> Exemplo de código
 >
-> Caso deseje, veja como selecionar outro tema ao instanciar/renderizar o Card Payment Brick.
+> Para facilitar e otimizar o seu processo de integração, veja um exemplo completo da integração com o Checkout Bricks.
 >
-> [Definir tema](/developers/pt/docs/checkout-bricks-beta/integration/code-example)
+> [Exemplo de código](/developers/pt/docs/checkout-bricks-beta/integration/code-example)

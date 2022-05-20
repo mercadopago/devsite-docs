@@ -23,18 +23,18 @@ The Card Payment Brick layout is based on the best UX practices, so that it is p
 | Buyer’s email input field <br><br> Property: cardholderEmail  | **Value:** N/A <br> **Label:** Email <br> **Placeholder:** joaosilva@email.com <br> **Type:** string <br> **Formato:** conventional email format (example@email.com) <br> **Max. characters:** X  | Mandatory <br> customizable (label, placeholder) <br><br> *If the data was previously provided and saved, this element becomes optional.  |
 | Payment button <br><br> Property: formSubmit  | **Value:** [imagen] Pay <br> **Label:** N/A <br> **Placeholder:** N/A <br> **Type:** text <br> **callback:** onSubmit <br> **function**: promise(cardFormData)  | Optional <br> Concealable and customizable <br><br> *The function receives the data from the form, including the card token, and presents a loading animation.  |
 
-> PREV_STEP_CARD_PT
+> PREV_STEP_CARD_EN
 >
-> Introdução
+> Languages
 >
-> Conheça como funciona o Mercado Pago Delivery.
+> Check the available languages to instantiate/render Card Payment Brick in.
 >
-> [Introdução](/developers/pt/docs/mp-delivery/landing)
+> [Languages](/developers/en/docs/checkout-bricks-beta/characteristics/languages)
 
-> NEXT_STEP_CARD_PT
+> NEXT_STEP_CARD_EN
 >
-> Configuração da integração
+> Responsiveness
 >
-> Saiba como configurar a integração com o Mercado Pago Delivery.
+> See more information about Card Payment Brick's responsiveness.
 >
-> [Configuração da integração](/developers/pt/docs/mp-delivery/integration-configuration)
+> [Responsiveness](/developers/en/docs/checkout-bricks-beta/characteristics/responsiviness)

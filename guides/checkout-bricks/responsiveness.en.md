@@ -8,4 +8,20 @@ The Brick has responsive capabilities in terms of the size within the screen. Th
 >
 > Attention
 >
-> The Brick breaking point for small devices is 480px.
+> The Brick breaking point for small devices is 480px. 
+
+> PREV_STEP_CARD_EN
+>
+> Layout
+>
+> Check the Card Payment Brick's components.
+>
+> [Layout](/developers/en/docs/checkout-bricks-beta/characteristics/layout)
+
+> NEXT_STEP_CARD_EN
+>
+> Themes
+>
+> See more information about the available themes to instantiate/render Card Payment Brick in.
+>
+> [Themes](/developers/en/docs/checkout-bricks-beta/characteristics/themes)

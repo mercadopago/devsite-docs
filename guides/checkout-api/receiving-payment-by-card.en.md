@@ -8,7 +8,7 @@ Use our [sample projects](#bookmark_sample_projects) for a complete integration.
 
 ![API-integration-flowchart](/images/api/api-integration-flowchart-cardform-en.png)
 
-> If you want to make a customized payment flow, we share all the [methods available for advanced integration](/developers/en/docs/online-payments/checkout-api/receiving-payment-by-card-core-methods-v2).
+> If you want to make a customized payment flow, we share all the [methods available for advanced integration](/developers/en/docs/online-payments/checkout-api/receiving-payment-by-card-core-methods). 
 
 <br>
 
