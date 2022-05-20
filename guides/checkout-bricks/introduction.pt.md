@@ -5,6 +5,9 @@ Checkout Bricks viabiliza uma integração client-side de forma modular por meio
 * [Responsividade](https://omega.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/checkout-bricks-beta/introduction#bookmark_responsividade)
 * [Temas](https://omega.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/checkout-bricks-beta/introduction#bookmark_temas)
 * [Idiomas](https://omega.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/checkout-bricks-beta/introduction#bookmark_idiomas)
+* [Idiomas](https://www.omega.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/checkout-bricks-beta/introduction#bookmark_idiomas)
+* [Idiomas](/developers/pt/docs/checkout-bricks-beta/introduction#bookmark_idiomas)
+* [Idiomas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/checkout-bricks-beta/introduction#bookmark_idiomas)
 
 ## Responsividade
 
@@ -35,7 +38,6 @@ Veja [Selecionar idioma](/developers/pt/docs/checkout-bricks-beta/additional-cus
 >>>> Bricks <<<<
 
 Confira na tabela abaixo uma breve descrição sobre cada um dos bricks que estarão disponíveis para integração.
-
 | Brick | Descrição |
 |---|---|
 | [Card Payment Brick](/developers/pt/docs/checkout-bricks-beta/card-payment-brick) <br/> ![new](checkout-bricks/new-button-pt.png) | Oferece um formulário de pagamento com um layout otimizado e temas diferentes, trazendo todos os campos necessários para se efetuar um pagamento através de cartão de crédito e/ou débito. | 

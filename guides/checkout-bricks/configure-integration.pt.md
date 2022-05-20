@@ -2,8 +2,8 @@
 
 Para configurar a integração dos bricks você precisa seguir os passos abaixo:
 
-1. [Criar container](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/checkout-bricks-beta/integration/configure-integration#bookmark_criar_container)
-2. [Incluir e configurar a biblioteca MercadoPago.js](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/checkout-bricks-beta/integration/configure-integration#bookmark_incluir_e_configurar_a_biblioteca_mercadopago.js)
+1. [Criar container](https://omega.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/checkout-bricks-beta/integration/configure-integration#bookmark_criar_container)
+2. [Incluir e configurar a biblioteca MercadoPago.js](https://www.omega.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/checkout-bricks-beta/integration/configure-integration#bookmark_incluir_e_configurar_a_biblioteca_mercadopago.js)
 3. [Instanciar brick](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/checkout-bricks-beta/integration/configure-integration#bookmark_instanciar_brick)
 4. [Renderizar brick](/developers/pt/docs/checkout-bricks-beta/integration/configure-integration#bookmark_renderizar_brick)
 5. [Instalar o SDK do Mercado Pago](/developers/pt/docs/checkout-bricks-beta/integration/configure-integration#bookmark_instalar_o_sdk_do_mercado_pago)
