@@ -177,7 +177,7 @@ function createSelectOptions(elem, options, labelsAndKeys = { label : "name", va
 
 #### Obtener método de pago de la tarjeta
 
-Valida los datos de tus clientes mientras los completan para evitar errores y que puedas ofrecer correctamente las cuotas disponibles. Usa el siguiente código de ejemplo para identificar el medio de pago con los primeros 6 dígitos de la tarjeta.
+Valida los datos de tus clientes mientras los completan para evitar errores y que puedas ofrecer correctamente las cuotas disponibles. Usa el siguiente código de ejemplo para identificar el medio de pago con los primeros 8 dígitos de la tarjeta.
 
 ```javascript
 function clearHTMLSelectChildrenFrom(element) {

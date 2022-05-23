@@ -188,15 +188,15 @@ window.Mercadopago.getIdentificationTypes();
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtenha o método de pagamento do cartão
 
-Valide os dados dos seus clientes enquanto são preenchidos para evitar erros e oferecer corretamente as parcelas disponíveis. Use o seguinte código de exemplo para identificar o meio de pagamento com os primeiros 6 dígitos do cartão.
+Valide os dados dos seus clientes enquanto são preenchidos para evitar erros e oferecer corretamente as parcelas disponíveis. Use o seguinte código de exemplo para identificar o meio de pagamento com os primeiros 8 dígitos do cartão.
 
 ```javascript
 document.getElementById('cardNumber').addEventListener('change', guessPaymentMethod);
 
 function guessPaymentMethod(event) {
    let cardnumber = document.getElementById("cardNumber").value;
-   if (cardnumber.length >= 6) {
-       let bin = cardnumber.substring(0,6);
+   if (cardnumber.length >= 8) {
+       let bin = cardnumber.substring(0,8);
        window.Mercadopago.getPaymentMethod({
            "bin": bin
        }, setPaymentMethod);
