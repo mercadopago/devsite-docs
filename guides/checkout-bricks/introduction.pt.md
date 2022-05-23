@@ -2,11 +2,11 @@
 
 Checkout Bricks viabiliza uma integração client-side de forma modular por meio de estruturas configuráveis, seguras e com integração simplificada e unificada. Todos os bricks possuem fluxos de controle do componente de UI e validação dos dados, o que faz com que o processo de integração ocorra a partir de configurações iniciais, métodos e callbacks utilizados por cada brick além de possuírem as seguintes características básicas:
 
-* [Responsividade](https://omega.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/checkout-bricks-beta/introduction#bookmark_responsividade)
-* [Temas](https://omega.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/checkout-bricks-beta/introduction#bookmark_temas)
-* [Idiomas](https://omega.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/checkout-bricks-beta/introduction#bookmark_idiomas)
-* [Idiomas](https://www.omega.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/checkout-bricks-beta/introduction#bookmark_idiomas)
-* [Idiomas](/developers/pt/docs/checkout-bricks-beta/introduction#bookmark_idiomas)
+* [Responsividade](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/checkout-bricks-beta/introduction#bookmark_responsividade)
+* [Temas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/checkout-bricks-beta/introduction#bookmark_temas)
+* [Idiomas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/checkout-bricks-beta/introduction#bookmark_idiomas)
+* [Idiomas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/checkout-bricks-beta/introduction#bookmark_idiomas)
+* [Idiomas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/checkout-bricks-beta/introduction#bookmark_idiomas)
 * [Idiomas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/checkout-bricks-beta/introduction#bookmark_idiomas)
 
 ## Responsividade
