@@ -176,7 +176,7 @@ function createSelectOptions(elem, options, labelsAndKeys = { label : "name", va
 
 #### Get card payment method
 
-Avoid mistakes and offer the correct available installments by validating your customers' data as they fill it out. Use the code in the following example to identify payment method with the first 6 digits of the card.
+Avoid mistakes and offer the correct available installments by validating your customers' data as they fill it out. Use the code in the following example to identify payment method with the first 8 digits of the card.
 
 ```javascript
 function clearHTMLSelectChildrenFrom(element) {

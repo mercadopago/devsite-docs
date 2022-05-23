@@ -177,7 +177,7 @@ function createSelectOptions(elem, options, labelsAndKeys = { label : "name", va
 
 #### Obtenha o meio de pagamento do cartão
 
-Valide os dados dos seus clientes enquanto estes são preenchidos para evitar erros e oferecer corretamente as parcelas disponíveis. Use o seguinte código de exemplo para identificar o meio de pagamento com os primeiros 6 dígitos do cartão.
+Valide os dados dos seus clientes enquanto estes são preenchidos para evitar erros e oferecer corretamente as parcelas disponíveis. Use o seguinte código de exemplo para identificar o meio de pagamento com os primeiros 8 dígitos do cartão.
 
 ```javascript
 function clearHTMLSelectChildrenFrom(element) {

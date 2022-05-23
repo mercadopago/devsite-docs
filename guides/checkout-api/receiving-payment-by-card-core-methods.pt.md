@@ -177,7 +177,7 @@ function createSelectOptions(elem, options, labelsAndKeys = { label : "name", va
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtenha o método de pagamento do cartão
 
-Valide os dados dos seus clientes enquanto são preenchidos para evitar erros e oferecer corretamente as parcelas disponíveis. Use o seguinte código de exemplo para identificar o meio de pagamento com os primeiros 6 dígitos do cartão.
+Valide os dados dos seus clientes enquanto são preenchidos para evitar erros e oferecer corretamente as parcelas disponíveis. Use o seguinte código de exemplo para identificar o meio de pagamento com os primeiros 8 dígitos do cartão.
 
 ```javascript
 // Step #getPaymentMethods
@@ -195,15 +195,15 @@ cardNumberElement.addEventListener('keyup', async () => {
        const installmentsElement = document.getElementById('form-checkout__installments');
        let cardNumber = cardNumberElement.value;
 
-       if (cardNumber.length < 6 && paymentMethodElement.value) {
+       if (cardNumber.length < 8 && paymentMethodElement.value) {
            clearHTMLSelectChildrenFrom(issuerElement);
            clearHTMLSelectChildrenFrom(installmentsElement);
            paymentMethodElement.value = "";
            return
        }
 
-       if (cardNumber.length >= 6 && !paymentMethodElement.value) {
-           let bin = cardNumber.substring(0,6);
+       if (cardNumber.length >= 8 && !paymentMethodElement.value) {
+           let bin = cardNumber.substring(0,8);
            const paymentMethods = await mp.getPaymentMethods({'bin': bin});
 
            const { id: paymentMethodId, additional_info_needed, issuer } = paymentMethods.results[0];
@@ -241,7 +241,7 @@ const getIssuers = async () => {
        const paymentMethodId = document.getElementById('paymentMethodId').value;
        const issuerElement = document.getElementById('form-checkout__issuer');
 
-       const issuers = await mp.getIssuers({paymentMethodId, bin: cardNumber.slice(0,6)});
+       const issuers = await mp.getIssuers({paymentMethodId, bin: cardNumber.slice(0,8)});
 
        createSelectOptions(issuerElement, issuers);
 
@@ -265,7 +265,7 @@ const getInstallments = async () => {
 
        const installments = await mp.getInstallments({
            amount: document.getElementById('transactionAmount').value,
-           bin: cardNumber.slice(0,6),
+           bin: cardNumber.slice(0,8),
            paymentTypeId: 'credit_card'
        });
 
