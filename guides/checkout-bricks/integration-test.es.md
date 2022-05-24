@@ -14,11 +14,11 @@
 >
 > Prueba el flujo de pago
 
-## 1. Configura la integración con los datos de tu usuario vendedor
+## Configura la integración con los datos de tu usuario vendedor
 
 Configura la [public key de producción]([FAKER][CREDENTIALS][URL]) de tu **usuario de prueba vendedor** en el frontend de tu aplicación y el [access token de producción]([FAKER][CREDENTIALS][URL]) en el backend.
 
-## 2. Realiza un pago con tu usuario comprador
+## Realiza un pago con tu usuario comprador
 
 ### Pruebas con tarjeta de crédito
 

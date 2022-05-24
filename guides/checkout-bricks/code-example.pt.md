@@ -6,7 +6,7 @@ Para facilitar e otimizar o seu processo de integração, veja abaixo um exemplo
 >
 > h2
 >
-> Configuração da integração
+> Configurar a integração
 
 ```html
 <html>

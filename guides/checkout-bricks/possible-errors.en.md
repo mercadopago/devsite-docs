@@ -1,4 +1,8 @@
-# Variables passed by the integrator
+# Possible erros
+
+Below you will find lists of errors that may occur during brick integration. Whether they are related to [sending variables]() or [communication with external services]() (Mercado Pago APIs).
+
+## Variables passed by the integrator
 
 During the Brick integration process, it is possible that **when the Brick is instantiated**, different errors related to sending variables may be shown to the integrator. These errors will be shown through a log in the browser console (the buyer does not receive any message).
 

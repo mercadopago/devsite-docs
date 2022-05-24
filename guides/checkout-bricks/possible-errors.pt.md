@@ -1,4 +1,8 @@
-# Variáveis passadas pelo integrador 
+# Possíveis erros
+
+Abaixo você encontrará listas de erros que podem ocorrer durante a integração dos bricks. Sejam eles relacionados ao [envio das variáveis]() ou à [comunicação com serviços externos]() (APIs Mercado Pago).
+
+## Variáveis passadas pelo integrador 
 
 Durante o processo de integração do brick, é possível que diferentes erros relacionados ao envio das variáveis sejam exibidos ao integrador **no momento de instanciar o Brick**. Esses erros serão mostrados através de um log no console do navegador (o comprador não recebe qualquer mensagem).
 
@@ -12,6 +16,8 @@ Durante o processo de integração do brick, é possível que diferentes erros r
 | Erro genérico ocorrido durante a inicialização do brick, geralmente alguma validação que falhou por causa de um valor enviado pelo integrador | [Card Payment Brick error] Brick incorrectly initialized: {error}|incorrect_initialization |
 
 ## Comunicação com serviços externos (APIs do Mercado Pago)
+
+Durante o processo de integração do brick, é possível que diferentes erros relacionados à **comunicação com as APIs do Mercado Pago** aconteçam.
 
 | Erro | Mensagem para o usuário | Mensagem para o integrador | Crítico? |Código da causa |
 |--- |--- |--- |--- |--- |
