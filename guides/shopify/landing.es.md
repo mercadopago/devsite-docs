@@ -2,7 +2,7 @@
 content_section_with_media: 
  - title: Shopify
  - message: Shopify es una plataforma de comercio electrónico que ofrece todas las funciones que necesitas para vender online.
- - media_image: /shopify/mini-landing-3.png
+ - media_image: /shopify/mini-landing-5.png
 ---
 
 --- mini_landing_separator ---
