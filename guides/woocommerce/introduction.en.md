@@ -4,6 +4,12 @@
 
 For more information about the benefits, taxes, terms, and types of checkout available, access the [WooCommerce with Mercado Pago page](https://www.mercadopago.com.br/ferramentas-para-vender/link-de-pagamento-plugins-checkout/plugins/vender-woocommerce?utm_experiment=optimize&matt_tool=10047855&matt_word=MLB_MP_G_AO_OP_COW_SEARCH_SELL_TXS_Checkout-WooCommerce-Branded&gclid=Cj0KCQjw6s2IBhCnARIsAP8RfAjJHJVBE0is6oJv5K3_v9qiv44mYs52j7TlFtAMe2AVWKoJ-DAga_4aAuH7EALw_wcB).
 
+> WARNING 
+> 
+> Keep your plugin updated so you don't lose sales
+> 
+> In October 2022, versions of the Mercado Pago Plugin prior to 4.5.0 will be discontinued and will stop working. Além disso, in April 2022, the credit cards banners will apply international changes in transactions. <b>Keep your store always updated with the most recent version.</b>
+
 In this documentation, we will detail all the necessary steps to integrate Mercado Pago with WooCommerce. 
 
 To complete the integration, follow the steps below, but remember to check the prerequisites before starting.

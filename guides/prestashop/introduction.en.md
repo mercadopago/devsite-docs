@@ -9,6 +9,12 @@ With the Mercado Pago plugin you can configure the payment using [Checkout Pro](
 There is also possibility to use the [Custom Checkout](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/introduction), in which the payment it is carried out by credit card without leaving your virtual store and the **Ticket Checkout**, with payments being made in person with cash or boleto.
  
 Another feature of the integration is the possibility to activate binary mode, a feature that allows you to configure the automatic approval or rejection of payments. In addition, users will also be able to pay in your store without being obligatorily registered with Mercado Pago.
+
+> WARNING 
+> 
+> Keep your plugin updated so you don't lose sales
+> 
+> In October 2022, versions of the Mercado Pago Plugin prior to 4.5.0 will be discontinued and will stop working. Além disso, in April 2022, the credit cards banners will apply international changes in transactions. <b>Keep your store always updated with the most recent version.</b>
  
 > All our payment solutions have an open source license. Do you want to participate in the creation? [Suggest improvements and edits on Github](https://github.com/mercadopago/cart-prestashop-7).
  

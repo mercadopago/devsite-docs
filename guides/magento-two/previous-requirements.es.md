@@ -2,6 +2,12 @@
 
 Para utilizar la integración de Mercado Pago con Magento 2 en tu tienda, debes cumplir con los requisitos que te detallamos a continuación.
 
+> WARNING 
+> 
+> Mantené tu plugin actualizado para no perder ventas
+> 
+> Las versiones del plugin anteriores a la 11.111.111.11, ..... dejarán de funcionar el 01/oct/2022. Además, en abril de 2022, las emisoras de tarjeta de crédito aplicaron cambios internacionales a las transacciones. <b>Ver actualizaciones</b>
+
 | Requisitos | Descripción |
 | --- | --- |
 | Versión del Magento | 2.x |
