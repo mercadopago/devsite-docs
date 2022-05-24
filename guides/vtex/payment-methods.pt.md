@@ -60,7 +60,6 @@ Este documento contém os métodos e tipos de pagamento disponíveis para sua in
 |Diners|`diners`|`credit_car`|Diners, MercadoPagoPro e MercadoPagoWallet|
 |Mastercard Débito|`debmaster`|`debit_card`|Mastercard Debit, MercadoPagoPro e MercadoPagoWallet|
 |Visa Débito|`debvisa`|`debit_card`|Visa Electron, MercadoPagoPro e MercadoPagoWallet|
-|Baloto|`baloto`|`ticket`|MercadoPagoPro e MercadoPagoOff|
 |Efecty|`efecty`|`ticket`|MercadoPagoPro e MercadoPagoOff|
 |PSE|`pse`|`bank_transfer`|PSE e MercadoPagoPro|
 
