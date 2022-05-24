@@ -5,21 +5,6 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ## Maio 2022
 
-### 24 de Maio
-
-> CHANGELOG
->
-> Novas colunas no relatório "Liberações"
->
-> NEWS: FEATURE
->
-> PRODUCT: RELATÓRIOS
-As colunas `POI_WALLET_NAME` y `POI_BANK_NAME` permitem que os estabelecimentos que cobram com um código QR do Mercado Pago identifiquem de quais carteiras digitais ou bancos eles receberam seus pagamentos.
-
-Por padrão, essas colunas estão desativadas. Para que elas sejam mostradas no relatório **Liberações**, é necessário atualizar as preferências de configuração pelo painel ou via API.
-
-Acesse a configuração pelo [painel](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports/release/settings) ou [via API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/released-money/api).
-
 ### 16 de maio
 
 > CHANGELOG

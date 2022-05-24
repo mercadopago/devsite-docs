@@ -41,8 +41,6 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 | CARD_INITIAL_NUMBER | Corresponde aos primeiros dígitos do cartão de crédito ou débito utilizado para realizar a compra. |
 | OPERATION_TAGS | São etiquetas para categorizar e/ou segmentar diferentes aspectos da transação, como por exemplo, os canais usados para fazer um pagamento. Eles são identificados como:<br>WHATSAPP_PAY: Esta etiqueta indica que o pagamento foi feito via WhatsApp<br>QR: Esta etiqueta indica que o pagamento foi feito por código QR<br>PO: Esta etiqueta indica que o pagamento foi feito com a Point<br>MARKETPLACE: Esta etiqueta indica que o pagamento foi feito diretamente no Mercado Livre.|
 | ITEM_ID | Identificador do produto vendido. |
-| POI_WALLET_NAME | Nome da carteira digital de onde um pagamento virtual saiu. Permite identificar a origem de uma transação quando você cobra com um código QR do Mercado Pago.|
-| POI_BANK_NAME | Nome da instituição bancária de onde um pagamento virtual saiu. Permite identificar a origem de uma transação quando você cobra com um código QR do Mercado Pago.|
 
 ### Próximos passos
 

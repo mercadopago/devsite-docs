@@ -28,11 +28,3 @@ available_countries: mla, mlb, mlm, mlu, mlc, mco, mpe
 |---|---|---|---|
 | [Card Payment Brick](/developers/es/docs/checkout-bricks-beta/card-payment-brick) ![new](checkout-bricks/new-button-es.png) | [**Regional Payment Brick**](/developers/es/docs/checkout-bricks-beta/regional-payment-brick) ![soon](checkout-bricks/soon-button-es.png) | [**Payment Options Brick**](/developers/es/docs/checkout-bricks-beta/payment-options-brick) ![soon](checkout-bricks/soon-button-es.png) | [**Shipping Brick**](/developers/es/docs/checkout-bricks/shipping-brick) <br> ![soon](checkout-bricks/soon-button-es.png) |
 | [**Personal Data Brick**](/developers/es/docs/checkout-bricks-beta/personal-data-brick) ![soon](checkout-bricks/soon-button-es.png) | **Feedback Brick** <br> ![soon](checkout-bricks/soon-button-es.png) | [**Summary Brick**](/developers/es/docs/checkout-bricks-beta/summary-brick) <br> ![soon](checkout-bricks/soon-button-es.png) | [**Wallet Brick**](/developers/es/docs/checkout-bricks-beta/wallet-brick) <br> ![soon](checkout-bricks/soon-button-es.png) |
-
-> NEXT_STEP_CARD_ES
->
-> Card Payment Brick
->
-> Obtén más información sobre el Card Payment Brick.
->
-> [Card Payment Brick](/developers/es/docs/checkout-bricks-beta/card-payment-brick)

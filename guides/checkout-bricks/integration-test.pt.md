@@ -2,7 +2,7 @@
 >
 > h1
 >
-> Crie usuários de teste
+> Crie usuários de teste 
 
 [TXTSNIPPET][/guides/snippets/test-integration/create-test-users]
 
@@ -14,11 +14,11 @@
 >
 > Teste o fluxo de pagamento
  
-## 1. Configure a integração com os dados do seu usuário vendedor
+## Configure a integração com os dados do seu usuário vendedor
  
 Configure a [public key de produção]([FAKER][CREDENTIALS][URL]) do seu **usuário de teste comprador** no frontend da sua aplicação e o [access token de produção]([FAKER][CREDENTIALS][URL]) do seu **usuário de teste vendedor** no seu backend.
  
-## 2. Realize um pagamento com seu usuário comprador
+## Realize um pagamento com seu usuário comprador
  
 ### Testes com cartão de crédito
  
