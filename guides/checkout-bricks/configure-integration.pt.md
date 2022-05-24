@@ -9,8 +9,8 @@ Para configurar a integração dos bricks você precisa seguir os passos abaixo:
 5. [Instalar o SDK do Mercado Pago](/developers/pt/docs/checkout-bricks-beta/integration/configure-integration#bookmark_instalar_o_sdk_do_mercado_pago)
 
 > Os passos são realizados no back-end ou no front-end. As pills **Client-Side** e **Server-Side** localizadas imediatamentamente ao lado do título te ajudam a identificar qual passo é realizado em qual instância. 
-
-E, para ajudar, preparamos um [exemplo de codigo](/developers/pt/docs/checkout-bricks-beta/integration/code-example#bookmark_configura_o_da_integra%C3%A7%C3%A3o) completo da configuração dos bricks, que você pode usar como modelo.
+> <br/>
+> E, para ajudar, preparamos um [exemplo de codigo](/developers/pt/docs/checkout-bricks-beta/integration/code-example#bookmark_configura_o_da_integra%C3%A7%C3%A3o) completo da configuração dos bricks, que você pode usar como modelo.
 
 > CLIENT_SIDE
 >
