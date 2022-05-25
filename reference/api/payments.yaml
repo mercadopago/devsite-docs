@@ -208,15 +208,6 @@ paths:
                 notification_url:
                   type: string
                   description: Notifications URL available to receive notifications of events related to Payment.
-                order:
-                  type: object
-                  description: Order identifier.
-                  properties:
-                    type:
-                      $ref: '#/components/schemas/order_type'
-                    id:
-                      type: number
-                      description: Id of the associated purchase order.
                 payer:
                   type: object
                   description: Identifies the buyer.
@@ -481,9 +472,6 @@ paths:
                             description: Buyer's address.
                         description: Shipping information.
                     description: Additional information.
-                  order:
-                    type: object
-                    description: List of orders
                   external_reference:
                     type: string
                     example: MP0001
@@ -964,9 +952,6 @@ paths:
                   additional_info:
                     type: object
                     description: Additional information.
-                  order:
-                    type: object
-                    description: List of orders
                   external_reference:
                     type: string
                     format: nullable
@@ -1426,9 +1411,6 @@ paths:
                             description: Buyer's address.
                         description: Shipping information.
                     description: Additional information.
-                  order:
-                    type: object
-                    description: List of orders
                   external_reference:
                     type: string
                     example: MP0001
@@ -1860,9 +1842,6 @@ paths:
                           additional_info:
                             type: object
                             description: Additional information.
-                          order:
-                            type: object
-                            description: List of orders
                           external_reference:
                             type: string
                             format: nullable
@@ -2091,13 +2070,6 @@ components:
         - customer -- Payer is a Customer and belongs to the collector.
         - registered -- The account corresponds to a Mercado Pago registered user.
         - guest -- The payer doesn't have an account.
-    order_type:
-      type: String
-      description: Type of order.
-      example: mercadolibre
-      enum:
-        - mercadolibre -- The order is from Mercado Libre.
-        - mercadopago -- It is a Mercado Pago merchant_order.
     currency_id:
       type: string
       description: ID of the currency used in the payment.
