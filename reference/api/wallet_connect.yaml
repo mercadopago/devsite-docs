@@ -27,7 +27,7 @@ paths:
               properties:
                 return_url:
                   type: string
-                  description: URL that redirects the user back to the seller's site
+                  description: URL that redirects the user back to the sellers site
                   example: https://www.mercadopago.com/
                 external_flow_id:
                   type: string
@@ -142,7 +142,7 @@ paths:
               properties:
                 code:
                   type: string
-                  description: This is the payer token. It's a reference to the Id that represents the authorization of the user
+                  description: This is the payer token. It is a reference to the Id that represents the authorization of the user
                   example: aeecea3e11f2545d1e7790eb6591ff68df74c57930551ed980239f4538a7e530
       responses:
         '200':
@@ -201,9 +201,7 @@ paths:
       tags:
         - $ref: '#/tags/checkout-api'
       summary: Cancel agreement
-      description: Endpoint to cancel an agreement by id. An agreement is an authorization link that the buyer receives
-       to allow the seller to access their Mercado Pago wallet to debit the payment. You'll need to cancel an agreement
-       when the vinculation flow has ended.
+      description: Endpoint to cancel an agreement by id. An agreement is an authorization link that the buyer receives to allow the seller to access their Mercado Pago wallet to debit the payment. You will need to cancel an agreement when the vinculation flow has ended
       parameters:
         - name: agreementId
           in: path
