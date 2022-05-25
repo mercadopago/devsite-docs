@@ -27,7 +27,7 @@ paths:
               properties:
                 return_url:
                   type: string
-                  description: It is the url to which the user must be redirected to return to the seller
+                  description: URL that redirects the user back to the seller's site
                   example: https://www.mercadopago.com/
                 external_flow_id:
                   type: string
@@ -49,7 +49,7 @@ paths:
                       example: Test account
                 agreement_data:
                   type: object
-                  description: Contains data about what is going to do the user and how much it's going to pay
+                  description: Contains information about actions the user must do and the amount to be paid
                   properties:
                     validation_amount:
                       required: false
@@ -59,7 +59,7 @@ paths:
                     description:
                       type: string
                       required: false
-                      description: Description of what is the user trying to do
+                      description: Description of the actions that the user is trying to perform
                       example: Test agreement
       responses:
         '200':
@@ -76,7 +76,7 @@ paths:
                     example: b1234e5678b91c23a456e78912345b67
                   agreement_uri:
                     type: string
-                    description: This is the ur to redirect the user to the wallet vinculation in the frontend
+                    description: This is the URL to redirect the user to the wallet linking in the frontend
                     example: https://beta.mercadopago.com.ar/v1/wallet_agreement/b1234e5678b91c23a456e78912345b67
         '400':
           description: Error
