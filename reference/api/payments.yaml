@@ -221,10 +221,10 @@ paths:
                       description: Identification of the associated payer.
                     email:
                       type: string
-                      description: Email associated to the payer. This value will only return a response when status=approved, status=refunded or status=charged_back.
+                      description: Email associated to the payer. This value will only return a response when status=approved, status=refunded or status=charged_back
                     identification:
                       type: object
-                      description: Personal identification. This value will only return a response when status=approved, status=refunded or status=charged_back.
+                      description: Personal identification. This value will only return a response when status=approved, status=refunded or status=charged_back
                       properties:
                         type:
                           type: string
@@ -376,7 +376,7 @@ paths:
                       email:
                         type: string
                         example: test_user_80507629@testuser.com
-                        description: Email associated to the payer. It will only be returned when status=approved, status=refunded or status=charged_back. 
+                        description: Email associated to the payer. It will only be returned when status=approved, status=refunded or status=charged_back
                       identification:
                         type: object
                         properties:
@@ -388,7 +388,7 @@ paths:
                             type: string
                             example: CPF
                             description: Identification type.
-                        description: Personal identification. It will only be returned when status=approved, status=refunded or status=charged_back.
+                        description: Personal identification. It will only be returned when status=approved, status=refunded or status=charged_back
                       type:
                         $ref: '#/components/schemas/payer_type'
                     description: Payer data - ID (identifying number), email address, identification (type and number of id)
@@ -931,10 +931,10 @@ paths:
                       email:
                         type: string
                         example: afriend@gmail.com
-                        description: Email associated to the payer. It will only be returned when status=approved, status=refunded or status=charged_back.
+                        description: Email associated to the payer. This value will only return a response when status=approved, status=refunded or status=charged_back
                       identification:
                         type: object
-                        description: Personal identification. It will only be returned when status=approved, status=refunded or status=charged_back.
+                        description: Personal identification. It will only be returned when status=approved, status=refunded or status=charged_back
                         properties:
                           type:
                             type: string
@@ -1316,7 +1316,7 @@ paths:
                       email:
                         type: string
                         example: test_user_80507629@testuser.com
-                        description: Email associated to the payer. It will only be returned when status=approved, status=refunded or status=charged_back.
+                        description: Email associated to the payer. It will only be returned when status=approved, status=refunded or status=charged_back
                       identification:
                         type: object
                         properties:
@@ -1328,7 +1328,7 @@ paths:
                             type: string
                             example: CPF
                             description: Identification type.
-                        description: Personal identification. It will only be returned when status=approved, status=refunded or status=charged_back.
+                        description: Personal identification. It will only be returned when status=approved, status=refunded or status=charged_back
                       type:
                         $ref: '#/components/schemas/payer_type'
                   metadata:
@@ -1821,10 +1821,10 @@ paths:
                               email:
                                 type: string
                                 example: afriend@gmail.com
-                                description: Email associated to the payer. It will only be returned when status=approved, status=refunded or status=charged_back.
+                                description: Email associated to the payer. It will only be returned when status=approved, status=refunded or status=charged_back
                               identification:
                                 type: object
-                                description: Personal identification. It will only be returned when status=approved or status=authorized.
+                                description: Personal identification. It will only be returned when status=approved or status=authorized
                                 properties:
                                   type:
                                     type: string
