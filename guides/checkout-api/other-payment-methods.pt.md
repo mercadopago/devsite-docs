@@ -1604,24 +1604,6 @@ Tenha em conta que essa resposta devolverá todos os meios de pagamento. Por iss
         ]
     },
 {
-        "id": "baloto",
-        "name": "Baloto",
-        "payment_type_id": "ticket",
-        "status": "active",
-        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/baloto.gif",
-        "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/baloto.gif",
-        "deferred_capture": "supported",
-        "settings": [],
-        "additional_info_needed": [],
-        "min_allowed_amount": 1500,
-        "max_allowed_amount": 1000000,
-        "accreditation_time": 0,
-        "financial_institutions": [],
-        "processing_modes": [
-            "aggregator"
-        ]
-    },
-{
         "id": "pse",
         "name": "PSE",
         "payment_type_id": "bank_transfer",
