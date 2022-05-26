@@ -117,17 +117,6 @@ Tenha em conta que essa resposta devolverá todos os meios de pagamento. Por iss
         "additional_info_needed": []
     },
     {
-        "id": "redlink",
-        "name": "RedLink",
-        "payment_type_id": "atm",
-        "status": "active",
-        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/2003.gif",
-        "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/2003.gif",
-        "deferred_capture": "does_not_apply",
-        "settings": [],
-        "additional_info_needed": []
-    },
-    {
         "...": "..."
     }
 ]

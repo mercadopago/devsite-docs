@@ -1,9 +1,9 @@
-## Hide payment button
+# Hide payment button
 
 | Brick  | Card Payment Form  |
 | --- | --- |
 | Customization moment  | When rendering the brick  |
-| Property  | customization.hidePaymentButton  |
+| Property  | customization.visual.hidePaymentButton  |
 | Type  | Boolean  |
 | Comments  | When true, the form submit button is not displayed and it becomes necessary to use the getCardFormData function to get the form data (see example below). |
 
@@ -12,14 +12,16 @@ const settings = {
     ...,
     callbacks: {
         onReady: () => {
-            // callback called when the brick is ready
+            // callback chamado quando o Brick estiver pronto
         },
         onError: (error) => { 
-            // callback called to all error cases related to the Brick
+            // callback chamado para todos os casos de erro do Brick
         },
     },
     customization: {
-        hidePaymentButton: true
+        visual: {
+            hidePaymentButton: true
+        }
     }
 }
 ```
@@ -46,3 +48,19 @@ function createPayment(){
         });
 };
 ```
+
+> PREV_STEP_CARD_EN
+>
+> Set up the maximum and minimum number of installments
+>
+> Check how to set up the maximum and minimum number of installments allowed in Card Payment Brick.
+>
+> [Set up the maximum and minimum number of installments](/developers/en/docs/checkout-bricks-beta/additional-customization/max-and-min-installments)
+
+> NEXT_STEP_CARD_EN
+>
+> Hide UI titles and card brands
+>
+> Learn how you can hide the UI titles and the card brands in Card Payment Brick.
+>
+> [Hide UI titles and card brands](/developers/en/docs/checkout-bricks-beta/additional-customization/hide-title-and-flags)

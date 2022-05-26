@@ -1,4 +1,8 @@
-## Set Theme
+> CLIENT_SIDE
+>
+> h1
+>
+> Set theme
 
 By default, the Card Payment Brick is instantiated/rendered with the default theme. However, it is possible to select another theme by setting the "theme" parameter when instantiating/rendering the brick.
 
@@ -11,8 +15,27 @@ If you set the theme on the **instantiation of the brick class**, the theme chan
 ```javascript
 const settings = {
     ...,
-    style: {
-        theme: 'dark' | 'default' | 'bootstrap' | 'flat'
-    }
+    customization: {
+        visual: {
+            style: {
+                theme: 'dark' | 'default' | 'bootstrap' | 'flat'
+           }
+        }
+    }    
 }
 ```
+> PREV_STEP_CARD_EN
+>
+> Code example
+>
+> To simplify and optimize the integration process, view an example of a Checkout Bricks integration.
+>
+> [Send payments to Mercado Pago](/developers/en/docs/checkout-bricks-beta/integration/code-example)
+
+> NEXT_STEP_CARD_EN
+>
+> Change CSS variables
+>
+> Learn how to change the Card Payment Brick CSS variables if you need.
+>
+> [Change CSS variables](/developers/en/docs/checkout-bricks-beta/additional-customization/modify-variables)

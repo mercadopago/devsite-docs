@@ -1,6 +1,5 @@
 # How to generate your Releases report?
 
-
 ## Generating channels
 
 You can generate a Release report from your Mercado Pago account:

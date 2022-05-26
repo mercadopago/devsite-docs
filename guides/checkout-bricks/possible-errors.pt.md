@@ -1,7 +1,10 @@
-## Variáveis passadas pelo integrador
+# Possíveis erros
+
+Abaixo você encontrará listas de erros que podem ocorrer durante a integração dos bricks. Sejam eles relacionados ao [envio das variáveis]() ou à [comunicação com serviços externos]() (APIs Mercado Pago).
+
+## Variáveis passadas pelo integrador 
 
 Durante o processo de integração do brick, é possível que diferentes erros relacionados ao envio das variáveis sejam exibidos ao integrador **no momento de instanciar o Brick**. Esses erros serão mostrados através de um log no console do navegador (o comprador não recebe qualquer mensagem).
-
 
 | Erro | Mensagem | Código da causa |
 |--- |--- |--- |
@@ -12,12 +15,9 @@ Durante o processo de integração do brick, é possível que diferentes erros r
 | Ausência da propriedade locale (idioma desejado) | [Card Payment Brick error] Locale property is required | missing_locale_property |
 | Erro genérico ocorrido durante a inicialização do brick, geralmente alguma validação que falhou por causa de um valor enviado pelo integrador | [Card Payment Brick error] Brick incorrectly initialized: {error}|incorrect_initialization |
 
-<br>
-
-
 ## Comunicação com serviços externos (APIs do Mercado Pago)
 
-<br>
+Durante o processo de integração do brick, é possível que diferentes erros relacionados à **comunicação com as APIs do Mercado Pago** aconteçam.
 
 | Erro | Mensagem para o usuário | Mensagem para o integrador | Crítico? |Código da causa |
 |--- |--- |--- |--- |--- |
@@ -29,3 +29,11 @@ Durante o processo de integração do brick, é possível que diferentes erros r
 | Falha ao buscar bancos emissores do cartão | Ocorreu um erro. Por favor, tente novamente mais tarde. | Failed to get card issuer(s) | Não | get_card_issuers_failed |
 | Falha ao buscar quantidade e valores das parcelas do pagamento baseado no amount enviado pelo integrador | Ocorreu um erro. Por favor, tente novamente mais tarde. | Failed to get payment installments | Não | get_payment_installments_failed |
 | Campos do pagamento incompletos por algum motivo (parcelas, emissor do cartão, payment_method_id) | Ocorreu um erro. Por favor, tente novamente mais tarde. | Será retornada uma das seguintes mensagens de acordo com o tipo de erro: <br> The payment <br> method id is missing <br> The payment installments are missing <br> The card issuer is missing|Não|missing_payment_information |
+
+> PREV_STEP_CARD_PT
+>
+> Selecionar idioma 
+>
+> Caso deseje, saiba como selecionar o idioma do Card Payment Brick.
+>
+> [Selecionar idioma](/developers/pt/docs/checkout-bricks-beta/additional-customization/select-language)

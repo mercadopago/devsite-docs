@@ -162,15 +162,15 @@ window.Mercadopago.getIdentificationTypes();
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get card payment method
 
-Avoid mistakes and offer the correct available installments by validating your customers' data as they fill it out. Use the code in the following example to identify payment method with the first 6 digits of the card.
+Avoid mistakes and offer the correct available installments by validating your customers' data as they fill it out. Use the code in the following example to identify payment method with the first 8 digits of the card.
 
 ```javascript
 document.getElementById('cardNumber').addEventListener('change', guessPaymentMethod);
 
 function guessPaymentMethod(event) {
    let cardnumber = document.getElementById("cardNumber").value;
-   if (cardnumber.length >= 6) {
-       let bin = cardnumber.substring(0,6);
+   if (cardnumber.length >= 8) {
+       let bin = cardnumber.substring(0,8);
        window.Mercadopago.getPaymentMethod({
            "bin": bin
        }, setPaymentMethod);

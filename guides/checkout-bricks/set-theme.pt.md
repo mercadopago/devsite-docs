@@ -1,4 +1,8 @@
-## Definir tema
+> CLIENT_SIDE
+>
+> h1
+>
+> Definir tema 
 
 Por padrão, o Card Payment Brick é instanciado/renderizado com o tema padrão. Contudo, é possível selecionar outro tema definindo o parâmetro "theme" ao instanciar a classe `bricks`.
 
@@ -11,8 +15,28 @@ Se você definir o tema na **instanciação da classe bricks**, a alteração do
 ```javascript
 const settings = {
     ...,
-    style: {
-        theme: 'dark' | 'default' | 'bootstrap' | 'flat'
-    }
+    customization: {
+        visual: {
+            style: {
+                theme: 'dark' | 'default' | 'bootstrap' | 'flat'
+           }
+        }
+    }    
 }
 ```
+
+> PREV_STEP_CARD_PT
+>
+> Exemplo de código
+>
+> Para facilitar e otimizar o seu processo de integração, veja um exemplo completo integração com o Checkout Bricks.
+>
+> [Exemplo de código](/developers/pt/docs/checkout-bricks-beta/integration/code-example)
+
+> NEXT_STEP_CARD_PT
+>
+> Alterar variáveis CSS 
+>
+> Caso deseje, saiba como alterar as variáveis CSS do Card Payment Brick.
+>
+> [Alterar variáveis CSS](/developers/pt/docs/checkout-bricks-beta/additional-customization/modify-variables)

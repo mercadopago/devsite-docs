@@ -1,4 +1,4 @@
-## Initiate Brick with e-mail
+# Initiate Brick with e-mail
 
 | Brick | Card Payment Brick |
 | --- | --- |
@@ -18,3 +18,19 @@ const settings = {
    ...
 }
 ```
+ 
+> PREV_STEP_CARD_EN
+>
+> Change CSS variables
+>
+> Learn how to change the Card Payment Brick CSS variables if you need.
+>
+> [Change CSS variables](/developers/en/docs/checkout-bricks-beta/additional-customization/modify-variables)
+
+> NEXT_STEP_CARD_EN
+>
+> Initiate Brick with identity document
+>
+> If you prefer, check how to initiate Card Payment Brick with an identity document.
+>
+> [Initiate Brick with identity document](/developers/en/docs/checkout-bricks-beta/additional-customization/initiate-brick-document)
