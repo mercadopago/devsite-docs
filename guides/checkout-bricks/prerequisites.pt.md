@@ -1,4 +1,4 @@
-# Pré-requisitos
+# Pré-requisitos 
 
 Para realizar a integração do Checkout Bricks, é preciso atender aos requisitos listados abaixo.
 
