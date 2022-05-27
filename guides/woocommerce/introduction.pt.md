@@ -8,8 +8,8 @@ Para mais informações sobre os benefícios, tarifas, prazos e tipos de checkou
 > 
 > Mantenha seu plugin atualizado para não perder vendas
 > 
-> Em outubro de 2022, versões do Plugin Mercado Pago anteriores a 4.5.0 serão descontinuadas e vão parar de funcionar. Além disso, em abril de 2022, as bandeiras de cartões 
-de crédito aplicaram mudanças internacionais nas transações.</br> <b>Mantenha sua loja sempre atualizada com a versão mais recente.</b>
+> Em outubro de 2022, versões do Plugin Mercado Pago anteriores a 4.5.0 serão descontinuadas e vão parar de funcionar. Além disso, em abril de 2022, as bandeiras de cartões de crédito aplicaram mudanças internacionais nas transações.
+> **Mantenha sua loja sempre atualizada com a versão mais recente.**
 
 Nesta documentação, detalharemos todas as etapas necessárias para realizar a integração do Mercado Pago com o WooCommerce. 
 

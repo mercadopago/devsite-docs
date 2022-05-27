@@ -12,9 +12,10 @@ Another feature of the integration is the possibility to activate binary mode, a
 
 > WARNING 
 > 
-> Keep your plugin updated so you don't lose sales
+> Keep your plugin up to date so that you do not lose sales
 > 
-> In October 2022, versions of the Mercado Pago Plugin prior to 4.5.0 will be discontinued and will stop working. Além disso, in April 2022, the credit cards banners will apply international changes in transactions. <b>Keep your store always updated with the most recent version.</b>
+> As of October 2022, Mercado Pago Plugin versions prior to 4.3.0 will be discontinued and will stop working. Also, in April 2022, credit card companies applied international changes to the transactions. 
+**Keep your store always up to date with the latest version.**
  
 > All our payment solutions have an open source license. Do you want to participate in the creation? [Suggest improvements and edits on Github](https://github.com/mercadopago/cart-prestashop-7).
  
