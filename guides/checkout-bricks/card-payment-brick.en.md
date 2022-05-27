@@ -1,4 +1,4 @@
-# Card payment brick
+# Card payment brick 
 
 Card Payment Brick offers a payment form with an optimized design and different themes, providing all the necessary fields to make a payment with a credit and/or debit card, and includes the necessary mechanisms to automatically receive the necessary data to create the payment in the back end.
 

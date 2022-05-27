@@ -1,4 +1,4 @@
-# Requisitos previos
+# Requisitos previos 
 
 Para realizar la integración de suscripciones, debes cumplir con los requisitos que se enumeran a continuación.
 
