@@ -2,9 +2,9 @@
 
 ----[mlb]----
 
-A primeira fase da integração do Mercado Pago com a Shopify é a instalação do Checkout Pro. Neste modelo de checkout, o cliente é direcionado para uma página do Mercado Pago onde deverá preencher as informações solicitadas e concluir o pagamento.
+A primeira fase da integração do Mercado Pago com a Shopify é a instalação do [Checkout Pro](/developers/pt/guides/checkout-pro/landing). Neste modelo de checkout, o cliente é direcionado para uma página do Mercado Pago onde deverá preencher as informações solicitadas e concluir o pagamento.
 
-Caso você já tenha o Checkout Pro instalado, [clique aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/shopify/checkout-api) e siga os passos para instalação do Checkout Transparente.
+Caso você já tenha o Checkout Pro instalado, [clique aqui](/developers/pt/docs/shopify/checkout-api/installation) e siga os passos para instalação do Checkout Transparente.
 
 > NOTE
 >
@@ -16,7 +16,7 @@ Caso você já tenha o Checkout Pro instalado, [clique aqui](https://www.mercado
 
 ----[mla, mlm, mlu, mpe, mco, mlc]----
 
-Ao instalar o Checkout Pro, seu cliente será direcionado para uma página do Mercado Pago onde deverá preencher as informações solicitadas e realizar o pagamento, ou seja, a transação é processada e concluída fora do ambiente da sua loja.
+Ao instalar o [Checkout Pro](/developers/pt/guides/checkout-pro/landing), seu cliente será direcionado para uma página do Mercado Pago onde deverá preencher as informações solicitadas e realizar o pagamento, ou seja, a transação é processada e concluída fora do ambiente da sua loja.
 
 Para realizar a instalação do Checkout Pro, siga os passos abaixo.
 

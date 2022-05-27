@@ -6,7 +6,7 @@ Para garantir una mejor experiencia de compra y una integración más estrecha c
 2. En **Opciones de formulario**, marque el campo **Nombre de la empresa** como **Obligatorio**.
 3. Vuelva a **Configuración** y haga clic en **Idiomas**.
 4. En la sección **Idioma predeterminado**, haga clic en **Cambiar idioma del tema**.
-5. Elija Portugués y haga clic en Guardar.
+5. Elija Español y haga clic en Guardar.
 6. Todavía en la página de idioma, use la barra de búsqueda y busque la palabra Company.
 7. Reemplace las siguientes entradas **Company label**, **Optional company label**, **Address company blank**, y **Address – Company** con el texto **CPF/CNPJ**.
 8. Haga clic en **Guardar**.

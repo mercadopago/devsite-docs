@@ -1,6 +1,6 @@
 # Checkout Transparente
 
-O Checkout Transparente do Mercado Pago permite que todo o processo de compra aconteça no ambiente da sua loja, sem a necessidade de um redirecionamento para uma página externa para concluir o pagamento.
+O [Checkout Transparente](/developers/pt/guides/checkout-api/introduction) do Mercado Pago permite que todo o processo de compra aconteça no ambiente da sua loja, sem a necessidade de um redirecionamento para uma página externa para concluir o pagamento.
 
 > WARNING
 >
