@@ -16,7 +16,7 @@ Otra característica de la integración es la posibilidad de activar el modo bin
 > 
 > En octubre de 2022, las versiones del Plugin Mercado Pago anteriores a la 4.3.0 dejarán de funcionar. Además, en abril de 2022, las tarjetas de crédito aplicarán cambios internacionales en las transacciones. 
 >
-> **Manten tu tienda siempre actualizada con la versión más reciente.**
+> **Mantén tu tienda siempre actualizada con la versión más reciente.**
  
 > Todas nuestras soluciones de pago tienen una licencia de código abierto. ¿Quieres participar en la creación? [Sugiere mejoras y ediciones en Github](https://github.com/mercadopago/cart-prestashop-7).
  
