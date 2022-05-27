@@ -8,8 +8,9 @@ For more information about the benefits, taxes, terms, and types of checkout ava
 > 
 > Keep your plugin up to date so that you do not lose sales
 > 
-> As of October 2022, Mercado Pago Plugin versions prior to 4.5.0 will be discontinued and will stop working. Also, in April 2022, credit card companies applied international changes to the transactions. 
-**Keep your store always up to date with the latest version.**
+> As of October 2022, Mercado Pago Plugin versions prior to 4.5.0 will be discontinued and will stop working. Also, in April 2022, credit card companies applied international changes to the transactions.  
+>
+> **Keep your store always up to date with the latest version.**
 
 In this documentation, we will detail all the necessary steps to integrate Mercado Pago with WooCommerce. 
 

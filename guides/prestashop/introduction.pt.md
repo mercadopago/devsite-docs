@@ -14,7 +14,8 @@ Uma outra característica da integração é a possibilidade de ativação do mo
 > 
 > Mantenha seu plugin atualizado para não perder vendas
 > 
-> Em outubro de 2022, versões do Plugin Mercado Pago anteriores a 4.3.0 serão descontinuadas e vão parar de funcionar. Além disso, em abril de 2022, as bandeiras de cartões de crédito aplicaram mudanças internacionais nas transações. 
+> Em outubro de 2022, versões do Plugin Mercado Pago anteriores a 4.3.0 serão descontinuadas e vão parar de funcionar. Além disso, em abril de 2022, as bandeiras de cartões de crédito aplicaram mudanças internacionais nas transações.  
+>
 > **Mantenha sua loja sempre atualizada com a versão mais recente.**
  
 > Todas as nossas soluções de pagamento contam com uma licença de código aberto. Quer participar da criação? [Sugira melhorias e edições no Github](https://github.com/mercadopago/cart-prestashop-7).
