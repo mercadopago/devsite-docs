@@ -2,6 +2,14 @@
 
 To use the Mercado Pago integration with Magento 2 in your store, you must meet the requirements detailed below.
 
+> WARNING 
+> 
+> Keep your plugin up to date so that you do not lose sales
+> 
+> As of October 2022, Mercado Pago Plugin versions prior to 3.5.0 will be discontinued and will stop working. Also, in April 2022, credit card companies applied international changes to the transactions.  
+>
+> **Keep your store always up to date with the latest version.**
+
 | Requirement | Description |
 | --- | --- |
 | Magento Version | 2.x |
