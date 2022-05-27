@@ -12,7 +12,7 @@ Otra característica de la integración es la posibilidad de activar el modo bin
 
 > WARNING 
 > 
-> Manten tu plugin actualizado para no perder ventas
+> Mantén tu plugin actualizado para no perder ventas
 > 
 > En octubre del 2022, las versiones del Plugin Mercado Pago anteriores a las 4.3.0 dejarán de funcionar. Además, en abril del 2022, las tarjetas de crédito aplicarán cambios internacionacionales en las transacciones. 
 >
