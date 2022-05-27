@@ -40,4 +40,4 @@ const settings = {
 >
 > Caso deseje, saiba como configurar quantidade máxima e mínima de parcelas aceitas no Card Payment Brick.
 >
-> [Configurar quantidade máxima e mínima de parcelas](/developers/pt/docs/checkout-bricks-beta/additional-customization/max-and-min-installments)
+> [Configurar quantidade máxima e mínima de parcelas](/developers/pt/docs/checkout-bricks-beta/additional-customization/configure-installments)

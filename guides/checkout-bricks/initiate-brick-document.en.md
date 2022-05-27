@@ -40,4 +40,4 @@ const settings = {
 >
 > Check how to set up the maximum and minimum number of installments allowed in Card Payment Brick.
 >
-> [Set up the maximum and minimum number of installments](/developers/en/docs/checkout-bricks-beta/additional-customization/max-and-min-installments)
+> [Set up the maximum and minimum number of installments](/developers/en/docs/checkout-bricks-beta/additional-customization/configure-installments)
