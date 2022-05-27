@@ -1,7 +1,7 @@
 ---
 content_section_with_media: 
  - title: Checkout Bricks
- - message: Checkout Bricks is a library of UI (user interface) components that aims to allow a client-side integration in a modular way through configurable, secure structures and with a simplified and unified integration.
+ - message: Checkout Bricks is a set of UI modules that come front-end ready and optimized for better usability and conversion. Each Brick can be used independently or together, forming the experience of a complete checkout.
  - media_image: /subscriptions/mini-landing-3-pt.png
 ---
 
@@ -9,7 +9,7 @@ content_section_with_media:
 bullet_section_with_media: 
  - title: 
  - type: normal
- - message: The bricks have UI component control flows and data validation, which makes the integration process happen from the initial configurations, methods, and callbacks used by each brick. In addition, the bricks guarantee the security of sensitive data through automatic tokenization, preventing this data from traveling on the server.
+ - message: It offers a transparent payment experience with the possibility of customization according to each store, it is secure since the payment information is processed through Mercado Pago and it has a simpler integration process, minimizing production and development times.
  - image: /checkout-bricks/cho-bricks-landing-v4.png
 ---
 
@@ -19,7 +19,7 @@ bullet_section_with_media:
  - type: reversed
  - message: Know all Checkout Bricks modules and their availability.
  - benefit_title: Card Payment Brick [new]
- - benefit_message: Offers credit and debit card payments with the ability to save card details for future purchases.
+ - benefit_message: Offer credit and debit card payments with the ability to save card details for future purchases.
  - benefit_title: Payment Brick [soon]
  - benefit_message: Offer different payment methods from which your customers can choose.
  - benefit_title: Wallet Brick [soon] 

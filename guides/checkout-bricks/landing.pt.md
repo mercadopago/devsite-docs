@@ -1,7 +1,7 @@
 ---
 content_section_with_media: 
  - title: Checkout Bricks
- - message: O Checkout Bricks é um conjunto de módulos de interface do usuário que vêm prontos para o front-end e são otimizados para uma melhor usabilidade e conversão. Cada Brick pode ser utilizado de forma independente ou em conjunto, formando a experiência de um checkout completo.
+ - message: O Checkout Bricks é um conjunto de módulos de interface do usuário que já vêm prontos para o front-end e são otimizados para uma melhor usabilidade e conversão. Cada Brick pode ser utilizado de forma independente ou em conjunto, formando a experiência de um checkout completo.
  - media_video: https://www.youtube.com/embed/jv9oCydWV78
 ---
 
@@ -9,7 +9,7 @@ content_section_with_media:
 bullet_section_with_media: 
  - title: 
  - type: normal
- - message: Oferece uma experiência de checkout transparente com possibilidade de customização de acordo com cada loja e é seguro pois as informações de pagamento são processadas através do Mercado Pago, possuindo um processo de integração mais simples que minimiza o tempo de produção e desenvolvimento.
+ - message: Oferece uma experiência de checkout transparente com possibilidade de customização de acordo com cada loja e é seguro porque as informações de pagamento são processadas através do Mercado Pago, possuindo um processo de integração mais simples que minimiza o tempo de produção e desenvolvimento.
  - image:/checkout-bricks/cho-bricks-landing-v4.png
 ---
 
