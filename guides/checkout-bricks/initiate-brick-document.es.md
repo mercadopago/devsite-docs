@@ -32,7 +32,7 @@ const settings = {
 >
 > Consulta cómo iniciar Card Payment Brick con un email, si lo deseas.
 >
-> [Iniciar Brick con email](/developers/es/docs/checkout-bricks-beta/additional-customization/initiate-brick-email)
+> [Iniciar Brick con email](/developers/es/docs/checkout-bricks-beta/additional-customization/initiate-brick-with-email)
 
 > NEXT_STEP_CARD_ES
 >
