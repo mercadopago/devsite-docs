@@ -449,6 +449,27 @@ paths:
                             type: string
                             description: An optional field that refeers to a external code that can be used on a point of sale. This external code can be set by the Mercado Pago Delivery API.
                             example: "UNID01"
+                      qr:
+                        type: object
+                        description: Through the information contained in this Object, it is possible to assemble the QR Code that is read through the "Mercado Envios Flex" APP for the continuation of the delivery flow of an order. In this way it is possible to develop a personalized coupon for an order. To test the operation of this QR Code, simply read it through the "Mercado Envios Flex" App.
+                        properties:
+                          id:
+                            type: string
+                            description: ID of the Order.
+                            example: "41382089428"
+                          sender_id:
+                            type: number
+                            description: ID of the Seller.
+                            example: 1068595961
+                          hash_code:
+                            type: string
+                            description: Hash that will be displayed after the order is accepted.
+                            example: "v3Xtt15eewkj3Eu2lZt+cJQgDj3H6AHb04y1cMO4nPI="
+                          security_digit:
+                            type: string
+                            description: Security information code.
+                            example: "0"
+                          
   /proximity-integration/shipments/{shipment_id}/accept:
     put:
       tags:
