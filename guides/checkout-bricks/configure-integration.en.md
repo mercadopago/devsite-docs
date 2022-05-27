@@ -47,7 +47,7 @@ You will need to create a container to define where the brick will be placed on 
 You will need to install the SDK by adding the following in your HTML code:
 
 ```html
-<script src="https://beta-sdk.mercadopago.com/gama/js/v2"></script>
+<script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 
 Next, initialize the SDK by setting your [public key]([FAKER][CREDENTIALS][URL]) using JavaScript code as follows:
@@ -122,7 +122,7 @@ const renderCardPaymentBrick = async (bricksBuilder) => {
       },
     },
   };
-  cardPaymentBrickController = await bricksBuilder.create('cardPayment', 'cardPaymentBrick_container', settings);
+  const cardPaymentBrickController = await bricksBuilder.create('cardPayment', 'cardPaymentBrick_container', settings);
 };
 renderCardPaymentBrick(bricksBuilder);     
 ```

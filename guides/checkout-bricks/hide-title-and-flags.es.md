@@ -1,4 +1,8 @@
-# Ocultar título y banderas
+> CLIENT_SIDE
+>
+> h1
+>
+> Ocultar título y banderas
 
 | Brick  | Card Payment Form  |
 | --- | --- |

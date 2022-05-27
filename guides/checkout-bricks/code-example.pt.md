@@ -308,4 +308,4 @@ curl -X POST \
 >
 > Caso deseje, veja como selecionar outro tema ao instanciar/renderizar o Card Payment Brick.
 >
-> [Definir tema](/developers/pt/docs/checkout-bricks-beta/integration/code-example)
+> [Definir tema](/developers/pt/docs/checkout-bricks-beta/additional-customization/set-theme)

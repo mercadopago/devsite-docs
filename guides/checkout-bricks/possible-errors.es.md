@@ -35,3 +35,11 @@ Durante el proceso de integración del Brick, es posible que **al momento de ins
 > Si lo deseas, puedes seleccionar el idioma de Card Payment Brick. Aprende cómo.
 >
 > [Selecionar idioma](/developers/es/docs/checkout-bricks-beta/additional-customization/select-language)
+
+> NEXT_STEP_CARD_ES
+>
+> GitHub project
+>
+> Obtenga acceso a el link del proyecto funcional y de la documentación técnica.
+>
+> [GitHub project](/developers/es/docs/checkout-bricks-beta/additional-content/github-project)

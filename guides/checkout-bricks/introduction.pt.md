@@ -28,21 +28,6 @@ O Card Payment Brick pode ser instanciado/renderizado em três idiomas diferente
 
 Veja [Selecionar idioma](/developers/pt/docs/checkout-bricks-beta/additional-customization/select-language) para instruções de como selecionar o idioma do brick.
 
---- mini_landing_separator ---
-
->>>> Bricks <<<<
-
-Confira na tabela abaixo uma breve descrição sobre cada um dos bricks que estarão disponíveis para integração.
-| Brick | - | Descrição |
-|---|---|---|
-| [Card Payment Brick](/developers/pt/docs/checkout-bricks-beta/card-payment-brick) | ![new](checkout-bricks/new-button-pt.png) | Oferece um formulário de pagamento com um layout otimizado e temas diferentes, trazendo todos os campos necessários para se efetuar um pagamento através de cartão de crédito e/ou débito. | 
-| [**Payment Options Brick**](/developers/pt/docs/checkout-bricks-beta/payment-options-brick) | ![soon](checkout-bricks/soon-button-pt.png) | Responsável pela exibição dos meios de pagamento que o comprador pode escolher durante o fluxo de compra.  |
-| [**Personal Data Brick**](/developers/pt/docs/checkout-bricks-beta/personal-data-brick) | ![soon](checkout-bricks/soon-button-pt.png) | Interface para coleta de dados pessoais do comprador. |
-| [**Regional Payment Brick**](/developers/pt/docs/checkout-bricks-beta/regional-payment-brick) | ![soon](checkout-bricks/soon-button-pt.png) | Permite a associação de pagamentos locais ao ----[mlb]---- Checkout Transparente. ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API. ------------ |
-| [**Shipping Brick**](/developers/pt/docs/checkout-bricks-beta/shipping-brick) | ![soon](checkout-bricks/soon-button-pt.png) | Responsável pela coleta dos dados necessários para envio de produtos físicos. | 
-| [**Summary Brick**](/developers/pt/docs/checkout-bricks-beta/summary-brick) | ![soon](checkout-bricks/soon-button-pt.png) | Permite que o integrador associe um componente do resumo da compra em seu site. | 
-| [**Wallet Brick**](/developers/pt/docs/checkout-bricks-beta/wallet-brick) | ![soon](checkout-bricks/soon-button-pt.png) | Permite associar a carteira digital do Mercado Pago diretamente ao ----[mlb]---- Checkout Transparente. ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API. ------------ | 
-
 > PREV_STEP_CARD_PT
 >
 > Página inicial
@@ -55,6 +40,6 @@ Confira na tabela abaixo uma breve descrição sobre cada um dos bricks que esta
 >
 > Card Payment Brick
 >
-> Saiba mais informações sobre o Card Payment Brick e suas principais caracterísitcas.
+> Saiba mais informações sobre o Card Payment Brick e suas principais características.
 >
 > [Card Payment Brick](/developers/pt/docs/checkout-bricks-beta/card-payment-brick)

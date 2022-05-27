@@ -1,1 +1,0 @@
-# GitHub project - functional

@@ -1,4 +1,8 @@
-# Ocultar botón de pago
+> CLIENT_SIDE
+>
+> h1
+>
+> Ocultar botón de pago
 
 | Brick  | Card Payment Form  |
 | --- | --- |
@@ -55,7 +59,7 @@ function createPayment(){
 >
 > Si lo deseas, puedes configurar la cantidad máxima y mínima de cuotas. Aprende cómo.
 >
-> [Configurar cantidad máxima y mínima de cuotas](/developers/es/docs/checkout-bricks-beta/additional-customization/max-and-min-installments)
+> [Configurar cantidad máxima y mínima de cuotas](/developers/es/docs/checkout-bricks-beta/additional-customization/configure-installments)
 
 > NEXT_STEP_CARD_ES
 >

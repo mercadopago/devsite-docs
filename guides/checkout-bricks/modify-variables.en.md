@@ -43,4 +43,4 @@ const settings = {
 >
 > Check how to initiate Card Payment Brick with E-mail.
 >
-> [Initiate Brick with E-mail](/developers/en/docs/checkout-bricks-beta/additional-customization/initiate-brick-email)
+> [Initiate Brick with E-mail](/developers/en/docs/checkout-bricks-beta/additional-customization/initiate-brick-with-email)

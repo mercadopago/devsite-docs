@@ -38,4 +38,4 @@ const settings = {
 >
 > Aprende a modificar las variables CSS de Card Payment Brick si así lo deseas.
 >
-> [Modificar variables CSS](/developers/es/docs/checkout-bricks-beta/additional-customization/modify-variables)
+> [Modificar variables CSS](/developers/es/docs/checkout-bricks-beta/additional-customization/modify-css-variables)

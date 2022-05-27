@@ -1,4 +1,8 @@
-# Hide payment button
+> CLIENT_SIDE
+>
+> h1
+>
+> Hide payment button
 
 | Brick  | Card Payment Form  |
 | --- | --- |
@@ -55,7 +59,7 @@ function createPayment(){
 >
 > Check how to set up the maximum and minimum number of installments allowed in Card Payment Brick.
 >
-> [Set up the maximum and minimum number of installments](/developers/en/docs/checkout-bricks-beta/additional-customization/max-and-min-installments)
+> [Set up the maximum and minimum number of installments](/developers/en/docs/checkout-bricks-beta/additional-customization/configure-installments)
 
 > NEXT_STEP_CARD_EN
 >

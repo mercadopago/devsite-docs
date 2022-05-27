@@ -29,7 +29,7 @@ const settings = {
 >
 > Caso deseje, veja como iniciar o Card Payment Brick com documento.
 >
-> [Iniciar Brick com documento](/developers/pt/docs/checkout-bricks-beta/additional-customization/initiate-brick-document)
+> [Iniciar Brick com documento](/developers/pt/docs/checkout-bricks-beta/additional-customization/initiate-brick-with-document)
 
 > NEXT_STEP_CARD_PT
 >

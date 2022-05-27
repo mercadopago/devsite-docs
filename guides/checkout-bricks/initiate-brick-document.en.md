@@ -1,4 +1,8 @@
-# Initiate brick with document
+> CLIENT_SIDE
+>
+> h1
+>
+> Initiate brick with document
 
 | Brick | Card Payment Brick |
 | --- | --- |

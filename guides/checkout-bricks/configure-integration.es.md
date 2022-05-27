@@ -47,7 +47,7 @@ Deberás crear un container para definir dónde se colocará el brick en la pant
 Para esto deberás instalar la SDK agregando lo siguiente en tu código HTML:
 
 ```html
-<script src="https://beta-sdk.mercadopago.com/gama/js/v2"></script>
+<script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 
 Luego, inicializa la SDK y configura tu [clave pública]([FAKER][CREDENTIALS][URL]) mediante código JavaScript de la siguiente manera:
@@ -122,7 +122,7 @@ const renderCardPaymentBrick = async (bricksBuilder) => {
       },
     },
   };
-  cardPaymentBrickController = await bricksBuilder.create('cardPayment', 'cardPaymentBrick_container', settings);
+  const cardPaymentBrickController = await bricksBuilder.create('cardPayment', 'cardPaymentBrick_container', settings);
 };
 renderCardPaymentBrick(bricksBuilder);
 ```

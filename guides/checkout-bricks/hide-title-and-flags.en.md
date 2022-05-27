@@ -1,4 +1,8 @@
-# Hide title and flags
+> CLIENT_SIDE
+>
+> h1
+>
+> Hide title and flags
 
 | Brick  | Card Payment Form  |
 | --- | --- |

@@ -1,3 +1,3 @@
-# Regional Payment Brick
+# Review & Confirm Brick
 
-El Regional Payment Brick te permitirá asociar pagos locales con el Checkout API. Esto significa que a través de este brick será posible agregar medios de pago específicos de cada país, como PIX y boleto en Brasil, o OXXO y Paycash para México.
+El Review & Confirm Brick le mostrará un resumen de todo el proceso de compra, con la información más relevante, para que tus clientes puedan revisar antes de confirmar la compra.
