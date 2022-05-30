@@ -11,7 +11,15 @@ paths:
         - $ref: '#/tags/cash-out'
         - $ref: '#/tags/qr-code'
       summary: Confirm cashout status
+      x-summary-i18n:
+        eng: Confirm cashout status
+        spa: Confirmar el estado de retiro
+        por: Confirmar o status da retirada
       description: After complete a cashout transaction physically, confirm the status of the money delivered. This endpoint works until 5 minutes after the transaction was done
+      x-description-i18n:
+        eng: After complete a cashout transaction physically, confirm the status of the money delivered. This endpoint works until 5 minutes after the transaction was done
+        spa: Después de completar una transacción de retiro físicamente, confirma el estado del dinero entregado. Este endpoint funciona hasta 5 minutos después de que se realizó la transacción
+        por: Após concluir uma transação de saque fisicamente, confirme o status do dinheiro entregue. Este endpoint funciona até 5 minutos após a realização da transação
       requestBody:
         content:
           application/json:
@@ -25,7 +33,15 @@ paths:
                 description:
                   type: string
                   description: Custom description of status.
+                  x-description-i18n:
+                    eng: Custom description of status.
+                    spa: Descripción personalizada del estado.
+                    por: Descrição personalizada do status.
                   example: connection lost
+                  x-example-i18n:
+                    eng: connection lost
+                    spa: conexión perdida
+                    por: conexão perdida
       responses:
         '200':
           description: Success
@@ -38,12 +54,24 @@ paths:
                     type: number
                     example: 123456789
                     description: Merchant order id asociated to transaction
+                    x-description-i18n:
+                      eng: Merchant order id asociated to transaction
+                      spa: ID del merchant_order asociado a la transacción.
+                      por: ID do merchant_order associado à transação.
                   status:
                     type: string
                     example: confirmed
                     description: Transaction status
+                    x-description-i18n:
+                      eng: Transaction status
+                      spa: Estado de la transacción.
+                      por: Status da transação.
         '400':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -56,6 +84,10 @@ paths:
                     - 400-invalid_status--the-cashout-status-is-not-correct
         '409':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -71,6 +103,10 @@ components:
     status:
       type: string
       description: Status of the money. If the status of cashout and payment (if applies) is not confirmed, the amount will be refunded to the payer.
+      x-description-i18n:
+        eng: Status of the money. If the status of cashout and payment (if applies) is not confirmed, the amount will be refunded to the payer.
+        spa: Estado del dinero. Si no se confirma el estado de retiro y pago (si corresponde), el monto se reembolsará al pagador.
+        por: Status do dinheiro. Se o status de saque e pagamento (se aplicável) não for confirmado, o valor será reembolsado ao pagador.
       example: confirmed
       enum:
         - confirmed -- the money was delivered correctly to the payer.
@@ -79,6 +115,10 @@ components:
     status_detail:
       type: string
       description: Detail of the status.
+      x-description-i18n:
+        eng: Detail of the status.
+        spa: Detalle del estado.
+        por: Detalhe do status.
       example: confirmed
       enum:
         - internal_comunication_error -- an error occurs in seller infraestructure (only for fail status).

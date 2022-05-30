@@ -10,7 +10,15 @@ paths:
       tags:
         - $ref: '#/tags/qr-code'
       summary: Create POS
+      x-summary-i18n:
+        eng: Create POS
+        spa: Crear caja
+        por: Criar caixa
       description: Generate a Point of Sale in a store. Each POS will have a unique QR Code linked to it
+      x-description-i18n:
+        eng: Generate a Point of Sale in a store. Each POS will have a unique QR Code linked to it
+        spa: Genera un punto de venta en una sucursal. Cada caja tendrá vinculado un código QR unívoco
+        por: Gerar um ponto de venda em uma loja. Cada caixa registradora terá um código QR exclusivo vinculado a ela
       requestBody:
         content:
           application/json:
@@ -20,14 +28,26 @@ paths:
                 name:
                   type: string
                   description: Name of the POS.
+                  x-description-i18n:
+                    eng: Name of the POS.
+                    spa: Nombre de la caja
+                    por: Nome da caixa
                   example: First POS 
                 fixed_amount:
                   type: boolean
                   description: Define if the customer can insert the amount to be paid.
+                  x-description-i18n:
+                    eng: Define if the customer can insert the amount to be paid.
+                    spa: Determina si el cliente puede insertar el monto a pagar
+                    por: Determine se o cliente pode inserir o valor a ser pago
                   example: false
                 store_id:
                   type: string
                   description: Store identifier to which the point of sale belongs.
+                  x-description-i18n:
+                    eng: Store identifier to which the point of sale belongs.
+                    spa: Identificador de la sucursal a la que pertenece el Punto de Venta
+                    por: Identificador da loja à qual o caixa pertence
                   example: 1234567
                 external_store_id:
                   type: string
@@ -38,6 +58,10 @@ paths:
                 external_id:
                   type: string
                   description: Unique identifier of the pos defined by integrator system.
+                  x-description-i18n:
+                    eng: Unique identifier of the pos defined by integrator system.
+                    spa: Identificador único de la caja definido por el integrador
+                    por: Identificador único da caixa definido pelo sistema integrador
                   example: SUC001POS001
                 category:
                   $ref: '#/components/schemas/category'
@@ -126,6 +150,10 @@ paths:
                     description: external_id
         '400':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -161,6 +189,10 @@ paths:
                         FIXED_AMOUNT_FALSE--If-the-URL-field-is-indicated--the-FIXED-AMOUNT-field-must-be-true--We-do-not-support-the-open-amount-modality-in-this-case-
         '403':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -173,6 +205,10 @@ paths:
                         1--If-you-are-using-the-URL-field--the-host-must-be-enabled-by-Mercado-Pago--If-it-is-not--you-will-receive-this-error--Please-contact-your-assigned-technical-advisor-
         '404':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -185,6 +221,10 @@ paths:
                         1--If-the-POS-does-not-exist-for-an-indicated-ID-or-EXTERNAL-ID-and-user-
         '409':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -198,7 +238,15 @@ paths:
       tags:
         - $ref: '#/tags/qr-code'
       summary: Search POS
+      x-summary-i18n:
+        eng: Search POS
+        spa: Buscar en cajas
+        por: Buscar em caixas
       description: Get the information about all of your stores
+      x-description-i18n:
+        eng: Get the information about all of your stores
+        spa: Encuentra toda la información de los puntos de venta a través de filtros específicos
+        por: Encontre todas as informações dos pontos de venda através de filtros específicos
       parameters:
         - name: external_id
           in: query
@@ -313,6 +361,10 @@ paths:
                     description: results
         '400':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -338,11 +390,23 @@ paths:
       tags:
         - $ref: '#/tags/qr-code'
       summary: Get POS
+      x-summary-i18n:
+        eng: Get POS
+        spa: Obtener caja
+        por: Obter caixa
       description: Check all the information of a Point of Sale with the ID of the POS you want
+      x-description-i18n:
+        eng: Check all the information of a Point of Sale with the ID of the POS you want
+        spa: Consulta toda la información de un punto de venta con el ID de la caja que quieras
+        por: Veja toda a informação de um ponto de venda a partir do ID da caixa que você deseja
       parameters:
         - name: id
           in: path
           description: POS Id
+          x-description-i18n:
+            eng: POS Id
+            spa: POS Id
+            por: POS Id
           required: true
           schema:
             type: string
@@ -359,6 +423,10 @@ paths:
                     type: string
                     example: 1988157
                     description: POS identifier, numerical and self-generated.
+                    x-description-i18n:
+                      eng: POS identifier, numerical and self-generated.
+                      spa: Identificador único de la caja, numérico y autogenerado
+                      por: Identificador exclusivo da caixa, numérico e gerado automaticamente
                   qr:
                     type: object
                     properties:
@@ -413,6 +481,10 @@ paths:
 
         '400':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -429,6 +501,10 @@ paths:
                         EXTERNAL_ID_TOO_LONG--The-EXTERNAL-ID-must-be-less-than-40-characters-
         '404':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -443,11 +519,23 @@ paths:
       tags:
         - $ref: '#/tags/qr-code'
       summary: Update POS
+      x-summary-i18n:
+        eng: Update POS
+        spa: Actualizar caja
+        por: Atualizar caixa
       description: Renew the data of a Point of Sale. Indicate the ID of the POS and send the parameters with the information you want to update
+      x-description-i18n:
+        eng: Renew the data of a Point of Sale. Indicate the ID of the POS and send the parameters with the information you want to update
+        spa: Renueva los datos de un punto de venta. Indica el ID de la caja y envía los parámetros con la información que quieras actualizar
+        por: Atualizar os dados de um ponto de venda. Indicar a identificação da caixa registradora e enviar os parâmetros com as informações que você deseja atualizar
       parameters:
         - name: id
           in: path
           description: POS Id
+          x-description-i18n:
+            eng: POS Id
+            spa: POS Id
+            por: POS Id
           required: true
           schema:
             type: string
@@ -461,16 +549,28 @@ paths:
                 name:
                   type: string
                   description: Name of the POS.
+                  x-description-i18n:
+                    eng: Name of the POS.
+                    spa: Nombre de la caja
+                    por: Nome da caixa
                   example: First POS 
                 fixed_amount:
                   type: boolean
                   description: Define if the customer can insert the amount to be paid.
+                  x-description-i18n:
+                    eng: Define if the customer can insert the amount to be paid.
+                    spa: Determina si el cliente puede insertar el monto a pagar
+                    por: Determine se o cliente pode inserir o valor a ser pago
                   example: false
                 category:
                   $ref: '#/components/schemas/category'
                 store_id:
                   type: string
                   description: Store identifier to which the point of sale belongs.
+                  x-description-i18n:
+                    eng: Store identifier to which the point of sale belongs.
+                    spa: Identificador de la sucursal a la que pertenece el Punto de Venta
+                    por: Identificador da loja à qual o caixa pertence
                   example: 1234567
                 external_store_id:
                   type: string
@@ -570,6 +670,10 @@ paths:
         
         '400':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -607,6 +711,10 @@ paths:
                         FIXED_AMOUNT_FALSE--If-the-URL-field-is-indicated--the-FIXED-AMOUNT-field-must-be-true--We-do-not-support-the-open-amount-modality-in-this-case-
         '403':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -619,6 +727,10 @@ paths:
                         1--If-you-are-using-the-URL-field--the-host-must-be-enabled-by-Mercado-Pago--If-it-is-not--you-will-receive-this-error--Please-contact-your-assigned-technical-advisor-
         '404':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -631,6 +743,10 @@ paths:
                         1--If-the-POS-does-not-exist-for-an-indicated-ID-or-EXTERNAL-ID-and-user-
         '409':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -644,11 +760,23 @@ paths:
       tags:
         - $ref: '#/tags/qr-code'
       summary: Delete POS
+      x-summary-i18n:
+        eng: Delete POS
+        spa: Eliminar caja
+        por: Excluir caixa
       description: Delete a Point of Sale whenever you need it with the ID of the POS
+      x-description-i18n:
+        eng: Delete a Point of Sale whenever you need it with the ID of the POS
+        spa: Elimina un punto de venta siempre que lo necesites con el ID de la caja
+        por: Exclua um ponto de venda sempre que for necessário com o ID da caixa
       parameters:
         - name: id
           in: path
           description: POS Id
+          x-description-i18n:
+            eng: POS Id
+            spa: POS Id
+            por: POS Id
           required: true
           schema:
             type: string
@@ -656,6 +784,10 @@ paths:
       responses:
         '400':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -668,6 +800,10 @@ paths:
                         INVALID_POS_ID--The-ID-of-the-pos-is-invalid--it-must-be-numeric-
         '404':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -684,6 +820,10 @@ components:
       type: number
       example: 621102
       description: MCC code that indicates the category of the Point of Sale. If not specified, it remains as a generic category.
+      x-description-i18n:
+        eng: MCC code that indicates the category of the Point of Sale. If not specified, it remains as a generic category.
+        spa: Código MCC que indica el rubro del Punto de Venta. Si no se especifica, queda como categoría genérica
+        por: Código MCC que indica a categoria do ponto de venda. Se não especificado, ele permanece como uma categoria genérica
       enum:
         - Gastronomy -- 
         - 621102 -- Argentina
