@@ -2,11 +2,10 @@
 
 | Type | Description |
 | --- | --- |
-| QR Attended Model | Integration model where the POS uses its system to post an order to a QR. The customer views and pays the order using the App.  |
-| QR Dynamic Model  | Integration model that generates a QR per transaction. Used for QR models in tickets.  |
+| QR attended model | Integration model in which the cashier's Point of Sale system posts an order to a QR. The customer views and pays the order in the App.  |
+| QR dynamic model  | Integration model that generates a QR per transaction. Used for ticket QR models.  |
 
-Depending on your business model, you can choose one of these options to offer your customers a seamless in-store shopping experience.
-
+Based on your business model, you can choose one of these options to offer your customers a smooth shopping experience at your physical stores.
 
 > PREV_STEP_CARD_EN
 >

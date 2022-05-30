@@ -9,7 +9,6 @@
 En base a tu modelo de negocio, puedes escoger alguna de las opciones para ofrecer a tus clientes una buena experiencia de compra en tus tiendas físicas.
 
 
-
 > PREV_STEP_CARD_EN
 >
 > Cuáles son los beneficios
