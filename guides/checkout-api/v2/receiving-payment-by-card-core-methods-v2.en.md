@@ -307,7 +307,7 @@ It is possible to add other custom events to the inputs, such as focus, blur, re
 cardNumberElement.on("focus", () => console.log("Card Number received focus"));
 ```
 
-If you wish to know more about other customized events, access our [GitHub](https://github.com/lucmantovani/sdk-js/tree/feature/fields-docs#field-instanceonevent-callbacks) documentation.
+If you wish to know more about other customized events, access our [GitHub](https://github.com/mercadopago/sdk-js/blob/main/API/fields.md#field-instanceonevent-callback) documentation.
 
 
 ## Sample projects

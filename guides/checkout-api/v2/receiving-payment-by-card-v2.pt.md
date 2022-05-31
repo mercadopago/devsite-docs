@@ -295,20 +295,12 @@ curl -X POST \
 >
 > Checkout Transparente
 >
-> Disponibilizamos [exemplos completos de integração](https://github.com/mercadopago/card-payment-sample/tree/feature/secure-fields) para que você possa fazer o download.
+> Disponibilizamos [exemplos completos de integração](https://github.com/mercadopago/card-payment-sample) para que você possa fazer o download.
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 > GIT
 >
 > Checkout API
 >
-> Disponibilizamos [exemplos completos de integração](https://github.com/mercadopago/card-payment-sample/tree/feature/secure-fields) para que você possa fazer o download.
+> Disponibilizamos [exemplos completos de integração](https://github.com/mercadopago/card-payment-sample) para que você possa fazer o download.
 ------------
-
-<span></span>
-
-> GIT
->
-> Formulário de pagamento
->
-> Se você deseja implementar seu servidor com alguma outra tecnologia, te deixamos um [exemplo completo do formulário de pagamento](https://drive.google.com/file/d/12gSCPLfZCE36iKFbM4BTUwf6lnM7lVEL/view?usp=sharing) no GitHub para que possa fazer o download.
