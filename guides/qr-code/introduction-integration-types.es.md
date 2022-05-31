@@ -8,21 +8,21 @@
 
 En base a tu modelo de negocio, puedes escoger alguna de las opciones para ofrecer a tus clientes una buena experiencia de compra en tus tiendas físicas.
 
+---
 
-
-> PREV_STEP_CARD_EN
+> PREV_STEP_CARD_ES
 >
-> Cuáles son los beneficios
+> Funcionamiento
 >
-> Te contamos los beneficios de Código QR.
+> Te contamos cómo funciona el Código QR.
 >
-> [Cuáles son los beneficios](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/qr-code/introduction/benefits)
+> [Funcionamiento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/qr-code/how-it-works)
 
 
-> NEXT_STEP_CARD_EN
+> NEXT_STEP_CARD_ES
 >
 > Requisitos para integrar
 >
 > Todo lo que necesitas para integrar Código QR.
 >
-> [Requisitos para integrar](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/qr-code/pre-requisites)
+> [Requisitos para integrar](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/qr-code/pre-requisites)

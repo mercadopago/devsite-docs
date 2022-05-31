@@ -10,4 +10,14 @@ Once you complete the integration as explained below, your business will be able
 >
 > Note
 >
-> If your model does not require integration with a POS system, view all the information available in [Generate QR via Mercado Pago dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/in-person-payments/qr-code/integrations-front).
+> If your model does not require integration with a POS system, view all the information available in [Generate QR via Mercado Pago dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/qr-code/how-to/integrations-front).
+
+---
+
+> NEXT_STEP_CARD_EN
+>
+> Integration types
+>
+> You can select one of the options.
+>
+> [Integration types](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/qr-code/integration-types)

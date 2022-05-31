@@ -15,19 +15,19 @@ available_countries: mla, mlb, mlm, mlu, mco, mlc, mpe
 ----[mla, mlc, mlm, mco, mpe, mlu]----
 
 ---
-bullet_section_with_media:
-  - title: Ventajas
-  - type: normal
-  - message: En base a tu modelo de negocio, puedes escoger alguna de las opciones de integración que ofrecemos para brindar a tus clientes una buena experiencia de compra.
-  - image: /qr/qr-minilanding-02-es.png
-  - benefit_title: Costo
-  - benefit_message: Lo generas gratis, y brinda cobros al costo más bajo del mercado.
-  - benefit_title: Pago inmediato
-  - benefit_message: Mercado Pago recuerda los datos y tarjetas de los compradores, procesando los pagos al instante.
-  - benefit_title: Medios de pago
-  - benefit_message: Permite cobrar con los principales [medios de pago](https://www.mercadopago.com.ar/ayuda/medios-de-pago-cuotas-promociones_264)  de tu país.
-  - benefit_title: Experiencia de compra
-  - benefit_message: Ofrecer una experiencia de compra segura desde cualquier dispositivo móvil con la app de Mercado Pago o Mercado Libre.
+bullet_section_with_media: 
+ - title: Ventajas
+ - type: normal
+ - message: En base a tu modelo de negocio, puedes escoger alguna de las opciones de integración que ofrecemos para brindar a tus clientes una buena experiencia de compra.
+ - image: /qr/qr-minilanding-02-es.png
+ - benefit_title: Costo
+ - benefit_message: Lo generas gratis, y brinda cobros al costo más bajo del mercado.
+ - benefit_title: Pago inmediato
+ - benefit_message: Mercado Pago recuerda los datos y tarjetas de los compradores, procesando los pagos al instante.
+ - benefit_title: Medios de pago
+ - benefit_message: Permite cobrar con los principales medios de pago de tu país.
+ - benefit_title: Experiencia de compra
+ - benefit_message: Ofrecer una experiencia de compra segura desde cualquier dispositivo móvil con la app de Mercado Pago o Mercado Libre.
 ---
 
 ------------
@@ -35,23 +35,22 @@ bullet_section_with_media:
 ----[mlb]----
 
 ---
-bullet_section_with_media:
-  - title: Ventajas
-  - type: normal
-  - message: En base a tu modelo de negocio, puedes escoger alguna de las opciones de integración que ofrecemos para brindar a tus clientes una buena experiencia de compra.
-  - image: /qr/qr-minilanding-02-es.png
-  - benefit_title: Costo
-  - benefit_message: Lo generas gratis, y brinda cobros al costo más bajo del mercado.
-  - benefit_title: Pago inmediato
-  - benefit_message: Mercado Pago recuerda los datos y tarjetas de los compradores, procesando los pagos al instante.
-  - benefit_title: Medios de pago
-  - benefit_message: Permite cobrar con los principales [medios de pago](https://www.mercadopago.com.ar/ayuda/medios-de-pago-cuotas-promociones_264)  de tu país.
-  - benefit_title: Experiencia de compra
-  - benefit_message: Ofrecer una experiencia de compra segura desde cualquier dispositivo móvil con la app de Mercado Pago o Mercado Libre.
-  - benefit_title: Pagos con Pix
-  - benefit_message: [Acepta pagos con de Pix](https://www.mercadopago.com.br/pix) para comenzar a recibir dinero al instante, todos los días y desde cualquier banco o billetera.
+bullet_section_with_media: 
+ - title: Ventajas
+ - type: normal
+ - message: En base a tu modelo de negocio, puedes escoger alguna de las opciones de integración que ofrecemos para brindar a tus clientes una buena experiencia de compra.
+ - image: /qr/qr-minilanding-02-es.png
+ - benefit_title: Costo
+ - benefit_message: Lo generas gratis, y brinda cobros al costo más bajo del mercado.
+ - benefit_title: Pago inmediato
+ - benefit_message: Mercado Pago recuerda los datos y tarjetas de los compradores, procesando los pagos al instante.
+ - benefit_title: Medios de pago
+ - benefit_message: Permite cobrar con los principales medios de pago de tu país.
+ - benefit_title: Experiencia de compra
+ - benefit_message: Ofrecer una experiencia de compra segura desde cualquier dispositivo móvil con la app de Mercado Pago o Mercado Libre.
+ - benefit_title: Pagos con Pix
+ - benefit_message: Acepta pagos con Pix para comenzar a recibir dinero al instante, todos los días y desde cualquier banco o billetera.
 ---
-
 ------------
 
 ---

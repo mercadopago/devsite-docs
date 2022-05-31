@@ -2,17 +2,17 @@
 
 Considere os pontos a seguir antes de começar:
 
-[Acesse a uma conta]()
-[Crie uma aplicação]()
-[Gere usuários de teste]()
-[Obtenha o seu Access Token]()
-[Identifique a sua integração]()
+* Acesse a uma conta
+* Crie uma aplicação
+* Gere usuários de teste
+* Obtenha o seu Access Token
+* Identifique a sua integração
 
 ## 1. Acesse uma conta
 
-Para começar a integração, você precisa ** ter uma conta no Mercado Pago ou Mercado Livre***.
+Para começar a integração, você precisa **ter uma conta no Mercado Pago ou Mercado Livre**.
 
-Você pode [Acessar](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/in-person-payments/qr-code/pre-requisites) uma conta existente ou [Criar uma nova conta](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
+Você pode Acessar uma conta existente ou [Criar uma nova conta](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
 
 
 ## 2. Crie uma aplicação
@@ -24,7 +24,7 @@ Crie uma aplicação para obter as credenciais e configurar notificações webho
 É muito simples, veja como: 
 
 1. Acesse [Suas aplicações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/applications).
-2. Selecione o símbolo **+*** em **Suas aplicações*** para criar uma nova aplicação.
+2. Selecione o símbolo em **Suas aplicações** para criar uma nova aplicação.
 3. Nomeie a aplicação para identificação posterior.
 4. Aceite nossos Termos e Condições. E pronto!
 

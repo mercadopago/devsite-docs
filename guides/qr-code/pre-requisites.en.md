@@ -2,17 +2,17 @@
 
 Keep these aspects in mind before you start:
 
-[Access to an account]()
-[Create an application]()
-[Generate test users]()
-[Obtain your Access token]()
-[Identify your integration]()
+* Access to an account
+* Create an application
+* Generate test users
+* Obtain your Access token
+* Identify your integration
 
 ## 1. Access to an account
 
 To start integrating, you must **have a Mercado Pago or Mercado Libre account**.
 
-You can [Sign in](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/in-person-payments/qr-code/pre-requisites) with an existing account or [Create a new account](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
+You can sign in with an existing account or [Create a new account](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
 
 ## 2. Create an application
 

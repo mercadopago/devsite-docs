@@ -7,14 +7,15 @@
 
 Depending on your business model, you can choose one of these options to offer your customers a seamless in-store shopping experience.
 
+---
 
 > PREV_STEP_CARD_EN
 >
-> What are the benefits
+> How it works
 >
-> Learn about the benefits of QR Code.
+> Learn about how QR Code works.
 >
-> [What are the benefits](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/qr-code/introduction/benefits)
+> [How it works](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/qr-code/how-it-works)
 
 
 > NEXT_STEP_CARD_EN
@@ -23,4 +24,4 @@ Depending on your business model, you can choose one of these options to offer y
 >
 > Everything you need to integrate QR Code.
 >
-> [Requirements to integrate](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/qr-code/pre-requisites)
+> [Requirements to integrate](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/qr-code/pre-requisites)

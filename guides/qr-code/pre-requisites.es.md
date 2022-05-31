@@ -2,17 +2,18 @@
 
 Ten en cuenta estos aspectos antes de empezar:
 
-[Accede a una cuenta]()
-[Crea una aplicación]()
-[Genera usuarios de prueba]()
-[Obtén tu Access token]()
-[Identifica tu integración]()
+* Accede a una cuenta
+* Crea una aplicación
+* Genera usuarios de prueba
+* Obtén tu Access token
+* Identifica tu integración
+
 
 ## 1. Accede a una cuenta
 
 Para poder comenzar la integración, es necesario **contar con una cuenta de Mercado Pago o Mercado Libre**.
 
-Puedes [Ingresar](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/in-person-payments/qr-code/pre-requisites) a una cuenta que ya exista o [Crear una cuenta nueva](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
+Puedes ingresar a una cuenta existente o [Crear una cuenta nueva](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
 
 ## 2. Crea una aplicación
 
@@ -23,7 +24,7 @@ Crea una aplicación para obtener credenciales y configurar notificaciones webho
 Es fácil, te contamos cómo hacerlo:
 
 1. Ingresa a [Tus integraciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/applications).
-2. Selecciona el símbolo **+** dentro del apartado **Tus aplicaciones** para crear una nueva aplicación.
+2. Selecciona el símbolo dentro del apartado **Tus aplicaciones** para crear una nueva aplicación.
 3. Ponle un nombre con el que puedas identificarla más adelante.
 4. Acepta nuestros Términos y Condiciones. ¡Y listo!
 
@@ -72,6 +73,15 @@ Paso a paso:
 > * Incluye el ID de usuario de su cuenta de integrador dentro del sponsor ID del vendedor.
 > * Envía el sponsor ID en todas las transacciones QR. [Ver API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/instore_orders/_mpmobile_instore_qr_user_id_external_id/post).
 
+---
+
+> PREV_STEP_CARD_ES
+>
+> Requisitos para integrar
+>
+> Todo lo que necesitas para integrar Código QR.
+>
+> [Requisitos para integrar](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/qr-code/pre-requisites)
 
 
 > NEXT_STEP_CARD_ES
@@ -80,4 +90,4 @@ Paso a paso:
 >
 > Para realizar la integración, primero debes configurar tus sucursales y cajas.
 >
-> [Sucursales y Cajas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/qr-code/stores-pos/introduction)
+> [Sucursales y Cajas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/qr-code/stores-and-pos)
