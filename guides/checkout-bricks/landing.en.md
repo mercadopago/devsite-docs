@@ -18,19 +18,19 @@ bullet_section_with_media:
  - title: Bricks
  - type: reversed
  - message: Know all Checkout Bricks modules and their availability.
- - benefit_title: Card Payment Brick
+ - benefit_title: Card Payment Brick - New
  - benefit_message: Offer credit and debit card payments with the ability to save card details for future purchases.
- - benefit_title: Payment Brick
+ - benefit_title: Payment Brick - Soon
  - benefit_message: Offer different payment methods from which your customers can choose.
- - benefit_title: Wallet Brick
+ - benefit_title: Wallet Brick - Soon
  - benefit_message: Link digital wallets and allow logged payments. 
- - benefit_title: User Info Brick
+ - benefit_title: User Info Brick - Soon
  - benefit_message: Collect the data of your clients and infer those that will be needed in the purchase process.
- - benefit_title: Shipping Brick
+ - benefit_title: Shipping Brick - Soon
  - benefit_message: Collect shipping data from your customers and display the available delivery options and their benefits.
- - benefit_title: Review & Confirm Brick 
+ - benefit_title: Review & Confirm Brick - Soon
  - benefit_message: Shows a summary of the entire purchase process, with the most relevant information, so that your customers can review before confirming the purchase.
- - benefit_title: Status Screen Brick
+ - benefit_title: Status Screen Brick - Soon
  - benefit_message: Inform your customers of the results of the purchase process, after making the payment. 
  - image: /checkout-bricks/cho-bricks-landing-v5.png
 ---
