@@ -14,4 +14,4 @@ Com relação à **aprovação dos pagamentos** na sua loja, existem três princ
 >
 > Saiba como ativar sua loja para processar vendas reais.
 >
-> [Recebebimento de pagamentos](/developers/pt/docs/prestashop/go-to-production)
+> [Recebebimento de pagamentos](/developers/pt/docs/prestashop/sales-processing/go-to-production)

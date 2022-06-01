@@ -25,4 +25,4 @@ Se todos os pré-requisitos forem atendidos, você poderá instalar o plugin do 
 >
 > Siga estas etapas para instalar o plugin do Mercado Pago na sua loja virtual.
 >
-> [Instalar](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/instalation)
+> [Instalação do plugin](/developers/pt/docs/prestashop/installation)

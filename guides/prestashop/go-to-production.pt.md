@@ -16,7 +16,7 @@ Para mais informações, acesse a seção [Atividades](https://www.mercadopago[F
 >
 > Saiba como realizar uma compra teste e garantir o funcionamento da integração.
 >
-> [Teste de pagamentos](/developers/pt/docs/prestashop/integration-test)
+> [Teste de pagamentos](/developers/pt/docs/prestashop/sales-processing/integration-test)
 
 > NEXT_STEP_CARD_PT
 >
@@ -24,4 +24,4 @@ Para mais informações, acesse a seção [Atividades](https://www.mercadopago[F
 >
 > Veja os principais motivos que podem impactar diretamente na aprovação dos pagamentos em sua loja. 
 >
-> [Motivos de recusas de pagamentos](/developers/pt/docs/prestashop/reasons-for-refusals)
+> [Motivos de recusas de pagamentos](/developers/pt/docs/prestashop/sales-processing/reasons-for-refusals)

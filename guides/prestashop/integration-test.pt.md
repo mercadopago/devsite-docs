@@ -15,11 +15,11 @@ Após finalizar as etapas anteriores, ative o **modo Produção** para receber p
 
 > PREV_STEP_CARD_PT
 >
-> Configuração de pagamento - Checkout ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------
+> Configuração de pagamentos presenciais
 >
-> Saiba como configurar o - Checkout ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------ para receber os pagamento de sua loja.
+> Configure a sua loja para receber pagamentos presenciais. 
 >
-> [Configuração de pagamento](/developers/pt/docs/prestashop/payment-setup-choapi)
+> [Configuração de pagamentos presenciais](/developers/pt/docs/prestashop/payment-setup/in-person)
 
 > NEXT_STEP_CARD_PT
 >
@@ -27,4 +27,4 @@ Após finalizar as etapas anteriores, ative o **modo Produção** para receber p
 >
 > Saiba como ativar sua loja para processar vendas reais.
 >
-> [Recebebimento de pagamentos](/developers/pt/docs/prestashop/go-to-production)
+> [Recebebimento de pagamentos](/developers/pt/docs/prestashop/sales-processing/go-to-production)

@@ -11,7 +11,7 @@ Pronto! Você verá o plugin instalado na seção **Personalizar** do seu painel
 >
 > Importante
 >
-> Caso você tenha problemas durante a instalação do plugin e precise entrar em contato com nosso suporte, é possível que você seja solicitado a realizar a instalação de forma manual. Veja a [FAQ](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/prestashop/faq) para detalhes de como fazê-lo. Ainda, mantenha o plugin sempre atualizado com a última versão para garantir a segurança dos dados e o funcionamento da integração.
+> Caso você tenha problemas durante a instalação do plugin e precise entrar em contato com nosso suporte, é possível que você seja solicitado a realizar a instalação de forma manual. Veja a [FAQ](/developers/pt/docs/prestashop/additional-content/faq) para detalhes de como fazê-lo. Ainda, mantenha o plugin sempre atualizado com a última versão para garantir a segurança dos dados e o funcionamento da integração.
 
 > PREV_STEP_CARD_PT
 >
@@ -19,7 +19,7 @@ Pronto! Você verá o plugin instalado na seção **Personalizar** do seu painel
 >
 > Conheça os pré-requisitos para realizar a integração.
 >
-> [Pré-requisitos da integração](/developers/pt/docs/plugins/prestashop/prerequisites)
+> [Pré-requisitos da integração](/developers/pt/docs/prestashop/prerequisites)
 
 > NEXT_STEP_CARD_PT
 >
