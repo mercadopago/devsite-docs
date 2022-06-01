@@ -10,7 +10,7 @@ Com o ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, 
 Para integrar o checkout, siga os passos abaixo.
  
 1. Selecione **Sim** para ativar a experiência do Mercado Pago no checkout da sua loja.
-2. Escolha os **meios de pagamento** que deseja oferecer e selecione o **máximo de parcelas** que deseja oferecer em sua loja.
+2. Escolha os **meios de pagamento** que deseja oferecer dentro do ambiente de pagamento da sua loja, podendo ser: ----[mlb]---- débito, crédito, boleto e Pix. A opção de pagamento com Pix só será exibida se houver uma chave pix cadastrada no Mercado Pago. ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- débito, crédito e boleto. ------------
 3. [Configure](https://www.mercadopago.com.br//costs-section#from-section=menu) a tarifa que será paga em cada compra e também ofereça parcelas sem juros para seus clientes.
 4. Defina se os clientes terão acesso ao formulário de pagamentos do Mercado Pago sem sair da sua loja.
 5. Ative o **modo binário** quando não quiser deixar os pagamentos em estado pendente ou em revisão. Com o modo binário, os pagamentos serão aceitos ou recusados automaticamente.
