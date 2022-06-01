@@ -59,7 +59,7 @@ Once you have test users, you can start to integrate and create Stores and POS.
 
 If you are an integrator that works with several retailers enabling them to operate with Mercado Pago, we recommend to perform the **OAuth - authentication between accounts** process. The process enables customers securely share personal data with a third-party system.
 
-The Access Token is not shareable in any way other than through OAuth. [More information](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/qr-code/additional-content/credentials).
+The Access Token is not shareable in any way other than through OAuth. [More information](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/credentials).
 
 ## 5. Identify your integration (Sponsor ID)
 
@@ -72,7 +72,15 @@ Step by step:
 > * Include the User ID of your integrator account in the seller's Sponsor ID.
 > * Submit the Sponsor ID on all QR transactions. [See API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/instore_orders/_mpmobile_instore_qr_user_id_external_id/post).
 
+---
 
+> PREV_STEP_CARD_EN
+>
+> Integration types
+>
+> You can select one of the options.
+>
+> [Integration types](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/qr-code/integration-types)
 
 > NEXT_STEP_CARD_EN
 >

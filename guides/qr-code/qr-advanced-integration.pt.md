@@ -5,15 +5,14 @@
 ----[mla, mlm, mco, mlu, mlb, mlc]----
 
 As devoluções ocorrem quando o pagamento efetuado é cancelado em sua totalidade ou parcialmente pelo vendedor. 
-Você encontrará mais informações na seção [Devoluções e cancelamentos]
-(/developers/pt/guides/additional-content/sales-processing/cancellations-and-refunds).
+Você encontrará mais informações na seção [Reembolsos](/developers/pt/docs/qr-code/additional-content/refunds).
 
 ------------
 
 ----[mpe]----
 
 As devoluções ocorrem quando o pagamento efetuado é cancelado em sua totalidade pelo vendedor. 
-Você encontrará mais informações na seção [seção Devoluções e cancelamentos](/developers/pt/guides/additional-content/sales-processing/cancellations-and-refunds).
+Você encontrará mais informações na seção [Reembolsos](/developers/pt/docs/qr-code/additional-content/refunds).
 
 ------------
 
@@ -38,24 +37,7 @@ Integre os [relatórios de conciliação do Mercado Pago](/developers/pt/guides/
 
 Detalhamos os casos necessários para validar que o seu sistema esteja corretamente integrado ao Mercado Pago.
 
-Você pode encontrar todos os casos na [seção de testes](/developers/pt/guides/qr-code/qr-code/integration-test).
+Você pode encontrar todos os casos para validar [aqui](/developers/pt/docs/qr-code/how-to/validation-events).
 
 Veja mais detalhes neste [vídeo tutorial](https://youtu.be/izpBBw3Ivi4?list=PLCazXKuqZp3g4WfhNlhsB3FL9-1z7gUny).
 
----
-
-> PREV_STEP_CARD_PT
->
-> O que é modelo QR atendido
->
-> Uma introdução ao modelo QR atendido
->
-> [Introdução](/developers/pt/docs/qr-code/qr-attended-model/introduction)
-
-> NEXT_STEP_CARD_PT
->
-> Integração avançada
->
-> Conheça as opções disponibilizadas para chegar à integração para o seguinte nível.
->
-> [Integración avanzada](/developers/pt/guides/qr-code/advanced-integration)

@@ -11,12 +11,14 @@ Assim é como o modelo dinâmico funciona:
 2. A resposta incluirá uma string de dados com o atributo `qr_data'.
 3. Um código QR com o atributo recebido é gerado.
 4. Finalmente, o código QR é disponibilizado para que o cliente, à sua escolha, efetue o pagamento.
+   
+Essas etapas podem ser seguidas de duas maneiras: **criar um pedido** e **criar um pedido associado a uma caixa**. Vamos vê-los abaixo.
 
-## Crie um pedido
+## Criar um pedido
 
 Antes de mais nada, gere a publicação do pedido. Assim que os dados forem enviados ao Mercado Pago, uma string com o padrão [EMVCo](https://www.emvco.com/emv-technologies/qrcodes) será disponibilizada.
 
-Para gerar um pedido, acesse nossa [Referência de API]()  e execute a curl encontrada na mesma. Na resposta, você receberá os dados necessários para criar o código QR.
+Para gerar um pedido, acesse nossa [Referência de API](/developers/e/reference/qr-dynamic/_instore_orders_qr_seller_collectors_user_id_pos_external_pos_id_qrs/post)  e execute a curl encontrada na mesma. Na resposta, você receberá os dados necessários para criar o código QR.
 
 
 ----[mco]----
@@ -54,11 +56,11 @@ Por exemplo:
 ------------
 
 
-## Associe o pedido a um caixa
+## Criar um pedido associado a uma caixa
 
 Além da geração do código QR, você também tem a opção de criar e atribuir o mesmo pedido ao código QR fixo do caixa.
 
-Execute a chamada à API detalhada [nesta seção da nossa Referência de API]() para gerar o pedido e a atribuição ao caixa. Na resposta, você receberá o dado para criar o código QR e este ficará associado ao QR declarado.
+Execute a chamada à API detalhada [nesta seção da nossa Referência de API](/developers/pt/reference/qr-dynamic/_instore_orders_qr_seller_collectors_user_id_pos_external_pos_id_qrs/put) para gerar o pedido e a atribuição ao caixa. Na resposta, você receberá o dado para criar o código QR e este ficará associado ao QR declarado.
 
 ## Receba notificações de pedidos
 

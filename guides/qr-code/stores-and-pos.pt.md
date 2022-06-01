@@ -2,7 +2,7 @@
 
 As **lojas** e os **caixas** são importantes para receber pagamentos in-store com QR. Permitem que você crie sua loja e designe seus pontos de venda.
 
-![Caixas e lojas](/imagens/móveis/lojas_pos.pt.png)
+![Caixas e lojas](/images/mobile/stores_pos.pt.png)
 
 ## Lojas
 
@@ -20,7 +20,7 @@ Os benefícios de criar lojas são:
 
 Para criar uma loja é preciso declarar o nome da mesma, o horário de funcionamento, a localização e alguma referência que a identifique.
 
-Acesse [Criar loja](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/stores/_users_id_stores/post) em nossa Referência de API para criar uma loja. Na documentação você encontrará todas as informações necessárias.
+Acesse [Criar loja](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/stores/_users_user_id_stores/post) em nossa Referência de API para criar uma loja. Na documentação você encontrará todas as informações necessárias.
 
 > WARNING
 >
@@ -40,7 +40,7 @@ Tendo criado as lojas, você pode criar os caixas. Considere o seguinte:
 
 | Termo | Descrição |
 | --- | --- |
-| `EXTERNAL_STORE_ID` | Vincula o caixa com a loja. É um campo requerido e é o *external_id* da loja previamente criada. |
+| `EXTERNAL_STORE_ID` | Vincula o caixa com a loja. É um campo requerido e é o `external_id` da loja previamente criada. |
 | `EXTERNAL_ID` | Identifica univocamente cada caixa. É uma identificação requerida, que não pode ser alterada nem ser repetida em uma mesma conta Mercado Pago. Também é encontrado como `EXTERNAL_POS_ID`. |
 
 Acesse [Criar caixa](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/pos/_pos/post) em nossa Referência de API para criar um caixa. Na documentação você encontrará todas as informações necessárias.
@@ -52,3 +52,12 @@ Acesse [Criar caixa](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/r
 >
 > Uma vez criado o caixa, você poderá ver no `Response` os links para os diferentes entregáveis do QR, junto com outros dados relevantes do caixa.
 
+---
+
+> PREV_STEP_CARD_PT
+>
+> Requisitos para integrar
+>
+> Tudo o que você precisa para integrar o QR Code.
+>
+> [Requisitos para integrar](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/qr-code/pre-requisites)

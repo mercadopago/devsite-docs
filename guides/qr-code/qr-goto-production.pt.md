@@ -25,21 +25,3 @@ Estes são alguns pontos a considerar para aprimorar a qualidade das suas integr
 * Mantenha atualizado o status dos pedidos nos seus sistemas, usando e processando notificações IPN ou Webhooks.
 * Use relatórios de conciliação de API para melhorar a gestão financeira do seu negócio.
 
-
----
-
-> PREV_STEP_CARD_PT
->
-> O que é modelo QR atendido
->
-> Uma introdução ao modelo QR atendido
->
-> [Introdução](/developers/pt/docs/qr-code/qr-attended-model/introduction)
-
-> NEXT_STEP_CARD_PT
->
-> Integração avançada
->
-> Conheça as opções disponibilizadas para chegar à integração para o seguinte nível.
->
-> [Integración avanzada](/developers/pt/guides/qr-code/advanced-integration)

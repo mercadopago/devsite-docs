@@ -40,7 +40,7 @@ Al tener creadas tus sucursales, puedes crear tus cajas. Ten en cuenta lo siguie
 
 | Término | Descripción |
 | --- | --- |
-| `EXTERNAL_STORE_ID` | Vincula la caja con la sucursal. Es un campo requerido y es el mismo *external_id* de la Sucursal previamente creada. |
+| `EXTERNAL_STORE_ID` | Vincula la caja con la sucursal. Es un campo requerido y es el mismo `external_id` de la Sucursal previamente creada. |
 | `EXTERNAL_ID` | Identifica unívocamente cada caja. Es requerido y no se puede modificar, tampoco repetir en una misma cuenta de Mercado Pago. También lo puedes encontrar como `EXTERNAL_POS_ID`. |
 
 Accede a [Crear caja](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/pos/_pos/post) en nuestra Referencia de API para crear una caja. Allí encontrarás toda la información que necesitas.
@@ -52,3 +52,12 @@ Accede a [Crear caja](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/
 > Una vez creada la caja, podrás ver en el `Response` los links a distintos entregables del QR, junto con otros datos relevantes de la caja.
 
 
+---
+
+> PREV_STEP_CARD_ES
+>
+> Requisitos para integrar
+>
+> Todo lo que necesitas para integrar Código QR.
+>
+> [Requisitos para integrar](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/qr-code/pre-requisites)

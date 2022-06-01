@@ -10,16 +10,22 @@ Este modelo es ideal para cobrar con un código QR en ticket, en servicios de me
 Sus principales características son:
 
 - El valor ya está configurado dentro del código QR.
-- Te permite mostrar el código QR impreso en un ticket o en una pantalla. No requiere uno fijo en caja.
+- Te permite mostrar el código QR impreso en un ticket o en tu dispositivo PDV. No requiere uno fijo en caja.
 - Puedes cobrar varias órdenes en el mismo momento con diferentes códigos.
+
+> WARNING
+>
+> IMPORTANTE
+>
+> Recuerda que sólo puedes utilizar QR para tus soluciones de pago presenciales.
 
 
 ---
 
 > NEXT_STEP_CARD_ES
 >
-> Cómo integrar QR modelo atendido
+> Cómo integrar QR modelo dinámico
 >
 > Conoce paso a paso cómo integrar este modelo.
 >
-> [Cómo integrar QR modelo atendido](/developers/es/docs/qr-code/qr-attended-model/integrations)
+> [Cómo integrar QR modelo dinámico](/developers/es/docs/qr-code/qr-dynamic-model/integration)

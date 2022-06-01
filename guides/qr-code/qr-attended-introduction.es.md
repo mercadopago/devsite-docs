@@ -20,4 +20,4 @@ Las características principales son:
 >
 > Conoce paso a paso cómo integrar este modelo.
 >
-> [Cómo integrar QR modelo atendido](/developers/es/docs/qr-code/qr-attended-model/integrations)
+> [Cómo integrar QR modelo atendido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/qr-code/qr-attended-model/integration)

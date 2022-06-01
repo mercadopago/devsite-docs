@@ -31,21 +31,3 @@ Para testar o modelo atendido, gere um pedido com as [credenciais]([FAKER][CREDE
 
 Verifique se o seu sistema já recebeu as notificações de status do pedido. E pronto!
 
-
----
-
-> PREV_STEP_CARD_PT
->
-> O que é modelo QR atendido
->
-> Uma introdução ao modelo QR atendido
->
-> [Introdução](/developers/pt/docs/qr-code/qr-attended-model/introduction)
-
-> NEXT_STEP_CARD_PT
->
-> Integração avançada
->
-> Conheça as opções disponibilizadas para chegar à integração para o seguinte nível.
->
-> [Integración avanzada](/developers/pt/guides/qr-code/advanced-integration)

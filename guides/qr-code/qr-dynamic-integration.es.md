@@ -11,11 +11,13 @@ Te explicamos cómo funciona el modelo dinámico:
 3. Genera un código QR con el atributo recibido.
 4. Por último, disponibiliza el código QR al cliente como prefieras para que realice el pago.
 
-## Crea la orden
+Existen dos maneras de seguir estos pasos: **crear una orden**, y **crear una orden asocicada a una caja**. Las veremos a continuación.
+
+## Crea una orden
 
 Primero, genera la publicación de orden. En cuanto se envíen los datos a Mercado Pago, se pondrá a disposición un string con estándar [EMVCo](https://www.emvco.com/emv-technologies/qrcodes).
 
-Para generar una orden, accede a nuestra [Referencia de API]() y ejecuta el curl que encontrarás allí. En la respuesta recibirás el dato necesario para crear el código QR.
+Para generar una orden, accede a nuestra [Referencia de API](/developers/es/reference/qr-dynamic/_instore_orders_qr_seller_collectors_user_id_pos_external_pos_id_qrs/post) y ejecuta el curl que encontrarás allí. En la respuesta recibirás el dato necesario para crear el código QR.
 
 
 ----[mco]----
@@ -51,11 +53,11 @@ Por ejemplo:
 ------------
 
 
-## Asocia la orden a una caja
+## Crear una orden asociada a una caja
 
 Además de la generación del código QR, también tienes la opción de crear y asignar la misma orden al código QR fijo de la caja.
 
-Ejecuta la llamada a la API detallada [en esta sección de nuestra Referencia de API]() para generar la orden y la asignación a la caja. En la respuesta recibirás el dato necesario para crear el código QR y se asociará al QR declarado.
+Ejecuta la llamada a la API detallada [en esta sección de nuestra Referencia de API](/developers/es/reference/qr-dynamic/_instore_orders_qr_seller_collectors_user_id_pos_external_pos_id_qrs/put) para generar la orden y la asignación a la caja. En la respuesta recibirás el dato necesario para crear el código QR y se asociará al QR declarado.
 
 
 ## Recibe notificaciones de tus órdenes

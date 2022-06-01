@@ -8,7 +8,7 @@ To run tests you must have a minimum of two users: a buyer and a seller.
 | Test user types | Description |
 | --- | --- |
 | Seller | **Test account used to obtain the credentials** that you set up in your system to enable the interaction with Mercado Pago APIs. You can also access the [Mercado Pago account](https://www.mercadopago.com.ar/activities) and verify the tested transactions. |
-| Buyer: **Test account to test the purchase process**. You must access the Mercado Pago App with the data of this user. If you have funds or saved cards available in your account, those will be available as a payment method. |
+| Buyer| **Test account to test the purchase process**. You must access the Mercado Pago App with the data of this user. If you have funds or saved cards available in your account, those will be available as a payment method. |
 
 ## Test cards
 
@@ -30,21 +30,3 @@ To test the attended model, generate an order with the test user [credentials]([
 
 Lastly, make sure you’ve received a status notification in your system. And it's done!
 
-
-
----
-> PREV_STEP_CARD_EN
->
-> What is QR attended model
->
-> An introduction to QR attended model
->
-> [Introduction](/developers/en/docs/qr-code/qr-attended-model/introduction)
-
-> NEXT_STEP_CARD_EN
->
-> Advanced Integration
->
-> Learn the options to take your integration to the next level.
->
-> [Advanced Integration](/developers/en/guides/qr-code/advanced-integration)

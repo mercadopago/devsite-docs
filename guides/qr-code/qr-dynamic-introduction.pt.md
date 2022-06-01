@@ -10,15 +10,21 @@ Este modelo permite que o valor a ser cobrado já esteja incluído no código QR
 As suas principais características são:
 
 - O valor já está configurado no código QR.
-- Permite exibir o código QR impresso em um ticket ou em uma tela. Não é necessário fixar um código no caixa.
+- Permite exibir o código QR impresso em um recibo ou no seu dispositivo PDV. Não é necessário fixar um código no caixa.
 - Você pode coletar vários pedidos simultaneamente com códigos diferentes.
+
+> WARNING
+>
+> IMPORTANTE
+>
+> Lembre-se de que você só pode usar o QR para suas soluções de pagamento presencial.
 
 ---
 
 > NEXT_STEP_CARD_PT
 >
-> Integrar o modelo QR atendido
+> Integrar o modelo QR dinâmico
 >
 > Conheça passo a passo como integrar este modelo.
 >
-> [Integrar o modelo QR atendido](/developers/pt/docs/qr-code/qr-attended-model/integrations)
+> [Integrar o modelo QR dinâmico](/developers/pt/docs/qr-code/qr-dynamic-model/integration)

@@ -28,20 +28,3 @@ Consider the following points to improve the quality of your integration:
 * Keep the order status of your system up to date by using and processing IPN or Webhooks notifications.
 * Use API reconciliation reports to streamline your business financial management.
 
-
----
-> PREV_STEP_CARD_EN
->
-> What is QR attended model
->
-> An introduction to QR attended model
->
-> [Introduction](/developers/en/docs/qr-code/qr-attended-model/introduction)
-
-> NEXT_STEP_CARD_EN
->
-> Advanced Integration
->
-> Learn the options to take your integration to the next level.
->
-> [Advanced Integration](/developers/en/guides/qr-code/advanced-integration)

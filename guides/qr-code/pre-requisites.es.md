@@ -60,7 +60,9 @@ Una vez creados los usuarios de prueba, ya puedes comenzar con la integración y
 
 Si eres un integrador que trabajará con varios comercios para que operen con Mercado Pago, te recomendamos realizar el proceso **OAuth - autenticación entre cuentas**. Este proceso consiste en que el cliente permita que sus datos sean compartidos con un sistema de terceros de forma segura.
 
-El access token no se puede compartir de ninguna otra forma que no sea mediante OAuth. [Mas información](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/qr-code/additional-content/credentials).
+El access token no se puede compartir de ninguna otra forma que no sea mediante OAuth. [Mas información](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/credentials).
+
+
 
 ## 5. Identifica tu integración (Sponsor ID)
 
@@ -77,11 +79,11 @@ Paso a paso:
 
 > PREV_STEP_CARD_ES
 >
-> Requisitos para integrar
+> Tipos de integración
 >
-> Todo lo que necesitas para integrar Código QR.
+> Puedes elegir una de las opciones.
 >
-> [Requisitos para integrar](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/qr-code/pre-requisites)
+> [Tipos de integración](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/qr-code/integration-types)
 
 
 > NEXT_STEP_CARD_ES

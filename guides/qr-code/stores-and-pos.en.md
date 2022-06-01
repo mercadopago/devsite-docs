@@ -41,8 +41,8 @@ Having your stores set, you can create your POS. Consider the following:
 
 | Term | Description |
 | --- | --- |
-| `EXTERNAL_STORE_ID` | Links the POS to the store. It is a mandatory field and matches the *external_id* of the previously created store. |
-| `EXTERNAL_ID` | Identifies each Point of Sale (POS). It is required and can not be modified nor repeated on the same Mercado Pago account. |
+| `EXTERNAL_STORE_ID` | Links the POS to the store. It is a mandatory field and matches the `external_id` of the previously created store. |
+| `EXTERNAL_ID` | Identifies each Point of Sale (POS). It is required and can not be modified nor repeated on the same Mercado Pago account. You may also find it as `EXTERNAL_POS_ID`. |
 
 
 Go to [Create POS](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/pos/_pos/post) in our API Reference to create a POS. There you will find all the necessary information.
@@ -52,3 +52,13 @@ Go to [Create POS](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/ref
 > Note
 >
 > After the Point of Sale creation, you will see the QR files in the `Response` section, with other relevant data.
+
+---
+
+> PREV_STEP_CARD_EN
+>
+> Requirements to integrate
+>
+> Everything you need to integrate QR Code.
+>
+> [Requirements to integrate](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/qr-code/pre-requisites)

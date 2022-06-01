@@ -4,13 +4,13 @@
 
 ----[mla, mlm, mco, mlu, mlb, mlc]----
 
-Refunds apply when the payment is canceled totally or partially by the seller. You can find information in the [Refunds and Cancellations](/developers/en/guides/additional-content/sales-processing/cancellations-and-refunds) section.
+Refunds apply when the payment is canceled totally or partially by the seller. You can find information in the [Refunds](/developers/en/docs/qr-code/additional-content/refunds) section.
 
 ------------
 
 ----[mpe]----
 
-Refunds take place when the payment is canceled in full by the seller. You can find more information in the [Refunds and Cancellations](/developers/en/guides/additional-content/sales-processing/cancellations-and-refunds) section.
+Refunds take place when the payment is canceled in full by the seller. You can find more information in the [Refunds](/developers/en/docs/qr-code/additional-content/refunds) section.
 
 ------------
 > WARNING
@@ -32,23 +32,7 @@ Integrate the [Mercado Pago reconciliation reports](/developers/en/guides/additi
 ## Test and validate your integration
 
 We detailed all the necessary scenarios you should test to ensure your system's successful integration with Mercado Pago.
-Find all this information in the [Tests section](/developers/en/guides/qr-code/integration-test).
 
+Find all validation events [here](/developers/es/docs/qr-code/how-to/validation-events).
 
-
----
-> PREV_STEP_CARD_EN
->
-> What is QR attended model
->
-> An introduction to QR attended model
->
-> [Introduction](/developers/en/docs/qr-code/qr-attended-model/introduction)
-
-> NEXT_STEP_CARD_EN
->
-> Advanced Integration
->
-> Learn the options to take your integration to the next level.
->
-> [Advanced Integration](/developers/en/guides/qr-code/advanced-integration)
+Find more details in this [video tutorial](https://youtu.be/oQqJkqyjegk?list=PLCazXKuqZp3hGVY3bBhEO0ItFhIic5UpK).

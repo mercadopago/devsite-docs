@@ -11,11 +11,13 @@ Find below how this model works:
 3. Generate a QR code with the received attribute.
 4. Finally, provide the QR code to the customer for payment, as you prefer.
 
+There are two ways to follow these steps: **creating an order**, or **creating an order associated to a POS**. We'll see them next.
+
 ## Create an order
 
 First of all, generate the order publication. Once the data is sent to Mercado Pago, a string with the standard [EMVCo](https://www.emvco.com/emv-technologies/qrcodes) will be available.
 
-Execute the following API call to create an order. The response will include the data required to create the QR code.
+To create an order, access our [API Reference](/developers/en/reference/qr-dynamic/_instore_orders_qr_seller_collectors_user_id_pos_external_pos_id_qrs/post) and execute the curl you will find there. The response will include the data required to create the QR code.
 
 
 ----[mco]----
@@ -51,11 +53,11 @@ For example:
 ------------
 
 
-## Associate the order with a POS
+## Crear an order associated with a POS
 
 In addition to generating the QR code, you also have the option to create and assign the same order to the point of sale’s fixed QR code.
 
-Execute the API call detailed [in this section of our API Reference]() to generate the order and assign it to the POS. The response will contain the data required to create the QR code, associated with the declared QR.
+Execute the API call detailed [in this section of our API Reference](/developers/en/reference/qr-dynamic/_instore_orders_qr_seller_collectors_user_id_pos_external_pos_id_qrs/put) to generate the order and assign it to the POS. The response will contain the data required to create the QR code, associated with the declared QR.
 
 ## Receive orders notifications
 

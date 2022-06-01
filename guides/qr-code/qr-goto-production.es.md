@@ -27,21 +27,3 @@ Estos son algunos puntos a tener en cuenta para aumentar la calidad de tus integ
 * Utiliza los reportes de conciliación de API para mejorar la gestión financiera empresarial.
 
 
-
----
-
-> PREV_STEP_CARD_ES
->
-> Qué es QR modelo atendido
->
-> Una introducción a QR Modelo atendido
->
-> [Introducción](/developers/es/docs/qr-code/qr-attended-model/introduction)
-
-> NEXT_STEP_CARD_ES
->
-> Integración avanzada
->
-> Conoce las opciones que dispones para llevar tu integración al siguiente nivel.
->
-> [Integración avanzada](/developers/es/guides/qr-code/advanced-integration)

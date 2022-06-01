@@ -29,22 +29,3 @@ Para probar el modelo atendido, genera una orden con las [credenciales]([FAKER][
 
 Comprueba que hayas recibido las notificaciones del estado de la orden en tu sistema, ¡y listo!
 
-
-
----
-
-> PREV_STEP_CARD_ES
->
-> Qué es QR modelo atendido
->
-> Una introducción a QR Modelo atendido
->
-> [Introducción](/developers/es/docs/qr-code/qr-attended-model/introduction)
-
-> NEXT_STEP_CARD_ES
->
-> Integración avanzada
->
-> Conoce las opciones que dispones para llevar tu integración al siguiente nivel.
->
-> [Integración avanzada](/developers/es/guides/qr-code/advanced-integration)
