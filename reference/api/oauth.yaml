@@ -47,6 +47,9 @@ paths:
                 refresh_token:
                   type: string
                   description: Value received when the access token is created. Only required when grant_type=refresh_token.
+                test_token:
+                  type: string
+                  description: Added with value = true only when you want to generate credentials for testing.
       responses:
         '200':
           description: Success
