@@ -2,9 +2,9 @@
 
 Checkout Bricks viabiliza uma integração client-side de forma modular por meio de estruturas configuráveis, seguras e com integração simplificada e unificada. Todos os bricks possuem fluxos de controle do componente de UI e validação dos dados, o que faz com que o processo de integração ocorra a partir de configurações iniciais, métodos e callbacks utilizados por cada brick além de possuírem as seguintes características básicas:
 
-* [Responsividade](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/checkout-bricks-beta/introduction#bookmark_responsividade)
-* [Temas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/checkout-bricks-beta/introduction#bookmark_temas)
-* [Idiomas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/checkout-bricks-beta/introduction#bookmark_idiomas)
+* [Responsividade](/developers/pt/docs/checkout-bricks-beta/introduction#bookmark_responsividade)
+* [Temas](/developers/pt/docs/checkout-bricks-beta/introduction#bookmark_temas)
+* [Idiomas](/developers/pt/docs/checkout-bricks-beta/introduction#bookmark_idiomas)
 
 ## Responsividade
 
@@ -34,7 +34,7 @@ Veja [Selecionar idioma](/developers/pt/docs/checkout-bricks/additional-customiz
 >
 > Retorne a página inicial da documentação do Checkout Bricks.
 >
-> [Página inicial](/developers/pt/docs/checkout-bricks-beta/landing)
+> [Página inicial](/developers/pt/docs/checkout-bricks/landing)
 
 > NEXT_STEP_CARD_PT
 >
@@ -42,4 +42,4 @@ Veja [Selecionar idioma](/developers/pt/docs/checkout-bricks/additional-customiz
 >
 > Saiba mais informações sobre o Card Payment Brick e suas principais características.
 >
-> [Card Payment Brick](/developers/pt/docs/checkout-bricks-beta/card-payment-brick)
+> [Card Payment Brick](/developers/pt/docs/checkout-bricks/card-payment-brick)

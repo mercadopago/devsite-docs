@@ -41,10 +41,10 @@ El layout de Card Payment Brick se basa en las mejores prácticas de UX para que
 >
 > [Landing](/developers/es/docs/checkout-bricks/landing)
  
-> NEXT_STEP_CARD_EN
+> NEXT_STEP_CARD_ES
 >
-> Prerequisites
+> Requisitos previos
 >
-> Learn about the prerequisites needed to integrate Checkout Bricks.
+> Conozca los requisitos previos necesarios para integrar Checkout Bricks.
 >
-> [Prerequisites](/developers/pt/docs/checkout-bricks/integration/prerequisites)
+> [Requisitos previos](/developers/es/docs/checkout-bricks/integration/prerequisites)

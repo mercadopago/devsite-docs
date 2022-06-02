@@ -43,8 +43,8 @@ The Card Payment Brick layout is based on the best UX practices, so that it is p
  
 > NEXT_STEP_CARD_EN
 >
-> Requisitos previos
+> Prerequisites
 >
-> Conozca los requisitos previos necesarios para integrar Checkout Bricks.
+> Learn about the prerequisites needed to integrate Checkout Bricks.
 >
-> [Pré-requisitos](/developers/pt/docs/checkout-bricks/integration/prerequisites)
+> [Prerequisites](/developers/en/docs/checkout-bricks/integration/prerequisites)

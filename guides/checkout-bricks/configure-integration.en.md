@@ -2,11 +2,10 @@
 
 To configure brick integration you need to follow the steps below:
 
-1. [Create container](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/checkout-bricks/integration/configure-integration#bookmark_create_container)
-2. [Include and configure MercadoPago.js library](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/checkout-bricks/integration/configure-integration#bookmark_include_and_configure_mercadopago.js_library)
-3. [Instantiate brick](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/checkout-bricks/integration/configure-integration#bookmark_instantiate_brick)
-4. [Render brick](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/checkout-bricks/integration/configure-integration#bookmark_render_brick)
-5. [Install Mercado Pago SDK](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/checkout-bricks/integration/configure-integration#bookmark_install_mercado_pago_sdk)
+1. [Create container](/developers/en/docs/checkout-bricks-beta/integration/configure-integration#bookmark_create_container)
+2. [Include and configure MercadoPago.js library](/developers/en/docs/checkout-bricks-beta/integration/configure-integration#bookmark_include_and_configure_mercadopago.js_library)
+3. [Instantiate brick](/developers/en/docs/checkout-bricks-beta/integration/configure-integration#bookmark_instantiate_brick)
+4. [Render brick](/developers/en/docs/checkout-bricks-beta/integration/configure-integration#bookmark_render_brick)
 
 > The steps are performed on the backend or frontend. The **Client-Side** and **Server-Side** pills located immediately next to the title help you to identify which step is performed in which instance.
 
@@ -128,65 +127,6 @@ renderCardPaymentBrick(bricksBuilder);
 ```
 
 ![cardform](checkout-bricks/card-form-en.png)
-
-> SERVER_SIDE
->
-> h2
->
-> Install Mercado Pago SDK
-
-Install an [official SDK](/developers/en/guides/sdks) to simplify your interaction with our APIs.
-
-[[[
-```php
-===
-[Install Composer](https://getcomposer.org/download) to use the SDK.
-
-Then run the following code on the command line:
-===
-php composer.phar require "mercadopago/dx-php:dev-master"
-```
-```node
-===
-To install the SDK you must execute the following code on the command line of your terminal using [npm](https://www.npmjs.com/get-npm):
-===
-npm install mercadopago
-```
-```java
-===
-To install the SDK in your [Maven](http://maven.apache.org/install.html) project, add the following dependency in your pom.xml file and then run ´maven install´.
-===
-<dependency>
-   <groupId>com.mercadopago</groupId>
-   <artifactId>sdk-java</artifactId>
-   <version>2.0.0</version>
-</dependency>
-```
-```ruby
-===
-The Mercado Pago SDK is available as a [gem](https://rubygems.org/gems/mercadopago-sdk), to install it you must execute the following code on the command line:
-===
-gem install mercadopago-sdk
-```
-```csharp
-===
-----[mlb]----
-Use [NuGet](https://docs.microsoft.com/pt-br/nuget/reference/nuget-exe-cli-reference) to install the Mercado Pago SDK .NET.
-------------
-----[mla, mco, mlu, mlc, mlm]----
-Use [NuGet](https://docs.microsoft.com/es-es/nuget/reference/nuget-exe-cli-reference) to install the Mercado Pago SDK .NET.
-------------
-To do this, run the following command on your terminal:
-===
-nuget install mercadopago-sdk
-```
-```python
-===
-The Mercado Pago SDK is available as a [pip](https://pypi.org/project/mercadopago/), to install it you must execute the following code on the command line:
-===
-pip3 install mercadopago
-```
-]]]
 
 > PREV_STEP_CARD_EN
 >
