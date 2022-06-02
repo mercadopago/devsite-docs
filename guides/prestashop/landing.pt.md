@@ -46,7 +46,7 @@ available_countries: mla, mlb, mlm, mlu, mco, mlc, mpe
 ----[mlb]----
 
 ---
-available_payments: credit, debit, mercadopago, ticket, pix, pec
+available_payments: credit, debit, mercadopago, ticket, pix
 
 ---
 ------------
