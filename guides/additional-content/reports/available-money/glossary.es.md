@@ -19,7 +19,7 @@
 >
 > Importante
 >
-> A partir del 1 de agosto no podrás crear nuevos reportes Dinero retirado. Para seguir llevando el control de todos los retiros y movimientos de tu dinero disponible [usa el reporte Liberaciones.](https://vendedores.mercadolibre[FAKER][URL][DOMAIN]/lleva-el-control-de-tu-dinero-con-el-reporte-de-liberaciones)
+> A partir del 1 de agosto no podrás crear nuevos reportes **Dinero retirado**. Para seguir llevando el control de todos los retiros y movimientos de tu dinero disponible [usa el reporte Liberaciones.](https://vendedores.mercadolibre[FAKER][URL][DOMAIN]/lleva-el-control-de-tu-dinero-con-el-reporte-de-liberaciones)
 ------------
 
 Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado con todos ellos. ¡Usa este glosario para no perderte!
