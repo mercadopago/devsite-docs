@@ -7,7 +7,7 @@ Para integrar o checkout, siga os passos abaixo.
 1. Selecione **Sim** para ativar a experiência do checkout na sua loja. Clique [aqui](/developer/pt/guides/additional-content/payment-localization/consult-payment-methods) e veja quais são as bandeiras de cartões diponíveis para pagamento.
 2. [Configure](https://www.mercadopago.com.br//costs-section#from-section=menu) a tarifa que será paga em cada compra e também ofereça parcelas sem juros para seus clientes.
 3. Ative o **modo binário** quando não quiser deixar os pagamentos em estado pendente ou em revisão. Com o modo binário, os pagamentos serão aceitos ou recusados automaticamente.
-4. Indique o período em que as preferências de pagamento do cliente ficarão salvas sem que este precise incluí-las novamente.
+4. Selecione a opção do **wallet button** para indicar que o comprador terá a opção de salvar as informações de seus cartões para pagamentos futuros.
 5. Se necessário, defina um valor percentual de desconto para os clientes que pagarem com Mercado Pago.
  
 ## Customização de e-mail
