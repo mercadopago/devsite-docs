@@ -2,9 +2,10 @@
 content_section_with_media:
  - title: PrestaShop
  - message: A PrestaShop é uma plataforma de e-commerce com software de código aberto, que permite a qualquer usuário criar e desenvolver um site comercial. Como parceiros oficiais da PrestaShop, fornecemos maior segurança e eficiência à sua loja.
- - media_image: https://www.youtube.com/embed/jv9oCydWV78 
+ - media_video: https://www.youtube.com/embed/npvBT3qsbhU
 ---
  
+----[mlb]---- 
 ---
 bullet_section_with_media:
  - title: Pagamento
@@ -12,17 +13,14 @@ bullet_section_with_media:
  - message: Com o plugin do Mercado Pago você pode configurar o pagamento utilizando:
  - benefit_title: Checkout Pro
  - benefit_message: O pagamento é realizado na página do Mercado Pago (dentro ou fora da sua loja) com cartões (débito ou crédito) e dinheiro (saldo da conta do Mercado Pago ou boleto bancário).
- ----[mlb]---- 
  - benefit_title: Checkout Transparente
- - benefit_message: O pagamento é realizado com cartão de crédito sem sair da sua loja virtual. ------------ 
- ----[mla, mlm, mpe, mco, mlu, mlc] ----
- - benefit_title: Checkout API
- - benefit_message: O pagamento é realizado com cartão de crédito sem sair da sua loja virtual. ------------
+ - benefit_message: O pagamento é realizado com cartão de crédito sem sair da sua loja virtual.  
  - benefit_title: Ticket Checkout
  - benefit_message: Os pagamentos são realizados presencialmente com dinheiro----[mlb]---- ou boleto bancário ------------.
  - image: /prestashop/prestashop-payment.png 
 ---
- 
+------------
+
 ---
 bullet_section_with_media:
  - title: Vantagens
