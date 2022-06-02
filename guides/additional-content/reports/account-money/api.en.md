@@ -11,7 +11,7 @@ Know the fields you can configure to adjust your preferences before you start:
 >
 > Important
 >
-> Setting up frequency feature does not mean that the report will be generated automatically. The settings will apply only when the automatic scheduling is activated. For more details, please go to the [Schedule your automatic reports](#bookmark_schedule_your_automatic_reports) section.
+> Setting up `frequency` feature does not mean that the report will be generated automatically. The settings will apply only when the automatic scheduling is activated. For more details, please go to the [Schedule your automatic reports](#bookmark_schedule_your_automatic_reports) section.
 
 | Configurable fields | Description |
 | --- | --- |
