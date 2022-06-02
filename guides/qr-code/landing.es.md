@@ -2,7 +2,7 @@
 content_section_with_media:
     - title: Código QR
     - message: El QR es un código vinculado a tu cuenta de Mercado Pago que te permite recibir pagos de un modo simple, rápido y seguro. Para recibir pagos con QR en tu negocio puedes imprimirlo y pegarlo en un lugar visible o mostrarlo en tu dispositivo móvil y cobrar desde la app de Mercado Pago.
-    - media_video: https://www.youtube.com/embed/JCSRHWZMgc4
+    - media_video: https://www.youtube.com/watch?v=2DQMc5ErWqA
 ---
 
 --- mini_landing_separator ---
