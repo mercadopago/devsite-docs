@@ -2,7 +2,8 @@
 
 Você pode gerar seu relatório via API, tanto de forma manual quanto programada.
 Ganhe tempo e **automatizá la frecuencia de generación del reporte** de Dinheiro em conta sempre que quiser.
- ## Atributos configuráveis
+
+## Atributos configuráveis
 
 Confira os campos que você pode configurar para ajustar suas preferências antes de começar:
 
