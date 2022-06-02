@@ -15,7 +15,7 @@ Confira os campos que você pode configurar para ajustar suas preferências ante
 
 > WARNING
 >
-> Warning
+> Importante
 >
 > Configurar este atributo de `frequency` não significa que o relatório será gerado automaticamente. A configuração será aplicada somente quando o agendamento automático for ativado. Para mais detalhes, confira a seção [Agende seus relatórios](#bookmark_agende_seus_relatórios_automáticos).
 
