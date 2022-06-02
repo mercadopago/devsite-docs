@@ -40,7 +40,19 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 | POI_ID | ID del lector si el pago se realiza a través de un comercio físico. |
 | CARD_INITIAL_NUMBER | Corresponde a los primeros dígitos de la tarjeta crédito o débito con la que se hizo la compra. |
 | OPERATION_TAGS | Son las etiquetas para categorizar y/o segmentar diferentes aspectos de la transacción, como por ejemplo los canales usados para hacer un pago.Se identifican como:<br>WHATSAPP_PAY: Esta etiqueta indica que el pago fue hecho a través de whatsApp<br>QR: Esta etiqueta indica que el pago fue hecho a través de un código QR<br>PO: Esta etiqueta indica que el pago fue hecho con un Point<br>MARKETPLACE: Esta etiqueta indica que el pago fue hecho directamente en Mercado Libre. |
-| ITEM_ID | Identificador del producto vendido. |
+| ITEM_ID | Identificador del producto vendido. | ----[mla]----
+| PAYER_NAME* | Nombre de quien hace un pago o una donación. | ------------ ----[mla]----
+| PAYER_ID_TYPE* | Tipo de identificación de quien hace un pago o una donación. | ------------ ----[mla]----
+| PAYER_ID_NUMBER* | Número de identificación de quien hace un pago o una donación. | ------------
+
+----[mla]----
+> INFO
+>
+> (*) Esta información solo se podrá usar para conciliar, será tratada conforme a las leyes de protección de datos
+> personales aplicables y estará disponible cuando se reciban pagos con QR, transferencias o cuando reciba una donación
+> como ONG.
+------------
+
 
 ----[mpe, mlu]----
 > INFO
