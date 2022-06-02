@@ -24,7 +24,7 @@ Conoce los campos que puedes configurar para ajustar tus preferencias antes de e
 
 > WARNING
 >
-> Warning
+> Importante
 >
 > Configurar el atributo `frequency` no implica que el reporte se genere automáticamente. La configuración aplicará solo cuando se active la programación automática. Para mayor detalle puedes dirigirte a la sección [Programa tus reportes](#bookmark_programa_tus_reportes_automáticos).
 
