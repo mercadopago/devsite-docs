@@ -16,7 +16,7 @@ If all the prerequisites are met, you can perform the Checkout Bricks integratio
 >
 > Learn more about Card Payment Brick.
 >
-> [Card Payment Brick](/developers/en/docs/checkout-bricks-beta/card-payment-brick)
+> [Card Payment Brick](/developers/en/docs/checkout-bricks/card-payment-brick)
 
 > NEXT_STEP_CARD_EN
 >
@@ -24,4 +24,4 @@ If all the prerequisites are met, you can perform the Checkout Bricks integratio
 >
 > Learn how to integrate Bricks step by step.
 >
-> [Configure integration](/developers/en/docs/checkout-bricks-beta/integration/configure-integration)
+> [Configure integration](/developers/en/docs/checkout-bricks/integration/configure-integration)

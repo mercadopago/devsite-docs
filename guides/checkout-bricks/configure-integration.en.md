@@ -2,15 +2,15 @@
 
 To configure brick integration you need to follow the steps below:
 
-1. [Create container](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/checkout-bricks-beta/integration/configure-integration#bookmark_create_container)
-2. [Include and configure MercadoPago.js library](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/checkout-bricks-beta/integration/configure-integration#bookmark_include_and_configure_mercadopago.js_library)
-3. [Instantiate brick](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/checkout-bricks-beta/integration/configure-integration#bookmark_instantiate_brick)
-4. [Render brick](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/checkout-bricks-beta/integration/configure-integration#bookmark_render_brick)
-5. [Install Mercado Pago SDK](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/checkout-bricks-beta/integration/configure-integration#bookmark_install_mercado_pago_sdk)
+1. [Create container](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/checkout-bricks/integration/configure-integration#bookmark_create_container)
+2. [Include and configure MercadoPago.js library](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/checkout-bricks/integration/configure-integration#bookmark_include_and_configure_mercadopago.js_library)
+3. [Instantiate brick](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/checkout-bricks/integration/configure-integration#bookmark_instantiate_brick)
+4. [Render brick](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/checkout-bricks/integration/configure-integration#bookmark_render_brick)
+5. [Install Mercado Pago SDK](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/checkout-bricks/integration/configure-integration#bookmark_install_mercado_pago_sdk)
 
 > The steps are performed on the backend or frontend. The **Client-Side** and **Server-Side** pills located immediately next to the title help you to identify which step is performed in which instance.
 
-And, to help, we have prepared a complete [code example](/developers/en/docs/checkout-bricks-beta/integration/code-example#bookmark_configure_the_integration) that you can use as a template.
+And, to help, we have prepared a complete [code example](/developers/en/docs/checkout-bricks/integration/code-example#bookmark_configure_the_integration) that you can use as a template.
 
 > CLIENT_SIDE
 >
@@ -72,7 +72,7 @@ const bricksBuilder = mp.bricks();
 >
 > Attention
 >
-> During brick instantiation, different errors may appear. For more details on each of them, see the [Possible Errors](/developers/en/docs/checkout-bricks-beta/additional-content/possible-errors) section.
+> During brick instantiation, different errors may appear. For more details on each of them, see the [Possible Errors](/developers/en/docs/checkout-bricks/additional-content/possible-errors) section.
 
 > CLIENT_SIDE
 >
@@ -194,7 +194,7 @@ pip3 install mercadopago
 >
 > See more information about the available themes to instantiate/render Card Payment Brick in.
 >
-> [Themes](/developers/en/docs/checkout-bricks-beta/characteristics/themes)
+> [Themes](/developers/en/docs/checkout-bricks/characteristics/themes)
  
 > NEXT_STEP_CARD_EN
 >
@@ -202,4 +202,4 @@ pip3 install mercadopago
 >
 > After you set up the integration, here's how to send payments to Mercado Pago.
 >
-> [Send payments to Mercado Pago](/developers/en/docs/checkout-bricks-beta/integration/payment-submission) 
+> [Send payments to Mercado Pago](/developers/en/docs/checkout-bricks/integration/payment-submission) 

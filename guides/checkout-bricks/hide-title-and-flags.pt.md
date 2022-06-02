@@ -28,7 +28,7 @@ const settings = {
 >
 > Caso deseje, saiba como ocultar o obtão de pagamento no Card Payment Brick.
 >
-> [Ocultar botão de pagamento](/developers/pt/docs/checkout-bricks-beta/additional-customization/hide-payment-button)
+> [Ocultar botão de pagamento](/developers/pt/docs/checkout-bricks/additional-customization/hide-payment-button)
 
 > NEXT_STEP_CARD_PT
 >
@@ -36,4 +36,4 @@ const settings = {
 >
 > Caso deseje, veja como alterar os textos do layout escolhido no Card Payment Brick.
 >
-> [Alterar textos](/developers/pt/docs/checkout-bricks-beta/additional-customization/modify-texts)
+> [Alterar textos](/developers/pt/docs/checkout-bricks/additional-customization/modify-texts)

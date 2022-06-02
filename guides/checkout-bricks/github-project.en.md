@@ -11,4 +11,4 @@ Click on the links below to access the projects available in the **GitHub** repo
 >
 > Know what are the possible errors shown to the integrator when instantiating the Brick.
 >
-> [Possible errors](/developers/en/docs/checkout-bricks-beta/additional-content/possible-errors)
+> [Possible errors](/developers/en/docs/checkout-bricks/additional-content/possible-errors)

@@ -29,7 +29,7 @@ const settings = {
 >
 > Aprende a modificar las variables CSS de Card Payment Brick si así lo deseas.
 >
-> [Modificar variables CSS](/developers/es/docs/checkout-bricks-beta/additional-customization/modify-css-variables)
+> [Modificar variables CSS](/developers/es/docs/checkout-bricks/additional-customization/modify-css-variables)
  
 > NEXT_STEP_CARD_ES
 >
@@ -37,4 +37,4 @@ const settings = {
 >
 > También puedes iniciar Brick con un documento de ID. Descubre cómo.
 >
-> [Iniciar Brick con documento de ID](/developers/es/docs/checkout-bricks-beta/additional-customization/initiate-brick-with-document)
+> [Iniciar Brick con documento de ID](/developers/es/docs/checkout-bricks/additional-customization/initiate-brick-with-document)

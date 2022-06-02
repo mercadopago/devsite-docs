@@ -2,7 +2,7 @@
 
 O Card Payment Brick oferece um formulário de pagamento com um layout otimizado e temas diferentes, trazendo todos os campos necessários para se efetuar um pagamento através de cartão de crédito e/ou débito, e inclui os mecanismos necessários para receber automaticamente os dados necessários para criar o pagamento no back-end.
 
-Este brick, além de conter os campos de coleta dos dados pessoais do titular do cartão (nome do titular e documento), conta também com campos de coleta do número do cartão, data de vencimento e código de segurança (CVV) que já estão em conformidade com padrões de segurança [PCI](/developers/pt/docs/checkout-bricks/additional-content/security/pci), eliminando a necessidade de tratamento desses dados.
+Este brick, além de conter os campos de coleta dos dados pessoais do titular do cartão (nome do titular e documento), conta também com campos de coleta do número do cartão, data de vencimento e código de segurança (CVV) que já estão em conformidade com padrões de segurança [PCI](/developers/pt/guides/additional-content/security/pci), eliminando a necessidade de tratamento desses dados.
 
 Além de coletar os campos necessários para efetuar o pagamento, este componente ainda auxilia o usuário a finalizar o preenchimento da tela com alertas de campos incompletos e possíveis erros no preenchimento. Veja a seguir as principais caracteristicas deste brick. 
 
@@ -39,7 +39,7 @@ O layout do Card Payment Brick foi construído com base nas melhores práticas d
 >
 > Saiba mais informações sobre as vantagens de utilizar o Checkouts Bricks e conheça os bricks que irão compor o checkout.
 >
-> [Introdução](/developers/pt/docs/checkout-bricks-beta/introduction)
+> [Introdução](/developers/pt/docs/checkout-bricks/introduction)
 
 > NEXT_STEP_CARD_PT
 >
@@ -47,4 +47,4 @@ O layout do Card Payment Brick foi construído com base nas melhores práticas d
 >
 > Conheça os pré-requisitos necessários para integrar o Checkout Bricks.
 >
-> [Pré-requisitos](/developers/pt/docs/checkout-bricks-beta/integration/prerequisites)
+> [Pré-requisitos](/developers/pt/docs/checkout-bricks/integration/prerequisites)

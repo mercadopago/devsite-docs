@@ -35,7 +35,7 @@ const settings = {
 >
 > Si lo deseas, aprende a seleccionar otro tema al instanciar/renderizar Card Payment Brick.
 >
-> [Definir tema](/developers/es/docs/checkout-bricks-beta/additional-customization/set-theme)
+> [Definir tema](/developers/es/docs/checkout-bricks/additional-customization/set-theme)
 
 > NEXT_STEP_CARD_ES
 >
@@ -43,4 +43,4 @@ const settings = {
 >
 > Consulta cómo iniciar Card Payment Brick con un email, si lo deseas.
 >
-> [Iniciar Brick con email](/developers/es/docs/checkout-bricks-beta/additional-customization/initiate-brick-with-email)
+> [Iniciar Brick con email](/developers/es/docs/checkout-bricks/additional-customization/initiate-brick-with-email)

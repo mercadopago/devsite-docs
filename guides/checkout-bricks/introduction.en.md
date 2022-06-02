@@ -2,9 +2,9 @@
 
 Checkout Bricks viabiliza uma integração client-side de forma modular por meio de estruturas configuráveis, seguras e com integração simplificada e unificada. Todos os bricks possuem fluxos de controle do componente de UI e validação dos dados, o que faz com que o processo de integração ocorra a partir de configurações iniciais, métodos e callbacks utilizados por cada brick além de possuírem as seguintes características básicas:
 
-* [Responsiveness](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/checkout-bricks-beta/introduction#bookmark_responsiveness)
-* [Themes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/checkout-bricks-beta/introduction#bookmark_themes)
-* [Languages](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/checkout-bricks-beta/introduction#bookmark_languages)
+* [Responsiveness](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/checkout-bricks/introduction#bookmark_responsiveness)
+* [Themes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/checkout-bricks/introduction#bookmark_themes)
+* [Languages](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/checkout-bricks/introduction#bookmark_languages)
 
 ## Responsiveness
 
@@ -14,7 +14,7 @@ The Brick has responsive capabilities in terms of the size within the screen. Th
 
 ## Themes
 
-The Card Payment Brick can be instantiated/rendered with different themes and features that can best suit the look and feel of the store. The characteristics of each of the available themes are detailed below see [Set Theme](/developers/en/docs/checkout-bricks/additional-customization-beta/set-theme) for instructions on how to change the theme of the brick).
+The Card Payment Brick can be instantiated/rendered with different themes and features that can best suit the look and feel of the store. The characteristics of each of the available themes are detailed below see [Set Theme](/developers/en/docs/checkout-bricks/additional-customization/set-theme) for instructions on how to change the theme of the brick).
 
 ![themes](checkout-bricks/themes-paymentcard-pt.png)
 
@@ -26,7 +26,7 @@ The Card Payment Brick can be instantiated/rendered in three different languages
 * English 
 * Spanish
 
-Check [Select language](/developers/en/docs/checkout-bricks-beta/additional-customization/select-language) for instructions on how to select the language of the brick. 
+Check [Select language](/developers/en/docs/checkout-bricks/additional-customization/select-language) for instructions on how to select the language of the brick. 
 
 > PREV_STEP_CARD_EN
 >
@@ -34,7 +34,7 @@ Check [Select language](/developers/en/docs/checkout-bricks-beta/additional-cust
 >
 > Return to the Checkout Bricks documentation home page.
 >
-> [Home page](/developers/en/docs/checkout-bricks-beta/landing)
+> [Home page](/developers/en/docs/checkout-bricks/landing)
 
 > NEXT_STEP_CARD_EN
 >
@@ -42,4 +42,4 @@ Check [Select language](/developers/en/docs/checkout-bricks-beta/additional-cust
 >
 > Learn more about Card Payment Brick.
 >
-> [Card Payment Brick](/developers/en/docs/checkout-bricks-beta/card-payment-brick)
+> [Card Payment Brick](/developers/en/docs/checkout-bricks/card-payment-brick)

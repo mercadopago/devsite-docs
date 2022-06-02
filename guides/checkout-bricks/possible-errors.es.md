@@ -1,6 +1,6 @@
 # Posibles errores
 
-A continuación encontrará listas de errores que pueden ocurrir durante la integración de ladrillos. Ya sean relacionadas con [envío de variables]() o [comunicación con servicios externos]() (APIs de Mercado Pago).
+A continuación encontrará listas de errores que pueden ocurrir durante la integración de los bricks. Ya sean relacionadas con **envío de variables** o **comunicación con servicios externos** (APIs de Mercado Pago).
 
 ## Variables pasadas por el integrador
 
@@ -34,7 +34,7 @@ Durante el proceso de integración del Brick, es posible que **al momento de ins
 >
 > Si lo deseas, puedes seleccionar el idioma de Card Payment Brick. Aprende cómo.
 >
-> [Selecionar idioma](/developers/es/docs/checkout-bricks-beta/additional-customization/select-language)
+> [Selecionar idioma](/developers/es/docs/checkout-bricks/additional-customization/select-language)
 
 > NEXT_STEP_CARD_ES
 >
@@ -42,4 +42,4 @@ Durante el proceso de integración del Brick, es posible que **al momento de ins
 >
 > Obtenga acceso a el link del proyecto funcional y de la documentación técnica.
 >
-> [GitHub project](/developers/es/docs/checkout-bricks-beta/additional-content/github-project)
+> [GitHub project](/developers/es/docs/checkout-bricks/additional-content/github-project)

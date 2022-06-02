@@ -11,4 +11,4 @@ Clique nos links abaixo para acessar os projetos disponíveis no repositório do
 >
 > Saiba quais são os possíveis erros exibidos ao integrador no momento de instanciar o Brick.
 >
-> [Possíveis erros](/developers/pt/docs/checkout-bricks-beta/additional-content/possible-errors)
+> [Possíveis erros](/developers/pt/docs/checkout-bricks/additional-content/possible-errors)

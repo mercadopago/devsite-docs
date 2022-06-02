@@ -16,7 +16,7 @@ Se todos os pré-requisitos foram atendidos, você poderá realizar a integraç�
 >
 > Saiba mais informações sobre o Card Payment Brick e suas principais caracterísitcas.
 >
-> [Card Payment Brick](/developers/pt/docs/checkout-bricks-beta/card-payment-brick)
+> [Card Payment Brick](/developers/pt/docs/checkout-bricks/card-payment-brick)
 
 > NEXT_STEP_CARD_PT
 >
@@ -24,4 +24,4 @@ Se todos os pré-requisitos foram atendidos, você poderá realizar a integraç�
 >
 > Saiba como realizar o passo a passo de integração dos Bricks.
 >
-> [Configurar a integração](/developers/pt/docs/checkout-bricks-beta/integration/configure-integration) 
+> [Configurar a integração](/developers/pt/docs/checkout-bricks/integration/configure-integration) 

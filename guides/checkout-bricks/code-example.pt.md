@@ -300,7 +300,7 @@ curl -X POST \
 >
 > Veja como realizar testes para garantir o funcionamento correto de sua integração.
 >
-> [Enviar pagamento ao Mercado Pago](/developers/pt/docs/checkout-bricks-beta/integration/integration-test) 
+> [Enviar pagamento ao Mercado Pago](/developers/pt/docs/checkout-bricks/integration/integration-test) 
 
 > NEXT_STEP_CARD_PT
 >
@@ -308,4 +308,4 @@ curl -X POST \
 >
 > Caso deseje, veja como selecionar outro tema ao instanciar/renderizar o Card Payment Brick.
 >
-> [Definir tema](/developers/pt/docs/checkout-bricks-beta/additional-customization/set-theme)
+> [Definir tema](/developers/pt/docs/checkout-bricks/additional-customization/set-theme)

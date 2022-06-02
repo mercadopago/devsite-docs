@@ -2,7 +2,7 @@
 
 Card Payment Brick offers a payment form with an optimized design and different themes, providing all the necessary fields to make a payment with a credit and/or debit card, and includes the necessary mechanisms to automatically receive the necessary data to create the payment in the back end.
 
-This brick, in addition to containing the fields to collect the personal data of the cardholder (name of the cardholder and ID), also has fields to collect the card number, the expiration date and the security code (CVV), which already comply with [PCI](/developers/en/docs/checkout-bricks/additional-content/security/pci) security standards, eliminating the need to process this data.
+This brick, in addition to containing the fields to collect the personal data of the cardholder (name of the cardholder and ID), also has fields to collect the card number, the expiration date and the security code (CVV), which already comply with [PCI](/developers/en/guides/additional-content/security/pci) security standards, eliminating the need to process this data.
 
 In addition to collecting the necessary fields to make the payment, this component also helps the user to complete the screen with alerts for incomplete fields and possible input errors. See below the main features of this brick.
 
@@ -39,7 +39,7 @@ The Card Payment Brick layout is based on the best UX practices, so that it is p
 >
 > Learn more about Checkout Bricks, a UI (User Interface) component library that aims to enable client-side integration.
 >
-> [Landing](/developers/en/docs/checkout-bricks-beta/landing)
+> [Landing](/developers/en/docs/checkout-bricks/landing)
  
 > NEXT_STEP_CARD_EN
 >
@@ -47,4 +47,4 @@ The Card Payment Brick layout is based on the best UX practices, so that it is p
 >
 > Conozca los requisitos previos necesarios para integrar Checkout Bricks.
 >
-> [Pré-requisitos](/developers/pt/docs/checkout-bricks-beta/integration/prerequisites)
+> [Pré-requisitos](/developers/pt/docs/checkout-bricks/integration/prerequisites)
