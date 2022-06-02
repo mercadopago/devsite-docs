@@ -16,7 +16,7 @@ bullet_section_with_media:
  - benefit_title: Checkout Transparente
  - benefit_message: O pagamento é realizado com cartão de crédito sem sair da sua loja virtual.  
  - benefit_title: Ticket Checkout
- - benefit_message: Os pagamentos são realizados presencialmente com dinheiro----[mlb]---- ou boleto bancário ------------.
+ - benefit_message: Os pagamentos são realizados presencialmente com dinheiro ou boleto bancário.
  - image: /prestashop/prestashop-payment.png 
 ---
 ------------
