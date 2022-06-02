@@ -6,7 +6,7 @@ Checkout Bricks permite la integración del lado del cliente de forma modular a 
 * [Temas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/checkout-bricks/introduction#bookmark_temas)
 * [Idiomas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/checkout-bricks/introduction#bookmark_idiomas)
 
-## Responsividade
+## Responsividad
 
 El Brick posee capacidades responsivas en términos del tamaño del espacio en la pantalla. El brick siempre ocupará el espacio que se le ha definido y responderá cuando este espacio cambie durante su uso.
 
