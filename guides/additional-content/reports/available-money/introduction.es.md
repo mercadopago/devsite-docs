@@ -3,7 +3,7 @@
 
 El reporte de Dinero retirado es un **informe descargable que te permite conocer cómo está compuesto el dinero que retiraste de Mercado Pago.** Contiene el **detalle de todos los fondos involucrados en dicho retiro,** tanto para casos de liberación de dinero como para bloqueos o desbloqueos.
 
-----[mlm, mlb, mlc, mco, mla]----
+----[mlm, mlb, mla]----
 > WARNING
 >
 > Importante
@@ -17,7 +17,13 @@ El reporte de Dinero retirado es un **informe descargable que te permite conocer
 >
 > A partir del 15 de mayo no podrás crear nuevos reportes. Tendrás a disposición tu historial para que puedas descargar los archivos que necesites. Para seguir llevando el control de todos los retiros y movimientos de tu dinero disponible puedes usar el [reporte de liberaciones.](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/23879?utm_source=faq_mp&utm_medium=faq&utm_campaign=bank_disable)
 ------------
-
+----[mco, mlc]----
+> WARNING
+>
+> Importante
+>
+> A partir del 1 de agosto no podrás crear nuevos reportes **Dinero retirado**. Para seguir llevando el control de todos los retiros y movimientos de tu dinero disponible [usa el reporte Liberaciones.](https://vendedores.mercadolibre[FAKER][URL][DOMAIN]/lleva-el-control-de-tu-dinero-con-el-reporte-de-liberaciones)
+------------
 ## ¿Cómo descargo el reporte?
 
 Ten en cuenta que la generación del reporte lleva unos minutos dependiendo de cuánta información quieras que incluya. No siempre estará listo al instante y, hasta que lo esté, verás el estado *En preparación* en la pantalla.
