@@ -22,7 +22,7 @@ El reporte de Dinero retirado es un **informe descargable que te permite conocer
 >
 > Importante
 >
-> A partir del 1 de agosto no podrás crear nuevos reportes Dinero retirado. Para seguir llevando el control de todos los retiros y movimientos de tu dinero disponible [usa el reporte Liberaciones.](https://vendedores.mercadolibre[FAKER][URL][DOMAIN]/lleva-el-control-de-tu-dinero-con-el-reporte-de-liberaciones)
+> A partir del 1 de agosto no podrás crear nuevos reportes **Dinero retirado**. Para seguir llevando el control de todos los retiros y movimientos de tu dinero disponible [usa el reporte Liberaciones.](https://vendedores.mercadolibre[FAKER][URL][DOMAIN]/lleva-el-control-de-tu-dinero-con-el-reporte-de-liberaciones)
 ------------
 ## ¿Cómo descargo el reporte?
 
