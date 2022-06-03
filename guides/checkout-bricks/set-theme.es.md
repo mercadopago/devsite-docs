@@ -30,7 +30,7 @@ const settings = {
 >
 > Para facilitar y optimizar el proceso de integración, consulta un ejemplo de integración con Checkout Bricks.
 >
-> [Enviar pago a Mercado Pago](/developers/es/docs/checkout-bricks/additional-customization/code-example)
+> [Enviar pago a Mercado Pago](/developers/es/docs/checkout-bricks/integration/code-example)
 
 > NEXT_STEP_CARD_ES
 >
