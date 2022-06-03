@@ -7,8 +7,8 @@ Para configurar a integração dos bricks você precisa seguir os passos abaixo:
 3. [Instanciar brick](/developers/pt/docs/checkout-bricks/integration/configure-integration#bookmark_instanciar_brick)
 4. [Renderizar brick](/developers/pt/docs/checkout-bricks/integration/configure-integration#bookmark_renderizar_brick)
 
-> Os passos são realizados no back-end ou no front-end. As pills **Client-Side** e **Server-Side** localizadas imediatamentamente ao lado do título te ajudam a identificar qual passo é realizado em qual instância. 
-> <br/>
+> Os passos são realizados no back-end ou no front-end. As pills **Client-Side** e **Server-Side** localizadas imediatamentamente ao lado do título te ajudam a identificar qual passo é realizado em qual instância. <br/></br>
+> <br/></br>
 > E, para ajudar, preparamos um [exemplo de codigo](/developers/pt/docs/checkout-bricks/integration/code-example) completo da configuração dos bricks, que você pode usar como modelo.
 
 > CLIENT_SIDE
@@ -41,7 +41,7 @@ Você vai precisar criar um container para definir o local que o brick será ins
 >
 > Atenção
 >
-> O codigo JS pode ser incluido em uma tag <script> ou um arquivo JS separado.
+> O codigo JS pode ser incluido em uma tag `< script >` ou um arquivo JS separado.
 
 Você precisará instalar o SDK adicionando o seguinte em seu código HTML:
 

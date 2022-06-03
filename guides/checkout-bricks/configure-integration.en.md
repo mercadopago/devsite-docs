@@ -41,7 +41,7 @@ You will need to create a container to define where the brick will be placed on 
 >
 > Attention
 >
-> JS code can be included in a <script> tag or a separate JS file.
+> JS code can be included in a `< script >` tag or a separate JS file.
 
 You will need to install the SDK by adding the following in your HTML code:
 
