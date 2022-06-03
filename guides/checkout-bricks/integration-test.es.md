@@ -42,4 +42,4 @@ Inicia tu integración configurada con las credenciales de tu usuario de prueba 
 >
 > Para facilitar y optimizar el proceso de integración, consulta un ejemplo de integración con Checkout Bricks.
 >
-> [Enviar pago a Mercado Pago](/developers/es/docs/checkout-bricks/code-example)
+> [Enviar pago a Mercado Pago](/developers/es/docs/checkout-bricks/integration/code-example)

@@ -7,9 +7,9 @@ Para configurar la integración de los bricks, debe seguir los pasos a continuac
 3. [Instanciar brick](/developers/es/docs/checkout-bricks-beta/integration/configure-integration#bookmark_instanciar_brick)
 4. [Renderizar brick](/developers/es/docs/checkout-bricks-beta/integration/configure-integration#bookmark_renderizar_brick)
 
-> Los pasos se realizan en el backend o frontend. Las pills **Client-Side** y **Server-Side** ubicadas inmediatamente al lado del título lo ayudan a identificar qué paso se realiza en qué instancia.
+> Los pasos se realizan en el backend o frontend. Las etiquetas **Client-Side** y **Server-Side** ubicadas inmediatamente al lado del título lo ayudan a identificar qué paso se realiza en qué instancia.
 
-Y, para ayudar, hemos preparado un completo [ejemplo de código](developers/es/docs/checkout-bricks/integration/code-example#bookmark_configurar_la_integración) que puede usar como modelo.
+Y, para ayudar, hemos preparado un completo [ejemplo de código](developers/es/docs/checkout-bricks/integration/code-example) que puede usar como modelo.
 
 > CLIENT_SIDE
 >
@@ -41,7 +41,7 @@ Deberás crear un container para definir dónde se colocará el brick en la pant
 >
 > Atención
 >
-> El código JS se puede incluir en una etiqueta `<script>` o en un archivo JS separado.
+> Recuerda que todo el código JS se puede incluir una etiqueta <script> o también en archivos .js separados que importes en tu sitio.
 
 Para esto deberás instalar la SDK agregando lo siguiente en tu código HTML:
 
@@ -130,11 +130,11 @@ renderCardPaymentBrick(bricksBuilder);
 
 > PREV_STEP_CARD_ES
 >
-> Temas
+> Requisitos previos
 >
-> Obtén más información sobre los temas en que se puede instanciar/renderizar Card Payment Brick.
+> Conozca los requisitos previos necesarios para integrar Checkout Bricks.
 >
-> [Temas](/developers/es/docs/checkout-bricks/characteristics/themes)
+> [Requisitos previos](/developers/es/docs/checkout-bricks/integration/prerequisites)
  
 > NEXT_STEP_CARD_ES
 >

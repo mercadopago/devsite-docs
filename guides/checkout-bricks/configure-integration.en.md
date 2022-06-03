@@ -9,7 +9,7 @@ To configure brick integration you need to follow the steps below:
 
 > The steps are performed on the backend or frontend. The **Client-Side** and **Server-Side** pills located immediately next to the title help you to identify which step is performed in which instance.
 
-And, to help, we have prepared a complete [code example](/developers/en/docs/checkout-bricks/integration/code-example#bookmark_configure_the_integration) that you can use as a template.
+And, to help, we have prepared a complete [code example](/developers/en/docs/checkout-bricks/integration/code-example) that you can use as a template.
 
 > CLIENT_SIDE
 >
@@ -41,7 +41,7 @@ You will need to create a container to define where the brick will be placed on 
 >
 > Attention
 >
-> JS code can be included in a `<script>` tag or a separate JS file.
+> JS code can be included in a <script> tag or a separate JS file.
 
 You will need to install the SDK by adding the following in your HTML code:
 
@@ -130,11 +130,11 @@ renderCardPaymentBrick(bricksBuilder);
 
 > PREV_STEP_CARD_EN
 >
-> Themes
+> Prerequisites
 >
-> See more information about the available themes to instantiate/render Card Payment Brick in.
+> Learn about the prerequisites needed to integrate Checkout Bricks.
 >
-> [Themes](/developers/en/docs/checkout-bricks/characteristics/themes)
+> [Prerequisites](/developers/en/docs/checkout-bricks/integration/prerequisites)
  
 > NEXT_STEP_CARD_EN
 >
