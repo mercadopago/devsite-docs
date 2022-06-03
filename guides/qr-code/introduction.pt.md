@@ -1,4 +1,18 @@
-# Tipos de integração
+# Como funciona?
+
+![Pagamentos QR Mercado Pago](/images/mobile/qr_mla2.es.png)
+
+Após completar a integração como explicado abaixo, o seu negócio poderá receber pagamentos com QR ao **imprimir e exibir o código QR em um lugar visível do seu PDV, ou exibi-lo em seu dispositivo móvel** e efetuar cobranças pelo app do Mercado Pago.
+
+![Flujo QR](/images/mobile/qr_flujo.pt.png)
+
+> NOTE
+>
+> Nota
+>
+> Caso o seu modelo não precise de integração com um sistema de ponto de venda, você pode consultar todas as informações disponíveis em [gerar QR pelo painel do Mercado Pago](/developers/pt/docs/qr-code/how-to/integrations-front).
+
+## Tipos de integração
 
 | Tipo | Descrição |
 | --- | --- |
@@ -8,16 +22,8 @@
 
 Em função do seu modelo de negócio, você pode escolher uma das opções para oferecer aos seus clientes uma ótima experiência de compra nas suas lojas físicas.
 
+
 ---
-
-> PREV_STEP_CARD_PT
->
-> Funcionamento
->
-> Mostramos como funciona o QR Code.
->
-> [Funcionamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/qr-code/how-it-works)
-
 
 > NEXT_STEP_CARD_PT
 >
