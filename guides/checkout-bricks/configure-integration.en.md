@@ -8,8 +8,8 @@ To configure brick integration you need to follow the steps below:
 4. [Render brick](/developers/en/docs/checkout-bricks/integration/configure-integration#bookmark_render_brick)
 
 > The steps are performed on the backend or frontend. The **Client-Side** and **Server-Side** pills located immediately next to the title help you to identify which step is performed in which instance.
-
-And, to help, we have prepared a complete [code example](/developers/en/docs/checkout-bricks/integration/code-example) that you can use as a template.
+> <br/>
+> And, to help, we have prepared a complete [code example](/developers/en/docs/checkout-bricks/integration/code-example) that you can use as a template.
 
 > CLIENT_SIDE
 >
