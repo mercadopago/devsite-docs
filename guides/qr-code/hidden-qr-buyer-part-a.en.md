@@ -40,9 +40,9 @@ The main characteristics are:
 - Allows offline payments (without internet connection) to the payer.
 - By submitting the billing API, the payment validation takes place synchronously.
 
+---
 
 ## Next steps
-
 
 > LEFT_BUTTON_REQUIRED_EN
 >
@@ -50,4 +50,4 @@ The main characteristics are:
 >
 > Check out how to integrate the QR Buyer model.
 >
-> [How to integrate the QR Buyer model](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/qr-code/qr-buyer/qr-buyer-part-b)
+> [How to integrate the QR Buyer model](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/qr-code/qr-buyer/qr-buyer-part-b)

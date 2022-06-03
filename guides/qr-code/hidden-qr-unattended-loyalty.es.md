@@ -15,7 +15,7 @@ Programa de fidelización es un objeto utilizado en el modelo desatendido que **
 >
 > ADVERTENCIA
 >
-> Ten en cuenta que el programa de fidelización es exclusivo del [modelo desatendido de Código QR](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code/qr-unattended/qr-unattended-part-a).
+> Ten en cuenta que el programa de fidelización es exclusivo del [modelo desatendido de Código QR](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/qr-code/qr-unattended/qr-unattended-part-a).
 
 ## ¿Cómo funciona?
 
@@ -135,4 +135,4 @@ Códigos de producto **YPF (Serviclub)**:
 >
 > Conoce paso a paso cómo integrar este modelo.
 >
->[Integrar QR modelo desatendido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code/qr-unattended/qr-unattended-part-a)
+>[Integrar QR modelo desatendido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/qr-code/qr-unattended/qr-unattended-part-a)

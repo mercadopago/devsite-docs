@@ -10,4 +10,4 @@ indexable: false
 > Important
 >
 > Desculpe! No momento, esta página não está disponível em português.<br>
-> [Ver documentação em espanhol](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code/qr-unattended/qr-unattended-loyalty)
+> [Ver documentação em espanhol](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/qr-code/qr-unattended/qr-unattended-loyalty)

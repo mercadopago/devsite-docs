@@ -17,8 +17,8 @@ Para cobrar a través de este modelo, es necesario leer el QR y enviar el códig
 
 Para que la integración funcione correctamente, es necesario:
 
-- Crear [Sucursales] (https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code/stores-pos).
-- Generar [Cajas] (https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code/stores-pos).
+- Crear [Sucursales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/qr-code/stores-and-pos).
+- Generar [Cajas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/qr-code/stores-and-pos).
 - Contar con un lector QR.
 - Habilitar tu cuenta de Mercado Pago para realizar cobros con este modelo. 
 
@@ -160,7 +160,7 @@ El request regresará una respuesta como la siguiente:
 >
 > Conoce las opciones que dispones para llevar tu integración al siguiente nivel.
 >
-> [Integración avanzada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code/advanced-integration)
+> [Integración avanzada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/qr-code/qr-buyer-model/qr-advanced-integration)
 
 
 > RIGHT_BUTTON_RECOMMENDED_ES
@@ -169,4 +169,4 @@ El request regresará una respuesta como la siguiente:
 >
 > Realiza los casos de uso más frecuentes para validar tu integración.
 >
-> [Prueba tu integración](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code/integration-test)
+> [Prueba tu integración](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/qr-code/qr-buyer-model/qr-integration-test)

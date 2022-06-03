@@ -40,6 +40,8 @@ As principais características são:
 - Permite pagamentos offline (sem conexão com a internet) para o pagador. 
 - Ao enviar a API de cobrança, a validação do pagamento acontecerá de forma sincronizada.
 
+---
+
 ## Próximos passos
 
 
@@ -49,4 +51,4 @@ As principais características são:
 >
 > Acesse o passo-a-passo para integração.
 >
-> [Como integrar QR modelo Comprador](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/qr-code/qr-buyer/qr-buyer-part-b)
+> [Como integrar QR modelo Comprador](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/qr-code/qr-buyer/qr-buyer-part-b)

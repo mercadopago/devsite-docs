@@ -17,8 +17,8 @@ To use this model, you must read the QR and send the code and the order informat
 
 For this integration to work correctly, you need to:
 
-- Crete [Stores] (https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/qr-code/stores-pos).
-- Greate[QR] (https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/qr-code/stores-pos).
+- Crete [Stores](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/qr-code/stores-and-pos).
+- Greate[QR](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/qr-code/stores-and-pos).
 - Have a QR CODE reader.
 - Enable your Mercado Pago account for this type of charge.
 
@@ -161,7 +161,7 @@ The request returns a response as follows:
 >
 > Check the options available to take your integration to the next level.
 >
-> [Advanced integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/qr-code/advanced-integration)
+> [Advanced integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/qr-code/qr-buyer-model/qr-advanced-integration)
 
 
 > RIGHT_BUTTON_RECOMMENDED_ES
@@ -170,4 +170,4 @@ The request returns a response as follows:
 >
 > Perform the most frequent usage tests to validate your integration
 >
-> [Test your integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/qr-code/integration-test)
+> [Test your integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/qr-code/qr-buyer-model/qr-integration-test)

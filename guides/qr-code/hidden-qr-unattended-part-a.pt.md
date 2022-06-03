@@ -99,4 +99,4 @@ https://api.mercadopago.com/pos \
 >
 > Conoce paso a paso como integrar este modelo.
 >
-> [Integrar o modelo autônomo do QR](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/qr-code/qr-unattended/qr-unattended-part-b)
+> [Integrar o modelo autônomo do QR](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/qr-code/qr-unattended/qr-unattended-part-b)

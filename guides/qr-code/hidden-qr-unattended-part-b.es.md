@@ -128,7 +128,7 @@ Debes informar a tu asesor técnico asignado la URL base de tu dominio a la que 
 >
 > Conoce las opciones que dispones para llevar tu integración al siguiente nivel.
 >
-> [Integración avanzada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code/advanced-integration)
+> [Integración avanzada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/qr-code/qr-unattended-model/qr-advanced-integration)
 
 
 > RIGHT_BUTTON_RECOMMENDED_ES
@@ -137,4 +137,4 @@ Debes informar a tu asesor técnico asignado la URL base de tu dominio a la que 
 >
 > Realiza los casos de uso más frecuentes para validar tu integración.
 >
-> [Prueba tu integración](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code/integration-test)
+> [Prueba tu integración](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/qr-code/qr-unattended-model/qr-integration-test)

@@ -123,17 +123,17 @@ You must inform your domain URL to your assigned technical advisor. Mercado Pago
 
 > LEFT_BUTTON_REQUIRED_EN
 >
-> Advanced Integration
+> Advanced integration
 >
-> Learn the options to take your integration to the next level.
+> Check the options available to take your integration to the next level.
 >
-> [Advanced Integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/qr-code/advanced-integration)
+> [Advanced integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/qr-code/qr-unattended-model/qr-advanced-integration)
 
 
-> RIGHT_BUTTON_RECOMMENDED_EN
+> RIGHT_BUTTON_RECOMMENDED_ES
 >
 > Test your integration
 >
-> Try the most frequent use cases to validate your integration.
+> Perform the most frequent usage tests to validate your integration
 >
-> [Test your integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/qr-code/integration-test)
+> [Test your integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/qr-code/qr-unattended-model/qr-integration-test)

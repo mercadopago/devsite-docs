@@ -100,5 +100,5 @@ https://api.mercadopago.com/pos \
 >
 > Conoce paso a paso como integrar este modelo.
 >
-> [Cómo integrar QR modelo desatendido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code/qr-unattended/qr-unattended-part-b)
+> [Cómo integrar QR modelo desatendido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/qr-code/qr-unattended/qr-unattended-part-b)
 
