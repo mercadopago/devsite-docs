@@ -1,4 +1,8 @@
-# Initiate brick with document
+> CLIENT_SIDE
+>
+> h1
+>
+> Initiate brick with document
 
 | Brick | Card Payment Brick |
 | --- | --- |
@@ -28,7 +32,7 @@ const settings = {
 >
 > Check how to initiate Card Payment Brick with e-mail.
 >
-> [Initiate Brick with e-mail](/developers/en/docs/checkout-bricks-beta/additional-customization/initiate-brick-email)
+> [Initiate Brick with e-mail](/developers/en/docs/checkout-bricks/additional-customization/initiate-brick-with-email)
 
 > NEXT_STEP_CARD_EN
 >
@@ -36,4 +40,4 @@ const settings = {
 >
 > Check how to set up the maximum and minimum number of installments allowed in Card Payment Brick.
 >
-> [Set up the maximum and minimum number of installments](/developers/en/docs/checkout-bricks-beta/additional-customization/max-and-min-installments)
+> [Set up the maximum and minimum number of installments](/developers/en/docs/checkout-bricks/additional-customization/configure-installments)

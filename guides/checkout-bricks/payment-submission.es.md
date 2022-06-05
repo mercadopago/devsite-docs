@@ -8,7 +8,7 @@ Para continuar el proceso de pago hacia Mercado Pago, es necesario que tu backen
 
 Ya estando en tu backend con toda la información recolectada, es momento de enviar la solicitud a Mercado Pago a través de nuestras APIs. Los campos mínimos requeridos a enviar son: `token`, `transaction_amount`, `installments`, `payment_method_id` y el `payer.email`.
 
-Ten en cuenta que para que este paso funcione es necesario que configures tu [clave privada]([FAKER][CREDENTIALS][URL]) y que para interactuar con nuestras APIs recomendamos utilizar la [SDK oficial de Mercado Pago](/developers/es/guides/checkout-api/previous-requirements#bookmark__instala_la_sdk_de_mercado_pago).
+Ten en cuenta que para que este paso funcione es necesario que configures tu [clave privada]([FAKER][CREDENTIALS][URL]) y que para interactuar con nuestras APIs recomendamos utilizar la [SDK oficial de Mercado Pago](/developers/es/docs/checkout-bricks/integration/prerequisites).
 
 [[[
 ```php
@@ -237,7 +237,7 @@ curl -X POST \
 >
 > Aprende a realizar la integración de los Bricks paso a paso.
 >
-> [Configurar la integración](/developers/es/docs/checkout-bricks-beta/integration/configure-integration)
+> [Configurar la integración](/developers/es/docs/checkout-bricks/integration/configure-integration)
 
 > NEXT_STEP_CARD_ES
 >
@@ -245,4 +245,4 @@ curl -X POST \
 >
 > Consulta cómo realizar pruebas para garantizar el buen funcionamiento de la integración.
 >
-> [Enviar pago a Mercado Pago](/developers/es/docs/checkout-bricks-beta/integration/integration-test)
+> [Enviar pago a Mercado Pago](/developers/es/docs/checkout-bricks/integration/integration-test)

@@ -33,7 +33,7 @@ const settings = {
 >
 > Learn how you can hide the UI titles and the card brands in Card Payment Brick.
 >
-> [Hide UI titles and card brands](/developers/en/docs/checkout-bricks-beta/additional-customization/hide-title-and-flags)
+> [Hide UI titles and card brands](/developers/en/docs/checkout-bricks/additional-customization/hide-title-and-flags)
 
 > NEXT_STEP_CARD_EN
 >
@@ -41,4 +41,4 @@ const settings = {
 >
 > You can select the Card Payment Brick's language when required. Check how.
 >
-> [Select language](/developers/en/docs/checkout-bricks-beta/additional-customization/select-language)
+> [Select language](/developers/en/docs/checkout-bricks/additional-customization/select-language)
