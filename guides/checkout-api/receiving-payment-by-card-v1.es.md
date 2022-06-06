@@ -488,12 +488,12 @@ Por último, es importante que estés siempre informado sobre la creación de nu
 >
 > Checkout Transparente
 >
-> Te dejamos [ejemplos completos de integración](http://github.com/mercadopago/card-payment-sample) en GitHub para que puedas descargar al instante.
+> Te dejamos [ejemplos completos de integración](http://github.com/mercadopago/card-payment-sample/tree/1.0.0) en GitHub para que puedas descargar al instante.
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 > GIT
 >
 > Checkout API
 >
-> Te dejamos [ejemplos completos de integración](http://github.com/mercadopago/card-payment-sample) en GitHub para que puedas descargar al instante.
+> Te dejamos [ejemplos completos de integración](http://github.com/mercadopago/card-payment-sample/tree/1.0.0) en GitHub para que puedas descargar al instante.
 ------------
