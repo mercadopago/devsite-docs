@@ -6,7 +6,7 @@ This brick, in addition to containing the fields to collect the personal data of
 
 In addition to collecting the necessary fields to make the payment, this component also helps the user to complete the screen with alerts for incomplete fields and possible input errors. See below the main features of this brick.
 
-![cardform](checkout-bricks/card-form__es.png)
+![cardform](checkout-bricks/card-form-en.png)
 
 ## Layout 
 

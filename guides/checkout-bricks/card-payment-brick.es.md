@@ -6,7 +6,7 @@ Este brick, además de contener los campos para recolectar los datos personales 
 
 Además de recopilar los campos necesarios para realizar el pago, este componente también ayuda al usuario a terminar de completar la pantalla con alertas de campos incompletos y posibles errores en el llenado. Ve a continuación las principales características de este brick.
 
-![cardform](checkout-bricks/card-form__es.png)
+![cardform](checkout-bricks/card-form-es.png)
 
 ## Layout 
 

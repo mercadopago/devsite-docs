@@ -10,13 +10,13 @@ Checkout Bricks permite la integración del lado del cliente de forma modular a 
 
 El Brick posee capacidades responsivas en términos del tamaño del espacio en la pantalla. El brick siempre ocupará el espacio que se le ha definido y responderá cuando este espacio cambie durante su uso.
 
-![responsividad](checkout-bricks/responsive-theme-pt.gif)
+![responsividad](checkout-bricks/responsive-theme-es.gif)
 
 ## Temas
 
 El Card Payment Brick se puede instanciar/renderizar con diferentes temas y características que pueden adaptarse mejor al aspecto de la tienda. Las características de cada uno de los temas disponibles se detallan a continuación (consulta [Definir Tema](/developers/es/docs/checkout-bricks/additional-customization/set-theme) para obtener instrucciones sobre cómo cambiar el tema del brick).
 
-![themes](checkout-bricks/themes-paymentcard-pt.png)
+![themes](checkout-bricks/themes-paymentcard-es.png)
 
 ## Idiomas
 
