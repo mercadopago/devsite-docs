@@ -1,5 +1,11 @@
 # How to generate your Releases report?
 
+> NOTE
+>
+> Easily keep track of your sales made with a QR Code
+>
+> We have created new columns that allow you to identify which digital wallets or banks your clients use when they pay with a Mercado Pago QR Code. Update your settings preferences [from the panel](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports/release/settings) or [via API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/released-money/api) so that you can include these columns in your reports.
+
 ## Generating channels
 
 You can generate a Release report from your Mercado Pago account:
