@@ -12,7 +12,7 @@ With the creation of the payer token, the Wallet Connect integration will finish
 >
 > Learn how to get payer approval to use payment details.
 >
-> [Get approval](/developers/pt/docs/wallet-connect/integration-configuration/get-approval)
+> [Get approval](/developers/en/docs/wallet-connect/integration-configuration/get-approval)
 
 > NEXT_STEP_CARD_EN
 >

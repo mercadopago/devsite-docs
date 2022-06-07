@@ -27,4 +27,4 @@ To create an _agreement_, send a **POST** with the necessary attributes to the [
 >
 > Learn how to get payer approval to use payment details.
 >
-> [Get approval](/developers/pt/docs/wallet-connect/integration-configuration/get-approval)
+> [Get approval](/developers/en/docs/wallet-connect/integration-configuration/get-approval)
