@@ -90,6 +90,7 @@ https://api.mercadopago.com/pos \
 ```
 ]]]
 
+---
 
 ### Próximos pasos
 

@@ -45,13 +45,14 @@ Implemente a seguinte lógica no serviço para suportar os casos a seguir:
 
 Pode acontecer que as informações do pedido ainda não foram disponibilizadas ao querer realizar o pagamento. Por exemplo, durante o abastecimento de combustível. 
 
-Nesses casos, o serviço deve responder uma mensagem de erro para que o usuário possa ver uma tela de espera. O serviço deve retornar um código de estado `HTTP 400 (Bad Request)` e a resposta deve continuar o formato a seguir: 
+Nesses casos, o serviço deve responder uma mensagem de erro para que o usuário possa ver uma tela de espera. O serviço deve retornar um código de estado `HTTP 202 (ACCEPTED)` e a resposta deve continuar o formato a seguir: 
 
 ```json
 {
-"error": 
-{  "type": "XXX",
-  "message": "YYYY" }
+  "status": {
+    "status_detail": "<STATUS_DETAIL_TYPE>",
+    "message": "<MESSAGE>"
+  }
 }
 ```
 
@@ -60,7 +61,8 @@ Nesses casos, o serviço deve responder uma mensagem de erro para que o usuário
 | Tipo (type)       |  Descrição                                                 |
 | ------------- | ------------------------------------------------------------ |
 | `in_process`     | Tem um pedido em processo, porém, ainda não foi possível determinar o valor a receber. |
-| `unavailable`           | Não tem pedido em processo ou pendente de pagamento.  |
+| `notihing_to_pay`           | O pedido processado não tem valor restante a pagar |
+| `Waiting_for_order`           | Pedido ainda não recebido |
 
 O `message` é opcional, é uma explicação em texto plano que pode acompanhar o type declarado.
 
@@ -68,25 +70,44 @@ O `message` é opcional, é uma explicação em texto plano que pode acompanhar 
 
 Se já existir uma ordem para receber, o serviço deve restituir suas informações. 
 
-A resposta esperada deste serviço deve conter o header `Content-Type: application/json` e o estado `HTTP 200 (OK)`.
+A resposta esperada deste serviço deve conter o header `Content-Type: application/json`, `order-version: “2”` e `client-id: “<CLIENT_ID>”` junto com o estado `HTTP 200 (OK)`.(O cabeçalho client-id só é necessário se estiver usando [OAuth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/qr-code/additional-content/security/oauth/introduction) , que serão os últimos dígitos do token de acesso da conta do administrador).
 
 A resposta deve conter a mensagem seguinte sobre o pedido a ser recebido: 
 
 ```json
 {
-   "collector_id": 446560529,
-   "sponsor_id": 446566691,
-   "items":[
+    "external_reference": "<EXTERNAL_REFERENCE>",
+    "total_amount": <TOTAL_AMOUNT>,
+    "items": [
+        {
+            "sku_number": "<SKU_NUMBER>",
+            "category": "<ITEM_CATEGORY>",
+            "title": "<ITEM_TITLE>",
+            "description": "<ITEM_DESC>",
+            "quantity": <ITEM_QUANTITY>,
+            "unit_measure": "<ITEM_UNIT_MEASURE>",
+            "unit_price": <ITEM_UNIT_PRICE>,
+            "total_amount": <ITEM_TOTAL_AMOUNT>,
+        }
+    ],
+    "title": "<PURCHASE_TITLE>",
+    "description": "<PURCHASE_DESC>",
+    "notification_url": "<NOTIFICATION_URL>",
+    "sponsor": {
+        "id": <SPONSOR_ID>
+    },
+    ----[mco]----
+
+    "taxes": [
       {
-         "title":" $500.00 de SUPER",
-         "currency_id": [FAKER][CURRENCY][ACRONYM],
-         "description":"$500.00 de SUPER",
-         "quantity": 1.0,
-         "unit_price": 500.00
+        "type": "<TAX_TYPE>",
+        "value": "<TAX_VALUE>",
+        "percentage": "<TAX_PERCENTAGE>"
       }
-   ],
-   "external_reference":"45ea80da",
-   "notification_url":"https://www.tusitio.com"
+    ],
+
+    ------------
+    "marketplace_fee": <MARKETPLACE_FEE_NUMBER>
 }
 ```
 
@@ -96,15 +117,21 @@ Deve utilizar o campo `external_reference` para poder identificar o pedido em se
 
 | Atributo            | Tipo (_type_)       |  Descripción               |
 | ------------- | ------------- | ------------------------------------------------------------ |
-| `collector_id` | _Long_     | Identificador da conta Mercado Pago onde os pagamentos serão creditados.  |
-| `sponsor_id` | _Long_           | Identificador da conta Mercado Pago do sistema integrador. |
-| `items.title` | _String_           | Título do produto. |
-| `items.currency_id` | _String (3)_           | Identificador de moeda no formato ISO-4217. |
-| `items.description` | _String_     | Descrição do produto.  |
-| `items.quantity` | _Integer_           | Quantidade do produto envolvido.  |
-| `items.unit_price` | _Decimal_           | Preço unitário do produto. |
-| `external_reference` | _String (256)_           | Referência para poder associar a ordem em Mercado Pago com ordem de compra, comanda ou despacho em seu sistema. Geralmente, é utilizado o número de NF.  |
-| `notification_url` | String | URL aonde as notificações serão enviadas.  |
+| `external_reference` | _String (256)_ | Referência para poder associar a ordem em Mercado Pago com ordem de compra, comanda ou despacho em seu sistema. Geralmente, é utilizado o número de NF.  |
+| `total_amount` | _Double_ | Soma do `total_amount` no array de itens. |
+| `items.sku_number` | _String_ | Código do produto. |
+| `items.category` | _String_ | Categoria do Produto. |
+| `items.title` | _String_ | Título do produto. |
+| `items.description` | _String_ | Descrição do produto.  |
+| `items.quantity` | _Integer_ | Quantidade do produto envolvido.  |
+| `items.unit_measure` | _String_ | Unidade de medida("unit"). |
+| `items.unit_price` | _Double_ | Preço unitário do produto. |
+| `items.total_amount` | _Double_ | Preço total do item. |
+| `title` | _Long_ | Título da compra.  |
+| `description` | _Long_ | Descrição da compra. |
+| `notification_url` | _String_ | URL aonde as notificações serão enviadas.  |
+| `sponsor.id` | _Long_ | Identificador da conta Mercado Pago do sistema integrador. |
+| `marketplace_fee` | _Double_ | Valor da taxa a ser cobrada pelo marketplace derivada do processo de [OAuth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/qr-code/additional-content/security/oauth/introduction) |
 
 ## 2. Declarar o URL de seu domínio a Mercado Pago
 

@@ -46,14 +46,16 @@ Implementa la siguiente lógica en el servicio para soportar los siguientes caso
 
 Puede suceder que la información de la orden todavía no se encuentre disponible al querer realizar el pago. Por ejemplo, durante la carga de combustible. 
 
-En estos casos, el servicio debe responder un mensaje de error para que el usuario pueda ver una pantalla de espera. El servicio debe retornar un código de estado `HTTP 400 (Bad Request)` y la respuesta debe seguir el siguiente formato: 
+En estos casos, el servicio debe responder un mensaje de error para que el usuario pueda ver una pantalla de espera. El servicio debe retornar un código de estado `HTTP 202 (ACCEPTED)` y la respuesta debe seguir el siguiente formato: 
 
 ```json
 {
-"error": 
-{  "type": "XXX",
-  "message": "YYYY" }
+  "status": {
+    "status_detail": "<STATUS_DETAIL_TYPE>",
+    "message": "<MESSAGE>"
+  }
 }
+
 ```
 
 ### Atributos
@@ -61,7 +63,8 @@ En estos casos, el servicio debe responder un mensaje de error para que el usuar
 | Tipo (type)       |  Descripción                                                 |
 | ------------- | ------------------------------------------------------------ |
 | `in_process`     | Hay un pedido en proceso pero todavía no se pudo determinar el monto a cobrar. |
-| `unavailable`           | No hay pedido en proceso o pendiente de pago. |
+| `notihing_to_pay`           | La orden procesada no tiene monto remanente a pagar |
+| `Waiting_for_order`           | Aún no se recibió la orden |
 
 El `message` es opcional, es  una explicación en texto plano que puede acompañar al type declarado.
 
@@ -69,26 +72,46 @@ El `message` es opcional, es  una explicación en texto plano que puede acompañ
 
 Si ya existe la orden para ser cobrada, el servicio debe devolver su información. 
 
-La respuesta esperada de este servicio debe contener el header `Content-Type: application/json` y el estado `HTTP 200 (OK)`.
+La respuesta esperada de este servicio debe contener los headers:  `Content-Type: application/json`, `order-version: “2”` y `client-id: “<CLIENT_ID>”`  junto con el estado `HTTP 200 (OK)`. (el header client-id unicamente es requerido si se esta utilizando [OAuth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/qr-code/additional-content/security/oauth/introduction), el cual serán los ultimos digitos del access token de la cuenta administradora).
 
 La respuesta debe contener el siguiente mensaje de la orden a ser cobrada: 
 
 ```json
 {
-   "collector_id": 446560529,
-   "sponsor_id": 446566691,
-   "items":[
+    "external_reference": "<EXTERNAL_REFERENCE>",
+    "total_amount": <TOTAL_AMOUNT>,
+    "items": [
+        {
+            "sku_number": "<SKU_NUMBER>",
+            "category": "<ITEM_CATEGORY>",
+            "title": "<ITEM_TITLE>",
+            "description": "<ITEM_DESC>",
+            "quantity": <ITEM_QUANTITY>,
+            "unit_measure": "<ITEM_UNIT_MEASURE>",
+            "unit_price": <ITEM_UNIT_PRICE>,
+            "total_amount": <ITEM_TOTAL_AMOUNT>,
+        }
+    ],
+    "title": "<PURCHASE_TITLE>",
+    "description": "<PURCHASE_DESC>",
+    "notification_url": "<NOTIFICATION_URL>",
+    "sponsor": {
+        "id": <SPONSOR_ID>
+    },
+    ----[mco]----
+
+    "taxes": [
       {
-         "title":" $500.00 de SUPER",
-         "currency_id": [FAKER][CURRENCY][ACRONYM],
-         "description":"$500.00 de SUPER",
-         "quantity": 1.0,
-         "unit_price": 500.00
+        "type": "<TAX_TYPE>",
+        "value": "<TAX_VALUE>",
+        "percentage": "<TAX_PERCENTAGE>"
       }
-   ],
-   "external_reference":"45ea80da",
-   "notification_url":"https://www.tusitio.com"
+    ],
+
+    ------------
+    "marketplace_fee": <MARKETPLACE_FEE_NUMBER>
 }
+
 ```
 
 Debes usar el campo `external_reference` para poder identificar la orden de tu sistema dentro de Mercado Pago.
@@ -97,15 +120,21 @@ Debes usar el campo `external_reference` para poder identificar la orden de tu s
 
 | Atributo | Tipo (_type_) | Descripción |
 | --- | --- | --- |
-| `collector_id` | _Long_ | Identificador de la cuenta Mercado Pago a la que se le acreditarán los pagos.  |
-| `sponsor_id` | _Long_ | Identificador de la cuenta Mercado Pago del sistema integrador. |
+| `external_reference` | _String (256)_ | Referencia para poder asociar la orden en Mercado Pago con la orden de compra, comanda o despacho en tu sistema. Generalmente se usa el número de factura. |
+| `total_amount` | _Double_ | Suma de los `total_amount` en los items. |
+| `items.sku_number` | _String_ | código del producto. |
+| `items.category` | _String_ | categoría del producto. |
 | `items.title` | _String_ | Título del producto. |
-| `items.currency_id` | _String (3)_ | Identificador de moneda en formato ISO-4217. |
 | `items.description` | _String_ | Descripción del producto.  |
 | `items.quantity` | _Integer_ | Cantidad del producto en cuestión. |
-| `items.unit_price` | _Decimal_ | Precio unitario del producto. |
-| `external_reference` | _String (256)_ | Referencia para poder asociar la orden en Mercado Pago con la orden de compra, comanda o despacho en tu sistema. Generalmente se usa el número de factura. |
+| `items.unit_measure` | _string_ | Unidad de medida ("unit"). |
+| `items.unit_price` | _Double_ | Precio unitario del producto. |
+| `items.total_amount` | _Double_ | Precio total del item. |
+| `title` | _Long_ | Título de la compra.  |
+| `description` | _Long_ | Descripción de la compra.  |
 | `notification_url` | _String_ | URL a la cual se enviarán las notificaciones. |
+| `sponsor.id` | _Long_ | Identificador de la cuenta Mercado Pago del sistema integrador. |
+| `marketplace_fee` | _Double_ | Monto del fee a cobrar del marketplace derivado del proceso de [OAuth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/qr-code/additional-content/security/oauth/introduction) |
 
 ## 2. Declarar la URL de tu dominio a Mercado Pago
 

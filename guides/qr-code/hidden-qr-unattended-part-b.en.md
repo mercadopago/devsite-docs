@@ -43,13 +43,14 @@ Implement the next logics on the service to support the following cases:
 
 In some cases, order data may not be available yet when a customer tries to pay. I.e, when filling the tank at a gas station.
 
-In those cases, service must answer with an error message, so the user sees a waiting screen. Service must return a status code `HTTP 400 (Bad Request)` with the following format:
+In those cases, service must answer with an error message, so the user sees a waiting screen. Service must return a status code `HTTP 202 (ACCEPTED)` with the following format:
 
 ```json
 {
-"error": 
-{  "type": "XXX",
-"message": "YYYY" }
+  "status": {
+    "status_detail": "<STATUS_DETAIL_TYPE>",
+    "message": "<MESSAGE>"
+  }
 }
 ```
 
@@ -58,7 +59,8 @@ In those cases, service must answer with an error message, so the user sees a wa
 | Type          |  Description                                                 |
 | ------------- | ------------------------------------------------------------ |
 | `in_process`     | An order is being processed but an amount is not defined yet.  |
-| `unavailable`           | There’s no order being processed or pending.   |
+| `notihing_to_pay`           | The processed order has no remaining amount to pay |
+| `Waiting_for_order`           | Order not received yet |
 
 A `message` is a plain text that can come with the declared type and is optional.
 
@@ -67,26 +69,46 @@ A `message` is a plain text that can come with the declared type and is optional
 
 If order exits and is ready to be paid, service must return its information. 
 
-The answer expected from this service must contain the header `Content-Type: application/json` and the status `HTTP 200 (OK)`.
+The answer expected from this service must contain the header `Content-Type: application/json`, `order-version: “2”` and `client-id: “<CLIENT_ID>”` along with the status `HTTP 200 (OK)`.(The client-id header is only required if you are using [OAuth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/qr-code/additional-content/security/oauth/introduction), which will be the last digits of the access token of the administrator account).
 
 Answer should contain the following message from the order: 
 
 ```json
 {
-   "collector_id": 178106235,
-   "sponsor_id": 334249281,
-   "items":[
+    "external_reference": "<EXTERNAL_REFERENCE>",
+    "total_amount": <TOTAL_AMOUNT>,
+    "items": [
+        {
+            "sku_number": "<SKU_NUMBER>",
+            "category": "<ITEM_CATEGORY>",
+            "title": "<ITEM_TITLE>",
+            "description": "<ITEM_DESC>",
+            "quantity": <ITEM_QUANTITY>,
+            "unit_measure": "<ITEM_UNIT_MEASURE>",
+            "unit_price": <ITEM_UNIT_PRICE>,
+            "total_amount": <ITEM_TOTAL_AMOUNT>,
+        }
+    ],
+    "title": "<PURCHASE_TITLE>",
+    "description": "<PURCHASE_DESC>",
+    "notification_url": "<NOTIFICATION_URL>",
+    "sponsor": {
+        "id": <SPONSOR_ID>
+    },
+    ----[mco]----
+
+    "taxes": [
       {
-         "title":" $500.00 de SUPER",
-         "currency_id": [FAKER][CURRENCY][ACRONYM],
-         "description":"$500.00 de SUPER",
-         "quantity": 1.0,
-         "unit_price": 500.00
+        "type": "<TAX_TYPE>",
+        "value": "<TAX_VALUE>",
+        "percentage": "<TAX_PERCENTAGE>"
       }
-   ],
-   "external_reference":"45ea80da",
-   "notification_url":"https://www.tusitio.com"
+    ],
+
+    ------------
+    "marketplace_fee": <MARKETPLACE_FEE_NUMBER>
 }
+
 ```
 
 You should use the field `external_reference` to be able to identify the order from your system inside Mercado Pago. 
@@ -95,15 +117,22 @@ You should use the field `external_reference` to be able to identify the order f
 
 | Atributo | Tipo (type) | Descripción |
 | --- | --- | --- |
-| `collector_id` | Long | Mercado Pago account identifier, to which payments will be imputed. |
-| `sponsor_id` | Long | Mercado Pago account identifier from integrative system. |
+| `external_reference` | String (256) | Reference to link an order in Mercado Pago with a shopping order from your system. Usually, is the receipt number. |
+| `total_amount` | _Double_ | Sum of the `total_amount` in the item array. |
+| `items.sku_number` | _String_ | Product code. |
+| `items.category` | _String_ | Product category. |
 | `items.title` | String | Product title. |
-| `items.currency_id` | String(3) | Currency identifier in ISO-4217 format. |
 | `items.description` | String | Product description. |
 | `items.quantity` | Integer | Product quantity. |
-| `items.unit_price` | Decimal | Unitary price. |
-| `external_reference` | String (256) | Reference to link an order in Mercado Pago with a shopping order from your system. Usually, is the receipt number. |
+| `items.unit_measure` | _string_ | Unit measure for the product ("unit"). |
+| `items.unit_price` | _Double_ | Unitary price. |
+| `items.total_amount` | _Double_ | total price of the item. |
+| `title` | _Long_ | purchase title.  |
+| `description` | _Long_ | Purchase description.  |
 | `notification_url` | String | URL to which the notification will be send. |
+| `sponsor.id` | Long | Mercado Pago account identifier from integrative system. |
+| `marketplace_fee` | _Double_ | fee amount to be collected by marketplace due from the [OAuth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/qr-code/additional-content/security/oauth/introduction) process |
+
 
 ## 2. Declare your domain URL to Mercado Pago
 
@@ -114,7 +143,6 @@ You must inform your domain URL to your assigned technical advisor. Mercado Pago
 > IMPORTANT
 > 
 > Your integration won’t work if you don’t complete this step.
-
 
 ---
 

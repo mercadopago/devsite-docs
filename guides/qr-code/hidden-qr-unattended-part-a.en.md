@@ -89,6 +89,7 @@ https://api.mercadopago.com/pos \
 ```
 ]]]
 
+---
 
 ### Next steps
 
