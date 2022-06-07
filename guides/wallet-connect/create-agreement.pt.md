@@ -19,7 +19,7 @@ Para criar um _agreement_, envie um **POST** com os atributos necessários ao en
 >
 > Conheça os pré-requisitos necessários para integrar o Wallet Connect.
 >
-> [Pré-requisitos](/developers/en/docs/wallet-connect/prerequisites)
+> [Pré-requisitos](/developers/pt/docs/wallet-connect/prerequisites)
 
 > NEXT_STEP_CARD_PT
 >
