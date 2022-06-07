@@ -76,7 +76,7 @@ paths:
                     example: b1234e5678b91c23a456e78912345b67
                   agreement_uri:
                     type: string
-                    description: This is the URL to redirect the user to the wallet linking in the frontend
+                    description: This is the uri to redirect the user to the wallet linking in the frontend
                     example: https://beta.mercadopago.com.ar/v1/wallet_agreement/b1234e5678b91c23a456e78912345b67
         '400':
           description: Error
@@ -94,17 +94,6 @@ paths:
                       - 400--Bad-Request--Field external_flow_id must not be grater than 300 characters
                       - 400--Bad-Request--Field external_user must not be blank
                       - 400--Bad-Request--Field id must not be blank
-        '409':
-          description: Error
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  errorKey:
-                    type: string
-                    enum:
-                      - 409--Bad-Request--Only an unique “active” agreement must exist for an external_user_id
   /v2/wallet_connect/agreements/{agreement_id}/payer_token:
     post:
       tags:
@@ -202,6 +191,7 @@ paths:
         - $ref: '#/tags/checkout-api'
       summary: Cancel agreement
       description: Endpoint to cancel an agreement by id. An agreement is an authorization link that the buyer receives to allow the seller to access their Mercado Pago wallet to debit the payment. You will need to cancel an agreement when the vinculation flow has ended
+      operationId: "cancelAgreement_DELETE"
       parameters:
         - name: agreementId
           in: path
