@@ -4,14 +4,14 @@ La primera etapa para integrar Wallet Connect es la creación de un _agreement_,
 
 El _agreement_ almacena los medios de pago seleccionados por el pagador y permite modificar estas configuraciones sin la intervención del vendedor, haciendo que esta etapa sea transparente durante el flujo de pago.
 
-Para crear un _agreement_, envía un POST con los atributos necesarios al endpoint wallet_connect/agreements y ejecuta la solicitud. En la respuesta, presta atención a dos parámetros que serán necesarios para obtener la aprobación del pagador: `agreement_uri` y `return_uri`.
+Para crear un _agreement_, envía un **POST** con los atributos necesarios al endpoint [/v2/wallet_connect/agreements](/developers/es/reference/wallet_connect/_wallet_connect_agreements/post) y ejecuta la solicitud. En la respuesta, presta atención a dos parámetros que serán necesarios para obtener la aprobación del pagador: `agreement_uri` y `return_uri`.
 
 
 > WARNING
 >
 > Importante
 >
-> Un usuario sólo puede tener un agreement activo por integración. Si quieres crear un nuevo agreement, debes cancelar el anterior. Para cancelar un agreement, envía un DELETE al endpoint /v2/wallet_connect/agreements/{agreement_id} y ejecuta la solicitud.
+> Un usuario sólo puede tener un agreement activo por integración. Si quieres crear un nuevo agreement, debes cancelar el anterior. Para cancelar un agreement, envía un DELETE al endpoint [/v2/wallet_connect/agreements/{agreement_id}](/developers/es/reference/wallet_connect/_wallet_connect_agreements_agreement_id/delete) y ejecuta la solicitud.
 
 > PREV_STEP_CARD_ES
 >
