@@ -28,13 +28,12 @@ Es fácil, te contamos cómo hacerlo:
 3. Ponle un nombre con el que puedas identificarla más adelante.
 4. Acepta nuestros Términos y Condiciones. ¡Y listo!
 
-Si no tienes ninguna aplicación registrada, [accede al tutorial](https://youtu.be/FB4aL9D0Of4?list=PLCazXKuqZp3hGVY3bBhEO0ItFhIic5UpK).
 
 > NOTE
 >
 > Nota
 >
-> En caso de PDV integrador con varias conexiones con cuentas Mercado Pago, ver tema 4 y 5. Atención a la seguridad de tu integración e implementa [Oauth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/security/oauth/introduction).
+> En caso de PDV integrador con varias conexiones con cuentas Mercado Pago, ver tema 4 y 5. Atención a la seguridad de tu integración e implementa [Oauth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/qr-code/additional-content/security/oauth/introduction).
 
 
 ## 3. Genera usuarios de prueba
@@ -52,7 +51,6 @@ Para crearlos, accede a [Crear usuarios de prueba](https://www.mercadopago[FAKER
 > * Para hacer pagos de prueba te recomendamos usar montos bajos.
 > * Tanto el comprador como el vendedor deben ser usuarios de prueba.
 > * Usa tarjetas de pruebas, ya que no es posible retirar el dinero.
-> * Video tutorial sobre cómo crear un [usuario de prueba](https://youtu.be/VgXsbJB6rY0?list=PLCazXKuqZp3hGVY3bBhEO0ItFhIic5UpK)
 
 Una vez creados los usuarios de prueba, ya puedes comenzar con la integración y crear las sucursales y cajas.
 

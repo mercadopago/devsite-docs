@@ -19,7 +19,6 @@ Refunds take place when the payment is canceled in full by the seller. You can f
 >
 > Remember that for in-store payments, only refunds are available, cancellations are not allowed.
 
-View the QR CODE payment refund process, [in this tutorial](https://youtu.be/JXzDIos_fRA?list=PLCazXKuqZp3hGVY3bBhEO0ItFhIic5UpK).
 
 ## Obtain order data
 
@@ -33,6 +32,9 @@ Integrate the [Mercado Pago reconciliation reports](/developers/en/guides/additi
 
 We detailed all the necessary scenarios you should test to ensure your system's successful integration with Mercado Pago.
 
-Find all validation events [here](/developers/es/docs/qr-code/how-to/validation-events).
+**Validation events:**
 
-Find more details in this [video tutorial](https://youtu.be/oQqJkqyjegk?list=PLCazXKuqZp3hGVY3bBhEO0ItFhIic5UpK).
+|QR Model|Link|
+|---|---|
+|Attended|[Click here](/developers/en/docs/qr-code/validation-events/qr-attended-events-to-validate)|
+|Dynamic|[Click here](/developers/en/docs/qr-code/validation-events/qr-dynamic-events-to-validate)|

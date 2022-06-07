@@ -27,13 +27,12 @@ It's quite easy to do:
 3. Name the application to identify it later.
 4. Accept our Terms and Conditions. Done!
 
-If you do not have a registered application, [view the tutorial](https://youtu.be/FB4aL9D0Of4?list=PLCazXKuqZp3hGVY3bBhEO0ItFhIic5UpK).
 
 > NOTE
 >
 > Note
 >
->If your POS integrator has several tenants, see topic 4 and 5. Check your integration security and implement [Oauth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/security/oauth/introduction).
+>If your POS integrator has several tenants, see topic 4 and 5. Check your integration security and implement [Oauth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/qr-code/additional-content/security/oauth/introduction).
 
 
 ## 3. Generate test users
@@ -51,7 +50,6 @@ In order to create them, go to [Create test users](https://www.mercadopago[FAKER
 > * To perform test payments, we recommend using low amounts.
 > * Both buyer and seller must be test users.
 > * Use the test cards, as no cash withdrawals are possible.
-> * Video tutorial of how to create a [test user](https://youtu.be/VgXsbJB6rY0?list=PLCazXKuqZp3hGVY3bBhEO0ItFhIic5UpK)
 
 Once you have test users, you can start to integrate and create Stores and POS.
 
@@ -63,7 +61,7 @@ The Access Token is not shareable in any way other than through OAuth. [More inf
 
 ## 5. Identify your integration (Sponsor ID)
 
-To identify the orders placed by your POS (Point Of Sale), include the Sponsor ID, and check the [in-store orders] APIs(https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_pos_external_pos_pos_id_orders/get) on how to send this information.
+To identify the orders placed by your POS (Point Of Sale), include the Sponsor ID, and check the [in-store orders APIs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_pos_external_pos_id_orders/get) on how to send this information.
 
 Step by step:
 

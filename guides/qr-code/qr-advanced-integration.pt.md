@@ -22,7 +22,6 @@ Você encontrará mais informações na seção [Reembolsos](/developers/pt/docs
 >
 > Considere que para pagamentos comerciais, você somente poderá fazer reembolsos, mas não cancelamentos.
 
-Veja o processo de estorno de pagamentos via código QR [neste vídeo tutorial](https://youtu.be/JXzDIos_fRA?list=PLCazXKuqZp3hGVY3bBhEO0ItFhIic5UpK).
 
 
 ## Obter dados do pedido
@@ -37,7 +36,11 @@ Integre os [relatórios de conciliação do Mercado Pago](/developers/pt/guides/
 
 Detalhamos os casos necessários para validar que o seu sistema esteja corretamente integrado ao Mercado Pago.
 
-Você pode encontrar todos os casos para validar [aqui](/developers/pt/docs/qr-code/how-to/validation-events).
+**Casos para validar:**
 
-Veja mais detalhes neste [vídeo tutorial](https://youtu.be/izpBBw3Ivi4?list=PLCazXKuqZp3g4WfhNlhsB3FL9-1z7gUny).
+|Modelo QR|Link|
+|---|---|
+|Atendido|[Clique aqui](/developers/pt/docs/qr-code/validation-events/qr-attended-events-to-validate)|
+|Dinâmico|[Clique aqui](/developers/pt/docs/qr-code/validation-events/qr-dynamic-events-to-validate)|
+
 

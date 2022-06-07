@@ -22,7 +22,6 @@ Puedes encontrar toda la información en la sección [Reembolsos](/developers/es
 >
 > Ten en cuenta que para pagos presenciales, solo puedes efectuar devoluciones pero no cancelaciones.
 
-Puedes ver el proceso de reversión de pagos a través de QR CODE, [en este video tutorial](https://youtu.be/JXzDIos_fRA?list=PLCazXKuqZp3hGVY3bBhEO0ItFhIic5UpK).
 
 
 ## Obtener datos de la orden
@@ -38,7 +37,9 @@ Integra los [reportes de conciliación de Mercado Pago](/developers/es/guides/ad
 
 Detallamos todos los casos necesarios que debes probar para validar que tu sistema esté integrado correctamente con Mercado Pago.
 
-Puedes encontrar todos los casos para validar [aquí](/developers/es/docs/qr-code/how-to/validation-events).
+**Casos para validar:**
 
-Puedes ver más detalles en este [video tutorial](https://youtu.be/oQqJkqyjegk?list=PLCazXKuqZp3hGVY3bBhEO0ItFhIic5UpK).
-
+|Modelo de QR|Link|
+|---|---|
+|Atendido|[Haz clic aquí](/developers/es/docs/qr-code/validation-events/qr-attended-events-to-validate)|
+|Dinámico|[Haz clic aquí](/developers/es/docs/qr-code/validation-events/qr-dynamic-events-to-validate)|
