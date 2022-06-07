@@ -11,7 +11,7 @@ To facilitate and optimize your integration process, check below a complete exam
 ```html
 <html>
     <head>
-        <script src="https://beta-sdk.mercadopago.com/gama/js/v2"></script>
+        <script src="https://sdk.mercadopago.com/js/v2"></script>
     </head>
     <body>
         <div id="cardPaymentBrick_container"></div>
