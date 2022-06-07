@@ -20,4 +20,4 @@ With the creation of the payer token, the Wallet Connect integration will finish
 >
 > Configure notifications to receive real-time information about events that happen.
 >
-> [Notifications](/developers/en/docs/wallet-connect/additional-content/notifications/Introduction)
+> [Notifications](/developers/en/docs/wallet-connect/additional-content/notifications/introduction)
