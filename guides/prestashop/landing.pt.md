@@ -12,11 +12,23 @@ bullet_section_with_media:
  - type: normal
  - message: Com o plugin do Mercado Pago você pode configurar o pagamento utilizando:
  - benefit_title: Checkout Pro
- - benefit_message: O pagamento é realizado na página do Mercado Pago (dentro ou fora da sua loja) com cartões (débito ou crédito) e dinheiro (saldo da conta do Mercado Pago ou boleto bancário).
+ - benefit_message: O pagamento é realizado na página do Mercado Pago (dentro ou fora da sua loja) com cartões (débito ou crédito), dinheiro (saldo da conta do Mercado Pago ou boleto bancário) e transferência bancária (Pix ou PEC).
  - benefit_title: Checkout Transparente
- - benefit_message: O pagamento é realizado com cartão de crédito sem sair da sua loja virtual.  
- - benefit_title: Ticket Checkout
- - benefit_message: Os pagamentos são realizados presencialmente com dinheiro ou boleto bancário.
+ - benefit_message: O pagamento é realizado sem sair da sua loja virtual com cartões (débito ou crédito), ticket checkout (saldo da conta do Mercado Pago ou boleto bancário) e Pix.
+ - image: /prestashop/prestashop-payment.png 
+---
+------------
+
+----[mla, mlm, mlu, mco, mlc, mpe]----
+---
+bullet_section_with_media:
+ - title: Pagamento
+ - type: normal
+ - message: Com o plugin do Mercado Pago você pode configurar o pagamento utilizando:
+ - benefit_title: Checkout Pro
+ - benefit_message: O pagamento é realizado na página do Mercado Pago (dentro ou fora da sua loja) com cartões (débito ou crédito), dinheiro (saldo da conta do Mercado Pago ou efectivo) e transferência bancária.
+ - benefit_title: Checkout Transparente
+ - benefit_message: O pagamento é realizado sem sair da sua loja virtual com cartões (débito ou crédito) e ticket checkout (saldo da conta do Mercado Pago ou efectivo).
  - image: /prestashop/prestashop-payment.png 
 ---
 ------------
@@ -44,7 +56,7 @@ bullet_section_with_media:
 ----[mlb]----
 
 ---
-available_payments: credit, debit, mercadopago, ticket, pix
+available_payments: credit, debit, mercadopago, ticket, pix, pec
 
 ---
 ------------

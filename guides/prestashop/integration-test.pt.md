@@ -6,32 +6,45 @@ O módulo do Mercado Pago vem com o **ambiente Sandbox** ativo por padrão. Ness
 2. Na tela de gerenciamento do módulo, confirme se as [credenciais](/developers/pt/guides/additional-content/credentials/credentials) de teste estão devidamente preenchidas de acordo com as informações disponíveis em seu [Dashboard](/developers/pt/guides/additional-content/dashboard/introduction).
 3. Em seguida, desça até a seção **Teste sua loja** e clique em **Quero testar minhas vendas**.
 4. Na página inicial da sua loja na PrestaShop, selecione um produto e clique em adicionar.
-5. Com o produto selecionado, finalize o pedido.
+5. Com o produto no carrinho, clique em **finalizar pedido**.
 6. Preencha com as informações pessoais, indique um endereço de entrega e selecione um método de envio. Lembrando que todas essas informações são apenas para o teste.
-7. Selecione a opção de pagamento com a solução do Mercado Pago que você configurou.
-8. Utilize os [cartões de crédito de teste](/developers/pt/guides/additional-content/testing/test-cards) para realizar o pagamento.
-9. Ao concluir o preenchimento, **finalize a compra**.
-Após finalizar as etapas anteriores, ative o **modo Produção** para receber pagamentos reais.
 
-----[mla, mlm, mpe, mco, mlu, mlc]----
+Feito o processo inicial de compra, veja abaixo como testar a integração de acordo com o tipo de checkout selecionado para receber os pagamentos.
+
+## Checkout Pro
+
+1. Selecione a opção **Quero pagar com Mercado Pago sem custo adicional**.
+2. Clique em **pedido com pagamento obrigatório** para ser redirecionado o ambiente de pagamento do Mercado Pago. 
+3. Na tela de checkout, escolha pagar com um novo cartão de crédito e utilize os [cartões de teste](/developers/pt/guides/additional-content/testing/test-cards) para realizar o pagamento. Importante não efetuar o login na conta do Mercado Pago ou tentar realizar o pagamento com cartões de uso pessoal. 
+3. Adicione as informações do cartão de teste indicado (nº do cartão, CVV e data de validade). 
+4. Ao finalizar a compra o seller irá visualizar dentro do Mercado Pago a comprovação de que a compra foi feita e será redirecionada a sua loja novamente. 
+
+## ---[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------
+
+1. Selecione a opção **Quero pagar com cartão de crédito**.
+2. Escolha pagar com um novo cartão de crédito e utilize os [cartões de teste](/developers/pt/guides/additional-content/testing/test-cards) para realizar o pagamento. É importante não realizar o pagamento com cartões de uso pessoal.
+3. Adicione as informações do cartão de teste indicado (nº do cartão, CVV e data de validade). 
+4. Clique em **pedido com pagamento obrigatório**.
+5. Ao finalizar a compra o seller irá visualizar que a compra foi aprovada
+
+> WARNING
+>
+> Importante
+> 
+> Ao finalizar a compra teste com Checkout Pro, no Painel Administrativo da PrestaShop não será possível visualizar a compra como aprovada, o pedido é gerado automaticamente, mas não consta como pago porque o processo ocorreu dentro do ambiente do Mercado Pago e não no ambiente da loja. 
+> 
+> Já com teste de compra feito com o ---[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------,será possível visualizar a aprovação do pedido.  
+></br> <br/>
+> Importante salientar também que, em ambas os checkouts, essa informação de pagamento aprovado não constará no histórico da conta do Mercado Pago porque nele só constam despesas reais (feitas em produção).
+
+
 > PREV_STEP_CARD_PT
 >
-> Configuração de pagamentos com Ticket Checkout
+> Customização de e-mail para pagamentos via ---[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------
 >
-> Configure a sua loja para receber pagamentos presenciais. 
+> Após configurar o ---[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------ para receber pagamentos, saiba como configurar o envio de e-mails que notificarão o usuário de suas transações.
 >
-> [Ticket Checkout](/developers/pt/docs/prestashop/payment-setup/ticket-checkout)
-------------
-
-----[mlb]----
-> NEXT_STEP_CARD_PT
->
-> Configurar os pagamentos com Pix
->
-> Veja como configurar o Pix para receber os pagamento de sua loja.
->
-> [Pix](/developers/pt/docs/prestashop/payment-setup/pix)
-------------
+> [Customização de e-mail](/developers/pt/docs/prestashop/payment-setup/cho-api/email-customization)
 
 > NEXT_STEP_CARD_PT
 >
