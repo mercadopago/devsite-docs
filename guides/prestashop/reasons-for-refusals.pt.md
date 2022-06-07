@@ -10,8 +10,16 @@ Com relação à **aprovação dos pagamentos** na sua loja, existem três princ
 
 > PREV_STEP_CARD_PT
 >
-> Recebebimento de pagamentos
+> Receber os pagamentos
 >
 > Saiba como ativar sua loja para processar vendas reais.
 >
-> [Recebebimento de pagamentos](/developers/pt/docs/prestashop/sales-processing/go-to-production)
+> [Receber os pagamentos](/developers/pt/docs/prestashop/sales-processing/go-to-production)
+
+> NEXT_STEP_CARD_PT
+>
+> Como instalar o módulo manualmente
+>
+> Veja como, caso necessário, instalar o módulo de forma manual.
+>
+> [Como instalar o módulo manualmente](/developers/pt/docs/prestashop/how-tos/install-module-manually)

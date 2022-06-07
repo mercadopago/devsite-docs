@@ -1,4 +1,4 @@
-# Configuração de pagamentos com Checkout Pro
+# Configurar os pagamentos com Checkout Pro
  
 Com o Checkout Pro, o comprador será direcionado da loja para o site do Mercado Pago onde deverá preencher as informações solicitadas e efetuar o pagamento. Dessa forma, a transação é processada e concluída fora do ambiente de sua loja. 
 
@@ -27,16 +27,16 @@ Para integrar o Checkout Pro, siga os passos abaixo.
 
 > PREV_STEP_CARD_PT
 >
-> Configuração da integração
+> Configurar a integração
 >
-> Conecte sua conta do Mercado Pago ao plugin e capture os pagamentos que você receber pelas suas vendas on-line.
+> Conecte sua conta do Mercado Pago ao módulo e capture os pagamentos que você receber pelas suas vendas on-line.
 >
-> [Configuração da integração](/developers/pt/docs/prestashop/integration)
+> [Configurar a integração](/developers/pt/docs/prestashop/integration)
 
 > NEXT_STEP_CARD_PT
 >
-> Configuração de pagamento com ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------
+> Configurar os pagamentos com ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------
 >
 > Saiba como configurar o ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------ para receber os pagamento de sua loja.
 >
-> [Configuração de pagamento](/developers/pt/docs/prestashop/payment-setup/cho-api)
+> [Checkout API](/developers/pt/docs/prestashop/payment-setup/cho-api)

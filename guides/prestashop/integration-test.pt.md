@@ -1,9 +1,9 @@
-# Teste de pagamentos
+# Testar os pagamentos
  
-O plugin do Mercado Pago vem com o **ambiente Sandbox** ativo por padrão. Nesse ambiente você poderá simular pagamentos na loja e ver se tudo está funcionando corretamente antes de começar a receber pagamentos reais dos seus clientes. Para realizar o teste, siga os passos abaixo.
+O módulo do Mercado Pago vem com o **ambiente Sandbox** ativo por padrão. Nesse ambiente você poderá simular pagamentos na loja e ver se tudo está funcionando corretamente antes de começar a receber pagamentos reais dos seus clientes. Para realizar o teste, siga os passos abaixo.
  
-1. No Painel Administrativo da sua loja na Prestashop, acesse o menu Módulos e serviços, localize o plugin do Mercado Pago e clique em **configurar**.
-2. Na tela de gerenciamento do plugin, confirme se as [credenciais](/developers/pt/guides/additional-content/credentials/credentials) de teste estão devidamente preenchidas de acordo com as informações disponíveis em seu [Dashboard](/developers/pt/guides/additional-content/dashboard/introduction).
+1. No Painel Administrativo da sua loja na Prestashop, acesse o menu Módulos e serviços, localize o módulo do Mercado Pago e clique em **configurar**.
+2. Na tela de gerenciamento do módulo, confirme se as [credenciais](/developers/pt/guides/additional-content/credentials/credentials) de teste estão devidamente preenchidas de acordo com as informações disponíveis em seu [Dashboard](/developers/pt/guides/additional-content/dashboard/introduction).
 3. Em seguida, desça até a seção **Teste sua loja** e clique em **Quero testar minhas vendas**.
 4. Na página inicial da sua loja na PrestaShop, selecione um produto e clique em adicionar.
 5. Com o produto selecionado, finalize o pedido.
@@ -13,18 +13,30 @@ O plugin do Mercado Pago vem com o **ambiente Sandbox** ativo por padrão. Nesse
 9. Ao concluir o preenchimento, **finalize a compra**.
 Após finalizar as etapas anteriores, ative o **modo Produção** para receber pagamentos reais.
 
+----[mla, mlm, mpe, mco, mlu, mlc]----
 > PREV_STEP_CARD_PT
 >
-> Configuração de pagamentos presenciais
+> Configuração de pagamentos com Ticket Checkout
 >
 > Configure a sua loja para receber pagamentos presenciais. 
 >
-> [Configuração de pagamentos presenciais](/developers/pt/docs/prestashop/payment-setup/in-person)
+> [Ticket Checkout](/developers/pt/docs/prestashop/payment-setup/ticket-checkout)
+------------
+
+----[mlb]----
+> NEXT_STEP_CARD_PT
+>
+> Configurar os pagamentos com Pix
+>
+> Veja como configurar o Pix para receber os pagamento de sua loja.
+>
+> [Pix](/developers/pt/docs/prestashop/payment-setup/pix)
+------------
 
 > NEXT_STEP_CARD_PT
 >
-> Recebebimento de pagamentos
+> Receber os pagamentos
 >
 > Saiba como ativar sua loja para processar vendas reais.
 >
-> [Recebebimento de pagamentos](/developers/pt/docs/prestashop/sales-processing/go-to-production)
+> [Receber os pagamentos](/developers/pt/docs/prestashop/sales-processing/go-to-production)

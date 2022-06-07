@@ -13,16 +13,16 @@ Para poder realizar a integração do Mercado Pago com a PrestaShop, é preciso 
 | Versão PHP | PHP é uma linguagem de programação amplamente usada para desenvolvimento de aplicações web. Para mais informações, [clique aqui](https://www.php.net/). | PHP 5.6 até 7.1 para PrestaShop 1.6 <br> PHP 5.6 ou superior para PrestaShop 1.7 |
 | Base de dados | Conjuntos de arquivos relacionados entre si com registros sobre pessoas, lugares ou coisas. | MySql 5.6 ou superior (Oracle ou Percona) |
 | Dependência de extensões | Extensões dão novas habilidades ao PHP, complementando com mais funções. | PDO_MySQL, simplexml, mcrypt, hash, GD, DOM, iconv, curl, SOAP (para Webservices API) |
-| Configuração adicional | Ajustes recomendados para uma melhor performance e funcionamento adequado do PrestaShop e ao plugin do Mercado Pago. | safe_mode off * memory_limite maior que 256MB (512MB recomendado) |
+| Configuração adicional | Ajustes recomendados para uma melhor performance e funcionamento adequado do PrestaShop e ao módulo do Mercado Pago. | safe_mode off * memory_limite maior que 256MB (512MB recomendado) |
 | SSL | Protocolo que permite estabelecer comunicações seguras na Internet para atividades como navegação, e-mail, e outras transferências de dados. | Certificado SSL |
-| Cópia de segurança da sua loja **(recomendado)** | Cópia de todas as informações da sua loja a fim de garantir uma versão sem qualquer alteração caso seja necessário. | Aconselhamos que você faça uma cópia de segurança da loja online antes de fazer qualquer alteração. Ao finalizar a cópia, exclua todos os arquivos relacionados à versão anterior do plugin. |
+| Cópia de segurança da sua loja **(recomendado)** | Cópia de todas as informações da sua loja a fim de garantir uma versão sem qualquer alteração caso seja necessário. | Aconselhamos que você faça uma cópia de segurança da loja online antes de fazer qualquer alteração. Ao finalizar a cópia, exclua todos os arquivos relacionados à versão anterior do módulo. |
 
-Se todos os pré-requisitos forem atendidos, você poderá instalar o plugin do Mercado Pago na plataforma da PrestaShop.
+Se todos os pré-requisitos forem atendidos, você poderá instalar o módulo do Mercado Pago na plataforma da PrestaShop.
 
 > NEXT_STEP_CARD_PT
 >
-> Instalação do plugin
+> Instalação do módulo
 >
-> Siga estas etapas para instalar o plugin do Mercado Pago na sua loja virtual.
+> Siga estas etapas para instalar o módulo do Mercado Pago na sua loja virtual.
 >
-> [Instalação do plugin](/developers/pt/docs/prestashop/installation)
+> [Instalação do módulo](/developers/pt/docs/prestashop/installation)

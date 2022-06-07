@@ -1,4 +1,4 @@
-# Configuração de pagamentos com ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- # Checkout API ------------
+# Configurar os pagamentos com ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------
  
 Com o ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------, ofereça pagamentos com **cartões de crédito** diretamente em sua loja, sem que o comprador precise ser redirecionado para realizar o pagamento.
  
@@ -26,16 +26,16 @@ Feitas as devidas alterações, em **Parâmetros da Loja > Definições de Encom
 
 > PREV_STEP_CARD_PT
 >
-> Configuração de pagamentos com Checkout Pro
+> Configurar os pagamentos com Checkout Pro
 >
 > Saiba como configurar o Checkout Pro para receber os pagamento de sua loja.
 >
-> [Configuração de pagamento com Checkout Pro](/developers/pt/docs/prestashop/payment-setup/cho-pro)
+> [Checkout Pro](/developers/pt/docs/prestashop/payment-setup/cho-pro)
 
 > NEXT_STEP_CARD_PT
 >
-> Configuração de pagamentos presenciais
+> Configurar os pagamentos com Ticket Checkout
 >
 > Configure a sua loja para receber pagamentos presenciais. 
 >
-> [Configuração de pagamentos presenciais](/developers/pt/docs/prestashop/payment-setup/in-person)
+> [Ticket Checkout](/developers/pt/docs/prestashop/payment-setup/in-person)
