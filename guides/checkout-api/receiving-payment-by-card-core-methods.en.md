@@ -129,32 +129,30 @@ mercadopago.payment.save(payment_data)
 ===
 Find the payment status in the _status_ field.
 ===
- 
-MercadoPago.SDK.setAccessToken("YOUR_ACCESS_TOKEN");
- 
-Payment payment = new Payment();
-payment.setTransactionAmount(Float.valueOf(request.getParameter("transactionAmount")))
-      .setToken(request.getParameter("token"))
-      .setDescription(request.getParameter("description"))
-      .setInstallments(Integer.valueOf(request.getParameter("installments")))
-      .setPaymentMethodId(request.getParameter("paymentMethodId"));
- 
-Identification identification = new Identification();----[mla, mlb, mlu, mlc, mpe, mco]----
-identification.setType(request.getParameter("identificationType"))
-             .setNumber(request.getParameter("identificationNumber"));------------ ----[mlm]----
-identification.setNumber(request.getParameter("identificationNumber"));------------
- 
-Payer payer = new Payer();
-payer.setEmail(request.getParameter("email"))
-    .setIdentification(identification);
-   
-payment.setPayer(payer);
- 
-payment.save();
- 
-System.out.println(payment.getStatus());
- 
-```
+
+PaymentClient client = new PaymentClient();
+
+PaymentCreateRequest paymentCreateRequest =
+   PaymentCreateRequest.builder()
+       .transactionAmount(request.getTransactionAmount())
+       .token(request.getToken())
+       .description(request.getDescription())
+       .installments(request.getInstallments())
+       .paymentMethodId(request.getPaymentMethodId())
+       .payer(
+           PaymentPayerRequest.builder()
+               .email(request.getPayer().getEmail())
+               .firstName(request.getPayer().getFirstName())
+               .identification(
+                   IdentificationRequest.builder()
+                       .type(request.getPayer().getIdentification().getType())
+                       .number(request.getPayer().getIdentification().getNumber())
+                       .build())
+               .build())
+       .build();
+
+client.create(paymentCreateRequest);
+
 ```ruby
 ===
 Find the payment status in the _status_ field.
