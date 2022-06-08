@@ -53,7 +53,6 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 > como ONG.
 ------------
 
-
 ----[mpe, mlu]----
 > INFO
 >
