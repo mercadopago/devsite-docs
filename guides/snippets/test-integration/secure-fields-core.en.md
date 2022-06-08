@@ -94,6 +94,7 @@ Add your [public key]([FAKER][CREDENTIALS][URL]) like this:
  
 <script>
 const mp = new MercadoPago('YOUR_PUBLIC_KEY');
+// Add Step #createPCIFields
  ----[mla, mlb, mlu, mlc, mpe, mco]----
 // Add Step #getIdentificationTypes------------
 // Add Step #getPaymentMethods
@@ -116,6 +117,7 @@ For more details on the allowed styles, [check out the technical reference](http
 A code example with `cardNumber`, `expirationDate` and `securityCode` would be:
 
 ```javascript
+  // Step #createPCIFields
   const cardNumberElement = mp.fields.create('cardNumber', {
     placeholder: "Card number",
   }).mount('form-checkout__cardNumber-container');
