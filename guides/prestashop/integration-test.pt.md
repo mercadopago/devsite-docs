@@ -42,18 +42,30 @@ Feito o processo inicial de compra, veja abaixo como testar a integração de ac
 > </br> <br/>
 > Importante salientar também que, em ambas os checkouts, essa informação de pagamento aprovado não constará no histórico da conta do Mercado Pago porque nele só constam despesas reais (feitas em produção).
 
+----[mlb]----
 > PREV_STEP_CARD_PT
 >
-> Customização de e-mail para pagamentos via ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------
+> Configurar os pagamentos com Pix
 >
-> Após configurar o ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------ para receber pagamentos, saiba como configurar o envio de e-mails que notificarão o usuário de suas transações.
+> Configure a sua loja para receber pagamentos com Pix utilizando o ----[mlb]---- Checkout Transparente. ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API. ------------ 
 >
-> [Customização de e-mail](/developers/pt/docs/prestashop/payment-setup/cho-api/email-customization)
+> [Pix](/developers/pt/docs/prestashop/payment-setup/cho-api/pix)
+------------
+
+----[mla, mlm, mpe, mco, mlu, mlc]----
+> PREV_STEP_CARD_PT
+>
+> Configurar os pagamentos com ticket checkout
+>
+> Configure a sua loja para receber pagamentos em dinheiro utilizando o ----[mlb]---- Checkout Transparente. ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API. ------------
+>
+> [Configurar os pagamentos com ticket checkout](/developers/pt/docs/prestashop/payment-setup/cho-api/ticket-checkout)
+------------
 
 > NEXT_STEP_CARD_PT
 >
 > Receber os pagamentos
 >
-> Saiba como ativar sua loja para processar vendas reais.
+> Saiba como ativar a loja para processar vendas reais.
 >
 > [Receber os pagamentos](/developers/pt/docs/prestashop/sales-processing/go-to-production)

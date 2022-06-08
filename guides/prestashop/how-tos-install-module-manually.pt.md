@@ -18,3 +18,11 @@ Para instalar o módulo de forma manual, siga os passos abaixo:
 > Veja os principais motivos que podem impactar diretamente na aprovação dos pagamentos em sua loja. 
 >
 > [Motivos de recusas dos pagamentos](/developers/pt/docs/prestashop/sales-processing/reasons-for-refusals)
+
+> NEXT_STEP_CARD_PT
+>
+> Como customizar e-mails para pagamentos com ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------
+>
+> Após configurar o ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------ para receber pagamentos, saiba como configurar o envio de e-mails que notificarão o usuário de suas transações.
+>
+> [Customização de e-mail](/developers/pt/docs/prestashop/payment-setup/how-tos/cho-api-email-customization)

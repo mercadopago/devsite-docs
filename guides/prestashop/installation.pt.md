@@ -24,8 +24,8 @@ Pronto! Você verá o módulo instalado na seção **Personalizar** do seu paine
 
 > NEXT_STEP_CARD_PT
 >
-> Configurar a integração
+> Configuração da integração
 >
 > Conecte sua conta do Mercado Pago ao módulo e capture os pagamentos que você receber pelas suas vendas on-line.
 >
-> [Configurar a integração](/developers/pt/docs/prestashop/integration)
+> [Configuração da integração](/developers/pt/docs/prestashop/integration)

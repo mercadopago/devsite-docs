@@ -1,4 +1,4 @@
-# Configurar os pagamentos com ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------ - Cartões
+# Configurar os pagamentos com cartões
 
 Com o [----[mlb]---- Checkout Transparente, ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API, ------------](/developers/pt/guides/checkout-api/landing) ofereça pagamentos com **cartões de crédito ou débito** diretamente em sua loja, sem que o comprador precise ser redirecionado para realizar o pagamento.
  
@@ -12,15 +12,15 @@ Para integrar a forma de pagamento, siga os passos abaixo.
 
 > PREV_STEP_CARD_PT
 >
-> Configurar os pagamentos com Checkout Pro
+> Configurar os pagamentos com ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------
 >
-> Saiba como configurar o Checkout Pro para receber os pagamento de sua loja.
+> Saiba como configurar o ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------ para receber pagamentos em sua loja.
 >
-> [Checkout Pro](/developers/pt/docs/prestashop/payment-setup/cho-pro)
+> [Checkout Transparente](/developers/pt/docs/prestashop/payment-setup/cho-api/introduction)
 
 > NEXT_STEP_CARD_PT
 >
-> Configurar os pagamentos com ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------ - Ticket checkout
+> Configurar os pagamentos com ticket checkout
 >
 > Configure a sua loja para receber pagamentos em dinheiro utilizando o ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------. 
 >

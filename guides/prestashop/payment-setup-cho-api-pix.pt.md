@@ -1,4 +1,4 @@
-# Configurar os pagamentos com ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------ - Pix
+# Configurar os pagamentos com Pix
 
 Com o [----[mlb]---- Checkout Transparente, ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API, ------------](/developers/pt/guides/checkout-api/landing) ofereça pagamentos com **Pix** diretamente em sua loja. O Pix é um meio de pagamento instantâneo e disponível 24h por dia.
 
@@ -18,16 +18,16 @@ Para integrar a forma de pagamento, siga os passos abaixo.
 
 > PREV_STEP_CARD_PT
 >
-> Configurar os pagamentos com ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------ - Ticket checkout
+> Configurar os pagamentos com ticket checkout
 >
 > Configure a sua loja para receber pagamentos em dinheiro utilizando o ----[mlb]---- Checkout Transparente. ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API. ------------
 >
-> [Ticket checkout](/developers/pt/docs/prestashop/payment-setup/cho-api/ticket-checkout)
+> [Configurar os pagamentos com ticket checkout](/developers/pt/docs/prestashop/payment-setup/cho-api/ticket-checkout)
 
 > NEXT_STEP_CARD_PT
 >
-> Customização de e-mail para pagamentos via ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------
+> Testar os pagamentos
 >
-> Após configurar o ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------ para receber pagamentos, saiba como configurar o envio de e-mails que notificarão o usuário de suas transações.
+> Saiba como realizar uma compra teste e garantir o funcionamento da integração.
 >
-> [Customização de e-mail](/developers/pt/docs/prestashop/payment-setup/cho-api/email-customization)
+> [Testar os pagamentos](/developers/pt/docs/prestashop/sales-processing/integration-test)

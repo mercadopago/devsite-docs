@@ -25,7 +25,7 @@ Para integrar o Checkout Pro, siga os passos abaixo.
 
 > PREV_STEP_CARD_PT
 >
-> Configurar a integração
+> Configuração da integração
 >
 > Conecte sua conta do Mercado Pago ao módulo.
 >
@@ -33,8 +33,8 @@ Para integrar o Checkout Pro, siga os passos abaixo.
 
 > NEXT_STEP_CARD_PT
 >
-> Configurar os pagamentos com ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------ - cartões
+> Configurar os pagamentos com ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------
 >
-> Saiba como configurar o ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------ para receber pagamentos com cartões em sua loja.
+> Saiba como configurar o ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------ para receber pagamentos em sua loja.
 >
-> [Checkout Transparente](/developers/pt/docs/prestashop/payment-setup/cho-api/cards)
+> [Checkout Transparente](/developers/pt/docs/prestashop/payment-setup/cho-api/introduction)

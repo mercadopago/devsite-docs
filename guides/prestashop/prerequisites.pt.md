@@ -6,6 +6,8 @@ Para poder realizar a integração do Mercado Pago com a PrestaShop, é preciso 
 |---|---|---|
 | Conta de vendedor Mercado Pago | Para realizar vendas, é preciso uma conta de vendedor no Mercado Pago. Caso não a tenha, [clique aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) para criar.| Conta de vendedor no Mercado Pago |
 | PrestaShop | Plataforma de e-commerce com software de código aberto, que permite a qualquer usuário criar e desenvolver um site comercial. [Clique aqui](https://www.prestashop.com/pt/) para mais informações. | Requerido 1.6.x ou superior. |
+| Módulo do Mercado Pago | No **Painel Administrativo** da sua loja na PrestaShop, acesse o **Catálogo de Módulos** e procure por Mercado Pago. Em seguida, instale o módulo e procure-o na seção **Gerenciador de módulos**. Por fim, clique em **Ativar** para poder integrar o módulo à sua loja.
+| Caso você tenha problemas durante a instalação do módulo e precise entrar em contato com nosso suporte, é possível que você seja solicitado a realizar a [instalação de forma manual](/developers/pt/docs/prestashop/how-tos/install-module-manually). Mantenha o módulo sempre atualizado com a última versão para garantir a segurança dos dados e o funcionamento da integração. |
 | Credenciais | As [credenciais](/developers/pt/guides/additional-content/credentials/credentials) são senhas únicas com as quais identificamos uma integração na sua conta e servem para capturar pagamentos em lojas virtuais e outras aplicações de forma segura. | Para realizar testes e garantir o funcionamento da integração, serão necessárias as **credenciais de teste**. Após esta etapa, você precisará das **credenciais de produção** para receber pagamentos reais. |
 | Ambiente | Serviço de hospedagem | AMP (Linux, Apache, MySQL, and PHP) ou LNMP stack. |
 | Sistema operacional | Sistema responsável pelo gerenciamento do hardware do computador. | Linux x86, Windows x86-64 |
@@ -18,6 +20,14 @@ Para poder realizar a integração do Mercado Pago com a PrestaShop, é preciso 
 | Cópia de segurança da sua loja **(recomendado)** | Cópia de todas as informações da sua loja a fim de garantir uma versão sem qualquer alteração caso seja necessário. | Aconselhamos que você faça uma cópia de segurança da loja online antes de fazer qualquer alteração. Ao finalizar a cópia, exclua todos os arquivos relacionados à versão anterior do módulo. |
 
 Se todos os pré-requisitos forem atendidos, você poderá instalar o módulo do Mercado Pago na plataforma da PrestaShop.
+
+> PREV_STEP_CARD_PT
+>
+> Página inicial
+>
+> Retorne a página inicial da documentação da PrestaShop.
+>
+> [Página inicial](/developers/pt/docs/prestashop/landing)
 
 > NEXT_STEP_CARD_PT
 >
