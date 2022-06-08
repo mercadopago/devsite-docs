@@ -57,7 +57,7 @@ Go to [Create POS](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/ref
 
 ### Next steps
 
-> LEFT_BUTTON
+> LEFT_BUTTON_RECOMMENDED_EN
 >
 > QR attended model
 >

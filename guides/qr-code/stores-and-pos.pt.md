@@ -64,7 +64,7 @@ Acesse [Criar caixa](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/r
 >
 > [QR modelo atendido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/qr-code/qr-attended-model/introduction)
 
-> RIGHT_BUTTON
+> LEFT_BUTTON_RECOMMENDED_PT
 >
 > QR modelo dinâmico
 >

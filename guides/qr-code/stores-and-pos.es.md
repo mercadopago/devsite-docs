@@ -56,7 +56,7 @@ Accede a [Crear caja](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/
 
 ### Próximos pasos
 
-> LEFT_BUTTON
+> LEFT_BUTTON_RECOMMENDED_ES
 >
 > QR modelo atendido
 >
