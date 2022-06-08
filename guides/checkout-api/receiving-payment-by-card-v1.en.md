@@ -478,4 +478,4 @@ Finally, you always need to be notified of new payments and status updates.  For
 >
 > Checkout API
 >
-> Use our [complete integration examples](http://github.com/mercadopago/card-payment-sample) on GitHub to download instantly.
+> Use our [complete integration examples](http://github.com/mercadopago/card-payment-sample/tree/1.0.0) on GitHub to download instantly.
