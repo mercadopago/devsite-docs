@@ -19,7 +19,7 @@ Feito o processo inicial de compra, veja abaixo como testar a integração de ac
 3. Adicione as informações do cartão de teste indicado (nº do cartão, CVV e data de validade). 
 4. Ao finalizar a compra o seller irá visualizar dentro do Mercado Pago a comprovação de que a compra foi feita e será redirecionada a sua loja novamente. 
 
----[mlb]---- 
+----[mlb]---- 
 ## Checkout Transparente 
 ------------ 
 ----[mla, mlm, mpe, mco, mlu, mlc]---- 
@@ -38,16 +38,15 @@ Feito o processo inicial de compra, veja abaixo como testar a integração de ac
 > 
 > Ao finalizar a compra teste com Checkout Pro, no Painel Administrativo da PrestaShop não será possível visualizar a compra como aprovada, o pedido é gerado automaticamente, mas não consta como pago porque o processo ocorreu dentro do ambiente do Mercado Pago e não no ambiente da loja. 
 > </br> <br/>
-> Já com teste de compra feito com o ---[mlb]---- Checkout Transparente, ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API, ------------ será possível visualizar a aprovação do pedido.  
-></br> <br/>
+> Já com teste de compra feito com o ----[mlb]---- Checkout Transparente, ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API, ------------ será possível visualizar a aprovação do pedido.  
+> </br> <br/>
 > Importante salientar também que, em ambas os checkouts, essa informação de pagamento aprovado não constará no histórico da conta do Mercado Pago porque nele só constam despesas reais (feitas em produção).
-
 
 > PREV_STEP_CARD_PT
 >
-> Customização de e-mail para pagamentos via ---[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------
+> Customização de e-mail para pagamentos via ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------
 >
-> Após configurar o ---[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------ para receber pagamentos, saiba como configurar o envio de e-mails que notificarão o usuário de suas transações.
+> Após configurar o ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------ para receber pagamentos, saiba como configurar o envio de e-mails que notificarão o usuário de suas transações.
 >
 > [Customização de e-mail](/developers/pt/docs/prestashop/payment-setup/cho-api/email-customization)
 

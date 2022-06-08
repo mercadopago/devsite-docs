@@ -1,4 +1,4 @@
-# Customização de e-mail para pagamentos via ---[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------
+# Customização de e-mail para pagamentos via ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------
  
 Tendo selecionado o [----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------](/developers/pt/guides/checkout-api/landing) para receber os pagamento de sua loja, é importante configurar o envio de e-mails que notificarão o usuário de suas transações.
  
@@ -15,7 +15,7 @@ Feitas as devidas alterações, em **Parâmetros da Loja > Definições de Encom
 ----[mlb]----
 > PREV_STEP_CARD_PT
 >
-> Configurar os pagamentos com ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------ - Pix
+> Configurar os pagamentos com ----[mlb]---- Checkout Transparente - ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API - ------------ Pix
 >
 > Configure a sua loja para receber pagamentos em dinheiro utilizando o ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------. 
 >
@@ -25,7 +25,7 @@ Feitas as devidas alterações, em **Parâmetros da Loja > Definições de Encom
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 > PREV_STEP_CARD_PT
 >
-> Configurar os pagamentos com ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------ - Ticket Checkout
+> Configurar os pagamentos com ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------ - Ticket checkout
 >
 > Configure a sua loja para receber pagamentos em dinheiro utilizando o ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------. 
 >
