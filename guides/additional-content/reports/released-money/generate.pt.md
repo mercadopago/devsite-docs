@@ -1,6 +1,5 @@
 
 # Como gerar o seu relatório de Liberações?
-------------
 
 > NOTE
 >
