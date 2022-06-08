@@ -39,10 +39,19 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 | EFFECTIVE_COUPON_AMOUNT | Custo de oferecer desconto. |
 | POI_ID | ID da maquininha se o pagamento é feito em uma loja física. |
 | CARD_INITIAL_NUMBER | Corresponde aos primeiros dígitos do cartão de crédito ou débito utilizado para realizar a compra. |
-| OPERATION_TAGS | São etiquetas para categorizar e/ou segmentar diferentes aspectos da transação, como por exemplo, os canais usados para fazer um pagamento. Eles são identificados como:<br><br>  -   WHATSAPP_PAY: Esta etiqueta indica que o pagamento foi feito via WhatsApp <br> -   CASHOUT: Esta etiqueta indica que a transação corresponde a um Pix Saque <br> -   EXTRACASHOUT: Esta etiqueta indica que a transação corresponde a um Pix Troco <br> -   PIX: Esta etiqueta indica que a transação corresponde a um pagamento via Pix. |
-| ITEM_ID | Identificador do produto vendido. |
-| POI_WALLET_NAME | Nome da carteira digital de onde um pagamento virtual saiu. Permite identificar a origem de uma transação quando você cobra com um código QR do Mercado Pago.|
-| POI_BANK_NAME | Nome da instituição bancária de onde um pagamento virtual saiu. Permite identificar a origem de uma transação quando você cobra com um código QR do Mercado Pago.|
+| OPERATION_TAGS | São etiquetas para categorizar e/ou segmentar diferentes aspectos da transação, como por exemplo, os canais usados para fazer um pagamento. Eles são identificados como:<br>WHATSAPP_PAY: Esta etiqueta indica que o pagamento foi feito via WhatsApp<br>QR: Esta etiqueta indica que o pagamento foi feito por código QR<br>PO: Esta etiqueta indica que o pagamento foi feito com a Point<br>MARKETPLACE: Esta etiqueta indica que o pagamento foi feito diretamente no Mercado Livre.|
+| ITEM_ID | Identificador do produto vendido. | ----[mla]----
+| PAYER_NAME* | Nome de quem faz o pagamento. | ------------ ----[mla]----
+| PAYER_ID_TYPE* | Tipo de identificação de quem faz um pagamento ou doação. | ------------ ----[mla]----
+| PAYER_ID_NUMBER* | Número de identificação de quem faz um pagamento ou doação. | ------------
+
+----[mla]----
+> INFO
+>
+> (*) Estas informações só podem ser usadas para fins de reconciliação e serão tratadas de acordo com as leis de
+> proteção de dados pessoais aplicáveis. Elas estarão disponíveis quando pagamentos via código QR e transferências forem
+> recebidos ou quando uma doação for recebida por uma ONG.
+------------
 
 ### Próximos passos
 
