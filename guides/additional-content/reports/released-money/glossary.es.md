@@ -41,6 +41,8 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 | CARD_INITIAL_NUMBER | Corresponde a los primeros dígitos de la tarjeta crédito o débito con la que se hizo la compra. |
 | OPERATION_TAGS | Son las etiquetas para categorizar y/o segmentar diferentes aspectos de la transacción, como por ejemplo los canales usados para hacer un pago.Se identifican como:<br><br>  -   WHATSAPP_PAY: Esta etiqueta indica que el pago fue hecho a través de whatsApp. <br> -   CASHOUT: Esta etiqueta indica que la operación corresponde a un Pix Saque. <br> -   EXTRACASHOUT: Esta etiqueta indica que la operación corresponde a un Pix Troco. <br> -   PIX: Esta etiqueta indica que la operación corresponde a un pago Pix. |
 | ITEM_ID | Identificador del producto vendido. |
+| POI_WALLET_NAME | Nombre de la billetera virtual desde la que se origina un pago digital. Permite identificar el origen de una operación cuando cobras con un ----[mla]----[código QR interoperable](https://vendedores.mercadolibre.com.ar/nota/cobra-a-otras-billeteras-con-tu-qr-de-mercado-pago)------------ ----[mlu, mpe, mlm, mco, mlc, mlb]----código QR de Mercado Pago------------.|
+| POI_BANK_NAME | Nombre de la entidad bancaria desde la que se origina un pago digital. Permite identificar el origen de una operación cuando cobras con un ----[mla]----[código QR interoperable](https://vendedores.mercadolibre.com.ar/nota/cobra-a-otras-billeteras-con-tu-qr-de-mercado-pago)------------ ----[mlu, mpe, mlm, mco, mlc, mlb]----código QR de Mercado Pago------------.|
 
 ----[mpe, mlu]----
 > INFO
