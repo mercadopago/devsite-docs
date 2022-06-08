@@ -11,7 +11,7 @@
 
 ![API-integration-flowchart](/images/api/api-integration-flowchart-cardform-es.png)
 
-> Si quieres realizar un flujo personalizado del pago, te compartimos todos los [métodos disponibles para integrar de forma avanzada](/developers/es/docs/online-payments/checkout-api/receiving-payment-by-card-core-methods-v2).
+> Si quieres realizar un flujo personalizado del pago, te compartimos todos los [métodos disponibles para integrar de forma avanzada](/developers/es/docs/online-payments/checkout-api/receiving-payment-by-card-core-methods).
 
 ----[mlb]----
 Al usar nuestro Checkout Transparente de Mercado Pago, es importante tener en cuenta dos instancias: la de la captura de datos y la del envío de confirmación del pago.

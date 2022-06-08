@@ -18,7 +18,7 @@ Use os [exemplos para download](#bookmark_exemplos_para_download) para conhecer 
 
 ![API-integration-flowchart](/images/api/api-integration-flowchart-cardform-pt.png)
 
-> Caso deseje realizar um fluxo de pagamento personalizado, compartilhamos todos os [métodos disponíveis para integrar de forma avançada](/developers/pt/docs/online-payments/checkout-api/receiving-payment-by-card-core-methods). 
+> Caso deseje realizar um fluxo de pagamento personalizado, compartilhamos todos os [métodos disponíveis para integrar de forma avançada](/developers/pt/docs/online-payments/checkout-api/receiving-payment-by-card-core-methods-v1). 
 
 <br>
 

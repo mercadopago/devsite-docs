@@ -6,7 +6,7 @@
 
 ![API-integration-flowchart](/images/api/api-integration-flowchart-cardform-en.png)
 
-> If you want to make a customized payment flow, we share all the [methods available for advanced integration](/developers/en/docs/online-payments/checkout-api/receiving-payment-by-card-core-methods-v2).
+> If you want to make a customized payment flow, we share all the [methods available for advanced integration](/developers/en/docs/online-payments/checkout-api/receiving-payment-by-card-core-methods).
 
 With our Mercado Pago Checkout API, you should take into account two aspects: data capture and payment confirmation submission.
 
