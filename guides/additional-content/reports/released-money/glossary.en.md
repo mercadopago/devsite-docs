@@ -53,7 +53,6 @@ If you have any doubts about the technical terms used, check the glossary below.
 > when a donation is received by an NGO.
 ------------
 
-
 ### Next steps
 
 > LEFT_BUTTON_RECOMMENDED_EN
