@@ -175,7 +175,7 @@ A opção de callbacks aceita diferentes funções que são ativadas em diversos
 > 
 > Referência técnica
 > 
-> Obtenha mais informações sobre os callbacks nas [referências técnicas](https://github.com/mercadopago/sdk-js).
+> Obtenha mais informações sobre os callbacks nas [referências técnicas](https://github.com/mercadopago/sdk-js/blob/main/API/card-form.md).
 
 Ao enviar o formulário, geramos um token como uma representação segura dos dados do cartão. Você pode acessar este token usando a função `getCardFormData`, como mostramos anteriormente no callback `onSubmit`. Também armazenaremos o token em um `input` oculto dentro do seu formulário e o chamaremos de `MPHiddenInputToken`.
 
