@@ -124,6 +124,9 @@ const renderCardPaymentBrick = async (bricksBuilder) => {
 };
 renderCardPaymentBrick(bricksBuilder);
 ```
+
+O resultado de renderizar o brick deve ser como na imagem abaixo:
+
 ![cardform](checkout-bricks/card-form-pt.png)
 
 > PREV_STEP_CARD_PT

@@ -41,7 +41,7 @@ Deberás crear un container para definir dónde se colocará el brick en la pant
 >
 > Atención
 >
-> Recuerda que todo el código JS se puede incluir un `< script >` o también en archivos .js separados que importes en tu sitio.
+> Recuerda que todo el código JS se puede incluir en un `< script >` o también en archivos .js separados que importes en tu sitio.
 
 Para esto deberás instalar la SDK agregando lo siguiente en tu código HTML:
 
@@ -125,6 +125,8 @@ const renderCardPaymentBrick = async (bricksBuilder) => {
 };
 renderCardPaymentBrick(bricksBuilder);
 ```
+
+El resultado de renderizar el brick debe ser como la imagen de abajo:
 
 ![cardform](checkout-bricks/card-form-es.png)
 
