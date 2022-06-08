@@ -13,6 +13,7 @@ Feitas as devidas alterações, em **Parâmetros da Loja > Definições de Encom
 2. Envie um e-mail de teste para garantir que a plataforma está enviando os e-mails corretamente.
 
 ----[mlb]----
+
 > PREV_STEP_CARD_PT
 >
 > Configurar os pagamentos com ----[mlb]---- Checkout Transparente - ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API - ------------ Pix
@@ -20,16 +21,19 @@ Feitas as devidas alterações, em **Parâmetros da Loja > Definições de Encom
 > Configure a sua loja para receber pagamentos em dinheiro utilizando o ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------. 
 >
 > [Pix](/developers/pt/docs/prestashop/payment-setup/cho-api/pix)
+
 ------------
 
 ----[mla, mlm, mpe, mco, mlu, mlc]----
+
 > PREV_STEP_CARD_PT
 >
-> Configurar os pagamentos com ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------ - Ticket checkout
+> Configurar os pagamentos com ----[mlb]---- Checkout Transparente - ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API - ------------ Ticket checkout
 >
-> Configure a sua loja para receber pagamentos em dinheiro utilizando o ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------. 
+> Configure a sua loja para receber pagamentos em dinheiro utilizando o ----[mlb]---- Checkout Transparente. ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API. ------------
 >
-> [Ticket Checkout](/developers/pt/docs/prestashop/payment-setup/cho-api/ticket-checkout)
+> [Ticket checkout](/developers/pt/docs/prestashop/payment-setup/cho-api/ticket-checkout)
+
 ------------
 
 > NEXT_STEP_CARD_PT
