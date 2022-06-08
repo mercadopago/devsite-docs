@@ -40,12 +40,27 @@ Você pode adicionar tudo o que precisar, alterar o atributo `label` sugerido e 
 No exemplo a seguir, assume-se que os dados `transactionAmount` e `description` foram obtidos no passo anterior onde o cliente selecionou o produto ou serviço que deseja pagar.
 
 ```html
+<style>
+  #form-checkout {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+  }
+
+  .container {
+    height: 18px;
+    display: inline-block;
+    border: 1px solid rgb(118, 118, 118);
+    border-radius: 2px;
+    padding: 1px 2px;
+  }
+</style>
 <form id="form-checkout" method="POST" action="/process_payment">
-  <div id="form-checkout__cardNumber-container"></div>
-  <div id="form-checkout__expirationDate-container" class="input"></div>
+  <div id="form-checkout__cardNumber-container" class="container"></div>
+  <div id="form-checkout__expirationDate-container" class="container"></div>
   <input type="text" name="cardholderName" id="form-checkout__cardholderName" placeholder="Titular do cartão" />
   <input type="email" name="cardholderEmail" id="form-checkout__cardholderEmail" placeholder="E-mail" />
-  <div id="form-checkout__securityCode-container"></div>
+  <div id="form-checkout__securityCode-container" class="container"></div>
   <select name="issuer" id="form-checkout__issuer">
     <option value="" disabled selected>Selecione o emissor</option>
   </select>----[mla, mlb, mlu, mlc, mpe, mco]----
