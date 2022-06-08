@@ -44,8 +44,8 @@ You can check your business sales in the activity list in your [Mercado Pago acc
 
 > RIGHT_BUTTON_RECOMMENDED_EN
 >
-> How to generate a QR
+> Requirements to integrate
 >
-> Learn about all the options to charge with QR depending on your type of business.
+> Everything you need to integrate QR Code.
 >
-> [Test your integration](/developers/en/guides/qr-code/integrations)
+> [Requirements to integrate](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/qr-code/pre-requisites)

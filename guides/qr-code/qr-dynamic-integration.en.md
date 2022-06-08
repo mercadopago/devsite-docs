@@ -79,8 +79,8 @@ Implement IPN `merchant_order` with an order search by `external_reference` as a
 
 > NEXT_STEP_CARD_EN
 >
-> Advanced Integration
+> Test your integration
 >
-> Learn the options to take your integration to the next level.
+> Access more information about testing your integration.
 >
-> [Advanced Integration](/developers/en/guides/qr-code/advanced-integration)
+> [Test your integration](/developers/en/docs/qr-code/qr-dynamic-model/qr-integration-test)

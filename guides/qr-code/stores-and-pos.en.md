@@ -27,8 +27,8 @@ Go to [Create store](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/r
 > Important
 >
 > 1. You should know the `country_id` of your current location at [our countries API](https://api.mercadolibre.com/countries).
-> 2. The `state_name` has to match the **states** of the specific country (https://api.mercadolibre.com/countries/$country_id).
-> 3. The `city_name` must match the **cities** of the states ( https://api.mercadolibre.com/states/$state_id).
+> 2. The `state_name` has to match the **states** of [the specific country](https://api.mercadolibre.com/countries/$country_id).
+> 3. The `city_name` must match the **cities** of [the states](https://api.mercadolibre.com/states/$state_id).
 
 
 # Point of Sale (POS)
@@ -55,10 +55,20 @@ Go to [Create POS](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/ref
 
 ---
 
-> PREV_STEP_CARD_EN
+### Next steps
+
+> LEFT_BUTTON
 >
-> Requirements to integrate
+> QR attended model
 >
-> Everything you need to integrate QR Code.
+> Integrate QR attended model.
 >
-> [Requirements to integrate](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/qr-code/pre-requisites)
+> [QR attended model](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/qr-code/qr-attended-model/introduction)
+
+> RIGHT_BUTTON_RECOMMENDED_EN
+>
+> QR dynamic model
+>
+> Integrate QR dynamic model.
+>
+> [QR dynamic model](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/qr-code/qr-dynamic-model/introduction)

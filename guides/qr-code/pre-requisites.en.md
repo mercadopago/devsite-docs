@@ -74,11 +74,11 @@ Step by step:
 
 > PREV_STEP_CARD_EN
 >
-> Integration types
+> Prerequsites
 >
-> You can select one of the options.
+> Check out the Prerequsites for this integration.
 >
-> [Integration types](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/qr-code/integration-types)
+> [Prerequsites](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/qr-code/pre-requisites)
 
 > NEXT_STEP_CARD_EN
 >

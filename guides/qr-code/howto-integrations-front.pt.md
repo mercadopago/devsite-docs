@@ -43,8 +43,8 @@ Em primeiro lugar, você precisa [criar um link de pagamento](https://www.mercad
 
 > RIGHT_BUTTON_RECOMMENDED_PT
 >
-> Como gerar o QR?
+> Requisitos para integrar
 >
-> Conheça as diferentes opções de receber com QR segundo seu negócio.
+> Tudo o que você precisa para integrar o QR Code.
 >
-> [Como gerar o QR?](/developers/pt/guides/qr-code/integrations)
+> [Requisitos para integrar](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/qr-code/pre-requisites)

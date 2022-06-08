@@ -27,8 +27,8 @@ Accede a [Crear sucursal](https://www.mercadopago[FAKER][URL][DOMAIN]/developers
 > Importante
 >
 > 1. Debes conocer tu `country_id` del país donde te encuentres en [nuestra API de países](https://api.mercadolibre.com/countries).
-> 2. El `state_name` debe coincidir con los **estados** según el país en cuestión (https://api.mercadolibre.com/countries/$country_id).
-> 3. El `city_name` debe coincidir con las **ciudades** según sus estados. (https://api.mercadolibre.com/states/$state_id).
+> 2. El `state_name` debe coincidir con los **estados** según [el país en cuestión](https://api.mercadolibre.com/countries/$country_id).
+> 3. El `city_name` debe coincidir con las **ciudades** según [sus estados](https://api.mercadolibre.com/states/$state_id).
 
 ## Cajas
 
@@ -54,10 +54,20 @@ Accede a [Crear caja](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/
 
 ---
 
-> PREV_STEP_CARD_ES
+### Próximos pasos
+
+> LEFT_BUTTON
 >
-> Requisitos para integrar
+> QR modelo atendido
 >
-> Todo lo que necesitas para integrar Código QR.
+> Aprende a integrar QR modelo atendido.
 >
-> [Requisitos para integrar](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/qr-code/pre-requisites)
+> [QR modelo atendido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/qr-code/qr-attended-model/introduction)
+
+> RIGHT_BUTTON_RECOMMENDED_ES
+>
+> QR modelo dinámico
+>
+> Aprende a integrar QR modelo dinámico.
+>
+> [QR modelo dinámico](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/qr-code/qr-dynamic-model/introduction)

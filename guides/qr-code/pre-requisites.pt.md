@@ -75,11 +75,11 @@ Passo a Passo:
 
 > PREV_STEP_CARD_PT
 >
-> Tipos de integração
+> Pré-requisitos
 >
-> Você pode escolher uma das opções.
+> Conheça os pré-requisitos para essa integração.
 >
-> [Tipos de integração](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/qr-code/integration-types)
+> [Pré-requisitos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/qr-code/pre-requisites)
 
 > NEXT_STEP_CARD_PT
 >

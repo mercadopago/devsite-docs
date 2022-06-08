@@ -44,8 +44,8 @@ Puedes consultar tus ventas en el listado de actividades de [tu cuenta de Mercad
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
-> ¿Cómo generar el QR?
+> Requisitos para integrar
 >
-> Conoce las distintas opciones de cobrar con QR según tu negocio.
+> Todo lo que necesitas para integrar Código QR.
 >
-> [¿Cómo generar el QR?](/developers/es/guides/qr-code/integrations)
+> [Requisitos para integrar](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/qr-code/pre-requisites)

@@ -83,8 +83,8 @@ Implemente o IPN de `merchant_order` com uma busca do pedido por `external_refer
 
 > NEXT_STEP_CARD_PT
 >
-> Integração avançada
+> Teste a sua integração
 >
-> Conheça as opções disponibilizadas para chegar à integração para o seguinte nível.
+> Saiba mais sobre como testar sua integração.
 >
-> [Integración avanzada](/developers/pt/guides/qr-code/advanced-integration)
+> [Teste a sua integração](/developers/pt/docs/qr-code/qr-dynamic-model/qr-integration-test)

@@ -8,5 +8,5 @@ Antes de realizar un reembolso, es importante considerar los siguientes factores
 
 Para realizar reembolsos totales o parciales de un pago y verificar los reembolsos realizados en tu tienda, visita nuestra Referencia API y accede a las APIs de reembolso total y parcial haciendo clic en los links a continuación.
 
-- [Inserir reembolsos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/chargebacks/_payments_id_refunds/post)
+- [Efectuar reembolsos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/chargebacks/_payments_id_refunds/post)
 - [Obtener lista de reembolsos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/chargebacks/_payments_id_refunds/get)
