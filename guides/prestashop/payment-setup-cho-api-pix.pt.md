@@ -20,7 +20,7 @@ Para integrar a forma de pagamento, siga os passos abaixo.
 >
 > Configurar os pagamentos com ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------ - Ticket checkout
 >
-> Configure a sua loja para receber pagamentos em dinheiro utilizando o ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------. 
+> Configure a sua loja para receber pagamentos em dinheiro utilizando o ----[mlb]---- Checkout Transparente. ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API. ------------
 >
 > [Ticket checkout](/developers/pt/docs/prestashop/payment-setup/cho-api/ticket-checkout)
 

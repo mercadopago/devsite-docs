@@ -1,8 +1,6 @@
-# Configuração a integração
+# Configurar a integração
  
 Para realizar a integração com o Mercado Pago, siga os procedimentos abaixo.
- 
-## Preencha as informações
  
 1. No Painel Administrativo da sua loja na Prestashop, acesse o menu **Módulos e serviços**, localize o plugin do Mercado Pago e clique em **configurar**.
 2. Na tela de gerenciamento do módulo, preencha os campos solicitados de acordo com suas informações de negócio.
@@ -11,7 +9,10 @@ Para realizar a integração com o Mercado Pago, siga os procedimentos abaixo.
 5. Na tela de gerenciamento do módulo, insira o **nome e a categoria da sua loja**.
 6. Informe o seu *integrator_id* como membro do **&lt;dev&gt;program**, do Mercado Pago. Caso ainda não seja um membro, [clique aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/developer-program) para mais informações.
  
-Feitas as configurações de negócio, configure as experiências de pagamento da sua loja de acordo com o tipo de checkout, podendo ser o [Checkout Pro](/developers/pt/guides/checkout-pro/introduction) ou o [Checkout Transparente](/developers/pt/guides/checkout-api/introduction).
+Feitas as configurações de negócio, configure as experiências de pagamento da sua loja de acordo com o tipo de checkout, podendo ser:
+
+* [Checkout Pro](/developers/pt/docs/prestashop/payment-setup/cho-pro)
+* ----[mlb]---- **Checkout Transparente** ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- **Checkout API** ------------ ([cartões](/developers/pt/docs/prestashop/payment-setup/cho-api/cards), [ticket checkout](/developers/pt/docs/prestashop/payment-setup/cho-api/ticket-checkout) e [Pix](/developers/pt/docs/prestashop/payment-setup/cho-api/pix)).
 
 > PREV_STEP_CARD_PT
 >

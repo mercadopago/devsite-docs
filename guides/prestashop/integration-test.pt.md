@@ -19,7 +19,12 @@ Feito o processo inicial de compra, veja abaixo como testar a integração de ac
 3. Adicione as informações do cartão de teste indicado (nº do cartão, CVV e data de validade). 
 4. Ao finalizar a compra o seller irá visualizar dentro do Mercado Pago a comprovação de que a compra foi feita e será redirecionada a sua loja novamente. 
 
-## ---[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------
+---[mlb]---- 
+## Checkout Transparente 
+------------ 
+----[mla, mlm, mpe, mco, mlu, mlc]---- 
+## Checkout API 
+------------
 
 1. Selecione a opção **Quero pagar com cartão de crédito**.
 2. Escolha pagar com um novo cartão de crédito e utilize os [cartões de teste](/developers/pt/guides/additional-content/testing/test-cards) para realizar o pagamento. É importante não realizar o pagamento com cartões de uso pessoal.
@@ -32,8 +37,8 @@ Feito o processo inicial de compra, veja abaixo como testar a integração de ac
 > Importante
 > 
 > Ao finalizar a compra teste com Checkout Pro, no Painel Administrativo da PrestaShop não será possível visualizar a compra como aprovada, o pedido é gerado automaticamente, mas não consta como pago porque o processo ocorreu dentro do ambiente do Mercado Pago e não no ambiente da loja. 
-> 
-> Já com teste de compra feito com o ---[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------,será possível visualizar a aprovação do pedido.  
+> </br> <br/>
+> Já com teste de compra feito com o ---[mlb]---- Checkout Transparente, ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API, ------------ será possível visualizar a aprovação do pedido.  
 ></br> <br/>
 > Importante salientar também que, em ambas os checkouts, essa informação de pagamento aprovado não constará no histórico da conta do Mercado Pago porque nele só constam despesas reais (feitas em produção).
 
