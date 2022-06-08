@@ -315,13 +315,4 @@ curl -X POST \
 cardNumberElement.on("focus", () => console.log("Card Number received focus"));
 ```
 
-Se você quiser saber mais sobre outros eventos customizados, acesse nossa documentação do [GitHub](https://github.com/lucmantovani/sdk-js/tree/feature/fields-docs#field-instanceonevent-callback).
-
-
-## Exemplos para download
-
-> GIT
->
-> Formulário de pagamento
->
-> Se você deseja implementar seu servidor com alguma outra tecnologia, te deixamos um [exemplo completo do formulário de pagamento](https://drive.google.com/file/d/10csLR_4NwMbXtHObxZ1Ej9fvB2Zkr7AS/view?usp=sharing) no GitHub para que você possa fazer o download.
+Se você quiser saber mais sobre outros eventos customizados, acesse nossa documentação do [GitHub](https://github.com/mercadopago/sdk-js/blob/main/API/fields.md#field-instanceonevent-callback).

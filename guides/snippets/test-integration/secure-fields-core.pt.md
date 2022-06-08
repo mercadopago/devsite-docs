@@ -96,7 +96,7 @@ Nesse passo são criados os campos seguros (cardNumber, expirationDate e securit
 
 O segundo parâmetro são as opções e pode receber valor para **placeholder** e **style**. O valor para **placeholder** deve ser uma *string*, enquanto **style** é um *objeto* com as chaves sendo o nome da propriedade CSS e os valores uma string com a estilização. Valores inválidos serão ignorados com a exibição de um warning no console.
 
-Para mais detalhes sobre os estilos permitidos, [consulte a referência técnica](https://github.com/lucmantovani/sdk-js/tree/feature/fields-docs#style).
+Para mais detalhes sobre os estilos permitidos, [consulte a referência técnica](https://github.com/mercadopago/sdk-js/blob/main/API/fields.md#style).
 
 Um exemplo de código com `cardNumber`, `expirationDate` e `securityCode` seria:
 
