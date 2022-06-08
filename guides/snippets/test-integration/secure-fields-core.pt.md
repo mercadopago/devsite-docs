@@ -59,7 +59,7 @@ No exemplo a seguir, assume-se que os dados `transactionAmount` e `description` 
   <div id="form-checkout__cardNumber-container" class="container"></div>
   <div id="form-checkout__expirationDate-container" class="container"></div>
   <input type="text" name="cardholderName" id="form-checkout__cardholderName" placeholder="Titular do cartão" />
-  <input type="email" name="cardholderEmail" id="form-checkout__cardholderEmail" placeholder="E-mail" />
+  <input type="email" name="email" id="form-checkout__email" placeholder="E-mail" />
   <div id="form-checkout__securityCode-container" class="container"></div>
   <select name="issuer" id="form-checkout__issuer">
     <option value="" disabled selected>Selecione o emissor</option>
