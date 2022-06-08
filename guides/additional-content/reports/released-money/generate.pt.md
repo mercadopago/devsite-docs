@@ -6,7 +6,7 @@
 >
 > Gerencie suas vendas com código QR de um jeito fácil
 >
-> Criamos novas colunas que permitem que você identifique as carteiras digitais ou os bancos que seus clientes utilizam ao pagarem com um código QR do Mercado Pago. Atualize suas preferências de configuração [no painel](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports/release/settings) ou [via API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/api) para incluir as colunas nos seus relatórios.
+> Criamos novas colunas que permitem que você identifique as carteiras digitais ou os bancos que seus clientes utilizam ao pagarem com um código QR do Mercado Pago. Atualize suas preferências de configuração [no painel](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports/release/settings) ou [via API](/developers/pt/guides/additional-content/reports/released-money/api) para incluir as colunas nos seus relatórios.
 
 ## Canais de geração
 
