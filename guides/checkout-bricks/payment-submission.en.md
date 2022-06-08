@@ -8,7 +8,7 @@ To continue with the Mercado Pago payment process, your backend should know how 
 
 Once the request –with all the collected information– is in your backend, it should be submitted to Mercado Pago through our APIs.  The minimum mandatory fields to submit are: `token`, `transaction_amount`, `installments`, `payment_method_id` and `payer.email`.
 
-For this to work, you should configure your [private key]([FAKER][CREDENTIALS][URL]). Also, to interact with our APIs, you should use [Mercado Pago official SDK](/developers/en/guides/checkout-api/previous-requirements#bookmark__install_mercado_pago_sdk).
+For this to work, you should configure your [private key]([FAKER][CREDENTIALS][URL]). Also, to interact with our APIs, you should use [Mercado Pago official SDK](/developers/en/docs/checkout-bricks/integration/prerequisites).
 
 [[[
 ```php
@@ -237,7 +237,7 @@ curl -X POST \
 >
 > Learn how to integrate Bricks step by step.
 >
-> [Configure integration](/developers/en/docs/checkout-bricks-beta/integration/configure-integration)
+> [Configure integration](/developers/en/docs/checkout-bricks/integration/configure-integration)
 
 > NEXT_STEP_CARD_EN
 >
@@ -245,4 +245,4 @@ curl -X POST \
 >
 > View how to execute tests to ensure the smooth performance of your integration.
 >
-> [Send payments to Mercado Pago](/developers/en/docs/checkout-bricks-beta/integration/integration-test)
+> [Send payments to Mercado Pago](/developers/en/docs/checkout-bricks/integration/integration-test)

@@ -45,7 +45,7 @@ const mp = new MercadoPago('YOUR_PUBLIC_KEY', {
 >
 > Aprende cómo cambiar los textos del diseño elegido en Card Payment Brick cuando lo requieras.
 >
-> [Modificar textos](/developers/es/docs/checkout-bricks-beta/additional-customization/modify-texts)
+> [Modificar textos](/developers/es/docs/checkout-bricks/additional-customization/modify-texts)
 
 > NEXT_STEP_CARD_ES
 >
@@ -53,4 +53,4 @@ const mp = new MercadoPago('YOUR_PUBLIC_KEY', {
 >
 > Saber cuáles son los posibles errores que se muestran al integrador al instanciar el brick.
 >
-> [Posibles errores](/developers/es/docs/checkout-bricks-beta/additional-content/possible-errors)
+> [Posibles errores](/developers/es/docs/checkout-bricks/additional-content/possible-errors)

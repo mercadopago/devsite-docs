@@ -48,6 +48,8 @@ Para generar el código de autorización, es preciso cumplir con los requisitos 
 > Atención
 >
 > Se recomienda realizar este procedimiento de una única vez junto con el usuario, ya que el código recibido por la Redirect URL después de la autorización tiene una validez de 10 minutos y el access token recibido a través del endpoint tiene una validez de 180 días.
+>
+> Para generar credenciales de sandbox para pruebas, envíe el parámetro `test_token` con el valor `true`.
 
 > PREV_STEP_CARD_ES
 >

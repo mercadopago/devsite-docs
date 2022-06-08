@@ -60,7 +60,6 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 >
 > Usa este glosario para conocer los términos de los reportes que generes a partir de ------------ ----[mpe]----enero de 2022. ------------  ----[mlu]---- marzo de 2022. ------------ ----[mpe, mlu]---- Para los reportes que abarquen fechas previas [consulta este Glosario.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/glossary-old)
 ------------
-<hr/>
 
 ### Próximos pasos
 

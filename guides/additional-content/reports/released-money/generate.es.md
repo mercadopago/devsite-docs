@@ -1,6 +1,11 @@
 
 # ¿Cómo generar tu reporte de Liberaciones?
-------------
+
+> NOTE
+>
+> Lleva con facilidad el control de tus ventas con QR
+>
+> Creamos nuevas columnas que te permiten identificar las billeteras virtuales o los bancos que tus clientes usan para pagar cuando les cobras con un QR de Mercado Pago. Actualiza tus preferencias de configuración [desde el panel](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports/release/settings) o [vía API](/developers/es/guides/additional-content/reports/released-money/api) para incluir las columnas en tus reportes.
 
 ## Canales de generación
 
@@ -77,8 +82,8 @@ Para validar que sea Mercado Pago quien emitió la notificación se debe usar la
 
 `BCrypt.checkpw(transaction_id + '-' + password_for_encryption + '-' + generation_date, payload_signature)`
 
-----[mlm, mlb, mlc, mco, mla]----
-> Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/glossary) de ------------ ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu]---- Liberaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mla]----para revisarlo cuando lo necesites o quieras consultar algún término técnico.
+----[mlm, mlb, mla]----
+> Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/glossary) de ------------ ----[mla]---- Liquidaciones ------------ ----[mlm, mlb]---- Liberaciones ------------ ----[mlm, mlb, mla]----para revisarlo cuando lo necesites o quieras consultar algún término técnico.
 ------------
 
 ----[mpe, mlu]----
@@ -89,6 +94,16 @@ Para validar que sea Mercado Pago quien emitió la notificación se debe usar la
 > Próximamente verás los registros de tus movimientos en orden cronológico.
 >
 > En los reportes que generes a partir de Diciembre vas a ver todos tus movimientos en el orden en que se realizaron para que puedas identificarlos más fácil y controlar mejor tus ventas.
+------------
+
+----[mco, mlc]----
+> Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/glossary) de Liberaciones para revisarlo cuando lo necesites o quieras consultar algún término técnico.
+
+> INFO
+>
+> Próximamente verás los registros de tus movimientos en orden cronológico.
+>
+> Los reportes que generes a partir del 27 de junio presentarán tus movimientos en orden cronológico para que puedas identificarlos más fácil y controlar mejor las finanzas de tu negocio. [Conoce la nueva anatomía del reporte.](https://vendedores.mercadolibre[FAKER][URL][DOMAIN]/lleva-el-control-de-tu-dinero-con-el-reporte-de-liberaciones)
 ------------
 
 <hr/>

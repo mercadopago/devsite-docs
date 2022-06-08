@@ -2,15 +2,14 @@
 
 To configure brick integration you need to follow the steps below:
 
-1. [Create container](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/checkout-bricks-beta/integration/configure-integration#bookmark_create_container)
-2. [Include and configure MercadoPago.js library](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/checkout-bricks-beta/integration/configure-integration#bookmark_include_and_configure_mercadopago.js_library)
-3. [Instantiate brick](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/checkout-bricks-beta/integration/configure-integration#bookmark_instantiate_brick)
-4. [Render brick](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/checkout-bricks-beta/integration/configure-integration#bookmark_render_brick)
-5. [Install Mercado Pago SDK](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/checkout-bricks-beta/integration/configure-integration#bookmark_install_mercado_pago_sdk)
+1. [Create container](/developers/en/docs/checkout-bricks/integration/configure-integration#bookmark_create_container)
+2. [Include and configure MercadoPago.js library](/developers/en/docs/checkout-bricks/integration/configure-integration#bookmark_include_and_configure_mercadopago.js_library)
+3. [Instantiate brick](/developers/en/docs/checkout-bricks/integration/configure-integration#bookmark_instantiate_brick)
+4. [Render brick](/developers/en/docs/checkout-bricks/integration/configure-integration#bookmark_render_brick)
 
 > The steps are performed on the backend or frontend. The **Client-Side** and **Server-Side** pills located immediately next to the title help you to identify which step is performed in which instance.
-
-And, to help, we have prepared a complete [code example](/developers/en/docs/checkout-bricks-beta/integration/code-example#bookmark_configure_the_integration) that you can use as a template.
+> <br/>
+> And, to help, we have prepared a complete [code example](/developers/en/docs/checkout-bricks/integration/code-example) that you can use as a template.
 
 > CLIENT_SIDE
 >
@@ -42,12 +41,12 @@ You will need to create a container to define where the brick will be placed on 
 >
 > Attention
 >
-> JS code can be included in a `<script>` tag or a separate JS file.
+> JS code can be included in a `< script >` tag or a separate JS file.
 
 You will need to install the SDK by adding the following in your HTML code:
 
 ```html
-<script src="https://beta-sdk.mercadopago.com/gama/js/v2"></script>
+<script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 
 Next, initialize the SDK by setting your [public key]([FAKER][CREDENTIALS][URL]) using JavaScript code as follows:
@@ -72,7 +71,7 @@ const bricksBuilder = mp.bricks();
 >
 > Attention
 >
-> During brick instantiation, different errors may appear. For more details on each of them, see the [Possible Errors](/developers/en/docs/checkout-bricks-beta/additional-content/possible-errors) section.
+> During brick instantiation, different errors may appear. For more details on each of them, see the [Possible Errors](/developers/en/docs/checkout-bricks/additional-content/possible-errors) section.
 
 > CLIENT_SIDE
 >
@@ -122,79 +121,20 @@ const renderCardPaymentBrick = async (bricksBuilder) => {
       },
     },
   };
-  cardPaymentBrickController = await bricksBuilder.create('cardPayment', 'cardPaymentBrick_container', settings);
+  const cardPaymentBrickController = await bricksBuilder.create('cardPayment', 'cardPaymentBrick_container', settings);
 };
 renderCardPaymentBrick(bricksBuilder);     
 ```
 
 ![cardform](checkout-bricks/card-form-en.png)
 
-> SERVER_SIDE
->
-> h2
->
-> Install Mercado Pago SDK
-
-Install an [official SDK](/developers/en/guides/sdks) to simplify your interaction with our APIs.
-
-[[[
-```php
-===
-[Install Composer](https://getcomposer.org/download) to use the SDK.
-
-Then run the following code on the command line:
-===
-php composer.phar require "mercadopago/dx-php:dev-master"
-```
-```node
-===
-To install the SDK you must execute the following code on the command line of your terminal using [npm](https://www.npmjs.com/get-npm):
-===
-npm install mercadopago
-```
-```java
-===
-To install the SDK in your [Maven](http://maven.apache.org/install.html) project, add the following dependency in your pom.xml file and then run ´maven install´.
-===
-<dependency>
-   <groupId>com.mercadopago</groupId>
-   <artifactId>sdk-java</artifactId>
-   <version>2.0.0</version>
-</dependency>
-```
-```ruby
-===
-The Mercado Pago SDK is available as a [gem](https://rubygems.org/gems/mercadopago-sdk), to install it you must execute the following code on the command line:
-===
-gem install mercadopago-sdk
-```
-```csharp
-===
-----[mlb]----
-Use [NuGet](https://docs.microsoft.com/pt-br/nuget/reference/nuget-exe-cli-reference) to install the Mercado Pago SDK .NET.
-------------
-----[mla, mco, mlu, mlc, mlm]----
-Use [NuGet](https://docs.microsoft.com/es-es/nuget/reference/nuget-exe-cli-reference) to install the Mercado Pago SDK .NET.
-------------
-To do this, run the following command on your terminal:
-===
-nuget install mercadopago-sdk
-```
-```python
-===
-The Mercado Pago SDK is available as a [pip](https://pypi.org/project/mercadopago/), to install it you must execute the following code on the command line:
-===
-pip3 install mercadopago
-```
-]]]
-
 > PREV_STEP_CARD_EN
 >
-> Themes
+> Prerequisites
 >
-> See more information about the available themes to instantiate/render Card Payment Brick in.
+> Learn about the prerequisites needed to integrate Checkout Bricks.
 >
-> [Themes](/developers/en/docs/checkout-bricks-beta/characteristics/themes)
+> [Prerequisites](/developers/en/docs/checkout-bricks/integration/prerequisites)
  
 > NEXT_STEP_CARD_EN
 >
@@ -202,4 +142,4 @@ pip3 install mercadopago
 >
 > After you set up the integration, here's how to send payments to Mercado Pago.
 >
-> [Send payments to Mercado Pago](/developers/en/docs/checkout-bricks-beta/integration/payment-submission) 
+> [Send payments to Mercado Pago](/developers/en/docs/checkout-bricks/integration/payment-submission) 

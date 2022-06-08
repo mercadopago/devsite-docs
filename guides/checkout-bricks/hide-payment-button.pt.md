@@ -1,4 +1,8 @@
-# Ocultar botão de pagamento
+> CLIENT_SIDE
+>
+> h1
+>
+> Ocultar botão de pagamento
 
 | Brick | Card Payment Form |
 |--- |--- |
@@ -55,7 +59,7 @@ function createPayment(){
 >
 > Caso deseje, saiba como configurar quantidade máxima e mínima de parcelas aceitas no Card Payment Brick.
 >
-> [Configurar quantidade máxima e mínima de parcelas](/developers/pt/docs/checkout-bricks-beta/additional-customization/max-and-min-installments)
+> [Configurar quantidade máxima e mínima de parcelas](/developers/pt/docs/checkout-bricks/additional-customization/configure-installments)
 
 > NEXT_STEP_CARD_PT
 >
@@ -63,4 +67,4 @@ function createPayment(){
 >
 > Caso deseje, veja como ocultar a linha de título e as bandeiras aceitas no Card Payment Brick.
 >
-> [Ocultar título e bandeiras](/developers/pt/docs/checkout-bricks-beta/additional-customization/hide-title-and-flags)
+> [Ocultar título e bandeiras](/developers/pt/docs/checkout-bricks/additional-customization/hide-title-and-flags)

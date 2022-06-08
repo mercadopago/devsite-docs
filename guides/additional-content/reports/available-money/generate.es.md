@@ -1,7 +1,7 @@
 
 # ¿Cómo generar tu reporte de Dinero retirado?
 
-----[mlm, mlb, mlc, mco, mla]----
+----[mlm, mlb, mla]----
 > WARNING
 >
 > Importante
@@ -14,6 +14,13 @@
 > Importante
 >
 > Limitamos el uso de la API a la consulta y descarga manual de archivos históricos, como consecuencia del deprecado del reporte Dinero retirado en los próximos meses. En su lugar, te recomendamos usar el [reporte Liberaciones.](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/23879?utm_source=faq_mp&utm_medium=faq&utm_campaign=bank_disable)
+------------
+----[mco, mlc]----
+> WARNING
+>
+> Importante
+>
+> A partir del 1 de agosto no podrás crear nuevos reportes **Dinero retirado**. Para seguir llevando el control de todos los retiros y movimientos de tu dinero disponible [usa el reporte Liberaciones.](https://vendedores.mercadolibre[FAKER][URL][DOMAIN]/lleva-el-control-de-tu-dinero-con-el-reporte-de-liberaciones)
 ------------
 
 ## Canales de generación

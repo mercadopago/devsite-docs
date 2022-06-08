@@ -33,7 +33,7 @@ const settings = {
 >
 > Caso deseje, veja como ocultar a linha de título e as bandeiras aceitas no Card Payment Brick.
 >
-> [Ocultar título e bandeiras](/developers/pt/docs/checkout-bricks-beta/additional-customization/hide-title-and-flags)
+> [Ocultar título e bandeiras](/developers/pt/docs/checkout-bricks/additional-customization/hide-title-and-flags)
 
 > NEXT_STEP_CARD_PT
 >
@@ -41,4 +41,4 @@ const settings = {
 >
 > Caso deseje, saiba como selecionar o idioma do Card Payment Brick.
 >
-> [Selecionar idioma](/developers/pt/docs/checkout-bricks-beta/additional-customization/select-language)
+> [Selecionar idioma](/developers/pt/docs/checkout-bricks/additional-customization/select-language)
