@@ -29,7 +29,7 @@ A informação do cartão será convertida em um token para que os dados sejam e
 
 Para capturar os dados do cartão, primeiro você deve oferecer um formulário para carregar toda a informação.
 
-Com a **funcionalidade CardForm da biblioteca MercadoPago.js V2**, você pode obter e validar todos os dados necessários, como identificar o tipo e o nome do meio de pagamento, o banco emissor, o número de prestações e mais.
+Com a **funcionalidade CardForm da biblioteca MercadoPago.js**, você pode obter e validar todos os dados necessários, como identificar o tipo e o nome do meio de pagamento, o banco emissor, o número de prestações e mais.
 
 CardForm permite que você tenha uma implementação segura e uma correta tokenização da informação do cartão.
 

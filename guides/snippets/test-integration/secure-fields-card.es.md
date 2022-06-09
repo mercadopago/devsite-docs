@@ -31,7 +31,7 @@ La información de la tarjeta se convertirá en un token para que puedas enviar 
 
 Para capturar los datos de la tarjeta, primero tienes que brindar un formulario para cargar toda la información.
 
-Con la funcionalidad CardForm de la librería MercadoPago.js V2, puedes obtener y validar todo los datos necesarios como identificar el tipo y nombre del medio de pago, el banco emisor, la cantidad de cuotas y más.
+Con la funcionalidad CardForm de la librería MercadoPago.js, puedes obtener y validar todo los datos necesarios como identificar el tipo y nombre del medio de pago, el banco emisor, la cantidad de cuotas y más.
 
 CardForm te permite tener una implementación segura y una correcta tokenización de la información de la tarjeta.
 

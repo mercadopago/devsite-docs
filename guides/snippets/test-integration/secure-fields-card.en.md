@@ -31,7 +31,7 @@ The card information will be converted into a token so you can send the data to 
 
 Before capturing the card data, provide a form to load all the information.
 
-With MercadoPago.js V2 library CardForm functionality you can get and validate all the data needed to identify the type and name of payment method, issuing bank, number of installments and more. 
+With MercadoPago.js library CardForm functionality you can get and validate all the data needed to identify the type and name of payment method, issuing bank, number of installments and more. 
 
 CardForm provides secure implementation and correct token of card data. 
 

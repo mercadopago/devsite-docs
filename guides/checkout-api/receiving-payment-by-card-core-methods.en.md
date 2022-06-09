@@ -6,7 +6,7 @@
 
 ![API-integration-flowchart](/images/api/api-integration-flowchart-coremethods-v2-en.png)
 
-> For an automated payment flow, [use MercadoPago.js V2 CardForm functionality](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/receiving-payment-by-card).
+> For an automated payment flow, [use MercadoPago.js CardForm functionality](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/receiving-payment-by-card).
 
 <br>
 
