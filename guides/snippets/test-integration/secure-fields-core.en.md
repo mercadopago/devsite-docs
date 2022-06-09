@@ -96,7 +96,7 @@ Safe fields (cardNumber, expirationDate and securityCode) hosted by **Mercado Pa
 
 The second parameter is options, and can be assigned values ​​for **placeholder** and **style**. The value for **placeholder** must be a *string*, while **style** is an *object* with the keys being the CSS property name and the values ​​a string with the styling. Invalid values ​​will be ignored, with a warning displayed on the console.
 
-For more details on the allowed styles, [check out the technical reference](https://github.com/lucmantovani/sdk-js/tree/feature/fields-docs#style).
+For more details on the allowed styles, [check out the technical reference](https://github.com/mercadopago/sdk-js/blob/main/API/fields.md#style).
 
 A code example with `cardNumber`, `expirationDate` and `securityCode` would be:
 
