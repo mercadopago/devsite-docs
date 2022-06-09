@@ -2,10 +2,10 @@
 
 To configure brick integration you need to follow the steps below:
 
-1. [Create container](/developers/en/docs/checkout-bricks/integration/configure-integration#bookmark_create_container)
-2. [Include and configure MercadoPago.js library](/developers/en/docs/checkout-bricks/integration/configure-integration#bookmark_include_and_configure_mercadopago.js_library)
-3. [Instantiate brick](/developers/en/docs/checkout-bricks/integration/configure-integration#bookmark_instantiate_brick)
-4. [Render brick](/developers/en/docs/checkout-bricks/integration/configure-integration#bookmark_render_brick)
+1. [Create container](#bookmark_create_container)
+2. [Include and configure MercadoPago.js library](#bookmark_include_and_configure_mercadopago.js_library)
+3. [Instantiate brick](#bookmark_instantiate_brick)
+4. [Render brick](#bookmark_render_brick)
 
 > The steps are performed on the backend or frontend. The **Client-Side** and **Server-Side** pills located immediately next to the title help you to identify which step is performed in which instance.
 > <br/>
