@@ -16,7 +16,7 @@ Ao cobrar com seu QR impresso, é possível inserir o valor a ser pago a partir 
 
 Você poderá ver a confirmação do pagamento ao instante e os detalhes nas atividades da sua conta Mercado Pago.
 
-​​## Como cobrar pelo aplicativo?
+## Como cobrar pelo aplicativo?
 
 Essa opção também está disponível. Vá para a seção **Cobrar**, digite o valor na calculadora e selecione **Cobrar com QR***. Para pagar, os clientes deverão escanear o código que aparece no seu dispositivo móvel e escolher o meio de pagamento desejado.
 

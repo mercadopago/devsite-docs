@@ -6,7 +6,6 @@ sites_supported:
   - mlu
   - mlm
   - mlc
-  - mlb
 ---
 
 # Pagamentos QR modelo comprador

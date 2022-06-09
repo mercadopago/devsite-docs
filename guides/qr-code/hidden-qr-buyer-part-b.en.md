@@ -6,7 +6,6 @@ sites_supported:
   - mlu
   - mlm
   - mlc
-  - mlb
 ---
 
 # How to integrate the QR Buyer model
