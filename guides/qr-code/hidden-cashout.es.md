@@ -1,3 +1,13 @@
+---
+sites_supported:
+  - mla
+  - mpe
+  - mco
+  - mlu
+  - mlm
+  - mlc
+---
+
 # Retiros de efectivo (CashOut)
 
 Esta funcionalidad le permite al operador proporcionar dinero al cliente, descontando el monto directamente del saldo en la cuenta del comprador que realizó la transacción.
