@@ -25,12 +25,6 @@ Card information will be turned into a token so that you can send data to your s
 
 If you still don't have an account to check your credentials, [sign in](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
 
-> NOTE
->
-> Note
->
-> This documentation uses the new library version. To see the previous version, go to [integrate credit card payment with MercadoPago.js V1](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v1/receiving-payment-by-card) section.
-
 The card information will be converted into a token so you can send the data to your servers in a secure way.
 
 ### 2. Add payment form

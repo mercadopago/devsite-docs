@@ -1,11 +1,5 @@
 To create a payment, you should capture card data through the buyer's browser. For security reasons, **never store data in your servers**.
 
-> NOTE
->
-> Note
->
-> This documentation uses the new library version. To see the previous version, go to [integrate payment for cards with MercadoPago.js V1 section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v1/receiving-payment-by-card).
-
 To capture card data, follow these steps:
 
 1. [Include MercadoPago.js library](#bookmark_1._include_mercadopago.js_library)

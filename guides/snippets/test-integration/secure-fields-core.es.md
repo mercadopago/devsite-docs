@@ -1,11 +1,5 @@
 Para crear un pago es necesario hacer la captura de los datos de la tarjeta a través del navegador del comprador. Por cuestiones de seguridad, **es muy importante que los datos sensibles de la tarjeta nunca lleguen a tus servidores**.
 
-> NOTE
->
-> Nota
->
-> Esta documentación utiliza la nueva versión de la librería. Para ver la versión anterior, ve a la [sección de integrar pagos con tarjeta con MercadoPago.js V1](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v1/receiving-payment-by-card).
-
 Para capturar datos de la tarjeta, sigue estos pasos:
 
 1. [Incluye la librería MercadoPago.js](#bookmark_1._incluye_la_librería_mercadopago.js)

@@ -25,12 +25,6 @@ La información de la tarjeta será convertida en un token para que envíes los 
 
 Si aún no tienes cuenta para ver tus credenciales, [regístrate](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
 
-> NOTE
->
-> Nota
->
-> Esta documentación utiliza la nueva versión de la librería. Para ver la versión anterior, ve a la [sección de Integrar pagos con tarjeta con MercadoPago.js V1](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v1/receiving-payment-by-card).
-
 La información de la tarjeta se convertirá en un token para que puedas enviar los datos a tus servidores de forma segura.
 
 ### 2. Agrega el formulario de pago

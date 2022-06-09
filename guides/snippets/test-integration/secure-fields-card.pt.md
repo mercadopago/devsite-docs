@@ -23,12 +23,6 @@ Para capturar os dados do cartão, siga estas etapas:
 
 Se ainda não possui conta para ver suas credenciais, [registre-se](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
 
-> NOTE
->
-> Nota
->
-> Esta documentação utiliza a nova versão da biblioteca. Para ver a versão anterior, vá para a [seção de Integrar pagamentos com cartão com o MercadoPago.js V1](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/v1/receiving-payment-by-card).
-
 A informação do cartão será convertida em um token para que os dados sejam enviados aos seus servidores de forma segura.
 
 ### 2. Adicione o formulário de pagamento
