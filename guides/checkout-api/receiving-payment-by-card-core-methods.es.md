@@ -5,7 +5,7 @@
 # Integra Checkout API para pagos con tarjetas
 ------------
 
-[TXTSNIPPET][/guides/snippets/test-integration/receiving-payment-by-card]
+[TXTSNIPPET][/guides/snippets/test-integration/receiving-payment-by-card-core]
 
 ## Funcionamiento
 
