@@ -11,7 +11,7 @@ Te explicamos cómo funciona el modelo dinámico:
 3. Genera un código QR con el atributo recibido.
 4. Por último, disponibiliza el código QR al cliente como prefieras para que realice el pago.
 
-Existen dos maneras de seguir estos pasos: **crear una orden**, y **crear una orden asocicada a una caja**. Las veremos a continuación.
+Existen dos maneras de seguir estos pasos: **crear una orden**, y **crear una orden asociada a una caja**. Las veremos a continuación.
 
 ## Crea una orden
 
