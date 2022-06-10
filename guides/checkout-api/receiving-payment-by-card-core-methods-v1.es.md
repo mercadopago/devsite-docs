@@ -17,7 +17,7 @@ La integración del Checkout API de Mercado Pago para tarjetas permite que pueda
 
 ![API-integration-flowchart](/images/api/api-integration-flowchart-coremethods-es.png)
 
-> Si quieres realizar un flujo automatizado del pago, te recomendamos [utilizar la funcionalidad CardForm de MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/checkout-api/receiving-payment-by-card-v1).
+> Si quieres realizar un flujo automatizado del pago, te recomendamos [utilizar la funcionalidad CardForm de MercadoPago.js V2](/developers/es/docs/checkout-api/payment-methods/receiving-payment-by-card-v1).
 
 <br>
 

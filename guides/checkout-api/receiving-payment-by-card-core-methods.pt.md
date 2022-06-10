@@ -11,7 +11,7 @@
 
 ![API-integration-flowchart](/images/api/api-integration-flowchart-coremethods-v2-pt.png)
 
-> Caso deseje realizar um fluxo de pagamento automatizado, recomendamos você [utilizar a funcionalidade CardForm do MercadoPago.js](/developers/pt/docs/checkout-api/payment-methods/receiving-payment-by-card).
+> Caso deseje realizar um fluxo de pagamento automatizado, recomendamos você [utilizar a funcionalidade CardForm do MercadoPago.js](/docs/checkout-api/payment-methods/receiving-payment-by-card).
 
 <br>
 
