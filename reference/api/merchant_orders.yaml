@@ -347,6 +347,7 @@ paths:
                     description: Buyer Information.
                     x-description-i18n:
                       eng: Buyer Information.
+                      spa: Información del comprador.
                       por: Informação do comprador.
                   items:
                     type: array
