@@ -8,10 +8,10 @@ Para ajudar a melhorar a aprovação dos seus pagamentos, é fundamental que voc
 
 Isso ajudará a evitar casos de rejeição e estornos nos casos de transações inicialmente aprovadas. Por exemplo, permite que se possa corrigir os erros de carga de dados ou ajudar a alterar o meio de pagamento.
 
-Recomendamos que você use as [mensagens de respostas](/developers/pt/guides/checkout-api/handling-responses) e utilize a comunicação sugerida em cada um dos casos.
+Recomendamos que você use as [mensagens de respostas](/developers/pt/guides/checkout-api/response-handling) e utilize a comunicação sugerida em cada um dos casos.
 
 > NOTE
 >
 > Nota
 >
-> Evite pagamentos rejeitados com nossas [recomendações para melhorar a aprovação dos seus pagamentos](/developers/pt/guides/additional-content/sales-processing/payment-rejections).
+> Evite pagamentos rejeitados com nossas [recomendações para melhorar a aprovação dos seus pagamentos](/developers/pt/guides/how-tos/improve-approval).
