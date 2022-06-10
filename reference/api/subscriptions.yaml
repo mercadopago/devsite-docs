@@ -89,8 +89,6 @@ paths:
                         por: Indica o valor de frequência. Junto com o frequency, define o ciclo de faturamento que uma assinaturá terá.
                       example: months
                       enum:
-                        - days -- Indicate a frequency in units of days
-                        - months -- Indicate a frequency in units of months
                     start_date:
                       type: string
                       format: date
@@ -127,13 +125,6 @@ paths:
                         por: Identificador da moeda utilizada no pagamento
                       example: ARS
                       enum:
-                        - ARS -- Argentine peso.
-                        - BRL -- Brazilian real.
-                        - CLP -- Chilean peso.
-                        - MXN -- Mexican peso.
-                        - COP -- Colombian peso.
-                        - PEN -- Peruvian sol.
-                        - UYU -- Uruguayan peso.
                 back_url:
                   required: true
                   type: string
@@ -152,8 +143,6 @@ paths:
                     por: Quando você cria uma assinatura, pode fazê-la com pagamento pending ou authorized. Status Authorized requer que você indique um meio de pagamento. Uma assinatura com pagamento pending fica aguardando por um meio de pagamento, até que o cliente acesse o checkout ou através da integtração tokenizando um cartão e adicionando-o à assinatura.
                   example: authorized
                   enum:
-                    - pending -- Subscription without a payment method
-                    - authorized -- Subscription with a payment method
       responses:
         '200':
           description: Success
@@ -259,8 +248,6 @@ paths:
                           por: Indica o tipo de frequência. Junto com frequency, definem o ciclo de cobrança que a assinatura terá.
                         example: months
                         enum:
-                          - days -- Indicate a frequency in units of days
-                          - months -- Indicate a frequency in units of months
                       start_date:
                         type: string
                         format: date
@@ -288,13 +275,6 @@ paths:
                           por: Identificador da moeda utilizada no pagamento
                         example: ARS
                         enum:
-                          - ARS -- Argentine peso.
-                          - BRL -- Brazilian real.
-                          - CLP -- Chilean peso.
-                          - MXN -- Mexican peso.
-                          - COP -- Colombian peso.
-                          - PEN -- Peruvian sol.
-                          - UYU -- Uruguayan peso.
                       transaction_amount:
                         type: number
                         description: Amount we will charge on each invoice.
@@ -328,8 +308,6 @@ paths:
                               por: Indica o tipo de frequência. Junto com frequency, definem o ciclo de cobrança que a assinatura terá.
                             example: months
                             enum:
-                              - days -- Indicate a frequency in units of days
-                              - months -- Indicate a frequency in units of months
                   payer_id:
                     type: number
                     example: 123123123
@@ -383,8 +361,6 @@ paths:
                     example: pending
                     description: Status
                     enum:
-                      - pending -- Subscription without a payment method
-                      - authorized -- Subscription with a payment method
         '400':
           description: Error
           x-description-i18n:
@@ -399,45 +375,6 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 400--Bad-Request--Subscriptions are not available for this country yet
-                      - 400--Bad-Request--The payment method account money is not available in your country
-                      - 400--Bad-Request--Collector and Application cannot be from different countries
-                      - 400--Bad-Request--Field card_token_id is required
-                      - 400--Bad-Request--Field payer_email is required
-                      - 400--Bad-Request--Invalid value for payer_email, must be a valid email address
-                      - 400--Bad-Request--Invalid value for transaction amount, must be a positive number
-                      - 400--Bad-Request--Invalid value for transaction amount, only two decimals are allowed
-                      - 400--Bad-Request--Invalid value for auto_recurring.currency_id
-                      - 400--Bad-Request--Invalid value for auto_recurring.end_date, the date must be after today
-                      - 400--Bad-Request--Invalid value for auto_recurring.frequency, must be a positive integer
-                      - 400--Bad-Request--Invalid value for auto_recurring.frequency_type, valid ones are days, months
-                      - 400--Bad-Request--Invalid value for auto_recurring.start_date, the date must be after today
-                      - 400--Bad-Request--Invalid format in auto_recurring.start_date or auto_recurring.end_date
-                      - 400--Bad-Request--Invalid value for back_url, must be a valid URL
-                      - 400--Bad-Request--Field reason has more than 255 characters
-                      - 400--Bad-Request--Field reason has unsupported characters
-                      - 400--Bad-Request--Field auto_recurring.frequency is required
-                      - 400--Bad-Request--Field auto_recurring.frequency_type is required
-                      - 400--Bad-Request--Field auto_recurring.transaction_amount is required
-                      - 400--Bad-Request--Field auto_recurring.currency_id is required
-                      - 400--Bad-Request--Field auto_recurring.end_date must be after auto_recurring.start_date
-                      - 400--Bad-Request--Field external_reference has more than 255 characters
-                      - 400--Bad-Request--Field external_reference has unsupported characters
-                      - 400--Bad-Request--Already exists a preapproval for user <payer_email> and application <application_id>
-                      - 400--Bad-Request--Payer and collector cannot be the same user
-                      - 400--Bad-Request--Both payer and collector must be real or test users
-                      - 400--Bad-Request--This preapproval cannot be created. The seller does not accept account_money
-                      - 400--Bad-Request--This preapproval cannot be created only with payment method account_money
-                      - 400--Bad-Request--Cannot operate between different countries
-                      - 400--Bad-Request--Cannot create preapproval pending, the feature with account money is disabled for your country.
-                      - 400--Bad-Request--Cannot pay an amount lower than min
-                      - 400--Bad-Request--Cannot pay an amount greater than max
-                      - 400--Bad-Request--You cannot create a preapproval with payment_method in status pending
-                      - 400--Bad-Request--You cannot create a new preapproval from a cancelled or inactive template
-                      - 400--Bad-Request--The transaction_amount must be the same as preapproval_plan
-                      - 400--Bad-Request--Card token was used, please generate new
-                      - 400--Bad-Request--Card token was generated without cvv validation
-                      - 400--Bad-Request--Invalid request data
         '401':
           description: Error
           x-description-i18n:
@@ -452,10 +389,6 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 401--Unauthorized--CC_VAL_433 Credit card validation has failed
-                      - 401--Unauthorized--Verification of collectors personal data is in process, come back later
-                      - 401--Unauthorized--Unauthorized access to resource
-                      - 401--Unauthorized--This app cannot create subscriptions without a plan
         '403':
           description: Error
           x-description-i18n:
@@ -470,9 +403,6 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 403--Forbidden--The collector does not meet the personal data verification requirements
-                      - 403--Forbidden--The caller is not authorized to access this resource
-                      - 403--Forbidden--Unauthorized seller for this feature AM_VAL_01
         '500':
           description: Error
           x-description-i18n:
@@ -487,7 +417,6 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 500--Error--Internal server error
   /preapproval_plan:
     post:
       tags:
@@ -544,8 +473,6 @@ paths:
                         por: Indica o tipo de frequência. Junto com frequency, definem o ciclo de cobrança que a assinatura terá.
                       example: months
                       enum:
-                        - days -- Indicate a frequency in units of days
-                        - months -- Indicate a frequency in units of months
                     repetitions:
                       type: number
                       description: It is optional and is used to create a limited subscription. Indicates the number of times that we will repeat the recurrence cycle. If this param is not defined, subscription does not end until some of the parties cancel it.
@@ -571,8 +498,6 @@ paths:
                         por: Cobra um valor proporcional ao dia do faturamento no momento do cadastro.
                       example: true
                       enum:
-                        - true -- Charge a proportional amount based on the days remaining in the next billing cycle. Billing cycles are always calculated on a 30-day basis.
-                        - false -- Charge the amount of the subscription regardless of when in the billing cycle customer subscribe.
                     free_trial:
                       type: object
                       description: Free trial data.
@@ -598,8 +523,6 @@ paths:
                             por: Indica o tipo de frequência. Junto com frequency, definem o ciclo de cobrança que a assinatura terá.
                           example: months
                           enum:
-                            - days -- Indicate a frequency in units of days
-                            - months -- Indicate a frequency in units of months
                     transaction_amount:
                       type: number
                       description: Amount that will be charged on each invoice.
@@ -618,13 +541,6 @@ paths:
                         por: Identificador da moeda utilizada no pagamento
                       example: ARS
                       enum:
-                        - ARS -- Argentine peso.
-                        - BRL -- Brazilian real.
-                        - CLP -- Chilean peso.
-                        - MXN -- Mexican peso.
-                        - COP -- Colombian peso.
-                        - PEN -- Peruvian sol.
-                        - UYU -- Uruguayan peso.
                 payment_methods_allowed:
                   type: object
                   description: Payment methods enabled at checkout.
@@ -739,8 +655,6 @@ paths:
                           por: Indica o tipo de frequência. Junto com frequency, definem o ciclo de cobrança que a assinatura terá.
                         example: months
                         enum:
-                          - days -- Indicate a frequency in units of days
-                          - months -- Indicate a frequency in units of months
                       repetitions:
                         type: number
                         description: It is optional and is used to create a limited subscription. Indicates the number of times that we will repeat the recurrence cycle. If this param is not defined, subscription does not end until some of the parties cancel it.
@@ -766,8 +680,6 @@ paths:
                           por: Cobra um valor proporcional ao dia do faturamento no momento do cadastro.
                         example: true
                         enum:
-                          - true -- Charge a proportional amount based on the days remaining in the next billing cycle. Billing cycles are always calculated on a 30-day basis.
-                          - false -- Charge the amount of the subscription regardless of when in the billing cycle customer subscribe.
                       free_trial:
                         type: object
                         description: Free trial data.
@@ -793,8 +705,6 @@ paths:
                               por: Indica o valor de frequência. Junto com o frequency, define o ciclo de faturamento que uma assinaturá terá.
                             example: months
                             enum:
-                              - days -- Indicate a frequency in units of days
-                              - months -- Indicate a frequency in units of months
                       transaction_amount:
                         type: number
                         description: Amount that will be charged on each invoice.
@@ -811,13 +721,6 @@ paths:
                           spa: Identificador de la moneda utilizada en el pago
                           por: Identificador da moeda utilizada no pagamento
                         enum:
-                          - ARS -- Argentine peso.
-                          - BRL -- Brazilian real.
-                          - CLP -- Chilean peso.
-                          - MXN -- Mexican peso.
-                          - COP -- Colombian peso.
-                          - PEN -- Peruvian sol.
-                          - UYU -- Uruguayan peso.
                         example: ARS
                   payment_methods_allowed:
                     type: object
@@ -916,8 +819,6 @@ paths:
                       spa: Estado del plan.
                       por: Status do plano.
                     enum:
-                      - active -- Plan available to create subscriptions
-                      - cancelled -- Plan not available to create subscriptions
         '400':
           description: Error
           x-description-i18n:
@@ -932,29 +833,6 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 400--Bad-Request--Parameter back_url is required
-                      - 400--Bad-Request--Parameter reason is required
-                      - 400--Bad-Request--Parameter external_reference has unsupported characters
-                      - 400--Bad-Request--Parameter auto_recurring is required
-                      - 400--Bad-Request--Parameters frequency and frequency_type are required in the recurring payments scheme
-                      - 400--Bad-Request--Invalid value for back_url. Must be a valid URL
-                      - 400--Bad-Request--Invalid value for status. Valid ones ar active, inactive, cancelled.
-                      - 400--Bad-Request--Invalid value for transaction_amount, must be a positive number
-                      - 400--Bad-Request--Invalid value for transaction_amount, must be a positive integer
-                      - 400--Bad-Request--Invalid value for transaction_amount, only two decimals are allowed
-                      - 400--Bad-Request--Invalid value for payer_email, must be a valid email address
-                      - 400--Bad-Request--Invalid value for currency_id
-                      - 400--Bad-Request--Invalid value for frequency, must be a positive integer
-                      - 400--Bad-Request--Invalid value for frequency_type
-                      - 400--Bad-Request--Invalid value for frequency_type, valid ones are days or months
-                      - 400--Bad-Request--Invalid value for repetitions, mus be a positive integer
-                      - 400--Bad-Request--Cannot pay an amount greater than max
-                      - 400--Bad-Request--Cannot pay an amount lower than min
-                      - 400--Bad-Request--Cannot operate with this currency_id in this site
-                      - 400--Bad-Request--Cannot operate between diferent countries
-                      - 400--Bad-Request--Field currency_id is required
-                      - 400--Bad-Request--Reason has unsupported characters
-                      - 400--Bad-Request--Plan are not available for this country yet
         '401':
           description: Error
           x-description-i18n:
@@ -969,7 +847,6 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 401--Unauthorized--Must provide your access_token to proceed
         '404':
           description: Error
           x-description-i18n:
@@ -984,7 +861,6 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 404--Not-Found--The application id does not exist
         '500':
           description: Error
           x-description-i18n:
@@ -999,7 +875,6 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 500--Error--Internal server error
   /preapproval/{id}:
     get:
       tags:
@@ -1131,8 +1006,6 @@ paths:
                           por: Indica o tipo de frequência. Junto com frequency, definem o ciclo de cobrança que a assinatura terá.
                         example: months
                         enum:
-                          - days -- Indicate a frequency in units of days
-                          - months -- Indicate a frequency in units of months
                       start_date:
                         type: string
                         format: date
@@ -1160,13 +1033,6 @@ paths:
                           por: Identificador da moeda utilizada no pagamento
                         example: ARS
                         enum:
-                          - ARS -- Argentine peso.
-                          - BRL -- Brazilian real.
-                          - CLP -- Chilean peso.
-                          - MXN -- Mexican peso.
-                          - COP -- Colombian peso.
-                          - PEN -- Peruvian sol.
-                          - UYU -- Uruguayan peso.
                       transaction_amount:
                         type: number
                         description: Amount we will charge on each invoice.
@@ -1200,8 +1066,6 @@ paths:
                               por: Indica o tipo de frequência. Junto com frequency, definem o ciclo de cobrança que a assinatura terá.
                             example: months
                             enum:
-                              - days -- Indicate a frequency in units of days
-                              - months -- Indicate a frequency in units of months
                   first_invoice_offset:
                     type: number
                     description: Number of days to collect the first invoice
@@ -1327,19 +1191,11 @@ paths:
                           por: Resumo do status de cobrança de assinaturas.
                         example: green
                         enum:
-                          - green -- All collections made.
-                          - yellow -- With collection problems. We are trying to collect an invoice.
-                          - red -- With pending collections. An invoice could not be collected.
-                          - blank -- Discounted collection.
                   status:
                     type: string
                     example: pending
                     description: Status
                     enum:
-                      - pending -- Preapproval without a payment method
-                      - authorized -- Preapproval with a valid payment method
-                      - paused -- Preapproval with temporally discontinued collection of payments
-                      - cancelled -- Preapproval terminated. This is an irreversible state
         '400':
           description: Error
           x-description-i18n:
@@ -1354,7 +1210,6 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 400--Bad-Request--Invalid value {id}, Field 'id' must match this pattern '[a-f0-9-]+'
         '403':
           description: Error
           x-description-i18n:
@@ -1369,7 +1224,6 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 403--Forbidden--The caller is not authorized to access this resource
         '404':
           description: Error
           x-description-i18n:
@@ -1384,7 +1238,6 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 404--Not-found--The preapproval with id {id} does not exist
         '500':
           description: Error
           x-description-i18n:
@@ -1399,7 +1252,6 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 500--Error--Internal server error
     put:
       tags:
         - $ref: "#/tags/subscriptions"
@@ -1476,13 +1328,6 @@ paths:
                         por: Identificador da moeda utilizada no pagamento
                       example: ARS
                       enum:
-                          - ARS -- Argentine peso.
-                          - BRL -- Brazilian real.
-                          - CLP -- Chilean peso.
-                          - MXN -- Mexican peso.
-                          - COP -- Colombian peso.
-                          - PEN -- Peruvian sol.
-                          - UYU -- Uruguayan peso.
                 card_token_id:
                   type: number
                   example: 123123123
@@ -1496,10 +1341,6 @@ paths:
                   example: pending
                   description: Status
                   enum:
-                    - pending -- Preapproval without a payment method
-                    - authorized -- Preapproval with a valid payment method
-                    - paused -- Preapproval with temporally discontinued collection of payments
-                    - cancelled -- Preapproval terminated. This is an irreversible state.
       responses:
         '200':
           description: Success
@@ -1601,8 +1442,6 @@ paths:
                           por: Indica o tipo de frequência. Junto com frequency, definem o ciclo de cobrança que a assinatura terá.
                         example: months
                         enum:
-                          - days -- Indicate a frequency in units of days
-                          - months -- Indicate a frequency in units of months
                       start_date:
                         type: string
                         format: date
@@ -1630,13 +1469,6 @@ paths:
                           por: Identificador da moeda utilizada no pagamento
                         example: ARS
                         enum:
-                          - ARS -- Argentine peso.
-                          - BRL -- Brazilian real.
-                          - CLP -- Chilean peso.
-                          - MXN -- Mexican peso.
-                          - COP -- Colombian peso.
-                          - PEN -- Peruvian sol.
-                          - UYU -- Uruguayan peso.
                       transaction_amount:
                         type: number
                         description: Amount that will be charged on each invoice.
@@ -1670,8 +1502,6 @@ paths:
                               por: Indica o valor de frequência. Junto com o frequency, define o ciclo de faturamento que uma assinaturá terá.
                             example: months
                             enum:
-                              - days -- Indicate a frequency in units of days
-                              - months -- Indicate a frequency in units of months
                   first_invoice_offset:
                     type: number
                     description: Number of days to collect the first invoice
@@ -1801,19 +1631,11 @@ paths:
                           por: Resumo do status de cobrança de assinaturas.
                         example: green
                         enum:
-                          - green -- All collections made.
-                          - yellow -- With collection problems. We are trying to collect an invoice.
-                          - red -- With pending collections. An invoice could not be collected.
-                          - blank -- Discounted collection.
                   status:
                     type: string
                     example: pending
                     description: Status
                     enum:
-                      - pending -- Preapproval without a payment method
-                      - authorized -- Preapproval with a valid payment method
-                      - paused -- Preapproval with temporally discontinued collection of payments
-                      - cancelled -- Preapproval terminated. This is an irreversible state
         '400':
           description: Error
           x-description-i18n:
@@ -1828,15 +1650,6 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 400--Bad-request--Invalid transition from cancelled to authorized
-                      - 400--Bad-request--You can not modify a cancelled preapproval.
-                      - 400--Bad-request--You can not modify a paused subscription.
-                      - 400--Bad-request--This preapproval can not be authorized with a credit card
-                      - 400--Bad-request--This preapproval can not disable account_money
-                      - 400--Bad-request--This preapproval can not be authorized only with account_money
-                      - 400--Bad-request--This preapproval require account_money to be authorized
-                      - 400--Bad-request--You must provide a card_id
-                      - 400--Bad-request--preapproval without another payment method
         '401':
           description: Error
           x-description-i18n:
@@ -1851,7 +1664,6 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 401--Unauthorized--Unauthorized access to resource
         '500':
           description: Error
           x-description-i18n:
@@ -1866,7 +1678,6 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 500--Error--Internal server error
   /preapproval/export:
     get:
       tags:
@@ -1914,10 +1725,6 @@ paths:
             type: string
             example: authorized,cancelled,paused
             enum:
-              - pending -- Preapproval without a payment method.
-              - authorized -- Preapproval with a valid payment method.
-              - paused -- Preapproval with temporally discontinued collection of payments.
-              - cancelled -- Preapproval terminated. This is an irreversible state.
         - name: sort
           in: path
           description: Specifies the type of sorting selected to retrieve the subscriptions. You must indicate a field and a sort type with the following format field_name:sort_type.
@@ -1929,8 +1736,6 @@ paths:
             type: string
             example: payer_id:asc
             enum:
-              - asc - Ascending sort
-              - desc - Descending sort
       responses:
         '200':
           description: Success
@@ -1983,10 +1788,6 @@ paths:
                     example: pending
                     description: Status
                     enum:
-                      - pending -- Preapproval without a payment method.
-                      - authorized -- Preapproval with a valid payment method.
-                      - paused -- Preapproval with temporally discontinued collection of payments.
-                      - cancelled -- Preapproval terminated. This is an irreversible state.
                   reason:
                     required: true
                     type: string
@@ -2053,8 +1854,6 @@ paths:
                       por: Indica o tipo de frequência. Junto com frequency, definem o ciclo de cobrança que a assinatura terá.
                     example: months
                     enum:
-                      - days - Indicate a frequency in units of days
-                      - months - Indicate a frequency in units of months
                   transaction_amount:
                     type: number
                     description: Amount we will charge on each invoice.
@@ -2072,13 +1871,6 @@ paths:
                       por: Identificador da moeda utilizada no pagamento
                     example: ARS
                     enum:
-                      - ARS -- Argentine peso.
-                      - BRL -- Brazilian real.
-                      - CLP -- Chilean peso.
-                      - MXN -- Mexican peso.
-                      - COP -- Colombian peso.
-                      - PEN -- Peruvian sol.
-                      - UYU -- Uruguayan peso.
                   start_date:
                     type: string
                     format: date
@@ -2118,8 +1910,6 @@ paths:
                       por: Cobra um valor proporcional ao dia do faturamento no momento do cadastro.
                     example: true
                     enum:
-                      - true -- Charge a proportional amount based on the days remaining in the next billing cycle. Billing cycles are always calculated on a 30-day basis.
-                      - false -- Charge the amount of the subscription regardless of when in the billing cycle customer subscribe.
                   quotas:
                     type: number
                     description: How many payments are going to be made.
@@ -2165,10 +1955,6 @@ paths:
                     description: Preapproval collection status summary.
                     example: green
                     enum:
-                      - green -- All collections made.
-                      - yellow -- With collection problems. We are trying to collect an invoice.
-                      - red -- With pending collections. An invoice could not be collected.
-                      - blank -- Discounted collection.
                   last_charge_date:
                     type: number
                     description: Date of last time a payment of this subscription.was made.
@@ -2239,7 +2025,6 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 401--Unauthorized--Unauthorized access to resource
         '500':
           description: Error
           x-description-i18n:
@@ -2254,7 +2039,6 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 500--Error--Internal server error
   /authorized_payments/{id}:
      get:
       tags:
@@ -2306,7 +2090,6 @@ paths:
                       por: Tipo de fatura gerada com base na recorrência.
                     example: scheduled
                     enum:
-                      - scheduled -- Automatically generated and scheduled by the recurrence engine
                   date_created:
                     type: string
                     description: Invoice creation date.
@@ -2356,13 +2139,6 @@ paths:
                       por: Identificador da moeda utilizada no pagamento
                     example: ARS
                     enum:
-                      - ARS -- Argentine peso.
-                      - BRL -- Brazilian real.
-                      - CLP -- Chilean peso.
-                      - MXN -- Mexican peso.
-                      - COP -- Colombian peso.
-                      - PEN -- Peruvian sol.
-                      - UYU -- Uruguayan peso.
                   transaction_amount:
                     type: number
                     description: Amount we will charge on each invoice.
@@ -2396,10 +2172,6 @@ paths:
                       por: Status da fatura.
                     example: scheduled
                     enum:
-                      - scheduled -- Authorized payment scheduled to collect
-                      - processed -- Authorized payment collected or exceeded retries
-                      - recycling -- Authorized payment in attempt to collect
-                      - cancelled -- Authorized payment canceled
                   summarized:
                     type: string
                     description: Summarization status of the invoice result in the subscription.
@@ -2409,8 +2181,6 @@ paths:
                       por: Resumo do status da fatura na assinatura
                     example: pending
                     enum:
-                      - pending -- Pending summary in the subscription.
-                      - done -- Summarized result in the subscription.
                   payment:
                     type: object
                     description: Payment status related to the invoice.
@@ -2436,15 +2206,6 @@ paths:
                           por: Estado do pagamento
                         example: approved
                         enum:
-                          - pending -- The user has not yet completed the payment process
-                          - approved -- The payment has been approved and accredited
-                          - authorized -- The payment has been authorized but not captured yet
-                          - in_process -- Payment is being reviewed
-                          - in_mediation -- Users have initiated a dispute
-                          - rejected -- Payment was rejected. The user may retry payment
-                          - cancelled -- Payment was cancelled by one of the parties or because time for payment has expired
-                          - refunded -- Payment was refunded to the user
-                          - charged_back -- Was made a chargeback in the buyer’s credit card
                       status_detail:
                         type: string
                         description: Payment status detail.
@@ -2467,7 +2228,6 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 400--Bad-request--Binding exception, parameters passed are invalid
         '401':
           description: Error
           x-description-i18n:
@@ -2482,7 +2242,6 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 401--Unauthorized--Unauthorized access to resource
         '500':
           description: Error
           x-description-i18n:
@@ -2497,7 +2256,6 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 500--Error--Internal server error
   /authorized_payments/search:
     get:
       tags:
@@ -2640,7 +2398,6 @@ paths:
                             por: Tipo de fatura gerada com base na recorrência.
                           example: scheduled
                           enum:
-                            - scheduled -- Automatically generated and scheduled by the recurrence engine
                         date_created:
                           type: string
                           description: Invoice creation date.
@@ -2690,13 +2447,6 @@ paths:
                             por: Identificador da moeda utilizada no pagamento
                           example: ARS
                           enum:
-                            - ARS -- Argentine peso.
-                            - BRL -- Brazilian real.
-                            - CLP -- Chilean peso.
-                            - MXN -- Mexican peso.
-                            - COP -- Colombian peso.
-                            - PEN -- Peruvian sol.
-                            - UYU -- Uruguayan peso.
                         transaction_amount:
                           type: number
                           description: Amount we will charge on each invoice.
@@ -2730,10 +2480,6 @@ paths:
                             por: Status da fatura.
                           example: scheduled
                           enum:
-                            - scheduled -- Authorized payment scheduled to collect
-                            - processed -- Authorized payment collected or exceeded retries
-                            - recycling -- Authorized payment in attempt to collect
-                            - cancelled -- Authorized payment canceled
                         summarized:
                           type: string
                           description: Summarization status of the invoice result in the subscription.
@@ -2743,8 +2489,6 @@ paths:
                             por: Resumo do status da fatura na assinatura
                           example: pending
                           enum:
-                            - pending -- Pending summary in the subscription.
-                            - done -- Summarized result in the subscription.
                         payment:
                           type: object
                           description: Payment status related to the authorized payment.
@@ -2766,15 +2510,6 @@ paths:
                                 por: Estado do pagamento
                               example: approved
                               enum:
-                                - pending -- The user has not yet completed the payment process
-                                - approved -- The payment has been approved and accredited
-                                - authorized -- The payment has been authorized but not captured yet
-                                - in_process -- Payment is being reviewed
-                                - in_mediation -- Users have initiated a dispute
-                                - rejected -- Payment was rejected. The user may retry payment
-                                - cancelled -- Payment was cancelled by one of the parties or because time for payment has expired
-                                - refunded -- Payment was refunded to the user
-                                - charged_back -- Was made a chargeback in the buyer’s credit card
                             status_detail:
                               type: string
                               description: Payment status detail.
@@ -2797,8 +2532,6 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 400--Bad-request--Search parameters are required
-                      - 400--Bad-request--Binding exception, parameters passed are invalid
         '401':
           description: Error
           x-description-i18n:
@@ -2813,7 +2546,6 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 401--Unauthorized--Unauthorized access to resource
         '500':
           description: Error
           x-description-i18n:
@@ -2828,7 +2560,6 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 500--Error--Internal server error
   /preapproval_plan/{id}:
     get:
       tags:
@@ -2920,8 +2651,6 @@ paths:
                           por: Indica o tipo de frequência. Junto com frequency, definem o ciclo de cobrança que a assinatura terá.
                         example: months
                         enum:
-                          - days -- Indicate a frequency in units of days
-                          - months -- Indicate a frequency in units of months
                       repetitions:
                         type: number
                         description: It is optional and is used to create a limited subscription. Indicates the number of times that we will repeat the recurrence cycle. If this param is not defined, subscription does not end until some of the parties cancel it.
@@ -2947,8 +2676,6 @@ paths:
                           por: Cobra um valor proporcional ao dia do faturamento no momento do cadastro.
                         example: true
                         enum:
-                          - true -- Charge a proportional amount based on the days remaining in the next billing cycle. Billing cycles are always calculated on a 30-day basis.
-                          - false -- Charge the amount of the subscription regardless of when in the billing cycle customer subscribe.
                       free_trial:
                         type: object
                         description: Free trial data.
@@ -2974,8 +2701,6 @@ paths:
                               por: Indica o tipo de frequência. Junto com frequency, definem o ciclo de cobrança que a assinatura terá.
                             example: months
                             enum:
-                              - days -- Indicate a frequency in units of days
-                              - months -- Indicate a frequency in units of months
                           first_invoice_offset:
                             type: number
                             description: Number of days to collect the first invoice
@@ -3001,13 +2726,6 @@ paths:
                           por: Identificador da moeda utilizada no pagamento
                         example: ARS
                         enum:
-                          - ARS -- Argentine peso.
-                          - BRL -- Brazilian real.
-                          - CLP -- Chilean peso.
-                          - MXN -- Mexican peso.
-                          - COP -- Colombian peso.
-                          - PEN -- Peruvian sol.
-                          - UYU -- Uruguayan peso.
                   payment_methods_allowed:
                     type: object
                     description: Payment methods enabled at checkout.
@@ -3105,8 +2823,6 @@ paths:
                       spa: Estado del plan.
                       por: Status do plano.
                     enum:
-                      - active -- Plan available to create subscriptions
-                      - cancelled -- Plan not available to create subscriptions       
         '401':
           description: Error
           x-description-i18n:
@@ -3121,7 +2837,6 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 401--Unauthorized--Unauthorized access to resource
         '404':
           description: Error
           x-description-i18n:
@@ -3136,7 +2851,6 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 404--Not-found--The template with id {id} does not exist
         '500':
           description: Error
           x-description-i18n:
@@ -3151,7 +2865,6 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 500--Error--Internal server error
     put:
       tags:
         - $ref: "#/tags/subscriptions"
@@ -3217,8 +2930,6 @@ paths:
                         por: Indica o tipo de frequência. Junto com frequency, definem o ciclo de cobrança que a assinatura terá.
                       example: months
                       enum:
-                        - days -- Indicate a frequency in units of days
-                        - months -- Indicate a frequency in units of months
                     repetitions:
                       type: number
                       description: It is optional and is used to create a limited subscription. Indicates the number of times that we will repeat the recurrence cycle. If this param is not defined, subscription does not end until some of the parties cancel it.
@@ -3244,8 +2955,6 @@ paths:
                         por: Cobra um valor proporcional ao dia do faturamento no momento do cadastro.
                       example: true
                       enum:
-                        - true -- Charge a proportional amount based on the days remaining in the next billing cycle. Billing cycles are always calculated on a 30-day basis.
-                        - false -- Charge the amount of the subscription regardless of when in the billing cycle customer subscribe.
                     free_trial:
                       type: object
                       description: Free trial data.
@@ -3272,8 +2981,6 @@ paths:
                             por: Indica o tipo de frequência. Junto com frequency, definem o ciclo de cobrança que a assinatura terá.
                           example: months
                           enum:
-                            - days -- Indicate a frequency in units of days
-                            - months -- Indicate a frequency in units of months
                     transaction_amount:
                       type: number
                       description: Amount we will charge on each invoice.
@@ -3291,13 +2998,6 @@ paths:
                         por: Identificador da moeda utilizada no pagamento
                       example: ARS
                       enum:
-                        - ARS -- Argentine peso.
-                        - BRL -- Brazilian real.
-                        - CLP -- Chilean peso.
-                        - MXN -- Mexican peso.
-                        - COP -- Colombian peso.
-                        - PEN -- Peruvian sol.
-                        - UYU -- Uruguayan peso.
                 payment_methods_allowed:
                   type: object
                   description: Payment methods enabled at checkout.
@@ -3411,8 +3111,6 @@ paths:
                           por: Indica o tipo de frequência. Junto com frequency, definem o ciclo de cobrança que a assinatura terá.
                         example: months
                         enum:
-                          - days -- Indicate a frequency in units of days
-                          - months -- Indicate a frequency in units of months
                       repetitions:
                         type: number
                         description: It is optional and is used to create a limited subscription. Indicates the number of times that we will repeat the recurrence cycle. If this param is not defined, subscription does not end until some of the parties cancel it.
@@ -3438,8 +3136,6 @@ paths:
                           por: Cobra um valor proporcional ao dia do faturamento no momento do cadastro.
                         example: true
                         enum:
-                          - true -- Charge a proportional amount based on the days remaining in the next billing cycle. Billing cycles are always calculated on a 30-day basis.
-                          - false -- Charge the amount of the subscription regardless of when in the billing cycle customer subscribe.
                       free_trial:
                         type: object
                         description: Free trial data.
@@ -3465,8 +3161,6 @@ paths:
                               por: Indica o tipo de frequência. Junto com frequency, definem o ciclo de cobrança que a assinatura terá.
                             example: months
                             enum:
-                              - days -- Indicate a frequency in units of days
-                              - months -- Indicate a frequency in units of months
                           first_invoice_offset:
                             type: number
                             description: Number of days to collect the first invoice
@@ -3492,13 +3186,6 @@ paths:
                           por: Identificador da moeda utilizada no pagamento
                         example: ARS
                         enum:
-                          - ARS -- Argentine peso.
-                          - BRL -- Brazilian real.
-                          - CLP -- Chilean peso.
-                          - MXN -- Mexican peso.
-                          - COP -- Colombian peso.
-                          - PEN -- Peruvian sol.
-                          - UYU -- Uruguayan peso.
                   payment_methods_allowed:
                     type: object
                     description: Payment methods enabled at checkout.
@@ -3592,8 +3279,6 @@ paths:
                     example: active
                     description: status
                     enum:
-                      - active -- Plan available to create subscriptions
-                      - cancelled -- Plan not available to create subscriptions  
         '400':
           description: Bad request
           content:
@@ -3604,7 +3289,6 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                     - 400--Bad-Request--Check the parameters of the body
         '401':
           description: Error
           x-description-i18n:
@@ -3619,7 +3303,6 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 401--Unauthorized--Unauthorized access to resource
         '404':
           description: Error
           x-description-i18n:
@@ -3634,7 +3317,6 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 404--Not-found--The template with id {id} does not exist
         '500':
           description: Error
           x-description-i18n:
@@ -3649,7 +3331,6 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 500--Error--Internal server error
   /preapproval_plan/search:
     get:
       tags:
@@ -3706,8 +3387,6 @@ paths:
             type: string
             example: asc
             enum:
-              - asc -- Ascending sort
-              - desc -- Descending sort
         - name: offset
           in: path
           description: Specifies the offset of the first item in the collection to return.
@@ -3836,8 +3515,6 @@ paths:
                                 por: Indica o tipo de frequência. Junto com frequency, definem o ciclo de cobrança que a assinatura terá.
                               example: months
                               enum:
-                                - days -- Indicate a frequency in units of days
-                                - months -- Indicate a frequency in units of months
                             repetitions:
                               type: number
                               description: It is optional and is used to create a limited subscription. Indicates the number of times that we will repeat the recurrence cycle. If this param is not defined, subscription does not end until some of the parties cancel it.
@@ -3863,8 +3540,6 @@ paths:
                                 por: Cobra um valor proporcional ao dia do faturamento no momento do cadastro.
                               example: true
                               enum:
-                                - true -- Charge a proportional amount based on the days remaining in the next billing cycle. Billing cycles are always calculated on a 30-day basis.
-                                - false -- Charge the amount of the subscription regardless of when in the billing cycle customer subscribe.
                             free_trial:
                               type: object
                               description: Free trial data.
@@ -3890,8 +3565,6 @@ paths:
                                     por: Indica o tipo de frequência. Junto com frequency, definem o ciclo de cobrança que a assinatura terá.
                                   example: months
                                   enum:
-                                    - days -- Indicate a frequency in units of days
-                                    - months -- Indicate a frequency in units of months
                                 first_invoice_offset:
                                   type: number
                                   description: Number of days to collect the first invoice.
@@ -3913,13 +3586,6 @@ paths:
                                 por: Identificador da moeda utilizada no pagamento
                               example: ARS
                               enum:
-                                - ARS -- Argentine peso.
-                                - BRL -- Brazilian real.
-                                - CLP -- Chilean peso.
-                                - MXN -- Mexican peso.
-                                - COP -- Colombian peso.
-                                - PEN -- Peruvian sol.
-                                - UYU -- Uruguayan peso.
                         payment_methods_allowed:
                           type: object
                           description: Payment methods enabled at checkout.
@@ -4025,8 +3691,6 @@ paths:
                             spa: Estado del plan.
                             por: Status do plano.
                           enum:
-                            - active -- Plan available to create subscriptions
-                            - cancelled -- Plan not available to create subscriptions
         '400':
           description: Error
           x-description-i18n:
@@ -4041,9 +3705,6 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 400--Bad-request--Search parameters are required
-                      - 400--Bad-request--Binding exception, parameters passed are invalid
-                      - 400--Bad-request--Invalid status value. Valid status are active, cancelled
         '401':
           description: Error
           x-description-i18n:
@@ -4058,7 +3719,6 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 401--Unauthorized--Unauthorized access to resource
         '500':
           description: Error
           x-description-i18n:
@@ -4073,7 +3733,6 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 500--Error--Internal server error
   /preapproval/search:
     get:
       tags:
@@ -4150,10 +3809,6 @@ paths:
             type: string
             example: green
             enum:
-              - green -- All collections made.
-              - yellow -- With collection problems. We are trying to collect an invoice.
-              - red -- With pending collections. An invoice could not be collected.
-              - blank -- Discounted collection.
         - name: status
           in: path
           description: Specifies a status for filtering results from the export. Can be null, one or many.
@@ -4165,10 +3820,6 @@ paths:
             type: string
             example: authorized,cancelled,paused
             enum:
-              - pending -- Preapproval without a payment method.
-              - authorized -- Preapproval with a valid payment method.
-              - paused -- Preapproval with temporally discontinued collection of payments.
-              - cancelled -- Preapproval terminated. This is an irreversible state.
         - name: sort
           in: path
           description: Specifies the type of sorting selected to retrieve the subscriptions. You must indicate a field and a sort type with the following format field_name:sort_type.
@@ -4180,8 +3831,6 @@ paths:
             type: string
             example: payer_id:asc
             enum:
-              - asc -- Ascending sort
-              - desc -- Descending sort
         - name: offset
           in: path
           description: Specifies the offset of the first item in the collection to return.
@@ -4346,8 +3995,6 @@ paths:
                                 por: Indica o tipo de frequência. Junto com frequency, definem o ciclo de cobrança que a assinatura terá.
                               example: months
                               enum:
-                                - days -- Indicate a frequency in units of days
-                                - months -- Indicate a frequency in units of months
                             start_date:
                               type: string
                               format: date
@@ -4375,13 +4022,6 @@ paths:
                                 por: Identificador da moeda utilizada no pagamento
                               example: ARS
                               enum:
-                                - ARS -- Argentine peso.
-                                - BRL -- Brazilian real.
-                                - CLP -- Chilean peso.
-                                - MXN -- Mexican peso.
-                                - COP -- Colombian peso.
-                                - PEN -- Peruvian sol.
-                                - UYU -- Uruguayan peso.
                             transaction_amount:
                               type: number
                               description: Amount we will charge on each invoice.
@@ -4415,8 +4055,6 @@ paths:
                                     por: Indica o tipo de frequência. Junto com frequency, definem o ciclo de cobrança que a assinatura terá.
                                   example: months
                                   enum:
-                                    - days -- Indicate a frequency in units of days
-                                    - months -- Indicate a frequency in units of months
                         first_invoice_offset:
                           type: number
                           description: Number of days to collect the first invoice
@@ -4562,19 +4200,11 @@ paths:
                                 por: Resumo do status de cobrança de assinaturas.
                               example: green
                               enum:
-                                - green -- All collections made.
-                                - yellow -- With collection problems. We are trying to collect an invoice.
-                                - red -- With pending collections. An invoice could not be collected.
-                                - blank -- Discounted collection.
                         status:
                           type: string
                           example: pending
                           description: Status
                           enum:
-                            - pending -- Preapproval without a payment method.
-                            - authorized -- Preapproval with a valid payment method.
-                            - paused -- Preapproval with temporally discontinued collection of payments.
-                            - cancelled -- Preapproval terminated. This is an irreversible state.
         '400':
           description: Error
           x-description-i18n:
@@ -4589,8 +4219,6 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 400--Bad-request--Search parameters are required
-                      - 400--Bad-request--Binding exception, parameters passed are invalid
         '401':
           description: Error
           x-description-i18n:
@@ -4605,7 +4233,6 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 401--Unauthorized--Unauthorized access to resource
         '500':
           description: Error
           x-description-i18n:
@@ -4620,4 +4247,3 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 500--Error--Internal server error  

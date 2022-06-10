@@ -525,8 +525,6 @@ paths:
                           por: Tipo da track. Especifique a herramienta pertenecen los valores
                         example: google_ad
                         enum:
-                          - google_ad -- Allows configurations for GTM's Google Ads Conversion Tracking tag. Necessary values as conversion_id and conversion_label.
-                          - facebook_ad -- Allows configurations for Facebook Pixel. Necessary values as pixel_id.
                       values:
                         type: string
                         description: Configuration values according the track type.
@@ -1021,28 +1019,22 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - >-
                         collector_does_not_comply_with_current_regulation--identity-validation-required-
-                      - invalid_collector_id--collector-id-invalid-
-                      - invalid_sponsor_id--sponsor-id-is-not-an-active-user-
-                      - >-
+                      - invalid_collector_id--collector_id invalid.
+                      - invalid_sponsor_id--sponsor_id is not an active user.
                         invalid_collector_email--collector-is-not-collector-email-owner
-                      - invalid_operation_type--operation-type-invalid-
-                      - invalid_expiration_date_to--expiration-date-to-invalid-
-                      - invalid_date--invalid-date-of-expiration-
-                      - >-
+                      - invalid_operation_type--operation_type invalid.
+                      - invalid_expiration_date_to--expiration_date_to invalid.
+                      - invalid_date--invalid date of expiration.
                         invalid_expiration_date_from--expiration-date-from-invalid-
-                      - invalid_items--unit-price-invalid-
-                      - invalid_back_urls--back-urls-invalid--Wrong-format
-                      - >-
+                      - invalid_items--unit_price invalid.
+                      - invalid_back_urls--back_urls invalid. Wrong format
                         invalid_payment_methods--installments-invalid--Should-be-a-number-between-1-and-36-
-                      - >-
                         invalid_marketplace_fee--marketplace-fee-must-not-be-greater-than-total-amount-
-                      - invalid_id--preference-id-not-found-
-                      - invalid_access_token--access-denied
-                      - >-
+                      - invalid_id--preference_id not found.
+                      - invalid_access_token--access denied
                         invalid_shipments--invalid-type---type---for-field-shipments-cost-
-                      - invalid_binary_mode--binary-mode-must-be-boolean-
+                      - invalid_binary_mode--binary_mode must be boolean.
   /checkout/preferences/search:
     get:
       tags:
@@ -1087,13 +1079,6 @@ paths:
           schema:
             type: string
           enum:
-            - MLA -- Mercado Libre Argentina
-            - MLB -- Mercado Libre Brasil
-            - MLC -- Mercado Libre Chile
-            - MLM -- Mercado Libre México
-            - MLU -- Mercado Libre Uruguay
-            - MCO -- Mercado Libre Colombia
-            - MPE -- Mercado Libre Perú
         - name: marketplace
           in: query
           description: Marketplace ID.
@@ -1266,13 +1251,6 @@ paths:
                             spa: ID único utilizado para identificar el site.
                             por: ID exclusivo usado para identificar o site.
                           enum:
-                            - MLA -- Mercado Libre Argentina
-                            - MLB -- Mercado Libre Brasil
-                            - MLC -- Mercado Libre Chile
-                            - MLM -- Mercado Libre México
-                            - MLU -- Mercado Libre Uruguay
-                            - MCO -- Mercado Libre Colombia
-                            - MPE -- Mercado Libre Perú
                         sponsor_id:
                           type: number
                           example: 0
@@ -1304,7 +1282,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - ds_search_query--invalid-query-
+                      - ds_search_query--invalid query.
         '401':
           description: Error
           x-description-i18n:
@@ -1319,8 +1297,8 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - invalid_token--invalid-token-
-                      - invalid_caller_id--invalid-caller-id
+                      - invalid_token--invalid_token.
+                      - invalid_caller_id--invalid caller_id
   /checkout/preferences/{id}:
     get:
       tags:
@@ -1828,24 +1806,19 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - invalid_collector_id--collector-id-invalid-
-                      - invalid_sponsor_id--sponsor-id-is-not-an-active-user-
-                      - >-
+                      - invalid_collector_id--collector_id invalid.
+                      - invalid_sponsor_id--sponsor_id is not an active user.
                         invalid_collector_email--collector-is-not-collector-email-owner-
-                      - invalid_operation_type--operation-type-invalid-
-                      - invalid_expiration_date_to--expiration-date-to-invalid-
-                      - >-
+                      - invalid_operation_type--operation_type invalid.
+                      - invalid_expiration_date_to--expiration_date_to invalid.
                         invalid_expiration_date_from--expiration-date-from-invalid-
-                      - invalid_items--unit-price-invalid-
-                      - invalid_payer--payer-email-invalid--Max-length-150-
-                      - invalid_back_urls--back-urls-invalid--Wrong-format-
-                      - >-
+                      - invalid_items--unit_price invalid.
+                      - invalid_payer--payer email invalid. Max length 150.
+                      - invalid_back_urls--back_urls invalid. Wrong format.
                         invalid_payment_methods--installments-invalid--Should-be-a-number-between-1-and-36-
-                      - >-
                         invalid_marketplace_fee--marketplace-fee-must-not-be-greater-than-total-amount-
-                      - invalid_id--preference-id-not-found-
-                      - invalid_access_token--access-denied-
-                      - >-
+                      - invalid_id--preference_id not found.
+                      - invalid_access_token--access denied.
                         invalid_shipments--Invalid-total-amount--with-me2-it-cannot-be-lesser-than--limit--
     put:
       tags:
@@ -2838,13 +2811,6 @@ paths:
                       spa: ID único utilizado para identificar el site.
                       por: ID exclusivo usado para identificar o site.
                     enum:
-                      - MLA -- Mercado Libre Argentina
-                      - MLB -- Mercado Libre Brasil
-                      - MLC -- Mercado Libre Chile
-                      - MLM -- Mercado Libre México
-                      - MLU -- Mercado Libre Uruguay
-                      - MCO -- Mercado Libre Colombia
-                      - MPE -- Mercado Libre Perú
                   shipments:
                     type: object
                     description: Shipments information.
@@ -2965,24 +2931,19 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - invalid_collector_id--collector-id-invalid-
-                      - invalid_sponsor_id--sponsor-id-is-not-an-active-user-
-                      - >-
+                      - invalid_collector_id--collector_id invalid.
+                      - invalid_sponsor_id--sponsor_id is not an active user.
                         invalid_collector_email--collector-is-not-collector-email-owner
-                      - invalid_operation_type--operation-type-invalid-
-                      - invalid_expiration_date_to--expiration-date-to-invalid-
-                      - invalid_date--invalid-date-of-expiration-
-                      - >-
+                      - invalid_operation_type--operation_type invalid.
+                      - invalid_expiration_date_to--expiration_date_to invalid.
+                      - invalid_date--invalid date of expiration.
                         invalid_expiration_date_from--expiration-date-from-invalid-
-                      - invalid_items--unit-price-invalid-
-                      - invalid_back_urls--back-urls-invalid--Wrong-format
-                      - >-
+                      - invalid_items--unit_price invalid.
+                      - invalid_back_urls--back_urls invalid. Wrong format
                         invalid_payment_methods--installments-invalid--Should-be-a-number-between-1-and-36-
-                      - >-
                         invalid_marketplace_fee--marketplace-fee-must-not-be-greater-than-total-amount-
-                      - invalid_id--preference-id-not-found-
-                      - invalid_access_token--access-denied
-                      - >-
+                      - invalid_id--preference_id not found.
+                      - invalid_access_token--access denied
                         invalid_shipments--invalid-type---type---for-field-shipments-cost-
 
 components:
@@ -2995,9 +2956,6 @@ components:
         spa: Modo de envío
         por: Modo de envio
       enum:
-        - custom -- Custom shipping.
-        - me2 -- Mercado Envíos.
-        - not_specified -- Shipping mode not specified.
     operation_type:
       type: String
       description: Operation data_type.
@@ -3006,8 +2964,6 @@ components:
         spa: data_type de la operación
         por: data_type da operação
       enum:
-        - regular_payment -- Normal payment.
-        - money_transfer -- Money request.
     auto_return:
       type: String
       description: If specified, your buyers will be redirected back to your site immediately after completing the purchase.
@@ -3016,5 +2972,3 @@ components:
         spa: En el caso de estar especificado tu comprador sera redirigido a tu sitio inmediatamente después de la compra
         por: No caso de estar especificado o comprador será redirecionado para o seu site imediatamente após a compra
       enum:
-        - approved -- The redirection takes place only for approved payments.
-        - all -- The redirection takes place only for approved payments, forward compatibility only if we change the default behavior

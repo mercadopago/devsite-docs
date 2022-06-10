@@ -327,10 +327,10 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - invalid_collector_id--collector-id-invalid-
-                      - invalid_sponsor_id--sponsor-id-is-not-an-active-user-
-                      - invalid_items--unit-price-invalid-
-                      - invalid_access_token--Access-denied-
+                      - invalid_collector_id--collector_id invalid.
+                      - invalid_sponsor_id--sponsor_id is not an active user.
+                      - invalid_items--unit_price invalid.
+                      - invalid_access_token--Access denied.
     delete:
       tags:
         - $ref: '#/tags/qr-code'
@@ -382,8 +382,8 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - invalid_collector_id--COLLECTOR-ID-invalid-
-                      - invalid_access_token--access-denied-
+                      - invalid_collector_id--COLLECTOR_ID invalid.
+                      - invalid_access_token--access denied.
 
 
 components:
@@ -397,10 +397,3 @@ components:
         spa: Identificador de moneda en formato ISO_4217
         por: Identificador de moeda no formato ISO_4217
       enum: 
-        - ARS -- Argentine peso.
-        - BRL -- Brazil real.
-        - CLP -- Chilean peso.
-        - MXN -- Mexican peso.
-        - COP -- Colombian peso.
-        - PEN -- Peruvian sol.
-        - UYU -- Uruguayan peso.

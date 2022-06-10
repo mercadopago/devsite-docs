@@ -131,7 +131,6 @@ paths:
                         spa: Un valor booleano que determina si desea imprimir el ticket en el dispositivo
                         por: Um valor booleano que determina se você deseja imprimir o ticket no dispositivo
               required: 
-               - amount
 
       responses:
         '200':
@@ -238,7 +237,6 @@ paths:
                     errorKey:
                       type: string
                       enum:
-                        - 401-- Unauthorized - Token is invalid
         '400':
           description: Error
           x-description-i18n:
@@ -253,7 +251,6 @@ paths:
                     errorKey:
                       type: string
                       enum:
-                        - 400-- Bad request - Field is missing o incorrect
         '403':
           description: Error
           x-description-i18n:
@@ -268,7 +265,6 @@ paths:
                     errorKey:
                       type: string
                       enum:
-                        - 403-- Forbidden - Integrator isn't registered
         '409':
           description: Error
           x-description-i18n:
@@ -283,7 +279,6 @@ paths:
                     errorKey:
                       type: string
                       enum:
-                        - 409-- Conflict error - Device has a queued payment intent
         '500':
           description: Error
           x-description-i18n:
@@ -298,4 +293,3 @@ paths:
                     errorKey:
                       type: string
                       enum:
-                        - 500-- Internal server error

@@ -80,8 +80,6 @@ paths:
                   errorKey:
                   type: string
                   enum:
-                    - 400-invalid_status_detail--the-status-detail-is-not-correct
-                    - 400-invalid_status--the-cashout-status-is-not-correct
         '409':
           description: Error
           x-description-i18n:
@@ -96,8 +94,6 @@ paths:
                   errorKey:
                   type: string
                   enum:
-                    - 409-already_confirmed--Order-already-confirmed-
-                    - 409-already_notified--Order-already-notified-with-status:-{STATUS}     
 components:
   schemas:
     status:
@@ -109,9 +105,6 @@ components:
         por: Status do dinheiro. Se o status de saque e pagamento (se aplicável) não for confirmado, o valor será reembolsado ao pagador.
       example: confirmed
       enum:
-        - confirmed -- the money was delivered correctly to the payer.
-        - fail -- the transaction failed by one or some errors.
-        - cancelled -- cashout cancelled for any reason.
     status_detail:
       type: string
       description: Detail of the status.
@@ -121,10 +114,4 @@ components:
         por: Detalhe do status.
       example: confirmed
       enum:
-        - internal_comunication_error -- an error occurs in seller infraestructure (only for fail status).
-        - manually_cancelled -- cancelled manually for the cashier (only for cancelled status).
-        - confirmation_not_received -- the notification for this transaction was not received by the seller (only for cancelled status).
-        - merchant_order_not_found -- merchant order associated to the transaction not found (only for cancelled status).
-        - other -- other error (only for cancelled and fail status).
-        - confirmed -- cashout confirmed (only for confirmed status).
     

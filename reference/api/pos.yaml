@@ -162,30 +162,21 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - MISSING_BODY--HTTP-body-is-required-to-create-pos-
-                      - >-
+                      - MISSING_BODY--HTTP body is required to create pos.
                         UNKNOWN_FIELD_EXCEPTION--The-indicated-field-is-not-allowed-for-this-operation-or-is-unknown-
-                      - INVALID_NAME--NAME-must-be-string-
-                      - NAME_TOO_LONG--The-NAME-must-be-less-than-45-characters-
-                      - INVALID_FIXED_AMOUNT--FIXED-AMOUNT-must-be-boolean-
-                      - INVALID_CATEGORY--CATEGORY-must-be-numeric-
-                      - >-
+                      - INVALID_NAME--NAME must be string.
+                      - NAME_TOO_LONG--The NAME must be less than 45 characters.
+                      - INVALID_FIXED_AMOUNT--FIXED_AMOUNT must be boolean.
+                      - INVALID_CATEGORY--CATEGORY must be numeric.
                         UNKNOWN_MCC--The-CATEGORY-must-be-valid-for-the-user-s-site-
-                      - INVALID_STORE_ID--STORE-ID-must-be-numeric-
-                      - >-
+                      - INVALID_STORE_ID--STORE_ID must be numeric.
                         INVALID_EXTERNAL_STORE_ID--EXTERNAL-STORE-ID-must-be-string-
-                      - >-
                         EXTERNAL_STORE_ID_NOT_MATCH--The-EXTERNAL-STORE-ID-does-not-refer-to-the-indicated-STORE-ID-
-                      - >-
                         INEXISTENT_EXTERNAL_STORE_ID--The-EXTERNAL-STORE-ID-does-not-refer-to-any-existing-store-
-                      - >-
                         INVALID_EXTERNAL_ID--The-EXTERNAL-ID-field-must-be-alphanumeric--only-letters-and-numbers--No-spaces-or-hyphens--or-special-characters-
-                      - >-
                         EXTERNAL_ID_TOO_LONG--The-EXTERNAL-ID-must-be-less-than-40-characters-
-                      - >-
                         INVALID_URL--The-URL-must-be-string-and-must-have-the-format-of-a-valid-url-
-                      - URL_TOO_LONG--The-URL-must-be-less-than-300-characters-
-                      - >-
+                      - URL_TOO_LONG--The URL must be less than 300 characters.
                         FIXED_AMOUNT_FALSE--If-the-URL-field-is-indicated--the-FIXED-AMOUNT-field-must-be-true--We-do-not-support-the-open-amount-modality-in-this-case-
         '403':
           description: Error
@@ -201,7 +192,6 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - >-
                         1--If-you-are-using-the-URL-field--the-host-must-be-enabled-by-Mercado-Pago--If-it-is-not--you-will-receive-this-error--Please-contact-your-assigned-technical-advisor-
         '404':
           description: Error
@@ -217,7 +207,6 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - >-
                         1--If-the-POS-does-not-exist-for-an-indicated-ID-or-EXTERNAL-ID-and-user-
         '409':
           description: Error
@@ -233,7 +222,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 1--A-pos-with-the-same-EXTERNAL-ID-already-exists-
+                      - 1--A pos with the same EXTERNAL_ID already exists.
     get:
       tags:
         - $ref: '#/tags/qr-code'
@@ -373,18 +362,14 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - INVALID_CATEGORY--The-CATEGORY-must-be-numeric-
-                      - INVALID_STORE_ID--The-STORE-ID-must-be-numeric-
-                      - >-
+                      - INVALID_CATEGORY--The CATEGORY must be numeric.
+                      - INVALID_STORE_ID--The STORE_ID must be numeric.
                         INVALID_EXTERNAL_STORE_ID--The-EXTERNAL-STORE-ID-must-be-string-
-                      - >-
                         INEXISTENT_EXTERNAL_STORE_ID--The-EXTERNAL-STORE-ID-does-not-refer-to-an-existing-Store-
-                      - >-
                         INVALID_EXTERNAL_ID--The-EXTERNAL-ID-field-must-be-alphanumeric--only-letters-and-numbers--No-spaces-or-hyphens--or-special-characters-
-                      - >-
                         EXTERNAL_ID_TOO_LONG--The-EXTERNAL-ID-must-be-less-than-40-characters-
-                      - INVALID_LIMIT--The-LIMIT-must-be-numeric-
-                      - INVALID_OFFSET--The-OFFSET-must-be-numeric-
+                      - INVALID_LIMIT--The LIMIT must be numeric.
+                      - INVALID_OFFSET--The OFFSET must be numeric.
   /pos/{id}:
     get:
       tags:
@@ -493,11 +478,8 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - >-
                         INVALID_POS_ID--The-ID-of-the-pos-is-invalid--it-must-be-numeric-
-                      - >-
                         INVALID_EXTERNAL_ID--The-EXTERNAL-ID-field-must-be-alphanumeric--only-letters-and-numbers--No-spaces-or-hyphens--or-special-characters-
-                      - >-
                         EXTERNAL_ID_TOO_LONG--The-EXTERNAL-ID-must-be-less-than-40-characters-
         '404':
           description: Error
@@ -513,7 +495,6 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - >-
                         1--If-the-POS-does-not-exist-for-an-indicated-ID-or-EXTERNAL-ID-and-user-
     put:
       tags:
@@ -682,32 +663,22 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - MISSING_BODY--HTTP-body-is-required-to-modify-pos-
-                      - >-
+                      - MISSING_BODY--HTTP body is required to modify pos.
                         UNKNOWN_FIELD_EXCEPTION--The-indicated-field-is-not-allowed-for-this-operation-or-is-unknown-
-                      - >-
                         INVALID_POS_ID--The-ID-of-the-pos-is-invalid--it-must-be-numeric-
-                      - INVALID_NAME--NAME-must-be-string-
-                      - NAME_TOO_LONG--The-NAME-must-be-less-than-45-characters-
-                      - INVALID_FIXED_AMOUNT--FIXED-AMOUNT-must-be-boolean-
-                      - INVALID_CATEGORY--CATEGORY-must-be-numeric-
-                      - >-
+                      - INVALID_NAME--NAME must be string.
+                      - NAME_TOO_LONG--The NAME must be less than 45 characters.
+                      - INVALID_FIXED_AMOUNT--FIXED_AMOUNT must be boolean.
+                      - INVALID_CATEGORY--CATEGORY must be numeric.
                         POS_UNKNOWN_MCC--The-CATEGORY-must-be-valid-for-the-user-s-site-
-                      - POS_INVALID_STORE_ID--STORE-ID-must-be-numeric-
-                      - >-
+                      - POS_INVALID_STORE_ID--STORE_ID must be numeric.
                         INVALID_EXTERNAL_STORE_ID--EXTERNAL-STORE-ID-must-be-string-
-                      - >-
                         EXTERNAL_STORE_ID_NOT_MATCH--The-EXTERNAL-STORE-ID-does-not-refer-to-the-indicated-STORE-ID-
-                      - >-
                         INEXISTENT_EXTERNAL_STORE_ID--The-EXTERNAL-STORE-ID-does-not-refer-to-an-existing-Store-
-                      - >-
                         INVALID_EXTERNAL_ID--The-EXTERNAL-ID-field-must-be-alphanumeric--only-letters-and-numbers--No-spaces-or-hyphens--or-special-characters-
-                      - >-
                         EXTERNAL_ID_TOO_LONG--The-EXTERNAL-ID-must-be-less-than-40-characters-
-                      - >-
                         INVALID_URL--The-URL-must-be-string-and-must-have-the-format-of-a-valid-url-
-                      - URL_TOO_LONG--The-URL-must-be-less-than-300-characters-
-                      - >-
+                      - URL_TOO_LONG--The URL must be less than 300 characters.
                         FIXED_AMOUNT_FALSE--If-the-URL-field-is-indicated--the-FIXED-AMOUNT-field-must-be-true--We-do-not-support-the-open-amount-modality-in-this-case-
         '403':
           description: Error
@@ -723,7 +694,6 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - >-
                         1--If-you-are-using-the-URL-field--the-host-must-be-enabled-by-Mercado-Pago--If-it-is-not--you-will-receive-this-error--Please-contact-your-assigned-technical-advisor-
         '404':
           description: Error
@@ -739,7 +709,6 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - >-
                         1--If-the-POS-does-not-exist-for-an-indicated-ID-or-EXTERNAL-ID-and-user-
         '409':
           description: Error
@@ -755,7 +724,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 1--A-pos-with-the-same-EXTERNAL-ID-already-exists-
+                      - 1--A pos with the same EXTERNAL_ID already exists.
     delete:
       tags:
         - $ref: '#/tags/qr-code'
@@ -796,7 +765,6 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - >-
                         INVALID_POS_ID--The-ID-of-the-pos-is-invalid--it-must-be-numeric-
         '404':
           description: Error
@@ -812,7 +780,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 1--If-there-is-no-pos-for-the-indicated-ID-and-user-
+                      - 1--If there is no pos for the indicated ID and user.
 
 components:
   schemas:
@@ -825,19 +793,3 @@ components:
         spa: Código MCC que indica el rubro del Punto de Venta. Si no se especifica, queda como categoría genérica
         por: Código MCC que indica a categoria do ponto de venda. Se não especificado, ele permanece como uma categoria genérica
       enum:
-        - Gastronomy -- 
-        - 621102 -- Argentina
-        - 5611203 -- Brazil 
-        - 5812 -- Mexico
-        - 5611 -- Colombia
-        - 5520 -- Peru 
-        - 56101 -- Uruguay
-        - 561000 -- Chile
-        - Gas station -- 
-        - 473000 -- Argentina
-        - 4731300 -- Brazil
-        - 468419 -- Mexico
-        - 4731 -- Colombia
-        - 5050 -- Peru
-        - 47300 -- Uruguay
-        - 473001 -- Chile

@@ -592,21 +592,6 @@ paths:
                       spa: Detalle en el que resultó el Cobro
                       por: Detalhe em que resultou a Coleção
                     enum:
-                      - Accredited -- credited payment.
-                      - pending_contingency -- the payment is being processed.
-                      - pending_review_manual -- the payment is under review to determine its approval or rejection.
-                      - cc_rejected_bad_filled_date -- incorrect expiration date.
-                      - cc_rejected_bad_filled_other -- incorrect card details.
-                      - cc_rejected_bad_filled_security_code -- incorrect CVV.
-                      - cc_rejected_blacklist -- the card is on a black list for theft/complaints/fraud.
-                      - cc_rejected_call_for_authorize -- the means of payment requires prior authorization of the amount of the operation.
-                      - cc_rejected_card_disabled -- the card is inactive.
-                      - cc_rejected_duplicated_payment -- transacción duplicada.
-                      - cc_rejected_high_risk -- rechazo por Prevención de Fraude.
-                      - cc_rejected_insufficient_amount -- insufficient amount.
-                      - cc_rejected_invalid_installments -- invalid number of installments.
-                      - cc_rejected_max_attempts -- exceeded maximum number of attempts.
-                      - cc_rejected_other_reason -- generic error.
                   currency_id:
                     $ref: '#/components/schemas/currency_id'
                   description:
@@ -1205,8 +1190,6 @@ paths:
                       spa: Modo de procesamiento. Existen dos tipos.
                       por: Modo de processamento. Existem dois tipos.
                     enum:
-                      - Aggregator -- The merchant will use the Mercado Pago merchant codes and will take advantage of the financial advantages that we offer.
-                      - Gateway -- For the merchant it is necessary to have their own merchant codes for online sales and to have an agreement with each of the desired means of payment.
                   merchant_account_id:
                     type: string
                     format: nullable
@@ -1316,98 +1299,80 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 1--Params-Error-
-                      - 3--Token-must-be-for-test-
-                      - 5--Must-provide-your-access-token-to-proceed-
-                      - >-
+                      - 1--Params Error.
+                      - 3--Token must be for test.
+                      - 5--Must provide your access_token to proceed.
                         23--The-following-parameters-must-be-valid-date-and-format--yyyy-MM-dd-T-HH-mm-ssz--date-of-expiration-
-                      - 1000--Number-of-rows-exceeded-the-limits-
-                      - 1001--Date-format-must-be-yyyy-MM-dd-T-HH-mm-ss-SSSZ-
-                      - >-
+                      - 1000--Number of rows exceeded the limits.
+                      - 1001--Date format must be yyyy-MM-dd'T'HH:mm:ss.SSSZ.
                         2001--Already-posted-the-same-request-in-the-last-minute-
-                      - 2002--Customer-not-found-
-                      - 2004--POST-to-Gateway-Transactions-API-fail-
-                      - 2006--Card-Token-not-found-
-                      - 2007--Connection-to-Card-Token-API-fail-
-                      - 2009--Card-token-issuer-can-t-be-null-
-                      - 2060--The-customer-can-t-be-equal-to-the-collector-
-                      - >-
+                      - 2002--Customer not found.
+                      - 2004--POST to Gateway Transactions API fail.
+                      - 2006--Card Token not found.
+                      - 2007--Connection to Card Token API fail.
+                      - 2009--Card token issuer can't be null.
+                      - 2060--The customer can't be equal to the collector.
                         3000--You-must-provide-your-cardholder-name-with-your-card-data-
-                      - >-
                         3001--You-must-provide-your-cardissuer-id-with-your-card-data-
-                      - 3003--Invalid-card-token-id-
-                      - 3004--Invalid-parameter-site-id-
-                      - >-
+                      - 3003--Invalid card_token_id.
+                      - 3004--Invalid parameter site_id.
                         3005--Not-valid-action--the-resource-is-in-a-state-that-does-not-allow-this-operation--For-more-information-see-the-state-that-has-the-resource-
-                      - 3006--Invalid-parameter-cardtoken-id-
-                      - 3007--The-parameter-client-id-can-not-be-null-or-empty-
-                      - 3008--Not-found-Cardtoken-
-                      - 3009--unauthorized-client-id-
-                      - 3010--Not-found-card-on-whitelist-
-                      - 3011--Not-found-payment-method-
-                      - 3012--Invalid-parameter-security-code-length-
-                      - >-
+                      - 3006--Invalid parameter cardtoken_id.
+                      - 3007--The parameter client_id can not be null or empty.
+                      - 3008--Not found Cardtoken.
+                      - 3009--unauthorized client_id.
+                      - 3010--Not found card on whitelist.
+                      - 3011--Not found payment_method.
+                      - 3012--Invalid parameter security_code_length.
                         3013--The-parameter-security-code-is-a-required-field-can-not-be-null-or-empty-
-                      - 3014--Invalid-parameter-payment-method-
-                      - 3015--Invalid-parameter-card-number-length-
-                      - 3016--Invalid-parameter-card-number-
-                      - >-
+                      - 3014--Invalid parameter payment_method.
+                      - 3015--Invalid parameter card_number_length.
+                      - 3016--Invalid parameter card_number.
                         3017--The-parameter-card-number-id-can-not-be-null-or-empty-
-                      - >-
                         3018--The-parameter-expiration-month-can-not-be-null-or-empty-
-                      - >-
                         3019--The-parameter-expiration-year-can-not-be-null-or-empty-
-                      - >-
                         3020--The-parameter-cardholder-name-can-not-be-null-or-empty-
-                      - >-
                         3021--The-parameter-cardholder-document-number-can-not-be-null-or-empty-
-                      - >-
                         3022--The-parameter-cardholder-document-type-can-not-be-null-or-empty-
-                      - >-
                         3023--The-parameter-cardholder-document-subtype-can-not-be-null-or-empty-
-                      - >-
                         3024--Not-valid-action---partial-refund-unsupported-for-this-transaction-
-                      - 3025--Invalid-Auth-Code-
-                      - 3026--Invalid-card-id-for-this-payment-method-id-
-                      - 3027--Invalid-payment-type-id-
-                      - 3028--Invalid-payment-method-id-
-                      - 3029--Invalid-card-expiration-month-
-                      - 3030--Invalid-card-expiration-year-
-                      - 4000--card-atributte-can-t-be-null-
-                      - 4001--payment-method-id-atributte-can-t-be-null-
-                      - 4002--transaction-amount-atributte-can-t-be-null-
-                      - 4003--transaction-amount-atributte-must-be-numeric-
-                      - 4004--installments-atributte-can-t-be-null-
-                      - 4005--installments-atributte-must-be-numeric-
-                      - 4006--payer-atributte-is-malformed-
-                      - 4007--site-id-atributte-can-t-be-null-
-                      - 4012--payer-id-atributte-can-t-be-null-
-                      - 4013--payer-type-atributte-can-t-be-null-
-                      - >-
+                      - 3025--Invalid Auth Code.
+                      - 3026--Invalid card_id for this payment_method_id.
+                      - 3027--Invalid payment_type_id.
+                      - 3028--Invalid payment_method_id.
+                      - 3029--Invalid card expiration month.
+                      - 3030--Invalid card expiration year.
+                      - 4000--card atributte can't be null.
+                      - 4001--payment_method_id atributte can't be null.
+                      - 4002--transaction_amount atributte can't be null.
+                      - 4003--transaction_amount atributte must be numeric.
+                      - 4004--installments atributte can't be null.
+                      - 4005--installments atributte must be numeric.
+                      - 4006--payer atributte is malformed.
+                      - 4007--site_id atributte can't be null.
+                      - 4012--payer.id atributte can't be null.
+                      - 4013--payer.type atributte can't be null.
                         4015--payment-method-reference-id-atributte-can-t-be-null-
-                      - >-
                         4016--payment-method-reference-id-atributte-must-be-numeric-
-                      - 4017--status-atributte-can-t-be-null-
-                      - 4018--payment-id-atributte-can-t-be-null-
-                      - 4019--payment-id-atributte-must-be-numeric-
-                      - 4020--notificaction-url-atributte-must-be-url-valid-
-                      - >-
+                      - 4017--status atributte can't be null.
+                      - 4018--payment_id atributte can't be null.
+                      - 4019--payment_id atributte must be numeric.
+                      - 4020--notificaction_url atributte must be url valid.
                         4021--notificaction-url-atributte-must-be-shorter-than-500-characters-
-                      - 4022--metadata-atributte-must-be-a-valid-JSON-
-                      - 4023--transaction-amount-atributte-can-t-be-null-
-                      - 4024--transaction-amount-atributte-must-be-numeric-
-                      - 4025--refund-id-can-t-be-null-
-                      - 4026--Invalid-coupon-amount-
-                      - 4027--campaign-id-atributte-must-be-numeric-
-                      - 4028--coupon-amount-atributte-must-be-numeric-
-                      - 4029--Invalid-payer-type-
-                      - 4037--Invalid-transaction-amount-
-                      - >-
+                      - 4022--metadata atributte must be a valid JSON.
+                      - 4023--transaction_amount atributte can't be null.
+                      - 4024--transaction_amount atributte must be numeric.
+                      - 4025--refund_id can't be null.
+                      - 4026--Invalid coupon_amount.
+                      - 4027--campaign_id atributte must be numeric.
+                      - 4028--coupon_amount atributte must be numeric.
+                      - 4029--Invalid payer type.
+                      - 4037--Invalid transaction_amount.
                         4038--application-fee-cannot-be-bigger-than-transaction-amount-
-                      - 4039--application-fee-cannot-be-a-negative-value-
-                      - 4050--payer-email-must-be-a-valid-email-
-                      - 4051--payer-email-must-be-shorter-than-254-characters-
-                      - 7523--Invalid-expiration-date-
+                      - 4039--application_fee cannot be a negative value.
+                      - 4050--payer.email must be a valid email.
+                      - 4051--payer.email must be shorter than 254 characters.
+                      - 7523--Invalid expiration date.
         '403':
           description: Error
           x-description-i18n:
@@ -1422,8 +1387,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 4--The-caller-is-not-authorized-to-access-this-resource-
-                      - >-
+                      - 4--The caller is not authorized to access this resource.
                         3002--The-caller-is-not-authorized-to-perform-this-action-
         '404':
           description: Error
@@ -1439,7 +1403,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 2000--Payment-not-found
+                      - 2000--Payment not found
   /v1/payments/{id}:
     get:
       tags:
@@ -1556,21 +1520,6 @@ paths:
                       spa: Detalle en el que resultó el Cobro
                       por: Detalhe em que resultou a Coleção
                     enum:
-                      - Accredited -- credited payment.
-                      - pending_contingency -- the payment is being processed.
-                      - pending_review_manual -- the payment is under review to determine its approval or rejection.
-                      - cc_rejected_bad_filled_date -- incorrect expiration date.
-                      - cc_rejected_bad_filled_other -- incorrect card details.
-                      - cc_rejected_bad_filled_security_code -- incorrect CVV.
-                      - cc_rejected_blacklist -- the card is on a black list for theft/complaints/fraud.
-                      - cc_rejected_call_for_authorize -- the means of payment requires prior authorization of the amount of the operation.
-                      - cc_rejected_card_disabled -- the card is inactive.
-                      - cc_rejected_duplicated_payment -- transacción duplicada.
-                      - cc_rejected_high_risk -- rechazo por Prevención de Fraude.
-                      - cc_rejected_insufficient_amount -- insufficient amount.
-                      - cc_rejected_invalid_installments -- invalid number of installments.
-                      - cc_rejected_max_attempts -- exceeded maximum number of attempts.
-                      - cc_rejected_other_reason -- generic error.
                   currency_id:
                     $ref: '#/components/schemas/currency_id'
                   description:
@@ -1885,8 +1834,6 @@ paths:
                       spa: Modo de procesamiento. Existen dos tipos.
                       por: Modo de processamento. Existem dois tipos.
                     enum:
-                      - Aggregator -- The merchant will use the Mercado Pago merchant codes and will take advantage of the financial advantages that we offer.
-                      - Gateway -- For the merchant it is necessary to have their own merchant codes for online sales and to have an agreement with each of the desired means of payment.
                   merchant_account_id:
                     type: string
                     format: nullable
@@ -1925,60 +1872,47 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 1--Params-Error-
-                      - 3--Token-must-be-for-test-
-                      - 5--Must-provide-your-access-token-to-proceed-
-                      - 1000--Number-of-rows-exceeded-the-limits-
-                      - 1001--Date-format-must-be-yyyy-MM-dd-T-HH-mm-ss-SSSZ-
-                      - >-
+                      - 1--Params Error.
+                      - 3--Token must be for test.
+                      - 5--Must provide your access_token to proceed.
+                      - 1000--Number of rows exceeded the limits.
+                      - 1001--Date format must be yyyy-MM-dd'T'HH:mm:ss.SSSZ.
                         2001--Already-posted-the-same-request-in-the-last-minute-
-                      - 2002--Customer-not-found-
-                      - 2004--POST-to-Gateway-Transactions-API-fail-
-                      - 2006--Card-Token-not-found-
-                      - 2007--Connection-to-Card-Token-API-fail-
-                      - 2009--Card-token-issuer-can-t-be-null-
-                      - >-
+                      - 2002--Customer not found.
+                      - 2004--POST to Gateway Transactions API fail.
+                      - 2006--Card Token not found.
+                      - 2007--Connection to Card Token API fail.
+                      - 2009--Card token issuer can't be null.
                         3000--You-must-provide-your-cardholder-name-with-your-card-data-
-                      - >-
                         3001--You-must-provide-your-cardissuer-id-with-your-card-data-
-                      - 3003--Invalid-card-token-id-
-                      - 3004--Invalid-parameter-site-id-
-                      - >-
+                      - 3003--Invalid card_token_id.
+                      - 3004--Invalid parameter site_id.
                         3005--Not-valid-action--the-resource-is-in-a-state-that-does-not-allow-this-operation--For-more-information-see-the-state-that-has-the-resource-
-                      - 3006--Invalid-parameter-cardtoken-id-
-                      - 3007--The-parameter-client-id-can-not-be-null-or-empty-
-                      - 3008--Not-found-Cardtoken-
-                      - 3009--unauthorized-client-id-
-                      - 3010--Not-found-card-on-whitelist-
-                      - 3011--Not-found-payment-method-
-                      - 3012--Invalid-parameter-security-code-length-
-                      - >-
+                      - 3006--Invalid parameter cardtoken_id.
+                      - 3007--The parameter client_id can not be null or empty.
+                      - 3008--Not found Cardtoken.
+                      - 3009--unauthorized client_id.
+                      - 3010--Not found card on whitelist.
+                      - 3011--Not found payment_method.
+                      - 3012--Invalid parameter security_code_length.
                         3013--The-parameter-security-code-is-a-required-field-can-not-be-null-or-empty-
-                      - 3014--Invalid-parameter-payment-method-
-                      - 3015--Invalid-parameter-card-number-length-
-                      - 3016--Invalid-parameter-card-number-
-                      - >-
+                      - 3014--Invalid parameter payment_method.
+                      - 3015--Invalid parameter card_number_length.
+                      - 3016--Invalid parameter card_number.
                         3017--The-parameter-card-number-id-can-not-be-null-or-empty-
-                      - >-
                         3018--The-parameter-expiration-month-can-not-be-null-or-empty-
-                      - >-
                         3019--The-parameter-expiration-year-can-not-be-null-or-empty-
-                      - >-
                         3020--The-parameter-cardholder-name-can-not-be-null-or-empty-
-                      - >-
                         3021--The-parameter-cardholder-document-number-can-not-be-null-or-empty-
-                      - >-
                         3022--The-parameter-cardholder-document-type-can-not-be-null-or-empty-
-                      - >-
                         3023--The-parameter-cardholder-document-subtype-can-not-be-null-or-empty-
-                      - >-
                         3024--Not-valid-action---partial-refund-unsupported-for-this-transaction-
-                      - 3025--Invalid-Auth-Code-
-                      - 3026--Invalid-card-id-for-this-payment-method-id-
-                      - 3027--Invalid-payment-type-id-
-                      - 3028--Invalid-payment-method-id-
-                      - 3029--Invalid-card-expiration-month-
-                      - 3030--Invalid-card-expiration-year-
+                      - 3025--Invalid Auth Code.
+                      - 3026--Invalid card_id for this payment_method_id.
+                      - 3027--Invalid payment_type_id.
+                      - 3028--Invalid payment_method_id.
+                      - 3029--Invalid card expiration month.
+                      - 3030--Invalid card expiration year.
         '403':
           description: Error
           x-description-i18n:
@@ -1993,8 +1927,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 4--The-caller-is-not-authorized-to-access-this-resource-
-                      - >-
+                      - 4--The caller is not authorized to access this resource.
                         3002--The-caller-is-not-authorized-to-perform-this-action-
         '404':
           description: Error
@@ -2010,7 +1943,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 2000--Payment-not-found-
+                      - 2000--Payment not found.
     put:
       tags:
         - $ref: '#/tags/checkout-pro'
@@ -2173,21 +2106,6 @@ paths:
                       spa: Detalle en el que resultó el Cobro
                       por: Detalhe em que resultou a Coleção
                     enum:
-                      - Accredited -- credited payment.
-                      - pending_contingency -- the payment is being processed.
-                      - pending_review_manual -- the payment is under review to determine its approval or rejection.
-                      - cc_rejected_bad_filled_date -- incorrect expiration date.
-                      - cc_rejected_bad_filled_other -- incorrect card details.
-                      - cc_rejected_bad_filled_security_code -- incorrect CVV.
-                      - cc_rejected_blacklist -- the card is on a black list for theft/complaints/fraud.
-                      - cc_rejected_call_for_authorize -- the means of payment requires prior authorization of the amount of the operation.
-                      - cc_rejected_card_disabled -- the card is inactive.
-                      - cc_rejected_duplicated_payment -- transacción duplicada.
-                      - cc_rejected_high_risk -- rechazo por Prevención de Fraude.
-                      - cc_rejected_insufficient_amount -- insufficient amount.
-                      - cc_rejected_invalid_installments -- invalid number of installments.
-                      - cc_rejected_max_attempts -- exceeded maximum number of attempts.
-                      - cc_rejected_other_reason -- generic error.
                   currency_id:
                     $ref: '#/components/schemas/currency_id'
                   description:
@@ -2786,8 +2704,6 @@ paths:
                       spa: Modo de procesamiento. Existen dos tipos.
                       por: Modo de processamento. Existem dois tipos.
                     enum:
-                      - Aggregator -- The merchant will use the Mercado Pago merchant codes and will take advantage of the financial advantages that we offer.
-                      - Gateway -- For the merchant it is necessary to have their own merchant codes for online sales and to have an agreement with each of the desired means of payment.
                   merchant_account_id:
                     type: string
                     format: nullable
@@ -2897,11 +2813,11 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 8--The-name-of-the-parameters-is-wrong-
-                      - 1004--Invalid-parameters-for-payment_method-API-
-                      - 2018--The-action-requested-is-not-valid-for-the-current-payment-state-
-                      - 2078--Capture-attribute-must-be-boolean-
-                      - 2079--Invalid-value-for-capture-attribute-
+                      - 8--The name of the parameters is wrong
+                      - 1004--Invalid parameters for payment_method API
+                      - 2018--The action requested is not valid for the current payment state.
+                      - 2078--Capture attribute must be boolean.
+                      - 2079--Invalid value for capture attribute.
         '403':
           description: Error
           x-description-i18n:
@@ -2916,8 +2832,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 4--The-caller-is-not-authorized-to-access-this-resource-
-                      - >-
+                      - 4--The caller is not authorized to access this resource.
                         3002--The-caller-is-not-authorized-to-perform-this-action-
         '404':
           description: Error
@@ -2933,7 +2848,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 2000--Payment-not-found-
+                      - 2000--Payment not found.
   /v1/payments/search:
     get:
       tags:
@@ -3108,21 +3023,6 @@ paths:
                               spa: Detalle en el que resultó el Cobro
                               por: Detalhe em que resultou a Coleção
                             enum:
-                              - Accredited -- credited payment.
-                              - pending_contingency -- the payment is being processed.
-                              - pending_review_manual -- the payment is under review to determine its approval or rejection.
-                              - cc_rejected_bad_filled_date -- incorrect expiration date.
-                              - cc_rejected_bad_filled_other -- incorrect card details.
-                              - cc_rejected_bad_filled_security_code -- incorrect CVV.
-                              - cc_rejected_blacklist -- the card is on a black list for theft/complaints/fraud.
-                              - cc_rejected_call_for_authorize -- the means of payment requires prior authorization of the amount of the operation.
-                              - cc_rejected_card_disabled -- the card is inactive.
-                              - cc_rejected_duplicated_payment -- transacción duplicada.
-                              - cc_rejected_high_risk -- rechazo por Prevención de Fraude.
-                              - cc_rejected_insufficient_amount -- insufficient amount.
-                              - cc_rejected_invalid_installments -- invalid number of installments.
-                              - cc_rejected_max_attempts -- exceeded maximum number of attempts.
-                              - cc_rejected_other_reason -- generic error.
                           currency_id:
                             $ref: '#/components/schemas/currency_id'
                           description:
@@ -3437,8 +3337,6 @@ paths:
                               spa: Modo de procesamiento. Existen dos tipos.
                               por: Modo de processamento. Existem dois tipos.
                             enum:
-                              - Aggregator -- The merchant will use the Mercado Pago merchant codes and will take advantage of the financial advantages that we offer.
-                              - Gateway -- For the merchant it is necessary to have their own merchant codes for online sales and to have an agreement with each of the desired means of payment.
                           merchant_account_id:
                             type: string
                             format: nullable
@@ -3482,62 +3380,49 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 1--Params-Error-
-                      - 3--Token-must-be-for-test-
-                      - 5--Must-provide-your-access-token-to-proceed-
-                      - 1000--Number-of-rows-exceeded-the-limits-
-                      - 1001--Date-format-must-be-yyyy-MM-dd-T-HH-mm-ss-SSSZ-
-                      - 1003--Invalid-sort-value-
-                      - 1004--Invalid-criteria-value-
-                      - >-
+                      - 1--Params Error.
+                      - 3--Token must be for test.
+                      - 5--Must provide your access_token to proceed.
+                      - 1000--Number of rows exceeded the limits.
+                      - 1001--Date format must be yyyy-MM-dd'T'HH:mm:ss.SSSZ.
+                      - 1003--Invalid sort value.
+                      - 1004--Invalid criteria value.
                         2001--Already-posted-the-same-request-in-the-last-minute-
-                      - 2002--Customer-not-found-
-                      - 2004--POST-to-Gateway-Transactions-API-fail-
-                      - 2006--Card-Token-not-found-
-                      - 2007--Connection-to-Card-Token-API-fail-
-                      - 2009--Card-token-issuer-can-t-be-null-
-                      - >-
+                      - 2002--Customer not found.
+                      - 2004--POST to Gateway Transactions API fail.
+                      - 2006--Card Token not found.
+                      - 2007--Connection to Card Token API fail.
+                      - 2009--Card token issuer can't be null.
                         3000--You-must-provide-your-cardholder-name-with-your-card-data-
-                      - >-
                         3001--You-must-provide-your-cardissuer-id-with-your-card-data-
-                      - 3003--Invalid-card-token-id-
-                      - 3004--Invalid-parameter-site-id-
-                      - >-
+                      - 3003--Invalid card_token_id.
+                      - 3004--Invalid parameter site_id.
                         3005--Not-valid-action--the-resource-is-in-a-state-that-does-not-allow-this-operation--For-more-information-see-the-state-that-has-the-resource-
-                      - 3006--Invalid-parameter-cardtoken-id-
-                      - 3007--The-parameter-client-id-can-not-be-null-or-empty-
-                      - 3008--Not-found-Cardtoken-
-                      - 3009--unauthorized-client-id-
-                      - 3010--Not-found-card-on-whitelist-
-                      - 3011--Not-found-payment-method-
-                      - 3012--Invalid-parameter-security-code-length-
-                      - >-
+                      - 3006--Invalid parameter cardtoken_id.
+                      - 3007--The parameter client_id can not be null or empty.
+                      - 3008--Not found Cardtoken.
+                      - 3009--unauthorized client_id.
+                      - 3010--Not found card on whitelist.
+                      - 3011--Not found payment_method.
+                      - 3012--Invalid parameter security_code_length.
                         3013--The-parameter-security-code-is-a-required-field-can-not-be-null-or-empty-
-                      - 3014--Invalid-parameter-payment-method-
-                      - 3015--Invalid-parameter-card-number-length-
-                      - 3016--Invalid-parameter-card-number-
-                      - >-
+                      - 3014--Invalid parameter payment_method.
+                      - 3015--Invalid parameter card_number_length.
+                      - 3016--Invalid parameter card_number.
                         3017--The-parameter-card-number-id-can-not-be-null-or-empty-
-                      - >-
                         3018--The-parameter-expiration-month-can-not-be-null-or-empty-
-                      - >-
                         3019--The-parameter-expiration-year-can-not-be-null-or-empty-
-                      - >-
                         3020--The-parameter-cardholder-name-can-not-be-null-or-empty-
-                      - >-
                         3021--The-parameter-cardholder-document-number-can-not-be-null-or-empty-
-                      - >-
                         3022--The-parameter-cardholder-document-type-can-not-be-null-or-empty-
-                      - >-
                         3023--The-parameter-cardholder-document-subtype-can-not-be-null-or-empty-
-                      - >-
                         3024--Not-valid-action---partial-refund-unsupported-for-this-transaction-
-                      - 3025--Invalid-Auth-Code-
-                      - 3026--Invalid-card-id-for-this-payment-method-id-
-                      - 3027--Invalid-payment-type-id-
-                      - 3028--Invalid-payment-method-id-
-                      - 3029--Invalid-card-expiration-month-
-                      - 3030--Invalid-card-expiration-year-
+                      - 3025--Invalid Auth Code.
+                      - 3026--Invalid card_id for this payment_method_id.
+                      - 3027--Invalid payment_type_id.
+                      - 3028--Invalid payment_method_id.
+                      - 3029--Invalid card expiration month.
+                      - 3030--Invalid card expiration year.
         '403':
           description: Error
           x-description-i18n:
@@ -3552,8 +3437,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 4--The-caller-is-not-authorized-to-access-this-resource-
-                      - >-
+                      - 4--The caller is not authorized to access this resource.
                         3002--The-caller-is-not-authorized-to-perform-this-action-
         '404':
           description: Error
@@ -3569,7 +3453,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 2000--Payment-not-found-
+                      - 2000--Payment not found.
 
 components:
   schemas:
@@ -3581,13 +3465,6 @@ components:
         spa: Tipo de pago
         por: Tipo de pagamento
       enum:
-        - regular_payment -- Typification by default of a purchase being paid using Mercado Pago.
-        - money_transfer -- Funds transfer between two users.
-        - recurring_payment -- Automatic recurring payment due to an active user subscription.
-        - account_fund -- Money income in the user's account.
-        - payment_addition -- Addition of money to an existing payment, made through a Mercado Pago account.
-        - cellphone_recharge -- Recharge of a user's cellphone account.
-        - pos_payment -- Payment done through a Point of Sale.
     entity_type:
       type: string
       description: Entity type of the payer (only for bank transfers).
@@ -3597,8 +3474,6 @@ components:
         por: Tipo de entidade do pagador (apenas para transferências bancárias)
       example: individual
       enum:
-        - individual -- Payer is individual.
-        - association -- Payer is an association.
     payer_type:
       type: string
       description: Identification type of the associated payer (mandatory if the Payer is a Customer).
@@ -3608,9 +3483,6 @@ components:
         por: Tipo de identificação do pagador associado (se necessário o pagador é um cliente)
       example: customer
       enum:
-        - customer -- Payer is a Customer and belongs to the collector.
-        - registered -- The account corresponds to a Mercado Pago registered user.
-        - guest -- The payer doesn't have an account.
     order_type:
       type: String
       description: Type of order.
@@ -3620,8 +3492,6 @@ components:
         por: Tipo de ordem
       example: mercadolibre
       enum:
-        - mercadolibre -- The order is from Mercado Libre.
-        - mercadopago -- It is a Mercado Pago merchant_order.
     currency_id:
       type: string
       description: ID of the currency used in the payment.
@@ -3631,13 +3501,6 @@ components:
         por: Identificador da moeda utilizada no pagamento
       example: BRL
       enum:
-        - ARS -- Argentine peso.
-        - BRL -- Brazilian real.
-        - CLP -- Chilean peso.
-        - MXN -- Mexican peso.
-        - COP -- Colombian peso.
-        - PEN -- Peruvian sol.
-        - UYU -- Uruguayan peso.
     fee_details_type:
       type: string
       description: Fee detail.
@@ -3647,12 +3510,6 @@ components:
         por: Detalhe de comissão
       example: coupon_fee
       enum:
-        - mercadopago_fee -- Cost for using Mercado Pago.
-        - coupon_fee -- Discount given by a coupon.
-        - financing_fee -- Cost of financing.
-        - shipping_fee -- Shipping cost.
-        - application_fee -- Marketplace comision for the service.
-        - discount_fee -- Discount given by the seller through cost absorption.
     fee_payer:
       type: string
       description: Who absorbs the cost.
@@ -3662,8 +3519,6 @@ components:
         por: Quem absorve o custo da comissão
       example: payer
       enum:
-        - collector -- The seller absorbs the cost.
-        - payer -- The buyer absorbs the cost.
     status:
       type: string
       example: approved
@@ -3673,15 +3528,6 @@ components:
         spa: Estado del pago
         por: Estado do pagamento
       enum:
-        - pending -- The user has not yet completed the payment process.
-        - approved -- The payment has been approved and accredited.
-        - authorized -- The payment has been authorized but not captured yet.
-        - in_process -- Payment is being reviewed.
-        - in_mediation -- Users have initiated a dispute.
-        - rejected -- Payment was rejected. The user may retry payment.
-        - cancelled -- Payment was cancelled by one of the parties or because time for payment has expired
-        - refunded -- Payment was refunded to the user.
-        - charged_back -- Was made a chargeback in the buyer’s credit card.
     payment_type_id:
       type: string
       description: Type of payment method chosen.
@@ -3691,13 +3537,6 @@ components:
         por: Tipo do meio de pagamento escolhido
       example: credit_card
       enum:
-        - account_money -- Money in the Mercado Pago account.
-        - ticket -- Printed ticket.
-        - bank_transfer -- Wire transfer.
-        - atm -- Payment by ATM.
-        - credit_card -- Payment by credit card.
-        - debit_card -- Payment by debit card.
-        - prepaid_card -- Payment by prepaid card.
     refund_source_type:
       type: string
       description: Type of user who issued the refund.
@@ -3707,10 +3546,6 @@ components:
         por: Tipo de usuário que fez o reembolso
       example: collector
       enum:
-        - collector -- The collector issued the refund.
-        - operator -- The refund was made by an account's operator.
-        - admin -- The refund was made by a Mercado Pago administrator.
-        - bpp -- The refund was made by the Mercado Pago's Buyer Protection Program
     barcode_type:
       type: String
       description: Encoding type.
@@ -3719,6 +3554,3 @@ components:
         spa: Tipo de encoding
         por: Tipo de encoding
       enum:
-        - UCC/EAN 128 -- Encodes data using the Code 128 symbology.
-        - Code128C -- High-density alphanumeric code.
-        - Code39 -- Media density code.

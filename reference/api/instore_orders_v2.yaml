@@ -57,9 +57,9 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - invalid_collectorId--user-id-must-be-a-number-
-                      - invalid_externalPosId--externalPosId-must-be-present-
-                      - invalid_access_token--Access-denied-
+                      - invalid_collectorId--user_id must be a number.
+                      - invalid_externalPosId--externalPosId must be present.
+                      - invalid_access_token--Access denied.
         '500':
           description: Error
           x-description-i18n:
@@ -74,7 +74,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - in_store_order_creation_error--Failed-to-delete-order-
+                      - in_store_order_creation_error--Failed to delete order.
     get:
       tags:
         - $ref: '#/tags/qr-code'
@@ -201,8 +201,8 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - invalid_collectorId--user-id-must-be-a-number-
-                      - invalid_externalPosId--externalPosId-must-be-present-
+                      - invalid_collectorId--user_id must be a number.
+                      - invalid_externalPosId--externalPosId must be present.
         '404':
           description: Error
           x-description-i18n:
@@ -217,7 +217,6 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - >-
                         point_of_sale_in_store_order_not_found--No-associated-order-found-
         '500':
           description: Error
@@ -233,7 +232,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - in_store_order_creation_error--Failed-to-create-order-
+                      - in_store_order_creation_error--Failed to create order.
   /instore/qr/seller/collectors/{user_id}/stores/{external_store_id}/pos/{external_pos_id}/orders:
     put:
       tags:
@@ -440,38 +439,29 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - invalid_collectorId--user-id-must-be-a-number-
-                      - invalid_externalPosId--externalPosId-must-be-present-
-                      - >-
+                      - invalid_collectorId--user_id must be a number.
+                      - invalid_externalPosId--externalPosId must be present.
                         invalid_external_reference--external-reference-must-be-present-
-                      - invalid_total_amount--total-amount-must-be-present-
-                      - >-
+                      - invalid_total_amount--total_amount must be present.
                         invalid_items.sku_number--items-sku-number-must-be-string-
-                      - invalid_items.category--items-category-must-be-string-
-                      - invalid_items.title--items-title-must-be-string-
-                      - >-
+                      - invalid_items.category--items.category must be string.
+                      - invalid_items.title--items.title must be string.
                         invalid_items.description--items-description-must-be-string-
-                      - >-
                         invalid_items.unit_measure--items-unit-measure-must-be-string-
-                      - invalid_items.quantity--items-quantity-must-be-number-
-                      - >-
+                      - invalid_items.quantity--items.quantity must be number.
                         invalid_items.currency_id--items-currency-id-must-be-string-
-                      - >-
                         invalid_items.unit_price--items-unit-price-must-be-number-
-                      - >-
                         invalid_items.total_amount--items-total-amount-must-be-number-
-                      - invalid_title--title-must-be-string-
-                      - invalid_unit_measure--unit-measure-must-be-present-
-                      - invalid_quantity--quantity-must-be-present-
-                      - invalid_unit_price--unit-price-must-be-present-
-                      - invalid_description--description-must-be-present-
-                      - invalid_sponsor.id--sponsor-id-must-be-number-
-                      - invalid_id--sponsor-id-must-be-present-
-                      - invalid_cash_out.amount--cash-out-amount-must-be-number-
-                      - invalid_amount--cash-out-amount-must-be-present-
-                      - >-
+                      - invalid_title--title must be string.
+                      - invalid_unit_measure--unit_measure must be present.
+                      - invalid_quantity--quantity must be present.
+                      - invalid_unit_price--unit_price must be present.
+                      - invalid_description--description must be present.
+                      - invalid_sponsor.id--sponsor.id must be number.
+                      - invalid_id--sponsor.id must be present.
+                      - invalid_cash_out.amount--cash_out.amount must be number.
+                      - invalid_amount--cash_out.amount must be present.
                         error_creating_seller_qr_order--The-cash-out-is-required-when-order-has-no-items-
-                      - >-
                         invalid_expiration_date--Expiration-date-must-be-a-valid-and-future-date-
         '500':
           description: Error
@@ -487,7 +477,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - in_store_order_creation_error--Failed-to-create-order-
+                      - in_store_order_creation_error--Failed to create order.
 
 components:
   schemas:
@@ -500,5 +490,3 @@ components:
         por: Unidade de medida do item
       example: unit
       enum: 
-        - unit -- Unit
-        - pack -- Pack

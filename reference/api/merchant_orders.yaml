@@ -94,13 +94,6 @@ paths:
                   example: MLA
                   description: Site ID.
                   enum:
-                    - MLA -- Mercado Libre Argentina
-                    - MLB -- Mercado Libre Brasil
-                    - MLM -- Mercado Libre México
-                    - MLC -- Mercado Libre Chile
-                    - MLU -- Mercado Libre Uruguay
-                    - MCO -- Mercado Libre Colombia
-                    - MPE -- Mercado Libre Perú
                 items:
                   type: array
                   description: items information.
@@ -303,13 +296,6 @@ paths:
                     example: MLA
                     description: Site ID.
                     enum:
-                      - MLA -- Mercado Libre Argentina
-                      - MLB -- Mercado Libre Brasil
-                      - MLM -- Mercado Libre México
-                      - MLC -- Mercado Libre Chile
-                      - MLU -- Mercado Libre Uruguay
-                      - MCO -- Mercado Libre Colombia
-                      - MPE -- Mercado Libre Perú
                   paid_amount:
                     type: number
                     example: 5
@@ -456,23 +442,21 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - invalid_user_id--invalid-users-involved-
-                      - >-
+                      - invalid_user_id--invalid users involved.
                         invalid_order_state--the-action-requested-is-not-valid-for-the-current-merchant-order-state-
-                      - invalid_string--string-too-long-
-                      - invalid_application_id--internal-server-error-
-                      - invalid_items--invalid-unit-price-
-                      - user_not_allowed--user-not-allowed-to-operate-
-                      - invalid_operation_type--invalid-operation-type-
-                      - invalid_payer--invalid-payer-identifier-
-                      - invalid_id--invalid-preference-id-
-                      - invalid_expired--the-preference-id-has-expired-
-                      - invalid_sponsor_id--invalid-sponsor-id-
-                      - invalid_marketplace--invalid-marketplace-
-                      - >-
+                      - invalid_string--string too long.
+                      - invalid_application_id--internal server error.
+                      - invalid_items--invalid unit_price.
+                      - user_not_allowed--user not allowed to operate.
+                      - invalid_operation_type--invalid operation type.
+                      - invalid_payer--invalid payer identifier.
+                      - invalid_id--invalid preference_id.
+                      - invalid_expired--the preference_id has expired.
+                      - invalid_sponsor_id--invalid sponsor_id.
+                      - invalid_marketplace--invalid marketplace.
                         unmarshal_error--could-not-unmarshal-request-body-into-merchant-order-struct-
-                      - invalid_url--invalid-URL--Isn-t-HTTP-or-HTTPS-
-                      - communication_error--Error-when-calling---
+                      - invalid_url--invalid URL. Isn't HTTP or HTTPS.
+                      - communication_error--Error when calling...
         '401':
           description: Error
           x-description-i18n:
@@ -487,8 +471,8 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - invalid_token--access-denied-
-                      - invalid_caller_id--invalid-caller-id
+                      - invalid_token--access denied.
+                      - invalid_caller_id--invalid caller_id
   /merchant_orders/search:
     get:
       tags:
@@ -735,21 +719,6 @@ paths:
                                   spa: Detalle en el que resultó el Cobro
                                   por: Detalhe em que resultou a Coleção
                                 enum:
-                                  - Accredited -- credited payment.
-                                  - pending_contingency -- the payment is being processed.
-                                  - pending_review_manual -- the payment is under review to determine its approval or rejection.
-                                  - cc_rejected_bad_filled_date -- incorrect expiration date.
-                                  - cc_rejected_bad_filled_other -- incorrect card details.
-                                  - cc_rejected_bad_filled_security_code -- incorrect CVV.
-                                  - cc_rejected_blacklist -- the card is on a black list for theft/complaints/fraud.
-                                  - cc_rejected_call_for_authorize -- the means of payment requires prior authorization of the amount of the operation.
-                                  - cc_rejected_card_disabled -- the card is inactive.
-                                  - cc_rejected_duplicated_payment -- transacción duplicada.
-                                  - cc_rejected_high_risk -- rechazo por Prevención de Fraude.
-                                  - cc_rejected_insufficient_amount -- insufficient amount.
-                                  - cc_rejected_invalid_installments -- invalid number of installments.
-                                  - cc_rejected_max_attempts -- exceeded maximum number of attempts.
-                                  - cc_rejected_other_reason -- generic error. 
                               operation_type:
                                 $ref: '#/components/schemas/operation_type'
                               date_approved:
@@ -1312,13 +1281,6 @@ paths:
                           example: MLA
                           description: Site ID.
                           enum:
-                            - MLA -- Mercado Libre Argentina
-                            - MLB -- Mercado Libre Brasil
-                            - MLM -- Mercado Libre México
-                            - MLC -- Mercado Libre Chile
-                            - MLU -- Mercado Libre Uruguay
-                            - MCO -- Mercado Libre Colombia
-                            - MPE -- Mercado Libre Perú
                         paid_amount:
                           type: number
                           example: 5
@@ -1470,7 +1432,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - ds_search_query--invalid-query-
+                      - ds_search_query--invalid query.
         '401':
           description: Error
           x-description-i18n:
@@ -1485,8 +1447,8 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - invalid_token--invalid-token-
-                      - invalid_caller_id--invalid-caller-id
+                      - invalid_token--invalid_token.
+                      - invalid_caller_id--invalid caller_id
   /merchant_orders/{id}:
     get:
       tags:
@@ -1603,21 +1565,6 @@ paths:
                             spa: Detalle en el que resultó el Cobro
                             por: Detalhe em que resultou a Coleção
                           enum:
-                            - Accredited -- credited payment.
-                            - pending_contingency -- the payment is being processed.
-                            - pending_review_manual -- the payment is under review to determine its approval or rejection.
-                            - cc_rejected_bad_filled_date -- incorrect expiration date.
-                            - cc_rejected_bad_filled_other -- incorrect card details.
-                            - cc_rejected_bad_filled_security_code -- incorrect CVV.
-                            - cc_rejected_blacklist -- the card is on a black list for theft/complaints/fraud.
-                            - cc_rejected_call_for_authorize -- the means of payment requires prior authorization of the amount of the operation.
-                            - cc_rejected_card_disabled -- the card is inactive.
-                            - cc_rejected_duplicated_payment -- transacción duplicada.
-                            - cc_rejected_high_risk -- rechazo por Prevención de Fraude.
-                            - cc_rejected_insufficient_amount -- insufficient amount.
-                            - cc_rejected_invalid_installments -- invalid number of installments.
-                            - cc_rejected_max_attempts -- exceeded maximum number of attempts.
-                            - cc_rejected_other_reason -- generic error.  
                         operation_type:
                           $ref: '#/components/schemas/operation_type'
                         date_approved:
@@ -2195,13 +2142,6 @@ paths:
                     example: mla
                     description: Site ID.
                     enum:
-                      - MLA -- Mercado Libre Argentina
-                      - MLB -- Mercado Libre Brasil
-                      - MLM -- Mercado Libre México
-                      - MLC -- Mercado Libre Chile
-                      - MLU -- Mercado Libre Uruguay
-                      - MCO -- Mercado Libre Colombia
-                      - MPE -- Mercado Libre Perú
                   paid_amount:
                     type: number
                     example: 5
@@ -2345,7 +2285,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - invalid_format--invalid-caller-id-
+                      - invalid_format--invalid caller.id.
         '401':
           description: Error
           x-description-i18n:
@@ -2360,8 +2300,8 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - invalid_token--access-denied-
-                      - invalid_caller_id--invalid-caller-id
+                      - invalid_token--access denied.
+                      - invalid_caller_id--invalid caller_id
     put:
       tags:
         - $ref: '#/tags/checkout-pro'
@@ -2462,13 +2402,6 @@ paths:
                   example: MLA
                   description: Site ID.
                   enum:
-                    - MLA -- Mercado Libre Argentina
-                    - MLB -- Mercado Libre Brasil
-                    - MLM -- Mercado Libre México
-                    - MLC -- Mercado Libre Chile
-                    - MLU -- Mercado Libre Uruguay
-                    - MCO -- Mercado Libre Colombia
-                    - MPE -- Mercado Libre Perú
                 items:
                   type: array
                   description: items information.
@@ -2701,13 +2634,6 @@ paths:
                     example: mla
                     description: Site ID.
                     enum:
-                      - MLA -- Mercado Libre Argentina
-                      - MLB -- Mercado Libre Brasil
-                      - MLM -- Mercado Libre México
-                      - MLC -- Mercado Libre Chile
-                      - MLU -- Mercado Libre Uruguay
-                      - MCO -- Mercado Libre Colombia
-                      - MPE -- Mercado Libre Perú
                   paid_amount:
                     type: number
                     example: 5
@@ -2852,25 +2778,22 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - invalid_user_id--invalid-users-involved-
-                      - >-
+                      - invalid_user_id--invalid users involved.
                         invalid_order_state--the-action-requested-is-not-valid-for-the-current-merchant-order-state-
-                      - invalid_string--string-too-long-
-                      - invalid_application_id--internal-server-error-
-                      - >-
+                      - invalid_string--string too long.
+                      - invalid_application_id--internal server error.
                         invalid_items--only-the-item-quantity-of-an-item-can-be-modified-
-                      - user_not_allowed--user-not-allowed-to-operate-
-                      - invalid_payment_id--invalid-payment-identifier-
-                      - invalid_operation_type--invalid-operation-type-
-                      - invalid_payer--invalid-payer-identifier-
-                      - invalid_shipment_id--invalid-shipment-identifier-
-                      - invalid_sponsor_id--invalid-sponsor-id-
-                      - invalid_marketplace--invalid-marketplace-
-                      - >-
+                      - user_not_allowed--user not allowed to operate.
+                      - invalid_payment_id--invalid payment identifier.
+                      - invalid_operation_type--invalid operation type.
+                      - invalid_payer--invalid payer identifier.
+                      - invalid_shipment_id--invalid shipment identifier.
+                      - invalid_sponsor_id--invalid sponsor_id.
+                      - invalid_marketplace--invalid marketplace.
                         unmarshall_error--could-not-unmarshal-request-body-into-merchant-order-struct-
-                      - invalid_format--invalid-merchant-order-id-
-                      - invalid_url--invalid-URL--Isn-t-HTTP-or-HTTPS-
-                      - communication_error--Error-when-calling---
+                      - invalid_format--invalid merchant order id.
+                      - invalid_url--invalid URL. Isn't HTTP or HTTPS.
+                      - communication_error--Error when calling...
         '401':
           description: Error
           x-description-i18n:
@@ -2885,8 +2808,8 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - invalid_token--access-denied-
-                      - invalid_caller_id--invalid-caller-id
+                      - invalid_token--access denied.
+                      - invalid_caller_id--invalid caller_id
 components:
   schemas:
     status:
@@ -2898,9 +2821,6 @@ components:
         por: Exibe o estado atual da ordem
       example: closed
       enum:
-        - opened -- Order without payments.
-        - closed -- Order with payments covering total amount.
-        - expired -- Canceled order that does not have approved or pending payments (all rejected or returned).
     currency_id:
       type: string
       description: ID of the currency used in the payment.
@@ -2910,13 +2830,6 @@ components:
         por: Identificador da moeda utilizada no pagamento
       example: BRL
       enum:
-        - ARS -- Argentine peso.
-        - BRL -- Brazil real.
-        - CLP -- Chilean peso.
-        - MXN -- Mexican peso.
-        - COP -- Colombian peso.
-        - PEN -- Peruvian sol.
-        - UYU -- Uruguayan peso.
     payment_status:
       type: string
       description: Payment status.
@@ -2926,15 +2839,6 @@ components:
         por: Estado do pagamento
       example: approved
       enum:
-        - pending -- The user has not yet completed the payment process.
-        - approved -- The payment has been approved and accredited.
-        - authorized -- The payment has been authorized but not captured yet.
-        - in_process -- Payment is being reviewed.
-        - in_mediation -- Users have initiated a dispute.
-        - rejected -- Payment was rejected. The user may retry payment.
-        - cancelled -- Payment was cancelled by one of the parties or because time for payment has expired.
-        - refunded -- Payment was refunded to the user.
-        - charged_back -- Was made a chargeback in the buyer's credit card.
     operation_type:
       type: string
       description: Operation data_type.
@@ -2943,13 +2847,6 @@ components:
         spa: data_type de la operación
         por: data_type da operação
       enum:
-        - regular_payment -- Typification by default of a purchase being paid using Mercado Pago.
-        - payment_addition -- Addition of money to an existing payment, made through a Mercado Pago account.
-        - money_transfer -- Funds transfer between two users.
-        - recurring_payment -- Automatic recurring payment due to an active user subscription.
-        - account_fund -- Money income in the user's account.
-        - cellphone_recharge -- Recharge of a user's cellophone account.
-        - pos_payment -- Payment done through a Point of Sale.
     order_status:
       type: string
       description: Current merchant order status given the payments status.
@@ -2959,11 +2856,3 @@ components:
         por: Current merchant order status given the payments status
       example: paid
       enum:
-        - payment_required -- Order without payments or with all payments "rejected" or "cancelled".
-        - reverted -- Order with all payments "refunded" or "chargeback".
-        - paid -- Order with the sum of all payments "approved", "chargeback" or "in_mediation" covers the order total amount.
-        - partially_reverted -- Order with at least one payment "refunded" or "chargeback".
-        - partially_paid -- Order with at least one payment "approved" and not covering order total amount.
-        - payment_in_process -- Order with payments "in_process", "pending" or "authorized".
-        - undefined -- Order created before the existence of the order_status status.
-        - expired -- Canceled order that does not have approved or pending payments (all rejected or returned).

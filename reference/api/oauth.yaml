@@ -55,8 +55,6 @@ paths:
                   required: true
                   example: 'authorization_code'
                   enum:
-                    - authorization_code -- used to get the access token for the first time.
-                    - refresh_token -- it is used to refresh an existing token.
                 code:
                   type: string
                   description: Code provided by the authentication server so that the application can obtain an access token and an associated refresh token. It is valid for 10 minutes counted from its generation. Required when grant_type=authorization_code.
@@ -96,11 +94,6 @@ paths:
                       spa: Código de seguridad que identifica al usuario, sus privilegios y una aplicación utilizada en diferentes solicitudes de origen público para acceder a los recursos protegidos. Su validez está determinada por el parámetro expires_in y es similar a APP_USR-1585551492-030918-25######3458-2880736 estando compuesto por
                       por: Código de segurança que identifica o usuário, seus privilégios e uma aplicação utilizado nas diferentes requests de origem pública para ter acesso a recursos protegidos. Tem sua validade determinada pelo parâmetro expires_in e são semelhantes a APP_USR-1585551492-030918-25######3458-2880736 sendo compostos por
                     enum:
-                      - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
-                      - Client ID -- 1585551492
-                      - Creation date (MMddHH) -- 030918
-                      - Security hash -- 25######3458
-                      - User ID -- 2880736
                   token_type:
                     type: string
                     example: 'bearer'
@@ -174,13 +167,6 @@ paths:
                     type: string
                     example: 'expired_grant'
                     enum:
-                      - invalid_client -- The provided client_id and/or client_secret of your app is invalid.
-                      - invalid_grant -- There are several reasons for this error, it could be because the authorization_code or refresh_token is invalid, expired or revoked, was sent in an incorrect flow, belongs to another client, or the redirect_uri used in the authorization flow does not match what your application has configured.
-                      - invalid_scope -- The requested scope is invalid, unknown, or wrongly formed. The allowed values for the scope parameter are “offline_access”, ”write”, ”read”.
-                      - invalid_request -- The request does not include a required parameter, includes an unsupported parameter or parameter value, has a duplicated value, or is otherwise malformed.
-                      - unsupported_grant_type -- Allowed values for grant_type are “authorization_code” or “refresh_token”.
-                      - forbidden -- The call does not authorize access, possibly another user's token is being used.
-                      - unauthorized_client -- The application does not have a grant with the user or the permissions (scopes) that the application has with this user do not allow creating a token.
                   cause:
                     type: array
                     items:

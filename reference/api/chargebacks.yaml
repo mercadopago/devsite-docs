@@ -96,12 +96,6 @@ paths:
                       spa: Detalle de la decisión tomada por la documentación
                       por: Detalhe da decisão tomada para a documentação
                     enum:
-                      - pending -- No documentation has been received
-                      - review_pending -- Documentation received, waiting for decision to be taken
-                      - valid -- The documentation received is valid
-                      - invalid -- The documentation received is invalid
-                      - not_supplied -- The documentation wasn't supplied on time
-                      - not_applicable -- Documentation wasn't needed for this chargeback
                   documentation:
                     type: array
                     description: List of documentation received from the seller
@@ -345,7 +339,6 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 400--Bad-Request--missing-information-on-header-            
         '401':
           description: Error
           x-description-i18n:
@@ -360,7 +353,6 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 5--Must-provide-your-access-token-to -proceed--Valid-token-required-
         '404':
           description: Error
           x-description-i18n:
@@ -375,7 +367,6 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 2000--Payment-not-found--Payment_Id_does_not_exist-
     post:
       tags:
         - $ref: '#/tags/checkout-api'
@@ -578,7 +569,6 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 2063--The-action-requested-is-not-valid-for-the-current-payment-state--missing-information-on-header-or-the-payment-was-fully-refund-            
         '401':
           description: Error
           x-description-i18n:
@@ -593,9 +583,6 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 401--Invalid-token--Valid-token-required-
-                      - 4040--amount-attribute-must-be-positive--Amount-should-be-more-than-0-
-                      - 4041--amount-attribute-must-be-numeric--Amount-should-be-a-number-
         '404':
           description: Error
           x-description-i18n:
@@ -610,8 +597,6 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 2032--Refund-not-found--X-Idempontency-key-already-used-
-                      - 2000--Payment-not-found--Payment_Id_does_not_exist-
   /v1/payments/{id}/refunds/{refund_id}:
     get:
       tags:
@@ -797,7 +782,6 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 400--Bad-Request--missing-information-on-header-            
         '401':
           description: Error
           x-description-i18n:
@@ -812,7 +796,6 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 5--Must-provide-your-access-token-to-proceed--Valid-token-required-
         '404':
           description: Error
           x-description-i18n:
@@ -827,8 +810,6 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 2000--Payment-not-found--Payment_Id_does_not_exist-
-                      - 2032--Refund-not-found--Refund_Id_does_not_exist-
   /v1/payments/{payment_id}:
     put:
       tags:
@@ -1755,7 +1736,6 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 400--Bad-Request--missing-information-on-header-            
         '401':
           description: Error
           x-description-i18n:
@@ -1770,7 +1750,6 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 5--Must-provide-your-access-token-to -proceed--Valid-token-required-
         '404':
           description: Error
           x-description-i18n:
@@ -1785,4 +1764,3 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 2000--Payment-not-found--Payment_Id_does_not_exist-
