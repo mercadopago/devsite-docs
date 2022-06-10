@@ -345,6 +345,9 @@ paths:
                           spa: E-mail del pagador
                           por: E-mail do pagante
                     description: Buyer Information.
+                    x-description-i18n:
+                      eng: Buyer Information.
+                      por: Informação do comprador.
                   items:
                     type: array
                     items:

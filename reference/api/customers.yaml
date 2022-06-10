@@ -34,6 +34,10 @@ paths:
                   type: String
                   example: Jhon
                   description: Customer's name. 
+                  x-description-i18n:
+                      eng: Customer's name.
+                      spa: Nombre del cliente
+                      por: Nome do cliente
                 last_name:
                   type: String
                   example: Doe
@@ -157,7 +161,11 @@ paths:
                 default_card:
                   type: String
                   example: 'None'
-                  description: Customer's default card.       
+                  description: Customer's default card.  
+                  x-description-i18n:
+                    eng: Customer's default card.
+                    spa: Tarjeta por defecto del cliente
+                    por: Cartão padrão do cliente
       responses:
         '200':
           description: success
@@ -505,7 +513,11 @@ paths:
                 first_name:
                   type: String
                   example: Jhon
-                  description: Customer's name. 
+                  description: Customer's name.
+                  x-description-i18n:
+                      eng: Customer's name.
+                      spa: Nombre del cliente
+                      por: Nome do cliente
                 last_name:
                   type: String
                   example: Doe

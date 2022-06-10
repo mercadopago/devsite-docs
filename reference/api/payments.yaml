@@ -318,6 +318,10 @@ paths:
                   description: >-
                     Determines if the payment should be captured (true, default
                     value) or just reserved (false).
+                  x-description-i18n:
+                    eng: Determines if the payment should be captured (true, default value) or just reserved (false).
+                    spa: Determina si el pago debe ser capturado(true, default value) o solo reservado(false)
+                    por: Determina se o pagamento deve ser capturado(true, default value), ou apenas reservado(false)
                 coupon_amount:
                   type: number
                   description: Amount of the coupon discount.
@@ -2045,6 +2049,10 @@ paths:
                   description: >-
                     Determines if the payment should be captured (true, default
                     value) or just reserved (false).
+                  x-description-i18n:
+                    eng: Determines if the payment should be captured (true, default value) or just reserved (false)
+                    spa: Determina si el pago debe ser capturado(true, default value) o solo reservado(false)
+                    por: Determina se o pagamento deve ser capturado(true, default value), ou apenas reservado(false)
                   example: true
                 date_of_expiration:
                   type: string
@@ -2065,6 +2073,10 @@ paths:
                   type: string
                   description: >-
                     Determines if the payment should be cancelled
+                  x-description-i18n:
+                    eng: Determines if the payment should be captured (true, default value) or just reserved (false)
+                    spa: Determina si el pago debe ser cancelado
+                    por: Determina se o pagamento deve ser cancelado
                   example: "cancelled"
                 transaction_amount:
                   type: number
@@ -2991,14 +3003,26 @@ paths:
                           type: number
                           example: 17493
                           description: total
+                          x-description-i18n:
+                            eng: The total number of items in the collection.
+                            spa: El número total de elementos del cobro.
+                            por: Número total de itens na cobrança.
                         limit:
                           type: number
                           example: 30
                           description: limit
+                          x-description-i18n:
+                            eng: The maximum number of entries to return.
+                            spa: El número máximo de entradas a ser retornadas.
+                            por: O número máximo de entradas a serem retornadas.
                         offset:
                           type: number
                           example: 0
                           description: offset
+                          x-description-i18n:
+                            eng: Numeric field used to paginate the response.
+                            spa: Campo numérico utilizado para paginar la respuesta.
+                            por: Campo numérico usado para paginar a resposta.
                       description: paging
                     results:
                       type: array
@@ -3440,6 +3464,10 @@ paths:
                               spa: Número de comercio (Aplica para modelo gateway).
                               por: Número da loja (aplica-se ao modelo de gateway).
                       description: results
+                      x-description-i18n:
+                        eng: Search results
+                        spa: Resultados de la búsqueda
+                        por: Resultados da pesquisa
         '400':
           description: Error
           x-description-i18n:
