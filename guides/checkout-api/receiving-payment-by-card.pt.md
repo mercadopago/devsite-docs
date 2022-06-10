@@ -31,7 +31,7 @@ Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](h
 >
 > Nota
 >
-> Obtenha mais informações nas [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/cards/_customers_customer_id_cards/post).
+> Obtenha mais informações nas [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference).
 
 <br>
 

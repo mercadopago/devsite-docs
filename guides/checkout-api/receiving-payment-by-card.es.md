@@ -29,7 +29,7 @@ Tanto para el frontend como para el backend, recomendamos utilizar [nuestras lib
 >
 > Nota
 >
-> Puedes obtener más información en las [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/cards/_customers_customer_id_cards/post).
+> Puedes obtener más información en las [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference).
 
 <br>
 
