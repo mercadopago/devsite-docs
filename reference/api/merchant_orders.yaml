@@ -64,7 +64,11 @@ paths:
                     por: Identificador da conta Mercado Pago do Partnet. É usado para identificar se a integração foi realizada por um partner.
                 payer:
                   type: object
-                  description: Buyer Information.
+                  description: Buyer's information.
+                  x-description-i18n:
+                    eng: Buyer's information.
+                    spa: Información del comprador
+                    por: Informação do comprador
                   properties:
                     id:
                       type: number
@@ -94,6 +98,13 @@ paths:
                   example: MLA
                   description: Site ID.
                   enum:
+                    - MLA -- Mercado Libre Argentina
+                    - MLB -- Mercado Libre Brasil
+                    - MLM -- Mercado Libre México
+                    - MLC -- Mercado Libre Chile
+                    - MLU -- Mercado Libre Uruguay
+                    - MCO -- Mercado Libre Colombia
+                    - MPE -- Mercado Libre Perú
                 items:
                   type: array
                   description: items information.
@@ -296,6 +307,13 @@ paths:
                     example: MLA
                     description: Site ID.
                     enum:
+                      - MLA -- Mercado Libre Argentina
+                      - MLB -- Mercado Libre Brasil
+                      - MLM -- Mercado Libre México
+                      - MLC -- Mercado Libre Chile
+                      - MLU -- Mercado Libre Uruguay
+                      - MCO -- Mercado Libre Colombia
+                      - MPE -- Mercado Libre Perú
                   paid_amount:
                     type: number
                     example: 5
@@ -330,11 +348,11 @@ paths:
                           eng: Payer’s email address.
                           spa: E-mail del pagador
                           por: E-mail do pagante
-                    description: Buyer Information.
+                    description: Buyer's information.
                     x-description-i18n:
-                      eng: Buyer Information.
-                      spa: Información del comprador.
-                      por: Informação do comprador.
+                      eng: Buyer's information.
+                      spa: Información del comprador
+                      por: Informação do comprador
                   items:
                     type: array
                     items:
@@ -419,7 +437,7 @@ paths:
                       spa: Información adicional
                       por: Informações adicionais
                   application_id:
-                    type: number
+                    type: string
                     example: 10000000000000000
                     description: application identifier.
                     x-description-i18n:
@@ -443,7 +461,7 @@ paths:
                     type: string
                     enum:
                       - invalid_user_id--invalid users involved.
-                        invalid_order_state--the-action-requested-is-not-valid-for-the-current-merchant-order-state-
+                      - invalid_order_state--the action requested is not valid for the current merchant order state.
                       - invalid_string--string too long.
                       - invalid_application_id--internal server error.
                       - invalid_items--invalid unit_price.
@@ -454,7 +472,7 @@ paths:
                       - invalid_expired--the preference_id has expired.
                       - invalid_sponsor_id--invalid sponsor_id.
                       - invalid_marketplace--invalid marketplace.
-                        unmarshal_error--could-not-unmarshal-request-body-into-merchant-order-struct-
+                      - unmarshal_error--could not unmarshal request body into merchant order struct.
                       - invalid_url--invalid URL. Isn't HTTP or HTTPS.
                       - communication_error--Error when calling...
         '401':
@@ -719,6 +737,21 @@ paths:
                                   spa: Detalle en el que resultó el Cobro
                                   por: Detalhe em que resultou a Coleção
                                 enum:
+                                  - Accredited -- credited payment.
+                                  - pending_contingency -- the payment is being processed.
+                                  - pending_review_manual -- the payment is under review to determine its approval or rejection.
+                                  - cc_rejected_bad_filled_date -- incorrect expiration date.
+                                  - cc_rejected_bad_filled_other -- incorrect card details.
+                                  - cc_rejected_bad_filled_security_code -- incorrect CVV.
+                                  - cc_rejected_blacklist -- the card is on a black list for theft/complaints/fraud.
+                                  - cc_rejected_call_for_authorize -- the means of payment requires prior authorization of the amount of the operation.
+                                  - cc_rejected_card_disabled -- the card is inactive.
+                                  - cc_rejected_duplicated_payment -- transacción duplicada.
+                                  - cc_rejected_high_risk -- rechazo por Prevención de Fraude.
+                                  - cc_rejected_insufficient_amount -- insufficient amount.
+                                  - cc_rejected_invalid_installments -- invalid number of installments.
+                                  - cc_rejected_max_attempts -- exceeded maximum number of attempts.
+                                  - cc_rejected_other_reason -- generic error. 
                               operation_type:
                                 $ref: '#/components/schemas/operation_type'
                               date_approved:
@@ -1281,6 +1314,13 @@ paths:
                           example: MLA
                           description: Site ID.
                           enum:
+                            - MLA -- Mercado Libre Argentina
+                            - MLB -- Mercado Libre Brasil
+                            - MLM -- Mercado Libre México
+                            - MLC -- Mercado Libre Chile
+                            - MLU -- Mercado Libre Uruguay
+                            - MCO -- Mercado Libre Colombia
+                            - MPE -- Mercado Libre Perú
                         paid_amount:
                           type: number
                           example: 5
@@ -1315,7 +1355,11 @@ paths:
                                 eng: Payer’s email address.
                                 spa: E-mail del pagador
                                 por: E-mail do pagante
-                          description: Buyer Information.
+                          description: Buyer's information.
+                          x-description-i18n:
+                            eng: Buyer's information.
+                            spa: Información del comprador
+                            por: Informação do comprador
                         items:
                           type: array
                           items:
@@ -1400,7 +1444,7 @@ paths:
                             spa: Información adicional
                             por: Informações adicionais
                         application_id:
-                          type: number
+                          type: string
                           example: 10000000000000000
                           description: application identifier.
                           x-description-i18n:
@@ -1409,15 +1453,27 @@ paths:
                             por: Id do aplicativo
                         order_status:
                           $ref: '#/components/schemas/order_status'
-                    description: elements
+                    description: Contains the order data.
+                    x-description-i18n:
+                      eng: Contains the order data.
+                      spa: Contiene los datos de la orden.
+                      por: Contém os dados do pedido.
                   next_offset:
                     type: number
                     example: 1
-                    description: next_offset
+                    description: Numeric field used to paginate the response.
+                    x-description-i18n:
+                      eng: Numeric field used to paginate the response.
+                      spa: Campo numérico utilizado para paginar la respuesta.
+                      por: Campo numérico usado para paginar a resposta.
                   total:
                     type: number
                     example: 1
-                    description: total
+                    description: Total search results.
+                    x-description-i18n:
+                      eng: Total search results.
+                      spa: Total de resultados de la búsqueda.
+                      por: Total de resultados da pesquisa.
         '400':
           description: Error
           x-description-i18n:
@@ -1565,6 +1621,21 @@ paths:
                             spa: Detalle en el que resultó el Cobro
                             por: Detalhe em que resultou a Coleção
                           enum:
+                            - Accredited -- credited payment.
+                            - pending_contingency -- the payment is being processed.
+                            - pending_review_manual -- the payment is under review to determine its approval or rejection.
+                            - cc_rejected_bad_filled_date -- incorrect expiration date.
+                            - cc_rejected_bad_filled_other -- incorrect card details.
+                            - cc_rejected_bad_filled_security_code -- incorrect CVV.
+                            - cc_rejected_blacklist -- the card is on a black list for theft/complaints/fraud.
+                            - cc_rejected_call_for_authorize -- the means of payment requires prior authorization of the amount of the operation.
+                            - cc_rejected_card_disabled -- the card is inactive.
+                            - cc_rejected_duplicated_payment -- transacción duplicada.
+                            - cc_rejected_high_risk -- rechazo por Prevención de Fraude.
+                            - cc_rejected_insufficient_amount -- insufficient amount.
+                            - cc_rejected_invalid_installments -- invalid number of installments.
+                            - cc_rejected_max_attempts -- exceeded maximum number of attempts.
+                            - cc_rejected_other_reason -- generic error.  
                         operation_type:
                           $ref: '#/components/schemas/operation_type'
                         date_approved:
@@ -2142,6 +2213,13 @@ paths:
                     example: mla
                     description: Site ID.
                     enum:
+                      - MLA -- Mercado Libre Argentina
+                      - MLB -- Mercado Libre Brasil
+                      - MLM -- Mercado Libre México
+                      - MLC -- Mercado Libre Chile
+                      - MLU -- Mercado Libre Uruguay
+                      - MCO -- Mercado Libre Colombia
+                      - MPE -- Mercado Libre Perú
                   paid_amount:
                     type: number
                     example: 5
@@ -2160,7 +2238,11 @@ paths:
                       por: Valor reembolsado
                   payer:
                     type: object
-                    description: Buyer Information.
+                    description: Buyer's information.
+                    x-description-i18n:
+                      eng: Buyer's information.
+                      spa: Información del comprador
+                      por: Informação do comprador
                     properties:
                       id:
                         type: number
@@ -2262,7 +2344,7 @@ paths:
                       spa: Información adicional
                       por: Informações adicionais
                   application_id:
-                    type: number
+                    type: string
                     example: 10000000000000000
                     description: application identifier.
                     x-description-i18n:
@@ -2372,7 +2454,11 @@ paths:
                     por: Identificador da conta Mercado Pago do Partnet. É usado para identificar se a integração foi realizada por um partner.
                 payer:
                   type: object
-                  description: Buyer Information.
+                  description: Buyer's information.
+                  x-description-i18n:
+                    eng: Buyer's information.
+                    spa: Información del comprador
+                    por: Informação do comprador
                   properties:
                     id:
                       type: number
@@ -2402,6 +2488,13 @@ paths:
                   example: MLA
                   description: Site ID.
                   enum:
+                    - MLA -- Mercado Libre Argentina
+                    - MLB -- Mercado Libre Brasil
+                    - MLM -- Mercado Libre México
+                    - MLC -- Mercado Libre Chile
+                    - MLU -- Mercado Libre Uruguay
+                    - MCO -- Mercado Libre Colombia
+                    - MPE -- Mercado Libre Perú
                 items:
                   type: array
                   description: items information.
@@ -2634,6 +2727,13 @@ paths:
                     example: mla
                     description: Site ID.
                     enum:
+                      - MLA -- Mercado Libre Argentina
+                      - MLB -- Mercado Libre Brasil
+                      - MLM -- Mercado Libre México
+                      - MLC -- Mercado Libre Chile
+                      - MLU -- Mercado Libre Uruguay
+                      - MCO -- Mercado Libre Colombia
+                      - MPE -- Mercado Libre Perú
                   paid_amount:
                     type: number
                     example: 5
@@ -2668,7 +2768,11 @@ paths:
                           eng: Payer’s email address.
                           spa: E-mail del pagador
                           por: E-mail do pagante
-                    description: Buyer Information.
+                    description: Buyer's information.
+                    x-description-i18n:
+                      eng: Buyer's information.
+                      spa: Información del comprador
+                      por: Informação do comprador
                   items:
                     type: array
                     items:
@@ -2754,7 +2858,7 @@ paths:
                       spa: Información adicional
                       por: Informações adicionais
                   application_id:
-                    type: number
+                    type: string
                     example: 10000000000000000
                     description: application identifier.
                     x-description-i18n:
@@ -2779,10 +2883,10 @@ paths:
                     type: string
                     enum:
                       - invalid_user_id--invalid users involved.
-                        invalid_order_state--the-action-requested-is-not-valid-for-the-current-merchant-order-state-
+                      - invalid_order_state--the action requested is not valid for the current merchant order state.
                       - invalid_string--string too long.
                       - invalid_application_id--internal server error.
-                        invalid_items--only-the-item-quantity-of-an-item-can-be-modified-
+                      - invalid_items--only the item quantity of an item can be modified.
                       - user_not_allowed--user not allowed to operate.
                       - invalid_payment_id--invalid payment identifier.
                       - invalid_operation_type--invalid operation type.
@@ -2790,7 +2894,7 @@ paths:
                       - invalid_shipment_id--invalid shipment identifier.
                       - invalid_sponsor_id--invalid sponsor_id.
                       - invalid_marketplace--invalid marketplace.
-                        unmarshall_error--could-not-unmarshal-request-body-into-merchant-order-struct-
+                      - unmarshall_error--could not unmarshal request body into merchant order struct.
                       - invalid_format--invalid merchant order id.
                       - invalid_url--invalid URL. Isn't HTTP or HTTPS.
                       - communication_error--Error when calling...
@@ -2821,6 +2925,9 @@ components:
         por: Exibe o estado atual da ordem
       example: closed
       enum:
+        - opened -- Order without payments.
+        - closed -- Order with payments covering total amount.
+        - expired -- Canceled order that does not have approved or pending payments (all rejected or returned).
     currency_id:
       type: string
       description: ID of the currency used in the payment.
@@ -2830,6 +2937,13 @@ components:
         por: Identificador da moeda utilizada no pagamento
       example: BRL
       enum:
+        - ARS -- Argentine peso.
+        - BRL -- Brazil real.
+        - CLP -- Chilean peso.
+        - MXN -- Mexican peso.
+        - COP -- Colombian peso.
+        - PEN -- Peruvian sol.
+        - UYU -- Uruguayan peso.
     payment_status:
       type: string
       description: Payment status.
@@ -2839,6 +2953,15 @@ components:
         por: Estado do pagamento
       example: approved
       enum:
+        - pending -- The user has not yet completed the payment process.
+        - approved -- The payment has been approved and accredited.
+        - authorized -- The payment has been authorized but not captured yet.
+        - in_process -- Payment is being reviewed.
+        - in_mediation -- Users have initiated a dispute.
+        - rejected -- Payment was rejected. The user may retry payment.
+        - cancelled -- Payment was cancelled by one of the parties or because time for payment has expired.
+        - refunded -- Payment was refunded to the user.
+        - charged_back -- Was made a chargeback in the buyer's credit card.
     operation_type:
       type: string
       description: Operation data_type.
@@ -2847,6 +2970,13 @@ components:
         spa: data_type de la operación
         por: data_type da operação
       enum:
+        - regular_payment -- Typification by default of a purchase being paid using Mercado Pago.
+        - payment_addition -- Addition of money to an existing payment, made through a Mercado Pago account.
+        - money_transfer -- Funds transfer between two users.
+        - recurring_payment -- Automatic recurring payment due to an active user subscription.
+        - account_fund -- Money income in the user's account.
+        - cellphone_recharge -- Recharge of a user's cellophone account.
+        - pos_payment -- Payment done through a Point of Sale.
     order_status:
       type: string
       description: Current merchant order status given the payments status.
@@ -2856,3 +2986,11 @@ components:
         por: Current merchant order status given the payments status
       example: paid
       enum:
+        - payment_required -- Order without payments or with all payments "rejected" or "cancelled".
+        - reverted -- Order with all payments "refunded" or "chargeback".
+        - paid -- Order with the sum of all payments "approved", "chargeback" or "in_mediation", covers the order total amount.
+        - partially_reverted -- Order with at least one payment "refunded" or "chargeback".
+        - partially_paid -- Order with at least one payment "approved" and not covering order total amount.
+        - payment_in_process -- Order with payments "in_process", "pending" or "authorized".
+        - undefined -- Order created before the existence of the order_status status.
+        - expired -- Canceled order that does not have approved or pending payments (all rejected or returned).

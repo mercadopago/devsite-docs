@@ -297,18 +297,18 @@ paths:
                       - 124--the issuer_id is required.
                       - 125--invalid parameters.
                       - 126--invalid parameter. You cannot update the email.
-                        127--invalid-parameter--Cannot-resolve-the-payment-method-of-card--check-the-payment-method-id-and-issuer-id-
-                        128--the-email-format-is-invalid--Use--test-payer--0-9--1-10--testuser-com--
-                        129--the-customer-has-reached-the-maximum-allowed-number-of-cards-
+                      - 127--invalid parameter. Cannot resolve the payment method of card, check the payment_method_id and issuer_id.
+                      - 128--the email format is invalid. Use 'test_payer_[0-9]{1,10}@testuser.com'.
+                      - 129--the customer has reached the maximum allowed number of cards.
                       - 140--invalid card owner.
                       - 150--invalid users involved.
-                        200--invalid-range-format--range--date-parameter-after--date-from-before--date-to--
+                      - 200--invalid range format (range=:date_parameter:after::date_from,before::date_to).
                       - 201--range attribute must belong to date entity.
-                        202--invalid--after--parameter--It-should-be-date-iso-8601--
-                        203--invalid--before--parameter--It-should-be-date-iso-8601--
+                      - 202--invalid 'after' parameter. It should be date[iso_8601].
+                      - 203--invalid 'before' parameter. It should be date[iso_8601].
                       - 204--invalid filters format.
                       - 205--invalid query format.
-                        206--attributes-to-sort-must-belong-to--customer--entity-
+                      - 206--attributes to sort must belong to 'customer' entity.
                       - 207--order filter must be 'asc' or 'desc'.
                       - 208--invalid 'sort' parameter format.
         '401':
@@ -534,18 +534,18 @@ paths:
                       - 124--the issuer_id is required.
                       - 125--invalid parameters.
                       - 126--invalid parameter. You cannot update the email.
-                        127--invalid-parameter--Cannot-resolve-the-payment-method-of-card--check-the-payment-method-id-and-issuer-id-
-                        128--the-email-format-is-invalid--Use--test-payer--0-9--1-10--testuser-com--
-                        129--the-customer-has-reached-the-maximum-allowed-number-of-cards-
+                      - 127--invalid parameter. Cannot resolve the payment method of card, check the payment_method_id and issuer_id.
+                      - 128--the email format is invalid. Use 'test_payer_[0-9]{1,10}@testuser.com'.
+                      - 129--the customer has reached the maximum allowed number of cards.
                       - 140--invalid card owner.
                       - 150--invalid users involved.
-                        200--invalid-range-format--range--date-parameter-after--date-from-before--date-to--
+                      - 200--invalid range format (range=:date_parameter:after::date_from,before::date_to).
                       - 201--range attribute must belong to date entity.
-                        202--invalid--after--parameter--It-should-be-date-iso-8601--
-                        203--invalid--before--parameter--It-should-be-date-iso-8601--
+                      - 202--invalid 'after' parameter. It should be date[iso_8601].
+                      - 203--invalid 'before' parameter. It should be date[iso_8601].
                       - 204--invalid filters format.
                       - 205--invalid query format.
-                        206--attributes-to-sort-must-belong-to--customer--entity-
+                      - 206--attributes to sort must belong to 'customer' entity.
                       - 207--order filter must be 'asc' or 'desc'.
                       - 208--invalid 'sort' parameter format.
         '401':
@@ -880,15 +880,15 @@ paths:
                       - 124--the issuer_id is required.
                       - 125--invalid parameters.
                       - 126--invalid parameter. You cannot update the email.
-                        127--invalid-parameter--Cannot-resolve-the-payment-method-of-card--check-the-payment-method-id-and-issuer-id-
-                        128--the-email-format-is-invalid--Use--test-payer--0-9--1-10--testuser-com--
-                        129--the-customer-has-reached-the-maximum-allowed-number-of-cards-
+                      - 127--invalid parameter. Cannot resolve the payment method of card, check the payment_method_id and issuer_id.
+                      - 128--the email format is invalid. Use 'test_payer_[0-9]{1,10}@testuser.com'.
+                      - 129--the customer has reached the maximum allowed number of cards.
                       - 140--invalid card owner.
                       - 150--invalid users involved.
-                        200--invalid-range-format--range--date-parameter-after--date-from-before--date-to--
+                      - 200--invalid range format (range=:date_parameter:after::date_from,before::date_to).
                       - 201--range attribute must belong to date entity.
-                        202--invalid--after--parameter--It-should-be-date-iso-8601--
-                        203--invalid--before--parameter--It-should-be-date-iso-8601--
+                      - 202--invalid 'after' parameter. It should be date[iso_8601].
+                      - 203--invalid 'before' parameter. It should be date[iso_8601].
                       - 204--invalid filters format.
                       - 205--invalid query format.
                       - 206--attributes to sort must belong to 'customer' entity.
@@ -939,28 +939,42 @@ paths:
         spa: Renueva los datos de una tarjeta asociada a un cliente. Indica los ID y envía los parámetros con la información que quieras actualizar
         por: Atualize os dados de um cartão associado a um cliente. Indique o ID e envie as informações que você deseja atualizar
       parameters:
-        - name: customer_id
-          in: path
-          description: Customer's Id
+        - name: expiration_month
+          in: requestBody
+          description: Card's expiration month.
           x-description-i18n:
-            eng: Customer's Id
-            spa: Customer's Id
-            por: Customer's Id
-          required: true
+            eng: Card's expiration month.
+            spa: Mes de expiración de la tarjeta
+            por: Mês de validade do cartão
+          required: false
+          schema:
+            type: number
+            example: 12
+        - name: expiration_year
+          in: requestBody
+          description: Card's expiration year.
+          x-description-i18n:
+            eng: Card's expiration year.
+            spa: Año de expiración de la tarjeta
+            por: Ano de validade do cartão
+          required: false
+          schema:
+            type: number
+            example: 2025
+        - name: cardholder.name
+          in: requestBody
+          description: Card's name.
+          required: false
           schema:
             type: string
-            example: 12123adfasdf123u4u
-        - name: id
-          in: path
-          description: Card's Id
-          x-description-i18n:
-            eng: Card's Id
-            spa: Card's Id
-            por: Card's Id
-          required: true
+            example: Juan Pérez
+        - name: cardholder.identification
+          in: requestBody
+          description: Card's owner identification
+          required: false
           schema:
             type: string
-            example: 12123adfasdf123u4u
+            example: 27009907
       requestBody:
         content:
           application/json:
@@ -1102,18 +1116,18 @@ paths:
                       - 124--the issuer_id is required.
                       - 125--invalid parameters.
                       - 126--invalid parameter. You cannot update the email.
-                        127--invalid-parameter--Cannot-resolve-the-payment-method-of-card--check-the-payment-method-id-and-issuer-id-
-                        128--the-email-format-is-invalid--Use--test-payer--0-9--1-10--testuser-com--
-                        129--the-customer-has-reached-the-maximum-allowed-number-of-cards-
+                      - 127--invalid parameter. Cannot resolve the payment method of card, check the payment_method_id and issuer_id.
+                      - 128--the email format is invalid. Use 'test_payer_[0-9]{1,10}@testuser.com'.
+                      - 129--the customer has reached the maximum allowed number of cards.
                       - 140--invalid card owner.
                       - 150--invalid users involved.
-                        200--invalid-range-format--range--date-parameter-after--date-from-before--date-to--
+                      - 200--invalid range format (range=:date_parameter:after::date_from,before::date_to).
                       - 201--range attribute must belong to date entity.
-                        202--invalid--after--parameter--It-should-be-date-iso-8601--
-                        203--invalid--before--parameter--It-should-be-date-iso-8601--
+                      - 202--invalid 'after' parameter. It should be date[iso_8601].
+                      - 203--invalid 'before' parameter. It should be date[iso_8601].
                       - 204--invalid filters format.
                       - 205--invalid query format.
-                        206--attributes-to-sort-must-belong-to--customer--entity-
+                      - 206--attributes to sort must belong to 'customer' entity.
                       - 207--order filter must be 'asc' or 'desc'.
                       - 208--invalid 'sort' parameter format.
         '401':
@@ -1314,18 +1328,18 @@ paths:
                       - 124--the issuer_id is required.
                       - 125--invalid parameters.
                       - 126--invalid parameter. You cannot update the email.
-                        127--invalid-parameter--Cannot-resolve-the-payment-method-of-card--check-the-payment-method-id-and-issuer-id-
-                        128--the-email-format-is-invalid--Use--test-payer--0-9--1-10--testuser-com--
-                        129--the-customer-has-reached-the-maximum-allowed-number-of-cards-
+                      - 127--invalid parameter. Cannot resolve the payment method of card, check the payment_method_id and issuer_id.
+                      - 128--the email format is invalid. Use 'test_payer_[0-9]{1,10}@testuser.com'.
+                      - 129--the customer has reached the maximum allowed number of cards.
                       - 140--invalid card owner.
                       - 150--invalid users involved.
-                        200--invalid-range-format--range--date-parameter-after--date-from-before--date-to--
+                      - 200--invalid range format (range=:date_parameter:after::date_from,before::date_to).
                       - 201--range attribute must belong to date entity.
-                        202--invalid--after--parameter--It-should-be-date-iso-8601--
-                        203--invalid--before--parameter--It-should-be-date-iso-8601--
+                      - 202--invalid 'after' parameter. It should be date[iso_8601].
+                      - 203--invalid 'before' parameter. It should be date[iso_8601].
                       - 204--invalid filters format.
                       - 205--invalid query format.
-                        206--attributes-to-sort-must-belong-to--customer--entity-
+                      - 206--attributes to sort must belong to 'customer' entity.
                       - 207--order filter must be 'asc' or 'desc'.
                       - 208--invalid 'sort' parameter format.
         '401':

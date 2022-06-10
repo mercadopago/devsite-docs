@@ -13,12 +13,8 @@ paths:
       x-summary-i18n:
         eng: Create Payments
         spa: Crear un pago
-        por: Criar um pagamento
-      description: Create payments
-      x-description-i18n:
-        eng: Create payments
-        spa: Crear un pago
-        por: Criar um pagamento
+        por: 
+      description: Create Payments.
       deprecated: true
       requestBody:
         content:
@@ -50,9 +46,12 @@ paths:
                         por: E-mail do pagante
                     type:
                       type: string
-                      description: >-
-                        Type of identification of the associated payer (required if the payer is a customer).
+                      description: 
+                        Type of identification of the associated payer (required
+                        if the payer is a customer).
                       enum:
+                        - customer -- The payer is a client and belongs to the collector
+                        - registered -- The account corresponds to a registered user of Mercado Pago
                     identification:
                       type: object
                       description: Personal identification.
@@ -211,10 +210,12 @@ paths:
                           por: Número de parcelas selecionado
                       processing_mode:
                         type: string
-                        description: >-
+                        description: 
                           Method of processing the payments (aggregator by
                           default).
                         enum:
+                          - aggregator -- Processes the payment using the commerce number of Mercado Pago
+                          - gateway -- Processes the payment using the commerce number of the Seller
                       issuer_id:
                         type: string
                         description: Identifier of the issuer of the payment method.
@@ -231,7 +232,7 @@ paths:
                           por: Razão do pagamento
                       capture:
                         type: boolean
-                        description: >-
+                        description: 
                           Determines whether the payment should be captured
                           (true, default value) or only reserved (false).
                       external_reference:
@@ -250,7 +251,7 @@ paths:
                           por: Como o pagamento aparecerá na fatura do cartão
                       date_of_expiration:
                         type: string
-                        description: >-
+                        description: 
                           Expiration date for the case of payment method
                           "ticket".
                       transaction_details:
@@ -315,18 +316,18 @@ paths:
                           por: Tarifa recolhida pelo Marketplace
                       money_release_days:
                         type: number
-                        description: >-
+                        description: 
                           Number of days (from the date of approval of the
                           payment) in which the payment will be released to the
                           Seller.
                 binary_mode:
                   type: boolean
-                  description: >-
+                  description: 
                     When the payment is activated, it can only be approved or
                     rejected. Otherwise, the payment may be pending.
                 metadata:
                   type: object
-                  description: >-
+                  description: 
                     Valid JSON that can be added to the payment to save
                     additional attributes.
                 application_id:
@@ -338,7 +339,7 @@ paths:
                     por: ID do Marketplace
                 additional_info:
                   type: object
-                  description: >-
+                  description: 
                     Information that can improve the fraud prevention analysis
                     and the conversion rate. Try sending us as much information
                     as possible.
@@ -529,7 +530,7 @@ paths:
                       - 400007--Invalid date of release for the Disbursement.
                       - 400013--Invalid email address.
                       - 400014--Invalid number of payments.
-                        400015--Payer-ID-is-required-for-payments-with-money-in-the-account-
+                      - 400015--Payer ID is required for payments with money in the account.
                       - 400016--Invalid payment type.
                       - 400017--The transaction amount is required.
                       - 400018--Invalid amount.
@@ -550,7 +551,7 @@ paths:
                       - 400033--Invalid Marketplace commission.
                       - 400034--Invalid disbursement amount.
                       - 400035--The field money_release_date is invalid.
-                        400036--The-Marketplace-does-not-have-permissions-on-the-payer-
+                      - 400036--The Marketplace does not have permissions on the payer.
                       - 400037--The collector was not found.
                       - 400039--Invalid request.
                       - 400040--Invalid status.
@@ -566,10 +567,10 @@ paths:
                       - 400051--The field money_release_date is required.
                       - 400052--The processing_mode is required.
                       - 400053--Invalid content.
-                        400054--The-Marketplace-does-not-have-permissions-on-the-collector-
+                      - 400054--The Marketplace does not have permissions on the collector.
                       - 400055--The field external_reference is required.
                       - 400056--The field money_release_days is invalid.
-                        400057--The-fields-collector-id-and-external-reference-are-duplicated-
+                      - 400057--The fields collector_id and external_reference are duplicated.
                       - 400058--Invalid idempodency key.
         '401':
           description: Error
@@ -972,7 +973,7 @@ paths:
                       - 400007--Invalid date of release for the Disbursement.
                       - 400013--Invalid email address.
                       - 400014--Invalid number of payments.
-                        400015--Payer-ID-is-required-for-payments-with-money-in-the-account-
+                      - 400015--Payer ID is required for payments with money in the account.
                       - 400016--Invalid payment type.
                       - 400017--The transaction amount is required.
                       - 400018--Invalid amount.
@@ -993,7 +994,7 @@ paths:
                       - 400033--Invalid Marketplace commission.
                       - 400034--Invalid disbursement amount.
                       - 400035--The field money_release_date is invalid.
-                        400036--The-Marketplace-does-not-have-permissions-on-the-payer-
+                      - 400036--The Marketplace does not have permissions on the payer.
                       - 400037--The collector was not found.
                       - 400039--Invalid request.
                       - 400040--Invalid status.
@@ -1009,10 +1010,10 @@ paths:
                       - 400051--The field money_release_date is required.
                       - 400052--The processing_mode is required.
                       - 400053--Invalid content.
-                        400054--The-Marketplace-does-not-have-permissions-on-the-collector-
+                      - 400054--The Marketplace does not have permissions on the collector.
                       - 400055--The field external_reference is required.
                       - 400056--The field money_release_days is invalid.
-                        400057--The-fields-collector-id-and-external-reference-are-duplicated-
+                      - 400057--The fields collector_id and external_reference are duplicated.
                       - 400058--Invalid idempodency key.
         '401':
           description: Error
@@ -1110,6 +1111,13 @@ paths:
                     spa: Estado del Advanced Payment
                     por: Status do Advanced Payment
                   enum: 
+                    - pending -- The user has not finalized the payment process yet.
+                    - approved -- The payment was approved and accredited.
+                    - rejected -- The payment was rejected. The user could retry the payment.
+                    - cancelled -- The payment was canceled by one of the parties or has expired.
+                    - refunded -- The payment was returned to the user.
+                    - partially_refunded -- Part of the payment was returned to the user.
+                    - charged_back -- A chargeback has been made on the buyer's credit card.
       responses:
         '400':
           description: Error
@@ -1131,7 +1139,7 @@ paths:
                       - 400007--Invalid date of release for the Disbursement.
                       - 400013--Invalid email address.
                       - 400014--Invalid number of payments.
-                        400015--Payer-ID-is-required-for-payments-with-money-in-the-account-
+                      - 400015--Payer ID is required for payments with money in the account.
                       - 400016--Invalid payment type.
                       - 400017--The transaction amount is required.
                       - 400018--Invalid amount.
@@ -1152,7 +1160,7 @@ paths:
                       - 400033--Invalid Marketplace commission.
                       - 400034--Invalid disbursement amount.
                       - 400035--The field money_release_date is invalid.
-                        400036--The-Marketplace-does-not-have-permissions-on-the-payer-
+                      - 400036--The Marketplace does not have permissions on the payer.
                       - 400037--The collector was not found.
                       - 400039--Invalid request.
                       - 400040--Invalid status.
@@ -1168,10 +1176,10 @@ paths:
                       - 400051--The field money_release_date is required.
                       - 400052--The processing_mode is required.
                       - 400053--Invalid content.
-                        400054--The-Marketplace-does-not-have-permissions-on-the-collector-
+                      - 400054--The Marketplace does not have permissions on the collector.
                       - 400055--The field external_reference is required.
                       - 400056--The field money_release_days is invalid.
-                        400057--The-fields-collector-id-and-external-reference-are-duplicated-
+                      - 400057--The fields collector_id and external_reference are duplicated.
                       - 400058--Invalid idempodency key.
         '401':
           description: Error
@@ -1606,7 +1614,7 @@ paths:
                       - 400007--Invalid date of release for the Disbursement.
                       - 400013--Invalid email address.
                       - 400014--Invalid number of payments.
-                        400015--Payer-ID-is-required-for-payments-with-money-in-the-account-
+                      - 400015--Payer ID is required for payments with money in the account.
                       - 400016--Invalid payment type.
                       - 400017--The transaction amount is required.
                       - 400018--Invalid amount.
@@ -1627,7 +1635,7 @@ paths:
                       - 400033--Invalid Marketplace commission.
                       - 400034--Invalid disbursement amount.
                       - 400035--The field money_release_date is invalid.
-                        400036--The-Marketplace-does-not-have-permissions-on-the-payer-
+                      - 400036--The Marketplace does not have permissions on the payer.
                       - 400037--The collector was not found.
                       - 400039--Invalid request.
                       - 400040--Invalid status.
@@ -1643,10 +1651,10 @@ paths:
                       - 400051--The field money_release_date is required.
                       - 400052--The processing_mode is required.
                       - 400053--Invalid content.
-                        400054--The-Marketplace-does-not-have-permissions-on-the-collector-
+                      - 400054--The Marketplace does not have permissions on the collector.
                       - 400055--The field external_reference is required.
                       - 400056--The field money_release_days is invalid.
-                        400057--The-fields-collector-id-and-external-reference-are-duplicated-
+                      - 400057--The fields collector_id and external_reference are duplicated.
                       - 400058--Invalid idempodency key.
         '401':
           description: Error
@@ -1754,7 +1762,7 @@ paths:
                       - 400007--Invalid date of release for the Disbursement.
                       - 400013--Invalid email address.
                       - 400014--Invalid number of payments.
-                        400015--Payer-ID-is-required-for-payments-with-money-in-the-account-
+                      - 400015--Payer ID is required for payments with money in the account.
                       - 400016--Invalid payment type.
                       - 400017--The transaction amount is required.
                       - 400018--Invalid amount.
@@ -1775,7 +1783,7 @@ paths:
                       - 400033--Invalid Marketplace commission.
                       - 400034--Invalid disbursement amount.
                       - 400035--The field money_release_date is invalid.
-                        400036--The-Marketplace-does-not-have-permissions-on-the-payer-
+                      - 400036--The Marketplace does not have permissions on the payer.
                       - 400037--The collector was not found.
                       - 400039--Invalid request.
                       - 400040--Invalid status.
@@ -1791,10 +1799,10 @@ paths:
                       - 400051--The field money_release_date is required.
                       - 400052--The processing_mode is required.
                       - 400053--Invalid content.
-                        400054--The-Marketplace-does-not-have-permissions-on-the-collector-
+                      - 400054--The Marketplace does not have permissions on the collector.
                       - 400055--The field external_reference is required.
                       - 400056--The field money_release_days is invalid.
-                        400057--The-fields-collector-id-and-external-reference-are-duplicated-
+                      - 400057--The fields collector_id and external_reference are duplicated.
                       - 400058--Invalid idempodency key.
         '401':
           description: Error
@@ -1902,7 +1910,7 @@ paths:
                       - 400007--Invalid date of release for the Disbursement.
                       - 400013--Invalid email address.
                       - 400014--Invalid number of payments.
-                        400015--Payer-ID-is-required-for-payments-with-money-in-the-account-
+                      - 400015--Payer ID is required for payments with money in the account.
                       - 400016--Invalid payment type.
                       - 400017--The transaction amount is required.
                       - 400018--Invalid amount.
@@ -1923,7 +1931,7 @@ paths:
                       - 400033--Invalid Marketplace commission.
                       - 400034--Invalid disbursement amount.
                       - 400035--The field money_release_date is invalid.
-                        400036--The-Marketplace-does-not-have-permissions-on-the-payer-
+                      - 400036--The Marketplace does not have permissions on the payer.
                       - 400037--The collector was not found.
                       - 400039--Invalid request.
                       - 400040--Invalid status.
@@ -1939,10 +1947,10 @@ paths:
                       - 400051--The field money_release_date is required.
                       - 400052--The processing_mode is required.
                       - 400053--Invalid content.
-                        400054--The-Marketplace-does-not-have-permissions-on-the-collector-
+                      - 400054--The Marketplace does not have permissions on the collector.
                       - 400055--The field external_reference is required.
                       - 400056--The field money_release_days is invalid.
-                        400057--The-fields-collector-id-and-external-reference-are-duplicated-
+                      - 400057--The fields collector_id and external_reference are duplicated.
                       - 400058--Invalid idempodency key.
         '401':
           description: Error
@@ -2057,7 +2065,7 @@ paths:
                       - 400007--Invalid date of release for the Disbursement.
                       - 400013--Invalid email address.
                       - 400014--Invalid number of payments.
-                        400015--Payer-ID-is-required-for-payments-with-money-in-the-account-
+                      - 400015--Payer ID is required for payments with money in the account.
                       - 400016--Invalid payment type.
                       - 400017--The transaction amount is required.
                       - 400018--Invalid amount.
@@ -2078,7 +2086,7 @@ paths:
                       - 400033--Invalid Marketplace commission.
                       - 400034--Invalid disbursement amount.
                       - 400035--The field money_release_date is invalid.
-                        400036--The-Marketplace-does-not-have-permissions-on-the-payer-
+                      - 400036--The Marketplace does not have permissions on the payer.
                       - 400037--The collector was not found.
                       - 400039--Invalid request.
                       - 400040--Invalid status.
@@ -2094,10 +2102,10 @@ paths:
                       - 400051--The field money_release_date is required.
                       - 400052--The processing_mode is required.
                       - 400053--Invalid content.
-                        400054--The-Marketplace-does-not-have-permissions-on-the-collector-
+                      - 400054--The Marketplace does not have permissions on the collector.
                       - 400055--The field external_reference is required.
                       - 400056--The field money_release_days is invalid.
-                        400057--The-fields-collector-id-and-external-reference-are-duplicated-
+                      - 400057--The fields collector_id and external_reference are duplicated.
                       - 400058--Invalid idempodency key.
         '401':
           description: Error
@@ -2212,7 +2220,7 @@ paths:
                       - 400007--Invalid date of release for the Disbursement.
                       - 400013--Invalid email address.
                       - 400014--Invalid number of payments.
-                        400015--Payer-ID-is-required-for-payments-with-money-in-the-account-
+                      - 400015--Payer ID is required for payments with money in the account.
                       - 400016--Invalid payment type.
                       - 400017--The transaction amount is required.
                       - 400018--Invalid amount.
@@ -2233,7 +2241,7 @@ paths:
                       - 400033--Invalid Marketplace commission.
                       - 400034--Invalid disbursement amount.
                       - 400035--The field money_release_date is invalid.
-                        400036--The-Marketplace-does-not-have-permissions-on-the-payer-
+                      - 400036--The Marketplace does not have permissions on the payer.
                       - 400037--The collector was not found.
                       - 400039--Invalid request.
                       - 400040--Invalid status.
@@ -2249,10 +2257,10 @@ paths:
                       - 400051--The field money_release_date is required.
                       - 400052--The processing_mode is required.
                       - 400053--Invalid content.
-                        400054--The-Marketplace-does-not-have-permissions-on-the-collector-
+                      - 400054--The Marketplace does not have permissions on the collector.
                       - 400055--The field external_reference is required.
                       - 400056--The field money_release_days is invalid.
-                        400057--The-fields-collector-id-and-external-reference-are-duplicated-
+                      - 400057--The fields collector_id and external_reference are duplicated.
                       - 400058--Invalid idempodency key.
         '401':
           description: Error
@@ -2712,7 +2720,7 @@ paths:
                       - 400007--Invalid date of release for the Disbursement.
                       - 400013--Invalid email address.
                       - 400014--Invalid number of payments.
-                        400015--Payer-ID-is-required-for-payments-with-money-in-the-account-
+                      - 400015--Payer ID is required for payments with money in the account.
                       - 400016--Invalid payment type.
                       - 400017--The transaction amount is required.
                       - 400018--Invalid amount.
@@ -2733,7 +2741,7 @@ paths:
                       - 400033--Invalid Marketplace commission.
                       - 400034--Invalid disbursement amount.
                       - 400035--The field money_release_date is invalid.
-                        400036--The-Marketplace-does-not-have-permissions-on-the-payer-
+                      - 400036--The Marketplace does not have permissions on the payer.
                       - 400037--The collector was not found.
                       - 400039--Invalid request.
                       - 400040--Invalid status.
@@ -2749,10 +2757,10 @@ paths:
                       - 400051--The field money_release_date is required.
                       - 400052--The processing_mode is required.
                       - 400053--Invalid content.
-                        400054--The-Marketplace-does-not-have-permissions-on-the-collector-
+                      - 400054--The Marketplace does not have permissions on the collector.
                       - 400055--The field external_reference is required.
                       - 400056--The field money_release_days is invalid.
-                        400057--The-fields-collector-id-and-external-reference-are-duplicated-
+                      - 400057--The fields collector_id and external_reference are duplicated.
                       - 400058--Invalid idempodency key.
         '401':
           description: Error

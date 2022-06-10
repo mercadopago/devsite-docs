@@ -31,6 +31,11 @@ paths:
             spa: Token de acceso generado desde el vendedor por el proceso de autenticación (OAuth). Código de seguridad que identifica al usuario, sus privilegios y una aplicación utilizada en diferentes solicitudes de origen público para acceder a los recursos protegidos. Su validez está determinada por el parámetro expires_in y es similar a APP_USR-1585551492-030918-25######3458-2880736 estando compuesto por
             por: Token de acesso gerado do vendedor pelo processo de autenticação (OAuth). Código de segurança que identifica o usuário, seus privilégios e uma aplicação utilizado nas diferentes requests de origem pública para ter acesso a recursos protegidos. Tem sua validade determinada pelo parâmetro expires_in e são semelhantes a APP_USR-1585551492-030918-25######3458-2880736 sendo compostos por
           enum:
+            - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
+            - Client ID -- 1585551492
+            - Creation date (MMddHH) -- 030918
+            - Security hash -- 25######3458
+            - User ID -- 2880736
           required: true
           schema:
             type: string
@@ -51,6 +56,13 @@ paths:
                   required: true
                   example: "MLA"
                   enum:
+                    - MPE -- Mercado Libre Perú
+                    - MLU -- Mercado Libre Uruguay
+                    - MLA -- Mercado Libre Argentina
+                    - MLC -- Mercado Libre Chile
+                    - MCO -- Mercado Libre Colombia
+                    - MLB -- Mercado Libre Brasil
+                    - MLM -- Mercado Libre México
       responses:
         '200':
           description: Created
@@ -133,6 +145,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
+                      - 400--Bad-Request--invalid-site_id
         '401':
           description: Not found
           content:
@@ -143,6 +156,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
+                      - 401--Not-Found--invalid-token													
         '403':
           description: Forbidden
           content:
@@ -153,6 +167,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
+                      - 403--Forbidden--authorization-the-caller-id-must-be-a-productive-user
         '404':
           description: Resource not found
           content:
@@ -163,6 +178,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
+                      - 404--Resource-Not-Found									 
         '500':
           description: Internal server error
           content:
@@ -173,6 +189,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
+                      - 500--Internal-Server-Error
   /test_user/search:
     get:
       tags:
@@ -199,6 +216,11 @@ paths:
             spa: Token de acceso generado desde el vendedor por el proceso de autenticación (OAuth). Código de seguridad que identifica al usuario, sus privilegios y una aplicación utilizada en diferentes solicitudes de origen público para acceder a los recursos protegidos. Su validez está determinada por el parámetro expires_in y es similar a APP_USR-1585551492-030918-25######3458-2880736 estando compuesto por
             por: Token de acesso gerado do vendedor pelo processo de autenticação (OAuth). Código de segurança que identifica o usuário, seus privilégios e uma aplicação utilizado nas diferentes requests de origem pública para ter acesso a recursos protegidos. Tem sua validade determinada pelo parâmetro expires_in e são semelhantes a APP_USR-1585551492-030918-25######3458-2880736 sendo compostos por
           enum:
+            - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
+            - Client ID -- 1585551492
+            - Creation date (MMddHH) -- 030918
+            - Security hash -- 25######3458
+            - User ID -- 2880736
           required: true
           schema:
             type: string
@@ -295,6 +317,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
+                      - 401--Not-Found--invalid-token									
         '403':
           description: Forbidden
           content:
@@ -305,6 +328,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
+                      - 403--Forbidden--authorization-the-caller.id-must-be-a-productive-user
         '404':
           description: Resource not found
           content:
@@ -315,6 +339,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
+                      - 404--Resource-Not-Found								
         '405':
           description: Method Not Allowed
           content:
@@ -325,6 +350,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
+                      - 405--Method-Not-Allowed
         '500':
           description: Internal Server Error
           content:
@@ -335,6 +361,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
+                      - 500--Internal-Server-Error
   /test_user/{id}/password:
     put:
       tags:
@@ -361,6 +388,11 @@ paths:
             spa: Token de acceso generado desde el vendedor por el proceso de autenticación (OAuth). Código de seguridad que identifica al usuario, sus privilegios y una aplicación utilizada en diferentes solicitudes de origen público para acceder a los recursos protegidos. Su validez está determinada por el parámetro expires_in y es similar a APP_USR-1585551492-030918-25######3458-2880736 estando compuesto por
             por: Token de acesso gerado do vendedor pelo processo de autenticação (OAuth). Código de segurança que identifica o usuário, seus privilégios e uma aplicação utilizado nas diferentes requests de origem pública para ter acesso a recursos protegidos. Tem sua validade determinada pelo parâmetro expires_in e são semelhantes a APP_USR-1585551492-030918-25######3458-2880736 sendo compostos por
           enum:
+            - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
+            - Client ID -- 1585551492
+            - Creation date (MMddHH) -- 030918
+            - Security hash -- 25######3458
+            - User ID -- 2880736
           required: true
           schema:
             type: string
@@ -410,6 +442,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
+                      - 403--Forbidden--authorization-the-caller-id-must-be-a-productive-user403--Forbidden
         '405':
           description: Method Not Allowed
           content:
@@ -420,6 +453,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
+                      - 405--Method-Not-Allowed
         '500':
           description: Internal server error
           content:
@@ -430,6 +464,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
+                      - 500--Internal-Server-Error
   /test_user/{id}/account_money:
     put:
       tags:
@@ -456,6 +491,11 @@ paths:
             spa: Token de acceso generado desde el vendedor por el proceso de autenticación (OAuth). Código de seguridad que identifica al usuario, sus privilegios y una aplicación utilizada en diferentes solicitudes de origen público para acceder a los recursos protegidos. Su validez está determinada por el parámetro expires_in y es similar a APP_USR-1585551492-030918-25######3458-2880736 estando compuesto por
             por: Token de acesso gerado do vendedor pelo processo de autenticação (OAuth). Código de segurança que identifica o usuário, seus privilégios e uma aplicação utilizado nas diferentes requests de origem pública para ter acesso a recursos protegidos. Tem sua validade determinada pelo parâmetro expires_in e são semelhantes a APP_USR-1585551492-030918-25######3458-2880736 sendo compostos por
           enum:
+            - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
+            - Client ID -- 1585551492
+            - Creation date (MMddHH) -- 030918
+            - Security hash -- 25######3458
+            - User ID -- 2880736
           required: true
           schema:
             type: string
@@ -477,6 +517,7 @@ paths:
             application/json:
               schema:
                 required:
+                  - site_id
                 type: object
                 properties:
                   amount:
@@ -501,6 +542,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
+                      - 400--Bad-Request--invalid-amount
         '403':
           description: Forbidden
           content:
@@ -511,6 +553,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
+                      - 403--Forbidden--authorization-the-caller-id-must-be-a-productive-user
         '405':
           description: Method not allowed
         '500':
@@ -523,3 +566,4 @@ paths:
                   errorKey:
                     type: string
                     enum:
+                      - 500--Internal-Server-Error

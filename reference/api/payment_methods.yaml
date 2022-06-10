@@ -55,6 +55,11 @@ paths:
                         spa: Tipo de medio de pago
                         por: Tipo de meio de pagamento
                       enum:
+                        - ticket -- Printed ticket
+                        - atm -- Payment by ATM
+                        - credit_card -- Payment by credit card
+                        - debit_card -- Payment by debit card
+                        - prepaid_card -- Payment by prepaid card
                     status:
                       type: string
                       example: active
@@ -64,6 +69,9 @@ paths:
                         spa: Estado del medio de pago
                         por: Estado do meio de pagamento
                       enum:
+                        - active -- Available for use.
+                        - deactive -- Decommissioned, we don't support it anymore.
+                        - temporally_deactive -- Unavailable for use, possible interruption of the service.
                     secure_thumbnail:
                       type: string
                       example: https://www.mercadopago.com/org-img/MP3/API/logos/visa.gif
@@ -89,6 +97,9 @@ paths:
                         spa: Indica si la captura puede ser diferida o no. Tiene tres valores posibles.
                         por: Indica se a captura pode ser lenta ou não. Tem três valores possíveis.
                       enum:
+                        - supported -- This payment method supports authorization and capture operations.
+                        - unsupported -- Deferred capture is not available for this payment method.
+                        - does_not_apply -- Cash payment methods don't allow deferred capture.
                     settings:
                       type: object
                       properties:
@@ -115,7 +126,7 @@ paths:
                                 eng: Regular expression representing the excluded bins.
                                 spa: Expresión regular representando los bines excluídos
                                 por: A expressão regular, representando bines excluídos
-                              example: >-
+                              example: 
                                     ^(400163|400176|400178|400185|400199|423808|439267|471233|473200|476332|482481|451416|438935|(40117[8-9])|(45763[1-2])|457393|431274)
                             installments_pattern:
                               type: string
@@ -144,10 +155,12 @@ paths:
                             validation:
                               type: string
                               example: standard
-                              description: >-
+                              description: 
                                 Whether the card number can be validated using a checksum algorithm
                                 (usually Luhn)
                               enum:
+                                - standard -- The card number should validate Luhn's algorithm.
+                                - none -- There is no algorithm to validate the checksum.
                         security_code:
                           type: object
                           description: Card security code information.
@@ -165,6 +178,8 @@ paths:
                                 spa: Indica si el código de seguridad es mandatorio o no
                                 por: Indica se o código de segurança é obrigatório ou não
                               enum:
+                                - mandatory -- The security code should be given to process the payment.
+                                - optional -- A payment could be issued without the security code.
                             length:
                               type: number
                               description: Security code length.
@@ -176,10 +191,12 @@ paths:
                             card_location:
                               type: string
                               example: back
-                              description: >-
+                              description: 
                                 Whether the security code is located in the back or in the front of
                                 the card.
                               enum:
+                                - back -- The security code is located in the back of the card.
+                                - front -- The security code is located in the front of the card.
                       description: Payment method settings.
                       x-description-i18n:
                         eng: Payment method settings.
@@ -193,6 +210,10 @@ paths:
                         spa: Lista de información adicional que debe ser provista por el pagador
                         por: Lista de informações que devem ser fornecidas pelo pagador
                       enum:
+                        - cardholder_identification_number -- Identification number of the card owner.
+                        - cardholder_identification_type -- Identification type of the card owner.
+                        - cardholder_name -- Name as seen in the card of the card owner.
+                        - issuer_id -- ID of the card issuing entity.
                     min_allowed_amount:
                       type: number
                       example: 0.5
@@ -244,6 +265,8 @@ paths:
                         spa: Modo de proceso del medio de pago. Hay 2 tipos.
                         por: Informações do código de segurança do cartão. Existem 2 tipos.
                       enum:
+                        - Aggegator -- aggregator mode. Receive payments using all the cards and promotions that Mercado Pago offers, in addition to bank transfers and offline payment methods and where the money is deposited and managed in a Mercado Pago bank accounts.
+                        - Gateway -- gateway mode. Receive payments directly into the store codes (merchant account) of the seller using all the seller's own promotions. With this mode they can also negotiate with purchasers, both in terms of tariffs and interest-free installments and promotions.
         '400':
           description: Error
           x-description-i18n:

@@ -178,7 +178,7 @@ paths:
                     por: Nome da loja
                   example: Sucursal Instore
                 business_hours:
-                  description: >-
+                  description: 
                     Business hours. They are divided by day of the week and up to two opening and closing times per day are allowed.
                   type: object
                   properties:
@@ -375,7 +375,7 @@ paths:
                       - INVALID_USER_ID--USER_ID must be number.
                       - UNKNOWN_FIELD--Unknown field.
                       - INVALID_NAME--Name must be string.
-                        INVALID_BUSINESS_HOURS--BUSINESS-HOURS-must-be-json-object-
+                      - INVALID_BUSINESS_HOURS--BUSINESS_HOURS must be json_object.
                       - INVALID_DAY--Day must be json_array.
                       - INVALID_LOCATION--LOCATION must be json_object.
                       - INVALID_STREET_NAME--STREET_NAME must be string.
@@ -386,6 +386,7 @@ paths:
                       - INVALID_LATITUDE--LATITUDE must be number.
                       - INVALID_LONGITUDE--LONGITUDE must be number.
                       - INVALID_REFERENCE--REFERENCE must be string.
+                      - VALIDATION_ERROR--External_id-already-used-
 
   /users/{user_id}/stores/search:
     get:
@@ -519,7 +520,7 @@ paths:
                             properties:
                               address_line:
                                 type: string
-                                example: >-
+                                example: 
                                   Caseros 3039, Belgrano, Capital Federal, Argentina
                                 description: address_line
                               reference:
@@ -610,7 +611,7 @@ paths:
                     por: Nome da loja
                   example: Sucursal Instore 2
                 business_hours:
-                  description: >-
+                  description: 
                     Business hours. They are divided by day of the week and up to two opening and closing times per day are allowed.
                   type: object
                   properties:
@@ -797,7 +798,7 @@ paths:
                       - UNKNOWN_FIELD--Unknown field.
                       - INVALID_STORE_ID--Invaliud store_id.
                       - INVALID_NAME--NAME must be string.
-                        INVALID_BUSINESS_HOURS--BUSINESS-HOURS-must-be-json-object-
+                      - INVALID_BUSINESS_HOURS--BUSINESS_HOURS must be json_object.
                       - INVALID_DAY--Day must be json_array.
                       - INVALID_LOCATION--LOCATION must be json_object.
                       - INVALID_STREET_NAME--STREET_NAME must be string.

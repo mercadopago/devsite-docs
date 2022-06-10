@@ -58,7 +58,7 @@ paths:
                   example: Factura-0001
                 notification_url:
                   type: string
-                  description: >-
+                  description: 
                     URL where you'd like to receive a payment or merchant_order
                     notification.
                   example: http://www.yourserver.com
@@ -397,3 +397,10 @@ components:
         spa: Identificador de moneda en formato ISO_4217
         por: Identificador de moeda no formato ISO_4217
       enum: 
+        - ARS -- Argentine peso.
+        - BRL -- Brazil real.
+        - CLP -- Chilean peso.
+        - MXN -- Mexican peso.
+        - COP -- Colombian peso.
+        - PEN -- Peruvian sol.
+        - UYU -- Uruguayan peso.

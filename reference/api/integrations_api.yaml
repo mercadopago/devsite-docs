@@ -120,6 +120,7 @@ paths:
                   errorKey: 
                     type: string
                     enum:
+                      - 400-- Bad Request - query param incorrect format            
         '401':
           description: Error
           x-description-i18n:
@@ -134,6 +135,7 @@ paths:
                     errorKey:
                       type: string
                       enum:
+                        - 401-- Unauthorized - token is invalid 
         '403':
           description: Error
           x-description-i18n:
@@ -148,6 +150,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
+                      - 403-- Forbidden Integrator isn't registered 
         '500':
           description: Error
           x-description-i18n:
@@ -162,6 +165,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
+                      - 500-- Internal server error
   /point/integration-api/devices/{deviceid}/payment-intents:
     post:
       tags:
@@ -334,6 +338,7 @@ paths:
                     errorKey:
                       type: string
                       enum:
+                        - 401-- Unauthorized Token is invalid
         '400':
           description: Error
           x-description-i18n:
@@ -348,6 +353,7 @@ paths:
                     errorKey:
                       type: string
                       enum:
+                        - 400-- Bad request - Field is missing o incorrect
         '403':
           description: Error
           x-description-i18n:
@@ -362,6 +368,7 @@ paths:
                     errorKey:
                       type: string
                       enum:
+                        - 403-- Forbidden - Integrator isn't registered
         '409':
           description: Error
           x-description-i18n:
@@ -376,6 +383,7 @@ paths:
                     errorKey:
                       type: string
                       enum:
+                        - 409-- Conflict-error - Device has a queued payment intent
         '500':
           description: Error
           x-description-i18n:
@@ -390,6 +398,7 @@ paths:
                     errorKey:
                       type: string
                       enum:
+                        - 500-- Internal server error
   /point/integration-api/devices/{deviceid}/payment-intents/{paymentintentid}:
     delete:
       tags:
@@ -462,6 +471,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
+                      - 401-- Unauthorized Token is invalid
         '403':
           description: Error
           x-description-i18n:
@@ -476,6 +486,7 @@ paths:
                     errorKey:
                       type: string
                       enum:
+                      - 403-- Forbidden - Integrator isn't registered
         '409':
           description: Error
           x-description-i18n:
@@ -490,6 +501,7 @@ paths:
                   errorkey:
                     type: string
                     enum:
+                      - 409-- Conflict error - Payment intent is blocked by terminal
         '500':
           description: Error
           x-description-i18n:
@@ -504,6 +516,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
+                      - 500-- Internal server error
   /point/integration-api/payment-intents/{paymentintentid}:
     get:
       tags:
@@ -600,6 +613,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
+                      - 401-- Unauthorized - Token is invalid
         '403':
           description: Error
           x-description-i18n:
@@ -614,6 +628,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
+                      - 403-- Forbidden - Integrator isn't registered
         '404':
           description: Error
           x-description-i18n:
@@ -628,6 +643,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
+                      - 404-- Not-found - Payment intent doesn't exist
         '500':
           description: Error
           x-description-i18n:
@@ -642,6 +658,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
+                      - 500-- Internal server error
   /point/integration-api/payment-intents/events:
     get:
       tags:
@@ -735,6 +752,7 @@ paths:
                     errorKey:
                       type: string
                       enum:
+                        - 400-- Bad-Request - startDate and/or endDate are misssing or incorrect
         '401':
           description: Error
           x-description-i18n:
@@ -749,6 +767,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
+                      - 401-- Token is invalid
         '403':
           description: Error
           x-description-i18n:
@@ -763,6 +782,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
+                      - 403-- Forbidden - Integrator isn't registered
         '500':
           description: Error
           x-description-i18n:
@@ -777,6 +797,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
+                      - 500-- Internal server error
   /point/integration-api/payment-intents/{paymentintentid}/events:
     get:
       tags:
@@ -840,6 +861,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
+                      - 401-- Unauthorized - Token is invalid
         '403':
           description: Error
           x-description-i18n:
@@ -854,6 +876,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
+                      - 403-- Forbidden - Integrator isn't registered
         '404':
           description: Error
           x-description-i18n:
@@ -868,6 +891,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
+                      - 404-- Not Found - Payment Intent doesn't exist
         '500':
           description: Error
           x-description-i18n:
@@ -882,6 +906,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
+                      - 500-- Internal server error
   /point/integration-api/devices/{device-id}:
     patch:
       tags:
@@ -917,6 +942,8 @@ paths:
                     nullable: false
                     example: "PDV"
                     enum:
+                      - PDV -- point of sale, integrated mode with the API.
+                      - STANDALONE -- default device configuration, mode not integrated with the API.
       responses:
         '200':
           description: Success - Operating mode successfully changed
@@ -935,6 +962,8 @@ paths:
                     required: true
                     example: "PDV"
                     enum:
+                      - PDV -- point of sale, integrated mode with the API.
+                      - STANDALONE -- default device configuration, mode not integrated the API.
         '400':
           description: Error
           x-description-i18n:
@@ -949,6 +978,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
+                      - 400-- Bad-Request - Device id incorrect format
         '403':
           description: Error
           x-description-i18n:
@@ -963,6 +993,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
+                      - 403-- Unauthorized - User not logged into the device
         '500':
             description: Error
             x-description-i18n:
@@ -977,3 +1008,4 @@ paths:
                     errorKey:
                       type: string
                       enum:
+                        - 500-- Internal server error
