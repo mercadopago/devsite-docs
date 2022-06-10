@@ -19,7 +19,7 @@ Both for frontend and backend, we recommend [our libraries](https://www.mercadop
 >
 > Note
 >
-> For more information, check [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/cards/_customers_customer_id_cards/post).
+> For more information, check [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference).
 
 <br>
 
