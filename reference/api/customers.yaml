@@ -30,10 +30,18 @@ paths:
                   type: String
                   example: "jhon@doe.com"
                   description: Customer's email. 
+                  x-description-i18n:
+                    eng: Customer's email.
+                    spa: Email del cliente
+                    por: E-mail do cliente
                 first_name:
                   type: String
                   example: Jhon
                   description: Customer's name. 
+                  x-description-i18n:
+                    eng: Customer's name.
+                    spa: Nombre del cliente
+                    por: Nome do cliente
                 last_name:
                   type: String
                   example: Doe
@@ -157,7 +165,11 @@ paths:
                 default_card:
                   type: String
                   example: 'None'
-                  description: Customer's default card.       
+                  description: Customer's default card.  
+                  x-description-i18n:
+                    eng: Customer's default card.
+                    spa: Tarjeta por defecto del cliente
+                    por: Cartão padrão do cliente     
       responses:
         '200':
           description: success
@@ -499,6 +511,10 @@ paths:
                   type: String
                   example: Jhon
                   description: Customer's name. 
+                  x-description-i18n:
+                    eng: Customer's name.
+                    spa: Nombre del cliente
+                    por: Nome do cliente
                 last_name:
                   type: String
                   example: Doe
@@ -623,6 +639,10 @@ paths:
                   type: String
                   example: 'None'
                   description: Customer's default card. 
+                  x-description-i18n:
+                    eng: Customer's default card.
+                    spa: Tarjeta por defecto del cliente
+                    por: Cartão padrão do cliente
       responses:
         '200':
           description: success

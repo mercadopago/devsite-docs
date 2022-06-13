@@ -59,8 +59,11 @@ paths:
                 notification_url:
                   type: string
                   description: 
-                    URL where you'd like to receive a payment or merchant_order
-                    notification.
+                    URL where you'd like to receive a payment or merchant_order notification.
+                  x-descritpion-i18n:
+                    eng: URL where you'd like to receive a payment or merchant_order notification.
+                    spa: URL a la cual se enviará la notificación de pago o merchant_order.
+                    por: URL em que você gostaria de receber uma notificação de pagamento ou merchant_order.
                   example: http://www.yourserver.com
                 sponsor_id:
                   type: string

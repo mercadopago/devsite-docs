@@ -86,8 +86,11 @@ paths:
                   documentation_required:
                     type: boolean
                     description: 
-                      Whether the seller needs to send documentation for this
-                      chargeback
+                      Whether the seller needs to send documentation for this chargeback
+                    x-description-i18n:
+                      eng: Whether the seller needs to send documentation for this chargeback
+                      spa: Si el vendedor debe enviar la documentación para el contracargo 
+                      por: Se o vendedor precisa enviar a documentação para este estorno
                   documentation_status:
                     type: string
                     description: Detail of decision taken for the documentation

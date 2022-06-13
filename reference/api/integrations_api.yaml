@@ -23,6 +23,10 @@ paths:
         - name: x-test-scope
           in: header
           description: This is a temporary header, it should be used just for development with the value "sandbox"
+          x-description-i18n:
+            eng: This is a temporary header, it should be used just for development with the value "sandbox"
+            spa: Este es un header temporal, debe usarse solo para desarrollo con el valor "sandbox"
+            por: Este é um header temporário, deve ser usado apenas para desenvolvimento com o valor "sandbox"
           schema:
             type: string
             example: sandbox

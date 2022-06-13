@@ -52,8 +52,11 @@ paths:
                 external_store_id:
                   type: string
                   description: 
-                    External_id of the store to which the pos belongs defined by
-                    integrator system.
+                    External_id of the store to which the pos belongs defined by integrator system.
+                  x-description-i18n:
+                    eng: External_id of the store to which the pos belongs defined by integrator system.
+                    spa: External_id of the store to which the pos belongs defined by integrator system.
+                    por: External_id of the store to which the pos belongs defined by integrator system.
                   example: SUC001
                 external_id:
                   type: string

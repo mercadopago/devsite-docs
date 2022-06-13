@@ -30,15 +30,20 @@ paths:
               properties:
                 additional_info:
                   type: object
-                  description: 
-                    Data that could improve fraud analysis and conversion rates.
-                    Try to send as much information as possible.
+                  description: Data that could improve fraud analysis and conversion rates. Try to send as much information as possible.
+                  x-description-i18n:
+                    eng: Data that could improve fraud analysis and conversion rates. Try to send as much information as possible.
+                    spa: Información que puede mejorar el análisis de prevención de fraude y la tasa de conversión. Trata de enviarnos toda la infomación posible.
+                    por: Informações que podem melhorar a análise de prevenção de fraude e a taxa de conversão. Trata de enviar-nos toda a informação possível.
                   properties:
                     ip_address:
                       type: string
                       description: 
-                        IP from where the request comes from (only for bank
-                        transfers).
+                        IP from where the request comes from (only for bank transfers).
+                      x-description-i18n:
+                        eng: IP from where the request comes from (only for bank transfers).
+                        spa: IP del cual proviene el request (sólo para transferencia bancaria)
+                        por: IP do qual provém o request (apenas para transferência bancária)
                     items:
                       type: array
                       description: List of items to be paid.
@@ -304,8 +309,11 @@ paths:
                 callback_url:
                   type: string
                   description: 
-                    URL where mercadopago does the final redirect (only for bank
-                    transfers).
+                    URL where mercadopago does the final redirect (only for bank transfers).
+                  x-description-i18n:
+                    eng: URL where mercadopago does the final redirect (only for bank transfers).
+                    spa: URL a la cual Mercado Pago hace la redirección final (sólo para transferencia bancaria).
+                    por: URL para a qual o Mercado Pago faz o redirecionamento final (apenas para transferência bancária).
                 campaign_id:
                   type: number
                   description: Discount campaign ID.
@@ -316,8 +324,11 @@ paths:
                 capture:
                   type: boolean
                   description: 
-                    Determines if the payment should be captured (true, default
-                    value) or just reserved (false).
+                    Determines if the payment should be captured (true, default value) or just reserved (false).
+                  x-description-i18n:
+                    eng: Determines if the payment should be captured (true, default value) or just reserved (false).
+                    spa: Determina si el pago debe ser capturado(true, default value) o solo reservado(false).
+                    por: Determina se o pagamento deve ser capturado(true, default value), ou apenas reservado(false).
                 coupon_amount:
                   type: number
                   description: Amount of the coupon discount.
