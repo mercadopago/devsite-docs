@@ -10,9 +10,7 @@
 
 <br>
 
-
 With our Mercado Pago Checkout API, you should take into account two aspects: data capture and payment confirmation submission.
-
 
 1. First, you need a frontend to collect card data and generate a security token with the information required to create a payment.
 2. Then, you need a backend that takes the generated token and payment data, such as amount and item, to confirm and make a payment.
