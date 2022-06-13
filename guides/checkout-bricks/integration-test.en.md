@@ -24,7 +24,7 @@ Start the integration with your test seller user credentials:
 >
 > After you set up the integration, here's how to send payments to Mercado Pago.
 >
-> [Send payments to Mercado Pago](/developers/en/docs/checkout-bricks-beta/integration/payment-submission)
+> [Send payments to Mercado Pago](/developers/en/docs/checkout-bricks/integration/payment-submission)
 
 > NEXT_STEP_CARD_EN
 >
@@ -32,4 +32,4 @@ Start the integration with your test seller user credentials:
 >
 > To simplify and optimize the integration process, view an example of a Checkout Bricks integration.
 >
-> [Send payments to Mercado Pago](/developers/en/docs/checkout-bricks-beta/integration/code-example)
+> [Send payments to Mercado Pago](/developers/en/docs/checkout-bricks/integration/code-example)

@@ -11,7 +11,7 @@ Para facilitar y optimizar su proceso de integración, ve a continuación un eje
 ```html
 <html>
     <head>
-        <script src="https://beta-sdk.mercadopago.com/gama/js/v2"></script>
+        <script src="https://sdk.mercadopago.com/js/v2"></script>
     </head>
     <body>
         <div id="cardPaymentBrick_container"></div>
@@ -297,7 +297,7 @@ curl -X POST \
 >
 > Consulta cómo realizar pruebas para garantizar el buen funcionamiento de la integración.
 >
-> [Enviar pago a Mercado Pago](/developers/es/docs/checkout-bricks-beta/integration/integration-test)
+> [Enviar pago a Mercado Pago](/developers/es/docs/checkout-bricks/integration/integration-test)
 
 > NEXT_STEP_CARD_ES
 >
@@ -305,4 +305,4 @@ curl -X POST \
 >
 > Si lo deseas, aprende a seleccionar otro tema al instanciar/renderizar Card Payment Brick.
 >
-> [Definir tema](/developers/es/docs/checkout-bricks-beta/additional-customization/set-theme)
+> [Definir tema](/developers/es/docs/checkout-bricks/additional-customization/set-theme)

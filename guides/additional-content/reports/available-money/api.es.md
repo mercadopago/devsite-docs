@@ -18,6 +18,30 @@ Genera el informe de dinero liberado manualmente tantas veces como desees o prog
 >> A partir del 15 de mayo no podrás crear nuevos reportes. Tendrás a disposición tu historial para que puedas descargar los archivos que necesites. Para seguir llevando el control de todos los retiros y movimientos de tu dinero disponible puedes usar el [reporte de liberaciones.](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/23879?utm_source=faq_mp&utm_medium=faq&utm_campaign=bank_disable)
 ------------
 
+## Atributos configurables
+
+Conoce los campos que puedes configurar para ajustar tus preferencias antes de empezar:
+
+> WARNING
+>
+> Importante
+>
+> Configurar el atributo `frequency` no implica que el reporte se genere automáticamente. La configuración aplicará solo cuando se active la programación automática. Para mayor detalle puedes dirigirte a la sección [Programa tus reportes](#bookmark_programa_tus_reportes_automáticos).
+
+| Campos configurables | Descripción |
+| --- | --- |
+| `sftp_info` (opcional) | <br/>Indica los datos de subida a SFTP cuando lo necesites.<br/><br/> |
+| `separator` (opcional) | <br/>Separador que puedes usar en el archivo .csv cuando no quieras que el separador sea una coma. <br/><br/> |
+| `display_timezone` (opcional) | <br/>Este campo determina la fecha y la hora que se visualiza en los reportes. Si no configuras este campo con una zona horaria, el sistema tomará por defecto el valor GMT-04. Si eliges una zona horaria que utiliza horario de verano, es necesario que hagas el ajuste manual cuando cambie la hora.<br/><br/> |
+| `notification_email_list` (opcional) | <br/>Permite agregar un grupo de destinatarios de correo electrónico para que reciban una notificación cuando un reporte está listo y disponible para descargar. Asegúrate de incluir el correo asociado a tu cuenta de Mercado Pago para que también recibas las notificaciones.<br/><br/> |
+| `refund_detailed` (opcional) | <br/>Muestra el código de referencia (external_reference) del reembolso en vez del código de referencia (external_reference) del pago.<br/><br/> |
+| `include_withdrawal` (opcional) | <br/>Incluye los retiros de dinero en el reporte.<br/><br/> |
+| `coupon_detailed` (opcional) | <br/>Suma una columna para mostrar el detalle de los cupones de descuento.<br/><br/> |
+| `columns` | <br/>Campo con el detalle de columnas a incluir en tu reporte. Encuentra todos los posibles valores en la sección de  [Glosario](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/available-money/glossary).<br/><br/>|
+| `file_name_prefix` | <br/>Prefijo que compone el nombre del reporte una vez generado y listo para descargar.<br/><br/> |
+| `frequency` | <br/>Indica la frecuencia diaria, semanal o mensual de los reportes programados.<br/><br/> - `frequency` aplica type *monthly* al día del mes o *weekly* el día de la semana<br/> - `hour` hora del día en la que generar el reporte <br/> - `type` indica el tipo de frecuencia *daily* (diaria), *weekly* (semanal) y *monthly* (mensual).<br/><br/> |
+| `scheduled` (read_only) | <br/>Campo informativo que indica si ya existen reportes programados en la cuenta de usuario.<br/>`True` la generación automática se encuentra activada. <br/> `False` la generación automática se encuentra Desactivada.<br/><br/> |
+
 ## Configura tus reportes
 
 Puedes configurar tus reportes según lo que necesites. A continuación, te mencionamos cuáles son las llamadas a la API que puedes hacer para crear, consultar y actualizar tus reportes.
@@ -363,8 +387,13 @@ Recibirás como respuesta un `HTTP STATUS 200 (Ok)`:
 
 ### Actualiza tu configuración
 
-Cuando necesites actualizar tu configuración, puedes ajustar los siguientes atributos:
+> NOTE
+>
+> Nota
+>
+>Si en la actualización de la configuración deseas modificar el atributo `frequency`, y ya tienes habilitada la generación automática de tus reportes, debes seguir estos pasos:<br/><br/> 1. Cancelar la generación programada de tus reportes, siguiendo los pasos de la sección [Desactivación](#bookmark_2._desactivación). <br/> 2. Realizar la actualización de la configuración modificando el atributo `frequency`, mediante los snippets dispuestos en esta sección. <br/> 3. Programar nuevamente la generación automática del reporte, siguiendo los pasos de la sección [Activación](#bookmark_1._activación).
 
+Cuando necesites actualizar tu configuración, puedes ajustar los siguientes atributos:
 
 [[[
 ```curl
@@ -603,33 +632,11 @@ Recibirás como respuesta un `HTTP STATUS 200 (Ok)`:
 }
 ```
 
-
-
-## Atributos configurables
-
-Conoce los campos que puedes configurar para ajustar tus preferencias antes de empezar:
-
-| Campos configurables | Descripción |
-| --- | --- |
-| `sftp_info` (opcional) | <br/>Indica los datos de subida a SFTP cuando lo necesites.<br/><br/> |
-| `separator` (opcional) | <br/>Separador que puedes usar en el archivo .csv cuando no quieras que el separador sea una coma. <br/><br/> |
-| `display_timezone` (opcional) | <br/>Este campo determina la fecha y la hora que se visualiza en los reportes. Si no configuras este campo con una zona horaria, el sistema tomará por defecto el valor GMT-04. Si eliges una zona horaria que utiliza horario de verano, es necesario que hagas el ajuste manual cuando cambie la hora.<br/><br/> |
-| `notification_email_list` (opcional) | <br/>Permite agregar un grupo de destinatarios de correo electrónico para que reciban una notificación cuando un reporte está listo y disponible para descargar. Asegúrate de incluir el correo asociado a tu cuenta de Mercado Pago para que también recibas las notificaciones.<br/><br/> |
-| `refund_detailed` (opcional) | <br/>Muestra el código de referencia (external_reference) del reembolso en vez del código de referencia (external_reference) del pago.<br/><br/> |
-| `include_withdrawal` (opcional) | <br/>Incluye los retiros de dinero en el reporte.<br/><br/> |
-| `coupon_detailed` (opcional) | <br/>Suma una columna para mostrar el detalle de los cupones de descuento.<br/><br/> |
-| `columns` | <br/>Campo con el detalle de columnas a incluir en tu reporte. Encuentra todos los posibles valores en la sección de  [Glosario](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/available-money/glossary).<br/><br/>|
-| `file_name_prefix` | <br/>Prefijo que compone el nombre del reporte una vez generado y listo para descargar.<br/><br/> |
-| `frequency` | <br/>Indica la frecuencia diaria, semanal o mensual de los reportes programados.<br/><br/> - `frequency` aplica type *monthly* al día del mes o *weekly* el día de la semana<br/> - `hour` hora del día en la que generar el reporte <br/> - `type` indica el tipo de frecuencia *daily* (diaria), *weekly* (semanal) y *monthly* (mensual).<br/><br/> |
-| `scheduled` (read_only) | <br/>Campo informativo que indica si ya existen reportes programados en la cuenta de usuario.<br/><br/> |
-
 > NOTE
 >
 > Nota
 >
 > Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/available-money/glossary) de Dinero retirado para revisarlo cuando lo necesites o quieras consultar algún término técnico.
-
-
 
 ## Generar de forma manual
 
@@ -891,12 +898,11 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 2018-04-17T15:38:40.000-04:00,,,release,payment,850.00,0.00,850.00,0.00,0.00,0.00,0.00,0.00,1,account_money
 ```
 
+## Programa tus reportes automáticos
 
-## Generar de forma programada
+Genera tus reportes de forma programada configurando dos instancias: activación y Desactivación.
 
-Genera tus reportes de forma programada configurando tres instancias: generación, configuración y descarga.
-
-### 1. Generación
+### 1. Activación
 
 Programa la generación automática del reporte utilizando la frecuencia en el recurso de configuración. Actualiza el atributo *`scheduled`* en la configuración a *`true`*:
 
@@ -987,7 +993,7 @@ Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
 ```
 
 
-### 2. Eliminación
+### 2. Desactivación
 
 Ejecuta el curl que necesites para cancelar la generación programada de tus reportes.
 
@@ -1079,88 +1085,11 @@ Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
 }
 ```
 
-### 3. Descarga
-
-Descarga el archivo con este comando:
-
-
-[[[
-```curl
-curl -X GET \
--H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
-    'https://api.mercadopago.com/v1/account/bank_report/:file_name'
-```
-```php
-<?php
-include('vendor/rmccue/requests/library/Requests.php');
-Requests::register_autoloader();
-$headers = array(
-    'Authorization' => 'Bearer ENV_ACCESS_TOKEN'
-);
-$response = Requests::get('https://api.mercadopago.com/v1/account/bank_report/:file_name', $headers);
-```
-```java
-URL url = new URL("https://api.mercadopago.com/v1/account/bank_report/:file_name");
-
-HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
-
-connection.setRequestMethod("GET");\
-connection.setRequestProperty("Authorization", "Bearer ENV_ACCESS_TOKEN");
-
-System.out.println(connection.getResponseCode());
-System.out.println(connection.getResponseMessage());
-System.out.println(connection.getInputStream());
-```
-```python
-import requests
-
-headers = {
-    'Authorization': 'Bearer ENV_ACCESS_TOKEN'
-}
-
-response = requests.get('https://api.mercadopago.com/v1/account/bank_report/:file_name', headers=headers)
-```
-```node
-var request = require('request');
-
-var headers = {
-    'Authorization': 'Bearer ENV_ACCESS_TOKEN'
-};
-
-var options = {
-    url: 'https://api.mercadopago.com/v1/account/bank_report/:file_name',
-    headers: headers,
-};
-
-function callback(error, response, body) {
-    if (!error && response.statusCode == 200) {
-        console.log(body);
-    }
-}
-
-request(options, callback);
-```
-]]]
-
-Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
-
-```csv
-DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_DEBIT_AMOUNT,GROSS_AMOUNT,MP_FEE_AMOUNT,FINANCING_FEE_AMOUNT,SHIPPING_FEE_AMOUNT,TAXES_AMOUNT,COUPON_AMOUNT,INSTALLMENTS,PAYMENT_METHOD
-2018-04-17T15:07:53.000-04:00,,,initial_available_balance,,813439.19,0.00,813439.19,0.00,0.00,0.00,0.00,0.00,1,
-2018-04-17T15:07:53.000-04:00,,,release,withdrawal,0.00,813363.45,-813360.45,-3.00,0.00,0.00,0.00,0.00,1,
-2018-04-17T15:11:12.000-04:00,,,release,payment,225.96,0.00,269.00,-43.04,0.00,0.00,0.00,0.00,1,account_money
-2018-04-17T15:18:16.000-04:00,,,release,payment,124.32,0.00,148.00,-23.68,0.00,0.00,0.00,0.00,1,visa
-2018-04-17T15:38:40.000-04:00,,,release,payment,820.14,0.00,1099.00,-278.86,0.00,0.00,0.00,0.00,6,visa
-2018-04-17T15:38:40.000-04:00,,,release,payment,850.00,0.00,850.00,0.00,0.00,0.00,0.00,0.00,1,account_money
-```
-
 > NOTE
 >
 > Esta documentación corresponde a la nueva versión de la API
 >
 > Para consultar la versión anterior, visita la sección de [sección de Generación por API antigua](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/available-money/v1/api).
-
-<hr/>
 
 ### Próximos pasos
 

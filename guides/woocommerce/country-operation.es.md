@@ -2,10 +2,10 @@
 
 En el campo **¿En qué país opera tu cuenta de Mercado Pago?**, selecciona el país en el que opera tu cuenta de Mercado Pago. 
 
-> NEXT_STEP_CARD_PT
+> NEXT_STEP_CARD_ES
 >
-> Ativação de credenciais
+> Activación de credenciales
 >
-> Aprenda a activar sus credenciales de producción y prueba.
+> Aprende a activar tus credenciales de producción y prueba.
 >
-> [Ativação de credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/woocommerce/credentials-activation)
+> [Activación de credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/woocommerce/credentials-activation)
