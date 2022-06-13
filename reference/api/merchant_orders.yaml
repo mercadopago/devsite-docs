@@ -64,7 +64,11 @@ paths:
                     por: Identificador da conta Mercado Pago do Partnet. É usado para identificar se a integração foi realizada por um partner.
                 payer:
                   type: object
-                  description: Buyer Information.
+                  description: Buyer's information.
+                  x-description-i18n:
+                    eng: Buyer's information.
+                    spa: Información del comprador
+                    por: Informação do comprador
                   properties:
                     id:
                       type: number
@@ -344,7 +348,11 @@ paths:
                           eng: Payer’s email address.
                           spa: E-mail del pagador
                           por: E-mail do pagante
-                    description: Buyer Information.
+                    description: Buyer's information.
+                    x-description-i18n:
+                      eng: Buyer's information.
+                      spa: Información del comprador
+                      por: Informação do comprador
                   items:
                     type: array
                     items:
@@ -429,7 +437,7 @@ paths:
                       spa: Información adicional
                       por: Informações adicionais
                   application_id:
-                    type: number
+                    type: string
                     example: 10000000000000000
                     description: application identifier.
                     x-description-i18n:
@@ -452,23 +460,21 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - invalid_user_id--invalid-users-involved-
-                      - >-
-                        invalid_order_state--the-action-requested-is-not-valid-for-the-current-merchant-order-state-
-                      - invalid_string--string-too-long-
-                      - invalid_application_id--internal-server-error-
-                      - invalid_items--invalid-unit-price-
-                      - user_not_allowed--user-not-allowed-to-operate-
-                      - invalid_operation_type--invalid-operation-type-
-                      - invalid_payer--invalid-payer-identifier-
-                      - invalid_id--invalid-preference-id-
-                      - invalid_expired--the-preference-id-has-expired-
-                      - invalid_sponsor_id--invalid-sponsor-id-
-                      - invalid_marketplace--invalid-marketplace-
-                      - >-
-                        unmarshal_error--could-not-unmarshal-request-body-into-merchant-order-struct-
-                      - invalid_url--invalid-URL--Isn-t-HTTP-or-HTTPS-
-                      - communication_error--Error-when-calling---
+                      - invalid_user_id--invalid users involved.
+                      - invalid_order_state--the action requested is not valid for the current merchant order state.
+                      - invalid_string--string too long.
+                      - invalid_application_id--internal server error.
+                      - invalid_items--invalid unit_price.
+                      - user_not_allowed--user not allowed to operate.
+                      - invalid_operation_type--invalid operation type.
+                      - invalid_payer--invalid payer identifier.
+                      - invalid_id--invalid preference_id.
+                      - invalid_expired--the preference_id has expired.
+                      - invalid_sponsor_id--invalid sponsor_id.
+                      - invalid_marketplace--invalid marketplace.
+                      - unmarshal_error--could not unmarshal request body into merchant order struct.
+                      - invalid_url--invalid URL. Isn't HTTP or HTTPS.
+                      - communication_error--Error when calling...
         '401':
           description: Error
           x-description-i18n:
@@ -483,8 +489,8 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - invalid_token--access-denied-
-                      - invalid_caller_id--invalid-caller-id
+                      - invalid_token--access denied.
+                      - invalid_caller_id--invalid caller_id
   /merchant_orders/search:
     get:
       tags:
@@ -581,6 +587,10 @@ paths:
         - name: marketplace
           in: query
           description: 'Origin of the payment. Default value: ''NONE'''
+          x-description-i18n:
+            eng: 'Origin of the payment. Default value: 'NONE''
+            spa: 'Origen del pago. Valor predeterminado: 'NONE''
+            por: 'Origem do pagamento. Valor padrão: 'NONE''
           required: false
           schema:
             type: string
@@ -1349,7 +1359,11 @@ paths:
                                 eng: Payer’s email address.
                                 spa: E-mail del pagador
                                 por: E-mail do pagante
-                          description: Buyer Information.
+                          description: Buyer's information.
+                          x-description-i18n:
+                            eng: Buyer's information.
+                            spa: Información del comprador
+                            por: Informação do comprador
                         items:
                           type: array
                           items:
@@ -1434,7 +1448,7 @@ paths:
                             spa: Información adicional
                             por: Informações adicionais
                         application_id:
-                          type: number
+                          type: string
                           example: 10000000000000000
                           description: application identifier.
                           x-description-i18n:
@@ -1443,15 +1457,27 @@ paths:
                             por: Id do aplicativo
                         order_status:
                           $ref: '#/components/schemas/order_status'
-                    description: elements
+                    description: Contains the order data.
+                    x-description-i18n:
+                      eng: Contains the order data.
+                      spa: Contiene los datos de la orden.
+                      por: Contém os dados do pedido.
                   next_offset:
                     type: number
                     example: 1
-                    description: next_offset
+                    description: Numeric field used to paginate the response.
+                    x-description-i18n:
+                      eng: Numeric field used to paginate the response.
+                      spa: Campo numérico utilizado para paginar la respuesta.
+                      por: Campo numérico usado para paginar a resposta.
                   total:
                     type: number
                     example: 1
-                    description: total
+                    description: Total search results.
+                    x-description-i18n:
+                      eng: Total search results.
+                      spa: Total de resultados de la búsqueda.
+                      por: Total de resultados da pesquisa.
         '400':
           description: Error
           x-description-i18n:
@@ -1466,7 +1492,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - ds_search_query--invalid-query-
+                      - ds_search_query--invalid query.
         '401':
           description: Error
           x-description-i18n:
@@ -1481,8 +1507,8 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - invalid_token--invalid-token-
-                      - invalid_caller_id--invalid-caller-id
+                      - invalid_token--invalid_token.
+                      - invalid_caller_id--invalid caller_id
   /merchant_orders/{id}:
     get:
       tags:
@@ -2216,7 +2242,11 @@ paths:
                       por: Valor reembolsado
                   payer:
                     type: object
-                    description: Buyer Information.
+                    description: Buyer's information.
+                    x-description-i18n:
+                      eng: Buyer's information.
+                      spa: Información del comprador
+                      por: Informação do comprador
                     properties:
                       id:
                         type: number
@@ -2318,7 +2348,7 @@ paths:
                       spa: Información adicional
                       por: Informações adicionais
                   application_id:
-                    type: number
+                    type: string
                     example: 10000000000000000
                     description: application identifier.
                     x-description-i18n:
@@ -2341,7 +2371,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - invalid_format--invalid-caller-id-
+                      - invalid_format--invalid caller.id.
         '401':
           description: Error
           x-description-i18n:
@@ -2356,8 +2386,8 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - invalid_token--access-denied-
-                      - invalid_caller_id--invalid-caller-id
+                      - invalid_token--access denied.
+                      - invalid_caller_id--invalid caller_id
     put:
       tags:
         - $ref: '#/tags/checkout-pro'
@@ -2428,7 +2458,11 @@ paths:
                     por: Identificador da conta Mercado Pago do Partnet. É usado para identificar se a integração foi realizada por um partner.
                 payer:
                   type: object
-                  description: Buyer Information.
+                  description: Buyer's information.
+                  x-description-i18n:
+                    eng: Buyer's information.
+                    spa: Información del comprador
+                    por: Informação do comprador
                   properties:
                     id:
                       type: number
@@ -2738,7 +2772,11 @@ paths:
                           eng: Payer’s email address.
                           spa: E-mail del pagador
                           por: E-mail do pagante
-                    description: Buyer Information.
+                    description: Buyer's information.
+                    x-description-i18n:
+                      eng: Buyer's information.
+                      spa: Información del comprador
+                      por: Informação do comprador
                   items:
                     type: array
                     items:
@@ -2824,7 +2862,7 @@ paths:
                       spa: Información adicional
                       por: Informações adicionais
                   application_id:
-                    type: number
+                    type: string
                     example: 10000000000000000
                     description: application identifier.
                     x-description-i18n:
@@ -2848,25 +2886,22 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - invalid_user_id--invalid-users-involved-
-                      - >-
-                        invalid_order_state--the-action-requested-is-not-valid-for-the-current-merchant-order-state-
-                      - invalid_string--string-too-long-
-                      - invalid_application_id--internal-server-error-
-                      - >-
-                        invalid_items--only-the-item-quantity-of-an-item-can-be-modified-
-                      - user_not_allowed--user-not-allowed-to-operate-
-                      - invalid_payment_id--invalid-payment-identifier-
-                      - invalid_operation_type--invalid-operation-type-
-                      - invalid_payer--invalid-payer-identifier-
-                      - invalid_shipment_id--invalid-shipment-identifier-
-                      - invalid_sponsor_id--invalid-sponsor-id-
-                      - invalid_marketplace--invalid-marketplace-
-                      - >-
-                        unmarshall_error--could-not-unmarshal-request-body-into-merchant-order-struct-
-                      - invalid_format--invalid-merchant-order-id-
-                      - invalid_url--invalid-URL--Isn-t-HTTP-or-HTTPS-
-                      - communication_error--Error-when-calling---
+                      - invalid_user_id--invalid users involved.
+                      - invalid_order_state--the action requested is not valid for the current merchant order state.
+                      - invalid_string--string too long.
+                      - invalid_application_id--internal server error.
+                      - invalid_items--only the item quantity of an item can be modified.
+                      - user_not_allowed--user not allowed to operate.
+                      - invalid_payment_id--invalid payment identifier.
+                      - invalid_operation_type--invalid operation type.
+                      - invalid_payer--invalid payer identifier.
+                      - invalid_shipment_id--invalid shipment identifier.
+                      - invalid_sponsor_id--invalid sponsor_id.
+                      - invalid_marketplace--invalid marketplace.
+                      - unmarshall_error--could not unmarshal request body into merchant order struct.
+                      - invalid_format--invalid merchant order id.
+                      - invalid_url--invalid URL. Isn't HTTP or HTTPS.
+                      - communication_error--Error when calling...
         '401':
           description: Error
           x-description-i18n:
@@ -2881,8 +2916,8 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - invalid_token--access-denied-
-                      - invalid_caller_id--invalid-caller-id
+                      - invalid_token--access denied.
+                      - invalid_caller_id--invalid caller_id
 components:
   schemas:
     status:
@@ -2957,7 +2992,7 @@ components:
       enum:
         - payment_required -- Order without payments or with all payments "rejected" or "cancelled".
         - reverted -- Order with all payments "refunded" or "chargeback".
-        - paid -- Order with the sum of all payments "approved", "chargeback" or "in_mediation" covers the order total amount.
+        - paid -- Order with the sum of all payments "approved", "chargeback" or "in_mediation", covers the order total amount.
         - partially_reverted -- Order with at least one payment "refunded" or "chargeback".
         - partially_paid -- Order with at least one payment "approved" and not covering order total amount.
         - payment_in_process -- Order with payments "in_process", "pending" or "authorized".

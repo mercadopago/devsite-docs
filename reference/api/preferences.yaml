@@ -69,12 +69,12 @@ paths:
                           por: URL da imagem do anúncio
                       category_id:
                         type: string
-                        example: cat123
-                        description: This is a free string where the item category can be added.
+                        example: car_electronics
+                        description: This is a free string where the item category can be added. We suggest using one of the options shown in the following link https://api.mercadopago.com/item_categories
                         x-description-i18n:
-                          eng: This is a free string where the item category can be added.
-                          spa: Esto es un string libre donde se puede agregar la categoría del ítem.
-                          por: Esta é uma string livre onde a categoria do item pode ser adicionada.
+                          eng: This is a free string where the item category can be added. We suggest using one of the options shown in the following link https://api.mercadopago.com/item_categories
+                          spa: Esto es un string libre donde se puede agregar la categoría del ítem. Sugerimos utilizar alguna de las opciones que se muestran en el siguiente enlace https://api.mercadopago.com/item_categories
+                          por: Esta é uma string livre onde a categoria do item pode ser adicionada. Sugerimos usar uma das opções mostradas no link a seguir https://api.mercadopago.com/item_categories
                       quantity:
                         type: number
                         example: 1
@@ -91,6 +91,14 @@ paths:
                           eng: Unique ID to identify the currency. ISO_4217 code. Some sites allow local currency and USD, but it is important to note that the amount is converted to local currency when the preference is created, as the checkout always processes transactions using local currency. If you use USD please take into consideration that this value is not automatically updated if the value of local currency changes in relation to USD.
                           spa: ID único para identificar la moneda. Código ISO_4217. Algunos sitios permiten la moneda local y USD, pero es importante tener en cuenta que el monto se convierte a moneda local cuando se crea la preferencia, ya que el checkout siempre procesa las transacciones en moneda local. Si usas USD, ten en cuenta que este valor no se actualiza automáticamente si el valor de la moneda local cambia en relación a USD.
                           por: ID exclusivo para identificar a moeda. Código ISO_4217. Alguns sites permitem moeda local e USD, mas é importante observar que o valor é convertido para moeda local quando a preferência é criada, pois o checkout sempre processa as transações em moeda local. Se você estiver usando USD, observe que esse valor não é atualizado automaticamente se o valor da moeda local mudar em relação ao USD.
+                        enum:
+                          - ARS -- Argentine peso.
+                          - BRL -- Brazilian real.
+                          - CLP -- Chilean peso.
+                          - MXN -- Mexican peso.
+                          - COP -- Colombian peso.
+                          - PEN -- Peruvian sol.
+                          - UYU -- Uruguayan peso.
                       unit_price:
                         type: number
                         example: 10
@@ -101,9 +109,9 @@ paths:
                           por: Preço unitário do item. Essa propriedade é usada em conjunto com a propriedade de quantity para determinar o custo do pedido.
                 payer:
                   type: object
-                  description: Buyer information, such as name, last name, e-mail, phone, personal identification, address, and registration date.
+                  description: Buyer´s information, such as name, last name, e-mail, phone, personal identification, address, and registration date.
                   x-description-i18n:
-                    eng: Buyer information, such as name, last name, e-mail, phone, personal identification, address, and registration date.
+                    eng: Buyer´s information, such as name, last name, e-mail, phone, personal identification, address, and registration date.
                     spa: Información del comprador, como nombre, apellido, correo electrónico, teléfono, identificación personal, dirección y fecha de registro.
                     por: Informações do comprador, como nome, sobrenome, e-mail, telefone, identificação pessoal, endereço e data de registro.
                   properties:
@@ -614,6 +622,14 @@ paths:
                             eng: Unique ID to identify the currency. ISO_4217 code. Some sites allow local currency and USD, but it is important to note that the amount is converted to local currency when the preference is created, as the checkout always processes transactions using local currency. If you use USD please take into consideration that this value is not automatically updated if the value of local currency changes in relation to USD.
                             spa: ID único para identificar la moneda. Código ISO_4217. Algunos sitios permiten la moneda local y USD, pero es importante tener en cuenta que el monto se convierte a moneda local cuando se crea la preferencia, ya que el checkout siempre procesa las transacciones en moneda local. Si usas USD, ten en cuenta que este valor no se actualiza automáticamente si el valor de la moneda local cambia en relación a USD.
                             por: ID exclusivo para identificar a moeda. Código ISO_4217. Alguns sites permitem moeda local e USD, mas é importante observar que o valor é convertido para moeda local quando a preferência é criada, pois o checkout sempre processa as transações em moeda local. Se você estiver usando USD, observe que esse valor não é atualizado automaticamente se o valor da moeda local mudar em relação ao USD.
+                          enum:
+                            - ARS -- Argentine peso.
+                            - BRL -- Brazilian real.
+                            - CLP -- Chilean peso.
+                            - MXN -- Mexican peso.
+                            - COP -- Colombian peso.
+                            - PEN -- Peruvian sol.
+                            - UYU -- Uruguayan peso.
                         quantity:
                           type: number
                           example: 1
@@ -984,7 +1000,7 @@ paths:
                       por: ID exclusivo gerado automaticamente que identifica a preferência. Por exemplo 036151801-2484cd71-7140-4c51-985a-d4cfcf133baf
                   init_point:
                     type: string
-                    example: >-
+                    example: 
                       https://www.mercadopago.com/mla/checkout/start?pref_id=202809963-920c288b-4ebb-40be-966f-700250fa5370
                     description: Automatically generated URL to open the Checkout.
                     x-description-i18n:
@@ -993,7 +1009,7 @@ paths:
                       por: URL gerado automaticamente para abrir o Checkout.
                   sandbox_init_point:
                     type: string
-                    example: >-
+                    example: 
                       https://sandbox.mercadopago.com/mla/checkout/pay?pref_id=202809963-920c288b-4ebb-40be-966f-700250fa5370
                     description: Automatically generated URL to open the Checkout in sandbox mode. Real users are used here, but transactions are executed using test credentials.
                     x-description-i18n:
@@ -1021,28 +1037,22 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - >-
-                        collector_does_not_comply_with_current_regulation--identity-validation-required-
-                      - invalid_collector_id--collector-id-invalid-
-                      - invalid_sponsor_id--sponsor-id-is-not-an-active-user-
-                      - >-
-                        invalid_collector_email--collector-is-not-collector-email-owner
-                      - invalid_operation_type--operation-type-invalid-
-                      - invalid_expiration_date_to--expiration-date-to-invalid-
-                      - invalid_date--invalid-date-of-expiration-
-                      - >-
-                        invalid_expiration_date_from--expiration-date-from-invalid-
-                      - invalid_items--unit-price-invalid-
-                      - invalid_back_urls--back-urls-invalid--Wrong-format
-                      - >-
-                        invalid_payment_methods--installments-invalid--Should-be-a-number-between-1-and-36-
-                      - >-
-                        invalid_marketplace_fee--marketplace-fee-must-not-be-greater-than-total-amount-
-                      - invalid_id--preference-id-not-found-
-                      - invalid_access_token--access-denied
-                      - >-
-                        invalid_shipments--invalid-type---type---for-field-shipments-cost-
-                      - invalid_binary_mode--binary-mode-must-be-boolean-
+                      - collector_does_not_comply_with_current_regulation--identity validation required.
+                      - invalid_collector_id--collector_id invalid.
+                      - invalid_sponsor_id--sponsor_id is not an active user.
+                      - invalid_collector_email--collector is not collector_email owner
+                      - invalid_operation_type--operation_type invalid.
+                      - invalid_expiration_date_to--expiration_date_to invalid.
+                      - invalid_date--invalid date of expiration.
+                      - invalid_expiration_date_from--expiration_date_from invalid.
+                      - invalid_items--unit_price invalid.
+                      - invalid_back_urls--back_urls invalid. Wrong format
+                      - invalid_payment_methods--installments invalid. Should be a number between 1 and 36.
+                      - invalid_marketplace_fee--marketplace_fee must not be greater than total amount.
+                      - invalid_id--preference_id not found.
+                      - invalid_access_token--access denied
+                      - invalid_shipments--invalid type (<type>) for field shipments.cost.
+                      - invalid_binary_mode--binary_mode must be boolean.
   /checkout/preferences/search:
     get:
       tags:
@@ -1119,7 +1129,11 @@ paths:
                         id:
                           type: string
                           example: 202809963-a2201f8d-11cb-443f-adf6-de5a42eed67d
-                          description: id
+                          description: Preference ID.
+                          x-description-i18n:
+                            eng: Preference ID.
+                            spa: Identificador de preferencia
+                            por: Identificação de preferência
                         client_id:
                           type: string
                           example: 6295877106812064
@@ -1214,7 +1228,11 @@ paths:
                             por: Data da última atualização
                         live_mode:
                           type: boolean
-                          description: live_mode
+                          description: Indicates whether the Payment was made in a production environment or in a Test environment. If TRUE, then the chargeback will be processed in production mode. If FALSE, then the chargeback will be processed in sandbox mode.
+                          x-description-i18n:
+                            eng: Indicates whether the Payment was made in a production environment or in a Test environment. If TRUE, then the chargeback will be processed in production mode. If FALSE, then the chargeback will be processed in sandbox mode.
+                            spa: Indica si el Pago se realizó en ambiente productivo o en un ambiente de Test. Si es TRUE, el contracargo se procesará en modo de producción. Si es FALSE, el contracargo se procesará en modo sandbox.
+                            por: Indica se o Pagamento foi feito em ambiente de produção ou em ambiente de Teste. Se TRUE, o estorno será processado em modo de produção. Se FALSE, o estorno será processado no modo sandbox.
                         marketplace:
                           type: string
                           example: NONE
@@ -1256,7 +1274,11 @@ paths:
                             por: ID exclusivo usado para identificar o produto.
                         purpose:
                           type: string
-                          description: purpose
+                          description: This field has two possible values, empty and wallet_purchase.
+                          x-description-i18n:
+                            eng: This field has two possible values, empty and wallet_purchase.
+                            spa: Este campo tiene dos valores posibles, empty y wallet_purchase.
+                            por: Este campo tem dois valores possíveis, empty e wallet_purchase.
                         site_id:
                           type: string
                           example: MLA
@@ -1281,11 +1303,15 @@ paths:
                             eng: Unique numeric ID to identify the sponsor. It is used to identify what platform the checkout flow was initiated in.
                             spa: ID numérico único para identificar al sponsor. Se utiliza para identificar en qué plataforma se inició el flujo de pago.
                             por: ID numérico exclusivo para identificar o sponsor. É usado para identificar em qual plataforma o fluxo de pagamento foi iniciado.
-                    description: elements
+                    description: Elements
                   next_offset:
                     type: number
                     example: 1
-                    description: next_offset
+                    description: Numeric field used to paginate the response.
+                    x-description-i18n:
+                      eng: Numeric field used to paginate the response.
+                      spa: Campo numérico utilizado para paginar la respuesta.
+                      por: Campo numérico usado para paginar a resposta.
                   total:
                     type: number
                     example: 1
@@ -1304,7 +1330,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - ds_search_query--invalid-query-
+                      - ds_search_query--invalid query.
         '401':
           description: Error
           x-description-i18n:
@@ -1319,8 +1345,8 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - invalid_token--invalid-token-
-                      - invalid_caller_id--invalid-caller-id
+                      - invalid_token--invalid_token.
+                      - invalid_caller_id--invalid caller_id
   /checkout/preferences/{id}:
     get:
       tags:
@@ -1457,7 +1483,7 @@ paths:
                       por: ID exclusivo gerado automaticamente que identifica a preferência. Por exemplo 036151801-2484cd71-7140-4c51-985a-d4cfcf133baf
                   init_point:
                     type: string
-                    example: >-
+                    example: 
                       https://www.mercadopago.com/mla/checkout/start?pref_id=202809963-a2201f8d-11cb-443f-adf6-de5a42eed67d
                     description: Automatically generated URL to open the Checkout.
                     x-description-i18n:
@@ -1490,6 +1516,14 @@ paths:
                             eng: Unique ID to identify the currency. ISO_4217 code. Some sites allow local currency and USD, but it is important to note that the amount is converted to local currency when the preference is created, as the checkout always processes transactions using local currency. If you use USD please take into consideration that this value is not automatically updated if the value of local currency changes in relation to USD.
                             spa: ID único para identificar la moneda. Código ISO_4217. Algunos sitios permiten la moneda local y USD, pero es importante tener en cuenta que el monto se convierte a moneda local cuando se crea la preferencia, ya que el checkout siempre procesa las transacciones en moneda local. Si usas USD, ten en cuenta que este valor no se actualiza automáticamente si el valor de la moneda local cambia en relación a USD.
                             por: ID exclusivo para identificar a moeda. Código ISO_4217. Alguns sites permitem moeda local e USD, mas é importante observar que o valor é convertido para moeda local quando a preferência é criada, pois o checkout sempre processa as transações em moeda local. Se você estiver usando USD, observe que esse valor não é atualizado automaticamente se o valor da moeda local mudar em relação ao USD.
+                          enum:
+                            - ARS -- Argentine peso.
+                            - BRL -- Brazilian real.
+                            - CLP -- Chilean peso.
+                            - MXN -- Mexican peso.
+                            - COP -- Colombian peso.
+                            - PEN -- Peruvian sol.
+                            - UYU -- Uruguayan peso.
                         title:
                           type: string
                           example: Practical Granite Shirt
@@ -1508,7 +1542,7 @@ paths:
                             por: URL da imagem do anúncio
                         description:
                           type: string
-                          example: >-
+                          example: 
                             This is my description
                           description: Item description. This is a free text field.
                           x-description-i18n:
@@ -1755,7 +1789,7 @@ paths:
                           por: Número Máximo de cotas
                   sandbox_init_point:
                     type: string
-                    example: >-
+                    example: 
                       https://sandbox.mercadopago.com/mla/checkout/pay?pref_id=202809963-a2201f8d-11cb-443f-adf6-de5a42eed67d
                     description: Automatically generated URL to open the Checkout in sandbox mode. Real users are used here, but transactions are executed using test credentials.
                     x-description-i18n:
@@ -1828,25 +1862,20 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - invalid_collector_id--collector-id-invalid-
-                      - invalid_sponsor_id--sponsor-id-is-not-an-active-user-
-                      - >-
-                        invalid_collector_email--collector-is-not-collector-email-owner-
-                      - invalid_operation_type--operation-type-invalid-
-                      - invalid_expiration_date_to--expiration-date-to-invalid-
-                      - >-
-                        invalid_expiration_date_from--expiration-date-from-invalid-
-                      - invalid_items--unit-price-invalid-
-                      - invalid_payer--payer-email-invalid--Max-length-150-
-                      - invalid_back_urls--back-urls-invalid--Wrong-format-
-                      - >-
-                        invalid_payment_methods--installments-invalid--Should-be-a-number-between-1-and-36-
-                      - >-
-                        invalid_marketplace_fee--marketplace-fee-must-not-be-greater-than-total-amount-
-                      - invalid_id--preference-id-not-found-
-                      - invalid_access_token--access-denied-
-                      - >-
-                        invalid_shipments--Invalid-total-amount--with-me2-it-cannot-be-lesser-than--limit--
+                      - invalid_collector_id--collector_id invalid.
+                      - invalid_sponsor_id--sponsor_id is not an active user.
+                      - invalid_collector_email--collector is not collector_email owner.
+                      - invalid_operation_type--operation_type invalid.
+                      - invalid_expiration_date_to--expiration_date_to invalid.
+                      - invalid_expiration_date_from--expiration_date_from invalid.
+                      - invalid_items--unit_price invalid.
+                      - invalid_payer--payer email invalid. Max length 150.
+                      - invalid_back_urls--back_urls invalid. Wrong format.
+                      - invalid_payment_methods--installments invalid. Should be a number between 1 and 36.
+                      - invalid_marketplace_fee--marketplace_fee must not be greater than total amount.
+                      - invalid_id--preference_id not found.
+                      - invalid_access_token--access denied.
+                      - invalid_shipments--Invalid total amount, with me2 it cannot be lesser than <limit>.
     put:
       tags:
         - $ref: '#/tags/checkout-pro'
@@ -1944,6 +1973,14 @@ paths:
                           eng: Unique ID to identify the currency. ISO_4217 code. Some sites allow local currency and USD, but it is important to note that the amount is converted to local currency when the preference is created, as the checkout always processes transactions using local currency. If you use USD please take into consideration that this value is not automatically updated if the value of local currency changes in relation to USD.
                           spa: ID único para identificar la moneda. Código ISO_4217. Algunos sitios permiten la moneda local y USD, pero es importante tener en cuenta que el monto se convierte a moneda local cuando se crea la preferencia, ya que el checkout siempre procesa las transacciones en moneda local. Si usas USD, ten en cuenta que este valor no se actualiza automáticamente si el valor de la moneda local cambia en relación a USD.
                           por: ID exclusivo para identificar a moeda. Código ISO_4217. Alguns sites permitem moeda local e USD, mas é importante observar que o valor é convertido para moeda local quando a preferência é criada, pois o checkout sempre processa as transações em moeda local. Se você estiver usando USD, observe que esse valor não é atualizado automaticamente se o valor da moeda local mudar em relação ao USD.
+                        enum:
+                          - ARS -- Argentine peso.
+                          - BRL -- Brazilian real.
+                          - CLP -- Chilean peso.
+                          - MXN -- Mexican peso.
+                          - COP -- Colombian peso.
+                          - PEN -- Peruvian sol.
+                          - UYU -- Uruguayan peso.
                       unit_price:
                         type: number
                         example: 10
@@ -2449,7 +2486,11 @@ paths:
                       por: Data de registro
                   date_of_expiration:
                     type: object
-                    description: 
+                    description: Expiration date
+                    x-description-i18n:
+                      eng: Expiration date
+                      spa: Fecha de vencimiento
+                      por: Data de validade
                   expiration_date_from:
                     type: string
                     format: nullable
@@ -2491,7 +2532,7 @@ paths:
                       por: ID exclusivo gerado automaticamente que identifica a preferência. Por exemplo 036151801-2484cd71-7140-4c51-985a-d4cfcf133baf
                   init_point:
                     type: string
-                    example: >-
+                    example: 
                       https://www.mercadopago.com/mla/checkout/start?pref_id=202809963-920c288b-4ebb-40be-966f-700250fa5370
                     description: Automatically generated URL to open the Checkout.
                     x-description-i18n:
@@ -2550,6 +2591,14 @@ paths:
                             eng: Unique ID to identify the currency. ISO_4217 code. Some sites allow local currency and USD, but it is important to note that the amount is converted to local currency when the preference is created, as the checkout always processes transactions using local currency. If you use USD please take into consideration that this value is not automatically updated if the value of local currency changes in relation to USD.
                             spa: ID único para identificar la moneda. Código ISO_4217. Algunos sitios permiten la moneda local y USD, pero es importante tener en cuenta que el monto se convierte a moneda local cuando se crea la preferencia, ya que el checkout siempre procesa las transacciones en moneda local. Si usas USD, ten en cuenta que este valor no se actualiza automáticamente si el valor de la moneda local cambia en relación a USD.
                             por: ID exclusivo para identificar a moeda. Código ISO_4217. Alguns sites permitem moeda local e USD, mas é importante observar que o valor é convertido para moeda local quando a preferência é criada, pois o checkout sempre processa as transações em moeda local. Se você estiver usando USD, observe que esse valor não é atualizado automaticamente se o valor da moeda local mudar em relação ao USD.
+                          enum:
+                            - ARS -- Argentine peso.
+                            - BRL -- Brazilian real.
+                            - CLP -- Chilean peso.
+                            - MXN -- Mexican peso.
+                            - COP -- Colombian peso.
+                            - PEN -- Peruvian sol.
+                            - UYU -- Uruguayan peso.
                         quantity:
                           type: number
                           example: 1
@@ -2719,6 +2768,11 @@ paths:
                           por: Data de registro
                       last_purchase:
                         type: object
+                        description: Date of last purchase
+                        x-description-i18n:
+                          eng: Date of last purchase
+                          spa: Fecha de última compra.
+                          por: Data da última compra.
                   payment_methods:
                     type: object
                     description: All configuration related to payments methods, such as excluded payment methods, excluded payment types, default payment method, and installments.
@@ -2729,8 +2783,8 @@ paths:
                     properties:
                       default_card_id:
                         type: object
-                        descriptionL: Default card ID.
-                        x-descriptionL-i18n:
+                        description: Default card ID.
+                        x-description-i18n:
                           eng: Default card ID.
                           spa: ID de tarjeta predeterminada.
                           por: ID do cartão padrão.
@@ -2822,7 +2876,7 @@ paths:
                         example: ''
                   sandbox_init_point:
                     type: string
-                    example: >-
+                    example: 
                       https://sandbox.mercadopago.com/mla/checkout/pay?pref_id=202809963-920c288b-4ebb-40be-966f-700250fa5370
                     description: Automatically generated URL to open the Checkout in sandbox mode. Real users are used here, but transactions are executed using test credentials.
                     x-description-i18n:
@@ -2965,25 +3019,20 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - invalid_collector_id--collector-id-invalid-
-                      - invalid_sponsor_id--sponsor-id-is-not-an-active-user-
-                      - >-
-                        invalid_collector_email--collector-is-not-collector-email-owner
-                      - invalid_operation_type--operation-type-invalid-
-                      - invalid_expiration_date_to--expiration-date-to-invalid-
-                      - invalid_date--invalid-date-of-expiration-
-                      - >-
-                        invalid_expiration_date_from--expiration-date-from-invalid-
-                      - invalid_items--unit-price-invalid-
-                      - invalid_back_urls--back-urls-invalid--Wrong-format
-                      - >-
-                        invalid_payment_methods--installments-invalid--Should-be-a-number-between-1-and-36-
-                      - >-
-                        invalid_marketplace_fee--marketplace-fee-must-not-be-greater-than-total-amount-
-                      - invalid_id--preference-id-not-found-
-                      - invalid_access_token--access-denied
-                      - >-
-                        invalid_shipments--invalid-type---type---for-field-shipments-cost-
+                      - invalid_collector_id--collector_id invalid.
+                      - invalid_sponsor_id--sponsor_id is not an active user.
+                      - invalid_collector_email--collector is not collector_email owner
+                      - invalid_operation_type--operation_type invalid.
+                      - invalid_expiration_date_to--expiration_date_to invalid.
+                      - invalid_date--invalid date of expiration.
+                      - invalid_expiration_date_from--expiration_date_from invalid.
+                      - invalid_items--unit_price invalid.
+                      - invalid_back_urls--back_urls invalid. Wrong format
+                      - invalid_payment_methods--installments invalid. Should be a number between 1 and 36.
+                      - invalid_marketplace_fee--marketplace_fee must not be greater than total amount.
+                      - invalid_id--preference_id not found.
+                      - invalid_access_token--access denied
+                      - invalid_shipments--invalid type (<type>) for field shipments.cost.
 
 components:
   schemas:

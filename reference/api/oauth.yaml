@@ -30,11 +30,19 @@ paths:
                 client_secret:
                   type: string
                   description: Private key to be used in some plugins to generate payments. One of the keys in the pair that make up the credentials that identify an application/integration in your account. 
+                  x-description-i18n:
+                    eng: Private key to be used in some plugins to generate payments. One of the keys in the pair that make up the credentials that identify an application/integration in your account.
+                    spa: Clave privada para ser utilizada en algunos complementos para generar pagos. Una de las claves del par que componen las credenciales que identifican una aplicación/integración en tu cuenta.
+                    por: Chave privada para ser utilizada em alguns plugins para gerar pagamentos. Uma das chaves do par que compõe as credenciais que identifica uma aplicação/integração na sua conta.
                   required: true
                   example: 'client_secret'
                 client_id:
                   type: string
                   description: Unique ID that identifies your application/integration. One of the keys in the pair that make up the credentials that identify an application/integration in your account. 
+                  x-description-i18n:
+                    eng: Unique ID that identifies your application/integration. One of the keys in the pair that make up the credentials that identify an application/integration in your account.
+                    spa: ID único que identifica tu aplicación/integración. Una de las claves del par que componen las credenciales que identifican una aplicación/integración en tu cuenta.
+                    por: ID único que identifica sua aplicação/integração. Uma das chaves do par que compõe as credenciais que identifica uma aplicação/integração na sua conta.
                   required: true
                   example: 'client_id'
                 grant_type:
@@ -71,6 +79,9 @@ paths:
                     eng: Value received when the access token is created. Only required when grant_type=refresh_token.
                     spa: Valor recibido cuando se crea el access token. Solo se requiere cuando grant_type=refresh_token.
                     por: Valor recebido quando o access token é criado. Requerido apenas quando grant_type=refresh_token.
+                test_token:
+                  type: string
+                  description: Added with value = true only when you want to generate credentials for testing.
       responses:
         '200':
           description: Success
@@ -97,6 +108,10 @@ paths:
                     type: string
                     example: 'bearer'
                     description: necessary information for the token to be used correctly to access protected resources. The token of type "bearer" is the only one supported by the authorization server and is used when the access token is included as plain text in the request. It is understood that the bearer has direct access to the token.
+                    x-description-i18n:
+                      eng: necessary information for the token to be used correctly to access protected resources. The token of type "bearer" is the only one supported by the authorization server and is used when the access token is included as plain text in the request. It is understood that the bearer has direct access to the token.
+                      spa: información necesaria para que el token se utilice correctamente para acceder a los recursos protegidos. El token de tipo "bearer" es el único admitido por el servidor de autorización y se utiliza cuando el access token se incluye como texto sin formato en la solicitud. Se entiende que el bearer tiene acceso directo al token.
+                      por: informações necessárias para que o token seja usado corretamente para acessar recursos protegidos. O token do tipo "bearer" é o único suportado pelo servidor de autorização e é usado quando o access token é incluído como texto simples na solicitação. Entende-se que o portador tem acesso direto ao token.
                   expires_in:
                     type: number
                     example: 15552000

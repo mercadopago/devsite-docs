@@ -83,7 +83,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 1001--Public-key-not-found-
+                      - 1001--Public_key not found.
         '401':
           description: Error
           x-description-i18n:
@@ -98,7 +98,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 1000--The-credentials-are-required-
+                      - 1000--The credentials are required.
         '404':
           description: Error
           x-description-i18n:
@@ -113,4 +113,4 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 1004--Identification-types-not-found-
+                      - 1004--Identification types not found.

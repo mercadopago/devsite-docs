@@ -136,7 +136,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - INVALID_STORE_ID--Invalid-STORE-ID-
+                      - INVALID_STORE_ID--Invalid STORE_ID.
   /users/{user_id}/stores:
     post:
       tags:
@@ -178,7 +178,7 @@ paths:
                     por: Nome da loja
                   example: Sucursal Instore
                 business_hours:
-                  description: >-
+                  description: 
                     Business hours. They are divided by day of the week and up to two opening and closing times per day are allowed.
                   type: object
                   properties:
@@ -372,21 +372,20 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - INVALID_USER_ID--USER-ID-must-be-number-
-                      - UNKNOWN_FIELD--Unknown-field-
-                      - INVALID_NAME--Name-must-be-string-
-                      - >-
-                        INVALID_BUSINESS_HOURS--BUSINESS-HOURS-must-be-json-object-
-                      - INVALID_DAY--Day-must-be-json-array-
-                      - INVALID_LOCATION--LOCATION-must-be-json-object-
-                      - INVALID_STREET_NAME--STREET-NAME-must-be-string-
-                      - INVALID_STREET_NUMBER--STREET-NUMBER-must-be-string-
-                      - INVALID_ZIP_CODE--ZIP-CODE-must-be-string-
-                      - INVALID_CITY_NAME--CITY-NAME-must-be-string-
-                      - INVALID_STATE_NAME--STATE-NAME-must-be-string-
-                      - INVALID_LATITUDE--LATITUDE-must-be-number-
-                      - INVALID_LONGITUDE--LONGITUDE-must-be-number-
-                      - INVALID_REFERENCE--REFERENCE-must-be-string-
+                      - INVALID_USER_ID--USER_ID must be number.
+                      - UNKNOWN_FIELD--Unknown field.
+                      - INVALID_NAME--Name must be string.
+                      - INVALID_BUSINESS_HOURS--BUSINESS_HOURS must be json_object.
+                      - INVALID_DAY--Day must be json_array.
+                      - INVALID_LOCATION--LOCATION must be json_object.
+                      - INVALID_STREET_NAME--STREET_NAME must be string.
+                      - INVALID_STREET_NUMBER--STREET_NUMBER must be string.
+                      - INVALID_ZIP_CODE--ZIP_CODE must be string.
+                      - INVALID_CITY_NAME--CITY_NAME must be string.
+                      - INVALID_STATE_NAME--STATE_NAME must be string.
+                      - INVALID_LATITUDE--LATITUDE must be number.
+                      - INVALID_LONGITUDE--LONGITUDE must be number.
+                      - INVALID_REFERENCE--REFERENCE must be string.
                       - VALIDATION_ERROR--External_id-already-used-
 
   /users/{user_id}/stores/search:
@@ -521,7 +520,7 @@ paths:
                             properties:
                               address_line:
                                 type: string
-                                example: >-
+                                example: 
                                   Caseros 3039, Belgrano, Capital Federal, Argentina
                                 description: address_line
                               reference:
@@ -556,10 +555,10 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - INVALID_USER_ID--USER-ID-must-be-number-
-                      - INVALID_OFFSET--OFFSET-must-be-number-
-                      - INVALID_LIMIT--LIMIT-must-be-number-
-                      - INVALID_EXTERNAL_ID--EXTERNAL-ID-must-be-alphanumeric-
+                      - INVALID_USER_ID--USER_ID must be number.
+                      - INVALID_OFFSET--OFFSET must be number.
+                      - INVALID_LIMIT--LIMIT must be number.
+                      - INVALID_EXTERNAL_ID--EXTERNAL_ID must be alphanumeric.
   /users/{user_id}/stores/{id}:
     put:
       tags:
@@ -612,7 +611,7 @@ paths:
                     por: Nome da loja
                   example: Sucursal Instore 2
                 business_hours:
-                  description: >-
+                  description: 
                     Business hours. They are divided by day of the week and up to two opening and closing times per day are allowed.
                   type: object
                   properties:
@@ -795,22 +794,21 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - INVALID_USER_ID--USER-ID-must-be-number-
-                      - UNKNOWN_FIELD--Unknown-field-
-                      - INVALID_STORE_ID--Invaliud-store-id-
-                      - INVALID_NAME--NAME-must-be-string-
-                      - >-
-                        INVALID_BUSINESS_HOURS--BUSINESS-HOURS-must-be-json-object-
-                      - INVALID_DAY--Day-must-be-json-array-
-                      - INVALID_LOCATION--LOCATION-must-be-json-object-
-                      - INVALID_STREET_NAME--STREET-NAME-must-be-string-
-                      - INVALID_STREET_NUMBER--STREET-NUMBER-must-be-string-
-                      - INVALID_ZIP_CODE--ZIP-CODE-must-be-string-
-                      - INVALID_CITY_NAME--CITY-NAME-must-be-string-
-                      - INVALID_STATE_NAME--STATE-NAME-must-be-string-
-                      - INVALID_LATITUDE--LATITUDE-must-be-number-
-                      - INVALID_LONGITUDE--LONGITUDE-must-be-number-
-                      - INVALID_REFERENCE--REFERENCE-must-be-string-
+                      - INVALID_USER_ID--USER_ID must be number.
+                      - UNKNOWN_FIELD--Unknown field.
+                      - INVALID_STORE_ID--Invaliud store_id.
+                      - INVALID_NAME--NAME must be string.
+                      - INVALID_BUSINESS_HOURS--BUSINESS_HOURS must be json_object.
+                      - INVALID_DAY--Day must be json_array.
+                      - INVALID_LOCATION--LOCATION must be json_object.
+                      - INVALID_STREET_NAME--STREET_NAME must be string.
+                      - INVALID_STREET_NUMBER--STREET_NUMBER must be string.
+                      - INVALID_ZIP_CODE--ZIP_CODE must be string.
+                      - INVALID_CITY_NAME--CITY_NAME must be string.
+                      - INVALID_STATE_NAME--STATE_NAME must be string.
+                      - INVALID_LATITUDE--LATITUDE must be number.
+                      - INVALID_LONGITUDE--LONGITUDE must be number.
+                      - INVALID_REFERENCE--REFERENCE must be string.
     delete:
       tags:
         - $ref: '#/tags/qr-code'
@@ -875,6 +873,6 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - INVALID_USER_ID--USER-ID-must-be-number-
-                      - INVALID_STORE_ID--STORE-ID-must-be-number-
-                      - UNKNOWN_FIELD--Unknow-field-
+                      - INVALID_USER_ID--USER_ID must be number.
+                      - INVALID_STORE_ID--STORE_ID must be number.
+                      - UNKNOWN_FIELD--Unknow field.

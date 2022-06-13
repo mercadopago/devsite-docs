@@ -126,7 +126,7 @@ paths:
                                 eng: Regular expression representing the excluded bins.
                                 spa: Expresión regular representando los bines excluídos
                                 por: A expressão regular, representando bines excluídos
-                              example: >-
+                              example: 
                                     ^(400163|400176|400178|400185|400199|423808|439267|471233|473200|476332|482481|451416|438935|(40117[8-9])|(45763[1-2])|457393|431274)
                             installments_pattern:
                               type: string
@@ -155,7 +155,7 @@ paths:
                             validation:
                               type: string
                               example: standard
-                              description: >-
+                              description: 
                                 Whether the card number can be validated using a checksum algorithm
                                 (usually Luhn)
                               enum:
@@ -191,7 +191,7 @@ paths:
                             card_location:
                               type: string
                               example: back
-                              description: >-
+                              description: 
                                 Whether the security code is located in the back or in the front of
                                 the card.
                               enum:
@@ -281,8 +281,8 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 1000--the-credentials-are-required-
-                      - 1001--public-key-not-found-
+                      - 1000--the credentials are required.
+                      - 1001--public_key not found.
         '401':
           description: Error
           x-description-i18n:
@@ -297,7 +297,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - unauthorized--unauthorized-
+                      - unauthorized--unauthorized.
         '404':
           description: Error
           x-description-i18n:
@@ -312,4 +312,4 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - not_found--not-found-
+                      - not_found--not_found.

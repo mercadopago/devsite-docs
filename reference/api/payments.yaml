@@ -30,15 +30,20 @@ paths:
               properties:
                 additional_info:
                   type: object
-                  description: >-
-                    Data that could improve fraud analysis and conversion rates.
-                    Try to send as much information as possible.
+                  description: Data that could improve fraud analysis and conversion rates. Try to send as much information as possible.
+                  x-description-i18n:
+                    eng: Data that could improve fraud analysis and conversion rates. Try to send as much information as possible.
+                    spa: Información que puede mejorar el análisis de prevención de fraude y la tasa de conversión. Trata de enviarnos toda la infomación posible.
+                    por: Informações que podem melhorar a análise de prevenção de fraude e a taxa de conversão. Trata de enviar-nos toda a informação possível.
                   properties:
                     ip_address:
                       type: string
-                      description: >-
-                        IP from where the request comes from (only for bank
-                        transfers).
+                      description: 
+                        IP from where the request comes from (only for bank transfers).
+                      x-description-i18n:
+                        eng: IP from where the request comes from (only for bank transfers).
+                        spa: IP del cual proviene el request (sólo para transferencia bancaria)
+                        por: IP do qual provém o request (apenas para transferência bancária)
                     items:
                       type: array
                       description: List of items to be paid.
@@ -303,9 +308,12 @@ paths:
                     por: Quando definido como TRUE, os pagamentos só podem ser aprovados ou rejeitados. Caso contrário, eles também podem resultar in_process.
                 callback_url:
                   type: string
-                  description: >-
-                    URL where mercadopago does the final redirect (only for bank
-                    transfers).
+                  description: 
+                    URL where mercadopago does the final redirect (only for bank transfers).
+                  x-description-i18n:
+                    eng: URL where mercadopago does the final redirect (only for bank transfers).
+                    spa: URL a la cual Mercado Pago hace la redirección final (sólo para transferencia bancaria).
+                    por: URL para a qual o Mercado Pago faz o redirecionamento final (apenas para transferência bancária).
                 campaign_id:
                   type: number
                   description: Discount campaign ID.
@@ -315,9 +323,12 @@ paths:
                     por: Identificador da campanha de desconto
                 capture:
                   type: boolean
-                  description: >-
-                    Determines if the payment should be captured (true, default
-                    value) or just reserved (false).
+                  description: 
+                    Determines if the payment should be captured (true, default value) or just reserved (false).
+                  x-description-i18n:
+                    eng: Determines if the payment should be captured (true, default value) or just reserved (false).
+                    spa: Determina si el pago debe ser capturado(true, default value) o solo reservado(false).
+                    por: Determina se o pagamento deve ser capturado(true, default value), ou apenas reservado(false).
                 coupon_amount:
                   type: number
                   description: Amount of the coupon discount.
@@ -350,11 +361,7 @@ paths:
                 date_of_expiration:
                   type: string
                   format: date
-                  description: Payment’s expiration date.
-                  x-description-i18n:
-                    eng: Payment’s expiration date.
-                    spa: Fecha de expiración del pago
-                    por: Data de expiração do pagamento
+                  description: Payment´s expiration date.
                 external_reference:
                   type: string
                   description: ID given by the merchant in their system.
@@ -392,23 +399,6 @@ paths:
                     eng: Notifications URL available to receive notifications of events related to Payment.
                     spa: URL de Notificaciones disponibilizada para recibir las notificaciones de los eventos relacionados al Pago.
                     por: URL de notificações disponível para receber notificações de eventos relacionados ao Pagamento.
-                order:
-                  type: object
-                  description: Order identifier.
-                  x-description-i18n:
-                    eng: Order identifier.
-                    spa: Identificador de orden
-                    por: Identificador de ordem
-                  properties:
-                    type:
-                      $ref: '#/components/schemas/order_type'
-                    id:
-                      type: number
-                      description: Id of the associated purchase order.
-                      x-description-i18n:
-                        eng: Id of the associated purchase order.
-                        spa: Identificador de la orden de compra asociada
-                        por: Identificação da ordem de compra associada
                 payer:
                   type: object
                   description: Identifies the buyer.
@@ -430,18 +420,10 @@ paths:
                         por: Identificação do pagador associado
                     email:
                       type: string
-                      description: email associated to the payer.
-                      x-description-i18n:
-                        eng: email associated to the payer.
-                        spa: email asociado al pagador.
-                        por: e-mail associado ao pagador.
+                      description: Email associated to the payer. This value will only return a response when status=approved, status=refunded or status=charged_back
                     identification:
                       type: object
-                      description: Personal identification.
-                      x-description-i18n:
-                        eng: Personal identification.
-                        spa: Identificación personal
-                        por: Identificação pessoal
+                      description: Personal identification. This value will only return a response when status=approved, status=refunded or status=charged_back
                       properties:
                         type:
                           type: string
@@ -607,7 +589,7 @@ paths:
                     $ref: '#/components/schemas/currency_id'
                   description:
                     type: string
-                    example: >-
+                    example: 
                       Point Mini a maquininha que dá o dinheiro de suas vendas
                       na hora
                     description: Description sent in the payment creation request.
@@ -649,7 +631,11 @@ paths:
                   taxes_amount:
                     type: number
                     example: 0
-                    description: taxes_amount
+                    description: Corresponds to the tax values ​​calculated for the payment.
+                    x-description-i18n:
+                      eng: Corresponds to the tax values ​​calculated for the payment.
+                      spa: Corresponde a los valores de impuestos calculados para el pago.
+                      por: Corresponde aos valores dos impostos calculados para o pagamento.
                   counter_currency:
                     type: string
                     format: nullable
@@ -701,11 +687,7 @@ paths:
                       email:
                         type: string
                         example: test_user_80507629@testuser.com
-                        description: email associated to the payer.
-                        x-description-i18n:
-                          eng: email associated to the payer.
-                          spa: email asociado al pagador.
-                          por: e-mail associado ao pagador.
+                        description: Email associated to the payer. This value will only return a response when status=approved, status=refunded or status=charged_back
                       identification:
                         type: object
                         properties:
@@ -725,11 +707,7 @@ paths:
                               eng: Identification type.
                               spa: Tipo de identificación
                               por: Tipo de identificação
-                        description: Personal identification.
-                        x-description-i18n:
-                          eng: Personal identification.
-                          spa: Identificación personal
-                          por: Identificação pessoal
+                        description: Personal identification. This value will only return a response when status=approved, status=refunded or status=charged_back
                       type:
                         $ref: '#/components/schemas/payer_type'
                     description: Payer data - ID (identifying number), email address, identification (type and number of id)
@@ -770,7 +748,7 @@ paths:
                                 por: Nome do item
                             description:
                               type: string
-                              example: >-
+                              example: 
                                 Producto Point para cobros con tarjetas mediante
                                 bluetooth
                               description: Long item description.
@@ -780,7 +758,7 @@ paths:
                                 por: Descrição do artigo
                             picture_url:
                               type: string
-                              example: >-
+                              example: 
                                 https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium@2x.png
                               description: Image URL.
                               x-description-i18n:
@@ -889,13 +867,6 @@ paths:
                       eng: Additional information.
                       spa: Información adicional
                       por: Informações adicionais
-                  order:
-                    type: object
-                    description: List of orders
-                    x-description-i18n:
-                      eng: List of orders
-                      spa: Lista de órdenes
-                      por: Lista de pedidos
                   external_reference:
                     type: string
                     example: MP0001
@@ -1169,11 +1140,7 @@ paths:
                                   eng: Identification type.
                                   spa: Tipo de identificación
                                   por: Tipo de identificação
-                            description: Personal identification.
-                            x-description-i18n:
-                              eng: Personal identification.
-                              spa: Identificación personal
-                              por: Identificação pessoal
+                            description: Personal identification. 
                         description: Cardholder details.
                         x-description-i18n:
                           eng: Cardholder details.
@@ -1288,6 +1255,10 @@ paths:
                               eng: Alphanumeric code to copy and paste, used to finalize the payment
                               spa: Código alfanumérico para copiar y pegar, para finalizar el pago
                               por: Código alfanumérico para copiar e colar, para finalizar o pagamento
+                          ticket_url:
+                            type: string
+                            example: https://www.mercadopago.com.br/payments/123456789/ticket?caller_id=123456&hash=123e4567-e89b-12d3-a456-426655440000
+                            description: A link to the rendered pix, with QR codes and instructions to pay
                         description: Information on the pending payment that was generated
                         x-description-i18n:
                           eng: Information on the pending payment that was generated
@@ -1312,98 +1283,80 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 1--Params-Error-
-                      - 3--Token-must-be-for-test-
-                      - 5--Must-provide-your-access-token-to-proceed-
-                      - >-
-                        23--The-following-parameters-must-be-valid-date-and-format--yyyy-MM-dd-T-HH-mm-ssz--date-of-expiration-
-                      - 1000--Number-of-rows-exceeded-the-limits-
-                      - 1001--Date-format-must-be-yyyy-MM-dd-T-HH-mm-ss-SSSZ-
-                      - >-
-                        2001--Already-posted-the-same-request-in-the-last-minute-
-                      - 2002--Customer-not-found-
-                      - 2004--POST-to-Gateway-Transactions-API-fail-
-                      - 2006--Card-Token-not-found-
-                      - 2007--Connection-to-Card-Token-API-fail-
-                      - 2009--Card-token-issuer-can-t-be-null-
-                      - 2060--The-customer-can-t-be-equal-to-the-collector-
-                      - >-
-                        3000--You-must-provide-your-cardholder-name-with-your-card-data-
-                      - >-
-                        3001--You-must-provide-your-cardissuer-id-with-your-card-data-
-                      - 3003--Invalid-card-token-id-
-                      - 3004--Invalid-parameter-site-id-
-                      - >-
-                        3005--Not-valid-action--the-resource-is-in-a-state-that-does-not-allow-this-operation--For-more-information-see-the-state-that-has-the-resource-
-                      - 3006--Invalid-parameter-cardtoken-id-
-                      - 3007--The-parameter-client-id-can-not-be-null-or-empty-
-                      - 3008--Not-found-Cardtoken-
-                      - 3009--unauthorized-client-id-
-                      - 3010--Not-found-card-on-whitelist-
-                      - 3011--Not-found-payment-method-
-                      - 3012--Invalid-parameter-security-code-length-
-                      - >-
-                        3013--The-parameter-security-code-is-a-required-field-can-not-be-null-or-empty-
-                      - 3014--Invalid-parameter-payment-method-
-                      - 3015--Invalid-parameter-card-number-length-
-                      - 3016--Invalid-parameter-card-number-
-                      - >-
-                        3017--The-parameter-card-number-id-can-not-be-null-or-empty-
-                      - >-
-                        3018--The-parameter-expiration-month-can-not-be-null-or-empty-
-                      - >-
-                        3019--The-parameter-expiration-year-can-not-be-null-or-empty-
-                      - >-
-                        3020--The-parameter-cardholder-name-can-not-be-null-or-empty-
-                      - >-
-                        3021--The-parameter-cardholder-document-number-can-not-be-null-or-empty-
-                      - >-
-                        3022--The-parameter-cardholder-document-type-can-not-be-null-or-empty-
-                      - >-
-                        3023--The-parameter-cardholder-document-subtype-can-not-be-null-or-empty-
-                      - >-
-                        3024--Not-valid-action---partial-refund-unsupported-for-this-transaction-
-                      - 3025--Invalid-Auth-Code-
-                      - 3026--Invalid-card-id-for-this-payment-method-id-
-                      - 3027--Invalid-payment-type-id-
-                      - 3028--Invalid-payment-method-id-
-                      - 3029--Invalid-card-expiration-month-
-                      - 3030--Invalid-card-expiration-year-
-                      - 4000--card-atributte-can-t-be-null-
-                      - 4001--payment-method-id-atributte-can-t-be-null-
-                      - 4002--transaction-amount-atributte-can-t-be-null-
-                      - 4003--transaction-amount-atributte-must-be-numeric-
-                      - 4004--installments-atributte-can-t-be-null-
-                      - 4005--installments-atributte-must-be-numeric-
-                      - 4006--payer-atributte-is-malformed-
-                      - 4007--site-id-atributte-can-t-be-null-
-                      - 4012--payer-id-atributte-can-t-be-null-
-                      - 4013--payer-type-atributte-can-t-be-null-
-                      - >-
-                        4015--payment-method-reference-id-atributte-can-t-be-null-
-                      - >-
-                        4016--payment-method-reference-id-atributte-must-be-numeric-
-                      - 4017--status-atributte-can-t-be-null-
-                      - 4018--payment-id-atributte-can-t-be-null-
-                      - 4019--payment-id-atributte-must-be-numeric-
-                      - 4020--notificaction-url-atributte-must-be-url-valid-
-                      - >-
-                        4021--notificaction-url-atributte-must-be-shorter-than-500-characters-
-                      - 4022--metadata-atributte-must-be-a-valid-JSON-
-                      - 4023--transaction-amount-atributte-can-t-be-null-
-                      - 4024--transaction-amount-atributte-must-be-numeric-
-                      - 4025--refund-id-can-t-be-null-
-                      - 4026--Invalid-coupon-amount-
-                      - 4027--campaign-id-atributte-must-be-numeric-
-                      - 4028--coupon-amount-atributte-must-be-numeric-
-                      - 4029--Invalid-payer-type-
-                      - 4037--Invalid-transaction-amount-
-                      - >-
-                        4038--application-fee-cannot-be-bigger-than-transaction-amount-
-                      - 4039--application-fee-cannot-be-a-negative-value-
-                      - 4050--payer-email-must-be-a-valid-email-
-                      - 4051--payer-email-must-be-shorter-than-254-characters-
-                      - 7523--Invalid-expiration-date-
+                      - 1--Params Error.
+                      - 3--Token must be for test.
+                      - 5--Must provide your access_token to proceed.
+                      - 23--The following parameters must be valid date and format (yyyy-MM-dd'T'HH:mm:ssz) date_of_expiration.
+                      - 1000--Number of rows exceeded the limits.
+                      - 1001--Date format must be yyyy-MM-dd'T'HH:mm:ss.SSSZ.
+                      - 2001--Already posted the same request in the last minute.
+                      - 2002--Customer not found.
+                      - 2004--POST to Gateway Transactions API fail.
+                      - 2006--Card Token not found.
+                      - 2007--Connection to Card Token API fail.
+                      - 2009--Card token issuer can't be null.
+                      - 2060--The customer can't be equal to the collector.
+                      - 3000--You must provide your cardholder_name with your card data.
+                      - 3001--You must provide your cardissuer_id with your card data.
+                      - 3003--Invalid card_token_id.
+                      - 3004--Invalid parameter site_id.
+                      - 3005--Not valid action, the resource is in a state that does not allow this operation. For more information see the state that has the resource.
+                      - 3006--Invalid parameter cardtoken_id.
+                      - 3007--The parameter client_id can not be null or empty.
+                      - 3008--Not found Cardtoken.
+                      - 3009--unauthorized client_id.
+                      - 3010--Not found card on whitelist.
+                      - 3011--Not found payment_method.
+                      - 3012--Invalid parameter security_code_length.
+                      - 3013--The parameter security_code is a required field can not be null or empty.
+                      - 3014--Invalid parameter payment_method.
+                      - 3015--Invalid parameter card_number_length.
+                      - 3016--Invalid parameter card_number.
+                      - 3017--The parameter card_number_id can not be null or empty.
+                      - 3018--The parameter expiration_month can not be null or empty.
+                      - 3019--The parameter expiration_year can not be null or empty.
+                      - 3020--The parameter cardholder.name can not be null or empty.
+                      - 3021--The parameter cardholder.document.number can not be null or empty.
+                      - 3022--The parameter cardholder.document.type can not be null or empty.
+                      - 3023--The parameter cardholder.document.subtype can not be null or empty.
+                      - 3024--Not valid action - partial refund unsupported for this transaction.
+                      - 3025--Invalid Auth Code.
+                      - 3026--Invalid card_id for this payment_method_id.
+                      - 3027--Invalid payment_type_id.
+                      - 3028--Invalid payment_method_id.
+                      - 3029--Invalid card expiration month.
+                      - 3030--Invalid card expiration year.
+                      - 4000--card atributte can't be null.
+                      - 4001--payment_method_id atributte can't be null.
+                      - 4002--transaction_amount atributte can't be null.
+                      - 4003--transaction_amount atributte must be numeric.
+                      - 4004--installments atributte can't be null.
+                      - 4005--installments atributte must be numeric.
+                      - 4006--payer atributte is malformed.
+                      - 4007--site_id atributte can't be null.
+                      - 4012--payer.id atributte can't be null.
+                      - 4013--payer.type atributte can't be null.
+                      - 4015--payment_method_reference_id atributte can't be null.
+                      - 4016--payment_method_reference_id atributte must be numeric.
+                      - 4017--status atributte can't be null.
+                      - 4018--payment_id atributte can't be null.
+                      - 4019--payment_id atributte must be numeric.
+                      - 4020--notificaction_url atributte must be url valid.
+                      - 4021--notificaction_url atributte must be shorter than 500 characters.
+                      - 4022--metadata atributte must be a valid JSON.
+                      - 4023--transaction_amount atributte can't be null.
+                      - 4024--transaction_amount atributte must be numeric.
+                      - 4025--refund_id can't be null.
+                      - 4026--Invalid coupon_amount.
+                      - 4027--campaign_id atributte must be numeric.
+                      - 4028--coupon_amount atributte must be numeric.
+                      - 4029--Invalid payer type.
+                      - 4037--Invalid transaction_amount.
+                      - 4038--application_fee cannot be bigger than transaction_amount.
+                      - 4039--application_fee cannot be a negative value.
+                      - 4050--payer.email must be a valid email.
+                      - 4051--payer.email must be shorter than 254 characters.
+                      - 7523--Invalid expiration date.
         '403':
           description: Error
           x-description-i18n:
@@ -1418,9 +1371,8 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 4--The-caller-is-not-authorized-to-access-this-resource-
-                      - >-
-                        3002--The-caller-is-not-authorized-to-perform-this-action-
+                      - 4--The caller is not authorized to access this resource.
+                      - 3002--The caller is not authorized to perform this action.
         '404':
           description: Error
           x-description-i18n:
@@ -1435,7 +1387,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 2000--Payment-not-found
+                      - 2000--Payment not found
   /v1/payments/{id}:
     get:
       tags:
@@ -1639,18 +1591,10 @@ paths:
                       email:
                         type: string
                         example: afriend@gmail.com
-                        description: email associated to the payer.
-                        x-description-i18n:
-                          eng: email associated to the payer.
-                          spa: email asociado al pagador.
-                          por: e-mail associado ao pagador.
+                        description: Email associated to the payer. This value will only return a response when status=approved, status=refunded or status=charged_back
                       identification:
                         type: object
-                        description: Personal identification.
-                        x-description-i18n:
-                          eng: Personal identification.
-                          spa: Identificación personal
-                          por: Identificação pessoal
+                        description: Personal identification. This value will only return a response when status=approved, status=refunded or status=charged_back
                         properties:
                           type:
                             type: string
@@ -1684,13 +1628,6 @@ paths:
                       eng: Additional information.
                       spa: Información adicional
                       por: Informações adicionais
-                  order:
-                    type: object
-                    description: List of orders
-                    x-description-i18n:
-                      eng: List of orders
-                      spa: Lista de órdenes
-                      por: Lista de pedidos
                   external_reference:
                     type: string
                     format: nullable
@@ -1921,60 +1858,47 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 1--Params-Error-
-                      - 3--Token-must-be-for-test-
-                      - 5--Must-provide-your-access-token-to-proceed-
-                      - 1000--Number-of-rows-exceeded-the-limits-
-                      - 1001--Date-format-must-be-yyyy-MM-dd-T-HH-mm-ss-SSSZ-
-                      - >-
-                        2001--Already-posted-the-same-request-in-the-last-minute-
-                      - 2002--Customer-not-found-
-                      - 2004--POST-to-Gateway-Transactions-API-fail-
-                      - 2006--Card-Token-not-found-
-                      - 2007--Connection-to-Card-Token-API-fail-
-                      - 2009--Card-token-issuer-can-t-be-null-
-                      - >-
-                        3000--You-must-provide-your-cardholder-name-with-your-card-data-
-                      - >-
-                        3001--You-must-provide-your-cardissuer-id-with-your-card-data-
-                      - 3003--Invalid-card-token-id-
-                      - 3004--Invalid-parameter-site-id-
-                      - >-
-                        3005--Not-valid-action--the-resource-is-in-a-state-that-does-not-allow-this-operation--For-more-information-see-the-state-that-has-the-resource-
-                      - 3006--Invalid-parameter-cardtoken-id-
-                      - 3007--The-parameter-client-id-can-not-be-null-or-empty-
-                      - 3008--Not-found-Cardtoken-
-                      - 3009--unauthorized-client-id-
-                      - 3010--Not-found-card-on-whitelist-
-                      - 3011--Not-found-payment-method-
-                      - 3012--Invalid-parameter-security-code-length-
-                      - >-
-                        3013--The-parameter-security-code-is-a-required-field-can-not-be-null-or-empty-
-                      - 3014--Invalid-parameter-payment-method-
-                      - 3015--Invalid-parameter-card-number-length-
-                      - 3016--Invalid-parameter-card-number-
-                      - >-
-                        3017--The-parameter-card-number-id-can-not-be-null-or-empty-
-                      - >-
-                        3018--The-parameter-expiration-month-can-not-be-null-or-empty-
-                      - >-
-                        3019--The-parameter-expiration-year-can-not-be-null-or-empty-
-                      - >-
-                        3020--The-parameter-cardholder-name-can-not-be-null-or-empty-
-                      - >-
-                        3021--The-parameter-cardholder-document-number-can-not-be-null-or-empty-
-                      - >-
-                        3022--The-parameter-cardholder-document-type-can-not-be-null-or-empty-
-                      - >-
-                        3023--The-parameter-cardholder-document-subtype-can-not-be-null-or-empty-
-                      - >-
-                        3024--Not-valid-action---partial-refund-unsupported-for-this-transaction-
-                      - 3025--Invalid-Auth-Code-
-                      - 3026--Invalid-card-id-for-this-payment-method-id-
-                      - 3027--Invalid-payment-type-id-
-                      - 3028--Invalid-payment-method-id-
-                      - 3029--Invalid-card-expiration-month-
-                      - 3030--Invalid-card-expiration-year-
+                      - 1--Params Error.
+                      - 3--Token must be for test.
+                      - 5--Must provide your access_token to proceed.
+                      - 1000--Number of rows exceeded the limits.
+                      - 1001--Date format must be yyyy-MM-dd'T'HH:mm:ss.SSSZ.
+                      - 2001--Already posted the same request in the last minute.
+                      - 2002--Customer not found.
+                      - 2004--POST to Gateway Transactions API fail.
+                      - 2006--Card Token not found.
+                      - 2007--Connection to Card Token API fail.
+                      - 2009--Card token issuer can't be null.
+                      - 3000--You must provide your cardholder_name with your card data.
+                      - 3001--You must provide your cardissuer_id with your card data.
+                      - 3003--Invalid card_token_id.
+                      - 3004--Invalid parameter site_id.
+                      - 3005--Not valid action, the resource is in a state that does not allow this operation. For more information see the state that has the resource.
+                      - 3006--Invalid parameter cardtoken_id.
+                      - 3007--The parameter client_id can not be null or empty.
+                      - 3008--Not found Cardtoken.
+                      - 3009--unauthorized client_id.
+                      - 3010--Not found card on whitelist.
+                      - 3011--Not found payment_method.
+                      - 3012--Invalid parameter security_code_length.
+                      - 3013--The parameter security_code is a required field can not be null or empty.
+                      - 3014--Invalid parameter payment_method.
+                      - 3015--Invalid parameter card_number_length.
+                      - 3016--Invalid parameter card_number.
+                      - 3017--The parameter card_number_id can not be null or empty.
+                      - 3018--The parameter expiration_month can not be null or empty.
+                      - 3019--The parameter expiration_year can not be null or empty.
+                      - 3020--The parameter cardholder.name can not be null or empty.
+                      - 3021--The parameter cardholder.document.number can not be null or empty.
+                      - 3022--The parameter cardholder.document.type can not be null or empty.
+                      - 3023--The parameter cardholder.document.subtype can not be null or empty.
+                      - 3024--Not valid action - partial refund unsupported for this transaction.
+                      - 3025--Invalid Auth Code.
+                      - 3026--Invalid card_id for this payment_method_id.
+                      - 3027--Invalid payment_type_id.
+                      - 3028--Invalid payment_method_id.
+                      - 3029--Invalid card expiration month.
+                      - 3030--Invalid card expiration year.
         '403':
           description: Error
           x-description-i18n:
@@ -1989,9 +1913,8 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 4--The-caller-is-not-authorized-to-access-this-resource-
-                      - >-
-                        3002--The-caller-is-not-authorized-to-perform-this-action-
+                      - 4--The caller is not authorized to access this resource.
+                      - 3002--The caller is not authorized to perform this action.
         '404':
           description: Error
           x-description-i18n:
@@ -2006,7 +1929,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 2000--Payment-not-found-
+                      - 2000--Payment not found.
     put:
       tags:
         - $ref: '#/tags/checkout-pro'
@@ -2042,7 +1965,7 @@ paths:
               properties:
                 capture:
                   type: boolean
-                  description: >-
+                  description: 
                     Determines if the payment should be captured (true, default
                     value) or just reserved (false).
                   example: true
@@ -2063,7 +1986,7 @@ paths:
                     por: O objeto de metadata mostra (se usado na integração) o JSON enviado pelo cliente com informações adicionais que precisam ser registradas no pagamento.
                 status:
                   type: string
-                  description: >-
+                  description: 
                     Determines if the payment should be cancelled
                   example: "cancelled"
                 transaction_amount:
@@ -2180,7 +2103,7 @@ paths:
                     $ref: '#/components/schemas/currency_id'
                   description:
                     type: string
-                    example: >-
+                    example: 
                       Point Mini a maquininha que dá o dinheiro de suas vendas
                       na hora
                     description: Description sent in the payment creation request.
@@ -2222,7 +2145,11 @@ paths:
                   taxes_amount:
                     type: number
                     example: 0
-                    description: taxes_amount
+                    description: Corresponds to the tax values ​​calculated for the payment.
+                    x-description-i18n:
+                      eng: Corresponds to the tax values ​​calculated for the payment.
+                      spa: Corresponde a los valores de impuestos calculados para el pago.
+                      por: Corresponde aos valores dos impostos calculados para o pagamento.
                   counter_currency:
                     type: string
                     format: nullable
@@ -2279,22 +2206,14 @@ paths:
                       email:
                         type: string
                         example: test_user_80507629@testuser.com
-                        description: email associated to the payer.
-                        x-description-i18n:
-                          eng: email associated to the payer.
-                          spa: email asociado al pagador.
-                          por: e-mail associado ao pagador.
+                        description: Email associated to the payer. This value will only return a response when status=approved, status=refunded or status=charged_back
                       identification:
                         type: object
                         properties:
                           number:
                             type: string
                             example: 19119119100
-                            description: Identification number.
-                            x-description-i18n:
-                              eng: Identification number.
-                              spa: Número de identificación
-                              por: Número de identificação
+                            description: Identification number. 
                           type:
                             type: string
                             example: CPF
@@ -2303,11 +2222,7 @@ paths:
                               eng: Identification type.
                               spa: Tipo de identificación
                               por: Tipo de identificação
-                        description: Personal identification.
-                        x-description-i18n:
-                          eng: Personal identification.
-                          spa: Identificación personal
-                          por: Identificação pessoal
+                        description: Personal identification. This value will only return a response when status=approved, status=refunded or status=charged_back
                       type:
                         $ref: '#/components/schemas/payer_type'
                   metadata:
@@ -2343,7 +2258,7 @@ paths:
                                 por: Nome do item
                             description:
                               type: string
-                              example: >-
+                              example: 
                                 Producto Point para cobros con tarjetas mediante
                                 bluetooth
                               description: Long item description.
@@ -2353,7 +2268,7 @@ paths:
                                 por: Descrição do artigo
                             picture_url:
                               type: string
-                              example: >-
+                              example: 
                                 https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium@2x.png
                               description: Image URL.
                               x-description-i18n:
@@ -2462,13 +2377,6 @@ paths:
                       eng: Additional information.
                       spa: Información adicional
                       por: Informações adicionais
-                  order:
-                    type: object
-                    description: List of orders
-                    x-description-i18n:
-                      eng: List of orders
-                      spa: Lista de órdenes
-                      por: Lista de pedidos
                   external_reference:
                     type: string
                     example: MP0001
@@ -2861,6 +2769,10 @@ paths:
                               eng: Alphanumeric code to copy and paste, used to finalize the payment
                               spa: Código alfanumérico para copiar y pegar, para finalizar el pago
                               por: Código alfanumérico para copiar e colar, para finalizar o pagamento
+                          ticket_url:
+                            type: string
+                            example: https://www.mercadopago.com.br/payments/123456789/ticket?caller_id=123456&hash=123e4567-e89b-12d3-a456-426655440000
+                            description: A link to the rendered pix, with QR codes and instructions to pay
                         description: Information on the pending payment that was generated
                         x-description-i18n:
                           eng: Information on the pending payment that was generated
@@ -2885,11 +2797,11 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 8--The-name-of-the-parameters-is-wrong-
-                      - 1004--Invalid-parameters-for-payment_method-API-
-                      - 2018--The-action-requested-is-not-valid-for-the-current-payment-state-
-                      - 2078--Capture-attribute-must-be-boolean-
-                      - 2079--Invalid-value-for-capture-attribute-
+                      - 8--The name of the parameters is wrong
+                      - 1004--Invalid parameters for payment_method API
+                      - 2018--The action requested is not valid for the current payment state.
+                      - 2078--Capture attribute must be boolean.
+                      - 2079--Invalid value for capture attribute.
         '403':
           description: Error
           x-description-i18n:
@@ -2904,9 +2816,8 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 4--The-caller-is-not-authorized-to-access-this-resource-
-                      - >-
-                        3002--The-caller-is-not-authorized-to-perform-this-action-
+                      - 4--The caller is not authorized to access this resource.
+                      - 3002--The caller is not authorized to perform this action.
         '404':
           description: Error
           x-description-i18n:
@@ -2921,7 +2832,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 2000--Payment-not-found-
+                      - 2000--Payment not found.
   /v1/payments/search:
     get:
       tags:
@@ -2990,16 +2901,32 @@ paths:
                         total:
                           type: number
                           example: 17493
-                          description: total
+                          description: The total number of items in the collection.
+                          x-description-i18n:
+                            eng: The total number of items in the collection.
+                            spa: El número total de elementos del cobro.
+                            por: Número total de itens na cobrança.
                         limit:
                           type: number
                           example: 30
-                          description: limit
+                          description: The maximum number of entries to return.
+                          x-description-i18n:
+                            eng: The maximum number of entries to return.
+                            spa: El número máximo de entradas a ser retornadas.
+                            por: O número máximo de entradas a serem retornadas.
                         offset:
                           type: number
                           example: 0
-                          description: offset
-                      description: paging
+                          description: Numeric field used to paginate the response.
+                          x-description-i18n:
+                            eng: Numeric field used to paginate the response.
+                            spa: Campo numérico utilizado para paginar la respuesta.
+                            por: Campo numérico usado para paginar a resposta.
+                      description: Information for pagination of search results.
+                      x-description-i18n:
+                        eng: Information for pagination of search results.
+                        spa: Información para paginación de resultados de búsqueda.
+                        por: Informações para paginação dos resultados da pesquisa.
                     results:
                       type: array
                       items:
@@ -3171,18 +3098,10 @@ paths:
                               email:
                                 type: string
                                 example: afriend@gmail.com
-                                description: email associated to the payer.
-                                x-description-i18n:
-                                  eng: email associated to the payer.
-                                  spa: email asociado al pagador.
-                                  por: e-mail associado ao pagador.
+                                description: Email associated to the payer. This value will only return a response when status=approved, status=refunded or status=charged_back
                               identification:
                                 type: object
-                                description: Personal identification.
-                                x-description-i18n:
-                                  eng: Personal identification.
-                                  spa: Identificación personal
-                                  por: Identificação pessoal
+                                description: Personal identification. This value will only return a response when status=approved, status=refunded or status=charged_back
                                 properties:
                                   type:
                                     type: string
@@ -3216,13 +3135,6 @@ paths:
                               eng: Additional information.
                               spa: Información adicional
                               por: Informações adicionais
-                          order:
-                            type: object
-                            description: List of orders
-                            x-description-i18n:
-                              eng: List of orders
-                              spa: Lista de órdenes
-                              por: Lista de pedidos
                           external_reference:
                             type: string
                             format: nullable
@@ -3439,7 +3351,11 @@ paths:
                               eng: Merchant number (Applies to gateway model).
                               spa: Número de comercio (Aplica para modelo gateway).
                               por: Número da loja (aplica-se ao modelo de gateway).
-                      description: results
+                      description: Search results
+                      x-description-i18n:
+                        eng: Search results
+                        spa: Resultados de la búsqueda
+                        por: Resultados da pesquisa
         '400':
           description: Error
           x-description-i18n:
@@ -3454,62 +3370,49 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 1--Params-Error-
-                      - 3--Token-must-be-for-test-
-                      - 5--Must-provide-your-access-token-to-proceed-
-                      - 1000--Number-of-rows-exceeded-the-limits-
-                      - 1001--Date-format-must-be-yyyy-MM-dd-T-HH-mm-ss-SSSZ-
-                      - 1003--Invalid-sort-value-
-                      - 1004--Invalid-criteria-value-
-                      - >-
-                        2001--Already-posted-the-same-request-in-the-last-minute-
-                      - 2002--Customer-not-found-
-                      - 2004--POST-to-Gateway-Transactions-API-fail-
-                      - 2006--Card-Token-not-found-
-                      - 2007--Connection-to-Card-Token-API-fail-
-                      - 2009--Card-token-issuer-can-t-be-null-
-                      - >-
-                        3000--You-must-provide-your-cardholder-name-with-your-card-data-
-                      - >-
-                        3001--You-must-provide-your-cardissuer-id-with-your-card-data-
-                      - 3003--Invalid-card-token-id-
-                      - 3004--Invalid-parameter-site-id-
-                      - >-
-                        3005--Not-valid-action--the-resource-is-in-a-state-that-does-not-allow-this-operation--For-more-information-see-the-state-that-has-the-resource-
-                      - 3006--Invalid-parameter-cardtoken-id-
-                      - 3007--The-parameter-client-id-can-not-be-null-or-empty-
-                      - 3008--Not-found-Cardtoken-
-                      - 3009--unauthorized-client-id-
-                      - 3010--Not-found-card-on-whitelist-
-                      - 3011--Not-found-payment-method-
-                      - 3012--Invalid-parameter-security-code-length-
-                      - >-
-                        3013--The-parameter-security-code-is-a-required-field-can-not-be-null-or-empty-
-                      - 3014--Invalid-parameter-payment-method-
-                      - 3015--Invalid-parameter-card-number-length-
-                      - 3016--Invalid-parameter-card-number-
-                      - >-
-                        3017--The-parameter-card-number-id-can-not-be-null-or-empty-
-                      - >-
-                        3018--The-parameter-expiration-month-can-not-be-null-or-empty-
-                      - >-
-                        3019--The-parameter-expiration-year-can-not-be-null-or-empty-
-                      - >-
-                        3020--The-parameter-cardholder-name-can-not-be-null-or-empty-
-                      - >-
-                        3021--The-parameter-cardholder-document-number-can-not-be-null-or-empty-
-                      - >-
-                        3022--The-parameter-cardholder-document-type-can-not-be-null-or-empty-
-                      - >-
-                        3023--The-parameter-cardholder-document-subtype-can-not-be-null-or-empty-
-                      - >-
-                        3024--Not-valid-action---partial-refund-unsupported-for-this-transaction-
-                      - 3025--Invalid-Auth-Code-
-                      - 3026--Invalid-card-id-for-this-payment-method-id-
-                      - 3027--Invalid-payment-type-id-
-                      - 3028--Invalid-payment-method-id-
-                      - 3029--Invalid-card-expiration-month-
-                      - 3030--Invalid-card-expiration-year-
+                      - 1--Params Error.
+                      - 3--Token must be for test.
+                      - 5--Must provide your access_token to proceed.
+                      - 1000--Number of rows exceeded the limits.
+                      - 1001--Date format must be yyyy-MM-dd'T'HH:mm:ss.SSSZ.
+                      - 1003--Invalid sort value.
+                      - 1004--Invalid criteria value.
+                      - 2001--Already posted the same request in the last minute.
+                      - 2002--Customer not found.
+                      - 2004--POST to Gateway Transactions API fail.
+                      - 2006--Card Token not found.
+                      - 2007--Connection to Card Token API fail.
+                      - 2009--Card token issuer can't be null.
+                      - 3000--You must provide your cardholder_name with your card data.
+                      - 3001--You must provide your cardissuer_id with your card data.
+                      - 3003--Invalid card_token_id.
+                      - 3004--Invalid parameter site_id.
+                      - 3005--Not valid action, the resource is in a state that does not allow this operation. For more information see the state that has the resource.
+                      - 3006--Invalid parameter cardtoken_id.
+                      - 3007--The parameter client_id can not be null or empty.
+                      - 3008--Not found Cardtoken.
+                      - 3009--unauthorized client_id.
+                      - 3010--Not found card on whitelist.
+                      - 3011--Not found payment_method.
+                      - 3012--Invalid parameter security_code_length.
+                      - 3013--The parameter security_code is a required field can not be null or empty.
+                      - 3014--Invalid parameter payment_method.
+                      - 3015--Invalid parameter card_number_length.
+                      - 3016--Invalid parameter card_number.
+                      - 3017--The parameter card_number_id can not be null or empty.
+                      - 3018--The parameter expiration_month can not be null or empty.
+                      - 3019--The parameter expiration_year can not be null or empty.
+                      - 3020--The parameter cardholder.name can not be null or empty.
+                      - 3021--The parameter cardholder.document.number can not be null or empty.
+                      - 3022--The parameter cardholder.document.type can not be null or empty.
+                      - 3023--The parameter cardholder.document.subtype can not be null or empty.
+                      - 3024--Not valid action - partial refund unsupported for this transaction.
+                      - 3025--Invalid Auth Code.
+                      - 3026--Invalid card_id for this payment_method_id.
+                      - 3027--Invalid payment_type_id.
+                      - 3028--Invalid payment_method_id.
+                      - 3029--Invalid card expiration month.
+                      - 3030--Invalid card expiration year.
         '403':
           description: Error
           x-description-i18n:
@@ -3524,9 +3427,8 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 4--The-caller-is-not-authorized-to-access-this-resource-
-                      - >-
-                        3002--The-caller-is-not-authorized-to-perform-this-action-
+                      - 4--The caller is not authorized to access this resource.
+                      - 3002--The caller is not authorized to perform this action.
         '404':
           description: Error
           x-description-i18n:
@@ -3541,7 +3443,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 2000--Payment-not-found-
+                      - 2000--Payment not found.
 
 components:
   schemas:
@@ -3583,17 +3485,6 @@ components:
         - customer -- Payer is a Customer and belongs to the collector.
         - registered -- The account corresponds to a Mercado Pago registered user.
         - guest -- The payer doesn't have an account.
-    order_type:
-      type: String
-      description: Type of order.
-      x-description-i18n:
-        eng: Type of order.
-        spa: Tipo de orden
-        por: Tipo de ordem
-      example: mercadolibre
-      enum:
-        - mercadolibre -- The order is from Mercado Libre.
-        - mercadopago -- It is a Mercado Pago merchant_order.
     currency_id:
       type: string
       description: ID of the currency used in the payment.
@@ -3653,7 +3544,7 @@ components:
         - rejected -- Payment was rejected. The user may retry payment.
         - cancelled -- Payment was cancelled by one of the parties or because time for payment has expired
         - refunded -- Payment was refunded to the user.
-        - charged_back -- Was made a chargeback in the buyer’s credit card.
+        - charged_back -- A chargeback was made in the buyer’s credit card.
     payment_type_id:
       type: string
       description: Type of payment method chosen.

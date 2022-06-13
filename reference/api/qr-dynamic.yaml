@@ -1,0 +1,530 @@
+openapi: 3.0.0
+servers:
+  - url: https://api.mercadopago.com
+info:
+  title: Mercado Pago API Reference
+  version: '1.0'
+paths:
+  /instore/orders/qr/seller/collectors/{user_id}/pos/{external_pos_id}/qrs:
+    post:
+      tags:
+        - $ref: '#/tags/qr-code'
+      summary: Create a QR tramma
+      description: Generates a QR tramma that will be added to an image
+      parameters:
+        - name: user_id
+          in: path
+          description: Find the User ID in your developer dashboard at our devsite
+          x-description-i18n:
+            eng: Find the User ID in your developer dashboard at our devsite
+            spa: Encuentre la identificación de usuario en su panel de desarrollador en nuestro sitio para desarrolladores
+            por: Encontre a ID do usuário no painel do desenvolvedor em nosso site de desenvolvedores
+          required: true
+          schema:
+            type: string
+            example: 446566691
+        - name: external_pos_id
+          in: path
+          description: Custom POS ID associated to the order
+          x-description-i18n:
+            eng: Custom POS ID associated to the order
+            spa: ID de POS personalizado asociado al pedido
+            por: ID de POS personalizado associado ao pedido
+          required: true
+          schema:
+            type: string
+            example: SUC001POS001
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                external_reference:
+                  type: string
+                  description: Custom order ID you can synchronize with your sale system
+                  x-description-i18n:
+                    eng: Custom order ID you can synchronize with your sale system
+                    spa: ID de pedido personalizado que puedes sincronizar con tu sistema de venta
+                    por: ID de pedido personalizado que você pode sincronizar com seu sistema de venda
+                  example: 12345
+                title:
+                  type: string
+                  description: Purchase title.
+                  x-description-i18n:
+                    eng: Purchase title.
+                    spa: Título de la compra
+                    por: Título de compra
+                  example: Product order
+                description:
+                  type: string
+                  description: Purchase description.
+                  x-description-i18n:
+                    eng: Purchase description.
+                    spa: Descripción de la compra
+                    por: Descrição de compra
+                notification_url:
+                  type: string
+                  description: URL where you'd like to receive a payment or merchant_order notification.
+                  x-description-i18n:
+                    eng: URL where you'd like to receive a payment or merchant_order notification.
+                    spa: URL a la cual se enviará la notificación de pago o merchant_order
+                    por: URL em que você gostaria de receber uma notificação de pagamento ou merchant_order
+                  example: www.yourserver.com
+                expiration_date:
+                  type: string
+                  description: Expiration date with format "2020-08-22T16:34:56.559-04:00"
+                total_amount:
+                  type: number
+                  description: Total amount of the transaction in local currency.
+                  x-description-i18n:
+                    eng: Total amount of the transaction in local currency.
+                    spa: Monto total de la transacción en moneda local
+                    por: Valor total da transação na moeda local
+                  example: 100
+                items:
+                  type: array
+                  description: Information on the products involved in the order.
+                  x-description-i18n:
+                    eng: Information on the products involved in the order.
+                    spa: Información de los productos involucrados en la orden
+                    por: Informações sobre os produtos envolvidos no ordem
+                  items:
+                    type: object
+                    properties:
+                      sku_number:
+                        type: string
+                        description: Item code.
+                        x-description-i18n:
+                          eng: Item code.
+                          spa: Código de ítem
+                          por: Código de anúncio
+                        example: A123K9191938
+                      category:
+                        type: string
+                        description: Item category.
+                        x-description-i18n:
+                          eng: Item category.
+                          spa: Category del ítem
+                          por: Categoria do item
+                        example: marketplace
+                      title:
+                        type: string
+                        description: Item title.
+                        x-description-i18n:
+                          eng: Item title.
+                          spa: Título del ítem
+                          por: Título do item
+                        example: Point Mini
+                      description:
+                        type: string
+                        description: Item description.
+                        x-description-i18n:
+                          eng: Item description.
+                          spa: Descripción del item
+                          por: Descrição do artigo
+                        example: This is the Point Mini
+                      unit_price:
+                        type: number
+                        description: Unit price of the item (maximum 2 decimals).
+                        x-description-i18n:
+                          eng: Unit price of the item (maximum 2 decimals).
+                          spa: Precio unitario del producto (máximo 2 decimales)
+                          por: Preço unitário do produto (máximo de 2 decimais)
+                        example: 100
+                      quantity:
+                        type: number
+                        description: Number of item units.
+                        x-description-i18n:
+                          eng: Number of item units.
+                          spa: Cantidad de unidades del ítem
+                          por: Quantidade do unidades do item
+                        example: 1
+                      unit_measure:
+                        $ref: '#/components/schemas/unit_measure'
+                      total_amount:
+                        type: string
+                        description: Item total.
+                        x-description-i18n:
+                          eng: Item total.
+                          spa: 
+                          por: 
+                        example: 100
+                taxes:
+                  type: array
+                  description: Information about the paid taxes
+                  x-description-i18n:
+                    eng: Information about the paid taxes
+                    spa: Información sobre los impuestos pagados
+                    por: Informações sobre os impostos pagos
+                  items:
+                    type: object
+                    properties:
+                      value:
+                        type: number
+                        description: Total amount of tax payed. This amount is not included in the total sum of the order
+                        x-description-i18n:
+                          eng: Total amount of tax payed. This amount is not included in the total sum of the order
+                          spa: Monto total de impuestos pagados. Este monto no está incluido en la suma total de los pedidos
+                          por: Valor total do imposto pago. Este valor não está incluído na soma total dos pedidos
+                        example: 19
+                      type:
+                        type: string
+                        description: type of tax paid
+                        example: IVA
+                sponsor: 
+                  type: object
+                  description: Integrator information.
+                  x-description-i18n:
+                    eng: Integrator information.
+                    spa: Información del integrador
+                    por: Informações do integrador
+                  properties:
+                    id:
+                      type: number
+                      description: Mercado Pago's USER_ID of the integrator system.
+                      x-description-i18n:
+                        eng: Mercado Pago's USER_ID of the integrator system.
+                        spa: USER_ID de la cuenta de Mercado Pago del sistema integrador
+                        por: USER_ID da conta Mercado Pago do sistema integrador
+                      example: 446566691
+                cash_out:
+                  type: object
+                  description: Cash withdrawal (Commercial contact required)
+                  properties:
+                    amount:
+                      type: number
+                      description: Amount to withdraw in local currency.
+                      x-description-i18n:
+                        eng: Amount to withdraw in local currency.
+                        spa: Monto a retirar en moneda local
+                        por: Montante a retirar em moeda local
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  qr_data:
+                    type: string
+                    description: EMVCo tramma for the QR generation
+                    example: 00020101021243650016COM.MERCADOLIBRE02013063638f1192a-5fd1-4180-a180-8bcae3556bc35204000053039865802BR5925IZABEL AAAA DE MELO6007BARUERI62070503***63040B6D
+        '400':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - invalid_collectorId--user_id must be a number.
+                      - invalid_externalPosId--externalPosId must be present.
+                      - invalid_external_reference--external_reference must be present.
+                      - invalid_total_amount--total_amount must be present.
+                      - invalid_items.sku_number--items.sku_number must be string.
+                      - invalid_items.category--items.category must be string.
+                      - invalid_items.title--items.title must be string.
+                      - invalid_items.description--items.description must be string.
+                      - invalid_items.unit_measure--items.unit_measure must be string.
+                      - invalid_items.quantity--items.quantity must be number.
+                      - invalid_items.currency_id--items.currency_id must be string.
+                      - invalid_items.unit_price--items.unit_price must be number.
+                      - invalid_items.total_amount--items.total_amount must be number.
+                      - invalid_title--title must be string.
+                      - invalid_unit_measure--unit_measure must be present.
+                      - invalid_quantity--quantity must be present.
+                      - invalid_unit_price--unit_price must be present.
+                      - invalid_description--description must be present.
+                      - invalid_sponsor.id--sponsor.id must be number.
+                      - invalid_id--sponsor.id must be present.
+                      - invalid_cash_out.amount--cash_out.amount must be number.
+                      - invalid_amount--cash_out.amount must be present.
+                      - error_creating_seller_qr_order--The cash out is required when order has no items.
+                      - invalid_expiration_date--Expiration date must be a valid and future date.
+        '500':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - in_store_order_creation_error--Failed to create order.
+    put:
+      tags:
+        - $ref: '#/tags/qr-code'
+      summary: Create an order
+      x-summary-i18n:
+        eng: Create an order
+        spa: Crear una orden
+        por: Criar uma ordem
+      description: Generates a payment order with all the payment information for your product or service and associate it with the Point of Sale you want. The success response consists of an empty 201 code.
+      parameters:
+        - name: user_id
+          in: path
+          description: Find the User ID in your developer dashboard at our devsite
+          x-description-i18n:
+            eng: Find the User ID in your developer dashboard at our devsite
+            spa: Encuentre la identificación de usuario en su panel de desarrollador en nuestro sitio para desarrolladores
+            por: Encontre a ID do usuário no painel do desenvolvedor em nosso site de desenvolvedores
+          required: true
+          schema:
+            type: string
+            example: 446566691
+        - name: external_pos_id
+          in: path
+          description: Custom POS ID associated to the order
+          x-description-i18n:
+            eng: Custom POS ID associated to the order
+            spa: ID de POS personalizado asociado al pedido
+            por: ID de POS personalizado associado ao pedido
+          required: true
+          schema:
+            type: string
+            example: SUC001POS001
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                external_reference:
+                  type: string
+                  description: Custom order ID you can synchronize with your sale system
+                  x-description-i18n:
+                    eng: Custom order ID you can synchronize with your sale system
+                    spa: ID de pedido personalizado que puedes sincronizar con tu sistema de venta
+                    por: ID de pedido personalizado que você pode sincronizar com seu sistema de venda
+                  example: 12345
+                title:
+                  type: string
+                  description: Purchase title.
+                  x-description-i18n:
+                    eng: Purchase title.
+                    spa: Título de la compra
+                    por: Título de compra
+                  example: Product order
+                description:
+                  type: string
+                  description: Purchase description.
+                  x-description-i18n:
+                    eng: Purchase description.
+                    spa: Descripción de la compra
+                    por: Descrição de compra
+                notification_url:
+                  type: string
+                  description: URL where you'd like to receive a payment or merchant_order notification.
+                  x-description-i18n:
+                    eng: URL where you'd like to receive a payment or merchant_order notification.
+                    spa: URL a la cual se enviará la notificación de pago o merchant_order
+                    por: URL em que você gostaria de receber uma notificação de pagamento ou merchant_order
+                  example: www.yourserver.com
+                expiration_date:
+                  type: string
+                  description: Expiration date with format "2020-08-22T16:34:56.559-04:00"
+                total_amount:
+                  type: number
+                  description: Total amount of the transaction in local currency.
+                  x-description-i18n:
+                    eng: Total amount of the transaction in local currency.
+                    spa: Monto total de la transacción en moneda local
+                    por: Valor total da transação na moeda local
+                  example: 100
+                items:
+                  type: array
+                  description: Information on the products involved in the order.
+                  x-description-i18n:
+                    eng: Information on the products involved in the order.
+                    spa: Información de los productos involucrados en la orden
+                    por: Informações sobre os produtos envolvidos no ordem
+                  items:
+                    type: object
+                    properties:
+                      sku_number:
+                        type: string
+                        description: Item code.
+                        x-description-i18n:
+                          eng: Item code.
+                          spa: Código de ítem
+                          por: Código de anúncio
+                        example: A123K9191938
+                      category:
+                        type: string
+                        description: Item category.
+                        x-description-i18n:
+                          eng: Item category.
+                          spa: Category del ítem
+                          por: Categoria do item
+                        example: marketplace
+                      title:
+                        type: string
+                        description: Item title.
+                        x-description-i18n:
+                          eng: Item title.
+                          spa: Título del ítem
+                          por: Título do item
+                        example: Point Mini
+                      description:
+                        type: string
+                        description: Item description.
+                        x-description-i18n:
+                          eng: Item description.
+                          spa: Descripción del item
+                          por: Descrição do artigo
+                        example: This is the Point Mini
+                      unit_price:
+                        type: number
+                        description: Unit price of the item (maximum 2 decimals).
+                        x-description-i18n:
+                          eng: Unit price of the item (maximum 2 decimals).
+                          spa: Precio unitario del producto (máximo 2 decimales)
+                          por: Preço unitário do produto (máximo de 2 decimais)
+                        example: 100
+                      quantity:
+                        type: number
+                        description: Number of item units.
+                        x-description-i18n:
+                          eng: Number of item units.
+                          spa: Cantidad de unidades del ítem
+                          por: Quantidade do unidades do item
+                        example: 1
+                      unit_measure:
+                        $ref: '#/components/schemas/unit_measure'
+                      total_amount:
+                        type: string
+                        description: Item total.
+                        x-description-i18n:
+                          eng: Item total.
+                          spa: 
+                          por: 
+                        example: 100
+                taxes:
+                  type: array
+                  description: Information about the paid taxes
+                  x-description-i18n:
+                    eng: Information about the paid taxes
+                    spa: Información sobre los impuestos pagados
+                    por: Informações sobre os impostos pagos
+                  items:
+                    type: object
+                    properties:
+                      value:
+                        type: number
+                        description: Total amount of tax payed. This amount is not included in the total sum of the order
+                        x-description-i18n:
+                          eng: Total amount of tax payed. This amount is not included in the total sum of the order
+                          spa: Monto total de impuestos pagados. Este monto no está incluido en la suma total de los pedidos
+                          por: Valor total do imposto pago. Este valor não está incluído na soma total dos pedidos
+                        example: 19
+                      type:
+                        type: string
+                        description: type of tax paid
+                        example: IVA
+                sponsor: 
+                  type: object
+                  description: Integrator information.
+                  x-description-i18n:
+                    eng: Integrator information.
+                    spa: Información del integrador
+                    por: Informações do integrador
+                  properties:
+                    id:
+                      type: number
+                      description: Mercado Pago's USER_ID of the integrator system.
+                      x-description-i18n:
+                        eng: Mercado Pago's USER_ID of the integrator system.
+                        spa: USER_ID de la cuenta de Mercado Pago del sistema integrador
+                        por: USER_ID da conta Mercado Pago do sistema integrador
+                      example: 446566691
+                cash_out:
+                  type: object
+                  description: Cash withdrawal (Commercial contact required)
+                  properties:
+                    amount:
+                      type: number
+                      description: Amount to withdraw in local currency.
+                      x-description-i18n:
+                        eng: Amount to withdraw in local currency.
+                        spa: Monto a retirar en moneda local
+                        por: Montante a retirar em moeda local
+      responses:
+        '400':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - invalid_collectorId--user_id must be a number.
+                      - invalid_externalPosId--externalPosId must be present.
+                      - invalid_external_reference--external_reference must be present.
+                      - invalid_total_amount--total_amount must be present.
+                      - invalid_items.sku_number--items.sku_number must be string.
+                      - invalid_items.category--items.category must be string.
+                      - invalid_items.title--items.title must be string.
+                      - invalid_items.description--items.description must be string.
+                      - invalid_items.unit_measure--items.unit_measure must be string.
+                      - invalid_items.quantity--items.quantity must be number.
+                      - invalid_items.currency_id--items.currency_id must be string.
+                      - invalid_items.unit_price--items.unit_price must be number.
+                      - invalid_items.total_amount--items.total_amount must be number.
+                      - invalid_title--title must be string.
+                      - invalid_unit_measure--unit_measure must be present.
+                      - invalid_quantity--quantity must be present.
+                      - invalid_unit_price--unit_price must be present.
+                      - invalid_description--description must be present.
+                      - invalid_sponsor.id--sponsor.id must be number.
+                      - invalid_id--sponsor.id must be present.
+                      - invalid_cash_out.amount--cash_out.amount must be number.
+                      - invalid_amount--cash_out.amount must be present.
+                      - error_creating_seller_qr_order--The cash out is required when order has no items.
+                      - invalid_expiration_date--Expiration date must be a valid and future date.
+        '500':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - in_store_order_creation_error--Failed to create order.
+components:
+  schemas:
+    unit_measure:
+      type: string
+      description: Unit of measure of the item.
+      x-description-i18n:
+        eng: Unit of measure of the item.
+        spa: Unidad de medida del ítem
+        por: Unidade de medida do item
+      example: unit
+      enum: 
+        - unit -- Unit
+        - pack -- Pack

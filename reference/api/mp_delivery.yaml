@@ -1,0 +1,1421 @@
+openapi: 3.0.0
+servers:
+  - url: https://api.mercadopago.com
+info:
+  title: Mercado Pago API Reference
+  version: '1.0'
+paths:
+  /proximity-integration/v1/orders/{shipment_id}:
+    get:
+      tags:
+        - $ref: '#/tags/mp-delivery'
+      summary: Get order by shipment ID
+      description: Retrieve the information of an order by its shipment ID.
+      parameters:
+        - name: shipment_id
+          in: path
+          description: Shipment ID of the order.
+          required: true
+          schema:
+            type: string
+            example:  41034141533
+        - name: access-token
+          in: header
+          description: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
+          x-description-i18n:
+            eng: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
+            spa: Token de acceso generado desde el vendedor por el proceso de autenticación (OAuth). Código de seguridad que identifica al usuario, sus privilegios y una aplicación utilizada en diferentes solicitudes de origen público para acceder a los recursos protegidos. Su validez está determinada por el parámetro expires_in y es similar a APP_USR-1585551492-030918-25######3458-2880736 estando compuesto por
+            por: Token de acesso gerado do vendedor pelo processo de autenticação (OAuth). Código de segurança que identifica o usuário, seus privilégios e uma aplicação utilizado nas diferentes requests de origem pública para ter acesso a recursos protegidos. Tem sua validade determinada pelo parâmetro expires_in e são semelhantes a APP_USR-1585551492-030918-25######3458-2880736 sendo compostos por
+          enum:
+            - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
+            - Client ID -- 1585551492
+            - Creation date (MMddHH) -- 030918
+            - Security hash -- 25######3458
+            - User ID -- 2880736
+          required: true
+          schema:
+            type: string
+            example: "APP_USR-3213901234561-124232-2cb82fs4f17683d1b2cf36d4bf-8138341993"
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+               schema:          
+                type: object
+                properties:
+                  id:
+                    type: string
+                    example: 41034141533
+                    description: Shipment ID of the order.
+                  type:
+                    type: string
+                    example: DELIVERY
+                    description: This field refers to the way in which the order will be delivered.
+                    enum:
+                      - DELIVERY -- the restaurant will be responsible for delivering the order.
+                      - TAKEOUT -- the buyer will pick up the order from the restaurant.
+                  displayId:
+                    type: string
+                    example: "9129"
+                    description: Order Id shown in the Ordering Application interface for the Buyer.
+                  createdAt:
+                    type: string
+                    example: "2022-02-16T21:20:15.227Z"
+                    description: Order creation time (UTC date-time in ISO timestamp format).
+                  orderTiming:
+                    type: string
+                    example: INSTANT
+                    description: Scheduled time to start preparing an order. By now, only the start immediately is implemented, and the value of this field will always be INSTANT.
+                  preparationStartDateTime: 
+                    type: string
+                    example: "2022-02-16T21:20:47.755Z"
+                    description: Value referring to the start of preparation of an order. For now, the value contained in this field will be the time when the order changed its state to ready_to_ship/ready_to_print. UTC date-time in ISO timestamp format. 
+                  merchant:
+                    type: object
+                    description: Informations about the seller.
+                    properties:
+                      id: 
+                        type: string
+                        example: 1070421029
+                        description: User ID of the restaurant account linked to Mercado Pago.
+                      name: 
+                        type: string
+                        example: Doc's Store
+                        description: Name of the restaurant.
+                  items:
+                    type: array
+                    description: Array of objects that contain the item information for an order.
+                    items:
+                      type: object
+                      properties:
+                        id: 
+                          type: string
+                          example: "MLA1122759502"
+                          description: ID of the item.
+                        name:
+                          type: string
+                          example: "Burrito Combo Refrigerante"
+                          description: Name of the item.
+                        externalCode:
+                          type: string
+                          example: "1215451"
+                          description: External code for an item which can be used by point of sale.
+                        unit: 
+                          type: string
+                          example: "UNIT"
+                          description: Measure unit of the item. By now, only the UNIT value is available
+                        quantity:
+                          type: number
+                          example: 2
+                          description: The quantity of the item.
+                        specialInstructions:
+                          type: string
+                          example: "No quiero cebolla."
+                          description: Comment about the ordered item inserted by the buyer.
+                        options:
+                          type: array
+                          description: Field referring to the complements of an item. If the ordered item has no complements, this field will be empty.
+                          items:
+                            type: object
+                            properties:
+                              id:
+                                type: string
+                                example: "MLA1122707065"
+                                description: ID of the complement item.
+                              name: 
+                                type: string
+                                example: "Soda"
+                                description: Name of the complement item.
+                              externalCode:
+                                type: string
+                                example: "151545"
+                                description: External code for a complement item which can be used by a point of sale.
+                              unit:
+                                type: string
+                                example: "UNIT"
+                                description: Measure unit of the complement item. By now, only the UNIT value is available
+                              quantity:
+                                type: number
+                                example: 2
+                                description: The quantity of the complement item.
+                              unitPrice:
+                                type: object
+                                description: Unit price of a complement item.
+                                properties:
+                                  value:
+                                    type: number
+                                    example: 100.0
+                                    description: Unit price of a complement item.
+                                  currency:
+                                    type: string
+                                    example: "ARS"
+                                    description: Currency related to price.
+                              totalPrice:
+                                type: object
+                                description: The total price of a complement item.
+                                properties: 
+                                  value: 
+                                    type: number
+                                    example: 200.0
+                                    description: The total price of a complement item (unitPrice * quantity).
+                                  currency:
+                                    type: string
+                                    example: "ARS"
+                                    description: Currency related to price.
+                              extension:
+                                type: object
+                                properties:
+                                  group: 
+                                    type: string
+                                    example: "Combo with soda"
+                                    description: Name of the group that the complement item selected belongs to.
+                        unitPrice:
+                          type: object
+                          description: Unit price of the selected item.
+                          properties:
+                            value:
+                              type: number
+                              example: 300.0
+                              description: Unit price of the selected item.
+                            currency: 
+                              type: string
+                              example: "ARS"
+                              description: Currency related to price.
+                        optionsPrice:
+                          type: object
+                          description: Sum of the prices of the complements of an item.
+                          properties:
+                            value:
+                              type: number
+                              example: 200.0
+                              description: Sum of the prices of the complements of an item.
+                            currency: 
+                              type: string
+                              example: "ARS"
+                              description: Currency related to price.
+                        totalPrice:
+                          type: object
+                          description: Total price of an item, considering its quantity and complements.
+                          properties:
+                            value:
+                              type: number
+                              example: 1000.0
+                              description: Total price of an item, considering its quantity and complements ((unityPrice + optionsPrice) * quantity).
+                            currency: 
+                              type: string
+                              example: "ARS"
+                              description: Currency related to price.
+                  otherFees:
+                    type: array
+                    description: Array of objects with amounts of fees charged by the order. Fees like shipping and operation of the marketplace are included.
+                    items:
+                      type: object
+                      properties:
+                        type:
+                          type: string
+                          example: "DELIVERY_FEE"
+                          description: Field that specifies the type of the fee. The only value currently available is DELIVERY_FEE. 
+                          enum: 
+                            - DELIVERY_FEE -- fee charged for shipping the product.
+                        receivedBy:
+                          type: string
+                          example: "MERCHANT"
+                          description: Field that specifies who will receive the fee amount. The only value currently available is MERCHANT. 
+                          enum: 
+                            - MERCHANT -- the fee amount that will be received by the merchant.
+                        price: 
+                          type: object
+                          properties:
+                            value:
+                              type: number
+                              example: 119.0
+                              description: Price of the fee.
+                            currency:
+                              type: string
+                              example: "ARS"
+                              description: Currency related to price.
+                  discounts:
+                    type: array
+                    description: This field has no properties yet. Discount information will be added here in coming updates.
+                    items:
+                      type: object
+                  total:
+                    type: object
+                    description: Object that contains information about all amounts charged
+                    properties:
+                      itemsPrice:
+                        type: object
+                        description: Total price of the selected items.
+                        properties: 
+                          value: 
+                            type: number
+                            example: 1000.0
+                            description: Total price of the selected items.
+                          currency:
+                            type: string
+                            example: "ARS"
+                            description: Currency related to price.
+                      otherFees:
+                        type: object
+                        description: Sum of all fees.
+                        properties: 
+                          value: 
+                            type: number
+                            example: 119.0
+                            description: Sum of all fees.
+                          currency:
+                            type: string
+                            example: "ARS"
+                            description: Currency related to price.
+                      discount:
+                        type: object
+                        description: Sum of all discounts.
+                        properties: 
+                          value: 
+                            type: number
+                            example: 0.0
+                            description: Sum of all discounts.
+                          currency:
+                            type: string
+                            example: "ARS"
+                            description: Currency related to price. 
+                      orderAmount:
+                        type: object
+                        description: Total value paid on the order.
+                        properties: 
+                          value: 
+                            type: number
+                            example: 1119.0
+                            description: Total value paid on the order (itemsPrice + otherFees - discounts).
+                          currency:
+                            type: string
+                            example: "ARS"
+                            description: Currency related to price.
+                  payments:
+                    type: object
+                    description: Payment method information.
+                    x-description-i18n:
+                      eng: Payment method information.
+                      spa: Información de los medios de pago
+                      por: Informação dos meios de pagamento
+                    properties:
+                      prepaid:
+                        type: number
+                        description: Amount that has already been paid.
+                        example: 1119.0
+                      pending:
+                        type: number
+                        description: Amount for which payment is still pending.
+                        example: 0
+                      methods:
+                        type: array
+                        description: Payment methods used.
+                        items:
+                          type: object
+                          properties:
+                            value:
+                              type: number
+                              description: Value paid.
+                            currency:
+                              type: string
+                              example: "ARS"
+                              description: Currency related to the payment.
+                            type:
+                              type: string
+                              description: Time when the payment was or will be made. By now, the only possible value for this field is PREPAID.
+                              example: "PREPAID"
+                            method:
+                              type: string
+                              description: Method used for payment.
+                              enum:
+                                - DIGITAL_WALLET -- amount paid using the Digital Wallet of Mercado Pago.
+                              example: "DIGITAL_WALLET"
+                  customer:
+                    type: object
+                    description: Information about the buyer.
+                    properties:
+                      id:
+                        type: string
+                        description: User ID of the buyer.
+                        example: "1071059933"
+                      name:
+                        type: string
+                        description: Name of the buyer.
+                        example: "Test User"
+                      phone:
+                        type: object
+                        properties:
+                          number:
+                            type: string
+                            description: Buyer´s phone number.
+                            example: "011 123456789"
+                      documentNumber:
+                        type: string
+                        description: Buyer´s ID number.
+                        example: "2731234567894"
+                  delivery:
+                    type: object
+                    description: Information about the location where the order should be delivered.
+                    properties:
+                      deliveredBy:
+                        type: string
+                        description: Responsible for order delivery.
+                        enum:
+                          - MERCHANT -- the restaurant is responsible for the order delivery.
+                        example: "MERCHANT"
+                      deliveryAddress:
+                        type: object
+                        properties:
+                          country:
+                            type: string
+                            description: Name of the country.
+                            example: "Argetina"
+                          state:
+                            type: string
+                            description: Name of the state.
+                            example: "Capital Federal"
+                          city: 
+                            type: string
+                            description: Name of the city.
+                            example: "Santos Lugares"
+                          streetName:
+                            type: string
+                            description: Name of the street.
+                            example: "Calle 01"
+                          streetNumber:
+                            type: string
+                            description: Number of the delivery location. If there is no number, the value will be SN.
+                            example: "1523"
+                          complement:
+                            type: string
+                            description: Additional information about the place of delivery.
+                            example: "APTO 58"
+                          reference:
+                            type: string
+                            description: References about the delivery location.
+                            example: "Referencia: Next to bakery"
+                          formattedAddress:
+                            type: string
+                            description: Concatenation of street name and number.
+                            example: "Calle 01 1523"
+                          postalCode:
+                            type: string
+                            description: Zipcode of the delivery location.
+                            example: "1428"
+                          coordinates:
+                            type: object
+                            properties:
+                              latitude:
+                                type: number
+                                description: Latitude of the delivery location.
+                                example: -34.55864
+                              longitude:
+                                type: number
+                                description: Longitude of the delivery location.
+                                example: -58.457982
+                      estimatedDeliveryDateTime:
+                        type: string
+                        description: Estimated delivery time (UTC date-time in ISO timestamp format).
+                        example: "2022-02-21T21:49:55Z"
+                      deliveryDateTime:
+                        type: string
+                        description: Delivery completion time (UTC date-time in ISO timestamp format).
+                        example: "2022-02-21T21:52:55Z"
+                  extension:
+                    type: object
+                    properties:
+                      status:
+                        type: string
+                        description: Status of an order.
+                        enum:
+                          - pending -- order in creation.
+                          - handling -- processing payment.
+                          - ready_to_ship -- order created.
+                          - shipped -- order sent for delivery.
+                          - not_delivered -- order not delivered.
+                          - delivered -- order delivered.
+                          - cancelled -- order cancelled.
+                        example: "ready_to_ship"
+                      substatus:
+                        type: string
+                        description: Substatus of an order, along with the status they define the current state of an order.
+                        enum:
+                          - ready_to_print -- order awaiting acceptance.
+                          - printed -- order accepted.
+                          - out_for_delivery -- order went out for delivery.
+                          - delivery_failed -- delivery not completed.
+                        example: "printed"
+                      store:
+                        type: object
+                        properties:
+                          id:
+                            type: string
+                            description: Internal ID of the store used by Mercado Pago.
+                            example: "44905357"
+                          externalCode:
+                            type: string
+                            description: An optional field that refeers to a external code that can be used on a point of sale. This external code can be set by the Mercado Pago Delivery API.
+                            example: "UNID01"
+                      qr:
+                        type: object
+                        description: Through the information contained in this Object, it is possible to assemble the QR Code that is read through the "Mercado Envios Flex" APP for the continuation of the delivery flow of an order. In this way it is possible to develop a personalized coupon for an order. To test the operation of this QR Code, simply read it through the "Mercado Envios Flex" App.
+                        properties:
+                          id:
+                            type: string
+                            description: ID of the Order.
+                            example: "41382089428"
+                          sender_id:
+                            type: number
+                            description: ID of the Seller.
+                            example: 1068595961
+                          hash_code:
+                            type: string
+                            description: Hash that will be displayed after the order is accepted.
+                            example: "v3Xtt15eewkj3Eu2lZt+cJQgDj3H6AHb04y1cMO4nPI="
+                          security_digit:
+                            type: string
+                            description: Security information code.
+                            example: "0"
+                          
+  /proximity-integration/shipments/{shipment_id}/accept:
+    put:
+      tags:
+        - $ref: '#/tags/mp-delivery'
+      summary: Accept order
+      description: This endpoint is used to accept an order, and change its status
+      parameters:
+        - name: shipment_id
+          in: path
+          description: Unique ID that identifies the shipment of the order to be performed by the operation to accept an order. 
+          required: true
+          schema:
+            type: string
+            example: 41034141533
+        - name: access-token
+          in: header
+          description: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
+          x-description-i18n:
+            eng: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
+            spa: Token de acceso generado desde el vendedor por el proceso de autenticación (OAuth). Código de seguridad que identifica al usuario, sus privilegios y una aplicación utilizada en diferentes solicitudes de origen público para acceder a los recursos protegidos. Su validez está determinada por el parámetro expires_in y es similar a APP_USR-1585551492-030918-25######3458-2880736 estando compuesto por
+            por: Token de acesso gerado do vendedor pelo processo de autenticação (OAuth). Código de segurança que identifica o usuário, seus privilégios e uma aplicação utilizado nas diferentes requests de origem pública para ter acesso a recursos protegidos. Tem sua validade determinada pelo parâmetro expires_in e são semelhantes a APP_USR-1585551492-030918-25######3458-2880736 sendo compostos por
+          enum:
+            - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
+            - Client ID -- 1585551492
+            - Creation date (MMddHH) -- 030918
+            - Security hash -- 25######3458
+            - User ID -- 2880736
+          required: true
+          schema:
+            type: string
+            example: "APP_USR-3213901234561-124232-2cb82fs4f17683d1b2cf36d4bf-8138341993"  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                status:
+                  type: string
+                  description: This property indicates the order status, which must have the value "accepted" for this endpoint. 
+                  example: "accepted"
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: Status of the order after its acceptance. The Status value that will be returned is "accepted".
+                    example: accepted   
+  /proximity-integration/shipments/{shipment_id}/print_label_pdf:
+    get:
+      tags:
+        - $ref: '#/tags/mp-delivery'
+      summary: Print/get order coupon
+      description: This endpoint is used to accept an order and, in addition, it returns the PDF file for the order coupon
+      parameters:
+        - name: shipment_id
+          in: path
+          description: Unique ID that identifies the shipment of the order to be performed by the operations to accept and print an order. 
+          required: true
+          schema:
+            type: string
+            example: 41034141533
+        - name: access-token
+          in: header
+          description: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
+          x-description-i18n:
+            eng: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
+            spa: Token de acceso generado desde el vendedor por el proceso de autenticación (OAuth). Código de seguridad que identifica al usuario, sus privilegios y una aplicación utilizada en diferentes solicitudes de origen público para acceder a los recursos protegidos. Su validez está determinada por el parámetro expires_in y es similar a APP_USR-1585551492-030918-25######3458-2880736 estando compuesto por
+            por: Token de acesso gerado do vendedor pelo processo de autenticação (OAuth). Código de segurança que identifica o usuário, seus privilégios e uma aplicação utilizado nas diferentes requests de origem pública para ter acesso a recursos protegidos. Tem sua validade determinada pelo parâmetro expires_in e são semelhantes a APP_USR-1585551492-030918-25######3458-2880736 sendo compostos por
+          enum:
+            - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
+            - Client ID -- 1585551492
+            - Creation date (MMddHH) -- 030918
+            - Security hash -- 25######3458
+            - User ID -- 2880736
+          required: true
+          schema:
+            type: string
+            example: "APP_USR-3213901234561-124232-2cb82fs4f17683d1b2cf36d4bf-8138341993"
+      responses:
+        '200':
+          description: Success
+          content:
+            application/pdf:
+              schema:
+                type: string
+                format: binary
+                description: A binary code referring to the PDF coupon.
+  /proximity-integration/shipments/{shipment_id}/cancel:
+    put:
+      tags:
+        - $ref: '#/tags/mp-delivery'
+      summary: Cancel order
+      description: This endpoint cancels an order, changing its status
+      parameters:
+        - name: shipment_id
+          in: path
+          description: Unique ID that identifies the shipment of the order to be performed by the operations to accept and print an order. 
+          required: true
+          schema:
+            type: string
+            example: 41034141533
+        - name: access-token
+          in: header
+          description: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
+          x-description-i18n:
+            eng: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
+            spa: Token de acceso generado desde el vendedor por el proceso de autenticación (OAuth). Código de seguridad que identifica al usuario, sus privilegios y una aplicación utilizada en diferentes solicitudes de origen público para acceder a los recursos protegidos. Su validez está determinada por el parámetro expires_in y es similar a APP_USR-1585551492-030918-25######3458-2880736 estando compuesto por
+            por: Token de acesso gerado do vendedor pelo processo de autenticação (OAuth). Código de segurança que identifica o usuário, seus privilégios e uma aplicação utilizado nas diferentes requests de origem pública para ter acesso a recursos protegidos. Tem sua validade determinada pelo parâmetro expires_in e são semelhantes a APP_USR-1585551492-030918-25######3458-2880736 sendo compostos por
+          enum:
+            - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
+            - Client ID -- 1585551492
+            - Creation date (MMddHH) -- 030918
+            - Security hash -- 25######3458
+            - User ID -- 2880736
+          required: true
+          schema:
+            type: string
+            example: "APP_USR-3213901234561-124232-2cb82fs4f17683d1b2cf36d4bf-8138341993"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                status:
+                  type: string
+                  description: This property indicates the order status, which must have the value "cancelled" for this endpoint.
+                  example: "cancelled"
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: Status of the order after its cancellation. The Status value that will be returned is "cancelled".
+                    example: cancelled
+  /proximity-integration/users/{seller_id}/stores:
+    get:
+      tags:
+        - $ref: '#/tags/mp-delivery'
+      summary: Get all stores
+      description: This endpoint returns all stores owned by a user, using the User ID as search filter
+      parameters:
+        - name: seller_id
+          in: path
+          description: Unique ID that identifies the user that will be used as search filter to consult stores.
+          required: true
+          schema:
+            type: string
+            example: 41562083
+        - name: access-token
+          in: header
+          description: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
+          x-description-i18n:
+            eng: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
+            spa: Token de acceso generado desde el vendedor por el proceso de autenticación (OAuth). Código de seguridad que identifica al usuario, sus privilegios y una aplicación utilizada en diferentes solicitudes de origen público para acceder a los recursos protegidos. Su validez está determinada por el parámetro expires_in y es similar a APP_USR-1585551492-030918-25######3458-2880736 estando compuesto por
+            por: Token de acesso gerado do vendedor pelo processo de autenticação (OAuth). Código de segurança que identifica o usuário, seus privilégios e uma aplicação utilizado nas diferentes requests de origem pública para ter acesso a recursos protegidos. Tem sua validade determinada pelo parâmetro expires_in e são semelhantes a APP_USR-1585551492-030918-25######3458-2880736 sendo compostos por
+          enum:
+            - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
+            - Client ID -- 1585551492
+            - Creation date (MMddHH) -- 030918
+            - Security hash -- 25######3458
+            - User ID -- 2880736
+          required: true
+          schema:
+            type: string
+            example: "APP_USR-3213901234561-124232-2cb82fs4f17683d1b2cf36d4bf-8138341993"
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:          
+                type: array
+                description: List of stores referring to the searched User ID.
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: number
+                      example: 41517088
+                      description: Unique ID that identifies the store.
+                    user_id:
+                      type: number
+                      example: 813887163
+                      description: Unique ID that identifies the user who owns the store.
+                    description:
+                      type: string
+                      example: "Doc's grocery store"
+                      description: Name of the store.
+                    business_hours:
+                      type: object
+                      description: List of store opening hours. Each attribute of the object will be represented by a day of the week. 
+                      properties:
+                       monday:
+                         type: array
+                         description: List of store opening hours on that weekday. 
+                         items:
+                           type: object
+                           properties:
+                             open:
+                               type: string
+                               example: "8:00"
+                               description: Store opening time on that weekday.
+                             close:
+                               type: string
+                               example: "15:00"
+                               description: Store closing time on that weekday.
+                       tuesday:
+                         type: array
+                         description: List of store opening hours on that weekday.
+                         items:
+                           type: object
+                           properties:
+                             open:
+                               type: string
+                               example: "8:00"
+                               description: Store opening time on that weekday.
+                             close:
+                               type: string
+                               example: "15:00"
+                               description: Store closing time on that weekday.
+                       wendsday:
+                         type: array
+                         description: List of store opening hours on that weekday.
+                         items:
+                           type: object
+                           properties:
+                             open:
+                               type: string
+                               example: "8:00"
+                               description: Store opening time on that weekday.
+                             close:
+                               type: string
+                               example: "15:00"
+                               description: Store closing time on that weekday.
+                       thursday:
+                         type: array
+                         description: List of store opening hours on that weekday.
+                         items:
+                           type: object
+                           properties:
+                             open:
+                               type: string
+                               example: "8:00"
+                               description: Store opening time on that weekday.
+                             close:
+                               type: string
+                               example: "15:00"
+                               description: Store closing time on that weekday.
+                       friday:
+                         type: array
+                         description: List of store opening hours on that weekday.
+                         items:
+                           type: object
+                           properties:
+                             open:
+                               type: string
+                               example: "8:00"
+                               description: Store opening time on that weekday.
+                             close:
+                               type: string
+                               example: "15:00"
+                               description: Store closing time on that weekday.
+                    location: 
+                      type: object
+                      description: Store location information. This includes address, latitute, longitude, and additional location references.
+                      properties:
+                        address_line:
+                          type: string
+                          description: Store address information
+                          example: "Viaduto Arapuã - Saude, São Paulo - SP, 04307-070, Brasil"
+                        reference:
+                          type: string
+                          description: Additional information provided for store location.
+                          example: "Next to a bakery"
+                        latitude:
+                          type: number
+                          description: Latitude of the store.
+                          example: -23.630159633405057
+                        longitude:
+                          type: number
+                          description: Longitude of the store.
+                          example: -46.64532809999999
+                    external_id:
+                      type: string
+                      description: This optional property indicates the custom external ID of the store. This value can be changed or updated using the endpoint that updates External IDs. 
+                      example: "A15154DE"
+  /proximity-integration/stores/{StoreID}:
+    get:
+      tags:
+        - $ref: '#/tags/mp-delivery'
+      summary: Get specific store
+      description: This endpoint is used to get a specific store using its ID as search filter
+      parameters:
+        - name: StoreID
+          in: path
+          description: Unique ID that identifies the store that will be used as search parameter. 
+          required: true
+          schema:
+            type: string
+            example: 185522600
+        - name: access-token
+          in: header
+          description: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
+          x-description-i18n:
+            eng: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
+            spa: Token de acceso generado desde el vendedor por el proceso de autenticación (OAuth). Código de seguridad que identifica al usuario, sus privilegios y una aplicación utilizada en diferentes solicitudes de origen público para acceder a los recursos protegidos. Su validez está determinada por el parámetro expires_in y es similar a APP_USR-1585551492-030918-25######3458-2880736 estando compuesto por
+            por: Token de acesso gerado do vendedor pelo processo de autenticação (OAuth). Código de segurança que identifica o usuário, seus privilégios e uma aplicação utilizado nas diferentes requests de origem pública para ter acesso a recursos protegidos. Tem sua validade determinada pelo parâmetro expires_in e são semelhantes a APP_USR-1585551492-030918-25######3458-2880736 sendo compostos por
+          enum:
+            - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
+            - Client ID -- 1585551492
+            - Creation date (MMddHH) -- 030918
+            - Security hash -- 25######3458
+            - User ID -- 2880736
+          required: true
+          schema:
+            type: string
+            example: "APP_USR-3213901234561-124232-2cb82fs4f17683d1b2cf36d4bf-8138341993"
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: number
+                    example: 41517088
+                    description: Unique ID that identifies the store.  
+                  user_id:
+                    type: number
+                    example: 813887163
+                    description: Unique ID that identifies the user who owns the store.
+                  description:
+                    type: string
+                    example: "Doc's grocery store"
+                    description: Name of the store.
+                  status:
+                    type: string
+                    example: "enabled"
+                    description: Status referring to the current state of operation of the store.
+                    enum:
+                      - disabled -- The store is disabled, and will not be shown on marketplace.
+                      - enabled -- The store is enabled and is shown on marketplace.
+                      - paused -- The delivery of store is paused, but the store will cotinue to be shown on marketplace.
+                  business_hours:
+                    type: object
+                    description: List of store opening hours. Each attribute of the object will be represented by a day of the week. 
+                    properties:
+                      monday:
+                        type: array
+                        description: List of store opening hours on that weekday.
+                        items:
+                          type: object
+                          properties:
+                            open:
+                              type: string
+                              example: "8:00"
+                              description: Store opening time on that weekday.
+                            close:
+                              type: string
+                              example: "15:00"
+                              description: Store closing time on that weekday.
+                      tuesday:
+                        type: array
+                        description: List of store opening hours on that weekday.
+                        items:
+                          type: object
+                          properties:
+                            open:
+                              type: string
+                              example: "8:00"
+                              description: Store opening time on that weekday.
+                            close:
+                              type: string
+                              example: "15:00"
+                              description: Store closing time on that weekday.
+                      wendsday:
+                        type: array
+                        description: List of store opening hours on that weekday.
+                        items:
+                          type: object
+                          properties:
+                            open:
+                              type: string
+                              example: "8:00"
+                              description: Store opening time on that weekday.
+                            close:
+                              type: string
+                              example: "15:00"
+                              description: Store closing time on that weekday.
+                      thursday:
+                        type: array
+                        description: List of store opening hours on that weekday.
+                        items:
+                          type: object
+                          properties:
+                            open:
+                              type: string
+                              example: "8:00"
+                              description: Store opening time on that weekday.
+                            close:
+                              type: string
+                              example: "15:00"
+                              description: Store closing time on that weekday.
+                      friday:
+                        type: array
+                        description: List of store opening hours on that weekday.
+                        items:
+                          type: object
+                          properties:
+                            open:
+                              type: string
+                              example: "8:00"
+                              description: Store opening time on that weekday.
+                            close:
+                              type: string
+                              example: "15:00"
+                              description: Store closing time on that weekday.
+                  location: 
+                    type: object
+                    description: Store location information. This includes address, latitute, longitude, and additional location references.
+                    properties:
+                      address_line:
+                        type: string
+                        description: Store address information 
+                        example: "Viaduto Arapuã - Saude, São Paulo - SP, 04307-070, Brasil"
+                      reference:
+                        type: string
+                        description: Store location add-on.
+                        example: "Next to a bakery"
+                      latitude:
+                        type: number
+                        description: Latitude of the store.
+                        example: -23.630159633405057
+                      longitude:
+                        type: number
+                        description: Longitude of the store.
+                        example: -46.64532809999999
+                  external_id:
+                    type: string
+                    description: This optional property indicates the custom external ID of the store. This value can be changed or updated using the endpoint that updates External IDs. 
+                    example: "A15154DE"
+  /proximity-integration/stores/{StoreID}/external_id:
+    put:
+      tags:
+        - $ref: '#/tags/mp-delivery'
+      summary: Update external ID
+      description: This endpoint updates the External ID value. The External ID value is an optonal field
+      parameters:
+        - name: StoreID
+          in: path
+          description: Unique ID that identifies the store whose External ID will be updated.
+          required: true
+          schema:
+            type: string
+            example: 185522600
+        - name: access-token
+          in: header
+          description: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
+          x-description-i18n:
+            eng: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
+            spa: Token de acceso generado desde el vendedor por el proceso de autenticación (OAuth). Código de seguridad que identifica al usuario, sus privilegios y una aplicación utilizada en diferentes solicitudes de origen público para acceder a los recursos protegidos. Su validez está determinada por el parámetro expires_in y es similar a APP_USR-1585551492-030918-25######3458-2880736 estando compuesto por
+            por: Token de acesso gerado do vendedor pelo processo de autenticação (OAuth). Código de segurança que identifica o usuário, seus privilégios e uma aplicação utilizado nas diferentes requests de origem pública para ter acesso a recursos protegidos. Tem sua validade determinada pelo parâmetro expires_in e são semelhantes a APP_USR-1585551492-030918-25######3458-2880736 sendo compostos por
+          enum:
+            - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
+            - Client ID -- 1585551492
+            - Creation date (MMddHH) -- 030918
+            - Security hash -- 25######3458
+            - User ID -- 2880736
+          required: true
+          schema:
+            type: string
+            example: "APP_USR-3213901234561-124232-2cb82fs4f17683d1b2cf36d4bf-8138341993"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                external_id:
+                  type: string
+                  description: Value of the external ID which will be linked to the store.
+                  example: "9320001PC21"
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: number
+                    example: 41517088
+                    description: Unique ID that identifies the store.  
+                  user_id:
+                    type: number
+                    example: 813887163
+                    description: Unique ID that identifies the user who owns the store.
+                  description:
+                    type: string
+                    example: "Doc's grocery store"
+                    description: Name of the store.
+                  business_hours:
+                    type: object
+                    description: List of store opening hours. Each attribute of the object will be represented by a day of the week.  
+                    properties:
+                      monday:
+                        type: array
+                        description: List of store opening hours on that weekday.
+                        items:
+                          type: object
+                          properties:
+                            open:
+                              type: string
+                              example: "8:00"
+                              description: Store opening time on that weekday.
+                            close:
+                              type: string
+                              example: "15:00"
+                              description: Store closing time on that weekday.
+                      tuesday:
+                        type: array
+                        description: List of store opening hours on that weekday.
+                        items:
+                          type: object
+                          properties:
+                            open:
+                              type: string
+                              example: "8:00"
+                              description: Store opening time on that weekday.
+                            close:
+                              type: string
+                              example: "15:00"
+                              description: Store closing time on that weekday.
+                      wendsday:
+                        type: array
+                        description: List of store opening hours on that weekday.
+                        items:
+                          type: object
+                          properties:
+                            open:
+                              type: string
+                              example: "8:00"
+                              description: Store opening time on that weekday.
+                            close:
+                              type: string
+                              example: "15:00"
+                              description: Store closing time on that weekday.
+                      thursday:
+                        type: array
+                        description: List of store opening hours on that weekday.
+                        items:
+                          type: object
+                          properties:
+                            open:
+                              type: string
+                              example: "8:00"
+                              description: Store opening time on that weekday.
+                            close:
+                              type: string
+                              example: "15:00"
+                              description: Store closing time on that weekday.
+                      friday:
+                        type: array
+                        description: List of store opening hours on that weekday.
+                        items:
+                          type: object
+                          properties:
+                            open:
+                              type: string
+                              example: "8:00"
+                              description: Store opening time on that weekday.
+                            close:
+                              type: string
+                              example: "15:00"
+                              description: Store closing time on that weekday.
+                  location: 
+                    type: object
+                    description: Store location information. This includes address, latitute, longitude, and additional location references.
+                    properties:
+                      address_line:
+                        type: string
+                        description: Store address information 
+                        example: "Viaduto Arapuã - Saude, São Paulo - SP, 04307-070, Brasil"
+                      reference:
+                        type: string
+                        description: Store location add-on.
+                        example: "Next to a bakery"
+                      latitude:
+                        type: number
+                        description: Latitude of the store.
+                        example: -23.630159633405057
+                      longitude:
+                        type: number
+                        description: Longitude of the store.
+                        example: -46.64532809999999
+                  external_id:
+                    type: string
+                    description: This optional property indicates the custom external ID of the store. This value can be changed or updated using the endpoint that updates External IDs.
+                    example: "9320001PC21"
+  /proximity-integration/users/{SellerID}/stores/external_id/{ExternalID}:
+    get:
+      tags:
+        - $ref: '#/tags/mp-delivery'
+      summary: Get store by external ID
+      description: This endpoint gets stores by the external ID that was previously registered
+      parameters:
+        - name: SellerID
+          in: path
+          description: Unique ID that identifies the user who owns the store.
+          required: true
+          schema:
+            type: string
+            example: 185522600
+        - name: ExternalID
+          in: path
+          description: Store external ID that was previously registered.
+          required: true
+          schema:
+            type: string
+            example: "9320001PC21"
+        - name: access-token
+          in: header
+          description: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
+          x-description-i18n:
+            eng: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
+            spa: Token de acceso generado desde el vendedor por el proceso de autenticación (OAuth). Código de seguridad que identifica al usuario, sus privilegios y una aplicación utilizada en diferentes solicitudes de origen público para acceder a los recursos protegidos. Su validez está determinada por el parámetro expires_in y es similar a APP_USR-1585551492-030918-25######3458-2880736 estando compuesto por
+            por: Token de acesso gerado do vendedor pelo processo de autenticação (OAuth). Código de segurança que identifica o usuário, seus privilégios e uma aplicação utilizado nas diferentes requests de origem pública para ter acesso a recursos protegidos. Tem sua validade determinada pelo parâmetro expires_in e são semelhantes a APP_USR-1585551492-030918-25######3458-2880736 sendo compostos por
+          enum:
+            - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
+            - Client ID -- 1585551492
+            - Creation date (MMddHH) -- 030918
+            - Security hash -- 25######3458
+            - User ID -- 2880736
+          required: true
+          schema:
+            type: string
+            example: "APP_USR-3213901234561-124232-2cb82fs4f17683d1b2cf36d4bf-8138341993"
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:          
+                type: object
+                properties:
+                  id:
+                    type: number
+                    example: 41517088
+                    description: Store ID linked to the external ID that was used as search parameter.
+                  user_id:
+                    type: number
+                    example: 813887163
+                    description: Unique ID that identifies the user who owns the store.
+                  description:
+                    type: string
+                    example: "Doc's grocery store"
+                    description: Name of the store.
+                  business_hours:
+                    type: object
+                    description: List of store opening hours. Each attribute of the object will be represented by a day of the week. 
+                    properties:
+                     monday:
+                       type: array
+                       description: List of store opening hours on that weekday.
+                       items:
+                         type: object
+                         properties:
+                           open:
+                             type: string
+                             example: "8:00"
+                             description: Store opening time on that weekday.
+                           close:
+                             type: string
+                             example: "15:00"
+                             description: Store closing time on that weekday.
+                     tuesday:
+                       type: array
+                       description: List of store opening hours on that weekday.
+                       items:
+                         type: object
+                         properties:
+                           open:
+                             type: string
+                             example: "8:00"
+                             description: Store opening time on that weekday.
+                           close:
+                             type: string
+                             example: "15:00"
+                             description: Store closing time on that weekday.
+                     wendsday:
+                       type: array
+                       description: List of store opening hours on that weekday.
+                       items:
+                         type: object
+                         properties:
+                           open:
+                             type: string
+                             example: "8:00"
+                             description: Store opening time on that weekday.
+                           close:
+                             type: string
+                             example: "15:00"
+                             description: Store closing time on that weekday.
+                     thursday:
+                       type: array
+                       description: List of store opening hours on that weekday.
+                       items:
+                         type: object
+                         properties:
+                           open:
+                             type: string
+                             example: "8:00"
+                             description: Store opening time on that weekday.
+                           close:
+                             type: string
+                             example: "15:00"
+                             description: Store closing time on that weekday.
+                     friday:
+                       type: array
+                       description: List of store opening hours on that weekday.
+                       items:
+                         type: object
+                         properties:
+                           open:
+                             type: string
+                             example: "8:00"
+                             description: Store opening time on that weekday.
+                           close:
+                             type: string
+                             example: "15:00"
+                             description: Store closing time on that weekday.
+                  location: 
+                    type: object
+                    description: Store location information. This includes address, latitute, longitude, and additional location references.
+                    properties:
+                      address_line:
+                        type: string
+                        description: Store address information
+                        example: "Viaduto Arapuã - Saude, São Paulo - SP, 04307-070, Brasil"
+                      reference:
+                        type: string
+                        description: Store location add-on.
+                        example: "Next to a bakery"
+                      latitude:
+                        type: number
+                        description: Latitude of the store.
+                        example: -23.630159633405057
+                      longitude:
+                        type: number
+                        description: Longitude of the store.
+                        example: -46.64532809999999
+                  external_id:
+                    type: string
+                    description: This optional property indicates the custom external ID of the store. This value can be changed or updated using the endpoint that updates External IDs.
+                    example: "9320001PC21"
+  /proximity-integration/stores/{store_id}/status:
+    put:
+      tags:
+        - $ref: '#/tags/mp-delivery'
+      summary: Update store status
+      description: This endpoint changes the operation status of a store
+      parameters:
+        - name: store_id
+          in: path
+          description: Unique ID that identifies the store whose status will be updated.
+          required: true
+          schema:
+            type: string
+            example: 4101533
+        - name: access-token
+          in: header
+          description: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
+          x-description-i18n:
+            eng: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
+            spa: Token de acceso generado desde el vendedor por el proceso de autenticación (OAuth). Código de seguridad que identifica al usuario, sus privilegios y una aplicación utilizada en diferentes solicitudes de origen público para acceder a los recursos protegidos. Su validez está determinada por el parámetro expires_in y es similar a APP_USR-1585551492-030918-25######3458-2880736 estando compuesto por
+            por: Token de acesso gerado do vendedor pelo processo de autenticação (OAuth). Código de segurança que identifica o usuário, seus privilégios e uma aplicação utilizado nas diferentes requests de origem pública para ter acesso a recursos protegidos. Tem sua validade determinada pelo parâmetro expires_in e são semelhantes a APP_USR-1585551492-030918-25######3458-2880736 sendo compostos por
+          enum:
+            - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
+            - Client ID -- 1585551492
+            - Creation date (MMddHH) -- 030918
+            - Security hash -- 25######3458
+            - User ID -- 2880736
+          required: true
+          schema:
+            type: string
+            example: "APP_USR-3213901234561-124232-2cb82fs4f17683d1b2cf36d4bf-8138341993"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                status:
+                  type: string
+                  example: "enabled"
+                  description: Status referring to the current state of operation of the store.
+                  enum:
+                    - disabled -- The store is disabled, and will not be shown on marketplace.
+                    - enabled -- The store is enabled and is shown on marketplace.
+                    - paused -- The delivery of store is paused, but the store will cotinue to be shown on marketplace.
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: number
+                    example: 41517088
+                    description: Unique ID that identifies the store.  
+                  user_id:
+                    type: number
+                    example: 813887163
+                    description: Unique ID that identifies the user who owns the store.
+                  description:
+                    type: string
+                    example: "Doc's grocery store"
+                    description: Name of the store.
+                  status:
+                    type: string
+                    example: "enabled"
+                    description: Operation status of a store.
+                    enum:
+                      - disabled -- The store is disabled, and will not be shown on marketplace.
+                      - enabled -- The store is enabled and is shown on marketplace.
+                      - paused -- The delivery of store is paused, but the store will cotinue to be shown on marketplace.
+                  business_hours:
+                    type: object
+                    description: List of store opening hours. Each attribute of the object will be represented by a day of the week.  
+                    properties:
+                      monday:
+                        type: array
+                        description: List of store opening hours on that weekday.
+                        items:
+                          type: object
+                          properties:
+                            open:
+                              type: string
+                              example: "8:00"
+                              description: Store opening time on that weekday.
+                            close:
+                              type: string
+                              example: "15:00"
+                              description: Store closing time on that weekday.
+                      tuesday:
+                        type: array
+                        description: List of store opening hours on that weekday.
+                        items:
+                          type: object
+                          properties:
+                            open:
+                              type: string
+                              example: "8:00"
+                              description: Store opening time on that weekday.
+                            close:
+                              type: string
+                              example: "15:00"
+                              description: Store closing time on that weekday.
+                      wendsday:
+                        type: array
+                        description: List of store opening hours on that weekday.
+                        items:
+                          type: object
+                          properties:
+                            open:
+                              type: string
+                              example: "8:00"
+                              description: Store opening time on that weekday.
+                            close:
+                              type: string
+                              example: "15:00"
+                              description: Store closing time on that weekday.
+                      thursday:
+                        type: array
+                        description: List of store opening hours on that weekday.
+                        items:
+                          type: object
+                          properties:
+                            open:
+                              type: string
+                              example: "8:00"
+                              description: Store opening time on that weekday.
+                            close:
+                              type: string
+                              example: "15:00"
+                              description: Store closing time on that weekday.
+                      friday:
+                        type: array
+                        description: List of store opening hours on that weekday.
+                        items:
+                          type: object
+                          properties:
+                            open:
+                              type: string
+                              example: "8:00"
+                              description: Store opening time on that weekday.
+                            close:
+                              type: string
+                              example: "15:00"
+                              description: Store closing time on that weekday.
+                  location: 
+                    type: object
+                    description: Store location information. This includes address, latitute, longitude, and additional location references.
+                    properties:
+                      address_line:
+                        type: string
+                        description: Store address information  
+                        example: "Viaduto Arapuã - Saude, São Paulo - SP, 04307-070, Brasil"
+                      reference:
+                        type: string
+                        description: Store location add-on.
+                        example: "Next to a bakery"
+                      latitude:
+                        type: number
+                        description: Latitude of the store.
+                        example: -23.630159633405057
+                      longitude:
+                        type: number
+                        description: Longitude of the store.
+                        example: -46.64532809999999
+                  external_id:
+                    type: string
+                    description: This optional property indicates the custom external ID of the store. This value can be changed or updated using the endpoint that updates External IDs.
+                    example: "A15154DE"

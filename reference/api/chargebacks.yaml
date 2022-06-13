@@ -85,9 +85,12 @@ paths:
                       por: Define se o dinheiro devolvido ao comprador pode ser coberto pelo Mercado Pago. Só é possível continuar com o restante das etapas se o estorno puder ser coberto.
                   documentation_required:
                     type: boolean
-                    description: >-
-                      Whether the seller needs to send documentation for this
-                      chargeback
+                    description: 
+                      Whether the seller needs to send documentation for this chargeback
+                    x-description-i18n:
+                      eng: Whether the seller needs to send documentation for this chargeback
+                      spa: Si el vendedor debe enviar la documentación para el contracargo 
+                      por: Se o vendedor precisa enviar a documentação para este estorno
                   documentation_status:
                     type: string
                     description: Detail of decision taken for the documentation
@@ -224,19 +227,19 @@ paths:
                       por: Identificador de pagamento
                   metadata:
                     type: array
-                    description: List of metadata
+                    description: Contains payment metadata that is sent to us in the payment post
                     x-description-i18n:
-                      eng: List of metadata
-                      spa: Lista de metadata
-                      por: Lista de metadata
+                      eng: Contains payment metadata that is sent to us in the payment post
+                      spa: Contiene metadatos del pago que nos envían en el post del payment
+                      por: Contém metadados de pagamento que nos são enviados no post de payment
                     items:
                   source:
                     type: array
-                    description: List of source
+                    description: Contains the data to identify who originated the refund (contains ID, name and type)
                     x-description-i18n:
-                      eng: List of source
-                      spa: Lista de origen
-                      por: Lista de origem
+                      eng: Contains the data to identify who originated the refund (contains ID, name and type)
+                      spa: Contiene los datos para identificar quién originó el reembolso (contiene ID, name y type)
+                      por: Contém os dados para identificar quem originou o reembolso (contém ID, nome e tipo)
                     items:
                       type: object
                       properties:
@@ -247,23 +250,23 @@ paths:
                             eng: Firstname Lastname
                             spa: Nombre y apellido
                             por: Nome e sobrenome
-                          description: Name  
+                          description: The name of the user who submitted the refund request  
                         id:
                           type: string
                           example: "1003743392"
-                          description: Identifier
+                          description: The ID of the user who submitted the refund request (collector, operator, owner of the marketplace)
                           x-description-i18n:
-                            eng: Identifier
-                            spa: Identificador
-                            por: Identificador
+                            eng: The ID of the user who submitted the refund request (collector, operator, owner of the marketplace)
+                            spa: El ID del usuario que envió el pedido de reembolso (collector, operator, owner del marketplace)
+                            por: O ID do usuário que enviou a solicitação de reembolso (coletor, operador e proprietário do marketplace)
                         type:
                           type: string
                           example: "collector"
-                          description: Type
+                          description: Source type. The possible values are Admin, Collector, BPP, and Marketplace.
                           x-description-i18n:
-                            eng: Type
-                            spa: Tipo
-                            por: Tipo
+                            eng: Source type. The possible values are Admin, Collector, BPP, and Marketplace.
+                            spa: Tipo de fuente. Los valores posibles son Admin, Collector, BPP y Marketplace.
+                            por: Tipo de fonte. Os valores possíveis são Admin, Collector, BPP e Marketplace.
                   date_created:
                     type: string
                     example: "2021-11-24T13:58:49.312-04:00"
@@ -276,11 +279,11 @@ paths:
                   unique_sequence_number:
                     type: string
                     example: null
-                    description: Sequence number
+                    description: It is an identifier of the refund that was generated by the card processor.
                     x-description-i18n:
-                      eng: Sequence number
-                      spa: Número de secuencia
-                      por: Número de sequência
+                      eng: It is an identifier of the refund that was generated by the card processor.
+                      spa: Es un identificador del reembolso que generó el procesador de la tarjeta.
+                      por: É um identificador do reembolso que foi gerado pelo processador do cartão.
                   refund_mode:
                     type: string
                     example: "standard"
@@ -305,6 +308,12 @@ paths:
                       eng: Refund status
                       spa: Status de reembolso
                       por: Status de reembolso
+                    enum:
+                      - approved -- The payment has been approved and accredited.
+                      - in_process -- Payment is being reviewed.
+                      - rejected -- Payment was rejected. The user may retry payment.
+                      - cancelled -- Payment was cancelled by one of the parties or because time for payment has expired.
+                      - authorized -- The payment has been authorized but not captured yet.
                   reason:
                     type: string
                     example: null
@@ -315,20 +324,20 @@ paths:
                       por: Motivo do reembolso
                   label:
                     type: array
-                    description: List of label
+                    description: Information relevant to the refund. Currently only one label called hidden is used. When the payment search is made, refunds with the hidden label are not returned in the response JSON.
                     x-description-i18n:
-                      eng: List of label
-                      spa: Lista de label
-                      por: Lista de label
+                      eng: Information relevant to the refund. Currently only one label called hidden is used. When the payment search is made, refunds with the hidden label are not returned in the response JSON.
+                      spa: Información pertinente al reembolso. Actualmente solo se usa una label llamada hidden. Cuando se hace la búsqueda del pago, en el JSON de respuesta no se devuelven los refunds que tienen el label hidden.
+                      por: Informações relevantes para o reembolso. Atualmente, apenas uma label chamada hidden é usada. Quando a pesquisa de pagamento é feita, os reembolsos com o label hiddden não são retornados no JSON de resposta.
                     items:
                       type: object
                   partition_details:
                     type: array
-                    description: details
+                    description: Indicates the amount returned for each of the partitions with which the payment was generated. Currently, payments with several money partitions are created only for one product from Brazil (Valeras), so it does not apply to all. Valeras allows offering benefits to employees, and is currently turned on in Brazil only for some employers.
                     x-description-i18n:
-                      eng: details
-                      spa: Detalles
-                      por: Detalhes
+                      eng: Indicates the amount returned for each of the partitions with which the payment was generated. Currently, payments with several money partitions are created only for one product from Brazil (Valeras), so it does not apply to all. Valeras allows offering benefits to employees, and is currently turned on in Brazil only for some employers.
+                      spa: Indica el monto devuelto para cada una de las particiones con las que fue generado el pago. Actualmente solo para un producto de Brasil (Valeras) se crean pagos con varias particiones de dinero, por lo que no aplica a todos. Valeras permite ofrecer beneficios a empleados, y actualmente se encuentra encendido en Brasil solo para algunos empleadores.
+                      por: Indica o valor devolvido para cada uma das partições com as quais o pagamento foi gerado. Atualmente apenas para um produto do Brasil (Valeras) são criados pagamentos com várias partições de dinheiro, portanto não se aplica a todos. O Valeras permite oferecer benefícios aos empregados e atualmente está ativo no Brasil apenas para alguns empregadores.
                     items:
                       type: object        
         '400':
@@ -460,16 +469,20 @@ paths:
                       por: Valor do reembolso
                   metadata:
                     type: array
-                    description: Metadata
+                    description: Contains payment metadata that is sent to us in the payment post
+                    x-description-i18n:
+                      eng: Contains payment metadata that is sent to us in the payment post
+                      spa: Contiene metadatos del pago que nos envían en el post del payment
+                      por: Contém metadados de pagamento que nos são enviados no post de payment
                     items:
                       type: object
                   source:
                     type: array
-                    description: List of source
+                    description: Contains the data to identify who originated the refund (contains ID, name and type)
                     x-description-i18n:
-                      eng: List of source
-                      spa: Lista de origen
-                      por: Lista de origem
+                      eng: Contains the data to identify who originated the refund (contains ID, name and type)
+                      spa: Contiene los datos para identificar quién originó el reembolso (contiene ID, name y type)
+                      por: Contém os dados para identificar quem originou o reembolso (contém ID, nome e tipo)
                     items:
                       type: object
                       properties:
@@ -480,23 +493,23 @@ paths:
                             eng: Firstname Lastname
                             spa: Nombre y apellido
                             por: Nome e sobrenome
-                          description: Name  
+                          description: The name of the user who submitted the refund request  
                         id:
                           type: string
                           example: "1003743392"
-                          description: Identifier
+                          description: The ID of the user who submitted the refund request (collector, operator, owner of the marketplace)
                           x-description-i18n:
-                            eng: Identifier
-                            spa: Identificador
-                            por: Identificador
+                            eng: The ID of the user who submitted the refund request (collector, operator, owner of the marketplace)
+                            spa: El ID del usuario que envió el pedido de reembolso (collector, operator, owner del marketplace)
+                            por: O ID do usuário que enviou a solicitação de reembolso (coletor, operador e proprietário do marketplace)
                         type:
                           type: string
                           example: "collector"
-                          description: Type
+                          description: Source type. The possible values are Admin, Collector, BPP, and Marketplace.
                           x-description-i18n:
-                            eng: Type
-                            spa: Tipo
-                            por: Tipo
+                            eng: Source type. The possible values are Admin, Collector, BPP, and Marketplace.
+                            spa: Tipo de fuente. Los valores posibles son Admin, Collector, BPP y Marketplace.
+                            por: Tipo de fonte. Os valores possíveis são Admin, Collector, BPP e Marketplace.
                   date_created:
                     type: string
                     example: "2021-11-24T13:58:49.312-04:00"
@@ -509,11 +522,11 @@ paths:
                   unique_sequence_number:
                     type: string
                     example: null
-                    description: Sequence number
+                    description: It is an identifier of the refund that was generated by the card processor.
                     x-description-i18n:
-                      eng: Sequence number
-                      spa: Número de secuencia
-                      por: Número de sequência
+                      eng: It is an identifier of the refund that was generated by the card processor.
+                      spa: Es un identificador del reembolso que generó el procesador de la tarjeta.
+                      por: É um identificador do reembolso que foi gerado pelo processador do cartão.
                   refund_mode:
                     type: string
                     example: "standard"
@@ -538,6 +551,12 @@ paths:
                       eng: Refund status
                       spa: Status de reembolso
                       por: Status de reembolso
+                    enum:
+                      - approved -- The payment has been approved and accredited.
+                      - in_process -- Payment is being reviewed.
+                      - rejected -- Payment was rejected. The user may retry payment.
+                      - cancelled -- Payment was cancelled by one of the parties or because time for payment has expired.
+                      - authorized -- The payment has been authorized but not captured yet.
                   reason:
                     type: string
                     example: null
@@ -548,20 +567,20 @@ paths:
                       por: Motivo do reembolso
                   label:
                     type: array
-                    description: List of label
+                    description: Information relevant to the refund. Currently only one label called hidden is used. When the payment search is made, refunds with the hidden label are not returned in the response JSON.
                     x-description-i18n:
-                      eng: List of label
-                      spa: Lista de label
-                      por: Lista de label
+                      eng: Information relevant to the refund. Currently only one label called hidden is used. When the payment search is made, refunds with the hidden label are not returned in the response JSON.
+                      spa: Información pertinente al reembolso. Actualmente solo se usa una label llamada hidden. Cuando se hace la búsqueda del pago, en el JSON de respuesta no se devuelven los refunds que tienen el label hidden.
+                      por: Informações relevantes para o reembolso. Atualmente, apenas uma label chamada hidden é usada. Quando a pesquisa de pagamento é feita, os reembolsos com o label hiddden não são retornados no JSON de resposta.
                     items:
                       type: object
                   partition_details:
                     type: array
-                    description: Details
+                    description: Indicates the amount returned for each of the partitions with which the payment was generated. Currently, payments with several money partitions are created only for one product from Brazil (Valeras), so it does not apply to all. Valeras allows offering benefits to employees, and is currently turned on in Brazil only for some employers.
                     x-description-i18n:
-                      eng: Details
-                      spa: Detalles
-                      por: Detalhes
+                      eng: Indicates the amount returned for each of the partitions with which the payment was generated. Currently, payments with several money partitions are created only for one product from Brazil (Valeras), so it does not apply to all. Valeras allows offering benefits to employees, and is currently turned on in Brazil only for some employers.
+                      spa: Indica el monto devuelto para cada una de las particiones con las que fue generado el pago. Actualmente solo para un producto de Brasil (Valeras) se crean pagos con varias particiones de dinero, por lo que no aplica a todos. Valeras permite ofrecer beneficios a empleados, y actualmente se encuentra encendido en Brasil solo para algunos empleadores.
+                      por: Indica o valor devolvido para cada uma das partições com as quais o pagamento foi gerado. Atualmente apenas para um produto do Brasil (Valeras) são criados pagamentos com várias partições de dinheiro, portanto não se aplica a todos. O Valeras permite oferecer benefícios aos empregados e atualmente está ativo no Brasil apenas para alguns empregadores.
                     items:
                       type: object        
         '400':
@@ -679,16 +698,20 @@ paths:
                       por: Valor do reembolso
                   metadata:
                     type: array
-                    description: Metadata
+                    description: Contains payment metadata that is sent to us in the payment post
+                    x-description-i18n:
+                      eng: Contains payment metadata that is sent to us in the payment post
+                      spa: Contiene metadatos del pago que nos envían en el post del payment
+                      por: Contém metadados de pagamento que nos são enviados no post de payment
                     items:
                       type: object
                   source:
                     type: array
-                    description: List of source
+                    description: Contains the data to identify who originated the refund (contains ID, name and type)
                     x-description-i18n:
-                      eng: List of source
-                      spa: Lista de origen
-                      por: Lista de origem
+                      eng: Contains the data to identify who originated the refund (contains ID, name and type)
+                      spa: Contiene los datos para identificar quién originó el reembolso (contiene ID, name y type)
+                      por: Contém os dados para identificar quem originou o reembolso (contém ID, nome e tipo)
                     items:
                       type: object
                       properties:
@@ -699,23 +722,23 @@ paths:
                             eng: Firstname Lastname
                             spa: Nombre y apellido
                             por: Nome e sobrenome
-                          description: Name  
+                          description: The name of the user who submitted the refund request  
                         id:
                           type: string
                           example: "1003743392"
-                          description: Identifier
+                          description: The ID of the user who submitted the refund request (collector, operator, owner of the marketplace)
                           x-description-i18n:
-                            eng: Identifier
-                            spa: Identificador
-                            por: Identificador
+                            eng: The ID of the user who submitted the refund request (collector, operator, owner of the marketplace)
+                            spa: El ID del usuario que envió el pedido de reembolso (collector, operator, owner del marketplace)
+                            por: O ID do usuário que enviou a solicitação de reembolso (coletor, operador e proprietário do marketplace)
                         type:
                           type: string
                           example: "collector"
-                          description: Type
+                          description: Source type. The possible values are Admin, Collector, BPP, and Marketplace.
                           x-description-i18n:
-                            eng: Type
-                            spa: Tipo
-                            por: Tipo
+                            eng: Source type. The possible values are Admin, Collector, BPP, and Marketplace.
+                            spa: Tipo de fuente. Los valores posibles son Admin, Collector, BPP y Marketplace.
+                            por: Tipo de fonte. Os valores possíveis são Admin, Collector, BPP e Marketplace.
                   date_created:
                     type: string
                     example: "2021-11-24T13:58:49.312-04:00"
@@ -728,11 +751,11 @@ paths:
                   unique_sequence_number:
                     type: string
                     example: null
-                    description: Sequence number
+                    description: It is an identifier of the refund that was generated by the card processor.
                     x-description-i18n:
-                      eng: Sequence number
-                      spa: Número de secuencia
-                      por: Número de sequência
+                      eng: It is an identifier of the refund that was generated by the card processor.
+                      spa: Es un identificador del reembolso que generó el procesador de la tarjeta.
+                      por: É um identificador do reembolso que foi gerado pelo processador do cartão.
                   refund_mode:
                     type: string
                     example: "standard"
@@ -757,6 +780,12 @@ paths:
                       eng: Refund status
                       spa: Status de reembolso
                       por: Status de reembolso
+                    enum:
+                      - approved -- The payment has been approved and accredited.
+                      - in_process -- Payment is being reviewed.
+                      - rejected -- Payment was rejected. The user may retry payment.
+                      - cancelled -- Payment was cancelled by one of the parties or because time for payment has expired.
+                      - authorized -- The payment has been authorized but not captured yet.
                   reason:
                     type: string
                     example: null
@@ -767,20 +796,20 @@ paths:
                       por: Motivo do reembolso
                   label:
                     type: array
-                    description: List of label
+                    description: Information relevant to the refund. Currently only one label called hidden is used. When the payment search is made, refunds with the hidden label are not returned in the response JSON.
                     x-description-i18n:
-                      eng: List of label
-                      spa: Lista de label
-                      por: Lista de label
+                      eng: Information relevant to the refund. Currently only one label called hidden is used. When the payment search is made, refunds with the hidden label are not returned in the response JSON.
+                      spa: Información pertinente al reembolso. Actualmente solo se usa una label llamada hidden. Cuando se hace la búsqueda del pago, en el JSON de respuesta no se devuelven los refunds que tienen el label hidden.
+                      por: Informações relevantes para o reembolso. Atualmente, apenas uma label chamada hidden é usada. Quando a pesquisa de pagamento é feita, os reembolsos com o label hiddden não são retornados no JSON de resposta.
                     items:
                       type: object
                   partition_details:
                     type: array
-                    description: details
+                    description: Indicates the amount returned for each of the partitions with which the payment was generated. Currently, payments with several money partitions are created only for one product from Brazil (Valeras), so it does not apply to all. Valeras allows offering benefits to employees, and is currently turned on in Brazil only for some employers.
                     x-description-i18n:
-                      eng: details
-                      spa: Detalles
-                      por: Detalhes
+                      eng: Indicates the amount returned for each of the partitions with which the payment was generated. Currently, payments with several money partitions are created only for one product from Brazil (Valeras), so it does not apply to all. Valeras allows offering benefits to employees, and is currently turned on in Brazil only for some employers.
+                      spa: Indica el monto devuelto para cada una de las particiones con las que fue generado el pago. Actualmente solo para un producto de Brasil (Valeras) se crean pagos con varias particiones de dinero, por lo que no aplica a todos. Valeras permite ofrecer beneficios a empleados, y actualmente se encuentra encendido en Brasil solo para algunos empleadores.
+                      por: Indica o valor devolvido para cada uma das partições com as quais o pagamento foi gerado. Atualmente apenas para um produto do Brasil (Valeras) são criados pagamentos com várias partições de dinheiro, portanto não se aplica a todos. O Valeras permite oferecer benefícios aos empregados e atualmente está ativo no Brasil apenas para alguns empregadores.
                     items:
                       type: object     
         '400':
@@ -993,7 +1022,11 @@ paths:
                   live_mode:
                     type: string
                     example: 
-                    description: Live mode
+                    description: Whether the chargeback will be processed in sandbox or in production mode. If TRUE, then the chargeback will be processed in production mode. If FALSE, then the chargeback will be processed in sandbox mode.
+                    x-description-i18n:
+                      eng: Whether the chargeback will be processed in sandbox or in production mode. If TRUE, then the chargeback will be processed in production mode. If FALSE, then the chargeback will be processed in sandbox mode.
+                      spa: Si la devolución será procesada en el "sandbox" o en el modo de producción. Si es TRUE, el contracargo se procesará en modo de producción. Si es FALSE, el contracargo se procesará en modo sandbox.
+                      por: Se o estorno será processada em modo sandbox ou em produção. Se TRUE, o estorno será processado em modo de produção. Se FALSE, o estorno será processado no modo sandbox.
                   sponsor_id:
                     type: string
                     example: 
@@ -1141,19 +1174,19 @@ paths:
                               number:
                                 type: string
                                 example: "32659430"
-                                description: Number
+                                description: Identification number.
                                 x-description-i18n:
-                                  eng: Number
-                                  spa: Número
-                                  por: O Número
+                                  eng: Identification number.
+                                  spa: Número de identificación
+                                  por: Número de identificação
                               type:
                                 type: string
                                 example: "DNI"
-                                description: Type
+                                description: Identification type.
                                 x-description-i18n:
-                                  eng: Type
-                                  spa: Tipo
-                                  por: Tipo
+                                  eng: Identification type.
+                                  spa: Tipo de identificación
+                                  por: Tipo de identificação
                         phone:
                           type: array
                           description: List of phones
@@ -1222,11 +1255,11 @@ paths:
                       por: Proprietário do marketplace
                   metadata:
                     type: array
-                    description: List of metadata
+                    description: Contains payment metadata that is sent to us in the payment post
                     x-description-i18n:
-                      eng: List of metadata
-                      spa: Lista de metadata
-                      por: Lista de metadata
+                      eng: Contains payment metadata that is sent to us in the payment post
+                      spa: Contiene metadatos del pago que nos envían en el post del payment
+                      por: Contém metadados de pagamento que nos são enviados no post de payment
                     items:
                   additional_info:
                     type: array
@@ -1263,7 +1296,11 @@ paths:
                                   eng: My product
                                   spa: Mi producto
                                   por: Meu produto
-                                description: Title
+                                description: Item title.
+                                x-description-i18n:
+                                  eng: Item title.
+                                  spa: Título del ítem
+                                  por: Título do item
                               description:
                                 type: string
                                 example: "E-commerce store cellphone"
@@ -1440,11 +1477,11 @@ paths:
                         id:
                           type: string
                           example: "3754501423"
-                          description: Identifier
+                          description: Order identifier
                           x-description-i18n:
-                            eng: Identifier
-                            spa: Identificador
-                            por: Identificador
+                            eng: Order identifier
+                            spa: Identificador de la orden
+                            por: Identificador do pedido
                   external_reference:
                     type: string
                     example: "firstname@gmail.com"
