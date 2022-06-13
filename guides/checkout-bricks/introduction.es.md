@@ -2,9 +2,9 @@
 
 Checkout Bricks permite la integración del lado del cliente de forma modular a través de estructuras configurables y seguras con una integración simplificada y unificada. Todos los bricks cuentan con flujos de control de componentes de UI y validación de datos, lo que hace que el proceso de integración ocurra a partir de configuraciones iniciales, métodos y callbacks utilizados por cada brick, además de contar con las siguientes características básicas:
 
-* [Responsividad](/developers/es/docs/checkout-bricks/introduction#bookmark_responsividad)
-* [Temas](/developers/es/docs/checkout-bricks/introduction#bookmark_temas)
-* [Idiomas](/developers/es/docs/checkout-bricks/introduction#bookmark_idiomas)
+* [Responsividad](#bookmark_responsividad)
+* [Temas](#bookmark_temas)
+* [Idiomas](#bookmark_idiomas)
 
 ## Responsividad
 
