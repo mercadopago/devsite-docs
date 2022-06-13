@@ -7,6 +7,8 @@ Con el _agreement_ creado, es necesario obtener la aprobación del comprador par
 
 Puedes ver el diagrama que ilustra el proceso de aprobación del comprador a continuación.
 
+![Obtener aprobación](/images/wallet-connect/get-payer-approval.es.png)
+
 Como se indica en el anterior diagrama de secuencia, la aprobación del comprador se produce en el momento de la compra, cuando este autoriza la conexión de su cuenta de Mercado Pago y la utilización de los medios de pago disponibles para finalizar la transacción.
 
 Con la conexión autorizada, consulta la sección Crear payer token para finalizar la integración de Wallet Connect.
