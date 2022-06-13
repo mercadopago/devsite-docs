@@ -208,18 +208,30 @@ paths:
                     items:
                       type: object
                       properties:
+                        name:
+                          type: string
+                          example: "Name of the Fee""
+                          description: Name of the Fee.
                         type:
                           type: string
                           example: "DELIVERY_FEE"
                           description: Field that specifies the type of the fee. The only value currently available is DELIVERY_FEE. 
                           enum: 
                             - DELIVERY_FEE -- fee charged for shipping the product.
+                            - SERVICE_FEE -- fee for the using of Marketplace
+                            - TIP -- Value of the tip.
                         receivedBy:
                           type: string
                           example: "MERCHANT"
                           description: Field that specifies who will receive the fee amount. The only value currently available is MERCHANT. 
                           enum: 
                             - MERCHANT -- the fee amount that will be received by the merchant.
+                            - MARKETPLACE -- the fee amount that will be received by the marketplace.
+                            - LOGISTIC_SERVICES -- the fee amount that will be received by the Service of Logistic.
+                        receiverDocument:
+                          type: string
+                          example: "3124123141"
+                          description: Document of the amount fee receiver.
                         price: 
                           type: object
                           properties:
@@ -231,11 +243,60 @@ paths:
                               type: string
                               example: "ARS"
                               description: Currency related to price.
+                        
                   discounts:
                     type: array
                     description: This field has no properties yet. Discount information will be added here in coming updates.
                     items:
                       type: object
+                      properties:
+                        amount: 
+                          type: object
+                          properties:
+                            value:
+                              type: number
+                              example: 119.0
+                              description: Price of discount.
+                            currency:
+                              type: string
+                              example: "ARS"
+                              description: Currency related to value.
+                        target:
+                          type: string
+                          example: "ITEM"
+                          description: Where the discount will be applied. 
+                          enum: 
+                            - CART -- The discount wil be applied on the cart.
+                            - DELIVERY_FEE -- The discount will be applied on the delivery fee.
+                            - ITEM -- The discount will be applien on an Item
+                        targetId:
+                          type: string
+                          example: "MLA1122759502"
+                          description: If the target of the discount is an Item, this field will show the ID of the Item that the discount has been applied.
+                        sponsorshipValues:
+                          type: array
+                          description: 	Values sponsored by either party. The sum of the amounts listed in this atribute must match the value informed in the amount atribute above.
+                          items:
+                            type: object
+                            properties:
+                              name:
+                                type: string
+                                example: "MARKETPLACE"
+                                description: Who sponsored the discount.
+                                enum:
+                                  - MARKETPLACE: The Marketplace will sponsor the discount.
+                                  - MERCHANT: The Merchant will sponsor the discount.
+                              amount: 
+                                type: object
+                                properties:
+                                  value:
+                                    type: number
+                                    example: 119.0
+                                    description: Price of discount.
+                                  currency:
+                                    type: string
+                                    example: "ARS"
+                                    description: Currency related to value.         
                   total:
                     type: object
                     description: Object that contains information about all amounts charged
