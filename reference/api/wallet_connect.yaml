@@ -170,11 +170,11 @@ paths:
                 type: object
                 properties:
                   errorKey:
-                  type: string
-                  enum:
-                    - 404--Not-Found--The agreement_id does not exist
-                    - 404--Not-Found--The client.id does not exist
-                    - 404--Not-Found--The caller.id does not exist
+                    type: string
+                    enum:
+                      - 404--Not-Found--The agreement_id does not exist
+                      - 404--Not-Found--The client.id does not exist
+                      - 404--Not-Found--The caller.id does not exist
         '500':
           description: Error
           content:
@@ -219,22 +219,22 @@ paths:
               schema:
                 type: object
                 properties:
-                errorKey:
-                  type: string
-                  enum:
-                    - 400--Bad-Request--Parameter agreement_id is required
-                    - 400--Bad-Request--Parameter agreementId has more than 32 characters
-                    - 400--Bad-Request--Parameter agreement_id must be an alfanumeric value
+                  errorKey:
+                    type: string
+                    enum:
+                      - 400--Bad-Request--Parameter agreement_id is required
+                      - 400--Bad-Request--Parameter agreementId has more than 32 characters
+                      - 400--Bad-Request--Parameter agreement_id must be an alfanumeric value
         '404':
           content:
-          application/json:
-            schema:
-              type: object
-              properties:
-              errorKey:
-                type: string
-                enum:
-                  - 404--Not-Found--The Agreement with that id
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 404--Not-Found--The Agreement with that id
         '500':
           description: Error
           content:
