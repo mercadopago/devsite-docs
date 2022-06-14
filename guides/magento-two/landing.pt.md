@@ -1,7 +1,7 @@
 ---
 content_section_with_media:
- - title: PrestaShop
- - message: A PrestaShop é uma plataforma de e-commerce com software de código aberto, que permite a qualquer usuário criar e desenvolver um site comercial. Como parceiros oficiais da PrestaShop, fornecemos maior segurança e eficiência à sua loja.
+ - title: Magento 2
+ - message: Magento é uma plataforma de e-commerce que permite criar uma loja online personalizável, ideal para grandes empresas que desejam oferecer uma experiência única. **Magento 2** é a versão mais recente desta plataforma, oferecendo uma interface amigável, mais velocidade de navegação, suporte embutido para limpeza de cache e mais estabilidade.
  - media_video: https://www.youtube.com/embed/npvBT3qsbhU
 ---
  
