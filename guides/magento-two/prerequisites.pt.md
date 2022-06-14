@@ -13,6 +13,7 @@ Para usar a integração do Mercado Pago com o Magento 2 em sua loja, você deve
 | Requisitos  | Descrição | Especificações |
 | --- | --- | --- |
 | Ambiente | Serviço de hospedagem | LAMP (Linux, Apache, MySQL e PHP)<br/>Pilha LNMP |
+| Base de dados | Conjuntos de arquivos relacionados entre si com registros sobre pessoas, lugares ou coisas. | MySQL 5.6 (MariaDB e Percona) |
 | Configuração adicional | Ajustes recomendados para uma melhor performance e funcionamento adequado da Magento 2 e ao módulo do Mercado Pago. | Memória mínima de 2 GB de RAM |
 | Conta de vendedor Mercado Pago | Para realizar vendas, é preciso uma conta de vendedor no Mercado Pago. Caso não a tenha, [clique aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) para criar.| Conta de vendedor no Mercado Pago |
 | Credenciais | As [credenciais](/developers/pt/guides/additional-content/credentials/credentials) são senhas únicas com as quais identificamos uma integração na sua conta e servem para capturar pagamentos em lojas virtuais e outras aplicações de forma segura. | Para realizar testes e garantir o funcionamento da integração, serão necessárias as **credenciais de teste**. Após esta etapa, você precisará das **credenciais de produção** para receber pagamentos reais. |
@@ -21,7 +22,6 @@ Para usar a integração do Mercado Pago com o Magento 2 em sua loja, você deve
 | Servidor Web | Software responsável por aceitar pedidos em HTTP de clientes, geralmente os navegadores, e servi-los com respostas em HTTP | Apache 2.x<br/>Nginx 1.7.x |
 | Sistema operacional | Sistema responsável pelo gerenciamento do hardware do computador. | Linux x86-64 |
 | SSL | Protocolo que permite estabelecer comunicações seguras na Internet para atividades como navegação, e-mail, e outras transferências de dados. | É necessário ter um certificado SSL e que a forma de pagamento esteja disponibilizada em uma página HTTPS. Durante os testes em modo Sandbox, você poderá executar os testes em HTTP. |
-| Versão MySQL | É um sistema de gerenciamento de banco de dados, que utiliza a linguagem SQL como interface. | MySQL 5.6<br/>MariaDB e Percona são compatíveis com Magento porque suportam APIs MySQL 5.6. |
 | Versão PHP | PHP é uma linguagem de programação amplamente usada para desenvolvimento de aplicações web. Para mais informações, [clique aqui](https://www.php.net/). | 5.6.x<br/>7.0.2<br/>7.0.6–7.0.x (para PHP 7 apenas | json<br/>iconv) <br/> |
 
 > Este módulo está configurado para suportar os padrões do Magento 2. Recomendamos que você não utilize plugins ou módulos que alterem as características e operação do padrão do Magento para evitar possíveis erros no módulo ou que ele pare de funcionar.
