@@ -17,7 +17,7 @@ Feito o processo inicial de compra, veja abaixo como testar a integração de ac
 2. Clique em **pedido com pagamento obrigatório** para ser redirecionado o ambiente de pagamento do Mercado Pago. 
 3. Na tela de checkout, escolha pagar com um novo cartão de crédito e utilize os [cartões de teste](/developers/pt/guides/additional-content/testing/test-cards) para realizar o pagamento. Importante não efetuar o login na conta do Mercado Pago ou tentar realizar o pagamento com cartões de uso pessoal. 
 3. Adicione as informações do cartão de teste indicado (nº do cartão, CVV e data de validade). 
-4. Ao finalizar a compra o seller irá visualizar dentro do Mercado Pago a comprovação de que a compra foi feita e será redirecionada a sua loja novamente. 
+4. Ao finalizar a compra você poderá visualizar, dentro do Mercado Pago, a comprovação de que a compra foi realizada e será redirecionado à loja novamente. 
 
 ----[mlb]---- 
 ## Checkout Transparente 
@@ -30,7 +30,7 @@ Feito o processo inicial de compra, veja abaixo como testar a integração de ac
 2. Escolha pagar com um novo cartão de crédito e utilize os [cartões de teste](/developers/pt/guides/additional-content/testing/test-cards) para realizar o pagamento. É importante não realizar o pagamento com cartões de uso pessoal.
 3. Adicione as informações do cartão de teste indicado (nº do cartão, CVV e data de validade). 
 4. Clique em **pedido com pagamento obrigatório**.
-5. Ao finalizar a compra o seller irá visualizar que a compra foi aprovada
+5. Ao finalizar a compra será possível visualizar que a compra foi aprovada.
 
 > WARNING
 >
@@ -40,27 +40,15 @@ Feito o processo inicial de compra, veja abaixo como testar a integração de ac
 > </br> <br/>
 > Já com teste de compra feito com o ----[mlb]---- Checkout Transparente, ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API, ------------ será possível visualizar a aprovação do pedido.  
 > </br> <br/>
-> Importante salientar também que, em ambas os checkouts, essa informação de pagamento aprovado não constará no histórico da conta do Mercado Pago porque nele só constam despesas reais (feitas em produção).
+> Além disso, em ambos os checkouts essa informação de pagamento aprovado não constará no histórico da conta do Mercado Pago porque nele só constam despesas reais (feitas em produção).
 
-----[mlb]----
 > PREV_STEP_CARD_PT
 >
-> Configurar os pagamentos com Pix
+> Configuração de pagamentos
 >
-> Configure a sua loja para receber pagamentos com Pix utilizando o ----[mlb]---- Checkout Transparente. ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API. ------------ 
+> Saiba como configurar os checkouts do Mercado Pago para receber os pagamento de sua loja.
 >
-> [Pix](/developers/pt/docs/prestashop/payment-setup/cho-api/pix)
-------------
-
-----[mla, mlm, mpe, mco, mlu, mlc]----
-> PREV_STEP_CARD_PT
->
-> Configurar os pagamentos com ticket checkout
->
-> Configure a sua loja para receber pagamentos em dinheiro utilizando o ----[mlb]---- Checkout Transparente. ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API. ------------
->
-> [Configurar os pagamentos com ticket checkout](/developers/pt/docs/prestashop/payment-setup/cho-api/ticket-checkout)
-------------
+> [Configuração de pagamentos](/developers/pt/docs/prestashop/payment-setup)
 
 > NEXT_STEP_CARD_PT
 >

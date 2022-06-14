@@ -13,18 +13,26 @@ Veja abaixo quais são os meios de pagamento disponíveis para a loja ao integra
 * [Ticket checkout](/developers/pt/docs/prestashop/payment-setup/cho-api/ticket-checkout): pagamentos em dinheiro (saldo no Mercado Pago ou efectivo).
 ------------
 
+> NOTE
+>
+> Importante
+>
+> Ao utilizar o [----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------](/developers/pt/guides/checkout-api/landing) para receber os pagamentos, é importante configurar o envio de e-mails que notificarão o usuário de suas transações. Veja a seção [Como customizar e-mails para pagamentos com ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------](/developers/pt/docs/prestashop/how-tos/api-email-customixation) para detalhes de como fazê-lo.
+> <br>
+> Caso deseje utilizar o Checkout Pro para receber pagamentos na loja, veja a seção [Configurar os pagamentos com Checkout Pro](/developers/pt/docs/prestashop/payment-setup/cho-pro).
+
 > PREV_STEP_CARD_PT
 >
-> Configurar os pagamentos com Checkout Pro
+> Configuração de pagamentos
 >
-> Saiba como configurar o Checkout Pro para receber os pagamento de sua loja.
+> Saiba como configurar os checkouts do Mercado Pago para receber os pagamento de sua loja.
 >
-> [Checkout Pro](/developers/pt/docs/prestashop/payment-setup/cho-pro)
+> [Configuração de pagamentos](/developers/pt/docs/prestashop/payment-setup)
 
 > NEXT_STEP_CARD_PT
 >
 > Configurar os pagamentos com cartões
 >
-> Saiba como configurar o ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------ para receber pagamentos com cartões em sua loja.
+> Veja como configurar o ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------ para receber pagamentos com cartões em sua loja.
 >
 > [Configurar os pagamentos com cartões](/developers/pt/docs/prestashop/payment-setup/cho-api/cards)

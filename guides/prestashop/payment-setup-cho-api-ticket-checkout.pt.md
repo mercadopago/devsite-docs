@@ -16,6 +16,8 @@ Para integrar a forma de pagamento, siga os passos abaixo.
 3. Indique em quantos dias estes vencerão após a sua emissão.
 4. Se necessário, defina um valor percentual de desconto para os clientes que pagarem com Mercado Pago.
 
+Pronto! O pagamento com ticket checkout via Checkout Transparente foi configurado e está pronto para receber pagamentos em sua loja.
+
 > PREV_STEP_CARD_PT
 >
 > Configurar os pagamentos com cartões
@@ -29,7 +31,7 @@ Para integrar a forma de pagamento, siga os passos abaixo.
 >
 > Configurar os pagamentos com Pix
 >
-> Configure a sua loja para receber pagamentos com Pix utilizando o ----[mlb]---- Checkout Transparente. ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API. ------------ 
+> Saiba como configurar o ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------ para receber pagamentos com Pix em sua loja.
 >
 > [Pix](/developers/pt/docs/prestashop/payment-setup/cho-api/pix)
 ------------

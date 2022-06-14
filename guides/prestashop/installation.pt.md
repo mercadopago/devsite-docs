@@ -12,7 +12,7 @@ Pronto! Você verá o módulo instalado na seção **Personalizar** do seu paine
 >
 > Importante
 >
-> Caso você tenha problemas durante a instalação do módulo e precise entrar em contato com nosso suporte, é possível que você seja solicitado a realizar a instalação de forma manual. Veja a [Como fazer](/developers/pt/docs/prestashop/how-tos/install-module-manually) para detalhes de como fazê-lo. Ainda, mantenha o módulo sempre atualizado com a última versão para garantir a segurança dos dados e o funcionamento da integração.
+> Caso você tenha problemas durante a instalação do módulo e precise entrar em contato com nosso suporte, é possível que você seja solicitado a realizar a instalação de forma manual. Veja a seção [Como instalar o módulo manualmente](/developers/pt/docs/prestashop/how-tos/install-module-manually) para detalhes de como fazê-lo. Ainda, mantenha o módulo sempre atualizado com a última versão para garantir a segurança dos dados e o funcionamento da integração.
 
 > PREV_STEP_CARD_PT
 >

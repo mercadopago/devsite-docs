@@ -16,6 +16,8 @@ Para integrar a forma de pagamento, siga os passos abaixo.
 2. Indique o prazo de vencimento que os clientes terão para fazer a transferência via Pix. 
 3. Caso deseje, defina um valor percentual de desconto para os clientes que pagarem com Pix. A porcentagem definida será descontada do valor total da compra.
 
+Pronto! O pagamento com Pix via Checkout Transparente foi configurado e está pronto para receber pagamentos em sua loja.
+
 > PREV_STEP_CARD_PT
 >
 > Configurar os pagamentos com ticket checkout

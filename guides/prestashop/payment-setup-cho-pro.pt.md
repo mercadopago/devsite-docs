@@ -23,18 +23,22 @@ Para integrar o Checkout Pro, siga os passos abaixo.
 7. Caso deseje, ative o **modo binário** quando não quiser deixar os pagamentos em estado pendente ou em revisão. Com o modo binário, os pagamentos serão aceitos ou recusados automaticamente.
 8. Indique o período em que as preferências de pagamento do cliente ficarão salvas sem que este precise incluí-las novamente.
 
+Pronto! O Checkout Pro do Mercado Pago está pronto para receber os pagamentos da sua loja.
+
+> Caso deseje utilizar o ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------ para receber pagamentos na loja, veja a seção [Configurar os pagamentos com ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------](/developers/pt/docs/prestashop/payment-setup/cho-api/introduction).
+
 > PREV_STEP_CARD_PT
 >
-> Configuração da integração
+> Configuração de pagamentos
 >
-> Conecte sua conta do Mercado Pago ao módulo.
+> Saiba como configurar os checkouts do Mercado Pago para receber os pagamento de sua loja.
 >
-> [Configurar a integração](/developers/pt/docs/prestashop/integration)
+> [Configuração de pagamentos](/developers/pt/docs/prestashop/payment-setup)
 
 > NEXT_STEP_CARD_PT
 >
-> Configurar os pagamentos com ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------
+> Testar os pagamentos
 >
-> Saiba como configurar o ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------ para receber pagamentos em sua loja.
+> Saiba como realizar uma compra teste e garantir o funcionamento da integração.
 >
-> [Checkout Transparente](/developers/pt/docs/prestashop/payment-setup/cho-api/introduction)
+> [Testar os pagamentos](/developers/pt/docs/prestashop/sales-processing/integration-test)
