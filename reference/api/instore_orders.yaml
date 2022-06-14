@@ -10,11 +10,23 @@ paths:
       tags:
         - $ref: '#/tags/qr-code'
       summary: Create order
+      x-summary-i18n:
+        eng: Create order
+        spa: Crear orden
+        por: Criar pedido
       description: Generate a payment order with all the payment information for your product or service and associate it with the Point of Sale you want
+      x-description-i18n:
+        eng: Generate a payment order with all the payment information for your product or service and associate it with the Point of Sale you want
+        spa: Genera una orden de pago asociada a la caja que quieras con toda la información de pago de tu producto o servicio
+        por: Gerar uma ordem para associar com a preferência de pagamento e obter a URL necessária para iniciar o fluxo de pagamento
       parameters:
         - name: user_id
           in: path
           description: User Id
+          x-description-i18n:
+            eng: User Id
+            spa: User Id
+            por: User Id
           required: true
           schema:
             type: string
@@ -22,6 +34,10 @@ paths:
         - name: external_id
           in: path
           description: External Id
+          x-description-i18n:
+            eng: External Id
+            spa: External Id
+            por: External Id
           required: true
           schema:
             type: string
@@ -35,48 +51,87 @@ paths:
                 external_reference:
                   type: string
                   description: Reference you can synchronize with your sale system.
+                  x-description-i18n:
+                    eng: Reference you can synchronize with your sale system.
+                    spa: Referencia que puede sincronizar con su sistema de venta
+                    por: Referência que pode sincronizar com seu sistema de vendas
                   example: Factura-0001
                 notification_url:
                   type: string
-                  description: >-
-                    URL where you'd like to receive a payment or merchant_order
-                    notification.
+                  description: 
+                    URL where you'd like to receive a payment or merchant_order notification.
+                  x-descritpion-i18n:
+                    eng: URL where you'd like to receive a payment or merchant_order notification.
+                    spa: URL a la cual se enviará la notificación de pago o merchant_order.
+                    por: URL em que você gostaria de receber uma notificação de pagamento ou merchant_order.
                   example: http://www.yourserver.com
                 sponsor_id:
                   type: string
                   description: Mercado Pago's USER_ID of the integrator system.
+                  x-description-i18n:
+                    eng: Mercado Pago's USER_ID of the integrator system.
+                    spa: USER_ID de la cuenta de Mercado Pago del sistema integrador
+                    por: USER_ID da conta Mercado Pago do sistema integrador
                   example: '446566691'
                 items:
                   type: array
                   description: Information on the products involved in the order.
+                  x-description-i18n:
+                    eng: Information on the products involved in the order.
+                    spa: Información de los productos involucrados en la orden
+                    por: Informações sobre os produtos envolvidos no ordem
                   items: 
                     type: object
                     properties:
                       id:
                         type: string
                         description: Item id.
+                        x-description-i18n:
+                          eng: Item id.
+                          spa: Identificador del ítem
+                          por: Id do anúncio
                         example: 78123172
                       title:
                         type: string
                         example: Shampoo
                         description: Item title.
+                        x-description-i18n:
+                          eng: Item title.
+                          spa: Título del ítem
+                          por: Título do item
                       currency_id:
                         $ref: '#/components/schemas/currency_id'
                       unit_price:
                         type: number
                         description: Unit price of the item (maximum 2 decimals).
+                        x-description-i18n:
+                          eng: Unit price of the item (maximum 2 decimals).
+                          spa: Precio unitario del producto (máximo 2 decimales)
+                          por: Preço unitário do produto (máximo de 2 decimais)
                         example: 120
                       quantity:
                         type: number
                         description: Item quantity.
+                        x-description-i18n:
+                          eng: Item quantity.
+                          spa: Cantidad de producto
+                          por: Quantidade do produto
                         example: 1
                       description:
                         type: string
                         description: Item description.
+                        x-description-i18n:
+                          eng: Item description.
+                          spa: Descripción del item
+                          por: Descrição do artigo
                         example: Almendras
                       picture_url:
                         type: string
                         description: Item image URL.
+                        x-description-i18n:
+                          eng: Item image URL.
+                          spa: URL de imagen del ítem
+                          por: URL da imagem do anúncio
                         example: https://bit.ly/2nxdWHa
       responses:
         '200':
@@ -263,6 +318,10 @@ paths:
                     description: internal_metadata
         '400':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -271,19 +330,31 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - invalid_collector_id--collector-id-invalid-
-                      - invalid_sponsor_id--sponsor-id-is-not-an-active-user-
-                      - invalid_items--unit-price-invalid-
-                      - invalid_access_token--Access-denied-
+                      - invalid_collector_id--collector_id invalid.
+                      - invalid_sponsor_id--sponsor_id is not an active user.
+                      - invalid_items--unit_price invalid.
+                      - invalid_access_token--Access denied.
     delete:
       tags:
         - $ref: '#/tags/qr-code'
       summary: Delete order
+      x-summary-i18n:
+        eng: Delete order
+        spa: Eliminar orden
+        por: Excluir pedido
       description: Delete an order whenever you need to with the ID of the user and the external ID
+      x-description-i18n:
+        eng: Delete an order whenever you need to with the ID of the user and the external ID
+        spa: Elimina una orden creada siempre que lo necesites con el ID del vendedor y de la caja
+        por: Exclua uma ordem criada sempre que for necessário com o ID do vendedor e a caixa
       parameters:
         - name: user_id
           in: path
           description: User Id
+          x-description-i18n:
+            eng: User Id
+            spa: User Id
+            por: User Id
           required: true
           schema:
             type: string
@@ -291,6 +362,10 @@ paths:
         - name: external_id
           in: path
           description: External Id
+          x-description-i18n:
+            eng: External Id
+            spa: External Id
+            por: External Id
           required: true
           schema:
             type: string
@@ -298,6 +373,10 @@ paths:
       responses:
         '400':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -306,8 +385,8 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - invalid_collector_id--COLLECTOR-ID-invalid-
-                      - invalid_access_token--access-denied-
+                      - invalid_collector_id--COLLECTOR_ID invalid.
+                      - invalid_access_token--access denied.
 
 
 components:
@@ -316,6 +395,10 @@ components:
       type: string
       example: COP
       description: Currency identifier in ISO_4217 format.
+      x-description-i18n:
+        eng: Currency identifier in ISO_4217 format.
+        spa: Identificador de moneda en formato ISO_4217
+        por: Identificador de moeda no formato ISO_4217
       enum: 
         - ARS -- Argentine peso.
         - BRL -- Brazil real.
