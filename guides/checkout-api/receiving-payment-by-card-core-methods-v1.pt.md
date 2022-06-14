@@ -17,7 +17,7 @@ A integração por Checkout API do Mercado Pago para pagamentos com cartões per
 
 ![API-integration-flowchart](/images/api/api-integration-flowchart-coremethods-pt.png)
 
-> Caso deseje realizar um fluxo de pagamento automatizado, recomendamos você [utilizar a funcionalidade CardForm de MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/checkout-api/receiving-payment-by-card-v1).
+> Caso deseje realizar um fluxo de pagamento automatizado, recomendamos você [utilizar a funcionalidade CardForm de MercadoPago.js V2](/developers/pt/docs/checkout-api/payment-methods/receiving-payment-by-card-v1).
 
 <br>
 
@@ -418,29 +418,28 @@ mercadopago.payment.save(payment_data)
 Encontre o estado do pagamento no campo _status_.
 ===
 
-MercadoPago.SDK.setAccessToken("YOUR_ACCESS_TOKEN");
+PaymentClient client = new PaymentClient();
 
-Payment payment = new Payment();
-payment.setTransactionAmount(Float.valueOf(request.getParameter("transactionAmount")))
-       .setToken(request.getParameter("token"))
-       .setDescription(request.getParameter("description"))
-       .setInstallments(Integer.valueOf(request.getParameter("installments")))
-       .setPaymentMethodId(request.getParameter("paymentMethodId"));
+PaymentCreateRequest paymentCreateRequest =
+   PaymentCreateRequest.builder()
+       .transactionAmount(request.getTransactionAmount())
+       .token(request.getToken())
+       .description(request.getDescription())
+       .installments(request.getInstallments())
+       .paymentMethodId(request.getPaymentMethodId())
+       .payer(
+           PaymentPayerRequest.builder()
+               .email(request.getPayer().getEmail())
+               .firstName(request.getPayer().getFirstName())
+               .identification(
+                   IdentificationRequest.builder()
+                       .type(request.getPayer().getIdentification().getType())
+                       .number(request.getPayer().getIdentification().getNumber())
+                       .build())
+               .build())
+       .build();
 
-Identification identification = new Identification();----[mla, mlb, mlu, mlc, mpe, mco]----
-identification.setType(request.getParameter("identificationType"))
-              .setNumber(request.getParameter("identificationNumber"));------------ ----[mlm]----
-identification.setNumber(request.getParameter("identificationNumber"));------------
-
-Payer payer = new Payer();
-payer.setEmail(request.getParameter("email"))
-     .setIdentification(identification);
-     
-payment.setPayer(payer);
-
-payment.save();
-
-System.out.println(payment.getStatus());
+client.create(paymentCreateRequest);
 
 ```
 ```ruby

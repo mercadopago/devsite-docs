@@ -2,10 +2,10 @@
 
 Para configurar la integración de los bricks, debe seguir los pasos a continuación:
 
-1. [Crear container](/developers/es/docs/checkout-bricks/integration/configure-integration#bookmark_crear_container)
-2. [Incluir y configurar la librería MercadoPago.js](/developers/es/docs/checkout-bricks/integration/configure-integration#bookmark_incluir_y_configurar_la_librería_mercadopago.js)
-3. [Instanciar brick](/developers/es/docs/checkout-bricks/integration/configure-integration#bookmark_instanciar_brick)
-4. [Renderizar brick](/developers/es/docs/checkout-bricks/integration/configure-integration#bookmark_renderizar_brick)
+1. [Crear container](#bookmark_crear_container)
+2. [Incluir y configurar la librería MercadoPago.js](#bookmark_incluir_y_configurar_la_librería_mercadopago.js)
+3. [Instanciar brick](#bookmark_instanciar_brick)
+4. [Renderizar brick](#bookmark_renderizar_brick)
 
 > Los pasos se realizan en el backend o frontend. Las etiquetas **Client-Side** y **Server-Side** ubicadas inmediatamente al lado del título lo ayudan a identificar qué paso se realiza en qué instancia.
 > <br/>
@@ -41,7 +41,7 @@ Deberás crear un container para definir dónde se colocará el brick en la pant
 >
 > Atención
 >
-> Recuerda que todo el código JS se puede incluir un `< script >` o también en archivos .js separados que importes en tu sitio.
+> Recuerda que todo el código JS se puede incluir en un `< script >` o también en archivos .js separados que importes en tu sitio.
 
 Para esto deberás instalar la SDK agregando lo siguiente en tu código HTML:
 
@@ -125,6 +125,8 @@ const renderCardPaymentBrick = async (bricksBuilder) => {
 };
 renderCardPaymentBrick(bricksBuilder);
 ```
+
+El resultado de renderizar el brick debe ser como la imagen de abajo:
 
 ![cardform](checkout-bricks/card-form-es.png)
 

@@ -10,11 +10,23 @@ paths:
       tags:
         - $ref: '#/tags/checkout-api'
       summary: Get chargeback
+      x-summary-i18n:
+        eng: Get chargeback
+        spa: Obtener contracargo
+        por: Obter estorno
       description: Check all the information related to a chargeback for your product or service with the ID of the chargeback you want
+      x-description-i18n:
+        eng: Check all the information related to a chargeback for your product or service with the ID of the chargeback you want
+        spa: Consulta toda la información de un contracargo de tu producto o servicio con el ID del contracargo que quieras
+        por: Veja todas as informações de operações contestadas de seu produto ou serviço com a identificação do estorno que você deseja
       parameters:
         - name: id
           in: path
           description: Unique chargeback identifier
+          x-description-i18n:
+            eng: Unique chargeback identifier
+            spa: Identificador único del contracargo
+            por: Identificador único do estorno
           required: true
           schema:
             type: string
@@ -30,31 +42,62 @@ paths:
                   id:
                     type: string
                     description: Unique chargeback identifier
+                    x-description-i18n:
+                      eng: Unique chargeback identifier
+                      spa: Identificador único del contracargo
+                      por: Identificador único do estorno
                   payments:
                     type: array
                     description: List of payments IDs associated to the case
+                    x-description-i18n:
+                      eng: List of payments IDs associated to the case
+                      spa: Lista de pagos con IDs asociados al caso
+                      por: Lista de IDs de pagamentos associados ao caso
                     items:
                       type: number
                   currency:
                     type: string
                     description: Chergeback amount currency
+                    x-description-i18n:
+                      eng: Chergeback amount currency
+                      spa: Moneda del monto de la contracargo
+                      por: Moeda do valor do estorno
                   amount:
                     type: number
                     description: Chergeback amount
+                    x-description-i18n:
+                      eng: Chergeback amount
+                      spa: Monto de la contracargo
+                      por: Valor do estorno
                   coverage_applied:
                     type: boolean
                     description: Whether the seller has been covered or not
+                    x-description-i18n:
+                      eng: Whether the seller has been covered or not
+                      spa: Si el vendedor ha sido cubierto o no
+                      por: Se o vendedor está coberto ou não
                   coverage_elegible:
                     type: boolean
                     description: Indicates if the money returned to the buyer can be covered by Mercado Pago. It is only possible to continue with the rest of the steps if the chargeback can be covered.
+                    x-description-i18n:
+                      eng: Indicates if the money returned to the buyer can be covered by Mercado Pago. It is only possible to continue with the rest of the steps if the chargeback can be covered.
+                      spa: Define si el dinero devuelto al comprador puede ser cubierto por Mercado Pago. Solo es posible continuar con el resto de los pasos si el contracargo puede ser cubierto.
+                      por: Define se o dinheiro devolvido ao comprador pode ser coberto pelo Mercado Pago. Só é possível continuar com o restante das etapas se o estorno puder ser coberto.
                   documentation_required:
                     type: boolean
-                    description: >-
-                      Whether the seller needs to send documentation for this
-                      chargeback
+                    description: 
+                      Whether the seller needs to send documentation for this chargeback
+                    x-description-i18n:
+                      eng: Whether the seller needs to send documentation for this chargeback
+                      spa: Si el vendedor debe enviar la documentación para el contracargo 
+                      por: Se o vendedor precisa enviar a documentação para este estorno
                   documentation_status:
                     type: string
                     description: Detail of decision taken for the documentation
+                    x-description-i18n:
+                      eng: Detail of decision taken for the documentation
+                      spa: Detalle de la decisión tomada por la documentación
+                      por: Detalhe da decisão tomada para a documentação
                     enum:
                       - pending -- No documentation has been received
                       - review_pending -- Documentation received, waiting for decision to be taken
@@ -65,43 +108,87 @@ paths:
                   documentation:
                     type: array
                     description: List of documentation received from the seller
+                    x-description-i18n:
+                      eng: List of documentation received from the seller
+                      spa: Lista de documentación recibida del vendedor
+                      por: Lista de documentação recebida do vendedor
                     items:
                       type: object
                       properties:
                         type:
                           type: string
                           description: Documentation's file type
+                          x-description-i18n:
+                            eng: Documentation's file type
+                            spa: Tipo de archivo de documentacion
+                            por: Tipo de arquivo da documentação
                         url:
                           type: string
                           description: URL to see the documentation file
+                          x-description-i18n:
+                            eng: URL to see the documentation file
+                            spa: URL para ver el archivo de documentación
+                            por: URL para ver o arquivo da documentação
                         description:
                           type: string
                           description: Documentation's description
+                          x-description-i18n:
+                            eng: Documentation's description
+                            spa: Descripcion de la documentacion
+                            por: Descrição da documentação
                   date_documentation_deadline:
                     type: string
                     format: date
                     description: Chargeback's last day to send documentation
+                    x-description-i18n:
+                      eng: Chargeback's last day to send documentation
+                      spa: Último día para el envío de documentación del contracargo
+                      por: Último dia para o envio da documentação do estorno
                   date_created:
                     type: string
                     format: date
                     description: Chargeback’s creation date
+                    x-description-i18n:
+                      eng: Chargeback’s creation date
+                      spa: Fecha de creación del contracargo
+                      por: Data de criação do Estorno
                   date_last_updated:
                     type: string
                     format: date
                     description: Chargeback's last modified date
+                    x-description-i18n:
+                      eng: Chargeback's last modified date
+                      spa: Fecha de última modificación del contracargo
+                      por: Data da última modificação do estorno
                   live_mode:
                     type: boolean
                     description: Whether the chargeback will be processed in sandbox or in production mode. If TRUE, then the chargeback will be processed in production mode. If FALSE, then the chargeback will be processed in sandbox mode.
+                    x-description-i18n:
+                      eng: Whether the chargeback will be processed in sandbox or in production mode. If TRUE, then the chargeback will be processed in production mode. If FALSE, then the chargeback will be processed in sandbox mode.
+                      spa: Si la devolución será procesada en el "sandbox" o en el modo de producción. Si es TRUE, el contracargo se procesará en modo de producción. Si es FALSE, el contracargo se procesará en modo sandbox.
+                      por: Se o estorno será processada em modo sandbox ou em produção. Se TRUE, o estorno será processado em modo de produção. Se FALSE, o estorno será processado no modo sandbox.
   /v1/payments/{id}/refunds:
     get:
       tags:
         - $ref: '#/tags/checkout-api'
       summary: Get refunds list
+      x-summary-i18n:
+        eng: Get refunds list
+        spa: Obtener lista de reembolsos
+        por: Obter lista de reembolsos
       description: Get all Refunds for a specific payment
+      x-description-i18n:
+        eng: Get all Refunds for a specific payment
+        spa: Consultar todos los reembolsos para un pago específico
+        por: Consultar todos os reembolsos para um pagamento específico
       parameters:
         - name: id
           in: path
           description: Payment identifier
+          x-description-i18n:
+            eng: Payment identifier
+            spa: Identificador de pago
+            por: Identificador de pagamento
           required: true
           schema:
             type: string
@@ -118,57 +205,109 @@ paths:
                     type: number
                     example: 1032332129
                     description: Refund identifier
+                    x-description-i18n:
+                      eng: Refund identifier
+                      spa: Identificador de reembolso
+                      por: Identificador do reembolso
                   payment_id:
                     type: number
                     example: 18552260055
                     description: Payment identifier
+                    x-description-i18n:
+                      eng: Payment identifier
+                      spa: Identificador de pago
+                      por: Identificador de pagamento
                   amount:
                     type: number
                     example: 4
                     description: Payment identifier
+                    x-description-i18n:
+                      eng: Payment identifier
+                      spa: Identificador de pago
+                      por: Identificador de pagamento
                   metadata:
                     type: array
                     description: Contains payment metadata that is sent to us in the payment post
+                    x-description-i18n:
+                      eng: Contains payment metadata that is sent to us in the payment post
+                      spa: Contiene metadatos del pago que nos envían en el post del payment
+                      por: Contém metadados de pagamento que nos são enviados no post de payment
                     items:
                   source:
                     type: array
                     description: Contains the data to identify who originated the refund (contains ID, name and type)
+                    x-description-i18n:
+                      eng: Contains the data to identify who originated the refund (contains ID, name and type)
+                      spa: Contiene los datos para identificar quién originó el reembolso (contiene ID, name y type)
+                      por: Contém os dados para identificar quem originou o reembolso (contém ID, nome e tipo)
                     items:
                       type: object
                       properties:
                         name:
                           type: string
                           example: "Firstname Lastname"
+                          x-example-i18n:
+                            eng: Firstname Lastname
+                            spa: Nombre y apellido
+                            por: Nome e sobrenome
                           description: The name of the user who submitted the refund request  
                         id:
                           type: string
                           example: "1003743392"
                           description: The ID of the user who submitted the refund request (collector, operator, owner of the marketplace)
+                          x-description-i18n:
+                            eng: The ID of the user who submitted the refund request (collector, operator, owner of the marketplace)
+                            spa: El ID del usuario que envió el pedido de reembolso (collector, operator, owner del marketplace)
+                            por: O ID do usuário que enviou a solicitação de reembolso (coletor, operador e proprietário do marketplace)
                         type:
                           type: string
                           example: "collector"
                           description: Source type. The possible values are Admin, Collector, BPP, and Marketplace.
+                          x-description-i18n:
+                            eng: Source type. The possible values are Admin, Collector, BPP, and Marketplace.
+                            spa: Tipo de fuente. Los valores posibles son Admin, Collector, BPP y Marketplace.
+                            por: Tipo de fonte. Os valores possíveis são Admin, Collector, BPP e Marketplace.
                   date_created:
                     type: string
                     example: "2021-11-24T13:58:49.312-04:00"
                     format: date
                     description: Refund creation date
+                    x-description-i18n:
+                      eng: Refund creation date
+                      spa: Fecha de creación del reembolso
+                      por: Data de criação do reembolso
                   unique_sequence_number:
                     type: string
                     example: null
                     description: It is an identifier of the refund that was generated by the card processor.
+                    x-description-i18n:
+                      eng: It is an identifier of the refund that was generated by the card processor.
+                      spa: Es un identificador del reembolso que generó el procesador de la tarjeta.
+                      por: É um identificador do reembolso que foi gerado pelo processador do cartão.
                   refund_mode:
                     type: string
                     example: "standard"
                     description: Type of refund
+                    x-description-i18n:
+                      eng: Type of refund
+                      spa: Tipo de reembolso
+                      por: Tipo de reembolso
                   adjustment_amount:
                     type: number
                     example: 0
                     description: Refund adjustment
+                    x-description-i18n:
+                      eng: Refund adjustment
+                      spa: Ajuste de reembolso
+                      por: Ajuste de reembolso
                   status:
                     type: string
                     example: "approved"
                     description: Refund status
+                    x-description-i18n:
+                      eng: Refund status
+                      spa: Status de reembolso
+                      por: Status de reembolso
                     enum:
                       - approved -- The payment has been approved and accredited.
                       - in_process -- Payment is being reviewed.
@@ -179,18 +318,34 @@ paths:
                     type: string
                     example: null
                     description: Refund reason
+                    x-description-i18n:
+                      eng: Refund reason
+                      spa: Motivo de reembolso
+                      por: Motivo do reembolso
                   label:
                     type: array
                     description: Information relevant to the refund. Currently only one label called hidden is used. When the payment search is made, refunds with the hidden label are not returned in the response JSON.
+                    x-description-i18n:
+                      eng: Information relevant to the refund. Currently only one label called hidden is used. When the payment search is made, refunds with the hidden label are not returned in the response JSON.
+                      spa: Información pertinente al reembolso. Actualmente solo se usa una label llamada hidden. Cuando se hace la búsqueda del pago, en el JSON de respuesta no se devuelven los refunds que tienen el label hidden.
+                      por: Informações relevantes para o reembolso. Atualmente, apenas uma label chamada hidden é usada. Quando a pesquisa de pagamento é feita, os reembolsos com o label hiddden não são retornados no JSON de resposta.
                     items:
                       type: object
                   partition_details:
                     type: array
                     description: Indicates the amount returned for each of the partitions with which the payment was generated. Currently, payments with several money partitions are created only for one product from Brazil (Valeras), so it does not apply to all. Valeras allows offering benefits to employees, and is currently turned on in Brazil only for some employers.
+                    x-description-i18n:
+                      eng: Indicates the amount returned for each of the partitions with which the payment was generated. Currently, payments with several money partitions are created only for one product from Brazil (Valeras), so it does not apply to all. Valeras allows offering benefits to employees, and is currently turned on in Brazil only for some employers.
+                      spa: Indica el monto devuelto para cada una de las particiones con las que fue generado el pago. Actualmente solo para un producto de Brasil (Valeras) se crean pagos con varias particiones de dinero, por lo que no aplica a todos. Valeras permite ofrecer beneficios a empleados, y actualmente se encuentra encendido en Brasil solo para algunos empleadores.
+                      por: Indica o valor devolvido para cada uma das partições com as quais o pagamento foi gerado. Atualmente apenas para um produto do Brasil (Valeras) são criados pagamentos com várias partições de dinheiro, portanto não se aplica a todos. O Valeras permite oferecer benefícios aos empregados e atualmente está ativo no Brasil apenas para alguns empregadores.
                     items:
                       type: object        
         '400':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -202,6 +357,10 @@ paths:
                       - 400--Bad-Request--missing-information-on-header-            
         '401':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -213,6 +372,10 @@ paths:
                       - 5--Must-provide-your-access-token-to -proceed--Valid-token-required-
         '404':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -226,11 +389,23 @@ paths:
       tags:
         - $ref: '#/tags/checkout-api'
       summary: Create refund
+      x-summary-i18n:
+        eng: Create refund
+        spa: Crear reembolso
+        por: Criar reembolso
       description: Create Partial/Full Refund for a specific payment. If the amount field is filled, it will create a partial refund, if not, it will create a full refund
+      x-description-i18n:
+        eng: Create Partial/Full Refund for a specific payment. If the amount field is filled, it will create a partial refund, if not, it will create a full refund
+        spa: Crear reembolsos parciales/totales para un pago específico. Si el campo de suma ha sido completado, creará un reembolso parcial, en caso contrario, creará un reembolso total
+        por: Criar um reembolso parcial/total para um pagamento específico. Se o campo amount estiver preechido, será criado um reembolso parcial, caso contrário, se criará um reembolso total
       parameters:
         - name: id
           in: path
           description: Payment identifier
+          x-description-i18n:
+            eng: Payment identifier
+            spa: Identificador de pago
+            por: Identificador de pagamento
           required: true
           schema:
             type: string
@@ -238,6 +413,10 @@ paths:
         - name: X-Idempotency-Key
           in: header
           description: Idempotency key. When used, avoids duplicated refund
+          x-description-i18n:
+            eng: Idempotency key. When used, avoids duplicated refund
+            spa: Idempotency key. Al usarse, evita los reembolsos duplicados
+            por: Idempotency key. Quando usada, evita reembolsos duplicados
           required: false
           schema:
             type: string
@@ -251,6 +430,10 @@ paths:
                 amount:
                   type: number
                   description: Refund amount. If this property (amount) is removed from body, it will create a full refund.
+                  x-description-i18n:
+                    eng: Refund amount. If this property (amount) is removed from body, it will create a full refund.
+                    spa: Monto de reembolso. Si esta propiedad (monto) es removida del body, creará un reembolso total.
+                    por: Valor do reembolso. Se a propriedade (amount) for removida do body, criará um reembolso integral.
                   example: 5
       responses:
         '200':
@@ -264,58 +447,110 @@ paths:
                     type: number
                     example: 1009042015
                     description: Refund identifier
+                    x-description-i18n:
+                      eng: Refund identifier
+                      spa: Identificador de reembolso
+                      por: Identificador do reembolso
                   payment_id:
                     type: number
                     example: 18552260055
                     description: Payment identifier
+                    x-description-i18n:
+                      eng: Payment identifier
+                      spa: Identificador de pago
+                      por: Identificador de pagamento
                   amount:
                     type: number
                     example: 10
                     description: Refund amount
+                    x-description-i18n:
+                      eng: Refund amount
+                      spa: Monto de reembolso
+                      por: Valor do reembolso
                   metadata:
                     type: array
                     description: Contains payment metadata that is sent to us in the payment post
+                    x-description-i18n:
+                      eng: Contains payment metadata that is sent to us in the payment post
+                      spa: Contiene metadatos del pago que nos envían en el post del payment
+                      por: Contém metadados de pagamento que nos são enviados no post de payment
                     items:
                       type: object
                   source:
                     type: array
                     description: Contains the data to identify who originated the refund (contains ID, name and type)
+                    x-description-i18n:
+                      eng: Contains the data to identify who originated the refund (contains ID, name and type)
+                      spa: Contiene los datos para identificar quién originó el reembolso (contiene ID, name y type)
+                      por: Contém os dados para identificar quem originou o reembolso (contém ID, nome e tipo)
                     items:
                       type: object
                       properties:
                         name:
                           type: string
                           example: "Firstname Lastname"
+                          x-example-i18n:
+                            eng: Firstname Lastname
+                            spa: Nombre y apellido
+                            por: Nome e sobrenome
                           description: The name of the user who submitted the refund request  
                         id:
                           type: string
                           example: "1003743392"
                           description: The ID of the user who submitted the refund request (collector, operator, owner of the marketplace)
+                          x-description-i18n:
+                            eng: The ID of the user who submitted the refund request (collector, operator, owner of the marketplace)
+                            spa: El ID del usuario que envió el pedido de reembolso (collector, operator, owner del marketplace)
+                            por: O ID do usuário que enviou a solicitação de reembolso (coletor, operador e proprietário do marketplace)
                         type:
                           type: string
                           example: "collector"
                           description: Source type. The possible values are Admin, Collector, BPP, and Marketplace.
+                          x-description-i18n:
+                            eng: Source type. The possible values are Admin, Collector, BPP, and Marketplace.
+                            spa: Tipo de fuente. Los valores posibles son Admin, Collector, BPP y Marketplace.
+                            por: Tipo de fonte. Os valores possíveis são Admin, Collector, BPP e Marketplace.
                   date_created:
                     type: string
                     example: "2021-11-24T13:58:49.312-04:00"
                     format: date
                     description: Refund creation date
+                    x-description-i18n:
+                      eng: Refund creation date
+                      spa: Fecha de creación del reembolso
+                      por: Data de criação do reembolso
                   unique_sequence_number:
                     type: string
                     example: null
                     description: It is an identifier of the refund that was generated by the card processor.
+                    x-description-i18n:
+                      eng: It is an identifier of the refund that was generated by the card processor.
+                      spa: Es un identificador del reembolso que generó el procesador de la tarjeta.
+                      por: É um identificador do reembolso que foi gerado pelo processador do cartão.
                   refund_mode:
                     type: string
                     example: "standard"
                     description: Type of Refund
+                    x-description-i18n:
+                      eng: Type of Refund
+                      spa: Tipo de reembolso
+                      por: Tipo de reembolso
                   adjustment_amount:
                     type: number
                     example: 0
                     description: Refund adjustment
+                    x-description-i18n:
+                      eng: Refund adjustment
+                      spa: Ajuste de reembolso
+                      por: Ajuste de reembolso
                   status:
                     type: string
                     example: "approved"
                     description: Refund status
+                    x-description-i18n:
+                      eng: Refund status
+                      spa: Status de reembolso
+                      por: Status de reembolso
                     enum:
                       - approved -- The payment has been approved and accredited.
                       - in_process -- Payment is being reviewed.
@@ -326,18 +561,34 @@ paths:
                     type: string
                     example: null
                     description: Refund reason
+                    x-description-i18n:
+                      eng: Refund reason
+                      spa: Motivo de reembolso
+                      por: Motivo do reembolso
                   label:
                     type: array
                     description: Information relevant to the refund. Currently only one label called hidden is used. When the payment search is made, refunds with the hidden label are not returned in the response JSON.
+                    x-description-i18n:
+                      eng: Information relevant to the refund. Currently only one label called hidden is used. When the payment search is made, refunds with the hidden label are not returned in the response JSON.
+                      spa: Información pertinente al reembolso. Actualmente solo se usa una label llamada hidden. Cuando se hace la búsqueda del pago, en el JSON de respuesta no se devuelven los refunds que tienen el label hidden.
+                      por: Informações relevantes para o reembolso. Atualmente, apenas uma label chamada hidden é usada. Quando a pesquisa de pagamento é feita, os reembolsos com o label hiddden não são retornados no JSON de resposta.
                     items:
                       type: object
                   partition_details:
                     type: array
                     description: Indicates the amount returned for each of the partitions with which the payment was generated. Currently, payments with several money partitions are created only for one product from Brazil (Valeras), so it does not apply to all. Valeras allows offering benefits to employees, and is currently turned on in Brazil only for some employers.
+                    x-description-i18n:
+                      eng: Indicates the amount returned for each of the partitions with which the payment was generated. Currently, payments with several money partitions are created only for one product from Brazil (Valeras), so it does not apply to all. Valeras allows offering benefits to employees, and is currently turned on in Brazil only for some employers.
+                      spa: Indica el monto devuelto para cada una de las particiones con las que fue generado el pago. Actualmente solo para un producto de Brasil (Valeras) se crean pagos con varias particiones de dinero, por lo que no aplica a todos. Valeras permite ofrecer beneficios a empleados, y actualmente se encuentra encendido en Brasil solo para algunos empleadores.
+                      por: Indica o valor devolvido para cada uma das partições com as quais o pagamento foi gerado. Atualmente apenas para um produto do Brasil (Valeras) são criados pagamentos com várias partições de dinheiro, portanto não se aplica a todos. O Valeras permite oferecer benefícios aos empregados e atualmente está ativo no Brasil apenas para alguns empregadores.
                     items:
                       type: object        
         '400':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -349,6 +600,10 @@ paths:
                       - 2063--The-action-requested-is-not-valid-for-the-current-payment-state--missing-information-on-header-or-the-payment-was-fully-refund-            
         '401':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -362,6 +617,10 @@ paths:
                       - 4041--amount-attribute-must-be-numeric--Amount-should-be-a-number-
         '404':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -377,11 +636,23 @@ paths:
       tags:
         - $ref: '#/tags/checkout-api'
       summary: Get specific refund
+      x-summary-i18n:
+        eng: Get specific refund
+        spa: Obtener reembolso específico
+        por: Obter reembolso específico
       description: Get a specific Refund from a specific payment
+      x-description-i18n:
+        eng: Get a specific Refund from a specific payment
+        spa: Consultar reembolso específico de un pago determinado
+        por: Consultar reembolso específico de determinado pagamento
       parameters:
         - name: id
           in: path
           description: Payment identifier
+          x-description-i18n:
+            eng: Payment identifier
+            spa: Identificador de pago
+            por: Identificador de pagamento
           required: true
           schema:
             type: string
@@ -389,6 +660,10 @@ paths:
         - name: refund_id
           in: path
           description: Refund identifier
+          x-description-i18n:
+            eng: Refund identifier
+            spa: Identificador de reembolso
+            por: Identificador do reembolso
           required: true
           schema:
             type: string
@@ -405,6 +680,10 @@ paths:
                     type: number
                     example: 1032332129
                     description: Refund identifier
+                    x-description-i18n:
+                      eng: Refund identifier
+                      spa: Identificador de reembolso
+                      por: Identificador do reembolso
                   payment_id:
                     type: number
                     example: 18552260055
@@ -413,50 +692,94 @@ paths:
                     type: number
                     example: 10
                     description: Refund amount
+                    x-description-i18n:
+                      eng: Refund amount
+                      spa: Monto de reembolso
+                      por: Valor do reembolso
                   metadata:
                     type: array
                     description: Contains payment metadata that is sent to us in the payment post
+                    x-description-i18n:
+                      eng: Contains payment metadata that is sent to us in the payment post
+                      spa: Contiene metadatos del pago que nos envían en el post del payment
+                      por: Contém metadados de pagamento que nos são enviados no post de payment
                     items:
                       type: object
                   source:
                     type: array
                     description: Contains the data to identify who originated the refund (contains ID, name and type)
+                    x-description-i18n:
+                      eng: Contains the data to identify who originated the refund (contains ID, name and type)
+                      spa: Contiene los datos para identificar quién originó el reembolso (contiene ID, name y type)
+                      por: Contém os dados para identificar quem originou o reembolso (contém ID, nome e tipo)
                     items:
                       type: object
                       properties:
                         name:
                           type: string
                           example: "Firstname Lastname"
+                          x-example-i18n:
+                            eng: Firstname Lastname
+                            spa: Nombre y apellido
+                            por: Nome e sobrenome
                           description: The name of the user who submitted the refund request  
                         id:
                           type: string
                           example: "1003743392"
                           description: The ID of the user who submitted the refund request (collector, operator, owner of the marketplace)
+                          x-description-i18n:
+                            eng: The ID of the user who submitted the refund request (collector, operator, owner of the marketplace)
+                            spa: El ID del usuario que envió el pedido de reembolso (collector, operator, owner del marketplace)
+                            por: O ID do usuário que enviou a solicitação de reembolso (coletor, operador e proprietário do marketplace)
                         type:
                           type: string
                           example: "collector"
                           description: Source type. The possible values are Admin, Collector, BPP, and Marketplace.
+                          x-description-i18n:
+                            eng: Source type. The possible values are Admin, Collector, BPP, and Marketplace.
+                            spa: Tipo de fuente. Los valores posibles son Admin, Collector, BPP y Marketplace.
+                            por: Tipo de fonte. Os valores possíveis são Admin, Collector, BPP e Marketplace.
                   date_created:
                     type: string
                     example: "2021-11-24T13:58:49.312-04:00"
                     format: date
                     description: Refund creation date
+                    x-description-i18n:
+                      eng: Refund creation date
+                      spa: Fecha de creación del reembolso
+                      por: Data de criação do reembolso
                   unique_sequence_number:
                     type: string
                     example: null
                     description: It is an identifier of the refund that was generated by the card processor.
+                    x-description-i18n:
+                      eng: It is an identifier of the refund that was generated by the card processor.
+                      spa: Es un identificador del reembolso que generó el procesador de la tarjeta.
+                      por: É um identificador do reembolso que foi gerado pelo processador do cartão.
                   refund_mode:
                     type: string
                     example: "standard"
                     description: Type of refund
+                    x-description-i18n:
+                      eng: Type of refund
+                      spa: Tipo de reembolso
+                      por: Tipo de reembolso
                   adjustment_amount:
                     type: number
                     example: 0
                     description: Refund adjustment
+                    x-description-i18n:
+                      eng: Refund adjustment
+                      spa: Ajuste de reembolso
+                      por: Ajuste de reembolso
                   status:
                     type: string
                     example: "approved"
                     description: Refund status
+                    x-description-i18n:
+                      eng: Refund status
+                      spa: Status de reembolso
+                      por: Status de reembolso
                     enum:
                       - approved -- The payment has been approved and accredited.
                       - in_process -- Payment is being reviewed.
@@ -467,18 +790,34 @@ paths:
                     type: string
                     example: null
                     description: Refund reason
+                    x-description-i18n:
+                      eng: Refund reason
+                      spa: Motivo de reembolso
+                      por: Motivo do reembolso
                   label:
                     type: array
                     description: Information relevant to the refund. Currently only one label called hidden is used. When the payment search is made, refunds with the hidden label are not returned in the response JSON.
+                    x-description-i18n:
+                      eng: Information relevant to the refund. Currently only one label called hidden is used. When the payment search is made, refunds with the hidden label are not returned in the response JSON.
+                      spa: Información pertinente al reembolso. Actualmente solo se usa una label llamada hidden. Cuando se hace la búsqueda del pago, en el JSON de respuesta no se devuelven los refunds que tienen el label hidden.
+                      por: Informações relevantes para o reembolso. Atualmente, apenas uma label chamada hidden é usada. Quando a pesquisa de pagamento é feita, os reembolsos com o label hiddden não são retornados no JSON de resposta.
                     items:
                       type: object
                   partition_details:
                     type: array
                     description: Indicates the amount returned for each of the partitions with which the payment was generated. Currently, payments with several money partitions are created only for one product from Brazil (Valeras), so it does not apply to all. Valeras allows offering benefits to employees, and is currently turned on in Brazil only for some employers.
+                    x-description-i18n:
+                      eng: Indicates the amount returned for each of the partitions with which the payment was generated. Currently, payments with several money partitions are created only for one product from Brazil (Valeras), so it does not apply to all. Valeras allows offering benefits to employees, and is currently turned on in Brazil only for some employers.
+                      spa: Indica el monto devuelto para cada una de las particiones con las que fue generado el pago. Actualmente solo para un producto de Brasil (Valeras) se crean pagos con varias particiones de dinero, por lo que no aplica a todos. Valeras permite ofrecer beneficios a empleados, y actualmente se encuentra encendido en Brasil solo para algunos empleadores.
+                      por: Indica o valor devolvido para cada uma das partições com as quais o pagamento foi gerado. Atualmente apenas para um produto do Brasil (Valeras) são criados pagamentos com várias partições de dinheiro, portanto não se aplica a todos. O Valeras permite oferecer benefícios aos empregados e atualmente está ativo no Brasil apenas para alguns empregadores.
                     items:
                       type: object     
         '400':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -490,6 +829,10 @@ paths:
                       - 400--Bad-Request--missing-information-on-header-            
         '401':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -501,6 +844,10 @@ paths:
                       - 5--Must-provide-your-access-token-to-proceed--Valid-token-required-
         '404':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -516,11 +863,23 @@ paths:
       tags:
         - $ref: '#/tags/checkout-api'
       summary: Create cancellation
+      x-summary-i18n:
+        eng: Create cancellation
+        spa: Crear cancelación
+        por: Criar cancelamento
       description: Cancel a sale for a specific payment
+      x-description-i18n:
+        eng: Cancel a sale for a specific payment
+        spa: Cancelar una compra para un pago específico
+        por: Cancelar uma compra de um pagamento específico
       parameters:
         - name: payment_id
           in: path
           description: Payment ID
+          x-description-i18n:
+            eng: Payment ID
+            spa: ID de pago
+            por: ID de pagamento
           required: true
           schema:
             type: string
@@ -535,6 +894,10 @@ paths:
                   type: String
                   example: cancelled
                   description: Payment status.
+                  x-description-i18n:
+                    eng: Payment status.
+                    spa: Estado del pago
+                    por: Estado do pagamento
       responses:
         '200':
           description: success
@@ -547,47 +910,87 @@ paths:
                     type: number
                     example: 18746874919
                     description: Payment identifier
+                    x-description-i18n:
+                      eng: Payment identifier
+                      spa: Identificador de pago
+                      por: Identificador de pagamento
                   date_created:
                     type: string
                     example: "2021-12-10T17:13:23.000-04:00"
                     format: date
                     description: Cancelation creation date
+                    x-description-i18n:
+                      eng: Cancelation creation date
+                      spa: Fecha de creación de la cancelación
+                      por: Data de criação do cancelamento
                   date_approved:
                     type: string
                     example: 
                     format: date
                     description: Cancelation approved date
+                    x-description-i18n:
+                      eng: Cancelation approved date
+                      spa: Fecha de aprovación de la cancelación
+                      por: Data de aprovação do cancelamento
                   date_last_updated:
                     type: string
                     example: "2021-12-10T17:31:34.000-04:00"
                     format: date
                     description: Last updated date
+                    x-description-i18n:
+                      eng: Last updated date
+                      spa: Última fecha de actualización
+                      por: Data da última atualização
                   date_of_expiration:
                     type: string
                     example: "2021-12-13T22:59:59.000-04:00"
                     format: date
                     description: Expiration date
+                    x-description-i18n:
+                      eng: Expiration date
+                      spa: Fecha de vencimiento
+                      por: Data de validade
                   money_release_date:
                     type: string
                     example: 
                     format: date
                     description: Money release date
+                    x-description-i18n:
+                      eng: Money release date
+                      spa: Fecha de liberación del dinero
+                      por: Data de liberação do dinheiro
                   operation_type:
                     type: string
                     example: "regular_payment"
                     description: Operation type
+                    x-description-i18n:
+                      eng: Operation type
+                      spa: Tipo de operación
+                      por: Tipo de operação
                   issuer_id:
                     type: number
                     example: 
                     description: Issuer identifier
+                    x-description-i18n:
+                      eng: Issuer identifier
+                      spa: Identificador del emisor
+                      por: Identificador do emissor
                   payment_method_id:
                     type: string
                     example: "bolbradesco"
                     description: Payment method identifier
+                    x-description-i18n:
+                      eng: Payment method identifier
+                      spa: Identificador del medio de pago
+                      por: Identificador do meio de pagamento
                   payment_type_id:
                     type: string
                     example: "ticket"
                     description: Payment type identifier
+                    x-description-i18n:
+                      eng: Payment type identifier
+                      spa: Identificador del tipo de pago
+                      por: Identificador do tipo de pagamento
                   status:
                     type: string
                     example: "cancelled"
@@ -596,73 +999,145 @@ paths:
                     type: string
                     example: "by_collector"
                     description: Status detail
+                    x-description-i18n:
+                      eng: Status detail
+                      spa: Detalle del status
+                      por: Detalhe do status
                   currency_id:
                     type: string
                     example: "BRL"
                     description: Currency identifier
+                    x-description-i18n:
+                      eng: Currency identifier
+                      spa: Identificador de moneda
+                      por: Identificador de moeda
                   description:
                     type: string
                     example: "Meu produto"
                     description: Description
+                    x-description-i18n:
+                      eng: Description
+                      spa: Descripción
+                      por: Descrição
                   live_mode:
                     type: string
                     example: 
                     description: Whether the chargeback will be processed in sandbox or in production mode. If TRUE, then the chargeback will be processed in production mode. If FALSE, then the chargeback will be processed in sandbox mode.
+                    x-description-i18n:
+                      eng: Whether the chargeback will be processed in sandbox or in production mode. If TRUE, then the chargeback will be processed in production mode. If FALSE, then the chargeback will be processed in sandbox mode.
+                      spa: Si la devolución será procesada en el "sandbox" o en el modo de producción. Si es TRUE, el contracargo se procesará en modo de producción. Si es FALSE, el contracargo se procesará en modo sandbox.
+                      por: Se o estorno será processada em modo sandbox ou em produção. Se TRUE, o estorno será processado em modo de produção. Se FALSE, o estorno será processado no modo sandbox.
                   sponsor_id:
                     type: string
                     example: 
                     description: Sponsor identifier
+                    x-description-i18n:
+                      eng: Sponsor identifier
+                      spa: Identificador de patrocinador
+                      por: Identificador do patrocinador
                   authorization_code:
                     type: string
                     example: 
                     description: Authorization code
+                    x-description-i18n:
+                      eng: Authorization code
+                      spa: Código de autorización
+                      por: Código de autorização
                   money_release_schema:
                     type: string
                     example: 
                     description: Money release schema
+                    x-description-i18n:
+                      eng: Money release schema
+                      spa: Esquema de liberación de dinero
+                      por: Esquema de liberação de dinheiro
                   taxes_amount:
                     type: number
                     example: 0
                     description: Tax amount
+                    x-description-i18n:
+                      eng: Tax amount
+                      spa: Importe del impuesto
+                      por: Valor de imposto
                   counter_currency:
                     type: string
                     example: 
                     description: Counter currency
+                    x-description-i18n:
+                      eng: Counter currency
+                      spa: Contador de moneda
+                      por: Contador de moeda
                   brand_id:
                     type: string
                     example: 
                     description: Brand identifier
+                    x-description-i18n:
+                      eng: Brand identifier
+                      spa: Identificador de marca
+                      por: Identificador de marca
                   shipping_amount:
                     type: number
                     example: 0
                     description: Shipping amount
+                    x-description-i18n:
+                      eng: Shipping amount
+                      spa: Valor de envío
+                      por: Valor de envio
                   pos_id:
                     type: string
                     example: 
                     description: POS identifier
+                    x-description-i18n:
+                      eng: POS identifier
+                      spa: Identificador de POS
+                      por: Identificador de POS
                   store_id:
                     type: string
                     example: 
                     description: Store identifier
+                    x-description-i18n:
+                      eng: Store identifier
+                      spa: Identificador de la tienda
+                      por: Identificador da loja
                   integrator_id:
                     type: string
                     example: 
                     description: Integrator identifier
+                    x-description-i18n:
+                      eng: Integrator identifier
+                      spa: Identificador del integrador
+                      por: Identificador do integrador
                   platform_id:
                     type: string
                     example: 
                     description: Platform identifier
+                    x-description-i18n:
+                      eng: Platform identifier
+                      spa: Identificador de la plataforma
+                      por: Identificador da plataforma
                   corporation_id:
                     type: string
                     example: 
                     description: Corporation identifier
+                    x-description-i18n:
+                      eng: Corporation identifier
+                      spa: Identificador de la corporación
+                      por: Identificador da corporação
                   collector_id:
                     type: number
                     example: 
                     description: Number identifier
+                    x-description-i18n:
+                      eng: Number identifier
+                      spa: Número identificador
+                      por: Número identificador
                   payers:
                     type: array
                     description: List of payers
+                    x-description-i18n:
+                      eng: List of payers
+                      spa: Lista de pagadores
+                      por: Lista de pagadores
                     items:
                       type: object
                       properties:
@@ -682,9 +1157,17 @@ paths:
                           type: string
                           example: "collector"
                           description: Type
+                          x-description-i18n:
+                            eng: Type
+                            spa: Tipo
+                            por: Tipo
                         identification:
                           type: array
                           description: List of identification
+                          x-description-i18n:
+                            eng: List of identification
+                            spa: Lista de identificación
+                            por: Lista de identificação
                           items:
                             type: object
                             properties:
@@ -692,13 +1175,25 @@ paths:
                                 type: string
                                 example: "32659430"
                                 description: Identification number.
+                                x-description-i18n:
+                                  eng: Identification number.
+                                  spa: Número de identificación
+                                  por: Número de identificação
                               type:
                                 type: string
                                 example: "DNI"
                                 description: Identification type.
+                                x-description-i18n:
+                                  eng: Identification type.
+                                  spa: Tipo de identificación
+                                  por: Tipo de identificação
                         phone:
                           type: array
                           description: List of phones
+                          x-description-i18n:
+                            eng: List of phones
+                            spa: Lista de teléfonos
+                            por: Lista de telefones
                           items:
                             type: object
                             properties:
@@ -706,43 +1201,83 @@ paths:
                                 type: string
                                 example: 
                                 description: Area code
+                                x-description-i18n:
+                                  eng: Area code
+                                  spa: Código de área
+                                  por: Código de área
                               number:
                                 type: string
                                 example: 
                                 description: Number
+                                x-description-i18n:
+                                  eng: Number
+                                  spa: Número
+                                  por: O Número
                               extension:
                                 type: string
                                 example: 
                                 description: Extension
+                                x-description-i18n:
+                                  eng: Extension
+                                  spa: Extensión
+                                  por: Ramal
                         entity_type:
                           type: string
                           example: 
                           description: Entity type
+                          x-description-i18n:
+                            eng: Entity type
+                            spa: Tipo de entidad
+                            por: Tipo de entidade
                         id:
                           type: string
                           example: "1003743392"
                           description: Identifier
+                          x-description-i18n:
+                            eng: Identifier
+                            spa: Identificador
+                            por: Identificador
                         operator_id:
                           type: string
                           example: 
                           description: Operator identifier
+                          x-description-i18n:
+                            eng: Operator identifier
+                            spa: Identificador del operador
+                            por: Identificador do operador
                   marketplace_owner:
                     type: string
                     example: 
                     description: Marketplace owner
+                    x-description-i18n:
+                      eng: Marketplace owner
+                      spa: Propietario del marketplace
+                      por: Proprietário do marketplace
                   metadata:
                     type: array
                     description: Contains payment metadata that is sent to us in the payment post
+                    x-description-i18n:
+                      eng: Contains payment metadata that is sent to us in the payment post
+                      spa: Contiene metadatos del pago que nos envían en el post del payment
+                      por: Contém metadados de pagamento que nos são enviados no post de payment
                     items:
                   additional_info:
                     type: array
                     description: List of additional information
+                    x-description-i18n:
+                      eng: List of additional information
+                      spa: Lista de información adicional
+                      por: Lista de informação adicional
                     items:
                       type: object
                       properties:
                         items:
                           type: array
                           description: List of items
+                          x-description-i18n:
+                            eng: List of items
+                            spa: Lista de items
+                            por: Lista de ítens
                           items:
                             type: object
                             properties:
@@ -750,36 +1285,76 @@ paths:
                                 type: string
                                 example: "234"
                                 description: Identifier
+                                x-description-i18n:
+                                  eng: Identifier
+                                  spa: Identificador
+                                  por: Identificador
                               title:
                                 type: string
                                 example: "My product"
+                                x-example-i18n:
+                                  eng: My product
+                                  spa: Mi producto
+                                  por: Meu produto
                                 description: Item title.
+                                x-description-i18n:
+                                  eng: Item title.
+                                  spa: Título del ítem
+                                  por: Título do item
                               description:
                                 type: string
                                 example: "E-commerce store cellphone"
+                                x-example-i18n:
+                                  eng: E-commerce store cellphone
+                                  spa: Celular de la tienda online
+                                  por: Celular da loja online
                                 description: Description
+                                x-description-i18n:
+                                  eng: Description
+                                  spa: Descripción
+                                  por: Descrição
                               picture_url:
                                 type: string
                                 example: "https://www.mercadopago.com/org-img/MP3/home/logomp3.gif"
                                 description: Picture URL
+                                x-description-i18n:
+                                  eng: Picture URL
+                                  spa: URL de la imagen
+                                  por: URL da imagem
                               category_id:
                                 type: string
                                 example: "art"
                                 description: Category identifier
+                                x-description-i18n:
+                                  eng: Category identifier
+                                  spa: Identificador de la categoría
+                                  por: Identificador da categoria
                               quantity:
                                 type: string
                                 example: "1"
                                 description: Quantity
+                                x-description-i18n:
+                                  eng: Quantity
+                                  spa: Cantidad
+                                  por: Quantidade
                               unit_price:
                                 type: string
                                 example: "75.76"
                                 description: Unit price
+                                x-description-i18n:
+                                  eng: Unit price
+                                  spa: Precio unitario
+                                  por: Preço unitário
                     payer:
                       type: object
                       properties:
                         phone:
                           type: array
                           description: List of phone
+                          x-description-i18n:
+                            eng: List of phone
+                            spa: Lista de telefóno
+                            por: Lista de telefone
                           items:
                             type: object
                             properties:
@@ -787,13 +1362,25 @@ paths:
                                 type: string
                                 example: "55"
                                 description: Area code
+                                x-description-i18n:
+                                  eng: Area code
+                                  spa: Código de área
+                                  por: Código de área
                               number:
                                 type: string
                                 example: "8529-1111"
                                 description: Number
+                                x-description-i18n:
+                                  eng: Number
+                                  spa: Número
+                                  por: O Número
                         address:
                           type: array
                           description: List of address
+                          x-description-i18n:
+                            eng: List of address
+                            spa: Lista de direcciones
+                            por: Lista de endereços
                           items:
                             type: object
                             properties:
@@ -801,41 +1388,81 @@ paths:
                                 type: string
                                 example: "78134-190"
                                 description: Zip code
+                                x-description-i18n:
+                                  eng: Zip code
+                                  spa: Código postal
+                                  por: Código postal
                               street_name:
                                 type: string
                                 example: "Insurgentes Sur"
                                 description: Street name
+                                x-description-i18n:
+                                  eng: Street name
+                                  spa: Nombre de la calle
+                                  por: Nome da rua
                               street_number:
                                 type: string
                                 example: "1200"
                                 description: Street number
+                                x-description-i18n:
+                                  eng: Street number
+                                  spa: Número de la calle
+                                  por: Número da rua
                         first_name:
                                 type: string
                                 example: "Lalo"
                                 description: First name
+                                x-description-i18n:
+                                  eng: First name
+                                  spa: Nombre
+                                  por: Nome
                         last_name:
                                 type: string
                                 example: "Santos"
                                 description: Last name
+                                x-description-i18n:
+                                  eng: Last name
+                                  spa: Apellido
+                                  por: Sobrenome
                     ip_address:
                       type: string
                       example: "201.63.25.34"
                       description: IP address
+                      x-description-i18n:
+                        eng: IP address
+                        spa: Dirección IP
+                        por: Endereço do IP
                     available_balance:
                       type: string
                       example:
                       description: Available balance
+                      x-description-i18n:
+                        eng: Available balance
+                        spa: Saldo disponible
+                        por: Saldo disponível
                     nsu_processadora:
                       type: string
                       example:
                       description: NSU processadora
+                      x-description-i18n:
+                        eng: NSU processadora
+                        spa: Procesadora NSU
+                        por: Processadora NSU
                     authentication_code:
                       type: string
                       example:
                       description: Authentication code
+                      x-description-i18n:
+                        eng: Authentication code
+                        spa: Código de autenticacion
+                        por: Código de autenticação
                   order:
                     type: array
                     description: List of orders
+                    x-description-i18n:
+                      eng: List of orders
+                      spa: Lista de órdenes
+                      por: Lista de pedidos
                     items:
                       type: object
                       properties:
@@ -843,37 +1470,73 @@ paths:
                           type: string
                           example: "mercadopago"
                           description: Type
+                          x-description-i18n:
+                            eng: Type
+                            spa: Tipo
+                            por: Tipo
                         id:
                           type: string
                           example: "3754501423"
                           description: Order identifier
+                          x-description-i18n:
+                            eng: Order identifier
+                            spa: Identificador de la orden
+                            por: Identificador do pedido
                   external_reference:
                     type: string
                     example: "firstname@gmail.com"
                     description: External Reference
+                    x-description-i18n:
+                      eng: External Reference
+                      spa: Referencia externa
+                      por: Referência externa
                   transaction_amount:
                     type: number
                     example: 75.76
                     description: Transaction amount
+                    x-description-i18n:
+                      eng: Transaction amount
+                      spa: Monto de la transacción
+                      por: Valor da transação
                   transaction_amount_refunded:
                     type: number
                     example: 0
                     description: Transaction amount refunded
+                    x-description-i18n:
+                      eng: Transaction amount refunded
+                      spa: Monto reembolsado de transacción
+                      por: Valor reembolsado da transação
                   coupon_amount:
                     type: number
                     example: 0
                     description: Coupon amount
+                    x-description-i18n:
+                      eng: Coupon amount
+                      spa: Valor de cupón
+                      por: Valor do cupom
                   differential_pricing_id:
                     type: string
                     example: 
                     description: Differential pricing identifier
+                    x-description-i18n:
+                      eng: Differential pricing identifier
+                      spa: Identificador de precio diferencial
+                      por: Identificador do diferencial de preço
                   deduction_schema:
                     type: string
                     example: 
                     description: Deduction schema
+                    x-description-i18n:
+                      eng: Deduction schema
+                      spa: Esquema de deducción
+                      por: Esquema de dedução
                   barcode:
                     type: array
                     description: List of barcode
+                    x-description-i18n:
+                      eng: List of barcode
+                      spa: Lista de códigos de barra
+                      por: Lista de códigos de barra
                     items:
                       type: object
                       properties:
@@ -881,6 +1544,10 @@ paths:
                           type: string
                           example: "23791883300000075763380250600221946300633330"
                           description: Content
+                          x-description-i18n:
+                            eng: Content
+                            spa: Contenido
+                            por: Conteúdo
                   installments:
                     type: number
                     example: 1
@@ -888,6 +1555,10 @@ paths:
                   transaction_details:
                     type: array
                     description: List of transaction details
+                    x-description-i18n:
+                      eng: List of transaction details
+                      spa: Lista de detalles de transacción
+                      por: Lista de detalhes da transação
                     items:
                       type: object
                       properties:
@@ -895,10 +1566,18 @@ paths:
                           type: string
                           example: "6002219463"
                           description: Payment method reference identifier
+                          x-description-i18n:
+                            eng: Payment method reference identifier
+                            spa: Identificador de referencia de medio de pago
+                            por: Identificador de referência do meio de pagamento
                         verification_code:
                           type: string
                           example: "6002219463"
                           description: Verification code
+                          x-description-i18n:
+                            eng: Verification code
+                            spa: Código de verificación
+                            por: Código de verificação
                         net_received_amount:
                           type: number
                           example: 0
@@ -907,57 +1586,113 @@ paths:
                           type: number
                           example: 75.76
                           description: Total paid amount
+                          x-description-i18n:
+                            eng: Total paid amount
+                            spa: Monto total pago
+                            por: Valor total pago
                         overpaid_amount:
                           type: number
                           example: 0
                           description: Overpaid amount
+                          x-description-i18n:
+                            eng: Overpaid amount
+                            spa: Monto pagado en exceso
+                            por: Valor pago a mais
                         external_resource_url:
                           type: string
                           example: "https://www.mercadopago.com/mlb/payments/beta/ticket/helper?payment_id=18746874919&payment_method_reference_id=6002219463&caller_id=1003743392&hash=6a8c570f-9c39-4a5c-9b55-85ae1b724bf"
                           description: External resource url
+                          x-description-i18n:
+                            eng: External resource url
+                            spa: URL de recurso externo
+                            por: URL de recurso externo
                         installment_amount:
                           type: number
                           example: 0
                           description: Installment amount
+                          x-description-i18n:
+                            eng: Installment amount
+                            spa: Valor de la cuota
+                            por: Valor da parcela
                         financial_institution:
                           type: string
                           example: 
                           description: Financial institution
+                          x-description-i18n:
+                            eng: Financial institution
+                            spa: Institución financiera
+                            por: Instituição financeira
                         payable_deferral_period:
                           type: string
                           example: 
                           description: Payable deferral period
+                          x-description-i18n:
+                            eng: Payable deferral period
+                            spa: Período de aplazamiento de pago
+                            por: Período de diferimento a pagar
                         acquirer_reference:
                           type: string
                           example: 
                           description: Acquirer reference
+                          x-description-i18n:
+                            eng: Acquirer reference
+                            spa: Referencia de adquirente
+                            por: Referência do adquirente
                   fee_details:
                     type: array
                     description: List of fee details
+                    x-description-i18n:
+                      eng: List of fee details
+                      spa: Lista de detalles de la tarifa
+                      por: Lista de detalhes das taxas
                     items: 
                   charges_details:
                     type: array
                     description: List of charges details
+                    x-description-i18n:
+                      eng: List of charges details
+                      spa: Lista de detalles de cobro
+                      por: Lista de detalhes da cobrança
                     items:    
                   captured:
                     type: boolean
                     example: true
                     description: Captured flag
+                    x-description-i18n:
+                      eng: Captured flag
+                      spa: Captura habilitada
+                      por: Captura habilitada
                   binary_mode:
                     type: boolean
                     example: true
                     description: Binary mode flag
+                    x-description-i18n:
+                      eng: Binary mode flag
+                      spa: Modo binario habilitado
+                      por: Modo binário habilitado
                   call_for_authorize_id:
                     type: string
                     example: 
                     description: Call for authorize identifier
+                    x-description-i18n:
+                      eng: Call for authorize identifier
+                      spa: Llamada para autorizar identificador
+                      por: Chamada para autorizar identificador
                   statement_descriptor:
                     type: string
                     example: 
                     description: Statement descriptor
+                    x-description-i18n:
+                      eng: Statement descriptor
+                      spa: Descriptor de extracto bancario
+                      por: Descritor de extrato bancário
                   card:
                     type: array
                     description: List of cards
+                    x-description-i18n:
+                      eng: List of cards
+                      spa: Lista de tarjetas
+                      por: Lista de cartões
                     items: 
                   notification_url:
                     type: string
@@ -966,26 +1701,50 @@ paths:
                   refunds:
                     type: array
                     description: List of refunds
+                    x-description-i18n:
+                      eng: List of refunds
+                      spa: Lista de reembolsos
+                      por: Lista de reembolsos
                     items: 
                   processing_mode:
                     type: string
                     example: "aggregator"
                     description: Processing mode
+                    x-description-i18n:
+                      eng: Processing mode
+                      spa: Modo de procesamiento
+                      por: Modo de processamento
                   merchant_account_id:
                     type: string
                     example:
                     description: Merchant account identifier
+                    x-description-i18n:
+                      eng: Merchant account identifier
+                      spa: Identificador de cuenta del merchant
+                      por: Identificador da conta do merchant
                   merchant_number:
                     type: string
                     example:
                     description: Merchant number
+                    x-description-i18n:
+                      eng: Merchant number
+                      spa: Número de merchant
+                      por: Número do merchant
                   acquirer_reconciliation:
                     type: array
                     description: List of acquirer reconciliation
+                    x-description-i18n:
+                      eng: List of acquirer reconciliation
+                      spa: Lista de reconciliación de adquirente
+                      por: Lista de reconciliação do adquirente
                     items:
                   point_of_interaction:
                     type: array
                     description: List of point of interaction
+                    x-description-i18n:
+                      eng: List of point of interaction
+                      spa: Lista de punto de interacción
+                      por: Lista de ponto de interação
                     items:
                       type: object
                       properties:
@@ -993,9 +1752,17 @@ paths:
                           type: string
                           example: "UNSPECIFIED"
                           description: Type
+                          x-description-i18n:
+                            eng: Type
+                            spa: Tipo
+                            por: Tipo
                         business_info:
                           type: array
                           description: List of business information
+                          x-description-i18n:
+                            eng: List of business information
+                            spa: Lista de información de negocio
+                            por: Lista de informação de negócio
                           items:
                             type: object
                             properties:
@@ -1003,12 +1770,20 @@ paths:
                                 type: string
                                 example: "online_payments"
                                 description: Unit
+                                x-description-i18n:
+                                  eng: Unit
+                                  spa: Unidad
+                                  por: Unidade
                               sub_unit:
                                 type: string
                                 example: "checkout_pro"
                                 description: Sub unit    
         '400':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -1020,6 +1795,10 @@ paths:
                       - 400--Bad-Request--missing-information-on-header-            
         '401':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -1031,6 +1810,10 @@ paths:
                       - 5--Must-provide-your-access-token-to -proceed--Valid-token-required-
         '404':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:

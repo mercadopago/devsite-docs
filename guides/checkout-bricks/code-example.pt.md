@@ -11,7 +11,7 @@ Para facilitar e otimizar o seu processo de integração, veja abaixo um exemplo
 ```html
 <html>
     <head>
-        <script src="https://beta-sdk.mercadopago.com/gama/js/v2"></script>
+        <script src="https://sdk.mercadopago.com/js/v2"></script>
     </head>
     <body>
         <div id="cardPaymentBrick_container"></div>

@@ -29,7 +29,7 @@ Tanto para el frontend como para el backend, recomendamos utilizar [nuestras lib
 >
 > Nota
 >
-> Puedes obtener más información en las [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/cards/_customers_customer_id_cards/post).
+> Puedes obtener más información en las [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference).
 
 <br>
 
@@ -116,31 +116,30 @@ mercadopago.payment.save(req.body)
 ===
 Encuentra el estado del pago en el campo _status_.
 ===
- 
-MercadoPago.SDK.setAccessToken("YOUR_ACCESS_TOKEN");
- 
-Payment payment = new Payment();
-payment.setTransactionAmount(Float.valueOf(request.getParameter("transactionAmount")))
-      .setToken(request.getParameter("token"))
-      .setDescription(request.getParameter("description"))
-      .setInstallments(Integer.valueOf(request.getParameter("installments")))
-      .setPaymentMethodId(request.getParameter("paymentMethodId"));
- 
-Identification identification = new Identification();----[mla, mlb, mlu, mlc, mpe, mco]----
-identification.setType(request.getParameter("identificationType"))
-             .setNumber(request.getParameter("identificationNumber"));------------ ----[mlm]----
-identification.setNumber(request.getParameter("identificationNumber"));------------
- 
-Payer payer = new Payer();
-payer.setEmail(request.getParameter("email"))
-    .setIdentification(identification);
-   
-payment.setPayer(payer);
- 
-payment.save();
- 
-System.out.println(payment.getStatus());
- 
+
+PaymentClient client = new PaymentClient();
+
+PaymentCreateRequest paymentCreateRequest =
+   PaymentCreateRequest.builder()
+       .transactionAmount(request.getTransactionAmount())
+       .token(request.getToken())
+       .description(request.getDescription())
+       .installments(request.getInstallments())
+       .paymentMethodId(request.getPaymentMethodId())
+       .payer(
+           PaymentPayerRequest.builder()
+               .email(request.getPayer().getEmail())
+               .firstName(request.getPayer().getFirstName())
+               .identification(
+                   IdentificationRequest.builder()
+                       .type(request.getPayer().getIdentification().getType())
+                       .number(request.getPayer().getIdentification().getNumber())
+                       .build())
+               .build())
+       .build();
+
+client.create(paymentCreateRequest);
+
 ```
 ```ruby
 ===

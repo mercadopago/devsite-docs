@@ -2,9 +2,9 @@
 
 Checkout Bricks viabiliza uma integração client-side de forma modular por meio de estruturas configuráveis, seguras e com integração simplificada e unificada. Todos os bricks possuem fluxos de controle do componente de UI e validação dos dados, o que faz com que o processo de integração ocorra a partir de configurações iniciais, métodos e callbacks utilizados por cada brick além de possuírem as seguintes características básicas:
 
-* [Responsividade](/developers/pt/docs/checkout-bricks/introduction#bookmark_responsividade)
-* [Temas](/developers/pt/docs/checkout-bricks/introduction#bookmark_temas)
-* [Idiomas](/developers/pt/docs/checkout-bricks/introduction#bookmark_idiomas)
+* [Responsividade](#bookmark_responsividade)
+* [Temas](#bookmark_temas)
+* [Idiomas](#bookmark_idiomas)
 
 ## Responsividade
 
@@ -16,7 +16,7 @@ O Brick possui capacidades responsivas no que tange o tamanho do espaço em tela
 
 O Card Payment Brick pode ser instanciado/renderizado com diferentes temas e características que podem se adequar melhor ao visual da loja. As características de cada um dos temas disponíveis estão detalhadas abaixo. Veja [Definir tema](/developers/pt/docs/checkout-bricks/additional-customization/set-theme) para instruções de como alterar o tema do brick).
 
-![themes](checkout-bricks/themes-paymentcard-pt.png)
+![themes](checkout-bricks/themes-payment-card-pt.png)
 
 ## Idiomas 
 

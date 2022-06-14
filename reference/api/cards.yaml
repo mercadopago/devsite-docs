@@ -11,11 +11,23 @@ paths:
         - $ref: '#/tags/checkout-pro'
         - $ref: '#/tags/checkout-api'
       summary: Get customer cards
+      x-summary-i18n:
+        eng: Get customer cards
+        spa: Obtener tarjetas de un cliente
+        por: Obter cartões de um cliente
       description: Consult a client's saved cards in order to be able to show them when making a payment.
+      x-description-i18n:
+        eng: Consult a client's saved cards in order to be able to show them when making a payment.
+        spa: Consulta el listado de tarjetas almacenadas de un cliente para poder mostrarlas al momento de hacer un pago
+        por: Consulte a lista de cartões armazenados de um cliente a fim de mostrá-los no momento de fazer um pagamento
       parameters:
         - name: customer_id
           in: path
           description: Customer's Id
+          x-description-i18n:
+            eng: Customer's Id
+            spa: Customer's Id
+            por: Customer's Id
           required: true
           schema:
             type: string
@@ -33,6 +45,10 @@ paths:
                     id:
                       type: string
                       description: Card ID.
+                      x-description-i18n:
+                        eng: Card ID.
+                        spa: Identificador de tarjeta
+                        por: Identificador de cartão
                       example: '277090284'
                     date_registered:
                       type: string
@@ -41,95 +57,187 @@ paths:
                       type: string
                       format: date
                       description: Card's date created.
+                      x-description-i18n:
+                        eng: Card's date created.
+                        spa: Fecha de creación de la tarjeta
+                        por: Data de criação do cartão
                       example: '2018-07-18T13:28:32.000-04:00'
                     date_last_updated:
                       type: string
                       format: date
                       description: Card's last modified date.
+                      x-description-i18n:
+                        eng: Card's last modified date.
+                        spa: Última fecha de actualización de la tarjeta
+                        por: Última data de atualização do cartão
                       example: '2018-08-07T12:21:32.243-04:00'
                     customer_id:
                       type: string
                       description: Customer ID.
+                      x-description-i18n:
+                        eng: Customer ID.
+                        spa: Identificador de cliente
+                        por: Identificador de cliente
                       example: 329653963-byLEdchVPhPc4H
                     expiration_month:
                       type: number
                       description: Card's expiration month.
+                      x-description-i18n:
+                        eng: Card's expiration month.
+                        spa: Mes de expiración de la tarjeta
+                        por: Mês de validade do cartão
                       example: 11
                     expiration_year:
                       type: number
                       description: Card's expiration year.
+                      x-description-i18n:
+                        eng: Card's expiration year.
+                        spa: Año de expiración de la tarjeta
+                        por: Ano de validade do cartão
                       example: 2020
                     first_six_digits:
                       type: string
                       description: Card's first six digits.
+                      x-description-i18n:
+                        eng: Card's first six digits.
+                        spa: Primeros seis dígitos de la tarjeta
+                        por: Os primeiros seis dígitos do cartão
                       example: '423564'
                     last_four_digits:
                       type: string
                       description: Card's last four digits.
+                      x-description-i18n:
+                        eng: Card's last four digits.
+                        spa: Últimos cuatro dígitos de la tarjeta
+                        por: Últimos quatro dígitos do cartão
                       example: '5682'
                     payment_method:
                       type: object
                       description: Payment method information.
+                      x-description-i18n:
+                        eng: Payment method information.
+                        spa: Información de los medios de pago
+                        por: Informação dos meios de pagamento
                       properties:
                         id:
                           type: string
                           description: Payment method ID.
+                          x-description-i18n:
+                            eng: Payment method ID.
+                            spa: Identificador del método de pago
+                            por: Identificador do método de pagamento
                           example: visa
                         name:
                           type: string
                           description: Payment method name.
+                          x-description-i18n:
+                            eng: Payment method name.
+                            spa: Nombre del medio de pago
+                            por: Nome do meio de pagamento
                           example: Visa
                         payment_type_id:
                           type: string
                           description: Payment method type.
+                          x-description-i18n:
+                            eng: Payment method type.
+                            spa: Tipo del medio de pago
+                            por: Tipo do meio de pagamento
                           example: credit_card
                         thumbnail:
                           type: string
                           description: Payment method thumbnail.
+                          x-description-i18n:
+                            eng: Payment method thumbnail.
+                            spa: Thumbnail del medio de pago
+                            por: Thumbnail do meio de pagamento
                           example: http://img.mlstatic.com/org-img/MP3/API/logos/visa.gif
                         secure_thumbnail:
                           type: string
                           description: Payment method secure thumbnail.
+                          x-description-i18n:
+                            eng: Payment method secure thumbnail.
+                            spa: Secure thumbnail del medio de pago
+                            por: Secure thumbnail do meio de pagamento
                           example: https://www.mercadopago.com/org-img/MP3/API/logos/visa.gif
                     security_code:
                       type: object
                       description: Security code information.
+                      x-description-i18n:
+                        eng: Security code information.
+                        spa: Información del código de seguridad
+                        por: Informação do código de segurança
                       properties:
                         length:
                           type: number
                           description: Security code's length.
+                          x-description-i18n:
+                            eng: Security code's length.
+                            spa: Longitud del código de seguridad
+                            por: Comprimento do código de segurança
                           example: 3
                         card_location:
                           type: string
                           description: Security code's card location.
+                          x-description-i18n:
+                            eng: Security code's card location.
+                            spa: Ubicación del código de seguridad en la tarjeta
+                            por: Localização do código de segurança no cartão
                           example: back
                     issuer:
                       type: object
                       description: Issuer information.
+                      x-description-i18n:
+                        eng: Issuer information.
+                        spa: Información del emisor
+                        por: Informações do emitente
                       properties:
                         id:
                           type: number
                           description: Issuer Id.
+                          x-description-i18n:
+                            eng: Issuer Id.
+                            spa: Identificador del emisor
+                            por: Id do remetente
                           example: 25
                         name:
                           type: string
                           description: Issuer name.
+                          x-description-i18n:
+                            eng: Issuer name.
+                            spa: Nombre del emisor
+                            por: Nome do emitente
                           example: Visa
                     cardholder:
                       type: object
                       description: Card holder information.
+                      x-description-i18n:
+                        eng: Card holder information.
+                        spa: Información del dueño de la tarjeta
+                        por: Informações do dono do cartão
                       properties:
                         name:
                           type: string
                           description: Card holder name.
+                          x-description-i18n:
+                            eng: Card holder name.
+                            spa: Nombre
+                            por: O nome
                           example: APRO
                         identification:
                           type: object
                           description: Identification information.
+                          x-description-i18n:
+                            eng: Identification information.
+                            spa: Información de la identificación
+                            por: Informação de identificação
                           properties:
                             number:
                               type: string
                               description: Identification number.
+                              x-description-i18n:
+                                eng: Identification number.
+                                spa: Número de identificación
+                                por: Número de identificação
                               example: '19119119100'
                             subtype:
                               type: string
@@ -137,6 +245,10 @@ paths:
                             type:
                               type: string
                               description: Identification type.
+                              x-description-i18n:
+                                eng: Identification type.
+                                spa: Tipo de identificación
+                                por: Tipo de identificação
                               example: CPF
                     user_id:
                       type: string
@@ -146,6 +258,10 @@ paths:
                       example: true
         '400':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -154,56 +270,53 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 100--the-credentials-are-required-
-                      - 101--the-customer-already-exist-
-                      - 102--missing-customer-id-
-                      - 103--parameter-must-be-an-object-
-                      - 104--parameter-length-is-too-large-
-                      - 105--the-customer-id-is-invalid-
-                      - 106--the-email-format-is-invalid-
-                      - 107--the-first-name-is-invalid-
-                      - 108--the-last-name-is-invalid-
-                      - 109--the-phone-area-code-is-invalid-
-                      - 110--the-phone-number-is-invalid-
-                      - 111--the-identification-type-is-invalid-
-                      - 112--the-identification-number-is-invalid-
-                      - 113--the-address-zip-code-is-invalid-
-                      - 114--the-address-street-name-is-invalid-
-                      - 115--the-date-registered-format-is-invalid-
-                      - 116--the-description-is-invalid-
-                      - 117--the-metadata-is-invalid-
-                      - 118--the-body-must-be-a-Json-object-
-                      - 119--the-card-is-required-
-                      - 120--card-not-found-
-                      - 121--the-card-is-invalid-
-                      - 122--the-card-data-is-invalid-
-                      - 123--the-payment-method-id-is-required-
-                      - 124--the-issuer-id-is-required-
-                      - 125--invalid-parameters-
-                      - 126--invalid-parameter--You-cannot-update-the-email-
-                      - >-
-                        127--invalid-parameter--Cannot-resolve-the-payment-method-of-card--check-the-payment-method-id-and-issuer-id-
-                      - >-
-                        128--the-email-format-is-invalid--Use--test-payer--0-9--1-10--testuser-com--
-                      - >-
-                        129--the-customer-has-reached-the-maximum-allowed-number-of-cards-
-                      - 140--invalid-card-owner-
-                      - 150--invalid-users-involved-
-                      - >-
-                        200--invalid-range-format--range--date-parameter-after--date-from-before--date-to--
-                      - 201--range-attribute-must-belong-to-date-entity-
-                      - >-
-                        202--invalid--after--parameter--It-should-be-date-iso-8601--
-                      - >-
-                        203--invalid--before--parameter--It-should-be-date-iso-8601--
-                      - 204--invalid-filters-format-
-                      - 205--invalid-query-format-
-                      - >-
-                        206--attributes-to-sort-must-belong-to--customer--entity-
-                      - 207--order-filter-must-be--asc--or--desc--
-                      - 208--invalid--sort--parameter-format-
+                      - 100--the credentials are required.
+                      - 101--the customer already exist.
+                      - 102--missing customer id.
+                      - 103--parameter must be an object 
+                      - 104--parameter length is too large.
+                      - 105--the customer id is invalid.
+                      - 106--the email format is invalid.
+                      - 107--the first_name is invalid.
+                      - 108--the last_name is invalid.
+                      - 109--the phone.area_code is invalid.
+                      - 110--the phone.number is invalid.
+                      - 111--the identification.type is invalid.
+                      - 112--the identification.number is invalid.
+                      - 113--the address.zip_code is invalid.
+                      - 114--the address.street_name is invalid.
+                      - 115--the date_registered format is invalid.
+                      - 116--the description is invalid.
+                      - 117--the metadata is invalid.
+                      - 118--the body must be a Json object
+                      - 119--the card is required.
+                      - 120--card not found.
+                      - 121--the card is invalid.
+                      - 122--the card data is invalid.
+                      - 123--the payment_method_id is required.
+                      - 124--the issuer_id is required.
+                      - 125--invalid parameters.
+                      - 126--invalid parameter. You cannot update the email.
+                      - 127--invalid parameter. Cannot resolve the payment method of card, check the payment_method_id and issuer_id.
+                      - 128--the email format is invalid. Use 'test_payer_[0-9]{1,10}@testuser.com'.
+                      - 129--the customer has reached the maximum allowed number of cards.
+                      - 140--invalid card owner.
+                      - 150--invalid users involved.
+                      - 200--invalid range format (range=:date_parameter:after::date_from,before::date_to).
+                      - 201--range attribute must belong to date entity.
+                      - 202--invalid 'after' parameter. It should be date[iso_8601].
+                      - 203--invalid 'before' parameter. It should be date[iso_8601].
+                      - 204--invalid filters format.
+                      - 205--invalid query format.
+                      - 206--attributes to sort must belong to 'customer' entity.
+                      - 207--order filter must be 'asc' or 'desc'.
+                      - 208--invalid 'sort' parameter format.
         '401':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -212,9 +325,13 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - unauthorized--unauthorized-
+                      - unauthorized--unauthorized.
         '404':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -223,17 +340,29 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - not_found--not-found-
+                      - not_found--not_found.
     post:
       tags:
         - $ref: '#/tags/checkout-pro'
         - $ref: '#/tags/checkout-api'
       summary: Save card
+      x-summary-i18n:
+        eng: Save card
+        spa: Guardar tarjeta
+        por: Salvar cartão
       description: Store the card reference used by the customer in the payment securely on our servers to avoid asking for all the data in future transactions
+      x-description-i18n:
+        eng: Store the card reference used by the customer in the payment securely on our servers to avoid asking for all the data in future transactions
+        spa: Almacena de manera segura en nuestro servidores la referencia de la tarjeta utilizada por el cliente en el pago para evitar volver a pedir todos los datos en futuras transacciones
+        por: Armazena com segurança em nossos servidores a referência a um cartão utilizado pelo cliente no pagamento para evitar pedir todos os dados em transações futuras
       parameters:
         - name: customer_id
           in: path
           description: Customer's Id
+          x-description-i18n:
+            eng: Customer's Id
+            spa: Customer's Id
+            por: Customer's Id
           required: true
           schema:
             type: string
@@ -366,6 +495,10 @@ paths:
                     description: live_mode
         '400':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -374,56 +507,53 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 100--the-credentials-are-required-
-                      - 101--the-customer-already-exist-
-                      - 102--missing-customer-id-
-                      - 103--parameter-must-be-an-object-
-                      - 104--parameter-length-is-too-large-
-                      - 105--the-customer-id-is-invalid-
-                      - 106--the-email-format-is-invalid-
-                      - 107--the-first-name-is-invalid-
-                      - 108--the-last-name-is-invalid-
-                      - 109--the-phone-area-code-is-invalid-
-                      - 110--the-phone-number-is-invalid-
-                      - 111--the-identification-type-is-invalid-
-                      - 112--the-identification-number-is-invalid-
-                      - 113--the-address-zip-code-is-invalid-
-                      - 114--the-address-street-name-is-invalid-
-                      - 115--the-date-registered-format-is-invalid-
-                      - 116--the-description-is-invalid-
-                      - 117--the-metadata-is-invalid-
-                      - 118--the-body-must-be-a-Json-object-
-                      - 119--the-card-is-required-
-                      - 120--card-not-found-
-                      - 121--the-card-is-invalid-
-                      - 122--the-card-data-is-invalid-
-                      - 123--the-payment-method-id-is-required-
-                      - 124--the-issuer-id-is-required-
-                      - 125--invalid-parameters-
-                      - 126--invalid-parameter--You-cannot-update-the-email-
-                      - >-
-                        127--invalid-parameter--Cannot-resolve-the-payment-method-of-card--check-the-payment-method-id-and-issuer-id-
-                      - >-
-                        128--the-email-format-is-invalid--Use--test-payer--0-9--1-10--testuser-com--
-                      - >-
-                        129--the-customer-has-reached-the-maximum-allowed-number-of-cards-
-                      - 140--invalid-card-owner-
-                      - 150--invalid-users-involved-
-                      - >-
-                        200--invalid-range-format--range--date-parameter-after--date-from-before--date-to--
-                      - 201--range-attribute-must-belong-to-date-entity-
-                      - >-
-                        202--invalid--after--parameter--It-should-be-date-iso-8601--
-                      - >-
-                        203--invalid--before--parameter--It-should-be-date-iso-8601--
-                      - 204--invalid-filters-format-
-                      - 205--invalid-query-format-
-                      - >-
-                        206--attributes-to-sort-must-belong-to--customer--entity-
-                      - 207--order-filter-must-be--asc--or--desc--
-                      - 208--invalid--sort--parameter-format-
+                      - 100--the credentials are required.
+                      - 101--the customer already exist.
+                      - 102--missing customer id.
+                      - 103--parameter must be an object 
+                      - 104--parameter length is too large.
+                      - 105--the customer id is invalid.
+                      - 106--the email format is invalid.
+                      - 107--the first_name is invalid.
+                      - 108--the last_name is invalid.
+                      - 109--the phone.area_code is invalid.
+                      - 110--the phone.number is invalid.
+                      - 111--the identification.type is invalid.
+                      - 112--the identification.number is invalid.
+                      - 113--the address.zip_code is invalid.
+                      - 114--the address.street_name is invalid.
+                      - 115--the date_registered format is invalid.
+                      - 116--the description is invalid.
+                      - 117--the metadata is invalid.
+                      - 118--the body must be a Json object
+                      - 119--the card is required.
+                      - 120--card not found.
+                      - 121--the card is invalid.
+                      - 122--the card data is invalid.
+                      - 123--the payment_method_id is required.
+                      - 124--the issuer_id is required.
+                      - 125--invalid parameters.
+                      - 126--invalid parameter. You cannot update the email.
+                      - 127--invalid parameter. Cannot resolve the payment method of card, check the payment_method_id and issuer_id.
+                      - 128--the email format is invalid. Use 'test_payer_[0-9]{1,10}@testuser.com'.
+                      - 129--the customer has reached the maximum allowed number of cards.
+                      - 140--invalid card owner.
+                      - 150--invalid users involved.
+                      - 200--invalid range format (range=:date_parameter:after::date_from,before::date_to).
+                      - 201--range attribute must belong to date entity.
+                      - 202--invalid 'after' parameter. It should be date[iso_8601].
+                      - 203--invalid 'before' parameter. It should be date[iso_8601].
+                      - 204--invalid filters format.
+                      - 205--invalid query format.
+                      - 206--attributes to sort must belong to 'customer' entity.
+                      - 207--order filter must be 'asc' or 'desc'.
+                      - 208--invalid 'sort' parameter format.
         '401':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -432,9 +562,13 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - unauthorized--unauthorized-
+                      - unauthorized--unauthorized.
         '404':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -443,18 +577,30 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - not_found--not-found-
+                      - not_found--not_found.
   /v1/customers/{customer_id}/cards/{id}:
     get:
       tags:
         - $ref: '#/tags/checkout-pro'
         - $ref: '#/tags/checkout-api'
       summary: Get card
+      x-summary-i18n:
+        eng: Get card
+        spa: Obtener tarjeta
+        por: Obter cartão
       description: Check the reference information for a saved card associated with a customer
+      x-description-i18n:
+        eng: Check the reference information for a saved card associated with a customer
+        spa: Consulta la información de referencia de una tarjeta guardada asociada a un cliente
+        por: Consultar as informações de referência de um cartão armazenado associado a um cliente
       parameters:
         - name: customer_id
           in: path
           description: Customer's Id
+          x-description-i18n:
+            eng: Customer's Id
+            spa: Customer's Id
+            por: Customer's Id
           required: true
           schema:
             type: string
@@ -462,6 +608,10 @@ paths:
         - name: id
           in: path
           description: Card's Id
+          x-description-i18n:
+            eng: Card's Id
+            spa: Card's Id
+            por: Card's Id
           required: true
           schema:
             type: string
@@ -477,6 +627,10 @@ paths:
                   id:
                     type: string
                     description: Card ID.
+                    x-description-i18n:
+                      eng: Card ID.
+                      spa: Identificador de tarjeta
+                      por: Identificador de cartão
                     example: '8987269652'
                   date_registered:
                     type: string
@@ -485,95 +639,187 @@ paths:
                     type: string
                     format: date
                     description: Card's date created.
+                    x-description-i18n:
+                      eng: Card's date created.
+                      spa: Fecha de creación de la tarjeta
+                      por: Data de criação do cartão
                     example: '2021-03-16T16:08:20.592-04:00'
                   date_last_updated:
                     type: string
                     format: date
                     description: Card's last modified date.
+                    x-description-i18n:
+                      eng: Card's last modified date.
+                      spa: Última fecha de actualización de la tarjeta
+                      por: Última data de atualização do cartão
                     example: '2021-03-16T16:08:20.592-04:00'
                   customer_id:
                     type: string
                     description: Customer ID.
+                    x-description-i18n:
+                      eng: Customer ID.
+                      spa: Identificador de cliente
+                      por: Identificador de cliente
                     example: 470183340-cpunOI7UsIHlHr
                   expiration_month:
                     type: number
                     description: Card's expiration month.
+                    x-description-i18n:
+                      eng: Card's expiration month.
+                      spa: Mes de expiración de la tarjeta
+                      por: Mês de validade do cartão
                     example: 6
                   expiration_year:
                     type: number
                     description: Card's expiration year.
+                    x-description-i18n:
+                      eng: Card's expiration year.
+                      spa: Año de expiración de la tarjeta
+                      por: Ano de validade do cartão
                     example: 2023
                   first_six_digits:
                     type: string
                     description: Card's first six digits.
+                    x-description-i18n:
+                      eng: Card's first six digits.
+                      spa: Primeros seis dígitos de la tarjeta
+                      por: Os primeiros seis dígitos do cartão
                     example: '503143'
                   last_four_digits:
                     type: string
                     description: Card's last four digits.
+                    x-description-i18n:
+                      eng: Card's last four digits.
+                      spa: Últimos cuatro dígitos de la tarjeta
+                      por: Últimos quatro dígitos do cartão
                     example: '6351'
                   payment_method:
                     type: object
                     description: Payment method information.
+                    x-description-i18n:
+                      eng: Payment method information.
+                      spa: Información de los medios de pago
+                      por: Informação dos meios de pagamento
                     properties:
                       id:
                         type: string
                         description: Payment method ID.
+                        x-description-i18n:
+                          eng: Payment method ID.
+                          spa: Identificador del método de pago
+                          por: Identificador do método de pagamento
                         example: master
                       name:
                         type: string
                         description: Payment method name.
+                        x-description-i18n:
+                          eng: Payment method name.
+                          spa: Nombre del medio de pago
+                          por: Nome do meio de pagamento
                         example: Mastercard
                       payment_type_id:
                         type: string
                         description: Payment method type.
+                        x-description-i18n:
+                          eng: Payment method type.
+                          spa: Tipo del medio de pago
+                          por: Tipo do meio de pagamento
                         example: credit_card
                       thumbnail:
                         type: string
                         description: Payment method thumbnail.
+                        x-description-i18n:
+                          eng: Payment method thumbnail.
+                          spa: Thumbnail del medio de pago
+                          por: Thumbnail do meio de pagamento
                         example: http://img.mlstatic.com/org-img/MP3/API/logos/master.gif
                       secure_thumbnail:
                         type: string
                         description: Payment method secure thumbnail.
+                        x-description-i18n:
+                          eng: Payment method secure thumbnail.
+                          spa: Secure thumbnail del medio de pago
+                          por: Secure thumbnail do meio de pagamento
                         example: https://www.mercadopago.com/org-img/MP3/API/logos/master.gif
                   security_code:
                     type: object
                     description: Security code information.
+                    x-description-i18n:
+                      eng: Security code information.
+                      spa: Información del código de seguridad
+                      por: Informação do código de segurança
                     properties:
                       length:
                         type: number
                         description: Security code's length.
+                        x-description-i18n:
+                          eng: Security code's length.
+                          spa: Longitud del código de seguridad
+                          por: Comprimento do código de segurança
                         example: 3
                       card_location:
                         type: string
                         description: Security code's card location.
+                        x-description-i18n:
+                          eng: Security code's card location.
+                          spa: Ubicación del código de seguridad en la tarjeta
+                          por: Localização do código de segurança no cartão
                         example: back
                   issuer:
                     type: object
                     description: Issuer information.
+                    x-description-i18n:
+                      eng: Issuer information.
+                      spa: Información del emisor
+                      por: Informações do emitente
                     properties:
                       id:
                         type: number
                         description: Issuer Id.
+                        x-description-i18n:
+                          eng: Issuer Id.
+                          spa: Identificador del emisor
+                          por: Id do remetente
                         example: 24
                       name:
                         type: string
                         description: Issuer name.
+                        x-description-i18n:
+                          eng: Issuer name.
+                          spa: Nombre del emisor
+                          por: Nome do emitente
                         example: Mastercard
                   cardholder:
                     type: object
                     description: Card holder information.
+                    x-description-i18n:
+                      eng: Card holder information.
+                      spa: Información del dueño de la tarjeta
+                      por: Informações do dono do cartão
                     properties:
                       name:
                         type: string
                         description: Card holder name.
+                        x-description-i18n:
+                          eng: Card holder name.
+                          spa: Nombre
+                          por: O nome
                         example: APRO
                       identification:
                         type: object
                         description: Identification information.
+                        x-description-i18n:
+                          eng: Identification information.
+                          spa: Información de la identificación
+                          por: Informação de identificação
                         properties:
                           number:
                             type: string
                             description: Identification number.
+                            x-description-i18n:
+                              eng: Identification number.
+                              spa: Número de identificación
+                              por: Número de identificação
                             example: '19119119100'
                           subtype:
                             type: string
@@ -581,6 +827,10 @@ paths:
                           type:
                             type: string
                             description: Identification type.
+                            x-description-i18n:
+                              eng: Identification type.
+                              spa: Tipo de identificación
+                              por: Tipo de identificação
                             example: CPF
                   user_id:
                     type: string
@@ -591,6 +841,10 @@ paths:
 
         '400':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -599,56 +853,53 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 100--the-credentials-are-required-
-                      - 101--the-customer-already-exist-
-                      - 102--missing-customer-id-
-                      - 103--parameter-must-be-an-object-
-                      - 104--parameter-length-is-too-large-
-                      - 105--the-customer-id-is-invalid-
-                      - 106--the-email-format-is-invalid-
-                      - 107--the-first-name-is-invalid-
-                      - 108--the-last-name-is-invalid-
-                      - 109--the-phone-area-code-is-invalid-
-                      - 110--the-phone-number-is-invalid-
-                      - 111--the-identification-type-is-invalid-
-                      - 112--the-identification-number-is-invalid-
-                      - 113--the-address-zip-code-is-invalid-
-                      - 114--the-address-street-name-is-invalid-
-                      - 115--the-date-registered-format-is-invalid-
-                      - 116--the-description-is-invalid-
-                      - 117--the-metadata-is-invalid-
-                      - 118--the-body-must-be-a-Json-object-
-                      - 119--the-card-is-required-
-                      - 120--card-not-found-
-                      - 121--the-card-is-invalid-
-                      - 122--the-card-data-is-invalid-
-                      - 123--the-payment-method-id-is-required-
-                      - 124--the-issuer-id-is-required-
-                      - 125--invalid-parameters-
-                      - 126--invalid-parameter--You-cannot-update-the-email-
-                      - >-
-                        127--invalid-parameter--Cannot-resolve-the-payment-method-of-card--check-the-payment-method-id-and-issuer-id-
-                      - >-
-                        128--the-email-format-is-invalid--Use--test-payer--0-9--1-10--testuser-com--
-                      - >-
-                        129--the-customer-has-reached-the-maximum-allowed-number-of-cards-
-                      - 140--invalid-card-owner-
-                      - 150--invalid-users-involved-
-                      - >-
-                        200--invalid-range-format--range--date-parameter-after--date-from-before--date-to--
-                      - 201--range-attribute-must-belong-to-date-entity-
-                      - >-
-                        202--invalid--after--parameter--It-should-be-date-iso-8601--
-                      - >-
-                        203--invalid--before--parameter--It-should-be-date-iso-8601--
-                      - 204--invalid-filters-format-
-                      - 205--invalid-query-format-
-                      - >-
-                        206--attributes-to-sort-must-belong-to--customer--entity-
-                      - 207--order-filter-must-be--asc--or--desc--
-                      - 208--invalid--sort--parameter-format-
+                      - 100--the credentials are required.
+                      - 101--the customer already exist.
+                      - 102--missing customer id.
+                      - 103--parameter must be an object 
+                      - 104--parameter length is too large.
+                      - 105--the customer id is invalid.
+                      - 106--the email format is invalid.
+                      - 107--the first_name is invalid.
+                      - 108--the last_name is invalid.
+                      - 109--the phone.area_code is invalid.
+                      - 110--the phone.number is invalid.
+                      - 111--the identification.type is invalid.
+                      - 112--the identification.number is invalid.
+                      - 113--the address.zip_code is invalid.
+                      - 114--the address.street_name is invalid.
+                      - 115--the date_registered format is invalid.
+                      - 116--the description is invalid.
+                      - 117--the metadata is invalid.
+                      - 118--the body must be a Json object
+                      - 119--the card is required.
+                      - 120--card not found.
+                      - 121--the card is invalid.
+                      - 122--the card data is invalid.
+                      - 123--the payment_method_id is required.
+                      - 124--the issuer_id is required.
+                      - 125--invalid parameters.
+                      - 126--invalid parameter. You cannot update the email.
+                      - 127--invalid parameter. Cannot resolve the payment method of card, check the payment_method_id and issuer_id.
+                      - 128--the email format is invalid. Use 'test_payer_[0-9]{1,10}@testuser.com'.
+                      - 129--the customer has reached the maximum allowed number of cards.
+                      - 140--invalid card owner.
+                      - 150--invalid users involved.
+                      - 200--invalid range format (range=:date_parameter:after::date_from,before::date_to).
+                      - 201--range attribute must belong to date entity.
+                      - 202--invalid 'after' parameter. It should be date[iso_8601].
+                      - 203--invalid 'before' parameter. It should be date[iso_8601].
+                      - 204--invalid filters format.
+                      - 205--invalid query format.
+                      - 206--attributes to sort must belong to 'customer' entity.
+                      - 207--order filter must be 'asc' or 'desc'.
+                      - 208--invalid 'sort' parameter format.
         '401':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -657,9 +908,13 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - unauthorized--unauthorized-
+                      - unauthorized--unauthorized.
         '404':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -668,17 +923,29 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - not_found--not-found-
+                      - not_found--not_found.
     put:
       tags:
         - $ref: '#/tags/checkout-pro'
         - $ref: '#/tags/checkout-api'
       summary: Update card
+      x-summary-i18n:
+        eng: Update card
+        spa: Actualizar tarjeta
+        por: Atualizar cartão
       description: Renew the details of a card associated with a customer. Indicate the IDs and send the parameters with the information you want to update
+      x-description-i18n:
+        eng: Renew the details of a card associated with a customer. Indicate the IDs and send the parameters with the information you want to update
+        spa: Renueva los datos de una tarjeta asociada a un cliente. Indica los ID y envía los parámetros con la información que quieras actualizar
+        por: Atualize os dados de um cartão associado a um cliente. Indique o ID e envie as informações que você deseja atualizar
       parameters:
         - name: expiration_month
           in: requestBody
           description: Card's expiration month.
+          x-description-i18n:
+            eng: Card's expiration month.
+            spa: Mes de expiración de la tarjeta
+            por: Mês de validade do cartão
           required: false
           schema:
             type: number
@@ -686,6 +953,10 @@ paths:
         - name: expiration_year
           in: requestBody
           description: Card's expiration year.
+          x-description-i18n:
+            eng: Card's expiration year.
+            spa: Año de expiración de la tarjeta
+            por: Ano de validade do cartão
           required: false
           schema:
             type: number
@@ -806,6 +1077,10 @@ paths:
         
         '400':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -814,56 +1089,53 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 100--the-credentials-are-required-
-                      - 101--the-customer-already-exist-
-                      - 102--missing-customer-id-
-                      - 103--parameter-must-be-an-object-
-                      - 104--parameter-length-is-too-large-
-                      - 105--the-customer-id-is-invalid-
-                      - 106--the-email-format-is-invalid-
-                      - 107--the-first-name-is-invalid-
-                      - 108--the-last-name-is-invalid-
-                      - 109--the-phone-area-code-is-invalid-
-                      - 110--the-phone-number-is-invalid-
-                      - 111--the-identification-type-is-invalid-
-                      - 112--the-identification-number-is-invalid-
-                      - 113--the-address-zip-code-is-invalid-
-                      - 114--the-address-street-name-is-invalid-
-                      - 115--the-date-registered-format-is-invalid-
-                      - 116--the-description-is-invalid-
-                      - 117--the-metadata-is-invalid-
-                      - 118--the-body-must-be-a-Json-object-
-                      - 119--the-card-is-required-
-                      - 120--card-not-found-
-                      - 121--the-card-is-invalid-
-                      - 122--the-card-data-is-invalid-
-                      - 123--the-payment-method-id-is-required-
-                      - 124--the-issuer-id-is-required-
-                      - 125--invalid-parameters-
-                      - 126--invalid-parameter--You-cannot-update-the-email-
-                      - >-
-                        127--invalid-parameter--Cannot-resolve-the-payment-method-of-card--check-the-payment-method-id-and-issuer-id-
-                      - >-
-                        128--the-email-format-is-invalid--Use--test-payer--0-9--1-10--testuser-com--
-                      - >-
-                        129--the-customer-has-reached-the-maximum-allowed-number-of-cards-
-                      - 140--invalid-card-owner-
-                      - 150--invalid-users-involved-
-                      - >-
-                        200--invalid-range-format--range--date-parameter-after--date-from-before--date-to--
-                      - 201--range-attribute-must-belong-to-date-entity-
-                      - >-
-                        202--invalid--after--parameter--It-should-be-date-iso-8601--
-                      - >-
-                        203--invalid--before--parameter--It-should-be-date-iso-8601--
-                      - 204--invalid-filters-format-
-                      - 205--invalid-query-format-
-                      - >-
-                        206--attributes-to-sort-must-belong-to--customer--entity-
-                      - 207--order-filter-must-be--asc--or--desc--
-                      - 208--invalid--sort--parameter-format-
+                      - 100--the credentials are required.
+                      - 101--the customer already exist.
+                      - 102--missing customer id.
+                      - 103--parameter must be an object 
+                      - 104--parameter length is too large.
+                      - 105--the customer id is invalid.
+                      - 106--the email format is invalid.
+                      - 107--the first_name is invalid.
+                      - 108--the last_name is invalid.
+                      - 109--the phone.area_code is invalid.
+                      - 110--the phone.number is invalid.
+                      - 111--the identification.type is invalid.
+                      - 112--the identification.number is invalid.
+                      - 113--the address.zip_code is invalid.
+                      - 114--the address.street_name is invalid.
+                      - 115--the date_registered format is invalid.
+                      - 116--the description is invalid.
+                      - 117--the metadata is invalid.
+                      - 118--the body must be a Json object
+                      - 119--the card is required.
+                      - 120--card not found.
+                      - 121--the card is invalid.
+                      - 122--the card data is invalid.
+                      - 123--the payment_method_id is required.
+                      - 124--the issuer_id is required.
+                      - 125--invalid parameters.
+                      - 126--invalid parameter. You cannot update the email.
+                      - 127--invalid parameter. Cannot resolve the payment method of card, check the payment_method_id and issuer_id.
+                      - 128--the email format is invalid. Use 'test_payer_[0-9]{1,10}@testuser.com'.
+                      - 129--the customer has reached the maximum allowed number of cards.
+                      - 140--invalid card owner.
+                      - 150--invalid users involved.
+                      - 200--invalid range format (range=:date_parameter:after::date_from,before::date_to).
+                      - 201--range attribute must belong to date entity.
+                      - 202--invalid 'after' parameter. It should be date[iso_8601].
+                      - 203--invalid 'before' parameter. It should be date[iso_8601].
+                      - 204--invalid filters format.
+                      - 205--invalid query format.
+                      - 206--attributes to sort must belong to 'customer' entity.
+                      - 207--order filter must be 'asc' or 'desc'.
+                      - 208--invalid 'sort' parameter format.
         '401':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -872,9 +1144,13 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - unauthorized--unauthorized-
+                      - unauthorized--unauthorized.
         '404':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -883,17 +1159,29 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - not_found--not-found-
+                      - not_found--not_found.
     delete:
       tags:
         - $ref: '#/tags/checkout-pro'
         - $ref: '#/tags/checkout-api'
       summary: Delete card
+      x-summary-i18n:
+        eng: Delete card
+        spa: Eliminar tarjeta
+        por: Excluir cartão
       description: Delete the data of a card associated with a customer whenever you need to
+      x-description-i18n:
+        eng: Delete the data of a card associated with a customer whenever you need to
+        spa: Elimina los datos de una tarjeta asociada a un cliente siempre que lo necesites
+        por: Exclua a referência a um cartão associado ao cliente sempre que for necessário
       parameters:
         - name: customer_id
           in: path
           description: Customer's Id
+          x-description-i18n:
+            eng: Customer's Id
+            spa: Customer's Id
+            por: Customer's Id
           required: true
           schema:
             type: string
@@ -901,6 +1189,10 @@ paths:
         - name: id
           in: path
           description: Card's Id
+          x-description-i18n:
+            eng: Card's Id
+            spa: Card's Id
+            por: Card's Id
           required: true
           schema:
             type: string
@@ -997,6 +1289,10 @@ paths:
 
         '400':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -1005,56 +1301,53 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 100--the-credentials-are-required-
-                      - 101--the-customer-already-exist-
-                      - 102--missing-customer-id-
-                      - 103--parameter-must-be-an-object-
-                      - 104--parameter-length-is-too-large-
-                      - 105--the-customer-id-is-invalid-
-                      - 106--the-email-format-is-invalid-
-                      - 107--the-first-name-is-invalid-
-                      - 108--the-last-name-is-invalid-
-                      - 109--the-phone-area-code-is-invalid-
-                      - 110--the-phone-number-is-invalid-
-                      - 111--the-identification-type-is-invalid-
-                      - 112--the-identification-number-is-invalid-
-                      - 113--the-address-zip-code-is-invalid-
-                      - 114--the-address-street-name-is-invalid-
-                      - 115--the-date-registered-format-is-invalid-
-                      - 116--the-description-is-invalid-
-                      - 117--the-metadata-is-invalid-
-                      - 118--the-body-must-be-a-Json-object-
-                      - 119--the-card-is-required-
-                      - 120--card-not-found-
-                      - 121--the-card-is-invalid-
-                      - 122--the-card-data-is-invalid-
-                      - 123--the-payment-method-id-is-required-
-                      - 124--the-issuer-id-is-required-
-                      - 125--invalid-parameters-
-                      - 126--invalid-parameter--You-cannot-update-the-email-
-                      - >-
-                        127--invalid-parameter--Cannot-resolve-the-payment-method-of-card--check-the-payment-method-id-and-issuer-id-
-                      - >-
-                        128--the-email-format-is-invalid--Use--test-payer--0-9--1-10--testuser-com--
-                      - >-
-                        129--the-customer-has-reached-the-maximum-allowed-number-of-cards-
-                      - 140--invalid-card-owner-
-                      - 150--invalid-users-involved-
-                      - >-
-                        200--invalid-range-format--range--date-parameter-after--date-from-before--date-to--
-                      - 201--range-attribute-must-belong-to-date-entity-
-                      - >-
-                        202--invalid--after--parameter--It-should-be-date-iso-8601--
-                      - >-
-                        203--invalid--before--parameter--It-should-be-date-iso-8601--
-                      - 204--invalid-filters-format-
-                      - 205--invalid-query-format-
-                      - >-
-                        206--attributes-to-sort-must-belong-to--customer--entity-
-                      - 207--order-filter-must-be--asc--or--desc--
-                      - 208--invalid--sort--parameter-format-
+                      - 100--the credentials are required.
+                      - 101--the customer already exist.
+                      - 102--missing customer id.
+                      - 103--parameter must be an object 
+                      - 104--parameter length is too large.
+                      - 105--the customer id is invalid.
+                      - 106--the email format is invalid.
+                      - 107--the first_name is invalid.
+                      - 108--the last_name is invalid.
+                      - 109--the phone.area_code is invalid.
+                      - 110--the phone.number is invalid.
+                      - 111--the identification.type is invalid.
+                      - 112--the identification.number is invalid.
+                      - 113--the address.zip_code is invalid.
+                      - 114--the address.street_name is invalid.
+                      - 115--the date_registered format is invalid.
+                      - 116--the description is invalid.
+                      - 117--the metadata is invalid.
+                      - 118--the body must be a Json object
+                      - 119--the card is required.
+                      - 120--card not found.
+                      - 121--the card is invalid.
+                      - 122--the card data is invalid.
+                      - 123--the payment_method_id is required.
+                      - 124--the issuer_id is required.
+                      - 125--invalid parameters.
+                      - 126--invalid parameter. You cannot update the email.
+                      - 127--invalid parameter. Cannot resolve the payment method of card, check the payment_method_id and issuer_id.
+                      - 128--the email format is invalid. Use 'test_payer_[0-9]{1,10}@testuser.com'.
+                      - 129--the customer has reached the maximum allowed number of cards.
+                      - 140--invalid card owner.
+                      - 150--invalid users involved.
+                      - 200--invalid range format (range=:date_parameter:after::date_from,before::date_to).
+                      - 201--range attribute must belong to date entity.
+                      - 202--invalid 'after' parameter. It should be date[iso_8601].
+                      - 203--invalid 'before' parameter. It should be date[iso_8601].
+                      - 204--invalid filters format.
+                      - 205--invalid query format.
+                      - 206--attributes to sort must belong to 'customer' entity.
+                      - 207--order filter must be 'asc' or 'desc'.
+                      - 208--invalid 'sort' parameter format.
         '401':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -1063,9 +1356,13 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - unauthorized--unauthorized-
+                      - unauthorized--unauthorized.
         '404':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -1074,4 +1371,4 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - not_found--not-found-
+                      - not_found--not_found.

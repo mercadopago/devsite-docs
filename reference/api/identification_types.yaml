@@ -10,7 +10,15 @@ paths:
       tags:
         - $ref: '#/tags/checkout-pro'
       summary: Get document types
+      x-summary-i18n:
+        eng: Get document types
+        spa: Obtener tipos de documentos
+        por: Obter tipos de documentos
       description: Consult all the types of documents available by country and get a list with the ID and details of each one
+      x-description-i18n:
+        eng: Consult all the types of documents available by country and get a list with the ID and details of each one
+        spa: Consulta todos los tipos de documentos disponibles por país y obtén un listado con el ID y detalle de cada uno
+        por: Veja todos os tipos de documentos disponíveis por país e obtenha uma lista com a identificação e detalhes de cada um deles
       responses:
         '200':
           description: success
@@ -25,24 +33,48 @@ paths:
                       type: string
                       example: CPF
                       description: Identification type id.
+                      x-description-i18n:
+                        eng: Identification type id.
+                        spa: Identificador de tipo de identificación
+                        por: Identificador de tipo de identificação
                     name:
                       type: string
                       example: CPF
                       description: Identification type name.
+                      x-description-i18n:
+                        eng: Identification type name.
+                        spa: Nombre de tipo de identificación
+                        por: Nome de tipo de identificação
                     type:
                       type: string
                       example: number
                       description: Identification number data type.
+                      x-description-i18n:
+                        eng: Identification number data type.
+                        spa: Tipo de dato del número de identificación
+                        por: Tipo de dados do número de identificação
                     min_length:
                       type: number
                       example: 11
                       description: Identification number min length.
+                      x-description-i18n:
+                        eng: Identification number min length.
+                        spa: Mínima longitud del número de identificación
+                        por: O comprimento mínimo do número de identificação
                     max_length:
                       type: number
                       example: 11
                       description: Identification number max length
+                      x-description-i18n:
+                        eng: Identification number max length
+                        spa: Máxima longitud del número de identificación
+                        por: O comprimento máximo do número de identificação
         '400':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -51,9 +83,13 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 1001--Public-key-not-found-
+                      - 1001--Public_key not found.
         '401':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -62,9 +98,13 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 1000--The-credentials-are-required-
+                      - 1000--The credentials are required.
         '404':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -73,4 +113,4 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 1004--Identification-types-not-found-
+                      - 1004--Identification types not found.

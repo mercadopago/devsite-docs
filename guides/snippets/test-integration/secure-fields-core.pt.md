@@ -1,11 +1,5 @@
 Para criar um pagamento é necessário fazer a captura dos dados do cartão através do navegador do comprador. Por questões de segurança, **é muito importante que os dados nunca cheguem aos seus servidores**.
 
-> NOTE
->
-> Nota
->
-> Esta documentação utiliza a nova versão da biblioteca. Para ver a versão anterior, vá para a [seção de integrar pagamentos com cartão com MercadoPago.js V1](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/v1/receiving-payment-by-card).
-
 Para capturar os dados do cartão, siga estas etapas:
 
 1. [Inclua a biblioteca MercadoPago.js](#bookmark_1._inclua_a_biblioteca_mercadopago.js)
@@ -40,12 +34,27 @@ Você pode adicionar tudo o que precisar, alterar o atributo `label` sugerido e 
 No exemplo a seguir, assume-se que os dados `transactionAmount` e `description` foram obtidos no passo anterior onde o cliente selecionou o produto ou serviço que deseja pagar.
 
 ```html
+<style>
+  #form-checkout {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+  }
+
+  .container {
+    height: 18px;
+    display: inline-block;
+    border: 1px solid rgb(118, 118, 118);
+    border-radius: 2px;
+    padding: 1px 2px;
+  }
+</style>
 <form id="form-checkout" method="POST" action="/process_payment">
-  <div id="form-checkout__cardNumber-container"></div>
-  <div id="form-checkout__expirationDate-container" class="input"></div>
+  <div id="form-checkout__cardNumber-container" class="container"></div>
+  <div id="form-checkout__expirationDate-container" class="container"></div>
   <input type="text" name="cardholderName" id="form-checkout__cardholderName" placeholder="Titular do cartão" />
-  <input type="email" name="cardholderEmail" id="form-checkout__cardholderEmail" placeholder="E-mail" />
-  <div id="form-checkout__securityCode-container"></div>
+  <input type="email" name="email" id="form-checkout__email" placeholder="E-mail" />
+  <div id="form-checkout__securityCode-container" class="container"></div>
   <select name="issuer" id="form-checkout__issuer">
     <option value="" disabled selected>Selecione o emissor</option>
   </select>----[mla, mlb, mlu, mlc, mpe, mco]----
@@ -79,6 +88,7 @@ Configure a sua [chave pública]([FAKER][CREDENTIALS][URL]) da seguinte forma:
  
 <script>
 const mp = new MercadoPago('YOUR_PUBLIC_KEY');
+// Add Step #createPCIFields
  ----[mla, mlb, mlu, mlc, mpe, mco]----
 // Add Step #getIdentificationTypes------------
 // Add Step #getPaymentMethods
@@ -101,6 +111,7 @@ Para mais detalhes sobre os estilos permitidos, [consulte a referência técnica
 Um exemplo de código com `cardNumber`, `expirationDate` e `securityCode` seria:
 
 ```javascript
+  // Step #createPCIFields
   const cardNumberElement = mp.fields.create('cardNumber', {
     placeholder: "Card Number",
   }).mount('form-checkout__cardNumber-container');
