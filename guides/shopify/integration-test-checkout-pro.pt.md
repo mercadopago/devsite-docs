@@ -6,8 +6,22 @@ Os testes de compras ajudam a garantir que os pagamentos sejam processados corre
 2. Clique em **Comprar** e continue com o seu carrinho.
 3. Digite um código postal válido de acordo com o país onde a loja opera, para simular o envio. Clique em **Continuar**.
 4. Preencha os campos requeridos e selecione o **Mercado Pago como o seu método de pagamento**.
-5. Clique em **Pagar**.
-6. Se o teste é executado sem erros e você é direcionado para o Checkout do Mercado Pago, significa que a instalação do Checkout Pro foi realizada com sucesso e que a loja está pronta para vender.
+5. Na tela de finalização da compra, escolha **pagar com um novo cartão de crédito** e use os [cartões de teste](/docs/shopify/test-cards) para efetuar o pagamento.
+
+> É importante não fazer login em sua conta do Mercado Pago ou tentar efetuar o pagamento com cartões para uso pessoal.
+
+6. Adicione as informações do cartão de teste indicadas e clique em **Pagar**.
+7. Ao concluir a compra, você visualizará o comprovante de realização da compra no Mercado Pago e será redirecionado de volta à loja.
+
+
+> IMPORTANT
+>
+> Importante
+>
+> Ao finalizar a compra de teste com o Checkout Pro, esta não aparecerá como aprovada no Painel Administrativo da Shopify já que o processo foi realizado dentro do ambiente do Mercado Pago e não no entorno da loja. Ou seja, o pedido será gerado automaticamente, mas não aparecerá como pago.
+>
+> Além disso, as informações do pagamento aprovado não aparecerão no histórico da conta do Mercado Pago uma vez que este apenas contém despesas reais, feitas na produção.
+
 
 > PREV_STEP_CARD_PT
 >

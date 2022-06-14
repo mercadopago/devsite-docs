@@ -11,6 +11,8 @@ Para instalar Checkout Pro en una tienda Shopify, sigue los pasos a continuació
 7. Por último, la tienda te ofrecerá la opción de **habilitar el modo de prueba**. Activa esta opción si deseas que la tienda se mantenga en un entorno de prueba y no sea publicada a los clientes. **Para poner la tienda en modo productivo y recibir pagos reales, mantén este cambio deshabilitado**. 
 8. Al finalizar, haz clic en **Activar Mercado Pago**. 
 
+> En caso de renovar tus credenciales, recuerda reemplazar tanto las de producción como las de pruba en tu integración.
+
 > PREV_STEP_CARD_ES
 >
 > Requisitos previos

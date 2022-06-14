@@ -11,6 +11,9 @@ Para instalar o Checkout Transparente em uma loja Shopify, siga os passos abaixo
 7. Na seção **Quais meios de pagamento você quer oferecer?**, selecione o tipo de meio de pagamento que você deseja que a loja ofereça através do Checkout Transparente. Você pode escolher Mercado Pago, cartões de crédito, boleto ou Pix.
 8. Clique em **Salvar alterações** para finalizar a instalação.
 
+> No caso de renovar suas credenciais, lembre-se de substituir as credenciais de produção e de teste em sua integração.
+
+
 > PREV_STEP_CARD_PT
 >
 > Pré-requisitos

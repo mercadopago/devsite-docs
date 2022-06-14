@@ -11,6 +11,7 @@ To install Checkout Pro in a Shopify store, follow the steps below:
 7. Lastly, the store will offer you the option to **Enable test mode**. Activate this option if you prefer the store to remain in a test environment and not published to customers. **To switch the store to productive mode and receive actual payments, keep this change disabled**. 
 8. To finish, click on **Activate Mercado Pago**. 
  
+> In case of renewing your credentials, remember to replace both the production and test credentials in your integration.
 
 > PREV_STEP_CARD_EN
 >

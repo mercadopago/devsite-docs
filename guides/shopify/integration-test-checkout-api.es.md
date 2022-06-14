@@ -5,9 +5,20 @@ Las pruebas de compras ayudan a garantizar que los pagos se procesan correctamen
 1. Ve a la página de inicio de la tienda y selecciona un producto para comprar.
 2. Haz clic en **Comprar** y continúa con tu carrito.
 3. Completa la información de compra solicitada con una dirección de e-mail, una dirección y un código postal válido según el país en donde opere la tienda, para simular el envío. Haz clic en **Continuar con el envío**.
-4. Completa los campos obligatorios y selecciona alguna de las opciones que hayas habilitado para el Checkout Transparente como método de pago, tales como tarjeta de crédito o débito, boleto o Pix. Para simular un pago con tarjeta, puedes utilizar nuestras [tarjetas de prueba](/docs/shopify/integration-test/test-cards)
-5. Haz clic en **Pagar**.
-6. Si la prueba se ejecuta sin errores, significa que la instalación del Checkout Transparente se realizó correctamente y que la tienda está lista para vender.
+4. Completa los campos obligatorios y selecciona Tarjeta de crédito o débito como método de pago.
+5. En la pantalla de pago, usa las [tarjetas de prueba](/docs/shopify/test-cards) para realizar el pago. 
+
+> Es importante no iniciar sesión en tu cuenta de Mercado Pago ni intentar realizar el pago con tarjetas de uso personal.
+
+6. Agrega la información de la tarjeta de prueba indicada y haz clic en **Pagar**.
+7. Al finalizar la compra, ingresa al Panel Administrativo de Shopify y verifica que el pedido figure como aprobado.
+
+> IMPORTANT
+>
+> Importante
+>
+> Esta información de pago aprobado no aparecerá en el historial de la cuenta de Mercado Pago porque solo contiene gastos reales (realizados en producción).
+
 
 > PREV_STEP_CARD_ES
 >

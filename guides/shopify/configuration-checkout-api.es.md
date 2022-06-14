@@ -1,6 +1,6 @@
 # Configuración
 
-Te recomendamos personalizar la información del checkout de la tienda para poder garantizar una mejor experiencia de compra y una integración más estrecha entre el Checkout Transparente en Shopify Para hacerlo, sigue los pasos a continuación:
+Te recomendamos personalizar la información del checkout de la tienda para poder garantizar una mejor experiencia de compra y una integración más estrecha con Checkout Transparente en Shopify. Para hacerlo, sigue los pasos a continuación:
 
 ## Configura el nombre de la empresa
 

@@ -2,6 +2,8 @@
 
 El Checkout Transparente de Mercado Pago **permite finalizar todo el proceso de compra en el entorno de la tienda**, sin necesidad de redirigir al cliente una página externa para completar el pago.
 
+**Para integrar Checkout Transparente, deberás contar con Checkout Pro integrado en tu tienda Shopify**. Para saber cómo integrarlo, ve a [esta documentación](/docs/shopify/introduction-checkout-pro).
+
 > IMPORTANT
 >
 > Importante

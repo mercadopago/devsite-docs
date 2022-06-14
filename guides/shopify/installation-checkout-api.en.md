@@ -11,6 +11,7 @@ To install Checkout Pro in a Shopify store, follow the steps below:
 7. In the section **What payment methods do you want to offer?**, select the type of payment methods that the store will offer through Checkout Transparente. You can choose Mercado Pago, credit cards, boleto, or Pix.
 8. Click on **Save changes** to complete the installation.
 
+> In case of renewing your credentials, remember to replace both the production and test credentials in your integration.
 
 > PREV_STEP_CARD_EN
 >
