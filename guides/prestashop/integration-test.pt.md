@@ -34,7 +34,7 @@ Feito o processo inicial de compra, veja abaixo como testar a integração de ac
 
 > WARNING
 >
-> Importante
+> Atenção
 > 
 > Ao finalizar a compra teste com Checkout Pro, no Painel Administrativo da PrestaShop não será possível visualizar a compra como aprovada, o pedido é gerado automaticamente, mas não consta como pago porque o processo ocorreu dentro do ambiente do Mercado Pago e não no ambiente da loja. 
 > </br> <br/>

@@ -6,16 +6,16 @@ Para integrar o Checkout Pro, siga os passos abaixo.
  
 1. Selecione **Sim** para ativar a experiência do Mercado Pago no checkout da sua loja. 
 2. Escolha os [meios de pagamento](/developer/pt/guides/additional-content/payment-localization/consult-payment-methods) que deseja oferecer no ambiente de pagamento do Mercado Pago, podendo ser: 
-----[mlb]---- 
-* Cartões de débito e crédito; 
-* Dinheiro (saldo da conta do Mercado Pago ou boleto bancário); 
-* Transferência bancária (Pix e PEC). A opção de pagamento com Pix só será exibida se houver uma [chave Pix cadastrada](/developers/pt/guides/checkout-api/receiving-payment-by-pix) no Mercado Pago. 
------------- 
+ ----[mlb]---- 
+ * Cartões de débito e crédito; 
+ * Dinheiro (saldo da conta do Mercado Pago ou boleto bancário); 
+ * Transferência bancária (Pix e PEC). A opção de pagamento com Pix só será exibida se houver uma [chave Pix cadastrada](/developers/pt/guides/checkout-api/receiving-payment-by-pix) no Mercado Pago. 
+ ------------ 
 ----[mla, mlm, mpe, mco, mlu, mlc]---- 
-* Cartões de débito e crédito;
-* Dinheiro (saldo da conta do Mercado Pago ou efectivo);
-* Transferência bancária. 
-------------
+ * Cartões de débito e crédito;
+ * Dinheiro (saldo da conta do Mercado Pago ou efectivo);
+ * Transferência bancária. 
+  ------------
 3. Selecione o **máximo de parcelas** que deseja oferecer em sua loja.
 4. [Configure](https://www.mercadopago.com.br/costs-section#from-section=menu) a tarifa que será paga em cada compra e também ofereça parcelas sem juros para seus clientes.
 5. Selecione se deseja ou não que o cliente **retorne automaticamente** à sua loja após concluir o pagamento.
