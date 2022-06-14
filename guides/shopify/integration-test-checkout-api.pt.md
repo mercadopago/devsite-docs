@@ -6,7 +6,7 @@ Os testes de compras ajudam a garantir que os pagamentos sejam processados corre
 2. Clique em **Comprar** e continue com o seu carrinho.
 3. Preencha as informações de compra solicitadas com um email, um endereço e um código postal válido de acordo com o país onde a loja opera, para simular o envio. Clique em **Continuar com o envio**.
 4. Preencha os campos obrigatórios e selecione Cartão de crédito ou débito como método de pagamento.
-5. Na tela de checkout, use os [cartões de teste](/docs/shopify/test-cards) para efetuar o pagamento.
+5. Na tela de checkout, use os [cartões de teste](/developers/pt/docs/shopify/test-cards) para efetuar o pagamento.
 
 > É importante não fazer login em sua conta do Mercado Pago ou tentar efetuar o pagamento com cartões para uso pessoal.
 
@@ -21,8 +21,8 @@ Os testes de compras ajudam a garantir que os pagamentos sejam processados corre
 
 > PREV_STEP_CARD_PT
 >
-> Instalação
+> Configuração
 >
-> Aprenda a instalar o Checkout Transparente na sua loja Shopify.
+> Aprenda a configurar o Checkout Transparente na sua loja Shopify.
 >
-> [Instalação](/developers/pt/docs/shopify/installation-checkout-transparente)
+> [Configuração](/developers/pt/docs/shopify/configuration-checkout-transparente)
