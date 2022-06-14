@@ -210,7 +210,7 @@ paths:
                       properties:
                         name:
                           type: string
-                          example: "Name of the Fee""
+                          example: "Name of the Fee"
                           description: Name of the Fee.
                         type:
                           type: string
