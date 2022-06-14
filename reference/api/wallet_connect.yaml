@@ -132,6 +132,7 @@ paths:
                 code:
                   type: string
                   description: This is the payer token. It is a reference to the Id that represents the authorization of the user
+                  required: true
                   example: aeecea3e11f2545d1e7790eb6591ff68df74c57930551ed980239f4538a7e530
       responses:
         '200':
