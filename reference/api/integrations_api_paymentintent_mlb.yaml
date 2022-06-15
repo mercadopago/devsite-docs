@@ -138,8 +138,8 @@ paths:
           description: Success - Payment intent succesfully created
           x-description-i18n:
             eng: Success - Payment intent succesfully created
-            spa: Éxito: intención de pago creada con éxito
-            por: Sucesso: intenção de pagamento criada com sucesso
+            spa: Éxito - intención de pago creada con éxito
+            por: Sucesso - intenção de pagamento criada com sucesso
           content:
             application/json:
               schema:

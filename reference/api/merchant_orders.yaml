@@ -588,9 +588,9 @@ paths:
           in: query
           description: 'Origin of the payment. Default value: ''NONE'''
           x-description-i18n:
-            eng: 'Origin of the payment. Default value: 'NONE''
-            spa: 'Origen del pago. Valor predeterminado: 'NONE''
-            por: 'Origem do pagamento. Valor padrão: 'NONE''
+            eng: 'Origin of the payment. Default value: ''NONE'''
+            spa: 'Origen del pago. Valor predeterminado: ''NONE'''
+            por: 'Origem do pagamento. Valor padrão: ''NONE'''
           required: false
           schema:
             type: string

@@ -76,8 +76,8 @@ paths:
           description: Success - Paged devices list
           x-description-i18n:
             eng: Success - Paged devices list
-            spa: Éxito: lista de dispositivos paginados
-            por: Sucesso: lista de dispositivos paginados
+            spa: Exito - lista de dispositivos paginados
+            por: Sucesso - lista de dispositivos paginados
           content:
             application/json:
               schema:
@@ -265,8 +265,8 @@ paths:
           description: Success - Payment intent succesfully created
           x-description-i18n:
             eng: Success - Payment intent succesfully created
-            spa: Éxito: intención de pago creada con éxito
-            por: Sucesso: intenção de pagamento criada com sucesso
+            spa: Exito - intención de pago creada con éxito
+            por: Sucesso - intenção de pagamento criada com sucesso
           content:
             application/json:
               schema:
@@ -555,7 +555,7 @@ paths:
           description: success - Details of Payment Intent
           x-description-i18n:
             eng: success - Details of Payment Intent
-            spa: éxito: detalles de la intención de pago
+            spa: Exito - detalles de la intención de pago
             por: sucesso - detalhes da intenção de pagamento
           content:
             application/json:
