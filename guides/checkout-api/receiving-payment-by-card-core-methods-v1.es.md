@@ -17,7 +17,7 @@ La integración del Checkout API de Mercado Pago para tarjetas permite que pueda
 
 ![API-integration-flowchart](/images/api/api-integration-flowchart-coremethods-es.png)
 
-> Si quieres realizar un flujo automatizado del pago, te recomendamos [utilizar la funcionalidad CardForm de MercadoPago.js V2](/developers/es/docs/checkout-api/payment-methods/receiving-payment-by-card-v1).
+> Si quieres realizar un flujo automatizado del pago, te recomendamos [utilizar la funcionalidad CardForm de MercadoPago.js V1](/developers/es/docs/checkout-api/payment-methods/receiving-payment-by-card-v1).
 
 <br>
 
@@ -49,7 +49,7 @@ Para crear un pago es necesario hacer la captura de los datos de la tarjeta a tr
 >
 > Nota
 >
-> Esta documentación utiliza la nueva versión de la librería. Para ver la versión anterior, ve a la [sección de integrar pagos con tarjeta con MercadoPago.js V1](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v1/receiving-payment-by-card).
+> Esta documentación utiliza la antigua versión de la librería. Para ver la versión atual, ve a la [sección de integrar pagos con tarjeta con MercadoPago.js V2](/developers/es/docs/online-payments/checkout-api/receiving-payment-by-card-core-methods).
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Incluye la librería MercadoPago.js
 
@@ -167,7 +167,7 @@ function createSelectOptions(elem, options, labelsAndKeys = { label : "name", va
 })()
 ```
 
-> Encuentra más detalle en la [sección de Tipos de documentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/identification-types).
+> Encuentra más detalle en la [sección de Tipos de documentos](/developers/es/guides/additional-content/payment-localization/doc-type-by-country).
 
 ------------
 
@@ -334,7 +334,7 @@ Según el ejemplo dado, tu backend debería disponibilizar un endpoint `/process
 
 Ya estando en tu backend con toda la información recolectada, es momento de enviar la solicitud a Mercado Pago a través de nuestras APIs. Los campos mínimos requeridos a enviar son: `token`, `transaction_amount`, `installments`, `payment_method_id` y el `payer.email`.
 
-Ten en cuenta que para que este paso funcione es necesario que configures tu [clave privada]([FAKER][CREDENTIALS][URL]) y que para interactuar con nuestras APIs recomendamos utilizar la [SDK oficial de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/checkout-api/previous-requirements#bookmark__instala_la_sdk_de_mercado_pago).
+Ten en cuenta que para que este paso funcione es necesario que configures tu [clave privada]([FAKER][CREDENTIALS][URL]) y que para interactuar con nuestras APIs recomendamos utilizar la [SDK oficial de Mercado Pago](/developers/es/guides/checkout-api/previous-requirements#bookmark__instala_la_sdk_de_mercado_pago).
 
 [[[
 ```php
@@ -570,7 +570,7 @@ curl -X POST \
 }
 ```
 
-> Conoce todos los campos disponibles para realizar un pago completo en las [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments/post).
+> Conoce todos los campos disponibles para realizar un pago completo en las [Referencias de API](/developers/es/reference/payments/_payments/post).
 
 ## Mensajes de respuestas
 
@@ -584,17 +584,17 @@ Para ayudar a mejorar la aprobación de tus pagos, es fundamental que puedas com
 
 Esto ayudará a evitar casos de rechazos y contracargos en los casos de transacciones inicialmente aprobadas. Por ejemplo, permite que se puedan corregir los errores de carga de datos o ayudar a cambiar el medio de pago.
 
-Te recomendamos usar los [mensajes de respuesta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/checkout-api/response-handling) y utilizar la comunicación sugerida en cada uno de los casos.
+Te recomendamos usar los [mensajes de respuesta](/developers/es/guides/checkout-api/response-handling) y utilizar la comunicación sugerida en cada uno de los casos.
 
 > NOTE
 >
 > Nota
 >
-> Evita pagos rechazados con nuestras [recomendaciones para mejorar la aprobación de tus pagos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/account/payment-rejections).
+> Evita pagos rechazados con nuestras [recomendaciones para mejorar la aprobación de tus pagos](/developers/es/guides/how-tos/improve-approval).
 
 ## Recibe notificaciones de pago
 
 Por último, es importante que estés siempre informado sobre la creación de nuevos pagos y las actualizaciones de sus estados. Por ejemplo si fueron aprobados, rechazados o si se encuentran pendientes.
 
-[Configura notificaciones webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/webhooks/webhooks) o [notificaciones IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/checkout-api/additional-content/notifications/ipn).
+[Configura notificaciones webhooks](/developers/es/guides/notifications/webhooks/webhooks) o [notificaciones IPN](/developers/es/guides/checkout-api/additional-content/notifications/ipn/introduction).
 
