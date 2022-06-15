@@ -2,7 +2,7 @@
 
 Caso ocorra alguma alteração nos dados de um cliente como por exemplo, endereço, cartão ou e-mail da conta, é possível realizar essa alteração através da API de clientes ou dos nossos SDKs.
 
-Na tabela abaixo descrevemos todos os atributos que podem ser modificados, e para realizar a alteração, envie um PUT com o `customer_id`e os atributos que deseja modificar ao endpoint /v1/customers/{id} e execute a requisição ou, se preferir, utilize um dos SDKs a seguir.
+Na tabela abaixo descrevemos todos os atributos que podem ser modificados, e para realizar a alteração, envie um PUT com o `customer_id`e os atributos que deseja modificar ao endpoint [/v1/customers/{id}](/developers/pt/reference/customers/_customers_id/put) e execute a requisição ou, se preferir, utilize um dos SDKs a seguir.
 
 
 > NOTE

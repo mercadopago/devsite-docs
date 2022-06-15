@@ -1,6 +1,6 @@
 # Consultar lista de cartões
 
-É possível consultar a lista de cartões salvos para determinado cliente. Para isso, envie um GET com o `customer_id` do cliente ao endpoint /v1/customers/CUSTOMER_ID/cards e execute a requisição ou, se preferir, utilize um de nossos SDKs abaixo.
+É possível consultar a lista de cartões salvos para determinado cliente. Para isso, envie um GET com o `customer_id` do cliente ao endpoint [/v1/customers/{customer_id}/cards](/developers/pt/reference/cards/_customers_customer_id_cards/get) e execute a requisição ou, se preferir, utilize um de nossos SDKs abaixo.
 
 
 [[[
