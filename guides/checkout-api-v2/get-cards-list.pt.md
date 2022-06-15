@@ -1,0 +1,64 @@
+# Consultar lista de cartões
+
+É possível consultar a lista de cartões salvos para determinado cliente. Para isso, envie um GET com o `customer_id` do cliente ao endpoint /v1/customers/CUSTOMER_ID/cards e execute a requisição ou, se preferir, utilize um de nossos SDKs abaixo.
+
+
+[[[
+
+```php
+
+<?php
+    $customer = MercadoPago\Customer::find_by_id($id);
+    $cards = $customer->cards();
+?>
+
+```
+```node
+
+  var filters = {
+    id: customer_id
+  };
+
+  mercadopago.customers.search({
+    qs: filters
+  }).then(function (customer) {
+    console.log(customer);
+  });
+
+```
+```java
+
+MercadoPagoConfig.setAccessToken("ENV_ACCESS_TOKEN");
+
+CustomerClient customerClient = new CustomerClient();
+
+Customer customer = customerClient.get("247711297-jxOV430go9fx2e");
+customerClient.listCards(customer.getId());
+
+```
+```ruby
+
+cards_response = sdk.card.list(customer_id)
+cards = cards_response[:response]
+
+```
+```csharp
+
+var customerClient = new CustomerClient();
+ResourcesList<CustomerCard> customerCards = await customerClient.ListCardsAsync("CUSTOMER_ID");
+
+```
+```python
+
+cards_response = sdk.card().list_all(customer_id)
+cards = cards_response["response"]
+
+```
+```curl
+
+curl -X GET \
+  -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+  'https://api.mercadopago.com/v1/customers/CUSTOMER_ID/cards' \
+
+```
+]]]
