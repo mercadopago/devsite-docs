@@ -1,4 +1,4 @@
-# Como instalar o módulo manualmente
+# Como instalar o módulo do Mercado Pago manualmente
  
 Para instalar o módulo de forma manual, siga os passos abaixo:
  

@@ -14,8 +14,8 @@ Feitas as devidas alterações, em **Parâmetros da Loja > Definições de Encom
 
 > PREV_STEP_CARD_PT
 >
-> Como instalar o módulo manualmente
+> Como instalar o módulo do Mercado pago manualmente
 >
 > Veja como, caso necessário, instalar o módulo de forma manual.
 >
-> [Como instalar o módulo manualmente](/developers/pt/docs/prestashop/how-tos/install-module-manually)
+> [Como instalar o módulo do Mercado pago manualmente](/developers/pt/docs/prestashop/how-tos/install-module-manually)
