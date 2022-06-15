@@ -30,11 +30,11 @@ The Shopify store will display the request fields of the buyer's identification 
 
 > PREV_STEP_CARD_EN
 >
-> Configuration
+> Installation
 >
-> Learn how to configure Checkout Pro in your Shopify store.
+> Learn how to install Checkout Pro in your Shopify store.
 >
-> [Configuration](/developers/en/docs/shopify/configuration)
+> [Installation](/developers/en/docs/shopify/installation)
 
 > NEXT_STEP_CARD_EN
 >

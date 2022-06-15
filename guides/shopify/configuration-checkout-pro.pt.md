@@ -31,11 +31,11 @@ A loja Shopify exibirá os campos de solicitação de identificação pessoal do
 
 > PREV_STEP_CARD_PT
 >
-> Configuração
+> Instalação
 >
-> Aprenda a configurar o Checkout Pro na sua loja Shopify.
+> Aprenda a instalar o Checkout Pro na sua loja Shopify.
 >
-> [Configuração](/developers/pt/docs/shopify/configuration)
+> [Instalação](/developers/pt/docs/shopify/installation)
 
 > NEXT_STEP_CARD_PT
 >

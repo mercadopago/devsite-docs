@@ -17,4 +17,4 @@ Mercado Pago's Checkout Transparente **allows you to complete the purchase proce
 >
 > What you need to integrate Mercado Pago with your Shopify store.
 >
-> [Previous requirements](developers/en/docs/shopify/requirements-checkout-transparente)
+> [Previous requirements](/developers/en/docs/shopify/requirements-checkout-transparente)
