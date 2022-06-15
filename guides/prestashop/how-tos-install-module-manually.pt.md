@@ -23,7 +23,7 @@ Pronto! O módulo do Mercado Pago foi instalado e está pronto para ser configur
 
 > NEXT_STEP_CARD_PT
 >
-> Como customizar e-mails para pagamentos com ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------
+> Como customizar notificação de pagamento para ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------
 >
 > Após configurar o ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------ para receber pagamentos, saiba como configurar o envio de e-mails que notificarão o usuário de suas transações.
 >

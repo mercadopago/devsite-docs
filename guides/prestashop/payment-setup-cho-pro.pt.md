@@ -5,7 +5,7 @@ Com o [Checkout Pro](/developers/pt/guides/checkout-pro/landing), o comprador se
 Para integrar o Checkout Pro, siga os passos abaixo.
  
 1. Selecione **Sim** para ativar a experiência do Mercado Pago no checkout da sua loja. 
-2. Escolha os [meios de pagamento](/developer/pt/guides/additional-content/payment-localization/consult-payment-methods) que deseja oferecer no ambiente de pagamento do Mercado Pago, podendo ser: 
+2. Escolha os meios de pagamento que deseja oferecer no ambiente de pagamento do Mercado Pago, podendo ser: 
  ----[mlb]---- 
  * Cartões de débito e crédito; 
  * Dinheiro (saldo da conta do Mercado Pago ou boleto bancário); 
@@ -17,7 +17,7 @@ Para integrar o Checkout Pro, siga os passos abaixo.
  * Transferência bancária. 
   ------------
 3. Selecione o **máximo de parcelas** que deseja oferecer em sua loja.
-4. [Configure](https://www.mercadopago.com.br/costs-section#from-section=menu) a tarifa que será paga em cada compra e também ofereça parcelas sem juros para seus clientes.
+4. [Configure](https://www.mercadopago[FAKER][URL][DOMAIN]/costs-section#from-section=menu) a tarifa que será paga em cada compra e também ofereça parcelas sem juros para seus clientes.
 5. Selecione se deseja ou não que o cliente **retorne automaticamente** à sua loja após concluir o pagamento.
 6. Defina se os clientes terão acesso ao **modal checkout**, um formulário de pagamentos do Mercado Pago sem sair da sua loja. Se essa opção estiver desativada, os compradores serão redirecionados a outra página.
 7. Caso deseje, ative o **modo binário** quando não quiser deixar os pagamentos em estado pendente ou em revisão. Com o modo binário, os pagamentos serão aceitos ou recusados automaticamente.

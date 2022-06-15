@@ -24,6 +24,6 @@ Pronto! O pagamento com cartões via Checkout Transparente foi configurado e est
 >
 > Configurar os pagamentos com ticket checkout
 >
-> Configure a sua loja para receber pagamentos em dinheiro utilizando o ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------. 
+> Configure a sua loja para receber pagamentos em dinheiro utilizando o Checkout Transparente.
 >
 > [Ticket checkout](/developers/pt/docs/prestashop/payment-setup/cho-api/ticket-checkout)
