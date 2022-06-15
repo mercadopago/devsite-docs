@@ -31,7 +31,7 @@ Pronto! O pagamento com ticket checkout via Checkout Transparente foi configurad
 >
 > Configurar os pagamentos com Pix
 >
-> Veja como configurar o ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------ para receber pagamentos com Pix em sua loja.
+> Veja como configurar o Checkout Transparente para receber pagamentos com Pix em sua loja.
 >
 > [Pix](/developers/pt/docs/prestashop/payment-setup/cho-api/pix)
 ------------
