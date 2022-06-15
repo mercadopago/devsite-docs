@@ -13,7 +13,7 @@ The test purchases ensure that payments are processed correctly before allowing 
 6. Enter the test card information provided, and click on **Pay**.
 7. After the checkout, log into the Shopify Admin Panel and verify that the order is listed as approved.
 
-> IMPORTANT
+> WARNING
 >
 > Important
 >

@@ -13,7 +13,7 @@ Os testes de compras ajudam a garantir que os pagamentos sejam processados corre
 6. Insira as informações do cartão de teste indicadas e clique em **Pagar**.
 7. Na finalização da compra, faça login no Painel de administração da Shopify e verifique se o pedido está listado como aprovado.
 
-> IMPORTANT
+> WARNING
 >
 > Importante
 >

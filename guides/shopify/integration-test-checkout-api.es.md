@@ -13,7 +13,7 @@ Las pruebas de compras ayudan a garantizar que los pagos se procesan correctamen
 6. Agrega la información de la tarjeta de prueba indicada y haz clic en **Pagar**.
 7. Al finalizar la compra, ingresa al Panel Administrativo de Shopify y verifica que el pedido figure como aprobado.
 
-> IMPORTANT
+> WARNING
 >
 > Importante
 >

@@ -10,4 +10,4 @@ With Mercado Pago’s Checkout Pro, **buyers will be redirected from the store t
 >
 > What you need to integrate Mercado Pago with your Shopify store.
 >
-> [Previous requirements](developers/en/docs/shopify/requirements)
+> [Previous requirements](/developers/en/docs/shopify/requirements)
