@@ -1,6 +1,6 @@
 # Configurar os pagamentos com cartões
 
-Com o [----[mlb]---- Checkout Transparente, ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API, ------------](/developers/pt/guides/checkout-api/introduction) ofereça pagamentos com **cartões de crédito ou débito** diretamente em sua loja, sem que o comprador precise ser redirecionado para realizar o pagamento.
+Com o [----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------](/developers/pt/guides/checkout-api/introduction), ofereça pagamentos com **cartões de crédito ou débito** diretamente em sua loja, sem que o comprador precise ser redirecionado para realizar o pagamento.
  
 Para integrar a forma de pagamento, siga os passos abaixo.
 
