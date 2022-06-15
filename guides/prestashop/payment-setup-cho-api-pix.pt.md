@@ -6,7 +6,7 @@ Com o [----[mlb]---- Checkout Transparente, ------------ ----[mla, mlm, mpe, mco
 >
 > Importante
 > 
-> A opção de pagamento com Pix só será exibida se houver uma [chave Pix cadastrada](/developers/pt/docs/checkout-api/payment-methods/receiving-payment-by-pix#bookmark_cadastrar_chave_pix) no Mercado Pago. 
+> A opção de pagamento com Pix só será exibida se houver uma [chave Pix cadastrada](/developers/pt/docs/checkout-api/payment-methods/receiving-payment-by-pix#bookmark_cadastrar_chave_pix) no Mercado Pago. <br>
 > </br> <br/>
 > Além disso, existe um limite para o valor de Pix, estabelecido pelo Banco Central do Brasil, que poderá ser movimentado no decorrer do período noturno (entre 20h e 6h) de R$1 mil. Para o período diurno (entre 6h e 20h), contudo, não há limite de movimentação.
 
