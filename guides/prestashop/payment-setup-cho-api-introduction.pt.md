@@ -1,6 +1,6 @@
 # Configurar os pagamentos com ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------
 
-Com o [----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------](/developers/pt/guides/cho-api/landing), todo o processo de finalização de compra acontecerá dentro do ambiente da loja online, sem a necessidade de redirecionamento para uma página externa. Além de permitir maior controle no processo de customização e integração, o checkout oferece uma estrutura completa para processamento de pagamentos com os principais meios disponíveis no mercado. 
+Com o [----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------](/developers/pt/guides/checkout-api/introduction), todo o processo de finalização de compra acontecerá dentro do ambiente da loja online, sem a necessidade de redirecionamento para uma página externa. Além de permitir maior controle no processo de customização e integração, o checkout oferece uma estrutura completa para processamento de pagamentos com os principais meios disponíveis no mercado. 
 
 Veja abaixo quais são os meios de pagamento disponíveis para a loja ao integrar o ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------.
 
@@ -17,7 +17,7 @@ Veja abaixo quais são os meios de pagamento disponíveis para a loja ao integra
 >
 > Importante
 >
-> Ao utilizar o [----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------](/developers/pt/guides/checkout-api/landing) para receber os pagamentos, é importante configurar o envio de e-mails que notificarão o usuário de suas transações. Veja a seção [Como customizar e-mails para pagamentos com ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------](/developers/pt/docs/prestashop/how-tos/api-email-customixation) para detalhes de como fazê-lo.
+> Ao utilizar o [----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------](/developers/pt/guides/checkout-api/introduction) para receber os pagamentos, é importante configurar o envio de e-mails que notificarão o usuário de suas transações. Veja a seção [Como customizar notificação de pagamento para ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------](/developers/pt/docs/prestashop/how-tos/api-email-customization) para detalhes de como fazê-lo. <br>
 > </br> <br/>
 > Caso deseje utilizar o Checkout Pro para receber pagamentos na loja, veja a seção [Configurar os pagamentos com Checkout Pro](/developers/pt/docs/prestashop/payment-setup/cho-pro).
 

@@ -1,11 +1,11 @@
 # Configurar os pagamentos com ticket checkout
 
-Com o **ticket checkout**, ofereça em sua loja pagamentos em dinheiro utilizando o [----[mlb]---- Checkout Transparente. ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API. ------------](/developers/pt/guides/checkout-api/landing).
+Com o **ticket checkout**, ofereça em sua loja pagamentos em dinheiro utilizando o [----[mlb]---- Checkout Transparente. ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API. ------------](/developers/pt/guides/checkout-api/introduction).
 
 Para integrar a forma de pagamento, siga os passos abaixo.
 
 1. Selecione **Sim** para ativar a experiência de pagamentos em dinheiro no checkout de sua loja.
-2. Escolha os [meios de pagamento](/developer/pt/guides/additional-content/payment-localization/consult-payment-methods) que deseja oferecer, podendo ser: 
+2. Escolha os meios de pagamento que deseja oferecer, podendo ser: 
  ----[mlb]---- 
  * Dinheiro (saldo no Mercado Pago ou boleto bancário); 
  * Pagamento na lotérica sem boleto (com CPF).
