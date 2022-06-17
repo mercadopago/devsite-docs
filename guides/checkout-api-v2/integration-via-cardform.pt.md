@@ -31,7 +31,6 @@ As credenciais são chaves únicas com as quais identificamos uma integração n
 
 Esta é a primeira etapa de uma estrutura completa de código que deverá ser seguida para a correta integração do pagamento via cartão. Atente-se aos blocos abaixo para adicionar aos códigos conforme indicado.
 
-
 [[[
 ```javascript
   <script>
@@ -40,7 +39,6 @@ Esta é a primeira etapa de uma estrutura completa de código que deverá ser se
 ```
 ]]]
 
-
 ## Adicionar formulário de pagamento
 
 A captura dos dados do cartão é feita através do CardForm da biblioteca MercadoPago.js. Nosso CardForm se conectará ao seu formulário de pagamento HTML, facilitando a obtenção e validação de todos os dados necessários para processar o pagamento.
@@ -48,8 +46,7 @@ A captura dos dados do cartão é feita através do CardForm da biblioteca Merca
 Para adicionar o formulário de pagamento, insira o HTML abaixo diretamente no projeto. 
 
 [[[
-``` html
-
+```html
   <style>
     #form-checkout {
       display: flex;
@@ -262,7 +259,7 @@ Encontre o estado do pagamento no campo _status_.
 ```
 ```node
 ===
-Encontre o status do pagamento no campo _status_.
+Encontre o estado do pagamento no campo _status_.
 ===
  
 var mercadopago = require('mercadopago');
@@ -279,7 +276,7 @@ mercadopago.payment.save(req.body)
 ```
 ```java
 ===
-Encontre o status do pagamento no campo _status_.
+Encontre o estado do pagamento no campo _status_.
 ===
  
 MercadoPago.SDK.setAccessToken("YOUR_ACCESS_TOKEN");
@@ -309,7 +306,7 @@ System.out.println(payment.getStatus());
 ```
 ```ruby
 ===
-Encontre o status do pagamento no campo _status_.
+Encontre o estado do pagamento no campo _status_.
 ===
 require 'mercadopago'
 sdk = Mercadopago::SDK.new('YOUR_ACCESS_TOKEN')
@@ -426,7 +423,6 @@ curl -X POST \
 
 A resposta trará o seguinte resultado
 
-[[[
 ```json
 {
    "status": "approved",
@@ -442,7 +438,7 @@ A resposta trará o seguinte resultado
    ...
 }
 ```
-]]]
+
 
 ## Exemplo de código
 
@@ -468,4 +464,4 @@ Nos links abaixo você encontra exemplos de códigos completos da integração.
 >
 > Saiba como testar a integração do Checkout Transparente em sua loja.
 >
-> [Teste de integração](/developers/pt/docs/checkout-api/test-integration/create-test-user)
+> [Teste de integração](/developers/pt/docs/checkout-api/integration-test/create-test-user)

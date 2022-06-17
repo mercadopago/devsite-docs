@@ -240,3 +240,19 @@ curl -X PUT \
 
 ```
 ]]]
+
+> PREV_STEP_CARD_PT
+>
+> Criar cliente e cartão
+>
+> Saiba como criar um cliente e um cartão
+>
+> [Criar cliente e cartão](/developers/pt/docs/checkout-api/customer-management/create-customer-and-card)
+
+> NEXT_STEP_CARD_PT
+>
+> Buscar cliente
+>
+> Saiba como buscar um cliente a partir de informações específicas.
+>
+> [Buscar cliente](/developers/pt/docs/checkout-api/customer-management/search-customers)

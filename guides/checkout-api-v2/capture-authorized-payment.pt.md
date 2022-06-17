@@ -14,8 +14,8 @@ Existem duas formas de capturar um pagamento autorizado:
 
 
 
-* **Captura do valor total de uma reserva**: onde se captura o valor integral do pagamento reservado.
-* **Captura de um valor inferior ao reservado:** onde se captura o valor parcial do pagamento reservado.
+* **Captura do valor total de uma reserva**: na qual se captura o valor integral do pagamento reservado.
+* **Captura de um valor inferior ao reservado:** na qual se captura o valor parcial do pagamento reservado.
 
 Abaixo descrevemos o detalhe de cada uma das opções e como executá-las.
 
@@ -23,7 +23,7 @@ Abaixo descrevemos o detalhe de cada uma das opções e como executá-las.
 ## Capturar valor total 
 
 
-Para fazer a captura do valor total de uma reserva, envie o parâmetro `capture` como `true` ao endpoint [/v1/payments/{id}](/developers/pt/reference/payments/_payments_id/put) e execute a requisição ou, se preferir, utilize um dos SDKs abaixo.
+Para fazer a captura do valor total de uma reserva, envie um **PUT** o parâmetro `capture` como `true` ao endpoint [/v1/payments/{id}](/developers/pt/reference/payments/_payments_id/put) e execute a requisição ou, se preferir, utilize um dos SDKs abaixo.
 
 
 [[[
@@ -233,3 +233,19 @@ A resposta trará o seguinte resultado
 > Importante
 >
 > Não é possível capturar um valor superior ao reservado, para isso é preciso cancelar a reserva e gerar uma nova.
+
+> PREV_STEP_CARD_PT
+>
+> Cancelar reserva
+>
+> Conheça as etapas necessárias para cancelar uma reserva de valores.
+>
+> [Cancelar reserva](/developers/pt/docs/checkout-api/payment-management/cancel-reserve)
+
+> NEXT_STEP_CARD_PT
+>
+> Reservar valores
+>
+> Saiba mais sobre como funciona a reserva de valores para um pagamento.
+>
+> [Reservar valores](/developers/pt/docs/checkout-api/payment-management/make-value-reserve)

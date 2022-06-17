@@ -442,4 +442,4 @@ Ao concluir essas etapas, o código QR terá sido renderizado e será exibido pa
 >
 > Saiba como testar a integração do Checkout Transparente em sua loja.
 >
-> [Teste de integração](/developers/pt/docs/checkout-api/test-integration/create-test-user)
+> [Teste de integração](/developers/pt/docs/checkout-api/integration-test/create-test-user)

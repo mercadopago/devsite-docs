@@ -103,3 +103,20 @@ A resposta trará o seguinte resultado
 }
 ```
 ]]]
+
+
+> PREV_STEP_CARD_PT
+>
+> Alterar data de vencimento
+>
+> Saiba como alterar a data de vencimento para pagamentos em dinheiro e/ou boleto.
+>
+> [Alterar data de vencimento](/developers/pt/docs/checkout-api/payment-management/modify-expiration-date)
+
+> NEXT_STEP_CARD_PT
+>
+> Capturar pagamento autorizado
+>
+> Conheça as formas disponíveis para captura de um pagamento autorizado.
+>
+> [Capturar pagamento autorizado](/developers/pt/docs/checkout-api/payment-management/capture-authorized-payment)

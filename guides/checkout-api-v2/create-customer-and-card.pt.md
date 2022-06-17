@@ -153,3 +153,12 @@ curl -X POST \
 ```
 ]]]
 
+
+
+> NEXT_STEP_CARD_PT
+>
+> Modificar cliente
+>
+> Saiba como alterar dados de um cliente previamente criado
+>
+> [Modificar cliente](/developers/pt/docs/checkout-api/customer-management/modify-customer)

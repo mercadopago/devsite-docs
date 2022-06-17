@@ -24,7 +24,7 @@ Com o Checkout Transparente do Mercado Pago, também é possível oferecer pagam
 Com o Checkout Transparente do Mercado Pago, também é possível oferecer pagamentos com **Abitab** e **Redpagos**.
 ------------
 
-Para obter uma lista detalhada com todos os meios de pagamento disponíveis para integração, envie um GET com seu _Access token_ ao endpoint [/v1/payment_methods](/developers/pt/reference/payment_methods/_payment_methods/get) e execute a requisição ou, se preferir, faça a requisição utilizando os SDKs abaixo.
+Para obter uma lista detalhada com todos os meios de pagamento disponíveis para integração, envie um **GET** com seu _Access token_ ao endpoint [/v1/payment_methods](/developers/pt/reference/payment_methods/_payment_methods/get) e execute a requisição ou, se preferir, faça a requisição utilizando os SDKs abaixo.
 
 [[[
 ```php
@@ -86,14 +86,12 @@ curl -X GET \
 ```
 ]]]
 
-
-
 ----[mlb]----
-Para oferecer pagamentos com boleto bancário e/ou pagamento em lotérica, siga as etapas abaixo.
+Para oferecer pagamentos com **boleto bancário** e/ou **pagamento em lotérica**, siga as etapas abaixo.
 ------------
 
 ----[mla]----
-Para oferecer pagamentos com Rapipago e/ou Pago Fácil, siga as etapas abaixo.
+Para oferecer pagamentos com **Rapipago** e/ou **Pago Fácil**, siga as etapas abaixo.
 ------------
 
 ----[mlm]----
@@ -132,7 +130,7 @@ Esta captura é feita a partir da inclusão da biblioteca MercadoPago.js em seu 
 
 ## Adicionar formulário de pagamento
 
-Com a biblioteca MercadoPago.js incluída, adicione o formulário de pagamento abaixo ao seu projeto para garantir a captura segura dos dados dos compradores.
+Com a biblioteca MercadoPago.js incluída, adicione o formulário de pagamento abaixo ao seu projeto para garantir a captura segura dos dados dos compradores. Nesta etapa é importante utilizar a lista que você consultou para obter os meios de pagamento disponíveis para criar as opções de pagamento que deseja oferecer.
 
 
 [[[
@@ -195,7 +193,7 @@ Esta é a primeira etapa de uma estrutura completa de código que deverá ser se
 
 
 [[[
-``` javascript
+```javascript
 const mp = new MercadoPago('YOUR_PUBLIC_KEY');
 ```
 ]]]
@@ -504,7 +502,7 @@ Reembolsos e cancelamentos(/developers/pt/docs/checkout-api/additional-content/c
 
 ----[mla]----
 
-Para configurar pagamentos com **Rapipago** e **Pago Fácil**, envie um POST com os parâmetros requeridos ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, utilize um de nossos SDKs abaixo.
+Para configurar pagamentos com **Rapipago** e/ou **Pago Fácil**, envie um **POST** com os parâmetros requeridos ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, utilize um de nossos SDKs abaixo.
 
 > WARNING
 >
@@ -639,14 +637,14 @@ A resposta mostrará o **status pendente** até que o comprador realize o pagame
 
 Além das configurações básicas de pagamento com dinheiro, é possível alterar a data de vencimento e fazer o cancelamento do pagamento. Para isso, acesse as seções abaixo.
 
-[Alterar data de vencimento](/developers/pt/docs/checkout-api/payment-management/modify-expiration-date)
-Reembolsos e cancelamentos(/developers/pt/docs/checkout-api/additional-content/cancellations-and-refunds).
+- [Alterar data de vencimento](/developers/pt/docs/checkout-api/payment-management/modify-expiration-date)
+- [Reembolsos e cancelamentos](/developers/pt/docs/checkout-api/additional-content/cancellations-and-refunds)
 
 ------------
 
 ----[mlm]----
 
-**Para configurar pagamentos com  **OXXO**, **Paycash**,  **Citibanamex**,  **Santander**, **BBVA Bancomer** e/ou **Cartão Mercado Pago**, envie um POST com os devidos parâmetros ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, utilize um de nossos SDKs abaixo.
+Para configurar pagamentos com  **OXXO**, **Paycash**,  **Citibanamex**,  **Santander**, **BBVA Bancomer** e/ou **Cartão Mercado Pago**, envie um **POST** com os devidos parâmetros ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, utilize um de nossos SDKs abaixo.
 
 > WARNING
 >
@@ -783,8 +781,11 @@ A resposta mostrará o **status pendente** até que o comprador realize o pagame
 
 Para evitar problemas de cobrança, é importante cancelar pagamentos assim que vencerem. Os pagamentos em dinheiro devem ser feitos entre 3 e 5 dias úteis de acordo com o tempo de cada um.
 
-Tenha em conta que apenas se pode cancelar os pagamentos que se encontram com status 
-**pendente** ou em **processo**. Se a expiração de um pagamento ocorre aos 30 dias, o cancelamento é automático e o status final será **cancelado** ou **expirado**.
+> NOTE
+>
+> Importante
+>
+> Somente é possível cancelar os pagamentos  com status **pendente** ou em **processo**. Se um pagamento vence dentro de 30 dias, o cancelamento é automático e o status final será **cancelado** ou **expirado**.
 
 Para cancelar um pagamento, veja a seção [Reembolsos e cancelamentos](/developers/pt/docs/checkout-api/additional-content/cancellations-and-refunds).
 
@@ -813,7 +814,7 @@ Ao finalizar a integração, é importante compartilhar com os compradores a inf
 
 ----[mpe]----
 
-Para configurar pagamentos com **PagoEfectivo**, envie um POST com os parâmetros requeridos ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, utilize um de nossos SDKs abaixo.
+Para configurar pagamentos com **PagoEfectivo**, envie um **POST** com os parâmetros requeridos ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, utilize um de nossos SDKs abaixo.
 
 > WARNING
 >
@@ -951,13 +952,19 @@ Para evitar problemas de cobrança, é importante cancelar pagamentos assim que 
 Tenha em conta que apenas se pode cancelar os pagamentos que se encontram com status 
 **pendente** ou em **processo**. Se a expiração de um pagamento ocorre aos 30 dias, o cancelamento é automático e o status final será **cancelado** ou **expirado**.
 
-Para cancelar um pagamento, veja a seção ]Reembolsos e cancelamentos](/developers/pt/docs/checkout-api/additional-content/cancellations-and-refunds).
+Para cancelar um pagamento, veja a seção [Reembolsos e cancelamentos](/developers/pt/docs/checkout-api/additional-content/cancellations-and-refunds).
 
 ------------
 
 ----[mco]----
 
-**Para configurar pagamentos com **Efecty** e/ou **PSE**, envie um POST com os seguintes parâmetros ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, utilize um de nossos SDKs abaixo.
+Para configurar pagamentos com **Efecty** e/ou **PSE**, envie um **POST** com os devidos parâmetros ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, utilize um de nossos SDKs abaixo.
+
+> WARNING
+>
+> Importante
+>
+> Para receber pagamentos com **PSE** é preciso enviar, na criação do pagamento, o parâmetro `financial_institution` com o número da instituição financeira responsável pelo processamento do pagamento. 
 
 [[[
 ```php
@@ -1084,14 +1091,17 @@ curl -X POST \
 A resposta mostrará o **status pendente** até que o comprador realize o pagamento. Além disso, na resposta à requisição, o parâmetro `external_resource_url` retornará uma URL que contém as instruções para que o comprador realize o pagamento. Você pode redirecioná-lo para este mesmo link para conclusão do fluxo de pagamento.
 
 
-## Cancelar pagamento
+Além das configurações básicas para pagamento com dinheiro, é possível alterar a data de vencimento e fazer o cancelamento do pagamento. Para isso, acesse as seções abaixo.
 
-Para evitar problemas de cobrança, é importante cancelar pagamentos assim que vencerem. Os pagamentos em dinheiro devem ser feitos entre 3 e 5 dias úteis de acordo com o tempo de cada um.
+- [Alterar data de vencimento](/developers/pt/docs/checkout-api/payment-management/modify-expiration-date)
+- [Reembolsos e cancelamentos](/developers/pt/docs/checkout-api/additional-content/cancellations-and-refunds).
 
-Tenha em conta que apenas se pode cancelar os pagamentos que se encontram com status 
-**pendente** ou em **processo**. Se a expiração de um pagamento ocorre aos 30 dias, o cancelamento é automático e o status final será **cancelado** ou **expirado**.
+> NOTE
+>
+> Importante
+>
+> O prazo de creditação está entre 1 e 2 dias úteis de acordo com o meio de pagamento. Por isso recomendamos que você defina a data de expiração com no mínimo 3 dias para garantir que o pagamento seja feito.
 
-Para cancelar um pagamento, veja a seção [Reembolsos e cancelamentos](/developers/pt/docs/checkout-api/additional-content/cancellations-and-refunds).
 
 ------------
 
@@ -1254,4 +1264,4 @@ Para cancelar um pagamento, veja a seção [Reembolsos e cancelamentos](/develop
 >
 > Saiba como testar a integração do Checkout Transparente em sua loja.
 >
-> [Teste de integração](/developers/pt/docs/checkout-api/test-integration/create-test-user)
+> [Teste de integração](/developers/pt/docs/checkout-api/integration-test/create-test-user)

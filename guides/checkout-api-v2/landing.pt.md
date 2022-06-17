@@ -18,9 +18,8 @@ bullet_section_with_media:
  - message: Além de permitir maior controle no processo de customização e integração, o Checkout Transparente oferece uma estrutura completa para processamento de pagamentos com os principais meios disponíveis no mercado, além de:
  - benefit_title: Compras em um único ambiente
  - benefit_message: Todo o processo de compra acontece dentro do ambiente da loja online, otimizando as etapas de pagamento do comprador.
- - image: /images/checkout-bricks/cho-bricks-landing-v4.png
  - benefit_title: Facilidade de customização e integração
- - benefit_message: Maior controle de customização e integração. Gerencie todo o processo de coleta de dados no frontend onde o comprador realiza a solicitação de pagamento.
+ - benefit_message: Gerencie todo o processo de coleta de dados no frontend onde o comprador realiza a solicitação de pagamento.
  - benefit_title: Comunicação personalizada
  - benefit_message: Comunicação direta com clientes através das mensagens de erro com respostas personalizadas.
  - benefit_title: Otimização do processo de pagamento
@@ -29,6 +28,7 @@ bullet_section_with_media:
  - benefit_message: É possível oferecer todos os meios de pagamento disponíveis ou apenas os que achar necessário.
  - benefit_title: Segurança em cada transação
  - benefit_message: Elegível a processo de PCI SAQ A.
+ - image: /checkout-bricks/cho-bricks-landing-v4.png
 ---
 
 --- mini_landing_separator ---

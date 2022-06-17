@@ -62,3 +62,20 @@ curl -X GET \
 
 ```
 ]]]
+
+
+> PREV_STEP_CARD_PT
+>
+> Adicionar novos cartões a um cliente
+>
+> Saiba como buscar adicionar novos cartões a um cliente previamente criado.
+>
+> [Adicionar novos cartões a um cliente](/developers/pt/docs/checkout-api/customer-management/add-new-cards-to-customer)
+
+> NEXT_STEP_CARD_PT
+>
+> Receber pagamentos com cartões salvos
+>
+> Saiba como receber pagamentos a partir de cartões previamente salvos na conta do comprador.
+>
+> [Receber pagamentos com cartões salvos](/developers/pt/docs/checkout-api/customer-management/receive-payments-with-saved-cards)

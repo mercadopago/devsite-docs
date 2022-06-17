@@ -18,7 +18,7 @@ Se todos os pré-requisitos foram cumpridos, você poderá realizar a integraç�
 >
 > Veja os tipos de integração disponíveis para cada meio de pagamento.
 >
-> [Tipos de integração](/developers/pt/docs/checkout-api/integration-types)
+> [Tipos de integração](/developers/pt/docs/checkout-api/types-of-integration)
 
 
 > NEXT_STEP_CARD_PT
@@ -27,4 +27,4 @@ Se todos os pré-requisitos foram cumpridos, você poderá realizar a integraç�
 >
 > Saiba como realizar a integração do Checkout Transparente para pagamentos com cartão.
 >
-> [Configuração da integração](/developers/pt/docs/checkout-api/integration-configuration/cards/integrate-via-cardform)
+> [Configuração da integração](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform)

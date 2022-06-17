@@ -10,10 +10,11 @@
 
 Uma reserva de valores acontece quando uma compra é realizada e seu montante é reservado do limite total do cartão, garantindo que o valor fique guardado até a conclusão do processamento.
 
-Para realizar uma autorização de reserva de valores, envie um POST com com todos os atributos necessários e adicione o atributo `capture=false` ao endpoint /v1/payments e execute a requisição ou, se preferir, utilize um dos SDKs abaixo.
+Para realizar uma autorização de reserva de valores, envie um **POST** com com todos os atributos necessários e adicione o atributo `capture=false` ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, utilize um dos SDKs abaixo.
 
 [[[
 ```php
+
 <?php
 
   MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
@@ -126,6 +127,7 @@ var client = new PaymentClient();
 Payment payment = await client.CreateAsync(paymentRequest);
 ```
 ```python
+
 import mercadopago
 sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
 
@@ -182,16 +184,17 @@ A resposta indica que o pagamento se encontra autorizado e pendente de captura.
 ```
 ]]]
 
-Também pode resultar rejeitado ou ficar pendente. Tenha em conta que os valores autorizados não poderão ser utilizados pelo seu cliente até que não sejam capturados. Recomendamos realizar a captura o quanto antes.
+Além disso, também é possível retornar como rejeitado ou pendente. Tenha em conta que os valores autorizados não poderão ser utilizados pelo seu cliente até que não sejam capturados. Recomendamos realizar a captura o quanto antes.
 
 
-----[mla,mlm]----
+----[mla, mlm]----
 > WARNING
 >
 > Importante
 >
 > A reserva terá validade de 7 dias. Se não capturá-la nesse período, será cancelada. Além disso, é necessário guardar o ID do pagamento para poder finalizar o processo.
 ------------
+
 ----[mpe]----
 > WARNING
 >
@@ -199,6 +202,7 @@ Também pode resultar rejeitado ou ficar pendente. Tenha em conta que os valores
 >
 > A reserva terá validade de 22 dias. Se não capturá-la nesse período, será cancelada. Além disso, é necessário guardar o ID do pagamento para poder finalizar o processo.
 ------------
+
 ----[mlb]----
 > WARNING
 >
@@ -206,3 +210,11 @@ Também pode resultar rejeitado ou ficar pendente. Tenha em conta que os valores
 >
 > A reserva terá validade de 5 dias. Se não capturá-la nesse período, será cancelada. Além disso, é necessário guardar o ID do pagamento para poder finalizar o processo.
 ------------
+
+> PREV_STEP_CARD_PT
+>
+> Capturar pagamento autorizado
+>
+> Conheça as formas disponíveis para captura de um pagamento autorizado.
+>
+> [Capturar pagamento autorizado](/developers/pt/docs/checkout-api/payment-management/make-value-reserve)
