@@ -32,23 +32,6 @@ bullet_section_with_media:
 ---
 
 --- mini_landing_separator ---
-
->>>> Diferenças entre Checkout Pro e Checkout Transparente <<<<
-
-|  Benefícios  | Checkout Pro  | Checkout Transparente  |
-| --- | --- | --- |
-| Maior facilidade de integração  | *  |   |
-| Maior customização da integração  |   | *  |
-| Conversão otimizada  | *  |   |
-| Aprovação otimizada  | *  |   |
-| Usuários não cadastrados  | *  | *  |
-| Usuários cadastrados  | *  |   |
-| Prevenção de fraude  | *  | *  |
-| Tela de finalização de pagamento  | *  |   |
-| Pagamento com dois cartões  | *  |   |
-
-
---- mini_landing_separator ---
 >>>> Meios de pagamento aceitos <<<<
 ---
 available_payments: credit, debit, mercadopago, ticket
