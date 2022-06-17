@@ -13,8 +13,8 @@ A integração com checkout transparente pode ser feita utilizando procedimentos
 | Tipo de integração  | Meios de pagamento  | Complexidade a nível frontend  | Conversão otimizada  | User interface (UI)  | Conformidade PCI   |
 | --- | --- | --- | --- | --- | --- |
 | [Checkout Bricks](/developers/pt/docs/checkout-bricks/landing)  | Débito e Crédito  | Fácil  | Sim  | Componentes com UI já definida e que pode ser personalizada caso necessário.  | PCI SAQ A  |
-| [Cardform](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform)  | Todos os meios disponível  | Médio  | Não  | Formulário sem estilizações para começar as configurações do zero.  | Elegível a PCI SAQ A com Secure Fields  |
-|  [Métodos Core](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-core-methods)  | Todos os meios disponível  | Alto  | Não  | Crie seu formulário e suas estilizações  | Elegível a PCI SAQ A com Secure Fields  |
+| [Cardform](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform)  | Todos os meios disponíveis  | Médio  | Não  | Formulário sem estilizações para começar as configurações do zero.  | Elegível a PCI SAQ A com Secure Fields  |
+|  [Métodos Core](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-core-methods)  | Todos os meios disponíveis  | Alto  | Não  | Crie seu formulário e suas estilizações  | Elegível a PCI SAQ A com Secure Fields  |
 
 
 
