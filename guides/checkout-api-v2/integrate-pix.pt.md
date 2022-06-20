@@ -398,6 +398,13 @@ Selecione a opção que mais se adéqua ao seu modelo de negócio e siga as etap
 
 Para oferecer esta opção, utilize o atributo "ticket_url", que mostra um Pix em uma nova janela com todas as informações de QR Code, Pix Copia e Cola e instruções de pagamentos. 
 
+[[[
+```html
+
+<a href="https://www.mercadopago.com.br/payments/123456789/ticket?caller_id=123456&hash=123e4567-e89b-12d3-a456-426655440000" target="_blank">Pagar com Pix</a>
+
+]]]
+
 
 * **Renderizar código QR**: É possível renderizar o código QR vigente, que deverá ser utilizado somente uma vez, na própria tela. Além disso, também é possível adicionar uma opção para copiar e colar o código de pagamento, o que permitirá realizar a transação a partir de um Internet Banking.
 

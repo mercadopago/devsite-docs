@@ -123,7 +123,7 @@ Ao finalizar a inicialização dos campos, as divs conterão os iframes com os i
 ]]]
 
 
-### Obter tipos de documento
+## Obter tipos de documento
 
 Após configurar a credencial, adicionar o formulário de pagamento e inicializar os campos de cartão, é preciso obter os tipos de documento que farão parte do preenchimento do formulário para pagamento.
 
@@ -281,7 +281,7 @@ O banco emissor é obtido através do parâmetro `issuer_id`. Para obtê-lo, uti
 
 
 
-### Obter quantidade de parcelas
+## Obter quantidade de parcelas
 
 Um dos campos obrigatórios que compõem o formulário de pagamento é a **quantidade de parcelas**. Para ativá-lo e exibir as parcelas disponíveis no ato do pagamento, utilize a função abaixo. 
 
@@ -308,7 +308,7 @@ Um dos campos obrigatórios que compõem o formulário de pagamento é a **quant
 
 
 
-### Criar token do cartão
+## Criar token do cartão
 
 O token do cartão é criado a partir das próprias informações do cartão, aumentando a segurança durante o fluxo de pagamento. Além disso, uma vez que o token é utilizado em determinada compra, ele é descartado, sendo necessário a criação de um novo para futuras compras. Para criar o token do cartão, utilize a função abaixo.
 
@@ -435,32 +435,31 @@ mercadopago.payment.save(payment_data)
 ```
 ```java
 ===
-Encontre o status do pagamento no campo _status_.
+Encontre o estado do pagamento no campo _status_.
 ===
 
-MercadoPago.SDK.setAccessToken("YOUR_ACCESS_TOKEN");
+PaymentClient client = new PaymentClient();
 
-Payment payment = new Payment();
-payment.setTransactionAmount(Float.valueOf(request.getParameter("transactionAmount")))
-       .setToken(request.getParameter("token"))
-       .setDescription(request.getParameter("description"))
-       .setInstallments(Integer.valueOf(request.getParameter("installments")))
-       .setPaymentMethodId(request.getParameter("paymentMethodId"));
+PaymentCreateRequest paymentCreateRequest =
+   PaymentCreateRequest.builder()
+       .transactionAmount(request.getTransactionAmount())
+       .token(request.getToken())
+       .description(request.getDescription())
+       .installments(request.getInstallments())
+       .paymentMethodId(request.getPaymentMethodId())
+       .payer(
+           PaymentPayerRequest.builder()
+               .email(request.getPayer().getEmail())
+               .firstName(request.getPayer().getFirstName())
+               .identification(
+                   IdentificationRequest.builder()
+                       .type(request.getPayer().getIdentification().getType())
+                       .number(request.getPayer().getIdentification().getNumber())
+                       .build())
+               .build())
+       .build();
 
-Identification identification = new Identification();----[mla, mlb, mlu, mlc, mpe, mco]----
-identification.setType(request.getParameter("identificationType"))
-              .setNumber(request.getParameter("identificationNumber"));------------ ----[mlm]----
-identification.setNumber(request.getParameter("identificationNumber"));------------
-
-Payer payer = new Payer();
-payer.setEmail(request.getParameter("email"))
-     .setIdentification(identification);
-     
-payment.setPayer(payer);
-
-payment.save();
-
-System.out.println(payment.getStatus());
+client.create(paymentCreateRequest);
 
 ```
 ```ruby

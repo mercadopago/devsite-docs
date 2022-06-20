@@ -278,31 +278,30 @@ mercadopago.payment.save(req.body)
 ===
 Encontre o estado do pagamento no campo _status_.
 ===
- 
-MercadoPago.SDK.setAccessToken("YOUR_ACCESS_TOKEN");
- 
-Payment payment = new Payment();
-payment.setTransactionAmount(Float.valueOf(request.getParameter("transactionAmount")))
-      .setToken(request.getParameter("token"))
-      .setDescription(request.getParameter("description"))
-      .setInstallments(Integer.valueOf(request.getParameter("installments")))
-      .setPaymentMethodId(request.getParameter("paymentMethodId"));
- 
-Identification identification = new Identification();----[mla, mlb, mlu, mlc, mpe, mco]----
-identification.setType(request.getParameter("identificationType"))
-             .setNumber(request.getParameter("identificationNumber"));------------ ----[mlm]----
-identification.setNumber(request.getParameter("identificationNumber"));------------
- 
-Payer payer = new Payer();
-payer.setEmail(request.getParameter("email"))
-    .setIdentification(identification);
-   
-payment.setPayer(payer);
- 
-payment.save();
- 
-System.out.println(payment.getStatus());
- 
+
+PaymentClient client = new PaymentClient();
+
+PaymentCreateRequest paymentCreateRequest =
+   PaymentCreateRequest.builder()
+       .transactionAmount(request.getTransactionAmount())
+       .token(request.getToken())
+       .description(request.getDescription())
+       .installments(request.getInstallments())
+       .paymentMethodId(request.getPaymentMethodId())
+       .payer(
+           PaymentPayerRequest.builder()
+               .email(request.getPayer().getEmail())
+               .firstName(request.getPayer().getFirstName())
+               .identification(
+                   IdentificationRequest.builder()
+                       .type(request.getPayer().getIdentification().getType())
+                       .number(request.getPayer().getIdentification().getNumber())
+                       .build())
+               .build())
+       .build();
+
+client.create(paymentCreateRequest);
+
 ```
 ```ruby
 ===
@@ -444,9 +443,9 @@ A resposta trará o seguinte resultado
 
 Nos links abaixo você encontra exemplos de códigos completos da integração.
 
-- Java
-- Node.js
-- PHP
+- [Java](https://github.com/mercadopago/card-payment-sample-java)
+- [Node.js](https://github.com/mercadopago/card-payment-sample-node)
+- [PHP](https://github.com/mercadopago/card-payment-sample-php)
 
 
 > PREV_STEP_CARD_PT
@@ -460,8 +459,8 @@ Nos links abaixo você encontra exemplos de códigos completos da integração.
 
 > NEXT_STEP_CARD_PT
 >
-> Teste de integração
+> Outros meios de pagamento
 >
-> Saiba como testar a integração do Checkout Transparente em sua loja.
+> Conheça as outras opções de pagamento disponíveis para integração.
 >
-> [Teste de integração](/developers/pt/docs/checkout-api/integration-test/create-test-user)
+> [Outros meios de pagamento](/developers/pt/docs/checkout-api/integration-configuration/other-payment-methods)

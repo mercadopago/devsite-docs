@@ -21,6 +21,7 @@ bullet_section_with_media:
  - benefit_title: Facilidade de customização e integração
  - benefit_message: Gerencie todo o processo de coleta de dados no frontend onde o comprador realiza a solicitação de pagamento.
  - benefit_title: Comunicação personalizada
+ - image: /checkout-bricks/cho-bricks-landing-v4.png
  - benefit_message: Comunicação direta com clientes através das mensagens de erro com respostas personalizadas.
  - benefit_title: Otimização do processo de pagamento
  - benefit_message: Salve os cartões usados pelos clientes para pagamentos futuros e aumente as chances de venda.
@@ -28,11 +29,10 @@ bullet_section_with_media:
  - benefit_message: É possível oferecer todos os meios de pagamento disponíveis ou apenas os que achar necessário.
  - benefit_title: Segurança em cada transação
  - benefit_message: Elegível a processo de PCI SAQ A.
- - image: /checkout-bricks/cho-bricks-landing-v4.png
 ---
 
 --- mini_landing_separator ---
 >>>> Meios de pagamento aceitos <<<<
 ---
-available_payments: credit, debit, mercadopago, ticket
+available_payments: credit, debit, mercadopago, ticket, pix, pec
 ---
