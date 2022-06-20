@@ -45,7 +45,7 @@ available_countries: mla, mlb, mlm, mlu, mco, mlc, mpe
 bullet_section_with_media:
  - title: Vantagens
  - type: reversed
- - message: Possibilidade de ativação do modo binário, um recurso que permite configurar a aprovação ou a recusa automática de pagamentos. Além disso, os usuários também poderão pagar na sua loja sem estarem obrigatoriamente cadastrados no Mercado Pago.
+ - message: Possibilidade de ativação do modo binário, um recurso que permite configurar a recusa automática de pagamentos que não são aprovados instantaneamente por bancos ou outros adquirentes. Além disso, os usuários também poderão pagar na sua loja sem estarem obrigatoriamente cadastrados no Mercado Pago. 
  - image: /prestashop/prestashop-benefit.png
 ---
  
