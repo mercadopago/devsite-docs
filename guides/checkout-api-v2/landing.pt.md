@@ -31,8 +31,18 @@ bullet_section_with_media:
  - benefit_message: Elegível a processo de PCI SAQ A.
 ---
 
+----[mlb]----
 --- mini_landing_separator ---
 >>>> Meios de pagamento aceitos <<<<
 ---
 available_payments: credit, debit, mercadopago, ticket, pix, pec
 ---
+------------
+
+----[mla, mlm, mpe, mco, mlu, mlc]----
+--- mini_landing_separator ---
+>>>> Meios de pagamento aceitos <<<<
+---
+available_payments: credit, debit, mercadopago, ticket
+---
+------------
