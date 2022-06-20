@@ -402,7 +402,7 @@ Para oferecer esta opção, utilize o atributo "ticket_url", que mostra um Pix e
 ```html
 
 <a href="https://www.mercadopago.com.br/payments/123456789/ticket?caller_id=123456&hash=123e4567-e89b-12d3-a456-426655440000" target="_blank">Pagar com Pix</a>
-
+```
 ]]]
 
 
