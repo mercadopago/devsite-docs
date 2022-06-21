@@ -110,8 +110,16 @@ A resposta trará o seguinte resultado
 ```
 ]]]
 
-
 > PREV_STEP_CARD_PT
+>
+> Capturar pagamento autorizado
+>
+> Conheça as formas disponíveis para captura de um pagamento autorizado.
+>
+> [Capturar pagamento autorizado](/developers/pt/docs/checkout-api/payment-management/capture-authorized-payment)
+
+
+> NEXT_STEP_CARD_PT
 >
 > Alterar data de vencimento
 >
@@ -119,10 +127,3 @@ A resposta trará o seguinte resultado
 >
 > [Alterar data de vencimento](/developers/pt/docs/checkout-api/payment-management/modify-expiration-date)
 
-> NEXT_STEP_CARD_PT
->
-> Capturar pagamento autorizado
->
-> Conheça as formas disponíveis para captura de um pagamento autorizado.
->
-> [Capturar pagamento autorizado](/developers/pt/docs/checkout-api/payment-management/capture-authorized-payment)

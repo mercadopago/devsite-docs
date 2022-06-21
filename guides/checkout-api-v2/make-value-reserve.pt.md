@@ -211,10 +211,10 @@ Além disso, também é possível retornar como rejeitado ou pendente. Tenha em 
 > A reserva terá validade de 5 dias. Se não capturá-la nesse período, será cancelada. Além disso, é necessário guardar o ID do pagamento para poder finalizar o processo.
 ------------
 
-> PREV_STEP_CARD_PT
+> NEXT_STEP_CARD_PT
 >
 > Capturar pagamento autorizado
 >
 > Conheça as formas disponíveis para captura de um pagamento autorizado.
 >
-> [Capturar pagamento autorizado](/developers/pt/docs/checkout-api/payment-management/make-value-reserve)
+> [Capturar pagamento autorizado](/developers/pt/docs/checkout-api/payment-management/capture-authorized-payment)

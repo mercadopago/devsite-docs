@@ -4,7 +4,10 @@ Ao utilizar o Checkout Transparente para processar os pagamentos da sua loja, é
 
 Nesta seção você encontra as principais formas de gerenciamento dos pagamentos recebidos.
 
-- [Alterar data de vencimento](/developers/pt/docs/checkout-api/payment-management/modify-expiration-date)
-- [Cancelar reserva](/developers/pt/docs/checkout-api/payment-management/cancel-reserve)
-- [Capturar pagamento autorizado](/developers/pt/docs/checkout-api/payment-management/capture-authorized-payment)
 - [Reservar valores](/developers/pt/docs/checkout-api/payment-management/make-value-reserve)
+- [Capturar pagamento autorizado](/developers/pt/docs/checkout-api/payment-management/capture-authorized-payment)
+- [Cancelar reserva](/developers/pt/docs/checkout-api/payment-management/cancel-reserve)
+- [Alterar data de vencimento](/developers/pt/docs/checkout-api/payment-management/modify-expiration-date)
+
+
+

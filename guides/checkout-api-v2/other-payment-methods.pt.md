@@ -136,53 +136,41 @@ Com a biblioteca MercadoPago.js incluída, adicione o formulário de pagamento a
 [[[
 ```html
 
-<form action="/process_payment" method="post" id="paymentForm">
-    <h3>Forma de Pagamento</h3>
+  <form id="form-checkout" action="/process_payment" method="post">
     <div>
-      <select class="form-control" id="paymentMethod" name="paymentMethod">
-        <option>Selecione uma forma de pagamento</option>
-
-        <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
-        <option value="--PaymentId--">--PaymentTypeName--</option>
-      </select>
-    </div>
-    <h3>Detalhe do comprador</h3>
-    <div>
-    <div>
+      <div>
         <label for="payerFirstName">Nome</label>
-        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome">
+        <input id="form-checkout__payerFirstName" name="payerFirstName" type="text">
       </div>
       <div>
         <label for="payerLastName">Sobrenome</label>
-        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome">
+        <input id="form-checkout__payerLastName" name="payerLastName" type="text">
       </div>
       <div>
-        <label for="payerEmail">E-mail</label>
-        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com">
+        <label for="email">E-mail</label>
+        <input id="form-checkout__email" name="email" type="text">
       </div>
       <div>
-        <label for="docType">Tipo de documento</label>
-        <select id="docType" name="docType" data-checkout="docType" type="text"></select>
+        <label for="identificationType">Tipo de documento</label>
+        <select id="form-checkout__identificationType" name="identificationType" type="text"></select>
       </div>
       <div>
-        <label for="docNumber">Número do documento</label>
-        <input id="docNumber" name="docNumber" data-checkout="docNumber" type="text">
+        <label for="identificationNumber">Número do documento</label>
+        <input id="form-checkout__identificationNumber" name="identificationNumber" type="text">
       </div>
     </div>
 
     <div>
       <div>
         <input type="hidden" name="transactionAmount" id="transactionAmount" value="100">
-        <input type="hidden" name="productDescription" id="productDescription" value="Nome do Produto">
+        <input type="hidden" name="description" id="description" value="Nome do Produto">
         <br>
         <button type="submit">Pagar</button>
-        <br>
       </div>
-  </div>
-</form>
+    </div>
+  </form>
 ```
 ]]]
-
 
 
 ## Configurar credencial
@@ -210,38 +198,37 @@ Incluindo o elemento do tipo `select` com o id: `id = docType` que está no form
 [[[
 ```javascript
 
-function createSelectOptions(elem, options, labelsAndKeys = { label : "name", value : "id"}){
-   const {label, value} = labelsAndKeys;
+    (async function getIdentificationTypes() {
+      try {
+        const identificationTypes = await mp.getIdentificationTypes();
+        const identificationTypeElement = document.getElementById('form-checkout__identificationType');
 
-   elem.options.length = 0;
+        createSelectOptions(identificationTypeElement, identificationTypes);
+      } catch (e) {
+        return console.error('Error getting identificationTypes: ', e);
+      }
+    })();
 
-   const tempOptions = document.createDocumentFragment();
+    function createSelectOptions(elem, options, labelsAndKeys = { label: "name", value: "id" }) {
+      const { label, value } = labelsAndKeys;
 
-   options.forEach( option => {
-       const optValue = option[value];
-       const optLabel = option[label];
+      elem.options.length = 0;
 
-       const opt = document.createElement('option');
-       opt.value = optValue;
-       opt.textContent = optLabel;
+      const tempOptions = document.createDocumentFragment();
 
-       tempOptions.appendChild(opt);
-   });
+      options.forEach(option => {
+        const optValue = option[value];
+        const optLabel = option[label];
 
-   elem.appendChild(tempOptions);
-}
+        const opt = document.createElement('option');
+        opt.value = optValue;
+        opt.textContent = optLabel;
 
-// Get Identification Types
-(async function getIdentificationTypes () {
-   try {
-       const identificationTypes = await mp.getIdentificationTypes();
-       const docTypeElement = document.getElementById('docType');
+        tempOptions.appendChild(opt);
+      });
 
-       createSelectOptions(docTypeElement, identificationTypes)
-   }catch(e) {
-       return console.error('Error getting identificationTypes: ', e);
-   }
-})()
+      elem.appendChild(tempOptions);
+    }
 ```
 ]]]
 

@@ -234,18 +234,20 @@ A resposta trará o seguinte resultado
 >
 > Não é possível capturar um valor superior ao reservado, para isso é preciso cancelar a reserva e gerar uma nova.
 
-> PREV_STEP_CARD_PT
->
-> Cancelar reserva
->
-> Conheça as etapas necessárias para cancelar uma reserva de valores.
->
-> [Cancelar reserva](/developers/pt/docs/checkout-api/payment-management/cancel-reserve)
 
-> NEXT_STEP_CARD_PT
+> PREV_STEP_CARD_PT
 >
 > Reservar valores
 >
 > Saiba mais sobre como funciona a reserva de valores para um pagamento.
 >
 > [Reservar valores](/developers/pt/docs/checkout-api/payment-management/make-value-reserve)
+
+
+> NEXT_STEP_CARD_PT
+>
+> Cancelar reserva
+>
+> Conheça as etapas necessárias para cancelar uma reserva de valores.
+>
+> [Cancelar reserva](/developers/pt/docs/checkout-api/payment-management/cancel-reserve)

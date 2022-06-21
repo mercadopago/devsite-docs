@@ -9,7 +9,7 @@ Na tabela abaixo descrevemos todos os atributos que podem ser modificados, e par
 >
 > Importante
 >
-> Caso você não tenha o `customer_id`, siga os passos descritos na seção Buscar clientes para obter a informação. Além disso, o campo `email` só pode ser atualizado se o cliente ainda não tiver um e-mail associado.
+> Caso você não tenha o `customer_id`, siga os passos descritos na seção [Buscar clientes](/developers/pt/docs/checkout-api/customer-management/search-customers) para obter a informação. Além disso, o campo `email` só pode ser atualizado se o cliente ainda não tiver um e-mail associado.
 
 
 | Atributo  | Descrição  |
@@ -240,6 +240,47 @@ curl -X PUT \
 
 ```
 ]]]
+
+Exemplo de resposta com o envio do `customer_id`:
+
+```json
+{
+  "id": "xxxxxxxxxxxxxxxxxxxxx",
+  "email": "user@user.com",
+  "first_name": "john",
+  "last_name": "wagner",
+  "phone": {
+    "area_code": "[FAKER][PHONE_NUMBER][AREA_CODE]",
+    "number": 001234567
+  },
+  "identification": {
+    "type": "[FAKER][IDENTIFICATION][TYPE]",
+    "number": 12341234
+  },
+  "address": {
+    "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
+    "street_name": "[FAKER][ADDRESS][STREET_NAME]",
+    "street_number": 2
+  },
+  "description": "Informações do cliente",
+  "date_created": "2021-05-25T15:36:23.541Z",
+  "metadata": {},
+  "cards": [
+    {}
+  ],
+  "addresses": [
+    {}
+  ]
+}
+```
+Exemplo de resposta sem o parâmetro `customer_id`:
+
+```json
+{
+  "message": "missing customer id"
+}
+```
+
 
 > PREV_STEP_CARD_PT
 >

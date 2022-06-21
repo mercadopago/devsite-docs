@@ -441,12 +441,20 @@ A resposta trará o seguinte resultado
 
 ## Exemplo de código
 
-Nos links abaixo você encontra exemplos de códigos completos da integração.
-
-- [Java](https://github.com/mercadopago/card-payment-sample-java)
-- [Node.js](https://github.com/mercadopago/card-payment-sample-node)
-- [PHP](https://github.com/mercadopago/card-payment-sample-php)
-
+----[mlb]----
+> GIT
+>
+> Checkout Transparente
+>
+> Para exemplos completos de código, confira os [exemplos de integração](http://github.com/mercadopago/card-payment-sample/tree/1.0.0) disponíveis no GitHub.
+------------
+----[mla, mlm, mpe, mco, mlu, mlc]----
+> GIT
+>
+> Checkout API
+>
+> Para exemplos completos de código, confira os [exemplos de integração](http://github.com/mercadopago/card-payment-sample/tree/1.0.0) disponíveis no GitHub.
+------------
 
 > PREV_STEP_CARD_PT
 >
