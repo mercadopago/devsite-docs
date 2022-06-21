@@ -243,18 +243,16 @@ Ao finalizar a inclusão do formulário de pagamento e obter os tipos de documen
 Para configurar pagamentos com **boleto bancário** ou **pagamento em lotérica**, envie um POST com os seguintes parâmetros ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, utilize um de nossos SDKs abaixo.
 
 
-| Tipo de pagamento  | Parâmetro  | Valor  |
-| --- | --- | --- |
-| Boleto  | `payment_method_id`  | `bolbradesco`  |
-| Pagamento em lotérica  | `payment_method_id`  | `PEC`  |
-
-
-
 > WARNING
 >
 > Importante
 >
 > Para esta etapa, ao realizar a requisição via API ou SDKs, é necessário enviar sua Chave Privada - Access token.
+
+| Tipo de pagamento  | Parâmetro  | Valor  |
+| --- | --- | --- |
+| Boleto  | `payment_method_id`  | `bolbradesco`  |
+| Pagamento em lotérica  | `payment_method_id`  | `PEC`  |
 
 [[[
 ```php
@@ -504,8 +502,8 @@ A resposta mostrará o **status pendente** até que o comprador realize o pagame
 
 Além das configurações básicas de pagamento com boleto bancário, é possível alterar a data de vencimento do boleto e fazer o cancelamento do pagamento. Para isso, acesse as seções abaixo.
 
-[Alterar data de vencimento](/developers/pt/docs/checkout-api/payment-management/modify-expiration-date)
-Reembolsos e cancelamentos(/developers/pt/docs/checkout-api/additional-content/cancellations-and-refunds).
+* [Alterar data de vencimento](/developers/pt/docs/checkout-api/payment-management/modify-expiration-date)
+* [Reembolsos e cancelamentos](/developers/pt/docs/checkout-api/additional-content/cancellations-and-refunds)
 
 ------------
 
