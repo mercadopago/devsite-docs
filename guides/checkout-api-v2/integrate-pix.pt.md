@@ -387,7 +387,7 @@ Por padrão, a data de vencimento para pagamentos com Pix é de **24 horas**, ma
 Para alterar a data de vencimento do pagamento via Pix, veja a seção [Alterar data de vencimento](/developers/pt/docs/checkout-api/payment-management/modify-expiration-date)
 
 
-## Abertura do pagamento
+## Visualização de pagamento
 
 Para o usuário efetuar o pagamento, você deve escolher a forma de abertura do mesmo, que pode ser através de um botão ou de um código QR que deve ser renderizado. 
 
