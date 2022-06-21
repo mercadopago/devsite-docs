@@ -642,6 +642,26 @@ curl -X POST \
 
 A resposta mostrará o **status pendente** até que o comprador realize o pagamento. Além disso, na resposta à requisição, o parâmetro `external_resource_url` retornará uma URL que contém as instruções para que o comprador realize o pagamento. Você pode redirecioná-lo para este mesmo link para conclusão do fluxo de pagamento.
 
+```json
+[
+ {
+    ...,
+    "id": 5466310457,
+    "status": "pending",
+    "status_detail": "pending_waiting_payment",
+    ...,
+    "transaction_details": {
+        "net_received_amount": 0,
+        "total_paid_amount": 100,
+        "overpaid_amount": 0,
+        "external_resource_url": "https://www.mercadopago.com/mla/payments/ticket/helper?payment_id=123456789&payment_method_reference_id= 123456789&caller_id=123456",
+        "installment_amount": 0,
+        "financial_institution": null,
+        "payment_method_reference_id": "1234567890"
+    }
+ }
+]
+```
 
 Além das configurações básicas de pagamento com dinheiro, é possível alterar a data de vencimento e fazer o cancelamento do pagamento. Para isso, acesse as seções abaixo.
 
@@ -783,6 +803,29 @@ curl -X POST \
 ]]]
 
 A resposta mostrará o **status pendente** até que o comprador realize o pagamento. Além disso, na resposta à requisição, o parâmetro `external_resource_url` retornará uma URL que contém as instruções para que o comprador realize o pagamento. Você pode redirecioná-lo para este mesmo link para conclusão do fluxo de pagamento.
+
+```json
+[
+ {
+    ...,
+    "id": 5466310457,
+    "status": "pending",
+    "status_detail": "pending_waiting_payment",
+    ...,
+    "transaction_details": {
+        "payment_method_reference_id": "24304329",
+        "verification_code": "882430432923032000100001",
+        "net_received_amount": 0,
+        "total_paid_amount": 100,
+        "overpaid_amount": 0,
+        "external_resource_url": "https://www.mercadopago.com/mlm/payments/sandbox/ticket/helper?payment_id=1234&payment_method_reference_id=12345678&caller_id=1234&hash=aaaaaa-bbb-cccc-dddd-eeeeeeee",
+        "installment_amount": 0,
+        "financial_institution": "",
+        "payable_deferral_period": null,
+    }
+  }
+]
+```
 
 
 ## Cancelar pagamento
@@ -952,6 +995,37 @@ curl -X POST \
 
 A resposta mostrará o **status pendente** até que o comprador realize o pagamento. Além disso, na resposta à requisição, o parâmetro `external_resource_url` retornará uma URL que contém as instruções para que o comprador realize o pagamento. Você pode redirecioná-lo para este mesmo link para conclusão do fluxo de pagamento.
 
+```json
+[
+  {
+    ...,
+    "id": 5466310457,
+    "status": "pending",
+    "status_detail": "pending_waiting_payment",
+    ...,
+
+    "order": {},
+    "external_reference": null,
+    "transaction_amount": 100,
+    "transaction_amount_refunded": 0,
+    "coupon_amount": 0,
+    "differential_pricing_id": null,
+    "deduction_schema": null,
+    "transaction_details": {
+        "payment_method_reference_id": "123457986",
+        "verification_code": "24308767",
+        "net_received_amount": 0,
+        "total_paid_amount": 100,
+        "overpaid_amount": 0,
+        "external_resource_url": "https://www.mercadopago.com/mpe/payments/sandbox/atm/helper?payment_id=24308766&payment_method_reference_id=24308767&caller_id=537490079&hash=c96a61b0-10f4-40f6-afff-82fc0f0923da",
+        "installment_amount": 0,
+        "financial_institution": "PagoEfectivo",
+        "payable_deferral_period": null,
+        "acquirer_reference": null
+    }
+  }
+]
+```
 
 ## Cancelar pagamento
 
@@ -1098,6 +1172,29 @@ curl -X POST \
 
 A resposta mostrará o **status pendente** até que o comprador realize o pagamento. Além disso, na resposta à requisição, o parâmetro `external_resource_url` retornará uma URL que contém as instruções para que o comprador realize o pagamento. Você pode redirecioná-lo para este mesmo link para conclusão do fluxo de pagamento.
 
+```json
+[
+ {
+    ...,
+    "id": 5466310457,
+    "status": "pending",
+    "status_detail": "pending_waiting_payment",
+    ...,
+    "transaction_details": {
+        "payment_method_reference_id": "24308386",
+        "verification_code": "24308386",
+        "net_received_amount": 0,
+        "total_paid_amount": 5000,
+        "overpaid_amount": 0,
+        "external_resource_url": "https://www.mercadopago.com/mco/payments/sandbox/ticket/helper?payment_id=1234&payment_method_reference_id=12345678&caller_id=1234&hash=aaaaaa-bbb-cccc-dddd-eeeeeeee",
+        "installment_amount": 0,
+        "financial_institution": "",
+        "payable_deferral_period": null,
+        "acquirer_reference": null
+   }
+  }
+]
+```
 
 Além das configurações básicas para pagamento com dinheiro, é possível alterar a data de vencimento e fazer o cancelamento do pagamento. Para isso, acesse as seções abaixo.
 
@@ -1244,6 +1341,30 @@ curl -X POST \
 ]]]
 
 A resposta mostrará o **status pendente** até que o comprador realize o pagamento. Além disso, na resposta à requisição, o parâmetro `external_resource_url` retornará uma URL que contém as instruções para que o comprador realize o pagamento. Você pode redirecioná-lo para este mesmo link para conclusão do fluxo de pagamento.
+
+```json
+[
+ {
+    ...,
+    "id": 5466310457,
+    "status": "pending",
+    "status_detail": "pending_waiting_payment",
+    ...,
+   "transaction_details": {
+        "payment_method_reference_id": "24308188",
+        "verification_code": "24308188",
+        "net_received_amount": 0,
+        "total_paid_amount": 100,
+        "overpaid_amount": 0,
+        "external_resource_url": "https://www.mercadopago.com/mlu/payments/sandbox/ticket/helper?payment_id=1234&payment_method_reference_id=12345678&caller_id=1234&hash=aaaaaa-bbb-cccc-dddd-eeeeeeee",
+        "installment_amount": 0,
+        "financial_institution": "",
+        "payable_deferral_period": null,
+        "acquirer_reference": null
+   }
+  }
+]
+```
 
 
 ## Cancelar pagamento
