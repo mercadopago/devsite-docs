@@ -2,7 +2,7 @@
  
 Feita a configuração das credenciais e das notificações de pagamento, configure as informações de negócio da sua loja. Para isso, siga os passos abaixo.
 
-1. Vá para o menu Stores > Configuration > Sales > Payment Methods.
+1. Vá para o menu **Stores > Configuration > Sales > Payment Methods**.
 2. Em seguida, acesse a seção **Mercado Pago > Advanced**. Lá você encontrará os campos para preenchimento de acordo com suas informações de negócio.
 3. No campo **Category of your store**, selecione a **categoria da sua loja**.
 4. Em **Use Mercado Pago Success Pago**, indique se será habilitada ou não a página de sucesso do Mercado Pago após a realização das vendas. Esta página está preparada para exibir mensagens para cada status de pagamento.
