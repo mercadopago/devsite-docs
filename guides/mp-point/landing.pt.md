@@ -28,8 +28,7 @@ bullet_section_with_media:
 ---
 
 --- mini_landing_separator ---
->>>> Dispositivos disponíveis <<<<
 
-| | | |
-| --- | --- | --- |
-| ![Point Mini](/point-api/point-mini.png) | ![Point Plus](/point-api/point-plus.png) | ![Point Smart](/point-api/point-smart.png) |
+>>>> Dispositivos disponíveis<<<<
+
+![Dispositivos disponíveis](/point-api/point-available.png)
