@@ -7,7 +7,7 @@ content_section_with_media:
 
 --- mini_landing_separator ---
 
->>>> Availability by country <<<<
+>>>> Disponibilidade por país<<<<
 ---
 available_countries: mla, mlb, mlm
 ---
@@ -24,5 +24,12 @@ bullet_section_with_media:
  - benefit_message: Você compra a maquininha e não precisa arcar com aluguel ou taxa de adesão.
  - benefit_title: Maior controle financeiro
  - benefit_message: Acesso a uma conta digital, cartão Mercado Pago e obtém vantagens com o Mercado Pontos.
+ - image: /images/point-api/point-landing2.png
 ---
 
+--- mini_landing_separator ---
+>>>> Dispositivos disponíveis <<<<
+
+| | | |
+| --- | --- | --- |
+| ![Point Mini](/point-api/point-mini.png) | ![Point Plus](/point-api/point-plus.png) | ![Point Smart](/point-api/point-smart.png) |
