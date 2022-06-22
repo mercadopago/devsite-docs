@@ -11,4 +11,20 @@ Para ofrecer pagos con Puntos, es importante cumplir con los requisitos que se m
 
 Si todos se han cumplido los requisitos, siga los pasos a continuación para integrarse con Point.
 
+> PREV_STEP_CARD_ES
+>
+> Página de início
+>
+> Volver a la página de inicio de documentación del Punto Mercado Pago
+>
+> [Introducción](/developers/es/docs/mp-point/landing)
+
+
+> NEXT_STEP_CARD_ES
+>
+> Tipos de integración
+>
+> Descubre los tipos de integración disponibles para Mercado Pago Point.
+>
+> [Tipos de integración](/developers/es/docs/mp-point/types-of-integration)
 

@@ -26,13 +26,3 @@ bullet_section_with_media:
  - benefit_message: Acesso a uma conta digital, cartão Mercado Pago e obtém vantagens com o Mercado Pontos.
 ---
 
---- mini_landing_separator ---
->>>> Dispositivos disponíveis <<<<
----
-
-| Dispositivos |
-| --- | --- | --- |
-| ![Point Mini](/point-api/point-mini.png) <br>Point Mini</br> | ![Point Plus](/point-api/point-plus.png) <br>Point Plus</br> | ![Smart](/point-api/point-smart.png) <br>Smart</br> | 
-
-
----

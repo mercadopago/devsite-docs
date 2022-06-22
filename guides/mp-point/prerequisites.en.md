@@ -10,3 +10,20 @@ To offer payments with Point, it is important to meet the requirements shown bel
 | Application | Applications are the different integrations contained in one or more stores. You can create an application for each solution you implement, in order to have everything organized and maintain control that makes management easier. See [Dashboard](/developers/en/docs/mp-point/additional-content/dashboard/introduction) for more information on creating an application. |
 
 If all requirements have been met, follow the steps below to perform the integration with Point.
+
+> PREV_STEP_CARD_EN
+>
+> Home page
+>
+> Return to the Mercado Pago Pointgo Point documentation home page
+>
+> [Introduction](/developers/en/docs/mp-point/landing)
+
+
+> NEXT_STEP_CARD_EN
+>
+> Types of integration
+>
+> Check the types of integration available for Mercado Pago Point
+>
+> [Types of integration](/developers/en/docs/mp-point/types-of-integration)

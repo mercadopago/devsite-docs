@@ -33,3 +33,20 @@ Los parámetros que se pueden incluir son:
 
 
 En el artículo de [GitHub](https://github.com/mercadopago/point-android_integration#deep-linking) podes obtener más información y el ejemplo correspondiente.
+
+> PREV_STEP_CARD_ES
+>
+> Integrar con PDV
+>
+> Conoce cómo integrar Mercado Pago Point en tu Punto de Venta.
+>
+> [Integrar con PDV](/developers/es/docs/mp-point/integration-configuration/integrate-with-pdv/introduction)
+
+
+> NEXT_STEP_CARD_ES
+>
+> Integrar vía API
+>
+> Conoce los pasos para integrar Punto Mercado Pago vía API.
+>
+> [Integrar vía API](/developers/es/docs/mp-point/integration-configuration/integrate-mobile-devices/integrate-via-api)
