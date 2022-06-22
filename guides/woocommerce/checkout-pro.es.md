@@ -19,6 +19,14 @@ Para guardar los cambios en la configuración, haz clic en el botón **Guardar c
 > [Configura los medios de pago](/developers/es/docs/woocommerce/payments-methods-configuration)
 
 ----[mla,mlc,mco,mlm,mlu,mpe]----
+> PREV_STEP_CARD_ES
+>
+> Configura los medios de pago
+>
+> Conoce cómo configurar los distintos medios de pago en la tienda.
+>
+> [Configura los medios de pago](/developers/es/docs/woocommerce/payments-methods-configuration)
+
 > NEXT_STEP_CARD_ES
 >
 > Débito o crédito
@@ -27,7 +35,16 @@ Para guardar los cambios en la configuración, haz clic en el botón **Guardar c
 >
 > [Débito o crédito con Checkout API](/developers/es/docs/woocommerce/payments-configuration/credit-debit)
 ------------
+
 ----[mlb]----
+> PREV_STEP_CARD_ES
+>
+> Configura los medios de pago
+>
+> Conoce cómo configurar los distintos medios de pago en la tienda.
+>
+> [Configura los medios de pago](/developers/es/docs/woocommerce/payments-methods-configuration)
+
 > NEXT_STEP_CARD_ES
 >
 > Débito o crédito

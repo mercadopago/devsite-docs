@@ -18,18 +18,7 @@ Para guardar los cambios en la configuración, haz clic en el botón **Guardar c
 > Configura pagos con débito o crédito con Checkout API
 >
 > [Débito o crédito con Checkout API](/developers/es/docs/woocommerce/payments-configuration/credit-debit)
-------------
-----[mlb]----
-> PREV_STEP_CARD_ES
->
-> Débito o crédito
->
-> Configura pagos con débito o crédito con Checkout Transparente
->
-> [Débito o crédito con Checkout Transparente](/developers/es/docs/woocommerce/payments-configuration/credit-debit)
-------------
 
-----[mla,mlc,mco,mlm,mlu,mpe]----
 > NEXT_STEP_CARD_ES
 >
 > Testear la integración
@@ -40,6 +29,14 @@ Para guardar los cambios en la configuración, haz clic en el botón **Guardar c
 ------------
 
 ----[mlb]----
+> PREV_STEP_CARD_ES
+>
+> Débito o crédito
+>
+> Configura pagos con débito o crédito con Checkout Transparente
+>
+> [Débito o crédito con Checkout Transparente](/developers/es/docs/woocommerce/payments-configuration/credit-debit)
+
 > NEXT_STEP_CARD_ES
 >
 > Pix
