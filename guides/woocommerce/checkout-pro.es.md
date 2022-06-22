@@ -18,7 +18,7 @@ Para guardar los cambios en la configuración, haz clic en el botón **Guardar c
 >
 > [Configura los medios de pago](/developers/es/docs/woocommerce/payments-methods-configuration)
 
-----[mla,mlc,mco,mlm,mlu,mpe]----
+----[mla, mlm, mpe, mco, mlu, mlc]----
 > PREV_STEP_CARD_ES
 >
 > Configura los medios de pago

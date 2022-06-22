@@ -1,6 +1,6 @@
 ## Medios de pago offline
 
-Este medio de pago adicionará ---[mlb]----Checkout Transparente---------—---[mla,mlu,mlc,mco,mlm,mpe]----Checkout API---------—y te permitirá ofrecer pagos en efectivo utilizando medios de pago offline a través de Mercado Pago.
+Este medio de pago adicionará----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------y te permitirá ofrecer pagos en efectivo utilizando medios de pago offline a través de Mercado Pago.
 
 1. Para activar el checkout, deberás hacer clic en el botón slider.
 2. En el cambio **Título en el checkout de la tienda** puedes elegir el nombre con el que se mostrará este medio de pago en la tienda. Por ejemplo, puedes nombrarlo **abonar con efectivo**.
@@ -10,7 +10,7 @@ Este medio de pago adicionará ---[mlb]----Checkout Transparente---------—---[
 
 Para guardar los cambios en la configuración, haz clic en el botón **Guardar cambios**.
 
-----[mla,mlc,mco,mlm,mlu,mpe]----
+----[mla, mlm, mpe, mco, mlu, mlc]----
 > PREV_STEP_CARD_ES
 >
 > Débito o crédito

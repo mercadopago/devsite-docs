@@ -6,7 +6,7 @@ Puedes elegir configurar estos métodos de pago:
 
 * [Mercado Pago con Checkout Pro](/developers/es/docs/woocommerce/payments-configuration/checkoutpro)
 
-----[mla,mlc,mco,mlm,mlu,mpe]----
+----[mla, mlm, mpe, mco, mlu, mlc]----
 * [Débito o crédito con Checkout API](/developers/es/docs/woocommerce/payments-configuration/credit-debit)
 ------------
 

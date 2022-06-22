@@ -4,7 +4,7 @@
 Este medio de pago adicionará Checkout Transparente, el medio de pago que te permitirá aceptar pagos con tarjetas de crédito y débito a través de Mercado Pago, sin necesidad de que el cliente salga de a tienda. 
 ------------
 
-—---[mla,mlu,mlc,mco,mlm,mpe]----
+----[mla, mlm, mpe, mco, mlu, mlc]----
 Este medio de pago adicionará Checkout API, el medio de pago que te permitirá aceptar pagos con tarjetas de crédito y débito a través de Mercado Pago, sin necesidad de que el cliente salga de a tienda. 
 ------------
 
@@ -15,7 +15,8 @@ Este medio de pago adicionará Checkout API, el medio de pago que te permitirá 
 
 Para guardar los cambios en la configuración, haz clic en el botón **Guardar cambios**.
 
---—-[mla,mlc,mco,mlm,mlu,mpe]----
+----[mla, mlm, mpe, mco, mlu, mlc]----
+
 > PREV_STEP_CARD_ES
 >
 > Débito o crédito
@@ -31,6 +32,7 @@ Para guardar los cambios en la configuración, haz clic en el botón **Guardar c
 > Configura pagos con métodos de pago offline
 >
 > [Métodos de pago offline](/developers/es/docs/woocommerce/payments-configuration/offline-payments)
+
 ------------
 
 ----[mlb]----
