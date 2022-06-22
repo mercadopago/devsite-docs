@@ -1,6 +1,6 @@
 # Requisitos previos
 
-Para ofrecer pagos con Puntos, es importante cumplir con los requisitos que se muestran a continuación.
+Para ofrecer pagos con Point, es importante cumplir con los requisitos que se muestran a continuación.
 
 | Requisito | Descripción |
 | --- | --- |
