@@ -196,11 +196,11 @@ Sample response:
 
 > PREV_STEP_CARD_EN
 >
-> Start integrating the Integrations API
+> Integrate API
 >
 > To perform an integration, you must first obtain the identification credentials.
 >
-> [Integrate the Integrations API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/integration-api/integration)
+> [Integrate API](/developers/en/docs/mp-point/integration-configuration/integrate-with-pdv/integrate-api)
 
 
 > NEXT_STEP_CARD_EN
@@ -209,5 +209,5 @@ Sample response:
 >
 > We’ll explain how to start receiving notifications from Webhooks.
 >
-> [Configure notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/integration-api/notifications)
+> [Configure notifications](/developers/en/docs/mp-point/integration-configuration/integrate-with-pdv/notifications)
 

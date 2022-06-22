@@ -196,17 +196,17 @@ Ejemplo de respuesta:
 
 > PREV_STEP_CARD_ES
 >
-> Comienza a integrar la API de Integraciones
+> Integrar API
 >
 > Para realizar la integración, primero debes obtener las credenciales de identificación.
 >
-> [Integra la API de Integraciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/integration-api/integration)
+> [Integrar API](/developers/es/docs/mp-point/integration-configuration/integrate-with-pdv/integrate-api)
 
 
 > NEXT_STEP_CARD_ES
 >
-> Configura las notificaciones
+> Configurar notificaciones
 >
 > Te explicamos cómo comenzar a recibir notificaciones de Webhooks.
 >
-> [Configura las notificaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/integration-api/notifications)
+> [Configurar notificaciones](/developers/es/docs/mp-point/integration-configuration/integrate-with-pdv/notifications)

@@ -116,14 +116,14 @@ You will receive a response like this:
 >
 > Read our Point Integrations API introduction.
 >
-> [Introduction](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/integration-api/introduction)
+> [Introduction](/developers/en/docs/mp-point/integration-configuration/integrate-with-pdv/introduction)
 
 
 > NEXT_STEP_CARD_EN
 >
-> Start processing your payments
+> Process payments
 >
 > Create a payment intent and assign it to a Point device.
 >
-> [Start processing your payments](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/integration-api/create-payment-intent)
+> [Process payments](/developers/en/docs/mp-point/integration-configuration/integrate-with-pdv/create-payment-intent)
 

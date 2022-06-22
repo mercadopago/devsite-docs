@@ -57,8 +57,8 @@ Se você executou as etapas de configuração para as [notificações de Webhook
 
 > PREV_STEP_CARD_PT
 >
-> Configure suas notificações
+> Configurar notificações
 >
 > Explicamos como começar a receber notificações de Webhooks.
 >
-> [Configure suas notificações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/integration-api/notifications)
+> [Configurar notificações](/developers/pt/docs/mp-point/integration-configuration/integrate-with-pdv/notifications)

@@ -132,11 +132,11 @@ Depois de implementar as notificações e fazer os ajustes necessários, elas te
 
 > PREV_STEP_CARD_PT
 >
-> Comece a processar seus pagamentos
+> Processar pagamentos
 >
 > Crie uma intenção de pagamento e atribua-a a um dispositivo Point.
 >
-> [Comece a processar seus pagamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/integration-api/create-payment-intent)
+> [Processar pagamentos](/developers/pt/docs/mp-point/integration-configuration/integrate-with-pdv/create-payment-intent)
 
 
 > NEXT_STEP_CARD_PT
@@ -145,5 +145,5 @@ Depois de implementar as notificações e fazer os ajustes necessários, elas te
 >
 > Use o Simulador Point para testar sua integração.
 >
-> [Simulador Point](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/integration-api/point-simulator)
+> [Simulador Point](/developers/pt/docs/mp-point/integration-configuration/integrate-with-pdv/point-simulator)
 

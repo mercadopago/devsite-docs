@@ -116,15 +116,15 @@ Recibirás una respuesta como esta:
 >
 > Lee nuestra introducción a API de Integraciones Point.
 >
-> [Introducción](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/integration-api/introduction)
+> [Introducción](/developers/es/docs/mp-point/integration-configuration/integrate-with-pdv/introduction)
 
 > NEXT_STEP_CARD_ES
 >
-> Comienza a procesar tus pagos
+> Procesar pagos
 >
 > Crea una intención de pago y asígnala a un dispositivo Point.
 >
-> [Comienza a procesar tus pagos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/integration-api/create-payment-intent)
+> [Procesar pagos](/developers/es/docs/mp-point/integration-configuration/integrate-with-pdv/create-payment-intent)
 
 
 

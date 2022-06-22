@@ -61,4 +61,4 @@ If you followed the configuration steps for the [Webhooks notifications](https:/
 >
 > We’ll explain how to start receiving notifications from Webhooks.
 >
-> [Configure notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/integration-api/notifications)
+> [Configure notifications](/developers/en/docs/mp-point/integration-configuration/integrate-with-pdv/notifications)

@@ -45,8 +45,8 @@ A API de integrações Point permite que você conecte seus pontos de venda (PDV
 
 > NEXT_STEP_CARD_PT
 >
-> Comece a integrar a API de integrações
+> Integrar API
 >
 > Para integrar, você deve primeiro obter as credenciais de identificação.
 >
-> [Integrar a API de integrações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/integration-api/integration)
+> [Integrar API](/developers/pt/docs/mp-point/integration-configuration/integrate-with-pdv/integrate-api)
