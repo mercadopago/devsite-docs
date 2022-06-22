@@ -24,7 +24,7 @@ bullet_section_with_media:
  - benefit_message: Você compra a maquininha e não precisa arcar com aluguel ou taxa de adesão.
  - benefit_title: Maior controle financeiro
  - benefit_message: Acesso a uma conta digital, cartão Mercado Pago e obtém vantagens com o Mercado Pontos.
- - image: /images/point-api/point-landing2.png
+ - image: /point-api/point-landing2.png
 ---
 
 --- mini_landing_separator ---
