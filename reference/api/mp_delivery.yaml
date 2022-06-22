@@ -19,23 +19,6 @@ paths:
           schema:
             type: string
             example:  41034141533
-        - name: access-token
-          in: header
-          description: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
-          x-description-i18n:
-            eng: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
-            spa: Token de acceso generado desde el vendedor por el proceso de autenticación (OAuth). Código de seguridad que identifica al usuario, sus privilegios y una aplicación utilizada en diferentes solicitudes de origen público para acceder a los recursos protegidos. Su validez está determinada por el parámetro expires_in y es similar a APP_USR-1585551492-030918-25######3458-2880736 estando compuesto por
-            por: Token de acesso gerado do vendedor pelo processo de autenticação (OAuth). Código de segurança que identifica o usuário, seus privilégios e uma aplicação utilizado nas diferentes requests de origem pública para ter acesso a recursos protegidos. Tem sua validade determinada pelo parâmetro expires_in e são semelhantes a APP_USR-1585551492-030918-25######3458-2880736 sendo compostos por
-          enum:
-            - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
-            - Client ID -- 1585551492
-            - Creation date (MMddHH) -- 030918
-            - Security hash -- 25######3458
-            - User ID -- 2880736
-          required: true
-          schema:
-            type: string
-            example: "APP_USR-3213901234561-124232-2cb82fs4f17683d1b2cf36d4bf-8138341993"
       responses:
         '200':
           description: Success
@@ -246,8 +229,7 @@ paths:
                             currency:
                               type: string
                               example: "ARS"
-                              description: Currency related to price.
-                        
+                              description: Currency related to price. 
                   discounts:
                     type: array
                     description: This field has no properties yet. Discount information will be added here in coming updates.
@@ -490,8 +472,6 @@ paths:
                         type: string
                         description: Status of an order.
                         enum:
-                          - pending -- order in creation.
-                          - handling -- processing payment.
                           - ready_to_ship -- order created.
                           - shipped -- order sent for delivery.
                           - not_delivered -- order not delivered.
@@ -552,24 +532,7 @@ paths:
           required: true
           schema:
             type: string
-            example: 41034141533
-        - name: access-token
-          in: header
-          description: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
-          x-description-i18n:
-            eng: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
-            spa: Token de acceso generado desde el vendedor por el proceso de autenticación (OAuth). Código de seguridad que identifica al usuario, sus privilegios y una aplicación utilizada en diferentes solicitudes de origen público para acceder a los recursos protegidos. Su validez está determinada por el parámetro expires_in y es similar a APP_USR-1585551492-030918-25######3458-2880736 estando compuesto por
-            por: Token de acesso gerado do vendedor pelo processo de autenticação (OAuth). Código de segurança que identifica o usuário, seus privilégios e uma aplicação utilizado nas diferentes requests de origem pública para ter acesso a recursos protegidos. Tem sua validade determinada pelo parâmetro expires_in e são semelhantes a APP_USR-1585551492-030918-25######3458-2880736 sendo compostos por
-          enum:
-            - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
-            - Client ID -- 1585551492
-            - Creation date (MMddHH) -- 030918
-            - Security hash -- 25######3458
-            - User ID -- 2880736
-          required: true
-          schema:
-            type: string
-            example: "APP_USR-3213901234561-124232-2cb82fs4f17683d1b2cf36d4bf-8138341993"  
+            example: 41034141533  
       requestBody:
         content:
           application/json:
@@ -606,23 +569,6 @@ paths:
           schema:
             type: string
             example: 41034141533
-        - name: access-token
-          in: header
-          description: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
-          x-description-i18n:
-            eng: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
-            spa: Token de acceso generado desde el vendedor por el proceso de autenticación (OAuth). Código de seguridad que identifica al usuario, sus privilegios y una aplicación utilizada en diferentes solicitudes de origen público para acceder a los recursos protegidos. Su validez está determinada por el parámetro expires_in y es similar a APP_USR-1585551492-030918-25######3458-2880736 estando compuesto por
-            por: Token de acesso gerado do vendedor pelo processo de autenticação (OAuth). Código de segurança que identifica o usuário, seus privilégios e uma aplicação utilizado nas diferentes requests de origem pública para ter acesso a recursos protegidos. Tem sua validade determinada pelo parâmetro expires_in e são semelhantes a APP_USR-1585551492-030918-25######3458-2880736 sendo compostos por
-          enum:
-            - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
-            - Client ID -- 1585551492
-            - Creation date (MMddHH) -- 030918
-            - Security hash -- 25######3458
-            - User ID -- 2880736
-          required: true
-          schema:
-            type: string
-            example: "APP_USR-3213901234561-124232-2cb82fs4f17683d1b2cf36d4bf-8138341993"
       responses:
         '200':
           description: Success
@@ -646,23 +592,6 @@ paths:
           schema:
             type: string
             example: 41034141533
-        - name: access-token
-          in: header
-          description: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
-          x-description-i18n:
-            eng: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
-            spa: Token de acceso generado desde el vendedor por el proceso de autenticación (OAuth). Código de seguridad que identifica al usuario, sus privilegios y una aplicación utilizada en diferentes solicitudes de origen público para acceder a los recursos protegidos. Su validez está determinada por el parámetro expires_in y es similar a APP_USR-1585551492-030918-25######3458-2880736 estando compuesto por
-            por: Token de acesso gerado do vendedor pelo processo de autenticação (OAuth). Código de segurança que identifica o usuário, seus privilégios e uma aplicação utilizado nas diferentes requests de origem pública para ter acesso a recursos protegidos. Tem sua validade determinada pelo parâmetro expires_in e são semelhantes a APP_USR-1585551492-030918-25######3458-2880736 sendo compostos por
-          enum:
-            - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
-            - Client ID -- 1585551492
-            - Creation date (MMddHH) -- 030918
-            - Security hash -- 25######3458
-            - User ID -- 2880736
-          required: true
-          schema:
-            type: string
-            example: "APP_USR-3213901234561-124232-2cb82fs4f17683d1b2cf36d4bf-8138341993"
       requestBody:
         content:
           application/json:
@@ -699,23 +628,6 @@ paths:
           schema:
             type: string
             example: 41562083
-        - name: access-token
-          in: header
-          description: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
-          x-description-i18n:
-            eng: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
-            spa: Token de acceso generado desde el vendedor por el proceso de autenticación (OAuth). Código de seguridad que identifica al usuario, sus privilegios y una aplicación utilizada en diferentes solicitudes de origen público para acceder a los recursos protegidos. Su validez está determinada por el parámetro expires_in y es similar a APP_USR-1585551492-030918-25######3458-2880736 estando compuesto por
-            por: Token de acesso gerado do vendedor pelo processo de autenticação (OAuth). Código de segurança que identifica o usuário, seus privilégios e uma aplicação utilizado nas diferentes requests de origem pública para ter acesso a recursos protegidos. Tem sua validade determinada pelo parâmetro expires_in e são semelhantes a APP_USR-1585551492-030918-25######3458-2880736 sendo compostos por
-          enum:
-            - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
-            - Client ID -- 1585551492
-            - Creation date (MMddHH) -- 030918
-            - Security hash -- 25######3458
-            - User ID -- 2880736
-          required: true
-          schema:
-            type: string
-            example: "APP_USR-3213901234561-124232-2cb82fs4f17683d1b2cf36d4bf-8138341993"
       responses:
         '200':
           description: Success
@@ -851,23 +763,6 @@ paths:
           schema:
             type: string
             example: 185522600
-        - name: access-token
-          in: header
-          description: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
-          x-description-i18n:
-            eng: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
-            spa: Token de acceso generado desde el vendedor por el proceso de autenticación (OAuth). Código de seguridad que identifica al usuario, sus privilegios y una aplicación utilizada en diferentes solicitudes de origen público para acceder a los recursos protegidos. Su validez está determinada por el parámetro expires_in y es similar a APP_USR-1585551492-030918-25######3458-2880736 estando compuesto por
-            por: Token de acesso gerado do vendedor pelo processo de autenticação (OAuth). Código de segurança que identifica o usuário, seus privilégios e uma aplicação utilizado nas diferentes requests de origem pública para ter acesso a recursos protegidos. Tem sua validade determinada pelo parâmetro expires_in e são semelhantes a APP_USR-1585551492-030918-25######3458-2880736 sendo compostos por
-          enum:
-            - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
-            - Client ID -- 1585551492
-            - Creation date (MMddHH) -- 030918
-            - Security hash -- 25######3458
-            - User ID -- 2880736
-          required: true
-          schema:
-            type: string
-            example: "APP_USR-3213901234561-124232-2cb82fs4f17683d1b2cf36d4bf-8138341993"
       responses:
         '200':
           description: Success
@@ -1008,23 +903,6 @@ paths:
           schema:
             type: string
             example: 185522600
-        - name: access-token
-          in: header
-          description: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
-          x-description-i18n:
-            eng: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
-            spa: Token de acceso generado desde el vendedor por el proceso de autenticación (OAuth). Código de seguridad que identifica al usuario, sus privilegios y una aplicación utilizada en diferentes solicitudes de origen público para acceder a los recursos protegidos. Su validez está determinada por el parámetro expires_in y es similar a APP_USR-1585551492-030918-25######3458-2880736 estando compuesto por
-            por: Token de acesso gerado do vendedor pelo processo de autenticação (OAuth). Código de segurança que identifica o usuário, seus privilégios e uma aplicação utilizado nas diferentes requests de origem pública para ter acesso a recursos protegidos. Tem sua validade determinada pelo parâmetro expires_in e são semelhantes a APP_USR-1585551492-030918-25######3458-2880736 sendo compostos por
-          enum:
-            - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
-            - Client ID -- 1585551492
-            - Creation date (MMddHH) -- 030918
-            - Security hash -- 25######3458
-            - User ID -- 2880736
-          required: true
-          schema:
-            type: string
-            example: "APP_USR-3213901234561-124232-2cb82fs4f17683d1b2cf36d4bf-8138341993"
       requestBody:
         content:
           application/json:
@@ -1174,23 +1052,6 @@ paths:
           schema:
             type: string
             example: "9320001PC21"
-        - name: access-token
-          in: header
-          description: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
-          x-description-i18n:
-            eng: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
-            spa: Token de acceso generado desde el vendedor por el proceso de autenticación (OAuth). Código de seguridad que identifica al usuario, sus privilegios y una aplicación utilizada en diferentes solicitudes de origen público para acceder a los recursos protegidos. Su validez está determinada por el parámetro expires_in y es similar a APP_USR-1585551492-030918-25######3458-2880736 estando compuesto por
-            por: Token de acesso gerado do vendedor pelo processo de autenticação (OAuth). Código de segurança que identifica o usuário, seus privilégios e uma aplicação utilizado nas diferentes requests de origem pública para ter acesso a recursos protegidos. Tem sua validade determinada pelo parâmetro expires_in e são semelhantes a APP_USR-1585551492-030918-25######3458-2880736 sendo compostos por
-          enum:
-            - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
-            - Client ID -- 1585551492
-            - Creation date (MMddHH) -- 030918
-            - Security hash -- 25######3458
-            - User ID -- 2880736
-          required: true
-          schema:
-            type: string
-            example: "APP_USR-3213901234561-124232-2cb82fs4f17683d1b2cf36d4bf-8138341993"
       responses:
         '200':
           description: Success
@@ -1323,23 +1184,6 @@ paths:
           schema:
             type: string
             example: 4101533
-        - name: access-token
-          in: header
-          description: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
-          x-description-i18n:
-            eng: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
-            spa: Token de acceso generado desde el vendedor por el proceso de autenticación (OAuth). Código de seguridad que identifica al usuario, sus privilegios y una aplicación utilizada en diferentes solicitudes de origen público para acceder a los recursos protegidos. Su validez está determinada por el parámetro expires_in y es similar a APP_USR-1585551492-030918-25######3458-2880736 estando compuesto por
-            por: Token de acesso gerado do vendedor pelo processo de autenticação (OAuth). Código de segurança que identifica o usuário, seus privilégios e uma aplicação utilizado nas diferentes requests de origem pública para ter acesso a recursos protegidos. Tem sua validade determinada pelo parâmetro expires_in e são semelhantes a APP_USR-1585551492-030918-25######3458-2880736 sendo compostos por
-          enum:
-            - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
-            - Client ID -- 1585551492
-            - Creation date (MMddHH) -- 030918
-            - Security hash -- 25######3458
-            - User ID -- 2880736
-          required: true
-          schema:
-            type: string
-            example: "APP_USR-3213901234561-124232-2cb82fs4f17683d1b2cf36d4bf-8138341993"
       requestBody:
         content:
           application/json:
