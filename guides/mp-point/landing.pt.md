@@ -30,7 +30,3 @@ bullet_section_with_media:
 --- mini_landing_separator ---
 
 >>>> Dispositivos disponíveis<<<<
-
-| Point Mini | Point Plus | Point Smart |
-| --- | --- | --- |
-| ![Point mini](/point-api/point-mini.png) | ![Point plus](/point-api/point-plus.png) | ![Point Smart](/point-api/point-smart.png) |
