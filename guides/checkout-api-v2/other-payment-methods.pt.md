@@ -491,15 +491,75 @@ A resposta mostrará o **status pendente** até que o comprador realize o pagame
 
 > NOTE
 >
+> Nota
+>
+> O cliente tem entre 3 e 5 días para pagar, dependendo do meio de pagamento. Após esse tempo, o pagamento deve ser cancelado.
+
+## Data de vencimento
+
+A data de vencimento padrão para pagamentos com boleto é de 3 dias. Opcionalmente, é possível alterar essa data enviando o campo `date_of_expiration` na requisição de criação do pagamento definindo um período entre 1 e 30 dias a partir da data de emissão do boleto. 
+
+Para alterar a data de vencimento, utilize um dos códigos disponíveis abaixo. 
+
+[[[
+```php
+===
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+$payment->date_of_expiration = "2020-05-30T23:59:59.000-04:00";
+```
+```node
+===
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+date_of_expiration: "2020-05-30T23:59:59.000-04:00",
+```
+```java
+===
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+payment.setDateOfExpiration("2020-05-30T23:59:59.000-04:00")
+```
+```ruby
+===
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+date_of_expiration: '2020-05-30T23:59:59.000-04:00',
+```
+```csharp
+===
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+paymentCreateRequest.DateOfExpiration = DateTime.Parse("2020-05-30T23:59:59.000-04:00");
+```
+```python
+===
+A data usa o formato ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+"date_of_expiration": "2020-05-30T23:59:59.000-04:00"
+```
+```curl
+===
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+"date_of_expiration": "2020-05-30T23:59:59.000-04:00",
+```
+]]]
+
+O prazo de aprovação do boleto é de até 48h úteis. Por isso, configure a data de expiração com no mínimo 3 dias para garantir que o pagamento seja abonado.
+
+> WARNING
+>
 > Importante
 >
-> O prazo de aprovação do boleto é de até 48h úteis. Por isso, recomenda-se configurar a data de expiração com no mínimo 3 dias para garantir que o pagamento seja abonado. Além disso, o comprador tem entre 3 e 5 dias para realizar o pagamento, após este período, caso o pagamento não seja realizado, a compra é cancelada.
+> Caso o boleto seja pago depois da data de expiração, o valor será estornado na conta do Mercado Pago do pagador.
 
+## Cancelar pagamento
 
-Além das configurações básicas de pagamento com boleto bancário, é possível alterar a data de vencimento do boleto e fazer o cancelamento do pagamento. Para isso, acesse as seções abaixo.
+Para evitar problemas de cobrança, é importante cancelar os pagamentos vencidos. Além disso, tenha em conta que **é possível cancelar apenas os pagamentos que se encontram pendentes ou em processo**. Se o vencimento de um pagamento ocorre em 30 dias, o cancelamento é automático e o status final do mesmo será `cancelado` ou `expirado`.
 
-* [Alterar data de vencimento](/developers/pt/docs/checkout-api/payment-management/modify-expiration-date)
-* [Reembolsos e cancelamentos](/developers/pt/docs/checkout-api/additional-content/cancellations-and-refunds)
+Para mais informações, veja a seção [Reembolsos e cancelamentos](/developers/pt/docs/checkout-api/additional-content/cancellations-and-refunds).
 
 ------------
 
@@ -659,10 +719,78 @@ A resposta mostrará o **status pendente** até que o comprador realize o pagame
 ]
 ```
 
-Além das configurações básicas de pagamento com dinheiro, é possível alterar a data de vencimento e fazer o cancelamento do pagamento. Para isso, acesse as seções abaixo.
+## Data de vencimento
 
-- [Alterar data de vencimento](/developers/pt/docs/checkout-api/payment-management/modify-expiration-date)
-- [Reembolsos e cancelamentos](/developers/pt/docs/checkout-api/additional-content/cancellations-and-refunds)
+É possível alterar a data de vencimento para pagamentos em dinheiro enviando o campo `date_of_expiration` na requisição de criação do pagamento. A data configurada deve ser entre 1 e 30 dias a partir da data de emissão do pagamento. 
+
+Para alterar a data de vencimento, utilize um dos códigos disponíveis abaixo.
+
+[[[
+```php
+===
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+$payment->date_of_expiration = "2020-05-30T23:59:59.000-04:00";
+```
+```node
+===
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+date_of_expiration: "2020-05-30T23:59:59.000-04:00",
+```
+```java
+===
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+payment.setDateOfExpiration("2020-05-30T23:59:59.000-04:00")
+```
+```ruby
+===
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+date_of_expiration: '2020-05-30T23:59:59.000-04:00',
+```
+```csharp
+===
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+paymentCreateRequest.DateOfExpiration = DateTime.Parse("2020-05-30T23:59:59.000-04:00");
+```
+```python
+===
+A data usa o formato ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+"date_of_expiration": "2020-05-30T23:59:59.000-04:00"
+```
+```curl
+===
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+"date_of_expiration": "2020-05-30T23:59:59.000-04:00",
+```
+]]]
+
+O prazo de creditação leva entre 1 e 2 dias úteis de acordo com o meio de pagamento. Por isso recomendamos que você defina a data de expiração com no mínimo 3 dias para garantir que o pagamento seja feito.
+
+> WARNING
+>
+> Importante
+>
+> Caso o pagamento seja realizado depois da data de expiração, o valor será estornado na conta do Mercado Pago do pagador.
+
+
+## Cancelar pagamento
+
+Para evitar problemas de cobrança, é importante cancelar os pagamentos vencidos. Além disso, tenha em conta que **é possível cancelar apenas os pagamentos que se encontram pendentes ou em processo**. 
+
+Se o vencimento de um pagamento ocorre em 30 dias, o cancelamento é automático e o status final do mesmo será `cancelado` ou `expirado`. Para mais informações, veja a seção [Reembolsos e cancelamentos](/developers/pt/docs/checkout-api/additional-content/cancellations-and-refunds).
 
 ------------
 
@@ -823,18 +951,11 @@ A resposta mostrará o **status pendente** até que o comprador realize o pagame
 ]
 ```
 
-
 ## Cancelar pagamento
 
-Para evitar problemas de cobrança, é importante cancelar pagamentos assim que vencerem. Os pagamentos em dinheiro devem ser feitos entre 3 e 5 dias úteis de acordo com o tempo de cada um.
+Para evitar problemas de cobrança, é importante cancelar os pagamentos vencidos. Além disso, tenha em conta que **é possível cancelar apenas os pagamentos que se encontram pendentes ou em processo**. 
 
-> NOTE
->
-> Importante
->
-> Somente é possível cancelar os pagamentos  com status **pendente** ou em **processo**. Se um pagamento vence dentro de 30 dias, o cancelamento é automático e o status final será **cancelado** ou **expirado**.
-
-Para cancelar um pagamento, veja a seção [Reembolsos e cancelamentos](/developers/pt/docs/checkout-api/additional-content/cancellations-and-refunds).
+Se o vencimento de um pagamento ocorre em 30 dias, o cancelamento é automático e o status final do mesmo será `cancelado` ou `expirado`. Para mais informações, veja a seção [Reembolsos e cancelamentos](/developers/pt/docs/checkout-api/additional-content/cancellations-and-refunds).
 
 
 ## Locais de pagamento
@@ -1025,12 +1146,9 @@ A resposta mostrará o **status pendente** até que o comprador realize o pagame
 
 ## Cancelar pagamento
 
-Para evitar problemas de cobrança, é importante cancelar pagamentos assim que vencerem. Os pagamentos em dinheiro devem ser feitos entre 3 e 5 dias úteis de acordo com o tempo de cada um.
+Para evitar problemas de cobrança, é importante cancelar os pagamentos vencidos. Além disso, tenha em conta que **é possível cancelar apenas os pagamentos que se encontram pendentes ou em processo**. 
 
-Tenha em conta que apenas se pode cancelar os pagamentos que se encontram com status 
-**pendente** ou em **processo**. Se a expiração de um pagamento ocorre aos 30 dias, o cancelamento é automático e o status final será **cancelado** ou **expirado**.
-
-Para cancelar um pagamento, veja a seção [Reembolsos e cancelamentos](/developers/pt/docs/checkout-api/additional-content/cancellations-and-refunds).
+Se o vencimento de um pagamento ocorre em 30 dias, o cancelamento é automático e o status final do mesmo será `cancelado` ou `expirado`. Para mais informações, veja a seção [Reembolsos e cancelamentos](/developers/pt/docs/checkout-api/additional-content/cancellations-and-refunds).
 
 ------------
 
@@ -1192,16 +1310,77 @@ A resposta mostrará o **status pendente** até que o comprador realize o pagame
 ]
 ```
 
-Além das configurações básicas para pagamento com dinheiro, é possível alterar a data de vencimento e fazer o cancelamento do pagamento. Para isso, acesse as seções abaixo.
+## Data de vencimento
 
-- [Alterar data de vencimento](/developers/pt/docs/checkout-api/payment-management/modify-expiration-date)
-- [Reembolsos e cancelamentos](/developers/pt/docs/checkout-api/additional-content/cancellations-and-refunds).
+É possível alterar a data de vencimento para pagamentos em dinheiro enviando o campo `date_of_expiration` na requisição de criação do pagamento. A data configurada deve estar entre 1 e 30 dias a partir da data de emissão. Para isso, utilize um dos códigos disponíveis abaixo.
 
-> NOTE
+[[[
+```php
+===
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+$payment->date_of_expiration = "2020-05-30T23:59:59.000-04:00";
+```
+```node
+===
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+date_of_expiration: "2020-05-30T23:59:59.000-04:00",
+```
+```java
+===
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+payment.setDateOfExpiration("2020-05-30T23:59:59.000-04:00")
+```
+```ruby
+===
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+date_of_expiration: '2020-05-30T23:59:59.000-04:00',
+```
+```csharp
+===
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+paymentCreateRequest.DateOfExpiration = DateTime.Parse("2020-05-30T23:59:59.000-04:00");
+```
+```python
+===
+A data usa o formato ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+"date_of_expiration": "2020-05-30T23:59:59.000-04:00"
+```
+```curl
+===
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+"date_of_expiration": "2020-05-30T23:59:59.000-04:00",
+```
+]]]
+
+O prazo de creditação está entre 1 e 2 dias úteis de acordo com o meio de pagamento. Por isso recomendamos que você defina a data de expiração com no mínimo 3 dias para garantir que o pagamento seja feito.
+
+> WARNING
 >
 > Importante
 >
-> O prazo de creditação está entre 1 e 2 dias úteis de acordo com o meio de pagamento. Por isso recomendamos que você defina a data de expiração com no mínimo 3 dias para garantir que o pagamento seja feito.
+> Caso o pagamento seja realizado depois da data de expiração, o valor será estornado na conta do Mercado Pago do pagador.
+
+## Cancelar pagamento
+
+É importante cancelar um pagamento assim que o mesmo vencer para evitar problemas de cobrança. Os pagamentos em dinheiro devem ser pagos entre 3 e 5 dias úteis de acordo com o tempo de cada um.
+
+Tenha em conta que **apenas se pode cancelar os pagamentos que se encontram com estado pendente ou em processo**. Se a expiração de um pagamento ocorre aos 30 dias, o cancelamento é automático e o estado final será cancelado ou expirado.
+
+Para mais detalhes sobre como cancelar um pagamento, veja seção [Reembolsos e cancelamentos](/developers/pt/docs/checkout-api/additional-content/cancellations-and-refunds).
 
 
 ------------
@@ -1368,7 +1547,7 @@ A resposta mostrará o **status pendente** até que o comprador realize o pagame
 Para evitar problemas de cobrança, é importante cancelar pagamentos assim que vencerem. Os pagamentos em dinheiro devem ser feitos entre 3 e 5 dias úteis de acordo com o tempo de cada um.
 
 Tenha em conta que apenas se pode cancelar os pagamentos que se encontram com status 
-**pendente** ou em **processo**. Se a expiração de um pagamento ocorre aos 30 dias, o cancelamento é automático e o status final será **cancelado** ou **expirado**.
+`pendente` ou `em processo`. Se um pagamento vence dentro de 30 dias, o cancelamento é automático e o status final será `cancelado` ou `expirado`.
 
 Para cancelar um pagamento, veja a seção [Reembolsos e cancelamentos](/developers/pt/docs/checkout-api/additional-content/cancellations-and-refunds).
 

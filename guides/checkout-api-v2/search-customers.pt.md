@@ -84,6 +84,54 @@ curl -X GET \
 ```
 ]]]
 
+A resposta trará o seguinte resultado.
+
+```json
+{
+    "paging": {
+        "limit": 10,
+        "offset": 0,
+        "total": 1
+    },
+    "results": [
+        {
+            "address": {
+                "id": null,
+                "street_name": null,
+                "street_number": null,
+                "zip_code": null
+            },
+            "addresses": [],
+            "cards": [
+                {
+                    ...
+                }
+            ],
+            "date_created": "2017-05-05T00:00:00.000-04:00",
+            "date_last_updated": "2017-05-05T09:23:25.021-04:00",
+            "date_registered": null,
+            "default_address": null,
+            "default_card": "1493990563105",
+            "description": null,
+            "email": "test_payer_12345@testuser.com",
+            "first_name": null,
+            "id": "123456789-jxOV430go9fx2e",
+            "identification": {
+                "number": null,
+                "type": null
+            },
+            "last_name": null,
+            "live_mode": false,
+            "metadata": {},
+            "phone": {
+                "area_code": null,
+                "number": null
+            }
+        }
+    ]
+}
+```
+
 > PREV_STEP_CARD_PT
 >
 > Modificar cliente

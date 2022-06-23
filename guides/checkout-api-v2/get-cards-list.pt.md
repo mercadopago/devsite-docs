@@ -63,6 +63,20 @@ curl -X GET \
 ```
 ]]]
 
+A resposta trará o seguinte resultado.
+
+### Resposta
+
+```json
+[{
+    "id": "1490022319978",
+    "expiration_month": 12,
+    "expiration_year": 2020,
+    "first_six_digits": "415231",
+    "last_four_digits": "0001",
+    ...
+}]
+```
 
 > PREV_STEP_CARD_PT
 >

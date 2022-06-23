@@ -143,6 +143,47 @@ curl -X POST \
 ```
 ]]]
 
+A resposta trará o seguinte resultado.
+
+```json
+{
+    "id": "1493990563105",
+    "expiration_month": 12,
+    "expiration_year": 2020,
+    "first_six_digits": "503175",
+    "last_four_digits": "0604",
+    "payment_method": {
+        "id": "master",
+        "name": "master",
+        "payment_type_id": "credit_card",
+        "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/master.gif",
+        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/master.gif"
+    },
+    "security_code": {
+        "length": 3,
+        "card_location": "back"
+    },
+    "issuer": {
+        "id": 3,
+        "name": "Mastercard"
+    },
+    "cardholder": {
+        "name": "Card holdername",
+
+        "identification": {
+            "number": "12345678",
+            "type": "DNI"
+        }
+
+    },
+    "date_created": "2017-05-05T09:22:30.893-04:00",
+    "date_last_updated": "2017-05-05T09:22:30.893-04:00",
+    "customer_id": "255276729-yLOTNHQjpDWw1X",
+    "user_id": "255276729",
+    "live_mode": false
+}
+```
+
 > PREV_STEP_CARD_PT
 >
 > Buscar cliente

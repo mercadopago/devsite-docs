@@ -70,6 +70,18 @@ curl -X GET \
 ```
 ]]]
 
+Resposta dos dados de um cartão salvo:
+
+```json
+[{
+    "id": "1490022319978",
+    "expiration_month": 12,
+    "expiration_year": 2020,
+    "first_six_digits": "415231",
+    "last_four_digits": "0001",
+    ...
+}]
+```
 
 ## Criar formulário de pagamento
 
