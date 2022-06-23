@@ -47,7 +47,7 @@ Se a etapa anterior foi bem-sucedida, você pode clicar na animação do cartão
 
 ### 5. Receba a notificação
 
-Se você executou as etapas de configuração para as [notificações de Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/integration-api/integration), é hora de você revisar seus registros. Lá você verá que a notificação do status da transação foi enviada.
+Se você executou as etapas de configuração para as [notificações de Webhooks](/developers/pt/docs/mp-point/integration-configuration/integrate-with-pdv/notifications), é hora de você revisar seus registros. Lá você verá que a notificação do status da transação foi enviada.
 
 > NOTE
 >
@@ -61,4 +61,4 @@ Se você executou as etapas de configuração para as [notificações de Webhook
 >
 > Explicamos como começar a receber notificações de Webhooks.
 >
-> [Configurar notificações](/developers/pt/docs/mp-point/integration-configuration/integrate-with-pdv/notifications)
+> [Configurar notificações]()

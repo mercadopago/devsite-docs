@@ -6,12 +6,23 @@ Sigue estos pasos para empezar a integrar la API de Integraciones a tus Puntos d
 
 ### Accede a una cuenta de Mercado Pago
 
+----[mla, mlb]----
 Para poder comenzar la integración, es necesario contar con una cuenta de Mercado Pago o Mercado Libre.
 Puedes [Ingresar](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code/pre-requisites)
 a una cuenta ya existente o [Crear una cuenta nueva](https://www.mercadopago[FAKER][URL][DOMAIN]).
 
+------------
+
+----[mlm]----
+Para poder comenzar la integración, es necesario contar con una cuenta de Mercado Pago o Mercado Libre.
+Puedes [Ingresar](https://www.mercadolibre.com/jms/mlm/lgz/login?platform_id=MP&go=https%3A%2F%2Fwww.mercadopago.com.mx%2F&loginType=explicit)
+a una cuenta ya existente o [Crear una cuenta nueva](https://www.mercadopago.com.mx/hub/registration/landing).
+
+------------
+
 ### Crea una aplicación
 
+----[mla, mlb]----
 Luego, necesitarás crear una aplicación para obtener las credenciales. Es fácil, te contamos cómo hacerlo:
 
 1. Ingresa a [Tus integraciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/applications).
@@ -20,13 +31,24 @@ Luego, necesitarás crear una aplicación para obtener las credenciales. Es fác
 4. Elige "Mercado Pago Point" como producto que vas a integrar.
 5. Acepta nuestros Términos y Condiciones. 
 
+------------
+
+----[mlm]----
+1. Ingresa a [Tus integraciones](https://www.mercadopago.com.mx/developers/panel/applications).
+2. Dentro de la sección **Tus aplicaciones**, haz clic en el signo "+" para crear tu primera aplicación, o elige “Crear nueva aplicación” si ya tienes otras.
+3. Ponle un nombre a tu aplicación con el que puedas identificarla más adelante.
+4. Elige "Mercado Pago Point" como producto que vas a integrar.
+5. Acepta nuestros Términos y Condiciones. 
+
+------------
+
 ¡Y listo!
 
 > NOTE
 >
 > Nota
 >
-> Si vas a operar en nombre de otros vendedores, puedes gestionar la vinculación de manera segura integrando [OAuth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/security/oauth/introduction).
+> Si vas a operar en nombre de otros vendedores, puedes gestionar la vinculación de manera segura integrando [OAuth](/developers/es/docs/mp-point/additional-content/security/oauth/introduction).
 
 ### Accede a las credenciales de tu aplicación
 

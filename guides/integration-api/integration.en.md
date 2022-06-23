@@ -6,12 +6,23 @@ Follow these steps to start integrating the Integrations API to your Points of S
 
 ### Access a Mercado Pago account
 
+----[mla, mlb]----
 In order to start the integration, it is necessary to have a Mercado Pago or Mercado Libre account.
 You can [access](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/qr-code/pre-requisites)
 an existing account or [create a new one](https://www.mercadopago[FAKER][URL][DOMAIN]).
 
+------------
+
+----[mlm]----
+In order to start the integration, it is necessary to have a Mercado Pago or Mercado Libre account.
+You can [access](https://www.mercadolibre.com/jms/mlm/lgz/login?platform_id=MP&go=https%3A%2F%2Fwww.mercadopago.com.mx%2F&loginType=explicit)
+an existing account or [create a new one](https://www.mercadopago.com.mx/hub/registration/landing).
+
+------------
+
 ### Create an application
 
+----[mla, mlb]----
 Next, you will need to create an application to obtain the credentials. It's easy, we’ll tell you how to do it:
 
 1. Access [Your integrations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/applications).
@@ -19,6 +30,18 @@ Next, you will need to create an application to obtain the credentials. It's eas
 3. Give your applications a name in order to easily find it later.
 4. Select "Mercado Pago Point" as the product you are going to integrate.
 5. Accept our Terms and Conditions.
+------------
+
+----[mlm]----
+Next, you will need to create an application to obtain the credentials. It's easy, we’ll tell you how to do it:
+
+1. Access [Your integrations](https://www.mercadopago.com.mx/developers/panel/applications).
+2. Within the **Your applications** section, click on the "+" symbol to create your first application, or select "Create new application" if you already have others.
+3. Give your applications a name in order to easily find it later.
+4. Select "Mercado Pago Point" as the product you are going to integrate.
+5. Accept our Terms and Conditions.
+
+------------
 
 ¡And you’re done!
 
@@ -26,7 +49,7 @@ Next, you will need to create an application to obtain the credentials. It's eas
 >
 > Note
 >
-> If you are going to operate on behalf of other sellers, you can manage the link safely by integrating [OAuth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/security/oauth/introduction).
+> If you are going to operate on behalf of other sellers, you can manage the link safely by integrating [OAuth](/developers/en/docs/mp-point/additional-content/security/oauth/introduction).
 
 ### Access your application credentials
 

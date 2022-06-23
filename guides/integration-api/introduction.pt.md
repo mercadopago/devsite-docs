@@ -29,6 +29,18 @@ A API de integrações Point permite que você conecte seus pontos de venda (PDV
 
 ------------
 
+----[mlm]----
+
+> INFO
+>
+> Esta integração suporta os seguintes dispositivos:
+>
+> - Point Smart
+>
+> Você pode adquirir seu dispositivo Point em nossa [loja oficial](https://www.mercadopago.com.mx/point)
+
+------------
+
 ### Conheça suas vantagens
 
 * **É segura**, pois todas as solicitações são feitas por meio de HTTPS.

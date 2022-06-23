@@ -7,26 +7,37 @@ To start processing your payments, follow these steps:
 Before creating a payment intent, you must obtain the list of Point devices associated with your account. You can do it in the following way:
 
 ``` curl
-curl --location --request GET 'https://api.mercadopago.com/point/integration-api/devices' \
---header 'Authorization: Bearer ${ACCESS_TOKEN}' \
+curl --location --request GET 'https://api.mercadopago.com/point/integration-api/devices?offset=0&limit=50' \ 
+--header 'Authorization: Bearer ${ACCESS_TOKEN}' 
 ```
 
 You will receive a response like this:
 
 ```json
 {
-  "id":"7d8c70b6-2ac8-4c57-a441-c319088ca3ca",
-  "device_id":"INGENICO_MOVE2500__ING-ARG-14886780",
-  "amount":1500,
-  "description":"this is an example",
-  "payment":{
-     "type":"credit_card",
-     "installments":1
-  },
-  "additional_info":{
-     "external_reference":"4561ads-das4das4-das4754-das456",
-     "print_on_terminal":true
-  }
+   "devices": [
+       {
+           "id": "INGENICO_MOVE2500__ING-ARG-112334567",
+           "operating_mode": "STANDALONE"
+       },
+       {
+           "id": "INGENICO_MOVE2500__ING-ARG-0987654",
+           "operating_mode": "STANDALONE"
+       },
+       {
+           "id": "INGENICO_MOVE2500__ING-5467853",
+           "operating_mode": "PDV"
+       },
+       {
+           "id": "INGENICO_MOVE2500__ING-ARG-1233456",
+           "operating_mode": "STANDALONE"
+       }
+   ],
+   "paging": {
+       "total": 4,
+       "limit": 50,
+       "offset": 0
+   }
 }
 ```
 ## Create the payment intent
@@ -117,6 +128,46 @@ In response, you will receive something similar to this:
 ```
 ------------
 
+[[[
+```curl
+
+curl --location --request POST 'https://api.mercadopago.com/point/integration-api/devices/:deviceId/payment-intents' \
+--header 'Authorization: Bearer ${ACCESS_TOKEN}' \
+--data-raw '{
+    "amount": 1500,
+    "additional_info": {
+        "external_reference": "4561ads-das4das4-das4754-das456",
+        "print_on_terminal": true
+    }
+}'
+```
+]]]
+
+| Fiedl |  Description |
+| --- | --- |
+| amount | Total amount of the intention to pay. Important: this field does not admit decimal points, therefore if you want to generate a payment intention, you must consider the two decimals of the value in its total. For example: to generate a payment order of value "15.00" you must enter "1500". |
+| external_reference | Field for exclusive use by the integrator to include your system's own references. |
+| print_on_terminal | Field that determines if the device prints the payment receipt. |
+
+You will receive a response like this:
+
+[[[
+```json
+
+{
+  "id": "7d8c70b6-2ac8-4c57-a441-c319088ca3ca",
+  "device_id": "INGENICO_MOVE2500__ING-ARG-1234567",
+  "amount": 1500,
+  "additional_info": {
+      "external_reference": "4561ads-das4das4-das4754-das456",
+      "print_on_terminal": true
+  }
+}
+```
+]]]
+
+------------
+
 ## Cancel a payment intent
 
 You can cancel a payment intent assigned to a Point device in the following way:
@@ -186,6 +237,28 @@ Sample response:
    }
 }
 ```
+------------
+
+----[mlm]----
+
+[[[
+```json
+
+{
+    "state": "FINISHED",
+    "id": "0aa0519d-d985-4e83-b62d-dda123456789",
+    "device_id": "88731317_INGENICO_MOVE2500_ING-ARG-12345678",
+    "amount": 600,
+    "payment": {
+        "id": "11123456789"
+    },
+    "additional_info": {
+        "external_reference": "4561ads-das4das4-das4754-das456"
+    }
+}
+```
+]]]
+
 ------------
 
 > NOTE

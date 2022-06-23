@@ -47,7 +47,7 @@ Si el paso anterior fue exitoso, puedes dar clic en la animación de la tarjeta,
 
 ### 5. Recibe la notificación
 
-Si realizaste los pasos de configuración de las [notificaciones Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/integration-api/integration#bookmark_3._Prepara_y_configura_tus_notificaciones_de_Webhook), es momento de que revises tus registros. Allí verás que fue enviada la notificación del estado de la transacción.
+Si realizaste los pasos de configuración de las [notificaciones Webhooks](/developers/es/docs/mp-point/integration-configuration/integrate-with-pdv/notifications), es momento de que revises tus registros. Allí verás que fue enviada la notificación del estado de la transacción.
 
 > NOTE
 >
