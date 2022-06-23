@@ -21,7 +21,7 @@ We know, some terms are technical and you may not be familiar with all of them. 
 | SETTLEMENT_DATE | Date the transaction money was credited. |
 | REAL_AMOUNT | Net amount of the transaction, if it is a settlement, the amounts for chargebacks, claims or returns are discounted. |
 | COUPON_AMOUNT | Discount coupon amount. **Only the gross amount** (`TRANSACTION_AMOUNT`) **is discounted if provided by the seller**. |
-| METADATA | ----[mlu, mla, mlm, mco, mlc, mlb]---- Extra data such as the ID of partial returns or data provided by the seller in case of having an external integration. ------------ ----[mpe]---- Extra data such as data provided by the seller in case of having an external integration. ------------|
+| METADATA | ----[mlu, mla, mlm, mco, mlc, mlb]---- Extra data such as the ID of partial returns or data provided by the seller in case of having an external integration. ------------ ----[mpe]---- Extra data such as data provided by the seller in case of having an external integration. ------------ ----[mlb]---- Extra Text. ------------ |
 | MKP_FEE_AMOUNT | Mercado Libre Fee. |
 | FINANCING_FEE_AMOUNT | Cost for offering interest-free installments. |
 | SHIPPING_FEE_AMOUNT | Shipping cost. |

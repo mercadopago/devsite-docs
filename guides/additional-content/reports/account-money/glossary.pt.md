@@ -21,7 +21,7 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 | SETTLEMENT_DATE | Data em que o valor da transação foi creditada. |
 | REAL_AMOUNT | Valor líquido da transação, se é um settlement, os valores para estornos, reclamações ou devoluções são descontados. |
 | COUPON_AMOUNT | Valor do cupom de desconto. **Apenas o valor bruto** (`TRANSACTION_AMOUNT`) **é descontado se fornecido pelo vendedor**. |
-| METADATA | ----[mlu, mla, mlm, mco, mlc, mlb]---- Dados adicionais como, por exemplo, o ID das devoluções parciais ou dados informados pelo vendedor em caso de integração externa. ------------ ----[mpe]---- Dados adicionais como, por exemplo, ou dados informados pelo vendedor em caso de integração externa. ------------|
+| METADATA | ----[mlu, mla, mlm, mco, mlc, mlb]---- Dados extras, como por exemplo, o ID dos reembolsos parciais ou dados fornecidos pelo vendedor no caso de integrações externas. ------------ ----[mpe]---- Dados adicionais como, por exemplo, ou dados informados pelo vendedor em caso de integração externa. ------------ ----[mlb]---- Quando o termo "Rebate" é exibido, entende-se como o desconto promocional assumido pelo Mercado Livre em promoções co-financiadas. ------------ |
 | MKP_FEE_AMOUNT | Comissão do Mercado Livre. |
 | FINANCING_FEE_AMOUNT | Custo de oferecer parcelamento quando o custo dessa comissão for assumido pelo seller. |
 | SHIPPING_FEE_AMOUNT | Custo de envio. |
