@@ -27,6 +27,15 @@ bullet_section_with_media:
  - image: /point-api/point-landing2.png
 ---
 
---- mini_landing_separator ---
-
->>>> Dispositivos disponíveis<<<<
+---
+bullet_section_with_media: 
+ - title: Dispositivos disponíveis
+ - type: reversed
+ - benefit_title: Point Mini
+ - benefit_message: 
+ - benefit_title: Point Plus
+ - benefit_message: 
+ - benefit_title: Point Smart
+ - benefit_message:
+ - image: /point-api/landing.point.machines.png
+---
