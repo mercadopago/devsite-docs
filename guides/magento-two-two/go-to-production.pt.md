@@ -1,16 +1,14 @@
-# Receber os pagamentos
+# Receber pagamentos
 
-Após realizar a integração e fazer os devidos testes, sua loja já está pronta para entrar em produção. Para começar a receber pagamentos é necessário ativar o modo Produção. Para isso, siga os procedimentos abaixo.
+Após realizar a integração e fazer os devidos testes, sua loja já está pronta para entrar em produção. Para começar a receber pagamentos é necessário inserir as **credencias de produção**. Para isso, siga os procedimentos abaixo.
 
-1. No Painel Administrativo da sua loja na Prestashop, acesse o menu **Módulos e serviços**, localize o módulo do Mercado Pago e clique em **configurar**.
-2. Na tela de gerenciamento do módulo, confirme se as [credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/credentials/credentials) de produção são as mesmas da conta que você recebe o dinheiro das vendas. Essa informação poderá ser visualizada em seu [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/dashboard/introduction).
-3. Em seguida, clique em **sim** para ativar o modo Produção. 
+1. Vá para o menu **Stores > Configuration > Sales > Payment Methods**.
+2. No campo **Merchant Country**, selecione o país de operação da sua loja.
+3. Em seguida, acesse a seção **Mercado Pago > Credenciais** para habilitar os meios de pagamento disponíveis no país de origem da loja.
+4. Na página em questão você encontrará os campos **Public key** e **Access token**, que você deve preencher com as com as [credenciais](/developers/pt/guides/additional-content/credentials/credentials) de **produção** indicadas em seu seu [Dashboard](/developers/pt/guides/additional-content/dashboard/introduction).
+5. Depois de definir suas credenciais, clique no botão **Save Config** no canto superior direito. É importante que você salve suas credenciais antes de continuar porque isso habilitará os meios de pagamento disponíveis em seu país.
 
-Pronto! O módulo do Mercado Pago está pronto para receber pagamentos online.
-
-Com todas as etapas concluídas, seus clientes poderão realizar compras em sua loja. Ao realizar uma transação, é comum que algumas mensagens retornem com informações específicas sobre a compra, visto que toda venda gera um status de pagamento que mostra a situação da venda incluindo a confirmação, pendência ou recusa do pagamento e outras informações importantes sobre a transação. Para mais informações, acesse a seção [Atividades](https://www.mercadopago[FAKER][URL][DOMAIN]/activities) da sua conta do Mercado Pago.
-
-![Status de pagamento](/images/prestashop/status_pt.png)
+Pronto! O módulo do Mercado Pago está pronto para receber pagamentos online. Com todas as etapas concluídas, seus clientes poderão realizar compras em sua loja. 
 
 > PREV_STEP_CARD_PT
 >
@@ -18,12 +16,4 @@ Com todas as etapas concluídas, seus clientes poderão realizar compras em sua 
 >
 > Saiba como realizar uma compra teste e garantir o funcionamento da integração.
 >
-> [Testar os pagamentos](/developers/pt/docs/prestashop/sales-processing/integration-test)
-
-> NEXT_STEP_CARD_PT
->
-> Motivos de recusas dos pagamentos
->
-> Veja os principais motivos que podem impactar diretamente na aprovação dos pagamentos em sua loja. 
->
-> [Motivos de recusas dos pagamentos](/developers/pt/docs/prestashop/sales-processing/reasons-for-refusals)
+> [Testar os pagamentos](/developers/pt/docs/magento-two/sales-processing/integration-test)

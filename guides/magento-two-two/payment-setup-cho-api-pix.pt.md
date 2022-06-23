@@ -43,8 +43,8 @@ Para integrar a forma de pagamento, siga os passos abaixo.
 
 > NEXT_STEP_CARD_PT
 >
-> Testar os pagamentos
+> Configurar os pagamentos com Checkout Pro
 >
-> Saiba como realizar uma compra teste e garantir o funcionamento da integração.
+> Saiba como configurar o Checkout Pro para receber os pagamento de sua loja.
 >
-> [Testar os pagamentos](/developers/pt/docs/magento-two/sales-processing/integration-test)
+> [Configurar os pagamentos com Checkout Pro](/developers/pt/docs/magento-two/payment-setup/cho-pro)

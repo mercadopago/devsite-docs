@@ -13,7 +13,7 @@ Para integrar a forma de pagamento, siga os passos abaixo.
 7. Se dejar, você poderá personalizar um **banner** com os meios de pagamento disponível alterando a URL da imagem em questão. Por padrão, o plugin Mercado Pago irá configurar um banner com os meios de pagamento disponíveis de acordo com o seu país.
 8. Em **Checkout Position**, indique a posição em que o meio de pagamento ficará disponível para o comprador no fluxo de checkout. 
 9. No campo **Cards saved in Mercado Pago**, indique se deseja que o comprador tenha a opção de salvar as informações de seus cartões para pagamentos futuros ou utilizar seu saldo no Mercado Pago para realizar pagamentos. Clientes pagam mais rápido e você aumenta a conversão usando esta funcionalidade.
-10. Clique em **Set up installment and interest** para [configurar](https://www.mercadopago.com.br/costs-section#from-section=menu) a tarifa que será paga em cada compra e também ofereça parcelas sem juros para seus clientes.
+10. Clique em **Set up installment and interest** para [configurar no Mercado Pago](https://www.mercadopago.com.br/costs-section#from-section=menu) a tarifa que será paga em cada compra e também oferecer parcelas sem juros para seus clientes.
 11. Em seguida, clique em** **Save Config** para salvar suas preferências.
 
 > PREV_STEP_CARD_PT

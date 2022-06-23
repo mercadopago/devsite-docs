@@ -2,22 +2,24 @@
  
 O módulo do Mercado Pago vem com o **ambiente Sandbox** ativo por padrão. Nesse ambiente você poderá simular pagamentos na loja e ver se tudo está funcionando corretamente antes de começar a receber pagamentos reais dos seus clientes. Para realizar o teste, siga os passos abaixo.
  
-1. No Painel Administrativo da sua loja na Prestashop, acesse o menu Módulos e serviços, localize o módulo do Mercado Pago e clique em **configurar**.
-2. Na tela de gerenciamento do módulo, confirme se as [credenciais](/developers/pt/guides/additional-content/credentials/credentials) de teste estão devidamente preenchidas de acordo com as informações disponíveis em seu [Dashboard](/developers/pt/guides/additional-content/dashboard/introduction).
-3. Em seguida, desça até a seção **Teste sua loja** e clique em **Quero testar minhas vendas**.
-4. Na página inicial da sua loja na PrestaShop, selecione um produto e clique em adicionar.
-5. Com o produto no carrinho, clique em **finalizar pedido**.
-6. Preencha com as informações pessoais, indique um endereço de entrega e selecione um método de envio. Lembrando que todas essas informações são apenas para o teste.
+1. Vá para o menu **Stores > Configuration > Sales > Payment Methods**.
+2. No campo **Merchant Country**, selecione o país de operação da sua loja.
+3. Em seguida, acesse a seção **Mercado Pago > Credenciais** para habilitar os meios de pagamento disponíveis no país de origem da loja.
+4. Na página em questão você encontrará os campos **Public key** e **Access token**, que você deve preencher com as com as [credenciais](/developers/pt/guides/additional-content/credentials/credentials) de **teste** indicadas em seu seu [Dashboard](/developers/pt/guides/additional-content/dashboard/introduction).
+5. Depois de definir suas credenciais, clique no botão **Save Config** no canto superior direito. É importante que você salve suas credenciais antes de continuar porque isso habilitará os meios de pagamento disponíveis em seu país.
+6. Feitas as devidas configurações, acesse aa página inicial da sua loja na Magento, selecione um produto e clique em **Add to Cart**.
+7. Com o produto no carrinho, clique em **Proceed to Checkout**.
+8. Preencha com as informações pessoais, indique um endereço de entrega e selecione um método de envio. O cadastro das informações é obrigatório, mas é importante salientar que todas essas informações são apenas para o teste.
 
 Feito o processo inicial de compra, veja abaixo como testar a integração de acordo com o tipo de checkout selecionado para receber os pagamentos.
 
 ## Checkout Pro
 
-1. Selecione a opção **Quero pagar com Mercado Pago sem custo adicional**.
+1. Selecione a opção **I want to pay with Mercado Pago at no additional cost**.
 2. Clique em **pedido com pagamento obrigatório** para ser redirecionado o ambiente de pagamento do Mercado Pago. 
 3. Na tela de checkout, escolha pagar com um novo cartão de crédito e utilize os [cartões de teste](/developers/pt/guides/additional-content/testing/test-cards) para realizar o pagamento. Importante não efetuar o login na conta do Mercado Pago ou tentar realizar o pagamento com cartões de uso pessoal. 
 3. Adicione as informações do cartão de teste indicado (nº do cartão, CVV e data de validade). 
-4. Ao finalizar a compra o seller irá visualizar dentro do Mercado Pago a comprovação de que a compra foi feita e será redirecionada a sua loja novamente. 
+4. Ao finalizar a compra você poderá visualizar, dentro do Mercado Pago, a comprovação de que a compra foi realizada e será redirecionado à loja novamente. 
 
 ----[mlb]---- 
 ## Checkout Transparente 
@@ -26,41 +28,28 @@ Feito o processo inicial de compra, veja abaixo como testar a integração de ac
 ## Checkout API 
 ------------
 
-1. Selecione a opção **Quero pagar com cartão de crédito**.
+1. Selecione a opção **Credit and Debit Card - Mercado Pago**.
 2. Escolha pagar com um novo cartão de crédito e utilize os [cartões de teste](/developers/pt/guides/additional-content/testing/test-cards) para realizar o pagamento. É importante não realizar o pagamento com cartões de uso pessoal.
 3. Adicione as informações do cartão de teste indicado (nº do cartão, CVV e data de validade). 
-4. Clique em **pedido com pagamento obrigatório**.
-5. Ao finalizar a compra o seller irá visualizar que a compra foi aprovada
+4. Ao finalizar a compra será possível visualizar que a compra foi aprovada.
 
 > WARNING
 >
 > Importante
 > 
-> Ao finalizar a compra teste com Checkout Pro, no Painel Administrativo da PrestaShop não será possível visualizar a compra como aprovada, o pedido é gerado automaticamente, mas não consta como pago porque o processo ocorreu dentro do ambiente do Mercado Pago e não no ambiente da loja. 
+> Ao finalizar a compra teste com Checkout Pro, no Painel Administrativo da Magento 2 não será possível visualizar a compra como aprovada, o pedido é gerado automaticamente, mas não consta como pago porque o processo ocorreu dentro do ambiente do Mercado Pago e não no ambiente da loja. 
 > </br> <br/>
 > Já com teste de compra feito com o ----[mlb]---- Checkout Transparente, ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API, ------------ será possível visualizar a aprovação do pedido.  
 > </br> <br/>
 > Importante salientar também que, em ambas os checkouts, essa informação de pagamento aprovado não constará no histórico da conta do Mercado Pago porque nele só constam despesas reais (feitas em produção).
 
-----[mlb]----
-> PREV_STEP_CARD_PT
+> NEXT_STEP_CARD_PT
 >
-> Configurar os pagamentos com Pix
+> Configurar os pagamentos com Checkout Pro
 >
-> Configure a sua loja para receber pagamentos com Pix utilizando o ----[mlb]---- Checkout Transparente. ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API. ------------ 
+> Saiba como configurar o Checkout Pro para receber os pagamento de sua loja.
 >
-> [Pix](/developers/pt/docs/prestashop/payment-setup/cho-api/pix)
-------------
-
-----[mla, mlm, mpe, mco, mlu, mlc]----
-> PREV_STEP_CARD_PT
->
-> Configurar os pagamentos com ticket checkout
->
-> Configure a sua loja para receber pagamentos em dinheiro utilizando o ----[mlb]---- Checkout Transparente. ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API. ------------
->
-> [Configurar os pagamentos com ticket checkout](/developers/pt/docs/prestashop/payment-setup/cho-api/ticket-checkout)
-------------
+> [Configurar os pagamentos com Checkout Pro](/developers/pt/docs/magento-two/payment-setup/cho-pro)
 
 > NEXT_STEP_CARD_PT
 >
@@ -68,4 +57,4 @@ Feito o processo inicial de compra, veja abaixo como testar a integração de ac
 >
 > Saiba como ativar a loja para processar vendas reais.
 >
-> [Receber os pagamentos](/developers/pt/docs/prestashop/sales-processing/go-to-production)
+> [Receber os pagamentos](/developers/pt/docs/magento-two/sales-processing/go-to-production)
