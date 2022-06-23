@@ -14,7 +14,7 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 | NET_CREDIT_AMOUNT | Debitado no valor disponível. |
 | SELLER_AMOUNT | Valor recebido por compras com split. |
 | GROSS_AMOUNT | Valor bruto da transação. |
-| METADATA | Dados adicionais como, por exemplo, o ID das devoluções parciais ou dados informados pelo vendedor em caso de integração externa. |
+| METADATA | Dados extras, como por exemplo, o ID dos reembolsos parciais ou dados fornecidos pelo vendedor no caso de integrações externas. ----[mlb]---- Quando o termo "Rebate" é exibido, entende-se como o desconto promocional assumido pelo Mercado Livre em promoções co-financiadas. ------------ |
 | MP_FEE_AMOUNT | Pagamento da tarifa do Mercado Pago e/ou Mercado Livre. ----[mla, mpe, mco, mlm, mlu, mlc]---- Inclui IVA. ------------ |
 | FINANCING_FEE_AMOUNT | Custo de oferecer parcelamento quando o custo dessa comissão for assumido pelo seller. |
 | SHIPPING_FEE_AMOUNT | Custo de envio. |
