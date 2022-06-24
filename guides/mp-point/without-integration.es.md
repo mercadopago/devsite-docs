@@ -29,6 +29,6 @@ Para cada producto puedes insertar una imagen, el precio y nombre del mismo.
 
 ## Entérate de tus pagos
 
-Puedes consultar tus ventas en el listado de actividades de la cuenta de Mercado Pago, o bien integrar [notificaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/webhooks/webhooks) en tu sistema de gestión.
+Puedes consultar tus ventas en el listado de actividades de la cuenta de Mercado Pago, o bien integrar [notificaciones](/developers/es/docs/mp-point/additional-content/notifications/webhooks) en tu sistema de gestión.
 
-> Si quieres construir algo más avanzado y personalizado, consulta nuestra documentación de [Point integrado](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/mp-point/how-to-integrate)
+> Si quieres construir algo más avanzado y personalizado, consulta nuestra documentación de [Point integrado](/developers/es/docs/mp-point/integration-configuration)
