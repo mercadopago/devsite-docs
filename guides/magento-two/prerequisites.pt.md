@@ -22,7 +22,7 @@ Para usar a integração do Mercado Pago com o Magento 2 em sua loja, você deve
 | Servidor Web | Software responsável por aceitar pedidos em HTTP de clientes, geralmente os navegadores, e servi-los com respostas em HTTP | Apache 2.x<br/>Nginx 1.7.x |
 | Sistema operacional | Sistema responsável pelo gerenciamento do hardware do computador. | Linux x86-64 |
 | SSL | Protocolo que permite estabelecer comunicações seguras na Internet para atividades como navegação, e-mail, e outras transferências de dados. | É necessário ter um certificado SSL e que a forma de pagamento esteja disponibilizada em uma página HTTPS. Durante os testes em modo Sandbox, você poderá executar os testes em HTTP. |
-| Versão PHP | PHP é uma linguagem de programação amplamente usada para desenvolvimento de aplicações web. Para mais informações, [clique aqui](https://www.php.net/). | 5.6.x<br/>7.0.2<br/>7.0.6–7.0.x (para PHP 7 apenas | json<br/>iconv) <br/> |
+| Versão PHP | PHP é uma linguagem de programação amplamente usada para desenvolvimento de aplicações web. Para mais informações, [clique aqui](https://www.php.net/). | PHP 7.0 ou superior (json / iconv) |
 
 > Este módulo está configurado para suportar os padrões do Magento 2. Recomendamos que você não utilize plugins ou módulos que alterem as características e operação do padrão do Magento para evitar possíveis erros no módulo ou que ele pare de funcionar.
 
