@@ -32,4 +32,8 @@ For each product you can insert an image, the price and name of it.
 
 You can check your sales in the list of activities of the Mercado Pago account, or integrate [notifications](/developers/en/docs/mp-point/additional-content/notifications/webhooks) into your management system.
 
-> If you want to build something more advanced and personalized, read our [Integrated Point](developers/en/docs/mp-point/integration-configuration) documentation.
+> NOTE
+> 
+> Important
+> 
+> If you want to build something more advanced and personalized, read our [Integrated Point](/developers/en/docs/mp-point/integration-configuration) documentation.

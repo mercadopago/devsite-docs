@@ -31,4 +31,8 @@ Para cada producto puedes insertar una imagen, el precio y nombre del mismo.
 
 Puedes consultar tus ventas en el listado de actividades de la cuenta de Mercado Pago, o bien integrar [notificaciones](/developers/es/docs/mp-point/additional-content/notifications/webhooks) en tu sistema de gestión.
 
+> NOTE
+>
+> Importante
+> 
 > Si quieres construir algo más avanzado y personalizado, consulta nuestra documentación de [Point integrado](/developers/es/docs/mp-point/integration-configuration)
