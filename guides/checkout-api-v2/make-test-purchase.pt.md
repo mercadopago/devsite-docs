@@ -9,7 +9,7 @@ Com as credenciais configuradas, siga os passos abaixo para realizar a compra te
 2. Insira o e-mail do usuário de teste comprador.
 3. Confirme a compra.
 
-Pronto! Finalizadas essas etapas a integração terá sido concluída e você já poderá utilizar suas credenciais de produção para utilizar o Checkout Transparente. Para mais informações, veja a seção [Requisitos para entrar em produção](/developers/pt/docs/checkout-api/integration-test/goto-production)
+Pronto! Finalizadas essas etapas a integração terá sido concluída e você já poderá utilizar suas credenciais de produção para utilizar o Checkout Transparente. Para mais informações, veja a seção [Requisitos para entrar em produção](/developers/pt/docs/checkout-api/integration-test/go-to-production-requirements)
 
 > PREV_STEP_CARD_PT
 >

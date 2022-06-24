@@ -448,6 +448,7 @@ A resposta trará o seguinte resultado
 >
 > Para exemplos completos de código, confira os [exemplos de integração](https://github.com/mercadopago/card-payment-sample) disponíveis no GitHub.
 ------------
+
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 > GIT
 >
