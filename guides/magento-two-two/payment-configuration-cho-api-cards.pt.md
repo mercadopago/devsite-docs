@@ -1,4 +1,4 @@
-# Configurar os pagamentos com cartões
+# Configurar pagamentos com cartões
 
 Com o [----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------](/developers/pt/guides/checkout-api/landing), ofereça pagamentos com **cartões de crédito ou débito** (disponíveis no país onde a loja foi instalada) diretamente em sua loja, sem que o comprador precise ser redirecionado para realizar o pagamento.
  
@@ -22,7 +22,7 @@ Para integrar a forma de pagamento, siga os passos abaixo.
 >
 > Saiba como configurar o ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------ para receber pagamentos em sua loja.
 >
-> [Checkout Transparente](/developers/pt/docs/magento-two/payment-setup/cho-api/introduction)
+> [Checkout Transparente](/developers/pt/docs/magento-two/payment-configuration/checkout-api)
 
 ----[mlb]----
 > NEXT_STEP_CARD_PT
@@ -31,7 +31,7 @@ Para integrar a forma de pagamento, siga os passos abaixo.
 >
 > Configure a sua loja para receber pagamentos offline (boleto e caixa eletrônico) utilizando o Checkout Transparente. 
 >
-> [Ticket](/developers/pt/docs/magento-two/payment-setup/cho-api/ticket)
+> [Ticket](/developers/pt/docs/magento-two/payment-configuration/checkout-api/ticket)
 ------------
 
 ----[mla, mlm, mpe, mco, mlu, mlc]----
@@ -41,5 +41,5 @@ Para integrar a forma de pagamento, siga os passos abaixo.
 >
 > Configure a sua loja para receber pagamentos offline (ticket e caixa eletrônico) utilizando o Checkout API. 
 >
-> [Ticket](/developers/pt/docs/magento-two/payment-setup/cho-api/ticket)
+> [Ticket](/developers/pt/docs/magento-two/payment-configuration/checkout-api/ticket)
 ------------

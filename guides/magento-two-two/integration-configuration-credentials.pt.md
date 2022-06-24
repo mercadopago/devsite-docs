@@ -22,4 +22,4 @@ Para realizar a integração com o Mercado Pago, primeiro você deve inserir sua
 >
 > Siga as etapas para configurar o status do pedido para notificações de pagamento.
 >
-> [Configure notificações de pagamento](/developers/pt/docs/magento-two/integration-setup/integration-notifications)
+> [Configure notificações de pagamento](/developers/pt/docs/magento-two/integration-configuration/notifications)

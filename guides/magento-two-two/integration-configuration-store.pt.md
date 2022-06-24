@@ -17,7 +17,7 @@ Feita a configuração das credenciais e das notificações de pagamento, config
 >
 > Siga as etapas para configurar o status do pedido para notificações de pagamento.
 >
-> [Configure notificações de pagamento](/developers/pt/docs/magento-two/integration-setup/integration-notifications)
+> [Configure notificações de pagamento](/developers/pt/docs/magento-two/integration-configuration/notifications)
 
 > NEXT_STEP_CARD_PT
 >
@@ -25,4 +25,4 @@ Feita a configuração das credenciais e das notificações de pagamento, config
 >
 > Saiba como configurar os checkouts do Mercado Pago para receber os pagamento de sua loja.
 >
-> [Configuração de pagamentos](/developers/pt/docs/magento-two/payment-setup)
+> [Configuração de pagamentos](/developers/pt/docs/magento-two/payment-configuration)

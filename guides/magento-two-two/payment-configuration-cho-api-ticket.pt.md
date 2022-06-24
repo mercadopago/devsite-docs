@@ -1,4 +1,4 @@
-# Configurar os pagamentos com ticket
+# Configurar pagamentos offline (ticket)
 
 ----[mlb]----
 Com o **ticket**, ofereça ao comprador a opção de realizar pagamentos com os meios de pagamento offline (boleto e caixa eletrônico), utilizando o [Checkout Transparente](/developers/pt/guides/checkout-api/landing).
@@ -23,28 +23,28 @@ Para integrar a forma de pagamento, siga os passos abaixo.
 
 > PREV_STEP_CARD_PT
 >
-> Configurar os pagamentos com cartões
+> Configurar pagamentos com cartões
 >
 > Saiba como configurar o ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------ para receber pagamentos com cartões em sua loja.
 >
-> [Configurar os pagamentos com cartões](/developers/pt/docs/magento-two/payment-setup/cho-api/cards)
+> [Configurar pagamentos com cartões](/developers/pt/docs/magento-two/payment-configuration/checkout-api/cards)
 
 ----[mlb]----
 > NEXT_STEP_CARD_PT
 >
-> Configurar os pagamentos com Pix
+> Configurar pagamentos com Pix
 >
 > Configure a sua loja para receber pagamentos com Pix utilizando o Checkout Transparente.
 >
-> [Pix](/developers/pt/docs/magento-two/payment-setup/cho-api/pix)
+> [Pix](/developers/pt/docs/magento-two/payment-configuration/checkout-api/pix)
 ------------
 
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 > NEXT_STEP_CARD_PT
 >
-> Configurar os pagamentos via transferência bancária
+> Configurar pagamentos via transferência bancária
 >
 > Configure a sua loja para receber pagamentos via transferência bancária utilizando o Checkout API.
 >
-> [Pix](/developers/pt/docs/magento-two/payment-setup/cho-api/bank-transfer)
+> [Pix](/developers/pt/docs/magento-two/payment-configuration/checkout-api/bank-transfer)
 ------------

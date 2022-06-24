@@ -33,7 +33,7 @@ Pronto! O envio dos e-mails foi configurado com sucesso.
 >
 > Saiba como inserir as credenciais para poder habilitar os meios de pagamento disponíveis no país de origem da loja.
 >
-> [Configure suas credenciais](/developers/pt/docs/magento-two/integration-setup/configuration-credentials)
+> [Configure suas credenciais](/developers/pt/docs/magento-two/integration-configuration/credentials)
 
 > NEXT_STEP_CARD_PT
 >

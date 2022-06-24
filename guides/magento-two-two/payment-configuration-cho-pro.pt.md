@@ -1,4 +1,4 @@
-# Configurar os pagamentos com Checkout Pro
+# Configurar pagamentos com Checkout Pro
  
 Com o [Checkout Pro](/developers/pt/guides/checkout-pro/landing), o comprador será direcionado da loja para o site do Mercado Pago onde deverá preencher as informações solicitadas e efetuar o pagamento. Dessa forma, a transação é processada e concluída fora do ambiente de sua loja. Não é necessário que o comprador possua uma conta no Mercado Pago e, ao final da transação, o comprador pode ser devolvido à sua loja.
  
@@ -25,7 +25,7 @@ Para integrar o Checkout Pro, siga os passos abaixo.
 >
 > Configure a sua loja para receber pagamentos com Pix utilizando o Checkout Transparente.
 >
-> [Pix](/developers/pt/docs/magento-two/payment-setup/cho-api/pix)
+> [Pix](/developers/pt/docs/magento-two/payment-configuration/checkout-api/pix)
 ------------
 
 ----[mla, mlm, mpe, mco, mlu, mlc]----
@@ -35,7 +35,7 @@ Para integrar o Checkout Pro, siga os passos abaixo.
 >
 > Configure a sua loja para receber pagamentos via transferência bancária utilizando o Checkout API.
 >
-> [Pix](/developers/pt/docs/magento-two/payment-setup/cho-api/bank-transfer)
+> [Pix](/developers/pt/docs/magento-two/payment-configuration/checkout-api/bank-transfer)
 ------------
 
 > NEXT_STEP_CARD_PT

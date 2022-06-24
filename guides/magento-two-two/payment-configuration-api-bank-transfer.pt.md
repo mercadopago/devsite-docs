@@ -1,4 +1,4 @@
-# Configurar os pagamentos com transferência bancária
+# Configurar pagamentos com transferência bancária
 
 Com o [----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------](/developers/pt/guides/checkout-api/landing), ofereça pagamentos com **transferência bancária** diretamente em sua loja.
 
@@ -22,27 +22,27 @@ Para integrar a forma de pagamento, siga os passos abaixo.
 ----[mlb]----
 > PREV_STEP_CARD_PT
 >
-> Configurar os pagamentos com ticket
+> Configurar pagamentos com ticket
 >
 > Configure a sua loja para receber pagamentos offline (boleto e caixa eletrônico) utilizando o Checkout Transparente. 
 >
-> [Ticket](/developers/pt/docs/magento-two/payment-setup/cho-api/ticket)
+> [Ticket](/developers/pt/docs/magento-two/payment-configuration/checkout-api/ticket)
 ------------
 
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 > PREV_STEP_CARD_PT
 >
-> Configurar os pagamentos com ticket
+> Configurar pagamentos com ticket
 >
 > Configure a sua loja para receber pagamentos offline (ticket e caixa eletrônico) utilizando o Checkout API. 
 >
-> [Ticket](/developers/pt/docs/magento-two/payment-setup/cho-api/ticket)
+> [Ticket](/developers/pt/docs/magento-two/payment-configuration/checkout-api/ticket)
 ------------
 
 > NEXT_STEP_CARD_PT
 >
-> Configurar os pagamentos com Checkout Pro
+> Configurar pagamentos com Checkout Pro
 >
 > Saiba como configurar o Checkout Pro para receber os pagamento de sua loja.
 >
-> [Configurar os pagamentos com Checkout Pro](/developers/pt/docs/magento-two/payment-setup/cho-pro)
+> [Configurar pagamentos com Checkout Pro](/developers/pt/docs/magento-two/payment-configuration/checkout-pro)

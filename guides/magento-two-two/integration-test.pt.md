@@ -45,11 +45,11 @@ Feito o processo inicial de compra, veja abaixo como testar a integração de ac
 
 > NEXT_STEP_CARD_PT
 >
-> Configurar os pagamentos com Checkout Pro
+> Configurar pagamentos com Checkout Pro
 >
 > Saiba como configurar o Checkout Pro para receber os pagamento de sua loja.
 >
-> [Configurar os pagamentos com Checkout Pro](/developers/pt/docs/magento-two/payment-setup/cho-pro)
+> [Configurar pagamentos com Checkout Pro](/developers/pt/docs/magento-two/payment-configuration/checkout-pro)
 
 > NEXT_STEP_CARD_PT
 >
