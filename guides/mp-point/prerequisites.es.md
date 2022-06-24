@@ -9,6 +9,12 @@ Para ofrecer pagos con Point, es importante cumplir con los requisitos que se mu
 | Credenciales | Las credenciales son claves únicas que le proporcionamos para que pueda configurar sus integraciones. Necesitará un par de credenciales de prueba para probar la integración y un par de credenciales de producción para recibir pagos reales. Consulte [Credentials](/developers/es/docs/mp-point/additional-content/credentials) para obtener más información. |
 | Aplicación | Las aplicaciones son las diferentes integraciones contenidas en una o varias tiendas. Puedes crear una aplicación para cada solución que implementes, con el fin de tener todo organizado y mantener un control que facilite la gestión. Ver [Dashboard](/developers/es/docs/mp-point/additional-content/ tablero/introducción) para obtener más información sobre cómo crear una aplicación. |
 
+> WARNING
+>
+> Importante
+>
+> Para las máquinas **Point mini** y **Point blue**, se requiere la aplicación para realizar y administrar los cargos. Para **POS** y **SmartPOS**, solo se necesita la aplicación para iniciar sesión con el código QR.
+
 Si todos se han cumplido los requisitos, siga los pasos a continuación para integrarse con Point.
 
 > PREV_STEP_CARD_ES

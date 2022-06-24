@@ -1,7 +1,7 @@
 ---
 content_section_with_media: 
  - title: Mercado Pago Point
- - message: Point é a maquininha de cartão do Mercado Pago que permite aos compradores realizarem pagamentos presenciais de maneira rápida e segura utilizando cartões de crédito ou débito. Além disso, utilizando Point é possível oferecer parcelamento com ou sem juros, além de todos os benefícios que o Mercado Pago disponibiliza.
+ - message: Point es la máquina de tarjetas de Mercado Pago que permite a los compradores realizar pagos presenciales de forma rápida y segura mediante tarjetas de crédito o débito. Además, utilizando Point es posible ofrecer cuotas con o sin interés, además de todos los beneficios que ofrece Mercado Pago.
  - media_image: /point-api/point-landing.png
 ---
 
@@ -13,17 +13,17 @@ available_countries: mla, mlb, mlm
 ---
 ---
 bullet_section_with_media: 
- - title: Vantagens
+ - title: Ventajas
  - type: normal
  - message: Além de garantir um processo de compra ágil e fácil, a maquininha Point ainda conta com inúmeras vantagens como:
- - benefit_title: Diversas opções de pagamento
- - benefit_message: Ofereça pagamentos no crédito, débito e utilizando o código QR
- - benefit_title: Fácil gerenciamento do dinheiro
- - benefit_message: Acompanhe e gerencie as transações tanto pelo App do Mercado Pago quanto pelo site.
- - benefit_title: A maquininha é sua
- - benefit_message: Você compra a maquininha e não precisa arcar com aluguel ou taxa de adesão.
- - benefit_title: Maior controle financeiro
- - benefit_message: Acesso a uma conta digital, cartão Mercado Pago e obtém vantagens com o Mercado Pontos.
+ - benefit_title: Varias opciones de pago
+ - benefit_message: Ofrece pagos por crédito, débito y usando el código QR
+ - benefit_title: Fácil administración de dinero
+ - benefit_message: Rastree y administre transacciones tanto a través de la aplicación de Mercado Pago como a través del sitio web.
+ - benefit_title: La maquina es tuya
+ - benefit_message: Usted compra la máquina y no tiene que pagar alquiler ni cuotas de membresía.
+ - benefit_title: Mayor control financiero
+ - benefit_message: Accede a una cuenta digital, tarjeta de Mercado Pago y benefíciate de Mercado Pontos.
  - image: /point-api/point-landing2.png
 ---
 
@@ -31,7 +31,7 @@ bullet_section_with_media:
 
 ---
 bullet_section_with_media:
- - title: Dispositivos disponíveis
+ - title: Dispositivos disponibles
  - type: reversed
  - benefit_title: Point Mini
  - benefit_message: 
@@ -48,7 +48,7 @@ bullet_section_with_media:
 ----[mlb]----
 ---
 bullet_section_with_media: 
- - title: Dispositivos disponíveis
+ - title: Dispositivos disponibles
  - type: reversed
  - benefit_title: Point Mini NFC 1
  - benefit_message: 
@@ -66,7 +66,7 @@ bullet_section_with_media:
 ----[mlm]----
 ---
 bullet_section_with_media: 
- - title: Dispositivos disponíveis
+ - title: Dispositivos disponibles
  - type: reversed
  - benefit_title: Point Blue
  - benefit_message: 
@@ -77,3 +77,4 @@ bullet_section_with_media:
 ---
 
 ------------
+
