@@ -446,7 +446,7 @@ A resposta trará o seguinte resultado
 >
 > Checkout Transparente
 >
-> Para exemplos completos de código, confira os [exemplos de integração](https://github.com/mercadopago/card-payment-sample) disponíveis no GitHub.
+> Para exemplos completos de código, confira os [exemplos completos de integração](https://github.com/mercadopago/card-payment-sample) disponíveis no GitHub.
 ------------
 
 ----[mla, mlm, mpe, mco, mlu, mlc]----
@@ -454,7 +454,7 @@ A resposta trará o seguinte resultado
 >
 > Checkout API
 >
-> Para exemplos completos de código, confira os [exemplos de integração](https://github.com/mercadopago/card-payment-sample) disponíveis no GitHub.
+> Para exemplos completos de código, confira os [exemplos completos de integração](https://github.com/mercadopago/card-payment-sample) disponíveis no GitHub.
 ------------
 
 > PREV_STEP_CARD_PT
