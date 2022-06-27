@@ -138,7 +138,7 @@ A resposta trará o seguinte resultado.
 >
 > Saiba como alterar dados de um cliente previamente criado
 >
-> [Modificar cliente](/developers/pt/docs/checkout-api/customer-management/modify-customer)
+> [Modificar cliente](/developers/pt/docs/checkout-api/cards-and-customers-management/modify-customer)
 
 > NEXT_STEP_CARD_PT
 >
@@ -146,4 +146,4 @@ A resposta trará o seguinte resultado.
 >
 > Saiba como buscar adicionar novos cartões a um cliente previamente criado.
 >
-> [Adicionar novos cartões a um cliente](/developers/pt/docs/checkout-api/customer-management/add-new-cards-to-customer)
+> [Adicionar novos cartões a um cliente](/developers/pt/docs/checkout-api/cards-and-customers-management/add-new-cards-to-customer)

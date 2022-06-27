@@ -17,7 +17,7 @@ Para integrar pagamentos com cartão no Checkout Transparente siga as etapas aba
 A primeira etapa do processo de integração de pagamentos com cartões é a captura de dados do cartão. Esta captura é feita a partir da inclusão da biblioteca MercadoPago.js em seu projeto, seguida do formulário de pagamento. Utilize o código abaixo para importar a biblioteca MercadoPago.js antes de adicionar o formulário de pagamento.
 
 [[[
-```javascript
+```html
 <body>
   <script src="https://sdk.mercadopago.com/js/v2"></script>
 </body>

@@ -111,14 +111,14 @@ Para oferecer pagamentos com **Abitab** e/ou **Redpagos**, siga as etapas abaixo
 ------------
 
 
-## Capturar dados para pagamento
+## Importar MercadoPago.js
 
 Para realizar a integração do Checkout Transparente é preciso capturar os dados necessários para processar o pagamento.
 
 Esta captura é feita a partir da inclusão da biblioteca MercadoPago.js em seu projeto, seguida do formulário de pagamento. Utilize o código abaixo para importar a biblioteca MercadoPago.js antes de adicionar o formulário de pagamento.
 
 [[[
-```javascript
+```html
 
 <body>
   <script src="https://sdk.mercadopago.com/js/v2"></script>

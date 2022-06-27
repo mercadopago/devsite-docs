@@ -18,7 +18,7 @@ A primeira etapa do processo de integração de pagamentos com cartões é a **c
 
 
 [[[
-```javascript
+```html
 <body>
   <script src="https://sdk.mercadopago.com/js/v2"></script>
 </body>

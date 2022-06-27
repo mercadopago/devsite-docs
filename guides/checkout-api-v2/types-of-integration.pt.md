@@ -1,20 +1,22 @@
 # Tipos de integração
 
-A integração com checkout transparente pode ser feita utilizando procedimentos diferentes que variam de acordo com o conhecimento técnico e necessidade de negócio.Veja a tabela abaixo com o detalhamento de cada uma das opções disponíveis.
+A integração com o Checkout Transparente pode ser feita utilizando procedimentos diferentes que variam de acordo com o conhecimento técnico e necessidade de negócio. Veja a tabela abaixo com o detalhamento de cada uma das opções disponíveis.
 
-| Tipo de integração  | Meios de pagamento  | Complexidade a nível frontend  | Conversão otimizada  | User interface (UI)  | Conformidade PCI   |
-| --- | --- | --- | --- | --- | --- |
-| [Checkout Bricks](/developers/pt/docs/checkout-bricks/landing)  | Débito e Crédito  | Fácil  | Sim  | Componentes com UI já definida e que pode ser personalizada caso necessário.  | PCI SAQ A  |
-| [Cardform](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform)  | Todos os meios disponíveis  | Médio  | Não  | Formulário sem estilizações para começar as configurações do zero.  | Elegível a PCI SAQ A com Secure Fields  |
-|  [Métodos Core](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-core-methods)  | Todos os meios disponíveis  | Alto  | Não  | Crie seu formulário e suas estilizações  | Elegível a PCI SAQ A com Secure Fields  |
+| Tipo de integração  | Meios de pagamento  | Complexidade a nível frontend  | User interface (UI)  |
+| --- | --- | --- | --- | 
+| [Checkout Bricks](/developers/pt/docs/checkout-bricks/landing)  | Débito e Crédito  | Fácil  | Componentes com UI já definida e que pode ser personalizada caso necessário.  | 
+| [Cardform](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform)  | Todos os meios disponíveis  | Médio  | Formulário sem estilizações para começar as configurações do zero.  | 
+|  [Métodos Core](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-core-methods)  | Todos os meios disponíveis  | Alto | Crie seu formulário e suas estilizações  | 
 
-Nossa integração com o Checkout Transparente permite o processamento de transações através de diversos meios de pagamentos.
+Os três tipos de integração citados anteriormente são elegíveis a **certificação PCI SAQ A**. Isso porque os dados de cartão, CVV e data de expiração trafegam através de um iframe diretamente aos servidores do Mercado Pago, que impedem que os dados PCI (número do cartão, código de segurança e data de vencimento) sejam acessíveis a terceiros.
 
 > NOTE
 >
 > Importante
 >
-> Para obter uma lista detalhada com todos os meios de pagamento disponíveis para integração, envie um GET ao endpoint [/v1/payment_methods](/developers/pt/reference/payment_methods/_payment_methods/get) e execute a requisição. Na resposta você terá acesso a cada uma das opções.
+> Para ser elegível ao PCI SAQ A é necessário que sua integração seja feita utilizando Secure Fields (Campos de cartão em formato Iframe). 
+
+Além dos meios de pagamento mostrados na tabela acima, também é possível oferecer outras formas de pagamento. Para obter uma lista detalhada com todos as opções disponíveis para integração, envie um GET ao endpoint [/v1/payment_methods](/developers/pt/reference/payment_methods/_payment_methods/get) e execute a requisição. Na resposta você terá acesso a cada uma das opções.
 
 
 > PREV_STEP_CARD_PT

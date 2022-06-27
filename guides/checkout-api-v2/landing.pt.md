@@ -28,7 +28,13 @@ bullet_section_with_media:
  - benefit_title: Diversos meios de pagamento
  - benefit_message: É possível oferecer todos os meios de pagamento disponíveis ou apenas os que achar necessário.
  - benefit_title: Segurança em cada transação
- - benefit_message: Elegível a processo de PCI SAQ A.
+---
+---
+bullet_section_with_media: 
+ - type: reverse
+ - title: Elegível a processo de PCI SAQ A
+ - message: No Mercado Pago garantimos a Confidencialidade, Disponibilidade e Integridade de todos os nossos processos seguindo as melhores práticas do mercado para que você possa utilizar todos os nossos produtos com segurança.
+ - image: /api/api-integration-introduction-v2-pt.png
 ---
 
 ----[mlb]----
@@ -37,6 +43,7 @@ bullet_section_with_media:
 ---
 available_payments: credit, debit, mercadopago, ticket, pix, pec
 ---
+
 ------------
 
 ----[mla, mlm, mpe, mco, mlu, mlc]----

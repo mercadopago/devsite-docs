@@ -121,9 +121,9 @@ A resposta trará o seguinte resultado
 
 > NEXT_STEP_CARD_PT
 >
-> Alterar data de vencimento
+> Reembolsos e cancelamentos
 >
-> Saiba como alterar a data de vencimento para pagamentos em dinheiro e/ou boleto.
+> Saiba como realizar reembolsos e/ou cancelamentos de um pagamento.
 >
-> [Alterar data de vencimento](/developers/pt/docs/checkout-api/payment-management/modify-expiration-date)
+> [Alterar data de vencimento](/developers/pt/docs/checkout-api/payment-management/cancellations-and-refunds)
 

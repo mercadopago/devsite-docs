@@ -12,12 +12,12 @@ Pix é um meio de pagamento eletrônico instantâneo oferecido pelo Banco Centra
 
 Para integrar pagamentos via Pix, siga as etapas abaixo, mas caso você já tenha integrado pagamentos via cartão, inicie a integração a partir da etapa [Adicionar formulário de pagamento](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-with-pix#bookmark_adicionar_formulário_de_pagamento).
 
-## Capturar dados para pagamento
+## Importar MercadoPago.js
 
 Após a criação das chaves Pix, é preciso realizar a captura de dados para pagamento. Esta captura é feita a partir da inclusão da biblioteca MercadoPago.js em seu projeto, seguida do formulário de pagamento. Utilize o código abaixo para importar a biblioteca MercadoPago.js antes de adicionar o formulário de pagamento.
 
 [[[
-```javascript
+```html
 
 <body>
   <script src="https://sdk.mercadopago.com/js/v2"></script>

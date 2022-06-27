@@ -181,4 +181,4 @@ A resposta trará o seguinte resultado.
 >
 > Saiba como alterar dados de um cliente previamente criado
 >
-> [Modificar cliente](/developers/pt/docs/checkout-api/customer-management/modify-customer)
+> [Modificar cliente](/developers/pt/docs/checkout-api/cards-and-customers-management/modify-customer)

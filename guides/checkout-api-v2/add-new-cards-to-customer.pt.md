@@ -190,7 +190,7 @@ A resposta trará o seguinte resultado.
 >
 > Saiba como buscar um cliente a partir de informações específicas.
 >
-> [Buscar cliente](/developers/pt/docs/checkout-api/customer-management/search-customers)
+> [Buscar cliente](/developers/pt/docs/checkout-api/cards-and-customers-management/search-customers)
 
 > NEXT_STEP_CARD_PT
 >
@@ -198,4 +198,4 @@ A resposta trará o seguinte resultado.
 >
 > Saiba como consultar a lista de cartões de determinado cliente.
 >
-> [Consultar lista de cartões](/developers/pt/docs/checkout-api/customer-management/get-cards-list)
+> [Consultar lista de cartões](/developers/pt/docs/checkout-api/cards-and-customers-management/get-cards-list)
