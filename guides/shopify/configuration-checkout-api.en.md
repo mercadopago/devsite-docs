@@ -19,13 +19,16 @@ We recommend you customize the checkout information of the store to ensure a bet
 
 The Shopify store will display the request fields of the buyer's identification with the term "Company". To replace it with the identification requested according to the country where the store operates, follow these steps:
 
-1. Use the search bar on the site to search for the word "Company". The search will return several fields that you can edit.
-2. Replace the following entries with the identification type that your store will request according to the country where it operates (e.g. CPF for Brazil):
+1. Within the store administration panel, click on **Settings**. There, click on **Languages**.
+2. In the Default Language section you can choose the language in which you want the store to operate. Click **Change theme language**.
+3. On the next screen, click the **Change Theme Language** button again and choose your preferred language.
+4. Use the search bar on the site to search for the word "Company". The search will return several fields that you can edit.
+5. Replace the following entries with the identification type that your store will request according to the country where it operates (e.g. CPF for Brazil):
     * **Company label**
     * **Optional company label**
     * **Address company blank**
     * **Address – Company**
-3. Click on Save.
+6. Click on Save.
 
 
 > PREV_STEP_CARD_EN

@@ -20,13 +20,16 @@ Recomendamos que você personalize as informações do checkout da sua loja para
 
 A loja Shopify exibirá os campos de solicitação de identificação do comprador com o termo "Company". Para mudar isso para a identificação solicitada pelo país onde a loja opera, siga estes passos:
 
-1. Use a barra de busca do site para pesquisar a palavra "Company". A busca devolverá vários campos que você pode modificar.
-2. Substitua as seguintes entradas com a indicação do tipo de identificação pessoal que a sua loja solicitará de acordo com o país onde ela opera (por exemplo, CPF para o Brasil):
+1. No painel de administração da loja, clique em **Configurações**. Lá, clique em **Idiomas**.
+2. Na seção Default Language você pode escolher o idioma em que deseja que a loja funcione. Clique em **Alterar idioma do tema**.
+3. Na próxima tela, clique no botão **Alterar idioma do tema** novamente e escolha o idioma de sua preferência.
+4. Use a barra de busca do site para pesquisar a palavra "Company". A busca devolverá vários campos que você pode modificar.
+5. Substitua as seguintes entradas com a indicação do tipo de identificação pessoal que a sua loja solicitará de acordo com o país onde ela opera (por exemplo, CPF para o Brasil):
     * **Company label**
     * **Optional company label**
     * **Address company blank**
     * **Address – Company**
-3. Clique em Salvar.
+6. Clique em Salvar.
 
 > PREV_STEP_CARD_PT
 >

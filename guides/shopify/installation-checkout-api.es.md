@@ -9,9 +9,15 @@ Para instalar Checkout Transparente en una tienda Shopify, sigue los pasos a con
 5. En el campo **Cómo quieres operar**, selecciona la opción “quiero testear mi tienda” para poder realizar transacciones de prueba y garantizar el correcto funcionamiento del checkout.
 6. Luego, podrás **configurar cuotas e intereses** en caso de que quieras que la tienda lo ofrezca. Para configurarlo, haz clic en **Editar**.
 7. En la sección **¿Qué medios de pagos deseas ofrecer?**, selecciona qué tipo de medio de pagos deseas que la tienda ofrezca a través de Checkout Transparente. Puedes elegir Mercado Pago, tarjetas de crédito, boleto o Pix.
-7. Haz clic en **Guardar cambios** para finalizar la instalación.
+8. Haz clic en **Guardar cambios** para finalizar la instalación.
 
 > En caso de renovar tus credenciales, recuerda reemplazar tanto las de producción como las de pruba en tu integración.
+
+> NOTE
+>
+> Nota
+>
+> Una vez instalado, el Checkout Transparente puede demorar hasta 10 minutos en aparecer vinculado en la tienda de Shopify debido al caché. Si necesitas asistencia instalando Checkout Transparente, puedes contactarte con [Soporte](https://www.mercadopago.com/developers/es/support).
 
 > PREV_STEP_CARD_ES
 >

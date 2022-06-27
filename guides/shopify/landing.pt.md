@@ -37,7 +37,7 @@ bullet_section_with_media:
 
 ---
 bullet_section_with_media: 
- - title: Receba pagamentos com o Checkout Transparente
+ - title: Receba pagamentos com o Checkout Pro
  - type: normal
  - message: Integre o Mercado Pago no seu Shopify e redirecione os seus compradores para uma página do Mercado Pago para finalizar o pagamento.
  - image: /shopify/mini-landing-1.png
