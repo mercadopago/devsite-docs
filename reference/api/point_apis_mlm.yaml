@@ -1,0 +1,172 @@
+openapi: 3.0.0
+servers:
+  - url: https://api.mercadopago.com
+info:
+  title: Mercado Pago API Reference
+  version: '1.0'
+paths:
+  /point/integration-api/devices:
+    get:
+      tags:
+        - $ref: '#/tags/mp-point'
+      summary: Get devices
+      x-summary-i18n:
+        eng: Get devices
+        spa: Obtener dispositivos
+        por: Obter dispositivos
+      description: This endpoint allows you to get the devices. Devices can be filtered by pos and/or store
+      x-description-i18n:
+        eng: This endpoint allows you to get the devices. Devices can be filtered by pos and/or store
+        spa: Este endpoint te permite obtener los dispositivos. Los dispositivos se pueden filtrar por punto de venta y/o tienda
+        por: Este endpoint permite que você obtenha os dispositivos. Os dispositivos podem ser filtrados por ponto de venda e/ou loja
+      parameters:
+        - name: x-test-scope
+          in: header
+          description: This is a temporary header, it should be used just for development with the value "sandbox"
+          x-description-i18n:
+            eng: This is a temporary header, it should be used just for development with the value "sandbox"
+            spa: Este es un header temporal, debe usarse solo para desarrollo con el valor "sandbox"
+            por: Este é um header temporário, deve ser usado apenas para desenvolvimento com o valor "sandbox"
+          schema:
+            type: string
+            example: sandbox
+        - name: store_id
+          in: query
+          description: Devices Store Id filter (Optional)
+          x-description-i18n:
+            eng: Devices Store Id filter (Optional)
+            spa: Filtro de Id de tienda de dispositivos (opcional)
+            por: Filtro de ID de loja de dispositivos (opcional)
+          schema:
+            type: string
+            example: "1235456678"
+        - name: pos_id
+          in: query
+          description: Devices Pos Id filter (Optional)
+          x-description-i18n:
+            eng: Devices Pos Id filter (Optional)
+            spa: Filtro de Id de PDV de dispositivos (opcional)
+            por: Filtro de ID de PDV de dispositivos (opcional)
+          schema:
+            type: integer
+            example: 1235456678
+        - name: limit
+          in: query
+          description: pagination limit
+          x-description-i18n:
+            eng: pagination limit
+            spa: límite de paginación
+            por: limite de paginação
+          schema:
+            type: integer
+            example: 50
+        - name: offset
+          in: query
+          description: pagination offset
+          x-description-i18n:
+            eng: pagination offset
+            spa: offset de paginación
+            por: offset de paginação
+          schema:
+            type: integer
+            example: 0
+       
+      responses:
+        '200':
+          description: Success - Paged devices list
+          x-description-i18n:
+            eng: Success - Paged devices list
+            spa: Exito - lista de dispositivos paginados
+            por: Sucesso - lista de dispositivos paginados
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  devices:
+                    type: array
+                    description:
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                          example: "PAX_A910__SMARTPOS1234567890"
+                        operating_mode:
+                          type: string
+                          example: "STANDALONE"
+                  paging:
+                    type: object
+                    properties:
+                       total:
+                        type: integer
+                        example: 1
+                        description:
+                       offset:
+                        type: integer
+                        example: 0    
+                        description:      
+                       limit:
+                        type: integer
+                        example: 50
+                        description:   
+        '400':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey: 
+                    type: string
+                    enum:
+                      - 400-- Bad Request - query param incorrect format            
+        '401':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                 type: object
+                 properties:
+                    errorKey:
+                      type: string
+                      enum:
+                        - 401-- Unauthorized - token is invalid 
+        '403':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 403-- Forbidden Integrator isn't registered 
+        '500':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500-- Internal server error
