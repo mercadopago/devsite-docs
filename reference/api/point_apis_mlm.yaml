@@ -101,15 +101,27 @@ paths:
                        total:
                         type: integer
                         example: 1
-                        description:
+                        description: total records
+                        x-description-i18n:
+                          eng: total records
+                          spa: registros totales
+                          por: total de registros    
                        offset:
                         type: integer
                         example: 0    
-                        description:      
+                        description: pagination offset
+                        x-description-i18n:
+                          eng: pagination offset
+                          spa: offset de paginación
+                          por: offset de paginação       
                        limit:
                         type: integer
                         example: 50
-                        description:   
+                        description: pagination limit
+                        x-description-i18n:
+                          eng: pagination limit
+                          spa: límite de paginación
+                          por: limite de paginação     
         '400':
           description: Error
           x-description-i18n:
@@ -170,3 +182,580 @@ paths:
                     type: string
                     enum:
                       - 500-- Internal server error
+  /point/integration-api/devices/{deviceid}/payment-intents:
+    post:
+      tags:
+        - $ref: '#/tags/mp-point'
+      summary: Create payment intent
+      x-summary-i18n:
+        eng: Create payment intent
+        spa: Crear intención de pago
+        por: Criar intenção de pagamento
+      description: This endpoint allows to create a payment intent for a device
+      x-description-i18n:
+        eng: This endpoint allows to create a payment intent for a device
+        spa: Este endpoint permite crear una intención de pago para un dispositivo
+        por: Este endpoint permite que você crie uma intenção de pagamento para um dispositivo
+      parameters:
+        - name: x-test-scope
+          in: header
+          description: This is a temporary header, it should be used just for development with the value "sandbox"
+          schema:
+            type: string
+            example: sandbox
+        - name: deviceId
+          in: path
+          description: identifier of the device that will have a payment intent queued
+          x-description-i18n:
+            eng: identifier of the device that will have a payment intent queued
+            spa: identificador del dispositivo que tendrá un intento de pago en cola
+            por: identificador do dispositivo que terá uma tentativa de pagamento em fila
+          required: true
+          schema:
+            type: string
+            example: "{deviceId}"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                amount:
+                  type: integer
+                  format: int64
+                  example: 1500
+                  required: true
+                  minimum: 1
+                  description: A positive integer representing how much to charge. The value must have two decimal places in the integer part (e.g., 175 to charge $1.75). The value must be between [500, 20000000] (e.g., a value to charge between $5,00 to $200.000,00 MXN)
+                  x-description-i18n:
+                    eng: A positive integer representing how much to charge. The value must have two decimal places in the integer part (e.g., 175 to charge $1.75). The value must be between [500, 20000000] (e.g., a value to charge between $5,00 to $200.000,00 MXN)
+                    spa: Un valor entero positivo que representa cuánto cobrar. El valor debe tener dos decimales en la parte entera (por ejemplo, 175 para cobrar $1,75). El valor debe estar entre [500, 20000000] (por ejemplo, un valor a cobrar entre $5,00 to $200.000,00 MXN)
+                    por: Um número inteiro positivo que representa quanto carregar. O valor deve ter duas casas decimais na parte inteira (por exemplo, 175 para cobrar R$ 1,75). O valor deve estar entre [500, 20000000] (por exemplo, um recebível entre $5,00 to $200.000,00 MXN)
+                additional_info:
+                  type: object
+                  required: true
+                  description: payment intent additional info
+                  x-description-i18n:
+                    eng: payment intent additional info
+                    spa: información adicional de intención de pago
+                    por: informações adicionais de intenção de pagamento
+                  properties:
+                    external_reference:
+                      type: string
+                      example: "some-reference-from-your-application"
+                      x-example-i18n:
+                        eng: some-reference-from-your-application
+                        spa: alguna-referencia-sobre-tu-aplicación
+                        por: alguma-referência-sobre-seu-aplicativo
+                      description: An alphanumeric value can be a identificator in your application. It will be returned in the Webhook notification
+                      x-description-i18n:
+                        eng: An alphanumeric value can be a identificator in your application. It will be returned in the Webhook notification
+                        spa: Un valor alfanumérico puede ser un identificador en tu aplicación. Se devolverá en la notificación de Webhook.
+                        por: Um valor alfanumérico pode ser um identificador em seu aplicativo. Ele será retornado na notificação do Webhook.
+                    print_on_terminal:
+                      type: boolean
+                      example: true
+                      description: A boolean value that determines if you want to print the ticket on the device
+                      x-description-i18n:
+                        eng: A boolean value that determines if you want to print the ticket on the device
+                        spa: Un valor booleano que determina si desea imprimir el ticket en el dispositivo
+                        por: Um valor booleano que determina se você deseja imprimir o ticket no dispositivo
+                  
+      
+      responses:
+        '200':
+          description: Success - Payment intent succesfully created
+          x-description-i18n:
+            eng: Success - Payment intent succesfully created
+            spa: Exito - intención de pago creada con éxito
+            por: Sucesso - intenção de pagamento criada com sucesso
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                    example: "7f25f9aa-eea6-4f9c-bf16-a341f71ba2f1"
+                    description: payment intent identifier
+                    x-description-i18n:
+                      eng: payment intent identifier
+                      spa: identificador de intención de pago
+                      por: identificador de intenção de pagamento
+                  device_id:
+                    type: string
+                    example: "PAX_A910__SMARTPOS1234567890"
+                    description: identifier of the device that have a payment intent queued
+                    x-description-i18n:
+                      eng: identifier of the device that have a payment intent queued
+                      spa: identificador del dispositivo que tiene una intención de pago en cola
+                      por: identificador do dispositivo que tem intenção de pagamento em fila
+                  amount:
+                    type: integer
+                    format: int64
+                    example: 1500
+                    description: payment intent amount
+                    x-description-i18n:
+                      eng: payment intent amount
+                      spa: importe de la intención de pago
+                      por: valor da intenção de pagamento
+                  additional_info:
+                    type: object
+                    properties:
+                      external_reference:
+                        type: string
+                        example: "some-reference-from-your-application"
+                        x-example-i18n:
+                          eng: some-reference-from-your-application
+                          spa: alguna-referencia-sobre-tu-aplicación
+                          por: alguma-referência-sobre-seu-aplicativo
+                        description: An alphanumeric value can be a identificator in your application. It will be returned in the Webhook notification
+                        x-description-i18n:
+                          eng: An alphanumeric value can be a identificator in your application. It will be returned in the Webhook notification
+                          spa: Un valor alfanumérico puede ser un identificador en tu aplicación. Se devolverá en la notificación de Webhook.
+                          por: Um valor alfanumérico pode ser um identificador em seu aplicativo. Ele será retornado na notificação do Webhook.
+                      print_on_terminal:
+                        type: boolean
+                        example: true
+                        description: A boolean value that determines if you want to print the ticket on the device
+                        x-description-i18n:
+                          eng: A boolean value that determines if you want to print the ticket on the device
+                          spa: Un valor booleano que determina si desea imprimir el ticket en el dispositivo
+                          por: Um valor booleano que determina se você deseja imprimir o ticket no dispositivo
+
+        '401':
+            description: Error
+            x-description-i18n:
+              eng: Error
+              spa: Error
+              por: Erro
+            content:
+              application/json:
+                schema:
+                  type: object
+                  properties:
+                    errorKey:
+                      type: string
+                      enum:
+                        - 401-- Unauthorized Token is invalid
+        '400':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                 type: object
+                 properties:
+                    errorKey:
+                      type: string
+                      enum:
+                        - 400-- Bad request - Field is missing o incorrect
+        '403':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                    errorKey:
+                      type: string
+                      enum:
+                        - 403-- Forbidden - Integrator isn't registered
+        '409':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                    errorKey:
+                      type: string
+                      enum:
+                        - 409-- Conflict-error - Device has a queued payment intent
+        '500':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                 type: object
+                 properties:
+                    errorKey:
+                      type: string
+                      enum:
+                        - 500-- Internal server error
+  /point/integration-api/devices/{deviceid}/payment-intents/{paymentintentid}:
+    delete:
+      tags:
+        - $ref: '#/tags/mp-point'
+      summary: Cancel payment intent
+      x-summary-i18n:
+        eng: Cancel payment intent
+        spa: Cancelar intención de pago
+        por: Cancelar intenção de pagamento
+      description: This endpoint allows to cancel a payment intent
+      x-description-i18n:
+        eng: This endpoint allows to cancel a payment intent
+        spa: Este endpoint permite cancelar una intención de pago
+        por: Este endpoint permite cancelar uma intenção de pagamento
+      parameters:
+        - name: x-test-scope
+          in: header
+          description: This is a temporary header, it should be used just for development with the value "sandbox"
+          schema:
+            type: string
+            example: sandbox
+        - name: deviceId
+          in: path
+          description: identifier of the device that will have a payment intent queued
+          x-description-i18n:
+            eng: identifier of the device that will have a payment intent queued
+            spa: identificador del dispositivo que tendrá un intento de pago en cola
+            por: identificador do dispositivo que terá uma tentativa de pagamento em fila
+          required: true
+          schema:
+            type: string
+            example: "{deviceId}"
+        - name: paymentIntentId
+          in: path
+          description: Payment Intent ID
+          x-description-i18n:
+            eng: Payment Intent ID
+            spa: ID de intención de pago
+            por: ID de intenção de pagamento
+          required: true
+          schema:
+            type: string
+            example: "{paymentIntentId}"
+      responses:
+        '200':
+          description: Payment intent succesfully canceled
+          x-description-i18n:
+            eng: Payment intent succesfully canceled
+            spa: Intención de pago cancelada con éxito
+            por: Intenção de pagamento cancelada com sucesso
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                    example: "d71e88d6-6281-416b-b8ed-592c27352c99"
+        '401':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 401-- Unauthorized Token is invalid
+        '403':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                 type: object
+                 properties:
+                    errorKey:
+                      type: string
+                      enum:
+                      - 403-- Forbidden - Integrator isn't registered
+        '409':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorkey:
+                    type: string
+                    enum:
+                      - 409-- Conflict error - Payment intent is blocked by terminal
+        '500':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500-- Internal server error
+  /point/integration-api/payment-intents/{paymentintentid}:
+    get:
+      tags:
+        - $ref: '#/tags/mp-point'
+      summary: Search payment intent
+      x-summary-i18n:
+        eng: Search payment intent
+        spa: Buscar en intención de pago
+        por: Buscar em intenção de pagamento
+      description: This endpoint allows to get information of payment intent. This endpoint will provide the payment intent’s information, its final status and the payment-id, which can be used to get the final status of the transaction in the Payment-API. The Webhook notifications are the main communication point of the payment intent information, then this endpoint should be used for testing and eventualities, and not for polling, because it has restrictions like consume by time, allows to get information one request per second
+      x-description-i18n:
+        eng: This endpoint allows to get information of payment intent. This endpoint will provide the payment intent’s information, its final status and the payment-id, which can be used to get the final status of the transaction in the Payment-API. The Webhook notifications are the main communication point of the payment intent information, then this endpoint should be used for testing and eventualities, and not for polling, because it has restrictions like consume by time, allows to get information one request per second
+        spa: Este endpoint permite obtener información sobre la intención de pago. Este endpoint proporcionará la información de la intención de pago, su estado final y la identificación del pago, que se puede usar para obtener el estado final de la transacción en la API de pago. Las notificaciones de Webhook son el principal punto de comunicación de la información de intención de pago, entonces este endpoint debe usarse para pruebas y eventualidades, y no para encuestas, ya que tiene restricciones como consumo por tiempo, permite obtener información una solicitud por segundo
+        por: Este endpoint permite obter informações sobre a intenção de pagamento. Este endpoint fornecerá as informações da intenção de pagamento, seu status final e o ID do pagamento, que pode ser usado para obter o status final da transação na API de pagamento. As notificações do webhook são o principal ponto de comunicação das informações de intenção de pagamento, portanto este endpoint deve ser utilizado para testes e contingências, e não para pesquisas, pois possui restrições como consumo por tempo, permite uma requisição por segundo para obter informações
+      parameters:
+        - name: x-test-scope
+          in: header
+          description: This is a temporary header, it should be used just for development with the value "sandbox"
+          required: false
+          schema:
+            type: string
+            example: sandbox
+        - name: paymentIntentId
+          in: path
+          description: Payment Intent Id
+          required: true
+          schema:
+            type: string
+            example: "{paymentIntentId}"
+      responses:
+        '200':
+          description: success - Details of Payment Intent
+          x-description-i18n:
+            eng: success - Details of Payment Intent
+            spa: Exito - detalles de la intención de pago
+            por: sucesso - detalhes da intenção de pagamento
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                    description:
+                    example: "7f25f9aa-eea6-4f9c-bf16-a341f71ba2f1"
+                  state:
+                    type: string
+                    description:
+                    example: "FINISHED"
+                  amount:
+                    type: integer
+                    format: int64
+                    description:
+                    example: 1500
+                  device_id:
+                    type: string
+                    description:
+                    example: "PAX_A910__SMARTPOS1234567890"
+                  payment:
+                    type: object
+                    properties:
+                      id:
+                       type: int
+                       example: 16499678033
+                  additional_info:
+                    type: object
+                    properties:
+                      external_reference:
+                        type: string
+                        description:
+                        example: "some-reference-from-your-application"
+                        x-example-i18n:
+                          eng: some-reference-from-your-application
+                          spa: alguna-referencia-sobre-tu-aplicación
+                          por: alguma-referência-sobre-seu-aplicativo
+                      print_on_terminal:
+                        type: boolean
+                        description:
+                        example: true
+
+        '401':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 401-- Unauthorized - Token is invalid
+        '403':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 403-- Forbidden - Integrator isn't registered
+        '404':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 404-- Not-found - Payment intent doesn't exist
+        '500':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500-- Internal server error
+  /point/integration-api/devices/{device-id}:
+    patch:
+      tags:
+        - $ref: '#/tags/mp-point'
+      summary: Change operating mode
+      x-summary-i18n:
+        eng: Change operating mode
+        spa: Cambiar el modo de operación
+        por: Alterar modo de operação
+      description: This endpoint allows you to change the device operating mode, the options for operating mode are PDV and STANDALONE. PDV is used when you want to use device in mode integration with our API and STANDALONE is used when you want to process payments without our API
+      x-description-i18n:
+        eng: This endpoint allows you to change the device operating mode, the options for operating mode are PDV and STANDALONE. PDV is used when you want to use device in mode integration with our API and STANDALONE is used when you want to process payments without our API
+        spa: Este endpoint te permite cambiar el modo de operación del dispositivo, las opciones para el modo de operación son PDV y STANDALONE. PDV se usa cuando deseas usar el dispositivo en modo de integración con nuestra API y STANDALONE se usa cuando deseas procesar pagos sin nuestra API
+        por: Este endpoint permite alterar o modo de operação do dispositivo, as opções para o modo de operação são PDV e STANDALONE. PDV é usado quando você deseja usar o dispositivo em modo de integração com nossa API e STANDALONE é usado quando você deseja processar pagamentos sem nossa API
+      parameters:
+        - name: device-id
+          in: path
+          description: DeviceId
+          required: true
+          schema:
+            type: string
+            example: "{deviceId}"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+               type: object
+               properties:
+                  operating_mode:
+                    type: string
+                    required: true
+                    nullable: false
+                    example: "PDV"
+                    enum:
+                      - PDV -- point of sale, integrated mode with the API.
+                      - STANDALONE -- default device configuration, mode not integrated with the API.
+      responses:
+        '200':
+          description: Success - Operating mode successfully changed
+          x-description-i18n:
+            eng: Success - Operating mode successfully changed
+            spa: Éxito - Modo de operación cambió correctamente
+            por: Sucesso - Modo de operação alterado com sucesso
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  operating_mode:
+                    type: string
+                    nullable: false
+                    required: true
+                    example: "PDV"
+                    enum:
+                      - PDV -- point of sale, integrated mode with the API.
+                      - STANDALONE -- default device configuration, mode not integrated the API.
+        '400':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 400-- Bad-Request - Device id incorrect format
+        '403':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 403-- Unauthorized - User not logged into the device
+        '500':
+            description: Error
+            x-description-i18n:
+              eng: Error
+              spa: Error
+              por: Erro
+            content:
+              application/json:
+                schema:
+                  type: object
+                  properties:
+                    errorKey:
+                      type: string
+                      enum:
+                        - 500-- Internal server error
