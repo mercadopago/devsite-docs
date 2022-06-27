@@ -16,11 +16,11 @@ Você receberá uma resposta como esta:
 {
    "devices": [
        {
-           "id": "INGENICO_MOVE2500__ING-ARG-112334567",
+           "id": "PAX_A910__SMARTPOS1234567890",
            "operating_mode": "STANDALONE"
        },
        {
-           "id": "INGENICO_MOVE2500__ING-ARG-0987654",
+           "id": "PAX_A910__SMARTPOS12345678901",
            "operating_mode": "STANDALONE"
        },
        {
@@ -28,7 +28,7 @@ Você receberá uma resposta como esta:
            "operating_mode": "PDV"
        },
        {
-           "id": "INGENICO_MOVE2500__ING-ARG-1233456",
+           "id": "PAX_A910__SMARTPOS123456789042",
            "operating_mode": "STANDALONE"
        }
    ],
