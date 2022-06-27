@@ -17,11 +17,11 @@ You will receive a response like this:
 {
    "devices": [
        {
-           "id": "INGENICO_MOVE2500__ING-ARG-112334567",
+           "id": "PAX_A910__SMARTPOS1234567890",
            "operating_mode": "STANDALONE"
        },
        {
-           "id": "INGENICO_MOVE2500__ING-ARG-0987654",
+           "id": "PAX_A910__SMARTPOS12345678901",
            "operating_mode": "STANDALONE"
        },
        {
@@ -29,7 +29,7 @@ You will receive a response like this:
            "operating_mode": "PDV"
        },
        {
-           "id": "INGENICO_MOVE2500__ING-ARG-1233456",
+           "id": "PAX_A910__SMARTPOS123456789042",
            "operating_mode": "STANDALONE"
        }
    ],
@@ -128,7 +128,8 @@ In response, you will receive something similar to this:
 ```
 ------------
 
-[[[
+----[mlm]----
+
 ```curl
 
 curl --location --request POST 'https://api.mercadopago.com/point/integration-api/devices/:deviceId/payment-intents' \
@@ -141,13 +142,12 @@ curl --location --request POST 'https://api.mercadopago.com/point/integration-ap
     }
 }'
 ```
-]]]
 
-| Fiedl |  Description |
+| Campo |  Descrição |
 | --- | --- |
-| amount | Total amount of the intention to pay. Important: this field does not admit decimal points, therefore if you want to generate a payment intention, you must consider the two decimals of the value in its total. For example: to generate a payment order of value "15.00" you must enter "1500". |
-| external_reference | Field for exclusive use by the integrator to include your system's own references. |
-| print_on_terminal | Field that determines if the device prints the payment receipt. |
+| amount | Total amount of the payment intention. Important: this field does not allow decimal places, so if you want to generate a payment intent, you must consider the two decimal places of the total amount. For example: to generate a payment order for the amount "15.00" you must enter "1500". |
+| external_reference | Integrator-only field to include references specific to your system. |
+| print_on_terminal | Field that determines whether the device prints the payment receipt. |
 
 You will receive a response like this:
 
@@ -156,7 +156,7 @@ You will receive a response like this:
 
 {
   "id": "7d8c70b6-2ac8-4c57-a441-c319088ca3ca",
-  "device_id": "INGENICO_MOVE2500__ING-ARG-1234567",
+  "device_id": "PAX_A910__SMARTPOS123456789075",
   "amount": 1500,
   "additional_info": {
       "external_reference": "4561ads-das4das4-das4754-das456",
@@ -247,7 +247,7 @@ Sample response:
 {
     "state": "FINISHED",
     "id": "0aa0519d-d985-4e83-b62d-dda123456789",
-    "device_id": "88731317_INGENICO_MOVE2500_ING-ARG-12345678",
+    "device_id": "PAX_A910__SMARTPOS1234567890123",
     "amount": 600,
     "payment": {
         "id": "11123456789"

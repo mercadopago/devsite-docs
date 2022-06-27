@@ -129,7 +129,6 @@ Em resposta, você receberá algo semelhante a isso:
 
 ----[mlm]----
 
-[[[
 ```curl
 
 curl --location --request POST 'https://api.mercadopago.com/point/integration-api/devices/:deviceId/payment-intents' \
@@ -142,7 +141,6 @@ curl --location --request POST 'https://api.mercadopago.com/point/integration-ap
     }
 }'
 ```
-]]]
 
 | Campo |  Descrição |
 | --- | --- |
@@ -157,7 +155,7 @@ Em resposta, você receberá algo semelhante a isso:
 
 {
   "id": "7d8c70b6-2ac8-4c57-a441-c319088ca3ca",
-  "device_id": "INGENICO_MOVE2500__ING-ARG-1234567",
+  "device_id": "PAX_A910__SMARTPOS123456789075",
   "amount": 1500,
   "additional_info": {
       "external_reference": "4561ads-das4das4-das4754-das456",
@@ -248,7 +246,7 @@ Exemplo de resposta:
 {
     "state": "FINISHED",
     "id": "0aa0519d-d985-4e83-b62d-dda123456789",
-    "device_id": "88731317_INGENICO_MOVE2500_ING-ARG-12345678",
+    "device_id": "PAX_A910__SMARTPOS1234567890123",
     "amount": 600,
     "payment": {
         "id": "11123456789"
