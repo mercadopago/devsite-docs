@@ -13,6 +13,39 @@ curl --location --request GET 'https://api.mercadopago.com/point/integration-api
 
 You will receive a response like this:
 
+----[mlb, mla]----
+
+```json
+{
+   "devices": [
+       {
+           "id": "INGENICO_MOVE2500__ING-ARG-1123345670",
+           "operating_mode": "STANDALONE"
+       },
+       {
+           "id": "INGENICO_MOVE2500__ING-ARG-0987654P",
+           "operating_mode": "STANDALONE"
+       },
+       {
+           "id": "INGENICO_MOVE2500__ING-5467853",
+           "operating_mode": "PDV"
+       },
+       {
+           "id": "INGENICO_MOVE2500__ING-ARG-1233456",
+           "operating_mode": "STANDALONE"
+       }
+   ],
+   "paging": {
+       "total": 4,
+       "limit": 50,
+       "offset": 0
+   }
+}
+```
+------------
+
+----[mlm]----
+
 ```json
 {
    "devices": [
@@ -40,6 +73,9 @@ You will receive a response like this:
    }
 }
 ```
+
+------------
+
 ## Create the payment intent
 
 You can create a payment intent and assign it to your Point device in the following way:
