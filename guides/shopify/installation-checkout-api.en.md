@@ -17,7 +17,7 @@ To install Checkout Transparent in a Shopify store, follow the steps below:
 >
 > Note
 >
-> After installed, the Transparent Checkout can take up to 10 minutes to appear linked in the Shopify store due to the storage in the cache. If you need help to install Transparent Checkout, contact [Support](https://www.mercadopago.com/developers/en/support).
+> After installed, the Transparent Checkout can take up to 10 minutes to appear linked in the Shopify store due to the storage in the cache. If you need help to install Transparent Checkout, contact <a href="https://www.mercadopago.com/developers/en/support">Support</a>.
 
 > PREV_STEP_CARD_EN
 >
