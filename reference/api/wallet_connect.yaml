@@ -239,7 +239,7 @@ paths:
                     description: This is the token of the payer.
                     x-description-i18n:
                       eng: This is the token of the payer.
-                      spa: Este es el token del pagador
+                      spa: Este es el token del pagador.
                       por: Este é o token do pagador
                     example: abcdef1e23f4567d8e9123eb6591ff68df74c57930551ed980239f4538a7e530
         '400':
