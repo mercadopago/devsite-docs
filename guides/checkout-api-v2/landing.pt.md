@@ -33,7 +33,7 @@ bullet_section_with_media:
 bullet_section_with_media: 
  - type: reverse
  - title: Elegível a processo de PCI SAQ A
- - message: No Mercado Pago garantimos a Confidencialidade, Disponibilidade e Integridade de todos os nossos processos seguindo as melhores práticas do mercado para que você possa utilizar todos os nossos produtos com segurança.
+ - message: Garantimos a confidencialidade, disponibilidade e integridade de todos os nossos processos seguindo as melhores práticas do mercado para que você possa utilizar todos os nossos produtos com o máximo de segurança.
  - image: /api/api-integration-introduction-v2-pt.png
 ---
 
