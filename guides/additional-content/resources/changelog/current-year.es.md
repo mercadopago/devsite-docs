@@ -2,6 +2,20 @@
 Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones de Mercado Pago.
 
 ---
+## Junio 2022
+
+> CHANGELOG
+>
+> Reporte Liberaciones: actualización
+>
+> PRODUCT: MERCADO PAGO
+Los reportes que se generen a partir del 27 de junio presentarán en un único bloque de información y en orden cronológico todas las operaciones que impactan la cuenta de las personas usuarias (pagos, retiros, bloqueos, etc.). Esta mejora facilita identificar con claridad todos los movimientos de entrada y salida de su dinero para poder llevarlos a su contabilidad.
+
+Los reportes que abarquen fechas anteriores al 27 de junio no presentarán este cambio en la presentación de la información. 
+
+Hemos disponibilizado dos glosarios: uno para los reportes que llevan la nueva estructura y otro para los reportes que conservan la anterior. 
+
+[Ir a documentación.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/subscriptions/additional-content/reports/released-money/generate)
 
 ## Mayo 2022
 
