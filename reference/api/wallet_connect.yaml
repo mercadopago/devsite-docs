@@ -123,7 +123,7 @@ paths:
                 x-description-i18n:
                   eng: Agreement that contains an unique identifier and a success URL.
                   spa: Agreement que contiene un identificador único y un URL de éxito.
-                  por: Agreement que contém um identificador único e um URL de sucesso
+                  por: Agreement que contém um identificador único e um URL de sucesso.
                 type: object
                 properties:
                   agreement_id:
