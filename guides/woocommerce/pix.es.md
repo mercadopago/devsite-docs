@@ -1,10 +1,10 @@
 ## Pix
 
----[mlb]----
+----[mlb]----
 Este medio de pago adicionará Checkout Transparente y te permitirá ofrecer pagos en Pix a través de Mercado Pago.
 ------------
 
----[mla,mlu,mlc,mco,mlm,mpe]----
+----[mla, mlm, mpe, mco, mlu, mlc]----
 Este medio de pago adicionará Checkout API y te permitirá ofrecer pagos en Pix a través de Mercado Pago.
 ------------
 
