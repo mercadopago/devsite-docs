@@ -18,7 +18,7 @@ paths:
       x-description-i18n:
         eng: An agreement is an authorization link that the buyer receives to allow the seller to access their Mercado Pago wallet to debit the payment
         spa: Un Agreement es un link de autorización recibido por el comprador para permitir al vendedor acceder a su billetera de Mercado Pago con el fin de debitar el pago
-        por: Um Agreement é um link de autorização recebido pelo comprador para permitir ao vendedor acessar a sua carteira do Mercado Pago a fim de debitar o pagamento
+        por: Um Agreement é um link de autorização recebido pelo comprador para permitir ao vendedor acessar a sua carteira do Mercado Pago, a fim de debitar o pagamento
       parameters:
         - name: client.id
           in: query
