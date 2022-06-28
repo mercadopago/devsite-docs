@@ -102,7 +102,7 @@ paths:
                   paging:
                     type: object
                     properties:
-                        total:
+                      total:
                         type: integer
                         example: 1
                         description: total records
@@ -110,7 +110,7 @@ paths:
                           eng: total records
                           spa: registros totales
                           por: total de registros   
-                       offset:
+                      offset:
                         type: integer
                         example: 0    
                         description: pagination offset
@@ -118,7 +118,7 @@ paths:
                           eng: pagination offset
                           spa: offset de paginación
                           por: offset de paginação      
-                       limit:
+                      limit:
                         type: integer
                         example: 50
                         description: pagination limit
@@ -580,8 +580,12 @@ paths:
                 properties:
                   id:
                     type: string
-                    description: Id of the payment intent
                     example: "7f25f9aa-eea6-4f9c-bf16-a341f71ba2f1"
+                    description: Id of the payment intent
+                    x-description-i18n:
+                      eng: Id of the payment intent
+                      spa: Id de la intención de pago
+                      por: Id intenção de pagamento
                   state:
                     type: string
                     description: State of the payment intent
