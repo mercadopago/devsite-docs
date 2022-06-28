@@ -81,7 +81,7 @@ paths:
                       x-description-i18n:
                         eng: A brief description with information of the user. It can contains for example the name of the user
                         spa: Breve descripción con información del usuario. Por ejemplo, esta puede contener el nombre del usuario
-                        por: Breve descrição com informações do usuário. Por exemplo, esta pode conter o nome do usuário
+                        por: Breve descrição com informações do usuário. Por exemplo, essa pode conter o nome do usuário
                       example: Test account
                 agreement_data:
                   type: object
