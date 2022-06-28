@@ -62,7 +62,7 @@ paths:
                   description: The external_user contains the data that the Seller will need to use to indentify a User, so then it can continue with their own flow.
                   x-description-i18n:
                     eng: The external_user contains the data that the Seller will need to use to indentify a User, so then it can continue with their own flow.
-                    spa: El external_user contiene los datos que el vendedor necesitará para identificar un usuario a fin de que este pueda continuar con su propio flujo
+                    spa: El external_user contiene los datos que el vendedor necesitará para identificar un usuario a fin de que este pueda continuar con su propio flujo.
                     por: O external_user contém os dados que o vendedor precisará para identificar um usuário de modo que este possa prosseguir com o seu próprio fluxo.
                   properties:
                     id:
