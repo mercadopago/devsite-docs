@@ -29,11 +29,11 @@ paths:
                 properties:
                   id:
                     type: string
-                    example: 41034141533
+                    example: "41034141533"
                     description: Shipment ID of the order.
                   type:
                     type: string
-                    example: DELIVERY
+                    example: "DELIVERY"
                     description: This field refers to the way in which the order will be delivered.
                     enum:
                       - DELIVERY -- the restaurant will be responsible for delivering the order.
@@ -48,7 +48,7 @@ paths:
                     description: Order creation time (UTC date-time in ISO timestamp format).
                   orderTiming:
                     type: string
-                    example: INSTANT
+                    example: "INSTANT"
                     description: Scheduled time to start preparing an order. By now, only the start immediately is implemented, and the value of this field will always be INSTANT.
                   preparationStartDateTime: 
                     type: string
@@ -60,7 +60,7 @@ paths:
                     properties:
                       id: 
                         type: string
-                        example: 1070421029
+                        example: "1070421029"
                         description: User ID of the restaurant account linked to Mercado Pago.
                       name: 
                         type: string
@@ -189,6 +189,22 @@ paths:
                               type: string
                               example: "ARS"
                               description: Currency related to price.
+                        extension:
+                          type: object
+                          description: Additional information about the item
+                          properties:
+                            unitNetPrice:
+                              type: object
+                              description: In case of the product have a discount, this field will show the information of the value of the product with the applied discount
+                              properties:
+                                value:
+                                  type: number
+                                  example: 1000.0
+                                  description: Value of the product with discount
+                                currency:
+                                  type: string
+                                  example: "ARS"
+                                  description: Currency related to price.
                   otherFees:
                     type: array
                     description: Array of objects with amounts of fees charged by the order. Fees like shipping and operation of the marketplace are included.
@@ -202,7 +218,7 @@ paths:
                         type:
                           type: string
                           example: "DELIVERY_FEE"
-                          description: Field that specifies the type of the fee. The only value currently available is DELIVERY_FEE. 
+                          description: Field that specifies the type of the fee. 
                           enum: 
                             - DELIVERY_FEE -- fee charged for shipping the product.
                             - SERVICE_FEE -- fee for the using of Marketplace
@@ -210,7 +226,7 @@ paths:
                         receivedBy:
                           type: string
                           example: "MERCHANT"
-                          description: Field that specifies who will receive the fee amount. The only value currently available is MERCHANT. 
+                          description: Field that specifies who will receive the fee amount. 
                           enum: 
                             - MERCHANT -- the fee amount that will be received by the merchant.
                             - MARKETPLACE -- the fee amount that will be received by the marketplace.
@@ -232,7 +248,7 @@ paths:
                               description: Currency related to price. 
                   discounts:
                     type: array
-                    description: This field has no properties yet. Discount information will be added here in coming updates.
+                    description: Information about the discounts that can be applied on cart, items or on delivery fee.
                     items:
                       type: object
                       properties:
@@ -270,8 +286,8 @@ paths:
                                 example: "MARKETPLACE"
                                 description: Who sponsored the discount.
                                 enum:
-                                  - MARKETPLACE: The Marketplace will sponsor the discount.
-                                  - MERCHANT: The Merchant will sponsor the discount.
+                                  - MARKETPLACE -- The Marketplace will sponsor the discount.
+                                  - MERCHANT -- The Merchant will sponsor the discount.
                               amount: 
                                 type: object
                                 properties:
@@ -282,7 +298,19 @@ paths:
                                   currency:
                                     type: string
                                     example: "ARS"
-                                    description: Currency related to value.         
+                                    description: Currency related to value. 
+                        extension:
+                          type: object
+                          description: Discount coupon information
+                          properties:
+                            id:
+                              type: string
+                              example: "21515164-001"
+                              description: ID of the coupon
+                            name:
+                              type: string
+                              example: "coupon_off"
+                              description: Name fo the coupon
                   total:
                     type: object
                     description: Object that contains information about all amounts charged
