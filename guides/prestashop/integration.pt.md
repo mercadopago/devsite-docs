@@ -7,7 +7,7 @@ Para realizar a integração com o Mercado Pago, siga os procedimentos abaixo.
 3. No campo **Localização**, selecione o país de operação da sua conta do Mercado Pago.
 4. Na seção **Credenciais**, preencha com as [credenciais](/developers/pt/guides/additional-content/credentials/credentials) de **produção** e **teste** indicadas em seu [Dashboard](/developers/pt/guides/additional-content/dashboard/introduction). 
 5. Na tela de gerenciamento do módulo, insira o **nome e a categoria da sua loja**.
-6. Informe o seu *integrator_id* como membro do **&lt;dev&gt;program**, do Mercado Pago. Caso ainda não seja um membro, [clique aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/developer-program) para mais informações.
+6. Caso seja membro do **&lt;dev&gt;program**, o programa para desenvolvedores do Mercado Pago, informe o seu *integrator_id* como membro do programa. Se ainda for membro, [clique aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/developer-program) para mais informações.
  
 Feitas as configurações de negócio, configure as experiências de pagamento da sua loja de acordo com o tipo de checkout selecionado.
 
