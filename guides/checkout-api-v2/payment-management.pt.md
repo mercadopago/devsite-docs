@@ -1,4 +1,4 @@
-# Gerenciamento de pagamentos
+# Gestão de pagamentos
 
 Ao utilizar o Checkout Transparente para processar os pagamentos da sua loja, é importante ter em mente que as transações realizadas precisam ser gerenciadas, a fim de um maior controle financeiro dos valores que entram para o seu caixa.
 
