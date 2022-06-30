@@ -1,6 +1,6 @@
-# Plugin installation
+# Module installation
 
-The Mercado Pago plugin offers more than one way to install the module, but they all have the same integration result. You can install the Mercado Pago plugin in Magento 2 in three different ways:
+The Mercado Pago module offers more than one way to install the module, but they all have the same integration result. You can install the Mercado Pago module in Magento 2 in three different ways:
 
 * [Installation via Composer](/developers/en/docs/magento-two/installation/composer)
 * [Installation via Magento Marketplace](/developers/en/docs/magento-two/installation/magento-marketplace)
@@ -10,7 +10,7 @@ The Mercado Pago plugin offers more than one way to install the module, but they
 >
 > Prerequisites
 >
-> Conheça os pré-requisitos para realizar a integração.
+> Learn about the prerequisites for performing the integration.
 >
 > [Prerequisites](/developers/en/docs/magento-two/prerequisites)
 
@@ -18,6 +18,6 @@ The Mercado Pago plugin offers more than one way to install the module, but they
 >
 > Installation via Composer
 >
-> Veja como instalar o plugin do Mercado Pago na plataforma Magento 2 via Composer.
+> Check how to install the Mercado Pago module on the Magento 2 platform via Composer.
 >
 > [Installation via Composer](/developers/en/docs/magento-two/installation/composer)

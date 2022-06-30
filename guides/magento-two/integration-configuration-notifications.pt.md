@@ -3,14 +3,14 @@
 Para definir o status do pedido para notificações de pagamento, siga estas etapas:
 
 1. Acesse o menu **Stores > Configuration > Sales > Payment Methods**.
-2. Para configurar os status de pagamento, acesse a seção **Mercado Pago > Advanced** e vá até a opção "Order Status Options". Para cada status de pagamento, você pode escolher um status de pedido. Assim, quando sua loja receber uma notificação de pagamento, o plugin atualizará automaticamente o pedido com o status configurado.
+2. Para configurar os status de pagamento, acesse a seção **Mercado Pago > Advanced** e vá até a opção "Order Status Options". Para cada status de pagamento, você pode escolher um status de pedido. Assim, quando sua loja receber uma notificação de pagamento, o módulo atualizará automaticamente o pedido com o status configurado.
 3. Para salvar as configurações, clique no botão **Save Config**.
 
 > NOTE
 >
 > Importante
 >
-> O plugin está preparado para receber notificações de pagamento automaticamente, ou seja, sem a necessidade de configurar sua conta no Mercado Pago ou o plugin. </br>
+> O módulo está preparado para receber notificações de pagamento automaticamente, ou seja, sem a necessidade de configurar sua conta no Mercado Pago ou o módulo. </br>
 > </br><br/>
 > [Clique aqui](/developers/pt/guides/additional-content/notifications/webhooks/webhooks) para mais informações sobre as notificações do tipo Webhooks.
 
@@ -39,6 +39,6 @@ Pronto! O envio dos e-mails foi configurado com sucesso.
 >
 > Configure informações da loja
 >
-> Saiba como configure as informações de negócio da sua loja
+> Saiba como configurar as informações de negócio da sua loja.
 >
 > [Configure informações da loja](/developers/pt/docs/magento-two/integration-store)

@@ -1,12 +1,12 @@
 # Configurar pagamentos offline (ticket)
 
 ----[mlb]----
-Com o **ticket**, ofereça ao comprador a opção de realizar pagamentos com os meios de pagamento offline (boleto e caixa eletrônico), utilizando o [Checkout Transparente](/developers/pt/guides/checkout-api/landing).
+Com o **ticket**, ofereça ao comprador a opção de realizar pagamentos com os meios de pagamento offline (boleto bancário e caixa eletrônico), utilizando o [Checkout Transparente](/developers/pt/guides/checkout-api/landing).
 
 ------------
 
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-Com o **ticket**, ofereça ao comprador a opção de realizar pagamentos com os meios de pagamento offline (ticket e caixa eletrônico), utilizando o [Checkout API](/developers/pt/guides/checkout-api/landing).
+Com o **ticket**, ofereça ao comprador a opção de realizar pagamentos com os meios de pagamento offline (efectivo e caixa eletrônico), utilizando o [Checkout API](/developers/pt/guides/checkout-api/landing).
 
 ------------
 

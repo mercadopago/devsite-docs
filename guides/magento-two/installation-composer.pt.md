@@ -1,14 +1,14 @@
 # Instalação via Composer
 
-Para instalar o plugin Mercado Pago no Magento 2 via Composer, siga os passos abaixo.
+Para instalar o módulo Mercado Pago no Magento 2 via Composer, siga os passos abaixo.
 
-1. Em seu terminal, execute este comando para baixar o plugin Magento 2 com o Composer:
+1. Em seu terminal, execute este comando para baixar o módulo Magento 2 com o Composer:
 
 ```
 composer require mercadopago/magento2-plugin:3.*
 ```
 
-2. Em seguida, execute este comando para atualizar a lista de plugins Magento:
+2. Em seguida, execute este comando para atualizar a lista de módulos Magento:
 
 ```
 bin/magento setup:upgrade
@@ -32,20 +32,20 @@ Caso você enfrente problemas de permissão de pasta ao acessar a loja, será ne
 chmod 777 -R var/ pub/ generated/
 ```
 
-Pronto! Você instalou com sucesso o plugin Mercado Pago para Magento 2.
+Pronto! Você instalou com sucesso o módulo Mercado Pago para Magento 2.
 
 > PREV_STEP_CARD_PT
 >
-> Instalação do pluguin
+> Instalação do módulo
 >
-> Conheça as formas de instalação do plugin do Mercado Pago na plataforma Magento 2.
+> Conheça as formas de instalação do módulo do Mercado Pago na plataforma Magento 2.
 >
-> [Instalação do plugin](/developers/pt/docs/magento-two/installation)
+> [Instalação do módulo](/developers/pt/docs/magento-two/installation)
 
 > NEXT_STEP_CARD_PT
 >
 > Instalação via Magento Marketplace
 >
-> Veja como instalar o plugin do Mercado Pago na plataforma Magento 2 via Magento Marketplace.
+> Veja como instalar o módulo do Mercado Pago na plataforma Magento 2 via Magento Marketplace.
 >
 > [Instalação via Magento Marketplace](/developers/pt/docs/magento-two/installation/magento-marketplace)

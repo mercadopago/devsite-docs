@@ -6,29 +6,31 @@ content_section_with_media:
 ---
  
 ----[mlb]---- 
+
 ---
 bullet_section_with_media:
  - title: Payment
  - type: normal
- - message: With the Mercado Pago plugin you can configure the payment using:
+ - message: With the Mercado Pago module you can configure the payment using:
  - benefit_title: Checkout Pro
- - benefit_message: Payment is made on the Mercado Pago page (inside or outside your store) with cards (debit or credit), cash and Pix.
- - benefit_title: Checkout API
- - benefit_message: Payment is made without leaving your virtual store with cards (debit or credit), offline payments (ticket) and Pix.
+ - benefit_message: Payment is made out without leaving your virtual store with cards (debit or credit), offline payments (boleto bancário and ATM) and Pix.
+ - benefit_title: Checkout Transparente
+ - benefit_message: Payment is made on the Mercado Pago page (inside or outside your store) with cards (debit or credit), cash (boleto bancário) and Pix.
  - image: /magento-two/magento2-payment.png 
 ---
 ------------
 
 ----[mla, mlm, mlu, mco, mlc, mpe]----
+
 ---
 bullet_section_with_media:
  - title: Payment
  - type: normal
- - message: With the Mercado Pago plugin you can configure the payment using:
+ - message: With the Mercado Pago module you can configure the payment using:
  - benefit_title: Checkout Pro
- - benefit_message: Payment is made on the Mercado Pago page (inside or outside your store) with cards (debit or credit), cash and bank transfer.
+ - benefit_message: Payment is made out without leaving your virtual store with cards (debit or credit), offline payments (ticket and ATM) and Pix.
  - benefit_title: Checkout API
- - benefit_message: Payment is made without leaving your virtual store with cards (debit or credit), offline payments (ticket) and bank transfer.
+ - benefit_message: Payment is made on the Mercado Pago page (inside or outside your store) with cards (debit or credit), cash (ticket) and bank transfer.
  - image: /magento-two/magento2-payment.png 
 ---
 ------------

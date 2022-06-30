@@ -13,7 +13,7 @@ Para integrar o Checkout Pro, siga os passos abaixo.
 7. Defina o **número máximo de parcelas** aceitas no fluxo de pagamento com cartões de crédito.
 8. No campo **Statement Descriptor**, insira o texto que identificará o pagamento na fatura do cartão. Esta funcionalidade não está disponível em todos os países. 
 9. Ative o **modo binário** para configurar a recusa automática de pagamentos que não são aprovados instantaneamente por bancos ou outros adquirentes. Quando ativado, este modo de processamento só resultará no status de um pagamento como `approved` ou` rejected`. Não existirão estados intermediários como `in_proccess` ou` pending`. 
-10. Se dejar, você poderá personalizar um **banner** com os meios de pagamento disponível alterando a URL da imagem em questão. Por padrão, o plugin Mercado Pago irá configurar um banner com os meios de pagamento disponíveis de acordo com o seu país.
+10. Se dejar, você poderá personalizar um **banner** com os meios de pagamento disponível alterando a URL da imagem em questão. Por padrão, o módulo Mercado Pago irá configurar um banner com os meios de pagamento disponíveis de acordo com o seu país.
 11. Em **Checkout Position**, indique a posição em que o meio de pagamento ficará disponível para o comprador no fluxo de checkout. 
 12. Clique em **Set up installment and interest** para [configurar no Mercado Pago](https://www.mercadopago.com.br/costs-section#from-section=menu) a tarifa que será paga em cada compra e também oferecer parcelas sem juros para seus clientes.
 13. Em seguida, clique em** **Save Config** para salvar suas preferências.

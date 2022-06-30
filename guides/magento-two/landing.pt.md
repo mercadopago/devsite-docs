@@ -6,29 +6,31 @@ content_section_with_media:
 ---
  
 ----[mlb]---- 
+
 ---
 bullet_section_with_media:
  - title: Pagamento
  - type: normal
- - message: Com o plugin do Mercado Pago você pode configurar o pagamento utilizando:
+ - message: Com o módulo do Mercado Pago você pode configurar o pagamento utilizando:
  - benefit_title: Checkout Pro
- - benefit_message: O pagamento é realizado na página do Mercado Pago (dentro ou fora da sua loja) com cartões (débito ou crédito), dinheiro e Pix.
+ - benefit_message: O pagamento é realizado sem sair da sua loja virtual com cartões (débito ou crédito), pagamentos offline (boleto bancário e caixa eletrônico) e Pix.
  - benefit_title: Checkout Transparente
- - benefit_message: O pagamento é realizado sem sair da sua loja virtual com cartões (débito ou crédito), pagamentos offline (boleto bancário) e Pix.
+ - benefit_message: O pagamento é realizado na página do Mercado Pago (dentro ou fora da sua loja) com cartões (débito ou crédito), dinheiro (boleto bancário) e Pix.
  - image: /magento-two/magento2-payment.png 
 ---
 ------------
 
 ----[mla, mlm, mlu, mco, mlc, mpe]----
+
 ---
 bullet_section_with_media:
  - title: Pagamento
  - type: normal
- - message: Com o plugin do Mercado Pago você pode configurar o pagamento utilizando:
+ - message: Com o módulo do Mercado Pago você pode configurar o pagamento utilizando:
  - benefit_title: Checkout Pro
- - benefit_message: O pagamento é realizado na página do Mercado Pago (dentro ou fora da sua loja) com cartões (débito ou crédito), dinheiro e transferência bancária.
- - benefit_title: Checkout Transparente
- - benefit_message: O pagamento é realizado sem sair da sua loja virtual com cartões (débito ou crédito), pagamentos offline (boleto bancário) e transferência bancária.
+ - benefit_message: O pagamento é realizado sem sair da sua loja virtual com cartões (débito ou crédito), pagamentos offline (efectivo e caixa eletrônico) e transferência bancária.
+ - benefit_title: Checkout API
+ - benefit_message: O pagamento é realizado na página do Mercado Pago (dentro ou fora da sua loja) com cartões (débito ou crédito), dinheiro (efectivo) e transferência bancária.
  - image: /magento-two/magento2-payment.png 
 ---
 ------------

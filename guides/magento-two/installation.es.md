@@ -1,6 +1,6 @@
-# Instalación del plugin
+# Instalación del módulo
 
-Existen varias formas de instalar el plugin de Mercado Pago para Magento 2, pero todas tienen el mismo resultado de integración. Puedes instalar el plugin de Mercado Pago en Magento 2 de tres maneras diferentes:
+Existen varias formas de instalar el módulo de Mercado Pago para Magento 2, pero todas tienen el mismo resultado de integración. Puedes instalar el módulo de Mercado Pago en Magento 2 de tres maneras diferentes:
 
 * [Instalación via Composer](/developers/pt/docs/magento-two/installation/composer)
 * [Instalación via Magento Marketplace](/developers/pt/docs/magento-two/installation/magento-marketplace)
@@ -10,7 +10,7 @@ Existen varias formas de instalar el plugin de Mercado Pago para Magento 2, pero
 >
 > Requisitos previos
 >
-> Conheça os pré-requisitos para realizar a integração.
+> Conocer los requisitos previos para realizar la integración.
 >
 > [Requisitos previos](/developers/es/docs/magento-two/prerequisites)
 
@@ -18,6 +18,6 @@ Existen varias formas de instalar el plugin de Mercado Pago para Magento 2, pero
 >
 > Instalación via Composer
 >
-> Veja como instalar o plugin do Mercado Pago na plataforma Magento 2 via Composer.
+> Va cómo instalar el complemento de Mercado Pago en la plataforma Magento 2 a través de Composer.
 >
 > [Instalación via Composer](/developers/es/docs/magento-two/installation/composer)
