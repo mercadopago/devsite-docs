@@ -5,7 +5,7 @@ info:
   title: Mercado Pago API Reference
   version: '1.0'
 paths:
-  /users/test_user:
+  /users/test:
     post:
       tags:
         - $ref: '#/tags/checkout-api'
@@ -22,24 +22,6 @@ paths:
         eng: This endpoint handles http requests to create a test user
         spa: Este endpoint maneja las http requests para crear un usuario de prueba
         por: Este endpoint lida com http requests para criar um usuário de teste
-      parameters:
-        - name: access_token
-          in: query
-          description: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
-          x-description-i18n:
-            eng: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
-            spa: Token de acceso generado desde el vendedor por el proceso de autenticación (OAuth). Código de seguridad que identifica al usuario, sus privilegios y una aplicación utilizada en diferentes solicitudes de origen público para acceder a los recursos protegidos. Su validez está determinada por el parámetro expires_in y es similar a APP_USR-1585551492-030918-25######3458-2880736 estando compuesto por
-            por: Token de acesso gerado do vendedor pelo processo de autenticação (OAuth). Código de segurança que identifica o usuário, seus privilégios e uma aplicação utilizado nas diferentes requests de origem pública para ter acesso a recursos protegidos. Tem sua validade determinada pelo parâmetro expires_in e são semelhantes a APP_USR-1585551492-030918-25######3458-2880736 sendo compostos por
-          enum:
-            - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
-            - Client ID -- 1585551492
-            - Creation date (MMddHH) -- 030918
-            - Security hash -- 25######3458
-            - User ID -- 2880736
-          required: true
-          schema:
-            type: string
-            example: 12123adfasdf123u4u
       requestBody:
         content:
           application/json:
@@ -63,6 +45,15 @@ paths:
                     - MCO -- Mercado Libre Colombia
                     - MLB -- Mercado Libre Brasil
                     - MLM -- Mercado Libre México
+                description:
+                  type: string
+                  description: Description of the test user being created.
+                  x-description-i18n:
+                    eng: Description of the test user being created.
+                    spa: Descripción del usuario de pruebas que está siendo creado.
+                    por: Descrição do usuário de teste que está sendo criado.
+                  required: true
+                  example: "a description"
       responses:
         '200':
           description: Created
@@ -111,6 +102,14 @@ paths:
                       eng: ID of the site where the test user was created.
                       spa: ID del sitio donde se creó el usuario de prueba.
                       por: ID do site em que o usuário de teste foi criado.
+                  description:
+                    type: string
+                    example: "a description"
+                    description: Description of the test user being created.
+                    x-description-i18n:
+                      eng: Description of the test user being created.
+                      spa: Descripción del usuario de pruebas que está siendo creado.
+                      por: Descrição do usuário de teste que está sendo criado.
                   email:
                     type: string
                     example: "test_user_123@testuser.com"
