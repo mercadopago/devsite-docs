@@ -10,11 +10,10 @@ Execute o seguinte curl para gerar um usuário de teste:
 ```curl
 curl -X POST \
 -H "Content-Type: application/json" \
--H 'Authorization: Bearer PROD_ACCESS_TOKEN' \
-"https://api.mercadopago.com/users/test_user" \
--d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]"}'
+-H 'Authorization: Bearer ${TEST_ACCESS_TOKEN}' \
+"https://api.mercadopago.com/users/test" \
+-d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]","description" : "a description"}'
 ```
-
 A resposta terá estrutura similar a do exemplo abaixo:
 
 ```json
@@ -23,6 +22,8 @@ A resposta terá estrutura similar a do exemplo abaixo:
     "nickname": "TT123456",
     "password": "qatest123456",
     "site_status": "active",
+    "site_id": "[FAKER][GLOBALIZE][UPPER_SITE_ID]",
+    "description": "a description",
     "email": "test_user_123456@testuser.com",
     "date_created": "2021-11-04T12:02:35Z",
     "date_last_updated": "2021-11-04T12:02:35Z"
