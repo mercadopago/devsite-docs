@@ -350,14 +350,14 @@ console.error('error creating card token: ', e)
 
 To finish the card payment integration process, it is necessary for the backend to receive the form information with the generated token and the complete data according to the previous steps.
 
-With all the information collected in the backend, send a POST with the necessary attributes, paying attention to the parameters `token, `transaction_amount`, `installments`, `payment_method_id` and the `payer.email` to the endpoint [/v1/payments] (/developers/en/reference/payments/_payments/post) and execute the request or, if you prefer, send the information using the SDKs below.
+With all the information collected in the backend, send a POST with the necessary attributes, paying attention to the parameters `token`, `transaction_amount`, `installments`, `payment_method_id` and the `payer.email` to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post) and execute the request or, if you prefer, send the information using the SDKs below.
 
 
 > NOTE
 >
 > Important
 >
-> To increase the chances of payment approval and prevent the anti-fraud analysis from authorizing the transaction, we recommend entering as much information about the buyer when making the request. For more details on how to increase approval chances, see [How to improve payment approval](/developers/en/docs/checkout-api/how-tos/improve-approval).
+> To increase the chances of payment approval and prevent the anti-fraud analysis from authorizing the transaction, we recommend entering as much information about the buyer when making the request. For more details on how to increase approval chances, see [How to improve payment approval](/developers/en/docs/checkout-api/how-tos/improve-payment-approval).
 
 
 [[[
@@ -596,4 +596,4 @@ When finished, you can perform tests and ensure that the integration is working 
 >
 > Learn how to test the Checkout API integration in your store.
 >
-> [Integration Test](/developers/en/docs/checkout-api/test-integration/create-test-user)
+> [Integration Test](/developers/en/docs/checkout-api/integration-test/create-test-user)
