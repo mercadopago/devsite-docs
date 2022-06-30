@@ -1,0 +1,1 @@
+# Configure bank transfer payments

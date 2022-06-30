@@ -1,0 +1,1 @@
+# Configure card payments

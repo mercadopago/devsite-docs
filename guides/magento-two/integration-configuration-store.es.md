@@ -1,0 +1,1 @@
+# Configurar información de la tienda

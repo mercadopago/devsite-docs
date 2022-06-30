@@ -1,0 +1,1 @@
+# Instalación vía FTP

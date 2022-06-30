@@ -1,0 +1,1 @@
+# Configure payments with Pix

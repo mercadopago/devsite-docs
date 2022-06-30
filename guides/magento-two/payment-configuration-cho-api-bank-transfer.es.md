@@ -1,0 +1,1 @@
+# Configurar pagos por transferencia bancaria

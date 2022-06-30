@@ -1,0 +1,1 @@
+# Installation via Magento Marketplace
