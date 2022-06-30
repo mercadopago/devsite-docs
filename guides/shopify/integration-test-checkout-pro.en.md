@@ -6,10 +6,7 @@ The test purchases ensure that payments are processed correctly before allowing 
 2. Click on **Buy**, and continue with your cart.
 3. Enter a valid zip code according to the country where the store operates, to simulate the shipping. Click on **Continue**.
 4. Complete the requested fields, and select **Mercado Pago as a payment method**.
-5. On the checkout screen, choose to pay with a new credit card and use the [test cards](/developers/en/docs/shopify/test-cards) to make the payment.
-
-> It is important not to log into your Mercado Pago account or try to make the payment with cards for personal use.
-
+5. On the checkout screen, choose to pay with a new credit card and use the [test cards](/developers/en/docs/shopify/test-cards) to make the payment. **Important**: don't log into your Mercado Pago account or try to make the payment with cards for personal use.
 6. Enter the test card information provided, and click on **Pay**.
 7. After the checkout, you will see a purchase confirmation with Mercado Pago, and you will be redirected back to the store.
 

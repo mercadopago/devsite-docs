@@ -9,4 +9,4 @@ Para vincular um pedido do painel da Shopify com o pedido no painel de atividade
 5. Localize o campo **Chave de autorização** e copie seu valor.
 6. Por fim, acesse seu painel [Mercado Pago] (http://mercadopago.com) e use o valor copiado no buscador de atividades do Mercado Pago.
 
-![order-link-choapi](shopify-order-link-en.png)
+![order-link-choapi](/images/shopify/shopify-order-link-en.png)

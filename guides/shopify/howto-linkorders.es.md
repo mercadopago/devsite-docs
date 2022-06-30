@@ -9,6 +9,6 @@ Para vincular un pedido del panel de control de Shopify con un pedido del panel 
 5. Busca el campo **Clave de Autorización** y copia su valor.
 6. Por último, dirígete a tu panel de [Mercado Pago](http://mercadopago.com) y utiliza el valor copiado en el buscador de actividades de Mercado Pago. 
 
-![link-pedidos-choapi](shopify-link-pedidos-es.png)
+![link-pedidos-choapi](/images/shopify/shopify-link-pedidos-es.png)
 
 
