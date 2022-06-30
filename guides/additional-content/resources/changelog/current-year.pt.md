@@ -2,10 +2,29 @@
 Descubra tudo sobre as novas versões e atualizações das integrações do Mercado Pago.
 
 ---
+## Junho 2022
 
-## Maio 2022
+### 30 de junho
 
-### 16 de maio
+> CHANGELOG
+>
+> Nova versão WooCommerce
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: WOOCOMMERCE
+Lançamos a nova versão 6.0.1 para WooCommerce.
+
+[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/woocommerce/introduction)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v6.0.1).
+> 
+
+### 27 de junho
 
 > CHANGELOG
 >
@@ -24,6 +43,9 @@ Lançamos a nova versão 6.0.0 para WooCommerce.
 >
 > Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v6.0.0).
 > 
+
+
+## Maio 2022
 
 ### 05 de maio
 
