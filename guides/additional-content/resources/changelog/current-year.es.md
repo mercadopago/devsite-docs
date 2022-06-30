@@ -4,22 +4,26 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 ---
 ## Junio 2022
 
+### 30 de Junio
+
 > CHANGELOG
 >
-> Reporte Liberaciones: actualización
+> Nueva versión WooCommerce
 >
-> PRODUCT: MERCADO PAGO
-Los reportes que se generen a partir del 27 de junio presentarán en un único bloque de información y en orden cronológico todas las operaciones que impactan la cuenta de las personas usuarias (pagos, retiros, bloqueos, etc.). Esta mejora facilita identificar con claridad todos los movimientos de entrada y salida de su dinero para poder llevarlos a su contabilidad.
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: WOOCOMMERCE
+Lanzamos la nueva versión 6.0.1 para WooCommerce.
 
-Los reportes que abarquen fechas anteriores al 27 de junio no presentarán este cambio en la presentación de la información. 
+[Ir a documentación de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/woocommerce/introduction)
 
-Hemos disponibilizado dos glosarios: uno para los reportes que llevan la nueva estructura y otro para los reportes que conservan la anterior. 
-
-[Ir a documentación.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/subscriptions/additional-content/reports/released-money/generate)
-
-## Mayo 2022
-
-### 19 de mayo
+> GIT
+>
+> GitHub
+>
+> Consulta en GitHub el detalle de los [últimos cambios productivos](https://github.com/mercadopago/cart-woocommerce/releases/tag/v6.0.1).
+> 
+### 27 de Junio
 
 > CHANGELOG
 >
@@ -37,6 +41,22 @@ Lanzamos la nueva versión 6.0.0 para WooCommerce.
 > GitHub
 >
 > Consulta en GitHub el detalle de los [últimos cambios productivos](https://github.com/mercadopago/cart-woocommerce/releases/tag/v6.0.0).
+
+
+> CHANGELOG
+>
+> Reporte Liberaciones: actualización
+>
+> PRODUCT: MERCADO PAGO
+Los reportes que se generen a partir del 27 de junio presentarán en un único bloque de información y en orden cronológico todas las operaciones que impactan la cuenta de las personas usuarias (pagos, retiros, bloqueos, etc.). Esta mejora facilita identificar con claridad todos los movimientos de entrada y salida de su dinero para poder llevarlos a su contabilidad.
+
+Los reportes que abarquen fechas anteriores al 27 de junio no presentarán este cambio en la presentación de la información. 
+
+Hemos disponibilizado dos glosarios: uno para los reportes que llevan la nueva estructura y otro para los reportes que conservan la anterior. 
+
+[Ir a documentación.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/subscriptions/additional-content/reports/released-money/generate)
+
+## Mayo 2022
 
 ### 13 de mayo
 
