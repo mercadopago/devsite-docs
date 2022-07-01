@@ -9,7 +9,7 @@ Abaixo listamos os dois tipos de usuários necessários para realizar o fluxo de
 * **Vendedor:** É a conta que você usa para configurar a aplicação e as credenciais para a cobrança.
 * **Comprador:** É a conta que você usa para testar o processo de compra.
 
-Para criar um usuário de teste, envie sua **credencial de produção** _Access token_ ao endpoint [/users/test](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/test_user/_users_test_user/post) e execute a requisição.
+Para criar um usuário de teste, envie sua **credencial de produção** _Access token_ ao endpoint [/users/test](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/test_user/_users_test/post) e execute a requisição.
 
 > NOTE
 >

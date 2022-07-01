@@ -30,7 +30,7 @@ A resposta terá estrutura similar a do exemplo abaixo:
 }
 ```
 
-Para mais informações sobre os parâmetros e as respostas da API de usuário de teste, acesse as [Referências da API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/test_user/_users_test_user/post)
+Para mais informações sobre os parâmetros e as respostas da API de usuário de teste, acesse as [Referências da API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/test_user/_users_test/post)
 
 > WARNING
 >

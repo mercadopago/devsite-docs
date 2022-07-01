@@ -9,4 +9,4 @@ Abaixo listamos os dois tipos de usuários necessários para realizar os testes.
 * **Vendedor:** é a conta que você usa para configurar a aplicação e as credenciais para a cobrança.
 * **Comprador:** é a conta que você usa para testar o processo de compra.
 
-Para criar um usuário de teste, envie um POST com sua **credencial de produção** _Access token_ ao endpoint [/users/test](/developers/pt/reference/test_user/_users_test_user/post) e execute a requisição.
+Para criar um usuário de teste, envie um POST com sua **credencial de produção** _Access token_ ao endpoint [/users/test](/developers/pt/reference/test_user/_users_test/post) e execute a requisição.
