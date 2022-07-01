@@ -9,7 +9,7 @@ A continuación, enumeramos los dos tipos de usuarios necesarios para realizar e
 * **Vendedor:** Esta es la cuenta que utilizas para configurar la aplicación y las credenciales para la facturación.
 * **Comprador:** Esta es la cuenta que utilizas para probar el proceso de compra.
 
-Para crear un usuario de prueba, envía tu **credencial de producción** _Access token_ al endpoint [/users/test](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/test_user/_users_test_user/post) y ejecuta la solicitud.
+Para crear un usuario de prueba, envía tu **credencial de producción** _Access token_ al endpoint [/users/test](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/test_user/_users_test/post) y ejecuta la solicitud.
 
 > NOTE
 >

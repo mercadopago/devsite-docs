@@ -31,7 +31,7 @@ The answer will have a structure similar to the following example:
 }
 ```
 
-For more information about test user API parameters and responses, check [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/test_user/_users_test_user/post)
+For more information about test user API parameters and responses, check [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/test_user/_users_test/post)
 
 >WARNING
 >
