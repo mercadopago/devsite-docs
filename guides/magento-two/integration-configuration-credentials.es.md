@@ -14,7 +14,7 @@ Para integrarse con Mercado Pago, primero debe ingresar sus credenciales para ha
 >
 > Conecta tu cuenta de Mercado Pago al módulo y captura los pagos que recibes por tus ventas online.
 >
-> [Configuración de la integración](/developers/es/docs/magento-two/integration)
+> [Configuración de la integración](/developers/es/docs/magento-two/integration-configuration)
 
 > NEXT_STEP_CARD_ES
 >

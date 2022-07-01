@@ -42,7 +42,7 @@ And you’re done! You have already successfully installed the Mercado Pago modu
 >
 > [Pluguin installation](/developers/en/docs/magento-two/installation)
 
-> NEXT_STEP_CARD_PT
+> NEXT_STEP_CARD_EN
 >
 > Installation via Magento Marketplace
 >

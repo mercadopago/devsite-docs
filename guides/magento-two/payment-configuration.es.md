@@ -27,7 +27,7 @@ La integración del módulo de Mercado Pago con la tienda Magento 2 te permite u
 >
 > Aprende a configurar el Checkout Transparente para recibir pagos en su tienda. 
 >
-> [Configurar pagos con Checkout Transparente](/developers/es/docs/magento-two/payment-configuration/cho-api)
+> [Configurar pagos con Checkout Transparente](/developers/es/docs/magento-two/payment-configuration/checkout-api)
 ------------
 
 ----[mla, mlm, mpe, mco, mlu, mlc]----

@@ -20,17 +20,6 @@ The integration of the Mercado Pago module with the Magento 2 store allows you t
 >
 > [Store settings](/developers/en/docs/magento-two/integration-store)
 
-----[mlb]----
-> NEXT_STEP_CARD_EN
->
-> Configure payments with Checkout Transparente
->
-> Learn how to set up Checkout Transparente to receive payments in your store.
->
-> [Configure payments with Checkout Transparente](/developers/en/docs/magento-two/payment-configuration/cho-api)
-------------
-
-----[mla, mlm, mpe, mco, mlu, mlc]----
 > NEXT_STEP_CARD_EN
 >
 > Configure payments with Checkout API
@@ -38,4 +27,3 @@ The integration of the Mercado Pago module with the Magento 2 store allows you t
 > Learn how to set up Checkout API to receive payments in your store.
 >
 > [Configure payments with Checkout API](/developers/en/docs/magento-two/payment-configuration/checkout-api)
-------------

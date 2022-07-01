@@ -26,7 +26,6 @@ To integrate the payment method, follow the steps below.
 > Configure your store to receive payments offline (ticket and ATM) using the Checkout API.
 >
 > [Ticket](/developers/en/docs/magento-two/payment-configuration/checkout-api/ticket)
-------------
 
 > NEXT_STEP_CARD_EN
 >

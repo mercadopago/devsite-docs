@@ -37,7 +37,7 @@ Una vez que se complete el proceso de compra inicial, vea a continuación cómo 
 >
 > Importante
 >
-> Ao finalizar a compra teste com Checkout Pro, no Painel Administrativo da Magento 2 não será possível visualizar a compra como aprovada, o pedido é gerado automaticamente, mas não consta como pago porque o processo ocorreu dentro do ambiente do Mercado Pago e não no ambiente Tienda. </br>
+> Ao finalizar a compra teste com Checkout Pro, no Painel Administrativo da Magento 2 não será possível visualizar a compra como aprovada, o pedido é gerado automaticamente, mas não consta como pago porque o processo ocorreu dentro do ambiente do Mercado Pago e não no ambiente Tienda.
 > </br> <br/>
 > Con la prueba de compra realizada con el Checkout Transparente, se podrá visualizar la aprobación del pedido. </br>
 > </br> <br/>

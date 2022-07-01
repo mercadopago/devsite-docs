@@ -37,11 +37,11 @@ Feito o processo inicial de compra, veja abaixo como testar a integração de ac
 >
 > Importante
 > 
-> Ao finalizar a compra teste com Checkout Pro, no Painel Administrativo da Magento 2 não será possível visualizar a compra como aprovada, o pedido é gerado automaticamente, mas não consta como pago porque o processo ocorreu dentro do ambiente do Mercado Pago e não no ambiente da loja. </br>
+> Ao finalizar a compra teste com Checkout Pro, no Painel Administrativo da Magento 2 não será possível visualizar a compra como aprovada, o pedido é gerado automaticamente, mas não consta como pago porque o processo ocorreu dentro do ambiente do Mercado Pago e não no ambiente da loja.
 > </br> <br/>
 > Já com teste de compra feito com o Checkout Transparente, será possível visualizar a aprovação do pedido. </br> 
 > </br> <br/>
-> Importante salientar também que, em ambas os checkouts, essa informação de pagamento aprovado não constará no histórico da conta do Mercado Pago porque nele só constam despesas reais (feitas em produção).
+> Importante salientar também que, em ambos os checkouts, essa informação de pagamento aprovado não constará no histórico da conta do Mercado Pago porque nele só constam despesas reais (feitas em produção).
 
 > NEXT_STEP_CARD_PT
 >

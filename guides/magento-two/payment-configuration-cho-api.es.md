@@ -14,13 +14,23 @@ Vea a continuación qué métodos de pago están disponibles para la tienda al i
 
 ------------
 
+* [Cartões](/developers/es/docs/magento-two/payment-configuration/checkout-api/cards): tarjetas de crédito y débito.
+----[mlb]----
+* [Ticket](/developers/es/docs/magento-two/payment-configuration/checkout-api/ticket): pagos offline (boleto bancário y cajero automático).
+* [Pix](/developers/es/docs/magento-two/payment-configuration/checkout-api/pix): transferência bancária disponível 24h por dia. transferencia bancaria disponible las 24 horas. La opción de pago por Pix solo se mostrará si existe una [Clave Pix registrada](/developers/es/guides/checkout-api/receiving-payment-by-pix) en Mercado Pago. 
+------------
+----[mla, mlm, mpe, mco, mlu, mlc]---- 
+* [Ticket](/developers/es/docs/magento-two/payment-configuration/checkout-api/ticket): pagos offline (efectivo y cajero automático).
+* [Transferência bancária](/developers/es/docs/magento-two/payment-configuration/checkout-api/bank-transfer): transferencia entre cuentas bancarias dentro del plazo estipulado por el Banco Central de tu país.
+------------
+
 > PREV_STEP_CARD_ES
 >
 > Configuración de pago
 >
 > Aprende a configurar los checkouts de Mercado Pago para recibir pagos de tu tienda.
 >
-> [Configuración de pago](/developers/es/docs/magento-two/payment-setup)
+> [Configuración de pago](/developers/es/docs/magento-two/payment-configuration)
 
 ----[mlb]----
 > NEXT_STEP_CARD_ES
@@ -29,7 +39,7 @@ Vea a continuación qué métodos de pago están disponibles para la tienda al i
 >
 > Aprende cómo configurar el Checkout Transparente para recibir pagos con tarjeta en tu tienda.
 >
-> [Configurar pagos con tarjeta](/developers/es/docs/magento-two/payment-setup/cho-api/cards)
+> [Configurar pagos con tarjeta](/developers/es/docs/magento-two/payment-configuration/checkout-api/cards)
 ------------
 
 ----[mla, mlm, mpe, mco, mlu, mlc]---- 
@@ -39,5 +49,5 @@ Vea a continuación qué métodos de pago están disponibles para la tienda al i
 >
 > Aprende cómo configurar el Checkout API para recibir pagos con tarjeta en tu tienda.
 >
-> [Configurar pagos con tarjeta](/developers/es/docs/magento-two/payment-setup/cho-api/cards)
+> [Configurar pagos con tarjeta](/developers/es/docs/magento-two/payment-configuration/checkout-api/cards)
 ------------

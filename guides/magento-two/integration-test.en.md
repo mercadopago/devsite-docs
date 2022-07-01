@@ -37,7 +37,7 @@ Once the initial purchase process is complete, see below how to test the integra
 >
 > Important
 >
-> When finalizing the test purchase with Checkout Pro, in the Magento 2 Administrative Panel, it will not be possible to view the purchase as approved, the order is automatically generated, but it is not listed as paid because the process took place within the Mercado Pago environment and not in the from the store. </br>
+> When finalizing the test purchase with Checkout Pro, in the Magento 2 Administrative Panel, it will not be possible to view the purchase as approved, the order is automatically generated, but it is not listed as paid because the process took place within the Mercado Pago environment and not in the from the store.
 > </br> <br/>
 > Already with test purchase done with Checkout API, you will be able to view the order approval. </br>
 > </br> <br/>

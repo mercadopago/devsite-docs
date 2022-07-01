@@ -14,7 +14,7 @@ Para realizar a integração com o Mercado Pago, primeiro você deve inserir sua
 >
 > Conecte sua conta do Mercado Pago ao módulo e capture os pagamentos que você receber pelas suas vendas on-line.
 >
-> [Configuração da integração](/developers/pt/docs/magento-two/integration)
+> [Configuração da integração](/developers/pt/docs/magento-two/integration-configuration)
 
 > NEXT_STEP_CARD_PT
 >

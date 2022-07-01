@@ -22,4 +22,4 @@
 >
 > Conecta tu cuenta de Mercado Pago al módulo y captura los pagos que recibes por tus ventas online.
 >
-> [Configuración de la integración](/developers/pt/docs/magento-two/integration-configuration)
+> [Configuración de la integración](/developers/es/docs/magento-two/integration-configuration)

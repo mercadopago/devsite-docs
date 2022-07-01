@@ -14,7 +14,7 @@ To integrate with Mercado Pago, you must first enter your credentials to enable 
 >
 > Connect your Mercado Pago account to the module and capture the payments you receive for your online sales.
 >
-> [Integration configuration](/developers/en/docs/magento-two/integration)
+> [Integration configuration](/developers/en/docs/magento-two/integration-configuration)
 
 > NEXT_STEP_CARD_EN
 >

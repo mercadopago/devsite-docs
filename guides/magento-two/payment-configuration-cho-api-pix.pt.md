@@ -3,6 +3,8 @@
 ----[mlb]---- 
 Com o [Checkout Transparente](/developers/pt/guides/checkout-api/landing), ofereça pagamentos com **Pix** diretamente em sua loja. O Pix é um meio de pagamento instantâneo e disponível 24h por dia.
 
+------------
+
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 Com o [Checkout API ](/developers/pt/guides/checkout-api/landing), ofereça pagamentos com **Pix** diretamente em sua loja. O Pix é um meio de pagamento instantâneo e disponível 24h por dia.
 
