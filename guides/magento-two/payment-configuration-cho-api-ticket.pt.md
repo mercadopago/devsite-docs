@@ -46,5 +46,5 @@ Para integrar a forma de pagamento, siga os passos abaixo.
 >
 > Configure a sua loja para receber pagamentos via transferência bancária utilizando o Checkout API.
 >
-> [Pix](/developers/pt/docs/magento-two/payment-configuration/checkout-api/bank-transfer)
+> [Transferência bancária](/developers/pt/docs/magento-two/payment-configuration/checkout-api/bank-transfer)
 ------------

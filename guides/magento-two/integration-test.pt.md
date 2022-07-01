@@ -4,7 +4,7 @@ O módulo do Mercado Pago vem com o **ambiente Sandbox** ativo por padrão. Ness
  
 1. Vá para o menu **Stores > Configuration > Sales > Payment Methods**.
 2. No campo **Merchant Country**, selecione o país de operação da sua loja.
-3. Em seguida, acesse a seção **Mercado Pago > Credenciais** para habilitar os meios de pagamento disponíveis no país de origem da loja.
+3. Em seguida, acesse a seção **Mercado Pago > Credentials** para habilitar os meios de pagamento disponíveis no país de origem da loja.
 4. Na página em questão você encontrará os campos **Public key** e **Access token**, que você deve preencher com as com as [credenciais](/developers/pt/guides/additional-content/credentials/credentials) de **teste** indicadas em seu seu [Dashboard](/developers/pt/guides/additional-content/dashboard/introduction).
 5. Depois de definir suas credenciais, clique no botão **Save Config** no canto superior direito. É importante que você salve suas credenciais antes de continuar porque isso habilitará os meios de pagamento disponíveis em seu país.
 6. Feitas as devidas configurações, acesse aa página inicial da sua loja na Magento, selecione um produto e clique em **Add to Cart**.
@@ -37,9 +37,9 @@ Feito o processo inicial de compra, veja abaixo como testar a integração de ac
 >
 > Importante
 > 
-> Ao finalizar a compra teste com Checkout Pro, no Painel Administrativo da Magento 2 não será possível visualizar a compra como aprovada, o pedido é gerado automaticamente, mas não consta como pago porque o processo ocorreu dentro do ambiente do Mercado Pago e não no ambiente da loja. 
+> Ao finalizar a compra teste com Checkout Pro, no Painel Administrativo da Magento 2 não será possível visualizar a compra como aprovada, o pedido é gerado automaticamente, mas não consta como pago porque o processo ocorreu dentro do ambiente do Mercado Pago e não no ambiente da loja. </br>
 > </br> <br/>
-> Já com teste de compra feito com o ----[mlb]---- Checkout Transparente, ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API, ------------ será possível visualizar a aprovação do pedido.  
+> Já com teste de compra feito com o Checkout Transparente, será possível visualizar a aprovação do pedido. </br> 
 > </br> <br/>
 > Importante salientar também que, em ambas os checkouts, essa informação de pagamento aprovado não constará no histórico da conta do Mercado Pago porque nele só constam despesas reais (feitas em produção).
 
