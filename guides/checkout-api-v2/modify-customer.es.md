@@ -247,7 +247,7 @@ curl -X PUT \
 >
 > Consulta cómo crear un cliente y una tarjeta 
 >
-> [Crear cliente y tarjeta](/developers/es/docs/checkout-api/customer-management/create-customer-and-card)
+> [Crear cliente y tarjeta](/developers/es/docs/checkout-api/cards-and-customers-management/create-customer-and-card)
 
 > NEXT_STEP_CARD_ES
 >
@@ -255,4 +255,4 @@ curl -X PUT \
 >
 > Consulta cómo buscar un cliente a partir de información específica.
 >
-> [Buscar cliente](/developers/es/docs/checkout-api/customer-management/search-customers)
+> [Buscar cliente](/developers/es/docs/checkout-api/cards-and-customers-management/search-customers)

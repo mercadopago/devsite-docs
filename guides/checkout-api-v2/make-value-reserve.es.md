@@ -6,11 +6,11 @@
       - mpe
 ---
 
-# Realizar una reserva de fondos
+# Reservar fondos
 
 Una reserva de fondos ocurre cuando se realiza una compra y se reserva su monto del límite total de la tarjeta, asegurando que el valor se mantenga hasta la finalización del procesamiento.
 
-Para realizar una autorización de reserva, envíe un **POST** con todos los atributos necesarios y agregue el atributo `capture=false` al endpoint [/v1/pagos](/developers/es/reference/payments/_payments/post) y ejecute la solicitud o, si lo prefiere, use uno de los SDK a continuación.
+Para realizar una autorización de reserva, envíe un **POST** con todos los atributos necesarios y agregue el atributo `capture=false` al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) y ejecute la solicitud o, si lo prefiere, use uno de los SDK a continuación.
 
 [[[
 ```php
@@ -209,10 +209,10 @@ Además, también es posible resultar como rechazado o pendiente. Ten en cuenta 
 > La reserva tendrá una validez de 5 días. Si no la capturas hasta ese momento, será cancelada. Además, ebes guardar el ID del pago para poder finalizar el proceso.
 ------------
 
-> PREV_STEP_CARD_ES
+> NEXT_STEP_CARD_ES
 >
 > Capturar pago autorizado
 >
 > Conozca las formas disponibles para capturar un pago autorizado.
 >
-> [Capturar pago autorizado](/developers/pt/docs/checkout-api/payment-management/make-value-reserve)
+> [Capturar pago autorizado](/developers/es/docs/checkout-api/payment-management/capture-authorized-payment)

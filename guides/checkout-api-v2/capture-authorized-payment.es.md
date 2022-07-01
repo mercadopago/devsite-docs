@@ -110,7 +110,7 @@ La respuesta va a devolver que el pago se encuentra aprobado y acreditado.
 
 ## Capturar monto parcial
 
-Para capturar un monto inferior al monto reservado, envíe un **PUT** con el nuevo valor informado en el parámetro `transaction_amount` al endpoint [/v1/pagos/{id}](/developers/es/reference/payments/_payments_id/put) y ejecute la solicitud o, si lo prefiere, use uno de nuestros SDK a continuación.
+Para capturar un monto inferior al monto reservado, envíe un **PUT** con el nuevo valor informado en el parámetro `transaction_amount` al endpoint [/v1/payments/{id}](/developers/es/reference/payments/_payments_id/put) y ejecute la solicitud o, si lo prefiere, use uno de nuestros SDK a continuación.
 
 ----[mla]----
 > WARNING
@@ -228,7 +228,18 @@ La respuesta va a devolver que el pago se encuentra aprobado y acreditado.
 > No es posible captar un monto mayor al monto reservado, para ello deberá cancelar la reserva y generar una nueva.
 
 
+
 > PREV_STEP_CARD_ES
+>
+> Reservar fondos
+>
+> Obtenga más información sobre cómo funciona la reserva de fondos para un pago.
+>
+> [Reservar fondos](/developers/es/docs/checkout-api/payment-management/make-value-reserve)
+
+
+
+> NEXT_STEP_CARD_ES
 >
 > Cancelar reserva
 >
@@ -236,10 +247,3 @@ La respuesta va a devolver que el pago se encuentra aprobado y acreditado.
 >
 > [Cancelar reserva](/developers/es/docs/checkout-api/payment-management/cancel-reserve)
 
-> NEXT_STEP_CARD_ES
->
-> Reservar fondos
->
-> Obtenga más información sobre cómo funciona la reserva de fondos para un pago.
->
-> [Reservar fondos](/developers/es/docs/checkout-api/payment-management/make-value-reserve)

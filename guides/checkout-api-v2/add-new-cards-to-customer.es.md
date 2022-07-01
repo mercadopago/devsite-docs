@@ -1,4 +1,4 @@
-# Añadir nuevas tarjetas a un cliente
+# Agregar nuevas tarjetas a un cliente
 
 Si deseas añadir nuevas tarjetas a un cliente determinado, solo tienes que enviar un POST al endpoint [/v1/customers/{customer_id}/cards](developers/es/reference/cards/_customers_customer_id_cards/post) con la información de la nueva tarjeta y ejecutar la solicitud o, si lo prefieres, utiliza uno de nuestros SDKs a continuación.
 
@@ -149,7 +149,7 @@ curl -X POST \
 >
 > Aprende cómo buscar un cliente a partir de una información específica.
 >
-> [Buscar cliente](/developers/es/docs/checkout-api/customer-management/search-customers)
+> [Buscar cliente](/developers/es/docs/checkout-api/cards-and-customers-management/search-customers)
 
 > NEXT_STEP_CARD_ES
 >
@@ -157,4 +157,4 @@ curl -X POST \
 >
 > Aprende cómo consultar la lista de tarjetas de un determinado cliente.
 >
-> [Consultar lista de tarjetas](/developers/es/docs/checkout-api/customer-management/get-cards-list)
+> [Consultar lista de tarjetas](/developers/es/docs/checkout-api/cards-and-customers-management/get-cards-list)

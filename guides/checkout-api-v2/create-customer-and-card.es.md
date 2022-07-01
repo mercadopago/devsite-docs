@@ -159,4 +159,4 @@ curl -X POST \
 >
 > Aprende cómo modificar los datos de un cliente previamente creado
 >
-> [Modificar cliente] (/developers/es/docs/checkout-api/customer-management/modify-customer)
+> [Modificar cliente](/developers/es/docs/checkout-api/cards-and-customers-management/modify-customer)
