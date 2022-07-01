@@ -1,30 +1,30 @@
-# Outros meios de pagamento
+# Otros medios de pago
 
 ----[mlb]----
-Com o Checkout Transparente do Mercado Pago, é possível oferecer, além de cartão e Pix, **pagamentos através de boleto bancário e pagamento em lotérica**.
+Con el Checkout API de Mercado Pago, es posible ofrecer, además de tarjeta y Pix, **pagos vía boleto bancario y pago en agencias de lotería**.
 ------------
 
 ----[mla]----
-Com o Checkout Transparente do Mercado Pago, também é possível oferecer pagamentos com **Rapipago** e/ou **Pago Fácil**.
+Con el Checkout API de Mercado Pago, también es posible ofrecer pagos con **Rapipago** y/o **Pago Fácil**.
 ------------
 
 ----[mlm]----
-Com o Checkout Transparente do Mercado Pago, também é possível oferecer pagamentos com **OXXO**, **Paycash**,  **Citibanamex**,  **Santander**, **BBVA Bancomer** e **Cartão Mercado Pago**.
+Con el Checkout API de Mercado Pago, también se puede ofrecer pagos con **OXXO**, **Paycash**, **Citibanamex**, **Santander**, **BBVA Bancomer** y **Tarjeta Mercado Pago**.
 ------------
 
 ----[mpe]----
-Com o Checkout Transparente do Mercado Pago, também é possível oferecer pagamentos através do **PagoEfectivo**.
+Con el Checkout API de Mercado Pago, también es posible ofrecer pagos a través de **PagoEfectivo**.
 ------------
 
 ----[mco]----
-Com o Checkout Transparente do Mercado Pago, também é possível oferecer pagamentos com **Efecty** e **PSE**.
+Con el Checkout API de Mercado Pago, también se puede ofrecer pagos con **Efecty** y **PSE**.
 ------------
 
 ----[mlu]----
-Com o Checkout Transparente do Mercado Pago, também é possível oferecer pagamentos com **Abitab** e **Redpagos**.
+Con el Checkout API de Mercado Pago, también es posible ofrecer pagos con **Abitab** y **Redpagos**.
 ------------
 
-Para obter uma lista detalhada com todos os meios de pagamento disponíveis para integração, envie um **GET** com seu _Access token_ ao endpoint [/v1/payment_methods](/developers/pt/reference/payment_methods/_payment_methods/get) e execute a requisição ou, se preferir, faça a requisição utilizando os SDKs abaixo.
+Para obtener una lista detallada de todos los medios de pago disponibles para integración, envía un **GET** con tu _Access token_ al endpoint [/v1/payment_methods](/developers/es/reference/payment_methods/_payment_methods/get) y ejecuta la solicitud o, si lo prefieres, haz la solicitud utilizando los siguientes SDKs.
 
 [[[
 ```php
@@ -87,35 +87,36 @@ curl -X GET \
 ]]]
 
 ----[mlb]----
-Para oferecer pagamentos com **boleto bancário** e/ou **pagamento em lotérica**, siga as etapas abaixo.
+Para ofrecer pagos con **boleto bancário** y/o **pago en agencias de lotería**, sigue las siguientes etapas.
 ------------
 
 ----[mla]----
-Para oferecer pagamentos com **Rapipago** e/ou **Pago Fácil**, siga as etapas abaixo.
+Para ofrecer pagos con **Rapipago** y/o **Pago Fácil**, sigue las siguientes etapas.
 ------------
 
 ----[mlm]----
-Para oferecer pagamentos com **OXXO**, **Paycash**,  **Citibanamex**,  **Santander**, **BBVA Bancomer** ou **Cartão Mercado Pago**, siga as etapas abaixo.
+Para ofrecer pagos con **OXXO**, **Paycash**, **Citibanamex**, **Santander**, **BBVA Bancomer** o **Tarjeta Mercado Pago**, sigue las siguientes etapas.
 ------------
 
 ----[mpe]----
-Para oferecer pagamentos com **PagoEfectivo**, siga as etapas abaixo.
+Para ofrecer pagos con **PagoEfectivo**, sigue las siguientes etapas.
 ------------
 
 ----[mco]----
-Para oferecer pagamentos com **Efecty** e/ou **PSE**, siga as etapas abaixo.
+Para ofrecer pagos con **Efecty** y/o **PSE**, sigue las siguientes etapas.
 ------------
 
 ----[mlu]----
-Para oferecer pagamentos com **Abitab** e/ou **Redpagos**, siga as etapas abaixo.
+Para ofrecer pagos con **Abitab** y/o **Redpagos**, sigue las siguientes etapas.
 ------------
+
 
 
 ## Importar MercadoPago.js
 
-Para realizar a integração do Checkout Transparente é preciso capturar os dados necessários para processar o pagamento.
+Para realizar la integración de Checkout API, es necesario capturar los datos necesarios para procesar el pago.
 
-Esta captura é feita a partir da inclusão da biblioteca MercadoPago.js em seu projeto, seguida do formulário de pagamento. Utilize o código abaixo para importar a biblioteca MercadoPago.js antes de adicionar o formulário de pagamento.
+Esta captura se realiza incluyendo la biblioteca MercadoPago.js en tu proyecto, seguida del formulario de pago. Utiliza el siguiente código para importar la biblioteca MercadoPago.js antes de añadir el formulario de pago.
 
 [[[
 ```html
@@ -126,11 +127,12 @@ Esta captura é feita a partir da inclusão da biblioteca MercadoPago.js em seu 
 ```
 ]]]
 
+
 ## Configurar credencial
 
-As credenciais são senhas únicas com as quais identificamos uma integração na sua conta. Servem para capturar pagamentos em lojas virtuais e outras aplicações de forma segura.
+Las credenciales son claves únicas con las que identificamos una integración en tu cuenta. Se utilizan para capturar pagos en tiendas online y otras aplicaciones de forma segura.
 
-Esta é a primeira etapa de uma estrutura completa de código que deverá ser seguida para a correta integração dos pagamentos. Atente-se aos blocos abaixo para adicionar aos códigos conforme indicado.
+Esta es la primera etapa de una estructura de código completa que se debe seguir para integrar correctamente los pagos. Presta atención a los siguientes bloques para añadirlos a los códigos como se indica.
 
 
 [[[
@@ -139,116 +141,133 @@ const mp = new MercadoPago('YOUR_PUBLIC_KEY');
 ```
 ]]]
 
-## Adicionar formulário de pagamento
 
-Com a biblioteca MercadoPago.js incluída, adicione o formulário de pagamento abaixo ao seu projeto para garantir a captura segura dos dados dos compradores. Nesta etapa é importante utilizar a lista que você consultou para obter os meios de pagamento disponíveis para criar as opções de pagamento que deseja oferecer.
+## Añadir formulario de pago
+
+Con la biblioteca MercadoPago.js incluida, añade el siguiente formulario de pago a tu proyecto para garantizar la captura segura de los datos de los compradores. En esta etapa es importante utilizar la lista que consultaste para obtener los medios de pago disponibles para crear las opciones de pago que deseas ofrecer.
 
 
 [[[
 ```html
 
-  <form id="form-checkout" action="/process_payment" method="post">
+<form action="/process_payment" method="post" id="paymentForm">
+    <h3>Forma de Pago</h3>
     <div>
-      <div>
-        <label for="payerFirstName">Nome</label>
-        <input id="form-checkout__payerFirstName" name="payerFirstName" type="text">
+      <select class="form-control" id="paymentMethod" name="paymentMethod">
+        <option>Selecciona una forma de pago</option>
+
+        <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
+        <option value="--PaymentId--">--PaymentTypeName--</option>
+      </select>
+    </div>
+    <h3>Detalle del comprador</h3>
+    <div>
+    <div>
+        <label for="payerFirstName">Nombre</label>
+        <input id="payerFirstName" name="payerFirstName" type="text" value="Nombre">
       </div>
       <div>
-        <label for="payerLastName">Sobrenome</label>
-        <input id="form-checkout__payerLastName" name="payerLastName" type="text">
+        <label for="payerLastName">Apellido</label>
+        <input id="payerLastName" name="payerLastName" type="text" value="Apellido">
       </div>
       <div>
-        <label for="email">E-mail</label>
-        <input id="form-checkout__email" name="email" type="text">
+        <label for="payerEmail">E-mail</label>
+        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com">
       </div>
       <div>
-        <label for="identificationType">Tipo de documento</label>
-        <select id="form-checkout__identificationType" name="identificationType" type="text"></select>
+        <label for="docType">Tipo del documento</label>
+        <select id="docType" name="docType" data-checkout="docType" type="text"></select>
       </div>
       <div>
-        <label for="identificationNumber">Número do documento</label>
-        <input id="form-checkout__identificationNumber" name="identificationNumber" type="text">
+        <label for="docNumber">Número del documento</label>
+        <input id="docNumber" name="docNumber" data-checkout="docNumber" type="text">
       </div>
     </div>
 
     <div>
       <div>
         <input type="hidden" name="transactionAmount" id="transactionAmount" value="100">
-        <input type="hidden" name="description" id="description" value="Nome do Produto">
+        <input type="hidden" name="productDescription" id="productDescription" value="Nombre del Producto">
         <br>
         <button type="submit">Pagar</button>
+        <br>
       </div>
-    </div>
-  </form>
+  </div>
+</form>
 ```
 ]]]
 
+
+
 ----[mlb, mla, mpe, mco, mlu, mlc]----
 
-## Obter tipos de documento
+## Obtener tipos de documentos
 
-Após configurar a credencial, é preciso obter os tipos de documento que farão parte do preenchimento do formulário para pagamento. 
+Después de configurar la credencial y añadir el formulario de pago, es necesario obtener los tipos de documentos que se utilizarán para rellenar el formulario de pago.
 
-Incluindo o elemento do tipo `select` com o id: `id = docType` que está no formulário, será possível preencher automaticamente as opções disponíveis quando chamar a função a seguir:
+Al incluir el elemento `select` con el id: `form-checkout__identificationType` que se encuentra en el formulario, será posible completar automáticamente las opciones disponibles al llamar la siguiente función:
 
 [[[
 ```javascript
 
-    (async function getIdentificationTypes() {
-      try {
-        const identificationTypes = await mp.getIdentificationTypes();
-        const identificationTypeElement = document.getElementById('form-checkout__identificationType');
+function createSelectOptions(elem, options, labelsAndKeys = { label : "name", value : "id"}){
+   const {label, value} = labelsAndKeys;
 
-        createSelectOptions(identificationTypeElement, identificationTypes);
-      } catch (e) {
-        return console.error('Error getting identificationTypes: ', e);
-      }
-    })();
+   elem.options.length = 0;
 
-    function createSelectOptions(elem, options, labelsAndKeys = { label: "name", value: "id" }) {
-      const { label, value } = labelsAndKeys;
+   const tempOptions = document.createDocumentFragment();
 
-      elem.options.length = 0;
+   options.forEach( option => {
+       const optValue = option[value];
+       const optLabel = option[label];
 
-      const tempOptions = document.createDocumentFragment();
+       const opt = document.createElement('option');
+       opt.value = optValue;
+       opt.textContent = optLabel;
 
-      options.forEach(option => {
-        const optValue = option[value];
-        const optLabel = option[label];
+       tempOptions.appendChild(opt);
+   });
 
-        const opt = document.createElement('option');
-        opt.value = optValue;
-        opt.textContent = optLabel;
+   elem.appendChild(tempOptions);
+}
 
-        tempOptions.appendChild(opt);
-      });
+// Get Identification Types
+(async function getIdentificationTypes () {
+   try {
+       const identificationTypes = await mp.getIdentificationTypes();
+       const docTypeElement = document.getElementById('docType');
 
-      elem.appendChild(tempOptions);
-    }
+       createSelectOptions(docTypeElement, identificationTypes)
+   }catch(e) {
+       return console.error('Error getting identificationTypes: ', e);
+   }
+})()
 ```
 ]]]
 
 ------------
 
 
-## Enviar pagamento
+## Enviar pago
 
-Ao finalizar a inclusão do formulário de pagamento e obter os tipos de documento, é necessário encaminhar o e-mail do comprador, tipo e número de documento, o meio de pagamento utilizado e o detalhe do valor a ser pago utilizando nossa API de Pagamentos ou um de nossos SDKs.
+Al finalizar la inclusión del formulario de pago y obtener los tipos de documentos, es necesario enviar el email del comprador, el tipo y número de documento, el medio de pago utilizado y el detalle del importe a pagar utilizando nuestra API de Pagos o uno de nuestros SDKs.
 
 ----[mlb]----
-Para configurar pagamentos com **boleto bancário** ou **pagamento em lotérica**, envie um POST com os seguintes parâmetros ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, utilize um de nossos SDKs abaixo.
+Para configurar pagos con **boleto bancario** o **pago en agencia de lotería**, envía un POST con los siguientes parámetros al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) y ejecuta la solicitud o, si lo prefieres, utiliza uno de nuestros SDKs indicados a continuación.
+
+
+| Tipo de pago  | Parámetro  | Valor  |
+| --- | --- | --- |
+| Boleto  | `payment_method_id`  | `bolbradesco`  |
+| Pago en agencia de loteria  | `payment_method_id`  | `pec`  |
+
 
 
 > WARNING
 >
 > Importante
 >
-> Para esta etapa, ao realizar a requisição via API ou SDKs, é necessário enviar sua Chave Privada - Access token.
-
-| Tipo de pagamento  | Parâmetro  | Valor  |
-| --- | --- | --- |
-| Boleto  | `payment_method_id`  | `bolbradesco`  |
-| Pagamento em lotérica  | `payment_method_id`  | `pec`  |
+> Para esta etapa, al realizar la solicitud vía API o SDKs, es necesario que envíes tu clave privada - Access Token.
 
 [[[
 ```php
@@ -260,23 +279,23 @@ Para configurar pagamentos com **boleto bancário** ou **pagamento em lotérica*
 
  $payment = new MercadoPago\Payment();
  $payment->transaction_amount = 100;
- $payment->description = "Título do produto";
+ $payment->description = "Título del producto";
  $payment->payment_method_id = "bolbradesco";
  $payment->payer = array(
      "email" => "test@test.com",
      "first_name" => "Test",
      "last_name" => "User",
      "identification" => array(
-         "type" => "CPF",
-         "number" => "19119119100"
+         "type" => "DNI",
+         "number" => "19119119"
       ),
      "address"=>  array(
-         "zip_code" => "06233200",
-         "street_name" => "Av. das Nações Unidas",
-         "street_number" => "3003",
-         "neighborhood" => "Bonfim",
-         "city" => "Osasco",
-         "federal_unit" => "SP"
+         "zip_code" => "1264",
+         "street_name" => "Av. Caseros",
+         "street_number" => "3039",
+         "neighborhood" => "Parque Patricios",
+         "city" => "Buenos Aires",
+         "federal_unit" => "BA"
       )
    );
 
@@ -290,23 +309,23 @@ mercadopago.configurations.setAccessToken(config.access_token);
 
 var payment_data = {
   transaction_amount: 100,
-  description: 'Título do produto',
+  description: 'Título del producto',
   payment_method_id: 'bolbradesco',
   payer: {
     email: 'test@test.com',
     first_name: 'Test',
     last_name: 'User',
     identification: {
-        type: 'CPF',
-        number: '19119119100'
+        type: 'DNI',
+        number: '19119119'
     },
     address:  {
-        zip_code: '06233200',
-        street_name: 'Av. das Nações Unidas',
-        street_number: '3003',
-        neighborhood: 'Bonfim',
-        city: 'Osasco',
-        federal_unit: 'SP'
+        zip_code: '1264',
+        street_name: 'Av. Caseros',
+        street_number: '3039',
+        neighborhood: 'Parque Patricios',
+        city: 'Buenos Aires',
+        federal_unit: 'BA'
     }
   }
 };
@@ -324,7 +343,7 @@ PaymentClient client = new PaymentClient();
 PaymentCreateRequest paymentCreateRequest =
    PaymentCreateRequest.builder()
        .transactionAmount(new BigDecimal("100"))
-       .description("Título do produto")
+       .description("Título del producto")
        .paymentMethodId("bolbradesco")
        .dateOfExpiration(OffsetDateTime.of(2023, 1, 10, 10, 10, 10, 0, ZoneOffset.UTC))
        .payer(
@@ -345,23 +364,23 @@ sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
 payment_request = {
   transaction_amount: 100,
-  description: 'Título do produto',
+  description: 'Título del producto',
   payment_method_id: 'bolbradesco',
   payer: {
     email: 'test@test.com',
     first_name: 'Test',
     last_name: 'User',
     identification: {
-      type: 'CPF',
-      number: '19119119100',
+      type: 'DNI',
+      number: '19119119',
     },
     address: {
-      zip_code: '06233200',
-      street_name: 'Av. das Nações Unidas',
-      street_number: '3003',
-      neighborhood: 'Bonfim',
-      city: 'Osasco',
-      federal_unit: 'SP'
+      zip_code: '1264',
+      street_name: 'Av. Caseros',
+      street_number: '3039',
+      neighborhood: 'Parque Patricios',
+      city: 'Buenos Aires',
+      federal_unit: 'BA'
     }
   }
 }
@@ -382,7 +401,7 @@ MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
 var request = new PaymentCreateRequest
 {
     TransactionAmount = 105,
-    Description = "Título do produto",
+    Description = "Título del producto",
     PaymentMethodId = "bolbradesco",
     Payer = new PaymentPayerRequest
     {
@@ -391,8 +410,8 @@ var request = new PaymentCreateRequest
         LastName = "User",
         Identification = new IdentificationRequest
         {
-            Type = "CPF",
-            Number = "191191191-00",
+            Type = "DNI",
+            Number = "19119119",
         },
     },
 };
@@ -407,23 +426,23 @@ sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
 
 payment_data = {
     "transaction_amount": 100,
-    "description": "Título do produto",
+    "description": "Título del producto",
     "payment_method_id": "bolbradesco",
     "payer": {
         "email": "test@test.com",
         "first_name": "Test",
         "last_name": "User",
         "identification": {
-            "type": "CPF",
-            "number": "191191191-00"
+            "type": "DNI",
+            "number": "19119119"
         },
         "address": {
-            "zip_code": "06233-200",
-            "street_name": "Av. das Nações Unidas",
-            "street_number": "3003",
-            "neighborhood": "Bonfim",
-            "city": "Osasco",
-            "federal_unit": "SP"
+            "zip_code": "1264",
+            "street_name": "Av. Caseros",
+            "street_number": "3039",
+            "neighborhood": "Parque Patricios",
+            "city": "Buenos Aires",
+            "federal_unit": "BA"
         }
     }
 }
@@ -439,23 +458,23 @@ curl -X POST \
     'https://api.mercadopago.com/v1/payments' \
     -d '{
       "transaction_amount": 100,
-      "description": "Título do produto",
+      "description": "Título del producto",
       "payment_method_id": "bolbradesco",
       "payer": {
         "email": "test@test.com",
         "first_name": "Test",
         "last_name": "User",
         "identification": {
-            "type": "CPF",
-            "number": "19119119100"
+            "type": "DNI",
+            "number": "19119119"
         },
         "address": {
-            "zip_code": "06233200",
-            "street_name": "Av. das Nações Unidas",
-            "street_number": "3003",
-            "neighborhood": "Bonfim",
-            "city": "Osasco",
-            "federal_unit": "SP"
+            "zip_code": "1264",
+            "street_name": "Av. Caseros",
+            "street_number": "3039",
+            "neighborhood": "Parque Patricios",
+            "city": "Buenos Aires",
+            "federal_unit": "BA"
         }
       }
     }'
@@ -463,7 +482,7 @@ curl -X POST \
 ]]]
 
 
-A resposta mostrará o **status pendente** até que o comprador realize o pagamento. Além disso, na resposta à requisição, o parâmetro `external_resource_url` retornará uma URL que contém as instruções para que o comprador realize o pagamento. Você pode redirecioná-lo para este mesmo link para conclusão do fluxo de pagamento. Veja abaixo um exemplo de retorno.
+La respuesta mostrará el **status pendiente** hasta que el comprador realice el pago. Además, en la respuesta a la solicitud, el parámetro `external_resource_url` devolverá una URL que contiene las instrucciones para que el comprador realice el pago. Puedes redirigirlo a este mismo link para finalizar el flujo de pago.
 
 [[[
 ```json
@@ -489,90 +508,95 @@ A resposta mostrará o **status pendente** até que o comprador realize o pagame
 ]]]
 
 
+
 > NOTE
 >
-> Nota
+> Importante
 >
-> O cliente tem entre 3 e 5 días para pagar, dependendo do meio de pagamento. Após esse tempo, o pagamento deve ser cancelado.
+> El cliente dispone de entre 3 y 5 días para pagar, dependiendo de la forma de pago. Después de este tiempo, el pago debe ser cancelado.
 
-## Data de vencimento
+## Fecha de vencimiento
 
-A data de vencimento padrão para pagamentos com boleto é de 3 dias. Opcionalmente, é possível alterar essa data enviando o campo `date_of_expiration` na requisição de criação do pagamento definindo um período entre 1 e 30 dias a partir da data de emissão do boleto. 
+La fecha de vencimiento predeterminada para los pagos de boletos es de 3 días. Opcionalmente, es posible cambiar esta fecha enviando el campo `date_of_expiration` en la solicitud de creación del pago, definiendo un plazo entre 1 y 30 días a partir de la fecha de emisión del boleto.
 
-Para alterar a data de vencimento, utilize um dos códigos disponíveis abaixo. 
+Para cambiar la fecha de vencimiento, utilice uno de los códigos disponibles a continuación.
 
 [[[
 ```php
 ===
-A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
 $payment->date_of_expiration = "2020-05-30T23:59:59.000-04:00";
 ```
 ```node
 ===
-A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
 date_of_expiration: "2020-05-30T23:59:59.000-04:00",
 ```
 ```java
 ===
-A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
 payment.setDateOfExpiration("2020-05-30T23:59:59.000-04:00")
 ```
 ```ruby
 ===
-A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
 date_of_expiration: '2020-05-30T23:59:59.000-04:00',
 ```
 ```csharp
 ===
-A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
 paymentCreateRequest.DateOfExpiration = DateTime.Parse("2020-05-30T23:59:59.000-04:00");
 ```
 ```python
 ===
-A data usa o formato ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
+La fecha usa el formato ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
 ===
 
 "date_of_expiration": "2020-05-30T23:59:59.000-04:00"
 ```
 ```curl
 ===
-A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
 "date_of_expiration": "2020-05-30T23:59:59.000-04:00",
 ```
 ]]]
 
-O prazo de aprovação do boleto é de até 48h úteis. Por isso, configure a data de expiração com no mínimo 3 dias para garantir que o pagamento seja abonado.
+El tiempo para la aprobación del boleto es de hasta 48 horas hábiles. Por lo tanto, establezca la fecha de vencimiento en un mínimo de 3 días para asegurarse de que se pague el pago.
+
 
 > WARNING
 >
 > Importante
 >
-> Caso o boleto seja pago depois da data de expiração, o valor será estornado na conta do Mercado Pago do pagador.
+> Si el boleto se paga después de la fecha de vencimiento, el monto se devolverá a la cuenta de Mercado Pago del pagador.
 
-## Cancelar pagamento
+## Cancelar pago
 
-Para evitar problemas de cobrança, é importante cancelar os pagamentos vencidos. Além disso, tenha em conta que **é possível cancelar apenas os pagamentos que se encontram pendentes ou em processo**. Se o vencimento de um pagamento ocorre em 30 dias, o cancelamento é automático e o status final do mesmo será `cancelado` ou `expirado`.
 
-Para mais informações, veja a seção [Reembolsos e cancelamentos](/developers/pt/docs/checkout-api/additional-content/cancellations-and-refunds).
+Para evitar problemas de facturación, es importante cancelar los pagos expirados. Además, ten en cuenta que **es posible cancelar solo los pagos que están pendientes o en proceso**. Si un pago vence dentro de los 30 días, la cancelación es automática y el estado final del pago será "cancelado" o "expirado".
+
+Para obtener más información, consulte la sección [Reembolsos y cancelaciones](/developers/es/docs/checkout-api/payment-management/cancellations-and-refunds).
+
+
 
 ------------
 
 
 ----[mla]----
 
-Para configurar pagamentos com **Rapipago** e/ou **Pago Fácil**, envie um **POST** com os parâmetros requeridos ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, utilize um de nossos SDKs abaixo.
+Para configurar pagos con **Rapipago** y/o **Pago Fácil**, envía un **POST** con los parámetros requeridos al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) y ejecuta la solicitud o, si lo prefieres, utiliza uno de nuestros SDKs indicados a continuación.
 
 > WARNING
 >
 > Importante
 >
-> Para esta etapa, ao realizar a requisição via API ou SDKs, é necessário enviar sua Chave Privada - Access token.
+> Para esta etapa, al realizar la solicitud vía API o SDKs, es necesario que envíes tu clave privada - Access Token.
 
 [[[
 ```php
@@ -582,7 +606,7 @@ Para configurar pagamentos com **Rapipago** e/ou **Pago Fácil**, envie um **POS
 
   $payment = new MercadoPago\Payment();
   $payment->transaction_amount = 100;
-  $payment->description = "Título do produto";
+  $payment->description = "Título del producto";
   $payment->payment_method_id = "rapipago";
   $payment->payer = array(
     "email" => "test_user_19653727@testuser.com"
@@ -599,7 +623,7 @@ mercadopago.configurations.setAccessToken(config.access_token);
 
 var payment_data = {
   transaction_amount: 100,
-  description: 'Título do produto',
+  description: 'Título del producto',
   payment_method_id: 'rapipago',
   payer: {
     email: 'test_user_3931694@testuser.com'
@@ -620,7 +644,7 @@ MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 Payment payment = new Payment();
 
 payment.setTransactionAmount(100f)
-      .setDescription("Título do produto")
+      .setDescription("Título del producto")
       .setPaymentMethodId("rapipago")
       .setPayer(new Payer("test_user_19653727@testuser.com"));
 
@@ -632,7 +656,7 @@ sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
 payment_request = {
   transaction_amount: 100,
-  description: 'Título do produto',
+  description: 'Título del producto',
   payment_method_id: 'rapipago',
   payer: {
     email: 'test_user_19653727@testuser.com',
@@ -654,7 +678,7 @@ MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
 var request = new PaymentCreateRequest
 {
     TransactionAmount = 100,
-    Description = "Título do produto",
+    Description = "Título del producto",
     PaymentMethodId = "rapipago",
     Payer = new PaymentPayerRequest
     {
@@ -672,7 +696,7 @@ sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
 
 payment_data = {
     "transaction_amount": 100,
-    "description": "Título do produto",
+    "description": "Título del producto",
     "payment_method_id": "rapipago",
     "payer": {
         "email": "test_user_19653727@testuser.com"
@@ -689,14 +713,14 @@ curl -X POST \
   -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
   -d '{
   transaction_amount: 100,
-  description: "Título do produto",
+  description: "Título del producto",
   payment_method_id: "rapipago",
   payer: { email: "test_user_19653727@testuser.com" }
 }'
 ```
 ]]]
 
-A resposta mostrará o **status pendente** até que o comprador realize o pagamento. Além disso, na resposta à requisição, o parâmetro `external_resource_url` retornará uma URL que contém as instruções para que o comprador realize o pagamento. Você pode redirecioná-lo para este mesmo link para conclusão do fluxo de pagamento.
+La respuesta mostrará el **status pendiente** hasta que el comprador realice el pago. Además, en la respuesta a la solicitud, el parámetro `external_resource_url` devolverá una URL que contiene las instrucciones para que el comprador efectúe el pago. Puedes redirigirlo a este mismo link para finalizar el flujo de pago.
 
 ```json
 [
@@ -719,90 +743,87 @@ A resposta mostrará o **status pendente** até que o comprador realize o pagame
 ]
 ```
 
-## Data de vencimento
+## Fecha de vencimiento
 
-É possível alterar a data de vencimento para pagamentos em dinheiro enviando o campo `date_of_expiration` na requisição de criação do pagamento. A data configurada deve ser entre 1 e 30 dias a partir da data de emissão do pagamento. 
+Opcionalmente, es posible cambiar la fecha de vencimiento para pagos con dinero enviando el campo `date_of_expiration` en la solicitud de creación del pago, definiendo un plazo entre 1 y 30 días a partir de la fecha de emisión del pago.
 
-Para alterar a data de vencimento, utilize um dos códigos disponíveis abaixo.
+Para cambiar la fecha de vencimiento, utilice uno de los códigos disponibles a continuación.
 
 [[[
 ```php
 ===
-A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
-
 $payment->date_of_expiration = "2020-05-30T23:59:59.000-04:00";
 ```
 ```node
 ===
-A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
-
 date_of_expiration: "2020-05-30T23:59:59.000-04:00",
 ```
 ```java
 ===
-A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
-
 payment.setDateOfExpiration("2020-05-30T23:59:59.000-04:00")
 ```
 ```ruby
 ===
-A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
-
 date_of_expiration: '2020-05-30T23:59:59.000-04:00',
 ```
 ```csharp
 ===
-A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
-
 paymentCreateRequest.DateOfExpiration = DateTime.Parse("2020-05-30T23:59:59.000-04:00");
 ```
 ```python
 ===
-A data usa o formato ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
+La fecha usa el formato ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
 ===
 
 "date_of_expiration": "2020-05-30T23:59:59.000-04:00"
 ```
 ```curl
 ===
-A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
-
 "date_of_expiration": "2020-05-30T23:59:59.000-04:00",
 ```
 ]]]
 
-O prazo de creditação leva entre 1 e 2 dias úteis de acordo com o meio de pagamento. Por isso recomendamos que você defina a data de expiração com no mínimo 3 dias para garantir que o pagamento seja feito.
+El tiempo para la aprobación toma entre 1 y 2 días hábiles. Por lo tanto, establezca la fecha de vencimiento en un mínimo de 3 días para asegurarse de que se pague el pago.
+
 
 > WARNING
 >
 > Importante
 >
-> Caso o pagamento seja realizado depois da data de expiração, o valor será estornado na conta do Mercado Pago do pagador.
+> Si el boleto se paga después de la fecha de vencimiento, el monto se devolverá a la cuenta de Mercado Pago del pagador.
+
+## Cancelar pago
 
 
-## Cancelar pagamento
+Para evitar problemas de facturación, es importante cancelar los pagos expirados. Además, ten en cuenta que **es posible cancelar solo los pagos que están pendientes o en proceso**. Si un pago vence dentro de los 30 días, la cancelación es automática y el estado final del pago será "cancelado" o "expirado".
 
-Para evitar problemas de cobrança, é importante cancelar os pagamentos vencidos. Além disso, tenha em conta que **é possível cancelar apenas os pagamentos que se encontram pendentes ou em processo**. 
+Para obtener más información, consulte la sección [Reembolsos y cancelaciones](/developers/es/docs/checkout-api/payment-management/cancellations-and-refunds).
 
-Se o vencimento de um pagamento ocorre em 30 dias, o cancelamento é automático e o status final do mesmo será `cancelado` ou `expirado`. Para mais informações, veja a seção [Reembolsos e cancelamentos](/developers/pt/docs/checkout-api/additional-content/cancellations-and-refunds).
+
 
 ------------
 
 ----[mlm]----
 
-Para configurar pagamentos com  **OXXO**, **Paycash**,  **Citibanamex**,  **Santander**, **BBVA Bancomer** e/ou **Cartão Mercado Pago**, envie um **POST** com os devidos parâmetros ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, utilize um de nossos SDKs abaixo.
+Para configurar pagos con **OXXO**, **Paycash**,  **Citibanamex**,  **Santander**, **BBVA Bancomer** y/o **Tarjeta  Mercado Pago**, envía un **POST** con los parámetros requeridos al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) y ejecuta la solicitud o, si lo prefieres, utiliza uno de nuestros SDKs indicados a continuación.
 
 > WARNING
 >
 > Importante
 >
-> Para esta etapa, ao realizar a requisição via API ou SDKs, é necessário enviar sua Chave Privada - Access token.
+> Para esta etapa, al realizar la solicitud vía API o SDKs, es necesario que envíes tu clave privada - Access Token.
 
 [[[
 ```php
@@ -812,7 +833,7 @@ Para configurar pagamentos com  **OXXO**, **Paycash**,  **Citibanamex**,  **Sant
 
   $payment = new MercadoPago\Payment();
   $payment->transaction_amount = 100;
-  $payment->description = "Título do produto";
+  $payment->description = "Título del producto";
   $payment->payment_method_id = "oxxo";
   $payment->payer = array(
     "email" => "test_user_82045343@testuser.com"
@@ -829,7 +850,7 @@ mercadopago.configurations.setAccessToken(config.access_token);
 
 var payment_data = {
   transaction_amount: 100,
-  description: 'Título do produto',
+  description: 'Título del producto',
   payment_method_id: 'oxxo',
   payer: {
     email: 'test_user_82045343@testuser.com'
@@ -850,7 +871,7 @@ MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 Payment payment = new Payment();
 
 payment.setTransactionAmount(100f)
-      .setDescription("Título do produto")
+      .setDescription("Título del producto")
       .setPaymentMethodId("oxxo")
       .setPayer(new Payer("test_user_82045343@testuser.com"));
 
@@ -862,7 +883,7 @@ sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
 payment_request = {
   transaction_amount: 100,
-  description: 'Título do produto',
+  description: 'Título del producto',
   payment_method_id: 'oxxo',
   payer: {
     email: 'test_user_82045343@testuser.com',
@@ -884,7 +905,7 @@ MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
 var request = new PaymentCreateRequest
 {
     TransactionAmount = 100,
-    Description = "Título do produto",
+    Description = "Título del producto",
     PaymentMethodId = "oxxo",
     Payer = new PaymentPayerRequest
     {
@@ -902,7 +923,7 @@ sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
 
 payment_data = {
     "transaction_amount": 100,
-    "description": "Título do produto",
+    "description": "Título del producto",
     "payment_method_id": "oxxo",
     "payer": {
         "email": "test_user_82045343@testuser.com"
@@ -919,14 +940,14 @@ curl -X POST \
   -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
   -d '{
   transaction_amount: 100,
-  description: "Título do produto",
+  description: "Título del producto",
   payment_method_id: "oxxo",
   payer: { email: "test_user_82045343@testuser.com" }
 }'
 ```
 ]]]
 
-A resposta mostrará o **status pendente** até que o comprador realize o pagamento. Além disso, na resposta à requisição, o parâmetro `external_resource_url` retornará uma URL que contém as instruções para que o comprador realize o pagamento. Você pode redirecioná-lo para este mesmo link para conclusão do fluxo de pagamento.
+La respuesta mostrará el **status pendiente** hasta que el comprador realice el pago. Además, en la respuesta a la solicitud, el parámetro `external_resource_url` devolverá una URL que contiene las instrucciones para que el comprador efectúe el pago. Puedes redirigirlo a este mismo link para finalizar el flujo de pago.
 
 ```json
 [
@@ -951,18 +972,19 @@ A resposta mostrará o **status pendente** até que o comprador realize o pagame
 ]
 ```
 
-## Cancelar pagamento
 
-Para evitar problemas de cobrança, é importante cancelar os pagamentos vencidos. Além disso, tenha em conta que **é possível cancelar apenas os pagamentos que se encontram pendentes ou em processo**. 
+## Cancelar pago
 
-Se o vencimento de um pagamento ocorre em 30 dias, o cancelamento é automático e o status final do mesmo será `cancelado` ou `expirado`. Para mais informações, veja a seção [Reembolsos e cancelamentos](/developers/pt/docs/checkout-api/additional-content/cancellations-and-refunds).
+Para evitar problemas de facturación, es importante cancelar los pagos expirados. Además, ten en cuenta que **es posible cancelar solo los pagos que están pendientes o en proceso**. Si un pago vence dentro de los 30 días, la cancelación es automática y el estado final del pago será "cancelado" o "expirado".
+
+Para obtener más información, consulte la sección [Reembolsos y cancelaciones](/developers/es/docs/checkout-api/payment-management/cancellations-and-refunds).
 
 
-## Locais de pagamento
+## Establecimientos de pago
 
-Ao finalizar a integração, é importante compartilhar com os compradores a informação dos diferentes lugares em que podem realizar o pagamento. Veja o detalhe de cada um deles na tabela abaixo.
+Al finalizar la integración, es importante compartir con los compradores la información de los diferentes lugares en los que pueden realizar el pago. Consulta la siguiente tabla para conocer los datos de cada uno de ellos.
 
-| Meio de pagamento | Lojas disponíveis
+| Medio de pago | Tiendas disponibles
 | --- | --- |
 | OXXO | OXXO
 | PayCash | 7-Eleven |
@@ -982,13 +1004,13 @@ Ao finalizar a integração, é importante compartilhar com os compradores a inf
 
 ----[mpe]----
 
-Para configurar pagamentos com **PagoEfectivo**, envie um **POST** com os parâmetros requeridos ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, utilize um de nossos SDKs abaixo.
+Para configurar pagos con **PagoEfectivo**, envía un **POST** con los parámetros requeridos al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) y ejecuta la solicitud o, si lo prefieres, utiliza uno de nuestros SDKs indicados a continuación.
 
 > WARNING
 >
 > Importante
 >
-> Para esta etapa, ao realizar a requisição via API ou SDKs, é necessário enviar sua Chave Privada - Access token.
+> Para esta etapa, al realizar la solicitud vía API o SDKs, es necesario que envíes tu clave privada - Access Token.
 
 [[[
 ```php
@@ -998,7 +1020,7 @@ Para configurar pagamentos com **PagoEfectivo**, envie um **POST** com os parâm
 
   $payment = new MercadoPago\Payment();
   $payment->transaction_amount = 100;
-  $payment->description = "Título do produto";
+  $payment->description = "Título del producto";
   $payment->payment_method_id = "pagoefectivo_atm";
   $payment->payer = array(
     "email" => "test_user_42972582@testuser.com"
@@ -1014,7 +1036,7 @@ mercadopago.configurations.setAccessToken(config.access_token);
 
 var payment_data = {
   transaction_amount: 100,
-  description: 'Título do produto',
+  description: 'Título del producto',
   payment_method_id: 'pagoefectivo_atm',
   payer: {
     email: 'test_user_42972582@testuser.com'
@@ -1035,7 +1057,7 @@ MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 Payment payment = new Payment();
 
 payment.setTransactionAmount(100f)
-      .setDescription("Título do produto")
+      .setDescription("Título del producto")
       .setPaymentMethodId("pagoefectivo_atm")
       .setPayer(new Payer("test_user_42972582@testuser.com"));
 
@@ -1047,7 +1069,7 @@ sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
 payment_request = {
   transaction_amount: 100,
-  description: 'Título do produto',
+  description: 'Título del producto',
   payment_method_id: 'pagoefectivo_atm',
   payer: {
     email: 'test_user_42972582@testuser.com'
@@ -1068,7 +1090,7 @@ MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
 var request = new PaymentCreateRequest
 {
     TransactionAmount = 5000,
-    Description = "Título do produto",
+    Description = "Título del producto",
     PaymentMethodId = "pagoefectivo_atm",
     Payer = new PaymentPayerRequest
     {
@@ -1086,7 +1108,7 @@ sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
 
 payment_data = {
     "transaction_amount": 100,
-    "description": "Título do produto",
+    "description": "Título del producto",
     "payment_method_id": "pagoefectivo_atm",
     "payer": {
         "email": "test_user_42972582@testuser.com"
@@ -1103,14 +1125,14 @@ curl -X POST \
   -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
   -d '{
   transaction_amount: 100,
-  description: "Título do produto",
+  description: "Título del producto",
   payment_method_id: "pagoefectivo_atm",
   payer: { email: "test_user_42972582@testuser.com" }
 }'
 ```
 ]]]
 
-A resposta mostrará o **status pendente** até que o comprador realize o pagamento. Além disso, na resposta à requisição, o parâmetro `external_resource_url` retornará uma URL que contém as instruções para que o comprador realize o pagamento. Você pode redirecioná-lo para este mesmo link para conclusão do fluxo de pagamento.
+La respuesta mostrará el **status pendiente** hasta que el comprador realice el pago. Además, en la respuesta a la solicitud, el parámetro `external_resource_url` devolverá una URL que contiene las instrucciones para que el comprador efectúe el pago. Puedes redirigirlo a este mismo link para finalizar el flujo de pago.
 
 ```json
 [
@@ -1144,23 +1166,24 @@ A resposta mostrará o **status pendente** até que o comprador realize o pagame
 ]
 ```
 
-## Cancelar pagamento
 
-Para evitar problemas de cobrança, é importante cancelar os pagamentos vencidos. Além disso, tenha em conta que **é possível cancelar apenas os pagamentos que se encontram pendentes ou em processo**. 
+## Cancelar pago
 
-Se o vencimento de um pagamento ocorre em 30 dias, o cancelamento é automático e o status final do mesmo será `cancelado` ou `expirado`. Para mais informações, veja a seção [Reembolsos e cancelamentos](/developers/pt/docs/checkout-api/additional-content/cancellations-and-refunds).
+Para evitar problemas de facturación, es importante cancelar los pagos expirados. Además, ten en cuenta que **es posible cancelar solo los pagos que están pendientes o en proceso**. Si un pago vence dentro de los 30 días, la cancelación es automática y el estado final del pago será "cancelado" o "expirado".
+
+Para obtener más información, consulte la sección [Reembolsos y cancelaciones](/developers/es/docs/checkout-api/payment-management/cancellations-and-refunds).
 
 ------------
 
 ----[mco]----
 
-Para configurar pagamentos com **Efecty** e/ou **PSE**, envie um **POST** com os devidos parâmetros ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, utilize um de nossos SDKs abaixo.
+Para configurar pagos con **Efecty** e/ou **PSE**, envie um **POST** con los parámetros requeridos al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) y ejecuta la solicitud o, si lo prefieres, utiliza uno de nuestros SDKs indicados a continuación.
 
 > WARNING
 >
 > Importante
 >
-> Para receber pagamentos com **PSE** é preciso enviar, na criação do pagamento, o parâmetro `financial_institution` com o número da instituição financeira responsável pelo processamento do pagamento. 
+> Para recibir pagos con **PSE** debes enviar, durante la creación del pago, el parámetro `financial_institution` con el número de la institución financiera encargada de procesar el pago. 
 
 [[[
 ```php
@@ -1170,7 +1193,7 @@ Para configurar pagamentos com **Efecty** e/ou **PSE**, envie um **POST** com os
 
   $payment = new MercadoPago\Payment();
   $payment->transaction_amount = 5000;
-  $payment->description = "Título do produto";
+  $payment->description = "Título del producto";
   $payment->payment_method_id = "efecty";
   $payment->payer = array(
     "email" => "test_user_19549678@testuser.com"
@@ -1186,7 +1209,7 @@ mercadopago.configurations.setAccessToken(config.access_token);
 
 var payment_data = {
   transaction_amount: 5000,
-  description: 'Título do produto',
+  description: 'Título del producto',
   payment_method_id: 'efecty',
   payer: {
     email: 'test_user_19549678@testuser.com'
@@ -1207,7 +1230,7 @@ MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 Payment payment = new Payment();
 
 payment.setTransactionAmount(5000f)
-      .setDescription("Título do produto")
+      .setDescription("Título del producto")
       .setPaymentMethodId("efecty")
       .setPayer(new Payer("test_user_19549678@testuser.com"));
 
@@ -1219,7 +1242,7 @@ sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
 payment_request = {
   transaction_amount: 5000,
-  description: 'Título do produto',
+  description: 'Título del producto',
   payment_method_id: 'efecty',
   payer: {
     email: 'test_user_19549678@testuser.com',
@@ -1241,7 +1264,7 @@ MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
 var request = new PaymentCreateRequest
 {
     TransactionAmount = 5000,
-    Description = "Título do produto",
+    Description = "Título del producto",
     PaymentMethodId = "efecty",
     Payer = new PaymentPayerRequest
     {
@@ -1259,7 +1282,7 @@ sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
 
 payment_data = {
     "transaction_amount": 5000,
-    "description": "Título do produto",
+    "description": "Título del producto",
     "payment_method_id": "efecty",
     "payer": {
         "email": "test_user_19549678@testuser.com"
@@ -1276,7 +1299,7 @@ curl -X POST \
   -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
   -d '{
   transaction_amount: 5000,
-  description: "Título do produto",
+  description: "Título del producto",
   payment_method_id: "efecty",
   payer: { email: "test_user_19549678@testuser.com" }
 }'
@@ -1284,7 +1307,7 @@ curl -X POST \
 ]]]
 
 
-A resposta mostrará o **status pendente** até que o comprador realize o pagamento. Além disso, na resposta à requisição, o parâmetro `external_resource_url` retornará uma URL que contém as instruções para que o comprador realize o pagamento. Você pode redirecioná-lo para este mesmo link para conclusão do fluxo de pagamento.
+La respuesta mostrará el **status pendiente** hasta que el comprador realice el pago. Además, en la respuesta a la solicitud, el parámetro `external_resource_url` devolverá una URL que contiene las instrucciones para que el comprador efectúe el pago. Puedes redirigirlo a este mismo link para finalizar el flujo de pago.
 
 ```json
 [
@@ -1310,90 +1333,86 @@ A resposta mostrará o **status pendente** até que o comprador realize o pagame
 ]
 ```
 
-## Data de vencimento
+## Fecha de vencimiento
 
-É possível alterar a data de vencimento para pagamentos em dinheiro enviando o campo `date_of_expiration` na requisição de criação do pagamento. A data configurada deve estar entre 1 e 30 dias a partir da data de emissão. Para isso, utilize um dos códigos disponíveis abaixo.
+Opcionalmente, es posible cambiar la fecha de vencimiento para pagos con dinero enviando el campo `date_of_expiration` en la solicitud de creación del pago, definiendo un plazo entre 1 y 30 días a partir de la fecha de emisión del pago.
+
+Para cambiar la fecha de vencimiento, utilice uno de los códigos disponibles a continuación.
 
 [[[
 ```php
 ===
-A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
-
 $payment->date_of_expiration = "2020-05-30T23:59:59.000-04:00";
 ```
 ```node
 ===
-A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
-
 date_of_expiration: "2020-05-30T23:59:59.000-04:00",
 ```
 ```java
 ===
-A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
-
 payment.setDateOfExpiration("2020-05-30T23:59:59.000-04:00")
 ```
 ```ruby
 ===
-A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
-
 date_of_expiration: '2020-05-30T23:59:59.000-04:00',
 ```
 ```csharp
 ===
-A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
-
 paymentCreateRequest.DateOfExpiration = DateTime.Parse("2020-05-30T23:59:59.000-04:00");
 ```
 ```python
 ===
-A data usa o formato ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
+La fecha usa el formato ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
 ===
 
 "date_of_expiration": "2020-05-30T23:59:59.000-04:00"
 ```
 ```curl
 ===
-A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
-
 "date_of_expiration": "2020-05-30T23:59:59.000-04:00",
 ```
 ]]]
 
-O prazo de creditação está entre 1 e 2 dias úteis de acordo com o meio de pagamento. Por isso recomendamos que você defina a data de expiração com no mínimo 3 dias para garantir que o pagamento seja feito.
+El tiempo para la aprobación toma entre 1 y 2 días hábiles. Por lo tanto, establezca la fecha de vencimiento en un mínimo de 3 días para asegurarse de que se pague el pago.
+
 
 > WARNING
 >
 > Importante
 >
-> Caso o pagamento seja realizado depois da data de expiração, o valor será estornado na conta do Mercado Pago do pagador.
+> Si el boleto se paga después de la fecha de vencimiento, el monto se devolverá a la cuenta de Mercado Pago del pagador.
 
-## Cancelar pagamento
+## Cancelar pago
 
-É importante cancelar um pagamento assim que o mesmo vencer para evitar problemas de cobrança. Os pagamentos em dinheiro devem ser pagos entre 3 e 5 dias úteis de acordo com o tempo de cada um.
 
-Tenha em conta que **apenas se pode cancelar os pagamentos que se encontram com estado pendente ou em processo**. Se a expiração de um pagamento ocorre aos 30 dias, o cancelamento é automático e o estado final será cancelado ou expirado.
+Para evitar problemas de facturación, es importante cancelar los pagos expirados. Además, ten en cuenta que **es posible cancelar solo los pagos que están pendientes o en proceso**. Si un pago vence dentro de los 30 días, la cancelación es automática y el estado final del pago será "cancelado" o "expirado".
 
-Para mais detalhes sobre como cancelar um pagamento, veja seção [Reembolsos e cancelamentos](/developers/pt/docs/checkout-api/additional-content/cancellations-and-refunds).
+Para obtener más información, consulte la sección [Reembolsos y cancelaciones](/developers/es/docs/checkout-api/payment-management/cancellations-and-refunds).
 
 
 ------------
 
 ----[mlu]----
 
-Para configurar pagamentos com **Abitab** e/ou **Redpagos**, envie um POST com os seguintes parâmetros ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, utilize um de nossos SDKs abaixo.
+Para configurar pagos con **Abitab** y/o **Redpagos**, envía un POST con los siguientes parámetros al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) y ejecuta la solicitud o, si lo prefieres, utiliza uno de nuestros SDKs a continuación.
 
 > WARNING
 >
 > Importante
 >
-> Para esta etapa, ao realizar a requisição via API ou SDKs, é necessário enviar sua Chave Privada - Access token.
+> Para esta etapa, al realizar la solicitud vía API o SDKs, es necesario que envíes tu clave privada - Access Token.
 
 [[[
 ```php
@@ -1403,7 +1422,7 @@ Para configurar pagamentos com **Abitab** e/ou **Redpagos**, envie um POST com o
 
   $payment = new MercadoPago\Payment();
   $payment->transaction_amount = 100;
-  $payment->description = "Título do produto";
+  $payment->description = "Título del producto";
   $payment->payment_method_id = "abitab";
   $payment->payer = array(
     "email" => "test_user_84162205@testuser.com"
@@ -1419,7 +1438,7 @@ mercadopago.configurations.setAccessToken(config.access_token);
 
 var payment_data = {
   transaction_amount: 100,
-  description: 'Título do produto',
+  description: 'Título del producto',
   payment_method_id: 'abitab',
   payer: {
     email: 'test_user_84162205@testuser.com'
@@ -1440,7 +1459,7 @@ MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 Payment payment = new Payment();
 
 payment.setTransactionAmount(100f)
-      .setDescription("Título do produto")
+      .setDescription("Título del producto")
       .setPaymentMethodId("abitab")
       .setPayer(new Payer("test_user_84162205@testuser.com"));
 
@@ -1452,7 +1471,7 @@ sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
 payment_request = {
   transaction_amount: 100,
-  description: 'Título do produto',
+  description: 'Título del producto',
   payment_method_id: 'abitab',
   payer: {
     email: 'test_user_84162205@testuser.com',
@@ -1473,7 +1492,7 @@ MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
 var request = new PaymentCreateRequest
 {
     TransactionAmount = 100,
-    Description = "Título do produto",
+    Description = "Título del producto",
     PaymentMethodId = "abitab",
     Payer = new PaymentPayerRequest
     {
@@ -1491,7 +1510,7 @@ sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
 
 payment_data = {
     "transaction_amount": 100,
-    "description": "Título do produto",
+    "description": "Título del producto",
     "payment_method_id": "abitab",
     "payer": {
         "email": "test_user_84162205@testuser.com"
@@ -1508,14 +1527,14 @@ curl -X POST \
   -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
   -d '{
   transaction_amount: 100,
-  description: "Título do produto",
+  description: "Título del producto",
   payment_method_id: "abitab",
   payer: { email: "test_user_84162205@testuser.com" }
 }'
 ```
 ]]]
 
-A resposta mostrará o **status pendente** até que o comprador realize o pagamento. Além disso, na resposta à requisição, o parâmetro `external_resource_url` retornará uma URL que contém as instruções para que o comprador realize o pagamento. Você pode redirecioná-lo para este mesmo link para conclusão do fluxo de pagamento.
+La respuesta mostrará el **status pendiente** hasta que el comprador realice el pago. Además, en la respuesta a la solicitud, el parámetro `external_resource_url` devolverá una URL que contiene las instrucciones para que el comprador efectúe el pago. Puedes redirigirlo a este mismo link para finalizar el flujo de pago.
 
 ```json
 [
@@ -1541,31 +1560,29 @@ A resposta mostrará o **status pendente** até que o comprador realize o pagame
 ]
 ```
 
+## Cancelar pago
 
-## Cancelar pagamento
 
-Para evitar problemas de cobrança, é importante cancelar pagamentos assim que vencerem. Os pagamentos em dinheiro devem ser feitos entre 3 e 5 dias úteis de acordo com o tempo de cada um.
+Para evitar problemas de facturación, es importante cancelar los pagos expirados. Además, ten en cuenta que **es posible cancelar solo los pagos que están pendientes o en proceso**. Si un pago vence dentro de los 30 días, la cancelación es automática y el estado final del pago será "cancelado" o "expirado".
 
-Tenha em conta que apenas se pode cancelar os pagamentos que se encontram com status 
-`pendente` ou `em processo`. Se um pagamento vence dentro de 30 dias, o cancelamento é automático e o status final será `cancelado` ou `expirado`.
+Para obtener más información, consulte la sección [Reembolsos y cancelaciones](/developers/es/docs/checkout-api/payment-management/cancellations-and-refunds).
 
-Para cancelar um pagamento, veja a seção [Reembolsos e cancelamentos](/developers/pt/docs/checkout-api/additional-content/cancellations-and-refunds).
 
 ------------
 
-> PREV_STEP_CARD_PT
+> PREV_STEP_CARD_ES
 >
-> Pré-requisitos
+> Requisitos Previos
 >
-> Veja os pré-requisitos necessários para integrar o Checkout Transparente.
+> Consulta los requisitos previos que se necesitan para integrar Checkout API.
 >
-> [Integrar Checkout Transparente](/developers/pt/docs/checkout-api/prerequisites)
+> [Integrar Checkout API](/developers/es/docs/checkout-api/prerequisites)
 
 
-> NEXT_STEP_CARD_PT
+> NEXT_STEP_CARD_ES
 >
-> Teste de integração
+> Prueba de integración
 >
-> Saiba como testar a integração do Checkout Transparente em sua loja.
+> Consulta cómo probar la integración de Checkout API en tu tienda.
 >
-> [Teste de integração](/developers/pt/docs/checkout-api/integration-test/create-test-user)
+> [Prueba de integración](/developers/es/docs/checkout-api/integration-test/create-test-user)

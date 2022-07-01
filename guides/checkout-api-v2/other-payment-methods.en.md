@@ -254,7 +254,7 @@ To configure payments with **Boleto Bancário** or **Pagamento em lotérica**, s
 | Payment Type | Parameter | Value |
 | --- | --- | --- |
 | Boleto | `payment_method_id` | `bolbradesco` |
-| Lottery payment | `payment_method_id` | `PEC` |
+| Lottery payment | `payment_method_id` | `pec` |
 
 [[[
 ```php

@@ -8,15 +8,15 @@
 
 # Cancelar reserva
 
-O cancelamento de uma reserva ocorre quando, por algum motivo, o pagamento de uma compra não é aprovado e a reserva do valor precisa retornar para o limite do cartão do cliente ou quando um comprador desiste da compra.
+La cancelación de una reserva se produce cuando, por algún motivo, no se aprueba el pago de una compra y se debe devolver el valor de la reserva al límite de la tarjeta del cliente o cuando un comprador desiste de la compra.
 
-Para cancelar uma reserva envie um PUT com o parâmetro `status` ao endpoint [/v1/payments/{id}](/developers/pt/reference/payments/_payments_id/put) e execute a requisição ou, se preferir, utilize um de nossos SDKs abaixo. 
+Para cancelar una reserva envía un PUT con el parámetro `status` al endpoint [/v1/payments/{id}](/developers/es/reference/payments/_payments_id/put) y ejecuta la solicitud o, si lo prefieres, utiliza uno de nuestros SDKs que aparecen a continuación.
 
 > NOTE
 >
 > Importante
 >
-> Para mais informações sobre reembolsos e cancelamentos de pagamentos, veja a seção [Reembolsos e cancelamentos](/developers/pt/docs/checkout-api/additional-content/cancellations-and-refunds).
+> Para más información sobre reembolsos y cancelaciones de pagos, consulte la sección [Reembolsos y cancelaciones](/developers/es/docs/checkout-api/payment-management/cancellations-and-refunds).
 
 
 
@@ -95,7 +95,7 @@ curl -X PUT \
 ```
 ]]]
 
-A resposta trará o seguinte resultado
+La respuesta devolverá el siguiente resultado
 
 [[[
 ```json
@@ -110,20 +110,19 @@ A resposta trará o seguinte resultado
 ```
 ]]]
 
-> PREV_STEP_CARD_PT
->
-> Capturar pagamento autorizado
->
-> Conheça as formas disponíveis para captura de um pagamento autorizado.
->
-> [Capturar pagamento autorizado](/developers/pt/docs/checkout-api/payment-management/capture-authorized-payment)
 
+> PREV_STEP_CARD_ES
+>
+> Capturar pago autorizado
+>
+> Consulta las formas de capturar un pago autorizado que están disponibles
+>
+> [Capturar pago autorizado](/developers/es/docs/checkout-api/payment-management/capture-authorized-payment)
 
-> NEXT_STEP_CARD_PT
+> NEXT_STEP_CARD_ES
 >
-> Reembolsos e cancelamentos
+> Reembolsos y cancelaciones
 >
-> Saiba como realizar reembolsos e/ou cancelamentos de um pagamento.
+> Aprende a realizar devoluciones y/o cancelaciones de un pago.
 >
-> [Reembolsos e cancelamentos](/developers/pt/docs/checkout-api/payment-management/cancellations-and-refunds)
-
+> [Reembolsos y cancelaciones](/developers/es/docs/checkout-api/payment-management/cancellations-and-refunds)
