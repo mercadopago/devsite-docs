@@ -9,7 +9,7 @@ Para integrar o Checkout Pro, siga os passos abaixo.
  ----[mlb]---- 
  * Cartões de débito e crédito; 
  * Dinheiro (saldo da conta do Mercado Pago ou boleto bancário); 
- * Transferência bancária (Pix e PEC). A opção de pagamento com Pix só será exibida se houver uma [chave Pix cadastrada](/developers/pt/docs/checkout-api/payment-methods/receiving-payment-by-pix#bookmark_cadastrar_chave_pix) no Mercado Pago. 
+ * Transferência bancária (Pix e PEC). A opção de pagamento com Pix só será exibida se houver uma [chave Pix cadastrada](/developers/pt/guides/checkout-api-v2/integrate-pix) no Mercado Pago. 
  ------------ 
 ----[mla, mlm, mpe, mco, mlu, mlc]---- 
  * Cartões de débito e crédito;
@@ -25,7 +25,7 @@ Para integrar o Checkout Pro, siga os passos abaixo.
 
 Pronto! O Checkout Pro do Mercado Pago está pronto para receber os pagamentos da sua loja.
 
-> Caso deseje utilizar o ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------ para receber pagamentos na loja, veja a seção [Configurar os pagamentos com ----[mlb]---- Checkout Transparente. ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API. ------------](/developers/pt/docs/prestashop/payment-setup/cho-api/introduction)
+> Caso deseje utilizar o ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------ para receber pagamentos na loja, veja a seção [Configurar os pagamentos com ----[mlb]---- Checkout Transparente. ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API. ------------](/developers/pt/docs/prestashop/payment-configuration/checkout-api/introduction)
 
 > PREV_STEP_CARD_PT
 >
@@ -33,7 +33,7 @@ Pronto! O Checkout Pro do Mercado Pago está pronto para receber os pagamentos d
 >
 > Saiba como configurar os checkouts do Mercado Pago para receber os pagamento de sua loja.
 >
-> [Configuração de pagamentos](/developers/pt/docs/prestashop/payment-setup)
+> [Configuração de pagamentos](/developers/pt/docs/prestashop/payment-configuration)
 
 > NEXT_STEP_CARD_PT
 >

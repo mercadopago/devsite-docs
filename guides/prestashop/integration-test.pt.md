@@ -46,7 +46,7 @@ Feito o processo inicial de compra, veja abaixo como testar a integração de ac
 >
 > Saiba como configurar os checkouts do Mercado Pago para receber os pagamento de sua loja.
 >
-> [Configuração de pagamentos](/developers/pt/docs/prestashop/payment-setup)
+> [Configuração de pagamentos](/developers/pt/docs/prestashop/payment-configuration)
 
 > NEXT_STEP_CARD_PT
 >

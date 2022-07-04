@@ -1,4 +1,4 @@
-# Pré-requisitos da integração
+# Pré-requisitos
 
 Para poder realizar a integração do Mercado Pago com a PrestaShop, é preciso atender aos requisitos abaixo.
 

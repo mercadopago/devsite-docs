@@ -1,27 +1,27 @@
-# Receber os pagamentos
+# Receive payments
 
-Após realizar a integração e fazer os devidos testes, sua loja já está pronta para entrar em produção. Para começar a receber pagamentos é necessário ativar o modo Produção. Para isso, siga os procedimentos abaixo.
-
-1. No Painel Administrativo da sua loja na Prestashop, acesse o menu **Módulos e serviços**, localize o módulo do Mercado Pago e clique em **configurar**.
-2. Na tela de gerenciamento do módulo, confirme se as [credenciais](/developers/pt/guides/additional-content/credentials/credentials) de produção são as mesmas da conta que você recebe o dinheiro das vendas. Essa informação poderá ser visualizada em seu [Dashboard](/developers/pt/guides/additional-content/dashboard/introduction).
-3. Em seguida, clique em **sim** para ativar o modo Produção. 
-
-Pronto! O módulo do Mercado Pago está pronto para receber pagamentos online.
+After performing the integration and testing, your store is ready to go into production. To start receiving payments you need to activate Production mode. To do this, follow the procedures below.
+ 
+1. On the Admin Panel of your Prestashop store, access the **Modules and Services** menu, find the Mercado Pago plugin and click on **configure**.
+2. On the plugin management screen, confirm that the production [credentials](/developers/en/guides/additional-content/credentials/credentials) are the same as the account that you get money from sales. This information can be viewed on your [Dashboard](/developers/en/guides/additional-content/dashboard/introduction).
+3. Then click on **yes** to activate Production mode.
+ 
+Ready! The Mercado Pago plugin is ready to receive payments online.
 
 > NOTE
 >
-> Importante
+> Important
 >
-> Com todas as etapas concluídas, seus clientes poderão realizar compras em sua loja. Ao realizar uma transação, é comum que algumas mensagens retornem com informações específicas sobre a compra, visto que toda venda gera um status de pagamento que mostra a situação da venda incluindo a confirmação, pendência ou recusa do pagamento e outras informações importantes sobre a transação. Para mais informações, acesse a seção [Atividades](https://www.mercadopago.com.br/activities) da sua conta do Mercado Pago. <br>
+> With all the steps completed, your customers will be able to make purchases in your store. When performing a transaction, it is common for some messages to return with specific information about the purchase, as every sale generates a payment status that shows the status of the sale including confirmation, pending or rejection of payment and other important information about the transaction. For more information, access the [Activities](https://www.mercadopago[FAKER][URL][DOMAIN]/activities) section of your Mercado Pago account. <br>
 > </br> <br/>
-> Existem alguns motivos que podem impactar diretamente na aprovação dos pagamentos na sua loja. Veja mais informações em [Motivos de recusas de pagamentos](/developers/pt/docs/prestashop/additional-content/reasons-for-refusals)
+> There are some reasons that can directly impact the approval of payments in your store. See more information at [Reasons for payment refusals](/developers/en/docs/prestashop/additional-content/reasons-for-refusals)
 
-![Status de pagamento](/images/prestashop/status_pt.png)
+![Payment status](/images/prestashop/status_en.png)
 
-> PREV_STEP_CARD_PT
+> PREV_STEP_CARD_EN
 >
-> Testar os pagamentos
+> Test payments
 >
-> Saiba como realizar uma compra teste e garantir o funcionamento da integração.
+> Learn how to make a test purchase and ensure the integration works.
 >
-> [Testar os pagamentos](/developers/pt/docs/prestashop/sales-processing/integration-test)
+> [Test payments](/developers/en/docs/prestashop/sales-processing/integration-test)

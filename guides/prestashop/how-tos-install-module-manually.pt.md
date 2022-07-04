@@ -15,16 +15,28 @@ Pronto! O módulo do Mercado Pago foi instalado e está pronto para ser configur
 
 > PREV_STEP_CARD_PT
 >
-> Motivos de recusas dos pagamentos
+> Receber os pagamentos
 >
-> Veja os principais motivos que podem impactar diretamente na aprovação dos pagamentos em sua loja. 
+> Saiba como ativar a loja para processar vendas reais.
 >
-> [Motivos de recusas dos pagamentos](/developers/pt/docs/prestashop/sales-processing/reasons-for-refusals)
+> [Receber os pagamentos](/developers/pt/docs/prestashop/sales-processing/go-to-production)
 
+----[mlb]----
 > NEXT_STEP_CARD_PT
 >
-> Como customizar notificação de pagamento para ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------
+> Como customizar notificação de pagamento para Checkout Transparente
 >
-> Após configurar o ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------ para receber pagamentos, saiba como configurar o envio de e-mails que notificarão o usuário de suas transações.
+> Após configurar o Checkout Transparente para receber pagamentos, saiba como configurar o envio de e-mails que notificarão o usuário de suas transações.
 >
-> [Customização de e-mail](/developers/pt/docs/prestashop/payment-setup/how-tos/cho-api-email-customization)
+> [Customização de e-mail](/developers/pt/docs/prestashop/how-tos/checkout-api/email-customization)
+------------
+
+----[mla, mlm, mpe, mco, mlu, mlc]----
+> NEXT_STEP_CARD_PT
+>
+> Como customizar notificação de pagamento para Checkout API
+>
+> Após configurar o Checkout API para receber pagamentos, saiba como configurar o envio de e-mails que notificarão o usuário de suas transações.
+>
+> [Customização de e-mail](/developers/pt/docs/prestashop/how-tos/checkout-api/email-customization)
+------------
