@@ -1,47 +1,47 @@
 # Configure payments with Checkout Pro
  
-Com o [Checkout Pro](/developers/pt/guides/checkout-pro/landing), o comprador será direcionado da loja para o site do Mercado Pago onde deverá preencher as informações solicitadas e efetuar o pagamento. Dessa forma, a transação é processada e concluída fora do ambiente de sua loja. Não é necessário que o comprador possua uma conta no Mercado Pago e, ao final da transação, o comprador pode ser devolvido à sua loja.
+With [Checkout Pro](/developers/en/guides/checkout-pro/landing), the buyer will be directed from the store to the Mercado Pago website where he must fill in the requested information and make the payment. This way, the transaction is processed and completed outside your store environment. It is not necessary for the buyer to have a Mercado Pago account and, at the end of the transaction, the buyer can be returned to your store.
  
-Para integrar o Checkout Pro, siga os passos abaixo.
+To integrate Checkout Pro, follow the steps below.
  
-1. Vá para o menu **Stores > Configuration > Sales > Payment Methods**.
-2. Para ativar pagamentos com cartão, acesse a seção **Mercado Pago > Checkout Pro**.
-3. Selecione **Sim** para ativar a experiência do Mercado Pago para pagamentos com cartões no checkout da sua loja. Por padrão, o método de pagamento com cartão já está ativado.
-4. Caso necessário, **altere o título do meio de pagamento** que aparecerá para o comprador.
-5. Em **Auto Return**, indique se o comprador retornará automaticamente à sua loja ao final do pagamento aprovado.
-6. No campo **Exclude Payment Methods**, deixe desmarcado os meios de pagamento que deseja aceitar em sua loja. Por padrão, o módulo exibirá ao comprador todas as formas de pagamento disponíveis para o seu país.
-7. Defina o **número máximo de parcelas** aceitas no fluxo de pagamento com cartões de crédito.
-8. No campo **Statement Descriptor**, insira o texto que identificará o pagamento na fatura do cartão. Esta funcionalidade não está disponível em todos os países. 
-9. Ative o **modo binário** para configurar a recusa automática de pagamentos que não são aprovados instantaneamente por bancos ou outros adquirentes. Quando ativado, este modo de processamento só resultará no status de um pagamento como `approved` ou` rejected`. Não existirão estados intermediários como `in_proccess` ou` pending`. 
-10. Se dejar, você poderá personalizar um **banner** com os meios de pagamento disponível alterando a URL da imagem em questão. Por padrão, o módulo Mercado Pago irá configurar um banner com os meios de pagamento disponíveis de acordo com o seu país.
-11. Em **Checkout Position**, indique a posição em que o meio de pagamento ficará disponível para o comprador no fluxo de checkout. 
-12. Clique em **Set up installment and interest** para [configurar no Mercado Pago](https://www.mercadopago.com.br/costs-section#from-section=menu) a tarifa que será paga em cada compra e também oferecer parcelas sem juros para seus clientes.
-13. Em seguida, clique em** **Save Config** para salvar suas preferências.
+1. Go to the **Stores > Configuration > Sales > Payment Methods** menu.
+2. To activate card payments, access the **Mercado Pago > Checkout Pro** section.
+3. Select **Yes** to activate the Mercado Pago experience for card payments at your store checkout. By default, the card payment method is already activated.
+4. If necessary, **change the title of the payment method** that will appear for the buyer.
+5. In **Auto Return**, indicate if the buyer will automatically return to your store at the end of the approved payment.
+6. In the **Exclude Payment Methods** field, leave the payment methods you wish to accept in your store unchecked. By default, the module will show the buyer all available payment methods for their country.
+7. Set the **maximum number of installments** accepted in the credit card payment flow.
+8. In the **Statement Descriptor** field, enter the text that will identify the payment on the card statement. This feature is not available in all countries.
+9. Enable **binary mode** to configure automatic decline of payments that are not instantly approved by banks or other acquirers. When enabled, this processing mode will only result in a payment status being `approved` or `rejected`. There will be no intermediate states like `in_proccess` or `pending`.
+10. You can customize a **banner** with the available payment methods by changing the URL of the image in question. By default, the Mercado Pago module will configure a banner with the available payment methods according to your country.
+11. In **Checkout Position**, indicate the position in which the payment method will be available to the buyer in the checkout flow.
+12. Click on **Set up installment and interest** to [set up in Mercado Pago](https://www.mercadopago.com.br/costs-section#from-section=menu) the rate that will be paid in each purchase and also offer interest-free installments to your customers.
+13. Click **Save Config** to save your preferences.
 
 ----[mlb]----
-> PREV_STEP_CARD_PT
+> NEXT_STEP_CARD_EN
 >
-> Configurar os pagamentos com Pix
+> Configure payments with Pix
 >
-> Configure a sua loja para receber pagamentos com Pix utilizando o Checkout Transparente.
+> Set up your store to receive Pix payments using Checkout API.
 >
-> [Pix](/developers/pt/docs/magento-two/payment-configuration/checkout-api/pix)
+> [Pix](/developers/en/docs/magento-two/payment-configuration/checkout-api/pix)
 ------------
 
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-> PREV_STEP_CARD_PT
+> NEXT_STEP_CARD_EN
 >
-> Configurar os pagamentos via transferência bancária
+> Configure bank transfer payments
 >
-> Configure a sua loja para receber pagamentos via transferência bancária utilizando o Checkout API.
+> Configure your store to receive payments via bank transfer using the Checkout API.
 >
-> [Pix](/developers/pt/docs/magento-two/payment-configuration/checkout-api/bank-transfer)
+> [Bank transfer](/developers/en/docs/magento-two/payment-configuration/checkout-api/bank-transfer)
 ------------
 
-> NEXT_STEP_CARD_PT
+> NEXT_STEP_CARD_EN
 >
-> Testar os pagamentos
+> Test payments
 >
-> Saiba como realizar uma compra teste e garantir o funcionamento da integração.
+> Learn how to make a test purchase and ensure the integration works.
 >
-> [Testar os pagamentos](/developers/pt/docs/magento-two/sales-processing/integration-test)
+> [Test payments](/developers/en/docs/magento-two/sales-processing/integration-test)
