@@ -7,6 +7,6 @@ To link an order from the Shopify control panel with an order from the Mercado P
 3. Once there, scroll down to the **Timeline** section.
 4. Look for the line that refers to the amount of the payment processed for that purchase. Click on this line to expand the details of the order.
 5. Find the **Authorization Key** field and copy its value.
-6. Finally, go to your [Mercado Pago] panel (http://mercadopago.com) and use the copied value in the Mercado Pago activity search engine.
+6. Finally, go to your [Mercado Pago panel](http://mercadopago.com) and use the copied value in the Mercado Pago activity search engine.
 
-![link-pedidos-choapi](/images/shopify/shopify-link-pedidos-en.png)
+![link-pedidos-choapi](shopify/shopify-link-pedidos-en.png)
