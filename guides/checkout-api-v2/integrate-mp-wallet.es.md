@@ -342,8 +342,7 @@ mp.checkout({
 >
 > Importante
 >
-> Para probar la integración, es importante que uses otro navegador o cierres sesión en tu cuenta de Mercado Pago, ya que los datos del comprador deben ser diferentes a los del vendedor.
-
+> Al crear un pago es posible recibir 3 estados diferentes: "Pendiente", "Rechazado" y "Aprobado". Para mantenerse al día con las actualizaciones, debe configurar su sistema para recibir notificaciones de pago y otras actualizaciones de estado. Consulte [Notificaciones](/developers/es/docs/checkout-api/additional-content/notifications/introduction) para obtener más detalles.
 
 > PREV_STEP_CARD_ES
 >

@@ -2,6 +2,12 @@
 
 Antes de realizar uma compra teste, é importante configurar a **Public Key de produção do seu usuário de teste comprador** no frontend da aplicação, além do **Access Token de produção do seu usuário de teste vendedor** no backend.
 
+> WARNING
+>
+> Importante
+>
+> Para testar a integração é importante que você utilize outro navegador ou encerre a sessão da sua conta Mercado Pago, uma vez que os dados de comprador precisam ser diferentes dos dados do vendedor.
+
 Com as credenciais configuradas, siga os passos abaixo para realizar a compra teste.
 
 

@@ -2,6 +2,12 @@
 
 Before making a test purchase, it is important to configure the **Production Public Key of your test buyer user** on the application frontend, in addition to the **production Access Token of your salesperson test user** on the backend.
 
+> WARNING
+>
+> Important
+>
+> To test the integration, it is important that you use another browser or log out of your Mercado Pago account, as the buyer data must be different from the seller data.
+
 With the credentials configured, follow the steps below to make the test purchase.
 
 

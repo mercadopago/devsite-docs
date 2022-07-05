@@ -225,9 +225,9 @@ createPreference();
 
 > WARNING
 >
-> Important
+> Importante
 >
-> To test the integration, it is important that you use another browser or log out of your Mercado Pago account, as the buyer data must be different from the seller data.
+> When creating a payment it is possible to receive 3 different statuses: "Pending", "Rejected" and "Approved". To keep up with updates, you need to configure your system to receive payment notifications and other status updates. See [Notifications](/developers/en/docs/checkout-api/additional-content/notifications/introduction) for more details.
 
 
 > PREV_STEP_CARD_EN

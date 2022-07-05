@@ -18,7 +18,7 @@ Los tres tipos de integración mencionados anteriormente son elegibles para la *
 > Para ser elegible para PCI SAQ A, es necesario que su integración se realice mediante Secure Fields (campos de tarjeta en formato Iframe).
 
 
-Además de los medios de pago que se muestran en la tabla anterior, también es posible ofrecer otros métodos de pago. Para obtener una lista detallada de todas las opciones disponibles para la integración, envíe un GET al punto final [/v1/payment_methods](/developers/es/reference/payment_methods/_payment_methods/get) y ejecute la solicitud. En la respuesta tendrás acceso a cada una de las opciones.
+Además de los medios de pago que se muestran en la tabla anterior, también es posible ofrecer otros métodos de pago. Para obtener una lista detallada de todas las opciones disponibles para la integración, envíe un **GET** al punto final [/v1/payment_methods](/developers/es/reference/payment_methods/_payment_methods/get) y ejecute la solicitud. En la respuesta tendrás acceso a cada una de las opciones.
 
 > NEXT_STEP_CARD_ES
 >

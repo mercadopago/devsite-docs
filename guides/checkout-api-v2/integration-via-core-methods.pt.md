@@ -350,7 +350,7 @@ O token do cartão é criado a partir das próprias informações do cartão, au
 
 Para finalizar o processo de integração de pagamento via cartão, é necessário que o backend receba a informação do formulário com o token gerado e os dados completos conforme etapas anteriores.
 
-Com todas as informações coletadas no backend, envie um POST com os atributos necessários, atentando-se aos parâmetros `token, `transaction_amount`, `installments`, `payment_method_id` e o `payer.email` ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, faça o envio das informações utilizando os SDKs abaixo.
+Com todas as informações coletadas no backend, envie um POST com os atributos necessários, atentando-se aos parâmetros `token`, `transaction_amount`, `installments`, `payment_method_id` e o `payer.email` ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, faça o envio das informações utilizando os SDKs abaixo.
 
 
 > NOTE
@@ -578,8 +578,12 @@ curl -X POST \
 ```
 ]]]
 
+> WARNING
+>
+> Importante
+>
+> Ao criar um pagamento é possível receber 3 status diferentes: "Pendente", "Rejeitado" e "Aprovado". Para acompanhar as atualizações é necessário configurar seu sistema para receber as notificações de pagamentos e outras atualizações de status. Veja [Notificações](/developers/pt/docs/checkout-api/additional-content/notifications/introduction) para mais detalhes.
 
-Ao finalizar, você poderá realizar testes e garantir que a integração está funcionando de maneira correta.
 
 > PREV_STEP_CARD_PT
 >

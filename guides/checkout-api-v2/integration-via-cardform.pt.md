@@ -438,6 +438,13 @@ A resposta trará o seguinte resultado
 }
 ```
 
+> WARNING
+>
+> Importante
+>
+> Os pagamentos criados possuem os seguintes status: "Pendente", "Rejeitado" e "Aprovado". Para acompanhar as atualizações é necessário configurar seu sistema para receber as notificações de pagamentos e outras atualizações de status. Veja [Notificações](/developers/pt/docs/checkout-api/additional-content/notifications/introduction) para mais detalhes.
+
+
 
 ## Exemplo de código
 

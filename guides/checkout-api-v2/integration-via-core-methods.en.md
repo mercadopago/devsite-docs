@@ -578,6 +578,11 @@ curl -X POST \
 ```
 ]]]
 
+> WARNING
+>
+> Important
+>
+> When creating a payment it is possible to receive 3 different statuses: "Pending", "Rejected" and "Approved". To keep up with updates, you need to configure your system to receive payment notifications and other status updates. See [Notifications](/developers/en/docs/checkout-api/additional-content/notifications/introduction) for more details.
 
 When finished, you can perform tests and ensure that the integration is working correctly.
 

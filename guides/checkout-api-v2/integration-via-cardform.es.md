@@ -436,6 +436,11 @@ La respuesta devolverá el siguiente resultado
 }
 ```
 
+> WARNING
+>
+> Importante
+>
+> Al crear un pago es posible recibir 3 estados diferentes: "Pendiente", "Rechazado" y "Aprobado". Para mantenerse al día con las actualizaciones, debe configurar su sistema para recibir notificaciones de pago y otras actualizaciones de estado. Consulte [Notificaciones](/developers/es/docs/checkout-api/additional-content/notifications/introduction) para obtener más detalles.
 
 ## Ejemplo de código
 
