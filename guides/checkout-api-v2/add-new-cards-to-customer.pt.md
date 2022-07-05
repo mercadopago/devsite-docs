@@ -1,6 +1,6 @@
 # Adicionar novos cartões a um cliente
 
-Caso necessário, é possível adicionar novos cartões a um determinado cliente. Para isso, utilize um dos códigos disponíveis abaixo.
+Caso necessário, é possível adicionar novos cartões a um determinado cliente. Para isso, busque o cliente e defina os novos dados de cartão utilizando um dos códigos disponíveis abaixo.
 
 
 [[[
