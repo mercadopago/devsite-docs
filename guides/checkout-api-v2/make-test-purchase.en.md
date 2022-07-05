@@ -1,6 +1,8 @@
 # Make test purchase
 
-Before making a test purchase, it is important to configure the **Production Public Key of your test buyer user** on the application frontend, in addition to the **production Access Token of your salesperson test user** on the backend.
+The testing stage allows you to analyze whether the integration was done correctly and whether payments are being processed without errors, preventing errors from appearing when making the checkout available to end buyers.
+
+To make a t purchase, you must use the **test credentials** of your **production user**. To obtain them, go to **Dashboard > Your Application > Test Credentials** and copy the available information.
 
 > WARNING
 >
@@ -8,11 +10,11 @@ Before making a test purchase, it is important to configure the **Production Pub
 >
 > To test the integration, it is important that you use another browser or log out of your Mercado Pago account, as the buyer data must be different from the seller data.
 
-With the credentials configured, follow the steps below to make the test purchase.
+With the credentials in hand, follow the steps below to make the test purchase.
 
 
-1. Start the integration configured with the **Seller test user credentials**.
-2. Enter the buyer test user email.
+1. Start the integration configured with the **Test credentials**.
+2. Enter your e-mail (remembering that it must be different from the email you use on Mercado Pago)
 3. Confirm the purchase.
 
 Done! Once these steps are finished, the integration will be complete and you will be able to use your production credentials to use the Checkout API. For more information, see the section [Requirements to go to production](/developers/en/docs/checkout-api/integration-test/go-to-production-requirements)

@@ -245,4 +245,4 @@ createPreference();
 >
 > Learn how to test the Checkout API integration in your store.
 >
-> [Integration Test](/developers/en/docs/checkout-api/integration-test/create-test-user)
+> [Integration Test](/developers/en/docs/checkout-api/integration-test/make-test-purchase)

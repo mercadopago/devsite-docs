@@ -1568,4 +1568,4 @@ Para cancelar um pagamento, veja a seção [Reembolsos e cancelamentos](/develop
 >
 > Saiba como testar a integração do Checkout Transparente em sua loja.
 >
-> [Teste de integração](/developers/pt/docs/checkout-api/integration-test/create-test-user)
+> [Teste de integração](/developers/pt/docs/checkout-api/integration-test/make-test-purchase)

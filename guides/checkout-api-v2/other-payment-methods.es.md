@@ -1585,4 +1585,4 @@ Para obtener más información, consulte la sección [Reembolsos y cancelaciones
 >
 > Consulta cómo probar la integración de Checkout API en tu tienda.
 >
-> [Prueba de integración](/developers/es/docs/checkout-api/integration-test/create-test-user)
+> [Prueba de integración](/developers/es/docs/checkout-api/integration-test/make-test-purchase)

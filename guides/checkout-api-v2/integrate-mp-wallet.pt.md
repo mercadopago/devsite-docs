@@ -245,4 +245,4 @@ Com a preferência criada, é preciso exibir o botão de pagamento que permitir�
 >
 > Saiba como testar a integração do Checkout Transparente em sua loja.
 >
-> [Teste de integração](/developers/pt/docs/checkout-api/integration-test/create-test-user)
+> [Teste de integração](/developers/pt/docs/checkout-api/integration-test/make-test-purchase)

@@ -447,4 +447,4 @@ Upon completing these steps, the QR code will have been rendered and will be dis
 >
 > Learn how to test the Checkout API integration in your store.
 >
-> [Integration Test](/developers/en/docs/checkout-api/integration-test/create-test-user)
+> [Integration Test](/developers/en/docs/checkout-api/integration-test/make-test-purchase)
