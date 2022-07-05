@@ -22,7 +22,7 @@ Below we describe in detail each of the options and how to execute them.
 ## Capture total amount
 
 
-To capture the total amount of a reservation, send a **PUT** with the `capture` parameter as `true` to the endpoint [/v1/payments/{id}](/developers/en/reference/payments/_payments_id/put) and execute the request or, if you prefer, use one of the SDKs below.
+To capture the total amount of a reservation, send the value to be captured to the `transaction_amount` parameter and execute the request through the codes available below.
 
 
 [[[
@@ -116,7 +116,7 @@ The response will return that the payment is approved and credited.
 ## Capture partial value
 
 
-To capture an amount lower than the reserved amount, send a **PUT** with the new value informed in the `transaction_amount` parameter to the endpoint [/v1/payments/{id}](/developers/en/reference/payments/_payments_id/put) and execute the request or, if you prefer, use one of our SDKs below.
+To capture an amount lower than the reserved amount, send the value to be captured to the `transaction_amount` parameter and execute the request through the codes available below.
 
 ----[mla]----
 > WARNING

@@ -10,7 +10,7 @@ Pix é um meio de pagamento eletrônico instantâneo oferecido pelo Banco Centra
 > Para oferecer pagamentos com Pix é preciso garantir que as chaves Pix tenham sido criadas. Caso ainda não tenha criado, clique aqui e veja o passo a passo.
 
 
-Para integrar pagamentos via Pix, siga as etapas abaixo, mas caso você já tenha integrado pagamentos via cartão, inicie a integração a partir da etapa [Adicionar formulário de pagamento](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-with-pix#bookmark_adicionar_formulário_de_pagamento).
+Para integrar pagamentos via Pix, siga as etapas abaixo, mas caso você já tenha integrado pagamentos via cartão, inicie a integração a partir da etapa [Adicionar formulário de pagamento](/developers/pt/docs/checkout-api/integration-configuration/integrate-with-pix#bookmark_Adicionar_formulário_de_pagamento).
 
 ## Importar MercadoPago.js
 
@@ -384,9 +384,6 @@ Com Pix, você também pode escolher o prazo que o cliente terá para pagar a co
 
 Por padrão, a data de vencimento para pagamentos com Pix é de **24 horas**, mas você pode alterá-la enviando o campo `date_of_expiration` na solicitação de criação de pagamento. 
 
-Para alterar a data de vencimento do pagamento via Pix, veja a seção [Alterar data de vencimento](/developers/pt/docs/checkout-api/payment-management/modify-expiration-date)
-
-
 ## Visualização de pagamento
 
 Para o usuário efetuar o pagamento, você deve escolher a forma de abertura do mesmo, que pode ser através de um botão ou de um código QR que deve ser renderizado. 
@@ -396,7 +393,7 @@ Selecione a opção que mais se adéqua ao seu modelo de negócio e siga as etap
 
 * **Adicionar Link ou botão**: Ao optar por adicionar um link ou botão para pagamento com Pix, o comprador será direcionado a uma nova janela contendo todas as informações para pagamento, como QR Code, Pix Copia e Cola e as instruções de pagamento.
 
-Para oferecer esta opção, utilize o atributo "ticket_url", que mostra um Pix em uma nova janela com todas as informações de QR Code, Pix Copia e Cola e instruções de pagamentos. 
+Para oferecer esta opção, utilize o atributo `ticket_url`, que mostra um Pix em uma nova janela com todas as informações de QR Code, Pix Copia e Cola e instruções de pagamentos. 
 
 [[[
 ```html

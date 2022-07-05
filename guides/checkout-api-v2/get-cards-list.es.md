@@ -1,6 +1,6 @@
 # Consultar lista de tarjetas
 
-Es posible consultar la lista de tarjetas guardadas para un determinado cliente. Para eso, envía un GET con el cliente `customer_id` al endpoint [/v1/customers/{customer_id}/cards](/developers/es/reference/cards/_customers_customer_id_cards/get) y ejecuta la solicitud o, si lo prefieres, utiliza uno de nuestros SDKs a continuación.
+Es posible consultar la lista de tarjetas guardadas para un determinado cliente. Para eso, envía un **GET** con el cliente `customer_id` al endpoint [/v1/customers/{customer_id}/cards](/developers/es/reference/cards/_customers_customer_id_cards/get) y ejecuta la solicitud o, si lo prefieres, utiliza uno de nuestros SDKs a continuación.
 
 
 [[[

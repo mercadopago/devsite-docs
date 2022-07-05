@@ -20,7 +20,7 @@ Sigue las siguientes etapas para configurar la Billetera de Mercado Pago como me
 > Crear preferencia
 
 
-La primera etapa para configurar los pagos con la Billetera Mercado Pago es la creación de la preferencia. Para esto, envía un POST con el parámetro `purpose` y el valor `wallet_purchase` al endpoint [/checkout/preferences](/developers/es/reference/preferences/_checkout_preferences/post) y ejecuta la solicitud o, si lo prefieres, utiliza uno de los SDKs indicados a continuación.
+La primera etapa para configurar los pagos con la Billetera Mercado Pago es la creación de la preferencia. Para esto, envía un **POST** con el parámetro `purpose` y el valor `wallet_purchase` al endpoint [/checkout/preferences](/developers/es/reference/preferences/_checkout_preferences/post) y ejecuta la solicitud o, si lo prefieres, utiliza uno de los SDKs indicados a continuación.
 
 
 

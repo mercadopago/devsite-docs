@@ -8,16 +8,9 @@ sites_supported:
 
 # Cancel reserve
 
-Cancellation of a reserve occurs when, for some reason, the payment for a purchase is not approved and the reservation amount needs to return to the customer's card limit or when a buyer withdraws from the purchase.
+Cancellation of a reserve occurs when, for some reason, the payment for a purchase is not approved and the reservation amount needs to return to the customer's card limit or when a buyer withdraws from the purchase. For more information about refunds and cancellations of payments, see the section [Refunds and Cancellations](/developers/en/docs/checkout-api/additional-content/cancellations-and-refunds).
 
-To cancel a reserve send a **PUT** with the `status` parameter to the endpoint [/v1/payments/{id}](/developers/en/reference/payments/_payments_id/put) and execute the request or, if you prefer, use one of our SDKs below.
-
-> NOTE
->
-> Important
->
-> For more information about refunds and cancellations of payments, see the section [Refunds and Cancellations](/developers/en/docs/checkout-api/additional-content/cancellations-and-refunds).
-
+To cancel a reserve, use one of our available codes below.
 
 
 [[[

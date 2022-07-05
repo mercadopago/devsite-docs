@@ -78,37 +78,60 @@ Después de exhibir las tarjetas guardadas, crea el formulario de pago utilizand
 
 [[[
 ```html
+<style>
+    #form-checkout {
+      display: flex;
+      flex-direction: column;
+      max-width: 600px;
+    }
 
-<li>
-   <label>Payment Method:</label>
-   <select id="cardId" name="cardId"></select>
-</li>
-<li id="cvv">
-   <label for="cvv">Security code:</label>
-   <input type="text" id="cvv" placeholder="123" />
-</li>
+    .container {
+      height: 18px;
+      display: inline-block;
+      border: 1px solid rgb(118, 118, 118);
+      border-radius: 2px;
+      padding: 1px 2px;
+    }
+  </style>
+  <form id="form-checkout" method="POST" action="/process_payment">
+    <select type="text" id="form-checkout__cardId"></select>
+    <div id="form-checkout__securityCode-container" class="container"></div>
+    <input name="token" id="token" hidden>
+    <button>Enviar</button>
+  </form>
+
 <script>
-   const customerCards = [{
-       "id": "3502275482333",
-       "last_four_digits": "9999",
-       "payment_method": {
-           "name": "amex",
-       },
-       "security_code": {
-           "length": 4,
-       }
-   }];
+    const mp = new MercadoPago('TEST-2bf9f710-6a6e-47c8-a207-79f5e73b464c');
 
-   // Append customer cards to select element
-   const selectElement = document.getElementById('cardId');
-   const tmpFragment = document.createDocumentFragment();
-   customerCards.forEach(({id, last_four_digits, payment_method}) => {
-       const optionElement = document.createElement('option');
-       optionElement.setAttribute('value', id)
-       optionElement.textContent = `${payment_method.name} ended in ${last_four_digits}`
-       tmpFragment.appendChild(optionElement);
-   })
-   selectElement.appendChild(tmpFragment)
+    const securityCodeElement = mp.fields.create('securityCode', {
+      placeholder: "CVV"
+    }).mount('form-checkout__securityCode-container');
+
+    const customerCards = [{
+      "id": "3502275482333",
+      "last_four_digits": "9999",
+      "payment_method": {
+        "name": "amex",
+      },
+      "security_code": {
+        "length": 4,
+      }
+    }];
+
+    function appendCardToSelect() {
+      const selectElement = document.getElementById('form-checkout__cardId');
+      const tmpFragment = document.createDocumentFragment();
+      customerCards.forEach(({ id, last_four_digits, payment_method }) => {
+        const optionElement = document.createElement('option');
+        optionElement.setAttribute('value', id)
+        optionElement.textContent = `${payment_method.name} ended in ${last_four_digits}`
+        tmpFragment.appendChild(optionElement);
+      })
+      selectElement.appendChild(tmpFragment)
+    }
+
+    appendCardToSelect();
+
 </script>
 ```
 ]]]
@@ -121,19 +144,24 @@ Después de exhibir las tarjetas guardadas y crear el formulario de pago, es nec
 
 [[[
 ```javascript
-(async function createToken() {
-       try {
-           const token = await mp.createCardToken({
-               cardId: document.getElementById('cardId').value,
-               securityCode: document.getElementById('cvv').value,
-           })
 
-            // Use the received token to make a POST request to your backend
-           console.log('token received: ', token.id)
-       }catch(e) {
-           console.error('error creating token: ', e)
-       }
-   })()
+ const formElement = document.getElementById('form-checkout');
+    formElement.addEventListener('submit', e => createCardToken(e));
+    const createCardToken = async (event) => {
+      try {
+        const tokenElement = document.getElementById('token');
+        if (!tokenElement.value) {
+          event.preventDefault();
+          const token = await mp.fields.createCardToken({
+            cardId: document.getElementById('form-checkout__cardId').value
+          });
+          tokenElement.value = token.id;
+          console.log(tokenElement);
+        }
+      } catch (e) {
+        console.error('error creating card token: ', e)
+      }
+    }
 ```
 ]]]
 

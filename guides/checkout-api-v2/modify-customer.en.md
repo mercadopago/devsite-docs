@@ -2,7 +2,7 @@
 
 If there is any change in a customer's data, such as address, card or account email, it is possible to make this change through the Customer API or our SDKs.
 
-In the table below we describe all the attributes that can be modified. To make the change, send a PUT with the `customer_id` and the attributes you want to modify to the endpoint [/v1/customers/{id}](/developers/en/reference/customers/_customers_id/put) and execute the request or, if you prefer, use one of the SDKs below.
+In the table below we describe all the attributes that can be modified. To make the change, send a **PUT** with the `customer_id` and the attributes you want to modify to the endpoint [/v1/customers/{id}](/developers/en/reference/customers/_customers_id/put) and execute the request or, if you prefer, use one of the SDKs below.
 
 
 > NOTE

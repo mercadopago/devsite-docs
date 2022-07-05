@@ -6,12 +6,6 @@ Además, recomendamos almacenar los datos de la tarjeta siempre que un pago se h
 
 Para crear un cliente y una tarjeta, utilice uno de los siguientes códigos.
 
-> ADVERTENCIA
->
-> Importante
->
-> Si la respuesta de la solicitud devuelve un error del tipo `invalid parameter` con el código HTTP 400, verifica los parámetros `payment_method_id` y `issuer_id` y asegúrate de que los valores se hayan introducido correctamente. Además, cuando estés utilizando usuarios de prueba, recuerda respetar el siguiente formato para el email del cliente: test_payer_[0-9]{1,10}@testuser.com. Por ejemplo: test_payer_12345@testuser.com.
-
 [[[
 ```php
 
@@ -152,6 +146,35 @@ curl -X POST \
 
 ```
 ]]]
+
+
+La respuesta dará el siguiente resultado
+
+```json
+{
+    "id": "123456789-jxOV430go9fx2e",
+    "email": "test_payer_12345@testuser.com",
+    ...
+    "default_card": "1490022319978",
+    "default_address": null,
+    "cards": [{
+        "id": "1490022319978",
+        "expiration_month": 12,
+        "expiration_year": 2020,
+        "first_six_digits": "415231",
+        "last_four_digits": "0001",
+        ...
+    }],
+    "addresses": [],
+    "live_mode": false
+}
+```
+> WARNING
+>
+> Importante
+>
+> Si la respuesta de la solicitud devuelve un error del tipo `invalid parameter` con el código HTTP 400, verifica los parámetros `payment_method_id` y `issuer_id` y asegúrate de que los valores se hayan introducido correctamente. Además, cuando estés utilizando usuarios de prueba, recuerda respetar el siguiente formato para el email del cliente: test_payer_[0-9]{1,10}@testuser.com. Por ejemplo: test_payer_12345@testuser.com.
+
 
 > NEXT_STEP_CARD_ES
 >

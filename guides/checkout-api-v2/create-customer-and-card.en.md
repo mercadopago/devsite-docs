@@ -10,7 +10,7 @@ To create a customer and card, use one of the codes below.
 >
 > Important
 >
-> If the request response returns an error like `invalid parameter` with HTTP code 400, review the `payment_method_id` and `issuer_id` parameters to ensure that the values have been entered correctly. Also, when using test users, keep in mind the following format for customer email: `test_payer_[0-9]{1,10}@testuser.com` For example: `test_payer_12345@testuser.com` .
+> If the request response returns an error like `invalid parameter` with HTTP code 400, review the `payment_method_id` and `issuer_id` parameters to ensure that the values have been entered correctly. Also, when using test users, keep in mind the following format for customer email: `test_payer_[0-9]{1,10}@testuser.com` For example: `test_payer_12345@testuser.com`.
 
 [[[
 ```php
@@ -174,6 +174,12 @@ The response will bring the following result.
 "live_mode": false
 }
 ```
+
+> WARNING
+>
+> Important
+>
+> If the request response returns an error like `invalid parameter` with HTTP code 400, review the `payment_method_id` and `issuer_id` parameters to ensure that the values have been entered correctly. Also, when using test users, keep in mind the following format for customer email: `test_payer_[0-9]{1,10}@testuser.com` For example: `test_payer_12345@testuser.com`.
 
 > NEXT_STEP_CARD_EN
 >

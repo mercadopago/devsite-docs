@@ -1,6 +1,6 @@
 # Adicionar novos cartões a um cliente
 
-Se deseja adicionar novos cartões a determinado cliente, basta enviar um POST ao endpoint [/v1/customers/{customer_id}/cards](developers/pt/reference/cards/_customers_customer_id_cards/post) com as novas informações de cartão e executar a requisição ou, se preferir, utilize um de nossos SDKs abaixo.
+Caso necessário, é possível adicionar novos cartões a um determinado cliente. Para isso, utilize um dos códigos disponíveis abaixo.
 
 
 [[[

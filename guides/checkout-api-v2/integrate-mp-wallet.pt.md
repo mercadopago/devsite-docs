@@ -20,7 +20,7 @@ Siga as etapas abaixo para configurar a Carteira Mercado Pago como meio de pagam
 > Criar preferência
 
 
-A primeira etapa para configurar pagamentos com Carteira Mercado Pago é a criação da preferência. Para isso, envie um POST com o parâmetro `purpose` e o valor `wallet_purchase` ao endpoint [/checkout/preferences](/developers/pt/reference/preferences/_checkout_preferences/post) e execute a requisição ou, se preferir, utilize um dos SDKs abaixo.
+A primeira etapa para configurar pagamentos com Carteira Mercado Pago é a criação da preferência. Para isso, envie um **POST** com o parâmetro `purpose` e o valor `wallet_purchase` ao endpoint [/checkout/preferences](/developers/pt/reference/preferences/_checkout_preferences/post) e execute a requisição ou, se preferir, utilize um dos SDKs abaixo.
 
 
 

@@ -23,7 +23,7 @@ Abaixo descrevemos o detalhe de cada uma das opções e como executá-las.
 ## Capturar valor total 
 
 
-Para fazer a captura do valor total de uma reserva, envie um **PUT** o parâmetro `capture` como `true` ao endpoint [/v1/payments/{id}](/developers/pt/reference/payments/_payments_id/put) e execute a requisição ou, se preferir, utilize um dos SDKs abaixo.
+Para fazer a captura do valor total de uma reserva, envie o valor que deve ser capturado ao parâmetro `transaction_amount` e execute a requição através dos códigos disponíveis abaixo.
 
 
 [[[
@@ -117,7 +117,7 @@ A resposta devolverá que o pagamento se encontra aprovado e creditado.
 ## Capturar valor parcial
 
 
-Para capturar um valor inferior ao reservado, envie um PUT com o novo valor informado no parâmetro `transaction_amount` ao endpoint [/v1/payments/{id}](/developers/pt/reference/payments/_payments_id/put) e execute a requisição ou, se preferir, utilize um de nossos SDKs abaixo.
+Para capturar um valor inferior ao reservado, envie o valor que deve ser capturado ao parâmetro `transaction_amount` e execute a requição através dos códigos disponíveis abaixo.
 
 ----[mla]----
 > WARNING

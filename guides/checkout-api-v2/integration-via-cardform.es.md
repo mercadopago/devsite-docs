@@ -6,7 +6,7 @@ A medida que se introducen los datos de la tarjeta, se realiza una búsqueda aut
 
 Consulta el siguiente diagrama que ilustra el proceso de pago con tarjeta utilizando Card Form.
 
-![API-integration-flowchart](/images/api/api-integration-flowchart-cardform-pt.png)
+![API-integration-flowchart](/images/api/api-integration-flowchart-cardform-es.png)
 
 
 Para integrar los pagos con tarjeta en Checkout API sigue las siguientes etapas.
@@ -206,7 +206,7 @@ Para continuar con el proceso de integración de pagos con tarjeta, es necesario
 
 En el ejemplo de la sección previa, enviamos todos los datos necesarios para la generación del pago al endpoint `process_payment` del backend.
 
-Con toda la información recopilada en el backend, envía un POST con los atributos requeridos, prestando atención a los parámetros `token`, `transaction_amount`, `installments`, `payment_method_id` y `payer.email` al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) y ejecuta la solicitud o, si lo prefieres, envía la información utilizando nuestros SDKs.
+Con toda la información recopilada en el backend, envía un **POST** con los atributos requeridos, prestando atención a los parámetros `token`, `transaction_amount`, `installments`, `payment_method_id` y `payer.email` al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) y ejecuta la solicitud o, si lo prefieres, envía la información utilizando nuestros SDKs.
 
 
 > NOTE

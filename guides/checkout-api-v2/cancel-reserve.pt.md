@@ -8,16 +8,9 @@
 
 # Cancelar reserva
 
-O cancelamento de uma reserva ocorre quando, por algum motivo, o pagamento de uma compra não é aprovado e a reserva do valor precisa retornar para o limite do cartão do cliente ou quando um comprador desiste da compra.
+O cancelamento de uma reserva ocorre quando, por algum motivo, o pagamento de uma compra não é aprovado e a reserva do valor precisa retornar para o limite do cartão do cliente ou quando um comprador desiste da compra. Para mais informações sobre reembolsos e cancelamentos de pagamentos, veja a seção [Reembolsos e cancelamentos](/developers/pt/docs/checkout-api/payment-management/cancellations-and-refunds).
 
-Para cancelar uma reserva envie um PUT com o parâmetro `status` ao endpoint [/v1/payments/{id}](/developers/pt/reference/payments/_payments_id/put) e execute a requisição ou, se preferir, utilize um de nossos SDKs abaixo. 
-
-> NOTE
->
-> Importante
->
-> Para mais informações sobre reembolsos e cancelamentos de pagamentos, veja a seção [Reembolsos e cancelamentos](/developers/pt/docs/checkout-api/additional-content/cancellations-and-refunds).
-
+Para cancelar uma reserva utilize um dos códigos disponíveis abaixo.
 
 
 [[[

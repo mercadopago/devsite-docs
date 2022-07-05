@@ -140,52 +140,47 @@ const mp = new MercadoPago('YOUR_PUBLIC_KEY');
 ]]]
 
 
-
-
-
-
-
 ## Add payment form
 
 With the MercadoPago.js library included, add the payment form below to your project to ensure the secure capture of buyer data. In this step, it is important to use the list you consulted to obtain the available payment methods to create the payment options you want to offer.
 
 
-[[[
+[[[[
 ```html
 
-<form id="form-checkout" action="/process_payment" method="post">
-<div>
-<div>
-<label for="payerFirstName">Name</label>
-<input id="form-checkout__payerFirstName" name="payerFirstName" type="text">
-</div>
-<div>
-<label for="payerLastName">Surname</label>
-<input id="form-checkout__payerLastName" name="payerLastName" type="text">
-</div>
-<div>
-<label for="email">Email</label>
-<input id="form-checkout__email" name="email" type="text">
-</div>
-<div>
-<label for="identificationType">Document type</label>
-<select id="form-checkout__identificationType" name="identificationType" type="text"></select>
-</div>
-<div>
-<label for="identificationNumber">Document number</label>
-<input id="form-checkout__identificationNumber" name="identificationNumber" type="text">
-</div>
-</div>
+  <form id="form-checkout" action="/process_payment" method="post">
+    <div>
+      <div>
+        <label for="payerFirstName">Name</label>
+        <input id="form-checkout__payerFirstName" name="payerFirstName" type="text">
+      </div>
+      <div>
+        <label for="payerLastName">Last name</label>
+        <input id="form-checkout__payerLastName" name="payerLastName" type="text">
+      </div>
+      <div>
+        <label for="email">E-mail</label>
+        <input id="form-checkout__email" name="email" type="text">
+      </div>
+      <div>
+        <label for="identificationType">Type of document</label>
+        <select id="form-checkout__identificationType" name="identificationType" type="text"></select>
+      </div>
+      <div>
+        <label for="identificationNumber">Document number</label>
+        <input id="form-checkout__identificationNumber" name="identificationNumber" type="text">
+      </div>
+    </div>
 
-<div>
-<div>
-<input type="hidden" name="transactionAmount" id="transactionAmount" value="100">
-<input type="hidden" name="description" id="description" value="Product Name">
-<br>
-<button type="submit">Pay</button>
-</div>
-</div>
-</form>
+    <div>
+      <div>
+        <input type="hidden" name="transactionAmount" id="transactionAmount" value="100">
+        <input type="hidden" name="description" id="description" value="Nome do Produto">
+        <br>
+        <button type="submit">Pay</button>
+      </div>
+    </div>
+  </form>
 ```
 ]]]
 

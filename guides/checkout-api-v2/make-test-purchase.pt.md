@@ -8,7 +8,7 @@ Para realizar uma compra teste é preciso utilizar as **credenciais de teste** d
 >
 > Importante
 >
-> Para testar a integração é importante que você utilize outro navegador ou encerre a sessão da sua conta Mercado Pago, uma vez que os dados de comprador precisam ser diferentes dos dados do vendedor.  
+> Para testar a integração é importante que você utilize outro navegador ou encerre a sessão da sua conta Mercado Pago, uma vez que os dados de comprador precisam ser diferentes dos dados do vendedor.   
 
 Com as credenciais em mãos, siga os passos abaixo para realizar a compra teste.
 

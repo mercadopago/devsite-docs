@@ -6,12 +6,6 @@ Além disso, recomendamos armazenar os dados do cartão sempre que um pagamento 
 
 Para criar um cliente e cartão, utilize um dos códigos abaixo.
 
-> WARNING
->
-> Importante
->
-> Caso a resposta da requisição retorne um erro do tipo `invalid parameter` com código HTTP 400, revise os parâmetros `payment_method_id` e `issuer_id` e garanta que os valores tenham sido inseridos de maneira correta. Além disso, ao utilizar usuários de teste, tenha em mente o seguinte formato para o e-mail do cliente: `test_payer_[0-9]{1,10}@testuser.com` Por exemplo: `test_payer_12345@testuser.com`.
-
 [[[
 ```php
 
@@ -174,6 +168,13 @@ A resposta trará o seguinte resultado.
     "live_mode": false
 }
 ```
+
+> WARNING
+>
+> Importante
+>
+> Caso a resposta da requisição retorne um erro do tipo `invalid parameter` com código HTTP 400, revise os parâmetros `payment_method_id` e `issuer_id` e garanta que os valores tenham sido inseridos de maneira correta. Além disso, ao utilizar usuários de teste, tenha em mente o seguinte formato para o e-mail do cliente: `test_payer_[0-9]{1,10}@testuser.com` Por exemplo: `test_payer_12345@testuser.com`.
+
 
 > NEXT_STEP_CARD_PT
 >

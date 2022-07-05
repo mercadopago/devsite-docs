@@ -146,54 +146,42 @@ const mp = new MercadoPago('YOUR_PUBLIC_KEY');
 
 Con la biblioteca MercadoPago.js incluida, añade el siguiente formulario de pago a tu proyecto para garantizar la captura segura de los datos de los compradores. En esta etapa es importante utilizar la lista que consultaste para obtener los medios de pago disponibles para crear las opciones de pago que deseas ofrecer.
 
-
 [[[
 ```html
 
-<form action="/process_payment" method="post" id="paymentForm">
-    <h3>Forma de Pago</h3>
+  <form id="form-checkout" action="/process_payment" method="post">
     <div>
-      <select class="form-control" id="paymentMethod" name="paymentMethod">
-        <option>Selecciona una forma de pago</option>
-
-        <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
-        <option value="--PaymentId--">--PaymentTypeName--</option>
-      </select>
-    </div>
-    <h3>Detalle del comprador</h3>
-    <div>
-    <div>
+      <div>
         <label for="payerFirstName">Nombre</label>
-        <input id="payerFirstName" name="payerFirstName" type="text" value="Nombre">
+        <input id="form-checkout__payerFirstName" name="payerFirstName" type="text">
       </div>
       <div>
-        <label for="payerLastName">Apellido</label>
-        <input id="payerLastName" name="payerLastName" type="text" value="Apellido">
+        <label for="payerLastName">Appelido</label>
+        <input id="form-checkout__payerLastName" name="payerLastName" type="text">
       </div>
       <div>
-        <label for="payerEmail">E-mail</label>
-        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com">
+        <label for="email">E-mail</label>
+        <input id="form-checkout__email" name="email" type="text">
       </div>
       <div>
-        <label for="docType">Tipo del documento</label>
-        <select id="docType" name="docType" data-checkout="docType" type="text"></select>
+        <label for="identificationType">Tipo de documento</label>
+        <select id="form-checkout__identificationType" name="identificationType" type="text"></select>
       </div>
       <div>
-        <label for="docNumber">Número del documento</label>
-        <input id="docNumber" name="docNumber" data-checkout="docNumber" type="text">
+        <label for="identificationNumber">Número del documento</label>
+        <input id="form-checkout__identificationNumber" name="identificationNumber" type="text">
       </div>
     </div>
 
     <div>
       <div>
         <input type="hidden" name="transactionAmount" id="transactionAmount" value="100">
-        <input type="hidden" name="productDescription" id="productDescription" value="Nombre del Producto">
+        <input type="hidden" name="description" id="description" value="Nome do Produto">
         <br>
         <button type="submit">Pagar</button>
-        <br>
       </div>
-  </div>
-</form>
+    </div>
+  </form>
 ```
 ]]]
 

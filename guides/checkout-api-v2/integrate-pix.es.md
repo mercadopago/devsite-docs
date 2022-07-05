@@ -10,7 +10,7 @@ Pix es un medio de pago electrónico instantáneo ofrecido por el Banco Central 
 > Para ofrecer pagos con Pix es necesario asegurarse de que las claves Pix han sido creadas. Si aún no las creaste, [haz clic aquí](https://www.youtube.com/watch?v=60tApKYVnkA) y consulta el paso a paso.
 
 
-Para integrar los pagos vía Pix, sigue las siguientes etapas; pero si ya integraste los pagos con tarjeta, inicia la integración desde la etapa [Añadir formulario de pago](/developers/es/docs/checkout-api/integration-configuration/card/integrate-with-pix#bookmark_añadir_formulario_de_pago).
+Para integrar los pagos vía Pix, sigue las siguientes etapas; pero si ya integraste los pagos con tarjeta, inicia la integración desde la etapa [Añadir formulario de pago](/developers/es/docs/checkout-api/integration-configuration/integrate-with-pix#bookmark_Añadir_formulario_de_pago).
 
 ## Importar MercadoPago.js
 
@@ -394,7 +394,7 @@ Selecciona la opción que mejor se adapte a tu modelo de negocio y sigue las eta
 
 * **Añadir link o botón**: Al optar por añadir un link o botón para el pago con Pix, el comprador será dirigido a una nueva ventana que contiene toda la información para el pago, como QR Code, Pix Copia e Cola y las instrucciones de pago.
 
-Para ofrecer esta opción, utiliza el atributo "ticket_url", que muestra un Pix en una nueva ventana con toda la información del QR Code, Pix Copia e Cola y de las instrucciones de pago.
+Para ofrecer esta opción, utiliza el atributo `ticket_url`, que muestra un Pix en una nueva ventana con toda la información del QR Code, Pix Copia e Cola y de las instrucciones de pago.
 
 [[[
 ```html

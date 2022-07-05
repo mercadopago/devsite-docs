@@ -1,6 +1,7 @@
 # Add new cards to a customer
 
-If you want to add new cards to a particular customer, just send a POST to the endpoint [/v1/customers/{customer_id}/cards](/developers/en/reference/cards/_customers_customer_id_cards/post) with the new card information and execute the request or, if you prefer, use one of our SDKs below.
+
+If necessary, it is possible to add new cards to a specific customer. To do this, search for the customer and define the new card data using one of the codes available below.
 
 
 [[[

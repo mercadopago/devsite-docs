@@ -19,7 +19,7 @@ A continuación describimos en detalle cada una de las opciones y cómo ejecutar
 
 ## Capturar monto total
 
-Para capturar el monto total de una reserva, envía un **PUT** con el parámetro `capture` como `true` en el endpoint [/v1/payments/{id}](/developers/es/reference/payments/_payments_id/put) y ejecute la solicitud o, si lo prefiere, use uno de los SDK a continuación.
+Para capturar el monto total de una reserva, envía el valor a capturar al parámetro `transaction_amount` y ejecuta la solicitud a través de los códigos disponibles a continuación.
 
 [[[
 ```php
@@ -110,7 +110,7 @@ La respuesta va a devolver que el pago se encuentra aprobado y acreditado.
 
 ## Capturar monto parcial
 
-Para capturar un monto inferior al monto reservado, envíe un **PUT** con el nuevo valor informado en el parámetro `transaction_amount` al endpoint [/v1/payments/{id}](/developers/es/reference/payments/_payments_id/put) y ejecute la solicitud o, si lo prefiere, use uno de nuestros SDK a continuación.
+Para capturar un monto inferior al monto reservado, envía el valor a capturar al parámetro `transaction_amount` y ejecuta la solicitud a través de los códigos disponibles a continuación.
 
 ----[mla]----
 > WARNING

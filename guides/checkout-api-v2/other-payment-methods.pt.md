@@ -493,7 +493,7 @@ A resposta mostrará o **status pendente** até que o comprador realize o pagame
 >
 > Nota
 >
-> O cliente tem entre 3 e 5 días para pagar, dependendo do meio de pagamento. Após esse tempo, o pagamento deve ser cancelado.
+> O cliente tem entre 3 e 5 dias para pagar, dependendo do meio de pagamento. Após esse tempo, o pagamento deve ser cancelado.
 
 ## Data de vencimento
 

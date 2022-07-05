@@ -1,6 +1,6 @@
 # Agregar nuevas tarjetas a un cliente
 
-Si deseas añadir nuevas tarjetas a un cliente determinado, solo tienes que enviar un POST al endpoint [/v1/customers/{customer_id}/cards](developers/es/reference/cards/_customers_customer_id_cards/post) con la información de la nueva tarjeta y ejecutar la solicitud o, si lo prefieres, utiliza uno de nuestros SDKs a continuación.
+Si es necesario, es posible agregar nuevas tarjetas a un cliente específico. Para ello, busque al cliente y defina los nuevos datos de la tarjeta utilizando uno de los códigos disponibles a continuación.
 
 
 [[[

@@ -2,14 +2,14 @@
 
 Si se produce un cambio en los datos de un cliente, como por ejemplo la dirección, la tarjeta o el email de la cuenta, es posible realizar esta alteración a través de la API de clientes o de nuestros SDKs.
 
-En la siguiente tabla se describen todos los atributos que se pueden modificar, y para realizar el cambio, envía un PUT con el `customer_id` y los atributos que deseas modificar al endpoint [/v1/customers/{id}](/developers/es/reference/customers/_customers_id/put) y ejecuta la solicitud o, si lo prefieres, utiliza uno de los siguientes SDKs.
+En la siguiente tabla se describen todos los atributos que se pueden modificar, y para realizar el cambio, envía un **PUT** con el `customer_id` y los atributos que deseas modificar al endpoint [/v1/customers/{id}](/developers/es/reference/customers/_customers_id/put) y ejecuta la solicitud o, si lo prefieres, utiliza uno de los siguientes SDKs.
 
 
 > NOTE
 >
 > Importante
 >
-> Si no tienes el `customer_id`, sigue los pasos indicados en la sección Buscar clientes para obtener la información. Además, el campo `email` solo puede actualizarse si el cliente aún no tiene un email asociado.
+> Si no tienes el `customer_id`, sigue los pasos indicados en la sección [Buscar cliente](/developers/es/docs/checkout-api/cards-and-customers-management/search-customers) para obtener la información. Además, el campo `email` solo puede actualizarse si el cliente aún no tiene un email asociado.
 
 
 | Atributo  | Descripción  |
