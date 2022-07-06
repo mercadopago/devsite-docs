@@ -14,7 +14,7 @@ If you have any doubts about the technical terms used, check the glossary below.
 | NET_CREDIT_AMOUNT | Debited to the amount available. |
 | SELLER_AMOUNT | Amount received for split purchases. |
 | GROSS_AMOUNT | Gross operation amount. |
-| METADATA | Extra data such as the ID of partial returns or data provided by the seller in case of having an external integration. ----[mlb]---- When the word "Rebate" is shown, it is understood as the promotional discount assumed by Mercado Libre in co-financed promotions. ------------ |
+| METADATA | Extra data such as the ID of partial returns or data provided by the seller in case of having an external integration. ----[mlb]---- When "Fee discount" is shown it means the reduction in the selling fee for participating in a commercial campaign. ------------ |
 | MP_FEE_AMOUNT | Commission Payment of Mercado Pago and/or Mercado Libre. ----[mla, mpe, mco, mlm, mlu, mlc]---- Includes VAT. ------------ |
 | FINANCING_FEE_AMOUNT | Cost for offering interest-free installments. |
 | SHIPPING_FEE_AMOUNT | Shipping cost. |
