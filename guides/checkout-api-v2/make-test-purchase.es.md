@@ -4,12 +4,6 @@ La etapa de prueba permite analizar si la integración se realizó correctamente
 
 Para realizar una compra de prueba, debe usar las **credenciales de prueba** de su **usuario de producción**. Para obtenerlos, vaya a **Dashboard > Su aplicación > Credenciales de prueba** y copie la información disponible.
 
-> WARNING
->
-> Importante
->
-> Para probar la integración, es importante que uses otro navegador o cierres sesión en tu cuenta de Mercado Pago, ya que los datos del comprador deben ser diferentes a los del vendedor.
-
 
 Con las credenciales configuradas, siga los pasos a continuación para realizar la compra de prueba.
 

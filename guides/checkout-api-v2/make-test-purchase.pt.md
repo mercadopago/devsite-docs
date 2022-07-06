@@ -4,11 +4,6 @@ A etapa de testes permite analisar se a integração foi feita de maneira corret
 
 Para realizar uma compra teste é preciso utilizar as **credenciais de teste** do seu **usuário de produção**. Para obtê-las, acesse **Dashboard > Sua Aplicação > Credenciais de teste** e copie as informações disponíveis.
 
-> WARNING
->
-> Importante
->
-> Para testar a integração é importante que você utilize outro navegador ou encerre a sessão da sua conta Mercado Pago, uma vez que os dados de comprador precisam ser diferentes dos dados do vendedor.   
 
 Com as credenciais em mãos, siga os passos abaixo para realizar a compra teste.
 

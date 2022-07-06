@@ -4,11 +4,6 @@ The testing stage allows you to analyze whether the integration was done correct
 
 To make a t purchase, you must use the **test credentials** of your **production user**. To obtain them, go to **Dashboard > Your Application > Test Credentials** and copy the available information.
 
-> WARNING
->
-> Important
->
-> To test the integration, it is important that you use another browser or log out of your Mercado Pago account, as the buyer data must be different from the seller data.
 
 With the credentials in hand, follow the steps below to make the test purchase.
 
