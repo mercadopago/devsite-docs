@@ -14,7 +14,8 @@ With the credentials in hand, follow the steps below to make the test purchase.
 
 
 1. Start the integration configured with the **Test credentials**.
-2. Enter your e-mail (remembering that it must be different from the email you use on Mercado Pago)
+2. Enter your e-mail (remembering that it must be different from the email you use on Mercado Pago).
+4. Enter data from one of our [test cards](/developers/en/docs/checkout-api/integration-test/test-cards).
 3. Confirm the purchase.
 
 Done! Once these steps are finished, the integration will be complete and you will be able to use your production credentials to use the Checkout API. For more information, see the section [Requirements to go to production](/developers/en/docs/checkout-api/integration-test/go-to-production-requirements)

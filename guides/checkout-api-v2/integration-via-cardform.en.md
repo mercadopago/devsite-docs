@@ -85,13 +85,6 @@ padding: 1px 2px;
 
 After adding the payment form, you will need to initialize it. This step consists of relating the ID of each form field with the corresponding attributes. The library will be responsible for filling out, obtaining and validating all necessary data at the time of payment confirmation.
 
-
-> WARNING
->
-> Important
->
-> For the IFrame to be rendered, it is necessary to pass the `iframe` attribute with `true` value in the parameter object received by the cardForm, in this way, our library will render each iframe to the PCI fields.
-
 [[[
 ```javascript
 

@@ -81,13 +81,6 @@ Para añadir el formulario de pago, inserta el siguiente HTML directamente en el
 
 Después de añadir el formulario de pago, es necesario inicializarlo. Esta etapa consiste en relacionar el ID de cada campo del formulario con los atributos correspondientes. La biblioteca se encargará de rellenar, obtener y validar todos los datos necesarios en la confirmación del pago.  
 
-
-> WARNING
->
-> Importante
->
-> Para que el IFrame sea renderizado, es necesario introducir el atributo `iframe` con valor `true` en el objeto de parámetro recibido por cardForm, de esta manera, nuestra biblioteca renderizará cada iframe para los campos PCI.
-
 [[[
 ```javascript
 
