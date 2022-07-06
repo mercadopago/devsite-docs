@@ -546,7 +546,83 @@ paths:
                             type: string
                             description: Security information code.
                             example: "0"
-                          
+        '401':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey: 
+                    type: string
+                    enum:
+                      - 401-- Unauthorized - Access Token is invalid            
+        '403':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                 type: object
+                 properties:
+                    errorKey:
+                      type: string
+                      enum:
+                        - 403-- Forbidden - User cannot access this resource 
+        '404':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 404-- Not Found - Failed to search shipment
+                      
+        '424':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 424-- Not Found - Failed to get some information of the order 
+        '500':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500-- Internal server error  
+                      
   /proximity-integration/shipments/{shipment_id}/accept:
     put:
       tags:
@@ -583,6 +659,82 @@ paths:
                     type: string
                     description: Status of the order after its acceptance. The Status value that will be returned is "accepted".
                     example: accepted   
+        '400':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey: 
+                    type: string
+                    enum:
+                      - 400-- Conflict-error - This order cannot be accepted due to its current status.
+        '401':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey: 
+                    type: string
+                    enum:
+                      - 401-- Unauthorized - Access Token is invalid 
+        '403':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                 type: object
+                 properties:
+                    errorKey:
+                      type: string
+                      enum:
+                        - 403-- Forbidden - User cannot access this resource 
+                      
+        '424':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 424-- Not Found - Failed to get some information of the order 
+        '500':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500-- Internal server error  
   /proximity-integration/shipments/{shipment_id}/print_label_pdf:
     get:
       tags:
@@ -606,6 +758,67 @@ paths:
                 type: string
                 format: binary
                 description: A binary code referring to the PDF coupon.
+        '401':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey: 
+                    type: string
+                    enum:
+                      - 401-- Unauthorized - Access Token is invalid 
+        '403':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                 type: object
+                 properties:
+                    errorKey:
+                      type: string
+                      enum:
+                        - 403-- Forbidden - User cannot access this resource 
+                      
+        '424':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 424-- Not Found - Failed to get some information of the order 
+        '500':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500-- Internal server error
   /proximity-integration/shipments/{shipment_id}/cancel:
     put:
       tags:
@@ -642,6 +855,82 @@ paths:
                     type: string
                     description: Status of the order after its cancellation. The Status value that will be returned is "cancelled".
                     example: cancelled
+        '400':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey: 
+                    type: string
+                    enum:
+                      - 400-- Conflict-error - This order cannot be cancelled due to its current status.
+        '401':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey: 
+                    type: string
+                    enum:
+                      - 401-- Unauthorized - Access Token is invalid 
+        '403':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                 type: object
+                 properties:
+                    errorKey:
+                      type: string
+                      enum:
+                        - 403-- Forbidden - User cannot access this resource 
+                      
+        '424':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 424-- Not Found - Failed to get some information of the order 
+        '500':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500-- Internal server error 
   /proximity-integration/users/{seller_id}/stores:
     get:
       tags:
@@ -777,6 +1066,67 @@ paths:
                       type: string
                       description: This optional property indicates the custom external ID of the store. This value can be changed or updated using the endpoint that updates External IDs. 
                       example: "A15154DE"
+        '401':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey: 
+                    type: string
+                    enum:
+                      - 401-- Unauthorized - Access Token is invalid 
+        '403':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                 type: object
+                 properties:
+                    errorKey:
+                      type: string
+                      enum:
+                        - 403-- Forbidden - User cannot access this resource 
+                      
+        '424':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 424-- Not Found - Failed to get some information of the stores 
+        '500':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500-- Internal server error 
   /proximity-integration/stores/{StoreID}:
     get:
       tags:
@@ -917,6 +1267,82 @@ paths:
                     type: string
                     description: This optional property indicates the custom external ID of the store. This value can be changed or updated using the endpoint that updates External IDs. 
                     example: "A15154DE"
+        '400':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey: 
+                    type: string
+                    enum:
+                      - 400-- Missing_Parameter - Invalid store id 
+        '401':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey: 
+                    type: string
+                    enum:
+                      - 401-- Unauthorized - Access Token is invalid 
+        '403':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                 type: object
+                 properties:
+                    errorKey:
+                      type: string
+                      enum:
+                        - 403-- Forbidden - User cannot access this resource 
+                      
+        '424':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 424-- Not Found - Failed to get some information of the store 
+        '500':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500-- Internal server error 
   /proximity-integration/stores/{StoreID}/external_id:
     put:
       tags:
@@ -1059,6 +1485,82 @@ paths:
                     type: string
                     description: This optional property indicates the custom external ID of the store. This value can be changed or updated using the endpoint that updates External IDs.
                     example: "9320001PC21"
+        '400':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey: 
+                    type: string
+                    enum:
+                      - 400-- Missing_Parameter - Invalid store id 
+        '401':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey: 
+                    type: string
+                    enum:
+                      - 401-- Unauthorized - Access Token is invalid 
+        '403':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                 type: object
+                 properties:
+                    errorKey:
+                      type: string
+                      enum:
+                        - 403-- Forbidden - User cannot access this resource 
+                      
+        '424':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 424-- Not Found - Failed to get some information of the store 
+        '500':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500-- Internal server error 
   /proximity-integration/users/{SellerID}/stores/external_id/{ExternalID}:
     get:
       tags:
@@ -1198,6 +1700,82 @@ paths:
                     type: string
                     description: This optional property indicates the custom external ID of the store. This value can be changed or updated using the endpoint that updates External IDs.
                     example: "9320001PC21"
+        '400':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey: 
+                    type: string
+                    enum:
+                      - 400-- Missing_Parameter - Invalid store id 
+        '401':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey: 
+                    type: string
+                    enum:
+                      - 401-- Unauthorized - Access Token is invalid 
+        '403':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                 type: object
+                 properties:
+                    errorKey:
+                      type: string
+                      enum:
+                        - 403-- Forbidden - User cannot access this resource 
+                      
+        '424':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 424-- Not Found - Failed to search stores associated with a user 
+        '500':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500-- Internal server error 
   /proximity-integration/stores/{store_id}/status:
     put:
       tags:
@@ -1352,3 +1930,94 @@ paths:
                     type: string
                     description: This optional property indicates the custom external ID of the store. This value can be changed or updated using the endpoint that updates External IDs.
                     example: "A15154DE"
+        '400':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey: 
+                    type: string
+                    enum:
+                      - 400-- Missing_Parameter - Invalid store id 
+        '401':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey: 
+                    type: string
+                    enum:
+                      - 401-- Unauthorized - Access Token is invalid 
+        '403':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                 type: object
+                 properties:
+                    errorKey:
+                      type: string
+                      enum:
+                        - 403-- Forbidden - User cannot access this resource 
+        '404':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                 type: object
+                 properties:
+                    errorKey:
+                      type: string
+                      enum:
+                        - 404-- Not Found - Store not found 
+                      
+        '424':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 424-- Not Found - Failed to search stores associated with a user 
+        '500':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500-- Internal server error 
