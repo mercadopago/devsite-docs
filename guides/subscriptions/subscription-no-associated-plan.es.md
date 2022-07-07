@@ -73,7 +73,6 @@ En el caso de que no se pueda cobrar la cuota en el cuarto reintento, la cuota a
 
 Luego de 3 cuotas con pagos rechazados se da de baja automáticamente la suscripción y la cuenta del vendedor será notificada de la cancelación de la suscripción por e-mail.
 
-
 > NOTE
 > 
 > Nota
