@@ -21,7 +21,6 @@ Finalizando o preenchimento dos campos, execute a requisição.
 >
 > Para comprovar a validade do cartão, realizamos um pagamento com um valor mínimo. Se o pagamento obter sucesso, procedemos com a realização da devolução desse pagamento. O valor pode diferir conforme cada país.
 
-
 ### Lógica de novas tentativas de cobrança
 
 Ao automatizar a recorrência de suas cobranças, são criados pagamentos autorizados que terão uma data de débito configurada com base na periodicidade definida na assinatura. A primeira parcela é cobrada até o período aproximado de uma hora após a assinatura.
