@@ -73,7 +73,6 @@ In the case that the installment cannot be collected on the fourth reattempt, it
 
 After 3 installments with rejected payments, the subscription is automatically canceled and the seller account will be notified of the cancellation of the subscription by e-mail.
 
-
 > NOTE
 > 
 > Note
