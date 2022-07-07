@@ -74,7 +74,6 @@ Caso a parcela não possa ser cobrada na quarta tentativa, ela estará automatic
 
 Após 3 parcelas com pagamentos recusados a assinatura será automaticamente cancelada e a conta do vendedor será notificada do cancelamento da assinatura por e-mail.
 
-
 > NOTE
 > 
 > Importante
