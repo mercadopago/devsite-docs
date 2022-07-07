@@ -9,15 +9,7 @@ Para instalar el módulo manualmente, sigue los pasos:
 5. Luego, en el Panel Administrativo de tu tienda PrestaShop, accede al menú **Módulos y Servicios** y localiza el módulo Mercado Pago.
 6. Finalmente, **activa el módulo** para continuar con los pasos de integración y configuración de tu cuenta.
 
-![Activar manualmente el módulo](/images/prestashop/instalacao_manual_es.gif)
- 
-> PREV_STEP_CARD_ES
->
-> Recibir pagos
->
-> Aprenda cómo habilitar la tienda para procesar ventas reales.
->
-> [Recibir pagos](/developers/es/docs/prestashop/sales-processing/go-to-production)
+![Activar manualmente el módulo](/images/prestashop/instalacao_manual_es.gif) 
 
 ----[mlb]----
 > NEXT_STEP_CARD_ES

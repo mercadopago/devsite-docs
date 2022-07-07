@@ -9,7 +9,7 @@ To integrate Checkout Pro, follow the steps below.
  ----[mlb]----
  * Debit and credit cards;
  * Cash (Mercado Pago account or boleto bancário);
- * Bank transfer (Pix and PEC). The Pix payment option will only be displayed if there is a [Pix key registered](/developers/en/guides/checkout-api-v2/integrate-pix) on Mercado Pago.
+ * Bank transfer (Pix and PEC). The Pix payment option will only be displayed if there is a [Pix key registered](/developers/en/guides/checkout-api/receiving-payment-by-pix) on Mercado Pago.
  ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
  * Debit and credit cards;

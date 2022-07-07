@@ -9,7 +9,7 @@ Para integrar o Checkout Pro, siga os passos abaixo.
  ----[mlb]---- 
  * Cartões de débito e crédito; 
  * Dinheiro (saldo da conta do Mercado Pago ou boleto bancário); 
- * Transferência bancária (Pix e PEC). A opção de pagamento com Pix só será exibida se houver uma [chave Pix cadastrada](/developers/pt/guides/checkout-api-v2/integrate-pix) no Mercado Pago. 
+ * Transferência bancária (Pix e PEC). A opção de pagamento com Pix só será exibida se houver uma [chave Pix cadastrada](/developers/pt/guides/checkout-api/receiving-payment-by-pix) no Mercado Pago. 
  ------------ 
 ----[mla, mlm, mpe, mco, mlu, mlc]---- 
  * Cartões de débito e crédito;
@@ -25,9 +25,13 @@ Para integrar o Checkout Pro, siga os passos abaixo.
 
 Pronto! O Checkout Pro do Mercado Pago está pronto para receber os pagamentos da sua loja.
 
+----[mlb]---- 
 > Caso deseje utilizar o Checkout Transparente para receber pagamentos na loja, veja a seção [Configurar os pagamentos com Checkout Transparente](/developers/pt/docs/prestashop/payment-configuration/checkout-api/introduction).
+------------
 
+----[mla, mlm, mpe, mco, mlu, mlc]---- 
 > Caso deseje utilizar o Checkout API para receber pagamentos na loja, veja a seção [Configurar os pagamentos com Checkout API](/developers/pt/docs/prestashop/payment-configuration/checkout-api/introduction).
+------------
 
 > PREV_STEP_CARD_PT
 >

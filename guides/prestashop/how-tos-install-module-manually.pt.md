@@ -13,14 +13,6 @@ Pronto! O módulo do Mercado Pago foi instalado e está pronto para ser configur
  
 ![Ativar módulo manualmente](/images/prestashop/instalacao_manual_pt.gif)
 
-> PREV_STEP_CARD_PT
->
-> Receber os pagamentos
->
-> Saiba como ativar a loja para processar vendas reais.
->
-> [Receber os pagamentos](/developers/pt/docs/prestashop/sales-processing/go-to-production)
-
 ----[mlb]----
 > NEXT_STEP_CARD_PT
 >

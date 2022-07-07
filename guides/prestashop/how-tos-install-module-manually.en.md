@@ -11,14 +11,6 @@ To install the module manually, follow the steps below:
 
 ![Activate plugin manually](/images/prestashop/instalacao_manual_en.gif)
 
-> PREV_STEP_CARD_EN
->
-> Receive payments
->
-> Learn how to enable the store to process real sales.
->
-> [Receive payments](/developers/en/docs/prestashop/sales-processing/go-to-production)
-
 > NEXT_STEP_CARD_EN
 >
 > How to customize payment notification for Checkout API
