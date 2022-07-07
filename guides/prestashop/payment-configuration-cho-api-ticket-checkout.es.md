@@ -1,6 +1,14 @@
 # Configurar pagos con ticket checkout
 
-Con **pago de boletos**, ofrezca pagos en efectivo en su tienda usando [----[mlb]----Transparent Checkout------------ ----[mla , mlm, mpe, mco, mlu, mlc]----API de pago------------](/developers/es/guides/checkout-api/landing).
+----[mlb]----
+Con **pago de boletos**, ofrezca pagos en efectivo en su tienda usando [Checkout Transparente](/developers/es/guides/checkout-api/introduction).
+
+------------ 
+
+----[mla , mlm, mpe, mco, mlu, mlc]----
+Con **pago de boletos**, ofrezca pagos en efectivo en su tienda usando [Checkout API](/developers/es/guides/checkout-api/introduction).
+
+------------
 
 Para integrar el método de pago, siga los pasos a continuación.
 

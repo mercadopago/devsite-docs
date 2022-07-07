@@ -2,7 +2,7 @@
 content_section_with_media:
  - title: PrestaShop
  - message: PrestaShop es una plataforma de comercio electrónico con software de código abierto que permite a cualquier usuario crear y desarrollar un sitio web comercial. Como socios oficiales de PrestaShop, brindamos mayor seguridad y eficiencia a tu tienda.
- - media_image: /prestashop/prestashop-landing.png 
+ - media_video: https://www.youtube.com/embed/OQ0vdvKvy3o
 ---
  
 ----[mlb]---- 
@@ -28,7 +28,7 @@ bullet_section_with_media:
  - type: normal
  - message: Con el módulo de Mercado Pago puedes configurar el pago mediante:
  - benefit_title: Checkout Pro
- - benefit_message: El pago se realiza en la página de Mercado Pago (dentro o fuera de tu tienda) con tarjetas (débito o crédito), efectivo (saldo de cuenta de Mercado Pago o boleto bancário) y transferencia bancaria.
+ - benefit_message: El pago se realiza en la página de Mercado Pago (dentro o fuera de tu tienda) con tarjetas (débito o crédito), efectivo (saldo de cuenta de Mercado Pago o efectivo) y transferencia bancaria.
  - benefit_title: Checkout API
  - benefit_message: El pago se realiza sin salir de tu tienda virtual con tarjetas (débito o crédito), ticket checkout (saldo cuenta Mercado Pago o boleto bancário).
  - image: /prestashop/prestashop-payment.png 

@@ -28,7 +28,7 @@ bullet_section_with_media:
  - type: normal
  - message: With the Mercado Pago module you can configure the payment using:
  - benefit_title: Checkout Pro
- - benefit_message: Payment is made on the Mercado Pago page (inside or outside your store) with cards (debit or credit), cash (Mercado Pago account or boleto bancário) and bank transfer.
+ - benefit_message: Payment is made on the Mercado Pago page (inside or outside your store) with cards (debit or credit), cash (Mercado Pago account or ticket) and bank transfer.
  - benefit_title: Checkout API
  - benefit_message: Payment is made without leaving your virtual store with cards (debit or credit), ticket checkout (Mercado Pago account or boleto bancário).
  - image: /prestashop/prestashop-payment.png 

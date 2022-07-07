@@ -1,6 +1,6 @@
 # Configure payments with ticket checkout
 
-With **ticket checkout**, offer cash payments in your store using the [Checkout API](/developers/en/guides/checkout-api/landing).
+With **ticket checkout**, offer cash payments in your store using the [Checkout API](/developers/en/guides/checkout-api/introduction).
 
 To integrate the payment method, follow the steps below.
 

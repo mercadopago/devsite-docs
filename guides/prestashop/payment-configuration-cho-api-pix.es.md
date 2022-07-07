@@ -1,6 +1,14 @@
 # Configurar pagos con Pix
 
-Con el [----[mlb]----Checkout Transparente------------ ----[mla, mlm, mpe, mco, mlu, mlc]----Checkout API------------](/developers/es/guides/checkout-api/landing), ofrece pagos de **Pix** directamente en tu tienda. Pix es un método de pago instantáneo disponible las 24 horas del día.
+----[mlb]----
+Con el [Checkout Transparente](/developers/es/guides/checkout-api/introduction), ofrece pagos de **Pix** directamente en tu tienda. Pix es un método de pago instantáneo disponible las 24 horas del día.
+
+------------ 
+
+----[mla, mlm, mpe, mco, mlu, mlc]----
+Con el [Checkout API](/developers/es/guides/checkout-api/introduction), ofrece pagos de **Pix** directamente en tu tienda. Pix es un método de pago instantáneo disponible las 24 horas del día.
+
+------------
 
 > NOTE
 >

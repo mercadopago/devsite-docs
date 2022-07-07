@@ -17,7 +17,7 @@ Para integrar Checkout Pro, siga los pasos a continuación.
  * Transferencia bancaria.
   ------------
 3. Selecciona las **cuotas máximas** que deseas ofrecer en tu tienda.
-4. [Configurar](https://www.mercadopago[FAKER][URL][DOMAIN]/costs-section#from-section=menu) la tarifa que se pagará en cada compra y además ofrecer cuotas sin intereses a tus clientes
+4. [Configurar](https://www.mercadopago[FAKER][URL][DOMAIN]/costs-section#from-section=menu) la tarifa que se pagará en cada compra y además ofrecer cuotas sin intereses a tus clientes.
 5. Seleccione si desea o no que el cliente **regrese automáticamente** a su tienda después de completar el pago.
 6. Define si los clientes tendrán acceso a **modal checkout**, una forma de pago de Mercado Pago sin salir de tu tienda. Si esta opción está deshabilitada, los compradores serán redirigidos a otra página.
 7. Si lo desea, active el **modo binario** cuando no desee dejar los pagos en estado pendiente o en revisión. Con el modo binario, los pagos se aceptarán o rechazarán automáticamente.
@@ -25,7 +25,13 @@ Para integrar Checkout Pro, siga los pasos a continuación.
 
 ¡Listo! El Checkout Pro está listo para recibir pagos de tu tienda.
 
-> Si desea utilizar el ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------ para recibir pagos en la tienda, consulte la sección [Configurar pagos con ----[mlb]---- Checkout Transparente. ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API. ------------](/developers/es/docs/prestashop/payment-configuration/checkout-api/introduction)
+----[mlb]----
+> Si desea utilizar el Checkout Transparente para recibir pagos en la tienda, consulte la sección [Configurar pagos con Checkout Transparente](/developers/es/docs/prestashop/payment-configuration/checkout-api/introduction).
+------------
+
+----[mla, mlm, mpe, mco, mlu, mlc]----
+> Si desea utilizar el  Checkout API para recibir pagos en la tienda, consulte la sección [Configurar pagos con Checkout API](developers/es/docs/prestashop/payment-configuration/checkout-api/introduction).
+------------
 
 > PREV_STEP_CARD_ES
 >

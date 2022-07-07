@@ -9,7 +9,7 @@ El plugin del Mercado Pago tiene el **entorno de pruebas Sandbox** activo por de
 5. Con el producto seleccionado, completa el pedido.
 6. Completa con los datos personales, indica una dirección de envío y selecciona un método de envío. Recordando que toda esta información es solo para probar.
 
-Una vez que se complete el proceso de compra inicial, vea a continuación cómo probar la integración según el tipo de pago seleccionado para recibir pagos.
+Una vez que se complete el proceso de compra inicial, observa a continuación cómo probar la integración según el tipo de pago seleccionado para recibir pagos.
 
 ## Checkout Pro
 
@@ -64,6 +64,6 @@ Una vez que se complete el proceso de compra inicial, vea a continuación cómo 
 >
 > Recibir pagos
 >
-> Aprenda cómo habilitar la tienda para procesar ventas reales.
+> Aprende cómo habilitar la tienda para procesar ventas reales.
 >
 > [Recibir pagos](/developers/es/docs/prestashop/sales-processing/go-to-production)

@@ -1,16 +1,24 @@
 # Configurar pagos con ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------
 
-Con el [----[mlb]----Checkout Transparente------------ ----[mla, mlm, mpe, mco, mlu, mlc]----Checkout API------------](/developers/pt/guides/checkout-api/landing), todo el proceso de pago se realizará dentro del entorno de la tienda en línea, sin necesidad de redirigir a una página externa. Además de permitir un mayor control en el proceso de personalización e integración, el checkout ofrece una estructura completa para el procesamiento de pagos con los principales medios disponibles en el mercado.
+----[mlb]----
+Con el [Checkout Transparente](/developers/es/guides/checkout-api/introduction), todo el proceso de pago se realizará dentro del entorno de la tienda en línea, sin necesidad de redirigir a una página externa. Además de permitir un mayor control en el proceso de personalización e integración, el checkout ofrece una estructura completa para el procesamiento de pagos con los principales medios disponibles en el mercado.
 
-Vea a continuación qué métodos de pago están disponibles para la tienda al integrar el ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------.
+------------
 
-* [Cartões](/developers/es/docs/prestashop/payment-configuration/checkout-api/cards): tarjetas de crédito y débito.
+----[mla, mlm, mpe, mco, mlu, mlc]----
+Con el [Checkout API](/developers/es/guides/checkout-api/introduction), todo el proceso de pago se realizará dentro del entorno de la tienda en línea, sin necesidad de redirigir a una página externa. Además de permitir un mayor control en el proceso de personalización e integración, el checkout ofrece una estructura completa para el procesamiento de pagos con los principales medios disponibles en el mercado.
+
+------------
+
+Mira a continuación qué métodos de pago están disponibles para la tienda al integrar el ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------.
+
+* [Tarjetas](/developers/es/docs/prestashop/payment-configuration/checkout-api/cards): tarjetas de crédito y débito.
 ----[mlb]----
 * [Ticket checkout](/developers/es/docs/prestashop/payment-configuration/checkout-api/ticket-checkout): pagos en efectivo (saldo de Mercado Pago o boleto bancário) y pago de lotería sin boleto (con CPF).
-* [Pix](/developers/pt/docs/prestashop/payment-configuration/checkout-api/pix): transferencia bancaria disponible las 24 horas. La opción de pago con Pix solo se mostrará si existe una [clave de Pix registrada](/developers/es/guides/checkout-api-v2/integrate-pix) en Mercado Pago. 
+* [Pix](/developers/es/docs/prestashop/payment-configuration/checkout-api/pix): transferencia bancaria disponible las 24 horas. La opción de pago con Pix solo se mostrará si existe una [clave de Pix registrada](/developers/es/guides/checkout-api-v2/integrate-pix) en Mercado Pago. 
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]---- 
-* [Ticket checkout](/developers/pt/docs/prestashop/payment-configuration/checkout-api/ticket-checkout): pagos en efectivo (saldo Mercado Pago o efectivo).
+* [Ticket checkout](/developers/es/docs/prestashop/payment-configuration/checkout-api/ticket-checkout): pagos en efectivo (saldo Mercado Pago o efectivo).
 ------------
 
 ----[mlb]----

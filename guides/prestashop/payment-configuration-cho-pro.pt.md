@@ -25,7 +25,9 @@ Para integrar o Checkout Pro, siga os passos abaixo.
 
 Pronto! O Checkout Pro do Mercado Pago está pronto para receber os pagamentos da sua loja.
 
-> Caso deseje utilizar o ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------ para receber pagamentos na loja, veja a seção [Configurar os pagamentos com ----[mlb]---- Checkout Transparente. ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API. ------------](/developers/pt/docs/prestashop/payment-configuration/checkout-api/introduction)
+> Caso deseje utilizar o Checkout Transparente para receber pagamentos na loja, veja a seção [Configurar os pagamentos com Checkout Transparente](/developers/pt/docs/prestashop/payment-configuration/checkout-api/introduction).
+
+> Caso deseje utilizar o Checkout API para receber pagamentos na loja, veja a seção [Configurar os pagamentos com Checkout API](/developers/pt/docs/prestashop/payment-configuration/checkout-api/introduction).
 
 > PREV_STEP_CARD_PT
 >
