@@ -409,8 +409,8 @@ paths:
                         description: Item total.
                         x-description-i18n:
                           eng: Item total.
-                          spa: 
-                          por: 
+                          spa: Total del ítem
+                          por: Total do ítem
                         example: 100
                 taxes:
                   type: array
