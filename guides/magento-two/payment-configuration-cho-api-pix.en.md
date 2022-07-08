@@ -1,6 +1,6 @@
 # Configure payments with Pix
 
-With the [Checkout API](/developers/en/guides/checkout-api/landing), offer **Pix** payments directly in your store. Pix is ​​an instant payment method available 24 hours a day.
+With the [Checkout API](/developers/en/guides/checkout-api/introduction), offer **Pix** payments directly in your store. Pix is ​​an instant payment method available 24 hours a day.
 
 > WARNING
 >

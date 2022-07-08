@@ -1,27 +1,27 @@
 # Configurar pagos con ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------
 
 ----[mlb]----
-Con [Checkout Transparente](/developers/es/guides/cho-api/landing), todo el proceso de pago se realizará dentro del entorno de la tienda en línea, sin necesidad de redirigir a una página externa. Además de permitir un mayor control en el proceso de personalización e integración, el checkout ofrece una estructura completa para el procesamiento de pagos con los principales medios disponibles en el mercado.
+Con [Checkout Transparente](/developers/es/guides/cho-api/introduction), todo el proceso de pago se realizará dentro del entorno de la tienda en línea, sin necesidad de redirigir a una página externa. Además de permitir un mayor control en el proceso de personalización e integración, el checkout ofrece una estructura completa para el procesamiento de pagos con los principales medios disponibles en el mercado.
 
-Vea a continuación qué métodos de pago están disponibles para la tienda al integrar el Checkout Transparente.
+Mira a continuación qué métodos de pago están disponibles para la tienda al integrar el Checkout Transparente.
 
 ------------
 
 ----[mla, mlm, mpe, mco, mlu, mlc]---- 
-Con [Checkout API](/developers/es/guides/cho-api/landing), todo el proceso de pago se realizará dentro del entorno de la tienda en línea, sin necesidad de redirigir a una página externa. Además de permitir un mayor control en el proceso de personalización e integración, el checkout ofrece una estructura completa para el procesamiento de pagos con los principales medios disponibles en el mercado.
+Con [Checkout API](/developers/es/guides/cho-api/introduction), todo el proceso de pago se realizará dentro del entorno de la tienda en línea, sin necesidad de redirigir a una página externa. Además de permitir un mayor control en el proceso de personalización e integración, el checkout ofrece una estructura completa para el procesamiento de pagos con los principales medios disponibles en el mercado.
 
-Vea a continuación qué métodos de pago están disponibles para la tienda al integrar el Checkout API.
+Mira a continuación qué métodos de pago están disponibles para la tienda al integrar el Checkout API.
 
 ------------
 
-* [Cartões](/developers/es/docs/magento-two/payment-configuration/checkout-api/cards): tarjetas de crédito y débito.
+* [Tarjeta](/developers/es/docs/magento-two/payment-configuration/checkout-api/cards): tarjetas de crédito y débito.
 ----[mlb]----
 * [Ticket](/developers/es/docs/magento-two/payment-configuration/checkout-api/ticket): pagos offline (boleto bancário y cajero automático).
 * [Pix](/developers/es/docs/magento-two/payment-configuration/checkout-api/pix): transferência bancária disponível 24h por dia. transferencia bancaria disponible las 24 horas. La opción de pago por Pix solo se mostrará si existe una [Clave Pix registrada](/developers/es/guides/checkout-api/receiving-payment-by-pix) en Mercado Pago. 
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]---- 
 * [Ticket](/developers/es/docs/magento-two/payment-configuration/checkout-api/ticket): pagos offline (efectivo y cajero automático).
-* [Transferência bancária](/developers/es/docs/magento-two/payment-configuration/checkout-api/bank-transfer): transferencia entre cuentas bancarias dentro del plazo estipulado por el Banco Central de tu país.
+* [Transferencia bancaria](/developers/es/docs/magento-two/payment-configuration/checkout-api/bank-transfer): transferencia entre cuentas bancarias dentro del plazo estipulado por el Banco Central de tu país.
 ------------
 
 > PREV_STEP_CARD_ES

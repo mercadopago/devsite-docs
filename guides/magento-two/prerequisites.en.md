@@ -24,9 +24,9 @@ To use the Mercado Pago integration with Magento 2 in your store, you must meet 
 | SSL | Protocol that allows you to establish secure communications on the Internet for activities such as browsing, e-mail, and other data transfers. | It is necessary to have an SSL certificate and that the payment method is available on an HTTPS page. During tests in Sandbox mode, you can run tests in HTTP. |
 | PHP Version | PHP is a programming language widely used for web application development. For more information, [click here](https://www.php.net/). | PHP 7.0 or higher (json/iconv) |
 
-> This module is configured to support Magento 2 standards. We recommend that you do not use modules or modules that change the characteristics and operation of the Magento standard to avoid possible errors in the module or that it stops working.
+> This module is configured to support Magento 2 standards. We recommend that you do not use modules or plugins that change the characteristics and operation of the Magento standard to avoid possible errors in the module or that it stops working.
 
-If all the prerequisites are met, you can install the Mercado Pago plugin on the Magento 2 platform.
+If all the prerequisites are met, you can install the Mercado Pago módulo on the Magento 2 platform.
 
 > PREV_STEP_CARD_EN
 >
@@ -40,6 +40,6 @@ If all the prerequisites are met, you can install the Mercado Pago plugin on the
 >
 > Module installation
 >
-> Conheça as formas de instalação do módulo do Mercado Pago na plataforma Magento 2.
+> Check how to install the Mercado Pago module on the Magento 2 platform.
 >
 > [Module installation](/developers/en/docs/magento-two/installation)

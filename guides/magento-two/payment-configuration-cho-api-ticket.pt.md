@@ -1,12 +1,12 @@
 # Configurar pagamentos offline (ticket)
 
 ----[mlb]----
-Com o **ticket**, ofereça ao comprador a opção de realizar pagamentos com os meios de pagamento offline (boleto bancário e caixa eletrônico), utilizando o [Checkout Transparente](/developers/pt/guides/checkout-api/landing).
+Com o **ticket**, ofereça ao comprador a opção de realizar pagamentos com os meios de pagamento offline (boleto bancário e caixa eletrônico), utilizando o [Checkout Transparente](/developers/pt/guides/checkout-api/introduction).
 
 ------------
 
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-Com o **ticket**, ofereça ao comprador a opção de realizar pagamentos com os meios de pagamento offline (efectivo e caixa eletrônico), utilizando o [Checkout API](/developers/pt/guides/checkout-api/landing).
+Com o **ticket**, ofereça ao comprador a opção de realizar pagamentos com os meios de pagamento offline (efectivo e caixa eletrônico), utilizando o [Checkout API](/developers/pt/guides/checkout-api/introduction).
 
 ------------
 
@@ -19,7 +19,7 @@ Para integrar a forma de pagamento, siga os passos abaixo.
 5. Se dejar, você poderá personalizar um **banner** com os meios de pagamento disponível alterando a URL da imagem em questão. Por padrão, o módulo Mercado Pago irá configurar um banner com os meios de pagamento disponíveis de acordo com o seu país.
 6. No campo **Exclude Payment Methods**, selecione apenas os meios de pagamento offline que deseja aceitar em sua loja. Por padrão, o módulo exibirá ao comprador todas as formas de pagamento dos tipos ticket e ATM (caixa eletônico).
 7. Em **Checkout Position**, indique a posição em que o meio de pagamento ficará disponível para o comprador no fluxo de checkout. 
-8. Em seguida, clique em** **Save Config** para salvar suas preferências.
+8. Em seguida, clique em **Save Config** para salvar suas preferências.
 
 > PREV_STEP_CARD_PT
 >

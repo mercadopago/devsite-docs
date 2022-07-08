@@ -1,6 +1,6 @@
 # Configure offline payments (ticket)
 
-With **ticket**, offer the buyer the option to make payments using offline payment methods (cash and ATM), using the [Checkout API](/developers/en/guides/checkout-api/landing).
+With **ticket**, offer the buyer the option to make payments using offline payment methods (cash and ATM), using the [Checkout API](/developers/en/guides/checkout-api/introduction).
 
 To integrate the payment method, follow the steps below.
 

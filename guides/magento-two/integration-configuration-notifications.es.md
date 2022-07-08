@@ -1,4 +1,4 @@
-# Configure payment notifications
+# Configura las notificaciones de pago
 
 Para configurar el estado de pedido para las notificaciones de pago, sigue estos pasos:
 

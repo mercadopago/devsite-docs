@@ -24,9 +24,9 @@ Para utilizar la integración de Mercado Pago con Magento 2 en tu tienda, debes 
 | SSL | Protocolo que permite establecer comunicaciones seguras en Internet para actividades como navegación, correo electrónico y otras transferencias de datos. | Es necesario disponer de un certificado SSL y que el método de pago esté disponible en una página HTTPS. Durante las pruebas en modo Sandbox, puede ejecutar pruebas en HTTP. |
 | Versión PHP | PHP es un lenguaje de programación ampliamente utilizado para el desarrollo de aplicaciones web. Para obtener más información, [haz clic aquí](https://www.php.net/). | PHP 7.0 o superior (json/iconv) |
 
-> Este módulo está configurado para soportar los estándares Magento 2. Recomendamos no utilizar módulos o módulos que cambien las características y funcionamiento del estándar Magento para evitar posibles errores en el módulo o que deje de funcionar.
+> Este módulo está configurado para soportar los estándares Magento 2. Recomendamos no utilizar módulos o plugins que cambien las características y funcionamiento del estándar Magento para evitar posibles errores en el módulo o que deje de funcionar.
 
-Si se cumplen todos los requisitos previos, puede instalar el complemento de Mercado Pago en la plataforma Magento 2.
+Si se cumplen todos los requisitos previos, puedes instalar el módulo de Mercado Pago en la plataforma Magento 2.
 
 > PREV_STEP_CARD_ES
 >

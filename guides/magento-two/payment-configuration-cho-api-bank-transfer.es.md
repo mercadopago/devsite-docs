@@ -1,12 +1,12 @@
 # Configurar pagos por transferencia bancaria
 
 ----[mlb]----
-Con el [Checkout Transparente](/developers/es/guides/checkout-api/landing), ofrezca pagos por **transferencia bancaria** directamente en su tienda.
+Con el [Checkout Transparente](/developers/es/guides/checkout-api/introduction), ofrezca pagos por **transferencia bancaria** directamente en su tienda.
 
 ------------
 
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-Con el [Checkout API](/developers/es/guides/checkout-api/landing), ofrece pagos por **transferencia bancaria** directamente en tu tienda.
+Con el [Checkout API](/developers/es/guides/checkout-api/introduction), ofrece pagos por **transferencia bancaria** directamente en tu tienda.
 
 ------------
 
@@ -25,7 +25,7 @@ Para integrar el método de pago, siga los pasos a continuación.
 5. Si lo deseas, puedes personalizar un **banner** con los métodos de pago disponibles cambiando la URL de la imagen en cuestión. Por defecto, el módulo de Mercado Pago configurará un banner con los métodos de pago disponibles según tu país.
 6. En **Checkout Position**, indique la posición en la que el método de pago estará disponible para el comprador en el flujo de pago.
 7. En el campo **Redirect Payer**, indica si el comprador será redirigido automáticamente a la página de pago del banco, sin tener que pasar por una página intermedia en tu tienda.
-8. Luego haga clic en ** **Save Config**  para guardar sus preferencias.
+8. Luego haga clic en **Save Config**  para guardar sus preferencias.
 
 ----[mlb]----
 > PREV_STEP_CARD_ES
