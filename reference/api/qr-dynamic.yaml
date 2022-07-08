@@ -11,6 +11,10 @@ paths:
         - $ref: '#/tags/qr-code'
       summary: Create a QR tramma
       description: Generates a QR tramma that will be added to an image
+      x-description-i18n:
+        eng: Generates a QR tramma that will be added to an image
+        spa: Genera un QR tramma que se agregará a una imagen
+        por: Gera um quadro QR que será adicionado a uma imagem
       parameters:
         - name: user_id
           in: path
