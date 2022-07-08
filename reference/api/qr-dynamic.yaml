@@ -10,6 +10,10 @@ paths:
       tags:
         - $ref: '#/tags/qr-code'
       summary: Create a QR tramma
+      x-summary-i18n:
+        eng: Create a QR tramma
+        spa: Crear QR tramma
+        por: Criar um quadro QR
       description: Generates a QR tramma that will be added to an image
       x-description-i18n:
         eng: Generates a QR tramma that will be added to an image
@@ -276,7 +280,11 @@ paths:
         eng: Create an order
         spa: Crear una orden
         por: Criar uma ordem
-      description: Generates a payment order with all the payment information for your product or service and associate it with the Point of Sale you want. The success response consists of an empty 201 code.
+      description: Generates a payment order with all the payment information for your product or service and associate it with the Point of Sale you want. The success response consists of an empty 201 code
+      x-description-i18n:
+        eng: Generates a payment order with all the payment information for your product or service and associate it with the Point of Sale you want. The success response consists of an empty 201 code
+        spa: Genera una orden de pago con todos los datos de pago de tu producto o servicio y asóciala al Punto de Venta que desees. La respuesta de éxito consiste en un código 201 vacío.
+        por: Gera uma ordem de pagamento com todas as informações do seu produto ou serviço e associa-o ao Ponto de Venda que desejar. A resposta de sucesso consiste em um código 201 vazio
       parameters:
         - name: user_id
           in: path
