@@ -1,14 +1,14 @@
 # Configurar pagos con ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------
 
 ----[mlb]----
-Con [Checkout Transparente](/developers/es/guides/cho-api/introduction), todo el proceso de pago se realizará dentro del entorno de la tienda en línea, sin necesidad de redirigir a una página externa. Además de permitir un mayor control en el proceso de personalización e integración, el checkout ofrece una estructura completa para el procesamiento de pagos con los principales medios disponibles en el mercado.
+Con [Checkout Transparente](/developers/es/guides/checkout-api/introduction), todo el proceso de pago se realizará dentro del entorno de la tienda en línea, sin necesidad de redirigir a una página externa. Además de permitir un mayor control en el proceso de personalización e integración, el checkout ofrece una estructura completa para el procesamiento de pagos con los principales medios disponibles en el mercado.
 
 Mira a continuación qué métodos de pago están disponibles para la tienda al integrar el Checkout Transparente.
 
 ------------
 
 ----[mla, mlm, mpe, mco, mlu, mlc]---- 
-Con [Checkout API](/developers/es/guides/cho-api/introduction), todo el proceso de pago se realizará dentro del entorno de la tienda en línea, sin necesidad de redirigir a una página externa. Además de permitir un mayor control en el proceso de personalización e integración, el checkout ofrece una estructura completa para el procesamiento de pagos con los principales medios disponibles en el mercado.
+Con [Checkout API](/developers/es/guides/checkout-api/introduction), todo el proceso de pago se realizará dentro del entorno de la tienda en línea, sin necesidad de redirigir a una página externa. Además de permitir un mayor control en el proceso de personalización e integración, el checkout ofrece una estructura completa para el procesamiento de pagos con los principales medios disponibles en el mercado.
 
 Mira a continuación qué métodos de pago están disponibles para la tienda al integrar el Checkout API.
 
