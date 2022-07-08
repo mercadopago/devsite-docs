@@ -21,6 +21,7 @@ bullet_section_with_media:
  - image: 
 ---
 
+----[mlb]----
 ---
 bullet_section_with_media: 
  - title: Personaliza los pagos con Checkout Transparente
@@ -28,6 +29,17 @@ bullet_section_with_media:
  - message: Integra nuestro Checkout Transparente y haz que el comprador realice todo el proceso de pago dentro del entorno de tu tienda.
  - image: 
 ---
+------------
+
+----[mla, mlm, mlu, mpe, mco, mlc]----
+---
+bullet_section_with_media: 
+ - title: Personaliza los pagos con Checkout API
+ - type: reversed
+ - message: Integra nuestro Checkout API y haz que el comprador realice todo el proceso de pago dentro del entorno de tu tienda.
+ - image: 
+---
+------------
 
 
 --- mini_landing_separator ---
@@ -36,7 +48,7 @@ bullet_section_with_media:
 
 >>>> Medios de pago aceptados <<<<
 ---
-available_payments: credit, mercadopago, ticket
+available_payments: credit, mercadopago, ticket, pix, mercadocredito
 
 ------------
 
@@ -44,7 +56,7 @@ available_payments: credit, mercadopago, ticket
 
 >>>> Medios de pago aceptados <<<<
 ---
-available_payments: credit, mercadopago
+available_payments: credit, mercadopago, mercadocredito
 
 ------------
 

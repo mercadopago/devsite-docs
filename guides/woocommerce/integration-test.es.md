@@ -11,21 +11,24 @@ Para activar el modo de pruebas de tu tienda, sigue estos pasos:
 6. En **Elige cómo quieres operar tu tienda**, selecciona** Modo Test**.
 7. Haz clic en **Guardar cambios** para finalizar.
 
-## Realiza una compra de prueba
+## Checkout Pro
+1. Selecciona la opción **Quiero pagar con Mercado Pago sin costo adicional**.
+1. Haz clic en **pedido con pago obligatorio** para ser redirigido al entorno de pago de Mercado Pago.
+1. En la pantalla de pago, elija pagar con una nueva tarjeta de crédito y use las [tarjetas de prueba](https://mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/woocommerce/additional-content/test-cards) para realizar el pago. Es importante no iniciar sesión en la cuenta de Mercado Pago ni intentar pagar con tarjetas para uso personal.
+1. Agrega la información de la tarjeta de prueba indicada (número de tarjeta, CVV y fecha de vencimiento).
+1. Al finalizar la compra, podrás visualizar, dentro de Mercado Pago, el comprobante de que se realizó la compra y serás redirigido nuevamente a la tienda.
 
-Con la tienda en modo de prueba, puedes realizar todo el flujo de compra hasta completarlo en el momento del pago y corroborar que funcione correctamente. Para hacerlo, sigue los pasos que te mostramos a continuación:
-
-1. Primero, asegúrate de no estar logueado con tu cuenta de Mercado Pago, así podrás simular la compra como un cliente no asociado a Mercado Pago.
-2. Accede a la página de inicio de la tienda en WordPress.
-3. Selecciona un producto y haz clic en **Anãdir al carrito > Ver carrito**.
-4. Elige cualquier opción de envío y haz clic en **Finalizar compra**.
-5. Completa la información solicitada y selecciona la opción de pago con la solución de Mercado Pago que hayas configurado.
-    * Si eliges la opción de pagar a través del sitio de Mercado Pago, serás redirigido al sitio de Mercado Pago en donde se te requerirá que ingreses a tu cuenta para continuar.
-    * Si seleccionas pagar con tarjeta de crédito o débito, utiliza nuestras [tarjetas de prueba](/developers/es/docs/woocomerce/additional-content/test-cards) para llenar los campos necesarios y continuar con la compra.
-    * Si seleccionas la opción de pago con Efectivo, elige un medio de pago y continúa con la compra.
-6. Cuando hayas completado todos los campos requeridos, haz clic en **Realizar el pedido**.
-
-Si la prueba se ejecuta sin errores, significa que su tienda está lista para vender.
+----[mlb]----
+## Checkout Transparente
+------------
+----[mla, mlm, mpe, mco, mlu, mlc]----
+## Checkout API
+------------
+1. Seleccione la opción **Quiero pagar con tarjeta de crédito**.
+1. Elija pagar con una nueva tarjeta de crédito y utilice las [tarjetas de prueba](https://mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/woocommerce/additional-content/test-cards) para realizar el pago. Es importante no pagar con tarjetas para uso personal.
+1. Agregue la información de la tarjeta de prueba indicada (número de tarjeta, CVV y fecha de vencimiento).
+1. Haz clic en **pedir con pago requerido**.
+1. Al finalizar la compra, se podrá ver que la compra ha sido aprobada.
 
 > PREV_STEP_CARD_ES
 >
