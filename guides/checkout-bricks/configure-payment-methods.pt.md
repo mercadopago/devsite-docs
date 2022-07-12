@@ -4,7 +4,7 @@
 >
 > Configurar meios de pagamento aceitos
 
-Através do Checkout Bricks é possível definir quais meios de pagamento (débito e/ou crédito) serão aceitos em uma compra. Por padrão, ambos são ativado s durante a integração, contudo, também é possível oferecer somente uma dessas opções, limitando o pagamento exclusivamente a débito ou crédito.
+Através do Checkout Bricks é possível definir quais meios de pagamento (débito e/ou crédito) serão aceitos em uma compra. **Por padrão, ambos são ativados no momento da integração**, contudo, também é possível oferecer somente uma dessas opções, limitando o pagamento exclusivamente a débito ou crédito.
 
 Na tabela abaixo você encontra os detalhes da customização e o código necessário para realizar a configuração.
 
