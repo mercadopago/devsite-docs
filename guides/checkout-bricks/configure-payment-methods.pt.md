@@ -4,26 +4,18 @@
 >
 > Configurar meios de pagamento aceitos
 
-Através do Checkout Bricks é possível definir quais meios de pagamento (débito e/ou crédito) serão aceitos em uma compra. Contudo, também é possível oferecer **somente uma dessas opções** limitando o pagamento exclusivamente a débito ou crédito.
+Através do Checkout Bricks é possível definir quais meios de pagamento (débito e/ou crédito) serão aceitos em uma compra. Por padrão, ambos são ativado s durante a integração, contudo, também é possível oferecer somente uma dessas opções, limitando o pagamento exclusivamente a débito ou crédito.
 
 Na tabela abaixo você encontra os detalhes da customização e o código necessário para realizar a configuração.
 
 | Brick  | Card Payment Brick  |
 | --- | --- |
 | Momento da customização  | Ao renderizar Brick  |
-| Propriedade  | customization.paymentMethods.types.excluded <br><br> customization.paymentMethods.types.included |
+| Propriedade  | customization.paymentMethods.types.excluded |
 | Tipo  | string  |
 | Observações  | Os valores aceitos dentro do array são: `credit_card`, `debit_card`.  |
 
 
-
-> WARNING
->
-> Importante
->
-> As propriedades `included` e `excluded` não devem ser utilizadas simultaneamente, por isso, ao definir os meios de pagamento aceitos, escolha somente uma delas.
-
-## Excluir meio de pagamento 
 
 [[[
 ```Javascript
@@ -41,20 +33,3 @@ settings = {
 ```
 ]]]
 
-## Incluir meio de pagamento 
-
-[[[
-```Javascript
-
-settings = {
-  ...,
-  customization: {
-    paymentMethods: {
-      types:{
-        included: ['credit_card']
-      }
-    }
-  }
-}
-```
-]]]
