@@ -11,7 +11,15 @@ paths:
         - $ref: '#/tags/mobile-checkout'
         - $ref: '#/tags/checkout-api'
       summary: Create customer
+      x-summary-i18n:
+        eng: Create customer
+        spa: Crear cliente
+        por: Criar cliente
       description: Create a customer with all its data and save the cards used to simplify the payment process
+      x-description-i18n:
+        eng: Create a customer with all its data and save the cards used to simplify the payment process
+        spa: Realiza la creación de un cliente con todos sus datos para poder guardar las tarjetas que utilice y simplificar el proceso de pago
+        por: Crie um cliente com todos os seus detalhes para que você possa salvar os cartões que eles usam e simplificar o processo de pagamento
       requestBody:
         content:
           application/json:
@@ -22,74 +30,146 @@ paths:
                   type: String
                   example: "jhon@doe.com"
                   description: Customer's email. 
+                  x-description-i18n:
+                    eng: Customer's email.
+                    spa: Email del cliente
+                    por: E-mail do cliente
                 first_name:
                   type: String
                   example: Jhon
                   description: Customer's name. 
+                  x-description-i18n:
+                    eng: Customer's name.
+                    spa: Nombre del cliente
+                    por: Nome do cliente
                 last_name:
                   type: String
                   example: Doe
                   description: Customer's last name.
+                  x-description-i18n:
+                    eng: Customer's last name.
+                    spa: Apellido del cliente
+                    por: Sobrenome do cliente
                 phone:
                   type: object
                   description: Customer phone's information.
+                  x-description-i18n:
+                    eng: Customer phone's information.
+                    spa: Teléfono del cliente
+                    por: Telefone do cliente
                   properties:
                     area_code:
                       type: String
                       example: '55'
                       description: Phone's area code.
+                      x-description-i18n:
+                        eng: Phone's area code.
+                        spa: Código de área
+                        por: Código de área
                     number:
                       type: String
                       example: '991234567'
                       description: Phone number.
+                      x-description-i18n:
+                        eng: Phone number.
+                        spa: Número telefónico
+                        por: Número de telefone
                 identification:
                   type: object
                   description: Customer identification's information.
+                  x-description-i18n:
+                    eng: Customer identification's information.
+                    spa: Información sobre la identificación del cliente
+                    por: Informações sobre a identificação do cliente
                   properties:
                     type:
                       type: String
                       example: 'CPF'
                       description: Identification type.
+                      x-description-i18n:
+                        eng: Identification type.
+                        spa: Tipo de identificación
+                        por: Tipo de identificação
                     number:
                       type: String
                       example: '12345678900'
                       description: Identification number.
+                      x-description-i18n:
+                        eng: Identification number.
+                        spa: Número de identificación
+                        por: Número de identificação
                 default_address:
                   type: String
                   example: "Home"
                   description: Customer's default address.
+                  x-description-i18n:
+                    eng: Customer's default address.
+                    spa: Dirección por defecto del cliente
+                    por: Endereço padrão do cliente
                 address:
                   type: object
                   description: Default address's information.
+                  x-description-i18n:
+                    eng: Default address's information.
+                    spa: Información sobre la dirección por defecto del cliente
+                    por: Informação sobre o endereço padrão do cliente
                   properties:
                     id:
                       type: String
                       example: '123123'
                       description: Address ID.
+                      x-description-i18n:
+                        eng: Address ID.
+                        spa: Identificador de la dirección
+                        por: Identificador de endereço
                     zip_code:
                       type: String
                       example: '01234567'
                       description: Zip code.
+                      x-description-i18n:
+                        eng: Zip code.
+                        spa: Código postal
+                        por: Código postal
                     street_name:
                       type: String
                       example: 'Rua Exemplo'
                       description: Street name.
+                      x-description-i18n:
+                        eng: Street name.
+                        spa: Calle
+                        por: Rua
                     street_number:
                       type: number
                       example: 123
                       description: Street number.
+                      x-description-i18n:
+                        eng: Street number.
+                        spa: Número
+                        por: O Número
                 date_registered:
                   type: Date(ISO_8601)
                   example: '2021-10-20T11:37:30.000-04:00'
                   description: Customer's registration date.
+                  x-description-i18n:
+                    eng: Customer's registration date.
+                    spa: Fecha de registro del cliente
+                    por: Data de registo do cliente
                 description:
                   type: String
                   example: 'Description del user'
                   description: Customer's description.
+                  x-description-i18n:
+                    eng: Customer's description.
+                    spa: Descripción del cliente
+                    por: Descrição do cliente
                 default_card:
                   type: String
                   example: 'None'
-                  description: Customer's default card.       
+                  description: Customer's default card.  
+                  x-description-i18n:
+                    eng: Customer's default card.
+                    spa: Tarjeta por defecto del cliente
+                    por: Cartão padrão do cliente     
       responses:
         '200':
           description: success
@@ -102,18 +182,34 @@ paths:
                     type: string
                     example: 000000001-sT93QZFAsfxU9P5
                     description: Customer ID.
+                    x-description-i18n:
+                      eng: Customer ID.
+                      spa: Identificador de cliente
+                      por: Identificador de cliente
                   email:
                     type: string
                     example: jhon@doe.com
                     description: Customer's email.
+                    x-description-i18n:
+                      eng: Customer's email.
+                      spa: Email del cliente
+                      por: E-mail do cliente
                   first_name:
                     type: string
                     example: Bruce
                     description: Customer's name.
+                    x-description-i18n:
+                      eng: Customer's name.
+                      spa: Nombre del cliente
+                      por: Nome do cliente
                   last_name:
                     type: string
                     example: Wayne
                     description: Customer's last name.
+                    x-description-i18n:
+                      eng: Customer's last name.
+                      spa: Apellido del cliente
+                      por: Sobrenome do cliente
                   phone:
                     type: object
                     properties:
@@ -121,11 +217,23 @@ paths:
                         type: string
                         example: 23
                         description: Phone's area code.
+                        x-description-i18n:
+                          eng: Phone's area code.
+                          spa: Código de área
+                          por: Código de área
                       number:
                         type: string
                         example: 12345678
                         description: Phone number.
+                        x-description-i18n:
+                          eng: Phone number.
+                          spa: Número telefónico
+                          por: Número de telefone
                     description: Customer phone's information.
+                    x-description-i18n:
+                      eng: Customer phone's information.
+                      spa: Teléfono del cliente
+                      por: Telefone do cliente
                   identification:
                     type: object
                     properties:
@@ -133,11 +241,23 @@ paths:
                         type: string
                         example: DNI
                         description: Identification type.
+                        x-description-i18n:
+                          eng: Identification type.
+                          spa: Tipo de identificación
+                          por: Tipo de identificação
                       number:
                         type: string
                         example: 12345678
                         description: Identification number.
+                        x-description-i18n:
+                          eng: Identification number.
+                          spa: Número de identificación
+                          por: Número de identificação
                     description: Customer identification's information.
+                    x-description-i18n:
+                      eng: Customer identification's information.
+                      spa: Información sobre la identificación del cliente
+                      por: Informações sobre a identificação do cliente
                   address:
                     type: object
                     properties:
@@ -146,35 +266,71 @@ paths:
                         example: '1162600094'
                         format: nullable
                         description: Address ID.
+                        x-description-i18n:
+                          eng: Address ID.
+                          spa: Identificador de la dirección
+                          por: Identificador de endereço
                       zip_code:
                         type: string
                         example: SG1 2AX
                         description: Zip code.
+                        x-description-i18n:
+                          eng: Zip code.
+                          spa: Código postal
+                          por: Código postal
                       street_name:
                         type: string
                         example: Old Knebworth Ln
                         description: Street name.
+                        x-description-i18n:
+                          eng: Street name.
+                          spa: Calle
+                          por: Rua
                       street_number:
                         type: number
                         format: nullable
                         description: Street number.
+                        x-description-i18n:
+                          eng: Street number.
+                          spa: Número
+                          por: O Número
                     description: Default address's information.
+                    x-description-i18n:
+                      eng: Default address's information.
+                      spa: Información sobre la dirección por defecto del cliente
+                      por: Informação sobre o endereço padrão do cliente
                   date_registered:
                     type: string
                     format: nullable
                     description: Customer's registration date.
+                    x-description-i18n:
+                      eng: Customer's registration date.
+                      spa: Fecha de registro del cliente
+                      por: Data de registo do cliente
                   description:
                     type: string
                     example: This is my description
                     description: Customer's description.
+                    x-description-i18n:
+                      eng: Customer's description.
+                      spa: Descripción del cliente
+                      por: Descrição do cliente
                   date_created:
                     type: string
                     example: '2018-02-20T15:36:23.541Z'
                     description: Customer's date created.
+                    x-description-i18n:
+                      eng: Customer's date created.
+                      spa: Fecha de creación del cliente
+                      por: Data de criação do cliente
                   date_last_updated:
                     type: string
                     format: nullable
                     description: Last modified date.
+                    x-description-i18n:
+                      eng: Last modified date.
+                      spa: Fecha de la última modificación
+                      por: Data da última modificação
                   metadata:
                     type: object
                     properties:
@@ -186,27 +342,51 @@ paths:
                     type: string
                     format: nullable
                     description: Customer's default card.
+                    x-description-i18n:
+                      eng: Customer's default card.
+                      spa: Tarjeta por defecto del cliente
+                      por: Cartão padrão do cliente
                   default_address:
                     type: string
                     example: '1162600094'
                     format: nullable
                     description: Customer's default address.
+                    x-description-i18n:
+                      eng: Customer's default address.
+                      spa: Dirección por defecto del cliente
+                      por: Endereço padrão do cliente
                   cards:
                     type: array
                     items:
                       type: object
                     description: Customer's cards.
+                    x-description-i18n:
+                      eng: Customer's cards.
+                      spa: Tarjetas del cliente
+                      por: Cartões do cliente
                   addresses:
                     type: array
                     items:
                       type: object
                     description: Customer's addresses.
+                    x-description-i18n:
+                      eng: Customer's addresses.
+                      spa: Dirección del cliente
+                      por: Endereço do cliente
                   live_mode:
                     type: boolean
                     example: true
                     description: Whether the customers will be in sandbox or in production mode.
+                    x-description-i18n:
+                      eng: Whether the customers will be in sandbox or in production mode.
+                      spa: Indica si los clientes se crean en el entorno de sandbox o producción
+                      por: Indica se os comentários são criados no ambiente de sandbox ou produção
         '400':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -215,56 +395,53 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 100--the-credentials-are-required-
-                      - 101--the-customer-already-exist-
-                      - 102--missing-customer-id-
-                      - 103--parameter-must-be-an-object-
-                      - 104--parameter-length-is-too-large-
-                      - 105--the-customer-id-is-invalid-
-                      - 106--the-email-format-is-invalid-
-                      - 107--the-first-name-is-invalid-
-                      - 108--the-last-name-is-invalid--
-                      - 109--the-phone-area-code-is-invalid-
-                      - 110--the-phone-number-is-invalid-
-                      - 111--the-identification-type-is-invalid-
-                      - 112--the-identification-number-is-invalid-
-                      - 113--the-address-zip-code-is-invalid-
-                      - 114--the-address-street-name-is-invalid-
-                      - 115--the-date-registered-format-is-invalid-
-                      - 116--the-description-is-invalid-
-                      - 117--the-metadata-is-invalid-
-                      - 118--the-body-must-be-a-Json-Object-
-                      - 119--the-card-is-required-
-                      - 120--card-not-found-
-                      - 121--the-card-is-invalid-
-                      - 122--the-card-data-is-invalid-
-                      - 123--the-payment-method-id-is-required-
-                      - 124--the-issuer-id-is-required-
-                      - 125--invalid-parameters-
-                      - 126--invalid-parameter--You-cannot-update-the-email-
-                      - >-
-                        127--invalid-parameter--Cannot-resolve-the-payment-method-of-card--check-the-payment-method-id-and-issuer-id-
-                      - >-
-                        128--the-email-format-is-invalid--Use--test-payer--0-9--1-10--testuser-com--
-                      - >-
-                        129--the-customer-has-reached-the-maximum-allowed-number-of-cards-
-                      - 140--invalid-card-owner-
-                      - 150--invalid-users-involved-
-                      - >-
-                        200--invalid-range-format--range--date-parameter-after--date-from-before--date-to--
-                      - 201--range-attribute-must-belong-to-date-entity-
-                      - >-
-                        202--invalid--after--parameter--It-should-be-date-iso-8601--
-                      - >-
-                        203--invalid--before--parameter--It-should-be-date-iso-8601--
-                      - 204--invalid-filters-format-
-                      - 205--invalid-query-format-
-                      - >-
-                        206--attributes-to-sort-must-belong-to--customer--entity-
-                      - 207--order-filter-must-be--asc--or--desc--
-                      - 208--invalid--sort--parameter-format-
+                      - 100--the credentials are required.
+                      - 101--the customer already exist.
+                      - 102--missing customer id.
+                      - 103--parameter must be an object 
+                      - 104--parameter length is too large.
+                      - 105--the customer id is invalid.
+                      - 106--the email format is invalid.
+                      - 107--the first_name is invalid.
+                      - 108--the last_name is invalid.
+                      - 109--the phone.area_code is invalid.
+                      - 110--the phone.number is invalid.
+                      - 111--the identification.type is invalid.
+                      - 112--the identification.number is invalid.
+                      - 113--the address.zip_code is invalid.
+                      - 114--the address.street_name is invalid.
+                      - 115--the date_registered format is invalid.
+                      - 116--the description is invalid.
+                      - 117--the metadata is invalid.
+                      - 118--the body must be a Json Object.
+                      - 119--the card is required.
+                      - 120--card not found.
+                      - 121--the card is invalid.
+                      - 122--the card data is invalid.
+                      - 123--the payment_method_id is required.
+                      - 124--the issuer_id is required.
+                      - 125--invalid parameters.
+                      - 126--invalid parameter. You cannot update the email.
+                      - 127--invalid parameter. Cannot resolve the payment method of card, check the payment_method_id and issuer_id.
+                      - 128--the email format is invalid. Use 'test_payer_[0-9]{1,10}@testuser.com'.
+                      - 129--the customer has reached the maximum allowed number of cards.
+                      - 140--invalid card owner.
+                      - 150--invalid users involved.
+                      - 200--invalid range format (range=:date_parameter:after::date_from,before::date_to).
+                      - 201--range attribute must belong to date entity.
+                      - 202--invalid 'after' parameter. It should be date[iso_8601].
+                      - 203--invalid 'before' parameter. It should be date[iso_8601].
+                      - 204--invalid filters format.
+                      - 205--invalid query format.
+                      - 206--attributes to sort must belong to 'customer' entity.
+                      - 207--order filter must be 'asc' or 'desc'.
+                      - 208--invalid 'sort' parameter format.
         '401':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -273,9 +450,13 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - unauthorized--unauthorized-
+                      - unauthorized--unauthorized.
         '404':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -284,19 +465,31 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - not_found--not-found-
+                      - not_found--not_found.
   /v1/customers/{id}:
     put:
       tags:
         - $ref: '#/tags/mobile-checkout'
         - $ref: '#/tags/checkout-api'
       summary: Update customer
+      x-summary-i18n:
+        eng: Update customer
+        spa: Actualizar cliente
+        por: Atualizar cliente
       description: Renew the data of a customer. Indicate the customer ID and send the parameters with the information you want to update
+      x-description-i18n:
+        eng: Renew the data of a customer. Indicate the customer ID and send the parameters with the information you want to update
+        spa: Renueva los datos de un cliente. Indica el ID del cliente y envía los parámetros con la información que quieras actualizar
+        por: Atualize os dados de um cliente. Indique o ID do cliente e envie as informações que você deseja atualizar
       parameters:
         - name: id
           in: path
           required: true
           description: Customer ID.
+          x-description-i18n:
+            eng: Customer ID.
+            spa: Identificador de cliente
+            por: Identificador de cliente
           schema:
             type: number
             example: 123123
@@ -310,74 +503,146 @@ paths:
                   type: String
                   example: "jhon@doe.com"
                   description: Customer's email. It can only be updated if the customer has not yet associated an email.
+                  x-description-i18n:
+                    eng: Customer's email. It can only be updated if the customer has not yet associated an email.
+                    spa: Email del cliente. Solo puede ser actualizado si el cliente no tiene un email asociado aún.
+                    por: E-mail do cliente. Só pode ser atualizado se o cliente ainda não tiver um e-mail associado.
                 first_name:
                   type: String
                   example: Jhon
                   description: Customer's name. 
+                  x-description-i18n:
+                    eng: Customer's name.
+                    spa: Nombre del cliente
+                    por: Nome do cliente
                 last_name:
                   type: String
                   example: Doe
                   description: Customer's last name.
+                  x-description-i18n:
+                    eng: Customer's last name.
+                    spa: Apellido del cliente
+                    por: Sobrenome do cliente
                 phone:
                   type: object
                   description: Customer phone's information.
+                  x-description-i18n:
+                    eng: Customer phone's information.
+                    spa: Teléfono del cliente
+                    por: Telefone do cliente
                   properties:
                     area_code:
                       type: String
                       example: '55'
                       description: Phone's area code.
+                      x-description-i18n:
+                        eng: Phone's area code.
+                        spa: Código de área
+                        por: Código de área
                     number:
                       type: String
                       example: '991234567'
                       description: Phone number.
+                      x-description-i18n:
+                        eng: Phone number.
+                        spa: Número telefónico
+                        por: Número de telefone
                 identification:
                   type: object
                   description: Customer identification's information.
+                  x-description-i18n:
+                    eng: Customer identification's information.
+                    spa: Información sobre la identificación del cliente
+                    por: Informações sobre a identificação do cliente
                   properties:
                     type:
                       type: String
                       example: 'CPF'
                       description: Identification type.
+                      x-description-i18n:
+                        eng: Identification type.
+                        spa: Tipo de identificación
+                        por: Tipo de identificação
                     number:
                       type: String
                       example: '12345678900'
                       description: Identification number.
+                      x-description-i18n:
+                        eng: Identification number.
+                        spa: Número de identificación
+                        por: Número de identificação
                 default_address:
                   type: String
                   example: "Home"
                   description: Customer's default address.
+                  x-description-i18n:
+                    eng: Customer's default address.
+                    spa: Dirección por defecto del cliente
+                    por: Endereço padrão do cliente
                 address:
                   type: object
                   description: Default address's information.
+                  x-description-i18n:
+                    eng: Default address's information.
+                    spa: Información sobre la dirección por defecto del cliente
+                    por: Informação sobre o endereço padrão do cliente
                   properties:
                     id:
                       type: String
                       example: '123123'
                       description: Address ID.
+                      x-description-i18n:
+                        eng: Address ID.
+                        spa: Identificador de la dirección
+                        por: Identificador de endereço
                     zip_code:
                       type: String
                       example: '01234567'
                       description: Zip code.
+                      x-description-i18n:
+                        eng: Zip code.
+                        spa: Código postal
+                        por: Código postal
                     street_name:
                       type: String
                       example: 'Rua Exemplo'
                       description: Street name.
+                      x-description-i18n:
+                        eng: Street name.
+                        spa: Calle
+                        por: Rua
                     street_number:
                       type: number
                       example: 123
                       description: Street number.
+                      x-description-i18n:
+                        eng: Street number.
+                        spa: Número
+                        por: O Número
                 date_registered:
                   type: Date(ISO_8601)
                   example: '22021-10-20T11:37:30.000-04:00'
                   description: Customer's registration date.
+                  x-description-i18n:
+                    eng: Customer's registration date.
+                    spa: Fecha de registro del cliente
+                    por: Data de registo do cliente
                 description:
                   type: String
                   example: 'Description del user'
                   description: Customer's description.
+                  x-description-i18n:
+                    eng: Customer's description.
+                    spa: Descripción del cliente
+                    por: Descrição do cliente
                 default_card:
                   type: String
                   example: 'None'
                   description: Customer's default card. 
+                  x-description-i18n:
+                    eng: Customer's default card.
+                    spa: Tarjeta por defecto del cliente
+                    por: Cartão padrão do cliente
       responses:
         '200':
           description: success
@@ -390,18 +655,34 @@ paths:
                     type: string
                     example: 000000001-sT93QZFAsfxU9P5
                     description: Customer ID.
+                    x-description-i18n:
+                      eng: Customer ID.
+                      spa: Identificador de cliente
+                      por: Identificador de cliente
                   email:
                     type: string
                     example: jhon@doe.com
                     description: Customer's email.
+                    x-description-i18n:
+                      eng: Customer's email.
+                      spa: Email del cliente
+                      por: E-mail do cliente
                   first_name:
                     type: string
                     example: Bruce
                     description: Customer's name.
+                    x-description-i18n:
+                      eng: Customer's name.
+                      spa: Nombre del cliente
+                      por: Nome do cliente
                   last_name:
                     type: string
                     example: Wayne
                     description: Customer's last name.
+                    x-description-i18n:
+                      eng: Customer's last name.
+                      spa: Apellido del cliente
+                      por: Sobrenome do cliente
                   phone:
                     type: object
                     properties:
@@ -409,11 +690,23 @@ paths:
                         type: string
                         example: 23
                         description: Phone's area code.
+                        x-description-i18n:
+                          eng: Phone's area code.
+                          spa: Código de área
+                          por: Código de área
                       number:
                         type: string
                         example: 12345678
                         description: Phone number.
+                        x-description-i18n:
+                          eng: Phone number.
+                          spa: Número telefónico
+                          por: Número de telefone
                     description: Customer phone's information.
+                    x-description-i18n:
+                      eng: Customer phone's information.
+                      spa: Teléfono del cliente
+                      por: Telefone do cliente
                   identification:
                     type: object
                     properties:
@@ -421,11 +714,23 @@ paths:
                         type: string
                         example: DNI
                         description: Identification type.
+                        x-description-i18n:
+                          eng: Identification type.
+                          spa: Tipo de identificación
+                          por: Tipo de identificação
                       number:
                         type: string
                         example: 12345678
                         description: Identification number.
+                        x-description-i18n:
+                          eng: Identification number.
+                          spa: Número de identificación
+                          por: Número de identificação
                     description: Customer identification's information.
+                    x-description-i18n:
+                      eng: Customer identification's information.
+                      spa: Información sobre la identificación del cliente
+                      por: Informações sobre a identificação do cliente
                   address:
                     type: object
                     properties:
@@ -433,35 +738,71 @@ paths:
                         type: string
                         format: nullable
                         description: Address ID.
+                        x-description-i18n:
+                          eng: Address ID.
+                          spa: Identificador de la dirección
+                          por: Identificador de endereço
                       zip_code:
                         type: string
                         example: SG1 2AX
                         description: Zip code.
+                        x-description-i18n:
+                          eng: Zip code.
+                          spa: Código postal
+                          por: Código postal
                       street_name:
                         type: string
                         example: Old Knebworth Ln
                         description: Street name.
+                        x-description-i18n:
+                          eng: Street name.
+                          spa: Calle
+                          por: Rua
                       street_number:
                         type: number
                         format: nullable
                         description: Street number.
+                        x-description-i18n:
+                          eng: Street number.
+                          spa: Número
+                          por: O Número
                     description: Default address's information.
+                    x-description-i18n:
+                      eng: Default address's information.
+                      spa: Información sobre la dirección por defecto del cliente
+                      por: Informação sobre o endereço padrão do cliente
                   date_registered:
                     type: string
                     format: nullable
                     description: Customer's registration date.
+                    x-description-i18n:
+                      eng: Customer's registration date.
+                      spa: Fecha de registro del cliente
+                      por: Data de registo do cliente
                   description:
                     type: string
                     example: This is my description
                     description: Customer's description.
+                    x-description-i18n:
+                      eng: Customer's description.
+                      spa: Descripción del cliente
+                      por: Descrição do cliente
                   date_created:
                     type: string
                     example: 2018-02-20T15:36:23.541Z
                     description: Customer's date created.
+                    x-description-i18n:
+                      eng: Customer's date created.
+                      spa: Fecha de creación del cliente
+                      por: Data de criação do cliente
                   date_last_updated:
                     type: string
                     format: nullable
                     description: Last modified date.
+                    x-description-i18n:
+                      eng: Last modified date.
+                      spa: Fecha de la última modificación
+                      por: Data da última modificação
                   metadata:
                     type: object
                     description: metadata
@@ -469,25 +810,49 @@ paths:
                     type: string
                     format: nullable
                     description: Customer's default card.
+                    x-description-i18n:
+                      eng: Customer's default card.
+                      spa: Tarjeta por defecto del cliente
+                      por: Cartão padrão do cliente
                   default_address:
                     type: string
                     format: nullable
                     description: Customer's default address.
+                    x-description-i18n:
+                      eng: Customer's default address.
+                      spa: Dirección por defecto del cliente
+                      por: Endereço padrão do cliente
                   cards:
                     type: array
                     items:
                       type: object
                     description: Customer's cards.
+                    x-description-i18n:
+                      eng: Customer's cards.
+                      spa: Tarjetas del cliente
+                      por: Cartões do cliente
                   addresses:
                     type: array
                     items:
                       type: object
                     description: Customer's addresses.
+                    x-description-i18n:
+                      eng: Customer's addresses.
+                      spa: Dirección del cliente
+                      por: Endereço do cliente
                   live_mode:
                     type: boolean
                     description: Whether the customers will be in sandbox or in production mode.
+                    x-description-i18n:
+                      eng: Whether the customers will be in sandbox or in production mode.
+                      spa: Indica si los clientes se crean en el entorno de sandbox o producción
+                      por: Indica se os comentários são criados no ambiente de sandbox ou produção
         '400':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -496,56 +861,53 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 100--the-credentials-are-required-
-                      - 101--the-customer-already-exist-
-                      - 102--missing-customer-id-
-                      - 103--parameter-must-be-an-object-
-                      - 104--parameter-length-is-too-large-
-                      - 105--the-customer-id-is-invalid-
-                      - 106--the-email-format-is-invalid-
-                      - 107--the-first-name-is-invalid-
-                      - 108--the-last-name-is-invalid-
-                      - 109--the-phone-area-code-is-invalid-
-                      - 110--the-phone-number-is-invalid-
-                      - 111--the-identification-type-is-invalid-
-                      - 112--the-identification-number-is-invalid-
-                      - 113--the-address-zip-code-is-invalid-
-                      - 114--the-address-street-name-is-invalid-
-                      - 115--the-date-registered-format-is-invalid-
-                      - 116--the-description-is-invalid-
-                      - 117--the-metadata-is-invalid-
-                      - 118--the-body-must-be-a-Json-Object-
-                      - 119--the-card-is-required-
-                      - 120--card-not-found-
-                      - 121--the-card-is-invalid-
-                      - 122--the-card-data-is-invalid-
-                      - 123--the-payment-method-id-is-required-
-                      - 124--the-issuer-id-is-required-
-                      - 125--invalid-parameters-
-                      - 126--invalid-parameter--You-cannot-update-the-email-
-                      - >-
-                        127--invalid-parameter--Cannot-resolve-the-payment-method-of-card--check-the-payment-method-id-and-issuer-id-
-                      - >-
-                        128--the-email-format-is-invalid--Use--test-payer--0-9--1-10--testuser-com--
-                      - >-
-                        129--the-customer-has-reached-the-maximum-allowed-number-of-cards-
-                      - 140--invalid-card-owner-
-                      - 150--invalid-users-involved-
-                      - >-
-                        200--invalid-range-format--range--date-parameter-after--date-from-before--date-to--
-                      - 201--range-attribute-must-belong-to-date-entity-
-                      - >-
-                        202--invalid--after--parameter--It-should-be-date-iso-8601--
-                      - >-
-                        203--invalid--before--parameter--It-should-be-date-iso-8601--
-                      - 204--invalid-filters-format-
-                      - 205--invalid-query-format-
-                      - >-
-                        206--attributes-to-sort-must-belong-to--customer--entity-
-                      - 207--order-filter-must-be--asc--or--desc--
-                      - 208--invalid--sort--parameter-format-
+                      - 100--the credentials are required.
+                      - 101--the customer already exist.
+                      - 102--missing customer id.
+                      - 103--parameter must be an object 
+                      - 104--parameter length is too large.
+                      - 105--the customer id is invalid.
+                      - 106--the email format is invalid.
+                      - 107--the first_name is invalid.
+                      - 108--the last_name is invalid.
+                      - 109--the phone.area_code is invalid.
+                      - 110--the phone.number is invalid.
+                      - 111--the identification.type is invalid.
+                      - 112--the identification.number is invalid.
+                      - 113--the address.zip_code is invalid.
+                      - 114--the address.street_name is invalid.
+                      - 115--the date_registered format is invalid.
+                      - 116--the description is invalid.
+                      - 117--the metadata is invalid.
+                      - 118--the body must be a Json Object.
+                      - 119--the card is required.
+                      - 120--card not found.
+                      - 121--the card is invalid.
+                      - 122--the card data is invalid.
+                      - 123--the payment_method_id is required.
+                      - 124--the issuer_id is required.
+                      - 125--invalid parameters.
+                      - 126--invalid parameter. You cannot update the email.
+                      - 127--invalid parameter. Cannot resolve the payment method of card, check the payment_method_id and issuer_id.
+                      - 128--the email format is invalid. Use 'test_payer_[0-9]{1,10}@testuser.com'.
+                      - 129--the customer has reached the maximum allowed number of cards.
+                      - 140--invalid card owner.
+                      - 150--invalid users involved.
+                      - 200--invalid range format (range=:date_parameter:after::date_from,before::date_to).
+                      - 201--range attribute must belong to date entity.
+                      - 202--invalid 'after' parameter. It should be date[iso_8601].
+                      - 203--invalid 'before' parameter. It should be date[iso_8601].
+                      - 204--invalid filters format.
+                      - 205--invalid query format.
+                      - 206--attributes to sort must belong to 'customer' entity.
+                      - 207--order filter must be 'asc' or 'desc'.
+                      - 208--invalid 'sort' parameter format.
         '401':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -554,9 +916,13 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - unauthorized--unauthorized-
+                      - unauthorized--unauthorized.
         '404':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -565,18 +931,30 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - not_found--not-found-
+                      - not_found--not_found.
     get:
       tags:
         - $ref: '#/tags/mobile-checkout'
         - $ref: '#/tags/checkout-api'
       summary: Get customer
+      x-summary-i18n:
+        eng: Get customer
+        spa: Obtener cliente
+        por: Obter cliente
       description: Check all the information of a client created with the client ID of your choice
+      x-description-i18n:
+        eng: Check all the information of a client created with the client ID of your choice
+        spa: Consulta toda la información de un cliente creado con el ID del cliente que quieras
+        por: Veja todas as informações de um cliente a partir da sua identificação
       parameters:
         - name: id
           in: path
           required: true
           description: Customer ID.
+          x-description-i18n:
+            eng: Customer ID.
+            spa: Identificador de cliente
+            por: Identificador de cliente
           schema:
             type: number
             example: 123123
@@ -592,18 +970,34 @@ paths:
                     type: string
                     example: 470183340-cpunOI7UsIHlHr
                     description: Customer ID.
+                    x-description-i18n:
+                      eng: Customer ID.
+                      spa: Identificador de cliente
+                      por: Identificador de cliente
                   email:
                     type: string
                     example: comprador_mlb01+470183340@asdf12.com.br
                     description: Customer's email.
+                    x-description-i18n:
+                      eng: Customer's email.
+                      spa: Email del cliente
+                      por: E-mail do cliente
                   first_name:
                     type: string
                     example: Customer
                     description: Customer's name.
+                    x-description-i18n:
+                      eng: Customer's name.
+                      spa: Nombre del cliente
+                      por: Nome do cliente
                   last_name:
                     type: string
                     example: Tester
                     description: Customer's last name.
+                    x-description-i18n:
+                      eng: Customer's last name.
+                      spa: Apellido del cliente
+                      por: Sobrenome do cliente
                   phone:
                     type: object
                     properties:
@@ -611,11 +1005,23 @@ paths:
                         type: string
                         example: '11'
                         description: Phone's area code.
+                        x-description-i18n:
+                          eng: Phone's area code.
+                          spa: Código de área
+                          por: Código de área
                       number:
                         type: string
                         example: '97654321'
                         description: Phone number.
+                        x-description-i18n:
+                          eng: Phone number.
+                          spa: Número telefónico
+                          por: Número de telefone
                     description: Customer phone's information.
+                    x-description-i18n:
+                      eng: Customer phone's information.
+                      spa: Teléfono del cliente
+                      por: Telefone do cliente
                   identification:
                     type: object
                     properties:
@@ -623,11 +1029,23 @@ paths:
                         type: string
                         example: CPF
                         description: Identification type.
+                        x-description-i18n:
+                          eng: Identification type.
+                          spa: Tipo de identificación
+                          por: Tipo de identificação
                       number:
                         type: string
                         example: '19119119100'
                         description: Identification number.
+                        x-description-i18n:
+                          eng: Identification number.
+                          spa: Número de identificación
+                          por: Número de identificação
                     description: Customer identification's information.
+                    x-description-i18n:
+                      eng: Customer identification's information.
+                      spa: Información sobre la identificación del cliente
+                      por: Informações sobre a identificação do cliente
                   address:
                     type: object
                     properties:
@@ -635,35 +1053,71 @@ paths:
                         type: string
                         example: '1162600213'
                         description: Address ID.
+                        x-description-i18n:
+                          eng: Address ID.
+                          spa: Identificador de la dirección
+                          por: Identificador de endereço
                       zip_code:
                         type: string
                         example: '05187010'
                         description: Zip code.
+                        x-description-i18n:
+                          eng: Zip code.
+                          spa: Código postal
+                          por: Código postal
                       street_name:
                         type: string
                         example: Caetano Poli, 12
                         description: Street name.
+                        x-description-i18n:
+                          eng: Street name.
+                          spa: Calle
+                          por: Rua
                       street_number:
                         type: number
                         description: Street number.
+                        x-description-i18n:
+                          eng: Street number.
+                          spa: Número
+                          por: O Número
                     description: Default address's information.
+                    x-description-i18n:
+                      eng: Default address's information.
+                      spa: Información sobre la dirección por defecto del cliente
+                      por: Informação sobre o endereço padrão do cliente
                   date_registered:
                     type: string
                     format: date
                     description: Customer's registration date.
+                    x-description-i18n:
+                      eng: Customer's registration date.
+                      spa: Fecha de registro del cliente
+                      por: Data de registo do cliente
                   description:
                     type: string
                     example: Customer Test
                     description: Customer's description.
+                    x-description-i18n:
+                      eng: Customer's description.
+                      spa: Descripción del cliente
+                      por: Descrição do cliente
                   date_created:
                     type: string
                     example: '2021-03-16T15:45:17.000-04:00'
                     format: date
                     description: Customer's date created.
+                    x-description-i18n:
+                      eng: Customer's date created.
+                      spa: Fecha de creación del cliente
+                      por: Data de criação do cliente
                   date_last_updated:
                     type: string
                     format: date
                     description: Last modified date.
+                    x-description-i18n:
+                      eng: Last modified date.
+                      spa: Fecha de la última modificación
+                      por: Data da última modificação
                   metadata:
                     type: object
                     properties:
@@ -671,203 +1125,431 @@ paths:
                         type: string
                         example: source_ws
                     description: Customer's metadata.
+                    x-description-i18n:
+                      eng: Customer's metadata.
+                      spa: Metadata del cliente
+                      por: Metadata do cliente
                   default_card:
                     type: string
                     description: Customer's default card.
+                    x-description-i18n:
+                      eng: Customer's default card.
+                      spa: Tarjeta por defecto del cliente
+                      por: Cartão padrão do cliente
                   default_address:
                     type: string
                     example: '1162600213'
                     description: Customer's default address.
+                    x-description-i18n:
+                      eng: Customer's default address.
+                      spa: Dirección por defecto del cliente
+                      por: Endereço padrão do cliente
                   cards:
                     type: object
                     properties:
                       id:
                         type: string
                         description: Card ID.
+                        x-description-i18n:
+                          eng: Card ID.
+                          spa: Identificador de tarjeta
+                          por: Identificador de cartão
                       customer_id:
                         type: string
                         description: Customer ID.
+                        x-description-i18n:
+                          eng: Customer ID.
+                          spa: Identificador de cliente
+                          por: Identificador de cliente
                       expiration_month:
                         type: number
                         description: Card's expiration month.
+                        x-description-i18n:
+                          eng: Card's expiration month.
+                          spa: Mes de expiración de la tarjeta
+                          por: Mês de validade do cartão
                       expiration_year:
                         type: number
                         description: Card's expiration year.
+                        x-description-i18n:
+                          eng: Card's expiration year.
+                          spa: Año de expiración de la tarjeta
+                          por: Ano de validade do cartão
                       first_six_digits:
                         type: string
                         description: Card's first six digits.
+                        x-description-i18n:
+                          eng: Card's first six digits.
+                          spa: Primeros seis dígitos de la tarjeta
+                          por: Os primeiros seis dígitos do cartão
                       last_four_digits:
                         type: string
                         description: Card's last four digits.
+                        x-description-i18n:
+                          eng: Card's last four digits.
+                          spa: Últimos cuatro dígitos de la tarjeta
+                          por: Últimos quatro dígitos do cartão
                       payment_method:
                         type: object
                         description: Payment method information.
+                        x-description-i18n:
+                          eng: Payment method information.
+                          spa: Información de los medios de pago
+                          por: Informação dos meios de pagamento
                         properties:
                           id:
                             type: string
                             description: Payment method ID.
+                            x-description-i18n:
+                              eng: Payment method ID.
+                              spa: Identificador del método de pago
+                              por: Identificador do método de pagamento
                           name:
                             type: string
                             description: Payment method name.
+                            x-description-i18n:
+                              eng: Payment method name.
+                              spa: Nombre del medio de pago
+                              por: Nome do meio de pagamento
                           payment_type_id:
                             type: string
                             description: Payment method type.
+                            x-description-i18n:
+                              eng: Payment method type.
+                              spa: Tipo del medio de pago
+                              por: Tipo do meio de pagamento
                           thumbnail:
                             type: string
                             description: Payment method thumbnail.
+                            x-description-i18n:
+                              eng: Payment method thumbnail.
+                              spa: Thumbnail del medio de pago
+                              por: Thumbnail do meio de pagamento
                           secure_thumbnail:
                             type: string
                             description: Payment method secure thumbnail.
+                            x-description-i18n:
+                              eng: Payment method secure thumbnail.
+                              spa: Secure thumbnail del medio de pago
+                              por: Secure thumbnail do meio de pagamento
                       security_code:
                         type: object
                         description: Security code information.
+                        x-description-i18n:
+                          eng: Security code information.
+                          spa: Información del código de seguridad
+                          por: Informação do código de segurança
                         properties:
                           length:
                             type: number
                             description: Security code's length.
+                            x-description-i18n:
+                              eng: Security code's length.
+                              spa: Longitud del código de seguridad
+                              por: Comprimento do código de segurança
                           card_location:
                             type: string
                             description: Security code's card location.
+                            x-description-i18n:
+                              eng: Security code's card location.
+                              spa: Ubicación del código de seguridad en la tarjeta
+                              por: Localização do código de segurança no cartão
                       issuer:
                         type: object
                         description: Issuer information.
+                        x-description-i18n:
+                          eng: Issuer information.
+                          spa: Información del emisor
+                          por: Informações do emitente
                         properties:
                           id:
                             type: number
                             description: Issuer Id.
+                            x-description-i18n:
+                              eng: Issuer Id.
+                              spa: Identificador del emisor
+                              por: Id do remetente
                           name:
                             type: string
                             description: Issuer name.
+                            x-description-i18n:
+                              eng: Issuer name.
+                              spa: Nombre del emisor
+                              por: Nome do emitente
                       cardholder:
                         type: object
                         description: Card holder information.
+                        x-description-i18n:
+                          eng: Card holder information.
+                          spa: Información del dueño de la tarjeta
+                          por: Informações do dono do cartão
                         properties:
                           name:
                             type: number
                             description: Card holder name.
+                            x-description-i18n:
+                              eng: Card holder name.
+                              spa: Nombre
+                              por: O nome
                           identification:
                             type: number
                             description: Identification information.
+                            x-description-i18n:
+                              eng: Identification information.
+                              spa: Información de la identificación
+                              por: Informação de identificação
                             properties:
                               number:
                                 type: number
                                 description: Identification number.
+                                x-description-i18n:
+                                  eng: Identification number.
+                                  spa: Número de identificación
+                                  por: Número de identificação
                               subtype:
                                 type: string
                                 description: Identification subtype.
                               type:
                                 type: string
                                 description: Identification type.
+                                x-description-i18n:
+                                  eng: Identification type.
+                                  spa: Tipo de identificación
+                                  por: Tipo de identificação
                       date_created:
                         type: string
                         format: date
                         description: Card's date created.
+                        x-description-i18n:
+                          eng: Card's date created.
+                          spa: Fecha de creación de la tarjeta
+                          por: Data de criação do cartão
                       date_last_updated:
                         type: string
                         format: date
                         description: Card's last modified date.
+                        x-description-i18n:
+                          eng: Card's last modified date.
+                          spa: Última fecha de actualización de la tarjeta
+                          por: Última data de atualização do cartão
                     description: Customer's cards.
+                    x-description-i18n:
+                      eng: Customer's cards.
+                      spa: Tarjetas del cliente
+                      por: Cartões do cliente
                   addresses:
                     type: object
                     properties:
                       id:
                         type: string
                         description: Address ID.
+                        x-description-i18n:
+                          eng: Address ID.
+                          spa: Identificador de la dirección
+                          por: Identificador de endereço
                         example: '1162600213'
                       phone:
                         type: string
                         description: Phone number.
+                        x-description-i18n:
+                          eng: Phone number.
+                          spa: Número telefónico
+                          por: Número de telefone
                       name:
                         type: string
                         description: Address name.
+                        x-description-i18n:
+                          eng: Address name.
+                          spa: Nombre
+                          por: O nome
                       floor:
                         type: string
                         description: Floor.
+                        x-description-i18n:
+                          eng: Floor.
+                          spa: Piso
+                          por: Apartamento
                       apartment:
                         type: string
                         description: Apartment.
+                        x-description-i18n:
+                          eng: Apartment.
+                          spa: Departamento
+                          por: Apartamento
                       street_name:
                         type: string
                         description: Street name.
+                        x-description-i18n:
+                          eng: Street name.
+                          spa: Calle
+                          por: Rua
                         example: Caetano Poli, 12
                       street_number:
                         type: number
                         description: Street number.
+                        x-description-i18n:
+                          eng: Street number.
+                          spa: Número
+                          por: O Número
                       zip_code:
                         type: string
                         description: Postal code of an Address.
+                        x-description-i18n:
+                          eng: Postal code of an Address.
+                          spa: Código postal
+                          por: Código postal
                         example: '05187010'
                       city:
                         type: object
                         description: City information.
+                        x-description-i18n:
+                          eng: City information.
+                          spa: Información de la ciudad
+                          por: Informações da cidade
                         properties:
                           id:
                             type: string
                             description: City ID.
+                            x-description-i18n:
+                              eng: City ID.
+                              spa: Identificador de la ciudad
+                              por: Identificador da cidade
                             example: BR-SP-44
                           name:
                             type: string
                             description: City name.
+                            x-description-i18n:
+                              eng: City name.
+                              spa: Ciudad
+                              por: Cidade
                             example: São Paulo
                       state:
                         type: object
                         description: State information.
+                        x-description-i18n:
+                          eng: State information.
+                          spa: Información de la provincia
+                          por: Informação da província
                         properties:
                           id:
                             type: string
                             description: State ID.
+                            x-description-i18n:
+                              eng: State ID.
+                              spa: Identificador de la provincia
+                              por: Identificador da província
                             example: BR-SP
                           name:
                             type: string
                             description: State name.
+                            x-description-i18n:
+                              eng: State name.
+                              spa: Estado
+                              por: Estado
                             example: São Paulo
                       country:
                         type: object
                         description: Country information.
+                        x-description-i18n:
+                          eng: Country information.
+                          spa: Información del país
+                          por: Informação do país
                         properties:
                           id:
                             type: string
                             description: Country ID.
+                            x-description-i18n:
+                              eng: Country ID.
+                              spa: Identificador del país
+                              por: Identificador do país
                             example: BR
                           name:
                             type: string
                             description: Country name.
+                            x-description-i18n:
+                              eng: Country name.
+                              spa: Nombre del país
+                              por: Nome do país
                             example: Brasil
                       neighborhood:
                         type: object
                         description: Neighborhood information.
+                        x-description-i18n:
+                          eng: Neighborhood information.
+                          spa: Información del barrio
+                          por: Informação do bairro
                         properties:
                           id:
                             type: string
                             description: Neighborhood ID.
+                            x-description-i18n:
+                              eng: Neighborhood ID.
+                              spa: Identificador del barrio
+                              por: Id do bairro
                           name:
                             type: string
                             description: Neighborhood name.
+                            x-description-i18n:
+                              eng: Neighborhood name.
+                              spa: Nombre del barrio
+                              por: Nome do bairro
                             example: Jardim Ipanema (Zona Oeste)
                       municipality:
                         type: object
                         description: Municipality information.
+                        x-description-i18n:
+                          eng: Municipality information.
+                          spa: Información de la municipalidad
+                          por: Informação da prefeitura
                         properties:
                           id:
                             type: string
                             description: Municipality ID.
+                            x-description-i18n:
+                              eng: Municipality ID.
+                              spa: Identificador de la municipalidad
+                              por: Id do município
                           name:
                             type: string
                             description: Municipality name.
+                            x-description-i18n:
+                              eng: Municipality name.
+                              spa: Nombre de la municipalidad
+                              por: Nome do município
                       comments:
                         type: string
                         description: Additional information.
+                        x-description-i18n:
+                          eng: Additional information.
+                          spa: Información adicional
+                          por: Informações adicionais
                       date_created:
                         type: string
                         description: Address date created.
+                        x-description-i18n:
+                          eng: Address date created.
+                          spa: Fecha de creación de la dirección
+                          por: Data de criação da diretoria
                         example: '2021-03-16T15:45:17.000-04:00'
                     description: Customer's addresses.
+                    x-description-i18n:
+                      eng: Customer's addresses.
+                      spa: Dirección del cliente
+                      por: Endereço do cliente
                   live_mode:
                     type: boolean
                     example: true
                     description: Whether the customers will be in sandbox or in production mode.
+                    x-description-i18n:
+                      eng: Whether the customers will be in sandbox or in production mode.
+                      spa: Indica si los clientes se crean en el entorno de sandbox o producción
+                      por: Indica se os comentários são criados no ambiente de sandbox ou produção
         '400':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -876,56 +1558,53 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 100--the-credentials-are-required-
-                      - 101--the-customer-already-exist-
-                      - 102--missing-customer-id-
-                      - 103--parameter-must-be-an-object-
-                      - 104--parameter-length-is-too-large-
-                      - 105--the-customer-id-is-invalid-
-                      - 106--the-email-format-is-invalid-
-                      - 107--the-first-name-is-invalid-
-                      - 108--the-last-name-is-invalid-
-                      - 109--the-phone-area-code-is-invalid-
-                      - 110--the-phone-number-is-invalid-
-                      - 111--the-identification-type-is-invalid-
-                      - 112--the-identification-number-is-invalid-
-                      - 113--the-address-zip-code-is-invalid-
-                      - 114--the-address-street-name-is-invalid-
-                      - 115--the-date-registered-format-is-invalid-
-                      - 116--the-description-is-invalid-
-                      - 117--the-metadata-is-invalid-
-                      - 118--the-body-must-be-a-Json-Object-
-                      - 119--the-card-is-required-
-                      - 120--card-not-found-
-                      - 121--the-card-is-invalid-
-                      - 122--the-card-data-is-invalid-
-                      - 123--the-payment-method-id-is-required-
-                      - 124--the-issuer-id-is-required-
-                      - 125--invalid-parameters-
-                      - 126--invalid-parameter--You-cannot-update-the-email-
-                      - >-
-                        127--invalid-parameter--Cannot-resolve-the-payment-method-of-card--check-the-payment-method-id-and-issuer-id-
-                      - >-
-                        128--the-email-format-is-invalid--Use--test-payer--0-9--1-10--testuser-com--
-                      - >-
-                        129--the-customer-has-reached-the-maximum-allowed-number-of-cards-
-                      - 140--invalid-card-owner-
-                      - 150--invalid-users-involved-
-                      - >-
-                        200--invalid-range-format--range--date-parameter-after--date-from-before--date-to--
-                      - 201--range-attribute-must-belong-to-date-entity-
-                      - >-
-                        202--invalid--after--parameter--It-should-be-date-iso-8601--
-                      - >-
-                        203--invalid--before--parameter--It-should-be-date-iso-8601--
-                      - 204--invalid-filters-format-
-                      - 205--invalid-query-format-
-                      - >-
-                        206--attributes-to-sort-must-belong-to--customer--entity-
-                      - 207--order-filter-must-be--asc--or--desc--
-                      - 208--invalid--sort--parameter-format-
+                      - 100--the credentials are required.
+                      - 101--the customer already exist.
+                      - 102--missing customer id.
+                      - 103--parameter must be an object 
+                      - 104--parameter length is too large.
+                      - 105--the customer id is invalid.
+                      - 106--the email format is invalid.
+                      - 107--the first_name is invalid.
+                      - 108--the last_name is invalid.
+                      - 109--the phone.area_code is invalid.
+                      - 110--the phone.number is invalid.
+                      - 111--the identification.type is invalid.
+                      - 112--the identification.number is invalid.
+                      - 113--the address.zip_code is invalid.
+                      - 114--the address.street_name is invalid.
+                      - 115--the date_registered format is invalid.
+                      - 116--the description is invalid.
+                      - 117--the metadata is invalid.
+                      - 118--the body must be a Json Object.
+                      - 119--the card is required.
+                      - 120--card not found.
+                      - 121--the card is invalid.
+                      - 122--the card data is invalid.
+                      - 123--the payment_method_id is required.
+                      - 124--the issuer_id is required.
+                      - 125--invalid parameters.
+                      - 126--invalid parameter. You cannot update the email.
+                      - 127--invalid parameter. Cannot resolve the payment method of card, check the payment_method_id and issuer_id.
+                      - 128--the email format is invalid. Use 'test_payer_[0-9]{1,10}@testuser.com'.
+                      - 129--the customer has reached the maximum allowed number of cards.
+                      - 140--invalid card owner.
+                      - 150--invalid users involved.
+                      - 200--invalid range format (range=:date_parameter:after::date_from,before::date_to).
+                      - 201--range attribute must belong to date entity.
+                      - 202--invalid 'after' parameter. It should be date[iso_8601].
+                      - 203--invalid 'before' parameter. It should be date[iso_8601].
+                      - 204--invalid filters format.
+                      - 205--invalid query format.
+                      - 206--attributes to sort must belong to 'customer' entity.
+                      - 207--order filter must be 'asc' or 'desc'.
+                      - 208--invalid 'sort' parameter format.
         '401':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -934,9 +1613,13 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - unauthorized--unauthorized-
+                      - unauthorized--unauthorized.
         '404':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -945,18 +1628,30 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - not_found--not-found-
+                      - not_found--not_found.
   /v1/customers/search:
     get:
       tags:
         - $ref: '#/tags/mobile-checkout'
         - $ref: '#/tags/checkout-api'
       summary: Search customers
+      x-summary-i18n:
+        eng: Search customers
+        spa: Buscar en clientes
+        por: Buscar em clientes
       description: Find all customer information using specific filters
+      x-description-i18n:
+        eng: Find all customer information using specific filters
+        spa: Encuentra toda la información de los clientes a través de filtros específicos
+        por: Encontre todas as informações do cliente através de filtros específicos
       parameters:
         - name: email
           in: query
           description: Customer's email.
+          x-description-i18n:
+            eng: Customer's email.
+            spa: Email del cliente
+            por: E-mail do cliente
           required: true
           schema:
             type: string
@@ -976,15 +1671,31 @@ paths:
                         type: number
                         example: 10
                         description: The maximum number of entries to return.
+                        x-description-i18n:
+                          eng: The maximum number of entries to return.
+                          spa: El número máximo de entradas a ser retornadas.
+                          por: O número máximo de entradas a serem retornadas.
                       offset:
                         type: number
                         example: 0
                         description: The offset of the first item in the collection to return.
+                        x-description-i18n:
+                          eng: The offset of the first item in the collection to return.
+                          spa: El offset del primer ítem del cobro a ser retornado.
+                          por: Offset do primeiro item da cobrança a ser retornado.
                       total:
                         type: number
                         example: 1
                         description: The total number of items in the collection.
+                        x-description-i18n:
+                          eng: The total number of items in the collection.
+                          spa: El número total de elementos del cobro.
+                          por: Número total de itens na cobrança.
                     description: Information for pagination of search results.
+                    x-description-i18n:
+                      eng: Information for pagination of search results.
+                      spa: Información para paginación de resultados de búsqueda.
+                      por: Informações para paginação dos resultados da pesquisa.
                   results:
                     type: array
                     items:
@@ -997,69 +1708,133 @@ paths:
                               type: string
                               format: nullable
                               description: Address ID.
+                              x-description-i18n:
+                                eng: Address ID.
+                                spa: Identificador de la dirección
+                                por: Identificador de endereço
                               example: '1162600213'
                             street_name:
                               type: string
                               format: nullable
                               description: Street name.
+                              x-description-i18n:
+                                eng: Street name.
+                                spa: Calle
+                                por: Rua
                               example: Caetano Poli, 12
                             street_number:
                               type: number
                               format: nullable
                               description: Street number.
+                              x-description-i18n:
+                                eng: Street number.
+                                spa: Número
+                                por: O Número
                             zip_code:
                               type: string
                               format: nullable
                               description: Zip code.
+                              x-description-i18n:
+                                eng: Zip code.
+                                spa: Código postal
+                                por: Código postal
                               example: '05187010'
                           description: Default address's information.
+                          x-description-i18n:
+                            eng: Default address's information.
+                            spa: Información sobre la dirección por defecto del cliente
+                            por: Informação sobre o endereço padrão do cliente
                         addresses:
                           type: array
                           items:
                             type: object
                           description: Customer's addresses.
+                          x-description-i18n:
+                            eng: Customer's addresses.
+                            spa: Dirección del cliente
+                            por: Endereço do cliente
                         cards:
                           type: array
                           items:
                             type: object
                           description: Customer's cards.
+                          x-description-i18n:
+                            eng: Customer's cards.
+                            spa: Tarjetas del cliente
+                            por: Cartões do cliente
                         date_created:
                           type: string
                           example: 2017-05-05T04:00:00.000Z
                           description: Customer's date created.
+                          x-description-i18n:
+                            eng: Customer's date created.
+                            spa: Fecha de creación del cliente
+                            por: Data de criação do cliente
                         date_last_updated:
                           type: string
                           example: 2017-05-05T13:23:25.021Z
                           description: Last modified date.
+                          x-description-i18n:
+                            eng: Last modified date.
+                            spa: Fecha de la última modificación
+                            por: Data da última modificação
                         date_registered:
                           type: string
                           format: nullable
                           description: Customer's registration date.
+                          x-description-i18n:
+                            eng: Customer's registration date.
+                            spa: Fecha de registro del cliente
+                            por: Data de registo do cliente
                         default_address:
                           type: string
                           format: nullable
                           description: Customer's default address.
+                          x-description-i18n:
+                            eng: Customer's default address.
+                            spa: Dirección por defecto del cliente
+                            por: Endereço padrão do cliente
                           example: '1162600213'
                         default_card:
                           type: string
                           example: 1493990563105
                           description: Customer's default card.
+                          x-description-i18n:
+                            eng: Customer's default card.
+                            spa: Tarjeta por defecto del cliente
+                            por: Cartão padrão do cliente
                         description:
                           type: string
                           format: nullable
                           description: Customer's description.
+                          x-description-i18n:
+                            eng: Customer's description.
+                            spa: Descripción del cliente
+                            por: Descrição do cliente
                         email:
                           type: string
                           example: test@test.com
                           description: Customer's email.
+                          x-description-i18n:
+                            eng: Customer's email.
+                            spa: Email del cliente
+                            por: E-mail do cliente
                         first_name:
                           type: string
                           description: Customer's name.
+                          x-description-i18n:
+                            eng: Customer's name.
+                            spa: Nombre del cliente
+                            por: Nome do cliente
                           example: Customer
                         id:
                           type: string
                           example: 123456789-jxOV430go9fx2e
                           description: Customer ID.
+                          x-description-i18n:
+                            eng: Customer ID.
+                            spa: Identificador de cliente
+                            por: Identificador de cliente
                         identification:
                           type: object
                           properties:
@@ -1067,21 +1842,41 @@ paths:
                               type: string
                               format: nullable
                               description: Identification number.
+                              x-description-i18n:
+                                eng: Identification number.
+                                spa: Número de identificación
+                                por: Número de identificação
                               example: '19119119100'
                             type:
                               type: string
                               format: nullable
                               description: Identification type.
+                              x-description-i18n:
+                                eng: Identification type.
+                                spa: Tipo de identificación
+                                por: Tipo de identificação
                               example: CPF
                           description: Customer identification's information.
+                          x-description-i18n:
+                            eng: Customer identification's information.
+                            spa: Información sobre la identificación del cliente
+                            por: Informações sobre a identificação do cliente
                         last_name:
                           type: string
                           format: nullable
                           description: Customer's last name.
+                          x-description-i18n:
+                            eng: Customer's last name.
+                            spa: Apellido del cliente
+                            por: Sobrenome do cliente
                           example: Tester
                         live_mode:
                           type: boolean
                           description: Whether the customers will be in sandbox or in production mode.
+                          x-description-i18n:
+                            eng: Whether the customers will be in sandbox or in production mode.
+                            spa: Indica si los clientes se crean en el entorno de sandbox o producción
+                            por: Indica se os comentários são criados no ambiente de sandbox ou produção
                           example: true
                         metadata:
                           type: object
@@ -1093,16 +1888,36 @@ paths:
                               type: string
                               format: nullable
                               description: Phone's area code.
+                              x-description-i18n:
+                                eng: Phone's area code.
+                                spa: Código de área
+                                por: Código de área
                               example: '11'
                             number:
                               type: string
                               format: nullable
                               description: Phone number.
+                              x-description-i18n:
+                                eng: Phone number.
+                                spa: Número telefónico
+                                por: Número de telefone
                               example: '987654321'
                           description: Customer phone's information.
+                          x-description-i18n:
+                            eng: Customer phone's information.
+                            spa: Teléfono del cliente
+                            por: Telefone do cliente
                     description: The page of items. This will be an empty array if there are no results.
+                    x-description-i18n:
+                      eng: The page of items. This will be an empty array if there are no results.
+                      spa: La página de ítems. Esta será un array vacío si no hay resultados.
+                      por: Página de ítens. Caso não retorne resultados, será um array vazio.
         '400':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -1111,56 +1926,53 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 100--the-credentials-are-required-
-                      - 101--the-customer-already-exist-
-                      - 102--missing-customer-id-
-                      - 103--parameter-must-be-an-object-
-                      - 104--parameter-length-is-too-large-
-                      - 105--the-customer-id-is-invalid-
-                      - 106--the-email-format-is-invalid-
-                      - 107--the-first-name-is-invalid-
-                      - 108--the-last-name-is-invalid-
-                      - 109--the-phone-area-code-is-invalid-
-                      - 110--the-phone-number-is-invalid-
-                      - 111--the-identification-type-is-invalid-
-                      - 112--the-identification-number-is-invalid-
-                      - 113--the-address-zip-code-is-invalid-
-                      - 114--the-address-street-name-is-invalid-
-                      - 115--the-date-registered-format-is-invalid-
-                      - 116--the-description-is-invalid-
-                      - 117--the-metadata-is-invalid-
-                      - 118--the-body-must-be-a-Json-Object-
-                      - 119--the-card-is-required-
-                      - 120--card-not-found-
-                      - 121--the-card-is-invalid-
-                      - 122--the-card-data-is-invalid-
-                      - 123--the-payment-method-id-is-required-
-                      - 124--the-issuer-id-is-required-
-                      - 125--invalid-parameters-
-                      - 126--invalid-parameter--You-cannot-update-the-email-
-                      - >-
-                        127--invalid-parameter--Cannot-resolve-the-payment-method-of-card--check-the-payment-method-id-and-issuer-id-
-                      - >-
-                        128--the-email-format-is-invalid--Use--test-payer--0-9--1-10--testuser-com--
-                      - >-
-                        129--the-customer-has-reached-the-maximum-allowed-number-of-cards-
-                      - 140--invalid-card-owner-
-                      - 150--invalid-users-involved-
-                      - >-
-                        200--invalid-range-format--range--date-parameter-after--date-from-before--date-to--
-                      - 201--range-attribute-must-belong-to-date-entity-
-                      - >-
-                        202--invalid--after--parameter--It-should-be-date-iso-8601--
-                      - >-
-                        203--invalid--before--parameter--It-should-be-date-iso-8601--
-                      - 204--invalid-filters-format-
-                      - 205--invalid-query-format-
-                      - >-
-                        206--attributes-to-sort-must-belong-to--customer--entity-
-                      - 207--order-filter-must-be--asc--or--desc--
-                      - 208--invalid--sort--parameter-format-
+                      - 100--the credentials are required.
+                      - 101--the customer already exist.
+                      - 102--missing customer id.
+                      - 103--parameter must be an object 
+                      - 104--parameter length is too large.
+                      - 105--the customer id is invalid.
+                      - 106--the email format is invalid.
+                      - 107--the first_name is invalid.
+                      - 108--the last_name is invalid.
+                      - 109--the phone.area_code is invalid.
+                      - 110--the phone.number is invalid.
+                      - 111--the identification.type is invalid.
+                      - 112--the identification.number is invalid.
+                      - 113--the address.zip_code is invalid.
+                      - 114--the address.street_name is invalid.
+                      - 115--the date_registered format is invalid.
+                      - 116--the description is invalid.
+                      - 117--the metadata is invalid.
+                      - 118--the body must be a Json Object.
+                      - 119--the card is required.
+                      - 120--card not found.
+                      - 121--the card is invalid.
+                      - 122--the card data is invalid.
+                      - 123--the payment_method_id is required.
+                      - 124--the issuer_id is required.
+                      - 125--invalid parameters.
+                      - 126--invalid parameter. You cannot update the email.
+                      - 127--invalid parameter. Cannot resolve the payment method of card, check the payment_method_id and issuer_id.
+                      - 128--the email format is invalid. Use 'test_payer_[0-9]{1,10}@testuser.com'.
+                      - 129--the customer has reached the maximum allowed number of cards.
+                      - 140--invalid card owner.
+                      - 150--invalid users involved.
+                      - 200--invalid range format (range=:date_parameter:after::date_from,before::date_to).
+                      - 201--range attribute must belong to date entity.
+                      - 202--invalid 'after' parameter. It should be date[iso_8601].
+                      - 203--invalid 'before' parameter. It should be date[iso_8601].
+                      - 204--invalid filters format.
+                      - 205--invalid query format.
+                      - 206--attributes to sort must belong to 'customer' entity.
+                      - 207--order filter must be 'asc' or 'desc'.
+                      - 208--invalid 'sort' parameter format.
         '401':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -1169,9 +1981,13 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - unauthorized--unauthorized-
+                      - unauthorized--unauthorized.
         '404':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -1180,4 +1996,4 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - not_found--not-found-
+                      - not_found--not_found.

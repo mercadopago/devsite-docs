@@ -25,19 +25,13 @@ La información de la tarjeta será convertida en un token para que envíes los 
 
 Si aún no tienes cuenta para ver tus credenciales, [regístrate](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
 
-> NOTE
->
-> Nota
->
-> Esta documentación utiliza la nueva versión de la librería. Para ver la versión anterior, ve a la [sección de Integrar pagos con tarjeta con MercadoPago.js V1](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v1/receiving-payment-by-card).
-
 La información de la tarjeta se convertirá en un token para que puedas enviar los datos a tus servidores de forma segura.
 
 ### 2. Agrega el formulario de pago
 
 Para capturar los datos de la tarjeta, primero tienes que brindar un formulario para cargar toda la información.
 
-Con la funcionalidad CardForm de la librería MercadoPago.js V2, puedes obtener y validar todo los datos necesarios como identificar el tipo y nombre del medio de pago, el banco emisor, la cantidad de cuotas y más.
+Con la funcionalidad CardForm de la librería MercadoPago.js, puedes obtener y validar todo los datos necesarios como identificar el tipo y nombre del medio de pago, el banco emisor, la cantidad de cuotas y más.
 
 CardForm te permite tener una implementación segura y una correcta tokenización de la información de la tarjeta.
 
@@ -47,12 +41,27 @@ Utiliza el siguiente formulario y agrega los estilos que desees.
 
 ```html
 <!-- Step #2 -->
+<style>
+  #form-checkout {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+  }
+
+  .container {
+    height: 18px;
+    display: inline-block;
+    border: 1px solid rgb(118, 118, 118);
+    border-radius: 2px;
+    padding: 1px 2px;
+  }
+</style>
 <form id="form-checkout">
-   <div id="form-checkout__cardNumber-container"></div>
-   <div id="form-checkout__expirationDate-container"></div>
+   <div id="form-checkout__cardNumber-container" class="container"></div>
+   <div id="form-checkout__expirationDate-container" class="container"></div>
    <input type="text" name="cardholderName" id="form-checkout__cardholderName"/>
    <input type="email" name="cardholderEmail" id="form-checkout__cardholderEmail"/>
-   <div id="form-checkout__securityCode-container"></div>
+   <div id="form-checkout__securityCode-container" class="container"></div>
    <select name="issuer" id="form-checkout__issuer"></select>----[mla, mlb, mlu, mlc, mpe, mco]----
    <select name="identificationType" id="form-checkout__identificationType"></select>------------
    <input type="text" name="identificationNumber" id="form-checkout__identificationNumber"/>
@@ -61,6 +70,7 @@ Utiliza el siguiente formulario y agrega los estilos que desees.
    <progress value="0" class="progress-bar">Cargando...</progress>
  </form>
 ```
+
 
 > GIT
 > 

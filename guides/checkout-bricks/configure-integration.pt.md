@@ -2,10 +2,10 @@
 
 Para configurar a integração dos bricks você precisa seguir os passos abaixo:
 
-1. [Criar container](/developers/pt/docs/checkout-bricks/integration/configure-integration#bookmark_criar_container)
-2. [Incluir e configurar a biblioteca MercadoPago.js](/developers/pt/docs/checkout-bricks/integration/configure-integration#bookmark_incluir_e_configurar_a_biblioteca_mercadopago.js)
-3. [Instanciar brick](/developers/pt/docs/checkout-bricks/integration/configure-integration#bookmark_instanciar_brick)
-4. [Renderizar brick](/developers/pt/docs/checkout-bricks/integration/configure-integration#bookmark_renderizar_brick)
+1. [Criar container](#bookmark_criar_container)
+2. [Incluir e configurar a biblioteca MercadoPago.js](#bookmark_incluir_e_configurar_a_biblioteca_mercadopago.js)
+3. [Instanciar brick](#bookmark_instanciar_brick)
+4. [Renderizar brick](#bookmark_renderizar_brick)
 
 > Os passos são realizados no back-end ou no front-end. As pills **Client-Side** e **Server-Side** localizadas imediatamentamente ao lado do título te ajudam a identificar qual passo é realizado em qual instância. <br/></br>
 > <br/></br>
@@ -124,6 +124,9 @@ const renderCardPaymentBrick = async (bricksBuilder) => {
 };
 renderCardPaymentBrick(bricksBuilder);
 ```
+
+O resultado de renderizar o brick deve ser como na imagem abaixo:
+
 ![cardform](checkout-bricks/card-form-pt.png)
 
 > PREV_STEP_CARD_PT

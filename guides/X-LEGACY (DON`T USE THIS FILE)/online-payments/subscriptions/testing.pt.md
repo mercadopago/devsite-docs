@@ -23,9 +23,9 @@ Execute o curl a seguir para gerar um usuário de teste:
 ```curl
 curl -X POST \
 -H "Content-Type: application/json" \
--H 'Authorization: Bearer PROD_ACCESS_TOKEN' \
-"https://api.mercadopago.com/users/test_user" \
--d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]"}'
+-H 'Authorization: Bearer ${TEST_ACCESS_TOKEN}' \
+"https://api.mercadopago.com/users/test" \
+-d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]","description" : "a description"}'
 ```
 
 ### Resposta
