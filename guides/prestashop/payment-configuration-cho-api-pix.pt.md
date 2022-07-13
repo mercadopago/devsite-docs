@@ -1,12 +1,12 @@
 # Configurar os pagamentos com Pix
 
 ----[mlb]----
-Com o [Checkout Transparente](/developers/pt/guides/checkout-api/introduction), ofereça pagamentos com **Pix** diretamente em sua loja. O Pix é um meio de pagamento instantâneo e disponível 24h por dia.
+Com o [Checkout Transparente](/developers/pt/guides/checkout-api/landing), ofereça pagamentos com **Pix** diretamente em sua loja. O Pix é um meio de pagamento instantâneo e disponível 24h por dia.
 
 ------------
 
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-Com o [Checkout API](/developers/pt/guides/checkout-api/introduction), ofereça pagamentos com **Pix** diretamente em sua loja. O Pix é um meio de pagamento instantâneo e disponível 24h por dia.
+Com o [Checkout API](/developers/pt/guides/checkout-api/landing), ofereça pagamentos com **Pix** diretamente em sua loja. O Pix é um meio de pagamento instantâneo e disponível 24h por dia.
 
 ------------
 
@@ -15,7 +15,7 @@ Com o [Checkout API](/developers/pt/guides/checkout-api/introduction), ofereça 
 >
 > Importante
 > 
-> A opção de pagamento com Pix só será exibida se houver uma [chave Pix cadastrada](/developers/pt/guides/checkout-api-v2/integrate-pix) no Mercado Pago. <br>
+> A opção de pagamento com Pix só será exibida se houver uma chave Pix cadastrada no Mercado Pago. Caso ainda não tenha criado, [clique aqui]((https://www.youtube.com/watch?v=60tApKYVnkA)) e veja o passo a passo. <br>
 > </br> <br/>
 > Além disso, existe um limite para o valor de Pix, estabelecido pelo Banco Central do Brasil, que poderá ser movimentado no decorrer do período noturno (entre 20h e 6h) de R$1 mil. Para o período diurno (entre 6h e 20h), contudo, não há limite de movimentação.
 

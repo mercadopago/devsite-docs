@@ -1,12 +1,12 @@
 # Configurar pagos con ticket checkout
 
 ----[mlb]----
-Con **pago de boletos**, ofrezca pagos en efectivo en su tienda usando [Checkout Transparente](/developers/es/guides/checkout-api/introduction).
+Con **pago de boletos**, ofrezca pagos en efectivo en su tienda usando [Checkout Transparente](/developers/es/guides/checkout-api/landing).
 
 ------------ 
 
 ----[mla , mlm, mpe, mco, mlu, mlc]----
-Con **pago de boletos**, ofrezca pagos en efectivo en su tienda usando [Checkout API](/developers/es/guides/checkout-api/introduction).
+Con **pago de boletos**, ofrezca pagos en efectivo en su tienda usando [Checkout API](/developers/es/guides/checkout-api/landing).
 
 ------------
 

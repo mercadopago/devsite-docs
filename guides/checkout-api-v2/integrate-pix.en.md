@@ -2,13 +2,11 @@
 
 Pix is an instant electronic payment method offered by the Central Bank of Brazil to individuals and legal entities. Through the Checkout API, it is possible to offer this payment option through QR code or payment code.
 
-
 > WARNING
 >
 > Important
 >
 > To offer payments with Pix, you must ensure that the Pix keys have been created. If you haven't created it yet, [click here](https://www.youtube.com/watch?v=60tApKYVnkA) and check the necessary steps.
-
 
 To integrate payments with Pix, follow the steps below, but if you have already integrated card payments, start the integration from the [Add payment form](/developers/en/docs/checkout-api/integration-configuration/integrate-with-pix#bookmark_Add_payment_form) step.
 
