@@ -1,13 +1,29 @@
-# Configure the payment methods 
+# Payment configuration
 
-To configure the module and accept payments by credit card ----[mlb]----, Pix------------ and ticket in the Custom (Transparent), follow these steps:
+The integration of the Mercado Pago module with the Magento 2 store allows you to use two types of checkouts to receive payments for your sales, namely:
 
-1. [Configure your credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/magento-two/payment-configuration/configuration-credentials)
+----[mlb]----
+* [Checkout Transparente](/developers/en/docs/magento-two/payment-configuration/checkout-api): payment is made out without leaving your virtual store with cards (debit or credit), offline payments (boleto bancário and ATM) and Pix.
+* [Checkout Pro](/developers/en/docs/prestashop/payment-configuration/checkout-pro): payment is made on the Mercado Pago page (inside or outside your store) with cards (debit or credit), cash (boleto bancário) and Pix.
+------------
 
-2. [Enable the payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/magento-two/payment-configuration/enable-payment-method)
+----[mla, mlm, mpe, mco, mlu, mlc]----
+* [Checkout API](/developers/en/docs/magento-two/payment-configuration/checkout-api): payment is made out without leaving your virtual store with cards (debit or credit), offline payments (ticket and ATM) and Pix.
+* [Checkout Pro](/developers/en/docs/prestashop/payment-configuration/checkout-pro): payment is made on the Mercado Pago page (inside or outside your store) with cards (debit or credit), cash (ticket) and bank transfer.
+------------
 
-3. [Configure your Checkout for payments with credit and debit cards](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/magento-two/payment-configuration/configuration-cards)
+> PREV_STEP_CARD_EN
+>
+> Store settings
+>
+> Learn how to configure your store's business information.
+>
+> [Store settings](/developers/en/docs/magento-two/integration-store)
 
-4. [Configure the Checkout API for offline payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/magento-two/payment-configuration/configuration-checkout-api)
-
-5. [Refunds and cancellations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/magento-two/payment-configuration/refunds-and-cancellation)
+> NEXT_STEP_CARD_EN
+>
+> Configure payments with Checkout API
+>
+> Learn how to set up Checkout API to receive payments in your store.
+>
+> [Configure payments with Checkout API](/developers/en/docs/magento-two/payment-configuration/checkout-api)

@@ -11,7 +11,7 @@ To facilitate and optimize your integration process, check below a complete exam
 ```html
 <html>
     <head>
-        <script src="https://beta-sdk.mercadopago.com/gama/js/v2"></script>
+        <script src="https://sdk.mercadopago.com/js/v2"></script>
     </head>
     <body>
         <div id="cardPaymentBrick_container"></div>
@@ -298,7 +298,7 @@ curl -X POST \
 >
 > View how to execute tests to ensure the smooth performance of your integration.
 >
-> [Send payments to Mercado Pago](/developers/en/docs/checkout-bricks-beta/integration/integration-test)
+> [Send payments to Mercado Pago](/developers/en/docs/checkout-bricks/integration/integration-test)
 
 > NEXT_STEP_CARD_EN
 >
@@ -306,4 +306,4 @@ curl -X POST \
 >
 > See how you can select another theme when instantiating/rendering the Card Payment Brick.
 >
-> [Set theme](/developers/en/docs/checkout-bricks-beta/additional-customization/set-theme)
+> [Set theme](/developers/en/docs/checkout-bricks/additional-customization/set-theme)

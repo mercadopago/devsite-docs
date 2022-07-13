@@ -9,6 +9,14 @@ Con el plugin Mercado Pago puedes configurar el pago usando [Checkout Pro](https
 También existe la posibilidad de utilizar el [Checkout API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/checkout-api/introduction), con el cual el pago se realiza con tarjeta de crédito sin salir de tu tienda virtual y del **Ticket Checkout**, realizándose los pagos en persona con efectivo o comprobante bancario.
  
 Otra característica de la integración es la posibilidad de activar el modo binario, característica que permite configurar la aprobación o rechazo automático de pagos. Además, los usuarios también podrán pagar en tu tienda sin estar obligatoriamente registrados en Mercado Pago.
+
+> WARNING 
+> 
+> Mantén tu plugin actualizado para no perder ventas
+> 
+> En octubre de 2022, las versiones del Plugin Mercado Pago anteriores a la 4.3.0 dejarán de funcionar. Además, en abril de 2022, las tarjetas de crédito aplicarán cambios internacionales en las transacciones. 
+>
+> **Mantén tu tienda siempre actualizada con la versión más reciente.**
  
 > Todas nuestras soluciones de pago tienen una licencia de código abierto. ¿Quieres participar en la creación? [Sugiere mejoras y ediciones en Github](https://github.com/mercadopago/cart-prestashop-7).
  

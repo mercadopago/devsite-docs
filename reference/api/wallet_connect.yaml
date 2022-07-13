@@ -1,0 +1,380 @@
+openapi: 3.0.0
+servers:
+  - url: https://api.mercadopago.com
+info:
+  title: Mercado Pago API Reference
+  version: '1.0'
+paths:
+  /v2/wallet_connect/agreements:
+    post:
+      tags:
+        - $ref: '#/tags/checkout-api'
+      summary: Create Agreement
+      x-summary-i18n:
+        eng: Create Agreement
+        spa: Crear Agreement
+        por: Criar Agreement
+      description: An agreement is an authorization link that the buyer receives to allow the seller to access their Mercado Pago wallet to debit the payment
+      x-description-i18n:
+        eng: An agreement is an authorization link that the buyer receives to allow the seller to access their Mercado Pago wallet to debit the payment
+        spa: Un Agreement es un link de autorización recibido por el comprador para permitir al vendedor acceder a su billetera de Mercado Pago con el fin de debitar el pago
+        por: Um Agreement é um link de autorização recebido pelo comprador para permitir ao vendedor acessar a sua carteira do Mercado Pago, a fim de debitar o pagamento
+      parameters:
+        - name: client.id
+          in: query
+          description: Unique ID that identifies a specific Client
+          x-description-i18n:
+            eng: Unique ID that identifies a specific Client
+            spa: ID único que identifica un cliente específico
+            por: ID único que identifica um cliente específico
+          schema:
+            type: number
+            example: 2451675580092619
+      requestBody:
+        description: Here are the fields needed to complete a request for create an Agreement
+        x-description-i18n:
+          eng: Here are the fields needed to complete a request for create an Agreement
+          spa: Estos son los campos necesarios para completar la orden de creación de un Agreement
+          por: Estes são os campos necessários para completar o pedido de criação de um Agreement
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                return_url:
+                  type: string
+                  description: URL that redirects the user back to the sellers site
+                  x-description-i18n:
+                    eng: URL that redirects the user back to the sellers site
+                    spa: Es el URL que redirige al usuario de regreso al sitio del vendedor
+                    por: O URL que redireciona o usuário de volta ao site do vendedor.
+                  example: https://www.mercadopago.com/
+                external_flow_id:
+                  type: string
+                  description: Identifies the Seller side flow current state
+                  x-description-i18n:
+                    eng: Identifies the Seller side flow current state
+                    spa: Identifica el estado del flujo por el lado del vendedor
+                    por: Identifica o estado do fluxo pelo lado do vendedor
+                  example: EXTERNAL_FLOW_ID
+                external_user:
+                  type: object
+                  description: The external_user contains the data that the Seller will need to use to indentify a User, so then it can continue with their own flow.
+                  x-description-i18n:
+                    eng: The external_user contains the data that the Seller will need to use to indentify a User, so then it can continue with their own flow.
+                    spa: El external_user contiene los datos que el vendedor necesitará para identificar un usuario a fin de que este pueda continuar con su propio flujo.
+                    por: O external_user contém os dados que o vendedor precisará para identificar um usuário, de modo que este possa prosseguir com o seu próprio fluxo.
+                  properties:
+                    id:
+                      required: true
+                      type: string
+                      description: Unique ID that is going to be used by the Seller to identify the external_user
+                      x-description-i18n:
+                        eng: Unique ID that is going to be used by the Seller to identify the external_user
+                        spa: ID único que será utilizado por el vendedor para identificar el external_user
+                        por: ID único que será usado pelo vendedor para identificar o external_user
+                      example: usertest
+                    description:
+                      required: true
+                      type: string
+                      description: A brief description with information of the user. It can contains for example the name of the user
+                      x-description-i18n:
+                        eng: A brief description with information of the user. It can contains for example the name of the user
+                        spa: Breve descripción con información del usuario. Por ejemplo, esta puede contener el nombre del usuario
+                        por: Breve descrição com informações do usuário. Por exemplo, essa pode conter o nome do usuário
+                      example: Test account
+                agreement_data:
+                  type: object
+                  description: Contains information about actions the user must do and the amount to be paid
+                  x-description-i18n:
+                    eng: Contains information about actions the user must do and the amount to be paid
+                    spa: Contiene información sobre las acciones que el usuario debe realizar y el monto a pagar
+                    por: Contém informação sobre as ações que o usuário deve fazer e o valor a ser pago
+                  properties:
+                    validation_amount:
+                      required: false
+                      type: number
+                      description: Amount that the user is going to pay
+                      x-description-i18n:
+                        eng: Amount that the user is going to pay
+                        spa: Monto que el usuario pagará
+                        por: Valor que o usuário pagará
+                      example: 3.14
+                    description:
+                      type: string
+                      required: false
+                      description: Description of the actions that the user is trying to perform
+                      x-description-i18n:
+                        eng: Description of the actions that the user is trying to perform
+                        spa: Descripción de las acciones que el usuario intenta realizar
+                        por: Descrição das ações que o usuário tenta realizar
+                      example: Test agreement
+      responses:
+        '200':
+          description: Agreement created
+          x-description-i18n:
+            eng: Agreement created
+            spa: Agreement creado
+            por: Agreement criado
+          content:
+            application/json:
+              schema:
+                description: Agreement that contains an unique identifier and a success URL.
+                x-description-i18n:
+                  eng: Agreement that contains an unique identifier and a success URL.
+                  spa: Agreement que contiene un identificador único y un URL de éxito.
+                  por: Agreement que contém um identificador único e um URL de sucesso.
+                type: object
+                properties:
+                  agreement_id:
+                    type: string
+                    description: Unique ID that identifies an Agreement
+                    x-description-i18n:
+                      eng: Unique ID that identifies an Agreement
+                      spa: ID único que identifica un Agreement
+                      por: ID único que identifica um Agreement
+                    example: b1234e5678b91c23a456e78912345b67
+                  agreement_uri:
+                    type: string
+                    description: This is the uri to redirect the user to the wallet linking in the frontend
+                    example: https://beta.mercadopago.com.ar/v1/wallet_agreement/b1234e5678b91c23a456e78912345b67
+        '400':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 400--Bad-Request--Field return_uri is required
+                      - 400--Bad-Request--Field external_flow_id is required
+                      - 400--Bad-Request--Field return_uri must not be grater than 300 characters
+                      - 400--Bad-Request--Field external_flow_id must not be grater than 300 characters
+                      - 400--Bad-Request--Field external_user must not be blank
+                      - 400--Bad-Request--Field id must not be blank
+  /v2/wallet_connect/agreements/{agreement_id}/payer_token:
+    post:
+      tags:
+        - $ref: '#/tags/checkout-api'
+      summary: Create payer token
+      x-summary-i18n:
+        eng: Create payer token
+        spa: Crear Payer Token
+        por: Criar Payer Token
+      description: A payer token is an ID that represents the authorization the user gave to the seller
+      x-description-i18n:
+        eng: A payer token is an ID that represents the authorization the user gave to the seller
+        spa: Un Payer Token es un ID que representa la autorización que el usuario dio al vendedor
+        por: Um Payer Token é um ID que representa a autorização que o usuário deu ao vendedor
+      parameters:
+        - name: agreement_id
+          in: path
+          description: Unique ID that identifies an Agreement
+          x-description-i18n:
+            eng: Unique ID that identifies an Agreement
+            spa: ID único que identifica un Agreement
+            por: ID único que identifica um Agreement
+          required: true
+          schema:
+            type: string
+            example: b1234e5678b91c23a456e78912345b67
+        - name: client.id
+          in: query
+          description: Unique ID that identifies a specific Client
+          x-description-i18n:
+            eng: Unique ID that identifies a specific Client
+            spa: ID único que identifica un cliente específico
+            por: ID único que identifica um cliente específico
+          required: true
+          schema:
+            type: number
+            example: 1451895580758649
+        - name: caller.id
+          in: query
+          description: Unique ID that identifies a specific Caller
+          x-description-i18n:
+            eng: Unique ID that identifies a specific Caller
+            spa: ID único que identifica un Caller específico
+            por: ID único que identifica um Caller específico
+          required: true
+          schema:
+            type: number
+            example: 832564722
+      requestBody:
+        content:
+          application/json:
+            schema:
+              description: It's a reference of the authorization that the user gave to the seller
+              type: object
+              properties:
+                code:
+                  type: string
+                  description: This is the payer token. It is a reference to the Id that represents the authorization of the user
+                  x-description-i18n:
+                    eng: This is the payer token. It is a reference to the Id that represents the authorization of the user
+                    spa: Este es el Payer Token. Es una referencia del ID que representa la autorización del usuario
+                    por: Este é o Payer Token. É uma referência do ID que representa a autorização do usuário
+                  required: true
+                  example: aeecea3e11f2545d1e7790eb6591ff68df74c57930551ed980239f4538a7e530
+      responses:
+        '200':
+          description: Payer token created
+          x-description-i18n:
+            eng: Payer token created
+            spa: Payer Token creado
+            por: Payer Token criado
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  payer_token:
+                    type: string
+                    description: This is the token of the payer.
+                    x-description-i18n:
+                      eng: This is the token of the payer.
+                      spa: Este es el token del pagador.
+                      por: Este é o token do pagador.
+                    example: abcdef1e23f4567d8e9123eb6591ff68df74c57930551ed980239f4538a7e530
+        '400':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 400--Bad-Request--Parameter agreement_id is required
+                      - 400--Bad-Request--Parameter agreementId has more than 32 characters
+                      - 400--Bad-Request--Parameter agreement_id must be an alfanumeric value
+                      - 400--Bad-Request--Invalid value for back_url. Must be a valid URL
+                      - 400--Bad-Request--Parameter client.id must be a valid id
+                      - 400--Bad-Request--Parameter caller.id must be a valid id
+        '404':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 404--Not-Found--The agreement_id does not exist
+                      - 404--Not-Found--The client.id does not exist
+                      - 404--Not-Found--The caller.id does not exist
+        '500':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500--Error--Internal server error
+  /v2/wallet_connect/agreements/{agreement_id}:
+    delete:
+      tags:
+        - $ref: '#/tags/checkout-api'
+      summary: Cancel agreement
+      x-summary-i18n:
+        eng: Cancel agreement
+        spa: Cancelar Agreement
+        por: Cancelar Agreement
+      description: Endpoint to cancel an agreement by id. An agreement is an authorization link that the buyer receives to allow the seller to access their Mercado Pago wallet to debit the payment. You will need to cancel an agreement when the vinculation flow has ended
+      x-description-i18n:
+        eng: Endpoint to cancel an agreement by id. An agreement is an authorization link that the buyer receives to allow the seller to access their Mercado Pago wallet to debit the payment. You will need to cancel an agreement when the vinculation flow has ended
+        spa: Endpoint para cancelar un Agreement por ID. Un Agreement es un link de autorización que el comprador recibe para permitir al vendedor acceder a su billetera de Mercado Pago a fin de debitar el pago. Deberás cancelar un agreement cuando el flujo de vinculación haya terminado
+        por: Endpoint para cancelar um Agreement por ID. Um Agreement é um link de autorização que o comprador recebe para permitir ao vendedor acessar a sua carteira do Mercado Pago a fim de debitar o pagamento. Você deve cancelar um Agreement quando o fluxo de vinculação tenha terminado
+      operationId: "cancelAgreement_DELETE"
+      parameters:
+        - name: agreementId
+          in: path
+          description: Unique ID that identifies an Agreement
+          x-description-i18n:
+            eng: Unique ID that identifies an Agreement
+            spa: ID único que identifica un Agreement
+            por: ID único que identifica um Agreement
+          required: true
+          schema:
+            type: string
+            example: b1234e5678b91c23a456e78912345b67
+        - name: client.id
+          in: query
+          description: Unique ID that identifies a Client
+          x-description-i18n:
+            eng: Unique ID that identifies a Client
+            spa: ID unico que identifica un cliente
+            por: ID único que identifica um cliente
+          required: false
+          schema:
+            type: number
+            example: 1451895580758649
+      responses: 
+        '200':
+          description: Success
+          name: Agreement cancelled
+        '400':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 400--Bad-Request--Parameter agreement_id is required
+                      - 400--Bad-Request--Parameter agreementId has more than 32 characters
+                      - 400--Bad-Request--Parameter agreement_id must be an alfanumeric value
+        '404':
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 404--Not-Found--The Agreement with that id
+        '500':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500--Error--Internal server error

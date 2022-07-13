@@ -29,7 +29,7 @@ const settings = {
 >
 > También puedes iniciar Brick con un documento de ID. Descubre cómo.
 >
-> [Iniciar Brick con documento de ID](/developers/es/docs/checkout-bricks-beta/additional-customization/initiate-brick-document)
+> [Iniciar Brick con documento de ID](/developers/es/docs/checkout-bricks/additional-customization/initiate-brick-with-document)
 
 > NEXT_STEP_CARD_ES
 >
@@ -37,4 +37,4 @@ const settings = {
 >
 > Consulta cómo ocultar el botón de pago en Card Payment Brick.
 >
-> [Ocultar botón de pago](/developers/es/docs/checkout-bricks-beta/additional-customization/hide-payment-button)
+> [Ocultar botón de pago](/developers/es/docs/checkout-bricks/additional-customization/hide-payment-button)

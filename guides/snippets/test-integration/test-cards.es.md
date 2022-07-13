@@ -6,9 +6,9 @@ Para eso, dependiendo de tu país, utiliza una de las tarjetas que te proporcion
 
 | Tarjeta | Número | Código de seguridad | Fecha de caducidad |
 | :--- | :---: | :---: | :---: |
-| mastercard | 5031 7557 3453 0604 | 123 | 25/11 |
-| Visado | 4509 9535 6623 3704 | 123 | 25/11 |
-| Expreso americano | 3711 803032 57522 | 1234 | 25/11 |
+| Mastercard | 5031 7557 3453 0604 | 123 | 11/25 |
+| Visa | 4509 9535 6623 3704 | 123 | 11/25 |
+| American Express | 3711 803032 57522 | 1234 | 11/25 |
 
 Para **probar diferentes resultados de pago**, completa el estado deseado en el nombre del titular de la tarjeta:
  

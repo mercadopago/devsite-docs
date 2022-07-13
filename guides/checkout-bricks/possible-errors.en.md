@@ -1,6 +1,6 @@
 # Possible erros
 
-Below you will find lists of errors that may occur during brick integration. Whether they are related to [sending variables]() or [communication with external services]() (Mercado Pago APIs).
+Below you will find lists of errors that may occur during brick integration. Whether they are related to **sending variables** or **communication with external services** (Mercado Pago APIs).
 
 ## Variables passed by the integrator
 
@@ -34,4 +34,12 @@ During the Brick integration process, it is possible that **when the Brick is in
 >
 > You can select the Card Payment Brick's language when required. Check how.
 >
-> [Select language](/developers/en/docs/checkout-bricks-beta/additional-customization/select-language)
+> [Select language](/developers/en/docs/checkout-bricks/additional-customization/select-language)
+
+> NEXT_STEP_CARD_EN
+>
+> GitHub project
+>
+> Get access to functional project and technical documentation links.
+>
+> [GitHub project](/developers/en/docs/checkout-bricks/additional-content/github-project)

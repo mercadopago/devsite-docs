@@ -34,7 +34,7 @@ Inicia tu integración configurada con las credenciales de tu usuario de prueba 
 >
 > Después de configurar la integración, consulta cómo enviar el pago a Mercado Pago.
 >
-> [Enviar pago a Mercado Pago](/developers/es/docs/checkout-bricks-beta/integration/payment-submission)
+> [Enviar pago a Mercado Pago](/developers/es/docs/checkout-bricks/integration/payment-submission)
 
 > NEXT_STEP_CARD_ES
 >
@@ -42,4 +42,4 @@ Inicia tu integración configurada con las credenciales de tu usuario de prueba 
 >
 > Para facilitar y optimizar el proceso de integración, consulta un ejemplo de integración con Checkout Bricks.
 >
-> [Enviar pago a Mercado Pago](/developers/es/docs/checkout-bricks-beta/code-example)
+> [Enviar pago a Mercado Pago](/developers/es/docs/checkout-bricks/integration/code-example)

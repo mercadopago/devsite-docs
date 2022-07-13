@@ -60,7 +60,6 @@ This document contains the means and types of payment available for your integra
 |Diners|`diners`|`credit_car`|Diners, MercadoPagoPro and MercadoPagoWallet|
 |Mastercard Debit|`debmaster`|`debit_card`|Mastercard Debit, MercadoPagoPro yand MercadoPagoWallet|
 |Visa Debit|`debvisa`|`debit_card`|Visa Electron, MercadoPagoPro and MercadoPagoWallet|
-|Baloto|`baloto`|`ticket`|MercadoPagoPro and MercadoPagoOff|
 |Efecty|`efecty`|`ticket`|MercadoPagoPro and MercadoPagoOff|
 |PSE|`pse`|`bank_transfer`|PSE and MercadoPagoPro|
 
