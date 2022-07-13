@@ -9,4 +9,4 @@ Below we list the two types of users required to perform the tests:
 * **Seller:** This is the account you use to configure the application and billing credentials.
 * **Buyer:** This is the account you use to test the purchase process.
 
-To create a test user, send a POST with your production credential Access token to the [/users/test_user](/developers/en/reference/test_user/_users_test_user/post) endpoint and execute the request.
+To create a test user, send a POST with your production credential Access token to the [/users/test](/developers/en/reference/test_user/_users_test/post) endpoint and execute the request.

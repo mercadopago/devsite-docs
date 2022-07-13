@@ -1,13 +1,41 @@
-# Configura los medios de pago 
+# Configuración de pago
 
-Para configurar el módulo y aceptar pagos con tarjeta de crédito----[mlb]----, Pix------------ y ticket en el Custom Checkout, sigue estos pasos:
+La integración del módulo de Mercado Pago con la tienda Magento 2 te permite utilizar dos tipos de checkouts para recibir los pagos de tus ventas, a saber:
 
-1. [Configura tus credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/magento-two/payment-configuration/configuration-credentials)
+----[mlb]----
+* [Checkout Transparente](/developers/es/docs/magento-two/payment-configuration/checkout-api): el pago se realiza sin salir de tu tienda virtual con tarjetas (débito o crédito), pagos offline (boleto bancário y cajero automático) y Pix.
+* [Checkout Pro](/developers/es/docs/prestashop/payment-configuration/checkout-pro): el pago se realiza en la página de Mercado Pago (dentro o fuera de tu tienda) con tarjetas (débito o crédito), efectivo (boleto bancário) y Pix.
+------------
 
-2. [Habilita los medios de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/magento-two/payment-configuration/enable-payment-method)
+----[mla, mlm, mpe, mco, mlu, mlc]----
+* [Checkout API](/developers/es/docs/magento-two/payment-configuration/checkout-api): el pago se realiza sin salir de tu tienda virtual con tarjetas (débito o crédito), pagos offline (boleto bancário y cajero automático) y Pix.
+* [Checkout Pro](/developers/es/docs/prestashop/payment-configuration/checkout-pro): el pago se realiza en la página de Mercado Pago (dentro o fuera de tu tienda) con tarjetas (débito o crédito), efectivo y transferencia bancaria.
+------------
 
-3. [Configura tu Checkout para pagos con tarjetas de crédito y débito](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/magento-two/payment-configuration/configuration-cards)
+> PREV_STEP_CARD_ES
+>
+> Configurar información de la tienda
+>
+> Aprende a configurar la información comercial de tu tienda.
+>
+> [Configurar información de la tienda](/developers/es/docs/magento-two/integration-store)
 
-4. [Configura tu Checkout ----[mlb]----Transparente------------ ----[mla, mlu, mlm, mlc, mco, mpe]----API------------ para medios de Pago offline](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/magento-two/payment-configuration/configuration-checkout-api)
+----[mlb]----
+> NEXT_STEP_CARD_ES
+>
+> Configurar pagos con Checkout Transparente
+>
+> Aprende a configurar el Checkout Transparente para recibir pagos en su tienda. 
+>
+> [Configurar pagos con Checkout Transparente](/developers/es/docs/magento-two/payment-configuration/checkout-api)
+------------
 
-5. [Devoluciones y cancelaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/magento-two/payment-configuration/refunds-and-cancellation)
+----[mla, mlm, mpe, mco, mlu, mlc]----
+> NEXT_STEP_CARD_ES
+>
+> Configurar pagos con Checkout API
+>
+> Aprende a configurar el Checkout API para recibir pagos en su tienda. 
+>
+> [Configurar pagos con Checkout API](/developers/es/docs/magento-two/payment-configuration/checkout-api)
+------------
