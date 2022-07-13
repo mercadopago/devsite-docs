@@ -4,7 +4,7 @@ Para configurar la integración con Mercado Pago Delivery, sigue los pasos a con
 
 1. Crea la aplicación a través del Dashboard. Consulta [Tus aplicaciones](/developers/es/guides/additional-content/dashboard/applications) para obtener instrucciones.
 2. Realiza el proceso de autorización vía [OAuth](/developers/es/guides/additional-content/security/oauth/introduction) con los restaurantes para generar el `access-token` necesario para realizar operaciones y no dejar de recibir notificaciones sobre nuevos pedidos a través de Webhooks.
-3. Configura las notificaciones seleccionando la opción "Envíos". Consulta [Webhooks](/developers/es/guides/additional-content/notifications/webhooks/webhooks) para obtener instrucciones.
+3. Configura las notificaciones seleccionando la opción "Delivery". Consulta [Webhooks](/developers/es/guides/additional-content/notifications/webhooks/webhooks) para obtener instrucciones.
 4. Utiliza las API disponibles para consultar y gestionar información de tus sucursales. Ver [Administración de sucursales](/developers/es/docs/mp-delivery/store-management).
 5. Utiliza las API disponibles para gestionar las órdenes. Ver [Administración de órdenes](/developers/es/docs/mp-delivery/order-management).
 
