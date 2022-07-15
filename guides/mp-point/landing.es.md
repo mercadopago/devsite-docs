@@ -7,7 +7,7 @@ content_section_with_media:
 
 --- mini_landing_separator ---
 
->>>> Disponibilidade por país<<<<
+>>>> Disponibilidad por país<<<<
 ---
 available_countries: mla, mlb, mlm
 ---
@@ -15,7 +15,7 @@ available_countries: mla, mlb, mlm
 bullet_section_with_media: 
  - title: Ventajas
  - type: normal
- - message: Além de garantir um processo de compra ágil e fácil, a maquininha Point ainda conta com inúmeras vantagens como:
+ - message: Además de garantizar un proceso de compra ágil y sencillo, la máquina Point también presenta numerosas ventajas como:
  - benefit_title: Varias opciones de pago
  - benefit_message: Ofrece pagos por crédito, débito y usando el código QR
  - benefit_title: Fácil administración de dinero
