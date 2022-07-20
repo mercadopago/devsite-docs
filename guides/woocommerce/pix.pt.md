@@ -10,10 +10,9 @@ Este meio de pagamento adicionará o Checkout API e permitirá que você ofereç
 
 1. Para ativar o checkout, você deve clicar no botão deslizante.
 2. Na alteração **Título no checkout da loja** você pode escolher o nome com que esta forma de pagamento será exibida na loja. Por exemplo, você pode nomeá-lo **Pix**.
-3. Na opção Vencimento para pagamentos com Pix pode definir o limite de minutos que os clientes terão para pagar com Pix. Você pode escolher entre 15 minutos a 7 dias.
+3. Na opção "Vencimento para pagamentos com Pix" você pode definir o limite de minutos que os clientes terão para pagar com Pix. Você pode escolher entre 15 minutos a 7 dias.
 4. A opção **Converter moeda** permite que o valor da moeda configurada no WooCommerce seja compatível com o valor da moeda que você utiliza no Mercado Pago. Se você quiser ativá-lo, basta clicar no botão deslizante.
-
-Para salvar as alterações nas configurações, clique no botão **Salvar alterações**.
+5. Para salvar as alterações nas configurações, clique no botão **Salvar alterações**.
 
 > PREV_STEP_CARD_PT
 >
