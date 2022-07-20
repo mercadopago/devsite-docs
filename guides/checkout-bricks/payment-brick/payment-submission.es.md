@@ -1,72 +1,14 @@
-# Ejemplo de código
-
-Para facilitar y optimizar su proceso de integración, ve a continuación un ejemplo completo de la integración con Checkout Bricks y cómo, luego de realizar la integración, enviar el pago a Mercado Pago.
-
-> CLIENT_SIDE
->
-> h2
->
-> Configurar la integración
-
-```html
-<html>
-    <head>
-        <script src="https://sdk.mercadopago.com/js/v2"></script>
-    </head>
-    <body>
-        <div id="paymentBrick_container"></div>
-<script src="https://sdk.mercadopago.com/js/v2"></script>
-<script>
-   const mp = new MercadoPago('YOUR_PUBLIC_KEY');
-const bricksBuilder = mp.bricks();
-const renderPaymentBrick = async (bricksBuilder) => {
-   const settings = {
-       initialization: {
-           amount: 100, // cantidad de procesamiento a realizar
-       },
-       callbacks: {
-           onReady: () => {
-           // callback llamado cuando Brick está listo
-           },
-           onSubmit: ({paymentType, formData}) => {
-           // callback llamado para que el usuario haga clic en el botón de envío de datos
-           // ejemplo de envío de los datos recolectados por el Brick a su servidor
-           return new Promise((resolve, reject) => {
-               fetch("/processar-pago", {
-                   method: "POST",
-                   headers: {
-                       "Content-Type": "application/json",
-                   },
-                   body: JSON.stringify(formData)
-               })
-               .then((response) => {
-                   // recibir el resultado del pago
-                   resolve();
-               })
-               .catch((error) => {
-                   // manejar la respuesta de error al intentar crear el pago
-                   reject();
-               })
-               });
-           },
-           onError: (error) => {
-           // callback llamado para todos los casos de error de Brick
-           },
-       },
-   };
-   window.cardPaymentBrickController = await bricksBuilder.create('payment', 'paymentBrick_container', settings);
-};
-renderPaymentBrick(bricksBuilder);
-</script>
-    </body>
-</html>
-```
-
 > SERVER_SIDE
 >
-> h2
+> h1
 >
-> Envía el pago a Mercado Pago
+> Enviar el pago a Mercado Pago
+
+Para continuar el proceso de pago hacia Mercado Pago, es necesario que tu backend sepa recibir la información del formulario con el token generado y los datos completados. Su backend debe disponibilizar un endpoint `/process_payment` para recibir allí todos los datos luego de realizar la acción submit.
+
+Ya estando en tu backend con toda la información recolectada, es momento de enviar la solicitud a Mercado Pago a través de nuestras APIs. Los campos mínimos requeridos a enviar son: `token`, `transaction_amount`, `installments`, `payment_method_id` y el `payer.email`.
+
+Ten en cuenta que para que este paso funcione es necesario que configures tu [clave privada]([FAKER][CREDENTIALS][URL]) y que para interactuar con nuestras APIs recomendamos utilizar la [SDK oficial de Mercado Pago](/developers/es/docs/checkout-bricks/integration/prerequisites).
 
 [[[
 ```php
@@ -269,7 +211,7 @@ curl -X POST \
 ```
 ]]]
 
-### Respuesta
+## Respuesta
 
 ```json
 {
@@ -286,18 +228,21 @@ curl -X POST \
     ...
 }
 ```
+
+> Conoce todos los campos disponibles para realizar un pago completo en las [Referencias de API](/developers/es/reference/payments/_payments/post).
+
 > PREV_STEP_CARD_ES
+>
+> Configurar la integración
+>
+> Aprende a realizar la integración de los Bricks paso a paso.
+>
+> [Configurar la integración](/developers/es/docs/checkout-bricks/integration/configure-integration)
+
+> NEXT_STEP_CARD_ES
 >
 > Probar la integración
 >
 > Consulta cómo realizar pruebas para garantizar el buen funcionamiento de la integración.
 >
 > [Enviar pago a Mercado Pago](/developers/es/docs/checkout-bricks/integration/integration-test)
-
-> NEXT_STEP_CARD_ES
->
-> Definir tema
->
-> Si lo deseas, aprende a seleccionar otro tema al instanciar/renderizar Card Payment Brick.
->
-> [Definir tema](/developers/es/docs/checkout-bricks/additional-customization/set-theme)

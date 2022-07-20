@@ -1,77 +1,19 @@
-# Ejemplo de código
-
-Para facilitar y optimizar su proceso de integración, ve a continuación un ejemplo completo de la integración con Checkout Bricks y cómo, luego de realizar la integración, enviar el pago a Mercado Pago.
-
-> CLIENT_SIDE
->
-> h2
->
-> Configurar la integración
-
-```html
-<html>
-    <head>
-        <script src="https://sdk.mercadopago.com/js/v2"></script>
-    </head>
-    <body>
-        <div id="paymentBrick_container"></div>
-<script src="https://sdk.mercadopago.com/js/v2"></script>
-<script>
-   const mp = new MercadoPago('YOUR_PUBLIC_KEY');
-const bricksBuilder = mp.bricks();
-const renderPaymentBrick = async (bricksBuilder) => {
-   const settings = {
-       initialization: {
-           amount: 100, // cantidad de procesamiento a realizar
-       },
-       callbacks: {
-           onReady: () => {
-           // callback llamado cuando Brick está listo
-           },
-           onSubmit: ({paymentType, formData}) => {
-           // callback llamado para que el usuario haga clic en el botón de envío de datos
-           // ejemplo de envío de los datos recolectados por el Brick a su servidor
-           return new Promise((resolve, reject) => {
-               fetch("/processar-pago", {
-                   method: "POST",
-                   headers: {
-                       "Content-Type": "application/json",
-                   },
-                   body: JSON.stringify(formData)
-               })
-               .then((response) => {
-                   // recibir el resultado del pago
-                   resolve();
-               })
-               .catch((error) => {
-                   // manejar la respuesta de error al intentar crear el pago
-                   reject();
-               })
-               });
-           },
-           onError: (error) => {
-           // callback llamado para todos los casos de error de Brick
-           },
-       },
-   };
-   window.cardPaymentBrickController = await bricksBuilder.create('payment', 'paymentBrick_container', settings);
-};
-renderPaymentBrick(bricksBuilder);
-</script>
-    </body>
-</html>
-```
-
 > SERVER_SIDE
 >
-> h2
+> h1
 >
-> Envía el pago a Mercado Pago
+> Payment submission to Mercado Pago
+
+To continue with the Mercado Pago payment process, your backend should know how to receive form information with the generated token and the filled out data. Your backend should make available a `/process_payment` endpoint to receive all the data.
+
+Once the request –with all the collected information– is in your backend, it should be submitted to Mercado Pago through our APIs.  The minimum mandatory fields to submit are: `token`, `transaction_amount`, `installments`, `payment_method_id` and `payer.email`.
+
+For this to work, you should configure your [private key]([FAKER][CREDENTIALS][URL]). Also, to interact with our APIs, you should use [Mercado Pago official SDK](/developers/en/docs/checkout-bricks/integration/prerequisites).
 
 [[[
 ```php
 ===
-Puedes encontrar el estado del pago en el valor _status_.
+You can find payment status in _status_ value.
 ===
 <?php
     require_once 'vendor/autoload.php';
@@ -108,7 +50,7 @@ Puedes encontrar el estado del pago en el valor _status_.
 ```
 ```node
 ===
-Puedes encontrar el estado del pago en el valor _status_.
+You can find payment status in _status_ value.
 ===
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken("YOUR_ACCESS_TOKEN");
@@ -124,7 +66,7 @@ mercadopago.payment.save(req.body)
 ```
 ```java
 ===
-Puedes encontrar el estado del pago en el valor _status_.
+You can find payment status in _status_ value.
 ===
 
 PaymentClient client = new PaymentClient();
@@ -153,7 +95,7 @@ client.create(paymentCreateRequest);
 ```
 ```ruby
 ===
-Puedes encontrar el estado del pago en el valor _status_.
+You can find payment status in _status_ value.
 ===
 require 'mercadopago'
 sdk = Mercadopago::SDK.new('YOUR_ACCESS_TOKEN')
@@ -182,7 +124,7 @@ puts payment
 ```
 ```csharp
 ===
-Puedes encontrar el estado del pago en el valor _status_.
+You can find payment status in _status_ value.
 ===
 using System;
 using MercadoPago.Client.Common;
@@ -219,7 +161,7 @@ Console.WriteLine(payment.Status);
 ```
 ```python
 ===
-Puedes encontrar el estado del pago en el valor _status_.
+You can find payment status in _status_ value.
 ===
 import mercadopago
 sdk = mercadopago.SDK("ACCESS_TOKEN")
@@ -247,7 +189,7 @@ print(payment)
 ```
 ```curl
 ===
-Puedes encontrar el estado del pago en el valor _status_.
+You can find payment status in _status_ value.
 ===
 curl -X POST \
     -H 'accept: application/json' \
@@ -269,7 +211,7 @@ curl -X POST \
 ```
 ]]]
 
-### Respuesta
+## Response
 
 ```json
 {
@@ -286,18 +228,21 @@ curl -X POST \
     ...
 }
 ```
-> PREV_STEP_CARD_ES
->
-> Probar la integración
->
-> Consulta cómo realizar pruebas para garantizar el buen funcionamiento de la integración.
->
-> [Enviar pago a Mercado Pago](/developers/es/docs/checkout-bricks/integration/integration-test)
 
-> NEXT_STEP_CARD_ES
+> Check [API References](/developers/en/reference/payments/_payments/post) to learn about all the available fields for full payments.
+
+> PREV_STEP_CARD_EN
 >
-> Definir tema
+> Configure integration
 >
-> Si lo deseas, aprende a seleccionar otro tema al instanciar/renderizar Card Payment Brick.
+> Learn how to integrate Bricks step by step.
 >
-> [Definir tema](/developers/es/docs/checkout-bricks/additional-customization/set-theme)
+> [Configure integration](/developers/en/docs/checkout-bricks/integration/configure-integration)
+
+> NEXT_STEP_CARD_EN
+>
+> Test integration
+>
+> View how to execute tests to ensure the smooth performance of your integration.
+>
+> [Send payments to Mercado Pago](/developers/en/docs/checkout-bricks/integration/integration-test)
