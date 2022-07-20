@@ -26,6 +26,6 @@ Este meio de pagamento adicionará o Checkout API e permitirá que você ofereç
 >
 > Teste a integração
 >
-> Faça um teste para verificar se sua integração está completa.
+> Teste sua integração para garantir que tudo está funcionando corretamente.
 >
 > [Teste de integração](/developers/pt/docs/woocommerce/integration-test)

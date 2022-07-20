@@ -4,10 +4,10 @@ Para escolher os métodos de pagamento de oferecimento a través de Mercado Pago
 
 Puedes elegir configurar estos métodos de pagamento:
 
-* [Mercado Pago con Checkout Pro](/developers/es/docs/woocommerce/payments-configuration/checkoutpro)
+* [Mercado Pago con Checkout Pro](/developers/pt/docs/woocommerce/payments-configuration/checkoutpro)
 
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-* [Débito o crédito com Checkout API](/developers/es/docs/woocommerce/payments-configuration/credit-debit)
+* [Débito o crédito com Checkout API](/developers/pt/docs/woocommerce/payments-configuration/credit-debit)
 ------------
 
 ----[mlb]----

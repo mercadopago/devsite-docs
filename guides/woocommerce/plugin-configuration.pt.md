@@ -1,4 +1,4 @@
-#Configura o plugin
+# Configure o plugin
 
 Uma vez instalado o plugin Mercado Pago com WooCommerce, é necessário configurá-lo. Para isso, siga estes passos:
 
@@ -22,7 +22,7 @@ Na seção **Informações sobre sua loja** você pode oferecer dados da loja pa
 * **Nome da Loja:** Digite o nome da sua loja.
 * **Categoria da loja**: Insira a categoria dos produtos da sua loja.
 * **ID da loja**: use um número ou prefixo para identificar pedidos e pagamentos de sua loja.
-* **Integrator ID**: insira seu integrador_id como membro do **&lt;dev&gt;program** do Mercado Pago. Se você ainda não é membro, [clique aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/developer-program) para mais informações.
+* **Integrator ID**: insira seu integrador_id como membro do **&lt;dev&gt;program** do Mercado Pago. Se você ainda não é membro, [clique aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/developer-program) para mais informações.
 
 Clique em **Salvar e continuar**.
 
@@ -33,7 +33,7 @@ Em **Configurações avançadas**, configure as opções relacionadas a salvar i
 
 Notificações são mensagens enviadas pelo servidor do Mercado Pago de eventos que ocorrem em seu aplicativo. **IPN** (Instant Payment Notification) é um mecanismo que permite que seu aplicativo receba notificações do Mercado Pago, informando o status de um determinado pagamento, estorno e comerciante_order, por meio de uma chamada HTTP POST para informar suas transações.
 
-Se você quiser saber mais sobre notificações de IPN, acesse [esta documentação](/developers/en/docs/WooCommerce/additional-content/notifications/ipn).
+Se você quiser saber mais sobre notificações de IPN, acesse [esta documentação](/developers/pt/docs/WooCommerce/additional-content/notifications/ipn).
 
 Para receber notificações de IPN, siga as etapas abaixo:
 
@@ -58,7 +58,7 @@ Para receber notificações de IPN, siga as etapas abaixo:
 
 > NEXT_STEP_CARD_PT
 >
-> Configurar os meios de pagamento
+> Configurar os métodos de pagamento
 >
 > Aprenda a configurar os diferentes métodos de pagamento na loja.
 >
