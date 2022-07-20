@@ -8,7 +8,7 @@ Com o Checkout Pro, o comprador será direcionado da loja para o site do Mercado
 4. Em **Escolha as formas de pagamento aceitas na loja** você pode escolher quais formas de pagamento aceitará na loja através do Checkout Pro, podendo ser:
 ----[mlb]----
     - Cartões de débito e crédito.
-    - Dinheiro (saldo da conta Mercado Pago ou recibo bancário).
+    - Dinheiro (saldo da conta Mercado Pago ou boleto bancário).
     - Transferência bancária (Pix e PEC). A opção de pagamento Pix só será exibida se houver uma Pix key cadastrada no Mercado Pago.
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
