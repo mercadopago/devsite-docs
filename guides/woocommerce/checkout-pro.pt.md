@@ -9,7 +9,7 @@ Com o Checkout Pro, o comprador será direcionado da loja para o site do Mercado
 ----[mlb]----
     - Cartões de débito e crédito.
     - Dinheiro (saldo da conta Mercado Pago ou boleto bancário).
-    - Transferência bancária (Pix e PEC). A opção de pagamento Pix só será exibida se houver uma Pix key cadastrada no Mercado Pago.
+    - Transferência bancária (Pix e PEC). A opção de pagamento Pix só será exibida se houver uma chave Pix cadastrada no Mercado Pago.
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
     - Cartões de débito e crédito.
@@ -17,8 +17,7 @@ Com o Checkout Pro, o comprador será direcionado da loja para o site do Mercado
     - Transferência bancária.
 ------------
 5. No campo **Parcelas máximas** você pode escolher quantas parcelas deseja oferecer aos clientes através do Mercado Pago. Você pode escolher entre 1 e 24 parcelas.
-
-Para salvar as alterações nas configurações, clique no botão **Salvar alterações**.
+6. Para salvar as alterações nas configurações, clique no botão **Salvar alterações**.
 
 > PREV_STEP_CARD_PT
 >
@@ -31,7 +30,7 @@ Para salvar as alterações nas configurações, clique no botão **Salvar alter
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 > PREV_STEP_CARD_PT
 >
-> Configurar os meios de pagamento
+> Configurar os métodos de pagamento
 >
 > Aprenda a configurar os diferentes métodos de pagamento na loja.
 >
@@ -41,9 +40,9 @@ Para salvar as alterações nas configurações, clique no botão **Salvar alter
 >
 > Débito ou crédito
 >
-> Configure pagamentos de débito ou crédito com a API Checkout
+> Configure pagamentos com cartões de débito ou crédito no Checkout API.
 >
-> [Débito ou crédito com a API do Google Checkout](/developers/pt/docs/woocommerce/payments-configuration/credit-debit)
+> [Débito ou crédito com o Checkout API](/developers/pt/docs/woocommerce/payments-configuration/credit-debit)
 ------------
 
 ----[mlb]----
@@ -59,7 +58,7 @@ Para salvar as alterações nas configurações, clique no botão **Salvar alter
 >
 > Débito ou crédito
 >
-> Configure pagamentos de débito ou crédito com o Checkout transparente
+> Configure pagamentos com cartões de débito ou crédito no Checkout Transparente.
 >
 > [Débito ou crédito com checkout transparente](/developers/pt/docs/woocommerce/payments-configuration/credit-debit)
 ------------

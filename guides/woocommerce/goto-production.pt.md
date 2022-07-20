@@ -15,7 +15,7 @@ Siga este passo a passo para fazer a alteração:
 3. No buscador de plugins, procure por “Mercado Pago payments for WooCommerce”.
 4. Clique em **Configurar plug-in**.
 5. Clique em **4. Teste sua loja antes de vender** para exibir as opções.
-6. Em Escolha como deseja operar sua loja, selecione **Modo de vendas (produção)**.
+6. Em "Escolha como deseja operar sua loja", selecione **Modo de vendas (produção)**.
 7. Clique em **Salvar alterações** para finalizar.
 
 Feito! A loja está em produção e habilitada para processar suas vendas.
