@@ -4,7 +4,7 @@ Com o Checkout Pro, o comprador será direcionado da loja para o site do Mercado
 
 1. Para ativar o checkout, você deve clicar no botão deslizante.
 2. No campo **Título no checkout da loja** você pode escolher o nome com que essa forma de pagamento será exibida na loja. Por exemplo, você pode chamá-la de **Mercado Pago**.
-3. A opção **Converter moeda** permite que o valor da moeda configurada no WooCommerce seja compatível com o valor da moeda que você utiliza no Mercado Pago. Se você quiser ativá-lo, basta clicar no botão deslizante.
+3. A opção **Converter moeda** permite que o valor da moeda configurada no WooCommerce seja compatível com o valor da moeda que você utiliza no Mercado Pago. Se você quiser ativá-la, basta clicar no botão deslizante.
 4. Em **Escolha as formas de pagamento aceitas na loja** você pode escolher quais formas de pagamento aceitará na loja através do Mercado Pago Checkout Pro. Estes podem ser:
 ----[mlb]----
     - Cartões de débito e crédito.
