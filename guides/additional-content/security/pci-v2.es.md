@@ -72,8 +72,8 @@ Aquí te resumimos qué tipo de SAQ debes completar para cada solución de integ
 
 **Solución** | **SAQ**
 ------ | ------
+Checkout Bricks | A
 Checkout Pro | A
-Web Tokenize Checkout | A-EP
 Checkout Transparente | A
 
 > Recuerda que Mercado Pago puede exigir esta documentación debido a su rol como PSP.
@@ -95,5 +95,3 @@ Además, baja considerablemente el riesgo de tu integración, dado que el entorn
 Es importante que consideres migrar a la nueva solución de Checkout ----[mlb]----Transparente------------ ----[mla, mlu, mlm, mlc, mpe, mco]----API------------ con Secure Fields en caso de que te encuentres integrado vía API para poder facilitar tu cumplimiento PCI, asegurar el canal de pago, reduciendo el riesgo de cualquier tipo de ataque y afectación a los datos de tus clientes y de Mercado Pago.
 
 > Lee el documento **SAQ Instructions and Guidelines** de la [biblioteca oficial de documentos de PCI](https://www.pcisecuritystandards.org/document_library) para detalles de la descripción de cada SAQ.
-
-

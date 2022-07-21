@@ -5,6 +5,7 @@ At Mercado Pago we ensure the Confidentiality, Availability and Integrity of all
 In addition, for Mercado Pago to be able to operate with credit and debit cards, we must comply with one of the most demanding security standards in the payment industry: Payment Card Industry Data Security Standard.
 
 ## Definition and context
+
 If you have ever stored, processed or transmitted card data in your company, you have probably heard of PCI. From Mercado Pago we want to help you and simplify the task of understanding these regulations and the different associated responsibilities.
 
 As a Service Provider, we must meet regulatory and security responsibilities towards card brands and acquirers, but even so, security throughout the payment process is the obligation of both parties. Merchants and / or e-commerce platforms that are integrated with payment processors such as Mercado Pago must meet minimum security requirements to mitigate risks of fraud and information leakage, securing user data.
@@ -56,7 +57,6 @@ For each of the twelve PCI requirements, there are basically four different leve
 
 > The [SAQ (Self-Assessment Questionnaire)](https://www.pcisecuritystandards.org/pci_security/completing_self_assessment) is a PCI self-assessment form that must be completed by those businesses or service providers that are not eligible to complete a Level 1 Compliance Report, and whose purpose is to validate regulatory compliance through a series of controls summarized in "yes" or "no" questions.
 
-
 ## Compliance
 
 Mercado Pago is responsible for ensuring the cardholder data information once they enter its environment, so it is important that businesses and/or e-commerce platforms comply with the appropriate security controls to transmit them correctly. As a service provider, Mercado Pago can validate compliance by requesting evidence of the corresponding PCI documentation according to the product used.
@@ -71,8 +71,8 @@ Here we summarize what type of SAQ you must complete for each solution integrati
 
 **Solution** | **SAQ**
 ------ | ------
+Checkout Bricks | A
 Checkout Pro | A
-Web Tokenize Checkout | A-EP
 Checkout Transparente | A
 
 > Remember that Mercado Pago may require this documentation due to its role as a PSP.
@@ -94,5 +94,3 @@ In addition, it considerably reduces the risk of your integration, since the car
 It is important that you consider migrating to the new Checkout API solution with Secure Fields in case you are integrated via API in order to facilitate your PCI compliance, secure the payment channel, reducing the risk of any type of attack and damage to data of your clients and Mercado Pago.
 
 > See the **SAQ Instructions and Guidelines document** [official PCI library](https://www.pcisecuritystandards.org/document_library) for details of the description of each SAQ.
-
-

@@ -5,6 +5,7 @@ En Mercado Pago aseguramos la confidencialidad, disponibilidad e integridad de t
 Además, para que Mercado Pago pueda operar con tarjetas de crédito y débito debemos cumplir con uno de los estándares de seguridad más exigentes de la industria de pagos: Payment Card Industry Data Security Standard.
 
 ## Definición y contexto
+
 Si alguna vez almancenaste, procesaste o trasmitiste datos de tarjeta en tu compañía, seguramente escuchaste hablar de PCI. Desde Mercado Pago queremos ayudarte y simplificar la tarea de entender esta normativa y las distintas responsabilidades asociadas.
 
 Como Proveedor de Servicios debemos cumplir responsabilidades normativas y de seguridad frente a las marcas de tarjetas y adquirentes, pero aún así, la seguridad en todo el proceso de pago es obligación de ambas partes. Comercios y/o plataformas de e-commerce que se integren con procesadores de pago como Mercado Pago deben cumplir requerimientos mínimos de seguridad para mitigar riesgos de fraude y fuga de información asegurando los datos de los usuarios.
@@ -56,6 +57,7 @@ Para cada uno de los 12 requisitos de PCI, existen básicamente cuatro niveles d
  >El [SAQ (Self-Assessment Questionnaire)](https://www.pcisecuritystandards.org/pci_security/completing_self_assessment) es un formulario de autoevaluación PCI que deben completar aquellos comercios o proveedores de servicio que no son elegibles para completar un Reporte de Cumplimiento Nivel 1, y que tiene como finalidad validar el cumplimiento normativo a través de una serie de controles resumidos en preguntas "sí" o "no". 
 
 ## Cumplimiento
+
 Mercado Pago es responsable de asegurar la información de datos de tarjetahabiente una vez ingresan en su entorno, por lo que es importante que los comercios y/o plataformas de e-commerce cumplan con los controles de seguridad apropiados para transmitirlos de manera correcta. Como Proveedor de servicios, Mercado Pago puede validar el cumplimiento solicitando evidencia de la documentación PCI correspondiente de acuerdo al producto utilizado.
 
 Mercado Pago simplifica considerablemente la carga del cumplimiento de esta normativa para las organizaciones que adoptan Checkout Pro ya que utilizan un campo que se origina directamente en nuestros servidores en una zona segura para el ingreso de datos de tarjetas de parte del cliente. De esta manera la mayor parte de los requisitos de PCI DSS recaen sobre Mercado Pago y disminuyen considerablemente tu esfuerzo en controles de seguridad.
@@ -68,9 +70,9 @@ Aquí te resumimos qué tipo de SAQ debes completar para cada solución de integ
 
 **Solución** | **SAQ**
 ------ | ------
+Checkout Bricks | A
 Checkout Pro | A
-Web Tokenize Checkout | A-EP
-Checkout Transparente | D
+Checkout API | A
 
 > Vea el documento **SAQ Instructions and Guidelines** de la [biblioteca oficial de documentos de PCI](https://www.pcisecuritystandards.org/document_library) para detalles de la descripción de cada SAQ.
 
