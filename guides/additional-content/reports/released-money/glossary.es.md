@@ -22,7 +22,7 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 | NET_DEBIT_AMOUNT | Debitado al monto disponible.|
 | SELLER_AMOUNT | Monto recibido por compras por split. |
 | GROSS_AMOUNT | Monto de la operación bruto. |
-| METADATA | Datos extras como por ejemplo el ID de las devoluciones parciales o datos provistos por el vendedor en caso de tener una integración externa. |
+| METADATA | Datos extras como por ejemplo el ID de las devoluciones parciales o datos provistos por el vendedor en caso de tener una integración externa. ----[mlb]---- Cuando se muestra "Fee discount" se entiende como la reducción en el cargo por venta por la participación en una campaña comercial. ------------ |
 | MP_FEE_AMOUNT | Pago Comisión de Mercado Pago y/o Mercado Libre. ----[mla, mpe, mco, mlm, mlu, mlc]---- Incluye IVA. ------------ |
 | FINANCING_FEE_AMOUNT | Costo por ofrecer cuotas sin interés. |
 | SHIPPING_FEE_AMOUNT | Costo de envío. |

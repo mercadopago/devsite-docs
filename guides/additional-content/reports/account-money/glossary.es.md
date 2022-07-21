@@ -21,7 +21,7 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 | SETTLEMENT_DATE | Fecha en que se acreditó el dinero de la operación. |
 | REAL_AMOUNT | Monto neto de la operación, si es un *settlement*, se le descuentan los montos por contracargos, reclamos o devoluciones. |
 | COUPON_AMOUNT | Monto del cupón de descuento. **Solo se descuenta del monto bruto** (`TRANSACTION_AMOUNT`) **si está provisto por el vendedor**. |
-| METADATA | ----[mlu, mla, mlm, mco, mlc, mlb]---- Datos extras como por ejemplo el ID de las devoluciones parciales o datos provistos por el vendedor en caso de tener una integración externa.------------ ----[mpe]---- Datos extras, como por ejemplo, datos provistos por el vendedor en caso de tener una integración externa.------------ |
+| METADATA | ----[mlu, mla, mlm, mco, mlc, mlb]---- Datos extras como por ejemplo el ID de las devoluciones parciales o datos provistos por el vendedor en caso de tener una integración externa.------------ ----[mpe]---- Datos extras, como por ejemplo, datos provistos por el vendedor en caso de tener una integración externa.------------ ----[mlb]---- Cuando se muestra "Fee discount" se entiende como la reducción en el cargo por venta por la participación en una campaña comercial. ------------ |
 | MKP_FEE_AMOUNT | Comisión de Mercado Libre. Incluye IVA. |
 | FINANCING_FEE_AMOUNT | Costo por ofrecer cuotas sin interés. |
 | SHIPPING_FEE_AMOUNT | Costo de envío. |

@@ -55,16 +55,17 @@ function createPayment(){
 
 > PREV_STEP_CARD_PT
 >
-> Configurar quantidade máxima e mínima de parcelas 
+> Configurar meios de pagamento aceitos
 >
-> Caso deseje, saiba como configurar quantidade máxima e mínima de parcelas aceitas no Card Payment Brick.
+> Saiba como configurar pagamentos exclusivamente com crédito ou débito
 >
-> [Configurar quantidade máxima e mínima de parcelas](/developers/pt/docs/checkout-bricks/additional-customization/configure-installments)
+> [Configurar meios de pagamento aceitos](/developers/pt/docs/checkout-bricks/additional-customization/configure-payment-methods)
+
 
 > NEXT_STEP_CARD_PT
 >
-> Ocultar título e bandeiras 
+> Ocultar título e bandeiras
 >
-> Caso deseje, veja como ocultar a linha de título e as bandeiras aceitas no Card Payment Brick.
+> Veja como ocultar a linha de título e as bandeiras aceitas no Card Payment Brick
 >
 > [Ocultar título e bandeiras](/developers/pt/docs/checkout-bricks/additional-customization/hide-title-and-flags)
