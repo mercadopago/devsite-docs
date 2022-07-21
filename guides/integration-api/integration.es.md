@@ -88,7 +88,7 @@ Una vez que hayas vinculado tu dispositivo Point a tu cuenta de Mercado Pago, de
 Para integrar tu dispositivo Point con nuestra API es necesario activar el modo operativo punto de venta (PDV). Para lograrlo, ejecuta el siguiente comando:
 
 ``` bash
- curl --location --request PATCH 'https://api.mercadopago.com/point/integration-api/devices/{{device.id}}' \
+ curl --location --request PATCH 'https://api.mercadopago.com/point/integration-api/devices/:deviceId' \
 --header 'Authorization: Bearer ${ACCESS_TOKEN}' \
 --header 'Content-Type: application/json' \
 --data-raw '{
