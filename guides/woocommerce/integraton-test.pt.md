@@ -25,7 +25,7 @@ Para ativar o modo de teste para sua loja, siga estas etapas:
 ## Checkout API
 ------------
 1. Selecione a opção **Quero pagar com cartão de crédito**.
-1. Opte por pagar com um novo cartão de crédito e use os [cartões de teste](https://mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/woocommerce/additional-content/test-cards) para faça o pagamento. É importante não pagar com cartões para uso pessoal.
+1. Opte por pagar com um novo cartão de crédito e use os [cartões de teste](/developers/pt/docs/woocommerce/additional-content/test-cards) para faça o pagamento. É importante não pagar com cartões para uso pessoal.
 1. Adicione as informações do cartão de teste indicado (número do cartão, CVV e data de validade).
 1. Clique em **pedido com pagamento obrigatório**.
 1. Ao final da compra, você pode ver que a compra foi aprovada.

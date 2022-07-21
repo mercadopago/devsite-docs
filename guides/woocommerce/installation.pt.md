@@ -18,7 +18,7 @@ Para instalar o plugin do Mercado Pago com WooCommerce através do Wordpress, si
 
 ![Plugin de instalação automática](/images/woocommerce/es_automatic_install_02.gif)
 
-Inteligente! O plugin agora está ativo e você pode configurar sua integração
+Pronto! O plugin agora está ativo e você pode configurar sua integração
 
 ## Instale o plugin manualmente
 

@@ -15,9 +15,9 @@ Para salvar as alterações nas configurações, clique no botão **Salvar alter
 >
 > Débito ou crédito
 >
-> Configure pagamentos de débito ou crédito com a API Checkout
+>  Configure pagamentos com cartões de débito ou crédito no Checkout API.
 >
-> [Débito ou crédito com a API do Google Checkout](/developers/pt/docs/woocommerce/payments-configuration/credit-debit)
+> [Débito ou crédito com Checkout Transparente](/developers/pt/docs/woocommerce/payments-configuration/credit-debit)
 
 > NEXT_STEP_CARD_PT
 >
@@ -33,7 +33,7 @@ Para salvar as alterações nas configurações, clique no botão **Salvar alter
 >
 > Débito ou crédito
 >
-> Configure pagamentos de débito ou crédito com o Checkout transparente
+> Configure pagamentos com cartões de débito ou crédito no Checkout Transparente.
 >
 > [Débito ou crédito com checkout transparente](/developers/pt/docs/woocommerce/payments-configuration/credit-debit)
 

@@ -4,20 +4,20 @@ Para escolher os métodos de pagamento de oferecimento a través de Mercado Pago
 
 Puedes elegir configurar estos métodos de pagamento:
 
-* [Mercado Pago con Checkout Pro](/developers/es/docs/woocommerce/payments-configuration/checkoutpro)
+* [Mercado Pago con Checkout Pro](/developers/pt/docs/woocommerce/payments-configuration/checkoutpro)
 
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-* [Débito o crédito com Checkout API](/developers/es/docs/woocommerce/payments-configuration/credit-debit)
+* [Débito o crédito com Checkout API](/developers/pt/docs/woocommerce/payments-configuration/credit-debit)
 ------------
 
 ----[mlb]----
-* [Débito o crédito com Checkout Transparente](/developers/es/docs/woocommerce/payments-configuration/credit-debit)
+* [Débito ou crédito com Checkout Transparente](/developers/pt/docs/woocommerce/payments-configuration/credit-debit)
 ------------
 
-* [Métodos de pagamento offline](/developers/es/docs/woocommerce/payments-configuration/offline-payments)
+* [Métodos de pagamento offline](/developers/pt/docs/woocommerce/payments-configuration/offline-payments)
 
 ----[mlb]----
-* [Pix](/developers/es/docs/woocommerce/payments-configuration/pix)
+* [Pix](/developers/pt/docs/woocommerce/payments-configuration/pix)
 ------------
 
 > PREV_STEP_CARD_PT
@@ -32,6 +32,6 @@ Puedes elegir configurar estos métodos de pagamento:
 >
 > Teste a integração
 >
-> Realiza testes para verificar que sua integração está correta.
+> Teste sua integração para garantir que tudo está funcionando corretamente.
 >
 > [Testar a integração](/developers/pt/docs/woocommerce/integration-test)
