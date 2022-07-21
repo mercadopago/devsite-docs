@@ -6,6 +6,7 @@ sites_supported:
 ---
 
 # Face to Face Sales with Point
+
 You can boost your sales in the physical world by charging through the Mercado Pago Point device.
 
 The Mercado Pago mobile application next to the Point allows you to charge securely with credit cards and debit cards. Its main functionalities are:
@@ -18,14 +19,12 @@ Your sellers using the Mercado Pago mobile application pass the customer's card 
 
 To be able to charge, it is necessary that you acquire the Mercado Pago Point device:
 
-
 ----[mla]----
 > [Buy Point](https://www.mercadopago.com.ar/lector-tarjetas-credito-point?ref=devsite)
 ------------
 ----[mlm]----
 > [Buy Point](https://www.mercadopago.com.mx/lector-tarjetas-credito-point?ref=devsite)
 ------------  
-
 
 Also, you must download the App from the store of your mobile phone:
 

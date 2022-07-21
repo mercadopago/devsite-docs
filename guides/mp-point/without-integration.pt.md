@@ -17,7 +17,6 @@ Vamos te guiar para que você possa cobrar:
 - Informe o CVV do cartão, o CPF do comprador e assine.
 - Pronto! A cobrança está feita, agora você pode enviar o comprovante da operação por e-mail ou sms.
 
-
 ### Catálogo de Produtos no Point
 
 Uma alternativa para que você possa receber pagamentos presenciais sem a necessidade de programação, é que você carregue na seção de Cobrança com Point seu catálogo de produtos.
@@ -25,7 +24,6 @@ Uma alternativa para que você possa receber pagamentos presenciais sem a necess
 Desta forma quando for realizar a cobrança, o vendedor só deverá selecionar os produtos e a quantidade deles e automaticamente será calculado o valor total da venda.
 
 Você pode inserir uma imagem para cada produto, o preço e o nome do mesmo.
-
 
 ## Intere-se sobre seus pagamentos
 

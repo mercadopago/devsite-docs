@@ -82,7 +82,7 @@ You can create a payment intent and assign it to your Point device in the follow
 
 ----[mla]----
 ```curl
-curl --location --request POST 'https://api.mercadopago.com/point/integration-api/devices/:deviceId/payment-intents' \
+curl --location --request POST 'https://api.mercadopago.com/point/integration-api/devices/{{device.id}}/payment-intents' \
 --header 'Authorization: Bearer ${ACCESS_TOKEN}' \
 --data-raw '{
    "amount": 1500,

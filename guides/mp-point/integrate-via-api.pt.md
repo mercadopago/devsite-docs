@@ -11,7 +11,6 @@ A outra forma de integração com o aplicativo Mercado Pago para cobrar com noss
 
 Para fazer a integração, é necessário habilitar as opções de integração no aplicativo Mercado Pago. Execute o seguinte curl para fazer isso:
 
-
 ```curl
 --location --request POST ‘https://api.mercadopago.com/point/services/user/status/integrators?access_token= <ENV_ACCESTOKEN>’ \
 --header ‘Content-Type: application / json’ \
@@ -126,7 +125,6 @@ curl -X DELETE \
 
 **Response status code: 204 OK**
 
-
 ## Obter todos os dispositivos de uma conta
 
 O GET nesta API possibilita obter todos os dispositivos configurados e sincronizados para sua conta do Mercado Pago
@@ -156,7 +154,6 @@ Se o status do dispositivo é `FREE` quer dizer que o dispositivo pode receber u
 
 **Response status code: 200 OK**
 
-
 ## Eliminar um dispositivo de uma conta
 
 O DELETE nesta API possibilita apagar algum dos dispositivos configurados e sincronizados para sua conta de Mercado Pago.
@@ -178,7 +175,6 @@ A resposta terá o seguinte formato.
 ```
 
 **Response status code: 200 OK**
-
 
 > PREV_STEP_CARD_PT
 >

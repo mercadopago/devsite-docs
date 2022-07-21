@@ -6,6 +6,7 @@ sites_supported:
 ---
 
 # Cobranças presenciais com Point
+
 Você pode aumentar suas vendas no mundo físico cobrando com o dispositivo Mercado Pago Point.
 
 O Aplicativo móvel do Mercado Pago junto com o Point permite cobrar de maneira segura cartões de crédito e cartões de débito. Suas principais funcionalidades são:

@@ -5,7 +5,6 @@ sites_supported:
   - mlm
 ---
 
-
 # Cómo integrar Mercado Pago Point
 
 Para poder cobrar de manera integrada con nuestro dispositivo Point es necesario descargar la aplicación de Mercado Pago disponible en los marketplaces de iOS y Android.
@@ -52,7 +51,6 @@ Luego es necesario configurar desde la aplicación de Mercado Pago el `device_na
 El siguiente paso, consiste en generar una orden de pago y enviarsela vía API al device desde donde queres cobrarla. El usuario verá que en la pantalla de ese dispositivo se levanta la aplicación de Mercado Pago lista para pasar la tarjeta y avanzar con el flujo de pago utilizando el Point.
 
 Una vez que el pago es procesado, el usario verá el resultado del pago en la aplicación de Mercado Pago. Finalmente, la orden generada se cerrará y se creará el pago correspondiente.
-
 
 ### Creación de la orden de pago
 
@@ -154,7 +152,6 @@ curl -X DELETE \
 
 **Response status code: 204 OK**
 
-
 ### Obtener todos los devices de una cuenta
 
 El GET en esta API es la que posibilita obtener todos los devices configurados y sincronizados para tu cuenta de Mercado Pago
@@ -189,7 +186,6 @@ Si el status del device es `FREE` quiere decir que el dispositivo puede recibir 
 
 El DELETE en esta API es la que posibilita borrar alguno de los devices configurados y sincronizados para tu cuenta de Mercado Pago
 
-
 ```curl
 curl -X DELETE \
 -H "Content-Type: application/json" \
@@ -207,19 +203,17 @@ La respuesta tendra el siguiente formato.
 
 **Response status code: 200 OK**
 
-
 ## Notificaciones de Pago
 
 Es necesario que envíes tu `notification_url`, donde recibirás aviso de todos los nuevos pagos y actualizaciones de estados que se generen.
 
 En el artículo de [notificaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/webhooks/webhooks) podes obtener más información.
 
-
 ## Pagos de Point
+
 Los pagos de Point se pueden buscar en la API de Payments. Podes encontrar más información en el artículo de [API's](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/get)
 
 A su vez, existe una API exclusiva de Point que cuenta con alguna información adicional del pago:
-
 
 ```curl
 curl -X GET \

@@ -18,7 +18,6 @@ We will guide you so that you can charge:
 - Enter the CVV of the card, the identification of the payer, and have it signed.
 - Done! Already charged, now you can send the proof of the operation by email or sms.
 
-
 ### Product Catalog in Point
 
 An alternative so that you can receive face-to-face payments without the need of programming, is that you load your catalog of products in the section *Charge with Point*.
@@ -26,7 +25,6 @@ An alternative so that you can receive face-to-face payments without the need of
 In this way, when it is time to charge, the seller must only select the products and amount, and automatically calculate the total sale.
 
 For each product you can insert an image, the price and name of it.
-
 
 ## Find out about your payments
 

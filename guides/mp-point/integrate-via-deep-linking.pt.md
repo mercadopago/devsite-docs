@@ -2,14 +2,13 @@
 
 Uma das formas de integrar-se com Mercado Pago Point é mediante um _deep linking_. Quando se chama o _link_, o mesmo será aceito como um _Point-handled address_ por parte da aplicação de Mercado Pago.
 
-Na chamada a este _link_ se pode evitar diferentes parâmetros que seriam levantados pela aplicação de Mercado Pago e impactados no pagamento. Uma vez que se faça a chamada a este _link_, o usuário será redirecionado a tela da aplicação de Mercado Pago para informar o cartão do cliente e assim realizar a cobrança.
+Na chamada a este _link_ se pode enviar diferentes parâmetros que seriam levantados pela aplicação de Mercado Pago e impactados no pagamento. Uma vez que se faça a chamada a este _link_, o usuário será redirecionado a tela da aplicação de Mercado Pago para informar o cartão do cliente e assim realizar a cobrança.
 
 Uma vez que o pagamento é processado, o usuário será redirecionado a `success_url` ou `fail_url`, dependendo do estado do pagamento. Este deverá ser interceptado para retornar o usuário ao fluxo da aplicação.
 
 ## Diagrama do Fluxo
 
 ![Deep linking flow diagram Mercado Pago Point](/images/point_diagram.png)
-
 
 ## Criação do Deep Linking
 
@@ -31,7 +30,6 @@ Os parâmetros que se podem incluir são:
 >
 > * Os campos marcados com (\*) são campos obrigatórios.
 
-
 No artigo do [GitHub](https://github.com/mercadopago/point-android_integration#deep-linking) é possível obter mais informação e o exemplo correspondente.
 
 > PREV_STEP_CARD_PT
@@ -41,7 +39,6 @@ No artigo do [GitHub](https://github.com/mercadopago/point-android_integration#d
 > Saiba como integrar Mercado Pago Point ao seu Ponto de Venda.
 >
 > [Integrar com PDV](/developers/pt/docs/mp-point/integration-configuration/integrate-with-pdv/introduction)
-
 
 > NEXT_STEP_CARD_PT
 >

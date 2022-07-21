@@ -17,7 +17,6 @@ Te guiaremos para que puedas cobrar:
 - Ingresa el CVV de la tarjeta, el DNI del pagador y hazlo firmar.
 - ¡Listo! Ya cobraste, ahora puedes enviarle el comprobante de la operación por email o sms.
 
-
 ### Catálogo de Productos en Point
 
 Una alternativa para que puedas recibir pagos presenciales sin necesidad de programación, es que cargues en la sección Cobrar con Point tu catálogo de productos.
@@ -25,7 +24,6 @@ Una alternativa para que puedas recibir pagos presenciales sin necesidad de prog
 De ésta manera cuando sea el momento de cobrar, el vendedor sólo deberá seleccionar los productos y la cantidad de los mismos y automáticamente se calculará el total de la venta.
 
 Para cada producto puedes insertar una imagen, el precio y nombre del mismo.
-
 
 ## Entérate de tus pagos
 

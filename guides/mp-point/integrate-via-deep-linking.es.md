@@ -10,7 +10,6 @@ Una vez que el pago es procesado, el usuario será redireccionado a la `success_
 
 ![Diagrama de flujo de Deep linking Mercado Pago Point](/images/point_diagram.png)
 
-
 ## Creación del Deep Linking
 
 La URL a ser interceptada es la siguiente: `https://www.mercadopago.com/point/integrations`
@@ -41,7 +40,6 @@ En el artículo de [GitHub](https://github.com/mercadopago/point-android_integra
 > Conoce cómo integrar Mercado Pago Point en tu Punto de Venta.
 >
 > [Integrar con PDV](/developers/es/docs/mp-point/integration-configuration/integrate-with-pdv/introduction)
-
 
 > NEXT_STEP_CARD_ES
 >

@@ -81,7 +81,7 @@ Puedes crear una intención de pago y asignarla a tu dispositivo Point de esta m
 
 ----[mla]----
 ```curl
-curl --location --request POST 'https://api.mercadopago.com/point/integration-api/devices/:deviceId/payment-intents' \
+curl --location --request POST 'https://api.mercadopago.com/point/integration-api/devices/{{device.id}}/payment-intents' \
 --header 'Authorization: Bearer ${ACCESS_TOKEN}' \
 --data-raw '{
     "amount": 1500,

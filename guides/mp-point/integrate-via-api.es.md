@@ -179,3 +179,10 @@ La respuesta tendra el siguiente formato.
 
 **Response status code: 200 OK**
 
+> PREV_STEP_CARD_ES
+>
+> Integración vía Deep Linking
+>
+> Aprende a integrar Mercado Pago Point vía Deep Linking.
+>
+> [Integración vía Deep Linking](/developers/es/docs/mp-point/integration-configuration/integrate-mobile-devices/integrate-via-deep-linking)
