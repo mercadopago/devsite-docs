@@ -73,7 +73,7 @@ Here we summarize what type of SAQ you must complete for each solution integrati
 ------ | ------
 Checkout Bricks | A
 Checkout Pro | A
-Checkout Transparente | A
+Checkout API | A
 
 > Remember that Mercado Pago may require this documentation due to its role as a PSP.
 

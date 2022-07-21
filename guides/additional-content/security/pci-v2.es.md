@@ -74,7 +74,7 @@ Aquí te resumimos qué tipo de SAQ debes completar para cada solución de integ
 ------ | ------
 Checkout Bricks | A
 Checkout Pro | A
-Checkout Transparente | A
+Checkout API | A
 
 > Recuerda que Mercado Pago puede exigir esta documentación debido a su rol como PSP.
 
