@@ -140,7 +140,7 @@ amount                    | Total amount of the payment intent. |
 description               | Description of payment intent. |
 payment.type              | Payment method type. |
 payment.installments      | Number of payment installments. |
-payment.installments_cost | Cost for payment installments. |
+payment.installments_cost | Cost for payment installments. This field determines who takes the cost and the accepted values are `seller` and `buyer` |
 external_reference        | Field exclusively used by the integrator to include references to their system. |
 print_on_terminal         | Field that determines if the device prints the payment receipt. |
 
@@ -154,7 +154,8 @@ In response, you will receive something similar to this:
   "description":"this is an example",
   "payment":{
      "type":"credit_card",
-     "installments":1
+     "installments":1,
+     "installments_cost":"seller"
   },
   "additional_info":{
      "external_reference":"4561ads-das4das4-das4754-das456",

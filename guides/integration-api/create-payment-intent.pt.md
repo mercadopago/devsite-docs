@@ -139,7 +139,7 @@ amount                    | Valor total da intenção de pagamento. |
 description               | Descrição da intenção de pagamento. |
 payment.type              | Tipo de método de pagamento. |
 payment.installments      | Valor das parcelas de pagamento. |
-payment.installments_cost | Custo das parcelas de pagamento. |
+payment.installments_cost | Custo das parcelas de pagamento. Este campo determina quem assume o custo e os valores aceitos são `seller` e `buyer`|
 external_reference        | Campo de uso exclusivo do integrador para incluir referências de seu sistema. |
 print_on_terminal         | Campo que determina se o dispositivo imprime o comprovante de pagamento. |
 
@@ -153,7 +153,8 @@ Em resposta, você receberá algo semelhante a isso:
   "description":"this is an example",
   "payment":{
      "type":"credit_card",
-     "installments":1
+     "installments":1,
+     "installments_cost":"seller"
   },
   "additional_info":{
      "external_reference":"4561ads-das4das4-das4754-das456",
