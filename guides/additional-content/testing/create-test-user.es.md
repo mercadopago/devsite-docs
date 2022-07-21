@@ -9,4 +9,4 @@ A continuación enumeramos los dos tipos de usuarios necesarios para realizar la
 * **Vendedor:** esta es la cuenta que utiliza para configurar la aplicación y las credenciales de facturación.
 * **Comprador:** esta es la cuenta que utiliza para probar el proceso de compra.
 
-Para crear un usuario de prueba, envía un POST con su **credencial de producción** _Access token_ al [/users/test_user](/developers/es/reference/test_user/_users_test_user/post) y ejecuta la solicitud.
+Para crear un usuario de prueba, envía un POST con su **credencial de producción** _Access token_ al [/users/test](/developers/es/reference/test_user/_users_test/post) y ejecuta la solicitud.

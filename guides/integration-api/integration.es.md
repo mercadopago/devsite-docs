@@ -58,38 +58,13 @@ Una vez que tengas una aplicación creada, podrás acceder a [tus credenciales](
 
 Puedes probar tus integraciones en un ambiente controlado con usuarios de prueba. Puedes crearlos usando el siguiente comando:
 
-----[mla]----
-
 ```curl
 curl -X POST \
 -H "Content-Type: application/json" \
--H 'Authorization: Bearer ${PROD_ACCESS_TOKEN}' \
-"https://api.mercadopago.com/users/test_user" \
--d '{"site_id": "MLA"}'
+-H 'Authorization: Bearer ${TEST_ACCESS_TOKEN}' \
+"https://api.mercadopago.com/users/test" \
+-d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]","description" : "a description"}'
 ```
-------------
-
-----[mlb]----
-
-```curl
-curl -X POST \
--H "Content-Type: application/json" \
--H 'Authorization: Bearer ${PROD_ACCESS_TOKEN}' \
-"https://api.mercadopago.com/users/test_user" \
--d '{"site_id": "MLB"}'
-```
-------------
-
-----[mlm]----
-
-```curl
-curl -X POST \
--H "Content-Type: application/json" \
--H 'Authorization: Bearer ${PROD_ACCESS_TOKEN}' \
-"https://api.mercadopago.com/users/test_user" \
--d '{"site_id": "MLM"}'
-```
-------------
 
 Puedes generar hasta 10 cuentas de usuarios de prueba en simultáneo. Ten en cuenta que los usuarios de prueba caducan luego de 60 días sin actividad en Mercado Pago. 
 

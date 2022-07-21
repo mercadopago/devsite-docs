@@ -1581,7 +1581,11 @@ paths:
                         net_received_amount:
                           type: number
                           example: 0
-                          description:  Net received amount
+                          description: Net received amount
+                          x-description-i18n:
+                            eng: Net received amount
+                            spa: Monto neto recibido
+                            por: Valor líquido recebido
                         total_paid_amount:
                           type: number
                           example: 75.76
@@ -1698,6 +1702,10 @@ paths:
                     type: string
                     example: "https://webhook.site/17a3a5ce-28d4-4b4f-ba3f-a7595c17c6d8"
                     description:  Notification URL
+                    x-description-i18n:
+                      eng: Notification URL
+                      spa: URL de notificación
+                      por: URL de notificação
                   refunds:
                     type: array
                     description: List of refunds

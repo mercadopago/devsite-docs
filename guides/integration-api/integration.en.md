@@ -59,38 +59,14 @@ Once you have created an application, you will be able to access [your credentia
 
 You can test your integrations in a controlled environment with test users. You can create them using the following command:
 
-----[mla]----
 
 ```curl
 curl -X POST \
 -H "Content-Type: application/json" \
--H 'Authorization: Bearer ${PROD_ACCESS_TOKEN}' \
-"https://api.mercadopago.com/users/test_user" \
--d '{"site_id": "MLA"}'
+-H 'Authorization: Bearer ${TEST_ACCESS_TOKEN}' \
+"https://api.mercadopago.com/users/test" \
+-d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]","description" : "a description"}'
 ```
-------------
-
-----[mlb]----
-
-```curl
-curl -X POST \
--H "Content-Type: application/json" \
--H 'Authorization: Bearer ${PROD_ACCESS_TOKEN}' \
-"https://api.mercadopago.com/users/test_user" \
--d '{"site_id": "MLB"}'
-```
-------------
-
-----[mlm]----
-
-```curl
-curl -X POST \
--H "Content-Type: application/json" \
--H 'Authorization: Bearer ${PROD_ACCESS_TOKEN}' \
-"https://api.mercadopago.com/users/test_user" \
--d '{"site_id": "MLM"}'
-```
-------------
 
 You can generate up to 10 test user accounts simultaneously. Keep in mind that test users expire after 60 days without activity in Mercado Pago.
 
