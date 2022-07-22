@@ -15,15 +15,13 @@ Essa forma de pagamento adicionará o Checkout API, a forma de pagamento que per
 
 Para salvar as alterações nas configurações, clique no botão **Salvar alterações**.
 
-----[mla, mlm, mpe, mco, mlu, mlc]----
-
 > PREV_STEP_CARD_PT
 >
-> Débito ou crédito
+> Checkout Pro
 >
-> Configure pagamentos com cartões de débito ou crédito no Checkout API.
+> Configure pagamentos com o Checkout Pro do Mercado Pago.
 >
-> [Débito ou crédito com a API do Google Checkout](/developers/pt/docs/woocommerce/payments-configuration/credit-debit)
+> [Checkout Pro](/developers/pt/docs/woocommerce/payments-configuration/checkoutpro)
 
 > NEXT_STEP_CARD_PT
 >
@@ -32,23 +30,3 @@ Para salvar as alterações nas configurações, clique no botão **Salvar alter
 > Configure pagamentos com métodos de pagamento off-line.
 >
 > [Métodos de pagamento offline](/developers/pt/docs/woocommerce/payments-configuration/offline-payments)
-
-------------
-
-----[mlb]----
-> PREV_STEP_CARD_PT
->
-> Débito ou crédito
->
-> Configure pagamentos com cartões de débito ou crédito no Checkout Transparente.
->
-> [Débito ou crédito com checkout transparente](/developers/pt/docs/woocommerce/payments-configuration/credit-debit)
-
-> NEXT_STEP_CARD_PT
->
-> Métodos de pagamento off-line
->
-> Configure pagamentos com métodos de pagamento  off-line.
->
-> [Métodos de pagamento offline](/developers/pt/docs/woocommerce/payments-configuration/offline-payments)
-------------

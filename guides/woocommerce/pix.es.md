@@ -1,12 +1,18 @@
 ## Pix
 
 ----[mlb]----
-Este medio de pago adicionará Checkout Transparente y te permitirá ofrecer pagos en Pix a través de Mercado Pago.
+Con Checkout Transparente, ofrece pagos con Pix directamente en tu tienda. Pix es un medio de pago instantáneo disponible las 24 horas del día.
 ------------
 
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-Este medio de pago adicionará Checkout API y te permitirá ofrecer pagos en Pix a través de Mercado Pago.
+Con Checkout API, ofrece pagos con Pix directamente en tu tienda. Pix es un medio de pago instantáneo disponible las 24 horas del día.
 ------------
+
+> WARNING
+>
+> Importante
+>
+> Para ofrecer pagos con Pix es necesario asegurarse de que las claves Pix han sido creadas. Si aún no las creaste, [haz clic aquí](https://www.youtube.com/watch?v=60tApKYVnkA) y consulta el paso a paso.
 
 1. Para activar el checkout, deberás hacer clic en el botón slider.
 2. En el cambio **Título en el checkout de la tienda** puedes elegir el nombre con el que se mostrará este medio de pago en la tienda. Por ejemplo, puedes nombrarlo **Pix**.

@@ -20,14 +20,6 @@ With Checkout Pro, the buyer will be directed from the store to the Mercado Pago
 
 To save your changes to your settings, click the **Save Changes** button.
 
-> PREV_STEP_CARD_EN
->
-> Configure the means of payment
->
-> Learn how to configure the different payment methods in the store.
->
-> [Configure payment methods](/developers/en/docs/woocommerce/payments-methods-configuration)
-
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 > PREV_STEP_CARD_EN
 >
@@ -39,11 +31,11 @@ To save your changes to your settings, click the **Save Changes** button.
 
 > NEXT_STEP_CARD_EN
 >
-> Debit or credit
+> Credit or debit
 >
 > Set up debit or credit payments with the Checkout API
 >
-> [Debit or credit with Checkout API](/developers/en/docs/woocommerce/payments-configuration/credit-debit)
+> [Credit or debit with Checkout API](/developers/en/docs/woocommerce/payments-configuration/credit-debit)
 ------------
 
 ----[mlb]----
@@ -57,9 +49,9 @@ To save your changes to your settings, click the **Save Changes** button.
 
 > NEXT_STEP_CARD_EN
 >
-> Debit or credit
+> Credit or debit
 >
 > Set up debit or credit payments with Transparent Checkout
 >
-> [Debit or Credit with Transparent Checkout](/developers/en/docs/woocommerce/payments-configuration/credit-debit)
+> [Credit or debit with Transparent Checkout](/developers/en/docs/woocommerce/payments-configuration/credit-debit)
 ------------

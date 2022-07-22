@@ -19,14 +19,6 @@ Com o Checkout Pro, o comprador será direcionado da loja para o site do Mercado
 5. No campo **Parcelas máximas** você pode escolher quantas parcelas deseja oferecer aos clientes através do Mercado Pago. Você pode escolher entre 1 e 24 parcelas.
 6. Para salvar as alterações nas configurações, clique no botão **Salvar alterações**.
 
-> PREV_STEP_CARD_PT
->
-> Configurar os meios de pagamento
->
-> Aprenda a configurar os diferentes métodos de pagamento na loja.
->
-> [Configurar métodos de pagamento](/developers/pt/docs/woocommerce/payments-methods-configuration)
-
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 > PREV_STEP_CARD_PT
 >
@@ -38,11 +30,11 @@ Com o Checkout Pro, o comprador será direcionado da loja para o site do Mercado
 
 > NEXT_STEP_CARD_PT
 >
-> Débito ou crédito
+> Crédito ou débito
 >
 > Configure pagamentos com cartões de débito ou crédito no Checkout API.
 >
-> [Débito ou crédito com o Checkout API](/developers/pt/docs/woocommerce/payments-configuration/credit-debit)
+> [Crédito ou débito com o Checkout API](/developers/pt/docs/woocommerce/payments-configuration/credit-debit)
 ------------
 
 ----[mlb]----
@@ -56,9 +48,9 @@ Com o Checkout Pro, o comprador será direcionado da loja para o site do Mercado
 
 > NEXT_STEP_CARD_PT
 >
-> Débito ou crédito
+> Crédito ou débito
 >
 > Configure pagamentos com cartões de débito ou crédito no Checkout Transparente.
 >
-> [Débito ou crédito com checkout transparente](/developers/pt/docs/woocommerce/payments-configuration/credit-debit)
+> [Crédito ou débito com Checkout Transparente](/developers/pt/docs/woocommerce/payments-configuration/credit-debit)
 ------------

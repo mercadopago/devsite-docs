@@ -1,12 +1,18 @@
 ## Pix
 
 ----[mlb]----
-This payment method will add Checkout Transparent and will allow you to offer payments on Pix through Mercado Pago.
+With Transparent Checkout, offer Pix payments directly in your store. Pix is an instant payment method available 24 hours a day.
 ------------
 
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-This payment method will add Checkout API and will allow you to offer payments on Pix through Mercado Pago.
+With Checkout API, offer Pix payments directly in your store. Pix is an instant payment method available 24 hours a day.
 ------------
+
+> WARNING
+>
+> Important
+>
+> To offer payments with Pix, you must ensure that the Pix keys have been created. If you haven't created it yet, [click here](https://www.youtube.com/watch?v=60tApKYVnkA) and check the necessary steps.
 
 1. To activate the checkout, you will have to click on the slider button.
 2. In exchange **Title at the store checkout** you can choose the name with the name that this payment method will be shown at the store. For example, you can name it **Pix**.

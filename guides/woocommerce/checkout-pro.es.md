@@ -20,14 +20,6 @@ Con Checkout Pro, el comprador será dirigido desde la tienda al sitio web de Me
 
 Para guardar los cambios en la configuración, haz clic en el botón **Guardar cambios**.
 
-> PREV_STEP_CARD_ES
->
-> Configura los medios de pago
->
-> Conoce cómo configurar los distintos medios de pago en la tienda.
->
-> [Configura los medios de pago](/developers/es/docs/woocommerce/payments-methods-configuration)
-
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 > PREV_STEP_CARD_ES
 >
@@ -39,11 +31,11 @@ Para guardar los cambios en la configuración, haz clic en el botón **Guardar c
 
 > NEXT_STEP_CARD_ES
 >
-> Débito o crédito
+> Crédito o débito
 >
 > Configura pagos con débito o crédito con Checkout API
 >
-> [Débito o crédito con Checkout API](/developers/es/docs/woocommerce/payments-configuration/credit-debit)
+> [Crédito o débito con Checkout API](/developers/es/docs/woocommerce/payments-configuration/credit-debit)
 ------------
 
 ----[mlb]----
@@ -57,9 +49,9 @@ Para guardar los cambios en la configuración, haz clic en el botón **Guardar c
 
 > NEXT_STEP_CARD_ES
 >
-> Débito o crédito
+> Crédito o débito
 >
 > Configura pagos con débito o crédito con Checkout Transparente
 >
-> [Débito o crédito con Checkout Transparente](/developers/es/docs/woocommerce/payments-configuration/credit-debit)
+> [Crédito o débito con Checkout Transparente](/developers/es/docs/woocommerce/payments-configuration/credit-debit)
 ------------
