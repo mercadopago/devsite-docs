@@ -1,13 +1,5 @@
 # How to install
 
-The Mercado Pago with WooCommerce plugin can be installed in two ways:
-* **Through Wordpress**: In this model, the installation is done automatically through the Wordpress panel.
-* **Manually**: in this model it is necessary to download the plugin from our repository and install it manually in the Wordpress panel.
-
-Both ways of installation will give you the same result. Choose the option you prefer.
-
-## Install the plugin through Wordpress
-
 To install the Mercado Pago plugin with WooCommerce through Wordpress, follow these steps:
 
 1. Go to your [Wordpress](https://wordpress.com/) account.
