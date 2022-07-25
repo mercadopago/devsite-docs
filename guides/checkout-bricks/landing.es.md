@@ -20,7 +20,7 @@ bullet_section_with_media:
  - message: Conoce todos los módulos de Checkout Bricks y su disponibilidad.
  - benefit_title: Card Payment Brick - Nuevo
  - benefit_message: Ofrece pagos con tarjeta de crédito y débito con la posibilidad de guardar los datos de la tarjeta para futuras compras.
- - benefit_title: Payment Brick - Muy pronto
+ - benefit_title: Payment Brick - Nuevo
  - benefit_message: Ofrece diferentes medios de pago entre los que podrán elegir tus clientes. 
  - benefit_title: Wallet Brick - Muy pronto
  - benefit_message: Vincula billeteras digitales y permite pagos logueados.
