@@ -30,6 +30,16 @@ paths:
           schema:
             type: number
             example: 2451675580092619
+        - name: x-platform-id
+          in: header
+          description: It is a field that allows you to analyze different scenarios by partner
+          x-description-i18n:
+            eng: It is a field that allows you to analyze different scenarios by partner
+            spa: Es un campo que permite analizar distintos escenarios por socio
+            por: É um campo que permite analisar diferentes cenários por parceiro
+          schema:
+            type: string
+            example: YOUR_ACCESS_TOKEN
       requestBody:
         description: Here are the fields needed to complete a request for create an Agreement
         x-description-i18n:
@@ -206,6 +216,16 @@ paths:
           schema:
             type: number
             example: 832564722
+        - name: x-platform-id
+          in: header
+          description: It is a field that allows you to analyze different scenarios by partner
+          x-description-i18n:
+            eng: It is a field that allows you to analyze different scenarios by partner
+            spa: Es un campo que permite analizar distintos escenarios por socio
+            por: É um campo que permite analisar diferentes cenários por parceiro
+          schema:
+            type: string
+            example: YOUR_ACCESS_TOKEN
       requestBody:
         content:
           application/json:
@@ -332,6 +352,16 @@ paths:
           schema:
             type: number
             example: 1451895580758649
+        - name: x-platform-id
+          in: header
+          description: It is a field that allows you to analyze different scenarios by partner
+          x-description-i18n:
+            eng: It is a field that allows you to analyze different scenarios by partner
+            spa: Es un campo que permite analizar distintos escenarios por socio
+            por: É um campo que permite analisar diferentes cenários por parceiro
+          schema:
+            type: string
+            example: YOUR_ACCESS_TOKEN
       responses: 
         '200':
           description: Success
