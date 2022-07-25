@@ -47,7 +47,7 @@ bullet_section_with_media:
 
 >>>> Meios de pagamento aceitos <<<<
 ---
-available_payments: credit, mercadopago, ticket, pix, boleto
+available_payments: credit, mercadopago, ticket, pix
 
 ------------
 

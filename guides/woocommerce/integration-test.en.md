@@ -44,4 +44,4 @@ To activate test mode for your store, follow these steps:
 >
 > Activate the store and go to production.
 >
-> [Go to production](/developers/en/docs/woocommerce/go-to-production)
+> [Go to production](/developers/en/docs/woocommerce/goto-production)

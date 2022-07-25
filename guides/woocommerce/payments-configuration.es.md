@@ -26,12 +26,12 @@ Puedes elegir configurar estos métodos de pago:
 >
 > Aprende a configurar el plugin de Mercado Pago con WooCommerce.
 >
-> [Configuración del plugin](/developers/es/docs/woocommerce/plugin-configuration)
+> [Configuración del plugin](/developers/es/docs/woocommerce/integration-configuration/plugin-configuration)
 
 > NEXT_STEP_CARD_ES
 >
-> Testea la integración
+> Configura Checkout Pro
 >
-> Realiza testeos para comprobar que tu integración esté correcta.
+> Integra Checkout Pro como medio de pago en la tienda.
 >
-> [Testear la integración](/developers/es/docs/woocommerce/integration-test)
+> [Configura Checkout Pro](/developers/es/docs/woocommerce/payments-configuration/checkoutpro)

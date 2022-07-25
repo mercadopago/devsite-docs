@@ -44,4 +44,4 @@ Para activar el modo de pruebas de tu tienda, sigue estos pasos:
 >
 > Activa la tienda y sal a producción.
 >
-> [Salir a producción](/developers/es/docs/woocommerce/go-to-production)
+> [Salir a producción](/developers/es/docs/woocommerce/goto-production)

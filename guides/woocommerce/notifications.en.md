@@ -16,3 +16,19 @@ To receive IPN notifications, follow the steps below:
 6. Fill in the **URL for IPN** fields with the URL of the production website.
 7. Complete the **integrator_id** field with your Mercado Pago **&lt;dev&gt;program** member number. If you are not yet a member, [click here](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/developer-program) for more information.
 8. Click **Save and Continue**.
+
+> PREV_STEP_CARD_EN
+>
+> Integration settings
+>
+> Learn how to configure the Mercado Pago plugin with WooCommerce.
+>
+> [Plugin configuration](/developers/en/docs/woocommerce/integration-configuration/plugin-configuration)
+
+> NEXT_STEP_CARD_EN
+>
+> Configure the payment methods
+>
+> Learn how to configure the different payment methods in the store.
+>
+> [Configure the payment methods](/developers/es/docs/woocommerce/payments-configuration)

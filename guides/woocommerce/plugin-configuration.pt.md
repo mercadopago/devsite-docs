@@ -38,8 +38,8 @@ Em **Configurações avançadas**, configure as opções relacionadas a salvar i
 
 > NEXT_STEP_CARD_PT
 >
-> Configurar os métodos de pagamento
+> Configurar notificações de pagamento
 >
-> Aprenda a configurar os diferentes métodos de pagamento na loja.
+> Habilite notificações IPN em sua integração.
 >
-> [Configurar métodos de pagamento](/developers/pt/docs/woocommerce/payments-methods-configuration)
+> [Configurar notificações de pagamento](/developers/pt/docs/woocommerce/integration-configuration/notifications)

@@ -21,11 +21,11 @@ Para guardar los cambios en la configuración, haz clic en el botón **Guardar c
 
 > NEXT_STEP_CARD_ES
 >
-> Testear la integración
+> Prueba la integración
 >
 > Haz un test para comprobar que tu integración esté completa.
 >
-> [Testear la integración](/developers/es/docs/woocommerce/integration-test)
+> [Prueba la integración](/developers/es/docs/woocommerce/integration-test)
 ------------
 
 ----[mlb]----

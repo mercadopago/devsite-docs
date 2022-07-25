@@ -22,8 +22,8 @@ Pronto! O plugin agora está ativo e você pode configurar sua integração
 
 > NEXT_STEP_CARD_PT
 >
-> Configurações do plug-in
+> Configurações da integração
 >
 > Aprenda a configurar o plugin do Mercado Pago com WooCommerce.
 >
-> [Configuração do plug-in](/developers/pt/docs/woocommerce/plugin-configuration)
+> [Configuração do plug-in](/developers/pt/docs/woocommerce/integration-configuration/plugin-configuration)

@@ -26,12 +26,12 @@ You can choose to configure these payment methods:
 >
 > Learn how to configure the Mercado Pago plugin with WooCommerce.
 >
-> [Plugin Configuration](/developers/en/docs/woocommerce/plugin-configuration)
+> [Plugin Configuration](/developers/en/docs/woocommerce/integration-configuration/plugin-configuration)
 
 > NEXT_STEP_CARD_EN
 >
-> Test the integration
+> Configure Checkout Pro
 >
-> Carry out tests to verify that your integration is correct.
+> Integrate Checkout Pro in your store.
 >
-> [Testing the integration](/developers/en/docs/woocommerce/integration-test)
+> [Configure Checkout Pro](/developers/en/docs/woocommerce/payments-configuration/checkoutpro)

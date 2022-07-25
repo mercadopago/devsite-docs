@@ -44,4 +44,4 @@ Para ativar o modo de teste para sua loja, siga estas etapas:
 >
 > Ative a loja e vá para produção.
 >
-> [Ir para produção](/developers/pt/docs/woocommerce/go-to-production)
+> [Ir para produção](/developers/pt/docs/woocommerce/goto-production)
