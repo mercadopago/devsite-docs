@@ -30,14 +30,13 @@ La tienda de Shopify mostrará los campos de solicitud de identificación person
     * **Address – Company**
 6. Haz clic en Guardar.
 
-
 > PREV_STEP_CARD_ES
 >
 > Configuración
 >
 > Aprende a configurar Checkout Transparente en tu tienda Shopify.
 >
-> [Configuración](/developers/es/docs/shopify/configuration-checkout-transparente)
+> [Configuración](/developers/es/docs/shopify/checkout-transparente/configuration)
 
 > NEXT_STEP_CARD_ES
 >
@@ -45,5 +44,5 @@ La tienda de Shopify mostrará los campos de solicitud de identificación person
 >
 > Haz una compra de prueba para asegurarte de que el Checkout Transparente funcione correctamente.
 >
-> [Realizar una prueba](/developers/es/docs/shopify/integration-test-checkout-transparente)
+> [Realizar una prueba](/developers/es/docs/shopify/checkout-transparente/integration)
 

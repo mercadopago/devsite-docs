@@ -37,7 +37,7 @@ The Shopify store will display the request fields of the buyer's identification 
 >
 > Learn how to install Checkout Pro in your Shopify store.
 >
-> [Installation](/developers/en/docs/shopify/checkout-pro/installation)
+> [Installation](/developers/en/docs/shopify/checkout-pro-ppp/installation)
 
 > NEXT_STEP_CARD_EN
 >
@@ -45,4 +45,4 @@ The Shopify store will display the request fields of the buyer's identification 
 >
 > Make a test purchase to ensure that Checkout Pro is working smoothly.
 >
-> [Make a test](/developers/en/docs/shopify/checkout-pro/integration-test)
+> [Make a test](/developers/en/docs/shopify/checkout-pro-ppp/integration-test)

@@ -16,4 +16,4 @@ El Checkout Transparente de Mercado Pago **permite finalizar todo el proceso de 
 >
 > Qué necesitas para integrar Mercado pago a tu tienda de Shopify.
 >
-> [Requisitos previos](/developers/es/docs/shopify/requirements-checkout-transparente)
+> [Requisitos previos](/developers/es/docs/shopify/checkout-transparente/requirements)

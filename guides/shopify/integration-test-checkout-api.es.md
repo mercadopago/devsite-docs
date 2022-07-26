@@ -23,4 +23,4 @@ Las pruebas de compras ayudan a garantizar que los pagos se procesan correctamen
 >
 > Aprende a configurar Checkout Transparente en tu tienda Shopify.
 >
-> [Configuración](/developers/es/docs/shopify/configuration-checkout-transparente)
+> [Configuración](/developers/es/docs/shopify/checkout-transparente/configuration)

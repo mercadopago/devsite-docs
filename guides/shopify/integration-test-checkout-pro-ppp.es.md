@@ -10,13 +10,11 @@ Las pruebas de compras ayudan a garantizar que los pagos se procesan correctamen
 6. Agrega la información de la tarjeta de prueba indicada y haz clic en **Pagar**.
 7. Al finalizar la compra, verás constancia de que la compra se ha realizado dentro de Mercado Pago y serás redirigido nuevamente a la tienda.
 
-
 > WARNING
 >
 > Importante
 >
 > Al finalizar la compra de prueba con Checkout Pro, esta no aparecerá como aprobada en el Panel Administrativo de Shopify porque el proceso se realizó dentro del ambiente de Mercado Pago y no en el entorno de la tienda. Es decir, el pedido se generará automáticamente, pero no aparecerá como pagado. Además, esta información de pago aprobado no aparecerá en el historial de la cuenta de Mercado Pago porque solo contiene gastos reales, realizados en producción.
-
 
 > PREV_STEP_CARD_ES
 >
@@ -24,4 +22,4 @@ Las pruebas de compras ayudan a garantizar que los pagos se procesan correctamen
 >
 > Aprende a configurar Checkout Pro en tu tienda Shopify.
 >
-> [Configuración](/developers/es/docs/shopify/checkout-pro/configuration)
+> [Configuración](/developers/es/docs/shopify/checkout-pro-ppp/configuration)

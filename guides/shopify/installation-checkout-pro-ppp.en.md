@@ -20,7 +20,7 @@ To install Checkout Pro in a Shopify store, follow the steps below:
 >
 > What you need to integrate Mercado Pago with your Shopify store.
 >
-> [Previous requirements](/developers/en/docs/shopify/requirements)
+> [Previous requirements](/developers/en/docs/shopify/checkout-pro-ppp/requirements)
 
 > NEXT_STEP_CARD_EN
 >
@@ -28,4 +28,4 @@ To install Checkout Pro in a Shopify store, follow the steps below:
 >
 > Learn how to configure Checkout Pro in your Shopify store.
 >
-> [Configuration](/developers/en/docs/shopify/configuration)
+> [Configuration](/developers/en/docs/shopify/checkout-pro-ppp/configuration)

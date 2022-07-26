@@ -10,4 +10,4 @@ Con el Checkout Pro de Mercado Pago, **el comprador será dirigido desde la tien
 >
 > Qué necesitas para integrar Mercado pago a tu tienda de Shopify.
 >
-> [Requisitos previos](/developers/es/docs/shopify/requirements)
+> [Requisitos previos](/developers/es/docs/shopify/checkout-pro/requirements)

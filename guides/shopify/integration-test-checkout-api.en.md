@@ -22,4 +22,4 @@ The test purchases ensure that payments are processed correctly before allowing 
 >
 > Learn how to set up Checkout Transparente in your Shopify store.
 >
-> [Configuration](/developers/en/docs/shopify/configuration-checkout-transparente)
+> [Configuration](/developers/en/docs/shopify/checkout-transparente/configuration)

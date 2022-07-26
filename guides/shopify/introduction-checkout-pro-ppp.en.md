@@ -10,4 +10,4 @@ With Mercado Pago’s Checkout Pro PPP, **buyers will be redirected from the sto
 >
 > What you need to integrate Mercado Pago with your Shopify store.
 >
-> [Previous requirements](/developers/en/docs/shopify/requirements)
+> [Previous requirements](/developers/en/docs/shopify/checkout-pro-ppp/requirements)

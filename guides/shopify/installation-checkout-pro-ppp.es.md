@@ -20,7 +20,7 @@ Para instalar Checkout Pro en una tienda Shopify, sigue los pasos a continuació
 >
 > Qué necesitas para integrar Mercado pago a tu tienda de Shopify.
 >
-> [Requisitos previos](/developers/es/docs/shopify/requirements)
+> [Requisitos previos](/developers/es/docs/shopify/checkout-pro-ppp/requirements)
 
 > NEXT_STEP_CARD_ES
 >
@@ -28,4 +28,4 @@ Para instalar Checkout Pro en una tienda Shopify, sigue los pasos a continuació
 >
 > Aprende a configurar Checkout Pro en tu tienda Shopify.
 >
-> [Configuración](/developers/es/docs/shopify/configuration)
+> [Configuración](/developers/es/docs/shopify/checkout-pro-ppp/configuration)

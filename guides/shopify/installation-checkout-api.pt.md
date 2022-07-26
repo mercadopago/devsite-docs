@@ -25,7 +25,7 @@ Para instalar o Checkout Transparente em uma loja Shopify, siga os passos abaixo
 >
 > O que você precisa para integrar o Mercado Pago na sua loja Shopify.
 >
-> [Pré-requisitos](/developers/pt/docs/shopify/requirements-checkout-transparente)
+> [Pré-requisitos](/developers/pt/docs/shopify/checkout-transparente/requirements)
 
 > NEXT_STEP_CARD_PT
 >
@@ -33,4 +33,4 @@ Para instalar o Checkout Transparente em uma loja Shopify, siga os passos abaixo
 >
 > Aprenda a configurar o Checkout Transparente na sua loja Shopify.
 >
-> [Configuração](/developers/pt/docs/shopify/configuration-checkout-transparente)
+> [Configuração](/developers/pt/docs/shopify/checkout-transparente/configuration)

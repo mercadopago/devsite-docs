@@ -37,7 +37,7 @@ The Shopify store will display the request fields of the buyer's identification 
 >
 > Learn how to configure Checkout Transparente in your Shopify store.
 >
-> [Configuration](/developers/en/docs/shopify/configuration-checkout-transparente)
+> [Configuration](/developers/en/docs/shopify/checkout-transparente/configuration)
 
 > NEXT_STEP_CARD_EN
 >
@@ -45,4 +45,4 @@ The Shopify store will display the request fields of the buyer's identification 
 >
 > Make a test purchase to ensure that Checkout Transparente works smoothly.
 >
-> [Make a test](/developers/en/docs/shopify/integration-test-checkout-transparente)
+> [Make a test](/developers/en/docs/shopify/checkout-transparente/integration-test)

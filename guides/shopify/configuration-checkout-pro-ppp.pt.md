@@ -36,7 +36,7 @@ A loja Shopify exibirá os campos de solicitação de identificação pessoal do
 >
 > Aprenda a instalar o Checkout Pro na sua loja Shopify.
 >
-> [Instalação](/developers/pt/docs/shopify/checkout-pro/installation)
+> [Instalação](/developers/pt/docs/shopify/checkout-pro-ppp/installation)
 
 > NEXT_STEP_CARD_PT
 >
@@ -44,4 +44,4 @@ A loja Shopify exibirá os campos de solicitação de identificação pessoal do
 >
 > Faça uma compra de teste para certificar-se de que o Checkout Pro funciona corretamente.
 >
-> [Realizar um teste](/developers/pt/docs/shopify/checkout-pro/integration-test) 
+> [Realizar um teste](/developers/pt/docs/shopify/checkout-pro-ppp/integration-test) 

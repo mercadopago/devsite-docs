@@ -22,5 +22,5 @@ The test purchases ensure that payments are processed correctly before allowing 
 >
 > Learn how to configure Checkout Pro in your Shopify store.
 >
-> [Configuration](/developers/en/docs/shopify/checkout-pro/configuration)
+> [Configuration](/developers/en/docs/shopify/checkout-pro-ppp/configuration)
 

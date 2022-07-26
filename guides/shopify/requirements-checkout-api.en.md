@@ -16,7 +16,7 @@ To integrate Mercado Pago’s Checkout Transparente with your Shopify store, you
 >
 > Discover the benefits of integrating Checkout Transparent.
 >
-> [Introduction](/developers/en/docs/shopify/introduction-checkout-transparente)
+> [Introduction](/developers/en/docs/shopify/checkout-transparente/introduction)
 
 > NEXT_STEP_CARD_EN
 >
@@ -24,4 +24,4 @@ To integrate Mercado Pago’s Checkout Transparente with your Shopify store, you
 >
 > Learn how to install Checkout Transparente in your Shopify store.
 >
-> [Installation](/developers/en/docs/shopify/installation-checkout-transparente)
+> [Installation](/developers/en/docs/shopify/checkout-transparente/installation)

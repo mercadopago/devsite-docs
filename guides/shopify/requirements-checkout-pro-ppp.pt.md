@@ -14,7 +14,7 @@ Para integrar o Checkout Pro do Mercado Pago na sua loja Shopify, você deve cum
 >
 > Conheça os benefícios de integrar o Checkout Pro.
 >
-> [Introdução](/developers/pt/docs/shopify/checkout-pro/introduction)
+> [Introdução](/developers/pt/docs/shopify/checkout-pro-ppp/introduction)
 
 > NEXT_STEP_CARD_PT
 >
@@ -22,4 +22,4 @@ Para integrar o Checkout Pro do Mercado Pago na sua loja Shopify, você deve cum
 >
 > Aprenda a instalar o Checkout Pro na sua loja Shopify.
 >
-> [Instalação](/developers/pt/docs/shopify/checkout-pro/installation) 
+> [Instalação](/developers/pt/docs/shopify/checkout-pro-ppp/installation) 
