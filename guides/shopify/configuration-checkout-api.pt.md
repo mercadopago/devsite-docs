@@ -33,11 +33,11 @@ A loja Shopify exibirá os campos de solicitação de identificação do comprad
 
 > PREV_STEP_CARD_PT
 >
-> Configuração
+> Instalação
 >
-> Aprenda a configurar o Checkout Transparente na sua loja Shopify.
+> Aprenda a instalar o Checkout Transparente na sua loja Shopify.
 >
-> [Configuração](/developers/pt/docs/shopify/checkout-transparente/configuration)
+> [Instalação](/developers/pt/docs/shopify/checkout-transparente/installation)
 
 > NEXT_STEP_CARD_PT
 >

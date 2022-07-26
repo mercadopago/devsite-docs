@@ -30,14 +30,13 @@ The Shopify store will display the request fields of the buyer's identification 
     * **Address – Company**
 6. Click on Save.
 
-
 > PREV_STEP_CARD_EN
 >
-> Configuration
+> Installation
 >
-> Learn how to configure Checkout Transparente in your Shopify store.
+> Learn how to install Checkout Transparente in your Shopify store.
 >
-> [Configuration](/developers/en/docs/shopify/checkout-transparente/configuration)
+> [Installation](/developers/en/docs/shopify/checkout-transparente/installation)
 
 > NEXT_STEP_CARD_EN
 >
