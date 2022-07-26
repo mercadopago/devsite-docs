@@ -22,7 +22,7 @@ You must create an application to obtain credentials and set up webhook notifica
 
 It's quite easy to do:
 
-1. Enter [Your integrations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/applications).
+1. Enter [Your integrations](https://www.mercadopago.com/developers/panel/applications).
 2. Select the **+** symbol in **Your applications** section to create a new application.
 3. Name the application to identify it later.
 4. Accept our Terms and Conditions. Done!
@@ -32,7 +32,7 @@ It's quite easy to do:
 >
 > Note
 >
->If your POS integrator has several tenants, see topic 4 and 5. Check your integration security and implement [Oauth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/qr-code/additional-content/security/oauth/introduction).
+>If your POS integrator has several tenants, see topic 4 and 5. Check your integration security and implement [OAuth](/developers/es/docs/qr-code/additional-content/security/oauth/introduction).
 
 
 ## 3. Generate test users
@@ -57,7 +57,7 @@ Once you have test users, you can start to integrate and create Stores and POS.
 
 If you are an integrator that works with several retailers enabling them to operate with Mercado Pago, we recommend to perform the **OAuth - authentication between accounts** process. The process enables customers securely share personal data with a third-party system.
 
-The Access Token is not shareable in any way other than through OAuth. [More information](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/credentials).
+The Access Token is not shareable in any way other than through OAuth.
 
 ## 5. Identify your integration (Sponsor ID)
 
@@ -71,19 +71,3 @@ Step by step:
 > * Submit the Sponsor ID on all QR transactions. [See API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/instore_orders/_mpmobile_instore_qr_user_id_external_id/post).
 
 ---
-
-> PREV_STEP_CARD_EN
->
-> Prerequsites
->
-> Check out the Prerequsites for this integration.
->
-> [Prerequsites](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/qr-code/pre-requisites)
-
-> NEXT_STEP_CARD_EN
->
-> Stores and POS
->
-> To build the integration, you must set up your stores and POS first.
->
-> [Stores and POS](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/qr-code/stores-pos/introduction)

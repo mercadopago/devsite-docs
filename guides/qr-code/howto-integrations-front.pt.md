@@ -29,22 +29,3 @@ Em primeiro lugar, você precisa [criar um link de pagamento](https://www.mercad
 
 É possível verificar suas vendas na lista de atividades da [sua conta Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/atividades) ou [integrar notificações](/developers/pt/guides/notificações/ipn/introdução) no seu sistema.
 
-
----
-### Próximos passos
-
-> LEFT_BUTTON_RECOMMENDED_PT
->
-> Que é o código QR?
->
-> Configura as notificações de seus pagamentos.
->
-> [Que é o código QR?](/developers/pt/guides/qr-code/introduction)
-
-> RIGHT_BUTTON_RECOMMENDED_PT
->
-> Requisitos para integrar
->
-> Tudo o que você precisa para integrar o QR Code.
->
-> [Requisitos para integrar](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/qr-code/pre-requisites)

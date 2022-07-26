@@ -23,7 +23,7 @@ Crie uma aplicação para obter as credenciais e configurar notificações webho
 
 É muito simples, veja como: 
 
-1. Acesse [Suas aplicações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/applications).
+1. Acesse [Suas aplicações](https://www.mercadopago.com/developers/panel/applications).
 2. Selecione o símbolo em **Suas aplicações** para criar uma nova aplicação.
 3. Nomeie a aplicação para identificação posterior.
 4. Aceite nossos Termos e Condições. E pronto!
@@ -34,7 +34,7 @@ Crie uma aplicação para obter as credenciais e configurar notificações webho
 >
 > Nota
 >
-> Caso o PDV integrado tenha várias conexões com contas Mercado Pago, consulte os itens 4 e 5. Fique atento à segurança da sua integração e implemente [Oauth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/qr-code/additional-content/security/oauth/introduction).
+> Caso o PDV integrado tenha várias conexões com contas Mercado Pago, consulte os itens 4 e 5. Fique atento à segurança da sua integração e implemente [OAuth](/developers/pt/docs/qr-code/additional-content/security/oauth/introduction).
 
 ## 3. Gere usuários de teste
 
@@ -59,7 +59,7 @@ Após a geração dos usuários de teste, você pode começar a integração e c
 Se você é um integrador que trabalha com diversas lojas que operam com o Mercado Pago, recomendamos que faça o **OAuth - autenticação entre contas***. Através do processo o vendedor autoriza o compartilhamento seguro dos seus dados com um sistema de terceiros.
 
 
-O Access Token não poderá ser compartilhado de outra maneira que não seja o OAuth. [Clique aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/credentials) para mais informações.
+O Access Token não poderá ser compartilhado de outra maneira que não seja o OAuth.
 
 ## 5. Identifique a sua integração (Sponsor ID)
 
@@ -71,20 +71,3 @@ Passo a Passo:
 > * Inclua o Collector ID da sua conta de integrador no Sponsor ID do vendedor.
 > * Envie o Sponsor ID em todas as transações QR. [Consulte a API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/instore_orders/_mpmobile_instore_qr_user_id_external_id/post).
 
----
-
-> PREV_STEP_CARD_PT
->
-> Pré-requisitos
->
-> Conheça os pré-requisitos para essa integração.
->
-> [Pré-requisitos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/qr-code/pre-requisites)
-
-> NEXT_STEP_CARD_PT
->
-> Lojas e Caixas
->
-> Para realizar a integração, primeiramente deverá configurar suas lojas e caixas.
->
-> [Lojas e Caixas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/qr-code/stores-pos/introduction)

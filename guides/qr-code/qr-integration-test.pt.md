@@ -18,7 +18,7 @@ Para realizar os testes, você precisa ter pelo menos dois usuários: um comprad
 
 ### 1. Utilize o seu usuário vendedor para atribuir um pedido a um caixa.
 
-Para testar o modelo atendido, gere um pedido com as [credenciais]([FAKER][CREDENTIALS][URL]) do usuário de teste que deseja utilizar como vendedor e envie um pedido ao QR previamente criado.
+Para testar o modelo atendido, gere um pedido com as credenciais do usuário de teste que deseja utilizar como vendedor e envie um pedido ao QR previamente criado.
 
 
 ### 2. Realize um pagamento usando o seu usuário comprador

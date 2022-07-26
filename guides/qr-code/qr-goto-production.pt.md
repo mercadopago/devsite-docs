@@ -1,10 +1,10 @@
 # Entrar em produção
 
-Quando a aplicação estiver **funcionando** em modo teste e chegue a hora de processar pagamentos reais, você deve [ativar suas credenciais]([FAKER][CREDENTIALS][URL]), e ** solicitar o processo de homologação à equipe de integrações**.
+Quando a aplicação estiver **funcionando** em modo teste e chegue a hora de processar pagamentos reais, você deve [ativar suas credenciais](developers/pt/docs/qr-code/additional-content/credentials), e **solicitar o processo de homologação à equipe de integrações**.
 
 ## Homologação
 
-Nesta etapa, serão realizados testes no seu ambiente com a equipe técnica, parceiros e software house. Para isso, você deverá usar o Sponsor ID e a [OAuth](/developers/pt/guides/additional-content/security/oauth/introduction), (autenticação entre contas Mercado Pago).
+Nesta etapa, serão realizados testes no seu ambiente com a equipe técnica, parceiros e software house. Para isso, você deverá usar o Sponsor ID e a [OAuth](/developers/pt/docs/qr-code/additional-content/security/oauth/introduction), (autenticação entre contas Mercado Pago).
 
 O Mercado Pago poderá auditar o seu site, aplicativo ou software de ponto de venda para verificar que as regras detalhadas na seção **Teste de integração** sejam cumpridas. Caso contrário, um consultor entrará em contato com você para analisar se existe a necessidade de corrigir sua integração.
 
@@ -12,7 +12,7 @@ O Mercado Pago poderá auditar o seu site, aplicativo ou software de ponto de ve
 >
 > IMPORTANTE
 >
-> Se você não [ativa as suas credenciais]([FAKER][CREDENTIALS][URL]), não poderá efetuar nenhum tipo de reembolso.
+> Se você não ativa as suas credenciais, não poderá efetuar nenhum tipo de reembolso.
 
 ## Por que este processo é necessário?
 

@@ -18,7 +18,7 @@ Essas etapas podem ser seguidas de duas maneiras: **criar um pedido** e **criar 
 
 Antes de mais nada, gere a publicação do pedido. Assim que os dados forem enviados ao Mercado Pago, uma string com o padrão [EMVCo](https://www.emvco.com/emv-technologies/qrcodes) será disponibilizada.
 
-Para gerar um pedido, acesse nossa [Referência de API](/developers/e/reference/qr-dynamic/_instore_orders_qr_seller_collectors_user_id_pos_external_pos_id_qrs/post)  e execute a curl encontrada na mesma. Na resposta, você receberá os dados necessários para criar o código QR.
+Para gerar um pedido, acesse nossa [Referência de API](/developers/pt/reference/qr-dynamic/_instore_orders_qr_seller_collectors_user_id_pos_external_pos_id_qrs/post)  e execute a curl encontrada na mesma. Na resposta, você receberá os dados necessários para criar o código QR.
 
 
 ----[mco]----
@@ -68,23 +68,4 @@ As notificações IPN (Instant Payment Notification) são a **forma automática 
 
 Implemente o IPN de `merchant_order` com uma busca do pedido por `external_reference` como um método de contingência.
 
-[Receber notificações IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn/introduction)
-
-
----
-
-> PREV_STEP_CARD_PT
->
-> O que é modelo QR atendido
->
-> Uma introdução ao modelo QR atendido
->
-> [Introdução](/developers/pt/docs/qr-code/qr-attended-model/introduction)
-
-> NEXT_STEP_CARD_PT
->
-> Teste a sua integração
->
-> Saiba mais sobre como testar sua integração.
->
-> [Teste a sua integração](/developers/pt/docs/qr-code/qr-dynamic-model/qr-integration-test)
+[Receber notificações IPN](/developers/pt/docs/qr-code/additional-content/notifications/ipn)

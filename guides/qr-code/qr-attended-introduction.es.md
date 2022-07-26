@@ -11,13 +11,3 @@ Las características principales son:
 - Para que el cliente realice el pago, es necesario asociar una orden a la caja.
 - El operador ve el cobro impactado en su sistema.
 
-
----
-
-> NEXT_STEP_CARD_ES
->
-> Cómo integrar QR modelo atendido
->
-> Conoce paso a paso cómo integrar este modelo.
->
-> [Cómo integrar QR modelo atendido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/qr-code/qr-attended-model/integration)

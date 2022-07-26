@@ -29,23 +29,3 @@ First, you must create a [payment link](https://www.mercadopago.com.ar/tools/cre
 You can check your business sales in the activity list in your [Mercado Pago account](https://www.mercadopago[FAKER][URL][DOMAIN]/activities) or [integrate notifications](/developers/en/guides/notifications/ipn/introduction) in your system.
 
 
-
----
-### Next Steps
-
-> LEFT_BUTTON_RECOMMENDED_EN
->
-> ¿What’s a QR code?
->
-> Learn about QR code integration.
->
-> [¿What’s a QR code?](/developers/en/guides/qr-code/introduction)
-
-
-> RIGHT_BUTTON_RECOMMENDED_EN
->
-> Requirements to integrate
->
-> Everything you need to integrate QR Code.
->
-> [Requirements to integrate](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/qr-code/pre-requisites)

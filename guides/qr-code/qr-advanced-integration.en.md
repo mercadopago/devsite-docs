@@ -4,13 +4,13 @@
 
 ----[mla, mlm, mco, mlu, mlb, mlc]----
 
-Refunds apply when the payment is canceled totally or partially by the seller. You can find information in the [Refunds](/developers/en/docs/qr-code/additional-content/refunds) section.
+Refunds apply when the payment is canceled totally or partially by the seller. You can find information in the [Refunds and cancellations](/developers/en/docs/qr-code/additional-content/cancellations-and-refunds) section.
 
 ------------
 
 ----[mpe]----
 
-Refunds take place when the payment is canceled in full by the seller. You can find more information in the [Refunds](/developers/en/docs/qr-code/additional-content/refunds) section.
+Refunds take place when the payment is canceled in full by the seller. You can find more information in the [Refunds and cancellations](/developers/en/docs/qr-code/additional-content/cancellations-and-refunds) section.
 
 ------------
 > WARNING
@@ -36,5 +36,5 @@ We detailed all the necessary scenarios you should test to ensure your system's 
 
 |QR Model|Link|
 |---|---|
-|Attended|[Click here](/developers/en/docs/qr-code/validation-events/qr-attended-events-to-validate)|
-|Dynamic|[Click here](/developers/en/docs/qr-code/validation-events/qr-dynamic-events-to-validate)|
+|Attended|[Click here](/developers/en/docs/qr-code/additional-content/qr-validation-cases/qr-attended-events)|
+|Dynamic|[Click here](/developers/en/docs/qr-code/additional-content/qr-validation-cases/qr-dynamic-events)|

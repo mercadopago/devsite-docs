@@ -5,14 +5,14 @@
 ----[mla, mlm, mco, mlu, mlb, mlc]----
 
 Las devoluciones suceden cuando el pago se realizó pero el vendedor decide anularlo total o parcialmente.
-Puedes encontrar toda la información en la sección [Reembolsos](/developers/es/docs/qr-code/additional-content/refunds).
+Puedes encontrar toda la información en la sección [Reembolsos y cancelaciones](/developers/es/docs/qr-code/additional-content/cancellations-and-refunds).
 
 ------------
 
 ----[mpe]----
 
 Las devoluciones suceden cuando el pago se realizó pero el vendedor decide anularlo totalmente.
-Puedes encontrar toda la información en la sección [Reembolsos](/developers/es/docs/qr-code/additional-content/refunds).
+Puedes encontrar toda la información en la sección [Reembolsos y cancelaciones](/developers/es/docs/qr-code/additional-content/cancellations-and-refunds).
 
 ------------
 
@@ -41,5 +41,5 @@ Detallamos todos los casos necesarios que debes probar para validar que tu siste
 
 |Modelo de QR|Link|
 |---|---|
-|Atendido|[Haz clic aquí](/developers/es/docs/qr-code/validation-events/qr-attended-events-to-validate)|
-|Dinámico|[Haz clic aquí](/developers/es/docs/qr-code/validation-events/qr-dynamic-events-to-validate)|
+|Atendido|[Haz clic aquí](/developers/es/docs/qr-code/additional-content/qr-validation-cases/qr-attended-events)|
+|Dinámico|[Haz clic aquí](/developers/es/docs/qr-code/additional-content/qr-validation-cases/qr-dynamic-events)|

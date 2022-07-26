@@ -52,22 +52,3 @@ Acesse [Criar caixa](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/r
 >
 > Uma vez criado o caixa, você poderá ver no `Response` os links para os diferentes entregáveis do QR, junto com outros dados relevantes do caixa.
 
----
-
-### Próximos passos
-
-> LEFT_BUTTON_RECOMMENDED_PT
->
-> QR modelo atendido
->
-> Aprenda a integrar o QR modelo atendido.
->
-> [QR modelo atendido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/qr-code/qr-attended-model/introduction)
-
-> LEFT_BUTTON_RECOMMENDED_PT
->
-> QR modelo dinâmico
->
-> Aprenda a integrar o QR modelo dinâmico.
->
-> [QR modelo dinâmico](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt//docs/qr-code/qr-dynamic-model/introduction)

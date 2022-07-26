@@ -18,14 +18,3 @@ The main characteristics are:
 > IMPORTANT
 >
 > Remember that you can only use QR for in person payment solutions.
-
-
----
-
-> NEXT_STEP_CARD_EN
->
-> How to Integrate dynamic model
->
-> Learn to integrate this model step by step.
->
-> [How to Integrate dynamic model](/developers/en/docs/qr-code/qr-dynamic-model/integration)

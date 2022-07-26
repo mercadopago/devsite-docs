@@ -13,7 +13,7 @@ Assim é como o modelo atendido funciona:
 
 ## Criar um pedido
 
-Para obter mais informações sobre como criar pedidos, consulte nossa [Referência de API](/developers/pt/reference/instore_orders_v2/_instore_qr_collectors_user_id_store_external_id_store_pos_external_pos_id_orders/put).
+Para obter mais informações sobre como criar pedidos, consulte nossa [Referência de API](/developers/pt/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_stores_external_store_id_pos_external_pos_id_orders/put).
 
 ----[mco]----
 > Se você tiver que pagar IVA pelos produtos em seu pedido, consulte a [seção Considerações IVA Colômbia](/developers/pt/guides/additional-content/localization/iva-colombia).
@@ -29,33 +29,15 @@ Assim que o pedido for criado, ele estará disponível para ser **escaneado e pa
 
 ## Eliminar um pedido
 
-Para remover o pedido associado a um QR antes da sua expiração, o encerramento, consulte nossa [Referência de API](/developers/reference/instore_orders_v2/_instore_qr_collectors_user_id_pos_external_pos_id_orders/delete).
+Para remover o pedido associado a um QR antes da sua expiração, o encerramento, consulte nossa [Referência de API](/developers/pt/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_pos_external_pos_id_orders/delete).
 
 A resposta será um `HTTP 204 No Content`.
 
 ## Receber notificações de pedidos
 
-As [notificações IPN](/developers/pt/guides/notifications/ipn/introduction) (Instant Payment Notification) são a **forma automática de notificar a criação de novos pedidos e as atualizações de seus status**. Por exemplo, se foram aprovados, recusados ou se estiverem pendentes.
+As notificações IPN **(Instant Payment Notification)** são a **forma automática de notificar a criação de novos pedidos e as atualizações de seus status**. Por exemplo, se foram aprovados, recusados ou se estiverem pendentes.
 
 Implemente o IPN de `merchant_order` com uma pesquisa de pedido por `external_reference` como um método de contingência.
 
 [Receber notificações IPN](/developers/pt/docs/qr-code/additional-content/notifications/ipn)
 
-
----
-
-> PREV_STEP_CARD_PT
->
-> O que é modelo QR atendido
->
-> Uma introdução ao modelo QR atendido
->
-> [Introdução](/developers/pt/docs/qr-code/qr-attended-model/introduction)
-
-> NEXT_STEP_CARD_PT
->
-> Teste a sua integração
->
-> Saiba mais sobre como testar sua integração.
->
-> [Teste a sua integração](/developers/pt/docs/qr-code/qr-attended-model/qr-integration-test)

@@ -37,26 +37,8 @@ For more information on how to delete the order associated with a QR before its 
 
 ## Receive notifications of your orders
 
-An IPN (Instant Payment Notification) notification is an **automatic message that notifies the creation of new orders and their status updates**. For example, if an order was approved, rejected, or if it is pending. 
+An IPN **(Instant Payment Notification)** notification is an **automatic message that notifies the creation of new orders and their status updates**. For example, if an order was approved, rejected, or if it is pending. 
 
 Implement IPN `merchant_order` with an order search by `external_reference` as a contingency method.
 
 [Receive IPN notifications](/developers/en/docs/qr-code/additional-content/notifications/ipn)
-
-
----
-> PREV_STEP_CARD_EN
->
-> What is QR attended model
->
-> An introduction to QR attended model
->
-> [Introduction](/developers/en/docs/qr-code/qr-attended-model/introduction)
-
-> NEXT_STEP_CARD_EN
->
-> Test your integration
->
-> Access more information about testing your integration.
->
-> [Test your integration](/developers/en/docs/qr-code/qr-attended-model/qr-integration-test)

@@ -17,7 +17,7 @@ Para realizar las pruebas es necesario que tengas como mínimo dos usuarios: un 
 
 ### 1. Con tu usuario vendedor, asigna una orden a una caja.
 
-Para probar el modelo atendido, genera una orden con las [credenciales]([FAKER][CREDENTIALS][URL]) del usuario de pruebas que quieras usar como vendedor y envía una orden al QR previamente creado.
+Para probar el modelo atendido, genera una orden con las credenciales del usuario de pruebas que quieras usar como vendedor y envía una orden al QR previamente creado.
 
 ### 2. Realiza un pago con tu usuario comprador
 

@@ -52,23 +52,3 @@ Go to [Create POS](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/ref
 > Note
 >
 > After the Point of Sale creation, you will see the QR files in the `Response` section, with other relevant data.
-
----
-
-### Next steps
-
-> LEFT_BUTTON_RECOMMENDED_EN
->
-> QR attended model
->
-> Integrate QR attended model.
->
-> [QR attended model](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/qr-code/qr-attended-model/introduction)
-
-> RIGHT_BUTTON_RECOMMENDED_EN
->
-> QR dynamic model
->
-> Integrate QR dynamic model.
->
-> [QR dynamic model](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/qr-code/qr-dynamic-model/introduction)

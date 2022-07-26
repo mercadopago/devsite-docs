@@ -66,21 +66,4 @@ An IPN (Instant Payment Notification) notification is an **automatic message tha
 Implement IPN `merchant_order` with an order search by `external_reference` as a contingency method.
 
 
-[Receive IPN notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn/introduction)
-
----
-> PREV_STEP_CARD_EN
->
-> What is QR attended model
->
-> An introduction to QR attended model
->
-> [Introduction](/developers/en/docs/qr-code/qr-attended-model/introduction)
-
-> NEXT_STEP_CARD_EN
->
-> Test your integration
->
-> Access more information about testing your integration.
->
-> [Test your integration](/developers/en/docs/qr-code/qr-dynamic-model/qr-integration-test)
+[Receive IPN notifications](/developers/en/docs/qr-code/additional-content/notifications/ipn)

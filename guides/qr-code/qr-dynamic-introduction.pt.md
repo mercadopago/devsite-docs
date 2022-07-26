@@ -19,12 +19,3 @@ As suas principais características são:
 >
 > Lembre-se de que você só pode usar o QR para suas soluções de pagamento presencial.
 
----
-
-> NEXT_STEP_CARD_PT
->
-> Integrar o modelo QR dinâmico
->
-> Conheça passo a passo como integrar este modelo.
->
-> [Integrar o modelo QR dinâmico](/developers/pt/docs/qr-code/qr-dynamic-model/integration)

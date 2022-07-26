@@ -13,12 +13,3 @@ The main characteristics are:
 - The operator can view the completed payment in the system.
 
 
----
-
-> NEXT_STEP_CARD_EN
->
-> How to Integrate attended model
->
-> Learn to integrate this model step by step.
->
-> [How to Integrate attended model](ttps://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/qr-code/qr-attended-model/integration)

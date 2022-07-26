@@ -18,7 +18,7 @@ To run tests you must have a minimum of two users: a buyer and a seller.
 
 ### 1. Assign an order to a checkout using your seller user.
 
-To test the attended model, generate an order with the test user [credentials]([FAKER][CREDENTIALS][URL]) you want to use as a seller and send an order to the previously created QR.
+To test the attended model, generate an order with the test user credentials you want to use as a seller and send an order to the previously created QR.
 
 ### 2. Make a payment with your buyer user.
 

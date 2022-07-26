@@ -21,12 +21,3 @@ Once you complete the integration as explained below, your business will be able
 
 Depending on your business model, you can choose one of these options to offer your customers a seamless in-store shopping experience.
 
----
-
-> NEXT_STEP_CARD_EN
->
-> Requirements to integrate
->
-> Everything you need to integrate QR Code.
->
-> [Requirements to integrate](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/qr-code/pre-requisites)

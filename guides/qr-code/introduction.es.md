@@ -22,12 +22,3 @@ Una vez que hayas realizado la integración tal como te explicaremos aquí, podr
 
 En base a tu modelo de negocio, puedes escoger alguna de las opciones para ofrecer a tus clientes una buena experiencia de compra en tus tiendas físicas.
 
----
-
-> NEXT_STEP_CARD_ES
->
-> Requisitos para integrar
->
-> Todo lo que necesitas para integrar Código QR.
->
-> [Requisitos para integrar](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/qr-code/pre-requisites)

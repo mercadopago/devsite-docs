@@ -22,13 +22,3 @@ Após completar a integração como explicado abaixo, o seu negócio poderá rec
 
 Em função do seu modelo de negócio, você pode escolher uma das opções para oferecer aos seus clientes uma ótima experiência de compra nas suas lojas físicas.
 
-
----
-
-> NEXT_STEP_CARD_PT
->
-> Requisitos para integrar
->
-> Tudo o que você precisa para integrar o QR Code.
->
-> [Requisitos para integrar](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/qr-code/pre-requisites)
