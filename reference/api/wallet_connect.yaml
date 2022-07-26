@@ -32,11 +32,11 @@ paths:
             example: 2451675580092619
         - name: x-platform-id
           in: header
-          description: It is a field that allows you to analyze different scenarios by partner
+          description: Field intended for platforms or modules that offer Mercado Pago in their solutions
           x-description-i18n:
-            eng: It is a field that allows you to analyze different scenarios by partner
-            spa: Es un campo que permite analizar distintos escenarios por socio
-            por: É um campo que permite analisar diferentes cenários por parceiro
+            eng: Field intended for platforms or modules that offer Mercado Pago in their solutions
+            spa: Campo destinado a plataformas o módulos que ofrecen Mercado Pago en sus soluciones
+            por: Campo destinado para as plataformas ou módulos que oferecem Mercado Pago em suas soluções
           schema:
             type: string
             example: YOUR_ACCESS_TOKEN
@@ -218,11 +218,11 @@ paths:
             example: 832564722
         - name: x-platform-id
           in: header
-          description: It is a field that allows you to analyze different scenarios by partner
+          description: Field intended for platforms or modules that offer Mercado Pago in their solutions
           x-description-i18n:
-            eng: It is a field that allows you to analyze different scenarios by partner
-            spa: Es un campo que permite analizar distintos escenarios por socio
-            por: É um campo que permite analisar diferentes cenários por parceiro
+            eng: Field intended for platforms or modules that offer Mercado Pago in their solutions
+            spa: Campo destinado a plataformas o módulos que ofrecen Mercado Pago en sus soluciones
+            por: Campo destinado para as plataformas ou módulos que oferecem Mercado Pago em suas soluções
           schema:
             type: string
             example: YOUR_ACCESS_TOKEN
@@ -354,11 +354,11 @@ paths:
             example: 1451895580758649
         - name: x-platform-id
           in: header
-          description: It is a field that allows you to analyze different scenarios by partner
+          description: Field intended for platforms or modules that offer Mercado Pago in their solutions
           x-description-i18n:
-            eng: It is a field that allows you to analyze different scenarios by partner
-            spa: Es un campo que permite analizar distintos escenarios por socio
-            por: É um campo que permite analisar diferentes cenários por parceiro
+            eng: Field intended for platforms or modules that offer Mercado Pago in their solutions
+            spa: Campo destinado a plataformas o módulos que ofrecen Mercado Pago en sus soluciones
+            por: Campo destinado para as plataformas ou módulos que oferecem Mercado Pago em suas soluções
           schema:
             type: string
             example: YOUR_ACCESS_TOKEN
