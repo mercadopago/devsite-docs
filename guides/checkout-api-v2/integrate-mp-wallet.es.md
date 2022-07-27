@@ -25,150 +25,31 @@ La primera etapa para configurar los pagos con la Billetera Mercado Pago es la c
 
 
 [[[
-```php
-===
-El modo billetera funciona añadiendo el atributo _purpose_ en la preferencia.
-===
-<?php
-// Crea un objeto de preferencia
-$preference = new MercadoPago\Preference();
+```html
+<div class="cho-container"></div>
+<script src="https://sdk.mercadopago.com/js/v2"></script>
+<script>
+  const mp = new MercadoPago('PUBLIC_KEY');
 
-// Crea un ítem en la preferencia
-$item = new MercadoPago\Item();
-$item->title = 'Mi producto';
-$item->quantity = 1;
-$item->unit_price = 75;
-$preference->items = array($item);
-$preference->purpose = 'wallet_purchase';
-$preference->save();
-?>
-```
-```node
-===
-El modo billetera funciona añadiendo el atributo _purpose_ en la preferencia.
-===
-// Crea un objeto de preferencia
-let preference = {
-  items: [
-    {
-      title: 'Mi producto',
-      unit_price: 100,
-      quantity: 1,
-    }
-  ],
-  purpose: 'wallet_purchase'
-};
-
-mercadopago.preferences.create(preference)
-.then(function(response){
-// Este valor substituirá a la string "<%= global.id %>" en tu HTML
-  global.id = response.body.id;
-}).catch(function(error){
-  console.log(error);
-});
-```
-```java
-===
-El modo billetera funciona añadiendo el atributo _purpose_ en la preferencia.
-===
-// Crea un objeto de preferencia
-PreferenceClient client = new PreferenceClient();
-
-// Crea un ítem en la preferencia
-PreferenceItemRequest item =
-   PreferenceItemRequest.builder()
-       .title("Mi producto")
-       .quantity(1)
-       .unitPrice(new BigDecimal("75"))
-       .build();
-
-List<PreferenceItemRequest> items = new ArrayList<>();
-items.add(item);
-
-PreferenceRequest request =
-   PreferenceRequest.builder().items(items).purpose("wallet_purchase").build();
-
-client.create(request);
-```
-```ruby
-===
-El modo billetera funciona añadiendo el atributo _purpose_ en la preferencia.
-===
-sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
-# Crea un objeto de preferencia
-preference_data = {
-  items: [
-    {
-      title: 'Mi producto',
-      unit_price: 100,
-      quantity: 1
-    }
-  ],
-  purpose: 'wallet_purchase'
-}
-preference_response = sdk.preference.create(preference_data)
-preference = preference_response[:response]
-
-# Este valor substituirá a la string "<%= @preference_id %>" en tu HTML
-@preference_id = preference['id']
-```
-```csharp
-===
-El modo billetera funciona añadiendo el atributo _purpose_ en la preferencia.
-===
-// Crea el objeto de request de la preferencia
-var request = new PreferenceRequest
-{
-    Items = new List<PreferenceItemRequest>
-    {
-        new PreferenceItemRequest
-        {
-            Title = "Mi producto,
-            Quantity = 1,
-            CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
-            UnitPrice = 75m,
+  async function createPreference() {
+    try {
+      mp.checkout({
+        preference: {
+          id: 'YOUR_PREFERENCE_ID'
         },
-    },
-    Purpose = "wallet_purchase",
-};
-// Crea la preferencia
-var client = new PreferenceClient();
-Preference preference = await client.CreateAsync(request);
-```
-```python
-preference_data = {
-    "items": [
-        {
-            "title": "Mi producto",
-            "unit_price": 100,
-            "quantity": 1
+        render: {
+          container: '.cho-container',
+          label: 'Pagar com Mercado Pago',
+          type: 'wallet',
         }
-    ],
-    "purpose": "wallet_purchase"
-}
+      });
+    } catch (error) {
+      console.error(error);
+    }
+  }
 
-preference_response = sdk.preference().create(preference_data)
-preference = preference_response["response"]
-```
-```curl
-===
-El modo billetera funciona añadiendo el atributo _purpose_ en la preferencia.
-===
-curl -X POST \
-  'https://api.mercadopago.com/checkout/preferences' \
-  -H 'Content-Type: application/json' \
-  -H 'cache-control: no-cache' \
-  -H 'Authorization: Bearer **PROD_ACCESS_TOKEN**' \
-  -d '{
-    "items": [
-        {
-            "title": "Mi producto",
-            "quantity": 1,
-            "unit_price": 75
-        }
-    ],
-    "purpose": "wallet_purchase"
-}'
+  createPreference();
+</script>
 ```
 ]]]
 
