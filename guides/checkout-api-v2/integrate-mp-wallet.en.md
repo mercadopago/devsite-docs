@@ -199,24 +199,16 @@ With the preference created, it is necessary to display the payment button that 
 <script>
   const mp = new MercadoPago('PUBLIC_KEY');
 
-  async function createPreference() {
-    try {
-      mp.checkout({
-        preference: {
-          id: 'YOUR_PREFERENCE_ID'
-        },
-        render: {
-          container: '.cho-container',
-          label: 'Pagar com Mercado Pago',
-          type: 'wallet',
-        }
-      });
-    } catch (error) {
-      console.error(error);
+  mp.checkout({
+    preference: {
+      id: 'YOUR_PREFERENCE_ID'
+    },
+    render: {
+      container: '.cho-container',
+      label: 'Pagar com Mercado Pago',
+      type: 'wallet',
     }
-  }
-
-  createPreference();
+  });
 </script>
 ```
 ]]]
