@@ -355,22 +355,21 @@ Then, add the SDK credentials to enable its use and initialize the checkout usin
 
 [[[
 ```html
+<div class="cho-container"></div>
 <script>
-// Add the SDK credentials
   const mp = new MercadoPago('PUBLIC_KEY', {
-        locale: 'en-US'
+    locale: 'en-US'
   });
-  
-  // Initialize the checkout
+
   mp.checkout({
     preference: {
-        id: 'YOUR_PREFERENCE_ID'
+      id: 'YOUR_PREFERENCE_ID'
     },
     render: {
-      container: '.cho-container', // Indicates the name of the class where the payment button will be displayed
-      label: 'Pagar', // Changes the button label (optional)
+      container: '.cho-container',
+      label: 'Pay',
     }
-});
+  });
 </script>
 ```
 ]]]

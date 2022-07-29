@@ -194,32 +194,22 @@ Com a preferência criada, é preciso exibir o botão de pagamento que permitir�
 
 [[[
 ```html
-<div class=".cho-container"></div>
-  <script src="https://sdk.mercadopago.com/js/v2"></script>
-  <script>
-    const mp = new MercadoPago('PUBLIC_KEY');
+<div class="cho-container"></div>
+<script src="https://sdk.mercadopago.com/js/v2"></script>
+<script>
+  const mp = new MercadoPago('PUBLIC_KEY');
 
-    async function createPreference() {
-      try {
-        const response = await fetch("/process_payment");
-        const { id } = await response.json();
-        mp.checkout({
-          preference: {
-            id
-          },
-          render: {
-            container: '.cho-container',
-            label: 'Pagar com Mercado Pago',
-            type: 'wallet',
-          }
-        });
-      } catch (error) {
-        console.error(error);
-      }
+  mp.checkout({
+    preference: {
+      id: 'YOUR_PREFERENCE_ID'
+    },
+    render: {
+      container: '.cho-container',
+      label: 'Pagar com Mercado Pago',
+      type: 'wallet',
     }
-
-    createPreference();
-  </script>
+  });
+</script>
 ```
 ]]]
 
