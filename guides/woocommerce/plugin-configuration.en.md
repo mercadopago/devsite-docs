@@ -1,4 +1,4 @@
-# Configure the plugin
+# Plugin configuration
 
 Once the Mercado Pago with WooCommerce plugin is installed, it is necessary to configure it. For that, follow these steps:
 
@@ -9,13 +9,13 @@ Once the Mercado Pago with WooCommerce plugin is installed, it is necessary to c
 
 Next, we will explain how to configure each item of the plugin. Click on the titles to display the options to complete.
 
-## Integrate the store to Mercado Pago
+## Integrate store to Mercado Pago
 
 Test and production credentials are requested in this field.
-1. Click on the **Check credentials** button to enter the Mercado Pago panel and see your credentials.
+1. Click on the **Check credentials** button to enter the Mercado Pago panel and see your credentials. **Important**: Please note that test credentials will be requested first and then production credentials.
 2. Complete the requested fields and click **Save and continue**.
 
-## Personalize your business
+## Business personalization
 
 In the section **Information about your store** you can offer store data to offer a more complete experience and with more information to customers
 

@@ -1,4 +1,4 @@
-# Configure o plugin
+# Configurar plugin
 
 Uma vez instalado o plugin Mercado Pago com WooCommerce, é necessário configurá-lo. Para isso, siga estes passos:
 
@@ -9,13 +9,13 @@ Uma vez instalado o plugin Mercado Pago com WooCommerce, é necessário configur
 
 A seguir, explicaremos como configurar cada item do plugin. Clique nos títulos para exibir as opções para concluir.
 
-## Integre a loja ao Mercado Pago
+## Integrar loja ao Mercado Pago
 
 As credenciais de teste e produção são solicitadas neste campo.
-1. Clique no botão **Verificar credenciais** para entrar no painel do Mercado Pago e ver suas credenciais.
+1. Clique no botão **Verificar credenciais** para entrar no painel do Mercado Pago e ver suas credenciais. **Importante**: Observe que as credenciais de teste serão solicitadas primeiro e depois as credenciais de produção.
 2. Preencha os campos solicitados e clique em **Salvar e continuar**.
 
-## Personalize seu negócio
+## Personalizar negócio
 
 Na seção **Informações sobre sua loja** você pode oferecer dados da loja para oferecer uma experiência mais completa e com mais informações aos clientes
 

@@ -1,4 +1,4 @@
-# Sair para produção
+# Sair à produção
 
 A primeira etapa para ativar o modo de produção em sua loja é **ativar o certificado SSL** em seu domínio. Este certificado é utilizado para aumentar a segurança dos dados compartilhados por sua loja, ou seja, as informações pessoais de seus clientes.
 
