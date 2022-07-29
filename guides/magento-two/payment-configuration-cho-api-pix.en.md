@@ -1,12 +1,12 @@
 # Configure payments with Pix
 
-With the [Checkout API](/developers/en/guides/checkout-api/introduction), offer **Pix** payments directly in your store. Pix is ​​an instant payment method available 24 hours a day.
+With the [Checkout API](/developers/en/guides/checkout-api/landing), offer **Pix** payments directly in your store. Pix is ​​an instant payment method available 24 hours a day.
 
 > WARNING
 >
 > Important
 >
-> The Pix payment option will only be displayed if there is a [Pix key registered](/developers/en/guides/checkout-api/receiving-payment-by-pix) in Mercado Pago. </br>
+> The Pix payment option will only be displayed if there is a Pix key registered] in Mercado Pago. If you haven't created it yet, [click here](https://www.youtube.com/watch?v=60tApKYVnkA) and check the necessary steps. </br>
 > </br> <br/>
 > In addition, there is a limit to the value of Pix, established by the Central Bank of Brazil, which can be moved during the night period (between 8 pm and 6 am) of R$1 thousand. For the daytime period (between 6 am and 8 pm), however, there is no movement limit.
 

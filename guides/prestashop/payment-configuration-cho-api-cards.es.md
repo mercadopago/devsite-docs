@@ -1,12 +1,12 @@
 # Configurar pagos con tarjetas
 
 ----[mlb]----
-Con [Checkout Transparente](/developers/es/guides/checkout-api/introduction), ofrece pagos con **tarjetas de crédito o débito** directamente en tu tienda, sin necesidad de que el comprador esté redirigido para realizar el pago.
+Con [Checkout Transparente](/developers/es/guides/checkout-api/landing), ofrece pagos con **tarjetas de crédito o débito** directamente en tu tienda, sin necesidad de que el comprador esté redirigido para realizar el pago.
 
 ------------
 
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-Con [Checkout API](/developers/es/guides/checkout-api/introduction), ofrece pagos con **tarjetas de crédito o débito** directamente en tu tienda, sin necesidad de que el comprador esté redirigido para realizar el pago.
+Con [Checkout API](/developers/es/guides/checkout-api/landing), ofrece pagos con **tarjetas de crédito o débito** directamente en tu tienda, sin necesidad de que el comprador esté redirigido para realizar el pago.
 
 ------------
  
