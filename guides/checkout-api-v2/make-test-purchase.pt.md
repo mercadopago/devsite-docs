@@ -17,11 +17,11 @@ Pronto! Finalizadas essas etapas a integração terá sido concluída e você j�
 
 > PREV_STEP_CARD_PT
 >
-> Criar usuário de teste
+> Gestão de pagamentos
 >
-> Saiba como criar usuários para testar a integração do Checkout Transparente.
+> Saiba como fazer a gestão dos pagamentos da sua loja.
 >
-> [Criar usuário de teste](/developers/pt/docs/checkout-api/integration-test/create-test-user)
+> [Gestão de pagamentos](/developers/pt/docs/checkout-api/payment-management)
 
 > NEXT_STEP_CARD_PT
 >
