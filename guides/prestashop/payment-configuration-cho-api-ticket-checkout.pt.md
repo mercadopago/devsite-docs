@@ -1,12 +1,12 @@
 # Configurar os pagamentos com ticket checkout
 
 ----[mlb]----
-Com o **ticket checkout**, ofereça em sua loja pagamentos em dinheiro utilizando o [Checkout Transparente](/developers/pt/guides/checkout-api/introduction).
+Com o **ticket checkout**, ofereça em sua loja pagamentos em dinheiro utilizando o [Checkout Transparente](/developers/pt/guides/checkout-api/landing).
 
 ------------
 
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-Com o **ticket checkout**, ofereça em sua loja pagamentos em dinheiro utilizando o [Checkout API](/developers/pt/guides/checkout-api/introduction).
+Com o **ticket checkout**, ofereça em sua loja pagamentos em dinheiro utilizando o [Checkout API](/developers/pt/guides/checkout-api/landing).
 
 ------------
 
