@@ -1,8 +1,8 @@
 ---
 content_section_with_media:
  - title: Yampi
- - message: A Yampi é uma plataforma de e-commerce focada em aprimorar os processos de compra e venda online. A integração com o Mercado Pago permitirá seu e-commerce receber pagamentos de forma ágil e segura, seja ele tradicional ou dropshipping.
- - media_video: https://www.youtube.com/embed/U_aJpnVLVjE
+ - message: Yampi is an e-commerce platform focused on improving online buying and selling processes. Integration with Mercado Pago will allow your e-commerce to receive payments quickly and securely, whether traditional or dropshipping.
+ - media_video: https://www.youtube.com/embed/U_aJpn 
 ---
 
 --- mini_landing_separator ---
@@ -17,8 +17,12 @@ available_countries: mlb
 bullet_section_with_media:
  - title: Vantagens
  - type: reversed
- - message: Fast and intuitive integration; more security in the processing of your sales; receive payments with the main payment methods accepted in the country (bank transfer, credit card and Pix).
- - image: /prestashop/prestashop-benefit.png
+ - message: In a short time you perform the integration settings to start receiving with Mercado Pago.
+ - benefit_title: Shopping in a single environment
+ - benefit_message: The entire purchase process takes place within the online store environment, optimizing the buyer's payment steps.
+ - benefit_title: Various payment methods
+ - benefit_message: Receive payments with the main payment methods accepted in the country (boleto bancário, credit card and Pix).
+ - image: /yampi/landing.png
 ---
  
 --- mini_landing_separator ---

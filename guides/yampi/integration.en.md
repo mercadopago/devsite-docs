@@ -1,15 +1,17 @@
 # Integration configuration
  
 To integrate with Mercado Pago, follow the procedures below.
- 
-1. On the Admin Panel of your Prestashop store, access the **Modules and Services** menu, find the Mercado Pago plugin and click on **configure**.
-2. On the plugin management screen, fill in the required fields according to your business information.
-3. In the **Location** field, select the country of operation of your Mercado Pago account.
-4. In the **Credentials** section, confirm that the fields are properly filled in according to the [credentials](/developers/en/guides/additional-content/credentials) indicated in their [Dashboard](/developers/en/guides/additional-content/dashboard/introduction).
-5. On the module management screen, enter the **name and category of your store**.
-6. If you are a member of the **&lt;dev&gt;program**, the Mercado Pago developer program, enter your *integrator_id* as a member of the program. If you are still a member, [click here](/developers/en/developer-program) for more information.
- 
-Once the business settings are done, configure your store's payment experiences according to the selected checkout type.
+
+1. On your Yampi store's Dashboard, access the **Checkout** menu and click on **Pagamento**.
+2. On the **payment gateway management** screen, click on the **+ Nova afiliação**  button and select the Mercado Pago gateway.
+3. Then, indicate the **payment method name** that will appear to the buyer, for example, "Mercado Pago - Pix".
+4. Enter the text that **will identify the payment on the card statement**. This field cannot contain spaces or special characters.
+5. Select **Sim** to indicate that transactions will be automatically authorized and captured or **Não** for transactions to be automatically authorized and captured later within 5 days.
+6. On the same page, you will find the `Public key` and `Access token` fields, which must be filled in with the [credentials](/developers/en/guides/additional-content/credentials/credentials) of **production** indicated in your [Dashboard](/developers/en/guides/additional-content/dashboard/introduction) of Mercado Pago. If your account is new and the credentials have not been activated previously, Mercado Pago will ask you to [create a new application](/developers/en/guides/additional-content/dashboard/applications).
+7. Click **Salvar** to confirm the integration information. To change the information entered, on the **payment gateway management** screen, click on **Editar** next to the Mercado Pago gateway.
+8. Once the integration settings have been made, select the payment methods that will be available for use with Mercado Pago. You will be able to select all the ones you want and then edit them or configure them manually after the plugin settings. For more information, see the [Payment configuration](/developers/en/docs/yampi/payment-configuration-cho-api) section.
+
+Once the business settings are done, configure your store's payment experience with Mercado Pago's Checkout Transparente.
 
 > PREV_STEP_CARD_EN
 >
@@ -17,7 +19,7 @@ Once the business settings are done, configure your store's payment experiences 
 >
 > Know the prerequisites to perform the integration.
 >
-> [Prerequisites](/developers/en/docs/prestashop/prerequisites)
+> [Prerequisites](/developers/en/docs/yampi/prerequisites)
 
 > NEXT_STEP_CARD_EN
 >
@@ -25,4 +27,4 @@ Once the business settings are done, configure your store's payment experiences 
 >
 > Learn how to configure Mercado Pago checkouts to receive payments from your store.
 >
-> [Payment configuration](/developers/en/docs/prestashop/payment-configuration)
+> [Payment configuration](/developers/en/docs/yampi/payment-configuration-cho-api)
