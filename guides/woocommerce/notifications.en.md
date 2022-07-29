@@ -27,8 +27,8 @@ To receive IPN notifications, follow the steps below:
 
 > NEXT_STEP_CARD_EN
 >
-> Configure the payment methods
+> Test the integration
 >
-> Learn how to configure the different payment methods in the store.
+> Test your integration to verify it is complete.
 >
-> [Configure the payment methods](/developers/es/docs/woocommerce/payments-configuration)
+> [Testing the integration](/developers/en/docs/woocommerce/integration-test)

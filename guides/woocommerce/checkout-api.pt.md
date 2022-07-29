@@ -22,7 +22,7 @@ Para salvar as alterações nas configurações, clique no botão **Salvar alter
 >
 > Configure pagamentos com o Checkout Pro do Mercado Pago.
 >
-> [Checkout Pro](/developers/pt/docs/woocommerce/payments-configuration/checkoutpro)
+> [Checkout Pro](/developers/pt/docs/woocommerce/integration-configuration/payments-configuration/checkoutpro)
 
 > NEXT_STEP_CARD_PT
 >
@@ -30,4 +30,4 @@ Para salvar as alterações nas configurações, clique no botão **Salvar alter
 >
 > Configure pagamentos com métodos de pagamento off-line.
 >
-> [Métodos de pagamento offline](/developers/pt/docs/woocommerce/payments-configuration/offline-payments)
+> [Métodos de pagamento offline](/developers/pt/docs/woocommerce/integration-configuration/payments-configuration/offline-payments)

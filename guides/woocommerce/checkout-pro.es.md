@@ -35,7 +35,7 @@ Para guardar los cambios en la configuración, haz clic en el botón **Guardar c
 >
 > Configura pagos con débito o crédito con Checkout API
 >
-> [Crédito o débito con Checkout API](/developers/es/docs/woocommerce/payments-configuration/credit-debit)
+> [Crédito o débito con Checkout API](/developers/es/docs/woocommerce/integration-configuration/payments-configuration/credit-debit)
 ------------
 
 ----[mlb]----
@@ -53,5 +53,5 @@ Para guardar los cambios en la configuración, haz clic en el botón **Guardar c
 >
 > Configura pagos con débito o crédito con Checkout Transparente
 >
-> [Crédito o débito con Checkout Transparente](/developers/es/docs/woocommerce/payments-configuration/credit-debit)
+> [Crédito o débito con Checkout Transparente](/developers/es/docs/woocommerce/integration-configuration/payments-configuration/credit-debit)
 ------------

@@ -27,12 +27,12 @@ Para guardar los cambios en la configuración, haz clic en el botón **Guardar c
 >
 > Configura pagos con métodos de pago offline
 >
-> [Métodos de pago offline](/developers/es/docs/woocommerce/payments-configuration/offline-payments)
+> [Métodos de pago offline](/developers/es/docs/woocommerce/integration-configuration/payments-configuration/offline-payments)
 
 > NEXT_STEP_CARD_ES
 >
-> Testear la integración
+> Configurar las notificaciones de pago
 >
-> Haz un test para comprobar que tu integración esté completa.
+> Activa las notificaciones IPN en tu integración.
 >
-> [Testear la integración](/developers/es/docs/woocommerce/integration-test)
+> [Configurar las notificaciones](/developers/es/docs/woocommerce/integration-configuration/notifications)

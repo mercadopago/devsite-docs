@@ -34,4 +34,4 @@ Você pode optar por configurar estes métodos de pagamento:
 >
 > Integrar o Checkout Pro como meio de pagamento na loja.
 >
-> [Configurar o Checkout Pro](/developers/pt/docs/woocommerce/payments-configuration/checkoutpro)
+> [Configurar o Checkout Pro](/developers/pt/docs/woocommerce/integration-configuration/payments-configuration/checkoutpro)

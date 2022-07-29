@@ -17,15 +17,16 @@ Para guardar los cambios en la configuración, haz clic en el botón **Guardar c
 >
 > Configura pagos con débito o crédito con Checkout API
 >
-> [Débito o crédito con Checkout API](/developers/es/docs/woocommerce/payments-configuration/credit-debit)
+> [Débito o crédito con Checkout API](/developers/es/docs/woocommerce/integration-configuration/payments-configuration/credit-debit)
 
 > NEXT_STEP_CARD_ES
 >
-> Prueba la integración
+> Configurar las notificaciones de pago
 >
-> Haz un test para comprobar que tu integración esté completa.
+> Activa las notificaciones IPN en tu integración.
 >
-> [Prueba la integración](/developers/es/docs/woocommerce/integration-test)
+> [Configura las notificaciones](/developers/es/docs/woocommerce/integration-configuration/notifications)
+
 ------------
 
 ----[mlb]----
@@ -35,7 +36,7 @@ Para guardar los cambios en la configuración, haz clic en el botón **Guardar c
 >
 > Configura pagos con débito o crédito con Checkout Transparente
 >
-> [Débito o crédito con Checkout Transparente](/developers/es/docs/woocommerce/payments-configuration/credit-debit)
+> [Débito o crédito con Checkout Transparente](/developers/es/docs/woocommerce/integration-configuration/payments-configuration/credit-debit)
 
 > NEXT_STEP_CARD_ES
 >
@@ -43,5 +44,5 @@ Para guardar los cambios en la configuración, haz clic en el botón **Guardar c
 >
 > Configura pagos con Pix.
 >
-> [Pix](/developers/es/docs/woocommerce/payments-configuration/pix)
+> [Pix](/developers/es/docs/woocommerce/integration-configuration/payments-configuration/pix)
 ------------

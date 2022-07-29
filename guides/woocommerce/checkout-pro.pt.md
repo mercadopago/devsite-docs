@@ -34,7 +34,7 @@ Com o Checkout Pro, o comprador será direcionado da loja para o site do Mercado
 >
 > Configure pagamentos com cartões de débito ou crédito no Checkout API.
 >
-> [Crédito ou débito com o Checkout API](/developers/pt/docs/woocommerce/payments-configuration/credit-debit)
+> [Crédito ou débito com o Checkout API](/developers/pt/docs/woocommerce/integration-configuration/payments-configuration/credit-debit)
 ------------
 
 ----[mlb]----
@@ -52,5 +52,5 @@ Com o Checkout Pro, o comprador será direcionado da loja para o site do Mercado
 >
 > Configure pagamentos com cartões de débito ou crédito no Checkout Transparente.
 >
-> [Crédito ou débito com Checkout Transparente](/developers/pt/docs/woocommerce/payments-configuration/credit-debit)
+> [Crédito ou débito com Checkout Transparente](/developers/pt/docs/woocommerce/integration-configuration/payments-configuration/credit-debit)
 ------------

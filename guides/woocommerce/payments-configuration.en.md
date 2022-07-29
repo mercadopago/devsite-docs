@@ -4,20 +4,20 @@ To choose which payment methods to offer through Mercado Pago in the store and c
 
 You can choose to configure these payment methods:
 
-* [Mercado Pago con Checkout Pro](/developers/es/docs/woocommerce/payments-configuration/checkoutpro)
+* [Mercado Pago con Checkout Pro](/developers/es/docs/woocommerce/integration-configuration/payments-configuration/checkoutpro)
 
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-* [Debit or credit with Checkout API](/developers/es/docs/woocommerce/payments-configuration/credit-debit)
+* [Debit or credit with Checkout API](/developers/es/docs/woocommerce/integration-configuration/payments-configuration/credit-debit)
 ------------
 
 ----[mlb]----
-* [Debit or credit with Transparent Checkout](/developers/es/docs/woocommerce/payments-configuration/credit-debit)
+* [Debit or credit with Transparent Checkout](/developers/es/docs/woocommerce/integration-configuration/payments-configuration/credit-debit)
 ------------
 
-* [Offline payment methods](/developers/es/docs/woocommerce/payments-configuration/offline-payments)
+* [Offline payment methods](/developers/es/docs/woocommerce/woocommerce/integration-configuration/payments-configuration/offline-payments)
 
 ----[mlb]----
-* [Pix](/developers/es/docs/woocommerce/payments-configuration/pix)
+* [Pix](/developers/es/docs/woocommerce/integration-configuration/payments-configuration/pix)
 ------------
 
 > PREV_STEP_CARD_EN
@@ -34,4 +34,4 @@ You can choose to configure these payment methods:
 >
 > Integrate Checkout Pro in your store.
 >
-> [Configure Checkout Pro](/developers/en/docs/woocommerce/payments-configuration/checkoutpro)
+> [Configure Checkout Pro](/developers/en/docs/woocommerce/integration-configuration/payments-configuration/checkoutpro)
