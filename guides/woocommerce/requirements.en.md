@@ -4,8 +4,8 @@ To use the Mercado Pago integration with WooCommerce on a WordPress site, you mu
 
 | Requirements | Specifications |
 |---|---|
-| Mercado Pago seller account | It is necessary that the integrator has an account in Mercado Pago in order to generate his credentials. If not, click here to create it. |
-| Credentials | The credentials are unique passwords with which we identify an integration in your account, and that serve to capture payments in virtual stores and other applications securely. |
+| Mercado Pago seller account | To make sales, you need a seller account on Mercado Pago. If you don't have one, [click here](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) to create it. |
+| Credentials | The [credentials](/developers/en/guides/additional-content/credentials/credentials) are unique passwords with which we identify an integration in your account, and are used to capture payments in virtual stores and other applications securely. To perform tests and ensure the integration works, **test credentials** will be required. After this step, you will need **production credentials** to receive actual payments. |
 | WordPress | Herramienta Online for the creation of shops, websites and blogs. [Click here](https://es.wordpress.org/) to create your account. Required installation version: 4.9.10 or higher. Proved up to 5.8.x |
 | WooCommerce | WordPress Plugin that allows you to create virtual stores from open source. [Click here](https://woocommerce.com/es-es/woocommerce-features/) for more information. Required version: 3.x higher. Proved up to 5.6.x |
 | Environment | MySQL, PHP or the equivalent service that supports the installation of WordPress. |
@@ -24,7 +24,7 @@ To use the Mercado Pago integration with WooCommerce on a WordPress site, you mu
 >
 > Learn the benefits of integrating WooCommerce to offer payment with Mercado Pago.
 >
-> [Introduction](/developers/en/docs/woocommerce/landing)
+> [Introduction](/developers/en/docs/woocommerce/introduction)
 
 > NEXT_STEP_CARD_EN
 >
