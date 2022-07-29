@@ -33,6 +33,7 @@ paths:
                     eng: Items information.
                     spa: Información sobre el ítem
                     por: Informações sobre o item
+                  required: true 
                   items:
                     type: object
                     properties:
@@ -41,8 +42,9 @@ paths:
                         description: Item ID.
                         x-description-i18n:
                           eng: Item ID.
-                          spa: Indentificador del ítem
-                          por: Indentificador do item
+                          spa: Identificador del ítem
+                          por: Identificador do item
+                        required: true 
                       title:
                         type: string
                         example: Dummy Title
@@ -51,6 +53,7 @@ paths:
                           eng: This is the item`s title, which will display during the payment process, at checkout, activities, and emails.
                           spa: Este es el título del ítem, que se mostrará durante el proceso de pago, en el checkout, actividades y correos electrónicos.
                           por: Este é o título do item, que será exibido durante o processo de pagamento, no checkout, nas atividades e nos e-mails.
+                        required: true 
                       description:
                         type: string
                         example: Dummy description
@@ -83,6 +86,7 @@ paths:
                           eng: Item quantity. This property is used to calculate the total cost.
                           spa: Cantidad de ítems. Esta propiedad se utiliza para calcular el costo total.
                           por: Quantidade de itens. Esta propriedade é usada para calcular o custo total.
+                        required: true 
                       currency_id:
                         type: string
                         example: U$
@@ -107,6 +111,7 @@ paths:
                           eng: Unit price of the item. This property is used together with the property quantity to determine the order cost.
                           spa: Precio unitario del ítem. Esta propiedad se usa junto con propiedad quantity para determinar el costo de la orden.
                           por: Preço unitário do item. Essa propriedade é usada em conjunto com a propriedade de quantity para determinar o custo do pedido.
+                        required: true 
                 payer:
                   type: object
                   description: Buyer´s information, such as name, last name, e-mail, phone, personal identification, address, and registration date.
