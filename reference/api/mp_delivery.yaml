@@ -491,7 +491,7 @@ paths:
                         example: "2022-02-21T21:49:55Z"
                       deliveryDateTime:
                         type: string
-                        description: Delivery completion time (UTC date-time in ISO timestamp format).
+                        description: Delivery completion time (UTC date-time in ISO timestamp format). This information will be setted once the order was delivered.
                         example: "2022-02-21T21:52:55Z"
                   extension:
                     type: object
@@ -819,12 +819,110 @@ paths:
                     type: string
                     enum:
                       - 500-- Internal server error
+  /proximity-integration/shipments/{shipment_id}/cancellation-reasons:
+    put:
+      tags:
+        - $ref: '#/tags/mp-delivery'
+      summary: Reasons for cancellation
+      description: This endpoint returns the cancellation reasons that are available for an order. It is important to remember that cancellation reasons vary depending on the current status of the order.
+      parameters:
+        - name: shipment_id
+          in: path
+          description: Unique ID that identifies the shipment of the order. 
+          required: true
+          schema:
+            type: string
+            example: 41034141533
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: array
+                description: Array of reasons of cancellation.
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: string
+                      description: ID of the reason of cancellation.
+                      example: CS7452
+                    value:
+                      type: string
+                      description: Name of the reason of cancellation.
+                      example: out_of_stock
+                    message:
+                      type: string
+                      description: Description of the reason of cancellation.
+                      example: Me falta alguno de los productos.
+        '401':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey: 
+                    type: string
+                    enum:
+                      - 401-- Unauthorized - Access Token is invalid 
+        '403':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                 type: object
+                 properties:
+                    errorKey:
+                      type: string
+                      enum:
+                        - 403-- Forbidden - User cannot access this resource 
+                      
+        '424':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 424-- Not Found - Failed to get some information of the order 
+        '500':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500-- Internal server error 
   /proximity-integration/shipments/{shipment_id}/cancel:
     put:
       tags:
         - $ref: '#/tags/mp-delivery'
       summary: Cancel order
-      description: This endpoint cancels an order, changing its status
+      description: This endpoint cancels an order, changing its status. 
       parameters:
         - name: shipment_id
           in: path
@@ -843,6 +941,23 @@ paths:
                   type: string
                   description: This property indicates the order status, which must have the value "cancelled" for this endpoint.
                   example: "cancelled"
+                cancellation_reason:
+                  type: object
+                  description: Reason of the cancellation that was retrieved from the endpoint of cancellation reason.
+                  properties:
+                    id:
+                      type: string
+                      description: ID of the reason of cancellation.
+                      example: CS7452
+                    value:
+                      type: string
+                      description: Name of the reason of cancellation.
+                      example: out_of_stock
+                    message:
+                      type: string
+                      description: Description of the reason of cancellation.
+                      example: Me falta alguno de los productos.
+           
       responses:
         '200':
           description: Success

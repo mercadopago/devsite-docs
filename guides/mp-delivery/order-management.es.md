@@ -13,6 +13,10 @@ Con `shipping_id` en la mano, puede:
 * Imprimir el recibo de la orden.
 * Cancelar la orden.
 
+## Diagrama de flujo de estado
+
+![flowchart](/images/mpdelivery/flowchart_delivery_es.png)
+
 > PREV_STEP_CARD_ES
 >
 > Configuración de integración
