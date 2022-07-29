@@ -2,15 +2,14 @@
 
 Para configurar a integração dos bricks você precisa seguir os passos abaixo:
 
-1. [Criar container](https://omega.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/checkout-bricks-beta/integration/configure-integration#bookmark_criar_container)
-2. [Incluir e configurar a biblioteca MercadoPago.js](https://www.omega.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/checkout-bricks-beta/integration/configure-integration#bookmark_incluir_e_configurar_a_biblioteca_mercadopago.js)
-3. [Instanciar brick](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/checkout-bricks-beta/integration/configure-integration#bookmark_instanciar_brick)
-4. [Renderizar brick](/developers/pt/docs/checkout-bricks-beta/integration/configure-integration#bookmark_renderizar_brick)
-5. [Instalar o SDK do Mercado Pago](/developers/pt/docs/checkout-bricks-beta/integration/configure-integration#bookmark_instalar_o_sdk_do_mercado_pago)
+1. [Criar container](#bookmark_criar_container)
+2. [Incluir e configurar a biblioteca MercadoPago.js](#bookmark_incluir_e_configurar_a_biblioteca_mercadopago.js)
+3. [Instanciar brick](#bookmark_instanciar_brick)
+4. [Renderizar brick](#bookmark_renderizar_brick)
 
-> Os passos são realizados no back-end ou no front-end. As pills **Client-Side** e **Server-Side** localizadas imediatamentamente ao lado do título te ajudam a identificar qual passo é realizado em qual instância. 
-
-E, para ajudar, preparamos um [exemplo de codigo](/developers/pt/docs/checkout-bricks-beta/integration/code-example#bookmark_configura_o_da_integra%C3%A7%C3%A3o) completo da configuração dos bricks, que você pode usar como modelo.
+> Os passos são realizados no back-end ou no front-end. As pills **Client-Side** e **Server-Side** localizadas imediatamentamente ao lado do título te ajudam a identificar qual passo é realizado em qual instância. <br/></br>
+> <br/></br>
+> E, para ajudar, preparamos um [exemplo de codigo](/developers/pt/docs/checkout-bricks/integration/code-example) completo da configuração dos bricks, que você pode usar como modelo.
 
 > CLIENT_SIDE
 >
@@ -42,12 +41,12 @@ Você vai precisar criar um container para definir o local que o brick será ins
 >
 > Atenção
 >
-> O codigo JS pode ser incluido em uma tag `<script>` ou um arquivo JS separado.
+> O codigo JS pode ser incluido em uma tag `< script >` ou um arquivo JS separado.
 
 Você precisará instalar o SDK adicionando o seguinte em seu código HTML:
 
 ```html
-<script src="https://beta-sdk.mercadopago.com/gama/js/v2"></script>
+<script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 
 Em seguida, inicialize o SDK definindo sua [chave pública]([FAKER][CREDENTIALS][URL]) usando código JavaScript:
@@ -71,7 +70,7 @@ const bricksBuilder = mp.bricks();
 >
 > Atenção
 >
-> Durante a instanciação do brick, é possível que apareçam diferentes erros. Para detalhamento de cada um deles, veja a seção [Possíveis erros](/developers/pt/docs/checkout-bricks-beta/additional-content/possible-errors).
+> Durante a instanciação do brick, é possível que apareçam diferentes erros. Para detalhamento de cada um deles, veja a seção [Possíveis erros](/developers/pt/docs/checkout-bricks/additional-content/possible-errors).
 
 > CLIENT_SIDE
 >
@@ -121,10 +120,13 @@ const renderCardPaymentBrick = async (bricksBuilder) => {
       },
     },
   };
-  cardPaymentBrickController = await bricksBuilder.create('cardPayment', 'cardPaymentBrick_container', settings);
+  const cardPaymentBrickController = await bricksBuilder.create('cardPayment', 'cardPaymentBrick_container', settings);
 };
 renderCardPaymentBrick(bricksBuilder);
 ```
+
+O resultado de renderizar o brick deve ser como na imagem abaixo:
+
 ![cardform](checkout-bricks/card-form-pt.png)
 
 > PREV_STEP_CARD_PT
@@ -133,7 +135,7 @@ renderCardPaymentBrick(bricksBuilder);
 >
 > Conheça os pré-requisitos necessários para integrar o Checkout Bricks.
 >
-> [Pré-requisitos](/developers/pt/docs/checkout-bricks-beta/integration/prerequisites)
+> [Pré-requisitos](/developers/pt/docs/checkout-bricks/integration/prerequisites)
 
 > NEXT_STEP_CARD_PT
 >
@@ -141,4 +143,4 @@ renderCardPaymentBrick(bricksBuilder);
 >
 > Após configurar a integração, veja como enviar o pagamento ao Mercado Pago.
 >
-> [Enviar pagamento ao Mercado Pago](/developers/pt/docs/checkout-bricks-beta/integration/payment-submission) 
+> [Enviar pagamento ao Mercado Pago](/developers/pt/docs/checkout-bricks/integration/payment-submission) 

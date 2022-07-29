@@ -13,6 +13,10 @@ Com o `shipment_id` em mãos, você consegue:
 * Imprimir o comprovante do pedido.
 * Cancelar o pedido.
 
+## Diagrama do Fluxo de Estados
+
+![flowchart](/images/mpdelivery/flowchart_delivery_pt.png)
+
 > PREV_STEP_CARD_PT
 >
 > Configuração da integração

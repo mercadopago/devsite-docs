@@ -34,7 +34,6 @@ It's quite easy to do:
 >
 >If your POS integrator has several tenants, see topic 4 and 5. Check your integration security and implement [OAuth](/developers/es/docs/qr-code/additional-content/security/oauth/introduction).
 
-
 ## 3. Generate test users
 
 To start integrating, you need a minimum of two users: a buyer and a seller.

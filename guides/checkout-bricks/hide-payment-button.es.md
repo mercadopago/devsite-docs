@@ -1,4 +1,8 @@
-# Ocultar botón de pago
+> CLIENT_SIDE
+>
+> h1
+>
+> Ocultar botón de pago
 
 | Brick  | Card Payment Form  |
 | --- | --- |
@@ -51,11 +55,12 @@ function createPayment(){
 
 > PREV_STEP_CARD_ES
 >
-> Configurar la cantidad máxima y mínima de cuotas
+> Configurar medios de pago aceptados
 >
-> Si lo deseas, puedes configurar la cantidad máxima y mínima de cuotas. Aprende cómo.
+> Aprende a configurar pagos exclusivamente con crédito o débito.
 >
-> [Configurar cantidad máxima y mínima de cuotas](/developers/es/docs/checkout-bricks-beta/additional-customization/max-and-min-installments)
+> [Configurar medios de pago aceptados](/developers/es/docs/checkout-bricks/additional-customization/configure-payment-methods)
+
 
 > NEXT_STEP_CARD_ES
 >
@@ -63,4 +68,4 @@ function createPayment(){
 >
 > Además, si lo deseas, puedes ocultar los títulos de la UI y las banderas admitidas en Card Payment Brick.
 >
-> [Ocultar títulos y banderas](/developers/es/docs/checkout-bricks-beta/additional-customization/hide-title-and-flags)
+> [Ocultar títulos y banderas](/developers/es/docs/checkout-bricks/additional-customization/hide-title-and-flags)

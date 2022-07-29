@@ -1,5 +1,12 @@
 
 # Como gerar o seu relatório de Liberações?
+
+----[mla]----
+> NOTE
+>
+> Gerencie suas vendas com código QR de um jeito fácil
+>
+> Criamos novas colunas que permitem que você identifique as carteiras digitais ou os bancos que seus clientes utilizam ao pagarem com um código QR do Mercado Pago. Atualize suas preferências de configuração [no painel](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports/release/settings) ou [via API](/developers/pt/guides/additional-content/reports/released-money/api) para incluir as colunas nos seus relatórios.
 ------------
 
 ## Canais de geração
@@ -42,10 +49,41 @@ Todas as opções disponíveis na hora de baixar seu relatório.
 | Arquivo | Os relatórios gerados ficam salvos na sua conta do Mercado Pago. |
 
 
-> NOTE
->
-> Nota
->
+## Notificações
+
+### Webhook
+
+Webhook (também conhecido como "retorno de chamada web"), é um método simples que permite que um aplicativo ou sistema forneça informações em tempo real toda vez que um evento acontece, ou seja, é uma maneira de receber dados entre dois sistemas de forma passiva, por meio de um HTTP POST. No caso dos relatórios usados na reconciliação, uma notificação é enviada ao usuário que tiver configurado este serviço quando seus arquivos forem gerados.
+
+| Atributo        | Descrição                         |
+|-----------------|-----------------------------------|
+| transaction_id  | ID da transação                   |
+| request_date    | Data da solicitação               |
+| generation_date | Data da geração                   |
+| files           | Arquivos disponíveis              |
+| type            | Formato do arquivo                |
+| url             | Link de download                  |
+| name            | Nome do arquivo                   |
+| status          | Status do relatório               |
+| creation_type   | Criação manual ou agendada        |
+| report_type     | Tipo de relatório                 |
+| is_test         | Determina se é um teste           |
+| signature       | Assinatura digital da notificação |
+
+### Senha para criptografia
+
+Para garantir o processo de notificação ao sistema, será enviado no corpo da mensagem (payload) um atributo chamado **_"signature"_** para validar que a notificação Webhook teve origem no Mercado Pago e que não se trata de uma imitação.
+
+A **signature** é criada ao unir o `transaction_id` com a `senha criptografada` na seção **_"Notificação por Webhook"_** e o `generation_date` do relatório. Assim que os valores forem vinculados, eles são criptografados usando o algoritmo **_BCrypt_** da seguinte maneira:
+
+`signature = BCrypt(transaction_id + '-' + password_for_encryption + '-' + generation_date)`
+
+Para validar que foi o Mercado Pago quem emitiu a notificação, é necessário usar a **_função de verificação oferecida_** pelo algoritmo do **_BCrypt_** para a linguagem desejada.
+
+**Exemplo Java:**
+
+`BCrypt.checkpw(transaction_id + '-' + password_for_encryption + '-' + generation_date, payload_signature)`
+
 > Tenha em mãos o [Glossário do relatório](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/released-money/glossary) de ----[mla]---- Liquidações ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------ para consultá-lo quando precisar ou queira conferir algum termo técnico.
 
 <hr/>

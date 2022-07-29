@@ -25,19 +25,13 @@ Card information will be turned into a token so that you can send data to your s
 
 If you still don't have an account to check your credentials, [sign in](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
 
-> NOTE
->
-> Note
->
-> This documentation uses the new library version. To see the previous version, go to [integrate credit card payment with MercadoPago.js V1](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v1/receiving-payment-by-card) section.
-
 The card information will be converted into a token so you can send the data to your servers in a secure way.
 
 ### 2. Add payment form
 
 Before capturing the card data, provide a form to load all the information.
 
-With MercadoPago.js V2 library CardForm functionality you can get and validate all the data needed to identify the type and name of payment method, issuing bank, number of installments and more. 
+With MercadoPago.js library CardForm functionality you can get and validate all the data needed to identify the type and name of payment method, issuing bank, number of installments and more. 
 
 CardForm provides secure implementation and correct token of card data. 
 
@@ -47,12 +41,27 @@ Use the following form and add the styles of your choice.
 
 ```html
 <!-- Step #2 -->
+<style>
+  #form-checkout {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+  }
+
+  .container {
+    height: 18px;
+    display: inline-block;
+    border: 1px solid rgb(118, 118, 118);
+    border-radius: 2px;
+    padding: 1px 2px;
+  }
+</style>
 <form id="form-checkout">
-   <div id="form-checkout__cardNumber-container"></div>
-   <div id="form-checkout__expirationDate-container"></div>
+   <div id="form-checkout__cardNumber-container" class="container"></div>
+   <div id="form-checkout__expirationDate-container" class="container"></div>
    <input type="text" name="cardholderName" id="form-checkout__cardholderName"/>
    <input type="email" name="cardholderEmail" id="form-checkout__cardholderEmail"/>
-   <div id="form-checkout__securityCode-container"></div>
+   <div id="form-checkout__securityCode-container" class="container"></div>
    <select name="issuer" id="form-checkout__issuer"></select>----[mla, mlb, mlu, mlc, mpe, mco]----
    <select name="identificationType" id="form-checkout__identificationType"></select>------------
    <input type="text" name="identificationNumber" id="form-checkout__identificationNumber"/>
@@ -178,7 +187,7 @@ The callbacks option accepts different functions that are activated in different
 > 
 > Technical reference
 > 
-> Learn more information about callbacks in the [technical references](https://github.com/mercadopago/sdk-js).
+> Learn more information about callbacks in the [technical references](https://github.com/mercadopago/sdk-js/blob/main/API/card-form.md).
 
 When submitting the form, we generate a token as a secure representation of the card data. You can access this token using the `getCardFormData` function, as we showed in the previous example in the `onSubmit` callback. We will also store the token in a hidden `input` within your form which we will name `MPHiddenInputToken`.
 

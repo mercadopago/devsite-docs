@@ -30,7 +30,7 @@ const settings = {
 >
 > To simplify and optimize the integration process, view an example of a Checkout Bricks integration.
 >
-> [Send payments to Mercado Pago](/developers/en/docs/checkout-bricks-beta/integration/code-example)
+> [Send payments to Mercado Pago](/developers/en/docs/checkout-bricks/integration/code-example)
 
 > NEXT_STEP_CARD_EN
 >
@@ -38,4 +38,4 @@ const settings = {
 >
 > Learn how to change the Card Payment Brick CSS variables if you need.
 >
-> [Change CSS variables](/developers/en/docs/checkout-bricks-beta/additional-customization/modify-variables)
+> [Change CSS variables](/developers/en/docs/checkout-bricks/additional-customization/modify-css-variables)

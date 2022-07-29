@@ -12,7 +12,15 @@ paths:
         - $ref: '#/tags/subscriptions'
         - $ref: '#/tags/checkout-api'
       summary: Get payment methods
+      x-summary-i18n:
+        eng: Get payment methods
+        spa: Obtener medios de pago
+        por: Obter meios de pagamento
       description: Consult all the available payment methods and obtain a list with the details of each one and its properties
+      x-description-i18n:
+        eng: Consult all the available payment methods and obtain a list with the details of each one and its properties
+        spa: Consulta todos los medios de pago disponibles y obtén un listado con el detalle de cada uno y sus propiedades
+        por: Consulte todas as formas de pagamento disponíveis e obtenha uma lista com os detalhes de cada uma delas e suas propriedades
       responses:
         '200':
           description: Success
@@ -26,14 +34,26 @@ paths:
                       type: string
                       example: visa
                       description: Payment method identifier.
+                      x-description-i18n:
+                        eng: Payment method identifier.
+                        spa: Identificador del medio de pago
+                        por: Id do meio de pagamento
                     name:
                       type: string
                       example: Visa
                       description: Descriptive name of the payment method, for example Visa, American Express, etc.
+                      x-description-i18n:
+                        eng: Descriptive name of the payment method, for example Visa, American Express, etc.
+                        spa: Nombre descriptivo del método de pago, por ejemplo Visa, American Express, etc.
+                        por: Nome descritivo da forma de pagamento como, por exemplo, Visa, American Express, etc.
                     payment_type_id:
                       type: string
                       example: credit_card
                       description: Types of payment methods.
+                      x-description-i18n:
+                        eng: Types of payment methods.
+                        spa: Tipo de medio de pago
+                        por: Tipo de meio de pagamento
                       enum:
                         - ticket -- Printed ticket
                         - atm -- Payment by ATM
@@ -44,6 +64,10 @@ paths:
                       type: string
                       example: active
                       description: Payment methods status.
+                      x-description-i18n:
+                        eng: Payment methods status.
+                        spa: Estado del medio de pago
+                        por: Estado do meio de pagamento
                       enum:
                         - active -- Available for use.
                         - deactive -- Decommissioned, we don't support it anymore.
@@ -52,14 +76,26 @@ paths:
                       type: string
                       example: https://www.mercadopago.com/org-img/MP3/API/logos/visa.gif
                       description: Logo to display on secure sites. Link to the thumbnail image that identifies the issuer and the payment method hosted on a server with a secure transfer protocol.
+                      x-description-i18n:
+                        eng: Logo to display on secure sites. Link to the thumbnail image that identifies the issuer and the payment method hosted on a server with a secure transfer protocol.
+                        spa: Logo para mostrar en sitios seguros. Enlace a la imagen en miniatura que identifica al issuer (emisor) y al medio de pago alojado en un servidor con protocolo de transferencia seguro.
+                        por: Logo para exibir em sites seguros. Link para a imagem em miniatura que identifica o issuer (emissor) e o meio de pagamento hospedado em um servidor com protocolo de transferência seguro.
                     thumbnail:
                       type: string
                       example: http://img.mlstatic.com/org-img/MP3/API/logos/visa.gif
                       description: Logo to show. Link to the thumbnail image that identifies the issuer and the payment method.
+                      x-description-i18n:
+                        eng: Logo to show. Link to the thumbnail image that identifies the issuer and the payment method.
+                        spa: Logo para mostrar. Enlace a la imagen en miniatura que identifica al issuer (emisor) y al medio de pago.
+                        por: Logo para exibir. Link para a imagem em miniatura que identifica o issuer (emissor) e o meio de pagamento.
                     deferred_capture:
                       type: string
                       example: supported
                       description: Indicates whether the capture can be delayed or not. It has three possible values.
+                      x-description-i18n:
+                        eng: Indicates whether the capture can be delayed or not. It has three possible values.
+                        spa: Indica si la captura puede ser diferida o no. Tiene tres valores posibles.
+                        por: Indica se a captura pode ser lenta ou não. Tem três valores possíveis.
                       enum:
                         - supported -- This payment method supports authorization and capture operations.
                         - unsupported -- Deferred capture is not available for this payment method.
@@ -70,32 +106,56 @@ paths:
                         bin:
                           type: object
                           description: Regular expression through which it will be verified if a bin corresponds to the means of payment.
+                          x-description-i18n:
+                            eng: Regular expression through which it will be verified if a bin corresponds to the means of payment.
+                            spa: Expresión regular por la cual se verificará si un bin corresponde al medio de pago.
+                            por: Expressão regular pela qual será verificado se um bin corresponde ao meio de pagamento.
                           properties:
                             pattern:
                               type: string
                               example: ^(4)
                               description: Regular expression representing the accepted bins.
+                              x-description-i18n:
+                                eng: Regular expression representing the accepted bins.
+                                spa: Expresión regular representando los bines aceptados
+                                por: A expressão regular, representando bines aceitos
                             exclusion_pattern:
                               type: string
                               description: Regular expression representing the excluded bins.
-                              example: >-
+                              x-description-i18n:
+                                eng: Regular expression representing the excluded bins.
+                                spa: Expresión regular representando los bines excluídos
+                                por: A expressão regular, representando bines excluídos
+                              example: 
                                     ^(400163|400176|400178|400185|400199|423808|439267|471233|473200|476332|482481|451416|438935|(40117[8-9])|(45763[1-2])|457393|431274)
                             installments_pattern:
                               type: string
                               example: ^(?!(417401|453998|426398|462437|451212|456188))
                               description: Regular expression representing bins allowed to pay with more than one installment.
+                              x-description-i18n:
+                                eng: Regular expression representing bins allowed to pay with more than one installment.
+                                spa: Expresión regular representando los bines aceptados para pagar con más de una cuota
+                                por: A expressão regular, representando bines aceitos para pagar com mais de uma cota
                         card_number:
                           type: object
                           description: Contains information about card length and validaton.
+                          x-description-i18n:
+                            eng: Contains information about card length and validaton.
+                            spa: Contiene información sobre la longitud y la validación de la tarjeta.
+                            por: Contém informações sobre o comprimento e validação do cartão.
                           properties:
                             length:
                               type: string
                               description: Card number length.
+                              x-description-i18n:
+                                eng: Card number length.
+                                spa: Longitud del número de la tarjeta de crédito
+                                por: Comprimento do número do cartão de crédito
                               example: 16
                             validation:
                               type: string
                               example: standard
-                              description: >-
+                              description: 
                                 Whether the card number can be validated using a checksum algorithm
                                 (usually Luhn)
                               enum:
@@ -104,31 +164,51 @@ paths:
                         security_code:
                           type: object
                           description: Card security code information.
+                          x-description-i18n:
+                            eng: Card security code information.
+                            spa: Información del código de seguridad de una tarjeta.
+                            por: Informações do código de segurança do cartão.
                           properties:
                             mode:
                               type: string
                               example: mandatory
                               description: Whether the security code is mandatory or not.
+                              x-description-i18n:
+                                eng: Whether the security code is mandatory or not.
+                                spa: Indica si el código de seguridad es mandatorio o no
+                                por: Indica se o código de segurança é obrigatório ou não
                               enum:
                                 - mandatory -- The security code should be given to process the payment.
                                 - optional -- A payment could be issued without the security code.
                             length:
                               type: number
                               description: Security code length.
+                              x-description-i18n:
+                                eng: Security code length.
+                                spa: Longitud del código de seguridad
+                                por: Comprimento do código de segurança
                               example: 3
                             card_location:
                               type: string
                               example: back
-                              description: >-
+                              description: 
                                 Whether the security code is located in the back or in the front of
                                 the card.
                               enum:
                                 - back -- The security code is located in the back of the card.
                                 - front -- The security code is located in the front of the card.
                       description: Payment method settings.
+                      x-description-i18n:
+                        eng: Payment method settings.
+                        spa: Configuración de métodos de pago
+                        por: Configuração de métodos de pagamento
                     additional_info_needed:
                       type: array
                       description: List of additional information that must be supplied by the payer.
+                      x-description-i18n:
+                        eng: List of additional information that must be supplied by the payer.
+                        spa: Lista de información adicional que debe ser provista por el pagador
+                        por: Lista de informações que devem ser fornecidas pelo pagador
                       enum:
                         - cardholder_identification_number -- Identification number of the card owner.
                         - cardholder_identification_type -- Identification type of the card owner.
@@ -138,14 +218,26 @@ paths:
                       type: number
                       example: 0.5
                       description: Minimum amount that can be processed with this payment method.
+                      x-description-i18n:
+                        eng: Minimum amount that can be processed with this payment method.
+                        spa: Mínimo monto que se puede procesar con este medio de pago
+                        por: Mínimo valor que pode ser processado com este meio de pagamento
                     max_allowed_amount:
                       type: number
                       example: 60000
                       description: Maximum amount that can be processed with this payment method.
+                      x-description-i18n:
+                        eng: Maximum amount that can be processed with this payment method.
+                        spa: Máximo monto que se puede procesar con este medio de pago
+                        por: Máximo valor que pode ser processado com este meio de pagamento
                     accreditation_time:
                       type: number
                       example: 2880
                       description: How many time in minutes could happen until processing of the payment.
+                      x-description-i18n:
+                        eng: How many time in minutes could happen until processing of the payment.
+                        spa: Tiempo de procesamiento del pago
+                        por: Tempo de processamento do pagamento
                     financial_institutions:
                       type: object
                       properties:
@@ -155,16 +247,32 @@ paths:
                         description:
                           type: string
                           description: Descriptive finantial institution name.
+                          x-description-i18n:
+                            eng: Descriptive finantial institution name.
+                            spa: Nombre descriptivo de la institución financiera
+                            por: Nome descritivo para a instituição financeira
                       description: Finantial institution processing this payment method.
+                      x-description-i18n:
+                        eng: Finantial institution processing this payment method.
+                        spa: Institución financiera procesando el medio de pago
+                        por: Instituição financeira processando o meio de pagamento
                     processing_modes:
                       type: string
                       example: aggregator
                       description: The processing mode of the means of payment. There are 2 types.
+                      x-description-i18n:
+                        eng: The processing mode of the means of payment. There are 2 types.
+                        spa: Modo de proceso del medio de pago. Hay 2 tipos.
+                        por: Informações do código de segurança do cartão. Existem 2 tipos.
                       enum:
                         - Aggegator -- aggregator mode. Receive payments using all the cards and promotions that Mercado Pago offers, in addition to bank transfers and offline payment methods and where the money is deposited and managed in a Mercado Pago bank accounts.
                         - Gateway -- gateway mode. Receive payments directly into the store codes (merchant account) of the seller using all the seller's own promotions. With this mode they can also negotiate with purchasers, both in terms of tariffs and interest-free installments and promotions.
         '400':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -173,10 +281,14 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 1000--the-credentials-are-required-
-                      - 1001--public-key-not-found-
+                      - 1000--the credentials are required.
+                      - 1001--public_key not found.
         '401':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -185,9 +297,13 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - unauthorized--unauthorized-
+                      - unauthorized--unauthorized.
         '404':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -196,4 +312,4 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - not_found--not-found-
+                      - not_found--not_found.

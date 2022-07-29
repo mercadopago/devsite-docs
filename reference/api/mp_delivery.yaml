@@ -19,19 +19,6 @@ paths:
           schema:
             type: string
             example:  41034141533
-        - name: access-token
-          in: header
-          description: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
-          enum:
-            - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
-            - Client ID -- 1585551492
-            - Creation date (MMddHH) -- 030918
-            - Security hash -- 25######3458
-            - User ID -- 2880736
-          required: true
-          schema:
-            type: string
-            example: "APP_USR-3213901234561-124232-2cb82fs4f17683d1b2cf36d4bf-8138341993"
       responses:
         '200':
           description: Success
@@ -42,11 +29,11 @@ paths:
                 properties:
                   id:
                     type: string
-                    example: 41034141533
+                    example: "41034141533"
                     description: Shipment ID of the order.
                   type:
                     type: string
-                    example: DELIVERY
+                    example: "DELIVERY"
                     description: This field refers to the way in which the order will be delivered.
                     enum:
                       - DELIVERY -- the restaurant will be responsible for delivering the order.
@@ -61,7 +48,7 @@ paths:
                     description: Order creation time (UTC date-time in ISO timestamp format).
                   orderTiming:
                     type: string
-                    example: INSTANT
+                    example: "INSTANT"
                     description: Scheduled time to start preparing an order. By now, only the start immediately is implemented, and the value of this field will always be INSTANT.
                   preparationStartDateTime: 
                     type: string
@@ -73,7 +60,7 @@ paths:
                     properties:
                       id: 
                         type: string
-                        example: 1070421029
+                        example: "1070421029"
                         description: User ID of the restaurant account linked to Mercado Pago.
                       name: 
                         type: string
@@ -202,24 +189,52 @@ paths:
                               type: string
                               example: "ARS"
                               description: Currency related to price.
+                        extension:
+                          type: object
+                          description: Additional information about the item
+                          properties:
+                            unitNetPrice:
+                              type: object
+                              description: In case of the product have a discount, this field will show the information of the value of the product with the applied discount
+                              properties:
+                                value:
+                                  type: number
+                                  example: 1000.0
+                                  description: Value of the product with discount
+                                currency:
+                                  type: string
+                                  example: "ARS"
+                                  description: Currency related to price.
                   otherFees:
                     type: array
                     description: Array of objects with amounts of fees charged by the order. Fees like shipping and operation of the marketplace are included.
                     items:
                       type: object
                       properties:
+                        name:
+                          type: string
+                          example: "Name of the Fee"
+                          description: Name of the Fee.
                         type:
                           type: string
                           example: "DELIVERY_FEE"
-                          description: Field that specifies the type of the fee. The only value currently available is DELIVERY_FEE. 
+                          description: Field that specifies the type of the fee. 
                           enum: 
                             - DELIVERY_FEE -- fee charged for shipping the product.
+                            - SERVICE_FEE -- fee for the using of Marketplace
+                            - TIP -- Value of the tip.
                         receivedBy:
                           type: string
                           example: "MERCHANT"
-                          description: Field that specifies who will receive the fee amount. The only value currently available is MERCHANT. 
+                          description: Field that specifies who will receive the fee amount. 
                           enum: 
                             - MERCHANT -- the fee amount that will be received by the merchant.
+                            - MARKETPLACE -- the fee amount that will be received by the marketplace.
+                            - LOGISTIC_SERVICES -- the fee amount that will be received by the Service of Logistic.
+                        receiverDocument:
+                          type: string
+                          example: "3124123141"
+                          description: Document of the amount fee receiver.
                         price: 
                           type: object
                           properties:
@@ -230,12 +245,72 @@ paths:
                             currency:
                               type: string
                               example: "ARS"
-                              description: Currency related to price.
+                              description: Currency related to price. 
                   discounts:
                     type: array
-                    description: This field has no properties yet. Discount information will be added here in coming updates.
+                    description: Information about the discounts that can be applied on cart, items or on delivery fee.
                     items:
                       type: object
+                      properties:
+                        amount: 
+                          type: object
+                          properties:
+                            value:
+                              type: number
+                              example: 119.0
+                              description: Price of discount.
+                            currency:
+                              type: string
+                              example: "ARS"
+                              description: Currency related to value.
+                        target:
+                          type: string
+                          example: "ITEM"
+                          description: Where the discount will be applied. 
+                          enum: 
+                            - CART -- The discount wil be applied on the cart.
+                            - DELIVERY_FEE -- The discount will be applied on the delivery fee.
+                            - ITEM -- The discount will be applien on an Item
+                        targetId:
+                          type: string
+                          example: "MLA1122759502"
+                          description: If the target of the discount is an Item, this field will show the ID of the Item that the discount has been applied.
+                        sponsorshipValues:
+                          type: array
+                          description: 	Values sponsored by either party. The sum of the amounts listed in this atribute must match the value informed in the amount atribute above.
+                          items:
+                            type: object
+                            properties:
+                              name:
+                                type: string
+                                example: "MARKETPLACE"
+                                description: Who sponsored the discount.
+                                enum:
+                                  - MARKETPLACE -- The Marketplace will sponsor the discount.
+                                  - MERCHANT -- The Merchant will sponsor the discount.
+                              amount: 
+                                type: object
+                                properties:
+                                  value:
+                                    type: number
+                                    example: 119.0
+                                    description: Price of discount.
+                                  currency:
+                                    type: string
+                                    example: "ARS"
+                                    description: Currency related to value. 
+                        extension:
+                          type: object
+                          description: Discount coupon information
+                          properties:
+                            id:
+                              type: string
+                              example: "21515164-001"
+                              description: ID of the coupon
+                            name:
+                              type: string
+                              example: "coupon_off"
+                              description: Name fo the coupon
                   total:
                     type: object
                     description: Object that contains information about all amounts charged
@@ -291,6 +366,10 @@ paths:
                   payments:
                     type: object
                     description: Payment method information.
+                    x-description-i18n:
+                      eng: Payment method information.
+                      spa: Información de los medios de pago
+                      por: Informação dos meios de pagamento
                     properties:
                       prepaid:
                         type: number
@@ -412,7 +491,7 @@ paths:
                         example: "2022-02-21T21:49:55Z"
                       deliveryDateTime:
                         type: string
-                        description: Delivery completion time (UTC date-time in ISO timestamp format).
+                        description: Delivery completion time (UTC date-time in ISO timestamp format). This information will be setted once the order was delivered.
                         example: "2022-02-21T21:52:55Z"
                   extension:
                     type: object
@@ -421,8 +500,6 @@ paths:
                         type: string
                         description: Status of an order.
                         enum:
-                          - pending -- order in creation.
-                          - handling -- processing payment.
                           - ready_to_ship -- order created.
                           - shipped -- order sent for delivery.
                           - not_delivered -- order not delivered.
@@ -469,7 +546,83 @@ paths:
                             type: string
                             description: Security information code.
                             example: "0"
-                          
+        '401':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey: 
+                    type: string
+                    enum:
+                      - 401-- Unauthorized - Access Token is invalid            
+        '403':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                 type: object
+                 properties:
+                    errorKey:
+                      type: string
+                      enum:
+                        - 403-- Forbidden - User cannot access this resource 
+        '404':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 404-- Not Found - Failed to search shipment
+                      
+        '424':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 424-- Not Found - Failed to get some information of the order 
+        '500':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500-- Internal server error  
+                      
   /proximity-integration/shipments/{shipment_id}/accept:
     put:
       tags:
@@ -483,20 +636,7 @@ paths:
           required: true
           schema:
             type: string
-            example: 41034141533
-        - name: access-token
-          in: header
-          description: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
-          enum:
-            - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
-            - Client ID -- 1585551492
-            - Creation date (MMddHH) -- 030918
-            - Security hash -- 25######3458
-            - User ID -- 2880736
-          required: true
-          schema:
-            type: string
-            example: "APP_USR-3213901234561-124232-2cb82fs4f17683d1b2cf36d4bf-8138341993"  
+            example: 41034141533  
       requestBody:
         content:
           application/json:
@@ -519,6 +659,82 @@ paths:
                     type: string
                     description: Status of the order after its acceptance. The Status value that will be returned is "accepted".
                     example: accepted   
+        '400':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey: 
+                    type: string
+                    enum:
+                      - 400-- Conflict-error - This order cannot be accepted due to its current status.
+        '401':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey: 
+                    type: string
+                    enum:
+                      - 401-- Unauthorized - Access Token is invalid 
+        '403':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                 type: object
+                 properties:
+                    errorKey:
+                      type: string
+                      enum:
+                        - 403-- Forbidden - User cannot access this resource 
+                      
+        '424':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 424-- Not Found - Failed to get some information of the order 
+        '500':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500-- Internal server error  
   /proximity-integration/shipments/{shipment_id}/print_label_pdf:
     get:
       tags:
@@ -533,19 +749,6 @@ paths:
           schema:
             type: string
             example: 41034141533
-        - name: access-token
-          in: header
-          description: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
-          enum:
-            - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
-            - Client ID -- 1585551492
-            - Creation date (MMddHH) -- 030918
-            - Security hash -- 25######3458
-            - User ID -- 2880736
-          required: true
-          schema:
-            type: string
-            example: "APP_USR-3213901234561-124232-2cb82fs4f17683d1b2cf36d4bf-8138341993"
       responses:
         '200':
           description: Success
@@ -555,12 +758,171 @@ paths:
                 type: string
                 format: binary
                 description: A binary code referring to the PDF coupon.
+        '401':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey: 
+                    type: string
+                    enum:
+                      - 401-- Unauthorized - Access Token is invalid 
+        '403':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                 type: object
+                 properties:
+                    errorKey:
+                      type: string
+                      enum:
+                        - 403-- Forbidden - User cannot access this resource 
+                      
+        '424':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 424-- Not Found - Failed to get some information of the order 
+        '500':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500-- Internal server error
+  /proximity-integration/shipments/{shipment_id}/cancellation-reasons:
+    put:
+      tags:
+        - $ref: '#/tags/mp-delivery'
+      summary: Reasons for cancellation
+      description: This endpoint returns the cancellation reasons that are available for an order. It is important to remember that cancellation reasons vary depending on the current status of the order.
+      parameters:
+        - name: shipment_id
+          in: path
+          description: Unique ID that identifies the shipment of the order. 
+          required: true
+          schema:
+            type: string
+            example: 41034141533
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: array
+                description: Array of reasons of cancellation.
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: string
+                      description: ID of the reason of cancellation.
+                      example: CS7452
+                    value:
+                      type: string
+                      description: Name of the reason of cancellation.
+                      example: out_of_stock
+                    message:
+                      type: string
+                      description: Description of the reason of cancellation.
+                      example: Me falta alguno de los productos.
+        '401':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey: 
+                    type: string
+                    enum:
+                      - 401-- Unauthorized - Access Token is invalid 
+        '403':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                 type: object
+                 properties:
+                    errorKey:
+                      type: string
+                      enum:
+                        - 403-- Forbidden - User cannot access this resource 
+                      
+        '424':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 424-- Not Found - Failed to get some information of the order 
+        '500':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500-- Internal server error 
   /proximity-integration/shipments/{shipment_id}/cancel:
     put:
       tags:
         - $ref: '#/tags/mp-delivery'
       summary: Cancel order
-      description: This endpoint cancels an order, changing its status
+      description: This endpoint cancels an order, changing its status. 
       parameters:
         - name: shipment_id
           in: path
@@ -569,19 +931,6 @@ paths:
           schema:
             type: string
             example: 41034141533
-        - name: access-token
-          in: header
-          description: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
-          enum:
-            - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
-            - Client ID -- 1585551492
-            - Creation date (MMddHH) -- 030918
-            - Security hash -- 25######3458
-            - User ID -- 2880736
-          required: true
-          schema:
-            type: string
-            example: "APP_USR-3213901234561-124232-2cb82fs4f17683d1b2cf36d4bf-8138341993"
       requestBody:
         content:
           application/json:
@@ -592,6 +941,23 @@ paths:
                   type: string
                   description: This property indicates the order status, which must have the value "cancelled" for this endpoint.
                   example: "cancelled"
+                cancellation_reason:
+                  type: object
+                  description: Reason of the cancellation that was retrieved from the endpoint of cancellation reason.
+                  properties:
+                    id:
+                      type: string
+                      description: ID of the reason of cancellation.
+                      example: CS7452
+                    value:
+                      type: string
+                      description: Name of the reason of cancellation.
+                      example: out_of_stock
+                    message:
+                      type: string
+                      description: Description of the reason of cancellation.
+                      example: Me falta alguno de los productos.
+           
       responses:
         '200':
           description: Success
@@ -604,6 +970,82 @@ paths:
                     type: string
                     description: Status of the order after its cancellation. The Status value that will be returned is "cancelled".
                     example: cancelled
+        '400':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey: 
+                    type: string
+                    enum:
+                      - 400-- Conflict-error - This order cannot be cancelled due to its current status.
+        '401':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey: 
+                    type: string
+                    enum:
+                      - 401-- Unauthorized - Access Token is invalid 
+        '403':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                 type: object
+                 properties:
+                    errorKey:
+                      type: string
+                      enum:
+                        - 403-- Forbidden - User cannot access this resource 
+                      
+        '424':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 424-- Not Found - Failed to get some information of the order 
+        '500':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500-- Internal server error 
   /proximity-integration/users/{seller_id}/stores:
     get:
       tags:
@@ -618,19 +1060,6 @@ paths:
           schema:
             type: string
             example: 41562083
-        - name: access-token
-          in: header
-          description: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
-          enum:
-            - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
-            - Client ID -- 1585551492
-            - Creation date (MMddHH) -- 030918
-            - Security hash -- 25######3458
-            - User ID -- 2880736
-          required: true
-          schema:
-            type: string
-            example: "APP_USR-3213901234561-124232-2cb82fs4f17683d1b2cf36d4bf-8138341993"
       responses:
         '200':
           description: Success
@@ -752,6 +1181,67 @@ paths:
                       type: string
                       description: This optional property indicates the custom external ID of the store. This value can be changed or updated using the endpoint that updates External IDs. 
                       example: "A15154DE"
+        '401':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey: 
+                    type: string
+                    enum:
+                      - 401-- Unauthorized - Access Token is invalid 
+        '403':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                 type: object
+                 properties:
+                    errorKey:
+                      type: string
+                      enum:
+                        - 403-- Forbidden - User cannot access this resource 
+                      
+        '424':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 424-- Not Found - Failed to get some information of the stores 
+        '500':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500-- Internal server error 
   /proximity-integration/stores/{StoreID}:
     get:
       tags:
@@ -766,19 +1256,6 @@ paths:
           schema:
             type: string
             example: 185522600
-        - name: access-token
-          in: header
-          description: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
-          enum:
-            - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
-            - Client ID -- 1585551492
-            - Creation date (MMddHH) -- 030918
-            - Security hash -- 25######3458
-            - User ID -- 2880736
-          required: true
-          schema:
-            type: string
-            example: "APP_USR-3213901234561-124232-2cb82fs4f17683d1b2cf36d4bf-8138341993"
       responses:
         '200':
           description: Success
@@ -905,6 +1382,82 @@ paths:
                     type: string
                     description: This optional property indicates the custom external ID of the store. This value can be changed or updated using the endpoint that updates External IDs. 
                     example: "A15154DE"
+        '400':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey: 
+                    type: string
+                    enum:
+                      - 400-- Missing_Parameter - Invalid store id 
+        '401':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey: 
+                    type: string
+                    enum:
+                      - 401-- Unauthorized - Access Token is invalid 
+        '403':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                 type: object
+                 properties:
+                    errorKey:
+                      type: string
+                      enum:
+                        - 403-- Forbidden - User cannot access this resource 
+                      
+        '424':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 424-- Not Found - Failed to get some information of the store 
+        '500':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500-- Internal server error 
   /proximity-integration/stores/{StoreID}/external_id:
     put:
       tags:
@@ -919,19 +1472,6 @@ paths:
           schema:
             type: string
             example: 185522600
-        - name: access-token
-          in: header
-          description: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
-          enum:
-            - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
-            - Client ID -- 1585551492
-            - Creation date (MMddHH) -- 030918
-            - Security hash -- 25######3458
-            - User ID -- 2880736
-          required: true
-          schema:
-            type: string
-            example: "APP_USR-3213901234561-124232-2cb82fs4f17683d1b2cf36d4bf-8138341993"
       requestBody:
         content:
           application/json:
@@ -1060,6 +1600,82 @@ paths:
                     type: string
                     description: This optional property indicates the custom external ID of the store. This value can be changed or updated using the endpoint that updates External IDs.
                     example: "9320001PC21"
+        '400':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey: 
+                    type: string
+                    enum:
+                      - 400-- Missing_Parameter - Invalid store id 
+        '401':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey: 
+                    type: string
+                    enum:
+                      - 401-- Unauthorized - Access Token is invalid 
+        '403':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                 type: object
+                 properties:
+                    errorKey:
+                      type: string
+                      enum:
+                        - 403-- Forbidden - User cannot access this resource 
+                      
+        '424':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 424-- Not Found - Failed to get some information of the store 
+        '500':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500-- Internal server error 
   /proximity-integration/users/{SellerID}/stores/external_id/{ExternalID}:
     get:
       tags:
@@ -1081,19 +1697,6 @@ paths:
           schema:
             type: string
             example: "9320001PC21"
-        - name: access-token
-          in: header
-          description: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
-          enum:
-            - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
-            - Client ID -- 1585551492
-            - Creation date (MMddHH) -- 030918
-            - Security hash -- 25######3458
-            - User ID -- 2880736
-          required: true
-          schema:
-            type: string
-            example: "APP_USR-3213901234561-124232-2cb82fs4f17683d1b2cf36d4bf-8138341993"
       responses:
         '200':
           description: Success
@@ -1212,6 +1815,82 @@ paths:
                     type: string
                     description: This optional property indicates the custom external ID of the store. This value can be changed or updated using the endpoint that updates External IDs.
                     example: "9320001PC21"
+        '400':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey: 
+                    type: string
+                    enum:
+                      - 400-- Missing_Parameter - Invalid store id 
+        '401':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey: 
+                    type: string
+                    enum:
+                      - 401-- Unauthorized - Access Token is invalid 
+        '403':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                 type: object
+                 properties:
+                    errorKey:
+                      type: string
+                      enum:
+                        - 403-- Forbidden - User cannot access this resource 
+                      
+        '424':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 424-- Not Found - Failed to search stores associated with a user 
+        '500':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500-- Internal server error 
   /proximity-integration/stores/{store_id}/status:
     put:
       tags:
@@ -1226,19 +1905,6 @@ paths:
           schema:
             type: string
             example: 4101533
-        - name: access-token
-          in: header
-          description: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
-          enum:
-            - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
-            - Client ID -- 1585551492
-            - Creation date (MMddHH) -- 030918
-            - Security hash -- 25######3458
-            - User ID -- 2880736
-          required: true
-          schema:
-            type: string
-            example: "APP_USR-3213901234561-124232-2cb82fs4f17683d1b2cf36d4bf-8138341993"
       requestBody:
         content:
           application/json:
@@ -1379,3 +2045,94 @@ paths:
                     type: string
                     description: This optional property indicates the custom external ID of the store. This value can be changed or updated using the endpoint that updates External IDs.
                     example: "A15154DE"
+        '400':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey: 
+                    type: string
+                    enum:
+                      - 400-- Missing_Parameter - Invalid store id 
+        '401':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey: 
+                    type: string
+                    enum:
+                      - 401-- Unauthorized - Access Token is invalid 
+        '403':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                 type: object
+                 properties:
+                    errorKey:
+                      type: string
+                      enum:
+                        - 403-- Forbidden - User cannot access this resource 
+        '404':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                 type: object
+                 properties:
+                    errorKey:
+                      type: string
+                      enum:
+                        - 404-- Not Found - Store not found 
+                      
+        '424':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 424-- Not Found - Failed to search stores associated with a user 
+        '500':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500-- Internal server error 

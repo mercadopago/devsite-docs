@@ -46,6 +46,8 @@ To generate the authorization code, the following requirements must be met.
 > Attention
 >
 > It is recommended to carry out this procedure all at once together with the user, since the code received by the Redirect URL after authorization is valid for 10 minutes and the access token received through the endpoint is valid for 180 days.
+>
+> To generate sandbox credentials for testing, send the `test_token` parameter with the value `true`.
 
 > PREV_STEP_CARD_EN
 >

@@ -10,6 +10,10 @@ paths:
       tags:
         - $ref: '#/tags/marketplace'
       summary: Create Payments
+      x-summary-i18n:
+        eng: Create Payments
+        spa: Crear un pago
+        por: 
       description: Create Payments.
       deprecated: true
       requestBody:
@@ -21,16 +25,28 @@ paths:
                 payer:
                   type: object
                   description: payer identifier.
+                  x-description-i18n:
+                    eng: payer identifier.
+                    spa: Identificador del pagador
+                    por: Identificador do pagante
                   properties:
                     id:
                       type: string
                       description: Identification of the associated payer.
+                      x-description-i18n:
+                        eng: Identification of the associated payer.
+                        spa: Identificación del pagador asociado
+                        por: Identificação do pagador associado
                     email:
                       type: string
                       description: Payer’s email address.
+                      x-description-i18n:
+                        eng: Payer’s email address.
+                        spa: E-mail del pagador
+                        por: E-mail do pagante
                     type:
                       type: string
-                      description: >-
+                      description: 
                         Type of identification of the associated payer (required
                         if the payer is a customer).
                       enum:
@@ -39,78 +55,162 @@ paths:
                     identification:
                       type: object
                       description: Personal identification.
+                      x-description-i18n:
+                        eng: Personal identification.
+                        spa: Identificación personal
+                        por: Identificação pessoal
                       properties:
                         type:
                           type: string
                           description: Identification type.
+                          x-description-i18n:
+                            eng: Identification type.
+                            spa: Tipo de identificación
+                            por: Tipo de identificação
                         number:
                           type: string
                           description: Identification number.
+                          x-description-i18n:
+                            eng: Identification number.
+                            spa: Número de identificación
+                            por: Número de identificação
                     address:
                       type: object
                       description: Address.
+                      x-description-i18n:
+                        eng: Address.
+                        spa: Dirección
+                        por: Endereço
                       properties:
                         zip_code:
                           type: string
                           description: Zip Code.
+                          x-description-i18n:
+                            eng: Zip Code.
+                            spa: Código postal
+                            por: CEP
                         street_name:
                           type: string
                           description: Street name.
+                          x-description-i18n:
+                            eng: Street name.
+                            spa: Calle
+                            por: Rua
                         street_number:
                           type: number
                           description: Number.
+                          x-description-i18n:
+                            eng: Number.
+                            spa: Número
+                            por: Número
                     phone:
                       type: object
                       description: Phone number of the associated payer.
+                      x-description-i18n:
+                        eng: Phone number of the associated payer.
+                        spa: Teléfono del pagador asociado
+                        por: Telefone do pagante associado
                       properties:
                         area_code:
                           type: string
                           description: Area Code.
+                          x-description-i18n:
+                            eng: Area Code.
+                            spa: Código de área
+                            por: DDD
                         number:
                           type: string
                           description: Phone number.
+                          x-description-i18n:
+                            eng: Phone number.
+                            spa: Número telefónico
+                            por: Número de telefone
                         extension:
                           type: string
                           description: Phone number extension.
+                          x-description-i18n:
+                            eng: Phone number extension.
+                            spa: Extensión del número de teléfono
+                            por: Ramal do número de telefone
                     first_name:
                       type: string
                       description: Name of the associated payer.
+                      x-description-i18n:
+                        eng: Name of the associated payer.
+                        spa: Nombre del pagador asociado
+                        por: Nome do pagante associado
                     last_name:
                       type: string
                       description: Last name od the associated payer.
                 payments:
                   type: array
                   description: List of payments made by the buyer.
+                  x-description-i18n:
+                    eng: List of payments made by the buyer.
+                    spa: Lista de pagos realizados por el comprador
+                    por: Lista de pagamentos feitos pelo comprador
                   items:
                     type: object
                     properties:
                       id:
                         type: number
                         description: Payment identification.
+                        x-description-i18n:
+                          eng: Payment identification.
+                          spa: Identificador del pago
+                          por: Identificador do pagamento
                       status:
                         type: string
                         description: Payment status.
+                        x-description-i18n:
+                          eng: Payment status.
+                          spa: Estado del pago
+                          por: Estado do pagamento
                       status_detail:
                         type: string
                         description: Payment status details.
+                        x-description-i18n:
+                          eng: Payment status details.
+                          spa: Detalle del estado del pago
+                          por: Detalhes do status do pagamento
                       payment_type_id:
                         type: string
                         description: Selected payment method type.
+                        x-description-i18n:
+                          eng: Selected payment method type.
+                          spa: Tipo del medio de pago elegido
+                          por: Tipo de meio de pagamento selecionado
                       payment_method_id:
                         type: string
                         description: Payment method selected to make the payment.
+                        x-description-i18n:
+                          eng: Payment method selected to make the payment.
+                          spa: Medio de pago elegido para hacer el pago
+                          por: Meio de pagamento selecionado para pagar
                       token:
                         type: string
                         description: Token card identifier.
+                        x-description-i18n:
+                          eng: Token card identifier.
+                          spa: Identificador de card token
+                          por: Identificador de token
                       transaction_amount:
                         type: number
                         description: Product cost.
+                        x-description-i18n:
+                          eng: Product cost.
+                          spa: Costo del producto
+                          por: Custo do produto
                       installments:
                         type: number
                         description: Number of installments selected.
+                        x-description-i18n:
+                          eng: Number of installments selected.
+                          spa: Cantidad seleccionada de cuotas
+                          por: Número de parcelas selecionado
                       processing_mode:
                         type: string
-                        description: >-
+                        description: 
                           Method of processing the payments (aggregator by
                           default).
                         enum:
@@ -119,75 +219,127 @@ paths:
                       issuer_id:
                         type: string
                         description: Identifier of the issuer of the payment method.
+                        x-description-i18n:
+                          eng: Identifier of the issuer of the payment method.
+                          spa: Identificador del emisor del medio de pago
+                          por: Identificador do emissor do meio de pagamento
                       description:
                         type: string
                         description: Reason for payment.
+                        x-description-i18n:
+                          eng: Reason for payment.
+                          spa: Razón de pago
+                          por: Razão do pagamento
                       capture:
                         type: boolean
-                        description: >-
+                        description: 
                           Determines whether the payment should be captured
                           (true, default value) or only reserved (false).
                       external_reference:
                         type: string
                         description: Identifier provided by the seller in their system.
+                        x-description-i18n:
+                          eng: Identifier provided by the seller in their system.
+                          spa: Identificador provisto por el vendedor en su sistema
+                          por: Identificador fornecido pelo vendedor no seu sistema
                       statement_descriptor:
                         type: string
                         description: How the payment will appear in the card statement.
+                        x-description-i18n:
+                          eng: How the payment will appear in the card statement.
+                          spa: Cómo aparecerá el pago en el resumen de tarjeta
+                          por: Como o pagamento aparecerá na fatura do cartão
                       date_of_expiration:
                         type: string
-                        description: >-
+                        description: 
                           Expiration date for the case of payment method
                           "ticket".
                       transaction_details:
                         type: object
                         description: Group the transaction details.
+                        x-description-i18n:
+                          eng: Group the transaction details.
+                          spa: Agrupa los detalles de la transacción
+                          por: Agrupa os detalhes da transação
                         properties:
                           external_resource_url:
                             type: string
                             description: Identify the resource in the payment processor.
+                            x-description-i18n:
+                              eng: Identify the resource in the payment processor.
+                              spa: Identifica el recurso en el procesador de pago
+                              por: Identifica o recurso no processador de pagamento
                 disbursements:
                   type: array
                   description: List of payments that correspond to each Seller.
+                  x-description-i18n:
+                    eng: List of payments that correspond to each Seller.
+                    spa: Lista de pagos que corresponden a cada Vendedor
+                    por: Lista de pagamentos que correspondem a cada Vendedor
                   items:
                     type: object
                     properties:
                       id:
                         type: number
                         description: Payment identifier.
+                        x-description-i18n:
+                          eng: Payment identifier.
+                          spa: Identificador de pago
+                          por: Identificador de pagamento
                       amount:
                         type: number
                         description: Payment amount.
+                        x-description-i18n:
+                          eng: Payment amount.
+                          spa: Monto del pago
+                          por: Valor do pagamento
                       external_reference:
                         type: string
                         description: Identifier provided by the seller in their system.
+                        x-description-i18n:
+                          eng: Identifier provided by the seller in their system.
+                          spa: Identificador provisto por el vendedor en su sistema
+                          por: Identificador fornecido pelo vendedor no seu sistema
                       collector_id:
                         type: number
                         description: Seller identifier.
+                        x-description-i18n:
+                          eng: Seller identifier.
+                          spa: Identificador de vendedor
+                          por: Identificador do vendedor
                       application_fee:
                         type: number
                         description: Commission collected by the Marketplace.
+                        x-description-i18n:
+                          eng: Commission collected by the Marketplace.
+                          spa: Comisión recolectada por el Marketplace
+                          por: Tarifa recolhida pelo Marketplace
                       money_release_days:
                         type: number
-                        description: >-
+                        description: 
                           Number of days (from the date of approval of the
                           payment) in which the payment will be released to the
                           Seller.
                 binary_mode:
                   type: boolean
-                  description: >-
+                  description: 
                     When the payment is activated, it can only be approved or
                     rejected. Otherwise, the payment may be pending.
                 metadata:
                   type: object
-                  description: >-
+                  description: 
                     Valid JSON that can be added to the payment to save
                     additional attributes.
                 application_id:
                   type: object
                   description: Marketplace ID.
+                  x-description-i18n:
+                    eng: Marketplace ID.
+                    spa: ID del Marketplace
+                    por: ID do Marketplace
                 additional_info:
                   type: object
-                  description: >-
+                  description: 
                     Information that can improve the fraud prevention analysis
                     and the conversion rate. Try sending us as much information
                     as possible.
@@ -195,83 +347,175 @@ paths:
                     ip_address:
                       type: string
                       description: IP from which the request comes (only for bank transfer)
+                      x-description-i18n:
+                        eng: IP from which the request comes (only for bank transfer)
+                        spa: IP del cual proviene el request (sólo para transferencia bancaria)
+                        por: IP de onde vem o request (somente transferência bancária)
                     items:
                       type: array
                       description: List of items to pay.
+                      x-description-i18n:
+                        eng: List of items to pay.
+                        spa: Lista de ítems a pagar
+                        por: Lista de itens a pagar
                       items:
                         type: object
                         properties:
                           id:
                             type: string
                             description: Item code.
+                            x-description-i18n:
+                              eng: Item code.
+                              spa: Código de ítem
+                              por: Código de anúncio
                           title:
                             type: string
                             description: Item name.
+                            x-description-i18n:
+                              eng: Item name.
+                              spa: Nombre de ítem
+                              por: Nome do item
                           description:
                             type: string
                             description: Item description.
+                            x-description-i18n:
+                              eng: Item description.
+                              spa: Descripción del item
+                              por: Descrição do artigo
                           picture_url:
                             type: string
                             description: Image URL.
+                            x-description-i18n:
+                              eng: Image URL.
+                              spa: URL de imagen
+                              por: URL da imagem
                           category_id:
                             type: string
                             description: Item category.
+                            x-description-i18n:
+                              eng: Item category.
+                              spa: Category del ítem
+                              por: Categoria do item
                           quantity:
                             type: number
                             description: Number of items.
+                            x-description-i18n:
+                              eng: Number of items.
+                              spa: Cantidad de ítems
+                              por: Número de itens
                           unit_price:
                             type: number
                             description: Unit price.
                     payer:
                       type: object
                       description: Buyer’s information.
+                      x-description-i18n:
+                        eng: Buyer’s information.
+                        spa: Información del comprador
+                        por: Informações do comprador
                       properties:
                         first_name:
                           type: string
                           description: Buyer’s name.
+                          x-description-i18n:
+                            eng: Buyer’s name.
+                            spa: Nombre del comprador
+                            por: Nome do comprador
                         last_name:
                           type: string
                           description: Buyer’s last name.
+                          x-description-i18n:
+                            eng: Buyer’s last name.
+                            spa: Apellido del comprador
+                            por: Sobrenome do comprador
                         phone:
                           type: object
                           description: Buyer’s phone number.
+                          x-description-i18n:
+                            eng: Buyer’s phone number.
+                            spa: Teléfono del comprador
+                            por: Telefone do comprador
                           properties:
                             area_code:
                               type: string
                               description: Area Code.
+                              x-description-i18n:
+                                eng: Area Code.
+                                spa: Código de área
+                                por: DDD
                             number:
                               type: string
                               description: Phone number.
+                              x-description-i18n:
+                                eng: Phone number.
+                                spa: Número telefónico
+                                por: Número de telefone
                         registration_date:
                           type: string
                           format: date
                           description: Date of registration of the buyer on your website.
+                          x-description-i18n:
+                            eng: Date of registration of the buyer on your website.
+                            spa: Fecha de registración del comprador en tu sitio
+                            por: Data de cadastro do comprador no seu site
                     shipments:
                       type: object
                       description: Shipping information.
+                      x-description-i18n:
+                        eng: Shipping information.
+                        spa: Información de envío
+                        por: Informações de envio
                       properties:
                         receiver_address:
                           type: object
                           description: Buyer’s address.
+                          x-description-i18n:
+                            eng: Buyer’s address.
+                            spa: Dirección del comprador
+                            por: Endereço do comprador
                           properties:
                             zip_code:
                               type: string
                               description: Zip Code.
+                              x-description-i18n:
+                                eng: Zip Code.
+                                spa: Código postal
+                                por: CEP
                             street_name:
                               type: string
                               description: Street name.
+                              x-description-i18n:
+                                eng: Street name.
+                                spa: Calle
+                                por: Rua
                             street_number:
                               type: number
                               description: Number.
+                              x-description-i18n:
+                                eng: Number.
+                                spa: Número
+                                por: Número
                             floor:
                               type: string
                               description: Floor
+                              x-description-i18n:
+                                eng: Floor
+                                spa: Piso
+                                por: Andar
                             apartment:
                               type: string
                               description: Unit.
+                              x-description-i18n:
+                                eng: Unit.
+                                spa: Departamento
+                                por: Apartamento
       responses:
         '400':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -280,60 +524,60 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 400004--Invalid-application-
-                      - 400005--The-application-is-required-
-                      - 400006--Invalid-date-of-release-for-the-Disbursement-
-                      - 400007--Invalid-date-of-release-for-the-Disbursement-
-                      - 400013--Invalid-email-address-
-                      - 400014--Invalid-number-of-payments-
-                      - >-
-                        400015--Payer-ID-is-required-for-payments-with-money-in-the-account-
-                      - 400016--Invalid-payment-type-
-                      - 400017--The-transaction-amount-is-required-
-                      - 400018--Invalid-amount-
-                      - 400019--The-payment-method-is-required-
-                      - 400020--The-payment-type-is-required-
-                      - 400021--The-amount-format-is-invalid-
-                      - 400022--Invalid-processing-method-
-                      - 400023--The-payer-type-is-required-
-                      - 400024--The-payer-s-name-is-required-
-                      - 400025--The-payer-s-last-name-is-required-
-                      - 400026--The-payer-s-identification-type-is-required-
-                      - 400027--The-payer-s-identification-number-is-required-
-                      - 400028--The-expiration-date-is-required-
-                      - 400029--The-payment-token-is-required-
-                      - 400030--The-installments-are-required-
-                      - 400031--The-amount-of-disbursements-is-required-
-                      - 400032--The-collector-ID-is-required-
-                      - 400033--Invalid-Marketplace-commission-
-                      - 400034--Invalid-disbursement-amount-
-                      - 400035--The-field-money-release-date-is-invalid-
-                      - >-
-                        400036--The-Marketplace-does-not-have-permissions-on-the-payer-
-                      - 400037--The-collector-was-not-found-
-                      - 400039--Invalid-request-
-                      - 400040--Invalid-status-
-                      - 400041--Invalid-start-date-
-                      - 400042--Invalid-end-date-
-                      - 400043--Invalid-email-address-
-                      - 400044--Invalid-payer-ID-
-                      - 400045--Invalid-collector-ID-
-                      - 400046--The-field-external-reference-is-invalid-
-                      - 400047--Some-parameters-of-the-search-are-invalid-
-                      - 400048--Invalid-ID-
-                      - 400049--Invalid-last-modification-date-
-                      - 400051--The-field-money-release-date-is-required-
-                      - 400052--The-processing-mode-is-required-
-                      - 400053--Invalid-content-
-                      - >-
-                        400054--The-Marketplace-does-not-have-permissions-on-the-collector-
-                      - 400055--The-field-external-reference-is-required-
-                      - 400056--The-field-money-release-days-is-invalid-
-                      - >-
-                        400057--The-fields-collector-id-and-external-reference-are-duplicated-
-                      - 400058--Invalid-idempodency-key-
+                      - 400004--Invalid application.
+                      - 400005--The application is required.
+                      - 400006--Invalid date of release for the Disbursement.
+                      - 400007--Invalid date of release for the Disbursement.
+                      - 400013--Invalid email address.
+                      - 400014--Invalid number of payments.
+                      - 400015--Payer ID is required for payments with money in the account.
+                      - 400016--Invalid payment type.
+                      - 400017--The transaction amount is required.
+                      - 400018--Invalid amount.
+                      - 400019--The payment method is required.
+                      - 400020--The payment type is required.
+                      - 400021--The amount format is invalid.
+                      - 400022--Invalid processing method.
+                      - 400023--The payer type is required.
+                      - 400024--The payer’s name is required.
+                      - 400025--The payer’s last name is required.
+                      - 400026--The payer’s identification type is required.
+                      - 400027--The payer’s identification number is required.
+                      - 400028--The expiration date is required.
+                      - 400029--The payment token is required.
+                      - 400030--The installments are required.
+                      - 400031--The amount of disbursements is required.
+                      - 400032--The collector ID is required.
+                      - 400033--Invalid Marketplace commission.
+                      - 400034--Invalid disbursement amount.
+                      - 400035--The field money_release_date is invalid.
+                      - 400036--The Marketplace does not have permissions on the payer.
+                      - 400037--The collector was not found.
+                      - 400039--Invalid request.
+                      - 400040--Invalid status.
+                      - 400041--Invalid start date.
+                      - 400042--Invalid end date.
+                      - 400043--Invalid email address.
+                      - 400044--Invalid payer ID.
+                      - 400045--Invalid collector ID.
+                      - 400046--The field external_reference is invalid.
+                      - 400047--Some parameters of the search are invalid.
+                      - 400048--Invalid ID.
+                      - 400049--Invalid last modification date.
+                      - 400051--The field money_release_date is required.
+                      - 400052--The processing_mode is required.
+                      - 400053--Invalid content.
+                      - 400054--The Marketplace does not have permissions on the collector.
+                      - 400055--The field external_reference is required.
+                      - 400056--The field money_release_days is invalid.
+                      - 400057--The fields collector_id and external_reference are duplicated.
+                      - 400058--Invalid idempodency key.
         '401':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -342,11 +586,15 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 401000--Invalid-access-token-
-                      - 401002--Invalid-access-token-
-                      - 401003--Invalid-device-token-
+                      - 401000--Invalid access token.
+                      - 401002--Invalid access token.
+                      - 401003--Invalid device token.
         '404':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -355,11 +603,15 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 404001--The-Disbursement-was-not-found-
-                      - 404002--The-Advanced-Payment-was-not-found-
-                      - 404003--The-Payer-was-not-found-
+                      - 404001--The Disbursement was not found.
+                      - 404002--The Advanced Payment was not found.
+                      - 404003--The Payer was not found.
         '406':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -368,18 +620,30 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 406001--Error-in-the-payments-API-
+                      - 406001--Error in the payments API.
   /v1/advanced_payments/{id}:
     get:
       tags:
         - $ref: '#/tags/marketplace'
       summary: Get a Payment
+      x-summary-i18n:
+        eng: Get a Payment
+        spa: Obtener un pago
+        por: 
       description: Get a Payment
+      x-description-i18n:
+        eng: Get a Payment
+        spa: Obtener un pago
+        por: 
       deprecated: true
       parameters:
         - name: id
           in: path
           description: Payment's Id
+          x-description-i18n:
+            eng: Payment's Id
+            spa: Payment's Id
+            por: Payment's Id
           required: true
           schema:
             type: string
@@ -507,6 +771,10 @@ paths:
                                 description:
                                   type: string
                                   example: Item description
+                                  x-example-i18n:
+                                    eng: Item description
+                                    spa: Descripción del item
+                                    por: Descrição do item
                                   description: description
                                 category_id:
                                   type: string
@@ -638,6 +906,10 @@ paths:
                           description:
                             type: string
                             example: Item description
+                            x-example-i18n:
+                              eng: Item description
+                              spa: Descripción del item
+                              por: Descrição do item
                             description: description
                           category_id:
                             type: string
@@ -683,6 +955,10 @@ paths:
                     description: additional_info
         '400':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -691,60 +967,60 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 400004--Invalid-application-
-                      - 400005--The-application-is-required-
-                      - 400006--Invalid-date-of-release-for-the-Disbursement-
-                      - 400007--Invalid-date-of-release-for-the-Disbursement-
-                      - 400013--Invalid-email-address-
-                      - 400014--Invalid-number-of-payments-
-                      - >-
-                        400015--Payer-ID-is-required-for-payments-with-money-in-the-account-
-                      - 400016--Invalid-payment-type-
-                      - 400017--The-transaction-amount-is-required-
-                      - 400018--Invalid-amount-
-                      - 400019--The-payment-method-is-required-
-                      - 400020--The-payment-type-is-required-
-                      - 400021--The-amount-format-is-invalid-
-                      - 400022--Invalid-processing-method-
-                      - 400023--The-payer-type-is-required-
-                      - 400024--The-payer-s-name-is-required-
-                      - 400025--The-payer-s-last-name-is-required-
-                      - 400026--The-payer-s-identification-type-is-required-
-                      - 400027--The-payer-s-identification-number-is-required-
-                      - 400028--The-expiration-date-is-required-
-                      - 400029--The-payment-token-is-required-
-                      - 400030--The-installments-are-required-
-                      - 400031--The-amount-of-disbursements-is-required-
-                      - 400032--The-collector-ID-is-required-
-                      - 400033--Invalid-Marketplace-commission-
-                      - 400034--Invalid-disbursement-amount-
-                      - 400035--The-field-money-release-date-is-invalid-
-                      - >-
-                        400036--The-Marketplace-does-not-have-permissions-on-the-payer-
-                      - 400037--The-collector-was-not-found-
-                      - 400039--Invalid-request-
-                      - 400040--Invalid-status-
-                      - 400041--Invalid-start-date-
-                      - 400042--Invalid-end-date-
-                      - 400043--Invalid-email-address-
-                      - 400044--Invalid-payer-ID-
-                      - 400045--Invalid-collector-ID-
-                      - 400046--The-field-external-reference-is-invalid-
-                      - 400047--Some-parameters-of-the-search-are-invalid-
-                      - 400048--Invalid-ID-
-                      - 400049--Invalid-last-modification-date-
-                      - 400051--The-field-money-release-date-is-required-
-                      - 400052--The-processing-mode-is-required-
-                      - 400053--Invalid-content-
-                      - >-
-                        400054--The-Marketplace-does-not-have-permissions-on-the-collector-
-                      - 400055--The-field-external-reference-is-required-
-                      - 400056--The-field-money-release-days-is-invalid-
-                      - >-
-                        400057--The-fields-collector-id-and-external-reference-are-duplicated-
-                      - 400058--Invalid-idempodency-key-
+                      - 400004--Invalid application.
+                      - 400005--The application is required.
+                      - 400006--Invalid date of release for the Disbursement.
+                      - 400007--Invalid date of release for the Disbursement.
+                      - 400013--Invalid email address.
+                      - 400014--Invalid number of payments.
+                      - 400015--Payer ID is required for payments with money in the account.
+                      - 400016--Invalid payment type.
+                      - 400017--The transaction amount is required.
+                      - 400018--Invalid amount.
+                      - 400019--The payment method is required.
+                      - 400020--The payment type is required.
+                      - 400021--The amount format is invalid.
+                      - 400022--Invalid processing method.
+                      - 400023--The payer type is required.
+                      - 400024--The payer’s name is required.
+                      - 400025--The payer’s last name is required.
+                      - 400026--The payer’s identification type is required.
+                      - 400027--The payer’s identification number is required.
+                      - 400028--The expiration date is required.
+                      - 400029--The payment token is required.
+                      - 400030--The installments are required.
+                      - 400031--The amount of disbursements is required.
+                      - 400032--The collector ID is required.
+                      - 400033--Invalid Marketplace commission.
+                      - 400034--Invalid disbursement amount.
+                      - 400035--The field money_release_date is invalid.
+                      - 400036--The Marketplace does not have permissions on the payer.
+                      - 400037--The collector was not found.
+                      - 400039--Invalid request.
+                      - 400040--Invalid status.
+                      - 400041--Invalid start date.
+                      - 400042--Invalid end date.
+                      - 400043--Invalid email address.
+                      - 400044--Invalid payer ID.
+                      - 400045--Invalid collector ID.
+                      - 400046--The field external_reference is invalid.
+                      - 400047--Some parameters of the search are invalid.
+                      - 400048--Invalid ID.
+                      - 400049--Invalid last modification date.
+                      - 400051--The field money_release_date is required.
+                      - 400052--The processing_mode is required.
+                      - 400053--Invalid content.
+                      - 400054--The Marketplace does not have permissions on the collector.
+                      - 400055--The field external_reference is required.
+                      - 400056--The field money_release_days is invalid.
+                      - 400057--The fields collector_id and external_reference are duplicated.
+                      - 400058--Invalid idempodency key.
         '401':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -753,11 +1029,15 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 401000--Invalid-access-token-
-                      - 401002--Invalid-access-token-
-                      - 401003--Invalid-device-token-
+                      - 401000--Invalid access token.
+                      - 401002--Invalid access token.
+                      - 401003--Invalid device token.
         '404':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -766,11 +1046,15 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 404001--The-Disbursement-was-not-found-
-                      - 404002--The-Advanced-Payment-was-not-found-
-                      - 404003--The-Payer-was-not-found-
+                      - 404001--The Disbursement was not found.
+                      - 404002--The Advanced Payment was not found.
+                      - 404003--The Payer was not found.
         '406':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -779,17 +1063,29 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 406001--Error-in-the-payments-API-
+                      - 406001--Error in the payments API.
     put:
       tags:
         - $ref: '#/tags/marketplace'
       summary: Update a Payment
+      x-summary-i18n:
+        eng: Update a Payment
+        spa: Actualizar un pago
+        por: 
       description: Update a Payment
+      x-description-i18n:
+        eng: Update a Payment
+        spa: Actualizar un pago
+        por: 
       deprecated: true
       parameters:
         - name: id
           in: path
           description: Payment's Id
+          x-description-i18n:
+            eng: Payment's Id
+            spa: Payment's Id
+            por: Payment's Id
           required: true
           schema:
             type: string
@@ -803,9 +1099,17 @@ paths:
                 id:
                   type: number
                   description: Advanced Payment Identifier.
+                  x-description-i18n:
+                    eng: Advanced Payment Identifier.
+                    spa: Identificador de Advanced Payment
+                    por: Identificador de Advanced Payment
                 status:
                   type: string
                   description: Advanced Payment status.
+                  x-description-i18n:
+                    eng: Advanced Payment status.
+                    spa: Estado del Advanced Payment
+                    por: Status do Advanced Payment
                   enum: 
                     - pending -- The user has not finalized the payment process yet.
                     - approved -- The payment was approved and accredited.
@@ -817,6 +1121,10 @@ paths:
       responses:
         '400':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -825,60 +1133,60 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 400004--Invalid-application-
-                      - 400005--The-application-is-required-
-                      - 400006--Invalid-date-of-release-for-the-Disbursement-
-                      - 400007--Invalid-date-of-release-for-the-Disbursement-
-                      - 400013--Invalid-email-address-
-                      - 400014--Invalid-number-of-payments-
-                      - >-
-                        400015--Payer-ID-is-required-for-payments-with-money-in-the-account-
-                      - 400016--Invalid-payment-type-
-                      - 400017--The-transaction-amount-is-required-
-                      - 400018--Invalid-amount-
-                      - 400019--The-payment-method-is-required-
-                      - 400020--The-payment-type-is-required-
-                      - 400021--The-amount-format-is-invalid-
-                      - 400022--Invalid-processing-method-
-                      - 400023--The-payer-type-is-required-
-                      - 400024--The-payer-s-name-is-required-
-                      - 400025--The-payer-s-last-name-is-required-
-                      - 400026--The-payer-s-identification-type-is-required-
-                      - 400027--The-payer-s-identification-number-is-required-
-                      - 400028--The-expiration-date-is-required-
-                      - 400029--The-payment-token-is-required-
-                      - 400030--The-installments-are-required-
-                      - 400031--The-amount-of-disbursements-is-required-
-                      - 400032--The-collector-ID-is-required-
-                      - 400033--Invalid-Marketplace-commission-
-                      - 400034--Invalid-disbursement-amount-
-                      - 400035--The-field-money-release-date-is-invalid-
-                      - >-
-                        400036--The-Marketplace-does-not-have-permissions-on-the-payer-
-                      - 400037--The-collector-was-not-found-
-                      - 400039--Invalid-request-
-                      - 400040--Invalid-status-
-                      - 400041--Invalid-start-date-
-                      - 400042--Invalid-end-date-
-                      - 400043--Invalid-email-address-
-                      - 400044--Invalid-payer-ID-
-                      - 400045--Invalid-collector-ID-
-                      - 400046--The-field-external-reference-is-invalid-
-                      - 400047--Some-parameters-of-the-search-are-invalid-
-                      - 400048--Invalid-ID-
-                      - 400049--Invalid-last-modification-date-
-                      - 400051--The-field-money-release-date-is-required-
-                      - 400052--The-processing-mode-is-required-
-                      - 400053--Invalid-content-
-                      - >-
-                        400054--The-Marketplace-does-not-have-permissions-on-the-collector-
-                      - 400055--The-field-external-reference-is-required-
-                      - 400056--The-field-money-release-days-is-invalid-
-                      - >-
-                        400057--The-fields-collector-id-and-external-reference-are-duplicated-
-                      - 400058--Invalid-idempodency-key-
+                      - 400004--Invalid application.
+                      - 400005--The application is required.
+                      - 400006--Invalid date of release for the Disbursement.
+                      - 400007--Invalid date of release for the Disbursement.
+                      - 400013--Invalid email address.
+                      - 400014--Invalid number of payments.
+                      - 400015--Payer ID is required for payments with money in the account.
+                      - 400016--Invalid payment type.
+                      - 400017--The transaction amount is required.
+                      - 400018--Invalid amount.
+                      - 400019--The payment method is required.
+                      - 400020--The payment type is required.
+                      - 400021--The amount format is invalid.
+                      - 400022--Invalid processing method.
+                      - 400023--The payer type is required.
+                      - 400024--The payer’s name is required.
+                      - 400025--The payer’s last name is required.
+                      - 400026--The payer’s identification type is required.
+                      - 400027--The payer’s identification number is required.
+                      - 400028--The expiration date is required.
+                      - 400029--The payment token is required.
+                      - 400030--The installments are required.
+                      - 400031--The amount of disbursements is required.
+                      - 400032--The collector ID is required.
+                      - 400033--Invalid Marketplace commission.
+                      - 400034--Invalid disbursement amount.
+                      - 400035--The field money_release_date is invalid.
+                      - 400036--The Marketplace does not have permissions on the payer.
+                      - 400037--The collector was not found.
+                      - 400039--Invalid request.
+                      - 400040--Invalid status.
+                      - 400041--Invalid start date.
+                      - 400042--Invalid end date.
+                      - 400043--Invalid email address.
+                      - 400044--Invalid payer ID.
+                      - 400045--Invalid collector ID.
+                      - 400046--The field external_reference is invalid.
+                      - 400047--Some parameters of the search are invalid.
+                      - 400048--Invalid ID.
+                      - 400049--Invalid last modification date.
+                      - 400051--The field money_release_date is required.
+                      - 400052--The processing_mode is required.
+                      - 400053--Invalid content.
+                      - 400054--The Marketplace does not have permissions on the collector.
+                      - 400055--The field external_reference is required.
+                      - 400056--The field money_release_days is invalid.
+                      - 400057--The fields collector_id and external_reference are duplicated.
+                      - 400058--Invalid idempodency key.
         '401':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -887,11 +1195,15 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 401000--Invalid-access-token-
-                      - 401002--Invalid-access-token-
-                      - 401003--Invalid-device-token-
+                      - 401000--Invalid access token.
+                      - 401002--Invalid access token.
+                      - 401003--Invalid device token.
         '404':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -900,11 +1212,15 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 404001--The-Disbursement-was-not-found-
-                      - 404002--The-Advanced-Payment-was-not-found-
-                      - 404003--The-Payer-was-not-found-
+                      - 404001--The Disbursement was not found.
+                      - 404002--The Advanced Payment was not found.
+                      - 404003--The Payer was not found.
         '406':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -913,13 +1229,21 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 406001--Error-in-the-payments-API-
+                      - 406001--Error in the payments API.
   /v1/advanced_payments/search:
     get:
       tags:
         - $ref: '#/tags/marketplace'
       summary: Search a Payment
+      x-summary-i18n:
+        eng: Search a Payment
+        spa: Buscar pagos
+        por: 
       description: Search a Payment
+      x-description-i18n:
+        eng: Search a Payment
+        spa: Buscar pagos
+        por: 
       deprecated: true
       parameters:
         - name: sort
@@ -1087,6 +1411,10 @@ paths:
                                       description:
                                         type: string
                                         example: Item description
+                                        x-example-i18n:
+                                          eng: Item description
+                                          spa: Descripción del item
+                                          por: Descrição do item
                                         description: description
                                       category_id:
                                         type: string
@@ -1218,6 +1546,10 @@ paths:
                                 description:
                                   type: string
                                   example: Item description
+                                  x-example-i18n:
+                                    eng: Item description
+                                    spa: Descripción del item
+                                    por: Descrição do item
                                   description: description
                                 category_id:
                                   type: string
@@ -1264,6 +1596,10 @@ paths:
                     description: results
         '400':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -1272,60 +1608,60 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 400004--Invalid-application-
-                      - 400005--The-application-is-required-
-                      - 400006--Invalid-date-of-release-for-the-Disbursement-
-                      - 400007--Invalid-date-of-release-for-the-Disbursement-
-                      - 400013--Invalid-email-address-
-                      - 400014--Invalid-number-of-payments-
-                      - >-
-                        400015--Payer-ID-is-required-for-payments-with-money-in-the-account-
-                      - 400016--Invalid-payment-type-
-                      - 400017--The-transaction-amount-is-required-
-                      - 400018--Invalid-amount-
-                      - 400019--The-payment-method-is-required-
-                      - 400020--The-payment-type-is-required-
-                      - 400021--The-amount-format-is-invalid-
-                      - 400022--Invalid-processing-method-
-                      - 400023--The-payer-type-is-required-
-                      - 400024--The-payer-s-name-is-required-
-                      - 400025--The-payer-s-last-name-is-required-
-                      - 400026--The-payer-s-identification-type-is-required-
-                      - 400027--The-payer-s-identification-number-is-required-
-                      - 400028--The-expiration-date-is-required-
-                      - 400029--The-payment-token-is-required-
-                      - 400030--The-installments-are-required-
-                      - 400031--The-amount-of-disbursements-is-required-
-                      - 400032--The-collector-ID-is-required-
-                      - 400033--Invalid-Marketplace-commission-
-                      - 400034--Invalid-disbursement-amount-
-                      - 400035--The-field-money-release-date-is-invalid-
-                      - >-
-                        400036--The-Marketplace-does-not-have-permissions-on-the-payer-
-                      - 400037--The-collector-was-not-found-
-                      - 400039--Invalid-request-
-                      - 400040--Invalid-status-
-                      - 400041--Invalid-start-date-
-                      - 400042--Invalid-end-date-
-                      - 400043--Invalid-email-address-
-                      - 400044--Invalid-payer-ID-
-                      - 400045--Invalid-collector-ID-
-                      - 400046--The-field-external-reference-is-invalid-
-                      - 400047--Some-parameters-of-the-search-are-invalid-
-                      - 400048--Invalid-ID-
-                      - 400049--Invalid-last-modification-date-
-                      - 400051--The-field-money-release-date-is-required-
-                      - 400052--The-processing-mode-is-required-
-                      - 400053--Invalid-content-
-                      - >-
-                        400054--The-Marketplace-does-not-have-permissions-on-the-collector-
-                      - 400055--The-field-external-reference-is-required-
-                      - 400056--The-field-money-release-days-is-invalid-
-                      - >-
-                        400057--The-fields-collector-id-and-external-reference-are-duplicated-
-                      - 400058--Invalid-idempodency-key-
+                      - 400004--Invalid application.
+                      - 400005--The application is required.
+                      - 400006--Invalid date of release for the Disbursement.
+                      - 400007--Invalid date of release for the Disbursement.
+                      - 400013--Invalid email address.
+                      - 400014--Invalid number of payments.
+                      - 400015--Payer ID is required for payments with money in the account.
+                      - 400016--Invalid payment type.
+                      - 400017--The transaction amount is required.
+                      - 400018--Invalid amount.
+                      - 400019--The payment method is required.
+                      - 400020--The payment type is required.
+                      - 400021--The amount format is invalid.
+                      - 400022--Invalid processing method.
+                      - 400023--The payer type is required.
+                      - 400024--The payer’s name is required.
+                      - 400025--The payer’s last name is required.
+                      - 400026--The payer’s identification type is required.
+                      - 400027--The payer’s identification number is required.
+                      - 400028--The expiration date is required.
+                      - 400029--The payment token is required.
+                      - 400030--The installments are required.
+                      - 400031--The amount of disbursements is required.
+                      - 400032--The collector ID is required.
+                      - 400033--Invalid Marketplace commission.
+                      - 400034--Invalid disbursement amount.
+                      - 400035--The field money_release_date is invalid.
+                      - 400036--The Marketplace does not have permissions on the payer.
+                      - 400037--The collector was not found.
+                      - 400039--Invalid request.
+                      - 400040--Invalid status.
+                      - 400041--Invalid start date.
+                      - 400042--Invalid end date.
+                      - 400043--Invalid email address.
+                      - 400044--Invalid payer ID.
+                      - 400045--Invalid collector ID.
+                      - 400046--The field external_reference is invalid.
+                      - 400047--Some parameters of the search are invalid.
+                      - 400048--Invalid ID.
+                      - 400049--Invalid last modification date.
+                      - 400051--The field money_release_date is required.
+                      - 400052--The processing_mode is required.
+                      - 400053--Invalid content.
+                      - 400054--The Marketplace does not have permissions on the collector.
+                      - 400055--The field external_reference is required.
+                      - 400056--The field money_release_days is invalid.
+                      - 400057--The fields collector_id and external_reference are duplicated.
+                      - 400058--Invalid idempodency key.
         '401':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -1334,11 +1670,15 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 401000--Invalid-access-token-
-                      - 401002--Invalid-access-token-
-                      - 401003--Invalid-device-token-
+                      - 401000--Invalid access token.
+                      - 401002--Invalid access token.
+                      - 401003--Invalid device token.
         '404':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -1347,11 +1687,15 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 404001--The-Disbursement-was-not-found-
-                      - 404002--The-Advanced-Payment-was-not-found-
-                      - 404003--The-Payer-was-not-found-
+                      - 404001--The Disbursement was not found.
+                      - 404002--The Advanced Payment was not found.
+                      - 404003--The Payer was not found.
         '406':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -1360,13 +1704,21 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 406001--Error-in-the-payments-API-
+                      - 406001--Error in the payments API.
   /v1/advanced_payments/{id}/refunds:
     post:
       tags:
         - $ref: '#/tags/marketplace'
       summary: Refund a Payment
+      x-summary-i18n:
+        eng: Refund a Payment
+        spa: Devolución completa de un Advanced Payment
+        por: Reembolso integral de um Advanced Payment
       description: Refund a Payment
+      x-description-i18n:
+        eng: Refund a Payment
+        spa: Devolución completa de un Advanced Payment
+        por: Reembolso integral de um Advanced Payment
       deprecated: true
       parameters:
         - name: id
@@ -1385,9 +1737,17 @@ paths:
                 id:
                   type: number
                   description: Advanced Payment Identifier.
+                  x-description-i18n:
+                    eng: Advanced Payment Identifier.
+                    spa: Identificador de Advanced Payment
+                    por: Identificador de Advanced Payment
       responses:
         '400':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -1396,60 +1756,60 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 400004--Invalid-application-
-                      - 400005--The-application-is-required-
-                      - 400006--Invalid-date-of-release-for-the-Disbursement-
-                      - 400007--Invalid-date-of-release-for-the-Disbursement-
-                      - 400013--Invalid-email-address-
-                      - 400014--Invalid-number-of-payments-
-                      - >-
-                        400015--Payer-ID-is-required-for-payments-with-money-in-the-account-
-                      - 400016--Invalid-payment-type-
-                      - 400017--The-transaction-amount-is-required-
-                      - 400018--Invalid-amount-
-                      - 400019--The-payment-method-is-required-
-                      - 400020--The-payment-type-is-required-
-                      - 400021--The-amount-format-is-invalid-
-                      - 400022--Invalid-processing-method-
-                      - 400023--The-payer-type-is-required-
-                      - 400024--The-payer-s-name-is-required-
-                      - 400025--The-payer-s-last-name-is-required-
-                      - 400026--The-payer-s-identification-type-is-required-
-                      - 400027--The-payer-s-identification-number-is-required-
-                      - 400028--The-expiration-date-is-required-
-                      - 400029--The-payment-token-is-required-
-                      - 400030--The-installments-are-required-
-                      - 400031--The-amount-of-disbursements-is-required-
-                      - 400032--The-collector-ID-is-required-
-                      - 400033--Invalid-Marketplace-commission-
-                      - 400034--Invalid-disbursement-amount-
-                      - 400035--The-field-money-release-date-is-invalid-
-                      - >-
-                        400036--The-Marketplace-does-not-have-permissions-on-the-payer-
-                      - 400037--The-collector-was-not-found-
-                      - 400039--Invalid-request-
-                      - 400040--Invalid-status-
-                      - 400041--Invalid-start-date-
-                      - 400042--Invalid-end-date-
-                      - 400043--Invalid-email-address-
-                      - 400044--Invalid-payer-ID-
-                      - 400045--Invalid-collector-ID-
-                      - 400046--The-field-external-reference-is-invalid-
-                      - 400047--Some-parameters-of-the-search-are-invalid-
-                      - 400048--Invalid-ID-
-                      - 400049--Invalid-last-modification-date-
-                      - 400051--The-field-money-release-date-is-required-
-                      - 400052--The-processing-mode-is-required-
-                      - 400053--Invalid-content-
-                      - >-
-                        400054--The-Marketplace-does-not-have-permissions-on-the-collector-
-                      - 400055--The-field-external-reference-is-required-
-                      - 400056--The-field-money-release-days-is-invalid-
-                      - >-
-                        400057--The-fields-collector-id-and-external-reference-are-duplicated-
-                      - 400058--Invalid-idempodency-key-
+                      - 400004--Invalid application.
+                      - 400005--The application is required.
+                      - 400006--Invalid date of release for the Disbursement.
+                      - 400007--Invalid date of release for the Disbursement.
+                      - 400013--Invalid email address.
+                      - 400014--Invalid number of payments.
+                      - 400015--Payer ID is required for payments with money in the account.
+                      - 400016--Invalid payment type.
+                      - 400017--The transaction amount is required.
+                      - 400018--Invalid amount.
+                      - 400019--The payment method is required.
+                      - 400020--The payment type is required.
+                      - 400021--The amount format is invalid.
+                      - 400022--Invalid processing method.
+                      - 400023--The payer type is required.
+                      - 400024--The payer’s name is required.
+                      - 400025--The payer’s last name is required.
+                      - 400026--The payer’s identification type is required.
+                      - 400027--The payer’s identification number is required.
+                      - 400028--The expiration date is required.
+                      - 400029--The payment token is required.
+                      - 400030--The installments are required.
+                      - 400031--The amount of disbursements is required.
+                      - 400032--The collector ID is required.
+                      - 400033--Invalid Marketplace commission.
+                      - 400034--Invalid disbursement amount.
+                      - 400035--The field money_release_date is invalid.
+                      - 400036--The Marketplace does not have permissions on the payer.
+                      - 400037--The collector was not found.
+                      - 400039--Invalid request.
+                      - 400040--Invalid status.
+                      - 400041--Invalid start date.
+                      - 400042--Invalid end date.
+                      - 400043--Invalid email address.
+                      - 400044--Invalid payer ID.
+                      - 400045--Invalid collector ID.
+                      - 400046--The field external_reference is invalid.
+                      - 400047--Some parameters of the search are invalid.
+                      - 400048--Invalid ID.
+                      - 400049--Invalid last modification date.
+                      - 400051--The field money_release_date is required.
+                      - 400052--The processing_mode is required.
+                      - 400053--Invalid content.
+                      - 400054--The Marketplace does not have permissions on the collector.
+                      - 400055--The field external_reference is required.
+                      - 400056--The field money_release_days is invalid.
+                      - 400057--The fields collector_id and external_reference are duplicated.
+                      - 400058--Invalid idempodency key.
         '401':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -1458,11 +1818,15 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 401000--Invalid-access-token-
-                      - 401002--Invalid-access-token-
-                      - 401003--Invalid-device-token-
+                      - 401000--Invalid access token.
+                      - 401002--Invalid access token.
+                      - 401003--Invalid device token.
         '404':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -1471,11 +1835,15 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 404001--The-Disbursement-was-not-found-
-                      - 404002--The-Advanced-Payment-was-not-found-
-                      - 404003--The-Payer-was-not-found-
+                      - 404001--The Disbursement was not found.
+                      - 404002--The Advanced Payment was not found.
+                      - 404003--The Payer was not found.
         '406':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -1484,13 +1852,21 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 406001--Error-in-the-payments-API-
+                      - 406001--Error in the payments API.
   /v1/advanced_payments/{id}/disburses:
     post:
       tags:
         - $ref: '#/tags/marketplace'
       summary: Change release date of a Disbursement
+      x-summary-i18n:
+        eng: Change release date of a Disbursement
+        spa: Cambio de fecha de liberación de todos los Disbursement
+        por: Mudança da data de lançamento de todos os Disbursement
       description: Change release date of a Disbursement
+      x-description-i18n:
+        eng: Change release date of a Disbursement
+        spa: Cambio de fecha de liberación de todos los Disbursement
+        por: Mudança da data de lançamento de todos os Disbursement
       deprecated: true
       parameters:
         - name: id
@@ -1509,9 +1885,17 @@ paths:
                 id:
                   type: number
                   description: Advanced Payment Identifier.
+                  x-description-i18n:
+                    eng: Advanced Payment Identifier.
+                    spa: Identificador de Advanced Payment
+                    por: Identificador de Advanced Payment
       responses:
         '400':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -1520,60 +1904,60 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 400004--Invalid-application-
-                      - 400005--The-application-is-required-
-                      - 400006--Invalid-date-of-release-for-the-Disbursement-
-                      - 400007--Invalid-date-of-release-for-the-Disbursement-
-                      - 400013--Invalid-email-address-
-                      - 400014--Invalid-number-of-payments-
-                      - >-
-                        400015--Payer-ID-is-required-for-payments-with-money-in-the-account-
-                      - 400016--Invalid-payment-type-
-                      - 400017--The-transaction-amount-is-required-
-                      - 400018--Invalid-amount-
-                      - 400019--The-payment-method-is-required-
-                      - 400020--The-payment-type-is-required-
-                      - 400021--The-amount-format-is-invalid-
-                      - 400022--Invalid-processing-method-
-                      - 400023--The-payer-type-is-required-
-                      - 400024--The-payer-s-name-is-required-
-                      - 400025--The-payer-s-last-name-is-required-
-                      - 400026--The-payer-s-identification-type-is-required-
-                      - 400027--The-payer-s-identification-number-is-required-
-                      - 400028--The-expiration-date-is-required-
-                      - 400029--The-payment-token-is-required-
-                      - 400030--The-installments-are-required-
-                      - 400031--The-amount-of-disbursements-is-required-
-                      - 400032--The-collector-ID-is-required-
-                      - 400033--Invalid-Marketplace-commission-
-                      - 400034--Invalid-disbursement-amount-
-                      - 400035--The-field-money-release-date-is-invalid-
-                      - >-
-                        400036--The-Marketplace-does-not-have-permissions-on-the-payer-
-                      - 400037--The-collector-was-not-found-
-                      - 400039--Invalid-request-
-                      - 400040--Invalid-status-
-                      - 400041--Invalid-start-date-
-                      - 400042--Invalid-end-date-
-                      - 400043--Invalid-email-address-
-                      - 400044--Invalid-payer-ID-
-                      - 400045--Invalid-collector-ID-
-                      - 400046--The-field-external-reference-is-invalid-
-                      - 400047--Some-parameters-of-the-search-are-invalid-
-                      - 400048--Invalid-ID-
-                      - 400049--Invalid-last-modification-date-
-                      - 400051--The-field-money-release-date-is-required-
-                      - 400052--The-processing-mode-is-required-
-                      - 400053--Invalid-content-
-                      - >-
-                        400054--The-Marketplace-does-not-have-permissions-on-the-collector-
-                      - 400055--The-field-external-reference-is-required-
-                      - 400056--The-field-money-release-days-is-invalid-
-                      - >-
-                        400057--The-fields-collector-id-and-external-reference-are-duplicated-
-                      - 400058--Invalid-idempodency-key-
+                      - 400004--Invalid application.
+                      - 400005--The application is required.
+                      - 400006--Invalid date of release for the Disbursement.
+                      - 400007--Invalid date of release for the Disbursement.
+                      - 400013--Invalid email address.
+                      - 400014--Invalid number of payments.
+                      - 400015--Payer ID is required for payments with money in the account.
+                      - 400016--Invalid payment type.
+                      - 400017--The transaction amount is required.
+                      - 400018--Invalid amount.
+                      - 400019--The payment method is required.
+                      - 400020--The payment type is required.
+                      - 400021--The amount format is invalid.
+                      - 400022--Invalid processing method.
+                      - 400023--The payer type is required.
+                      - 400024--The payer’s name is required.
+                      - 400025--The payer’s last name is required.
+                      - 400026--The payer’s identification type is required.
+                      - 400027--The payer’s identification number is required.
+                      - 400028--The expiration date is required.
+                      - 400029--The payment token is required.
+                      - 400030--The installments are required.
+                      - 400031--The amount of disbursements is required.
+                      - 400032--The collector ID is required.
+                      - 400033--Invalid Marketplace commission.
+                      - 400034--Invalid disbursement amount.
+                      - 400035--The field money_release_date is invalid.
+                      - 400036--The Marketplace does not have permissions on the payer.
+                      - 400037--The collector was not found.
+                      - 400039--Invalid request.
+                      - 400040--Invalid status.
+                      - 400041--Invalid start date.
+                      - 400042--Invalid end date.
+                      - 400043--Invalid email address.
+                      - 400044--Invalid payer ID.
+                      - 400045--Invalid collector ID.
+                      - 400046--The field external_reference is invalid.
+                      - 400047--Some parameters of the search are invalid.
+                      - 400048--Invalid ID.
+                      - 400049--Invalid last modification date.
+                      - 400051--The field money_release_date is required.
+                      - 400052--The processing_mode is required.
+                      - 400053--Invalid content.
+                      - 400054--The Marketplace does not have permissions on the collector.
+                      - 400055--The field external_reference is required.
+                      - 400056--The field money_release_days is invalid.
+                      - 400057--The fields collector_id and external_reference are duplicated.
+                      - 400058--Invalid idempodency key.
         '401':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -1582,11 +1966,15 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 401000--Invalid-access-token-
-                      - 401002--Invalid-access-token-
-                      - 401003--Invalid-device-token-
+                      - 401000--Invalid access token.
+                      - 401002--Invalid access token.
+                      - 401003--Invalid device token.
         '404':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -1595,11 +1983,15 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 404001--The-Disbursement-was-not-found-
-                      - 404002--The-Advanced-Payment-was-not-found-
-                      - 404003--The-Payer-was-not-found-
+                      - 404001--The Disbursement was not found.
+                      - 404002--The Advanced Payment was not found.
+                      - 404003--The Payer was not found.
         '406':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -1608,13 +2000,21 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 406001--Error-in-the-payments-API-
+                      - 406001--Error in the payments API.
   /v1/advanced_payments/{id}/disbursements/{disbursement_id}/refunds:
     post:
       tags:
         - $ref: '#/tags/marketplace'
       summary: Parcial refund of an Advanced Payment
+      x-summary-i18n:
+        eng: Parcial refund of an Advanced Payment
+        spa: Devolucón parcial deun Advanced Payment
+        por: Retorno parcial de um Advanced Payment
       description: Parcial refund of an Advanced Payment
+      x-description-i18n:
+        eng: Parcial refund of an Advanced Payment
+        spa: Devolucón parcial deun Advanced Payment
+        por: Retorno parcial de um Advanced Payment
       deprecated: true
       parameters:
         - name: id
@@ -1640,9 +2040,17 @@ paths:
                 id:
                   type: number
                   description: Advanced Payment Identifier.
+                  x-description-i18n:
+                    eng: Advanced Payment Identifier.
+                    spa: Identificador de Advanced Payment
+                    por: Identificador de Advanced Payment
       responses:
         '400':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -1651,60 +2059,60 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 400004--Invalid-application-
-                      - 400005--The-application-is-required-
-                      - 400006--Invalid-date-of-release-for-the-Disbursement-
-                      - 400007--Invalid-date-of-release-for-the-Disbursement-
-                      - 400013--Invalid-email-address-
-                      - 400014--Invalid-number-of-payments-
-                      - >-
-                        400015--Payer-ID-is-required-for-payments-with-money-in-the-account-
-                      - 400016--Invalid-payment-type-
-                      - 400017--The-transaction-amount-is-required-
-                      - 400018--Invalid-amount-
-                      - 400019--The-payment-method-is-required-
-                      - 400020--The-payment-type-is-required-
-                      - 400021--The-amount-format-is-invalid-
-                      - 400022--Invalid-processing-method-
-                      - 400023--The-payer-type-is-required-
-                      - 400024--The-payer-s-name-is-required-
-                      - 400025--The-payer-s-last-name-is-required-
-                      - 400026--The-payer-s-identification-type-is-required-
-                      - 400027--The-payer-s-identification-number-is-required-
-                      - 400028--The-expiration-date-is-required-
-                      - 400029--The-payment-token-is-required-
-                      - 400030--The-installments-are-required-
-                      - 400031--The-amount-of-disbursements-is-required-
-                      - 400032--The-collector-ID-is-required-
-                      - 400033--Invalid-Marketplace-commission-
-                      - 400034--Invalid-disbursement-amount-
-                      - 400035--The-field-money-release-date-is-invalid-
-                      - >-
-                        400036--The-Marketplace-does-not-have-permissions-on-the-payer-
-                      - 400037--The-collector-was-not-found-
-                      - 400039--Invalid-request-
-                      - 400040--Invalid-status-
-                      - 400041--Invalid-start-date-
-                      - 400042--Invalid-end-date-
-                      - 400043--Invalid-email-address-
-                      - 400044--Invalid-payer-ID-
-                      - 400045--Invalid-collector-ID-
-                      - 400046--The-field-external-reference-is-invalid-
-                      - 400047--Some-parameters-of-the-search-are-invalid-
-                      - 400048--Invalid-ID-
-                      - 400049--Invalid-last-modification-date-
-                      - 400051--The-field-money-release-date-is-required-
-                      - 400052--The-processing-mode-is-required-
-                      - 400053--Invalid-content-
-                      - >-
-                        400054--The-Marketplace-does-not-have-permissions-on-the-collector-
-                      - 400055--The-field-external-reference-is-required-
-                      - 400056--The-field-money-release-days-is-invalid-
-                      - >-
-                        400057--The-fields-collector-id-and-external-reference-are-duplicated-
-                      - 400058--Invalid-idempodency-key-
+                      - 400004--Invalid application.
+                      - 400005--The application is required.
+                      - 400006--Invalid date of release for the Disbursement.
+                      - 400007--Invalid date of release for the Disbursement.
+                      - 400013--Invalid email address.
+                      - 400014--Invalid number of payments.
+                      - 400015--Payer ID is required for payments with money in the account.
+                      - 400016--Invalid payment type.
+                      - 400017--The transaction amount is required.
+                      - 400018--Invalid amount.
+                      - 400019--The payment method is required.
+                      - 400020--The payment type is required.
+                      - 400021--The amount format is invalid.
+                      - 400022--Invalid processing method.
+                      - 400023--The payer type is required.
+                      - 400024--The payer’s name is required.
+                      - 400025--The payer’s last name is required.
+                      - 400026--The payer’s identification type is required.
+                      - 400027--The payer’s identification number is required.
+                      - 400028--The expiration date is required.
+                      - 400029--The payment token is required.
+                      - 400030--The installments are required.
+                      - 400031--The amount of disbursements is required.
+                      - 400032--The collector ID is required.
+                      - 400033--Invalid Marketplace commission.
+                      - 400034--Invalid disbursement amount.
+                      - 400035--The field money_release_date is invalid.
+                      - 400036--The Marketplace does not have permissions on the payer.
+                      - 400037--The collector was not found.
+                      - 400039--Invalid request.
+                      - 400040--Invalid status.
+                      - 400041--Invalid start date.
+                      - 400042--Invalid end date.
+                      - 400043--Invalid email address.
+                      - 400044--Invalid payer ID.
+                      - 400045--Invalid collector ID.
+                      - 400046--The field external_reference is invalid.
+                      - 400047--Some parameters of the search are invalid.
+                      - 400048--Invalid ID.
+                      - 400049--Invalid last modification date.
+                      - 400051--The field money_release_date is required.
+                      - 400052--The processing_mode is required.
+                      - 400053--Invalid content.
+                      - 400054--The Marketplace does not have permissions on the collector.
+                      - 400055--The field external_reference is required.
+                      - 400056--The field money_release_days is invalid.
+                      - 400057--The fields collector_id and external_reference are duplicated.
+                      - 400058--Invalid idempodency key.
         '401':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -1713,11 +2121,15 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 401000--Invalid-access-token-
-                      - 401002--Invalid-access-token-
-                      - 401003--Invalid-device-token-
+                      - 401000--Invalid access token.
+                      - 401002--Invalid access token.
+                      - 401003--Invalid device token.
         '404':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -1726,11 +2138,15 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 404001--The-Disbursement-was-not-found-
-                      - 404002--The-Advanced-Payment-was-not-found-
-                      - 404003--The-Payer-not-found-was-
+                      - 404001--The Disbursement was not found.
+                      - 404002--The Advanced Payment was not found.
+                      - 404003--The Payer not found was.
         '406':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -1739,13 +2155,21 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 406001--Error-in-the-payments-API-
+                      - 406001--Error in the payments API.
   /v1/advanced_payments/{id}/disbursements/{disbursement_id}/disburses:
     post:
       tags:
         - $ref: '#/tags/marketplace'
       summary: Change release date os all Disbursements
+      x-summary-i18n:
+        eng: Change release date os all Disbursements
+        spa: Cambio de fecha de liberación de un Disbursement en particular
+        por: Alteração da data de lançamento de um determinado Disbursement
       description: Change release date os all Disbursements
+      x-description-i18n:
+        eng: Change release date os all Disbursements
+        spa: Cambio de fecha de liberación de un Disbursement en particular
+        por: Alteração da data de lançamento de um determinado Disbursement
       deprecated: true
       parameters:
         - name: id
@@ -1771,9 +2195,17 @@ paths:
                 id:
                   type: number
                   description: Advanced Payment Identifier.
+                  x-description-i18n:
+                    eng: Advanced Payment Identifier.
+                    spa: Identificador de Advanced Payment
+                    por: Identificador de Advanced Payment
       responses:
         '400':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -1782,60 +2214,60 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 400004--Invalid-application-
-                      - 400005--The-application-is-required-
-                      - 400006--Invalid-date-of-release-for-the-Disbursement-
-                      - 400007--Invalid-date-of-release-for-the-Disbursement-
-                      - 400013--Invalid-email-address-
-                      - 400014--Invalid-number-of-payments-
-                      - >-
-                        400015--Payer-ID-is-required-for-payments-with-money-in-the-account-
-                      - 400016--Invalid-payment-type-
-                      - 400017--The-transaction-amount-is-required-
-                      - 400018--Invalid-amount-
-                      - 400019--The-payment-method-is-required-
-                      - 400020--The-payment-type-is-required-
-                      - 400021--The-amount-format-is-invalid-
-                      - 400022--Invalid-processing-method-
-                      - 400023--The-payer-type-is-required-
-                      - 400024--The-payer-s-name-is-required-
-                      - 400025--The-payer-s-last-name-is-required-
-                      - 400026--The-payer-s-identification-type-is-required-
-                      - 400027--The-payer-s-identification-number-is-required-
-                      - 400028--The-expiration-date-is-required-
-                      - 400029--The-payment-token-is-required-
-                      - 400030--The-installments-are-required-
-                      - 400031--The-amount-of-disbursements-is-required-
-                      - 400032--The-collector-ID-is-required-
-                      - 400033--Invalid-Marketplace-commission-
-                      - 400034--Invalid-disbursement-amount-
-                      - 400035--The-field-money-release-date-is-invalid-
-                      - >-
-                        400036--The-Marketplace-does-not-have-permissions-on-the-payer-
-                      - 400037--The-collector-was-not-found-
-                      - 400039--Invalid-request-
-                      - 400040--Invalid-status-
-                      - 400041--Invalid-start-date-
-                      - 400042--Invalid-end-date-
-                      - 400043--Invalid-email-address-
-                      - 400044--Invalid-payer-ID-
-                      - 400045--Invalid-collector-ID-
-                      - 400046--The-field-external-reference-is-invalid-
-                      - 400047--Some-parameters-of-the-search-are-invalid-
-                      - 400048--Invalid-ID-
-                      - 400049--Invalid-last-modification-date-
-                      - 400051--The-field-money-release-date-is-required-
-                      - 400052--The-processing-mode-is-required-
-                      - 400053--Invalid-content-
-                      - >-
-                        400054--The-Marketplace-does-not-have-permissions-on-the-collector-
-                      - 400055--The-field-external-reference-is-required-
-                      - 400056--The-field-money-release-days-is-invalid-
-                      - >-
-                        400057--The-fields-collector-id-and-external-reference-are-duplicated-
-                      - 400058--Invalid-idempodency-key-
+                      - 400004--Invalid application.
+                      - 400005--The application is required.
+                      - 400006--Invalid date of release for the Disbursement.
+                      - 400007--Invalid date of release for the Disbursement.
+                      - 400013--Invalid email address.
+                      - 400014--Invalid number of payments.
+                      - 400015--Payer ID is required for payments with money in the account.
+                      - 400016--Invalid payment type.
+                      - 400017--The transaction amount is required.
+                      - 400018--Invalid amount.
+                      - 400019--The payment method is required.
+                      - 400020--The payment type is required.
+                      - 400021--The amount format is invalid.
+                      - 400022--Invalid processing method.
+                      - 400023--The payer type is required.
+                      - 400024--The payer’s name is required.
+                      - 400025--The payer’s last name is required.
+                      - 400026--The payer’s identification type is required.
+                      - 400027--The payer’s identification number is required.
+                      - 400028--The expiration date is required.
+                      - 400029--The payment token is required.
+                      - 400030--The installments are required.
+                      - 400031--The amount of disbursements is required.
+                      - 400032--The collector ID is required.
+                      - 400033--Invalid Marketplace commission.
+                      - 400034--Invalid disbursement amount.
+                      - 400035--The field money_release_date is invalid.
+                      - 400036--The Marketplace does not have permissions on the payer.
+                      - 400037--The collector was not found.
+                      - 400039--Invalid request.
+                      - 400040--Invalid status.
+                      - 400041--Invalid start date.
+                      - 400042--Invalid end date.
+                      - 400043--Invalid email address.
+                      - 400044--Invalid payer ID.
+                      - 400045--Invalid collector ID.
+                      - 400046--The field external_reference is invalid.
+                      - 400047--Some parameters of the search are invalid.
+                      - 400048--Invalid ID.
+                      - 400049--Invalid last modification date.
+                      - 400051--The field money_release_date is required.
+                      - 400052--The processing_mode is required.
+                      - 400053--Invalid content.
+                      - 400054--The Marketplace does not have permissions on the collector.
+                      - 400055--The field external_reference is required.
+                      - 400056--The field money_release_days is invalid.
+                      - 400057--The fields collector_id and external_reference are duplicated.
+                      - 400058--Invalid idempodency key.
         '401':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -1844,11 +2276,15 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 401000--Invalid-access-token-
-                      - 401002--Invalid-access-token-
-                      - 401003--Invalid-device-token-
+                      - 401000--Invalid access token.
+                      - 401002--Invalid access token.
+                      - 401003--Invalid device token.
         '404':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -1857,11 +2293,15 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 404001--The-Disbursement-was-not-found-
-                      - 404002--The-Advanced-Payment-was-not-found-
-                      - 404003--The-Payer-was-not-found-
+                      - 404001--The Disbursement was not found.
+                      - 404002--The Advanced Payment was not found.
+                      - 404003--The Payer was not found.
         '406':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -1870,18 +2310,30 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 406001--Error-in-the-payments-API-
+                      - 406001--Error in the payments API.
   /v1/advanced_payments/{id}/search:
     get:
       tags:
         - $ref: '#/tags/marketplace'
       summary: Search a payment
+      x-summary-i18n:
+        eng: Search a payment
+        spa: Buscar un pago
+        por: Buscar um pagamento
       description: Search a payment
+      x-description-i18n:
+        eng: Search a payment
+        spa: Buscar un pago
+        por: Buscar um pagamento
       deprecated: true
       parameters:
         - name: id
           in: path
           description: Payment's Id
+          x-description-i18n:
+            eng: Payment's Id
+            spa: Payment's Id
+            por: Payment's Id
           required: true
           schema:
             type: string
@@ -2065,6 +2517,10 @@ paths:
                                       description:
                                         type: string
                                         example: Item description
+                                        x-example-i18n:
+                                          eng: Item description
+                                          spa: Descripción del item
+                                          por: Descrição do item
                                         description: description
                                       category_id:
                                         type: string
@@ -2196,6 +2652,10 @@ paths:
                                 description:
                                   type: string
                                   example: Item description
+                                  x-example-i18n:
+                                    eng: Item description
+                                    spa: Descripción del item
+                                    por: Descrição do item
                                   description: description
                                 category_id:
                                   type: string
@@ -2242,6 +2702,10 @@ paths:
                     description: results
         '400':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -2250,60 +2714,60 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 400004--Invalid-application-
-                      - 400005--The-application-is-required-
-                      - 400006--Invalid-date-of-release-for-the-Disbursement-
-                      - 400007--Invalid-date-of-release-for-the-Disbursement-
-                      - 400013--Invalid-email-address-
-                      - 400014--Invalid-number-of-payments-
-                      - >-
-                        400015--Payer-ID-is-required-for-payments-with-money-in-the-account-
-                      - 400016--Invalid-payment-type-
-                      - 400017--The-transaction-amount-is-required-
-                      - 400018--Invalid-amount-
-                      - 400019--The-payment-method-is-required-
-                      - 400020--The-payment-type-is-required-
-                      - 400021--The-amount-format-is-invalid-
-                      - 400022--Invalid-processing-method-
-                      - 400023--The-payer-type-is-required-
-                      - 400024--The-payer-s-name-is-required-
-                      - 400025--The-payer-s-last-name-is-required-
-                      - 400026--The-payer-s-identification-type-is-required-
-                      - 400027--The-payer-s-identification-number-is-required-
-                      - 400028--The-expiration-date-is-required-
-                      - 400029--The-payment-token-is-required-
-                      - 400030--The-installments-are-required-
-                      - 400031--The-amount-of-disbursements-is-required-
-                      - 400032--The-collector-ID-is-required-
-                      - 400033--Invalid-Marketplace-commission-
-                      - 400034--Invalid-disbursement-amount-
-                      - 400035--The-field-money-release-date-is-invalid-
-                      - >-
-                        400036--The-Marketplace-does-not-have-permissions-on-the-payer-
-                      - 400037--The-collector-was-not-found-
-                      - 400039--Invalid-request-
-                      - 400040--Invalid-status-
-                      - 400041--Invalid-start-date-
-                      - 400042--Invalid-end-date-
-                      - 400043--Invalid-email-address-
-                      - 400044--Invalid-payer-ID-
-                      - 400045--Invalid-collector-ID-
-                      - 400046--The-field-external-reference-is-invalid-
-                      - 400047--Some-parameters-of-the-search-are-invalid-
-                      - 400048--Invalid-ID-
-                      - 400049--Invalid-last-modification-date-
-                      - 400051--The-field-money-release-date-is-required-
-                      - 400052--The-processing-mode-is-required-
-                      - 400053--Invalid-content-
-                      - >-
-                        400054--The-Marketplace-does-not-have-permissions-on-the-collector-
-                      - 400055--The-field-external-reference-is-required-
-                      - 400056--The-field-money-release-days-is-invalid-
-                      - >-
-                        400057--The-fields-collector-id-and-external-reference-are-duplicated-
-                      - 400058--Invalid-idempodency-key-
+                      - 400004--Invalid application.
+                      - 400005--The application is required.
+                      - 400006--Invalid date of release for the Disbursement.
+                      - 400007--Invalid date of release for the Disbursement.
+                      - 400013--Invalid email address.
+                      - 400014--Invalid number of payments.
+                      - 400015--Payer ID is required for payments with money in the account.
+                      - 400016--Invalid payment type.
+                      - 400017--The transaction amount is required.
+                      - 400018--Invalid amount.
+                      - 400019--The payment method is required.
+                      - 400020--The payment type is required.
+                      - 400021--The amount format is invalid.
+                      - 400022--Invalid processing method.
+                      - 400023--The payer type is required.
+                      - 400024--The payer’s name is required.
+                      - 400025--The payer’s last name is required.
+                      - 400026--The payer’s identification type is required.
+                      - 400027--The payer’s identification number is required.
+                      - 400028--The expiration date is required.
+                      - 400029--The payment token is required.
+                      - 400030--The installments are required.
+                      - 400031--The amount of disbursements is required.
+                      - 400032--The collector ID is required.
+                      - 400033--Invalid Marketplace commission.
+                      - 400034--Invalid disbursement amount.
+                      - 400035--The field money_release_date is invalid.
+                      - 400036--The Marketplace does not have permissions on the payer.
+                      - 400037--The collector was not found.
+                      - 400039--Invalid request.
+                      - 400040--Invalid status.
+                      - 400041--Invalid start date.
+                      - 400042--Invalid end date.
+                      - 400043--Invalid email address.
+                      - 400044--Invalid payer ID.
+                      - 400045--Invalid collector ID.
+                      - 400046--The field external_reference is invalid.
+                      - 400047--Some parameters of the search are invalid.
+                      - 400048--Invalid ID.
+                      - 400049--Invalid last modification date.
+                      - 400051--The field money_release_date is required.
+                      - 400052--The processing_mode is required.
+                      - 400053--Invalid content.
+                      - 400054--The Marketplace does not have permissions on the collector.
+                      - 400055--The field external_reference is required.
+                      - 400056--The field money_release_days is invalid.
+                      - 400057--The fields collector_id and external_reference are duplicated.
+                      - 400058--Invalid idempodency key.
         '401':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -2312,11 +2776,15 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 401000--Invalid-access-token-
-                      - 401002--Invalid-access-token-
-                      - 401003--Invalid-device-token-
+                      - 401000--Invalid access token.
+                      - 401002--Invalid access token.
+                      - 401003--Invalid device token.
         '404':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -2325,11 +2793,15 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 404001--The-Disbursement-was-not-found-
-                      - 404002--The-Advanced-Payment-was-not-found-
-                      - 404003--The-Payer-was-not-found-
+                      - 404001--The Disbursement was not found.
+                      - 404002--The Advanced Payment was not found.
+                      - 404003--The Payer was not found.
         '406':
           description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
           content:
             application/json:
               schema:
@@ -2338,4 +2810,4 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 406001--Error-in-the-payments-API-
+                      - 406001--Error in the payments API.
