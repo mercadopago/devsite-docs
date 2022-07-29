@@ -22,8 +22,8 @@ Feito! A loja está em produção e habilitada para processar suas vendas.
 
 > PREV_STEP_CARD_PT
 >
-> Teste a integração
+> Teste de integração
 >
 > Faça um teste para verificar se sua integração está completa.
 >
-> [Teste a integração](/developers/pt/docs/woocommerce/integration-test)
+> [Teste de integração](/developers/pt/docs/woocommerce/integration-test)

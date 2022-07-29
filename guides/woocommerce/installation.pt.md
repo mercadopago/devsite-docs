@@ -26,4 +26,4 @@ Pronto! O plugin agora está ativo e você pode configurar sua integração
 >
 > Aprenda a configurar o plugin do Mercado Pago com WooCommerce.
 >
-> [Configuração do plug-in](/developers/pt/docs/woocommerce/integration-configuration/plugin-configuration)
+> [Configuração da integração](/developers/pt/docs/woocommerce/integration-configuration)

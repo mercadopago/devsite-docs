@@ -26,4 +26,4 @@ Ready! The plugin is now active and you can configure your integration
 >
 > Learn how to configure the Mercado Pago plugin with WooCommerce.
 >
-> [Plugin configuration](/developers/en/docs/woocommerce/integration-configuration/plugin-configuration)
+> [Integration configuration](/developers/en/docs/woocommerce/integration-configuration)

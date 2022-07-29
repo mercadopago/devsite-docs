@@ -32,11 +32,11 @@ Para activar el modo de pruebas de tu tienda, sigue estos pasos:
 
 > PREV_STEP_CARD_ES
 >
-> Configura los medios de pago
+> Configurar las notificaciones de pago
 >
-> Conoce cómo configurar los distintos medios de pago en la tienda.
+> Activa las notificaciones IPN en tu integración.
 >
-> [Configura los medios de pago](/developers/es/docs/woocommerce/payments-methods-configuration)
+> [Configura las notificaciones](/developers/es/docs/woocommerce/integration-configuration/notifications)
 
 > NEXT_STEP_CARD_ES
 >

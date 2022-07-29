@@ -22,7 +22,7 @@ Done! The store is in production and enabled to process your sales.
 
 > PREV_STEP_CARD_EN
 >
-> Test the integration
+> Integration test
 >
 > Do a test to check that your integration is complete.
 >

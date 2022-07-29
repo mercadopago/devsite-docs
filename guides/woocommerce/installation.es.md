@@ -26,4 +26,4 @@ Para instalar el plugin de Mercado Pago con WooCommerce a través de Wordpress, 
 >
 > Aprende a configurar el plugin de Mercado Pago con WooCommerce.
 >
-> [Configuración del plugin](/developers/es/docs/woocommerce/integration-configuration/plugin-configuration)
+> [Configuración de la integración](/developers/es/docs/woocommerce/integration-configuration)

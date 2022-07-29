@@ -32,16 +32,16 @@ Para ativar o modo de teste para sua loja, siga estas etapas:
 
 > PREV_STEP_CARD_PT
 >
-> Configurar os métodos de pagamento
+> Configurar notificações de pagamento
 >
-> Aprenda a configurar os diferentes métodos de pagamento na loja.
+> Habilite notificações IPN em sua integração.
 >
-> [Configurar métodos de pagamento](/developers/pt/docs/woocommerce/payments-methods-configuration)
+> [Configurar notificações](/developers/pt/docs/woocommerce/integration-configuration/notifications)
 
 > NEXT_STEP_CARD_PT
 >
-> Saír para produção
+> Saír à produção
 >
 > Ative a loja e vá para produção.
 >
-> [Ir para produção](/developers/pt/docs/woocommerce/goto-production)
+> [Saír à produção](/developers/pt/docs/woocommerce/goto-production)
