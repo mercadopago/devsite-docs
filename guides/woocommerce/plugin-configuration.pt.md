@@ -42,4 +42,4 @@ Em **Configurações avançadas**, configure as opções relacionadas a salvar i
 >
 > Aprenda a configurar os diferentes métodos de pagamento na loja.
 >
-> [Configurar os métodos de pagamento](/developers/es/docs/woocommerce/payments-configuration)
+> [Configurar os métodos de pagamento](/developers/es/docs/woocommerce/integration-configuration/payments-configuration)

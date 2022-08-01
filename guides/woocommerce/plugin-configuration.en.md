@@ -43,4 +43,4 @@ Under **Advanced Settings**, configure options related to saving information to 
 >
 > Learn how to configure the different payment methods in the store.
 >
-> [Configure the payment methods](/developers/es/docs/woocommerce/payments-configuration)
+> [Configure the payment methods](/developers/es/docs/woocommerce/integration-configuration/payments-configuration)
