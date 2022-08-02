@@ -41,4 +41,4 @@ En **Ajustes avanzados**, configura las opciones relacionadas con el almacenamie
 >
 > Conoce cómo configurar los distintos medios de pago en la tienda.
 >
-> [Configura los medios de pagos](/developers/es/docs/woocommerce/payments-configuration)
+> [Configura los medios de pagos](/developers/es/docs/woocommerce/integration-configuration/payments-configuration)
