@@ -80,6 +80,7 @@ const bricksBuilder = mp.bricks();
 
 Uma vez instanciado, o brick pode ser renderizado e ter todas as suas configurações compiladas de modo que a estrutura final do brick seja gerada.
 
+
 Para renderizar o brick, insira o código abaixo após o passo anterior e preencha os atributos conforme os comentários destacados neste mesmo código.
 
 ```javascript
@@ -129,6 +130,12 @@ O resultado de renderizar o brick deve ser como na imagem abaixo:
 
 ![cardform](checkout-bricks/card-form-pt.png)
 
+> WARNING
+>
+> Atenção
+>
+> Para um controle eficaz do Brick, a função enviada no `onSubmit` deve sempre retornar uma Promise. Chame o `resolve()` apenas se o processamento em seu backend ocorreu com sucesso. Chame o `reject()` caso algum erro ocorra. Isso fará com que o brick permita o preenchimento dos campos novamente e viabilize uma nova tentativa de pagamento. Além disso, ao chamar o método `resolve()` dentro da Promise do `onSubmit`, o brick não permite novos pagamentos. Caso queira realizar um novo pagamento, deve-se criar uma nova instância.
+  
 > PREV_STEP_CARD_PT
 >
 > Pré-requisitos
