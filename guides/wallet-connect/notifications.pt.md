@@ -22,7 +22,7 @@ Para Wallet Connect, existem dois tipos diferentes de eventos que permitem o rec
 
 
 * **Agreement entre o integrador e Mercado Pago cancelado pelo usuário:** Neste caso, o usuário tem a possibilidade de se descadastrar de um agreement, o que faz com que o contrato existente seja cancelado. Quando isso acontece, o `payer_token` é invalidado e nenhuma outra cobrança é feita ao usuário. Se o integrador realizar novas tentativas de cobrança, a mesma será rejeitada.<br><br>
-* **Atualização do meio de pagamento de um agreement pelo usuário:** Neste caso, fornecemos ao usuário uma maneira de adicionar ou atualizar uma forma de pagamento secundária. (Por padrão, dinheiro na conta Mercado Pago é a primeira forma de pagamento). Com base nos status de pagamento entre o integrador e o usuário, é possível detectar pagamentos rejeitados e notificar o usuário para que ele possa realizar a atualização ou adicionar uma forma de pagamento secundária.
+* **Atualização do meio de pagamento de um agreement pelo usuário:** Neste caso, o usuário pode adicionar ou atualizar uma forma de pagamento secundária. (Por padrão, dinheiro na conta Mercado Pago é a primeira forma de pagamento). Com base nos status de pagamento, é possível detectar pagamentos rejeitados e notificar o usuário para que ele possa realizar a atualização ou adicionar uma forma de pagamento secundária.
 
 Na tabela abaixo mostramos os possíveis valores que são enviados no corpo da requisição do cancelamento de um agreement e atualização do meio de pagamento.
 
