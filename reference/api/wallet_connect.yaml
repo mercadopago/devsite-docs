@@ -8,7 +8,7 @@ paths:
   /v2/wallet_connect/agreements:
     post:
       tags:
-        - $ref: '#/tags/checkout-api'
+        - $ref: '#/tags/wallet-connect'
       summary: Create Agreement
       x-summary-i18n:
         eng: Create Agreement
@@ -171,7 +171,7 @@ paths:
   /v2/wallet_connect/agreements/{agreement_id}/payer_token:
     post:
       tags:
-        - $ref: '#/tags/checkout-api'
+        - $ref: '#/tags/wallet-connect'
       summary: Create payer token
       x-summary-i18n:
         eng: Create payer token
@@ -317,7 +317,7 @@ paths:
   /v2/wallet_connect/agreements/{agreement_id}:
     delete:
       tags:
-        - $ref: '#/tags/checkout-api'
+        - $ref: '#/tags/wallet-connect'
       summary: Cancel agreement
       x-summary-i18n:
         eng: Cancel agreement

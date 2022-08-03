@@ -18,7 +18,7 @@ Antes de configurar as notificações webhook para Wallet Connect é importante 
 | Certificado SSL  | Protocolo que permite estabelecer comunicações seguras na Internet para atividades como navegação, e-mail, e outras transferências de dados.  |
 | Resposta à requisição  | O endpoint deve retornar um código de resposta 2XX para confirmar o recebimento da requisição. Todos os códigos de resposta fora do 2XX acionarão novas tentativas exponenciais do Mercado Pago.  |
 | Timeout  | Para evitar problemas de timeout, a aplicação deve retornar uma resposta antes de acionar uma lógica complexa.  |
-| Solicitação de permissão  | Para que seja possível colocar as solicitações na lista de permissões pelo DNS, as requisições virão através do endpoint api.mercadopago.com. O integrador deve desabilitar o CSRF para api.mercadopago.com, o que permitirá solicitações do Mercado Pago.  |
+| Solicitação de permissão  | Para que seja possível colocar as solicitações na lista de permissões pelo DNS, as requisições virão através do endpoint api.mercadopago.com. O integrador deve desabilitar o CSRF (**Cross-site request forgery**) para api.mercadopago.com, o que permitirá solicitações do Mercado Pago.  |
 
 
 ### Tipos de eventos
@@ -44,7 +44,7 @@ curl -X POST 'https://api.integrator.com/wallet_connect/events' \
      entity: "agreement",
      action: "status.updated",
      date: "2021-09-30T23:24:44Z",
-     model_ version: 1,
+     model_version: 1,
      version: 0,
      data: { 
 
@@ -76,7 +76,7 @@ curl -X POST 'https://api.integrator.com/wallet_connect/events' \
      entity: "agreement",
      action: "payment_method.updated",
      date: "2021-09-30T23:24:44Z",
-     model_ version: 1,
+     model_version: 1,
      version: 0,
      data: { 
 
@@ -113,11 +113,11 @@ A configuração dos webhooks é feita através do Dashboard. Abaixo explicaremo
 ![webhooks](/images/notifications/webhooks_pt.png)
 
 
-1. Caso ainda não tenha, crie uma aplicação na página inicial de seu Dashboard.
-2. Com a aplicação criada, acesse a aba Notificações Webhooks em seu Dashboard e configure as URLs de produção e teste da qual serão recebidas as notificações.
+1. Caso ainda não tenha, crie uma aplicação na página inicial de seu [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel).
+2. Com a aplicação criada, acesse a aba Notificações Webhooks em seu Dashboard e configure as [URLs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications) de **produção** e **teste** da qual serão recebidas as notificações. 
 3. Você também poderá experimentar e testar se a URL indicada está recebendo as notificações corretamente, podendo verificar a solicitação, a resposta dada pelo servidor e a descrição do evento.
-4. Caso seja necessário identificar múltiplas contas, no final do URL indicada você poderá indicar o parâmetro ?cliente=(nomedovendedor) endpoint para identificar os vendedores.
-5. Em seguida, selecione os eventos dos quais você receberá notificações em formato json através de um HTTP POST para a URL especificada anteriormente. Um evento é qualquer tipo de atualização no objeto relatado, incluindo alterações de status ou atributo. Veja na tabela abaixo os eventos que poderão ser configurados.
+4. Caso seja necessário identificar múltiplas contas, no final do URL indicada você poderá indicar o parâmetro `?cliente=(nomedovendedor) endpoint` para identificar os vendedores.
+5. Em seguida, selecione os **eventos** dos quais você receberá notificações em formato `json` através de um `HTTP POST` para a URL especificada anteriormente. Um evento é qualquer tipo de atualização no objeto relatado, incluindo alterações de status ou atributo. Veja na tabela abaixo os eventos que poderão ser configurados.
 
 | Tipo de notificação  | Ação  | Descrição  |
 | --- | --- | --- |
