@@ -149,4 +149,4 @@ O resultado de renderizar o brick deve ser como na imagem abaixo:
 >
 > Após configurar a integração do Card Payment Brick, veja como enviar o pagamento ao Mercado Pago.
 >
-> [Envie pagamento ao Mercado Pago](/developers/pt/docs/checkout-bricks/card-payment-brick/payment-submission) 
+> [Envie pagamento ao Mercado Pago](/developers/pt/docs/checkout-bricks/card-payment-brick/payment-submission)  

@@ -1,8 +1,8 @@
-[TXTSNIPPET][/guides/snippets/test-integration/bricks/bricks-integration-test]
+[TXTSNIPPET][/guides/snippets/test-integration/bricks/bricks-bricks-test-payment-flow]
 
 > PREV_STEP_CARD_PT
 >
-> Envie pagamento ao Mercado Pago
+> Envie pagamento ao Mercado Pago 
 >
 > Após configurar a integração do Payment Brick, veja como enviar o pagamento ao Mercado Pago.
 >

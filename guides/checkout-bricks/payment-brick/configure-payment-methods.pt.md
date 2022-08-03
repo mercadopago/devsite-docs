@@ -7,15 +7,15 @@
 Como o Payment Brick disponibiliza diversos meios de pagamento, é necessário customizar quais serão disponibilizados. Atualmente é possível selecionar até quatro, sendo:
 
 ----[mlm, mpe, mco, mlu, mlc]----
-* Cartão de crédito
-* Cartão de débito
+* [Cartão de crédito](#bookmark_cartão_de_crédito)
+* [Cartão de débito](#bookmark_cartão_de_débito)
 ------------
 
 ----[mla, mlb]----
-* Cartão de crédito
-* Cartão de débito
-* Meios off
-* Pix
+* [Cartão de crédito](#bookmark_cartão_de_crédito)
+* [Cartão de débito](#bookmark_cartão_de_débito)
+* [Meios off](#bookmark_meios_off)
+* [Pix](#bookmark_pix)
 ------------
 
 Veja abaixo como configurar cada uma das opções citadas acima.

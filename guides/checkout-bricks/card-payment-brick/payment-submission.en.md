@@ -8,10 +8,10 @@
 >
 > [Configure integration](/developers/en/docs/checkout-bricks/card-payment-brick/configure-integration)
 
-> NEXT_STEP_CARD_EN
+> NEXT_STEP_CARD_EN 
 >
-> Create test users
+> Test the payment flow
 >
-> Check how to create test users to later test how your integration works.
+> Check how to perform tests to ensure your integration works correctly.
 >
-> [Create test users](/developers/en/docs/checkout-bricks/card-payment-brick/integration-test/create-test-users)
+> [Test the payment flow](/developers/en/docs/checkout-bricks/csrd-payment-brick/integration-test/test-payment-flow)

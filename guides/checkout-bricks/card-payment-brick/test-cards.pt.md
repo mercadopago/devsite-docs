@@ -16,4 +16,4 @@
 >
 > Veja quais são os requisitos necessários para entrar em produção.
 >
-> [Requisitos para entrar em produção](/developers/pt/docs/checkout-bricks/card-payment-brick/integration-test/go-to-production-requeriments)
+> [Requisitos para entrar em produção](/developers/pt/docs/checkout-bricks/card-payment-brick/integration-test/go-to-production-requeriments) 

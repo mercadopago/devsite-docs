@@ -7,15 +7,15 @@
 As Payment Brick provides several means of payment, it is necessary to customize which ones will be made available. It is currently possible to select up to four:
 
 ----[mlm, mpe, mco, mlu, mlc]----
-* Credit card
-* Debit card
+* [Credit card](#bookmark_credit_card)
+* [Debit card](#bookmark_debit_card)
 ------------
 
 ----[mla, mlb]----
-* Credit card
-* Debit card
-* Methods off
-* Pix
+* [Credit card](#bookmark_credit_card)
+* [Debit card](#bookmark_debit_card)
+* M[ethods off](#bookmark_methods_off)
+* [Pix](#bookmark_pix)
 ------------
 
 See below how to configure each of the options mentioned above.

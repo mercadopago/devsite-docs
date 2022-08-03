@@ -1,8 +1,8 @@
-[TXTSNIPPET][/guides/snippets/test-integration/bricks/bricks-integration-test]
+[TXTSNIPPET][/guides/snippets/test-integration/bricks/bricks-bricks-test-payment-flow]
 
 > PREV_STEP_CARD_EN
 >
-> Send payments to Mercado Pago
+> Send payments to Mercado Pago 
 >
 > After you set up the integration, here's how to send payments to Mercado Pago.
 >

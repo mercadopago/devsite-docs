@@ -24,4 +24,4 @@ Se todos os pré-requisitos foram atendidos, você poderá realizar a integraç�
 >
 > Saiba como realizar o passo a passo de integração do Card Payment Brick.
 >
-> [Configure a integração](/developers/pt/docs/checkout-bricks/card-payment-brick/configure-integration) 
+> [Configure a integração](/developers/pt/docs/checkout-bricks/card-payment-brick/configure-integration)

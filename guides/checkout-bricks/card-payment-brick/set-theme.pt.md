@@ -4,7 +4,7 @@
 >
 > Exemplo de código
 >
-> Para facilitar e otimizar o seu processo de integração, veja um exemplo completo integração com o Checkout Bricks.
+> Para facilitar e otimizar o seu processo de integração, veja um exemplo completo integração com o Card Payment Brick..
 >
 > [Exemplo de código](/developers/pt/docs/checkout-bricks/card-payment-brick/code-example)
 

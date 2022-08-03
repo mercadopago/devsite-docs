@@ -16,4 +16,4 @@
 >
 > Check what requirements are needed to go into production.
 >
-> [Requirements to go to production](/developers/en/docs/checkout-bricks/card-payment-brick/integration-test/go-to-production-requeriments)
+> [Requirements to go to production](/developers/en/docs/checkout-bricks/card-payment-brick/integration-test/go-to-production-requirements) 

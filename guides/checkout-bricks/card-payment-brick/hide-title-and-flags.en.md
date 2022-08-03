@@ -1,4 +1,4 @@
-[TXTSNIPPET][/guides/snippets/test-integration/bricks/bricks-hide-tittle-and-flags]
+[TXTSNIPPET][/guides/snippets/test-integration/bricks/bricks-hide-title-and-flags]
 
 > PREV_STEP_CARD_EN
 >

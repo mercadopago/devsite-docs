@@ -1,4 +1,4 @@
-[TXTSNIPPET][/guides/snippets/test-integration/test-cards]
+[TXTSNIPPET][/guides/snippets/test-integration/go-live-requirements]
 
 > PREV_STEP_CARD_EN
 >

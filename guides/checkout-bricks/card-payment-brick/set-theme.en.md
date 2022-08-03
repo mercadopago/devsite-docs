@@ -4,7 +4,7 @@
 >
 > Code example
 >
-> To simplify and optimize the integration process, view an example of a Checkout Bricks integration.
+> To simplify and optimize the integration process, view an example of a Card Payment Brick integration.
 >
 > [Send payments to Mercado Pago](/developers/en/docs/checkout-bricks/card-payment-brick/code-example)
 
