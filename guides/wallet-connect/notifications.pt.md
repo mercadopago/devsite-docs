@@ -10,7 +10,7 @@ Antes de configurar as notificações para Wallet Connect é importante consider
 | Certificado SSL  | Protocolo que permite estabelecer comunicações seguras na Internet para atividades como navegação, e-mail, e outras transferências de dados.  |
 | Resposta à requisição  | O endpoint deve retornar um código de resposta 2XX para confirmar o recebimento da requisição. Todos os códigos de resposta fora do 2XX acionarão novas tentativas exponenciais do Mercado Pago.  |
 | Timeout  | Para evitar problemas de timeout, a aplicação deve retornar uma resposta antes de acionar uma lógica complexa.  |
-| Solicitação de permissão  | Para que seja possível colocar as solicitações na lista de permissões pelo DNS, as requisições virão através do endpoint api.mercadopago.com. É preciso desabilitar o CSRF para api.mercadopago.com para permitir solicitações do Mercado Pago.  |
+| Solicitação de permissão  | Para que seja possível colocar as solicitações na lista de permissões pelo DNS, as requisições virão através do endpoint api.mercadopago.com. É preciso desabilitar o CSRF (**Cross-site request forgery**) para api.mercadopago.com para permitir solicitações do Mercado Pago.  |
 
 
 
