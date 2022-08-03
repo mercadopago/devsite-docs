@@ -1,35 +1,17 @@
-# Create test users
-
-[TXTSNIPPET][/guides/snippets/test-integration/create-test-users]
-
-# Test the payment flow
-
-## Configure the integration with seller user data
-
-Configure your **seller test user's** [productive public key]([FAKER][CREDENTIALS][URL]) at your application frontend, and the **buyer test user's** [productive private key]([FAKER][CREDENTIALS][URL]) at the backend.
-
-## Make a payment with your buyer user
-
-### Credit card tests
-
-Start the integration with your test seller user credentials:
-
-1. Fill out [test card data](/developers/en/guides/additional-content/testing/test-cards).
-1. Enter your test buyer user e-mail.
-1. Confirm purchase. Done!
+[TXTSNIPPET][/guides/snippets/test-integration/bricks/bricks-integration-test]
 
 > PREV_STEP_CARD_EN
 >
-> Send payments to Mercado Pago
+> Create test users
 >
-> After you set up the integration, here's how to send payments to Mercado Pago.
+> Check how to create test users to later test how your integration works.
 >
-> [Send payments to Mercado Pago](/developers/en/docs/checkout-bricks/integration/payment-submission)
+> [Create test users](/developers/en/docs/checkout-bricks/payment-brick/integration-test/create-test-users)
 
 > NEXT_STEP_CARD_EN
 >
-> Code example
+> Local test cards
 >
-> To simplify and optimize the integration process, view an example of a Checkout Bricks integration.
+> Check which local test cards you can use to test your integration.
 >
-> [Send payments to Mercado Pago](/developers/en/docs/checkout-bricks/integration/code-example)
+> [Local test cards](/developers/en/docs/checkout-bricks/payment-brick/integration-test/test-cards)

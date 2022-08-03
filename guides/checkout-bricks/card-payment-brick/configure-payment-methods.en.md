@@ -1,4 +1,4 @@
-> CLIENT_SIDE
+> CLIENT_SIDE 
 >
 > h1
 >
@@ -37,8 +37,7 @@ settings = {
 >
 > Check how to set up the maximum and minimum number of installments allowed in Card Payment Brick.
 >
-> [Configure installments](/developers/en/docs/checkout-bricks/additional-customization/configure-installments)
-
+> [Configure installments](/developers/en/docs/checkout-bricks/card-payment-brick/additional-customization/configure-installments)
 
 > NEXT_STEP_CARD_EN
 >
@@ -46,4 +45,4 @@ settings = {
 >
 > Learn how you can hide the Payment Button in the Card Payment Brick.
 >
-> [Hide payment button](/developers/en/docs/checkout-bricks/additional-customization/hide-payment-button)
+> [Hide payment button](/developers/en/docs/checkout-bricks/card-payment-brick/additional-customization/hide-payment-button)

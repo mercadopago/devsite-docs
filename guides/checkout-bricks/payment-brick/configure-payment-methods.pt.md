@@ -1,4 +1,4 @@
-> CLIENT_SIDE
+> CLIENT_SIDE 
 >
 > h1
 >
@@ -14,7 +14,6 @@ Na tabela abaixo você encontra os detalhes da customização e o código necess
 | Propriedade  | customization.paymentMethods.types.excluded |
 | Tipo  | string [] |
 | Observações  | Os valores aceitos dentro do array são: `credit_card`, `debit_card`.  |
-
 
 
 [[[
@@ -39,8 +38,7 @@ settings = {
 >
 > saiba como configurar quantidade máxima e mínima de parcelas aceitas no Card Payment Brick.
 >
-> [Configurar parcelamento](/developers/pt/docs/checkout-bricks/additional-customization/configure-installments)
-
+> [Configurar parcelamento](/developers/pt/docs/checkout-bricks/card-payment-brick/additional-customization/configure-installments)
 
 > NEXT_STEP_CARD_PT
 >
@@ -48,4 +46,4 @@ settings = {
 >
 > Saiba como ocultar o botão de pagamento no Card Payment Brick
 >
-> [Ocultar botão de pagamento](/developers/pt/docs/checkout-bricks/additional-customization/hide-payment-button)
+> [Ocultar botão de pagamento](/developers/pt/docs/checkout-bricks/card-payment-brick/additional-customization/hide-payment-button)

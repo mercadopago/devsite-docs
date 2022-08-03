@@ -6,7 +6,7 @@ To perform a Checkout Bricks integration, you must meet the requirements listed 
 |---|---|
 | Mercado Pago or Mercado Libre seller account | To integrate Checkout Bricks, you need a seller account on Mercado Pago or Mercado Libre. If not, [click here](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) to create. |
 | Credentials | Unique passwords with which we identify an integration in your account. To perform the integrations, you will need the _Public key_ and the _Access Token_. [Click here](/developers/en/guides/additional-content/credentials/credentials) for more information. |
-| Install the Mercado Pago SDK | Install the official SDKs to simplify your integration with our [APIs](/developers/en/reference/payments/_payments/post). For more information, [click here](/developers/en/guides/sdks). |
+| Install the Mercado Pago SDK | Install the official SDKs to simplify your integration with our [APIs](/developers/en/reference/payments/_payments/post). For more information, [click here](/developers/en/guides/sdks-v2/official/landing). |
 
 If all the prerequisites are met, you can perform the Checkout Bricks integration.
 
@@ -16,12 +16,12 @@ If all the prerequisites are met, you can perform the Checkout Bricks integratio
 >
 > Learn more about Card Payment Brick.
 >
-> [Card Payment Brick](/developers/en/docs/checkout-bricks/card-payment-brick)
+> [Card Payment Brick](/developers/en/docs/checkout-bricks/card-payment-brick/introduction)
 
 > NEXT_STEP_CARD_EN
 >
 > Configure integration
 >
-> Learn how to integrate Bricks step by step.
+> Learn how to integrate Card Payment Brick step by step.
 >
-> [Configure integration](/developers/en/docs/checkout-bricks/integration/configure-integration)
+> [Configure integration](/developers/en/docs/checkout-bricks/card-payment-brick/configure-integration)

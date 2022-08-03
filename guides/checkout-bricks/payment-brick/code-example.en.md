@@ -1,6 +1,6 @@
 # Code example
 
-To facilitate and optimize your integration process, check below a complete example of the integration with Checkout Bricks and how, after performing the integration, to send the payment to Mercado Pago.
+To facilitate and optimize your integration process, check below a complete example of the integration with Payment Brick and how, after performing the integration, to send the payment to Mercado Pago.
 
 > CLIENT_SIDE
 >
@@ -11,52 +11,59 @@ To facilitate and optimize your integration process, check below a complete exam
 ```html
 <html>
     <head>
-        <script src="https://sdk.mercadopago.com/js/v2"></script>
-    </head>
-    <body>
-        <div id="paymentBrick_container"></div>
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 <script>
-   const mp = new MercadoPago('YOUR_PUBLIC_KEY');
-const bricksBuilder = mp.bricks();
-const renderPaymentBrick = async (bricksBuilder) => {
-   const settings = {
-       initialization: {
-           amount: 100, // processing amount to be performed
-       },
-       callbacks: {
-           onReady: () => {
-           // callback called when Brick is ready
-           },
-           onSubmit: ({paymentType, formData}) => {
-           // callback called for the user to click on the data submission button
-           // example of sending the data collected by the Brick to its server
-           return new Promise((resolve, reject) => {
-               fetch("/processar-pago", {
-                   method: "POST",
-                   headers: {
-                       "Content-Type": "application/json",
-                   },
-                   body: JSON.stringify(formData)
-               })
-               .then((response) => {
-                   // receive payment result
-                   resolve();
-               })
-               .catch((error) => {
-                   // handle error response when trying to create payment
-                   reject();
-               })
-               });
-           },
-           onError: (error) => {
-           // callback called for all Brick error cases
-           },
-       },
-   };
-   window.cardPaymentBrickController = await bricksBuilder.create('payment', 'paymentBrick_container', settings);
-};
-renderPaymentBrick(bricksBuilder);
+  const mp = new MercadoPago('YOUR_PUBLIC_KEY');
+  const bricksBuilder = mp.bricks();
+  const renderPaymentBrick = async (bricksBuilder) => {
+    const settings = {
+      initialization: {
+        amount: 100, // amount of processing to be performed
+      },
+      customization: {
+        paymentMethods: {
+          creditCard: 'all',
+          debitCard: 'all',
+          ticket: 'all',
+          bankTransfer: 'all'
+        },
+      },
+      callbacks: {
+        onReady: () => {
+          // callback called when Brick is ready
+        },
+        onSubmit: ({ paymentType, formData }) => {
+          // callback called when clicking on the data submission button
+          return new Promise((resolve, reject) => {
+            fetch("/processar-pago", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify(formData)
+            })
+              .then((response) => {
+                // receive payment result
+                resolve();
+              })
+              .catch((error) => {
+                // handle error response when trying to create payment
+                reject();
+              })
+          });
+        },
+        onError: (error) => {
+          // callback called for all Brick error cases
+        },
+      },
+    };
+    window.paymentBrickController = await bricksBuilder.create(
+      'payment',
+      'paymentBrick_container',
+      settings
+    );
+  };
+  renderPaymentBrick(bricksBuilder);
 </script>
     </body>
 </html>
@@ -289,16 +296,16 @@ curl -X POST \
 
 > PREV_STEP_CARD_EN
 >
-> Test integration
+> Requirements to go to production
 >
-> View how to execute tests to ensure the smooth performance of your integration.
+> Check what requirements are needed to go into production.
 >
-> [Send payments to Mercado Pago](/developers/en/docs/checkout-bricks/integration/integration-test)
+> [Requirements to go to production](/developers/en/docs/checkout-bricks/payment-brick/integration-test/go-to-production-requeriments)
 
 > NEXT_STEP_CARD_EN
 >
 > Set theme
 >
-> See how you can select another theme when instantiating/rendering the Card Payment Brick.
+> See how you can select another theme when instantiating/rendering the Payment Brick.
 >
-> [Set theme](/developers/en/docs/checkout-bricks/additional-customization/set-theme)
+> [Set theme](/developers/en/docs/checkout-bricks/payment-brick/additional-customization/set-theme)

@@ -1,6 +1,6 @@
-# Exemplo de código
+# Exemplo de código 
  
-Para facilitar e otimizar o seu processo de integração, veja abaixo um exemplo completo da integração com o Checkout Bricks e de como, após realizar a integração, enviar o pagamento ao Mercado Pago.
+Para facilitar e otimizar o seu processo de integração, veja abaixo um exemplo completo da integração do Payment Brick e de como, após realizar a integração, enviar o pagamento ao Mercado Pago.
 
 > CLIENT_SIDE
 >
@@ -11,52 +11,59 @@ Para facilitar e otimizar o seu processo de integração, veja abaixo um exemplo
 ```html
 <html>
     <head>
-        <script src="https://sdk.mercadopago.com/js/v2"></script>
-    </head>
-    <body>
-        <div id="paymentBrick_container"></div>
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 <script>
-   const mp = new MercadoPago('YOUR_PUBLIC_KEY');
-const bricksBuilder = mp.bricks();
-const renderPaymentBrick = async (bricksBuilder) => {
-   const settings = {
-       initialization: {
-           amount: 100, //valor do processamento a ser realizado
-       },
-       callbacks: {
-           onReady: () => {
-           // callback chamado quando o Brick estiver pronto
-           },
-           onSubmit: ({paymentType, formData}) => {
-           // callback chamado o usuário clicar no botão de submissão dos dados
-           // exemplo de envio dos dados coletados pelo Brick para seu servidor
-           return new Promise((resolve, reject) => {
-               fetch("/processar-pago", {
-                   method: "POST",
-                   headers: {
-                       "Content-Type": "application/json",
-                   },
-                   body: JSON.stringify(formData)
-               })
-               .then((response) => {
-                   // receber o resultado do pagamento
-                   resolve();
-               })
-               .catch((error) => {
-                   // lidar com a resposta de erro ao tentar criar o pagamento
-                   reject();
-               })
-               });
-           },
-           onError: (error) => {
-           // callback chamado para todos os casos de erro do Brick
-           },
-       },
-   };
-   window.cardPaymentBrickController = await bricksBuilder.create('payment', 'paymentBrick_container', settings);
-};
-renderPaymentBrick(bricksBuilder);
+  const mp = new MercadoPago('YOUR_PUBLIC_KEY');
+  const bricksBuilder = mp.bricks();
+  const renderPaymentBrick = async (bricksBuilder) => {
+    const settings = {
+      initialization: {
+        amount: 100, // valor do processamento a ser realizado
+      },
+      customization: {
+        paymentMethods: {
+          creditCard: 'all',
+          debitCard: 'all',
+          ticket: 'all',
+          bankTransfer: 'all'
+        },
+      },
+      callbacks: {
+        onReady: () => {
+          // callback chamado quando o Brick estiver pronto
+        },
+        onSubmit: ({ paymentType, formData }) => {
+          // callback chamado ao clicar no botão de submissão dos dados
+          return new Promise((resolve, reject) => {
+            fetch("/processar-pago", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify(formData)
+            })
+              .then((response) => {
+                // receber o resultado do pagamento
+                resolve();
+              })
+              .catch((error) => {
+                // lidar com a resposta de erro ao tentar criar o pagamento
+                reject();
+              })
+          });
+        },
+        onError: (error) => {
+          // callback chamado para todos os casos de erro do Brick
+        },
+      },
+    };
+    window.paymentBrickController = await bricksBuilder.create(
+      'payment',
+      'paymentBrick_container',
+      settings
+    );
+  };
+  renderPaymentBrick(bricksBuilder);
 </script>
     </body>
 </html>
@@ -291,16 +298,16 @@ curl -X POST \
 
 > PREV_STEP_CARD_PT
 >
-> Testar a integração
+> Requisitos para entrar em produção
 >
-> Veja como realizar testes para garantir o funcionamento correto de sua integração.
+> Veja quais são os requisitos necessários para entrar em produção.
 >
-> [Enviar pagamento ao Mercado Pago](/developers/pt/docs/checkout-bricks/integration/integration-test) 
+> [Requisitos para entrar em produção](/developers/pt/docs/checkout-bricks/payment-brick/integration-test/go-to-production-requeriments)
 
 > NEXT_STEP_CARD_PT
 >
 > Definir tema 
 >
-> Caso deseje, veja como selecionar outro tema ao instanciar/renderizar o Card Payment Brick.
+> Caso deseje, veja como selecionar outro tema ao instanciar/renderizar o Payment Brick.
 >
-> [Definir tema](/developers/pt/docs/checkout-bricks/additional-customization/set-theme)
+> [Definir tema](/developers/pt/docs/checkout-bricks/payment-brick/additional-customization/set-theme)

@@ -32,7 +32,7 @@ const settings = {
 >
 > Consulta cómo iniciar Card Payment Brick con un email, si lo deseas.
 >
-> [Iniciar Brick con email](/developers/es/docs/checkout-bricks/additional-customization/initiate-brick-with-email)
+> [Iniciar Brick con email](/developers/es/docs/checkout-bricks/card-payment-brick/additional-customization/initiate-brick-with-email)
 
 > NEXT_STEP_CARD_ES
 >
@@ -40,4 +40,4 @@ const settings = {
 >
 > Si lo deseas, puedes configurar la cantidad máxima y mínima de cuotas. Aprende cómo.
 >
-> [Configurar cantidad máxima y mínima de cuotas](/developers/es/docs/checkout-bricks/additional-customization/configure-installments)
+> [Configurar cantidad máxima y mínima de cuotas](/developers/es/docs/checkout-bricks/card-payment-brick/additional-customization/configure-installments)

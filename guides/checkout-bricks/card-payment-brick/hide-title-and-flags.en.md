@@ -1,26 +1,4 @@
-> CLIENT_SIDE
->
-> h1
->
-> Hide title and flags
-
-| Brick  | Card Payment Form  |
-| --- | --- |
-| Customization moment  | When rendering the brick  |
-| Property  | customization.hideFormTitle  |
-| Type  | Boolean  |
-| Comments  | When **true**, hides the title line and accepted flags.  |
-
-```javascript
-const settings = {
-   ...,
-   customization: {
-       visual: {
-           hideFormTitle: true
-       }
-   }
-}
-```
+[TXTSNIPPET][/guides/snippets/test-integration/bricks/bricks-hide-tittle-and-flags]
 
 > PREV_STEP_CARD_EN
 >
@@ -28,7 +6,7 @@ const settings = {
 >
 > Learn how you can hide the Payment Button in the Card Payment Brick.
 >
-> [Hide Payment button](/developers/en/docs/checkout-bricks/additional-customization/hide-payment-button)
+> [Hide Payment button](/developers/en/docs/checkout-bricks/card-payment-brick/additional-customization/hide-payment-button)
 
 > NEXT_STEP_CARD_EN
 >
@@ -36,4 +14,4 @@ const settings = {
 >
 > You can also edit the text of the selected Card Payment Brick's layout.
 >
-> [Edit text](/developers/en/docs/checkout-bricks/additional-customization/modify-texts)
+> [Edit text](/developers/en/docs/checkout-bricks/card-payment-brick/additional-customization/modify-texts)

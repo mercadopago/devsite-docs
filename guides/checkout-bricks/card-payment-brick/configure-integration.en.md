@@ -1,6 +1,6 @@
 # Configure the integration
 
-To configure brick integration you need to follow the steps below:
+To configure Card Payment Brick integration you need to follow the steps below:
 
 1. [Create container](#bookmark_create_container)
 2. [Include and configure MercadoPago.js library](#bookmark_include_and_configure_mercadopago.js_library)
@@ -9,7 +9,7 @@ To configure brick integration you need to follow the steps below:
 
 > The steps are performed on the backend or frontend. The **Client-Side** and **Server-Side** pills located immediately next to the title help you to identify which step is performed in which instance.
 > <br/>
-> And, to help, we have prepared a complete [code example](/developers/en/docs/checkout-bricks/integration/code-example) that you can use as a template.
+> And, to help, we have prepared a complete [code example](/developers/en/docs/checkout-bricks/card-payment-brick/code-example) that you can use as a template.
 
 > CLIENT_SIDE
 >
@@ -49,7 +49,7 @@ You will need to install the SDK by adding the following in your HTML code:
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 
-Next, initialize the SDK by setting your [public key]([FAKER][CREDENTIALS][URL]) using JavaScript code as follows:
+Next, initialize the SDK by setting your [public key](/developers/en/guides/additional-content/credentials/credentials)using JavaScript code as follows:
 
 ```javascript
 const mp = new MercadoPago('YOUR_PUBLIC_KEY');
@@ -130,18 +130,24 @@ The result of rendering the brick should be like the image below:”
 
 ![cardform](checkout-bricks/card-form-en.png)
 
+> WARNING
+>
+> Attention
+>
+> For an effective Brick control, the function submitted in `onSubmit` must always return a Promise. You should call `resolve()` only if your backend processes was successful. Call `reject()` if an error occurs. The `reject()` will make the brick allow the fields to be filled in again and a new payment attempt possible. Also, when calling the `resolve()` method inside the `onSubmit` Promise, the brick does not allow new payments. If you want to make a new payment, you must create a new Brick instance.
+
 > PREV_STEP_CARD_EN
 >
 > Prerequisites
 >
-> Learn about the prerequisites needed to integrate Checkout Bricks.
+> Learn about the prerequisites needed to integrate Card Payment Brick.
 >
-> [Prerequisites](/developers/en/docs/checkout-bricks/integration/prerequisites)
+> [Prerequisites](/developers/en/docs/checkout-bricks/card-payment-brick/prerequisites)
  
 > NEXT_STEP_CARD_EN
 >
 > Send payments to Mercado Pago
 >
-> After you set up the integration, here's how to send payments to Mercado Pago.
+> After you set up the integration to Card Payment Brick, here's how to send payments to Mercado Pago.
 >
-> [Send payments to Mercado Pago](/developers/en/docs/checkout-bricks/integration/payment-submission) 
+> [Send payments to Mercado Pago](/developers/en/docs/checkout-bricks/card-payment-brick/payment-submission) 

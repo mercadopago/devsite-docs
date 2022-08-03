@@ -1,6 +1,6 @@
-# Configurar a integração 
+# Configure a integração  
 
-Para configurar a integração dos bricks você precisa seguir os passos abaixo:
+Para configurar a integração do Payment Brick você precisa seguir os passos abaixo:
 
 1. [Criar container](#bookmark_criar_container)
 2. [Incluir e configurar a biblioteca MercadoPago.js](#bookmark_incluir_e_configurar_a_biblioteca_mercadopago.js)
@@ -9,7 +9,7 @@ Para configurar a integração dos bricks você precisa seguir os passos abaixo:
 
 > Os passos são realizados no back-end ou no front-end. As pills **Client-Side** e **Server-Side** localizadas imediatamentamente ao lado do título te ajudam a identificar qual passo é realizado em qual instância. <br/></br>
 > <br/></br>
-> E, para ajudar, preparamos um [exemplo de codigo](/developers/pt/docs/checkout-bricks/integration/code-example) completo da configuração dos bricks, que você pode usar como modelo.
+> E, para ajudar, preparamos um [exemplo de codigo](/developers/pt/docs/checkout-bricks/payment-brick/code-example) completo da configuração do Payment Brick, que você pode usar como modelo.
 
 > CLIENT_SIDE
 >
@@ -26,7 +26,7 @@ Você vai precisar criar um container para definir o local que o brick será ins
 > O valor exibido na propriedade `id` a seguir é apenas um exemplo, e pode ser alterado, mas deve sempre corresponder ao `id` indicado na renderização.
 
 ```html
-  <div id="cardPaymentBrick_container"></div>
+  <div id="PaymentBrick_container"></div>
 ```
 
 > CLIENT_SIDE
@@ -49,7 +49,7 @@ Você precisará instalar o SDK adicionando o seguinte em seu código HTML:
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 
-Em seguida, inicialize o SDK definindo sua [chave pública]([FAKER][CREDENTIALS][URL]) usando código JavaScript:
+Em seguida, inicialize o SDK definindo sua [chave pública](/developers/pt/guides/additional-content/credentials/credentials) usando código JavaScript:
 
 ```javascript
 const mp = new MercadoPago('YOUR_PUBLIC_KEY');
@@ -83,7 +83,7 @@ Uma vez instanciado, o brick pode ser renderizado e ter todas as suas configura�
 Para renderizar o brick, insira o código abaixo após o passo anterior e preencha os atributos conforme os comentários destacados neste mesmo código.
 
 ```javascript
-const renderCardPaymentBrick = async (bricksBuilder) => {
+const renderPaymentBrick = async (bricksBuilder) => {
 
   const settings = {
     initialization: {
@@ -93,7 +93,7 @@ const renderCardPaymentBrick = async (bricksBuilder) => {
       onReady: () => {
         // callback chamado quando o Brick estiver pronto
       },
-      onSubmit: (cardFormData) => {
+      onSubmit: (formData) => {
         // callback chamado o usuário clicar no botão de submissão dos dados
 
         // ejemplo de envío de los datos recolectados por el Brick a su servidor
@@ -103,7 +103,7 @@ const renderCardPaymentBrick = async (bricksBuilder) => {
                 headers: {
                     "Content-Type": "application/json",
                 },
-                body: JSON.stringify(cardFormData)
+                body: JSON.stringify(formData)
             })
             .then((response) => {
                 // receber o resultado do pagamento
@@ -120,27 +120,33 @@ const renderCardPaymentBrick = async (bricksBuilder) => {
       },
     },
   };
-  const cardPaymentBrickController = await bricksBuilder.create('cardPayment', 'cardPaymentBrick_container', settings);
+  const PaymentBrickController = await bricksBuilder.create('Payment', 'PaymentBrick_container', settings);
 };
-renderCardPaymentBrick(bricksBuilder);
+renderPaymentBrick(bricksBuilder);
 ```
 
 O resultado de renderizar o brick deve ser como na imagem abaixo:
 
-![cardform](checkout-bricks/card-form-pt.png)
+![form](checkout-bricks/card-form-pt.png)
+
+> WARNING
+>
+> Atenção
+>
+> Para um controle eficaz do Brick, a função enviada no `onSubmit` deve sempre retornar uma Promise. Chame o `resolve()` apenas se o processamento em seu backend ocorreu com sucesso. Chame o `reject()` caso algum erro ocorra. Isso fará com que o brick permita o preenchimento dos campos novamente e viabilize uma nova tentativa de pagamento. Ao chamar o método `resolve()` dentro da Promise do `onSubmit`, o brick não permite novos pagamentos. Caso queira realizar um novo pagamento, deve-se criar uma nova instância do Brick.
 
 > PREV_STEP_CARD_PT
 >
 > Pré-requisitos
 >
-> Conheça os pré-requisitos necessários para integrar o Checkout Bricks.
+> Conheça os pré-requisitos necessários para integrar o Payment Brick.
 >
-> [Pré-requisitos](/developers/pt/docs/checkout-bricks/integration/prerequisites)
+> [Pré-requisitos](/developers/pt/docs/checkout-bricks/card-payment-brick/prerequisites)
 
 > NEXT_STEP_CARD_PT
 >
-> Enviar pagamento ao Mercado Pago
+> Envie pagamento ao Mercado Pago
 >
-> Após configurar a integração, veja como enviar o pagamento ao Mercado Pago.
+> Após configurar a integração do Payment Brick, veja como enviar o pagamento ao Mercado Pago.
 >
-> [Enviar pagamento ao Mercado Pago](/developers/pt/docs/checkout-bricks/integration/payment-submission) 
+> [Envie pagamento ao Mercado Pago](/developers/pt/docs/checkout-bricks/payment-brick/payment-submission) 

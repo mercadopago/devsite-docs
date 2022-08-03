@@ -14,32 +14,16 @@ El Brick posee capacidades responsivas en términos del tamaño del espacio en l
 
 ## Temas
 
-El Card Payment Brick se puede instanciar/renderizar con diferentes temas y características que pueden adaptarse mejor al aspecto de la tienda. Las características de cada uno de los temas disponibles se detallan a continuación (consulta [Definir Tema](/developers/es/docs/checkout-bricks/additional-customization/set-theme) para obtener instrucciones sobre cómo cambiar el tema del brick).
+El Checkout Bricks se puede instanciar/renderizar con diferentes temas y características que pueden adaptarse mejor al aspecto de la tienda. Las características de cada uno de los temas disponibles se detallan a continuación.
 
 ![themes](checkout-bricks/themes-payment-card-es.png)
 
 ## Idiomas
 
-El Brick de pago con tarjeta se puede instanciar/representar en tres idiomas diferentes:
+El Checkout Bricks se puede instanciar/representar en tres idiomas diferentes:
 
 * Portugués
 * Inglés 
 * Español
 
 Consulta [Elegir idioma](/developers/es/docs/checkout-bricks/additional-customization/select-language) para obtener instrucciones sobre cómo seleccionar el idioma del brick.
-
-> PREV_STEP_CARD_ES
->
-> Página de inicio
->
-> Regrese a la página de inicio de la documentación de Checkout Bricks.
->
-> [Página de inicio](/developers/es/docs/checkout-bricks/landing)
-
-> NEXT_STEP_CARD_ES
->
-> Card Payment Brick
->
-> Obtén más información sobre Card Payment Brick.
->
-> [Card Payment Brick](/developers/es/docs/checkout-bricks/card-payment-brick)

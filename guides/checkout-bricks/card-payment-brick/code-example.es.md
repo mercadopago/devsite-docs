@@ -1,6 +1,6 @@
-# Ejemplo de código
+# Ejemplo de código 
 
-Para facilitar y optimizar su proceso de integración, ve a continuación un ejemplo completo de la integración con Checkout Bricks y cómo, luego de realizar la integración, enviar el pago a Mercado Pago.
+Para facilitar y optimizar su proceso de integración, ve a continuación un ejemplo completo de la integración con Card Payment Brick y cómo, luego de realizar la integración, enviar el pago a Mercado Pago.
 
 > CLIENT_SIDE
 >
@@ -293,11 +293,11 @@ curl -X POST \
 ```
 > PREV_STEP_CARD_ES
 >
-> Probar la integración
+> Requisitos para salir a producción
 >
-> Consulta cómo realizar pruebas para garantizar el buen funcionamiento de la integración.
+> Ve qué requisitos se necesitan para entrar en producción.
 >
-> [Enviar pago a Mercado Pago](/developers/es/docs/checkout-bricks/integration/integration-test)
+> [Requisitos para salir a producción](/developers/es/docs/checkout-bricks/card-payment-brick/integration-test/go-to-production-requeriments)
 
 > NEXT_STEP_CARD_ES
 >
@@ -305,4 +305,4 @@ curl -X POST \
 >
 > Si lo deseas, aprende a seleccionar otro tema al instanciar/renderizar Card Payment Brick.
 >
-> [Definir tema](/developers/es/docs/checkout-bricks/additional-customization/set-theme)
+> [Definir tema](/developers/es/docs/checkout-bricks/card-payment-brick/additional-customization/set-theme)

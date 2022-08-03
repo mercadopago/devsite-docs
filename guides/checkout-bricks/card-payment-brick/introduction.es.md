@@ -47,4 +47,4 @@ El layout de Card Payment Brick se basa en las mejores prácticas de UX para que
 >
 > Conozca los requisitos previos necesarios para integrar Checkout Bricks.
 >
-> [Requisitos previos](/developers/es/docs/checkout-bricks/integration/prerequisites)
+> [Requisitos previos](/developers/es/docs/checkout-bricks/card-payment-brick/prerequisites)

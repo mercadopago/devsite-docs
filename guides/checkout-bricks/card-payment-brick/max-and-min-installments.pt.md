@@ -29,7 +29,7 @@ const settings = {
 >
 > Caso deseje, veja como iniciar o Card Payment Brick com documento.
 >
-> [Iniciar Brick com documento](/developers/pt/docs/checkout-bricks/additional-customization/initiate-brick-with-document)
+> [Iniciar Brick com documento](/developers/pt/docs/checkout-bricks/card-payment-brick/additional-customization/initiate-brick-with-document)
 
 > NEXT_STEP_CARD_PT
 >
@@ -37,4 +37,4 @@ const settings = {
 >
 > Saiba como configurar pagamentos exclusivamente com crédito ou débito
 >
-> [Configurar meios de pagamento aceitos](/developers/pt/docs/checkout-bricks/additional-customization/configure-payment-methods)
+> [Configurar meios de pagamento aceitos](/developers/pt/docs/checkout-bricks/card-payment-brick/additional-customization/configure-payment-methods)
