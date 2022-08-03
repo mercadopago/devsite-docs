@@ -2,16 +2,16 @@
 
 > PREV_STEP_CARD_ES 
 >
-> Configurar la integración
+> Configurar la integración 
 >
 > Aprende a realizar la integración de Payment Brick paso a paso.
 >
 > [Configurar la integración](/developers/es/docs/checkout-bricks/payment-brick/configure-integration)
 
-> NEXT_STEP_CARD_ES
+> NEXT_STEP_CARD_ES 
 >
-> Crear usuarios de prueba
+> Prueba el flujo de pago
 >
-> Ve cómo crear usuarios de prueba para luego probar cómo funciona su integración.
+> Vea cómo realizar pruebas para asegurarse de que su integración funcione correctamente.
 >
-> [Crear usuarios de prueba](/developers/es/docs/checkout-bricks/payment-brick/integration-test/create-test-users)
+> [Prueba el flujo de pago](/developers/es/docs/checkout-bricks/payment-brick/integration-test/test-payment-flow)

@@ -14,7 +14,7 @@
 >
 > [Send payments to Mercado Pago](/developers/en/docs/checkout-bricks/payment-brick/payment-submission)
 
-> NEXT_STEP_CARD_EN
+> NEXT_STEP_CARD_EN 
 >
 > Test the payment flow
 >

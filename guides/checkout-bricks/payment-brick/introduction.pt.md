@@ -32,13 +32,6 @@ Os meios de pagamento atualmente disponíveis são:
 
 ------------
 
-----[mcu]----
-| País  | Meios de pagamento |
-| --- | --- |
-| Cuba | Cartão de crédito e cartão de débito. |
-
-------------
-
 ----[mlc]----
 | País  | Meios de pagamento |
 | --- | --- |

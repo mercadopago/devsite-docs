@@ -32,13 +32,6 @@ The payment methods currently available are:
 
 ------------
 
-----[mcu]----
-| Country | Payment methods |
-| --- | --- |
-| Cuba | Credit card and debit card. |
-
-------------
-
 ----[mlc]----
 | Country | Payment methods |
 | --- | --- |

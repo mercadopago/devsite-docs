@@ -300,9 +300,9 @@ curl -X POST \
 >
 > Check what requirements are needed to go into production.
 >
-> [Requirements to go to production](/developers/en/docs/checkout-bricks/payment-brick/integration-test/go-to-production-requeriments)
+> [Requirements to go to production](/developers/en/docs/checkout-bricks/payment-brick/integration-test/go-to-production-requirements)
 
-> NEXT_STEP_CARD_EN
+> NEXT_STEP_CARD_EN 
 >
 > Customers & Cards
 >

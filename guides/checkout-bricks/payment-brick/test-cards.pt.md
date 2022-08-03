@@ -2,7 +2,7 @@
 
 [TXTSNIPPET][/guides/snippets/test-integration/test-cards]
 
-> PREV_STEP_CARD_PT
+> PREV_STEP_CARD_PT 
 >
 > Teste o fluxo de pagamento
 >
@@ -16,4 +16,4 @@
 >
 > Veja quais são os requisitos necessários para entrar em produção.
 >
-> [Requisitos para entrar em produção](/developers/pt/docs/checkout-bricks/payment-brick/integration-test/go-to-production-requeriments)
+> [Requisitos para entrar em produção](/developers/pt/docs/checkout-bricks/payment-brick/integration-test/go-to-production-requirements)

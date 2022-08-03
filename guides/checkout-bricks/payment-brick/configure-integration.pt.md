@@ -141,7 +141,7 @@ O resultado de renderizar o brick deve ser como na imagem abaixo:
 >
 > Conheça os pré-requisitos necessários para integrar o Payment Brick.
 >
-> [Pré-requisitos](/developers/pt/docs/checkout-bricks/card-payment-brick/prerequisites)
+> [Pré-requisitos](/developers/pt/docs/checkout-bricks/payment-brick/prerequisites)
 
 > NEXT_STEP_CARD_PT
 >

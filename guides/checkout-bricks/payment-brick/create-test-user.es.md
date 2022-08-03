@@ -14,7 +14,7 @@
 >
 > [Envie pago a Mercado Pago](/developers/es/docs/checkout-bricks/payment-brick/payment-submission)
 
-> NEXT_STEP_CARD_ES
+> NEXT_STEP_CARD_ES 
 >
 > Prueba el flujo de pago
 >

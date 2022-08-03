@@ -32,13 +32,6 @@ Los métodos de pago disponibles actualmente son:
 
 ------------
 
-----[mcu]----
-| País | Métodos de pago |
-| --- | --- |
-| Cuba | Tarjeta de crédito y tarjeta de débito. |
-
-------------
-
 ----[mlc]----
 | País | Métodos de pago |
 | --- | --- |

@@ -302,9 +302,9 @@ curl -X POST \
 >
 > Veja quais são os requisitos necessários para entrar em produção.
 >
-> [Requisitos para entrar em produção](/developers/pt/docs/checkout-bricks/payment-brick/integration-test/go-to-production-requeriments)
+> [Requisitos para entrar em produção](/developers/pt/docs/checkout-bricks/payment-brick/integration-test/go-to-production-requirements)
 
-> NEXT_STEP_CARD_PT
+> NEXT_STEP_CARD_PT 
 >
 > Customers & Cards
 >

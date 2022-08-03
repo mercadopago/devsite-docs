@@ -8,10 +8,10 @@
 >
 > [Configure a integração](/developers/pt/docs/checkout-bricks/payment-brick/configure-integration)
 
-> NEXT_STEP_CARD_PT
+> NEXT_STEP_CARD_PT 
 >
-> Crie usuários de teste
+> Teste o fluxo de pagamento
 >
-> Veja como criar usuários testes para, posteriormente, testar o funcionamento de sua integração.
+> Veja como realizar testes para garantir o funcionamento correto de sua integração.
 >
-> [Crie usuários de teste](/developers/pt/docs/checkout-bricks/payment-brick/integration-test/create-test-users)
+> [Teste o fluxo de pagamento](/developers/pt/docs/checkout-bricks/payment-brick/integration-test/test-payment-flow) 
