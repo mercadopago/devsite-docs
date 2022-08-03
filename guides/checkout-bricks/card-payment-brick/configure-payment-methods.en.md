@@ -4,7 +4,7 @@
 >
 > Configure accepted payment methods
 
-With Checkout Bricks it is possible to define which payment methods (debit and/or credit) will be accepted in a purchase. **By default, both are enabled at the time of integration**, however, it is also possible to offer only one of these options, limiting payment to debit or credit only.
+With Card Payment Brick it is possible to define which payment methods (debit and/or credit) will be accepted in a purchase. **By default, both are enabled at the time of integration**, however, it is also possible to offer only one of these options, limiting payment to debit or credit only.
 
 In the table below you will find the details of the customization and the code necessary to carry out the configuration.
 

@@ -4,7 +4,7 @@
 >
 > Set theme 
 
-By default, the Card Payment Brick is instantiated/rendered with the default theme. However, it is possible to select another theme by setting the "theme" parameter when instantiating/rendering the brick.
+By default, the Checkout Bricks is instantiated/rendered with the default theme. However, it is possible to select another theme by setting the "theme" parameter when instantiating/rendering the brick.
 
 ```javascript
 const bricks = mp.bricks({ theme: 'dark' });

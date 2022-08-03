@@ -4,7 +4,7 @@
 >
 > Hide payment button
 
-| Brick  | Card Payment Form  |
+| - | Brick |
 | --- | --- |
 | Customization moment  | When rendering the brick  |
 | Property  | customization.visual.hidePaymentButton  |

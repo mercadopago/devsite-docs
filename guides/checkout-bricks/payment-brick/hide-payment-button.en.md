@@ -2,16 +2,16 @@
 
 > PREV_STEP_CARD_EN
 >
-> Configure accepted payment methods
+> Change CSS variables
 >
-> Learn how to configure payments exclusively with credit or debit.
+> Learn how to change the Payment Brick CSS variables if you need.
 >
-> [Configure accepted payment methods](/developers/en/docs/checkout-bricks/card-payment-brick/additional-customization/configure-payment-methods)
+> [Change CSS variables](/developers/en/docs/checkout-bricks/payment-brick/additional-customization/modify-css-variables)
 
 > NEXT_STEP_CARD_EN
 >
 > Hide title and flags
 >
-> Learn how you can hide the UI titles and the card brands in Card Payment Brick.
+> Learn how you can hide the UI titles and the card brands in Payment Brick.
 >
-> [Hide title and flags](/developers/en/docs/checkout-bricks/card-payment-brick/additional-customization/hide-title-and-flags)
+> [Hide title and flags](/developers/en/docs/checkout-bricks/payment-brick/additional-customization/hide-title-and-flags)

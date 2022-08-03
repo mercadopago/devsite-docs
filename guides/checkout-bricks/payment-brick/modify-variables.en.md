@@ -10,8 +10,8 @@
 
 > NEXT_STEP_CARD_EN
 >
-> Initiate Brick with E-mail
+> Hide Payment button
 >
-> Check how to initiate Payment Brick with E-mail.
+> Learn how you can hide the Payment Button in the Payment Brick.
 >
-> [Initiate Brick with E-mail](/developers/en/docs/checkout-bricks/payment-brick/additional-customization/initiate-brick-with-email)
+> [Hide Payment button](/developers/en/docs/checkout-bricks/payment-brick/additional-customization/hide-payment-button)

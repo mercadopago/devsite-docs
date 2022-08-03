@@ -2,11 +2,11 @@
 
 > PREV_STEP_CARD_PT
 >
-> Exemplo de código
+> Configurar meios de pagamento aceitos 
 >
-> Para facilitar e otimizar o seu processo de integração, veja um exemplo completo integração com o Checkout Bricks.
+> Saiba como configurar pagamentos com diversos meios de pagamento.
 >
-> [Exemplo de código](/developers/pt/docs/checkout-bricks/payment-brick/code-example)
+> [Configurar meios de pagamento aceitos](/developers/pt/docs/checkout-bricks/payment-brick/additional-customization/configure-payment-methods)
 
 > NEXT_STEP_CARD_PT
 >

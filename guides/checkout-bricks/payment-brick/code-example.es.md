@@ -303,8 +303,8 @@ curl -X POST \
 
 > NEXT_STEP_CARD_ES
 >
-> Definir tema
+> Customers & Cards
 >
-> Si lo deseas, aprende a seleccionar otro tema al instanciar/renderizar Payment Brick.
+> Aprende a configurar la funcionalidad Customers & Cards, que permite el uso de tarjetas guardadas en pagos en tu sitio web.
 >
-> [Definir tema](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/set-theme)
+> [Customers & Cards](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/customers-cards) 

@@ -304,8 +304,8 @@ curl -X POST \
 
 > NEXT_STEP_CARD_EN
 >
-> Set theme
+> Customers & Cards
 >
-> See how you can select another theme when instantiating/rendering the Payment Brick.
+> Check how to configure the Customers & Cards functionality, which allows the use of cards saved in payments on your website.
 >
-> [Set theme](/developers/en/docs/checkout-bricks/payment-brick/additional-customization/set-theme)
+> [Customers & Cards](/developers/en/docs/checkout-bricks/payment-brick/additional-customization/customers-cards) 

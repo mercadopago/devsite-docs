@@ -10,8 +10,8 @@
 
 > NEXT_STEP_CARD_ES
 >
-> Iniciar Brick con email
+> Ocultar botón de pago
 >
-> Consulta cómo iniciar Payment Brick con un email, si lo deseas.
+> Consulta cómo ocultar el botón de pago en Payment Brick.
 >
-> [Iniciar Brick con email](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/initiate-brick-with-email)
+> [Ocultar botón de pago](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/hide-payment-button)

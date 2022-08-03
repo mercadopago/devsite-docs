@@ -2,16 +2,16 @@
 
 > PREV_STEP_CARD_ES
 >
-> Configurar medios de pago aceptados
+> Modificar variables CSS
 >
-> Aprende a configurar pagos exclusivamente con crédito o débito.
+> Aprende a modificar las variables CSS de Payment Brick si así lo deseas.
 >
-> [Configurar medios de pago aceptados](/developers/es/docs/checkout-bricks/card-payment-brick/additional-customization/configure-payment-methods)
+> [Modificar variables CSS](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/modify-css-variables)
 
 > NEXT_STEP_CARD_ES
 >
 > Ocultar títulos y banderas
 >
-> Además, si lo deseas, puedes ocultar los títulos de la UI y las banderas admitidas en Card Payment Brick.
+> Además, si lo deseas, puedes ocultar los títulos de la UI y las banderas admitidas en Payment Brick.
 >
-> [Ocultar títulos y banderas](/developers/es/docs/checkout-bricks/card-payment-brick/additional-customization/hide-title-and-flags)
+> [Ocultar títulos y banderas](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/hide-title-and-flags)

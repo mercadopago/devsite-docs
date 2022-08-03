@@ -67,4 +67,4 @@ Os meios de pagamento atualmente disponíveis são:
 >
 > Conheça os pré-requisitos necessários para integrar o Payment Brick.
 >
-> [Pré-requisitos](/developers/pt/docs/checkout-bricks/payment-brick/prerequisites)
+> [Pré-requisitos](/developers/pt/docs/checkout-bricks/payment-brick/prerequisites) 

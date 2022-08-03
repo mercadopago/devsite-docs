@@ -2,7 +2,7 @@
 
 > PREV_STEP_CARD_PT
 >
-> Definir tema 
+> Definir tema
 >
 > Caso deseje, veja como selecionar outro tema ao instanciar/renderizar o Payment Brick.
 >
@@ -10,8 +10,8 @@
 
 > NEXT_STEP_CARD_PT
 >
-> Iniciar Brick com e-mail 
+> Ocultar botão de pagamento 
 >
-> Caso deseje, saiba como iniciar o Payment Brick com e-mail.
+> Caso deseje, saiba como ocultar o obtão de pagamento no Payment Brick.
 >
-> [Iniciar Brick com e-mail](/developers/pt/docs/checkout-bricks/payment-brick/additional-customization/initiate-brick-with-email)
+> [Ocultar botão de pagamento](/developers/pt/docs/checkout-bricks/payment-brick/additional-customization/hide-payment-button)

@@ -10,8 +10,8 @@
 
 > NEXT_STEP_CARD_EN
 >
-> Change CSS variables
+> Configure accepted payment methods
 >
-> Learn how to change the Payment Brick CSS variables if you need.
+> Check how to set up payments with the various methods accepted in your country.
 >
-> [Change CSS variables](/developers/en/docs/checkout-bricks/payment-brick/additional-customization/modify-css-variables)
+> [Configure accepted payment methods](/developers/en/docs/checkout-bricks/payment-brick/additional-customization/configure-payment-methods)

@@ -4,7 +4,7 @@
 >
 > Modify texts
 
-| Brick  | Card Payment Brick  |
+| - | Brick |
 | --- | --- |
 | Customization moment  | When rendering the brick  |
 | Property  | customization.visual.texts.{cardNumber, cardExpirationDate, cardSecurityCode, cardholderName, cardholderIdentification, cardholderEmail, formTitle, emailSectionTitle, installmentsSectionTitle, selectInstallments, formSubmit}  |

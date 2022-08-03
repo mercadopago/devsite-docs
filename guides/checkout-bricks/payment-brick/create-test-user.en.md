@@ -12,7 +12,7 @@
 >
 > After you set up the integration, here's how to send payments to Mercado Pago.
 >
-> [Send payments to Mercado Pago](/developers/en/docs/checkout-bricks/card-payment-brick/payment-submission)
+> [Send payments to Mercado Pago](/developers/en/docs/checkout-bricks/payment-brick/payment-submission)
 
 > NEXT_STEP_CARD_EN
 >
@@ -20,4 +20,4 @@
 >
 > Check how to perform tests to ensure your integration works correctly.
 >
-> [Test the payment flow](/developers/en/docs/checkout-bricks/card-payment-brick/integration-test/test-payment-flow)
+> [Test the payment flow](/developers/en/docs/checkout-bricks/payment-brick/integration-test/test-payment-flow)

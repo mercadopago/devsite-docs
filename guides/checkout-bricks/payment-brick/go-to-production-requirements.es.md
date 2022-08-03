@@ -6,12 +6,12 @@
 >
 > Ve qué tarjetas de prueba locales puede usar para probar su integración.
 >
-> [Tarjetas de prueba locales](/developers/es/docs/checkout-bricks/card-payment-brick/integration-test/test-cards)
+> [Tarjetas de prueba locales](/developers/es/docs/checkout-bricks/payment-brick/integration-test/test-cards)
 
 > NEXT_STEP_CARD_ES
 >
 > Ejemplo de código
 >
-> Para facilitar y optimizar el proceso de integración, consulta un ejemplo de integración con Card Payment Brick.
+> Para facilitar y optimizar el proceso de integración, consulta un ejemplo de integración con Payment Brick.
 >
-> [Enviar pago a Mercado Pago](/developers/es/docs/checkout-bricks/card-payment-brick/code-example)
+> [Enviar pago a Mercado Pago](/developers/es/docs/checkout-bricks/payment-brick/code-example)

@@ -10,9 +10,9 @@
 >
 > Envie pagamento ao Mercado Pago
 >
-> Após configurar a integração do Card Payment Brick, veja como enviar o pagamento ao Mercado Pago.
+> Após configurar a integração do Payment Brick, veja como enviar o pagamento ao Mercado Pago.
 >
-> [Envie pagamento ao Mercado Pago](/developers/pt/docs/checkout-bricks/card-payment-brick/payment-submission)
+> [Envie pagamento ao Mercado Pago](/developers/pt/docs/checkout-bricks/payment-brick/payment-submission)
 
 > NEXT_STEP_CARD_PT
 >
@@ -20,4 +20,4 @@
 >
 > Veja como realizar testes para garantir o funcionamento correto de sua integração.
 >
-> [Teste o fluxo de pagamento](/developers/pt/docs/checkout-bricks/card-payment-brick/integration-test/test-payment-flow) 
+> [Teste o fluxo de pagamento](/developers/pt/docs/checkout-bricks/payment-brick/integration-test/test-payment-flow) 

@@ -1,12 +1,12 @@
 [TXTSNIPPET][/guides/snippets/test-integration/bricks/bricks-set-theme]
 
-> PREV_STEP_CARD_ES
+> PREV_STEP_CARD_ES 
 >
-> Ejemplo de código
+> Configurar medios de pago aceptados
 >
-> Para facilitar y optimizar el proceso de integración, consulta un ejemplo de integración con Checkout Bricks.
+> Aprende a configurar pagos con los diversos métodos aceptados en su país.
 >
-> [Enviar pago a Mercado Pago](/developers/es/docs/checkout-bricks/payment-brick/code-example)
+> [Configurar medios de pago aceptados](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/configure-payment-methods)
 
 > NEXT_STEP_CARD_ES
 >

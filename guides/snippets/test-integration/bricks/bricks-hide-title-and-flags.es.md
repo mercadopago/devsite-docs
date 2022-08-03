@@ -4,7 +4,7 @@
 >
 > Ocultar título y banderas
 
-| Brick  | Card Payment Form  |
+| - | Brick |
 | --- | --- |
 | Momento de personalización  |  Al renderizar el brick  |
 | Propiedad  | customization.hideFormTitle  |

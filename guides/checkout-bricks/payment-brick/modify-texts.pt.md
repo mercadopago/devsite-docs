@@ -8,7 +8,7 @@
 >
 > [Ocultar título e bandeiras](/developers/pt/docs/checkout-bricks/payment-brick/additional-customization/hide-title-and-flags)
 
-> NEXT_STEP_CARD_PT
+> NEXT_STEP_CARD_PT 
 >
 > Selecionar idioma 
 >

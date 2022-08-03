@@ -4,7 +4,7 @@
 >
 > Definir tema  
 
-Por padrão, o Card Payment Brick é instanciado/renderizado com o tema padrão. Contudo, é possível selecionar outro tema definindo o parâmetro "theme" ao instanciar a classe `bricks`.
+Por padrão, o Checkout Bricks é instanciado/renderizado com o tema padrão. Contudo, é possível selecionar outro tema definindo o parâmetro "theme" ao instanciar a classe `bricks`.
 
 ```javascript
 const bricks = mp.bricks({ theme: 'dark' });

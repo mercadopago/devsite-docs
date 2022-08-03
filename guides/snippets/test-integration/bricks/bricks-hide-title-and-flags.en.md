@@ -4,7 +4,7 @@
 >
 > Hide title and flags
 
-| Brick  | Card Payment Form  |
+| - | Brick |
 | --- | --- |
 | Customization moment  | When rendering the brick  |
 | Property  | customization.hideFormTitle  |
