@@ -14,4 +14,4 @@
 >
 > Veja como realizar testes para garantir o funcionamento correto de sua integração.
 >
-> [Teste o fluxo de pagamento](/developers/pt/docs/checkout-bricks/payment-brick/integration-test/test-payment-flow) 
+> [Teste o fluxo de pagamento](/developers/pt/docs/checkout-bricks/payment-brick/integration-test/test-payment-flow)

@@ -1,4 +1,4 @@
-[TXTSNIPPET][/guides/snippets/test-integration/bricks/bricks-test-payment-flow] 
+[TXTSNIPPET][/guides/snippets/test-integration/bricks/bricks-test-payment-flow]
 
 > PREV_STEP_CARD_EN
 >

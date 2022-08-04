@@ -15,4 +15,4 @@ With the credentials in hand, follow the steps below to make the test purchase.
 4. Enter data from one of our [test cards](/developers/en/guides/additional-content/testing/test-cards).
 3. Confirm the purchase.
 
-Done! Once these steps are finished, the integration will be complete and you will be able to use your production credentials to use the Checkout Bricks. For more information, see the section [Requirements to go to production](/developers/en/guides/additional-content/sales-processing/go-live-requirements)
+Done! Once these steps are finished, the integration will be complete and you will be able to use your production credentials to use the Checkout Bricks.

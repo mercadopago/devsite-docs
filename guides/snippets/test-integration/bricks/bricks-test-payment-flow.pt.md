@@ -15,4 +15,4 @@ Com as credenciais em mãos, siga os passos abaixo para realizar a compra teste.
 4. Insira os dados de um dos nossos [cartões de teste](/developers/pt/guides/additional-content/testing/test-cards).
 3. Confirme a compra.
 
-Pronto! Finalizadas essas etapas a integração terá sido concluída e você já poderá utilizar suas credenciais de produção para utilizar o Checkout Bricks. Para mais informações, veja a seção [Requisitos para entrar em produção](/developers/pt/guides/additional-content/sales-processing/go-live-requirements)
+Pronto! Finalizadas essas etapas a integração terá sido concluída e você já poderá utilizar suas credenciais de produção para utilizar o Checkout Bricks.

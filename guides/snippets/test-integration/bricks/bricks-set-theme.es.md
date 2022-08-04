@@ -2,7 +2,7 @@
 >
 > h1
 >
-> Definir tema 
+> Establecer tema 
 
 De forma predeterminada, Checkout Bricks se instancia/renderiza con el tema predeterminado. Sin embargo, es posible seleccionar otro tema configurando el parámetro "theme" al instanciar/renderizar el brick.
 
