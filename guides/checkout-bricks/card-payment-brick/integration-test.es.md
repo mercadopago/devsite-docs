@@ -1,12 +1,12 @@
 [TXTSNIPPET][/guides/snippets/test-integration/bricks/bricks-test-payment-flow]
 
-> PREV_STEP_CARD_ES 
+> PREV_STEP_CARD_ES
 >
-> Crear usuarios de prueba
+> Envie pago a Mercado Pago 
 >
-> Ve cómo crear usuarios de prueba para luego probar cómo funciona su integración.
+> Después de configurar la integración del Card Payment Brick, consulta cómo enviar el pago a Mercado Pago.
 >
-> [Crear usuarios de prueba](/developers/es/docs/checkout-bricks/card-payment-brick/integration-test/create-test-users)
+> [Envie pago a Mercado Pago](/developers/es/docs/checkout-bricks/card-payment-brick/payment-submission)
 
 > NEXT_STEP_CARD_ES
 >

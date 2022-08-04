@@ -2,11 +2,11 @@
 
 > PREV_STEP_CARD_EN
 >
-> Create test users
+> Send payments to Mercado Pago 
 >
-> Check how to create test users to later test how your integration works.
+> After you set up the integration, here's how to send payments to Mercado Pago.
 >
-> [Create test users](/developers/en/docs/checkout-bricks/card-payment-brick/integration-test/create-test-users)
+> [Send payments to Mercado Pago](/developers/en/docs/checkout-bricks/card-payment-brick/payment-submission)
 
 > NEXT_STEP_CARD_EN
 >
