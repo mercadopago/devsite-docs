@@ -46,7 +46,7 @@ Con el email del usuario es posible generar un ID de Cliente y, utilizando el ID
 >
 > Para facilitar y optimizar el proceso de integración, consulta un ejemplo de integración con Checkout Bricks.
 >
-> [Enviar pago a Mercado Pago](/developers/es/docs/checkout-bricks/card-payment-brick/code-example)
+> [Enviar pago a Mercado Pago](/developers/es/docs/checkout-bricks/payment-brick/code-example)
 
 > NEXT_STEP_CARD_ES
 >

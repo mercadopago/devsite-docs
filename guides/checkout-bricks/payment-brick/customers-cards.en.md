@@ -46,7 +46,7 @@ With the user's email it is possible to generate a Customer ID and using the Cus
 >
 > To simplify and optimize the integration process, view an example of a Checkout Bricks integration.
 >
-> [Send payments to Mercado Pago](/developers/en/docs/checkout-bricks/card-payment-brick/code-example)
+> [Send payments to Mercado Pago](/developers/en/docs/checkout-bricks/payment-brick/code-example)
 
 > NEXT_STEP_CARD_EN
 >
