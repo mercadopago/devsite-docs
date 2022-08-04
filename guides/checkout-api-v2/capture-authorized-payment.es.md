@@ -227,24 +227,3 @@ La respuesta va a devolver que el pago se encuentra aprobado y acreditado.
 > Importante
 >
 > No es posible captar un monto mayor al monto reservado, para ello deberá cancelar la reserva y generar una nueva.
-
-
-
-> PREV_STEP_CARD_ES
->
-> Reservar fondos
->
-> Obtenga más información sobre cómo funciona la reserva de fondos para un pago.
->
-> [Reservar fondos](/developers/es/docs/checkout-api/payment-management/make-value-reserve)
-
-
-
-> NEXT_STEP_CARD_ES
->
-> Cancelar reserva
->
-> Conozca los pasos necesarios para cancelar una reserva de valores.
->
-> [Cancelar reserva](/developers/es/docs/checkout-api/payment-management/cancel-reserve)
-
