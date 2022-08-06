@@ -19,16 +19,16 @@ Para criar contas e testar o funcionamento das integrações, siga os passos aba
 
 Pronto! A conta de teste foi criada e será exibida na tabela com as seguintes informações:
 
-![testuser](test-user/test-user-admin-1.png)
-![testuser](test-user/test-user-admin-2.png)
-![testuser](test-user/test-user-admin-3.png)
-![testuser](test-user/test-user-admin-4.png)
-![testuser](test-user/test-user-admin-5.png)
-![testuser](test-user/test-user-admin-6.png)
-![testuser](test-user/test-user-admin-7.png)
-![testuser](test-user/test-user-admin-8.png)
-![testuser](test-user/test-user-admin-9.png)
-![testuser](test-user/test-user-admin-10.png)
+![testuser](test-user/test-user-admin-1.gif)
+![testuser](test-user/test-user-admin-2.gif)
+![testuser](test-user/test-user-admin-3.gif)
+![testuser](test-user/test-user-admin-4.gif)
+![testuser](test-user/test-user-admin-5.gif)
+![testuser](test-user/test-user-admin-6.gif)
+![testuser](test-user/test-user-admin-7.gif)
+![testuser](test-user/test-user-admin-8.gif)
+![testuser](test-user/test-user-admin-9.gif)
+![testuser](test-user/test-user-admin-10.gif)
 
 * **País** local de origem da conta selecionado em seu cadastro.
 * **Identificação da conta**: descrição para identificação da conta de teste.
