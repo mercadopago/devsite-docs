@@ -1,24 +1,23 @@
-# What’s a QR code?
-
-A QR is an **unique code linked to your Mercado Pago account**. It’ll allow you to receive payments in a simple, fast and secure way.
-
-----[mlb]----
-
-![Pagos QR Mercado Pago](/images/mobile/qr_mla2.es.png)
-------------
-----[mla]----
+# How does it work?
 
 ![Pagos QR Mercado Pago](/images/mobile/qr_mla2.es.png)
 
-------------
-----[mlm]----
-![Pagos QR Mercado Pago](/images/mobile/qr_mla2.es.png)
-------------
+Once you complete the integration as explained below, your business will be able to receive payments with QR by **printing the QR Code and showcasing it in a visible spot of your POS, or by displaying it on your mobile device**, and to collect payments via Mercado Pago App.
 
-> NEXT_STEP_CARD_EN
+![QR Flow](/images/mobile/qr_flujo.es.png)
+
+> NOTE
 >
-> How it works
+> Note
 >
-> Learn how QR code works.
->
-> [How it works](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/qr-code/introduction/how-it-works)
+> If your model does not require integration with a POS system, view all the information available in [Generate QR via Mercado Pago dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/qr-code/integrations-front).
+
+## Integration Types
+
+| Type | Description |
+| --- | --- |
+| QR Attended Model | Integration model where the POS uses its system to post an order to a QR. The customer views and pays the order using the App.  |
+| QR Dynamic Model  | Integration model that generates a QR per transaction. Used for QR models in tickets.  |
+
+Depending on your business model, you can choose one of these options to offer your customers a seamless in-store shopping experience.
+

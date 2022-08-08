@@ -1,98 +1,73 @@
-# Requisitos prévios para se integrar
+# Requisitos prévios para a integração
 
-Observe estes pontos antes de começar: 
+Considere os pontos a seguir antes de começar:
+
+* Acesse a uma conta
+* Crie uma aplicação
+* Gere usuários de teste
+* Obtenha o seu Access Token
+* Identifique a sua integração
 
 ## 1. Acesse uma conta
 
-Para poder começar a integração, é necessário **contar com uma conta de Mercado Pago ou Mercado Livre**. 
+Para começar a integração, você precisa **ter uma conta no Mercado Pago ou Mercado Livre**.
 
-Você pode [Entrar](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/in-person-payments/qr-code/pre-requisites) em uma conta existente ou [Criar uma nova conta](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
+Você pode Acessar uma conta existente ou [Criar uma nova conta](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
+
 
 ## 2. Crie uma aplicação
 
-Para transacionar via integração Mercado Pago, uma credencial deve ser criada. Essa credencial terá uma identificação e o Access Token, somente com esse token será possível transacionar utilizando uma conta Mercado Pago.
+Para realizar transações através da integração do Mercado Pago é necessário criar uma credencial. Essa credencial terá uma identificação, assim como um Access Token que permitirá fazer transações usando uma conta Mercado Pago.
+
 Crie uma aplicação para obter as credenciais e configurar notificações webhooks.
 
-É fácil e explicamos como fazer isso:
+É muito simples, veja como: 
 
-1. Entre em [Suas integrações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/applications).
-2. Selecione “Nova aplicação” ou “Criar sua primeira aplicação”.
-3. Dê a ela um nome com o qual você possa identificá-la mais tarde.
-4. Aceite nossos Termos e condições. E pronto!
+1. Acesse [Suas aplicações](https://www.mercadopago.com/developers/panel/applications).
+2. Selecione o símbolo em **Suas aplicações** para criar uma nova aplicação.
+3. Nomeie a aplicação para identificação posterior.
+4. Aceite nossos Termos e Condições. E pronto!
 
-Caso não tenha nenhuma aplicação cadastrada, [veja o tutorial](https://youtu.be/FFhHdiqpnEI?list=PLCazXKuqZp3g4WfhNlhsB3FL9-1z7gUny).
+
 
 > NOTE
-> 
+>
 > Nota
 >
-> Caso sua integração seja um PDV integrado a vários lojistas/Vendedores, veja o tópico 4 e 5. Fique atento à segurança de sua integração e faça a implantação [Oauth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/security/oauth/introdution).
+> Caso o PDV integrado tenha várias conexões com contas Mercado Pago, consulte os itens 4 e 5. Fique atento à segurança da sua integração e implemente [OAuth](/developers/pt/docs/qr-code/additional-content/security/oauth/introduction).
 
-## 3. Gerar usuários de teste
+## 3. Gere usuários de teste
 
-Para realizar os testes, é necessário que você tenha, no mínimo, dois usuários: um comprador e um vendedor. 
+Para realizar a integração, você precisa ter pelo menos dois usuários: um comprador e um vendedor.
 
-Execute o comando seguinte para gerar um usuário de teste: 
-
-```curl
-curl -X POST \
--H "Content-Type: application/json" \
--H 'Authorization: Bearer ACCESS_TOKEN' \
-"https://api.mercadopago.com/users/test_user"
--d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]"}'
-```
-
-> NOTE
-> 
-> Nota
-> 
-> As credenciais utilizadas são as produtivas da conta com a qual você vai operar.   
-
-Resposta:
-
-```json
-{
-    "id": 123456,
-    "nickname": "TT123456",
-    "password": "qatest123456",
-    "site_status": "active",
-    "email": "test_user_123456@testuser.com"
-}
-```
+Você pode criar esses usuários em [Criar usuários de teste](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/test_user/_users_test_user/post) em nossa referência de API. Nela você encontrará todas as informações necessárias.
 
 > WARNING
 >
 > IMPORTANTE
 >
-> * Você pode gerar até 10 contas de usuários de teste em simultâneo. Por isso, recomendamos você salvar o e-mail e senha de cada um. 
-> * Os usuários de teste caducam após 60 dias sem atividade em Mercado Pago.
+> * Você pode gerar até 10 contas de usuários de teste em simultâneo. Por isso, recomendamos salvar o e-mail e senha de cada um.
+> * Os usuários de teste caducam após 60 dias sem atividade no Mercado Pago.
 > * Para realizar pagamentos de teste, recomendamos que você utilize valores baixos.
 > * Tanto o comprador como o vendedor devem ser usuários de teste.
-> * Utiliza cartões de teste, já que não é possível sacar o dinheiro.
-> * Vídeo tutorial de como criar um [usuário teste.](https://youtu.be/ejdnAM0A9jA?list=PLCazXKuqZp3g4WfhNlhsB3FL9-1z7gUny)
+> * Utilize cartões de teste, pois não é possível retirar dinheiro.
 
-Uma vez que os usuários de teste são criados, você pode começar com a integração e criar as lojas e caixas.
+Após a geração dos usuários de teste, você pode começar a integração e criar as lojas e os caixas.
 
-## 4. Como coletar Access Token (OAuth)
+## 4. Obtenha o seu Access Token (OAuth)
 
-Para você integrador que irá trabalhar com diversas lojas que utilizam carteira digital Mercado Pago, orientamos que faça o processo de OAuth - autenticação entre contas, esse processo consiste no processo do vendedor permitir que seus dados sejam compartilhados com um sistema terceiro de forma segura.
+Se você é um integrador que trabalha com diversas lojas que operam com o Mercado Pago, recomendamos que faça o **OAuth - autenticação entre contas***. Através do processo o vendedor autoriza o compartilhamento seguro dos seus dados com um sistema de terceiros.
 
-O access token não poderá ser compartilhado de outra maneira que não seja o OAuth. [Clique aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/qr-code/additional-content/credentials) para mais informações.
 
-## 5. Como Identificar sua integração (Sponsor ID)
+O Access Token não poderá ser compartilhado de outra maneira que não seja o OAuth.
 
-Para identificar os pedidos que são transacionados pelo seu sistema de gestão, faça a inclusão do sponsor ID, veja nas APIs de [ordens presenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference) como você enviará essa informação.
+## 5. Identifique a sua integração (Sponsor ID)
+
+Para identificar os pedidos realizados pelo seu ponto de venda, inclua o sponsor ID e confira as nossas APIs de [Pedidos presenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_pos_external_pos_id_orders/get) para saber como enviar esta informação.
 
 Passo a Passo:
-> * Crie uma conta no portal Mercado Pago (identificação Integrador).
-> * Colete o Collector ID (Cust ID ou User ID) de sua conta.
-> * Inclua o Collector ID de sua conta Integrador dentro do Sponsor ID do vendedor.
-> * Envie o Sponsor ID em todas as transações de QR. [Consulte a api](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/instore_orders/_mpmobile_instore_qr_user_id_external_id/post).
+> * Crie uma conta no portal do Mercado Pago (Integrator ID).
+> * Obtenha o Collector ID (Cust ID ou User ID) da sua conta.
+> * Inclua o Collector ID da sua conta de integrador no Sponsor ID do vendedor.
+> * Envie o Sponsor ID em todas as transações QR. [Consulte a API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/instore_orders/_mpmobile_instore_qr_user_id_external_id/post).
 
-> NEXT_STEP_CARD_PT
->
-> Lojas e Caixas
->
-> Para realizar a integração, primeiramente deverá configurar suas lojas e caixas.
->
-> [Lojas e Caixas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/qr-code/stores-pos/introduction)

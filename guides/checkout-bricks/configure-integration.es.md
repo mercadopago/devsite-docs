@@ -130,6 +130,12 @@ El resultado de renderizar el brick debe ser como la imagen de abajo:
 
 ![cardform](checkout-bricks/card-form-es.png)
 
+> WARNING
+>
+> Atención
+>
+> Para un control efectivo del Brick, la función enviada en `onSubmit` siempre debe devolver una Promise. Llame el método `resolve()` solo si el procesamiento de tu backend fue exitoso. Llame el método `reject()` en caso de que ocurra un error. Esto hará que el Brick te permita completar los campos nuevamente y haga posible un nuevo intento de pago. Al llamar el `resolve()` dentro de la Promise de `onSubmit`, el brick no permite nuevos pagos. Si deseas realizar un nuevo pago, deberás crear una nueva instancia del Brick.
+
 > PREV_STEP_CARD_ES
 >
 > Requisitos previos

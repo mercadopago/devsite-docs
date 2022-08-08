@@ -25,16 +25,17 @@ const settings = {
 
 > PREV_STEP_CARD_EN
 >
-> Initiate Brick with identity document
+> Initiate brick with document
 >
-> If you prefer, check how to initiate Card Payment Brick with an identity document.
+> If you prefer, check how to initiate Card Payment Brick with and identity document.
 >
-> [Initiate Brick with identity document](/developers/en/docs/checkout-bricks/additional-customization/initiate-brick-with-document)
+> [Initiate brick with document](/developers/en/docs/checkout-bricks/additional-customization/initiate-brick-with-document)
+
 
 > NEXT_STEP_CARD_EN
 >
-> Hide Payment button
+> Configure accepted payment methods
 >
-> Learn how you can hide the Payment Button in the Card Payment Brick.
+> Learn how to configure payments exclusively with credit or debit.
 >
-> [Hide Payment button](/developers/en/docs/checkout-bricks/additional-customization/hide-payment-button)
+> [Configure accepted payment methods](/developers/en/docs/checkout-bricks/additional-customization/configure-payment-methods)

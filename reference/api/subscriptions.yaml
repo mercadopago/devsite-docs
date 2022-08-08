@@ -60,7 +60,11 @@ paths:
                   example: test_user@testuser.com
                 card_token_id:
                   type: string
-                  description: Unique card token identifier 
+                  description: The card_token_id is a token generated from the form submission with the capture of payment data. When submitting the form, a token is generated that securely represents the card data. To get the card_token_id, see the "Card" section of the Checkout API documentation and follow all the steps up to the "Initialize payment form" section. It is through this form that it will be possible to obtain the card_token_id.
+                  x-description-i18n:
+                    eng: The card_token_id is a token generated from the form submission with the capture of payment data. When submitting the form, a token is generated that securely represents the card data. To get the card_token_id, see the "Card" section of the Checkout API documentation and follow all the steps up to the "Initialize payment form" section. It is through this form that it will be possible to obtain the card_token_id.
+                    spa: card_token_id es un token generado al enviar el formulario con la captura de datos de pago. Al enviar el formulario, se genera un token que representa de forma segura los datos de la tarjeta. Para obtener el card_token_id, consulte la sección "Tarjeta" de la documentación de Checkout API y siga todos los pasos hasta la sección "Inicializar formulario de pago". Es a través de este formulario que será posible obtener el card_token_id.
+                    por: O card_token_id é um token gerado a partir do envio do formulário com a captura dos dados para pagamento. Ao enviar o formulário, um token é gerado representando de forma segura os dados do cartão. Para obter o card_token_id, veja a seção "Cartão", da documentação Checkout Transparente e siga todas as etapas até a seção "Inicializar formulário de pagamento". É por meio deste formulário que será possível obter o card_token_id.                   
                   example: e3ed6f098462036dd2cbabe314b9de2a
                 auto_recurring:
                   type: object

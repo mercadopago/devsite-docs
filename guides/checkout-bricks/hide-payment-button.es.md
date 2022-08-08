@@ -55,11 +55,12 @@ function createPayment(){
 
 > PREV_STEP_CARD_ES
 >
-> Configurar la cantidad máxima y mínima de cuotas
+> Configurar medios de pago aceptados
 >
-> Si lo deseas, puedes configurar la cantidad máxima y mínima de cuotas. Aprende cómo.
+> Aprende a configurar pagos exclusivamente con crédito o débito.
 >
-> [Configurar cantidad máxima y mínima de cuotas](/developers/es/docs/checkout-bricks/additional-customization/configure-installments)
+> [Configurar medios de pago aceptados](/developers/es/docs/checkout-bricks/additional-customization/configure-payment-methods)
+
 
 > NEXT_STEP_CARD_ES
 >
