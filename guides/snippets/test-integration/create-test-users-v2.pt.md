@@ -31,4 +31,4 @@ Pronto! A conta de teste foi criada e será exibida na tabela com as seguintes i
 >
 > Importante
 >
-> Para editar a **identificação da conta** ou **adicionar mais valor fictício em dinheiro** para testar suas aplicações, clique nos 3 pontos verticais e selecione a opção **Editar dados**. <br>
+> Para editar a **identificação da conta** ou **adicionar mais dinheiro fictício** para testar suas aplicações, clique nos **3 pontos verticais** e selecione a opção **Editar dados**. <br>
