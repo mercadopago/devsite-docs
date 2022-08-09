@@ -97,7 +97,7 @@ renderPaymentBrick(bricksBuilder);
 >
 > Usuários e cartões 
 
-> Note
+> NOTE
 >
 > Nota
 >
