@@ -1,8 +1,6 @@
-# Migrar desde Web Tokenize Checkout V1
+# Como migrar desde Web Tokenize Checkout V1
 
 Si tu integración utiliza Web Tokenize Checkout V1, sigue los pasos a continuación para migrar a Checkout Bricks.
-
-## Pagos con tarjeta
 
 > CLIENT_SIDE
 >
@@ -10,7 +8,7 @@ Si tu integración utiliza Web Tokenize Checkout V1, sigue los pasos a continuac
 >
 > Recibir pagos con tarjeta
 
-1. Encuentra en tu estructura actual el formulario que llama al tokenizer.
+1. Encuentra en la estructura actual de tu integración el formulario que llama al Web Tokenize Checkout.
 
 ```html
 <form action="https://www.mi-sitio.com/procesar-pago" method="POST">
@@ -34,9 +32,9 @@ Si tu integración utiliza Web Tokenize Checkout V1, sigue los pasos a continuac
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ````
 
-4. Ahora agrega el script responsable de cargar el Brick.
+4. Ahora, agrega el script responsable de cargar el Brick.
 
-```JavaScript
+```javascript
    const mp = new MercadoPago('YOUR_PUBLIC_KEY');
 const bricksBuilder = mp.bricks();
 const renderPaymentBrick = async (bricksBuilder) => {
@@ -85,19 +83,28 @@ const renderPaymentBrick = async (bricksBuilder) => {
 renderPaymentBrick(bricksBuilder);
 ````
 
-5. En la devolución de la llamada `onSubmit` de Bricks, agrega la misma URL que utilizas en el parámetro `action` de tu formulario. Aquí es donde Bricks enbiará los datos del formulario de pago. 
+5. En el callback de la llamada `onSubmit` de Bricks, agrega la misma URL que utilizas en el parámetro `action` de tu formulario. Aquí es donde Bricks enviará los datos del formulario de pago. 
 
 
 
-## Usuarios y tarjetas
+> CLIENT_SIDE
+>
+> h2
+>
+> Usuarios y tarjetas
 
-El proceso de creación de usuarios y tarjetas no tiene diferencia entre Tokenizer y Brick.
+> Note
+>
+> Nota
+>
+> El proceso de creación de usuarios y tarjetas no tiene diferencia entre Web Tokenize Checkout y Checkout Bricks.
 
-### Receber o pagamento de um usuário com cartões salvos
+### Recibir el pago de un usuario con tarjetas guardadas
 
-Para recibir el pago de un usuario con tarjetas guardadas, es necesario pasar el usuario y las tarjetas a Checkout Bricks, que realizará el proceso de tokenización y enviará la información para generar el pago en el callback de `onSubmit`.
+Para recibir el pago de un usuario con tarjetas guardadas, es necesario migrar el usuario y las tarjetas a Checkout Bricks, que realizará el proceso de tokenización y enviará la información para generar el pago en el callback de `onSubmit`. Para hacerlo, sigue los pasos a continuación,
 
-Reemplaza en tu código:
+
+1. Encuentra en la estructura actual de tu integración el formulario que llama al Web Tokenize Checkout.
 
 ```html
 <form action="/procesar-pago" method="POST">
@@ -112,9 +119,9 @@ Reemplaza en tu código:
 ````
 
 
-Por:
+2. Reemplaza este formulario con el tag que contendrá el Brick de Card Payment.
 
-```JavaScript
+```javascript
    const mp = new MercadoPago('YOUR_PUBLIC_KEY');
 const bricksBuilder = mp.bricks();
 const renderCardPaymentBrick = async (bricksBuilder) => {
@@ -182,5 +189,5 @@ Con esta configuración, será posible procesar el pago con las tarjetas guardad
 >
 > Configura cómo recibir pagos con tarjetas en el server-side de tu integración.
 >
-> [Server-side](/developers/es/docs/checkout-bricks/how-tos/how-to-migrate/web-tokenize-checkout-v1/server-side)
+> [Server-side](/developers/es/docs/checkout-bricks/how-tos/how-to-migrate/web-tokenize-checkout-v1/serverside)
 

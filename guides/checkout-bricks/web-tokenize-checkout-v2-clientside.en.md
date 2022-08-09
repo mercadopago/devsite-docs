@@ -1,6 +1,6 @@
-# Migrate from Tokenizer V2
+# How to migrate from Tokenizer V2
 
-If your integration is using Tokenizer V1, follow the steps below to migrate to Checkout Bricks.
+If your integration is using Web Tokenize Checkout V2, follow the steps below to migrate to Checkout Bricks.
 
 > CLIENT_SIDE
 >
@@ -8,7 +8,7 @@ If your integration is using Tokenizer V1, follow the steps below to migrate to 
 >
 > Receive payments with cards
 
-1. Find in your current structure the form that calls the tokenizer:
+1. Find in your current structure the form that calls the Web Tokenize Checkout.
 
 ```HTML
 <div class=tokenizer-container>
@@ -39,7 +39,7 @@ mp.checkout({
 
 3. Add the script responsible for loading the Bricks.
 
-```JavaScript
+```javascript
  
    const mp = new MercadoPago('YOUR_PUBLIC_KEY');
 const bricksBuilder = mp.bricks();
@@ -88,16 +88,26 @@ const renderPaymentBrick = async (bricksBuilder) => {
 };
 renderPaymentBrick(bricksBuilder);
 ````
-4. In Brick's `onSubmit` callback, add the same URL that you used in the `action` parameter of your form, this is where Brick will send the payment form data.
+4. In Brick's `onSubmit` callback, add the same URL that you used in the `action` parameter of your form. This is where Brick will send the payment form data.
 
 
-## Users and cards
+> CLIENT_SIDE
+>
+> h2
+>
+> Users and cards
+
+> Note
+>
+> Note
+>
+> The user and card creation process has no difference between Web Tokenize Checkout and Checkout Bricks.
 
 ### Receive payment from a user with saved cards
 
 To receive payment from a user with saved cards, it is necessary to pass the user and the cards to Bricks, which will perform the tokenization process and send the information to generate the payment in the `onSubmit` callback.
 
-1. Replace in your code:
+1. Find in the current structure of your integration the form that calls the Web Tokenize Checkout.
 
 ```HTML
 <script>
@@ -117,7 +127,7 @@ To receive payment from a user with saved cards, it is necessary to pass the use
   });
 </script>
 ````
-For:
+2. Replace this form with the tag that will contain the Card Payment Brick.
 
 ```HTML
 <script>
@@ -187,4 +197,4 @@ With this configuration, it will be possible to process the payment with the sav
 >
 > Configurate how to receive payments with cards on the server-side of your integration.
 >
-> [Server-side](/developers/en/docs/checkout-bricks/how-tos/how-to-migrate/web-tokenize-checkout-v2/server-side)
+> [Server-side](/developers/en/docs/checkout-bricks/how-tos/how-to-migrate/web-tokenize-checkout-v2/serverside)

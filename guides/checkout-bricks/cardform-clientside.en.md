@@ -1,16 +1,16 @@
-# Migrar desde Card Form
+# How to migrate from CardForm
 
-Si tienes una integración que usa Card Form, sigue las instrucciones a continuación para migrar a Bricks. El Brick de Payment te permite, además de usar tarjetas de crédito y débito, usar tarjetas guardadas y otros medios de pago, de manera sencilla, con el frontend listo.
+If you have an integration that uses CardForm, follow the instructions below to migrate to Checkout Bricks. The Payment Brick allows you, in addition to using credit and debit cards, to use saved cards and other means of payment, in a simple way, with the frontend ready.
 
 > CLIENT_SIDE
 >
-> h3
+> h2
 >
-> Recibir pagos con tarjeta
+> Receive payments with cards
 
-1. Encuentre en su estructura, el formulario que llama al Card Form. Debe tener un aspecto similar a este:
+1. In your structure, find the form that calls the CardForm. It should look like this:
 
-```HTML
+```html
 <style>
    #form-checkout {
      display: flex;
@@ -42,15 +42,15 @@ Si tienes una integración que usa Card Form, sigue las instrucciones a continua
  </form>
  ````
 
-Y reemplácelo con la etiqueta que contendrá el Brick:
+And replace it with the tag that will contain the Brick:
 
-```HTML
+```html
 <div id="paymentBrick_container"></div>
 `````
 
-2. En Javascript, busque la función que inicializa el Card Form:
+2. In JavaScript, find the function that initializes the Card Form:
 
-```JavaScript
+```javascript
  
    const cardForm = mp.cardForm({
        amount: "100.5",
@@ -146,9 +146,9 @@ Y reemplácelo con la etiqueta que contendrá el Brick:
      });
 ````
 
-Reemplázalo con la función que inicializa Brick:
+Replace with the function that initializes Brick:
 
-```JavaScript
+```javascript
    const mp = new MercadoPago('YOUR_PUBLIC_KEY');
 const bricksBuilder = mp.bricks();
 const renderPaymentBrick = async (bricksBuilder) => {
@@ -197,10 +197,12 @@ const renderPaymentBrick = async (bricksBuilder) => {
 renderPaymentBrick(bricksBuilder);
 `````
 
-> SERVER_SIDE
->
-> h3
->
-> Recibir pagos con tarjeta
+> On Server-Side, no changes are needed.
 
-En el lado del servidor no se necesitan cambios.
+> PREV_STEP_CARD_EN
+>
+> How to migrate to Checkout Bricks
+>
+> Learn how to migrate your integration from another product to Checkout Bricks.
+>
+> [How to migrate to Checkout Bricks](/developers/en/docs/checkout-bricks/how-tos/how-to-migrate)
