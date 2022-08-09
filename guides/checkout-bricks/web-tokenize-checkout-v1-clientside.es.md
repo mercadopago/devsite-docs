@@ -180,7 +180,7 @@ Con esta configuración, será posible procesar el pago con las tarjetas guardad
 >
 > Server-side
 >
-> Configura cómo recibir pagos con tarjetas en el server-side de ty integración.
+> Configura cómo recibir pagos con tarjetas en el server-side de tu integración.
 >
 > [Server-side](/developers/es/docs/checkout-bricks/how-tos/how-to-migrate/web-tokenize-checkout-v1/server-side)
 

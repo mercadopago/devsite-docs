@@ -1,14 +1,14 @@
-# Migrate from Tokenizer V2
+# Migrar desde Tokenizer V2
 
-If your integration is using Tokenizer V1, follow the steps below to migrate to Checkout Bricks.
+Si su integración usa Tokenizer V1, siga los pasos a continuación para migrar a Checkout Bricks.
 
 > CLIENT_SIDE
 >
-> h3
+> h2
 >
-> Receive payments with cards
+> Recibir pagos con tarjeta
 
-1. Find in your current structure the form that calls the tokenizer:
+1. Busca en tu estructura actual el formulario que llama al tokenizer:
 
 ```HTML
 <div class=tokenizer-container>
@@ -31,13 +31,13 @@ mp.checkout({
 </div>
 `````
 
-2. Replace this form with the tag that will contain the Card Payment Brick.
+2. Reemplace este formulario con la etiqueta que contendrá el Brick de Card Payment.
 
 ```HTML
 <div id="paymentBrick_container"></div>
 ````
 
-3. Add the script responsible for loading the Bricks.
+3. Agregue el script responsable de cargar el Brick.
 
 ```JavaScript
  
@@ -87,67 +87,18 @@ const renderPaymentBrick = async (bricksBuilder) => {
    window.cardPaymentBrickController = await bricksBuilder.create('payment', 'paymentBrick_container', settings);
 };
 renderPaymentBrick(bricksBuilder);
-````
-4. In Brick's `onSubmit` callback, add the same URL that you used in the `action` parameter of your form, this is where Brick will send the payment form data.
+`````
+
+4. En la devolución de llamada `onSubmit` de Brick, agregue la misma URL que usó en el parámetro `action` de su formulario, aquí es donde el Brick enviará los datos del formulario de pago.
 
 
-> SERVER_SIDE
->
-> h3
->
-> Receive payments with cards 
+## Usuarios y tarjetas
 
-Bricks makes it easy to send payment to MercadoPago through the Backend. The data received by Brick in the `onSubmit` function is exactly what is needed to call the Mercado Pago Payment API. 
+### Recibe el pago de un usuario con tarjetas guardadas
 
-1. Replace in your backend:
+Para recibir el pago de un usuario con tarjetas guardadas, es necesario mudar el usuario y las tarjetas a Bricks, que realizará el proceso de tokenización y enviará la información para generar el pago en el callback de `onSubmit`.
 
-```NodeJS
-var mercadopago = require('mercadopago');
-mercadopago.configurations.setAccessToken(config.access_token);
- 
-var payment_data = {
- transaction_amount: 100,
- token: token,
- description: 'Blue shirt',
- installments: installments,
- payment_method_id: payment_method_id,
- issuer_id: issuer_id,
- payer: {
-   email: 'john@yourdomain.com'
- }
-};
- 
-// Guarda y postea el pago
-mercadopago.payment.save(payment_data).then(function (data) {
- // ...   
- // Imprime el estado del pago
- Console.log(data.status);
-}).catch(function (error) {
- // ...
-});
-````
-For:
-
-```NodeJS
-var mercadopago = require('mercadopago');
-mercadopago.configurations.setAccessToken("YOUR_ACCESS_TOKEN");
- 
-mercadopago.payment.save(req.body).then(function (data) {
- // ...   
- // Imprime el estado del pago
- Console.log(data.status);
-}).catch(function (error) {
- // ...
-});
-````
-
-## Users and cards
-
-### Receive payment from a user with saved cards
-
-To receive payment from a user with saved cards, it is necessary to pass the user and the cards to Bricks, which will perform the tokenization process and send the information to generate the payment in the `onSubmit` callback.
-
-1. Replace in your code:
+1. Reemplaza en tu código:
 
 ```HTML
 <script>
@@ -167,7 +118,7 @@ To receive payment from a user with saved cards, it is necessary to pass the use
   });
 </script>
 ````
-For:
+Para:
 
 ```HTML
 <script>
@@ -221,4 +172,21 @@ renderCardPaymentBrick(bricksBuilder);
 </script>
 `````
 
-With this configuration, it will be possible to process the payment with the saved cards.
+Con esta configuración, será posible procesar el pago con las tarjetas guardadas.
+
+> PREV_STEP_CARD_ES
+>
+> Cómo migrar a Checkout Bricks
+>
+> Conoce cómo migrar tu integración desde otros productos hacia Checkout Bricks. 
+>
+> [Como migrar para o Checkout Bricks](/developers/es/docs/checkout-bricks/how-tos/how-to-migrate)
+
+> NEXT_STEP_CARD_ES
+>
+> Server-side
+>
+> Configura cómo recibir pagos con tarjetas en el server-side de tu integración.
+>
+> [Server-side](/developers/es/docs/checkout-bricks/how-tos/how-to-migrate/web-tokenize-checkout-v2/server-side)
+
