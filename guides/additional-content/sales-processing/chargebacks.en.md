@@ -68,7 +68,7 @@ Find more information about each attribute in [API References](https://www.merca
 
 ### Return suspicious payments
 
-When we detect an irregular behavior or are notified that a stolen credit card was used, we will contact via e-mail to let you know what happened. We recommend you to [cancel the purchase](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds) and refund the money to the buyer so that you can avoid a chargeback.
+When we detect an irregular behavior or are notified that a stolen credit card was used, we will contact via e-mail to let you know what happened. We recommend you to cancel the purchase and refund the money to the buyer so that you can avoid a chargeback.
 
 ### Check data when collecting with Point
 

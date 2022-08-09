@@ -286,7 +286,6 @@ Add all the additional information you want.
 | `category_id` | String | Category |
 | `quantity` | Integer | Quantity |
 | `unit_price` | Float | Unit price |
-| `event_date` | Date | Event date |
 
 #### About the buyer
 
@@ -343,7 +342,6 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
             "category_id": "entertainment",
             "quantity": 1,
             "unit_price": 150,
-            "event_date": "2020-06-02T12:58:41.425-04:00",
         }
     ],
     "payer": {
@@ -781,7 +779,6 @@ Add all the additional information you want.
 | `category_id` | String | Category |
 | `quantity` | Integer | Quantity |
 | `unit_price` | Float | Unit price |
-| `event_date` | Date | Event date |
 
 #### About the buyer
 
@@ -840,7 +837,6 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
             "category_id": "services",
             "quantity": 1,
             "unit_price": 150,
-            "event_date": "2020-06-02T12:58:41.425-04:00"
         }
     ],
     "payer": {
@@ -1043,7 +1039,6 @@ Add all the additional information you want.
 | `category_id` | String | Category |
 | `quantity` | Integer | Quantity |
 | `unit_price` | Float | Unit price |
-| `event_date` | Date | Event date |
 | `category_descriptor` | Object | Category description. |
 | `passenger` | Object | Additional passenger information. |
 | `first_name`| String | Name |
@@ -1104,7 +1099,6 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
                 }
             },
             "quantity": 1,
-            "event_date": "2020-06-02T12:58:41.425-04:00",
             "unit_price": 150
         }
     ],
