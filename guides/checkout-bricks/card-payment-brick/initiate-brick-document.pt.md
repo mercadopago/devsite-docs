@@ -28,7 +28,7 @@ const settings = {
 
 > PREV_STEP_CARD_PT
 >
-> Iniciar Brick com e-mail 
+> Iniciar Brick com e-mail
 >
 > Caso deseje, saiba como iniciar o Card Payment Brick com e-mail.
 >

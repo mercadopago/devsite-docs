@@ -2,11 +2,11 @@
 
 > PREV_STEP_CARD_ES
 >
-> Modificar textos
+> Modificar variables CSS
 >
-> Aprende cómo cambiar los textos del diseño elegido en Card Payment Brick cuando lo requieras.
+> Aprende a modificar las variables CSS de Checkout Bricks si así lo deseas.
 >
-> [Modificar textos](/developers/es/docs/checkout-bricks/card-payment-brick/additional-customization/modify-texts)
+> [Modificar variables CSS](/developers/es/docs/checkout-bricks/additional-content/modify-css-variables)
 
 > NEXT_STEP_CARD_ES
 >

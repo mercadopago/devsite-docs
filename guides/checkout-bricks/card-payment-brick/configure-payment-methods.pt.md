@@ -43,6 +43,6 @@ settings = {
 >
 > Ocultar botão de pagamento
 >
-> Saiba como ocultar o botão de pagamento no Card Payment Brick
+> Saiba como ocultar o botão de pagamento no Card Payment Brick.
 >
 > [Ocultar botão de pagamento](/developers/pt/docs/checkout-bricks/card-payment-brick/additional-customization/hide-payment-button)

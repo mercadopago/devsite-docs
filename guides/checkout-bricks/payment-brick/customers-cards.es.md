@@ -40,7 +40,7 @@ Para el `customerId` y los `cardsIds` necesarios para la función C&C, el integr
 
 Con el email del usuario es posible generar un ID de Cliente y, utilizando el ID de Cliente combinado con el token de la tarjeta, es posible guardarlo para que el comprador pueda utilizarlo en las próximas compras.
 
-> PREV_STEP_CARD_ES
+> PREV_STEP_CARD_ES 
 >
 > Ejemplo de código
 >
@@ -50,8 +50,8 @@ Con el email del usuario es posible generar un ID de Cliente y, utilizando el ID
 
 > NEXT_STEP_CARD_ES
 >
-> Configurar medios de pago aceptados
+> Inicializar datos en Bricks
 >
-> Aprende a configurar pagos con los diversos métodos aceptados en su país.
+> xxx
 >
-> [Configurar medios de pago aceptados](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/configure-payment-methods)
+> [Inicializar datos en Bricks](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/initialize-data-on-the-bricks)

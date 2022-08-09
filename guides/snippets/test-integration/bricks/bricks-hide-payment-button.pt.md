@@ -1,9 +1,3 @@
-> CLIENT_SIDE
->
-> h1
->
-> Ocultar botão de pagamento
-
 | - | Brick |
 |--- |--- |
 | Momento de customização | Ao renderizar brick |

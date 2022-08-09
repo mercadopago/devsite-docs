@@ -2,16 +2,16 @@
 
 > PREV_STEP_CARD_ES
 >
-> Ocultar títulos y banderas
+> Ocultar elemento
 >
-> Además, si lo deseas, puedes ocultar los títulos de la UI y las banderas admitidas en Payment Brick.
+> Además, si lo deseas, puedes ocultar elementos admitidos en Payment Brick.
 >
-> [Ocultar títulos y banderas](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/hide-title-and-flags)
+> [Ocultar elemento](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/hide-element)
 
 > NEXT_STEP_CARD_ES
 >
-> Seleccionar idioma
+> Definir tema
 >
-> Si lo deseas, puedes seleccionar el idioma de Payment Brick. Aprende cómo.
+> Si lo deseas, aprende a seleccionar otro tema al instanciar/renderizar Checkout Bricks
 >
-> [Selecionar idioma](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/select-language)
+> [Definir tema](/developers/es/docs/checkout-bricks/payment-brick/additional-content/set-theme)

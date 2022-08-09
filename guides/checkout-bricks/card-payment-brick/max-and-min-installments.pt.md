@@ -25,7 +25,7 @@ const settings = {
 
 > PREV_STEP_CARD_PT
 >
-> Iniciar Brick com documento 
+> Iniciar Brick com documento  
 >
 > Caso deseje, veja como iniciar o Card Payment Brick com documento.
 >

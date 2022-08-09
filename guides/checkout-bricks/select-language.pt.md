@@ -2,11 +2,11 @@
 
 > PREV_STEP_CARD_PT
 >
-> Alterar textos
+> Alterar variáveis CSS 
 >
-> Caso deseje, veja como alterar os textos do layout escolhido no Payment Brick
+> Caso deseje, saiba como alterar as variáveis CSS do Checkout Bricks.
 >
-> [Alterar textos](/developers/pt/docs/checkout-bricks/payment-brick/additional-customization/modify-texts)
+> [Alterar variáveis CSS](/developers/pt/docs/checkout-bricks/additional-content/modify-css-variables)
 
 > NEXT_STEP_CARD_PT
 >

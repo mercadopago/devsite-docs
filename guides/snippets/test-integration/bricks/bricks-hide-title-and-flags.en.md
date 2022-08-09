@@ -1,9 +1,3 @@
-> CLIENT_SIDE
->
-> h1
->
-> Hide title and flags
-
 | - | Brick |
 | --- | --- |
 | Customization moment  | When rendering the brick  |

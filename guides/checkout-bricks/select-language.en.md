@@ -1,12 +1,12 @@
 [TXTSNIPPET][/guides/snippets/test-integration/bricks/bricks-select-language]
 
-> PREV_STEP_CARD_EN
+> PREV_STEP_CARD_EN 
 >
-> Edit text
+> Change CSS variables
 >
-> You can also edit the text of the selected Card Payment Brick's layout.
+> Learn how to change the Checkout Bricks CSS variables if you need.
 >
-> [Edit text](/developers/en/docs/checkout-bricks/card-payment-brick/additional-customization/modify-texts)
+> [Change CSS variables](/developers/en/docs/checkout-bricks/additional-content/modify-css-variables)
 
 > NEXT_STEP_CARD_EN
 >

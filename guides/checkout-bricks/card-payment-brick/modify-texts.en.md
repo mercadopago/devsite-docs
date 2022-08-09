@@ -10,8 +10,8 @@
 
 > NEXT_STEP_CARD_EN
 >
-> Select language
+> Set theme
 >
-> You can select the Card Payment Brick's language when required. Check how.
+> See how you can select another theme when instantiating/rendering the Checkout Bricks.
 >
-> [Select language](/developers/en/docs/checkout-bricks/card-payment-brick/additional-customization/select-language)
+> [Set theme](/developers/en/docs/checkout-bricks/additional-content/set-theme)

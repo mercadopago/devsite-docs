@@ -50,8 +50,8 @@ With the user's email it is possible to generate a Customer ID and using the Cus
 
 > NEXT_STEP_CARD_EN
 >
-> Configure accepted payment methods
+> Initialize data on the Bricks
 >
-> Check how to set up payments with the various methods accepted in your country.
+> xxx
 >
-> [Configure accepted payment methods](/developers/en/docs/checkout-bricks/payment-brick/additional-customization/configure-payment-methods)
+> [Initialize data on the Bricks](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/initialize-data-on-the-bricks)

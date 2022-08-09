@@ -25,11 +25,11 @@ const settings = {
 
 > PREV_STEP_CARD_PT
 >
-> Alterar variáveis CSS 
+> Exemplo de código
 >
-> Caso deseje, saiba como alterar as variáveis CSS do Card Payment Brick.
+> Para facilitar e otimizar o seu processo de integração, veja um exemplo completo integração com o Card Payment Brick.
 >
-> [Alterar variáveis CSS](/developers/pt/docs/checkout-bricks/card-payment-brick/additional-customization/modify-css-variables)
+> [Exemplo de código](/developers/pt/docs/checkout-bricks/card-payment-brick/code-example)
 
 > NEXT_STEP_CARD_PT
 >

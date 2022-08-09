@@ -46,12 +46,12 @@ Com o e-mail do usuário é possível gerar um Customer ID e, utilizando o Custo
 >
 > Para facilitar e otimizar o seu processo de integração, veja um exemplo completo integração com o Checkout Bricks.
 >
-> [Exemplo de código](/developers/pt/docs/checkout-bricks/payment-brick/code-example)
+> [Exemplo de código](/developers/pt/docs/checkout-bricks/payment-brick/code-example) 
 
 > NEXT_STEP_CARD_PT
 >
-> Configurar meios de pagamento aceitos 
+> Inicializar dados nos Bricks
 >
-> Saiba como configurar pagamentos com os diversos meios aceitos em seu país.
+> xxx
 >
-> [Configurar meios de pagamento aceitos](/developers/pt/docs/checkout-bricks/payment-brick/additional-customization/configure-payment-methods)
+> [Inicializar dados nos Bricks](/developers/pt/docs/checkout-bricks/payment-brick/additional-customization/initialize-data-on-the-bricks)

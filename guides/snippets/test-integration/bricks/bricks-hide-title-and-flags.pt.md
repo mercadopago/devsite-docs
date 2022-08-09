@@ -1,9 +1,3 @@
-> CLIENT_SIDE
->
-> h1
->
-> Ocultar título e bandeiras
-
 | - | Brick |
 |--- |--- |
 | Momento de customização | Ao renderizar brick |

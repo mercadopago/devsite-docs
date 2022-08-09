@@ -2,16 +2,16 @@
 
 > PREV_STEP_CARD_EN
 >
-> Hide UI titles and card brands
+> Hide element
 >
-> Learn how you can hide the UI titles and the card brands in Payment Brick.
+> Learn how you can hide elements in Payment Brick.
 >
-> [Hide UI titles and card brands](/developers/en/docs/checkout-bricks/payment-brick/additional-customization/hide-title-and-flags)
+> [Hide element](/developers/en/docs/checkout-bricks/payment-brick/additional-customization/hide-element)
 
 > NEXT_STEP_CARD_EN
 >
-> Select language
+> Set theme
 >
-> You can select the Payment Brick's language when required. Check how.
+> See how you can select another theme when instantiating/rendering the Checkout Bricks.
 >
-> [Select language](/developers/en/docs/checkout-bricks/payment-brick/additional-customization/select-language)
+> [Set theme](/developers/en/docs/checkout-bricks/payment-brick/additional-content/set-theme)

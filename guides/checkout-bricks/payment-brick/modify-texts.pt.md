@@ -1,17 +1,17 @@
-[TXTSNIPPET][/guides/snippets/test-integration/bricks/bricks-modify-texts]
+[TXTSNIPPET][/guides/snippets/test-integration/bricks/bricks-modify-texts] 
 
 > PREV_STEP_CARD_PT
 >
-> Ocultar título e bandeiras 
+> Ocultar elemento
 >
-> Caso deseje, veja como ocultar a linha de título e as bandeiras aceitas no Payment Brick.
+> Caso deseje, veja como ocultar elementos no Payment Brick.
 >
-> [Ocultar título e bandeiras](/developers/pt/docs/checkout-bricks/payment-brick/additional-customization/hide-title-and-flags)
+> [Ocultar elemento](/developers/pt/docs/checkout-bricks/payment-brick/additional-customization/hide-element)
 
-> NEXT_STEP_CARD_PT 
+> NEXT_STEP_CARD_PT
 >
-> Selecionar idioma 
+> Definir tema 
 >
-> Caso deseje, saiba como selecionar o idioma do Payment Brick.
+> Caso deseje, veja como selecionar outro tema ao instanciar/renderizar o Checkout Bricks.
 >
-> [Selecionar idioma](/developers/pt/docs/checkout-bricks/payment-brick/additional-customization/select-language)
+> [Definir tema](/developers/pt/docs/checkout-bricks/additional-content/set-theme) 
