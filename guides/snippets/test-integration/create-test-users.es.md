@@ -1,44 +1,34 @@
-Para realizar las pruebas **es necesario que tengas como mínimo dos usuarios**:
+Se requieren cuentas de prueba para verificar que el proceso de incorporación se realizó correctamente. Tienen las mismas características que una cuenta real de Mercado Pago, lo que te permite probar el funcionamiento de las integraciones que estás desarrollando.
 
-| Tipo de usuarios de prueba | Descripción |
-| --- | --- |
-| Vendedor | Es la cuenta que usas para **configurar la aplicación y credenciales para el cobro**. |
-| Comprador | Es la cuenta que usas para **probar el proceso de compra.**. |
+Para realizar la prueba, debe tener al menos dos cuentas:
 
-Ejecuta el siguiente curl para generar un usuario de prueba:
+* **Usuario/Vendedor**: cuenta requerida para **configurar la aplicación y las credenciales de facturación**. Esta es su cuenta de usuario.
+* **Comprador**: cuenta necesaria para **probar el proceso de compra**.
 
-```curl
-curl -X POST \
--H "Content-Type: application/json" \
--H 'Authorization: Bearer ${TEST_ACCESS_TOKEN}' \
-"https://api.mercadopago.com/users/test" \
--d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]","description" : "a description"}'
-```
+Además de estas cuentas, también es importante utilizar las [tarjetas de prueba](/developers/es/guides/additional-content/testing/test-cards) para probar la integración de pago y simular el proceso de compra, así como la **saldo en la cuenta de Mercado Pago del usuario de prueba**. Ver más detalles a continuación.
 
-La respuesta tendrá una estructura similar al siguiente ejemplo:
+![testuser](test-user/test-user-admin-es.gif)
 
-```json
-{
-    "id": 123456,
-    "nickname": "TT123456",
-    "password": "qatest123456",
-    "site_status": "active",
-    "site_id": "[FAKER][GLOBALIZE][UPPER_SITE_ID]",
-    "description": "a description",
-    "email": "test_user_123456@testuser.com",
-    "date_created": "2021-11-04T12:02:35Z",
-    "date_last_updated": "2021-11-04T12:02:35Z"
-}
-```
+Para crear cuentas y probar cómo funcionan las integraciones, siga los pasos a continuación.
 
-Para más información sobre los parámetros y respuestas de la API del usuario de prueba, accede a [Referencias API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/test_user/_users_test/post)
+1. En [Devsite](/developers/es/docs), acceda al menú **Tus integraciones > Cuentas de prueba** y haz clic en el botón **Crear cuenta de prueba**.
+2. En la pantalla "Crear nueva cuenta", ingrese una descripción para la identificación de la cuenta. Ejemplo: "Vendedor - Tienda 1".
+3. Luego, seleccione el **país de operación** para la cuenta. Esta información no se puede editar posteriormente y, además, los usuarios Comprador y Vendedor deben ser del mismo país.
+4. Rellena una **cantidad de dinero ficticia** que te servirá de referencia para probar tus aplicaciones. Este monto aparecerá como saldo en la cuenta de Mercado Pago del usuario de prueba y podrá ser utilizado para simular pagos, así como con tarjeta de crédito.
+5. Haz clic en **Crear cuenta de prueba**.
 
->WARNING
+> Puede generar hasta 15 cuentas de usuario de prueba al mismo tiempo y aún no es posible eliminarlas.
+
+¡Listo! La cuenta de prueba se ha creado y se mostrará en la tabla con la siguiente información:
+
+* **País** lugar de origen de la cuenta seleccionada en tu registro.
+* **Idemntificación de cuenta**: descripción para la identificación de la cuenta de prueba.  
+* **Usuario**: username de la cuenta de prueba generado automáticamente. Este username se utiliza para iniciar sesión con el usuario de prueba.
+* **Contraseña**: contraseña de acceso a la cuenta de usuario de prueba generada automáticamente. Para generar una nueva contraseña, haz clic en los 3 puntos verticales al final de la fila de la tabla y seleccione la opción **Generar nueva contraseña**.
+* **Creado en**: fecha en que se creó la cuenta de prueba.
+
+> NOTE
 >
->Importante
+> Importante
 >
-> Puedes generar hasta 10 cuentas de usuarios de prueba en simultáneo. Por eso, te recomendamos **guardar el email y password de cada uno**.
-> <br/>
-> Los usuarios de prueba caducan luego de 60 días sin actividad en Mercado Pago.
-> <br/>
-> Tanto el comprador como el vendedor deben ser usuarios de prueba.
+> Para editar la **Idemntificación de cuenta** o **agregar más dinero ficticio** para probar sus aplicaciones, haz clic en los **3 puntos verticales** al final de la fila de la tabla y seleccione la opción **Editar datos**.
