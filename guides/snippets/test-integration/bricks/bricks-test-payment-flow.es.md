@@ -1,8 +1,4 @@
-> CLIENT_SIDE
->
-> h1
->
-> Prueba el flujo de pago
+# Prueba el flujo de pago
 
 La etapa de prueba permite analizar si la integración se realizó correctamente y si los pagos se están procesando sin errores, evitando que aparezcan errores al poner el checkout a disposición de los compradores finales.
 

@@ -1,8 +1,4 @@
-> CLIENT_SIDE 
->
-> h1
->
-> Test the payment flowl
+# Test the payment flowl
 
 The testing stage allows you to analyze whether the integration was done correctly and whether payments are being processed without errors, preventing errors from appearing when making the checkout available to end buyers.
 

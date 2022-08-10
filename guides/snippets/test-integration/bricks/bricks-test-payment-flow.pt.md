@@ -1,8 +1,4 @@
-> CLIENT_SIDE 
->
-> h1
->
-> Teste o fluxo de pagamento
+# Teste o fluxo de pagamento
 
 A etapa de testes permite analisar se a integração foi feita de maneira correta e se os pagamentos estão sendo processados sem erros, evitando que erros apareçam ao disponibilizar o checkout para os compradores finais.
 
