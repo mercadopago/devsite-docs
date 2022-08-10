@@ -60,7 +60,7 @@ curl -X POST 'https://api.integrator.com/wallet_connect/events' \
 
 #### Atualização do meio de pagamento de um agreement
 
-Neste caso, o usuário pode adicionar ou atualizar uma forma de pagamento secundária. (Por padrão, dinheiro em conta Mercado Pago é a primeira forma de pagamento). Com base nos status de pagamento, é possível detectar pagamentos rejeitados e notificar o usuário para que ele possa realizar a atualização ou adicionar uma forma de pagamento secundária.
+Neste caso, o usuário pode adicionar ou atualizar uma forma de pagamento secundária (por padrão, dinheiro em conta Mercado Pago é a primeira forma de pagamento). Com base nos status de pagamento, é possível detectar pagamentos rejeitados e notificar o usuário para que ele possa realizar a atualização ou adicionar uma forma de pagamento secundária.
 
 Veja abaixo um exemplo de código com as informações enviadas no momento da requisição.
 
@@ -113,7 +113,7 @@ A configuração dos webhooks é feita através do Dashboard. Abaixo explicaremo
 ![webhooks](/images/notifications/webhooks_pt.png)
 
 
-1. Caso ainda não tenha, crie uma aplicação na página inicial de seu [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel).
+1. Se ainda não tiver uma aplicação criada, acesse seu [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel) e clique em **Entrar** para fazer seu login caso ainda não esteja logado.
 2. Com a aplicação criada, acesse a aba Notificações Webhooks em seu Dashboard e configure as [URLs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications) de **produção** e **teste** da qual serão recebidas as notificações. 
 3. Você também poderá experimentar e testar se a URL indicada está recebendo as notificações corretamente, podendo verificar a solicitação, a resposta dada pelo servidor e a descrição do evento.
 4. Caso seja necessário identificar múltiplas contas, no final do URL indicada você poderá indicar o parâmetro `?customer=(sellername) endpoint` para identificar os vendedores.

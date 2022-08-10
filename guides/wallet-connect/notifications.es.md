@@ -6,7 +6,7 @@ Webhook (también conocido como devolución de llamada web) es un método simple
 
 Las notificaciones de webhook se pueden configurar para una o más aplicaciones creadas en su Dashboard.
 
-Una vez configurado, el Webhook se enviará siempre que se produzcan uno o más eventos registrados, evitando un trabajo de búsqueda cada minuto en busca de una respuesta y, en consecuencia, una sobrecarga del sistema y pérdida de datos siempre que se presente alguna situación. Luego de recibir una notificación en su plataforma, Mercado Pago esperará una respuesta para validar si la recibió correctamente.
+Una vez configurado, el Webhook se enviará siempre que se produzcan uno o más eventos registrados, evitando un trabajo de búsqueda innecesarios de una respuesta y, en consecuencia, una sobrecarga del sistema y pérdida de datos siempre que se presente alguna situación. Luego de recibir una notificación en su plataforma, Mercado Pago esperará una respuesta para validar si la recibió correctamente.
 
 ### Requisitos previos
 
@@ -16,7 +16,7 @@ Antes de configurar las notificaciones de webhook para Wallet Connect, es import
 | Requisito  | Descripción  |
 | --- | --- |
 | Certificado SSL  | Protocolo que permite establecer comunicaciones seguras en Internet para actividades como navegación, correo electrónico y otras transferencias de datos. |
-| Respuesta al request  | El endpoint debe devolver un código de respuesta 2XX para acusar el recibo del request. Todos los códigos de respuesta fuera de 2XX activarán reintentos exponenciales de Mercado Pago. |
+| Respuesta al request  | El endpoint debe devolver un código de respuesta 2XX para reconocer la recepción del request. Todos los códigos de respuesta fuera de 2XX activarán reintentos exponenciales de Mercado Pago. |
 | Timeout  | Para evitar problemas de timeout, la aplicación debe devolver una respuesta antes de activar una lógica compleja.  |
 | Solicitud de permiso | Para poder incluir solicitudes en la lista de permisos a través de DNS, las solicitudes llegarán a través del endpoint api.mercadopago.com. El integrador deberá deshabilitar el CSRF (**Cross-site request forgery**) para api.mercadopago.com, lo que permitirá las solicitudes de Mercado Pago. |
 
@@ -60,7 +60,7 @@ curl -X POST 'https://api.integrator.com/wallet_connect/events' \
 
 #### Actualización del medio de pago de un agreement
 
-En este caso, el usuario puede agregar o actualizar un medio de pago secundario. (Por defecto, Account Money de Mercado Pago es el primer medio de pago). En función de los estados de pago, es posible detectar pagos rechazados y notificar al usuario para que realice la actualización o agregue un medio de pago secundario.
+En este caso, el usuario puede agregar o actualizar un medio de pago secundario (por defecto, Account Money de Mercado Pago es el primer medio de pago). En función de los estados de pago, es posible detectar pagos rechazados y notificar al usuario para que realice la actualización o agregue un medio de pago secundario.
 
 Observa a continuación un ejemplo de código con la información enviada en el momento del request.
 
@@ -113,7 +113,7 @@ La configuración de los webhooks se realiza a través del Dashboard. A continua
 
 ![webhooks](/images/notifications/webhooks_pt.png)
 
-1. Primero, se debe crear una aplicación en la página de inicio de su [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel).
+1. Si aún no tienes una aplicación creada, accede a tu [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel) y haz clic en **Entrar** para iniciar sesión si aún no está conectado.
 2. Con la aplicación creada, ve a la pestaña Notificaciones de Webhooks en tu Panel de control y configura las [URLs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications) de **producción** y **prueba** de las que se recibirán notificaciones. 
 3. También podrás experimentar y probar si la URL indicada está recibiendo notificaciones correctamente, pudiendo verificar la solicitud, la respuesta dada por el servidor y la descripción del evento.
 4. Si necesitas identificar varias cuentas, al final de la URL indicada puedes indicar el parámetro `?customer=(sellername) endpoint` para identificar a los vendedores.

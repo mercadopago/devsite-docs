@@ -60,7 +60,7 @@ curl -X POST 'https://api.integrator.com/wallet_connect/events' \
 
 #### Agreement payment method update
 
-In this case, the user can add or update a secondary payment method. (By default, Mercado Pago account money is the first payment method). Based on payment statuses, it is possible to detect rejected payments and notify the user so that they can perform the update or add a secondary payment method.
+In this case, the user can add or update a secondary payment method (by default, Mercado Pago account money is the first payment method). Based on payment statuses, it is possible to detect rejected payments and notify the user so that they can perform the update or add a secondary payment method.
 
 Check below a code example with the information sent at the time of the request.
 
@@ -112,7 +112,7 @@ The configuration Webhooks configuration is done through the Dashboard. Below we
 
 ![webhooks](/images/notifications/webhook_es.png)
 
-1. First, an application must be created on the home page of your [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel).
+1. If you still don't have an application created, access your [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel) and click **Enter** to login if you haven't already be logged in.
 2. With the application created, go to the Webhooks Notifications tab in your Dashboard and configure the [URLs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications) of **production**  and **test** from which notifications will be received. 
 3. You will also be able to experiment and test if the indicated URL is receiving notifications correctly, being able to verify the request, the response given by the server and the description of the event.
 4. If you need to identify multiple accounts, at the end of the indicated URL you can indicate the parameter `?customer=(sellername) endpoint` to identify the sellers.
