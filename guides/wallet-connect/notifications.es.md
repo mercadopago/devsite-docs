@@ -117,7 +117,7 @@ La configuración de los webhooks se realiza a través del Dashboard. A continua
 2. Con la aplicación creada, ve a la pestaña Notificaciones de Webhooks en tu Panel de control y configura las [URLs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications) de **producción** y **prueba** de las que se recibirán notificaciones. 
 3. También podrás experimentar y probar si la URL indicada está recibiendo notificaciones correctamente, pudiendo verificar la solicitud, la respuesta dada por el servidor y la descripción del evento.
 4. Si necesitas identificar varias cuentas, al final de la URL indicada puedes indicar el parámetro `?customer=(sellername) endpoint` para identificar a los vendedores.
-5. A continuación, selecciona los **eventos** de los que recibirás notificaciones en formato `json` a través de un `HTTP POST` a la URL especificada anteriormente. Un evento es cualquier tipo de actualización del objeto informado, incluidos los cambios de estado o atributos. Vea los eventos que se pueden configurar en la siguiente tabla.
+5. Luego seleccione el evento **Wallet Connect** del que recibirá notificaciones en formato `json` a través de un `HTTP POST` a la URL especificada anteriormente. Un evento es cualquier tipo de actualización del objeto informado, incluidos los cambios de estado o atributos. Vea los eventos que se pueden configurar en la siguiente tabla.
 
 | Tipo de notificación  | Acción  | Descripción  |
 | --- | --- | --- |
