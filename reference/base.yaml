@@ -70,6 +70,13 @@ tags:
       es: 'Mercado Pago Delivery'
     externalDocs: 
       url: '/docs/mp-delivery/landing'
+  wallet-connect:
+    description:
+      pt: 'Wallet connect'
+      en: 'Wallet connect'
+      es: 'Wallet connect'
+    externalDocs: 
+      url: '/docs/wallet-connect/landing'
   
 #------DEFAULT - ALL ARCHIVES - END------
 
