@@ -1,27 +1,29 @@
-# Activating production mode
+# Go to production
 
-The first step to activate production mode in your store is **enabling the SSL certificate** on your domain. This certificate is used to increase the security of the data shared by your store. In other words, your customers' personal information.
+The first step in activating production mode on your store is to **enable the SSL certificate** on your domain. This certificate is used to increase the security of the data shared by your store, that is, the personal information of your customers.
 
-Many hosting services offer, along with the domain, the SSL certificate. If your domain does not have this certificate, we recommend looking for a company that helps you with purchase and installation. 
+Many hosting services offer, along with the domain, the SSL certificate. If your domain does not have this certificate, we recommend looking for a service that can help you with the purchase and installation.
 
-For more information, check our documentation [Requirements for the production environment](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/goto-production).
+For more information, please visit our documentation [Requirements to go to production](/developers/en/docs/woocommerce/additional-content/goto-production).
 
-With the certificate activated and testing completed, you can toggle your store out of *Test mode* and enable the **Production** environment, allowing you to make actual sales.
+With the certificate activated and testing completed, you can take your store out of test mode and enable production mode. This will allow you to make real sales.
 
-Follow the steps below to make the change:
+Follow this step by step to make the change:
 
-1. Access your WordPress Panel.
-2. In the left side bar, click on **WooCommerce > Settings**.
-3. In **Payments**, search for the checkout you chose in step **Integration setup**, and click on **Manage**.
-4. In **Add credentials to "Test Mode" or "Production Mode"**, choose **Activate Production Mode for Mercado Pago checkouts**. 
-5. Click on **Save Changes**.
+1. Go to your [Wordpress](https://wordpress.com/) account.
+2. Access your account Dashboard and click **Plugins > Installed Plugins**.
+3. In the plugin search engine, search for “Mercado Pago payments for WooCommerce”.
+4. Click **Configure Plugin**.
+5. Click **4. Test your store before selling** to display the options.
+6. Under Choose how you want to operate your store, select **Sales Mode (Production)**.
+7. Click **Save Changes** to finish.
 
-Done! Your store is in the Production environment and ready to process your sales.
+Done! The store is in production and enabled to process your sales.
 
-> NEXT_STEP_CARD_EN
+> PREV_STEP_CARD_EN
 >
-> Sales processing
+> Integration test
 >
-> Learn the main statuses during sales processing.
+> Do a test to check that your integration is complete.
 >
-> [Sales processing](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/woocommerce/sales-processing)
+> [Integration test](/developers/en/docs/woocommerce/integration-test)

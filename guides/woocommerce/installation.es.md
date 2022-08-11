@@ -1,26 +1,29 @@
-# Instalación del plugin
+# Instalación
 
-La instalación del plugin Mercado Pago con WooCommerce se puede realizar de la siguiente manera: 
+Para instalar el plugin de Mercado Pago con WooCommerce a través de Wordpress, sigue estos pasos:
 
-1. Accede al **Panel** de tu cuenta de WordPress.
-2. En la pestaña del lado izquierdo, haz clic en **Plugins > Añadir nuevo**.
-3. Busca **Mercado Pago payments for WooCommerce** y haz clic en **Instalar ahora**.
-4. Después de la instalación, haz clic en **Activar**.
+1. Ve a tu cuenta de [Wordpress](https://wordpress.com/).
+2. Accede al Panel de tu cuenta y haz clic en **Plugins > Añadir nuevo**.
+3. Haz clic en la barra de búsqueda que se encuentra a la derecha y busca **Mercado Pago**. 
+4. El resultado de la búsqueda arrojará el plugin **Mercado Pago payments for WooCommerce**. Haz clic en el botón **Instalar ahora** dentro de ese plugin.
+5. Una vez finalizada la instalación, haz clic en el botón **Activar**.
 
 ![Plugin instalación automatica](/images/woocomerce/es_automatic_install_02.gif)
 
-¡Listo! El plugin ahora está activo y puedes configurar tu integración.
+¡Listo! El plugin ahora está activo y puedes configurar tu integración
 
-> NOTE
+> PREV_STEP_CARD_ES
 >
-> Importante
+> Requisitos previos
 >
-> Si tienes problemas para instalar el plugin y necesitas ponerte en contacto con nuestro soporte, es posible que te soliciten que lo instales manualmente. Consulta las [Preguntas frecuentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/woocommerce/faq) para obtener detalles sobre cómo hacerlo.
+> Qué necesitas para instalar el plugin de Mercado pago con WooCommerce a un sitio de Wordpress.
+>
+> [Requisitos previos](/developers/es/docs/woocommerce/previous-requirements)
 
 > NEXT_STEP_CARD_ES
 >
-> Configuración de la integración 
+> Configuración de la integración
 >
-> Accede al tutorial para configurar la integración del plugin.
+> Aprende a configurar el plugin de Mercado Pago con WooCommerce.
 >
-> [Configuración de la integración](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/woocommerce/integration)
+> [Configuración de la integración](/developers/es/docs/woocommerce/integration-configuration)
