@@ -30,6 +30,26 @@ Para activar el modo de pruebas de tu tienda, sigue estos pasos:
 1. Haz clic en **pedir con pago requerido**.
 1. Al finalizar la compra, se podrá ver que la compra ha sido aprobada.
 
+----[mlb]----
+> WARNING
+>
+> Atención
+>
+> Al finalizar la compra de prueba con Checkout Pro, en el Admin Panel de WooCommerce no será posible visualizar la compra como aprobada debido a que el proceso se realiza dentro del ambiente de Mercado Pago y no en el ambiente de la tienda. Con pruebas realizadas con Checkout Transparente podrá ver la aprobación del pedido.<br>
+> </br> <br/>
+> Además, en ambos checkouts esta información sobre el pago aprobado no se incluirá en el historial de la cuenta de Mercado Pago porque solo contiene gastos reales (hechos en producción).
+------------
+
+----[mla, mlm, mpe, mco, mlu, mlc]----
+> WARNING
+>
+> Atención
+>
+> Al finalizar la compra de prueba con Checkout Pro, en el Admin Panel de WooCommerce no será posible visualizar la compra como aprobada debido a que el proceso se realiza dentro del ambiente de Mercado Pago y no en el ambiente de la tienda. Con pruebas realizadas con Checkout API podrá ver la aprobación del pedido.<br>
+> </br> <br/>
+> Además, en ambos checkouts esta información sobre el pago aprobado no se incluirá en el historial de la cuenta de Mercado Pago porque solo contiene gastos reales (hechos en producción).
+------------
+
 > PREV_STEP_CARD_ES
 >
 > Configurar las notificaciones de pago

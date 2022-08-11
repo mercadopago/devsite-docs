@@ -30,6 +30,27 @@ To activate test mode for your store, follow these steps:
 1. Click **order with payment required**.
 1. At the end of the purchase, you can see that the purchase has been approved.
 
+----[mlb]---- 
+> WARNING
+>
+> Attention
+>
+> When finalizing the test purchase with Checkout Pro, in the WooCommerce Admin Panel it will not be possible to view the purchase as approved because the process takes place within the Mercado Pago environment and not in the store environment. With testing done with Checkout Transparente you will be able to view the order approval.<br>
+> </br> <br/>
+> In addition, in both checkouts this information about the approved payment will not be included in the Mercado Pago account history because it only contains real expenses (made in production).
+------------
+
+----[mla, mlm, mpe, mco, mlu, mlc]---- 
+> WARNING
+>
+> Attention
+>
+> When finalizing the test purchase with Checkout Pro, in the WooCommerce Admin Panel it will not be possible to view the purchase as approved because the process takes place within the Mercado Pago environment and not in the store environment. With testing done with Checkout API you will be able to view the order approval.<br>
+> </br> <br/>
+> In addition, in both checkouts this information about the approved payment will not be included in the Mercado Pago account history because it only contains real expenses (made in production).
+------------
+
+
 > PREV_STEP_CARD_EN
 >
 > Configure payment notifications

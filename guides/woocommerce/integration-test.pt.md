@@ -30,6 +30,14 @@ Para ativar o modo de teste para sua loja, siga estas etapas:
 1. Clique em **pedido com pagamento obrigatório**.
 1. Ao final da compra, você pode ver que a compra foi aprovada.
 
+> WARNING
+>
+> Atenção
+> 
+> Ao finalizar a compra teste com Checkout Pro, no Painel Administrativo da WooCommerce não será possível visualizar a compra como aprovada porque o processo ocorre dentro do ambiente do Mercado Pago e não no ambiente da loja. Com o teste feito com o ----[mlb]---- Checkout Transparente, ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API, ------------ será possível visualizar a aprovação do pedido.<br>
+> </br> <br/>
+> Além disso, em ambos os checkouts essa informação de pagamento aprovado não constará no histórico da conta do Mercado Pago porque nele só constam despesas reais (feitas em produção).
+
 > PREV_STEP_CARD_PT
 >
 > Configurar notificações de pagamento
