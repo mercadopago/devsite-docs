@@ -286,7 +286,6 @@ Adicione todas as informações adicionais que você deseja.
 | `category_id` | String | Categoria |
 | `quantity` | Integer | Quantidade |
 | `unit_price` | Float | Preço unitário |
-| `event_date` | Date |Data do evento |
 
 #### Sobre o comprador
 
@@ -343,7 +342,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
             "category_id": "entertainment",
             "quantity": 1,
             "unit_price": 150,
-            "event_date": "2020-06-02T12:58:41.425-04:00",
+
         }
     ],
     "payer": {
@@ -781,7 +780,6 @@ Adicione todas as informações adicionais que você deseja.
 | `category_id` | String | Categoria |
 | `quantity` | Integer | Quantidade |
 | `unit_price` | Float | Preço unitário |
-| `event_date` | Date |Data do evento |
 
 #### Sobre o comprador
 
@@ -840,7 +838,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
             "category_id": "services",
             "quantity": 1,
             "unit_price": 150,
-            "event_date": "2020-06-02T12:58:41.425-04:00"
+
         }
     ],
     "payer": {
@@ -1043,7 +1041,6 @@ Adicione todas as informações adicionais que você deseja.
 | `category_id` | String | Categoria |
 | `quantity` | Integer | Quantidade |
 | `unit_price` | Float | Preço unitário |
-| `event_date` | Date |Data do evento |
 | `category_descriptor` | Object | Descrição de la categoría. |
 | `passenger` | Object |Informações adicionais sobre passageiros. |
 | `first_name`| String | Nome |
@@ -1104,7 +1101,6 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
                 }
             },
             "quantity": 1,
-            "event_date": "2020-06-02T12:58:41.425-04:00",
             "unit_price": 150
         }
     ],
