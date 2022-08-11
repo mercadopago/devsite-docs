@@ -16,20 +16,12 @@ O Web Tokenize Checkout do Mercado Pago foi um produto que disponibilizou um for
 
 Aprenda como migrar do Web Tokenize Checkout V1 ou V2 nas seguintes documentações:
 
-- [Migrar do Web Tokenize Checkout V1](/developers/en/docs/checkout-bricks/how-tos/how-to-migrate/web-tokenize-checkout-v1)
-- [Migrar do Web Tokenize Checkout V2](/developers/en/docs/checkout-bricks/how-tos/how-to-migrate/web-tokenize-checkout-v2)
+- [Migrar do Web Tokenize Checkout V1](/developers/en/docs/checkout-bricks/how-tos/how-to-migrate/web-tokenize-checkout-v1/clientside)
+- [Migrar do Web Tokenize Checkout V2](/developers/en/docs/checkout-bricks/how-tos/how-to-migrate/web-tokenize-checkout-v2/clientside)
 
 ## CardForm
 
 A integração via CardForm é feita como parte da integração do ----[mlb]----Checkout Transparente----------------[mla, mlu, mlm, mlc, mco, mpe]----Checkout API------------. Neste modo de integração, o **MercadoPago.js** é responsável pelos fluxos necessários para obtenção das informações obrigatórias para a criação de um pagamento. Quando inicializado, uma busca é realizada para recolher os tipos de documentos disponíveis para o país em questão.
 Para migrar do CardForm para o Checkout Bricks, acesse esta documentação:
 
-- [Migrar do CardForm](/developers/en/docs/checkout-bricks/how-tos/how-to-migrate/card-form)
-
-> NEXT_STEP_CARD_PT
->
-> Migrar do Tokenizer V1
->
-> Migre sua integração do Tokenizer V1 para o Checkout Bricks.
->
-> [Web Tokenize Checkout V1](/developers/pt/docs/checkout-bricks/how-tos/how-to-migrate/web-tokenize-checkout-v1)
+- [Migrar do CardForm](/developers/en/docs/checkout-bricks/how-tos/how-to-migrate/cardform/clientside)
