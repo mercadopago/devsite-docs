@@ -149,6 +149,7 @@ payment = payment_response["response"]
 2. Reemplázalo con la integración de Checkout Bricks:
 
 [[[
+```php
 ===
 Puedes encontrar el estado del pago en el valor _status_.
 ===
@@ -175,7 +176,7 @@ Puedes encontrar el estado del pago en el valor _status_.
       'id' => $payment->id
   );
   echo json_encode($response);
- 
+
 ?>
 ```
 ```node
@@ -200,7 +201,7 @@ Puedes encontrar el estado del pago en el valor _status_.
 ===
 
 PaymentClient client = new PaymentClient();
- 
+
 PaymentCreateRequest paymentCreateRequest =
   PaymentCreateRequest.builder()
       .transactionAmount(request.getTransactionAmount())
@@ -217,8 +218,9 @@ PaymentCreateRequest paymentCreateRequest =
                       .build())
               .build())
       .build();
- 
+
 client.create(paymentCreateRequest);
+
 ```
 ```ruby
 ===
@@ -226,7 +228,7 @@ Puedes encontrar el estado del pago en el valor _status_.
 ===
 require 'mercadopago'
 sdk = Mercadopago::SDK.new('YOUR_ACCESS_TOKEN')
- 
+
 payment_data = {
  transaction_amount: params[:transactionAmount].to_f,
  token: params[:token],
@@ -240,11 +242,12 @@ payment_data = {
    },
  }
 }
- 
+
 payment_response = sdk.payment.create(payment_data)
 payment = payment_response[:response]
- 
+
 puts payment
+
 ```
 ```csharp
 ===
@@ -255,9 +258,9 @@ using MercadoPago.Client.Common;
 using MercadoPago.Client.Payment;
 using MercadoPago.Config;
 using MercadoPago.Resource.Payment;
- 
+
 MercadoPagoConfig.AccessToken = "YOUR_ACCESS_TOKEN";
- 
+
 var paymentRequest = new PaymentCreateRequest
 {
    TransactionAmount = decimal.Parse(Request["transactionAmount"]),
@@ -274,11 +277,12 @@ var paymentRequest = new PaymentCreateRequest
        },
    },
 };
- 
+
 var client = new PaymentClient();
 Payment payment = await client.CreateAsync(paymentRequest);
- 
+
 Console.WriteLine(payment.Status);
+
 ```
 ```python
 ===
@@ -286,7 +290,7 @@ Puedes encontrar el estado del pago en el valor _status_.
 ===
 import mercadopago
 sdk = mercadopago.SDK("ACCESS_TOKEN")
- 
+
 payment_data = {
    "transaction_amount": float(request.POST.get("transaction_amount")),
    "token": request.POST.get("token"),
@@ -300,10 +304,10 @@ payment_data = {
        }
    }
 }
- 
+
 payment_response = sdk.payment().create(payment_data)
 payment = payment_response["response"]
- 
+
 print(payment)
 ```
 ```curl
