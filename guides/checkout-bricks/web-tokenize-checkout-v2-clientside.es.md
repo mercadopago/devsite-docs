@@ -1,4 +1,4 @@
-# Cómo migrar desde Tokenizer V2
+# Cómo migrar desde Web Tokenize Checkout V2
 
 Si tu integración usa Web Tokenize Checkout V2, siga los pasos a continuación para migrar a Checkout Bricks.
 

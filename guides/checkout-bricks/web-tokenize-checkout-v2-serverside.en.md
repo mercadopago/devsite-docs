@@ -6,7 +6,7 @@
 
 Bricks makes it easy to send payment to MercadoPago through the Backend. The data received by Brick in the `onSubmit` function is exactly what is needed to call the Mercado Pago Payment API. 
 
-1. Find in the current structure of your integration the form that calls the Web Tokenize Checkout.
+1. In the current structure of your integration, find the call to Payments API.
 
 [[[
 ```php
