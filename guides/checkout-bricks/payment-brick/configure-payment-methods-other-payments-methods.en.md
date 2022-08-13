@@ -1,6 +1,6 @@
 # Configure the integration with other payment methods
 
-To configure Payment Brick integration to receive payments with other payment methods you need to follow the steps below:
+To configure Payment Brick integration to receive payments with other payment methods you need to follow the steps below. If you have already integrated card payments, you can start the integration from **step 5**.
 
 1. [Create container](#bookmark_create_container)
 2. [Include and configure MercadoPago.js library](#bookmark_include_and_configure_mercadopago.js_library)
@@ -129,7 +129,7 @@ renderPaymentBrick(bricksBuilder);
 
 The result of rendering the brick should be like the image below:”
 
-![form](checkout-bricks/card-form-en.png)
+![payment-brick](checkout-bricks/card-form-en.png)
 
 > WARNING
 >
@@ -143,7 +143,13 @@ The result of rendering the brick should be like the image below:”
 >
 > Manage other payment methods
 
-To include offline payment methods, just use the following configuration:
+> NOTE
+>
+> Important
+>
+> The payment methods described below require the buyer's address, name and document details to be filled in. For a better user experience, it is recommended that the integrator already initializes this data, so it will not be necessary to fill it manually. [Check here](/developers/en/docs/checkout-bricks/payment-brick/additional-customization/initialize-data-on-the-bricks) how to initialize the brick with this data already filled in.
+
+To include payment via boleto and lottery, just use the following configuration:
 
 [[[
 ```Javascript
@@ -161,9 +167,9 @@ settings = {
 ```
 ]]]
 
-The `ticket` property accepts 2 variable types, `string` and `string[]`. In the example above, payments via **boleto** and **payment in lottery** will be accepted. The allowed methods for offline payment are: `pec` (lottery payment) and `bolbradesco` (boleto bancário).
+The `ticket` property accepts 2 variable types, `string` and `string[]`. In the example above, payments via **boleto** and **payment in lottery** will be accepted. 
 
-If you want to select all methods, you can also pass a string instead of an array, as in the example below.
+If you don't want to allow both payment methods, instead of the string `all`, you can pass an array with just the desired IDs. As in the example below, where only payment via bank slip is accepted.
 
 [[[
 ```Javascript
@@ -173,7 +179,7 @@ settings = {
     ...,
     paymentMethods: {
       ...,
-      ticket: 'all'
+      ticket: [ 'bolbradesco' ]
     }
   }
 }
@@ -181,3 +187,4 @@ settings = {
 ```
 ]]]
 
+The IDs accepted within the array in the `ticket` property are `pec` (payment in lottery) and `bolbradesco` (payment via boleto).

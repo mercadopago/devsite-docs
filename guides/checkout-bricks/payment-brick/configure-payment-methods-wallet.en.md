@@ -1,6 +1,6 @@
 # Configure the integration with Mercado Pago Wallet
 
-To configure Payment Brick integration to receive payments with Mercado Pago Wallet you need to follow the steps below:
+To configure Payment Brick integration to receive payments with Mercado Pago Wallet you need to follow the steps below. If you have already integrated card payments, you can start the integration from **step 5**.
 
 1. [Create container](#bookmark_create_container)
 2. [Include and configure MercadoPago.js library](#bookmark_include_and_configure_mercadopago.js_library)
@@ -129,7 +129,7 @@ renderPaymentBrick(bricksBuilder);
 
 The result of rendering the brick should be like the image below:”
 
-![form](checkout-bricks/card-form-en.png)
+![payment-brick](checkout-bricks/card-form-en.png)
 
 > WARNING
 >

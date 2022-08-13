@@ -4,20 +4,26 @@
 >
 > Inicializar dados nos Bricks
 
-XXX
+## CartÕes
 
-> PREV_STEP_CARD_PT
->
-> Customers & Cards
->
-> Saiba como configurar a funcionalidade de Customers & Cards, que permite o uso de cartões salvos nos pagamentos em seu site. 
->
-> [Customers & Cards](/developers/pt/docs/checkout-bricks/payment-brick/additional-customization/customers-cards) 
+No formulário exibido para pagamento com cartão, é possível inicializar com os campos de documento e e-mail já preenchidos. Parra isso, é necessário passar a seguinte configuração no objeto de inicialização do brick.
 
-> NEXT_STEP_CARD_PT
->
-> Ocultar elemento
->
-> Caso deseje, veja como ocultar elementos no Payment Brick.
->
-> [Ocultar elemento](/developers/pt/docs/checkout-bricks/payment-brick/additional-customization/hide-element)
+[[[
+```javascript
+settings = {
+  ...,
+  initialization: {
+    ...,
+    payer: {
+      ...,
+      email: 'jose@maria.com',
+      identification: {
+	  type: 'CPF',
+	  number: '01234567890',
+	},
+    }
+  }
+}
+}
+```
+]]]

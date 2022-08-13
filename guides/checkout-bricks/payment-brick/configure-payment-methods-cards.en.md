@@ -1,6 +1,6 @@
 # Configure the integration with cards
 
-To configure Payment Brick integration to receive payments with credit and debit cards you need to follow the steps below:
+To configure Payment Brick integration to receive payments with credit and debit cards you need to follow the steps below.
 
 1. [Create container](#bookmark_create_container)
 2. [Include and configure MercadoPago.js library](#bookmark_include_and_configure_mercadopago.js_library)
@@ -130,7 +130,7 @@ renderPaymentBrick(bricksBuilder);
 
 The result of rendering the brick should be like the image below:”
 
-![form](checkout-bricks/card-form-en.png)
+![payment-brick](checkout-bricks/payment-brick-en.png)
 
 > WARNING
 >

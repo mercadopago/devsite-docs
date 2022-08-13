@@ -1,6 +1,6 @@
 # Configure a integração com cartões
 
-Para configurar a integração do Payment Brick para receber pagamentos com cartões de crédito e débito você precisa seguir os passos abaixo:
+Para configurar a integração do Payment Brick para receber pagamentos com cartões de crédito e débito você precisa seguir os passos abaixo.
 
 1. [Criar container](#bookmark_criar_container)
 2. [Incluir e configurar a biblioteca MercadoPago.js](#bookmark_incluir_e_configurar_a_biblioteca_mercadopago.js)
@@ -141,7 +141,7 @@ renderPaymentBrick(bricksBuilder);
 
 O resultado de renderizar o brick deve ser como na imagem abaixo:
 
-![form](checkout-bricks/payment-brick-pt.png)
+![payment-brick](checkout-bricks/payment-brick-pt.png)
 
 > WARNING
 >

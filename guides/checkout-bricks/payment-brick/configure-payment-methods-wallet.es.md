@@ -1,6 +1,6 @@
 # Configurar la integración con Billetera Mercado Pago
 
-Para configurar la integración de Payment Brick para recibir pagos con la Billetera Mercado Pago debe seguir los pasos a continuación:
+Para configurar la integración de Payment Brick para recibir pagos con la Billetera Mercado Pago debe seguir los pasos a continuación. Si ya ha integrado los pagos con tarjeta, puede iniciar la integración desde el **paso 5**.
 
 1. [Crear container](#bookmark_crear_container)
 2. [Incluir y configurar la librería MercadoPago.js](#bookmark_incluir_y_configurar_la_librería_mercadopago.js)
@@ -141,7 +141,7 @@ renderPaymentBrick(bricksBuilder);
 
 El resultado de renderizar el brick debe ser como la imagen de abajo:
 
-![form](checkout-bricks/payment-brick-es.png)
+![payment-brick](checkout-bricks/payment-brick-es.png)
 
 > WARNING
 >

@@ -1,6 +1,6 @@
 # Configurar la integración con otros medios de pago
 
-Para configurar la integración de Payment Brick para recibir pagos con otros medios de pago debe seguir los pasos a continuación:
+Para configurar la integración de Payment Brick para recibir pagos con otros medios de pago debe seguir los pasos a continuación. Si ya ha integrado los pagos con tarjeta, puede iniciar la integración desde el **paso 5**.
 
 1. [Crear container](#bookmark_crear_container)
 2. [Incluir y configurar la librería MercadoPago.js](#bookmark_incluir_y_configurar_la_librería_mercadopago.js)
@@ -141,7 +141,7 @@ renderPaymentBrick(bricksBuilder);
 
 El resultado de renderizar el brick debe ser como la imagen de abajo:
 
-![form](checkout-bricks/payment-brick-es.png)
+![payment-brick](checkout-bricks/payment-brick-es.png)
 
 > WARNING
 >
@@ -154,6 +154,12 @@ El resultado de renderizar el brick debe ser como la imagen de abajo:
 > h2
 >
 > Administrar otros medios de pago
+
+> NOTE
+>
+> Importante
+>
+> Los métodos de pago que se describen a continuación requieren que se complete la dirección, el nombre y los detalles del documento del comprador. Para una mejor experiencia de usuario, se recomienda que el integrador ya inicialice estos datos, por lo que no es necesario llenarlo manualmente. [Consulte aquí](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/initialize-data-on-the-bricks) cómo inicializar el bloque con estos datos ya completados.
 
 Para incluir pago vía boleto y lotería, solo use la siguiente configuración:
 

@@ -1,63 +1,54 @@
 # Payment Brick 
 
-Payment Brick is a form of integration that allows you to add multiple payment methods to your website with just one Brick, with the ability to save card details for future purchases. When using Payment Brick, you will have at your disposal several payment methods and you will be able to select which ones you want to leave active.
+Payment Brick is a modular and customizable solution that allows you to add several payment methods to your store with just one Brick, allowing you to save card data for future purchases. By using Payment Brick, you will have different payment methods at your disposal and you will be able to choose which ones to enable for your site.
 
-The payment methods currently available are:
+For now, you will be able to give your customers the possibility of making payments through credit cards and the Caixa virtual debit card. In the short term we will add the possibility that, using this same Brick, you can also allow them to make payments with Pix, ticket and lottery.
 
-----[mlb]----
-| Country | Payment methods |
-| --- | --- |
-| Brazil | Credit card, debit card (only Caixa virtual card), methods Off and Pix. |
+The possibility of saving the data of cards that have already been charged in previous purchases, makes the payment process more efficient and faster. For the buyer, it is no longer necessary to have to reload the data each time they enter the checkout.
 
-------------
+![payment-brick-layout](checkout-bricks/payment-brick-layout-en.gif)
 
-----[mla]----
-| Country | Payment methods |
-| --- | --- |
-| Argentina | Credit card, debit card and methods Off. |
+## Layout 
 
-------------
+The Payment Brick layout is based on the best UX practices, so that it is possible to offer the best shopping experience without having to worry about design details. The layout offers the elements detailed below.
 
-----[mlm]----
-| Country | Payment methods |
-| --- | --- |
-| Mexico | Credit card and debit card. |
-
-------------
-
-----[mco]----
-| Country | Payment methods |
-| --- | --- |
-| Colombia | Credit card and debit card. |
-
-------------
-
-----[mlc]----
-| Country | Payment methods |
-| --- | --- |
-| Chile | Credit card and debit card.|
-
-------------
-
-----[mpe]----
-| Country | Payment methods |
-| --- | --- |
-| Peru | Credit card and debit card. |
-
-------------
- 
-> PREV_STEP_CARD_EN
+> WARNING
 >
-> Introduction
+> Attention
 >
-> Learn more about Checkout Bricks, a UI (User Interface) component library that aims to enable client-side integration.
->
-> [Landing](/developers/en/docs/checkout-bricks/landing)
- 
-> NEXT_STEP_CARD_EN
->
-> Prerequisites
->
-> Learn about the prerequisites needed to integrate Payment Brick.
->
-> [Prerequisites](/developers/en/docs/checkout-bricks/payment-brick/prerequisites)
+> The bricks were created not only to meet the technical needs of implementation and security, but also to provide the best experience for the buyer. Customizing a brick can drastically change the buyer's experience. Our recommendation is that you always use the brick with as little additional customization as possible to always ensure the best experience.
+
+### Cards
+
+| Element  | Characteristics  | Comments  |
+| --- | --- | --- |
+| Accepted title and flags <br><br>  Property: formTitle  | **Value (title):** Credit or debit card  <br> **Label:** N/A <br> **Placeholder:** N/A <br> **Type:** text/image <br> **Format:** N/A <br> **Max. characters:** N/A  | Optional <br> Customizable <br><br>  *Flags are displayed along with the title. The only customization available for them is to hide them along with the form title, no longer displaying that information.  |
+| Card number input field <br><br> Property: cardNumber  | **Value:** N/A <br> **Label:** Card number <br> **Placeholder:** 1234 1234 1234 1234 <br> **Type:** number <br> **Format:** N/A <br> **Max. characters:** depending on the issuer it can vary between 15 and 16.  | Mandatory <br> customizable (label, placeholder)  |
+| Card expiration date input field <br><br> Property: expirationDate  | **Value:** N/A <br> **Label:** expiration date <br> **Placeholder:** MM/AA <br> **Type:** date <br> **Format:** MM/AA <br> **Max. characters:** 5  | Mandatory <br><br> customizable (label, placeholder)  |
+| Security code input field <br><br> Property: securityCode  | **Value:** N/A <br> **Label:** Security code <br> **Placeholder:** 1234 <br> **Type:** integer <br> **Format:** N/A <br><br>  **Max. characters:** 4  | Mandatory <br><br> customizable (label, placeholder and maximum of wrong characters)  |
+| Card cardholder name input field <br><br> Property: cardholderName  | **Value:** N/A <br> **Label:** Name of the holder as it appears on the card <br> **Placeholder:** João Silva <br> **Type:** string <br> **Format:** N/A <br> **Max. characters:** 100  | Mandatory <br><br> customizable (label, placeholder, type, format and maximum of wrong characters.)  |
+| Cardholder ID selection field <br><br> Property: cardholderIdentificationType  | **Value:** ----[mlb]----CPF, CNPJ------------ ----[mla]----DNI, CI, LC, LE, Otro------------ ----[mco]----CC, CE, NIT, Otro------------ ----[mlc]----RUT, Otro
+------------ ----[mlu]----CI, Otro
+------------ ----[mpe]----DNI, C.E, RUC, Otro
+------------ <br> **Label:** ID <br> **Placeholder:** N/A <br> **Type:** select <br> **Format:** N/A <br> **Max. characters:** N/A  | Mandatory <br> customizable (label, placeholder) <br><br> *If the document type and number data were previously provided and saved, this element becomes optional.  |
+| Cardholder ID number input field <br><br> Property: cardholderIdentificationNumber  | **Value:** N/A <br> **Label:** N/A <br> **Placeholder:** ----[mlb]----999.999.999-99 para CPF ou 99.999.9999/9999-99 para CNPJ------------ ----[mla, mlm, mpe, mco, mlu, mlc]----N/A------------.<br> **Type:** number <br> **Format:** N/A <br> **Max. characters:** N/A  | Mandatory <br><br> non customizable (label, placeholder)  |
+| Buyer’s email input field <br><br> Property: email  | **Value:** N/A <br> **Label:** Email <br> **Placeholder:** joaosilva@email.com <br> **Type:** string <br> **Formato:** conventional email format (example@email.com) <br> **Max. characters:** X  | Mandatory <br> customizable (label, placeholder) <br><br> *If the data was previously provided and saved, this element becomes optional.  |
+| Payment button <br><br> Property: formSubmit  | **Value:** [imagen] Pay <br> **Label:** N/A <br> **Placeholder:** N/A <br> **Type:** text <br> **callback:** onSubmit <br> **function**: promise(cardFormData)  | Optional <br> Concealable and customizable <br><br> *The function receives the data from the form, including the card token, and presents a loading animation.  |
+
+
+### Other payment methods (Boleto or PEC)
+
+| Element  | Characteristics  | Comments  |
+| --- | --- | --- |
+| Accepted title and flags <br><br>  Property: formTitle  | **Value (title):** Credit or debit card  <br> **Label:** N/A <br> **Placeholder:** N/A <br> **Type:** text/image <br> **Format:** N/A <br> **Max. characters:** N/A  | Optional <br> Customizable <br><br>  *Flags are displayed along with the title. The only customization available for them is to hide them along with the form title, no longer displaying that information.  |
+| Card number input field <br><br> Property: cardNumber  | **Value:** N/A <br> **Label:** Card number <br> **Placeholder:** 1234 1234 1234 1234 <br> **Type:** number <br> **Format:** N/A <br> **Max. characters:** depending on the issuer it can vary between 15 and 16.  | Mandatory <br> customizable (label, placeholder)  |
+| Card expiration date input field <br><br> Property: expirationDate  | **Value:** N/A <br> **Label:** expiration date <br> **Placeholder:** MM/AA <br> **Type:** date <br> **Format:** MM/AA <br> **Max. characters:** 5  | Mandatory <br><br> customizable (label, placeholder)  |
+| Security code input field <br><br> Property: securityCode  | **Value:** N/A <br> **Label:** Security code <br> **Placeholder:** 1234 <br> **Type:** integer <br> **Format:** N/A <br><br>  **Max. characters:** 4  | Mandatory <br><br> customizable (label, placeholder and maximum of wrong characters)  |
+| Card cardholder name input field <br><br> Property: cardholderName  | **Value:** N/A <br> **Label:** Name of the holder as it appears on the card <br> **Placeholder:** João Silva <br> **Type:** string <br> **Format:** N/A <br> **Max. characters:** 100  | Mandatory <br><br> customizable (label, placeholder, type, format and maximum of wrong characters.)  |
+| Cardholder ID selection field <br><br> Property: cardholderIdentificationType  | **Value:** ----[mlb]----CPF, CNPJ------------ ----[mla]----DNI, CI, LC, LE, Otro------------ ----[mco]----CC, CE, NIT, Otro------------ ----[mlc]----RUT, Otro
+------------ ----[mlu]----CI, Otro
+------------ ----[mpe]----DNI, C.E, RUC, Otro
+------------ <br> **Label:** ID <br> **Placeholder:** N/A <br> **Type:** select <br> **Format:** N/A <br> **Max. characters:** N/A  | Mandatory <br> customizable (label, placeholder) <br><br> *If the document type and number data were previously provided and saved, this element becomes optional.  |
+| Cardholder ID number input field <br><br> Property: cardholderIdentificationNumber  | **Value:** N/A <br> **Label:** N/A <br> **Placeholder:** ----[mlb]----999.999.999-99 para CPF ou 99.999.9999/9999-99 para CNPJ------------ ----[mla, mlm, mpe, mco, mlu, mlc]----N/A------------.<br> **Type:** number <br> **Format:** N/A <br> **Max. characters:** N/A  | Mandatory <br><br> non customizable (label, placeholder)  |
+| Buyer’s email input field <br><br> Property: email  | **Value:** N/A <br> **Label:** Email <br> **Placeholder:** joaosilva@email.com <br> **Type:** string <br> **Formato:** conventional email format (example@email.com) <br> **Max. characters:** X  | Mandatory <br> customizable (label, placeholder) <br><br> *If the data was previously provided and saved, this element becomes optional.  |
+| Payment button <br><br> Property: formSubmit  | **Value:** [imagen] Pay <br> **Label:** N/A <br> **Placeholder:** N/A <br> **Type:** text <br> **callback:** onSubmit <br> **function**: promise(cardFormData)  | Optional <br> Concealable and customizable <br><br> *The function receives the data from the form, including the card token, and presents a loading animation.  |

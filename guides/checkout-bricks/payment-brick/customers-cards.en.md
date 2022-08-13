@@ -2,7 +2,7 @@
 >
 > h1
 >
-> Customers & Cards
+> Include saved cards
 
 Payment Brick allows the integrator to use the Customers & Cards functionality, which allows the use of cards saved in payments on their website.
 
@@ -34,24 +34,14 @@ Just passing these two properties, Brick will automatically give the user the op
 >
 > Only expired cards will be shown to the buyer, expired cards will not be made available.
 
-## Getting customerId and cardsIds
+![payment-brick-cc](checkout-bricks/payment-brick-cc-en.gif)
 
-For the `customerId` and `cardsIds` required for the C&C feature, the integrator must have access to a user's email and to the token generated through a card payment.
+----[mlb]----
+To learn how to create, modify and get the `customerId` and `cardsIds`, see the [Cards and customers management](/developers/en/docs/checkout-api/customer-management) section of the Checkout Transparente documentation.
 
-With the user's email it is possible to generate a Customer ID and using the Customer ID combined with the card token, it is possible to save it so that the buyer can use it in the next purchases.
+------------
 
-> PREV_STEP_CARD_EN
->
-> Code example
->
-> To simplify and optimize the integration process, view an example of a Checkout Bricks integration.
->
-> [Send payments to Mercado Pago](/developers/en/docs/checkout-bricks/payment-brick/code-example)
+----[mla, mlm, mpe, mco, mlu, mlc]---- 
+To learn how to create, modify and get the `customerId` and `cardsIds`, see the [Cards and customers management](/developers/en/docs/checkout-api/customer-management) section of the Checkout API documentation.
 
-> NEXT_STEP_CARD_EN
->
-> Initialize data on the Bricks
->
-> xxx
->
-> [Initialize data on the Bricks](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/initialize-data-on-the-bricks)
+------------

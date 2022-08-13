@@ -2,13 +2,9 @@
 >
 > h1
 >
-> Customers & Cards
+> Incluir cartões salvos
 
-Com o Payment Brick você poderá utilizar a funcionalidade Customers & Cards, que permite o uso de cartões salvos nos pagamentos em seu site. 
-
-## Incluindo cartões salvos no Payment Brick
-
-Para que o Payment Brick possa exibir os cartões salvos de um determinado comprador, é preciso enviar ao Brick no momento de sua inicialização o ID do cliente e dos cartões, como no exemplo abaixo.
+Com o Payment Brick você poderá utilizar a funcionalidade Customers & Cards, que permite o uso de cartões salvos nos pagamentos em seu site. Para que o Payment Brick possa exibir os cartões salvos de um determinado comprador, é preciso enviar ao Brick no momento de sua inicialização o ID do cliente e dos cartões, como no exemplo abaixo.
 
 [[[
 ```Javascript
@@ -34,24 +30,14 @@ Apenas passando essas duas propriedades, o Brick automaticamente dará ao usuár
 >
 > Somente os cartões dentro do prazo de validade serão mostrados para o comprador, cartões vencidos não serão disponibilizados.
 
-## Obtendo o customerId e os cardsIds
+![payment-brick-cc](checkout-bricks/payment-brick-cc-pt.gif)
 
-Para o `customerId` e os `cardsIds` necessários para a feature de C&C, o integrador deve ter acesso ao e-mail de um usuário e ao token gerado através de um pagamento realizado com cartão.
+----[mlb]----
+Para saber como criar, modificar e obter o `customerId` e os `cardsIds`, consulte a seção [Gestão de cartões e clientes](/developers/pt/docs/checkout-api/customer-management) da documentação do Checkout Transparente.
 
-Com o e-mail do usuário é possível gerar um Customer ID e, utilizando o Customer ID combinado com o token do cartão, é possível salvá-lo para que o comprador possa utilizá-lo nas próximas compras.
+------------
 
-> PREV_STEP_CARD_PT
->
-> Exemplo de código
->
-> Para facilitar e otimizar o seu processo de integração, veja um exemplo completo integração com o Checkout Bricks.
->
-> [Exemplo de código](/developers/pt/docs/checkout-bricks/payment-brick/code-example) 
+----[mla, mlm, mpe, mco, mlu, mlc]---- 
+Para saber como criar, modificar e obter o `customerId` e os `cardsIds`, consulte a seção [Gestão de cartões e clientes](/developers/pt/docs/checkout-api/customer-management) da documentação do Checkout API.
 
-> NEXT_STEP_CARD_PT
->
-> Inicializar dados nos Bricks
->
-> xxx
->
-> [Inicializar dados nos Bricks](/developers/pt/docs/checkout-bricks/payment-brick/additional-customization/initialize-data-on-the-bricks)
+------------

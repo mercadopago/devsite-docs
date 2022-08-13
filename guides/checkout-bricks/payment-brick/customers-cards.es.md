@@ -2,7 +2,7 @@
 >
 > h1
 >
-> Customers & Cards
+> Incluir tarjetas guardadas
 
 Payment Brick permite al integrador utilizar la funcionalidad Customers & Cards, que permite el uso de tarjetas guardadas en pagos en su sitio web.
 
@@ -34,24 +34,14 @@ Con solo pasar estas dos propiedades, Brick le dará automáticamente al usuario
 >
 > Solo se mostrarán al comprador las tarjetas caducadas, las tarjetas caducadas no estarán disponibles.
 
-## Obtener customerId y cardsIds
+![payment-brick-cc](checkout-bricks/payment-brick-cc-es.gif)
 
-Para el `customerId` y los `cardsIds` necesarios para la función C&C, el integrador debe tener acceso al correo electrónico de un usuario y al token generado a través de un pago con tarjeta.
+----[mlb]----
+Para obtener información sobre cómo crear, modificar y obtener `customerId` y `cardsIds`, consulte la sección [Gestión de tarjetas y clientes](/developers/es/docs/checkout-api/customer-management) de la documentación de Checkout Transparente.
 
-Con el email del usuario es posible generar un ID de Cliente y, utilizando el ID de Cliente combinado con el token de la tarjeta, es posible guardarlo para que el comprador pueda utilizarlo en las próximas compras.
+------------
 
-> PREV_STEP_CARD_ES 
->
-> Ejemplo de código
->
-> Para facilitar y optimizar el proceso de integración, consulta un ejemplo de integración con Checkout Bricks.
->
-> [Enviar pago a Mercado Pago](/developers/es/docs/checkout-bricks/payment-brick/code-example)
+----[mla, mlm, mpe, mco, mlu, mlc]---- 
+Para obtener información sobre cómo crear, modificar y obtener `customerId` y `cardsIds`, consulte la sección [Gestión de tarjetas y clientes](/developers/es/docs/checkout-api/customer-management) de la documentación de Checkout API.
 
-> NEXT_STEP_CARD_ES
->
-> Inicializar datos en Bricks
->
-> xxx
->
-> [Inicializar datos en Bricks](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/initialize-data-on-the-bricks)
+------------

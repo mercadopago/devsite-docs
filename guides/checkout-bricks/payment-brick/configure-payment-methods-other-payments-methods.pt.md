@@ -1,6 +1,6 @@
 # Configure a integração com outros meios de pagamento
 
-Para configurar a integração do Payment Brick para receber pagamentos com outros meios de pagamento você precisa seguir os passos abaixo:
+Para configurar a integração do Payment Brick para receber pagamentos com outros meios de pagamento você precisa seguir os passos abaixo. Caso já tenha integrado pagamentos via cartão, você pode iniciar a integração a partir da **etapa 5**.
 
 1. [Criar container](#bookmark_criar_container)
 2. [Incluir e configurar a biblioteca MercadoPago.js](#bookmark_incluir_e_configurar_a_biblioteca_mercadopago.js)
@@ -10,6 +10,8 @@ Para configurar a integração do Payment Brick para receber pagamentos com outr
 
 > Os passos são realizados no back-end ou no front-end. As pills **Client-Side** e **Server-Side** localizadas imediatamentamente ao lado do título te ajudam a identificar qual passo é realizado em qual instância. <br/></br>
 > <br/></br>
+> Para integrar pagamentos via Pix, siga as etapas abaixo, mas caso você já tenha integrado pagamentos via cartão, inicie a integração a partir da etapa Adicionar formulário de pagamento."
+
 > E, para ajudar, preparamos um [exemplo de codigo](/developers/pt/docs/checkout-bricks/payment-brick/code-example-other-payments-methods) completo da configuração do Payment Brick, que você pode usar como modelo.
 
 > CLIENT_SIDE
@@ -140,7 +142,7 @@ renderPaymentBrick(bricksBuilder);
 
 O resultado de renderizar o brick deve ser como na imagem abaixo:
 
-![form](checkout-bricks/payment-brick-pt.png)
+![payment-brick](checkout-bricks/payment-brick-pt.png)
 
 > WARNING
 >
@@ -155,6 +157,12 @@ O resultado de renderizar o brick deve ser como na imagem abaixo:
 > Gerenciar outros meios de pagamento
 
 Para incluir pagamento via boleto e lotérica, basta utilizar a seguinte configuração:
+
+> NOTE
+>
+> Importante
+>
+> Os meios de pagamento descritos abaixo necessitam que os dados de endereço, nome e documento do comprador sejam preenchidos. Para uma melhor experiência do usuário, é recomendável que o integrador já inicialize esses dados, assim não será necessário preencher manualmente. [Confira aqui](/developers/pt/docs/checkout-bricks/payment-brick/additional-customization/initialize-data-on-the-bricks) como inicializar o brick com esses dados já preenchidos.
 
 [[[
 ```Javascript

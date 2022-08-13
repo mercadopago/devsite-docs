@@ -9,19 +9,3 @@ To perform a Checkout Bricks integration, you must meet the requirements listed 
 | Install the Mercado Pago SDK | Install the official SDKs to simplify your integration with our [APIs](/developers/en/reference/payments/_payments/post). For more information, [click here](/developers/en/guides/sdks-v2/official/landing). |
 
 If all the prerequisites are met, you can perform the Checkout Bricks integration.
-
-> PREV_STEP_CARD_EN
->
-> Payment Brick
->
-> Learn more about Payment Brick.
->
-> [Payment Brick](/developers/en/docs/checkout-bricks/payment-brick/introduction)
-
-> NEXT_STEP_CARD_EN
->
-> Configure integration
->
-> Learn how to integrate Payment Brick step by step.
->
-> [Configure integration](/developers/en/docs/checkout-bricks/payment-brick/configure-integration)
