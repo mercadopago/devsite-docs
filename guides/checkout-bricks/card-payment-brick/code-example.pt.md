@@ -293,19 +293,3 @@ curl -X POST \
     ...
 }
 ```
-
-> PREV_STEP_CARD_PT
->
-> Requisitos para entrar em produção
->
-> Veja quais são os requisitos necessários para entrar em produção.
->
-> [Requisitos para entrar em produção](/developers/pt/docs/checkout-bricks/card-payment-brick/integration-test/go-to-production-requeriments)
-
-> NEXT_STEP_CARD_PT
->
-> Definir tema 
->
-> Caso deseje, veja como selecionar outro tema ao instanciar/renderizar o Card Payment Brick.
->
-> [Definir tema](/developers/pt/docs/checkout-bricks/card-payment-brick/additional-customization/set-theme)

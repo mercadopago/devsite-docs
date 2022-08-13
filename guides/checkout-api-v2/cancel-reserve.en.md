@@ -4,6 +4,7 @@ sites_supported:
 - mlb
 - mlm
 - mpe
+- mlu
 ---
 
 # Cancel reserve

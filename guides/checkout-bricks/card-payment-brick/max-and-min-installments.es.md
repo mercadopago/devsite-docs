@@ -22,19 +22,3 @@ const settings = {
     },
 }
 ```
-
-> PREV_STEP_CARD_ES
->
-> Iniciar Brick con documento
->
-> También puedes iniciar Brick con un documento de ID. Descubre cómo.
->
-> [Iniciar Brick con documento de ID](/developers/es/docs/checkout-bricks/card-payment-brick/additional-customization/initiate-brick-with-document)
-
-> NEXT_STEP_CARD_ES
->
-> Configurar medios de pago aceptados
->
-> Aprende a configurar pagos exclusivamente con crédito o débito.
->
-> [Configurar medios de pago aceptados](/developers/es/docs/checkout-bricks/card-payment-brick/additional-customization/configure-payment-methods)

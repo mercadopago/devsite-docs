@@ -17,11 +17,11 @@ Done! Once these steps are finished, the integration will be complete and you wi
 
 > PREV_STEP_CARD_EN
 >
-> Create test user
+> Payment management
 >
-> Learn how to create users to test the Checkout API integration.
+> Learn how to manage your store payments.
 >
-> [Create Test User](/developers/en/docs/checkout-api/integration-test/create-test-user)
+> [Payment management](/developers/en/docs/checkout-api/payment-management)
 
 > NEXT_STEP_CARD_EN
 >

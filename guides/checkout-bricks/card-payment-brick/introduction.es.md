@@ -32,19 +32,3 @@ El layout de Card Payment Brick se basa en las mejores prácticas de UX para que
 | Campo para ingresar el número de documento del titular de la tarjeta <br><br> Propiedad: cardholderIdentificationNumber  | **Valor:** N/A <br> **Label:** N/A <br> **Placeholder:** ----[mlb]----999.999.999-99 para CPF ou 99.999.9999/9999-99 para CNPJ------------ ----[mla, mlm, mpe, mco, mlu, mlc]----N/A------------. <br> **Tipo:** number <br> **Formato:** N/A <br> **Máx. caracteres:** N/A  | Obligatorio <br> no personalizable  |
 | Campo para ingresar el correo electrónico del comprador <br> Propiedad: email  | **Valor:** N/A <br> **Label:** Email <br> **Placeholder:** joaosilva@email.com <br> **Tipo:** string <br> **Formato:** formato de e-mail convencional (ejemplo@email.com)  **Máx. caracteres:** X  | Obligatorio* <br> personalizable (label, placeholder) <br><br> *Si los datos se proporcionaron y guardaron previamente, este elemento se vuelve opcional.  |
 | Botón de pago <br> Propiedad: formSubmit  | **Valor:** [imagen] Pagar <br> **Label:** N/A  **Placeholder:** N/A <br> **Tipo:** text <br> **callback:** onSubmit <br> **função**: promise(cardFormData)  | Opcional <br> Ocultable y personalizable <br><br> *La función recibe los datos del formulario, incluido el token de la tarjeta, y presenta una animación de carga.  |
-
-> PREV_STEP_CARD_ES
->
-> Introducción
->
-> Obtén más información sobre Checkout Bricks, una biblioteca de componentes de UI (User Interface) cuyo objetivo es permitir una integración client-side.
->
-> [Landing](/developers/es/docs/checkout-bricks/landing)
- 
-> NEXT_STEP_CARD_ES
->
-> Requisitos previos
->
-> Conozca los requisitos previos necesarios para integrar Checkout Bricks.
->
-> [Requisitos previos](/developers/es/docs/checkout-bricks/card-payment-brick/prerequisites)

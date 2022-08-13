@@ -291,19 +291,3 @@ curl -X POST \
     ...
 }
 ```
-
-> PREV_STEP_CARD_EN
->
-> Requirements to go to production
->
-> Check what requirements are needed to go into production.
->
-> [Requirements to go to production](/developers/en/docs/checkout-bricks/card-payment-brick/integration-test/go-to-production-requeriments)
-
-> NEXT_STEP_CARD_EN
->
-> Set theme
->
-> See how you can select another theme when instantiating/rendering the Card Payment Brick.
->
-> [Set theme](/developers/en/docs/checkout-bricks/card-payment-brick/additional-customization/set-theme)

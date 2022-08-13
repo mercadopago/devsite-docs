@@ -22,19 +22,3 @@ const settings = {
     },
 }
 ```
-
-> PREV_STEP_CARD_EN
->
-> Initiate brick with document
->
-> If you prefer, check how to initiate Card Payment Brick with and identity document.
->
-> [Initiate brick with document](/developers/en/docs/checkout-bricks/card-payment-brick/additional-customization/initiate-brick-with-document)
-
-> NEXT_STEP_CARD_EN
->
-> Configure accepted payment methods
->
-> Learn how to configure payments exclusively with credit or debit.
->
-> [Configure accepted payment methods](/developers/en/docs/checkout-bricks/card-payment-brick/additional-customization/configure-payment-methods)

@@ -135,19 +135,3 @@ The result of rendering the brick should be like the image below:”
 > Attention
 >
 > For an effective Brick control, the function submitted in `onSubmit` must always return a Promise. You should call `resolve()` only if your backend processes was successful. Call `reject()` if an error occurs. The `reject()` will make the brick allow the fields to be filled in again and a new payment attempt possible. Also, when calling the `resolve()` method inside the `onSubmit` Promise, the brick does not allow new payments. If you want to make a new payment, you must create a new Brick instance.
-
-> PREV_STEP_CARD_EN
->
-> Prerequisites
->
-> Learn about the prerequisites needed to integrate Card Payment Brick.
->
-> [Prerequisites](/developers/en/docs/checkout-bricks/card-payment-brick/prerequisites)
- 
-> NEXT_STEP_CARD_EN
->
-> Send payments to Mercado Pago
->
-> After you set up the integration to Card Payment Brick, here's how to send payments to Mercado Pago.
->
-> [Send payments to Mercado Pago](/developers/en/docs/checkout-bricks/card-payment-brick/payment-submission)  

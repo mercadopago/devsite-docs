@@ -1,6 +1,5 @@
 [TXTSNIPPET][/guides/snippets/test-integration/bricks/bricks-modify-variables]
 
-> PREV_STEP_CARD_EN  
 >
 > Set theme
 >
