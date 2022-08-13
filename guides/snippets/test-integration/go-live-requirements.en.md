@@ -7,11 +7,18 @@ When you have your integration ready and want to start receiving payments, you m
 In order for you to be secure and to take care of the data, **it is necessary that you have an SSL certificate and that the payment form be made available on an HTTPS page**. This allows to protect the transactions carried out by buyers and their data.
 During the tests you may not have it, but it is mandatory in order to go to production.
 
-## Why is this process necessary?
+### Why is this process necessary? 
 
 With this process, you can guarantee the security of your customers' data, compliance with the regulations or legal provisions of each country and achieve the best shopping experience for your customers.
 
 [View the Terms and Conditions of Mercado Pago](/developers/en/guides/resources/legal/terms-and-conditions).
+
+----[mlb]----
+# Receive payments with Pix
+
+The Pix payment option will only be displayed if there is a Pix key registered] in Mercado Pago. If you haven't created it yet, [click here](https://www.youtube.com/watch?v=60tApKYVnkA) and check the necessary steps.
+
+------------
 
 ## Additional considerations
 

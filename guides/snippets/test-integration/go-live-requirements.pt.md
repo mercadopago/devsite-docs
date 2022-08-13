@@ -7,11 +7,18 @@ Quando sua integração estiver pronta e você quiser começar a receber pagamen
 Para que você esteja seguro e possa proteger os dados, **é necessário ter um certificado SSL e que a forma de pagamento seja disponibilizada em uma página HTTPS**. Isso permite proteger as transações realizadas pelos compradores e seus dados.
 Durante os testes, você pode não ter um, mas é obrigatório para entrar em produção.
 
-## Por que este processo é necessário?
+### Por que este processo é necessário?
 
 Com este processo, você pode garantir a segurança dos dados de seus clientes, cumprir os regulamentos ou disposições legais de cada país e conseguir a melhor experiência de compra para seus clientes.
 
 [Confira os termos e condições do Mercado Pago](/developers/pt/guides/resources/legal/terms-and-conditions).
+
+----[mlb]----
+## Receber pagamentos com Pix
+
+A opção de pagamento com Pix só será exibida se houver uma chave Pix cadastrada no Mercado Pago. Caso ainda não tenha criado, [clique aqui]((https://www.youtube.com/watch?v=60tApKYVnkA)) e veja o passo a passo.
+
+------------
 
 ## Considerações adicionais
 

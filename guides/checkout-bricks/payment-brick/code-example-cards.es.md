@@ -1,71 +1,80 @@
-# Code example
+# Ejemplo de código 
 
-To facilitate and optimize your integration process, check below a complete example of the integration with Payment Brick and how, after performing the integration, to send the payment to Mercado Pago.
+Para facilitar y optimizar su proceso de integración, ve a continuación un ejemplo completo de cómo incluir una tarjeta de crédito y débito como medio de pago con Payment Brick y cómo, luego de realizar la integración, enviar el pago a Mercado Pago. 
 
 > CLIENT_SIDE
 >
 > h2
 >
-> Configure the integration
+> Configurar la integración
 
 ```html
-<html>
-    <head>
-<script src="https://sdk.mercadopago.com/js/v2"></script>
-<script>
-  const mp = new MercadoPago('YOUR_PUBLIC_KEY');
-  const bricksBuilder = mp.bricks();
-  const renderPaymentBrick = async (bricksBuilder) => {
-    const settings = {
-      initialization: {
-        amount: 100, // amount of processing to be performed
-      },
-      customization: {
-        paymentMethods: {
-          creditCard: 'all',
-          debitCard: 'all',
-          ticket: 'all',
-          bankTransfer: 'all'
-        },
-      },
-      callbacks: {
-        onReady: () => {
-          // callback called when Brick is ready
-        },
-        onSubmit: ({ paymentType, formData }) => {
-          // callback called when clicking on the data submission button
-          return new Promise((resolve, reject) => {
-            fetch("/processar-pago", {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/json",
-              },
-              body: JSON.stringify(formData)
-            })
-              .then((response) => {
-                // receive payment result
-                resolve();
-              })
-              .catch((error) => {
-                // handle error response when trying to create payment
-                reject();
-              })
-          });
-        },
-        onError: (error) => {
-          // callback called for all Brick error cases
-        },
-      },
-    };
-    window.paymentBrickController = await bricksBuilder.create(
-      'payment',
-      'paymentBrick_container',
-      settings
-    );
-  };
-  renderPaymentBrick(bricksBuilder);
-</script>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Bricks</title>
+</head>
+<body>
+ <div id="paymentBrick_container"></div>
+ <script src="https://sdk.mercadopago.com/js/v2"></script>
+ <script>
+   const mp = new MercadoPago('YOUR_PUBLIC_KEY');
+   const bricksBuilder = mp.bricks();
+   const renderPaymentBrick = async (bricksBuilder) => {
+     const settings = {
+       initialization: {
+         amount: 100, // cantidad de procesamiento a realizar
+       },
+       customization: {
+         paymentMethods: {
+           creditCard: 'all',
+           debitCard: 'all',
+         },
+       },
+       callbacks: {
+         onReady: () => {
+           // callback llamado cuando Brick está listo
+         },
+         onSubmit: ({ paymentType, formData }) => {
+           // callback llamado al hacer clic en el botón de envío de datos
+          
+           if (paymentType === 'credit_card' || paymentType === 'debit_card') {
+             return new Promise((resolve, reject) => {
+               fetch("/processar-pago", {
+                 method: "POST",
+                 headers: {
+                   "Content-Type": "application/json",
+                 },
+                 body: JSON.stringify(formData)
+               })
+                 .then((response) => {
+                   // recibir el resultado del pago
+                   resolve();
+                 })
+                 .catch((error) => {
+                   // manejar la respuesta de error al intentar crear el pago
+                   reject();
+                 })
+             });
+           }
+         },
+         onError: (error) => {
+           // callback solicitado para todos los casos de error de Brick
+         },
+       },
+     };
+     window.paymentBrickController = await bricksBuilder.create(
+       'payment',
+       'paymentBrick_container',
+       settings
+     );
+   };
+   renderPaymentBrick(bricksBuilder);
+ </script>
+</body>
 </html>
 ```
 
@@ -73,12 +82,12 @@ To facilitate and optimize your integration process, check below a complete exam
 >
 > h2
 >
-> Payment submission to Mercado Pago
+> Envía el pago a Mercado Pago
 
 [[[
 ```php
 ===
-You can find payment status in _status_ value.
+Puedes encontrar el estado del pago en el valor _status_.
 ===
 <?php
     require_once 'vendor/autoload.php';
@@ -115,7 +124,7 @@ You can find payment status in _status_ value.
 ```
 ```node
 ===
-You can find payment status in _status_ value.
+Puedes encontrar el estado del pago en el valor _status_.
 ===
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken("YOUR_ACCESS_TOKEN");
@@ -131,7 +140,7 @@ mercadopago.payment.save(req.body)
 ```
 ```java
 ===
-You can find payment status in _status_ value.
+Puedes encontrar el estado del pago en el valor _status_.
 ===
 
 PaymentClient client = new PaymentClient();
@@ -160,7 +169,7 @@ client.create(paymentCreateRequest);
 ```
 ```ruby
 ===
-You can find payment status in _status_ value.
+Puedes encontrar el estado del pago en el valor _status_.
 ===
 require 'mercadopago'
 sdk = Mercadopago::SDK.new('YOUR_ACCESS_TOKEN')
@@ -189,7 +198,7 @@ puts payment
 ```
 ```csharp
 ===
-You can find payment status in _status_ value.
+Puedes encontrar el estado del pago en el valor _status_.
 ===
 using System;
 using MercadoPago.Client.Common;
@@ -226,7 +235,7 @@ Console.WriteLine(payment.Status);
 ```
 ```python
 ===
-You can find payment status in _status_ value.
+Puedes encontrar el estado del pago en el valor _status_.
 ===
 import mercadopago
 sdk = mercadopago.SDK("ACCESS_TOKEN")
@@ -254,7 +263,7 @@ print(payment)
 ```
 ```curl
 ===
-You can find payment status in _status_ value.
+Puedes encontrar el estado del pago en el valor _status_.
 ===
 curl -X POST \
     -H 'accept: application/json' \
@@ -276,7 +285,7 @@ curl -X POST \
 ```
 ]]]
 
-### Response
+### Respuesta
 
 ```json
 {
@@ -293,19 +302,3 @@ curl -X POST \
     ...
 }
 ```
-
-> PREV_STEP_CARD_EN
->
-> Requirements to go to production
->
-> Check what requirements are needed to go into production.
->
-> [Requirements to go to production](/developers/en/docs/checkout-bricks/payment-brick/integration-test/go-to-production-requirements)
-
-> NEXT_STEP_CARD_EN 
->
-> Customers & Cards
->
-> Check how to configure the Customers & Cards functionality, which allows the use of cards saved in payments on your website.
->
-> [Customers & Cards](/developers/en/docs/checkout-bricks/payment-brick/additional-customization/customers-cards) 
