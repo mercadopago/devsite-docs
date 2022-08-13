@@ -6,13 +6,9 @@ Para configurar a integração do Payment Brick para receber pagamentos com outr
 2. [Incluir e configurar a biblioteca MercadoPago.js](#bookmark_incluir_e_configurar_a_biblioteca_mercadopago.js)
 3. [Instanciar brick](#bookmark_instanciar_brick)
 4. [Renderizar brick](#bookmark_renderizar_brick)
-5. [Gerenciar outros meios de pagamento]()
+5. [Gerenciar outros meios de pagamento](#bookmark_gerenciar_outros_meios_de_pagamento)
 
 > Os passos são realizados no back-end ou no front-end. As pills **Client-Side** e **Server-Side** localizadas imediatamentamente ao lado do título te ajudam a identificar qual passo é realizado em qual instância. <br/></br>
-> <br/></br>
-> Para integrar pagamentos via Pix, siga as etapas abaixo, mas caso você já tenha integrado pagamentos via cartão, inicie a integração a partir da etapa Adicionar formulário de pagamento."
-
-> E, para ajudar, preparamos um [exemplo de codigo](/developers/pt/docs/checkout-bricks/payment-brick/code-example-other-payments-methods) completo da configuração do Payment Brick, que você pode usar como modelo.
 
 > CLIENT_SIDE
 >
@@ -150,7 +146,7 @@ O resultado de renderizar o brick deve ser como na imagem abaixo:
 >
 > Para um controle eficaz do Brick, a função enviada no `onSubmit` deve sempre retornar uma Promise. Chame o `resolve()` apenas se o processamento em seu backend ocorreu com sucesso. Chame o `reject()` caso algum erro ocorra. Isso fará com que o brick permita o preenchimento dos campos novamente e viabilize uma nova tentativa de pagamento. Ao chamar o método `resolve()` dentro da Promise do `onSubmit`, o brick não permite novos pagamentos. Caso queira realizar um novo pagamento, deve-se criar uma nova instância do Brick.
 
- CLIENT_SIDE 
+> CLIENT_SIDE 
 >
 > h2
 >

@@ -6,8 +6,8 @@ Para configurar a integração do Payment Brick para receber pagamentos com cart
 2. [Incluir e configurar a biblioteca MercadoPago.js](#bookmark_incluir_e_configurar_a_biblioteca_mercadopago.js)
 3. [Instanciar brick](#bookmark_instanciar_brick)
 4. [Renderizar brick](#bookmark_renderizar_brick)
-5. [Gerenciar cartões de crédito e débito]()
-6. [Incluir cartões salvos]()
+5. [Gerenciar cartões de crédito e débito](#bookmark_gerenciar_cartões_de_crédito_e_débito)
+6. [Incluir cartões salvos](#bookmark_incluir_cartões_salvos)
 
 > Os passos são realizados no back-end ou no front-end. As pills **Client-Side** e **Server-Side** localizadas imediatamentamente ao lado do título te ajudam a identificar qual passo é realizado em qual instância. <br/></br>
 > <br/></br>

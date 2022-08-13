@@ -6,11 +6,9 @@ Para configurar a integração do Payment Brick para receber pagamentos com Pix 
 2. [Incluir e configurar a biblioteca MercadoPago.js](#bookmark_incluir_e_configurar_a_biblioteca_mercadopago.js)
 3. [Instanciar brick](#bookmark_instanciar_brick)
 4. [Renderizar brick](#bookmark_renderizar_brick)
-5. [Gerenciar pagamentos com Pix]()
+5. [Gerenciar pagamentos com Pix](#bookmark_gerenciar_pagamentos_com_pix)
 
-> Os passos são realizados no back-end ou no front-end. As pills **Client-Side** e **Server-Side** localizadas imediatamentamente ao lado do título te ajudam a identificar qual passo é realizado em qual instância. <br/></br>
-> <br/></br>
-> E, para ajudar, preparamos um [exemplo de codigo](/developers/pt/docs/checkout-bricks/payment-brick/code-example-pix) completo da configuração do Payment Brick, que você pode usar como modelo.
+> Os passos são realizados no back-end ou no front-end. As pills **Client-Side** e **Server-Side** localizadas imediatamentamente ao lado do título te ajudam a identificar qual passo é realizado em qual instância.
 
 > CLIENT_SIDE
 >

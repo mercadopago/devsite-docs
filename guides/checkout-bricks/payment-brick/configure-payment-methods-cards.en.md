@@ -6,8 +6,8 @@ To configure Payment Brick integration to receive payments with credit and debit
 2. [Include and configure MercadoPago.js library](#bookmark_include_and_configure_mercadopago.js_library)
 3. [Instantiate brick](#bookmark_instantiate_brick)
 4. [Render brick](#bookmark_render_brick)
-5. [Manage credit and debit cards]()
-6. [Include saved cards]()
+5. [Manage credit and debit cards](#bookmark_manage_credit_and_debit_cards)
+6. [Include saved cards](#bookmark_include_saved_cards)
 
 > The steps are performed on the backend or frontend. The **Client-Side** and **Server-Side** pills located immediately next to the title help you to identify which step is performed in which instance. <br/></br>
 > <br/></br>

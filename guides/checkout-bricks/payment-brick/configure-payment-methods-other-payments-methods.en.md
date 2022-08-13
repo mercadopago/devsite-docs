@@ -6,11 +6,9 @@ To configure Payment Brick integration to receive payments with other payment me
 2. [Include and configure MercadoPago.js library](#bookmark_include_and_configure_mercadopago.js_library)
 3. [Instantiate brick](#bookmark_instantiate_brick)
 4. [Render brick](#bookmark_render_brick)
-5. [Manage other payment methods]()
+5. [Manage other payment methods](#bookmark_manage_other_payment_methods)
 
 > The steps are performed on the backend or frontend. The **Client-Side** and **Server-Side** pills located immediately next to the title help you to identify which step is performed in which instance. <br/></br>
-> <br/></br>
-> And, to help, we have prepared a complete [code example](/developers/en/docs/checkout-bricks/payment-brick/code-example-other-payments-methods) that you can use as a template.
 
 > CLIENT_SIDE
 >
