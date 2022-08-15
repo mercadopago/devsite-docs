@@ -1,6 +1,6 @@
 Se requieren cuentas de prueba para verificar que el proceso de incorporación se realizó correctamente. Tienen las mismas características que una cuenta real de Mercado Pago, lo que te permite probar el funcionamiento de las integraciones que estás desarrollando.
 
-Para realizar la prueba, debe tener al menos dos cuentas:
+Para realizar la prueba, debes tener al menos dos cuentas:
 
 * **Usuario/Vendedor**: cuenta requerida para **configurar la aplicación y las credenciales de facturación**. Esta es su cuenta de usuario.
 * **Comprador**: cuenta necesaria para **probar el proceso de compra**.
