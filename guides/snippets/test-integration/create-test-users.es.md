@@ -9,7 +9,7 @@ Además de estas cuentas, también es importante utilizar las [tarjetas de prueb
 
 ![testuser](test-user/test-user-admin-es.gif)
 
-Para crear cuentas y probar cómo funcionan las integraciones, siga los pasos a continuación.
+Para crear cuentas y probar cómo funcionan las integraciones, sigue los pasos a continuación.
 
 1. En [Devsite](/developers/es/docs), acceda al menú **Tus integraciones > Cuentas de prueba** y haz clic en el botón **Crear cuenta de prueba**.
 2. En la pantalla "Crear nueva cuenta", ingrese una descripción para la identificación de la cuenta. Ejemplo: "Vendedor - Tienda 1".
