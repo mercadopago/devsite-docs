@@ -10,13 +10,6 @@ Once the request –with all the collected information– is in your backend, it
 
 For this to work, you should configure your [private key](/developers/en/guides/additional-content/credentials/credentials). Also, to interact with our APIs, you should use [Mercado Pago official SDK](/developers/en/guides/sdks-v2/official/landing).
 
-> The onSubmit callback contains all the necessary data for a payment creation, however, if you wish, it is possible to include additional details, which can facilitate the purchase recognition by the payer, and increase the payment approval rate. </br> 
-> <br/> </br> 
-> To do that, add the relevant fields to the recieved object, contained in the Brick's onSubmit callback.
-Some of these fields are: `description` (this field can be shown in created tickets) and `external_reference` (id of the purchase in your website, which eases the purchase recognition for the buyer). It is also possible to add complementary buyer's data. </br> 
-> <br/> </br> 
-> Check [API References](/developers/en/reference/payments/_payments/post) to learn about all the available fields for full payments.
-
 [[[
 ```php
 ===
@@ -235,3 +228,10 @@ curl -X POST \
     ...
 }
 ```
+
+> The onSubmit callback contains all the necessary data for a payment creation, however, if you wish, it is possible to include additional details, which can facilitate the purchase recognition by the payer, and increase the payment approval rate. <br/></br>
+> <br/></br>
+> To do that, add the relevant fields to the recieved object, contained in the Brick's onSubmit callback.
+Some of these fields are: `description` (this field can be shown in created tickets) and `external_reference` (id of the purchase in your website, which eases the purchase recognition for the buyer). It is also possible to add complementary buyer's data. <br/></br>
+> <br/></br>
+> Check [API References](/developers/en/reference/payments/_payments/post) to learn about all the available fields for full payments.
