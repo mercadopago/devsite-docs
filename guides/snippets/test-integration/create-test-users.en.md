@@ -11,7 +11,7 @@ To create accounts and test how the integrations work, follow the steps below.
 
 1. In [Devsite](/developers/en/docs), access the menu **Your Integrations > Test Accounts** and click on the **Create Test Account** button.
 2. On the "Create New Account" screen, enter a description for the account identification. Example: "Salesperson - store 1".
-3. Next, select the **country of operation** for the account. This information cannot be edited later and, in addition, Buyer and Seller users must be from the same country.
+3. Next, select the **country of operation** for the account. This information **cannot be edited later** and, in addition, Buyer and Seller users must be from the same country.
 4. Fill in a **fictitious amount of money** that will serve as a reference for you to test your applications. This amount will appear as a balance in the test user's Mercado Pago account and can be used to simulate payments, as well as with a credit card.
 5. Click **Create Test Account**.
 

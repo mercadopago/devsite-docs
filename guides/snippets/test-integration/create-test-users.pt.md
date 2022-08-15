@@ -13,7 +13,7 @@ Para criar contas e testar o funcionamento das integrações, siga os passos aba
 
 1. No [Devsite](/developers/pt/docs), acesse o menu **Suas integrações > Contas de teste** e clique no botão **Criar conta de teste**.
 2. Na tela "Criar nova Conta", insira uma descrição para identificação da conta. Exemplo: "Vendedor - loja 1".
-3. Em seguida, selecione o **país de operação** da conta. Essa informação não poderá ser editada posteriormente e, além disso, os usuários Comprador e Vendedor precisam ser do mesmo país.
+3. Em seguida, selecione o **país de operação** da conta. Essa informação **não poderá ser editada posteriormente** e, além disso, os usuários Comprador e Vendedor precisam ser do mesmo país.
 4. Preencha com um **valor fictício em dinheiro** que servirá como referência para você testar suas aplicações. Esse valor aparecerá como saldo na conta do Mercado Pago do usuário de teste e poderá ser utilizado para simulação de pagamentos, assim como com cartão de crédito.
 5. Clique em **Criar conta de teste**. 
 
