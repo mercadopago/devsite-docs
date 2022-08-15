@@ -5,7 +5,7 @@ To perform the test, you must have at least two accounts:
 * **User/Seller**: account required to **configure application and billing credentials**. This is your user account.
 * **Buyer**: account required to **test the purchase process**.
 
-In addition to these accounts, it is also important to use [test cards](/developers/en/guides/additional-content/testing/test-cards) to test payment integration and simulate the purchase process, as well as ** balance in the test user's Mercado Pago account**. See more details below.
+In addition to these accounts, it is also important to use [test cards](/developers/en/guides/additional-content/testing/test-cards) to test payment integration and simulate the purchase process, as well as **balance in the test user's Mercado Pago account**. See more details below.
 
 To create accounts and test how the integrations work, follow the steps below.
 
