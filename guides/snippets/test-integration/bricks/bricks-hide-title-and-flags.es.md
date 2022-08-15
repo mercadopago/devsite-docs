@@ -1,3 +1,4 @@
+
 | - | Brick |
 | --- | --- |
 | Momento de personalización  |  Al renderizar el brick  |

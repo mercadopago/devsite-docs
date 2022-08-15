@@ -1,3 +1,4 @@
+
 | - | Brick |
 | --- | --- |
 | Customization moment  | When rendering the brick  |
