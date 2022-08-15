@@ -10,6 +10,13 @@ Ya estando en tu backend con toda la información recolectada, es momento de env
 
 Ten en cuenta que para que este paso funcione es necesario que configures tu [clave privada](/developers/es/guides/additional-content/credentials/credentials) y que para interactuar con nuestras APIs recomendamos utilizar la [SDK oficial de Mercado Pago](/developers/es/guides/sdks-v2/official/landing).
 
+> El callback onSubmit de Brick contiene todos los datos necesarios para crear un pago; sin embargo, si lo desea, puede incluir detalles adicionales que pueden facilitar el reconocimiento de la compra por parte del comprador y aumentar la tasa de aprobación del pago. </br> 
+> <br/> </br> 
+> Para hacer esto, agregue campos relevantes al objeto enviado, que viene en la respuesta del callback onSubmit de Brick.
+Algunos de estos campos son: `description` (este campo se puede mostrar en los tickets emitidos) y `external_reference` (id de compra en su sitio web, lo que permite un reconocimiento de compra más fácil). También es posible añadir datos adicionales sobre el comprador. </br> 
+> <br/> </br> 
+> Conoce todos los campos disponibles para realizar un pago completo en las [Referencias de API](/developers/es/reference/payments/_payments/post).
+
 [[[
 ```php
 ===
@@ -229,4 +236,3 @@ curl -X POST \
 }
 ```
 
-> Conoce todos los campos disponibles para realizar un pago completo en las [Referencias de API](/developers/es/reference/payments/_payments/post).
