@@ -31,4 +31,4 @@ Para crear cuentas y probar cómo funcionan las integraciones, sigue los pasos a
 >
 > Importante
 >
-> Para editar la **Idemntificación de cuenta** o **agregar más dinero ficticio** para probar sus aplicaciones, haz clic en los **3 puntos verticales** al final de la fila de la tabla y seleccione la opción **Editar datos**.
+> Para editar la **Identificación de cuenta** o **agregar más dinero ficticio** para probar sus aplicaciones, haz clic en los **3 puntos verticales** al final de la fila de la tabla y seleccione la opción **Editar datos**.
