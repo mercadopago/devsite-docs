@@ -24,7 +24,7 @@ Para crear cuentas y probar cómo funcionan las integraciones, sigue los pasos a
 * **País**: lugar de origen de la cuenta seleccionada en tu registro.
 * **Identificación de cuenta**: descripción para la identificación de la cuenta de prueba.  
 * **Usuario**: nombre de usuario de la cuenta de prueba generado automáticamente. Este nombre de usuario se utiliza para iniciar sesión con el usuario de prueba.
-* **Contraseña**: contraseña de acceso a la cuenta de usuario de prueba generada automáticamente. Para generar una nueva contraseña, haz clic en los 3 puntos verticales al final de la fila de la tabla y seleccione la opción **Generar nueva contraseña**.
+* **Contraseña**: contraseña de acceso a la cuenta de usuario de prueba generada automáticamente. Para generar una nueva contraseña, haz clic en los 3 puntos verticales al final de la fila de la tabla y selecciona la opción **Generar nueva contraseña**.
 * **Creado en**: fecha en que se creó la cuenta de prueba.
 
 > NOTE
