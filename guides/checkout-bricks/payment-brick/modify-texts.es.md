@@ -1,2 +1,1 @@
-
 [TXTSNIPPET][/guides/snippets/test-integration/bricks/bricks-modify-texts]
