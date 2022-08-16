@@ -1,38 +1,58 @@
----
-content_section_with_media: 
- - title: Checkout Bricks
- - message: Checkout Bricks is a set of UI modules that come front-end ready and optimized for better usability and conversion. Each Brick can be used independently or together, forming the experience of a complete checkout.
- - media_image: /subscriptions/mini-landing-3-pt.png
----
+--- mini_landing_separator ---
 
 ---
-bullet_section_with_media: 
- - title: 
- - type: normal
- - message: It offers a transparent payment experience with the possibility of customization according to each store, it is secure since the payment information is processed through Mercado Pago and it has a simpler integration process, minimizing production and development times.
- - image: /checkout-bricks/cho-bricks-landing-v4.png
----
-
----
-bullet_section_with_media: 
+future_product_avaible:
  - title: Bricks
- - type: reversed
- - message: Know all Checkout Bricks modules and their availability.
- - benefit_title: Card Payment Brick - New
- - benefit_message: Offer credit and debit card payments with the ability to save card details for future purchases.
- - benefit_title: Payment Brick - Soon
- - benefit_message: Offer different payment methods from which your customers can choose.
- - benefit_title: Wallet Brick - Soon
- - benefit_message: Link digital wallets and allow logged payments. 
- - benefit_title: User Info Brick - Soon
- - benefit_message: Collect the data of your clients and infer those that will be needed in the purchase process.
- - benefit_title: Shipping Brick - Soon
- - benefit_message: Collect shipping data from your customers and display the available delivery options and their benefits.
- - benefit_title: Review & Confirm Brick - Soon
- - benefit_message: Shows a summary of the entire purchase process, with the most relevant information, so that your customers can review before confirming the purchase.
- - benefit_title: Status Screen Brick - Soon
- - benefit_message: Inform your customers of the results of the purchase process, after making the payment. 
- - image: /checkout-bricks/cho-bricks-landing-v5.png
+ - description: Conheça todos os módulos do Checkout Bricks e as suas disponibilidades.
+ - card_avaible: true
+ - card_icon: Card
+ - card_title: Card Payment Brick
+ - card_description: Ofereça pagamentos com cartão de crédito e débito com a capacidade de salvar detalhes do cartão para compras futuras.
+ - card_link: /developers/es/docs/wallet-connect/landing
+ - card_linkDescription: Saber mais
+ - card_pillText: DISPONÍVEL
+ - card_avaible: false
+ - card_icon: Pay
+ - card_title: Payment Brick
+ - card_description: Ofereça diferentes métodos de pagamento para os clientes escolherem.
+ - card_link:
+ - card_linkDescription:
+ - card_pillText: EM BREVE
+ - card_avaible: false
+ - card_icon: Wallet
+ - card_title: Wallet Brick
+ - card_description: Vincule carteiras digitais e permita pagamentos registrados.
+ - card_link:
+ - card_linkDescription:
+ - card_pillText: EM BREVE
+ - card_avaible: false
+ - card_icon: User
+ - card_title: User Info Brick
+ - card_description: Colete os dados dos clientes para deduzir aqueles que serão necessários no processo de compra.
+ - card_link:
+ - card_linkDescription:
+ - card_pillText: EM BREVE
+ - card_avaible: false
+ - card_icon: Truck
+ - card_title: Shipping Brick
+ - card_description: Colete dados de envio dos clientes e exiba as opções de entrega disponíveis, além de seus benefícios.
+ - card_link:
+ - card_linkDescription:
+ - card_pillText: EM BREVE
+ - card_avaible: false
+ - card_icon: Check
+ - card_title: Review & Confirm Brick
+ - card_description: Exiba um resumo de todo o processo de compra com as informações mais relevantes, assim os clientes poderão analisar antes de confirmar a compra.
+ - card_link:
+ - card_linkDescription:
+ - card_pillText: EM BREVE
+ - card_avaible: false
+ - card_icon: Loading
+ - card_title: Status Screen Brick
+ - card_description: Informe os clientes dos resultados do processo de compra após efetuar o pagamento.
+ - card_link:
+ - card_linkDescription:
+ - card_pillText: EM BREVE
 ---
 
 --- mini_landing_separator ---
