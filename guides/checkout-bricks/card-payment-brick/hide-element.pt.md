@@ -1,4 +1,34 @@
-| - | Brick |
+> CLIENT_SIDE
+>
+> h1
+>
+> Ocultar título e bandeiras
+
+| Brick | Card Payment Form |
+|--- |--- |
+| Momento de customização | Ao renderizar brick |
+| Propriedade | customization.hideFormTitle |
+| Tipo | Boolean |
+| Observações | Quando **true**, oculta a linha de título e as bandeiras aceitas. |
+
+```javascript
+const settings = {
+   ...,
+   customization: {
+       visual: {
+           hideFormTitle: true
+       }
+   }
+}
+```
+
+> CLIENT_SIDE
+>
+> h1
+>
+> Ocultar botão de pagamento
+
+| Brick | Card Payment Form |
 |--- |--- |
 | Momento de customização | Ao renderizar brick |
 | Propriedade | customization.visual.hidePaymentButton |

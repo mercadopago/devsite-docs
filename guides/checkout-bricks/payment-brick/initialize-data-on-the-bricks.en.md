@@ -8,7 +8,6 @@
 
 In the form displayed for payment by card, you can start with the document and email fields already filled in. For this, it is necessary to pass the following configuration in the brick's initialization object.
 
-[[[
 ```javascript
 settings = {
   ...,
@@ -26,4 +25,3 @@ settings = {
 }
 }
 ```
-]]]

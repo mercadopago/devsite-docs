@@ -28,7 +28,7 @@ Deberás crear un container para definir dónde se colocará el brick en la pant
 > El valor que se muestra en la propiedad `id` a continuación es solo un ejemplo y puede ser alterado, pero siempre debe coincidir con el `id` indicado en la renderización.
 
 ```html
-  <div id="PaymentBrick_container"></div>
+  <div id="paymentBrick_container"></div>
 ```
 
 > CLIENT_SIDE
@@ -86,8 +86,6 @@ Una vez instanciado el builder, nuestro brick puede ser renderizado y tener toda
 Para renderizar el brick, inserta el código a continuación del paso anterior y completa los atributos de acuerdo con los comentarios destacados en este mismo código.
 
 ```javascript
-const mp = new MercadoPago('YOUR_PUBLIC_KEY');
-const bricksBuilder = mp.bricks();
 const renderPaymentBrick = async (bricksBuilder) => {
  const settings = {
    initialization: {
@@ -156,9 +154,8 @@ El resultado de renderizar el brick debe ser como la imagen de abajo:
 >
 > Administrar tarjetas de crédito y débito
 
-Para incluir la tarjeta de crédito como medio de pago, basta con utilizar la siguiente configuración:
+El fragmento de código responsable de incluir la tarjeta de crédito y débito como medio de pago es el siguiente:
 
-[[[
 ```Javascript
 settings = {
   ...,
@@ -173,13 +170,11 @@ settings = {
 }
 }
 ```
-]]]
 
 Las propiedades `creditCard` y `debitCard` aceptan 2 tipos de variables, `string` y `string[]`. En el ejemplo anterior se aceptarán pagos con tarjetas de crédito y débito de cualquier bandera aceptada por Mercado Pago.
 
 Si desea seleccionar las banderas, en lugar de la string `all`, puede pasar un array con solo las ID deseadas. Como en el ejemplo a continuación, donde solo se aceptarán tarjetas de crédito **MASTER** y **VISA** y tarjetas de débito **ELO**.
 
-[[[
 ```Javascript
 settings = {
   ...,
@@ -194,7 +189,8 @@ settings = {
 }
 }
 ```
-]]]
+
+Para obtener una lista completa de ID que se pueden pasar dentro del array, consulte la API [Obtener medios de pago](/developers/es/reference/payment_methods/_payment_methods/get) en nuestra referencia de API.
 
 > NOTE
 >

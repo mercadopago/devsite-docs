@@ -28,7 +28,7 @@ You will need to create a container to define where the brick will be placed on 
 > The value shown in the `id` property below is just an example and can be altered, however, it should always match the `id` indicated in the render.
 
 ```html
-  <div id="PaymentBrick_container"></div>
+  <div id="paymentBrick_container"></div>
 ```
 
 > CLIENT_SIDE
@@ -87,7 +87,6 @@ To render the brick, insert the following code after the previous step and fill 
 
 ```javascript
 const renderPaymentBrick = async (bricksBuilder) => {
-
   const settings = {
     initialization: {
       amount: 100, //value to be charged
@@ -144,9 +143,8 @@ The result of rendering the brick should be like the image below:”
 >
 > Manage credit and debit cards
 
-To include the credit card as a means of payment, just use the following configuration:
+The code snippet responsible for including the credit and debit card as a means of payment is as follows:
 
-[[[
 ```Javascript
 settings = {
   ...,
@@ -161,13 +159,11 @@ settings = {
 }
 }
 ```
-]]]
 
 The `creditCard` and `debitCard` properties accept 2 types of variables, `string` and `string[]`. In the example above, payments with credit and debit cards of any brand accepted by Mercado Pago will be accepted.
 
 If you want to select the flags, instead of the string `all`, you can pass an array with just the desired IDs. As in the example below, where only **MASTER** and **VISA** credit cards and **ELO** debit cards will be accepted.
 
-[[[
 ```Javascript
 settings = {
   ...,
@@ -182,7 +178,8 @@ settings = {
 }
 }
 ```
-]]]
+
+For a complete list of IDs that can be passed within the array, check the [Get Payment Methods](/developers/en/reference/payment_methods/_payment_methods/get) API in our API Reference.
 
 > NOTE
 >

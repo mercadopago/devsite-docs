@@ -1,9 +1,39 @@
-| - | Brick |
+> CLIENT_SIDE
+>
+> h1
+>
+> Hide title and flags
+
+| Brick  | Card Payment Form  |
 | --- | --- |
-| Momento de personalización  |  Al renderizar el brick  |
-| Propiedad  | customization.visual.hidePaymentButton  |
-| Tipo  | Boolean  |
-| Observaciones  | Cuando true, el botón de envío del formulario no se muestra y pasa a ser necesario usar la función getCardFormData para obtener los datos del formulario (ver el ejemplo a continuación).  |
+| Customization moment  | When rendering the brick  |
+| Property  | customization.hideFormTitle  |
+| Type  | Boolean  |
+| Comments  | When **true**, hides the title line and accepted flags.  |
+
+```javascript
+const settings = {
+   ...,
+   customization: {
+       visual: {
+           hideFormTitle: true
+       }
+   }
+}
+```
+
+> CLIENT_SIDE
+>
+> h1
+>
+> Hide payment button
+
+| Brick  | Card Payment Form  |
+| --- | --- |
+| Customization moment  | When rendering the brick  |
+| Property  | customization.visual.hidePaymentButton  |
+| Type  | Boolean  |
+| Comments  | When true, the form submit button is not displayed and it becomes necessary to use the getCardFormData function to get the form data (see example below). |
 
 ```javascript
 const settings = {
@@ -42,7 +72,7 @@ function createPayment(){
             })
         })
         .catch((error) => {
-            // tratamiento de error al intentar llamar getFormData()
+            // error handling when calling getFormData()
         });
 };
 ```

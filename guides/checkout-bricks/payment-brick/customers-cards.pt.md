@@ -4,7 +4,7 @@
 >
 > Incluir cartões salvos
 
-Com o Payment Brick você poderá utilizar a funcionalidade Customers & Cards, que permite o uso de cartões salvos nos pagamentos em seu site. Para que o Payment Brick possa exibir os cartões salvos de um determinado comprador, é preciso enviar ao Brick no momento de sua inicialização o ID do cliente e dos cartões, como no exemplo abaixo.
+Para que o Payment Brick possa exibir os cartões salvos de um determinado comprador, é preciso enviar ao Brick no momento de sua inicialização, o ID do customer e os IDs dos cards, como no exemplo abaixo.
 
 [[[
 ```Javascript

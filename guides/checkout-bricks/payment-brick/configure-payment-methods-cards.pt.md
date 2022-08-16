@@ -28,7 +28,7 @@ Você vai precisar criar um container para definir o local que o brick será ins
 > O valor exibido na propriedade `id` a seguir é apenas um exemplo, e pode ser alterado, mas deve sempre corresponder ao `id` indicado na renderização.
 
 ```html
-  <div id="PaymentBrick_container"></div>
+  <div id="paymentBrick_container"></div>
 ```
 
 > CLIENT_SIDE
@@ -85,8 +85,6 @@ Uma vez instanciado, o brick pode ser renderizado e ter todas as suas configura�
 Para renderizar o brick, insira o código abaixo após o passo anterior e preencha os atributos conforme os comentários destacados neste mesmo código.
 
 ```javascript
-const mp = new MercadoPago('YOUR_PUBLIC_KEY');
-const bricksBuilder = mp.bricks();
 const renderPaymentBrick = async (bricksBuilder) => {
  const settings = {
    initialization: {
@@ -155,9 +153,8 @@ O resultado de renderizar o brick deve ser como na imagem abaixo:
 >
 > Gerenciar cartões de crédito e débito
 
-Para incluir o cartão de crédito como meio de pagamento, basta utilizar a seguinte configuração:
+O trecho de código responsável por incluir o cartão de crédito e débito como meio de pagamento é o seguinte:
 
-[[[
 ```Javascript
 settings = {
   ...,
@@ -172,13 +169,11 @@ settings = {
 }
 }
 ```
-]]]
 
 As propriedades `creditCard` e `debitCard` aceitam 2 tipos de variável, `string` e `string[]`. No exemplo acima, serão aceitos pagamentos com cartões de crédito e débito de qualquer bandeira aceita pelo Mercado Pago.
 
 Caso queira selecionar as bandeiras, ao invés da string `all`, você pode passar um array apenas com os IDs desejados. Como no exemplo abaixo, onde apenas serão aceitos os cartões de crédito **MASTER** e **VISA** e os cartões de débito **ELO**.
 
-[[[
 ```Javascript
 settings = {
   ...,
@@ -193,7 +188,8 @@ settings = {
 }
 }
 ```
-]]]
+
+Para uma lista completa dos IDs que podem ser passados dentro do array, consulte a API de [Obter meios de pagamento](/developers/pt/reference/payment_methods/_payment_methods/get) em nossa API Reference.
 
 > NOTE
 >

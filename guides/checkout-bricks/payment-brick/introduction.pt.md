@@ -18,7 +18,7 @@ O layout do Payment Brick foi construído com base nas melhores práticas de UX 
 >
 > Os bricks foram criados para atender não somente necessidades técnicas de implementação e segurança, mas também para prover a melhor experiência ao comprador. Customizar um brick pode mudar drasticamente a experiência do comprador. Nossa recomendação é que você sempre faça uso do brick com a menor quantidade possível de customizações adicionais para garantir sempre a melhor experiência.
 
-### Cartões
+### Campos do formulário de cartão
 
 | Seção | Elemento | Características | Observações |
 |---|---|---|---|

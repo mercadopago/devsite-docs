@@ -4,11 +4,7 @@
 >
 > Incluir tarjetas guardadas
 
-Payment Brick permite al integrador utilizar la funcionalidad Customers & Cards, que permite el uso de tarjetas guardadas en pagos en su sitio web.
-
-## Incluyendo tarjetas guardadas en Payment Brick
-
-Para que Payment Brick pueda mostrar las tarjetas guardadas de un determinado comprador, es necesario enviar a Brick en el momento de su inicialización, la identificación del cliente y las tarjetas, como en el ejemplo a continuación.
+Para que Payment Brick pueda mostrar las tarjetas guardadas de un determinado comprador, es necesario enviar a Brick en el momento de su inicialización, la identificación del cliente y las identificaciones de las tarjetas, como en el ejemplo a continuación.
 
 [[[
 ```Javascript

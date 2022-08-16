@@ -8,7 +8,6 @@
 
 En el formulario que se muestra para el pago con tarjeta, puedes empezar con los campos de documento y correo electrónico ya rellenados. Para eso, es necesario pasar la siguiente configuración en el objeto de inicialización del brick.
 
-[[[
 ```javascript
 settings = {
   ...,
@@ -26,4 +25,3 @@ settings = {
 }
 }
 ```
-]]]

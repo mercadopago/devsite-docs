@@ -4,11 +4,7 @@
 >
 > Include saved cards
 
-Payment Brick allows the integrator to use the Customers & Cards functionality, which allows the use of cards saved in payments on their website.
-
-## Including cards saved in Payment Brick
-
-In order for Payment Brick to be able to display the saved cards of a certain buyer, it is necessary to send to Brick at the time of its initialization, the customer ID and the cards, as in the example below.
+In order for Payment Brick to be able to display the saved cards of a given buyer, it is necessary to send the customer ID and card IDs to Brick at the time of its initialization, as in the example below.
 
 [[[
 ```Javascript
