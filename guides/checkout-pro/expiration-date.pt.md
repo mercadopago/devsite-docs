@@ -9,7 +9,7 @@ Data de vencimento é o período máximo definido para realização de um pagame
 > O prazo de compensação é entre 1 e 2 dias úteis de acordo com o meio de pagamento escolhido. Por isso, recomendamos definir a data de expiração com no mínimo 3 dias de intervalo para garantir a realização do pagamento. Além disso, caso o pagamento seja realizado depois da data de expiração, o valor será estornado na conta Mercado Pago do pagador.
 
 
-Para alterar a data de vencimento, envie um **POST** com o parâmetro "date_of_expiration" com a data e horário de validade do item ao endpoint [/checkout/preferences](/developers/pt/reference/preferences/_checkout_preferences/post) e execute a requisição. O valor deve seguir o formato ISO 8601 (yyyy-MM-dd'T'HH:mm:ssz)
+Para alterar a data de vencimento, envie um **POST** com o parâmetro "date_of_expiration" com a data e horário de validade do item ao endpoint [/checkout/preferences](/developers/pt/reference/preferences/_checkout_preferences/post) e execute a requisição.
 
 
 [[[

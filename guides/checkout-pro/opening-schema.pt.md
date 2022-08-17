@@ -4,7 +4,7 @@ O esquema de abertura permite definir como o checkout será aberto para o usuár
 
 Contudo, é possível personalizar a abertura e definir o modelo **Redirect**, no qual o Checkout Pro é aberto em uma nova janela redirecionando o comprador à tela de pagamento. 
 
-Para definir o modelo de abertura **redirect**, insira o código HTML abaixo diretamente em seu projeto informando o `init_point` da preferência gerada anteriormente.
+Para definir o modelo de abertura **Redirect**, insira o código HTML abaixo diretamente em seu projeto informando o `init_point` da preferência gerada anteriormente.
 
 [[[
 ```html

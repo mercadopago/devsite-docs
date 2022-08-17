@@ -28,9 +28,9 @@ A integração do Checkout Pro com o Facebook Ads é feita através da API de Pr
 Para integrar o Checkout Pro com o Facebook Ads via API, siga as etapas abaixo ou, se preferir, utilize um dos códigos disponíveis a seguir.
 
 
-1. Envie um POST com o parâmetro "tracks" com os atributos "type" e "values" ao endpoint [/checkout/preferences](/developers/pt/reference/preferences/_checkout_preferences/post).
-2. Em "type" insira 'facebook_ad'.
-3. Em "value" insira o Pixel ID, que pode ser encontrado no painel de gerenciamento de anúncios do Facebook.
+1. Envie um POST com o parâmetro "tracks" com os atributos `type` e `values` ao endpoint [/checkout/preferences](/developers/pt/reference/preferences/_checkout_preferences/post).
+2. Em `type` insira `facebook_ad`.
+3. Em `value` insira o Pixel ID, que pode ser encontrado no painel de gerenciamento de anúncios do Facebook.
 4. Execute a requisição.
 
 [[[
@@ -195,9 +195,9 @@ Para integrar o Checkout Pro com o Google Ads via API, siga as etapas abaixo ou,
 
 
 
-1. Envie o parâmetro "tracks" com os atributos "type", "conversion_id" e "conversion_label" ao endpoint [/checkout/preferences](https://www.mercadopago.com.br/developers/pt/reference/preferences/_checkout_preferences/post). 
-2. Em "type", insira 'google_ad'.
-3.  Em "CONVERSION_ID" e  "CONVERSION_LABEL", insira o seu ID de conversão e o Rótulo de conversão disponíveis na conta do Google Analytics.
+1. Envie o parâmetro `tracks` com os atributos `type`, `conversion_id` e `conversion_label` ao endpoint [/checkout/preferences](/developers/pt/reference/preferences/_checkout_preferences/post). 
+2. Em `type`, insira `google_ad`.
+3. Em `CONVERSION_ID` e `CONVERSION_LABEL`, insira o seu ID de conversão e o Rótulo de conversão disponíveis na conta do Google Analytics.
 4. Execute a requisição.
 
 

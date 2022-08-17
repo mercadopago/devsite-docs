@@ -16,7 +16,7 @@ available_countries: mla, mlb, mlm, mlu, mco, mlc, mpe
 bullet_section_with_media: 
  - type: normal
  - title: Checkout Pro Web e Mobile
- - message: O Checkout Pro pode ser aberto tanto via Desktop, quanto em dispositivos Mobile (Smartphones e Tablets). Para dispositivos mobile, o comprador é redirecionado automaticamente para o aplicativo do Mercado Pago (quando houver aplicativo instalado), garantindo maior agilidade e facilidade no pagamento, sem a necessidade de preenchimento de formulários, o que aumenta as chances de conversão.
+ - message: O Checkout Pro pode ser aberto tanto via Desktop, quanto em dispositivos Mobile (Smartphones e Tablets). Para dispositivos mobile, o comprador é redirecionado automaticamente para o aplicativo do Mercado Pago (quando houver aplicativo instalado), garantindo maior agilidade e facilidade no pagamento, uma vez que não é necessário preencher formulários.
  - image: /wallet-connect/wallet-connect-landing.png
 ---
 
