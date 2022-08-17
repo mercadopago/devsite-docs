@@ -18,7 +18,7 @@ Para instalar el módulo manualmente, sigue los pasos:
 >
 > Después de configurar el Checkout Transparente para recibir pagos, aprenda cómo configurar el envío de correos electrónicos que notificarán al usuario sobre sus transacciones.
 >
-> [Customização de e-mail](/developers/es/docs/prestashop/how-tos/checkout-api/email-customization)
+> [Customização de e-mail](/developers/es/docs/prestashop/how-tos/email-customization)
 ------------
 
 ----[mla, mlm, mpe, mco, mlu, mlc]----
@@ -28,5 +28,5 @@ Para instalar el módulo manualmente, sigue los pasos:
 >
 > Después de configurar el Checkout API para recibir pagos, aprenda cómo configurar el envío de correos electrónicos que notificarán al usuario sobre sus transacciones.
 >
-> [Customização de e-mail](/developers/es/docs/prestashop/how-tos/checkout-api/email-customization)
+> [Customização de e-mail](/developers/es/docs/prestashop/how-tos/email-customization)
 ------------
