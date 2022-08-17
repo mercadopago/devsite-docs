@@ -32,7 +32,7 @@ A continuación explicaremos cómo indicar las URLs que serán notificadas y có
 | `point_integration_wh` | `state_FINISHED`| Intento de pago finalizado |
 | `point_integration_wh` | `state_CANCELED` | Intento de pago cancelado |
 | `point_integration_wh` | `state_ERROR`| Ocurrió un error al procesar el intento de pago |
-| `shipments` | `shipment.updated`| Datos de envío y actualización de pedidos |
+| `delivery` | `delivery.updated`| Datos de envío y actualización de pedidos |
 
 ## Configuración al crear pagos
 
@@ -267,7 +267,7 @@ curl -X POST \
 >
 > Para el tipo `point_integration_wh` el formato de notificación cambia. [Haz clic aquí](/developers/es/guides/mp-point/introduction) para consultar la documentación de **Mercado Pago Point**.
 > <br/>
-> En el caso del evento `shipments`, también tendremos algunos atributos diferentes en la respuesta. Consulte la siguiente tabla para ver estas características.
+> En el caso del evento `delivery`, también tendremos algunos atributos diferentes en la respuesta. Consulte la siguiente tabla para ver estas características.
 
 ```json
 {
@@ -300,11 +300,11 @@ Esto indica que el pago **999999999** fue creado para el usuario **44444** en mo
 | **api_version** | Indica si es una notificación duplicada o no|
 | **action** | Tipo de notificación recibida, indicando si es la actualización de un recurso o bien la creación de un nuevo |
 | **data - id**  | ID del payment o merchant_order |
-| **attempts** (shipments) | Número de veces que se envió una notificación|
-| **received** (shipments) | Fecha de creación del recurso |
-| **resource** (shipments) | Tipo de notificación recibida, indicando si se trata de una actualización de una característica o de la creación de una nueva |
-| **sent** (shipments) | Fecha de envío de la notificación |
-| **topic** (shipments) | Tipo de notificación recibida |
+| **attempts** (delivery) | Número de veces que se envió una notificación|
+| **received** (delivery) | Fecha de creación del recurso |
+| **resource** (delivery) | Tipo de notificación recibida, indicando si se trata de una actualización de una característica o de la creación de una nueva |
+| **sent** (delivery) | Fecha de envío de la notificación |
+| **topic** (delivery) | Tipo de notificación recibida |
 
 4. Si deseas recibir notificaciones solo de Webhook y no de IPN, puedes agregar en el `notification_url` el parámetro`source_news=webhooks`. Por ejemplo: https://www.yourserver.com/notifications?source_news=webhooks
 
@@ -321,6 +321,6 @@ Luego de devolver la notificación y confirmar su recepción, obtendrás la info
 | subscription_preapproval_plan | `https://api.mercadopago.com/preapproval_plan` | [ver documentación](/developers/es/reference/subscriptions/_preapproval_plan/post)  |
 | subscription_authorized_payment | `https://api.mercadopago.com/authorized_payments` | [ver documentación](/developers/es/reference/subscriptions/_authorized_payments_id/get)  |
 | point_integration_wh| - | [ver documentación](/developers/es/guides/mp-point/introduction) |
-| shipments | - | [ver documentación](/developers/es/reference/mp_delivery/_proximity-integration_shipments_shipment_id_accept/put)
+| delivery | - | [ver documentación](/developers/es/reference/mp_delivery/_proximity-integration_shipments_shipment_id_accept/put)
 
 Con esta información podrás realizar las actualizaciones necesarias a tu plataforma, como actualizar un pago aprobado.
