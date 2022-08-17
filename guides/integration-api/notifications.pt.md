@@ -184,22 +184,3 @@ Depois de implementar as notificações e fazer os ajustes necessários, elas te
 }
 ```
 ------------
-
-
-> PREV_STEP_CARD_PT
->
-> Processar pagamentos
->
-> Crie uma intenção de pagamento e atribua-a a um dispositivo Point.
->
-> [Processar pagamentos](/developers/pt/docs/mp-point/integration-configuration/integrate-with-pdv/create-payment-intent)
-
-
-> NEXT_STEP_CARD_PT
->
-> Teste sua integração com segurança
->
-> Use o Simulador Point para testar sua integração.
->
-> [Simulador Point](/developers/pt/docs/mp-point/integration-configuration/integrate-with-pdv/point-simulator)
-

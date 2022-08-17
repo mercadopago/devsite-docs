@@ -31,19 +31,3 @@ The parameters that you can include are:
 > * The fields with an (\*), are mandatory.
 
 In the following [GitHub] article (https://github.com/mercadopago/point-android_integration#deep-linking) you can find more information, as well as a descriptive example.
-
-> PREV_STEP_CARD_EN
->
-> Integrate with POS
->
-> Learn how to integrate Mercado Pago Point into your Point of Sale.
->
-> [Integrate with POS](/developers/en/docs/mp-point/integration-configuration/integrate-with-pdv/introduction)
-
-> NEXT_STEP_CARD_EN
->
-> Integrate via API
->
-> Learn about the steps to integrate Mercado Pago Point via API.
->
-> [Integrate via API](/developers/en/docs/mp-point/integration-configuration/integrate-mobile-devices/integrate-via-api)
