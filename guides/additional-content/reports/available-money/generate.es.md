@@ -1,13 +1,6 @@
 
 # ¿Cómo generar tu reporte de Dinero retirado?
 
-----[mlm, mlb, mla]----
-> WARNING
->
-> Importante
->
-> El reporte de Dinero retirado será deshabilitado desde el 1 de marzo de 2022. Usa el [reporte de Liberaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/introduction) para conciliar las transacciones del dinero disponible en tu cuenta, incluidos tus retiros bancarios.
-------------
 ----[mpe, mlu]----
 > WARNING
 >
@@ -20,7 +13,21 @@
 >
 > Importante
 >
-> A partir del 1 de agosto no podrás crear nuevos reportes **Dinero retirado**. Para seguir llevando el control de todos los retiros y movimientos de tu dinero disponible [usa el reporte Liberaciones.](https://vendedores.mercadolibre[FAKER][URL][DOMAIN]/lleva-el-control-de-tu-dinero-con-el-reporte-de-liberaciones)
+> **A partir del 1 de agosto no podrás crear nuevos reportes Dinero retirado. **. Para seguir llevando el control de todos los retiros y movimientos de tu dinero disponible [usa el reporte Liberaciones.](https://vendedores.mercadolibre[FAKER][URL][DOMAIN]/lleva-el-control-de-tu-dinero-con-el-reporte-de-liberaciones)
+------------
+----[mla]----
+> WARNING
+>
+> Importante
+>
+> A partir del 28 de noviembre no podrás crear nuevos reportes Dinero retirado. Para seguir llevando el control de todos los retiros y movimientos de tu dinero disponible [usá el reporte Liberaciones](https://bit.ly/3JzFPEG)
+------------
+----[mlm]----
+> WARNING
+>
+> Importante
+>
+> A partir del 5 de diciembre no podrás crear nuevos reportes Dinero retirado. Para seguir llevando el control de todos los retiros y movimientos de tu dinero disponible [usa el reporte Liberaciones](https://bit.ly/3QiCD2f)
 ------------
 
 ## Canales de generación
@@ -30,7 +37,7 @@ Existen tres formas de generar un reporte de Dinero retirado:
 | Canales | Descripción |
 | --- | --- |
 | Panel de Mercado Pago | <br/>Es muy simple y rápido. Para generarlo desde tu cuenta de Mercado Pago, ve a [tus Informes](https://www.mercadopago.com.ar/balance/reports) y elige la opción de Reportes.<br/><br/>Sigue el paso a paso para [generar reportes desde el panel](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/available-money/panel).<br/><br/> |
-| Integración vía API | <br/>----[mco, mla, mlb, mlc, mlm]---- Programa la frecuencia de tu reporte según tus necesidades. Puede ser tanto de forma manual como de forma programada.<br/><br/>Lee la documentación para [generar reportes por API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/available-money/api). ------------ ----[mpe, mlu]---- El uso de esta integración está restringida a la consulta y descarga manual de reportes y no permite generar nuevos reportes. ------------ <br/><br/> |
+| Integración vía API | <br/>----[mla, mlb, mlm]---- Programa la frecuencia de tu reporte según tus necesidades. Puede ser tanto de forma manual como de forma programada.<br/><br/>Lee la documentación para [generar reportes por API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/available-money/api). ------------ ----[mpe, mlu, mco, mlc]---- El uso de esta integración está restringida a la consulta y descarga manual de reportes y no permite generar nuevos reportes. ------------ <br/><br/> |
 | Por retiro | <br/>Genera un reporte automáticamente cada vez que retires tu dinero a una cuenta bancaria.<br/><br/>Sigue el paso a paso para [generar reportes por cada retiro de dinero](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/available-money/withdrawal).<br/><br/> |
 
 
