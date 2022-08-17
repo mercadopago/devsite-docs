@@ -18,19 +18,3 @@ In this last scenario, previously saved cards and available account balance will
 4. Select one of the cards previously saved in the account or enter the data of one of the [national test cards](/developers/en/guides/additional-content/testing/test-cards).
  
 Once you've finished testing and completed payments, the checkout will be installed and ready to process actual sales.
-
-> PREV_STEP_CARD_EN
->
-> Create test user
->
-> Learn how to create test users that will allow you to evaluate how your checkout works. 
->
-> [Create test user](/developers/es/docs/checkout-pro/integration-test/create-test-user)
-
-> NEXT_STEP_CARD_EN
->
-> Processing of sales
->
-> Saiba to perform two payments, returns and reimbursements.
->
-> [Processing of sales](/developers/en/docs/checkout-pro/sales-processing/get-payments)

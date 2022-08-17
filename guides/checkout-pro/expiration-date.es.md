@@ -12,19 +12,3 @@ En este campo, la fecha establecida debe estar entre 1 día y 30 días a partir 
 > Importante
 >
 > El período de compensación es de 1 a 2 días hábiles según el método de pago elegido. Por lo tanto, recomendamos establecer la fecha de vencimiento con al menos 3 días de diferencia para garantizar que se realice el pago. Además, si el pago se realiza después de la fecha de vencimiento, el monto se devolverá a la cuenta de Mercado Pago del pagador.
-
-> PREV_STEP_CARD_ES
->
-> Valor del envío
->
-> Obtenga más información sobre el valor cobrado por el envío de los productos vendidos.
->
-> [Valor del envío](/developers/es/docs/checkout-pro/checkout-customization/preferences/shipping-cost)
-
-> NEXT_STEP_CARD_ES
->
-> Esquema de apertura
->
-> Aprenda a definir cómo se abrirá Checkout Pro para el usuario. 
->
-> [Esquema de apertura](/developers/es/docs/checkout-pro/checkout-customization/user-interface/opening-schema)

@@ -16,19 +16,3 @@ Para crear un usuario de prueba, envía tu **credencial de producción** _Access
 > Importante
 >
 > Es posible generar hasta 10 cuentas de usuario de prueba al mismo tiempo. Por lo tanto, recomendamos guardar el correo electrónico y la contraseña de cada uno. Los usuarios de prueba caducan después de 60 días sin actividad en Mercado Pago. Tanto el comprador como el vendedor deben ser usuarios de prueba.
-
-> PREV_STEP_CARD_ES
->
-> Billetera Mercado Pago   
->
-> Vea cómo configurar pagos con Billetera Mercado Pago. 
->
-> [Billetera Mercado Pago](/developers/es/docs/checkout-pro/checkout-customization/mp-wallet)
-
-> NEXT_STEP_CARD_ES
->
-> Compra de prueba  
->
-> Aprenda cómo hacer una compra de prueba y asegúrese de que la integración funcione correctamente. 
->
-> [Compra de prueba](/developers/es/docs/checkout-pro/integration-test/test-purchase)

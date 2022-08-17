@@ -52,19 +52,3 @@ In the example above, a payment button will be rendered and will be responsible 
 > Important
 >
 > To test the checkout, you must access it through another browser or log out of your Mercado Pago account. This is because being logged into the same account responsible for creating the payment form makes it impossible to test the payment flow and guarantee its operation.
-
-> PREV_STEP_CARD_EN
->
-> Create preferences
->
-> Check how to create information sets about a product and/or service.
->
-> [Create preferences](/developers/es/docs/checkout-pro/create-preference)
-
-> NEXT_STEP_CARD_EN
->
-> Term of preference 
->
-> Learn how to set the validity period for a given payment preference.
->
-> [Term of preference](/developers/en/docs/checkout-pro/checkout-customization/preferences/term-of-preference)

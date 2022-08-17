@@ -25,19 +25,3 @@ To enable color style editing on the checkout and its elements, add the `theme` 
 </script>
 ```
 ]]]
-
-> PREV_STEP_CARD_EN
->
-> Redirection  
->
-> Learn how to redirect the buyer to another site environment at the end of the payment process. 
->
-> [Redirection](/developers/en/docs/checkout-pro/checkout-customization/user-interface/redirection)
-
-> NEXT_STEP_CARD_EN
->
-> Mercado Pago Wallet   
->
-> Check how to set up payments with Mercado Pago Wallet. 
->
-> [Mercado Pago Wallet](/developers/en/docs/checkout-pro/checkout-customization/mp-wallet)

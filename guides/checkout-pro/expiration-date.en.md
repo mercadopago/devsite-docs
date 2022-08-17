@@ -12,19 +12,3 @@ In this field, the date set must be between 1 and 30 days from the date of issue
 > Important
 >
 > The clearing period is between 1 and 2 working days according to the chosen payment method. For this reason, we recommend setting the expiration date at least 3 days apart to ensure payment is made. In addition, if payment is made after the expiration date, the amount will be refunded to the payer's Mercado Pago account.
-
-> PREV_STEP_CARD_EN
->
-> Shipping cost
->
-> Learn more about the value charged for shipping the products sold.
->
-> [Shipping cost](/developers/en/docs/checkout-pro/checkout-customization/preferences/shipping-cost)
-
-> NEXT_STEP_CARD_EN
->
-> Opening schema
->
-> Learn how to define how Checkout Pro will open to the user. 
->
-> [Opening schema](/developers/pt/docs/checkout-pro/checkout-customization/user-interface/opening-schema)

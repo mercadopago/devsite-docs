@@ -25,19 +25,3 @@ Para habilitar la edición de estilo de color en el checkout y sus elementos, ag
 </script>
 ```
 ]]]
-
-> PREV_STEP_CARD_ES
->
-> Redireccionamiento  
->
-> Aprenda a redirigir al comprador a otro entorno del sitio al final del proceso de pago. 
->
-> [Redireccionamiento](/developers/es/docs/checkout-pro/checkout-customization/user-interface/redirection)
-
-> NEXT_STEP_CARD_ES
->
-> Billetera Mercado Pago   
->
-> Vea cómo configurar pagos con Billetera Mercado Pago. 
->
-> [Billetera Mercado Pago](/developers/es/docs/checkout-pro/checkout-customization/mp-wallet)

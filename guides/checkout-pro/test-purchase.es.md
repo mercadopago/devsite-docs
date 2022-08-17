@@ -18,19 +18,3 @@ En este último escenario, se habilitarán como medios de pago las tarjetas prev
 4. Selecciona una de las tarjetas previamente guardadas en la cuenta o ingresa los datos de una de las [tarjetas locales de prueba](/developers/es/guides/additional-content/testing/test-cards).
 
 Una vez que haya terminado de probar y completar los pagos, el checkout estará instalado y listo para procesar ventas reales.
-
-> PREV_STEP_CARD_ES
->
-> Estilo de colores
->
-> Aprenda a personalizar el estilo de color de los elementos de su interfaz. 
->
-> [Estilo de colores](/developers/es/docs/checkout-pro/checkout-customization/user-interface/color-style)
-
-> NEXT_STEP_CARD_ES
->
-> Procesamiento de ventas
->
-> Sepa gestionar pagos, contracargos y devoluciones.
->
-> [Procesamiento de ventas](/developers/es/docs/checkout-pro/sales-processing/get-payments)

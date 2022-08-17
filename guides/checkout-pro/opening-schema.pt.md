@@ -24,19 +24,3 @@ Para definir o modelo de abertura **redirect**, insira o código HTML abaixo dir
 </html>
 ```
 ]]]
-
-> PREV_STEP_CARD_PT
->
-> Vencimento de boleto 
->
-> Veja como alterar a data de vencimento padrão para pagamentos com boleto.
->
-> [Vencimento de boleto](/developers/pt/docs/checkout-pro/checkout-customization/preferences/expiration-date)
-
-> NEXT_STEP_CARD_PT
->
-> Botão de pagamento 
->
-> Saiba como definir e personalizar a interface exibida para o usuário, incluindo o modo de entrada à tela de checkout.
->
-> [Botão de pagamento](/developers/pt/docs/checkout-pro/checkout-customization/user-interface/payment-button)

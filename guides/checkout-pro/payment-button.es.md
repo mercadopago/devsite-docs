@@ -75,19 +75,3 @@ Para configurar la apertura automática, agrega el siguiente código directament
 </html>
 ```
 ]]]
-
-> PREV_STEP_CARD_ES
->
-> Esquema de apertura
->
-> Aprenda a definir cómo se abrirá Checkout Pro para el usuario. 
->
-> [Esquema de apertura](/developers/es/docs/checkout-pro/checkout-customization/user-interface/opening-schema)
-
-> NEXT_STEP_CARD_ES
->
-> Redireccionamiento  
->
-> Aprenda a redirigir al comprador a otro entorno del sitio al final del proceso de pago. 
->
-> [Redireccionamiento](/developers/es/docs/checkout-pro/checkout-customization/user-interface/redirection)
