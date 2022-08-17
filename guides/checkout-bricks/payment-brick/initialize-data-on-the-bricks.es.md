@@ -17,11 +17,10 @@ settings = {
       ...,
       email: 'jose@maria.com',
       identification: {
-	  type: 'CPF',
-	  number: '01234567890',
-	},
+          type: 'string',
+          number: 'string',
+        },
     }
   }
-}
 }
 ```

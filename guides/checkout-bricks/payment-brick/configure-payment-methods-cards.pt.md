@@ -167,7 +167,6 @@ settings = {
     }
   }
 }
-}
 ```
 
 As propriedades `creditCard` e `debitCard` aceitam 2 tipos de variável, `string` e `string[]`. No exemplo acima, serão aceitos pagamentos com cartões de crédito e débito de qualquer bandeira aceita pelo Mercado Pago.
@@ -185,7 +184,6 @@ settings = {
       debitCard: [ 'debelo' ]
     }
   }
-}
 }
 ```
 

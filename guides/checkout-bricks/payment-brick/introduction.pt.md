@@ -2,11 +2,21 @@
 
 O Payment Brick é uma solução modular e personalizável que permite adicionar vários métodos de pagamento à sua loja com apenas um Brick, permitindo que você salve os dados do cartão para compras futuras. Ao utilizar o Payment Brick, você terá diferentes métodos de pagamento à sua disposição e poderá escolher quais habilitar para o seu site.
 
-Neste momento, poderá dar aos seus clientes a possibilidade de efetuarem pagamentos através de cartões de crédito e do cartão de débito virtual Caixa. A curto prazo, adicionaremos a possibilidade de que, usando este mesmo Brick, você também possa permitir que eles façam pagamentos com Pix, boleto e na lotérica.
+----[mlb]----
+Neste momento, você poderá dar aos seus clientes a possibilidade de efetuarem pagamentos através de cartões de crédito e do cartão de débito virtual Caixa. A curto prazo, adicionaremos a possibilidade de que, usando este mesmo Brick, você também possa permitir que eles façam pagamentos com Pix, boleto e na lotérica.
 
-A possibilidade de guardar os dados dos cartões que já foram debitados em compras anteriores, torna o processo de pagamento mais eficiente e rápido. Para o comprador, não é mais necessário recarregar os dados cada vez que entrar no checkout.
+------------
+
+----[mla, mlm, mpe, mco, mlu, mlc]----
+Por enquanto, você pode dar aos seus clientes a possibilidade de fazer pagamentos por meio de cartões de débito e crédito. A curto prazo, adicionaremos a possibilidade de que, usando este mesmo Brick, você também possa permitir que eles façam pagamentos em dinheiro.
+
+------------
+
+A possibilidade de guardar os dados dos cartões que já foram debitados em compras anteriores torna o processo de pagamento mais eficiente e rápido. Para o comprador, não é mais necessário recarregar os dados cada vez que entrar no checkout.
 
 ![payment-brick-layout](checkout-bricks/payment-brick-layout-pt.gif)
+
+Por sua vez, nosso processador cumpre todas as garantias de segurança para oferecer aos usuários a máxima proteção ao salvar seus dados. Essa é uma das grandes vantagens de adicionar o Checkout Bricks ao seu site: a tranquilidade de oferecer uma solução segura, respaldada pelo Mercado Pago, mas customizada para as necessidades da sua empresa.
 
 ## Layout 
 

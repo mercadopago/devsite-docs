@@ -87,44 +87,55 @@ To render the brick, insert the following code after the previous step and fill 
 
 ```javascript
 const renderPaymentBrick = async (bricksBuilder) => {
-  const settings = {
-    initialization: {
-      amount: 100, //value to be charged
-    },
-    callbacks: {
-      onReady: () => {
-        // callback called when the brick is ready
-      },
-      onSubmit: (formData) => {
-        // callback called when the user clicks on the submit data button
-
-        // example of sending the data collected by our Brick to your server
-        return new Promise((resolve, reject) => {
-            fetch("/process_payment", { 
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(formData)
-            })
-            .then((response) => {
-                // receive payment result
-                resolve();
-            })
-            .catch((error) => {
-                // handle error response when trying to create payment
-                reject();
-            })
-          });
-      },
-      onError: (error) => { 
-        // callback called to all error cases related to the Brick
-      },
-    },
-  };
-  const PaymentBrickController = await bricksBuilder.create('Payment', 'PaymentBrick_container', settings);
+ const settings = {
+   initialization: {
+     amount: 100, // amount of processing to be performed
+   },
+   customization: {
+     paymentMethods: {
+       creditCard: 'all',
+       debitCard: 'all',
+     },
+   },
+   callbacks: {
+     onReady: () => {
+       // callback called when Brick is ready
+     },
+     onSubmit: ({ paymentType, formData }) => {
+       // callback called when clicking on the data submission button
+      
+       if (paymentType === 'credit_card' || paymentType === 'debit_card') {
+         return new Promise((resolve, reject) => {
+           fetch("/processar-pago", {
+             method: "POST",
+             headers: {
+               "Content-Type": "application/json",
+             },
+             body: JSON.stringify(formData)
+           })
+             .then((response) => {
+               // receive payment result
+               resolve();
+             })
+             .catch((error) => {
+               // handle error response when trying to create payment
+               reject();
+             })
+         });
+       }
+     },
+     onError: (error) => {
+       // callback called for all Brick error cases
+     },
+   },
+ };
+ window.paymentBrickController = await bricksBuilder.create(
+   'payment',
+   'paymentBrick_container',
+   settings
+ );
 };
-renderPaymentBrick(bricksBuilder);     
+renderPaymentBrick(bricksBuilder);
 ```
 
 The result of rendering the brick should be like the image below:”
@@ -157,7 +168,6 @@ settings = {
     }
   }
 }
-}
 ```
 
 The `creditCard` and `debitCard` properties accept 2 types of variables, `string` and `string[]`. In the example above, payments with credit and debit cards of any brand accepted by Mercado Pago will be accepted.
@@ -175,7 +185,6 @@ settings = {
       debitCard: [ 'debelo' ]
     }
   }
-}
 }
 ```
 

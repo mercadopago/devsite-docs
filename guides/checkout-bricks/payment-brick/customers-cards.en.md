@@ -28,7 +28,7 @@ Just passing these two properties, Brick will automatically give the user the op
 >
 > Attention
 >
-> Only expired cards will be shown to the buyer, expired cards will not be made available.
+> Only no expired cards will be shown to the buyer, expired cards will not be made available.
 
 ![payment-brick-cc](checkout-bricks/payment-brick-cc.en.gif)
 

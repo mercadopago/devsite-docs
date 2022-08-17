@@ -4,7 +4,7 @@
 >
 > Incluir tarjetas guardadas
 
-Para que Payment Brick pueda mostrar las tarjetas guardadas de un determinado comprador, es necesario enviar a Brick en el momento de su inicialización, la identificación del cliente y las identificaciones de las tarjetas, como en el ejemplo a continuación.
+Para que Payment Brick pueda mostrar las tarjetas guardadas de un determinado comprador, es necesario enviar a Brick en el momento de su inicialización, lo ID del customer y los IDs de los cards, como en el ejemplo a continuación.
 
 [[[
 ```Javascript
@@ -28,7 +28,7 @@ Con solo pasar estas dos propiedades, Brick le dará automáticamente al usuario
 >
 > Atención
 >
-> Solo se mostrarán al comprador las tarjetas caducadas, las tarjetas caducadas no estarán disponibles.
+> Solo se mostrarán al comprador las tarjetas no caducadas, las tarjetas caducadas no estarán disponibles.
 
 ![payment-brick-cc](checkout-bricks/payment-brick-cc.es.gif)
 
