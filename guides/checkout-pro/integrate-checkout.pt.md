@@ -389,7 +389,7 @@ curl -X POST \
 >
 > Importante
 >
-> Considere que é necessário configurar as `back _urls` caso queira redirecionar seu cliente ao seu site ao final do pagamento. Para mais informações, visite a seção Redirecionamento. 
+> Considere que é necessário configurar as `back _urls` caso queira redirecionar seu cliente ao seu site ao final do pagamento. Para mais informações, visite a seção [Redirecionamento](/developers/pt/docs/checkout-pro/checkout-customization/user-interface/redirection). 
 
 
 
@@ -446,4 +446,4 @@ No exemplo acima, um botão de pagamento será renderizado e ficará responsáve
 
 ## Exemplo de implementação
 
-Confira o [exemplo completo de integração](http://github.com/mercadopago/checkout-payment-sample) no GitHub para PHP ou NodeJS para fazer o _download_ de um projeto básico de implementação rápida do Checkout Pro em seu site.
+Confira o [exemplo completo de integração](http://github.com/mercadopago/checkout-payment-sample) no GitHub para PHP ou NodeJS para fazer o _download_ de um projeto básico de implementação rápida do Checkout Pro.
