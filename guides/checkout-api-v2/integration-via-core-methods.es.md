@@ -346,7 +346,7 @@ Con toda la información recopilada en el backend, envíe un POST con los atribu
 >
 > Importante
 >
-> Para aumentar las posibilidades de aprobación del pago y evitar que el análisis antifraude no autorice la transacción, recomendamos introducir toda la información posible sobre el comprador al realizar la solicitud. Para más detalles sobre cómo aumentar las posibilidades de aprobación, consulta [Cómo mejorar la aprobación de los pagos](/developers/es/docs/checkout-api/how-tos/improve-payment-approval.
+> Para aumentar las posibilidades de aprobación del pago y evitar que el análisis antifraude no autorice la transacción, recomendamos introducir toda la información posible sobre el comprador al realizar la solicitud. Para más detalles sobre cómo aumentar las posibilidades de aprobación, consulta [Cómo mejorar la aprobación de los pagos](/developers/es/docs/checkout-api/how-tos/improve-payment-approval).
 
 
 [[[

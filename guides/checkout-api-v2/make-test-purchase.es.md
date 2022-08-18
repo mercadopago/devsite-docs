@@ -17,11 +17,11 @@ Con las credenciales configuradas, siga los pasos a continuación para realizar 
 
 > PREV_STEP_CARD_ES
 >
-> Crear usuario de prueba
+> Gestión de pagos
 >
-> Aprenda a crear usuarios para probar la integración del Checkout API.
+> Aprende a administrar los pagos de tu tienda.
 >
-> [Crear usuario de prueba](/developers/es/docs/checkout-api/integration-test/create-test-user)
+> [Gestión de pagos](/developers/es/docs/checkout-api/payment-management)
 
 > NEXT_STEP_CARD_ES
 >

@@ -8,7 +8,7 @@ paths:
   /v2/wallet_connect/agreements:
     post:
       tags:
-        - $ref: '#/tags/checkout-api'
+        - $ref: '#/tags/wallet-connect'
       summary: Create Agreement
       x-summary-i18n:
         eng: Create Agreement
@@ -30,6 +30,16 @@ paths:
           schema:
             type: number
             example: 2451675580092619
+        - name: x-platform-id
+          in: header
+          description: Field intended for platforms or modules that offer Mercado Pago in their solutions
+          x-description-i18n:
+            eng: Field intended for platforms or modules that offer Mercado Pago in their solutions
+            spa: Campo destinado a plataformas o módulos que ofrecen Mercado Pago en sus soluciones
+            por: Campo destinado para as plataformas ou módulos que oferecem Mercado Pago em suas soluções
+          schema:
+            type: string
+            example: YOUR_ACCESS_TOKEN
       requestBody:
         description: Here are the fields needed to complete a request for create an Agreement
         x-description-i18n:
@@ -161,7 +171,7 @@ paths:
   /v2/wallet_connect/agreements/{agreement_id}/payer_token:
     post:
       tags:
-        - $ref: '#/tags/checkout-api'
+        - $ref: '#/tags/wallet-connect'
       summary: Create payer token
       x-summary-i18n:
         eng: Create payer token
@@ -206,6 +216,16 @@ paths:
           schema:
             type: number
             example: 832564722
+        - name: x-platform-id
+          in: header
+          description: Field intended for platforms or modules that offer Mercado Pago in their solutions
+          x-description-i18n:
+            eng: Field intended for platforms or modules that offer Mercado Pago in their solutions
+            spa: Campo destinado a plataformas o módulos que ofrecen Mercado Pago en sus soluciones
+            por: Campo destinado para as plataformas ou módulos que oferecem Mercado Pago em suas soluções
+          schema:
+            type: string
+            example: YOUR_ACCESS_TOKEN
       requestBody:
         content:
           application/json:
@@ -297,7 +317,7 @@ paths:
   /v2/wallet_connect/agreements/{agreement_id}:
     delete:
       tags:
-        - $ref: '#/tags/checkout-api'
+        - $ref: '#/tags/wallet-connect'
       summary: Cancel agreement
       x-summary-i18n:
         eng: Cancel agreement
@@ -332,6 +352,16 @@ paths:
           schema:
             type: number
             example: 1451895580758649
+        - name: x-platform-id
+          in: header
+          description: Field intended for platforms or modules that offer Mercado Pago in their solutions
+          x-description-i18n:
+            eng: Field intended for platforms or modules that offer Mercado Pago in their solutions
+            spa: Campo destinado a plataformas o módulos que ofrecen Mercado Pago en sus soluciones
+            por: Campo destinado para as plataformas ou módulos que oferecem Mercado Pago em suas soluções
+          schema:
+            type: string
+            example: YOUR_ACCESS_TOKEN
       responses: 
         '200':
           description: Success

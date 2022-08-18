@@ -1,6 +1,6 @@
-# Integração via Cardform
+# Cartão
 
-Neste modo de integração, o **MercadoPago.js** é responsável pelos fluxos necessários para obtenção das informações obrigatórias para a criação de um pagamento. Quando inicializado, uma busca é realizada para recolher os tipos de documentos disponíveis para o país em questão.
+A integração de pagamentos via cartão é feita via cardform. Neste modo de integração, o **MercadoPago.js** é responsável pelos fluxos necessários para obtenção das informações obrigatórias para a criação de um pagamento. Quando inicializado, uma busca é realizada para recolher os tipos de documentos disponíveis para o país em questão.
 
 À medida que os dados do cartão são inseridos, ocorre uma busca automática das informações de emissor e parcelas disponíveis para aquele meio de pagamento Com isso, a implementação do fluxo é transparente para quem realiza a integração.
 
@@ -211,7 +211,7 @@ Com todas as informações coletadas no backend, envie um POST com os atributos 
 >
 > Importante
 >
-> Para aumentar as chances de aprovação do pagamento e evitar que a análise antifraude não autorize a transação, recomendamos inserir o máximo de informação sobre o comprador ao realizar a requisição. Para mais detalhes sobre como aumentar as chances de aprovação, veja [Como melhorar a aprovação dos pagamentos](/developers/pt/docs/checkout-api/how-tos/improve-approval).
+> Para aumentar as chances de aprovação do pagamento e evitar que a análise antifraude não autorize a transação, recomendamos inserir o máximo de informação sobre o comprador ao realizar a requisição. Para mais detalhes sobre como aumentar as chances de aprovação, veja [Como melhorar a aprovação dos pagamentos](/developers/pt/docs/checkout-api/how-tos/improve-payment-approval).
 
 
 [[[

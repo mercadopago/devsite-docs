@@ -25,7 +25,7 @@ Veja abaixo quais são os meios de pagamento disponíveis para a loja ao integra
 >
 > Importante
 >
-> Ao utilizar o [----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------](/developers/pt/guides/checkout-api/landing) para receber os pagamentos, é importante configurar o envio de e-mails que notificarão o usuário de suas transações. Veja a seção [Como customizar notificação de pagamento para ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------](/developers/pt/docs/prestashop/how-tos/checkout-api/email-customization) para detalhes de como fazê-lo. <br>
+> Ao utilizar o [----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------](/developers/pt/guides/checkout-api/landing) para receber os pagamentos, é importante configurar o envio de e-mails que notificarão o usuário de suas transações. Veja a seção [Como customizar notificação de pagamento para ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------](/developers/pt/docs/prestashop/how-tos/email-customization) para detalhes de como fazê-lo. <br>
 > </br> <br/>
 > Caso deseje utilizar o Checkout Pro para receber pagamentos na loja, veja a seção [Configurar os pagamentos com Checkout Pro](/developers/pt/docs/prestashop/payment-configuration/checkout-pro).
 

@@ -13,6 +13,10 @@ With `shipment_id` in hand you can:
 * Print the order receipt.
 * Cancel the order.
 
+## State flow diagram
+
+![flowchart](/images/mpdelivery/flowchart_delivery_en.png)
+
 > PREV_STEP_CARD_EN
 >
 > Integration setup

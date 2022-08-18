@@ -340,7 +340,7 @@ curl -X POST \
 >
 > h3
 >
-> &nbsp;2. Adicione o Checkout Pro ao seu _site_
+> &nbsp;2. Adicione o Checkout Pro ao seu site
 
 Inclua o SDK `MercadoPago.js` V2 no seu projeto:
 
@@ -353,22 +353,21 @@ Depois, configure as credenciais do SDK para seu uso individual, e inicialize se
 
 [[[
 ```html
+<div class="cho-container"></div>
 <script>
-// Adicione as credenciais do SDK
   const mp = new MercadoPago('PUBLIC_KEY', {
-        locale: 'pt-BR'
+    locale: 'pt-BR'
   });
 
-  // Inicialize o checkout
   mp.checkout({
-      preference: {
-          id: 'YOUR_PREFERENCE_ID'
-      },
-      render: {
-            container: '.cho-container', // Indique o nome da class onde será exibido o botão de pagamento
-            label: 'Pagar', // Muda o texto do botão de pagamento (opcional)
-      }
-});
+    preference: {
+      id: 'YOUR_PREFERENCE_ID'
+    },
+    render: {
+      container: '.cho-container',
+      label: 'Pagar',
+    }
+  });
 </script>
 ```
 ]]]
