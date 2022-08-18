@@ -10,6 +10,20 @@ Once the request –with all the collected information– is in your backend, it
 
 For this to work, you should configure your [private key](/developers/en/guides/additional-content/credentials/credentials). Also, to interact with our APIs, you should use [Mercado Pago official SDK](/developers/en/guides/sdks-v2/official/landing).
 
+> NOTE
+> 
+> Important
+>
+> Remember that before calling our API it is a good opportunity to validate that all
+data you are about to send us is correct.<br/></br>
+> <br/></br>
+> If you already have some kind of session on your integration server where the information
+of purchase context are stored, you can use this information to compare
+them with the data received from the frontend.<br/></br>
+> <br/></br>
+> Also at this stage you can add other data to enrich the payment information
+who sends us. Go to the [payments section](/developers/en/reference/payments/_payments/post) of the API Reference to check all the data you can send.
+
 [[[
 ```php
 ===

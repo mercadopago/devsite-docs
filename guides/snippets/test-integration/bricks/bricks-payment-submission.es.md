@@ -10,6 +10,20 @@ Ya estando en tu backend con toda la información recolectada, es momento de env
 
 Ten en cuenta que para que este paso funcione es necesario que configures tu [clave privada](/developers/es/guides/additional-content/credentials/credentials) y que para interactuar con nuestras APIs recomendamos utilizar la [SDK oficial de Mercado Pago](/developers/es/guides/sdks-v2/official/landing).
 
+> NOTE
+>
+> Importante
+> 
+> Recuerda que antes de Ilamar a nuestra API es una buena oportunidad para validar que todos
+los datos que estás a punto de enviarnos son correctos.<br/></br>
+> <br/></br>
+> Si en el servidor de tu integración ya tienes algún tipo de sesión donde esté almacenada la
+información de contexto de la compra, puedes usar esa información para compararla con los
+datos recibidos desde el frontend.<br/></br>
+> <br/></br>
+> También en esta etapa pude sumar datos adicionales para enriquecer la información del
+pago que nos envías. Ve a la [sección de pagos](/developers/es/reference/payments/_payments/post) de la API Reference para ver todos los datos que puedes enviar.
+
 [[[
 ```php
 ===

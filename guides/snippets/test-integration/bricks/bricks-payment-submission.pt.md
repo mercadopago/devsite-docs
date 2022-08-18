@@ -10,6 +10,20 @@ Já estando no seu backend com toda a informação coletada, é o momento de env
 
 Tenha em conta que para que esse passo funcione é necessário que configure sua [chave privada](/developers/pt/guides/additional-content/credentials/credentials) e que para interagir com nossas APIs, recomendamos utilizar o [SDK oficial do Mercado Pago](/developers/pt/guides/sdks-v2/official/landing).
 
+> NOTE
+> 
+> Importante
+>
+> Lembre-se que antes de chamar nossa API é uma boa oportunidade para validar se todos os
+dados que você está prestes a nos enviar estão corretos.<br/></br>
+> <br/></br>
+> Se você já possui algum tipo de sessão em seu servidor de integração onde as informações
+de contexto de compra estão armazenadas, você pode usar essas informações para compará-
+las com os dados recebidos do frontend.<br/></br>
+> <br/></br>
+> Também nesta fase pode adicionar outros dados para enriquecer a informação de pagamento
+que nos envia. Acesse a [seção de pagamentos](/developers/pt/reference/payments/_payments/post) da API Reference para conhecer todos os dados que é possível enviar.
+
 [[[
 ```php
 ===
@@ -231,8 +245,8 @@ curl -X POST \
 }
 ```
 
-> O callback de onSubmit do Brick contém todos os dados necessários para a criação de um pagamento, porém, caso deseje, é possível incluir detalhes adicionais, o que pode facilitar o reconhecimento da compra por parte do comprador e aumentar a taxa de aprovação dos pagamentos. <br/></br>
-> <br/></br> 
+> O callback de onSubmit do Brick contém todos os dados necessários para a criação de um pagamento, porém, caso deseje, é possível incluir detalhes adicionais, o que pode facilitar o reconhecimento da compra por parte do comprador e aumentar a taxa de aprovação dos pagamentos.<br/></br>   
+> <br/></br>  
 > Para fazer isso, adicione campos relevantes ao objeto enviado, que vem na resposta do callback onSubmit do Brick. Alguns desses campos são: `description` (esse campo pode ser exibido nos boletos emitidos) e `external_reference` (id da compra no seu site, que permite o reconhecimento da compra mais fácil). Também é possível adicionar dados complementares sobre o comprador. <br/></br>
 > <br/></br>
 > Conheça todos os campos disponíveis para realizar um pagamento completo nas [Referências de API](/developers/pt/reference/payments/_payments/post).
