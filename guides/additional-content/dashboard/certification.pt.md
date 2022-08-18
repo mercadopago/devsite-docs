@@ -9,11 +9,3 @@ As **insígnias** atuam como um distintivo para identificar os desenvolvedores q
 ![pt certification](/images/dashboard/dashboard-certification_pt.png)
  
 Verifique a página do [&lt;dev&gt;program](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/developer-program) para mais informações.
-
-> PREV_STEP_CARD_PT
->
-> Contas que você integra
->
-> Veja informações a respeito de contas de terceiro das quais você recebeu permissão para utilizar.
->
-> [Contas que você integra](/developers/pt/guides/additional-content/dashboard/integration)

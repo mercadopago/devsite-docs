@@ -9,11 +9,3 @@ Las **insignias** actúan como una forma de identificar a los desarrolladores qu
 ![es certification](/images/dashboard/dashboard-certification_es.png)
  
 Consulta la página [&lt;dev&gt;program](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/developer-program) para obtener más información.
-
-> PREV_STEP_CARD_PT
->
-> Cuentas que integras
->
-> Accede a información acerca de cuentas de terceros que se te ha dado permiso para usar.
->
-> [Cuentas que integras](/developers/es/guides/additional-content/dashboard/integration)

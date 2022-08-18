@@ -4,7 +4,7 @@ As aplicações são as diferentes integrações contidas em uma ou mais lojas. 
  
 Cada aplicação possui um conjunto de credenciais e a possibilidade de configurar suas próprias notificações. Cada card representa uma aplicação criada e exibe o **nome**, a **descrição**, o **ID da aplicação** e um botão que permite gerenciar a aplicação.
  
-### Criar nova aplicação
+## Criar nova aplicação
  
 Para criar uma aplicação, siga os passos abaixo.
  
@@ -68,19 +68,3 @@ Também há a possibilidade de compartilhar as credenciais com outra conta do Me
  
 ### Notificações webhook
 Configure as URLs de produção e teste da qual serão recebidas as notificações webhook e selecione os eventos que serão responsáveis por gerar essas notificações. Leia [Webhooks](/developers/pt/guides/additional-content/notifications/webhooks/webhooks) para mais informações.
-
-> PREV_STEP_CARD_PT
->
-> Cabeçalho
->
-> Veja um resumo dos seus dados.
->
-> [Cabeçalho](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/dashboard/header)
-
-> NEXT_STEP_CARD_PT
->
-> Contas que você integra
->
-> Veja informações a respeito de contas de terceiro das quais você recebeu permissão para utilizar.
->
-> [Contas que você integra](/developers/pt/guides/additional-content/dashboard/integration)
