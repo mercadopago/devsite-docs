@@ -233,16 +233,16 @@ Você receberá esta resposta:
 ----[mla]----
 | Dispositivo | Cancelar uma tentativa de pagamento do dispositivo |
 | --- | --- |
-| Point Plus (POS) | Uma tentativa de pagamento é enfileirada no dispositivo: <br> - Para obter a solicitação de tentativa de pagamento no dispositivo, **pressione o botão verde**. <br> - Se você deseja cancelar a tentativa de pagamento, **pressione o botão vermelho**.|
-| Point Smart | Uma tentativa de pagamento é enfileirada a partir do dispositivo: <br> - Você deve **selecionar a opção de cobrança** para que a tentativa de pagamento seja enfileirada. <br> - Caso queira cancelar a tentativa de pagamento, **pressione o botão home** e, posteriormente, o aparelho enviará uma notificação para confirmar o cancelamento. |
+| Point Plus (POS) | Uma tentativa de pagamento é enfileirada no dispositivo: <br/></br> - Para obter a solicitação de tentativa de pagamento no dispositivo, **pressione o botão verde**. <br> - Se você deseja cancelar a tentativa de pagamento, **pressione o botão vermelho**.|
+| Point Smart | Uma tentativa de pagamento é enfileirada a partir do dispositivo: <br/></br> - Você deve **selecionar a opção de cobrança** para que a tentativa de pagamento seja enfileirada. <br> - Caso queira cancelar a tentativa de pagamento, **pressione o botão home** e, posteriormente, o aparelho enviará uma notificação para confirmar o cancelamento. |
 
 ------------
 
 ----[mlb]----
 | Dispositivo | Cancelar uma tentativa de pagamento do dispositivo |
 | --- | --- |
-| Ponto Pro 1 - Pro 2 | Uma tentativa de pagamento é enfileirada no dispositivo: <br> - Para obter a solicitação de tentativa de pagamento no dispositivo, **pressione o botão verde**. <br> - Se você deseja cancelar a tentativa de pagamento, **pressione o botão vermelho**.|
-| Point Smart | Uma tentativa de pagamento é enfileirada a partir do dispositivo: <br> - Você deve **selecionar a opção de cobrança** para que a tentativa de pagamento seja enfileirada. <br> - Caso queira cancelar a tentativa de pagamento, **pressione o botão home** e, posteriormente, o aparelho enviará uma notificação para confirmar o cancelamento. |
+| Ponto Pro 1 - Pro 2 | Uma tentativa de pagamento é enfileirada no dispositivo: <br/></br> - Para obter a solicitação de tentativa de pagamento no dispositivo, **pressione o botão verde**. <br> - Se você deseja cancelar a tentativa de pagamento, **pressione o botão vermelho**.|
+| Point Smart | Uma tentativa de pagamento é enfileirada a partir do dispositivo: <br/></br> - Você deve **selecionar a opção de cobrança** para que a tentativa de pagamento seja enfileirada. <br> - Caso queira cancelar a tentativa de pagamento, **pressione o botão home** e, posteriormente, o aparelho enviará uma notificação para confirmar o cancelamento. |
 
 ------------
 
