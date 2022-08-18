@@ -3,8 +3,8 @@
 Llamamos aplicaciones a las distintas integraciones contenidas en una o varias tiendas. Puedes crear una aplicación para cada solución que implementes, con el fin de tener todo organizado y mantener un control que facilite la gestión.
  
 Cada aplicación tiene un conjunto de credenciales y la posibilidad de configurar sus propias notificaciones. Cada tarjeta representa una aplicación creada y muestra el **nombre**, la **descripción**, el **ID de la aplicación** y un botón que permite administrar la aplicación.
- 
-### Crear nueva aplicación
+
+## Crear nueva aplicación
  
 Para crear una aplicación, sigue los pasos a continuación.
  
@@ -68,19 +68,3 @@ También existe la posibilidad de compartir las credenciales con otra cuenta de 
  
 ### Notificaciones de webhook
 Configura las URL de producción y prueba desde las que se recibirán las notificaciones de webhook y selecciona los eventos que serán responsables de generar estas notificaciones. Lee [Webhooks](/developers/es/guides/additional-content/notifications/webhooks/webhooks) para más información.
-
-> PREV_STEP_CARD_ES
->
-> Encabezado
->
-> Accede al resumen de tus datos.
->
-> [Encabezado](/developers/es/guides/additional-content/dashboard/header)
-
-> NEXT_STEP_CARD_ES
->
-> Cuentas que integras
->
-> Accede a información acerca de cuentas de terceros que se te ha dado permiso para usar.
->
-> [Cuentas que integras](/developers/es/guides/additional-content/dashboard/integration)

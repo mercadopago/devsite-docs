@@ -4,7 +4,7 @@ Applications are the different integrations contained in one or more stores. You
  
 Each application has a set of credentials and the possibility to configure its own notifications. Each card represents a created application and displays the **name**, the **description**, the **application ID** and a button that allows managing the application.
  
-### Create new application
+## Create new application
  
 To create an application, follow the steps below:
  
@@ -68,19 +68,3 @@ There is also the possibility to share the credentials with another Mercado Pago
  
 ### Webhook notifications
 Configure the production and test URLs from which webhook notifications will be received and select the events that will be responsible for generating these notifications. Check [Webhooks](/developers/en/guides/additional-content/notifications/webhooks/webhooks) for more information.
-
-> PREV_STEP_CARD_EN
->
-> Header
->
-> Check the summary of your information.
->
-> [Header](/developers/en/guides/additional-content/dashboard/header)
-
-> NEXT_STEP_CARD_EN
->
-> Accounts you integrate
->
-> Check information regarding third-party accounts that you have been given permission to use.
->
-> [Accounts you integrate](/developers/en/guides/additional-content/dashboard/integration)

@@ -48,7 +48,7 @@ tags:
       en: 'Mercado Pago Point'
       es: 'Mercado Pago Point'
     externalDocs: 
-      url: '/guides/in-person-payments/mp-point/introduction'
+      url: '/docs/mp-point/introduction'
   checkout-api:
     description:
       pt: 'Checkout Transparente'
@@ -70,6 +70,13 @@ tags:
       es: 'Mercado Pago Delivery'
     externalDocs: 
       url: '/docs/mp-delivery/landing'
+  wallet-connect:
+    description:
+      pt: 'Wallet connect'
+      en: 'Wallet connect'
+      es: 'Wallet connect'
+    externalDocs: 
+      url: '/docs/wallet-connect/landing'
   
 #------DEFAULT - ALL ARCHIVES - END------
 

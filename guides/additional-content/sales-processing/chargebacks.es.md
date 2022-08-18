@@ -68,7 +68,7 @@ Puedes obtener más información sobre cada atributo en las [Referencias de API]
 
 ### Devuelve los pagos sospechosos
 
-Cuando detectamos un comportamiento irregular o recibimos una notificación de que la tarjeta usada fue robada, nos contactaremos vía e-mail para avisarte. Te recomendamos que canceles la compra y le devuelvas el dinero al comprador para evitar el contracargo.
+Cuando detectamos un comportamiento irregular o recibimos una notificación de que la tarjeta usada fue robada, nos contactaremos vía e-mail para avisarte. Te recomendamos que [canceles la compra](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds) y le devuelvas el dinero al comprador para evitar el contracargo.
 
 ### Revisa los datos al cobrar con Point
 

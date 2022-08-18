@@ -9,6 +9,7 @@ paths:
     get:
       tags:
         - $ref: '#/tags/qr-code'
+        - $ref: '#/tags/mp-point'
       summary: Get store
       x-summary-i18n:
         eng: Get store
@@ -141,6 +142,7 @@ paths:
     post:
       tags:
         - $ref: '#/tags/qr-code'
+        - $ref: '#/tags/mp-point'
       summary: Create store
       x-summary-i18n:
         eng: Create store
@@ -392,6 +394,7 @@ paths:
     get:
       tags:
         - $ref: '#/tags/qr-code'
+        - $ref: '#/tags/mp-point'
       summary: Search stores
       x-summary-i18n:
         eng: Search stores
@@ -563,6 +566,7 @@ paths:
     put:
       tags:
         - $ref: '#/tags/qr-code'
+        - $ref: '#/tags/mp-point'
       summary: Update store
       x-summary-i18n:
         eng: Update store
@@ -812,6 +816,7 @@ paths:
     delete:
       tags:
         - $ref: '#/tags/qr-code'
+        - $ref: '#/tags/mp-point'
       summary: Delete store
       x-summary-i18n:
         eng: Delete store

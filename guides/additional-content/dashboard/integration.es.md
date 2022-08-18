@@ -8,19 +8,3 @@ Puedes integrar soluciones para cuentas distintas a la tuya. Al integrar solucio
 4. Confirma la solicitud de credenciales.
  
 Una vez concedido el acceso a las credenciales, puedes utilizarlas para integrar soluciones. Cuando se completen las integraciones, elimina los permisos de acceso para las credenciales que se compartieron y cuida la seguridad de los datos.
-
-> PREV_STEP_CARD_ES
->
-> Tus aplicaciones
->
-> Accede a información acerca de tus aplicaciones creadas.
->
-> [Tus aplicaciones](/developers/es/guides/additional-content/dashboard/applications)
-
-> NEXT_STEP_CARD_ES
->
-> Tus certificaciones
->
-> Accede a información a cerca de tus certificaciones en nuestro programa de desarrolladores certificados (**&lt;dev&gt;program**).
->
-> [Tus certificaciones](/developers/es/guides/additional-content/dashboard/certification)
