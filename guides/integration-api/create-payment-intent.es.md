@@ -235,16 +235,16 @@ Obtendrás esta respuesta:
 ----[mla]----
 | Dispositivo |  Cancelar un intento de pago desde el dispositivo |
 | --- | --- |
-| Point Plus (POS) | Se encola un intento de pago desde el dispositivo: <br> - Para poder obtener la petición del intento de pago en el dispositivo se debe **presionar  el botón verde**. <br> - En caso de querer cancelar el intento de pago se debe **presionar el botón rojo**.|
-| Point Smart | Se encola un intento de pago desde el dispositivo: <br> - Se debe **seleccionar la opción de cobrar** para obtener el intento de pago encolado. <br> - En caso de querer hacer la cancelación del intento de pago se debe **presionar el botón home** y posteriormente el dispositivo enviará una notificación para hacer la confirmación de la cancelación. |
+| Point Plus (POS) | Se encola un intento de pago desde el dispositivo: <br/></br> - Para poder obtener la petición del intento de pago en el dispositivo se debe **presionar  el botón verde**. <br> - En caso de querer cancelar el intento de pago se debe **presionar el botón rojo**.|
+| Point Smart | Se encola un intento de pago desde el dispositivo: <br/></br> - Se debe **seleccionar la opción de cobrar** para obtener el intento de pago encolado. <br> - En caso de querer hacer la cancelación del intento de pago se debe **presionar el botón home** y posteriormente el dispositivo enviará una notificación para hacer la confirmación de la cancelación. |
 
 ------------
 
 ----[mlb]----
 | Dispositivo |  Cancelar un intento de pago desde el dispositivo |
 | --- | --- |
-| Point Pro 1 - Pro 2 | Se encola un intento de pago desde el dispositivo: <br> - Para poder obtener la petición del intento de pago en el dispositivo se debe **presionar  el botón verde**. <br> - En caso de querer cancelar el intento de pago se debe **presionar  el botón rojo**.|
-| Point Smart | Se encola un intento de pago desde el dispositivo: <br> - Se debe **seleccionar la opción de cobrar** para obtener el intento de pago encolado. <br> - En caso de querer hacer la cancelación del intento de pago se debe **presionar el botón home** y posteriormente el dispositivo enviará una notificación para hacer la confirmación de la cancelación. |
+| Point Pro 1 - Pro 2 | Se encola un intento de pago desde el dispositivo: <br/></br> - Para poder obtener la petición del intento de pago en el dispositivo se debe **presionar  el botón verde**. <br> - En caso de querer cancelar el intento de pago se debe **presionar  el botón rojo**.|
+| Point Smart | Se encola un intento de pago desde el dispositivo: <br/></br> - Se debe **seleccionar la opción de cobrar** para obtener el intento de pago encolado. <br> - En caso de querer hacer la cancelación del intento de pago se debe **presionar el botón home** y posteriormente el dispositivo enviará una notificación para hacer la confirmación de la cancelación. |
 
 ------------
 

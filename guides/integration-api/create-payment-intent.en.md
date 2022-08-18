@@ -236,8 +236,8 @@ In order to cancel the payment attempt from the device, it can only be done if t
 
 | Device | Cancel a payment attempt from the device |
 | --- | --- |
-| PointPlus (POS) | A payment attempt is queued from the device: <br> - In order to obtain the request for the payment attempt on the device, **press the green button**. <br> - If you want to cancel the payment attempt, you must **press the red button**.|
-| Point Smart | A payment attempt is queued from the device: <br> - You must **select the receive option** to get the payment attempt queued. <br> - If you want to cancel the payment attempt, you must **press the home button** and later the device will send a notification to confirm the cancellation. |
+| PointPlus (POS) | A payment attempt is queued from the device: <br/></br> - In order to obtain the request for the payment attempt on the device, **press the green button**. <br> - If you want to cancel the payment attempt, you must **press the red button**.|
+| Point Smart | A payment attempt is queued from the device: <br/></br> - You must **select the receive option** to get the payment attempt queued. <br> - If you want to cancel the payment attempt, you must **press the home button** and later the device will send a notification to confirm the cancellation. |
 
 ------------
 
@@ -246,8 +246,8 @@ In order to cancel the payment attempt from the device, it can only be done if t
 
 | Device | Cancel a payment attempt from the device |
 | --- | --- |
-| Point Pro 1 - Pro 2 | A payment attempt is queued from the device: <br> - In order to obtain the request for the payment attempt on the device, **press the green button**. <br> - If you want to cancel the payment attempt, you must **press the red button**.|
-| Point Smart | A payment attempt is queued from the device: <br> - You must **select the receive option** to get the payment attempt queued. <br> - If you want to cancel the payment attempt, you must **press the home button** and later the device will send a notification to confirm the cancellation. |
+| Point Pro 1 - Pro 2 | A payment attempt is queued from the device: <br/></br> - In order to obtain the request for the payment attempt on the device, **press the green button**. <br> - If you want to cancel the payment attempt, you must **press the red button**.|
+| Point Smart | A payment attempt is queued from the device: <br/></br> - You must **select the receive option** to get the payment attempt queued. <br> - If you want to cancel the payment attempt, you must **press the home button** and later the device will send a notification to confirm the cancellation. |
 
 ------------
 
