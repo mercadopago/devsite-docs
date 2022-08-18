@@ -158,7 +158,6 @@ Se o status do dispositivo é `FREE` quer dizer que o dispositivo pode receber u
 
 O DELETE nesta API possibilita apagar algum dos dispositivos configurados e sincronizados para sua conta de Mercado Pago.
 
-
 ```curl
 curl -X DELETE \
 -H "Content-Type: application/json" \
@@ -175,11 +174,3 @@ A resposta terá o seguinte formato.
 ```
 
 **Response status code: 200 OK**
-
-> PREV_STEP_CARD_PT
->
-> Integrar via Deep Linking
->
-> Saiba como integrar Mercado Pago Point via Deep Linking
->
-> [Integrar via Deep Linking](/developers/pt/docs/mp-point/integration-configuration/integrate-mobile-devices/integrate-via-deep-linking)

@@ -54,11 +54,3 @@ Si realizaste los pasos de configuración de las [notificaciones Webhooks](/deve
 > Nota
 >
 > El simulador te permitirá realizar pagos de prueba, de esta forma, puedes consultar toda la información correspondiente en la sección [API de Pagos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/get).
-
-> PREV_STEP_CARD_ES
->
-> Configurar notificaciones
->
-> Te explicamos cómo comenzar a recibir notificaciones de Webhooks.
->
-> [Configura notificaciones](/developers/es/docs/mp-point/integration-configuration/integrate-with-pdv/notifications)

@@ -302,23 +302,3 @@ Exemplo de resposta:
 > Nota
 >
 > Consulte todas as informações correspondentes ao pagamento na seção [API de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_id/get) de Referência da API.
-
-
-> PREV_STEP_CARD_PT
->
-> Integrar API
->
-> Para integrar, você deve primeiro obter as credenciais de identificação.
->
-> [Integrar API](/developers/pt/docs/mp-point/integration-configuration/integrate-with-pdv/integrate-api)
-
-
-> NEXT_STEP_CARD_PT
->
-> Configurar notificações
->
-> Explicamos como começar a receber notificações Webhooks.
->
-> [Configurar notificações](/developers/pt/docs/mp-point/integration-configuration/integrate-with-pdv/notifications)
-
-

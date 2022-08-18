@@ -33,20 +33,3 @@
 | Via API  | Integração via API é quando as interfaces de um serviço hospedado em um servidor são consumidas para habilitar o modo integrador, ou seja, criar, consultar e deletar ordens a serem executadas pelo fluxo de cobrança no Mercado Pago. <br><br> Esses pedidos são recebidos no aplicativo Mercado Pago por meio de notificações push, abrindo o fluxo de cobranças Point. Veja [Integrar via API](/developers/pt/docs/mp-point/integration-configuration/integrate-mobile-devices/integrate-via-api) para mais informações.  | Point Blue  |
 
 ------------
-
-> PREV_STEP_CARD_PT
->
-> Pré-requisitos
->
-> Conheça os pré-requisitos para integrar com Mercado Pago Point.
->
-> [Pré-requisitos](/developers/pt/docs/mp-point/prerequisites)
-
-
-> NEXT_STEP_CARD_PT
->
-> Configuração da integração
->
-> Saiba como integrar Mercado Pago Point ao seu PDV
->
-> [Integrar com PDV](/developers/pt/docs/mp-point/integration-configuration/integrate-with-pdv/introduction)

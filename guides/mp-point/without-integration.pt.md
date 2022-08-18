@@ -6,6 +6,7 @@ sites_supported:
 ---
 
 # Cobranças com Point sem integração
+
 A partir do aplicativo do Mercado Pago, você tem a opção de cobrar nas suas lojas físicas através do dispositivo Point.
 Você não precisa saber sobre programação.
 

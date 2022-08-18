@@ -33,20 +33,3 @@ Es posible usar Point de dos maneras:
 | Vía API | Como su nombre lo indica es cuando se consumen las  interfaces de un servicio alojado en un servidor para habilitar el modo integrador, crear, consultar, eliminar  órdenes para ejecutar por el flujo de cobro en Mercado Pago. Estas órdenes son recibidas en la app de MP por medio de notificaciones push y esto abre el flujo de cobro point. Consulte [Integrar vía API](/developers/es/docs/mp-point/integration-configuration/integrate-mobile-devices/integrate-via-api) para obtener más información. | Point Blue |
 
 ------------
-
-> PREV_STEP_CARD_ES
->
-> Requisitos previos
->
-> Conoce los requisitos previos para integrarte con Mercado Pago Point.
->
-> [Requisitos previos](/developers/es/docs/mp-point/prerequisites)
-
-
-> NEXT_STEP_CARD_ES
->
-> Configuración de la integración
->
-> Aprende a integrar Mercado Pago Point en tu PDV
->
-> [Integrar con PDV](/developers/es/docs/mp-point/integration-configuration/integrate-with-pdv/introduction)

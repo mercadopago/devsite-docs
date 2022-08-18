@@ -16,20 +16,3 @@ Para oferecer pagamentos com Point, é importante atender aos requisitos mostrad
 > Para as maquininhas **Point mini** e **Point blue**, o aplicativo é necessário para realizar e gerenciar as cobranças. Já para **POS** e **SmartPOS**, o aplicativo é necessário apenas para realizar login com QR Code.
 
 Se todos os requisitos foram cumpridos, siga as etapas seguintes para realizar a integração com Point.
-
-> PREV_STEP_CARD_PT
->
-> Página inicial
->
-> Volte para a página inicial da documentação de Mercado Pago Point
->
-> [Introdução](/developers/pt/docs/mp-point/landing)
-
-
-> NEXT_STEP_CARD_PT
->
-> Tipos de integração
->
-> Conheça os tipos de integração disponíveis para Mercado Pago Point
->
-> [Tipos de integração](/developers/pt/docs/mp-point/types-of-integration)

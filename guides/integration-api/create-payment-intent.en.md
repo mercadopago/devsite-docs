@@ -303,21 +303,3 @@ Sample response:
 > Note
 >
 > Check out all the information corresponding to the payment in the section [Payment API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_id/get) of our API Reference.
-
-> PREV_STEP_CARD_EN
->
-> Integrate API
->
-> To perform an integration, you must first obtain the identification credentials.
->
-> [Integrate API](/developers/en/docs/mp-point/integration-configuration/integrate-with-pdv/integrate-api)
-
-
-> NEXT_STEP_CARD_EN
->
-> Configure notifications
->
-> We’ll explain how to start receiving notifications from Webhooks.
->
-> [Configure notifications](/developers/en/docs/mp-point/integration-configuration/integrate-with-pdv/notifications)
-

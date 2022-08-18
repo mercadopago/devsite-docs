@@ -15,7 +15,6 @@ Existen dos grandes mundos a la hora de integrar Point:
 
 2) Cuando la aplicación no se puede utilizar desde el mismo dispositivo (celular o tablet) donde esta instalada la aplicación de Mercado Pago. Esto se puede lograr con una integración vía API.
 
-
 > WARNING
 >
 > Pre-requisitos
@@ -180,7 +179,6 @@ Si el status del device es `FREE` quiere decir que el dispositivo puede recibir 
 ```
 
 **Response status code: 200 OK**
-
 
 ### Eliminar un device de una cuenta
 

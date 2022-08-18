@@ -54,11 +54,3 @@ If you followed the configuration steps for the [Webhooks notifications](/develo
 > Note
 >
 > The simulator will allow you to make test payments, in this way, you can check out all the information corresponding in the section [Payment API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_id/get).
-
-> PREV_STEP_CARD_EN
->
-> Configure notifications
->
-> We’ll explain how to start receiving notifications from Webhooks.
->
-> [Configure notifications](/developers/en/docs/mp-point/integration-configuration/integrate-with-pdv/notifications)

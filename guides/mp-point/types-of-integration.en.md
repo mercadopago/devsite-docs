@@ -33,20 +33,3 @@ It is possible to use Point in two ways:
 | Via API | Integration via API is when the interfaces of a service hosted on a server are consumed to enable the integrator mode, that is, create, query and delete orders to be executed by the payment flow on Mercado Pago. <br><br> These orders are received in the Mercado Pago app through push notifications, opening the Point billing flow. See [Integrate via API](/developers/en/docs/mp-point/integration-configuration/integrate-mobile-devices/integrate-via-api) for more information. | Point Blue |
 
 ------------
-
-> PREV_STEP_CARD_EN
->
-> Prerequisites
->
-> Check the prerequisites to integrate with Mercado Pago Point.
->
-> [Prerequisites](/developers/en/docs/mp-point/prerequisites)
-
-
-> NEXT_STEP_CARD_EN
->
-> Integration configuration
->
-> Learn how to integrate Mercado Pago Point into your POS
->
-> [Integrate with POS](/developers/en/docs/mp-point/integration-configuration/integrate-with-pdv/introduction)

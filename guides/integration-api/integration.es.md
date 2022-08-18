@@ -105,26 +105,3 @@ Recibirás una respuesta como esta:
 ```
 
 > En caso de que requieras utilizar el dispositivo en el modo no integrado debes configurar el campo `operating_mode` con el valor `STANDALONE`.
-
-
-> PREV_STEP_CARD_ES
->
-> Introducción
->
-> Lee nuestra introducción a API de Integraciones Point.
->
-> [Introducción](/developers/es/docs/mp-point/integration-configuration/integrate-with-pdv/introduction)
-
-> NEXT_STEP_CARD_ES
->
-> Procesar pagos
->
-> Crea una intención de pago y asígnala a un dispositivo Point.
->
-> [Procesar pagos](/developers/es/docs/mp-point/integration-configuration/integrate-with-pdv/create-payment-intent)
-
-
-
-
-
-

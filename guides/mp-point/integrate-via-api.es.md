@@ -25,7 +25,6 @@ El siguiente paso, consiste en generar una orden de pago y enviarsela vía API a
 
 Una vez que el pago es procesado, el usario verá el resultado del pago en la aplicación de Mercado Pago. Finalmente, la orden generada se cerrará y se creará el pago correspondiente.
 
-
 ## Creación de la orden de pago
 
 El POST en esta API genera una orden, que es la que recibe la aplicación de Mercado Pago para cobrar con el Point, con un identificador, que se puede utilizar para saber el estado de la misma.
@@ -126,7 +125,6 @@ curl -X DELETE \
 
 **Response status code: 204 OK**
 
-
 ## Obtener todos los devices de una cuenta
 
 El GET en esta API es la que posibilita obtener todos los devices configurados y sincronizados para tu cuenta de Mercado Pago
@@ -156,11 +154,9 @@ Si el status del device es `FREE` quiere decir que el dispositivo puede recibir 
 
 **Response status code: 200 OK**
 
-
 ## Eliminar un device de una cuenta
 
 El DELETE en esta API es la que posibilita borrar alguno de los devices configurados y sincronizados para tu cuenta de Mercado Pago
-
 
 ```curl
 curl -X DELETE \
@@ -178,11 +174,3 @@ La respuesta tendra el siguiente formato.
 ```
 
 **Response status code: 200 OK**
-
-> PREV_STEP_CARD_ES
->
-> Integración vía Deep Linking
->
-> Aprende a integrar Mercado Pago Point vía Deep Linking.
->
-> [Integración vía Deep Linking](/developers/es/docs/mp-point/integration-configuration/integrate-mobile-devices/integrate-via-deep-linking)

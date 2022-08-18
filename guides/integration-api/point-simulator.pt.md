@@ -54,11 +54,3 @@ Se você executou as etapas de configuração para as [notificações de Webhook
 > Nota
 >
 > O simulador permitirá que você faça pagamentos de teste, desta forma, você pode consultar todas as informações correspondentes na seção [API de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_id/get).
-
-> PREV_STEP_CARD_PT
->
-> Configurar notificações
->
-> Explicamos como começar a receber notificações de Webhooks.
->
-> [Configurar notificações]()

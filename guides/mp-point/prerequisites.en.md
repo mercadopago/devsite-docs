@@ -16,20 +16,3 @@ To offer payments with Point, it is important to meet the requirements shown bel
 > For **Point mini** and **Point blue** machines, the app is required to perform and manage charges. For **POS** and **SmartPOS**, the app is only needed to login with QR Code.
 
 If all requirements have been met, follow the steps below to perform the integration with Point.
-
-> PREV_STEP_CARD_EN
->
-> Home page
->
-> Return to the Mercado Pago Pointgo Point documentation home page
->
-> [Introduction](/developers/en/docs/mp-point/landing)
-
-
-> NEXT_STEP_CARD_EN
->
-> Types of integration
->
-> Check the types of integration available for Mercado Pago Point
->
-> [Types of integration](/developers/en/docs/mp-point/types-of-integration)
