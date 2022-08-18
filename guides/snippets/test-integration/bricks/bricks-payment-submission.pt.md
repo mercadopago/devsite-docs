@@ -14,15 +14,9 @@ Tenha em conta que para que esse passo funcione é necessário que configure sua
 > 
 > Importante
 >
-> Lembre-se que antes de chamar nossa API é uma boa oportunidade para validar se todos os
-dados que você está prestes a nos enviar estão corretos.<br/></br>
+> Antes de realizar a chamada da API é importante validar se os dados que serão enviados estão corretos. Por isso, caso você já possua algum tipo de sessão em seu servidor de integração no qual as informações de contexto de compra estão armazenadas, você pode utilizá-las a fim de comparar os dados recebidos do frontend. <br/></br>
 > <br/></br>
-> Se você já possui algum tipo de sessão em seu servidor de integração onde as informações
-de contexto de compra estão armazenadas, você pode usar essas informações para compará-
-las com os dados recebidos do frontend.<br/></br>
-> <br/></br>
-> Também nesta fase pode adicionar outros dados para enriquecer a informação de pagamento
-que nos envia. Acesse a [seção de pagamentos](/developers/pt/reference/payments/_payments/post) da API Reference para conhecer todos os dados que é possível enviar.
+> Também nesta fase é possível adicionar outros dados para incrementar a informação de pagamento que é enviada ao Mercado Pago. Veja a [seção de pagamentos](/developers/pt/reference/payments/_payments/post) da API Reference para mais detalhes sobre quais dados podem ser enviados. 
 
 [[[
 ```php

@@ -14,15 +14,9 @@ For this to work, you should configure your [private key](/developers/en/guides/
 > 
 > Important
 >
-> Remember that before calling our API it is a good opportunity to validate that all
-data you are about to send us is correct.<br/></br>
+> Before making the API call, it is important to validate that the data that will be sent is correct. So, if you already have some kind of session on your integration server where the purchase context information is stored, you can use it to compare the data received from the frontend. <br/></br>
 > <br/></br>
-> If you already have some kind of session on your integration server where the information
-of purchase context are stored, you can use this information to compare
-them with the data received from the frontend.<br/></br>
-> <br/></br>
-> Also at this stage you can add other data to enrich the payment information
-who sends us. Go to the [payments section](/developers/en/reference/payments/_payments/post) of the API Reference to check all the data you can send.
+> Also at this stage it is possible to add other data to increase the payment information that is sent to Mercado Pago. See the [payments section](/developers/en/reference/payments/_payments/post) of the API Reference for more details on what data can be sent.
 
 [[[
 ```php
