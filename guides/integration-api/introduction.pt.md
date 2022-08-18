@@ -25,6 +25,7 @@ A API de integrações Point permite que você conecte seus pontos de venda (PDV
 >
 > - Point Pro 1
 > - Point Pro 2
+> - Point Smart
 >
 > Você pode adquirir seu dispositivo Point em nossa [loja oficial](https://www.mercadopago.com.br/point)
 

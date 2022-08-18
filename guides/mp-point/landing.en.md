@@ -54,7 +54,7 @@ bullet_section_with_media:
  - benefit_message: 
  - benefit_title: Point Mini Chip
  - benefit_message: 
- - benefit_title: Point Pro2
+ - benefit_title: Point Pro 2
  - benefit_message:
  - benefit_title: Point Smart
  - benefit_message:

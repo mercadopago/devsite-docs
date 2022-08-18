@@ -70,7 +70,6 @@ curl -X POST \
 
 You can generate up to 10 test user accounts simultaneously. Keep in mind that test users expire after 60 days without activity in Mercado Pago.
 
-
 ## 2. Associate your Point device with your Mercado Pago account
 
 Now you need to link your Point device to your Mercado Pago account. In order to do that, you need to have our application on your cell phone. You can get it for the operating systems [iOS](https://itunes.apple.com/ar/app/mercado-pago/id925436649?mt=8) and [Android](https://play.google.com/store/apps/details?id=com.mercadopago.wallet&hl=es_419).
@@ -79,7 +78,6 @@ You must also have a Point device.
 ### Scan the QR code of your Point device
 
 First, log into the Mercado Pago application. Then, click on the QR icon and scan the code that displays when you turn on your Point device. And that’s it, your Point device will be linked to your account.
-
 
 ### Configure your store and your point of sale
 
@@ -97,6 +95,15 @@ To integrate your Point device with our API it is necessary to activate the poin
    "operating_mode": "PDV"
 }'
 ```
+
+----[mlb, mla]----
+> NOTE
+> 
+> Important
+> 
+> The POS API integrated mode is only available to be operated by a store operator. If it is implemented in self-service mode, it will be the full responsibility of the business since the devices are not enabled to be used in this type of business model.
+
+------------
 
 You will receive a response like this:
 

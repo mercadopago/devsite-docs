@@ -84,10 +84,11 @@ Pronto! Seu dispositivo Point será vinculado à sua conta.
 
 Depois de vincular seu dispositivo Point à sua conta do Mercado Pago, você deve preencher seus dados comerciais e configurar sua caixa registradora no [site do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]). Para fazer isso, você deve inserir as informações em **Sua loja > Lojas e caixas**.
 
-
 ### Ative o modo integrado no seu dispositivo Point
 
 Para integrar seu dispositivo Point com a nossa API, é necessário ativar o modo de operação ponto de venda (PDV). Para fazer isso, execute o seguinte comando:
+
+
 
 ``` bash
 curl --location --request PATCH 'https://api.mercadopago.com/point/integration-api/devices/:deviceId' \
@@ -98,6 +99,15 @@ curl --location --request PATCH 'https://api.mercadopago.com/point/integration-a
 }'
 ```
 
+----[mlb, mla]----
+> NOTE
+> 
+> Importante
+> 
+> O modo integrado da API para PDVs está disponível apenas para ser operado por um operador de loja. Caso seja implementado em modo de autoatendimento, será de total responsabilidade do negócio, uma vez que os dispositivos não estão habilitados para serem utilizados neste tipo de modelo de negócio.
+
+------------
+
 Você receberá uma resposta como esta:
 
 ``` json
@@ -106,8 +116,4 @@ Você receberá uma resposta como esta:
 }
 ```
 
-> NOTE
->
->Nota
->
 > Caso necessite usar o dispositivo em modo não integrado, deve-se configurar o campo `operating_mode` com o valor `STANDALONE`.

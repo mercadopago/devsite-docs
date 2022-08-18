@@ -96,6 +96,15 @@ Para integrar tu dispositivo Point con nuestra API es necesario activar el modo 
 }'
 ```
 
+----[mlb, mla]----
+> NOTE
+> 
+> Importante
+> 
+> El modo integrado de API para PDVs solo está disponible para ser operado por medio de un operador de la tienda. En caso de implementarse en modo self-service será de total responsabilidad del comercio ya que los dispositivos no están habilitados para ser usados en este tipo de modelo de negocio. 
+
+------------
+
 Recibirás una respuesta como esta:
 
 ``` json 

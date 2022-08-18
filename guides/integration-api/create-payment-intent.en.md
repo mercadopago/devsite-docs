@@ -209,6 +209,15 @@ You will receive a response like this:
 
 You can cancel a payment intent assigned to a Point device in the following way:
 
+----[mlb, mla]----
+> WARNING
+>
+> Attention
+>
+> It will only be possible to cancel a payment intent from the device if payment processing has not started.
+
+------------
+
 ``` curl
 curl --location --request DELETE 'https://api.mercadopago.com/point/integration-api/devices/:deviceId/payment-intents/:paymentIntentId' \
 --header 'Authorization: Bearer ${ACCESS_TOKEN}' \
@@ -221,6 +230,26 @@ You will receive this response:
  "id": "7d8c70b6-2ac8-4c57-a441-c319088ca3ca"
 }
 ```
+
+----[mla]----
+In order to cancel the payment attempt from the device, it can only be done if the payment processing has not been started.
+
+| Device | Cancel a payment attempt from the device |
+| --- | --- |
+| PointPlus (POS) | A payment attempt is queued from the device: <br> - In order to obtain the request for the payment attempt on the device, **press the green button**. <br> - If you want to cancel the payment attempt, you must **press the red button**.|
+| Point Smart | A payment attempt is queued from the device: <br> - You must **select the receive option** to get the payment attempt queued. <br> - If you want to cancel the payment attempt, you must **press the home button** and later the device will send a notification to confirm the cancellation. |
+
+------------
+
+----[mlb]----
+In order to cancel the payment attempt from the device, it can only be done if the payment processing has not been started.
+
+| Device | Cancel a payment attempt from the device |
+| --- | --- |
+| Point Pro 1 - Pro 2 | A payment attempt is queued from the device: <br> - In order to obtain the request for the payment attempt on the device, **press the green button**. <br> - If you want to cancel the payment attempt, you must **press the red button**.|
+| Point Smart | A payment attempt is queued from the device: <br> - You must **select the receive option** to get the payment attempt queued. <br> - If you want to cancel the payment attempt, you must **press the home button** and later the device will send a notification to confirm the cancellation. |
+
+------------
 
 ## Process your payment intent
 

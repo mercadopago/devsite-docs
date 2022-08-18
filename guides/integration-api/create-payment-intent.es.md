@@ -210,6 +210,15 @@ Como respuesta, recibirás algo similar a esto:
 
 Puedes cancelar una intención de pago asignada a un dispositivo Point de la siguiente manera:
 
+----[mlb, mla]----
+> WARNING
+>
+> Atención
+>
+> Solo será posible cancelar un intento de pago desde el dispositivo si no se ha iniciado el procesamiento del pago.
+
+------------
+
 ``` curl
 curl --location --request DELETE 'https://api.mercadopago.com/point/integration-api/devices/:deviceId/payment-intents/:paymentIntentId' \
 --header 'Authorization: Bearer ${ACCESS_TOKEN}' \
@@ -222,6 +231,22 @@ Obtendrás esta respuesta:
   "id": "7d8c70b6-2ac8-4c57-a441-c319088ca3ca"
 }
 ```
+
+----[mla]----
+| Dispositivo |  Cancelar un intento de pago desde el dispositivo |
+| --- | --- |
+| Point Plus (POS) | Se encola un intento de pago desde el dispositivo: <br> - Para poder obtener la petición del intento de pago en el dispositivo se debe **presionar  el botón verde**. <br> - En caso de querer cancelar el intento de pago se debe **presionar el botón rojo**.|
+| Point Smart | Se encola un intento de pago desde el dispositivo: <br> - Se debe **seleccionar la opción de cobrar** para obtener el intento de pago encolado. <br> - En caso de querer hacer la cancelación del intento de pago se debe **presionar el botón home** y posteriormente el dispositivo enviará una notificación para hacer la confirmación de la cancelación. |
+
+------------
+
+----[mlb]----
+| Dispositivo |  Cancelar un intento de pago desde el dispositivo |
+| --- | --- |
+| Point Pro 1 - Pro 2 | Se encola un intento de pago desde el dispositivo: <br> - Para poder obtener la petición del intento de pago en el dispositivo se debe **presionar  el botón verde**. <br> - En caso de querer cancelar el intento de pago se debe **presionar  el botón rojo**.|
+| Point Smart | Se encola un intento de pago desde el dispositivo: <br> - Se debe **seleccionar la opción de cobrar** para obtener el intento de pago encolado. <br> - En caso de querer hacer la cancelación del intento de pago se debe **presionar el botón home** y posteriormente el dispositivo enviará una notificación para hacer la confirmación de la cancelación. |
+
+------------
 
 ## Procesa tu intención de pago
 
