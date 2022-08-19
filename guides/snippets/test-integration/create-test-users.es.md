@@ -2,7 +2,7 @@ Se requieren cuentas de prueba para verificar que el proceso de incorporación s
 
 Para realizar la prueba, debes tener al menos dos cuentas:
 
-* **Usuario/Vendedor**: cuenta requerida para **configurar la aplicación y las credenciales de facturación**. Esta es tu cuenta de usuario.
+* **Vendedor**: cuenta requerida para **configurar la aplicación y las credenciales de facturación**. Esta es tu cuenta de usuario.
 * **Comprador**: cuenta necesaria para **probar el proceso de compra**.
 
 Además de estas cuentas, también es importante utilizar las [tarjetas de prueba](/developers/es/guides/additional-content/testing/test-cards) para probar la integración de pago y simular el proceso de compra, así como el **saldo en la cuenta de Mercado Pago del usuario de prueba**. Te mostramos más detalles a continuación.
@@ -14,7 +14,7 @@ Para crear cuentas y probar cómo funcionan las integraciones, sigue los pasos a
 1. En el [Devsite](/developers/es/docs), accede al menú **Tus integraciones > Cuentas de prueba** y haz clic en el botón **Crear cuenta de prueba**.
 2. En la pantalla "Crear nueva cuenta", ingresa una descripción para la identificación de la cuenta. Ejemplo: "Vendedor - Tienda 1".
 3. Luego, selecciona el **país de operación** para la cuenta. Esta información **no se puede editar posteriormente** y, además, los usuarios Comprador y Vendedor deben ser del mismo país.
-4. Rellena una **cantidad de dinero ficticio** que te servirá de referencia para probar tus aplicaciones. Este monto aparecerá como saldo en la cuenta de Mercado Pago del usuario de prueba y podrá ser utilizado para simular pagos, así como con tarjeta de crédito.
+4. Rellena una **cantidad de dinero ficticio** que te servirá de referencia para probar tus aplicaciones. Este monto aparecerá como saldo en la cuenta de Mercado Pago del usuario de prueba y podrá ser utilizado para simular pagos, así como con las [tarjetas de prueba](/developers/es/guides/additional-content/testing/test-cards).
 5. Haz clic en **Crear cuenta de prueba**.
 
 > Puede generar hasta 15 cuentas de usuario de prueba al mismo tiempo y aún no es posible eliminarlas.
