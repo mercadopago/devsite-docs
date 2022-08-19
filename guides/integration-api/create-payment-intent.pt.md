@@ -208,6 +208,11 @@ Em resposta, você receberá algo semelhante a isso:
 
 Você pode cancelar uma intenção de pagamento atribuída a um dispositivo Point da seguinte forma:
 
+``` curl
+curl --location --request DELETE 'https://api.mercadopago.com/point/integration-api/devices/:deviceId/payment-intents/:paymentIntentId' \
+--header 'Authorization: Bearer ${ACCESS_TOKEN}' \
+```
+
 ----[mlb, mla]----
 > WARNING
 >
@@ -216,11 +221,6 @@ Você pode cancelar uma intenção de pagamento atribuída a um dispositivo Poin
 > Só será possível cancelar uma intenção de pagamento do dispositivo se o processamento do pagamento não tiver sido iniciado.
 
 ------------
-
-``` curl
-curl --location --request DELETE 'https://api.mercadopago.com/point/integration-api/devices/:deviceId/payment-intents/:paymentIntentId' \
---header 'Authorization: Bearer ${ACCESS_TOKEN}' \
-```
 
 Você receberá esta resposta:
 
