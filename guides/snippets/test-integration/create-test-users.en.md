@@ -15,6 +15,10 @@ To create accounts and test how the integrations work, follow the steps below.
 4. Fill in a **fictitious amount of money** that will serve as a reference for you to test your applications. This amount will appear as a balance in the test user's Mercado Pago account and can be used to simulate payments, as well as with a [test card](/developers/en/guides/additional-content/testing/test-cards).
 5. Click **Create Test Account**.
 
+> WARNING
+>
+> Attention
+>
 > You can generate up to 15 test user accounts at the same time and it is not yet possible to delete them at the moment.
 
 Ready! The test account has been created and will be displayed in the table with the following information:

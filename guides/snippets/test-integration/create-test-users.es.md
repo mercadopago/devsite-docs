@@ -7,7 +7,7 @@ Para realizar la prueba, debes tener al menos dos cuentas:
 
 Además de estas cuentas, también es importante utilizar las [tarjetas de prueba](/developers/es/guides/additional-content/testing/test-cards) para probar la integración de pago y simular el proceso de compra, así como el **saldo en la cuenta de Mercado Pago del usuario de prueba**. Te mostramos más detalles a continuación.
 
-![testuser](test-user/test-user-admin-es.gif)
+![testuser](test-user/test-user-es.gif)
 
 Para crear cuentas y probar cómo funcionan las integraciones, sigue los pasos a continuación.
 
@@ -17,6 +17,10 @@ Para crear cuentas y probar cómo funcionan las integraciones, sigue los pasos a
 4. Rellena una **cantidad de dinero ficticio** que te servirá de referencia para probar tus aplicaciones. Este monto aparecerá como saldo en la cuenta de Mercado Pago del usuario de prueba y podrá ser utilizado para simular pagos, así como con las [tarjetas de prueba](/developers/es/guides/additional-content/testing/test-cards).
 5. Haz clic en **Crear cuenta de prueba**.
 
+> WARNING
+>
+> Atención
+>
 > Puede generar hasta 15 cuentas de usuario de prueba al mismo tiempo y aún no es posible eliminarlas.
 
 ¡Listo! La cuenta de prueba se ha creado y se mostrará en la tabla con la siguiente información:

@@ -7,7 +7,7 @@ Para realizar um teste é preciso ter pelo menos duas contas:
 
 Além dessas contas, é importante também utilizar os [cartões de teste](/developers/pt/guides/additional-content/testing/test-cards) para testar a integração de pagamento e simular o processo de compra, assim como o **saldo na conta do Mercado Pago do usuário de teste**. Veja mais detalhes abaixo.
 
-![testuser](test-user/admin-test-user-pt.gif)
+![testuser](test-user/test-user-pt.png)
 
 Para criar contas e testar o funcionamento das integrações, siga os passos abaixo.
 
@@ -17,6 +17,10 @@ Para criar contas e testar o funcionamento das integrações, siga os passos aba
 4. Preencha com um **valor fictício em dinheiro** que servirá como referência para você testar suas aplicações. Esse valor aparecerá como saldo na conta do Mercado Pago do usuário de teste e poderá ser utilizado para simulação de pagamentos, assim como com os [cartões de teste](/developers/pt/guides/additional-content/testing/test-cards).
 5. Clique em **Criar conta de teste**. 
 
+> WARNING
+>
+> Atenção
+>
 > Você pode gerar até 15 contas de usuários de teste ao mesmo tempo e, por enquanto, ainda não é possível deletá-las.
 
 Pronto! A conta de teste foi criada e será exibida na tabela com as seguintes informações:
