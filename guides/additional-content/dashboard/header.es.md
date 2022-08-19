@@ -13,19 +13,3 @@ Número único que te identifica como miembro del **&lt;dev&gt;program** generad
 El **&lt;dev&gt;program** es un programa de beneficios para desarrolladores exclusivo y gratuito, diseñado para que seas parte de nuestra comunidad y recibas beneficios adicionales. Para participar, debes aprobar algunas de las certificaciones oficiales de Mercado Pago.
  
 Consulta la página del [&lt;dev&gt;program](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/developer-program) y realiza la certificación del producto deseado, recibe tu ID de integrador e introdúcelo en tus integraciones para recibir beneficios adicionales.
-
-> PREV_STEP_CARD_ES
->
-> Introducción
->
-> Vea las principales características del Dashboard.
->
-> [Introducción](/developers/es/guides/additional-content/dashboard/introduction)
-
-> NEXT_STEP_CARD_ES
->
-> Tus aplicaciones
->
-> Accede a información acerca de tus aplicaciones creadas.
->
-> [Tus aplicaciones](/developers/es/guides/additional-content/dashboard/applications)

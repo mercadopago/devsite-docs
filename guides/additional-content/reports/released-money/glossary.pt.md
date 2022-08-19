@@ -22,7 +22,7 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 | COUPON_AMOUNT | Valor do cupom de desconto. Apenas o valor bruto (`GROSS_AMOUNT`) é descontado se fornecido pelo vendedor. |
 | INSTALLMENTS | Número de parcelas em que a transação foi realizada. |
 | PAYMENT METHOD | Meios de pagamentos disponíveis de acordo com o país com o qual você opera no Mercado Pago. |
-| TAX_DETAIL | <br/> Descrição do imposto retido por operação no `TAXES_AMOUNT`. ----[mla]---- Você pode considerar os seguintes valores conforme a jurisdição: <br/>cordoba<br/>corrientes<br/>mendoza<br/>la_pampa<br/>santa_fe<br/>tucuman<br/>entre_rios<br/>catamarca<br/>neuquen<br/>santiago_del_estero<br/>rio_negro<br/>jujuy ------------ ----[mco]---- Você pode considerar os seguintes valores conforme a jurisdição: <br/>fuente<br/>iva<br/>ica<br/>gmf<br/>------------<br/><br/> |
+| TAX_DETAIL | <br/> Descrição do imposto retido por operação no `TAXES_AMOUNT`. ----[mla]---- Você pode considerar os seguintes valores conforme a jurisdição: <br/>cordoba<br/>corrientes<br/>mendoza<br/>la_pampa<br/>santa_fe<br/>tucuman<br/>entre_rios<br/>catamarca<br/>neuquen<br/>santiago_del_estero<br/>rio_negro<br/>jujuy ------------ ----[mco]---- Você pode considerar os seguintes valores conforme a jurisdição: <br/>fuente<br/>iva<br/>ica<br/>Imposto 4x1000 (GMF)<br/>------------<br/><br/> |
 | TAX_AMOUNT_TELCO | É o valor do imposto às empresas de telecomunicação descontado do valor bruto. |
 | TRANSACTION_APPROVAL_DATE | Data de aprovação da operação. |
 | POS_ID | ID do caixa, se o pagamento é feito através de um comércio físico. |

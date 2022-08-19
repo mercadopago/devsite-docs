@@ -85,9 +85,9 @@ No se presentan cambios en la documentación.
 >
 > PRODUCT: MAGENTO 2
 
-Lanzamos la nueva versión 3.16.0 para Magento 2.
+Lanzamos la nueva versión 3.16.0 para Magento 2. 
 
-[Ir a documentación de Magento 2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/magento-two/introduction)
+[Ir a documentación de Magento 2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/magento-two/landing)
 
 > GIT
 >

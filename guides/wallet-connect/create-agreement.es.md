@@ -6,7 +6,7 @@ El _agreement_ almacena los medios de pago seleccionados por el pagador y permit
 
 Consulte el siguiente diagrama que ilustra cómo funciona el flujo de creación de un agreement.
 
-![Crear agreement](/images/wallet-connect/create-agreement.es.png)
+![Crear agreement](/images/wallet-connect/new-create-agreement.es.png)
 
 Para crear un _agreement_, envía un **POST** con los atributos necesarios al endpoint [/v2/wallet_connect/agreements](/developers/es/reference/wallet_connect/_wallet_connect_agreements/post) y ejecuta la solicitud. En la respuesta, presta atención a dos parámetros que serán necesarios para obtener la aprobación del pagador: `agreement_uri` y `return_uri`.
 
