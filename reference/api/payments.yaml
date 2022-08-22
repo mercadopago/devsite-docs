@@ -1975,19 +1975,29 @@ paths:
               properties:
                 capture:
                   type: boolean
-                  description: Determines if the payment should be captured (true, default value) or just reserved (false).
-                  x-description-i18n:
-                    eng: Determines if the payment should be captured (true, default value) or just reserved (false).
-                    spa: Determina si el pago debe capturarse (true, es el valor default) o reservarse solo (false).
-                    por: Determina se o pagamento deve ser capturado (true, é o valor padrão) ou apenas reservado (false).                  
+                  description: 
+                    Determines if the payment should be captured (true, default
+                    value) or just reserved (false).
                   example: true
+                date_of_expiration:
+                  type: string
+                  format: date
+                  description: Payment’s expiration date.
+                  x-description-i18n:
+                    eng: Payment’s expiration date.
+                    spa: Fecha de expiración del pago
+                    por: Data de expiração do pagamento
+                metadata:
+                  type: object
+                  description: The metadata object shows (if used in the integration) the JSON sent by the client containing additional information that needs to be recorded in the payment.
+                  x-description-i18n:
+                    eng: The metadata object shows (if used in the integration) the JSON sent by the client containing additional information that needs to be recorded in the payment.
+                    spa: En el objeto metadata se muestra (en caso de ser utilizado en la integración) el JSON enviado por el cliente con información complementaria que necesite mantener registrada en el pago.
+                    por: O objeto de metadata mostra (se usado na integração) o JSON enviado pelo cliente com informações adicionais que precisam ser registradas no pagamento.
                 status:
                   type: string
-                  description: Determines if the payment should be cancelled
-                  x-description-i18n:
-                    eng: Determines if the payment should be cancelled
-                    spa: Determina si el pago debe ser cancelado
-                    por: Determina se o pagamento deve ser cancelado
+                  description: 
+                    Determines if the payment should be cancelled
                   example: "cancelled"
                 transaction_amount:
                   type: number

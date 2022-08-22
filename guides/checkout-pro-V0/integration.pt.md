@@ -340,7 +340,7 @@ curl -X POST \
 >
 > h3
 >
-> &nbsp;2. Adicione o Checkout Pro ao seu _site_
+> &nbsp;2. Adicione o Checkout Pro ao seu site
 
 Inclua o SDK `MercadoPago.js` V2 no seu projeto:
 

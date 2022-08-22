@@ -57,9 +57,9 @@ We have released the new version 6.0.0 for WooCommerce.
 >
 > PRODUCT: MAGENTO 2
 
-We have released the new version 3.16.0 for Magento 2.
+We have released the new version 3.16.0 for Magento 2. 
 
-[Go to Magento 2 documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/magento-two/introduction)
+[Go to Magento 2 documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/magento-two/landing)
 
 > GIT
 >

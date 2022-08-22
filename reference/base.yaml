@@ -48,7 +48,7 @@ tags:
       en: 'Mercado Pago Point'
       es: 'Mercado Pago Point'
     externalDocs: 
-      url: '/guides/in-person-payments/mp-point/introduction'
+      url: '/docs/mp-point/introduction'
   checkout-api:
     description:
       pt: 'Checkout Transparente'

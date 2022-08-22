@@ -17,4 +17,4 @@ To install the module manually, follow the steps below:
 >
 > After configuring the Checkout API to receive payments, learn how to configure sending emails that will notify the user of their transactions.
 >
-> [How to customize payment notification for Checkout API](/developers/en/docs/prestashop/how-tos/checkout-api/email-customization)
+> [How to customize payment notification for Checkout API](/developers/en/docs/prestashop/how-tos/email-customization)
