@@ -29,19 +29,3 @@ A loja Shopify exibirá os campos de solicitação de identificação pessoal do
     * **Address company blank**
     * **Address – Company**
 6. Clique em Salvar.
-
-> PREV_STEP_CARD_PT
->
-> Instalação
->
-> Aprenda a instalar o Checkout Pro na sua loja Shopify.
->
-> [Instalação](/developers/pt/docs/shopify/checkout-pro-ppp/installation)
-
-> NEXT_STEP_CARD_PT
->
-> Realizar um teste
->
-> Faça uma compra de teste para certificar-se de que o Checkout Pro funciona corretamente.
->
-> [Realizar um teste](/developers/pt/docs/shopify/checkout-pro-ppp/integration-test) 

@@ -8,19 +8,3 @@ Para integrar o Checkout Transparente do Mercado Pago na sua loja Shopify, você
 | Credenciais	 | As [credenciais](/developers/pt/docs/shopify/additional-content/credentials) são senhas únicas com as quais identificamos uma integração na sua conta, e são usadas para capturar pagamentos em lojas online e outras aplicações de forma segura. |
 | Loja da Shopify | Você precisará ter uma loja criada na Shopify. Se você ainda não tem uma, [acesse aqui](https://www.shopify.com). |
 | Checkout Pro | Para integrar o Checkout Transparente, você deve ter o Checkout Pro na sua loja da Shopify. Para saber como integrá-lo, consulte a [documentação](/developers/pt/docs/shopify/introduction). |
-
-> PREV_STEP_CARD_PT
->
-> Introdução
->
-> Conheça os benefícios de integrar o Checkout Transparente.
->
-> [Introdução](/developers/pt/docs/shopify/checkout-transparente/introduction)
-
-> NEXT_STEP_CARD_PT
->
-> Instalação
->
-> Aprenda a instalar o Checkout Transparente na sua loja Shopify.
->
-> [Instalação](/developers/pt/docs/shopify/checkout-transparente/installation)

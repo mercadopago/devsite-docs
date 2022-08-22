@@ -8,19 +8,3 @@ To integrate Mercado Pago’s Checkout Transparente with your Shopify store, you
 | Credentials	 | [Credentials](/developers/en/docs/shopify/additional-content/credentials) are unique passwords that we use to identify an integration in your account and serve to capture payments in online stores and other applications in a secure way. |
 | Shopify Store | You must have a store created in Shopify. If you don't have one yet, [access here](https://www.shopify.com). |
 | Checkout Pro | To integrate Checkout Transparente you must have Checkout Pro in your Shopify store. To learn how to integrate it, go to the [documentation](/developers/en/docs/shopify/introduction). |
-
-> PREV_STEP_CARD_EN
->
-> Introduction
->
-> Discover the benefits of integrating Checkout Transparent.
->
-> [Introduction](/developers/en/docs/shopify/checkout-transparente/introduction)
-
-> NEXT_STEP_CARD_EN
->
-> Installation
->
-> Learn how to install Checkout Transparente in your Shopify store.
->
-> [Installation](/developers/en/docs/shopify/checkout-transparente/installation)

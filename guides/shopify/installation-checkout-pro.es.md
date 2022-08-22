@@ -12,19 +12,3 @@ Para instalar Checkout Pro en una tienda Shopify, sigue los pasos a continuació
 8. Al finalizar, haz clic en **Activar Mercado Pago**. 
 
 > En caso de renovar tus credenciales, recuerda reemplazar tanto las de producción como las de pruba en tu integración.
-
-> PREV_STEP_CARD_ES
->
-> Requisitos previos
->
-> Qué necesitas para integrar Mercado pago a tu tienda de Shopify.
->
-> [Requisitos previos](/developers/es/docs/shopify/checkout-pro/requirements)
-
-> NEXT_STEP_CARD_ES
->
-> Configuración
->
-> Aprende a configurar Checkout Pro en tu tienda Shopify.
->
-> [Configuración](/developers/es/docs/shopify/checkout-pro/configuration)

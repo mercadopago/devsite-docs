@@ -16,12 +16,3 @@ Os testes de compras ajudam a garantir que os pagamentos sejam processados corre
 > Importante
 >
 > Ao finalizar a compra de teste com o Checkout Pro, esta não aparecerá como aprovada no Painel Administrativo da Shopify já que o processo foi realizado dentro do ambiente do Mercado Pago e não no entorno da loja. Ou seja, o pedido será gerado automaticamente, mas não aparecerá como pago. Além disso, as informações do pagamento aprovado não aparecerão no histórico da conta do Mercado Pago uma vez que este apenas contém despesas reais, feitas na produção.
-
-
-> PREV_STEP_CARD_PT
->
-> Configuração
->
-> Aprenda a configurar o Checkout Pro na sua loja Shopify.
->
-> [Configuração](/developers/pt/docs/shopify/checkout-pro/configuration)

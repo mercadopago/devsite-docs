@@ -15,11 +15,3 @@ The test purchases ensure that payments are processed correctly before allowing 
 > Important
 >
 > The approved payment information will not appear in the Mercado Pago account history as it only contains actual expenses, made in production.
-
-> PREV_STEP_CARD_EN
->
-> Configuration
->
-> Learn how to set up Checkout Transparente in your Shopify store.
->
-> [Configuration](/developers/en/docs/shopify/checkout-transparente/configuration)

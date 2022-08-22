@@ -29,20 +29,3 @@ The Shopify store will display the request fields of the buyer's identification 
     * **Address company blank**
     * **Address – Company**
 6. Click on Save.
-
-
-> PREV_STEP_CARD_EN
->
-> Installation
->
-> Learn how to install Checkout Pro in your Shopify store.
->
-> [Installation](/developers/en/docs/shopify/checkout-pro-ppp/installation)
-
-> NEXT_STEP_CARD_EN
->
-> Make a test
->
-> Make a test purchase to ensure that Checkout Pro is working smoothly.
->
-> [Make a test](/developers/en/docs/shopify/checkout-pro-ppp/integration-test)
