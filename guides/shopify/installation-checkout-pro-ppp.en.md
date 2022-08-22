@@ -7,7 +7,7 @@ To install Checkout Pro in a Shopify store, follow the steps below:
 3. Once there, select the **Payments** option. 
 4. In **Additional payment methods**, click on the **Add payment methods** option.
 5. Type Mercado Pago in the search bar. Once you find it, click on the **available** option.
-6. Enter your **production credentials** Client_id and Client_secret in the fields that require them. Remember to keep your [credentials](/developers/en/docs/shopify/additional-content/credentials) handy.
+6. Enter your **production credentials** (`public key` and `access token`) in the fields that require them. Remember to keep your [credentials](/developers/en/docs/shopify/additional-content/credentials) handy.
 7. In the next step, you will be able to select the images of the payment methods you want to display in the store. **Important: these images are for illustrative purposes only and do not imply the activation of the payment method selected**.
 8. Lastly, the store will offer you the option to **Enable test mode**. Activate this option if you prefer the store to remain in a test environment and not published to customers. **To switch the store to productive mode and receive actual payments, keep this change disabled**. 
 9. To finish, click on **Activate Mercado Pago**.
