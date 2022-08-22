@@ -12,7 +12,7 @@ Next, we will explain how to configure each item of the plugin. Click on the tit
 ## Integrate store to Mercado Pago
 
 Test and production credentials are requested in this field.
-1. Click on the **Check credentials** button to enter the Mercado Pago panel and see your credentials. **Important**: Please note that test credentials will be requested first and then production credentials.
+1. Click on the **Check credentials** button to enter the Mercado Pago panel and see your credentials. You can also access your credentials at [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel). **Important**: Please note that test credentials will be requested first and then production credentials.
 2. Complete the requested fields and click **Save and continue**.
 
 ## Business personalization
@@ -29,18 +29,3 @@ Click **Save and Continue**.
 Under **Advanced Settings**, configure options related to saving information to a file for debugging technical issues
 
 
-> PREV_STEP_CARD_EN
->
-> Installation
->
-> Learn how to install the Mercado Pago plugin with WooCommerce.
->
-> [Installation](/developers/en/docs/woocommerce/installation)
-
-> NEXT_STEP_CARD_EN
->
-> Configure the payment methods
->
-> Learn how to configure the different payment methods in the store.
->
-> [Configure the payment methods](/developers/es/docs/woocommerce/integration-configuration/payments-configuration)

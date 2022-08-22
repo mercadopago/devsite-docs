@@ -19,19 +19,3 @@ Você pode optar por configurar estes métodos de pagamento:
 ----[mlb]----
 * [Pix](/developers/pt/docs/woocommerce/integration-configuration/payments-configuration/offline-payments)
 ------------
-
-> PREV_STEP_CARD_PT
->
-> Configuração do plugin
->
-> Aprenda a configurar o plugin do Mercado Pago com WooCommerce.
->
-> [Configuração do plugin](/developers/pt/docs/woocommerce/integration-configuration/plugin-configuration)
-
-> NEXT_STEP_CARD_PT
->
-> Configurar o Checkout Pro
->
-> Integrar o Checkout Pro como meio de pagamento na loja.
->
-> [Configurar o Checkout Pro](/developers/pt/docs/woocommerce/integration-configuration/payments-configuration/checkoutpro)

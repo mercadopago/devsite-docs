@@ -51,19 +51,3 @@ To activate test mode for your store, follow these steps:
 ------------
 
 
-> PREV_STEP_CARD_EN
->
-> Configure payment notifications
->
-> Enable IPN notifications in your integration.
->
-> [Configure notifications](/developers/en/docs/woocommerce/integration-configuration/notifications)
-------------
-
-> NEXT_STEP_CARD_EN
->
-> Go to production
->
-> Activate the store and go to production.
->
-> [Go to production](/developers/en/docs/woocommerce/goto-production)

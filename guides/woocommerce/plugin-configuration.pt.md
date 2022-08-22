@@ -12,7 +12,7 @@ A seguir, explicaremos como configurar cada item do plugin. Clique nos títulos 
 ## Integrar loja ao Mercado Pago
 
 As credenciais de teste e produção são solicitadas neste campo.
-1. Clique no botão **Verificar credenciais** para entrar no painel do Mercado Pago e ver suas credenciais. **Importante**: Observe que as credenciais de teste serão solicitadas primeiro e depois as credenciais de produção.
+1. Clique no botão **Verificar credenciais** para entrar no painel do Mercado Pago e ver suas credenciais. Você também pode acessar suas credenciais em [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel). **Importante**: Observe que as credenciais de teste serão solicitadas primeiro e depois as credenciais de produção.
 2. Preencha os campos solicitados e clique em **Salvar e continuar**.
 
 ## Personalizar negócio
@@ -28,18 +28,3 @@ Clique em **Salvar e continuar**.
 
 Em **Configurações avançadas**, configure as opções relacionadas a salvar informações em um arquivo para depurar problemas técnicos
 
-> PREV_STEP_CARD_PT
->
-> Instalação
->
-> Aprenda como instalar o plugin Mercado Pago com WooCommerce.
->
-> [Instalação](/developers/pt/docs/woocommerce/installation)
-
-> NEXT_STEP_CARD_PT
->
-> Configurar os métodos de pagamento
->
-> Aprenda a configurar os diferentes métodos de pagamento na loja.
->
-> [Configurar os métodos de pagamento](/developers/es/docs/woocommerce/integration-configuration/payments-configuration)

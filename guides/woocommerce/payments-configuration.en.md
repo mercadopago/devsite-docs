@@ -20,18 +20,3 @@ You can choose to configure these payment methods:
 * [Pix](/developers/es/docs/woocommerce/integration-configuration/payments-configuration/pix)
 ------------
 
-> PREV_STEP_CARD_EN
->
-> Plugin configuration
->
-> Learn how to configure the Mercado Pago plugin with WooCommerce.
->
-> [Plugin Configuration](/developers/en/docs/woocommerce/integration-configuration/plugin-configuration)
-
-> NEXT_STEP_CARD_EN
->
-> Configure Checkout Pro
->
-> Integrate Checkout Pro in your store.
->
-> [Configure Checkout Pro](/developers/en/docs/woocommerce/integration-configuration/payments-configuration/checkoutpro)

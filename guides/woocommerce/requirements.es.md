@@ -18,18 +18,3 @@ Para utilizar la integración de Mercado Pago con WooCommerce en un sitio WordPr
 | SSL | Contar con un certificado SSL. |
 | Copia de seguridad (recomendado) | Te recomendamos hacer una copia de seguridad de la tienda online antes de realizar cualquier cambio. Al finalizar la copia, elimina todos los archivos relacionados con la versión anterior del módulo. |
 
-> PREV_STEP_CARD_ES
->
-> Introducción
->
-> Conoce los beneficios de integrar WooCommerce para ofrecer pagos con Mercado Pago.
->
-> [Introducción](/developers/es/docs/woocommerce/introduction)
-
-> NEXT_STEP_CARD_ES
->
-> Instalación
->
-> Aprende a instalar el plugin de Mercado Pago con WooCommerce.
->
-> [Instalación](/developers/es/docs/woocommerce/installation)

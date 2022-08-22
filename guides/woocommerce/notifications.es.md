@@ -18,18 +18,3 @@ Para recibir notificaciones IPN, sigue los pasos a continuación:
 7. Completa el campo **integrator_id** con tu número de miembro del **&lt;dev&gt;program** de Mercado Pago. Si aún no eres un miembro, [haz clic aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/developer-program) para obtener más información. 
 8. Haz clic en **Guardar y continuar**.
 
-> PREV_STEP_CARD_ES
->
-> Configuración de la integración
->
-> Aprende a configurar el plugin de Mercado Pago con WooCommerce.
->
-> [Configuración del plugin](/developers/es/docs/woocommerce/integration-configuration/plugin-configuration)
-
-> NEXT_STEP_CARD_ES
->
-> Testear la integración
->
-> Haz un test para comprobar que tu integración esté completa.
->
-> [Testear la integración](/developers/es/docs/woocommerce/integration-test)

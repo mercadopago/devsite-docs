@@ -19,11 +19,3 @@ Siga este passo a passo para fazer a alteração:
 7. Clique em **Salvar alterações** para finalizar.
 
 Feito! A loja está em produção e habilitada para processar suas vendas.
-
-> PREV_STEP_CARD_PT
->
-> Teste de integração
->
-> Faça um teste para verificar se sua integração está completa.
->
-> [Teste de integração](/developers/pt/docs/woocommerce/integration-test)

@@ -29,20 +29,3 @@ If you wish, you can change the options in the advanced settings of the payment 
 
 To save your changes to your settings, click the **Save Changes** button.
 
-> PREV_STEP_CARD_EN
->
-> Checkout Pro
->
-> Configure payments with Checkout Pro from Mercado Pago.
->
-> [Checkout Pro](/developers/en/docs/woocommerce/integration-configuration/payments-configuration/checkoutpro)
-
-> NEXT_STEP_CARD_EN
->
-> Offline payment methods
->
-> Set up payments with offline payment methods
->
-> [Offline payment methods](/developers/en/docs/woocommerce/integration-configuration/payments-configuration/offline-payments)
-
-

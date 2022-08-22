@@ -50,18 +50,3 @@ Para activar el modo de pruebas de tu tienda, sigue estos pasos:
 > Además, en ambos checkouts esta información sobre el pago aprobado no se incluirá en el historial de la cuenta de Mercado Pago porque solo contiene gastos reales (hechos en producción).
 ------------
 
-> PREV_STEP_CARD_ES
->
-> Configurar las notificaciones de pago
->
-> Activa las notificaciones IPN en tu integración.
->
-> [Configura las notificaciones](/developers/es/docs/woocommerce/integration-configuration/notifications)
-
-> NEXT_STEP_CARD_ES
->
-> Salir a producción
->
-> Activa la tienda y sal a producción.
->
-> [Salir a producción](/developers/es/docs/woocommerce/goto-production)

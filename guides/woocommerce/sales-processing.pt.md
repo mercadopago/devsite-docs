@@ -6,10 +6,3 @@ Com todas as etapas concluídas, seus clientes poderão realizar compras em sua 
 
 Nesta seção, você terá acesso aos detalhes dos possíveis status e motivos de cada retorno.
 
-> NEXT_STEP_CARD_PT
->
-> Status de pagamentos
->
-> Conoce los status de pago que muestran el estado de la venta.
->
-> [Status de pagamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/woocommerce/payment-status)

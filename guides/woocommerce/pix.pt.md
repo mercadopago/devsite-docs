@@ -20,18 +20,3 @@ Com o Checkout API, ofereça pagamentos com Pix diretamente em sua loja. O Pix �
 4. A opção **Converter moeda** permite que o valor da moeda configurada no WooCommerce seja compatível com o valor da moeda que você utiliza no Mercado Pago. Se você quiser ativá-lo, basta clicar no botão deslizante.
 5. Para salvar as alterações nas configurações, clique no botão **Salvar alterações**.
 
-> PREV_STEP_CARD_PT
->
-> Métodos de pagamento off-line
->
-> Configure pagamentos com métodos de pagamento offline
->
-> [Métodos de pagamento offline](/developers/pt/docs/woocommerce/integration-configuration/payments-configuration/offline-payments)
-
-> NEXT_STEP_CARD_PT
->
-> Configurar notificações de pagamento
->
-> Habilite notificações IPN em sua integração.
->
-> [Configurar notificações](/developers/pt/docs/woocommerce/integration-configuration/notifications)

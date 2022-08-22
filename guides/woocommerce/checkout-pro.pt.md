@@ -37,38 +37,3 @@ Se desejar, você pode alterar as opções nas configurações avançadas da for
 
 Para salvar as alterações nas configurações, clique no botão **Salvar alterações**.
 
-----[mla, mlm, mpe, mco, mlu, mlc]----
-> PREV_STEP_CARD_PT
->
-> Configurar os métodos de pagamento
->
-> Aprenda a configurar os diferentes métodos de pagamento na loja.
->
-> [Configurar métodos de pagamento](/developers/pt/docs/woocommerce/payments-methods-configuration)
-
-> NEXT_STEP_CARD_PT
->
-> Crédito ou débito
->
-> Configure pagamentos com cartões de débito ou crédito no Checkout API.
->
-> [Crédito ou débito com o Checkout API](/developers/pt/docs/woocommerce/integration-configuration/payments-configuration/credit-debit)
-------------
-
-----[mlb]----
-> PREV_STEP_CARD_PT
->
-> Configurar os meios de pagamento
->
-> Aprenda a configurar os diferentes métodos de pagamento na loja.
->
-> [Configurar métodos de pagamento](/developers/pt/docs/woocommerce/payments-methods-configuration)
-
-> NEXT_STEP_CARD_PT
->
-> Crédito ou débito
->
-> Configure pagamentos com cartões de débito ou crédito no Checkout Transparente.
->
-> [Crédito ou débito com Checkout Transparente](/developers/pt/docs/woocommerce/integration-configuration/payments-configuration/credit-debit)
-------------

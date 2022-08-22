@@ -21,18 +21,3 @@ Con Checkout API, ofrece pagos con Pix directamente en tu tienda. Pix es un medi
 
 Para guardar los cambios en la configuración, haz clic en el botón **Guardar cambios**.
 
-> PREV_STEP_CARD_ES
->
-> Métodos de pago offline
->
-> Configura pagos con métodos de pago offline
->
-> [Métodos de pago offline](/developers/es/docs/woocommerce/integration-configuration/payments-configuration/offline-payments)
-
-> NEXT_STEP_CARD_ES
->
-> Configurar las notificaciones de pago
->
-> Activa las notificaciones IPN en tu integración.
->
-> [Configurar las notificaciones](/developers/es/docs/woocommerce/integration-configuration/notifications)

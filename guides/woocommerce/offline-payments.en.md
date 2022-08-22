@@ -10,38 +10,3 @@ This means of payment will add----[mlb]---- Transparent Checkout ------------ --
 
 To save your changes to your settings, click the **Save Changes** button.
 
-----[mla, mlm, mpe, mco, mlu, mlc]----
-> PREV_STEP_CARD_EN
->
-> Debit or credit
->
-> Set up debit or credit payments with the Checkout API
->
-> [Debit or credit with Checkout API](/developers/en/docs/woocommerce/integration-configuration/payments-configuration/credit-debit)
-
-> NEXT_STEP_CARD_EN
->
-> Configure payment notifications
->
-> Enable IPN notifications in your integration.
->
-> [Configure notifications](/developers/en/docs/woocommerce/integration-configuration/notifications)
-------------
-
-----[mlb]----
-> PREV_STEP_CARD_EN
->
-> Debit or credit
->
-> Set up debit or credit payments with Transparent Checkout
->
-> [Debit or Credit with Transparent Checkout](/developers/en/docs/woocommerce/integration-configuration/payments-configuration/credit-debit)
-
-> NEXT_STEP_CARD_EN
->
-> Pix
->
-> Set up payments with Pix.
->
-> [Pix](/developers/en/docs/woocommerce/integration-configuration/payments-configuration/pix)
-------------

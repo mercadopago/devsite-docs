@@ -27,18 +27,3 @@ Haz clic en **Guardar y continuar**.
 En **Ajustes avanzados**, configura las opciones relacionadas con el almacenamiento de información en un archivo para depurar problemas técnicos
 
 
-> PREV_STEP_CARD_ES
->
-> Instalación
->
-> Aprende a instalar el plugin de Mercado Pago con WooCommerce.
->
-> [Instalación](/developers/es/docs/woocommerce/installation)
-
-> NEXT_STEP_CARD_ES
->
-> Configura los medios de pago
->
-> Conoce cómo configurar los distintos medios de pago en la tienda.
->
-> [Configura los medios de pagos](/developers/es/docs/woocommerce/integration-configuration/payments-configuration)

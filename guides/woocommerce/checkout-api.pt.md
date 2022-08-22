@@ -28,19 +28,3 @@ Se desejar, você pode alterar as opções nas configurações avançadas da for
 - **Comissões nos checkouts do Mercado Pago**: permite que você escolha um valor percentual adicional que deseja cobrar como comissão aos clientes que optarem por esta forma de pagamento. Para ativá-lo, você deve inserir uma porcentagem e selecionar o botão _Ativar e mostrar esta informação no checkout do Mercado Pago_.
 
 Para salvar as alterações nas configurações, clique no botão **Salvar alterações**.
-
-> PREV_STEP_CARD_PT
->
-> Checkout Pro
->
-> Configure pagamentos com o Checkout Pro do Mercado Pago.
->
-> [Checkout Pro](/developers/pt/docs/woocommerce/integration-configuration/payments-configuration/checkoutpro)
-
-> NEXT_STEP_CARD_PT
->
-> Métodos de pagamento off-line
->
-> Configure pagamentos com métodos de pagamento off-line.
->
-> [Métodos de pagamento offline](/developers/pt/docs/woocommerce/integration-configuration/payments-configuration/offline-payments)

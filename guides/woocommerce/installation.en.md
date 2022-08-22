@@ -12,18 +12,3 @@ To install the Mercado Pago plugin with WooCommerce through Wordpress, follow th
 
 Ready! The plugin is now active and you can configure your integration
 
-> PREV_STEP_CARD_EN
->
-> Prerequisites
->
-> What do you need to install the WooCommerce Mercado Pago plugin to a Wordpress site.
->
-> [Prerequisites](/developers/en/docs/woocommerce/previous-requirements)
-
-> NEXT_STEP_CARD_EN
->
-> Integration settings
->
-> Learn how to configure the Mercado Pago plugin with WooCommerce.
->
-> [Integration configuration](/developers/en/docs/woocommerce/integration-configuration)

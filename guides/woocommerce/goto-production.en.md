@@ -20,10 +20,3 @@ Follow this step by step to make the change:
 
 Done! The store is in production and enabled to process your sales.
 
-> PREV_STEP_CARD_EN
->
-> Integration test
->
-> Do a test to check that your integration is complete.
->
-> [Integration test](/developers/en/docs/woocommerce/integration-test)

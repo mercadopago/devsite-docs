@@ -18,18 +18,3 @@ To use the Mercado Pago integration with WooCommerce on a WordPress site, you mu
 | SSL | Count on an SSL certificate. |
 | Security copy (recommended) | We recommend that you make a security copy of the store online before making any exchange. When finishing the copy, it deletes all the files related to the previous version of the module. |
 
-> PREV_STEP_CARD_EN
->
-> Introduction
->
-> Learn the benefits of integrating WooCommerce to offer payment with Mercado Pago.
->
-> [Introduction](/developers/en/docs/woocommerce/introduction)
-
-> NEXT_STEP_CARD_EN
->
-> Installation
->
-> Learn how to install the Mercado Pago plugin with WooCommerce.
->
-> [Installation](/developers/en/docs/woocommerce/installation)
