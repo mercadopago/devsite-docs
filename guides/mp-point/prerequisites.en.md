@@ -13,6 +13,8 @@ To offer payments with Point, it is important to meet the requirements shown bel
 >
 > Important
 >
-> For **Point mini** and **Point blue** machines, the app is required to perform and manage charges. For **POS** and **SmartPOS**, the app is only needed to login with QR Code.
+> For **Point mini** and **Point blue** machines, the app is required to perform and manage charges. For **POS** and **SmartPOS**, the app is only needed to login with QR Code. <br/></br>
+> <br/></br>
+> The POS API integrated mode is only available to be operated by a store operator. If it is implemented in self-service mode, it will be the full responsibility of the business since the devices are not enabled to be used in this type of business model.
 
 If all requirements have been met, follow the steps below to perform the integration with Point.
