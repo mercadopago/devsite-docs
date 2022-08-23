@@ -9,9 +9,7 @@ Las siguientes acciones están disponibles para **Mercado Pago Point**.
 |[Obtener dispositivos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/integrations_api/_point_integration-api_devices/get)|Este endpoint te permite obtener los dispositivos.|
 |[Cambiar modo de operación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/integrations_api/_point_integration-api_devices_device-id/patch)|Este endpoint te permite cambiar el modo de operación del dispositivo.|
 
-
 ### Pagos Point
-
 
 |Acción|Descripción|
 |---|---|----[mlb]----
