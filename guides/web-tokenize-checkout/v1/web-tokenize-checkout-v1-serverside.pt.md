@@ -2,11 +2,12 @@
 >
 > h1
 >
-> Receive payments with cards
+> Receber Pagamentos de Cartão
 
-Checkout Bricks makes it easy to send payments to Mercado Pago from the backend. The data that Checkout Bricks receives in the `onSubmit` function is exactly what is needed to call the Mercado Pago Payments API.
+O Brick facilita o envio do pagamento ao Mercado Pago pelo backend. Os dados recebidos pelo Brick na função onSubmit são exatamente o necessário para chamar a API de Payments do Mercado Pago. 
 
-1. Find in the current structure of your integration the form that calls the Web Tokenize Checkout.
+1. Encontre na estrutura atual de sua integração a chamada a API de Payments.
+
 
 [[[
 ```php
@@ -25,10 +26,10 @@ Checkout Bricks makes it easy to send payments to Mercado Pago from the backend.
     $payment->payer = array(
     "email" => "john@yourdomain.com"
     );
-    // Guarda y postea el pago
+    // Armazena e envia o pagamento
     $payment->save();
     //...
-    // Imprime el estado del pago
+    // Imprime o status do pagamento
     echo $payment->status;
     //...
 ?>
@@ -45,10 +46,10 @@ payment.setTransactionAmount(100f)
        .setIssuerId(issuer_id)
        .setPayer(new Payer()
          .setEmail("john@yourdomain.com"));
-// Guarda y postea el pago
+// Armazena e envia o pagamento
 payment.save();
 //...
-// Imprime el estado del pago
+// Imprime o status do pagamento
 System.out.println(payment.getStatus());
 //...
 ```
@@ -68,10 +69,10 @@ var payment_data = {
   }
 };
 
-// Guarda y postea el pago
+// Armazena e envia o pagamento
 mercadopago.payment.save(payment_data).then(function (data) {
   // ...    
-  // Imprime el estado del pago
+  // Imprime o status do pagamento
   Console.log(data.status);
 }).catch(function (error) {
   // ...
@@ -117,11 +118,11 @@ var paymentRequest = new PaymentCreateRequest
         Email = "john@yourdomain.com",
     },
 };
-// Crea el pago
+// Cria o pagamento
 var client = new PaymentClient();
 Payment payment = await client.CreateAsync(paymentRequest);
 // ...
-// Imprime el estado del pago
+// Imprime o status do pagamento
 Console.WriteLine(payment.Status);
 // ...
 ```
@@ -138,20 +139,20 @@ payment_data = {
     }
 }
 
-# Guarda y postea el pago
+# Armazena e envia o pagamento
 payment_response = sdk.payment().create(payment_data)
 payment = payment_response["response"]
 ```
 ]]]
 
-> The fields required to send are `token`, `transaction_amount`, `payment_method_id` and the `payer.email`.
+> Os campos obrigatórios para envio são o `token`, `transaction_amount`, `payment_method_id` e o `payer.email`.
 
-2. Replace it with the Checkout Bricks integration.
+2. Substitua-o pela integração do Checkout Bricks:
 
 [[[
 ```php
 ===
-You can find payment status in _status_ value.
+Encontre o estado do pagamento no campo _status_.
 ===
 <?php
   require_once 'vendor/autoload.php';
@@ -181,7 +182,7 @@ You can find payment status in _status_ value.
 ```
 ```node
 ===
-You can find payment status in _status_ value.
+Encontre o estado do pagamento no campo _status_.
 ===
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken("YOUR_ACCESS_TOKEN");
@@ -197,7 +198,7 @@ mercadopago.payment.save(req.body)
 ```
 ```java
 ===
-You can find payment status in _status_ value.
+Encontre o estado do pagamento no campo _status_.
 ===
 
 PaymentClient client = new PaymentClient();
@@ -224,7 +225,7 @@ client.create(paymentCreateRequest);
 ```
 ```ruby
 ===
-You can find payment status in _status_ value.
+Encontre o estado do pagamento no campo _status_.
 ===
 require 'mercadopago'
 sdk = Mercadopago::SDK.new('YOUR_ACCESS_TOKEN')
@@ -251,7 +252,7 @@ puts payment
 ```
 ```csharp
 ===
-You can find payment status in _status_ value.
+Encontre o estado do pagamento no campo _status_.
 ===
 using System;
 using MercadoPago.Client.Common;
@@ -286,7 +287,7 @@ Console.WriteLine(payment.Status);
 ```
 ```python
 ===
-You can find payment status in _status_ value.
+Encontre o estado do pagamento no campo _status_.
 ===
 import mercadopago
 sdk = mercadopago.SDK("ACCESS_TOKEN")
@@ -312,7 +313,7 @@ print(payment)
 ```
 ```curl
 ===
-You can find payment status in _status_ value.
+Encontre o estado do pagamento no campo _status_.
 ===
 curl -X POST \
     -H 'accept: application/json' \
@@ -333,4 +334,3 @@ curl -X POST \
 
 ```
 ]]]
-

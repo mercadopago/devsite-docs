@@ -334,11 +334,3 @@ curl -X POST \
 
 ```
 ]]]
-
-> PREV_STEP_CARD_EN
->
-> Client side
->
-> Configure how to receive card payments on the client-side of your integration.
->
-> [Client-side](/developers/en/docs/checkout-bricks/how-tos/how-to-migrate/web-tokenize-checkout-v2/clientside)

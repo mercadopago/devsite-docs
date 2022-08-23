@@ -182,19 +182,3 @@ renderCardPaymentBrick(bricksBuilder);
 `````
 
 Com essa configuração, será possível realizar o processamento do pagamento com os cartões salvos.
-
-> PREV_STEP_CARD_PT
->
-> Como migrar para o Checkout Bricks
->
-> Conheça como migrar sua integração de outro produto para o Checkout Bricks.
->
-> [Como migrar para o Checkout Bricks](/developers/pt/docs/checkout-bricks/how-tos/how-to-migrate)
-
-> NEXT_STEP_CARD_PT
->
-> Server-side
->
-> Configure como receber pagamentos com cartão no server-side de sua integraçao.
->
-> [Server-side](/developers/pt/docs/checkout-bricks/how-tos/how-to-migrate/web-tokenize-checkout-v2/serverside)

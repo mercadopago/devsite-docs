@@ -2,15 +2,15 @@
 >
 > h1
 >
-> Receive payments with cards
+> Receive payments with cards 
 
-Checkout Bricks makes it easy to send payments to Mercado Pago from the backend. The data that Checkout Bricks receives in the `onSubmit` function is exactly what is needed to call the Mercado Pago Payments API.
+Bricks makes it easy to send payment to MercadoPago through the Backend. The data received by Brick in the `onSubmit` function is exactly what is needed to call the Mercado Pago Payment API. 
 
-1. Find in the current structure of your integration the form that calls the Web Tokenize Checkout.
+1. In the current structure of your integration, find the call to Payments API.
 
 [[[
 ```php
-<?php
+<?php  
     require_once 'vendor/autoload.php';
 
     MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
@@ -45,10 +45,10 @@ payment.setTransactionAmount(100f)
        .setIssuerId(issuer_id)
        .setPayer(new Payer()
          .setEmail("john@yourdomain.com"));
-// Guarda y postea el pago
+// Save and create the payment
 payment.save();
 //...
-// Imprime el estado del pago
+// Shows payment stauts
 System.out.println(payment.getStatus());
 //...
 ```
@@ -68,10 +68,10 @@ var payment_data = {
   }
 };
 
-// Guarda y postea el pago
+// Save and do the payment POST
 mercadopago.payment.save(payment_data).then(function (data) {
   // ...    
-  // Imprime el estado del pago
+  // Shows payment stauts
   Console.log(data.status);
 }).catch(function (error) {
   // ...
@@ -117,11 +117,11 @@ var paymentRequest = new PaymentCreateRequest
         Email = "john@yourdomain.com",
     },
 };
-// Crea el pago
+// Create the payment
 var client = new PaymentClient();
 Payment payment = await client.CreateAsync(paymentRequest);
 // ...
-// Imprime el estado del pago
+// Shows payment status
 Console.WriteLine(payment.Status);
 // ...
 ```
@@ -138,13 +138,14 @@ payment_data = {
     }
 }
 
-# Guarda y postea el pago
+# Save and create the payment
 payment_response = sdk.payment().create(payment_data)
 payment = payment_response["response"]
 ```
 ]]]
 
 > The fields required to send are `token`, `transaction_amount`, `payment_method_id` and the `payer.email`.
+
 
 2. Replace it with the Checkout Bricks integration.
 

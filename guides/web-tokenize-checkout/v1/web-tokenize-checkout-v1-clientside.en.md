@@ -1,14 +1,14 @@
-# Como migrar do Web Tokenize Checkout V1
+# How to migrate from Web Tokenize Checkout V1
 
-Se sua integração estiver usando a V1 do Web Tokenize Checkout, siga os passos abaixo para migrar para o Checkout Bricks.
+If your integration uses Web Tokenize Checkout V1, follow the steps below to migrate to Checkout Bricks.
 
 > CLIENT_SIDE
 >
 > h2
 >
-> Receber pagamentos de cartão
+> Receive payments with cards
 
-1. Encontre na estrutura atual de sua integração o formulário que chama o Web Tokenize Checkout.
+1. Find in the current structure of your integration the form that calls the Web Tokenize Checkout.
 
 ```html
 <form action="https://www.mi-sitio.com/procesar-pago" method="POST">
@@ -20,22 +20,21 @@ Se sua integração estiver usando a V1 do Web Tokenize Checkout, siga os passos
 </form>
 `````
 
-2. Substitua esse formulário pela tag que conterá o Brick de Card Payment.
+2. Replace this form with the tag that will contain the Card Payment Brick.
 
 ```html
 <div id="paymentBrick_container"></div>
 ````
 
-3. Adicione também a importação da SDK JS.
+3. Also add SDK JS import.
 
 ```html
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ````
 
-4. Adicione agora o script responsável por carregar o Brick
+4. Now, add the script responsible for loading the Brick.
 
 ```javascript
- 
    const mp = new MercadoPago('YOUR_PUBLIC_KEY');
 const bricksBuilder = mp.bricks();
 const renderPaymentBrick = async (bricksBuilder) => {
@@ -84,30 +83,27 @@ const renderPaymentBrick = async (bricksBuilder) => {
 renderPaymentBrick(bricksBuilder);
 ````
 
-5. No callback de onSubmit do Brick, adicione a mesma URL que utilizava no parâmetro `action` do seu formulário, é para ela que o Brick enviará os dados do formulário de pagamento.
-
-
+5. In the callback of the Bricks `onSubmit` call, add the same URL that you use in the `action` parameter of your form. This is where Bricks will send the payment form data.
 
 > CLIENT_SIDE
 >
 > h2
 >
-> Usuários e Cartões
+> Users and cards
 
 > NOTE
 >
-> Nota
+> Note
 >
-> O processo de criação de usuários e cartões não tem nenhuma diferença entre o Web Tokenize Checkout e Checkout Bricks.
+> The user and card creation process has no difference between Web Tokenize Checkout and Checkout Bricks.
 
+### Receive payments from a user with saved cards
 
-### Receber o pagamento de um usuário com cartões salvos
+To receive payments from a user with saved cards, it is necessary to migrate the user and the cards to Checkout Bricks, which will perform the tokenization process and send the information to generate the payment in the `onSubmit` callback. To do so, follow the steps below.
 
-Para receber o pagamento de um usuário com cartões salvos, é necessário migrar o usuário e os cartões para o Brick, que realizará o processo de tokenização e enviará no callback de onSubmit as informações para a geração do pagamento. Para isso, siga os passos abaixo.
+1. Find in the current structure of your integration the form that calls the Web Tokenize Checkout.
 
-1. Encontre na estrutura atual de sua integração o formulário que chama o Web Tokenize Checkout.
- 
-```html
+ ```html
 <form action="/procesar-pago" method="POST">
    <script
      src="https://www.mercadopago.com.ar/integrations/v1/web-tokenize-checkout.js"
@@ -117,9 +113,9 @@ Para receber o pagamento de um usuário com cartões salvos, é necessário migr
      data-card-ids="1518023392627,1518023332143">
    </script>
  </form>
-````
+ ````
 
-2. Substitua esse formulário pela tag que conterá o Brick de Card Payment.
+2. Replace this form with the tag that will contain the Card Payment Brick.
 
 ```javascript
    const mp = new MercadoPago('YOUR_PUBLIC_KEY');
@@ -171,5 +167,5 @@ const renderCardPaymentBrick = async (bricksBuilder) => {
 renderCardPaymentBrick(bricksBuilder);
 ````
 
+With this configuration, it will be possible to process the payment with the saved cards.
 
-Com essa configuração, será possível realizar o processamento do pagamento com os cartões salvos.
