@@ -23,7 +23,6 @@ The next step consist in generating a payment order and sending it via API to th
 
 Once the payment is processed, the user will see the result in the Mercado Pago application. Finally, the order will close and the corresponding payment will be created
 
-
 ## Payment creation
 
 The POST to the API generates an order that the Mercado Pago application receives in order to charge via the Point device. You´ll get an id that you could use to know the state of it. 
@@ -124,7 +123,6 @@ curl -X DELETE \
 
 **Response status code: 204 OK**
 
- 
 ## Get all the devices from an account
 
 The GET in this API enables you to obtain all configured and synchronized devices for your Mercado Pago account. 
@@ -154,11 +152,9 @@ If the status of the device is `FREE`, it means that the device can receive a ne
 
 **Response status code: 200 OK**
 
-
 ## Delete a device from an account
 
 The DELETE in this API enables you to delete configured and synchronized devices from your Mercado Pago account. 
-
 
 ```curl
 curl -X DELETE \
@@ -177,3 +173,10 @@ The answer will have the following format.
 
 **Response status code: 200 OK**
 
+> PREV_STEP_CARD_EN
+>
+> Integration via Deep Linking
+>
+> Check how to integrate Mercado Pago Point via Deep Linking
+>
+> [Integration via Deep Linking](/developers/en/docs/mp-point/integration-configuration/integrate-mobile-devices/integrate-via-deep-linking)
