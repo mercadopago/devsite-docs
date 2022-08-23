@@ -2,7 +2,7 @@
 
 Se desejar, você pode receber notificações Webhooks. Estas são enviadas de nossa API de Integrações para o seu sistema de recebimento por meio de uma chamada `HTTP POST` em relação às mudanças de status apresentadas por uma intenção de pagamento.
 
-Para integrar notificações Webhook, siga as instruções [nesta documentação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/webhooks/webhooks).
+Para integrar notificações Webhook, siga as instruções [nesta documentação](/developers/pt/guides/additional-content/notifications/webhooks/webhooks).
 
 > WARNING
 >
@@ -59,6 +59,28 @@ Depois de implementar as notificações e fazer os ajustes necessários, elas te
 ```
 ------------
 
+----[mlm]----
+
+```json
+{
+ "amount": 100,
+ "caller_id": 09876543,
+ "client_id": 1234567890,
+ "created_at": "2021-11-29 17:10:37",
+ "id": "abcdef123-8ab5-4139-9aa3-abcd123",
+ "payment": {
+   "id": 123456789,
+   "state": "approved",
+   "type": "credit_card"
+ },
+ "state": "FINISHED",
+ "additional_info": {
+   "external_reference": "information"
+ }
+}
+```
+------------
+
 #### Status Canceled:
 
 ----[mla]----
@@ -90,6 +112,23 @@ Depois de implementar as notificações e fazer os ajustes necessários, elas te
 "additional_info": {
   "external_reference": "information"
 }
+}
+```
+------------
+
+----[mlm]----
+
+```json
+{
+ "amount": 100,
+ "caller_id": 09876543,
+ "client_id": 1234567890,
+ "created_at": "2021-11-29 17:10:37",
+ "id": "abcdef123-8ab5-4139-9aa3-abcd123",
+ "state": "CANCELED",
+ "additional_info": {
+   "external_reference": "information"
+ }
 }
 ```
 ------------
@@ -129,21 +168,19 @@ Depois de implementar as notificações e fazer os ajustes necessários, elas te
 ```
 ------------
 
+----[mlm]----
 
-> PREV_STEP_CARD_PT
->
-> Comece a processar seus pagamentos
->
-> Crie uma intenção de pagamento e atribua-a a um dispositivo Point.
->
-> [Comece a processar seus pagamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/integration-api/create-payment-intent)
-
-
-> NEXT_STEP_CARD_PT
->
-> Teste sua integração com segurança
->
-> Use o Simulador Point para testar sua integração.
->
-> [Simulador Point](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/integration-api/point-simulator)
-
+```json
+{
+ "amount": 100,
+ "caller_id": 09876543,
+ "client_id": 1234567890,
+ "created_at": "2021-11-29 17:10:37",
+ "id": "abcdef123-8ab5-4139-9aa3-abcd123",
+ "state": "ERROR",
+ "additional_info": {
+   "external_reference": "information"
+ }
+}
+```
+------------

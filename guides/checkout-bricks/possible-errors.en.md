@@ -27,19 +27,3 @@ During the Brick integration process, it is possible that **when the Brick is in
 | Error searching card issuing banks  | An error occurred. Please try again later.  | Failed to get card issuer(s)  | No  | get_card_issuers_failed  |
 | Error when searching the amount and the values of the payment installments according to the _amount_ sent by the integrator  | An error occurred. Please try again later.  | Failed to get payment installments  | No  | get_payment_installments_failed  |
 | Incomplete payment fields for some reason (fees, card issuer, _payment_method_id_)  | An error occurred. Please try again later.  | SOne of the following messages will be returned according to the type of error: * The payment method id is missing * The payment installments are missing * The card issuer is missing  |  No  | missing_payment_information  |
-
-> PREV_STEP_CARD_EN
->
-> Select language
->
-> You can select the Card Payment Brick's language when required. Check how.
->
-> [Select language](/developers/en/docs/checkout-bricks/additional-customization/select-language)
-
-> NEXT_STEP_CARD_EN
->
-> GitHub project
->
-> Get access to functional project and technical documentation links.
->
-> [GitHub project](/developers/en/docs/checkout-bricks/additional-content/github-project)

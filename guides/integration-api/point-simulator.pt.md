@@ -24,7 +24,7 @@ Ao usar o simulador pela primeira vez, você precisará inserir suas chaves e se
 >
 > Lembre-se que para usar o simulador você deve configurar um `access-token` de teste (`TEST-XXXXX-XXXXX-XXXXXXX`) e você pode obtê-lo em suas [integrações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/applications), opção **Minhas credenciais > Credenciais de teste**.
 > <br/>
-> Para efetuar uma consulta de um pagamento efetuado pelo simulador através da [API de payments](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_id/get), deve-se utilizar o `acces-token` de teste (o mesmo utilizado no simulador).
+> Para efetuar uma consulta de um pagamento efetuado pelo simulador através da [API de payments](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_id/get), deve-se utilizar o `access-token` de teste (o mesmo utilizado no simulador).
 
 ### 2. Simule uma intenção de pagamento
 
@@ -47,18 +47,10 @@ Se a etapa anterior foi bem-sucedida, você pode clicar na animação do cartão
 
 ### 5. Receba a notificação
 
-Se você executou as etapas de configuração para as [notificações de Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/integration-api/integration), é hora de você revisar seus registros. Lá você verá que a notificação do status da transação foi enviada.
+Se você executou as etapas de configuração para as [notificações de Webhooks](/developers/pt/docs/mp-point/integration-configuration/integrate-with-pdv/notifications), é hora de você revisar seus registros. Lá você verá que a notificação do status da transação foi enviada.
 
 > NOTE
 >
 > Nota
 >
 > O simulador permitirá que você faça pagamentos de teste, desta forma, você pode consultar todas as informações correspondentes na seção [API de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_id/get).
-
-> PREV_STEP_CARD_PT
->
-> Configure suas notificações
->
-> Explicamos como começar a receber notificações de Webhooks.
->
-> [Configure suas notificações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/integration-api/notifications)

@@ -29,19 +29,3 @@ Durante o processo de integração do brick, é possível que diferentes erros r
 | Falha ao buscar bancos emissores do cartão | Ocorreu um erro. Por favor, tente novamente mais tarde. | Failed to get card issuer(s) | Não | get_card_issuers_failed |
 | Falha ao buscar quantidade e valores das parcelas do pagamento baseado no amount enviado pelo integrador | Ocorreu um erro. Por favor, tente novamente mais tarde. | Failed to get payment installments | Não | get_payment_installments_failed |
 | Campos do pagamento incompletos por algum motivo (parcelas, emissor do cartão, payment_method_id) | Ocorreu um erro. Por favor, tente novamente mais tarde. | Será retornada uma das seguintes mensagens de acordo com o tipo de erro: <br> The payment <br> method id is missing <br> The payment installments are missing <br> The card issuer is missing|Não|missing_payment_information |
-
-> PREV_STEP_CARD_PT
->
-> Selecionar idioma 
->
-> Caso deseje, saiba como selecionar o idioma do Card Payment Brick.
->
-> [Selecionar idioma](/developers/pt/docs/checkout-bricks/additional-customization/select-language)
-
-> NEXT_STEP_CARD_PT
->
-> GitHub project
->
-> Tenha acesso aos links do projeto funcional e da documentação técnica.
->
-> [GitHub project](/developers/pt/docs/checkout-bricks/additional-content/github-project)

@@ -24,8 +24,20 @@ La API de Integraciones Point te permite conectar tus puntos de venta (PDV) al e
 >
 > - Point Pro 1
 > - Point Pro 2
+> - Point Smart
 >
 > Puedes adquirir tu dispositivo Point desde nuestra [tienda oficial](https://www.mercadopago.com.br/point)
+
+------------
+
+----[mlm]----
+> INFO
+>
+> Esta integración soporta los siguientes dispositivos:
+>
+> - Point Smart
+>
+> Puedes adquirir tu dispositivo Point desde nuestra [tienda oficial](https://www.mercadopago.com.mx/point)
 
 ------------
 
@@ -36,18 +48,6 @@ La API de Integraciones Point te permite conectar tus puntos de venta (PDV) al e
 * **Es ágil**, ya que te permite administrar tus órdenes de pago desde tu PDV.
 * **Es eficiente**, ya que disminuye la posibilidad de errores al momento de cobrar.
 
-<br />
-
 ### En este diagrama de flujo te contamos cómo funciona la API:
 
 ![Mercado Pago Point Flow](/images/point-api/2-flow-diagram-es.png)
-
-
-> NEXT_STEP_CARD_ES
->
-> Comienza a integrar la API de Integraciones
->
-> Para realizar la integración, primero debes obtener las credenciales de identificación.
->
-> [Integra la API de Integraciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/integration-api/integration)
-
