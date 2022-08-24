@@ -28,8 +28,6 @@ Crie uma aplicação para obter as credenciais e configurar notificações webho
 3. Nomeie a aplicação para identificação posterior.
 4. Aceite nossos Termos e Condições. E pronto!
 
-
-
 > NOTE
 >
 > Nota
@@ -38,19 +36,7 @@ Crie uma aplicação para obter as credenciais e configurar notificações webho
 
 ## 3. Gere usuários de teste
 
-Para realizar a integração, você precisa ter pelo menos dois usuários: um comprador e um vendedor.
-
-Você pode criar esses usuários em [Criar usuários de teste](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/test_user/_users_test_user/post) em nossa referência de API. Nela você encontrará todas as informações necessárias.
-
-> WARNING
->
-> IMPORTANTE
->
-> * Você pode gerar até 10 contas de usuários de teste em simultâneo. Por isso, recomendamos salvar o e-mail e senha de cada um.
-> * Os usuários de teste caducam após 60 dias sem atividade no Mercado Pago.
-> * Para realizar pagamentos de teste, recomendamos que você utilize valores baixos.
-> * Tanto o comprador como o vendedor devem ser usuários de teste.
-> * Utilize cartões de teste, pois não é possível retirar dinheiro.
+[TXTSNIPPET][/guides/snippets/test-integration/create-test-users]
 
 Após a geração dos usuários de teste, você pode começar a integração e criar as lojas e os caixas.
 
@@ -66,8 +52,8 @@ O Access Token não poderá ser compartilhado de outra maneira que não seja o O
 Para identificar os pedidos realizados pelo seu ponto de venda, inclua o sponsor ID e confira as nossas APIs de [Pedidos presenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_pos_external_pos_id_orders/get) para saber como enviar esta informação.
 
 Passo a Passo:
+
 > * Crie uma conta no portal do Mercado Pago (Integrator ID).
 > * Obtenha o Collector ID (Cust ID ou User ID) da sua conta.
 > * Inclua o Collector ID da sua conta de integrador no Sponsor ID do vendedor.
 > * Envie o Sponsor ID em todas as transações QR. [Consulte a API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/instore_orders/_mpmobile_instore_qr_user_id_external_id/post).
-

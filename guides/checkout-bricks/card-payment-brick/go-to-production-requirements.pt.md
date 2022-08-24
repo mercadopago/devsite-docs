@@ -1,1 +1,1 @@
-[TXTSNIPPET][/guides/snippets/test-integration/test-cards]
+[TXTSNIPPET][/guides/snippets/test-integration/go-live-requirements]

@@ -1,7 +1,5 @@
 # Prueba tu integración
 
-[TXTSNIPPET][/guides/snippets/test-integration/type-of-test-users]
-
 ## Crea usuarios de prueba
 
 [TXTSNIPPET][/guides/snippets/test-integration/create-test-users]

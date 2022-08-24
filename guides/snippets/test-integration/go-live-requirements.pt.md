@@ -16,7 +16,7 @@ Com este processo, você pode garantir a segurança dos dados de seus clientes, 
 ----[mlb]----
 ## Receber pagamentos com Pix
 
-A opção de pagamento com Pix só será exibida se houver uma chave Pix cadastrada no Mercado Pago. Caso ainda não tenha criado, [clique aqui]((https://www.youtube.com/watch?v=60tApKYVnkA)) e veja o passo a passo.
+A opção de pagamento com Pix só será exibida se houver uma chave Pix cadastrada no Mercado Pago. Caso ainda não tenha criado, [clique aqui](https://www.youtube.com/watch?v=60tApKYVnkA) e veja o passo a passo.
 
 ------------
 
@@ -24,6 +24,6 @@ A opção de pagamento com Pix só será exibida se houver uma chave Pix cadastr
 
 Aqui estão alguns pontos a observar para aumentar a qualidade das suas integrações:
 
-+ Melhore a [aprovação de pagamentos](/developers/pt/guides/additional-content/sales-processing/payment-rejections) enviando informações do item e do pagador, dados de envio e informações da indústria.
++ Melhore a [aprovação de pagamentos](/developers/pt/guides/additional-content/how-tos/improve-approval) enviando informações do item e do pagador, dados de envio e informações da indústria.
 + Mantenha o status dos pedidos atualizados em seus sistemas, usando e processando as notificações [IPN](/developers/pt/guides/additional-content/notifications/ipn/introduction) ou [Webhooks](/developers/pt/guides/additional-content/notifications/webhooks/webhooks).
 + Use relatórios de reconciliação via API para melhorar a gestão financeira do negócio.
