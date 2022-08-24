@@ -8,7 +8,7 @@ To continue with the Mercado Pago payment process, your backend should know how 
 
 Once the request –with all the collected information– is in your backend, it should be submitted to Mercado Pago through our APIs.  The minimum mandatory fields to submit are: `token`, `transaction_amount`, `installments`, `payment_method_id` and `payer.email`.
 
-For this to work, you should configure your [private key](/developers/en/guides/additional-content/credentials/credentials). Also, to interact with our APIs, you should use [Mercado Pago official SDK](/developers/en/guides/sdks-v2/official/landing).
+For this to work, you should configure your [private key](/developers/en/guides/additional-content/credentials/credentials). Also, to interact with our APIs, you should use [Mercado Pago official SDK](/developers/en/docs/sdks-library/landing).
 
 > NOTE
 > 
