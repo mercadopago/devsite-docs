@@ -22,12 +22,9 @@ Puedes encontrar toda la información en la sección [Reembolsos y cancelaciones
 >
 > Ten en cuenta que para pagos presenciales, solo puedes efectuar devoluciones pero no cancelaciones.
 
-
-
 ## Obtener datos de la orden
 
 Si deseas obtener la orden vigente de una caja, puedes hacerlo utilizando el curl que encontrarás en nuestra **Referencia de API** ingresando a [Obtener orden](/developers/es/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_pos_external_pos_id_orders/get), donde además encontrarás información detallada sobre los parámetros de solicitud y respuesta.
-
 
 ## Genera reportes de tus ventas
 

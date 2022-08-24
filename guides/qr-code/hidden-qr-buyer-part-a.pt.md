@@ -17,7 +17,6 @@ sites_supported:
 > Você deve acionar nosso time comercial para que sua conta seja habilitada e tenha permissão para cobrança por meio deste modelo de serviço.
 
 
-
 ## O que é o QR modelo comprador?
 
 É o modelo que permite realizar cobranças a partir da leitura de um código QR gerado pelo aplicativo Mercado Pago na conta do cliente. Este modelo é usado para máquinas de autoatendimento ou sistemas que possuem leitura de QR, como restaurantes, cinemas e estacionamentos. 
@@ -40,14 +39,3 @@ As principais características são:
 - Ao enviar a API de cobrança, a validação do pagamento acontecerá de forma sincronizada.
 
 ---
-
-## Próximos passos
-
-
-> LEFT_BUTTON_REQUIRED_PT
->
-> Como integrar QR modelo Comprador
->
-> Acesse o passo-a-passo para integração.
->
-> [Como integrar QR modelo Comprador](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/qr-code/qr-buyer/qr-buyer-part-b)

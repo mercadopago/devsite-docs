@@ -19,7 +19,6 @@ Primero, genera la publicación de orden. En cuanto se envíen los datos a Merca
 
 Para generar una orden, accede a nuestra [Referencia de API](/developers/es/reference/qr-dynamic/_instore_orders_qr_seller_collectors_user_id_pos_external_pos_id_qrs/post) y ejecuta el curl que encontrarás allí. En la respuesta recibirás el dato necesario para crear el código QR.
 
-
 ----[mco]----
 > Si debes pagar IVA para los productos de tu orden, visita la [sección de Consideraciones IVA Colombia](/developers/es/guides/additional-content/localization/iva-colombia).
 ------------
@@ -49,9 +48,7 @@ Por ejemplo:
   "qr_data": "00020101021226940014BR.GOV.BCB.PIX2572pix-qr.mercadopago.com/instore/o/v2/fdf9ece0-6137-4e1e-a49d-94f55ec9eee25204000053039865802BR5925FELIPE AAAAAA AAAAA 6009SAO PAULO62070503***6304B61D"
 }
 ```
-
 ------------
-
 
 ## Crear una orden asociada a una caja
 
@@ -59,12 +56,10 @@ Además de la generación del código QR, también tienes la opción de crear y 
 
 Ejecuta la llamada a la API detallada [en esta sección de nuestra Referencia de API](/developers/es/reference/qr-dynamic/_instore_orders_qr_seller_collectors_user_id_pos_external_pos_id_qrs/put) para generar la orden y la asignación a la caja. En la respuesta recibirás el dato necesario para crear el código QR y se asociará al QR declarado.
 
-
 ## Recibe notificaciones de tus órdenes
 
 Las notificaciones IPN (Instant Payment Notification) son la **forma automática de aviso de la creación de nuevas órdenes y las actualizaciones de sus estados**. Por ejemplo si fueron aprobados, rechazados o si se encuentran pendientes.
 
 Implementa IPN de `merchant_order` junto con una búsqueda de la orden por `external_reference` como método de contingencia.
 
-[Recibir notificaciones IPN](/developers/es/docs/qr-code/additional-content/notifications/ipn)
-
+[Recibir notificaciones IPN](/developers/es/guides/additional-content/notifications/ipn/introduction)

@@ -1,14 +1,8 @@
 # Teste a sua integração
 
-Com os usuários de teste você poderá testar a integração do seu sistema com o Mercado Pago, sem utilizar dinheiro.
+## Criar usuários de teste
 
-Para realizar os testes, você precisa ter pelo menos dois usuários: um comprador e um vendedor.
-> Se você ainda não gerou os seus usuários, faça isso nos [pré-requisitos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/qr-code/pre-requisites).
-
-| Tipos de usuários | Descrição |
-| --- | --- |
-| Vendedor | É a **conta de testes que você utiliza para obter as credenciais** a serem configuradas em seu sistema para poder interagir com as APIs do Mercado Pago. Você também poderá acessar a [conta Mercado Pago](https://www.mercadopago.com.br/activities) e verificar as transações testadas. |
-| Comprador | É a **conta que você utiliza para testar o processo de compra**. Você deve acessar o app do Mercado Pago com os detalhes deste usuário. Se tiver dinheiro disponível na conta ou cartões salvos, serão habilitados como meio de pagamento. |
+[TXTSNIPPET][/guides/snippets/test-integration/create-test-users]
 
 ## Cartões de teste
 
@@ -30,4 +24,3 @@ Para testar o modelo atendido, gere um pedido com as credenciais do usuário de 
 ### 3. Receba notificações de pedidos
 
 Verifique se o seu sistema já recebeu as notificações de status do pedido. E pronto!
-

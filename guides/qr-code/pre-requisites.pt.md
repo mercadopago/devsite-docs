@@ -14,7 +14,6 @@ Para começar a integração, você precisa **ter uma conta no Mercado Pago ou M
 
 Você pode Acessar uma conta existente ou [Criar uma nova conta](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
 
-
 ## 2. Crie uma aplicação
 
 Para realizar transações através da integração do Mercado Pago é necessário criar uma credencial. Essa credencial terá uma identificação, assim como um Access Token que permitirá fazer transações usando uma conta Mercado Pago.
@@ -43,7 +42,6 @@ Após a geração dos usuários de teste, você pode começar a integração e c
 ## 4. Obtenha o seu Access Token (OAuth)
 
 Se você é um integrador que trabalha com diversas lojas que operam com o Mercado Pago, recomendamos que faça o **OAuth - autenticação entre contas***. Através do processo o vendedor autoriza o compartilhamento seguro dos seus dados com um sistema de terceiros.
-
 
 O Access Token não poderá ser compartilhado de outra maneira que não seja o OAuth.
 
