@@ -27,7 +27,6 @@ It's quite easy to do:
 3. Name the application to identify it later.
 4. Accept our Terms and Conditions. Done!
 
-
 > NOTE
 >
 > Note

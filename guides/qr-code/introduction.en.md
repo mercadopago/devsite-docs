@@ -20,4 +20,3 @@ Once you complete the integration as explained below, your business will be able
 | QR Dynamic Model  | Integration model that generates a QR per transaction. Used for QR models in tickets.  |
 
 Depending on your business model, you can choose one of these options to offer your customers a seamless in-store shopping experience.
-

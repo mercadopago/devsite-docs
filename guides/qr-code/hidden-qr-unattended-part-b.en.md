@@ -64,7 +64,6 @@ In those cases, service must answer with an error message, so the user sees a wa
 
 A `message` is a plain text that can come with the declared type and is optional.
 
-
 ### 1.2 Order infromation is available
 
 If order exits and is ready to be paid, service must return its information. 
@@ -145,23 +144,3 @@ You must inform your domain URL to your assigned technical advisor. Mercado Pago
 > Your integration won’t work if you don’t complete this step.
 
 ---
-
-### Next steps
-
-
-> LEFT_BUTTON_REQUIRED_EN
->
-> Advanced integration
->
-> Check the options available to take your integration to the next level.
->
-> [Advanced integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/qr-code/qr-unattended-model/qr-advanced-integration)
-
-
-> RIGHT_BUTTON_RECOMMENDED_ES
->
-> Test your integration
->
-> Perform the most frequent usage tests to validate your integration
->
-> [Test your integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/qr-code/qr-unattended-model/qr-integration-test)

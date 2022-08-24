@@ -26,7 +26,6 @@ Una vez creada la orden, ya se encuentra disponible para ser **escaneada y pagad
 >
 > Ten en cuenta que si no cargaste previamente el nombre de tu negocio o el logo en [tu cuenta de Mercado Pago](https://www.mercadopago.com.ar/settings/account), el título y la imagen de la orden que el cliente vea en la app serán las del primer ítem cargado.
 
-
 ## Eliminar una orden
 
 Para obtener información sobre cómo eliminar la orden asociada a un QR antes de que expire por vigencia, o se cierre, accede a nuestra [Referencia de API](/developers/es/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_pos_external_pos_id_orders/delete).

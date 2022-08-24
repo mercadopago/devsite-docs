@@ -2,7 +2,6 @@
 
 ## How to charge with QR?
 
-
 To receive payments with QR in your business, you can **print the code and showcase it in a visible spot or display it on your mobile device** and charge from Mercado Pago App.
 
 If you collect payments with a printed QR, you can enter the total amount from your computer or ask your customer to type it in after scanning the code.
@@ -27,5 +26,3 @@ First, you must create a [payment link](https://www.mercadopago.com.ar/tools/cre
 ## Track your received payments
 
 You can check your business sales in the activity list in your [Mercado Pago account](https://www.mercadopago[FAKER][URL][DOMAIN]/activities) or [integrate notifications](/developers/en/guides/notifications/ipn/introduction) in your system.
-
-
