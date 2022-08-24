@@ -1,6 +1,6 @@
-As contas de testes são necessárias para verificar se o processo de integração ocorreu corretamente. Elas têm os mesmos recursos de uma conta real do Mercado Pago, o que permite testar o funcionamento das integrações que você está desenvolvendo.
+Utilize contas de teste para garantir que sua integração dê suporte a todos os fluxos e cenários possíveis. Elas têm os mesmos recursos de uma conta real do Mercado Pago, o que permite testar o funcionamento das integrações que você está desenvolvendo.
 
-Para realizar um teste é preciso ter pelo menos duas contas:
+Para realizar um teste é preciso ter pelo menos duas contas: 
 
 * **Vendedor**: conta necessária para **configurar a aplicação e as credenciais para a cobrança**. Esta é a sua conta de usuário.
 * **Comprador**: conta necessária para **testar o processo de compra**.

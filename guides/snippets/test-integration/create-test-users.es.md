@@ -1,8 +1,8 @@
-Se requieren cuentas de prueba para verificar que el proceso de incorporación se realizó correctamente. Tienen las mismas características que una cuenta real de Mercado Pago, lo que te permite probar el funcionamiento de las integraciones que estás desarrollando.
+Utiliza cuentas de prueba para asegurar que tu integración soporta todos los flujos y escenarios posibles. Tienen las mismas características que una cuenta real de Mercado Pago, lo que te permite probar el funcionamiento de las integraciones que estás desarrollando.
 
 Para realizar la prueba, debes tener al menos dos cuentas:
 
-* **Vendedor**: cuenta requerida para **configurar la aplicación y las credenciales de facturación**. Esta es tu cuenta de usuario.
+* **Vendedor**: cuenta requerida para **configurar la aplicación y las credenciales**. Esta es tu cuenta de usuario.
 * **Comprador**: cuenta necesaria para **probar el proceso de compra**.
 
 Además de estas cuentas, también es importante utilizar las [tarjetas de prueba](/developers/es/guides/additional-content/testing/test-cards) para probar la integración de pago y simular el proceso de compra, así como el **saldo en la cuenta de Mercado Pago del usuario de prueba**. Te mostramos más detalles a continuación.
@@ -35,4 +35,4 @@ Para crear cuentas y probar cómo funcionan las integraciones, sigue los pasos a
 >
 > Importante
 >
-> Para editar la **Identificación de cuenta** o **agregar más dinero ficticio** para probar sus aplicaciones, haz clic en los **3 puntos verticales** al final de la fila de la tabla y seleccione la opción **Editar datos**.
+> Para editar la **Identificación de cuenta** o **agregar más dinero ficticio** para probar tus aplicaciones, haz clic en los **3 puntos verticales** al final de la fila de la tabla y selecciona la opción **Editar datos**.

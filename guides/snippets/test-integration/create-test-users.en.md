@@ -1,8 +1,8 @@
-Test accounts are required to verify that the onboarding process went correctly. They have the same features as a real Mercado Pago account, which allows you to test the functioning of the integrations you are developing.
+Use test accounts to ensure that your integration supports all possible flows and scenarios. They have the same features as a real Mercado Pago account, which allows you to test the functioning of the integrations you are developing.
 
 To perform the test, you must have at least two accounts:
 
-* **Seller**: account required to **configure application and billing credentials**. This is your user account.
+* **Seller**: account required to **configure application and credentials**. This is your user account.
 * **Buyer**: account required to **test the purchase process**.
 
 In addition to these accounts, it is also important to use [test cards](/developers/en/guides/additional-content/testing/test-cards) to test payment integration and simulate the purchase process, as well as **balance in the test user's Mercado Pago account**. See more details below.
