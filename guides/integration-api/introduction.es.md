@@ -12,6 +12,7 @@ La API de Integraciones Point te permite conectar tus puntos de venta (PDV) al e
 > Esta integración soporta los siguientes dispositivos:
 >
 > - Point Plus (POS)
+> - Point Smart
 >
 > Puedes adquirir tu dispositivo Point desde nuestra [tienda oficial](https://www.mercadopago.com.ar/point)
 
@@ -24,7 +25,6 @@ La API de Integraciones Point te permite conectar tus puntos de venta (PDV) al e
 >
 > - Point Pro 1
 > - Point Pro 2
-> - Point Smart
 >
 > Puedes adquirir tu dispositivo Point desde nuestra [tienda oficial](https://www.mercadopago.com.br/point)
 
