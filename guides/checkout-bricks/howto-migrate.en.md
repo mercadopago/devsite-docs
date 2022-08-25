@@ -1,4 +1,4 @@
-/how-tos/how-to-migrate/web-tokenize-checkout-v1/clientside# How to migrate your integration to Checkout Bricks
+# How to migrate your integration to Checkout Bricks
 
 If your integration currently uses another Mercado Pago product that is being deprecated or if you simply want to migrate to Checkout Bricks, check the instructions below to be able to integrate.
 
