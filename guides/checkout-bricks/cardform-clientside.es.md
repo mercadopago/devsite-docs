@@ -4,7 +4,7 @@ Si tienes una integración que usa CardForm, sigue las instrucciones a continuac
 
 > CLIENT_SIDE
 >
-> h3
+> h2
 >
 > Recibir pagos con tarjeta
 

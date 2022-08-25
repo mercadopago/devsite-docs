@@ -4,7 +4,7 @@ Caso você tenha uma integração usando CardForm, siga as instruções abaixo p
 
 > CLIENT_SIDE
 >
-> h3
+> h2
 >
 > Receber pagamentos de cartão
 
@@ -198,11 +198,3 @@ renderPaymentBrick(bricksBuilder);
 `````
 
 > No server-side não é preciso de nenhuma alteração.
-
-> PREV_STEP_CARD_PT
->
-> Como migrar para o Checkout Bricks
->
-> Conheça como migrar sua integração de outro produto para o Checkout Bricks.
->
-> [Como migrar para o Checkout Bricks](/developers/pt/docs/checkout-bricks/how-tos/how-to-migrate)
