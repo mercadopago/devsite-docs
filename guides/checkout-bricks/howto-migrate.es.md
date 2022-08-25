@@ -31,5 +31,3 @@ La integración via CardForm se realiza como parte de la integración de ----[ml
 Para migrar de CardForm a Checkout Bricks, ve a esta documentación:
 
 - [CardForm](/developers/es/docs/checkout-bricks/how-tos/how-to-migrate/cardform/clientside)
-
-

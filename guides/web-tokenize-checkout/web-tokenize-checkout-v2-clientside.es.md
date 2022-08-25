@@ -91,7 +91,6 @@ renderPaymentBrick(bricksBuilder);
 
 4. En la devolución de llamada `onSubmit` de Brick, agrega la misma URL que usaste en el parámetro `action` de su formulario. Aquí es donde el Brick enviará los datos del formulario de pago.
 
-
 > CLIENT_SIDE
 >
 > h2
@@ -184,6 +183,3 @@ renderCardPaymentBrick(bricksBuilder);
 `````
 
 Con esta configuración, será posible procesar el pago con las tarjetas guardadas.
-
-
-

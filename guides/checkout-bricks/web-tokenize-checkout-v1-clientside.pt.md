@@ -87,7 +87,6 @@ renderPaymentBrick(bricksBuilder);
 5. No callback de onSubmit do Brick, adicione a mesma URL que utilizava no parâmetro `action` do seu formulário, é para ela que o Brick enviará os dados do formulário de pagamento.
 
 
-
 > CLIENT_SIDE
 >
 > h2
@@ -99,7 +98,6 @@ renderPaymentBrick(bricksBuilder);
 > Nota
 >
 > O processo de criação de usuários e cartões não tem nenhuma diferença entre o Web Tokenize Checkout e Checkout Bricks.
-
 
 ### Receber o pagamento de um usuário com cartões salvos
 
@@ -170,6 +168,5 @@ const renderCardPaymentBrick = async (bricksBuilder) => {
 };
 renderCardPaymentBrick(bricksBuilder);
 ````
-
 
 Com essa configuração, será possível realizar o processamento do pagamento com os cartões salvos.

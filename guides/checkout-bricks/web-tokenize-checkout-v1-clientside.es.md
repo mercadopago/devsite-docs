@@ -86,7 +86,6 @@ renderPaymentBrick(bricksBuilder);
 5. En el callback de la llamada `onSubmit` de Bricks, agrega la misma URL que utilizas en el parámetro `action` de tu formulario. Aquí es donde Bricks enviará los datos del formulario de pago. 
 
 
-
 > CLIENT_SIDE
 >
 > h2
@@ -103,7 +102,6 @@ renderPaymentBrick(bricksBuilder);
 
 Para recibir el pago de un usuario con tarjetas guardadas, es necesario migrar el usuario y las tarjetas a Checkout Bricks, que realizará el proceso de tokenización y enviará la información para generar el pago en el callback de `onSubmit`. Para hacerlo, sigue los pasos a continuación,
 
-
 1. Encuentra en la estructura actual de tu integración el formulario que llama al Web Tokenize Checkout.
 
 ```html
@@ -117,7 +115,6 @@ Para recibir el pago de un usuario con tarjetas guardadas, es necesario migrar e
    </script>
  </form>
 ````
-
 
 2. Reemplaza este formulario con el tag que contendrá el Brick de Card Payment.
 
@@ -170,6 +167,5 @@ const renderCardPaymentBrick = async (bricksBuilder) => {
 };
 renderCardPaymentBrick(bricksBuilder);
 ````
-
 
 Con esta configuración, será posible procesar el pago con las tarjetas guardadas.

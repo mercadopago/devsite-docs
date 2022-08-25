@@ -90,7 +90,6 @@ renderPaymentBrick(bricksBuilder);
 ````
 4. In Brick's `onSubmit` callback, add the same URL that you used in the `action` parameter of your form. This is where Brick will send the payment form data.
 
-
 > CLIENT_SIDE
 >
 > h2

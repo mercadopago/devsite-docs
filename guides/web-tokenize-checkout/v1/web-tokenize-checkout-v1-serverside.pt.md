@@ -8,7 +8,6 @@ O Brick facilita o envio do pagamento ao Mercado Pago pelo backend. Os dados rec
 
 1. Encontre na estrutura atual de sua integração a chamada a API de Payments.
 
-
 [[[
 ```php
 <?php
