@@ -18,7 +18,7 @@ Además de la configuración anterior, encontrarás diferentes opciones relacion
 8. **URL de éxito / URL de pago rechazado / URL de pago pendiente:** si deseas crear una URL y personalizar la página de devolución para los 3 estados informados, simplemente introdúcelos en el campo solicitado.
 9. **Modo binario:** actívalo cuando no desees dejar los pagos en estado pendiente o de revisión. Con el modo binario, los pagos se aceptarán o rechazarán automáticamente.
 10. **Cupones de descuento:** selecciona si deseas ofrecer cupones de descuento en tu tienda.
-11. **Reduzir inventário:** selecciona **Sí** si deseas que el producto sea retirado durante la creación del pedido, independientemente de si el pago se aprueba o no. De lo contrario, mantén **No** para retirar el producto del stock solo cuando se apruebe el pago. 
+11. **Reducir inventário:** selecciona **Sí** si deseas que el producto sea retirado durante la creación del pedido, independientemente de si el pago se aprueba o no. De lo contrario, mantén **No** para retirar el producto del stock solo cuando se apruebe el pago. 
 12. **Descuentos por compra con Mercado Pago:** elige un porcentaje de descuento para los clientes que pagan con Mercado Pago.
 13. **Comisión por compra con Mercado Pago:** elige un porcentaje adicional que desees cobrar como tarifa a sus clientes por pagar con Mercado Pago.
 14. **Pago con tarjeta guardado en Mercado Pago:** permite a los clientes comprar con los datos de su tarjeta guardados en Mercado Pago, sin tener que completar los datos de la tarjeta al momento de pagar en la tienda.
