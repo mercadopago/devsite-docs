@@ -3,7 +3,7 @@
 Para integrarte con Mercado Pago, sigue los procedimientos a continuación.
  
 1. En el Dashboard de tu tienda Yampi, accede al menú **Checkout**  y haz clic en **Pagamento**
-2. En la pantalla de **administración de pasarela de pago**, haz clic en el botón **+ Nova afiliação** y selecciona la pasarela de Mercado Pago.
+2. En la pantalla de **administración de gateway de pago**, haz clic en el botón **+ Nova afiliação** y selecciona el gateway de Mercado Pago.
 3. Luego, indica el **nombre del método de pago** que le aparecerá al comprador, por ejemplo, "Mercado Pago - Pix".
 4. Ingrese el texto que **identificará el pago en el extracto de la tarjeta**. Este campo no puede contener espacios ni caracteres especiales.
 5. Seleccione **Sim** para indicar que las transacciones se autorizarán y capturarán automáticamente o **Não** para que las transacciones solo se autorizan y capturan más tarde dentro de los 5 días.
