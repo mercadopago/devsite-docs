@@ -144,23 +144,3 @@ Deve informar ao seu assessor técnico atribuído, o URL base de seu domínio ao
 > A integração não dará certo se você não cumprir este passo. 
 
 ---
-
-### Próximos passos
-
-
-> LEFT_BUTTON_REQUIRED_PT
->
-> Integração avançada
->
-> Conheça as opções disponíveis para levar sua integração ao próximo nível. 
->
-> [Integração avançada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/qr-code/qr-unattended-model/qr-advanced-integration)
-
-
-> RIGHT_BUTTON_RECOMMENDED_PT
->
-> Teste sua Integração
->
-> Realize os teste de uso mais frequentes para validar sua integração 
->
-> [Teste sua Integração](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/qr-code/qr-unattended-model/qr-integration-test)

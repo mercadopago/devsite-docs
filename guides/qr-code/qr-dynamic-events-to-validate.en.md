@@ -8,6 +8,3 @@
 |Second payment attempt. At first, the user performs a rejected payment and then executes an approved payment.| POS system receives information about the rejected payment and of the approved one later.| Do not remove the order after a rejected payment.|
 |Refunds. The payment refund is performed from the Point of Sale.| Refunds impact the buyer account.|[See Refunds and cancellations](/developers/en/docs/qr-code/additional-content/cancellations-and-refunds)|
 |Order expiration. The user attempts to pay after the QR has expired.|The order is deleted; therefore, when scanning the QR, the error screen is displayed. Try to scan the QR after exceeding the `expiration_date`|
-
-
-

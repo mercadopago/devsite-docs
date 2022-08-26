@@ -24,4 +24,3 @@ Estes são alguns pontos a considerar para aprimorar a qualidade das suas integr
 
 * Mantenha atualizado o status dos pedidos nos seus sistemas, usando e processando notificações IPN ou Webhooks.
 * Use relatórios de conciliação de API para melhorar a gestão financeira do seu negócio.
-

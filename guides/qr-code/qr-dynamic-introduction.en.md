@@ -4,7 +4,6 @@ It allows the inclusion of the payment value in the QR code. Each QR represents 
 
 This model is ideal for collections with QR codes on ticket and desktop services or value-included payments.
 
-
 ## Model description
 
 The main characteristics are:

@@ -20,7 +20,7 @@ Pronto! O módulo do Mercado Pago foi instalado e está pronto para ser configur
 >
 > Após configurar o Checkout Transparente para receber pagamentos, saiba como configurar o envio de e-mails que notificarão o usuário de suas transações.
 >
-> [Customização de e-mail](/developers/pt/docs/prestashop/how-tos/checkout-api/email-customization)
+> [Customização de e-mail](/developers/pt/docs/prestashop/how-tos/email-customization)
 ------------
 
 ----[mla, mlm, mpe, mco, mlu, mlc]----
@@ -30,5 +30,5 @@ Pronto! O módulo do Mercado Pago foi instalado e está pronto para ser configur
 >
 > Após configurar o Checkout API para receber pagamentos, saiba como configurar o envio de e-mails que notificarão o usuário de suas transações.
 >
-> [Customização de e-mail](/developers/pt/docs/prestashop/how-tos/checkout-api/email-customization)
+> [Customização de e-mail](/developers/pt/docs/prestashop/how-tos/email-customization)
 ------------

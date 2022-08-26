@@ -32,7 +32,7 @@ Below we will explain how to indicate the URLs that will be notified and how to 
 | `point_integration_wh` | `state_FINISHED` | Payment process completed |
 | `point_integration_wh` | `state_CANCELED` | Payment process canceled |
 | `point_integration_wh` | `state_ERROR` | An error occurred while processing the payment attempt |
-| `shipments` | `shipment.updated`| Shipping data and order update |
+| `delivery` | `delivery.updated`| Shipping data and order update |
 
 ## Setup while creating payments
 
@@ -267,7 +267,7 @@ curl -X POST \
 >
 > For the event type `point_integration_wh` the notification format changes. [Click here](/developers/en/docs/mp-point/introduction) to consult the documentation of **Mercado Pago Point**.
 > <br/>
-> In the case of the `shipments` event, we will also have some different attributes in the response. Check the table below for these features.
+> In the case of the `delivery` event, we will also have some different attributes in the response. Check the table below for these features.
 
 ```json
 {
@@ -299,11 +299,11 @@ This indicates that payment **999999999** was created for user **44444** in prod
 | **api_version** | Indicates if it is a duplicate notification or not |
 | **action** | Type of notification received, indicating whether it is the update of a resource or the creation of a new |
 | **data - id** | Payment ID or merchant_order |
-| **attempts** (shipments) | Number of times a notification was sent |
-| **received** (shipments) | Resource Creation Date |
-| **resource** (shipments) | Type of notification received, indicating whether this is an update to a feature or the creation of a new one |
-| **sent** (shipments) | Notification sent date |
-| **topic** (shipments) | Type of notification received |
+| **attempts** (delivery) | Number of times a notification was sent |
+| **received** (delivery) | Resource Creation Date |
+| **resource** (delivery) | Type of notification received, indicating whether this is an update to a feature or the creation of a new one |
+| **sent** (delivery) | Notification sent date |
+| **topic** (delivery) | Type of notification received |
 
 4. If you want to receive notifications only from Webhook and not from IPN, you can add in the `notification_url` the parameter `source_news=webhook`. For example: https://www.yourserver.com/notifications?source_news=webhooks
 
@@ -320,6 +320,6 @@ After returning the notification and confirming its receipt, you will obtain the
 | subscription_preapproval_plan | `https://api.mercadopago.com/preapproval_plan` | [check documentation](/developers/en/reference/subscriptions/_preapproval_plan/post) |
 | subscription_authorized_payment | `https://api.mercadopago.com/authorized_payments` | [check documentation](/developers/en/reference/subscriptions/_authorized_payments_id/get) |
 | point_integration_wh | - | [check documentation](/developers/en/guides/mp-point/introduction) |
-| shipments | - | [check documentation](/developers/en/reference/mp_delivery/_proximity-integration_shipments_shipment_id_accept/put)
+| delivery | - | [check documentation](/developers/en/reference/mp_delivery/_proximity-integration_shipments_shipment_id_accept/put)
 
 With this information, you will be able to carry out the necessary updates to your platform, such as updating an approved payment.

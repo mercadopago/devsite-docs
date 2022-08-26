@@ -8,19 +8,3 @@ You can integrate solutions for accounts other than your own. When integrating s
 4. Confirm the credentials request.
  
 After access to credentials is granted, you can use them to integrate solutions. When the integrations are complete, remove access permissions for the credentials that were shared and take care of data security.
-
-> PREV_STEP_CARD_ES
->
-> Your applications
->
-> Check information about your created applications.
->
-> [Your applications](/developers/en/guides/additional-content/dashboard/applications)
-
-> NEXT_STEP_CARD_EN
->
-> Your certifications
->
-> Check information about your certifications in our certified developer program (**&lt;dev&gt;program**).
->
-> [Your certifications](/developers/en/guides/additional-content/dashboard/certification)

@@ -13,19 +13,3 @@ Unique number that identifies you as a member of the **&lt;dev&gt;program** auto
 The **&lt;dev&gt;program** is a free and exclusive developer program designed for you to join our community and receive extra benefits. To be a part of it, you must have some of the official Mercado Pago certifications.
  
 Check out the [&lt;dev&gt;program](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/developer-program) page and choose which product you want to earn your certification for. Then, use your integrator ID and enter it into your integrations to receive extra benefits.
-
-> PREV_STEP_CARD_EN
->
-> Introduction
->
-> Check the main features of the Dashboard.
->
-> [Introduction](/developers/en/guides/additional-content/dashboard/introduction)
-
-> NEXT_STEP_CARD_EN
->
-> Your applications
->
-> Check information about your created applications.
->
-> [Your applications](/developers/en/guides/additional-content/dashboard/applications)

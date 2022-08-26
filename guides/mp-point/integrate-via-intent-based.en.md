@@ -6,7 +6,6 @@
 >
 > * This integration is only available for Android version 2.8.0 or superior.
 
-
 Another way to integrate is by using Androids native code, via _Intent-Based_.
 
 You must use the “startActivityForResult” method to start directly the payment process. The result of the payment is going to come as “activityResult”.
