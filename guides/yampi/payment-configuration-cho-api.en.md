@@ -1,6 +1,6 @@
 # Configure payments with Checkout Transparente
 
-With the [Checkout Transparente](/developers/pt/guides/checkout-api/landing), the entire checkout process will take place within the online store environment, without the need to redirect to an external page. In addition to allowing greater control in the customization and integration process, the checkout offers a complete structure for processing payments with the main means available on the market.
+With the [Checkout Transparente](/developers/en/guides/checkout-api/landing), the entire checkout process will take place within the online store environment, without the need to redirect to an external page. In addition to allowing greater control in the customization and integration process, the checkout offers a complete structure for processing payments with the main means available on the market.
 
 By integrating the Mercado Pago Checkout Transparente to your store, the available means of payment will be: **credit cards**, **boleto bancário** and **Pix** (bank transfer available 24 hours a day).
 
@@ -23,7 +23,7 @@ Ready! Mercado Pago checkout is ready to receive online payments from your store
 >
 > For payments with credit cards, the installment and interest settings must be verified directly in your [Mercado Pago user panel](https://www.mercadopago.com.br/costs-section#from-section=menu). <br>
 > </br> <br/>
-> The Pix payment option can only be used if there is a [Pix key registered](/developers/em/docs/checkout-api/integration-configuration/integrate-with-pix) in Mercado Pago. In addition, there is a limit to the value of Pix, established by the Central Bank of Brazil, which can be moved during the night period (between 8:00 pm and 6:00 am) of R$1,000. For the daytime period (between 6 am and 8 pm), however, there is no movement limit.
+> The Pix payment option can only be used if there is a [Pix key registered](/developers/en/docs/checkout-api/integration-configuration/integrate-with-pix) in Mercado Pago. In addition, there is a limit to the value of Pix, established by the Central Bank of Brazil, which can be moved during the night period (between 8:00 pm and 6:00 am) of R$1,000. For the daytime period (between 6 am and 8 pm), however, there is no movement limit.
 
 > PREV_STEP_CARD_EN
 >

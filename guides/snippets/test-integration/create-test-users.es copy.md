@@ -33,9 +33,9 @@ La respuesta tendrá una estructura similar al siguiente ejemplo:
 
 Para más información sobre los parámetros y respuestas de la API del usuario de prueba, accede a [Referencias API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/test_user/_users_test/post)
 
->WARNING
+> WARNING
 >
->Importante
+> Importante
 >
 > Puedes generar hasta 10 cuentas de usuarios de prueba en simultáneo. Por eso, te recomendamos **guardar el email y password de cada uno**.
 > <br/>
