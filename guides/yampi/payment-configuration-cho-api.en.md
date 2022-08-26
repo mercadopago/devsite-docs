@@ -1,6 +1,6 @@
 # Configure payments with Checkout Transparente
 
-With the [Checkout Transparente](/developers/pt/guides/checkout-api/landing), the entire checkout process will take place within the online store environment, without the need to redirect to an external page. In addition to allowing greater control in the customization and integration process, the checkout offers a complete structure for processing payments with the main means available on the market.
+With the [Checkout Transparente](/developers/en/guides/checkout-api/landing), the entire checkout process will take place within the online store environment, without the need to redirect to an external page. In addition to allowing greater control in the customization and integration process, the checkout offers a complete structure for processing payments with the main means available on the market.
 
 By integrating the Mercado Pago Checkout Transparente to your store, the available means of payment will be: **credit cards**, **boleto bancário** and **Pix** (bank transfer available 24 hours a day).
 
