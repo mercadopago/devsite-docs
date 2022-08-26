@@ -12,19 +12,3 @@ To integrate with Mercado Pago, follow the procedures below.
 8. Once the integration settings have been made, select the payment methods that will be available for use with Mercado Pago. You will be able to select all the ones you want and then edit them or configure them manually after the plugin settings. For more information, see the [Payment configuration](/developers/en/docs/yampi/payment-configuration-cho-api) section.
 
 Once the business settings are done, configure your store's payment experience with Mercado Pago's Checkout Transparente.
-
-> PREV_STEP_CARD_EN
->
-> Prerequisites
->
-> Know the prerequisites to perform the integration.
->
-> [Prerequisites](/developers/en/docs/yampi/prerequisites)
-
-> NEXT_STEP_CARD_EN
->
-> Payment configuration
->
-> Learn how to configure Mercado Pago checkouts to receive payments from your store.
->
-> [Payment configuration](/developers/en/docs/yampi/payment-configuration-cho-api)

@@ -21,14 +21,6 @@ Ready! Mercado Pago checkout is ready to receive online payments from your store
 >
 > Important
 >
-> For payments with credit cards, the installment and interest settings must be verified directly in your [Mercado Pago user panel](https://www.mercadopago.com.br/costs-section#from-section=menu). <br>
+> For payments with credit cards, the installment and interest settings must be verified directly in your [Mercado Pago user panel](https://www.mercadopago.com.br/costs-section#from-section=menu). </br> <br/>
 > </br> <br/>
-> The Pix payment option can only be used if there is a [Pix key registered](/developers/en/docs/checkout-api/integration-configuration/integrate-with-pix) in Mercado Pago. In addition, there is a limit to the value of Pix, established by the Central Bank of Brazil, which can be moved during the night period (between 8:00 pm and 6:00 am) of R$1,000. For the daytime period (between 6 am and 8 pm), however, there is no movement limit.
-
-> PREV_STEP_CARD_EN
->
-> Payment configuration
->
-> Learn how to configure Mercado Pago checkouts to receive payments from your store.
->
-> [Payment configuration](/developers/en/docs/yampi/payment-configuration-cho-api)
+> The Pix payment option will only be displayed if there is a Pix key registered] in Mercado Pago. If you haven't created it yet, [click here](https://www.youtube.com/watch?v=60tApKYVnkA) and check the necessary steps. In addition, there is a limit to the value of Pix, established by the Central Bank of Brazil, which can be moved during the night period (between 8:00 pm and 6:00 am) of R$1,000. For the daytime period (between 6 am and 8 pm), however, there is no movement limit.

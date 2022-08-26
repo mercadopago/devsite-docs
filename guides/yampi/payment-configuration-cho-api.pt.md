@@ -21,14 +21,6 @@ Pronto! O checkout do Mercado Pago está pronto para receber pagamentos online d
 >
 > Importante
 > 
-> Para pagamentos com cartões de crédito, as configurações de parcelamento e juros devem ser verificadas diretamente no seu [painel de usuário do Mercado Pago](https://www.mercadopago.com.br/costs-section#from-section=menu).<br>
+> Para pagamentos com cartões de crédito, as configurações de parcelamento e juros devem ser verificadas diretamente no seu [painel de usuário do Mercado Pago](https://www.mercadopago.com.br/costs-section#from-section=menu).</br> <br/>
 > </br> <br/>
-> A opção de pagamento com Pix só poderá ser utilizada se houver uma [chave Pix cadastrada](/developers/pt/docs/checkout-api/integration-configuration/integrate-with-pix) no Mercado Pago. Além disso, existe um limite para o valor de Pix, estabelecido pelo Banco Central do Brasil, que poderá ser movimentado no decorrer do período noturno (entre 20h e 6h) de R$1 mil. Para o período diurno (entre 6h e 20h), contudo, não há limite de movimentação.
-
-> PREV_STEP_CARD_PT
->
-> Configuração da integração
->
-> Integre o Mercado Pago para começar a receber pagamento em sua loja da Yampi.
->
-> [Configurar a integração](/developers/pt/docs/yampi/integration)
+> A opção de pagamento com Pix só será exibida se houver uma chave Pix cadastrada no Mercado Pago. Caso ainda não tenha criado, [clique aqui](https://www.youtube.com/watch?v=60tApKYVnkA) e veja o passo a passo. Além disso, existe um limite para o valor de Pix, estabelecido pelo Banco Central do Brasil, que poderá ser movimentado no decorrer do período noturno (entre 20h e 6h) de R$1 mil. Para o período diurno (entre 6h e 20h), contudo, não há limite de movimentação.

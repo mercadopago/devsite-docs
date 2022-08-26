@@ -13,19 +13,3 @@ Para integrar Mercado Pago con Yampi, debes cumplir con los requisitos a continu
 | Sistema operativo | Sistema responsable de la gestión del hardware informático. | Linux x86, Windows x86-64 y MacOS x86-64 |
 
 Si se cumplen todos los requisitos previos, puedes instalar el checkout Mercado Pago en la plataforma Yampi.
-
-> PREV_STEP_CARD_ES
->
-> Página de inicio
->
-> Regrese a la página de inicio de la documentación de Yampi.
->
-> [Página de inicio](/developers/es/docs/yampi/landing)
-
-> NEXT_STEP_CARD_ES
->
-> Configuración de la integración
->
-> Intégrate con Mercado Pago para comenzar a recibir pagos en tu tienda Yampi.
->
-> [Configuración de la integración](/developers/es/docs/yampi/integration)

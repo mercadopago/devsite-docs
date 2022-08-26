@@ -12,19 +12,3 @@ Para realizar a integração com o Mercado Pago, siga os procedimentos abaixo.
 8. Feitas as devidas configurações de integração, selecione os meios de pagamento que estarão disponíveis para utilizar com o Mercado Pago. Você poderá selecionar todos os que deseja e depois editá-los ou configurá-los manualmente após as configurações do plugin. Para mais informações, veja a seção [Configuração de pagamentos](/developers/pt/docs/yampi/payment-configuration-cho-api).
 
 Feitas as configurações de negócio, configure a experiências de pagamento da sua loja com o Checkout Transparente do Mercado Pago.
-
-> PREV_STEP_CARD_PT
->
-> Pré-requisitos da integração
->
-> Conheça os pré-requisitos para realizar a integração.
->
-> [Pré-requisitos da integração](/developers/pt/docs/yampi/prerequisites)
-
-> NEXT_STEP_CARD_PT
->
-> Configuração de pagamentos
->
-> Saiba como configurar o Checkout Transparente do Mercado Pago para receber os pagamento de sua loja.
->
-> [Configuração de pagamentos](/developers/pt/docs/yampi/payment-configuration-cho-api)

@@ -13,19 +13,3 @@ In order to integrate Mercado Pago with Yampi, you must meet the requirements be
 | Web Server | Software responsible for accepting HTTP requests from clients, typically browsers, and serving them with HTTP responses | Apache 2.x, Nginx 1.7.x |
 
 If all prerequisites are met, you can install the Mercado Pago checkout on the Yampi platform.
-
-> PREV_STEP_CARD_EN
->
-> Home page
->
-> Return to the Yampi documentation homepage.
->
-> [Home page](/developers/en/docs/yampi/landing)
-
-> NEXT_STEP_CARD_EN
->
-> Integration configuration
->
-> Integrate with Mercado Pago to start receiving payment at your Yampi store.
->
-> [Integration configuration](/developers/en/docs/yampi/integration)
