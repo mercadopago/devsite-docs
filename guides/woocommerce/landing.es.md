@@ -2,7 +2,7 @@
 content_section_with_media: 
  - title: WooCommerce
  - message: WooCommerce es un complemento que te permite habilitar tu sitio web de WordPress para que funcione como una tienda virtual con la tranquilidad de ofrecer a los compradores la posibilidad de realizar pagos utilizando Mercado Pago.
- - media_image: /woocomerce/melina_mockup.png
+ - media_video: https://www.youtube.com/embed/GvlMgBLu5wE
 ---
 
 --- mini_landing_separator ---
