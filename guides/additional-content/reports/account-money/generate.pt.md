@@ -59,8 +59,62 @@ Todas as opções disponíveis na hora de baixar seu relatório.
 | Arquivo | <br/>Os relatórios gerados ficam salvos na sua conta do Mercado Pago.<br/><br/> |
 | Configuração disponível via API | <br/>- Colunas a gerar por relatório<br/> - Prefixo do arquivo para identificá-lo facilmente<br/> - Envio por SFTP<br/> - Separador de colunas (ponto ou ponto e vírgula)<br/> - Notificação por e-mail<br/><br/> |
 
+## Notificações
+
+### Webhook
+
+Webhook (também conhecido como "retorno de chamada web"), é um método simples que permite que um aplicativo ou sistema forneça informações em tempo real toda vez que um evento acontece, ou seja, é uma maneira de receber dados entre dois sistemas de forma passiva, por meio de um HTTP POST. No caso dos relatórios usados na reconciliação, uma notificação é enviada ao usuário que tiver configurado este serviço quando seus arquivos forem gerados.
+
+| Atributo        | Descrição                         |
+|-----------------|-----------------------------------|
+| transaction_id  | ID da transação                   |
+| request_date    | Data da solicitação               |
+| generation_date | Data da geração                   |
+| files           | Arquivos disponíveis              |
+| type            | Formato do arquivo                |
+| url             | Link de download                  |
+| name            | Nome do arquivo                   |
+| status          | Status do relatório               |
+| creation_type   | Criação manual ou agendada        |
+| report_type     | Tipo de relatório                 |
+| is_test         | Determina se é um teste           |
+| signature       | Assinatura digital da notificação |
+
+### Senha para criptografia
+
+Para garantir o processo de notificação ao sistema, será enviado no corpo da mensagem (payload) um atributo chamado **_"signature"_** para validar que a notificação Webhook teve origem no Mercado Pago e que não se trata de uma imitação.
+
+A **signature** é criada ao unir o `transaction_id` com a `senha criptografada` na seção **_"Notificação por Webhook"_** e o `generation_date` do relatório. Assim que os valores forem vinculados, eles são criptografados usando o algoritmo **_BCrypt_** da seguinte maneira:
+
+`signature = BCrypt(transaction_id + '-' + password_for_encryption + '-' + generation_date)`
+
+Para validar que foi o Mercado Pago quem emitiu a notificação, é necessário usar a **_função de verificação oferecida_** pelo algoritmo do **_BCrypt_** para a linguagem desejada.
+
+**Exemplo Java:**
+
+`BCrypt.checkpw(transaction_id + '-' + password_for_encryption + '-' + generation_date, payload_signature)`
+
+> Tenha em mãos o [Glossário do relatório](/developers/pt/guides/additional-content/reports/account-money/glossary) de Dinheiro em conta para consultá-lo quando precisar ou queira conferir algum termo técnico.
+
+> NEXT_STEP_CARD_PT
+>
+> Geração a partir do Mercado Pago 
+>
+> Baixe seus relatórios de forma manual ou programada na sua conta do Mercado Pago.
+>
+> [Geração a partir do Mercado Pago](/developers/pt/guides/additional-content/reports/account-money/panel)
+
+> NEXT_STEP_CARD_PT
+>
+> Geração via API
+>
+> Crie relatórios de forma programada e manual através de uma integração com o Mercado Pago.
+>
+> [Geração via API](/developers/pt/guides/additional-content/reports/account-money/api)
+
 > NOTE
 >
 > Nota
 >
 > Tenha em mãos o [Glossário do relatório](/developers/pt/guides/additional-content/reports/account-money/glossary) de Dinheiro em conta para consultá-lo quando precisar ou queira conferir algum termo técnico.
+

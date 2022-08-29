@@ -5,18 +5,26 @@ Con este simulador, podrás crear una intención de pago y procesarla desde el d
 
 El simulador cuenta con dos modos de uso:
 
-* **PDV Mode**: simula la integración de un sistema completo (dispositivo y PDV) con nuestra API de Integraciones. Ingresa al [Simulador PDV Mode](https://api.mercadopago.com/point/integrator-simulator/sandbox/?ignoreapidoc=true)
-* **Device Mode**: simula un dispositivo Point virtual para que puedas probar tu integración desde los requests HTTP. Ingresa al [Simulador Device Mode](https://api.mercadopago.com/point/integrator-simulator/sandbox/device?ignoreapidoc=true).
+* **PDV mode**: simula la integración de un sistema completo (dispositivo y PDV) con nuestra API de Integraciones. Ingresa al [Simulador PDV mode](https://api.mercadopago.com/point/integrator-simulator/sandbox/?ignoreapidoc=true).
+* **Device mode**: simula un dispositivo Point virtual para que puedas probar tu integración desde los requests HTTP. Ingresa al [Simulador device mode](https://api.mercadopago.com/point/integrator-simulator/sandbox/device?ignoreapidoc=true).
 
 ## Cómo usar el simulador 
 
 ### 1. Configura tus credenciales
 
-Al utilizar el simulador por primera vez, deberás ingresar tus llaves y seleccionar uno de tus dispositivos disponibles. 
+Al utilizar el simulador por primera vez, deberás ingresar tus credenciales y seleccionar uno de tus dispositivos disponibles. 
 
-Para utilizar **PDV Mode** necesitarás tu llave Access Token. Si estás utilizando un Access Token de prueba, el simulador te asignará un dispositivo virtual.
+* **PDV mode:** debes ingresar tu `access-token` de prueba y el simulador te asignará un dispositivo virtual.
 
-Al utilizar **Device Mode**, debes ingresar tu Access Token y tu Device Id obtenido al [listar tus dispositivos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/integration-api/create-payment-intent#bookmark_crea_la_intención_de_pago)
+* **Device mode:** debes ingresar tu `access-token` de prueba y la Identificación del dispositivo obtenido al [listar tus dispositivos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/integration-api/create-payment-intent#bookmark_obtén_el_listado_de_tus_dispositivos_disponibles).
+
+> WARNING
+>
+> Importante
+>
+> Recuerda que para utilizar el simulador debes configurar un `access-token` de prueba (`TEST-XXXXX-XXXXX-XXXXXXX`) y lo puedes obtener en tus [integraciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/applications), opción **Mis credenciales > Credenciales de prueba**.
+> <br/>
+> Para consultar un pago realizado por el simulador a través de la [API de payments](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/get), debe utilizar el `access-token` de prueba  (el mismo que se usa en el simulador).
 
 ### 2. Simula una intención de pago
 
@@ -29,7 +37,6 @@ Hemos preparado distintos escenarios que te permiten simular una experiencia rea
 | Error | $1300 |
 | Successful | Cualquier otro valor diferente a los anteriores |
 
-
 ### 3. Obtén la intención de pago desde el dispositivo
 
 Una vez creada la intención de pago, deberás dar clic en el botón verde del dispositivo virtual para obtener la intención de pago creada. Una vez encontrado, puedes verificar que el monto ingresado inicialmente coincida con el mostrado en la pantalla del dispositivo.
@@ -40,13 +47,10 @@ Si el paso anterior fue exitoso, puedes dar clic en la animación de la tarjeta,
 
 ### 5. Recibe la notificación
 
-Si realizaste los pasos de configuración de las [notificaciones Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/integration-api/integration#bookmark_3._Prepara_y_configura_tus_notificaciones_de_Webhook), es momento de que revises tus registros. Allí verás que fue enviada la notificación del estado de la transacción.
+Si realizaste los pasos de configuración de las [notificaciones Webhooks](/developers/es/docs/mp-point/integration-configuration/integrate-with-pdv/notifications), es momento de que revises tus registros. Allí verás que fue enviada la notificación del estado de la transacción.
 
-
-> PREV_STEP_CARD_ES
+> NOTE
 >
-> Configura las notificaciones
+> Nota
 >
-> Te explicamos cómo comenzar a recibir notificaciones de Webhooks.
->
-> [Configura las notificaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/integration-api/notifications)
+> El simulador te permitirá realizar pagos de prueba, de esta forma, puedes consultar toda la información correspondiente en la sección [API de Pagos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/get).

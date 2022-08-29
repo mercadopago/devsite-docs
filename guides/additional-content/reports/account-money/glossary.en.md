@@ -21,7 +21,7 @@ We know, some terms are technical and you may not be familiar with all of them. 
 | SETTLEMENT_DATE | Date the transaction money was credited. |
 | REAL_AMOUNT | Net amount of the transaction, if it is a settlement, the amounts for chargebacks, claims or returns are discounted. |
 | COUPON_AMOUNT | Discount coupon amount. **Only the gross amount** (`TRANSACTION_AMOUNT`) **is discounted if provided by the seller**. |
-| METADATA | ----[mlu, mla, mlm, mco, mlc, mlb]---- Extra data such as the ID of partial returns or data provided by the seller in case of having an external integration. ------------ ----[mpe]---- Extra data such as data provided by the seller in case of having an external integration. ------------|
+| METADATA | ----[mlu, mla, mlm, mco, mlc, mlb]---- Extra data such as the ID of partial returns or data provided by the seller in case of having an external integration. ------------ ----[mpe]---- Extra data such as data provided by the seller in case of having an external integration. ------------ ----[mlb]---- When "Fee discount" is shown it means the reduction in the selling fee for participating in a commercial campaign. ------------ |
 | MKP_FEE_AMOUNT | Mercado Libre Fee. |
 | FINANCING_FEE_AMOUNT | Cost for offering interest-free installments. |
 | SHIPPING_FEE_AMOUNT | Shipping cost. |
@@ -44,13 +44,15 @@ We know, some terms are technical and you may not be familiar with all of them. 
 | POI_WALLET_NAME | Name of the digital wallet that a virtual payment comes from. Allows you to identify the origin of a transaction when you charge with a Mercado Pago QR Code.|
 | POI_BANK_NAME | Name of the bank that a virtual payment comes from. Allows you to identify the origin of a transaction when you charge with a Mercado Pago QR Code.|
 | CARD_INITIAL_NUMBER | It corresponds to the first digits of the credit or debit card that you used to make the purchase. |
-| OPERATION_TAGS | These are labels to categorize and/or segment different aspects of the transaction, such as the channels used to make a payment. They are identified as:<br>WHATSAPP_PAY: This label indicates that the payment was made via WhatsApp<br>QR: This label indicates that the payment was made with a QR code<br>PO: This label indicates that the payment was made with Point<br>MARKETPLACE: This label indicates that the payment was made directly in Mercado Libre.|
-----[mla]---- | PAYER_NAME* | Name of the person who is making a payment or donation. | ------------
- ----[mla]---- | PAYER_ID_TYPE* | Type of identification of the person who is making a payment or donation. | ------------
- ----[mla]---- | PAYER_ID_NUMBER* | Identification number of the person who is making a payment or donation. | ------------
+| OPERATION_TAGS | These are labels to categorize and/or segment different aspects of the transaction, such as the channels used to make a payment. They are identified as:<br>WHATSAPP_PAY: This label indicates that the payment was made via WhatsApp<br>QR: This label indicates that the payment was made with a QR code<br>PO: This label indicates that the payment was made with Point<br>MARKETPLACE: This label indicates that the payment was made directly in Mercado Libre. | ----[mla]---- 
+| PAYER_NAME* | Name of who is making a payment or donation. | ------------ ----[mla]----
+| PAYER_ID_TYPE* | Type of identification of who is making a payment or donation. | ------------ ----[mla]----
+| PAYER_ID_NUMBER* | Identification number of who is making a payment or donation. | ------------
 
- ----[mla]----
+----[mla]----
 > INFO
 >
-> (*)This information will only be available for payments made with QR code, transfers or donations.
+> (*) This information can only be used for reconciliation purposes, will be treated according to the applicable 
+> personal data protection laws and will be available when payments via QR code or transfers are received, as well as
+> when a donation is received by an NGO.
 ------------

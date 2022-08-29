@@ -9,7 +9,7 @@ Below, we list the two types of users required to perform the Checkout Pro payme
 * **Seller:** This is the account you use to configure the application and the credentials for billing.
 * **Buyer:** This is the account you use to test the purchase process.
  
-To create a test user, send your **production credential** _Access token_ to the endpoint [/users/test_user](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/test_user/_users_test_user/post) and execute the request.
+To create a test user, send your **production credential** _Access token_ to the endpoint [/users/test](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/test_user/_users_test/post) and execute the request.
  
 > NOTE
 >

@@ -21,7 +21,7 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 | SETTLEMENT_DATE | Fecha en que se acreditó el dinero de la operación. |
 | REAL_AMOUNT | Monto neto de la operación, si es un *settlement*, se le descuentan los montos por contracargos, reclamos o devoluciones. |
 | COUPON_AMOUNT | Monto del cupón de descuento. **Solo se descuenta del monto bruto** (`TRANSACTION_AMOUNT`) **si está provisto por el vendedor**. |
-| METADATA | ----[mlu, mla, mlm, mco, mlc, mlb]---- Datos extras como por ejemplo el ID de las devoluciones parciales o datos provistos por el vendedor en caso de tener una integración externa.------------ ----[mpe]---- Datos extras, como por ejemplo, datos provistos por el vendedor en caso de tener una integración externa.------------ |
+| METADATA | ----[mlu, mla, mlm, mco, mlc, mlb]---- Datos extras como por ejemplo el ID de las devoluciones parciales o datos provistos por el vendedor en caso de tener una integración externa.------------ ----[mpe]---- Datos extras, como por ejemplo, datos provistos por el vendedor en caso de tener una integración externa.------------ ----[mlb]---- Cuando se muestra "Fee discount" se entiende como la reducción en el cargo por venta por la participación en una campaña comercial. ------------ |
 | MKP_FEE_AMOUNT | Comisión de Mercado Libre. Incluye IVA. |
 | FINANCING_FEE_AMOUNT | Costo por ofrecer cuotas sin interés. |
 | SHIPPING_FEE_AMOUNT | Costo de envío. |
@@ -44,13 +44,15 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 | POI_WALLET_NAME | Nombre de la billetera virtual desde la que se origina un pago digital. Permite identificar el origen de una operación cuando cobras con un ----[mla]----[código QR interoperable](https://vendedores.mercadolibre.com.ar/nota/cobra-a-otras-billeteras-con-tu-qr-de-mercado-pago)------------ ----[mlu, mpe, mlm, mco, mlc, mlb]----código QR de Mercado Pago------------.|
 | POI_BANK_NAME | Nombre de la entidad bancaria desde la que se origina un pago digital. Permite identificar el origen de una operación cuando cobras con un ----[mla]----[código QR interoperable](https://vendedores.mercadolibre.com.ar/nota/cobra-a-otras-billeteras-con-tu-qr-de-mercado-pago)------------ ----[mlu, mpe, mlm, mco, mlc, mlb]----código QR de Mercado Pago------------.|
 | CARD_INITIAL_NUMBER | Corresponde a los primeros dígitos de la tarjeta crédito o débito con la que se hizo la compra. |
-| OPERATION_TAGS | Son las etiquetas para categorizar y/o segmentar diferentes aspectos de la transacción, como por ejemplo los canales usados para hacer un pago. Se identifican como:<br>WHATSAPP_PAY: Esta etiqueta indica que el pago fue hecho a través de whatsApp<br>QR: Esta etiqueta indica que el pago fue hecho a través de un código QR<br>PO: Esta etiqueta indica que el pago fue hecho con un Point<br>MARKETPLACE: Esta etiqueta indica que el pago fue hecho directamente en Mercado Libre. |
-----[mla]---- | PAYER_NAME* | Nombre de la persona que hace un pago o una donación. | ------------
- ----[mla]---- | PAYER_ID_TYPE* | Tipo de identificación de la persona que hace un pago o una donación. Puede ser CUIL, CUIT o DNI. | ------------
- ----[mla]---- | PAYER_ID_NUMBER* | Número de identificación de la persona que hace un pago o una donación. | ------------
+| OPERATION_TAGS | Son las etiquetas para categorizar y/o segmentar diferentes aspectos de la transacción, como por ejemplo los canales usados para hacer un pago. Se identifican como:<br><br>  -   WHATSAPP_PAY: Esta etiqueta indica que el pago fue hecho a través de whatsApp. <br> -   CASHOUT: Esta etiqueta indica que la operación corresponde a un Pix Saque. <br> -   EXTRACASHOUT: Esta etiqueta indica que la operación corresponde a un Pix Troco. <br> -   PIX: Esta etiqueta indica que la operación corresponde a un pago Pix. | ----[mla]----
+| PAYER_NAME* | Nombre de quien hace un pago o una donación. | ------------ ----[mla]----
+| PAYER_ID_TYPE* | Tipo de identificación de quien hace un pago o una donación. | ------------ ----[mla]----
+| PAYER_ID_NUMBER* | Número de identificación de quien hace un pago o una donación. | ------------
 
 ----[mla]----
 > INFO
 >
-> (*)Esta información sólo estará disponible cuando se trate de pagos hechos con QR, transferencias o cuando se haya hecho una donación.
+> (*) Esta información solo se podrá usar para conciliar, será tratada conforme a las leyes de protección de datos 
+> personales aplicables y estará disponible cuando se reciban pagos con QR, transferencias o cuando reciba una donación 
+> como ONG.
 ------------

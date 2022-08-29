@@ -1,11 +1,5 @@
 To create a payment, you should capture card data through the buyer's browser. For security reasons, **never store data in your servers**.
 
-> NOTE
->
-> Note
->
-> This documentation uses the new library version. To see the previous version, go to [integrate payment for cards with MercadoPago.js V1 section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v1/receiving-payment-by-card).
-
 To capture card data, follow these steps:
 
 1. [Include MercadoPago.js library](#bookmark_1._include_mercadopago.js_library)
@@ -40,12 +34,27 @@ You can easily include anything you need, change the suggested `label` attribute
 The following example assumes that `transactionAmount` and `description` data were obtained in the previous step in which customers selected the product or service to be paid.
 
 ```html
+<style>
+  #form-checkout {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+  }
+
+  .container {
+    height: 18px;
+    display: inline-block;
+    border: 1px solid rgb(118, 118, 118);
+    border-radius: 2px;
+    padding: 1px 2px;
+  }
+</style>
 <form id="form-checkout" method="POST" action="/process_payment">
-  <div id="form-checkout__cardNumber-container"></div>
-  <div id="form-checkout__expirationDate-container" class="input"></div>
+  <div id="form-checkout__cardNumber-container" class="container"></div>
+  <div id="form-checkout__expirationDate-container" class="container"></div>
   <input type="text" name="cardholderName" id="form-checkout__cardholderName" placeholder="Cardholder name" />
-  <input type="email" name="cardholderEmail" id="form-checkout__cardholderEmail" placeholder="E-mail" />
-  <div id="form-checkout__securityCode-container"></div>
+  <input type="email" name="email" id="form-checkout__email" placeholder="E-mail" />
+  <div id="form-checkout__securityCode-container" class="container"></div>
   <select name="issuer" id="form-checkout__issuer">
     <option value="" disabled selected>Issuer</option>
   </select>----[mla, mlb, mlu, mlc, mpe, mco]----
@@ -79,6 +88,7 @@ Add your [public key]([FAKER][CREDENTIALS][URL]) like this:
  
 <script>
 const mp = new MercadoPago('YOUR_PUBLIC_KEY');
+// Add Step #createPCIFields
  ----[mla, mlb, mlu, mlc, mpe, mco]----
 // Add Step #getIdentificationTypes------------
 // Add Step #getPaymentMethods
@@ -96,11 +106,12 @@ Safe fields (cardNumber, expirationDate and securityCode) hosted by **Mercado Pa
 
 The second parameter is options, and can be assigned values ​​for **placeholder** and **style**. The value for **placeholder** must be a *string*, while **style** is an *object* with the keys being the CSS property name and the values ​​a string with the styling. Invalid values ​​will be ignored, with a warning displayed on the console.
 
-For more details on the allowed styles, [check out the technical reference](https://github.com/lucmantovani/sdk-js/tree/feature/fields-docs#style).
+For more details on the allowed styles, [check out the technical reference](https://github.com/mercadopago/sdk-js/blob/main/API/fields.md#style).
 
 A code example with `cardNumber`, `expirationDate` and `securityCode` would be:
 
 ```javascript
+  // Step #createPCIFields
   const cardNumberElement = mp.fields.create('cardNumber', {
     placeholder: "Card number",
   }).mount('form-checkout__cardNumber-container');
@@ -176,7 +187,7 @@ function createSelectOptions(elem, options, labelsAndKeys = { label : "name", va
 
 #### Get card payment method
 
-Avoid mistakes and offer the correct available installments by validating your customers' data as they fill it out. Use the code in the following example to identify payment method with the first 6 digits of the card.
+Avoid mistakes and offer the correct available installments by validating your customers' data as they fill it out. Use the code in the following example to identify payment method with the first 8 digits of the card.
 
 ```javascript
 function clearHTMLSelectChildrenFrom(element) {

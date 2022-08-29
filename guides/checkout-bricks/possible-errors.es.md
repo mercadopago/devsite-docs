@@ -1,4 +1,8 @@
-# Variables pasadas por el integrador
+# Posibles errores
+
+A continuación encontrará listas de errores que pueden ocurrir durante la integración de los bricks. Ya sean relacionadas con **envío de variables** o **comunicación con servicios externos** (APIs de Mercado Pago).
+
+## Variables pasadas por el integrador
 
 Durante el proceso de integración del Brick, es posible que **al momento de instanciar el Brick **se muestren al integrador diferentes errores relacionados con el envío de variables. Estos errores se mostrarán mediante un log en la consola del navegador (el comprador no recibe ningún mensaje).
 
@@ -22,4 +26,4 @@ Durante el proceso de integración del Brick, es posible que **al momento de ins
 | No se pudo obtener la información de la tarjeta basada en el bin  | Ocurrió un error. Por favor, inténtalo nuevamente más tarde.  | Failed to get payment methods using card bin  | No  | get_card_bin_payment_methods_failed  |
 | Error al buscar bancos emisores de tarjetas  | Ocurrió un error. Por favor, inténtalo nuevamente más tarde.  | Failed to get card issuer(s)  | No  | get_card_issuers_failed  |
 | Error al buscar la cantidad y los montos de las cuotas de pago según el amount enviado por el integrador  | Ocurrió un error. Por favor, inténtalo nuevamente más tarde.  | Failed to get payment installments  | No  | get_payment_installments_failed  |
-| Campos de pago incompletos por algún motivo (cuotas, emisor de la tarjeta, payment_method_id)  | Ocurrió un error. Por favor, inténtalo nuevamente más tarde.  | Será retornada uma das seguintes mensagens de acordo com o tipo de erro:  The payment method id is missing The payment installments are missing The card issuer is missing    | No  | missing_payment_information  |
+| Campos de pago incompletos por algún motivo (cuotas, emisor de la tarjeta, payment_method_id)  | Ocurrió un error. Por favor, inténtalo nuevamente más tarde.  | Se devolverá uno de los siguientes mensajes según el tipo de error:  The payment method id is missing The payment installments are missing The card issuer is missing    | No  | missing_payment_information  |

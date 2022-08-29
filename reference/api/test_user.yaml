@@ -5,7 +5,7 @@ info:
   title: Mercado Pago API Reference
   version: '1.0'
 paths:
-  /users/test_user:
+  /users/test:
     post:
       tags:
         - $ref: '#/tags/checkout-api'
@@ -13,21 +13,15 @@ paths:
         - $ref: '#/tags/subscriptions'
         - $ref: '#/tags/qr-code'
       summary: Create test user
+      x-summary-i18n:
+        eng: Create test user
+        spa: Crear usuario de prueba
+        por: Criar usuário de teste
       description: This endpoint handles http requests to create a test user
-      parameters:
-        - name: access_token
-          in: query
-          description: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
-          enum:
-            - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
-            - Client ID -- 1585551492
-            - Creation date (MMddHH) -- 030918
-            - Security hash -- 25######3458
-            - User ID -- 2880736
-          required: true
-          schema:
-            type: string
-            example: 12123adfasdf123u4u
+      x-description-i18n:
+        eng: This endpoint handles http requests to create a test user
+        spa: Este endpoint maneja las http requests para crear un usuario de prueba
+        por: Este endpoint lida com http requests para criar um usuário de teste
       requestBody:
         content:
           application/json:
@@ -37,6 +31,10 @@ paths:
                 site_id:
                   type: string
                   description: ID of the site where the test user will be created.
+                  x-description-i18n:
+                    eng: ID of the site where the test user will be created.
+                    spa: ID del sitio donde se creará el usuario de prueba.
+                    por: ID do site em que o usuário de teste será criado.
                   required: true
                   example: "MLA"
                   enum:
@@ -47,6 +45,15 @@ paths:
                     - MCO -- Mercado Libre Colombia
                     - MLB -- Mercado Libre Brasil
                     - MLM -- Mercado Libre México
+                description:
+                  type: string
+                  description: Description of the test user being created.
+                  x-description-i18n:
+                    eng: Description of the test user being created.
+                    spa: Descripción del usuario de pruebas que está siendo creado.
+                    por: Descrição do usuário de teste que está sendo criado.
+                  required: true
+                  example: "a description"
       responses:
         '200':
           description: Created
@@ -59,34 +66,74 @@ paths:
                     type: integer
                     example: 123
                     description: Unique ID that identifies the test user.
+                    x-description-i18n:
+                      eng: Unique ID that identifies the test user.
+                      spa: ID único que identifica al usuario de prueba.
+                      por: ID exclusivo que identifica o usuário de teste.
                   nickname:
                     type: string
                     example: "TEST45I5GYIH"
                     description: Nickname that identifies the test user.
+                    x-description-i18n:
+                      eng: Nickname that identifies the test user.
+                      spa: Apodo que identifica el usuario de prueba.
+                      por: Apelido que identifica o usuário de teste.
                   password:
                     type: string
                     example: "qatest6730"
                     description: Test user password.
+                    x-description-i18n:
+                      eng: Test user password.
+                      spa: Contraseña de usuario de prueba.
+                      por: Senha do usuário de teste.
                   site_status:
                     type: string
                     example: "active"
                     description: Status of the site where the test user was created.
+                    x-description-i18n:
+                      eng: Status of the site where the test user was created.
+                      spa: Estado del sitio donde se creó el usuario de prueba.
+                      por: Status do site em que o usuário de teste foi criado.
                   site_id:
                     type: string
                     example: "MLA"
                     description: ID of the site where the test user was created.
+                    x-description-i18n:
+                      eng: ID of the site where the test user was created.
+                      spa: ID del sitio donde se creó el usuario de prueba.
+                      por: ID do site em que o usuário de teste foi criado.
+                  description:
+                    type: string
+                    example: "a description"
+                    description: Description of the test user being created.
+                    x-description-i18n:
+                      eng: Description of the test user being created.
+                      spa: Descripción del usuario de pruebas que está siendo creado.
+                      por: Descrição do usuário de teste que está sendo criado.
                   email:
                     type: string
                     example: "test_user_123@testuser.com"
                     description: Test user email.
+                    x-description-i18n:
+                      eng: Test user email.
+                      spa: Correo electrónico del usuario de prueba.
+                      por: E-mail do usuário de teste.
                   date_created:
                     type: string
                     example: "2022-02-01T12:00:00.000-04:00"
                     description: Test user creation date.
+                    x-description-i18n:
+                      eng: Test user creation date.
+                      spa: Fecha de creación del usuario de prueba.
+                      por: Data de criação do usuário de teste.
                   date_last_updated:
                     type: string
                     example: "2022-02-01T12:00:00.000-04:00"
                     description: Date of last record update.
+                    x-description-i18n:
+                      eng: Date of last record update.
+                      spa: Fecha de la última actualización del registro.
+                      por: Data da última atualização do registro.
         '400':
           description: Bad request
           content:
@@ -150,11 +197,23 @@ paths:
         - $ref: '#/tags/subscriptions'
         - $ref: '#/tags/qr-code'
       summary: Search test user
+      x-summary-i18n:
+        eng: Search test user
+        spa: Buscar usuario de prueba
+        por: Buscar usuário de teste
       description: This endpoint handles http requests to search a test user
+      x-description-i18n:
+        eng: This endpoint handles http requests to search a test user
+        spa: Este endpoint maneja las http requests para buscar un usuario de prueba
+        por: Este endpoint lida com http requests para pesquisar um usuário de teste
       parameters:
         - name: access_token
           in: query
           description: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
+          x-description-i18n:
+            eng: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
+            spa: Token de acceso generado desde el vendedor por el proceso de autenticación (OAuth). Código de seguridad que identifica al usuario, sus privilegios y una aplicación utilizada en diferentes solicitudes de origen público para acceder a los recursos protegidos. Su validez está determinada por el parámetro expires_in y es similar a APP_USR-1585551492-030918-25######3458-2880736 estando compuesto por
+            por: Token de acesso gerado do vendedor pelo processo de autenticação (OAuth). Código de segurança que identifica o usuário, seus privilégios e uma aplicação utilizado nas diferentes requests de origem pública para ter acesso a recursos protegidos. Tem sua validade determinada pelo parâmetro expires_in e são semelhantes a APP_USR-1585551492-030918-25######3458-2880736 sendo compostos por
           enum:
             - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
             - Client ID -- 1585551492
@@ -175,10 +234,18 @@ paths:
                 properties:
                   total:
                     description: Total test users found.
+                    x-description-i18n:
+                      eng: Total test users found.
+                      spa: Total de usuarios de prueba encontrados.
+                      por: Total de usuários de teste encontrados.
                     type: integer
                     example: 1
                   results:
                     description: Localized test user information.
+                    x-description-i18n:
+                      eng: Localized test user information.
+                      spa: Información de usuario de prueba localizada.
+                      por: Informações do usuário de teste localizadas.
                     type: array
                     items:
                       type: object
@@ -186,30 +253,58 @@ paths:
                         id:
                           type: integer
                           description: Unique ID that identifies the test user.
+                          x-description-i18n:
+                            eng: Unique ID that identifies the test user.
+                            spa: ID único que identifica al usuario de prueba.
+                            por: ID exclusivo que identifica o usuário de teste.
                           example: 123
                         nickname:
                           type: string
                           description: Nickname that identifies the test user.
+                          x-description-i18n:
+                            eng: Nickname that identifies the test user.
+                            spa: Apodo que identifica el usuario de prueba.
+                            por: Apelido que identifica o usuário de teste.
                           example: "TEST45I5GYIH"
                         site_status:
                           type: string
                           description: Status of the site where the test user was created.
+                          x-description-i18n:
+                            eng: Status of the site where the test user was created.
+                            spa: Estado del sitio donde se creó el usuario de prueba.
+                            por: Status do site em que o usuário de teste foi criado.
                           example: "active"
                         site_id:
                           type: string
                           description: ID of the site where the test user was created.
+                          x-description-i18n:
+                            eng: ID of the site where the test user was created.
+                            spa: ID del sitio donde se creó el usuario de prueba.
+                            por: ID do site em que o usuário de teste foi criado.
                           example: "MLA"
                         email:
                           type: string
                           description: Test user email.
+                          x-description-i18n:
+                            eng: Test user email.
+                            spa: Correo electrónico del usuario de prueba.
+                            por: E-mail do usuário de teste.
                           example: "test_user_123@testuser.com"
                         date_created:
                           type: string
                           description: Test user creation date.
+                          x-description-i18n:
+                            eng: Test user creation date.
+                            spa: Fecha de creación del usuario de prueba.
+                            por: Data de criação do usuário de teste.
                           example: "2021-11-04T12:02:35Z"
                         date_last_updated:
                           type: string
                           description: Date of last record update.
+                          x-description-i18n:
+                            eng: Date of last record update.
+                            spa: Fecha de la última actualización del registro.
+                            por: Data da última atualização do registro.
                           example: "2021-11-04T12:02:35Z"
         '401':
           description: Not found
@@ -274,11 +369,23 @@ paths:
         - $ref: '#/tags/subscriptions'
         - $ref: '#/tags/qr-code'
       summary: Update test user password
+      x-summary-i18n:
+        eng: Update test user password
+        spa: Actualizar contraseña de usuario de prueba
+        por: Atualizar senha do usuário de teste
       description: This endpoint handles http requests to change the test user password
+      x-description-i18n:
+        eng: This endpoint handles http requests to change the test user password
+        spa: Este endpoint maneja las http requests para cambiar la contraseña del usuario de prueba
+        por: Este endpoint lida com http requests para alterar a senha do usuário de teste
       parameters:
         - name: access_token
           in: query
           description: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
+          x-description-i18n:
+            eng: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
+            spa: Token de acceso generado desde el vendedor por el proceso de autenticación (OAuth). Código de seguridad que identifica al usuario, sus privilegios y una aplicación utilizada en diferentes solicitudes de origen público para acceder a los recursos protegidos. Su validez está determinada por el parámetro expires_in y es similar a APP_USR-1585551492-030918-25######3458-2880736 estando compuesto por
+            por: Token de acesso gerado do vendedor pelo processo de autenticação (OAuth). Código de segurança que identifica o usuário, seus privilégios e uma aplicação utilizado nas diferentes requests de origem pública para ter acesso a recursos protegidos. Tem sua validade determinada pelo parâmetro expires_in e são semelhantes a APP_USR-1585551492-030918-25######3458-2880736 sendo compostos por
           enum:
             - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
             - Client ID -- 1585551492
@@ -292,6 +399,10 @@ paths:
         - name: id
           in: path
           description: Unique ID that identifies the test user.
+          x-description-i18n:
+            eng: Unique ID that identifies the test user.
+            spa: ID único que identifica al usuario de prueba.
+            por: ID exclusivo que identifica o usuário de teste.
           required: true
           schema:
             type: string
@@ -306,10 +417,18 @@ paths:
                 properties:
                   message:
                     description: Message with the password change status.
+                    x-description-i18n:
+                      eng: Message with the password change status.
+                      spa: Mensaje con el estado de cambio de contraseña.
+                      por: Mensagem com o status de alteração de senha.
                     type: string
                     example: "password successfully reset"
                   new_password:
                     description: New test user password.
+                    x-description-i18n:
+                      eng: New test user password.
+                      spa: Nueva contraseña de usuario de prueba.
+                      por: Nova senha do usuário de teste.
                     type: string
                     example: "random"
         '403':
@@ -353,11 +472,23 @@ paths:
         - $ref: '#/tags/subscriptions'
         - $ref: '#/tags/qr-code'
       summary: Add amount (account_money) to test user account
+      x-summary-i18n:
+        eng: Add amount (account_money) to test user account
+        spa: Agregar valor (account_money) a la cuenta de usuario
+        por: Adicionar valor (account_money) à conta do usuário de teste
       description: This endpoint handles http requests to add amount (account_money) to the test user account
+      x-description-i18n:
+        eng: This endpoint handles http requests to add amount (account_money) to the test user account
+        spa: Este endpoint maneja las http requests para agregar un valor (account_money) a la cuenta de usuario de prueba
+        por: Este endpoint lida com http requests para adicionar um valor (account_money) à conta do usuário de teste
       parameters:
         - name: access_token
           in: query
           description: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
+          x-description-i18n:
+            eng: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
+            spa: Token de acceso generado desde el vendedor por el proceso de autenticación (OAuth). Código de seguridad que identifica al usuario, sus privilegios y una aplicación utilizada en diferentes solicitudes de origen público para acceder a los recursos protegidos. Su validez está determinada por el parámetro expires_in y es similar a APP_USR-1585551492-030918-25######3458-2880736 estando compuesto por
+            por: Token de acesso gerado do vendedor pelo processo de autenticação (OAuth). Código de segurança que identifica o usuário, seus privilégios e uma aplicação utilizado nas diferentes requests de origem pública para ter acesso a recursos protegidos. Tem sua validade determinada pelo parâmetro expires_in e são semelhantes a APP_USR-1585551492-030918-25######3458-2880736 sendo compostos por
           enum:
             - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
             - Client ID -- 1585551492
@@ -371,6 +502,10 @@ paths:
         - name: id
           in: path
           description: Unique ID that identifies the test user.
+          x-description-i18n:
+            eng: Unique ID that identifies the test user.
+            spa: ID único que identifica al usuario de prueba.
+            por: ID exclusivo que identifica o usuário de teste.
           required: true
           schema:
             type: string
@@ -386,6 +521,10 @@ paths:
                 properties:
                   amount:
                     description: Amount added to the test user account.
+                    x-description-i18n:
+                      eng: Amount added to the test user account.
+                      spa: Valor agregado a la cuenta de usuario de prueba.’
+                      por: Valor adicionado à conta do usuário de teste.
                     type: number
                     example: 1000.23
                     required: true

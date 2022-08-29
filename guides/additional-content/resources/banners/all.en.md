@@ -4,6 +4,7 @@ sites_supported:
   - mlb
   - mlm
   - mco
+  - mlc
 ---
 
 # All payments methods
@@ -357,6 +358,7 @@ width="120" height="600"/>
 <img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/tipo2_120X600.jpg?v=1" alt="Mercado Pago - Meios de pagamento"
 width="120" height="600"/>
 ------------
+
 ----[mlc]----
 
 ## 785 x 40 px

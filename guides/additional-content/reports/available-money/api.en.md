@@ -9,6 +9,30 @@ Generate the Released money report manually as many times as you want or schedul
 >
 > You can use the [Release report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/released-money/introduction) to reconcile the transactions that affect the balance available in your account, including your bank withdrawals.
 
+## Configurable attributes
+
+Know the fields you can configure to adjust your preferences before you start:
+
+> WARNING
+>
+> Important
+>
+> Setting up `frequency` feature does not mean that the report will be generated automatically. The settings will apply only when the automatic scheduling is activated. For more details, please go to the [Schedule your automatic reports](#bookmark_schedule_your_automatic_reports) section.
+
+| Configurable fields | Description |
+| --- | --- |
+| `sftp_info` (optional) | <br/>Indicates the uploaded data to SFTP when you need it.<br/><br/> |
+| `separator` (optional) | <br/>Separator that you can use in the .csv file when you don't want the separator to be a comma. <br/><br/> |
+| `display_timezone` (optional) | <br/>This field determines the date and time displayed in the reports. If you do not set a time zone in this field, the system will consider GMT-04 as default. If you choose a time zone which adopts daylight saving time, you will need to adjust it manually when the time changes.<br/><br/> |
+| `notification_email_list` (optional) | <br/>Allows you to add a group of e-mail recipients to be notified when a report is ready and available for download. Make sure to include the email linked to your Mercado Pago account so you can be notified as well. <br/><br/> |
+| `refund_detailed` (optional) | <br/>Displays the reference code (external_reference) of the refund instead of the reference code (external_reference) of the payment.<br/><br/> |
+| `include_withdrawal` (optional) | <br/>Includes withdrawals in the report.<br/><br/> |
+| `coupon_detailed` (optional) | <br/>Includes a column to show the detail of the discount coupons.<br/><br/> |
+| `columns` | <br/>Field with the details of columns to be included in your report. Find all possible values in the [Glossary section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/available-money/glossary).<br/><br/>|
+| `file_name_prefix` | <br/>Prefix that composes the report name once generated and ready for download.<br/><br/> |
+| `frequency` | <br/>Indicates the daily, weekly or monthly frequency of scheduled reports.<br/><br/> - `frequency` applies type *monthly* to the day of the month or *weekly* to the day of the week.<br/> - `hour` Hour Time of day to generate the report. <br/> - `type` Type indicates the type of frequency *daily*, *weekly* and *monthly*.<br/><br/> |
+| `scheduled` (read_only) | <br/>Informative field that indicates if there are already scheduled reports in the user account.<br/> `True` The automatic generation is activated <br/> `False` The automatic generation is disabled<br/><br/> |
+
 ## Set up your reports
 
 You can configure your reports according to your preferences. Up next, you'll find the API calls you can make to create, consult and update your reports.
@@ -355,6 +379,13 @@ You will receive an `HTTP STATUS 200 (OK)` in response.
 
 ### Update configuration
 
+> NOTE
+>
+> Nota
+>
+>If when updating the settings you want to edit the "Frequency" feature, and you have already enabled the automatic generation of your reports, you must follow these steps:<br/><br/> 1.  Cancel the scheduled generation of your reports, following the steps in the section Deactivate scheduling. [Deactivate](#bookmark_2._deactivation). <br/> 2.  Update the settings by editing the `Frequency` feature, using the snippets available in this section. <br/> 3. Schedule again the automatic generation of the report, following the steps in the section Activate scheduling. [Activate](#bookmark_1._activation).
+
+
 When you need to update your settings, you can adjust the following attributes:
 
 [[[
@@ -593,23 +624,6 @@ You will receive an `HTTP STATUS 200 (OK)` in response.
     ]
 }
 ```
-## Configurable attributes
-
-Know the fields you can configure to adjust your preferences before you start:
-
-| Configurable fields | Description |
-| --- | --- |
-| `sftp_info` (optional) | <br/>Indicates the uploaded data to SFTP when you need it.<br/><br/> |
-| `separator` (optional) | <br/>Separator that you can use in the .csv file when you don't want the separator to be a comma. <br/><br/> |
-| `display_timezone` (optional) | <br/>This field determines the date and time displayed in the reports. If you do not set a time zone in this field, the system will consider GMT-04 as default. If you choose a time zone which adopts daylight saving time, you will need to adjust it manually when the time changes.<br/><br/> |
-| `notification_email_list` (optional) | <br/>Allows you to add a group of e-mail recipients to be notified when a report is ready and available for download. Make sure to include the email linked to your Mercado Pago account so you can be notified as well. <br/><br/> |
-| `refund_detailed` (optional) | <br/>Displays the reference code (external_reference) of the refund instead of the reference code (external_reference) of the payment.<br/><br/> |
-| `include_withdrawal` (optional) | <br/>Includes withdrawals in the report.<br/><br/> |
-| `coupon_detailed` (optional) | <br/>Includes a column to show the detail of the discount coupons.<br/><br/> |
-| `columns` | <br/>Field with the details of columns to be included in your report. Find all possible values in the [Glossary section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/available-money/glossary).<br/><br/>|
-| `file_name_prefix` | <br/>Prefix that composes the report name once generated and ready for download.<br/><br/> |
-| `frequency` | <br/>Indicates the daily, weekly or monthly frequency of scheduled reports.<br/><br/> - `frequency` applies type *monthly* to the day of the month or *weekly* to the day of the week.<br/> - `hour` Hour Time of day to generate the report. <br/> - `type` Type indicates the type of frequency *daily*, *weekly* and *monthly*.<br/><br/> |
-| `scheduled` (read_only) | <br/>Informative field that indicates if there are already scheduled reports in the user account.<br/><br/> |
 
 > NOTE
 >
@@ -878,16 +892,13 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 2018-04-17T15:38:40.000-04:00,,,release,payment,850.00,0.00,850.00,0.00,0.00,0.00,0.00,0.00,1,account_money
 ```
 
+## Schedule your automatic reports
 
-## Generating on a scheduled basis
+Generate your reports on a scheduled basis by configuring two instances: activation and Deactivation.
 
-Generate your reports on a scheduled basis by configuring three instances: generation, configuration and download.
-
-### 1. Generation
+### 1. Activation
 
 Schedule the automatic report generation using the frequency in the configuration resource. Update the *`scheduled`* attribute in the configuration to *`true`*:
-
-#### Start scheduled generation
 
 [[[
 ```curl
@@ -958,7 +969,7 @@ request(options, callback);
 ```
 ]]]
 
-### 2. Cancel scheduled generation
+### 2. Deactivation
 
 [[[
 ```curl
@@ -1029,89 +1040,6 @@ function callback(error, response, body) {
 request(options, callback);
 ```
 ]]]
-
-### 3. Download
-
-Download the file with this command:
-
-[[[
-```curl
-curl -X GET \
--H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
-    'https://api.mercadopago.com/v1/account/bank_report/:file_name'
-```
-```php
-<?php
-include('vendor/rmccue/requests/library/Requests.php');
-Requests::register_autoloader();
-$headers = array(
-    'Authorization' => 'Bearer ENV_ACCESS_TOKEN'
-);
-$response = Requests::get('https://api.mercadopago.com/v1/account/bank_report/:file_name', $headers);
-```
-```java
-URL url = new URL("https://api.mercadopago.com/v1/account/bank_report/:file_name");
-
-HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
-
-connection.setRequestMethod("GET");\
-connection.setRequestProperty("Authorization", "Bearer ENV_ACCESS_TOKEN");
-
-System.out.println(connection.getResponseCode());
-System.out.println(connection.getResponseMessage());
-System.out.println(connection.getInputStream());
-```
-```python
-import requests
-
-headers = {
-    'Authorization': 'Bearer ENV_ACCESS_TOKEN'
-}
-
-response = requests.get('https://api.mercadopago.com/v1/account/bank_report/:file_name', headers=headers)
-```
-```node
-var request = require('request');
-
-var headers = {
-    'Authorization': 'Bearer ENV_ACCESS_TOKEN'
-};
-
-var options = {
-    url: 'https://api.mercadopago.com/v1/account/bank_report/:file_name',
-    headers: headers,
-};
-
-function callback(error, response, body) {
-    if (!error && response.statusCode == 200) {
-        console.log(body);
-    }
-}
-
-request(options, callback);
-```
-]]]
-
-You will receive an  `HTTP STATUS 200 (Ok)` in response.
-
-```csv
-DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_DEBIT_AMOUNT,GROSS_AMOUNT,MP_FEE_AMOUNT,FINANCING_FEE_AMOUNT,SHIPPING_FEE_AMOUNT,TAXES_AMOUNT,COUPON_AMOUNT,INSTALLMENTS,PAYMENT_METHOD
-2018-04-17T15:07:53.000-04:00,,,initial_available_balance,,813439.19,0.00,813439.19,0.00,0.00,0.00,0.00,0.00,1,
-2018-04-17T15:07:53.000-04:00,,,release,withdrawal,0.00,813363.45,-813360.45,-3.00,0.00,0.00,0.00,0.00,1,
-2018-04-17T15:11:12.000-04:00,,,release,payment,225.96,0.00,269.00,-43.04,0.00,0.00,0.00,0.00,1,account_money
-2018-04-17T15:18:16.000-04:00,,,release,payment,124.32,0.00,148.00,-23.68,0.00,0.00,0.00,0.00,1,visa
-2018-04-17T15:38:40.000-04:00,,,release,payment,820.14,0.00,1099.00,-278.86,0.00,0.00,0.00,0.00,6,visa
-2018-04-17T15:38:40.000-04:00,,,release,payment,850.00,0.00,850.00,0.00,0.00,0.00,0.00,0.00,1,account_money
-```
-
-
-> NOTE
->
-> This documentation corresponds to the new version of the API
->
-> To check the previous version, please go to the [old API Generation section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/available-money/v1/api).
-
-<hr/>
 
 ### Next steps
 

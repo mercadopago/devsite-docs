@@ -7,35 +7,81 @@ Para começar a processar seus pagamentos, siga estas etapas:
 Antes de criar uma intenção de pagamento, você deve obter os dispositivos Point associados à sua conta. Você pode fazer desta maneira:
 
 ``` curl
-curl --location --request GET 'https://api.mercadopago.com/point/integration-api/devices' \
---header 'Authorization: Bearer ${ACCESS_TOKEN}' \
+curl --location --request GET 'https://api.mercadopago.com/point/integration-api/devices?offset=0&limit=50' \ 
+--header 'Authorization: Bearer ${ACCESS_TOKEN}' 
 ```
-
 Você receberá uma resposta como esta:
+
+----[mlb, mla]----
 
 ```json
 {
-  "id":"7d8c70b6-2ac8-4c57-a441-c319088ca3ca",
-  "device_id":"INGENICO_MOVE2500__ING-ARG-14886780",
-  "amount":1500,
-  "description":"this is an example",
-  "payment":{
-     "type":"credit_card",
-     "installments":1
-  },
-  "additional_info":{
-     "external_reference":"4561ads-das4das4-das4754-das456",
-     "print_on_terminal":true
-  }
+   "devices": [
+       {
+           "id": "INGENICO_MOVE2500__ING-ARG-1123345670",
+           "operating_mode": "STANDALONE"
+       },
+       {
+           "id": "INGENICO_MOVE2500__ING-ARG-0987654P",
+           "operating_mode": "STANDALONE"
+       },
+       {
+           "id": "INGENICO_MOVE2500__ING-5467853",
+           "operating_mode": "PDV"
+       },
+       {
+           "id": "INGENICO_MOVE2500__ING-ARG-1233456",
+           "operating_mode": "STANDALONE"
+       }
+   ],
+   "paging": {
+       "total": 4,
+       "limit": 50,
+       "offset": 0
+   }
 }
 ```
+------------
+
+----[mlm]----
+
+```json
+{
+   "devices": [
+       {
+           "id": "PAX_A910__SMARTPOS1234567890",
+           "operating_mode": "STANDALONE"
+       },
+       {
+           "id": "PAX_A910__SMARTPOS12345678901",
+           "operating_mode": "STANDALONE"
+       },
+       {
+           "id": "INGENICO_MOVE2500__ING-5467853",
+           "operating_mode": "PDV"
+       },
+       {
+           "id": "PAX_A910__SMARTPOS123456789042",
+           "operating_mode": "STANDALONE"
+       }
+   ],
+   "paging": {
+       "total": 4,
+       "limit": 50,
+       "offset": 0
+   }
+}
+```
+
+------------
+
 ## Criar uma intenção de pagamento
 
 Você pode criar uma intenção de pagamento e atribuí-la ao seu dispositivo Point desta forma:
 
 ----[mla]----
 ```curl
-curl --location --request POST 'https://api.mercadopago.com/point/integration-api/devices/:deviceId/payment-intents' \
+curl --location --request POST 'https://api.mercadopago.com/point/integration-api/devices/{{device.id}}/payment-intents' \
 --header 'Authorization: Bearer ${ACCESS_TOKEN}' \
 --data-raw '{
    "amount": 1500,
@@ -93,7 +139,7 @@ amount                    | Valor total da intenção de pagamento. |
 description               | Descrição da intenção de pagamento. |
 payment.type              | Tipo de método de pagamento. |
 payment.installments      | Valor das parcelas de pagamento. |
-payment.installments_cost | Custo das parcelas de pagamento. |
+payment.installments_cost | Custo das parcelas de pagamento. Este campo determina quem assume o custo e os valores aceitos são `seller` e `buyer`|
 external_reference        | Campo de uso exclusivo do integrador para incluir referências de seu sistema. |
 print_on_terminal         | Campo que determina se o dispositivo imprime o comprovante de pagamento. |
 
@@ -107,7 +153,8 @@ Em resposta, você receberá algo semelhante a isso:
   "description":"this is an example",
   "payment":{
      "type":"credit_card",
-     "installments":1
+     "installments":1,
+     "installments_cost":"seller"
   },
   "additional_info":{
      "external_reference":"4561ads-das4das4-das4754-das456",
@@ -115,6 +162,46 @@ Em resposta, você receberá algo semelhante a isso:
   }
 }
 ```
+------------
+
+----[mlm]----
+
+```curl
+
+curl --location --request POST 'https://api.mercadopago.com/point/integration-api/devices/:deviceId/payment-intents' \
+--header 'Authorization: Bearer ${ACCESS_TOKEN}' \
+--data-raw '{
+    "amount": 1500,
+    "additional_info": {
+        "external_reference": "4561ads-das4das4-das4754-das456",
+        "print_on_terminal": true
+    }
+}'
+```
+
+| Campo |  Descrição |
+| --- | --- |
+| amount | Valor total da intenção de pagamento. Importante: este campo não permite casas decimais, portanto, se você deseja gerar uma intenção de pagamento, deve considerar as duas casas decimais do valor total. Por exemplo: para gerar uma ordem de pagamento para o valor "15,00" deve-se inserir "1500". |
+| external_reference | Campo de uso exclusivo do integrador para incluir referências específicas do seu sistema. |
+| print_on_terminal | Campo que determina se o aparelho imprime o comprovante de pagamento. |
+
+Em resposta, você receberá algo semelhante a isso:
+
+[[[
+```json
+
+{
+  "id": "7d8c70b6-2ac8-4c57-a441-c319088ca3ca",
+  "device_id": "PAX_A910__SMARTPOS123456789075",
+  "amount": 1500,
+  "additional_info": {
+      "external_reference": "4561ads-das4das4-das4754-das456",
+      "print_on_terminal": true
+  }
+}
+```
+]]]
+
 ------------
 
 ## Cancelar uma intenção de pagamento
@@ -188,28 +275,30 @@ Exemplo de resposta:
 ```
 ------------
 
+----[mlm]----
+
+[[[
+```json
+
+{
+    "state": "FINISHED",
+    "id": "0aa0519d-d985-4e83-b62d-dda123456789",
+    "device_id": "PAX_A910__SMARTPOS1234567890123",
+    "amount": 600,
+    "payment": {
+        "id": "11123456789"
+    },
+    "additional_info": {
+        "external_reference": "4561ads-das4das4-das4754-das456"
+    }
+}
+```
+]]]
+
+------------
+
 > NOTE
 >
 > Nota
 >
 > Consulte todas as informações correspondentes ao pagamento na seção [API de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_id/get) de Referência da API.
-
-
-> PREV_STEP_CARD_PT
->
-> Comece a integrar a API de integrações
->
-> Para integrar, você deve primeiro obter as credenciais de identificação.
->
-> [Integrar a API de integrações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/integration-api/integration)
-
-
-> NEXT_STEP_CARD_PT
->
-> Configure suas notificações
->
-> Explicamos como começar a receber notificações Webhooks.
->
-> [Configure suas notificações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/integration-api/notifications)
-
-

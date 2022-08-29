@@ -1,12 +1,20 @@
 
 # ¿Cómo generar tu reporte de Liberaciones?
-------------
 
+----[mla]----
 > NOTE
 >
 > Lleva con facilidad el control de tus ventas con QR
 >
-> Creamos nuevas columnas que te permiten identificar las billeteras virtuales o los bancos que tus clientes usan para pagar cuando les cobras con un QR de Mercado Pago. Actualiza tus preferencias de configuración [desde el panel](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports/release/settings) o [vía API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/api) para incluir las columnas en tus reportes.
+> Creamos nuevas columnas que te permiten identificar las billeteras virtuales o los bancos que tus clientes usan para pagar cuando les cobras con un QR de Mercado Pago. Actualiza tus preferencias de configuración [desde el panel](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports/release/settings) o [vía API](/developers/es/guides/additional-content/reports/released-money/api) para incluir las columnas en tus reportes.
+------------
+----[mco, mlc]----
+> WARNING
+>
+> Importante
+>
+> Los reportes que generes a partir de junio presentarán tus movimientos en orden cronológico, para que sea más fácil identificar cuándo se realizaron. [Conoce cómo usar este reporte.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/subscriptions/additional-content/reports/released-money/how-to-use)
+------------
 
 ## Canales de generación
 
@@ -48,12 +56,43 @@ Considera estas opciones a la hora de descargar tu reporte:
 | Formatos de descarga | .csv, .xlsx <br/><br/>Tip: descarga el reporte en .csv para importar los datos y usarlos en otras aplicaciones. Descárgalo en .xlsx para leer la información en las tablas de la hoja de cálculo. |
 | Archivo | Los reportes generados quedan guardados en tu cuenta de Mercado Pago. |
 
-----[mlm, mlb, mlc, mco, mla]----
-> INFO
->
-> Nota
->
-> Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/glossary) de ------------ ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu]---- Liberaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mla]----para revisarlo cuando lo necesites o quieras consultar algún término técnico.
+## Notificaciones
+
+### Webhook
+
+Webhook (también conocido como devolución de llamada web) es un método simple que facilita que una aplicación o sistema proporcione información en tiempo real cada vez que ocurre un evento, es decir, es una forma de recibir datos pasivamente entre dos sistemas a través de un HTTP POST. Para el caso de los reportes que se utilizan para conciliar se enviará una notificación al usuario que tenga configurado este servicio cuando sus archivos sean generados.
+
+| Atributo        | Descripción                  |
+|-----------------|------------------------------|
+| transaction_id  | ID de la transacción         |
+| request_date    | Fecha de la solicitud        |
+| generation_date | Fecha de la generación       |
+| files           | Archivos disponibles         |
+| type            | Formato del archivo          |
+| url             | Enlace de descarga           |
+| name            | Nombre del archivo           |
+| status          | Estado del reporte           |
+| creation_type   | Creación manual o programada |
+| report_type     | Tipo de reporte              |
+| is_test         | Define si es una prueba      |
+| signature       | Firma de la notificación     |
+
+### Contraseña para cifrado
+
+Para hacer seguro el proceso de notificación hacia el sistema se enviará en el cuerpo del mensaje (payload) un atributo llamado **_Signature_**, con el objetivo de validar que la notificación Webhook se haya originado desde Mercado Pago y no se trate de una suplantación.
+
+El **_Signature_** se construye uniendo el `transaction_id` con la `contraseña para cifrado` configurada en la sección de **_Notificación por Webhook_**, más el `generation_date` del reporte. Una vez concatenados los valores se cifran haciendo uso del algoritmo **_BCrypt_** de la siguiente manera:
+
+`signature = BCrypt(transaction_id + '-' + password_for_encryption + '-' + generation_date)`
+
+Para validar que sea Mercado Pago quien emitió la notificación se debe usar la **_función de verificación_** que ofrece el algoritmo de **_BCrypt_** para el lenguaje deseado.
+
+**Ejemplo Java:**
+
+`BCrypt.checkpw(transaction_id + '-' + password_for_encryption + '-' + generation_date, payload_signature)`
+
+----[mlm, mlb, mla]----
+> Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/glossary) de ------------ ----[mla]---- Liquidaciones ------------ ----[mlm, mlb]---- Liberaciones ------------ ----[mlm, mlb, mla]----para revisarlo cuando lo necesites o quieras consultar algún término técnico.
 ------------
 
 ----[mpe, mlu]----
@@ -64,6 +103,16 @@ Considera estas opciones a la hora de descargar tu reporte:
 > Próximamente verás los registros de tus movimientos en orden cronológico.
 >
 > En los reportes que generes a partir de Diciembre vas a ver todos tus movimientos en el orden en que se realizaron para que puedas identificarlos más fácil y controlar mejor tus ventas.
+------------
+
+----[mco, mlc]----
+> Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/glossary) de Liberaciones para revisarlo cuando lo necesites o quieras consultar algún término técnico.
+
+> INFO
+>
+> Próximamente verás los registros de tus movimientos en orden cronológico.
+>
+> Los reportes que generes a partir del 27 de junio presentarán tus movimientos en orden cronológico para que puedas identificarlos más fácil y controlar mejor las finanzas de tu negocio. [Conoce la nueva anatomía del reporte.](https://vendedores.mercadolibre[FAKER][URL][DOMAIN]/lleva-el-control-de-tu-dinero-con-el-reporte-de-liberaciones)
 ------------
 
 <hr/>
