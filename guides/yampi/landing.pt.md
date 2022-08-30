@@ -2,7 +2,7 @@
 content_section_with_media:
  - title: Yampi
  - message: A Yampi é uma plataforma de e-commerce focada em aprimorar os processos de compra e venda online. A integração com o Mercado Pago permitirá seu e-commerce receber pagamentos de forma ágil e segura, seja ele tradicional ou dropshipping.
- - media_video: https://www.youtube.com/embed/U_aJpn 
+ - media_video: https://www.youtube.com/embed/EEm6r00bikk
 ---
 
 --- mini_landing_separator ---
