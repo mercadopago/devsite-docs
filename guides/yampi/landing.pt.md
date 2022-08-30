@@ -17,7 +17,7 @@ available_countries: mlb
 bullet_section_with_media: 
  - title: Vantagens
  - type: normal
- - message: Em pouco tempo você realiza as configurações de integração para começa a receber com Mercado Pago.
+ - message: Em pouco tempo você realiza as configurações de integração para começar a receber com Mercado Pago.
  - benefit_title: Compras em um único ambiente
  - benefit_message: Todo o processo de compra acontece dentro do ambiente da loja online, otimizando as etapas de pagamento do comprador.
  - benefit_title: Diversos meios de pagamento
