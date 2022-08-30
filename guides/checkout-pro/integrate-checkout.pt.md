@@ -1,13 +1,8 @@
 # Integrar Checkout Pro
 
-Existem duas formas diferentes para realizar a integração do Checkout Pro.
+A integração com o Checkout Pro permite realizar cobranças através do nosso formulário web a partir qualquer dispositivo de forma simples, rápida e segura.
 
-
-1. Através dos SDKs (Recomendado).
-2. Através de chamadas via backend diretamente para a API de Preferências. Através dessas chamadas, você terá acesso ao link do Checkout Pro no atributo `init_point`, e a partir daí utilizá-lo para redirecionar o comprador ao checkout.
-
-Neste guia de integração você terá acesso às duas formas de integração, mas se preferir, consulte nossa [API de preferências](/developers/pt/reference/preferences/_checkout_preferences/post)
-
+Para integrar o Checkout Pro, siga as etapas descritas abaixo.
 
 ## Instalar SDK do Mercado Pago
 
@@ -73,7 +68,7 @@ pip3 install mercadopago
 >
 > Criar preferência
 
-Preferências são conjuntos de informações sobre um produto e/ou serviço que permitem definir o nome, meio de pagamento, além de outras configurações relacionadas ao fluxo de pagamento definido. 
+Preferências são conjuntos de informações que permitem configurar um produto ou serviço que se deseja cobrar, como preço e quantidade, além de outras configurações relacionadas ao fluxo de pagamento definido.
 
 Para criar uma preferência via API, utilize o endpoint [/checkout/preferences](/developers/pt/reference/preferences/_checkout_preferences/post) preenchendo os atributos necessários para execução da requisição ou, se preferir, utilize um dos SDKs disponíveis abaixo.
 
@@ -384,15 +379,6 @@ curl -X POST \
 ------------
 
 
-
-> WARNING
->
-> Importante
->
-> Considere que é necessário configurar as `back _urls` caso queira redirecionar seu cliente ao seu site ao final do pagamento. Para mais informações, visite a seção [Redirecionamento](/developers/pt/docs/checkout-pro/checkout-customization/user-interface/redirection). 
-
-
-
 > CLIENT_SIDE
 >
 > h2
@@ -407,16 +393,16 @@ A instalação é feita em **duas etapas**: incluindo o SDK do Mercado Pago ao p
 
 
 
-1. Para incluir o SDK Mercado Pago.js V2, adicione o código abaixo no HTML do projeto.
+1. Para incluir o SDK Mercado Pago.js, adicione o código abaixo no HTML do projeto.
 
 
 
 ```html
-// SDK MercadoPago.js V2
+// SDK MercadoPago.js
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 
-2. Ao finalizar a inclusão do SDK Mercado Pago.js V2, configure as credenciais do SDK e inicialize seu checkout com o ID da preferência previamente criada e o identificador do elemento onde o botão de pagamento deverá ser exibido conforme exemplo abaixo.
+2. Ao finalizar a inclusão do SDK Mercado Pago.js, configure as credenciais do SDK e inicialize seu checkout com o ID da preferência previamente criada e o identificador do elemento onde o botão de pagamento deverá ser exibido conforme exemplo abaixo.
 
 
 [[[

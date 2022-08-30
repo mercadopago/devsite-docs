@@ -1,4 +1,4 @@
-## Identification of integrations
+## Integration metrics
  
 Certified members of the [&lt;dev>program](https://www.mercadopago.com.br/developers/en/developer-program) can identify their Checkout Pro integrations to gain access to [program benefits](https://www.mercadopago.com.br/developers/en/developer-program#dev-program-benefits). To do this, you need to identify your integrations in the request header by inserting your [Integrator ID](/developers/en/guides/additional-content/dashboard/header#bookmark_integrator_id)
  
