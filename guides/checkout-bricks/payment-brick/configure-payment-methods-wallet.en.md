@@ -8,7 +8,9 @@ To configure Payment Brick integration to receive payments with Mercado Pago Wal
 4. [Render brick](#bookmark_render_brick)
 5. [Manage Mercado Pago Wallet](#bookmark_manage_mercado_pago_wallet)
 
-> The steps are performed on the backend or frontend. The **Client-Side** and **Server-Side** pills located immediately next to the title help you to identify which step is performed in which instance.
+> The steps are performed on the backend or frontend. The **Client-Side** and **Server-Side** pills located immediately next to the title help you to identify which step is performed in which instance. <br/></br>
+> <br/></br>
+> And, to help, we have prepared a complete [code example](/developers/en/docs/checkout-bricks/payment-brick/code-example/wallet) that you can use as a template.
 
 > CLIENT_SIDE
 >

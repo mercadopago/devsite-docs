@@ -11,7 +11,7 @@ Para configurar la integración de Payment Brick para recibir pagos con tarjetas
 
 > Los pasos se realizan en el backend o frontend. Las etiquetas **Client-Side** y **Server-Side** ubicadas inmediatamente al lado del título lo ayudan a identificar qué paso se realiza en qué instancia. <br/></br>
 > <br/></br>
-> Y, para ayudar, hemos preparado un completo [ejemplo de código](/developers/es/docs/checkout-bricks/payment-brick/code-example-cards) que puede usar como modelo.
+> Y, para ayudar, hemos preparado un completo [ejemplo de código](/developers/es/docs/checkout-bricks/payment-brick/code-example/cards) que puede usar como modelo.
 
 > CLIENT_SIDE
 >

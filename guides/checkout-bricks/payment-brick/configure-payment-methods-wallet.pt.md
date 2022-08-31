@@ -8,7 +8,10 @@ Para configurar a integração do Payment Brick para receber pagamentos com a Ca
 4. [Renderizar brick](#bookmark_renderizar_brick)
 5. [Gerenciar pagamentos com a Carteira Mercado Pago](#bookmark_gerenciar_pagamentos_com_a_carteira_mercado_pago)
 
-> Os passos são realizados no back-end ou no front-end. As pills **Client-Side** e **Server-Side** localizadas imediatamentamente ao lado do título te ajudam a identificar qual passo é realizado em qual instância.
+> Os passos são realizados no back-end ou no front-end. As pills **Client-Side** e **Server-Side** localizadas imediatamentamente ao lado do título te ajudam a identificar qual passo é realizado em qual instância.<br/></br>
+> <br/></br>
+> E, para ajudar, preparamos um [exemplo de codigo](/developers/pt/docs/checkout-bricks/payment-brick/code-example/wallet) completo da configuração do Payment Brick, que você pode usar como modelo.
+
 > CLIENT_SIDE
 >
 > h2
