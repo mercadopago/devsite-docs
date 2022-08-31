@@ -68,7 +68,7 @@ Puedes obtener más información sobre cada atributo en las [Referencias de API]
 
 ### Devuelve los pagos sospechosos
 
-Te avisaremos vía notificaciones IPN cuando detectemos un comportamiento irregular o recibamos una notificación de que la tarjeta usada fue robada. Además,  nos contactaremos  vía e-mail para avisarte. Ante esta situación, debes cancelar la compra y devolver el dinero al comprador para evitar el contracargo.
+Te avisaremos vía [notificaciones IPN](/developers/es/docs/notifications/ipn/introduction) cuando detectemos un comportamiento irregular o recibamos una notificación de que la tarjeta usada fue robada. Además,  nos contactaremos  vía e-mail para avisarte. Ante esta situación, debes cancelar la compra y devolver el dinero al comprador para evitar el contracargo. Para comenzar a recibir notificaciones, debes [completar tus datos](https://www.mercadolibre.com/jms/mla/lgz/msl/login/H4sIAAAAAAAEAzWNwW4DIQxE_2XOaLlz7I8glzUbq4CRcbKpovx7tWp7HM28Ny80PWRk_56MBH7OJkUcAbORV7WeZUdCnwhY4vwXG10TMursbAvpdYkO3j-4ql2qSm0xAujut1ybnki_XwiQlfnpbINaPvnzIXy1_8ShSLi5z5ViPM9z62yFdp106Fa0b2Rx5wc3nWwrThrc4lCXKoVcdKwoc-AdUGl5dqPyheR25_cPATlhVe8AAAA/user)  y elegir la opción "Alertas de fraude"
 
 ### Revisa los datos al cobrar con Point
 
