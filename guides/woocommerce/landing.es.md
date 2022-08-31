@@ -56,7 +56,7 @@ available_payments: credit, mercadopago, ticket, pix
 
 >>>> Medios de pago aceptados <<<<
 ---
-available_payments: credit, mercadopago, mercadocredito
+available_payments: credit, mercadopago
 
 ------------
 
