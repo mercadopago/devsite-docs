@@ -4,7 +4,6 @@ Os pagamentos de Point podem ser buscados na API de Payments. Pode-se encontrar 
 
 Existe uma API exclusiva de Point que conta com informações adicionais do pagamento: 
 
-
 ```curl
 curl -X GET \
 -H "Content-Type: application/json" \

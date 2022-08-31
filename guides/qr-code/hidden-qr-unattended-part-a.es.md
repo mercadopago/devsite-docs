@@ -43,7 +43,6 @@ Te explicamos cómo funciona el modelo desatendido:
 
 ![Flujo de pago en punto de venta QR Mercado Pago](/images/mobile/qr-gas-station-flow.es.png)
 
-
 1. El cliente escanea el código QR desde su aplicación.
 2. En función de la URL asociada a la caja, Mercado Pago busca la orden en el servidor del vendedor.
 3. (A) El punto de venta informa su estado al servidor del vendedor.<br/>
@@ -91,15 +90,3 @@ https://api.mercadopago.com/pos \
 ]]]
 
 ---
-
-### Próximos pasos
-
-
-> LEFT_BUTTON_REQUIRED_ES
->
-> Cómo integrar QR modelo desatendido
->
-> Conoce paso a paso como integrar este modelo.
->
-> [Cómo integrar QR modelo desatendido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/qr-code/qr-unattended/qr-unattended-part-b)
-

@@ -4,7 +4,6 @@ Permite que el monto a cobrar ya esté incluido en el código QR. Cada QR repres
 
 Este modelo es ideal para cobrar con un código QR en ticket, en servicios de mesa o para pagos con valor incluido, entre otros.
 
-
 ## Características del modelo
 
 Sus principales características son:

@@ -19,7 +19,6 @@ First of all, generate the order publication. Once the data is sent to Mercado P
 
 To create an order, access our [API Reference](/developers/en/reference/qr-dynamic/_instore_orders_qr_seller_collectors_user_id_pos_external_pos_id_qrs/post) and execute the curl you will find there. The response will include the data required to create the QR code.
 
-
 ----[mco]----
 > If you must pay taxes for the products in your order, visit the [Considerations IVA Colombia section](/developers/en/guides/additional-content/localization/iva-colombia).
 ------------
@@ -52,7 +51,6 @@ For example:
 
 ------------
 
-
 ## Crear an order associated with a POS
 
 In addition to generating the QR code, you also have the option to create and assign the same order to the point of sale’s fixed QR code.
@@ -65,5 +63,4 @@ An IPN (Instant Payment Notification) notification is an **automatic message tha
 
 Implement IPN `merchant_order` with an order search by `external_reference` as a contingency method.
 
-
-[Receive IPN notifications](/developers/en/docs/qr-code/additional-content/notifications/ipn)
+[Receive IPN notifications](/developers/en/guides/additional-content/notifications/ipn/introduction)
