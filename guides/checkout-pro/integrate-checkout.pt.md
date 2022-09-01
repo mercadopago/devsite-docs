@@ -2,7 +2,12 @@
 
 A integração com o Checkout Pro permite realizar cobranças através do nosso formulário web a partir qualquer dispositivo de forma simples, rápida e segura.
 
-Para integrar o Checkout Pro, siga as etapas descritas abaixo.
+Há duas formas de se integrar com o Checkout Pro.
+
+1. Através dos nossos SDKs (Recomendado).
+2. Através de chamadas via backend diretamente para a [API de Preferências](/developers/pt/reference/preferences/_checkout_preferences/post) para obter o link do Checkout Pro no atributo `init_point`, e a partir daí utilizá-lo para redirecionar o comprador ao checkout.
+
+Nesta documentação você encontra todos os passos necessários para integrar o Checkout Pro através dos **nossos SDKs**.
 
 ## Instalar SDK do Mercado Pago
 
@@ -70,7 +75,7 @@ pip3 install mercadopago
 
 Preferências são conjuntos de informações que permitem configurar um produto ou serviço que se deseja cobrar, como preço e quantidade, além de outras configurações relacionadas ao fluxo de pagamento definido.
 
-Para criar uma preferência via API, utilize o endpoint [/checkout/preferences](/developers/pt/reference/preferences/_checkout_preferences/post) preenchendo os atributos necessários para execução da requisição ou, se preferir, utilize um dos SDKs disponíveis abaixo.
+Para criar uma preferência, utilize um dos SDKs disponíveis abaixo preenchendo os atributos com as respectivas informações.
 
 
 
@@ -116,7 +121,6 @@ import mercadopago
 sdk = mercadopago.SDK("PROD_ACCESS_TOKEN")
 ```
 ]]]
-
 
 
 Ao finalizar a criação da preferência, é preciso configurá-la de acordo com seu produto ou serviço. Para isso, utilize um dos códigos disponíveis abaixo preenchendo os atributos com as respectivas informações.
@@ -229,22 +233,6 @@ preference_data = {
 preference_response = sdk.preference().create(preference_data)
 preference = preference_response["response"]
 ```
-```curl
-curl -X POST \
-  'https://api.mercadopago.com/checkout/preferences' \
-  -H 'Content-Type: application/json' \
-  -H 'cache-control: no-cache' \
-  -H 'Authorization: Bearer **PROD_ACCESS_TOKEN**' \
-  -d '{
-    "items": [
-        {
-            "title": "Meu produto",
-            "quantity": 1,
-            "unit_price": 75.76
-        }
-    ]
-}'
-```
 ]]]
 
 ------------
@@ -350,24 +338,7 @@ preference_data = {
 preference_response = sdk.preference().create(preference_data)
 preference = preference_response["response"]
 ```
-```curl
-curl -X POST \
-  'https://api.mercadopago.com/checkout/preferences' \
-  -H 'Content-Type: application/json' \
-  -H 'cache-control: no-cache' \
-  -H 'Authorization: Bearer **PROD_ACCESS_TOKEN**' \
-  -d '{
-    "items": [
-        {
-            "title": "Meu produto",
-            "quantity": 1,
-            "unit_price": 75
-        }
-    ]
-}'
-```
 ]]]
-
 
 
 > WARNING
