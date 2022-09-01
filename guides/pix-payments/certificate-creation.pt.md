@@ -2,7 +2,7 @@
 
 O Certificado de transação garante a identidade de ambas as partes (vendedor e comprador) de uma transação, sendo necessário para efetuar as requisições à API.
 
-Para gerar o certiﬁcado, é preciso criar dois arquivos: **uma chave** e um **arquivo CSR**. Para isso, utilize o seguinte script, informando o CUST_ID  (**último bloco de dígitos do ACCESS_TOKEN)**, e o **APP_ID**:
+Para gerar o certiﬁcado, é preciso criar dois arquivos: **uma chave** e um **arquivo CSR**. Para isso, utilize o seguinte script, informando o **CUST_ID**  (último bloco de dígitos do ACCESS_TOKEN), e o **APP_ID**.
 
 [[[
 ```script
