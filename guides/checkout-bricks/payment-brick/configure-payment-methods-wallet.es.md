@@ -1,16 +1,71 @@
 # Configurar la integración con Billetera Mercado Pago
 
-Para configurar la integración de Payment Brick para recibir pagos con la Billetera Mercado Pago debe seguir los pasos a continuación. Si ya ha integrado los pagos con tarjeta, puede iniciar la integración desde el **paso 5**.
+Para configurar la integración de Payment Brick para recibir pagos con la Billetera Mercado Pago debe seguir los pasos a continuación. 
 
-1. [Crear container](#bookmark_crear_container)
-2. [Incluir y configurar la librería MercadoPago.js](#bookmark_incluir_y_configurar_la_librería_mercadopago.js)
-3. [Instanciar brick](#bookmark_instanciar_brick)
-4. [Renderizar brick](#bookmark_renderizar_brick)
-5. [Administrar la Billetera Mercado Pago](#bookmark_administrar_la_billetera_mercado_pago)
+> NOTE
+>
+> Importante
+>
+> Considera que cuando un usuario elige realizar un pago a través de la Billetera de Mercado Pago, será redirigido a la página de Mercado Pago para completar el pago. Por lo tanto, es necesario configurar `back_url`s si desea volver a su sitio al finalizar el pago. Para obtener más información, visite la sección [Redirigir al comprador a su sitio web](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/preferences).
+
+1. [Crear preferencia]()
+2. [Crear container](#bookmark_crear_container)
+3. [Incluir y configurar la librería MercadoPago.js](#bookmark_incluir_y_configurar_la_librería_mercadopago.js)
+4. [Instanciar brick](#bookmark_instanciar_brick)
+5. [Renderizar brick](#bookmark_renderizar_brick)
 
 > Los pasos se realizan en el backend o frontend. Las etiquetas **Client-Side** y **Server-Side** ubicadas inmediatamente al lado del título lo ayudan a identificar qué paso se realiza en qué instancia. <br/></br>
 > <br/></br>
 > Y, para ayudar, hemos preparado un completo [ejemplo de código](/developers/es/docs/checkout-bricks/payment-brick/code-example/wallet) que puede usar como modelo.
+
+> CLIENT_SIDE
+>
+> h2
+>
+> Crear preferencia
+
+El primer paso para darle al usuario la posibilidad de pagar con el Wallet de Mercado Pago es crear una preferencia en su backend. Agrega el [SDK de Mercado Pago](/developers/es/docs/sdks-library/landing) y las [credenciales](/developers/es/guides/additional-content/credentials/credentials) necesarias a tu proyecto para habilitar el uso de preferencias:
+
+```node
+// SDK de Mercado Pago
+const mercadopago = require('mercadopago');
+// Agregar las credenciales
+mercadopago.configure({
+ access_token: 'PROD_ACCESS_TOKEN'
+});
+``` 
+
+Luego configura la preferencia de acuerdo a tu producto o servicio:
+
+```node
+// Crea un objeto de preferencia
+let preference = {
+ "items": [
+   {
+     "id": "item-ID-1234",
+     "title": "Mi producto",
+     "quantity": 1,
+     "unit_price": 75.76
+   }
+ ],
+ "back_urls": {
+     "success": "https://www.success.com",
+     "failure": "http://www.failure.com",
+     "pending": "http://www.pending.com"
+ },
+ "auto_return": "approved",
+};
+ 
+mercadopago.preferences.create(preference)
+.then(function(response){
+// Este valor es el preferenceId que se enviará al brick al inicio
+ const preferenceId = response.body.id;
+}).catch(function(error){
+ console.log(error);
+});
+```
+
+> Para más detalles sobre cómo configurarlo, acceda a la sección [Preferencias](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/preferences).
 
 > CLIENT_SIDE
 >
@@ -85,51 +140,30 @@ Una vez instanciado el builder, nuestro brick puede ser renderizado y tener toda
 Para renderizar el brick, inserta el código a continuación del paso anterior y completa los atributos de acuerdo con los comentarios destacados en este mismo código.
 
 ```javascript
-const mp = new MercadoPago('YOUR_PUBLIC_KEY');
-const bricksBuilder = mp.bricks();
 const renderPaymentBrick = async (bricksBuilder) => {
  const settings = {
-   initialization: {
-     amount: 100, // valor del pago a realizar
+ initialization: {
+   amount: 100, // cantidad de procesamiento a realizar
+   preferenceId: 'abcd1234', // preferenceId generado en el backend
+ },
+ callbacks: {
+   onReady: () => {
+     // callback llamado cuando Brick está listo
    },
-   customization: {
-     paymentMethods: {
-       creditCard: 'all',
-       debitCard: 'all',
-     },
+   onSubmit: ({ paymentType, formData }) => {
+     // callback llamado al hacer clic en el botón de envío de datos
+  
+     if (paymentType === 'wallet_purchase') {
+       // en este caso, el usuario fue redirigido a
+      // la página de Mercado Pago para realizar el pago
+     }
    },
-   callbacks: {
-     onReady: () => {
-       // callback llamado cuando Brick esté listo
-     },
-     onSubmit: ({ paymentType, formData }) => {
-       // callback llamado cuando el usuario haz clic en el botón enviar los datos
-      
-       if (paymentType === 'credit_card' || paymentType === 'debit_card') {
-         return new Promise((resolve, reject) => {
-           fetch("/processar-pago", {
-             method: "POST",
-             headers: {
-               "Content-Type": "application/json",
-             },
-             body: JSON.stringify(formData)
-           })
-             .then((response) => {
-               // recibir el resultado del pago
-               resolve();
-             })
-             .catch((error) => {
-               // tratar respuesta de error al intentar crear el pago
-               reject();
-             })
-         });
-       }
-     },
-     onError: (error) => {
-       // callback llamado para todos los casos de error de Brick
-     },
+   onError: (error) => {
+     // callback llamado para todos los casos de error de Brick
    },
- };
+ },
+};
+ 
  window.paymentBrickController = await bricksBuilder.create(
    'payment',
    'paymentBrick_container',

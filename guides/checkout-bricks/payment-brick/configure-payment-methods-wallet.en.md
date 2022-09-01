@@ -1,16 +1,71 @@
 # Configure the integration with Mercado Pago Wallet
 
-To configure Payment Brick integration to receive payments with Mercado Pago Wallet you need to follow the steps below. If you have already integrated card payments, you can start the integration from **step 5**.
+To configure Payment Brick integration to receive payments with Mercado Pago Wallet you need to follow the steps below. 
 
-1. [Create container](#bookmark_create_container)
-2. [Include and configure MercadoPago.js library](#bookmark_include_and_configure_mercadopago.js_library)
-3. [Instantiate brick](#bookmark_instantiate_brick)
-4. [Render brick](#bookmark_render_brick)
-5. [Manage Mercado Pago Wallet](#bookmark_manage_mercado_pago_wallet)
+> NOTE
+>
+> Important
+>
+> Consider that when a user chooses to make a payment using the Mercado Pago Wallet, he will be redirected to the Mercado Pago page to complete the payment. Therefore, it is necessary to configure the `back_url`s if you want to return to your site at the end of the payment. For more information, visit the [Redirect buyer to your website](/developers/en/docs/checkout-bricks/payment-brick/additional-customization/preferences) section.
+
+1. [Create preference]()
+2. [Create container](#bookmark_create_container)
+3. [Include and configure MercadoPago.js library](#bookmark_include_and_configure_mercadopago.js_library)
+4. [Instantiate brick](#bookmark_instantiate_brick)
+5. [Render brick](#bookmark_render_brick)
 
 > The steps are performed on the backend or frontend. The **Client-Side** and **Server-Side** pills located immediately next to the title help you to identify which step is performed in which instance. <br/></br>
 > <br/></br>
 > And, to help, we have prepared a complete [code example](/developers/en/docs/checkout-bricks/payment-brick/code-example/wallet) that you can use as a template.
+
+> CLIENT_SIDE
+>
+> h2
+>
+> Create preference
+
+The first step to give the user the possibility to pay using the Mercado Pago Wallet is to create a preference in your backend. Add the [Mercado Pago SDK](/developers/en/docs/sdks-library/landing) and the necessary [credentials](/developers/en/guides/additional-content/credentials/credentials) to your project to enable the preference usage:
+
+```node
+// SDK do Mercado Pago
+const mercadopago = require('mercadopago');
+// Add the credentials
+mercadopago.configure({
+ access_token: 'PROD_ACCESS_TOKEN'
+});
+``` 
+
+Then configure the preference according to your product or service:
+
+```node
+// Create a preference object
+let preference = {
+ "items": [
+   {
+     "id": "item-ID-1234",
+     "title": "My product",
+     "quantity": 1,
+     "unit_price": 75.76
+   }
+ ],
+ "back_urls": {
+     "success": "https://www.success.com",
+     "failure": "http://www.failure.com",
+     "pending": "http://www.pending.com"
+ },
+ "auto_return": "approved",
+};
+ 
+mercadopago.preferences.create(preference)
+.then(function(response){
+// This value is the preferenceId that will be sent to the brick at startup
+ const preferenceId = response.body.id;
+}).catch(function(error){
+ console.log(error);
+});
+```
+
+> For more details on how to configure it, access the [Preferences](/developers/en/docs/checkout-bricks/payment-brick/additional-customization/preferences) section.
 
 > CLIENT_SIDE
 >
@@ -86,45 +141,36 @@ To render the brick, insert the following code after the previous step and fill 
 
 ```javascript
 const renderPaymentBrick = async (bricksBuilder) => {
-
-  const settings = {
-    initialization: {
-      amount: 100, //value to be charged
-    },
-    callbacks: {
-      onReady: () => {
-        // callback called when the brick is ready
-      },
-      onSubmit: (formData) => {
-        // callback called when the user clicks on the submit data button
-
-        // example of sending the data collected by our Brick to your server
-        return new Promise((resolve, reject) => {
-            fetch("/process_payment", { 
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(formData)
-            })
-            .then((response) => {
-                // receive payment result
-                resolve();
-            })
-            .catch((error) => {
-                // handle error response when trying to create payment
-                reject();
-            })
-          });
-      },
-      onError: (error) => { 
-        // callback called to all error cases related to the Brick
-      },
-    },
-  };
-  const PaymentBrickController = await bricksBuilder.create('Payment', 'PaymentBrick_container', settings);
+ const settings = {
+ initialization: {
+   amount: 100, // amount of processing to be performed
+   preferenceId: 'abcd1234', // preferenceId generated in the backend
+ },
+ callbacks: {
+   onReady: () => {
+     // callback called when Brick is ready
+   },
+   onSubmit: ({ paymentType, formData }) => {
+     // callback called when clicking on the data submission button
+  
+     if (paymentType === 'wallet_purchase') {
+       // in this case, the user was redirected to
+        // the Mercado Pago page to make the payment
+     }
+   },
+   onError: (error) => {
+     // callback called for all Brick error cases
+   },
+ },
 };
-renderPaymentBrick(bricksBuilder);     
+ 
+ window.paymentBrickController = await bricksBuilder.create(
+   'payment',
+   'paymentBrick_container',
+   settings
+ );
+};
+renderPaymentBrick(bricksBuilder); 
 ```
 
 The result of rendering the brick should be like the image below:”

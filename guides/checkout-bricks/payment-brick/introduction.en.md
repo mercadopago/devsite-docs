@@ -3,12 +3,12 @@
 Payment Brick is a modular and customizable solution that allows you to add several payment methods to your store with just one Brick, allowing you to save card data for future purchases. By using Payment Brick, you will have different payment methods at your disposal and you will be able to choose which ones to enable for your site.
 
 ----[mlb]----
-For now, you will be able to give your customers the possibility of making payments through credit cards and the Caixa virtual debit card. In the short term we will add the possibility that, using this same Brick, you can also allow them to make payments with Pix, ticket and lottery.
+For now, you will be able to give your customers the possibility of making payments through credit cards, the Caixa virtual debit card or use the Mercado Pago Wallet. In the short term we will add the possibility that, using this same Brick, you can also allow them to make payments with Pix, ticket and lottery.
 
 ------------
 
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-For now, you can give your customers the ability to make payments through debit and credit cards. In the short term we will add the possibility that, using this same Brick, you can also allow them to make cash payments.
+For now, you can give your customers the ability to make payments through debit and credit cards or use the Mercado Pago Wallet.. In the short term we will add the possibility that, using this same Brick, you can also allow them to make cash payments.
 
 ------------
 
