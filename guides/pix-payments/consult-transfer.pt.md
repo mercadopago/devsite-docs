@@ -1,6 +1,6 @@
 # Consultar transferência realizada
 
-Ao concluir um pagamento e consultar a cobrança criada, o status terá sido alterado para **CONCLUÍDA** e haverá um novo campo nas respostas referente aos pix realizados.
+Ao concluir um pagamento e consultar a cobrança criada, o status terá sido alterado para **Concluída** e haverá um novo campo nas respostas referente aos pix realizados.
 
 Para consultar transferências realizadas, execute a requisição abaixo.
 

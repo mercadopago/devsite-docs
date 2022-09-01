@@ -1,6 +1,6 @@
 ## Criar token
 
-Além dos certiﬁcados, para autenticar as requisições, é necessário enviar um token, que expira em 24h.
+Além dos certiﬁcados, para autenticar as requisições é necessário enviar um token que expira em 24h.
 
 Para gerar o token, execute a seguinte requisição enviando as informações obtidas na criação do certiﬁcado (**client_id e client_secret**).
 

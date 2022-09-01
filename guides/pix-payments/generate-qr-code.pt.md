@@ -2,7 +2,7 @@
 
 No resultado das requisições, estará presente o campo `loc.location`. A partir do valor desse parâmetro, é possível gerar um QR Code para ser utilizado na cobrança.
 
-Para gerar o QR Code utilize a API pública abaixo e realize a seguinte requisição.
+Para gerar o QR Code, utilize a API pública abaixo e realize a seguinte requisição.
 
 [[[
 ```curl
