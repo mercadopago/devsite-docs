@@ -30,7 +30,7 @@ curl --location --request PUT 'https://pix-api.mercadopago.com/cobv/1655996626' 
 **Resposta**
 
 [[[
-``` Json
+```Json
 
 {
     "calendario": {

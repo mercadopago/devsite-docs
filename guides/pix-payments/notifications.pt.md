@@ -5,7 +5,7 @@ A API também oferece a opção de se cadastrar para receber notificações de p
 Para registrar um webhook vinculado à uma chave Pix, execute a seguinte requisição:
 
 [[[
-``` curl
+```curl
 
 curl --location --request PUT 'https://pix-api.mercadopago.com/webhook/CHAVE_PIX' \
 --header 'Authorization: Bearer TOKEN' \
