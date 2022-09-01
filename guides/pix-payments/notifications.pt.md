@@ -2,7 +2,7 @@
 
 A API também oferece a opção de se cadastrar para receber notificações de pagamentos realizados através da configuração de Webhooks. Em seguida mostraremos como registrar um webhook utilizando o serviço https://requestbin.com/.
 
-Para registrar um webhook vinculado à uma chave Pix, execute a seguinte requisição:
+Para registrar um Webhook vinculado à uma chave Pix, execute a seguinte requisição:
 
 [[[
 ```curl

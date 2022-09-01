@@ -1,6 +1,6 @@
 # Devolução de pagamento
 
-Podem ser realizadas devoluções parciais ou totais, através do id do pix de pagamento (campo **endToEndId**). Para isso, execute a requisição abaixo.
+É possível realizar devoluções parciais ou totais através do **id do pix de pagamento** (campo `endToEndId`). Para isso, execute a requisição abaixo.
 
 [[[
 ```curl

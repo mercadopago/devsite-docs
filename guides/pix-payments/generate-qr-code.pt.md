@@ -1,8 +1,8 @@
 ## Gerar QR Code para pagamento
 
-No resultado das requisições, estará presente o campo loc.location. A partir do valor desse parâmetro, é possível gerar um QR Code utilizado na cobrança.
+No resultado das requisições, estará presente o campo `loc.location`. A partir do valor desse parâmetro, é possível gerar um QR Code para ser utilizado na cobrança.
 
-Para gerar o QR Code é possível utilizar uma API pública através da seguinte requisição.
+Para gerar o QR Code utilize a API pública abaixo e realize a seguinte requisição.
 
 [[[
 ```curl
