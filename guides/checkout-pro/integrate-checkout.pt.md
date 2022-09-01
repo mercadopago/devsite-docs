@@ -1,13 +1,11 @@
 # Integrar Checkout Pro
 
-A integração com o Checkout Pro permite realizar cobranças através do nosso formulário web a partir qualquer dispositivo de forma simples, rápida e segura.
-
-Há duas formas de se integrar com o Checkout Pro.
+A integração com o Checkout Pro permite realizar cobranças através do nosso formulário web a partir qualquer dispositivo de forma simples, rápida e segura, e pode ser feita de duas formas:
 
 1. Através dos nossos SDKs (Recomendado).
-2. Através de chamadas via backend diretamente para a [API de Preferências](/developers/pt/reference/preferences/_checkout_preferences/post) para obter o link do Checkout Pro no atributo `init_point`, e a partir daí utilizá-lo para redirecionar o comprador ao checkout.
+2. Através de chamadas via backend diretamente para a [API de Preferências](/developers/pt/reference/preferences/_checkout_preferences/post). Neste modelo, você obterá o link do Checkout Pro no atributo `init_point`, na resposta à requisição da API. A partir daí, basta utilizá-lo para redirecionar o comprador ao checkout.
 
-Nesta documentação você encontra todos os passos necessários para integrar o Checkout Pro através dos **nossos SDKs**.
+Nesta documentação você encontra todos os passos necessários para integrar o Checkout Pro através dos **nossos SDKs**. Caso queira integrar via API, acesse nossa [Referência de API](/developers/pt/reference/preferences/_checkout_preferences/post).
 
 ## Instalar SDK do Mercado Pago
 
@@ -403,4 +401,4 @@ No exemplo acima, um botão de pagamento será renderizado e ficará responsáve
 
 ## Exemplo de implementação
 
-Confira o [exemplo completo de integração](http://github.com/mercadopago/checkout-payment-sample) no GitHub para PHP ou NodeJS para fazer o _download_ de um projeto básico de implementação rápida do Checkout Pro.
+Confira o [exemplo completo de integração](http://github.com/mercadopago/checkout-payment-sample) no GitHub para **PHP** ou **NodeJS** para fazer o _download_ de um projeto básico de implementação rápida do Checkout Pro.
