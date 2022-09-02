@@ -4,10 +4,7 @@ A integração com o Checkout Pro permite realizar cobranças através do nosso 
 
 Nesta documentação você encontra todos os passos necessários para integrar o Checkout Pro através dos **nossos SDKs**. Para isso, siga as etapas descritas abaixo.
 
-> NOTE
->
-> Importante
->
+
 > Também é possível realizar a integração através de chamadas via backend diretamente para a [API de Preferências](/developers/pt/reference/preferences/_checkout_preferences/post). Neste modelo, você obterá o link do Checkout Pro no atributo `init_point`, na resposta à requisição da API. A partir daí, basta utilizá-lo para redirecionar o comprador ao checkout.
 
 
