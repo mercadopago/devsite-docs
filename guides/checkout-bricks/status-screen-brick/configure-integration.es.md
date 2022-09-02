@@ -26,7 +26,7 @@ Deberás crear un container para definir dónde se colocará el brick en la pant
 > El valor que se muestra en la propiedad `id` a continuación es solo un ejemplo y puede ser alterado, pero siempre debe coincidir con el `id` indicado en la renderización.
 
 ```html
-  <div id="cardPaymentBrick_container"></div>
+  <div id="statusScreenBrick_container"></div>
 ```
 
 > CLIENT_SIDE
@@ -84,47 +84,30 @@ Una vez instanciado el builder, nuestro brick puede ser renderizado y tener toda
 Para renderizar el brick, inserta el código a continuación del paso anterior y completa los atributos de acuerdo con los comentarios destacados en este mismo código.
 
 ```javascript
-const renderCardPaymentBrick = async (bricksBuilder) => {
-
-  const settings = {
-    initialization: {
-      amount: 100, //valor del pago a realizar
+const renderStausScreenBrick = async (bricksBuilder) => {
+const settings = {
+  initialization: {
+    paymentId: 100, // id de pago generado por Mercado Pago
+  },
+  callbacks: {
+    onReady: () => {
+      // callback llamado cuando Brick está listo
     },
-    callbacks: {
-      onReady: () => {
-        // callback llamado cuando Brick esté listo
-      },
-      onSubmit: (cardFormData) => {
-        // callback llamado cuando el usuario haga clic en el botón enviar los datos
-
-        // ejemplo de envío de los datos recolectados por el Brick a su servidor
-        return new Promise((resolve, reject) => {
-            fetch("/process_payment", { 
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(cardFormData)
-            })
-            .then((response) => {
-                // recibir el resultado del pago
-                resolve();
-            })
-            .catch((error) => {
-                // tratar respuesta de error al intentar crear el pago
-                reject();
-            })
-          });
-      },
-      onError: (error) => { 
-        // callback llamado para todos los casos de error de Brick
-      },
+    onError: (error) => {
+      // callback llamado para todos los casos de error de Brick
     },
-  };
-  const cardPaymentBrickController = await bricksBuilder.create('cardPayment', 'cardPaymentBrick_container', settings);
+  },
 };
-renderCardPaymentBrick(bricksBuilder);
+window.statusBrickController = await bricksBuilder.create(
+  'statusScreen',
+  'statusScreenBrick_container',
+  settings
+);
+};
+renderStausScreenBrick(bricksBuilder);
 ```
+
+> El `paymentId` que se debe enviar a Brick para su inicialización es el id devuelto por la API de [Pagos](/developers/pt/reference/pagos/_pagos/post) al generar un pago con Mercado Pago.
 
 El resultado de renderizar el brick debe ser como la imagen de abajo:
 
