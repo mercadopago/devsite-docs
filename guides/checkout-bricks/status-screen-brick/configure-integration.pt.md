@@ -1,6 +1,6 @@
 # Configure a integração  
 
-Para configurar a integração do Card Payment Brick você precisa seguir os passos abaixo:
+Para configurar a integração do Status Screen Brick você precisa seguir os passos abaixo:
 
 1. [Criar container](#bookmark_criar_container)
 2. [Incluir e configurar a biblioteca MercadoPago.js](#bookmark_incluir_e_configurar_a_biblioteca_mercadopago.js)
@@ -9,7 +9,7 @@ Para configurar a integração do Card Payment Brick você precisa seguir os pas
 
 > Os passos são realizados no back-end ou no front-end. As pills **Client-Side** e **Server-Side** localizadas imediatamentamente ao lado do título te ajudam a identificar qual passo é realizado em qual instância. <br/></br>
 > <br/></br>
-> E, para ajudar, preparamos um [exemplo de codigo](/developers/pt/docs/checkout-bricks/card-payment-brick/code-example) completo da configuração do Card Payment Brick, que você pode usar como modelo.
+> E, para ajudar, preparamos um [exemplo de codigo](/developers/pt/docs/checkout-bricks/status-screen-brick/code-example) completo da configuração do Status Screen Brick que você pode usar como modelo.
 
 > CLIENT_SIDE
 >
