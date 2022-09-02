@@ -8,7 +8,7 @@ Para configurar la integración de Payment Brick para recibir pagos con la Bille
 >
 > Considera que cuando un usuario elige realizar un pago a través de la Billetera de Mercado Pago, será redirigido a la página de Mercado Pago para completar el pago. Por lo tanto, es necesario configurar `back_url`s si desea volver a su sitio al finalizar el pago. Para obtener más información, visite la sección [Redirigir al comprador a su sitio web](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/preferences).
 
-1. [Crear preferencia]()
+1. [Crear preferencia](#bookmark_crear_preferencia)
 2. [Crear container](#bookmark_crear_container)
 3. [Incluir y configurar la librería MercadoPago.js](#bookmark_incluir_y_configurar_la_librería_mercadopago.js)
 4. [Instanciar brick](#bookmark_instanciar_brick)

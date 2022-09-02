@@ -1,15 +1,16 @@
 # Configurações de preferência
 
-Você pode adaptar a integração do Checkout Pro ao seu modelo negócio configurando [atributos de preferência](https://www.mercadopago.com/developers/pt/reference/preferences/_checkout_preferences/post). 
+Você pode adaptar a integração do Payment Brick ao seu modelo negócio configurando [atributos de preferência](/developers/pt/reference/preferences/_checkout_preferences/post).
 
 ----[mla, mlb]----
-Se você oferece compras de valores altos, por exemplo, pode aceitar [pagamentos com dois cartões de crédito](#bookmark_aceite_pagamentos_com_2_cartões_de_crédito) ou ainda [excluir meios de pagamento](#bookmark_defina_os_meios_de_pagamento_desejados) indesejados para a sua operação. 
-------------
-----[mlm, mlc, mlu, mco, mpe]----
-Se você oferece compras de valores altos, por exemplo, pode [excluir meios de pagamento](#bookmark_defina_os_meios_de_pagamento_desejados) indesejados para a sua operação.
+Se você oferece compras de valores altos, por exemplo, pode aceitar [pagamentos com dois cartões de crédito](#bookmark_aceite_pagamentos_com_2_cartões_de_crédito) ou ainda [excluir meios de pagamento](#bookmark_defina_os_meios_de_pagamento_desejados) indesejados para a sua operação.
+
 ------------
 
-As configurações dos atributos de preferência te permitem ainda [obter informações de negócio](#bookmark_trabalhe_com_métricas_de_negócio) e [mensurar a efetividade dos seus anúncios](#bookmark_otimize_a_conversão_dos_seus_anúncios) em plataformas como Facebook e Google. 
+----[mlm, mlc, mlu, mco, mpe]----
+Se você oferece compras de valores altos, por exemplo, pode [excluir meios de pagamento](#bookmark_defina_os_meios_de_pagamento_desejados) indesejados para a sua operação.
+
+------------
 
 ## Exemplo de preferência completa
 
@@ -159,15 +160,15 @@ As configurações dos atributos de preferência te permitem ainda [obter inform
 
 ## Defina os meios de pagamento desejados
 
-Por padrão, todos os meios de pagamento são oferecidos no Checkout Pro. Por meio da preferência de pagamento, você pode configurar um meio de pagamento padrão para ser renderizado, excluir algum indesejado, ou ainda escolher um número máximo de parcelas a serem ofertadas.
+Por meio da preferência de pagamento, você pode configurar um meio de pagamento padrão para ser renderizado, excluir algum indesejado, ou ainda escolher um número máximo de parcelas a serem ofertadas.
 
 | Atributo de preferência | Descrição |
 | --- | --- |
-| `payment_methods` | Classe que descreve os atributos e métodos de meios de pagamento do Checkout Pro. |
+| `payment_methods` | Classe que descreve os atributos e métodos de meios de pagamento do Payment Brick. |
 | `excluded_payment_types` | Método que exclui meios de pagamento indesejados, como cartão de crédito, ticket (boleto ou pagamento em lotérica), entre outros. |
 | `excluded_payment_methods` | Método que exclui bandeiras específicas de cartões de crédito e débito, como Visa, Mastercard, American Express, entre outros. |
 | `installments` | Método que define o número máximo de parcelas a serem ofertadas. |
-| `purpose` | Ao indicar o valor "wallet_purchase" neste método, o Checkout Pro apenas aceitará pagamentos de usuários cadastrados no Mercado Pago, com cartão e saldo em conta. |
+| `purpose` | Ao indicar o valor `wallet_purchase` neste método, o Payment Brick apenas aceitará pagamentos de usuários cadastrados no Mercado Pago, com cartão e saldo em conta. |
 
 Por exemplo:
 
@@ -296,18 +297,22 @@ preference_data = {
 
 Você pode ativar a opção de oferecer pagamentos com dois cartões de crédito a partir da conta do Mercado Pago. 
 
-Para ativar essa opção de pagamento, acesse [`Opcões de negócio`](https://www.mercadopago.com.br/settings/my-business) e selecione a opção `Receber pagamentos com 2 cartões de crédito`.
+Para ativar essa opção de pagamento, acesse "[Opcões de negócio](https://www.mercadopago.com.br/settings/my-business)" e selecione a opção "Receber pagamentos com 2 cartões de crédito".
 
 ![Config pago 2 tarjetas](/images/web-payment-checkout/config_pago_dos_tarjetas_br.gif)
+
 ------------
 
 ## Aceite pagamentos somente de usuários cadastrados
 
 ----[mla, mlb]----
 Você pode aceitar pagamentos com a carteira do Mercado Pago apenas de usuários cadastrados, com cartão, saldo disponível e Mercado Crédito.
+
 ------------
+
 ----[mlm, mlc, mco, mpe, mlu]----
 Você pode aceitar pagamentos com a carteira do Mercado Pago apenas de usuários cadastrados, com cartão e saldo disponível.
+
 ------------
 
 Isto permite que seus clientes tenham suas informações de conta disponíveis no ato do pagamento, tais como seus cartões e endereços salvos. 
@@ -400,9 +405,7 @@ Revise os [tempos de creditação por meio de pagamento](https://www.mercadopago
 
 ## Ative o modo binário
 
-Você pode ativar o modo binário se o modelo de negócios exigir que a aprovação do pagamento seja instantânea. Dessa forma, o pagamento só poderá ser aprovado ou recusado.
-
-Se o modo binário estiver desativado, o pagamento poderá ficar pendente (no caso de exigir qualquer ação do comprador) ou em processo (se for necessária uma revisão manual).
+Você pode ativar o modo binário se o modelo de negócios exigir que a aprovação do pagamento seja instantânea. Dessa forma, o pagamento só poderá ser aprovado ou recusado. Se o modo binário estiver desativado, o pagamento poderá ficar pendente (no caso de exigir qualquer ação do comprador) ou em processo (se for necessária uma revisão manual).
 
 Para ativá-lo, basta definir o atributo `binary_mode` da preferência de pagamento como `true`:
 
@@ -414,7 +417,7 @@ Para ativá-lo, basta definir o atributo `binary_mode` da preferência de pagame
 >
 > Importante
 >
-> A ativação do modo binário simplifica a integração com o Checkout Pro, mas pode acarretar no decréscimo da taxa de porcentagem de pagamentos aprovados. Isto porque, para manter o fluxo instantâneo, pagamentos pendentes ou ainda sendo processados serão por padrão automáticamente rejeitados. 
+> A ativação do modo binário simplifica a integração com o Payment Brick, mas pode acarretar no decréscimo da taxa de porcentagem de pagamentos aprovados. Isto porque, para manter o fluxo instantâneo, pagamentos pendentes ou ainda sendo processados serão por padrão automáticamente rejeitados. 
 
 ## Defina a vigência das suas preferências
 
@@ -634,452 +637,9 @@ Para configurar tal cenário, adicione o item `shipments` com o valor que quiser
 }
 ```
 
-## Otimize a conversão dos seus anúncios
-
-Sabemos que é importante maximizar a eficácia e encontrabilidade dos seus anúncios. 
-
-Por isso, oferecemos a possibilidade de integrar o Checkout Pro com as plataformas Facebook Ads e Google Ads para associar pagamentos às suas campanhas de negócio.
-
-----[mla, mlb]----
-> NOTE
->
-> Nota
->
-> Só serão associados os pagamentos aprovados instantaneamente com cartões de crédito e débito, dinheiro no Mercado Pago ou Mercado Créditos.
-------------
-
-----[mlm, mlc, mco, mpe, mlu]----
-> NOTE
->
-> Nota
->
-> Só serão associados os pagamentos aprovados instantaneamente com cartões de crédito e débito, ou com dinheiro no Mercado Pago.
-------------
-
-### Integre o Checkout Pro com o Faceboook Ads
-
-Ao criar uma preferência, você pode associá-la a um _pixel_ (identificator) para acompanhamento das conversões do Facebook Ads:
-
-[[[
-```php
-===
-Adicione o código na preferência e substitua o valor <code>pixel_id</code> pelo seu identificador.
-===
-<?php
-  // Criar um objeto preferencia
-  $preference = new MercadoPago\Preference();
-
-  // Associar seu pixel do Facebook
-  $preference->tracks = array(
-    array(
-      'type' => 'facebook_ad',
-      'values'=> array(
-        'pixel_id' => 'PIXEL_ID'
-      )
-    )
-  );
-
-  // ...
-  // Salvar e postar a preferencia
-  $preference->save();
-?>
-```
-```node
-===
-Adicione o código na preferência e substitua o valor <code>pixel_id</code> pelo seu identificador.
-===
-  // Criar um objeto preferencia
-var preference = {
-
-  // Asocia tu píxel de Facebook
-  tracks: [
-        {
-          type: "facebook_ad",
-          values: {
-            "pixel_id": 'PIXEL_ID'
-          }
-        }
-      ]
-  //...
-};
-```
-```java
-===
-Adicione o código na preferência e substitua o valor <code>pixel_id</code> pelo seu identificador.
-===
-  // Criar um objeto preferencia
-PreferenceClient client = new PreferenceClient();
-
-  // Associar seu pixel do Facebook
-List<PreferenceTrackRequest> tracks = new ArrayList<>();
-PreferenceTrackRequest trackFacebook = PreferenceTrackRequest.builder()
-   .type("facebook_ad")
-   .values(PreferenceTrackValuesRequest.builder().pixelId("PIXEL_ID").build())
-   .build();
-tracks.add(trackFacebook);
-
-PreferenceRequest request = PreferenceRequest.builder().tracks(tracks).build();
-
-Preference preference = new Preference()
-        .appendTrack(trackFacebook);
-
-  // Salvar e postar a preferencia
-client.create(request);
-```
-```csharp
-===
-Adicione o código na preferência e substitua o valor <code>pixel_id</code> pelo seu identificador.
-===
-// Associe seu pixel do Facebook
-var tracks = new List<PreferenceTrackRequest>
-{
-    new PreferenceTrackRequest
-    {
-        Type = "facebook_ad",
-        Values = new PreferenceTrackValuesRequest
-        {
-            PixelId = "PIXEL_ID",
-        },
-    },
-};
-
-var request = new PreferenceRequest
-{
-    // ...
-    Tracks = tracks,
-};
-
-var client = new PreferenceClient();
-Preference preference = await client.CreateAsync(request);
-```
-```python
-===
-Adicione o código na preferência e substitua o valor <code>pixel_id</code> pelo seu identificador.
-===
-# Associar seu pixel do Facebook
-preference_data = {
-    # ...
-    "tracks": [
-        {
-            "type": "facebook_ad",
-            "values": {
-                "pixel_id": "PIXEL_ID"
-            }
-        }
-    ]
-}
-
-preference_response = sdk.preference().create(preference_data)
-preference = preference_response["response"]
-```
-```curl
-===
-Adicione o código na preferência e substitua o valor <code>pixel_id</code> pelo seu identificador.
-===
-
-curl -X POST \
-  'https://api.mercadopago.com/checkout/preferences' \
-  -H 'Content-Type: application/json' \
-  -H 'cache-control: no-cache' \
-  -H 'Authorization: Bearer PROD_ACCESS_TOKEN' \
-  -d '{
-	"items": [
-        {
-            "id_product":1,
-            "quantity":1,
-            "unit_price": 234.33,
-            "titulo":"Mi producto"
-        }
-    ],
-    "tracks": [
-        {
-            "type": "facebook_ad",
-            "values": {
-                "pixel_id": "PIXEL_ID"
-            }
-        }
-    ]
-}'
-```
-]]]
-
-Ao concluir a configuração, um evento `Purchase` será associado ao _pixel_ especificado quando um pagamento encaminhado pelo seu anúncio for aprovado.
-
-> NOTE
->
-> Nota
->
-> Por enquanto, só é possível configurar um único _pixel_ por preferência. Teste o funcionamento da sua integração utilizando a extensão do Chrome Facebook Pixel Helper. Para mais informações, visite o [site oficial do Facebook](https://www.facebook.com/business/help/742478679120153?id=1205376682832142).
-
-### Integre o Checkout Pro com o Google Ads
-
-Ao criar uma preferência, você pode associá-la a uma _tag_ (identificador) para acompanhamento das conversões do Google Ads:
-
-[[[
-```php
-===
-Adicione o código na preferência e substitua os valores <code>CONVERSION\_ID</code> e <code>CONVERSION\_LABEL</code> pelos dados da sua _tag_.
-===
-
-<?php
-  // Criar um objeto preferencia
-  $preference = new MercadoPago\Preference();
- 
-  // Associar sua tag do Google ads
-  $preference->tracks = array(
-    array(
-        'type' => 'google_ad',
-        'values' => array(
-          'conversion_id' => 'CONVERSION_ID',
-          'conversion_label' => 'CONVERSION_LABEL'
-        )
-    )
-  );
-
-  ...
-  // Salvar e postar a preferencia
-  $preference->save();
-?>
-```
-```node
-===
-Adicione o código na preferência e substitua os valores <code>CONVERSION\_ID</code> e <code>CONVERSION\_LABEL</code> pelos dados da sua _tag_.
-===
-  // Criar um objeto preferencia
-var preference = {
- 
-  // Associar sua tag do Google ads
-  tracks: [
-        {
-            type: "google_ad",
-            values: {
-              conversion_id: "CONVERSION_ID",
-              conversion_label: "CONVERSION_LABEL"
-            } 
-        }
-      ]
-  ...
-};
-```
-```java
-===
-Adicione o código na preferência e substitua os valores <code>CONVERSION\_ID</code> e <code>CONVERSION\_LABEL</code> pelos dados da sua _tag_.
-===
-  // Criar um objeto preferencia
-PreferenceClient client = new PreferenceClient();
-
-  // Associar sua tag do Google ads
-List<PreferenceTrackRequest> tracks = new ArrayList<>();
-PreferenceTrackRequest trackGoogle =
-   PreferenceTrackRequest.builder()
-       .type("google_ad")
-       .values(
-           PreferenceTrackValuesRequest.builder()
-               .conversionId("CONVERSION_ID")
-               .conversionLabel("CONVERSION_LABEL")
-               .build())
-       .build();
-tracks.add(trackGoogle);
-
-PreferenceRequest request = PreferenceRequest.builder().tracks(tracks).build();
-
-  // Salvar e postar a preferencia
-client.create(request);
-```
-```csharp
-===
-Adicione o código na preferência e substitua os valores <code>CONVERSION\_ID</code> e <code>CONVERSION\_LABEL</code> pelos dados da sua _tag_.
-===
-// Associe sua tag do Google ads
-var tracks = new List<PreferenceTrackRequest>
-{
-    new PreferenceTrackRequest
-    {
-        Type = "facebook_ad",
-        Values = new PreferenceTrackValuesRequest
-        {
-            ConversionId = "CONVERSION_ID",
-            ConversionLabel = "CONVERSION_LABEL",
-        },
-    },
-};
-
-var request = new PreferenceRequest
-{
-    // ...
-    Tracks = tracks,
-};
-
-var client = new PreferenceClient();
-Preference preference = await client.CreateAsync(request);
-```
-```python
-===
-Adicione o código na preferência e substitua os valores <code>CONVERSION\_ID</code> e <code>CONVERSION\_LABEL</code> pelos dados da sua _tag_.
-===
-# Associar sua tag do Google ads
-preference_data = {
-    # ...
-    "tracks": [
-        {
-            "type": "google_ad",
-            "values": {
-                "conversion_id": "CONVERSION_ID",
-                "conversion_label": "CONVERSION_LABEL"
-            }
-        }
-    ]
-}
-
-preference_response = sdk.preference().create(preference_data)
-preference = preference_response["response"]
-```
-```curl
-===
-Adicione o código na preferência e substitua os valores <code>CONVERSION\_ID</code> e <code>CONVERSION\_LABEL</code> pelos dados da sua _tag_.
-===
-curl -X POST \
-  'https://api.mercadopago.com/checkout/preferences' \
-  -H 'Content-Type: application/json' \
-  -H 'cache-control: no-cache' \
-  -H 'Authorization: Bearer PROD_ACCESS_TOKEN' \
-  -d '{
-	"items": [
-        {
-            "id_product":1,
-            "quantity":1,
-            "unit_price": 234.33,
-            "titulo":"Mi producto"
-        }
-    ],
-    "tracks": [
-        {
-            "type": "google_ad",
-            "values": {
-                "conversion_id", "CONVERSION_ID",
-                "conversion_label", "CONVERSION_LABEL"
-            }
-        }
-    ]
-}'
-```
-]]]
-
-Ao concluir a configuração, uma conversão será associada à _tag_ especificada quando um pagamento encaminhado pelo seu anúncio for aprovado.
-
-> NOTE
->
-> Nota
->
-> Por enquanto, só é possível configurar uma única _tag_ por preferência. Para mais informações sobre as tags de conversões do Google Ads, visite o [site oficial do Google](https://support.google.com/google-ads?hl=es-419#topic=7456157).
-
-## Trabalhe com métricas de negócio
-
-Nossos membros certificados no [Dev Program](https://www.mercadopago.com/developers/pt/developer-program) podem obter métricas de negócio a partir do Checkout Pro. 
-
-Para trabalhar com métricas, utilize _headers_ na sua preferência de pagamento, agregando o código de identificação de acordo com o cenário desejado (não é obrigatório completar os três campos mencionados abaixo): 
-
-| _Header_ | Tipo de código | Identificador |
-| --- | --- | --- |
-| `x-integrator-id` | Integrador | Para programadores ou agências que realizam a integração. |
-| `x-platform-id` | Plataforma | Para as plataformas ou módulos que oferecem Mercado Pago em suas soluções. |
-| `x-corporation-id` | Corporações | Para contas associadas a uma conta vendedor ou a um grupo econômico. |
-
-> NOTE
->
-> Nota
->
-> Não deixe de adicionar o _header_ `integrator_id` em suas integrações para receber benefícios adicionais do programa. Você consegue encontrar seu `integrator_id` no seu [Dashboard de desenvolvedor](/developers/pt/docs/checkout-pro/additional-content/dashboard/introduction). 
-
-[[[
-```php
-===
-Adicione os códigos de identificação e substitua os valores que quiser: <code>CORPORATION\_ID</code>, <code>INTEGRATOR\_ID</code> e <code>PLATFORM_ID</code>.
-===
-MercadoPago\SDK::setPlatformId("PLATFORM_ID");
-MercadoPago\SDK::setIntegratorId("INTEGRATOR_ID");
-MercadoPago\SDK::setCorporationId("CORPORATION_ID");
-```
-```node
-===
-Adicione os códigos de identificação e substitua os valores que quiser: <code>CORPORATION\_ID</code>, <code>INTEGRATOR\_ID</code> e <code>PLATFORM_ID</code>.
-===
-mercadopago.configure({
-    platform_id: 'PLATFORM_ID',
-    integrator_id: 'INTEGRATOR_ID',
-    corporation_id: 'CORPORATION_ID'
-});
-```
-```java
-===
-Adicione os códigos de identificação e substitua os valores que quiser: <code>CORPORATION\_ID</code>, <code>INTEGRATOR\_ID</code> e <code>PLATFORM_ID</code>.
-===
-MercadoPago.SDK.setPlatformId("PLATFORM_ID");
-MercadoPago.SDK.setIntegratorId("INTEGRATOR_ID");
-MercadoPago.SDK.setCorporationId("CORPORATION_ID");
-```
-```ruby
-===
-Adicione os códigos de identificação e substitua os valores que quiser: <code>CORPORATION\_ID</code>, <code>INTEGRATOR\_ID</code> e <code>PLATFORM_ID</code>.
-===
-request_options = Mercadopago::RequestOptions.new()
-request_options.platform_id = 'PLATFORM_ID'
-request_options.integrator_id = 'INTEGRATOR_ID'
-request_options.corporation_id = 'CORPORATION_ID'
-
-sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN', request_options: request_options)
-```
-```csharp
-===
-Adicione os códigos de identificação e substitua os valores que quiser: <code>CORPORATION\_ID</code>, <code>INTEGRATOR\_ID</code> e <code>PLATFORM_ID</code>.
-===
-MercadoPagoConfig.PlatformId    = "PLATFORM_ID";
-MercadoPagoConfig.IntegratorId  = "INTEGRATOR_ID";
-MercadoPagoConfig.CorporationId = "CORPORATION_ID";
-```
-```python
-===
-Adicione os códigos de identificação e substitua os valores que quiser: <code>CORPORATION\_ID</code>, <code>INTEGRATOR\_ID</code> e <code>PLATFORM_ID</code>.
-===
-import mercadopago
-from mercadopago.config import RequestOptions
-
-request_options = RequestOptions(
-    corporation_id="CORPORATION_ID",
-    integrator_id="INTEGRATOR_ID",
-    platform_id="PLATFORM_ID"
-)
-sdk = mercadopago.SDK("ENV_ACCESS_TOKEN", request_options=request_options)
-```
-```curl
-===
-Adicione os códigos de identificação e substitua os valores que quiser: <code>CORPORATION\_ID</code>, <code>INTEGRATOR\_ID</code> e <code>PLATFORM_ID</code>.
-===
-curl -X POST \
-'https://api.mercadopago.com/checkout/preferences' \
-  -H 'cache-control: no-cache' \
-  -H 'content-type: application/json' \
-  -H 'x-corporation-id: CORPORATION_ID \
-  -H 'x-integrator-id: INTEGRATOR_ID \
-  -H 'x-platform-id: PLATFORM_ID \
-  -H 'Authorization: Bearer PROD_ACCESS_TOKEN' \
-  -d '{
-    "items": [
-       ...
-       
-    ],
-    ...
-}'
-```
-]]]
-
----
-
 ## Redirecione o comprador para o seu site
 
-No final do processo de pagamento, você tem a opção de redirecionar o comprador para o seu _site_ novamente. 
-
-Para isso, adicione o atributo `back_urls` e defina, segundo o status do pagamento, a página desejada para redirecionar o seu comprador quando ele clicar no botão de retorno ao site.
+No final do processo de pagamento, você tem a opção de redirecionar o comprador para o seu _site_ novamente. Para isso, adicione o atributo `back_urls` e defina, segundo o status do pagamento, a página desejada para redirecionar o seu comprador quando ele clicar no botão de retorno ao site.
 
 Se deseja que o redirecionamento para os pagamentos aprovados seja automático, sem a renderização de um botão de retorno, é preciso adicionar também o atributo `auto_return` com valor `approved`. 
 
@@ -1087,7 +647,7 @@ Se deseja que o redirecionamento para os pagamentos aprovados seja automático, 
 >
 > Nota
 >
-> Tenha em conta que o atributo `auto_return` só funciona para o modo `redirect` e `mobile` do Checkout Pro. O mesmo não funciona no modo modal, já que nesse último o comprador segue no _site_ durante todo o processo de pagamento.
+> Tenha em conta que o atributo `auto_return` só funciona para o modo `redirect` e `mobile` do Payment Brick. O mesmo não funciona no modo modal, já que nesse último o comprador segue no _site_ durante todo o processo de pagamento.
 
 ![autoreturn](/images/web-payment-checkout/autoreturn-img-br.png)
 
@@ -1109,7 +669,7 @@ Através das `back_urls`, serão retornados os seguintes parâmetros:
 > 
 > Nota
 > 
-> Alguns dos parâmetros guardam informações de compra apenas se o comprador completou todo o pagamento no Checkout Pro e não abandonou o fluxo antes de retornar ao seu site por meio da `back_urls` de `failure`.
+> Alguns dos parâmetros guardam informações de compra apenas se o comprador completou todo o pagamento no Payment Brick e não abandonou o fluxo antes de retornar ao seu site por meio da `back_urls` de `failure`.
 
 Por exemplo:
 

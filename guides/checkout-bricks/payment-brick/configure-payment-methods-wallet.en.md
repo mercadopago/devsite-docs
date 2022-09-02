@@ -8,7 +8,7 @@ To configure Payment Brick integration to receive payments with Mercado Pago Wal
 >
 > Consider that when a user chooses to make a payment using the Mercado Pago Wallet, he will be redirected to the Mercado Pago page to complete the payment. Therefore, it is necessary to configure the `back_url`s if you want to return to your site at the end of the payment. For more information, visit the [Redirect buyer to your website](/developers/en/docs/checkout-bricks/payment-brick/additional-customization/preferences) section.
 
-1. [Create preference]()
+1. [Create preference](#bookmark_create_preference)
 2. [Create container](#bookmark_create_container)
 3. [Include and configure MercadoPago.js library](#bookmark_include_and_configure_mercadopago.js_library)
 4. [Instantiate brick](#bookmark_instantiate_brick)

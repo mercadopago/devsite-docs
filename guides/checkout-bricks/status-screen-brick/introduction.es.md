@@ -1,5 +1,5 @@
-# Payment Brick 
+# Status Screen Brick
 
-Payment Brick es una solución modular y personalizable que permite agregar varios medios de pago a tu tienda con solamente un Brick, permitiendo guardar los datos de tarjetas para compras futuras. Al utilizar Payment Brick, tendrás a tu disposición diferentes medios de pago y podrás elegir cuáles habilitar para tu sitio.
+Status Screen Brick le permite mostrar al comprador el estado de una compra realizada con cualquier método de pago proporcionado por Checkout Bricks. Con este Brick es posible visualizar el resumen de la compra, así como seguir el proceso de aprobación del pago y visualizar el detalle de los tickets de pago.
 
 ![payment-brick-layout](checkout-bricks/payment-brick-layout-es.gif)

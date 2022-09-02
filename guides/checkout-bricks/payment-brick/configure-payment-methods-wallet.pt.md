@@ -8,7 +8,7 @@ Para configurar a integração do Payment Brick para receber pagamentos com a Ca
 >
 > Considere que quando um usuário opta por fazer o pagamento utilizando a Carteira Mercado Pago, este será redirecionado para a página do Mercado Pago para concluir o pagamento. Por isso, é necessário configurar as `back_url`s se você quiser retornar ao seu site ao final do pagamento. Para mais informações, visite a seção [Redirecione o comprador para o seu site](/developers/pt/docs/checkout-bricks/payment-brick/additional-customization/preferences).
 
-1. [Criar preferência]()
+1. [Criar preferência](#bookmark_criar_preferência)
 2. [Criar container](#bookmark_criar_container)
 3. [Incluir e configurar a biblioteca MercadoPago.js](#bookmark_incluir_e_configurar_a_biblioteca_mercadopago.js)
 4. [Instanciar brick](#bookmark_instanciar_brick)

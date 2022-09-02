@@ -8,4 +8,4 @@ Para realizar la integración de Payment Brick, debes cumplir con los requisitos
 |Credenciales | Contraseñas únicas con las que identificamos una integración en su cuenta. Para realizar las integraciones, necesitará la _Public key_ y el _Access Token_. [Haz clic aquí](/developers/es/guides/additional-content/credentials/credentials) para obtener más información. |
 | Instalar el SDK de Mercado Pago | Instale los SDK oficiales para simplificar su integración con nuestras [APIs](/developers/es/reference/payments/_payments/post). Para obtener más información, [haz clic aquí](/developers/es/guides/sdks-v2/official/landing). |
 
-Si se cumplen todos los requisitos previos, puede realizar la integración de Checkout Bricks.
+Si se cumplen todos los requisitos previos, puede realizar la integración de Payment Brick.
