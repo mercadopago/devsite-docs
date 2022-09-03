@@ -1,6 +1,6 @@
 # Code example
 
-To facilitate and optimize your integration process, check below a complete example of how to include the Mercado Pago Wallet as a means of payment with Payment Brick and how, after performing the integration, to send the payment to Mercado Pago. 
+To facilitate and optimize your integration process, check below a complete example of how to include the Mercado Pago Wallet as a means of payment with Payment Brick. 
 
 > SERVER_SIDE
 >
@@ -8,25 +8,48 @@ To facilitate and optimize your integration process, check below a complete exam
 >
 > Create your preference
 
-```node
-// SDK do Mercado Pago
-const mercadopago = require ('mercadopago');
-// Add the credentials
-mercadopago.configure({
- access_token: 'PROD_ACCESS_TOKEN'
-});
- 
-// Create a preference object
-let preference = {
- items: [
-   {
-     title: 'My product',
-     unit_price: 100,
-     quantity: 1,
-   }
- ]
-};
+[[[
+```php
+<?php
+// Mercado Pago SDK
+require __DIR__ .  '/vendor/autoload.php';
+// Add Your credentials
+MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
+?>
 ```
+```node
+// Mercado Pago SDK
+const mercadopago = require ('mercadopago');
+// Add Your credentials
+mercadopago.configure({
+  access_token: 'PROD_ACCESS_TOKEN'
+});
+```
+```java
+// Mercado Pago SDK
+import com.mercadopago.MercadoPagoConfig;
+// Add Your credentials
+MercadoPagoConfig.setAccessToken("PROD_ACCESS_TOKEN");
+```
+```ruby
+# Mercado Pago SDK
+require 'mercadopago'
+# Add Your credentials
+sdk = Mercadopago::SDK.new('PROD_ACCESS_TOKEN')
+```
+```csharp
+// Mercado Pago SDK
+ using MercadoPago.Config;
+ // Add Your credentials
+MercadoPagoConfig.AccessToken = "PROD_ACCESS_TOKEN";
+```
+```python
+# Mercado Pago SDK
+import mercadopago
+# Add Your credentials
+sdk = mercadopago.SDK("PROD_ACCESS_TOKEN")
+```
+]]]
 
 > CLIENT_SIDE
 >
@@ -85,3 +108,5 @@ let preference = {
 ```
 
 > After the user is redirected to the Mercado Pago page to make the payment, you can be notified about the result of the transaction by registering the `back_urls`, as explained in [Preferences](/developers/en/docs/checkout-bricks/payment-brick/additional-customization/preferences).
+>
+> Payments with **Mercado Pago Wallet** do not need to be sent via the backend. If the user selects this option as a means of payment, the `preferenceId` sent at the initialization of the brick is responsible for redirecting the buyer to the Mercado Pago website, where the payment will be made directly on our website. To redirect the buyer back to your site, you can configure the `back_urls` as described [in this article](/developers/en/docs/checkout-bricks/payment-brick/additional-customization/preferences#bookmark_redirect_the_buyer_to_your_site).

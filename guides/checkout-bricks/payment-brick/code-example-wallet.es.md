@@ -1,6 +1,6 @@
 # Ejemplo de código 
 
-Para facilitar y optimizar su proceso de integración, ve a continuación un ejemplo completo de cómo incluir la Billetera Mercado Pago como medio de pago con Payment Brick y cómo, luego de realizar la integración, enviar el pago a Mercado Pago. 
+Para facilitar y optimizar su proceso de integración, ve a continuación un ejemplo completo de cómo incluir la Billetera Mercado Pago como medio de pago con Payment Brick. 
 
 > SERVER_SIDE
 >
@@ -8,25 +8,53 @@ Para facilitar y optimizar su proceso de integración, ve a continuación un eje
 >
 > Crea tu preferencia
 
-```node
-// SDK do Mercado Pago
-const mercadopago = require ('mercadopago');
-// Agregar credenciales
-mercadopago.configure({
- access_token: 'PROD_ACCESS_TOKEN'
-});
- 
-// Crear un objeto de preferencia
-let preference = {
- items: [
-   {
-     title: 'Mi producto',
-     unit_price: 100,
-     quantity: 1,
-   }
- ]
-};
+[[[
+```php
+<?php
+// SDK de Mercado Pago
+require __DIR__ .  '/vendor/autoload.php';
+// Agrega credenciales
+MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
+?>
 ```
+
+```node
+// SDK de Mercado Pago
+const mercadopago = require("mercadopago");
+// Agrega credenciales
+mercadopago.configure({
+  access_token: "PROD_ACCESS_TOKEN",
+});
+```
+
+```java
+// SDK de Mercado Pago
+import com.mercadopago.MercadoPagoConfig;
+// Agrega credenciales
+MercadoPagoConfig.setAccessToken("PROD_ACCESS_TOKEN");
+```
+
+```ruby
+# SDK de Mercado Pago
+require 'mercadopago'
+# Agrega credenciales
+sdk = Mercadopago::SDK.new('PROD_ACCESS_TOKEN')
+```
+
+```csharp
+// SDK de Mercado Pago
+ using MercadoPago.Config;
+ // Agrega credenciales
+MercadoPagoConfig.AccessToken = "PROD_ACCESS_TOKEN";
+```
+
+```python
+# SDK de Mercado Pago
+import mercadopago
+# Agrega credenciales
+sdk = mercadopago.SDK("PROD_ACCESS_TOKEN")
+```
+]]]
 
 > CLIENT_SIDE
 >
@@ -85,3 +113,5 @@ let preference = {
 ```
 
 > Luego de que el usuario es redirigido a la página de Mercado Pago para realizar el pago, puede ser notificado sobre el resultado de la transacción registrando las `back_urls`, como se explica en las [Preferências](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/preferences).
+>
+> Los pagos con **Carteira Mercado Pago** no necesitan ser enviados a través del backend. Si el usuario selecciona esta opción como medio de pago, el `preferenceId` enviado en la inicialización del brick es el encargado de redirigir al comprador al sitio web de Mercado Pago, donde el pago se realizará directamente en nuestro sitio. Para redirigir al comprador a tu sitio, puede configurar `back_urls` como se describe [en este artículo](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/preferences#bookmark_redirigir_al_comprador_a_tu_sitio_web)

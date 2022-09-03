@@ -2,12 +2,6 @@
 
 Para configurar la integración de Payment Brick para recibir pagos con la Billetera Mercado Pago debe seguir los pasos a continuación. 
 
-> NOTE
->
-> Importante
->
-> Considera que cuando un usuario elige realizar un pago a través de la Billetera de Mercado Pago, será redirigido a la página de Mercado Pago para completar el pago. Por lo tanto, es necesario configurar `back_url`s si desea volver a su sitio al finalizar el pago. Para obtener más información, visite la sección [Redirigir al comprador a su sitio web](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/preferences).
-
 1. [Crear preferencia](#bookmark_crear_preferencia)
 2. [Crear container](#bookmark_crear_container)
 3. [Incluir y configurar la librería MercadoPago.js](#bookmark_incluir_y_configurar_la_librería_mercadopago.js)
@@ -18,7 +12,7 @@ Para configurar la integración de Payment Brick para recibir pagos con la Bille
 > <br/></br>
 > Y, para ayudar, hemos preparado un [ejemplo de código](/developers/es/docs/checkout-bricks/payment-brick/code-example/wallet) completo de la configuración de Payment Brick con la Billetera Mercado Pago que puede usar como modelo.
 
-> CLIENT_SIDE
+> SERVER_SIDE
 >
 > h2
 >
@@ -26,46 +20,326 @@ Para configurar la integración de Payment Brick para recibir pagos con la Bille
 
 El primer paso para darle al usuario la posibilidad de pagar con el Wallet de Mercado Pago es crear una preferencia en su backend. Agrega el [SDK de Mercado Pago](/developers/es/docs/sdks-library/landing) y las [credenciales](/developers/es/guides/additional-content/credentials/credentials) necesarias a tu proyecto para habilitar el uso de preferencias:
 
+[[[
+```php
+<?php
+// SDK de Mercado Pago
+require __DIR__ .  '/vendor/autoload.php';
+// Agrega credenciales
+MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
+?>
+```
+
 ```node
 // SDK de Mercado Pago
-const mercadopago = require('mercadopago');
-// Agregar las credenciales
+const mercadopago = require("mercadopago");
+// Agrega credenciales
 mercadopago.configure({
- access_token: 'PROD_ACCESS_TOKEN'
+  access_token: "PROD_ACCESS_TOKEN",
 });
-``` 
+```
+
+```java
+// SDK de Mercado Pago
+import com.mercadopago.MercadoPagoConfig;
+// Agrega credenciales
+MercadoPagoConfig.setAccessToken("PROD_ACCESS_TOKEN");
+```
+
+```ruby
+# SDK de Mercado Pago
+require 'mercadopago'
+# Agrega credenciales
+sdk = Mercadopago::SDK.new('PROD_ACCESS_TOKEN')
+```
+
+```csharp
+// SDK de Mercado Pago
+ using MercadoPago.Config;
+ // Agrega credenciales
+MercadoPagoConfig.AccessToken = "PROD_ACCESS_TOKEN";
+```
+
+```python
+# SDK de Mercado Pago
+import mercadopago
+# Agrega credenciales
+sdk = mercadopago.SDK("PROD_ACCESS_TOKEN")
+```
+]]]
 
 Luego configura la preferencia de acuerdo a tu producto o servicio:
+
+----[mla, mlb, mlu, mpe, mlm]----
+
+[[[
+```php
+<?php
+// Crea un objeto de preferencia
+$preference = new MercadoPago\Preference();
+
+// Crea un ítem en la preferencia
+$item = new MercadoPago\Item();
+$item->title = 'Mi producto';
+$item->quantity = 1;
+$item->unit_price = 75.56;
+$preference->items = array($item);
+$preference->save();
+?>
+```
 
 ```node
 // Crea un objeto de preferencia
 let preference = {
- "items": [
-   {
-     "id": "item-ID-1234",
-     "title": "Mi producto",
-     "quantity": 1,
-     "unit_price": 75.76
-   }
- ],
- "back_urls": {
-     "success": "https://www.success.com",
-     "failure": "http://www.failure.com",
-     "pending": "http://www.pending.com"
- },
- "auto_return": "approved",
+  items: [
+    {
+      title: "Mi producto",
+      unit_price: 100,
+      quantity: 1,
+    },
+  ],
 };
- 
-mercadopago.preferences.create(preference)
-.then(function(response){
-// Este valor es el preferenceId que se enviará al brick al inicio
- const preferenceId = response.body.id;
-}).catch(function(error){
- console.log(error);
-});
+
+mercadopago.preferences
+  .create(preference)
+  .then(function (response) {
+    // En esta instancia deberás asignar el valor dentro de response.body.id por el ID de preferencia solicitado en el siguiente paso
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
 ```
 
+```java
+// Crea un objeto de preferencia
+PreferenceClient client = new PreferenceClient();
+
+// Crea un ítem en la preferencia
+List<PreferenceItemRequest> items = new ArrayList<>();
+PreferenceItemRequest item =
+   PreferenceItemRequest.builder()
+       .title("Meu produto")
+       .quantity(1)
+       .unitPrice(new BigDecimal("100"))
+       .build();
+items.add(item);
+
+PreferenceRequest request = PreferenceRequest.builder().items(items).build();
+
+client.create(request);
+```
+
+```ruby
+# Crea un objeto de preferencia
+preference_data = {
+  items: [
+    {
+      title: 'Mi producto',
+      unit_price: 75.56,
+      quantity: 1
+    }
+  ]
+}
+preference_response = sdk.preference.create(preference_data)
+preference = preference_response[:response]
+
+# Este valor reemplazará el string "<%= @preference_id %>" en tu HTML
+@preference_id = preference['id']
+```
+
+```csharp
+// Crea el objeto de request de la preference
+var request = new PreferenceRequest
+{
+    Items = new List<PreferenceItemRequest>
+    {
+        new PreferenceItemRequest
+        {
+            Title = "Mi producto",
+            Quantity = 1,
+            CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
+            UnitPrice = 75.56m,
+        },
+    },
+};
+
+// Crea la preferencia usando el client
+var client = new PreferenceClient();
+Preference preference = await client.CreateAsync(request);
+```
+
+```python
+# Crea un ítem en la preferencia
+preference_data = {
+    "items": [
+        {
+            "title": "Mi producto",
+            "quantity": 1,
+            "unit_price": 75.76,
+        }
+    ]
+}
+
+preference_response = sdk.preference().create(preference_data)
+preference = preference_response["response"]
+```
+
+```curl
+curl -X POST \
+  'https://api.mercadopago.com/checkout/preferences' \
+  -H 'Content-Type: application/json' \
+  -H 'cache-control: no-cache' \
+  -H 'Authorization: Bearer **PROD_ACCESS_TOKEN**' \
+  -d '{
+    "items": [
+        {
+            "title": "Mi producto",
+            "quantity": 1,
+            "unit_price": 75.76
+        }
+    ]
+}'
+```
+]]]
+
+------------
+
+----[mlc, mco]----
+
+[[[
+```php
+<?php
+// Crea un objeto de preferencia
+$preference = new MercadoPago\Preference();
+
+// Crea un ítem en la preferencia
+$item = new MercadoPago\Item();
+$item->title = 'Mi producto';
+$item->quantity = 1;
+$item->unit_price = 75;
+$preference->items = array($item);
+$preference->save();
+?>
+```
+
+```node
+// Crea un objeto de preferencia
+let preference = {
+  items: [
+    {
+      title: "Mi producto",
+      unit_price: 100,
+      quantity: 1,
+    },
+  ],
+};
+
+mercadopago.preferences
+  .create(preference)
+  .then(function (response) {
+    // Este valor reemplazará el string "<%= global.id %>" en tu HTML
+    global.id = response.body.id;
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+```
+
+```java
+// Crea un objeto de preferencia
+Preference preference = new Preference();
+
+// Crea un ítem en la preferencia
+Item item = new Item();
+item.setTitle("Mi producto")
+    .setQuantity(1)
+    .setUnitPrice((float) 75);
+preference.appendItem(item);
+preference.save();
+```
+
+```ruby
+# Crea un objeto de preferencia
+preference_data = {
+  items: [
+    {
+      title: 'Mi producto',
+      unit_price: 75,
+      quantity: 1
+    }
+  ]
+}
+preference_response = sdk.preference.create(preference_data)
+preference = preference_response[:response]
+
+# Este valor reemplazará el string "<%= @preference_id %>" en tu HTML
+@preference_id = preference['id']
+```
+
+```csharp
+// Crea el objeto de request de la preference
+var request = new PreferenceRequest
+{
+    Items = new List<PreferenceItemRequest>
+    {
+        new PreferenceItemRequest
+        {
+            Title = "Mi producto",
+            Quantity = 1,
+            CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
+            UnitPrice = 75m,
+        },
+    },
+};
+
+// Crea la preferencia usando el client
+var client = new PreferenceClient();
+Preference preference = await client.CreateAsync(request);
+```
+
+```python
+# Crea un ítem en la preferencia
+preference_data = {
+    "items": [
+        {
+            "title": "Mi producto",
+            "quantity": 1,
+            "unit_price": 75
+        }
+    ]
+}
+
+preference_response = sdk.preference().create(preference_data)
+preference = preference_response["response"]
+```
+
+```curl
+curl -X POST \
+  'https://api.mercadopago.com/checkout/preferences' \
+  -H 'Content-Type: application/json' \
+  -H 'cache-control: no-cache' \
+  -H 'Authorization: Bearer **PROD_ACCESS_TOKEN**' \
+  -d '{
+    "items": [
+        {
+            "title": "Mi producto",
+            "quantity": 1,
+            "unit_price": 75
+        }
+    ]
+}'
+```
+]]]
+
+------------
+
+> NOTE
+>
+> Importante
+>
 > Para más detalles sobre cómo configurarlo, acceda a la sección [Preferencias](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/preferences).
+>
+> Considera que cuando un usuario elige realizar un pago a través de la Billetera de Mercado Pago, será redirigido a la página de Mercado Pago para completar el pago. Por lo tanto, es necesario configurar `back_url`s si desea volver a su sitio al finalizar el pago. Para obtener más información, visite la sección [Redirigir al comprador a su sitio web](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/preferences#bookmark_redirigir_al_comprador_a_tu_sitio_web).
 
 > CLIENT_SIDE
 >
@@ -182,9 +456,3 @@ El resultado de renderizar el brick debe ser como la imagen de abajo:
 > Atención
 >
 > Para un control efectivo del Brick, la función enviada en `onSubmit` siempre debe devolver una Promise. Llame el método `resolve()` solo si el procesamiento de tu backend fue exitoso. Llame el método `reject()` en caso de que ocurra un error. Esto hará que el Brick te permita completar los campos nuevamente y haga posible un nuevo intento de pago. Al llamar el `resolve()` dentro de la Promise de `onSubmit`, el brick no permite nuevos pagos. Si deseas realizar un nuevo pago, deberás crear una nueva instancia del Brick.
-
-> CLIENT_SIDE 
->
-> h2
->
-> Administrar la Billetera Mercado Pago
