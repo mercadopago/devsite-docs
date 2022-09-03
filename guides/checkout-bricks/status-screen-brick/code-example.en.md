@@ -8,7 +8,7 @@ To facilitate and optimize your integration process, see below for a complete ex
 >
 > Configure the integration
 
-````html
+```html
 <html>
    <head>
        <script src="https://sdk.mercadopago.com/js/v2"></script>

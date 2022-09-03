@@ -26,7 +26,7 @@ Você vai precisar criar um container para definir o local que o brick será ins
 > O valor exibido na propriedade `id` a seguir é apenas um exemplo, e pode ser alterado, mas deve sempre corresponder ao `id` indicado na renderização.
 
 ```html
-  <div id="statusScreenBrick_container"></div>
+ <div id="statusScreenBrick_container"></div>
 ```
 
 > CLIENT_SIDE
@@ -87,7 +87,7 @@ Para renderizar o brick, insira o código abaixo após o passo anterior e preenc
 const renderStausScreenBrick = async (bricksBuilder) => {
 const settings = {
   initialization: {
-    paymentId: 100, // id de pagamento gerado por Mercado Pago
+    paymentId: '1234567890', // id de pagamento gerado por Mercado Pago
   },
   callbacks: {
     onReady: () => {
@@ -112,9 +112,3 @@ renderStausScreenBrick(bricksBuilder);
 O resultado de renderizar o brick deve ser como na imagem abaixo:
 
 ![cardform](checkout-bricks/card-form-pt.png)
-
-> WARNING
->
-> Atenção
->
-> Para um controle eficaz do Brick, a função enviada no `onSubmit` deve sempre retornar uma Promise. Chame o `resolve()` apenas se o processamento em seu backend ocorreu com sucesso. Chame o `reject()` caso algum erro ocorra. Isso fará com que o brick permita o preenchimento dos campos novamente e viabilize uma nova tentativa de pagamento. Ao chamar o método `resolve()` dentro da Promise do `onSubmit`, o brick não permite novos pagamentos. Caso queira realizar um novo pagamento, deve-se criar uma nova instância do Brick.

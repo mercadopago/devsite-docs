@@ -21,7 +21,7 @@ Para facilitar e otimizar o seu processo de integração, veja abaixo um exemplo
            const renderStatusScreenBrick = async (bricksBuilder) => {
            const settings = {
                    initialization: {
-                       paymentId: '1234567890', //valor do processamento a ser realizado
+                       paymentId: '1234567890', // id do pagamento gerado pelo mercado pago
                    },
                    callbacks: {
                        onReady: () => {

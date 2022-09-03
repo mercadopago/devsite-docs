@@ -1,9 +1,9 @@
 # Configurar la integración
 
-Para configurar la integración de Status Screen Brick, debe seguir los pasos a continuación:
+Para configurar la integración de Status Screen Brick, debe seguir los pasos a continuación: 
 
 1. [Crear container](#bookmark_crear_container)
-2. [Incluir y configurar la librería MercadoPago.js](#bookmark_incluir_y_configurar_la_librería_mercadopago.js)
+2. [Incluir y configurar la librería MercadoPago.js](#bookmark_incluir_y_configurar_la_librería_mercadopago.js) :flag-ar: 
 3. [Instanciar brick](#bookmark_instanciar_brick)
 4. [Renderizar brick](#bookmark_renderizar_brick)
 
@@ -26,7 +26,7 @@ Deberás crear un container para definir dónde se colocará el brick en la pant
 > El valor que se muestra en la propiedad `id` a continuación es solo un ejemplo y puede ser alterado, pero siempre debe coincidir con el `id` indicado en la renderización.
 
 ```html
-  <div id="statusScreenBrick_container"></div>
+ <div id="statusScreenBrick_container"></div>
 ```
 
 > CLIENT_SIDE
@@ -87,7 +87,7 @@ Para renderizar el brick, inserta el código a continuación del paso anterior y
 const renderStausScreenBrick = async (bricksBuilder) => {
 const settings = {
   initialization: {
-    paymentId: 100, // id de pago generado por Mercado Pago
+    paymentId: '1234567890', // id de pago generado por Mercado Pago
   },
   callbacks: {
     onReady: () => {
@@ -112,9 +112,3 @@ renderStausScreenBrick(bricksBuilder);
 El resultado de renderizar el brick debe ser como la imagen de abajo:
 
 ![cardform](checkout-bricks/card-form-es.png)
-
-> WARNING
->
-> Atención
->
-> Para un control efectivo del Brick, la función enviada en `onSubmit` siempre debe devolver una Promise. Llame el método `resolve()` solo si el procesamiento de tu backend fue exitoso. Llame el método `reject()` en caso de que ocurra un error. Esto hará que el Brick te permita completar los campos nuevamente y haga posible un nuevo intento de pago. Al llamar el `resolve()` dentro de la Promise de `onSubmit`, el brick no permite nuevos pagos. Si deseas realizar un nuevo pago, deberás crear una nueva instancia del Brick.
