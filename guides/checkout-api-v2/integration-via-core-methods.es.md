@@ -307,7 +307,7 @@ El token de la tarjeta se crea a partir de la información de la misma, lo que a
 >
 > Importante
 >
-> El método `createCardToken` devuelve un token con la representación segura de los datos de la tarjeta, además tomaremos el ID del token de la respuesta y lo guardaremos en una input oculto denominado`token` para enviar posteriormente el formulario a los servidores.
+> El método `createCardToken` devuelve un token con la representación segura de los datos de la tarjeta. Tomaremos el ID del token de la respuesta y lo guardaremos en una input oculto denominado`token` para enviar posteriormente el formulario a los servidores. Además, ten en cuenta que el **token tiene una validez de 7 días** y solo se **puede usar una vez**.
 
 [[[
 ```javascript
