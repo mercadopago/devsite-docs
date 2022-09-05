@@ -70,8 +70,7 @@ Veja abaixo a disponibilidade dos nossos produtos por plataforma em cada país e
 | Yampi | - | 🇧🇷 |
 
 ------------
-
-> Para detalhes dos meios de pagamento aceitos em cada país, verifique a lista completa com a [disponibilidade de meios de pagamento](/developers/pt/guides/additional-content/sales-processing/payment-methods.)
+> Para detalhes dos meios de pagamento aceitos em cada país, verifique a lista completa com a [disponibilidade de meios de pagamento.](/developers/pt/docs/sales-processing/payment-methods)
 
 ## Colocando a mão na massa
 
@@ -110,5 +109,4 @@ Veja abaixo a disponibilidade dos nossos produtos por país e, então, leia a do
 | Mercado Pago Point | ✔ | ✔ | - | - | ✔ | - | - |
 
 ------------
-
-> Para detalhes dos meios de pagamento aceitos em cada país, verifique a lista completa com a [disponibilidade de meios de pagamento](/developers/pt/guides/additional-content/sales-processing/payment-methods.)
+> Para detalhes dos meios de pagamento aceitos em cada país, verifique a lista completa com a [disponibilidade de meios de pagamento.](/developers/pt/docs/sales-processing/payment-methods) 

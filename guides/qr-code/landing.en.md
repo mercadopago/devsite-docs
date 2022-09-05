@@ -10,8 +10,8 @@ content_section_with_media:
 >>>> Country availability <<<<
 ---
 available_countries: mla, mlb, mlm, mlu, mco, mlc, mpe
----
 
+---
 
 ----[mla, mlc, mlm, mco, mpe, mlu]----
 
@@ -62,7 +62,6 @@ bullet_section_with_media:
   - image: /qr/qr-minilanding-01.png
 ---
 
-
 --- mini_landing_separator ---
 
 >>>> QR Attended Model and QR Dynamic Model Differences <<<<
@@ -78,19 +77,22 @@ bullet_section_with_media:
 | Payment completion screen | ✔ | ✔  |
 | Refunds | ✔ | ✔ |
 
-<br>
-
 --- mini_landing_separator ---
 
 >>>> Available payment methods <<<<
 ----[mlb]----
+
 ---
 available_payments: credit, debit, mercadopago, pix, mercadocredito
+
 ---
 ------------
 
 ----[mla, mlm, mlu, mco, mlc, mpe]----
+
 ---
 available_payments: credit, debit, mercadopago, mercadocredito
+
 ---
 ------------
+> For details of accepted payment methods in each country, check the full list with [payment methods availability.](/developers/en/docs/sales-processing/payment-methods)

@@ -51,7 +51,7 @@ See below the availability of our products by platform in each country, then che
 | iSet | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 |
 | Yampi | - | 🇧🇷 |
 
-> For details of accepted payment methods in each country, check the full list with [payment methods availability](/developers/en/guides/additional-content/sales-processing/payment-methods.)
+> For details of accepted payment methods in each country, check the full list with [payment methods availability.](/developers/en/docs/sales-processing/payment-methods)
 
 ## Writing code lines
 
@@ -73,4 +73,4 @@ See below the availability of our products by country, then check out the docume
 | QR Code | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 | Mercado Pago Point | ✔ | ✔ | - | - | ✔ | - | - |
 
-> For details of accepted payment methods in each country, check the full list with [payment methods availability](/developers/en/guides/additional-content/sales-processing/payment-methods.)
+> For details of accepted payment methods in each country, check the full list with [payment methods availability.](/developers/en/docs/sales-processing/payment-methods) 

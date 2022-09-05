@@ -71,7 +71,7 @@ Vea a continuación la disponibilidad de nuestros productos por plataforma en ca
 
 ------------
 
-> Para obtener detalles sobre los medios de pago aceptados en cada país, consulte la lista completa con [disponibilidad de medios de pago](/developers/es/guides/additional-content/sales-processing/payment-methods.)
+> Para obtener detalles sobre los medios de pago aceptados en cada país, consulte la lista completa con [disponibilidad de medios de pago.](/developers/es/docs/sales-processing/payment-methods)
 
 ## Poniendo manos a la obra
 
@@ -111,4 +111,4 @@ Vea a continuación la disponibilidad de nuestros productos por país, luego lea
 
 ------------
 
-> Para obtener detalles sobre los medios de pago aceptados en cada país, consulte la lista completa con [disponibilidad de medios de pago](/developers/es/guides/additional-content/sales-processing/payment-methods.)
+> Para obtener detalles sobre los medios de pago aceptados en cada país, consulte la lista completa con [disponibilidad de medios de pago.](/developers/es/docs/sales-processing/payment-methods) 
