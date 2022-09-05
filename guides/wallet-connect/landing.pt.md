@@ -26,4 +26,3 @@ bullet_section_with_media:
  - benefit_title: Interface amigável
  - benefit_message: Interface simples, ágil e intuitiva. Em poucas etapas o comprador autoriza a utilização das informações de pagamento e conclui a transação.
 ---
-

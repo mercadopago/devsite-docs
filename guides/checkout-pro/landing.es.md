@@ -10,6 +10,7 @@ content_section_with_media:
 >>>> Disponibilidad por país <<<<
 ---
 available_countries: mla, mlb, mlm, mlu, mco, mlc, mpe
+
 ---
 
 ---
@@ -41,7 +42,9 @@ bullet_section_with_media:
 | Prevención del fraude                   | ✔ | ✔ |
 | Pantalla finalización del pago      | ✔ |   |
 | Pago con dos tarjetas            | ✔ |   |
+
 ------------
+
 ----[mlm, mlu, mco, mlc, mpe]----
 |    Beneficios                         | Checkout Pro | API |
 | :--- | :---: | :---: |
@@ -53,21 +56,25 @@ bullet_section_with_media:
 | Usuarios registrados     		| ✔ |   |
 | Prevención del fraude                   | ✔ | ✔ |
 | Pantalla finalización del pago      | ✔ |   |
-------------
 
-<br>
+------------
 
 --- mini_landing_separator ---
 
 >>>> Medios de pago aceptados <<<<
 ----[mlb]----
+
 ---
 available_payments: credit, debit, mercadopago, ticket, pix, pec
+
 ---
 ------------
 
 ----[mla, mlm, mlu, mco, mlc, mpe]----
+
 ---
 available_payments: credit, debit, mercadopago, ticket
+
 ---
 ------------
+> Para obtener detalles sobre los medios de pago aceptados en cada país, consulte la lista completa con [disponibilidad de medios de pago.](/developers/es/docs/sales-processing/payment-methods)

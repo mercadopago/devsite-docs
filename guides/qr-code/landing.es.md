@@ -10,6 +10,7 @@ content_section_with_media:
 >>>> Disponibilidad por país <<<<
 ---
 available_countries: mla, mlb, mlm, mlu, mco, mlc, mpe
+
 ---
 
 ----[mla, mlc, mlm, mco, mpe, mlu]----
@@ -61,7 +62,6 @@ bullet_section_with_media:
   - image: /qr/qr-minilanding-01.png
 ---
 
-
 --- mini_landing_separator ---
 
 >>>> Diferencias entre QR Modelo Atendido y QR Modelo Dinámico <<<<
@@ -83,13 +83,18 @@ bullet_section_with_media:
 
 >>>> Medios de pago aceptados <<<<
 ----[mlb]----
+
 ---
 available_payments: credit, debit, mercadopago, pix, mercadocredito
+
 ---
 ------------
 
 ----[mla, mlm, mlu, mco, mlc, mpe]----
+
 ---
 available_payments: credit, debit, mercadopago, mercadocredito
+
 ---
 ------------
+> Para obtener detalles sobre los medios de pago aceptados en cada país, consulte la lista completa con [disponibilidad de medios de pago.](/developers/es/docs/sales-processing/payment-methods)
