@@ -5,11 +5,11 @@ content_section_with_media:
  - media_video: https://www.youtube.com/embed/npvBT3qsbhU
 ---
 
-
 --- mini_landing_separator ---
 >>>>Disponibilidade por país <<<<
 ---
 available_countries: mla
+
 ---
 
 ---
@@ -40,4 +40,6 @@ bullet_section_with_media:
 >>>> Meios de pagamento aceitos <<<<
 ---
 available_payments: credit, debit, mercadopago
+
 ---
+> Para detalhes dos meios de pagamento aceitos em cada país, verifique a lista completa com a [disponibilidade de meios de pagamento.](/developers/pt/docs/sales-processing/payment-methods)
