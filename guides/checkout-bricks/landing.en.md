@@ -70,7 +70,6 @@ future_product_avaible:
  - card_pillText: NEW
 ---
 
-
 --- mini_landing_separator ---
 
 >>>> Availability by country <<<<
@@ -78,3 +77,4 @@ future_product_avaible:
 available_countries: mla, mlb, mlm, mlu, mlc, mco, mpe
 
 ---
+> For details of accepted payment methods in each country, check the full list with [payment methods availability.](/developers/en/docs/sales-processing/payment-methods)

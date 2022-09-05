@@ -77,3 +77,4 @@ future_product_avaible:
 available_countries: mla, mlb, mlm, mlu, mlc, mco, mpe
 
 ---
+> Para obtener detalles sobre los medios de pago aceptados en cada país, consulte la lista completa con [disponibilidad de medios de pago.](/developers/es/docs/sales-processing/payment-methods)
