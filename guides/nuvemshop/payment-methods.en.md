@@ -28,7 +28,7 @@ You also have the option to offer [interest-free installments](#bookmark_set_int
 2. In the item "Type of integration" change to the option "Purchase process on Mercado Pago site".
 ----[mlb]---- 
 3. Select which types of payment you want to offer at your checkout. These can be Credit Card, Boleto Bancario and PIX.
-4. Finally, click on "Save changes". ------------
+4. Finally, click on "Save changes".------------
 ----[mla, mlm, mlc, mlu, mpe, mco]----
 3. Finally, click on "Save changes". ------------
 <p>&nbsp;</p>
@@ -46,13 +46,7 @@ You also have the option to offer [interest-free installments](#bookmark_set_int
 
 ----[mlb]----
 ## Transparent Checkout
------------
 
-----[mla, mlm, mlc, mlu, mpe, mco]----
-## Checkout API
------------
-
-----[mlb]----
 It allows the **client to complete the purchase on your site**, without being redirected to another siteand making it possible to receive payments with credit card, boleto, Pix and Checkout Pro.
 
 > WARNING
@@ -60,19 +54,20 @@ It allows the **client to complete the purchase on your site**, without being re
 > Important
 >
 > To be able to offer Pix as a payment option, you will need a Pix key registered in the seller's account. This is unique data for account identification to use the payment method functionality.<br><br>
-> [Learn how to create a Pix key](https://www.mercadopago.com.br/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required)
-
+> [Learn how to create a Pix key](https://www.mercadopago.com.br/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required).
 ------------
 
 ----[mla, mlm, mlc, mlu, mpe, mco]----
+## Checkout API
+
 It allows the **client to complete the purchase on your site**, without being redirected, and receive payments by credit card and Checkout Pro.
------------
+------------
 
 
-1. Access the payment ----[mlb]---- [methods settings](https://lojavirtualnuvem.com.br/admin/payments/) ------------ ----[mla, mlm, mlc, mlu, mpe, mco]---- [methods settings](https://mitiendanube.com/admin/payments/) ------------ on your site menu, look for "Mercado Pago" and select "Edit".
+1. Access the payment ----[mlb]----[methods settings](https://lojavirtualnuvem.com.br/admin/payments/)------------ ----[mla, mlm, mlc, mlu, mpe, mco]----[methods settings](https://mitiendanube.com/admin/payments/)------------ on your site menu, look for "Mercado Pago" and select "Edit".
 2. In the item "Type of integration" change to the option "Purchase process without leaving the site".
 ----[mlb]----
-3. Select the payment options you want to offer in your site. These can be Credit Card, Boleto Bancario and PIX.
+3. Select the payment options you want to offer in your site. These can be Credit Card, Boleto Bancario and Pix.
 4. If you want to offer boleto bancario payments with a discount, enter the discount percentage in the "Discount for boleto barcario" field.
 5. Finally, click on "Save changes". ------------
 ----[mla, mlm, mlc, mlu, mpe, mco]----

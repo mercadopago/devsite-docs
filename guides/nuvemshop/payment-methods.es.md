@@ -14,8 +14,6 @@
 ------------
 
 ----[mla, mlm, mlc, mlu, mpe, mco]----
-## Checkout API
-
 **Elige cómo integrar Mercado Pago en tu tienda.** Puedes [recibir los pagos directamente en tu tienda](#bookmark_checkout_api) o cobrar a través del [sitio de Mercado Pago](#bookmark_checkout_pro). Solo es posible activar una de las dos opciones.
 ------------
 
@@ -28,7 +26,7 @@ También tienes la opción de ----[mlm]---- [ofrecer cuotas sin interés](#bookm
 1. Accede a las ----[mlb]----[configuraciones de medios de pago](https://lojavirtualnuvem.com.br/admin/payments/) ------------ ----[mla, mlm, mlc, mlu, mpe, mco]---- [configuraciones de medios de pago](https://mitiendanube.com/admin/payments/) ------------ en el menú de tu tienda, busca "Mercado Pago" y selecciona "Editar".
 2. En el ítem "Tipo de integración" cambia a la opción "Proceso de compra en el sitio de Mercado Pago".
 ----[mlb]----
-3. Selecciona las opciones de pago que deseas ofrecer en tu tienda. Estos pueden ser Tarjeta de crédito, Boleto Bancario y PIX.
+3. Selecciona las opciones de pago que deseas ofrecer en tu tienda. Estos pueden ser Tarjeta de crédito, Boleto Bancario y Pix.
 4. Finalmente, haz clic en "Guardar cambios". ------------
 ----[mla, mlm, mlc, mlu, mpe, mco]---- 
 3. Finalmente, haz clic en "Guardar cambios". ------------
@@ -66,7 +64,7 @@ Permite que el **cliente finalice la compra en tu tienda**, sin ser redirecciona
 1. Accede a las ----[mlb]---- [configuraciones de medios de pago](https://lojavirtualnuvem.com.br/admin/payments/) ------------ ----[mla, mlm, mlc, mlu, mpe, mco]---- [configuraciones de medios de pago](https://mitiendanube.com/admin/payments/) ------------ en el menú de tu tienda, busca "Mercado Pago" y selecciona "Editar".
 2. En el ítem "Tipo de integración" cambia a la opción "Proceso de compra sin dejar la tienda".
 ----[mlb]----
-3. Selecciona las opciones de pago que deseas ofrecer en tu tienda. Estas pueden ser Tarjeta de crédito, Boleto Bancario y PIX.
+3. Selecciona las opciones de pago que deseas ofrecer en tu tienda. Estas pueden ser Tarjeta de crédito, Boleto Bancario y Pix.
 4. Si deseas que el pago con boleto bancario tenga un descuento, introduce el porcentaje de descuento en el campo "Descuento por pagos con boleto bancario".
 5. Finalmente, haz clic en "Guardar cambios". ------------
 ----[mla, mlm, mlc, mlu, mpe, mco]---- 

@@ -19,7 +19,7 @@ Além disso, você pode [configurar parcelas sem juros](#bookmark_configurando_o
 
 1. Acesse as [configurações de meios de pagamentos](https://lojavirtualnuvem.com.br/admin/payments/), no painel de administração de sua loja, localize o "Mercado Pago" na lista de meios de pagamentos e clique em "Editar".
 2. No item "Tipo de integração" altere para "Processo de compra no site do Mercado Pago".
-3. Selecione quais os tipos de pagamento que deseja oferecer em seu checkout, sendo eles: Cartão de crédito, Boleto bancário e PIX.
+3. Selecione quais os tipos de pagamento que deseja oferecer em seu checkout, sendo eles: Cartão de crédito, Boleto bancário e Pix.
 4. Clique em "Salvar alterações".
 <p>&nbsp;</p>
 
