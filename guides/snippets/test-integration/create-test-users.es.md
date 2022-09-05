@@ -5,7 +5,7 @@ Para realizar la prueba, debes tener al menos dos cuentas:
 * **Vendedor**: cuenta requerida para **configurar la aplicación y las credenciales**. Esta es tu cuenta de usuario.
 * **Comprador**: cuenta necesaria para **probar el proceso de compra**.
 
-Además de estas cuentas, también es importante utilizar las [tarjetas de prueba](/developers/es/guides/additional-content/testing/test-cards) para probar la integración de pago y simular el proceso de compra, así como el **saldo en la cuenta de Mercado Pago del usuario de prueba**. Te mostramos más detalles a continuación.
+Además de estas cuentas, también es importante utilizar las [tarjetas de prueba](/developers/es/docs/testing/test-cards) para probar la integración de pago y simular el proceso de compra, así como el **saldo en la cuenta de Mercado Pago del usuario de prueba**. Te mostramos más detalles a continuación.
 
 ![testuser](test-user/create-test-users-es.png)
 
@@ -14,7 +14,7 @@ Para crear cuentas y probar cómo funcionan las integraciones, sigue los pasos a
 1. En el [Devsite](/developers/es/docs), accede al menú **Tus integraciones > Cuentas de prueba** y haz clic en el botón **Crear cuenta de prueba**.
 2. En la pantalla "Crear nueva cuenta", ingresa una descripción para la identificación de la cuenta. Ejemplo: "Vendedor - Tienda 1".
 3. Luego, selecciona el **país de operación** para la cuenta. Esta información **no se puede editar posteriormente** y, además, los usuarios Comprador y Vendedor deben ser del mismo país.
-4. Rellena una **cantidad de dinero ficticio** que te servirá de referencia para probar tus aplicaciones. Este monto aparecerá como saldo en la cuenta de Mercado Pago del usuario de prueba y podrá ser utilizado para simular pagos, así como con las [tarjetas de prueba](/developers/es/guides/additional-content/testing/test-cards).
+4. Rellena una **cantidad de dinero ficticio** que te servirá de referencia para probar tus aplicaciones. Este monto aparecerá como saldo en la cuenta de Mercado Pago del usuario de prueba y podrá ser utilizado para simular pagos, así como con las [tarjetas de prueba](/developers/es/docs/testing/test-cards).
 5. Haz clic en **Crear cuenta de prueba**.
 
 > WARNING
