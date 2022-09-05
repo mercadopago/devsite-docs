@@ -27,16 +27,19 @@ Com as credenciais em mãos, você pode integrar as soluções conectando às pl
 >
 > Se você não é desenvolvedor, recomendamos que você integre conectando as soluções de pagamento do Mercado Pago às mais de 80 plataformas de e-commerce nas quais estamos presentes.
 
+![Getting started](/images/getting-started/getting-started-diagram2-pt.png)
+
 ## Conectando às plataformas
 
 Integrar as soluções conectando à uma plataforma é simples e rápido. Todo processo é feito no painel de negócios do Mercado Pago e na própria plataforma. 
 
 Em poucos passos se tem uma loja online pronta para processar seus pagamentos sem a necessidade de configurações adicionais. 
 
-Veja abaixo a disponibilidade dos nossos produtos por plataforma em cada país e então leia a documentação da plataforma escolhida e integre.
+Veja abaixo a disponibilidade dos nossos produtos por plataforma em cada país e, então, leia a documentação da plataforma escolhida e integre.
 
 ----[mlb]----
-| - | Checkout Pro | Checkout Transparente |
+|  | Checkout Pro | Checkout Transparente |
+ :--- | :--- | :--- |
 | Shopify | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 | 🇧🇷 |
 | WooCommerce | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾| 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾|
 | Nuvemshop | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 | - |
@@ -52,7 +55,8 @@ Veja abaixo a disponibilidade dos nossos produtos por plataforma em cada país e
 ------------
 
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-| - | Checkout Pro | Checkout API |
+| | Checkout Pro | Checkout API |
+ :--- | :--- | :--- |
 | Shopify | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 | 🇧🇷 |
 | WooCommerce | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾| 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾|
 | Nuvemshop | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 | - |
@@ -67,7 +71,7 @@ Veja abaixo a disponibilidade dos nossos produtos por plataforma em cada país e
 
 ------------
 
-> Para detalhes dos meios de pagamento aceitos em cada país, verifique a lista completa com a [disponibilidade de meios de pagamento](/developers/guides/additional-content/sales-processing/payment-methods).
+> Para detalhes dos meios de pagamento aceitos em cada país, verifique a lista completa com a [disponibilidade de meios de pagamento](/developers/pt/guides/additional-content/sales-processing/payment-methods.)
 
 ## Colocando a mão na massa
 
@@ -75,10 +79,10 @@ Por outro lado, integrar as soluções colocando a mão na massa e escrevendo li
 
 Nesse caso, você pode integrar as soluções via SDK ou plugin e realizar as customizações via API REST ou SDK.
 
-Veja abaixo a disponibilidade dos nossos produtos por país e então leia a documentação do produto escolhido e integre.
+Veja abaixo a disponibilidade dos nossos produtos por país e, então, leia a documentação do produto escolhido e integre.
 
 ----[mlb]----
-| - | 🇦🇷 <br> Argentina | 🇧🇷 <br> Brasil | 🇨🇱 <br> Chile | 🇨🇴 <br> Colômbia | 🇲🇽 <br> México | 🇵🇪 <br> Peru | 🇺🇾 <br> Uruguai |
+|  | 🇦🇷 <br> Argentina | 🇧🇷 <br> Brasil | 🇨🇱 <br> Chile | 🇨🇴 <br> Colômbia | 🇲🇽 <br> México | 🇵🇪 <br> Peru | 🇺🇾 <br> Uruguai |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Checkout Pro | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 | Checkout Transparente | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
@@ -93,7 +97,7 @@ Veja abaixo a disponibilidade dos nossos produtos por país e então leia a docu
 ------------
 
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-| - | 🇦🇷 <br> Argentina | 🇧🇷 <br> Brasil | 🇨🇱 <br> Chile | 🇨🇴 <br> Colômbia | 🇲🇽 <br> México | 🇵🇪 <br> Peru | 🇺🇾 <br> Uruguai |
+|  | 🇦🇷 <br> Argentina | 🇧🇷 <br> Brasil | 🇨🇱 <br> Chile | 🇨🇴 <br> Colômbia | 🇲🇽 <br> México | 🇵🇪 <br> Peru | 🇺🇾 <br> Uruguai |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Checkout Pro | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 | Checkout API | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
@@ -107,7 +111,4 @@ Veja abaixo a disponibilidade dos nossos produtos por país e então leia a docu
 
 ------------
 
-> Para detalhes dos meios de pagamento aceitos em cada país, verifique a lista completa com a [disponibilidade de meios de pagamento](/developers/guides/additional-content/sales-processing/payment-methods).
-
-![Getting started](/images/getting-started/getting-started-diagram2-pt.png)
-
+> Para detalhes dos meios de pagamento aceitos em cada país, verifique a lista completa com a [disponibilidade de meios de pagamento](/developers/pt/guides/additional-content/sales-processing/payment-methods.)
