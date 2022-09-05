@@ -36,38 +36,38 @@ Em poucos passos se tem uma loja online pronta para processar seus pagamentos se
 Veja abaixo a disponibilidade dos nossos produtos por plataforma em cada país e então leia a documentação da plataforma escolhida e integre.
 
 ----[mlb]----
-| :---  | Checkout Pro | Checkout Transparente |
-| Shopify | - | - |
-| WooCommerce | - | - |
-| Shopify | - | - |
-| Nuvemshop | - | - |
-| VTEX| - | - |
-| Loja Integrada | - | - |
-| Prestashop | - | - |
-| Wix | - | - |
-| Linx Commerce | - | - |
-| Magento 2 | - | - |
-| iSet | - | - |
+| - | Checkout Pro | Checkout Transparente |
+| Shopify | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 | 🇧🇷 |
+| WooCommerce | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾| 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾|
+| Nuvemshop | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 | - |
+| VTEX| 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 |
+| Loja Integrada | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 |
+| Prestashop | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 |
+| Wix | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 |
+| Linx Commerce | - | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 |
+| Magento 2 | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 |
+| iSet | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 |
+| Yampi | - | 🇧🇷 |
 
 ------------
 
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-| :---  | Checkout Pro | Checkout Transparente |
-| Shopify | - | - |
-| WooCommerce | - | - |
-| Shopify | - | - |
-| Nuvemshop | - | - |
-| VTEX| - | - |
-| Loja Integrada | - | - |
-| Prestashop | - | - |
-| Wix | - | - |
-| Linx Commerce | - | - |
-| Magento 2 | - | - |
-| iSet | - | - |
+| - | Checkout Pro | Checkout API |
+| Shopify | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 | 🇧🇷 |
+| WooCommerce | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾| 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾|
+| Nuvemshop | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 | - |
+| VTEX| 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 |
+| Loja Integrada | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 |
+| Prestashop | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 |
+| Wix | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 |
+| Linx Commerce | - | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 |
+| Magento 2 | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 |
+| iSet | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 |
+| Yampi | - | 🇧🇷 |
 
 ------------
 
-> Para detalhes dos meios de pagamento aceitos em cada país, verifique a lista completa com a [disponibilidade de meios de pagamento.]()
+> Para detalhes dos meios de pagamento aceitos em cada país, verifique a lista completa com a [disponibilidade de meios de pagamento](/developers/guides/additional-content/sales-processing/payment-methods).
 
 ## Colocando a mão na massa
 
@@ -75,10 +75,10 @@ Por outro lado, integrar as soluções colocando a mão na massa e escrevendo li
 
 Nesse caso, você pode integrar as soluções via SDK ou plugin e realizar as customizações via API REST ou SDK.
 
-Veja abaixo a disponibilidade dos nossos produtos país e então leia a documentação do produto escolhido e integre.
+Veja abaixo a disponibilidade dos nossos produtos por país e então leia a documentação do produto escolhido e integre.
 
 ----[mlb]----
-| :---  | 🇦🇷 <br> Argentina | :flag-br: <br> Brasil | <br> Chile | <br> Colômbia | <br> México | <br> Peru | <br> Uruguai |
+| - | 🇦🇷 <br> Argentina | 🇧🇷 <br> Brasil | 🇨🇱 <br> Chile | 🇨🇴 <br> Colômbia | 🇲🇽 <br> México | 🇵🇪 <br> Peru | 🇺🇾 <br> Uruguai |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Checkout Pro | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 | Checkout Transparente | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
@@ -93,10 +93,10 @@ Veja abaixo a disponibilidade dos nossos produtos país e então leia a document
 ------------
 
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-| :---  | 🇦🇷 <br> Argentina | :flag-br: <br> Brasil | <br> Chile | <br> Colômbia | <br> México | <br> Peru | <br> Uruguai |
+| - | 🇦🇷 <br> Argentina | 🇧🇷 <br> Brasil | 🇨🇱 <br> Chile | 🇨🇴 <br> Colômbia | 🇲🇽 <br> México | 🇵🇪 <br> Peru | 🇺🇾 <br> Uruguai |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Checkout Pro | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-| Checkout Transparente | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| Checkout API | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 | Checkout Bricks | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 | Link de Pagamento | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 | Assinaturas | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
@@ -107,7 +107,7 @@ Veja abaixo a disponibilidade dos nossos produtos país e então leia a document
 
 ------------
 
-> Para detalhes dos meios de pagamento aceitos em cada país, verifique a lista completa com a [disponibilidade de meios de pagamento.]()
+> Para detalhes dos meios de pagamento aceitos em cada país, verifique a lista completa com a [disponibilidade de meios de pagamento](/developers/guides/additional-content/sales-processing/payment-methods).
 
 ![Getting started](/images/getting-started/getting-started-diagram2-pt.png)
 
