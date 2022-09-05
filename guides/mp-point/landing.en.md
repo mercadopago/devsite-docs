@@ -10,7 +10,9 @@ content_section_with_media:
 >>>> Disponibilidade por país<<<<
 ---
 available_countries: mla, mlb, mlm
+
 ---
+
 ---
 bullet_section_with_media: 
  - title: Benefits
@@ -46,6 +48,7 @@ bullet_section_with_media:
 
 
 ----[mlb]----
+
 ---
 bullet_section_with_media: 
  - title: Available devices
@@ -64,6 +67,7 @@ bullet_section_with_media:
 ------------
 
 ----[mlm]----
+
 ---
 bullet_section_with_media: 
  - title: Available devices
@@ -77,3 +81,4 @@ bullet_section_with_media:
 ---
 
 ------------
+> For details of accepted payment methods in each country, check the full list with [payment methods availability.](/developers/en/docs/sales-processing/payment-methods)
