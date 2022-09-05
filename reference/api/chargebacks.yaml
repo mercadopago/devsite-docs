@@ -633,7 +633,6 @@ paths:
                       - 2000--Payment-not-found-- Payment_id does not exist
                       - 2024--Payment-too-old-to-be-refunded
                       - 2032--Refund-not-found-- X-Idempontency-key already used
-                      - 2028--POST-to-Gateway-Refund-API-fail-
                       - 3012--Invalid parameter security_code_length
                       - 3024--Not valid action - partial refund unsupported for this transaction
                       - 4211--Charge-detail-can't-be-null-or-empty-- Triggered when empty or null is sent in the charge_details field
