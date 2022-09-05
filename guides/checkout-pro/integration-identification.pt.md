@@ -1,6 +1,6 @@
 # Métricas de integração
 
-Os membros certificados do [&lt;dev>program](https://www.mercadopago.com.br/developers/pt/developer-program) podem identificar suas integrações do Checkout Pro para ter acesso aos [benefícios do programa](https://www.mercadopago.com.br/developers/pt/developer-program#dev-program-benefits). 
+Os membros certificados do [&lt;dev>program](https://www.mercadopago.com/developers/pt/developer-program) podem identificar suas integrações do Checkout Pro para ter acesso aos [benefícios do programa](https://www.mercadopago.com/developers/pt/developer-program#dev-program-benefits). 
 
 Para trabalhar com métricas, utilize _headers_ na sua preferência de pagamento, agregando o código de identificação de acordo com o cenário desejado (não é obrigatório completar os três campos mencionados abaixo): 
 
@@ -11,7 +11,7 @@ Para trabalhar com métricas, utilize _headers_ na sua preferência de pagamento
 | `x-corporation-id` | Corporações | Para contas associadas a uma conta vendedor ou a um grupo econômico. |
 
 
-Para identificar suas integrações, envie o parâmetro `integrator_id` ao endpoint [/checkout/preferences.](/developers/pt/reference/preferences/_checkout_preferences/post) e execute a requisição ou, se preferir, utilize um dos códigos disponíveis abaixo.
+Para identificar suas integrações, envie o parâmetro `integrator_id` ao endpoint [/checkout/preferences](/developers/pt/reference/preferences/_checkout_preferences/post) e execute a requisição ou, se preferir, utilize um dos códigos disponíveis abaixo.
 
 [[[
 ```php
