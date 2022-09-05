@@ -33,15 +33,81 @@ Integrar as soluções conectando à uma plataforma é simples e rápido. Todo p
 
 Em poucos passos se tem uma loja online pronta para processar seus pagamentos sem a necessidade de configurações adicionais. 
 
-> Veja a documentação da plataforma escolhida e integre.
+Veja abaixo a disponibilidade dos nossos produtos por plataforma em cada país e então leia a documentação da plataforma escolhida e integre.
+
+----[mlb]----
+| :---  | Checkout Pro | Checkout Transparente |
+| Shopify | - | - |
+| WooCommerce | - | - |
+| Shopify | - | - |
+| Nuvemshop | - | - |
+| VTEX| - | - |
+| Loja Integrada | - | - |
+| Prestashop | - | - |
+| Wix | - | - |
+| Linx Commerce | - | - |
+| Magento 2 | - | - |
+| iSet | - | - |
+
+------------
+
+----[mla, mlm, mpe, mco, mlu, mlc]----
+| :---  | Checkout Pro | Checkout Transparente |
+| Shopify | - | - |
+| WooCommerce | - | - |
+| Shopify | - | - |
+| Nuvemshop | - | - |
+| VTEX| - | - |
+| Loja Integrada | - | - |
+| Prestashop | - | - |
+| Wix | - | - |
+| Linx Commerce | - | - |
+| Magento 2 | - | - |
+| iSet | - | - |
+
+------------
+
+> Para detalhes dos meios de pagamento aceitos em cada país, verifique a lista completa com a [disponibilidade de meios de pagamento.]()
 
 ## Colocando a mão na massa
 
-Por outro lado, integrar as soluções colocando a mão na massa e escrevendo linhas de código garante uma flexibilidade maior no que tange a customização da forma de operação da loja. 
+Por outro lado, integrar as soluções colocando a mão na massa e escrevendo linhas de código garante uma flexibilidade maior no que tange a customização da forma de operação da loja.
 
-Nesse caso, você pode integrar as soluções via SDK ou plugin e realizar as customizações via API REST ou SDK. 
+Nesse caso, você pode integrar as soluções via SDK ou plugin e realizar as customizações via API REST ou SDK.
 
-> Veja a documentação da solução escolhida e integre.
+Veja abaixo a disponibilidade dos nossos produtos país e então leia a documentação do produto escolhido e integre.
+
+----[mlb]----
+| :---  | 🇦🇷 <br> Argentina | :flag-br: <br> Brasil | <br> Chile | <br> Colômbia | <br> México | <br> Peru | <br> Uruguai |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Checkout Pro | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| Checkout Transparente | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| Checkout Bricks | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| Link de Pagamento | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| Assinaturas | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| Wallet Connect | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| Mercado Pago Delivery | ✔ | - | - | - | - | - | - |
+| Código QR | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| Mercado Pago Point | ✔ | ✔ | - | - | ✔ | - | - |
+
+------------
+
+----[mla, mlm, mpe, mco, mlu, mlc]----
+| :---  | 🇦🇷 <br> Argentina | :flag-br: <br> Brasil | <br> Chile | <br> Colômbia | <br> México | <br> Peru | <br> Uruguai |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Checkout Pro | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| Checkout Transparente | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| Checkout Bricks | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| Link de Pagamento | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| Assinaturas | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| Wallet Connect | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| Mercado Pago Delivery | ✔ | - | - | - | - | - | - |
+| Código QR | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| Mercado Pago Point | ✔ | ✔ | - | - | ✔ | - | - |
+
+------------
+
+> Para detalhes dos meios de pagamento aceitos em cada país, verifique a lista completa com a [disponibilidade de meios de pagamento.]()
 
 ![Getting started](/images/getting-started/getting-started-diagram2-pt.png)
 
