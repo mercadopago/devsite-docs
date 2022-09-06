@@ -6,7 +6,7 @@ Ao final do processo de pagamento, é possível redirecionar o comprador novamen
 >
 > Importante
 >
-> Caso queira que o redirecionamento para os pagamentos aprovados seja automático, sem a renderização de um botão de retorno, é preciso adicionar também o atributo `auto_return` com valor `approved`. Além disso, o atributo `auto_return` só funciona para o modo redirect e mobile do Checkout Pro. O mesmo não funciona no modo modal, já que nesse último o comprador segue no site durante todo o processo de pagamento.
+> Caso queira que o redirecionamento para os pagamentos aprovados seja automático, sem a renderização de um botão de retorno, é preciso adicionar também o atributo `auto_return` com valor `approved`. Além disso, o atributo `auto_return` só funciona para o modo **redirect** e **mobile** do Checkout Pro. O mesmo não funciona no modo modal, já que nesse último o comprador segue no site durante todo o processo de pagamento.
 
 Nas tabelas a seguir você encontra o detalhe de cada um dos possíveis parâmetros de requisição e de resposta.
 
@@ -20,7 +20,7 @@ Através das `back_urls`, serão retornados os seguintes parâmetros:
 | Parâmetro |	Descrição |
 | --- | --- | 
 | `payment_id` | ID (identificador) do pagamento do Mercado Pago. |
-| `status` | Estado do pagamento. Ex.: `approved` para um pagamento aprovado ou `pending` para um pagamento pendente. |
+| `status` | Status do pagamento. Ex.: `approved` para um pagamento aprovado ou `pending` para um pagamento pendente. |
 | `external_reference` | Valor enviado no momento da criação da preferência de pagamento. |
 | `merchant_order_id` | ID (identificador) da ordem de pagamento gerada no Mercado Pago. |
 

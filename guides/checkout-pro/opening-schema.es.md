@@ -6,6 +6,7 @@ Sin embargo, es posible personalizar la apertura y definir el modelo **Redirect*
 
 Para definir el modelo de apertura de **redirect**, agrega el siguiente código HTML directamente en su proyecto informando el `init_point` de la preferencia generada previamente.
 
+
 [[[
 ```html
 <!doctype html>
@@ -16,7 +17,7 @@ Para definir el modelo de apertura de **redirect**, agrega el siguiente código 
   <body>
     <a href="YOUR_INIT_POINT"> // Indica el ID de la preferencia
     <button>
-      Pagar com Mercado Pago
+      Pagar con Mercado Pago
     </button>
     
 </a>
