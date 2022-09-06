@@ -29,7 +29,6 @@ require __DIR__ .  '/vendor/autoload.php';
 MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
 ?>
 ```
-
 ```node
 // SDK de Mercado Pago
 const mercadopago = require("mercadopago");
@@ -38,28 +37,24 @@ mercadopago.configure({
   access_token: "PROD_ACCESS_TOKEN",
 });
 ```
-
 ```java
 // SDK de Mercado Pago
 import com.mercadopago.MercadoPagoConfig;
 // Agrega credenciales
 MercadoPagoConfig.setAccessToken("PROD_ACCESS_TOKEN");
 ```
-
 ```ruby
 # SDK de Mercado Pago
 require 'mercadopago'
 # Agrega credenciales
 sdk = Mercadopago::SDK.new('PROD_ACCESS_TOKEN')
 ```
-
 ```csharp
 // SDK de Mercado Pago
  using MercadoPago.Config;
  // Agrega credenciales
 MercadoPagoConfig.AccessToken = "PROD_ACCESS_TOKEN";
 ```
-
 ```python
 # SDK de Mercado Pago
 import mercadopago
@@ -87,29 +82,33 @@ $preference->items = array($item);
 $preference->save();
 ?>
 ```
-
 ```node
-// Crea un objeto de preferencia
+// Crear un objeto de preferencia
 let preference = {
-  items: [
-    {
-      title: "Mi producto",
-      unit_price: 100,
-      quantity: 1,
-    },
-  ],
+ "items": [
+   {
+     "id": "item-ID-1234",
+     "title": "Meu produto",
+     "quantity": 1,
+     "unit_price": 75.76
+   }
+ ],
+ "back_urls": {
+     "success": "https://www.success.com",
+     "failure": "http://www.failure.com",
+     "pending": "http://www.pending.com"
+ },
+ "auto_return": "approved",
 };
-
-mercadopago.preferences
-  .create(preference)
-  .then(function (response) {
-    // En esta instancia deberás asignar el valor dentro de response.body.id por el ID de preferencia solicitado en el siguiente paso
-  })
-  .catch(function (error) {
-    console.log(error);
-  });
+ 
+mercadopago.preferences.create(preference)
+.then(function(response){
+// Este valor es el ID de preferencia que se enviará al ladrillo al inicio
+ const preferenceId = response.body.id;
+}).catch(function(error){
+ console.log(error);
+});
 ```
-
 ```java
 // Crea un objeto de preferencia
 PreferenceClient client = new PreferenceClient();
@@ -128,7 +127,6 @@ PreferenceRequest request = PreferenceRequest.builder().items(items).build();
 
 client.create(request);
 ```
-
 ```ruby
 # Crea un objeto de preferencia
 preference_data = {
@@ -146,7 +144,6 @@ preference = preference_response[:response]
 # Este valor reemplazará el string "<%= @preference_id %>" en tu HTML
 @preference_id = preference['id']
 ```
-
 ```csharp
 // Crea el objeto de request de la preference
 var request = new PreferenceRequest
@@ -167,7 +164,6 @@ var request = new PreferenceRequest
 var client = new PreferenceClient();
 Preference preference = await client.CreateAsync(request);
 ```
-
 ```python
 # Crea un ítem en la preferencia
 preference_data = {
@@ -183,7 +179,6 @@ preference_data = {
 preference_response = sdk.preference().create(preference_data)
 preference = preference_response["response"]
 ```
-
 ```curl
 curl -X POST \
   'https://api.mercadopago.com/checkout/preferences' \
@@ -221,7 +216,6 @@ $preference->items = array($item);
 $preference->save();
 ?>
 ```
-
 ```node
 // Crea un objeto de preferencia
 let preference = {
@@ -244,7 +238,6 @@ mercadopago.preferences
     console.log(error);
   });
 ```
-
 ```java
 // Crea un objeto de preferencia
 Preference preference = new Preference();
@@ -257,7 +250,6 @@ item.setTitle("Mi producto")
 preference.appendItem(item);
 preference.save();
 ```
-
 ```ruby
 # Crea un objeto de preferencia
 preference_data = {
@@ -275,7 +267,6 @@ preference = preference_response[:response]
 # Este valor reemplazará el string "<%= @preference_id %>" en tu HTML
 @preference_id = preference['id']
 ```
-
 ```csharp
 // Crea el objeto de request de la preference
 var request = new PreferenceRequest
@@ -296,7 +287,6 @@ var request = new PreferenceRequest
 var client = new PreferenceClient();
 Preference preference = await client.CreateAsync(request);
 ```
-
 ```python
 # Crea un ítem en la preferencia
 preference_data = {
@@ -312,7 +302,6 @@ preference_data = {
 preference_response = sdk.preference().create(preference_data)
 preference = preference_response["response"]
 ```
-
 ```curl
 curl -X POST \
   'https://api.mercadopago.com/checkout/preferences' \

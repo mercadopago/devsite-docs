@@ -14,9 +14,9 @@ Ten en cuenta que para que este paso funcione es necesario que configures tu [cl
 >
 > Importante
 > 
-> Antes de realizar la llamada a la API, es importante validar que los datos que se enviarán sean correctos. Entonces, si ya tiene algún tipo de sesión en su servidor de integración donde se almacena la información de contexto de compra, puede usarla para comparar los datos recibidos desde el frontend.
->
-> Los pagos con **Carteira Mercado Pago** no necesitan ser enviados a través del backend. Si el usuario selecciona esta opción como medio de pago, el `preferenceId` enviado en la inicialización del brick es el encargado de redirigir al comprador al sitio web de Mercado Pago, donde el pago se realizará directamente en nuestro sitio. Para redirigir al comprador a tu sitio, puede configurar `back_urls` como se describe [en este artículo](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/preferences#bookmark_redirigir_al_comprador_a_tu_sitio_web)
+> Antes de realizar la llamada a la API, es importante validar que los datos que se enviarán sean correctos. Entonces, si ya tiene algún tipo de sesión en su servidor de integración donde se almacena la información de contexto de compra, puede usarla para comparar los datos recibidos desde el frontend. <br/></br>
+> <br/></br>
+> Los pagos con **Carteira Mercado Pago** no necesitan ser enviados a través del backend. Si el usuario selecciona esta opción como medio de pago, el `preferenceId` enviado en la inicialización del brick es el encargado de redirigir al comprador al sitio web de Mercado Pago, donde el pago se realizará directamente en nuestro sitio. Para redirigir al comprador a tu sitio, puede configurar `back_urls` como se describe [en este artículo.](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/preferences#bookmark_redirigir_al_comprador_a_tu_sitio_web)
 
 [[[
 ```php

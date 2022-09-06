@@ -85,21 +85,28 @@ $preference->save();
 ```node
 // Create a preference object
 let preference = {
-  items: [
-    {
-      title: 'My Item',
-      unit_price: 100,
-      quantity: 1,
-    }
-  ]
+ "items": [
+   {
+     "id": "item-ID-1234",
+     "title": "Meu produto",
+     "quantity": 1,
+     "unit_price": 75.76
+   }
+ ],
+ "back_urls": {
+     "success": "https://www.success.com",
+     "failure": "http://www.failure.com",
+     "pending": "http://www.pending.com"
+ },
+ "auto_return": "approved",
 };
-
+ 
 mercadopago.preferences.create(preference)
 .then(function(response){
-// This value replaces the String "<%= global.id %>" in your HTML
-  global.id = response.body.id;
+// This value is the preferenceId that will be sent to the brick at startup
+ const preferenceId = response.body.id;
 }).catch(function(error){
-  console.log(error);
+ console.log(error);
 });
 ```
 ```java

@@ -85,21 +85,28 @@ $preference->save();
 ```node
 // Cria um objeto de preferência
 let preference = {
-  items: [
-    {
-      title: 'Meu produto',
-      unit_price: 100,
-      quantity: 1,
-    }
-  ]
+ "items": [
+   {
+     "id": "item-ID-1234",
+     "title": "Meu produto",
+     "quantity": 1,
+     "unit_price": 75.76
+   }
+ ],
+ "back_urls": {
+     "success": "https://www.success.com",
+     "failure": "http://www.failure.com",
+     "pending": "http://www.pending.com"
+ },
+ "auto_return": "approved",
 };
-
+ 
 mercadopago.preferences.create(preference)
 .then(function(response){
-// Este valor substituirá a string "<%= global.id %>" no seu HTML
-  global.id = response.body.id;
+// Este valor é o preferenceId que será enviado para o brick na inicialização
+ const preferenceId = response.body.id;
 }).catch(function(error){
-  console.log(error);
+ console.log(error);
 });
 ```
 ```java
@@ -212,22 +219,22 @@ $preference->save();
 ```node
 // Cria um objeto de preferência
 let preference = {
-  items: [
-    {
-      title: 'Meu produto',
-      unit_price: 100,
-      quantity: 1,
-    }
-  ]
+ items: [
+   {
+     title: 'Meu produto',
+     unit_price: 100,
+     quantity: 1,
+   }
+ ]
 };
-
+ 
 mercadopago.preferences.create(preference)
-.then(function(response){
-// Este valor substituirá a string "<%= global.id %>" no seu HTML
-  global.id = response.body.id;
-}).catch(function(error){
-  console.log(error);
-});
+ .then(function(response){
+   // Este valor é o preferenceId que será enviado para o brick na inicialização
+   const preferenceId = response.body.id;
+ }).catch(function(error){
+   console.log(error);
+ });
 ```
 ```java
 // Cria um objeto de preferência
