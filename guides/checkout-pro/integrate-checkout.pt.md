@@ -396,6 +396,11 @@ A instalação é feita em **duas etapas**: incluindo o SDK do Mercado Pago ao p
 ```
 ]]]
 
+> NOTE
+>
+> Importante
+>
+> Lembre-se de substituir o valor `BR` por seu país no campo `locale`.
 
 No exemplo acima, um botão de pagamento será renderizado e ficará responsável por abrir o Checkout Pro. Caso queira personalizar a forma como o checkout será aberto, veja a seção [Esquema de abertura](/developers/pt/docs/checkout-pro/checkout-customization/user-interface/opening-schema)
 

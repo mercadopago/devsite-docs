@@ -11,7 +11,7 @@ Para trabalhar com métricas, utilize _headers_ na sua preferência de pagamento
 | `x-corporation-id` | Corporações | Para contas associadas a uma conta vendedor ou a um grupo econômico. |
 
 
-Para identificar suas integrações, envie o parâmetro `integrator_id` ao endpoint [/checkout/preferences](/developers/pt/reference/preferences/_checkout_preferences/post) e execute a requisição ou, se preferir, utilize um dos códigos disponíveis abaixo.
+Para identificar suas integrações, envie o parâmetro `integrator_id` com as informações necessárias ao endpoint [/checkout/preferences](/developers/pt/reference/preferences/_checkout_preferences/post) e execute a requisição ou, se preferir, utilize um dos códigos disponíveis abaixo.
 
 [[[
 ```php

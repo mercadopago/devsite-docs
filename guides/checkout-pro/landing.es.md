@@ -25,7 +25,7 @@ bullet_section_with_media:
  - title: Ventajas
  - type: reverse
  - message: Además de contar con el principal medio de pago del país, Checkout Pro cuenta con una experiencia de compra adaptada accesible desde cualquier dispositivo.
- - image: /cow/cho-pro-landing__es.png
+ - image: /cow/cho-pro-landing__pt.png
  - benefit_title: compras con un solo clic
  - benefit_message: Al realizar el pago con una cuenta de Mercado Pago, el comprador puede realizar el pago utilizando el saldo de su cuenta o simplemente informando el código de seguridad de una de las tarjetas guardadas.
  - benefit_title: Usuarios invitados

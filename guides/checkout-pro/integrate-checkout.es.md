@@ -8,7 +8,7 @@ En esta documentación encontrarás todos los pasos necesarios para integrar Che
 > También es posible realizar la integración a través de llamadas a través del backend directamente a la [API de preferencias](/developers/es/reference/preferences/_checkout_preferences/post). En esta opción, obtendrá el enlace de Checkout Pro en el atributo `init_point`, en la respuesta del request de la API. A partir de ahí, solo utilícelo para redirigir al comprador a la caja.
 
 
-## Instalar Mercado Pago SDK
+## Instalar SDK de Mercado Pago
 
 El primer paso para integrar Checkout Pro es instalar el SDK de Mercado Pago en tu proyecto. Para hacer esto, use uno de los códigos disponibles a continuación.
 
@@ -415,9 +415,9 @@ La instalación se realiza en **dos pasos**: agregar el SDK de Mercado Pago al p
 
 > NOTE
 >
-> Nota
+> Importante
 >
-> Recuerda reemplazar el valor **AR** por tu pais en el campo `locale`.
+> Recuerda reemplazar el valor `AR` por tu pais en el campo `locale`.
 
 
 En el ejemplo anterior, se mostrará un botón de pago y será responsable por abrir el Checkout Pro. Si desea personalizar la forma en que se abrirá el Checkout, consulte la sección [Esquema de apertura](/developers/es/docs/checkout-pro/checkout-customization/user-interface/opening-schema)

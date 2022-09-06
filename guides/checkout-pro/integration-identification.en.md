@@ -11,7 +11,7 @@ To work with metrics, use _headers_ in your payment preference, adding the ident
 | `x-corporation-id` | Corporations | For accounts associated with a seller account or an economic group. |
 
 
-To identify your integrations, send the `integrator_id` parameter to the endpoint [/checkout/preferences](/developers/en/reference/preferences/_checkout_preferences/post) and execute the request or, if you prefer, use one of the codes available below.
+To identify your integrations, send the `integrator_id` parameter with the necessary information to the endpoint [/checkout/preferences](/developers/en/reference/preferences/_checkout_preferences/post) and execute the request or, if you prefer, use one of the codes available below.
 
 [[[
 ```php

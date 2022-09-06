@@ -24,7 +24,7 @@ Siga los pasos a continuación para configurar el Monedero de Mercado Pago como 
 
 Si es un usuario y desea que todos sus pagos se realicen a través de Wallet, puede determinarlo a través de un atributo en la llamada a la API de preferencias.
 
-Para eso, envíe un **POST** con el parámetro `purpose` y el valor `wallet_purchase` al endpoint [/checkout/preferences](/developers/es/reference/preferences/_checkout_preferences/post) y ejecute el request o , si lo prefiere, use uno de los SDK a continuación.
+Para eso, envíe un **POST** con el parámetro `purpose` y el valor `wallet_purchase` al endpoint [/checkout/preferences](/developers/es/reference/preferences/_checkout_preferences/post) y ejecute el request o, si lo prefiere, use uno de los SDK a continuación.
 
 
 
@@ -193,7 +193,7 @@ curl -X POST \
 > Añadir checkout
 
 
-Con la preferencia creada, se debe exhibir el botón de pago que permitirá al comprador utilizar la billetera de Mercado Pago para pagar. Para exhibir el botón de pago, utiliza uno de los SDKs disponibles a continuación.
+Con la preferencia creada, se debe exhibir el botón de pago que permitirá al comprador utilizar la billetera de Mercado Pago para pagar. Para exhibir el botón de pago, utiliza el HTML disponible a continuación.
 
 
 
@@ -222,4 +222,4 @@ Con la preferencia creada, se debe exhibir el botón de pago que permitirá al c
 >
 > Importante
 >
-> Al crear un pago es posible recibir 3 estados diferentes: `Pendiente`, `Rechazado` y `Aprobado`. Para mantenerse al día con las actualizaciones, debe configurar su sistema para recibir notificaciones de pago y otras actualizaciones de estado. Consulte [Notificaciones](/developers/es/docs/checkout-api/additional-content/notifications/introduction) para obtener más detalles.
+> Al crear un pago es posible recibir 3 estados diferentes: `Pendiente`, `Rechazado` y `Aprobado`. Para mantenerse al día con las actualizaciones, debe configurar su sistema para recibir notificaciones de pago y otras actualizaciones de estado. Consulte [Notificaciones](/developers/es/docs/checkout-pro/additional-content/notifications/Introduction) para obtener más detalles.

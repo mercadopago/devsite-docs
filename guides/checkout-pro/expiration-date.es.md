@@ -9,7 +9,7 @@ La fecha de vencimiento es el período máximo definido para realizar un pago. C
 > El período de compensación es de 1 a 2 días hábiles según el medio de pago elegido. Por lo tanto, recomendamos establecer la fecha de vencimiento con al menos 3 días de diferencia para garantizar que se realice el pago. Además, si el pago se realiza después de la fecha de vencimiento, el monto se devolverá a la cuenta de Mercado Pago del pagador.
 
 
-Para cambiar la fecha de vencimiento, envía un **POST** con el parámetro `date_of_expiration` con la fecha y hora del vencimiento del ítem al endpoint [/checkout/preferences](/developers/es/reference/preferences/_checkout_preferences/post) y ejecuta la solicitud.
+Para cambiar la fecha de vencimiento, envía un **POST** con el parámetro `date_of_expiration` con la fecha y hora del vencimiento del ítem al endpoint [/checkout/preferences](/developers/es/reference/preferences/_checkout_preferences/post) y ejecuta el request.
 
 
 [[[

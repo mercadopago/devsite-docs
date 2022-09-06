@@ -1,6 +1,6 @@
 # Métricas de integración
 
-Los miembros certificados del [&lt;dev>programa](https://www.mercadopago.com/developers/en/developer-program) pueden identificar sus integraciones de Checkout Pro para acceder a los [beneficios del programa](https :/ /www.mercadopago.com/developers/pt/developer-program#dev-program-benefits).
+Los miembros certificados del [&lt;dev>programa](https://www.mercadopago.com/developers/en/developer-program) pueden identificar sus integraciones de Checkout Pro para acceder a los [beneficios del programa](https://www.mercadopago.com/developers/pt/developer-program#dev-program-benefits).
 
 Para trabajar con métricas, utilice _headers_ en su preferencia de pago, agregando el código de identificación según el escenario deseado (no es obligatorio completar los tres campos que se mencionan a continuación).
 
@@ -10,7 +10,7 @@ Para trabajar con métricas, utilice _headers_ en su preferencia de pago, agrega
 | `x-platform-id` | Plataforma | Para las plataformas o módulos que ofrecen Mercado Pago en sus soluciones. |
 | `x-corporation-id` | Corporaciones | Para cuentas asociadas a una cuenta vendedor o grupo económico. |
 
-Para identificar tus integraciones, envía el parámetro `integrator_id` al endpoint [/checkout/preferences.](/developers/es/reference/preferences/_checkout_preferences/post) y ejecuta el request o, si lo prefieres, utiliza uno de los códigos disponible a continuación.
+Para identificar tus integraciones, envía el parámetro `integrator_id` con las informaciones necesarias al endpoint [/checkout/preferences.](/developers/es/reference/preferences/_checkout_preferences/post) y ejecuta el request o, si lo prefieres, utiliza uno de los códigos disponible a continuación.
 
 [[[
 ```php

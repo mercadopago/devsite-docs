@@ -397,6 +397,11 @@ label: 'Pay',
 ```
 ]]]
 
+> NOTE
+>
+> Important
+>
+> Remember to replace the value `BR` to your country on `locale` field.
 
 In the example above, a payment button will be rendered and will be responsible for opening Checkout Pro. If you want to customize the way the checkout will be opened, see the section [Opening Schema](/developers/en/docs/checkout-pro/checkout-customization/user-interface/opening-schema)
 

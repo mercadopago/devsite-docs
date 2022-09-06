@@ -2,7 +2,7 @@
 
 El análisis de conversión de anuncios permite evaluar la relevancia y el retorno de los anuncios creados. Por ello, Checkout Pro ofrece integración con las plataformas Facebook Ads y Google Ads, permitiéndote asociar pagos a campañas comerciales.
 
-----[mla,mlb]----
+----[mla, mlb]----
 
 > NOTA
 >
@@ -196,7 +196,7 @@ Para integrar Checkout Pro con Google Ads a través de la API, siga los pasos a 
 
 
 1. Envía el parámetro `tracks` con los atributos `type`, `conversion_id` y `conversion_label` al endpoint [/checkout/preferences](/developers/es/reference/preferences/_checkout_preferences/post).
-2. En `type`, ingresa `google_ad`.
+2. En `type`, ingresa 'google_ad'.
 3.  En `CONVERSION_ID` y  `CONVERSION_LABEL`, ingresa tu ID de conversión y Etiqueta de conversión disponibles en tu cuenta de Google Analytics.
 4. Ejecuta el request.
 

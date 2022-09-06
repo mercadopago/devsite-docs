@@ -13,7 +13,7 @@ En este último escenario, se habilitarán como medios de pago las tarjetas prev
 
 
 1. Sigue el flujo de compra y, al abrir el checkout, ingresa los datos del **usuario comprador**.
-2. Selecciona **Tarjeta** como medio de pago e ingrese los detalles de una de las tarjetas disponibles en nuestra página [tarjetas de prueba] (/developers/es/docs/checkout-pro/additional-content/test-cards).
+2. Selecciona **Tarjeta** como medio de pago e ingrese los detalles de una de las tarjetas disponibles en nuestra página [tarjetas de prueba](/developers/es/docs/checkout-pro/additional-content/test-cards).
 3. Ingrese el e-mal deseado y complete la compra.
 
 ## Usuario registrado
