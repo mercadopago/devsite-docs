@@ -1,6 +1,6 @@
 # Requisitos previos
 
-Para integrar Checkout Pro, es importante que se cumplan todos los requisitos previos a continuación.
+Para integrar Checkout Pro, es importante que se cumplan todos los requisitos previos que describimos a continuación.
 
 | Requisitos | Descripción | Condición |
 | --- | --- | --- |

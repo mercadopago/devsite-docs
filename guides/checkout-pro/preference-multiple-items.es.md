@@ -1,6 +1,6 @@
 # Preferencia para múltiples ítems
 
-Si necesita crear una preferencia para más de un ítem, debe agregarlos como una lista. Use los códigos a continuación para crear una preferencia para varios ítems.
+Si necesitas crear una preferencia para más de un ítem, debes agregarlos como una lista. Usa los códigos a continuación para crear una preferencia para varios ítems.
 
 [[[
 ```php

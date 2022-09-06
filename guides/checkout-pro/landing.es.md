@@ -1,7 +1,7 @@
 ---
 content_section_with_media: 
  - title: Checkout Pro
- - message: Checkout Pro es una solución que permite a sus clientes realizar compras a través de las páginas de pago de Mercado Pago de forma segura, rápida y con la posibilidad de pagar con los principales medios de pago disponibles actualmente.
+ - message: Checkout Pro es una solución que permite a tus clientes realizar compras a través de las páginas de pago de Mercado Pago de forma segura, rápida y con la posibilidad de pagar con los principales medios de pago disponibles actualmente.
  - media_video: https://www.youtube.com/embed/yQZ5KjnUfbM
 ---
 
@@ -16,7 +16,7 @@ available_countries: mla, mlb, mlm, mlu, mco, mlc, mpe
 bullet_section_with_media:
  - type: normal
  - title: Checkout Pro Web y Mobile
- - message: Checkout Pro se puede abrir tanto vía Desktop como Móviles (smartphones y tablets). Para dispositivos móviles, el comprador es redirigido automáticamente a la aplicación de Mercado Pago (cuando hay una aplicación instalada), lo que garantiza una mayor agilidad y facilidad de pago, ya que no es necesario completar formularios.
+ - message: Checkout Pro se puede abrir tanto vía Desktop como Mobile (smartphones y tablets). Para dispositivos móviles, el comprador es redirigido automáticamente a la aplicación de Mercado Pago (cuando esta se encuentra instalada), lo que garantiza una mayor agilidad y facilidad de pago, ya que no es necesario completar formularios.
  - image: /wallet-connect/wallet-connect-landing.png
 ---
 
@@ -26,7 +26,7 @@ bullet_section_with_media:
  - type: reverse
  - message: Además de contar con el principal medio de pago del país, Checkout Pro cuenta con una experiencia de compra adaptada accesible desde cualquier dispositivo.
  - image: /cow/cho-pro-landing__pt.png
- - benefit_title: compras con un solo clic
+ - benefit_title: Compras con un solo clic
  - benefit_message: Al realizar el pago con una cuenta de Mercado Pago, el comprador puede realizar el pago utilizando el saldo de su cuenta o simplemente informando el código de seguridad de una de las tarjetas guardadas.
  - benefit_title: Usuarios invitados
  - benefit_message: No tener una cuenta Mercado Pago no es un problema. Checkout Pro acepta pagos de compradores invitados.

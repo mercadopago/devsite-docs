@@ -2,15 +2,15 @@
 
 La integración con Checkout Pro te permite cobrar a través de nuestro formulario web desde cualquier dispositivo de forma sencilla, rápida y segura.
 
-En esta documentación encontrarás todos los pasos necesarios para integrar Checkout Pro a través de **nuestros SDKs**. Para hacer esto, siga los pasos que se describen a continuación.
+En esta documentación encontrarás todos los pasos necesarios para integrar Checkout Pro a través de **nuestras SDKs**. Para hacer esto, sigue los pasos que se describen a continuación.
 
 
-> También es posible realizar la integración a través de llamadas a través del backend directamente a la [API de preferencias](/developers/es/reference/preferences/_checkout_preferences/post). En esta opción, obtendrá el enlace de Checkout Pro en el atributo `init_point`, en la respuesta del request de la API. A partir de ahí, solo utilícelo para redirigir al comprador a la caja.
+> También es posible realizar la integración con llamadas a través del backend directamente a la [API de preferencias](/developers/es/reference/preferences/_checkout_preferences/post). En esta opción, obtendrá el enlace de Checkout Pro en el atributo `init_point`, en la respuesta del request de la API. A partir de ahí, solo utilízalo para redirigir al comprador a la caja.
 
 
 ## Instalar SDK de Mercado Pago
 
-El primer paso para integrar Checkout Pro es instalar el SDK de Mercado Pago en tu proyecto. Para hacer esto, use uno de los códigos disponibles a continuación.
+El primer paso para integrar Checkout Pro es instalar el SDK de Mercado Pago en tu proyecto. Para hacer esto, usa uno de los códigos disponibles a continuación.
 
 
 [[[
@@ -71,10 +71,9 @@ pip3 install mercadopago
 >
 > Crear preferencia
 
-Las preferencias son conjuntos de información que le permiten configurar un producto o servicio que desea cobrar, como el precio y la cantidad, así como otras configuraciones relacionadas con el flujo de pago definido.
+Las preferencias son conjuntos de información que te permiten configurar un producto o servicio que deseas cobrar, como el precio y la cantidad, así como otras configuraciones relacionadas con el flujo de pago definido.
 
-Para crear una preferencia, utilice uno de los SDK disponibles a continuación, completando los atributos con la información respectiva.
-
+Para crear una preferencia, utiliza uno de los SDK disponibles a continuación, completando los atributos con la información respectiva.
 
 
 [[[
@@ -127,7 +126,7 @@ sdk = mercadopago.SDK("PROD_ACCESS_TOKEN")
 
 
 
-Cuando termine de crear la preferencia, debe configurarla de acuerdo con su producto o servicio. Para ello, utilice uno de los códigos disponibles a continuación, completando los atributos con la información respectiva.
+Cuando termines de crear la preferencia, debes configurarla de acuerdo con tu producto o servicio. Para ello, utiliza uno de los códigos disponibles a continuación, completando los atributos con la información respectiva.
 
 
 ----[mla, mlb, mlu, mpe, mlm]----
@@ -373,14 +372,13 @@ preference = preference_response["response"]
 >
 > Añadir checkout
 
-Una vez que haya creado la preferencia en su backend, deberá instalar el SDK de frontend de Mercado Pago en su proyecto para agregar el botón Checkout Pro.
-
+Una vez que hayas creado la preferencia en tu backend, deberás instalar el SDK de frontend de Mercado Pago en tu proyecto para agregar el botón Checkout Pro.
 
 La instalación se realiza en **dos pasos**: agregar el SDK de Mercado Pago al proyecto con tus credenciales configuradas e iniciar el checkout desde la preferencia generada previamente.
 
 
 
-1. Para incluir el SDK de Mercado Pago.js, agregue el siguiente código al HTML del proyecto.
+1. Para incluir el SDK de Mercado Pago.js, agrega el siguiente código al HTML del proyecto.
 
 
 ```html
@@ -419,8 +417,7 @@ La instalación se realiza en **dos pasos**: agregar el SDK de Mercado Pago al p
 >
 > Recuerda reemplazar el valor `AR` por tu pais en el campo `locale`.
 
-
-En el ejemplo anterior, se mostrará un botón de pago y será responsable por abrir el Checkout Pro. Si desea personalizar la forma en que se abrirá el Checkout, consulte la sección [Esquema de apertura](/developers/es/docs/checkout-pro/checkout-customization/user-interface/opening-schema)
+En el ejemplo anterior, se mostrará un botón de pago y será responsable por abrir el Checkout Pro. Si deseas personalizar la forma en que se abrirá el Checkout, consulta la sección [Esquema de apertura](/developers/es/docs/checkout-pro/checkout-customization/user-interface/opening-schema)
 
 
 ## Ejemplo de implementación
