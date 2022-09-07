@@ -24,7 +24,7 @@ Para activar el modo de pruebas de tu tienda, sigue estos pasos:
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 ## Checkout API
 ------------
-1. Seleccione la opción **Quiero pagar con tarjeta de crédito**.
+1. Selecciona la opción **Quiero pagar con tarjeta de crédito**.
 1. Elige pagar con una nueva tarjeta de crédito y utiliza las [tarjetas de prueba](/developers/es/docs/woocommerce/additional-content/test-cards) para realizar el pago. Es importante no pagar con tarjetas para uso personal.
 1. Agrega la información de la tarjeta de prueba indicada (número de tarjeta, CVV y fecha de vencimiento).
 1. Haz clic en **pedir con pago requerido**.

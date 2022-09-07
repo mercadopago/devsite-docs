@@ -61,3 +61,4 @@ available_payments: credit, mercadopago
 ------------
 
 ---
+> Para obtener detalles sobre los medios de pago aceptados en cada país, consulta la lista completa con [disponibilidad de medios de pago](/developers/es/docs/sales-processing/payment-methods).
