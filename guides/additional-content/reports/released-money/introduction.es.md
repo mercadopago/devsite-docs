@@ -14,14 +14,14 @@ El reporte de ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, 
 >
 > Importante
 >
-> Los reportes que generes a partir del 5 de octubre presentarán tus movimientos en orden cronológico para que puedas identificarlos más fácil y controlar mejor las finanzas de tu negocio. [Conocé la nueva anatomía del reporte.](https://bit.ly/3JzFPEG)
+> Los reportes que generes a partir del 5 de octubre presentarán tus movimientos en orden cronológico para que puedas identificarlos más fácil y controlar mejor las finanzas de tu negocio. [Confira o novo formato do relatório](https://bit.ly/3JzFPEG)
 ------------
 ----[mlm]----
 > WARNING
 >
 > Importante
 >
-> Los reportes que generes a partir del 12 de octubre presentarán tus movimientos en orden cronológico para que puedas identificarlos más facilmente y controlar mejor las finanzas de tu negocio. [Conoce la nueva anatomía del reporte.](https://bit.ly/3QiCD2f)
+> Los reportes que generes a partir del 12 de octubre presentarán tus movimientos en orden cronológico para que puedas identificarlos más facilmente y controlar mejor las finanzas de tu negocio. [Confira o novo formato do relatório](https://bit.ly/3QiCD2f)
 ------------
 
 ## ¿Cómo descargo el reporte?
