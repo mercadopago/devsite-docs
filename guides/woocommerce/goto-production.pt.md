@@ -4,7 +4,7 @@ A primeira etapa para ativar o modo de produção em sua loja é **ativar o cert
 
 Muitos serviços de hospedagem oferecem, junto com o domínio, o certificado SSL. Caso seu domínio não possua este certificado, recomendamos procurar um serviço que possa te auxiliar na compra e instalação.
 
-Para obter mais informações, visite nossa documentação [Requisitos para ir para a produção](/developers/en/docs/woocommerce/additional-content/goto-production).
+Para obter mais informações, visite nossa documentação [Requisitos para entrar em produção](/developers/en/docs/woocommerce/additional-content/goto-production).
 
 Com o certificado ativado e o teste concluído, você pode tirar sua loja do modo de teste e habilitar o modo de produção. Isso permitirá que você faça vendas reais.
 
