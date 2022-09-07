@@ -6,7 +6,7 @@
 >
 > Important
 >
-> As of December 5th, you will no longer be able to create new "Money withdrawn" reports. In order to keep tracking all the transfers, withdrawals and movements of your available money [please use the "Releases" report.](https://bit.ly/3QiCD2f)
+> As of December 12th, you will no longer be able to create new "Money withdrawn" reports. In order to keep tracking all the transfers, withdrawals and movements of your available money [please use the "Releases" report.](https://bit.ly/3QiCD2f)
 ---------
 
 ## Generating channels
@@ -16,7 +16,7 @@ There are three ways to generate an Available Balance report:
 | Channels | Description |
 | --- | --- |
 | Mercado Pago panel | <br/>It's very simple and fast. To generate it from your Mercado Pago account, go to [your reports](https://www.mercadopago.com.ar/balance/reports) and choose the *Reports* option.<br/><br/>Follow the step by step to [generate reports from this panel](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/available-money/panel).<br/><br/> |
-| API integration | <br/>Schedule the frequency of your report according to your needs. It can be both manually and on a scheduled basis.<br/><br/>Read the documentation to [generate reports through API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/available-money/api).<br/><br/>|
+| API integration | <br/>----[mla, mlb, mlm]---- Schedule the frequency of your report according to your needs. It can be both manually and on a scheduled basis.<br/><br/>Read the documentation to [generate reports through API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/available-money/api). ------------ ----[mpe, mlu, mco, mlc]---- This integration can only be used to consult and download the reports manual and does not allow generating new reports. ------------<br/><br/>|
 | Con el retiro de dinero | <br/>Generate a report automatically each time you withdraw your available balance to a bank account.<br/><br/>Follow the step by step to [generate reports for each withdrawal](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/available-money/withdrawal).<br/><br/> |
 
 

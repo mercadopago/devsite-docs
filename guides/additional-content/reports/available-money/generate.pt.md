@@ -24,7 +24,7 @@ Há três formas de gerar um relatório de Dinheiro disponível:
 | Canais | Descrição |
 | --- | --- |
 | Painel do Mercado Pago | <br/>É muito rápido e simples. Para gerar a partir da sua conta do Mercado Pago, vá até [Relatórios](https://www.mercadopago.com.br/balance/reports) e selecione uma opção de *Relatórios*.<br/><br/>Siga o passo a passo para [gerar relatórios a partir do painel](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/available-money/panel).<br/><br/> |
-| Integração via API | <br/>Programa a frequência do seu relatório de acordo com as suas necessidades. Pode ser tanto de forma manual como de forma programada.<br/><br/>Leia a documentação para [gerar relatórios por API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/available-money/api). <br/><br/>|
+| Integração via API | <br/> ----[mla, mlb, mlm]---- Programa a frequência do seu relatório de acordo com as suas necessidades. Pode ser tanto de forma manual como de forma programada.<br/><br/>Leia a documentação para [gerar relatórios por API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/available-money/api). ------------ ----[mpe, mlu, mco, mlc]---- Esta integração só pode ser usada para consultar a baixar o manual de relatórios e não permite gerar novos relatórios. ------------<br/><br/>|
 | Com retirada de dinheiro | <br/>Gere um relatório automaticamente cada vez que retirar seu dinheiro disponível para uma conta bancária. <br/><br/>Siga o passo a passo para [gerar relatórios para cada retirada de dinheiro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/available-money/withdrawal).<br/><br/> |
 
 
