@@ -14,7 +14,7 @@ Para activar el modo de pruebas de tu tienda, sigue estos pasos:
 ## Checkout Pro
 1. Selecciona la opción **Quiero pagar con Mercado Pago sin costo adicional**.
 1. Haz clic en **pedido con pago obligatorio** para ser redirigido al entorno de pago de Mercado Pago.
-1. En la pantalla de pago, elija pagar con una nueva tarjeta de crédito y use las [tarjetas de prueba](https://mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/woocommerce/additional-content/test-cards) para realizar el pago. Es importante no iniciar sesión en la cuenta de Mercado Pago ni intentar pagar con tarjetas para uso personal.
+1. En la pantalla de pago, elija pagar con una nueva tarjeta de crédito y use las [tarjetas de prueba](/developers/es/docs/woocommerce/additional-content/test-cards) para realizar el pago. Es importante no iniciar sesión en la cuenta de Mercado Pago ni intentar pagar con tarjetas para uso personal.
 1. Agrega la información de la tarjeta de prueba indicada (número de tarjeta, CVV y fecha de vencimiento).
 1. Al finalizar la compra, podrás visualizar, dentro de Mercado Pago, el comprobante de que se realizó la compra y serás redirigido nuevamente a la tienda.
 
@@ -25,8 +25,8 @@ Para activar el modo de pruebas de tu tienda, sigue estos pasos:
 ## Checkout API
 ------------
 1. Seleccione la opción **Quiero pagar con tarjeta de crédito**.
-1. Elija pagar con una nueva tarjeta de crédito y utilice las [tarjetas de prueba](https://mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/woocommerce/additional-content/test-cards) para realizar el pago. Es importante no pagar con tarjetas para uso personal.
-1. Agregue la información de la tarjeta de prueba indicada (número de tarjeta, CVV y fecha de vencimiento).
+1. Elige pagar con una nueva tarjeta de crédito y utiliza las [tarjetas de prueba](/developers/es/docs/woocommerce/additional-content/test-cards) para realizar el pago. Es importante no pagar con tarjetas para uso personal.
+1. Agrega la información de la tarjeta de prueba indicada (número de tarjeta, CVV y fecha de vencimiento).
 1. Haz clic en **pedir con pago requerido**.
 1. Al finalizar la compra, se podrá ver que la compra ha sido aprobada.
 
