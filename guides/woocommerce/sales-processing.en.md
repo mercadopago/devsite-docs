@@ -6,10 +6,3 @@ With all steps completed, your customers will be able to make purchases from you
 
 In this section, you will have access to details of the possible status and reasons for each return.
 
-> NEXT_STEP_CARD_EN
->
-> Payment status
->
-> Check the payment statuses that show the status of the sale.
->
-> [Payment status](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/woocommerce/faq)

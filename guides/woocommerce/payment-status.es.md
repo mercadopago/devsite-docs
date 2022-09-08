@@ -18,11 +18,3 @@ Hay dos estados en una venta de WooCommerce: **status del pago** y **status del 
 Para obtener más información, accede a la sección [Actividades](https://www.mercadopago[FAKER][URL][DOMAIN]/activities) de tu cuenta de Mercado Pago y al [manual de pedidos de WooCommerce](https://docs.woocommerce.com/document/gestion-de-pedidos/).
 
 Además, puedes acceder a los detalles de cada intento de pago que ocurrió en su tienda. Para hacer esto, ve al panel de WordPress y luego haz clic en **WooCommerce > Pedidos > Detalles del pedido**.
-
-> NEXT_STEP_CARD_ES
->
-> Motivos de los rechazos 
->
-> Consulta las principales dudas sobre la integración.
->
-> [Motivos de los rechazos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/woocommerce/reasons-refusals)
