@@ -112,3 +112,9 @@ renderStausScreenBrick(bricksBuilder);
 The result of rendering the brick should be like the image below:”
 
 ![cardform](checkout-bricks/card-form-en.png)
+
+> NOTE
+>
+> Important
+>
+> Always let the user return to your site from the payment status screen. Add a link so that if the payment fails, the user can try again.
