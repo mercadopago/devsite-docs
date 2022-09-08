@@ -2,7 +2,7 @@
 
 Você pode obter uma lista completa dos tipos e meios de pagamento disponíveis bem como seus detalhes (nomes, ids, configurações, status e etc.) através da API [Obter meios de pagamento](/developers/pt/reference/payment_methods/_payment_methods/get). Na resposta dessa API, serão indicados os meios de pagamento correspondentes ao país associado à sua conta Mercado Pago. 
 
-|   | 🇦🇷 <br> Argentina | 🇧🇷 <br> Brasil | 🇨🇱 <br> Chile | 🇨🇴 <br> Colômbia | 🇲🇽 <br> México | 🇵🇪 <br> Peru | 🇺🇾 <br> Uruguai |
+| Meios de pagamento | 🇦🇷 <br> Argentina | 🇧🇷 <br> Brasil | 🇨🇱 <br> Chile | 🇨🇴 <br> Colômbia | 🇲🇽 <br> México | 🇵🇪 <br> Peru | 🇺🇾 <br> Uruguai |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Dinheiro em Conta | Mercado Pago* | Mercado Pago* | Mercado Pago* | Mercado Pago* | Mercado Pago* | Mercado Pago* | - |
 | ATM | Red Link** | - | - | - | Bancomer** <br> Banamex** <br> Serfin** | BCP <br> Continental <br> Outros| - |

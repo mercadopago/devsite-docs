@@ -4,7 +4,7 @@ The first step to activate production mode in your store is **enabling the SSL c
 
 Many hosting services offer, along with the domain, the SSL certificate. If your domain does not have this certificate, we recommend looking for a company that helps you with purchase and installation. 
 
-For more information, check our documentation [Requirements for the production environment](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/goto-production).
+For more information, check our documentation [Requirements for the production environment](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/goto-production).
 
 With the certificate activated and testing completed, you can toggle your store out of *Test mode* and enable the **Production** environment, allowing you to make actual sales.
 
@@ -24,4 +24,4 @@ Done! Your store is in the Production environment and ready to process your sale
 >
 > Learn the main statuses during sales processing.
 >
-> [Sales processing](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/woocommerce/sales-processing)
+> [Sales processing](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/woocommerce/sales-processing)
