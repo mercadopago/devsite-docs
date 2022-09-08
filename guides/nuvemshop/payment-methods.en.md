@@ -63,7 +63,6 @@ It allows the **client to complete the purchase on your site**, without being re
 It allows the **client to complete the purchase on your site**, without being redirected, and receive payments by credit card and Checkout Pro.
 ------------
 
-
 1. Access the payment ----[mlb]----[methods settings](https://lojavirtualnuvem.com.br/admin/payments/)------------ ----[mla, mlm, mlc, mlu, mpe, mco]----[methods settings](https://mitiendanube.com/admin/payments/)------------ on your site menu, look for "Mercado Pago" and select "Edit".
 2. In the item "Type of integration" change to the option "Purchase process without leaving the site".
 ----[mlb]----
