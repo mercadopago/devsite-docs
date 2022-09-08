@@ -21,6 +21,6 @@ Para integrar el checkout a tu tienda en Yampi, sigue los siguientes pasos.
 >
 > Importante
 >
-> Para pagos con tarjetas de crédito, la configuración de cuotas e intereses debe verificarse directamente en su [panel de usuario de Mercado Pago](https://www.mercadopago.com.br/costs-section#from-section=menu). </br> <br/>
+> Para pagos con tarjetas de crédito, la configuración de cuotas e intereses debe verificarse directamente en tu [panel de usuario de Mercado Pago](https://www.mercadopago.com.br/costs-section#from-section=menu). </br> <br/>
 > </br> <br/>
 > La opción de pago por Pix solo se mostrará si existe una Clave de Pix registrada en Mercado Pago. Si aún no las creaste, [haz clic aquí](https://www.youtube.com/watch?v=60tApKYVnkA) y consulta el paso a paso. Además, existe un límite al valor de Pix, establecido por el Banco Central de Brasil, que se puede mover durante el período nocturno (entre las 20:00 y las 06:00 horas) de R$ 1.000. Para el período diurno (entre las 6 am y las 8 pm), sin embargo, no hay límite de movimiento.
