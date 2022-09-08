@@ -7,7 +7,7 @@
       - mlm
 ---
 
-## Pasos para configurar
+# Pasos para configurar
 
 Los **pasos para comenzar a cobrar con Mercado Pago** son los siguientes:
 
@@ -43,7 +43,7 @@ Para **vincular tu cuenta de Mercado Pago a Tiendanube**, sigue estos pasos:
 >
 > Por defecto, Tiendanube va a tomar información de la cuenta que está recibiendo el pago como la configuración de correo electrónico, país y la moneda correspondiente a su cuenta de Mercado Pago.
 
-<!-- -->
+
 > NOTE
 >
 > Cambiar cuenta de Mercado Pago
