@@ -30,7 +30,8 @@ bullet_section_with_media:
 >>>> Meios de pagamento aceitos <<<<
 
 ---
-available_payments: credit, debit, ticket, pix
+available_payments: credit, ticket, pix
 
 ---
-For details of accepted payment methods in each country, check the full list with [payment methods availability.](/developers/en/docs/sales-processing/payment-methods)
+
+> For details of accepted payment methods in each country, check the full list with [payment methods availability.](/developers/en/docs/sales-processing/payment-methods)
