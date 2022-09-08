@@ -19,7 +19,7 @@ Você poderá oferecer aos seus clientes a possibilidade de pagar com cartão de
 # Tiendanube
 
 Tiendanube é uma **plataforma e-commerce para sua loja virtual, que permite processar pagamentos através do Mercado Pago**. 
-Você poderá oferecer aos seus clientes a possibilidade de pagar com cartão de crédito, banco online ou dinheiro no [próprio checkout da sua loja](/developers/es/docs/nuvemshop/add-mercado-pago/#bookmark_checkout_api) ou [redirecionado para o site do Mercado Pago](/developers/es/docs/nuvemshop/add-mercado-pago/#bookmark_checkout_pro).
+Você poderá oferecer aos seus clientes a possibilidade de pagar com cartão de crédito, banco online ou dinheiro no [próprio checkout da sua loja](/developers/es/docs/nuvemshop/add-mercado-pago/#bookmark_checkout_api) ou [redirecionado para o site do Mercado Pago](/developers/pt/docs/nuvemshop/add-mercado-pago/#bookmark_checkout_pro).
 
 ------------
 
