@@ -6,7 +6,7 @@ Al integrar el Checkout Transparente de Mercado Pago a tu tienda, los medios de 
 
 Para integrar el checkout a tu tienda en Yampi, sigue los siguientes pasos.
 
-1. En la pantalla de **administración de los gateways de pago**, localice el método de pago que desea usar o edite y haz clic en **Visualizar**.
+1. En la pantalla de **administración de los gateways de pago**, localiza el método de pago que deseas usar o editar y haz clic en **Visualizar**.
 2. En la pantalla de **administración del medio de pago seleccionado**, si aún no está indicado, seleccione la **afiliação** registrada para Mercado Pago.
 3. Para algunos de los métodos de pago disponibles, también puede configurar algunos datos, como:
  
