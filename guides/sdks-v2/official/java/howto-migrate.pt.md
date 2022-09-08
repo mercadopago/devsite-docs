@@ -1,172 +1,126 @@
-# Como migrar do Web Tokenize Checkout V1
+# Como migrar do SDK Java V1 para SDK Java V2 com Secure Fields
 
-Se sua integração estiver usando a V1 do Web Tokenize Checkout, siga os passos abaixo para migrar para o Checkout Bricks.
+Esse documento foi criado para servir de base para realizar a migração da utilização da SDK de JavaScript na Versão 1, para a utilização da SDK de JavaScript na Versão 2 com Secure Fields.
 
-> CLIENT_SIDE
+Principais diferenças
+
+Tenha em mente que a migração é bastante simples, a ordem de acontecimentos é exatamente a mesma, as únicas diferenças é a forma de instanciar o mercadopago, e agora não usaremos mais as funções de callback de cada método, e sim o retorno deles para trabalhar com os dados.
+
+O nome de alguns métodos também sofreram algumas pequenas alterações, que ficaram mais claras nos snippets comparativos, ainda neste documento. 
+
+Segue comparativo dos diagramas. 
+
+> WARNING
 >
-> h2
+> Atenção
 >
-> Receber pagamentos de cartão
+> A migração não afetará em nada o seu backend, as modificações são inteiramente no frontend da aplicação.
 
-1. Encontre na estrutura atual de sua integração o formulário que chama o Web Tokenize Checkout.
+Diagrama de sequência V1
+
+![java-v1](/images/sdk/sdk-java-v1-pt.png)
+
+Diagrama de sequência V2
+
+![java-v2](/images/sdk/sdk-java-v2-pt.png)
+
+## Alteração do `import` do script
+
+O nome do arquivo JS no CDN houve alteração devemos modificar no HTML, a importação do script
+
+* **V1**
 
 ```html
-<form action="https://www.mi-sitio.com/procesar-pago" method="POST">
- <script
-   src="https://www.mercadopago.com.ar/integrations/v1/web-tokenize-checkout.js"
-   data-public-key="ENV_PUBLIC_KEY"
-   data-transaction-amount="100.00">
- </script>
-</form>
+<script 
+   src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
 `````
 
-2. Substitua esse formulário pela tag que conterá o Brick de Card Payment.
-
-```html
-<div id="paymentBrick_container"></div>
-````
-
-3. Adicione também a importação da SDK JS.
+* **V2** 
 
 ```html
 <script src="https://sdk.mercadopago.com/js/v2"></script>
-````
+`````
 
-4. Adicione agora o script responsável por carregar o Brick
+## Instância do Mercado Pago
+
+Como mencionado anteriormente, agora a instanciação do Mercado Pago teve alteração.
+
+* **V1**
 
 ```javascript
  
-   const mp = new MercadoPago('YOUR_PUBLIC_KEY');
-const bricksBuilder = mp.bricks();
-const renderPaymentBrick = async (bricksBuilder) => {
-   const settings = {
-       initialization: {
-           amount: 100, //valor do processamento a ser realizado
-           payer: {
-           email: 'test@mail.com',
-       },
-       },
-       style: {
-           theme: 'default' // | 'dark' | 'bootstrap' | 'flat'
-       },
-       callbacks: {
-           onReady: () => {
-           // callback chamado quando o Brick estiver pronto
-           },
-           onSubmit: ({paymentType, formData}) => {
-           // callback chamado o usuário clicar no botão de submissão dos dados
-           // ejemplo de envío de los datos recolectados por el Brick a su servidor
-           return new Promise((resolve, reject) => {
-               fetch("/processar-pago", {
-                   method: "POST",
-                   headers: {
-                       "Content-Type": "application/json",
-                   },
-                   body: JSON.stringify(formData)
-               })
-               .then((response) => {
-                   // receber o resultado do pagamento
-                   resolve();
-               })
-               .catch((error) => {
-                   // lidar com a resposta de erro ao tentar criar o pagamento
-                   reject();
-               })
-               });
-           },
-           onError: (error) => {
-           // callback chamado para todos os casos de erro do Brick
-           },
-       },
-   };
-   window.cardPaymentBrickController = await bricksBuilder.create('payment', 'paymentBrick_container', settings);
-};
-renderPaymentBrick(bricksBuilder);
+   window.Mercadopago.setPublishableKey("YOUR_PUBLIC_KEY");
 ````
 
-5. No callback de onSubmit do Brick, adicione a mesma URL que utilizava no parâmetro `action` do seu formulário, é para ela que o Brick enviará os dados do formulário de pagamento.
+* **V2** 
 
-
-> CLIENT_SIDE
->
-> h2
->
-> Usuários e Cartões
-
-> NOTE
->
-> Nota
->
-> O processo de criação de usuários e cartões não tem nenhuma diferença entre o Web Tokenize Checkout e Checkout Bricks.
-
-### Receber o pagamento de um usuário com cartões salvos
-
-Para receber o pagamento de um usuário com cartões salvos, é necessário migrar o usuário e os cartões para o Brick, que realizará o processo de tokenização e enviará no callback de onSubmit as informações para a geração do pagamento. Para isso, siga os passos abaixo.
-
-1. Encontre na estrutura atual de sua integração o formulário que chama o Web Tokenize Checkout.
+```javascript
  
+   const mp = new MercadoPago("YOUR_PUBLIC_KEY"); 
+````
+
+## Criando campos PCI
+
+Com o Secure Fields, mudou um pouco a forma de implementação dos campos de card number, expiration date e security code. 
+Com essa nova proposta bem mais segura, não é necessário criar tags inputs em seu HTML desses campos, agora devemos criar apenas as divs onde esses inputs serão renderizados, e deixar que o mercado pago envie iframes para esses campos, segue exemplos:
+
+* A data de vencimento na V1
+
 ```html
-<form action="/procesar-pago" method="POST">
-   <script
-     src="https://www.mercadopago.com.ar/integrations/v1/web-tokenize-checkout.js"
-     data-public-key="ENV_PUBLIC_KEY"
-     data-transaction-amount="100.00"
-     data-customer-id="209277402-FqRqgEc3XItrxs"
-     data-card-ids="1518023392627,1518023332143">
-   </script>
- </form>
-````
+<div>
+  <input type="text" placeholder="MM" id="cardExpirationMonth" data-checkout="cardExpirationMonth">
+  <span class="date-separator">/</span>
+  <input type="text" placeholder="YY" id="cardExpirationYear" data-checkout="cardExpirationYear">
+</div>
+`````
 
-2. Substitua esse formulário pela tag que conterá o Brick de Card Payment.
+* Card number na V1
+
+```html
+<input type="text" id="cardNumber" data-checkout="cardNumber" />
+`````
+
+* Código de segurança na V1
+
+```html
+<input id="securityCode" data-checkout="securityCode" type="text" />
+`````
+
+Agora, apenas com as `divs` e os `IDs` correspondentes, ficará da seguinte maneira:
+
+* A data de vencimento na V2
+
+```html
+<div id="expirationDate"></div>
+`````
+
+* Card number na V2
+
+```html
+<div id="cardNumber"></div>
+`````
+
+* Código de segurança na V2
+
+```html
+<div id="securityCode"> </div>
+`````
+
+E além das divs, nesse caso do Secure Fields, precisamos informar aos MP onde ele deve montar os inputs, no caso nas divs exemplificadas acima, com isso, o script ficará assim:
 
 ```javascript
-   const mp = new MercadoPago('YOUR_PUBLIC_KEY');
-const bricksBuilder = mp.bricks();
-const renderCardPaymentBrick = async (bricksBuilder) => {
-   const settings = {
-       initialization: {
-           amount: 100, //valor do processamento a ser realizado
-           payer: {
-           customer_id: "209277402-FqRqgEc3XItrxs",
-	card_ids: [“1518023392627”,”1518023332143”]
-       },
-       },
-       style: {
-           theme: 'default' // | 'dark' | 'bootstrap' | 'flat'
-       },
-       callbacks: {
-           onReady: () => {
-           // callback chamado quando o Brick estiver pronto
-           },
-           onSubmit: ({paymentType, formData}) => {
-           // callback chamado o usuário clicar no botão de submissão dos dados
-           // ejemplo de envío de los datos recolectados por el Brick a su servidor
-           return new Promise((resolve, reject) => {
-               fetch("/processar-pago", {
-                   method: "POST",
-                   headers: {
-                       "Content-Type": "application/json",
-                   },
-                   body: JSON.stringify(formData)
-               })
-               .then((response) => {
-                   // receber o resultado do pagamento
-                   resolve();
-               })
-               .catch((error) => {
-                   // lidar com a resposta de erro ao tentar criar o pagamento
-                   reject();
-               })
-               });
-           },
-           onError: (error) => {
-           // callback chamado para todos os casos de erro do Brick
-           },
-       },
-   };
-   window.cardPaymentBrickController = await bricksBuilder.create('cardPayment', 'cardPaymentBrick_container', settings);
-};
-renderCardPaymentBrick(bricksBuilder);
+
+  const cardNumberElement = mp.fields.create('cardNumber', {
+  placeholder: "Número do cartão"
+}).mount('cardNumber');
+
+const expirationDateElement = mp.fields.create('expirationDate', {
+  placeholder: "MM/YY",
+}).mount('expirationDate');
+
+const securityCodeElement = mp.fields.create('securityCode', {
+  placeholder: "Código de segurança"
+}).mount('securityCode');
 ````
 
-Com essa configuração, será possível realizar o processamento do pagamento com os cartões salvos.
+Com isso agora temos os nossos campos PCI e seguros dentro do formulário.
