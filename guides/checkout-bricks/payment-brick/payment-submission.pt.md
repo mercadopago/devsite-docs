@@ -1,0 +1,1 @@
+[TXTSNIPPET][/guides/snippets/test-integration/bricks/bricks-payment-submission]

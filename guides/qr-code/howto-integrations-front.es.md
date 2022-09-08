@@ -13,9 +13,7 @@ Si cobras con tu QR impreso puedes colocar el monto a pagar desde tu computadora
 3. Coloca el monto a pagar.
 4. Tu cliente escanea el QR desde la app de Mercado Libre o Mercado Pago y elige cómo pagarte.
 
-
 Podrás ver la confirmación del cobro en el momento y el detalle en la actividad de tu cuenta de Mercado Pago.
-
 
 ## ¿Cómo cobrar desde la app?
 
@@ -28,5 +26,3 @@ Primero, debes [crear un link de pago](https://www.mercadopago.com.ar/tools/crea
 ## Entérate de tus cobros recibidos
 
 Puedes consultar tus ventas en el listado de actividades de [tu cuenta de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/activities) o [integrar notificaciones](/developers/es/guides/notifications/ipn/introduction) en tu sistema.
-
-

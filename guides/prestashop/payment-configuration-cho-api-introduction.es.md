@@ -26,7 +26,7 @@ Mira a continuación qué métodos de pago están disponibles para la tienda al 
 >
 > Important
 >
-> Al utilizar el [Checkout Transparente](/developers/es/guides/checkout-api/landing) para recibir pagos, es importante configurar el envío de correos electrónicos que notificarán al usuario de sus transacciones. Consulte la sección [Cómo personalizar la notificación de pago para Checkout Transparente](/developers/es/docs/prestashop/how-tos/checkout-api/email-customization) para obtener detalles sobre cómo hacerlo.<br>
+> Al utilizar el [Checkout Transparente](/developers/es/guides/checkout-api/landing) para recibir pagos, es importante configurar el envío de correos electrónicos que notificarán al usuario de sus transacciones. Consulte la sección [Cómo personalizar la notificación de pago para Checkout Transparente](/developers/es/docs/prestashop/how-tos/email-customization) para obtener detalles sobre cómo hacerlo.<br>
 > </br> <br/>
 > Si desea utilizar Checkout Pro para recibir pagos en tiendas, consulte la sección [Configuración de pagos con Checkout Pro](/developers/es/docs/prestashop/payment-setup/checkout-pro).
 ------------
@@ -36,7 +36,7 @@ Mira a continuación qué métodos de pago están disponibles para la tienda al 
 >
 > Important
 >
-> Al utilizar el [Checkout API](/developers/es/guides/checkout-api/landing) para recibir pagos, es importante configurar el envío de correos electrónicos que notificarán al usuario de sus transacciones. Consulte la sección [Cómo personalizar la notificación de pago para Checkout API](/developers/es/docs/prestashop/how-tos/checkout-api/email-customization) para obtener detalles sobre cómo hacerlo.<br>
+> Al utilizar el [Checkout API](/developers/es/guides/checkout-api/landing) para recibir pagos, es importante configurar el envío de correos electrónicos que notificarán al usuario de sus transacciones. Consulte la sección [Cómo personalizar la notificación de pago para Checkout API](/developers/es/docs/prestashop/how-tos/email-customization) para obtener detalles sobre cómo hacerlo.<br>
 > </br> <br/>
 > Si desea utilizar Checkout Pro para recibir pagos en tiendas, consulte la sección [Configuración de pagos con Checkout Pro](/developers/es/docs/prestashop/payment-configuration/checkout-pro).
 ------------

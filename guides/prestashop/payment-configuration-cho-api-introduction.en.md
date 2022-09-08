@@ -17,7 +17,7 @@ See below which payment methods are available for the store when integrating the
 >
 > Important
 >
-> When using the [Checkout API](/developers/en/guides/checkout-api/landing) to receive payments, it is important to configure the sending of emails that will notify the user of their transactions. See the section [How to customize payment notification for Checkout API](/developers/en/docs/prestashop/how-tos/checkout-api/email-customization) for details on how to do this. <br>
+> When using the [Checkout API](/developers/en/guides/checkout-api/landing) to receive payments, it is important to configure the sending of emails that will notify the user of their transactions. See the section [How to customize payment notification for Checkout API](/developers/en/docs/prestashop/how-tos/email-customization) for details on how to do this. <br>
 > </br> <br/>
 > If you would like to use Checkout Pro to receive in-store payments, see the section [Configuring payments with Checkout Pro](/developers/en/docs/prestashop/payment-configuration/checkout-pro).
 

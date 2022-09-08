@@ -10,7 +10,6 @@ Una vez que el pago es procesado, el usuario será redireccionado a la `success_
 
 ![Diagrama de flujo de Deep linking Mercado Pago Point](/images/point_diagram.png)
 
-
 ## Creación del Deep Linking
 
 La URL a ser interceptada es la siguiente: `https://www.mercadopago.com/point/integrations`

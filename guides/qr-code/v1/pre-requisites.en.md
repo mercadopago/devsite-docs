@@ -29,45 +29,7 @@ It's easy and we explain how to do it:
 
 ## 3. Generate test users
 
-To make tests it is necessary to have at least two users: a buyer and a seller.
-
-Execute the following command to generate a test user:
-
-```curl
-curl -X POST \
--H "Content-Type: application/json" \
--H 'Authorization: Bearer ACCESS_TOKEN' \
-"https://api.mercadopago.com/users/test_user"
--d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]"}'
-```
-
-> NOTE
-> 
-> Note
-> 
-> **Productive credentials** should be used for the account you'll be operating with.
-
-Response:
-
-```json
-{
-"id": 123456,
-"nickname": "TT123456",
-"password": "qatest123456",
-"site_status": "active",
-"email": "test_user_123456@testuser.com"
-}
-```
-
-> WARNING
-> 
-> IMPORTANT
-> 
-> * You can generate up to 10 test accounts at the same time. Because of that, we recommend saving email and password for each one. 
-> * Test users expire after 60 days of no activity on Mercado Pago.
-> * To make test payments we recommend to use low amounts. 
-> * Both buyer and seller should test users. 
-> * Use test cards, because it is not possible to withdraw money. 
+[TXTSNIPPET][/guides/snippets/test-integration/create-test-users]
 
 Once the test users are created, you can start with the integration and create the Stores and Point of Sale.
 
@@ -82,6 +44,7 @@ The access token cannot be shared in any way other than OAuth. [More information
 To identify the orders that are transacted by your management system, include the sponsor ID, see in the [instore orders APIs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference) how you will send this information.
  
 Step by step:
+
 > * Create an account on the Mercado Pago portal (Integrator identification).
 > * Collect Collector ID (Cust ID or User ID) of your account.
 > * Include the Collector ID of your Integrator account inside the Sponsor ID of the seller.

@@ -68,7 +68,6 @@ Explicamos a você o funcionamento do modelo desatendido:
 > 
 > No item 5 deverá executar os passos 8A e 8B para obter o estado do pedido. 
 
-
 ## Caixa para el modelo desatendido
 
 Para criar caixas de modelo desatendido, você precisa declarar a URL de um serviço do seu domínio ao qual o Mercado Pago consultará se há uma ordem disponível.
@@ -91,14 +90,3 @@ https://api.mercadopago.com/pos \
 ]]]
 
 ---
-
-### Próximos passos
-
-
-> LEFT_BUTTON_REQUIRED_PT
->
-> Integrar o modelo autônomo do QR
->
-> Conoce paso a paso como integrar este modelo.
->
-> [Integrar o modelo autônomo do QR](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/qr-code/qr-unattended/qr-unattended-part-b)

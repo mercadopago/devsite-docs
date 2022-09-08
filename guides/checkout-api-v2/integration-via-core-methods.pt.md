@@ -317,7 +317,7 @@ O token do cartão é criado a partir das próprias informações do cartão, au
 >
 > Importante
 >
-> O método `createCardToken` retorna um token com a representação segura dos dados do cartão, além disso, tomaremos o token ID da resposta e salvaremos em um input oculto chamado `token` para depois enviar o formulário aos servidores.
+> O método `createCardToken` retorna um token com a representação segura dos dados do cartão. Tomaremos o token ID da resposta e salvaremos em um input oculto chamado `token` para depois enviar o formulário aos servidores. Além disso, tenha em conta que o **token tem uma validade de 7 dias** e só pode ser usado **uma única vez**.
 
 [[[
 ```javascript

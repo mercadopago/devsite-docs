@@ -10,6 +10,7 @@ content_section_with_media:
 >>>> Disponibilidad por país <<<<
 ---
 available_countries: mla, mlb, mlm, mlu, mco, mlc, mpe
+
 ---
 
 ---
@@ -37,18 +38,60 @@ bullet_section_with_media:
 
 --- mini_landing_separator ---
 
+<<<<<<< HEAD
+=======
+>>>> Diferencias entre Checkout Pro y Checkout Transparente <<<<
+----[mla, mlb]----
+|      Beneficios                       | Checkout Pro | API |
+| :--- | :---: | :---: |
+| Dificultad de integración             | Baja | Alta |
+| Design UI/UX                          | ✔ |   |
+| Conversión optimizada                   | ✔ |   |
+| Aprobación optimizada                   | ✔ |   |
+| Usuarios invitados     			| ✔ | ✔ |
+| Usuarios registrados     		| ✔ |   |
+| Prevención del fraude                   | ✔ | ✔ |
+| Pantalla finalización del pago      | ✔ |   |
+| Pago con dos tarjetas            | ✔ |   |
+
+------------
+
+----[mlm, mlu, mco, mlc, mpe]----
+|    Beneficios                         | Checkout Pro | API |
+| :--- | :---: | :---: |
+| Dificultad de integración             | Baja | Alta |
+| Design UI/UX                          | ✔ |   |
+| Conversión optimizada                  | ✔ |   |
+| Aprobación optimizada                   | ✔ |   |
+| Usuarios invitados      		| ✔ | ✔ |
+| Usuarios registrados     		| ✔ |   |
+| Prevención del fraude                   | ✔ | ✔ |
+| Pantalla finalización del pago      | ✔ |   |
+
+------------
+
+--- mini_landing_separator ---
+
+>>>>>>> b02ee64b67e4f7f3382576a4677bde5d2374decd
 >>>> Medios de pago aceptados <<<<
 
 ----[mlb]----
+
 ---
 available_payments: credit, debit, mercadopago, ticket, pix, pec
+
 ---
 ------------
 
 ----[mla, mlm, mlu, mco, mlc, mpe]----
+
 ---
 available_payments: credit, debit, mercadopago, ticket
+
 ---
 ------------
+<<<<<<< HEAD
 
+=======
+>>>>>>> b02ee64b67e4f7f3382576a4677bde5d2374decd
 > Para obtener detalles sobre los medios de pago aceptados en cada país, consulte la lista completa con [disponibilidad de medios de pago.](/developers/es/docs/sales-processing/payment-methods)

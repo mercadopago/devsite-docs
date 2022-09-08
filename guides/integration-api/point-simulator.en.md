@@ -47,18 +47,10 @@ If the previous step was successful, you can click on the animation of the card,
 
 ### 5. Receive the notification
 
-If you followed the configuration steps for the [Webhooks notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/integration-api/integration), it is time for you to review your records. There, you will see that the notification of the transaction status was sent.
+If you followed the configuration steps for the [Webhooks notifications](/developers/en/docs/mp-point/integration-configuration/integrate-with-pdv/notifications), it is time for you to review your records. There, you will see that the notification of the transaction status was sent.
 
 > NOTE
 >
 > Note
 >
 > The simulator will allow you to make test payments, in this way, you can check out all the information corresponding in the section [Payment API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_id/get).
-
-> PREV_STEP_CARD_EN
->
-> Configure notifications
->
-> We’ll explain how to start receiving notifications from Webhooks.
->
-> [Configure notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/integration-api/notifications)

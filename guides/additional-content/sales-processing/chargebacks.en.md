@@ -66,9 +66,9 @@ Send the payment voucher by e-mail or sms so that your customer remembers what t
 For an enhanced validation of payment security, send us as much information as possible when creating the payment.  For example, if you send us information about the buyer, we can detect if that buyer made any suspicious payments before and prevent it.
 Find more information about each attribute in [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments/post).
 
-### Return suspicious payments
+### Fraud alerts
 
-When we detect an irregular behavior or are notified that a stolen credit card was used, we will contact via e-mail to let you know what happened. We recommend you to [cancel the purchase](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds) and refund the money to the buyer so that you can avoid a chargeback.
+We will notify you via [IPN notifications](/developers/en/docs/notifications/ipn/introduction) when we detect irregular behavior or receive a notification that the card used was stolen. In addition, we will contact you via e-mail to notify you. In this situation, you must cancel the purchase and return the money to the buyer to avoid the chargeback. To start receiving notifications, you must [fill in your information](https://www.mercadolibre.com/jms/mla/lgz/msl/login/H4sIAAAAAAAEAzWNwW4DIQxE_2XOaLlz7I8glzUbq4CRcbKpovx7tWp7HM28Ny80PWRk_56MBH7OJkUcAbORV7WeZUdCnwhY4vwXG10TMursbAvpdYkO3j-4ql2qSm0xAujut1ybnki_XwiQlfnpbINaPvnzIXy1_8ShSLi5z5ViPM9z62yFdp106Fa0b2Rx5wc3nWwrThrc4lCXKoVcdKwoc-AdUGl5dqPyheR25_cPATlhVe8AAAA/user) and choose the option "Fraud alerts"
 
 ### Check data when collecting with Point
 

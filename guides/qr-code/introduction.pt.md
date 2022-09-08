@@ -19,6 +19,4 @@ Após completar a integração como explicado abaixo, o seu negócio poderá rec
 | QR Modelo Atendido | Modelo de integração onde o caixa envia um pedido a um QR desde seu próprio sistema de ponto de venda. O cliente vê o pedido e faz o pagamento pelo aplicativo. |
 | QR Modelo Dinâmico | Modelo de integração onde é gerado um QR por transação. Usado para modelos de QR em tickets. |
 
-
 Em função do seu modelo de negócio, você pode escolher uma das opções para oferecer aos seus clientes uma ótima experiência de compra nas suas lojas físicas.
-

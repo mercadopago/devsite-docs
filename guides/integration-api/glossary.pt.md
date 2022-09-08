@@ -24,4 +24,3 @@ Alguns termos são novos e você pode não estar familiarizado com eles. Use est
 | Abandoned | Status final de uma intenção de pagamento quando ela não é processada após um certo tempo. |
 | Error | Status final de uma intenção de pagamento quando ocorre um erro de transação. |
 | Finished | Status final de uma intenção de pagamento quando a transação termina. |
-

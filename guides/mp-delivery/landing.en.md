@@ -9,6 +9,7 @@ content_section_with_media:
 >>>>Availability by country <<<<
 ---
 available_countries: mla
+
 ---
 
 ---
@@ -39,4 +40,6 @@ bullet_section_with_media:
 >>>> Accepted payment methods <<<<
 ---
 available_payments: credit, debit, mercadopago
+
 ---
+> For details of accepted payment methods in each country, check the full list with [payment methods availability.](/developers/en/docs/sales-processing/payment-methods)

@@ -41,6 +41,7 @@ bullet_section_with_media:
 >>>> Available Payment Methods <<<<
 ---
 available_payments: credit, debit, Mercadopago, ticket, pix, pec
+
 ---
 
 ------------
@@ -50,6 +51,7 @@ available_payments: credit, debit, Mercadopago, ticket, pix, pec
 >>>> Available Payment Methods <<<<
 ---
 available_payments: credit, debit, Mercadopago, ticket
+
 ---
 ------------
-
+> For details of accepted payment methods in each country, check the full list with [payment methods availability.](/developers/en/docs/sales-processing/payment-methods)
