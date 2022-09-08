@@ -12,7 +12,7 @@ In this last scenario, previously saved cards and available account balance will
 
 
 1. Follow the purchase flow and, when opening the checkout, enter the **buyer user** data.
-2. Select **Card** as payment method and enter the details of one of the available cards on our [test cards page](/developers/en/docs/checkout-pro/additional-content/test-cards).
+2. Select **Card** as payment method and enter the details of one of the available cards on our [test cards](/developers/en/docs/checkout-pro/additional-content/test-cards) page.
 3. Enter the desired email and complete the purchase.
 
 ## Registered User

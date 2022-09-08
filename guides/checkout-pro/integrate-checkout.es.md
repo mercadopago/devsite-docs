@@ -386,7 +386,7 @@ La instalación se realiza en **dos pasos**: agregar el SDK de Mercado Pago al p
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 
-2. Cuando termines de agregar el SDK de Mercado Pago.js, configura las credenciales del SDK e inicia tu checkout con el ID de la preferencia creada anteriormente y el identificador del elemento donde se debe mostrar el botón de pago, como se muestra en el siguiente ejemplo.
+2. Cuando termines de agregar el SDK de Mercado Pago.js, **configura las credenciales del SDK** e inicia tu checkout con el **ID de la preferencia** creada anteriormente y el identificador del elemento donde se debe mostrar el botón de pago, como se muestra en el siguiente ejemplo.
 
 
 [[[

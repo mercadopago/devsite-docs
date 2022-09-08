@@ -2,7 +2,7 @@
 
 After integrating Checkout Pro it is possible to define and customize the interface displayed to the user, including the checkout screen input mode. 
  
-By default, Checkout Pro opens with a payment button directing the user to complete the purchase, however, it is also possible to customize a button that allows opening the checkout from any desired element on the website, without necessarily showing the payment button to the buyer.
+By default, **Checkout Pro opens with a payment button directing the user to complete the purchase**, however, it is also possible to customize a button that allows opening the checkout from any desired element on the website, without necessarily showing the payment button to the buyer.
  
 In addition, Checkout Pro can also be opened automatically, without any action on the part of the buyer.
 

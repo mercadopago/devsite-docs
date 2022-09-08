@@ -13,7 +13,7 @@ Existem duas formas de fazer o pagamento: como **usuário convidado**, preenchen
 
 
 1. Siga o fluxo de compra e, ao abrir o checkout, insira os dados de **usuário comprador**.
-2. Selecione **Cartão** como meio de pagamento e insira os dados de um dos cartões disponíveis em nossa página de [cartões nacionais de teste](/developers/pt/docs/checkout-pro/additional-content/test-cards).
+2. Selecione **Cartão** como meio de pagamento e insira os dados de um dos cartões disponíveis em nossa página de [cartões de teste](/developers/pt/docs/checkout-pro/additional-content/test-cards).
 3. Informe o e-mail desejado e conclua a compra.
 
 ## Usuário cadastrado

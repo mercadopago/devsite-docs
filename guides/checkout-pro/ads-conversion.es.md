@@ -4,7 +4,7 @@ El análisis de conversión de anuncios permite evaluar la relevancia y el retor
 
 ----[mla, mlb]----
 
-> NOTA
+> NOTE
 >
 > Importante
 >
@@ -13,7 +13,7 @@ El análisis de conversión de anuncios permite evaluar la relevancia y el retor
 
 
 ----[mlm, mlc, mco, mpe, mlu]----
-> NOTA
+> NOTE
 >
 > Nota
 >
@@ -180,7 +180,7 @@ Una vez completada la configuración, se asociará un evento de `purchase` con e
 
 
 
-> NOTA
+> NOTE
 >
 > Importante
 >
@@ -357,7 +357,7 @@ curl -X POST \
 Una vez completada la configuración, se asociará una conversión con la _tag_ especificada cuando se apruebe un pago reenviado para tu anuncio.
 
 
-> NOTA
+> NOTE
 >
 > Importante
 >
