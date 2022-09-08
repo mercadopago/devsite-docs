@@ -68,6 +68,6 @@ available_payments: credit, debit, mercadopago, ticket, pix, pec
 
 ----[mla, mlm, mlu, mco, mlc, mpe]----
 ---
-available_payments: credit, debit, mercadopago, ticket
+available_payments: credit, debit, mercadopago, boleto, pix, pec, atm, efectivo, pse, cartera, carton, moneda, mercadocredito,ticket
 ---
 ------------
