@@ -166,7 +166,7 @@ curl --location --request PUT 'https://pix-api.mercadopago.com/cobv/1655996626' 
 ```
 ]]]
 
-### Definições do payload
+## Definições do payload
 
 
 | Nome  | Descrição  |
