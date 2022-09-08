@@ -38,64 +38,20 @@ bullet_section_with_media:
 
 --- mini_landing_separator ---
 
-<<<<<<< HEAD
 >>>> Available Payment Methods <<<<
-=======
->>>> Differences between Checkout Pro and Checkout API<<<<
-----[mla, mlb]----
-|      Benefits                      | Checkout Pro | API |
-| :--- | :---: | :---: |
-| Integration difficulty             | Low | High |
-| Design UI/UX                          | ✔ |   |
-| Optimized conversion                   | ✔ |   |
-| Optimized approval                   | ✔ |   |
-| Guest users     			| ✔ | ✔ |
-| Registered users     		| ✔ |   |
-| Fraud prevention                   | ✔ | ✔ |
-| Payment completion screen      | ✔ |   |
-| Payment with two cards            | ✔ |   |
-
-------------
-
-----[mlm, mlu, mco, mlc, mpe]----
-|  Benefits                          | Checkout Pro | API |
-| :--- | :---: | :---: |
-| Integration difficulty             | Low | High |
-| Design UI/UX                          | ✔ |   |
-| Optimized conversion                  | ✔ |   |
-| Optimized approval                   | ✔ |   |
-| Guest users      		| ✔ | ✔ |
-| Registered users     		| ✔ |   |
-| Fraud prevention                   | ✔ | ✔ |
-| Payment completion screen      | ✔ |   |
-
-------------
->>>>>>> b02ee64b67e4f7f3382576a4677bde5d2374decd
 
 ----[mlb]----
 
 ---
-<<<<<<< HEAD
 available_payments: credit, debit, Mercadopago, ticket, pix, pec
-=======
-available_payments: credit, debit, mercadopago, ticket, pix, pec
-
->>>>>>> b02ee64b67e4f7f3382576a4677bde5d2374decd
 ---
 ------------
 
 ----[mla, mlm, mlu, mco, mlc, mpe]----
 
 ---
-<<<<<<< HEAD
 available_payments: credit, debit, Mercadopago, ticket
 ---
 ------------
 
-=======
-available_payments: credit, debit, mercadopago, ticket
-
----
-------------
->>>>>>> b02ee64b67e4f7f3382576a4677bde5d2374decd
 > For details of accepted payment methods in each country, check the full list with [payment methods availability.](/developers/en/docs/sales-processing/payment-methods)

@@ -38,41 +38,6 @@ bullet_section_with_media:
 
 --- mini_landing_separator ---
 
-<<<<<<< HEAD
-=======
->>>> Diferenças entre Checkout Pro e Checkout Transparente <<<<
-----[mla, mlb]----
-|   Benefícios                          | Checkout Pro | Checkout API |
-| :--- | :---: | :---: |
-| Dificuldade de integração             | Baixa | Alta |
-| Design UI/UX                          | ✔ |   |
-| Conversão otimizada                   | ✔ |   |
-| Aprovação otimizada                   | ✔ |   |
-| Usuários convidados     			| ✔ | ✔ |
-| Usuários cadastrados     		| ✔ |   |
-| Prevenção de fraude                   | ✔ | ✔ |
-| Tela de finalização de pagamento      | ✔ |   |
-| Pagamento com dois cartões            | ✔ |   |
-
-------------
-
-----[mlm, mlu, mco, mlc, mpe]----
-|   Benefícios                          | Checkout Pro | API |
-| :--- | :---: | :---: |
-| Dificuldade de integração             | Baixa | Alta |
-| Design UI/UX                          | ✔ |   |
-| Conversão otimizada                   | ✔ |   |
-| Aprovação otimizada                   | ✔ |   |
-| Usuários convidados      		| ✔ | ✔ |
-| Usuários cadastrados     		| ✔ |   |
-| Prevenção de fraude                   | ✔ | ✔ |
-| Tela de finalização de pagamento      | ✔ |   |
-
-------------
-
---- mini_landing_separator ---
-
->>>>>>> b02ee64b67e4f7f3382576a4677bde5d2374decd
 >>>> Meios de pagamento aceitos <<<<
 
 ----[mlb]----
@@ -91,8 +56,5 @@ available_payments: credit, debit, mercadopago, ticket
 
 ---
 ------------
-<<<<<<< HEAD
 
-=======
->>>>>>> b02ee64b67e4f7f3382576a4677bde5d2374decd
 > Para detalhes dos meios de pagamento aceitos em cada país, verifique a lista completa com a [disponibilidade de meios de pagamento.](/developers/pt/docs/sales-processing/payment-methods)
