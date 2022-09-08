@@ -25,4 +25,4 @@ If all prerequisites are met, you can install the plugin.
 >
 > Follow the steps below to install the Mercado Pago plugin with WooCommerce.
 >
-> [Plugin installation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/woocommerce/instalation)
+> [Plugin installation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/woocommerce/installation)

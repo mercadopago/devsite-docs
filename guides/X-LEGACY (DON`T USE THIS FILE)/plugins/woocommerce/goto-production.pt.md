@@ -4,7 +4,7 @@ O primeiro passo para ativar o modo produção na sua loja, é **habilitar o cer
 
 Muitos serviços de hospedagem oferecem, junto ao domínio, o certificado SSL. Caso seu domínio não tenha esse certificado, recomendamos buscar uma empresa que possa ajudar na compra e instalação. 
 
-Para mais informações, acesse nossa documentação [Requisitos para entrar em produção](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/goto-production).
+Para mais informações, acesse nossa documentação [Requisitos para entrar em produção](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/checkout-api/goto-production).
 
 Com o certificado ativado e os testes finalizados, você poderá tirar sua loja do modo Teste e habilitar o modo **Produção**. Isso permitirá realizar vendas reais.
 
@@ -25,4 +25,4 @@ Pronto! Sua loja está em Produção e habilitada para realizar suas vendas.
 >
 > Conheça os principais status durante o processamento das vendas.
 >
-> [Processamento de vendas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/sales-processing)
+> [Processamento de vendas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/woocommerce/sales-processing)

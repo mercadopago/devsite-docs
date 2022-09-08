@@ -19,10 +19,3 @@ Para mais informações, acesse a seção [Atividades](https://www.mercadopago[F
 
 Além disso, é possível ter acesso aos detalhes de cada tentativa de pagamento que aconteceu em sua loja. Para isso, acesse o painel do WordPress, e depois clique em **WooCommerce > Pedidos > Detalhes do pedido**.
 
-> NEXT_STEP_CARD_PT
->
-> Motivos de recusas
->
-> Conheça os principais motivos que podem impactar na aprovação dos pagamentos.
->
-> [Motivos de recusas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/woocommerce/reasons-refusals)
