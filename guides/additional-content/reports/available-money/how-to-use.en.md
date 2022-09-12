@@ -6,12 +6,20 @@ Once the report is ready and downloaded, you will have a file to review the spre
 
 To review the report we recommend downloading it in .csv format to open it in the program that you view it. Configure your program to support the UTF-8 format, so you avoid reading problems.
 
+----[mlm]----
 > WARNING
 >
-> TThe Available Balance report will be disabled from March 01, 2022
+> Important
 >
-> Use the [Releases report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/released-money/introduction) to reconcile the transactions that affect the balance available in your account, including your bank withdrawals.
-
+> As of December 12th, you will no longer be able to create new "Money withdrawn" reports. In order to keep tracking all the transfers, withdrawals and movements of your available money, [please use the "Releases" report.](https://bit.ly/3QiCD2f)
+------------
+----[mla]----
+> WARNING
+>
+> Important
+>
+> As of December 5th, you will no longer be able to create new "Money withdrawn" reports. In order to keep tracking all the transfers, withdrawals and movements of your available money, [please use the "Releases" report.](https://bit.ly/3JzFPEG)
+------------
 ## What does the report contain?
 
 The report is composed by:

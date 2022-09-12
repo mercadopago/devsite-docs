@@ -6,8 +6,15 @@
 >
 > Important
 >
-> As of December 12th, you will no longer be able to create new "Money withdrawn" reports. In order to keep tracking all the transfers, withdrawals and movements of your available money [please use the "Releases" report.](https://bit.ly/3QiCD2f)
----------
+> As of December 12th, you will no longer be able to create new "Money withdrawn" reports. In order to keep tracking all the transfers, withdrawals and movements of your available money, [please use the "Releases" report.](https://bit.ly/3QiCD2f)
+------------
+----[mla]----
+> WARNING
+>
+> Important
+>
+> As of December 5th, you will no longer be able to create new "Money withdrawn" reports. In order to keep tracking all the transfers, withdrawals and movements of your available money, [please use the "Releases" report.](https://bit.ly/3JzFPEG)
+------------
 
 ## Generating channels
 

@@ -1,11 +1,19 @@
 # Glossary
 
+----[mlm]----
 > WARNING
 >
-> The Available Balance report will be disabled from March 1st, 2022
+> Important
 >
-> You can use the [Releases report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/released-money/introduction) to reconcile the transactions that affect the balance available in your account, including your bank withdrawals.
-
+> As of December 12th, you will no longer be able to create new "Money withdrawn" reports. In order to keep tracking all the transfers, withdrawals and movements of your available money, [please use the "Releases" report.](https://bit.ly/3QiCD2f)
+------------
+----[mla]----
+> WARNING
+>
+> Important
+>
+> As of December 5th, you will no longer be able to create new "Money withdrawn" reports. In order to keep tracking all the transfers, withdrawals and movements of your available money, [please use the "Releases" report.](https://bit.ly/3JzFPEG)
+------------
 
 We know, some terms are technical and you may not be familiar with all of them. Use this glossary to not get lost!
 

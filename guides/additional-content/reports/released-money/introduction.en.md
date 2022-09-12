@@ -3,12 +3,19 @@
 
 Releases report is a **downloadable report that allows you to know the liquidity of your business and to know how your available money is composed in Mercado Pago.** It contains the **detail of all funds involved in a date period,** and includes money release cases as well as blockings and unblockings.
 
-----[cbt]----
+----[mlm]----
 > WARNING
 >
 > Important
 >
-> The reports you generate from October 12th onwards will show your money movements in chronological order, so you will be able to identify them more easily and better control your business finances.[Learn how to use it.](https://bit.ly/3zCb1ye)
+> The reports you generate from October 12th onwards will show your money movements in chronological order, so you will be able to identify them more easily and better control your business finances. [Learn how to use it.](https://bit.ly/3zCb1ye)
+------------
+----[mla]----
+> WARNING
+>
+> Important
+>
+> The reports you generate from October 5th onwards will show your money movements in chronological order, so you will be able to identify them more easily and better control your business finances. [Learn how to use it.](https://bit.ly/3zCb1ye)
 ------------
 
 ## How do I download the report?
