@@ -48,11 +48,11 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 | OPERATION_TAGS | São etiquetas para categorizar e/ou segmentar diferentes aspectos da transação, como por exemplo, os canais usados para fazer um pagamento. Eles são identificados como: <br><br>  -   WHATSAPP_PAY: Esta etiqueta indica que o pagamento foi feito via WhatsApp <br> -   CASHOUT: Esta etiqueta indica que a transação corresponde a um Pix Saque <br> -   EXTRACASHOUT: Esta etiqueta indica que a transação corresponde a um Pix Troco <br> -   PIX: Esta etiqueta indica que a transação corresponde a um pagamento via Pix.| ----[mlb]----
 | INSTALLMENT_NUMBER* | Indica o número da parcela que será paga, do total de parcelas contratadas.<br> Essa informação aparece quando o cliente solicita o parcelamento da compra.<br> Por exemplo: 2 / 5 indica o pagamento da segunda parcela, de um total das 5 parcelas contratadas.<br> Quando o pagamento é liberado em uma única parcela essa coluna não estará preenchida. | ------------ ----[mlb]----
 | INSTALLMENT_NET_AMOUNT* | Mostra o valor líquido da parcela que será paga.<br> Essa informação aparece quando o cliente escolhe pagar o valor total da compra em parcelas mensais. | ------------ ----[mla]----
-| PAYER_NAME* | Nome de quem faz o pagamento. | ------------ ----[mla]----
-| PAYER_ID_TYPE* | Tipo de identificação de quem faz um pagamento ou doação. | ------------ ----[mla]----
-| PAYER_ID_NUMBER* | Número de identificação de quem faz um pagamento ou doação. | ------------
-
-----[mla]----
+| PAYER_NAME | Nome de quem faz o pagamento. | ------------ ----[mla]----
+| PAYER_ID_TYPE | Tipo de identificação de quem faz um pagamento ou doação. | ------------ ----[mla]----
+| PAYER_ID_NUMBER | Número de identificação de quem faz um pagamento ou doação. | ----------------[mla]----  ------------
+| BUSINESS_UNIT* | Corresponde ao canal pelo qual uma venda foi gerada. Os canais são Mercado Pago, Mercado Livre, Mercado Shops e Delivery.|
+| SUB_UNIT* | Permite identificar o meio de pagamento usado para cobrar por uma venda com o Mercado Pago.|
 > INFO
 >
 > (*) Estas informações só podem ser usadas para fins de reconciliação e serão tratadas de acordo com as leis de 
