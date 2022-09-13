@@ -153,7 +153,9 @@ Ao concluir a configuração, um evento `Purchase` será associado ao pixel espe
 
 ## Google Ads
 
-Ao criar uma preferência, você pode associá-la a uma tag (identificador) para acompanhamento das conversões do Google Ads. Para integrar o Checkout Pro com o Google Ads, utilize um dos códigos disponíveis abaixo.
+Ao criar uma preferência, você pode associá-la a uma tag (identificador) para acompanhamento das conversões do Google Ads. 
+
+Para integrar o Checkout Pro com o Google Ads, utilize um dos códigos disponíveis abaixo.
 
 [[[
 ```php

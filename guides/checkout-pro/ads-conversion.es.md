@@ -23,7 +23,9 @@ El análisis de conversión de anuncios permite evaluar la relevancia y el retor
 
 ## Facebook Ads
 
-Al crear una preferencia, puedes asociarla con un pixel (identificador) para rastrear las conversiones de anuncios de Facebook. Para integrar Checkout Pro con los anuncios de Facebook siga los pasos a continuación.
+Al crear una preferencia, puedes asociarla con un pixel (identificador) para rastrear las conversiones de anuncios de Facebook. 
+
+Para integrar Checkout Pro con los anuncios de Facebook siga los pasos a continuación.
 
 [[[
 ```php
@@ -151,7 +153,9 @@ Una vez completada la configuración, se asociará un evento de `purchase` con e
 
 ## Google Ads
 
-Al crear una preferencia, puedes asociarla con una tag (identificador) para realizar un seguimiento de las conversiones de Google Ads. Para integrar Checkout Pro con Google Ads, use uno de los códigos disponibles a continuación.
+Al crear una preferencia, puedes asociarla con una tag (identificador) para realizar un seguimiento de las conversiones de Google Ads. 
+
+Para integrar Checkout Pro con Google Ads, use uno de los códigos disponibles a continuación.
 
 
 [[[
