@@ -1,4 +1,4 @@
-# Redireccionamiento 
+# URLs de retorno
 
 Al final del proceso de pago, es posible redirigir al comprador a otro entorno del sitio a través del atributo `back_urls`. Este atributo le permite definir las URL a las que se debe redirigir el comprador al completar el pago.
 

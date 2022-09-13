@@ -1,4 +1,4 @@
-# Redirection
+# Back URLs
 
 At the end of the payment process, it is possible to redirect the buyer back to your website via the `back_urls` attribute. This attribute allows you to define the URLs where the buyer should be redirected according to the payment status.
 
