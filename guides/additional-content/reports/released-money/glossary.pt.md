@@ -41,11 +41,11 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 | CARD_INITIAL_NUMBER | Corresponde aos primeiros dígitos do cartão de crédito ou débito utilizado para realizar a compra. |
 | OPERATION_TAGS | São etiquetas para categorizar e/ou segmentar diferentes aspectos da transação, como por exemplo, os canais usados para fazer um pagamento. Eles são identificados como:<br><br>  -   WHATSAPP_PAY: Esta etiqueta indica que o pagamento foi feito via WhatsApp <br> -   CASHOUT: Esta etiqueta indica que a transação corresponde a um Pix Saque <br> -   EXTRACASHOUT: Esta etiqueta indica que a transação corresponde a um Pix Troco <br> -   PIX: Esta etiqueta indica que a transação corresponde a um pagamento via Pix. |
 | ITEM_ID | Identificador do produto vendido. | ----[mla]----
-| PAYER_NAME | Nome de quem faz o pagamento. | ------------ ----[mla]----
-| PAYER_ID_TYPE | Tipo de identificação de quem faz um pagamento ou doação. | ------------ ----[mla]----
-| PAYER_ID_NUMBER | Número de identificação de quem faz um pagamento ou doação. | ----------------[mla]----  ------------
-| BUSINESS_UNIT* | Corresponde ao canal pelo qual uma venda foi gerada. Os canais são Mercado Pago, Mercado Livre, Mercado Shops e Delivery.|
-| SUB_UNIT* | Permite identificar o meio de pagamento usado para cobrar por uma venda com o Mercado Pago.|
+| PAYER_NAME* | Nome de quem faz o pagamento. | ------------ ----[mla]----
+| PAYER_ID_TYPE* | Tipo de identificação de quem faz um pagamento ou doação. | ------------ ----[mla]----
+| PAYER_ID_NUMBER* | Número de identificação de quem faz um pagamento ou doação. | ----------------[mla]----  ------------
+| BUSINESS_UNIT | Corresponde ao canal pelo qual uma venda foi gerada. Os canais são Mercado Pago, Mercado Livre, Mercado Shops e Delivery.|
+| SUB_UNIT | Permite identificar o meio de pagamento usado para cobrar por uma venda com o Mercado Pago.|
 > INFO
 >
 > (*) Estas informações só podem ser usadas para fins de reconciliação e serão tratadas de acordo com as leis de

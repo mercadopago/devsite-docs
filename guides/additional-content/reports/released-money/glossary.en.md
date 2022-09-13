@@ -48,11 +48,11 @@ If you have any doubts about the technical terms used, check the glossary below.
 | CARD_INITIAL_NUMBER | It corresponds to the first digits of the credit or debit card that you used to make the purchase. |
 | OPERATION_TAGS | These are labels to categorize and/or segment different aspects of the transaction, such as the channels used to make a payment. They are identified as:<br>WHATSAPP_PAY: This label indicates that the payment was made via WhatsApp<br>QR: This label indicates that the payment was made with a QR code<br>PO: This label indicates that the payment was made with Point<br>MARKETPLACE: This label indicates that the payment was made directly in Mercado Libre. |
 | ITEM_ID | Identifier of the product sold. | ----[mla]---- 
-| PAYER_NAME | Name of who is making a payment or donation. | ------------ ----[mla]----
-| PAYER_ID_TYPE | Type of identification of who is making a payment or donation. | ------------ ----[mla]----
-| PAYER_ID_NUMBER | Identification number of who is making a payment or donation. | ----------------[mla]----  ------------
-| BUSINESS_UNIT* | Corresponds to the channel through which an order was generated. The channels are Mercado Pago, Mercado Libre, Mercado Shops and Delivery.|
-| SUB_UNIT* | Allows you to identify the method that was used to collect the payment of an order with Mercado Pago.|
+| PAYER_NAME* | Name of who is making a payment or donation. | ------------ ----[mla]----
+| PAYER_ID_TYPE* | Type of identification of who is making a payment or donation. | ------------ ----[mla]----
+| PAYER_ID_NUMBER* | Identification number of who is making a payment or donation. | ----------------[mla]----  ------------
+| BUSINESS_UNIT | Corresponds to the channel through which an order was generated. The channels are Mercado Pago, Mercado Libre, Mercado Shops and Delivery.|
+| SUB_UNIT | Allows you to identify the method that was used to collect the payment of an order with Mercado Pago.|
 > INFO
 >
 > (*) This information can only be used for reconciliation purposes, will be treated according to the applicable
