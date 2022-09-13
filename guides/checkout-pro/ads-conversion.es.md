@@ -23,16 +23,7 @@ El análisis de conversión de anuncios permite evaluar la relevancia y el retor
 
 ## Facebook Ads
 
-La integración de Checkout Pro con Facebook ads se realiza a través de la API de Preferencias agregando el `pixel_id` de sus anuncios o a través de nuestros SDKs.
-
-Para integrar Checkout Pro con los anuncios de Facebook a través de la API, siga los pasos a continuación o, si lo prefiere, use uno de los códigos disponibles a continuación.
-
-
-1. Envía un **POST** con el parámetro `tracks` con los atributos `type` y `values` al endpoint [/checkout/preferences](/developers/es/reference/preferences/_checkout_preferences/post).
-2. En `type` ingresa 'facebook_ad'.
-3. En `value` ingresa el Pixel ID, que puede ser encontrado en el panel de administración de anuncios de Facebook.
-4. Ejecuta el request.
-
+Al crear una preferencia, puedes asociarla con un pixel (identificador) para rastrear las conversiones de anuncios de Facebook. Para integrar Checkout Pro con los anuncios de Facebook siga los pasos a continuación.
 
 [[[
 ```php
@@ -143,35 +134,6 @@ preference_data = {
 preference_response = sdk.preference().create(preference_data)
 preference = preference_response["response"]
 ```
-```curl
-===
-Agrega el código en la preferencia y reemplaza el valor <code>PIXEL_ID</code> por tu identificador.
-===
-
-curl -X POST \
-  'https://api.mercadopago.com/checkout/preferences' \
-  -H 'Content-Type: application/json' \
-  -H 'cache-control: no-cache' \
-  -H 'Authorization: Bearer PROD_ACCESS_TOKEN' \
-  -d '{
-	"items": [
-        {
-            "id_product":1,
-            "quantity":1,
-            "unit_price": 234.33,
-            "titulo":"Mi producto"
-        }
-    ],
-    "tracks": [
-        {
-            "type": "facebook_ad",
-            "values": {
-                "pixel_id": "PIXEL_ID"
-            }
-        }
-    ]
-}'
-```
 ]]]
 
 
@@ -189,17 +151,7 @@ Una vez completada la configuración, se asociará un evento de `purchase` con e
 
 ## Google Ads
 
-La integración de Checkout Pro con Google Ads se realiza a través de la API de Preferencias mediante el envío de la información de identificación de la cuenta de Google Ads en el parámetro `tracks` en el cuerpo del request o a través de nuestros SDK.
-
-Para integrar Checkout Pro con Google Ads a través de la API, siga los pasos a continuación o, si lo prefiere, use uno de los códigos disponibles a continuación.
-
-
-
-1. Envía el parámetro `tracks` con los atributos `type`, `conversion_id` y `conversion_label` al endpoint [/checkout/preferences](/developers/es/reference/preferences/_checkout_preferences/post).
-2. En `type`, ingresa 'google_ad'.
-3.  En `CONVERSION_ID` y  `CONVERSION_LABEL`, ingresa tu ID de conversión y Etiqueta de conversión disponibles en tu cuenta de Google Analytics.
-4. Ejecuta el request.
-
+Al crear una preferencia, puedes asociarla con una tag (identificador) para realizar un seguimiento de las conversiones de Google Ads. Para integrar Checkout Pro con Google Ads, use uno de los códigos disponibles a continuación.
 
 
 [[[
@@ -321,37 +273,7 @@ preference_data = {
 preference_response = sdk.preference().create(preference_data)
 preference = preference_response["response"]
 ```
-```curl
-===
-Agrega el código en la preferencia y reemplaza los valores <code>CONVERSION\_ID</code> y <code>CONVERSION\_LABEL</code> por los datos de tu _tag_.
-===
-curl -X POST \
-  'https://api.mercadopago.com/checkout/preferences' \
-  -H 'Content-Type: application/json' \
-  -H 'cache-control: no-cache' \
-  -H 'Authorization: Bearer PROD_ACCESS_TOKEN' \
-  -d '{
-	"items": [
-        {
-            "id_product":1,
-            "quantity":1,
-            "unit_price": 234.33,
-            "titulo":"Mi producto"
-        }
-    ],
-    "tracks": [
-        {
-            "type": "google_ad",
-            "values": {
-                "conversion_id", "CONVERSION_ID",
-                "conversion_label", "CONVERSION_LABEL"
-            }
-        }
-    ]
-}'
-```
 ]]]
-
 
 
 Una vez completada la configuración, se asociará una conversión con la _tag_ especificada cuando se apruebe un pago reenviado para tu anuncio.

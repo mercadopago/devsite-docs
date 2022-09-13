@@ -23,15 +23,9 @@ A análise da conversão de anúncios possibilita avaliar a relevância e retorn
 
 ## Facebook Ads
 
-A integração do Checkout Pro com o Facebook Ads é feita através da API de Preferências adicionando o `pixel_id`  dos seus anúncios ou através dos nossos SDKs.
+Ao criar uma preferência, você pode associá-la a um pixel (identificator) para acompanhamento das conversões dos seus anúncios através do Facebook Ads.
 
-Para integrar o Checkout Pro com o Facebook Ads via API, siga as etapas abaixo ou, se preferir, utilize um dos códigos disponíveis a seguir.
-
-
-1. Envie um POST com o parâmetro "tracks" com os atributos `type` e `values` ao endpoint [/checkout/preferences](/developers/pt/reference/preferences/_checkout_preferences/post).
-2. Em `type` insira `facebook_ad`.
-3. Em `value` insira o Pixel ID, que pode ser encontrado no painel de gerenciamento de anúncios do Facebook.
-4. Execute a requisição.
+Para integrar o Checkout Pro com o Facebook Ads, utilize um dos códigos disponíveis abaixo.
 
 [[[
 ```php
@@ -145,37 +139,7 @@ preference_data = {
 preference_response = sdk.preference().create(preference_data)
 preference = preference_response["response"]
 ```
-```curl
-===
-Adicione o código na preferência e substitua o valor <code>pixel_id</code> pelo seu identificador.
-===
-
-curl -X POST \
-  'https://api.mercadopago.com/checkout/preferences' \
-  -H 'Content-Type: application/json' \
-  -H 'cache-control: no-cache' \
-  -H 'Authorization: Bearer PROD_ACCESS_TOKEN' \
-  -d '{
-	"items": [
-        {
-            "id_product":1,
-            "quantity":1,
-            "unit_price": 234.33,
-            "titulo":"Mi producto"
-        }
-    ],
-    "tracks": [
-        {
-            "type": "facebook_ad",
-            "values": {
-                "pixel_id": "PIXEL_ID"
-            }
-        }
-    ]
-}'
-```
 ]]]
-
 
 Ao concluir a configuração, um evento `Purchase` será associado ao pixel especificado quando um pagamento encaminhado pelo seu anúncio for aprovado.
 
@@ -189,17 +153,7 @@ Ao concluir a configuração, um evento `Purchase` será associado ao pixel espe
 
 ## Google Ads
 
-A integração do Checkout Pro com o Google Ads é feita através da API de Preferências enviando as informações de identificação da conta do Google Ads no parâmetro `tracks` no body da requisição ou através dos nossos SDKs.
-
-Para integrar o Checkout Pro com o Google Ads via API, siga as etapas abaixo ou, se preferir, utilize um dos códigos disponíveis a seguir.
-
-
-
-1. Envie o parâmetro `tracks` com os atributos `type`, `conversion_id` e `conversion_label` ao endpoint [/checkout/preferences](/developers/pt/reference/preferences/_checkout_preferences/post). 
-2. Em `type`, insira `google_ad`.
-3. Em `CONVERSION_ID` e `CONVERSION_LABEL`, insira o seu ID de conversão e o Rótulo de conversão disponíveis na conta do Google Analytics.
-4. Execute a requisição.
-
+Ao criar uma preferência, você pode associá-la a uma tag (identificador) para acompanhamento das conversões do Google Ads. Para integrar o Checkout Pro com o Google Ads, utilize um dos códigos disponíveis abaixo.
 
 [[[
 ```php
@@ -320,38 +274,7 @@ preference_data = {
 preference_response = sdk.preference().create(preference_data)
 preference = preference_response["response"]
 ```
-```curl
-===
-Adicione o código na preferência e substitua os valores <code>CONVERSION\_ID</code> e <code>CONVERSION\_LABEL</code> pelos dados da sua _tag_.
-===
-curl -X POST \
-  'https://api.mercadopago.com/checkout/preferences' \
-  -H 'Content-Type: application/json' \
-  -H 'cache-control: no-cache' \
-  -H 'Authorization: Bearer PROD_ACCESS_TOKEN' \
-  -d '{
-	"items": [
-        {
-            "id_product":1,
-            "quantity":1,
-            "unit_price": 234.33,
-            "titulo":"Mi producto"
-        }
-    ],
-    "tracks": [
-        {
-            "type": "google_ad",
-            "values": {
-                "conversion_id", "CONVERSION_ID",
-                "conversion_label", "CONVERSION_LABEL"
-            }
-        }
-    ]
-}'
-```
 ]]]
-
-
 
 Ao concluir a configuração, uma conversão será associada à tag especificada quando um pagamento encaminhado pelo seu anúncio for aprovado.
 

@@ -23,15 +23,7 @@ The ads conversion analysis makes it possible to evaluate the relevance and retu
 
 ## Facebook Ads
 
-Checkout Pro's integration with Facebook Ads is done using the Preferences API by adding the `pixel_id` of your ads or through our SDKs.
-
-To integrate Checkout Pro with Facebook Ads via API, follow the steps below or, if you prefer, use one of the codes available below.
-
-
-1. Send a POST with the parameter "tracks" with the attributes `type` and `values` to the endpoint [/checkout/preferences](/developers/en/reference/preferences/_checkout_preferences/post).
-2. In `type` enter `facebook_ad`.
-3. In `value` enter the Pixel ID, which can be found in the Facebook ad management panel.
-4. Execute the request.
+When creating a preference, you can associate it with a pixel (identifier) for tracking Facebook Ads conversions. Checkout Pro's integration. To integrate Checkout Pro with Facebook Ads, use one of the codes available below.
 
 [[[
 ```php
@@ -145,35 +137,6 @@ preference_data = {
 preference_response = sdk.preference().create(preference_data)
 preference = preference_response["response"]
 ```
-```curl
-===
-Add the code in the preference and replace the <code>pixel_id</code> value with your identifier.
-===
-
-curl -X POST \
-'https://api.mercadopago.com/checkout/preferences' \
--H 'Content-Type: application/json' \
--H 'cache-control: no-cache' \
--H 'Authorization: Bearer PROD_ACCESS_TOKEN' \
--d '{
-	"items": [
-{
-"id_product":1,
-"quantity":1,
-"unit_price": 234.33,
-"title":"My product"
-}
-],
-"tracks": [
-{
-"type": "facebook_ad",
-"values": {
-"pixel_id": "PIXEL_ID"
-}
-}
-]
-}'
-```
 ]]]
 
 
@@ -189,16 +152,7 @@ When finishing the configuration, a `Purchase` event will be associated with the
 
 ## Google Ads
 
-Checkout Pro's integration with Google Ads is done through the Preferences API by sending the Google Ads account identification information in the `tracks` parameter in the request body or through our SDKs.
-
-To integrate Checkout Pro with Google Ads via API, follow the steps below or, if you prefer, use one of the codes available below.
-
-
-1. Send the `tracks` parameter with the `type`, `conversion_id` and `conversion_label` attributes to the endpoint [/checkout/preferences](/developers/en/reference/preferences/_checkout_preferences/post).
-2. In `type`, enter `google_ad`.
-3. Under `CONVERSION_ID` and `CONVERSION_LABEL`, enter your Conversion ID and Conversion Label available in your Google Analytics account.
-4. Execute the request.
-
+When creating a preference, you can associate it with a tag (identifier) for tracking Google Ads conversions. To integrate Checkout Pro with Google Ads, use one of the codes available below.
 
 [[[
 ```php
@@ -319,37 +273,7 @@ preference_data = {
 preference_response = sdk.preference().create(preference_data)
 preference = preference_response["response"]
 ```
-```curl
-===
-Add the code to the preference and replace the <code>CONVERSION\_ID</code> and <code>CONVERSION\_LABEL</code> values with your _tag_ data.
-===
-curl -X POST \
-'https://api.mercadopago.com/checkout/preferences' \
--H 'Content-Type: application/json' \
--H 'cache-control: no-cache' \
--H 'Authorization: Bearer PROD_ACCESS_TOKEN' \
--d '{
-	"items": [
-{
-"id_product":1,
-"quantity":1,
-"unit_price": 234.33,
-"title":"My product"
-}
-],
-"tracks": [
-{
-"type": "google_ad",
-"values": {
-"conversion_id", "CONVERSION_ID",
-"conversion_label", "CONVERSION_LABEL"
-}
-}
-]
-}'
-```
 ]]]
-
 
 
 Once setup is complete, a conversion will be associated with the specified tag when a payment forwarded by your ad is approved.

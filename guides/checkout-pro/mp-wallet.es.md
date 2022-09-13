@@ -22,9 +22,13 @@ Siga los pasos a continuación para configurar el Monedero de Mercado Pago como 
 > Crear preferencia
 
 
-Si es un usuario y desea que todos sus pagos se realicen a través de Wallet, puede determinarlo a través de un atributo en la llamada a la API de preferencias.
+Si es un usuario y desea que todos sus pagos se realicen a través de Wallet, puede determinarlo a través de un atributo en la llamada a la API de preferencias. Para crear una preferencia, use uno de los SDK disponibles a continuación.
 
-Para eso, envíe un **POST** con el parámetro `purpose` y el valor `wallet_purchase` al endpoint [/checkout/preferences](/developers/es/reference/preferences/_checkout_preferences/post) y ejecute el request o, si lo prefiere, use uno de los SDK a continuación.
+> NOTE
+>
+> Importante
+>
+> Además de las SDKs, también es posible crear una preferencia a través de la API de preferencias.Para eso, envíe un **POST** con el parámetro `purpose` y el valor `wallet_purchase` al endpoint [/checkout/preferences](/developers/es/reference/preferences/_checkout_preferences/post) y ejecute el request o, si lo prefiere, use uno de los SDK a continuación.
 
 
 
@@ -153,26 +157,6 @@ preference_data = {
 
 preference_response = sdk.preference().create(preference_data)
 preference = preference_response["response"]
-```
-```curl
-===
-El modo billetera funciona añadiendo el atributo _purpose_ en la preferencia.
-===
-curl -X POST \
-  'https://api.mercadopago.com/checkout/preferences' \
-  -H 'Content-Type: application/json' \
-  -H 'cache-control: no-cache' \
-  -H 'Authorization: Bearer **PROD_ACCESS_TOKEN**' \
-  -d '{
-    "items": [
-        {
-            "title": "Mi producto",
-            "quantity": 1,
-            "unit_price": 75
-        }
-    ],
-    "purpose": "wallet_purchase"
-}'
 ```
 ]]]
 

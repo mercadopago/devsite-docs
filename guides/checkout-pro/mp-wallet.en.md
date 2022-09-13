@@ -23,9 +23,13 @@ Follow the steps below to configure the Mercado Pago Wallet as a payment method.
 > Create preference
 
 
-If you are a user and want all your payments to be made via Wallet, you can determine this via an attribute in the preferences API call.
+If you are a user and want all your payments to be made via Wallet, you can determine this via an attribute in the preferences API. To create a preference, use one of the SDKs below.
 
-For that, send a **POST** with the parameter `purpose` and the value `wallet_purchase` to the endpoint [/checkout/preferences](/developers/en/reference/preferences/_checkout_preferences/post) and execute the request or, if you prefer, use one of the SDKs below.
+> NOTE
+>
+> Important
+>
+> In addition to the SDKs, it is also possible to create a preference through the preferences API. For that, send a **POST** with the parameter `purpose` and the value `wallet_purchase` to the endpoint [/checkout/preferences](/developers/en/reference/preferences/_checkout_preferences/post) and execute the request or, if you prefer, use one of the SDKs below.
 
 
 
@@ -154,26 +158,6 @@ preference_data = {
 
 preference_response = sdk.preference().create(preference_data)
 preference = preference_response["response"]
-```
-```curl
-===
-Wallet mode works by adding the _purpose_ attribute to the preference.
-===
-curl -X POST \
-'https://api.mercadopago.com/checkout/preferences' \
--H 'Content-Type: application/json' \
--H 'cache-control: no-cache' \
--H 'Authorization: Bearer **PROD_ACCESS_TOKEN**' \
--d '{
-"items": [
-{
-"title": "My product",
-"quantity": 1,
-"unit_price": 75
-}
-],
-"purpose": "wallet_purchase"
-}'
 ```
 ]]]
 

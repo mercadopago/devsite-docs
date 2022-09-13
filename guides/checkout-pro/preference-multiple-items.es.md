@@ -150,29 +150,6 @@ preference_data = {
 preference_response = sdk.preference().create(preference_data)
 preference = preference_response["response"]
 ```
-```curl
-curl -X POST \
-  'https://api.mercadopago.com/checkout/preferences' \
-  -H 'Content-Type: application/json' \
-  -H 'cache-control: no-cache' \
-  -H 'Authorization: Bearer PROD_ACCESS_TOKEN' \
-  -d '{
-	"items": [
-	{
-		"id_product":1,
-		"quantity":1,
-		"unit_price": 234.33,
-		"titulo":"Mi producto"
-	},
-	{
-		"id_product":2,
-		"quantity":2,
-		"unit_price": 255.33,
-		"titulo":"Mi producto 2"
-	}
-]
-}'
-```
 ]]]
 
 

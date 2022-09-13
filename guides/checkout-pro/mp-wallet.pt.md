@@ -22,10 +22,13 @@ Siga as etapas abaixo para configurar a Carteira Mercado Pago como meio de pagam
 >
 > Criar preferência
 
+Se você é um usuário e deseja que todos os seus pagamentos sejam feitos via Wallet, é possível determinar isso através de um atributo na chamada de preferências. Para criar uma preferência, utilize um dos SDKs disponíveis abaixo.
 
-Se você é um usuário e deseja que todos os seus pagamentos sejam feitos via Wallet, é possível determinar isso através de um atributo na chamada de API de preferências.
-
-Para isso, envie um **POST** com o parâmetro `purpose` e o valor `wallet_purchase` ao endpoint [/checkout/preferences](/developers/pt/reference/preferences/_checkout_preferences/post) e execute a requisição ou, se preferir, utilize um dos SDKs abaixo.
+> NOTE
+>
+> Importante
+>
+> Além dos SDKs, também é possível criar uma preferência através da API de preferências. Para isso, envie um **POST** com o parâmetro `purpose` e o valor `wallet_purchase` ao endpoint [/checkout/preferences](/developers/pt/reference/preferences/_checkout_preferences/post) e execute a requisição.
 
 
 
@@ -154,26 +157,6 @@ preference_data = {
 
 preference_response = sdk.preference().create(preference_data)
 preference = preference_response["response"]
-```
-```curl
-===
-O modo carteira funciona adicionando o atributo _purpose_ na preferência.
-===
-curl -X POST \
-  'https://api.mercadopago.com/checkout/preferences' \
-  -H 'Content-Type: application/json' \
-  -H 'cache-control: no-cache' \
-  -H 'Authorization: Bearer **PROD_ACCESS_TOKEN**' \
-  -d '{
-    "items": [
-        {
-            "title": "Meu produto",
-            "quantity": 1,
-            "unit_price": 75
-        }
-    ],
-    "purpose": "wallet_purchase"
-}'
 ```
 ]]]
 

@@ -35,7 +35,7 @@ En la siguiente tabla, detallamos los atributos de preferencia y la descripción
 ------------
 
 
-Con estas informaciones, envía los atributos necesarios al endpoint [/checkout/preferences](/developers/es/reference/preferences/_checkout_preferences/post) y ejecuta el request o, si lo prefieres, utiliza uno de los códigos disponibles a continuación.
+Con esta información en la mano, utilice uno de los códigos disponibles a continuación para configurar los métodos de pago que desea ofrecer.
 
 
 [[[

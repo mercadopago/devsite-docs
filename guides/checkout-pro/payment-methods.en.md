@@ -14,7 +14,7 @@ In the table below, we detail the preference attributes and the description of e
 | `purpose` | By indicating the value `wallet_purchase` in this method, Checkout Pro will only accept payments from users registered in Mercado Pago, with card and account balance. |
 
 
-With this information in hand, send the necessary attributes to the endpoint [/checkout/preferences](/developers/en/reference/preferences/_checkout_preferences/post) and execute the request or, if you prefer, use one of the codes available below.
+With this information in hand, use one of the codes available below to configure the payment methods you want to offer.
 
 
 [[[
