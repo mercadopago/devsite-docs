@@ -12,7 +12,7 @@ Se estiver desativado, o pagamento poderá ficar pendente (no caso de exigir qua
 > A ativação do modo binário simplifica a integração com o Checkout Pro, mas pode acarretar no decréscimo da taxa de porcentagem de pagamentos aprovados. Isto porque, para manter o fluxo instantâneo, pagamentos pendentes ou ainda sendo processados serão por padrão automáticamente rejeitados.
 
 
-Para ativar o modo binário, envie o parâmetro `binary_mode` com o valor `true` ao endpoint [/checkout/preferences](/developers/pt/reference/preferences/_checkout_preferences/post) conforme indicado no exemplo abaixo e execute a requisição.
+Para ativar o modo binário, envie o parâmetro "binary_mode"  com o valor `true` ao endpoint [/checkout/preferences](/developers/pt/reference/preferences/_checkout_preferences/post) e execute a requisição conforme indicado no exemplo abaixo.
 
 
 ```json

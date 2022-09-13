@@ -1,4 +1,4 @@
-# Opening schema
+# Opening scheme
  
 The opening scheme allows you to define how the checkout will open to the user. By default, checkout pro opens in  **Modal** format, that is, in a window within the website itself, without redirecting to an external page to complete the payment.
  

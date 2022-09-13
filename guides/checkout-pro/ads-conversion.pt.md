@@ -184,7 +184,7 @@ Ao concluir a configuração, um evento `Purchase` será associado ao pixel espe
 >
 > Importante
 >
-> Somente é possível configurar um único pixel por preferência. Teste o funcionamento da sua integração utilizando a extensão do Chrome Facebook Pixel Helper. Para mais informações, visite o [site oficial do Facebook](https://www.facebook.com/business/help/742478679120153?id=1205376682832142).
+> Somente é possível configurar um único pixel por preferência. Teste o funcionamento da sua integração utilizando a extensão do Chrome Facebook Pixel Helper. Para mais informações, visite o site oficial do Facebook .
 
 
 ## Google Ads
@@ -360,4 +360,4 @@ Ao concluir a configuração, uma conversão será associada à tag especificada
 >
 > Importante
 >
-> Somente é possível configurar uma única tag por preferência. Para mais informações sobre as tags de conversões do Google Ads, visite o [site oficial do Google](https://support.google.com/google-ads?hl=es-419#topic=10286612).
+> Somente é possível configurar uma única tag por preferência. Para mais informações sobre as tags de conversões do Google Ads, visite o site oficial do Google .
