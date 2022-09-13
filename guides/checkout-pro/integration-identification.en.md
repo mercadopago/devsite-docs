@@ -1,6 +1,6 @@
 # Integration metrics
 
-Certified members of the [&lt;dev>program](https://www.mercadopago.com/developers/en/developer-program) can identify their Checkout Pro integrations to gain access to [program benefits](https ://www.mercadopago.com.br/developers/pt/developer-program#dev-program-benefits).
+Certified members of the [&lt;dev>program](https://www.mercadopago.com/developers/en/developer-program) can identify their Checkout Pro integrations to gain access to [program benefits](https://www.mercadopago.com.br/developers/pt/developer-program#dev-program-benefits).
 
 To work with metrics, use _headers_ in your payment preference, adding the identification code according to the desired scenario (it is not mandatory to complete the three fields mentioned below):
 
