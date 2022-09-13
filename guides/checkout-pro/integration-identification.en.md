@@ -1,13 +1,6 @@
-<<<<<<< HEAD
-## Integration metrics
- 
-Certified members of the [&lt;dev>program](https://www.mercadopago.com.br/developers/en/developer-program) can identify their Checkout Pro integrations to gain access to [program benefits](https://www.mercadopago.com.br/developers/en/developer-program#dev-program-benefits). To do this, you need to identify your integrations in the request header by inserting your [Integrator ID](/developers/en/guides/additional-content/dashboard/header#bookmark_integrator_id)
- 
-To identify your integrations, send the `integrator_id` parameter to the endpoint [/checkout/preferences](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/preferences/_checkout_preferences/post) and execute the request or, if you prefer, check out SDKs to carry out the integration using our libraries.
-=======
 # Integration metrics
 
-Certified members of the [&lt;dev>program](https://www.mercadopago.com/developers/en/developer-program) can identify their Checkout Pro integrations to gain access to [program benefits](https://www.mercadopago.com.br/developers/pt/developer-program#dev-program-benefits).
+Certified members of the [&lt;dev>program](https://www.mercadopago.com/developers/en/developer-program) can identify their Checkout Pro integrations to gain access to [program benefits](https ://www.mercadopago.com.br/developers/pt/developer-program#dev-program-benefits).
 
 To work with metrics, use _headers_ in your payment preference, adding the identification code according to the desired scenario (it is not mandatory to complete the three fields mentioned below):
 
@@ -18,7 +11,7 @@ To work with metrics, use _headers_ in your payment preference, adding the ident
 | `x-corporation-id` | Corporations | For accounts associated with a seller account or an economic group. |
 
 
-To identify your integrations, send the `integrator_id` parameter with the necessary information to the endpoint [/checkout/preferences](/developers/en/reference/preferences/_checkout_preferences/post) and execute the request or, if you prefer, use one of the codes available below.
+To identify your integrations, send the `integrator_id` parameter to the endpoint [/checkout/preferences](/developers/en/reference/preferences/_checkout_preferences/post) and execute the request or, if you prefer, use one of the codes available below.
 
 [[[
 ```php
@@ -101,5 +94,3 @@ curl -X POST \
 }'
 ```
 ]]]
-
->>>>>>> 943f5022c96ac0d2308d508877d15314fb19a4f4

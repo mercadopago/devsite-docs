@@ -396,11 +396,11 @@ A instalação é feita em **duas etapas**: incluindo o SDK do Mercado Pago ao p
 ```
 ]]]
 
-> NOTE
+> WARNING
 >
 > Importante
 >
-> Lembre-se de substituir o valor `BR` por seu país no campo `locale`.
+> Os pagamentos criados possuem os seguintes status: `Pendente`, `Rejeitado` e `Aprovado`. Para acompanhar as atualizações é necessário configurar seu sistema para receber as notificações de pagamentos e outras atualizações de status. Veja [Notificações](/developers/pt/docs/checkout-pro/additional-content/notifications/Introduction) para mais detalhes.
 
 No exemplo acima, um botão de pagamento será renderizado e ficará responsável por abrir o Checkout Pro. Caso queira personalizar a forma como o checkout será aberto, veja a seção [Esquema de abertura](/developers/pt/docs/checkout-pro/checkout-customization/user-interface/opening-schema)
 

@@ -7,13 +7,7 @@ Vigência é o período de validade definido para determinada preferência de pa
 2. Em `expires`, insira `true`.
 3. Em `expiration_date_from`, insira a data e horário do início da vigência. O valor deve seguir o formato ISO 8601: yyyy-MM-dd'T'HH:mm:sszas.
 4. Em `expiration_date_to`, insira a data e horário do fim da vigência. O valor deve seguir o formato ISO 8601: yyyy-MM-dd'T'HH:mm:sszas
-5. Execute a requisição.
-
-> NOTE
->
-> Importante
->
-> A data deve seguir o formato `ISO 8601: yyyy-MM-dd'T'HH:mm:ssz`.
+5. Execute a requisição e garanta que a data esteja de acordo com o exemplo mostrado abaixo.
 
 
 ```json
