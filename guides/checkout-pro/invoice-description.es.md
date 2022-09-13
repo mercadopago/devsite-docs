@@ -1,7 +1,9 @@
-# Descripción de la factura
+# Descripción de factura
 
-Descripción de la factura es una configuración que te permite definir el nombre del establecimiento que se mostrará en la factura del comprador. Esto permite la identificación del negocio y evita disputas innecesarias.
+Descripción de factura es una configuración que le permite definir el nombre del establecimiento que se mostrará en la factura del comprador. Esto permite la identificación comercial y evita disputas innecesarias.
 
-1. Envía un POST con el parámetro `statement_descriptor` al endpoint [/checkout/preferences](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/preferences/_checkout_preferences/post).
-2. En `statement_descriptor`, ingresa el nombre del establecimiento.
-3. Ejecuta la solicitud.
+Para mostrar la descripción en la factura del comprador, envíe un **POST** con el parámetro `statement_descriptor` informando el nombre del establecimiento como se indica en el siguiente ejemplo al endpoint [/checkout/preferences](/developers/es/reference/preferences/_checkout_preferences/post) y ejecuta la solicitud.
+
+```json
+"statement_descriptor": "MI NEGOCIO"
+```

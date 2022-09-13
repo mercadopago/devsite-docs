@@ -2,7 +2,7 @@
 
 Após integrar o Checkout Pro é possível definir e personalizar a interface exibida para o usuário incluindo o modo de entrada à tela de checkout. 
 
-Por padrão, o Checkout Pro é aberto com um botão de pagamento direcionando o usuário para concluir a compra, contudo, também é possível personalizar um botão de pagamento que permite abrir o checkout a partir de qualquer elemento desejado no site, sem necessariamente mostrar o botão de pagamento para o comprador.
+Por padrão, o **Checkout Pro é aberto com um botão de pagamento direcionando o usuário para concluir a compra**, contudo, também é possível personalizar um botão de pagamento que permite abrir o checkout a partir de qualquer elemento desejado no site, sem necessariamente mostrar o botão de pagamento para o comprador.
 
 Além disso, o Checkout Pro também pode ser aberto de forma automática, sem necessidade de qualquer ação por parte do comprador.
 

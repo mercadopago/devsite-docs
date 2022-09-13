@@ -31,6 +31,7 @@ bullet_section_with_media:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>> Available Payment Methods <<<<
 =======
 =======
@@ -79,11 +80,15 @@ bullet_section_with_media:
 
 --- mini_landing_separator ---
 >>>>>>> parent of fccfe398c... doc english version
+=======
+>>>> Available Payment Methods <<<<
+>>>>>>> 943f5022c96ac0d2308d508877d15314fb19a4f4
 
 >>>> Accepted payment methods <<<<
 ----[mlb]----
 
 ---
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 available_payments: credit, debit, Mercadopago, ticket, pix, pec
@@ -94,12 +99,16 @@ available_payments: credit, debit, mercadopago, ticket, pix, pec
 =======
 available_payments: credit, debit, mercadopago, ticket, pix, pec
 >>>>>>> parent of fccfe398c... doc english version
+=======
+available_payments: credit, debit, Mercadopago, ticket, pix, pec
+>>>>>>> 943f5022c96ac0d2308d508877d15314fb19a4f4
 ---
 ------------
 
 ----[mla, mlm, mlu, mco, mlc, mpe]----
 
 ---
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 available_payments: credit, debit, Mercadopago, ticket
@@ -110,6 +119,10 @@ available_payments: credit, debit, mercadopago, ticket
 =======
 available_payments: credit, debit, mercadopago, ticket
 >>>>>>> parent of fccfe398c... doc english version
+=======
+available_payments: credit, debit, Mercadopago, ticket
+>>>>>>> 943f5022c96ac0d2308d508877d15314fb19a4f4
 ---
 ------------
+
 > For details of accepted payment methods in each country, check the full list with [payment methods availability.](/developers/en/docs/sales-processing/payment-methods)

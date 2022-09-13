@@ -10,9 +10,13 @@ content_section_with_media:
 >>>> Disponibilidade por país<<<<
 ---
 available_countries: mla, mlb, mlm
+<<<<<<< HEAD
+---
+=======
 
 ---
 
+>>>>>>> b02ee64b67e4f7f3382576a4677bde5d2374decd
 ---
 bullet_section_with_media: 
  - title: Vantagens
@@ -48,7 +52,10 @@ bullet_section_with_media:
 
 
 ----[mlb]----
+<<<<<<< HEAD
+=======
 
+>>>>>>> b02ee64b67e4f7f3382576a4677bde5d2374decd
 ---
 bullet_section_with_media: 
  - title: Dispositivos disponíveis
@@ -79,5 +86,9 @@ bullet_section_with_media:
  - image: /point-api/landing.point.machines.png
 ---
 
+<<<<<<< HEAD
+------------
+=======
 ------------
 > Para detalhes dos meios de pagamento aceitos em cada país, verifique a lista completa com a [disponibilidade de meios de pagamento.](/developers/pt/docs/sales-processing/payment-methods)
+>>>>>>> b02ee64b67e4f7f3382576a4677bde5d2374decd

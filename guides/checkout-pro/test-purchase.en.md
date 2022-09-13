@@ -7,11 +7,19 @@ In this last scenario, previously saved cards and available account balance will
 ## Guest user
  
 1. Follow the purchase flow and, when opening the checkout, enter the **buyer user** data.
+<<<<<<< HEAD
 2. Select **card** as payment method and enter the data of one of the cards available on our page of [national test cards](/developers/en/guides/additional-content/testing/test-cards).
 3. Enter the email and complete the purchase.
  
 ## Registered user
  
+=======
+2. Select **Card** as payment method and enter the details of one of the available cards on our [test cards](/developers/en/docs/checkout-pro/additional-content/test-cards) page.
+3. Enter the desired email and complete the purchase.
+
+## Registered User
+
+>>>>>>> 943f5022c96ac0d2308d508877d15314fb19a4f4
 1. Follow the purchase flow and, when opening the checkout, enter the **buyer user** data.
 2. Access the Mercado Pago account using the **buyer test user**.
 3. Select **card** as payment method.

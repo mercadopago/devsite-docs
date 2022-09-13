@@ -372,7 +372,7 @@ A instalação é feita em **duas etapas**: incluindo o SDK do Mercado Pago ao p
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 
-2. Ao finalizar a inclusão do SDK Mercado Pago.js, configure as credenciais do SDK e inicialize seu checkout com o ID da preferência previamente criada e o identificador do elemento onde o botão de pagamento deverá ser exibido conforme exemplo abaixo.
+2. Ao finalizar a inclusão do SDK Mercado Pago.js, **configure as credenciais do SDK** e inicialize seu checkout com o **ID da preferência** previamente criada e o identificador do elemento onde o botão de pagamento deverá ser exibido conforme exemplo abaixo.
 
 
 [[[
@@ -396,6 +396,11 @@ A instalação é feita em **duas etapas**: incluindo o SDK do Mercado Pago ao p
 ```
 ]]]
 
+> NOTE
+>
+> Importante
+>
+> Lembre-se de substituir o valor `BR` por seu país no campo `locale`.
 
 No exemplo acima, um botão de pagamento será renderizado e ficará responsável por abrir o Checkout Pro. Caso queira personalizar a forma como o checkout será aberto, veja a seção [Esquema de abertura](/developers/pt/docs/checkout-pro/checkout-customization/user-interface/opening-schema)
 

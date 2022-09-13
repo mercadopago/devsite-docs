@@ -51,69 +51,20 @@ In the example above, a payment button will be rendered and will be responsible 
 >
 > Important
 >
-<<<<<<< HEAD
 > To test the checkout, you must access it through another browser or log out of your Mercado Pago account. This is because being logged into the same account responsible for creating the payment form makes it impossible to test the payment flow and guarantee its operation.
-=======
-> The value of `unit_price` must be an integer.
 
-------------
-
-
-> CLIENT_SIDE
+> PREV_STEP_CARD_EN
 >
-> h2
+> Create preferences
 >
-> Add Checkout
-
-
-Once you have created the preference in your backend, you will need to install the Mercado Pago frontend SDK to your project in order to add the Checkout Pro button.
-
-The installation is done in **two steps**: adding the Mercado Pago SDK to the project with your configured credentials and starting the checkout from the previously generated preference.
-
-
-
-1. To include the Mercado Pago.js SDK, add the code below to the project's HTML.
-
-
-```html
-// SDK MercadoPago.js
-<script src="https://sdk.mercadopago.com/js/v2"></script>
-```
-
-2. When you finish adding the Mercado Pago.js SDK, **configure the SDK credentials** and initialize your checkout with the **ID of the previously** created preference and the identifier of the element where the payment button should be displayed, as shown in the example below.
-
-
-[[[
-```html
-<div class="cho-container"></div>
-<script>
-const mp = new MercadoPago('PUBLIC_KEY', {
-locale: 'pt-BR'
-});
-
-mp.checkout({
-preference: {
-id: 'YOUR_PREFERENCE_ID'
-},
-render: {
-container: '.cho-container',
-label: 'Pay',
-}
-});
-</script>
-```
-]]]
-
-> NOTE
+> Check how to create information sets about a product and/or service.
 >
-> Important
+> [Create preferences](/developers/es/docs/checkout-pro/create-preference)
+
+> NEXT_STEP_CARD_EN
 >
-> Remember to replace the value `BR` to your country on `locale` field.
-
-In the example above, a payment button will be rendered and will be responsible for opening Checkout Pro. If you want to customize the way the checkout will be opened, see the section [Opening Schema](/developers/en/docs/checkout-pro/checkout-customization/user-interface/opening-schema)
-
-
-## Implementation example
-
-Check out the [full integration example](http://github.com/mercadopago/checkout-payment-sample) on GitHub for **PHP** or **NodeJS** to _download_ a basic project for quick implementation from Checkout Pro.
->>>>>>> 943f5022c96ac0d2308d508877d15314fb19a4f4
+> Term of preference 
+>
+> Learn how to set the validity period for a given payment preference.
+>
+> [Term of preference](/developers/en/docs/checkout-pro/checkout-customization/preferences/term-of-preference)
