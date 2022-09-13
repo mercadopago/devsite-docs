@@ -1,0 +1,30 @@
+# Configure payment methods
+
+To start charging with credit cards and transfers through Pix, follow these steps.
+
+## Activate payment methods
+
+Here's how to activate each payment method in your Salesforce store.
+
+### Pix
+
+> WARNING
+>
+> Important
+>
+> To offer payments with Pix, you must ensure that the Pix keys have been created. If you haven't created it yet, [click here](https://www.youtube.com/watch?v=60tApKYVnkA) and check the necessary steps.
+
+1. Within your Salesforce store, go to the **Merchant Tools** menu and click the **Payment Methods** option found within the Ordering group of options. You can also find the option using the menu search engine.
+2. To activate the Pix payment method, position yourself on the **PIX** option. Then, in the column "Enabled" and select the option **Yes** to enable it.
+
+### Credit card
+
+1. Within your Salesforce store, go to the **Merchant Tools** menu and click the **Payment Methods** option found within the Ordering group of options. You can also find the option using the menu search engine.
+2. To activate the credit card payment method, position yourself on the **CREDIT_CARD** option. Then, in the column "Enabled" and select the option **Yes** to enable it.
+
+## Choose the location of the means of payment
+
+By default, the Mercado Pago cartridge will first show the Pix payment method and then the credit card. If you want to change this order, follow these steps.
+
+1. Within your Salesforce store, go to the **Merchant Tools** menu and click the **Payment Methods** option found within the Ordering group of options. You can also find the option using the menu search engine.
+2. Within the box, look for the **Sort Order** column. In this column, assign a numerical order to the payment methods of your store to define the order in which you want to display them.
