@@ -1,4 +1,4 @@
-# Requisitos anteriores
+# Requisitos prévios
 
 Para integrar o Mercado Pago ao Salesforce, você deve cumprir com os requisitos listados abaixo.
 
