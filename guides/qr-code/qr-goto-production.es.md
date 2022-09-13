@@ -25,5 +25,3 @@ Estos son algunos puntos a tener en cuenta para aumentar la calidad de tus integ
 
 * Mantén actualizado el estado de los pedidos en tus sistemas usando y procesando notificaciones de IPN o Webhooks.
 * Utiliza los reportes de conciliación de API para mejorar la gestión financiera empresarial.
-
-

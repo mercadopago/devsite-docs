@@ -9,7 +9,6 @@ The following actions are available for **Mercado Pago Point**.
 |[Get devices](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/integrations_api/_point_integration-api_devices/get)|This endpoint allows you to get the devices.|
 |[Change operation mode](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/integrations_api/_point_integration-api_devices_device-id/patch)|This endpoint allows you to change the device operating mode.|
 
-
 ### Point Payments
 
 |Action|Description|

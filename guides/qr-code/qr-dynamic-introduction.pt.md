@@ -4,7 +4,6 @@ Este modelo permite que o valor a ser cobrado já esteja incluído no código QR
 
 É ideal para cobranças com código QR em tickets, serviços via dispositivos desktop ou pagamentos com valor incluído, entre outros.
 
-
 ## Descrição do modelo
 
 As suas principais características são:
@@ -18,4 +17,3 @@ As suas principais características são:
 > IMPORTANTE
 >
 > Lembre-se de que você só pode usar o QR para suas soluções de pagamento presencial.
-

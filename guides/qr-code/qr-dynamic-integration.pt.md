@@ -6,7 +6,6 @@ Para cobrar através de um QR Modelo Dinâmico, você precisará criar um pedido
 
 Assim é como o modelo dinâmico funciona:
 
-
 1. Um pedido com todos os dados de pagamento necessários é criado.
 2. A resposta incluirá uma string de dados com o atributo `qr_data'.
 3. Um código QR com o atributo recebido é gerado.
@@ -20,11 +19,9 @@ Antes de mais nada, gere a publicação do pedido. Assim que os dados forem envi
 
 Para gerar um pedido, acesse nossa [Referência de API](/developers/pt/reference/qr-dynamic/_instore_orders_qr_seller_collectors_user_id_pos_external_pos_id_qrs/post)  e execute a curl encontrada na mesma. Na resposta, você receberá os dados necessários para criar o código QR.
 
-
 ----[mco]----
 > Se você tiver que pagar IVA pelos produtos em seu pedido, consulte a [seção Considerações IVA Colômbia](/developers/en/guides/additional-content/localization/iva-colombia).
 ------------
-
 
 > NOTE
 >
@@ -55,7 +52,6 @@ Por exemplo:
 
 ------------
 
-
 ## Criar um pedido associado a uma caixa
 
 Além da geração do código QR, você também tem a opção de criar e atribuir o mesmo pedido ao código QR fixo do caixa.
@@ -68,4 +64,4 @@ As notificações IPN (Instant Payment Notification) são a **forma automática 
 
 Implemente o IPN de `merchant_order` com uma busca do pedido por `external_reference` como um método de contingência.
 
-[Receber notificações IPN](/developers/pt/docs/qr-code/additional-content/notifications/ipn)
+[Receber notificações IPN](/developers/pt/guides/additional-content/notifications/ipn/introduction)

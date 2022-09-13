@@ -8,5 +8,3 @@
 |Segundo intento de pago. El usuario realiza primero un pago rechazado y después un pago aprobado.|El sistema de Punto de Venta recibe la información de un pago rechazado y luego un pago aprobado.|No eliminar la orden luego de un pago rechazado.|
 |Devolución de pago. Se hace una devolución de un pago desde el Punto de Venta.|La devolución impacta en la cuenta del comprador.|[Ver Reembolsos y cancelaciones](/developers/es/docs/qr-code/additional-content/cancellations-and-refunds)|
 |Expiración de la orden. El usuario intenta pagar una vez vencido el QR.|Se elimina la orden y, por ende, al escanear el QR se muestra pantalla de error.|Intentar escanear el QR una vez sobrepasado el `expiration_date`|
-
-

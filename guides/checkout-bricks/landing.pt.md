@@ -18,10 +18,10 @@ bullet_section_with_media:
  - title: Bricks
  - type: reversed
  - message: Conheça todos os módulos do Checkout Bricks e as suas disponibilidades.
- - benefit_title: Card Payment Brick - Novo
- - benefit_message: Ofereça pagamentos com cartão de crédito e débito. 
- - benefit_title: Payment Brick - Em breve
- - benefit_message: Ofereça diferentes métodos de pagamento para os clientes escolherem.
+ - benefit_title: Card Payment Brick
+ - benefit_message: Ofereça pagamentos com cartão de crédito e débito.
+ - benefit_title: Payment Brick - Novo
+ - benefit_message: Ofereça diferentes métodos de pagamento para os clientes escolherem, com a capacidade de salvar detalhes do cartão para compras futuras.
  - benefit_title: Wallet Brick - Em breve
  - benefit_message: Vincule carteiras digitais e permita pagamentos registrados.
  - benefit_title: User Info Brick - Em breve

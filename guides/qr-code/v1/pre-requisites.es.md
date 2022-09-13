@@ -1,6 +1,5 @@
 # Requisitos previos para integrarte
 
-
 Ten en cuenta estos aspectos antes de empezar:
 
 ## 1. Accede a una cuenta
@@ -29,49 +28,9 @@ Si no tiene ninguna aplicación registrada, [vea el tutorial](https://youtu.be/F
 >
 > En caso de PDV integrador con varias conexiones con cuentas Mercado Pago, ver tema 4 y 5. Atención a la seguridad de su integración e implemente [Oauth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/security/oauth/introduction).
 
-
 ## 3. Generar usuarios de prueba
 
-Para comenzar la integración es necesario que tengas como mínimo dos usuarios: un comprador y un vendedor.
-
-Ejecuta el siguiente comando para generar un usuario de prueba:
-
-```curl
-curl -X POST \
--H "Content-Type: application/json" \
--H 'Authorization: Bearer ACCESS_TOKEN' \
-"https://api.mercadopago.com/users/test_user"
--d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]"}'
-```
-
-> NOTE
-> 
-> Nota
-> 
-> Las credenciales que utilices deben ser las productivas de la cuenta con la cual vayas a operar.  
-
-Respuesta:
-
-```json
-{
-    "id": 123456,
-    "nickname": "TT123456",
-    "password": "qatest123456",
-    "site_status": "active",
-    "email": "test_user_123456@testuser.com"
-}
-```
-
-> WARNING
-> 
-> IMPORTANTE
-> 
-> * Puedes generar hasta 10 cuentas de usuarios de prueba en simultáneo. Por eso, te recomendamos guardar el email y password de cada uno.
-> * Los usuarios de prueba caducan luego de 60 días sin actividad en Mercado Pago.
-> * Para hacer pagos de prueba te recomendamos usar montos bajos.
-> * Tanto el comprador como el vendedor deben ser usuarios de prueba.
-> * Usa tarjetas de pruebas, ya que no es posible retirar el dinero.
-> * Video tutorial sobre cómo crear un [usuario de prueba](https://youtu.be/VgXsbJB6rY0?list=PLCazXKuqZp3hGVY3bBhEO0ItFhIic5UpK) 
+[TXTSNIPPET][/guides/snippets/test-integration/create-test-users]
 
 Una vez creados los usuarios de pruebas, ya puedes comenzar con la integración y crear las sucursales y cajas.
 
@@ -87,11 +46,11 @@ El access token no se puede compartir de ninguna otra forma que no sea mediante 
 Para identificar las órdenes que son realizadas por tu punto de venta, incluye el Sponsor ID, consulta en las APIs de [órdenes presenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference) cómo enviar esta información.
  
 Paso a paso:
+
 > * Crear una cuenta en el portal de Mercado Pago (identificación del Integrador).
 > * Obtén la identificación del usuario (Cust ID o User ID) de su cuenta.
 > * Incluye el ID de usuario de su cuenta de integrador dentro del sponsor ID del vendedor.
 > * Envíe el sponsor ID en todas las transacciones QR. [Ver api](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/instore_orders/_mpmobile_instore_qr_user_id_external_id/post).
-
 
 > NEXT_STEP_CARD_ES
 >

@@ -7,7 +7,7 @@
       - mlm
 ---
 
-## Etapas para configurar
+# Etapas para configurar
 
 Os **passos para começar a operar com Mercado Pago,** são os seguintes:
 

@@ -12,14 +12,12 @@ Ao cobrar com seu QR impresso, é possível inserir o valor a ser pago a partir 
 2. Escolha a loja e o caixa onde efetuará a cobrança.
 3. Digite o valor a ser pago.
 4. O cliente escaneia o QR através do aplicativo do Mercado Livre ou Mercado Pago e escolhe o meio de pagamento.
- 
 
 Você poderá ver a confirmação do pagamento ao instante e os detalhes nas atividades da sua conta Mercado Pago.
 
 ## Como cobrar pelo aplicativo?
 
 Essa opção também está disponível. Vá para a seção **Cobrar**, digite o valor na calculadora e selecione **Cobrar com QR***. Para pagar, os clientes deverão escanear o código que aparece no seu dispositivo móvel e escolher o meio de pagamento desejado.
-
 
 ## Como gerar um QR de valor fixo? 
 
@@ -28,4 +26,3 @@ Em primeiro lugar, você precisa [criar um link de pagamento](https://www.mercad
 ## Verifique os pagamentos recebidos
 
 É possível verificar suas vendas na lista de atividades da [sua conta Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/atividades) ou [integrar notificações](/developers/pt/guides/notificações/ipn/introdução) no seu sistema.
-

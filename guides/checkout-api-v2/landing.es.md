@@ -42,6 +42,7 @@ bullet_section_with_media:
 >>>> Meios de pagamento aceitos <<<<
 ---
 available_payments: credit, debit, mercadopago, ticket
+
 ---
 
 ------------
@@ -51,7 +52,8 @@ available_payments: credit, debit, mercadopago, ticket
 >>>> Medios de pago permitidos <<<<
 ---
 available_payments: credit, debit, mercadopago, ticket, pix, pec
+
 ---
 
 ------------
-
+> Para obtener detalles sobre los medios de pago aceptados en cada país, consulte la lista completa con [disponibilidad de medios de pago.](/developers/es/docs/sales-processing/payment-methods)

@@ -17,7 +17,6 @@ sites_supported:
 >
 > Solo puedes integrar este producto si tu contacto comercial te compartió toda la información necesaria para hacerlo.
 
-
 Para integrar el modelo desatendido es necesario:
 
 1. Crear el servicio que será invocado al recibir una intención de pago y su lógica asociada cuando:
@@ -147,23 +146,3 @@ Debes informar a tu asesor técnico asignado la URL base de tu dominio a la que 
 > No funcionará la integración si no cumples con este paso.
 
 ---
-
-### Próximos pasos
-
-
-> LEFT_BUTTON_REQUIRED_ES
->
-> Integración avanzada
->
-> Conoce las opciones que dispones para llevar tu integración al siguiente nivel.
->
-> [Integración avanzada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/qr-code/qr-unattended-model/qr-advanced-integration)
-
-
-> RIGHT_BUTTON_RECOMMENDED_ES
->
-> Prueba tu integración
->
-> Realiza los casos de uso más frecuentes para validar tu integración.
->
-> [Prueba tu integración](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/qr-code/qr-unattended-model/qr-integration-test)

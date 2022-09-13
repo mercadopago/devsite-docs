@@ -9,17 +9,26 @@
 
 ----[mlb]----
 # Nuvemshop
+
+Nuvemshop is an **ecommerce platform that allows you to receive payments with Mercado Pago**. You can offer your clients the option to pay with credit card, boleto or Pix and [sell directly on your site](/developers/en/docs/nuvemshop/add-mercado-pago/#bookmark_transparent_checkout) or [charge through the Mercado Pago site](/developers/en/docs/nuvemshop/add-mercado-pago/#bookmark_checkout_pro).
+
 ------------
 
-<!-- -->
-----[mla, mlm, mlc, mlu, mpe, mco]----
+----[mco]----
 # Tiendanube
-## What is Tiendanube?
+
+Tiendanube is an **ecommerce platform that allows you to receive payments with Mercado Pago**. You can offer your clients the option to pay with credit card, via home banking or cash and [sell directly on your site](/developers/en/docs/nuvemshop/add-mercado-pago/#bookmark_checkout_api) or [charge through the Mercado Pago site](/developers/en/docs/nuvemshop/add-mercado-pago/#bookmark_checkout_pro).
+
 ------------
 
-----[mlb]---- Nuvemshop ------------ ----[mla, mlm, mlc, mlu, mpe, mco]---- Tiendanube ------------ is an **ecommerce platform that allows you to receive payments with Mercado Pago**. You can offer your clients the option to pay ----[mlb]---- with credit card, boleto or Pix ------------ ----[mla, mlm, mlc, mlu, mpe]---- with credit or debit card, or their preferred payment method ------------ ----[mco]---- with credit card, via home banking or cash ------------ and [sell directly on your site](#bookmark_transparent_checkout) or [charge through the Mercado Pago site](#bookmark_checkout_pro).
+----[mla, mlm, mlc, mlu, mpe]----
+# Tiendanube
 
-<!-- -->
+Tiendanube is an **ecommerce platform that allows you to receive payments with Mercado Pago**. You can offer your clients the option to pay with credit or debit card, or their preferred payment method and [sell directly on your site](/developers/en/docs/nuvemshop/add-mercado-pago/#bookmark_checkout_api) or [charge through the Mercado Pago site](/developers/en/docs/nuvemshop/add-mercado-pago/#bookmark_checkout_pro).
+
+------------
+
+
 ----[mlu, mpe]----
 > WARNING
 >

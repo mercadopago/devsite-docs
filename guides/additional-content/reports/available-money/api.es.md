@@ -3,12 +3,12 @@
 
 Genera el informe de dinero liberado manualmente tantas veces como desees o prográmalo de acuerdo con la frecuencia que elijas a través de nuestra API.
 
-----[mlm, mlb, mlc, mco, mla]----
+----[mco, mlc]----
 > WARNING
 >
 > Importante
 >
-> El reporte de Dinero retirado será deshabilitado desde el 1 de marzo de 2022. Usa el [Reporte de liberaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/introduction) para conciliar las transacciones del dinero disponible en tu cuenta, incluidos tus retiros bancarios.
+> Limitamos el uso de esta API a la consulta y descarga manual de archivos históricos, como consecuencia del deprecado del reporte Dinero retirado en los próximos meses. En su lugar, te recomendamos [usar el reporte Liberaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/23879?utm_source=faq_mp&utm_medium=faq&utm_campaign=bank_disable)
 ------------
 ----[mpe, mlu]----
 > WARNING

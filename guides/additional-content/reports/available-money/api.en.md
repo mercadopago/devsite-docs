@@ -3,11 +3,13 @@
 
 Generate the Released money report manually as many times as you want or schedule it according to the desired frequency through our API.
 
+----[mco, mlc, mlu, mpe]----
 > WARNING
 >
-> The Available Balance report will be disabled from March 1st, 2022.
+> Important
 >
-> You can use the [Release report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/released-money/introduction) to reconcile the transactions that affect the balance available in your account, including your bank withdrawals.
+> We have limited the use of this API to the consultation and manual download of historical files due to the deactivation of the "Money withdrawn" report in the coming months. Instead, we recommend [using the "Releases" report.](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/23879?utm_source=faq_mp&utm_medium=faq&utm_campaign=bank_disable)
+------------
 
 ## Configurable attributes
 

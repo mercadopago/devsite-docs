@@ -4,7 +4,6 @@ sites_supported:
 indexable: false  
 ---
 
-
 # Programa de fidelización
 
 ## ¿Qué es el programa de fidelización?
@@ -92,7 +91,6 @@ Actualmente contamos con los siguientes programas de fidelización.
 | Shell | `CTC` |
 | YPF | `serviclub` |
 
-
 ## Códigos de producto
 
 Usa los siguientes códigos de producto para los programas de fidelización activos. Los mismos deben agregarse en el campo `code` dentro del objeto `products`.
@@ -126,13 +124,3 @@ Códigos de producto **YPF (Serviclub)**:
 
 
 ---
-### Próximos pasos
-
-
-> LEFT_BUTTON_RECOMMENDED_ES
->
-> Integrar QR modelo desatendido
->
-> Conoce paso a paso cómo integrar este modelo.
->
->[Integrar QR modelo desatendido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/qr-code/qr-unattended/qr-unattended-part-a)

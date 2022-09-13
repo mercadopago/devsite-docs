@@ -8,11 +8,3 @@ The Dashboard is made up of different sections, each with a different purpose.
 * **Your applications**: displays your created applications and allows you to create new ones.
 * **Accounts you integrate**: information regarding third-party accounts that you have been given permission to use.
 * **Your certifications**: information about your certifications in our certified developer program (**&lt;dev&gt;program**).
-
-> NEXT_STEP_CARD_EN
->
-> Header
->
-> Check the summary of your information.
->
-> [Header](/developers/en/guides/additional-content/dashboard/header)

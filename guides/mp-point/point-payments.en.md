@@ -4,7 +4,6 @@ Point payments can be searched in the Payments API. For more information, check 
 
 We also have an exclusive Point API that has some additional information about the payments: 
 
-
 ```curl
 curl -X GET \
 -H "Content-Type: application/json" \

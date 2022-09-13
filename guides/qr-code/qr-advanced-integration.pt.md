@@ -22,8 +22,6 @@ Você encontrará mais informações na seção [Reembolsos e cancelamentos](/de
 >
 > Considere que para pagamentos comerciais, você somente poderá fazer reembolsos, mas não cancelamentos.
 
-
-
 ## Obter dados do pedido
 
 Para obter o pedido vigente de um caixa, você pode utilizar a curl que está em nossa **API de Referência**. Para isso, acesse [Obter pedido](/developers/pt/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_pos_external_pos_id_orders/get), onde você também encontrará informações detalhadas sobre os parâmetros de requisição e resposta.
@@ -42,5 +40,3 @@ Detalhamos os casos necessários para validar que o seu sistema esteja corretame
 |---|---|
 |Atendido|[Clique aqui](/developers/pt/docs/qr-code/additional-content/qr-validation-cases/qr-attended-events)|
 |Dinâmico|[Clique aqui](/developers/pt/docs/qr-code/additional-content/qr-validation-cases/qr-dynamic-events)|
-
-

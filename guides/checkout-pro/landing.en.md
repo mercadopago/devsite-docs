@@ -10,6 +10,7 @@ content_section_with_media:
 >>>> Availability by country <<<<
 ---
 available_countries: mla, mlb, mlm, mlu, mco, mlc, mpe
+
 ---
 
 ---
@@ -37,16 +38,63 @@ bullet_section_with_media:
 
 --- mini_landing_separator ---
 
+<<<<<<< HEAD
 >>>> Available Payment Methods <<<<
+=======
+>>>> Differences between Checkout Pro and Checkout API<<<<
+----[mla, mlb]----
+|      Benefits                      | Checkout Pro | API |
+| :--- | :---: | :---: |
+| Integration difficulty             | Low | High |
+| Design UI/UX                          | ✔ |   |
+| Optimized conversion                   | ✔ |   |
+| Optimized approval                   | ✔ |   |
+| Guest users     			| ✔ | ✔ |
+| Registered users     		| ✔ |   |
+| Fraud prevention                   | ✔ | ✔ |
+| Payment completion screen      | ✔ |   |
+| Payment with two cards            | ✔ |   |
+
+------------
+
+----[mlm, mlu, mco, mlc, mpe]----
+|  Benefits                          | Checkout Pro | API |
+| :--- | :---: | :---: |
+| Integration difficulty             | Low | High |
+| Design UI/UX                          | ✔ |   |
+| Optimized conversion                  | ✔ |   |
+| Optimized approval                   | ✔ |   |
+| Guest users      		| ✔ | ✔ |
+| Registered users     		| ✔ |   |
+| Fraud prevention                   | ✔ | ✔ |
+| Payment completion screen      | ✔ |   |
+
+------------
+
+--- mini_landing_separator ---
+>>>>>>> 07c78527f642d414a6e0aee47a95810aa92eb37b
 
 ----[mlb]----
+
 ---
+<<<<<<< HEAD
 available_payments: credit, debit, Mercadopago, ticket, pix, pec
+=======
+available_payments: credit, debit, mercadopago, ticket, pix, pec
+
+>>>>>>> 07c78527f642d414a6e0aee47a95810aa92eb37b
 ---
 ------------
 
 ----[mla, mlm, mlu, mco, mlc, mpe]----
+
 ---
+<<<<<<< HEAD
 available_payments: credit, debit, Mercadopago, ticket
+=======
+available_payments: credit, debit, mercadopago, ticket
+
+>>>>>>> 07c78527f642d414a6e0aee47a95810aa92eb37b
 ---
 ------------
+> For details of accepted payment methods in each country, check the full list with [payment methods availability.](/developers/en/docs/sales-processing/payment-methods)
