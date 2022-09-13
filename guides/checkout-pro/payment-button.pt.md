@@ -15,7 +15,8 @@ A abertura com botão personalizado é feita através do método `open`, que per
 Para configurar a abertura com um botão personalizado, insira o HTML abaixo diretamente no seu projeto.
 
 
-```
+[[[
+```html
 <html>
 <head>
 	<script src="https://sdk.mercadopago.com/js/v2"></script>
@@ -43,6 +44,7 @@ Para configurar a abertura com um botão personalizado, insira o HTML abaixo dir
 </body>
 </html>
 ```
+]]]
 
 ## Abertura automática 
 
@@ -51,7 +53,8 @@ A abertura automática do Checkout é feita através do parâmetro `autoOpen` na
 Para configurar a abertura automática do checkout, insira o código abaixo diretamente no seu projeto.
 
 
-```
+[[[
+```html
 <html>
 <head>
 	<script src="https://sdk.mercadopago.com/js/v2"></script>
@@ -73,3 +76,4 @@ Para configurar a abertura automática do checkout, insira o código abaixo dire
 </body>
 </html>
 ```
+]]]
