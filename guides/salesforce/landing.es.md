@@ -13,11 +13,10 @@ available_countries: mlb
 
 ---
 
-----[mlb]----
+----[mla, mlm, mlu, mpe, mco, mlc]----
 
----
 bullet_section_with_media: 
- - title: Comienza a cobrar con tarjeta
+ - title: Comienza a cobrar con tarjeta de crédito
  - type: normal
  - message: Integra el Checkout API de Mercado Pago y recibe pagos con tarjetas de crédito y débito.
  - image: /shopify/mini-landing-1.png
@@ -25,16 +24,15 @@ bullet_section_with_media:
 
 ------------
 
-----[mla, mlm, mlu, mpe, mco, mlc]----
+----[mlb]----
 
+---
 bullet_section_with_media: 
  - title: Comienza a cobrar con tarjeta
  - type: normal
  - message: Integra el Checkout Transparente de Mercado Pago y recibe pagos con tarjetas de crédito y débito.
  - image: /shopify/mini-landing-1.png
 ---
-
-------------
 
 ---
 bullet_section_with_media: 
@@ -44,11 +42,13 @@ bullet_section_with_media:
  - image: /shopify/mini-landing-4.png
 ---
 
+------------
+
 --- mini_landing_separator ---
 
 >>>> Medios de pago aceptados <<<<
 ---
-available_payments: mercadopago, credit, pix
+available_payments: credit, pix
 
 ---
 
