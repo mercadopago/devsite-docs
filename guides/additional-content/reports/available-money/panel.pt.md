@@ -3,12 +3,6 @@
 
 Gere seus relatórios de Dinheiro Disponível a partir do seu painel do Mercado Pago. Você poderá programar a geração de um relatório de Dinheiro disponível para cada vez que fizer uma retirada do seu saldo para uma conta bancária.
 
-> WARNING
->
-> A partir do dia 1º de março de 2022, o relatório Dinheiro disponível será desabilitado
->
-> Use o [relatório de ----[mla]----Liquidações------------ ----[mlm, mlb, mlc, mco, mlu, mpe]----Liberações------------](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/released-money/introduction) para fazer a reconciliação das transações que afetem o saldo disponível na sua conta, incluindo seus saques bancários.
-
  Siga estas etapas para gerar seus relatórios:
 
 1. Na sua conta do Mercado Pago, vá em [Relatórios](https://www.mercadopago.com.ar/balance/reports) e escolha a opção *Relatórios*.

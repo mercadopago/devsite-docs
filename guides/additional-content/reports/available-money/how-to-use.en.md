@@ -11,14 +11,14 @@ To review the report we recommend downloading it in .csv format to open it in th
 >
 > Important
 >
-> As of December 12th, you will no longer be able to create new "Money withdrawn" reports. In order to keep tracking all the transfers, withdrawals and movements of your available money, [please use the "Releases" report.](https://bit.ly/3QiCD2f)
+> As of December 12th, you will no longer be able to create new "Money withdrawn" reports. In order to keep tracking all the transfers, withdrawals and movements of your available money, [please use the "Releases" report.](https://bit.ly/3zCb1ye)
 ------------
 ----[mla]----
 > WARNING
 >
 > Important
 >
-> As of December 5th, you will no longer be able to create new "Money withdrawn" reports. In order to keep tracking all the transfers, withdrawals and movements of your available money, [please use the "Releases" report.](https://bit.ly/3JzFPEG)
+> As of December 5th, you will no longer be able to create new "Money withdrawn" reports. In order to keep tracking all the transfers, withdrawals and movements of your available money, [please use the "Releases" report.](https://bit.ly/3zCb1ye)
 ------------
 ## What does the report contain?
 
