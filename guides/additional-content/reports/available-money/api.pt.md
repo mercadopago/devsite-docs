@@ -3,11 +3,13 @@
 
 Gere manualmente o relatório de dinheiro ----[mla]----liquidado------------ ----[mlm, mlb, mlc, mco, mlu, mpe]----liberado------------ quantas vezes quiser ou programe-o de acordo com a frequência que você escolher por meio de nossa API.
 
->WARNING
+----[mco, mlc, mlu, mpe]----
+> WARNING
 >
-> A partir do dia 1º de março de 2022, o relatório Dinheiro disponível será desabilitado
+> Importante
 >
-> Você pode usar o [relatório de ----[mla]----Liquidações------------ ----[mlm, mlb, mlc, mco, mlu, mpe]----Liberações------------](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/released-money/introduction) para fazer a reconciliação das transações que afetem o saldo disponível na sua conta, incluindo seus saques bancários.
+> Limitamos o uso desta API à consulta e download manual de arquivos históricos devido à desativação do relatório "Dinheiro retirado" nos próximos meses. Recomendamos que você [use o relatório "Liberações"](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/23879?utm_source=faq_mp&utm_medium=faq&utm_campaign=bank_disable)
+------------
 
 ## Atributos configuráveis
 

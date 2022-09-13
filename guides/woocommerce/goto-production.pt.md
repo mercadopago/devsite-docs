@@ -1,28 +1,21 @@
-# Ativação do modo produção
+# Sair à produção
 
-O primeiro passo para ativar o modo produção na sua loja, é **habilitar o certificado SSL** no seu domínio. Esse certificado é usado para aumentar a segurança dos dados compartilhados pela sua loja, ou seja, as informações pessoais dos seus clientes.
+A primeira etapa para ativar o modo de produção em sua loja é **ativar o certificado SSL** em seu domínio. Este certificado é utilizado para aumentar a segurança dos dados compartilhados por sua loja, ou seja, as informações pessoais de seus clientes.
 
-Muitos serviços de hospedagem oferecem, junto ao domínio, o certificado SSL. Caso seu domínio não tenha esse certificado, recomendamos buscar uma empresa que possa ajudar na compra e instalação. 
+Muitos serviços de hospedagem oferecem, junto com o domínio, o certificado SSL. Caso seu domínio não possua este certificado, recomendamos procurar um serviço que possa te auxiliar na compra e instalação.
 
-Para mais informações, acesse nossa documentação [Requisitos para entrar em produção](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/checkout-api/goto-production).
+Para obter mais informações, visite nossa documentação [Requisitos para entrar em produção](/developers/en/docs/woocommerce/additional-content/goto-production).
 
-Com o certificado ativado e os testes finalizados, você poderá tirar sua loja do modo Teste e habilitar o modo **Produção**. Isso permitirá realizar vendas reais.
+Com o certificado ativado e o teste concluído, você pode tirar sua loja do modo de teste e habilitar o modo de produção. Isso permitirá que você faça vendas reais.
 
- Siga o passo a passo abaixo para realizar a alteração:
+Siga este passo a passo para fazer a alteração:
 
+1. Acesse sua conta [Wordpress](https://wordpress.com/).
+2. Acesse o Painel da sua conta e clique em **Plugins > Plugins instalados**.
+3. No buscador de plugins, procure por “Mercado Pago payments for WooCommerce”.
+4. Clique em **Configurar plug-in**.
+5. Clique em **4. Teste sua loja antes de vender** para exibir as opções.
+6. Em "Escolha como deseja operar sua loja", selecione **Modo de vendas (produção)**.
+7. Clique em **Salvar alterações** para finalizar.
 
-1. Acesse seu Painel do WordPress.
-2. Na coluna lateral esquerda, clique em **WooCommerce** **> Configurações**.
-3. Em **Pagamentos**, busque pelo checkout que escolheu na etapa de **Configuração da integração**, e clique em **Gerenciar**.
-4. Em **Como você quer operar os checkouts da sua loja**, selecione a opção **Ativar modo Produção para checkouts Mercado Pago**. 
-5. Clique em **Salvar alterações**.
-
-Pronto! Sua loja está em Produção e habilitada para realizar suas vendas.
-
-> NEXT_STEP_CARD_PT
->
-> Processamento de vendas
->
-> Conheça os principais status durante o processamento das vendas.
->
-> [Processamento de vendas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/woocommerce/sales-processing)
+Feito! A loja está em produção e habilitada para processar suas vendas.

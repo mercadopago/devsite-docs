@@ -7,7 +7,7 @@
       - mlm
 ---
 
-## Setting steps
+# Setting steps
 
 The **steps to start charging with Mercado Pago** are the following:
 1. Create a [seller account](https://www.mercadopago[FAKER][URL][DOMAIN]/activities) in Mercado Pago if you do not yet have one.
