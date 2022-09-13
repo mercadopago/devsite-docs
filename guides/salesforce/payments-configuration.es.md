@@ -4,6 +4,8 @@ Para comenzar a cobrar con tarjetas de crédito y con tranferencias a través de
 
 ## Activar los medios de pago
 
+A continuación, te explicamos cómo activar cada medio de pago en tu tienda Salesforce.
+
 ### Pix
 
 > WARNING
@@ -22,7 +24,11 @@ Para comenzar a cobrar con tarjetas de crédito y con tranferencias a través de
 
 ## Elegir la ubicación de los medios de pago
 
-Por defecto, el cartucho de Mercado Pago mostrará primero el medio de pago Pix y luego tarjeta de crédito. Si deseas modificar este orden, sigue estos pasos.
+Por defecto, el cartucho de Mercado Pago mostrará primero el medio de pago Pix y luego tarjeta de crédito. 
+
+![payment-methods](/images/salesforce/payment-methods.png)
+
+Si deseas modificar este orden, sigue estos pasos.
 
 1. Dentro de tu tienda Salesforce, ve al menú **Merchant Tools** y haz clic en la opción **Payment Methods** que se encuentra dentro del grupo de opciones Ordering. También puedes encontrar la opción utilizando el buscador del menú.
 2. Dentro del cuadro, busca la columna **Sort Order**. En esta columna, asígnale un orden numérico a los medios de pago de tu tienda para definir el orden en el que quieras mostrarlos. 

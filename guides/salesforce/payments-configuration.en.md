@@ -24,7 +24,11 @@ Here's how to activate each payment method in your Salesforce store.
 
 ## Choose the location of the means of payment
 
-By default, the Mercado Pago cartridge will first show the Pix payment method and then the credit card. If you want to change this order, follow these steps.
+By default, the Mercado Pago cartridge will first show the Pix payment method and then the credit card. 
+
+![payment-methods](/images/salesforce/payment-methods.png)
+
+If you want to change this order, follow these steps.
 
 1. Within your Salesforce store, go to the **Merchant Tools** menu and click the **Payment Methods** option found within the Ordering group of options. You can also find the option using the menu search engine.
 2. Within the box, look for the **Sort Order** column. In this column, assign a numerical order to the payment methods of your store to define the order in which you want to display them.
