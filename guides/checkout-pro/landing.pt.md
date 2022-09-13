@@ -38,44 +38,7 @@ bullet_section_with_media:
 
 --- mini_landing_separator ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>> Diferenças entre Checkout Pro e Checkout Transparente <<<<
-----[mla, mlb]----
-|   Benefícios                          | Checkout Pro | Checkout API |
-| :--- | :---: | :---: |
-| Dificuldade de integração             | Baixa | Alta |
-| Design UI/UX                          | ✔ |   |
-| Conversão otimizada                   | ✔ |   |
-| Aprovação otimizada                   | ✔ |   |
-| Usuários convidados     			| ✔ | ✔ |
-| Usuários cadastrados     		| ✔ |   |
-| Prevenção de fraude                   | ✔ | ✔ |
-| Tela de finalização de pagamento      | ✔ |   |
-| Pagamento com dois cartões            | ✔ |   |
 
-------------
-
-----[mlm, mlu, mco, mlc, mpe]----
-|   Benefícios                          | Checkout Pro | API |
-| :--- | :---: | :---: |
-| Dificuldade de integração             | Baixa | Alta |
-| Design UI/UX                          | ✔ |   |
-| Conversão otimizada                   | ✔ |   |
-| Aprovação otimizada                   | ✔ |   |
-| Usuários convidados      		| ✔ | ✔ |
-| Usuários cadastrados     		| ✔ |   |
-| Prevenção de fraude                   | ✔ | ✔ |
-| Tela de finalização de pagamento      | ✔ |   |
-
-------------
-
---- mini_landing_separator ---
-
->>>>>>> 07c78527f642d414a6e0aee47a95810aa92eb37b
-=======
->>>>>>> 943f5022c96ac0d2308d508877d15314fb19a4f4
 >>>> Meios de pagamento aceitos <<<<
 
 ----[mlb]----
@@ -94,13 +57,6 @@ available_payments: credit, debit, mercadopago, ticket
 
 ---
 ------------
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-> Para detalhes dos meios de pagamento aceitos em cada país, verifique a lista completa com a [disponibilidade de meios de pagamento.](/developers/pt/docs/sales-processing/payment-methods)
->>>>>>> 07c78527f642d414a6e0aee47a95810aa92eb37b
-=======
 
 > Para detalhes dos meios de pagamento aceitos em cada país, verifique a lista completa com a [disponibilidade de meios de pagamento.](/developers/pt/docs/sales-processing/payment-methods)
 >>>>>>> 943f5022c96ac0d2308d508877d15314fb19a4f4
