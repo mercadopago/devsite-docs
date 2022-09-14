@@ -1,6 +1,10 @@
 # Preferência para diversos itens
 
-Se você precisar criar uma preferência para mais de um item, deverá adicioná-los como uma lista. Utilize os códigos abaixo para criar uma preferência para diversos itens.
+Se você precisar criar uma preferência para mais de um item, deverá adicioná-los como uma lista e seus respectivos atributos. 
+
+Para criar uma preferência para diversos itens, utilize um dos SDKs disponíveis abaixo. 
+
+> Além dos SDKs, também é possível criar uma preferência para diversos itens a partir da API de preferências. Para isso, envie um **POST** com todas as informações referentes ao produto/serviço ao endpoint [/checkout/preferences](/developers/pt/reference/preferences/_checkout_preferences/post) e execute a requisição.
 
 [[[
 ```php

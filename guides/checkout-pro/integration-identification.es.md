@@ -10,7 +10,10 @@ Para trabajar con métricas, utilice _headers_ en su preferencia de pago, agrega
 | `x-platform-id` | Plataforma | Para las plataformas o módulos que ofrecen Mercado Pago en sus soluciones. |
 | `x-corporation-id` | Corporaciones | Para cuentas asociadas a una cuenta vendedor o grupo económico. |
 
-Para identificar tus integraciones, envía el parámetro `integrator_id` con las informaciones necesarias al endpoint [/checkout/preferences.](/developers/es/reference/preferences/_checkout_preferences/post) y ejecuta el request o, si lo prefieres, utiliza uno de los códigos disponible a continuación.
+Para identificar sus integraciones, utilice una de las SDKs a continuación, informando el `integrator_id`, `x-platform-id` y/o `x-corporation-id` con la información adecuada al realizar el request.
+
+> Además de las SDKs, es posible identificar sus integraciones a través de la API de preferencias. Para tanto, envie el parámetro `integrator_id`, `x-platform-id` y/o `x-corporation-id` con su respectiva información al endpoint [/checkout/preferences](/developers/es/reference/preferences/_checkout_preferences/post) y ejecute el request.
+
 
 [[[
 ```php
@@ -71,25 +74,5 @@ request_options = RequestOptions(
     platform_id="PLATFORM_ID"
 )
 sdk = mercadopago.SDK("ENV_ACCESS_TOKEN", request_options=request_options)
-```
-```curl
-===
-Agrega los códigos de identificación y reemplaza los valores que quieras: <code>CORPORATION\_ID</code>, <code>INTEGRATOR\_ID</code> y <code>PLATFORM_ID</code>.
-===
-curl -X POST \
-'https://api.mercadopago.com/checkout/preferences' \
-  -H 'cache-control: no-cache' \
-  -H 'content-type: application/json' \
-  -H 'x-corporation-id: CORPORATION_ID \
-  -H 'x-integrator-id: INTEGRATOR_ID \
-  -H 'x-platform-id: PLATFORM_ID \
-  -H 'Authorization: Bearer PROD_ACCESS_TOKEN' \
-  -d '{
-    "items": [
-       ...
-       
-    ],
-    ...
-}'
 ```
 ]]]

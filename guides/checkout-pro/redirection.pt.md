@@ -25,7 +25,9 @@ Através das `back_urls`, serão retornados os seguintes parâmetros:
 | `merchant_order_id` | ID (identificador) da ordem de pagamento gerada no Mercado Pago. |
 
 
-Para definir as `back_urls`, envie um **POST** com o atributo `back_urls` informando as URLs para onde o comprador deverá ser direcionado quando finalizar o pagamento ao endpoint [/checkout/preferences](/developers/pt/reference/preferences/_checkout_preferences/post) ou, se preferir, utilize um dos códigos disponíveis abaixo.
+Para definir as `back_urls`, utilize um dos SDKs abaixo informando as URLs para onde o comprador deverá ser direcionado quando finalizar o pagamento.
+
+> Além dos SDKs, também é possível definir as `back_urls`através da API de preferências. Para isso, envie um **POST** com o atributo `back_urls` informando as URLs para onde o comprador deverá ser direcionado quando finalizar o pagamento ao endpoint [/checkout/preferences](/developers/pt/reference/preferences/_checkout_preferences/post) e execute a requisição.
 
 [[[
 ```php

@@ -24,8 +24,9 @@ Through the `back_urls`, the following parameters will be returned:
 | `external_reference` | Amount sent when creating the payment preference. |
 | `merchant_order_id` | ID (identifier) of the payment order generated in Mercado Pago. |
 
+To define the `back_urls`, use one of the SDKs below informing the URLs where the buyer should be directed when finalizing the payment.
 
-To define the `back_urls`, send a **POST** with the `back_urls` attribute informing the URLs where the buyer should be directed when finalizing the payment to the endpoint [/checkout/preferences](/developers/en/reference/ preferences/_checkout_preferences/post) or, if you prefer, use one of the codes available below.
+> In addition to the SDKs, it is also possible to set the `back_urls` through the preferences API. To do so, send a **POST** with the `back_urls` attribute informing the URLs where the buyer should be directed when finalizing the payment to the endpoint [/checkout/preferences](/developers/en/reference/preferences/_checkout_preferences/post) and execute the request. 
 
 [[[
 ```php

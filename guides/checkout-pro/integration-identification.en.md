@@ -11,7 +11,10 @@ To work with metrics, use _headers_ in your payment preference, adding the ident
 | `x-corporation-id` | Corporations | For accounts associated with a seller account or an economic group. |
 
 
-To identify your integrations, send the `integrator_id` parameter to the endpoint [/checkout/preferences](/developers/en/reference/preferences/_checkout_preferences/post) and execute the request or, if you prefer, use one of the codes available below.
+To identify your integrations, use one of the SDKs below informing the `integrator_id`, `x-platform-id` and/or `x-corporation-id` with the appropriate information when making the request.
+
+> In addition to the SDKs, it is possible to identify your integrations through the preferences API. To do this, send the `integrator_id`, `x-platform-id` and/or `x-corporation-id` parameter with their respective information to the endpoint [/checkout/preferences](/developers/en/reference/preferences/_checkout_preferences/post) and execute the request.
+
 
 [[[
 ```php
@@ -72,25 +75,5 @@ integrator_id="INTEGRATOR_ID",
 platform_id="PLATFORM_ID"
 )
 sdk = Mercadopago.SDK("ENV_ACCESS_TOKEN", request_options=request_options)
-```
-```curl
-===
-Add the identification codes and replace the values you want: <code>CORPORATION\_ID</code>, <code>INTEGRATOR\_ID</code> and <code>PLATFORM_ID</code>.
-===
-curl -X POST \
-'https://api.mercadopago.com/checkout/preferences' \
--H 'cache-control: no-cache' \
--H 'content-type: application/json' \
--H 'x-corporation-id: CORPORATION_ID \
--H 'x-integrator-id: INTEGRATOR_ID \
--H 'x-platform-id: PLATFORM_ID \
--H 'Authorization: Bearer PROD_ACCESS_TOKEN' \
--d '{
-"items": [
-...
-       
-],
-...
-}'
 ```
 ]]]

@@ -14,7 +14,7 @@ Na tabela abaixo detalhamos os atributos de preferência e a descrição de cada
 | `purpose` | Ao indicar o valor "wallet_purchase" neste método, o Checkout Pro apenas aceitará pagamentos de usuários cadastrados no Mercado Pago, com cartão e saldo em conta. |
 
 
-Com essas informações em mãos utilize um dos códigos disponíveis abaixo para configurar os meios de pagamento que deseja oferecer.
+Com essas informações em mãos utilize um dos SDKs disponíveis abaixo para configurar os meios de pagamento que deseja oferecer.
 
 
 [[[

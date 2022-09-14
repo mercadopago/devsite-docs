@@ -5,7 +5,7 @@ Puede habilitar el modo binario si su modelo de negocio requiere que la aprobaci
 Si está deshabilitado, el pago puede estar pendiente (si se requiere alguna acción por parte del comprador) o en proceso (si se requiere una revisión manual).
 
 
-> NOTA
+> NOTE
 >
 > Importante
 >

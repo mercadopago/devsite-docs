@@ -6,6 +6,7 @@ This option allows users registered in Mercado Pago and/or Mercado Livre to log 
 
 It is possible to pay with **card**, **available balance** and **Mercado Crédito** in a safe and optimized environment, increasing the chances of converting sales, in addition to allowing the seller to only offer payments with wallet. With this, the option to pay without logging in will not exist, however, it will contribute to an increase in the conversion of payments.
 
+
 > WARNING
 >
 > Important
@@ -25,10 +26,6 @@ Follow the steps below to configure the Mercado Pago Wallet as a payment method.
 
 If you are a user and want all your payments to be made via Wallet, you can determine this via an attribute in the preferences API. To create a preference, use one of the SDKs below.
 
-> NOTE
->
-> Important
->
 > In addition to the SDKs, it is also possible to create a preference through the preferences API. For that, send a **POST** with the parameter `purpose` and the value `wallet_purchase` to the endpoint [/checkout/preferences](/developers/en/reference/preferences/_checkout_preferences/post) and execute the request or, if you prefer, use one of the SDKs below.
 
 

@@ -25,7 +25,9 @@ The ads conversion analysis makes it possible to evaluate the relevance and retu
 
 When creating a preference, you can associate it with a pixel (identifier) for tracking Facebook Ads conversions. Checkout Pro's integration. 
 
-To integrate Checkout Pro with Facebook Ads, use one of the codes available below.
+To integrate Checkout Pro with Facebook Ads, use one of the SDKs available below.
+
+> In addition to the SDKs, it is also possible to integrate Facebook Ads with Checkout Pro through the preferences API. For that, send the `track` parameter with the `type` and `values` attributes informing your *facebook_id* and the *pixel ID* respectively to the [/checkout/preferences](/developers/en/reference/preferences/_checkout_preferences) endpoint /post) and execute the request.
 
 [[[
 ```php
@@ -156,7 +158,9 @@ When finishing the configuration, a `Purchase` event will be associated with the
 
 When creating a preference, you can associate it with a tag (identifier) for tracking Google Ads conversions. 
 
-To integrate Checkout Pro with Google Ads, use one of the codes available below.
+To integrate Checkout Pro with Google Ads, use one of the SDKs available below.
+
+> In addition to the SDKs, it is also possible to integrate Google Ads with Checkout Pro through the preferences API. For that, send the `tracks` parameter with the `type`, `conversion_id` and `conversion_label` attributes informing your *conversion_id* and the *conversion label* available in your Google account to the endopoint [/checkout/preferences](/developers/en/reference/preferences/_checkout_preferences/post) and execute the request.
 
 [[[
 ```php

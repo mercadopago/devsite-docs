@@ -1,8 +1,8 @@
 # Preferences
 
-You can adapt the Checkout Pro integration to your business model by configuring preferences attributes.
+You can adapt the Checkout Pro integration to your business model by **configuring preferences attributes**.
 
-Preferences attribute settings allow you to define installments, exclude an unwanted payment method, change the due date of a certain payment, in addition to obtaining business information and measuring the effectiveness of your ads on platforms such as Facebook and Google.
+Preferences attribute settings allow you to **define installments**, **exclude an unwanted payment method**, **change the due date of a certain payment**, in addition to obtaining business information and **measuring the effectiveness of your ads** on platforms such as Facebook and Google.
 
 See below for a complete example of preference.
 
@@ -13,10 +13,10 @@ See below for a complete example of preference.
     "items": [
         {
             "id": "item-ID-1234",
-            "title": "Mi producto",
+            "title": "My product",
             "currency_id": "BRL",
             "picture_url": "https://www.mercadopago.com/org-img/MP3/home/logomp3.gif",
-            "description": "Descripción del Item",
+            "description": "Item description",
             "category_id": "art",
             "quantity": 1,
             "unit_price": 75.76

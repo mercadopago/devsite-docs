@@ -25,7 +25,9 @@ A análise da conversão de anúncios possibilita avaliar a relevância e retorn
 
 Ao criar uma preferência, você pode associá-la a um pixel (identificator) para acompanhamento das conversões dos seus anúncios através do Facebook Ads.
 
-Para integrar o Checkout Pro com o Facebook Ads, utilize um dos códigos disponíveis abaixo.
+Para integrar o Checkout Pro com o Facebook Ads, utilize um dos SDKs disponíveis abaixo.
+
+> Além dos SDKs, também é possível integrar os anúncios do Facebook Ads ao Checkout Pro através da API de preferências. Para isso, envie o parâmetro `track` com os atributos `type` e `values` informando seu *facebook_id* e o *pixel ID* respectivamente ao endopoint [/checkout/preferences](/developers/pt/reference/preferences/_checkout_preferences/post) e execute a requisição.
 
 [[[
 ```php
@@ -155,7 +157,9 @@ Ao concluir a configuração, um evento `Purchase` será associado ao pixel espe
 
 Ao criar uma preferência, você pode associá-la a uma tag (identificador) para acompanhamento das conversões do Google Ads. 
 
-Para integrar o Checkout Pro com o Google Ads, utilize um dos códigos disponíveis abaixo.
+Para integrar o Checkout Pro com o Google Ads, utilize um dos SDKs disponíveis abaixo.
+
+> Além dos SDKs, também é possível integrar os anúncios do Google Ads ao Checkout Pro através da API de preferências. Para isso, envie o parâmetro `tracks` com os atributos `type`, `conversion_id` e `conversion_label` informando seu *conversion_id* e o *conversion label* disponíveis na sua conta do Google ao endopoint [/checkout/preferences](/developers/pt/reference/preferences/_checkout_preferences/post) e execute a requisição.
 
 [[[
 ```php

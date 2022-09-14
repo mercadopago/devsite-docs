@@ -27,6 +27,8 @@ Al crear una preferencia, puedes asociarla con un pixel (identificador) para ras
 
 Para integrar Checkout Pro con los anuncios de Facebook siga los pasos a continuación.
 
+> Además de la SDKs, también es posible integrar los anuncios de Facebook Ads con Checkout Pro a través de la API de referencias. Para eso, envía el parámetro `track` con los atributos `type` y `values` informando tu *facebook_id* y el *pixel ID* repectivamente, al endpoint  [/checkout/preferences](/developers/es/reference/preferences/_checkout_preferences/post) y ejecuta el request.
+
 [[[
 ```php
 ===
@@ -156,6 +158,8 @@ Una vez completada la configuración, se asociará un evento de `purchase` con e
 Al crear una preferencia, puedes asociarla con una tag (identificador) para realizar un seguimiento de las conversiones de Google Ads. 
 
 Para integrar Checkout Pro con Google Ads, use uno de los códigos disponibles a continuación.
+
+> Además de las SDKs, también es posible integrar Google Ads con Checkout Pro a través de la API de preferencias. Para eso, envía el parámetro `tracks` con los atributos `type`, `conversion_id` y `conversion_label`, informando tu *conversion_id* y el *conversion_label* disponible en tu cuenta de Google, al endpoint [/checkout/preferences](/developers/es/reference/preferences/_checkout_preferences/post), y ejecuta la solicitud.
 
 
 [[[

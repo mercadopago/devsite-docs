@@ -1,6 +1,10 @@
 # Preference for multiple items
 
-If you need to create a preference for more than one item, you must add them as a list. Use the codes below to create a preference for multiple items.
+If you need to create a preference for more than one item, you must add them as a list and their respective attributes.
+
+To create a preference for multiple items, use one of the SDKs available below.
+
+> In addition to the SDKs, it is also possible to create a preference for various items from the preferences API. To do so, send a **POST** with all the information regarding the product/service to the endpoint [/checkout/preferences](/developers/en/reference/preferences/_checkout_preferences/post) and execute the request.
 
 [[[
 ```php
