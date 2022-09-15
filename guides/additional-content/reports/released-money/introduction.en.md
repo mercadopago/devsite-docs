@@ -15,7 +15,7 @@ Releases report is a **downloadable report that allows you to know the liquidity
 >
 > Important
 >
-> The reports you generate from October 5th onwards will show your money movements in chronological order, so you will be able to identify them more easily and better control your business finances. [Learn how to use it.](https://bit.ly/3zCb1ye)
+> The reports you generate from October 5th onwards will show your money movements in chronological order, so you will be able to identify them more easily and better control your business finances. [Learn how to use it](https://bit.ly/3zCb1ye).
 ------------
 
 ## How do I download the report?
