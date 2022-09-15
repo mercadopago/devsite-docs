@@ -277,7 +277,7 @@ paths:
                           description: If the target of the discount is an Item, this field will show the ID of the Item that the discount has been applied.
                         sponsorshipValues:
                           type: array
-                          description: 	Values sponsored by either party. The sum of the amounts listed in this atribute must match the value informed in the amount atribute above.
+                          description:  Values sponsored by either party. The sum of the amounts listed in this atribute must match the value informed in the amount atribute above.
                           items:
                             type: object
                             properties:
@@ -526,6 +526,14 @@ paths:
                             type: string
                             description: An optional field that refeers to a external code that can be used on a point of sale. This external code can be set by the Mercado Pago Delivery API.
                             example: "UNID01"
+                          brandId:
+                            type: number
+                            description: Value referring to the Brand ID that is linked to the store. If there is not any brand linked to the store, this field will not be shown.
+                            example: 2641
+                          brandName:
+                            type: string
+                            description: Brand name that is linked to the store. If there is not any brand Brand linked to the store, this field will not be shown.
+                            example: "Brand Name"
                       qr:
                         type: object
                         description: Through the information contained in this Object, it is possible to assemble the QR Code that is read through the "Mercado Envios Flex" APP for the continuation of the delivery flow of an order. In this way it is possible to develop a personalized coupon for an order. To test the operation of this QR Code, simply read it through the "Mercado Envios Flex" App.
