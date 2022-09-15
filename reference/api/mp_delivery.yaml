@@ -526,9 +526,17 @@ paths:
                             type: string
                             description: An optional field that refeers to a external code that can be used on a point of sale. This external code can be set by the Mercado Pago Delivery API.
                             example: "UNID01"
+                          brandId:
+                            type: number
+                            description: Value referring to the Brand ID that is linked to the store. If there is not any brand linked to the store, this field will not be shown.
+                            example: 2641
+                          brandName:
+                            type: string
+                            description: Brand name that is linked to the store. If there is not any brand Brand linked to the store, this field will not be shown.
+                            example: "Brand Name"
                       qr:
                         type: object
-                        description: Through the information contained in this Object, it is possible to assemble the QR Code that is read through the "Mercado Envios Flex" APP for the continuation of the delivery flow of an order. In this way it is possible to develop a personalized coupon for an order. To test the operation of this QR Code, simply read it through the "Mercado Envios Flex" App.
+                        description: Through the information contained in this Object, it is possible to assemble the QR Code that is read through the "Mercado Envios Flex" APP for the continuation of the delivery flow of an order. In this way it is possible to develop a personalized coupon for an order. To test the operation of this QR Code, simply read it through the "Mercado Envios Flex" App. For restaurants with Dropoff in your logistics, this field will not be shown.
                         properties:
                           id:
                             type: string
