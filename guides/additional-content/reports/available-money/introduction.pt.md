@@ -23,7 +23,7 @@ O relatório de Dinheiro disponível é um **relatório para ser baixado que te 
 >
 > Importante
 >
-> A partir de 12 de dezembro, não será mais possível criar novos relatórios de "Dinheiro retirado". Para continuar controlando as transferências, saques e movimentações do seu saldo disponível, por favor,[use o relatório "Liberações".](https://bit.ly/3RH0KJ4)
+> A partir de 12 de dezembro, não será mais possível criar novos relatórios de Dinheiro retirado. Para continuar controlando as transferências, saques e movimentações do seu saldo disponível, por favor,[use o relatório Liberações](https://bit.ly/3RH0KJ4).
 ------------
 
 ## Como baixar o relatório?
