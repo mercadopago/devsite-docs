@@ -12,7 +12,7 @@
 >
 > Importante
 >
-> A partir del 12 de diciembre no podrás crear nuevos reportes Dinero retirado. Para seguir llevando el control de todos los retiros y movimientos de tu dinero disponible [usa el reporte Liberaciones](https://bit.ly/3QiCD2f)
+> A partir del 12 de diciembre no podrás crear nuevos reportes Dinero retirado. Para seguir llevando el control de todos los retiros y movimientos de tu dinero disponible [usa el reporte Liberaciones](https://bit.ly/3QiCD2f).
 ------------
 ----[mpe, mlu]----
 > WARNING
