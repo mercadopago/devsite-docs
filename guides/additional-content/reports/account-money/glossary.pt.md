@@ -50,9 +50,9 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 | INSTALLMENT_NET_AMOUNT* | Mostra o valor líquido da parcela que será paga.<br> Essa informação aparece quando o cliente escolhe pagar o valor total da compra em parcelas mensais. | ------------ ----[mla]----
 | PAYER_NAME* | Nome de quem faz o pagamento. | ------------ ----[mla]----
 | PAYER_ID_TYPE* | Tipo de identificação de quem faz um pagamento ou doação. | ------------ ----[mla]----
-| PAYER_ID_NUMBER* | Número de identificação de quem faz um pagamento ou doação. | ------------
-
-----[mla]----
+| PAYER_ID_NUMBER* | Número de identificação de quem faz um pagamento ou doação. | ----------------[mla]----  ------------
+| BUSINESS_UNIT | Corresponde ao canal pelo qual uma venda foi gerada. Os canais são Mercado Pago, Mercado Livre, Mercado Shops e Delivery.|
+| SUB_UNIT | Permite identificar o meio de pagamento usado para cobrar por uma venda com o Mercado Pago.|
 > INFO
 >
 > (*) Estas informações só podem ser usadas para fins de reconciliação e serão tratadas de acordo com as leis de 
