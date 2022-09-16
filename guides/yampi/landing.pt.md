@@ -27,10 +27,10 @@ bullet_section_with_media:
  
 --- mini_landing_separator ---
  
->>>> Meios de pagamento aceitos <<<<
+>>>> Tipos de pagamento aceitos <<<<
 
 ---
-available_payments: credit, ticket, pix
+available_payments: credit, debit, mercadopago, boleto, pix, pec, moneda, cartera
 
 ---
 

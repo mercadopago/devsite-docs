@@ -7,7 +7,7 @@ content_section_with_media:
 
 --- mini_landing_separator ---
  
->>>> Disponibilidade por país <<<<
+>>>> Availability by country <<<<
 ---
 available_countries: mlb
 
@@ -27,10 +27,10 @@ bullet_section_with_media:
  
 --- mini_landing_separator ---
  
->>>> Meios de pagamento aceitos <<<<
+>>>> Accepted payment types <<<<
 
 ---
-available_payments: credit, ticket, pix
+available_payments: credit, debit, mercadopago, boleto, pix, pec, moneda, cartera
 
 ---
 

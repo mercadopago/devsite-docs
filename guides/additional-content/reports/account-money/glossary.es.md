@@ -47,9 +47,9 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 | OPERATION_TAGS | Son las etiquetas para categorizar y/o segmentar diferentes aspectos de la transacción, como por ejemplo los canales usados para hacer un pago. Se identifican como:<br><br>  -   WHATSAPP_PAY: Esta etiqueta indica que el pago fue hecho a través de whatsApp. <br> -   CASHOUT: Esta etiqueta indica que la operación corresponde a un Pix Saque. <br> -   EXTRACASHOUT: Esta etiqueta indica que la operación corresponde a un Pix Troco. <br> -   PIX: Esta etiqueta indica que la operación corresponde a un pago Pix. | ----[mla]----
 | PAYER_NAME* | Nombre de quien hace un pago o una donación. | ------------ ----[mla]----
 | PAYER_ID_TYPE* | Tipo de identificación de quien hace un pago o una donación. | ------------ ----[mla]----
-| PAYER_ID_NUMBER* | Número de identificación de quien hace un pago o una donación. | ------------
-
-----[mla]----
+| PAYER_ID_NUMBER* | Número de identificación de quien hace un pago o una donación. | ----------------[mla]----  ------------
+| BUSINESS_UNIT | Corresponde al canal por medio del cual se generó una venta. Los canales son Mercado Pago, Mercado Libre, Mercado Shops y Delivery.|
+| SUB_UNIT | Permite identificar el medio que se utilizó para cobrar una venta con Mercado Pago. |
 > INFO
 >
 > (*) Esta información solo se podrá usar para conciliar, será tratada conforme a las leyes de protección de datos 

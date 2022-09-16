@@ -12,6 +12,7 @@ To use the Mercado Pago integration with Magento 2 in your store, you must meet 
 
 | Requirements | Description | Specifications |
 | --- | --- | --- |
+| Application | Applications are the different integrations in one or more stores. You can create an application for each solution you implement to keep everything organized and on track for easier management. Check [Dashboard](/developers/en/docs/magento-two/additional-content/dashboard/introduction) for more information on how to create an application. | N/A |
 | Environment | Hosting Service | LAMP (Linux, Apache, MySQL and PHP)<br/>LNMP stack |
 | Database | Sets of files related to each other with records about people, places, or things. | MySQL 5.6 (MariaDB and Percona) |
 | Additional Configuration | Recommended adjustments for better performance and proper functioning of Magento 2 and the Mercado Pago module. | Minimum 2GB RAM |
