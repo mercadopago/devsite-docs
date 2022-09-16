@@ -12,7 +12,8 @@ Para utilizar la integración de Mercado Pago con Magento 2 en tu tienda, debes 
 
 | Requisitos | Descripción | Especificaciones |
 | --- | --- | --- |
-| Ambiente | Servicio de alojamiento | LAMP (Linux, Apache, MySQL y PHP) <br/> Pila LNMP |
+| Aplicación | Las aplicaciones son las diversas integraciones contenidas en una o varias tiendas. Puedes crear una aplicación para cada solución que implementes a fin de tener todo organizado y mantener un control que facilite la gestión. Consulta [Dashboard](/developers/es/docs/magento-two/additional-content/dashboard/introduction) para obtener más información sobre cómo crear una aplicación. | N/A |
+| Ambiente | Servicio de alojamiento | LAMP (Linux, Apache, MySQL y PHP) <br/> Pila LNMP | 
 | Base de datos | Conjuntos de archivos relacionados entre sí con registros sobre personas, lugares o cosas. | MySQL 5.6 (MariaDB y Percona) |
 | Configuración adicional | Ajustes recomendados para un mejor desempeño y correcto funcionamiento de Magento 2 y el módulo de Mercado Pago. | Mínimo 2 GB de RAM |
 | Vendedor Cuenta Mercado Pago | Para realizar ventas necesitas una cuenta de vendedor en Mercado Pago. Si no lo tiene, [haz clic aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) para crearlo.| Cuenta de Vendedor en Mercado Pago |

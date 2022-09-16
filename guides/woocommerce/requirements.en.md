@@ -4,6 +4,7 @@ To use the Mercado Pago integration with WooCommerce on a WordPress site, you mu
 
 | Requirements | Specifications |
 |---|---|
+| Application | Applications are the different integrations in one or more stores. You can create an application for each solution you implement to keep everything organized and on track for easier management. Check [Dashboard](/developers/en/docs/woocommerce/additional-content/dashboard/introduction) for more information on how to create an application. |
 | Mercado Pago seller account | To make sales, you need a seller account on Mercado Pago. If you don't have one, [click here](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) to create it. |
 | Credentials | The [credentials](/developers/en/guides/additional-content/credentials/credentials) are unique passwords with which we identify an integration in your account, and are used to capture payments in virtual stores and other applications securely. In order to receive the actual payouts, you will need **production credentials**. To test and ensure the integration works, **test credentials** will be required. |
 | WordPress | Herramienta Online for the creation of shops, websites and blogs. [Click here](https://es.wordpress.org/) to create your account. Required installation version: 4.9.10 or higher. Proved up to 5.8.x |

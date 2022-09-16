@@ -4,6 +4,7 @@ To perform a signature integration, you must meet the requirements listed below.
 
 | Requirements | Description |
 |---|---|
+| Application | Applications are the different integrations in one or more stores. You can create an application for each solution you implement to keep everything organized and on track for easier management. Check [Dashboard](/developers/en/docs/subscriptions/additional-content/dashboard/introduction) for more information on how to create an application. |
 | Mercado Pago or Mercado Libre seller account | To integrate subscriptions on your website, you need a seller account on Mercado Pago or Mercado Libre. If not, [click here](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) to create. | 
 | Credentials | Unique passwords with which we identify an integration in your account. The Public key and Access Token will be required to perform your integrations. [Click here](/developers/en/guides/additional-content/credentials/credentials) for more information. |
 | Integration with Javascript SDK - Card token ID | Integration with Mercado Pago's Javascript SDK allows you to create a token with card data and send it to your backend to be used for payments. For more information, [click here](/developers/en/guides/sdks) |
