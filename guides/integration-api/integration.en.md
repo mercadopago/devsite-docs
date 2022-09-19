@@ -85,7 +85,7 @@ Once you have linked your Point device to your Mercado Pago account, you must co
 
 ### Activate the integrated mode on your Point device
 
-To integrate your Point device with our API it is necessary to activate the point of sale (POS) operating mode. To achieve this, run the following command:
+To integrate your Point device with our API it is necessary to activate the point of sale (POS) operating mode. To achieve this, consult the devices through our [Get devices API](/developers/en/reference/integrations_api/_point_integration-api_devices/get) and run the following command:
 
 ``` bash
  curl --location --request PATCH 'https://api.mercadopago.com/point/integration-api/devices/:deviceId' \
