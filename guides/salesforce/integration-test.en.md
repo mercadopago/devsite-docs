@@ -5,8 +5,8 @@ To run a test, follow these steps:
 
 ## Credit card purchases
 
-1. Simulate a purchase in your store.
-1. Select the option **Credit Card** as the payment method.
+1. Follow your store's purchase flow.
+1. On the payment page, select the **Credit Card** option.
 1. Choose to pay with a new credit card and use the [test cards](/developers/en/docs/salesforce/additional-content/test-cards) to make the payment. **It is important not to pay with cards for personal use**.
 1. Add the information of the indicated test card (card number, CVV and expiration date).
 1. Click the **Pay** button.

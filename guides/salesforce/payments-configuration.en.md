@@ -1,6 +1,6 @@
 # Configure payment methods
 
-To start charging with credit cards and transfers through Pix, follow these steps.
+To start receiving credit card and Pix payments, follow the steps outlined below.
 
 ## Activate payment methods
 

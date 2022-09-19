@@ -1,6 +1,6 @@
 # Configurar los medios de pago
 
-Para comenzar a cobrar con tarjetas de crédito y con tranferencias a través de Pix, sigue estos pasos.
+Para comenzar a recibir pagos con tarjeta de crédito y Pix, sigue los pasos que se describen a continuación.
 
 ## Activar los medios de pago
 

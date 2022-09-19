@@ -1,15 +1,15 @@
-# Carregar a loja
+# Carregar loja
 
 Para ativar o Mercado Pago na loja, siga os passos abaixo.
 
 > Para carregar e implantar o site, você pode usar uma ferramenta compatível com WebDAV.
 
-## Configuração do cartucho
+## Configuração do plugin
 
-Para ativar o cartucho "int_mercadopago", é necessário configurá-lo para ser utilizado como processador de pagamentos.
+Para ativar o plugin “int_mercadopago” e utilizá-lo como processador de pagamento é preciso realizar a configuração conforme indicado nas etapas a seguir.
 
-1. Vá para o painel de configurações do Salesforce, em **Admin > Sites > Manage Sites > _your site_ > Settings**.
-2. Adicione "int_mercadopago" à lista de cartuchos como primeiro elemento (ou, pelo menos, antes de "app_storefront_base").
+1. Acesse o painel de configurações do Salesforce, em **Admin > Sites > Manage Sites > _your site_ > Settings**.
+2. Adicione "int_mercadopago" à lista de plugins como primeiro elemento (ou, pelo menos, antes de "app_storefront_base").
 3. Compacte a pasta "int_mercadopago/metadata" em um arquivo _.zip_.
 4. Em **Administration > Site Development > Site Import and Export**, carregue este arquivo .zip usando a opção **Upload**.
 5. Selecione o arquivo .zip carregado e importe-o usando a opção **Import**.
@@ -17,6 +17,6 @@ Para ativar o cartucho "int_mercadopago", é necessário configurá-lo para ser 
 
 ## Configuração de credenciais do Mercado Pago
 
-Para usar o Mercado Pago com Cloud Commerce, você deve ter uma conta no Mercado Pago. Siga [esta documentação](/developers/pt/docs/salesforce/additional-content/credentials) para gerar suas credenciais. Em seguida, acesse **Ferramentas do comerciante > Preferências personalizadas > MercadopagoCredentials** e preencha os campos **Public key** e **Access Token**.
+Para usar o Mercado Pago com Salesforce, você deve ter uma conta no Mercado Pago. Siga [esta documentação](/developers/pt/docs/salesforce/additional-content/credentials) para criar suas credenciais. Em seguida, acesse **Ferramentas do comerciante > Preferências personalizadas > MercadopagoCredentials** e preencha os campos **Public key** e **Access Token**.
 
-E pronto! Agora você pode usar o cartucho do Mercado Pago no site da sua loja Cloud Commerce.
+Pronto! Agora você pode usar o plugin do Mercado Pago no site da sua loja Salesforce.

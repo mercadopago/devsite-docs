@@ -1,8 +1,10 @@
 # Build the store
 
-In order for the Mercado Pago cartridge to work with your site, you must integrate it into the store in such a way that it maintains its functionality together with other cartridges that you may have installed. To achieve this, you will need to build the store by following these steps:
+In order for the Mercado Pago plugin to work correctly with your website, you must integrate it with the store so that it maintains its functionality along with other plugins you have installed.
 
-1. Open a Command Prompt terminal and position yourself on the "int_mercadopago" folder.
+For this, it is necessary to build the store following the steps described below.
+
+1. Open a Command Prompt terminal and access the "int_mercadopago" folder.
 2. Run the following commands:
 - `npm install`
 - `npm run build`
