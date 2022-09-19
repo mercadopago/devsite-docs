@@ -4,7 +4,7 @@ To activate Mercado Pago in the store, follow the steps below.
 
 > To upload and deploy the site, you can use a WebDAV compatible tool.
 
-## Cartridge Configuration
+## Plugin configuration
 
 To activate the “int_mercadopago” plugin and use it as a payment processor, it is necessary to configure it as indicated in the following steps.
 

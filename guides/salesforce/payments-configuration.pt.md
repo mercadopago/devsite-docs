@@ -6,6 +6,7 @@ Para começar a receber pagamentos com cartões de crédito e Pix, siga as etapa
 
 Veja como ativar cada meio de pagamento em sua loja Salesforce.
 
+----[mlb]----
 ### Pix
 
 > WARNING
@@ -16,6 +17,7 @@ Veja como ativar cada meio de pagamento em sua loja Salesforce.
 
 1. Em sua loja do Salesforce, vá para o menu **Ferramentas do comerciante** e clique na opção **Métodos de pagamento** encontrada no grupo de opções Pedidos. Você também pode encontrar a opção usando o mecanismo de pesquisa do menu.
 2. Para ativar a forma de pagamento Pix, posicione-se na opção **PIX**. Em seguida, na coluna "Ativado" e selecione a opção **Sim** para habilitá-lo.
+------------
 
 ### Cartão de crédito
 
@@ -24,7 +26,7 @@ Veja como ativar cada meio de pagamento em sua loja Salesforce.
 
 ## Escolha a localização do meio de pagamento
 
-Por padrão, o cartucho do Mercado Pago mostrará primeiro a forma de pagamento Pix e depois o cartão de crédito. 
+Por padrão, o plugin do Mercado Pago mostrará primeiro a forma de pagamento Pix e depois o cartão de crédito. 
 
 ![payment-methods](/images/salesforce/payment-methods.png)
 

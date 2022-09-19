@@ -1,3 +1,16 @@
+----[mla, mlm, mlu, mpe, mco, mlc]----
+
+---
+content_section_with_media: 
+ - title: Salesforce
+ - message: Salesforce Cloud Commerce is a payment processor that integrates the Mercado Pago API and allows you to offer payments with credit cards. 
+ - media_video: https://www.youtube.com/embed/P6TtqAbx8EM
+---
+
+------------
+
+----[mlb]----
+
 ---
 content_section_with_media: 
  - title: Salesforce
@@ -5,20 +18,23 @@ content_section_with_media:
  - media_video: https://www.youtube.com/embed/P6TtqAbx8EM
 ---
 
+------------
+
 --- mini_landing_separator ---
 
 >>>> Availability by country <<<<
 ---
-available_countries: mlb
+available_countries: mla, mlb, mlm, mlu, mlc, mco, mpe
 
 ---
 
 ----[mla, mlm, mlu, mpe, mco, mlc]----
 
+---
 bullet_section_with_media: 
  - title: Start charging with card
  - type: normal
- - message: Integrate the Mercado Pago Checkout API and receive payments with credit and debit cards.
+ - message: Integrate the Mercado Pago Checkout API and receive payments with credit cards.
  - image: /shopify/mini-landing-1.png
 ---
 
@@ -30,7 +46,7 @@ bullet_section_with_media:
 bullet_section_with_media: 
  - title: Start charging with card
  - type: normal
- - message: Integrate the Mercado Pago Transparent Checkout and receive payments with credit and debit cards.
+ - message: Integrate the Mercado Pago Transparent Checkout and receive payments with credit cards.
  - image: /shopify/mini-landing-1.png
 ---
 
@@ -44,12 +60,29 @@ bullet_section_with_media:
 
 ------------
 
+----[mlb]----
+
 --- mini_landing_separator ---
 
->>>> Accepted payment methods <<<<
+>>>> Accepted payment types <<<<
 ---
 available_payments: credit, pix
 
 ---
 
 > For details of accepted payment methods in each country, check the full list with [payment methods availability.](/developers/en/docs/sales-processing/payment-methods)
+
+------------
+
+----[mla, mlm, mlu, mpe, mco, mlc]----
+--- mini_landing_separator ---
+
+>>>> Accepted payment types <<<<
+---
+available_payments: credit
+
+---
+
+> For details of accepted payment methods in each country, check the full list with [payment methods availability.](/developers/en/docs/sales-processing/payment-methods)
+
+------------
