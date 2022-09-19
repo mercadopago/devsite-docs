@@ -28,7 +28,9 @@ Here's how to activate each payment method in your Salesforce store.
 
 By default, the Mercado Pago plugin will first show the Pix payment method and then the credit card. 
 
+----[mlb]----
 ![payment-methods](/images/salesforce/payment-methods.png)
+------------
 
 If you want to change this order, follow these steps.
 

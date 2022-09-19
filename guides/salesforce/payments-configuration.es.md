@@ -28,7 +28,9 @@ A continuación, te explicamos cómo activar cada medio de pago en tu tienda Sal
 
 Por defecto, el plugin de Mercado Pago mostrará primero el medio de pago Pix y luego tarjeta de crédito. 
 
+----[mlb]----
 ![payment-methods](/images/salesforce/payment-methods.png)
+------------
 
 Si deseas modificar este orden, sigue estos pasos.
 

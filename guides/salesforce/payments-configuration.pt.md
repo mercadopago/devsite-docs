@@ -28,9 +28,11 @@ Veja como ativar cada meio de pagamento em sua loja Salesforce.
 
 Por padrão, o plugin do Mercado Pago mostrará primeiro a forma de pagamento Pix e depois o cartão de crédito. 
 
+----[mlb]----
 ![payment-methods](/images/salesforce/payment-methods.png)
+------------
 
-Caso queiraalterar essa ordem, siga estas etapas.
+Caso queira alterar essa ordem, siga estas etapas.
 
 1. Em sua loja do Salesforce, vá para o menu **Ferramentas do comerciante** e clique na opção **Métodos de pagamento** encontrada no grupo de opções Pedidos. Você também pode encontrar a opção usando o mecanismo de pesquisa do menu.
 2. Na caixa, procure a coluna **Ordem de classificação**. Nesta coluna, atribua um pedido numérico aos métodos de pagamento de sua loja para definir o pedido em que deseja exibi-los.
