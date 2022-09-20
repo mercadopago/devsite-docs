@@ -597,7 +597,8 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 2063--The-action-requested-is-not-valid-for-the-current-payment-state--missing-information-on-header-or-the-payment-was-fully-refund-            
+                      - 2063--The-action-requested-is-not-valid-for-the-current-payment-state-- missing information on header or the payment was fully refund-
+                      - 2085--Invalid-value-for-gateway_operation-            
         '401':
           description: Error
           x-description-i18n:
@@ -612,9 +613,9 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 401--Invalid-token--Valid-token-required-
-                      - 4040--amount-attribute-must-be-positive--Amount-should-be-more-than-0-
-                      - 4041--amount-attribute-must-be-numeric--Amount-should-be-a-number-
+                      - 401--Invalid-token-- Valid token required
+                      - 4040--amount-attribute-must-be-positive-- Amount should be more than 0
+                      - 4041--amount-attribute-must-be-numeric-- Amount should be a number
         '404':
           description: Error
           x-description-i18n:
@@ -629,8 +630,21 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 2032--Refund-not-found--X-Idempontency-key-already-used-
-                      - 2000--Payment-not-found--Payment_Id_does_not_exist-
+                      - 2000--Payment-not-found-- Payment_id does not exist
+                      - 2024--Payment-too-old-to-be-refunded
+                      - 2032--Refund-not-found-- X-Idempontency-key already used
+                      - 3012--Invalid parameter security_code_length
+                      - 3024--Not valid action - partial refund unsupported for this transaction
+                      - 4211--Charge-detail-can't-be-null-or-empty-- Triggered when empty or null is sent in the charge_details field
+                      - 4248--Charge not found - Shown when the charge is not found
+                      - 4291--Param-charge-id-can’t-be-null-or-empty-- Triggered when empty or null is sent in the charge_id field
+                      - 4292--Header-X-Idempotency-Key-can’t-be-null-- Triggered when the X-Idempotency-Key parameter is not sent and charges idempotency is enabled.
+                      - 4293--Invalid-payment-status-to-refund-charges-- Triggered when the status and status_detail of the payment are different from "approved" and "accredited" respectively
+                      - 4294--Charge-type-not-valid-to-refund-- Triggered when trying to refund a charge type that is not allowed.
+                      - 4295--Partial-charge-refund-is-not-allowed-- Triggered when attempting to partially refund a charge.
+                      - 4296--Charge-already-refunded-- Triggered when trying to refund a charge that has already been refunded.
+                      - 4297--Invalid-charge-id-- Triggered when the charge id has an invalid format.
+                      - 15016--Payment-too-old-to-be-refunded
   /v1/payments/{id}/refunds/{refund_id}:
     get:
       tags:
