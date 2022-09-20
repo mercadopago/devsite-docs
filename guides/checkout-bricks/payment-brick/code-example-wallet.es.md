@@ -27,6 +27,10 @@ $item->title = 'Meu produto';
 $item->quantity = 1;
 $item->unit_price = 75.56;
 $preference->items = array($item);
+
+// el $preference->purpose = 'wallet_purchase'; solo permite pagos registrados
+// para permitir pagos de guest, puede omitir esta propiedad
+$preference->purpose = 'wallet_purchase';
 $preference->save();
 ?>
 ```
@@ -40,22 +44,26 @@ mercadopago.configure({
  
 // Crear un objeto de preferencia
 let preference = {
- items: [
-   {
-     title: 'Mi producto',
-     unit_price: 100,
-     quantity: 1,
-   }
- ]
+  // el "purpose": "wallet_purchase" solo permite pagos registrados
+  // para permitir pagos de guest, puede omitir esta propiedad
+  "purpose": "wallet_purchase",
+  "items": [
+    {
+      "id": "item-ID-1234",
+      "title": "Meu produto",
+      "quantity": 1,
+      "unit_price": 75.76
+    }
+  ]
 };
- 
+
 mercadopago.preferences.create(preference)
- .then(function(response){
-   // Este valor es el ID de preferencia que se enviará al brick al inicio
-   const preferenceId = response.body.id;
- }).catch(function(error){
-   console.log(error);
- });
+  .then(function (response) {
+    // Este valor es el ID de preferencia que se enviará al ladrillo al inicio
+    const preferenceId = response.body.id;
+  }).catch(function (error) {
+    console.log(error);
+  });
 ```
 ```java
 // SDK de Mercado Pago
@@ -76,7 +84,11 @@ PreferenceItemRequest item =
        .build();
 items.add(item);
 
-PreferenceRequest request = PreferenceRequest.builder().items(items).build();
+PreferenceRequest request = PreferenceRequest.builder()
+  // el .purpose('wallet_purchase') solo permite pagos registrados
+  // para permitir pagos de guest, puede omitir esta línea
+  .purpose('wallet_purchase')
+  .items(items).build();
 
 client.create(request);
 ```
@@ -88,6 +100,9 @@ sdk = Mercadopago::SDK.new('PROD_ACCESS_TOKEN')
 
 # Crear un objeto de preferencia
 preference_data = {
+  // el purpose: 'wallet_purchase', solo permite pagos registrados
+  // para permitir pagos de guests, puede omitir esta propiedad
+  purpose: 'wallet_purchase',
   items: [
     {
       title: 'Meu produto',
@@ -99,7 +114,7 @@ preference_data = {
 preference_response = sdk.preference.create(preference_data)
 preference = preference_response[:response]
 
-# Este valor reemplazará la string "<%= @preference_id %>" en su HTML
+# Este valor es el ID de preferencia que usará en el HTML en el inicio del brick
 @preference_id = preference['id']
 ```
 ```csharp
@@ -111,19 +126,22 @@ MercadoPagoConfig.AccessToken = "PROD_ACCESS_TOKEN";
 // Crear el objeto de request de preferencia
 var request = new PreferenceRequest
 {
+  // el Purpose = 'wallet_purchase', solo permite pagos registrados
+  // para permitir pagos de invitados, puede omitir esta propiedad
+    Purpose = 'wallet_purchase',
     Items = new List<PreferenceItemRequest>
     {
         new PreferenceItemRequest
         {
             Title = "Meu produto",
             Quantity = 1,
-            CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
+            CurrencyId = "BRL",
             UnitPrice = 75.56m,
         },
     },
 };
 
-// Crea la preferencia usando el client
+// Crea la preferencia usando el cliente
 var client = new PreferenceClient();
 Preference preference = await client.CreateAsync(request);
 ```
@@ -135,9 +153,12 @@ sdk = mercadopago.SDK("PROD_ACCESS_TOKEN")
 
 # Crear un elemento en la preferencia
 preference_data = {
+  # el "purpose": "wallet_purchase", solo permite pagos registrados
+  # para permitir pagos de invitados, puede omitir esta propiedad
+    "purpose": "wallet_purchase",
     "items": [
         {
-            "title": "My Item",
+            "title": "Mi elemento",
             "quantity": 1,
             "unit_price": 75.76
         }
@@ -149,18 +170,19 @@ preference = preference_response["response"]
 ```
 ```curl
 curl -X POST \
-  'https://api.mercadopago.com/checkout/preferences' \
-  -H 'Content-Type: application/json' \
-  -H 'cache-control: no-cache' \
-  -H 'Authorization: Bearer **PROD_ACCESS_TOKEN**' \
-  -d '{
-    "items": [
-        {
-            "title": "Meu produto",
-            "quantity": 1,
-            "unit_price": 75.76
-        }
-    ]
+'https://api.mercadopago.com/checkout/preferences' \
+-H 'Content-Type: application/json' \
+-H 'cache-control: no-cache' \
+-H 'Authorization: Bearer **PROD_ACCESS_TOKEN**' \
+-d '{
+  "purpose": "wallet_purchase",
+  "items": [
+      {
+          "title": "Mi producto",
+          "quantity": 1,
+          "unit_price": 75.76
+      }
+  ]
 }'
 ```
 ]]]
@@ -177,15 +199,20 @@ require __DIR__ .  '/vendor/autoload.php';
 MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
 ?>
 
+
 // Crear un objeto de preferencia
 $preference = new MercadoPago\Preference();
 
 // Crear un elemento en la preferencia
 $item = new MercadoPago\Item();
-$item->title = 'Mi producto';
+$item->title = 'Meu produto';
 $item->quantity = 1;
-$item->unit_price = 75;
+$item->unit_price = 75.56;
 $preference->items = array($item);
+
+// el $preference->purpose = 'wallet_purchase'; solo permite pagos registrados
+// para permitir pagos de guests, puede omitir esta propiedad
+$preference->purpose = 'wallet_purchase';
 $preference->save();
 ?>
 ```
@@ -199,22 +226,26 @@ mercadopago.configure({
  
 // Crear un objeto de preferencia
 let preference = {
- items: [
-   {
-     title: 'Mi producto',
-     unit_price: 100,
-     quantity: 1,
-   }
- ]
+  // el "purpose": "wallet_purchase" solo permite pagos registrados
+  // para permitir pagos de guest, puede omitir esta propiedad
+  "purpose": "wallet_purchase",
+  "items": [
+    {
+      "id": "item-ID-1234",
+      "title": "Meu produto",
+      "quantity": 1,
+      "unit_price": 75.76
+    }
+  ]
 };
- 
+
 mercadopago.preferences.create(preference)
- .then(function(response){
-   // Este valor es el ID de preferencia que se enviará al ladrillo al inicio
-   const preferenceId = response.body.id;
- }).catch(function(error){
-   console.log(error);
- });
+  .then(function (response) {
+    // Este valor es el ID de preferencia que se enviará al ladrillo al inicio
+    const preferenceId = response.body.id;
+  }).catch(function (error) {
+    console.log(error);
+  });
 ```
 ```java
 // SDK de Mercado Pago
@@ -223,15 +254,25 @@ import com.mercadopago.MercadoPagoConfig;
 MercadoPagoConfig.setAccessToken("PROD_ACCESS_TOKEN");
 
 // Crear un objeto de preferencia
-Preference preference = new Preference();
+PreferenceClient client = new PreferenceClient();
 
 // Crear un elemento en la preferencia
-Item item = new Item();
-item.setTitle("Meu produto")
-    .setQuantity(1)
-    .setUnitPrice((float) 75);
-preference.appendItem(item);
-preference.save();
+List<PreferenceItemRequest> items = new ArrayList<>();
+PreferenceItemRequest item =
+   PreferenceItemRequest.builder()
+       .title("Meu produto")
+       .quantity(1)
+       .unitPrice(new BigDecimal("100"))
+       .build();
+items.add(item);
+
+PreferenceRequest request = PreferenceRequest.builder()
+  // el .purpose('wallet_purchase') solo permite pagos registrados
+  // para permitir pagos de guest, puede omitir esta línea
+  .purpose('wallet_purchase')
+  .items(items).build();
+
+client.create(request);
 ```
 ```ruby
 # SDK de Mercado Pago
@@ -241,10 +282,13 @@ sdk = Mercadopago::SDK.new('PROD_ACCESS_TOKEN')
 
 # Crear un objeto de preferencia
 preference_data = {
+  // el purpose: 'wallet_purchase', solo permite pagos registrados
+  // para permitir pagos de guests, puede omitir esta propiedad
+  purpose: 'wallet_purchase',
   items: [
     {
       title: 'Meu produto',
-      unit_price: 75,
+      unit_price: 75.56,
       quantity: 1
     }
   ]
@@ -252,7 +296,7 @@ preference_data = {
 preference_response = sdk.preference.create(preference_data)
 preference = preference_response[:response]
 
-# Este valor reemplazará la string "<%= @preference_id %>" en su HTML
+# Este valor es el ID de preferencia que usará en el HTML en el inicio del brick
 @preference_id = preference['id']
 ```
 ```csharp
@@ -261,22 +305,25 @@ preference = preference_response[:response]
  // Agregar credenciales
 MercadoPagoConfig.AccessToken = "PROD_ACCESS_TOKEN";
 
-// Crear el objeto de solicitud de preferencia
+// Crear el objeto de request de preferencia
 var request = new PreferenceRequest
 {
+  // el Purpose = 'wallet_purchase', solo permite pagos registrados
+  // para permitir pagos de invitados, puede omitir esta propiedad
+    Purpose = 'wallet_purchase',
     Items = new List<PreferenceItemRequest>
     {
         new PreferenceItemRequest
         {
             Title = "Meu produto",
             Quantity = 1,
-            CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
-            UnitPrice = 75m,
+            CurrencyId = "BRL",
+            UnitPrice = 75.56m,
         },
     },
 };
 
-// Crea la preferencia usando el client
+// Crea la preferencia usando el cliente
 var client = new PreferenceClient();
 Preference preference = await client.CreateAsync(request);
 ```
@@ -286,13 +333,16 @@ import mercadopago
 # Agregar credenciales
 sdk = mercadopago.SDK("PROD_ACCESS_TOKEN")
 
-# Crear un objeto de preferencia
+# Crear un elemento en la preferencia
 preference_data = {
+  # el "purpose": "wallet_purchase", solo permite pagos registrados
+  # para permitir pagos de invitados, puede omitir esta propiedad
+    "purpose": "wallet_purchase",
     "items": [
         {
-            "title": "My Item",
+            "title": "Mi elemento",
             "quantity": 1,
-            "unit_price": 75
+            "unit_price": 75.76
         }
     ]
 }
@@ -302,18 +352,19 @@ preference = preference_response["response"]
 ```
 ```curl
 curl -X POST \
-  'https://api.mercadopago.com/checkout/preferences' \
-  -H 'Content-Type: application/json' \
-  -H 'cache-control: no-cache' \
-  -H 'Authorization: Bearer **PROD_ACCESS_TOKEN**' \
-  -d '{
-    "items": [
-        {
-            "title": "Meu produto",
-            "quantity": 1,
-            "unit_price": 75.76
-        }
-    ]
+'https://api.mercadopago.com/checkout/preferences' \
+-H 'Content-Type: application/json' \
+-H 'cache-control: no-cache' \
+-H 'Authorization: Bearer **PROD_ACCESS_TOKEN**' \
+-d '{
+  "purpose": "wallet_purchase",
+  "items": [
+      {
+          "title": "Mi producto",
+          "quantity": 1,
+          "unit_price": 75.76
+      }
+  ]
 }'
 ```
 ]]]
@@ -351,10 +402,8 @@ curl -X POST \
         onReady: () => {
           // callback llamado cuando Brick está listo
         },
-        onSubmit: ({ paymentType, formData }) => {
+        onSubmit: ({ selectedPaymentMethod, formData }) => {
           // callback llamado al hacer clic en el botón de envío de datos
-        
-          if (paymentType === 'wallet_purchase') {
             // en este caso, el usuario fue redirigido a
             // la página de Mercado Pago para realizar el pago
           }

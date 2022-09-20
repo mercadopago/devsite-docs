@@ -38,10 +38,8 @@ To facilitate and optimize your integration process, check below a complete exam
          onReady: () => {
            // callback called when clicking on the data submission button
          },
-         onSubmit: ({ paymentType, formData }) => {
+         onSubmit: ({ selectedPaymentMethod, formData }) => {
            // callback chamado ao clicar no botão de submissão dos dados
-          
-           if (paymentType === 'credit_card' || paymentType === 'debit_card') {
              return new Promise((resolve, reject) => {
                fetch("/processar-pago", {
                  method: "POST",

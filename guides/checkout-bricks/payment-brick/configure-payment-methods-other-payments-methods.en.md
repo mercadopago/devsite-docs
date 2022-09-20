@@ -93,10 +93,8 @@ const renderPaymentBrick = async (bricksBuilder) => {
       onReady: () => {
         // callback called when the brick is ready
       },
-      onSubmit: (formData) => {
+      onSubmit: ({ selectedPaymentMethod, formData }) => {
         // callback called when the user clicks on the submit data button
-
-        // example of sending the data collected by our Brick to your server
         return new Promise((resolve, reject) => {
             fetch("/process_payment", { 
                 method: "POST",

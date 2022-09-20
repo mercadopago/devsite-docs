@@ -78,3 +78,27 @@ function createPayment(){
         });
 };
 ```
+
+> CLIENT_SIDE
+>
+> h1
+>
+> Ocultar panel de Billetera Mercado Pago
+
+| - | Brick |
+| --- | --- |
+| Momento de personalización  |  Al renderizar el brick  |
+| Propiedad  | customization.visual.hideRedirectionPanel |
+| Tipo  | Boolean  |
+| Observaciones  | Cuando **true**, oculta dentro de la opción de pago con la Billetera de Mercado Pago, el panel de redirección al sitio web de Mercado Pago. |
+
+```javascript
+const settings = {
+   ...,
+   customization: {
+       visual: {
+           hideRedirectionPanel: true
+       }
+   }
+}
+```

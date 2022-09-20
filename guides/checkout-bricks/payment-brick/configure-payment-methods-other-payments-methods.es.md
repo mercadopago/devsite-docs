@@ -100,10 +100,8 @@ const renderPaymentBrick = async (bricksBuilder) => {
      onReady: () => {
        // callback llamado cuando Brick esté listo
      },
-     onSubmit: ({ paymentType, formData }) => {
+     onSubmit: ({ selectedPaymentMethod, formData }) => {
        // callback llamado cuando el usuario haz clic en el botón enviar los datos
-      
-       if (paymentType === 'credit_card' || paymentType === 'debit_card') {
          return new Promise((resolve, reject) => {
            fetch("/processar-pago", {
              method: "POST",

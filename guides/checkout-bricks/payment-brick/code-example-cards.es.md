@@ -38,10 +38,8 @@ Para facilitar y optimizar su proceso de integración, vea a continuación un ej
          onReady: () => {
            // callback llamado cuando Brick está listo
          },
-         onSubmit: ({ paymentType, formData }) => {
+         onSubmit: ({ selectedPaymentMethod, formData }) => {
            // callback llamado al hacer clic en el botón de envío de datos
-          
-           if (paymentType === 'credit_card' || paymentType === 'debit_card') {
              return new Promise((resolve, reject) => {
                fetch("/processar-pago", {
                  method: "POST",

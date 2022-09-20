@@ -107,7 +107,7 @@ window.statusBrickController = await bricksBuilder.create(
 renderStausScreenBrick(bricksBuilder);
 ```
 
-> The `paymentId` that must be sent to Brick for its initialization is the id returned by the [Payments](/developers/pt/reference/payments/_payments/post) API when generating a payment with Mercado Pago.
+> The `paymentId` that must be sent to Brick for its initialization is the id returned by the [Payments](/developers/en/reference/payments/_payments/post) API when generating a payment with Mercado Pago.
 
 The result of rendering the brick should be like the image below:”
 
