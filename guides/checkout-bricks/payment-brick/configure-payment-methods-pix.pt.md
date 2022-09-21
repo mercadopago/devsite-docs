@@ -1,6 +1,16 @@
 # Configure a integração com Pix
 
-Para configurar a integração do Payment Brick para receber pagamentos com Pix você precisa seguir os passos abaixo. Caso já tenha integrado pagamentos via cartão, você pode iniciar a integração a partir da **etapa 5**.
+Pix é um meio de pagamento eletrônico instantâneo oferecido pelo Banco Central do Brasil a pessoas físicas e jurídicas. Através do Checkout Bricks, é possível oferecer esta opção de pagamento a partir de um **código QR** ou um **código de pagamento**.
+
+> WARNING
+>
+> Importante
+> 
+> A opção de pagamento com Pix só será exibida se houver uma chave Pix cadastrada no Mercado Pago. Caso ainda não tenha criado, [clique aqui]((https://www.youtube.com/watch?v=60tApKYVnkA)) e veja o passo a passo. <br/></br>
+> <br/></br>
+> Para já inicializar o formulário do Pix com o campo de e-mail preenchido, [clique aqui](/developers/pt/docs/checkout-bricks/payment-brick/additional-customization/initialize-data-on-the-bricks).
+
+Para configurar a integração do Payment Brick para receber pagamentos com Pix você precisa seguir os passos abaixo. Caso já tenha integrado pagamentos via cartão, você pode iniciar a integração a partir da **etapa 4**.
 
 1. [Criar container](#bookmark_criar_container)
 2. [Incluir e configurar a biblioteca MercadoPago.js](#bookmark_incluir_e_configurar_a_biblioteca_mercadopago.js)
@@ -25,7 +35,7 @@ Você vai precisar criar um container para definir o local que o brick será ins
 > O valor exibido na propriedade `id` a seguir é apenas um exemplo, e pode ser alterado, mas deve sempre corresponder ao `id` indicado na renderização.
 
 ```html
-  <div id="PaymentBrick_container"></div>
+  <div id="paymentBrick_container"></div>
 ```
 
 > CLIENT_SIDE
@@ -82,8 +92,6 @@ Uma vez instanciado, o brick pode ser renderizado e ter todas as suas configura�
 Para renderizar o brick, insira o código abaixo após o passo anterior e preencha os atributos conforme os comentários destacados neste mesmo código.
 
 ```javascript
-const mp = new MercadoPago('YOUR_PUBLIC_KEY');
-const bricksBuilder = mp.bricks();
 const renderPaymentBrick = async (bricksBuilder) => {
  const settings = {
    initialization: {
@@ -91,18 +99,16 @@ const renderPaymentBrick = async (bricksBuilder) => {
    },
    customization: {
      paymentMethods: {
-       creditCard: 'all',
-       debitCard: 'all',
+       bankTransfer: 'all',
      },
    },
    callbacks: {
      onReady: () => {
        // callback chamado quando o Brick estiver pronto
      },
-     onSubmit: ({ paymentType, formData }) => {
+     onSubmit: ({ selectedPaymentMethod, formData }) => {
        // callback chamado ao clicar no botão de submissão dos dados
       
-       if (paymentType === 'credit_card' || paymentType === 'debit_card') {
          return new Promise((resolve, reject) => {
            fetch("/processar-pago", {
              method: "POST",
@@ -120,7 +126,7 @@ const renderPaymentBrick = async (bricksBuilder) => {
                reject();
              })
          });
-       }
+       
      },
      onError: (error) => {
        // callback chamado para todos os casos de erro do Brick
@@ -152,14 +158,6 @@ O resultado de renderizar o brick deve ser como na imagem abaixo:
 >
 > Gerenciar pagamentos com Pix
 
-> WARNING
->
-> Importante
-> 
-> A opção de pagamento com Pix só será exibida se houver uma chave Pix cadastrada no Mercado Pago. Caso ainda não tenha criado, [clique aqui]((https://www.youtube.com/watch?v=60tApKYVnkA)) e veja o passo a passo. </br> 
-> <br/> </br> 
-> Para já inicializar o formulário do Pix com o campo de e-mail preenchido, [clique aqui](/developers/pt/docs/checkout-bricks/payment-brick/additional-customization/initialize-data-on-the-bricks).
-
 Para incluir o Pix, basta utilizar a seguinte configuração:
 
 [[[
@@ -173,7 +171,6 @@ settings = {
       bankTransfer: [ 'pix' ]
     }
   }
-}
 }
 ```
 ]]]
@@ -192,8 +189,6 @@ settings = {
       email: 'jose@maria.com',
     }
   }
-}
-
 }
 ```
 ]]]

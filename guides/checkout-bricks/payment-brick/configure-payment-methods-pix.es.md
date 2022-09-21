@@ -1,6 +1,16 @@
 # Configurar la integración con Pix
 
-Para configurar la integración de Payment Brick para recibir pagos con Pix debe seguir los pasos a continuación. Si ya ha integrado los pagos con tarjeta, puede iniciar la integración desde el **paso 5**.
+Pix es un método de pago electrónico instantáneo ofrecido por el Banco Central de Brasil a personas físicas y jurídicas. A través de Checkout Bricks, es posible ofrecer esta opción de pago desde un **código QR** o un **código de pago**.
+
+> WARNING
+>
+> Importante
+> 
+> La opción de pago por Pix solo se mostrará si existe una Clave de Pix registrada en Mercado Pago. Si aún no las creaste, [haz clic aquí](https://www.youtube.com/watch?v=60tApKYVnkA) y consulta el paso a paso. <br/></br>
+> <br/></br>
+> Para iniciar el formulario de Pix con el campo de correo electrónico completado, [haz clic aquí](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/initialize-data-on-the-bricks).
+
+Para configurar la integración de Payment Brick para recibir pagos con Pix debe seguir los pasos a continuación. Si ya ha integrado los pagos con tarjeta, puede iniciar la integración desde el **paso 4**.
 
 1. [Crear container](#bookmark_crear_container)
 2. [Incluir y configurar la librería MercadoPago.js](#bookmark_incluir_y_configurar_la_librería_mercadopago.js)
@@ -83,27 +93,23 @@ Una vez instanciado el builder, nuestro brick puede ser renderizado y tener toda
 Para renderizar el brick, inserta el código a continuación del paso anterior y completa los atributos de acuerdo con los comentarios destacados en este mismo código.
 
 ```javascript
-const mp = new MercadoPago('YOUR_PUBLIC_KEY');
-const bricksBuilder = mp.bricks();
 const renderPaymentBrick = async (bricksBuilder) => {
  const settings = {
    initialization: {
-     amount: 100, // valor del pago a realizar
+     amount: 100, // cantidad de procesamiento a realizar
    },
    customization: {
      paymentMethods: {
-       creditCard: 'all',
-       debitCard: 'all',
+       bankTransfer: 'all',
      },
    },
    callbacks: {
      onReady: () => {
-       // callback llamado cuando Brick esté listo
+       // callback llamado cuando Brick está listo
      },
-     onSubmit: ({ paymentType, formData }) => {
-       // callback llamado cuando el usuario haz clic en el botón enviar los datos
+     onSubmit: ({ selectedPaymentMethod, formData }) => {
+       // callback llamado al hacer clic en el botón de envío de datos
       
-       if (paymentType === 'credit_card' || paymentType === 'debit_card') {
          return new Promise((resolve, reject) => {
            fetch("/processar-pago", {
              method: "POST",
@@ -117,14 +123,14 @@ const renderPaymentBrick = async (bricksBuilder) => {
                resolve();
              })
              .catch((error) => {
-               // tratar respuesta de error al intentar crear el pago
+               // manejar la respuesta de error al intentar crear el pago
                reject();
              })
          });
-       }
+       
      },
      onError: (error) => {
-       // callback llamado para todos los casos de error de Brick
+       // llamado para todos los casos de error de Brick
      },
    },
  };
@@ -153,14 +159,6 @@ El resultado de renderizar el brick debe ser como la imagen de abajo:
 >
 > Administrar pagos con Pix
 
-> WARNING
->
-> Importante
-> 
-> La opción de pago por Pix solo se mostrará si existe una Clave de Pix registrada en Mercado Pago. Si aún no las creaste, [haz clic aquí](https://www.youtube.com/watch?v=60tApKYVnkA) y consulta el paso a paso. </br> 
-> <br/> </br> 
-> Para iniciar el formulario de Pix con el campo de correo electrónico completado, [haz clic aquí](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/initialize-data-on-the-bricks).
-
 Para incluir Pix, solo use la siguiente configuración:
 
 [[[
@@ -174,7 +172,6 @@ settings = {
       bankTransfer: [ 'pix' ]
     }
   }
-}
 }
 ```
 ]]]
@@ -193,8 +190,6 @@ settings = {
       email: 'jose@maria.com',
     }
   }
-}
-
 }
 ```
 ]]]

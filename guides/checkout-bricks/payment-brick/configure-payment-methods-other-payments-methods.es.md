@@ -1,6 +1,70 @@
 # Configurar la integración con otros medios de pago
 
-Para configurar la integración de Payment Brick para recibir pagos con otros medios de pago debe seguir los pasos a continuación. Si ya ha integrado los pagos con tarjeta, puede iniciar la integración desde el **paso 5**.
+Con el Checkout Bricks de Mercado Pago, es posible ofrecer, además de tarjeta y Pix, pagos vía **boleto bancario** y pago en **agencias de lotería**. 
+
+Para obtener una lista detallada de todos los medios de pago disponibles para integración, envía un **GET** con tu _Access token_ al endpoint [/v1/payment_methods](/developers/es/reference/payment_methods/_payment_methods/get) y ejecuta la solicitud o, si lo prefieres, haz la solicitud utilizando los siguientes SDKs.
+
+[[[
+```php
+<?php
+
+  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+
+  $payment_methods = MercadoPago::get("/v1/payment_methods");
+
+?>
+```
+```node
+var mercadopago = require('mercadopago');
+mercadopago.configurations.setAccessToken(config.access_token);
+
+var response = await mercadopago.payment_methods.listAll();
+var payment_methods = response.body;
+```
+```java
+MercadoPagoConfig.setAccessToken("ENV_ACCESS_TOKEN");
+
+PaymentMethodClient client = new PaymentMethodClient();
+client.list();
+
+```
+```ruby
+require 'mercadopago'
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
+
+payment_methods_response = sdk.payment_methods.get()
+payment_methods = payment_methods_response[:response]
+
+```
+```csharp
+using MercadoPago.Client.PaymentMethod;
+using MercadoPago.Config;
+using MercadoPago.Resource;
+using MercadoPago.Resource.PaymentMethod;
+
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
+
+var client = new PaymentMethodClient();
+ResourcesList<PaymentMethod> paymentMethods = await client.ListAsync();
+
+```
+```python
+import mercadopago
+sdk = mercadopago.SDK("ACCESS_TOKEN")
+
+payment_methods_response = sdk.payment_methods().list_all()
+payment_methods = payment_methods_response["response"]
+```
+```curl
+curl -X GET \
+    -H 'accept: application/json' \
+    -H 'content-type: application/json' \
+    -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/payment_methods' \
+```
+]]]
+
+Para ofrecer pagos con **boleto bancário** y/o pago en **agencias de lotería**, sigue las siguientes etapas. Si ya ha integrado los pagos con tarjeta, puede iniciar la integración desde el **paso 4**.
 
 1. [Crear container](#bookmark_crear_container)
 2. [Incluir y configurar la librería MercadoPago.js](#bookmark_incluir_y_configurar_la_librería_mercadopago.js)
@@ -25,7 +89,7 @@ Deberás crear un container para definir dónde se colocará el brick en la pant
 > El valor que se muestra en la propiedad `id` a continuación es solo un ejemplo y puede ser alterado, pero siempre debe coincidir con el `id` indicado en la renderización.
 
 ```html
-  <div id="PaymentBrick_container"></div>
+  <div id="paymentBrick_container"></div>
 ```
 
 > CLIENT_SIDE
@@ -83,25 +147,23 @@ Una vez instanciado el builder, nuestro brick puede ser renderizado y tener toda
 Para renderizar el brick, inserta el código a continuación del paso anterior y completa los atributos de acuerdo con los comentarios destacados en este mismo código.
 
 ```javascript
-const mp = new MercadoPago('YOUR_PUBLIC_KEY');
-const bricksBuilder = mp.bricks();
 const renderPaymentBrick = async (bricksBuilder) => {
  const settings = {
    initialization: {
-     amount: 100, // valor del pago a realizar
+     amount: 100, // cantidad de procesamiento a realizar
    },
    customization: {
      paymentMethods: {
-       creditCard: 'all',
-       debitCard: 'all',
+       ticket: 'all',
      },
    },
    callbacks: {
      onReady: () => {
-       // callback llamado cuando Brick esté listo
+       // callback llamado cuando Brick está listo
      },
      onSubmit: ({ selectedPaymentMethod, formData }) => {
-       // callback llamado cuando el usuario haz clic en el botón enviar los datos
+       // callback llamado al hacer clic en el botón de envío de datos
+      
          return new Promise((resolve, reject) => {
            fetch("/processar-pago", {
              method: "POST",
@@ -115,13 +177,14 @@ const renderPaymentBrick = async (bricksBuilder) => {
                resolve();
              })
              .catch((error) => {
-               // tratar respuesta de error al intentar crear el pago
+               // manejar la respuesta de error al intentar crear el pago
                reject();
              })
          });
+       
      },
      onError: (error) => {
-       // callback llamado para todos los casos de error de Brick
+       // callback llamado solicitada para todos los casos de error de Brick
      },
    },
  };
@@ -156,7 +219,7 @@ El resultado de renderizar el brick debe ser como la imagen de abajo:
 >
 > Los métodos de pago que se describen a continuación requieren que se complete la dirección, el nombre y los detalles del documento del comprador. Para una mejor experiencia de usuario, se recomienda que el integrador ya inicialice estos datos, por lo que no es necesario llenarlo manualmente. [Consulte aquí](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/initialize-data-on-the-bricks) cómo inicializar el bloque con estos datos ya completados.
 
-Para incluir pago vía boleto y lotería, solo use la siguiente configuración:
+Para incluir pagos con **boleto bancário** y/o pago en **agencias de lotería**, solo use la siguiente configuración:
 
 [[[
 ```Javascript
@@ -169,7 +232,6 @@ settings = {
       ticket: 'all'
     }
   }
-}
 }
 ```
 ]]]
@@ -190,8 +252,13 @@ settings = {
     }
   }
 }
-}
 ```
 ]]]
 
-Los ID aceptados dentro del arreglo en la propiedad `ticket` son `pec` (pago en lotería) y `bolbradesco` (pago vía boleto).
+Para obtener una lista completa de ID que se pueden pasar dentro del array, consulte la API [Obtener medios de pago](/developers/es/reference/payment_methods/_payment_methods/get) en nuestra referencia de API.
+
+> NOTE
+>
+> Importante
+>
+> La respuesta de la API contiene ID de varios `payment_type_id`. Los ID aceptados por la propiedad `ticket` son solo aquellos que contienen `payment_type_id = 'ticket'`.

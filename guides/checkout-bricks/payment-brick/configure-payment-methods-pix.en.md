@@ -1,6 +1,16 @@
 # Configure the integration with Pix
 
-To configure Payment Brick integration to receive payments with Pix you need to follow the steps below. If you have already integrated card payments, you can start the integration from **step 5**.
+Pix is an instant electronic payment method offered by the Central Bank of Brazil to individuals and legal entities. Through Checkout Bricks, it is possible to offer this payment option from a **QR code** or a **payment code**.
+
+> WARNING
+>
+> Important
+>
+> The Pix payment option will only be displayed if there is a Pix key registered] in Mercado Pago. If you haven't created it yet, [click here](https://www.youtube.com/watch?v=60tApKYVnkA) and check the necessary steps. <br/></br>
+> <br/></br>
+> To initialize the Pix form with the email field filled in, [click here](/developers/en/docs/checkout-bricks/payment-brick/additional-customization/initialize-data-on-the-bricks).
+
+To configure Payment Brick integration to receive payments with Pix you need to follow the steps below. If you have already integrated card payments, you can start the integration from **step 4**.
 
 1. [Create container](#bookmark_create_container)
 2. [Include and configure MercadoPago.js library](#bookmark_include_and_configure_mercadopago.js_library)
@@ -25,7 +35,7 @@ You will need to create a container to define where the brick will be placed on 
 > The value shown in the `id` property below is just an example and can be altered, however, it should always match the `id` indicated in the render.
 
 ```html
-  <div id="PaymentBrick_container"></div>
+  <div id="paymentBrick_container"></div>
 ```
 
 > CLIENT_SIDE
@@ -84,45 +94,53 @@ To render the brick, insert the following code after the previous step and fill 
 
 ```javascript
 const renderPaymentBrick = async (bricksBuilder) => {
-
-  const settings = {
-    initialization: {
-      amount: 100, //value to be charged
-    },
-    callbacks: {
-      onReady: () => {
-        // callback called when the brick is ready
-      },
-      onSubmit: (formData) => {
-        // callback called when the user clicks on the submit data button
-
-        // example of sending the data collected by our Brick to your server
-        return new Promise((resolve, reject) => {
-            fetch("/process_payment", { 
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(formData)
-            })
-            .then((response) => {
-                // receive payment result
-                resolve();
-            })
-            .catch((error) => {
-                // handle error response when trying to create payment
-                reject();
-            })
-          });
-      },
-      onError: (error) => { 
-        // callback called to all error cases related to the Brick
-      },
-    },
-  };
-  const PaymentBrickController = await bricksBuilder.create('Payment', 'PaymentBrick_container', settings);
+ const settings = {
+   initialization: {
+     amount: 100, // amount of processing to be performed
+   },
+   customization: {
+     paymentMethods: {
+       bankTransfer: 'all',
+     },
+   },
+   callbacks: {
+     onReady: () => {
+       // callback called when Brick is ready
+     },
+     onSubmit: ({ selectedPaymentMethod, formData }) => {
+       // callback called when clicking on the data submission button
+      
+         return new Promise((resolve, reject) => {
+           fetch("/processar-pago", {
+             method: "POST",
+             headers: {
+               "Content-Type": "application/json",
+             },
+             body: JSON.stringify(formData)
+           })
+             .then((response) => {
+               // receive payment result
+               resolve();
+             })
+             .catch((error) => {
+               // handle error response when trying to create payment
+               reject();
+             })
+         });
+       
+     },
+     onError: (error) => {
+       // callback called for all Brick error cases
+     },
+   },
+ };
+ window.paymentBrickController = await bricksBuilder.create(
+   'payment',
+   'paymentBrick_container',
+   settings
+ );
 };
-renderPaymentBrick(bricksBuilder);     
+renderPaymentBrick(bricksBuilder);
 ```
 
 The result of rendering the brick should be like the image below:”
@@ -141,14 +159,6 @@ The result of rendering the brick should be like the image below:”
 >
 > Manage payment with Pix
 
-> WARNING
->
-> Important
->
-> The Pix payment option will only be displayed if there is a Pix key registered] in Mercado Pago. If you haven't created it yet, [click here](https://www.youtube.com/watch?v=60tApKYVnkA) and check the necessary steps. </br>
-> </br> <br/>
-> To initialize the Pix form with the email field filled in, [click here](/developers/en/docs/checkout-bricks/payment-brick/additional-customization/initialize-data-on-the-bricks).
-
 To include Pix, just use the following configuration:
 
 [[[
@@ -162,7 +172,6 @@ settings = {
       bankTransfer: [ 'pix' ]
     }
   }
-}
 }
 ```
 ]]]
@@ -181,8 +190,6 @@ settings = {
       email: 'jose@maria.com',
     }
   }
-}
-
 }
 ```
 ]]]

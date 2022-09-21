@@ -1,6 +1,70 @@
 # Configure the integration with other payment methods
 
-To configure Payment Brick integration to receive payments with other payment methods you need to follow the steps below. If you have already integrated card payments, you can start the integration from **step 5**.
+With Mercado Pago's Checkout Bricks, it is possible to offer, in addition to card and Pix, payments via **boleto bancário** and **payment in lottery**.
+
+To get a detailed list of all payment methods available for integration, send a **GET** with your **Access token** to the endpoint [/v1/payment_methods](/developers/en/reference/payment_methods/_payment_methods/get) and run the request or, if you prefer, make the request using the SDKs below.
+
+[[[
+```php
+<?php
+
+MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+
+$payment_methods = MercadoPago::get("/v1/payment_methods");
+
+?>
+```
+```node
+var Mercadopago = require('mercadopago');
+Mercadopago.configurations.setAccessToken(config.access_token);
+
+var response = await Mercadopago.payment_methods.listAll();
+var payment_methods = response.body;
+```
+```java
+MercadoPagoConfig.setAccessToken("ENV_ACCESS_TOKEN");
+
+PaymentMethodClient client = new PaymentMethodClient();
+client.list();
+
+```
+```ruby
+require 'mercadopago'
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
+
+payment_methods_response = sdk.payment_methods.get()
+payment_methods = payment_methods_response[:response]
+
+```
+```csharp
+using MercadoPago.Client.PaymentMethod;
+using MercadoPago.Config;
+using MercadoPago.Resource;
+using MercadoPago.Resource.PaymentMethod;
+
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
+
+var client = new PaymentMethodClient();
+ResourcesList<PaymentMethod> paymentMethods = await client.ListAsync();
+
+```
+```python
+import market
+sdk = Mercadopago.SDK("ACCESS_TOKEN")
+
+payment_methods_response = sdk.payment_methods().list_all()
+payment_methods = payment_methods_response["response"]
+```
+```curl
+curl -X GET \
+-H 'accept: application/json' \
+-H 'content-type: application/json' \
+-H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+'https://api.mercadopago.com/v1/payment_methods' \
+```
+]]]
+
+To offer **boleto bancário** and/or payment in **lottery**, follow the steps below. If you have already integrated card payments, you can start the integration from **step 4**.
 
 1. [Create container](#bookmark_create_container)
 2. [Include and configure MercadoPago.js library](#bookmark_include_and_configure_mercadopago.js_library)
@@ -25,7 +89,7 @@ You will need to create a container to define where the brick will be placed on 
 > The value shown in the `id` property below is just an example and can be altered, however, it should always match the `id` indicated in the render.
 
 ```html
-  <div id="PaymentBrick_container"></div>
+  <div id="paymentBrick_container"></div>
 ```
 
 > CLIENT_SIDE
@@ -84,43 +148,53 @@ To render the brick, insert the following code after the previous step and fill 
 
 ```javascript
 const renderPaymentBrick = async (bricksBuilder) => {
-
-  const settings = {
-    initialization: {
-      amount: 100, //value to be charged
-    },
-    callbacks: {
-      onReady: () => {
-        // callback called when the brick is ready
-      },
-      onSubmit: ({ selectedPaymentMethod, formData }) => {
-        // callback called when the user clicks on the submit data button
-        return new Promise((resolve, reject) => {
-            fetch("/process_payment", { 
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(formData)
-            })
-            .then((response) => {
-                // receive payment result
-                resolve();
-            })
-            .catch((error) => {
-                // handle error response when trying to create payment
-                reject();
-            })
-          });
-      },
-      onError: (error) => { 
-        // callback called to all error cases related to the Brick
-      },
-    },
-  };
-  const PaymentBrickController = await bricksBuilder.create('Payment', 'PaymentBrick_container', settings);
+ const settings = {
+   initialization: {
+     amount: 100, // amount of processing to be performed
+   },
+   customization: {
+     paymentMethods: {
+       ticket: 'all',
+     },
+   },
+   callbacks: {
+     onReady: () => {
+       // callback called when Brick is ready
+     },
+     onSubmit: ({ selectedPaymentMethod, formData }) => {
+       // callback called when clicking on the data submission button
+      
+         return new Promise((resolve, reject) => {
+           fetch("/processar-pago", {
+             method: "POST",
+             headers: {
+               "Content-Type": "application/json",
+             },
+             body: JSON.stringify(formData)
+           })
+             .then((response) => {
+               // receive payment result
+               resolve();
+             })
+             .catch((error) => {
+               // handle error response when trying to create payment
+               reject();
+             })
+         });
+       
+     },
+     onError: (error) => {
+       // callback called for all Brick error cases
+     },
+   },
+ };
+ window.paymentBrickController = await bricksBuilder.create(
+   'payment',
+   'paymentBrick_container',
+   settings
+ );
 };
-renderPaymentBrick(bricksBuilder);     
+renderPaymentBrick(bricksBuilder);  
 ```
 
 The result of rendering the brick should be like the image below:”
@@ -145,7 +219,7 @@ The result of rendering the brick should be like the image below:”
 >
 > The payment methods described below require the buyer's address, name and document details to be filled in. For a better user experience, it is recommended that the integrator already initializes this data, so it will not be necessary to fill it manually. [Check here](/developers/en/docs/checkout-bricks/payment-brick/additional-customization/initialize-data-on-the-bricks) how to initialize the brick with this data already filled in.
 
-To include payment via boleto and lottery, just use the following configuration:
+To include payments via **boleto bancário** and **payment in lottery**, just use the following configuration:
 
 [[[
 ```Javascript
@@ -159,11 +233,10 @@ settings = {
     }
   }
 }
-}
 ```
 ]]]
 
-The `ticket` property accepts 2 variable types, `string` and `string[]`. In the example above, payments via **boleto** and **payment in lottery** will be accepted. 
+The `ticket` property accepts 2 variable types, `string` and `string[]`. In the example above, payments via **boleto bancário** and **payment in lottery** will be accepted. 
 
 If you don't want to allow both payment methods, instead of the string `all`, you can pass an array with just the desired IDs. As in the example below, where only payment via bank slip is accepted.
 
@@ -179,8 +252,13 @@ settings = {
     }
   }
 }
-}
 ```
 ]]]
 
-The IDs accepted within the array in the `ticket` property are `pec` (payment in lottery) and `bolbradesco` (payment via boleto).
+For a complete list of IDs that can be passed within the array, check the [Get Payment Methods](/developers/en/reference/payment_methods/_payment_methods/get) API in our API Reference.
+
+> NOTE
+>
+> Important
+>
+> The API response contains IDs of several `payment_type_id`. IDs accepted by the `ticket` property are only those that contain `payment_type_id = 'ticket'`.
