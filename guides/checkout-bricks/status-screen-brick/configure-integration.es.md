@@ -111,7 +111,7 @@ renderStausScreenBrick(bricksBuilder);
 
 El resultado de renderizar el brick debe ser como la imagen de abajo:
 
-![cardform](checkout-bricks/card-form-es.png)
+![status-screen-brick](checkout-bricks/status-screen-brick-es.png)
 
 > NOTE
 >

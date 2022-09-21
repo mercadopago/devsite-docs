@@ -15,6 +15,14 @@ bullet_section_with_media:
 
 --- mini_landing_separator ---
 
+>>>> Availability by country <<<<
+---
+available_countries: mla, mlb, mlm, mlu, mlc, mco, mpe
+
+---
+
+--- mini_landing_separator ---
+
 ---
 future_product_avaible: 
  - title: Bricks
@@ -71,10 +79,63 @@ future_product_avaible:
 ---
 
 --- mini_landing_separator ---
+>>>>  Accepted Payment types <<<<
 
->>>> Availability by country <<<<
----
-available_countries: mla, mlb, mlm, mlu, mlc, mco, mpe
+----[mlb]----
 
 ---
+available_payments: credit, debit, mercadopago, boleto, pix, pec, moneda
+
+---
+
+------------
+
+----[mla]---- 
+
+---
+available_payments: credit, debit, efectivo, mercadopago
+
+----
+------------
+
+----[mlm]---- 
+
+---
+available_payments: credit, debit, mercadopago, moneda
+
+----
+------------
+
+----[mlu]---- 
+
+---
+available_payments: credit, debit, efectivo, mercadopago
+
+----
+------------
+
+----[mco]---- 
+
+---
+available_payments: credit, debit, efectivo, mercadopago
+
+----
+------------
+
+----[mlc]---- 
+
+---
+available_payments: credit, debit, mercadopago
+
+----
+------------
+
+----[mpe]---- 
+
+---
+available_payments: credit, debit, mercadopago
+
+----
+------------
+
 > For details of accepted payment methods in each country, check the full list with [payment methods availability.](/developers/en/docs/sales-processing/payment-methods)
