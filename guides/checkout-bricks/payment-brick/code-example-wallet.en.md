@@ -372,7 +372,7 @@ curl -X POST \
 >
 > h2
 >
-> Configure Brick Integration
+> Configure the integration
 
 ```html
 <!DOCTYPE html>

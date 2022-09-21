@@ -1,6 +1,6 @@
 # Configure a integração com outros meios de pagamento
 
-Com o Checkout Bricks do Mercado Pago, é possível oferecer, além de cartão e Pix, **pagamentos através de boleto bancário e pagamento em lotérica**.
+Com o Checkout Bricks do Mercado Pago, é possível oferecer, além de cartão e Pix, pagamentos através de **boleto bancário** e **pagamento em lotérica**.
 
 Para obter uma lista detalhada com todos os meios de pagamento disponíveis para integração, envie um **GET** com seu _Access token_ ao endpoint [/v1/payment_methods](/developers/pt/reference/payment_methods/_payment_methods/get) e execute a requisição ou, se preferir, faça a requisição utilizando os SDKs abaixo.
 
@@ -64,7 +64,7 @@ curl -X GET \
 ```
 ]]]
 
-Para oferecer pagamentos com **boleto bancário** e/ou **pagamento em lotérica**, siga as etapas abaixo. Caso já tenha integrado pagamentos via cartão, você pode iniciar a integração a partir da **etapa 4**.
+Para oferecer pagamentos com **boleto bancário** e **pagamento em lotérica**, siga as etapas abaixo. Caso já tenha integrado pagamentos via cartão, você pode iniciar a integração a partir da **etapa 4**.
 
 1. [Criar container](#bookmark_criar_container)
 2. [Incluir e configurar a biblioteca MercadoPago.js](#bookmark_incluir_e_configurar_a_biblioteca_mercadopago.js)
@@ -212,7 +212,7 @@ O resultado de renderizar o brick deve ser como na imagem abaixo:
 >
 > Gerenciar outros meios de pagamento
 
-Para incluir pagamento via **boleto bancário** e/ou **pagamento em lotérica**, basta utilizar a seguinte configuração:
+Para incluir pagamento via **boleto bancário** e **pagamento em lotérica**, basta utilizar a seguinte configuração:
 
 > NOTE
 >
@@ -235,7 +235,7 @@ settings = {
 ```
 ]]]
 
-A propriedade `ticket` aceita 2 tipos de variável, `string` e `string[]`. No exemplo acima, serão aceitos pagamentos via **boleto bancário** e/ou **pagamento em lotérica**
+A propriedade `ticket` aceita 2 tipos de variável, `string` e `string[]`. No exemplo acima, serão aceitos pagamentos via **boleto bancário** e **pagamento em lotérica**
 
 Caso não queira permitir ambos os meios de pagamento, ao invés da string `all`, você pode passar um array apenas com os IDs desejados. Como no exemplo abaixo, onde é aceito apenas pagamento via boleto.
 

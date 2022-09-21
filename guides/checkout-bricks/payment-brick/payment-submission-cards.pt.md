@@ -1,85 +1,10 @@
-# Exemplo de código 
- 
-Para facilitar e otimizar o seu processo de integração, veja abaixo um exemplo completo de como incluir cartão de crédito e débito como meio de pagamento com o Payment Brick e de como, após realizar a integração, enviar o pagamento ao Mercado Pago.
-
-> CLIENT_SIDE
->
-> h2
->
-> Configure a integração
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Bricks</title>
-</head>
-<body>
- <div id="paymentBrick_container"></div>
- <script src="https://sdk.mercadopago.com/js/v2"></script>
- <script>
-   const mp = new MercadoPago('YOUR_PUBLIC_KEY');
-   const bricksBuilder = mp.bricks();
-   const renderPaymentBrick = async (bricksBuilder) => {
-     const settings = {
-       initialization: {
-         amount: 100, // valor do processamento a ser realizado
-       },
-       customization: {
-         paymentMethods: {
-           creditCard: 'all',
-           debitCard: 'all',
-         },
-       },
-       callbacks: {
-         onReady: () => {
-           // callback chamado quando o Brick estiver pronto
-         },
-         onSubmit: ({ selectedPaymentMethod, formData }) => {
-           // callback chamado ao clicar no botão de submissão dos dados
-             return new Promise((resolve, reject) => {
-               fetch("/processar-pago", {
-                 method: "POST",
-                 headers: {
-                   "Content-Type": "application/json",
-                 },
-                 body: JSON.stringify(formData)
-               })
-                 .then((response) => {
-                   // receber o resultado do pagamento
-                   resolve();
-                 })
-                 .catch((error) => {
-                   // lidar com a resposta de erro ao tentar criar o pagamento
-                   reject();
-                 })
-             });
-         },
-         onError: (error) => {
-           // callback chamado para todos os casos de erro do Brick
-         },
-       },
-     };
-     window.paymentBrickController = await bricksBuilder.create(
-       'payment',
-       'paymentBrick_container',
-       settings
-     );
-   };
-   renderPaymentBrick(bricksBuilder);
- </script>
-</body>
-</html>
-```
-
 > SERVER_SIDE
 >
-> h2
+> h1
 >
-> Enviar pagamento ao Mercado Pago
+> Enviar pagamento com cartões
+
+Com todas as informações coletadas no backend, envie um POST com os atributos necessários ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, faça o envio das informações utilizando nossos SDKs.
 
 [[[
 ```php
@@ -284,7 +209,7 @@ curl -X POST \
 ```
 ]]]
 
-### Resposta
+## Resposta
 
 ```json
 {
@@ -301,3 +226,9 @@ curl -X POST \
     ...
 }
 ```
+
+> O callback de onSubmit do Brick contém todos os dados necessários para a criação de um pagamento, porém, caso deseje, é possível incluir detalhes adicionais, o que pode facilitar o reconhecimento da compra por parte do comprador e aumentar a taxa de aprovação dos pagamentos.<br/></br>   
+> <br/></br>  
+> Para fazer isso, adicione campos relevantes ao objeto enviado, que vem na resposta do callback onSubmit do Brick. Alguns desses campos são: `description` (esse campo pode ser exibido nos boletos emitidos) e `external_reference` (id da compra no seu site, que permite o reconhecimento da compra mais fácil). Também é possível adicionar dados complementares sobre o comprador. <br/></br>
+> <br/></br>
+> Conheça todos os campos disponíveis para realizar um pagamento completo nas [Referências de API](/developers/pt/reference/payments/_payments/post).

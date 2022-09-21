@@ -64,7 +64,7 @@ curl -X GET \
 ```
 ]]]
 
-To offer **boleto bancário** and/or payment in **lottery**, follow the steps below. If you have already integrated card payments, you can start the integration from **step 4**.
+To offer **boleto bancário** and payment in **lottery**, follow the steps below. If you have already integrated card payments, you can start the integration from **step 4**.
 
 1. [Create container](#bookmark_create_container)
 2. [Include and configure MercadoPago.js library](#bookmark_include_and_configure_mercadopago.js_library)
@@ -150,7 +150,7 @@ To render the brick, insert the following code after the previous step and fill 
 const renderPaymentBrick = async (bricksBuilder) => {
  const settings = {
    initialization: {
-     amount: 100, // amount of processing to be performed
+     amount: 100, // amount of processing to be performed 
    },
    customization: {
      paymentMethods: {

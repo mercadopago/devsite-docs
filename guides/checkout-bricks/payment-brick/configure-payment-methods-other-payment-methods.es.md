@@ -2,7 +2,7 @@
 
 Con el Checkout Bricks de Mercado Pago, es posible ofrecer, además de tarjeta y Pix, pagos vía **boleto bancario** y pago en **agencias de lotería**. 
 
-Para obtener una lista detallada de todos los medios de pago disponibles para integración, envía un **GET** con tu _Access token_ al endpoint [/v1/payment_methods](/developers/es/reference/payment_methods/_payment_methods/get) y ejecuta la solicitud o, si lo prefieres, haz la solicitud utilizando los siguientes SDKs.
+Para obtener una lista detallada de todos los medios de pago disponibles para integración, envía un **GET** con tu _Access token_ al endpoint [/v1/payment_methods](/developers/es/reference/payment_methods/_payment_methods/get) y ejecuta la solicitud o, si lo prefieres, haz la solicitud utilizando los siguientes SDKs. 
 
 [[[
 ```php
@@ -64,7 +64,7 @@ curl -X GET \
 ```
 ]]]
 
-Para ofrecer pagos con **boleto bancário** y/o pago en **agencias de lotería**, sigue las siguientes etapas. Si ya ha integrado los pagos con tarjeta, puede iniciar la integración desde el **paso 4**.
+Para ofrecer pagos con **boleto bancário** y pago en **agencias de lotería**, sigue las siguientes etapas. Si ya ha integrado los pagos con tarjeta, puede iniciar la integración desde el **paso 4**.
 
 1. [Crear container](#bookmark_crear_container)
 2. [Incluir y configurar la librería MercadoPago.js](#bookmark_incluir_y_configurar_la_librería_mercadopago.js)
@@ -219,7 +219,7 @@ El resultado de renderizar el brick debe ser como la imagen de abajo:
 >
 > Los métodos de pago que se describen a continuación requieren que se complete la dirección, el nombre y los detalles del documento del comprador. Para una mejor experiencia de usuario, se recomienda que el integrador ya inicialice estos datos, por lo que no es necesario llenarlo manualmente. [Consulte aquí](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/initialize-data-on-the-bricks) cómo inicializar el bloque con estos datos ya completados.
 
-Para incluir pagos con **boleto bancário** y/o pago en **agencias de lotería**, solo use la siguiente configuración:
+Para incluir pagos con **boleto bancário** y pago en **agencias de lotería**, solo use la siguiente configuración:
 
 [[[
 ```Javascript
