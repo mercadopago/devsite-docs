@@ -111,7 +111,7 @@ renderStausScreenBrick(bricksBuilder);
 
 El resultado de renderizar el brick debe ser como la imagen de abajo:
 
-![status-screen-brick](checkout-bricks/status-screen-brick-es.png)
+![status-screen-brick](checkout-bricks/status-screen-brick-es.jpg)
 
 > NOTE
 >
