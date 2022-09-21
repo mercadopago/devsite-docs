@@ -2,8 +2,8 @@
 
 ---
 content_section_with_media: 
- - title: Salesforce
- - message: Salesforce Cloud Commerce es un procesador de pagos que integra la API de Mercado Pago y te permite ofrecer pagos con tarjetas de crédito. 
+ - title: Salesforce Commerce Cloud
+ - message: Salesforce Commerce Cloud es un procesador de pagos que integra la API de Mercado Pago y te permite ofrecer pagos con tarjetas de crédito. 
  - media_video: https://www.youtube.com/embed/P6TtqAbx8EM
 ---
 
@@ -13,8 +13,8 @@ content_section_with_media:
 
 ---
 content_section_with_media: 
- - title: Salesforce
- - message: Salesforce Cloud Commerce es un procesador de pagos que integra la API de Mercado Pago y te permite ofrecer pagos con tarjetas de débito y crédito, además de transferencias inmediatas con Pix. 
+ - title: Salesforce Commerce Cloud
+ - message: Salesforce Commerce Cloud es un procesador de pagos que integra la API de Mercado Pago y te permite ofrecer pagos con tarjetas de débito y crédito, además de transferencias inmediatas con Pix. 
  - media_video: https://www.youtube.com/embed/P6TtqAbx8EM
 ---
 

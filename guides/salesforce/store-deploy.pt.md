@@ -8,7 +8,7 @@ Para ativar o Mercado Pago na loja, siga os passos abaixo.
 
 Para ativar o plugin “int_mercadopago” e utilizá-lo como processador de pagamento é preciso realizar a configuração conforme indicado nas etapas a seguir.
 
-1. Acesse o painel de configurações do Salesforce, em **Admin > Sites > Manage Sites > _your site_ > Settings**.
+1. Acesse o painel de configurações do Salesforce Commerce Cloud, em **Admin > Sites > Manage Sites > _your site_ > Settings**.
 2. Adicione "int_mercadopago" à lista de plugins como primeiro elemento (ou, pelo menos, antes de "app_storefront_base").
 3. Compacte a pasta "int_mercadopago/metadata" em um arquivo _.zip_.
 4. Em **Administration > Site Development > Site Import and Export**, carregue este arquivo .zip usando a opção **Upload**.
@@ -17,6 +17,6 @@ Para ativar o plugin “int_mercadopago” e utilizá-lo como processador de pag
 
 ## Configuração de credenciais do Mercado Pago
 
-Para usar o Mercado Pago com Salesforce, você deve ter uma conta no Mercado Pago. Siga [esta documentação](/developers/pt/docs/salesforce/additional-content/credentials) para criar suas credenciais. Em seguida, acesse **Ferramentas do comerciante > Preferências personalizadas > MercadopagoCredentials** e preencha os campos **Public key** e **Access Token**.
+Para usar o Mercado Pago com Salesforce Commerce Cloud, você deve ter uma conta no Mercado Pago. Siga [esta documentação](/developers/pt/docs/salesforce/additional-content/credentials) para criar suas credenciais. Em seguida, acesse **Ferramentas do comerciante > Preferências personalizadas > MercadopagoCredentials** e preencha os campos **Public key** e **Access Token**.
 
-Pronto! Agora você pode usar o plugin do Mercado Pago no site da sua loja Salesforce.
+Pronto! Agora você pode usar o plugin do Mercado Pago no site da sua loja Salesforce Commerce Cloud.

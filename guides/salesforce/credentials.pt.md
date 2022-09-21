@@ -4,6 +4,6 @@ Para receber pagamentos com o Mercado Pago, primeiro você deve ter as credencia
 
 Siga as etapas abaixo para configurar as credenciais.
 
-1. Em sua loja do Salesforce, acesse o menu **Ferramentas do comerciante** e clique na opção **Preferências personalizadas** localizada no grupo de opções Preferências globais. Você também pode encontrar a opção usando o mecanismo de pesquisa do menu.
+1. Em sua loja do Salesforce Commerce Cloud, acesse o menu **Ferramentas do comerciante** e clique na opção **Preferências personalizadas** localizada no grupo de opções Preferências globais. Você também pode encontrar a opção usando o mecanismo de pesquisa do menu.
 2. Na coluna ID, clique na opção **MercadopagoCredentials**.
 3. Preencha os valores **Chave Pública** e **Token de Acesso** com suas credenciais.

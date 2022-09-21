@@ -1,6 +1,6 @@
 # Installation
 
-To install the Mercado Pago plugin in your Salesforce store, you must follow the steps listed below.
+To install the Mercado Pago plugin in your Salesforce Commerce Cloud store, you must follow the steps listed below.
 
 1. [Integrate the plugin](/developers/en/docs/salesforce/installation/plugin-integration)
 2. [Build the store](/developers/en/docs/salesforce/installation/store-build)

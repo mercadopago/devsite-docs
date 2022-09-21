@@ -1,6 +1,6 @@
 # Configuração da integração
 
-Para começar a receber pagamentos com o Mercado Pago em sua loja Salesforce, é preciso configurar o plugin seguindo as etapas descritas abaixo.
+Para começar a receber pagamentos com o Mercado Pago em sua loja Salesforce Commerce Cloud, é preciso configurar o plugin seguindo as etapas descritas abaixo.
 
 * [Preencher credenciais](/developers/pt/docs/salesforce/integration-configuration/credentials)
 * [Verificar instalação do Mercado Pago](/developers/pt/docs/salesforce/integration-configuration/installation-verification)
