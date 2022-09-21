@@ -8,12 +8,12 @@ Durante el proceso de integración del Brick, es posible que **al momento de ins
 
 | Error  | Mensaje  | Código de causa  |
 | --- | --- | --- |
-| Objeto de configuración vacío  | [Initialization error] Settings object is empty, please pass required properties. <br> [Error de inicialización] El objeto de configuración está vacío, pase las propiedades requeridas.  | settings_empty  |
-| Ausencia de la propiedad amount (monto total de la compra)  | [Initialization error] Amount property is required. <br> [Error de inicialización] Se requiere la propiedad amount. | missing_amount_property  |
-| Ausencia de los callbacks de onReady y onError  | [Initialization error] Callbacks onReady and onError are required. <br> [Error de inicialización] Se requieren los callbacks onReady y onError. | missing_required_callbacks  |
-| Ausencia de un ID de un elemento HTML que sirva como container del brick  | [Initialization error] You must provide an HTML element ID as a container to allow component rendering. <br> [Error de inicialización] Debe proporcionar un ID de elemento HTML como contenedor para permitir la representación de componentes. | missing_container_id  |
-| Ausencia de la propiedad locale (idioma deseado)  | [Initialization error] Locale property is required. <br> [Error de inicialización] Se requiere la propiedad de configuración regional  | missing_locale_property  |
-| Error genérico ocurrido durante la inicialización del brick, generalmente alguna validación que falló debido a un valor enviado por el integrador  | [Initialization error] Brick incorrectly initialized: {error} <br> [Error de inicialización] Brick inicializado incorrectamente.  | incorrect_initialization  |
+| Objeto de configuración vacío  | [Initialization error] Settings object is empty, please pass required properties. <br> _[Error de inicialización] El objeto de configuración está vacío, pase las propiedades requeridas._  | settings_empty  |
+| Ausencia de la propiedad amount (monto total de la compra)  | [Initialization error] Amount property is required. <br> _[Error de inicialización] Se requiere la propiedad amount._ | missing_amount_property  |
+| Ausencia de los callbacks de onReady y onError  | [Initialization error] Callbacks onReady and onError are required. <br> _[Error de inicialización] Se requieren los callbacks onReady y onError._ | missing_required_callbacks  |
+| Ausencia de un ID de un elemento HTML que sirva como container del brick  | [Initialization error] You must provide an HTML element ID as a container to allow component rendering. <br> _[Error de inicialización] Debe proporcionar un ID de elemento HTML como contenedor para permitir la representación de componentes._ | missing_container_id  |
+| Ausencia de la propiedad locale (idioma deseado)  | [Initialization error] Locale property is required. <br> _[Error de inicialización] Se requiere la propiedad de configuración regional._  | missing_locale_property  |
+| Error genérico ocurrido durante la inicialización del brick, generalmente alguna validación que falló debido a un valor enviado por el integrador  | [Initialization error] Brick incorrectly initialized: {error} <br> _[Error de inicialización] Brick inicializado incorrectamente._  | incorrect_initialization  |
 
 ## Comunicación con servicios externos (APIs de Mercado Pago)
 
