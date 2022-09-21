@@ -100,8 +100,8 @@ sdk = Mercadopago::SDK.new('PROD_ACCESS_TOKEN')
 
 # Create a preference object
 preference_data = {
-  // the purpose: 'wallet_purchase', allows only logged payments
-  // to allow guest payments you can omit this property
+  # the purpose: 'wallet_purchase', allows only logged payments
+  # to allow guest payments you can omit this property
   purpose: 'wallet_purchase',
   items: [
     {
@@ -280,8 +280,8 @@ sdk = Mercadopago::SDK.new('PROD_ACCESS_TOKEN')
 
 # Create a preference object
 preference_data = {
-  // the purpose: 'wallet_purchase', allows only logged payments
-  // to allow guest payments you can omit this property
+  # the purpose: 'wallet_purchase', allows only logged payments
+  # to allow guest payments you can omit this property
   purpose: 'wallet_purchase',
   items: [
     {

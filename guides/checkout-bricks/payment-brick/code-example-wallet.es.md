@@ -95,13 +95,13 @@ client.create(request);
 ```ruby
 # SDK de Mercado Pago
 require 'mercadopago'
-// Agregar credenciales
+# Agregar credenciales
 sdk = Mercadopago::SDK.new('PROD_ACCESS_TOKEN')
 
 # Crear un objeto de preferencia
 preference_data = {
-  // el purpose: 'wallet_purchase', solo permite pagos registrados
-  // para permitir pagos de guests, puede omitir esta propiedad
+  # el purpose: 'wallet_purchase', solo permite pagos registrados
+  # para permitir pagos de guests, puede omitir esta propiedad
   purpose: 'wallet_purchase',
   items: [
     {
@@ -282,8 +282,8 @@ sdk = Mercadopago::SDK.new('PROD_ACCESS_TOKEN')
 
 # Crear un objeto de preferencia
 preference_data = {
-  // el purpose: 'wallet_purchase', solo permite pagos registrados
-  // para permitir pagos de guests, puede omitir esta propiedad
+  # el purpose: 'wallet_purchase', solo permite pagos registrados
+  # para permitir pagos de guests, puede omitir esta propiedad
   purpose: 'wallet_purchase',
   items: [
     {

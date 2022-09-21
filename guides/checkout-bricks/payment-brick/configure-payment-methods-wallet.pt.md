@@ -135,8 +135,8 @@ client.create(request);
 ```ruby
 # Cria um objeto de preferência
 preference_data = {
-  // o purpose: 'wallet_purchase', permite apenas pagamentos logados
-  // para permitir pagamentos como guest, você pode omitir essa propriedade
+  # o purpose: 'wallet_purchase', permite apenas pagamentos logados
+  # para permitir pagamentos como guest, você pode omitir essa propriedade
   purpose: 'wallet_purchase',
   items: [
     {
@@ -284,8 +284,8 @@ client.create(request);
 ```ruby
 # Cria um objeto de preferência
 preference_data = {
-  // o purpose: 'wallet_purchase', permite apenas pagamentos logados
-  // para permitir pagamentos como guest, você pode omitir essa propriedade
+  # o purpose: 'wallet_purchase', permite apenas pagamentos logados
+  # para permitir pagamentos como guest, você pode omitir essa propriedade
   purpose: 'wallet_purchase',
   items: [
     {

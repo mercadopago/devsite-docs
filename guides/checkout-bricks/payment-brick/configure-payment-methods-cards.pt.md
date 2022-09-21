@@ -119,7 +119,6 @@ const renderPaymentBrick = async (bricksBuilder) => {
                reject();
              })
          });
-       }
      },
      onError: (error) => {
        // callback chamado para todos os casos de erro do Brick

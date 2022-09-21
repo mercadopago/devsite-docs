@@ -57,7 +57,6 @@ To facilitate and optimize your integration process, check below a complete exam
                    reject();
                  })
              });
-           }
          },
          onError: (error) => {
            // callback called for all Brick error cases

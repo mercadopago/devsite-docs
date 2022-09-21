@@ -57,7 +57,6 @@ Para facilitar y optimizar su proceso de integración, vea a continuación un ej
                    reject();
                  })
              });
-           }
          },
          onError: (error) => {
            // callback solicitado para todos los casos de error de Brick
