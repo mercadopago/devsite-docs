@@ -479,7 +479,30 @@ renderPaymentBrick(bricksBuilder);
 
 El resultado de renderizar el brick debe ser como la imagen de abajo:
 
-![payment-brick](checkout-bricks/payment-brick-es.png)
+----[mlb]---- 
+![payment-brick-wallet-mlb](checkout-bricks/payment-brick-wallet-mlb-es.png)
+
+------------
+----[mla]---- 
+![payment-brick-wallet-mla](checkout-bricks/payment-brick-wallet-mla-es.png)
+
+------------
+----[mlc]---- 
+![payment-brick-wallet-mlc](checkout-bricks/payment-brick-wallet-mlc-es.png)
+
+------------
+----[mlm]---- 
+![payment-brick-wallet-mlm](checkout-bricks/payment-brick-wallet-mlm-es.png)
+
+------------
+----[mlu]---- 
+![payment-brick-wallet-mlu](checkout-bricks/payment-brick-wallet-mlu-es.png)
+
+------------
+----[mpe, mco]---- 
+![payment-brick-wallet-mco-mpe](checkout-bricks/payment-brick-wallet-mco-mpe-es.png)
+
+------------
 
 > WARNING
 >

@@ -14,7 +14,14 @@ For now, you can give your customers the ability to make payments through debit 
 
 The possibility of saving the data of cards that have already been charged in previous purchases, makes the payment process more efficient and faster. For the buyer, it is no longer necessary to have to reload the data each time they enter the checkout.
 
-![payment-brick-layout](checkout-bricks/payment-brick-layout-en.gif)
+----[mlb]----
+![payment-brick-layout-mlb](checkout-bricks/payment-brick-layout-mlb-en.gif)
+
+------------
+----[mla, mlm, mpe, mco, mlu, mlc]----
+![payment-brick-layout-mla](checkout-bricks/payment-brick-layout-mla-en.gif)
+
+------------
 
 In turn, our processor complies with all security guarantees to give users maximum protection when saving their data. This is one of the great advantages of adding Checkout Bricks to your site: the peace of mind of providing a secure solution, backed by Mercado Pago, but customized to the needs of your company.
 
