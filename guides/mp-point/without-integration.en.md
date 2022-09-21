@@ -34,4 +34,4 @@ You can check your sales in the list of activities of the Mercado Pago account, 
 > 
 > Important
 > 
-> If you want to build something more advanced and personalized, read our [Integrated Point](/developers/en/docs/mp-point/integration-configuration) documentation.
+> If you want to build something more advanced and personalized, consult the available [types of integration](/developers/en/docs/mp-point/types-of-integration).

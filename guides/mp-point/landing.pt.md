@@ -33,7 +33,7 @@ bullet_section_with_media:
 
 ---
 bullet_section_with_media:
- - title: Dispositivos disponíveis
+ - title: Dispositivos integráveis
  - type: reversed
  - benefit_title: Point Mini
  - benefit_message: 
