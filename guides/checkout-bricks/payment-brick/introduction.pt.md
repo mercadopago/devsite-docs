@@ -3,7 +3,7 @@
 O Payment Brick é uma solução modular e personalizável que permite adicionar vários métodos de pagamento à sua loja com apenas um Brick, permitindo que você salve os dados do cartão para compras futuras. Ao utilizar o Payment Brick, você terá diferentes métodos de pagamento à sua disposição e poderá escolher quais habilitar para o seu site.
 
 ----[mlb]----
-Neste momento, você poderá dar aos seus clientes a possibilidade de efetuarem pagamentos através de cartões de crédito, cartão de débito virtual Caixa ou utilizar a Carteira Mercado Pago. A curto prazo, adicionaremos a possibilidade de que, usando este mesmo Brick, você também possa permitir que eles façam pagamentos com Pix, boleto e na lotérica.
+Neste momento, você poderá dar aos seus clientes a possibilidade de efetuarem pagamentos através de cartões de crédito, cartão de débito virtual Caixa, Pix, boleto, pagamento em lotérica e utilizar a Carteira Mercado Pago.
 
 ------------
 

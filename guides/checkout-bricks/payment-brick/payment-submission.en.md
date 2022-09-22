@@ -19,13 +19,13 @@ For this to work, you should configure your [private key](/developers/en/guides/
 In the following sections, check out how to send to Mercado Pago payments made with:
 
 ----[mlb]----
-* Cards
-* Mercado Pago Wallet
-* Pix
-* Other payment methods
+* [Cards](development/en/docs/checkout-bricks/payment-brick/payment-submission/cards)
+* [Mercado Pago Wallet](development/en/docs/checkout-bricks/payment-brick/payment-submission/wallet)
+* [Pix](development/en/docs/checkout-bricks/payment-brick/payment-submission/pix)
+* [Other payment methods](development/en/docs/checkout-bricks/payment-brick/payment-submission/other-payment-methods)
 ------------
 
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-* Cards
-* Mercado Pago Wallet
+* [Cards](development/en/docs/checkout-bricks/payment-brick/payment-submission/cards)
+* [Mercado Pago Wallet](development/en/docs/checkout-bricks/payment-brick/payment-submission/wallet)
 ------------

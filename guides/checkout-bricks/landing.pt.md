@@ -41,6 +41,13 @@ future_product_avaible:
  - card_link: /developers/pt/docs/checkout-bricks/payment-brick/introduction
  - card_linkDescription: Saiba mais.
  - card_pillText: DISPONÍVEL
+ - card_avaible: true
+ - card_icon: Loading
+ - card_title: Status Screen Brick
+ - card_description: Informe os clientes dos resultados do processo de compra após efetuar o pagamento.
+ - card_link: /developers/pt/docs/checkout-bricks/status-screen-brick/introduction
+ - card_linkDescription: Saiba mais.
+ - card_pillText: NOVO
  - card_avaible: false
  - card_icon: Wallet
  - card_title: Wallet Brick
@@ -69,13 +76,6 @@ future_product_avaible:
  - card_link:
  - card_linkDescription:
  - card_pillText: EM BREVE
- - card_avaible: true
- - card_icon: Loading
- - card_title: Status Screen Brick
- - card_description: Informe os clientes dos resultados do processo de compra após efetuar o pagamento.
- - card_link: /developers/pt/docs/checkout-bricks/status-screen-brick/introduction
- - card_linkDescription: Saiba mais.
- - card_pillText: NOVO
 ---
 
 --- mini_landing_separator ---
@@ -84,7 +84,7 @@ future_product_avaible:
 ----[mlb]----
 
 ---
-available_payments: credit, debit, mercadopago, boleto, pix, pec, moneda
+available_payments: credit, debit, mercadopago, boleto, pix, pec
 
 ---
 
@@ -93,7 +93,7 @@ available_payments: credit, debit, mercadopago, boleto, pix, pec, moneda
 ----[mla]---- 
 
 ---
-available_payments: credit, debit, efectivo, mercadopago
+available_payments: credit, debit, mercadopago
 
 ----
 ------------
@@ -101,7 +101,7 @@ available_payments: credit, debit, efectivo, mercadopago
 ----[mlm]---- 
 
 ---
-available_payments: credit, debit, mercadopago, moneda
+available_payments: credit, debit, mercadopago
 
 ----
 ------------
@@ -109,7 +109,7 @@ available_payments: credit, debit, mercadopago, moneda
 ----[mlu]---- 
 
 ---
-available_payments: credit, debit, efectivo, mercadopago
+available_payments: credit, debit, mercadopago
 
 ----
 ------------
@@ -117,7 +117,7 @@ available_payments: credit, debit, efectivo, mercadopago
 ----[mco]---- 
 
 ---
-available_payments: credit, debit, efectivo, mercadopago
+available_payments: credit, debit, mercadopago
 
 ----
 ------------

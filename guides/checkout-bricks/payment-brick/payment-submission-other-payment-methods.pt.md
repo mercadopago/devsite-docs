@@ -2,7 +2,7 @@
 >
 > h1
 >
-> Enviar pagamento com outros meios de pagamento
+> Enviar pagamento - Outros meios de pagamento
 
 Para configurar pagamentos com **boleto bancário** ou **pagamento em lotérica**, envie um POST com os seguintes parâmetros ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, utilize um de nossos SDKs abaixo.
 

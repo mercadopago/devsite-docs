@@ -32,7 +32,7 @@ Para facilitar e otimizar o seu processo de integração, veja abaixo um exemplo
        },
        customization: {
          paymentMethods: {
-           bankTransfer: 'all',
+           bankTransfer: 'pix',
          },
        },
        callbacks: {

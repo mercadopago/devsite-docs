@@ -2,7 +2,7 @@
 >
 > h1
 >
-> Enviar el pago com tarjetas
+> Enviar el pago con tarjetas
 
 Con toda la información recopilada en el backend, envía un **POST** con los atributos requeridos al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) y ejecuta la solicitud o, si lo prefieres, envía la información utilizando nuestros SDKs.
 
@@ -51,7 +51,11 @@ Puedes encontrar el estado del pago en el valor _status_.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken("YOUR_ACCESS_TOKEN");
 
-mercadopago.payment.save(req.body)
+var payment_data = {
+  amount: req.body.amount,
+  ...
+}
+mercadopago.payment.save(payment_data)
   .then(function(response) {
     const { status, status_detail, id } = response.body;
     res.status(response.status).json({ status, status_detail, id });

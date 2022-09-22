@@ -1,4 +1,4 @@
-# Exemplo de código 
+# Exemplo de código - Carteira Mercado Pago
  
 Para facilitar e otimizar o seu processo de integração, veja abaixo um exemplo completo de como incluir a Carteira Mercado Pago como meio de pagamento com o Payment Brick.
 
@@ -175,6 +175,7 @@ curl -X POST \
   -H 'cache-control: no-cache' \
   -H 'Authorization: Bearer **PROD_ACCESS_TOKEN**' \
   -d '{
+    "purpose": "wallet_purchase",
     "items": [
         {
             "title": "Meu produto",
@@ -355,6 +356,7 @@ curl -X POST \
   -H 'cache-control: no-cache' \
   -H 'Authorization: Bearer **PROD_ACCESS_TOKEN**' \
   -d '{
+    "purpose": "wallet_purchase",
     "items": [
         {
             "title": "Meu produto",
@@ -403,7 +405,6 @@ curl -X POST \
           // callback chamado ao clicar no botão de submissão dos dados
             // nesse caso, o usuário foi redirecionado para
             // a página do Mercado Pago para fazer o pagamento
-          }
         },
         onError: (error) => {
           // callback chamado para todos os casos de erro do Brick

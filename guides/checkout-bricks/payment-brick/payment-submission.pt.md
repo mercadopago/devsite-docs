@@ -19,13 +19,13 @@ Tenha em conta que para que esse passo funcione é necessário que configure sua
 Veja nas seções a seguir como enviar ao Mercado Pago os pagamentos realizados com:
 
 ----[mlb]----
-* Cartões
-* Carteira Mercado Pago
-* Pix
-* Outros meios de pagamento
+* [Cartões](development/pt/docs/checkout-bricks/payment-brick/payment-submission/cards)
+* [Carteira Mercado Pago](development/pt/docs/checkout-bricks/payment-brick/payment-submission/wallet)
+* [Pix](development/pt/docs/checkout-bricks/payment-brick/payment-submission/pix)
+* [Outros meios de pagamento](development/pt/docs/checkout-bricks/payment-brick/payment-submission/other-payment-methods)
 ------------
 
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-* Cartões
-* Carteira Mercado Pago
+* [Cartões](development/pt/docs/checkout-bricks/payment-brick/payment-submission/cards)
+* [Carteira Mercado Pago](development/pt/docs/checkout-bricks/payment-brick/payment-submission/wallet)
 ------------

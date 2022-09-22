@@ -8,7 +8,9 @@ Pix es un método de pago electrónico instantáneo ofrecido por el Banco Centra
 > 
 > La opción de pago por Pix solo se mostrará si existe una Clave de Pix registrada en Mercado Pago. Si aún no las creaste, [haz clic aquí](https://www.youtube.com/watch?v=60tApKYVnkA) y consulta el paso a paso. <br/></br>
 > <br/></br>
-> Para iniciar el formulario de Pix con el campo de correo electrónico completado, [haz clic aquí](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/initialize-data-on-the-bricks).
+> Para iniciar el formulario de Pix con el campo de correo electrónico completado, [haz clic aquí](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/initialize-data-on-the-bricks).<br/></br>
+> <br/></br>
+> Y para ayudar, hemos preparado un [ejemplo de código](/developers/es/docs/checkout-bricks/payment-brick/code-example/pix) completo de la configuración de Payment Brick con Pix que puede usar como modelo.
 
 Para configurar la integración de Payment Brick para recibir pagos con Pix debe seguir los pasos a continuación. Si ya ha integrado los pagos con tarjeta, puede iniciar la integración desde el **paso 4**.
 
@@ -16,7 +18,6 @@ Para configurar la integración de Payment Brick para recibir pagos con Pix debe
 2. [Incluir y configurar la librería MercadoPago.js](#bookmark_incluir_y_configurar_la_librería_mercadopago.js)
 3. [Instanciar brick](#bookmark_instanciar_brick)
 4. [Renderizar brick](#bookmark_renderizar_brick)
-5. [Administrar pagos con Pix](#bookmark_administrar_pagos_con_pix)
 
 > Los pasos se realizan en el backend o frontend. Las etiquetas **Client-Side** y **Server-Side** ubicadas inmediatamente al lado del título lo ayudan a identificar qué paso se realiza en qué instancia.
 
@@ -100,7 +101,7 @@ const renderPaymentBrick = async (bricksBuilder) => {
    },
    customization: {
      paymentMethods: {
-       bankTransfer: 'all',
+       bankTransfer: 'pix',
      },
    },
    callbacks: {
@@ -153,43 +154,4 @@ El resultado de renderizar el brick debe ser como la imagen de abajo:
 >
 > Para un control efectivo del Brick, la función enviada en `onSubmit` siempre debe devolver una Promise. Llame el método `resolve()` solo si el procesamiento de tu backend fue exitoso. Llame el método `reject()` en caso de que ocurra un error. Esto hará que el Brick te permita completar los campos nuevamente y haga posible un nuevo intento de pago. Al llamar el `resolve()` dentro de la Promise de `onSubmit`, el brick no permite nuevos pagos. Si deseas realizar un nuevo pago, deberás crear una nueva instancia del Brick.
 
-> CLIENT_SIDE 
->
-> h2
->
-> Administrar pagos con Pix
-
-Para incluir Pix, solo use la siguiente configuración:
-
-[[[
-```Javascript
-settings = {
-  ...,
-  customization: {
-    ...,
-    paymentMethods: {
-      ...,
-      bankTransfer: [ 'pix' ]
-    }
-  }
-}
-```
-]]]
-
-La propiedad `bankTransfer` acepta 2 tipos de variables, `string` y `string[]`. Por ahora, el único medio aceptado para `bankTransfer` es **Pix**, por lo que pasar el array `['pix']` o la cadena `all` producirá el mismo resultado.
-
 Para pagar con Pix, el comprador debe ingresar su dirección de correo electrónico. Se recomienda encarecidamente que el integrador ingrese este campo de correo electrónico al inicio del Brick, para que el comprador no tenga que escribirlo manualmente. Para inicializar el campo de correo electrónico, simplemente siga el ejemplo a continuación.
-
-[[[
-```Javascript
-settings = {
-  ...,
-  initialization: {
-    ...,
-    payer: {
-      email: 'jose@maria.com',
-    }
-  }
-}
-```
-]]]

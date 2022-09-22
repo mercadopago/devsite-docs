@@ -6,6 +6,8 @@ Abaixo você encontrará listas de erros que podem ocorrer durante a integraçã
 
 Durante o processo de integração do brick, é possível que diferentes erros relacionados ao envio das variáveis sejam exibidos ao integrador **no momento de instanciar o Brick**. Esses erros serão mostrados através de um log no console do navegador (o comprador não recebe qualquer mensagem).
 
+> As mensagens de erro da API são retornadas em inglês como padrão. Porém na tabela abaixo você encontra a mensagem original e sua tradução.
+
 | Erro | Mensagem | Código da causa |
 |--- |--- |--- |
 | Objeto de configuração vazio | [Initialization error] Settings object is empty, please pass required properties <br><br>  _[Erro de inicialização] O objeto de configurações está vazio, passe as propriedades necessárias._ | settings_empty |

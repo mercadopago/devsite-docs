@@ -458,7 +458,6 @@ const renderPaymentBrick = async (bricksBuilder) => {
      // callback called when clicking on the data submission button
        // in this case, the user was redirected to
        // the Mercado Pago page to make the payment
-     }
    },
    onError: (error) => {
      // callback called for all Brick error cases
@@ -501,9 +500,3 @@ The result of rendering the brick should be like the image below:”
 ![payment-brick-wallet-mco-mpe](checkout-bricks/payment-brick-wallet-mco-mpe-en.png)
 
 ------------
-
-> WARNING
->
-> Attention
->
-> For an effective Brick control, the function submitted in `onSubmit` must always return a Promise. You should call `resolve()` only if your backend processes was successful. Call `reject()` if an error occurs. The `reject()` will make the brick allow the fields to be filled in again and a new payment attempt possible. Also, when calling the `resolve()` method inside the `onSubmit` Promise, the brick does not allow new payments. If you want to make a new payment, you must create a new Brick instance.

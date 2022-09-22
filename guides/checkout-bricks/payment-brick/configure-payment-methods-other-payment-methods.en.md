@@ -73,6 +73,8 @@ To offer **boleto bancário** and payment in **lottery**, follow the steps below
 5. [Manage other payment methods](#bookmark_manage_other_payment_methods)
 
 > The steps are performed on the backend or frontend. The **Client-Side** and **Server-Side** pills located immediately next to the title help you to identify which step is performed in which instance. <br/></br>
+> <br/></br>
+> And to help, we've prepared a complete [code-example](/developers/en/docs/checkout-bricks/payment-brick/code-example/other-payment-methods) of the Payment Brick configuration with **boleto bancário** and payment in **lottery** that you can use as a template.
 
 > CLIENT_SIDE
 >

@@ -1,4 +1,4 @@
-# Ejemplo de código 
+# Ejemplo de código - Billetera Mercado pPgo
 
 Para facilitar y optimizar su proceso de integración, ve a continuación un ejemplo completo de cómo incluir la Billetera Mercado Pago como medio de pago con Payment Brick. 
 
@@ -170,19 +170,19 @@ preference = preference_response["response"]
 ```
 ```curl
 curl -X POST \
-'https://api.mercadopago.com/checkout/preferences' \
--H 'Content-Type: application/json' \
--H 'cache-control: no-cache' \
--H 'Authorization: Bearer **PROD_ACCESS_TOKEN**' \
--d '{
-  "purpose": "wallet_purchase",
-  "items": [
-      {
-          "title": "Mi producto",
-          "quantity": 1,
-          "unit_price": 75.76
-      }
-  ]
+  'https://api.mercadopago.com/checkout/preferences' \
+  -H 'Content-Type: application/json' \
+  -H 'cache-control: no-cache' \
+  -H 'Authorization: Bearer **PROD_ACCESS_TOKEN**' \
+  -d '{
+    "purpose": "wallet_purchase",
+    "items": [
+        {
+            "title": "Mi producto",
+            "quantity": 1,
+            "unit_price": 75.76
+        }
+    ]
 }'
 ```
 ]]]
@@ -352,19 +352,19 @@ preference = preference_response["response"]
 ```
 ```curl
 curl -X POST \
-'https://api.mercadopago.com/checkout/preferences' \
--H 'Content-Type: application/json' \
--H 'cache-control: no-cache' \
--H 'Authorization: Bearer **PROD_ACCESS_TOKEN**' \
--d '{
-  "purpose": "wallet_purchase",
-  "items": [
-      {
-          "title": "Mi producto",
-          "quantity": 1,
-          "unit_price": 75.76
-      }
-  ]
+  'https://api.mercadopago.com/checkout/preferences' \
+  -H 'Content-Type: application/json' \
+  -H 'cache-control: no-cache' \
+  -H 'Authorization: Bearer **PROD_ACCESS_TOKEN**' \
+  -d '{
+    "purpose": "wallet_purchase",
+    "items": [
+        {
+            "title": "Mi producto",
+            "quantity": 1,
+            "unit_price": 75.76
+        }
+    ]
 }'
 ```
 ]]]
@@ -406,7 +406,6 @@ curl -X POST \
           // callback llamado al hacer clic en el botón de envío de datos
             // en este caso, el usuario fue redirigido a
             // la página de Mercado Pago para realizar el pago
-          }
         },
         onError: (error) => {
           // callback llamado para todos los casos de error de Brick

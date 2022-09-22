@@ -1,6 +1,6 @@
 # Configurar la integración
 
-Para configurar la integración de Status Screen Brick, debe seguir los pasos a continuación: 
+Para configurar la integración de Status Screen Brick, debes seguir los pasos a continuación: 
 
 1. [Crear container](#bookmark_crear_container)
 2. [Incluir y configurar la librería MercadoPago.js](#bookmark_incluir_y_configurar_la_librería_mercadopago.js)

@@ -4,7 +4,9 @@ A continuación encontrará listas de errores que pueden ocurrir durante la inte
 
 ## Variables pasadas por el integrador
 
-Durante el proceso de integración del Brick, es posible que **al momento de instanciar el Brick **se muestren al integrador diferentes errores relacionados con el envío de variables. Estos errores se mostrarán mediante un log en la consola del navegador (el comprador no recibe ningún mensaje).
+Durante el proceso de integración del Brick, es posible que **al momento de instanciar el Brick** se muestren al integrador diferentes errores relacionados con el envío de variables. Estos errores se mostrarán mediante un log en la consola del navegador (el comprador no recibe ningún mensaje).
+
+> Los mensajes de error de la API se devuelven en inglés de forma predeterminada. Sin embargo, en la siguiente tabla puedes encontrar el mensaje original y su traducción.
 
 | Error  | Mensaje  | Código de causa  |
 | --- | --- | --- |

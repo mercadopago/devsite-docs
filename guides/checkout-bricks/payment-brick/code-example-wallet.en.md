@@ -1,4 +1,4 @@
-# Code example
+# Code example - Mercado Pago Wallet
 
 To facilitate and optimize your integration process, check below a complete example of how to include the Mercado Pago Wallet as a means of payment with Payment Brick. 
 
@@ -175,9 +175,10 @@ curl -X POST \
   -H 'cache-control: no-cache' \
   -H 'Authorization: Bearer **PROD_ACCESS_TOKEN**' \
   -d '{
+    "purpose": "wallet_purchase",
     "items": [
         {
-            "title": "Meu produto",
+            "title": "My product",
             "quantity": 1,
             "unit_price": 75.76
         }
@@ -355,6 +356,7 @@ curl -X POST \
   -H 'cache-control: no-cache' \
   -H 'Authorization: Bearer **PROD_ACCESS_TOKEN**' \
   -d '{
+    "purpose": "wallet_purchase",
     "items": [
         {
             "title": "My product",
@@ -403,7 +405,6 @@ curl -X POST \
           // callback called when clicking on the data submission button
             // in this case, the user was redirected to
             // the Mercado Pago page to make the payment
-          }
         },
         onError: (error) => {
           // callback called for all Brick error cases

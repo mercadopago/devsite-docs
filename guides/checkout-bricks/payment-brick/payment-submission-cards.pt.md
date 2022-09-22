@@ -52,7 +52,11 @@ Encontre o estado do pagamento no campo _status_.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken("YOUR_ACCESS_TOKEN");
 
-mercadopago.payment.save(req.body)
+var payment_data = {
+  amount: req.body.amount,
+  ...
+}
+mercadopago.payment.save(payment_data)
   .then(function(response) {
     const { status, status_detail, id } = response.body;
     res.status(response.status).json({ status, status_detail, id });

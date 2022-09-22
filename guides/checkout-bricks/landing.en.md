@@ -33,14 +33,21 @@ future_product_avaible:
  - card_description: Offer credit and debit card payments.
  - card_link: /developers/en/docs/checkout-bricks/card-payment-brick/introduction
  - card_linkDescription: Learn more.
- - card_pillText: DISPONÍVEL
+ - card_pillText: AVAILABLE
  - card_avaible: true
  - card_icon: Pay
  - card_title: Payment Brick
  - card_description: Offer different payment methods from which your customers can choose, with the ability to save card details for future purchases.
  - card_link: /developers/en/docs/checkout-bricks/payment-brick/introduction
  - card_linkDescription: Learn more.
- - card_pillText: DISPONÍVEL
+ - card_pillText: AVAILABLE
+  - card_avaible: true
+ - card_icon: Loading
+ - card_title: Status Screen Brick
+ - card_description: Inform your customers of the results of the purchase process, after making the payment. 
+ - card_link: /developers/en/docs/checkout-bricks/status-screen-brick/introduction
+ - card_linkDescription: Learn more.
+ - card_pillText: NEW
  - card_avaible: false
  - card_icon: Wallet
  - card_title: Wallet Brick
@@ -69,13 +76,6 @@ future_product_avaible:
  - card_link:
  - card_linkDescription:
  - card_pillText: SOON
- - card_avaible: true
- - card_icon: Loading
- - card_title: Status Screen Brick
- - card_description: Inform your customers of the results of the purchase process, after making the payment. 
- - card_link: /developers/en/docs/checkout-bricks/status-screen-brick/introduction
- - card_linkDescription: Learn more.
- - card_pillText: NEW
 ---
 
 --- mini_landing_separator ---
@@ -84,7 +84,7 @@ future_product_avaible:
 ----[mlb]----
 
 ---
-available_payments: credit, debit, mercadopago, boleto, pix, pec, moneda
+available_payments: credit, debit, mercadopago, boleto, pix, pec
 
 ---
 
@@ -93,7 +93,7 @@ available_payments: credit, debit, mercadopago, boleto, pix, pec, moneda
 ----[mla]---- 
 
 ---
-available_payments: credit, debit, efectivo, mercadopago
+available_payments: credit, debit, mercadopago
 
 ----
 ------------
@@ -101,7 +101,7 @@ available_payments: credit, debit, efectivo, mercadopago
 ----[mlm]---- 
 
 ---
-available_payments: credit, debit, mercadopago, moneda
+available_payments: credit, debit, mercadopago
 
 ----
 ------------
@@ -109,7 +109,7 @@ available_payments: credit, debit, mercadopago, moneda
 ----[mlu]---- 
 
 ---
-available_payments: credit, debit, efectivo, mercadopago
+available_payments: credit, debit, mercadopago
 
 ----
 ------------
@@ -117,7 +117,7 @@ available_payments: credit, debit, efectivo, mercadopago
 ----[mco]---- 
 
 ---
-available_payments: credit, debit, efectivo, mercadopago
+available_payments: credit, debit, mercadopago
 
 ----
 ------------

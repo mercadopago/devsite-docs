@@ -32,7 +32,7 @@ Para facilitar y optimizar su proceso de integración, vea a continuación un ej
        },
        customization: {
          paymentMethods: {
-           bankTransfer: 'all',
+           bankTransfer: 'pix',
          },
        },
        callbacks: {
