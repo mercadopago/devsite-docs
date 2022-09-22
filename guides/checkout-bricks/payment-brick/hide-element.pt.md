@@ -83,14 +83,14 @@ function createPayment(){
 >
 > h1
 >
-> Ocultar painel da Carteira Mercado Pago
+> Ocultar painel da Conta Mercado Pago
 
 | - | Brick |
 |--- |--- |
 | Momento de customização | Ao renderizar brick |
 | Propriedade | customization.visual.hideRedirectionPanel |
 | Tipo | Boolean |
-| Observações | Quando **true**, oculta dentro da opção de pagamento com a Carteira Mercado Pago, o painel de redirecionamento para o site do Mercado Pago. |
+| Observações | Quando **true**, oculta dentro da opção de pagamento com a Conta Mercado Pago, o painel de redirecionamento para o site do Mercado Pago. |
 
 ```javascript
 const settings = {

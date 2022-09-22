@@ -1,4 +1,4 @@
-# Configure a integração com Carteira Mercado Pago
+# Configure a integração com Conta Mercado Pago
 
 Para configurar a integração do Payment Brick para receber pagamentos com a Carteira Mercado Pago você precisa seguir os passos abaixo. 
 

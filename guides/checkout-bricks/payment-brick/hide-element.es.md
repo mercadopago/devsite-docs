@@ -83,7 +83,7 @@ function createPayment(){
 >
 > h1
 >
-> Ocultar panel de Billetera Mercado Pago
+> Ocultar panel de Cuenta de Mercado Pago
 
 | - | Brick |
 | --- | --- |

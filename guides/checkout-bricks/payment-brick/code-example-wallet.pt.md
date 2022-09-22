@@ -1,4 +1,4 @@
-# Exemplo de código - Carteira Mercado Pago
+# Exemplo de código - Conta Mercado Pago
  
 Para facilitar e otimizar o seu processo de integração, veja abaixo um exemplo completo de como incluir a Carteira Mercado Pago como meio de pagamento com o Payment Brick.
 
@@ -395,7 +395,7 @@ curl -X POST \
     const settings = {
       initialization: {
         amount: 100, // valor do processamento a ser realizado
-        preferenceId: 'abcd1234', // preferenceId gerado no backend
+        preferenceId: '<PREFERENCE_ID>', // preferenceId gerado no backend
       },
       callbacks: {
         onReady: () => {
@@ -423,4 +423,4 @@ curl -X POST \
 </html>
 ```
 
-> Os pagamentos com **Carteira Mercado Pago** não precisam ser enviados via backend. Caso o usuário selecione esta opção como meio de pagamento, a `preferenceId` enviada na inicialização do brick é responsável por redirecionar o comprador ao site do Mercado Pago, onde será feito o pagamento diretamente em nosso site. Para redirecionar o comprador de volta para o seu site, você pode configurar as `back_urls` como descrito [neste artigo.](/developers/pt/docs/checkout-bricks/payment-brick/additional-customization/preferences#bookmark_redirecione_o_comprador_para_o_seu_site)
+> Os pagamentos com **Conta Mercado Pago** não precisam ser enviados via backend. Caso o usuário selecione esta opção como meio de pagamento, a `preferenceId` enviada na inicialização do brick é responsável por redirecionar o comprador ao site do Mercado Pago, onde será feito o pagamento diretamente em nosso site. Para redirecionar o comprador de volta para o seu site, você pode configurar as `back_urls` como descrito [neste artigo.](/developers/pt/docs/checkout-bricks/payment-brick/additional-customization/preferences#bookmark_redirecione_o_comprador_para_o_seu_site)

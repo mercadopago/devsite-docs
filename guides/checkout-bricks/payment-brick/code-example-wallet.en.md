@@ -395,7 +395,7 @@ curl -X POST \
     const settings = {
       initialization: {
         amount: 100, // amount of processing to be performed
-        preferenceId: 'abcd1234', // preferenceId generated in the backend
+        preferenceId: '<PREFERENCE_ID>', // preferenceId generated in the backend
       },
       callbacks: {
         onReady: () => {

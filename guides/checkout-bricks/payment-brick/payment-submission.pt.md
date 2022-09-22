@@ -20,12 +20,12 @@ Veja nas seções a seguir como enviar ao Mercado Pago os pagamentos realizados 
 
 ----[mlb]----
 * [Cartões](development/pt/docs/checkout-bricks/payment-brick/payment-submission/cards)
-* [Carteira Mercado Pago](development/pt/docs/checkout-bricks/payment-brick/payment-submission/wallet)
+* [Conta Mercado Pago](development/pt/docs/checkout-bricks/payment-brick/payment-submission/wallet)
 * [Pix](development/pt/docs/checkout-bricks/payment-brick/payment-submission/pix)
 * [Outros meios de pagamento](development/pt/docs/checkout-bricks/payment-brick/payment-submission/other-payment-methods)
 ------------
 
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 * [Cartões](development/pt/docs/checkout-bricks/payment-brick/payment-submission/cards)
-* [Carteira Mercado Pago](development/pt/docs/checkout-bricks/payment-brick/payment-submission/wallet)
+* [Conta Mercado Pago](development/pt/docs/checkout-bricks/payment-brick/payment-submission/wallet)
 ------------

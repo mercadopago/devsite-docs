@@ -8,7 +8,6 @@ Al finalizar la inclusión del formulario de pago, es necesario enviar el email 
 
 Para configurar los pagos con Pix, envía un **POST** al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) y ejecuta la solicitud o, si lo prefieres, realiza la solicitud utilizando nuestros SDKs.
 
-
 [[[
 ```php
 <?php
@@ -210,8 +209,6 @@ curl -X POST \
     }'
 ```
 ]]]
-
-
 
 La respuesta mostrará el estado del pago pendiente y toda la información que necesitas mostrar al comprador. El valor `transaction_data` devolverá los datos del código QR.
 

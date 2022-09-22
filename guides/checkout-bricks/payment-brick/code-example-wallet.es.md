@@ -1,6 +1,6 @@
-# Ejemplo de código - Billetera Mercado pPgo
+# Ejemplo de código - Cuenta de Mercado Pago
 
-Para facilitar y optimizar su proceso de integración, ve a continuación un ejemplo completo de cómo incluir la Billetera Mercado Pago como medio de pago con Payment Brick. 
+Para facilitar y optimizar su proceso de integración, ve a continuación un ejemplo completo de cómo incluir la Cuenta de Mercado Pago como medio de pago con Payment Brick. 
 
 > SERVER_SIDE
 >
@@ -23,7 +23,7 @@ $preference = new MercadoPago\Preference();
 
 // Crear un elemento en la preferencia
 $item = new MercadoPago\Item();
-$item->title = 'Meu produto';
+$item->title = 'Mi producto';
 $item->quantity = 1;
 $item->unit_price = 75.56;
 $preference->items = array($item);
@@ -50,7 +50,7 @@ let preference = {
   "items": [
     {
       "id": "item-ID-1234",
-      "title": "Meu produto",
+      "title": "Mi producto",
       "quantity": 1,
       "unit_price": 75.76
     }
@@ -78,7 +78,7 @@ PreferenceClient client = new PreferenceClient();
 List<PreferenceItemRequest> items = new ArrayList<>();
 PreferenceItemRequest item =
    PreferenceItemRequest.builder()
-       .title("Meu produto")
+       .title("Mi producto")
        .quantity(1)
        .unitPrice(new BigDecimal("100"))
        .build();
@@ -105,7 +105,7 @@ preference_data = {
   purpose: 'wallet_purchase',
   items: [
     {
-      title: 'Meu produto',
+      title: 'Mi producto',
       unit_price: 75.56,
       quantity: 1
     }
@@ -133,7 +133,7 @@ var request = new PreferenceRequest
     {
         new PreferenceItemRequest
         {
-            Title = "Meu produto",
+            Title = "Mi producto",
             Quantity = 1,
             CurrencyId = "BRL",
             UnitPrice = 75.56m,
@@ -205,7 +205,7 @@ $preference = new MercadoPago\Preference();
 
 // Crear un elemento en la preferencia
 $item = new MercadoPago\Item();
-$item->title = 'Meu produto';
+$item->title = 'Mi producto';
 $item->quantity = 1;
 $item->unit_price = 75.56;
 $preference->items = array($item);
@@ -232,7 +232,7 @@ let preference = {
   "items": [
     {
       "id": "item-ID-1234",
-      "title": "Meu produto",
+      "title": "Mi producto",
       "quantity": 1,
       "unit_price": 75.76
     }
@@ -260,7 +260,7 @@ PreferenceClient client = new PreferenceClient();
 List<PreferenceItemRequest> items = new ArrayList<>();
 PreferenceItemRequest item =
    PreferenceItemRequest.builder()
-       .title("Meu produto")
+       .title("Mi producto")
        .quantity(1)
        .unitPrice(new BigDecimal("100"))
        .build();
@@ -287,7 +287,7 @@ preference_data = {
   purpose: 'wallet_purchase',
   items: [
     {
-      title: 'Meu produto',
+      title: 'Mi producto',
       unit_price: 75.56,
       quantity: 1
     }
@@ -315,7 +315,7 @@ var request = new PreferenceRequest
     {
         new PreferenceItemRequest
         {
-            Title = "Meu produto",
+            Title = "Mi producto",
             Quantity = 1,
             CurrencyId = "BRL",
             UnitPrice = 75.56m,
@@ -396,7 +396,7 @@ curl -X POST \
     const settings = {
       initialization: {
         amount: 100, // cantidad de procesamiento a realizar
-        preferenceId: 'abcd1234', // preferenceId generado en el backend
+        preferenceId: '<PREFERENCE_ID>', // preferenceId generado en el backend
       },
       callbacks: {
         onReady: () => {
@@ -424,4 +424,4 @@ curl -X POST \
 </html>
 ```
 
-> Los pagos con **Carteira Mercado Pago** no necesitan ser enviados a través del backend. Si el usuario selecciona esta opción como medio de pago, el `preferenceId` enviado en la inicialización del brick es el encargado de redirigir al comprador al sitio web de Mercado Pago, donde el pago se realizará directamente en nuestro sitio. Para redirigir al comprador a tu sitio, puede configurar `back_urls` como se describe [en este artículo.](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/preferences#bookmark_redirigir_al_comprador_a_tu_sitio_web)
+> Los pagos con **Cuenta de Mercado Pago** no necesitan ser enviados a través del backend. Si el usuario selecciona esta opción como medio de pago, el `preferenceId` enviado en la inicialización del brick es el encargado de redirigir al comprador al sitio web de Mercado Pago, donde el pago se realizará directamente en nuestro sitio. Para redirigir al comprador a tu sitio, puede configurar `back_urls` como se describe [en este artículo.](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/preferences#bookmark_redirigir_al_comprador_a_tu_sitio_web)
