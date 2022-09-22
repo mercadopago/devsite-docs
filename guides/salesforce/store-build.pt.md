@@ -1,6 +1,6 @@
 # Construir loja
 
-Para que o plugin do Mercado Pago funcione corretamente com seu site, é preciso integrá-lo à loja de forma que mantenha sua funcionalidade junto com outros plugins que você tenha instalado.
+Para que o cartucho do Mercado Pago funcione corretamente com seu site, é preciso integrá-lo à loja de forma que mantenha sua funcionalidade junto com outros cartuchos que você tenha instalado.
 
 Para isso, é necessário construir a loja seguindo as etapas descritas abaixo.
 
@@ -9,4 +9,4 @@ Para isso, é necessário construir a loja seguindo as etapas descritas abaixo.
 - `npm install`
 - `npm run build`
 
-Pronto, você já tem o código do plugin integrado ao site da loja.
+Pronto, você já tem o código do cartucho integrado ao site da loja.

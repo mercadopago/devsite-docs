@@ -1,6 +1,6 @@
 # Build the store
 
-In order for the Mercado Pago plugin to work correctly with your website, you must integrate it with the store so that it maintains its functionality along with other plugins you have installed.
+In order for the Mercado Pago cartridge to work correctly with your website, you must integrate it with the store so that it maintains its functionality along with other cartridges you have installed.
 
 For this, it is necessary to build the store following the steps described below.
 
@@ -9,4 +9,4 @@ For this, it is necessary to build the store following the steps described below
 - `npm install`
 - `npm run build`
 
-Done, you already have the plugin code integrated into the store site.
+Done, you already have the cartridge code integrated into the store site.

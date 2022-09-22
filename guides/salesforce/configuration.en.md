@@ -1,6 +1,6 @@
 # Integration configuration
 
-To start receiving payments with Mercado Pago in your Salesforce Commerce Cloud store, you need to configure the plugin following the steps described below.
+To start receiving payments with Mercado Pago in your Salesforce Commerce Cloud store, you need to configure the cartridge following the steps described below.
 
 * [Fill in your credentials](/developers/en/docs/salesforce/integration-configuration/credentials)
 * [Verify the Mercado Pago installation](/developers/en/docs/salesforce/integration-configuration/installation-verification)

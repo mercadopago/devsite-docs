@@ -26,7 +26,7 @@ Veja como ativar cada meio de pagamento em sua loja Salesforce.
 
 ## Escolha a localização do meio de pagamento
 
-Por padrão, o plugin do Mercado Pago mostrará primeiro a forma de pagamento Pix e depois o cartão de crédito. 
+Por padrão, o cartucho do Mercado Pago mostrará primeiro a forma de pagamento Pix e depois o cartão de crédito. 
 
 ----[mlb]----
 ![payment-methods](/images/salesforce/payment-methods.png)
