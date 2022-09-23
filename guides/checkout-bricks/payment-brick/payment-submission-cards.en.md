@@ -8,45 +8,39 @@ With all the information collected in the backend, send a POST with the necessar
 
 [[[
 ```php
-===
-You can find payment status in _status_ value.
-===
 <?php
-    require_once 'vendor/autoload.php';
+ require_once 'vendor/autoload.php';
+ 
+ MercadoPago\SDK::setAccessToken("YOUR_ACCESS_TOKEN");
 
-    MercadoPago\SDK::setAccessToken("YOUR_ACCESS_TOKEN");
-
-    $payment = new MercadoPago\Payment();
-    $payment->transaction_amount = (float)$_POST['transactionAmount'];
-    $payment->token = $_POST['token'];
-    $payment->description = $_POST['description'];
-    $payment->installments = (int)$_POST['installments'];
-    $payment->payment_method_id = $_POST['paymentMethodId'];
-    $payment->issuer_id = (int)$_POST['issuer'];
-
-    $payer = new MercadoPago\Payer();
-    $payer->email = $_POST['cardholderEmail'];
-    $payer->identification = array(----[mla, mlb, mlu, mlc, mpe, mco]----
+ $payment = new MercadoPago\Payment();
+ $payment->transaction_amount = (float)$_POST['transactionAmount'];
+ $payment->token = $_POST['token'];
+ $payment->description = $_POST['description'];
+ $payment->installments = (int)$_POST['installments'];
+ $payment->payment_method_id = $_POST['paymentMethodId'];
+ $payment->issuer_id = (int)$_POST['issuer'];
+ $payer = new MercadoPago\Payer();
+ $payer->email = $_POST['cardholderEmail'];
+ $payer->identification = array(----[mla, mlb, mlu, mlc, mpe, mco]----
         "type" => $_POST['identificationType'],------------
         "number" => $_POST['identificationNumber']
     );
-    $payer->first_name = $_POST['cardholderName'];
-    $payment->payer = $payer;
+ $payer->first_name = $_POST['cardholderName'];
+ $payment->payer = $payer;
 
-    $payment->save();
+ $payment->save();
 
-    $response = array(
+ $response = array(
         'status' => $payment->status,
         'status_detail' => $payment->status_detail,
         'id' => $payment->id
     );
-    echo json_encode($response);
+    echo json_encode($response);   
+    
 ?>
 ```
 ```node
-===
-You can find payment status in _status_ value.
-===
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken("YOUR_ACCESS_TOKEN");
 
@@ -65,9 +59,6 @@ mercadopago.payment.save(payment_data)
 ```
 ----[mlm]----
 ```java
-===
-You can find payment status in _status_ value.
-===
 PaymentClient client = new PaymentClient();
 
 PaymentCreateRequest paymentCreateRequest =
@@ -93,9 +84,6 @@ client.create(paymentCreateRequest);
 ------------
 ----[mla, mlb, mpe, mco, mlu, mlc]----
 ```java
-===
-You can find payment status in _status_ value.
-===
 PaymentClient client = new PaymentClient();
 
 PaymentCreateRequest paymentCreateRequest =
@@ -118,12 +106,10 @@ PaymentCreateRequest paymentCreateRequest =
        .build();
 
 client.create(paymentCreateRequest);
+
 ```
 ------------
 ```ruby
-===
-You can find payment status in _status_ value.
-===
 require 'mercadopago'
 sdk = Mercadopago::SDK.new('YOUR_ACCESS_TOKEN')
 
@@ -147,11 +133,9 @@ payment_response = sdk.payment.create(payment_data)
 payment = payment_response[:response]
 
 puts payment
+
 ```
 ```csharp
-===
-You can find payment status in _status_ value.
-===
 using System;
 using MercadoPago.Client.Common;
 using MercadoPago.Client.Payment;
@@ -184,10 +168,8 @@ Payment payment = await client.CreateAsync(paymentRequest);
 
 Console.WriteLine(payment.Status);
 ```
+
 ```python
-===
-You can find payment status in _status_ value.
-===
 import mercadopago
 sdk = mercadopago.SDK("ACCESS_TOKEN")
 
@@ -211,12 +193,10 @@ payment_response = sdk.payment().create(payment_data)
 payment = payment_response["response"]
 
 print(payment)
+
 ```
 ----[mlm]----
 ```curl
-===
-You can find payment status in _status_ value.
-===
 curl -X POST \
     -H 'accept: application/json' \
     -H 'content-type: application/json' \
@@ -236,13 +216,11 @@ curl -X POST \
             }
           }
     }'
+
 ```
 ------------
 ----[mla, mlb, mpe, mco, mlu, mlc]----
 ```curl
-===
-You can find payment status in _status_ value.
-===
 curl -X POST \
     -H 'accept: application/json' \
     -H 'content-type: application/json' \
