@@ -242,7 +242,7 @@ Encontre o estado do pagamento no campo _status_.
     $payer = new MercadoPago\Payer();
     $payer->email = $_POST['cardholderEmail'];
     $payer->identification = array(----[mla, mlb, mlu, mlc, mpe, mco]----
-        "type" => $_POST['identificationType'], ------------
+        "type" => $_POST['identificationType'],------------
         "number" => $_POST['identificationNumber']
     );
     $payer->first_name = $_POST['cardholderName'];

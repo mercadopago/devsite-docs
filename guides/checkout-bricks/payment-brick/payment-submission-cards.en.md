@@ -244,7 +244,7 @@ You can find payment status in _status_ value.
     $payer = new MercadoPago\Payer();
     $payer->email = $_POST['cardholderEmail'];
     $payer->identification = array(----[mla, mlb, mlu, mlc, mpe, mco]----
-        "type" => $_POST['identificationType'], ------------
+        "type" => $_POST['identificationType'],------------
         "number" => $_POST['identificationNumber']
     );
     $payer->first_name = $_POST['cardholderName'];
@@ -307,8 +307,8 @@ PaymentCreateRequest paymentCreateRequest =
        .build();
 
 client.create(paymentCreateRequest);
-
 ```
+
 ```ruby
 ===
 You can find payment status in _status_ value.
@@ -428,8 +428,9 @@ curl -X POST \
           }
     }'
 ```
-
 ]]]
+
+------------
 
 ## Response
 
