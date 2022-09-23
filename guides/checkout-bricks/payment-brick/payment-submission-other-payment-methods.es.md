@@ -11,12 +11,6 @@ Para configurar pagos con **boleto bancario** o pago en **agencia de lotería**,
 | Boleto  | `payment_method_id`  | `bolbradesco`  |
 | Pago en agencia de loteria  | `payment_method_id`  | `pec`  |
 
-> WARNING
->
-> Importante
->
-> Para esta etapa, al realizar la solicitud vía API o SDKs, es necesario que envíes tu clave privada - Access Token.
-
 [[[
 ```php
 <?php
