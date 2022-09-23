@@ -19,13 +19,13 @@ Ten en cuenta que para que este paso funcione es necesario que configures tu [cl
 En las siguientes secciones, vea cómo enviar a Mercado Pago pagos realizados con:
 
 ----[mlb]----
-* [Tarjetas](development/es/docs/checkout-bricks/payment-brick/payment-submission/cards)
-* [Cuenta de Mercado Pago](development/es/docs/checkout-bricks/payment-brick/payment-submission/wallet)
-* [Pix](development/es/docs/checkout-bricks/payment-brick/payment-submission/pix)
-* [Otros medios de pago](development/es/docs/checkout-bricks/payment-brick/payment-submission/other-payment-methods)
+* [Tarjetas](developers/es/docs/checkout-bricks/payment-brick/payment-submission/cards)
+* [Cuenta de Mercado Pago](developers/es/docs/checkout-bricks/payment-brick/payment-submission/wallet)
+* [Pix](developers/es/docs/checkout-bricks/payment-brick/payment-submission/pix)
+* [Otros medios de pago](developers/es/docs/checkout-bricks/payment-brick/payment-submission/other-payment-methods)
 ------------
 
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-* [Tarjetas](development/es/docs/checkout-bricks/payment-brick/payment-submission/cards)
-* [Cuenta de Mercado Pago](development/es/docs/checkout-bricks/payment-brick/payment-submission/wallet)
+* [Tarjetas](developers/es/docs/checkout-bricks/payment-brick/payment-submission/cards)
+* [Cuenta de Mercado Pago](developers/es/docs/checkout-bricks/payment-brick/payment-submission/wallet)
 ------------

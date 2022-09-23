@@ -7,6 +7,7 @@
 With all the information collected in the backend, send a POST with the necessary attributes to the endpoint [/v1/payments ](/developers/en/reference/payments/_payments/post) and execute the request or, if you prefer, send the information using our SDKs.
 
 ----[mla, mlb, mpe, mco, mlu, mlc]----
+
 [[[
 
 ```php
@@ -220,6 +221,7 @@ curl -X POST \
 ------------
 
 ----[mlm]----
+
 [[[
 
 ```php
@@ -242,7 +244,7 @@ You can find payment status in _status_ value.
     $payer = new MercadoPago\Payer();
     $payer->email = $_POST['cardholderEmail'];
     $payer->identification = array(----[mla, mlb, mlu, mlc, mpe, mco]----
-        "type" => $_POST['identificationType'],------------
+        "type" => $_POST['identificationType'], ------------
         "number" => $_POST['identificationNumber']
     );
     $payer->first_name = $_POST['cardholderName'];
@@ -426,6 +428,7 @@ curl -X POST \
           }
     }'
 ```
+
 ]]]
 
 ## Response
