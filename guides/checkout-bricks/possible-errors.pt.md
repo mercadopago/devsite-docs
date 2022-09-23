@@ -2,11 +2,11 @@
 
 Abaixo você encontrará listas de erros que podem ocorrer durante a integração dos bricks. Sejam eles relacionados ao **envio das variáveis** ou à **comunicação com serviços externos** (APIs Mercado Pago).
 
+> As mensagens de erro da API são retornadas em inglês como padrão. Porém na tabela abaixo você encontra a mensagem original e sua tradução.
+
 ## Variáveis passadas pelo integrador 
 
 Durante o processo de integração do brick, é possível que diferentes erros relacionados ao envio das variáveis sejam exibidos ao integrador **no momento de instanciar o Brick**. Esses erros serão mostrados através de um log no console do navegador (o comprador não recebe qualquer mensagem).
-
-> As mensagens de erro da API são retornadas em inglês como padrão. Porém na tabela abaixo você encontra a mensagem original e sua tradução.
 
 | Erro | Mensagem | Código da causa |
 |--- |--- |--- |
