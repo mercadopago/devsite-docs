@@ -1134,7 +1134,7 @@ paths:
           description: Success - Get the integrator information and configuration
           x-description-i18n:
             eng: Success - Get the integrator information and configuration
-            spa: Get the integrator information and configuration
+            spa: Éxito: obtenga la información y la configuración del integrador
             por: Get the integrator information and configuration
           content:
             application/json:
