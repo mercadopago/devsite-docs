@@ -1122,7 +1122,7 @@ paths:
       summary: Get integrator config.
       x-summary-i18n:
         eng: Get integrator config
-        spa: Obtener configuración
+        spa: Obtener configuración del integrador
         por: Obter configurações do integrador
       description: This endpoint allows you to update the integrator notification settings
       x-description-i18n:
