@@ -1,6 +1,6 @@
 # Configure payment methods
 
-To start receiving credit card and Pix payments, follow the steps outlined below.
+To start receiving payments with credit or debit cards----[mlb]---- and Pix------------, follow the steps outlined below.
 
 ## Activate payment methods
 
@@ -19,10 +19,10 @@ Here's how to activate each payment method in your Salesforce Commerce Cloud sto
 2. To activate the Pix payment method, position yourself on the **PIX** option. Then, in the column "Enabled" and select the option **Yes** to enable it.
 ------------
 
-### Credit card
+### Credit or debit cards
 
 1. Within your Salesforce Commerce Cloud store, go to the **Merchant Tools** menu and click the **Payment Methods** option found within the Ordering group of options. You can also find the option using the menu search engine.
-2. To activate the credit card payment method, position yourself on the **CREDIT_CARD** option. Then, in the column "Enabled" and select the option **Yes** to enable it.
+2. To activate the credit or debit cards payment method, position yourself on the **CREDIT_CARD** option. Then, in the column "Enabled" and select the option **Yes** to enable it.
 
 ## Choose the location of the means of payment
 

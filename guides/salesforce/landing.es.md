@@ -3,7 +3,7 @@
 ---
 content_section_with_media: 
  - title: Salesforce Commerce Cloud
- - message: Salesforce Commerce Cloud es un procesador de pagos que integra la API de Mercado Pago y te permite ofrecer pagos con tarjetas de crédito. 
+ - message: Salesforce Commerce Cloud es un procesador de pagos que integra la API de Mercado Pago y te permite ofrecer pagos con tarjetas de crédito o débito. 
  - media_video: https://www.youtube.com/embed/P6TtqAbx8EM
 ---
 
@@ -14,7 +14,7 @@ content_section_with_media:
 ---
 content_section_with_media: 
  - title: Salesforce Commerce Cloud
- - message: Salesforce Commerce Cloud es un procesador de pagos que integra la API de Mercado Pago y te permite ofrecer pagos con tarjetas de débito y crédito, además de transferencias inmediatas con Pix. 
+ - message: Salesforce Commerce Cloud es un procesador de pagos que integra la API de Mercado Pago y te permite ofrecer pagos con tarjetas de crédito o débito, además de transferencias inmediatas con Pix. 
  - media_video: https://www.youtube.com/embed/P6TtqAbx8EM
 ---
 
@@ -31,9 +31,9 @@ available_countries: mla, mlb, mlm, mlu, mlc, mco, mpe
 ----[mla, mlm, mlu, mpe, mco, mlc]----
 ---
 bullet_section_with_media: 
- - title: Comienza a cobrar con tarjeta de crédito
+ - title: Comienza a cobrar con tarjetas
  - type: normal
- - message: Integra el Checkout API de Mercado Pago y recibe pagos con tarjetas de crédito.
+ - message: Integra el Checkout API de Mercado Pago y recibe pagos con tarjetas de crédito o débito.
  - image: /shopify/mini-landing-1.png
 ---
 ------------
@@ -42,9 +42,9 @@ bullet_section_with_media:
 
 ---
 bullet_section_with_media: 
- - title: Comienza a cobrar con tarjeta
+ - title: Comienza a cobrar con tarjetas
  - type: normal
- - message: Integra el Checkout Transparente de Mercado Pago y recibe pagos con tarjetas de crédito.
+ - message: Integra el Checkout Transparente de Mercado Pago y recibe pagos con tarjetas de crédito o débito.
  - image: /shopify/mini-landing-1.png
 ---
 

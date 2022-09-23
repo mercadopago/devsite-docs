@@ -1,6 +1,6 @@
 # Configurar formas de pagamento
 
-Para começar a receber pagamentos com cartões de crédito e Pix, siga as etapas descritas abaixo.
+Para começar a receber pagamentos com cartões de crédito ou débito----[mlb]---- e Pix------------, siga as etapas descritas abaixo.
 
 ## Ativar métodos de pagamento
 
@@ -19,10 +19,10 @@ Veja como ativar cada meio de pagamento em sua loja Salesforce.
 2. Para ativar a forma de pagamento Pix, posicione-se na opção **PIX**. Em seguida, na coluna "Ativado" e selecione a opção **Sim** para habilitá-lo.
 ------------
 
-### Cartão de crédito
+### Cartões de crédito ou débito
 
 1. Em sua loja do Salesforce Commerce Cloud, vá para o menu **Ferramentas do comerciante** e clique na opção **Métodos de pagamento** encontrada no grupo de opções Pedidos. Você também pode encontrar a opção usando o mecanismo de pesquisa do menu.
-2. Para ativar a forma de pagamento com cartão de crédito, posicione-se na opção **CREDIT_CARD**. Em seguida, na coluna "Ativado" e selecione a opção **Sim** para habilitá-lo.
+2. Para ativar a forma de pagamento com cartões de crédito ou débito, posicione-se na opção **CREDIT_CARD**. Em seguida, na coluna "Ativado" e selecione a opção **Sim** para habilitá-lo.
 
 ## Escolha a localização do meio de pagamento
 

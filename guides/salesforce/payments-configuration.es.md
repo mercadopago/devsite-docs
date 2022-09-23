@@ -1,6 +1,6 @@
 # Configurar los medios de pago
 
-Para comenzar a recibir pagos con tarjeta de crédito y Pix, sigue los pasos que se describen a continuación.
+Para comenzar a recibir pagos con tarjetas de crédito o débito----[mlb]---- y Pix------------, sigue los pasos que se describen a continuación.
 
 ## Activar los medios de pago
 
@@ -19,10 +19,10 @@ A continuación, te explicamos cómo activar cada medio de pago en tu tienda Sal
 2. Para activar el medio de pago Pix, posiciónate sobre la opción **PIX**. Luego, en la columna "Enabled" y selecciona la opción **Yes** para habilitarlo.
 ------------
 
-### Tarjeta de crédito
+### Tarjetas de crédito o débito
 
 1. Dentro de tu tienda Salesforce Commerce Cloud, ve al menú **Merchant Tools** y haz clic en la opción **Payment Methods** que se encuentra dentro del grupo de opciones Ordering. También puedes encontrar la opción utilizando el buscador del menú.
-2. Para activar el medio de pago de tarjeta de crédito, posiciónate sobre la opción **CREDIT_CARD**. Luego, en la columna "Enabled" y selecciona la opción **Yes** para habilitarlo.
+2. Para activar el medio de pago de tarjeta de crédito o débito, posiciónate sobre la opción **CREDIT_CARD**. Luego, en la columna "Enabled" y selecciona la opción **Yes** para habilitarlo.
 
 ## Elegir la ubicación de los medios de pago
 
