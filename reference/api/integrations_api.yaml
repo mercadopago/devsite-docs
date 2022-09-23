@@ -1133,7 +1133,7 @@ paths:
         '200':
           description: Success - Get the integrator information and configuration
           x-description-i18n:
-            eng: Get the integrator information and configuration
+            eng: Success - Get the integrator information and configuration
             spa: Get the integrator information and configuration
             por: Get the integrator information and configuration
           content:
