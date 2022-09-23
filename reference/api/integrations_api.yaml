@@ -1126,7 +1126,7 @@ paths:
         por: Obter configurações do integrador
       description: This endpoint allows you to update the integrator notification settings
       x-description-i18n:
-        eng: This endpoint allows you to get the integrator information and the integrator notification settings.
+        eng: This endpoint allows you to get the integrator information and the integrator notification settings
         spa: This endpoint allows you to get the integrator information and the integrator notification settings.
         por: This endpoint allows you to get the integrator information and the integrator notification settings.
       responses:
