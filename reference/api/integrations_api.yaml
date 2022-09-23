@@ -1127,7 +1127,7 @@ paths:
       description: This endpoint allows you to update the integrator notification settings
       x-description-i18n:
         eng: This endpoint allows you to get the integrator information and the integrator notification settings
-        spa: This endpoint allows you to get the integrator information and the integrator notification settings.
+        spa: Este endpoint le permite obtener la información del integrador y la configuración de notificación del integrador
         por: Este endpoint permite que você obtenha as informações do integrador e as configurações de notificação do integrador
       responses:
         '200':
