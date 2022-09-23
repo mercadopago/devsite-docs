@@ -70,7 +70,7 @@ paths:
           schema:
             type: integer
             example: 0
-       
+
       responses:
         '200':
           description: Success - Paged devices list
@@ -98,18 +98,18 @@ paths:
                   paging:
                     type: object
                     properties:
-                       total:
+                      total:
                         type: integer
                         example: 1
                         description:
-                       offset:
+                      offset:
                         type: integer
-                        example: 0    
-                        description:      
-                       limit:
+                        example: 0
+                        description:
+                      limit:
                         type: integer
                         example: 50
-                        description:   
+                        description:
         '400':
           description: Error
           x-description-i18n:
@@ -121,10 +121,10 @@ paths:
               schema:
                 type: object
                 properties:
-                  errorKey: 
+                  errorKey:
                     type: string
                     enum:
-                      - 400-- Bad Request - query param incorrect format            
+                      - 400-- Bad Request - query param incorrect format
         '401':
           description: Error
           x-description-i18n:
@@ -134,12 +134,12 @@ paths:
           content:
             application/json:
               schema:
-                 type: object
-                 properties:
-                    errorKey:
-                      type: string
-                      enum:
-                        - 401-- Unauthorized - token is invalid 
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 401-- Unauthorized - token is invalid
         '403':
           description: Error
           x-description-i18n:
@@ -154,7 +154,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 403-- Forbidden Integrator isn't registered 
+                      - 403-- Forbidden Integrator isn't registered
         '500':
           description: Error
           x-description-i18n:
@@ -173,7 +173,7 @@ paths:
   /point/integration-api/devices/{deviceid}/payment-intents:
     post:
       tags:
-      - $ref: '#/tags/mp-point'
+        - $ref: '#/tags/mp-point'
       summary: Create payment intent
       x-summary-i18n:
         eng: Create payment intent
@@ -258,8 +258,8 @@ paths:
                         eng: An alphanumeric value to identify the invoice or ticket number. It will be printed on the device ticket
                         spa: Un valor alfanumérico para identificar el número de factura o ticket. Se imprimirá en el ticket del dispositivo.
                         por: Um valor alfanumérico para identificar o número da fatura ou do bilhete. Ele será impresso no bilhete do dispositivo.
-                  
-      
+
+
       responses:
         '200':
           description: Success - Payment intent succesfully created
@@ -329,20 +329,20 @@ paths:
                           spa: Un valor alfanumérico para identificar el número de factura o ticket. Se imprimirá en el ticket del dispositivo.
                           por: Um valor alfanumérico para identificar o número da fatura ou do bilhete. Ele será impresso no bilhete do dispositivo.
         '401':
-            description: Error
-            x-description-i18n:
-              eng: Error
-              spa: Error
-              por: Erro
-            content:
-              application/json:
-                schema:
-                  type: object
-                  properties:
-                    errorKey:
-                      type: string
-                      enum:
-                        - 401-- Unauthorized Token is invalid
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 401-- Unauthorized Token is invalid
         '400':
           description: Error
           x-description-i18n:
@@ -352,12 +352,12 @@ paths:
           content:
             application/json:
               schema:
-                 type: object
-                 properties:
-                    errorKey:
-                      type: string
-                      enum:
-                        - 400-- Bad request - Field is missing o incorrect
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 400-- Bad request - Field is missing o incorrect
         '403':
           description: Error
           x-description-i18n:
@@ -369,10 +369,10 @@ paths:
               schema:
                 type: object
                 properties:
-                    errorKey:
-                      type: string
-                      enum:
-                        - 403-- Forbidden - Integrator isn't registered
+                  errorKey:
+                    type: string
+                    enum:
+                      - 403-- Forbidden - Integrator isn't registered
         '409':
           description: Error
           x-description-i18n:
@@ -384,10 +384,10 @@ paths:
               schema:
                 type: object
                 properties:
-                    errorKey:
-                      type: string
-                      enum:
-                        - 409-- Conflict-error - Device has a queued payment intent
+                  errorKey:
+                    type: string
+                    enum:
+                      - 409-- Conflict-error - Device has a queued payment intent
         '500':
           description: Error
           x-description-i18n:
@@ -397,12 +397,12 @@ paths:
           content:
             application/json:
               schema:
-                 type: object
-                 properties:
-                    errorKey:
-                      type: string
-                      enum:
-                        - 500-- Internal server error
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500-- Internal server error
   /point/integration-api/devices/{deviceid}/payment-intents/{paymentintentid}:
     delete:
       tags:
@@ -485,11 +485,11 @@ paths:
           content:
             application/json:
               schema:
-                 type: object
-                 properties:
-                    errorKey:
-                      type: string
-                      enum:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
                       - 403-- Forbidden - Integrator isn't registered
         '409':
           description: Error
@@ -583,8 +583,8 @@ paths:
                     type: object
                     properties:
                       id:
-                       type: int
-                       example: 16499678033
+                        type: int
+                        example: 16499678033
                   additional_info:
                     type: object
                     properties:
@@ -735,13 +735,13 @@ paths:
                           type: string
                           format: date-time
                           example: "2021-08-30T22:38:05Z"
-                    example: 
-                     - payment_intent_id: "51374ba8-50e4-4633-a000-3e42ccd245f9"
-                       status: "FINISHED"
-                       created_on: "2021-08-30T22:37:57Z"
-                     - payment_intent_id: "41374ba8-50e4-4633-a000-3e42ccd245f8"
-                       status: "PROCESSING"
-                       created_on: "2021-08-30T22:38:05Z"
+                    example:
+                      - payment_intent_id: "51374ba8-50e4-4633-a000-3e42ccd245f9"
+                        status: "FINISHED"
+                        created_on: "2021-08-30T22:37:57Z"
+                      - payment_intent_id: "41374ba8-50e4-4633-a000-3e42ccd245f8"
+                        status: "PROCESSING"
+                        created_on: "2021-08-30T22:38:05Z"
         '400':
           description: Error
           x-description-i18n:
@@ -751,12 +751,12 @@ paths:
           content:
             application/json:
               schema:
-                 type: object
-                 properties:
-                    errorKey:
-                      type: string
-                      enum:
-                        - 400-- Bad-Request - startDate and/or endDate are misssing or incorrect
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 400-- Bad-Request - startDate and/or endDate are misssing or incorrect
         '401':
           description: Error
           x-description-i18n:
@@ -840,17 +840,17 @@ paths:
           content:
             application/json:
               schema:
-                  type: object
-                  properties:
-                    status:
-                      type: string
-                      description:
-                      example: "FINISHED"
-                    created_on:
-                      type: string
-                      description:
-                      format: date
-                      example: "2021-09-03T20:59:10Z"
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description:
+                    example: "FINISHED"
+                  created_on:
+                    type: string
+                    description:
+                    format: date
+                    example: "2021-09-03T20:59:10Z"
         '401':
           description: Error
           x-description-i18n:
@@ -938,16 +938,16 @@ paths:
         content:
           application/json:
             schema:
-               type: object
-               properties:
-                  operating_mode:
-                    type: string
-                    required: true
-                    nullable: false
-                    example: "PDV"
-                    enum:
-                      - PDV -- point of sale, integrated mode with the API.
-                      - STANDALONE -- default device configuration, mode not integrated with the API.
+              type: object
+              properties:
+                operating_mode:
+                  type: string
+                  required: true
+                  nullable: false
+                  example: "PDV"
+                  enum:
+                    - PDV -- point of sale, integrated mode with the API.
+                    - STANDALONE -- default device configuration, mode not integrated with the API.
       responses:
         '200':
           description: Success - Operating mode successfully changed
@@ -999,17 +999,207 @@ paths:
                     enum:
                       - 403-- Unauthorized - User not logged into the device
         '500':
-            description: Error
-            x-description-i18n:
-              eng: Error
-              spa: Error
-              por: Erro
-            content:
-              application/json:
-                schema:
-                  type: object
-                  properties:
-                    errorKey:
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500-- Internal server error
+  /point/integration-api/integrator:
+    patch:
+      tags:
+        - $ref: '#/tags/mp-point'
+      summary: Update integrator config.
+      x-summary-i18n:
+        eng: Update integrator config
+        spa: Actualizar configuración
+        por: Atualizar as configurações do integrador
+      description: This endpoint allows you to update the integrator notification settings
+      x-description-i18n:
+        eng: This endpoint allows you to update the integrator notification settings
+        spa: Este endpoint te permite actualizar las configuraciones del integrador
+        por: Este endpoint permite atualizar as configurações do integrador
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                event_channel_devices:
+                  type: array
+                  items:
+                    type: string
+                  nullable: true
+                  example: [ "email" ]
+                  enum: [ "email" ]
+      responses:
+        '204':
+          description: Success - Configuration updated
+          x-description-i18n:
+            eng: Success - Configuration updated
+            spa: Éxito - Configuración actualizada
+            por: Sucesso - Configuração atualizada
+        '400':
+          description: Bad Request
+          x-description-i18n:
+            eng: Bad Request Error
+            spa: Bad Request Error
+            por: Bad Request Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "channel not allowed. Supported channels are: email"
+                  error:
+                    type: string
+                    example: "bad_request"
+                  status:
+                    type: integer
+                    format: int32
+                    example: 400
+                  cause:
+                    type: array
+                    items:
                       type: string
-                      enum:
-                        - 500-- Internal server error
+                      example: [ ]
+
+        '401':
+          description: Unauthorized. Token is invalid
+          x-description-i18n:
+            eng: Unauthorized. Token is invalid
+            spa: No autorizado. El token no es válido
+            por: Não autorizado. O token é inválido
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "invalid_token"
+                  error:
+                    type: string
+                    example: "not_found"
+                  status:
+                    type: integer
+                    format: int32
+                    example: 401
+                  cause:
+                    type: array
+                    items:
+                      type: string
+                      example: [ ]
+        '500':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500-- Internal server error
+    get:
+      tags:
+        - $ref: '#/tags/mp-point'
+      summary: Get integrator config.
+      x-summary-i18n:
+        eng: Get integrator config
+        spa: Obtener configuración del integrador
+        por: Obter configurações do integrador
+      description: This endpoint allows you to update the integrator notification settings
+      x-description-i18n:
+        eng: This endpoint allows you to get the integrator information and the integrator notification settings
+        spa: Este endpoint le permite obtener la información del integrador y la configuración de notificación del integrador
+        por: Este endpoint permite que você obtenha as informações do integrador e as configurações de notificação do integrador
+      responses:
+        '200':
+          description: Success - Get the integrator information and configuration
+          x-description-i18n:
+            eng: Success - Get the integrator information and configuration
+            spa: Éxito: obtenga la información y la configuración del integrador
+            por: Sucesso - Obtenha as informações e a configuração do integrador
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  created_at:
+                    type: string
+                  updated_at:
+                    type: string
+                  notification_url_enabled:
+                    type: boolean
+                  event_channel_devices:
+                    type: array
+                    items:
+                      type: string
+                example: {
+                  "id": 1147131971,
+                  "created_at": "0001-01-01T00:00:00Z",
+                  "updated_at": "0001-01-01T00:00:00Z",
+                  "notfication_url_enabled": true,
+                  "event_channel_devices": [
+                      "email"
+                  ]
+                }
+        '401':
+          description: Unauthorized. Token is invalid
+          x-description-i18n:
+            eng: Unauthorized. Token is invalid
+            spa: No autorizado. El token no es válido
+            por: Não autorizado. O token é inválido
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "invalid_token"
+                  error:
+                    type: string
+                    example: "not_found"
+                  status:
+                    type: integer
+                    format: int32
+                    example: 401
+                  cause:
+                    type: array
+                    items:
+                      type: string
+                      example: [ ]
+        '500':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500-- Internal server error
