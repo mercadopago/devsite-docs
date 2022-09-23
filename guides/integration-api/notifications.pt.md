@@ -194,7 +194,7 @@ ter controle e monitoramento de seus dispositivos. Essas notificações podem se
 - Logouts.
 - Mudança no modo de operação de PDV para STANDALONE ou vice-versa.
 
-As notificações chegarão ao seu e-mail cadastrado no MercadoPago, caso não encontre, certifique-se
+As notificações chegarão ao seu e-mail cadastrado no MercadoPago, caso não encontre
 para verificar sua pasta de SPAM.
 
 
