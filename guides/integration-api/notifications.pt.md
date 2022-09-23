@@ -188,7 +188,7 @@ Depois de implementar as notificações e fazer os ajustes necessários, elas te
 ## Notificações dos meus dispositivos point
 
 Você pode receber notificações sobre eventos gerados por cada um de seus dispositivos point, desta forma você conseguirá
-tenha controle e monitoramento de seus dispositivos. Essas notificações podem ser causadas por:
+ter controle e monitoramento de seus dispositivos. Essas notificações podem ser causadas por:
 
 - Terminal reinicia.
 - Logouts.
