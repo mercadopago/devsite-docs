@@ -101,7 +101,7 @@ const renderPaymentBrick = async (bricksBuilder) => {
    },
    customization: {
      paymentMethods: {
-       bankTransfer: 'pix',
+       bankTransfer: ['pix'],
      },
    },
    callbacks: {
@@ -154,4 +154,15 @@ The result of rendering the brick should be like the image below:”
 >
 > For an effective Brick control, the function submitted in `onSubmit` must always return a Promise. You should call `resolve()` only if your backend processes was successful. Call `reject()` if an error occurs. The `reject()` will make the brick allow the fields to be filled in again and a new payment attempt possible. Also, when calling the `resolve()` method inside the `onSubmit` Promise, the brick does not allow new payments. If you want to make a new payment, you must create a new Brick instance.
 
-To pay with Pix, the buyer must enter their email address. It is highly recommended that the integrator enter this email field at brick startup, so the buyer does not have to manually type it. To initialize the email field, just follow the example below.
+To pay with Pix, the buyer must enter their email address. It is highly recommended that the integrator enter this email field at brick startup, so the buyer does not have to manually type it. To initialize the email field, just follow the **example below**.
+
+```Javascript
+settings = {
+  ...,
+  initialization: {
+ ...,
+ payer: {
+   email: 'jose@maria.com'
+ }
+}
+```

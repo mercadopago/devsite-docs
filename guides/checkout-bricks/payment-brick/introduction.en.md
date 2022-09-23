@@ -38,6 +38,7 @@ The Payment Brick layout is based on the best UX practices, so that it is possib
 ### Forms fields
 
 ----[mlb]----
+
 | Section | Element  | Characteristics  | Comments  |
 | --- | --- | --- | --- |
 | Payment options container | Title <br><br>  Property: formTitle  | **Value (title):** Credit or debit card  <br> **Label:** N/A <br> **Placeholder:** N/A <br> **Type:** text/image <br> **Format:** N/A <br> **Max. characters:** N/A  | Optional <br> Customizable |
@@ -64,10 +65,10 @@ The Payment Brick layout is based on the best UX practices, so that it is possib
 | Boleto or PEC payment form  | Field for inserting the residence complement<br><br> Propriedade: addressNumber | **Valor**: N/A <br> **Label**: Número <br> **Placeholder**: N/A <br> **Tipo**: string <br> **Formato**: N/A <br> **Máx. caracteres:** N/A | Mandatory  <br> Customizável (label) |
 | Boleto or PEC payment form  | Campo para inserção do complemento da residência <br><br> Propriedade: addressComplement | **Valor**: N/A <br> **Label**: Complemento <br> **Placeholder**: N/A <br> **Tipo**: string <br> **Formato**: N/A <br> **Máx. caracteres**: N/A | Optional <br>Customizável (label) |
 
-
 ------------
 
 ----[mla, mlm, mpe, mco, mlu, mlc]----
+
 | Section | Element  | Characteristics  | Comments  |
 | --- | --- | --- | --- |
 | Payment options container | Title <br><br>  Property: formTitle  | **Value (title):** Credit or debit card  <br> **Label:** N/A <br> **Placeholder:** N/A <br> **Type:** text/image <br> **Format:** N/A <br> **Max. characters:** N/A  | Optional <br> Customizable |

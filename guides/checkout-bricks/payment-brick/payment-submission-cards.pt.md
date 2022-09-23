@@ -42,14 +42,13 @@ Encontre o estado do pagamento no campo _status_.
         'id' => $payment->id
     );
     echo json_encode($response);
-
 ?>
 ```
+
 ```node
 ===
 Encontre o estado do pagamento no campo _status_.
 ===
-
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken("YOUR_ACCESS_TOKEN");
 
@@ -66,11 +65,11 @@ mercadopago.payment.save(payment_data)
     console.error(error);
   });
 ```
+
 ```java
 ===
 Encontre o estado do pagamento no campo _status_.
 ===
-
 PaymentClient client = new PaymentClient();
 
 PaymentCreateRequest paymentCreateRequest =
@@ -93,8 +92,8 @@ PaymentCreateRequest paymentCreateRequest =
        .build();
 
 client.create(paymentCreateRequest);
-
 ```
+
 ```ruby
 ===
 Encontre o estado do pagamento no campo _status_.
@@ -122,8 +121,8 @@ payment_response = sdk.payment.create(payment_data)
 payment = payment_response[:response]
 
 puts payment
-
 ```
+
 ```csharp
 ===
 Encontre o estado do pagamento no campo _status_.
@@ -159,8 +158,8 @@ var client = new PaymentClient();
 Payment payment = await client.CreateAsync(paymentRequest);
 
 Console.WriteLine(payment.Status);
-
 ```
+
 ```python
 ===
 Encontre o estado do pagamento no campo _status_.
@@ -189,6 +188,7 @@ payment = payment_response["response"]
 
 print(payment)
 ```
+
 ```curl
 ===
 Encontre o estado do pagamento no campo _status_.
@@ -254,14 +254,13 @@ Encontre o estado do pagamento no campo _status_.
         'id' => $payment->id
     );
     echo json_encode($response);
-
 ?>
 ```
+
 ```node
 ===
 Encontre o estado do pagamento no campo _status_.
 ===
-
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken("YOUR_ACCESS_TOKEN");
 
@@ -278,11 +277,11 @@ mercadopago.payment.save(payment_data)
     console.error(error);
   });
 ```
+
 ```java
 ===
 Encontre o estado do pagamento no campo _status_.
 ===
-
 PaymentClient client = new PaymentClient();
 
 PaymentCreateRequest paymentCreateRequest =
@@ -304,8 +303,8 @@ PaymentCreateRequest paymentCreateRequest =
        .build();
 
 client.create(paymentCreateRequest);
-
 ```
+
 ```ruby
 ===
 Encontre o estado do pagamento no campo _status_.
@@ -333,8 +332,8 @@ payment_response = sdk.payment.create(payment_data)
 payment = payment_response[:response]
 
 puts payment
-
 ```
+
 ```csharp
 ===
 Encontre o estado do pagamento no campo _status_.
@@ -370,8 +369,8 @@ var client = new PaymentClient();
 Payment payment = await client.CreateAsync(paymentRequest);
 
 Console.WriteLine(payment.Status);
-
 ```
+
 ```python
 ===
 Encontre o estado do pagamento no campo _status_.
@@ -400,6 +399,7 @@ payment = payment_response["response"]
 
 print(payment)
 ```
+
 ```curl
 ===
 Encontre o estado do pagamento no campo _status_.
@@ -446,8 +446,8 @@ curl -X POST \
 }
 ```
 
-> O callback de onSubmit do Brick contém todos os dados necessários para a criação de um pagamento, porém, caso deseje, é possível incluir detalhes adicionais, o que pode facilitar o reconhecimento da compra por parte do comprador e aumentar a taxa de aprovação dos pagamentos.<br/></br>   
-> <br/></br>  
-> Para fazer isso, adicione campos relevantes ao objeto enviado, que vem na resposta do callback onSubmit do Brick. Alguns desses campos são: `description` (esse campo pode ser exibido nos boletos emitidos) e `external_reference` (id da compra no seu site, que permite o reconhecimento da compra mais fácil). Também é possível adicionar dados complementares sobre o comprador. <br/></br>
-> <br/></br>
-> Conheça todos os campos disponíveis para realizar um pagamento completo nas [Referências de API](/developers/pt/reference/payments/_payments/post).
+O callback de onSubmit do Brick contém todos os dados necessários para a criação de um pagamento, porém, caso deseje, é possível incluir detalhes adicionais, o que pode facilitar o reconhecimento da compra por parte do comprador e aumentar a taxa de aprovação dos pagamentos.
+
+Para fazer isso, adicione campos relevantes ao objeto enviado, que vem na resposta do callback onSubmit do Brick. Alguns desses campos são: `description` (esse campo pode ser exibido nos boletos emitidos) e `external_reference` (id da compra no seu site, que permite o reconhecimento da compra mais fácil). Também é possível adicionar dados complementares sobre o comprador. 
+
+> Conheça todos os campos disponíveis para realizar um pagamento completo nas [Referências de API.](/developers/pt/reference/payments/_payments/post)

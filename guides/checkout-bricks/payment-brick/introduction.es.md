@@ -38,6 +38,7 @@ O layout do Payment Brick foi construído com base nas melhores práticas de UX 
 ### Campos de los formularios
 
 ----[mlb]----
+
 | Sección | Elemento  | Características  | Observaciones  |
 | --- | --- | --- | --- |
 | Container de opciones de pago | Título <br><br> Propiedad: formTitle  | **Valor (título)**: Tarjeta de crédito o débito <br> **Label**: N/A <br> **Placeholder**: N/A <br> **Tipo**: text/imagen <br> **Formato**: N/A <br> **Máx. caracteres**: N/A  | Opcional <br> Personalizable |
@@ -67,6 +68,7 @@ O layout do Payment Brick foi construído com base nas melhores práticas de UX 
 ------------
 
 ----[mla, mlm, mpe, mco, mlu, mlc]----
+
 | Sección | Elemento  | Características  | Observaciones  |
 | --- | --- | --- | --- |
 | Container de opciones de pago | Título <br><br> Propiedad: formTitle  | **Valor (título)**: Tarjeta de crédito o débito <br> **Label**: N/A <br> **Placeholder**: N/A <br> **Tipo**: text/imagen <br> **Formato**: N/A <br> **Máx. caracteres**: N/A  | Opcional <br> Personalizable* |

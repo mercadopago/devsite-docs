@@ -8,6 +8,7 @@ With all the information collected in the backend, send a POST with the necessar
 
 ----[mla, mlb, mpe, mco, mlu, mlc]----
 [[[
+
 ```php
 ===
 You can find payment status in _status_ value.
@@ -42,9 +43,9 @@ You can find payment status in _status_ value.
         'id' => $payment->id
     );
     echo json_encode($response);
-
 ?>
 ```
+
 ```node
 ===
 You can find payment status in _status_ value.
@@ -65,11 +66,11 @@ mercadopago.payment.save(payment_data)
     console.error(error);
   });
 ```
+
 ```java
 ===
 You can find payment status in _status_ value.
 ===
-
 PaymentClient client = new PaymentClient();
 
 PaymentCreateRequest paymentCreateRequest =
@@ -92,8 +93,8 @@ PaymentCreateRequest paymentCreateRequest =
        .build();
 
 client.create(paymentCreateRequest);
-
 ```
+
 ```ruby
 ===
 You can find payment status in _status_ value.
@@ -121,8 +122,8 @@ payment_response = sdk.payment.create(payment_data)
 payment = payment_response[:response]
 
 puts payment
-
 ```
+
 ```csharp
 ===
 You can find payment status in _status_ value.
@@ -158,8 +159,8 @@ var client = new PaymentClient();
 Payment payment = await client.CreateAsync(paymentRequest);
 
 Console.WriteLine(payment.Status);
-
 ```
+
 ```python
 ===
 You can find payment status in _status_ value.
@@ -188,6 +189,7 @@ payment = payment_response["response"]
 
 print(payment)
 ```
+
 ```curl
 ===
 You can find payment status in _status_ value.
@@ -219,6 +221,7 @@ curl -X POST \
 
 ----[mlm]----
 [[[
+
 ```php
 ===
 You can find payment status in _status_ value.
@@ -253,9 +256,9 @@ You can find payment status in _status_ value.
         'id' => $payment->id
     );
     echo json_encode($response);
-
 ?>
 ```
+
 ```node
 ===
 You can find payment status in _status_ value.
@@ -276,11 +279,11 @@ mercadopago.payment.save(payment_data)
     console.error(error);
   });
 ```
+
 ```java
 ===
 You can find payment status in _status_ value.
 ===
-
 PaymentClient client = new PaymentClient();
 
 PaymentCreateRequest paymentCreateRequest =
@@ -331,8 +334,8 @@ payment_response = sdk.payment.create(payment_data)
 payment = payment_response[:response]
 
 puts payment
-
 ```
+
 ```csharp
 ===
 You can find payment status in _status_ value.
@@ -368,8 +371,8 @@ var client = new PaymentClient();
 Payment payment = await client.CreateAsync(paymentRequest);
 
 Console.WriteLine(payment.Status);
-
 ```
+
 ```python
 ===
 You can find payment status in _status_ value.
@@ -398,6 +401,7 @@ payment = payment_response["response"]
 
 print(payment)
 ```
+
 ```curl
 ===
 You can find payment status in _status_ value.
@@ -442,9 +446,9 @@ curl -X POST \
 }
 ```
 
-> The onSubmit callback contains all the necessary data for a payment creation, however, if you wish, it is possible to include additional details, which can facilitate the purchase recognition by the payer, and increase the payment approval rate. <br/></br>
-> <br/></br>
-> To do that, add the relevant fields to the recieved object, contained in the Brick's onSubmit callback.
-Some of these fields are: `description` (this field can be shown in created tickets) and `external_reference` (id of the purchase in your website, which eases the purchase recognition for the buyer). It is also possible to add complementary buyer's data. <br/></br>
-> <br/></br>
+The onSubmit callback contains all the necessary data for a payment creation, however, if you wish, it is possible to include additional details, which can facilitate the purchase recognition by the payer, and increase the payment approval rate. 
+
+To do that, add the relevant fields to the recieved object, contained in the Brick's onSubmit callback.
+Some of these fields are: `description` (this field can be shown in created tickets) and `external_reference` (id of the purchase in your website, which eases the purchase recognition for the buyer). It is also possible to add complementary buyer's data.
+
 > Check [API References](/developers/en/reference/payments/_payments/post) to learn about all the available fields for full payments.
