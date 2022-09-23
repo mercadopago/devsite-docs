@@ -39,7 +39,6 @@ O layout do Payment Brick foi construído com base nas melhores práticas de UX 
 ### Campos de los formularios
 
 ----[mlb]----
-
 | Sección | Elemento  | Características  | Observaciones  |
 | --- | --- | --- | --- |
 | Container de opciones de pago | Título <br><br> Propiedad: formTitle  | **Valor (título)**: Tarjeta de crédito o débito <br> **Label**: N/A <br> **Placeholder**: N/A <br> **Tipo**: text/imagen <br> **Formato**: N/A <br> **Máx. caracteres**: N/A  | Opcional <br> Personalizable |
@@ -61,12 +60,9 @@ O layout do Payment Brick foi construído com base nas melhores práticas de UX 
 | Formulario de pago con boleto ou PEC  |  Campo para ingresar el barrio <br><br> Propriedade: addressNeighborhood | **Valor**: N/A <br> **Label**: Bairro <br> **Placeholder**: Bela Vista <br> **Tipo**: string <br> **Formato**: N/A <br> **Máx. caracteres**: N/A | Obligatorio <br> Personalizable (label, placeholder) |
 | Formulario de pago con boleto ou PEC  |  Campo para ingresar la calle  <br><br> Propriedade: addressStreet | **Valor**: N/A <br> **Label**: Rua <br> **Placeholder**: Av. Paulista <br> **Tipo**: string <br> **Formato**: N/A <br> **Máx. caracteres**: a depender do emissor, podendo variar entre 15 e 16.| Obligatorio <br> Personalizable (label, placeholder) |
 | Formulario de pago con boleto ou PEC  | Campo para ingresar el número de la casa <br><br> Propriedade: addressNumber | **Valor**: N/A <br> **Label**: Número <br> **Placeholder**: N/A <br> **Tipo**: string <br> **Formato**: N/A <br> **Máx. caracteres:** N/A | Obligatorio <br> Personalizable (label) |
-| Formulario de pago con boleto ou PEC  | Campo para insertar el complemento de la residencia <br><br> Propriedade: addressComplement | **Valor**: N/A <br> **Label**: Complemento <br> **Placeholder**: N/A <br> **Tipo**: string <br> **Formato**: N/A <br> **Máx. caracteres**: N/A | Opcional <br> Personalizable (label) |
-
-------------
+| Formulario de pago con boleto ou PEC  | Campo para insertar el complemento de la residencia <br><br> Propriedade: addressComplement | **Valor**: N/A <br> **Label**: Complemento <br> **Placeholder**: N/A <br> **Tipo**: string <br> **Formato**: N/A <br> **Máx. caracteres**: N/A | Opcional <br> Personalizable (label) | ------------
 
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-
 | Sección | Elemento  | Características  | Observaciones  |
 | --- | --- | --- | --- |
 | Container de opciones de pago | Título <br><br> Propiedad: formTitle  | **Valor (título)**: Tarjeta de crédito o débito <br> **Label**: N/A <br> **Placeholder**: N/A <br> **Tipo**: text/imagen <br> **Formato**: N/A <br> **Máx. caracteres**: N/A  | Opcional <br> Personalizable* |
@@ -77,6 +73,4 @@ O layout do Payment Brick foi construído com base nas melhores práticas de UX 
 | Formulario de pago con tarjeta | Campo para ingresar el nombre del titular de la tarjeta <br><br> Propiedad: cardholderName  | **Valor:** N/A <br> **Label**: Nombre del titular tal y como aparece en la tarjeta <br> **Placeholder**: João Silva <br> **Tipo**: string <br> **Formato**: N/A <br> **Máx. caracteres**: 100  | Obligatorio <br><br> personalizable (label, placeholder, tipo, formato y máximo de caracteres incorrectos.)  |
 | Formulario de pago con tarjeta| Campo para seleccionar el documento del titular de la tarjeta <br><br> Propiedad: cardholderIdentificationType  | **Valor**: ----[mlb]----CPF, CNPJ------------ ----[mla]----DNI, CI, LC, LE, Otro------------ ----[mco]----CC, CE, NIT, Otro------------ ----[mlc]----RUT, Otro ------------ ----[mlu]----CI, Otro ------------ ----[mpe]----DNI, C.E, RUC, Otro ------------ <br> **Label**: Documento <br> **Placeholder**: N/A <br> **Tipo**: select <br> **Formato**: N/A <br> **Máx. caracteres**: N/A  | Obligatorio* <br> Personalizable (label, placeholder) <br><br> *Si los datos de tipo y número de documento se proporcionaron y guardaron previamente, este elemento se vuelve opcional.  |
 | Formulario de pago con tarjeta | Campo para ingresar el número de documento del titular de la tarjeta <br><br> Propiedad: cardholderIdentificationNumber  | **Valor**: N/A <br> **Label**: N/A <br> **Placeholder**: ----[mlb]----999.999.999-99 para CPF ou 99.999.9999/9999-99 para CNPJ------------ ----[mla, mlm, mpe, mco, mlu, mlc]----N/A------------. <br> **Tipo**: number <br> **Formato**: N/A <br> **Máx. caracteres**: N/A  | Obligatorio <br> no personalizable  |
-| Formulario de pago con tarjeta | Campo para ingresar el correo electrónico del comprador <br> Propiedad: email  | **Valor**: N/A <br> **Label**: Email <br> **Placeholder**: joaosilva@email.com <br> **Tipo**: string <br> **Formato**: formato de e-mail convencional (ejemplo@email.com)  **Máx. caracteres**: N/A  | Obligatorio* <br> personalizable (label, placeholder) <br><br> *Si los datos se proporcionaron y guardaron previamente, este elemento se vuelve opcional.  |
-
-------------
+| Formulario de pago con tarjeta | Campo para ingresar el correo electrónico del comprador <br> Propiedad: email  | **Valor**: N/A <br> **Label**: Email <br> **Placeholder**: joaosilva@email.com <br> **Tipo**: string <br> **Formato**: formato de e-mail convencional (ejemplo@email.com)  **Máx. caracteres**: N/A  | Obligatorio* <br> personalizable (label, placeholder) <br><br> *Si los datos se proporcionaron y guardaron previamente, este elemento se vuelve opcional.  | ------------
