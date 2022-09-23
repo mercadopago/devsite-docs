@@ -1166,7 +1166,7 @@ paths:
           description: Unauthorized. Token is invalid
           x-description-i18n:
             eng: Unauthorized. Token is invalid
-            spa: Unauthorized. Token is invalid
+            spa: No autorizado. El token no es válido
             por: Unauthorized. Token is invalid
           content:
             application/json:
