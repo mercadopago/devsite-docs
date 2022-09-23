@@ -43,7 +43,6 @@ Encontre o estado do pagamento no campo _status_.
     echo json_encode($response);
 ?>
 ```
-
 ```node
 ===
 Encontre o estado do pagamento no campo _status_.
@@ -64,7 +63,6 @@ mercadopago.payment.save(payment_data)
     console.error(error);
   });
 ```
-
 ----[mlm]----
 ```java
 ===
@@ -122,7 +120,6 @@ PaymentCreateRequest paymentCreateRequest =
 client.create(paymentCreateRequest);
 ```
 ------------
-
 ```ruby
 ===
 Encontre o estado do pagamento no campo _status_.
@@ -151,7 +148,6 @@ payment = payment_response[:response]
 
 puts payment
 ```
-
 ```csharp
 ===
 Encontre o estado do pagamento no campo _status_.
@@ -188,7 +184,6 @@ Payment payment = await client.CreateAsync(paymentRequest);
 
 Console.WriteLine(payment.Status);
 ```
-
 ```python
 ===
 Encontre o estado do pagamento no campo _status_.
@@ -217,7 +212,33 @@ payment = payment_response["response"]
 
 print(payment)
 ```
-
+----[mlm]----
+```curl
+===
+Encontre o estado do pagamento no campo _status_.
+===
+curl -X POST \
+    -H 'accept: application/json' \
+    -H 'content-type: application/json' \
+    -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/payments' \
+    -d '{
+          "transaction_amount": 100,
+          "token": "ff8080814c11e237014c1ff593b57b4d",
+          "description": "Blue shirt",
+          "installments": 1,
+          "payment_method_id": "visa",
+          "issuer_id": 310,
+          "payer": {
+            "email": "test@test.com",
+            "identification": {
+                "number": 19119119100
+            }
+          }
+    }'
+```
+------------
+----[mla, mlb, mpe, mco, mlu, mlc]----
 ```curl
 ===
 Encontre o estado do pagamento no campo _status_.
@@ -243,8 +264,8 @@ curl -X POST \
           }
     }'
 ```
+------------
 ]]]
-
 
 ## Resposta
 
