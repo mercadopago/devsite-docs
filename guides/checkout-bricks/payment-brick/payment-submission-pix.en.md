@@ -212,7 +212,6 @@ curl -X POST \
 
 The response will show the payment **pending status** and all the information you need to show to the buyer. The `transaction_data` value will return the data for QR code.
 
-[[[
 ```json
 {
 ...,
@@ -244,4 +243,3 @@ The response will show the payment **pending status** and all the information yo
 ...,
 }
 ```
-]]]

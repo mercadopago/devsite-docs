@@ -4,7 +4,7 @@
 >
 > Enviar pagamento - Pix
 
-Ao finalizar a inclusão do formulário de pagamento, é preciso enviar o **e-mail do comprador**, o **tipo e o número do documento**, o **meio de pagamento utilizado (pix**) e o **detalhe do valor**.
+Ao finalizar a inclusão do formulário de pagamento, é preciso enviar o **e-mail do comprador**, o **tipo e o número do documento**, o **meio de pagamento utilizado (pix)** e o **detalhe do valor**.
 
 Para configurar pagamento com Pix, envie um POST ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, faça a requisição utilizando nossos SDKs.
 
@@ -212,7 +212,6 @@ curl -X POST \
 
 A resposta mostrará o estado pendente do pagamento e todas as informações que você precisa para mostrar ao comprador. O valor `transaction_data` retornará os dados para código QR.
 
-[[[
 ```json
 {
   ...,
@@ -244,4 +243,3 @@ A resposta mostrará o estado pendente do pagamento e todas as informações que
   ...,
 }
 ```
-]]]

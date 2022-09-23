@@ -212,8 +212,6 @@ curl -X POST \
 
 La respuesta mostrará el estado del pago pendiente y toda la información que necesitas mostrar al comprador. El valor `transaction_data` devolverá los datos del código QR.
 
-
-[[[
 ```json
 {
   ...,
@@ -245,4 +243,3 @@ La respuesta mostrará el estado del pago pendiente y toda la información que n
   ...,
 }
 ```
-]]]
