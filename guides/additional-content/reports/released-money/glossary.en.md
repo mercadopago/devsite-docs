@@ -50,7 +50,8 @@ If you have any doubts about the technical terms used, check the glossary below.
 | ITEM_ID | Identifier of the product sold. | ----[mla]---- 
 | PAYER_NAME* | Name of who is making a payment or donation. | ------------ ----[mla]----
 | PAYER_ID_TYPE* | Type of identification of who is making a payment or donation. | ------------ ----[mla]----
-| PAYER_ID_NUMBER* | Identification number of who is making a payment or donation. | ------------
+| PAYER_ID_NUMBER* | Identification number of who is making a payment or donation. | ------------ ----[mco, mlc, mpe, mlu]----
+| BALANCE_AMOUNT | This column shows the balance remaining in an account after a transaction that affects the total value is executed. | ------------
 
 ----[mla]----
 > INFO

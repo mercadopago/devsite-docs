@@ -51,7 +51,8 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 | ITEM_ID | Identificador del producto vendido. | ----[mla]----
 | PAYER_NAME* | Nombre de quien hace un pago o una donación. | ------------ ----[mla]----
 | PAYER_ID_TYPE* | Tipo de identificación de quien hace un pago o una donación. | ------------ ----[mla]----
-| PAYER_ID_NUMBER* | Número de identificación de quien hace un pago o una donación. | ------------
+| PAYER_ID_NUMBER* | Número de identificación de quien hace un pago o una donación. | ------------  ----[mco, mlc, mpe, mlu]----
+| BALANCE_AMOUNT | En esta columna se visualiza el saldo que queda en una cuenta luego de que se ejecuta una operación que afecta el valor total. | ------------
 
 ----[mla]----
 > INFO
