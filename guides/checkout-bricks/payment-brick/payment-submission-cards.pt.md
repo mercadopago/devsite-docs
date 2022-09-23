@@ -86,6 +86,7 @@ PaymentCreateRequest paymentCreateRequest =
                .firstName(request.getPayer().getFirstName())
                .identification(
                    IdentificationRequest.builder()
+                       .type(request.getPayer().getIdentification().getType())
                        .number(request.getPayer().getIdentification().getNumber())
                        .build())
                .build())
@@ -208,13 +209,13 @@ curl -X POST \
           "payer": {
             "email": "test@test.com",
             "identification": {
-                "number": 19119119100
+                "number": 19119119100,
+                "type": "CPF"
             }
           }
     }'
 ```
 ]]]
-
 ------------
 
 ----[mla, mlb, mpe, mco, mlu, mlc]----
