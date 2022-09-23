@@ -1167,7 +1167,7 @@ paths:
           x-description-i18n:
             eng: Unauthorized. Token is invalid
             spa: No autorizado. El token no es válido
-            por: Unauthorized. Token is invalid
+            por: Não autorizado. O token é inválido
           content:
             application/json:
               schema:
