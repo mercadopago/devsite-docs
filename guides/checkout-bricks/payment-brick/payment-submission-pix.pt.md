@@ -2,7 +2,7 @@
 >
 > h1
 >
-> Enviar pagamento - Pix
+> Enviar pagamento (Pix)
 
 Ao finalizar a inclusão do formulário de pagamento, é preciso enviar o **e-mail do comprador**, o **tipo e o número do documento**, o **meio de pagamento utilizado (pix)** e o **detalhe do valor**.
 

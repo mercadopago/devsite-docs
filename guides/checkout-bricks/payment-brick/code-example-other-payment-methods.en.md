@@ -1,4 +1,4 @@
-# Code example
+# Code example (other payment methods)
 
 To facilitate and optimize your integration process, check below a complete example of how to include **boleto bancário** and **payment in lottery** as a means of payment with Payment Brick and how, after performing the integration, to send the payment to Mercado Pago. 
 

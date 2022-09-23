@@ -2,7 +2,7 @@
 >
 > h1
 >
-> Payment submission - Pix
+> Payment submission (Pix)
 
 When finalizing the inclusion of the payment form, it is necessary to send the buyer's email, type and document number, the payment method used (pix) and the value detail.
 

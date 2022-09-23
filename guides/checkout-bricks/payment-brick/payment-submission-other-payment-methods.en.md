@@ -2,7 +2,7 @@
 >
 > h1
 >
-> Payment submission - Other payment methods
+> Payment submission (other payment methods)
 
 To configure payments with **boleto bancário** or **payment in lottery**, send a **POST** with the following parameters to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post) and run the request or, if you prefer, use one of our SDKs below.
 

@@ -1,4 +1,4 @@
-# Exemplo de código - Todos os meios de pagamento
+# Exemplo de código (todos os meios de pagamento)
  
 Para facilitar e otimizar o seu processo de integração, veja abaixo um exemplo completo de como incluir todos os meios de pagamento com o Payment Brick.
 

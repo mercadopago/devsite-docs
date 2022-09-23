@@ -1,4 +1,4 @@
-# Exemplo de código 
+# Exemplo de código (cartões)
  
 Para facilitar e otimizar o seu processo de integração, veja abaixo um exemplo completo de como incluir cartão de crédito e débito como meio de pagamento com o Payment Brick e de como, após realizar a integração, enviar o pagamento ao Mercado Pago.
 
