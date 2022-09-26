@@ -1035,11 +1035,12 @@ paths:
               properties:
                 event_channel_devices:
                   type: array
+                  description: Allowed notification channels to receive device event notifications.
                   items:
                     type: string
+                    example: "email"
                     enum:
                       - "email"
-                  example: [ "email" ]
       responses:
         '204':
           description: No Content - Configuration updated successfully
@@ -1154,11 +1155,11 @@ paths:
                     items:
                       type: string
                       description: Configured notification event channel devices
+                      example: "email"
                       x-description-i18n:
                         eng: Configured notification event channel devices
                         spa: Dispositivos de canal de eventos de notificación configurados
                         por: Dispositivos de canal de eventos de notificação configurados
-                    example: [ "email" ]
         '401':
           description: Unauthorized - Invalid token
           x-description-i18n:
