@@ -28,7 +28,7 @@ A su vez, nuestro procesador cumple con todas las garantías de seguridad para d
 
 ## Layout 
 
-O layout do Payment Brick foi construído com base nas melhores práticas de UX para que seja possível entregar ao comprador a melhor experiência sem que você precise se preocupar com detalhes de design. O layout traz os elementos detalhados abaixo.
+El layout de Payment Brick se basa en las mejores prácticas UX para que sea posible ofrecer al comprador la mejor experiencia sin que debas preocuparte por detalles de diseño. Presenta los elementos detallados a continuación.
 
 > WARNING
 >
