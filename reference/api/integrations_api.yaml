@@ -1061,7 +1061,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 400-- Bad-Request - Notification channel is not allowed
+                      - 400--Bad-Request--Notification channel is not allowed
         '401':
           description: Unauthorized - Invalid token
           x-description-i18n:
@@ -1076,7 +1076,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 401-- Unauthorized - Invalid token
+                      - 401--Unauthorized--Invalid token
         '500':
           description: Internal Server Error - Something went wrong
           x-description-i18n:
@@ -1091,7 +1091,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 500-- Internal server error - Something went wrong
+                      - 500--Internal-server-error--Something went wrong
     get:
       tags:
         - $ref: '#/tags/mp-point'
@@ -1120,24 +1120,44 @@ paths:
                   id:
                     type: integer
                     example: 1928030819
-                    description: integrator caller id
+                    description: Integrator caller id
+                    x-description-i18n:
+                      eng: Integrator caller id
+                      spa: Caller id del integrador
+                      por: Caller id do integrador
                   created_at:
                     type: string
                     example: "0001-01-01T00:00:00Z"
-                    description: integration registration date
+                    description: Integration registration date
+                    x-description-i18n:
+                      eng: Integration registration date
+                      spa: Fecha de registro de la integración
+                      por: Data de registro da integração
                   updated_at:
                     type: string
                     example: "0001-02-01T00:00:00Z"
-                    description: integrator update date
+                    description: Integrator update date
+                    x-description-i18n:
+                      eng: Integrator update date
+                      spa: Fecha de actualización del integrador
+                      por: Data de atualização do integrador
                   notification_url_enabled:
                     type: boolean
                     example: true
-                    description: is the integration notification url enabled
+                    description: The integration notification url enabled
+                    x-description-i18n:
+                      eng: The integration notification url enabled
+                      spa: La URL de notificación de integración habilitada
+                      por: URL de notificação de integração ativado
                   event_channel_devices:
                     type: array
                     items:
                       type: string
-                      description: configured notification event channel devices
+                      description: Configured notification event channel devices
+                      x-description-i18n:
+                        eng: Configured notification event channel devices
+                        spa: Dispositivos de canal de eventos de notificación configurados
+                        por: Dispositivos de canal de eventos de notificação configurados
                     example: [ "email" ]
         '401':
           description: Unauthorized - Invalid token
