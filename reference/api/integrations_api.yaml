@@ -1024,9 +1024,9 @@ paths:
         por: Atualizar as configurações do integrador
       description: This endpoint allows you to update the integrator notification settings
       x-description-i18n:
-        eng: This endpoint allows you to update the integrator notification settings
-        spa: Este endpoint te permite actualizar las configuraciones de notificaciones del integrador
-        por: Este endpoint permite atualizar as configurações de notificação do integrador
+        eng: This endpoint allows you to update the integrator notification settings. It is important to keep in mind that this request has no response object
+        spa: Este endpoint te permite actualizar las configuraciones de notificaciones del integrador. Es importante tener en cuenta que este endpoint no tiene objeto de respuestas
+        por: Este endpoint permite atualizar as configurações de notificação do integrador. É importante ter em mente que este request não tem objeto de resposta
       requestBody:
         content:
           application/json:
@@ -1037,14 +1037,14 @@ paths:
                   type: array
                   description: Allowed notification channels to receive device event notifications.
                   x-description-i18n:
-                    eng: Allowed notification channels to receive device event notifications.
-                    spa: Canales de notificación permitidos para recibir notificaciones de eventos del dispositivo.
-                    por: Canais de notificação permitidos para receber notificações de eventos do dispositivo.
+                    eng: Allowed notification channels to receive device event notifications. It is important to keep in mind that you must enter a valid channel, for example, "email".
+                    spa: Canales de notificación permitidos para recibir notificaciones de eventos del dispositivo. Es importante tener en cuenta que en este campo se debe ingresar un canal válido, por ejemplo, "email".
+                    por: Canais de notificação permitidos para receber notificações de eventos do dispositivo. É importante ter em mente que neste campo deve ser inserido um canal válido, por exemplo, "email".
                   items:
                     type: string
                     example: "email"
                     enum:
-                      - "email"
+                      - email--channel to receive event notifications
       responses:
         '204':
           description: No Content - Configuration updated successfully
@@ -1158,12 +1158,11 @@ paths:
                     type: array
                     items:
                       type: string
-                      description: Configured notification event channel devices
-                      example: "email"
+                      description: Allowed notification channels to receive device event notifications. It is important to keep in mind that you must enter a valid channel, for example, "email".
                       x-description-i18n:
-                        eng: Configured notification event channel devices
-                        spa: Dispositivos de canal de eventos de notificación configurados
-                        por: Dispositivos de canal de eventos de notificação configurados
+                        eng: Allowed notification channels to receive device event notifications. It is important to keep in mind that you must enter a valid channel, for example, "email".
+                        spa: Canales de notificación permitidos para recibir notificaciones de eventos del dispositivo. Es importante tener en cuenta que en este campo se debe ingresar un canal válido, por ejemplo, "email".
+                        por: Canais de notificação permitidos para receber notificações de eventos do dispositivo. É importante ter em mente que neste campo deve ser inserido um canal válido, por exemplo, "email".
         '401':
           description: Unauthorized - Invalid token
           x-description-i18n:
