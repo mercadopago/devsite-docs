@@ -6,7 +6,7 @@ Pix é um meio de pagamento eletrônico instantâneo oferecido pelo Banco Centra
 >
 > Importante
 > 
-> A opção de pagamento com Pix só será exibida se houver uma chave Pix cadastrada no Mercado Pago. Caso ainda não tenha criado, [clique aqui]((https://www.youtube.com/watch?v=60tApKYVnkA)) e veja o passo a passo. <br/></br>
+> A opção de pagamento com Pix só será exibida se houver uma chave Pix cadastrada no Mercado Pago. Caso ainda não tenha criado, [clique aqui]((https://www.youtube.com/watch?v=60tApKYVnkA) e veja o passo a passo. <br/></br>
 > <br/></br>
 > Para já inicializar o formulário do Pix com o campo de e-mail preenchido, [clique aqui](/developers/pt/docs/checkout-bricks/payment-brick/additional-customization/initialize-data-on-the-bricks).<br/></br>
 > <br/></br>
