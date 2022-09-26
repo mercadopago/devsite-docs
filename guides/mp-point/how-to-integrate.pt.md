@@ -9,11 +9,7 @@ sites_supported:
 
 Para poder cobrar de maneira integrada com nosso dispositivo Point é necessário baixar a aplicação do Mercado Pago disponível nos marketplaces de iOS e Android.
 
-Existem dois cenários na hora de integrar Point:
-
-1) Quando a aplicação pode ser utilizada no mesmo dispositivo (celular ou tablet) onde está instalada a aplicação de Mercado Pago. É possível logar com uma integração de _deep linking_ ou _intent-based_.
-
-2) Quando a aplicação não pode ser utilizado no mesmo dispositivo (celular ou tablet) onde está instalada a aplicação do Mercado Pago. É possível logar com uma integração via _API_.
+Quando a aplicação pode ser utilizada no mesmo dispositivo (celular ou tablet) onde está instalada a aplicação de Mercado Pago. É possível logar com uma integração de _deep linking_.
 
 > WARNING
 >

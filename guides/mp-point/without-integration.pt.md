@@ -34,4 +34,4 @@ Você pode verificar suas vendas na lista de atividades da conta do Mercado Pago
 > 
 > Importante
 >
-> Se você quiser construir algo mais avançado e personalizado, consulte nossa documentação de [Point integrado](/developers/pt/docs/mp-point/integration-configuration)
+> Se você quiser construir algo mais avançado e personalizado, consulte os [tipos de integração disponíveis](/developers/pt/docs/mp-point/types-of-integration).
