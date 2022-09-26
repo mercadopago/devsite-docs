@@ -1013,7 +1013,7 @@ paths:
                       type: string
                       enum:
                         - 500-- Internal server error
-/point/integration-api/integrator:
+  /point/integration-api/integrator:
     patch:
       tags:
         - $ref: '#/tags/mp-point'
@@ -1048,7 +1048,7 @@ paths:
             spa: No Content - Configuración actualizada con exitosamente
             por: No Content - Configuração atualizada com sucesso
         '400':
-          description: Bad Request - Notification channel is not allowed
+          description: Bad Request - Channel is not allowed
           x-description-i18n:
             eng: Bad Request - Notification channel is not allowed
             spa: Bad Request - Canal de notificación no permitido
@@ -1058,21 +1058,10 @@ paths:
               schema:
                 type: object
                 properties:
-                  message:
+                  errorKey:
                     type: string
-                    example: "channel not allowed. Supported channels are: email"
-                  error:
-                    type: string
-                    example: "bad_request"
-                  status:
-                    type: integer
-                    format: int32
-                    example: 400
-                  cause:
-                    type: array
-                    items:
-                      type: string
-                    example: [ ]
+                    enum:
+                      - 400-- Bad-Request - Notification channel is not allowed
         '401':
           description: Unauthorized - Invalid token
           x-description-i18n:
@@ -1084,21 +1073,10 @@ paths:
               schema:
                 type: object
                 properties:
-                  message:
+                  errorKey:
                     type: string
-                    example: "invalid_token"
-                  error:
-                    type: string
-                    example: "not_found"
-                  status:
-                    type: integer
-                    format: int32
-                    example: 401
-                  cause:
-                    type: array
-                    items:
-                      type: string
-                    example: [ ]
+                    enum:
+                      - 401-- Unauthorized - Invalid token
         '500':
           description: Internal Server Error - Something went wrong
           x-description-i18n:
@@ -1110,21 +1088,10 @@ paths:
               schema:
                 type: object
                 properties:
-                  message:
+                  errorKey:
                     type: string
-                    example: "Oops! Something went wrong while updating the integrator"
-                  error:
-                    type: string
-                    example: "internal_error"
-                  status:
-                    type: integer
-                    format: int32
-                    example: 500
-                  cause:
-                    type: array
-                    items:
-                      type: string
-                    example: [ ]
+                    enum:
+                      - 500-- Internal server error - Something went wrong
     get:
       tags:
         - $ref: '#/tags/mp-point'
@@ -1183,21 +1150,10 @@ paths:
               schema:
                 type: object
                 properties:
-                  message:
+                  errorKey:
                     type: string
-                    example: "invalid_token"
-                  error:
-                    type: string
-                    example: "not_found"
-                  status:
-                    type: integer
-                    format: int32
-                    example: 401
-                  cause:
-                    type: array
-                    items:
-                      type: string
-                    example: [ ]
+                    enum:
+                      - 401-- Unauthorized - Invalid token
         '500':
           description: Internal Server Error - Something went wrong
           x-description-i18n:
@@ -1209,18 +1165,7 @@ paths:
               schema:
                 type: object
                 properties:
-                  message:
+                  errorKey:
                     type: string
-                    example: "Oops! Something went wrong while getting the integrator config"
-                  error:
-                    type: string
-                    example: "internal_error"
-                  status:
-                    type: integer
-                    format: int32
-                    example: 500
-                  cause:
-                    type: array
-                    items:
-                      type: string
-                    example: [ ]
+                    enum:
+                      - 500-- Internal server error - Something went wrong
