@@ -1013,22 +1013,21 @@ paths:
                       type: string
                       enum:
                         - 500-- Internal server error
-  /point/integration-api/integrator:
+/point/integration-api/integrator:
     patch:
       tags:
         - $ref: '#/tags/mp-point'
-      summary: Update integrator configuration
+      summary: Update the integrator configuration
       x-summary-i18n:
-        eng: Update integrator configuration
+        eng: Update the integrator configuration
         spa: Actualizar configuración del integrador
         por: Atualizar as configurações do integrador
       description: This endpoint allows you to update the integrator notification settings
       x-description-i18n:
         eng: This endpoint allows you to update the integrator notification settings
-        spa: Este endpoint te permite actualizar las configuraciones del integrador
-        por: Este endpoint permite atualizar as configurações do integrador
+        spa: Este endpoint te permite actualizar las configuraciones de notificaciones del integrador
+        por: Este endpoint permite atualizar as configurações de notificação do integrador
       requestBody:
-        required: true
         content:
           application/json:
             schema:
@@ -1038,22 +1037,22 @@ paths:
                   type: array
                   items:
                     type: string
-                  nullable: true
-                  example: "email" 
-                  enum: "email"
+                    enum:
+                      - "email"
+                  example: [ "email" ]
       responses:
         '204':
-          description: Success - Configuration updated
+          description: No Content - Configuration updated successfully
           x-description-i18n:
-            eng: Success - Configuration updated
-            spa: Éxito - Configuración actualizada
-            por: Sucesso - Configuração atualizada
+            eng: No Content - Configuration updated successfully
+            spa: No Content - Configuración actualizada con exitosamente
+            por: No Content - Configuração atualizada com sucesso
         '400':
-          description: Bad Request
+          description: Bad Request - Notification channel is not allowed
           x-description-i18n:
-            eng: Bad Request Error
-            spa: Bad Request Error
-            por: Bad Request Error
+            eng: Bad Request - Notification channel is not allowed
+            spa: Bad Request - Canal de notificación no permitido
+            por: Bad Request - Canal de notificação não permitido
           content:
             application/json:
               schema:
@@ -1073,14 +1072,13 @@ paths:
                     type: array
                     items:
                       type: string
-                      example: [ ]
-
+                    example: [ ]
         '401':
-          description: Unauthorized. Token is invalid
+          description: Unauthorized - Invalid token
           x-description-i18n:
-            eng: Unauthorized. Token is invalid
-            spa: Unauthorized. Token is invalid
-            por: Unauthorized. Token is invalid
+            eng: Unauthorized - Invalid token
+            spa: Unauthorized - Token no válido
+            por: Unauthorized - Token inválido
           content:
             application/json:
               schema:
@@ -1100,42 +1098,53 @@ paths:
                     type: array
                     items:
                       type: string
-                      example: [ ]
+                    example: [ ]
         '500':
-          description: Error
+          description: Internal Server Error - Something went wrong
           x-description-i18n:
-            eng: Error
-            spa: Error
-            por: Erro
+            eng: Internal Server Error - Something went wrong
+            spa: Internal Server Error - Something went wrong
+            por: Internal Server Error - Something went wrong
           content:
             application/json:
               schema:
                 type: object
                 properties:
-                  errorKey:
+                  message:
                     type: string
-                    enum:
-                      - 500-- Internal server error
+                    example: "Oops! Something went wrong while updating the integrator"
+                  error:
+                    type: string
+                    example: "internal_error"
+                  status:
+                    type: integer
+                    format: int32
+                    example: 500
+                  cause:
+                    type: array
+                    items:
+                      type: string
+                    example: [ ]
     get:
       tags:
         - $ref: '#/tags/mp-point'
-      summary: Get integrator configuration
+      summary: Get the integrator information and configuration.
       x-summary-i18n:
-        eng: Get integrator configuration
-        spa: Obtener configuración del integrador
-        por: Obter configurações do integrador
-      description: This endpoint allows you to get the integrator information and notification settings
+        eng: Get the integrator information and configuration
+        spa: Obtener la información y configuración del integrador
+        por: Obtenha as informações e configuração do integrador
+      description: This endpoint allows you to get the integrator information and the integrator notification settings
       x-description-i18n:
-        eng: This endpoint allows you to get the integrator information and notification settings
-        spa: Este endpoint le permite obtener la información y la configuración de notificación del integrador
-        por: Este endpoint permite que você obtenha as informações e as configurações de notificação do integrador
+        eng: This endpoint allows you to get the integrator information and the integrator notification settings
+        spa: Este endpoint the permite obtener la información y configuración del integrador
+        por: Este endpoint permite obter informações e configuração do integrador
       responses:
         '200':
-          description: Success - Get the integrator information and configuration
+          description: Ok - Get the integrator information and configuration
           x-description-i18n:
-            eng: Get the integrator information and configuration
-            spa: Get the integrator information and configuration
-            por: Get the integrator information and configuration
+            eng: Ok - Information and configuration of the integrator obtained
+            spa: Ok - Información y configuración del integrador obtenida
+            por: Ok - Informações e configuração do integrador obtidas
           content:
             application/json:
               schema:
@@ -1143,31 +1152,32 @@ paths:
                 properties:
                   id:
                     type: integer
+                    example: 1928030819
+                    description: integrator caller id
                   created_at:
                     type: string
+                    example: "0001-01-01T00:00:00Z"
+                    description: integration registration date
                   updated_at:
                     type: string
+                    example: "0001-02-01T00:00:00Z"
+                    description: integrator update date
                   notification_url_enabled:
                     type: boolean
+                    example: true
+                    description: is the integration notification url enabled
                   event_channel_devices:
                     type: array
                     items:
                       type: string
-                example: {
-                  "id": 1147131971,
-                  "created_at": "0001-01-01T00:00:00Z",
-                  "updated_at": "0001-01-01T00:00:00Z",
-                  "notfication_url_enabled": true,
-                  "event_channel_devices": [
-                      "email"
-                  ]
-                }
+                      description: configured notification event channel devices
+                    example: [ "email" ]
         '401':
-          description: Unauthorized. Token is invalid
+          description: Unauthorized - Invalid token
           x-description-i18n:
-            eng: Unauthorized. Token is invalid
-            spa: Unauthorized. Token is invalid
-            por: Unauthorized. Token is invalid
+            eng: Unauthorized - Invalid token
+            spa: Unauthorized - Token no válido
+            por: Unauthorized - Token inválido
           content:
             application/json:
               schema:
@@ -1187,19 +1197,30 @@ paths:
                     type: array
                     items:
                       type: string
-                      example: [ ]
+                    example: [ ]
         '500':
-          description: Error
+          description: Internal Server Error - Something went wrong
           x-description-i18n:
-            eng: Error
-            spa: Error
-            por: Erro
+            eng: Internal Server Error - Something went wrong
+            spa: Internal Server Error - Something went wrong
+            por: Internal Server Error - Something went wrong
           content:
             application/json:
               schema:
                 type: object
                 properties:
-                  errorKey:
+                  message:
                     type: string
-                    enum:
-                      - 500-- Internal server error
+                    example: "Oops! Something went wrong while getting the integrator config"
+                  error:
+                    type: string
+                    example: "internal_error"
+                  status:
+                    type: integer
+                    format: int32
+                    example: 500
+                  cause:
+                    type: array
+                    items:
+                      type: string
+                    example: [ ]
