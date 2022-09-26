@@ -3,7 +3,7 @@
 ---
 content_section_with_media: 
  - title: Salesforce Commerce Cloud
- - message: Salesforce Commerce Cloud is a payment processor that integrates the Mercado Pago API and allows you to offer payments with credit or debit cards. 
+ - message: Salesforce Commerce Cloud is a payment processor that integrates the Mercado Pago API and allows you to offer payments with credit and debit cards. 
  - media_video: https://www.youtube.com/embed/XtLcEywLnk8
 ---
 
@@ -14,7 +14,7 @@ content_section_with_media:
 ---
 content_section_with_media: 
  - title: Salesforce Commerce Cloud
- - message: Salesforce Commerce Cloud is a payment processor that integrates the Mercado Pago API and allows you to offer payments with credit or debit cards, as well as immediate transfers with Pix. 
+ - message: Salesforce Commerce Cloud is a payment processor that integrates the Mercado Pago API and allows you to offer payments with credit and debit cards, as well as immediate transfers with Pix. 
  - media_video: https://www.youtube.com/embed/HTQgKsSHZaU
 ---
 
@@ -34,7 +34,7 @@ available_countries: mla, mlb, mlm, mlu, mlc, mco, mpe
 bullet_section_with_media: 
  - title: Start charging with card
  - type: normal
- - message: Integrate the Mercado Pago Checkout API and receive payments with credit or debit cards.
+ - message: Integrate the Mercado Pago Checkout API and receive payments with credit and debit cards.
  - image: /shopify/mini-landing-1.png
 ---
 
@@ -46,7 +46,7 @@ bullet_section_with_media:
 bullet_section_with_media: 
  - title: Start charging with card
  - type: normal
- - message: Integrate the Mercado Pago Transparent Checkout and receive payments with credit or debit cards.
+ - message: Integrate the Mercado Pago Transparent Checkout and receive payments with credit and debit cards.
  - image: /shopify/mini-landing-1.png
 ---
 
@@ -66,7 +66,7 @@ bullet_section_with_media:
 
 >>>> Accepted payment types <<<<
 ---
-available_payments: credit, pix
+available_payments: credit, debit, pix
 
 ---
 
@@ -79,7 +79,7 @@ available_payments: credit, pix
 
 >>>> Accepted payment types <<<<
 ---
-available_payments: credit
+available_payments: credit, debit
 
 ---
 

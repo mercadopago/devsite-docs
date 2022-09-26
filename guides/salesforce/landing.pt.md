@@ -3,7 +3,7 @@
 ---
 content_section_with_media: 
  - title: Salesforce Commerce Cloud
- - message: O Salesforce Commerce Cloud é um processador de pagamentos que integra a API do Mercado Pago e permite oferecer pagamentos com ccartões de crédito ou débito.
+ - message: O Salesforce Commerce Cloud é um processador de pagamentos que integra a API do Mercado Pago e permite oferecer pagamentos com ccartões de crédito e/ou débito.
  - media_video: https://www.youtube.com/embed/HTQgKsSHZaU
 ---
 
@@ -14,7 +14,7 @@ content_section_with_media:
 ---
 content_section_with_media: 
  - title: Salesforce Commerce Cloud
- - message: O Salesforce Commerce Cloud é um processador de pagamentos que integra a API do Mercado Pago e permite oferecer pagamentos com cartões de crédito ou débito, além de transferências imediatas com Pix.
+ - message: O Salesforce Commerce Cloud é um processador de pagamentos que integra a API do Mercado Pago e permite oferecer pagamentos com cartões de crédito e/ou débito, além de transferências imediatas com Pix.
  - media_video: https://www.youtube.com/embed/HTQgKsSHZaU
 ---
 
@@ -34,7 +34,7 @@ available_countries: mla, mlb, mlm, mlu, mlc, mco, mpe
 bullet_section_with_media: 
  - title: Comece a cobrar com cartão de credito
  - type: normal
- - message: Integre o Checkout API do Mercado Pago e receba pagamentos com cartões de crédito ou débito.
+ - message: Integre o Checkout API do Mercado Pago e receba pagamentos com cartões de crédito e/ou débito.
  - image: /shopify/mini-landing-1.png
 ---
 
@@ -46,7 +46,7 @@ bullet_section_with_media:
 bullet_section_with_media: 
  - title: Comece a cobrar com cartão
  - type: normal
- - message: Integre o Checkout Transparente do Mercado Pago e receba pagamentos com cartões de crédito ou débito.
+ - message: Integre o Checkout Transparente do Mercado Pago e receba pagamentos com cartões de crédito e/ou débito.
  - image: /shopify/mini-landing-1.png
 ---
 
@@ -66,7 +66,7 @@ bullet_section_with_media:
 
 >>>> Tipos de pagamento aceitos <<<<
 ---
-available_payments: credit, pix
+available_payments: credit, debit, pix
 
 ---
 
@@ -80,7 +80,7 @@ available_payments: credit, pix
 
 >>>> Tipos de pagamento aceitos <<<<
 ---
-available_payments: credit
+available_payments: credit, debit
 
 ---
 
