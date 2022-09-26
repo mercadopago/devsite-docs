@@ -9,11 +9,7 @@ sites_supported:
 
 In order to process payments in the *integrated mode* with our Point devices, it is necessary to download the Mercado Pago application for Android and IOS.
 
-There are two different possible situations to integrate Point: 
-
-1) When you are able to access your application from the same device (smartphone or tablet) where the Mercado Pago application is installed. These integrations can be done via Deep linking or Intent-based. 
-
-2) When you can not use your application from the same device (smartphone or tablet) where the Mercado Pago application is installed. This integration can be done vía API. 
+When you are able to access your application from the same device (smartphone or tablet) where the Mercado Pago application is installed. These integrations can be done via Deep linking or Intent-based. 
 
 > WARNING
 >
