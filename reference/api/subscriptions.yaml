@@ -1412,7 +1412,11 @@ paths:
         eng: Update a subscription
         spa: Actualizar suscripción
         por: Atualizar assinatura
-      description: Renew the data of a subscription. Indicate the preapproval ID and send the body with the information you want to update. You can update reason, amount, payment method and status and more 
+      description: Renew the data of a subscription. Indicate the preapproval ID and send the body with the information you want to update. You can update reason, amount, payment method, status and other information that compose the subscription
+      x-description-i18n:
+        eng: Renew the data of a subscription. Indicate the preapproval ID and send the body with the information you want to update. You can update reason, amount, payment method, status and other information that compose the subscription
+        spa: Renovar datos de suscripción. Ingrese el ID de suscripción y envíe el body con la información que desea actualizar. Podrás actualizar el motivo, monto, medio de pago, status y demás información que conforma la suscripción.
+        por: Renove os dados de uma assinatura. Indique o ID da assinatura e envie o body com as informações que deseja atualizar. Você pode atualizar o motivo, valor, forma de pagamento, status e outras informações que compõem a assinatura.
       parameters:
         - name: id
           in: path
