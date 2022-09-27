@@ -28,7 +28,7 @@ To facilitate and optimize your integration process, check below a complete exam
    const renderPaymentBrick = async (bricksBuilder) => {
      const settings = {
        initialization: {
-         amount: 100, // amount of processing to be performed 
+         amount: 100, // total amount to be paid 
        },
        customization: {
          paymentMethods: {

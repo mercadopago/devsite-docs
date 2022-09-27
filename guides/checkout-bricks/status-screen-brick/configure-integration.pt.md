@@ -87,7 +87,7 @@ Para renderizar o brick, insira o código abaixo após o passo anterior e preenc
 const renderStausScreenBrick = async (bricksBuilder) => {
 const settings = {
   initialization: {
-    paymentId: '1234567890', // id de pagamento gerado por Mercado Pago
+    paymentId: '1234567890', // id de pagamento gerado pelo Mercado Pago
   },
   callbacks: {
     onReady: () => {

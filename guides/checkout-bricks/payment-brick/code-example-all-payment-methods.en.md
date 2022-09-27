@@ -397,7 +397,7 @@ curl -X POST \
      const settings = {
        initialization: {
          /*
-           "amount" is the amount of processing being performed
+           "amount" is the total amount to be paid
            by all means of payment with the exception of the Mercado Pago Wallet,
            which has its processing value determined in the backend through the "preferenceId"
          */
