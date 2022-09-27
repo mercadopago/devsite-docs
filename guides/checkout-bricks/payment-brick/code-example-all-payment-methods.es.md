@@ -398,7 +398,7 @@ curl -X POST \
      const settings = {
        initialization: {
          /*
-           "amount" es la cantidad de procesamiento que se está realizando
+           "amount" es el monto a ser pago
            por todos los medios de pago a excepción de la Cuenta de Mercado Pago,
            que tiene su valor de procesamiento determinado en el backend a través de "preferenceId"
          */

@@ -395,7 +395,7 @@ curl -X POST \
   const renderPaymentBrick = async (bricksBuilder) => {
     const settings = {
       initialization: {
-        amount: 100, // cantidad de procesamiento a realizar
+        amount: 100, // monto a ser pago
         preferenceId: '<PREFERENCE_ID>', // preferenceId generado en el backend
       },
       callbacks: {

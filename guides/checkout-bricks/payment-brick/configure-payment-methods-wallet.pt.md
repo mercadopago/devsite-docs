@@ -446,7 +446,7 @@ Para renderizar o brick, insira o código abaixo após o passo anterior e preenc
 const renderPaymentBrick = async (bricksBuilder) => {
  const settings = {
  initialization: {
-   amount: 100, // valor do processamento a ser realizado
+   amount: 100, // valor total a ser pago
    preferenceId: '<PREFERENCE_ID>', // preferenceId gerado no backend
  },
  callbacks: {
