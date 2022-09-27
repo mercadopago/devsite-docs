@@ -206,8 +206,8 @@ window.Mercadopago.getPaymentMethod({
 >
 > Importante
 > 
-> O código `bin` na V2 não é de apenas 6 dígitos, mas sim de 8 dígitos e essa mudança não interfere em nada a implementação. Além disso, o código não é mais acessível através do componente de `cardNumber` porque agora no campo não existe mais um input, mas sim uma `div` e, dentro da `div`,existe um iframe. <br/></br>
-> <br/> </br>
+> O código `bin` na V2 não é de apenas 6 dígitos, mas sim de 8 dígitos e essa mudança não interfere em nada a implementação. Além disso, o código não é mais acessível através do componente de `cardNumber` porque agora no campo não existe mais um input, mas sim uma `div` e, dentro da `div`,existe um iframe. <br/><br/>
+> <br/> <br/>
 > Agora, para recuperar o bin agora devemos ouvir o evento `binChange` que existe na div em que está contido o **card number**.
 
 * **V2**
@@ -300,9 +300,9 @@ async function getInstallments(paymentMethodId, bin) {
 
 Finalmente no submit do formulário, é gerado o token que é enviado ao backend, e isso continua funcionando parcialmente do mesmo jeito, só algumas mudanças nas invocações e nos nomes dos métodos.
 
-O método de criação do token também teve alteração no nome, na V1 era createToken e na V2 é createCardToken.
+O método de criação do token também teve alteração no nome, na V1 era `createToken` e na V2 é `createCardToken`.
 
-Na v1, o método createToken recebia dois parâmetros, o formulário, e a função de callback que é executada ao fim da criação do token
+Na V1, o método createToken recebia dois parâmetros, o formulário, e a função de callback que é executada ao fim da criação do token.
 
 * **V1**
 
@@ -310,7 +310,7 @@ Na v1, o método createToken recebia dois parâmetros, o formulário, e a funç�
 window.Mercadopago.createToken($form, setCardTokenAndPay);
 ````
 
-Na V2, o método recebe um objeto contendo o cardholderName, identificationType e o identificationNumber, e esse método retorna uma promisse com o token.
+Na V2, o método recebe um objeto contendo o `cardholderName`, `identificationType` e o `identificationNumber`, e esse método retorna uma promisse com o token.
 
 * **V2**
 
