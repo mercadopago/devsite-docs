@@ -9,7 +9,7 @@ Para configurar la integración de Card Payment Brick, debe seguir los pasos a c
 
 > Los pasos se realizan en el backend o frontend. Las etiquetas **Client-Side** y **Server-Side** ubicadas inmediatamente al lado del título lo ayudan a identificar qué paso se realiza en qué instancia.
 > <br/>
-> Y, para ayudar, hemos preparado un completo [ejemplo de código](/developers/es/docs/checkout-bricks/card-payment-brick/code-example) que puede usar como modelo.
+> Y para ayudar, hemos preparado un [ejemplo de código](/developers/es/docs/checkout-bricks/card-payment-brick/code-example) completo de la configuración de Card Payment Brick que puede usar como modelo.
 
 > CLIENT_SIDE
 >
@@ -88,7 +88,7 @@ const renderCardPaymentBrick = async (bricksBuilder) => {
 
   const settings = {
     initialization: {
-      amount: 100, //valor del pago a realizar
+      amount: 100, // monto a ser pago
     },
     callbacks: {
       onReady: () => {

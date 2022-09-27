@@ -11,7 +11,7 @@ To configure Payment Brick integration to receive payments with credit and debit
 
 > The steps are performed on the backend or frontend. The **Client-Side** and **Server-Side** pills located immediately next to the title help you to identify which step is performed in which instance. <br/></br>
 > <br/></br>
-> And, to help, we have prepared a complete [code example](/developers/en/docs/checkout-bricks/payment-brick/code-example-cards) that you can use as a template.
+> And to help, we've prepared a complete [code-example](/developers/en/docs/checkout-bricks/payment-brick/code-example/cards) of the Payment Brick configuration with cards that you can use as a template.
 
 > CLIENT_SIDE
 >
@@ -89,7 +89,7 @@ To render the brick, insert the following code after the previous step and fill 
 const renderPaymentBrick = async (bricksBuilder) => {
  const settings = {
    initialization: {
-     amount: 100, // amount of processing to be performed
+     amount: 100, // total amount to be paid
    },
    customization: {
      paymentMethods: {
@@ -101,10 +101,8 @@ const renderPaymentBrick = async (bricksBuilder) => {
      onReady: () => {
        // callback called when Brick is ready
      },
-     onSubmit: ({ paymentType, formData }) => {
+     onSubmit: ({ selectedPaymentMethod, formData }) => {
        // callback called when clicking on the data submission button
-      
-       if (paymentType === 'credit_card' || paymentType === 'debit_card') {
          return new Promise((resolve, reject) => {
            fetch("/processar-pago", {
              method: "POST",
@@ -122,7 +120,6 @@ const renderPaymentBrick = async (bricksBuilder) => {
                reject();
              })
          });
-       }
      },
      onError: (error) => {
        // callback called for all Brick error cases

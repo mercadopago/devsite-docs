@@ -78,3 +78,27 @@ function createPayment(){
         });
 };
 ```
+
+> CLIENT_SIDE
+>
+> h1
+>
+> Hide Mercado Pago Wallet panel
+
+| - | Brick |
+| --- | --- |
+| Customization moment  | When rendering the brick  |
+| Property  | customization.visual.hideRedirectionPanel  |
+| Type  | Boolean  |
+| Comments  | When **true**, hides within the payment option with the Mercado Pago Wallet, the redirection panel to the Mercado Pago website. |
+
+```javascript
+const settings = {
+   ...,
+   customization: {
+       visual: {
+           hideRedirectionPanel: true
+       }
+   }
+}
+```
