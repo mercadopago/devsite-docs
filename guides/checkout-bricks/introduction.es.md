@@ -10,13 +10,27 @@ Checkout Bricks permite la integración del lado del cliente de forma modular a 
 
 El Brick posee capacidades responsivas en términos del tamaño del espacio en la pantalla. El brick siempre ocupará el espacio que se le ha definido y responderá cuando este espacio cambie durante su uso.
 
-![responsiveness](checkout-bricks/responsiveness-es.gif)
+----[mlb]---- 
+![responsiveness-mlb](checkout-bricks/responsiveness-mlb-es.gif)
+
+------------
+----[mla, mlm, mpe, mco, mlu, mlc]---- 
+![responsiveness-mla](checkout-bricks/responsiveness-mla-es.gif)
+
+------------
 
 ## Temas
 
 El Checkout Bricks se puede instanciar/renderizar con diferentes temas y características que pueden adaptarse mejor al aspecto de la tienda. Las características de cada uno de los temas disponibles se detallan a continuación. Consulta [Definir Tema](/developers/es/docs/checkout-bricks/additional-content/set-theme) para obtener instrucciones sobre cómo cambiar el tema del brick
 
-![themes](checkout-bricks/themes-es.png)
+----[mlb]---- 
+![themes-mlb](checkout-bricks/themes-mlb-es.png)
+
+------------
+----[mla, mlm, mpe, mco, mlu, mlc]---- 
+![themes-mla](checkout-bricks/themes-mla-es.png)
+
+------------
 
 ## Idiomas
 

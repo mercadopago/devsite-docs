@@ -1,12 +1,23 @@
 # Configurar la integración con Pix
 
-Para configurar la integración de Payment Brick para recibir pagos con Pix debe seguir los pasos a continuación. Si ya ha integrado los pagos con tarjeta, puede iniciar la integración desde el **paso 5**.
+Pix es un método de pago electrónico instantáneo ofrecido por el Banco Central de Brasil a personas físicas y jurídicas. A través de Checkout Bricks, es posible ofrecer esta opción de pago desde un **código QR** o un **código de pago**.
+
+> WARNING
+>
+> Importante
+> 
+> La opción de pago por Pix solo se mostrará si existe una Clave de Pix registrada en Mercado Pago. Si aún no las creaste, [haz clic aquí](https://www.youtube.com/watch?v=60tApKYVnkA) y consulta el paso a paso. <br/></br>
+> <br/></br>
+> Para iniciar el formulario de Pix con el campo de correo electrónico completado, [haz clic aquí](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/initialize-data-on-the-bricks).<br/></br>
+> <br/></br>
+> Y para ayudar, hemos preparado un [ejemplo de código](/developers/es/docs/checkout-bricks/payment-brick/code-example/pix) completo de la configuración de Payment Brick con Pix que puede usar como modelo.
+
+Para configurar la integración de Payment Brick para recibir pagos con Pix debe seguir los pasos a continuación. Si ya ha integrado los pagos con tarjeta, puede iniciar la integración desde el **paso 4**.
 
 1. [Crear container](#bookmark_crear_container)
 2. [Incluir y configurar la librería MercadoPago.js](#bookmark_incluir_y_configurar_la_librería_mercadopago.js)
 3. [Instanciar brick](#bookmark_instanciar_brick)
 4. [Renderizar brick](#bookmark_renderizar_brick)
-5. [Administrar pagos con Pix](#bookmark_administrar_pagos_con_pix)
 
 > Los pasos se realizan en el backend o frontend. Las etiquetas **Client-Side** y **Server-Side** ubicadas inmediatamente al lado del título lo ayudan a identificar qué paso se realiza en qué instancia.
 
@@ -83,27 +94,23 @@ Una vez instanciado el builder, nuestro brick puede ser renderizado y tener toda
 Para renderizar el brick, inserta el código a continuación del paso anterior y completa los atributos de acuerdo con los comentarios destacados en este mismo código.
 
 ```javascript
-const mp = new MercadoPago('YOUR_PUBLIC_KEY');
-const bricksBuilder = mp.bricks();
 const renderPaymentBrick = async (bricksBuilder) => {
  const settings = {
    initialization: {
-     amount: 100, // valor del pago a realizar
+     amount: 100, // monto a ser pago
    },
    customization: {
      paymentMethods: {
-       creditCard: 'all',
-       debitCard: 'all',
+       bankTransfer: ['pix'],
      },
    },
    callbacks: {
      onReady: () => {
-       // callback llamado cuando Brick esté listo
+       // callback llamado cuando Brick está listo
      },
-     onSubmit: ({ paymentType, formData }) => {
-       // callback llamado cuando el usuario haz clic en el botón enviar los datos
+     onSubmit: ({ selectedPaymentMethod, formData }) => {
+       // callback llamado al hacer clic en el botón de envío de datos
       
-       if (paymentType === 'credit_card' || paymentType === 'debit_card') {
          return new Promise((resolve, reject) => {
            fetch("/processar-pago", {
              method: "POST",
@@ -117,11 +124,11 @@ const renderPaymentBrick = async (bricksBuilder) => {
                resolve();
              })
              .catch((error) => {
-               // tratar respuesta de error al intentar crear el pago
+               // manejar la respuesta de error al intentar crear el pago
                reject();
              })
          });
-       }
+       
      },
      onError: (error) => {
        // callback llamado para todos los casos de error de Brick
@@ -139,7 +146,7 @@ renderPaymentBrick(bricksBuilder);
 
 El resultado de renderizar el brick debe ser como la imagen de abajo:
 
-![payment-brick](checkout-bricks/payment-brick-es.png)
+![payment-brick-pix](checkout-bricks/payment-brick-pix-es.png)
 
 > WARNING
 >
@@ -147,54 +154,15 @@ El resultado de renderizar el brick debe ser como la imagen de abajo:
 >
 > Para un control efectivo del Brick, la función enviada en `onSubmit` siempre debe devolver una Promise. Llame el método `resolve()` solo si el procesamiento de tu backend fue exitoso. Llame el método `reject()` en caso de que ocurra un error. Esto hará que el Brick te permita completar los campos nuevamente y haga posible un nuevo intento de pago. Al llamar el `resolve()` dentro de la Promise de `onSubmit`, el brick no permite nuevos pagos. Si deseas realizar un nuevo pago, deberás crear una nueva instancia del Brick.
 
-> CLIENT_SIDE 
->
-> h2
->
-> Administrar pagos con Pix
+Para pagar con Pix, el comprador debe ingresar su dirección de correo electrónico. Se recomienda encarecidamente que el integrador ingrese este campo de correo electrónico al inicio del Brick, para que el comprador no tenga que escribirlo manualmente. Para inicializar el campo de correo electrónico, simplemente siga el **ejemplo a continuación**.
 
-> WARNING
->
-> Importante
-> 
-> La opción de pago por Pix solo se mostrará si existe una Clave de Pix registrada en Mercado Pago. Si aún no las creaste, [haz clic aquí](https://www.youtube.com/watch?v=60tApKYVnkA) y consulta el paso a paso. </br> 
-> <br/> </br> 
-> Para iniciar el formulario de Pix con el campo de correo electrónico completado, [haz clic aquí](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/initialize-data-on-the-bricks).
-
-Para incluir Pix, solo use la siguiente configuración:
-
-[[[
-```Javascript
-settings = {
-  ...,
-  customization: {
-    ...,
-    paymentMethods: {
-      ...,
-      bankTransfer: [ 'pix' ]
-    }
-  }
-}
-}
-```
-]]]
-
-La propiedad `bankTransfer` acepta 2 tipos de variables, `string` y `string[]`. Por ahora, el único medio aceptado para `bankTransfer` es **Pix**, por lo que pasar el array `['pix']` o la cadena `all` producirá el mismo resultado.
-
-Para pagar con Pix, el comprador debe ingresar su dirección de correo electrónico. Se recomienda encarecidamente que el integrador ingrese este campo de correo electrónico al inicio del Brick, para que el comprador no tenga que escribirlo manualmente. Para inicializar el campo de correo electrónico, simplemente siga el ejemplo a continuación.
-
-[[[
 ```Javascript
 settings = {
   ...,
   initialization: {
-    ...,
-    payer: {
-      email: 'jose@maria.com',
-    }
-  }
-}
-
+ ...,
+ payer: {
+   email: 'jose@maria.com'
+ }
 }
 ```
-]]]

@@ -34,4 +34,4 @@ Puedes consultar tus ventas en el listado de actividades de la cuenta de Mercado
 >
 > Importante
 > 
-> Si quieres construir algo más avanzado y personalizado, consulta nuestra documentación de [Point integrado](/developers/es/docs/mp-point/integration-configuration)
+> Si quieres construir algo más avanzado y personalizado, consulta los [tipos de integración disponibles](/developers/es/docs/mp-point/types-of-integration).

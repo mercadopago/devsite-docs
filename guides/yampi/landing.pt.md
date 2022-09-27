@@ -27,10 +27,11 @@ bullet_section_with_media:
  
 --- mini_landing_separator ---
  
->>>> Meios de pagamento aceitos <<<<
+>>>> Tipos de pagamento aceitos <<<<
 
 ---
-available_payments: credit, debit, ticket, pix
+available_payments: credit, debit, mercadopago, boleto, pix, pec, moneda, cartera
 
 ---
+
 > Para detalhes dos meios de pagamento aceitos em cada país, verifique a lista completa com a [disponibilidade de meios de pagamento.](/developers/pt/docs/sales-processing/payment-methods)

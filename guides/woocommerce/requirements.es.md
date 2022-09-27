@@ -4,6 +4,7 @@ Para utilizar la integración de Mercado Pago con WooCommerce en un sitio WordPr
 
 | Requisitos | Especificaciones |
 |---|---|
+| Aplicación | Las aplicaciones son las diversas integraciones contenidas en una o varias tiendas. Puedes crear una aplicación para cada solución que implementes a fin de tener todo organizado y mantener un control que facilite la gestión. Consulta [Dashboard](/developers/es/docs/woocommerce/additional-content/dashboard/introduction) para obtener más información sobre cómo crear una aplicación. |
 | Cuenta de vendedor Mercado Pago | Para realizar ventas, necesitas una cuenta de vendedor en Mercado Pago. Si no la tienes, [haz clic aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) para crearla. |
 | Credenciales | Las [credenciales](/developers/es/guides/additional-content/credentials/credentials) son contraseñas únicas con las que identificamos una integración en tu cuenta y nos sirven para captar pagos en tiendas virtuales y otras aplicaciones de forma segura. Para recibir los pagos reales, necesitarás las **credenciales de producción**. Para realizar pruebas y garantizar que la integración funcione, se requerirán **credenciales de prueba**. |
 | WordPress | Herramienta Online para creación de tiendas, sitios web y blogs. [Haz clic aquí](https://es.wordpress.org/) para crear tu cuenta. Versión de instalación requerida: 4.9.10 o superior. Probado hasta 5.8.x |
