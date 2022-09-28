@@ -85,7 +85,7 @@ Con Secure Fields, la forma en que se implementan los campos `card number`, `exp
 <input id="securityCode" data-checkout="securityCode" type="text" />
 `````
 
-Ahora, con solo los 'divs' y los 'ID' correspondientes, se verá así:
+Ahora, solo con los 'divs' y los 'ID' correspondientes, se verá así:
 
 * **La fecha de caducidad en el V2**
 
