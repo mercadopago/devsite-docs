@@ -10,36 +10,34 @@ Checkout Bricks permite la integración del lado del cliente de forma modular a 
 
 El Brick posee capacidades responsivas en términos del tamaño del espacio en la pantalla. El brick siempre ocupará el espacio que se le ha definido y responderá cuando este espacio cambie durante su uso.
 
-![responsividad](checkout-bricks/responsive-theme-es.gif)
+----[mlb]---- 
+![responsiveness-mlb](checkout-bricks/responsiveness-mlb-es.gif)
+
+------------
+----[mla, mlm, mpe, mco, mlu, mlc]---- 
+![responsiveness-mla](checkout-bricks/responsiveness-mla-es.gif)
+
+------------
 
 ## Temas
 
-El Card Payment Brick se puede instanciar/renderizar con diferentes temas y características que pueden adaptarse mejor al aspecto de la tienda. Las características de cada uno de los temas disponibles se detallan a continuación (consulta [Definir Tema](/developers/es/docs/checkout-bricks/additional-customization/set-theme) para obtener instrucciones sobre cómo cambiar el tema del brick).
+El Checkout Bricks se puede instanciar/renderizar con diferentes temas y características que pueden adaptarse mejor al aspecto de la tienda. Las características de cada uno de los temas disponibles se detallan a continuación. Consulta [Definir Tema](/developers/es/docs/checkout-bricks/additional-content/set-theme) para obtener instrucciones sobre cómo cambiar el tema del brick
 
-![themes](checkout-bricks/themes-payment-card-es.png)
+----[mlb]---- 
+![themes-mlb](checkout-bricks/themes-mlb-es.png)
+
+------------
+----[mla, mlm, mpe, mco, mlu, mlc]---- 
+![themes-mla](checkout-bricks/themes-mla-es.png)
+
+------------
 
 ## Idiomas
 
-El Brick de pago con tarjeta se puede instanciar/representar en tres idiomas diferentes:
+El Checkout Bricks se puede instanciar/representar en tres idiomas diferentes:
 
 * Portugués
 * Inglés 
 * Español
 
-Consulta [Elegir idioma](/developers/es/docs/checkout-bricks/additional-customization/select-language) para obtener instrucciones sobre cómo seleccionar el idioma del brick.
-
-> PREV_STEP_CARD_ES
->
-> Página de inicio
->
-> Regrese a la página de inicio de la documentación de Checkout Bricks.
->
-> [Página de inicio](/developers/es/docs/checkout-bricks/landing)
-
-> NEXT_STEP_CARD_ES
->
-> Card Payment Brick
->
-> Obtén más información sobre Card Payment Brick.
->
-> [Card Payment Brick](/developers/es/docs/checkout-bricks/card-payment-brick)
+Consulta [Elegir idioma](/developers/es/docs/checkout-bricks/additional-content/select-language) para obtener instrucciones sobre cómo seleccionar el idioma del brick.

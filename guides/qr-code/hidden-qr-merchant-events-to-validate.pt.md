@@ -9,4 +9,3 @@
 |Segunda tentativa de pagamento. O usuário primeiro faz um pagamento recusado e depois um pagamento aprovado.| O sistema de Ponto de Venda recebe as informações de um pagamento recusado e depois as de um pagamento aprovado.| Não elimine o pedido após um pagamento recusado.|
 |Devolução de pagamento. Uma devolução é realizada desde o Ponto de Venda.|O reembolso ou estorno impacta na conta do comprador.| [Ver reembolsos](/developers/es/docs/qr-code/additional-content/refunds).|
 |Cancelar pedido. O usuário muda de ideia e decide pagar com dinheiro.| O pedido é excluído, portanto, ao escanear o QR é exibida a tela de espera.| Elimine o pedido do caixa.|
-

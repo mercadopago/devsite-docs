@@ -12,6 +12,7 @@ The Point Integrations API allows you to connect your points of sale (POS) to th
 > This integration supports the following devices:
 >
 > - Point Plus (POS)
+> - Point Smart
 >
 > You can purchase your Point device from our [official store](https://www.mercadopago.com.ar/point)
 
@@ -29,6 +30,7 @@ The Point Integrations API allows you to connect your points of sale (POS) to th
 
 ------------
 
+
 ### Learn about its advantages
 
 * **It’s safe**, as all requests are made through HTTPS.
@@ -36,19 +38,6 @@ The Point Integrations API allows you to connect your points of sale (POS) to th
 * **It’s agile**, as it allows you to manage your payment orders from your POS.
 * **It’s efficient**, as it reduces the possibility of errors when charging.
 
-
-<br />
-
 ### This flowchart explains how the API works:
 
 ![Mercado Pago Point Flow](/images/point-api/2-flow-diagram-en.png)
-
-
-
-> NEXT_STEP_CARD_EN
->
-> Start integrating the Integrations API
->
-> To perform an integration, you must first obtain the identification credentials.
->
-> [Integrate the Integrations API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/integration-api/integration)

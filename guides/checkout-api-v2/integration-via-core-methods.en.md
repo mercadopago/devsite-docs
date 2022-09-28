@@ -310,14 +310,14 @@ console.error('error getting installments: ', e)
 
 ## Create card token
 
-The card token is created from the card information itself, increasing security during the payment flow. In addition, once the token is used in a given purchase, it is discarded, requiring the creation of a new one for future purchases. To create the card token, use the function below.
+The card token is created from the card information itself, increasing security during the payment flow. In addition, once the token is used in a given purchase, it is discarded, requiring the creation of a new one for future purchases. To create the card token, use the function below. In addition, remember that **the token is valid for 7 days** and can be **used only once**.
 
 
 > NOTE
 >
 > Important
 >
-> The `createCardToken` method returns a token with the secure representation of the card data, in addition, we will take the ID token from the response and save it in a hidden input called `token` and then send the form to the servers.
+> The `createCardToken` method returns a token with the secure representation of the card data. We will take the ID token from the response and save it in a hidden input called `token` and then send the form to the servers.
 
 [[[
 ```javascript

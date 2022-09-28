@@ -25,7 +25,7 @@ Para ter acesso aos logs, acesse o painel de administração de sua loja VTEX e 
 
 Caso um pagamento seja rejeitado, é  importante rever o `status_detail` que especifica o motivo da recusa.
 
-Para mais informações, acesse o link [Resultados da criação de uma cobrança](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/checkout-api/collection-creation-results).
+Para mais informações, acesse o link [Resultados da criação de uma cobrança](/developers/pt/docs/checkout-api/response-handling/collection-results).
 
 > NEXT_STEP_CARD_PT
 >

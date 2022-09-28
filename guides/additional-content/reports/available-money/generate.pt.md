@@ -1,12 +1,29 @@
 
 # Como gerar o seu relatório de Dinheiro disponível?
 
+----[mlu, mpe]----
 > WARNING
 >
 > A partir do dia 1º de março de 2022, o relatório Dinheiro disponível será desabilitado
 >
-> Você pode usar o [relatório de ----[mla]----Liquidações------------ ----[mlm, mlb, mlc, mco, mlu, mpe]----Liberações------------](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/released-money/introduction) para fazer a reconciliação das transações que afetem o saldo disponível na sua conta, incluindo seus saques bancários.
+> Você pode usar o [relatório de Liberações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/released-money/introduction) para fazer a reconciliação das transações que afetem o saldo disponível na sua conta, incluindo seus saques bancários.
+------------
 
+----[mla]----
+> WARNING
+>
+> Importante
+>
+> A partir de 5 de dezembro, não será mais possível criar novos relatórios de Dinheiro retirado. Para continuar controlando as transferências, saques e movimentações do seu saldo disponível, por favor, [use o relatório Liberações](https://bit.ly/3B7Q5Qy).
+------------
+
+----[mlm]----
+> WARNING
+>
+> Importante
+>
+> A partir de 12 de dezembro, não será mais possível criar novos relatórios de Dinheiro retirado. Para continuar controlando as transferências, saques e movimentações do seu saldo disponível, por favor, [use o relatório Liberações](https://bit.ly/3RH0KJ4).
+------------
 
 ## Canais de geração
 
@@ -15,7 +32,7 @@ Há três formas de gerar um relatório de Dinheiro disponível:
 | Canais | Descrição |
 | --- | --- |
 | Painel do Mercado Pago | <br/>É muito rápido e simples. Para gerar a partir da sua conta do Mercado Pago, vá até [Relatórios](https://www.mercadopago.com.br/balance/reports) e selecione uma opção de *Relatórios*.<br/><br/>Siga o passo a passo para [gerar relatórios a partir do painel](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/available-money/panel).<br/><br/> |
-| Integração via API | <br/>Programa a frequência do seu relatório de acordo com as suas necessidades. Pode ser tanto de forma manual como de forma programada.<br/><br/>Leia a documentação para [gerar relatórios por API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/available-money/api). <br/><br/>|
+| Integração via API | <br/> ----[mla, mlb, mlm]---- Programa a frequência do seu relatório de acordo com as suas necessidades. Pode ser tanto de forma manual como de forma programada.<br/><br/>Leia a documentação para [gerar relatórios por API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/available-money/api). ------------ ----[mpe, mlu, mco, mlc]---- Esta integração só pode ser usada para consultar a baixar o manual de relatórios e não permite gerar novos relatórios. ------------<br/><br/>|
 | Com retirada de dinheiro | <br/>Gere um relatório automaticamente cada vez que retirar seu dinheiro disponível para uma conta bancária. <br/><br/>Siga o passo a passo para [gerar relatórios para cada retirada de dinheiro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/available-money/withdrawal).<br/><br/> |
 
 

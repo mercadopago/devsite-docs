@@ -12,6 +12,7 @@ Las notificaciones son mensajes enviados por el servidor de Mercado Pago desde e
 * Creación de contracargos;
 * Finalización y cancelación de intento pago;
 * Error al processar intento de pago.
+* [Alertas de fraude](/developers/es/docs/additional-content/sales-processing/chargebacks)
 
 Hay **dos tipos** de notificaciones disponibles para la configuración, que una vez configuradas, te permiten programar el backend de tu tienda para, por ejemplo, actualizar el estado de los pedidos cuando se crea un pago, enviar un correo electrónico de confirmación del pedido desde la tienda cuando un pedido se actualiza en Mercado Pago, actualizar el registro de un cliente cuando se vincula un plan de suscripción, o cualquier otra acción derivada de los eventos enumerados anteriormente.
 

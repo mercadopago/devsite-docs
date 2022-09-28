@@ -5,17 +5,11 @@ sites_supported:
   - mlm
 ---
 
-
 # Como integrar Mercado Pago Point
 
 Para poder cobrar de maneira integrada com nosso dispositivo Point é necessário baixar a aplicação do Mercado Pago disponível nos marketplaces de iOS e Android.
 
-Existem dois cenários na hora de integrar Point:
-
-1) Quando a aplicação pode ser utilizada no mesmo dispositivo (celular ou tablet) onde está instalada a aplicação de Mercado Pago. É possível logar com uma integração de _deep linking_ ou _intent-based_.
-
-2) Quando a aplicação não pode ser utilizado no mesmo dispositivo (celular ou tablet) onde está instalada a aplicação do Mercado Pago. É possível logar com uma integração via _API_.
-
+Quando a aplicação pode ser utilizada no mesmo dispositivo (celular ou tablet) onde está instalada a aplicação de Mercado Pago. É possível logar com uma integração de _deep linking_.
 
 > WARNING
 >
@@ -25,8 +19,6 @@ Existem dois cenários na hora de integrar Point:
 > * Contar com um dispositivo Point.
 > * O usuário deve estar logado com sua conta do Mercado Pago na aplicação de Mercado Pago.
 > * Disponível para Android versão 2.8.0 ou superior, iOS versão 1.7.0 ou superior e, somente quando executa, em iOS 9 ou superior.
-
-
 
 ## Integração via API
 
@@ -40,7 +32,6 @@ Existem dois cenários na hora de integrar Point:
 A outra forma de integração com o aplicativo Mercado Pago para cobrar com nosso Point é através de nossas APIs.
 
 Para fazer a integração, é necessário habilitar as opções de integração no aplicativo Mercado Pago. Execute o seguinte curl para fazer isso:
-
 
 ```curl
 --location --request POST ‘https://api.mercadopago.com/point/services/user/status/integrators?access_token= <ENV_ACCESTOKEN>’ \
@@ -156,7 +147,6 @@ curl -X DELETE \
 
 **Response status code: 204 OK**
 
-
 ### Obter todos os dispositivos de uma conta
 
 O GET nesta API possibilita obter todos os dispositivos configurados e sincronizados para sua conta do Mercado Pago
@@ -186,7 +176,6 @@ Se o status do dispositivo é `FREE` quer dizer que o dispositivo pode receber u
 
 **Response status code: 200 OK**
 
-
 ### Eliminar um dispositivo de uma conta
 
 O DELETE nesta API possibilita apagar algum dos dispositivos configurados e sincronizados para sua conta de Mercado Pago.
@@ -208,7 +197,6 @@ A resposta terá o seguinte formato.
 ```
 
 **Response status code: 200 OK**
-
 
 ## Notificações de Pagamento
 

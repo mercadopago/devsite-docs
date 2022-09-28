@@ -26,7 +26,6 @@ Assim que o pedido for criado, ele estará disponível para ser **escaneado e pa
 >
 > No caso de não ter carregado anteriormente o nome ou logotipo de seu negócio em [ sua conta Mercado Pago](https://www.mercadopago.com.br/settings/account), o título e a imagem do pedido exibidos ao cliente no aplicativo serão os do primeiro item carregado.
 
-
 ## Eliminar um pedido
 
 Para remover o pedido associado a um QR antes da sua expiração, o encerramento, consulte nossa [Referência de API](/developers/pt/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_pos_external_pos_id_orders/delete).
@@ -40,4 +39,3 @@ As notificações IPN **(Instant Payment Notification)** são a **forma automát
 Implemente o IPN de `merchant_order` com uma pesquisa de pedido por `external_reference` como um método de contingência.
 
 [Receber notificações IPN](/developers/pt/docs/qr-code/additional-content/notifications/ipn)
-

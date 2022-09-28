@@ -10,7 +10,6 @@ Once the payment is proccesed, the user will be redirected to the `success_url` 
 
 ![Deep linking flow diagram Mercado Pago Point](/images/point_diagram.png)
 
-
 ## Deep Linking creation
 
 The URL to be intercepted is the following: `https://www.mercadopago.com/point/integrations`
@@ -30,6 +29,5 @@ The parameters that you can include are:
 > Important
 >
 > * The fields with an (\*), are mandatory.
-
 
 In the following [GitHub] article (https://github.com/mercadopago/point-android_integration#deep-linking) you can find more information, as well as a descriptive example.

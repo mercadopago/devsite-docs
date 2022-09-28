@@ -66,9 +66,9 @@ Vamos te ajudar a detectar comportamentos incomuns dos clientes com o nosso cód
 Para otimizar a validação de segurança dos pagamentos, encaminhe para nós a maior quantidade de dados possíveis no momento de criar o pagamento. Por exemplo, se você encaminhar para nós os dados do comprador, podemos detectar se realizou pagamentos suspeitos em outro momento e alertá-lo sobre isso.
 Você pode obter mais informações sobre cada atributo nas [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments/post).
 
-### Faça a devolução de pagamentos suspeitos
+### Alertas de fraude
 
-Se detectarmos um comportamento irregular ou recebermos uma notificação de que o cartão utilizado foi roubado, entraremos em contato via email para avisar você dessa ocorrência. Recomendamos que [cancele a compra](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds) e faça a devolução do dinheiro ao comprador para evitar a contestação do pagamento.
+Notificaremos você por meio de [notificações IPN](/developers/pt/docs/notifications/ipn/introduction) quando detectarmos algum comportamento irregular ou recebermos uma notificação de que o cartão usado foi roubado. Além disso, entraremos em contato por e-mail para notificá-lo. Nessa situação, você deve cancelar a compra e devolver o dinheiro ao comprador para evitar o estorno. Para começar a receber notificações, [preencha suas informações](https://www.mercadolibre.com/jms/mla/lgz/msl/login/H4sIAAAAAAAEAzWNwW4DIQxE_2XOaLlz7I8glzUbq4CRcbKpovx7tWp7HM28Ny80PWRk_56MBH7OJkUcAbORV7WeZUdCnwhY4vwXG10TMursbAvpdYkO3j-4ql2qSm0xAujut1ybnki_XwiQlfnpbINaPvnzIXy1_8ShSLi5z5ViPM9z62yFdp106Fa0b2Rx5wc3nWwrThrc4lCXKoVcdKwoc-AdUGl5dqPyheR25_cPATlhVe8AAAA/user) e escolha a opção "Alertas de fraude".
 
 ### Revise os dados ao cobrar com Point
 
