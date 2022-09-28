@@ -21,7 +21,7 @@ Para facilitar e otimizar o seu processo de integração, veja abaixo um exemplo
             const renderCardPaymentBrick = async (bricksBuilder) => {
             const settings = {
                     initialization: {
-                        amount: 100, //valor do processamento a ser realizado
+                        amount: 100, // valor total a ser pago
                         payer: {
                         email: 'test@mail.com',
                     },

@@ -11,7 +11,7 @@ Para configurar a integração do Payment Brick para receber pagamentos com cart
 
 > Os passos são realizados no back-end ou no front-end. As pills **Client-Side** e **Server-Side** localizadas imediatamentamente ao lado do título te ajudam a identificar qual passo é realizado em qual instância. <br/></br>
 > <br/></br>
-> E, para ajudar, preparamos um [exemplo de codigo](/developers/pt/docs/checkout-bricks/payment-brick/code-example-cards) completo da configuração do Payment Brick, que você pode usar como modelo.
+> E, para ajudar, preparamos um [exemplo de codigo](/developers/pt/docs/checkout-bricks/payment-brick/code-example/cards) completo da configuração do Payment Brick com cartões que você pode usar como modelo.
 
 > CLIENT_SIDE
 >
@@ -88,7 +88,7 @@ Para renderizar o brick, insira o código abaixo após o passo anterior e preenc
 const renderPaymentBrick = async (bricksBuilder) => {
  const settings = {
    initialization: {
-     amount: 100, // valor do processamento a ser realizado
+     amount: 100, // valor total a ser pago
    },
    customization: {
      paymentMethods: {
@@ -100,10 +100,8 @@ const renderPaymentBrick = async (bricksBuilder) => {
      onReady: () => {
        // callback chamado quando o Brick estiver pronto
      },
-     onSubmit: ({ paymentType, formData }) => {
+     onSubmit: ({ selectedPaymentMethod, formData }) => {
        // callback chamado ao clicar no botão de submissão dos dados
-      
-       if (paymentType === 'credit_card' || paymentType === 'debit_card') {
          return new Promise((resolve, reject) => {
            fetch("/processar-pago", {
              method: "POST",
@@ -121,7 +119,6 @@ const renderPaymentBrick = async (bricksBuilder) => {
                reject();
              })
          });
-       }
      },
      onError: (error) => {
        // callback chamado para todos os casos de erro do Brick

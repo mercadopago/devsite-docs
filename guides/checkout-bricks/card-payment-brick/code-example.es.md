@@ -1,6 +1,6 @@
 # Ejemplo de código 
 
-Para facilitar y optimizar su proceso de integración, ve a continuación un ejemplo completo de la integración con Card Payment Brick y cómo, luego de realizar la integración, enviar el pago a Mercado Pago.
+Para facilitar y optimizar su proceso de integración, vea a continuación un ejemplo completo de la integración con Card Payment Brick y cómo, luego de realizar la integración, enviar el pago a Mercado Pago.
 
 > CLIENT_SIDE
 >
@@ -21,7 +21,7 @@ Para facilitar y optimizar su proceso de integración, ve a continuación un eje
             const renderCardPaymentBrick = async (bricksBuilder) => {
             const settings = {
                     initialization: {
-                        amount: 100, //valor do processamento a ser realizado
+                        amount: 100, // monto a ser pago
                         payer: {
                         email: 'test@mail.com',
                     },
