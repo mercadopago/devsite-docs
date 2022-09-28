@@ -93,7 +93,7 @@ Ahora, solo con los 'divs' y los 'ID' correspondientes, se verá así:
 <div id="expirationDate"></div>
 `````
 
-* **Card number na V2**
+* **Card number en V2**
 
 ```html
 <div id="cardNumber"></div>
