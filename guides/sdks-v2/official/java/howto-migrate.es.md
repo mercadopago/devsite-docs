@@ -6,7 +6,7 @@ La migración es bastante simple y el orden de los eventos es exactamente el mis
 
 * Cambiamos la forma de instanciar Mercado Pago;
 * Ya no usaremos las funciones de callback de cada método, sino su retorno para trabajar con los datos;
-* Los nombres de algunos métodos también han sufrido algunos cambios menores y estos se han vuelto más claros en los fragmentos de comparación.
+* Los nombres de algunos métodos también han sufrido algunos cambios menores y se han vuelto más claros en los snippets comparativos.
 
 > WARNING
 >
