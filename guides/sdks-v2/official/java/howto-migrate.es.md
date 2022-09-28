@@ -73,7 +73,7 @@ Con Secure Fields, la forma en que se implementan los campos `card number`, `exp
 </div>
 `````
 
-* **Card number na V1**
+* **Card number en V1**
 
 ```html
 <input type="text" id="cardNumber" data-checkout="cardNumber" />
