@@ -61,7 +61,7 @@ Como mencionado anteriormente, a instanciação do Mercado Pago também foi alte
 
 ## Criando campos PCI
 
-Com o Secure Fields, mudou um pouco a forma de implementação dos campos de `card number`, `expiration date` e `security code`. Com essa nova proposta bem mais segura, não é necessário criar tags inputs em seu HTML desses campos, agora devemos criar apenas as divs onde esses inputs serão renderizados, e deixar que o mercado pago envie iframes para esses campos, segue exemplos:
+Com o Secure Fields, mudou um pouco a forma de implementação dos campos de `card number`, `expiration date` e `security code`. Com essa nova proposta bem mais segura, não é necessário criar tags inputs destes campos em seu HTML, agora deveremos criar apenas as `divs` onde os inputs serão renderizados e deixar que o Mercado Pago envie iframes para os campos, como nos exemplos abaixo.
 
 * **A data de vencimento na V1**
 
@@ -126,11 +126,9 @@ Com isso, agora temos os nossos campos PCI seguros dentro do formulário.
 
 ## Obter tipos de documento
 
-Agora o `getIdentificationTypes` retorna uma promise e a forma de popular a tag select mudou. Segue os snippets das alterações: 
+Agora o `getIdentificationTypes` retorna uma promise e a forma de popular a tag select mudou.
 	
-No caso da SDK V1, a tag select era populada automaticamente no select com `id=’docType’`, depois da chamada do `getIdentificationTypes()`
-
-* **V1**
+No caso da **SDK V1**, a tag select era populada automaticamente no select com `id=’docType’`, depois da chamada do `getIdentificationTypes()`.
 
 ```html
 <body 
@@ -142,9 +140,9 @@ No caso da SDK V1, a tag select era populada automaticamente no select com `id=�
  window.Mercadopago.getIdentificationTypes();
 ````
 
-Na V2 a chamada do método retorna uma promise com lista de `identificationTypes` e você deverá popular a tag select com o ID que você quiser, usando o exemplo anterior com o `id=’docType’`, a implementação ficaria assim.
+Na **V2** a chamada do método retorna uma promise com lista de `identificationTypes` e você deverá popular a tag select com o ID que você quiser, utilizando o exemplo anterior com o `id=’docType’`, a implementação ficaria da seguinte maneira:
 
-> Sabendo que o método `getIdentificationTypes` é uma retorna uma promise e a mesma deve ser executada logo após a renderização, uma opção é usar uma [IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE), como no exemplo abaixo.
+> Sabendo que o método `getIdentificationTypes` é uma retorna uma promise e a mesma deve ser executada logo após a renderização, uma opção é usar uma [IIFE,](https://developer.mozilla.org/en-US/docs/Glossary/IIFE) como no exemplo abaixo.
 
 ```javascript
  (async function getIdentificationTypes() {
@@ -216,7 +214,7 @@ window.Mercadopago.getPaymentMethod({
 cardNumberElement.on('binChange', guessPaymentMethod);
 ````
 
-A função que será executada no evento de `binChange` receberá por parâmetro um objeto contendo o `bin`. Na V2 esse `getPaymentMethods` é uma **promise** e recebe apenas o `bin` como parâmetro e retorna um objeto contendo um array dos **payment methods** quando a promise for resolvida.
+A função que será executada no evento de `binChange` receberá por parâmetro um objeto contendo o `bin`. Na V2 esse `getPaymentMethods` é uma **promise** que recebe apenas o `bin` como parâmetro e retorna um objeto contendo um array dos **payment methods** quando a promise for resolvida.
 
 ```javascript
 async function getPaymentMethods(data) {
@@ -298,11 +296,11 @@ async function getInstallments(paymentMethodId, bin) {
 
 ## Criar token do cartão
 
-Finalmente no submit do formulário, é gerado o token que é enviado ao backend, e isso continua funcionando parcialmente do mesmo jeito, só algumas mudanças nas invocações e nos nomes dos métodos.
+Finalmente, no submit do formulário, é gerado o token que é enviado ao backend e isso continua funcionando parcialmente do mesmo jeito, só algumas mudanças nas invocações e nos nomes dos métodos.
 
 O método de criação do token também teve alteração no nome, na V1 era `createToken` e na V2 é `createCardToken`.
 
-Na V1, o método createToken recebia dois parâmetros, o formulário, e a função de callback que é executada ao fim da criação do token.
+Na V1, o método `createToken` recebia dois parâmetros, o formulário, e a função de callback que é executada ao fim da criação do token.
 
 * **V1**
 
@@ -310,7 +308,7 @@ Na V1, o método createToken recebia dois parâmetros, o formulário, e a funç�
 window.Mercadopago.createToken($form, setCardTokenAndPay);
 ````
 
-Na V2, o método recebe um objeto contendo o `cardholderName`, `identificationType` e o `identificationNumber`, e esse método retorna uma promisse com o token.
+Na V2, o método recebe um objeto contendo o `cardholderName`, `identificationType` e o `identificationNumber`, e esse método retorna uma promise com o token.
 
 * **V2**
 
@@ -364,7 +362,7 @@ function setCardTokenAndPay(token) {
 >
 > Importante
 >
-> Para mais informações, acesse a [documentação do SDK JS V2 com Secure Fields](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-core-methods). Além disso, disponibilizamos um [exemplo completo](https://github.com/lucmkz/mp-migracao-sdk-v1-para-sdk-v2-sf/blob/main/migracao.html) de migração no código fonte com comentários que você pode usar como modelo.
+> Para mais informações, acesse a [documentação do SDK JS V2 com Secure Fields.](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-core-methods) Além disso, disponibilizamos um [exemplo completo](https://github.com/lucmkz/mp-migracao-sdk-v1-para-sdk-v2-sf/blob/main/migracao.html) de migração no código fonte com comentários que você pode usar como modelo.
 
 ## Outras alternativas
 
@@ -372,7 +370,15 @@ Existem duas outras alternativas de implementações que não englobam os **core
 
 ### Cardform
 
-A integração de pagamentos via cartão é feita via cardform. Neste modo de integração, o MercadoPago.js é responsável pelos fluxos necessários para obtenção das informações obrigatórias para a criação de um pagamento. Quando inicializado, uma busca é realizada para recolher os tipos de documentos disponíveis para o país em questão. Veja mais informações na documentação do [Checkout Transparente](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform).
+----[mla, mlm, mpe, mco, mlu, mlc]----
+A integração de pagamentos via cartão é feita via **cardform**. Neste modo de integração, o **MercadoPago.js** é responsável pelos fluxos necessários para obtenção das informações obrigatórias para a criação de um pagamento. Quando inicializado, uma busca é realizada para recolher os tipos de documentos disponíveis para o país em questão. Veja mais informações na documentação do [Checkout API](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform).
+
+------------
+
+----[mlb]----
+A integração de pagamentos via cartão é feita via **cardform**. Neste modo de integração, o **MercadoPago.js** é responsável pelos fluxos necessários para obtenção das informações obrigatórias para a criação de um pagamento. Quando inicializado, uma busca é realizada para recolher os tipos de documentos disponíveis para o país em questão. Veja mais informações na documentação do [Checkout Transparente](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform).
+
+------------
 
 ### Checkout Bricks
 
