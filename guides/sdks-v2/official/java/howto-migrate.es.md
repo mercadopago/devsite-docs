@@ -5,7 +5,7 @@ En este artículo explicaremos las configuraciones necesarias para la migración
 La migración es bastante simple y el orden de los eventos es exactamente el mismo, las diferencias son:
 
 * Cambiamos la forma de instanciar Mercado Pago;
-* Ya no usaremos las funciones de devolución de llamada de cada método, sino su regreso al trabajo con los datos;
+* Ya no usaremos las funciones de callback de cada método, sino su retorno para trabajar con los datos;
 * Los nombres de algunos métodos también han sufrido algunos cambios menores y estos se han vuelto más claros en los fragmentos de comparación.
 
 > WARNING
