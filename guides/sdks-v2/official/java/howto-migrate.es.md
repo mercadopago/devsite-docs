@@ -1,6 +1,6 @@
 # Cómo migrar de Java SDK V1 a Java SDK V2 con Secure Fields
 
-En este artículo, explicaremos las configuraciones necesarias para la migración de **usar JavaScript SDK en la versión 1** a **usar JavaScript SDK en la versión 2 con Secure Fields**.
+En este artículo explicaremos las configuraciones necesarias para la migración de **JavaScript SDK en la versión 1** a **JavaScript SDK en la versión 2 con Secure Fields**.
 
 La migración es bastante simple y el orden de los eventos es exactamente el mismo, las diferencias son:
 
