@@ -10,7 +10,7 @@ La migración es bastante simple y el orden de los eventos es exactamente el mis
 
 > WARNING
 >
-> Atenção
+> Atención
 >
 > La migración no afectará su backend de ninguna manera, las modificaciones están completamente en la interfaz de la aplicación.
 
