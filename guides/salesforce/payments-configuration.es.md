@@ -35,5 +35,5 @@ Por defecto, el cartucho de Mercado Pago mostrará primero el medio de pago Pix 
 Si deseas modificar este orden, sigue estos pasos.
 
 1. Dentro de tu tienda Salesforce Commerce Cloud, ve al menú **Merchant Tools** y haz clic en la opción **Payment Methods** que se encuentra dentro del grupo de opciones Ordering. También puedes encontrar la opción utilizando el buscador del menú.
-2. Dentro del cuadro, busca la columna **Sort Order**. En esta columna, asígnale un orden numérico a los medios de pago de tu tienda para definir el orden en el que quieras mostrarlos. 
+2. Dentro del cuadro, busca la columna **Sort Order**. En esta columna, asígnale un orden numérico a los medios de pago de tu tienda para definir la posición en la que quieras mostrarlos. 
 
