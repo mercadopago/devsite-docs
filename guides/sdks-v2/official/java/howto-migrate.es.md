@@ -105,7 +105,7 @@ Ahora, solo con los 'divs' y los 'ID' correspondientes, se verá así:
 <div id="securityCode"> </div>
 `````
 
-Y además de los `divs`, en el caso de Secure Fields necesitaremos informar a los MPs donde debe montar las entradas. Usando los `divs` anteriores como ejemplo, el script se verá así:
+Y además de los `divs`, en el caso de Secure Fields necesitaremos informar a los MPs dónde debe montar las entradas. Usando los `divs` anteriores como ejemplo, el script se verá así:
 
 ```javascript
 
