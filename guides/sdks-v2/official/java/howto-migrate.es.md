@@ -61,7 +61,7 @@ Como se mencionó anteriormente, la instanciación de Mercado Pago también ha c
 
 ## Creando campos PCI
 
-Con Secure Fields, la forma en que se implementan los campos `card number`, `expiration date` y `security code` ha cambiado un poco. Con esta nueva propuesta mucho más segura, no es necesario crear tags inputs para estos campos en tu HTML, ahora debemos crear solo los `divs` donde se renderizarán los inputs y dejar que Mercado Pago envíe iframes para los campos, como en los ejemplos a continuación.
+Con Secure Fields, la forma en que se implementan los campos `card number`, `expiration date` y `security code` ha cambiado un poco. Con esta nueva propuesta, mucho más segura, no es necesario crear tags inputs para estos campos en tu HTML, ahora solo debemos crear los `divs` donde se renderizarán los inputs y dejar que Mercado Pago envíe iframes para los campos, como en los ejemplos a continuación.
 
 * **La fecha de caducidad en V1**
 
