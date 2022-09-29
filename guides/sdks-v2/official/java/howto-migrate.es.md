@@ -302,7 +302,7 @@ Finalmente, en el envío del formulario, el token se genera y se envía al backe
 
 El método de creación de tokens, particularmente, tuvo un cambio de nombre: en V1 era `createToken` y en V2 es `createCardToken`.
 
-En V1, el método `createToken` recibió dos parámetros, el formulario y la función de callback que se ejecuta al final de la creación del token.
+En V1, el método `createToken` recibía dos parámetros, el formulario y la función de callback que se ejecuta al final de la creación del token.
 
 * **V1**
 
