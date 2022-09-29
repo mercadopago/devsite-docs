@@ -1,4 +1,4 @@
-# Cómo migrar de Java SDK V1 a Java SDK V2 con Secure Fields
+# Cómo migrar de SDK JS V1 a SDK JS V2 con Secure Fields
 
 En este artículo explicaremos las configuraciones necesarias para la migración de **JavaScript SDK en la versión 1** a **JavaScript SDK en la versión 2 con Secure Fields**.
 
@@ -189,17 +189,14 @@ Ahora `getPaymentMethod` es `getPaymentMethods` (en plural). En V1, este método
 
 * **V1**
 
-```html
-<body 
-   <select id="docType" name="docType" data-checkout="docType" type="text"></select>
-</body>
-
-`````
-
 ```javascript
 window.Mercadopago.getPaymentMethod({
     "bin": bin
 }, callbackFn);
+````
+
+```javascript
+document.getElementById('cardNumber').addEventListener('change', guessPaymentMethod);
 ````
 
 > NOTE
@@ -208,7 +205,7 @@ window.Mercadopago.getPaymentMethod({
 > 
 > El código `bin` en V2 no tiene solo 6 dígitos, sino 8, y este cambio no interfiere en absoluto con la implementación. Además, ya no se puede acceder al código a través del componente `cardNumber` porque ahora no hay una entrada en el campo, sino un `div` y, dentro del `div`, hay un iframe. <br/><br/>
 > <br/> <br/>
-> Ahora, para recuperar el bin debemos atender el evento `binChange` que existe en el div donde está contenido el **card number**.
+> Ahora, para recuperar el bin debemos escuchar el evento `binChange` que existe en el div donde está contenido el **card number**.
 
 * **V2**
 
@@ -216,7 +213,7 @@ window.Mercadopago.getPaymentMethod({
 cardNumberElement.on('binChange', guessPaymentMethod);
 ````
 
-La función que se ejecutará en el evento `binChange` recibirá un objeto que contenga el `bin` como parámetro. En V2, este `getPaymentMethods` es una **promise** que toma solo el `bin` como parámetro y devuelve un objeto que contiene un array de **medios de pago** cuando se resuelve la promise.
+La función que se ejecutará en el evento `binChange` recibirá un objeto que contenga el `bin` como parámetro. En V2, este `getPaymentMethods` es una **promise** que solo recibe un objeto que contiene el `bin` como parámetro y devuelve un objeto que contiene un array de **medios de pago** cuando se resuelve la promise.
 
 ```javascript
 async function getPaymentMethods(data) {

@@ -1,4 +1,4 @@
-# How to migrate from Java SDK V1 to Java SDK V2 with Secure Fields
+# How to migrate from SDK JS V1 to SDK JS V2 with Secure Fields
 
 In this article we will explain the necessary settings for the migration from **using JavaScript SDK in Version 1** to **using JavaScript SDK in Version 2 with Secure Fields**.
 
@@ -189,17 +189,14 @@ Now `getPaymentMethod` is `getPaymentMethods` (plural). Still in V1 this method 
 
 * **V1**
 
-```html
-<body
-   <select id="docType" name="docType" data-checkout="docType" type="text"></select>
-</body>
-
-`````
-
 ```javascript
 window.Mercadopago.getPaymentMethod({
     "bin": bin
 }, callbackFn);
+````
+
+```javascript
+document.getElementById('cardNumber').addEventListener('change', guessPaymentMethod);
 ````
 
 > NOTE
@@ -208,7 +205,7 @@ window.Mercadopago.getPaymentMethod({
 >
 > The `bin` code in V2 is not just 6 digits, but 8 digits and this change does not interfere with the implementation at all. Also, the code is no longer accessible through the `cardNumber` component because now there is no longer an input in the field but a `div` and, inside the `div`, there is an iframe. <br/><br/>
 > <br/> <br/>
-> Now, to retrieve the bin we must attend the `binChange` event that exists in the div where the **card number** is contained.
+> Now, to retrieve the bin we must listen the `binChange` event that exists in the div where the **card number** is contained.
 
 * **V2**
 
@@ -216,7 +213,7 @@ window.Mercadopago.getPaymentMethod({
 cardNumberElement.on('binChange', guessPaymentMethod);
 ````
 
-The function that will be executed in the `binChange` event will receive an object containing the `bin` as a parameter. In V2 this `getPaymentMethods` is a **promise** that takes only the `bin` as a parameter and returns an object containing an array of **payment methods** when the promise is resolved.
+The function that will be executed in the `binChange` event will receive an object containing the `bin` as a parameter. In V2, this `getPaymentMethods` is a **promise** that only receives an object containing the `bin` as a parameter and returns an object containing an array of **payment methods** when the promise resolves.
 
 ```javascript
 async function getPaymentMethods(data) {
