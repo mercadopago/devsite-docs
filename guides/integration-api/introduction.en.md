@@ -12,6 +12,7 @@ The Point Integrations API allows you to connect your points of sale (POS) to th
 > This integration supports the following devices:
 >
 > - Point Plus (POS)
+> - Point Smart
 >
 > You can purchase your Point device from our [official store](https://www.mercadopago.com.ar/point)
 
