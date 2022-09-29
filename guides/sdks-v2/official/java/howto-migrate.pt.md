@@ -41,7 +41,7 @@ O nome do arquivo JS no CDN foi alterado e será necessário modificar no HTML a
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 `````
 
-## Instância do Mercado Pago
+## Instanciar Mercado Pago
 
 Como mencionado anteriormente, a instanciação do Mercado Pago também foi alterada.
 
@@ -59,7 +59,7 @@ Como mencionado anteriormente, a instanciação do Mercado Pago também foi alte
    const mp = new MercadoPago("YOUR_PUBLIC_KEY"); 
 ````
 
-## Criando campos PCI
+## Criar campos PCI
 
 Com o Secure Fields, mudou um pouco a forma de implementação dos campos de `card number`, `expiration date` e `security code`. Com essa nova proposta bem mais segura, não é necessário criar tags inputs destes campos em seu HTML, agora deveremos criar apenas as `divs` onde os inputs serão renderizados e deixar que o Mercado Pago envie iframes para os campos, como nos exemplos abaixo.
 
