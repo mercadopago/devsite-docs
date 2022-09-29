@@ -373,7 +373,7 @@ Existen otras dos alternativas de implementación que no incluyen **métodos cen
 ### Cardform
 
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-La integración de los pagos con tarjeta se realiza a través de **cardform**. En este modo de integración, **MercadoPago.js** es responsable de los flujos necesarios para obtener la información requerida para crear un pago. Cuando se inicializa, se realiza una búsqueda para recopilar los tipos de documentos disponibles para el país en cuestión. Consulte la documentación de [Checkout API](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform) para obtener más información.
+La integración de los pagos con tarjeta se realiza a través de **cardform**. En este modo de integración, **MercadoPago.js** es responsable de los flujos necesarios para obtener la información requerida para crear un pago. Cuando se inicializa, se realiza una búsqueda para recopilar los tipos de documentos disponibles para el país en cuestión. Consulta la documentación de [Checkout API](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform) para obtener más información.
 
 ------------
 
