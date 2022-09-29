@@ -1,16 +1,16 @@
 # Cómo migrar de Java SDK V1 a Java SDK V2 con Secure Fields
 
-En este artículo, explicaremos las configuraciones necesarias para la migración de **usar JavaScript SDK en la versión 1** a **usar JavaScript SDK en la versión 2 con Secure Fields**.
+En este artículo explicaremos las configuraciones necesarias para la migración de **JavaScript SDK en la versión 1** a **JavaScript SDK en la versión 2 con Secure Fields**.
 
 La migración es bastante simple y el orden de los eventos es exactamente el mismo, las diferencias son:
 
 * Cambiamos la forma de instanciar Mercado Pago;
-* Ya no usaremos las funciones de devolución de llamada de cada método, sino su regreso al trabajo con los datos;
-* Los nombres de algunos métodos también han sufrido algunos cambios menores y estos se han vuelto más claros en los fragmentos de comparación.
+* Ya no usaremos las funciones de callback de cada método, sino su retorno para trabajar con los datos;
+* Los nombres de algunos métodos también han sufrido algunos cambios menores y se han vuelto más claros en los snippets comparativos.
 
 > WARNING
 >
-> Atenção
+> Atención
 >
 > La migración no afectará su backend de ninguna manera, las modificaciones están completamente en la interfaz de la aplicación.
 
@@ -61,7 +61,7 @@ Como se mencionó anteriormente, la instanciación de Mercado Pago también ha c
 
 ## Creando campos PCI
 
-Con Secure Fields, la forma en que se implementan los campos `card number`, `expiration date` y `security code` ha cambiado un poco. Con esta nueva propuesta mucho más segura, no es necesario crear tags inputs para estos campos en tu HTML, ahora debemos crear solo los `divs` donde se renderizarán los inputs y dejar que Mercado Pago envíe iframes para los campos, como en los ejemplos a continuación.
+Con Secure Fields, la forma en que se implementan los campos `card number`, `expiration date` y `security code` ha cambiado un poco. Con esta nueva propuesta, mucho más segura, no es necesario crear tags inputs para estos campos en tu HTML, ahora solo debemos crear los `divs` donde se renderizarán los inputs y dejar que Mercado Pago envíe iframes para los campos, como en los ejemplos a continuación.
 
 * **La fecha de caducidad en V1**
 
@@ -73,7 +73,7 @@ Con Secure Fields, la forma en que se implementan los campos `card number`, `exp
 </div>
 `````
 
-* **Card number na V1**
+* **Card number en V1**
 
 ```html
 <input type="text" id="cardNumber" data-checkout="cardNumber" />
@@ -85,7 +85,7 @@ Con Secure Fields, la forma en que se implementan los campos `card number`, `exp
 <input id="securityCode" data-checkout="securityCode" type="text" />
 `````
 
-Ahora, con solo los 'divs' y los 'ID' correspondientes, se verá así:
+Ahora, solo con los 'divs' y los 'ID' correspondientes, se verá así:
 
 * **La fecha de caducidad en el V2**
 
@@ -93,7 +93,7 @@ Ahora, con solo los 'divs' y los 'ID' correspondientes, se verá así:
 <div id="expirationDate"></div>
 `````
 
-* **Card number na V2**
+* **Card number en V2**
 
 ```html
 <div id="cardNumber"></div>
@@ -105,7 +105,7 @@ Ahora, con solo los 'divs' y los 'ID' correspondientes, se verá así:
 <div id="securityCode"> </div>
 `````
 
-Y además de los `divs`, en el caso de Secure Fields necesitaremos informar a los MPs donde debe montar las entradas. Usando los `divs` anteriores como ejemplo, el script se verá así:
+Y además de los `divs`, en el caso de Secure Fields necesitaremos informar a los MPs dónde debe montar las entradas. Usando los `divs` anteriores como ejemplo, el script se verá así:
 
 ```javascript
 
@@ -122,13 +122,13 @@ const securityCodeElement = mp.fields.create('securityCode', {
 }).mount('securityCode');
 ````
 
-Con eso, ahora tenemos nuestros campos PCI seguros dentro del formulario.
+Con eso tenemos nuestros campos PCI seguros dentro del formulario.
 
 ## Obtener tipos de documentos
 
-Ahora `getIdentificationTypes` devuelve una promesa y la forma de completar la tag select ha cambiado.
+Ahora `getIdentificationTypes` devuelve una promise y la forma de completar la tag select ha cambiado.
 
-En el caso de **SDK V1**, la etiqueta de selección se completó automáticamente en la selección con `id='docType'`, después de la llamada `getIdentificationTypes()`.
+En el caso de **SDK V1**, la tag select era completada automáticamente en la selección con `id='docType'`, después de la llamada `getIdentificationTypes()`.
 
 * **V1**
 
@@ -142,7 +142,7 @@ En el caso de **SDK V1**, la etiqueta de selección se completó automáticament
  window.Mercadopago.getIdentificationTypes();
 ````
 
-En **V2**, la llamada al método devuelve una promesa con una lista de `identificationTypes` y debe completar la tag select con la ID que desee, usando el ejemplo anterior con `id='docType'`, la implementación se vería así:
+En **V2**, la llamada al método devuelve una promise con una lista de `identificationTypes` y deberás completar la tag select con la ID que desees. Usando el ejemplo anterior con `id='docType'`, la implementación se vería así:
 
 > Sabiendo que el método `getIdentificationTypes` es una devolución de una promise y debe ejecutarse justo después de renderizar, una opción es usar un [IIFE,] (https://developer.mozilla.org/en-US/docs/Glossary/IIFE) como en el siguiente ejemplo.
 
@@ -185,7 +185,7 @@ function createSelectOptions(elem, options, labelsAndKeys = { label: "name", val
 
 ## Obtener método de pago con tarjeta
 
-Ahora `getPaymentMethod` es `getPaymentMethods` (en plural). Todavía en V1, este método recibió dos parámetros, un objeto que contenía el `bin` (los primeros 6 dígitos de la tarjeta aún en V1) y una función de callback que se ejecutaría en la devolución del método.
+Ahora `getPaymentMethod` es `getPaymentMethods` (en plural). En V1, este método recibía dos parámetros, un objeto que contenía el `bin` (los primeros 6 dígitos de la tarjeta aún en V1) y una función de callback que se ejecutaría en la devolución del método.
 
 * **V1**
 
@@ -206,9 +206,9 @@ window.Mercadopago.getPaymentMethod({
 >
 > Importante
 > 
-> El código `bin` en V2 no tiene solo 6 dígitos, sino 8 dígitos y este cambio no interfiere en absoluto con la implementación. Además, ya no se puede acceder al código a través del componente `cardNumber` porque ahora ya no hay una entrada en el campo, sino un `div` y, dentro del `div`, hay un iframe. <br/><br/>
+> El código `bin` en V2 no tiene solo 6 dígitos, sino 8, y este cambio no interfiere en absoluto con la implementación. Además, ya no se puede acceder al código a través del componente `cardNumber` porque ahora no hay una entrada en el campo, sino un `div` y, dentro del `div`, hay un iframe. <br/><br/>
 > <br/> <br/>
-> Ahora, para recuperar el bin debemos escuchar el evento `binChange` que existe en el div donde está contenido el **card number**.
+> Ahora, para recuperar el bin debemos atender el evento `binChange` que existe en el div donde está contenido el **card number**.
 
 * **V2**
 
@@ -229,7 +229,7 @@ async function getPaymentMethods(data) {
 
 ## Obtener banco emisor
 
-Anteriormente, `getIssuers` recibía dos parámetros, `paymentMethodId` y una función de devolución de llamada que se ejecutaba cuando el método regresaba.
+Anteriormente, `getIssuers` recibía dos parámetros, `paymentMethodId` y una función de callback que se ejecutaba cuando el método regresaba.
 
 * **V1**
 
@@ -281,7 +281,7 @@ function callBackFn(status, response) {
 }
 ````
 
-En la V2 este método es una promesa y recibe un objeto como parámetro que contiene el `amount`, el `bin` y el `paymentTypeId` donde `paymentTypeId` siempre debe recibir el valor `credit_card`.
+En la V2 este método es una promise y recibe como parámetro un objeto que contiene el `amount`, el `bin` y el `paymentTypeId`, donde `paymentTypeId` siempre debe recibir el valor `credit_card`.
 
 * **V2**
 
@@ -298,11 +298,11 @@ async function getInstallments(paymentMethodId, bin) {
 
 ## Crear token de tarjeta
 
-Finalmente, en el envío del formulario, el token se genera y se envía al backend y continúa funcionando parcialmente de la misma manera, solo algunos cambios en las invocaciones y los nombres de los métodos.
+Finalmente, en el envío del formulario, el token se genera y se envía al backend. Esto continúa funcionando parcialmente de la misma manera, solo hay algunos cambios en las invocaciones y los nombres de los métodos.
 
-El método de creación de tokens también tuvo un cambio de nombre, en V1 era `createToken` y en V2 es `createCardToken`.
+El método de creación de tokens, particularmente, tuvo un cambio de nombre: en V1 era `createToken` y en V2 es `createCardToken`.
 
-En V1, el método `createToken` recibió dos parámetros, el formulario y la función de callback que se ejecuta al final de la creación del token.
+En V1, el método `createToken` recibía dos parámetros, el formulario y la función de callback que se ejecuta al final de la creación del token.
 
 * **V1**
 
@@ -310,7 +310,7 @@ En V1, el método `createToken` recibió dos parámetros, el formulario y la fun
 window.Mercadopago.createToken($form, setCardTokenAndPay);
 ````
 
-En V2, el método recibe un objeto que contiene `cardholderName`, `identificationType` y `identificationNumber`, y este método devuelve una promise con el token.
+En V2, el método recibe un objeto que contiene `cardholderName`, `identificationType` y `identificationNumber`, y devuelve una promise con el token.
 
 * **V2**
 
@@ -327,7 +327,7 @@ async function createCardToken(){
 
 ## Enviar pago
 
-Ahora, con el token en la mano, simplemente agréguelo al formulario y envíelo, como se explica en la documentación de [Integración vía Métodos Core](/developers/es/docs/checkout-api/integration-configuration/card/integrate-via-core-methods#bookmark_enviar_pago).  
+Ahora, con el token en la mano, simplemente agrégalo al formulario y envíalo, como se explica en la documentación de [Integración vía Métodos Core](/developers/es/docs/checkout-api/integration-configuration/card/integrate-via-core-methods#bookmark_enviar_pago).  
 
 Ejemplo de implementación:
 
@@ -364,24 +364,24 @@ function setCardTokenAndPay(token) {
 >
 > Importante
 >
-> Para obtener más información, va a [documentación para SDK JS V2 con Secure Fields.](/developers/es/docs/checkout-api/integration-configuration/card/integrate-via-core-methods) Además, proporcionamos un [ejemplo completo](https://github.com/lucmkz/mp-migracao-sdk-v1-para-sdk-v2-sf/blob/main/migracao.html) de migración en código fuente con comentarios que puedes usar como plantilla.
+> Para obtener más información, ve a [documentación para SDK JS V2 con Secure Fields.](/developers/es/docs/checkout-api/integration-configuration/card/integrate-via-core-methods) Además, proporcionamos un [ejemplo completo](https://github.com/lucmkz/mp-migracao-sdk-v1-para-sdk-v2-sf/blob/main/migracao.html) de migración en código fuente con comentarios que puedes usar como plantilla.
 
 ## Otras alternativas
 
-Existen otras dos alternativas de implementación que no incluyen **métodos centrales**, que fueron los métodos que se analizaron en este artículo, y ambas alternativas son tan seguras como usar métodos centrales. Vea a continuación estas alternativas.
+Existen otras dos alternativas de implementación que no incluyen **métodos centrales**, que fueron los métodos que se analizaron en este artículo, y ambas alternativas son tan seguras como usar métodos centrales. Ve a continuación estas alternativas.
 
 ### Cardform
 
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-La integración de los pagos con tarjeta se realiza a través de **cardform**. En este modo de integración, **MercadoPago.js** es responsable de los flujos necesarios para obtener la información requerida para crear un pago. Cuando se inicializa, se realiza una búsqueda para recopilar los tipos de documentos disponibles para el país en cuestión. Consulte la documentación de [Checkout API](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform) para obtener más información.
+La integración de los pagos con tarjeta se realiza a través de **cardform**. En este modo de integración, **MercadoPago.js** es responsable de los flujos necesarios para obtener la información requerida para crear un pago. Cuando se inicializa, se realiza una búsqueda para recopilar los tipos de documentos disponibles para el país en cuestión. Consulta la documentación de [Checkout API](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform) para obtener más información.
 
 ------------
 
 ----[mlb]----
-La integración de los pagos con tarjeta se realiza a través de **cardform**. En este modo de integración, **MercadoPago.js** es responsable de los flujos necesarios para obtener la información requerida para crear un pago. Cuando se inicializa, se realiza una búsqueda para recopilar los tipos de documentos disponibles para el país en cuestión. Consulte la documentación de [Checkout Transparente](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform) para obtener más información.
+La integración de los pagos con tarjeta se realiza a través de **cardform**. En este modo de integración, **MercadoPago.js** es responsable de los flujos necesarios para obtener la información requerida para crear un pago. Cuando se inicializa, se realiza una búsqueda para recopilar los tipos de documentos disponibles para el país en cuestión. Consulta la documentación de [Checkout Transparente](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform) para obtener más información.
 
 ------------
 
 ### Checkout Bricks
 
-Checkout Bricks es un conjunto de módulos de UI que vienen con su front-end listo y optimizados para una mejor usabilidad y conversión. Cada Brick se puede utilizar de forma independiente o en conjunto, formando la experiencia de un checkout completo. Consulte la documentación de [Checkout Bricks](/developers/es/docs/checkout-bricks/landing) para obtener más información.
+Checkout Bricks es un conjunto de módulos de UI que vienen con su front-end listo y optimizados para una mejor usabilidad y conversión. Cada Brick se puede utilizar de forma independiente o en conjunto, formando la experiencia de un checkout completo. Consulta la documentación de [Checkout Bricks](/developers/es/docs/checkout-bricks/landing) para obtener más información.
