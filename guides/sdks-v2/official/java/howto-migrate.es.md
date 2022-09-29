@@ -300,7 +300,7 @@ async function getInstallments(paymentMethodId, bin) {
 
 Finalmente, en el envío del formulario, el token se genera y se envía al backend. Esto continúa funcionando parcialmente de la misma manera, solo hay algunos cambios en las invocaciones y los nombres de los métodos.
 
-El método de creación de tokens también tuvo un cambio de nombre, en V1 era `createToken` y en V2 es `createCardToken`.
+El método de creación de tokens, particularmente, tuvo un cambio de nombre: en V1 era `createToken` y en V2 es `createCardToken`.
 
 En V1, el método `createToken` recibió dos parámetros, el formulario y la función de callback que se ejecuta al final de la creación del token.
 
