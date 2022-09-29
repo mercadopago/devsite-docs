@@ -310,7 +310,7 @@ En V1, el método `createToken` recibía dos parámetros, el formulario y la fun
 window.Mercadopago.createToken($form, setCardTokenAndPay);
 ````
 
-En V2, el método recibe un objeto que contiene `cardholderName`, `identificationType` y `identificationNumber`, y este método devuelve una promise con el token.
+En V2, el método recibe un objeto que contiene `cardholderName`, `identificationType` y `identificationNumber`, y devuelve una promise con el token.
 
 * **V2**
 
