@@ -368,7 +368,7 @@ function setCardTokenAndPay(token) {
 
 ## Otras alternativas
 
-Existen otras dos alternativas de implementación que no incluyen **métodos centrales**, que fueron los métodos que se analizaron en este artículo, y ambas alternativas son tan seguras como usar métodos centrales. Vea a continuación estas alternativas.
+Existen otras dos alternativas de implementación que no incluyen **métodos centrales**, que fueron los métodos que se analizaron en este artículo, y ambas alternativas son tan seguras como usar métodos centrales. Ve a continuación estas alternativas.
 
 ### Cardform
 
