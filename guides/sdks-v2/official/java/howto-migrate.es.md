@@ -185,7 +185,7 @@ function createSelectOptions(elem, options, labelsAndKeys = { label: "name", val
 
 ## Obtener método de pago con tarjeta
 
-Ahora `getPaymentMethod` es `getPaymentMethods` (en plural). Todavía en V1, este método recibió dos parámetros, un objeto que contenía el `bin` (los primeros 6 dígitos de la tarjeta aún en V1) y una función de callback que se ejecutaría en la devolución del método.
+Ahora `getPaymentMethod` es `getPaymentMethods` (en plural). En V1, este método recibía dos parámetros, un objeto que contenía el `bin` (los primeros 6 dígitos de la tarjeta aún en V1) y una función de callback que se ejecutaría en la devolución del método.
 
 * **V1**
 
