@@ -10,7 +10,7 @@ Es posible usar Point de dos maneras:
 | Tipo de integración | Descripción | Dispositivos |
 | --- | --- | --- |
 | Deep linking | El Deep Linking la forma cómo Android genera una solicitud o evento en una aplicación nativa cuando se invoca un URI web, en este caso para abrir el flujo de cobro de point en Mercado Pago. Se puede usar desde una web page, app no nativa, o desde se puede establecer un link a una URL como en un sms o mensaje. Adicionalmente, también se puede implementar desde una app nativa este tipo de integración. Consulte la sección [Integrar via Deep Linking](/developers/es/docs/mp-point/integration-configuration/integrate-mobile-devices/integrate-via-deep-linking) para obtener más información. | Point Mini |
-| API para PDVs | La API de integraciones de Point le permite conectar sus puntos de venta (PDV) al ecosistema de Point para recibir pagos en terminales pre configuradas, lo que garantiza una experiencia de pago unificada. Consulte [Integrar con PDV](/developers/es/docs/mp-point/integration-configuration/integrate-with-pdv/introduction) para obtener más información. | Point Plus |
+| API para PDVs | La API de integraciones de Point le permite conectar sus puntos de venta (PDV) al ecosistema de Point para recibir pagos en terminales pre configuradas, lo que garantiza una experiencia de pago unificada. Consulte [Integrar con PDV](/developers/es/docs/mp-point/integration-configuration/integrate-with-pdv/introduction) para obtener más información. | Point Plus, Point Smart |
 
 ------------
 
