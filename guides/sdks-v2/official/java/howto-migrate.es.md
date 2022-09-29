@@ -384,4 +384,4 @@ La integración de los pagos con tarjeta se realiza a través de **cardform**. E
 
 ### Checkout Bricks
 
-Checkout Bricks es un conjunto de módulos de UI que vienen con su front-end listo y optimizados para una mejor usabilidad y conversión. Cada Brick se puede utilizar de forma independiente o en conjunto, formando la experiencia de un checkout completo. Consulte la documentación de [Checkout Bricks](/developers/es/docs/checkout-bricks/landing) para obtener más información.
+Checkout Bricks es un conjunto de módulos de UI que vienen con su front-end listo y optimizados para una mejor usabilidad y conversión. Cada Brick se puede utilizar de forma independiente o en conjunto, formando la experiencia de un checkout completo. Consulta la documentación de [Checkout Bricks](/developers/es/docs/checkout-bricks/landing) para obtener más información.
