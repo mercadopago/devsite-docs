@@ -208,7 +208,7 @@ window.Mercadopago.getPaymentMethod({
 >
 > The `bin` code in V2 is not just 6 digits, but 8 digits and this change does not interfere with the implementation at all. Also, the code is no longer accessible through the `cardNumber` component because now there is no longer an input in the field but a `div` and, inside the `div`, there is an iframe. <br/><br/>
 > <br/> <br/>
-> Now, to retrieve the bin we must now listen to the `binChange` event that exists in the div where the **card number** is contained.
+> Now, to retrieve the bin we must attend the `binChange` event that exists in the div where the **card number** is contained.
 
 * **V2**
 
