@@ -364,7 +364,7 @@ function setCardTokenAndPay(token) {
 >
 > Importante
 >
-> Para obtener más información, va a [documentación para SDK JS V2 con Secure Fields.](/developers/es/docs/checkout-api/integration-configuration/card/integrate-via-core-methods) Además, proporcionamos un [ejemplo completo](https://github.com/lucmkz/mp-migracao-sdk-v1-para-sdk-v2-sf/blob/main/migracao.html) de migración en código fuente con comentarios que puedes usar como plantilla.
+> Para obtener más información, ve a [documentación para SDK JS V2 con Secure Fields.](/developers/es/docs/checkout-api/integration-configuration/card/integrate-via-core-methods) Además, proporcionamos un [ejemplo completo](https://github.com/lucmkz/mp-migracao-sdk-v1-para-sdk-v2-sf/blob/main/migracao.html) de migración en código fuente con comentarios que puedes usar como plantilla.
 
 ## Otras alternativas
 
