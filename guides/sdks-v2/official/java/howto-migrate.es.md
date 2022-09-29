@@ -126,7 +126,7 @@ Con eso tenemos nuestros campos PCI seguros dentro del formulario.
 
 ## Obtener tipos de documentos
 
-Ahora `getIdentificationTypes` devuelve una promesa y la forma de completar la tag select ha cambiado.
+Ahora `getIdentificationTypes` devuelve una promise y la forma de completar la tag select ha cambiado.
 
 En el caso de **SDK V1**, la etiqueta de selección se completó automáticamente en la selección con `id='docType'`, después de la llamada `getIdentificationTypes()`.
 
