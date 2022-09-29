@@ -122,7 +122,7 @@ const securityCodeElement = mp.fields.create('securityCode', {
 }).mount('securityCode');
 ````
 
-Con eso, ahora tenemos nuestros campos PCI seguros dentro del formulario.
+Con eso tenemos nuestros campos PCI seguros dentro del formulario.
 
 ## Obtener tipos de documentos
 
