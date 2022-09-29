@@ -327,7 +327,7 @@ async function createCardToken(){
 
 ## Enviar pago
 
-Ahora, con el token en la mano, simplemente agréguelo al formulario y envíelo, como se explica en la documentación de [Integración vía Métodos Core](/developers/es/docs/checkout-api/integration-configuration/card/integrate-via-core-methods#bookmark_enviar_pago).  
+Ahora, con el token en la mano, simplemente agrégalo al formulario y envíalo, como se explica en la documentación de [Integración vía Métodos Core](/developers/es/docs/checkout-api/integration-configuration/card/integrate-via-core-methods#bookmark_enviar_pago).  
 
 Ejemplo de implementación:
 
