@@ -260,7 +260,7 @@ async function getIssuers(paymentMethodId, bin) {
 
 ## Obtener número de cuotas
 
-Anteriormente, `getInstallments` recibía dos parámetros, un objeto que contenía `payment_method_id`, `amount` y `issuer_id`, y el otro parámetro era una función de callback que se ejecutaba en la devolución del método.
+Anteriormente, `getInstallments` recibía dos parámetros: un objeto que contenía `payment_method_id`, `amount` y `issuer_id`, y una función de callback que se ejecutaba en la devolución del método.
 
 * **V1**
 
