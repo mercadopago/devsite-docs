@@ -142,7 +142,7 @@ En el caso de **SDK V1**, la tag select era completada automáticamente en la se
  window.Mercadopago.getIdentificationTypes();
 ````
 
-En **V2**, la llamada al método devuelve una promesa con una lista de `identificationTypes` y debe completar la tag select con la ID que desee, usando el ejemplo anterior con `id='docType'`, la implementación se vería así:
+En **V2**, la llamada al método devuelve una promise con una lista de `identificationTypes` y deberás completar la tag select con la ID que desees. Usando el ejemplo anterior con `id='docType'`, la implementación se vería así:
 
 > Sabiendo que el método `getIdentificationTypes` es una devolución de una promise y debe ejecutarse justo después de renderizar, una opción es usar un [IIFE,] (https://developer.mozilla.org/en-US/docs/Glossary/IIFE) como en el siguiente ejemplo.
 
