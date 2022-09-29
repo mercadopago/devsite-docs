@@ -281,7 +281,7 @@ function callBackFn(status, response) {
 }
 ````
 
-En la V2 este método es una promesa y recibe un objeto como parámetro que contiene el `amount`, el `bin` y el `paymentTypeId` donde `paymentTypeId` siempre debe recibir el valor `credit_card`.
+En la V2 este método es una promise y recibe como parámetro un objeto que contiene el `amount`, el `bin` y el `paymentTypeId`, donde `paymentTypeId` siempre debe recibir el valor `credit_card`.
 
 * **V2**
 
