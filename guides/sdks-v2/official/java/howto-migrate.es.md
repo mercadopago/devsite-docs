@@ -229,7 +229,7 @@ async function getPaymentMethods(data) {
 
 ## Obtener banco emisor
 
-Anteriormente, `getIssuers` recibía dos parámetros, `paymentMethodId` y una función de devolución de llamada que se ejecutaba cuando el método regresaba.
+Anteriormente, `getIssuers` recibía dos parámetros, `paymentMethodId` y una función de callback que se ejecutaba cuando el método regresaba.
 
 * **V1**
 
