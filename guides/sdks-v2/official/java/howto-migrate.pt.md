@@ -204,8 +204,8 @@ window.Mercadopago.getPaymentMethod({
 >
 > Importante
 > 
-> O código `bin` na V2 não é de apenas 6 dígitos, mas sim de 8 dígitos e essa mudança não interfere em nada a implementação. Além disso, o código não é mais acessível através do componente de `cardNumber` porque agora no campo não existe mais um input, mas sim uma `div` e, dentro da `div`,existe um iframe. <br/>
-> <br/>
+> O código `bin` na V2 não é de apenas 6 dígitos, mas sim de 8 dígitos e essa mudança não interfere em nada a implementação. Além disso, o código não é mais acessível através do componente de `cardNumber` porque agora no campo não existe mais um input, mas sim uma `div` e, dentro da `div`,existe um iframe. <br/><br/>
+> <br/> <br/>
 > Agora, para recuperar o bin devemos atender o evento `binChange` que existe na div em que está contido o **card number**.
 
 * **V2**
