@@ -26,3 +26,5 @@ const settings = {
  }
 };
 ```
+
+![status-screen-brick-external-reference](checkout-bricks/status-screen-brick-external-reference-pt.jpg)
