@@ -26,3 +26,5 @@ const settings = {
  }
 };
 ```
+
+![status-screen-brick-hide-processing-details](checkout-bricks/status-screen-brick-hide-processing-details-en.jpg)
