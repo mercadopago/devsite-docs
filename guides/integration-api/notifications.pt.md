@@ -60,7 +60,6 @@ Depois de implementar as notificações e fazer os ajustes necessários, elas te
 ------------
 
 ----[mlm]----
-
 ```json
 {
  "amount": 100,
@@ -117,7 +116,6 @@ Depois de implementar as notificações e fazer os ajustes necessários, elas te
 ------------
 
 ----[mlm]----
-
 ```json
 {
  "amount": 100,
@@ -169,7 +167,6 @@ Depois de implementar as notificações e fazer os ajustes necessários, elas te
 ------------
 
 ----[mlm]----
-
 ```json
 {
  "amount": 100,
