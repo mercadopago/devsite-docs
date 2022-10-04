@@ -13,7 +13,7 @@ O relatório de ----[mla]---- Liquidações ------------ ----[mlm, mlb, mlc, mco
 >
 > Importante
 >
-> Os relatórios gerados a partir de 5 de outubro vão apresentar suas movimentações em ordem cronológica, assim, você pode identificá-las mais facilmente e controlar ainda melhor as finanças dos seus negócios. [Conheça a nova anatomia do relatório.](https://bit.ly/3JzFPEG)
+> Nos seus relatórios de outubro e dos próximos meses, suas movimentações estarão ordenadas por data de criação para que você possa identificá-las mais facilmente. [Saiba como ler seu relatório](https://bit.ly/3JzFPEG).
 ------------
 ----[mlm]----
 > WARNING
