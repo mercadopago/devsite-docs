@@ -13,7 +13,7 @@ O relatório de ----[mla]---- Liquidações ------------ ----[mlm, mlb, mlc, mco
 >
 > Importante
 >
-> Nos seus relatórios de outubro e dos próximos meses, suas movimentações estarão ordenadas por data de criação para que você possa identificá-las mais facilmente. [Saiba como ler seu relatório](https://bit.ly/3JzFPEG).
+> Nos seus relatórios de outubro e dos próximos meses, suas movimentações estarão ordenadas por data de criação para que você possa identificá-las mais facilmente.
 ------------
 ----[mlm]----
 > WARNING
