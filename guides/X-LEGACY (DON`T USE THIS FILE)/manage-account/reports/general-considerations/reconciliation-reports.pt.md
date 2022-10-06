@@ -14,7 +14,6 @@ Confira a tabela abaixo para mais detalhes sobre os tipos de relatório disponí
     + [Dinheiro em conta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/account-money/introduction)
     + [Dinheiro disponível](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/available-money/introduction)
 
-
 | Tipo de relatório | Descrição |
 |---|---|
 | Relatório Liberações | Informa como o saldo disponível em sua conta está composto, detalhando todos os valores envolvidos em um período de tempo. Para mais informações, [clique aqui](https://www.mercadopago.com.br/developers/pt/guides/manage-account/reports/released-money/introduction). |
