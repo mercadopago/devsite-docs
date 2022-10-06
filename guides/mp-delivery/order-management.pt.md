@@ -29,7 +29,6 @@ Essa modalidade de logistica é usada geralmente em restaurantes que possuem ent
   * **shipped/delivery_failed:** Status que indica que ocorreu algum problema durante a entrega do pedido. Esse é gerado através do aplicativo Mercado Envios Flex quando o entregado não consegue realizar a entrega.
   * **delivered:** A entrega foi concluida com sucesso. Esse Status é gerado através do aplicativo Mercado Envios Flex pelo entregador logo após a conclusão da entrega.
 
-
 ## Diagrama do Fluxo de Estados - Modalidade de Logistica Dropoff
 
 ![flowchart](/images/mpdelivery/flowchart-1_delivery_pt.png)
