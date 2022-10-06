@@ -14,13 +14,6 @@ Confira a tabela abaixo para mais detalhes sobre os tipos de relatório disponí
     + [Dinheiro em conta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/account-money/introduction)
     + [Dinheiro disponível](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/available-money/introduction)
 
-> NOTE
->
-> A partir do dia 1º de março de 2022, o relatório Dinheiro disponível será desabilitado
->
-> Você pode usar o [relatório de ----[mla]----Liquidações------------ ----[mlm, mlb, mlc, mco, mlu, mpe]----Liberações------------](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/introduction) para fazer a reconciliação das transações que afetem o saldo disponível na sua conta, incluindo seus saques bancários.
-
-
 | Tipo de relatório | Descrição |
 |---|---|
 | Relatório Liberações | Informa como o saldo disponível em sua conta está composto, detalhando todos os valores envolvidos em um período de tempo. Para mais informações, [clique aqui](https://www.mercadopago.com.br/developers/pt/guides/manage-account/reports/released-money/introduction). |
