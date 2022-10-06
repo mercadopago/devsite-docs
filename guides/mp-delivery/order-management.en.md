@@ -15,7 +15,6 @@ With `shipment_id` in hand you can:
 
 On Mercado Pago Delivery there are two types of logistics. In this way, the flow of states may vary according to the type of logistics that will be linked to the order. Below there is a description of those two flows.
 
-
 ## State flow diagram - Flex Logistics Modality
 
 ![flowchart](/images/mpdelivery/flowchart_delivery_en.png)
