@@ -19,8 +19,6 @@ En Mercado Pago Delivery existen dos tipos de logística. De esta forma, el fluj
 
 ### Modalidad logística Flex
 
-![flowchart](/images/mpdelivery/flowchart_delivery_es.png)
-
 Este tipo de logística se utiliza generalmente en restaurantes que cuentan con sus propios repartidores. Los repartidores deben tener acceso a la aplicación móvil de Mercado Envíos Flex para escanear el código QR para registrarse y realizar la entrega. Al escanear este código QR, se notificará a los compradores que el pedido está en camino. Es posible utilizar el código QR presente en el pdf disponible en la API o generar el código QR en su integración. La información, que debe estar contenida en el código QR, se puede obtener a través de la API de Mercado Pago Delivery utilizando el endpoint de consulta, donde estos datos serán devueltos en el atributo “extension.qr”. Es importante que el código QR esté disponible en el ticket del pedido para que el flujo de entrega se pueda realizar correctamente. A continuación se describe el estado de todas las notificaciones que llegarán al webhook de pedidos vinculados a este tipo de logística:
 
   * **ready_to_ship/ready_to_print:** Estado inicial de un pedido. En este Estado se debe realizar alguna acción (aceptar o cancelar) en un máximo de 5 minutos, de lo contrario la orden será cancelada por timeout.
@@ -31,9 +29,9 @@ Este tipo de logística se utiliza generalmente en restaurantes que cuentan con 
   * **shipped/delivery_failed:** Estado que indica que hubo un problema durante la entrega del pedido. Este se genera a través de la aplicación de Mercado Envíos Flex cuando el repartidor no puede entregar.
   * **delivered:** La entrega se completó con éxito. Este Estado es generado a través de la aplicación Mercado Envíos Flex por el repartidor poco tiempo después de que se completa la entrega.
 
-### Modalidad logística Dropoff
+![flowchart](/images/mpdelivery/flowchart_delivery_es.png)
 
-![flowchart](/images/mpdelivery/flowchart-1_delivery_es.png)
+### Modalidad logística Dropoff
 
 Este tipo de logística es utilizada por los restaurantes que han acordado que las empresas de logística, que están integradas con Mercado Pago, realicen la entrega de los pedidos. En este flujo, poco después de aceptar un pedido, se enviará una notificación de que un repartidor estará en camino para recibir el pedido. Es importante señalar que, a diferencia del flujo mencionado anteriormente, es que en esta modalidad de Dropoff los pedidos no tendrán código QR, por lo que al consultar el pedido mediante la API de Mercado Pago Delivery, el atributo "extension.qr" estará vacío. A continuación se describe el estado de todas las notificaciones que llegarán al webhook de pedidos vinculados a esta modalidad logística:
   
@@ -47,3 +45,5 @@ Este tipo de logística es utilizada por los restaurantes que han acordado que l
   * **shipped/at_the_door:** Indica que el repartidor ha llegado al destino del pedido.
   * **delivered:** La entrega fue exitosa.
   * **not_delivered:** Hubo un problema y el repartidor no pudo completar la entrega.
+
+![flowchart](/images/mpdelivery/flowchart-1_delivery_es.png)
