@@ -13,9 +13,11 @@ Con `shipping_id` en la mano, puede:
 * Imprimir el recibo de la orden.
 * Cancelar la orden.
 
+## Diagrama del flujo de estado
+
 En Mercado Pago Delivery existen dos tipos de logística. De esta forma, el flujo de estados puede variar según el tipo de logística que estará ligada al pedido. A continuación hay una descripción de esos dos flujos.
 
-## Diagrama de flujo de estado - Modalidad Logística Flex
+### Modalidad logística Flex
 
 ![flowchart](/images/mpdelivery/flowchart_delivery_es.png)
 
@@ -29,7 +31,7 @@ Este tipo de logística se utiliza generalmente en restaurantes que cuentan con 
   * **shipped/delivery_failed:** Estado que indica que hubo un problema durante la entrega del pedido. Este se genera a través de la aplicación de Mercado Envíos Flex cuando el repartidor no puede entregar.
   * **delivered:** La entrega se completó con éxito. Este Estado es generado a través de la aplicación Mercado Envíos Flex por el repartidor poco tiempo después de que se completa la entrega.
 
-## State flow diagram - Modalidad Logística Dropoff
+### Modalidad logística Dropoff
 
 ![flowchart](/images/mpdelivery/flowchart-1_delivery_es.png)
 
@@ -45,19 +47,3 @@ Este tipo de logística es utilizada por los restaurantes que han acordado que l
   * **shipped/at_the_door:** Indica que el repartidor ha llegado al destino del pedido.
   * **delivered:** La entrega fue exitosa.
   * **not_delivered:** Hubo un problema y el repartidor no pudo completar la entrega.
-
-> PREV_STEP_CARD_ES
->
-> Configuración de integración
->
-> Aprende a configurar la integración con Mercado Pago Delivery.
->
-> [Configuración de integración](/developers/es/docs/mp-delivery/integration-configuration)
-
-> NEXT_STEP_CARD_ES
->
-> Obtener datos de la orden
->
-> Conoce cómo obtener datos de órdenes con Mercado Pago Delivery.
->
-> [Obtener datos de la orden](/developers/es/docs/mp-delivery/order-management/get-order-data)

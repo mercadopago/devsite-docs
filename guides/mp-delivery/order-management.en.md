@@ -13,9 +13,11 @@ With `shipment_id` in hand you can:
 * Print the order receipt.
 * Cancel the order.
 
+## State flow diagram
+
 On Mercado Pago Delivery there are two types of logistics. In this way, the flow of states may vary according to the type of logistics that will be linked to the order. Below there is a description of those two flows.
 
-## State flow diagram - Flex Logistics Modality
+## Flex logistics modality
 
 ![flowchart](/images/mpdelivery/flowchart_delivery_en.png)
 
@@ -29,7 +31,7 @@ This type of logistics is generally used in restaurants that have their own deli
   * **shipped/delivery_failed:** Status that indicates that there was a problem during the delivery of the order. This is generated through the Mercado Envios Flex application when the delivery person is unable to deliver.
   * **delivered:** Delivery was completed successfully. This Status is generated through the Mercado Envios Flex application by the delivery person shortly after the delivery is completed.
 
-## State flow diagram - Dropoff Logistics Modality
+## Dropoff logistics modality
 
 ![flowchart](/images/mpdelivery/flowchart-1_delivery_en.png)
 
@@ -45,20 +47,3 @@ This type of logistics is used by restaurants that have agreed that logistics co
   * **shipped/at_the_door:** Indicates that the delivery person has arrived at the order's destination.
   * **delivered:** Delivery was successful.
   * **not_delivered:** There was a problem and the delivery person was unable to complete the delivery.
-
-
-> PREV_STEP_CARD_EN
->
-> Integration setup
->
-> Learn how to configure the integration with Mercado Pago Delivery.
->
-> [Integration setup](/developers/en/docs/mp-delivery/integration-configuration)
-
-> NEXT_STEP_CARD_EN
->
-> Get order data
->
-> Learn how to get order data with Mercado Pago Delivery.
->
-> [Get order data](/developers/en/docs/mp-delivery/order-management/get-order-data)

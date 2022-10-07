@@ -13,19 +13,3 @@ Este endpoint devuelve todos los datos del endpoint anterior, además de informa
 > También podrás consultar la información de una sucursal a través de su ID externo, si lo tiene. Para eso, envía como parámetros de solicitud el `user_id` relacionado con la sucursal, el `external_id` y el `access_token`. Accee a más información en la API [Obtener sucursal por ID externo](/developers/es/reference/mp_delivery/_proximity-integration_users_SellerID_stores_external_id_ExternalID/get).
 > </br>
 > Para saber cómo crear un ID externo para tu sucursal y utilizarlo como identificador para el sistema de software de gestión de pedidos, accede a [Cambiar ID externo de la sucursal](/developers/es/docs/mp-delivery/store-management/change-store-external-id)
-
-> PREV_STEP_CARD_ES
->
-> Administración de sucursales
->
-> Aprende a consultar y gestionar la información de tu sucursal.
->
-> [Administración de sucursales](/developers/es/docs/mp-delivery/store-management)
-
-> NEXT_STEP_CARD_ES
->
-> Cambiar el estado de la sucursal
->
-> Aprenda a cambiar el estado de funcionamiento de la sucursal.
->
-> [Cambiar estado de sucursal](/developers/es/docs/mp-delivery/store-management/change-store-status)
