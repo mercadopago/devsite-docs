@@ -9,11 +9,3 @@ Para ingresar el valor de una ID externa en una sucursal, realiza un PUT enviand
 > Importante
 >
 > También podrás consultar la información de una sucursal a través de su ID externo. Para eso, envía como parámetros de solicitud el `user_id` relacionado con la sucursal, el `external_id` y el `access_token`. Accede a más información en la API [Obtener sucursal por ID externo](/developers/pt/reference/mp_delivery/_proximity-integration_users_SellerID_stores_external_id_ExternalID/get).
-
-> PREV_STEP_CARD_ES
->
-> Cambiar el estado de la sucursal
->
-> Aprende a cambiar el estado de funcionamiento de la sucursal.
->
-> [Cambiar estado de una sucursal](/developers/es/docs/mp-delivery/store-management/change-store-status)

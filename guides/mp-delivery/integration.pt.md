@@ -11,19 +11,3 @@ Para configurar a integração com o Mercado Pago Delivery, siga os passos abaix
 > Como boa prática, é sempre necessário verificar o status das requisições que foram feitas em nossas APIs para casos em que ocorra algum tipo de intermitência. Essa medida é necessária principalmente nos casos em que são feitas solicitações que alteram o status de um pedido ou loja. Como no exemplo de uma ação para aceitar um pedido, é recomendável fazer novas tentativas subsequentes e, caso o pedido ainda não tenha retornado um status positivo (200), este pedido deve ser cancelado. <br/></br>
 > <br/></br>
 > O importante é sempre manter sincronizados os status, seja de um pedido ou de uma loja, entre o Mercado Pago e o PDV, por isso é sempre importante implementar soluções em caso de erros.
-
-> PREV_STEP_CARD_PT
->
-> Pré-requisitos
->
-> Conheça os pré-requisitos para realizar a integração.
->
-> [Pré-requisitos](/developers/pt/docs/mp-delivery/requirements)
-
-> NEXT_STEP_CARD_PT
->
-> Gerenciamento de pedidos
->
-> Saiba gerenciar os pedidos com o Mercado Pago Delivery.
->
-> [Gerenciamento de pedidos](/developers/pt/docs/mp-delivery/order-management)

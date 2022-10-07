@@ -26,19 +26,3 @@ To query data from an order, perform a GET sending the `shipment_id` and `access
   * **Ready_to_ship > printed**: order accepted and printed.
   * **Out_for_delivery**: order went out for delivery. 
   * **Delivery_failed**: delivery not completed.
-
-> PREV_STEP_CARD_EN
->
-> Order management
->
-> Learn how to manage orders with Mercado Pago Delivery.
->
-> [Order management](/developers/en/docs/mp-delivery/order-management)
-
-> NEXT_STEP_CARD_EN
->
-> Accept order
->
-> Learn how to accept orders with Mercado Pago Delivery.
->
->[Accept order](/developers/en/docs/mp-delivery/order-management/accept-order)
