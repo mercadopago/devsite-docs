@@ -226,8 +226,7 @@ Obtendrás esta respuesta:
 
 ## Procesa tu intención de pago
 
-Una vez creada la intención de pago, puedes obtenerla desde tu dispositivo Point oprimiendo la tecla verde del dispositivo y continuando
-con los pasos que se muestran en la pantalla para completar el pago.
+Una vez creada la intención de pago, puedes obtenerla desde tu dispositivo Point oprimiendo el botón para iniciar cobro (En caso de Point Plus y  Point Pro 2 el botón verde, en el caso de Point Smart el botón digital “Cobrar ahora”) y continuando con los pasos que se muestran en la pantalla para completar el pago.
 
 ## Consulta el estado de tu intención de pago
 
