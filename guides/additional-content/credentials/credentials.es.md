@@ -1,6 +1,6 @@
 # Credenciales
 
-Las credenciales son contraseñas únicas con las que identificamos una integración en tu cuenta. Sirven para capturar pagos en tiendas online y otras aplicaciones de forma segura. Puedes encontrarlas en el [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/credentials) o en tu cuenta de Mercado Pago en [Tu Negocio> Configuración> Gestión y Administración> Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).
+Las credenciales son contraseñas únicas con las que identificamos una integración en tu cuenta. Sirven para capturar pagos en tiendas online y otras aplicaciones de forma segura. Puedes encontrarlas en el [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel) o en tu cuenta de Mercado Pago en [Tu Negocio> Configuración> Gestión y Administración> Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).
 
 > WARNING 
 > 
@@ -26,22 +26,19 @@ Ambos tipos de credenciales se componen de dos pares de llaves que debes usar se
 | Client ID | ID único que identifica tu integración. |
 | Client secret | Llave privada que se utiliza en algunos complementos para generar pagos. Es muy importante que estos datos estén protegidos en tus servidores y no sean accesibles por ningún usuario o atacante. |
 
-
 > NOTE
 > 
 > Nota
 >
 >Tienes la opción de renovar tus credenciales por razones de seguridad o por el motivo que necesites. Para renovarlas, simplemente haz clic en Más opciones > Renovar.
 
-
 ## Compartir credenciales
 
 Comparte tus credenciales de forma segura con quien te ayude a integrar o configurar tus canales de pago. Para hacerlo, accede a tu cuenta de Mercado Pago y en [Tu negocio> Configuraciones> Gestión y Administración> Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials), elige la opción “Compartir mis credenciales” e ingresa el correo electrónico de la persona a la que quieres darle acceso. 
 Recuerda que el correo electrónico de la persona debe estar asociado a una cuenta de Mercado Pago. 
 
-
 > WARNING 
 > 
 > Importante
 >
->Una vez que tu integración esté completa, elimina los permisos para compartir credenciales para garantizar la privacidad y la seguridad.
+> Una vez que tu integración esté completa, elimina los permisos para compartir credenciales para garantizar la privacidad y la seguridad.
