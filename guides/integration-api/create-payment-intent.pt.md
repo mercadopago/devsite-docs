@@ -223,7 +223,7 @@ Você receberá esta resposta:
 
 ## Processe sua intenção de pagamento
 
-Uma vez que a intenção de pagamento é criada, você pode obtê-la de seu dispositivo Point pressionando a tecla para iniciar o pagamento (no caso do Point Plus e Point Pro 2 o botão verde, no caso do Point Smart o botão digital “Charge now ”) e continuando com as etapas mostradas na tela para concluir o pagamento.
+Uma vez que a intenção de pagamento é criada, você pode obtê-la de seu dispositivo Point pressionando a tecla para iniciar o pagamento (no caso de Point Plus e Point Pro 2 o **botão verde** e, no caso de Point Smart, o **botão digital “Charge now”**) e continuar com as etapas mostradas em tela para concluir o pagamento.
 
 ## Verifique o status da sua intenção de pagamento
 
