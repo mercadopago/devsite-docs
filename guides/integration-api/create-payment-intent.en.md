@@ -225,7 +225,7 @@ You will receive this response:
 
 ## Process your payment intent
 
-Once the payment intent has been created, you can obtain it from your Point device by pressing on the green key of the device and following the steps shown on the screen to complete the payment.
+Once the payment intent has been created, you can obtain it from your Point device by pressing on the key to pay (in the case of Point Plus and Point Pro 2 the **green button** and, in the case of the Point Smart, the **digital button “Charge now”**) and following the steps shown on the screen to complete the payment.
 
 
 ## Check the status of your payment intent

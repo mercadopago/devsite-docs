@@ -9,7 +9,7 @@ Follow these steps to start integrating the Integrations API to your Points of S
 ----[mla, mlb]----
 In order to start the integration, it is necessary to have a Mercado Pago or Mercado Libre account.
 You can [access](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/qr-code/pre-requisites)
-an existing account or [create a new one](https://www.mercadopago[FAKER][URL][DOMAIN]).
+an existing account or [create a new one](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
 
 ------------
 
@@ -81,7 +81,7 @@ First, log into the Mercado Pago application. Then, click on the QR icon and sca
 
 ### Configure your store and your point of sale
 
-Once you have linked your Point device to your Mercado Pago account, you must complete your store data and configure your point of sale on the [Mercado Pago site](https://www.mercadopago[FAKER][URL][DOMAIN]). To do this, you must access **Your business> Stores and points of sale**.
+Once you have linked your Point device to your Mercado Pago account, you must complete your store data and configure your point of sale on the [Mercado Pago site](https://www.mercadopago[FAKER][URL][DOMAIN]/stores). To do this, you must access **Your business> Stores and points of sale**.
 
 ### Activate the integrated mode on your Point device
 
@@ -114,3 +114,9 @@ You will receive a response like this:
 ```
 
 > In case you need to use the device in non-integrated mode, you must configure the `operating_mode` field with the value `STANDALONE`.
+
+>  NOTE
+> 
+> Important
+> 
+> It is necessary to restart the device for the change to take effect.

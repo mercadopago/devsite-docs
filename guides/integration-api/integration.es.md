@@ -9,7 +9,7 @@ Sigue estos pasos para empezar a integrar la API de Integraciones a tus Puntos d
 ----[mla, mlb]----
 Para poder comenzar la integración, es necesario contar con una cuenta de Mercado Pago o Mercado Libre.
 Puedes [Ingresar](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code/pre-requisites)
-a una cuenta ya existente o [Crear una cuenta nueva](https://www.mercadopago[FAKER][URL][DOMAIN]).
+a una cuenta ya existente o [Crear una cuenta nueva](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
 
 ------------
 
@@ -81,7 +81,7 @@ Primero, inicia sesión en la aplicación de Mercado Pago. Luego, oprime en el �
 
 ### Configura tu tienda y tu caja
 
-Una vez que hayas vinculado tu dispositivo Point a tu cuenta de Mercado Pago, debes completar los datos de tu negocio y configurar tu caja en el [sitio de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]). Para hacerlo, deberás ingresar en **Tu negocio > Locales y cajas**.
+Una vez que hayas vinculado tu dispositivo Point a tu cuenta de Mercado Pago, debes completar los datos de tu negocio y configurar tu caja en el [sitio de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/stores). Para hacerlo, deberás ingresar en **Tu negocio > Locales y cajas**.
 
 ### Activa el modo integrado en tu dispositivo Point
 
@@ -114,3 +114,9 @@ Recibirás una respuesta como esta:
 ```
 
 > En caso de que requieras utilizar el dispositivo en el modo no integrado debes configurar el campo `operating_mode` con el valor `STANDALONE`.
+
+> NOTE
+> 
+> Importante
+> 
+>Es necesario reiniciar el dispositivo para que el cambio sea efectivo. 
