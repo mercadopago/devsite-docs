@@ -312,7 +312,7 @@ Esto indica que el pago **999999999** fue creado para el usuario **44444** en mo
 
 [TXTSNIPPET][/guides/snippets/test-integration/notification-response]
 
-Luego de devolver la notificación y confirmar su recepción, obtendrás la información completa del recurso notificado accediendo al punto final de la API correspondiente:
+Luego de devolver la notificación y confirmar su recepción, obtendrás la información completa del recurso notificado accediendo al endpoint de la API correspondiente:
 
 | Tipo | URL | Documentación |
 | --- | --- | --- |

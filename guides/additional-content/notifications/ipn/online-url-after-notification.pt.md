@@ -2,7 +2,7 @@
 
 [TXTSNIPPET][/guides/snippets/test-integration/notification-response]
 
-Depois de dar um retorno à notificação, você obterá as informações completas do recurso notificado acessando o terminal correspondente da API:
+Depois de dar um retorno à notificação, você obterá as informações completas do recurso notificado acessando o endpoint correspondente da API:
 
 | Tipo | URL | Documentação |
 | --- | --- | --- |
