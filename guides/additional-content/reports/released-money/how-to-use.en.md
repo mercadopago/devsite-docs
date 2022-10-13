@@ -47,6 +47,42 @@ Note how the Release report is composed in this example to identify the sections
 
 The default version will show an extended view of the columns. The final report will have as much detail as possible.
 
+----[mpe]----
+## How do I analyze the reports generated from January 2022 onwards?
+------------
+----[mlu]----
+## How do I analyze the reports generated from March 2022 onwards?
+----[mlc, mco]----
+## How do I analyze the reports generated from August 2022 onwards?
+------------
+----[mla, mlm]----
+## How do I analyze the reports generated from October 2022 onwards?
+------------
+----[mpe, mlu, mla, mlm, mlc, mco]----
+The reports generated as of  ------------ ----[mpe]----January------------  ----[mlu]----March------------ ----[mla, mlm]----October------------  ----[mco, mlc]----August ------------  ----[mpe, mlu, mla, mlm, mlc, mco]---- 2022 have the following characteristics:
+
+1. The movements are displayed in chronological order, which allows you to identify them more easily and better control your orders.
+2. If there is a complaint or chargeback due to a problem with the service or the product provided, the respective amount is withheld until the mediation is resolved. This information is included in your report and you can find it by searching for the prefix "reserve-".  
+3. The movements related to the money withdrawals and/or transfers from your available money are displayed as "Payout", and all the mediations that may arise when a complaint is initiated or resolved are shown as "Dispute". You can review this glossary to check the description of all the other movements and terms.
+
+## What information is in the report?
+
+The report has a simplified structure to make it easier to understand it:
+
+| Report Composition | Description |
+| --- | --- |
+| Initial Available Balance |<br/> Initial balance. Indicates the amount that was available on the initial date of the period you selected to make the reconciliation.  <br/><br/>|
+| Release |<br/> The detail of the transactions that impact the total balance. <br/><br/> |
+| Total| <br/> It is the difference between the total net amount credited and the total net amount debited. <br/><br/> |
+
+## Example of a report
+
+Check in this example how the report "Releases" is composed to identify the sections and analyze your own reports:
+
+![Reporte de Dinero retirado Ejemplos Mercado Pago](/images/manage-account/reports/example-N-ledger-en.jpg)
+
+------------
+
 <hr/>
 
 ### Next steps
