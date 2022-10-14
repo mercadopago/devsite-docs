@@ -2,6 +2,13 @@
 
 Para integrarse con Wallet Connect, debe cumplir con los requisitos que se describen a continuación.
 
+> WARNING
+>
+> Importante
+>
+> Recomendado para Sellers con ticket promedio menor a 10 USD, 2 transacciones en promedio por semana y más de 100 mil usuarios. Si está interesado en el producto, contáctenos a través del correo electrónico wallet-connect@mercadolibre.com
+
+
 | Requisito  | Descripción  |
 | --- | --- |
 | Aplicación  | Las aplicaciones son las diversas integraciones contenidas en una o varias tiendas. Puedes crear una aplicación para cada solución que implementes a fin de tener todo organizado y mantener un control que facilite la gestión. Consulta [Dashboard](/developers/es/docs/wallet-connect/additional-content/dashboard/introduction) para obtener más información sobre cómo crear una aplicación. |

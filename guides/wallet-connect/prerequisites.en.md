@@ -2,6 +2,12 @@
 
 To perform the Wallet Connect integration, you must meet the requirements described below.
 
+> WARNING
+>
+> Important
+>
+> Recommended for Sellers with an average ticket of less than 10 USD, an average of 2 transactions per week and more than 100 thousand users. If you are interested in the product, please contact us via email wallet-connect@mercadolibre.com
+
 | Requisite | Description
 | --- | --- |
 | Application | Applications are the different integrations in one or more stores. You can create an application for each solution you implement to keep everything organized and on track for easier management. Check [Dashboard](/developers/en/docs/wallet-connect/additional-content/dashboard/introduction) for more information on how to create an application. |
