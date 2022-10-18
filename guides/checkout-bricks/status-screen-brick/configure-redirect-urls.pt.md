@@ -42,4 +42,4 @@ A URL `error` será mostrado ao usuário somente quando um pagamento falha. Já 
 >
 > É possível customizar os textos dos botões que contém as URL de retorno via configuração de textos do Brick. As chaves dos textos dos botões são: `ctaGeneralErrorLabel` (para erros no pagamento),  `ctaCardErrorLabel` (para erros no preenchimento de dados do cartão) e `ctaReturnLabel` (para a URL de retorno, que será mostrada em todos os estados).
 
-![configure-redirect-urls](checkout-bricks/configure-redirect-urls-pt.png)
+![configure-redirect-urls](checkout-bricks/configure-redirect-urls-pt.jpg)
