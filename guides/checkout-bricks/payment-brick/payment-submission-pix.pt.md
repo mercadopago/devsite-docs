@@ -249,4 +249,10 @@ A resposta mostrará o estado pendente do pagamento e todas as informações que
 Após criar o pagamento pelo backend utilizando a SDK do Mercado Pago, utilize o **id** recebido na resposta para instanciar o Status Screen Brick e mostrar para o comprador.
 Além de exibir o status do pagamento, o Status Screen Brick também exibirá o código Pix para copiar e colar e o QRCode para o comprador escanear e pagar. Saiba como é simples integrar [clicando aqui](/developers/pt/docs/checkout-bricks/status-screen-brick/configure-integration).
 
+> WARNING
+>
+> Importante
+>
+> Caso você tenha utilizado as credenciais de produção de um usuário de teste para gerar o pagamento com Pix, ocorrerá um erro de visualização ao clicar no botão que leva a página do QR Code. Para visualizá-la corretamente, remova o trecho `/sandbox` da URL da página aberta.
+
 ![payment-submission-pix-status](checkout-bricks/payment-submission-pix-status-pt.jpg)
