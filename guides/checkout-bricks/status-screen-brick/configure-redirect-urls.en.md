@@ -2,15 +2,15 @@
 >
 > h1
 >
-> Configurar URLs de redirecionamento
+> Configure redirect URLs
 
-Com o Brick de Status Screen, é possível redirecionar seu usuário para outra página de seu site através dos botões de redirecionamento, para que o usuário possa fazer uma nova compra, ou, em caso de erro de pagamento, para que possa tentar realizar um novo pagamento. Para configurar as URLs de retorno, é preciso enviar as URLs desejadas na configuração do Brick:
+With the Status Screen Brick, it is possible to redirect your user to another page of your site through the redirection buttons, so that user can make a new purchase or, in case of payment error, try to make a new payment. To configure the return URLs, you need to send the desired URLs in the Brick configuration.
 
 > NOTE
 >
-> Atenção
+> Attention
 >
-> Somente serão aceitas pelo Brick URLs do mesmo domínio que a página na qual o Brick de Status Screen for carregado. URLs pertencentes a outros domínios ou subdomínios serão ignoradas.
+> Only URLs from the same domain as the page on which the Status Screen Brick is loaded will be accepted by the Brick. URLs belonging to other domains or subdomains will be ignored.
 
 ```javascript
 const settings = {
@@ -34,12 +34,12 @@ const settings = {
 };
 ```
 
-A URL 'error' será mostrado ao usuário somente quando um pagamento falha. Já a URL 'return' será mostrada ao usuário em todos os estados de pagamento.
+The `error` URL will be shown to the user only when a payment fails. The `return` URL will be displayed to the user in all payment states.
 
 > NOTE
 >
-> Atenção
+> Attention
 >
-> É possível customizar os textos dos botões que contém as URL de retorno via configuração de textos do Brick. As chaves dos textos dos botões são: `ctaGeneralErrorLabel`, para erros no pagamento; `ctaCardErrorLabel`, para erros no preenchimento de dados do cartão; e `ctaReturnLabel`, para a URL de retorno, que será mostrada em todos os estados.
+> It is possible to customize the texts of the buttons that contain the return URLs via Brick's text configuration. The keys for the button texts are: `ctaGeneralErrorLabel` (for payment errors), `ctaCardErrorLabel` (for errors in filling in card data) and `ctaReturnLabel` (for the return URL, which will be shown in all states).
 
 ![configure-redirect-urls](checkout-bricks/configure-redirect-urls-en.png)
