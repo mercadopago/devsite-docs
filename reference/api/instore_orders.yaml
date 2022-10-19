@@ -20,6 +20,17 @@ paths:
         spa: Genera una orden de pago asociada a la caja que quieras con toda la información de pago de tu producto o servicio
         por: Gerar uma ordem para associar com a preferência de pagamento e obter a URL necessária para iniciar o fluxo de pagamento
       parameters:
+        - name: X-Ttl-Store-Preference
+          in: header
+          description: X-Ttl-Store-Preference
+          x-description-i18n:
+            eng: X-Ttl-Store-Preference
+            spa: X-Ttl-Store-Preference
+            por: X-Ttl-Store-Preference
+          required: true
+          schema:
+            type: string
+            example: 180
         - name: user_id
           in: path
           description: User Id
