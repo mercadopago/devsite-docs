@@ -4,7 +4,7 @@
 >
 > Configurar URL de redireccionamiento
 
-Con el Status Screen Brick, es posible redirigir a su usuario a otra página de su sitio a través de los botones de redirección, para que este usuario pueda realizar una nueva compra o, en caso de error de pago, intente realizar un nuevo pago. Para configurar las URL de retorno, debe enviar las URL deseadas en la configuración de Brick.
+Con el Status Screen Brick, es posible redirigir al usuario a otra página de tu sitio a través de los botones de redirección, para que este usuario pueda realizar una nueva compra o, en caso de error de pago, intente realizar uno nuevo. Para configurar las URL de retorno, debes enviar las URL deseadas en la configuración de Brick.
 
 > NOTE
 >
