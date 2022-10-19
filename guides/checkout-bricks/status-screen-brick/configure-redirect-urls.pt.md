@@ -14,27 +14,27 @@ Com o Brick de Status Screen, é possível redirecionar seu usuário para outra 
 
 ```javascript
 const settings = {
- initialization: {
-   paymentId: 100, // id de pagamento gerado por Mercado Pago
- },
- callbacks: {
-   onReady: () => {
-     // callback chamado quando o Brick estiver pronto
+   initialization: {
+       paymentId: 100, // id de pagamento gerado por Mercado Pago
    },
-   onError: (error) => {
-     // callback chamado para todos os casos de erro do Brick
+   callbacks: {
+       onReady: () => {
+           // callback chamado quando o Brick estiver pronto
+       },
+       onError: (error) => {
+           // callback chamado para todos os casos de erro do Brick
+       },
    },
- },
- customization: {
-   backUrls: {
-       error: 'URL',
-	return: 'URL'
+   customization: {
+       backUrls: {
+           'error': '<http://<seu dominio>/error>',
+           'return': '<http://<seu dominio>/homepage>'
+       }
    }
- }
 };
 ```
 
-A URL `error` será mostrado ao usuário somente quando um pagamento falha. Já a URL `return` será exibida ao usuário em todos os estados de pagamento.
+O endereço fornecido na propriedade `return` do objeto `backUrls` será exibido como um link ao usuário sempre que o brick de Status Screen for exbidio, enquanto o endereço fornecido na propriedade `error` será exibido como um link ao usuário quando houver algum erro no processamento do pagamento.
 
 > NOTE
 >
