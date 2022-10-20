@@ -72,9 +72,9 @@ Para oferecer pagamentos com **boleto bancário** e **pagamento em lotérica**, 
 4. [Renderizar brick](#bookmark_renderizar_brick)
 5. [Gerenciar outros meios de pagamento](#bookmark_gerenciar_outros_meios_de_pagamento)
 
-> Os passos são realizados no back-end ou no front-end. As pills **Client-Side** e **Server-Side** localizadas imediatamentamente ao lado do título te ajudam a identificar qual passo é realizado em qual instância. <br/></br>
+> Os passos são realizados no back-end ou no front-end. As pills **Client-Side** e **Server-Side** localizadas imediatamente ao lado do título te ajudam a identificar qual passo é realizado em qual instância. <br/></br>
 > <br/></br>
-> E, para ajudar, preparamos um [exemplo de codigo](/developers/pt/docs/checkout-bricks/payment-brick/code-example/other-payment-methods) completo da configuração do Payment Brick com **boleto bancário** e **pagamento em lotérica** que você pode usar como modelo.
+> E, para ajudar, preparamos um [exemplo de código](/developers/pt/docs/checkout-bricks/payment-brick/code-example/other-payment-methods) completo da configuração do Payment Brick com **boleto bancário** e **pagamento em lotérica** que você pode usar como modelo.
 
 > CLIENT_SIDE
 >
