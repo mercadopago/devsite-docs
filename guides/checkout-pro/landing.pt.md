@@ -29,7 +29,6 @@ bullet_section_with_media:
 
 --- mini_landing_separator ---
 
-----[mlb]----
 >>>> Diferenças entre Checkout Pro e Checkout Transparente <<<<
 
 ----[mla, mlb]----
@@ -44,6 +43,7 @@ bullet_section_with_media:
 | Prevenção de fraude                   | ✔ | ✔ |
 | Tela de finalização de pagamento      | ✔ |   |
 | Pagamento com dois cartões            | ✔ |   |
+
 ------------
 
 ----[mlm, mlu, mco, mlc, mpe]----
@@ -57,39 +57,6 @@ bullet_section_with_media:
 | Usuários cadastrados     		| ✔ |   |
 | Prevenção de fraude                   | ✔ | ✔ |
 | Tela de finalização de pagamento      | ✔ |   |
-------------
-
-------------
-
-----[mla, mlm, mlu, mco, mlc, mpe]----
->>>> Diferenças entre Checkout Pro e Checkout API <<<<
-
-----[mla, mlb]----
-|   Benefícios                          | Checkout Pro | Checkout API |
-| :--- | :---: | :---: |
-| Dificuldade de integração             | Baixa | Alta |
-| Design UI/UX                          | ✔ |   |
-| Conversão otimizada                   | ✔ |   |
-| Aprovação otimizada                   | ✔ |   |
-| Usuários convidados     			| ✔ | ✔ |
-| Usuários cadastrados     		| ✔ |   |
-| Prevenção de fraude                   | ✔ | ✔ |
-| Tela de finalização de pagamento      | ✔ |   |
-| Pagamento com dois cartões            | ✔ |   |
-------------
-
-----[mlm, mlu, mco, mlc, mpe]----
-|   Benefícios                          | Checkout Pro | Checkout API |
-| :--- | :---: | :---: |
-| Dificuldade de integração             | Baixa | Alta |
-| Design UI/UX                          | ✔ |   |
-| Conversão otimizada                   | ✔ |   |
-| Aprovação otimizada                   | ✔ |   |
-| Usuários convidados      		| ✔ | ✔ |
-| Usuários cadastrados     		| ✔ |   |
-| Prevenção de fraude                   | ✔ | ✔ |
-| Tela de finalização de pagamento      | ✔ |   |
-------------
 
 ------------
 
