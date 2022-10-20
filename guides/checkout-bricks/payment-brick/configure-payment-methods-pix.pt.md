@@ -10,7 +10,7 @@ Pix é um meio de pagamento eletrônico instantâneo oferecido pelo Banco Centra
 > <br/></br>
 > Para já inicializar o formulário do Pix com o campo de e-mail preenchido, [clique aqui](/developers/pt/docs/checkout-bricks/payment-brick/additional-customization/initialize-data-on-the-bricks).<br/></br>
 > <br/></br>
-> E, para ajudar, preparamos um [exemplo de codigo](/developers/pt/docs/checkout-bricks/payment-brick/code-example/pix) completo da configuração do Payment Brick com Pix que você pode usar como modelo.
+> E, para ajudar, preparamos um [exemplo de código](/developers/pt/docs/checkout-bricks/payment-brick/code-example/pix) completo da configuração do Payment Brick com Pix que você pode usar como modelo.
 
 Para configurar a integração do Payment Brick para receber pagamentos com Pix você precisa seguir os passos abaixo. Caso já tenha integrado pagamentos via cartão, você pode iniciar a integração a partir da **etapa 4**.
 
@@ -19,7 +19,7 @@ Para configurar a integração do Payment Brick para receber pagamentos com Pix 
 3. [Instanciar brick](#bookmark_instanciar_brick)
 4. [Renderizar brick](#bookmark_renderizar_brick)
 
-> Os passos são realizados no back-end ou no front-end. As pills **Client-Side** e **Server-Side** localizadas imediatamentamente ao lado do título te ajudam a identificar qual passo é realizado em qual instância.
+> Os passos são realizados no back-end ou no front-end. As pills **Client-Side** e **Server-Side** localizadas imediatamente ao lado do título te ajudam a identificar qual passo é realizado em qual instância.
 
 > CLIENT_SIDE
 >

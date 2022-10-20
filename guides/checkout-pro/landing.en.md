@@ -31,7 +31,7 @@ bullet_section_with_media:
 
 >>>> Differences between Checkout Pro and Checkout API<<<<
 ----[mla, mlb]----
-|      Benefits                      | Checkout Pro | API |
+|      Benefits                      | Checkout Pro | Checkout API |
 | :--- | :---: | :---: |
 | Integration difficulty             | Low | High |
 | Design UI/UX                          | ✔ |   |
@@ -46,7 +46,7 @@ bullet_section_with_media:
 ------------
 
 ----[mlm, mlu, mco, mlc, mpe]----
-|  Benefits                          | Checkout Pro | API |
+|  Benefits                          | Checkout Pro | Checkout API |
 | :--- | :---: | :---: |
 | Integration difficulty             | Low | High |
 | Design UI/UX                          | ✔ |   |
