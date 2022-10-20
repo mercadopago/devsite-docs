@@ -42,7 +42,6 @@ bullet_section_with_media:
 | Fraud prevention                   | ✔ | ✔ |
 | Payment completion screen      | ✔ |   |
 | Payment with two cards            | ✔ |   |
-
 ------------
 
 ----[mlm, mlu, mco, mlc, mpe]----
@@ -56,7 +55,6 @@ bullet_section_with_media:
 | Registered users     		| ✔ |   |
 | Fraud prevention                   | ✔ | ✔ |
 | Payment completion screen      | ✔ |   |
-
 ------------
 
 --- mini_landing_separator ---

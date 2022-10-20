@@ -43,7 +43,6 @@ bullet_section_with_media:
 | Prevención del fraude                   | ✔ | ✔ |
 | Pantalla finalización del pago      | ✔ |   |
 | Pago con dos tarjetas            | ✔ |   |
-
 ------------
 
 ----[mlm, mlu, mco, mlc, mpe]----
@@ -57,7 +56,6 @@ bullet_section_with_media:
 | Usuarios registrados     		| ✔ |   |
 | Prevención del fraude                   | ✔ | ✔ |
 | Pantalla finalización del pago      | ✔ |   |
-
 ------------
 
 ------------
@@ -76,7 +74,6 @@ bullet_section_with_media:
 | Prevención del fraude                   | ✔ | ✔ |
 | Pantalla finalización del pago      | ✔ |   |
 | Pago con dos tarjetas            | ✔ |   |
-
 ------------
 
 ----[mlm, mlu, mco, mlc, mpe]----
@@ -90,7 +87,6 @@ bullet_section_with_media:
 | Usuarios registrados     		| ✔ |   |
 | Prevención del fraude                   | ✔ | ✔ |
 | Pantalla finalización del pago      | ✔ |   |
-
 ------------
 
 ------------
