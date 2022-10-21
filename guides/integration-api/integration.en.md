@@ -49,7 +49,7 @@ Next, you will need to create an application to obtain the credentials. It's eas
 >
 > Note
 >
-> If you are going to operate on behalf of other sellers, you can manage the link safely by integrating [OAuth](/developers/en/docs/mp-point/additional-content/security/oauth/introduction).
+> If you are going to operate on behalf of other sellers, you can manage the link safely by integrating [OAuth.](/developers/en/docs/mp-point/additional-content/security/oauth/introduction)
 
 ### Access your application credentials
 
@@ -63,8 +63,8 @@ You can test your integrations in a controlled environment with test users. You 
 ```curl
 curl -X POST \
 -H "Content-Type: application/json" \
--H 'Authorization: Bearer ${TEST_ACCESS_TOKEN}' \
-"https://api.mercadopago.com/users/test" \
+-H 'Authorization: Bearer ${ACCESS_TOKEN}' \
+"https://api.mercadopago.com/users/test_user" \
 -d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]","description" : "a description"}'
 ```
 
