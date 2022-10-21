@@ -48,7 +48,7 @@ Luego, necesitarás crear una aplicación para obtener las credenciales. Es fác
 >
 > Nota
 >
-> Si vas a operar en nombre de otros vendedores, puedes gestionar la vinculación de manera segura integrando [OAuth](/developers/es/docs/mp-point/additional-content/security/oauth/introduction).
+> Si vas a operar en nombre de otros vendedores, puedes gestionar la vinculación de manera segura integrando [OAuth.](/developers/es/docs/mp-point/additional-content/security/oauth/introduction)
 
 ### Accede a las credenciales de tu aplicación
 
@@ -61,8 +61,8 @@ Puedes probar tus integraciones en un ambiente controlado con usuarios de prueba
 ```curl
 curl -X POST \
 -H "Content-Type: application/json" \
--H 'Authorization: Bearer ${TEST_ACCESS_TOKEN}' \
-"https://api.mercadopago.com/users/test" \
+-H 'Authorization: Bearer ${ACCESS_TOKEN}' \
+"https://api.mercadopago.com/users/test_user" \
 -d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]","description" : "a description"}'
 ```
 
