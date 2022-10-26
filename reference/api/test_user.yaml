@@ -5,7 +5,7 @@ info:
   title: Mercado Pago API Reference
   version: '1.0'
 paths:
-  /users/test_user:
+  /users/test:
     post:
       tags:
         - $ref: '#/tags/checkout-api'
