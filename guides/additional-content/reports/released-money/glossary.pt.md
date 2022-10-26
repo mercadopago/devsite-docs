@@ -7,7 +7,7 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 >
 > Importante
 >
-> Algumas definições não estão mais disponíveis ou foram alteradas. Use este glossário para saber os termos dos relatórios gerados a partir de outubro. Para relatórios que cobrem datas anteriores, [consulte este Glossário](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/additional-content/reports/released-money/glossary-old)
+> Algumas definições não estão mais disponíveis ou foram alteradas. Use este glossário para saber os termos dos relatórios gerados a partir de outubro. Para relatórios que cobrem datas anteriores, [consulte este Glossário.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/additional-content/reports/released-money/glossary-old)
 ------------
 
 | Nome da coluna do relatório | O que significa |
@@ -60,21 +60,3 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 > proteção de dados pessoais aplicáveis. Elas estarão disponíveis quando pagamentos via código QR e transferências forem
 > recebidos ou quando uma doação for recebida por uma ONG.
 ------------
-
-### Próximos passos
-
-> LEFT_BUTTON_RECOMMENDED_PT
->
-> Como usar o relatório
->
-> Saiba como o relatório é composto e aprenda a analisá-lo.
->
-> [Como usar o relatório](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/released-money/how-to-use)
-
-> RIGHT_BUTTON
->
-> Gere seus relatórios
->
-> Saiba as formas de gerar um relatório e siga as etapas para configurar suas preferências.
->
-> [Gere seus relatórios](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/released-money/generate)

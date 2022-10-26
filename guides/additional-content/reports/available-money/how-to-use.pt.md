@@ -1,7 +1,4 @@
-
 # Como usar o relatório?
-
-
 
 Quando o relatório estiver pronto e baixado, você terá um arquivo pronto para consultar as planilhas de cálculo e importá-las para o programa que você usa.
 
@@ -13,8 +10,9 @@ Você pode verificar isso nas configurações do programa que usar.
 >
 > Importante
 >
-> A partir de 5 de dezembro, não será mais possível criar novos relatórios de Dinheiro retirado. Para continuar controlando as transferências, saques e movimentações do seu saldo disponível, por favor, [use o relatório Liberações](https://bit.ly/3B7Q5Qy).
+> A partir de 5 de dezembro, não será mais possível criar novos relatórios de Dinheiro retirado. Para continuar controlando as transferências, saques e movimentações do seu saldo disponível, por favor, [use o relatório Liberações.](https://bit.ly/3B7Q5Qy)
 ------------
+
 ----[mlm]----
 > WARNING
 >
@@ -22,6 +20,7 @@ Você pode verificar isso nas configurações do programa que usar.
 >
 > A partir de 12 de dezembro, não será mais possível criar novos relatórios de "Dinheiro retirado". Para continuar controlando as transferências, saques e movimentações do seu saldo disponível, por favor,[use o relatório "Liberações".](https://bit.ly/3RH0KJ4)
 ------------
+
 ## O que contém no relatório?
 
 O relatório é composto por:
@@ -34,7 +33,6 @@ O relatório é composto por:
 | *Unblock* |<br/> Os desbloqueios após a resolução das disputas.<br/><br/>|
 | *Subtotal* | <br/>É a soma das transações que compõem cada seção.<br/><br/>|
 | *Total*| <br/> É o resultado final composto pela soma de todos os subtotais. <br/><br/>Ou seja:<br/> subtotal `Release` + subtotal `Block` + subtotal `Unblock` = Resultado total<br/><br/> |
-
 
 Além disso, o relatório reflete os conceitos de débito (dinheiro a pagar) e crédito (dinheiro a receber) em duas colunas, uma para conceito:  
 
@@ -57,7 +55,6 @@ Selecione as colunas que quer exportar e incluir nos Ajustes do relatório, de a
 **O que acontece se uma retirada não se concretizar?**
 
 Caso isso aconteça, o relatório continuará válido. O dinheiro voltará à sua conta e a transação aparecerá no relatório em uma nova linha na coluna `NET_CREDIT`.
- 
 
 ## Exemplo de um relatório
 
@@ -73,24 +70,4 @@ A versão padrão mostrará uma visualização estendida das colunas. O relatór
 >
 > Quando você retirar todo o seu saldo disponível, o total do relatório corresponderá a esse valor. Por outro lado, quando você faz uma retirada parcial, que não inclui todo o seu dinheiro liberado na conta, o saldo total disponível e o total do relatório não coincidem.
 >
->Por exemplo, imagine que você tenha R$ 3.000 disponíveis para retirar para uma conta bancária, mas retira apenas R$ 2.000. A retirada é parcial, mas o valor total do relatório continuará a mostrar o valor do saldo inicial que estava no momento da retirada, ou seja, os R$ 3.000 disponíveis. Por outro lado, se você retirar os R$ 3.000, o valor total do relatório corresponderá ao valor dessa retirada.
-
-<hr/>
-
-### Próximos passos
-
-> LEFT_BUTTON_REQUIRED_PT
->
-> Gere seus relatórios
->
-> Saiba as formas de gerar um relatório e siga as etapas para configurar suas preferências.
->
-> [Gere seus relatórios](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/available-money/generate)
-
-> RIGHT_BUTTON_RECOMMENDED_PT
->
-> Glossário
->
-> Saiba o que significa cada termo e os detalhes das colunas que compõem o relatório.
->
-> [Glossário](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/available-money/glossary)
+> Por exemplo, imagine que você tenha R$ 3.000 disponíveis para retirar para uma conta bancária, mas retira apenas R$ 2.000. A retirada é parcial, mas o valor total do relatório continuará a mostrar o valor do saldo inicial que estava no momento da retirada, ou seja, os R$ 3.000 disponíveis. Por outro lado, se você retirar os R$ 3.000, o valor total do relatório corresponderá ao valor dessa retirada.

@@ -60,21 +60,3 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 > personales aplicables y estará disponible cuando se reciban pagos con QR, transferencias o cuando reciba una donación
 > como ONG.
 ------------
-
-### Próximos pasos
-
-> LEFT_BUTTON_RECOMMENDED_ES
->
-> Reporte de ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberaciones ------------
->
-> Qué es y para qué sirve el reporte de ----[mla]---- liquidaciones.------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- liberaciones.------------ Descubre ejemplos y casos de uso.
->
-> [Cómo usar el reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/how-to-use)
-
-> RIGHT_BUTTON
->
-> Genera tus reportes
->
-> Conoce las formas de generar un reporte y sigue los pasos para configurar tus preferencias.
->
-> [Genera tus reportes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/generate)

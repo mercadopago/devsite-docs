@@ -1,6 +1,4 @@
-
 # What is the Account Balance report?
-
 
 The Account Balance report is a **downloadable report that allows you to view the operations that affected the money in your account**, that is, the movements that affected the balance of your money in Mercado Pago.
 
@@ -14,7 +12,6 @@ Once available, it will be in your report tray and you can always download it tw
 
 * From the download link we’ll email you.
 * From your Mercado Pago account, go to ----[mla]---- [your reports](https://www.mercadopago.com.ar/balance/reports?page=1#!/settlement-report) ------------ ----[mlm]---- [your reports](https://www.mercadopago.com.mx/balance/reports?page=1#!/settlement-report) ------------ ----[mlu]---- [your reports](https://www.mercadopago.com.uy/balance/reports?page=1#!/settlement-report) ------------ ----[mlc]---- [your reports](https://www.mercadopago.cl/balance/reports?page=1#!/settlement-report) ------------ ----[mco]---- [your reports](https://www.mercadopago.com.co/balance/reports?page=1#!/settlement-report) ------------ ----[mpe]---- [your reports](https://www.mercadopago.com.pe/balance/reports?page=1#!/settlement-report) ------------ ----[mlb]---- [your reports](https://www.mercadopago.com.br/balance/reports?page=1#!/settlement-report) ------------ and select the *Account Balance reports*.
-
 
 ## Report Values
 

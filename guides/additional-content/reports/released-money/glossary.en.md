@@ -60,21 +60,3 @@ If you have any doubts about the technical terms used, check the glossary below.
 > personal data protection laws and will be available when payments via QR code or transfers are received, as well as
 > when a donation is received by an NGO.
 ------------
-
-### Next steps
-
-> LEFT_BUTTON_RECOMMENDED_EN
->
-> How to use this report
->
-> Learn how the report is composed and how to analyze it to make your reconciliation. 
->
-> [How to use this report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/released-money/how-to-use)
-
-> RIGHT_BUTTON
->
-> Generate your report
->
-> Learn the ways to generate a report and follow the steps to set your preferences.
->
-> [Generate your report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/released-money/generate)

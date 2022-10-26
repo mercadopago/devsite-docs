@@ -1,7 +1,6 @@
 
 # Generación por retiro
 
-
 Puedes crear un reporte de Dinero retirado de forma automática cada vez que hagas un retiro de dinero de tu cuenta de Mercado Pago a una cuenta bancaria. Programa esta opción desde tu panel de Mercado Pago o vía API.
 
 >WARNING
@@ -262,23 +261,3 @@ Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
 > Importante
 >
 > La generación por retiro es una de las tres formas que tenemos de generar este reporte. No modifica la generación que configures desde tu panel de Mercado Pago o vía API. Explora el resto de la documentación para conocer de qué otras formas puedes generar tus reportes: desde el panel de Mercado Pago y por API. 
-
-<hr/>
-
-### Próximos pasos
-
-> LEFT_BUTTON_RECOMMENDED_ES
->
-> Generación desde Mercado Pago
->
-> Puedes generar tus reportes de Dinero retirado desde el panel de Mercado Pago en tres simples pasos.
->
-> [Generación desde Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/available-money/panel)
-
-> RIGHT_BUTTON_RECOMMENDED_ES
->
-> Generación por API
->
-> Crea reportes de forma programada y manual por medio de una integración con Mercado Pago.
->
-> [Generación por API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/available-money/api)

@@ -79,26 +79,6 @@ The report has a simplified structure to make it easier to understand it:
 
 Check in this example how the report "Releases" is composed to identify the sections and analyze your own reports:
 
-![Reporte de Dinero retirado Ejemplos Mercado Pago](/images/manage-account/reports/example-N-ledger-en.jpg)
+![Reporte de Dinero retirado Ejemplos Mercado Pago](/images/manage-account/reports/example-n-ledger-en.jpg)
 
 ------------
-
-<hr/>
-
-### Next steps
-
-> LEFT_BUTTON_REQUIRED_EN
->
-> Generate your report
->
-> Learn the ways to generate a report and follow the steps to set your preferences.
->
-> [Generate your report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/released-money/generate)
-
-> RIGHT_BUTTON_RECOMMENDED_EN
->
-> Glossary
->
-> Know what each term means and the detail of the columns that make up the report.
->
-> [Glossary](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/released-money/glossary)

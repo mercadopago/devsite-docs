@@ -84,25 +84,6 @@ El reporte presenta una estructura más simple para facilitar su comprensión:
 ## Ejemplo de un reporte
 Observa cómo está compuesto el reporte de Dinero retirado en este ejemplo para identificar las secciones y leer tus propios reportes:
 
-![Reporte de Dinero retirado Ejemplos Mercado Pago](/images/manage-account/reports/example-n-ledger-es.jpg)
+![Reporte de Dinero retirado Ejemplos Mercado Pago](/images/manage-account/reports/example-n-ledger-es.jpg) 
 
 ------------
-<hr/>
-
-### Próximos pasos
-
-> LEFT_BUTTON_REQUIRED_ES
->
-> Genera tus reportes
->
-> Conoce las formas de generar un reporte y sigue los pasos para configurar tus preferencias.
->
-> [Genera tus reportes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/generate)
-
-> RIGHT_BUTTON_RECOMMENDED_ES
->
-> Glosario
->
-> Conoce qué significa cada término y el detalle de las columnas que componen al reporte.
->
-> [Glosario](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/glossary)
