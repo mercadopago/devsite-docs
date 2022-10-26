@@ -2,12 +2,12 @@
 
 Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado con todos ellos. ¡Usa este glosario para no perderte!
 
-----[mco, mlc, mla, mlm, mpe, mlu]----
+----[mla, mlm]----
 > WARNING
 >
 > Importante
 >
-> Algunas definiciones ya no están disponibles o han cambiado. Usa este glosario para conocer los términos de los reportes que generes a partir de junio. Para los reportes que abarquen fechas previas [consulta este Glosario.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/additional-content/reports/released-money/glossary-old)
+> Algunas definiciones ya no están disponibles o han cambiado. Usa este glosario para conocer los términos de los reportes que generes a partir de octubre. Para los reportes que abarquen fechas previas [consulta este Glosario.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/additional-content/reports/released-money/glossary-old)
 ------------
 
 | Nombre de la columna del reporte | Qué significa |

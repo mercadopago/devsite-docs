@@ -2,7 +2,7 @@
 
 Sabemos que alguns termos são técnicos e você pode não estar familiarizado com todos eles. Use este glossário para não se perder!
 
-----[mco, mlc, mla, mlm, mpe, mlu]----
+----[mla, mlm]----
 > WARNING
 >
 > Importante
