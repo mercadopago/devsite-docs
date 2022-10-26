@@ -79,6 +79,6 @@ The report has a simplified structure to make it easier to understand it:
 
 Check in this example how the report "Releases" is composed to identify the sections and analyze your own reports:
 
-![Reporte de Dinero retirado Ejemplos Mercado Pago](/images/manage-account/reports/example-n-ledger-en.jpg) 
+![Reporte de Dinero retirado Ejemplos Mercado Pago](/images/manage-account/reports/example-nledger-en.jpg) 
 
 ------------

@@ -84,6 +84,6 @@ O relatório possui uma estrutura simplificada para que seja mais fácil entend�
 
 Confira neste exemplo como o relatório "Liberações" é composto para identificar as seções e analisar seus próprios relatórios:
 
-![Reporte de Dinero retirado Ejemplos Mercado Pago](/images/manage-account/reports/example-n-ledger-pt.jpg) 
+![Reporte de Dinero retirado Ejemplos Mercado Pago](/images/manage-account/reports/example-nledger-pt.jpg) 
 
 ------------
