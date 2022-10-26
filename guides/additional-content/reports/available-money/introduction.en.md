@@ -1,8 +1,7 @@
-
 # What is the Available Balance report?
 
-
 The Available Balance report is a **downloadable report that allows you to know the liquidity of your business**, that is, how much money you have to use. It contains the **detail of the released payments** that are ready to withdraw to a bank account, invest in Mercado Pago or use as balance in the Mercado Pago prepaid card.
+
 ----[mpe, mlu]----
 > WARNING
 >
@@ -10,19 +9,21 @@ The Available Balance report is a **downloadable report that allows you to know 
 >
 > You can use the [Releases report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/released-money/introduction) to reconcile the transactions that affect the balance available in your account, including your bank withdrawals.
 ------------
+
 ----[mlm]----
 > WARNING
 >
 > Important
 >
-> As of December 12th, you will no longer be able to create new Money withdrawn reports. In order to keep tracking all the transfers, withdrawals and movements of your available money, [please use the Releases report.](https://bit.ly/3zCb1ye).
+> As of December 12th, you will no longer be able to create new Money withdrawn reports. In order to keep tracking all the transfers, withdrawals and movements of your available money, [please use the Releases report.](https://bit.ly/3zCb1ye)
 ------------
+
 ----[mla]----
 > WARNING
 >
 > Important
 >
-> As of December 5th, you will no longer be able to create new Money withdrawn reports. In order to keep tracking all the transfers, withdrawals and movements of your available money, [please use the Releases report](https://bit.ly/3zCb1ye).
+> As of December 5th, you will no longer be able to create new Money withdrawn reports. In order to keep tracking all the transfers, withdrawals and movements of your available money, [please use the Releases report.](https://bit.ly/3zCb1ye)
 ------------
 
 ## How do I download the report?
@@ -40,9 +41,7 @@ Depending on the [rates and terms](https://www.mercadopago.com.ar/settings/relea
 
 The release periods have to do with the bank terms or the intermediation flows when the operations are carried out in Mercado Libre. Other operations that may affect the release of your money are Chargebacks and Complaints that you may receive for an order.
 
-
 > To know the exact date on which the money of an operation will be available, check the [details of your accredited collections](https://www.mercadopago.com.ar/activities/balance).
-
 
 ## What to use the report for 
 
@@ -67,23 +66,3 @@ In addition, you can use the report to know the history of balance available bet
 > Note
 >
 > Have the [Glossary of the Available Balance report](https://www.mercadopago.com.ar/ayuda/_2118) on hand to review it when needed or want to review a technical term.
-
-<hr/>
-
-### Next steps
-
-> LEFT_BUTTON_RECOMMENDED_EN
->
-> How to use the report
->
-> Learn the composition of the report and how to read it to make your reconciliation.
->
-> [How to use the report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/available-money/how-to-use)
-
-> RIGHT_BUTTON_REQUIRED_EN
->
-> Generate your reports
->
-> Learn the ways to generate a report and follow the steps to set your preferences.
->
-> [Generate your reports](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/available-money/generate)

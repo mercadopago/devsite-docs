@@ -52,23 +52,3 @@ Além disso, você pode usar o relatório para saber o histórico de dinheiro --
 > Nota
 >
 > Tenha em mãos o [Glossário do relatório](/developers/pt/guides/additional-content/reports/released-money/glossary) de dinheiro ----[mla]---- Liquidações ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------ para revisá-lo quando precisar ou caso queira consultar algum termo técnico.
-
-<hr/>
-
-### Próximos passos
-
-> LEFT_BUTTON_RECOMMENDED_PT
->
-> Como usar o relatório
->
-> Saiba como o relatório é composto e aprenda a analisá-lo para fazer sua conciliação.
->
-> [Como usar o relatório](/developers/pt/guides/additional-content/reports/released-money/how-to-use)
-
-> RIGHT_BUTTON_REQUIRED_PT
->
-> Gere seus relatórios
->
-> Saiba as formas de gerar um relatório e siga as etapas para configurar suas preferências.
->
-> [Gere seus relatórios](/developers/pt/guides/additional-content/reports/released-money/generate)

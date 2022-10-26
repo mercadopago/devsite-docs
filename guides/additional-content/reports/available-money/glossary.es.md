@@ -5,15 +5,17 @@
 >
 > Importante
 >
-> A partir del 5 de diciembre no podrás crear nuevos reportes Dinero retirado. Para seguir llevando el control de todos los retiros y movimientos de tu dinero disponible [usa el reporte Liberaciones](https://bit.ly/3JzFPEG).
+> A partir del 5 de diciembre no podrás crear nuevos reportes Dinero retirado. Para seguir llevando el control de todos los retiros y movimientos de tu dinero disponible [usa el reporte Liberaciones.](https://bit.ly/3JzFPEG)
 ------------
+
 ----[mlm]----
 > WARNING
 >
 > Importante
 >
-> A partir del 12 de diciembre no podrás crear nuevos reportes Dinero retirado. Para seguir llevando el control de todos los retiros y movimientos de tu dinero disponible [usa el reporte Liberaciones](https://bit.ly/3QiCD2f).
+> A partir del 12 de diciembre no podrás crear nuevos reportes Dinero retirado. Para seguir llevando el control de todos los retiros y movimientos de tu dinero disponible [usa el reporte Liberaciones.](https://bit.ly/3QiCD2f)
 ------------
+
 ----[mpe, mlu]----
 > WARNING
 >
@@ -21,6 +23,7 @@
 >
 > A partir del 15 de mayo no podrás crear nuevos reportes. Tendrás a disposición tu historial para que puedas descargar los archivos que necesites. Para seguir llevando el control de todos los retiros y movimientos de tu dinero disponible puedes usar el [reporte de liberaciones.](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/23879?utm_source=faq_mp&utm_medium=faq&utm_campaign=bank_disable)
 ------------
+
 ----[mco, mlc]----
 > WARNING
 >
@@ -67,28 +70,10 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 | EFFECTIVE_COUPON_AMOUNT | Costo por ofrecer descuento. |
 | POI_ID | ID del lector si el pago se realiza a través de un comercio físico. |
 ----[mpe, mlu]----
+
 > INFO
 >
 > Algunas definiciones ya no están disponibles o han cambiado
 >
 > Usa este glosario para conocer los términos de los reportes que generes a partir de ------------ ----[mpe]----enero de 2022. ------------  ----[mlu]---- marzo de 2022. ------------ ----[mpe, mlu]---- Para los reportes que abarquen fechas previas [consulta este Glosario.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/available-money/glossary-old)
 ------------
-<hr/>
-
-### Próximos pasos
-
-> LEFT_BUTTON_RECOMMENDED_ES
->
-> Reporte de Dinero retirado
->
-> Qué es y para qué sirve el reporte de Dinero retirado. Descubre ejemplos y casos de uso.
->
-> [Cómo usar el reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/available-money/how-to-use)
-
-> RIGHT_BUTTON_REQUIRED_ES
->
-> Genera tus reportes
->
-> Conoce las formas de generar un reporte y sigue los pasos para configurar tus preferencias.
->
-> [Genera tus reportes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/available-money/generate)

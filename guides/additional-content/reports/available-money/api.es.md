@@ -1,4 +1,3 @@
-
 # Generación por API
 
 Genera el informe de dinero liberado manualmente tantas veces como desees o prográmalo de acuerdo con la frecuencia que elijas a través de nuestra API.
@@ -8,7 +7,7 @@ Genera el informe de dinero liberado manualmente tantas veces como desees o prog
 >
 > Importante
 >
-> Limitamos el uso de esta API a la consulta y descarga manual de archivos históricos, como consecuencia del deprecado del reporte Dinero retirado en los próximos meses. En su lugar, te recomendamos [usar el reporte Liberaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/23879?utm_source=faq_mp&utm_medium=faq&utm_campaign=bank_disable)
+> Limitamos el uso de esta API a la consulta y descarga manual de archivos históricos, como consecuencia del deprecado del reporte Dinero retirado en los próximos meses. En su lugar, te recomendamos [usar el reporte Liberaciones.](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/23879?utm_source=faq_mp&utm_medium=faq&utm_campaign=bank_disable)
 ------------
 ----[mpe, mlu]----
 > WARNING
@@ -1089,22 +1088,4 @@ Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
 >
 > Esta documentación corresponde a la nueva versión de la API
 >
-> Para consultar la versión anterior, visita la sección de [sección de Generación por API antigua](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/available-money/v1/api).
-
-### Próximos pasos
-
-> LEFT_BUTTON_RECOMMENDED_ES
->
-> Generación desde Mercado Pago
->
-> Puedes generar tus reportes de Dinero retirado desde el panel de Mercado Pago en tres simples pasos.
->
-> [Generación desde Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/available-money/panel)
-
-> RIGHT_BUTTON_RECOMMENDED_ES
->
-> Generación por retiro
->
-> Puedes generar un reporte cada vez que retires dinero a una cuenta bancaria.
->
-> [Generación por retiro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/available-money/withdrawal)
+> Para consultar la versión anterior, visita la sección de [sección de Generación por API antigua.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/available-money/v1/api)
