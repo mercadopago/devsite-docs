@@ -59,6 +59,16 @@ Once you have created an application, you will be able to access [your credentia
 
 [TXTSNIPPET][/guides/snippets/test-integration/create-test-users]
 
+In addition, you can also create test test users using the following command:
+
+```curl
+curl -X POST \
+-H "Content-Type: application/json" \
+-H 'Authorization: Bearer ${TEST_ACCESS_TOKEN}' \
+"https://api.mercadopago.com/users/test" \
+-d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]","description" : "a description"}'
+```
+
 ## 2. Associate your Point device with your Mercado Pago account
 
 Now you need to link your Point device to your Mercado Pago account. In order to do that, you need to have our application on your cell phone. You can get it for the operating systems [iOS](https://itunes.apple.com/ar/app/mercado-pago/id925436649?mt=8) and [Android](https://play.google.com/store/apps/details?id=com.mercadopago.wallet&hl=es_419).
