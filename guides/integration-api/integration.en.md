@@ -57,18 +57,7 @@ Once you have created an application, you will be able to access [your credentia
 
 ### Generate test users
 
-You can test your integrations in a controlled environment with test users. You can create them using the following command:
-
-
-```curl
-curl -X POST \
--H "Content-Type: application/json" \
--H 'Authorization: Bearer ${ACCESS_TOKEN}' \
-"https://api.mercadopago.com/users/test_user" \
--d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]","description" : "a description"}'
-```
-
-You can generate up to 10 test user accounts simultaneously. Keep in mind that test users expire after 60 days without activity in Mercado Pago.
+[TXTSNIPPET][/guides/snippets/test-integration/create-test-users]
 
 ## 2. Associate your Point device with your Mercado Pago account
 
