@@ -62,8 +62,8 @@ Você pode testar suas integrações em um ambiente controlado com usuários de 
 ```curl
 curl -X POST \
 -H "Content-Type: application/json" \
--H 'Authorization: Bearer ${ACCESS_TOKEN}' \
-"https://api.mercadopago.com/users/test_user" \
+-H 'Authorization: Bearer ${TEST_ACCESS_TOKEN}' \
+"https://api.mercadopago.com/users/test" \
 -d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]","description" : "a description"}'
 ```
 
