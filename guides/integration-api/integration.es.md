@@ -58,7 +58,7 @@ Una vez que tengas una aplicación creada, podrás acceder a [tus credenciales](
 
 [TXTSNIPPET][/guides/snippets/test-integration/create-test-users]
 
-Además, también puede crear usuarios de prueba usando el siguiente comando:
+Además, también puedes crear usuarios de prueba usando el siguiente comando:
 
 ```curl
 curl -X POST \
