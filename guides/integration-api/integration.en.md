@@ -59,7 +59,7 @@ Once you have created an application, you will be able to access [your credentia
 
 [TXTSNIPPET][/guides/snippets/test-integration/create-test-users]
 
-In addition, you can also create test test users using the following command:
+In addition, you can also create test users using the following command:
 
 ```curl
 curl -X POST \
