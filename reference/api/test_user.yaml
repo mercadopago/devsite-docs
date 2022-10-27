@@ -207,7 +207,7 @@ paths:
         spa: Este endpoint maneja las http requests para buscar un usuario de prueba
         por: Este endpoint lida com http requests para pesquisar um usuário de teste
       parameters:
-        - name: test_access_token
+        - name: access_token
           in: query
           description: Test access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
           x-description-i18n:
@@ -379,7 +379,7 @@ paths:
         spa: Este endpoint maneja las http requests para cambiar la contraseña del usuario de prueba
         por: Este endpoint lida com http requests para alterar a senha do usuário de teste
       parameters:
-        - name: test_access_token
+        - name: access_token
           in: query
           description: Test access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
           x-description-i18n:
@@ -482,7 +482,7 @@ paths:
         spa: Este endpoint maneja las http requests para agregar un valor (account_money) a la cuenta de usuario de prueba
         por: Este endpoint lida com http requests para adicionar um valor (account_money) à conta do usuário de teste
       parameters:
-        - name: test_access_token
+        - name: access_token
           in: query
           description: Test access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
           x-description-i18n:

@@ -56,7 +56,9 @@ Una vez que tengas una aplicación creada, podrás acceder a [tus credenciales](
 
 ### Genera usuarios de prueba
 
-Puedes probar tus integraciones en un ambiente controlado con usuarios de prueba. Puedes crearlos usando el siguiente comando:
+[TXTSNIPPET][/guides/snippets/test-integration/create-test-users]
+
+Además, también puedes crear usuarios de prueba usando el siguiente comando:
 
 ```curl
 curl -X POST \
@@ -66,9 +68,6 @@ curl -X POST \
 -d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]","description" : "a description"}'
 ```
 
-Puedes generar hasta 10 cuentas de usuarios de prueba en simultáneo. Ten en cuenta que los usuarios de prueba caducan luego de 60 días sin actividad en Mercado Pago. 
-
-
 ## 2. Asocia tu dispositivo Point a tu cuenta de Mercado Pago
 
 Ahora vas a vincular tu dispositivo Point a tu cuenta de Mercado Pago. Para eso, necesitas contar con nuestra aplicación en tu celular. Puedes obtenerla para sistemas operativos [iOS](https://itunes.apple.com/ar/app/mercado-pago/id925436649?mt=8) y [Android](https://play.google.com/store/apps/details?id=com.mercadopago.wallet&hl=es_419).
@@ -77,7 +76,6 @@ También deberás contar con un dispositivo Point.
 ### Escanea el código QR de tu dispositivo Point
 
 Primero, inicia sesión en la aplicación de Mercado Pago. Luego, oprime en el ícono QR y escanea el código que aparece al encender tu dispositivo Point. Y listo, tu dispositivo Point quedará vinculado a tu cuenta.
-
 
 ### Configura tu tienda y tu caja
 

@@ -55,9 +55,11 @@ E pronto!
 
 Depois de criar uma aplicação, você poderá acessar as [suas credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/credentials). Com elas você pode conectar uma integração à sua conta e configurá-la do seu jeito.
 
-### Gerar usuários de teste
+### Gere usuários de teste
 
-Você pode testar suas integrações em um ambiente controlado com usuários de teste. Você pode criá-los usando o seguinte comando:
+[TXTSNIPPET][/guides/snippets/test-integration/create-test-users]
+
+Além disso, você também poderá criar usuários de teste utilizando o seguinte comando:
 
 ```curl
 curl -X POST \
@@ -66,8 +68,6 @@ curl -X POST \
 "https://api.mercadopago.com/users/test" \
 -d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]","description" : "a description"}'
 ```
-
-Você pode gerar até 10 contas de usuário de teste simultaneamente. Lembre-se de que os usuários de teste expiram após 60 dias sem atividade no Mercado Pago.
 
 ## 2. Associe o seu dispositivo Point à sua conta do Mercado Pago
 
