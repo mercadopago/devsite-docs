@@ -4,15 +4,11 @@ A opção de parcelamento sem cartão do Mercado Pago se chama Mercado Crédito 
 
 Ao oferecer esta opção na sua loja, seus clientes poderão comprar um produto hoje e pagar depois em parcelas. Para o seu negócio, a aprovação da compra é imediata e está garantida, sendo creditado o valor total adiantado e os seus clientes nos pagam depois.
 
-Nosso objetivo é que você aumente suas vendas e que alcance novos usuários.
-
 Siga os passos abaixo para oferecer o parcelamento sem cartão em sua loja.
-
-Configuração da integração
 
 ## Pré-requisitos
 
-Para realizar a integração, é importante atender aos requisitos mostrados abaixo.
+To perform the integration, it is important to meet the requirements shown below.
 
 | Requisitos | Descrição |
 |---|---|
@@ -110,7 +106,5 @@ Para oferecer a melhor experiência para seus clientes usando Mercado Crédito, 
 Para explicar melhor a seus clientes como funciona Mercado Crédito, compartilhe com eles as etapas a seguir.
 
 1. Crie uma conta ou entre no Mercado Pago. Se você utiliza o **Mercado Livre**, você já tem essa conta! 
-
 2. Selecione **Mercado Crédito** e escolha em quantas vezes quer pagar 
-
 3. Pronto! Pague as parcelas todo mês como preferir, no **app do Mercado Pago**.

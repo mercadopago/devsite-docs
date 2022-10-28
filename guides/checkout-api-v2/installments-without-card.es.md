@@ -1,9 +1,5 @@
 ----[mla]---- 
 # Pagos en cuotas sin tarjeta
-------------
-----[mlm]----
-# Pagos en meses sin tarjeta
-------------
 
 Mercado Crédito es el método de financiación de Mercado Pago que permite pagar en cuotas sin tarjeta.
 
@@ -11,13 +7,17 @@ Al ofrecer esta opción en tu tienda, tus clientes podrán comprar un producto h
 
 En esta guía encontrarás los pasos necesarios para ofrecer cuotas sin tarjeta en tu tienda.
 
+------------
+----[mlm]----
+# Pagos en meses sin tarjeta
+
+Mercado Crédito es el método de financiación de Mercado Pago que permite pagar en meses sin tarjeta.
 
 Al ofrecer esta opción en tu tienda, tus clientes podrán comprar un producto hoy y pagarlo después a meses. Para tu negocio, la aprobación de la compra es inmediata y está garantizada, se te acredita la totalidad por adelantado y tus clientes nos pagan después.
 
-Nuestro objetivo es que aumentes tus ventas y alcances nuevos usuarios.
+En esta guía encontrarás los pasos necesarios para ofrecer meses sin tarjeta en tu tienda.
 
-Sigue estos pasos para ofrecer Meses sin tarjeta como medio de pago en tu tienda:
-
+------------
 
 ## Requisitos previos
 
@@ -149,15 +149,11 @@ Para ofrecer la mejor experiencia a tus compradores usando Mercado Crédito, te 
 Para explicar mejor a tus clientes cómo funciona Mercado Crédito, puedes compartirles estos pasos a continuación.
 
 1. Crea una cuenta o ingresa en Mercado Pago. Si usas **Mercado Libre**, ¡ya tienes cuenta!
-
 ----[mla]----
 2. Elige **Mercado Crédito** y la cantidad de cuotas en las que quieres pagar.
-
 3. ¡Listo! Después paga mes a mes tus cuotas desde la **app de Mercado Pago**.
 ------------
-
 ----[mlm]----
 2. Elige Mercado Crédito y la cantidad de mensualidades en las que quieras pagar.
-
 3. ¡Listo! Después paga tus mensualidades desde la app de Mercado Pago.
 ------------
