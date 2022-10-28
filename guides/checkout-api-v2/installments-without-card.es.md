@@ -120,7 +120,14 @@ Para ofrecer la mejor experiencia a tus compradores usando Mercado Crédito, te 
 
 * Mantener el logo de Mercado Pago
 
-![logo](api/suggestions2-installments-w-card-es.png)
+----[mla]----
+![logo](api/suggestions2-installments-w-card-mla-es.png)
+
+------------
+----[mlm]----
+![logo](api/suggestions2-installments-w-card-mlm-es.png)
+
+------------
 
 ----[mla]----
 * Mantener la propuesta de valor de cuotas sin tarjeta
