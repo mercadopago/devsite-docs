@@ -52,7 +52,7 @@ curl -X POST \
 }'
 ```
 
-> SERVER_SIDE
+> CLIENT_SIDE
 >
 > h3
 >
