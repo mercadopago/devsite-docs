@@ -56,7 +56,7 @@ curl -X POST \
 >
 > h3
 >
-> Adicionar opção no checkout
+> Adicionar botão no checkout
 
 Com a preferência criada, é preciso exibir o botão de pagamento que permitirá o comprador utilizar o Mercado Crédito como meio de pagamento. Para exibir o botão de pagamento, insira o código abaixo diretamente em seu projeto.
 
