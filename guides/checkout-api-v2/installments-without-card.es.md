@@ -1,7 +1,7 @@
 ----[mla]---- 
 # Pagos en cuotas sin tarjeta
 
-Mercado Crédito es el método de financiación de Mercado Pago que permite pagar en cuotas sin tarjeta.
+**Mercado Crédito** es el método de financiación de Mercado Pago que permite pagar en cuotas sin tarjeta.
 
 Al ofrecer esta opción en tu tienda, tus clientes podrán comprar un producto hoy y pagarlo después en cuotas. Para tu negocio, la aprobación de la compra es inmediata y está garantizada, se te acredita la totalidad por adelantado y tus clientes nos pagan después.
 
@@ -101,7 +101,14 @@ Al ingresar este código, debería ver un botón similar al ejemplo ilustrado a 
 
 ### Ejemplo del flujo de pago
 
-![ejemplo flujo](api/flow-installments-w-card-es.png)
+----[mla]---- 
+![ejemplo flujo](api/flow-installments-w-card-mla-es.png)
+
+------------
+----[mlm]---- 
+![ejemplo flujo](api/flow-installments-w-card-mlm-es.png)
+
+------------
 
 ### Sugerencias y buenas prácticas
 

@@ -1,10 +1,10 @@
 # Installments without credit card
 
-Mercado Pago’s card-free installment option is called Mercado Crédito and is a proprietary financing method that allows you to pay in up to 12 installments.
+Mercado Pago’s card-free installment option is called **Mercado Crédito** and is a proprietary financing method that allows you to pay in up to 12 installments.
 
 By offering this option in your store, your customers will be able to buy a product today and pay in installments later. For your business, approval of the purchase is immediate and guaranteed, with the total amount being credited in advance and your customers paying us later.
 
-Follow the steps below to offer card-free installments in your store.
+Follow the steps below to offer installments without card in your store.
 
 ## Prerequisites 
 
@@ -17,7 +17,7 @@ To perform a Card Payment Brick integration, you must meet the requirements list
 | Credentials | Unique passwords with which we identify an integration in your account. To perform the integrations, you will need the _Public key_ and the _Access Token_. [Click here](/developers/en/guides/additional-content/credentials/credentials) for more information. |
 | Install the Mercado Pago SDK | Install the official SDKs to simplify your integration with our [APIs](/developers/en/reference/payments/_payments/post). For more information, [click here](/developers/en/docs/sdks-library/landing). |
 
-If all prerequisites have been met, follow the next steps to integrate cardless installments.
+If all prerequisites have been met, follow the next steps to integrate installments without credit card.
 
 ## Integration configuration
 

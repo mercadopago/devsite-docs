@@ -1,6 +1,6 @@
 # Parcelamento sem cartão de crédito
 
-A opção de parcelamento sem cartão do Mercado Pago se chama Mercado Crédito e é um método de financiamento próprio que permite pagar em até 12x.
+A opção de parcelamento sem cartão do Mercado Pago se chama **Mercado Crédito** e é um método de financiamento próprio que permite pagar em até 12x.
 
 Ao oferecer esta opção na sua loja, seus clientes poderão comprar um produto hoje e pagar depois em parcelas. Para o seu negócio, a aprovação da compra é imediata e está garantida, sendo creditado o valor total adiantado e os seus clientes nos pagam depois.
 
