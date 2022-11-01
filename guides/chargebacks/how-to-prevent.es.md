@@ -1,6 +1,6 @@
 # ¿Cómo evitar un contracargo?
 
-No es posible evitar todos los contracargos, pero puede disminuir la probabilidad de que se revierta un contracargo siguiendo estas recomendaciones:
+No es posible evitar todos los contracargos, pero puedes disminuir la probabilidad de que se reviertan siguiendo estas recomendaciones:
 
 1. Completa la [información de tu negocio](https://www.mercadopago[FAKE][URL][DOMAIN]/business#from-section=menu) para definir cómo quieres aparecer en los resúmenes de tarjetas y en los SMS de confirmación de pago.
    
