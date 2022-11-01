@@ -8,7 +8,7 @@ Se genera un contracargo cuando un cliente no **reconoce el cargo en su tarjeta 
 
 Cuando esto sucede, se retiene el monto pagado hasta que se resuelva el problema con la institución emisora de la tarjeta.
 
-[Haga clic aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/288) para obtener más detalles sobre cómo protegemos a nuestros vendedores.
+[Haz clic aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/288) para obtener más detalles sobre cómo protegemos a nuestros vendedores.
 
 
 
