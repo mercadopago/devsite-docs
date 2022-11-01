@@ -4,7 +4,7 @@ Se produce una disputa cuando deseas discutir el reclamo de contracargo con info
 
 Toda la información necesaria para gestionar las disputas de contracargos realizadas se puede encontrar aquí:
 
-1. Configure [las notificaciones IPN](/developers/panel/notifications/ipn) y habilite la opción **Contracargos**
+1. Configura [las notificaciones IPN](/developers/panel/notifications/ipn) y habilita la opción **Contracargos**
    
 2. Verifique toda la información relacionada con un contracargo utilizando la solicitud [Obtener contracargo](/developers/pt/reference/chargebacks/_chargebacks_id/get)
    1. Verifica si el [contracargo se puede cubrir](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/294) y si se requiere alguna documentación, a través de los campos `coverage_eligible` y `documentation_required`, respectivamente.
