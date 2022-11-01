@@ -1,6 +1,6 @@
 # Cómo administrar y prevenir los contracargos
 
-En esta documentación encontrará toda la información necesaria para la gestión y prevención de contracargos.
+En esta documentación encontrarás toda la información necesaria para la gestión y prevención de contracargos.
 
 ## ¿Qué es un contracargo?
 
