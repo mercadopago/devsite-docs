@@ -20,9 +20,11 @@ Abaixo você encontra as informações necessárias para o gerenciamento das dis
 
 3. Encaminhe os documentos que comprovem que a venda é válida através do método a seguir
 ```curl
-curl -X GET \
+curl -X POST  \
+-F 'files[]=@/path/to/file/file1.png' \
+-F 'files[]=@/path/to/file/file2.pdf' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
-https://api.mercadopago.com/v1/chargebacks/ID
+https://api.mercadopago.com/v1/chargebacks/ID/documentation
 ```
 
 >WARNING
