@@ -19,7 +19,7 @@ No es posible evitar todos los contracargos, pero puedes disminuir la probabilid
    
 4. [Envía el comprobante del pago](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/16170) a tu cliente por e-mail o mensaje de texto.
    
-5. Configure y habilite [las notificaciones IPN](/developers/panel/notifications/ipn) para recibir alertas por comportamiento irregular al habilitar **Alerta de fraude**(`delivery_cancellation`) 
+5. Configura y habilita [las notificaciones IPN](/developers/panel/notifications/ipn) para recibir alertas por comportamiento irregular al habilitar **Alerta de fraude**(`delivery_cancellation`) 
 
 >WARNING
 >
