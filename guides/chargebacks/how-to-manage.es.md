@@ -36,7 +36,7 @@ https://api.mercadopago.com/v1/chargebacks/ID/documentation
 
 Si la documentación se cargó correctamente, la API responderá con el estado `200 OK` y el valor de `documentation_status` cambiará a `review_pending`.
 
-4. Espere la notificación de IPN con respecto a la resolución. Vuelva a verificar la disputa usando el método [Obtener contracargo](/developers/pt/reference/chargebacks/_chargebacks_id/get). El valor de `coverage_applied` podría haber tomado uno de los valores posibles:
+4. Espera la notificación de IPN sobre la resolución. Vuelve a verificar la disputa usando el método [Obtener contracargo](/developers/pt/reference/chargebacks/_chargebacks_id/get). El valor de `coverage_applied` puede cambiar a uno de los siguientes valores:
 
 | Value           | Descripción
 | ----            | ----
