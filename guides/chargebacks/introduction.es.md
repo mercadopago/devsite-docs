@@ -16,5 +16,5 @@ Cuando esto sucede, se retiene el monto pagado hasta que se resuelva el problema
 >
 > Nota
 >
-> Para obtener más información sobre qué hacer cuando recibir un contracargo, consulte [nuestra página de ayuda](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/recibi-un-contracargo_584).
+> Para obtener más información sobre qué hacer cuando recibes un contracargo, consulta [nuestra página de ayuda](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/recibi-un-contracargo_584).
 
