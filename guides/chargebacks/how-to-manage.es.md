@@ -19,7 +19,7 @@ Toda la información necesaria para gestionar las disputas de contracargos reali
 >3. El plazo no ha vencido
 >
 
-3. Envía los documentos a través del siguiente solitud:
+3. Envía los documentos a través de la siguiente solicitud:
 ```curl
 curl -X POST  \
 -F 'files[]=@/path/to/file/file1.png' \
