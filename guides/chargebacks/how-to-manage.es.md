@@ -1,6 +1,6 @@
 # ¿Cómo gestionar disputas de contracargos?
 
-Se produce una disputa cuando desea argumentar el reclamo de contracargo con información de respaldo que valide y asegure que el producto se entregó de conformidad.
+Se produce una disputa cuando deseas discutir el reclamo de contracargo con información de respaldo que valide y asegure que el producto se entregó conforme a lo acordado.
 
 Toda la información necesaria para gestionar las disputas de contracargos realizadas se puede encontrar aquí:
 
