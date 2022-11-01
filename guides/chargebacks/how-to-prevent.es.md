@@ -15,7 +15,7 @@ No es posible evitar todos los contracargos, pero puedes disminuir la probabilid
 >
 > En caso de no tener un valor disponible para la sección, puedes dejarlo vacío.
 
-3. Asegúrese de agregar todos los detalles de pago y del cliente como nombre, dirección y medio de pago en la solicitud [Crear pago](/developers/es/reference/payments/_payments/post).
+3. Asegúrate de agregar todos los detalles de pago y del cliente, como nombre, dirección y medio de pago, en la solicitud [Crear pago](/developers/es/reference/payments/_payments/post).
    
 4. [Envíe el comprobante del pago](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/16170) a su cliente por e-mail o mensaje de texto.
    
