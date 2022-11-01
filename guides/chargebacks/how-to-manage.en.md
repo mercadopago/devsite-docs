@@ -12,6 +12,7 @@ All the information necessary to manage chargeback disputes made can be found he
 >WARNING
 >
 >Important
+>
 >It is only necessary to continue with the next steps if:
 >1. The chargeback dispute is eligible for coverage
 >2. Documentation is required
@@ -34,7 +35,7 @@ https://api.mercadopago.com/v1/chargebacks/ID
 If the documentation has been successfully uploaded, the API will answer with `200 OK`, and the `documentation_status` value will change to `review_pending`.
 
 
-1. Upon resolution, a new IPN notification will be sent so that you can verify the case. Check the dispute using the [Get Chargeback](/developers/pt/reference/chargebacks/_chargebacks_id/get) method. The `coverage_applied` value could have taken on one of the possible values:
+4. Upon resolution, a new IPN notification will be sent so that you can verify the case. Check the dispute using the [Get Chargeback](/developers/pt/reference/chargebacks/_chargebacks_id/get) method. The `coverage_applied` value could have taken on one of the possible values:
 
 | Value           | Description
 | ----            | ----
