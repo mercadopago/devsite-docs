@@ -22,6 +22,7 @@ Não é possível evitar todas as contestações, porém, você pode diminuir a 
 5. Configure e ative as [notificações IPN](/developers/panel/notifications/ipn) no painel para receber alertas de comportamentos irregulares, ativando a opção Alerta de Fraudes (`delivery_cancellation`)
 
 >WARNING
+>
 >Importante
 > 
 > Ao cobrar com Point, revise os dados do comprador e solicite algum documento de identificação
