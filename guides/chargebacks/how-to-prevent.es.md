@@ -15,13 +15,14 @@ No es posible evitar todos los contracargos, pero puede disminuir la probabilida
 >
 > En caso de no tener un valor disponible para la sección, puedes dejarlo vacío.
 
-1. Asegúrese de agregar todos los detalles de pago y del cliente como nombre, dirección y medio de pago en la solicitud [Crear pago](/developers/es/reference/payments/_payments/post).
+3. Asegúrese de agregar todos los detalles de pago y del cliente como nombre, dirección y medio de pago en la solicitud [Crear pago](/developers/es/reference/payments/_payments/post).
    
-2. [Envíe el comprobante del pago](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/16170) a su cliente por e-mail o mensaje de texto.
+4. [Envíe el comprobante del pago](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/16170) a su cliente por e-mail o mensaje de texto.
    
-3. Configure y habilite [las notificaciones IPN](/developers/panel/notifications/ipn) para recibir alertas por comportamiento irregular al habilitar **Alerta de fraude**(`delivery_cancellation`) 
+5. Configure y habilite [las notificaciones IPN](/developers/panel/notifications/ipn) para recibir alertas por comportamiento irregular al habilitar **Alerta de fraude**(`delivery_cancellation`) 
 
 >WARNING
+>
 >Importante
 > 
 > Al cobrar com Point, revisa los dados del comprador y solicita siempre una identificación

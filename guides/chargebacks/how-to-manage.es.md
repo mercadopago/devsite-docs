@@ -12,13 +12,14 @@ Toda la información necesaria para gestionar las disputas de contracargos reali
 >WARNING
 >
 >Importante
+>
 >Solo es necesario continuar con los siguientes pasos si:
 >1. La disputa de contracargo es elegible para la cobertura
 >2. Se requiere documentación
 >3. El plazo no ha vencido
 >
 
-1. Envía los documentos a través del siguiente solitud:
+3. Envía los documentos a través del siguiente solitud:
 ```curl
 curl -X GET \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
