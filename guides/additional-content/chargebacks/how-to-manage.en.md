@@ -17,7 +17,7 @@ All the information necessary to manage chargeback disputes made can be found he
 > 
 > 1. The chargeback dispute is eligible for coverage
 > 2. Documentation is required
->3. The term has not expired
+> 3. The term has not expired
 >
 
 3. Send the documents through the following API method:
