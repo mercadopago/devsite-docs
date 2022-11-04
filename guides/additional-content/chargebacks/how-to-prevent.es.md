@@ -11,7 +11,7 @@ No es posible evitar todos los contracargos, pero puedes disminuir la probabilid
 
 > WARNING
 >
->Importante
+> Atención
 >
 > En caso de no tener un valor disponible para la sección, puedes dejarlo vacío.
 
