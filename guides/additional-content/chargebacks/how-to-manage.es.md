@@ -11,7 +11,7 @@ Toda la información necesaria para gestionar las disputas de contracargos reali
 
 > WARNING
 >
->Importante
+> Atención
 >
 >Solo es necesario continuar con los siguientes pasos si:
 >1. La disputa de contracargo es elegible para la cobertura
