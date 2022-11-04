@@ -9,7 +9,7 @@ Toda la información necesaria para gestionar las disputas de contracargos reali
 2. Verifica toda la información relacionada con un contracargo utilizando la solicitud [Obtener contracargo](/developers/pt/reference/chargebacks/_chargebacks_id/get)
    1. Verifica si el [contracargo se puede cubrir](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/294) y si se requiere alguna documentación, a través de los campos `coverage_eligible` y `documentation_required`, respectivamente.
 
->WARNING
+> WARNING
 >
 >Importante
 >
