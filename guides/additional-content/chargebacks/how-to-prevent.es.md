@@ -9,7 +9,7 @@ No es posible evitar todos los contracargos, pero puedes disminuir la probabilid
 <script src="https://www.mercadopago.com/v2/security.js" view="home"></script>
 ```
 
->WARNING
+> WARNING
 >
 >Importante
 >
