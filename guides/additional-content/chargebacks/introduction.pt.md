@@ -2,7 +2,6 @@
 
 Nesta documentação você encontra todas as informações necessárias para o gerenciamento e prevenção de contestações de pagamento.
 
-
 ## O que é uma contestação de pagamento?
 
 Uma contestação é gerada quando um comprador que fez um pagamento para você pelo Mercado Pago **não reconhece a cobrança no cartão de débito ou crédito**.
