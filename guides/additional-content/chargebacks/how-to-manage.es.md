@@ -28,7 +28,7 @@ curl -X POST  \
 https://api.mercadopago.com/v1/chargebacks/ID/documentation
 ```
 
->NOTE
+> NOTE
 >
 > Importante
 >
