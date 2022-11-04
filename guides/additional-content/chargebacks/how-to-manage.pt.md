@@ -11,7 +11,7 @@ Abaixo você encontra as informações necessárias para o gerenciamento das dis
 
 > WARNING
 >
->Importante
+> Atenção
 >
 >Só é necessário continuar com os próximos passos se:
 >1. A contestação for elegível a cobertura
