@@ -9,7 +9,7 @@ Não é possível evitar todas as contestações, porém, você pode diminuir a 
 <script src="https://www.mercadopago.com/v2/security.js" view="home"></script>
 ```
 
->WARNING
+> WARNING
 >
 >Importante
 >
