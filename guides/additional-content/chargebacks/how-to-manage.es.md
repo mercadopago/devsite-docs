@@ -15,7 +15,7 @@ Toda la información necesaria para gestionar las disputas de contracargos reali
 >
 > Solo es necesario continuar con los siguientes pasos si:
 >1. La disputa de contracargo es elegible para la cobertura
->2. Se requiere documentación
+> 2. Se requiere documentación.
 > 3. El plazo no ha vencido.
 
 3. Envía los documentos a través de la siguiente solicitud:
