@@ -10,7 +10,6 @@ Cuando esto sucede, se retiene el monto pagado hasta que se resuelva el problema
 
 [Haz clic aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/288) para obtener más detalles sobre cómo protegemos a nuestros vendedores.
 
-
 > NOTE
 >
 > Importante
