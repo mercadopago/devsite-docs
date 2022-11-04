@@ -10,7 +10,6 @@ Quando isso acontece, o valor pago é retido até que o problema seja resolvido 
 
 [Clique aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/Como-protegemos-os-vendedores_500) para mais detalhes sobre como protegemos os vendedores
 
-
 > NOTE
 >
 > Nota
