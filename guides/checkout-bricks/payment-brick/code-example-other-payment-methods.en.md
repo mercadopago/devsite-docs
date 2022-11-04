@@ -322,6 +322,6 @@ curl -X POST \
 
 > NOTE
 >
-> Note
+> Important
 >
-> The customer has between 3 and 5 days to pay, depending on the payment method. After this time, the payment must be canceled.
+> The boleto expiration date can be configured by sending a POST request with the `data_of_expiration` parameter to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post). After expiration, the boleto will be cancelled.

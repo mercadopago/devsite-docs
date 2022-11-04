@@ -6,6 +6,12 @@
 
 To configure payments with **boleto bancário** or **payment in lottery**, send a **POST** with the following parameters to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post) and run the request or, if you prefer, use one of our SDKs below.
 
+> NOTE
+>
+> Important
+>
+> Remember that Brick already resolves most parameters to send the POST. The information return comes in the `onSubmit` callback, inside the `formData` object, where you can find parameters like: `payment_method_id`, `payer.email` and `amount`.
+
 | Payment Type | Parameter | Value |
 | --- | --- | --- |
 | Boleto | `payment_method_id` | `bolbradesco` |
@@ -257,6 +263,6 @@ In addition to displaying the payment status, Status Screen Brick will also disp
 
 > NOTE
 >
-> Note
+> Important
 >
-> The customer has between 3 and 5 days to pay, depending on the payment method. After this time, the payment must be canceled.
+> The boleto expiration date can be configured by sending a POST request with the `data_of_expiration` parameter to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post). After expiration, the boleto will be cancelled.

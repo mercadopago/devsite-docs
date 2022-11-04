@@ -320,9 +320,8 @@ curl -X POST \
 ```
 ]]]
 
-
 > NOTE
 >
-> Nota
+> Importante
 >
-> O cliente tem entre 3 e 5 dias para pagar, dependendo do meio de pagamento. Após esse tempo, o pagamento deve ser cancelado.
+> A data de vencimento do boleto pode ser configurada através do envio de requisição POST com parâmetro `data_of_expiration` ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post). Após o vencimento, o boleto será cancelado.
