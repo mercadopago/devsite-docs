@@ -14,7 +14,8 @@ Abaixo você encontra as informações necessárias para o gerenciamento das dis
 > Atenção
 >
 > Só é necessário continuar com os próximos passos se:
->1. A contestação for elegível a cobertura
+> 
+>  1. A contestação for elegível a cobertura.
 >2. For necessária a apresentação de documentação
 >3. O prazo não expirou
 >
