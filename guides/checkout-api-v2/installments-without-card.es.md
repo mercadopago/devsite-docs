@@ -43,6 +43,117 @@ Las preferencias son conjuntos de información sobre un producto y/o servicio qu
 
 La primera etapa para configurar los pagos con Mercado Crédito es la creación de la preferencia. Para esto, envía un POST con el parámetro `purpose` y el valor `onboarding_credits` al **endpoint** [/checkout/preferences](/developers/es/reference/preferences/_checkout_preferences/post) y ejecuta la solicitud o, si lo prefieres, utiliza uno de los SDKs indicados a continuación.
 
+[[[
+```php
+<?php
+// Crea un objeto de preferencia
+$preference = new MercadoPago\Preference();
+
+// Crea un ítem en la preferencia
+$item = new MercadoPago\Item();
+$item->title = 'Mi producto';
+$item->quantity = 1;
+$item->unit_price = 75;
+$preference->items = array($item);
+$preference->purpose = 'onboarding_credits';
+$preference->save();
+?>
+```
+```node
+// Crea un objeto de preferencia
+let preference = {
+  items: [
+    {
+      title: 'Mi producto',
+      unit_price: 100,
+      quantity: 1,
+    }
+  ],
+  purpose: 'onboarding_credits'
+};
+
+mercadopago.preferences.create(preference)
+.then(function(response){
+// Este valor substituirá a la string "<%= global.id %>" en tu HTML
+  global.id = response.body.id;
+}).catch(function(error){
+  console.log(error);
+});
+```
+```java
+// Crea un objeto de preferencia
+PreferenceClient client = new PreferenceClient();
+
+// Crea un ítem en la preferencia
+PreferenceItemRequest item =
+   PreferenceItemRequest.builder()
+       .title("Mi producto")
+       .quantity(1)
+       .unitPrice(new BigDecimal("75"))
+       .build();
+
+List<PreferenceItemRequest> items = new ArrayList<>();
+items.add(item);
+
+PreferenceRequest request =
+   PreferenceRequest.builder().items(items).purpose("onboarding_credits").build();
+
+client.create(request);
+```
+```ruby
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
+# Crea un objeto de preferencia
+preference_data = {
+  items: [
+    {
+      title: 'Mi producto',
+      unit_price: 100,
+      quantity: 1
+    }
+  ],
+  purpose: 'onboarding_credits'
+}
+preference_response = sdk.preference.create(preference_data)
+preference = preference_response[:response]
+
+# Este valor substituirá a la string "<%= @preference_id %>" en tu HTML
+@preference_id = preference['id']
+```
+```csharp
+// Crea el objeto de request de la preferencia
+var request = new PreferenceRequest
+{
+    Items = new List<PreferenceItemRequest>
+    {
+        new PreferenceItemRequest
+        {
+            Title = "Mi producto",
+            Quantity = 1,
+            CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
+            UnitPrice = 75m,
+        },
+    },
+    Purpose = "onboarding_credits",
+};
+// Crea la preferencia
+var client = new PreferenceClient();
+Preference preference = await client.CreateAsync(request);
+```
+```python
+preference_data = {
+    "items": [
+        {
+            "title": "Mi producto",
+            "unit_price": 100,
+            "quantity": 1
+        }
+    ],
+    "purpose": "onboarding_credits"
+}
+
+preference_response = sdk.preference().create(preference_data)
+preference = preference_response["response"]
+```
 ```curl
 curl -X POST \
   'https://api.mercadopago.com/checkout/preferences' \
@@ -60,6 +171,7 @@ curl -X POST \
     "purpose": "onboarding_credits"
 }'
 ```
+]]]
 
 > CLIENT_SIDE
 >
@@ -69,6 +181,7 @@ curl -X POST \
 
 Con la preferencia creada, se debe exhibir el botón de pago que permitirá al comprador utilizar Mercado Crédito para pagar. Para exhibir el botón de pago, inserte el siguiente código directamente en su proyecto.
 
+----[mla]---- 
 ```html
 <div class="cho-container"></div>
 <script src="https://sdk.mercadopago.com/js/v2"></script>
@@ -81,12 +194,34 @@ Con la preferencia creada, se debe exhibir el botón de pago que permitirá al c
     },
     render: {
       container: '.cho-container',
-      label: 'Em até 12x sem cartão com Mercado Pago',
+      label: 'Hasta 12 cuotas sin tarjeta con Mercado Pago',
       type: 'credits',
     }
   });
 </script>
 ```
+------------
+
+----[mlm]---- 
+```html
+<div class="cho-container"></div>
+<script src="https://sdk.mercadopago.com/js/v2"></script>
+<script>
+  const mp = new MercadoPago('PUBLIC_KEY');
+
+  mp.checkout({
+    preference: {
+      id: 'YOUR_PREFERENCE_ID'
+    },
+    render: {
+      container: '.cho-container',
+      label: 'Hasta 12 meses sin tarjeta con Mercado Pago',
+      type: 'credits',
+    }
+  });
+</script>
+```
+------------
 
 Al ingresar este código, debería ver un botón similar al ejemplo ilustrado a continuación.
 

@@ -31,6 +31,117 @@ Preferences are sets of information about a product and/or service that allow yo
 
 The first step to configure payments with Mercado Crédito is to create the preference. To do so, send a POST with the `purpose` parameter and the `onboarding_credits` value to the **endpoint** [/checkout/preferences](/developers/en/reference/preferences/_checkout_preferences/post) and execute the request or, if you prefer, use the SDK below.
 
+[[[
+```php
+<?php
+// Create a preference object
+$preference = new MercadoPago\Preference();
+
+// Create an item in the preference
+$item = new MercadoPago\Item();
+$item->title = 'My product';
+$item->quantity = 1;
+$item->unit_price = 75;
+$preference->items = array($item);
+$preference->purpose = 'onboarding_credits';
+$preference->save();
+?>
+```
+```node
+// Create a preference object
+let preference = {
+items: [
+{
+title: 'My product',
+unit_price: 100,
+quantity: 1,
+}
+],
+purpose: 'onboarding_credits'
+};
+
+Mercadopago.preferences.create(preference)
+.then(function(response){
+// This value will replace the string "<%= global.id %>" in your HTML
+global.id = response.body.id;
+}).catch(function(error){
+console.log(error);
+});
+```
+```java
+// Create a preference object
+PreferenceClient client = new PreferenceClient();
+
+// Create an item in the preference
+PreferenceItemRequest item =
+PreferenceItemRequest.builder()
+.title("My product")
+.quantity(1)
+.unitPrice(new BigDecimal("75"))
+.build();
+
+List<PreferenceItemRequest> items = new ArrayList<>();
+items.add(item);
+
+PreferenceRequest request =
+PreferenceRequest.builder().items(items).purpose("onboarding_credits").build();
+
+client.create(request);
+```
+```ruby
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
+# Create a preference object
+preference_data = {
+items: [
+{
+title: 'My product',
+unit_price: 100,
+quantity: 1
+}
+],
+purpose: 'onboarding_credits'
+}
+preference_response = sdk.preference.create(preference_data)
+preference = preference_response[:response]
+
+# This value will replace the string "<%= @preference_id %>" in your HTML
+@preference_id = preference['id']
+```
+```csharp
+// Create the preference request object
+var request = new PreferenceRequest
+{
+Items = new List<PreferenceItemRequest>
+{
+new PreferenceItemRequest
+{
+Title = "My product,
+quantity = 1,
+CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
+UnitPrice = 75m,
+},
+},
+Purpose = "onboarding_credits",
+};
+// Create the preference
+var client = new PreferenceClient();
+Preference preference = await client.CreateAsync(request);
+```
+```python
+preference_data = {
+"items": [
+{
+"title": "My product",
+"unit_price": 100,
+"quantity": 1
+}
+],
+"purpose": "onboarding_credits"
+}
+
+preference_response = sdk.preference().create(preference_data)
+preference = preference_response["response"]
+```
 ```curl
 curl -X POST \
   'https://api.mercadopago.com/checkout/preferences' \
@@ -48,6 +159,7 @@ curl -X POST \
     "purpose": "onboarding_credits"
 }'
 ```
+]]]
 
 > CLIENT_SIDE
 >
