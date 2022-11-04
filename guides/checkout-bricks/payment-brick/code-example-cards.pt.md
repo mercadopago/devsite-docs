@@ -84,35 +84,30 @@ Para facilitar e otimizar o seu processo de integração, veja abaixo um exemplo
 [[[
 ```php
 <?php
- require_once 'vendor/autoload.php';
+  require_once 'vendor/autoload.php';
+  MercadoPago\SDK::setAccessToken("YOUR_ACCESS_TOKEN");
+  $contents = json_decode(file_get_contents('php://input'), true);
  
- MercadoPago\SDK::setAccessToken("YOUR_ACCESS_TOKEN");
-
- $payment = new MercadoPago\Payment();
- $payment->transaction_amount = (float)$_POST['transactionAmount'];
- $payment->token = $_POST['token'];
- $payment->description = $_POST['description'];
- $payment->installments = (int)$_POST['installments'];
- $payment->payment_method_id = $_POST['paymentMethodId'];
- $payment->issuer_id = (int)$_POST['issuer'];
- $payer = new MercadoPago\Payer();
- $payer->email = $_POST['cardholderEmail'];
- $payer->identification = array(----[mla, mlb, mlu, mlc, mpe, mco]----
-        "type" => $_POST['identificationType'],------------
-        "number" => $_POST['identificationNumber']
-    );
- $payer->first_name = $_POST['cardholderName'];
- $payment->payer = $payer;
-
- $payment->save();
-
- $response = array(
-        'status' => $payment->status,
-        'status_detail' => $payment->status_detail,
-        'id' => $payment->id
-    );
-    echo json_encode($response);   
-    
+  $payment = new MercadoPago\Payment();
+  $payment->transaction_amount = $contents['transaction_amount'];
+  $payment->token = $contents['token'];
+  $payment->installments = $contents['installments'];
+  $payment->payment_method_id = $contents['payment_method_id'];
+  $payment->issuer_id = $contents['issuer_id'];
+  $payer = new MercadoPago\Payer();
+  $payer->email = $contents['payer']['email'];
+  $payer->identification = array(
+     "type" => $contents['payer']['identification']['type'],
+     "number" => $contents['payer']['identification']['number']
+  );
+  $payment->payer = $payer;
+  $payment->save();
+  $response = array(
+     'status' => $payment->status,
+     'status_detail' => $payment->status_detail,
+     'id' => $payment->id
+  );
+  echo json_encode($response);
 ?>
 ```
 ```node
