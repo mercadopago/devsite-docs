@@ -13,7 +13,20 @@ Luego de haber creado tu afiliación con **MercadoPagoV2**, debes configurar los
 La configuración de los planes de pago se realiza en la pestaña **Planes de pago** del menú **Configuración** en el módulo **Pagos** en el portal del administrador de la plataforma VTEX. En esta pestaña, debes hacer clic en el botón "+" (*Agregar nuevo plan de pago para ...*) y seleccionar uno de los siguientes planes de pago:
 
 * **Tarjeta de Crédito:** se refiere a transacciones con tarjeta de crédito que se realizan en el sitio web de tu tienda. Esta configuración requiere que selecciones cada marca de tarjeta de crédito que desees en tu tienda. [Puedes hacer clic aquí para descubrir las marcas de tarjeta de crédito disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/vtex/payment-methods). Además, dependiendo de las condiciones de pago que selecciones (Efectivo o Cuotas), tu configuración puede requerir que completes campos adicionales. Para obtener más información sobre cómo configurar las cuotas en VTEX, haz clic [aquí](https://help.vtex.com/es/tutorial/condicoes-de-pagamento--tutorials_455#parcelado-sem-juros). ----[mla, mlu, mlc, mlm, mpe, mco]----
-* **Tarjeta de Débito:** se refiere a transacciones con tarjeta de débito. ------------
+* **Tarjeta de Débito:** se refiere a transacciones con tarjeta de débito. 
+------------
+
+----[mlm, mlb]----
+* **Mercado Crédito:** es el método de financiación de Mercado Pago
+que permite pagar en cuotas sin tarjeta. Para activar el botón de Mercado Crédito, puedes seguir los pasos enumerados a continuación:
+  * Debes tener creada una afiliación de gateway de MercadoPagoV2. Si todavía no lo hiciste, puedes ver cómo hacerlo en [esta documentación](/developers/es/docs/vtex/gateway-affiliations).
+  * En el panel de administración de VTEX, accede a **Pagos > Configuración**.
+  * Ingresa a la pestaña **Condiciones de Pago**, haz clic en el botón "+" y busca por Mercado Crédito.
+  * Nombra la regla para facilitar su identificación y activa la condición de pago en el campo Estado.
+  * En **Proceso con afiliación**, elige MercadoPagoV2 como tu afiliación.
+  * Haz click en **Guardar**, ¡y listo!
+------------
+
 * **Otro:** se refiere a transacciones con **MercadoPagoOff**, **MercadoPagoWallet**, o **MercadoPagoPro**.
   * Si configuras **MercadoPagoPro**, el comprador realizará el pago en el entorno de Mercado Pago, a través de un formulario presentado directamente en tu tienda y tendrá acceso a todos los métodos de pago disponibles en la plataforma.
   * Si configuras **MercadoPagoWallet**, el comprador utilizará su billetera de Mercado Pago. Este modo es exclusivo para compradores registrados en Mercado Pago o Mercado Libre y sugerimos usarlo si eliges **Plan de Pago con Tarjeta de Crédito**.

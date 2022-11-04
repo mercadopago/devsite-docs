@@ -14,6 +14,17 @@ A configuração das condições de pagamento é feita na aba **Condições de p
 
 * **Cartão de Crédito:** refere-se a transações com cartões de crédito que serão realizadas em sua loja. Este configuração requer que você selecione cada bandeira de cartão de crédito que deseja em sua loja. [Clique aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/vtex/payment-methods) para mais informações sobre as bandeiras disponíveis. Além disso, dependendo das condições de pagamento que selecionar (À vista ou Parcelado), sua configuração pode exigir o preenchimento de campos adicionais. Para mais informações sobre como configurar parcelas na VTEX, clique [aqui](https://help.vtex.com/pt/tutorial/condicoes-de-pagamento--tutorials_455#parcelado-sem-juros). ----[mla, mlu, mlc, mlm, mpe, mco]----
 * **Cartão de Débito:** refere-se a transações com cartões de Débito. ------------
+
+----[mlm, mlb]----
+* **Mercado Credito:** é a forma de financiamento do Mercado Pago
+que permite que você pague parcelado sem cartão. Para ativar o botão Mercado Credito, você pode seguir os passos detalhados abaixo:
+  * Você deve criar uma afiliação de gateway MercadoPagoV2, se ainda não tiver uma. Como? Aqui está o [passo a passo](/developers/pt/docs/vtex/gateway-affiliations).
+  * No painel administrativo da VTEX, acesse **Pagamentos**, e, em seguida, **Configurações**.
+  * Vá na aba **Condições de pagamento**, clique no botão “+” e procure por Mercado Credito.
+  * Nomeie a regra para facilitar a identificação e ative a condição de pagamento no campo Status.
+  * Em **Processo com afiliação**, escolha MercadoPagoV2 como afiliação.
+  * Clique em **Salvar** e pronto!
+------------
 * **Outro:** refere-se às transações com **MercadoPagoOff**, **MercadoPagoWallet**, ou **MercadoPagoPro**.
   * Se você configurar **MercadoPagoPro**, o comprador será direcionado para o ambiente do Mercado Pago onde deverá concluir o pagamento de sua compra utilizando qualquer um dos meios de pagamento disponíveis na plataforma.
   * Se você configurar **MercadoPagoWallet**, o comprador utilizará sua carteira do Mercado Pago. Este modo é exclusivo para compradores cadastrados no Mercado Pago ou Mercado Livre e sugerimos utilizar caso opte pela **Condição de Pagamento Cartão de Crédito**.
