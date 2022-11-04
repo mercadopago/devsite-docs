@@ -32,7 +32,7 @@ https://api.mercadopago.com/v1/chargebacks/ID/documentation
 >
 > Important
 >
->Files can be `.jpg`, `.png` or `.pdf` and should not exceed 10mb overall.
+> Files can be `.jpg`, `.png` or `.pdf` and should not exceed 10mb overall.
 
 If the documentation has been successfully uploaded, the API will answer with `200 OK`, and the `documentation_status` value will change to `review_pending`.
 
