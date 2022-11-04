@@ -26,4 +26,3 @@ It is not possible to avoid all chargebacks; however, you can reduce the probabi
 >Important
 > 
 > When charging with Point, review the buyer's details and always request an ID.
-
