@@ -9,7 +9,7 @@ Abaixo você encontra as informações necessárias para o gerenciamento das dis
 2. Consulte todas as informações de uma contestação com o método [Obter estorno](/developers/pt/reference/chargebacks/_chargebacks_id/get)
    1. Identifique se a contestação é [elegível a cobertura](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/294) e se é necessário apresentar alguma documentação, através dos campos `coverage_elegible` e `documentation_required`, respectivamente.
 
->WARNING
+> WARNING
 >
 >Importante
 >
