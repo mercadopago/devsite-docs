@@ -37,7 +37,6 @@ https://api.mercadopago.com/v1/chargebacks/ID/documentation
 
 Se a documentação for carregada no site com sucesso, a API responderá com status `200 OK` e modificará o valor de `documentation_status` para `review_pending`.
 
-
 4. Aguarde a notificação IPN referente à resolução. Cheque novamente a contestação usando o método [Obter estorno](/developers/pt/reference/chargebacks/_chargebacks_id/get). O valor de `coverage_applied` pode ter assumido um dos possíveis valores:
 
 | Valor           | Descrição
