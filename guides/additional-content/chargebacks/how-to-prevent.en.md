@@ -11,7 +11,7 @@ It is not possible to avoid all chargebacks; however, you can reduce the probabi
 
 >WARNING
 >
->Important
+> Attention
 >
 > If you don't have a value available for the section, you can leave it empty!
 
