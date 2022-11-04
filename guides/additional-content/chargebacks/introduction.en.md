@@ -13,7 +13,7 @@ When this happens, the amount paid is withheld until the problem is resolved wit
 
 > NOTE
 >
-> Note
+> Important
 >
 > For more information on what to do when you receive a chargeback, see [our help page](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/reclamacao-comprador_583).
 
