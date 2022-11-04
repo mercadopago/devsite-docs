@@ -26,5 +26,4 @@ No es posible evitar todos los contracargos, pero puedes disminuir la probabilid
 >Importante
 > 
 > Al cobrar con Point, revisa los datos del comprador y solicita siempre una identificación.
->
 
