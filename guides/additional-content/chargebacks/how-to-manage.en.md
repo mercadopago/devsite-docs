@@ -14,7 +14,8 @@ All the information necessary to manage chargeback disputes made can be found he
 > Attention
 >
 >It is only necessary to continue with the next steps if:
->1. The chargeback dispute is eligible for coverage
+> 
+> 1. The chargeback dispute is eligible for coverage
 >2. Documentation is required
 >3. The term has not expired
 >
