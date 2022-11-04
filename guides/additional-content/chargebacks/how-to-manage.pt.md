@@ -1,4 +1,5 @@
 # Como gerenciar disputas de contestação?
+
 Uma disputa ocorre quando **você deseja argumentar** o pedido de contestação com informações e documentos que **validam a transação** e garantem que o produto foi entregue em conformidade.
 
 Abaixo você encontra as informações necessárias para o gerenciamento das disputas das contestações feitas.
