@@ -11,7 +11,7 @@ Não é possível evitar todas as contestações, porém, você pode diminuir a 
 
 > WARNING
 >
->Importante
+> Atenção
 >
 > Caso não tenha um valor disponível para seção, você pode deixá-lo vazio.
 
