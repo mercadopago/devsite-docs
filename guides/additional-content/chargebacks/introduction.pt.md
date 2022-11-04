@@ -12,6 +12,6 @@ Quando isso acontece, o valor pago é retido até que o problema seja resolvido 
 
 > NOTE
 >
-> Nota
+> Importante
 >
 > Para mais informações sobre o que fazer ao receber uma reclamação, [consulte nossa página de ajuda](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/reclamacao-comprador_583).
