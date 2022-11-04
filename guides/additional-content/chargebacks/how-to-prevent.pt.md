@@ -26,5 +26,4 @@ Não é possível evitar todas as contestações, porém, você pode diminuir a 
 >Importante
 > 
 > Ao cobrar com Point, revise os dados do comprador e solicite algum documento de identificação
->
 
