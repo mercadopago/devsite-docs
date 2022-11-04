@@ -17,7 +17,7 @@ Abaixo você encontra as informações necessárias para o gerenciamento das dis
 > 
 >  1. A contestação for elegível a cobertura.
 > 2. For necessária a apresentação de documentação.
->3. O prazo não expirou
+> 3. O prazo não expirou.
 >
 
 3. Encaminhe os documentos que comprovem que a venda é válida através do método a seguir
