@@ -21,7 +21,7 @@ It is not possible to avoid all chargebacks; however, you can reduce the probabi
    
 5. Configure and enable [IPN notifications](/developers/panel/notifications/ipn) on your dashboard to receive alerts for irregular behavior by enabling **Fraud Alert** (`delivery_cancellation`) 
 
->WARNING
+> NOTE
 >
 >Important
 > 
