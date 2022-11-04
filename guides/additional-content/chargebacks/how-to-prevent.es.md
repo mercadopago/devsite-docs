@@ -21,7 +21,7 @@ No es posible evitar todos los contracargos, pero puedes disminuir la probabilid
    
 5. Configura y habilita [las notificaciones IPN](/developers/panel/notifications/ipn) para recibir alertas por comportamiento irregular al habilitar **Alerta de fraude**(`delivery_cancellation`) 
 
->WARNING
+> NOTE
 >
 >Importante
 > 
