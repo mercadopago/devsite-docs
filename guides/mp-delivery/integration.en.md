@@ -11,19 +11,3 @@ To configure the integration with Mercado Pago Delivery, follow the steps below.
 > As a best practice, it is always necessary to check the status of the requests that have been made in our APIs, for cases in which some type of intermittency occurs. This measure is necessary mainly in cases where requests are made that change the status of an order or store. As in the example of an action to accept an order, it is recommended to make subsequent retries and, if the request has not yet returned a positive status (200), this order must be canceled. <br/></br>
 > <br/></br>
 > The important thing is to always keep the statuses synchronized, whether of an order or a store, between Mercado Pago and POS, so it is always important to implement solutions in case of errors.
-
-> PREV_STEP_CARD_EN
->
-> Prerequisites
->
-> Learn about the prerequisites for performing the integration.
->
-> [Prerequisites](/developers/en/docs/mp-delivery/requirements)
-
-> NEXT_STEP_CARD_EN
->
-> Order management
->
-> Learn how to manage orders with Mercado Pago Delivery.
->
-> [Order management](/developers/en/docs/mp-delivery/order-management)

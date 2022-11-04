@@ -15,8 +15,6 @@ There are two ways to generate an Available Balance report:
 | Mercado Pago panel | <br/> It's very simple and fast. To generate it from your Mercado Pago account, go to ----[mla]---- [your reports](https://www.mercadopago.com.ar/balance/reports?page=1#!/settlement-report) ------------ ----[mlm]---- [your reports](https://www.mercadopago.com.mx/balance/reports?page=1#!/settlement-report) ------------ ----[mlu]---- [your reports](https://www.mercadopago.com.uy/balance/reports?page=1#!/settlement-report) ------------ ----[mlc]---- [your reports](https://www.mercadopago.cl/balance/reports?page=1#!/settlement-report) ------------ ----[mco]---- [your reports](https://www.mercadopago.com.co/balance/reports?page=1#!/settlement-report) ------------ ----[mpe]---- [your reports](https://www.mercadopago.com.pe/balance/reports?page=1#!/settlement-report) ------------ ----[mlb]---- [your reports](https://www.mercadopago.com.br/balance/reports?page=1#!/settlement-report) ------------ and choose the Reports option.<br/><br/>Follow the step by step to [generate reports from this panel](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/account-money/panel).<br/><br/> |
 | API integration | <br/>Schedule the frequency of your report according to your needs. It can be both manually and on a scheduled basis.<br/><br/>Read the documentation to [generate reports through API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/account-money/api). <br/><br/> |
 
-<br/>
-
 ## Technical characteristics of the report
 
 Consider the following technical information when you want to generate, schedule and set up your reports.

@@ -6,6 +6,7 @@ sites_supported:
 ---
 
 # Cobros Presenciales con Point
+
 Puedes potenciar tus ventas en el mundo físico cobrando a través del dispositivo Mercado Pago Point.
 
 La aplicación móvil de Mercado Pago junto al Point permite cobrar de forma segura con tarjetas de crédito y tarjetas de débito. Sus principales funcionalidades son:
@@ -18,14 +19,12 @@ Tus vendedores utilizando la aplicación móvil de Mercado Pago pasan la tarjeta
 
 Para poder cobrar, es necesario que adquieras el dispositivo de Mercado Pago Point:
 
- 
 ----[mla]----
 > [Comprar Point](https://www.mercadopago.com.ar/lector-tarjetas-credito-point?ref=devsite)
 ------------
 ----[mlm]----
 > [Comprar Point](https://www.mercadopago.com.mx/lector-tarjetas-credito-point?ref=devsite)
 ------------  
- 
 
 También, deberás descargar la App desde el *store* de su teléfono móvil:
 
@@ -38,6 +37,5 @@ Existen distintas alternativas para que puedas cobrar a través de Mercado Pago 
 * Integrando tu aplicación la modalidad de cobros vía Point. Tu aplicación genera una orden de pago con el monto y una descripción y llama a la aplicación de Mercado Pago para que el vendedor directamente deslice la tarjeta del pagador y cobre. Una vez procesado el pago, se retorna a tu aplicación.
 
 * Integrando a tu sistema de gestión la modalidad de cobros vía Point. Desde tu sistema se genera una orden de cobro con el monto, una descripción y el dispositivo que quieras que reciba dicha orden. Automáticamente se levantará la aplicación de Mercado Pago para que el vendedor directamente deslice la tarjeta del pagador y cobre. Una vez procesado el pago, se cerrará la orden.
-
 
 En base a tu modelo de negocio, puede escoger alguna de las opciones o combinarlas para ofrecer a tus clientes una buena experiencia de compra en tus tiendas físicas.

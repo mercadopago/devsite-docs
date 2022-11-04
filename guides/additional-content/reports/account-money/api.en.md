@@ -941,8 +941,6 @@ EXTERNAL_REFERENCE;SOURCE_ID;USER_ID;PAYMENT_METHOD_TYPE;PAYMENT_METHOD;SITE;TRA
 2112729919;5067463621;123456789;credit_card;master;MLB;SETTLEMENT;79.00;BRL;2019-08-11T20:41:46.000-04:00;-8.85;70.15;BRL;2019-08-11T20:41:55.000-04:00;70.15;0.00;[{}];-8.85;0.00;0.00;0.00;1;2112729919;;;
 ```
 
-<br/>
-
 ## Schedule your automatic reports
 
 Generate your reports on a scheduled basis by configuring two instances: activation and Deactivation.
@@ -1131,20 +1129,4 @@ You will receive an `HTTP STATUS 200 (OK)` in response.
 >
 > This documentation corresponds to the new version of the API
 >
-> To check the previous version, please go to the [old API Generation section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/account-money/v1/api).
-
-> NEXT_STEP_CARD_EN
->
-> Generating from Mercado Pago
->
-> Download your reports manually or scheduled from your Mercado Pago account.         
->
-> [Generating from Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/account-money/panel)
-
-> NEXT_STEP_CARD_EN
->
-> Glossary
->
-> Know what each term means and the detail of the columns that make up the report.
->
-> [Glossary](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/account-money/glossary)
+> To check the previous version, please go to the [old API Generation section.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/account-money/v1/api)

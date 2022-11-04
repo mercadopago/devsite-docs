@@ -6,6 +6,7 @@ sites_supported:
 ---
 
 # Cobros con Point sin integración
+
 Desde la aplicación de Mercado Pago, tienes la opción de cobrar en tus tiendas físicas mediante el dispositivo Point.
 No necesitas saber de programación.
 
@@ -17,7 +18,6 @@ Te guiaremos para que puedas cobrar:
 - Ingresa el CVV de la tarjeta, el DNI del pagador y hazlo firmar.
 - ¡Listo! Ya cobraste, ahora puedes enviarle el comprobante de la operación por email o sms.
 
-
 ### Catálogo de Productos en Point
 
 Una alternativa para que puedas recibir pagos presenciales sin necesidad de programación, es que cargues en la sección Cobrar con Point tu catálogo de productos.
@@ -26,9 +26,12 @@ De ésta manera cuando sea el momento de cobrar, el vendedor sólo deberá selec
 
 Para cada producto puedes insertar una imagen, el precio y nombre del mismo.
 
-
 ## Entérate de tus pagos
 
-Puedes consultar tus ventas en el listado de actividades de la cuenta de Mercado Pago, o bien integrar [notificaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/webhooks/webhooks) en tu sistema de gestión.
+Puedes consultar tus ventas en el listado de actividades de la cuenta de Mercado Pago, o bien integrar [notificaciones](/developers/es/docs/mp-point/additional-content/notifications/webhooks) en tu sistema de gestión.
 
-> Si quieres construir algo más avanzado y personalizado, consulta nuestra documentación de [Point integrado](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/mp-point/how-to-integrate)
+> NOTE
+>
+> Importante
+> 
+> Si quieres construir algo más avanzado y personalizado, consulta los [tipos de integración disponibles](/developers/es/docs/mp-point/types-of-integration).

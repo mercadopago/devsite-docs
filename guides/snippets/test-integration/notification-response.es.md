@@ -5,8 +5,8 @@ En la siguiente tabla puedes encontrar los principales eventos, plazos y tiempo 
 | Evento | Plazo después del primer envío | Tiempo de espera de confirmación |
 | --- | --- | --- |
 | Envío | - | 22 segundos |
-| Primer intento | 5 minutos | 5 segundos |
-| Segundo intento | 45 minutos | 5 segundos |
+| Primer intento | 15 minutos | 5 segundos |
+| Segundo intento | 30 minutos | 5 segundos |
 | Tercer intento | 6 horas | 5 segundos |
-| Cuarto intento | 2 días | 5 segundos |
-| Quinto intento | 4 días | 5 segundos |
+| Cuarto intento | 48 horas | 5 segundos |
+| Quinto intento | 96 horas | 5 segundos |

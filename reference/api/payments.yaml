@@ -1406,6 +1406,7 @@ paths:
         - $ref: '#/tags/qr-code'
         - $ref: '#/tags/subscriptions'
         - $ref: '#/tags/checkout-api'
+        - $ref: '#/tags/mp-point'
       summary: Get payment
       x-summary-i18n:
         eng: Get payment
@@ -2851,6 +2852,7 @@ paths:
         - $ref: '#/tags/qr-code'
         - $ref: '#/tags/subscriptions'
         - $ref: '#/tags/checkout-api'
+        - $ref: '#/tags/mp-point'
       summary: Search payments
       x-summary-i18n:
         eng: Search payments

@@ -1,12 +1,21 @@
 # Glosario
 
-----[mlm, mlb, mla]----
+----[mla]----
 > WARNING
 >
-> El reporte de Dinero retirado será deshabilitado desde el 1 de marzo de 2022
+> Importante
 >
-> Usa el [reporte de Liberaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/introduction) para conciliar las transacciones del dinero disponible en tu cuenta, incluidos tus retiros bancarios.
+> A partir del 5 de diciembre no podrás crear nuevos reportes Dinero retirado. Para seguir llevando el control de todos los retiros y movimientos de tu dinero disponible [usa el reporte Liberaciones.](https://bit.ly/3JzFPEG)
 ------------
+
+----[mlm]----
+> WARNING
+>
+> Importante
+>
+> A partir del 12 de diciembre no podrás crear nuevos reportes Dinero retirado. Para seguir llevando el control de todos los retiros y movimientos de tu dinero disponible [usa el reporte Liberaciones.](https://bit.ly/3QiCD2f)
+------------
+
 ----[mpe, mlu]----
 > WARNING
 >
@@ -14,6 +23,7 @@
 >
 > A partir del 15 de mayo no podrás crear nuevos reportes. Tendrás a disposición tu historial para que puedas descargar los archivos que necesites. Para seguir llevando el control de todos los retiros y movimientos de tu dinero disponible puedes usar el [reporte de liberaciones.](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/23879?utm_source=faq_mp&utm_medium=faq&utm_campaign=bank_disable)
 ------------
+
 ----[mco, mlc]----
 > WARNING
 >
@@ -42,7 +52,7 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 | TAXES_AMOUNT | Impuestos cobrados ----[mla]---- por retenciones de Ingresos Brutos, IVA, Ganancias; e impuestos sobre los Créditos y Débitos, entre otros. [Ver más detalle sobre retenciones y percepciones](https://vendedores.mercadolibre.com.ar/nota/retenciones-y-percepciones-sobre-tus-ventas-lo-que-debes-saber/). ------------ ----[mlm, mlb]---- por retenciones de Ingresos Brutos. ------------ ----[mco]---- por retenciones de IVA, ICA y Fuente según aplique el caso. ------------ ----[mlu]---- por retenciones de IVA. ------------ |
 | COUPON_AMOUNT | Monto del cupón de descuento. Solo se descuenta del monto bruto (`GROSS_AMOUNT`) si está provisto por el vendedor.|
 | INSTALLMENTS | Cantidad de cuotas en las que se realizó la operación. |
-| PAYMENT METHOD | Consulta los ----[mla]---- [medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods/#bookmark_argentina) ------------ ----[mlb]---- [medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods/#bookmark_brasil) ------------ ----[mpe]---- [medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods/#bookmark_perú) ------------ ----[mco]---- [medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods/#bookmark_colombia) ------------ ----[mlm]---- [medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods/#bookmark_méxico) ------------ ----[mlu]---- [medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods/#bookmark_uruguay) ------------ ----[mlc]---- [medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods/#bookmark_chile) ------------ según el país con el que operes en Mercado Pago. |
+| PAYMENT METHOD | Consulta los [medios de pago disponibles](/developers/es/docs/sales-processing/payment-methods) según el país con el que operes en Mercado Pago. |
 | TAX_DETAIL | <br/> Descripción del impuesto retenido por operación en el `TAXES_AMOUNT`. ----[mla]---- Puede tomar los siguientes valores según la jurisdicción: <br/>cordoba<br/>corrientes<br/>mendoza<br/>la_pampa<br/>santa_fe<br/>tucuman<br/>entre_rios<br/>catamarca<br/>neuquen<br/>santiago_del_estero<br/>rio_negro<br/>jujuy ------------  ----[mco]---- Puede tomar el valor de: <br/>fuente<br/>iva<br/>ica<br/> ------------ <br/><br/> |
 | TAX_AMOUNT_TELCO | Es el valor del impuesto a las empresas de telecomunicaciones que se descuenta del valor bruto. |
 | TRANSACTION_APPROVAL_DATE | Fecha de aprobación de la operación. |
@@ -60,28 +70,10 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 | EFFECTIVE_COUPON_AMOUNT | Costo por ofrecer descuento. |
 | POI_ID | ID del lector si el pago se realiza a través de un comercio físico. |
 ----[mpe, mlu]----
+
 > INFO
 >
 > Algunas definiciones ya no están disponibles o han cambiado
 >
 > Usa este glosario para conocer los términos de los reportes que generes a partir de ------------ ----[mpe]----enero de 2022. ------------  ----[mlu]---- marzo de 2022. ------------ ----[mpe, mlu]---- Para los reportes que abarquen fechas previas [consulta este Glosario.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/available-money/glossary-old)
 ------------
-<hr/>
-
-### Próximos pasos
-
-> LEFT_BUTTON_RECOMMENDED_ES
->
-> Reporte de Dinero retirado
->
-> Qué es y para qué sirve el reporte de Dinero retirado. Descubre ejemplos y casos de uso.
->
-> [Cómo usar el reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/available-money/how-to-use)
-
-> RIGHT_BUTTON_REQUIRED_ES
->
-> Genera tus reportes
->
-> Conoce las formas de generar un reporte y sigue los pasos para configurar tus preferencias.
->
-> [Genera tus reportes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/available-money/generate)

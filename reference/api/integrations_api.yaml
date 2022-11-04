@@ -533,8 +533,8 @@ paths:
       description: This endpoint allows to get information of payment intent. This endpoint will provide the payment intent’s information, its final status and the payment-id, which can be used to get the final status of the transaction in the Payment-API. The Webhook notifications are the main communication point of the payment intent information, then this endpoint should be used for testing and eventualities, and not for polling, because it has restrictions like consume by time, allows to get information one request per second
       x-description-i18n:
         eng: This endpoint allows to get information of payment intent. This endpoint will provide the payment intent’s information, its final status and the payment-id, which can be used to get the final status of the transaction in the Payment-API. The Webhook notifications are the main communication point of the payment intent information, then this endpoint should be used for testing and eventualities, and not for polling, because it has restrictions like consume by time, allows to get information one request per second
-        spa: Este endpoint permite obtener información sobre la intención de pago. Este endpoint proporcionará la información de la intención de pago, su estado final y la identificación del pago, que se puede usar para obtener el estado final de la transacción en la API de pago. Las notificaciones de Webhook son el principal punto de comunicación de la información de intención de pago, entonces este endpoint debe usarse para pruebas y eventualidades, y no para encuestas, ya que tiene restricciones como consumo por tiempo, permite obtener información una solicitud por segundo
-        por: Este endpoint permite obter informações sobre a intenção de pagamento. Este endpoint fornecerá as informações da intenção de pagamento, seu status final e o ID do pagamento, que pode ser usado para obter o status final da transação na API de pagamento. As notificações do webhook são o principal ponto de comunicação das informações de intenção de pagamento, portanto este endpoint deve ser utilizado para testes e contingências, e não para pesquisas, pois possui restrições como consumo por tempo, permite uma requisição por segundo para obter informações
+        spa: Este endpoint permite obtener información sobre la intención de pago. Este endpoint proporcionará la información de la intención de pago, su estado final y la identificación del pago, que se puede usar para obtener el estado final de la transacción en la API de pago. Las notificaciones de Webhook son el principal punto de comunicación de la información de intención de pago, entonces este endpoint debe usarse para pruebas y eventualidades, y no para consultas recurrentes, ya que tiene restricciones como consumo por tiempo, permite obtener información una solicitud por segundo
+        por: Este endpoint permite obter informações sobre a intenção de pagamento. Este endpoint fornecerá as informações da intenção de pagamento, seu status final e o ID do pagamento, que pode ser usado para obter o status final da transação na API de pagamento. As notificações do webhook são o principal ponto de comunicação das informações de intenção de pagamento, portanto este endpoint deve ser utilizado para testes e contingências, e não para consultas recorrentes, pois possui restrições como consumo por tempo, permite uma requisição por segundo para obter informações
       parameters:
         - name: x-test-scope
           in: header
@@ -1013,3 +1013,183 @@ paths:
                       type: string
                       enum:
                         - 500-- Internal server error
+  /point/integration-api/integrator:
+    patch:
+      tags:
+        - $ref: '#/tags/mp-point'
+      summary: Update the integrator configuration
+      x-summary-i18n:
+        eng: Update the integrator configuration
+        spa: Actualizar configuración del integrador
+        por: Atualizar as configurações do integrador
+      description: This endpoint allows you to update the integrator notification settings
+      x-description-i18n:
+        eng: This endpoint allows you to update the integrator notification settings. It is important to keep in mind that this request has no response object
+        spa: Este endpoint te permite actualizar las configuraciones de notificaciones del integrador. Es importante tener en cuenta que este endpoint no tiene objeto de respuestas
+        por: Este endpoint permite atualizar as configurações de notificação do integrador. É importante ter em mente que este request não tem objeto de resposta
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                event_channel_devices:
+                  type: array
+                  description: Allowed notification channels to receive device event notifications.
+                  x-description-i18n:
+                    eng: Allowed notification channels to receive device event notifications. It is important to keep in mind that you must enter a valid channel, for example, "email".
+                    spa: Canales de notificación permitidos para recibir notificaciones de eventos del dispositivo. Es importante tener en cuenta que en este campo se debe ingresar un canal válido, por ejemplo, "email".
+                    por: Canais de notificação permitidos para receber notificações de eventos do dispositivo. É importante ter em mente que neste campo deve ser inserido um canal válido, por exemplo, "email".
+                  items:
+                    type: string
+                    example: "email"
+                    enum:
+                      - email--channel to receive event notifications
+      responses:
+        '204':
+          description: No Content - Configuration updated successfully
+          x-description-i18n:
+            eng: No Content - Configuration updated successfully
+            spa: No Content - Configuración actualizada con exitosamente
+            por: No Content - Configuração atualizada com sucesso
+        '400':
+          description: Bad Request - Channel is not allowed
+          x-description-i18n:
+            eng: Bad Request - Notification channel is not allowed
+            spa: Bad Request - Canal de notificación no permitido
+            por: Bad Request - Canal de notificação não permitido
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 400--Bad-Request--Notification channel is not allowed
+        '401':
+          description: Unauthorized - Invalid token
+          x-description-i18n:
+            eng: Unauthorized - Invalid token
+            spa: Unauthorized - Token no válido
+            por: Unauthorized - Token inválido
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 401--Unauthorized--Invalid token
+        '500':
+          description: Internal Server Error - Something went wrong
+          x-description-i18n:
+            eng: Internal Server Error - Something went wrong
+            spa: Internal Server Error - Something went wrong
+            por: Internal Server Error - Something went wrong
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500--Internal-server-error--Something went wrong
+    get:
+      tags:
+        - $ref: '#/tags/mp-point'
+      summary: Get the integrator information and configuration.
+      x-summary-i18n:
+        eng: Get the integrator information and configuration
+        spa: Obtener la información y configuración del integrador
+        por: Obtenha as informações e configuração do integrador
+      description: This endpoint allows you to get the integrator information and the integrator notification settings
+      x-description-i18n:
+        eng: This endpoint allows you to get the integrator information and the integrator notification settings
+        spa: Este endpoint the permite obtener la información y configuración del integrador
+        por: Este endpoint permite obter informações e configuração do integrador
+      responses:
+        '200':
+          description: Ok - Get the integrator information and configuration
+          x-description-i18n:
+            eng: Ok - Information and configuration of the integrator obtained
+            spa: Ok - Información y configuración del integrador obtenida
+            por: Ok - Informações e configuração do integrador obtidas
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                    example: 1928030819
+                    description: Integrator caller id
+                    x-description-i18n:
+                      eng: Integrator caller id
+                      spa: Caller id del integrador
+                      por: Caller id do integrador
+                  created_at:
+                    type: string
+                    example: "0001-01-01T00:00:00Z"
+                    description: Integration registration date
+                    x-description-i18n:
+                      eng: Integration registration date
+                      spa: Fecha de registro de la integración
+                      por: Data de registro da integração
+                  updated_at:
+                    type: string
+                    example: "0001-02-01T00:00:00Z"
+                    description: Integrator update date
+                    x-description-i18n:
+                      eng: Integrator update date
+                      spa: Fecha de actualización del integrador
+                      por: Data de atualização do integrador
+                  notification_url_enabled:
+                    type: boolean
+                    example: true
+                    description: The integration notification url enabled
+                    x-description-i18n:
+                      eng: The integration notification url enabled
+                      spa: La URL de notificación de integración habilitada
+                      por: URL de notificação de integração ativado
+                  event_channel_devices:
+                    type: array
+                    items:
+                      type: string
+                      description: Allowed notification channels to receive device event notifications. It is important to keep in mind that you must enter a valid channel, for example, "email".
+                      x-description-i18n:
+                        eng: Allowed notification channels to receive device event notifications. It is important to keep in mind that you must enter a valid channel, for example, "email".
+                        spa: Canales de notificación permitidos para recibir notificaciones de eventos del dispositivo. Es importante tener en cuenta que en este campo se debe ingresar un canal válido, por ejemplo, "email".
+                        por: Canais de notificação permitidos para receber notificações de eventos do dispositivo. É importante ter em mente que neste campo deve ser inserido um canal válido, por exemplo, "email".
+        '401':
+          description: Unauthorized - Invalid token
+          x-description-i18n:
+            eng: Unauthorized - Invalid token
+            spa: Unauthorized - Token no válido
+            por: Unauthorized - Token inválido
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 401-- Unauthorized - Invalid token
+        '500':
+          description: Internal Server Error - Something went wrong
+          x-description-i18n:
+            eng: Internal Server Error - Something went wrong
+            spa: Internal Server Error - Something went wrong
+            por: Internal Server Error - Something went wrong
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500-- Internal server error - Something went wrong

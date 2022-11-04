@@ -13,11 +13,3 @@ El vendedor puede utilizar Mercado Pago Delivery de dos formas: a través de una
 El **Gestor de Pedidos** es una herramienta encargada de controlar todo el flujo de una orden. Para acceder a él, en el [panel de usuario de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/home) haz clic en **Delivery > Order Manager**. Es solo para restaurantes que no cuentan con un software de gestión integrado con Mercado Pago, ya que no es posible integrar el Gestor con otro software de gestión de órdenes.
 
 El software de gestión de pedidos, luego de realizar la integración, recibirá notificaciones de nuevas órdenes a través de un webhook registrado durante el proceso de creación de una aplicación dentro de Mercado Pago.
-
-> NEXT_STEP_CARD_ES
->
-> Requisitos prévios
->
-> Conoce los requisitos previos para llevar a cabo la integración.
->
-> [Requisitos previos](/developers/es/docs/mp-delivery/previous-requirements)

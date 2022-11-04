@@ -1112,21 +1112,3 @@ La respuesta con los datos de la cancelación tendrá una estructura similar al 
     "user_id": USER_ID
 }
 ```
-
-### Próximos pasos
-
-> LEFT_BUTTON_RECOMMENDED_ES
->
-> Generación desde Mercado Pago
->
-> Puedes generar tus reportes de Dinero retirado desde el panel de Mercado Pago en tres simples pasos.
->
-> [Generación desde Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/panel)
-
-> RIGHT_BUTTON_RECOMMENDED_ES
->
-> Generación por API
->
-> Puedes generar un reporte cada vez que retires dinero a una cuenta bancaria.
->
-> [Generación por api](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/api)

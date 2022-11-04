@@ -14,13 +14,6 @@ Consulta la tabla a continuación para obtener más detalles sobre los tipos de 
     + [Todas las transacciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/account-money/introduction)
     + [Dinero retirado](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/available-money/introduction)
 
-> NOTE
->
-> El reporte de Dinero retirado será deshabilitado desde el 1 de marzo de 2022
->
-> Puedes usar el [reporte de ----[mla]----Liquidaciones------------ ----[mlm, mlb, mlc, mco, mlu, mpe]----Liberaciones------------](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/introduction) para conciliar las transacciones del dinero disponible en tu cuenta, incluidos tus retiros bancarios.
-
-
 | Tipo de reporte | Descripción |
 |---|---|
 | Reporte de liberaciones| Informa cómo está compuesto el saldo disponible en tu cuenta, detallando todos los montos involucrados en un período de tiempo. Para más información, [haz clic aquí](https://www.mercadopago.com.br/developers/es/guides/manage-account/reports/released-money/introduction).|

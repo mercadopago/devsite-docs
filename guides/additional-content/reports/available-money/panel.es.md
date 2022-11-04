@@ -1,4 +1,3 @@
-
 # Generación por panel de Mercado Pago
 
 Genera tus reportes de Dinero retirado desde tu panel de Mercado Pago. Podrás programar que se genere el reporte por cada vez que hagas un retiro de tu saldo a una cuenta bancaria.
@@ -28,29 +27,8 @@ Sigue estos pasos para generar tus reportes:
 
 También podrás programar la generación de estos reportes [por cada retiro de dinero](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/available-money/withdrawal).
 
-
 > NOTE
 >
 > Nota
 >
 > Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/available-money/glossary) de Dinero retirado para revisarlo cuando lo necesites o quieras consultar algún término técnico.
-
-<hr/>
-
-### Próximos pasos
-
-> LEFT_BUTTON_RECOMMENDED_ES
->
-> Generación por API
->
-> Crea reportes de forma programada y manual por medio de una integración con Mercado Pago.
->
-> [Generación por API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/available-money/api)
-
-> RIGHT_BUTTON_RECOMMENDED_ES
->
-> Generación por retiro
->
-> Puedes generar un reporte cada vez que retires dinero disponible a una cuenta bancaria.
->
-> [Generación por retiro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/available-money/withdrawal)

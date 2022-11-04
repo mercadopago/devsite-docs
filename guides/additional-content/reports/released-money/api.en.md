@@ -1153,21 +1153,3 @@ function callback(error, response, body) {
 request(options, callback);
 ```
 ]]]
-
-### Next steps
-
-> LEFT_BUTTON_REQUIRED_EN
->
-> Generating from Mercado Pago
->
-> You can generate your Available Balance reports from the Mercado Pago panel in three simple steps.
->
-> [Generating from Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/released-money/panel)
-
-> RIGHT_BUTTON_REQUIRED_EN
->
-> Generating per API
->
-> You can generate a report every time you withdraw available money to a bank account.
->
-> [Generating per withdrawal](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/released-money/withdrawal)

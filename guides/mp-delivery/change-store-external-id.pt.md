@@ -9,11 +9,3 @@ Para inserir o valor de um ID externo em uma loja, realize um PUT enviando o `st
 > Importante
 >
 > Você também poderá consultar as informações de uma loja através de seu ID externo. Para isso, basta enviar como parâmetros de requisição o `user_id` relacionado à loja, o `external_id` e o `access_token`. Veja mais informações na API [Obter loja por ID externo](/developers/pt/reference/mp_delivery/_proximity-integration_users_SellerID_stores_external_id_ExternalID/get).
-
-> PREV_STEP_CARD_PT
->
-> Alterar status da loja
->
-> Saiba como alterar o status de funcionamento da loja da loja.
->
-> [Alterar status da loja](/developers/pt/docs/mp-delivery/store-management/change-store-status)

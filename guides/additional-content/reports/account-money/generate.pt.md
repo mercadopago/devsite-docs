@@ -18,8 +18,6 @@ Há duas formas de gerar um relatório de Dinheiro em conta:
 | Painel do Mercado Pago | <br/>É muito rápido e simples. Para gerar a partir da sua conta do Mercado Pago, vá até [seus Relatórios](https://www.mercadopago.com.br/balance/reports?page=1#!/settlement-report) e selecione uma opção de *Relatórios*.<br/><br/>No painel é possível efetuar customizações e programar a geração automática do relatório.<br/><br/>Siga o passo a passo para [gerar relatórios a partir do painel](/developers/pt/guides/additional-content/reports/account-money/panel).<br/><br/> |
 | Integração via API | <br/>Programa a frequência do seu relatório de acordo com as suas necessidades. Pode ser tanto de forma manual como de forma programada.<br/><br/>Como no painel, também é possível efetuar customizações no relatório.<br/><br/>Leia a documentação para [gerar relatórios por API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/account-money/api). <br/><br/> |
 
-<br/>
-
 ## Características técnicas do relatório
 
 Considere as seguintes informações técnicas sempre que for gerar, programar e configurar seus relatórios.
@@ -27,7 +25,6 @@ Considere as seguintes informações técnicas sempre que for gerar, programar e
 ### Programação do relatório
 
 Programe como e com que frequência você quer gerar seus relatórios. 
-
 
 | Elemento | Características |
 | --- | --- |
@@ -96,25 +93,8 @@ Para validar que foi o Mercado Pago quem emitiu a notificação, é necessário 
 
 > Tenha em mãos o [Glossário do relatório](/developers/pt/guides/additional-content/reports/account-money/glossary) de Dinheiro em conta para consultá-lo quando precisar ou queira conferir algum termo técnico.
 
-> NEXT_STEP_CARD_PT
->
-> Geração a partir do Mercado Pago 
->
-> Baixe seus relatórios de forma manual ou programada na sua conta do Mercado Pago.
->
-> [Geração a partir do Mercado Pago](/developers/pt/guides/additional-content/reports/account-money/panel)
-
-> NEXT_STEP_CARD_PT
->
-> Geração via API
->
-> Crie relatórios de forma programada e manual através de uma integração com o Mercado Pago.
->
-> [Geração via API](/developers/pt/guides/additional-content/reports/account-money/api)
-
 > NOTE
 >
 > Nota
 >
 > Tenha em mãos o [Glossário do relatório](/developers/pt/guides/additional-content/reports/account-money/glossary) de Dinheiro em conta para consultá-lo quando precisar ou queira conferir algum termo técnico.
-

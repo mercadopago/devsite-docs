@@ -13,11 +13,3 @@ The seller can use Mercado Pago Delivery in two ways: through an **integration w
 The **Order Manager** is a tool responsible for controlling the entire flow of an order. To access it, go to the [Mercado Pago user panel](https://www.mercadopago[FAKER][URL][DOMAIN]/home) and click on **Delivery > Order Manager**. It is only for restaurants that do not have a management software integrated with Mercado Pago, since it is not possible to integrate the Manager with another order management software.
 
 The order management software, after performing the integration, will receive notifications of new orders through a webhook registered during the process of creating an application within Mercado Pago.
-
-> NEXT_STEP_CARD_EN
->
-> Prerequisites
->
-> Learn about the prerequisites for performing the integration.
->
-> [Prerequisites](/developers/en/docs/mp-delivery/previous-requirements)

@@ -1097,23 +1097,3 @@ O objeto de resposta terá uma estrutura semelhante ao exemplo de cancelamento d
 > Esta documentação corresponde à nova versão da API
 >
 > Para consultar a versão anterior, por favor, acesse a [seção Geração por API antiga](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/released-money/v1/api).
-
-<hr/>
-
-### Próximos passos
-
-> LEFT_BUTTON_RECOMMENDED_PT
->
-> Geração a partir do Mercado Pago
->
-> Gere seus relatórios de Dinheiro Disponível a partir do painel do Mercado Pago em 3 etapas simples.
->
-> [Geração a partir do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/released-money/panel)
-
-> RIGHT_BUTTON_RECOMMENDED_PT
->
-> Geração por API
->
-> Gere um relatório a cada vez que retirar dinheiro para uma conta bancária.
->
-> [Geração por API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/rreports/released-money/api)
