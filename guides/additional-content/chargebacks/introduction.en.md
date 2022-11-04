@@ -10,7 +10,6 @@ When this happens, the amount paid is withheld until the problem is resolved wit
 
 [Click here](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/Como-protegemos-os-vendedores_500) for more details on how we protect our sellers.
 
-
 > NOTE
 >
 > Important
