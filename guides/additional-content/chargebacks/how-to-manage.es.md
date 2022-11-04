@@ -32,7 +32,7 @@ https://api.mercadopago.com/v1/chargebacks/ID/documentation
 >
 > Importante
 >
->Los archivos pueden ser `.jpg`, `.png` o `.pdf` y no deben exceder los 10 MB en total.
+> Los archivos pueden ser `.jpg`, `.png` o `.pdf` y no deben exceder los 10 MB en total.
 
 Si la documentación se cargó correctamente, la API responderá con el estado `200 OK` y el valor de `documentation_status` cambiará a `review_pending`.
 
