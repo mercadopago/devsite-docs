@@ -9,7 +9,7 @@ It is not possible to avoid all chargebacks; however, you can reduce the probabi
 <script src="https://www.mercadopago.com/v2/security.js" view="home"></script>
 ```
 
->WARNING
+> WARNING
 >
 > Attention
 >
