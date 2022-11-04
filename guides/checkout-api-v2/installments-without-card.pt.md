@@ -30,7 +30,7 @@ Preferências são conjuntos de informações sobre um produto e/ou serviço que
 
 A primeira etapa para configurar pagamentos com Mercado Crédito é a criação da preferência. Para isso, envie um POST com o parâmetro `purpose` e o valor `onboarding_credits` ao **endpoint** [/checkout/preferences](/developers/pt/reference/preferences/_checkout_preferences/post) e execute a requisição ou, se preferir, utilize o SDK abaixo.
 
-[[
+[[[
 ```php
 <?php
 // Cria um objeto de preferência
