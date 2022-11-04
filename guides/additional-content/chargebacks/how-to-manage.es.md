@@ -30,7 +30,7 @@ https://api.mercadopago.com/v1/chargebacks/ID/documentation
 
 >NOTE
 >
->Nota
+> Importante
 >
 >Los archivos pueden ser `.jpg`, `.png` o `.pdf` y no deben exceder los 10 MB en total.
 
