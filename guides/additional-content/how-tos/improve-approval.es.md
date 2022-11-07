@@ -92,7 +92,7 @@ Agrega el código de seguridad de Mercado Pago a tu sitio, reemplazando el valor
 
 La identificación del dispositivo es una información importante para garantizar una mejor seguridad y, en consecuencia, una mejor tasa de aprobación de pagos. Representa **un identificador único para el dispositivo de cada comprador** en el momento de la compra.
 
-Si un comprador frecuente haz una compra desde un dispositivo diferente al habitual, esto podría representar un comportamiento falso e indicarnos que esta transacción no debe realizarse.
+Si un comprador frecuente hace una compra desde un dispositivo diferente al habitual, esto podría representar un comportamiento falso e indicarnos que esta transacción no debe realizarse.
 
 Para usarlo en la web, debe seguir los siguientes pasos:
 
