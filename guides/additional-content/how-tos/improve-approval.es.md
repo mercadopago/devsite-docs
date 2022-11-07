@@ -38,7 +38,7 @@ En estos casos, el campo `status_detail` puede devolver: `cc_rejected_blacklist`
 > 
 > Rechazo sin motivo
 >
-> Es importante tener en cuenta que si el emisor de la tarjeta no indica el motivo del rechazo, vas a ver el detalle del pago cómo `cc_rejected_other_reason`. Para esta caso, es recomendable que se cambie el medio de pago o que se contacte con el banco para resolver el problema.
+> Es importante tener en cuenta que si el emisor de la tarjeta no indica el motivo del rechazo, vas a ver el detalle del pago como `cc_rejected_other_reason`. Para este caso, es recomendable cambiar el medio de pago o contactarse con el banco para resolver el problema.
 
 ## Recomendaciones para mejorar tu aprobación
 Para evitar que un pago real sea rechazado porque no cumple con las validaciones de seguridad, **es necesario incluir toda la información posible** al realizar la transacción y también prestar atención a algunos requisitos de seguridad, como nuestro **Código de seguridad** y el **device ID**.
