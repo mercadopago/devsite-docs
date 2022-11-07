@@ -63,7 +63,7 @@ Para obtener más detalles, visite la documentación de configuración de prefer
 A menudo, el comprador puede cometer un error al completar sus datos al finalizar la compra, así que vale la pena revisar cada paso, interacciones, e incluso diseño, para comprobar que todo está tan claro como debe ser. Realiza los cambios necesarios para evitar confusiones o problemas.
 
 ### Ayuda a tus clientes con sus pagos rechazados
-Es importante que expliques a tus clientes el motivo de la denegación del pago y qué medidas puedes tomar para solucionarlo. Tus clientes tendrán toda la información que necesitan para pagar sin problemas.
+Es importante que expliques a tus clientes el motivo de la denegación del pago y qué medidas pueden tomar para solucionarlo. Tus clientes tendrán toda la información que necesitan para pagar sin problemas.
 
 Por ejemplo, si se rechaza un pago por fondos insuficientes, puede recomendarles que intenten nuevamente con otro método de pago para completar la transacción.
 
