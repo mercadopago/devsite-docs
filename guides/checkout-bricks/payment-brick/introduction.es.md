@@ -6,9 +6,12 @@ Payment Brick es una solución modular y personalizable que permite agregar vari
 Por el momento, podrás darle a tus clientes la posibilidad de hacer pagos a través de tarjetas de crédito, tarjeta de débito virtual Caixa, Pix, boleto, ago en agencia de lotería o utilizar la Cuenta de Mercado Pago. En el corto plazo sumaremos la posibilidad de que, usando este mismo Brick, puedas permitirle también realizar pagos con Pix, boleto y en lotérica.
 
 ------------
-
-----[mla, mlm, mpe, mco, mlu, mlc]----
+----[mlm, mpe, mco, mlu, mlc]----
 Por el momento, podrás darle a tus clientes la posibilidad de hacer pagos a través de tarjetas de débito y crédito o utilizar la Cuenta de Mercado Pago. En el corto plazo sumaremos la posibilidad de que, usando este mismo Brick, puedas permitirle también realizar pagos en efectivo.
+
+------------
+----[mla]----
+Por el momento, podrás darle a tus clientes la posibilidad de hacer pagos a través de tarjetas de débito y crédito, Pago Fácil, Rapipago o utilizar la Cuenta de Mercado Pago.
 
 ------------
 
@@ -18,9 +21,12 @@ La posibilidad de guardar los datos de tarjetas que ya fueron cargadas en compra
 ![payment-brick-layout-mlb](checkout-bricks/payment-brick-layout-mlb-es.gif)
 
 ------------
-
-----[mla, mlm, mpe, mco, mlu, mlc]----
+----[mla]----
 ![payment-brick-layout-mla](checkout-bricks/payment-brick-layout-mla-es.gif)
+
+------------
+----[mlm, mpe, mco, mlu, mlc]----
+![payment-brick-layout-all](checkout-bricks/payment-brick-layout-all-es.gif)
 
 ------------
 
@@ -48,6 +54,8 @@ El layout de Payment Brick se basa en las mejores prácticas UX para que sea pos
 | Formulario de pago con tarjeta | Campo para ingresar el nombre del titular de la tarjeta <br><br> Propiedad: cardholderName  | **Valor:** N/A <br> **Label**: Nombre del titular tal y como aparece en la tarjeta <br> **Placeholder**: João Silva <br> **Tipo**: string <br> **Formato**: N/A <br> **Máx. caracteres**: 100  | Obligatorio <br><br> Personalizable (label, placeholder, tipo, formato y máximo de caracteres incorrectos.)  |
 | Formulario de pago con tarjeta| Campo para seleccionar el documento del titular de la tarjeta <br><br> Propiedad: cardholderIdentificationType  | **Valor**: ----[mlb]----CPF, CNPJ------------ ----[mla]----DNI, CI, LC, LE, Otro------------ ----[mco]----CC, CE, NIT, Otro------------ ----[mlc]----RUT, Otro ------------ ----[mlu]----CI, Otro ------------ ----[mpe]----DNI, C.E, RUC, Otro ------------ <br> **Label**: Documento <br> **Placeholder**: N/A <br> **Tipo**: select <br> **Formato**: N/A <br> **Máx. caracteres**: N/A  | Obligatorio* <br> Personalizable (label, placeholder) <br><br> *Si los datos de tipo y número de documento se proporcionaron y guardaron previamente, este elemento se vuelve opcional.  |
 | Formulario de pago con tarjeta | Campo para ingresar el número de documento del titular de la tarjeta <br><br> Propiedad: cardholderIdentificationNumber  | **Valor**: N/A <br> **Label**: N/A <br> **Placeholder**: ----[mlb]----999.999.999-99 para CPF ou 99.999.9999/9999-99 para CNPJ------------ ----[mla, mlm, mpe, mco, mlu, mlc]----N/A------------. <br> **Tipo**: number <br> **Formato**: N/A <br> **Máx. caracteres**: N/A  | Obligatorio <br> No personalizable  |
+----[mlm, mpe, mco, mlu, mlc]---- | Formulario de pago con tarjeta | Campo para ingresar el correo electrónico del comprador <br> Propiedad: email  | **Valor**: N/A <br> **Label**: Email <br> **Placeholder**: joaosilva@email.com <br> **Tipo**: string <br> **Formato**: formato de e-mail convencional (ejemplo@email.com)  **Máx. caracteres**: N/A  | Obligatorio* <br> Personalizable (label, placeholder) <br><br> *Si los datos se proporcionaron y guardaron previamente, este elemento se vuelve opcional.  | ------------
+----[mla]---- | Formulario de pago con tarjeta, pix, Rapipago o Pago Fácil | Campo para ingresar el correo electrónico del comprador <br> Propiedad: email  | **Valor**: N/A <br> **Label**: Email <br> **Placeholder**: joaosilva@email.com <br> **Tipo**: string <br> **Formato**: formato de e-mail convencional (ejemplo@email.com)  **Máx. caracteres**: N/A  | Obligatorio* <br> Personalizable (label, placeholder) <br><br> *Si los datos se proporcionaron y guardaron previamente, este elemento se vuelve opcional.  | ------------
 ----[mlb]---- | Formulario de pago con tarjeta, pix, boleto o PEC | Campo para ingresar el correo electrónico del comprador <br> Propiedad: email  | **Valor**: N/A <br> **Label**: Email <br> **Placeholder**: joaosilva@email.com <br> **Tipo**: string <br> **Formato**: formato de e-mail convencional (ejemplo@email.com)  **Máx. caracteres**: N/A  | Obligatorio* <br> Personalizable (label, placeholder) <br><br> *Si los datos se proporcionaron y guardaron previamente, este elemento se vuelve opcional.  |
 | Formulario de pago con boleto ou PEC | Campo para seleccionar el tipo de documento <br><br> Propriedade: buyerIdentificationType | **Valor**: CPF, CNPJ<br> **Label**: Documento <br> **Placeholder**: N/A<br> **Tipo**: select <br> **Formato**: N/A <br> **Máx. caracteres**: N/A | Obligatorio <br> Personalizable (label, placeholder)  <br><br> _*Si los datos de tipo de documento y número de documento se proporcionaron y guardaron previamente, este elemento se convierte en opcional._|
 | Formulario de pago con boleto ou PEC  |Campo para ingresar el número de documento <br><br> Propriedade: buyerIdentificationNumber | **Valor**: N/A <br> **Label**: N/A <br> **Placeholder**: 999.999.999-99 para CPF o 99.999.9999/9999-99 para CNPJ <br> **Tipo**: number <br> **Formato**: N/A <br> **Máx. caracteres:** N/A | Obligatorio <br> <br> No personalizable |

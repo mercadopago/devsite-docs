@@ -74,7 +74,7 @@ Para ofrecer pagos con **boleto bancário** y pago en **agencias de lotería**, 
 
 > Los pasos se realizan en el backend o frontend. Las etiquetas **Client-Side** y **Server-Side** ubicadas inmediatamente al lado del título lo ayudan a identificar qué paso se realiza en qué instancia. <br/></br>
 > <br/></br>
-> Y para ayudar, hemos preparado un [ejemplo de código](/developers/es/docs/checkout-bricks/payment-brick/code-example/other-payment-methods) completo de la configuración de Payment Brick con **boleto bancário** y pago en **agencias de lotería** que puede usar como modelo.
+> Y para ayudar, hemos preparado un [ejemplo de código](/developers/es/docs/checkout-bricks/payment-brick/code-example/other-payment-methods/brasil) completo de la configuración de Payment Brick con **boleto bancário** y pago en **agencias de lotería** que puede usar como modelo.
 
 > CLIENT_SIDE
 >
@@ -240,7 +240,7 @@ settings = {
 
 La propiedad `ticket` acepta 2 tipos de variables, `string` y `string[]`. En el ejemplo anterior, se aceptarán pagos a través de **boleto** y **pago en lotería**. 
 
-Si no desea permitir ambos métodos de pago, en lugar de la cadena `all`, puede pasar un array con solo las ID deseadas. Como en el ejemplo a continuación, donde solo se acepta el a través de boleto.
+Si no desea permitir ambos métodos de pago, en lugar de la cadena `all`, puede pasar un array con solo las ID deseadas. Como en el ejemplo a continuación, donde solo se acepta el a través de **boleto**.
 
 [[[
 ```Javascript

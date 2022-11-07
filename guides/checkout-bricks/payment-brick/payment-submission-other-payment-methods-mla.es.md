@@ -4,7 +4,7 @@
 >
 > Enviar el pago (otros medios de pago)
 
-Para configurar pagos con **boleto bancario** o pago en **agencia de lotería**, envía un POST con los siguientes parámetros al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) y ejecuta la solicitud o, si lo prefieres, utiliza uno de nuestros SDKs indicados a continuación.
+Para configurar pagos con **Rapipago** o **Pago Fácil**, envía un POST con los siguientes parámetros al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) y ejecuta la solicitud o, si lo prefieres, utiliza uno de nuestros SDKs indicados a continuación.
 
 > NOTE
 >
@@ -14,187 +14,115 @@ Para configurar pagos con **boleto bancario** o pago en **agencia de lotería**,
 
 | Tipo de pago  | Parámetro  | Valor  |
 | --- | --- | --- |
-| Boleto  | `payment_method_id`  | `bolbradesco`  |
-| Pago en agencia de loteria  | `payment_method_id`  | `pec`  |
+| Rapipago  | `payment_method_id`  | `rapipago`  |
+| Pago Fácil  | `payment_method_id`  | `pagofacil`  |
 
 [[[
 ```php
 <?php
-
+ 
  require_once 'vendor/autoload.php';
-
+ 
  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
-
+ 
  $payment = new MercadoPago\Payment();
  $payment->transaction_amount = 100;
- $payment->description = "Título del producto";
- $payment->payment_method_id = "bolbradesco";
+ $payment->description = "Titulo del producto";
+ $payment->payment_method_id = "rapipago";
  $payment->payer = array(
      "email" => "test@test.com",
-     "first_name" => "Test",
-     "last_name" => "User",
-     "identification" => array(
-         "type" => "DNI",
-         "number" => "19119119"
-      ),
-     "address"=>  array(
-         "zip_code" => "1264",
-         "street_name" => "Av. Caseros",
-         "street_number" => "3039",
-         "neighborhood" => "Parque Patricios",
-         "city" => "Buenos Aires",
-         "federal_unit" => "BA"
-      )
    );
-
+ 
  $payment->save();
-
+ 
 ?>
 ```
 ```node
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
-
+ 
 var payment_data = {
   transaction_amount: 100,
-  description: 'Título del producto',
-  payment_method_id: 'bolbradesco',
+  description: 'Titulo del producto',
+  payment_method_id: 'rapipago',
   payer: {
     email: 'test@test.com',
-    first_name: 'Test',
-    last_name: 'User',
-    identification: {
-        type: 'DNI',
-        number: '19119119'
-    },
-    address:  {
-        zip_code: '1264',
-        street_name: 'Av. Caseros',
-        street_number: '3039',
-        neighborhood: 'Parque Patricios',
-        city: 'Buenos Aires',
-        federal_unit: 'BA'
-    }
   }
 };
-
+ 
 mercadopago.payment.create(payment_data).then(function (data) {
-
+ 
 }).catch(function (error) {
-
+ 
 });
-
 ```
 ```java
 PaymentClient client = new PaymentClient();
-
+ 
 PaymentCreateRequest paymentCreateRequest =
    PaymentCreateRequest.builder()
        .transactionAmount(new BigDecimal("100"))
-       .description("Título del producto")
-       .paymentMethodId("bolbradesco")
+       .description("Titulo del producto")
+       .paymentMethodId("rapipago")
        .dateOfExpiration(OffsetDateTime.of(2023, 1, 10, 10, 10, 10, 0, ZoneOffset.UTC))
        .payer(
            PaymentPayerRequest.builder()
                .email("test@test.com")
-               .firstName("Test")
-               .lastName("User")
-               .identification(
-                   IdentificationRequest.builder().type("CPF").number("19119119100").build())
-               .build())
        .build();
-
+ 
 client.create(paymentCreateRequest);
 ```
 ```ruby
 require 'mercadopago'
 sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
-
+ 
 payment_request = {
   transaction_amount: 100,
-  description: 'Título del producto',
-  payment_method_id: 'bolbradesco',
+  description: 'Titulo del producto',
+  payment_method_id: 'rapipago',
   payer: {
     email: 'test@test.com',
-    first_name: 'Test',
-    last_name: 'User',
-    identification: {
-      type: 'DNI',
-      number: '19119119',
-    },
-    address: {
-      zip_code: '1264',
-      street_name: 'Av. Caseros',
-      street_number: '3039',
-      neighborhood: 'Parque Patricios',
-      city: 'Buenos Aires',
-      federal_unit: 'BA'
-    }
   }
 }
-
+ 
 payment_response = sdk.payment.create(payment_request)
 payment = payment_response[:response]
-
 ```
 ```csharp
-
 using MercadoPago.Config;
 using MercadoPago.Client.Common;
 using MercadoPago.Client.Payment;
 using MercadoPago.Resource.Payment;
-
+ 
 MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
-
+ 
 var request = new PaymentCreateRequest
 {
     TransactionAmount = 105,
-    Description = "Título del producto",
-    PaymentMethodId = "bolbradesco",
+    Description = "Titulo del producto",
+    PaymentMethodId = 'rapipago',
     Payer = new PaymentPayerRequest
     {
         Email = "test@test.com",
-        FirstName = "Test",
-        LastName = "User",
-        Identification = new IdentificationRequest
-        {
-            Type = "DNI",
-            Number = "19119119",
-        },
     },
 };
-
+ 
 var client = new PaymentClient();
 Payment payment = await client.CreateAsync(request);
-
 ```
 ```python
 import mercadopago
 sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
-
+ 
 payment_data = {
     "transaction_amount": 100,
-    "description": "Título del producto",
-    "payment_method_id": "bolbradesco",
+    "description": "Titulo del producto",
+    "payment_method_id": "rapipago",
     "payer": {
         "email": "test@test.com",
-        "first_name": "Test",
-        "last_name": "User",
-        "identification": {
-            "type": "DNI",
-            "number": "19119119"
-        },
-        "address": {
-            "zip_code": "1264",
-            "street_name": "Av. Caseros",
-            "street_number": "3039",
-            "neighborhood": "Parque Patricios",
-            "city": "Buenos Aires",
-            "federal_unit": "BA"
-        }
     }
 }
-
+ 
 payment_response = sdk.payment().create(payment_data)
 payment = payment_response["response"]
 ```
@@ -206,24 +134,10 @@ curl -X POST \
     'https://api.mercadopago.com/v1/payments' \
     -d '{
       "transaction_amount": 100,
-      "description": "Título del producto",
-      "payment_method_id": "bolbradesco",
+      "description": "Titulo del producto",
+      "payment_method_id": "rapipago",
       "payer": {
         "email": "test@test.com",
-        "first_name": "Test",
-        "last_name": "User",
-        "identification": {
-            "type": "DNI",
-            "number": "19119119"
-        },
-        "address": {
-            "zip_code": "1264",
-            "street_name": "Av. Caseros",
-            "street_number": "3039",
-            "neighborhood": "Parque Patricios",
-            "city": "Buenos Aires",
-            "federal_unit": "BA"
-        }
       }
     }'
 ```
@@ -244,7 +158,7 @@ La respuesta mostrará el **status pendiente** hasta que el comprador realice el
         "net_received_amount": 0,
         "total_paid_amount": 100,
         "overpaid_amount": 0,
-        "external_resource_url": "https://www.mercadopago.com/mlb/payments/ticket/helper?payment_id=123456789&payment_method_reference_id= 123456789&caller_id=123456",
+        "external_resource_url": "https://www.mercadopago.com.ar/payments/123456/ticket?caller_id=123456&payment_method_id=rapipago&payment_id=123456&payment_method_reference_id=123456",
         "installment_amount": 0,
         "financial_institution": null,
         "payment_method_reference_id": "1234567890"

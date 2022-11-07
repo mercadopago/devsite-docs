@@ -6,9 +6,12 @@ Payment Brick is a modular and customizable solution that allows you to add seve
 For now, you will be able to give your customers the possibility of making payments through credit cards, the Caixa virtual debit card, Pix, boleto, payment in lottery or use the Mercado Pago Wallet. In the short term we will add the possibility that, using this same Brick, you can also allow them to make payments with Pix, ticket and lottery.
 
 ------------
+----[mlm, mpe, mco, mlu, mlc]----
+For now, you will be able to give your customers the possibility of making payments through debit and credit cards or use the Mercado Pago Wallet. In the short term we will add the possibility that, using this same Brick, you can also allow them to make cash payments.
 
-----[mla, mlm, mpe, mco, mlu, mlc]----
-For now, you can give your customers the ability to make payments through debit and credit cards or use the Mercado Pago Wallet.. In the short term we will add the possibility that, using this same Brick, you can also allow them to make cash payments.
+------------
+----[mla]----
+For now, you will be able to give your customers the possibility of making payments through debit and credit cards, Pago Fácil, Rapipago and using the Mercado Pago Wallet.
 
 ------------
 
@@ -18,9 +21,12 @@ The possibility of saving the data of cards that have already been charged in pr
 ![payment-brick-layout-mlb](checkout-bricks/payment-brick-layout-mlb-en.gif)
 
 ------------
-
-----[mla, mlm, mpe, mco, mlu, mlc]----
+----[mla]----
 ![payment-brick-layout-mla](checkout-bricks/payment-brick-layout-mla-en.gif)
+
+------------
+----[mlm, mpe, mco, mlu, mlc]----
+![payment-brick-layout-all](checkout-bricks/payment-brick-layout-all-en.gif)
 
 ------------
 
@@ -48,7 +54,9 @@ The Payment Brick layout is based on the best UX practices, so that it is possib
 | Card payment form | Card cardholder name input field <br><br> Property: cardholderName  | **Value:** N/A <br> **Label:** Name of the holder as it appears on the card <br> **Placeholder:** João Silva <br> **Type:** string <br> **Format:** N/A <br> **Max. characters:** 100  | Mandatory <br> Customizable (label, placeholder, type, format and maximum of wrong characters.)  |
 || Card payment form  Cardholder ID selection field <br><br> Property: cardholderIdentificationType  | **Value:** ----[mlb]----CPF, CNPJ------------ ----[mla]----DNI, CI, LC, LE, Otro------------ ----[mco]----CC, CE, NIT, Otro------------ ----[mlc]----RUT, Otro ------------ ----[mlu]----CI, Otro ------------ ----[mpe]----DNI, C.E, RUC, Otro ------------ <br> **Label:** ID <br> **Placeholder:** N/A <br> **Type:** select <br> **Format:** N/A <br> **Max. characters:** N/A  | Mandatory <br> Customizable (label, placeholder) <br><br> *If the document type and number data were previously provided and saved, this element becomes optional.  |
 | Card payment form | Cardholder ID number input field <br><br> Property: cardholderIdentificationNumber  | **Value:** N/A <br> **Label:** N/A <br> **Placeholder:** ----[mlb]----999.999.999-99 para CPF ou 99.999.9999/9999-99 para CNPJ------------ ----[mla, mlm, mpe, mco, mlu, mlc]----N/A------------.<br> **Type:** number <br> **Format:** N/A <br> **Max. characters:** N/A  | Mandatory <br> Non customizable (label, placeholder)  |
-----[mlb]---- | Card, pix, boleto or PEC payment form | Buyer’s email input field <br><br> Property: email  | **Value:** N/A <br> **Label:** Email <br> **Placeholder:** joaosilva@email.com <br> **Type:** string <br> **Formato:** conventional email format (example@email.com) <br> **Max. characters:** N/A  | Mandatory <br> Customizable (label, placeholder) <br><br> *If the data was previously provided and saved, this element becomes optional.  |
+----[mlm, mpe, mco, mlu, mlc]----| Card payment form | Buyer’s email input field <br><br> Property: email  | **Value:** N/A <br> **Label:** Email <br> **Placeholder:** joaosilva@email.com <br> **Type:** string <br> **Formato:** conventional email format (example@email.com) <br> **Max. characters:** N/A  | Mandatory <br> Customizable (label, placeholder) <br><br> *If the data was previously provided and saved, this element becomes optional.  | ------------
+----[mla]---- | Rapipago, Pago Fácil, card, Pix, boleto or PEC payment form | Buyer’s email input field <br><br> Property: email  | **Value:** N/A <br> **Label:** Email <br> **Placeholder:** joaosilva@email.com <br> **Type:** string <br> **Formato:** conventional email format (example@email.com) <br> **Max. characters:** N/A  | Mandatory <br> Customizable (label, placeholder) <br><br> *If the data was previously provided and saved, this element becomes optional.  | ------------
+----[mlb]---- | Card, Pix, boleto or PEC payment form | Buyer’s email input field <br><br> Property: email  | **Value:** N/A <br> **Label:** Email <br> **Placeholder:** joaosilva@email.com <br> **Type:** string <br> **Formato:** conventional email format (example@email.com) <br> **Max. characters:** N/A  | Mandatory <br> Customizable (label, placeholder) <br><br> *If the data was previously provided and saved, this element becomes optional.  |
 | Boleto or PEC payment form | Field for selecting the document type<br><br> Propriedade: buyerIdentificationType | **Valor**: CPF, CNPJ<br> **Label**: Documento <br> **Placeholder**: N/A<br> **Tipo**: select <br> **Formato**: N/A <br> **Máx. caracteres**: N/A | Mandatory <br> Customizável (label, placeholder)  <br><br> _*If document type and document number data were previously provided and saved, this element becomes optional._|
 | Boleto or PEC payment form  | Field for entering the document number <br><br> Propriedade: buyerIdentificationNumber | **Valor**: N/A <br> **Label**: N/A <br> **Placeholder**: 999.999.999-99 to CPF or 99.999.9999/9999-99 to CNPJ <br> **Tipo**: number <br> **Formato**: N/A <br> **Máx. caracteres:** N/A | Mandatory <br>  Non customizable |
 | Boleto or PEC payment form  | First name input field <br><br> Propriedade: buyerName | **Valor**: N/A <br> **Label**: Nome <br> **Placeholder**: Ex: Maria <br> **Tipo**: string <br> **Formato**: N/A <br> **Máx. caracteres**: N/A | Mandatory <br> Customizável (label, placeholder) | 

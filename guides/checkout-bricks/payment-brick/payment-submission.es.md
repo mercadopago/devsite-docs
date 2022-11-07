@@ -22,7 +22,13 @@ En las siguientes secciones, vea cómo enviar a Mercado Pago pagos realizados co
 * [Tarjetas](/developers/es/docs/checkout-bricks/payment-brick/payment-submission/cards)
 * [Cuenta de Mercado Pago](/developers/es/docs/checkout-bricks/payment-brick/payment-submission/wallet)
 * [Pix](/developers/es/docs/checkout-bricks/payment-brick/payment-submission/pix)
-* [Otros medios de pago](/developers/es/docs/checkout-bricks/payment-brick/payment-submission/other-payment-methods)
+* [Otros medios de pago](/developers/es/docs/checkout-bricks/payment-brick/payment-submission/other-payment-methods/brasil)
+------------
+
+----[mla]----
+* [Tarjetas](/developers/es/docs/checkout-bricks/payment-brick/payment-submission/cards)
+* [Cuenta de Mercado Pago](/developers/es/docs/checkout-bricks/payment-brick/payment-submission/wallet)
+* [Otros medios de pago](/developers/es/docs/checkout-bricks/payment-brick/payment-submission/other-payment-methods/argentina)
 ------------
 
 ----[mla, mlm, mpe, mco, mlu, mlc]----

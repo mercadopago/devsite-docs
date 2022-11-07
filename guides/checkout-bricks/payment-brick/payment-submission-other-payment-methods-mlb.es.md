@@ -2,20 +2,20 @@
 >
 > h1
 >
-> Enviar pagamento (outros meios de pagamento)
+> Enviar el pago (otros medios de pago)
 
-Para configurar pagamentos com **boleto bancário** ou **pagamento em lotérica**, envie um POST com os seguintes parâmetros ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, utilize um de nossos SDKs abaixo.
+Para configurar pagos con **boleto bancario** o pago en **agencia de lotería**, envía un POST con los siguientes parámetros al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) y ejecuta la solicitud o, si lo prefieres, utiliza uno de nuestros SDKs indicados a continuación.
 
 > NOTE
 >
 > Importante
 >
-> Lembre-se que o Brick já resolve a maioria dos parâmetros para enviar o POST. O retorno das informações vem no callback `onSubmit`, dentro do objeto `formData`, onde você poderá encontrar parâmetros como: `payment_method_id`, `payer.email` e `amount`.
+> Recuerda que Brick ya resuelve la mayoría de parámetros para enviar el POST. La devolución de información viene en la devolución de llamada `onSubmit`, dentro del objeto `formData`, donde puede encontrar parámetros como: `payment_method_id`, `payer.email` y `amount`.
 
-| Tipo de pagamento  | Parâmetro  | Valor  |
+| Tipo de pago  | Parámetro  | Valor  |
 | --- | --- | --- |
 | Boleto  | `payment_method_id`  | `bolbradesco`  |
-| Pagamento em lotérica  | `payment_method_id`  | `pec`  |
+| Pago en agencia de loteria  | `payment_method_id`  | `pec`  |
 
 [[[
 ```php
@@ -27,23 +27,23 @@ Para configurar pagamentos com **boleto bancário** ou **pagamento em lotérica*
 
  $payment = new MercadoPago\Payment();
  $payment->transaction_amount = 100;
- $payment->description = "Título do produto";
+ $payment->description = "Título del producto";
  $payment->payment_method_id = "bolbradesco";
  $payment->payer = array(
      "email" => "test@test.com",
      "first_name" => "Test",
      "last_name" => "User",
      "identification" => array(
-         "type" => "CPF",
-         "number" => "19119119100"
+         "type" => "DNI",
+         "number" => "19119119"
       ),
      "address"=>  array(
-         "zip_code" => "06233200",
-         "street_name" => "Av. das Nações Unidas",
-         "street_number" => "3003",
-         "neighborhood" => "Bonfim",
-         "city" => "Osasco",
-         "federal_unit" => "SP"
+         "zip_code" => "1264",
+         "street_name" => "Av. Caseros",
+         "street_number" => "3039",
+         "neighborhood" => "Parque Patricios",
+         "city" => "Buenos Aires",
+         "federal_unit" => "BA"
       )
    );
 
@@ -57,23 +57,23 @@ mercadopago.configurations.setAccessToken(config.access_token);
 
 var payment_data = {
   transaction_amount: 100,
-  description: 'Título do produto',
+  description: 'Título del producto',
   payment_method_id: 'bolbradesco',
   payer: {
     email: 'test@test.com',
     first_name: 'Test',
     last_name: 'User',
     identification: {
-        type: 'CPF',
-        number: '19119119100'
+        type: 'DNI',
+        number: '19119119'
     },
     address:  {
-        zip_code: '06233200',
-        street_name: 'Av. das Nações Unidas',
-        street_number: '3003',
-        neighborhood: 'Bonfim',
-        city: 'Osasco',
-        federal_unit: 'SP'
+        zip_code: '1264',
+        street_name: 'Av. Caseros',
+        street_number: '3039',
+        neighborhood: 'Parque Patricios',
+        city: 'Buenos Aires',
+        federal_unit: 'BA'
     }
   }
 };
@@ -91,7 +91,7 @@ PaymentClient client = new PaymentClient();
 PaymentCreateRequest paymentCreateRequest =
    PaymentCreateRequest.builder()
        .transactionAmount(new BigDecimal("100"))
-       .description("Título do produto")
+       .description("Título del producto")
        .paymentMethodId("bolbradesco")
        .dateOfExpiration(OffsetDateTime.of(2023, 1, 10, 10, 10, 10, 0, ZoneOffset.UTC))
        .payer(
@@ -112,23 +112,23 @@ sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
 payment_request = {
   transaction_amount: 100,
-  description: 'Título do produto',
+  description: 'Título del producto',
   payment_method_id: 'bolbradesco',
   payer: {
     email: 'test@test.com',
     first_name: 'Test',
     last_name: 'User',
     identification: {
-      type: 'CPF',
-      number: '19119119100',
+      type: 'DNI',
+      number: '19119119',
     },
     address: {
-      zip_code: '06233200',
-      street_name: 'Av. das Nações Unidas',
-      street_number: '3003',
-      neighborhood: 'Bonfim',
-      city: 'Osasco',
-      federal_unit: 'SP'
+      zip_code: '1264',
+      street_name: 'Av. Caseros',
+      street_number: '3039',
+      neighborhood: 'Parque Patricios',
+      city: 'Buenos Aires',
+      federal_unit: 'BA'
     }
   }
 }
@@ -149,7 +149,7 @@ MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
 var request = new PaymentCreateRequest
 {
     TransactionAmount = 105,
-    Description = "Título do produto",
+    Description = "Título del producto",
     PaymentMethodId = "bolbradesco",
     Payer = new PaymentPayerRequest
     {
@@ -158,8 +158,8 @@ var request = new PaymentCreateRequest
         LastName = "User",
         Identification = new IdentificationRequest
         {
-            Type = "CPF",
-            Number = "191191191-00",
+            Type = "DNI",
+            Number = "19119119",
         },
     },
 };
@@ -174,23 +174,23 @@ sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
 
 payment_data = {
     "transaction_amount": 100,
-    "description": "Título do produto",
+    "description": "Título del producto",
     "payment_method_id": "bolbradesco",
     "payer": {
         "email": "test@test.com",
         "first_name": "Test",
         "last_name": "User",
         "identification": {
-            "type": "CPF",
-            "number": "191191191-00"
+            "type": "DNI",
+            "number": "19119119"
         },
         "address": {
-            "zip_code": "06233-200",
-            "street_name": "Av. das Nações Unidas",
-            "street_number": "3003",
-            "neighborhood": "Bonfim",
-            "city": "Osasco",
-            "federal_unit": "SP"
+            "zip_code": "1264",
+            "street_name": "Av. Caseros",
+            "street_number": "3039",
+            "neighborhood": "Parque Patricios",
+            "city": "Buenos Aires",
+            "federal_unit": "BA"
         }
     }
 }
@@ -206,30 +206,30 @@ curl -X POST \
     'https://api.mercadopago.com/v1/payments' \
     -d '{
       "transaction_amount": 100,
-      "description": "Título do produto",
+      "description": "Título del producto",
       "payment_method_id": "bolbradesco",
       "payer": {
         "email": "test@test.com",
         "first_name": "Test",
         "last_name": "User",
         "identification": {
-            "type": "CPF",
-            "number": "19119119100"
+            "type": "DNI",
+            "number": "19119119"
         },
         "address": {
-            "zip_code": "06233200",
-            "street_name": "Av. das Nações Unidas",
-            "street_number": "3003",
-            "neighborhood": "Bonfim",
-            "city": "Osasco",
-            "federal_unit": "SP"
+            "zip_code": "1264",
+            "street_name": "Av. Caseros",
+            "street_number": "3039",
+            "neighborhood": "Parque Patricios",
+            "city": "Buenos Aires",
+            "federal_unit": "BA"
         }
       }
     }'
 ```
 ]]]
 
-A resposta mostrará o **status pendente** até que o comprador realize o pagamento. Além disso, na resposta à requisição, o parâmetro `external_resource_url` retornará uma URL que contém as instruções para que o comprador realize o pagamento. Você pode redirecioná-lo para este mesmo link para conclusão do fluxo de pagamento. Veja abaixo um exemplo de retorno.
+La respuesta mostrará el **status pendiente** hasta que el comprador realice el pago. Además, en la respuesta a la solicitud, el parámetro `external_resource_url` devolverá una URL que contiene las instrucciones para que el comprador realice el pago. Puedes redirigirlo a este mismo link para finalizar el flujo de pago.
 
 [[[
 ```json
@@ -254,15 +254,15 @@ A resposta mostrará o **status pendente** até que o comprador realize o pagame
 ```
 ]]]
 
-## Mostre o status do pagamento
+## Mostrar estado de pago
 
-Após criar o pagamento pelo backend utilizando a SDK do Mercado Pago, utilize o **id** recebido na resposta para instanciar o Status Screen Brick e mostrar para o comprador.
-Além de exibir o status do pagamento, o Status Screen Brick também exibirá o código de barras para o comprador copiar e colar, ou escanear e assim fazer o pagamento. Saiba como é simples integrar [clicando aqui](/developers/pt/docs/checkout-bricks/status-screen-brick/configure-integration).
+Después de crear el pago desde backend con el SDK de Mercado Pago, use el **id** recibido en la respuesta para crear una instancia del Status Screen Brick y mostrárselo al comprador.
+Además de mostrar el estado del pago, Status Screen Brick también mostrará el código de barras del ticket para copiar y pegar o para que el comprador lo escanee y pague. Descubra lo sencillo que es integrar [haga clic aquí](/developers/es/docs/checkout-bricks/status-screen-brick/configure-integration).
 
-![payment-submission-other-payment-methods-status](checkout-bricks/payment-submission-other-payment-methods-status-pt.jpg)
+![payment-submission-other-payment-methods-status-mlb](checkout-bricks/payment-submission-other-payment-methods-status-mlb-es.jpg)
 
 > NOTE
 >
 > Importante
 >
-> A data de vencimento do boleto pode ser configurada através do envio de requisição POST com parâmetro `data_of_expiration` ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post). Após o vencimento, o boleto será cancelado.
+> La fecha de vencimiento del boleto se puede configurar enviando una solicitud POST con el parámetro `data_of_expiration` al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post). Después del vencimiento, el boleto será cancelado.

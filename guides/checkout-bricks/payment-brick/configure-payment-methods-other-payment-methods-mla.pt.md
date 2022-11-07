@@ -1,6 +1,6 @@
 # Configure a integração com outros meios de pagamento
 
-Com o Checkout Bricks do Mercado Pago, é possível oferecer, além de cartão e Pix, pagamentos através de **boleto bancário** e **pagamento em lotérica**.
+Com o Checkout Bricks do Mercado Pago, é possível oferecer, além de cartão, pagamentos através de **Rapipago** e **Pago Fácil**.
 
 Para obter uma lista detalhada com todos os meios de pagamento disponíveis para integração, envie um **GET** com seu _Access token_ ao endpoint [/v1/payment_methods](/developers/pt/reference/payment_methods/_payment_methods/get) e execute a requisição ou, se preferir, faça a requisição utilizando os SDKs abaixo.
 
@@ -64,7 +64,7 @@ curl -X GET \
 ```
 ]]]
 
-Para oferecer pagamentos com **boleto bancário** e **pagamento em lotérica**, siga as etapas abaixo. Caso já tenha integrado pagamentos via cartão, você pode iniciar a integração a partir da **etapa 4**.
+Para oferecer pagamentos com **Rapipago** e **Pago Fácil**, siga as etapas abaixo. Caso já tenha integrado pagamentos via cartão, você pode iniciar a integração a partir da **etapa 4**.
 
 1. [Criar container](#bookmark_criar_container)
 2. [Incluir e configurar a biblioteca MercadoPago.js](#bookmark_incluir_e_configurar_a_biblioteca_mercadopago.js)
@@ -74,7 +74,7 @@ Para oferecer pagamentos com **boleto bancário** e **pagamento em lotérica**, 
 
 > Os passos são realizados no back-end ou no front-end. As pills **Client-Side** e **Server-Side** localizadas imediatamente ao lado do título te ajudam a identificar qual passo é realizado em qual instância. <br/></br>
 > <br/></br>
-> E, para ajudar, preparamos um [exemplo de código](/developers/pt/docs/checkout-bricks/payment-brick/code-example/other-payment-methods) completo da configuração do Payment Brick com **boleto bancário** e **pagamento em lotérica** que você pode usar como modelo.
+> E, para ajudar, preparamos um [exemplo de código](/developers/pt/docs/checkout-bricks/payment-brick/code-example/other-payment-methods/argentina) completo da configuração do Payment Brick com **Rapipago** e **Pago Fácil** que você pode usar como modelo.
 
 > CLIENT_SIDE
 >
@@ -200,7 +200,7 @@ renderPaymentBrick(bricksBuilder);
 
 O resultado de renderizar o brick deve ser como na imagem abaixo:
 
-![payment-brick-other-payments-methods](checkout-bricks/payment-brick-other-payments-methods-pt.png)
+![payment-brick-other-payments-methods-mla](checkout-bricks/payment-brick-other-payments-methods-mla-pt.png)
 
 > WARNING
 >
@@ -214,7 +214,7 @@ O resultado de renderizar o brick deve ser como na imagem abaixo:
 >
 > Gerenciar outros meios de pagamento
 
-Para incluir pagamento via **boleto bancário** e **pagamento em lotérica**, basta utilizar a seguinte configuração:
+Para incluir pagamento via **Rapipago** e **Pago Fácil**, basta utilizar a seguinte configuração:
 
 > NOTE
 >
@@ -237,9 +237,9 @@ settings = {
 ```
 ]]]
 
-A propriedade `ticket` aceita 2 tipos de variável, `string` e `string[]`. No exemplo acima, serão aceitos pagamentos via **boleto bancário** e **pagamento em lotérica**
+A propriedade `ticket` aceita 2 tipos de variável, `string` e `string[]`. No exemplo acima, serão aceitos pagamentos via **Rapipago** e **Pago Fácil**.
 
-Caso não queira permitir ambos os meios de pagamento, ao invés da string `all`, você pode passar um array apenas com os IDs desejados. Como no exemplo abaixo, onde é aceito apenas pagamento via boleto.
+Caso não queira permitir ambos os meios de pagamento, ao invés da string `all`, você pode passar um array apenas com os IDs desejados. Como no exemplo abaixo, onde é aceito apenas pagamento via **Pago Fácil**.
 
 [[[
 ```Javascript
@@ -249,14 +249,14 @@ settings = {
     ...,
     paymentMethods: {
       ...,
-      ticket: [ 'bolbradesco' ]
+      ticket: [ 'pagofacil' ]
     }
   }
 }
 ```
 ]]]
 
-Para uma lista completa dos IDs que podem ser passados dentro do array, consulte a API de [Obter meios de pagamento](/developers/pt/reference/payment_methods/_payment_methods/get) em nossa API Reference.
+Nesse caso, como **Pago Fácil** é o único meio disponível, não será exibida a lista para seleção de onde pagar. Para uma lista completa dos IDs que podem ser passados dentro do array, consulte a API de [Obter meios de pagamento](/developers/pt/reference/payment_methods/_payment_methods/get) em nossa API Reference.
 
 > NOTE
 >
