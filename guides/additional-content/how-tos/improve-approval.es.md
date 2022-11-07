@@ -98,7 +98,7 @@ Para usarlo en la web, debes seguir los siguientes pasos:
 
 
 #### 1. Agrega nuestro código de seguridad
-Para implementar la generación del device ID en su sitio, agregue el siguiente código a su página de Checkout:
+Para implementar la generación del device ID en tu sitio, agrega el siguiente código a su página de Checkout:
 
 ```html
 <script src="https://www.mercadopago.com/v2/security.js" view="checkout"></script>
