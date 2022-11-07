@@ -60,7 +60,7 @@ Puedes adaptar la **integración de Checkout Pro** a tu modelo de negocio config
 Para obtener más detalles, visite la documentación de configuración de preferencias de [Checkout Pro](developers/es/docs/checkout-pro/checkout-customization/preferences).
 
 ### Mejorar la experiencia del usuario
-A menudo, el comprador puede cometer un error al completar sus datos al finalizar la compra. Así que vale la pena revisar cada paso, interacciones e incluso diseño, para comprobar que todo está tan claro como debe ser. Realice los cambios necesarios para evitar confusiones o problemas.
+A menudo, el comprador puede cometer un error al completar sus datos al finalizar la compra, así que vale la pena revisar cada paso, interacciones, e incluso diseño, para comprobar que todo está tan claro como debe ser. Realiza los cambios necesarios para evitar confusiones o problemas.
 
 ### Ayude a sus clientes con sus pagos rechazados
 Es importante que expliques a tus clientes el motivo de la denegación del pago y qué medidas puedes tomar para solucionarlo. Tus clientes tendrán toda la información que necesitan para pagar sin problemas.
