@@ -108,7 +108,7 @@ Para implementar la generación del device ID en tu sitio, agrega el siguiente c
 
 Una vez que hayas agregado el código de seguridad de Mercado Pago a tu sitio, automáticamente se crea una variable JavaScript global con el nombre `MP_DEVICE_SESSION_ID`, cuyo valor es el ID del dispositivo. 
 
-  - Si prefiere asignarlo a otra variable, indique el nombre agregando el atributo `output` al script de seguridad, como en el siguiente ejemplo:  
+  - Si prefieres asignarlo a otra variable, indica el nombre agregando el atributo `output` al script de seguridad, como en el siguiente ejemplo:  
   ```html
   <script src="https://www.mercadopago.com/v2/security.js" view="checkout" output="deviceId"></script>
   ```
