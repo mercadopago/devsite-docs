@@ -1,115 +1,136 @@
 # Mejora la aprobación de tus pagos
+Al realizar un pago online, la transacción se somete a un análisis cuidadoso para minimizar los riesgos de fraude y garantizar que el procesamiento se realice sin errores.
+
+En esta documentación encontrarás información sobre qué provoca que un pago sea rechazado y algunas recomendaciones para evitar que esto suceda.
 
 ## ¿Por qué se rechaza un pago?
+Un pago puede ser rechazado por un **error en el método de pago o porque no cumple con los requisitos de seguridad necesarios**. Por ejemplo, si la tarjeta no tiene suficiente saldo o si hay un movimiento inusual de la cuenta.
 
-Un pago puede ser rechazado por un error con el medio de pago o porque no se cumple con los requisitos de seguridad necesarios. Por ejemplo, si la tarjeta no tiene el saldo suficiente, se realiza mal la carga de un dato o se produce un movimiento inusual de la cuenta.
+## Razones de rechazo
+La denegación de pagos es una realidad en el mundo de las ventas online y puede ocurrir por varias razones: llenado incorrecto de información por parte del cliente, intento de fraude, problema en la comunicación entre adquirentes y sub adquirentes, entre muchas otras cuestiones.
 
-Para evitar pérdidas de ingresos de tu negocio y mejorar la experiencia de tus clientes, trabajamos con los emisores responsables de cada medio de pago y utilizamos las últimas tecnologías para evitar el fraude y aumentar la cantidad de pagos aprobados.
+VPuede encontrar la información y verificar el estado de un pago a través de la API a través del método [Obtener pago](/developers/es/reference/payments/_payments_id/get). El campo de `status` indica si el pago fue aprobado o no, mientras que el campo `status_detail` proporciona más detalles, incluidos los motivos del rechazo.
 
-## Pagos rechazados por el banco
-
-Al ofrecer un pago con tarjeta de crédito o débito, el emisor puede rechazar el cobro por distintas razones. Por ejemplo, si la tarjeta se encuentra vencida, no tiene los fondos suficientes o si los datos cargados no son correctos.
-
-Puedes ver el estado del pago en la respuesta de la API como `rejected` y el motivo de rechazo en el campo `status_detail`.
-
-```json
-{
-    "status": "rejected",
-    "status_detail": "cc_rejected_insufficient_amount",
-    "id": 47198050,
-    "payment_method_id": "master",
-    "payment_type_id": "credit_card",
-    ...
-}
-```
-
-Puedes encontrar más información sobre el detalle del pago en la [actividad de la cuenta de Mercado Pago](https://www.mercadopago.com.ar/activities) en la que se reciben los cobros.
-
-> WARNING
->
-> Rechazo sin motivo
->
-> Es importante tener en cuenta que si el emisor de la tarjeta no indica el motivo del rechazo, vas a ver el detalle del pago como `cc_rejected_other_reason`. Para esta caso, es recomendable que se cambie el medio de pago o que se contacte con el banco para resolver el problema.
-
-## Pagos rechazados para prevenir fraude
-
-Seguimos en tiempo real las transacciones y tenemos validaciones de seguridad tanto para reconocer pagos que no fueron autorizados por la persona dueña de la tarjeta como para evitar contracargos.
-
-Cuando nuestro sistema de prevención de fraude detecta un pago sospechoso, puedes ver el estado del pago en la respuesta de la API como `rejected` y el motivo de rechazo como `cc_rejected_high_risk`.
-
-```json
-{
-    "status": "rejected",
-    "status_detail": "cc_rejected_high_risk",
-    "id": 47198050,
-    "payment_method_id": "master",
-    "payment_type_id": "credit_card",
-    ...
-}
-```
-
-## Recomendaciones para mejorar tu aprobación
-
-Para evitar que un pago real se rechace por no cumplir con las validaciones de seguridad, es necesario sumar toda la información posible a la hora de realizar la operación. 
-
-Te ayudamos a detectar comportamientos inusuales de los clientes con nuestro código de seguridad y el device ID para prevenir el fraude. Y no te preocupes, no guardaremos ni compartiremos los datos de tus clientes.
 
 > NOTE
 >
-> Nota
+> Importante
 >
-> Si utilizas Checkout Pro, ya cuentas con toda la seguridad para prevenir fraude. 
+> Puedes encontrar más información sobre el detalle del pago en la actividad de la cuenta de [Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/activities).
 
-### Suma nuestro código de seguridad en tu sitio
 
-Es muy simple. Agrega el script, configura la sección de tu sitio en la que se encuentra ¡y listo! Solo debes reemplazar el valor de `view` por el nombre de la página en la que quieras sumarlo.
+### Errores de relleno del comprador
+Esta es una de las principales razones por las que se rechaza un pago. A menudo, el comprador puede cometer un error al completar sus datos, **especialmente la dirección, datos de identificación y los números de tarjeta**.
+
+En estos casos, el campo `status_detail` puede devolver: `cc_rejected_bad_filled_date`, `cc_rejected_bad_filled_other`, `cc_rejected_bad_filled_security_code`
+
+### Pagos rechazados por el banco
+Al realizar un pago con tarjeta de crédito o débito, por ejemplo, el banco emisor puede rechazar el cargo por diferentes motivos, como fecha de vencimiento vencida, saldo o límite insuficiente, tarjeta deshabilitada o bloqueada para compras online. 
+
+En estos casos, el campo `status_detail` puede devolver: `cc_rejected_call_for_authorize`, `cc_rejected_card_disabled`, `cc_rejected_duplicated_payment`, `cc_rejected_insufficient_amount`
+
+### Pagos rechazados para prevenir fraude
+A la hora de efectuar un pago tenemos una serie de comprobaciones tanto por parte del banco como de Mercado Pago, y si nuestro sistema de prevención de fraude detecta algún tipo de movimiento inusual o que caracterice algún tipo de estafa o fraude, se bloquea. 
+
+En estos casos, el campo `status_detail` puede devolver: `cc_rejected_blacklist`, `cc_rejected_high_risk`
+
+> WARNING
+> 
+> Rechazo sin motivo
+>
+> Es importante tener en cuenta que si el emisor de la tarjeta no indica el motivo del rechazo, vas a ver el detalle del pago cómo `cc_rejected_other_reason`. Para esta caso, es recomendable que se cambie el medio de pago o que se contacte con el banco para resolver el problema.
+
+## Recomendaciones para mejorar tu aprobación
+Para evitar que un pago real sea rechazado porque no cumple con las validaciones de seguridad, **es necesario incluir toda la información posible** al realizar la transacción y también prestar atención a algunos requisitos de seguridad, como nuestro **Código de seguridad** y el **device ID**.
+
+> NOTE
+>
+> Importante
+>
+> Si utilizas Checkout Pro, ya cuentas con toda la seguridad para prevenir fraude.
+
+### Detallar toda la información sobre el pago
+Para optimizar la validación de la seguridad de los pagos y mejorar las aprobaciones, es valioso enviar la mayor cantidad posible de datos del comprador y del ítem. 
+ 
+Preste atención a todos los atributos disponibles al crear un pago con el método [Crear pago](/developers/es/reference/payments/_payments/post). 
+
+### Configurar preferencias
+Puede adaptar la **integración de Checkout Pro** a su modelo de negocio configurando atributos de preferencia, que ayudan a mejorar las aprobaciones.
+
+Para obtener más detalles, visite la documentación de configuración de preferencias de [Checkout Pro](developers/es/docs/checkout-pro/checkout-customization/preferences).
+
+### Mejorar la experiencia del usuario
+A menudo, el comprador puede cometer un error al completar sus datos al finalizar la compra. Así que vale la pena revisar cada paso, interacciones e incluso diseño, para comprobar que todo está tan claro como debe ser. Realice los cambios necesarios para evitar confusiones o problemas.
+
+### Ayude a sus clientes con sus pagos rechazados
+Es importante que expliques a tus clientes el motivo de la denegación del pago y qué medidas puedes tomar para solucionarlo. Tus clientes tendrán toda la información que necesitan para pagar sin problemas.
+
+Por ejemplo, si se rechaza un pago por fondos insuficientes, puede recomendarles que intenten nuevamente con otro método de pago para completar la transacción.
+
+> NOTE
+>
+> Importante
+>
+> Si utilizas el Checkout Pro, no te preocupes, ya tienes configurados los mensajes según cada caso. Y si usas otro de nuestros productos, te recomendamos mostrar un [mensaje específico por cada motivo de rechazo](/developers/es/guides/online-payments/checkout-api/handling-responses).
+
+
+### Agrega nuestro código de seguridad en tu sitio
+
+Agrega el código de seguridad de Mercado Pago a tu sitio, reemplazando el valor de `view` con el nombre de la sección en la que deseas agregarlo (Ej.: home, search, item).
 
 ```html
 <script src="https://www.mercadopago.com/v2/security.js" view="home"></script>
 ```
 
-#### Posibles valores para VIEW
-
-| Tipo | Descripción |
-| --- | --- |
-| *home* | Página principal de tu sitio. |
-| *search* | Página de búsqueda o listado de productos. |
-| *item* | Página de un producto específico. |
-
 > NOTE
 >
-> Nota
+> Importante
 >
 > En caso de no tener un valor disponible para la sección, puedes dejarlo vacío.
 
-### Implementa el device ID en tu sitio
+### Uso del device ID en la web
 
-Para implementar en tu sitio la generación del device debes agregar el siguiente código:
+La identificación del dispositivo es una información importante para garantizar una mejor seguridad y, en consecuencia, una mejor tasa de aprobación de pagos. Representa **un identificador único para el dispositivo de cada comprador** en el momento de la compra.
+
+Si un comprador frecuente haz una compra desde un dispositivo diferente al habitual, esto podría representar un comportamiento falso e indicarnos que esta transacción no debe realizarse.
+
+Para usarlo en la web, debe seguir los siguientes pasos:
+
+
+#### 1. Agrega nuestro código de seguridad
+Para implementar la generación del device ID en su sitio, agregue el siguiente código a su página de Checkout:
 
 ```html
 <script src="https://www.mercadopago.com/v2/security.js" view="checkout"></script>
 ```
 
-Es importante que envíes el `device_id` generado por este código a tu servidor y que al momento de crear el pago agregues el siguiente header por la solicitud:
+#### 2. Obteniendo el device ID
+
+Una vez que hayas agregado el código de seguridad de Mercado Pago a tu sitio, automáticamente se crea una variable JavaScript global con el nombre `MP_DEVICE_SESSION_ID`, cuyo valor es el ID del dispositivo. 
+
+  - Si prefiere asignarlo a otra variable, indique el nombre agregando el atributo `output` al script de seguridad, como en el siguiente ejemplo:  
+  ```html
+  <script src="https://www.mercadopago.com/v2/security.js" view="checkout" output="deviceId"></script>
+  ```
+
+  - También puede crear su propia variable agregando una etiqueta HTML a su sitio con el identificador `id="deviceID"`, como en el siguiente ejemplo:
+  ```html
+  <input type="hidden" id="deviceId">
+  ```
+
+#### 3. Uso del device ID
+Una vez que tenga el valor de ID del dispositivo, debe enviarlo a nuestros servidores al crear un pago. Para hacer esto, agregue el siguiente encabezado (header) a la solicitud:
 
 ```http
 X-meli-session-id: device_id
 ```
 
-#### Puedes obtener el device ID de dos formas:
+> WARNING
+> 
+> Atención
+>
+> Recuerde reemplazar `device_id` con el nombre de la variable que contiene su valor de ID del dispositivo.
 
-- Automáticamente se crea una variable global de javascript con el nombre `MP_DEVICE_SESSION_ID` cuyo valor es el `device_id`. Si prefieres que lo asignemos a otra variable, indica el nombre agregando el atributo `output`.
-
-
-```html
-<script src="https://www.mercadopago.com/v2/security.js" view="checkout" output="deviceId"></script>
-````
-
-- Si quieres crear una variable propia, puedes agregar una etiqueta HTML en tu sitio con el identificador `id="deviceId"` y el código le asignará automáticamente el valor `device_id`.
-
-```html
-<input type="hidden" id="deviceId">
-```
 
 ### Implementa el device ID en tu aplicación móvil nativa
 
@@ -477,25 +498,3 @@ preference_data = {
 }
 # ...
 ```
-]]]
-
-Puedes obtener más información sobre cada atributo en las [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments/post).
-
-### Datos de industria
-
-Envía los datos sobre tu industria para mejorar tu aprobación.<br>
-
-[Ir a datos sobre industrias](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/industry-data/additional-info)
-
-### Ayuda a tus clientes con sus pagos rechazados
-
-Es importante que le expliques a tus clientes el motivo de rechazo del pago y qué acción puede hacer para solucionarlo. Tus clientes tendrán toda la información que necesitan para poder pagarte sin problemas.
-
-Por ejemplo, si un pago se rechaza por fondos insuficientes, puedes recomendarles que vuelva a intentar con otro medio de pago para completar la operación.
-
-
-> NOTE
->
-> Nota
->
-> Si utilizas el Checkout Pro, no te preocupes, ya tienes configurados los mensajes según cada caso. Y si usas otro de nuestros productos, te recomendamos mostrar un [mensaje específico por cada motivo de rechazo](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/handling-responses).
