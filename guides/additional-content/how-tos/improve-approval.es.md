@@ -129,7 +129,7 @@ X-meli-session-id: device_id
 > 
 > Atención
 >
-> Recuerde reemplazar `device_id` con el nombre de la variable que contiene su valor de ID del dispositivo.
+> Recuerda reemplazar `device_id` con el nombre de la variable que contiene su valor de ID del dispositivo.
 
 
 ### Implementa el device ID en tu aplicación móvil nativa
