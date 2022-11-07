@@ -65,7 +65,7 @@ A menudo, el comprador puede cometer un error al completar sus datos al finaliza
 ### Ayuda a tus clientes con sus pagos rechazados
 Es importante que expliques a tus clientes el motivo de la denegación del pago y qué medidas pueden tomar para solucionarlo. Tus clientes tendrán toda la información que necesitan para pagar sin problemas.
 
-Por ejemplo, si se rechaza un pago por fondos insuficientes, puede recomendarles que intenten nuevamente con otro método de pago para completar la transacción.
+Por ejemplo, si se rechaza un pago por fondos insuficientes, puedes recomendarles que intenten nuevamente con otro método de pago para completar la transacción.
 
 > NOTE
 >
