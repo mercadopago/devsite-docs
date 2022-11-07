@@ -92,7 +92,10 @@ const renderCardPaymentBrick = async (bricksBuilder) => {
     },
     callbacks: {
       onReady: () => {
-        // callback chamado quando o Brick estiver pronto
+        /*
+          Callback chamado quando o Brick estiver pronto.
+          Aqui você pode ocultar loadings do seu site, por exemplo.
+        */
       },
       onSubmit: (cardFormData) => {
         // callback chamado o usuário clicar no botão de submissão dos dados
@@ -118,6 +121,7 @@ const renderCardPaymentBrick = async (bricksBuilder) => {
       },
       onError: (error) => { 
         // callback chamado para todos os casos de erro do Brick
+        console.error(error);
       },
     },
   };

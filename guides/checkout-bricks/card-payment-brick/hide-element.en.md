@@ -76,3 +76,9 @@ function createPayment(){
         });
 };
 ```
+
+> NOTE
+>
+> Important
+> 
+> In case you need to customize the Brick’s visual style beyond the available **themes and custom variables**, avoid using the CSS ids and classes values that are bundled with the Bricks as reference, because they are automatically generated during the application’s build process and their names change regularly. Instead, use HTML inheritance to access the elements you need to customize.
