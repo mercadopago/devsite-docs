@@ -94,7 +94,7 @@ La identificación del dispositivo es una información importante para garantiza
 
 Si un comprador frecuente hace una compra desde un dispositivo diferente al habitual, esto podría representar un comportamiento falso e indicarnos que esta transacción no debe realizarse.
 
-Para usarlo en la web, debe seguir los siguientes pasos:
+Para usarlo en la web, debes seguir los siguientes pasos:
 
 
 #### 1. Agrega nuestro código de seguridad
