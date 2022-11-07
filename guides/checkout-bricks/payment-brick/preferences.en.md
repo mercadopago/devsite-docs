@@ -165,8 +165,10 @@ Through payment preference, you can configure a default payment method to be ren
 | Preference attribute | Description |
 | --- | --- |
 | `payment_methods` | Class describing Payment Brick's payment methods and attributes. |
-| `excluded_payment_types` | Method that excludes undesired payment methods for your operation, such as credit card, ticket, among others. |
-| `excluded_payment_methods` | Method that excludes specific credit and debit card brands, such as Visa, Mastercard, American Express, among others. |
+----[mla]---- | `excluded_payment_types` | Method that excludes undesired payment methods for your operation, such as credit card, Rapipago, Pago Fácil, etc. | ------------
+----[mlb]---- | `excluded_payment_types` | Method that excludes undesired payment methods for your operation, such as credit card, ticket (boleto or payment in lottery), etc. | ------------
+----[mlm, mlc, mco, mpe, mlu]---- | `excluded_payment_types` | Method that excludes undesired payment methods for your operation, such as credit card, etc. | ------------
+| `excluded_payment_methods` | Method that excludes specific credit and debit card brands, such as Visa, Mastercard, American Express, etc. |
 | `installments` | Method that defines the maximum number of installments to be offered. |
 | `purpose` | By indicating the value `wallet_purchase` in this method, Payment Brick will only accept payments from registered users in Mercado Pago, with card and account balance. |
 

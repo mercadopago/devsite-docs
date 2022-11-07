@@ -71,3 +71,19 @@ settings = {
 }
 ```
 ------------
+----[mla]----
+## Otros medios de pago
+
+En el formulario que se muestra para el pago con **Rapipago** y **Pago Fácil** puedes empezar con los campos ya rellenados. Para eso, es necesario pasar la siguiente configuración en el objeto de inicialización del brick.
+
+```javascript
+settings = {
+  ...,
+  initialization: {
+ ...,
+ payer: {
+   email: 'jose@maria.com',
+ }
+}
+```
+------------

@@ -71,3 +71,19 @@ settings = {
 }
 ```
 ------------
+----[mla]----
+## Other payment methods
+
+In the form displayed for payment by **Rapipago** and **Pago Fácil**, you can start with the fields already filled in. For this, it is necessary to pass the following configuration in the brick's initialization object.
+
+```javascript
+settings = {
+  ...,
+  initialization: {
+ ...,
+ payer: {
+   email: 'jose@maria.com',
+ }
+}
+```
+------------
