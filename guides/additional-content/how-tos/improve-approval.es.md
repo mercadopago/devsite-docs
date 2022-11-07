@@ -9,7 +9,7 @@ Un pago puede ser rechazado por un **error en el método de pago o porque no cum
 ## Razones de rechazo
 La denegación de pagos es una realidad en el mundo de las ventas online y puede ocurrir por varias razones: llenado incorrecto de información por parte del cliente, intento de fraude, problema en la comunicación entre adquirentes y sub adquirentes, entre muchas otras cuestiones.
 
-VPuede encontrar la información y verificar el estado de un pago a través de la API a través del método [Obtener pago](/developers/es/reference/payments/_payments_id/get). El campo de `status` indica si el pago fue aprobado o no, mientras que el campo `status_detail` proporciona más detalles, incluidos los motivos del rechazo.
+Puede encontrar la información y verificar el estado de un pago a través de la API a través del método [Obtener pago](/developers/es/reference/payments/_payments_id/get). El campo de `status` indica si el pago fue aprobado o no, mientras que el campo `status_detail` proporciona más detalles, incluidos los motivos del rechazo.
 
 
 > NOTE
