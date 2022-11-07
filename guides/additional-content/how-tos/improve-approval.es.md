@@ -113,7 +113,7 @@ Una vez que hayas agregado el código de seguridad de Mercado Pago a tu sitio, a
   <script src="https://www.mercadopago.com/v2/security.js" view="checkout" output="deviceId"></script>
   ```
 
-  - También puede crear su propia variable agregando una etiqueta HTML a su sitio con el identificador `id="deviceID"`, como en el siguiente ejemplo:
+  - También puedes crear tu propia variable agregando una etiqueta HTML a tu sitio con el identificador `id="deviceID"`, como en el siguiente ejemplo:
   ```html
   <input type="hidden" id="deviceId">
   ```
