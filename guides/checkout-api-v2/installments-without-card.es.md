@@ -237,11 +237,11 @@ Al ingresar este código, debería ver un botón similar al ejemplo ilustrado a 
 ### Ejemplo del flujo de pago
 
 ----[mla]---- 
-![ejemplo flujo](api/flow-installments-w-card-mla-es.png)
+![ejemplo flujo](api/flow-installments-w-card-mla-es.gif)
 
 ------------
 ----[mlm]---- 
-![ejemplo flujo](api/flow-installments-w-card-mlm-es.png)
+![ejemplo flujo](api/flow-installments-w-card-mlm-es.gif)
 
 ------------
 
@@ -252,11 +252,11 @@ Para ofrecer la mejor experiencia a tus compradores usando Mercado Crédito, te 
 * Usar mayúsculas en las iniciales de la marca: Mercado Crédito
 
 ----[mla]----
-![iniciales](api/suggestions1-installments-w-card-mla-es.gif)
+![iniciales](api/suggestions1-installments-w-card-mla-es.png)
 
 ------------
 ----[mlm]----
-![iniciales](api/suggestions1-installments-w-card-mlm-es.gif)
+![iniciales](api/suggestions1-installments-w-card-mlm-es.png)
 
 ------------
 
