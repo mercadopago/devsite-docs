@@ -252,11 +252,11 @@ Para ofrecer la mejor experiencia a tus compradores usando Mercado Crédito, te 
 * Usar mayúsculas en las iniciales de la marca: Mercado Crédito
 
 ----[mla]----
-![iniciales](api/suggestions1-installments-w-card-mla-es.png)
+![iniciales](api/suggestions1-installments-w-card-mla-es.gif)
 
 ------------
 ----[mlm]----
-![iniciales](api/suggestions1-installments-w-card-mlm-es.png)
+![iniciales](api/suggestions1-installments-w-card-mlm-es.gif)
 
 ------------
 

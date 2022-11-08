@@ -193,7 +193,7 @@ Ao inserir este código, você deverá visualizar um botão similar ao exemplo i
 
 ### Exemplo do fluxo de pagamento
 
-![exemplo fluxo](api/flow-installments-w-card-pt.png)
+![exemplo fluxo](api/flow-installments-w-card-pt.gif)
 
 ### Sugestões de uso e boas práticas
 
