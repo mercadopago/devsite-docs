@@ -36,7 +36,10 @@ To facilitate and optimize your integration process, check below a complete exam
        },
        callbacks: {
          onReady: () => {
-           // callback called when clicking on the data submission button
+           /*
+            Callback called when Brick is ready
+            Here you can hide loadings from your site, for example.
+           */
          },
          onSubmit: ({ selectedPaymentMethod, formData }) => {
            // callback chamado ao clicar no botão de submissão dos dados
@@ -60,6 +63,7 @@ To facilitate and optimize your integration process, check below a complete exam
          },
          onError: (error) => {
            // callback called for all Brick error cases
+           console.error(error);
          },
        },
      };

@@ -161,7 +161,10 @@ const renderPaymentBrick = async (bricksBuilder) => {
    },
    callbacks: {
      onReady: () => {
-       // callback called when Brick is ready
+       /*
+         Callback called when Brick is ready
+         Here you can hide loadings from your site, for example.
+       */
      },
      onSubmit: ({ selectedPaymentMethod, formData }) => {
        // callback called when clicking on the data submission button
@@ -187,6 +190,7 @@ const renderPaymentBrick = async (bricksBuilder) => {
      },
      onError: (error) => {
        // callback called for all Brick error cases
+       console.error(error);
      },
    },
  };

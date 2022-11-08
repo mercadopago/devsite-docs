@@ -35,7 +35,10 @@ Para facilitar e otimizar o seu processo de integração, veja abaixo um exemplo
         },        
         callbacks: {
           onReady: () => {
-            // callback chamado quando o Brick estiver pronto
+            /*
+              Callback chamado quando o Brick estiver pronto.
+              Aqui você pode ocultar loadings do seu site, por exemplo.
+            */
           },
           onSubmit: (cardFormData) => {
             // callback chamado o usuário clicar no botão de submissão dos dados
@@ -60,6 +63,7 @@ Para facilitar e otimizar o seu processo de integração, veja abaixo um exemplo
           },
           onError: (error) => {
             // callback chamado para todos os casos de erro do Brick
+            console.error(error);
           },
         },
       };
