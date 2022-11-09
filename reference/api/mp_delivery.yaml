@@ -36,7 +36,7 @@ paths:
           description: Success
           content:
             application/json:
-               schema:          
+              schema:          
                 type: object
                 properties:
                   id:
@@ -1650,10 +1650,10 @@ paths:
                     business_hours:
                       type: object
                       description: List of store opening hours. Each attribute of the object will be represented by a day of the week.
-                        x-description-i18n:
-                          eng: List of store opening hours. Each attribute of the object will be represented by a day of the week.
-                          spa: Lista de horarios de apertura de tiendas. Cada atributo del objeto estará representado por un día de la semana.
-                          por: Lista de horários de funcionamento da loja. Cada atributo do objeto será representado por um dia da semana.
+                      x-description-i18n:
+                        eng: List of store opening hours. Each attribute of the object will be represented by a day of the week.
+                        spa: Lista de horarios de apertura de tiendas. Cada atributo del objeto estará representado por un día de la semana.
+                        por: Lista de horários de funcionamento da loja. Cada atributo do objeto será representado por um dia da semana.
                       properties:
                        monday:
                          type: array
@@ -2659,13 +2659,13 @@ paths:
                              type: string
                              example: "15:00"
                              description: Store closing time on that weekday.
-                            x-description-i18n:
+                             x-description-i18n:
                               eng: Store closing time on that weekday.
                               spa: Hora de apertura de la tienda en ese día de la semana.
                               por: Horário de fechamento da loja nesse dia da semana.
                      tuesday:
                        type: array
-                      description: List of store opening hours on that weekday
+                       description: List of store opening hours on that weekday
                        x-description-i18n:
                         eng: List of store opening hours on that weekday. 
                         spa: Lista de horarios de apertura de la tienda en ese día de la semana.
