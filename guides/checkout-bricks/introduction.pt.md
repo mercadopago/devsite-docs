@@ -36,7 +36,7 @@ O Checkout Bricks pode ser instanciado/renderizado com diferentes temas e caract
 
 ------------
 ----[mla]---- 
-![themes-mla](checkout-bricks/themes-mla-pt.png)
+![themes-mla](checkout-bricks/themes-mla-pt.jpg) 
 
 ------------
 

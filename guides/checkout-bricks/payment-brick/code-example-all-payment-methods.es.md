@@ -383,95 +383,92 @@ curl -X POST \
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Bricks</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bricks</title>
 </head>
 <body>
- <div id="paymentBrick_container"></div>
- <script src="https://sdk.mercadopago.com/js/v2"></script>
- <script>
-   const mp = new MercadoPago('YOUR_PUBLIC_KEY');
-   const bricksBuilder = mp.bricks();
-   const renderPaymentBrick = async (bricksBuilder) => {
-     const settings = {
-       initialization: {
-         /*
+  <div id="paymentBrick_container"></div>
+  <script src="https://sdk.mercadopago.com/js/v2"></script>
+  <script>
+    const mp = new MercadoPago('YOUR_PUBLIC_KEY');
+    const bricksBuilder = mp.bricks();
+    const renderPaymentBrick = async (bricksBuilder) => {
+      const settings = {
+        initialization: {
+           /*
            "amount" es el monto a ser pago
            por todos los medios de pago a excepción de la Cuenta de Mercado Pago,
            que tiene su valor de procesamiento determinado en el backend a través de "preferenceId"
-         */
-         amount: 100, // cantidad de procesamiento a realizar
-         preferenceId: '<PREFERENCE_ID>', // preferenceId generado en el backend
-       },
-       customization: {
-         paymentMethods: {
-           creditCard: 'all',
-           debitCard: 'all',
-           ticket: 'all',
-           bankTransfer: ['pix'],
-         },
-       },
-       callbacks: {
-         onReady: () => {
-           /*
+           */
+          amount: 100, // cantidad de procesamiento a realizar
+          preferenceId: '<PREFERENCE_ID>', // preferenceId generado en el backend
+        },
+        customization: {
+          paymentMethods: {
+            creditCard: 'all',
+            debitCard: 'all',
+            ticket: 'all',
+          },
+        },
+        callbacks: {
+          onReady: () => {
+            /*
              Callback llamado cuando Brick está listo
              Aquí puedes ocultar loadings de su sitio, por ejemplo.
-           */
-         },
-         onSubmit: ({ selectedPaymentMethod, formData }) => {
-           // callback llamado al hacer clic en el botón de envío de datos
- 
-           return new Promise((resolve, reject) => {
-             let url = undefined;
- 
-             if (selectedPaymentMethod === 'credit_card' || selectedPaymentMethod === 'debit_card') {
-               url = 'process_payment_card';
-             } else if (selectedPaymentMethod === 'bank_transfer') {
-               url = 'process_payment_pix';
-             } else if (selectedPaymentMethod === 'ticket') {
-               url = 'process_payment_ticket';
-             }
- 
-             if (url) {
-               fetch(url, {
-                 method: "POST",
-                 headers: {
-                   "Content-Type": "application/json",
-                 },
-                 body: JSON.stringify(formData)
-               })
-                 .then((response) => {
-                   // recibir el resultado del pago
-                   resolve();
-                 })
-                 .catch((error) => {
-                   // manejar la respuesta de error al intentar crear el pago
-                   reject();
-                 })
-             } else if (selectedPaymentMethod === 'wallet_purchase') {
-               // wallet_purchase (Cuenta de Mercado Pago) no necesita ser enviado desde el backend
-               resolve();
-             } else {
-               reject();
-             }
-           });
-         },
-         onError: (error) => {
-           // callback llamado para todos los casos de error de Brick
-           console.error(error);
-         },
-       },
-     };
-     window.paymentBrickController = await bricksBuilder.create(
-       'payment',
-       'paymentBrick_container',
-       settings
-     );
-   };
-   renderPaymentBrick(bricksBuilder);
- </script>
+            */
+          },
+          onSubmit: ({ selectedPaymentMethod, formData }) => {
+            //  callback llamado al hacer clic en el botón de envío de datos
+
+            return new Promise((resolve, reject) => {
+              let url = undefined;
+
+              if (selectedPaymentMethod === 'credit_card' || selectedPaymentMethod === 'debit_card') {
+                url = 'process_payment_card';
+              } else if (selectedPaymentMethod === 'ticket') {
+                url = 'process_payment_ticket';
+              }
+
+              if (url) {
+                fetch(url, {
+                  method: "POST",
+                  headers: {
+                    "Content-Type": "application/json",
+                  },
+                  body: JSON.stringify(formData)
+                })
+                  .then((response) => {
+                    // recibir el resultado del pago
+                    resolve();
+                  })
+                  .catch((error) => {
+                    // manejar la respuesta de error al intentar crear el pago
+                    reject();
+                  })
+              } else if (selectedPaymentMethod === 'wallet_purchase') {
+                // wallet_purchase (Cuenta de Mercado Pago) no necesita ser enviado desde el backend
+                resolve();
+              } else {
+                reject();
+              }
+            });
+          },
+          onError: (error) => {
+            // callback llamado para todos los casos de error de Brick
+            console.error(error);
+          },
+        },
+      };
+      window.paymentBrickController = await bricksBuilder.create(
+        'payment',
+        'paymentBrick_container',
+        settings
+      );
+    };
+    renderPaymentBrick(bricksBuilder);
+  </script>
 </body>
 </html>
 ```

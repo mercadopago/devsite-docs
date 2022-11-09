@@ -19,7 +19,7 @@ settings = {
       identification: {
           type: 'string',
           number: 'string',
-        },
+      },
     }
   }
 }
@@ -34,10 +34,10 @@ En el formulario que se muestra para el pago con Pix, puedes empezar con el **co
 settings = {
   ...,
   initialization: {
- ...,
- payer: {
-   email: 'jose@maria.com'
- }
+  ...,
+  payer: {
+  email: 'jose@maria.com'
+  }
 }
 ```
 
@@ -80,10 +80,10 @@ En el formulario que se muestra para el pago con **Rapipago** y **Pago Fácil** 
 settings = {
   ...,
   initialization: {
- ...,
- payer: {
-   email: 'jose@maria.com',
- }
+  ...,
+  payer: {
+  email: 'jose@maria.com',
+  }
 }
 ```
 ------------

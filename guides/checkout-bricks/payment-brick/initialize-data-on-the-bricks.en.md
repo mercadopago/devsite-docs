@@ -12,10 +12,16 @@ In the form displayed for payment by card, you can start with the **document** a
 settings = {
   ...,
   initialization: {
- ...,
- payer: {
-   email: 'jose@maria.com'
- }
+    ...,
+    payer: {
+      ...,
+      email: 'jose@maria.com',
+      identification: {
+          type: 'string',
+          number: 'string',
+      },
+    }
+  }
 }
 ```
 
@@ -28,15 +34,9 @@ In the form displayed for payment by Pix, you can start with the **email** field
 settings = {
   ...,
   initialization: {
-    ...,
-    payer: {
-      ...,
-      email: 'jose@maria.com',
-      identification: {
-          type: 'string',
-          number: 'string',
-        },
-    }
+  ...,
+  payer: {
+  email: 'jose@maria.com'
   }
 }
 ```
@@ -80,10 +80,10 @@ In the form displayed for payment by **Rapipago** and **Pago Fácil**, you can s
 settings = {
   ...,
   initialization: {
- ...,
- payer: {
-   email: 'jose@maria.com',
- }
+  ...,
+  payer: {
+  email: 'jose@maria.com',
+  }
 }
 ```
 ------------

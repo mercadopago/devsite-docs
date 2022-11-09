@@ -36,7 +36,7 @@ The Checkout Bricks can be instantiated/rendered with different themes and featu
 
 ------------
 ----[mla]---- 
-![themes-mla](checkout-bricks/themes-mla-en.png)
+![themes-mla](checkout-bricks/themes-mla-en.jpg)
 
 ------------
 

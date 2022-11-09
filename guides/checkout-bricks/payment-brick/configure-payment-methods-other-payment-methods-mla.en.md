@@ -205,7 +205,7 @@ renderPaymentBrick(bricksBuilder);
 
 The result of rendering the brick should be like the image below:”
 
-![payment-brick-other-payments-methods-mla](checkout-bricks/payment-brick-other-payments-methods-mla-en.png)
+![payment-brick-other-payments-methods-mla](checkout-bricks/payment-brick-other-payments-methods-mla-en.jpg)
 
 > WARNING
 >
