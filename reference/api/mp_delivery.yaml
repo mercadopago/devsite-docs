@@ -1081,8 +1081,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 500-- Internal server error  
-                      
+                      - 500-- Internal server error                      
   /proximity-integration/shipments/{shipment_id}/accept:
     put:
       tags:
@@ -1133,7 +1132,7 @@ paths:
                   errorKey: 
                     type: string
                     enum:
-                      - 400-- Conflict-error - This order cannot be accepted due to its current status.
+                      - 400--Conflict-error--This order cannot be accepted due to its current status.
         '401':
           description: Error
           x-description-i18n:
@@ -1148,7 +1147,7 @@ paths:
                   errorKey: 
                     type: string
                     enum:
-                      - 401-- Unauthorized - Access Token is invalid 
+                      - 401--Unauthorized-Access--Token is invalid 
         '403':
           description: Error
           x-description-i18n:
@@ -1163,7 +1162,7 @@ paths:
                     errorKey:
                       type: string
                       enum:
-                        - 403-- Forbidden - User cannot access this resource 
+                        - 403--Forbidden--User cannot access this resource 
                       
         '424':
           description: Error
@@ -1179,7 +1178,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 424-- Not Found - Failed to get some information of the order 
+                      - 424--Not-Found--Failed to get some information of the order 
         '500':
           description: Error
           x-description-i18n:
@@ -1194,7 +1193,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 500-- Internal server error  
+                      - 500--Internal-server-error  
   /proximity-integration/shipments/{shipment_id}/print_label_pdf:
     get:
       tags:
@@ -1650,7 +1649,7 @@ paths:
                     business_hours:
                       type: object
                       description: List of store opening hours. Each attribute of the object will be represented by a day of the week.
-                        x-description-i18n:
+                      x-description-i18n:
                           eng: List of store opening hours. Each attribute of the object will be represented by a day of the week.
                           spa: Lista de horarios de apertura de tiendas. Cada atributo del objeto estará representado por un día de la semana.
                           por: Lista de horários de funcionamento da loja. Cada atributo do objeto será representado por um dia da semana.
@@ -2659,14 +2658,14 @@ paths:
                              type: string
                              example: "15:00"
                              description: Store closing time on that weekday.
-                            x-description-i18n:
+                             x-description-i18n:
                               eng: Store closing time on that weekday.
                               spa: Hora de apertura de la tienda en ese día de la semana.
                               por: Horário de fechamento da loja nesse dia da semana.
                      tuesday:
                        type: array
                       description: List of store opening hours on that weekday
-                       x-description-i18n:
+                      x-description-i18n:
                         eng: List of store opening hours on that weekday. 
                         spa: Lista de horarios de apertura de la tienda en ese día de la semana.
                         por: Lista de horários de funcionamento da loja naquele dia da semana.
@@ -2678,24 +2677,24 @@ paths:
                              example: "8:00"
                              description: Store opening time on that weekday.
                              x-description-i18n:
-                              eng: Store opening time on that weekday.
-                              spa: Hora de apertura de la tienda en ese día de la semana.
-                              por: Horário de abertura da loja nesse dia da semana.
+                               eng: Store opening time on that weekday.
+                               spa: Hora de apertura de la tienda en ese día de la semana.
+                               por: Horário de abertura da loja nesse dia da semana.
                            close:
                              type: string
                              example: "15:00"
                              description: Store closing time on that weekday.
                              x-description-i18n:
-                              eng: Store closing time on that weekday.
-                              spa: Hora de apertura de la tienda en ese día de la semana.
-                              por: Horário de fechamento da loja nesse dia da semana.
+                               eng: Store closing time on that weekday.
+                               spa: Hora de apertura de la tienda en ese día de la semana.
+                               por: Horário de fechamento da loja nesse dia da semana.
                      wendsday:
                        type: array
                        description: List of store opening hours on that weekday.
                        x-description-i18n:
-                        eng: List of store opening hours on that weekday. 
-                        spa: Lista de horarios de apertura de la tienda en ese día de la semana.
-                        por: Lista de horários de funcionamento da loja naquele dia da semana.
+                         eng: List of store opening hours on that weekday. 
+                         spa: Lista de horarios de apertura de la tienda en ese día de la semana.
+                         por: Lista de horários de funcionamento da loja naquele dia da semana.
                        items:
                          type: object
                          properties:
@@ -2704,24 +2703,24 @@ paths:
                              example: "8:00"
                              description: Store opening time on that weekday.
                              x-description-i18n:
-                              eng: Store opening time on that weekday.
-                              spa: Hora de apertura de la tienda en ese día de la semana.
-                              por: Horário de abertura da loja nesse dia da semana.
+                               eng: Store opening time on that weekday.
+                               spa: Hora de apertura de la tienda en ese día de la semana.
+                               por: Horário de abertura da loja nesse dia da semana.
                            close:
                              type: string
                              example: "15:00"
                              description: Store closing time on that weekday.
                              x-description-i18n:
-                              eng: Store closing time on that weekday.
-                              spa: Hora de apertura de la tienda en ese día de la semana.
-                              por: Horário de fechamento da loja nesse dia da semana.
+                               eng: Store closing time on that weekday.
+                               spa: Hora de apertura de la tienda en ese día de la semana.
+                               por: Horário de fechamento da loja nesse dia da semana.
                      thursday:
                        type: array
                        description: List of store opening hours on that weekday.
                        x-description-i18n:
-                        eng: List of store opening hours on that weekday. 
-                        spa: Lista de horarios de apertura de la tienda en ese día de la semana.
-                        por: Lista de horários de funcionamento da loja naquele dia da semana.
+                         eng: List of store opening hours on that weekday. 
+                         spa: Lista de horarios de apertura de la tienda en ese día de la semana.
+                         por: Lista de horários de funcionamento da loja naquele dia da semana.
                        items:
                          type: object
                          properties:
@@ -2730,24 +2729,24 @@ paths:
                              example: "8:00"
                              description: Store opening time on that weekday.
                              x-description-i18n:
-                              eng: Store opening time on that weekday.
-                              spa: Hora de apertura de la tienda en ese día de la semana.
-                              por: Horário de abertura da loja nesse dia da semana.
+                               eng: Store opening time on that weekday.
+                               spa: Hora de apertura de la tienda en ese día de la semana.
+                               por: Horário de abertura da loja nesse dia da semana.
                            close:
                              type: string
                              example: "15:00"
                              description: Store closing time on that weekday.
                              x-description-i18n:
-                              eng: Store closing time on that weekday.
-                              spa: Hora de apertura de la tienda en ese día de la semana.
-                              por: Horário de fechamento da loja nesse dia da semana.
+                               eng: Store closing time on that weekday.
+                               spa: Hora de apertura de la tienda en ese día de la semana.
+                               por: Horário de fechamento da loja nesse dia da semana.
                      friday:
                        type: array
                        description: List of store opening hours on that weekday.
                        x-description-i18n:
-                        eng: List of store opening hours on that weekday. 
-                        spa: Lista de horarios de apertura de la tienda en ese día de la semana.
-                        por: Lista de horários de funcionamento da loja naquele dia da semana.
+                         eng: List of store opening hours on that weekday. 
+                         spa: Lista de horarios de apertura de la tienda en ese día de la semana.
+                         por: Lista de horários de funcionamento da loja naquele dia da semana.
                        items:
                          type: object
                          properties:
@@ -2756,17 +2755,17 @@ paths:
                              example: "8:00"
                              description: Store opening time on that weekday.
                              x-description-i18n:
-                              eng: Store opening time on that weekday.
-                              spa: Hora de apertura de la tienda en ese día de la semana.
-                              por: Horário de abertura da loja nesse dia da semana.
+                               eng: Store opening time on that weekday.
+                               spa: Hora de apertura de la tienda en ese día de la semana.
+                               por: Horário de abertura da loja nesse dia da semana.
                            close:
                              type: string
                              example: "15:00"
                              description: Store closing time on that weekday.
                              x-description-i18n:
-                              eng: Store closing time on that weekday.
-                              spa: Hora de apertura de la tienda en ese día de la semana.
-                              por: Horário de fechamento da loja nesse dia da semana.
+                               eng: Store closing time on that weekday.
+                               spa: Hora de apertura de la tienda en ese día de la semana.
+                               por: Horário de fechamento da loja nesse dia da semana.
                   location: 
                     type: object
                     description: Store location information. This includes address, latitude, longitude, and additional location references.
