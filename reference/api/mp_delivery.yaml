@@ -14,11 +14,11 @@ paths:
         eng: Get order by shipment ID
         spa: Consultar pedido por ID
         por: Consultar pedido por ID
-      description: Retrieve the information of an order by its shipment ID.
+      description: Retrieve the information of an order by its shipment ID
       x-description-i18n:
-        eng: Retrieve the information of an order by its shipment ID.
-        spa: Consulta las informaciones de un pedido por su shipment ID.
-        por: Consulta as informações de um pedido através do shipment ID. 
+        eng: Retrieve the information of an order by its shipment ID
+        spa: Consulta las informaciones de un pedido por su shipment ID
+        por: Consulta as informações de um pedido através do shipment ID
       parameters:
         - name: shipment_id
           in: path
@@ -182,10 +182,10 @@ paths:
                                 type: string
                                 example: "MLA1122707065"
                                 description: ID of the complement item.
-                            x-description-i18n:
-                              eng: ID of the complement item.
-                              spa: ID del item del complemento.
-                              por: ID do item complementar.
+                                x-description-i18n:
+                                  eng: ID of the complement item.
+                                  spa: ID del item del complemento.
+                                  por: ID do item complementar.
                               name: 
                                 type: string
                                 example: "Soda"
@@ -1088,11 +1088,23 @@ paths:
       tags:
         - $ref: '#/tags/mp-delivery'
       summary: Accept order
+      x-summary-i18n:
+        eng: Accept order
+        spa: Acceptar orden
+        por: Aceitar pedido
       description: This endpoint is used to accept an order, and change its status
+      x-description-i18n:
+        eng: This endpoint is used to accept an order, and change its status
+        spa: Este endpoint se utiliza para aceptar una orden y cambiar su status
+        por: Este endpoint é utilizado para aceitar um pedido e modificar seu status
       parameters:
         - name: shipment_id
           in: path
-          description: Unique ID that identifies the shipment of the order to be performed by the operation to accept an order. 
+          description: Unique ID that identifies the shipment of the order to be performed by the operation to accept an order
+          x-description-i18n:
+            eng: Unique ID that identifies the shipment of the order to be performed by the operation to accept an order
+            spa: ID único que identifica el envío del la orden a realizar por la operación para aceptar un pedido
+            por: ID exclusivo que identifica o envio do pedido a ser realizado pela operação de aceitação de um pedido
           required: true
           schema:
             type: string
@@ -1105,7 +1117,11 @@ paths:
               properties:
                 status:
                   type: string
-                  description: This property indicates the order status, which must have the value "accepted" for this endpoint. 
+                  description: This property indicates the order status, which must have the value "accepted" for this endpoint
+                  x-description-i18n:
+                    eng: This property indicates the order status, which must have the value "accepted" for this endpoint
+                    spa: Esta propiedad indica el status de la orden, que debe tener el valor "accepted" para este endpoint
+                    por: Esta propriedade indica o status do pedido, que deve ter o valor "accepted" para este endpoint
                   example: "accepted"
       responses:
         '200':
@@ -1117,7 +1133,11 @@ paths:
                 properties:
                   status:
                     type: string
-                    description: Status of the order after its acceptance. The Status value that will be returned is "accepted".
+                    description: Status of the order after its acceptance. The Status value that will be returned is "accepted"
+                    x-description-i18n:
+                      eng: Status of the order after its acceptance. The Status value that will be returned is "accepted"
+                      spa: Status de la orden tras su aceptación. El valor de statys que se devolverá es "accepted"
+                      por: Status do pedido após sua aceitação. O valor de Status que será retornado é "accepted"
                     example: accepted   
         '400':
           description: Error
@@ -1204,11 +1224,11 @@ paths:
         eng: Print/get order coupon
         spa: Imprimir/obtener cupón de pedido
         por: Imprimir/obter cupom do pedido
-      description: This endpoint is used to accept an order and, in addition, it returns the PDF file for the order coupon. This endpoint can be used if it is not necessary to develop a custom coupon for the POS.
+      description: This endpoint is used to accept an order and, in addition, it returns the PDF file for the order coupon. This endpoint can be used if it is not necessary to develop a custom coupon for the POS
       x-description-i18n:
-        eng: This endpoint is used to accept an order and, in addition, it returns the PDF file for the order coupon. This endpoint can be used if it is not necessary to develop a custom coupon for the POS.
-        spa: Este endpoint se utiliza para aceptar un pedido y, además, devuelve el archivo PDF del cupón del pedido. Este endpoint se puede usar si no es necesario desarrollar un cupón personalizado para el PDV.
-        por: Este endpoint é utilizado para aceitar um pedido e, além disso, retorna o arquivo PDF do cupom do pedido. Este endpoint pode ser utilizado caso não seja necessário desenvolver um cupom personalizado para o PDV.
+        eng: This endpoint is used to accept an order and, in addition, it returns the PDF file for the order coupon. This endpoint can be used if it is not necessary to develop a custom coupon for the POS
+        spa: Este endpoint se utiliza para aceptar un pedido y, además, devuelve el archivo PDF del cupón del pedido. Este endpoint se puede usar si no es necesario desarrollar un cupón personalizado para el PDV
+        por: Este endpoint é utilizado para aceitar um pedido e, além disso, retorna o arquivo PDF do cupom do pedido. Este endpoint pode ser utilizado caso não seja necessário desenvolver um cupom personalizado para o PDV
       parameters:
         - name: shipment_id
           in: path
@@ -1304,11 +1324,11 @@ paths:
         eng: Reasons for cancellation
         spa: Motivos de cancelación
         por: Motivos do cancelamento
-      description: This endpoint returns the cancellation reasons that are available for an order. It is important to remember that cancellation reasons vary depending on the current status of the order.
+      description: This endpoint returns the cancellation reasons that are available for an order. It is important to remember that cancellation reasons vary depending on the current status of the order
       x-description-i18n:
-        eng: This endpoint returns the cancellation reasons that are available for an order. It is important to remember that cancellation reasons vary depending on the current status of the order.
-        spa: Este endpoint devuelve los motivos de cancelación que están disponibles para un pedido. Es importante recordar que los motivos de cancelación varían según el estado actual del pedido.
-        por: Esse endpoint retorna os motivos de cancelamento disponíveis para um pedido. É importante lembrar que os motivos de cancelamento variam de acordo com o status atual do pedido.
+        eng: This endpoint returns the cancellation reasons that are available for an order. It is important to remember that cancellation reasons vary depending on the current status of the order
+        spa: Este endpoint devuelve los motivos de cancelación que están disponibles para un pedido. Es importante recordar que los motivos de cancelación varían según el estado actual del pedido
+        por: Esse endpoint retorna os motivos de cancelamento disponíveis para um pedido. É importante lembrar que os motivos de cancelamento variam de acordo com o status atual do pedido
       parameters:
         - name: shipment_id
           in: path
@@ -1430,11 +1450,11 @@ paths:
         eng: Cancel order
         spa: Cancelar pedido
         por: Cancelar pedido
-      description: This endpoint cancels an order, changing its status. A reason for the cancellation can be added, it's necessary just to check if the reason of cancellation are available for the current status.
+      description: This endpoint cancels an order, changing its status. A reason for the cancellation can be added, it's necessary just to check if the reason of cancellation are available for the current status
       x-description-i18n:
-        eng: This endpoint cancels an order, changing its status. A reason for the cancellation can be added, it's necessary just to check if the reason of cancellation are available for the current status.
-        spa: Este endpoint cancela un pedido, cambiando su estado. Se puede agregar un motivo para la cancelación, solo es necesario verificar si el motivo de la cancelación está disponible para el estado actual.
-        por: Este endpoint cancela um pedido, alterando seu status. Pode ser adicionado um motivo para o cancelamento, bastando apenas verificar se o motivo do cancelamento está disponível para o status atual.
+        eng: This endpoint cancels an order, changing its status. A reason for the cancellation can be added, it's necessary just to check if the reason of cancellation are available for the current status
+        spa: Este endpoint cancela un pedido, cambiando su estado. Se puede agregar un motivo para la cancelación, solo es necesario verificar si el motivo de la cancelación está disponible para el estado actual
+        por: Este endpoint cancela um pedido, alterando seu status. Pode ser adicionado um motivo para o cancelamento, bastando apenas verificar se o motivo do cancelamento está disponível para o status atual
       parameters:
         - name: shipment_id
           in: path
@@ -1591,11 +1611,11 @@ paths:
         eng: Get all stores
         spa: Obtener todas las tiendas
         por: Obter todas as lojas
-      description: This endpoint returns all stores owned by a user, using the User ID as a parameter.
+      description: This endpoint returns all stores owned by a user, using the User ID as a parameter
       x-description-i18n:
-        eng: This endpoint returns all stores owned by a user, using the User ID as a parameter.
-        spa: Este endpoint devuelve todas las tiendas propiedad de un usuario, utilizando la ID de usuario como parámetro.
-        por: Esse endpoint retorna todas as lojas pertencentes a um usuário, usando o User ID como filtro parâmetro.
+        eng: This endpoint returns all stores owned by a user, using the User ID as a parameter
+        spa: Este endpoint devuelve todas las tiendas propiedad de un usuario, utilizando la ID de usuario como parámetro
+        por: Esse endpoint retorna todas as lojas pertencentes a um usuário, usando o User ID como filtro parâmetro
       parameters:
         - name: seller_id
           in: path
@@ -1903,11 +1923,11 @@ paths:
         eng: Get store
         spa: Obter loja
         por: Obter loja
-      description: This endpoint is used to get a specific store using its ID as parameter.
+      description: This endpoint is used to get a specific store using its ID as parameter
       x-description-i18n:
-        eng: This endpoint is used to get a specific store using its ID as parameter.
-        spa: Este endpoint se usa para obtener una tienda específica usando su ID como parámetro.
-        por: Este endpoint é usado para obter uma loja específica usando seu ID como parâmetro.
+        eng: This endpoint is used to get a specific store using its ID as parameter
+        spa: Este endpoint se usa para obtener una tienda específica usando su ID como parámetro
+        por: Este endpoint é usado para obter uma loja específica usando seu ID como parâmetro
       parameters:
         - name: StoreID
           in: path
@@ -2235,11 +2255,11 @@ paths:
         eng: Update external ID
         spa: Actualizar ID externo
         por: Atualizar external ID
-      description: This endpoint updates the External ID value of a store. The External ID value is an optional field.
+      description: This endpoint updates the External ID value of a store. The External ID value is an optional field
       x-description-i18n:
-        eng: This endpoint updates the External ID value of a store. The External ID value is an optional field.
-        spa: Este endpoint actualiza el valor de ID externo de una tienda. El valor de ID externo es un campo opcional.
-        por: Esse endpoint atualiza o valor do ID externo de uma loja. O valor de ID externo é um campo opcional.
+        eng: This endpoint updates the External ID value of a store. The External ID value is an optional field
+        spa: Este endpoint actualiza el valor de ID externo de una tienda. El valor de ID externo es un campo opcional
+        por: Esse endpoint atualiza o valor do ID externo de uma loja. O valor de ID externo é um campo opcional
       parameters:
         - name: StoreID
           in: path
@@ -2569,11 +2589,11 @@ paths:
         eng: Get store by external ID
         spa: Obtener tienda por ID externo
         por: Obter loja por ID externo
-      description: This endpoint gets stores by the external ID that was previously registered.
+      description: This endpoint gets stores by the external ID that was previously registered
       x-description-i18n:
-        eng: This endpoint gets stores by the external ID that was previously registered.
-        spa: Este endpoint obtiene tiendas por el ID externo que se registró previamente.
-        por: Esse endpoint obtém lojas pelo ID externo que foi registrado anteriormente.
+        eng: This endpoint gets stores by the external ID that was previously registered
+        spa: Este endpoint obtiene tiendas por el ID externo que se registró previamente
+        por: Esse endpoint obtém lojas pelo ID externo que foi registrado anteriormente
       parameters:
         - name: SellerID
           in: path
@@ -2900,11 +2920,11 @@ paths:
         eng: Update store status
         spa: Actualizar estado de la tienda
         por: Atualizar o status da loja
-      description: This endpoint changes the operation status of a store.
+      description: This endpoint changes the operation status of a store
       x-description-i18n:
-        eng: This endpoint changes the operation status of a store.
-        spa: Este endpoint cambia el estado de funcionamiento de una tienda.
-        por: Este endpoint altera o status de operação de uma loja.
+        eng: This endpoint changes the operation status of a store
+        spa: Este endpoint cambia el estado de funcionamiento de una tienda
+        por: Este endpoint altera o status de operação de uma loja
       parameters:
         - name: store_id
           in: path
