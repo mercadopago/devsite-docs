@@ -87,7 +87,7 @@ Adicione o código de segurança do Mercado Pago na sua página, substituindo o 
 
 > NOTE
 >
-> Nota
+> Importante
 >
 > Caso não tenha um valor disponível para a seção, você pode deixá-la vazia.
 
