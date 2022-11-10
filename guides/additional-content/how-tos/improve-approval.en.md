@@ -68,6 +68,7 @@ You can adapt **the Checkout Pro integration** to your business model by configu
 For more details, visit the [Checkout Pro preference setting](/developers/en/docs/checkout-pro/checkout-customization/preferences) documentation.
 
 ### Improve the User Experience
+
 Often, the buyer can make mistakes when filling in their details at checkout. That's why it's worth reviewing every step, interaction, and even the interface design, to ensure everything is as clear as it should be. Please make the necessary changes to prevent confusion or issues.
 
 ### Help your customers with their declined payments
