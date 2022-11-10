@@ -57,6 +57,7 @@ Para evitar que un pago real sea rechazado porque no cumple con las validaciones
 > Si utilizas Checkout Pro, ya cuentas con toda la seguridad para prevenir fraude.
 
 ### Detallar toda la información sobre el pago
+
 Para optimizar la validación de la seguridad de los pagos y mejorar las aprobaciones, es valioso enviar la mayor cantidad posible de datos del comprador y del ítem. 
  
 Presta atención a todos los atributos disponibles al crear un pago con el método [Crear pago](/developers/es/reference/payments/_payments/post). 
