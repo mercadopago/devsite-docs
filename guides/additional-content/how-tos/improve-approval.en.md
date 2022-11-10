@@ -46,6 +46,7 @@ In these cases, the `status_detail` field may return: `cc_rejected_blacklist`, `
 > Keep in mind that if the card issuer fails to inform the rejection reason, you’ll see the payment details as `cc_rejected_other_reason`. In this scenario, we recommend changing the payment method or reaching out to the bank to solve the issue.
 
 ## Recommendations to improve your approval
+
 To prevent a legitimate payment from being refused because it does not meet security validations, **it is necessary to include all possible information** when carrying out the transaction. Furthermore, you must pay attention to some security requirements, such as our **Security Code** and **Device ID**.
 
 > NOTE
