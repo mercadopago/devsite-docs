@@ -43,6 +43,7 @@ Nestes casos o campo `status_detail` poderá retornar: `cc_rejected_blacklist`, 
 > É importante considerar que se o emissor do cartão de crédito não indicar o motivo da recusa, você verá o detalhe do pagamento como `cc_rejected_other_reason`. Nesse caso, é recomendável alterar o meio de pagamento ou entrar em contato com o banco para resolver o problema.
 
 ## Recomendações para melhorar sua aprovação
+
 Para evitar que um pagamento legítimo seja recusado por não atender as validações de segurança, é necessário **incluir todas as informações possíveis na hora de realizar a operação** e também se atentar a alguns requisitos de segurança, como nosso **Código de Segurança** e o **Device ID**.
 
 > NOTE
