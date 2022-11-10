@@ -72,6 +72,7 @@ For more details, visit the [Checkout Pro preference setting](/developers/en/doc
 Often, the buyer can make mistakes when filling in their details at checkout. That's why it's worth reviewing every step, interaction, and even the interface design, to ensure everything is as clear as it should be. Please make the necessary changes to prevent confusion or issues.
 
 ### Help your customers with their declined payments
+
 The reason for refusing payment must be explained to your customers. They need to be able to pay easily!
 
 For example, if a payment is declined because the user does not have enough funds in their bank account, you could recommend they try using a different payment method to complete the transaction.
