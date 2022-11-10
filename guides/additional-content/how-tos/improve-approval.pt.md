@@ -19,6 +19,7 @@ Você pode encontrar as informações e checar o estado de um pagamento via API,
 
 
 ### Erros de preenchimento pelo comprador
+
 Este é um dos principais motivos para que um pagamento seja recusado. Muitas vezes o comprador pode errar na hora de preencher seus dados, principalmente os de **endereço, CPF e números do cartão**.
 
 Nestes casos o campo `status_detail` poderá retornar: `cc_rejected_bad_filled_date`, `cc_rejected_bad_filled_other`, `cc_rejected_bad_filled_security_code`
