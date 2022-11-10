@@ -30,6 +30,7 @@ Ao realizar um pagamento com cartão de crédito ou débito, por exemplo, o banc
 Nestes casos o campo `status_detail` poderá retornar: `cc_rejected_call_for_authorize`, `cc_rejected_card_disabled`, `cc_rejected_duplicated_payment`, `cc_rejected_insufficient_amount`
 
 ### Prevenção contra fraudes
+
 Ao realizar um pagamento, uma série de verificações é feita tanto pelo banco quanto pelo Mercado Pago, e caso nosso sistema antifraudes detecte algum tipo de movimentação incomum ou que caracterize algum tipo de golpe ou fraude, ele é bloqueado. 
 
 Nestes casos o campo `status_detail` poderá retornar: `cc_rejected_blacklist`, `cc_rejected_high_risk`
