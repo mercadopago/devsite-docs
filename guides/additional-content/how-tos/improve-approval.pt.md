@@ -1,4 +1,5 @@
 # Melhore a aprovação de seus pagamentos
+
 Ao realizar um pagamento online, a transação passa por uma análise criteriosa para minimizar riscos de fraude e garantir que o processamento ocorra sem erros.
 
 Nesta documentação você encontrará informações sobre o que leva um pagamento a ser recusado e algumas recomendações para evitar que isso aconteça.
