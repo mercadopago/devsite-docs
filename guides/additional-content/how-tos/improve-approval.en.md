@@ -131,7 +131,7 @@ X-meli-session-id: device_id
 
 > WARNING
 > 
-> Important
+> Attention
 >
 > Remember to replace `device_id` with the name of the variable that contains your Device ID value.
 
