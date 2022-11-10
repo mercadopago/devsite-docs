@@ -191,7 +191,7 @@ A través de la preferencia de pago, puedes configurar un método de pago por de
 | `purpose` | Al indicar el valor `wallet_purchase` en este método, Payment Brick solo aceptará pagos de usuarios registrados en Mercado Pago, con tarjeta y saldo de cuenta. |
 ------------
 
-----[mla, mco, mlb, mlu, mlc, mpe]----
+----[mlm, mlc, mco, mpe, mlu]----
 | Atributo | Descripción |
 | --- | --- |
 | `payment_methods` | Clase que describe los métodos y atributos de medios de pago de Payment Brick. |
