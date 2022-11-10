@@ -51,7 +51,7 @@ To prevent a legitimate payment from being refused because it does not meet secu
 
 > NOTE
 >
-> Note
+> Important
 >
 > If you use Checkout Pro, you already implement our security methods to prevent fraud.
 
