@@ -22,6 +22,7 @@ You can find the information and check the status of a payment via the API, thro
 
 
 ### Errors made by the buyer
+
 This is one of the main reasons a payment might be declined. Occasionally, the buyer can make a mistake when filling in their data, **especially address, card numbers, and identification numbers**.
 
 In these cases, the `status_detail` field may return: `cc_rejected_bad_filled_date`, `cc_rejected_bad_filled_other`, `cc_rejected_bad_filled_security_code`
