@@ -35,6 +35,7 @@ Al realizar un pago con tarjeta de crédito o débito el banco emisor puede rech
 En estos casos, el campo `status_detail` puede devolver: `cc_rejected_call_for_authorize`, `cc_rejected_card_disabled`, `cc_rejected_duplicated_payment`, `cc_rejected_insufficient_amount`
 
 ### Pagos rechazados para prevenir fraude
+
 A la hora de efectuar un pago tenemos una serie de comprobaciones, tanto por parte del banco como de Mercado Pago, y si nuestro sistema de prevención de fraude detecta algún movimiento inusual o que caracterice algún tipo de estafa o fraude, se bloquea. 
 
 En estos casos, el campo `status_detail` puede devolver: `cc_rejected_blacklist`, `cc_rejected_high_risk`
