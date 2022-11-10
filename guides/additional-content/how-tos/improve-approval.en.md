@@ -79,7 +79,7 @@ For example, if a payment is declined because the user does not have enough fund
 
 > NOTE
 >
-> Nota
+> Important
 >
 > If you’re using Checkout Pro, don’t worry! All your messages are already set up. If you’re using another product, we recommend showing [a specific message for each rejection reason](/developers/en/guides/online-payments/checkout-api/handling-responses).
 
