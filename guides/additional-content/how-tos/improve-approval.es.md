@@ -63,6 +63,7 @@ Para optimizar la validación de la seguridad de los pagos y mejorar las aprobac
 Presta atención a todos los atributos disponibles al crear un pago con el método [Crear pago](/developers/es/reference/payments/_payments/post). 
 
 ### Configurar preferencias
+
 Puedes adaptar la **integración de Checkout Pro** a tu modelo de negocio configurando atributos de preferencia, que ayudan a mejorar las aprobaciones.
 
 Para obtener más detalles, visite la documentación de configuración de preferencias de [Checkout Pro](developers/es/docs/checkout-pro/checkout-customization/preferences).
