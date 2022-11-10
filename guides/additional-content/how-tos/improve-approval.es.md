@@ -125,6 +125,7 @@ Una vez que hayas agregado el código de seguridad de Mercado Pago a tu sitio, a
   ```
 
 #### 3. Uso del device ID
+
 Una vez que tengas el valor de ID del dispositivo, debes enviarlo a nuestros servidores al crear un pago. Para hacer esto, agrega el siguiente encabezado (header) a la solicitud:
 
 ```http
