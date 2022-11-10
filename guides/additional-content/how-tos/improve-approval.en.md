@@ -9,6 +9,7 @@ In this documentation, you will find information about what causes a payment to 
 A payment may be declined due to an **issue with the payment method or because it does not meet the necessary security requirements**. For example, if the card does not have enough amount or if there is a strange movement of the account.
 
 ## Reasons for refusal
+
 Payment refusal is a reality in the world of online sales and can happen for several reasons: incorrect filling of information by the customer, attempted fraud, problem in communication between acquirers, among many other issues. 
 
 You can find the information and check the status of a payment via the API, through the [Get Payment](/developers/en/reference/payments/_payments_id/get) method. The `status` field indicates whether the payment was approved, while the `status_detail` field provides more details, including the reasons for rejection.
