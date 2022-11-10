@@ -23,6 +23,7 @@ Puedes encontrar la información y verificar el estado de un pago a través de l
 
 
 ### Errores de relleno del comprador
+
 Esta es una de las principales razones por las que se rechaza un pago. A menudo, el comprador puede cometer un error al completar sus datos, **especialmente la dirección, datos de identificación y los números de tarjeta**.
 
 En estos casos, el campo `status_detail` puede devolver: `cc_rejected_bad_filled_date`, `cc_rejected_bad_filled_other`, `cc_rejected_bad_filled_security_code`
