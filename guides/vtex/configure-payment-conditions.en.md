@@ -16,14 +16,13 @@ The configuration of payment conditions is done in the **Payment conditions** ta
 * **Debit Card:** this referers to debit card transactions. ------------
 
 ----[mla, mlm, mlb]----
-* **Mercado Credits:** it's Mercado Pago's financing method
-that allows you to pay in installments without a credit card. To activate the Mercado Credits button, you must follow these steps listed below:
- * You must have created a MercadoPagoV2 gateway affiliation. If you haven't, you can learn how to do it in [this documentation](/developers/en/docs/vtex/gateway-affiliations).
- * In the VTEX administration panel, go to **Payments > Settings**.
- * Go to the **Payment Conditions** tab, click on the "+" button and search for Mercado Credits.
- * Name the rule to facilitate its identification and activate the payment condition in the Status field.
- * In **Process with affiliation**, choose MercadoPagoV2 as your affiliation.
- * Save your changes by clicking on **Save**.
+* **Mercado Credits:** it's Mercado Pago's financing method that allows you to pay in installments without a credit card. To activate the Mercado Credits button, you must follow these steps listed below:
+  * You must have created a MercadoPagoV2 gateway affiliation. If you haven't, you can learn how to do it in [this documentation](/developers/en/docs/vtex/gateway-affiliations).
+  * In the VTEX administration panel, go to **Payments > Settings**.
+  * Go to the **Payment Conditions** tab, click on the "+" button and search for Mercado Credits.
+  * Name the rule to facilitate its identification and activate the payment condition in the Status field.
+  * In **Process with affiliation**, choose MercadoPagoV2 as your affiliation.
+  * Save your changes by clicking on **Save**.
 ------------
 
 * **Other:** this refers to transactions with  **MercadoPagoOff**, **MercadoPagoWallet**, or **MercadoPagoPro**.
