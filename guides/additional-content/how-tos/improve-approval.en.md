@@ -122,6 +122,7 @@ When you add the Mercado Pago security code to your site, a global JavaScript va
   ```
 
 #### 3. Using the device ID
+
 When creating a payment, you need to send us the Device ID value. To do so, simply add the following header to the request:
 
 ```http
