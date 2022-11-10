@@ -5,6 +5,7 @@ When making an online payment, the transaction undergoes a careful analysis to m
 In this documentation, you will find information about what causes a payment to be declined and some recommendations to prevent this from happening.
 
 ## Why is a payment order rejected?
+
 A payment may be declined due to an **issue with the payment method or because it does not meet the necessary security requirements**. For example, if the card does not have enough amount or if there is a strange movement of the account.
 
 ## Reasons for refusal
