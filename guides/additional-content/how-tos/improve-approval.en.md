@@ -1,4 +1,5 @@
 # How to improve payments approval
+
 When making an online payment, the transaction undergoes a careful analysis to minimize fraud risks and ensure that processing takes place without errors.
 
 In this documentation, you will find information about what causes a payment to be declined and some recommendations to prevent this from happening.
