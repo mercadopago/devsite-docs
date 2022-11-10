@@ -61,6 +61,7 @@ Se atente a todos os atributos disponíveis ao criar um pagamento usando o méto
 ### Configurar as preferências
 Você pode adaptar a **integração do Checkout Pro** ao seu modelo de negócio configurando atributos de preferência, que auxiliam na melhoria das aprovações. 
 
+
 Veja mais detalhes acessando a documentação de [configurações de preferência](/developers/pt/docs/checkout-pro/checkout-customization/preferences) do Checkout Pro.
 
 ### Melhorar a experiência do usuário
