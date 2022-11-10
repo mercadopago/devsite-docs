@@ -138,7 +138,6 @@ X-meli-session-id: device_id
 >
 > Recuerda reemplazar `device_id` con el nombre de la variable que contiene su valor de ID del dispositivo.
 
-
 ### Implementa el device ID en tu aplicación móvil nativa
 
 Si tienes una aplicación nativa, puedes capturar la información del dispositivo con nuestro SDK y enviarla al momento de crear el token. Sigue estos pasos:
