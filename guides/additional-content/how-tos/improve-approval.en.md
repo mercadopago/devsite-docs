@@ -62,6 +62,7 @@ To optimize payment security validation and improve approvals, it is important t
 When you use the [Create payment](/developers/en/reference/payments/_payments/post) method, make sure to fill in all the available fields. 
 
 ### Configure preferences
+
 You can adapt **the Checkout Pro integration** to your business model by configuring preference attributes, which help improve approvals.
 
 For more details, visit the [Checkout Pro preference setting](/developers/en/docs/checkout-pro/checkout-customization/preferences) documentation.
