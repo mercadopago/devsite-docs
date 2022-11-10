@@ -4,6 +4,7 @@ Ao realizar um pagamento online, a transação passa por uma análise criteriosa
 Nesta documentação você encontrará informações sobre o que leva um pagamento a ser recusado e algumas recomendações para evitar que isso aconteça.
 
 ## Por que um pagamento é recusado?
+
 Um pagamento pode ser recusado por um **erro com o meio de pagamento ou porque não preenche os requisitos de segurança necessários**. Por exemplo, se o cartão não tiver saldo suficiente ou se houver uma movimentação não usual da conta.
 
 ## Motivos de recusa
