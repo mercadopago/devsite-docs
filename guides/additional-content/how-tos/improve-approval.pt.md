@@ -13,7 +13,7 @@ Você pode encontrar as informações e checar o estado de um pagamento via API,
 
 > NOTE
 >
-> Nota
+> Importante
 >
 > Também é possível achar mais informações sobre pagamentos na atividade da conta de [Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/activities).
 
