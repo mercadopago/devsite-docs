@@ -100,6 +100,7 @@ Caso um comprador frequente faça uma compra a partir de um dispositivo diferent
 Para usá-lo na Web é preciso seguir os passos abaixo:
 
 #### 1. Adicione o script de segurança do Mercado Pago
+
 Para implementar a geração do device ID em seu site, adicione o seguinte código na sua página de Checkout:
 
 ```html
