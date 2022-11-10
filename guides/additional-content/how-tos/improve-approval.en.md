@@ -56,6 +56,7 @@ To prevent a legitimate payment from being refused because it does not meet secu
 > If you use Checkout Pro, you already implement our security methods to prevent fraud.
 
 ### Detail all information about the payment
+
 To optimize payment security validation and improve approvals, it is important to submit as much buyer and item data as possible. 
  
 When you use the [Create payment](/developers/en/reference/payments/_payments/post) method, make sure to fill in all the available fields. 
