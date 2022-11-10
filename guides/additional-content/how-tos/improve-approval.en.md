@@ -100,6 +100,7 @@ If a customer makes a purchase on a different device than usual, this may mean t
 To use it on the web, follow the steps below:
 
 #### 1. Add the security code
+
 To generate device IDs on your website, add the following code to your Checkout page:
 
 ```html
