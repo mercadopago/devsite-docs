@@ -28,6 +28,7 @@ This is one of the main reasons a payment might be declined. Occasionally, the b
 In these cases, the `status_detail` field may return: `cc_rejected_bad_filled_date`, `cc_rejected_bad_filled_other`, `cc_rejected_bad_filled_security_code`
 
 ### Bank rejected payments
+
 When paying with a credit or debit card, for example, the issuing bank may refuse the charge for different reasons such as the expiration date, insufficient balance or limit, card disabled or blocked for online payments. 
 
 In these cases, the `status_detail` field may return: `cc_rejected_call_for_authorize`, `cc_rejected_card_disabled`, `cc_rejected_duplicated_payment`, `cc_rejected_insufficient_amount`
