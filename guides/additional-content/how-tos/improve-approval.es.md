@@ -102,7 +102,6 @@ Si un comprador frecuente hace una compra desde un dispositivo diferente al habi
 
 Para usarlo en la web, debes seguir los siguientes pasos:
 
-
 #### 1. Agrega nuestro código de seguridad
 Para implementar la generación del device ID en tu sitio, agrega el siguiente código a su página de Checkout:
 
