@@ -1,4 +1,5 @@
 # Mejora la aprobación de tus pagos
+
 Al realizar un pago online, la transacción se somete a un análisis cuidadoso para minimizar los riesgos de fraude y garantizar que el procesamiento se realice sin errores.
 
 En esta documentación encontrarás información sobre qué provoca que un pago sea rechazado y algunas recomendaciones para evitar que esto suceda.
