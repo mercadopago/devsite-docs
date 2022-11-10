@@ -48,7 +48,7 @@ Para evitar que um pagamento legítimo seja recusado por não atender as valida�
 
 > NOTE
 >
-> Nota
+> Importante
 >
 > Se você usa o Checkout Pro, você já implementou nossos métodos de segurança para evitar fraudes.
 
