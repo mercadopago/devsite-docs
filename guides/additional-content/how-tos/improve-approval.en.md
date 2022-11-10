@@ -34,7 +34,8 @@ When paying with a credit or debit card, for example, the issuing bank may refus
 In these cases, the `status_detail` field may return: `cc_rejected_call_for_authorize`, `cc_rejected_card_disabled`, `cc_rejected_duplicated_payment`, `cc_rejected_insufficient_amount`
 
 ### Payments rejected due to fraud prevention
-AWhen paying, both the issuing bank and Mercado Pago do a series of checks. If our anti-fraud system detects any unusual movement that characterizes a scam or fraud, it will be blocked. 
+
+When paying, both the issuing bank and Mercado Pago do a series of checks. If our anti-fraud system detects any unusual movement that characterizes a scam or fraud, it will be blocked. 
 
 In these cases, the `status_detail` field may return: `cc_rejected_blacklist`, `cc_rejected_high_risk`
 
