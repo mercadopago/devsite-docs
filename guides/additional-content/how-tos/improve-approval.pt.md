@@ -66,6 +66,7 @@ Veja mais detalhes acessando a documentação de [configurações de preferênci
 Muitas vezes o comprador pode errar na hora de preencher seus dados no checkout. Por isso, vale a pena revisar cada passo, interações e até design, para checar se tudo está claro como deveria. Faça as alterações necessárias para impedir qualquer confusão ou problema.
 
 ### Auxilie os seus clientes com seus pagamentos recusados
+
 É importante que você explique aos seus clientes o motivo de recusa do pagamento e que ação pode realizar para solucioná-lo. Seus clientes terão todas as informações necessárias para pagar sem problemas.
 
 Por exemplo, se um pagamento for recusado por fundos insuficientes, poderá recomendar a eles que tentem novamente com outro meio de pagamento para completar a operação.
