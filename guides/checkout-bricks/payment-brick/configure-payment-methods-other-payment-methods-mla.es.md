@@ -1,6 +1,6 @@
 # Configurar la integración con otros medios de pago
 
-Con el Checkout Bricks de Mercado Pago, es posible ofrecer, además de tarjeta y Pix, pagos vía **Rapipago** y **Pago Fácil**. 
+Con el Checkout Bricks de Mercado Pago, es posible ofrecer, además de tarjeta, pagos vía **Rapipago** y **Pago Fácil**. 
 
 Para obtener una lista detallada de todos los medios de pago disponibles para integración, envía un **GET** con tu _Access token_ al endpoint [/v1/payment_methods](/developers/es/reference/payment_methods/_payment_methods/get) y ejecuta la solicitud o, si lo prefieres, haz la solicitud utilizando los siguientes SDKs. 
 
@@ -64,7 +64,7 @@ curl -X GET \
 ```
 ]]]
 
-Para ofrecer pagos con **Rapipago** y **Pago Fácil**, sigue las siguientes etapas. Si ya ha integrado los pagos con tarjeta, puede iniciar la integración desde el **paso 4**.
+Para ofrecer pagos con **Rapipago** y **Pago Fácil**, sigue los siguientes pasos. Si ya ha integrado los pagos con tarjeta, puede iniciar la integración desde el **paso 4**.
 
 1. [Crear container](#bookmark_crear_container)
 2. [Incluir y configurar la librería MercadoPago.js](#bookmark_incluir_y_configurar_la_librería_mercadopago.js)
@@ -244,7 +244,7 @@ settings = {
 
 La propiedad `ticket` acepta 2 tipos de variables, `string` y `string[]`. En el ejemplo anterior, se aceptarán pagos a través de **Rapipago** y **Pago Fácil**. 
 
-Si no desea permitir ambos métodos de pago, en lugar de la cadena `all`, puede pasar un array con solo las ID deseadas. Como en el ejemplo a continuación, donde solo se acepta el a través de **Pago Fácil**.
+Si no desea permitir ambos métodos de pago, en lugar de la cadena `all`, puede pasar un array con solo las IDs deseadas. Como en el ejemplo a continuación, donde solo se acepta el a través de **Pago Fácil**.
 
 [[[
 ```Javascript
@@ -261,10 +261,10 @@ settings = {
 ```
 ]]]
 
-En este caso, al ser **Pago Fácil** el único medio disponible, no se mostrará la lista para seleccionar dónde pagar. Para obtener una lista completa de ID que se pueden pasar dentro del array, consulte la API [Obtener medios de pago](/developers/es/reference/payment_methods/_payment_methods/get) en nuestra referencia de API.
+En este caso, al ser **Pago Fácil** el único medio disponible, no se mostrará la lista para seleccionar dónde pagar. Para obtener una lista completa de IDs que se pueden pasar dentro del array, consulte la API [Obtener medios de pago](/developers/es/reference/payment_methods/_payment_methods/get) en nuestra referencia de API.
 
 > NOTE
 >
 > Importante
 >
-> La respuesta de la API contiene ID de varios `payment_type_id`. Los ID aceptados por la propiedad `ticket` son solo aquellos que contienen `payment_type_id = 'ticket'`.
+> La respuesta de la API contiene IDs de varios `payment_type_id`. Las IDs aceptadas por la propiedad `ticket` son solo aquellas que contienen `payment_type_id = 'ticket'`.

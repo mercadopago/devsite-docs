@@ -1,6 +1,6 @@
 # Configure the integration with other payment methods
 
-With Mercado Pago's Checkout Bricks, it is possible to offer, in addition to card and Pix, payments via **Rapipago** and **Pago Fácil**.
+With Mercado Pago's Checkout Bricks, it is possible to offer, in addition to card, payments via **Rapipago** and **Pago Fácil**.
 
 To get a detailed list of all payment methods available for integration, send a **GET** with your **Access token** to the endpoint [/v1/payment_methods](/developers/en/reference/payment_methods/_payment_methods/get) and run the request or, if you prefer, make the request using the SDKs below.
 
@@ -203,7 +203,7 @@ const renderPaymentBrick = async (bricksBuilder) => {
 renderPaymentBrick(bricksBuilder);  
 ```
 
-The result of rendering the Brick should be like the image below:”
+The result of rendering the Brick should be like the image below:
 
 ![payment-Brick-other-payments-methods-mla](checkout-bricks/payment-brick-other-payments-methods-mla-en.jpg)
 
