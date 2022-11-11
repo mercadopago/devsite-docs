@@ -64,12 +64,12 @@ curl -X GET \
 ```
 ]]]
 
-Para ofrecer pagos con **Rapipago** y **Pago Fácil**, sigue los siguientes pasos. Si ya ha integrado los pagos con tarjeta, puede iniciar la integración desde el **paso 4**.
+Para ofrecer pagos con **Rapipago** y **Pago Fácil**, sigue los siguientes pasos. Si ya has integrado los pagos con tarjeta, puede iniciar la integración desde el **paso 4**.
 
 1. [Crear container](#bookmark_crear_container)
 2. [Incluir y configurar la librería MercadoPago.js](#bookmark_incluir_y_configurar_la_librería_mercadopago.js)
-3. [Instanciar brick](#bookmark_instanciar_brick)
-4. [Renderizar brick](#bookmark_renderizar_brick)
+3. [Instanciar Brick](#bookmark_instanciar_brick)
+4. [Renderizar Brick](#bookmark_renderizar_brick)
 5. [Administrar otros medios de pago](#bookmark_administrar_otros_medios_de_pago)
 
 > Los pasos se realizan en el backend o frontend. Las etiquetas **Client-Side** y **Server-Side** ubicadas inmediatamente al lado del título lo ayudan a identificar qué paso se realiza en qué instancia. <br/></br>
