@@ -4,11 +4,11 @@
 >
 > Selecionar idioma 
 
-Você pode selecionar o idioma do brick de duas formas diferentes: no momento da inicialização ou via SDK.
+Você pode selecionar o idioma do Brick de duas formas diferentes: no momento da inicialização ou via SDK.
 
 ## Selecionar idioma ao inicializar
 
-Para selecionar o idioma ao inicializar o brick, insira o código abaixo em seu projeto atentando-se ao parâmetro `locale`, que deverá ser preenchido com o idioma definido seguindo o seguinte padrão: `es` , `pt-BR`  e `en` para espanhol, português e inglês, respectivamente.
+Para selecionar o idioma ao inicializar o Brick, insira o código abaixo em seu projeto atentando-se ao parâmetro `locale`, que deverá ser preenchido com o idioma definido seguindo o seguinte padrão: `es` , `pt-BR`  e `en` para espanhol, português e inglês, respectivamente.
 
 ```javascript
 const settings = {

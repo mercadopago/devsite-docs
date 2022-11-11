@@ -8,7 +8,7 @@ Por el momento, podrás darle a tus clientes la posibilidad de hacer pagos a tra
 
 La posibilidad de guardar los datos de tarjetas que ya fueron cargadas en compras anteriores, hace que el proceso de pago sea más eficiente y rápido. Para el comprador ya no es necesario tener que volver a cargar los datos cada vez que ingrese al checkout. 
 
-![payment-brick-layout-mlb](checkout-bricks/payment-brick-layout-mlb-es.gif)
+![payment-Brick-layout-mlb](checkout-bricks/payment-brick-layout-mlb-es.gif)
 
 A su vez, nuestro procesador cumple con todas las garantías de seguridad para darle a los usuarios la máxima protección al guardar sus datos. Esa es una de las grandes ventajas de sumar Checkout Bricks a su sitio: la tranquilidad de brindar una solución segura, con el respaldo de Mercado Pago, pero personalizado a las necesidades de su empresa.
 
@@ -20,7 +20,7 @@ El layout de Payment Brick se basa en las mejores prácticas UX para que sea pos
 >
 > Atención
 >
-> Los bricks se crearon no solo para satisfacer las necesidades técnicas de implementación y seguridad, sino también para brindar la mejor experiencia al comprador. La personalización de un brick puede cambiar drásticamente la experiencia del comprador. Nuestra recomendación es que siempre hagas uso del brick con la menor personalización adicional posible para garantizar siempre la mejor experiencia.
+> Los Bricks se crearon no solo para satisfacer las necesidades técnicas de implementación y seguridad, sino también para brindar la mejor experiencia al comprador. La personalización de un Brick puede cambiar drásticamente la experiencia del comprador. Nuestra recomendación es que siempre hagas uso del Brick con la menor personalización adicional posible para garantizar siempre la mejor experiencia.
 
 ### Campos de los formularios
 
@@ -58,7 +58,7 @@ Por el momento, podrás darle a tus clientes la posibilidad de hacer pagos a tra
 
 La posibilidad de guardar los datos de tarjetas que ya fueron cargadas en compras anteriores, hace que el proceso de pago sea más eficiente y rápido. Para el comprador ya no es necesario tener que volver a cargar los datos cada vez que ingrese al checkout. 
 
-![payment-brick-layout-mla](checkout-bricks/payment-brick-layout-mla-es.gif)
+![payment-Brick-layout-mla](checkout-bricks/payment-brick-layout-mla-es.gif)
 
 A su vez, nuestro procesador cumple con todas las garantías de seguridad para darle a los usuarios la máxima protección al guardar sus datos. Esa es una de las grandes ventajas de sumar Checkout Bricks a su sitio: la tranquilidad de brindar una solución segura, con el respaldo de Mercado Pago, pero personalizado a las necesidades de su empresa.
 
@@ -70,7 +70,7 @@ El layout de Payment Brick se basa en las mejores prácticas UX para que sea pos
 >
 > Atención
 >
-> Los bricks se crearon no solo para satisfacer las necesidades técnicas de implementación y seguridad, sino también para brindar la mejor experiencia al comprador. La personalización de un brick puede cambiar drásticamente la experiencia del comprador. Nuestra recomendación es que siempre hagas uso del brick con la menor personalización adicional posible para garantizar siempre la mejor experiencia.
+> Los Bricks se crearon no solo para satisfacer las necesidades técnicas de implementación y seguridad, sino también para brindar la mejor experiencia al comprador. La personalización de un Brick puede cambiar drásticamente la experiencia del comprador. Nuestra recomendación es que siempre hagas uso del Brick con la menor personalización adicional posible para garantizar siempre la mejor experiencia.
 
 ### Campos de los formularios
 
@@ -97,7 +97,7 @@ Por el momento, podrás darle a tus clientes la posibilidad de hacer pagos a tra
 
 La posibilidad de guardar los datos de tarjetas que ya fueron cargadas en compras anteriores, hace que el proceso de pago sea más eficiente y rápido. Para el comprador ya no es necesario tener que volver a cargar los datos cada vez que ingrese al checkout. 
 
-![payment-brick-layout-all](checkout-bricks/payment-brick-layout-all-es.gif)
+![payment-Brick-layout-all](checkout-bricks/payment-brick-layout-all-es.gif)
 
 A su vez, nuestro procesador cumple con todas las garantías de seguridad para darle a los usuarios la máxima protección al guardar sus datos. Esa es una de las grandes ventajas de sumar Checkout Bricks a su sitio: la tranquilidad de brindar una solución segura, con el respaldo de Mercado Pago, pero personalizado a las necesidades de su empresa.
 
@@ -109,7 +109,7 @@ El layout de Payment Brick se basa en las mejores prácticas UX para que sea pos
 >
 > Atención
 >
-> Los bricks se crearon no solo para satisfacer las necesidades técnicas de implementación y seguridad, sino también para brindar la mejor experiencia al comprador. La personalización de un brick puede cambiar drásticamente la experiencia del comprador. Nuestra recomendación es que siempre hagas uso del brick con la menor personalización adicional posible para garantizar siempre la mejor experiencia.
+> Los Bricks se crearon no solo para satisfacer las necesidades técnicas de implementación y seguridad, sino también para brindar la mejor experiencia al comprador. La personalización de un Brick puede cambiar drásticamente la experiencia del comprador. Nuestra recomendación es que siempre hagas uso del Brick con la menor personalización adicional posible para garantizar siempre la mejor experiencia.
 
 ### Campos de los formularios
 
@@ -136,7 +136,7 @@ Por el momento, podrás darle a tus clientes la posibilidad de hacer pagos a tra
 
 La posibilidad de guardar los datos de tarjetas que ya fueron cargadas en compras anteriores, hace que el proceso de pago sea más eficiente y rápido. Para el comprador ya no es necesario tener que volver a cargar los datos cada vez que ingrese al checkout. 
 
-![payment-brick-layout-all](checkout-bricks/payment-brick-layout-all-es.gif)
+![payment-Brick-layout-all](checkout-bricks/payment-brick-layout-all-es.gif)
 
 A su vez, nuestro procesador cumple con todas las garantías de seguridad para darle a los usuarios la máxima protección al guardar sus datos. Esa es una de las grandes ventajas de sumar Checkout Bricks a su sitio: la tranquilidad de brindar una solución segura, con el respaldo de Mercado Pago, pero personalizado a las necesidades de su empresa.
 
@@ -148,7 +148,7 @@ El layout de Payment Brick se basa en las mejores prácticas UX para que sea pos
 >
 > Atención
 >
-> Los bricks se crearon no solo para satisfacer las necesidades técnicas de implementación y seguridad, sino también para brindar la mejor experiencia al comprador. La personalización de un brick puede cambiar drásticamente la experiencia del comprador. Nuestra recomendación es que siempre hagas uso del brick con la menor personalización adicional posible para garantizar siempre la mejor experiencia.
+> Los Bricks se crearon no solo para satisfacer las necesidades técnicas de implementación y seguridad, sino también para brindar la mejor experiencia al comprador. La personalización de un Brick puede cambiar drásticamente la experiencia del comprador. Nuestra recomendación es que siempre hagas uso del Brick con la menor personalización adicional posible para garantizar siempre la mejor experiencia.
 
 ### Campos de los formularios
 
@@ -175,7 +175,7 @@ Por el momento, podrás darle a tus clientes la posibilidad de hacer pagos a tra
 
 La posibilidad de guardar los datos de tarjetas que ya fueron cargadas en compras anteriores, hace que el proceso de pago sea más eficiente y rápido. Para el comprador ya no es necesario tener que volver a cargar los datos cada vez que ingrese al checkout. 
 
-![payment-brick-layout-all](checkout-bricks/payment-brick-layout-all-es.gif)
+![payment-Brick-layout-all](checkout-bricks/payment-brick-layout-all-es.gif)
 
 A su vez, nuestro procesador cumple con todas las garantías de seguridad para darle a los usuarios la máxima protección al guardar sus datos. Esa es una de las grandes ventajas de sumar Checkout Bricks a su sitio: la tranquilidad de brindar una solución segura, con el respaldo de Mercado Pago, pero personalizado a las necesidades de su empresa.
 
@@ -187,7 +187,7 @@ El layout de Payment Brick se basa en las mejores prácticas UX para que sea pos
 >
 > Atención
 >
-> Los bricks se crearon no solo para satisfacer las necesidades técnicas de implementación y seguridad, sino también para brindar la mejor experiencia al comprador. La personalización de un brick puede cambiar drásticamente la experiencia del comprador. Nuestra recomendación es que siempre hagas uso del brick con la menor personalización adicional posible para garantizar siempre la mejor experiencia.
+> Los Bricks se crearon no solo para satisfacer las necesidades técnicas de implementación y seguridad, sino también para brindar la mejor experiencia al comprador. La personalización de un Brick puede cambiar drásticamente la experiencia del comprador. Nuestra recomendación es que siempre hagas uso del Brick con la menor personalización adicional posible para garantizar siempre la mejor experiencia.
 
 ### Campos de los formularios
 
@@ -214,7 +214,7 @@ Por el momento, podrás darle a tus clientes la posibilidad de hacer pagos a tra
 
 La posibilidad de guardar los datos de tarjetas que ya fueron cargadas en compras anteriores, hace que el proceso de pago sea más eficiente y rápido. Para el comprador ya no es necesario tener que volver a cargar los datos cada vez que ingrese al checkout. 
 
-![payment-brick-layout-all](checkout-bricks/payment-brick-layout-all-es.gif)
+![payment-Brick-layout-all](checkout-bricks/payment-brick-layout-all-es.gif)
 
 A su vez, nuestro procesador cumple con todas las garantías de seguridad para darle a los usuarios la máxima protección al guardar sus datos. Esa es una de las grandes ventajas de sumar Checkout Bricks a su sitio: la tranquilidad de brindar una solución segura, con el respaldo de Mercado Pago, pero personalizado a las necesidades de su empresa.
 
@@ -226,7 +226,7 @@ El layout de Payment Brick se basa en las mejores prácticas UX para que sea pos
 >
 > Atención
 >
-> Los bricks se crearon no solo para satisfacer las necesidades técnicas de implementación y seguridad, sino también para brindar la mejor experiencia al comprador. La personalización de un brick puede cambiar drásticamente la experiencia del comprador. Nuestra recomendación es que siempre hagas uso del brick con la menor personalización adicional posible para garantizar siempre la mejor experiencia.
+> Los Bricks se crearon no solo para satisfacer las necesidades técnicas de implementación y seguridad, sino también para brindar la mejor experiencia al comprador. La personalización de un Brick puede cambiar drásticamente la experiencia del comprador. Nuestra recomendación es que siempre hagas uso del Brick con la menor personalización adicional posible para garantizar siempre la mejor experiencia.
 
 ### Campos de los formularios
 
@@ -253,7 +253,7 @@ Por el momento, podrás darle a tus clientes la posibilidad de hacer pagos a tra
 
 La posibilidad de guardar los datos de tarjetas que ya fueron cargadas en compras anteriores, hace que el proceso de pago sea más eficiente y rápido. Para el comprador ya no es necesario tener que volver a cargar los datos cada vez que ingrese al checkout. 
 
-![payment-brick-layout-all](checkout-bricks/payment-brick-layout-all-es.gif)
+![payment-Brick-layout-all](checkout-bricks/payment-brick-layout-all-es.gif)
 
 A su vez, nuestro procesador cumple con todas las garantías de seguridad para darle a los usuarios la máxima protección al guardar sus datos. Esa es una de las grandes ventajas de sumar Checkout Bricks a su sitio: la tranquilidad de brindar una solución segura, con el respaldo de Mercado Pago, pero personalizado a las necesidades de su empresa.
 
@@ -265,7 +265,7 @@ El layout de Payment Brick se basa en las mejores prácticas UX para que sea pos
 >
 > Atención
 >
-> Los bricks se crearon no solo para satisfacer las necesidades técnicas de implementación y seguridad, sino también para brindar la mejor experiencia al comprador. La personalización de un brick puede cambiar drásticamente la experiencia del comprador. Nuestra recomendación es que siempre hagas uso del brick con la menor personalización adicional posible para garantizar siempre la mejor experiencia.
+> Los Bricks se crearon no solo para satisfacer las necesidades técnicas de implementación y seguridad, sino también para brindar la mejor experiencia al comprador. La personalización de un Brick puede cambiar drásticamente la experiencia del comprador. Nuestra recomendación es que siempre hagas uso del Brick con la menor personalización adicional posible para garantizar siempre la mejor experiencia.
 
 ### Campos de los formularios
 

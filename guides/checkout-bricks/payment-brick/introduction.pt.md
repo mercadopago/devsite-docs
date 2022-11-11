@@ -8,7 +8,7 @@ Neste momento, você poderá dar aos seus clientes a possibilidade de efetuarem 
 
 A possibilidade de guardar os dados dos cartões que já foram debitados em compras anteriores torna o processo de pagamento mais eficiente e rápido. Para o comprador, não é mais necessário recarregar os dados cada vez que entrar no checkout.
 
-![payment-brick-layout-mlb](checkout-bricks/payment-brick-layout-mlb-pt.gif)
+![payment-Brick-layout-mlb](checkout-bricks/payment-brick-layout-mlb-pt.gif)
 
 Por sua vez, nosso processador cumpre todas as garantias de segurança para oferecer aos usuários a máxima proteção ao salvar seus dados. Essa é uma das grandes vantagens de adicionar o Checkout Bricks ao seu site: a tranquilidade de oferecer uma solução segura, respaldada pelo Mercado Pago, mas customizada para as necessidades da sua empresa.
 
@@ -20,7 +20,7 @@ O layout do Payment Brick foi construído com base nas melhores práticas de UX 
 >
 > Atenção
 >
-> Os bricks foram criados para atender não somente necessidades técnicas de implementação e segurança, mas também para prover a melhor experiência ao comprador. Customizar um brick pode mudar drasticamente a experiência do comprador. Nossa recomendação é que você sempre faça uso do brick com a menor quantidade possível de customizações adicionais para garantir sempre a melhor experiência.
+> Os Bricks foram criados para atender não somente necessidades técnicas de implementação e segurança, mas também para prover a melhor experiência ao comprador. Customizar um Brick pode mudar drasticamente a experiência do comprador. Nossa recomendação é que você sempre faça uso do Brick com a menor quantidade possível de customizações adicionais para garantir sempre a melhor experiência.
 
 ### Campos dos formulários
 
@@ -58,7 +58,7 @@ Neste momento, você poderá dar aos seus clientes a possibilidade de efetuarem 
 
 A possibilidade de guardar os dados dos cartões que já foram debitados em compras anteriores torna o processo de pagamento mais eficiente e rápido. Para o comprador, não é mais necessário recarregar os dados cada vez que entrar no checkout.
 
-![payment-brick-layout-mla](checkout-bricks/payment-brick-layout-mla-pt.gif)
+![payment-Brick-layout-mla](checkout-bricks/payment-brick-layout-mla-pt.gif)
 
 Por sua vez, nosso processador cumpre todas as garantias de segurança para oferecer aos usuários a máxima proteção ao salvar seus dados. Essa é uma das grandes vantagens de adicionar o Checkout Bricks ao seu site: a tranquilidade de oferecer uma solução segura, respaldada pelo Mercado Pago, mas customizada para as necessidades da sua empresa.
 
@@ -70,7 +70,7 @@ O layout do Payment Brick foi construído com base nas melhores práticas de UX 
 >
 > Atenção
 >
-> Os bricks foram criados para atender não somente necessidades técnicas de implementação e segurança, mas também para prover a melhor experiência ao comprador. Customizar um brick pode mudar drasticamente a experiência do comprador. Nossa recomendação é que você sempre faça uso do brick com a menor quantidade possível de customizações adicionais para garantir sempre a melhor experiência.
+> Os Bricks foram criados para atender não somente necessidades técnicas de implementação e segurança, mas também para prover a melhor experiência ao comprador. Customizar um Brick pode mudar drasticamente a experiência do comprador. Nossa recomendação é que você sempre faça uso do Brick com a menor quantidade possível de customizações adicionais para garantir sempre a melhor experiência.
 
 ### Campos dos formulários
 
@@ -97,7 +97,7 @@ Por enquanto, você pode dar aos seus clientes a possibilidade de fazer pagament
 
 A possibilidade de guardar os dados dos cartões que já foram debitados em compras anteriores torna o processo de pagamento mais eficiente e rápido. Para o comprador, não é mais necessário recarregar os dados cada vez que entrar no checkout.
 
-![payment-brick-layout-all](checkout-bricks/payment-brick-layout-all-pt.gif)
+![payment-Brick-layout-all](checkout-bricks/payment-brick-layout-all-pt.gif)
 
 Por sua vez, nosso processador cumpre todas as garantias de segurança para oferecer aos usuários a máxima proteção ao salvar seus dados. Essa é uma das grandes vantagens de adicionar o Checkout Bricks ao seu site: a tranquilidade de oferecer uma solução segura, respaldada pelo Mercado Pago, mas customizada para as necessidades da sua empresa.
 
@@ -109,7 +109,7 @@ O layout do Payment Brick foi construído com base nas melhores práticas de UX 
 >
 > Atenção
 >
-> Os bricks foram criados para atender não somente necessidades técnicas de implementação e segurança, mas também para prover a melhor experiência ao comprador. Customizar um brick pode mudar drasticamente a experiência do comprador. Nossa recomendação é que você sempre faça uso do brick com a menor quantidade possível de customizações adicionais para garantir sempre a melhor experiência.
+> Os Bricks foram criados para atender não somente necessidades técnicas de implementação e segurança, mas também para prover a melhor experiência ao comprador. Customizar um Brick pode mudar drasticamente a experiência do comprador. Nossa recomendação é que você sempre faça uso do Brick com a menor quantidade possível de customizações adicionais para garantir sempre a melhor experiência.
 
 ### Campos dos formulários
 
@@ -136,7 +136,7 @@ Por enquanto, você pode dar aos seus clientes a possibilidade de fazer pagament
 
 A possibilidade de guardar os dados dos cartões que já foram debitados em compras anteriores torna o processo de pagamento mais eficiente e rápido. Para o comprador, não é mais necessário recarregar os dados cada vez que entrar no checkout.
 
-![payment-brick-layout-all](checkout-bricks/payment-brick-layout-all-pt.gif)
+![payment-Brick-layout-all](checkout-bricks/payment-brick-layout-all-pt.gif)
 
 Por sua vez, nosso processador cumpre todas as garantias de segurança para oferecer aos usuários a máxima proteção ao salvar seus dados. Essa é uma das grandes vantagens de adicionar o Checkout Bricks ao seu site: a tranquilidade de oferecer uma solução segura, respaldada pelo Mercado Pago, mas customizada para as necessidades da sua empresa.
 
@@ -148,7 +148,7 @@ O layout do Payment Brick foi construído com base nas melhores práticas de UX 
 >
 > Atenção
 >
-> Os bricks foram criados para atender não somente necessidades técnicas de implementação e segurança, mas também para prover a melhor experiência ao comprador. Customizar um brick pode mudar drasticamente a experiência do comprador. Nossa recomendação é que você sempre faça uso do brick com a menor quantidade possível de customizações adicionais para garantir sempre a melhor experiência.
+> Os Bricks foram criados para atender não somente necessidades técnicas de implementação e segurança, mas também para prover a melhor experiência ao comprador. Customizar um Brick pode mudar drasticamente a experiência do comprador. Nossa recomendação é que você sempre faça uso do Brick com a menor quantidade possível de customizações adicionais para garantir sempre a melhor experiência.
 
 ### Campos dos formulários
 
@@ -187,7 +187,7 @@ O layout do Payment Brick foi construído com base nas melhores práticas de UX 
 >
 > Atenção
 >
-> Os bricks foram criados para atender não somente necessidades técnicas de implementação e segurança, mas também para prover a melhor experiência ao comprador. Customizar um brick pode mudar drasticamente a experiência do comprador. Nossa recomendação é que você sempre faça uso do brick com a menor quantidade possível de customizações adicionais para garantir sempre a melhor experiência.
+> Os Bricks foram criados para atender não somente necessidades técnicas de implementação e segurança, mas também para prover a melhor experiência ao comprador. Customizar um Brick pode mudar drasticamente a experiência do comprador. Nossa recomendação é que você sempre faça uso do Brick com a menor quantidade possível de customizações adicionais para garantir sempre a melhor experiência.
 
 ### Campos dos formulários
 
@@ -214,7 +214,7 @@ Por enquanto, você pode dar aos seus clientes a possibilidade de fazer pagament
 
 A possibilidade de guardar os dados dos cartões que já foram debitados em compras anteriores torna o processo de pagamento mais eficiente e rápido. Para o comprador, não é mais necessário recarregar os dados cada vez que entrar no checkout.
 
-![payment-brick-layout-all](checkout-bricks/payment-brick-layout-all-pt.gif)
+![payment-Brick-layout-all](checkout-bricks/payment-brick-layout-all-pt.gif)
 
 Por sua vez, nosso processador cumpre todas as garantias de segurança para oferecer aos usuários a máxima proteção ao salvar seus dados. Essa é uma das grandes vantagens de adicionar o Checkout Bricks ao seu site: a tranquilidade de oferecer uma solução segura, respaldada pelo Mercado Pago, mas customizada para as necessidades da sua empresa.
 
@@ -226,7 +226,7 @@ O layout do Payment Brick foi construído com base nas melhores práticas de UX 
 >
 > Atenção
 >
-> Os bricks foram criados para atender não somente necessidades técnicas de implementação e segurança, mas também para prover a melhor experiência ao comprador. Customizar um brick pode mudar drasticamente a experiência do comprador. Nossa recomendação é que você sempre faça uso do brick com a menor quantidade possível de customizações adicionais para garantir sempre a melhor experiência.
+> Os Bricks foram criados para atender não somente necessidades técnicas de implementação e segurança, mas também para prover a melhor experiência ao comprador. Customizar um Brick pode mudar drasticamente a experiência do comprador. Nossa recomendação é que você sempre faça uso do Brick com a menor quantidade possível de customizações adicionais para garantir sempre a melhor experiência.
 
 ### Campos dos formulários
 
@@ -253,7 +253,7 @@ Por enquanto, você pode dar aos seus clientes a possibilidade de fazer pagament
 
 A possibilidade de guardar os dados dos cartões que já foram debitados em compras anteriores torna o processo de pagamento mais eficiente e rápido. Para o comprador, não é mais necessário recarregar os dados cada vez que entrar no checkout.
 
-![payment-brick-layout-all](checkout-bricks/payment-brick-layout-all-pt.gif)
+![payment-Brick-layout-all](checkout-bricks/payment-brick-layout-all-pt.gif)
 
 Por sua vez, nosso processador cumpre todas as garantias de segurança para oferecer aos usuários a máxima proteção ao salvar seus dados. Essa é uma das grandes vantagens de adicionar o Checkout Bricks ao seu site: a tranquilidade de oferecer uma solução segura, respaldada pelo Mercado Pago, mas customizada para as necessidades da sua empresa.
 
@@ -265,7 +265,7 @@ O layout do Payment Brick foi construído com base nas melhores práticas de UX 
 >
 > Atenção
 >
-> Os bricks foram criados para atender não somente necessidades técnicas de implementação e segurança, mas também para prover a melhor experiência ao comprador. Customizar um brick pode mudar drasticamente a experiência do comprador. Nossa recomendação é que você sempre faça uso do brick com a menor quantidade possível de customizações adicionais para garantir sempre a melhor experiência.
+> Os Bricks foram criados para atender não somente necessidades técnicas de implementação e segurança, mas também para prover a melhor experiência ao comprador. Customizar um bBrickrick pode mudar drasticamente a experiência do comprador. Nossa recomendação é que você sempre faça uso do Brick com a menor quantidade possível de customizações adicionais para garantir sempre a melhor experiência.
 
 ### Campos dos formulários
 

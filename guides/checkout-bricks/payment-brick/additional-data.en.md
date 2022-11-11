@@ -59,7 +59,7 @@ const settings = {
 
 ```
 
-If you are not using the native [submit brick form button](/development/en/docs/checkout-bricks/payment-brick/additional-customization/hide-element), you can also access the `additionalData` object via the ` getAdditionalData`. Check out an example usage below.
+If you are not using the native [submit Brick form button](/development/en/docs/checkout-bricks/payment-brick/additional-customization/hide-element), you can also access the `additionalData` object via the ` getAdditionalData`. Check out an example usage below.
 
 ```javascript
 // variable where the Brick controller is saved

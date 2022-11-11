@@ -16,8 +16,8 @@ To configure Payment Brick integration to receive payments with Pix you need to 
 
 1. [Create container](#bookmark_create_container)
 2. [Include and configure MercadoPago.js library](#bookmark_include_and_configure_mercadopago.js_library)
-3. [Instantiate brick](#bookmark_instantiate_brick)
-4. [Render brick](#bookmark_render_brick)
+3. [Instantiate Brick](#bookmark_instantiate_brick)
+4. [Render Brick](#bookmark_render_brick)
 
 > The steps are performed on the backend or frontend. The **Client-Side** and **Server-Side** pills located immediately next to the title help you to identify which step is performed in which instance.
 
@@ -27,7 +27,7 @@ To configure Payment Brick integration to receive payments with Pix you need to 
 >
 > Create container
 
-You will need to create a container to define where the brick will be placed on the screen. The creation of the container is done by inserting an element (for example, a div) in the HTML code of the page where the brick will be rendered (see the code below).
+You will need to create a container to define where the Brick will be placed on the screen. The creation of the container is done by inserting an element (for example, a div) in the HTML code of the page where the Brick will be rendered (see the code below).
 
 > NOTE
 > 
@@ -69,9 +69,9 @@ const mp = new MercadoPago('YOUR_PUBLIC_KEY');
 >
 > h2
 >
-> Instantiate brick
+> Instantiate Brick
 
-With the container created and our SDK JS installed, the next step is to instantiate the brick builder, which will allow generating the brick. To create the brick instance, insert the code below after the previous step.
+With the container created and our SDK JS installed, the next step is to instantiate the Brick builder, which will allow generating the Brick. To create the Brick instance, insert the code below after the previous step.
 
 ```javascript
 const bricksBuilder = mp.bricks();
@@ -81,17 +81,17 @@ const bricksBuilder = mp.bricks();
 >
 > Attention
 >
-> During brick instantiation, different errors may appear. For more details on each of them, see the [Possible Errors](/developers/en/docs/checkout-bricks/additional-content/possible-errors) section.
+> During Brick instantiation, different errors may appear. For more details on each of them, see the [Possible Errors](/developers/en/docs/checkout-bricks/additional-content/possible-errors) section.
 
 > CLIENT_SIDE
 >
 > h2
 >
-> Render brick
+> Render Brick
 
-Once instantiated, the brick can be rendered and have all its configurations compiled so that the final structure of the brick is generated.
+Once instantiated, the Brick can be rendered and have all its configurations compiled so that the final structure of the Brick is generated.
 
-To render the brick, insert the following code after the previous step and fill in the attributes according to the comments highlighted in this same code.
+To render the Brick, insert the following code after the previous step and fill in the attributes according to the comments highlighted in this same code.
 
 ```javascript
 const renderPaymentBrick = async (bricksBuilder) => {
@@ -148,17 +148,17 @@ const renderPaymentBrick = async (bricksBuilder) => {
 renderPaymentBrick(bricksBuilder);
 ```
 
-The result of rendering the brick should be like the image below:”
+The result of rendering the Brick should be like the image below:”
 
-![payment-brick-pix](checkout-bricks/payment-brick-pix-en.png)
+![payment-Brick-pix](checkout-bricks/payment-brick-pix-en.png)
 
 > WARNING
 >
 > Attention
 >
-> For an effective Brick control, the function submitted in `onSubmit` must always return a Promise. You should call `resolve()` only if your backend processes was successful. Call `reject()` if an error occurs. The `reject()` will make the brick allow the fields to be filled in again and a new payment attempt possible. Also, when calling the `resolve()` method inside the `onSubmit` Promise, the brick does not allow new payments. If you want to make a new payment, you must create a new Brick instance.
+> For an effective Brick control, the function submitted in `onSubmit` must always return a Promise. You should call `resolve()` only if your backend processes was successful. Call `reject()` if an error occurs. The `reject()` will make the Brick allow the fields to be filled in again and a new payment attempt possible. Also, when calling the `resolve()` method inside the `onSubmit` Promise, the Brick does not allow new payments. If you want to make a new payment, you must create a new Brick instance.
 
-To pay with Pix, the buyer must enter their email address. It is highly recommended that the integrator enter this email field at brick startup, so the buyer does not have to manually type it. To initialize the email field, just follow the **example below**.
+To pay with Pix, the buyer must enter their email address. It is highly recommended that the integrator enter this email field at Brick startup, so the buyer does not have to manually type it. To initialize the email field, just follow the **example below**.
 
 ```Javascript
 settings = {

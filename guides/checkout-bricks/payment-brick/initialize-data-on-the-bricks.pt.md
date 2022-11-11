@@ -6,7 +6,7 @@
 
 ## Cartões
 
-No formulário exibido para pagamento com cartões, é possível inicializar com os campos de **documento** e **e-mail** já preenchidos. Para isso, é necessário passar a seguinte configuração no objeto de inicialização do brick.
+No formulário exibido para pagamento com cartões, é possível inicializar com os campos de **documento** e **e-mail** já preenchidos. Para isso, é necessário passar a seguinte configuração no objeto de inicialização do Brick.
 
 ```javascript
 settings = {
@@ -28,7 +28,7 @@ settings = {
 ----[mlb]----
 ## Pix
 
-No formulário exibido para pagamento com Pix, é possível inicializar com o campo de **e-mail** já preenchido. Para isso, é necessário passar a seguinte configuração no objeto de inicialização do brick.
+No formulário exibido para pagamento com Pix, é possível inicializar com o campo de **e-mail** já preenchido. Para isso, é necessário passar a seguinte configuração no objeto de inicialização do Brick.
 
 ```javascript
 settings = {
@@ -43,7 +43,7 @@ settings = {
 
 ## Outros meios de pagamento
 
-No formulário exibido para pagamento com **boleto bancário** e **pagamento em lotérica**, é possível inicializar com as informações já preenchidas. Para isso, é necessário passar a seguinte configuração no objeto de inicialização do brick.
+No formulário exibido para pagamento com **boleto bancário** e **pagamento em lotérica**, é possível inicializar com as informações já preenchidas. Para isso, é necessário passar a seguinte configuração no objeto de inicialização do Brick.
 
 ```javascript
 settings = {
@@ -74,7 +74,7 @@ settings = {
 ----[mla]----
 ## Outros meios de pagamento
 
-No formulário exibido para pagamento com **Rapipago** e **Pago Fácil**, é possível inicializar com as informações já preenchidas. Para isso, é necessário passar a seguinte configuração no objeto de inicialização do brick.
+No formulário exibido para pagamento com **Rapipago** e **Pago Fácil**, é possível inicializar com as informações já preenchidas. Para isso, é necessário passar a seguinte configuração no objeto de inicialização do Brick.
 
 ```javascript
 settings = {

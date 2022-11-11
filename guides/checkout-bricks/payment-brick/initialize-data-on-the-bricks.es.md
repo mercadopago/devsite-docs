@@ -6,7 +6,7 @@
 
 ## Tarjetas
 
-En el formulario que se muestra para el pago con tarjetas, puedes empezar con los campos de **documento** y **correo electrónico** ya rellenados. Para eso, es necesario pasar la siguiente configuración en el objeto de inicialización del brick.
+En el formulario que se muestra para el pago con tarjetas, puedes empezar con los campos de **documento** y **correo electrónico** ya rellenados. Para eso, es necesario pasar la siguiente configuración en el objeto de inicialización del Brick.
 
 ```javascript
 settings = {
@@ -28,7 +28,7 @@ settings = {
 ----[mlb]----
 ## Pix
 
-En el formulario que se muestra para el pago con Pix, puedes empezar con el **correo electrónico** ya rellenado. Para eso, es necesario pasar la siguiente configuración en el objeto de inicialización del brick.
+En el formulario que se muestra para el pago con Pix, puedes empezar con el **correo electrónico** ya rellenado. Para eso, es necesario pasar la siguiente configuración en el objeto de inicialización del Brick.
 
 ```javascript
 settings = {
@@ -43,7 +43,7 @@ settings = {
 
 ## Otros medios de pago
 
-En el formulario que se muestra para el pago con **boleto bancário** y en **agencias de lotería** puedes empezar con los campos ya rellenados. Para eso, es necesario pasar la siguiente configuración en el objeto de inicialización del brick.
+En el formulario que se muestra para el pago con **boleto bancário** y en **agencias de lotería** puedes empezar con los campos ya rellenados. Para eso, es necesario pasar la siguiente configuración en el objeto de inicialización del Brick.
 
 ```javascript
 settings = {
@@ -74,7 +74,7 @@ settings = {
 ----[mla]----
 ## Otros medios de pago
 
-En el formulario que se muestra para el pago con **Rapipago** y **Pago Fácil** puedes empezar con los campos ya rellenados. Para eso, es necesario pasar la siguiente configuración en el objeto de inicialización del brick.
+En el formulario que se muestra para el pago con **Rapipago** y **Pago Fácil** puedes empezar con los campos ya rellenados. Para eso, es necesario pasar la siguiente configuración en el objeto de inicialización del Brick.
 
 ```javascript
 settings = {

@@ -34,7 +34,7 @@ const settings = {
 };
 ```
 
-The address provided in the `return` property of the `backUrls` object will be displayed as a link to the user whenever the Status Screen brick is displayed, while the address provided in the `error` property will be displayed as a link to the user when there is an error in payment processing.
+The address provided in the `return` property of the `backUrls` object will be displayed as a link to the user whenever the Status Screen Brick is displayed, while the address provided in the `error` property will be displayed as a link to the user when there is an error in payment processing.
 
 > NOTE
 >

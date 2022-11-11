@@ -8,7 +8,7 @@ For now, you will be able to give your customers the possibility of making payme
 
 The possibility of saving the data of cards that have already been charged in previous purchases, makes the payment process more efficient and faster. For the buyer, it is no longer necessary to have to reload the data each time they enter the checkout.
 
-![payment-brick-layout-mlb](checkout-bricks/payment-brick-layout-mlb-en.gif)
+![payment-Brick-layout-mlb](checkout-bricks/payment-brick-layout-mlb-en.gif)
 
 In turn, our processor complies with all security guarantees to give users maximum protection when saving their data. This is one of the great advantages of adding Checkout Bricks to your site: the peace of mind of providing a secure solution, backed by Mercado Pago, but customized to the needs of your company.
 
@@ -20,7 +20,7 @@ The Payment Brick layout is based on the best UX practices, so that it is possib
 >
 > Attention
 >
-> The bricks were created not only to meet the technical needs of implementation and security, but also to provide the best experience for the buyer. Customizing a brick can drastically change the buyer's experience. Our recommendation is that you always use the brick with as little additional customization as possible to always ensure the best experience.
+> The Bricks were created not only to meet the technical needs of implementation and security, but also to provide the best experience for the buyer. Customizing a Brick can drastically change the buyer's experience. Our recommendation is that you always use the Brick with as little additional customization as possible to always ensure the best experience.
 
 ### Forms fields
 
@@ -57,7 +57,7 @@ For now, you will be able to give your customers the possibility of making payme
 
 The possibility of saving the data of cards that have already been charged in previous purchases, makes the payment process more efficient and faster. For the buyer, it is no longer necessary to have to reload the data each time they enter the checkout.
 
-![payment-brick-layout-mla](checkout-bricks/payment-brick-layout-mla-en.gif)
+![payment-Brick-layout-mla](checkout-bricks/payment-brick-layout-mla-en.gif)
 
 In turn, our processor complies with all security guarantees to give users maximum protection when saving their data. This is one of the great advantages of adding Checkout Bricks to your site: the peace of mind of providing a secure solution, backed by Mercado Pago, but customized to the needs of your company.
 
@@ -69,7 +69,7 @@ The Payment Brick layout is based on the best UX practices, so that it is possib
 >
 > Attention
 >
-> The bricks were created not only to meet the technical needs of implementation and security, but also to provide the best experience for the buyer. Customizing a brick can drastically change the buyer's experience. Our recommendation is that you always use the brick with as little additional customization as possible to always ensure the best experience.
+> The Bricks were created not only to meet the technical needs of implementation and security, but also to provide the best experience for the buyer. Customizing a Brick can drastically change the buyer's experience. Our recommendation is that you always use the Brick with as little additional customization as possible to always ensure the best experience.
 
 ### Forms fields
 
@@ -95,7 +95,7 @@ For now, you will be able to give your customers the possibility of making payme
 
 The possibility of saving the data of cards that have already been charged in previous purchases, makes the payment process more efficient and faster. For the buyer, it is no longer necessary to have to reload the data each time they enter the checkout.
 
-![payment-brick-layout-all](checkout-bricks/payment-brick-layout-all-en.gif)
+![payment-Brick-layout-all](checkout-bricks/payment-brick-layout-all-en.gif)
 
 In turn, our processor complies with all security guarantees to give users maximum protection when saving their data. This is one of the great advantages of adding Checkout Bricks to your site: the peace of mind of providing a secure solution, backed by Mercado Pago, but customized to the needs of your company.
 
@@ -107,7 +107,7 @@ The Payment Brick layout is based on the best UX practices, so that it is possib
 >
 > Attention
 >
-> The bricks were created not only to meet the technical needs of implementation and security, but also to provide the best experience for the buyer. Customizing a brick can drastically change the buyer's experience. Our recommendation is that you always use the brick with as little additional customization as possible to always ensure the best experience.
+> The Bricks were created not only to meet the technical needs of implementation and security, but also to provide the best experience for the buyer. Customizing a Brick can drastically change the buyer's experience. Our recommendation is that you always use the Brick with as little additional customization as possible to always ensure the best experience.
 
 ### Forms fields
 
@@ -133,7 +133,7 @@ For now, you will be able to give your customers the possibility of making payme
 
 The possibility of saving the data of cards that have already been charged in previous purchases, makes the payment process more efficient and faster. For the buyer, it is no longer necessary to have to reload the data each time they enter the checkout.
 
-![payment-brick-layout-all](checkout-bricks/payment-brick-layout-all-en.gif)
+![payment-Brick-layout-all](checkout-bricks/payment-brick-layout-all-en.gif)
 
 In turn, our processor complies with all security guarantees to give users maximum protection when saving their data. This is one of the great advantages of adding Checkout Bricks to your site: the peace of mind of providing a secure solution, backed by Mercado Pago, but customized to the needs of your company.
 
@@ -145,7 +145,7 @@ The Payment Brick layout is based on the best UX practices, so that it is possib
 >
 > Attention
 >
-> The bricks were created not only to meet the technical needs of implementation and security, but also to provide the best experience for the buyer. Customizing a brick can drastically change the buyer's experience. Our recommendation is that you always use the brick with as little additional customization as possible to always ensure the best experience.
+> The Bricks were created not only to meet the technical needs of implementation and security, but also to provide the best experience for the buyer. Customizing a Brick can drastically change the buyer's experience. Our recommendation is that you always use the Brick with as little additional customization as possible to always ensure the best experience.
 
 ### Forms fields
 
@@ -171,7 +171,7 @@ For now, you will be able to give your customers the possibility of making payme
 
 The possibility of saving the data of cards that have already been charged in previous purchases, makes the payment process more efficient and faster. For the buyer, it is no longer necessary to have to reload the data each time they enter the checkout.
 
-![payment-brick-layout-all](checkout-bricks/payment-brick-layout-all-en.gif)
+![payment-Brick-layout-all](checkout-bricks/payment-brick-layout-all-en.gif)
 
 In turn, our processor complies with all security guarantees to give users maximum protection when saving their data. This is one of the great advantages of adding Checkout Bricks to your site: the peace of mind of providing a secure solution, backed by Mercado Pago, but customized to the needs of your company.
 
@@ -183,7 +183,7 @@ The Payment Brick layout is based on the best UX practices, so that it is possib
 >
 > Attention
 >
-> The bricks were created not only to meet the technical needs of implementation and security, but also to provide the best experience for the buyer. Customizing a brick can drastically change the buyer's experience. Our recommendation is that you always use the brick with as little additional customization as possible to always ensure the best experience.
+> The Bricks were created not only to meet the technical needs of implementation and security, but also to provide the best experience for the buyer. Customizing a Brick can drastically change the buyer's experience. Our recommendation is that you always use the Brick with as little additional customization as possible to always ensure the best experience.
 
 ### Forms fields
 
@@ -209,7 +209,7 @@ For now, you will be able to give your customers the possibility of making payme
 
 The possibility of saving the data of cards that have already been charged in previous purchases, makes the payment process more efficient and faster. For the buyer, it is no longer necessary to have to reload the data each time they enter the checkout.
 
-![payment-brick-layout-all](checkout-bricks/payment-brick-layout-all-en.gif)
+![payment-Brick-layout-all](checkout-bricks/payment-brick-layout-all-en.gif)
 
 In turn, our processor complies with all security guarantees to give users maximum protection when saving their data. This is one of the great advantages of adding Checkout Bricks to your site: the peace of mind of providing a secure solution, backed by Mercado Pago, but customized to the needs of your company.
 
@@ -221,7 +221,7 @@ The Payment Brick layout is based on the best UX practices, so that it is possib
 >
 > Attention
 >
-> The bricks were created not only to meet the technical needs of implementation and security, but also to provide the best experience for the buyer. Customizing a brick can drastically change the buyer's experience. Our recommendation is that you always use the brick with as little additional customization as possible to always ensure the best experience.
+> The Bricks were created not only to meet the technical needs of implementation and security, but also to provide the best experience for the buyer. Customizing a Brick can drastically change the buyer's experience. Our recommendation is that you always use the Brick with as little additional customization as possible to always ensure the best experience.
 
 ### Forms fields
 
@@ -247,7 +247,7 @@ For now, you will be able to give your customers the possibility of making payme
 
 The possibility of saving the data of cards that have already been charged in previous purchases, makes the payment process more efficient and faster. For the buyer, it is no longer necessary to have to reload the data each time they enter the checkout.
 
-![payment-brick-layout-all](checkout-bricks/payment-brick-layout-all-en.gif)
+![payment-Brick-layout-all](checkout-bricks/payment-brick-layout-all-en.gif)
 
 In turn, our processor complies with all security guarantees to give users maximum protection when saving their data. This is one of the great advantages of adding Checkout Bricks to your site: the peace of mind of providing a secure solution, backed by Mercado Pago, but customized to the needs of your company.
 
@@ -259,7 +259,7 @@ The Payment Brick layout is based on the best UX practices, so that it is possib
 >
 > Attention
 >
-> The bricks were created not only to meet the technical needs of implementation and security, but also to provide the best experience for the buyer. Customizing a brick can drastically change the buyer's experience. Our recommendation is that you always use the brick with as little additional customization as possible to always ensure the best experience.
+> The Bricks were created not only to meet the technical needs of implementation and security, but also to provide the best experience for the buyer. Customizing a Brick can drastically change the buyer's experience. Our recommendation is that you always use the Brick with as little additional customization as possible to always ensure the best experience.
 
 ### Forms fields
 

@@ -6,7 +6,7 @@
 
 | Brick  | Card Payment Form  |
 | --- | --- |
-| Momento de personalización  |  Al renderizar el brick  |
+| Momento de personalización  |  Al renderizar el Brick  |
 | Propiedad  | customization.hideFormTitle  |
 | Tipo  | Boolean  |
 | Observaciones  | Cuando **true**, oculta la línea de título y las banderas aceptadas.  |
@@ -30,7 +30,7 @@ const settings = {
 
 | Brick  | Card Payment Form  |
 | --- | --- |
-| Momento de personalización  |  Al renderizar el brick  |
+| Momento de personalización  |  Al renderizar el Brick  |
 | Propiedad  | customization.visual.hidePaymentButton  |
 | Tipo  | Boolean  |
 | Observaciones  | Cuando true, el botón de envío del formulario no se muestra y pasa a ser necesario usar la función getCardFormData para obtener los datos del formulario (ver el ejemplo a continuación).  |

@@ -114,7 +114,7 @@ preference_data = {
 preference_response = sdk.preference.create(preference_data)
 preference = preference_response[:response]
 
-# Este valor es el ID de preferencia que usará en el HTML en el inicio del brick
+# Este valor es el ID de preferencia que usará en el HTML en el inicio del Brick
 @preference_id = preference['id']
 ```
 ```csharp
@@ -296,7 +296,7 @@ preference_data = {
 preference_response = sdk.preference.create(preference_data)
 preference = preference_response[:response]
 
-# Este valor es el ID de preferencia que usará en el HTML en el inicio del brick
+# Este valor es el ID de preferencia que usará en el HTML en el inicio del Brick
 @preference_id = preference['id']
 ```
 ```csharp
@@ -428,4 +428,4 @@ curl -X POST \
 </html>
 ```
 
-> Los pagos con **Cuenta de Mercado Pago** no necesitan ser enviados a través del backend. Si el usuario selecciona esta opción como medio de pago, el `preferenceId` enviado en la inicialización del brick es el encargado de redirigir al comprador al sitio web de Mercado Pago, donde el pago se realizará directamente en nuestro sitio. Para redirigir al comprador a tu sitio, puede configurar `back_urls` como se describe [en este artículo.](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/preferences#bookmark_redirigir_al_comprador_a_tu_sitio_web)
+> Los pagos con **Cuenta de Mercado Pago** no necesitan ser enviados a través del backend. Si el usuario selecciona esta opción como medio de pago, el `preferenceId` enviado en la inicialización del Brick es el encargado de redirigir al comprador al sitio web de Mercado Pago, donde el pago se realizará directamente en nuestro sitio. Para redirigir al comprador a tu sitio, puede configurar `back_urls` como se describe [en este artículo.](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/preferences#bookmark_redirigir_al_comprador_a_tu_sitio_web)

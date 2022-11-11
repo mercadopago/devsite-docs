@@ -6,7 +6,7 @@
 
 | Brick  | Card Payment Form  |
 | --- | --- |
-| Customization moment  | When rendering the brick  |
+| Customization moment  | When rendering the Brick  |
 | Property  | customization.hideFormTitle  |
 | Type  | Boolean  |
 | Comments  | When **true**, hides the title line and accepted flags.  |
@@ -30,7 +30,7 @@ const settings = {
 
 | Brick  | Card Payment Form  |
 | --- | --- |
-| Customization moment  | When rendering the brick  |
+| Customization moment  | When rendering the Brick  |
 | Property  | customization.visual.hidePaymentButton  |
 | Type  | Boolean  |
 | Comments  | When true, the form submit button is not displayed and it becomes necessary to use the getCardFormData function to get the form data (see example below). |

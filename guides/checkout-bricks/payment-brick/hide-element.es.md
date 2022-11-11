@@ -6,7 +6,7 @@
 
 | - | Brick |
 | --- | --- |
-| Momento de personalización  |  Al renderizar el brick  |
+| Momento de personalización  |  Al renderizar el Brick  |
 | Propiedad  | customization.hideFormTitle  |
 | Tipo  | Boolean  |
 | Observaciones  | Cuando **true**, oculta la línea de título.  |
@@ -30,7 +30,7 @@ const settings = {
 
 | - | Brick |
 | --- | --- |
-| Momento de personalización  |  Al renderizar el brick  |
+| Momento de personalización  |  Al renderizar el Brick  |
 | Propiedad  | customization.visual.hidePaymentButton  |
 | Tipo  | Boolean  |
 | Observaciones  | Cuando true, el botón de envío del formulario no se muestra y pasa a ser necesario usar la función getFormData para obtener los datos del formulario (ver el ejemplo a continuación).  |
@@ -87,7 +87,7 @@ function createPayment(){
 
 | - | Brick |
 | --- | --- |
-| Momento de personalización  |  Al renderizar el brick  |
+| Momento de personalización  |  Al renderizar el Brick  |
 | Propiedad  | customization.visual.hideRedirectionPanel |
 | Tipo  | Boolean  |
 | Observaciones  | Cuando **true**, oculta dentro de la opción de pago con la Billetera de Mercado Pago, el panel de redirección al sitio web de Mercado Pago. |

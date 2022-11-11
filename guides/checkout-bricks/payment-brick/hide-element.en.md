@@ -6,7 +6,7 @@
 
 | - | Brick |
 | --- | --- |
-| Customization moment  | When rendering the brick  |
+| Customization moment  | When rendering the Brick  |
 | Property  | customization.hideFormTitle  |
 | Type  | Boolean  |
 | Comments  | When **true**, hides the title line.  |
@@ -30,7 +30,7 @@ const settings = {
 
 | - | Brick |
 | --- | --- |
-| Customization moment  | When rendering the brick  |
+| Customization moment  | When rendering the Brick  |
 | Property  | customization.visual.hidePaymentButton  |
 | Type  | Boolean  |
 | Comments  | When true, the form submit button is not displayed and it becomes necessary to use the getFormData function to get the form data (see example below). |
@@ -87,7 +87,7 @@ function createPayment(){
 
 | - | Brick |
 | --- | --- |
-| Customization moment  | When rendering the brick  |
+| Customization moment  | When rendering the Brick  |
 | Property  | customization.visual.hideRedirectionPanel  |
 | Type  | Boolean  |
 | Comments  | When **true**, hides within the payment option with the Mercado Pago Wallet, the redirection panel to the Mercado Pago website. |
