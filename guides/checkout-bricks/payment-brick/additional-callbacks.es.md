@@ -2,6 +2,8 @@
 
 Al inicializar Brick, es posible configurar callbacks adicionales, que brindan al integrador más información durante la ejecución de Brick.
 
+## onBinChange
+
 El callback `onBinChange` se usa para obtener el **bin** de la tarjeta que se inserta en el Brick. Este callback se realiza sobre la marcha cada vez que se actualiza el bin de tarjetas.
 
 ```javascript
