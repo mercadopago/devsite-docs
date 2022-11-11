@@ -2,11 +2,23 @@
 
 Para integrarse con Wallet Connect, debe cumplir con los requisitos que se describen a continuación.
 
+----[mla]----
 > WARNING
 >
 > Importante
 >
-> Recomendado para Sellers con ticket promedio menor a 10 USD, 2 transacciones en promedio por semana y más de 100 mil usuarios. Si está interesado en el producto, contáctenos a través del correo electrónico wallet-connect@mercadolibre.com
+> Recomendado para sellers con ventas recurrentes de ticket promedio menor a 15 USD, más de 100 mil usuarios y al menos 2 transacciones mensuales por usuario, o para vendedores con formato suscripción mensual, con mas de 100 mil usuarios y un ticket promedio menor a 40 USD. Si tenés interés en el producto, contactanos a través del correo **wallet-connect@mercadolibre.com**
+
+------------
+
+----[mlb, mlc, mco, mlm, mpe, mlu]----
+> WARNING
+>
+> Importante
+>
+> Recomendado para sellers con ventas recurrentes de ticket promedio menor a 15 USD, más de 100 mil usuarios y al menos 2 transacciones mensuales por usuario, o para vendedores con formato suscripción mensual, con mas de 100 mil usuarios y un ticket promedio menor a 40 USD. Si tienes interés en el producto, contáctaneos a través del correo **wallet-connect@mercadolibre.com**
+
+------------
 
 
 | Requisito  | Descripción  |

@@ -6,7 +6,7 @@ Para realizar a integração com Wallet Connect, é preciso atender aos requisit
 >
 > Importante
 >
-> Wallet Connect é recomendado para Sellers com ticket médio inferior a 10 USD, média de 2 transações por semana e mais de 100 mil usuários. Caso tenha interesse no produto, entre em contato através do email wallet-connect@mercadolibre.com
+> Recomendado para sellers com vendas recorrentes com ticket médio inferior a 15 USD, mais de 100 mil usuários e pelo menos 2 transações mensais por usuário, ou para vendedores com assinatura mensal, mais de 100 mil usuários e ticket médio inferior a 40 USD. Caso tenha interesse no produto, entre em contato conosco através do e-mail **wallet-connect@mercadolibre.com**
 
 | Requisito  | Descrição  |
 | --- | --- |
