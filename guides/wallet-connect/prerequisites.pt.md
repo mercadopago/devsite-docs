@@ -16,11 +16,3 @@ Para realizar a integração com Wallet Connect, é preciso atender aos requisit
 | Permissão Wallet Connect  | Para habilitar sua aplicação, consumir as APIs citadas na documentação e receber pagamentos através do Mercado Pago Wallet, entre em contato com seu gerente de conta.  |
 
 Se todos os pré-requisitos foram atendidos, você poderá realizar a integração com Wallet Connect.
-
-> NEXT_STEP_CARD_PT
->
-> Configuração da integração
->
-> Saiba como realizar a integração completa do Wallet Connect.
->
-> [Criar agreement](/developers/pt/docs/wallet-connect/integration-configuration/create-agreement)

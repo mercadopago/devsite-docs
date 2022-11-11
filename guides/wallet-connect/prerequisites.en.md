@@ -17,10 +17,3 @@ To perform the Wallet Connect integration, you must meet the requirements descri
 
 If all the prerequisites are met, you can perform the Wallet Connect integration.
 
-> NEXT_STEP_CARD_EN
->
-> Integration configuration
->
-> Learn how to perform the Wallet Connect integration.
->
-> [Create agreement](/developers/en/docs/wallet-connect/integration-configuration/create-agreement)

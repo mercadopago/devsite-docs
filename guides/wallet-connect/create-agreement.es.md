@@ -15,20 +15,5 @@ Para crear un _agreement_, envía un **POST** con los atributos necesarios al en
 >
 > Importante
 >
-> Un usuario sólo puede tener un agreement activo por integración. Si quieres crear un nuevo agreement, debes cancelar el anterior. Para cancelar un agreement, envía un DELETE al endpoint [/v2/wallet_connect/agreements/{agreement_id}](/developers/es/reference/wallet_connect/_wallet_connect_agreements_agreement_id/delete) y ejecuta la solicitud.
+> Un usuario sólo puede tener un agreement activo por integración. Si quieres crear un nuevo agreement, debes cancelar el anterior. Para cancelar un agreement, envía un DELETE al endpoint [/v2/wallet_connect/agreements/{agreement_id}](/developers/es/reference/wallet_connect/_wallet_connect_agreements_agreement_id/delete) y ejecuta el request.
 
-> PREV_STEP_CARD_ES
->
-> Requisitos previos 
->
-> Conozca los requisitos previos necesarios para integrar Wallet Connect.
->
-> [Requisitos previos](/developers/es/docs/wallet-connect/prerequisites)
-
-> NEXT_STEP_CARD_ES
->
-> Obtener aprobación
->
-> Obtenga información sobre cómo obtener la aprobación del pagador para usar los datos de pago.
->
-> [Obtener aprobación](/developers/es/docs/wallet-connect/integration-configuration/get-approval)

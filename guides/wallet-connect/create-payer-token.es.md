@@ -10,18 +10,3 @@ Para crear un _payer token_, envíe un POST con todos los atributos necesarios a
 
 Con la creación del payer token, la integración con Wallet Connect finalizará con éxito. Por tanto, te recomendamos que consultes la documentación [Webhooks](/docs/wallet-connect/additional-content/notifications/webhooks) para configurar las notificaciones y recibir información en tiempo real cada vez que se produzca un evento.
 
-> PREV_STEP_CARD_ES
->
-> Obtener aprobación
->
-> Obtenga información sobre cómo obtener la aprobación del pagador para usar los datos de pago.
->
-> [Obtener aprobación](/developers/es/docs/wallet-connect/integration-configuration/get-approval)
-
-> NEXT_STEP_CARD_ES
->
-> Notificaciones
->
-> Configura notificaciones para recibir información en tiempo real sobre los eventos que suceden.
->
-> [Notificaciones](/developers/es/docs/wallet-connect/additional-content/notifications/introduction)
