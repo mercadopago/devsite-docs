@@ -199,6 +199,6 @@ To offer the best experience to your customers using Mercado Crédito, we sugges
 
 To better explain to your customers how Mercado Crédito works, share the following steps with them.
 
-1. [Create an account](https://www.mercadopago.com/hub/registration/landing) or sign in to Mercado Pago. If you use **Mercado Livre**, you already have this account!
+1. [Create an account](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) or sign in to Mercado Pago. If you use **Mercado Livre**, you already have this account!
 2. Select **Mercado Crédito** and choose how many times you want to pay
 3. Ready! Pay the installments every month as you prefer, in the **Mercado Pago app**.

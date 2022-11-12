@@ -217,6 +217,6 @@ Para oferecer a melhor experiência para seus clientes usando Mercado Crédito, 
 
 Para explicar melhor a seus clientes como funciona Mercado Crédito, compartilhe com eles as etapas a seguir.
 
-1. [Crie uma conta](https://www.mercadopago.com/hub/registration/landing) ou entre com seu login e senha no Mercado Pago.
+1. [Crie uma conta](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) ou entre com seu login e senha no Mercado Pago.
 2. Selecione **Mercado Crédito** e escolha em quantas vezes quer pagar 
 3. Pronto! Pague as parcelas todo mês como preferir, no **app do Mercado Pago**.
