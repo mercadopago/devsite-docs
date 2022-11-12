@@ -25,8 +25,8 @@ Para realizar la integración es importante cumplir con los requisitos que se mu
 
 | Requisitos | Descripción | 
 |---|---|
+| Cuenta de vendedor de Mercado Pago o Mercado Libre | Para integrar necesitas una cuenta de vendedor en Mercado Pago o Mercado Libre. Si no, [haz clic aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) para crear. | 
 | Aplicación  | Las aplicaciones son las diversas integraciones contenidas en una o varias tiendas. Puedes crear una aplicación para cada solución que implementes a fin de tener todo organizado y mantener un control que facilite la gestión. Consulta [Dashboard](/developers/es/docs/checkout-bricks/additional-content/dashboard/introduction) para obtener más información sobre cómo crear una aplicación. |
-| Cuenta de vendedor de Mercado Pago o Mercado Libre | Para integrar Card Payment Brick necesitas una cuenta de vendedor en Mercado Pago o Mercado Libre. Si no, [haz clic aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) para crear. | 
 | Instalar el SDK de Mercado Pago | Instale los SDK oficiales para simplificar su integración con nuestras [APIs](/developers/es/reference/payments/_payments/post). Para obtener más información, [haz clic aquí](/developers/es/docs/sdks-library/landing). |
 
 Si se cumplen todos los requisitos previos, podrás realizar la integración de pagos en cuotas sin tarjeta.
@@ -249,7 +249,7 @@ Al ingresar este código, debería ver un botón similar al ejemplo ilustrado a 
 
 Para ofrecer la mejor experiencia a tus compradores usando Mercado Crédito, te sugerimos:
 
-* Usar mayúsculas en las iniciales de la marca: Mercado Crédito
+* Usar mayúsculas en las iniciales de la marca: Mercado Pago
 
 ----[mla]----
 ![iniciales](api/suggestions1-installments-w-card-mla-es.png)
@@ -297,7 +297,7 @@ Para ofrecer la mejor experiencia a tus compradores usando Mercado Crédito, te 
 
 Para explicar mejor a tus clientes cómo funciona Mercado Crédito, puedes compartirles estos pasos a continuación.
 
-1. Crea una cuenta o ingresa en Mercado Pago. Si usas **Mercado Libre**, ¡ya tienes cuenta!
+1. [Crea una cuenta](https://www.mercadopago.com/hub/registration/landing) o ingresa en Mercado Pago. Si usas **Mercado Libre**, ¡ya tienes cuenta!
 ----[mla]----
 2. Elige **Mercado Crédito** y la cantidad de cuotas en las que quieres pagar.
 3. ¡Listo! Después paga mes a mes tus cuotas desde la **app de Mercado Pago**.
