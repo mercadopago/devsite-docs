@@ -56,4 +56,4 @@ cardPaymentBrickController.getAdditionalData()
 >
 > Atenção
 >
-> Chame o método `getAdditionalData` somente após o envio do formulário, ou seja, após você chamar o método [`getFormData`](/developers/pt/docs/checkout-bricks/payment-brick/additional-customization/hide-element). Com isso, é garantido que os dados retornados são válidos e confiáveis.
+> Chame o método `getAdditionalData` somente após o envio do formulário, ou seja, após você chamar o método [getFormData.](/developers/pt/docs/checkout-bricks/payment-brick/additional-customization/hide-element) Com isso, é garantido que os dados retornados são válidos e confiáveis.
