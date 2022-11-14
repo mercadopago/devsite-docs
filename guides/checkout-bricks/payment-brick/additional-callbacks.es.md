@@ -23,4 +23,4 @@ const settings = {
 >
 > Atención
 >
-> El bin de tarjeta devuelto por el callback `onBinChange` es el mismo que el usuario ingresó en el campo del número de tarjeta, es decir, por cada cambio que el usuario haga en este campo, el callback activará un nuevo evento. Por lo tanto, solo considere que el bin es válido y confiable para ser utilizado después de que el evento de envío sea activado por el callback `onSubmit`.
+> El bin de tarjeta devuelto por el callback `onBinChange` es el mismo que el usuario ingresó en el campo del número de tarjeta; es decir, por cada cambio que el usuario haga en este campo, el callback activará un nuevo evento. Por lo tanto, solo considera que el bin es válido y confiable para ser utilizado después de que el evento de envío sea activado por el callback `onSubmit`.
