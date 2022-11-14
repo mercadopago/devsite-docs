@@ -26,7 +26,7 @@ settings = {
 > 
 > Atención
 > 
-> No es posible habilitar más de un método de pago predeterminado, así que use solo una propiedad dentro del objeto `defaultPaymentOption`.
+> No es posible habilitar más de un método de pago predeterminado, así que usa solo una propiedad dentro del objeto `defaultPaymentOption`.
 
 ----[mlb]----
 ![default-payment-option-mlb](checkout-bricks/default-payment-option-mlb-es.png)
