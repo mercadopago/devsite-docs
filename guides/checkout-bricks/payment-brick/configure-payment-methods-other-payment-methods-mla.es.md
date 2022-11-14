@@ -261,7 +261,7 @@ settings = {
 ```
 ]]]
 
-En este caso, al ser **Pago Fácil** el único medio disponible, no se mostrará la lista para seleccionar dónde pagar. Para obtener una lista completa de IDs que se pueden pasar dentro del array, consulte la API [Obtener medios de pago](/developers/es/reference/payment_methods/_payment_methods/get) en nuestra referencia de API.
+En este caso, al ser **Pago Fácil** el único medio disponible, no se mostrará la lista para seleccionar dónde pagar. Para obtener una lista completa de IDs que se pueden pasar dentro del array, consulta la API [Obtener medios de pago](/developers/es/reference/payment_methods/_payment_methods/get) en nuestra referencia de API.
 
 > NOTE
 >
