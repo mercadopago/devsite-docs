@@ -8,7 +8,7 @@ Consulta la siguiente tabla para ver los campos contenidos en el objeto `additio
 |--- |--- | --- |
 | bin | string | BIN de la tarjeta ingresada por el usuario. Solo se devuelve si el usuario ha elegido pagar con tarjeta. |
 
-Vea a continuación un ejemplo de uso:
+Mira a continuación un ejemplo de uso:
 
 ```javascript
 const settings = {
