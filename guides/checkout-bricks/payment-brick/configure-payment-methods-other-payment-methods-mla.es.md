@@ -223,7 +223,7 @@ El resultado de renderizar el Brick debe ser como la imagen de abajo:
 >
 > Importante
 >
-> Los métodos de pago que se describen a continuación requieren que se complete la dirección, el nombre y los detalles del documento del comprador. Para una mejor experiencia de usuario, se recomienda que el integrador ya inicialice estos datos, por lo que no es necesario llenarlo manualmente. [Consulte aquí](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/initialize-data-on-the-bricks) cómo inicializar el bloque con estos datos ya completados.
+> Los métodos de pago que se describen a continuación requieren que se complete la dirección, el nombre y los detalles del documento del comprador. Para una mejor experiencia de usuario, se recomienda que el integrador ya inicialice estos datos, por lo que no es necesario llenarlo manualmente. [Consulta aquí](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/initialize-data-on-the-bricks) cómo inicializar el bloque con estos datos ya completados.
 
 Para incluir pagos con **Rapipago** y **Pago Fácil**, solo use la siguiente configuración:
 
