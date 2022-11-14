@@ -34,10 +34,10 @@ No formulário exibido para pagamento com Pix, é possível inicializar com o ca
 settings = {
   ...,
   initialization: {
-  ...,
+   ...,
   payer: {
   email: 'jose@maria.com'
-  }
+   }
 }
 ```
 
@@ -80,10 +80,10 @@ No formulário exibido para pagamento com **Rapipago** e **Pago Fácil**, é pos
 settings = {
   ...,
   initialization: {
-  ...,
+   ...,
   payer: {
   email: 'jose@maria.com',
-  }
+   }
 }
 ```
 ------------

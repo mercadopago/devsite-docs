@@ -34,10 +34,10 @@ In the form displayed for payment by Pix, you can start with the **email** field
 settings = {
   ...,
   initialization: {
-  ...,
+   ...,
   payer: {
   email: 'jose@maria.com'
-  }
+   }
 }
 ```
 
@@ -80,10 +80,10 @@ In the form displayed for payment by **Rapipago** and **Pago Fácil**, you can s
 settings = {
   ...,
   initialization: {
-  ...,
+   ...,
   payer: {
   email: 'jose@maria.com',
-  }
+   }
 }
 ```
 ------------

@@ -688,6 +688,8 @@ curl -X POST \
 ```
 ]]]
 
+----[mlb]----
+
 * Para el endpoint `/process_payment_pix`:
 
 [[[
@@ -891,6 +893,8 @@ curl -X POST \
     }'
 ```
 ]]]
+
+------------
 
 * Para el endpoint `/process_payment_ticket`:
 
