@@ -244,7 +244,7 @@ settings = {
 
 La propiedad `ticket` acepta 2 tipos de variables, `string` y `string[]`. En el ejemplo anterior, se aceptarán pagos a través de **Rapipago** y **Pago Fácil**. 
 
-Si no desea permitir ambos métodos de pago, en lugar de la cadena `all`, puede pasar un array con solo las IDs deseadas. Como en el ejemplo a continuación, donde solo se acepta el a través de **Pago Fácil**.
+Si no deseas permitir ambos métodos de pago, en lugar de la cadena `all` puedes pasar un array solo con las IDs deseadas, como en el ejemplo a continuación, donde solo se acepta el pago a través de **Pago Fácil**.
 
 [[[
 ```Javascript
