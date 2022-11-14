@@ -2,7 +2,7 @@
 
 Dentro del callback `onSubmit` hay un segundo parámetro, **de uso opcional**, llamado `additionalData`. Es un objeto y puede contener datos adicionales útiles para su integración, pero que **no son necesarios** para el compromiso de pago en el backend.
 
-Consulte la siguiente tabla para ver los campos contenidos en el objeto `additionalData`.
+Consulta la siguiente tabla para ver los campos contenidos en el objeto `additionalData`.
 
 | Campo | Tipo | Descripción |
 |--- |--- | --- |
