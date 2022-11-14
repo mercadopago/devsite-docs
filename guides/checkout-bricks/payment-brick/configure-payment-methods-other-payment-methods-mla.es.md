@@ -72,7 +72,7 @@ Para ofrecer pagos con **Rapipago** y **Pago Fácil**, sigue los siguientes paso
 4. [Renderizar Brick](#bookmark_renderizar_brick)
 5. [Administrar otros medios de pago](#bookmark_administrar_otros_medios_de_pago)
 
-> Los pasos se realizan en el backend o frontend. Las etiquetas **Client-Side** y **Server-Side** ubicadas inmediatamente al lado del título lo ayudan a identificar qué paso se realiza en qué instancia. <br/></br>
+> Los pasos se realizan en el backend o frontend. Las etiquetas **Client-Side** y **Server-Side** ubicadas inmediatamente al lado del título te ayudan a identificar qué paso se realiza en qué instancia. <br/></br>
 > <br/></br>
 > Y para ayudar, hemos preparado un [ejemplo de código](/developers/es/docs/checkout-bricks/payment-brick/code-example/other-payment-methods/argentina) completo de la configuración de Payment Brick con **Rapipago** y **Pago Fácil** que puede usar como modelo.
 
