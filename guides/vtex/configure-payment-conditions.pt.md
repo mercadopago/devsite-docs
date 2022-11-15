@@ -20,7 +20,7 @@ A configuração das condições de pagamento é feita na aba **Condições de p
   * Você deve criar uma afiliação de gateway MercadoPagoV2, se ainda não tiver uma. Como? Aqui está o [passo a passo](/developers/pt/docs/vtex/gateway-affiliations).
   * No painel administrativo da VTEX, acesse **Pagamentos**, e, em seguida, **Configurações**.
   * Vá na aba **Condições de pagamento**, clique no botão “+” e procure por Mercado Credito.
-  * Nomeie a regra para facilitar a identificação e ative a condição de pagamento no campo Status.
+  * Nomeie a regra para facilitar a identificação e ative a condição de pagamento no campo **Status**.
   * Em **Processo com afiliação**, escolha MercadoPagoV2 como afiliação.
   * Clique em **Salvar** e pronto!
 ------------
