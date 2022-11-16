@@ -10,7 +10,7 @@ De forma predeterminada, Checkout Bricks se instancia/renderiza con el tema pred
 const bricks = mp.bricks({ theme: 'dark' });
 ```
 
-Si estableces el tema en la creación de **instancias de la classe Bricks**, el cambio de tema se aplicará a todos los Bricks que se puedan instanciar. Por otro lado, si el tema está configurado en el **renderización del Brick**, los cambios en el tema solo se reflejarán en el Brick que se está creando así como el Javascript que se muestra a continuación.
+Si estableces el tema en la creación de **instancias de la clase Bricks**, el cambio de tema se aplicará a todos los Bricks que se puedan instanciar. Por otro lado, si el tema está configurado en el **renderización del Brick**, los cambios en el tema solo se reflejarán en el Brick que se está creando así como el Javascript que se muestra a continuación.
 
 ```javascript
 const settings = {
