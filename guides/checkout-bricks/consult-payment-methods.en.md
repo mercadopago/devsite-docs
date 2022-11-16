@@ -1,22 +1,22 @@
-# Meios de pagamento disponíveis
+# Consult payment methods
 
-Para obter uma lista detalhada com todos os meios de pagamento disponíveis para integração, envie um **GET** com seu _Access token_ ao endpoint [/v1/payment_methods](/developers/pt/reference/payment_methods/_payment_methods/get) e execute a requisição ou, se preferir, faça a requisição utilizando os SDKs abaixo.
+To get a detailed list of all payment methods available for integration, send a **GET** with your **Access token** to the endpoint [/v1/payment_methods](/developers/en/reference/payment_methods/_payment_methods/get) and run the request or, if you prefer, make the request using the SDKs below.
 
 [[[
 ```php
 <?php
 
-  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
 
-  $payment_methods = MercadoPago::get("/v1/payment_methods");
+$payment_methods = MercadoPago::get("/v1/payment_methods");
 
 ?>
 ```
 ```node
-var mercadopago = require('mercadopago');
-mercadopago.configurations.setAccessToken(config.access_token);
+var Mercadopago = require('mercadopago');
+Mercadopago.configurations.setAccessToken(config.access_token);
 
-var response = await mercadopago.payment_methods.listAll();
+var response = await Mercadopago.payment_methods.listAll();
 var payment_methods = response.body;
 ```
 ```java
@@ -47,17 +47,17 @@ ResourcesList<PaymentMethod> paymentMethods = await client.ListAsync();
 
 ```
 ```python
-import mercadopago
-sdk = mercadopago.SDK("ACCESS_TOKEN")
+import market
+sdk = Mercadopago.SDK("ACCESS_TOKEN")
 
 payment_methods_response = sdk.payment_methods().list_all()
 payment_methods = payment_methods_response["response"]
 ```
 ```curl
 curl -X GET \
-    -H 'accept: application/json' \
-    -H 'content-type: application/json' \
-    -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
-    'https://api.mercadopago.com/v1/payment_methods' \
+-H 'accept: application/json' \
+-H 'content-type: application/json' \
+-H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+'https://api.mercadopago.com/v1/payment_methods' \
 ```
 ]]]

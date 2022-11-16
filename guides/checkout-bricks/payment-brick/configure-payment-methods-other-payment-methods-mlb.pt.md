@@ -198,7 +198,7 @@ settings = {
 ```
 ]]]
 
-Para obter uma lista detalhada com todos os **meios de pagamento disponíveis para integração com o Payment Brick**, consulte a [seção correspondente](/developers/pt/docs/checkout-bricks/payment-brick/additional-customization/available-payment-methods). Além disso, caso deseje uma lista completa dos IDs que podem ser passados dentro do array, consulte a API de [Obter meios de pagamento](/developers/pt/reference/payment_methods/_payment_methods/get) em nossa API Reference.
+Para obter uma lista detalhada com todos os **meios de pagamento disponíveis para integração com o Payment Brick**, consulte a [seção correspondente](/developers/pt/docs/checkout-bricks/payment-brick/additional-customization/consult-payment-methods). Além disso, caso deseje uma lista completa dos IDs que podem ser passados dentro do array, consulte a API de [Obter meios de pagamento](/developers/pt/reference/payment_methods/_payment_methods/get) em nossa API Reference.
 
 > NOTE
 >
