@@ -97,7 +97,7 @@ available_payments: credit, efectivo
 ----[mco]---- 
 
 ---
-available_payments: mercadopago, pse, credit, debit, cartera, efectivo
+available_payments: mercadopago, pse, credit, debit, cartera
 
 ----
 ------------
