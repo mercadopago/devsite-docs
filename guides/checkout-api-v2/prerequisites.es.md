@@ -2,7 +2,6 @@
 
 Para integrar Checkout API, es importante cumplir con los requisitos que se muestran a continuación.
 
-
 | Requisito  | Descripción  |
 | --- | --- |
 | Aplicación  | Las aplicaciones son las diversas integraciones contenidas en una o varias tiendas. Puedes crear una aplicación para cada solución que implementes a fin de tener todo organizado y mantener un control que facilite la gestión. Consulta [Dashboard](/developers/es/docs/checkout-api/additional-content/dashboard/introduction) para obtener más información sobre cómo crear una aplicación. |

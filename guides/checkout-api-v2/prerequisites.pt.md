@@ -2,7 +2,6 @@
 
 Para integrar o Checkout Transparente, é importante atender aos requisitos mostrados abaixo.
 
-
 | Requisito  | Descrição  |
 | --- | --- |
 | Aplicação  | As aplicações são as diferentes integrações contidas em uma ou mais lojas. Você pode criar uma aplicação para cada solução que implementar, a fim de ter tudo organizado e manter um controle que facilite a gestão. Veja [Dashboard](/developers/pt/docs/checkout-api/additional-content/dashboard/introduction) para mais informações sobre como criar uma aplicação. |
