@@ -1,70 +1,8 @@
 # Configurar la integración con otros medios de pago
 
-Con el Checkout Bricks de Mercado Pago, es posible ofrecer, además de tarjeta y Pix, pagos vía **boleto bancario** y pago en **agencias de lotería**. 
+Con el Checkout Bricks de Mercado Pago, es posible ofrecer, además de tarjeta y Pix, pagos vía **boleto bancario** y pago en **agencias de lotería**.  Para ofrecer pagos con **boleto bancário** y pago en **agencias de lotería**, sigue los siguientes pasos. 
 
-Para obtener una lista detallada de todos los medios de pago disponibles para integración, envía un **GET** con tu _Access token_ al endpoint [/v1/payment_methods](/developers/es/reference/payment_methods/_payment_methods/get) y ejecuta la solicitud o, si lo prefieres, haz la solicitud utilizando los siguientes SDKs. 
-
-[[[
-```php
-<?php
-
-  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
-
-  $payment_methods = MercadoPago::get("/v1/payment_methods");
-
-?>
-```
-```node
-var mercadopago = require('mercadopago');
-mercadopago.configurations.setAccessToken(config.access_token);
-
-var response = await mercadopago.payment_methods.listAll();
-var payment_methods = response.body;
-```
-```java
-MercadoPagoConfig.setAccessToken("ENV_ACCESS_TOKEN");
-
-PaymentMethodClient client = new PaymentMethodClient();
-client.list();
-
-```
-```ruby
-require 'mercadopago'
-sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
-
-payment_methods_response = sdk.payment_methods.get()
-payment_methods = payment_methods_response[:response]
-
-```
-```csharp
-using MercadoPago.Client.PaymentMethod;
-using MercadoPago.Config;
-using MercadoPago.Resource;
-using MercadoPago.Resource.PaymentMethod;
-
-MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
-
-var client = new PaymentMethodClient();
-ResourcesList<PaymentMethod> paymentMethods = await client.ListAsync();
-
-```
-```python
-import mercadopago
-sdk = mercadopago.SDK("ACCESS_TOKEN")
-
-payment_methods_response = sdk.payment_methods().list_all()
-payment_methods = payment_methods_response["response"]
-```
-```curl
-curl -X GET \
-    -H 'accept: application/json' \
-    -H 'content-type: application/json' \
-    -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
-    'https://api.mercadopago.com/v1/payment_methods' \
-```
-]]]
-
-Para ofrecer pagos con **boleto bancário** y pago en **agencias de lotería**, sigue los siguientes pasos. Si ya ha integrado los pagos con tarjeta, puede iniciar la integración desde el **paso 4**.
+> Si ya ha integrado los pagos con tarjeta, puede iniciar la integración desde el **paso 4**.
 
 1. [Crear container](#bookmark_crear_container)
 2. [Incluir y configurar la librería MercadoPago.js](#bookmark_incluir_y_configurar_la_librería_mercadopago.js)
@@ -261,7 +199,7 @@ settings = {
 ```
 ]]]
 
-Para obtener una lista completa de ID que se pueden pasar dentro del array, consulte la API [Obtener medios de pago](/developers/es/reference/payment_methods/_payment_methods/get) en nuestra referencia de API.
+Para obtener una lista detallada de todos los **medios de pago disponibles para la integración con Payment Brick**, consulte la [sección correspondiente](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/available-payment-methods). Además, si quieres obtener una lista completa de ID que se pueden pasar dentro del array, consulte la API [Obtener medios de pago](/developers/es/reference/payment_methods/_payment_methods/get) en nuestra referencia de API.
 
 > NOTE
 >

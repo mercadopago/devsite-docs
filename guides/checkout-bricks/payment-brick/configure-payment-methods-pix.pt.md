@@ -12,7 +12,9 @@ Pix é um meio de pagamento eletrônico instantâneo oferecido pelo Banco Centra
 > <br/></br>
 > E, para ajudar, preparamos um [exemplo de código](/developers/pt/docs/checkout-bricks/payment-brick/code-example/pix) completo da configuração do Payment Brick com Pix que você pode usar como modelo.
 
-Para configurar a integração do Payment Brick para receber pagamentos com Pix você precisa seguir os passos abaixo. Caso já tenha integrado pagamentos via cartão, você pode iniciar a integração a partir da **etapa 4**.
+Para configurar a integração do Payment Brick para receber pagamentos com Pix você precisa seguir os passos abaixo. 
+
+> Caso já tenha integrado pagamentos via cartão, você pode iniciar a integração a partir da **etapa 4**.
 
 1. [Criar container](#bookmark_criar_container)
 2. [Incluir e configurar a biblioteca MercadoPago.js](#bookmark_incluir_e_configurar_a_biblioteca_mercadopago.js)

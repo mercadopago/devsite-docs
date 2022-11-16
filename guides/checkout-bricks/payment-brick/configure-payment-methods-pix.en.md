@@ -12,7 +12,9 @@ Pix is an instant electronic payment method offered by the Central Bank of Brazi
 > <br/></br>
 > And to help, we've prepared a complete [code-example](/developers/en/docs/checkout-bricks/payment-brick/code-example/pix) of the Payment Brick configuration with Pix that you can use as a template.
 
-To configure Payment Brick integration to receive payments with Pix you need to follow the steps below. If you have already integrated card payments, you can start the integration from **step 4**.
+To configure Payment Brick integration to receive payments with Pix you need to follow the steps below. 
+
+> If you have already integrated card payments, you can start the integration from **step 4**.
 
 1. [Create container](#bookmark_create_container)
 2. [Include and configure MercadoPago.js library](#bookmark_include_and_configure_mercadopago.js_library)
