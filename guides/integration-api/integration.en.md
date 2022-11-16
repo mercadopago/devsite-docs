@@ -49,7 +49,7 @@ Next, you will need to create an application to obtain the credentials. It's eas
 >
 > Note
 >
-> If you are going to operate on behalf of other sellers, you can manage the link safely by integrating [OAuth.](/developers/en/docs/mp-point/additional-content/security/oauth/introduction)
+> If you are going to operate on behalf of other sellers, you can manage the link safely by integrating [OAuth.](/developers/en/docs/seguridad/additional-content/security/oauth/introduction)
 
 ### Access your application credentials
 
