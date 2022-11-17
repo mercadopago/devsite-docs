@@ -169,9 +169,7 @@ Exemplo de resposta
       "ticket_url": "https://mercadopago.com.br/payments/1111111111/openfinance?caller_id=11111111&hash=1111",
       "qr_code_base64": null
     }
-    // ...
   }
-  // ...
 }
 ```
 
@@ -182,7 +180,7 @@ Para isso, é preciso redirecionar o usuário para a URL diretamente ou apresent
 
 A imagem a seguir apresenta um exemplo deste fluxo na visão do usuário:
 
-
+![Exemplo de fluxo de pagamento Pix Open Finance](/images/api/api-integrate-openfinance.gif)
 
 ## Testando sua integração
 Para testar a integração é necessário utilizar uma credencial de testes ao criar um pagamento e possuir um usuário de testes com chave Pix cadastrada. [Clique aqui](/developers/pt/docs/checkout-api/integration-test/make-test-purchase) para acessar a documentação e encontrar mais detalhes sobre como fazer isso.
@@ -198,9 +196,7 @@ Crie um pagamento Pix Open Finance e utilize a URL disponível no atributo `poin
       "ticket_url": "https://mercadopago.com.br/payments/1111111111/openfinance?caller_id=11111111&hash=1111",
       "qr_code_base64": null
     }
-    // ...
   }
-  // ...
 }
 ```
 
@@ -210,3 +206,4 @@ Ao selecionar o banco indicado, será possível **Confirmar o pagamento** e por 
 
 A imagem a seguir apresenta um exemplo dessa experiência:
 
+![Exemplo de fluxo completo de pagamento Pix Open Finance](/images/api/api-integrate-openfinance-sample.gif)
