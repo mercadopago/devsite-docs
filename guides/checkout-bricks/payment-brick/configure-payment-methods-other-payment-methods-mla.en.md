@@ -201,7 +201,7 @@ settings = {
 
 In this case, as **Pago Fácil** is the only available means, the list for selecting where to pay will not be displayed. 
 
-For a detailed list of all **payment methods available for integration with Payment Brick**, check out the [corresponding section](/developers/en/docs/checkout-bricks/payment-brick/additional-customization/consult-payment-methods). Additionally, if you want a complete list of IDs that can be passed within the array, check the [Get Payment Methods](/developers/en/reference/payment_methods/_payment_methods/get) API in our API Reference.
+If you want a complete list of IDs that can be passed within the array, check the [Get Payment Methods](/developers/en/reference/payment_methods/_payment_methods/get) API in our API Reference. For more information, check out the [corresponding section](/developers/en/docs/checkout-bricks/additional-content/consult-payment-methods).
 
 > NOTE
 >

@@ -200,7 +200,7 @@ settings = {
 
 Nesse caso, como **Pago Fácil** é o único meio disponível, não será exibida a lista para seleção de onde pagar. 
 
-Para obter uma lista detalhada com todos os **meios de pagamento disponíveis para integração com o Payment Brick**, consulte a [seção correspondente](/developers/pt/docs/checkout-bricks/payment-brick/additional-customization/consult-payment-methods). Além disso, caso deseje uma lista completa dos IDs que podem ser passados dentro do array, consulte a API de [Obter meios de pagamento](/developers/pt/reference/payment_methods/_payment_methods/get) em nossa API Reference.
+Caso deseje uma lista completa dos IDs que podem ser passados dentro do array, consulte a API de [Obter meios de pagamento](/developers/pt/reference/payment_methods/_payment_methods/get) em nossa API Reference. Para mais informações, consulte a [seção correspondente](/developers/pt/docs/checkout-bricks/additional-content/consult-payment-methods).
 
 > NOTE
 >
