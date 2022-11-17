@@ -36,7 +36,6 @@ Uma vez que você tenha configurado o meio de pagamento corretamente, será prec
     );
     $payment->save();
     ```
-    ```
     ```node
     mercadopago.configurations.setAccessToken("access_token");
     var payment = {
