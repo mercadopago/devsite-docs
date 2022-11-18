@@ -6,7 +6,7 @@
 
 | - | Brick |
 | --- | --- |
-| Customization moment  | When rendering the brick  |
+| Customization moment  | When rendering the Brick  |
 | Property  | customization.visual.texts.{cardNumber, cardExpirationDate, cardSecurityCode, cardholderName, cardholderIdentification, cardholderEmail, formTitle, emailSectionTitle, installmentsSectionTitle, selectInstallments, formSubmit}  |
 | Attribute  | label, placeholder  |
 | Type  | String  |

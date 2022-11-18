@@ -49,7 +49,7 @@ E pronto!
 >
 > Nota
 >
-> Se você vai realizar operações em nome de outros vendedores, pode gerenciar a ligação segura integrando [OAuth.](/developers/pt/docs/mp-point/additional-content/security/oauth/introduction)
+> Se você vai realizar operações em nome de outros vendedores, pode gerenciar a ligação segura integrando [OAuth.](/developers/pt/docs/seguridad/additional-content/security/oauth/introduction)
 
 ### Acesse as credenciais da sua aplicação
 

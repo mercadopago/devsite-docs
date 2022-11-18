@@ -34,7 +34,7 @@ const settings = {
 };
 ```
 
-La dirección proporcionada en la propiedad `return` del objeto `backUrls` se mostrará como un enlace al usuario cada vez que se muestre el brick de Status Screen, mientras que la dirección proporcionada en la propiedad `error` se mostrará como un enlace al usuario cuando hay un error en el procesamiento del pago.
+La dirección proporcionada en la propiedad `return` del objeto `backUrls` se mostrará como un enlace al usuario cada vez que se muestre el Brick de Status Screen, mientras que la dirección proporcionada en la propiedad `error` se mostrará como un enlace al usuario cuando hay un error en el procesamiento del pago.
 
 > NOTE
 >

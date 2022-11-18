@@ -59,7 +59,7 @@ let preference = {
 
 mercadopago.preferences.create(preference)
   .then(function (response) {
-    // This value is the preferenceId that will be sent to the brick at startup
+    // This value is the preferenceId that will be sent to the Brick at startup
     const preferenceId = response.body.id;
   }).catch(function (error) {
     console.log(error);
@@ -114,7 +114,7 @@ preference_data = {
 preference_response = sdk.preference.create(preference_data)
 preference = preference_response[:response]
 
-# This value is the preferenceId you will use in the HTML on brick startup
+# This value is the preferenceId you will use in the HTML on Brick startup
 @preference_id = preference['id']
 ```
 ```csharp
@@ -240,7 +240,7 @@ let preference = {
 
 mercadopago.preferences.create(preference)
   .then(function (response) {
-    // This value is the preferenceId that will be sent to the brick at startup
+    // This value is the preferenceId that will be sent to the Brick at startup
     const preferenceId = response.body.id;
   }).catch(function (error) {
     console.log(error);
@@ -295,7 +295,7 @@ preference_data = {
 preference_response = sdk.preference.create(preference_data)
 preference = preference_response[:response]
 
-# This value is the preferenceId you will use in the HTML on brick startup
+# This value is the preferenceId you will use in the HTML on Brick startup
 @preference_id = preference['id']
 ```
 ```csharp
@@ -399,7 +399,10 @@ curl -X POST \
       },
       callbacks: {
         onReady: () => {
-          // callback called when Brick is ready
+          /*
+            Callback called when Brick is ready
+            Here you can hide loadings from your site, for example.
+          */
         },
         onSubmit: ({ selectedPaymentMethod, formData }) => {
           // callback called when clicking on the data submission button
@@ -408,6 +411,7 @@ curl -X POST \
         },
         onError: (error) => {
           // callback called for all Brick error cases
+          console.error(error);
         },
       },
     };
@@ -423,4 +427,4 @@ curl -X POST \
 </html>
 ```
 
-> Payments with **Mercado Pago Wallet** do not need to be sent via the backend. If the user selects this option as a means of payment, the `preferenceId` sent at the initialization of the brick is responsible for redirecting the buyer to the Mercado Pago website, where the payment will be made directly on our website. To redirect the buyer back to your site, you can configure the `back_urls` as described [in this article.](/developers/en/docs/checkout-bricks/payment-brick/additional-customization/preferences#bookmark_redirect_the_buyer_to_your_site)
+> Payments with **Mercado Pago Wallet** do not need to be sent via the backend. If the user selects this option as a means of payment, the `preferenceId` sent at the initialization of the Brick is responsible for redirecting the buyer to the Mercado Pago website, where the payment will be made directly on our website. To redirect the buyer back to your site, you can configure the `back_urls` as described [in this article.](/developers/en/docs/checkout-bricks/payment-brick/additional-customization/preferences#bookmark_redirect_the_buyer_to_your_site)

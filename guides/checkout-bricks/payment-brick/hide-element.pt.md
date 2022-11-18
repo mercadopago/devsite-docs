@@ -6,7 +6,7 @@
 
 | - | Brick |
 |--- |--- |
-| Momento de customização | Ao renderizar brick |
+| Momento de customização | Ao renderizar Brick |
 | Propriedade | customization.hideFormTitle |
 | Tipo | Boolean |
 | Observações | Quando **true**, oculta a linha de título. |
@@ -30,7 +30,7 @@ const settings = {
 
 | - | Brick |
 |--- |--- |
-| Momento de customização | Ao renderizar brick |
+| Momento de customização | Ao renderizar Brick |
 | Propriedade | customization.visual.hidePaymentButton |
 | Tipo | Boolean |
 | Observações | Quando **true** não mostra o botão de enviar o formulário e passa a ser necessário utilizar a função getFormData para obter os dados do formulário (veja exemplo abaixo). |
@@ -87,7 +87,7 @@ function createPayment(){
 
 | - | Brick |
 |--- |--- |
-| Momento de customização | Ao renderizar brick |
+| Momento de customização | Ao renderizar Brick |
 | Propriedade | customization.visual.hideRedirectionPanel |
 | Tipo | Boolean |
 | Observações | Quando **true**, oculta dentro da opção de pagamento com a Conta Mercado Pago, o painel de redirecionamento para o site do Mercado Pago. |
@@ -102,3 +102,9 @@ const settings = {
    }
 }
 ```
+
+> NOTE
+>
+> Importante
+> 
+> Caso precise customizar o estilo visual do Brick para além das customizações de **temas e variáveis customizadas**, recomendamos que não utilize as classes e ids CSS que são enviadas com os Bricks como referência, visto que são gerados automaticamente durante o processo de build da aplicação e mudam regularmente. Utilize a herança dos elementos HTML para acessar os elementos que necessitar customizar.
