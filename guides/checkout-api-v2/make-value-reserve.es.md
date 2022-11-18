@@ -191,7 +191,7 @@ Además, también es posible resultar como rechazado o pendiente. Ten en cuenta 
 >
 > Importante
 >
-> La reserva tendrá una validez de 7 días. Si no la capturas hasta ese momento, será cancelada. Además, ebes guardar el ID del pago para poder finalizar el proceso.
+> La reserva tendrá una validez de 7 días. Si no la capturas hasta ese momento, será cancelada. Además, debes guardar el ID del pago para poder finalizar el proceso.
 ------------
 
 ----[mpe]----
@@ -199,7 +199,7 @@ Además, también es posible resultar como rechazado o pendiente. Ten en cuenta 
 >
 > Importante
 >
-> La reserva tendrá una validez de 22 días. Si no la capturas hasta ese momento, será cancelada. Además, ebes guardar el ID del pago para poder finalizar el proceso.
+> La reserva tendrá una validez de 22 días. Si no la capturas hasta ese momento, será cancelada. Además, debes guardar el ID del pago para poder finalizar el proceso.
 ------------
 
 ----[mlb]----
@@ -207,7 +207,7 @@ Además, también es posible resultar como rechazado o pendiente. Ten en cuenta 
 >
 > Importante
 >
-> La reserva tendrá una validez de 5 días. Si no la capturas hasta ese momento, será cancelada. Además, ebes guardar el ID del pago para poder finalizar el proceso.
+> La reserva tendrá una validez de 5 días. Si no la capturas hasta ese momento, será cancelada. Además, debes guardar el ID del pago para poder finalizar el proceso.
 ------------
 
 > NEXT_STEP_CARD_ES
