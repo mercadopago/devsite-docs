@@ -2,9 +2,9 @@
 
 O Card Payment Brick oferece um formulário de pagamento com um layout otimizado e temas diferentes, trazendo todos os campos necessários para se efetuar um pagamento através de cartão de crédito e/ou débito, e inclui os mecanismos necessários para receber automaticamente os dados necessários para criar o pagamento no back-end.
 
-Este brick, além de conter os campos de coleta dos dados pessoais do titular do cartão (nome do titular e documento), conta também com campos de coleta do número do cartão, data de vencimento e código de segurança (CVV) que já estão em conformidade com padrões de segurança [PCI](/developers/pt/guides/additional-content/security/pci), eliminando a necessidade de tratamento desses dados.
+Este Brick, além de conter os campos de coleta dos dados pessoais do titular do cartão (nome do titular e documento), conta também com campos de coleta do número do cartão, data de vencimento e código de segurança (CVV) que já estão em conformidade com padrões de segurança [PCI](/developers/pt/guides/additional-content/security/pci), eliminando a necessidade de tratamento desses dados.
 
-Além de coletar os campos necessários para efetuar o pagamento, este componente ainda auxilia o usuário a finalizar o preenchimento da tela com alertas de campos incompletos e possíveis erros no preenchimento. Veja a seguir as principais caracteristicas deste brick. 
+Além de coletar os campos necessários para efetuar o pagamento, este componente ainda auxilia o usuário a finalizar o preenchimento da tela com alertas de campos incompletos e possíveis erros no preenchimento. Veja a seguir as principais caracteristicas deste Brick. 
 
 ![cardform](checkout-bricks/card-form-pt.png)
 
@@ -16,7 +16,7 @@ O layout do Card Payment Brick foi construído com base nas melhores práticas d
 >
 > Atenção
 >
-> Os bricks foram criados para atender não somente necessidades técnicas de implementação e segurança, mas também para prover a melhor experiência ao comprador. Customizar um brick pode mudar drasticamente a experiência do comprador. Nossa recomendação é que você sempre faça uso do brick com a menor quantidade possível de customizações adicionais para garantir sempre a melhor experiência.
+> Os Bricks foram criados para atender não somente necessidades técnicas de implementação e segurança, mas também para prover a melhor experiência ao comprador. Customizar um Brick pode mudar drasticamente a experiência do comprador. Nossa recomendação é que você sempre faça uso do Brick com a menor quantidade possível de customizações adicionais para garantir sempre a melhor experiência.
 
 | Elemento | Características | Observações |
 |---|---|---|

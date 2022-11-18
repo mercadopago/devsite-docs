@@ -12,12 +12,14 @@ Pix es un método de pago electrónico instantáneo ofrecido por el Banco Centra
 > <br/></br>
 > Y para ayudar, hemos preparado un [ejemplo de código](/developers/es/docs/checkout-bricks/payment-brick/code-example/pix) completo de la configuración de Payment Brick con Pix que puede usar como modelo.
 
-Para configurar la integración de Payment Brick para recibir pagos con Pix debe seguir los pasos a continuación. Si ya ha integrado los pagos con tarjeta, puede iniciar la integración desde el **paso 4**.
+Para configurar la integración de Payment Brick para recibir pagos con Pix debe seguir los pasos a continuación. 
+
+> Si ya ha integrado los pagos con tarjeta, puede iniciar la integración desde el **paso 4**.
 
 1. [Crear container](#bookmark_crear_container)
 2. [Incluir y configurar la librería MercadoPago.js](#bookmark_incluir_y_configurar_la_librería_mercadopago.js)
-3. [Instanciar brick](#bookmark_instanciar_brick)
-4. [Renderizar brick](#bookmark_renderizar_brick)
+3. [Instanciar Brick](#bookmark_instanciar_brick)
+4. [Renderizar Brick](#bookmark_renderizar_brick)
 
 > Los pasos se realizan en el backend o frontend. Las etiquetas **Client-Side** y **Server-Side** ubicadas inmediatamente al lado del título lo ayudan a identificar qué paso se realiza en qué instancia.
 
@@ -27,7 +29,7 @@ Para configurar la integración de Payment Brick para recibir pagos con Pix debe
 >
 > Crear container
 
-Deberás crear un container para definir dónde se colocará el brick en la pantalla. La creación del container se realiza insertando un elemento (por ejemplo, un div) en el código HTML de la página en la que se renderizará el brick (ver el código a continuación).
+Deberás crear un container para definir dónde se colocará el Brick en la pantalla. La creación del container se realiza insertando un elemento (por ejemplo, un div) en el código HTML de la página en la que se renderizará el Brick (ver el código a continuación).
 
 > NOTE
 >
@@ -69,9 +71,9 @@ const mp = new MercadoPago('YOUR_PUBLIC_KEY');
 >
 > h2
 >
-> Instanciar brick
+> Instanciar Brick
 
-Con el container creado y la SDK JS instalada, el siguiente paso es instanciar el brick builder, que permitirá generar el brick. Para crear la instancia, inserta el código a continuación del paso anterior.
+Con el container creado y la SDK JS instalada, el siguiente paso es instanciar el Brick builder, que permitirá generar el Brick. Para crear la instancia, inserta el código a continuación del paso anterior.
 
 ```javascript
 const bricksBuilder = mp.bricks();
@@ -81,17 +83,17 @@ const bricksBuilder = mp.bricks();
 >
 > Atención
 >
-> Durante la instanciación del brick, es posible que aparezcan diferentes errores. Para más detalles sobre cada uno de ellos, consulta la sección [Posibles errores](/developers/es/docs/checkout-bricks/additional-content/possible-errors).
+> Durante la instanciación del Brick, es posible que aparezcan diferentes errores. Para más detalles sobre cada uno de ellos, consulta la sección [Posibles errores](/developers/es/docs/checkout-bricks/additional-content/possible-errors).
 
 > CLIENT_SIDE
 >
 > h2
 >
-> Renderizar brick
+> Renderizar Brick
 
-Una vez instanciado el builder, nuestro brick puede ser renderizado y tener todas sus configuraciones compiladas para que la estructura final sea generada.
+Una vez instanciado el builder, nuestro Brick puede ser renderizado y tener todas sus configuraciones compiladas para que la estructura final sea generada.
 
-Para renderizar el brick, inserta el código a continuación del paso anterior y completa los atributos de acuerdo con los comentarios destacados en este mismo código.
+Para renderizar el Brick, inserta el código a continuación del paso anterior y completa los atributos de acuerdo con los comentarios destacados en este mismo código.
 
 ```javascript
 const renderPaymentBrick = async (bricksBuilder) => {
@@ -106,7 +108,10 @@ const renderPaymentBrick = async (bricksBuilder) => {
    },
    callbacks: {
      onReady: () => {
-       // callback llamado cuando Brick está listo
+        /*
+          Callback llamado cuando Brick está listo
+          Aquí puedes ocultar loadings de su sitio, por ejemplo.
+        */
      },
      onSubmit: ({ selectedPaymentMethod, formData }) => {
        // callback llamado al hacer clic en el botón de envío de datos
@@ -132,6 +137,7 @@ const renderPaymentBrick = async (bricksBuilder) => {
      },
      onError: (error) => {
        // callback llamado para todos los casos de error de Brick
+       console.error(error);
      },
    },
  };
@@ -144,15 +150,15 @@ const renderPaymentBrick = async (bricksBuilder) => {
 renderPaymentBrick(bricksBuilder);
 ```
 
-El resultado de renderizar el brick debe ser como la imagen de abajo:
+El resultado de renderizar el Brick debe ser como la imagen de abajo:
 
-![payment-brick-pix](checkout-bricks/payment-brick-pix-es.png)
+![payment-Brick-pix](checkout-bricks/payment-brick-pix-es.png)
 
 > WARNING
 >
 > Atención
 >
-> Para un control efectivo del Brick, la función enviada en `onSubmit` siempre debe devolver una Promise. Llame el método `resolve()` solo si el procesamiento de tu backend fue exitoso. Llame el método `reject()` en caso de que ocurra un error. Esto hará que el Brick te permita completar los campos nuevamente y haga posible un nuevo intento de pago. Al llamar el `resolve()` dentro de la Promise de `onSubmit`, el brick no permite nuevos pagos. Si deseas realizar un nuevo pago, deberás crear una nueva instancia del Brick.
+> Para un control efectivo del Brick, la función enviada en `onSubmit` siempre debe devolver una Promise. Llame el método `resolve()` solo si el procesamiento de tu backend fue exitoso. Llame el método `reject()` en caso de que ocurra un error. Esto hará que el Brick te permita completar los campos nuevamente y haga posible un nuevo intento de pago. Al llamar el `resolve()` dentro de la Promise de `onSubmit`, el Brick no permite nuevos pagos. Si deseas realizar un nuevo pago, deberás crear una nueva instancia del Brick.
 
 Para pagar con Pix, el comprador debe ingresar su dirección de correo electrónico. Se recomienda encarecidamente que el integrador ingrese este campo de correo electrónico al inicio del Brick, para que el comprador no tenga que escribirlo manualmente. Para inicializar el campo de correo electrónico, simplemente siga el **ejemplo a continuación**.
 

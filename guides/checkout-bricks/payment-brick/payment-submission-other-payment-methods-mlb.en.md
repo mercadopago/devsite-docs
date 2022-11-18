@@ -1,87 +1,21 @@
-# Code example (other payment methods)
-
-To facilitate and optimize your integration process, check below a complete example of how to include **boleto bancário** and **payment in lottery** as a means of payment with Payment Brick and how, after performing the integration, to send the payment to Mercado Pago. 
-
-> CLIENT_SIDE
->
-> h2
->
-> Configure the integration
-
-```html
-<!DOCTYPE html>
-<html lang="en">
- 
-<head>
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Bricks</title>
-</head>
- 
-<body>
- <div id="paymentBrick_container"></div>
- <script src="https://sdk.mercadopago.com/js/v2"></script>
- <script>
-   const mp = new MercadoPago('YOUR_PUBLIC_KEY');
-   const bricksBuilder = mp.bricks();
-   const renderPaymentBrick = async (bricksBuilder) => {
-     const settings = {
-       initialization: {
-         amount: 100, // total amount to be paid 
-       },
-       customization: {
-         paymentMethods: {
-           ticket: 'all',
-         },
-       },
-       callbacks: {
-         onReady: () => {
-           // callback called when Brick is ready
-         },
-         onSubmit: ({ selectedPaymentMethod, formData }) => {
-           // callback called when clicking on the data submission button
-           return new Promise((resolve, reject) => {
-             fetch("/processar-pago", {
-               method: "POST",
-               headers: {
-                 "Content-Type": "application/json",
-               },
-               body: JSON.stringify(formData)
-             })
-               .then((response) => {
-                 // receive payment result
-                 resolve();
-               })
-               .catch((error) => {
-                 // handle error response when trying to create payment
-                 reject();
-               })
-           });
-         },
-         onError: (error) => {
-           // callback called for all Brick error cases
-         },
-       },
-     };
-     window.paymentBrickController = await bricksBuilder.create(
-       'payment',
-       'paymentBrick_container',
-       settings
-     );
-   };
-   renderPaymentBrick(bricksBuilder);
- </script>
-</body>
- 
-</html>
-```
-
 > SERVER_SIDE
 >
-> h2
+> h1
 >
-> Payment submission to Mercado Pago
+> Payment submission (other payment methods)
+
+To configure payments with **boleto bancário** or **payment in lottery**, send a **POST** with the following parameters to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post) and run the request or, if you prefer, use one of our SDKs below.
+
+> NOTE
+>
+> Important
+>
+> Remember that Brick already resolves most parameters to send the POST. The information return comes in the `onSubmit` callback, inside the `formData` object, where you can find parameters like: `payment_method_id`, `payer.email` and `amount`.
+
+| Payment Type | Parameter | Value |
+| --- | --- | --- |
+| Boleto | `payment_method_id` | `bolbradesco` |
+| Lottery payment | `payment_method_id` | `pec` |
 
 [[[
 ```php
@@ -295,7 +229,7 @@ curl -X POST \
 ```
 ]]]
 
-### Response
+The response will show the **pending status** until the buyer completes the payment. Also, in the response to the request, the `external_resource_url` parameter will return a URL that contains instructions for the buyer to make the payment. You can redirect to this same link to complete the payment flow. See below for an example return.
 
 [[[
 ```json
@@ -320,8 +254,16 @@ curl -X POST \
 ```
 ]]]
 
+## Show payment status
+
+After the payment creation in the backend using the Mercado Pago SDK, use the **id** received in the response to instantiate the Status Screen Brick and show it to the buyer.
+
+In addition to displaying the payment status, Status Screen Brick will also display the barcode to copy and paste or scan in order for the buyer to pay. Learn how simple it is to integrate [click here](/developers/en/docs/checkout-bricks/status-screen-brick/configure-integration).
+
+![payment-submission-other-payment-methods-status-mlb](checkout-bricks/payment-submission-other-payment-methods-status-mlb-en.jpg)
+
 > NOTE
 >
-> Note
+> Important
 >
-> The customer has between 3 and 5 days to pay, depending on the payment method. After this time, the payment must be canceled.
+> The boleto expiration date can be configured by sending a POST request with the `data_of_expiration` parameter to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post). After expiration, the boleto will be cancelled.

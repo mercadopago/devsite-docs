@@ -25,7 +25,7 @@ const settings = {
 }
 ```
 
-## Initiate brick with document
+## Initiate Brick with document
 
 | Brick | Card Payment Brick |
 | --- | --- |

@@ -5,8 +5,8 @@ Para configurar la integración de Payment Brick para recibir pagos con la Cuent
 1. [Crear preferencia](#bookmark_crear_preferencia)
 2. [Crear container](#bookmark_crear_container)
 3. [Incluir y configurar la librería MercadoPago.js](#bookmark_incluir_y_configurar_la_librería_mercadopago.js)
-4. [Instanciar brick](#bookmark_instanciar_brick)
-5. [Renderizar brick](#bookmark_renderizar_brick)
+4. [Instanciar Brick](#bookmark_instanciar_brick)
+5. [Renderizar Brick](#bookmark_renderizar_brick)
 
 > Los pasos se realizan en el backend o frontend. Las etiquetas **Client-Side** y **Server-Side** ubicadas inmediatamente al lado del título lo ayudan a identificar qué paso se realiza en qué instancia. <br/></br>
 > <br/></br>
@@ -150,7 +150,7 @@ preference_data = {
 preference_response = sdk.preference.create(preference_data)
 preference = preference_response[:response]
 
-# Este valor es el ID de preferencia que usará en el HTML en el inicio del brick
+# Este valor es el ID de preferencia que usará en el HTML en el inicio del Brick
 @preference_id = preference['id']
 ```
 ```csharp
@@ -300,7 +300,7 @@ preference_data = {
 preference_response = sdk.preference.create(preference_data)
 preference = preference_response[:response]
 
-# Este valor es el ID de preferencia que usará en el HTML en el inicio del brick
+# Este valor es el ID de preferencia que usará en el HTML en el inicio del Brick
 @preference_id = preference['id']
 ```
 ```csharp
@@ -379,7 +379,7 @@ curl -X POST \
 >
 > Crear container
 
-Deberás crear un container para definir dónde se colocará el brick en la pantalla. La creación del container se realiza insertando un elemento (por ejemplo, un div) en el código HTML de la página en la que se renderizará el brick (ver el código a continuación).
+Deberás crear un container para definir dónde se colocará el Brick en la pantalla. La creación del container se realiza insertando un elemento (por ejemplo, un div) en el código HTML de la página en la que se renderizará el Brick (ver el código a continuación).
 
 > NOTE
 >
@@ -421,9 +421,9 @@ const mp = new MercadoPago('YOUR_PUBLIC_KEY');
 >
 > h2
 >
-> Instanciar brick
+> Instanciar Brick
 
-Con el container creado y la SDK JS instalada, el siguiente paso es instanciar el brick builder, que permitirá generar el brick. Para crear la instancia, inserta el código a continuación del paso anterior.
+Con el container creado y la SDK JS instalada, el siguiente paso es instanciar el Brick builder, que permitirá generar el Brick. Para crear la instancia, inserta el código a continuación del paso anterior.
 
 ```javascript
 const bricksBuilder = mp.bricks();
@@ -433,17 +433,17 @@ const bricksBuilder = mp.bricks();
 >
 > Atención
 >
-> Durante la instanciación del brick, es posible que aparezcan diferentes errores. Para más detalles sobre cada uno de ellos, consulta la sección [Posibles errores](/developers/es/docs/checkout-bricks/additional-content/possible-errors).
+> Durante la instanciación del Brick, es posible que aparezcan diferentes errores. Para más detalles sobre cada uno de ellos, consulta la sección [Posibles errores](/developers/es/docs/checkout-bricks/additional-content/possible-errors).
 
 > CLIENT_SIDE
 >
 > h2
 >
-> Renderizar brick
+> Renderizar Brick
 
-Una vez instanciado el builder, nuestro brick puede ser renderizado y tener todas sus configuraciones compiladas para que la estructura final sea generada.
+Una vez instanciado el builder, nuestro Brick puede ser renderizado y tener todas sus configuraciones compiladas para que la estructura final sea generada.
 
-Para renderizar el brick, inserta el código a continuación del paso anterior y completa los atributos de acuerdo con los comentarios destacados en este mismo código.
+Para renderizar el Brick, inserta el código a continuación del paso anterior y completa los atributos de acuerdo con los comentarios destacados en este mismo código.
 
 ```javascript
 const renderPaymentBrick = async (bricksBuilder) => {
@@ -454,7 +454,10 @@ const renderPaymentBrick = async (bricksBuilder) => {
  },
  callbacks: {
    onReady: () => {
-     // callback llamado cuando Brick está listo
+     /*
+       Callback llamado cuando Brick está listo
+       Aquí puedes ocultar loadings de su sitio, por ejemplo.
+     */
    },
    onSubmit: ({ selectedPaymentMethod, formData }) => {
      // callback llamado al hacer clic en el botón de envío de datos
@@ -463,6 +466,7 @@ const renderPaymentBrick = async (bricksBuilder) => {
    },
    onError: (error) => {
      // callback llamado para todos los casos de error de Brick
+     console.error(error);
    },
  },
 };
@@ -476,29 +480,29 @@ const renderPaymentBrick = async (bricksBuilder) => {
 renderPaymentBrick(bricksBuilder);
 ```
 
-El resultado de renderizar el brick debe ser como la imagen de abajo:
+El resultado de renderizar el Brick debe ser como la imagen de abajo:
 
 ----[mlb]---- 
-![payment-brick-wallet-mlb](checkout-bricks/payment-brick-wallet-mlb-es.png)
+![payment-Brick-wallet-mlb](checkout-bricks/payment-brick-wallet-mlb-es.png)
 
 ------------
 ----[mla]---- 
-![payment-brick-wallet-mla](checkout-bricks/payment-brick-wallet-mla-es.png)
+![payment-Brick-wallet-mla](checkout-bricks/payment-brick-wallet-mla-es.png)
 
 ------------
 ----[mlc]---- 
-![payment-brick-wallet-mlc](checkout-bricks/payment-brick-wallet-mlc-es.png)
+![payment-Brick-wallet-mlc](checkout-bricks/payment-brick-wallet-mlc-es.png)
 
 ------------
 ----[mlm]---- 
-![payment-brick-wallet-mlm](checkout-bricks/payment-brick-wallet-mlm-es.png)
+![payment-Brick-wallet-mlm](checkout-bricks/payment-brick-wallet-mlm-es.png)
 
 ------------
 ----[mlu]---- 
-![payment-brick-wallet-mlu](checkout-bricks/payment-brick-wallet-mlu-es.png)
+![payment-Brick-wallet-mlu](checkout-bricks/payment-brick-wallet-mlu-es.png)
 
 ------------
 ----[mpe, mco]---- 
-![payment-brick-wallet-mco-mpe](checkout-bricks/payment-brick-wallet-mco-mpe-es.png)
+![payment-Brick-wallet-mco-mpe](checkout-bricks/payment-brick-wallet-mco-mpe-es.png)
 
 ------------

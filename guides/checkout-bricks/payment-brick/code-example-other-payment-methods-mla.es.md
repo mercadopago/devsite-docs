@@ -1,6 +1,6 @@
 # Ejemplo de código (otros medios de pago)
 
-Para facilitar y optimizar su proceso de integración, vea a continuación un ejemplo completo de cómo incluir **boleto bancario** y pago en **agencias de lotería** como medio de pago con Payment Brick. 
+Para facilitar y optimizar su proceso de integración, mira a continuación un ejemplo completo de cómo incluir **Rapipago** y **Pago Fácil** como medio de pago con Payment Brick. 
 
 > CLIENT_SIDE
 >
@@ -37,7 +37,10 @@ Para facilitar y optimizar su proceso de integración, vea a continuación un ej
        },
        callbacks: {
          onReady: () => {
-           // callback llamado cuando Brick está listo
+           /*
+             Callback llamado cuando Brick está listo
+             Aquí puedes ocultar loadings de su sitio, por ejemplo.
+           */
          },
          onSubmit: ({ selectedPaymentMethod, formData }) => {
            // callback llamado al hacer clic en el botón de envío de datos
@@ -60,7 +63,8 @@ Para facilitar y optimizar su proceso de integración, vea a continuación un ej
            });
          },
          onError: (error) => {
-           // callback llamado solicitada para todos los casos de error de Brick
+           // callback llamado para todos los casos de error de Brick
+           console.error(error);
          },
        },
      };
@@ -83,185 +87,112 @@ Para facilitar y optimizar su proceso de integración, vea a continuación un ej
 >
 > Enviar el pago a Mercado Pago
 
-
 [[[
 ```php
 <?php
-
+ 
  require_once 'vendor/autoload.php';
-
+ 
  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
-
+ 
  $payment = new MercadoPago\Payment();
  $payment->transaction_amount = 100;
- $payment->description = "Título del producto";
- $payment->payment_method_id = "bolbradesco";
+ $payment->description = "Titulo del producto";
+ $payment->payment_method_id = "rapipago";
  $payment->payer = array(
      "email" => "test@test.com",
-     "first_name" => "Test",
-     "last_name" => "User",
-     "identification" => array(
-         "type" => "DNI",
-         "number" => "19119119"
-      ),
-     "address"=>  array(
-         "zip_code" => "1264",
-         "street_name" => "Av. Caseros",
-         "street_number" => "3039",
-         "neighborhood" => "Parque Patricios",
-         "city" => "Buenos Aires",
-         "federal_unit" => "BA"
-      )
    );
-
+ 
  $payment->save();
-
+ 
 ?>
 ```
 ```node
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
-
+ 
 var payment_data = {
   transaction_amount: 100,
-  description: 'Título del producto',
-  payment_method_id: 'bolbradesco',
+  description: 'Titulo del producto',
+  payment_method_id: 'rapipago',
   payer: {
     email: 'test@test.com',
-    first_name: 'Test',
-    last_name: 'User',
-    identification: {
-        type: 'DNI',
-        number: '19119119'
-    },
-    address:  {
-        zip_code: '1264',
-        street_name: 'Av. Caseros',
-        street_number: '3039',
-        neighborhood: 'Parque Patricios',
-        city: 'Buenos Aires',
-        federal_unit: 'BA'
-    }
   }
 };
-
+ 
 mercadopago.payment.create(payment_data).then(function (data) {
-
+ 
 }).catch(function (error) {
-
+ 
 });
-
 ```
 ```java
 PaymentClient client = new PaymentClient();
-
+ 
 PaymentCreateRequest paymentCreateRequest =
    PaymentCreateRequest.builder()
        .transactionAmount(new BigDecimal("100"))
-       .description("Título del producto")
-       .paymentMethodId("bolbradesco")
+       .description("Titulo del producto")
+       .paymentMethodId("rapipago")
        .dateOfExpiration(OffsetDateTime.of(2023, 1, 10, 10, 10, 10, 0, ZoneOffset.UTC))
        .payer(
            PaymentPayerRequest.builder()
                .email("test@test.com")
-               .firstName("Test")
-               .lastName("User")
-               .identification(
-                   IdentificationRequest.builder().type("CPF").number("19119119100").build())
-               .build())
        .build();
-
+ 
 client.create(paymentCreateRequest);
 ```
 ```ruby
 require 'mercadopago'
 sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
-
+ 
 payment_request = {
   transaction_amount: 100,
-  description: 'Título del producto',
-  payment_method_id: 'bolbradesco',
+  description: 'Titulo del producto',
+  payment_method_id: 'rapipago',
   payer: {
     email: 'test@test.com',
-    first_name: 'Test',
-    last_name: 'User',
-    identification: {
-      type: 'DNI',
-      number: '19119119',
-    },
-    address: {
-      zip_code: '1264',
-      street_name: 'Av. Caseros',
-      street_number: '3039',
-      neighborhood: 'Parque Patricios',
-      city: 'Buenos Aires',
-      federal_unit: 'BA'
-    }
   }
 }
-
+ 
 payment_response = sdk.payment.create(payment_request)
 payment = payment_response[:response]
-
 ```
 ```csharp
-
 using MercadoPago.Config;
 using MercadoPago.Client.Common;
 using MercadoPago.Client.Payment;
 using MercadoPago.Resource.Payment;
-
+ 
 MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
-
+ 
 var request = new PaymentCreateRequest
 {
     TransactionAmount = 105,
-    Description = "Título del producto",
-    PaymentMethodId = "bolbradesco",
+    Description = "Titulo del producto",
+    PaymentMethodId = 'rapipago',
     Payer = new PaymentPayerRequest
     {
         Email = "test@test.com",
-        FirstName = "Test",
-        LastName = "User",
-        Identification = new IdentificationRequest
-        {
-            Type = "DNI",
-            Number = "19119119",
-        },
     },
 };
-
+ 
 var client = new PaymentClient();
 Payment payment = await client.CreateAsync(request);
-
 ```
 ```python
 import mercadopago
 sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
-
+ 
 payment_data = {
     "transaction_amount": 100,
-    "description": "Título del producto",
-    "payment_method_id": "bolbradesco",
+    "description": "Titulo del producto",
+    "payment_method_id": "rapipago",
     "payer": {
         "email": "test@test.com",
-        "first_name": "Test",
-        "last_name": "User",
-        "identification": {
-            "type": "DNI",
-            "number": "19119119"
-        },
-        "address": {
-            "zip_code": "1264",
-            "street_name": "Av. Caseros",
-            "street_number": "3039",
-            "neighborhood": "Parque Patricios",
-            "city": "Buenos Aires",
-            "federal_unit": "BA"
-        }
     }
 }
-
+ 
 payment_response = sdk.payment().create(payment_data)
 payment = payment_response["response"]
 ```
@@ -273,24 +204,10 @@ curl -X POST \
     'https://api.mercadopago.com/v1/payments' \
     -d '{
       "transaction_amount": 100,
-      "description": "Título del producto",
-      "payment_method_id": "bolbradesco",
+      "description": "Titulo del producto",
+      "payment_method_id": "rapipago",
       "payer": {
         "email": "test@test.com",
-        "first_name": "Test",
-        "last_name": "User",
-        "identification": {
-            "type": "DNI",
-            "number": "19119119"
-        },
-        "address": {
-            "zip_code": "1264",
-            "street_name": "Av. Caseros",
-            "street_number": "3039",
-            "neighborhood": "Parque Patricios",
-            "city": "Buenos Aires",
-            "federal_unit": "BA"
-        }
       }
     }'
 ```
@@ -311,7 +228,7 @@ curl -X POST \
         "net_received_amount": 0,
         "total_paid_amount": 100,
         "overpaid_amount": 0,
-        "external_resource_url": "https://www.mercadopago.com/mlb/payments/ticket/helper?payment_id=123456789&payment_method_reference_id= 123456789&caller_id=123456",
+        "external_resource_url": "https://www.mercadopago.com.ar/payments/123456/ticket?caller_id=123456&payment_method_id=rapipago&payment_id=123456&payment_method_reference_id=123456",
         "installment_amount": 0,
         "financial_institution": null,
         "payment_method_reference_id": "1234567890"
@@ -325,4 +242,4 @@ curl -X POST \
 >
 > Importante
 >
-> El cliente dispone de entre 3 y 5 días para pagar, dependiendo de la forma de pago. Después de este tiempo, el pago debe ser cancelado.
+> La fecha de vencimiento del boleto se puede configurar enviando una solicitud POST con el parámetro `data_of_expiration` al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post). Después del vencimiento, el boleto será cancelado.

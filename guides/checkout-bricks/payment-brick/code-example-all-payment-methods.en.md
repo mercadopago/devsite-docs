@@ -61,7 +61,7 @@ let preference = {
 
 mercadopago.preferences.create(preference)
   .then(function (response) {
-    // This value is the preferenceId that will be sent to the brick at startup
+    // This value is the preferenceId that will be sent to the Brick at startup
     const preferenceId = response.body.id;
   }).catch(function (error) {
     console.log(error);
@@ -116,7 +116,7 @@ preference_data = {
 preference_response = sdk.preference.create(preference_data)
 preference = preference_response[:response]
 
-# This value is the preferenceId you will use in the HTML on brick startup
+# This value is the preferenceId you will use in the HTML on Brick startup
 @preference_id = preference['id']
 ```
 ```csharp
@@ -242,7 +242,7 @@ let preference = {
 
 mercadopago.preferences.create(preference)
   .then(function (response) {
-    // This value is the preferenceId that will be sent to the brick at startup
+    // This value is the preferenceId that will be sent to the Brick at startup
     const preferenceId = response.body.id;
   }).catch(function (error) {
     console.log(error);
@@ -297,7 +297,7 @@ preference_data = {
 preference_response = sdk.preference.create(preference_data)
 preference = preference_response[:response]
 
-# This value is the preferenceId you will use in the HTML on brick startup
+# This value is the preferenceId you will use in the HTML on Brick startup
 @preference_id = preference['id']
 ```
 ```csharp
@@ -382,91 +382,92 @@ curl -X POST \
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Bricks</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bricks</title>
 </head>
 <body>
- <div id="paymentBrick_container"></div>
- <script src="https://sdk.mercadopago.com/js/v2"></script>
- <script>
-   const mp = new MercadoPago('YOUR_PUBLIC_KEY');
-   const bricksBuilder = mp.bricks();
-   const renderPaymentBrick = async (bricksBuilder) => {
-     const settings = {
-       initialization: {
-         /*
+  <div id="paymentBrick_container"></div>
+  <script src="https://sdk.mercadopago.com/js/v2"></script>
+  <script>
+    const mp = new MercadoPago('YOUR_PUBLIC_KEY');
+    const bricksBuilder = mp.bricks();
+    const renderPaymentBrick = async (bricksBuilder) => {
+      const settings = {
+        initialization: {
+          /*
            "amount" is the total amount to be paid
            by all means of payment with the exception of the Mercado Pago Wallet,
            which has its processing value determined in the backend through the "preferenceId"
-         */
-         amount: 100, // amount of processing to be performed
-         preferenceId: '<PREFERENCE_ID>', // preferenceId generated in the backend
-       },
-       customization: {
-         paymentMethods: {
-           creditCard: 'all',
-           debitCard: 'all',
-           ticket: 'all',
-           bankTransfer: ['pix'],
-         },
-       },
-       callbacks: {
-         onReady: () => {
-           // callback called when Brick is ready
-         },
-         onSubmit: ({ selectedPaymentMethod, formData }) => {
-           // callback called when clicking on the data submission button
- 
-           return new Promise((resolve, reject) => {
-             let url = undefined;
- 
-             if (selectedPaymentMethod === 'credit_card' || selectedPaymentMethod === 'debit_card') {
-               url = 'process_payment_card';
-             } else if (selectedPaymentMethod === 'bank_transfer') {
-               url = 'process_payment_pix';
-             } else if (selectedPaymentMethod === 'ticket') {
-               url = 'process_payment_ticket';
-             }
- 
-             if (url) {
-               fetch(url, {
-                 method: "POST",
-                 headers: {
-                   "Content-Type": "application/json",
-                 },
-                 body: JSON.stringify(formData)
-               })
-                 .then((response) => {
-                   // receive payment result
-                   resolve();
-                 })
-                 .catch((error) => {
-                   // handle error response when trying to create payment
-                   reject();
-                 })
-             } else if (selectedPaymentMethod === 'wallet_purchase') {
-               // wallet_purchase (Conta Mercado Pago) does not need to be sent from the backend
-               resolve();
-             } else {
-               reject();
-             }
-           });
-         },
-         onError: (error) => {
-           // callback called for all Brick error cases
-         },
-       },
-     };
-     window.paymentBrickController = await bricksBuilder.create(
-       'payment',
-       'paymentBrick_container',
-       settings
-     );
-   };
-   renderPaymentBrick(bricksBuilder);
- </script>
+          */
+          amount: 100, // amount of processing to be performed
+          preferenceId: '<PREFERENCE_ID>', // preferenceId generated in the backend
+        },
+        customization: {
+          paymentMethods: {
+            creditCard: 'all',
+            debitCard: 'all',
+            ticket: 'all',
+          },
+        },
+        callbacks: {
+          onReady: () => {
+            /*
+             Callback called when Brick is ready
+             Here you can hide loadings from your site, for example.
+            */
+          },
+          onSubmit: ({ selectedPaymentMethod, formData }) => {
+            // callback called when clicking on the data submission button
+
+            return new Promise((resolve, reject) => {
+              let url = undefined;
+
+              if (selectedPaymentMethod === 'credit_card' || selectedPaymentMethod === 'debit_card') {
+                url = 'process_payment_card';
+              } else if (selectedPaymentMethod === 'ticket') {
+                url = 'process_payment_ticket';
+              }
+
+              if (url) {
+                fetch(url, {
+                  method: "POST",
+                  headers: {
+                    "Content-Type": "application/json",
+                  },
+                  body: JSON.stringify(formData)
+                })
+                  .then((response) => {
+                    // receive payment result
+                    resolve();
+                  })
+                  .catch((error) => {
+                    // handle error response when trying to create payment
+                    reject();
+                  })
+              } else if (selectedPaymentMethod === 'wallet_purchase') {
+                // wallet_purchase (Conta Mercado Pago) does not need to be sent from the backend
+                resolve();
+              } else {
+                reject();
+              }
+            });
+          },
+          onError: (error) => {
+            // callback called for all Brick error cases
+            console.error(error);
+          },
+        },
+      };
+      window.paymentBrickController = await bricksBuilder.create(
+        'payment',
+        'paymentBrick_container',
+        settings
+      );
+    };
+    renderPaymentBrick(bricksBuilder);
+  </script>
 </body>
 </html>
 ```
@@ -478,7 +479,7 @@ curl -X POST \
 > Payment submission to Mercado Pago
 
 
-> Payments with **Mercado Pago Wallet** do not need to be sent via the backend. If the user selects this option as a means of payment, the `preferenceId` sent at the initialization of the brick is responsible for redirecting the buyer to the Mercado Pago website, where the payment will be made directly on our website. To redirect the buyer back to your site, you can configure the `back_urls` as described [in this article.](/developers/en/docs/checkout-bricks/payment-brick/additional-customization/preferences#bookmark_redirect_the_buyer_to_your_site)
+> Payments with **Mercado Pago Wallet** do not need to be sent via the backend. If the user selects this option as a means of payment, the `preferenceId` sent at the initialization of the Brick is responsible for redirecting the buyer to the Mercado Pago website, where the payment will be made directly on our website. To redirect the buyer back to your site, you can configure the `back_urls` as described [in this article.](/developers/en/docs/checkout-bricks/payment-brick/additional-customization/preferences#bookmark_redirect_the_buyer_to_your_site)
 
 * For the endpoint `/process_payment_card`:
 
@@ -687,6 +688,8 @@ curl -X POST \
 ```
 ]]]
 
+----[mlb]----
+
 * For the endpoint `/process_payment_pix`:
 
 [[[
@@ -891,94 +894,93 @@ curl -X POST \
 ```
 ]]]
 
-* For the endpoint `/process_payment_ticket`:
+* Para o endpoint `/process_payment_ticket`:
 
 [[[
 ```php
 <?php
 
-require_once 'vendor/autoload.php';
+ require_once 'vendor/autoload.php';
 
-MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+ MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
 
-$payment = new MercadoPago\Payment();
-$payment->transaction_amount = 100;
-$payment->description = "Product title";
-$payment->payment_method_id = "bolbradesco";
-$payment->payer = array(
-"email" => "test@test.com",
-"first_name" => "Test",
-"last_name" => "User",
-"identification" => array(
-"type" => "CPF",
-"number" => "19119119100"
-),
-"address"=> array(
-"zip_code" => "06233200",
-"street_name" => "Avenida das Nações Unidas",
-"street_number" => "3003",
-"neighborhood" => "Bonfim",
-"city" => "Osasco",
-"federal_unit" => "SP"
-)
-);
+ $payment = new MercadoPago\Payment();
+ $payment->transaction_amount = 100;
+ $payment->description = "Product title";
+ $payment->payment_method_id = "bolbradesco";
+ $payment->payer = array(
+     "email" => "test@test.com",
+     "first_name" => "Test",
+     "last_name" => "User",
+     "identification" => array(
+         "type" => "DNI",
+         "number" => "19119119"
+      ),
+     "address"=>  array(
+         "zip_code" => "1264",
+         "street_name" => "Av. Caseros",
+         "street_number" => "3039",
+         "neighborhood" => "Parque Patricios",
+         "city" => "Buenos Aires",
+         "federal_unit" => "BA"
+      )
+   );
 
-$payment->save();
+ $payment->save();
 
 ?>
 ```
 ```node
-var Mercadopago = require('mercadopago');
-Mercadopago.configurations.setAccessToken(config.access_token);
+var mercadopago = require('mercadopago');
+mercadopago.configurations.setAccessToken(config.access_token);
 
 var payment_data = {
-transaction_amount: 100,
-description: 'Product title',
-payment_method_id: 'bolbradesco',
-payer: {
-email: 'test@test.com',
-first_name: 'Test',
-last_name: 'User',
-identification: {
-type: 'CPF',
-number: '19119119100'
-},
-address: {
-zip_code: '06233200',
-street_name: "Avenida das Nações Unidas",
-street_number: '3003',
-neighborhood: 'Bonfim',
-city: 'Osasco',
-federal_unit: 'SP'
-}
-}
+  transaction_amount: 100,
+  description: 'Product title',
+  payment_method_id: 'bolbradesco',
+  payer: {
+    email: 'test@test.com',
+    first_name: 'Test',
+    last_name: 'User',
+    identification: {
+        type: 'DNI',
+        number: '19119119'
+    },
+    address:  {
+        zip_code: '1264',
+        street_name: 'Av. Caseros',
+        street_number: '3039',
+        neighborhood: 'Parque Patricios',
+        city: 'Buenos Aires',
+        federal_unit: 'BA'
+    }
+  }
 };
 
-Mercadopago.payment.create(payment_data).then(function (data) {
+mercadopago.payment.create(payment_data).then(function (data) {
 
-}).catch(function(error) {
+}).catch(function (error) {
 
 });
-
 ```
 ```java
 PaymentClient client = new PaymentClient();
 
 PaymentCreateRequest paymentCreateRequest =
-PaymentCreateRequest.builder()
-.transactionAmount(new BigDecimal("100"))
-.description("Product Title")
-.paymentMethodId("bolbradesco")
-.dateOfExpiration(OffsetDateTime.of(2023, 1, 10, 10, 10, 10, 0, ZoneOffset.UTC))
-.payer(
-PaymentPayerRequest.builder()
-.email("test@test.com")
-.firstName("Test")
-.lastName("User")
-.identification(
-IdentificationRequest.builder().type("CPF").number("19119119100").build())
-.build())
-.build();
+   PaymentCreateRequest.builder()
+       .transactionAmount(new BigDecimal("100"))
+       .description("Product title")
+       .paymentMethodId("bolbradesco")
+       .dateOfExpiration(OffsetDateTime.of(2023, 1, 10, 10, 10, 10, 0, ZoneOffset.UTC))
+       .payer(
+           PaymentPayerRequest.builder()
+               .email("test@test.com")
+               .firstName("Test")
+               .lastName("User")
+               .identification(
+                   IdentificationRequest.builder().type("CPF").number("19119119100").build())
+               .build())
+       .build();
 
 client.create(paymentCreateRequest);
 ```
@@ -987,34 +989,32 @@ require 'mercadopago'
 sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
 payment_request = {
-transaction_amount: 100,
-description: 'Product title',
-payment_method_id: 'bolbradesco',
-payer: {
-email: 'test@test.com',
-first_name: 'Test',
-last_name: 'User',
-identification: {
-type: 'CPF',
-number: '19119119100',
-},
-address: {
-zip_code: '06233200',
-street_name: 'Avenida das Nações Unidas',
-street_number: '3003',
-neighborhood: 'Bonfim',
-city: 'Osasco',
-federal_unit: 'SP'
-}
-}
+  transaction_amount: 100,
+  description: 'Product title',
+  payment_method_id: 'bolbradesco',
+  payer: {
+    email: 'test@test.com',
+    first_name: 'Test',
+    last_name: 'User',
+    identification: {
+      type: 'DNI',
+      number: '19119119',
+    },
+    address: {
+      zip_code: '1264',
+      street_name: 'Av. Caseros',
+      street_number: '3039',
+      neighborhood: 'Parque Patricios',
+      city: 'Buenos Aires',
+      federal_unit: 'BA'
+    }
+  }
 }
 
 payment_response = sdk.payment.create(payment_request)
 payment = payment_response[:response]
-
 ```
 ```csharp
-
 using MercadoPago.Config;
 using MercadoPago.Client.Common;
 using MercadoPago.Client.Payment;
@@ -1024,51 +1024,50 @@ MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
 
 var request = new PaymentCreateRequest
 {
-TransactionAmount = 105,
-Description = "Product Title",
-PaymentMethodId = "bolbradesco",
-Payer = new PaymentPayerRequest
-{
-Email = "test@test.com",
-FirstName = "Test",
-LastName = "User",
-Identification = new IdentificationRequest
-{
-Type = "CPF",
-Number = "191191191-00",
-},
-},
+    TransactionAmount = 105,
+    Description = "Product title",
+    PaymentMethodId = "bolbradesco",
+    Payer = new PaymentPayerRequest
+    {
+        Email = "test@test.com",
+        FirstName = "Test",
+        LastName = "User",
+        Identification = new IdentificationRequest
+        {
+            Type = "DNI",
+            Number = "19119119",
+        },
+    },
 };
 
 var client = new PaymentClient();
 Payment payment = await client.CreateAsync(request);
-
 ```
 ```python
-import market
-sdk = Mercadopago.SDK("ENV_ACCESS_TOKEN")
+import mercadopago
+sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
 
 payment_data = {
-"transaction_amount": 100,
-"description": "Product title",
-"payment_method_id": "bolbradesco",
-"payer": {
-"email": "test@test.com",
-"first_name": "Test",
-"last_name": "User",
-"identification": {
-"type": "CPF",
-"number": "191191191-00"
-},
-"address": {
-"zip_code": "06233-200",
-"street_name": "Avenida das Nações Unidas",
-"street_number": "3003",
-"neighborhood": "Bonfim",
-"city": "Osasco",
-"federal_unit": "SP"
-}
-}
+    "transaction_amount": 100,
+    "description": "Product title",
+    "payment_method_id": "bolbradesco",
+    "payer": {
+        "email": "test@test.com",
+        "first_name": "Test",
+        "last_name": "User",
+        "identification": {
+            "type": "DNI",
+            "number": "19119119"
+        },
+        "address": {
+            "zip_code": "1264",
+            "street_name": "Av. Caseros",
+            "street_number": "3039",
+            "neighborhood": "Parque Patricios",
+            "city": "Buenos Aires",
+            "federal_unit": "BA"
+        }
+    }
 }
 
 payment_response = sdk.payment().create(payment_data)
@@ -1076,31 +1075,165 @@ payment = payment_response["response"]
 ```
 ```curl
 curl -X POST \
--H 'accept: application/json' \
--H 'content-type: application/json' \
--H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
-'https://api.mercadopago.com/v1/payments' \
--d '{
-"transaction_amount": 100,
-"description": "Product title",
-"payment_method_id": "bolbradesco",
-"payer": {
-"email": "test@test.com",
-"first_name": "Test",
-"last_name": "User",
-"identification": {
-"type": "CPF",
-"number": "19119119100"
-},
-"address": {
-"zip_code": "06233200",
-"street_name": "Avenida das Nações Unidas",
-"street_number": "3003",
-"neighborhood": "Bonfim",
-"city": "Osasco",
-"federal_unit": "SP"
-}
-}
-}'
+    -H 'accept: application/json' \
+    -H 'content-type: application/json' \
+    -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/payments' \
+    -d '{
+      "transaction_amount": 100,
+      "description": "Product title",
+      "payment_method_id": "bolbradesco",
+      "payer": {
+        "email": "test@test.com",
+        "first_name": "Test",
+        "last_name": "User",
+        "identification": {
+            "type": "DNI",
+            "number": "19119119"
+        },
+        "address": {
+            "zip_code": "1264",
+            "street_name": "Av. Caseros",
+            "street_number": "3039",
+            "neighborhood": "Parque Patricios",
+            "city": "Buenos Aires",
+            "federal_unit": "BA"
+        }
+      }
+    }'
 ```
 ]]]
+
+------------
+
+----[mla]----
+* For the endpoint `/process_payment_ticket`:
+
+[[[
+```php
+<?php
+ 
+ require_once 'vendor/autoload.php';
+ 
+ MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+ 
+ $payment = new MercadoPago\Payment();
+ $payment->transaction_amount = 100;
+ $payment->description = "Product title";
+ $payment->payment_method_id = "rapipago";
+ $payment->payer = array(
+     "email" => "test@test.com",
+   );
+ 
+ $payment->save();
+ 
+?>
+```
+```node
+var mercadopago = require('mercadopago');
+mercadopago.configurations.setAccessToken(config.access_token);
+ 
+var payment_data = {
+  transaction_amount: 100,
+  description: 'Product title',
+  payment_method_id: 'rapipago',
+  payer: {
+    email: 'test@test.com',
+  }
+};
+ 
+mercadopago.payment.create(payment_data).then(function (data) {
+ 
+}).catch(function (error) {
+ 
+});
+```
+```java
+PaymentClient client = new PaymentClient();
+ 
+PaymentCreateRequest paymentCreateRequest =
+   PaymentCreateRequest.builder()
+       .transactionAmount(new BigDecimal("100"))
+       .description("Product title")
+       .paymentMethodId("rapipago")
+       .dateOfExpiration(OffsetDateTime.of(2023, 1, 10, 10, 10, 10, 0, ZoneOffset.UTC))
+       .payer(
+           PaymentPayerRequest.builder()
+               .email("test@test.com")
+               .build())
+       .build();
+ 
+client.create(paymentCreateRequest);
+```
+```ruby
+require 'mercadopago'
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
+ 
+payment_request = {
+  transaction_amount: 100,
+  description: 'Product title',
+  payment_method_id: 'rapipago',
+  payer: {
+    email: 'test@test.com',
+  }
+}
+ 
+payment_response = sdk.payment.create(payment_request)
+payment = payment_response[:response]
+```
+```csharp
+using MercadoPago.Config;
+using MercadoPago.Client.Common;
+using MercadoPago.Client.Payment;
+using MercadoPago.Resource.Payment;
+ 
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
+ 
+var request = new PaymentCreateRequest
+{
+    TransactionAmount = 105,
+    Description = "Product title",
+    PaymentMethodId = "rapipago",
+    Payer = new PaymentPayerRequest
+    {
+        Email = "test@test.com",    
+    },
+};
+ 
+var client = new PaymentClient();
+Payment payment = await client.CreateAsync(request);
+```
+```python
+import mercadopago
+sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
+ 
+payment_data = {
+    "transaction_amount": 100,
+    "description": "Product title",
+    "payment_method_id": "rapipago",
+    "payer": {
+        "email": "test@test.com",
+    }
+}
+ 
+payment_response = sdk.payment().create(payment_data)
+payment = payment_response["response"]
+```
+```curl
+curl -X POST \
+    -H 'accept: application/json' \
+    -H 'content-type: application/json' \
+    -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/payments' \
+    -d '{
+      "transaction_amount": 100,
+      "description": "Product title",
+      "payment_method_id": "rapipago",
+      "payer": {
+        "email": "test@test.com",
+      }
+    }'
+```
+]]]
+
+------------

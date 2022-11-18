@@ -4,6 +4,7 @@ Puedes adaptar la integración de Payment Brick a tu modelo de negocio configura
 
 ----[mla, mlb]----
 Si ofreces compras de alto valor, por ejemplo, puedes aceptar [pagos con dos tarjetas de crédito](#bookmark_acepta_pagos_con_2_tarjetas_de_crédito) o [eliminar métodos de pago](#bookmark_define_los_medios_de_pago) no deseados para tu operación.
+
 ------------
 
 ----[mlm, mlc, mlu, mco, mpe]----
@@ -170,23 +171,33 @@ A través de la preferencia de pago, puedes configurar un método de pago por de
 
 ------------
 
-----[mla, mco, mlb, mlu, mlc, mpe]----
+----[mla]----
 | Atributo | Descripción |
 | --- | --- |
 | `payment_methods` | Clase que describe los métodos y atributos de medios de pago de Payment Brick. |
-| `excluded_payment_types` | Método que excluye tipos de medios de pago no deseados, como efectivo, tarjetas de crédito, o débito. |
-| `excluded_payment_methods` | Método que excluye marcas de tarjetas de crédito o débito, como Visa, Mastercard o American Express, entre otras. |
+| `excluded_payment_types` | Método que excluye tipos de medios de pago no deseados, como efectivo, tarjetas de crédito o débito, Rapipago, Pago Fácil, entre otras. |
+| `excluded_payment_methods` | Método que excluye marcas de tarjetas de crédito o débito, como Visa, Mastercard o American Express, entre otras.|
 | `installments` | Método que define la cantidad de cuotas máximas a ofrecer. |
 | `purpose` | Al indicar el valor `wallet_purchase` en este método, Payment Brick solo aceptará pagos de usuarios registrados en Mercado Pago, con tarjeta y saldo de cuenta. |
 ------------
 
-----[mlm]----
+----[mlb]----
 | Atributo | Descripción |
 | --- | --- |
 | `payment_methods` | Clase que describe los métodos y atributos de medios de pago de Payment Brick. |
-| `excluded_payment_types` | Método que excluye tipos de medios de pago no deseados, como efectivo, tarjetas de crédito, o débito. |
-| `excluded_payment_methods` | Método que excluye marcas de tarjetas de crédito o débito, como Visa, Mastercard o American Express, entre otras. |
-| `installments` | Método que define la cantidad de mensualidades máximas a ofrecer. |
+| `excluded_payment_types` | Método que excluye tipos de medios de pago no deseados, como efectivo, tarjetas de crédito o débito, ticket (boleto o o pago en agencia de lotería), entre otras. |
+| `excluded_payment_methods` | Método que excluye marcas de tarjetas de crédito o débito, como Visa, Mastercard o American Express, entre otras.|
+| `installments` | Método que define la cantidad de cuotas máximas a ofrecer. |
+| `purpose` | Al indicar el valor `wallet_purchase` en este método, Payment Brick solo aceptará pagos de usuarios registrados en Mercado Pago, con tarjeta y saldo de cuenta. |
+------------
+
+----[mlm, mlc, mco, mpe, mlu]----
+| Atributo | Descripción |
+| --- | --- |
+| `payment_methods` | Clase que describe los métodos y atributos de medios de pago de Payment Brick. |
+| `excluded_payment_types` | Método que excluye tipos de medios de pago no deseados, como efectivo, tarjetas de crédito o débito, entre otras. |
+| `excluded_payment_methods` | Método que excluye marcas de tarjetas de crédito o débito, como Visa, Mastercard o American Express, entre otras.|
+| `installments` | Método que define la cantidad de cuotas máximas a ofrecer. |
 | `purpose` | Al indicar el valor `wallet_purchase` en este método, Payment Brick solo aceptará pagos de usuarios registrados en Mercado Pago, con tarjeta y saldo de cuenta. |
 ------------
 

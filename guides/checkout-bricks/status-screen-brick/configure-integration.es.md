@@ -4,8 +4,8 @@ Para configurar la integración de Status Screen Brick, debes seguir los pasos a
 
 1. [Crear container](#bookmark_crear_container)
 2. [Incluir y configurar la librería MercadoPago.js](#bookmark_incluir_y_configurar_la_librería_mercadopago.js)
-3. [Instanciar brick](#bookmark_instanciar_brick)
-4. [Renderizar brick](#bookmark_renderizar_brick)
+3. [Instanciar Brick](#bookmark_instanciar_brick)
+4. [Renderizar Brick](#bookmark_renderizar_brick)
 
 > Los pasos se realizan en el backend o frontend. Las etiquetas **Client-Side** y **Server-Side** ubicadas inmediatamente al lado del título lo ayudan a identificar qué paso se realiza en qué instancia. <br/></br>
 > <br/></br>
@@ -17,7 +17,7 @@ Para configurar la integración de Status Screen Brick, debes seguir los pasos a
 >
 > Crear container
 
-Deberás crear un container para definir dónde se colocará el brick en la pantalla. La creación del container se realiza insertando un elemento (por ejemplo, un div) en el código HTML de la página en la que se renderizará el brick (ver el código a continuación).
+Deberás crear un container para definir dónde se colocará el Brick en la pantalla. La creación del container se realiza insertando un elemento (por ejemplo, un div) en el código HTML de la página en la que se renderizará el Brick (ver el código a continuación).
 
 > NOTE
 >
@@ -59,9 +59,9 @@ const mp = new MercadoPago('YOUR_PUBLIC_KEY');
 >
 > h2
 >
-> Instanciar brick
+> Instanciar Brick
 
-Con el container creado y la SDK JS instalada, el siguiente paso es instanciar el brick builder, que permitirá generar el brick. Para crear la instancia, inserta el código a continuación del paso anterior.
+Con el container creado y la SDK JS instalada, el siguiente paso es instanciar el Brick builder, que permitirá generar el Brick. Para crear la instancia, inserta el código a continuación del paso anterior.
 
 ```javascript
 const bricksBuilder = mp.bricks();
@@ -71,17 +71,17 @@ const bricksBuilder = mp.bricks();
 >
 > Atención
 >
-> Durante la instanciación del brick, es posible que aparezcan diferentes errores. Para más detalles sobre cada uno de ellos, consulta la sección [Posibles errores](/developers/es/docs/checkout-bricks/additional-content/possible-errors).
+> Durante la instanciación del Brick, es posible que aparezcan diferentes errores. Para más detalles sobre cada uno de ellos, consulta la sección [Posibles errores](/developers/es/docs/checkout-bricks/additional-content/possible-errors).
 
 > CLIENT_SIDE
 >
 > h2
 >
-> Renderizar brick
+> Renderizar Brick
 
-Una vez instanciado el builder, nuestro brick puede ser renderizado y tener todas sus configuraciones compiladas para que la estructura final sea generada.
+Una vez instanciado el builder, nuestro Brick puede ser renderizado y tener todas sus configuraciones compiladas para que la estructura final sea generada.
 
-Para renderizar el brick, inserta el código a continuación del paso anterior y completa los atributos de acuerdo con los comentarios destacados en este mismo código.
+Para renderizar el Brick, inserta el código a continuación del paso anterior y completa los atributos de acuerdo con los comentarios destacados en este mismo código.
 
 ```javascript
 const renderStausScreenBrick = async (bricksBuilder) => {
@@ -109,9 +109,9 @@ renderStausScreenBrick(bricksBuilder);
 
 > El `paymentId` que se debe enviar a Brick para su inicialización es el id devuelto por la API de [Pagos](/developers/es/reference/payments/_payments/post) al generar un pago con Mercado Pago.
 
-El resultado de renderizar el brick debe ser como la imagen de abajo:
+El resultado de renderizar el Brick debe ser como la imagen de abajo:
 
-![status-screen-brick](checkout-bricks/status-screen-brick-es.jpg)
+![status-screen-Brick](checkout-bricks/status-screen-brick-es.jpg)
 
 > NOTE
 >

@@ -48,7 +48,7 @@ Luego, necesitarás crear una aplicación para obtener las credenciales. Es fác
 >
 > Nota
 >
-> Si vas a operar en nombre de otros vendedores, puedes gestionar la vinculación de manera segura integrando [OAuth.](/developers/es/docs/mp-point/additional-content/security/oauth/introduction)
+> Si vas a operar en nombre de otros vendedores, puedes gestionar la vinculación de manera segura integrando [OAuth.](/developers/es/docs/seguridad/additional-content/security/oauth/introduction)
 
 ### Accede a las credenciales de tu aplicación
 
