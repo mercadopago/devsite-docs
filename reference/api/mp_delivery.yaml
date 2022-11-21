@@ -10,11 +10,23 @@ paths:
       tags:
         - $ref: '#/tags/mp-delivery'
       summary: Get order by shipment ID
-      description: Retrieve the information of an order by its shipment ID.
+      x-summary-i18n:
+        eng: Get order by shipment ID
+        spa: Consultar pedido por ID
+        por: Consultar pedido por ID
+      description: Retrieve the information of an order by its shipment ID
+      x-description-i18n:
+        eng: Retrieve the information of an order by its shipment ID
+        spa: Consulta las informaciones de un pedido por su shipment ID
+        por: Consulta as informações de um pedido através do shipment ID
       parameters:
         - name: shipment_id
           in: path
           description: Shipment ID of the order.
+          x-description-i18n:
+            eng: Shipment ID of the order.
+            spa: Shipment ID del pedido.
+            por: Shipment ID do pedido.
           required: true
           schema:
             type: string
@@ -24,17 +36,25 @@ paths:
           description: Success
           content:
             application/json:
-               schema:          
+              schema:          
                 type: object
                 properties:
                   id:
                     type: string
                     example: "41034141533"
                     description: Shipment ID of the order.
+                    x-description-i18n:
+                      eng: Shipment ID of the order.
+                      spa: Shipment ID del pedido.
+                      por: Shipment ID do pedido.
                   type:
                     type: string
                     example: "DELIVERY"
                     description: This field refers to the way in which the order will be delivered.
+                    x-description-i18n:
+                      eng: This field refers to the way in which the order will be delivered.
+                      spa: Este campo hace referencia a la forma en que se entregará el pedido.
+                      por: Esse campo faz referência sobre a forma de como será entregue o pedido.
                     enum:
                       - DELIVERY -- the restaurant will be responsible for delivering the order.
                       - TAKEOUT -- the buyer will pick up the order from the restaurant.
@@ -42,33 +62,65 @@ paths:
                     type: string
                     example: "9129"
                     description: Order Id shown in the Ordering Application interface for the Buyer.
+                    x-description-i18n:
+                      eng: Order Id shown in the Ordering Application interface for the Buyer.
+                      spa: ID de pedido que se muestra en la interfaz de la aplicación de pedidos para el comprador.
+                      por: ID de pedido que aparece na interface da aplicação de pedidos para o comprador.
                   createdAt:
                     type: string
                     example: "2022-02-16T21:20:15.227Z"
                     description: Order creation time (UTC date-time in ISO timestamp format).
+                    x-description-i18n:
+                      eng: Order creation time (UTC date-time in ISO timestamp format).
+                      spa: Hora de creación del pedido (UTC date-time in ISO timestamp format).
+                      por: Hora de criação do pedido (UTC date-time in ISO timestamp format).
                   orderTiming:
                     type: string
                     example: "INSTANT"
                     description: Scheduled time to start preparing an order. By now, only the start immediately is implemented, and the value of this field will always be INSTANT.
+                    x-description-i18n:
+                      eng: Scheduled time to start preparing an order. By now, only the start immediately is implemented, and the value of this field will always be INSTANT.
+                      spa: Hora prevista para empezar a preparar un pedido. Por ahora, solo se implementa el inicio inmediato, y el valor de este campo siempre será INSTANT.
+                      por: Hora agendada para começar a preparar um pedido. Até agora, apenas o início imediato está implementado, e o valor deste campo será sempre INSTANT.
                   preparationStartDateTime: 
                     type: string
                     example: "2022-02-16T21:20:47.755Z"
                     description: Value referring to the start of preparation of an order. For now, the value contained in this field will be the time when the order changed its state to ready_to_ship/ready_to_print. UTC date-time in ISO timestamp format. 
+                    x-description-i18n:
+                      eng: Value referring to the start of preparation of an order. For now, the value contained in this field will be the time when the order changed its state to ready_to_ship/ready_to_print. (UTC date-time in ISO timestamp format).
+                      spa: Valor referente al inicio de preparación de un pedido. Por ahora, el valor contenido en este campo será el momento en que el pedido cambió su estado a ready_to_ship/ready_to_print. (UTC date-time in ISO timestamp format).
+                      por: Valor referente ao início da preparação de um pedido. Por enquanto, o valor contido neste campo será o momento em que o pedido mudou seu estado para ready_to_ship/ready_to_print. (UTC date-time in ISO timestamp format).
                   merchant:
                     type: object
                     description: Informations about the seller.
+                    x-description-i18n:
+                      eng: Informations about the seller.
+                      spa: Informaciones sobre el seller.
+                      por: Informações sobre o seller.
                     properties:
                       id: 
                         type: string
                         example: "1070421029"
                         description: User ID of the restaurant account linked to Mercado Pago.
+                        x-description-i18n:
+                          eng: User ID of the restaurant account linked to Mercado Pago.
+                          spa: ID de usuario de la cuenta del restaurante vinculada a Mercado Pago.
+                          por: ID de usuário da conta do restaurante vinculada ao Mercado Pago.
                       name: 
                         type: string
                         example: Doc's Store
                         description: Name of the restaurant.
+                        x-description-i18n:
+                          eng: Name of the restaurant.
+                          spa: Nombre del restaurante.
+                          por: Nome do restaurante.
                   items:
                     type: array
                     description: Array of objects that contain the item information for an order.
+                    x-description-i18n:
+                      eng: Array of objects that contain the item information for an order.
+                      spa: Array de objetos que contienen la información del item para un pedido.
+                      por: Array de objetos que contêm as informações do item para um pedido.
                     items:
                       type: object
                       properties:
@@ -80,25 +132,49 @@ paths:
                           type: string
                           example: "Burrito Combo Refrigerante"
                           description: Name of the item.
+                          x-description-i18n:
+                            eng: Name of the item.
+                            spa: Nombre del item.
+                            por: Nome do item.
                         externalCode:
                           type: string
                           example: "1215451"
                           description: External code for an item which can be used by point of sale.
+                          x-description-i18n:
+                            eng: External code for an item which can be used by point of sale.
+                            spa: Código externo de un artículo que puede ser utilizado por punto de venta.
+                            por: Código externo para um item que pode ser usado pelo ponto de venda.
                         unit: 
                           type: string
                           example: "UNIT"
-                          description: Measure unit of the item. By now, only the UNIT value is available
+                          description: Measure unit of the item. By now, only the UNIT value is available.
+                          x-description-i18n:
+                            eng: Measure unit of the item. By now, only the UNIT value is available.
+                            spa: Unidad de medida del item. Por ahora, solo el valor UNIT está disponible.
+                            por: Unidade de medida do item. Até agora, apenas o valor UNIT está disponível.
                         quantity:
                           type: number
                           example: 2
                           description: The quantity of the item.
+                          x-description-i18n:
+                            eng: The quantity of the item.
+                            spa: La cantidad del item.
+                            por: Quantidade do item.
                         specialInstructions:
                           type: string
                           example: "No quiero cebolla."
                           description: Comment about the ordered item inserted by the buyer.
+                          x-description-i18n:
+                            eng: Comment about the ordered item inserted by the buyer.
+                            spa: Comentario sobre el item pedido insertado por el comprador.
+                            por: Comentário sobre o item pedido inserido pelo comprador.
                         options:
                           type: array
                           description: Field referring to the complements of an item. If the ordered item has no complements, this field will be empty.
+                          x-description-i18n:
+                            eng: Field referring to the complements of an item. If the ordered item has no complements, this field will be empty.
+                            spa: Campo referente a los complementos de un item. Si el item pedido no tiene complementos, este campo estará vacío.
+                            por: Campo referente aos complementos de um item. Se o item pedido não tiver complementos, este campo ficará vazio.
                           items:
                             type: object
                             properties:
@@ -106,46 +182,90 @@ paths:
                                 type: string
                                 example: "MLA1122707065"
                                 description: ID of the complement item.
+                                x-description-i18n:
+                                  eng: ID of the complement item.
+                                  spa: ID del item del complemento.
+                                  por: ID do item complementar.
                               name: 
                                 type: string
                                 example: "Soda"
                                 description: Name of the complement item.
+                                x-description-i18n:
+                                  eng: Name of the complement item.
+                                  spa: Nombre del item del complemento.
+                                  por: Nome do item complementar.
                               externalCode:
                                 type: string
                                 example: "151545"
                                 description: External code for a complement item which can be used by a point of sale.
+                                x-description-i18n:
+                                  eng: External code for a complement item which can be used by a point of sale.
+                                  spa: Código externo del item de complemento que puede ser utilizado por un punto de venta.
+                                  por: Código externo para um item complementar que pode ser usado por um ponto de venda.
                               unit:
                                 type: string
                                 example: "UNIT"
-                                description: Measure unit of the complement item. By now, only the UNIT value is available
+                                description: Measure unit of the complement item. By now, only the UNIT value is available.
+                                x-description-i18n:
+                                  eng: Measure unit of the complement item. By now, only the UNIT value is available.
+                                  spa: Unidad de medida del item del complemento. Por ahora, solo el valor UNIT está disponible.
+                                  por: Unidade de medida do item complementar. Até agora, apenas o valor UNIT está disponível.
                               quantity:
                                 type: number
                                 example: 2
                                 description: The quantity of the complement item.
+                                x-description-i18n:
+                                  eng: The quantity of the complement item.
+                                  spa: La cantidad del item complementario.
+                                  por: A quantidade do item complementar.
                               unitPrice:
                                 type: object
                                 description: Unit price of a complement item.
+                                x-description-i18n:
+                                  eng: Unit price of a complement item.
+                                  spa: Precio unitario de un item de complemento.
+                                  por: Preço unitário de um item complementar.
                                 properties:
                                   value:
                                     type: number
                                     example: 100.0
                                     description: Unit price of a complement item.
+                                    x-description-i18n:
+                                      eng: Unit price of a complement item.
+                                      spa: Precio unitario de un item de complemento.
+                                      por: Preço unitário de um item complementar.
                                   currency:
                                     type: string
                                     example: "ARS"
                                     description: Currency related to price.
+                                    x-description-i18n:
+                                      eng: Unit price of a complement item.
+                                      spa: Moneda relacionada con el precio.
+                                      por: Moeda relacionada ao preço.
                               totalPrice:
                                 type: object
                                 description: The total price of a complement item.
+                                x-description-i18n:
+                                  eng: The total price of a complement item.
+                                  spa: El precio total de un item de complemento.
+                                  por: O preço total de um item complementar.
                                 properties: 
                                   value: 
                                     type: number
                                     example: 200.0
                                     description: The total price of a complement item (unitPrice * quantity).
+                                    x-description-i18n:
+                                      eng: The total price of a complement item (unitPrice * quantity).
+                                      spa: El precio total de un artículo de complemento (unitPrice * quantity).
+                                      por: O preço total de um item complementar (unitPrice * quantity).
                                   currency:
                                     type: string
                                     example: "ARS"
                                     description: Currency related to price.
+                                    x-description-i18n:
+                                      eng: Currency related to price.
+                                      spa: Moneda relacionada con el precio.
+                                      por: Moeda relacionada ao preço.
                               extension:
                                 type: object
                                 properties:
@@ -153,42 +273,82 @@ paths:
                                     type: string
                                     example: "Combo with soda"
                                     description: Name of the group that the complement item selected belongs to.
+                                    x-description-i18n:
+                                      eng: Name of the group that the complement item selected belongs to.
+                                      spa: Nombre del grupo al que pertenece el complemento seleccionado.
+                                      por: Nome do grupo ao qual pertence o item de complemento selecionado.
                         unitPrice:
                           type: object
                           description: Unit price of the selected item.
+                          x-description-i18n:
+                            eng: Unit price of the selected item.
+                            spa: Precio unitario del item seleccionado.
+                            por: Preço unitário do item selecionado.
                           properties:
                             value:
                               type: number
                               example: 300.0
                               description: Unit price of the selected item.
+                              x-description-i18n:
+                                eng: Unit price of the selected item.
+                                spa: Precio unitario del item seleccionado.
+                                por: Preço unitário do item selecionado.
                             currency: 
                               type: string
                               example: "ARS"
                               description: Currency related to price.
+                              x-description-i18n:
+                                eng: Currency related to price.
+                                spa: Moneda relacionada con el precio.
+                                por: Moeda relacionada ao preço.
                         optionsPrice:
                           type: object
                           description: Sum of the prices of the complements of an item.
+                          x-description-i18n:
+                            eng: Sum of the prices of the complements of an item.
+                            spa: Suma de los precios de los complementos de un item.
+                            por: Soma dos preços dos complementos de um item.
                           properties:
                             value:
                               type: number
                               example: 200.0
                               description: Sum of the prices of the complements of an item.
+                              x-description-i18n:
+                                eng: Sum of the prices of the complements of an item.
+                                spa: Suma de los precios de los complementos de un item.
+                                por: Soma dos preços dos complementos de um item.
                             currency: 
                               type: string
                               example: "ARS"
                               description: Currency related to price.
+                              x-description-i18n:
+                                eng: Currency related to price.
+                                spa: Moneda relacionada con el precio.
+                                por: Moeda relacionada ao preço.
                         totalPrice:
                           type: object
                           description: Total price of an item, considering its quantity and complements.
+                          x-description-i18n:
+                            eng: Total price of an item, considering its quantity and complements.
+                            spa: Precio total de un item, considerando su cantidad y complementos.
+                            por: Preço total de um item, considerando sua quantidade e complementos.
                           properties:
                             value:
                               type: number
                               example: 1000.0
                               description: Total price of an item, considering its quantity and complements ((unityPrice + optionsPrice) * quantity).
+                              x-description-i18n:
+                                eng: Total price of an item, considering its quantity and complements ((unityPrice + optionsPrice) * quantity).
+                                spa: Precio total de un item, considerando su cantidad y complementos ((unityPrice + optionsPrice) * quantity).
+                                por: Precio total de un artículo, considerando su cantidad y complementos ((unityPrice + optionsPrice) * quantity).
                             currency: 
                               type: string
                               example: "ARS"
                               description: Currency related to price.
+                              x-description-i18n:
+                                eng: Currency related to price.
+                                spa: Moneda relacionada con el precio.
+                                por: Moeda relacionada ao preço.
                         extension:
                           type: object
                           description: Additional information about the item
@@ -196,18 +356,34 @@ paths:
                             unitNetPrice:
                               type: object
                               description: In case of the product have a discount, this field will show the information of the value of the product with the applied discount
+                              x-description-i18n:
+                                eng: In case of the product have a discount, this field will show the information of the value of the product with the applied discount
+                                spa: En caso de que el producto tenga descuento, este campo mostrará la información del valor del producto con el descuento aplicado.
+                                por: Caso o produto tenha desconto, este campo mostrará a informação do valor do produto com o desconto aplicado.
                               properties:
                                 value:
                                   type: number
                                   example: 1000.0
-                                  description: Value of the product with discount
+                                  description: Value of the product with discount.
+                                  x-description-i18n:
+                                    eng: Value of the product with discount.
+                                    spa: Valor del producto con descuento.
+                                    por: Valor do produto com desconto.
                                 currency:
                                   type: string
                                   example: "ARS"
                                   description: Currency related to price.
+                                  x-description-i18n:
+                                    eng: Currency related to price.
+                                    spa: Moneda relacionada con el precio.
+                                    por: Moeda relacionada ao preço.
                   otherFees:
                     type: array
                     description: Array of objects with amounts of fees charged by the order. Fees like shipping and operation of the marketplace are included.
+                    x-description-i18n:
+                      eng: Array of objects with amounts of fees charged by the order. Fees like shipping and operation of the marketplace are included.
+                      spa: Array de objetos con montos de tarifas cobradas por el pedido. Se incluyen tarifas como el envío y el tarifas del marketplace.
+                      por: Array de objetos com valores de taxas cobradas pelo pedido. Taxas como frete e operação do marketplace estão incluídas.
                     items:
                       type: object
                       properties:
@@ -215,10 +391,18 @@ paths:
                           type: string
                           example: "Name of the Fee"
                           description: Name of the Fee.
+                          x-description-i18n:
+                            eng: Name of the fee.
+                            spa: Nombre de la tarifa.
+                            por: Nome da taxa.
                         type:
                           type: string
                           example: "DELIVERY_FEE"
                           description: Field that specifies the type of the fee. 
+                          x-description-i18n:
+                            eng: Field that specifies the type of the fee.
+                            spa: Campo que especifica el tipo de tarifa.
+                            por: Campo que especifica o tipo de taxa.
                           enum: 
                             - DELIVERY_FEE -- fee charged for shipping the product.
                             - SERVICE_FEE -- fee for the using of Marketplace
@@ -227,6 +411,10 @@ paths:
                           type: string
                           example: "MERCHANT"
                           description: Field that specifies who will receive the fee amount. 
+                          x-description-i18n:
+                            eng: Field that specifies who will receive the fee amount.
+                            spa: Campo que especifica quién recibirá el monto de la tarifa.
+                            por: Campo que especifica quem receberá o valor da taxa.
                           enum: 
                             - MERCHANT -- the fee amount that will be received by the merchant.
                             - MARKETPLACE -- the fee amount that will be received by the marketplace.
@@ -235,6 +423,10 @@ paths:
                           type: string
                           example: "3124123141"
                           description: Document of the amount fee receiver.
+                          x-description-i18n:
+                            eng: Document of receiver of the fee amount.
+                            spa: Documento del receptor del importe de la tarifa.
+                            por: Documento do destinatário do valor da taxa.
                         price: 
                           type: object
                           properties:
@@ -242,13 +434,25 @@ paths:
                               type: number
                               example: 119.0
                               description: Price of the fee.
+                              x-description-i18n:
+                                eng: Price of the fee.
+                                spa: Precio de la tarifa.
+                                por: Preço da taxa.
                             currency:
                               type: string
                               example: "ARS"
                               description: Currency related to price. 
+                              x-description-i18n:
+                                eng: Currency related to price. 
+                                spa: Moneda relacionada con el precio.
+                                por: Moeda relacionada com o preço.
                   discounts:
                     type: array
                     description: Information about the discounts that can be applied on cart, items or on delivery fee.
+                    x-description-i18n:
+                      eng: Information about the discounts that can be applied on cart, items or on delivery fee.
+                      spa: Información sobre los descuentos que se pueden aplicar en carrito, artículos o en gastos de envío.
+                      por: Informações sobre os descontos que podem ser aplicados no carrinho, itens ou na taxa de entrega.
                     items:
                       type: object
                       properties:
@@ -258,15 +462,27 @@ paths:
                             value:
                               type: number
                               example: 119.0
-                              description: Price of discount.
+                              description: Value of discount.
+                              x-description-i18n:
+                                eng: Value of discount.
+                                spa: Valor de descuento.
+                                por: Valor do desconto.
                             currency:
                               type: string
                               example: "ARS"
                               description: Currency related to value.
+                              x-description-i18n:
+                                eng: Currency related to price. 
+                                spa: Moneda relacionada con el precio.
+                                por: Moeda relacionada com o preço.
                         target:
                           type: string
                           example: "ITEM"
                           description: Where the discount will be applied. 
+                          x-description-i18n:
+                            eng: Where the discount will be applied. 
+                            spa: Donde se aplicará el descuento.
+                            por: Onde o desconto será aplicado.
                           enum: 
                             - CART -- The discount wil be applied on the cart.
                             - DELIVERY_FEE -- The discount will be applied on the delivery fee.
@@ -275,9 +491,17 @@ paths:
                           type: string
                           example: "MLA1122759502"
                           description: If the target of the discount is an Item, this field will show the ID of the Item that the discount has been applied.
+                          x-description-i18n:
+                            eng: If the target of the discount is an Item, this field will show the ID of the Item that the discount has been applied.
+                            spa: Si el destino del descuento es un item, este campo mostrará el ID del item al que se le ha aplicado el descuento.
+                            por: Se o alvo do desconto for um item, este campo mostrará o ID do item ao qual o desconto foi aplicado.
                         sponsorshipValues:
                           type: array
-                          description: 	Values sponsored by either party. The sum of the amounts listed in this atribute must match the value informed in the amount atribute above.
+                          description: Values sponsored by either party. The sum of the amounts listed in this attribute must match the value informed in the amount atribute above.
+                          x-description-i18n:
+                            eng: Values sponsored by either party. The sum of the amounts listed in this attribute must match the value informed in the amount atribute above.
+                            spa: Valores patrocinados por cualquiera de las partes. La suma de los montos listados en este atributo debe coincidir con el valor informado en el atributo monto anterior.
+                            por: Valores patrocinados por qualquer uma das partes. A soma dos valores listados neste atributo deve corresponder ao valor informado no atributo quantidade acima.
                           items:
                             type: object
                             properties:
@@ -285,6 +509,10 @@ paths:
                                 type: string
                                 example: "MARKETPLACE"
                                 description: Who sponsored the discount.
+                                x-description-i18n:
+                                  eng: Who sponsored the discount.
+                                  spa: Quién patrocinó el descuento.
+                                  por: Quem patrocinou o desconto.
                                 enum:
                                   - MARKETPLACE -- The Marketplace will sponsor the discount.
                                   - MERCHANT -- The Merchant will sponsor the discount.
@@ -294,125 +522,237 @@ paths:
                                   value:
                                     type: number
                                     example: 119.0
-                                    description: Price of discount.
+                                    description: Value of the discount.
+                                    x-description-i18n:
+                                      eng: Value of the discount.
+                                      spa: valor del descuento.
+                                      por: Quem patrocinou o desconto.
                                   currency:
                                     type: string
                                     example: "ARS"
-                                    description: Currency related to value. 
+                                    description: Currency related to value.
+                                    x-description-i18n:
+                                      eng: Currency related to value. 
+                                      spa: Moneda relacionada con el valor.
+                                      por: Moeda relacionada ao valor.
                         extension:
                           type: object
-                          description: Discount coupon information
+                          description: Discount coupon information.
+                          x-description-i18n:
+                            eng: Discount coupon information. 
+                            spa: Información de cupones de descuento.
+                            por: Informações do cupom de desconto.
                           properties:
                             id:
                               type: string
                               example: "21515164-001"
-                              description: ID of the coupon
+                              description: ID of the coupon.
+                              x-description-i18n:
+                                eng: ID of the coupon. 
+                                spa: ID del cupón.
+                                por: ID do cupom.
                             name:
                               type: string
                               example: "coupon_off"
-                              description: Name fo the coupon
+                              description: Name of the coupon.
+                              x-description-i18n:
+                                eng: ID of the coupon. 
+                                spa: ID del cupón.
+                                por: Nome do cupom.
                   total:
                     type: object
-                    description: Object that contains information about all amounts charged
+                    description: Object that contains information about all amounts charged.
+                    x-description-i18n:
+                      eng: Object that contains information about all amounts charged. 
+                      spa: Objeto que contiene información sobre todos los montos cobrados.
+                      por: Objeto que contém informações sobre todos os valores cobrados.
                     properties:
                       itemsPrice:
                         type: object
                         description: Total price of the selected items.
+                        x-description-i18n:
+                          eng: Total price of the selected items. 
+                          spa: Precio total de los artículos seleccionados.
+                          por: Preço total dos itens selecionados.
                         properties: 
                           value: 
                             type: number
                             example: 1000.0
                             description: Total price of the selected items.
+                            x-description-i18n:
+                              eng: Total price of the selected items. 
+                              spa: Precio total de los artículos seleccionados.
+                              por: Preço total dos itens selecionados.
                           currency:
                             type: string
                             example: "ARS"
                             description: Currency related to price.
+                            x-description-i18n:
+                              eng: Currency related to price. 
+                              spa: Moneda relacionada con el precio.
+                              por: Moeda relacionada ao preço.
                       otherFees:
                         type: object
                         description: Sum of all fees.
+                        x-description-i18n:
+                          eng: Sum of all fees.
+                          spa: Suma de todas las tarifas.
+                          por: Soma de todas as taxas.
                         properties: 
                           value: 
                             type: number
                             example: 119.0
                             description: Sum of all fees.
+                            x-description-i18n:
+                              eng: Sum of all fees.
+                              spa: Suma de todas las tarifas.
+                              por: Soma de todas as taxas.
                           currency:
                             type: string
                             example: "ARS"
-                            description: Currency related to price.
+                            description: Currency related to value of sum of all fees.
+                            x-description-i18n:
+                              eng: Currency related to value of sum of all fees.
+                              spa: Moneda relacionada con el valor de la suma de todas las tarifas.
+                              por: Moeda relacionada ao valor da soma de todas as tarifas.
                       discount:
                         type: object
                         description: Sum of all discounts.
+                        x-description-i18n:
+                          eng: Sum of all discounts.
+                          spa: Suma de todos los descuentos.
+                          por: Soma de todos os descontos.
                         properties: 
                           value: 
                             type: number
                             example: 0.0
                             description: Sum of all discounts.
+                            x-description-i18n:
+                              eng: Sum of all discounts.
+                              spa: Suma de todos los descuentos.
+                              por: Soma de todos os descontos.
                           currency:
                             type: string
                             example: "ARS"
                             description: Currency related to price. 
+                            x-description-i18n:
+                              eng: Currency related to value of sum of all discounts.
+                              spa: Moneda relacionada con el valor de la suma de todas los descuentos.
+                              por: Moeda relacionada ao valor da soma de todas os descontos.
                       orderAmount:
                         type: object
                         description: Total value paid on the order.
+                        x-description-i18n:
+                          eng: Total value paid on the order.
+                          spa: Valor total pagado en el pedido.
+                          por: Valor total pago no pedido.
                         properties: 
                           value: 
                             type: number
                             example: 1119.0
                             description: Total value paid on the order (itemsPrice + otherFees - discounts).
+                            x-description-i18n:
+                              eng: Total value paid on the order (itemsPrice + otherFees - discounts).
+                              spa: Valor total pagado en el pedido (itemsPrice + otherFees - discounts).
+                              por: Valor total pago no pedido (itemsPrice + otherFees - discounts).
                           currency:
                             type: string
                             example: "ARS"
                             description: Currency related to price.
+                            x-description-i18n:
+                              eng: Currency related to price paid.
+                              spa: Moneda relacionada con el valor pagado.
+                              por: Moeda relacionada ao valor que foi pago.
                   payments:
                     type: object
                     description: Payment method information.
                     x-description-i18n:
                       eng: Payment method information.
-                      spa: Información de los medios de pago
-                      por: Informação dos meios de pagamento
+                      spa: Información de los medios de pago.
+                      por: Informação dos meios de pagamento.
                     properties:
                       prepaid:
                         type: number
                         description: Amount that has already been paid.
+                        x-description-i18n:
+                          eng: Amount that has already been paid.
+                          spa: Cantidad que ya ha sido pagada.
+                          por: Valor já pago.
                         example: 1119.0
                       pending:
                         type: number
                         description: Amount for which payment is still pending.
+                        x-description-i18n:
+                          eng: Amount for which payment is still pending.
+                          spa: Importe cuyo pago aún está pendiente.
+                          por: Valor para o qual o pagamento ainda está pendente.
                         example: 0
                       methods:
                         type: array
                         description: Payment methods used.
+                        x-description-i18n:
+                          eng: Payment methods used.
+                          spa: Métodos de pago utilizados.
+                          por: Métodos de pagamento utilizados.
                         items:
                           type: object
                           properties:
                             value:
                               type: number
                               description: Value paid.
+                              x-description-i18n:
+                                eng: Value paid.
+                                spa: Valor pagado.
+                                por: Valor pago.
                             currency:
                               type: string
                               example: "ARS"
                               description: Currency related to the payment.
+                              x-description-i18n:
+                                eng: Currency related to the payment.
+                                spa: Moneda relacionada con el pago.
+                                por: Moeda relacionada ao pagamento.
                             type:
                               type: string
                               description: Time when the payment was or will be made. By now, the only possible value for this field is PREPAID.
+                              x-description-i18n:
+                                eng: Time when the payment was or will be made. By now, the only possible value for this field is PREPAID.
+                                spa: Hora en que se efectuó o se realizará el pago. Por ahora, el único valor posible para este campo es PREPAID.
+                                por: Hora em que o pagamento foi ou será feito. Até agora, o único valor possível para este campo é PREPAID.
                               example: "PREPAID"
                             method:
                               type: string
                               description: Method used for payment.
+                              x-description-i18n:
+                                eng: Method used for payment.
+                                spa: Método utilizado para el pago.
+                                por: Método utilizado para pagamento.
                               enum:
                                 - DIGITAL_WALLET -- amount paid using the Digital Wallet of Mercado Pago.
                               example: "DIGITAL_WALLET"
                   customer:
                     type: object
                     description: Information about the buyer.
+                    x-description-i18n:
+                      eng: Information about the buyer.
+                      spa: Información sobre el comprador.
+                      por: Informações sobre o comprador.
                     properties:
                       id:
                         type: string
                         description: User ID of the buyer.
+                        x-description-i18n:
+                          eng: User ID of the buyer.
+                          spa: ID de usuario del comprador.
+                          por: ID de usuário do comprador.
                         example: "1071059933"
                       name:
                         type: string
                         description: Name of the buyer.
+                        x-description-i18n:
+                          eng: Name of the buyer.
+                          spa: Nombre del comprador.
+                          por: Nome do comprador.
                         example: "Test User"
                       phone:
                         type: object
@@ -420,18 +760,34 @@ paths:
                           number:
                             type: string
                             description: Buyer´s phone number.
+                            x-description-i18n:
+                              eng: Buyer´s phone number.
+                              spa: Número de teléfono del comprador.
+                              por: Número de telefone do comprador.
                             example: "011 123456789"
                       documentNumber:
                         type: string
                         description: Buyer´s ID number.
+                        x-description-i18n:
+                          eng: Buyer´s ID number.
+                          spa: Número de identificación del comprador.
+                          por: Número de identificação do comprador.
                         example: "2731234567894"
                   delivery:
                     type: object
                     description: Information about the location where the order should be delivered.
+                    x-description-i18n:
+                      eng: Information about the location where the order should be delivered.
+                      spa: Información sobre el lugar donde se debe entregar el pedido.
+                      por: Informação sobre o local onde a encomenda deverá ser entregue.
                     properties:
                       deliveredBy:
                         type: string
                         description: Responsible for order delivery.
+                        x-description-i18n:
+                          eng: Responsible for order delivery.
+                          spa: Responsable de la entrega de pedidos.
+                          por: Responsável pela entrega do pedido.
                         enum:
                           - MERCHANT -- the restaurant is responsible for the order delivery.
                         example: "MERCHANT"
@@ -441,38 +797,74 @@ paths:
                           country:
                             type: string
                             description: Name of the country.
+                            x-description-i18n:
+                              eng: Name of the country.
+                              spa: Nombre del país.
+                              por: Nome do país.
                             example: "Argetina"
                           state:
                             type: string
                             description: Name of the state.
+                            x-description-i18n:
+                              eng: Name of the state.
+                              spa: Nombre del estado.
+                              por: Nome do estado.
                             example: "Capital Federal"
                           city: 
                             type: string
                             description: Name of the city.
+                            x-description-i18n:
+                              eng: Name of the city.
+                              spa: Nombre de la ciudad.
+                              por: Nome da cidade.
                             example: "Santos Lugares"
                           streetName:
                             type: string
                             description: Name of the street.
+                            x-description-i18n:
+                              eng: Name of the street.
+                              spa: Nombre de la calle.
+                              por: Nome da rua.
                             example: "Calle 01"
                           streetNumber:
                             type: string
                             description: Number of the delivery location. If there is no number, the value will be SN.
+                            x-description-i18n:
+                              eng: Number of the delivery location. If there is no number, the value will be SN.
+                              spa: Número del lugar de entrega. Si no hay número, el valor será SN.
+                              por: Número do local de entrega. Se não houver número, o valor será SN.
                             example: "1523"
                           complement:
                             type: string
                             description: Additional information about the place of delivery.
+                            x-description-i18n:
+                              eng: Additional information about the place of delivery.
+                              spa: Información adicional sobre el lugar de entrega.
+                              por: Informações adicionais sobre o local de entrega.
                             example: "APTO 58"
                           reference:
                             type: string
                             description: References about the delivery location.
+                            x-description-i18n:
+                              eng: References about the delivery location.
+                              spa: Referencias sobre el lugar de entrega.
+                              por: Referências sobre o local de entrega.
                             example: "Referencia: Next to bakery"
                           formattedAddress:
                             type: string
                             description: Concatenation of street name and number.
+                            x-description-i18n:
+                              eng: Concatenation of street name and number.
+                              spa: Concatenación de nombre y número de calle.
+                              por: Concatenação do nome e número da rua.
                             example: "Calle 01 1523"
                           postalCode:
                             type: string
                             description: Zipcode of the delivery location.
+                            x-description-i18n:
+                              eng: Zipcode of the delivery location.
+                              spa: Código postal del lugar de entrega.
+                              por: Código postal do local de entrega.
                             example: "1428"
                           coordinates:
                             type: object
@@ -480,18 +872,34 @@ paths:
                               latitude:
                                 type: number
                                 description: Latitude of the delivery location.
+                                x-description-i18n:
+                                  eng: Latitude of the delivery location.
+                                  spa: Latitud del lugar de entrega.
+                                  por: Latitude do local de entrega.
                                 example: -34.55864
                               longitude:
                                 type: number
                                 description: Longitude of the delivery location.
+                                x-description-i18n:
+                                  eng: Longitude of the delivery location.
+                                  spa: Longitud del lugar de entrega.
+                                  por: Longitude do local de entrega.
                                 example: -58.457982
                       estimatedDeliveryDateTime:
                         type: string
                         description: Estimated delivery time (UTC date-time in ISO timestamp format).
+                        x-description-i18n:
+                          eng: Estimated delivery time (UTC date-time in ISO timestamp format).
+                          spa: Tiempo de entrega estimado (UTC date-time in ISO timestamp format).
+                          por: Tempo de entrega estimado (UTC date-time in ISO timestamp format).
                         example: "2022-02-21T21:49:55Z"
                       deliveryDateTime:
                         type: string
                         description: Delivery completion time (UTC date-time in ISO timestamp format). This information will be setted once the order was delivered.
+                        x-description-i18n:
+                          eng: Delivery completion time (UTC date-time in ISO timestamp format). This information will be setted once the order was delivered.
+                          spa: Hora de finalización de la entrega (UTC date-time in ISO timestamp format). Esta información se configurará una vez entregado el pedido.
+                          por: Tempo de conclusão da entrega (UTC date-time in ISO timestamp format). Esta informação será definida assim que o pedido for entregue.
                         example: "2022-02-21T21:52:55Z"
                   extension:
                     type: object
@@ -499,6 +907,10 @@ paths:
                       status:
                         type: string
                         description: Status of an order.
+                        x-description-i18n:
+                          eng: Status of an order.
+                          spa: Estado de un pedido.
+                          por: Status de um pedido.
                         enum:
                           - ready_to_ship -- order created.
                           - shipped -- order sent for delivery.
@@ -509,6 +921,10 @@ paths:
                       substatus:
                         type: string
                         description: Substatus of an order, along with the status they define the current state of an order.
+                        x-description-i18n:
+                          eng: Substatus of an order, along with the status they define the current state of an order.
+                          spa: Subestado de un pedido, junto con el estado definen el estado actual de un pedido.
+                          por: Substatus de um pedido, juntamente com o status, definem o estado atual de um pedido.
                         enum:
                           - ready_to_print -- order awaiting acceptance.
                           - printed -- order accepted.
@@ -521,30 +937,74 @@ paths:
                           id:
                             type: string
                             description: Internal ID of the store used by Mercado Pago.
+                            x-description-i18n:
+                              eng: Internal ID of the store used by Mercado Pago.
+                              spa: ID interno de la tienda que utiliza Mercado Pago.
+                              por: ID interno da loja utilizada pelo Mercado Pago.
                             example: "44905357"
                           externalCode:
                             type: string
                             description: An optional field that refeers to a external code that can be used on a point of sale. This external code can be set by the Mercado Pago Delivery API.
+                            x-description-i18n:
+                              eng: An optional field that refeers to a external code that can be used on a point of sale. This external code can be set by the Mercado Pago Delivery API.
+                              spa: Un campo opcional que hace referencia a un código externo que se puede utilizar en un punto de venta. Este código externo puede ser configurado por la API de Mercado Pago Delivery.
+                              por: Um campo opcional que se refere a um código externo que pode ser usado em um ponto de venda. Este código externo pode ser definido pela API do Mercado Pago Delivery.
                             example: "UNID01"
+                          brandId:
+                            type: number
+                            description: Value referring to the Brand ID that is linked to the store. If there is not any brand linked to the store, this field will not be shown.
+                            x-description-i18n:
+                              eng: Value referring to the Brand ID that is linked to the store. If there is not any brand linked to the store, this field will not be shown.
+                              spa: Valor referente al Brand ID que está vinculado a la tienda. Si no hay ninguna marca vinculada a la tienda, este campo no se mostrará.
+                              por: Valor referente ao Brand ID que está vinculado à loja. Caso não haja nenhuma marca vinculada à loja, este campo não será exibido.
+                            example: 2641
+                          brandName:
+                            type: string
+                            description: Brand name that is linked to the store. If there is not any Brand linked to the store, this field will not be shown.
+                            x-description-i18n:
+                              eng: Brand name that is linked to the store. If there is not any Brand linked to the store, this field will not be shown.
+                              spa: Nombre de la marca que está vinculada a la tienda. Si no hay ninguna marca Marca vinculada a la tienda, este campo no se mostrará.
+                              por: Nome da marca vinculada à loja. Caso não haja nenhuma marca vinculada à loja, este campo não será exibido.
+                            example: "Brand Name"
                       qr:
                         type: object
-                        description: Through the information contained in this Object, it is possible to assemble the QR Code that is read through the "Mercado Envios Flex" APP for the continuation of the delivery flow of an order. In this way it is possible to develop a personalized coupon for an order. To test the operation of this QR Code, simply read it through the "Mercado Envios Flex" App.
+                        description: Through the information contained in this Object, it is possible to assemble the QR Code that is read through the "Mercado Envios Flex" APP for the continuation of the delivery flow of an order. In this way it is possible to develop a personalized coupon for an order. To test the operation of this QR Code, simply read it through the "Mercado Envios Flex" App. For restaurants with Dropoff in your logistics, this field will not be shown.
+                        x-description-i18n:
+                          eng: Through the information contained in this Object, it is possible to assemble the QR Code that is read through the "Mercado Envios Flex" APP for the continuation of the delivery flow of an order. In this way it is possible to develop a personalized coupon for an order. To test the operation of this QR Code, simply read it through the "Mercado Envios Flex" App. For restaurants with Dropoff in your logistics, this field will not be shown.
+                          spa: A través de la información contenida en este Objeto, es posible ensamblar el Código QR que se lee a través de la APP “Mercado Envíos Flex” para la continuación del flujo de entrega de un pedido. De esta forma es posible desarrollar un cupón personalizado para un pedido. Para probar el funcionamiento de este Código QR, simplemente léalo a través de la App "Mercado Envíos Flex". Para restaurantes con Dropoff en su logística, este campo no se mostrará.
+                          por: Através das informações contidas neste Objeto, é possível montar o QR Code que é lido através do APP “Mercado Envios Flex” para a continuidade do fluxo de entrega de um pedido. Desta forma é possível desenvolver um cupom personalizado para um pedido. Para testar o funcionamento deste QR Code, basta lê-lo através do App "Mercado Envios Flex". Para restaurantes com Dropoff em sua logística, este campo não será exibido.
                         properties:
                           id:
                             type: string
                             description: ID of the Order.
+                            x-description-i18n:
+                              eng: ID of the Order.
+                              spa: ID del pedido.
+                              por: ID do pedido.
                             example: "41382089428"
                           sender_id:
                             type: number
                             description: ID of the Seller.
+                            x-description-i18n:
+                              eng: ID of the seller.
+                              spa: ID del seller.
+                              por: ID do vendedor.
                             example: 1068595961
                           hash_code:
                             type: string
-                            description: Hash that will be displayed after the order is accepted.
+                            description: Hash code.
+                            x-description-i18n:
+                              eng: Hash code.
+                              spa: Hash code.
+                              por: Hash code.
                             example: "v3Xtt15eewkj3Eu2lZt+cJQgDj3H6AHb04y1cMO4nPI="
                           security_digit:
                             type: string
                             description: Security information code.
+                            x-description-i18n:
+                              eng: Security information code.
+                              spa: Código de información de seguridad.
+                              por: Código de segurança.
                             example: "0"
         '401':
           description: Error
@@ -628,11 +1088,23 @@ paths:
       tags:
         - $ref: '#/tags/mp-delivery'
       summary: Accept order
+      x-summary-i18n:
+        eng: Accept order
+        spa: Acceptar orden
+        por: Aceitar pedido
       description: This endpoint is used to accept an order, and change its status
+      x-description-i18n:
+        eng: This endpoint is used to accept an order, and change its status
+        spa: Este endpoint se utiliza para aceptar una orden y cambiar su status
+        por: Este endpoint é utilizado para aceitar um pedido e modificar seu status
       parameters:
         - name: shipment_id
           in: path
-          description: Unique ID that identifies the shipment of the order to be performed by the operation to accept an order. 
+          description: Unique ID that identifies the shipment of the order to be performed by the operation to accept an order
+          x-description-i18n:
+            eng: Unique ID that identifies the shipment of the order to be performed by the operation to accept an order
+            spa: ID único que identifica el envío del la orden a realizar por la operación para aceptar un pedido
+            por: ID exclusivo que identifica o envio do pedido a ser realizado pela operação de aceitação de um pedido
           required: true
           schema:
             type: string
@@ -645,7 +1117,11 @@ paths:
               properties:
                 status:
                   type: string
-                  description: This property indicates the order status, which must have the value "accepted" for this endpoint. 
+                  description: This property indicates the order status, which must have the value "accepted" for this endpoint
+                  x-description-i18n:
+                    eng: This property indicates the order status, which must have the value "accepted" for this endpoint
+                    spa: Esta propiedad indica el status de la orden, que debe tener el valor "accepted" para este endpoint
+                    por: Esta propriedade indica o status do pedido, que deve ter o valor "accepted" para este endpoint
                   example: "accepted"
       responses:
         '200':
@@ -657,7 +1133,11 @@ paths:
                 properties:
                   status:
                     type: string
-                    description: Status of the order after its acceptance. The Status value that will be returned is "accepted".
+                    description: Status of the order after its acceptance. The Status value that will be returned is "accepted"
+                    x-description-i18n:
+                      eng: Status of the order after its acceptance. The Status value that will be returned is "accepted"
+                      spa: Status de la orden tras su aceptación. El valor de statys que se devolverá es "accepted"
+                      por: Status do pedido após sua aceitação. O valor de Status que será retornado é "accepted"
                     example: accepted   
         '400':
           description: Error
@@ -740,11 +1220,23 @@ paths:
       tags:
         - $ref: '#/tags/mp-delivery'
       summary: Print/get order coupon
-      description: This endpoint is used to accept an order and, in addition, it returns the PDF file for the order coupon
+      x-summary-i18n:
+        eng: Print/get order coupon
+        spa: Imprimir/obtener cupón de pedido
+        por: Imprimir/obter cupom do pedido
+      description: This endpoint is used to accept an order and, in addition, it returns the PDF file for the order coupon. This endpoint can be used if it is not necessary to develop a custom coupon for the POS
+      x-description-i18n:
+        eng: This endpoint is used to accept an order and, in addition, it returns the PDF file for the order coupon. This endpoint can be used if it is not necessary to develop a custom coupon for the POS
+        spa: Este endpoint se utiliza para aceptar un pedido y, además, devuelve el archivo PDF del cupón del pedido. Este endpoint se puede usar si no es necesario desarrollar un cupón personalizado para el PDV
+        por: Este endpoint é utilizado para aceitar um pedido e, além disso, retorna o arquivo PDF do cupom do pedido. Este endpoint pode ser utilizado caso não seja necessário desenvolver um cupom personalizado para o PDV
       parameters:
         - name: shipment_id
           in: path
-          description: Unique ID that identifies the shipment of the order to be performed by the operations to accept and print an order. 
+          description: Shipment ID of the order.
+          x-description-i18n:
+            eng: Shipment ID of the order.
+            spa: Shipment ID del pedido.
+            por: Shipment ID do pedido.
           required: true
           schema:
             type: string
@@ -758,6 +1250,10 @@ paths:
                 type: string
                 format: binary
                 description: A binary code referring to the PDF coupon.
+                x-description-i18n:
+                  eng: A binary code referring to the PDF coupon.
+                  spa: Un código binario que hace referencia al cupón en PDF.
+                  por: Um código binário referente ao cupom em PDF.
         '401':
           description: Error
           x-description-i18n:
@@ -824,11 +1320,23 @@ paths:
       tags:
         - $ref: '#/tags/mp-delivery'
       summary: Reasons for cancellation
-      description: This endpoint returns the cancellation reasons that are available for an order. It is important to remember that cancellation reasons vary depending on the current status of the order.
+      x-summary-i18n:
+        eng: Reasons for cancellation
+        spa: Motivos de cancelación
+        por: Motivos do cancelamento
+      description: This endpoint returns the cancellation reasons that are available for an order. It is important to remember that cancellation reasons vary depending on the current status of the order
+      x-description-i18n:
+        eng: This endpoint returns the cancellation reasons that are available for an order. It is important to remember that cancellation reasons vary depending on the current status of the order
+        spa: Este endpoint devuelve los motivos de cancelación que están disponibles para un pedido. Es importante recordar que los motivos de cancelación varían según el estado actual del pedido
+        por: Esse endpoint retorna os motivos de cancelamento disponíveis para um pedido. É importante lembrar que os motivos de cancelamento variam de acordo com o status atual do pedido
       parameters:
         - name: shipment_id
           in: path
-          description: Unique ID that identifies the shipment of the order. 
+          description: Shipment ID of the order.
+          x-description-i18n:
+            eng: Shipment ID of the order.
+            spa: Shipment ID del pedido.
+            por: Shipment ID do pedido.
           required: true
           schema:
             type: string
@@ -841,20 +1349,36 @@ paths:
               schema:
                 type: array
                 description: Array of reasons of cancellation.
+                x-description-i18n:
+                  eng: Array of reasons of cancellation.
+                  spa: Array de motivos de cancelación.
+                  por: Array com motivos de cancelamento.
                 items:
                   type: object
                   properties:
                     id:
                       type: string
                       description: ID of the reason of cancellation.
+                      x-description-i18n:
+                        eng: ID of the reason of cancellation.
+                        spa: ID del motivo de la cancelación.
+                        por: ID do motivo de cancelamento.
                       example: CS7452
                     value:
                       type: string
                       description: Name of the reason of cancellation.
+                      x-description-i18n:
+                        eng: Name of the reason of cancellation.
+                        spa: Nombre del motivo de la cancelación.
+                        por: Nome do motivo do cancelamento.
                       example: out_of_stock
                     message:
                       type: string
                       description: Description of the reason of cancellation.
+                      x-description-i18n:
+                        eng: Description of the reason of cancellation.
+                        spa: Descripción del motivo de la cancelación.
+                        por: Descrição do motivo do cancelamento.
                       example: Me falta alguno de los productos.
         '401':
           description: Error
@@ -922,11 +1446,23 @@ paths:
       tags:
         - $ref: '#/tags/mp-delivery'
       summary: Cancel order
-      description: This endpoint cancels an order, changing its status. 
+      x-summary-i18n:
+        eng: Cancel order
+        spa: Cancelar pedido
+        por: Cancelar pedido
+      description: This endpoint cancels an order, changing its status. A reason for the cancellation can be added, it's necessary just to check if the reason of cancellation are available for the current status
+      x-description-i18n:
+        eng: This endpoint cancels an order, changing its status. A reason for the cancellation can be added, it's necessary just to check if the reason of cancellation are available for the current status
+        spa: Este endpoint cancela un pedido, cambiando su estado. Se puede agregar un motivo para la cancelación, solo es necesario verificar si el motivo de la cancelación está disponible para el estado actual
+        por: Este endpoint cancela um pedido, alterando seu status. Pode ser adicionado um motivo para o cancelamento, bastando apenas verificar se o motivo do cancelamento está disponível para o status atual
       parameters:
         - name: shipment_id
           in: path
-          description: Unique ID that identifies the shipment of the order to be performed by the operations to accept and print an order. 
+          description: Shipment ID of the order.
+          x-description-i18n:
+            eng: Shipment ID of the order.
+            spa: Shipment ID del pedido.
+            por: Shipment ID do pedido.
           required: true
           schema:
             type: string
@@ -939,23 +1475,43 @@ paths:
               properties:
                 status:
                   type: string
-                  description: This property indicates the order status, which must have the value "cancelled" for this endpoint.
+                  description: This field indicates the order status, which must have the value "cancelled" for this endpoint.
+                  x-description-i18n:
+                    eng: This field indicates the order status, which must have the value "cancelled" for this endpoint.
+                    spa: Este campo indica el estado del pedido, que debe tener el valor "cancelled" para este endpoint.
+                    por: Este campo indica o status do pedido, que deve ter o valor "cancelled" para este endpoint.
                   example: "cancelled"
                 cancellation_reason:
                   type: object
                   description: Reason of the cancellation that was retrieved from the endpoint of cancellation reason.
+                  x-description-i18n:
+                    eng: Reason of the cancellation that was retrieved from the endpoint of cancellation reason.
+                    spa: Motivo de la cancelación que se recuperó desde el endpoint de motivos de la cancelación.
+                    por: Motivo do cancelamento que foi recuperado do endpoint de motivos de cancelamento.
                   properties:
                     id:
                       type: string
                       description: ID of the reason of cancellation.
+                      x-description-i18n:
+                        eng: ID of the reason of cancellation.
+                        spa: ID del motivo de la cancelación.
+                        por: ID do motivo de cancelamento.
                       example: CS7452
                     value:
                       type: string
                       description: Name of the reason of cancellation.
+                      x-description-i18n:
+                        eng: Name of the reason of cancellation.
+                        spa: Nombre del motivo de la cancelación.
+                        por: Nome do motivo de cancelamento.
                       example: out_of_stock
                     message:
                       type: string
                       description: Description of the reason of cancellation.
+                      x-description-i18n:
+                        eng: Description of the reason of cancellation.
+                        spa: Descripción del motivo de la cancelación.
+                        por: Descrição do motivo de cancelamento.
                       example: Me falta alguno de los productos.
            
       responses:
@@ -1051,11 +1607,23 @@ paths:
       tags:
         - $ref: '#/tags/mp-delivery'
       summary: Get all stores
-      description: This endpoint returns all stores owned by a user, using the User ID as search filter
+      x-summary-i18n:
+        eng: Get all stores
+        spa: Obtener todas las tiendas
+        por: Obter todas as lojas
+      description: This endpoint returns all stores owned by a user, using the User ID as a parameter
+      x-description-i18n:
+        eng: This endpoint returns all stores owned by a user, using the User ID as a parameter
+        spa: Este endpoint devuelve todas las tiendas propiedad de un usuario, utilizando la ID de usuario como parámetro
+        por: Esse endpoint retorna todas as lojas pertencentes a um usuário, usando o User ID como filtro parâmetro
       parameters:
         - name: seller_id
           in: path
-          description: Unique ID that identifies the user that will be used as search filter to consult stores.
+          description: User ID that can be used to retrieve the stores.
+          x-description-i18n:
+            eng: User ID that can be used to retrieve the stores.
+            spa: ID de usuario que se puede utilizar para recuperar las tiendas.
+            por: ID do usuário que pode ser usado para recuperar as lojas.
           required: true
           schema:
             type: string
@@ -1068,28 +1636,52 @@ paths:
               schema:          
                 type: array
                 description: List of stores referring to the searched User ID.
+                x-description-i18n:
+                  eng: List of stores referring to the searched User ID.
+                  spa: Lista de tiendas que hacen referencia al ID de usuario buscado.
+                  por: Lista de lojas referentes ao ID do usuário pesquisado.
                 items:
                   type: object
                   properties:
                     id:
                       type: number
                       example: 41517088
-                      description: Unique ID that identifies the store.
+                      description: ID that identifies the store.
+                      x-description-i18n:
+                        eng: ID that identifies the store.
+                        spa: ID que identifica la tienda.
+                        por: ID que identifica a loja.
                     user_id:
                       type: number
                       example: 813887163
-                      description: Unique ID that identifies the user who owns the store.
+                      description: ID that identifies the user who owns the store.
+                      x-description-i18n:
+                        eng: ID that identifies the user who owns the store.
+                        spa: ID que identifica al usuario propietario de la tienda.
+                        por: ID que identifica o usuário proprietário da loja.
                     description:
                       type: string
                       example: "Doc's grocery store"
                       description: Name of the store.
+                      x-description-i18n:
+                        eng: Name of the store.
+                        spa: Nombre de la tienda.
+                        por: Nome da loja.
                     business_hours:
                       type: object
-                      description: List of store opening hours. Each attribute of the object will be represented by a day of the week. 
+                      description: List of store opening hours. Each attribute of the object will be represented by a day of the week.
+                      x-description-i18n:
+                        eng: List of store opening hours. Each attribute of the object will be represented by a day of the week.
+                        spa: Lista de horarios de apertura de tiendas. Cada atributo del objeto estará representado por un día de la semana.
+                        por: Lista de horários de funcionamento da loja. Cada atributo do objeto será representado por um dia da semana.
                       properties:
                        monday:
                          type: array
                          description: List of store opening hours on that weekday. 
+                         x-description-i18n:
+                          eng: List of store opening hours on that weekday. 
+                          spa: Lista de horarios de apertura de la tienda en ese día de la semana.
+                          por: Lista de horários de funcionamento da loja naquele dia da semana.
                          items:
                            type: object
                            properties:
@@ -1097,13 +1689,25 @@ paths:
                                type: string
                                example: "8:00"
                                description: Store opening time on that weekday.
+                               x-description-i18n:
+                                eng: Store opening time on that weekday.
+                                spa: Hora de apertura de la tienda en ese día de la semana.
+                                por: Horário de abertura da loja nesse dia da semana.
                              close:
                                type: string
                                example: "15:00"
                                description: Store closing time on that weekday.
+                               x-description-i18n:
+                                eng: Store closing time on that weekday.
+                                spa: Hora de cierre de la tienda en ese día de la semana.
+                                por: Horário de fechamento da loja nesse dia da semana.
                        tuesday:
                          type: array
-                         description: List of store opening hours on that weekday.
+                         description: List of store opening hours on that weekday. 
+                         x-description-i18n:
+                          eng: List of store opening hours on that weekday. 
+                          spa: Lista de horarios de apertura de la tienda en ese día de la semana.
+                          por: Lista de horários de funcionamento da loja naquele dia da semana.
                          items:
                            type: object
                            properties:
@@ -1111,13 +1715,25 @@ paths:
                                type: string
                                example: "8:00"
                                description: Store opening time on that weekday.
+                               x-description-i18n:
+                                eng: Store opening time on that weekday.
+                                spa: Hora de apertura de la tienda en ese día de la semana.
+                                por: Horário de abertura da loja nesse dia da semana.
                              close:
                                type: string
                                example: "15:00"
                                description: Store closing time on that weekday.
+                               x-description-i18n:
+                                eng: Store closing time on that weekday.
+                                spa: Hora de cierre de la tienda en ese día de la semana.
+                                por: Horário de fechamento da loja nesse dia da semana.
                        wendsday:
                          type: array
                          description: List of store opening hours on that weekday.
+                         x-description-i18n:
+                          eng: List of store opening hours on that weekday. 
+                          spa: Lista de horarios de apertura de la tienda en ese día de la semana.
+                          por: Lista de horários de funcionamento da loja naquele dia da semana.
                          items:
                            type: object
                            properties:
@@ -1125,13 +1741,25 @@ paths:
                                type: string
                                example: "8:00"
                                description: Store opening time on that weekday.
+                               x-description-i18n:
+                                eng: Store opening time on that weekday.
+                                spa: Hora de apertura de la tienda en ese día de la semana.
+                                por: Horário de abertura da loja nesse dia da semana.
                              close:
                                type: string
                                example: "15:00"
                                description: Store closing time on that weekday.
+                               x-description-i18n:
+                                eng: Store closing time on that weekday.
+                                spa: Hora de cierre de la tienda en ese día de la semana.
+                                por: Horário de fechamento da loja nesse dia da semana.
                        thursday:
                          type: array
                          description: List of store opening hours on that weekday.
+                         x-description-i18n:
+                          eng: List of store opening hours on that weekday. 
+                          spa: Lista de horarios de apertura de la tienda en ese día de la semana.
+                          por: Lista de horários de funcionamento da loja naquele dia da semana.
                          items:
                            type: object
                            properties:
@@ -1139,13 +1767,25 @@ paths:
                                type: string
                                example: "8:00"
                                description: Store opening time on that weekday.
+                               x-description-i18n:
+                                eng: Store opening time on that weekday.
+                                spa: Hora de apertura de la tienda en ese día de la semana.
+                                por: Horário de abertura da loja nesse dia da semana.
                              close:
                                type: string
                                example: "15:00"
                                description: Store closing time on that weekday.
+                               x-description-i18n:
+                                eng: Store closing time on that weekday.
+                                spa: Hora de cierre de la tienda en ese día de la semana.
+                                por: Horário de fechamento da loja nesse dia da semana.
                        friday:
                          type: array
                          description: List of store opening hours on that weekday.
+                         x-description-i18n:
+                          eng: List of store opening hours on that weekday. 
+                          spa: Lista de horarios de apertura de la tienda en ese día de la semana.
+                          por: Lista de horários de funcionamento da loja naquele dia da semana.
                          items:
                            type: object
                            properties:
@@ -1153,33 +1793,65 @@ paths:
                                type: string
                                example: "8:00"
                                description: Store opening time on that weekday.
+                               x-description-i18n:
+                                eng: Store opening time on that weekday.
+                                spa: Hora de apertura de la tienda en ese día de la semana.
+                                por: Horário de abertura da loja nesse dia da semana.
                              close:
                                type: string
                                example: "15:00"
                                description: Store closing time on that weekday.
+                               x-description-i18n:
+                                eng: Store closing time on that weekday.
+                                spa: Hora de cierre de la tienda en ese día de la semana.
+                                por: Horário de fechamento da loja nesse dia da semana.
                     location: 
                       type: object
-                      description: Store location information. This includes address, latitute, longitude, and additional location references.
+                      description: Store location information. This includes address, latitude, longitude, and additional location references.
+                      x-description-i18n:
+                        eng: Store location information. This includes address, latitude, longitude, and additional location references.
+                        spa: Almacenar información de ubicación. Esto incluye dirección, latitud, longitud y referencias de ubicación adicionales.
+                        por: Armazenar informações de localização. Isso inclui endereços, latitude, longitude e referências de local adicionais.
                       properties:
                         address_line:
                           type: string
-                          description: Store address information
+                          description: Store address information.
+                          x-description-i18n:
+                            eng: Store address information.
+                            spa: Información de la dirección de la tienda.
+                            por: Armazenar informações de endereço.
                           example: "Viaduto Arapuã - Saude, São Paulo - SP, 04307-070, Brasil"
                         reference:
                           type: string
                           description: Additional information provided for store location.
+                          x-description-i18n:
+                            eng: Additional information provided for store location.
+                            spa: Se proporciona información adicional para la ubicación de la tienda.
+                            por: Informações adicionais fornecidas para a localização da loja.
                           example: "Next to a bakery"
                         latitude:
                           type: number
                           description: Latitude of the store.
+                          x-description-i18n:
+                            eng: Latitude of the store.
+                            spa: Latitud de la tienda.
+                            por: Latitude da loja.
                           example: -23.630159633405057
                         longitude:
                           type: number
                           description: Longitude of the store.
+                          x-description-i18n:
+                            eng: Longitude of the store.
+                            spa: Longitud de la tienda.
+                            por: Longitude da loja.
                           example: -46.64532809999999
                     external_id:
                       type: string
                       description: This optional property indicates the custom external ID of the store. This value can be changed or updated using the endpoint that updates External IDs. 
+                      x-description-i18n:
+                        eng: This optional property indicates the custom external ID of the store. This value can be changed or updated using the endpoint that updates External IDs. 
+                        spa: Esta propiedad opcional indica el ID externo personalizado de la tienda. Este valor se puede cambiar o actualizar mediante el endpoint que actualiza los ID externos de tiendas.
+                        por: Esta propriedade opcional indica o ID externo customizado da loja. Esse valor pode ser alterado ou atualizado usando o endpoint que atualiza os IDs externos.
                       example: "A15154DE"
         '401':
           description: Error
@@ -1246,12 +1918,24 @@ paths:
     get:
       tags:
         - $ref: '#/tags/mp-delivery'
-      summary: Get specific store
-      description: This endpoint is used to get a specific store using its ID as search filter
+      summary: Get store
+      x-summary-i18n:
+        eng: Get store
+        spa: Obter loja
+        por: Obter loja
+      description: This endpoint is used to get a specific store using its ID as parameter
+      x-description-i18n:
+        eng: This endpoint is used to get a specific store using its ID as parameter
+        spa: Este endpoint se usa para obtener una tienda específica usando su ID como parámetro
+        por: Este endpoint é usado para obter uma loja específica usando seu ID como parâmetro
       parameters:
         - name: StoreID
           in: path
-          description: Unique ID that identifies the store that will be used as search parameter. 
+          description: ID that identifies the store that will be used as search parameter.
+          x-description-i18n:
+            eng: ID that identifies the store that will be used as search parameter.
+            spa: ID que identifica la tienda que se utilizará como parámetro de búsqueda.
+            por: ID que identifica a loja que será utilizada como parâmetro de pesquisa.
           required: true
           schema:
             type: string
@@ -1267,19 +1951,35 @@ paths:
                   id:
                     type: number
                     example: 41517088
-                    description: Unique ID that identifies the store.  
+                    description: ID that identifies the store.
+                    x-description-i18n:
+                      eng: ID that identifies the store.
+                      spa: ID que identifica la tienda.
+                      por: ID que identifica a loja.
                   user_id:
                     type: number
                     example: 813887163
-                    description: Unique ID that identifies the user who owns the store.
+                    description: ID that identifies the user who owns the store.
+                    x-description-i18n:
+                      eng: ID that identifies the user who owns the store.
+                      spa: ID que identifica al usuario propietario de la tienda.
+                      por: ID que identifica o usuário proprietário da loja.
                   description:
                     type: string
                     example: "Doc's grocery store"
                     description: Name of the store.
+                    x-description-i18n:
+                      eng: Name of the store.
+                      spa: Nombre de la tienda.
+                      por: Nome da loja.
                   status:
                     type: string
                     example: "enabled"
                     description: Status referring to the current state of operation of the store.
+                    x-description-i18n:
+                      eng: Status referring to the current state of operation of the store.
+                      spa: Estado referente al estado actual de funcionamiento de la tienda.
+                      por: Status referente ao estado atual de funcionamento da loja.
                     enum:
                       - disabled -- The store is disabled, and will not be shown on marketplace.
                       - enabled -- The store is enabled and is shown on marketplace.
@@ -1287,10 +1987,18 @@ paths:
                   business_hours:
                     type: object
                     description: List of store opening hours. Each attribute of the object will be represented by a day of the week. 
+                    x-description-i18n:
+                      eng: List of store opening hours. Each attribute of the object will be represented by a day of the week.
+                      spa: Lista de horarios de apertura de tiendas. Cada atributo del objeto estará representado por un día de la semana.
+                      por: Lista de horários de funcionamento da loja. Cada atributo do objeto será representado por um dia da semana.
                     properties:
                       monday:
                         type: array
                         description: List of store opening hours on that weekday.
+                        x-description-i18n:
+                          eng: List of store opening hours on that weekday. 
+                          spa: Lista de horarios de apertura de la tienda en ese día de la semana.
+                          por: Lista de horários de funcionamento da loja naquele dia da semana.
                         items:
                           type: object
                           properties:
@@ -1298,13 +2006,25 @@ paths:
                               type: string
                               example: "8:00"
                               description: Store opening time on that weekday.
+                              x-description-i18n:
+                                eng: Store opening time on that weekday.
+                                spa: Hora de apertura de la tienda en ese día de la semana.
+                                por: Horário de abertura da loja nesse dia da semana.
                             close:
                               type: string
                               example: "15:00"
                               description: Store closing time on that weekday.
+                              x-description-i18n:
+                                eng: Store closing time on that weekday.
+                                spa: Hora de apertura de la tienda en ese día de la semana.
+                                por: Horário de fechamento da loja nesse dia da semana.
                       tuesday:
                         type: array
                         description: List of store opening hours on that weekday.
+                        x-description-i18n:
+                          eng: List of store opening hours on that weekday. 
+                          spa: Lista de horarios de apertura de la tienda en ese día de la semana.
+                          por: Lista de horários de funcionamento da loja naquele dia da semana.
                         items:
                           type: object
                           properties:
@@ -1312,13 +2032,25 @@ paths:
                               type: string
                               example: "8:00"
                               description: Store opening time on that weekday.
+                              x-description-i18n:
+                                eng: Store opening time on that weekday.
+                                spa: Hora de apertura de la tienda en ese día de la semana.
+                                por: Horário de abertura da loja nesse dia da semana.
                             close:
                               type: string
                               example: "15:00"
                               description: Store closing time on that weekday.
+                              x-description-i18n:
+                                eng: Store closing time on that weekday.
+                                spa: Hora de apertura de la tienda en ese día de la semana.
+                                por: Horário de fechamento da loja nesse dia da semana.
                       wendsday:
                         type: array
                         description: List of store opening hours on that weekday.
+                        x-description-i18n:
+                          eng: List of store opening hours on that weekday. 
+                          spa: Lista de horarios de apertura de la tienda en ese día de la semana.
+                          por: Lista de horários de funcionamento da loja naquele dia da semana.
                         items:
                           type: object
                           properties:
@@ -1326,13 +2058,25 @@ paths:
                               type: string
                               example: "8:00"
                               description: Store opening time on that weekday.
+                              x-description-i18n:
+                                eng: Store opening time on that weekday.
+                                spa: Hora de apertura de la tienda en ese día de la semana.
+                                por: Horário de abertura da loja nesse dia da semana.
                             close:
                               type: string
                               example: "15:00"
                               description: Store closing time on that weekday.
+                              x-description-i18n:
+                                eng: Store closing time on that weekday.
+                                spa: Hora de apertura de la tienda en ese día de la semana.
+                                por: Horário de fechamento da loja nesse dia da semana.
                       thursday:
                         type: array
                         description: List of store opening hours on that weekday.
+                        x-description-i18n:
+                          eng: List of store opening hours on that weekday. 
+                          spa: Lista de horarios de apertura de la tienda en ese día de la semana.
+                          por: Lista de horários de funcionamento da loja naquele dia da semana.
                         items:
                           type: object
                           properties:
@@ -1340,13 +2084,25 @@ paths:
                               type: string
                               example: "8:00"
                               description: Store opening time on that weekday.
+                              x-description-i18n:
+                                eng: Store opening time on that weekday.
+                                spa: Hora de apertura de la tienda en ese día de la semana.
+                                por: Horário de abertura da loja nesse dia da semana.
                             close:
                               type: string
                               example: "15:00"
                               description: Store closing time on that weekday.
+                              x-description-i18n:
+                                eng: Store closing time on that weekday.
+                                spa: Hora de apertura de la tienda en ese día de la semana.
+                                por: Horário de fechamento da loja nesse dia da semana.
                       friday:
                         type: array
                         description: List of store opening hours on that weekday.
+                        x-description-i18n:
+                          eng: List of store opening hours on that weekday. 
+                          spa: Lista de horarios de apertura de la tienda en ese día de la semana.
+                          por: Lista de horários de funcionamento da loja naquele dia da semana.
                         items:
                           type: object
                           properties:
@@ -1354,33 +2110,65 @@ paths:
                               type: string
                               example: "8:00"
                               description: Store opening time on that weekday.
+                              x-description-i18n:
+                                eng: Store opening time on that weekday.
+                                spa: Hora de apertura de la tienda en ese día de la semana.
+                                por: Horário de abertura da loja nesse dia da semana.
                             close:
                               type: string
                               example: "15:00"
                               description: Store closing time on that weekday.
+                              x-description-i18n:
+                                eng: Store closing time on that weekday.
+                                spa: Hora de apertura de la tienda en ese día de la semana.
+                                por: Horário de fechamento da loja nesse dia da semana.
                   location: 
                     type: object
-                    description: Store location information. This includes address, latitute, longitude, and additional location references.
+                    description: Store location information. This includes address, latitude, longitude, and additional location references.
+                    x-description-i18n:
+                      eng: Store location information. This includes address, latitude, longitude, and additional location references.
+                      spa: Almacenar información de ubicación. Esto incluye dirección, latitud, longitud y referencias de ubicación adicionales.
+                      por: Armazenar informações de localização. Isso inclui endereços, latitude, longitude e referências de local adicionais.
                     properties:
                       address_line:
                         type: string
-                        description: Store address information 
+                        description: Store address information.
+                        x-description-i18n:
+                          eng: Store address information.
+                          spa: Información de la dirección de la tienda.
+                          por: Armazenar informações de endereço.
                         example: "Viaduto Arapuã - Saude, São Paulo - SP, 04307-070, Brasil"
                       reference:
                         type: string
                         description: Store location add-on.
+                        x-description-i18n:
+                          eng: Store location add-on.
+                          spa: Complemento de ubicación de la tienda.
+                          por: Complemento de localização da loja.
                         example: "Next to a bakery"
                       latitude:
                         type: number
                         description: Latitude of the store.
+                        x-description-i18n:
+                          eng: Latitude of the store.
+                          spa: Latitud de la tienda.
+                          por: Latitude da loja.
                         example: -23.630159633405057
                       longitude:
                         type: number
                         description: Longitude of the store.
+                        x-description-i18n:
+                          eng: Longitude of the store.
+                          spa: Longitud de la tienda.
+                          por: Longitude da loja.
                         example: -46.64532809999999
                   external_id:
                     type: string
                     description: This optional property indicates the custom external ID of the store. This value can be changed or updated using the endpoint that updates External IDs. 
+                    x-description-i18n:
+                      eng: This optional property indicates the custom external ID of the store. This value can be changed or updated using the endpoint that updates External IDs. 
+                      spa: Esta propiedad opcional indica el ID externo personalizado de la tienda. Este valor se puede cambiar o actualizar mediante el endpoint que actualiza los ID externos.
+                      por: Esta propriedade opcional indica o ID externo customizado da loja. Esse valor pode ser alterado ou atualizado usando o endpoint que atualiza os IDs externos.
                     example: "A15154DE"
         '400':
           description: Error
@@ -1463,11 +2251,23 @@ paths:
       tags:
         - $ref: '#/tags/mp-delivery'
       summary: Update external ID
-      description: This endpoint updates the External ID value. The External ID value is an optonal field
+      x-summary-i18n:
+        eng: Update external ID
+        spa: Actualizar ID externo
+        por: Atualizar external ID
+      description: This endpoint updates the External ID value of a store. The External ID value is an optional field
+      x-description-i18n:
+        eng: This endpoint updates the External ID value of a store. The External ID value is an optional field
+        spa: Este endpoint actualiza el valor de ID externo de una tienda. El valor de ID externo es un campo opcional
+        por: Esse endpoint atualiza o valor do ID externo de uma loja. O valor de ID externo é um campo opcional
       parameters:
         - name: StoreID
           in: path
-          description: Unique ID that identifies the store whose External ID will be updated.
+          description: ID of the store.
+          x-description-i18n:
+            eng: ID of the store.
+            spa: ID de la tienda.
+            por: ID da loja.
           required: true
           schema:
             type: string
@@ -1481,6 +2281,10 @@ paths:
                 external_id:
                   type: string
                   description: Value of the external ID which will be linked to the store.
+                  x-description-i18n:
+                    eng: Value of the external ID which will be linked to the store.
+                    spa: Valor del ID externo que se vinculará a la tienda.
+                    por: Valor do ID externo que será vinculado à loja.
                   example: "9320001PC21"
       responses:
         '200':
@@ -1493,22 +2297,42 @@ paths:
                   id:
                     type: number
                     example: 41517088
-                    description: Unique ID that identifies the store.  
+                    description: ID that identifies the store.
+                    x-description-i18n:
+                      eng: ID that identifies the store.
+                      spa: ID que identifica la tienda.
+                      por: ID que identifica a loja.
                   user_id:
                     type: number
                     example: 813887163
-                    description: Unique ID that identifies the user who owns the store.
+                    description: ID that identifies the user who owns the store.
+                    x-description-i18n:
+                      eng: ID that identifies the user who owns the store.
+                      spa: ID que identifica al usuario propietario de la tienda.
+                      por: ID que identifica o usuário proprietário da loja.
                   description:
                     type: string
                     example: "Doc's grocery store"
                     description: Name of the store.
+                    x-description-i18n:
+                      eng: Name of the store.
+                      spa: Nombre de la tienda.
+                      por: Nome da loja.
                   business_hours:
                     type: object
-                    description: List of store opening hours. Each attribute of the object will be represented by a day of the week.  
+                    description: List of store opening hours. Each attribute of the object will be represented by a day of the week. 
+                    x-description-i18n:
+                      eng: List of store opening hours. Each attribute of the object will be represented by a day of the week.
+                      spa: Lista de horarios de apertura de tiendas. Cada atributo del objeto estará representado por un día de la semana.
+                      por: Lista de horários de funcionamento da loja. Cada atributo do objeto será representado por um dia da semana.
                     properties:
                       monday:
                         type: array
                         description: List of store opening hours on that weekday.
+                        x-description-i18n:
+                          eng: List of store opening hours on that weekday. 
+                          spa: Lista de horarios de apertura de la tienda en ese día de la semana.
+                          por: Lista de horários de funcionamento da loja naquele dia da semana.
                         items:
                           type: object
                           properties:
@@ -1516,13 +2340,25 @@ paths:
                               type: string
                               example: "8:00"
                               description: Store opening time on that weekday.
+                              x-description-i18n:
+                                eng: Store opening time on that weekday.
+                                spa: Hora de apertura de la tienda en ese día de la semana.
+                                por: Horário de abertura da loja nesse dia da semana.
                             close:
                               type: string
                               example: "15:00"
                               description: Store closing time on that weekday.
+                              x-description-i18n:
+                                eng: Store closing time on that weekday.
+                                spa: Hora de apertura de la tienda en ese día de la semana.
+                                por: Horário de fechamento da loja nesse dia da semana.
                       tuesday:
                         type: array
                         description: List of store opening hours on that weekday.
+                        x-description-i18n:
+                          eng: List of store opening hours on that weekday. 
+                          spa: Lista de horarios de apertura de la tienda en ese día de la semana.
+                          por: Lista de horários de funcionamento da loja naquele dia da semana.
                         items:
                           type: object
                           properties:
@@ -1530,13 +2366,25 @@ paths:
                               type: string
                               example: "8:00"
                               description: Store opening time on that weekday.
+                              x-description-i18n:
+                                eng: Store opening time on that weekday.
+                                spa: Hora de apertura de la tienda en ese día de la semana.
+                                por: Horário de abertura da loja nesse dia da semana.
                             close:
                               type: string
                               example: "15:00"
                               description: Store closing time on that weekday.
+                              x-description-i18n:
+                                eng: Store closing time on that weekday.
+                                spa: Hora de apertura de la tienda en ese día de la semana.
+                                por: Horário de fechamento da loja nesse dia da semana.
                       wendsday:
                         type: array
                         description: List of store opening hours on that weekday.
+                        x-description-i18n:
+                          eng: List of store opening hours on that weekday. 
+                          spa: Lista de horarios de apertura de la tienda en ese día de la semana.
+                          por: Lista de horários de funcionamento da loja naquele dia da semana.
                         items:
                           type: object
                           properties:
@@ -1544,13 +2392,25 @@ paths:
                               type: string
                               example: "8:00"
                               description: Store opening time on that weekday.
+                              x-description-i18n:
+                                eng: Store opening time on that weekday.
+                                spa: Hora de apertura de la tienda en ese día de la semana.
+                                por: Horário de abertura da loja nesse dia da semana.
                             close:
                               type: string
                               example: "15:00"
                               description: Store closing time on that weekday.
+                              x-description-i18n:
+                                eng: Store closing time on that weekday.
+                                spa: Hora de apertura de la tienda en ese día de la semana.
+                                por: Horário de fechamento da loja nesse dia da semana.
                       thursday:
                         type: array
                         description: List of store opening hours on that weekday.
+                        x-description-i18n:
+                          eng: List of store opening hours on that weekday. 
+                          spa: Lista de horarios de apertura de la tienda en ese día de la semana.
+                          por: Lista de horários de funcionamento da loja naquele dia da semana.
                         items:
                           type: object
                           properties:
@@ -1558,13 +2418,25 @@ paths:
                               type: string
                               example: "8:00"
                               description: Store opening time on that weekday.
+                              x-description-i18n:
+                                eng: Store opening time on that weekday.
+                                spa: Hora de apertura de la tienda en ese día de la semana.
+                                por: Horário de abertura da loja nesse dia da semana.
                             close:
                               type: string
                               example: "15:00"
                               description: Store closing time on that weekday.
+                              x-description-i18n:
+                                eng: Store closing time on that weekday.
+                                spa: Hora de apertura de la tienda en ese día de la semana.
+                                por: Horário de fechamento da loja nesse dia da semana.
                       friday:
                         type: array
                         description: List of store opening hours on that weekday.
+                        x-description-i18n:
+                          eng: List of store opening hours on that weekday. 
+                          spa: Lista de horarios de apertura de la tienda en ese día de la semana.
+                          por: Lista de horários de funcionamento da loja naquele dia da semana.
                         items:
                           type: object
                           properties:
@@ -1572,33 +2444,65 @@ paths:
                               type: string
                               example: "8:00"
                               description: Store opening time on that weekday.
+                              x-description-i18n:
+                                eng: Store opening time on that weekday.
+                                spa: Hora de apertura de la tienda en ese día de la semana.
+                                por: Horário de abertura da loja nesse dia da semana.
                             close:
                               type: string
                               example: "15:00"
                               description: Store closing time on that weekday.
+                              x-description-i18n:
+                                eng: Store closing time on that weekday.
+                                spa: Hora de apertura de la tienda en ese día de la semana.
+                                por: Horário de fechamento da loja nesse dia da semana.
                   location: 
                     type: object
-                    description: Store location information. This includes address, latitute, longitude, and additional location references.
+                    description: Store location information. This includes address, latitude, longitude, and additional location references.
+                    x-description-i18n:
+                      eng: Store location information. This includes address, latitude, longitude, and additional location references.
+                      spa: Almacenar información de ubicación. Esto incluye dirección, latitud, longitud y referencias de ubicación adicionales.
+                      por: Armazenar informações de localização. Isso inclui endereços, latitude, longitude e referências de local adicionais.
                     properties:
                       address_line:
                         type: string
-                        description: Store address information 
+                        description: Store address information.
+                        x-description-i18n:
+                          eng: Store address information.
+                          spa: Información de la dirección de la tienda.
+                          por: Armazenar informações de endereço.
                         example: "Viaduto Arapuã - Saude, São Paulo - SP, 04307-070, Brasil"
                       reference:
                         type: string
                         description: Store location add-on.
+                        x-description-i18n:
+                          eng: Store location add-on.
+                          spa: Complemento de ubicación de la tienda.
+                          por: Complemento de localização da loja.
                         example: "Next to a bakery"
                       latitude:
                         type: number
                         description: Latitude of the store.
+                        x-description-i18n:
+                          eng: Latitude of the store.
+                          spa: Latitud de la tienda.
+                          por: Latitude da loja.
                         example: -23.630159633405057
                       longitude:
                         type: number
                         description: Longitude of the store.
+                        x-description-i18n:
+                          eng: Longitude of the store.
+                          spa: Longitud de la tienda.
+                          por: Longitude da loja.
                         example: -46.64532809999999
                   external_id:
                     type: string
-                    description: This optional property indicates the custom external ID of the store. This value can be changed or updated using the endpoint that updates External IDs.
+                    description: This optional property indicates the custom external ID of the store. This value can be changed or updated using the endpoint that updates External IDs. 
+                    x-description-i18n:
+                      eng: This optional property indicates the custom external ID of the store. This value can be changed or updated using the endpoint that updates External IDs. 
+                      spa: Esta propiedad opcional indica el ID externo personalizado de la tienda. Este valor se puede cambiar o actualizar mediante el endpoint que actualiza los ID externos.
+                      por: Esta propriedade opcional indica o ID externo customizado da loja. Esse valor pode ser alterado ou atualizado usando o endpoint que atualiza os IDs externos.
                     example: "9320001PC21"
         '400':
           description: Error
@@ -1681,18 +2585,34 @@ paths:
       tags:
         - $ref: '#/tags/mp-delivery'
       summary: Get store by external ID
+      x-summary-i18n:
+        eng: Get store by external ID
+        spa: Obtener tienda por ID externo
+        por: Obter loja por ID externo
       description: This endpoint gets stores by the external ID that was previously registered
+      x-description-i18n:
+        eng: This endpoint gets stores by the external ID that was previously registered
+        spa: Este endpoint obtiene tiendas por el ID externo que se registró previamente
+        por: Esse endpoint obtém lojas pelo ID externo que foi registrado anteriormente
       parameters:
         - name: SellerID
           in: path
-          description: Unique ID that identifies the user who owns the store.
+          description: ID that identifies the user who owns the store.
+          x-description-i18n:
+            eng: ID that identifies the user who owns the store.
+            spa: ID que identifica al usuario propietario de la tienda.
+            por: ID que identifica o usuário proprietário da loja.
           required: true
           schema:
             type: string
             example: 185522600
         - name: ExternalID
           in: path
-          description: Store external ID that was previously registered.
+          description: External ID of the store that was previously registered.
+          x-description-i18n:
+            eng: External ID of the store that was previously registered.
+            spa: ID externo de la tienda que se registró previamente.
+            por: ID externo da loja que foi registrada anteriormente.
           required: true
           schema:
             type: string
@@ -1708,22 +2628,42 @@ paths:
                   id:
                     type: number
                     example: 41517088
-                    description: Store ID linked to the external ID that was used as search parameter.
+                    description: Store ID linked to the external ID that was used as parameter.
+                    x-description-i18n:
+                      eng: Store ID linked to the external ID that was used as parameter.
+                      spa: Store ID vinculado al ID externo que se utilizó como parámetro.
+                      por: ID da loja vinculado ao ID externo que foi utilizado como parâmetro.
                   user_id:
                     type: number
                     example: 813887163
-                    description: Unique ID that identifies the user who owns the store.
+                    description: ID that identifies the user who owns the store.
+                    x-description-i18n:
+                      eng: ID that identifies the user who owns the store.
+                      spa: ID que identifica al usuario propietario de la tienda.
+                      por: ID que identifica o usuário proprietário da loja.
                   description:
                     type: string
                     example: "Doc's grocery store"
                     description: Name of the store.
+                    x-description-i18n:
+                      eng: Name of the store.
+                      spa: Nombre de la tienda.
+                      por: Nome da loja.
                   business_hours:
                     type: object
                     description: List of store opening hours. Each attribute of the object will be represented by a day of the week. 
+                    x-description-i18n:
+                      eng: List of store opening hours. Each attribute of the object will be represented by a day of the week.
+                      spa: Lista de horarios de apertura de tiendas. Cada atributo del objeto estará representado por un día de la semana.
+                      por: Lista de horários de funcionamento da loja. Cada atributo do objeto será representado por um dia da semana.
                     properties:
                      monday:
                        type: array
-                       description: List of store opening hours on that weekday.
+                       description: List of store opening hours on that weekday
+                       x-description-i18n:
+                        eng: List of store opening hours on that weekday. 
+                        spa: Lista de horarios de apertura de la tienda en ese día de la semana.
+                        por: Lista de horários de funcionamento da loja naquele dia da semana.
                        items:
                          type: object
                          properties:
@@ -1731,13 +2671,25 @@ paths:
                              type: string
                              example: "8:00"
                              description: Store opening time on that weekday.
+                             x-description-i18n:
+                              eng: Store opening time on that weekday.
+                              spa: Hora de apertura de la tienda en ese día de la semana.
+                              por: Horário de abertura da loja nesse dia da semana.
                            close:
                              type: string
                              example: "15:00"
                              description: Store closing time on that weekday.
+                             x-description-i18n:
+                              eng: Store closing time on that weekday.
+                              spa: Hora de apertura de la tienda en ese día de la semana.
+                              por: Horário de fechamento da loja nesse dia da semana.
                      tuesday:
                        type: array
-                       description: List of store opening hours on that weekday.
+                       description: List of store opening hours on that weekday
+                       x-description-i18n:
+                        eng: List of store opening hours on that weekday. 
+                        spa: Lista de horarios de apertura de la tienda en ese día de la semana.
+                        por: Lista de horários de funcionamento da loja naquele dia da semana.
                        items:
                          type: object
                          properties:
@@ -1745,13 +2697,25 @@ paths:
                              type: string
                              example: "8:00"
                              description: Store opening time on that weekday.
+                             x-description-i18n:
+                              eng: Store opening time on that weekday.
+                              spa: Hora de apertura de la tienda en ese día de la semana.
+                              por: Horário de abertura da loja nesse dia da semana.
                            close:
                              type: string
                              example: "15:00"
                              description: Store closing time on that weekday.
+                             x-description-i18n:
+                              eng: Store closing time on that weekday.
+                              spa: Hora de apertura de la tienda en ese día de la semana.
+                              por: Horário de fechamento da loja nesse dia da semana.
                      wendsday:
                        type: array
                        description: List of store opening hours on that weekday.
+                       x-description-i18n:
+                        eng: List of store opening hours on that weekday. 
+                        spa: Lista de horarios de apertura de la tienda en ese día de la semana.
+                        por: Lista de horários de funcionamento da loja naquele dia da semana.
                        items:
                          type: object
                          properties:
@@ -1759,13 +2723,25 @@ paths:
                              type: string
                              example: "8:00"
                              description: Store opening time on that weekday.
+                             x-description-i18n:
+                              eng: Store opening time on that weekday.
+                              spa: Hora de apertura de la tienda en ese día de la semana.
+                              por: Horário de abertura da loja nesse dia da semana.
                            close:
                              type: string
                              example: "15:00"
                              description: Store closing time on that weekday.
+                             x-description-i18n:
+                              eng: Store closing time on that weekday.
+                              spa: Hora de apertura de la tienda en ese día de la semana.
+                              por: Horário de fechamento da loja nesse dia da semana.
                      thursday:
                        type: array
                        description: List of store opening hours on that weekday.
+                       x-description-i18n:
+                        eng: List of store opening hours on that weekday. 
+                        spa: Lista de horarios de apertura de la tienda en ese día de la semana.
+                        por: Lista de horários de funcionamento da loja naquele dia da semana.
                        items:
                          type: object
                          properties:
@@ -1773,13 +2749,25 @@ paths:
                              type: string
                              example: "8:00"
                              description: Store opening time on that weekday.
+                             x-description-i18n:
+                              eng: Store opening time on that weekday.
+                              spa: Hora de apertura de la tienda en ese día de la semana.
+                              por: Horário de abertura da loja nesse dia da semana.
                            close:
                              type: string
                              example: "15:00"
                              description: Store closing time on that weekday.
+                             x-description-i18n:
+                              eng: Store closing time on that weekday.
+                              spa: Hora de apertura de la tienda en ese día de la semana.
+                              por: Horário de fechamento da loja nesse dia da semana.
                      friday:
                        type: array
                        description: List of store opening hours on that weekday.
+                       x-description-i18n:
+                        eng: List of store opening hours on that weekday. 
+                        spa: Lista de horarios de apertura de la tienda en ese día de la semana.
+                        por: Lista de horários de funcionamento da loja naquele dia da semana.
                        items:
                          type: object
                          properties:
@@ -1787,33 +2775,65 @@ paths:
                              type: string
                              example: "8:00"
                              description: Store opening time on that weekday.
+                             x-description-i18n:
+                              eng: Store opening time on that weekday.
+                              spa: Hora de apertura de la tienda en ese día de la semana.
+                              por: Horário de abertura da loja nesse dia da semana.
                            close:
                              type: string
                              example: "15:00"
                              description: Store closing time on that weekday.
+                             x-description-i18n:
+                              eng: Store closing time on that weekday.
+                              spa: Hora de apertura de la tienda en ese día de la semana.
+                              por: Horário de fechamento da loja nesse dia da semana.
                   location: 
                     type: object
-                    description: Store location information. This includes address, latitute, longitude, and additional location references.
+                    description: Store location information. This includes address, latitude, longitude, and additional location references.
+                    x-description-i18n:
+                      eng: Store location information. This includes address, latitude, longitude, and additional location references.
+                      spa: Almacenar información de ubicación. Esto incluye dirección, latitud, longitud y referencias de ubicación adicionales.
+                      por: Armazenar informações de localização. Isso inclui endereços, latitude, longitude e referências de local adicionais.
                     properties:
                       address_line:
                         type: string
-                        description: Store address information
+                        description: Store address information.
+                        x-description-i18n:
+                          eng: Store address information.
+                          spa: Información de la dirección de la tienda.
+                          por: Armazenar informações de endereço.
                         example: "Viaduto Arapuã - Saude, São Paulo - SP, 04307-070, Brasil"
                       reference:
                         type: string
                         description: Store location add-on.
+                        x-description-i18n:
+                          eng: Store location add-on.
+                          spa: Complemento de ubicación de la tienda.
+                          por: Complemento de localização da loja.
                         example: "Next to a bakery"
                       latitude:
                         type: number
                         description: Latitude of the store.
+                        x-description-i18n:
+                          eng: Latitude of the store.
+                          spa: Latitud de la tienda.
+                          por: Latitude da loja.
                         example: -23.630159633405057
                       longitude:
                         type: number
                         description: Longitude of the store.
+                        x-description-i18n:
+                          eng: Longitude of the store.
+                          spa: Longitud de la tienda.
+                          por: Longitude da loja.
                         example: -46.64532809999999
                   external_id:
                     type: string
-                    description: This optional property indicates the custom external ID of the store. This value can be changed or updated using the endpoint that updates External IDs.
+                    description: This optional property indicates the custom external ID of the store. This value can be changed or updated using the endpoint that updates External IDs. 
+                    x-description-i18n:
+                      eng: This optional property indicates the custom external ID of the store. This value can be changed or updated using the endpoint that updates External IDs. 
+                      spa: Esta propiedad opcional indica el ID externo personalizado de la tienda. Este valor se puede cambiar o actualizar mediante el endpoint que actualiza los ID externos.
+                      por: Esta propriedade opcional indica o ID externo customizado da loja. Esse valor pode ser alterado ou atualizado usando o endpoint que atualiza os IDs externos.
                     example: "9320001PC21"
         '400':
           description: Error
@@ -1896,11 +2916,23 @@ paths:
       tags:
         - $ref: '#/tags/mp-delivery'
       summary: Update store status
+      x-summary-i18n:
+        eng: Update store status
+        spa: Actualizar estado de la tienda
+        por: Atualizar o status da loja
       description: This endpoint changes the operation status of a store
+      x-description-i18n:
+        eng: This endpoint changes the operation status of a store
+        spa: Este endpoint cambia el estado de funcionamiento de una tienda
+        por: Este endpoint altera o status de operação de uma loja
       parameters:
         - name: store_id
           in: path
-          description: Unique ID that identifies the store whose status will be updated.
+          description: ID that identifies the store whose status will be updated.
+          x-description-i18n:
+            eng: ID that identifies the store whose status will be updated.
+            spa: ID que identifica la tienda cuyo estado se actualizará.
+            por: ID que identifica a loja cujo status será atualizado.
           required: true
           schema:
             type: string
@@ -1914,7 +2946,11 @@ paths:
                 status:
                   type: string
                   example: "enabled"
-                  description: Status referring to the current state of operation of the store.
+                  description: Status referring to the state of operation of the store that will be updated.
+                  x-description-i18n:
+                    eng: Status referring to the state of operation of the store that will be updated.
+                    spa: Estado referente al estado de funcionamiento de la tienda que se actualizará.
+                    por: Status referente ao estado de funcionamento da loja que será atualizada.
                   enum:
                     - disabled -- The store is disabled, and will not be shown on marketplace.
                     - enabled -- The store is enabled and is shown on marketplace.
@@ -1930,30 +2966,54 @@ paths:
                   id:
                     type: number
                     example: 41517088
-                    description: Unique ID that identifies the store.  
+                    description: ID that identifies the store.  
+                    x-description-i18n:
+                      eng: ID that identifies the store.
+                      spa: ID que identifica la tienda.
+                      por: ID que identifica a loja.
                   user_id:
                     type: number
                     example: 813887163
-                    description: Unique ID that identifies the user who owns the store.
+                    description: ID that identifies the user who owns the store.
+                    x-description-i18n:
+                      eng: ID that identifies the user who owns the store.
+                      spa: ID que identifica al usuario propietario de la tienda.
+                      por: ID que identifica o usuário proprietário da loja.
                   description:
                     type: string
                     example: "Doc's grocery store"
                     description: Name of the store.
+                    x-description-i18n:
+                      eng: Name of the store.
+                      spa: Nombre de la tienda.
+                      por: Nome da loja.
                   status:
                     type: string
                     example: "enabled"
-                    description: Operation status of a store.
+                    description: Status referring to the current state of operation of the store.
+                    x-description-i18n:
+                      eng: Status referring to the current state of operation of the store.
+                      spa: Estado referente al estado actual de funcionamiento de la tienda.
+                      por: Status referente ao estado atual de funcionamento da loja.
                     enum:
                       - disabled -- The store is disabled, and will not be shown on marketplace.
                       - enabled -- The store is enabled and is shown on marketplace.
                       - paused -- The delivery of store is paused, but the store will cotinue to be shown on marketplace.
                   business_hours:
                     type: object
-                    description: List of store opening hours. Each attribute of the object will be represented by a day of the week.  
+                    description: List of store opening hours. Each attribute of the object will be represented by a day of the week. 
+                    x-description-i18n:
+                      eng: List of store opening hours. Each attribute of the object will be represented by a day of the week.
+                      spa: Lista de horarios de apertura de tiendas. Cada atributo del objeto estará representado por un día de la semana.
+                      por: Lista de horários de funcionamento da loja. Cada atributo do objeto será representado por um dia da semana.
                     properties:
                       monday:
                         type: array
                         description: List of store opening hours on that weekday.
+                        x-description-i18n:
+                          eng: List of store opening hours on that weekday. 
+                          spa: Lista de horarios de apertura de la tienda en ese día de la semana.
+                          por: Lista de horários de funcionamento da loja naquele dia da semana.
                         items:
                           type: object
                           properties:
@@ -1961,13 +3021,25 @@ paths:
                               type: string
                               example: "8:00"
                               description: Store opening time on that weekday.
+                              x-description-i18n:
+                                eng: Store opening time on that weekday.
+                                spa: Hora de apertura de la tienda en ese día de la semana.
+                                por: Horário de abertura da loja nesse dia da semana.
                             close:
                               type: string
                               example: "15:00"
                               description: Store closing time on that weekday.
+                              x-description-i18n:
+                                eng: Store closing time on that weekday.
+                                spa: Hora de apertura de la tienda en ese día de la semana.
+                                por: Horário de fechamento da loja nesse dia da semana.
                       tuesday:
                         type: array
                         description: List of store opening hours on that weekday.
+                        x-description-i18n:
+                          eng: List of store opening hours on that weekday. 
+                          spa: Lista de horarios de apertura de la tienda en ese día de la semana.
+                          por: Lista de horários de funcionamento da loja naquele dia da semana.
                         items:
                           type: object
                           properties:
@@ -1975,13 +3047,25 @@ paths:
                               type: string
                               example: "8:00"
                               description: Store opening time on that weekday.
+                              x-description-i18n:
+                                eng: Store opening time on that weekday.
+                                spa: Hora de apertura de la tienda en ese día de la semana.
+                                por: Horário de abertura da loja nesse dia da semana.
                             close:
                               type: string
                               example: "15:00"
                               description: Store closing time on that weekday.
+                              x-description-i18n:
+                                eng: Store closing time on that weekday.
+                                spa: Hora de apertura de la tienda en ese día de la semana.
+                                por: Horário de fechamento da loja nesse dia da semana.
                       wendsday:
                         type: array
                         description: List of store opening hours on that weekday.
+                        x-description-i18n:
+                          eng: List of store opening hours on that weekday. 
+                          spa: Lista de horarios de apertura de la tienda en ese día de la semana.
+                          por: Lista de horários de funcionamento da loja naquele dia da semana.
                         items:
                           type: object
                           properties:
@@ -1989,13 +3073,25 @@ paths:
                               type: string
                               example: "8:00"
                               description: Store opening time on that weekday.
+                              x-description-i18n:
+                                eng: Store opening time on that weekday.
+                                spa: Hora de apertura de la tienda en ese día de la semana.
+                                por: Horário de abertura da loja nesse dia da semana.
                             close:
                               type: string
                               example: "15:00"
                               description: Store closing time on that weekday.
+                              x-description-i18n:
+                                eng: Store closing time on that weekday.
+                                spa: Hora de apertura de la tienda en ese día de la semana.
+                                por: Horário de fechamento da loja nesse dia da semana.
                       thursday:
                         type: array
                         description: List of store opening hours on that weekday.
+                        x-description-i18n:
+                          eng: List of store opening hours on that weekday. 
+                          spa: Lista de horarios de apertura de la tienda en ese día de la semana.
+                          por: Lista de horários de funcionamento da loja naquele dia da semana.
                         items:
                           type: object
                           properties:
@@ -2003,13 +3099,25 @@ paths:
                               type: string
                               example: "8:00"
                               description: Store opening time on that weekday.
+                              x-description-i18n:
+                                eng: Store opening time on that weekday.
+                                spa: Hora de apertura de la tienda en ese día de la semana.
+                                por: Horário de abertura da loja nesse dia da semana.
                             close:
                               type: string
                               example: "15:00"
                               description: Store closing time on that weekday.
+                              x-description-i18n:
+                                eng: Store closing time on that weekday.
+                                spa: Hora de apertura de la tienda en ese día de la semana.
+                                por: Horário de fechamento da loja nesse dia da semana.
                       friday:
                         type: array
                         description: List of store opening hours on that weekday.
+                        x-description-i18n:
+                          eng: List of store opening hours on that weekday. 
+                          spa: Lista de horarios de apertura de la tienda en ese día de la semana.
+                          por: Lista de horários de funcionamento da loja naquele dia da semana.
                         items:
                           type: object
                           properties:
@@ -2017,33 +3125,65 @@ paths:
                               type: string
                               example: "8:00"
                               description: Store opening time on that weekday.
+                              x-description-i18n:
+                                eng: Store opening time on that weekday.
+                                spa: Hora de apertura de la tienda en ese día de la semana.
+                                por: Horário de abertura da loja nesse dia da semana.
                             close:
                               type: string
                               example: "15:00"
                               description: Store closing time on that weekday.
+                              x-description-i18n:
+                                eng: Store closing time on that weekday.
+                                spa: Hora de apertura de la tienda en ese día de la semana.
+                                por: Horário de fechamento da loja nesse dia da semana.
                   location: 
                     type: object
-                    description: Store location information. This includes address, latitute, longitude, and additional location references.
+                    description: Store location information. This includes address, latitude, longitude, and additional location references.
+                    x-description-i18n:
+                      eng: Store location information. This includes address, latitude, longitude, and additional location references.
+                      spa: Almacenar información de ubicación. Esto incluye dirección, latitud, longitud y referencias de ubicación adicionales.
+                      por: Armazenar informações de localização. Isso inclui endereços, latitude, longitude e referências de local adicionais.
                     properties:
                       address_line:
                         type: string
-                        description: Store address information  
+                        description: Store address information.
+                        x-description-i18n:
+                          eng: Store address information.
+                          spa: Información de la dirección de la tienda.
+                          por: Armazenar informações de endereço.
                         example: "Viaduto Arapuã - Saude, São Paulo - SP, 04307-070, Brasil"
                       reference:
                         type: string
                         description: Store location add-on.
+                        x-description-i18n:
+                          eng: Store location add-on.
+                          spa: Complemento de ubicación de la tienda.
+                          por: Complemento de localização da loja.
                         example: "Next to a bakery"
                       latitude:
                         type: number
                         description: Latitude of the store.
+                        x-description-i18n:
+                          eng: Latitude of the store.
+                          spa: Latitud de la tienda.
+                          por: Latitude da loja.
                         example: -23.630159633405057
                       longitude:
                         type: number
                         description: Longitude of the store.
+                        x-description-i18n:
+                          eng: Longitude of the store.
+                          spa: Longitud de la tienda.
+                          por: Longitude da loja.
                         example: -46.64532809999999
                   external_id:
                     type: string
-                    description: This optional property indicates the custom external ID of the store. This value can be changed or updated using the endpoint that updates External IDs.
+                    description: This optional property indicates the custom external ID of the store. This value can be changed or updated using the endpoint that updates External IDs. 
+                    x-description-i18n:
+                      eng: This optional property indicates the custom external ID of the store. This value can be changed or updated using the endpoint that updates External IDs. 
+                      spa: Esta propiedad opcional indica el ID externo personalizado de la tienda. Este valor se puede cambiar o actualizar mediante el endpoint que actualiza los ID externos.
+                      por: Esta propriedade opcional indica o ID externo customizado da loja. Esse valor pode ser alterado ou atualizado usando o endpoint que atualiza os IDs externos.
                     example: "A15154DE"
         '400':
           description: Error

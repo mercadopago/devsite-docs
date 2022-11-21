@@ -6,7 +6,7 @@
 
 | Brick | Card Payment Form |
 |--- |--- |
-| Momento de customização | Ao renderizar brick |
+| Momento de customização | Ao renderizar Brick |
 | Propriedade | customization.hideFormTitle |
 | Tipo | Boolean |
 | Observações | Quando **true**, oculta a linha de título e as bandeiras aceitas. |
@@ -30,10 +30,10 @@ const settings = {
 
 | Brick | Card Payment Form |
 |--- |--- |
-| Momento de customização | Ao renderizar brick |
+| Momento de customização | Ao renderizar Brick |
 | Propriedade | customization.visual.hidePaymentButton |
 | Tipo | Boolean |
-| Observações | Quando **true** não mostra o botão de enviar o formulário e passa a ser necessário utilizar a função getCardFormData para obter os dados do formulário (veja exemplo abaixo). |
+| Observações | Quando **true** não mostra o botão de enviar o formulário e passa a ser necessário utilizar a função getFormData para obter os dados do formulário (veja exemplo abaixo). |
 
 ```javascript
 const settings = {
@@ -76,3 +76,9 @@ function createPayment(){
         });
 };
 ```
+
+> NOTE
+>
+> Importante
+> 
+> Caso precise customizar o estilo visual do Brick para além das customizações de **temas e variáveis customizadas**, recomendamos que não utilize as classes e ids CSS que são enviadas com os Bricks como referência, visto que são gerados automaticamente durante o processo de build da aplicação e mudam regularmente. Utilize a herança dos elementos HTML para acessar os elementos que necessitar customizar.

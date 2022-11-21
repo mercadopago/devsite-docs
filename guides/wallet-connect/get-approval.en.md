@@ -13,18 +13,3 @@ As indicated in the sequence diagram above, the buyer's approval occurs during t
 
 Once the connection is authorized, check the Create payer token section to complete the Wallet Connect integration.
 
-> PREV_STEP_CARD_EN
->
-> Create agreement
->
-> See the steps for creating an agreement necessary for Wallet Connect integration.
->
-> [Create agreement](/developers/en/docs/wallet-connect/integration-configuration/create-agreement)
-
-> NEXT_STEP_CARD_EN
->
-> Create payer token
->
-> Learn how to create a payer token and complete the Wallet Connect integration.
->
-> [Create payer token](/developers/en/docs/wallet-connect/integration-configuration/create-payer-token)

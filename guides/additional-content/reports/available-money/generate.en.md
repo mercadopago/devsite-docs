@@ -1,4 +1,3 @@
-
 # How to generate your Available Balance report?
 
 ----[mlm]----
@@ -6,7 +5,7 @@
 >
 > Important
 >
-> As of December 12th, you will no longer be able to create new Money withdrawn reports. In order to keep tracking all the transfers, withdrawals and movements of your available money, [please use the Releases report](https://bit.ly/3zCb1ye).
+> As of December 12th, you will no longer be able to create new Money withdrawn reports. In order to keep tracking all the transfers, withdrawals and movements of your available money, [please use the Releases report.](https://bit.ly/3zCb1ye)
 ------------
 
 ----[mla]----
@@ -27,7 +26,6 @@ There are three ways to generate an Available Balance report:
 | API integration | <br/>----[mla, mlb, mlm]---- Schedule the frequency of your report according to your needs. It can be both manually and on a scheduled basis.<br/><br/>Read the documentation to [generate reports through API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/available-money/api). ------------ ----[mpe, mlu, mco, mlc]---- This integration can only be used to consult and download the reports manual and does not allow generating new reports. ------------<br/><br/>|
 | Con el retiro de dinero | <br/>Generate a report automatically each time you withdraw your available balance to a bank account.<br/><br/>Follow the step by step to [generate reports for each withdrawal](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/available-money/withdrawal).<br/><br/> |
 
-
 ## Technical characteristics of the report
 
 Consider the following technical information when you want to generate, schedule and set up your reports.
@@ -36,17 +34,14 @@ Consider the following technical information when you want to generate, schedule
 
 Set up how and how often you want to generate your reports.
 
-
 | Element | Characteristics |
 | --- | --- |
 | Schedule | <br/>- Daily.<br/> - Weekly.<br/>- Monthly. <br/><br/> |
 | Generation | <br/>- Manual.<br/> - Automatic for withdrawal of available balance, total or partial. <br/><br/>These generation instances can live together. That is, even if you schedule the generation of your reports automatically, each time you withdraw money an additional report will be generated.<br/> <br/> |
 
-
 ### Report Structure
 
 Know the characteristics of the elements that make up your report.
-
 
 | Element or Action | Characteristics |
 | --- | --- |
@@ -56,8 +51,7 @@ Know the characteristics of the elements that make up your report.
 | Currency | <br/> Local (based on the country where the Mercado Pago account is registered). <br/> <br/> |
 | Time zone of the columns | <br/> GMT-4 <br/> <br/> Take as reference the place where you download the report from. <br/> <br/> |
 | Date selection via API |<br/> Timezone format: UTC / GMT-0. <br/> <br/> |
-| Date selection via web | <br/> DIt must be based on the timezone of the user's account. <br/> For example, the timezone of Sao Paulo corresponds to the user account registered in Brazil. <br/> <br/> |
-
+| Date selection via web | <br/> DIt must be based on the timezone of the user's account. <br/> For example, the timezone of Sao Paulo corresponds to the user account registered in Brazil. <br/> <br/> 
 
 ### Report Export
 
@@ -70,30 +64,8 @@ All the options you have available when downloading your report.
 | File | <br/>The generated reports are saved in your Mercado Pago account.<br/><br/> |
 | Set up available via API | <br/>- Columns to generate per report<br/> - File prefix for easy identification<br/> - SFTP upload<br/> - Column separator (period or semicolon)<br/> - Decimal separator (comma or period)<br/> - Email notification<br/> - Withdrawal at the end of the report (optional) <br/><br/> |
 
-
-
 > NOTE
 >
 > Note
 >
 > Have the [Glossary](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/available-money/glossary) of the Available Balance report on hand to review it when needed or want to review a technical term.
-
-<hr/>
-
-### Next steps
-
-> LEFT_BUTTON_REQUIRED_EN
->
-> Generating from Mercado Pago  
->
-> Create your reports manually or scheduled from your Mercado Pago account.
->
-> [Generating from Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/available-money/panel)
-
-> RIGHT_BUTTON_REQUIRED_EN
->
-> Generating through API
->
-> Create reports in a scheduled and manual way through an integration with Mercado Pago.
->
-> [Generating through API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/available-money/api)

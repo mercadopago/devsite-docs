@@ -5,12 +5,12 @@ Para configurar a integração do Payment Brick para receber pagamentos com a Ca
 1. [Criar preferência](#bookmark_criar_preferência)
 2. [Criar container](#bookmark_criar_container)
 3. [Incluir e configurar a biblioteca MercadoPago.js](#bookmark_incluir_e_configurar_a_biblioteca_mercadopago.js)
-4. [Instanciar brick](#bookmark_instanciar_brick)
-5. [Renderizar brick](#bookmark_renderizar_brick)
+4. [Instanciar Brick](#bookmark_instanciar_brick)
+5. [Renderizar Brick](#bookmark_renderizar_brick)
 
-> Os passos são realizados no back-end ou no front-end. As pills **Client-Side** e **Server-Side** localizadas imediatamentamente ao lado do título te ajudam a identificar qual passo é realizado em qual instância.<br/></br>
+> Os passos são realizados no back-end ou no front-end. As pills **Client-Side** e **Server-Side** localizadas imediatamente ao lado do título te ajudam a identificar qual passo é realizado em qual instância.<br/></br>
 > <br/></br>
-> E, para ajudar, preparamos um [exemplo de codigo](/developers/pt/docs/checkout-bricks/payment-brick/code-example/wallet) completo da configuração do Payment Brick com Carteira Mercado Pago que você pode usar como modelo.
+> E, para ajudar, preparamos um [exemplo de código](/developers/pt/docs/checkout-bricks/payment-brick/code-example/wallet) completo da configuração do Payment Brick com Carteira Mercado Pago que você pode usar como modelo.
 
 > SERVER_SIDE
 >
@@ -104,7 +104,7 @@ let preference = {
 
 mercadopago.preferences.create(preference)
   .then(function (response) {
-    // Este valor é o preferenceId que será enviado para o brick na inicialização
+    // Este valor é o preferenceId que será enviado para o Brick na inicialização
     const preferenceId = response.body.id;
   }).catch(function (error) {
     console.log(error);
@@ -149,7 +149,7 @@ preference_data = {
 preference_response = sdk.preference.create(preference_data)
 preference = preference_response[:response]
 
-# Este valor é o preferenceId que você usará no HTML na inicialização no brick
+# Este valor é o preferenceId que você usará no HTML na inicialização no Brick
 @preference_id = preference['id']
 ```
 ```csharp
@@ -253,7 +253,7 @@ let preference = {
 
 mercadopago.preferences.create(preference)
   .then(function (response) {
-    // Este valor é o preferenceId que será enviado para o brick na inicialização
+    // Este valor é o preferenceId que será enviado para o Brick na inicialização
     const preferenceId = response.body.id;
   }).catch(function (error) {
     console.log(error);
@@ -298,7 +298,7 @@ preference_data = {
 preference_response = sdk.preference.create(preference_data)
 preference = preference_response[:response]
 
-# Este valor é o preferenceId que você usará no HTML na inicialização no brick
+# Este valor é o preferenceId que você usará no HTML na inicialização no Brick
 @preference_id = preference['id']
 ```
 ```csharp
@@ -377,7 +377,7 @@ curl -X POST \
 >
 > Criar container
 
-Você vai precisar criar um container para definir o local que o brick será inserido na tela. A criação do container é feita inserindo um elemento (por exemplo, uma div) no código HTML da página no qual o brick será renderizado (veja código abaixo). 
+Você vai precisar criar um container para definir o local que o Brick será inserido na tela. A criação do container é feita inserindo um elemento (por exemplo, uma div) no código HTML da página no qual o Brick será renderizado (veja código abaixo). 
 
 > NOTE
 >
@@ -418,9 +418,9 @@ const mp = new MercadoPago('YOUR_PUBLIC_KEY');
 >
 > h2
 >
-> Instanciar brick
+> Instanciar Brick
 
-Com o container criado e o SDK JS instalado, o próximo passo é instanciar o brick builder, que permitirá gerar o brick. Para instanciar o brick, insira o código abaixo após a etapa anterior. 
+Com o container criado e o SDK JS instalado, o próximo passo é instanciar o Brick builder, que permitirá gerar o Brick. Para instanciar o Brick, insira o código abaixo após a etapa anterior. 
 
 ```javascript
 const bricksBuilder = mp.bricks();
@@ -430,17 +430,17 @@ const bricksBuilder = mp.bricks();
 >
 > Atenção
 >
-> Durante a instanciação do brick, é possível que apareçam diferentes erros. Para detalhamento de cada um deles, veja a seção [Possíveis erros](/developers/pt/docs/checkout-bricks/additional-content/possible-errors).
+> Durante a instanciação do Brick, é possível que apareçam diferentes erros. Para detalhamento de cada um deles, veja a seção [Possíveis erros](/developers/pt/docs/checkout-bricks/additional-content/possible-errors).
 
 > CLIENT_SIDE
 >
 > h2
 >
-> Renderizar brick
+> Renderizar Brick
 
-Uma vez instanciado, o brick pode ser renderizado e ter todas as suas configurações compiladas de modo que a estrutura final do brick seja gerada.
+Uma vez instanciado, o Brick pode ser renderizado e ter todas as suas configurações compiladas de modo que a estrutura final do Brick seja gerada.
 
-Para renderizar o brick, insira o código abaixo após o passo anterior e preencha os atributos conforme os comentários destacados neste mesmo código.
+Para renderizar o Brick, insira o código abaixo após o passo anterior e preencha os atributos conforme os comentários destacados neste mesmo código.
 
 ```javascript
 const renderPaymentBrick = async (bricksBuilder) => {
@@ -451,7 +451,10 @@ const renderPaymentBrick = async (bricksBuilder) => {
  },
  callbacks: {
    onReady: () => {
-     // callback chamado quando o Brick estiver pronto
+      /*
+        Callback chamado quando o Brick estiver pronto.
+        Aqui você pode ocultar loadings do seu site, por exemplo.
+      */
    },
    onSubmit: ({ selectedPaymentMethod, formData }) => {
      // callback chamado ao clicar no botão de submissão dos dados
@@ -460,6 +463,7 @@ const renderPaymentBrick = async (bricksBuilder) => {
    },
    onError: (error) => {
      // callback chamado para todos os casos de erro do Brick
+     console.error(error);
    },
  },
 };
@@ -473,29 +477,29 @@ const renderPaymentBrick = async (bricksBuilder) => {
 renderPaymentBrick(bricksBuilder);
 ```
 
-O resultado de renderizar o brick deve ser como na imagem abaixo:
+O resultado de renderizar o Brick deve ser como na imagem abaixo:
 
 ----[mlb]---- 
-![payment-brick-wallet-mlb](checkout-bricks/payment-brick-wallet-mlb-pt.png)
+![payment-Brick-wallet-mlb](checkout-bricks/payment-brick-wallet-mlb-pt.png)
 
 ------------
 ----[mla]---- 
-![payment-brick-wallet-mla](checkout-bricks/payment-brick-wallet-mla-pt.png)
+![payment-Brick-wallet-mla](checkout-bricks/payment-brick-wallet-mla-pt.png)
 
 ------------
 ----[mlc]---- 
-![payment-brick-wallet-mlc](checkout-bricks/payment-brick-wallet-mlc-pt.png)
+![payment-Brick-wallet-mlc](checkout-bricks/payment-brick-wallet-mlc-pt.png)
 
 ------------
 ----[mlm]---- 
-![payment-brick-wallet-mlm](checkout-bricks/payment-brick-wallet-mlm-pt.png)
+![payment-Brick-wallet-mlm](checkout-bricks/payment-brick-wallet-mlm-pt.png)
 
 ------------
 ----[mlu]---- 
-![payment-brick-wallet-mlu](checkout-bricks/payment-brick-wallet-mlu-pt.png)
+![payment-Brick-wallet-mlu](checkout-bricks/payment-brick-wallet-mlu-pt.png)
 
 ------------
 ----[mpe, mco]---- 
-![payment-brick-wallet-mco-mpe](checkout-bricks/payment-brick-wallet-mco-mpe-pt.png)
+![payment-Brick-wallet-mco-mpe](checkout-bricks/payment-brick-wallet-mco-mpe-pt.png)
 
 ------------

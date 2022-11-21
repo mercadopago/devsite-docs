@@ -1,4 +1,3 @@
-
 # Geração via API
 
 Gere manualmente o relatório de dinheiro ----[mla]----liquidado------------ ----[mlm, mlb, mlc, mco, mlu, mpe]----liberado------------ quantas vezes quiser ou programe-o de acordo com a frequência que você escolher por meio de nossa API.
@@ -8,7 +7,7 @@ Gere manualmente o relatório de dinheiro ----[mla]----liquidado------------ ---
 >
 > Importante
 >
-> Limitamos o uso desta API à consulta e download manual de arquivos históricos devido à desativação do relatório "Dinheiro retirado" nos próximos meses. Recomendamos que você [use o relatório "Liberações"](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/23879?utm_source=faq_mp&utm_medium=faq&utm_campaign=bank_disable)
+> Limitamos o uso desta API à consulta e download manual de arquivos históricos devido à desativação do relatório "Dinheiro retirado" nos próximos meses. Recomendamos que você [use o relatório "Liberações".](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/23879?utm_source=faq_mp&utm_medium=faq&utm_campaign=bank_disable)
 ------------
 
 ## Atributos configuráveis
@@ -19,7 +18,7 @@ Confira os campos que você pode configurar para ajustar suas preferências ante
 >
 > Importante
 >
-> Configurar este atributo de `frequency` não significa que o relatório será gerado automaticamente. A configuração será aplicada somente quando o agendamento automático for ativado. Para mais detalhes, confira a seção [Agende seus relatórios](#bookmark_agende_seus_relatórios_automáticos).
+> Configurar este atributo de `frequency` não significa que o relatório será gerado automaticamente. A configuração será aplicada somente quando o agendamento automático for ativado. Para mais detalhes, confira a seção [Agende seus relatórios.](#bookmark_agende_seus_relatórios_automáticos)
 
 | Campos configuráveis | Descrição |
 | --- | --- |
@@ -1085,24 +1084,4 @@ Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
 >
 > Esta documentação corresponde à nova versão da API
 >
-> Para consultar a versão anterior, por favor, acesse a [seção Geração por API antiga](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/available-money/v1/api).
-
-<hr/>
-
-### Próximos passos
-
-> LEFT_BUTTON_RECOMMENDED_PT
->
-> Geração a partir do Mercado Pago
->
-> Gere seus relatórios de Dinheiro Disponível a partir do painel do Mercado Pago em 3 etapas simples.
->
-> [Geração a partir do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/available-money/panel)
-
-> RIGHT_BUTTON_RECOMMENDED_PT
->
-> Geração por retirada
->
-> Gere um relatório a cada vez que retirar dinheiro para uma conta bancária.
->
-> [Geração por retirada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/available-money/withdrawal)
+> Para consultar a versão anterior, por favor, acesse a [seção Geração por API antiga.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/available-money/v1/api)

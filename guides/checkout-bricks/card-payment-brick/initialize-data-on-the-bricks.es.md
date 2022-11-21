@@ -4,7 +4,7 @@
 >
 > Inicializar datos en Bricks
 
-## Iniciar brick con email
+## Iniciar Brick con email
 
 | Brick | Card Payment Brick |
 | --- | --- |

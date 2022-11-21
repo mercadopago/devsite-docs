@@ -1,10 +1,10 @@
-# Card payment brick 
+# Card Payment Brick 
 
 Card Payment Brick offers a payment form with an optimized design and different themes, providing all the necessary fields to make a payment with a credit and/or debit card, and includes the necessary mechanisms to automatically receive the necessary data to create the payment in the back end.
 
-This brick, in addition to containing the fields to collect the personal data of the cardholder (name of the cardholder and ID), also has fields to collect the card number, the expiration date and the security code (CVV), which already comply with [PCI](/developers/en/guides/additional-content/security/pci) security standards, eliminating the need to process this data.
+This Brick, in addition to containing the fields to collect the personal data of the cardholder (name of the cardholder and ID), also has fields to collect the card number, the expiration date and the security code (CVV), which already comply with [PCI](/developers/en/guides/additional-content/security/pci) security standards, eliminating the need to process this data.
 
-In addition to collecting the necessary fields to make the payment, this component also helps the user to complete the screen with alerts for incomplete fields and possible input errors. See below the main features of this brick.
+In addition to collecting the necessary fields to make the payment, this component also helps the user to complete the screen with alerts for incomplete fields and possible input errors. See below the main features of this Brick.
 
 ![cardform](checkout-bricks/card-form-en.png)
 
@@ -16,7 +16,7 @@ The Card Payment Brick layout is based on the best UX practices, so that it is p
 >
 > Attention
 >
-> The bricks were created not only to meet the technical needs of implementation and security, but also to provide the best experience for the buyer. Customizing a brick can drastically change the buyer's experience. Our recommendation is that you always use the brick with as little additional customization as possible to always ensure the best experience.
+> The Bricks were created not only to meet the technical needs of implementation and security, but also to provide the best experience for the buyer. Customizing a Brick can drastically change the buyer's experience. Our recommendation is that you always use the Brick with as little additional customization as possible to always ensure the best experience.
 
 | Element  | Characteristics  | Comments  |
 | --- | --- | --- |

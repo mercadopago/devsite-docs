@@ -1,6 +1,4 @@
-
 # How to use the report?
-
 
 Once the report is ready and downloaded, you will have a file to review the spreadsheets or import into the reconciliation program you use.
 
@@ -13,6 +11,7 @@ To review the report we recommend downloading it in .csv format to open it in th
 >
 > As of December 12th, you will no longer be able to create new Money withdrawn reports. In order to keep tracking all the transfers, withdrawals and movements of your available money, [please use the Releases report](https://bit.ly/3zCb1ye).
 ------------
+
 ----[mla]----
 > WARNING
 >
@@ -20,6 +19,7 @@ To review the report we recommend downloading it in .csv format to open it in th
 >
 > As of December 5th, you will no longer be able to create new Money withdrawn reports. In order to keep tracking all the transfers, withdrawals and movements of your available money, [please use the Releases report](https://bit.ly/3zCb1ye).
 ------------
+
 ## What does the report contain?
 
 The report is composed by:
@@ -68,25 +68,5 @@ The default version will show an extended view of the columns. The final report 
 > Important: differences between partial withdrawal and total withdrawal.
 >
 > When you withdraw all your available money, the total report will match that amount. On the other hand, when you make a partial withdrawal, which does not include all of your released account money, the total available balance and the total of the report will not match.
-><br>
+> <br>
 > For example, imagine that you have $ 3,000 available to withdraw to a bank account but only withdraw $ 2,000. The withdrawal is partial but the total value of the report will continue to show you the amount of the initial balance that was at the time of withdrawal, that is, the $ 3,000 you had available. On the other hand, if you withdraw the $ 3,000, the total value of the report will match the value of that withdrawal.
-
-<hr/>
-
-### Next steps
-
-> LEFT_BUTTON_REQUIRED_EN
->
-> Generate your reports
->
-> Learn the ways to generate a report and follow the steps to set your preferences.
->
-> [Generate your reports](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/available-money/generate)
-
-> RIGHT_BUTTON_RECOMMENDED_EN
->
-> Glossary
->
-> Know what each term means and the detail of the columns that make up the report.
->
-> [Glossary](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/available-money/glossary)

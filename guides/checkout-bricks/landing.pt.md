@@ -93,9 +93,9 @@ available_payments: credit, debit, mercadopago, boleto, pix, pec
 ----[mla]---- 
 
 ---
-available_payments: credit, debit, mercadopago
+available_payments: credit, debit, mercadopago, efectivo
 
-----
+---
 ------------
 
 ----[mlm]---- 
@@ -103,7 +103,7 @@ available_payments: credit, debit, mercadopago
 ---
 available_payments: credit, debit, mercadopago
 
-----
+---
 ------------
 
 ----[mlu]---- 
@@ -111,7 +111,7 @@ available_payments: credit, debit, mercadopago
 ---
 available_payments: credit, debit, mercadopago
 
-----
+---
 ------------
 
 ----[mco]---- 
@@ -119,7 +119,7 @@ available_payments: credit, debit, mercadopago
 ---
 available_payments: credit, debit, mercadopago
 
-----
+---
 ------------
 
 ----[mlc]---- 
@@ -127,7 +127,7 @@ available_payments: credit, debit, mercadopago
 ---
 available_payments: credit, debit, mercadopago
 
-----
+---
 ------------
 
 ----[mpe]---- 
@@ -135,7 +135,7 @@ available_payments: credit, debit, mercadopago
 ---
 available_payments: credit, debit, mercadopago
 
-----
+---
 ------------
 
 > Para detalhes dos meios de pagamento aceitos em cada país, verifique a lista completa com a [disponibilidade de meios de pagamento.](/developers/pt/docs/sales-processing/payment-methods)

@@ -6,23 +6,7 @@
 
 ## Cards
 
-In the form displayed for payment by card, you can start with the **document** and **email** fields already filled in. For this, it is necessary to pass the following configuration in the brick's initialization object.
-
-```javascript
-settings = {
-  ...,
-  initialization: {
- ...,
- payer: {
-   email: 'jose@maria.com'
- }
-}
-```
-
-----[mlb]----
-## Pix
-
-In the form displayed for payment by Pix, you can start with the **email** field already filled in. For this, it is necessary to pass the following configuration in the brick's initialization object.
+In the form displayed for payment by card, you can start with the **document** and **email** fields already filled in. For this, it is necessary to pass the following configuration in the Brick's initialization object.
 
 ```javascript
 settings = {
@@ -35,15 +19,31 @@ settings = {
       identification: {
           type: 'string',
           number: 'string',
-        },
+      },
     }
   }
 }
 ```
 
+----[mlb]----
+## Pix
+
+In the form displayed for payment by Pix, you can start with the **email** field already filled in. For this, it is necessary to pass the following configuration in the Brick's initialization object.
+
+```javascript
+settings = {
+  ...,
+  initialization: {
+   ...,
+  payer: {
+  email: 'jose@maria.com'
+   }
+}
+```
+
 ## Other payment methods
 
-In the form displayed for payment by **boleto bancário** and **payment in lottery**, you can start with the fields already filled in. For this, it is necessary to pass the following configuration in the brick's initialization object.
+In the form displayed for payment by **boleto bancário** and **payment in lottery**, you can start with the fields already filled in. For this, it is necessary to pass the following configuration in the Brick's initialization object.
 
 ```javascript
 settings = {
@@ -68,6 +68,22 @@ settings = {
      complement: 'Casa 2',
    }
  }
+}
+```
+------------
+----[mla]----
+## Other payment methods
+
+In the form displayed for payment by **Rapipago** and **Pago Fácil**, you can start with the fields already filled in. For this, it is necessary to pass the following configuration in the Brick's initialization object.
+
+```javascript
+settings = {
+  ...,
+  initialization: {
+   ...,
+  payer: {
+  email: 'jose@maria.com',
+   }
 }
 ```
 ------------

@@ -10,60 +10,68 @@ To facilitate and optimize your integration process, check below a complete exam
 
 ```html
 <html>
-    <head>
-        <script src="https://sdk.mercadopago.com/js/v2"></script>
-    </head>
-    <body>
-        <div id="cardPaymentBrick_container"></div>
-        <script>
-            const mp = new MercadoPago('YOUR_PUBLIC_KEY');
-            const bricksBuilder = mp.bricks();
-            const renderCardPaymentBrick = async (bricksBuilder) => {
-                const settings = {
-                    initialization: {
-                        amount: 100, // total amount to be paid
-                        payer: {
-                        email: 'test@mail.com',
-                    },
-                    },
-                    style: {
-                        theme: 'default' // | 'dark' | 'bootstrap' | 'flat'
-                    },
-                    callbacks: {
-                        onReady: () => {
-                        // callback chamado quando o Brick estiver pronto
-                        },
-                        onSubmit: (cardFormData) => {
-                        // callback chamado o usuário clicar no botão de submissão dos dados
-                        // ejemplo de envío de los datos recolectados por el Brick a su servidor
-                        return new Promise((resolve, reject) => {
-                            fetch("/process_payment", {
-                                method: "POST",
-                                headers: {
-                                    "Content-Type": "application/json",
-                                },
-                                body: JSON.stringify(cardFormData)
-                            })
-                            .then((response) => {
-                                // receber o resultado do pagamento
-                                resolve();
-                            })
-                            .catch((error) => {
-                                // lidar com a resposta de erro ao tentar criar o pagamento
-                                reject();
-                            })
-                            });
-                        },
-                        onError: (error) => {
-                        // callback chamado para todos os casos de erro do Brick
-                        },
-                    },
-                };
-                window.cardPaymentBrickController = await bricksBuilder.create('cardPayment', 'cardPaymentBrick_container', settings);
-            };
-            renderCardPaymentBrick(bricksBuilder);  
-        </script>
-    </body>
+<head>
+  <script src="https://sdk.mercadopago.com/js/v2"></script>
+</head>
+<body>
+  <div id="cardPaymentBrick_container"></div>
+  <script>
+    const mp = new MercadoPago('YOUR_PUBLIC_KEY');
+    const bricksBuilder = mp.bricks();
+    const renderCardPaymentBrick = async (bricksBuilder) => {
+      const settings = {
+        initialization: {
+          amount: 100, // total amount to be paid
+          payer: {
+            email: 'test@mail.com',
+          },
+        },
+        customization: {
+          visual: {
+            style: {
+              theme: 'default' // | 'dark' | 'bootstrap' | 'flat'
+            }
+          }
+        },        
+        callbacks: {
+          onReady: () => {
+            /*
+              Callback called when Brick is ready
+              Here you can hide loadings from your site, for example.
+            */
+          },
+          onSubmit: (cardFormData) => {
+            // callback called the user to click on the data submit button
+            // example of sending the data collected by el Brick to your
+            return new Promise((resolve, reject) => {
+              fetch("/process_payment", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify(cardFormData)
+              })
+                .then((response) => {
+                  // receive payment result
+                  resolve();
+                })
+                .catch((error) => {
+                  // handle error response when trying to create payment
+                  reject();
+                })
+            });
+          },
+          onError: (error) => {
+            // callback called for all Brick error cases
+            console.error(error);
+          },
+        },
+      };
+      window.cardPaymentBrickController = await bricksBuilder.create('cardPayment', 'cardPaymentBrick_container', settings);
+    };
+    renderCardPaymentBrick(bricksBuilder);
+  </script>
+</body>
 </html>
 ```
 
@@ -79,36 +87,30 @@ To facilitate and optimize your integration process, check below a complete exam
 You can find payment status in _status_ value.
 ===
 <?php
-    require_once 'vendor/autoload.php';
-
-    MercadoPago\SDK::setAccessToken("YOUR_ACCESS_TOKEN");
-
-    $payment = new MercadoPago\Payment();
-    $payment->transaction_amount = (float)$_POST['transactionAmount'];
-    $payment->token = $_POST['token'];
-    $payment->description = $_POST['description'];
-    $payment->installments = (int)$_POST['installments'];
-    $payment->payment_method_id = $_POST['paymentMethodId'];
-    $payment->issuer_id = (int)$_POST['issuer'];
-
-    $payer = new MercadoPago\Payer();
-    $payer->email = $_POST['cardholderEmail'];
-    $payer->identification = array(----[mla, mlb, mlu, mlc, mpe, mco]----
-        "type" => $_POST['identificationType'],------------
-        "number" => $_POST['identificationNumber']
-    );
-    $payer->first_name = $_POST['cardholderName'];
-    $payment->payer = $payer;
-
-    $payment->save();
-
-    $response = array(
-        'status' => $payment->status,
-        'status_detail' => $payment->status_detail,
-        'id' => $payment->id
-    );
-    echo json_encode($response);
-
+  require_once 'vendor/autoload.php';
+  MercadoPago\SDK::setAccessToken("YOUR_ACCESS_TOKEN");
+  $contents = json_decode(file_get_contents('php://input'), true);
+ 
+  $payment = new MercadoPago\Payment();
+  $payment->transaction_amount = $contents['transaction_amount'];
+  $payment->token = $contents['token'];
+  $payment->installments = $contents['installments'];
+  $payment->payment_method_id = $contents['payment_method_id'];
+  $payment->issuer_id = $contents['issuer_id'];
+  $payer = new MercadoPago\Payer();
+  $payer->email = $contents['payer']['email'];
+  $payer->identification = array(
+     "type" => $contents['payer']['identification']['type'],
+     "number" => $contents['payer']['identification']['number']
+  );
+  $payment->payer = $payer;
+  $payment->save();
+  $response = array(
+     'status' => $payment->status,
+     'status_detail' => $payment->status_detail,
+     'id' => $payment->id
+  );
+  echo json_encode($response);
 ?>
 ```
 ```node

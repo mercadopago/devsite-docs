@@ -5,16 +5,16 @@
 >
 > Importante
 >
-> A partir de 5 de dezembro, não será mais possível criar novos relatórios de Dinheiro retirado. Para continuar controlando as transferências, saques e movimentações do seu saldo disponível, por favor,[use o relatório Liberações](https://bit.ly/3B7Q5Qy).
+> A partir de 5 de dezembro, não será mais possível criar novos relatórios de Dinheiro retirado. Para continuar controlando as transferências, saques e movimentações do seu saldo disponível, por favor,[use o relatório Liberações.](https://bit.ly/3B7Q5Qy)
 ------------
+
 ----[mlm]----
 > WARNING
 >
 > Importante
 >
-> A partir de 12 de dezembro, não será mais possível criar novos relatórios de Dinheiro retirado. Para continuar controlando as transferências, saques e movimentações do seu saldo disponível, por favor,[use o relatório Liberações](https://bit.ly/3RH0KJ4).
+> A partir de 12 de dezembro, não será mais possível criar novos relatórios de Dinheiro retirado. Para continuar controlando as transferências, saques e movimentações do seu saldo disponível, por favor,[use o relatório Liberações.](https://bit.ly/3RH0KJ4)
 ------------
-
 
 Sabemos que alguns termos são técnicos e você pode não estar familiarizado com todos eles. Use este glossário para não se perder!
 
@@ -53,23 +53,3 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 | TAXES_DISAGGREGATED | Impostos desagregados no formato JSON. |
 | EFFECTIVE_COUPON_AMOUNT | Custo de oferecer desconto. |
 | POI_ID | ID da maquininha se o pagamento é feito em uma loja física. |
-
-<hr/>
-
-### Próximos passos
-
-> LEFT_BUTTON_RECOMMENDED_PT
->
-> Como usar o relatório
->
-> Saiba como o relatório é composto e aprenda a analisá-lo.
->
-> [Como usar o relatório](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/available-money/how-to-use)
-
-> RIGHT_BUTTON_REQUIRED_PT
->
-> Gere seus relatórios
->
-> Saiba as formas de gerar um relatório e siga as etapas para configurar suas preferências.
->
-> [Gere seus relatórios](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/available-money/generate)

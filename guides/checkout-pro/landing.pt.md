@@ -30,8 +30,9 @@ bullet_section_with_media:
 --- mini_landing_separator ---
 
 >>>> Diferenças entre Checkout Pro e Checkout Transparente <<<<
+
 ----[mla, mlb]----
-|   Benefícios                          | Checkout Pro | Checkout API |
+|   Benefícios                          | Checkout Pro | Checkout Transparente |
 | :--- | :---: | :---: |
 | Dificuldade de integração             | Baixa | Alta |
 | Design UI/UX                          | ✔ |   |
@@ -46,7 +47,7 @@ bullet_section_with_media:
 ------------
 
 ----[mlm, mlu, mco, mlc, mpe]----
-|   Benefícios                          | Checkout Pro | API |
+|   Benefícios                          | Checkout Pro | Checkout Transparente |
 | :--- | :---: | :---: |
 | Dificuldade de integração             | Baixa | Alta |
 | Design UI/UX                          | ✔ |   |
