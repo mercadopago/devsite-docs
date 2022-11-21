@@ -33,7 +33,7 @@ const settings = {
 | Momento de customização | Ao renderizar Brick |
 | Propriedade | customization.visual.hidePaymentButton |
 | Tipo | Boolean |
-| Observações | Quando **true** não mostra o botão de enviar o formulário e passa a ser necessário utilizar a função getCardFormData para obter os dados do formulário (veja exemplo abaixo). |
+| Observações | Quando **true** não mostra o botão de enviar o formulário e passa a ser necessário utilizar a função getFormData para obter os dados do formulário (veja exemplo abaixo). |
 
 ```javascript
 const settings = {

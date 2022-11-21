@@ -455,7 +455,7 @@ const renderPaymentBrick = async (bricksBuilder) => {
      /*
        Callback llamado cuando Brick está listo
        Aquí puedes ocultar loadings de su sitio, por ejemplo.
-     s*/
+     */
    },
    onSubmit: ({ selectedPaymentMethod, formData }) => {
      // callback called when clicking on the data submission button

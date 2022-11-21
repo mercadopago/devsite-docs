@@ -99,8 +99,8 @@ const renderPaymentBrick = async (bricksBuilder) => {
    callbacks: {
      onReady: () => {
         /*
-          Callback llamado cuando Brick está listo
-          Aquí puedes ocultar loadings de su sitio, por ejemplo.
+          Callback chamado quando o Brick estiver pronto.
+          Aqui você pode ocultar loadings do seu site, por exemplo.
         */
      },
      onSubmit: ({ selectedPaymentMethod, formData }) => {
