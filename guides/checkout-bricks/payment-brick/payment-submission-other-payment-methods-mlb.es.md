@@ -260,7 +260,7 @@ Después de crear el pago desde backend con el SDK de Mercado Pago, use el **id*
 
 Además de mostrar el estado del pago, Status Screen Brick también mostrará el código de barras del ticket para copiar y pegar o para que el comprador lo escanee y pague. Descubra lo sencillo que es integrar [haga clic aquí](/developers/es/docs/checkout-bricks/status-screen-brick/configure-integration).
 
-![payment-submission-other-payment-methods-status-mlb](checkout-bricks/payment-submission-other-payment-methods-status-mlb-es.jpg)
+![payment-submission-other-payment-methods-status-mlb-es](checkout-bricks/payment-submission-other-payment-methods-status-mlb-es.jpg)
 
 > NOTE
 >
