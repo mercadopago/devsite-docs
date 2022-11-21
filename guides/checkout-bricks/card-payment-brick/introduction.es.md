@@ -11,7 +11,8 @@ live_demo_code_action:
  - title: Prueba nuestro Brick
  - description: Construye y comprueba la experiencia visual de Card Payment Brick en tiempo real. Cuando esté todo listo, descarga o copia el código generado.
  - link: /developers/es/live-demo/card-payment-brick
- - image:https://i.ibb.co/NS8b1Dr/Frame-3916.png
+ - image:https://i.ibb.co/KWH0Szk/Card-Payment-Brick-Gif-1.png
+ - linkName: Demo
  - buttonDescription: Construir tu Card Payment Brick
 ---
 <br>
