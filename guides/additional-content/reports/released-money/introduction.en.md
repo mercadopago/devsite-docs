@@ -10,6 +10,13 @@ Releases report is a **downloadable report that allows you to know the liquidity
 >
 > In your reports for October and the coming months you will see your transactions sorted by date of creation so that you can identify them more easily. [Learn how to read your report.](https://bit.ly/3zCb1ye)
 ------------
+----[mlb]----
+> WARNING
+>
+> Important
+>
+> The reports you generate from January 1st 2023 will show your money movements in chronological order, so you will be able to identify them more easily and better control your business finances [Learn how to use it.](https://bit.ly/3zCb1ye)
+------------
 
 ## How do I download the report?
 

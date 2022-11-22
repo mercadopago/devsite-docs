@@ -7,7 +7,15 @@ El reporte de Dinero retirado es un **informe descargable que te permite conocer
 >
 > Importante
 >
-> A partir del 12 de diciembre no podrás crear nuevos reportes Dinero retirado. Para seguir llevando el control de todos los retiros y movimientos de tu dinero disponible [usa el reporte Liberaciones.](https://bit.ly/3QiCD2f)
+> A partir del 12 de diciembre no podrás crear nuevos reportes **Dinero retirado**. Para seguir llevando el control de todos los retiros y movimientos de tu dinero disponible [usa el reporte Liberaciones.](https://bit.ly/3QiCD2f)
+------------
+
+----[mlb]----
+> WARNING
+>
+> Importante
+>
+> A partir del 1 de marzo de 2023, no será más posible crear nuevos reportes de **Dinero retirado**. Para continuar controlando las transferencias, retiros y movimientos de tu Dinero disponible, por favor, [usa el reporte Liberaciones.](https://bit.ly/3QiCD2f)
 ------------
 
 ----[mla]----
