@@ -66,7 +66,7 @@ bullet_section_with_media:
 
 >>>> Accepted payment types <<<<
 ---
-available_payments: credit, debit, pix
+available_payments: mercadopago, credit, debit, pix
 
 ---
 
@@ -79,7 +79,7 @@ available_payments: credit, debit, pix
 
 >>>> Accepted payment types <<<<
 ---
-available_payments: credit, debit
+available_payments: mercadopago, credit, debit
 
 ---
 
