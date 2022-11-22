@@ -12,18 +12,3 @@ To perform a signature integration, you must meet the requirements listed below.
  
 If all the prerequisites were met, you can perform the subscription integration.
 
-> PREV_STEP_CARD_EN
->
-> Introduction
->
-> See more information about Subscriptions and their characteristics.
->
-> [Introduction](/developers/en/docs/subscriptions/landing)
-
-> NEXT_STEP_CARD_EN
->
-> Subscriptions with associated plan
->
-> See more information about the signatures used when it is necessary to have the same signature on different occasions and organize them into identifiable groups.
->
-> [Subscriptions with associated plan](/developers/en/docs/subscriptions/integration-configuration/subscriptions-associated-plan)

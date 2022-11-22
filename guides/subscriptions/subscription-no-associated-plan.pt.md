@@ -11,9 +11,35 @@ Este modelo de assinatura pode ser feito de duas maneiras:
 
 Assinaturas com pagamento autorizado permitem que a parcela de uma assinatura seja gerada e cobrada com base na recorrência definida, fazendo com que o mecanismo de assinatura agende e crie os pagamentos automaticamente com base no meio de pagamento definido no ato da criação da assinatura.
 
-Para oferecer **assinaturas sem um plano associado e com pagamento autorizado**, envie um POST com os atributos necessários ao endpoint [/preapproval](/developers/pt/reference/subscriptions/_preapproval/post) e atente-se ao parâmetro `status`, que deverá ser preenchido com o valor `authorized`. 
+Para oferecer **assinaturas sem um plano associado e com pagamento autorizado**, envie um POST com os atributos necessários ao endpoint [/preapproval](/developers/pt/reference/subscriptions/_preapproval/post) e atente-se ao parâmetro `status`, que deverá ser preenchido com o valor `authorized`. Se preferir, utilize o curl disponível abaixo.
 
-Finalizando o preenchimento dos campos, execute a requisição.
+[[[
+```curl
+
+curl --location --request POST 'https://api.mercadopago.com/preapproval?access_token=APP_USR-????????' \
+--header 'Content-Type: application/json' \
+--header 'X-scope: stage' \
+--data-raw '{
+		"back_url":"https://www.google.com",
+	"reason":"Test Subscription",
+	"auto_recurring":{
+		"frequency":"6",
+		"frequency_type":"months",
+		"repetitions":10,
+		"transaction_amount":2300,
+		"currency_id":"BRL",
+		"free_trial":{
+			"frequency_type":"months",
+			"frequency":"6"
+		}
+	},
+    "payer_email": "test_user+1020927396@testuser.com",
+    "card_token_id":"{{O_CARD_TOKEN_QUE_FOI_CRIADO}}",
+	"status":"authorized"
+}'
+```
+]]]
+
 
 > NOTE
 >
@@ -86,9 +112,35 @@ Assinaturas com pagamento pendente são um modelo de assinaturas onde um meio de
 
 Neste caso, é possível atualizar a assinatura e definir um meio de pagamento através do endpoint [/preapproval/{id}](/developers/pt/reference/subscriptions/_preapproval_id/put), ou compartilhar um link de pagamento para que o comprador possa concluir a compra com o meio de pagamento de sua preferência.
 
-Para oferecer **assinaturas sem um plano associado e com pagamento pendente**, envie um POST com os atributos necessários ao endpoint [/preapproval](/developers/pt/reference/subscriptions/_preapproval/post) e atente-se ao parâmetro `status`, que deverá ser preenchido com o valor `pending`. 
+Para oferecer **assinaturas sem um plano associado e com pagamento pendente**, envie um POST com os atributos necessários ao endpoint [/preapproval](/developers/pt/reference/subscriptions/_preapproval/post) e atente-se ao parâmetro `status`, que deverá ser preenchido com o valor `pending`. Se preferir, utilize o curl disponível abaixo.
 
-Finalizando o preenchimento dos campos, execute a requisição.
+[[[
+```curl
+
+curl --location --request POST 'https://api.mercadopago.com/preapproval?access_token=APP_USR-????????' \
+--header 'Content-Type: application/json' \
+--header 'X-scope: stage' \
+--data-raw '{
+		"back_url":"https://www.google.com",
+	"reason":"Test Subscription",
+	"auto_recurring":{
+		"frequency":"6",
+		"frequency_type":"months",
+		"repetitions":10,
+		"transaction_amount":2300,
+		"currency_id":"BRL",
+		"free_trial":{
+			"frequency_type":"months",
+			"frequency":"6"
+		}
+	},
+    "payer_email": "test_user+1020927396@testuser.com",
+    "card_token_id":"{{O_CARD_TOKEN_QUE_FOI_CRIADO}}",
+	"status":"pending"
+}'
+```
+]]]
+
 
 > PREV_STEP_CARD_PT
 >

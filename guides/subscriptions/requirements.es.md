@@ -11,19 +11,3 @@ Para realizar la integración de suscripciones, debes cumplir con los requisitos
 | Monto mínimo de transacción | ----[mlb]---- El monto mínimo permitido para crear una suscripción es de R$ 1,00 y el máximo de R$ 500,00 ------------ ----[mla]---- El monto mínimo permitido para crear una suscripción es de $5,00 y el máximo de $250.00,00 ------------ ----[mlm]---- El monto mínimo permitido para crear una suscripción es de $100.00 y el máximo de $200,000.00 ------------ ----[mlc]---- El monto mínimo permitido para crear una suscripción es de $950,00 y el máximo de $350.000,00 ------------ ----[mco]---- El monto mínimo permitido para crear una suscripción es de $1.600,00 y el máximo de $30.000.000 ------------ ----[mpe]---- El monto mínimo permitido para crear una suscripción es de $2,00 y el máximo de $1.500 ------------ ----[mlu]---- El monto mínimo permitido para crear una suscripción es de $15,00 y el máximo de $300.000 ------------ |
  
 Si se cumplieron todos los requisitos previos, podrás realizar la integración de la suscripción.
-
-> PREV_STEP_CARD_ES
->
-> Introducción
->
-> Ver más información sobre Suscripciones y sus características.
->
-> [Introducción](/developers/es/docs/subscriptions/landing)
-
-> NEXT_STEP_CARD_ES
->
-> Suscripciones con plan asociado
->
-> Ver más información sobre las firmas utilizadas cuando es necesario tener la misma firma en diferentes ocasiones y organizarlas en grupos identificables.
->
-> [Suscripciones con plan asociado](/developers/es/docs/subscriptions/integration-configuration/subscriptions-associated-plan)

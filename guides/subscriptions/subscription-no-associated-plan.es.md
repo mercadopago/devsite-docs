@@ -11,7 +11,34 @@ Este modelo de suscripción se puede realizar de dos formas:
 
 Las suscripciones con pago autorizado permiten generar y facturar la cuota de una suscripción en función de la periodicidad definida, lo que hace que el motor de suscripciones programe y cree automáticamente pagos en función del método de pago definido en el momento de la creación de la firma.
 
-Para ofrecer **suscripciones sin plan asociado y con pago autorizado**, envía un POST con los atributos necesarios al endpoint [/preapproval](/developers/es/reference/subscriptions/_preapproval/post) y presta atención al parámetro `status`, que debe ser rellenado con el valor `autorizado`. 
+Para ofrecer **suscripciones sin plan asociado y con pago autorizado**, envía un POST con los atributos necesarios al endpoint [/preapproval](/developers/es/reference/subscriptions/_preapproval/post) y presta atención al parámetro `status`, que debe ser rellenado con el valor `authorized`. Si lo prefiere, use el _curl_ a continuación.
+
+[[[
+```curl
+
+curl --location --request POST 'https://api.mercadopago.com/preapproval?access_token=APP_USR-????????' \
+--header 'Content-Type: application/json' \
+--header 'X-scope: stage' \
+--data-raw '{
+		"back_url":"https://www.google.com",
+	"reason":"Test Subscription",
+	"auto_recurring":{
+		"frequency":"6",
+		"frequency_type":"months",
+		"repetitions":10,
+		"transaction_amount":2300,
+		"currency_id":"BRL",
+		"free_trial":{
+			"frequency_type":"months",
+			"frequency":"6"
+		}
+	},
+    "payer_email": "test_user+1020927396@testuser.com",
+    "card_token_id":"{{EL_CARD_TOKEN_QUE_CREASTE}}",
+	"status":"authorized"
+}'
+```
+]]]
 
 Después de completar los campos, ejecuta la solicitud.
 
@@ -85,9 +112,34 @@ Las suscripciones con pago pendiente son un modelo de suscripción donde no se d
 
 En este caso, es posible actualizar la suscripción y definir un medio de pago a través del endpoint [/preapproval/{id}](/developers/es/reference/subscriptions/_preapproval_id/put), o compartir un link de pago para que el comprador pueda completar la compra con el método de pago de su elección.
 
-Para ofrecer **suscripciones sin plan asociado y con pago pendiente**, envía un POST con los atributos necesarios al endpoint [/preapproval](/developers/es/reference/subscriptions/_preapproval/post) y presta atención al parámetro `status`, que debe ser rellenado con el valor `pending`. 
+Para ofrecer **suscripciones sin plan asociado y con pago pendiente**, envía un POST con los atributos necesarios al endpoint [/preapproval](/developers/es/reference/subscriptions/_preapproval/post) y presta atención al parámetro `status`, que debe ser rellenado con el valor `pending`. Si lo prefiere, usa el curl a continuación.
 
-Después de completar los campos, ejecute la solicitud.
+[[[
+```curl
+
+curl --location --request POST 'https://api.mercadopago.com/preapproval?access_token=APP_USR-????????' \
+--header 'Content-Type: application/json' \
+--header 'X-scope: stage' \
+--data-raw '{
+		"back_url":"https://www.google.com",
+	"reason":"Test Subscription",
+	"auto_recurring":{
+		"frequency":"6",
+		"frequency_type":"months",
+		"repetitions":10,
+		"transaction_amount":2300,
+		"currency_id":"BRL",
+		"free_trial":{
+			"frequency_type":"months",
+			"frequency":"6"
+		}
+	},
+    "payer_email": "test_user+1020927396@testuser.com",
+    "card_token_id":"{{EL_CARD_TOKEN_QUE_CREASTE}}",
+	"status":"pending"
+}'
+```
+]]]
 
 > PREV_STEP_CARD_ES
 >

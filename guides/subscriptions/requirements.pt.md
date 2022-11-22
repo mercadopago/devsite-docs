@@ -12,18 +12,3 @@ Para realizar a integração de assinaturas, é preciso atender aos requisitos l
 
 Se todos os pré-requisitos foram atendidos, você poderá realizar a integração das assinaturas.
 
-> PREV_STEP_CARD_PT
->
-> Introdução
->
-> Veja mais informações sobre as Assinaturas e suas característcas.
->
-> [Introdução](/developers/pt/docs/subscriptions/landing)
-
-> NEXT_STEP_CARD_PT
->
-> Assinaturas com plano associado
->
-> Veja mais informações sobre as assinaturas utilizadas quando é necessário ter a mesma assinatura em ocasiões diferentes e organizá-las em grupos identificáveis. 
->
-> [Assinaturas com plano associado](/developers/pt/docs/subscriptions/integration-configuration/subscriptions-associated-plan)
