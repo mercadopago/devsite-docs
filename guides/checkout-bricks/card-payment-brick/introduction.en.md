@@ -11,7 +11,7 @@ live_demo_code_action:
  - title: Try our Brick
  - description: Build and check out the Card Payment Brick visual experience in real time. When you are ready, download or copy the generated code.
  - link: /developers/en/live-demo/card-payment-brick
- - image:https://i.ibb.co/KWH0Szk/Card-Payment-Brick-Gif-1.png
+ - image:https://http2.mlstatic.com/frontend-assets/dx-devsite/images/card-payment-brick.png
  - linkName: Demo
  - buttonDescription: Build your Card Payment Brick
 ---
