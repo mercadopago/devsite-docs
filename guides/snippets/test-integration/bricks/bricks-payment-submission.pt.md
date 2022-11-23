@@ -183,7 +183,7 @@ payment = payment_response["response"]
 
 print("status =>", payment["status"])
 print("status_detail =>", payment["status_detail"])
-print("id=>", payment["id"])
+print("id =>", payment["id"])
 ```
 ```curl
 ===
