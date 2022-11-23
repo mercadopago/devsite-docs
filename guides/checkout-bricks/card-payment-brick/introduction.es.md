@@ -6,7 +6,16 @@ Este Brick, además de contener los campos para recolectar los datos personales 
 
 Además de recopilar los campos necesarios para realizar el pago, este componente también ayuda al usuario a terminar de completar la pantalla con alertas de campos incompletos y posibles errores en el llenado. Ve a continuación las principales características de este Brick.
 
-![cardform](checkout-bricks/card-form-es.png)
+---
+live_demo_code_action:
+ - title: Prueba nuestro Brick
+ - description: Construye y comprueba la experiencia visual de Card Payment Brick en tiempo real. Cuando esté todo listo, descarga o copia el código generado.
+ - link: /developers/es/live-demo/card-payment-brick
+ - image:https://http2.mlstatic.com/frontend-assets/dx-devsite/images/card-payment-brick.png
+ - linkName: Demo
+ - buttonDescription: Construir tu Card Payment Brick
+---
+<br>
 
 ## Layout 
 
