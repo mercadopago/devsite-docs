@@ -258,21 +258,21 @@ curl --request GET \
 
 Atualmente as Instituições Financeiras participantes homologadas e disponíveis para serem iniciadas são:
 
-| Instituição Financeira    | Status DCR | Status iniciação | App | Web | Handoff |
-|---------------------------|------------|------------------|-----|-----|---------|
-| Nubank                    | Concluído  | Concluído        | OK  | OK  | OK      |
-| Bradesco PF               | Concluído  | Concluído        | OK  | OK  | N/A     |
-| PicPay Servicos S.A       | Concluído  | Concluído        | OK  | OK  | OK      |
-| Banco do Brasil           | Concluído  | Concluído        | OK  | OK  | N/A     |
-| Banco Bradesco S.A (Next) | Concluído  | Concluído        | OK  | OK  | OK      |
-| Santander PF              | Concluído  | Concluído        | OK  | OK  | N/A     |
-| Itaú PF                   | Concluído  | Concluído        | OK  | OK  | N/A     |
-| XP                        | Concluído  | Concluído        | OK  | OK  | OK      |
-| iti - Itaú                | Concluído  | Concluído        | OK  | x   | x       |
-| Pagbank                   | Concluído  | Concluído        | OK  | OK  | OK      |
-| Neon                      | Concluído  | Concluído        | OK  | OK  | OK      |
-| Sicredi                   | Concluído  | Concluído        | OK  | OK  | OK      |
-| Woop                      | Concluído  | Concluído        | OK  | OK  | OK      |
+| Instituição Financeira    | App | Web |
+|---------------------------|-----|-----|
+| Nubank                    | OK  | OK  |
+| Bradesco PF               | OK  | OK  |
+| PicPay Servicos S.A       | OK  | OK  |
+| Banco do Brasil           | OK  | OK  |
+| Banco Bradesco S.A (Next) | OK  | OK  |
+| Santander PF              | OK  | OK  |
+| Itaú PF                   | OK  | OK  |
+| XP                        | OK  | OK  |
+| iti - Itaú                | OK  |  -  |
+| Pagbank                   | OK  | OK  |
+| Neon                      | OK  | OK  |
+| Sicredi                   | OK  | OK  |
+| Woop                      | OK  | OK  |
 
 > WARNING
 > 
