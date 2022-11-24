@@ -14,26 +14,25 @@ Para facilitar e otimizar o seu processo de integração, veja abaixo um exemplo
 [[[
 ```php
 <?php
-// SDK do Mercado Pago
-require __DIR__ .  '/vendor/autoload.php';
-// Adicione as credenciais
-MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
-?>
+  // SDK do Mercado Pago
+  require __DIR__ .  '/vendor/autoload.php';
+  // Adicione as credenciais
+  MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
 
-// Cria um objeto de preferência
-$preference = new MercadoPago\Preference();
+  // Cria um objeto de preferência
+  $preference = new MercadoPago\Preference();
 
-// Cria um item na preferência
-$item = new MercadoPago\Item();
-$item->title = 'Meu produto';
-$item->quantity = 1;
-$item->unit_price = 75.56;
-$preference->items = array($item);
+  // Cria um item na preferência
+  $item = new MercadoPago\Item();
+  $item->title = 'Meu produto';
+  $item->quantity = 1;
+  $item->unit_price = 75.56;
+  $preference->items = array($item);
 
-// o $preference->purpose = 'wallet_purchase'; permite apenas pagamentos logados
-// para permitir pagamentos como guest, você pode omitir essa propriedade
-$preference->purpose = 'wallet_purchase';
-$preference->save();
+  // o $preference->purpose = 'wallet_purchase'; permite apenas pagamentos logados
+  // para permitir pagamentos como guest, você pode omitir essa propriedade
+  $preference->purpose = 'wallet_purchase';
+  $preference->save();
 ?>
 ```
 ```node
@@ -195,26 +194,25 @@ curl -X POST \
 [[[
 ```php
 <?php
-// SDK do Mercado Pago
-require __DIR__ .  '/vendor/autoload.php';
-// Adicione as credenciais
-MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
-?>
+  // SDK do Mercado Pago
+  require __DIR__ .  '/vendor/autoload.php';
+  // Adicione as credenciais
+  MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
 
-// Cria um objeto de preferência
-$preference = new MercadoPago\Preference();
+  // Cria um objeto de preferência
+  $preference = new MercadoPago\Preference();
 
-// Cria um item na preferência
-$item = new MercadoPago\Item();
-$item->title = 'Meu produto';
-$item->quantity = 1;
-$item->unit_price = 75.56;
-$preference->items = array($item);
+  // Cria um item na preferência
+  $item = new MercadoPago\Item();
+  $item->title = 'Meu produto';
+  $item->quantity = 1;
+  $item->unit_price = 75.56;
+  $preference->items = array($item);
 
-// o $preference->purpose = 'wallet_purchase'; permite apenas pagamentos logados
-// para permitir pagamentos como guest, você pode omitir essa propriedade
-$preference->purpose = 'wallet_purchase';
-$preference->save();
+  // o $preference->purpose = 'wallet_purchase'; permite apenas pagamentos logados
+  // para permitir pagamentos como guest, você pode omitir essa propriedade
+  $preference->purpose = 'wallet_purchase';
+  $preference->save();
 ?>
 ```
 ```node
