@@ -14,26 +14,25 @@ To facilitate and optimize your integration process, check below a complete exam
 [[[
 ```php
 <?php
-// Mercado Pago SDK
-require __DIR__ .  '/vendor/autoload.php';
-// Add credentials
-MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
-?>
+  // SDK do Mercado Pago
+  require __DIR__ .  '/vendor/autoload.php';
+  // Add credentials
+  MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
 
-// Create a preference object
-$preference = new MercadoPago\Preference();
+  // Create a preference object
+  $preference = new MercadoPago\Preference();
 
-// Create an item in the preference
-$item = new MercadoPago\Item();
-$item->title = 'My product';
-$item->quantity = 1;
-$item->unit_price = 75.56;
-$preference->items = array($item);
+  // Create an item in the preference
+  $item = new MercadoPago\Item();
+  $item->title = 'Meu produto';
+  $item->quantity = 1;
+  $item->unit_price = 75.56;
+  $preference->items = array($item);
 
-// the $preference->purpose = 'wallet_purchase'; only allow logged in payments
-// to allow guest payments you can omit this property
-$preference->purpose = 'wallet_purchase';
-$preference->save();
+  // the $preference->purpose = 'wallet_purchase'; only allow logged in payments
+  // to allow guest payments you can omit this property
+  $preference->purpose = 'wallet_purchase';
+  $preference->save();
 ?>
 ```
 ```node
@@ -195,26 +194,25 @@ curl -X POST \
 [[[
 ```php
 <?php
-// Mercado Pago SDK
-require __DIR__ .  '/vendor/autoload.php';
-// Add credentials
-MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
-?>
+  // SDK do Mercado Pago
+  require __DIR__ .  '/vendor/autoload.php';
+  // Add credentials
+  MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
 
-// Create a preference object
-$preference = new MercadoPago\Preference();
+  // Create a preference object
+  $preference = new MercadoPago\Preference();
 
-// Create an item in the preference
-$item = new MercadoPago\Item();
-$item->title = 'My producto';
-$item->quantity = 1;
-$item->unit_price = 75.56;
-$preference->items = array($item);
+  // Create an item in the preference
+  $item = new MercadoPago\Item();
+  $item->title = 'Meu produto';
+  $item->quantity = 1;
+  $item->unit_price = 75.56;
+  $preference->items = array($item);
 
-// the $preference->purpose = 'wallet_purchase'; only allow logged in payments
-// to allow guest payments you can omit this property
-$preference->purpose = 'wallet_purchase';
-$preference->save();
+  // the $preference->purpose = 'wallet_purchase'; only allow logged in payments
+  // to allow guest payments you can omit this property
+  $preference->purpose = 'wallet_purchase';
+  $preference->save();
 ?>
 ```
 ```node
