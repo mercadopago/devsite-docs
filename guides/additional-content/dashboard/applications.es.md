@@ -2,7 +2,9 @@
  
 Llamamos aplicaciones a las distintas integraciones contenidas en una o varias tiendas. Puedes crear una aplicación para cada solución que implementes, con el fin de tener todo organizado y mantener un control que facilite la gestión.
  
-Cada aplicación tiene un conjunto de credenciales y la posibilidad de configurar sus propias notificaciones. Cada tarjeta representa una aplicación creada y muestra el **nombre**, la **descripción**, el **ID de la aplicación** y un botón que permite administrar la aplicación.
+Cada aplicación tiene un conjunto de credenciales y la posibilidad de configurar sus propias notificaciones. Cada tarjeta representa una aplicación creada y muestra el **nombre**, la **descripción**, el **ID de la aplicación** y un **botón que permite administrar la aplicación**.
+
+> Por defecto, la pantalla muestra solo 3 aplicaciones creadas. Para ver las otras aplicaciones, haga clic en **Ver todas las aplicaciones**.
 
 ## Crear nueva aplicación
  
@@ -48,21 +50,26 @@ Si necesita eliminar una aplicación en su Dashboard, haz clic en los 3 puntos v
  
 Al hacer clic en la tarjeta de una aplicación, tendrás acceso a los detalles de la aplicación, que incluyen:
 
-* **Nombre de la aplicación**. En esta área puede ver el nombre de la aplicación.
-* **Integración**. Producto o plataforma integrada con la aplicación.
-* **Numero de la aplicacion**. En esta área puede ver el ID de la aplicación.
-* **Puntuación**. El puntaje indica qué tan segura es la configuración de tu aplicación y está en línea con las buenas prácticas de integración de Mercado Pago.
-* **Detalles de la puntuación**. Botón de acceso a la herramienta Homologador.
-* **Mis credenciales**. Contraseñas únicas con las que identificamos una integración en tu cuenta. Sirven para capturar pagos en tiendas online y otras aplicaciones. Lee [Credenciales](/developers/es/guides/additional-content/credentials/credentials) para obtener más información.
-* **Notificaciones de webhook**. Notificaciones que puedes recibir a través de llamadas HTTP POST siempre que haya un evento relacionado con una transacción en tu aplicación. Lee [Webhooks](/developers/es/guides/additional-content/notifications/webhooks/webhooks) para obtener más información.
- 
-### ID de aplicación
-Los ID se utilizan para identificar tus aplicaciones y se crean automáticamente cada vez que se crea una nueva aplicación.
- 
-### Credenciales
-Se presentan las credenciales de producción y prueba necesarias para acceder a tu aplicación. 
+#### Nombre de la aplicación
+En esta área, puede ver el nombre de la aplicación y, si es necesario, editar los datos de la aplicación haciendo clic en el icono correspondiente.
 
-Las **credenciales de prueba** deben usarse para probar tus integraciones y se pueden usar junto con tarjetas de crédito de prueba para simular recibos de tarjetas, mientras que las **credenciales de producción** se usan para recibir pagos.
+#### Integración 
+Producto o plataforma integrada con la aplicación.
+
+#### Numero de la aplicacion
+En esta área puede ver el ID de la aplicación.
+
+#### Puntuación 
+El puntaje indica qué tan segura es la configuración de tu aplicación y está en línea con las buenas prácticas de integración de Mercado Pago.
+
+#### Detalles de la puntuación
+Botón de acceso a la herramienta Homologador.
+
+#### Mis credenciales
+Contraseñas únicas con las que identificamos una integración en tu cuenta, que sirven para capturar pagos en tiendas online y otras aplicaciones.
+ 
+#### Credenciales
+Se presentan las credenciales de producción y prueba necesarias para acceder a tu aplicación. Las **credenciales de prueba** deben usarse para probar tus integraciones y se pueden usar junto con tarjetas de crédito de prueba para simular recibos de tarjetas, mientras que las **credenciales de producción** se usan para recibir pagos.
  
 De forma predeterminada, las credenciales de producción estarán deshabilitadas hasta que las habilites haciendo clic en **Habilitar credenciales**, completes la información de su empresa y aceptes nuestros términos y condiciones.
  
@@ -74,5 +81,7 @@ De forma predeterminada, las credenciales de producción estarán deshabilitadas
  
 También existe la posibilidad de compartir las credenciales con otra cuenta de Mercado Pago, solo haz clic en **compartir mis credenciales** y completa el correo electrónico de la cuenta que recibirá la información.
  
-### Notificaciones de webhook
+#### Notificaciones de webhooks
+Notificaciones que puedes recibir a través de llamadas HTTP POST siempre que haya un evento relacionado con una transacción en tu aplicación.
+
 Configura las URL de producción y prueba desde las que se recibirán las notificaciones de webhook y selecciona los eventos que serán responsables de generar estas notificaciones. Lee [Webhooks](/developers/es/guides/additional-content/notifications/webhooks/webhooks) para más información.
