@@ -63,7 +63,7 @@ En esta área puede ver el ID de la aplicación.
 El puntaje indica qué tan segura es la configuración de tu aplicación y está en línea con las buenas prácticas de integración de Mercado Pago.
 
 #### Detalles de la puntuación
-Botón de acceso a la herramienta Homologador.
+Botón de acceso a la herramienta donde podrás **medir la calidad de tu aplicación**, donde podrás identificar puntos de mejora en tu integración y llevarla a los estándares de Mercado Pago. Consulte [Homologator](/developers/rd/guides/additional-content/homologator/homologator) para obtener más información.
 
 #### Mis credenciales
 Contraseñas únicas con las que identificamos una integración en tu cuenta, que sirven para capturar pagos en tiendas online y otras aplicaciones.

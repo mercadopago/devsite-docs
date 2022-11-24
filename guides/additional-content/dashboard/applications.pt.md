@@ -68,7 +68,7 @@ A pontuação indica o quanto a configuração da sua aplicação é segura e es
 
 #### Detalhes da pontuação
 
-Botão de acesso à ferramenta Homologator.
+Botão de acesso à ferramenta em que você poderá **medir a qualidade da suaaplicação**, onde será possível identificar pontos de melhoria na sua integração e deixá-la de acordo com os padrões do Mercado Pago. Veja [Homologator](/developers/pt/guides/additional-content/homologator/homologator) para mais informaçÕes.
 
 #### Minhas credenciais
 

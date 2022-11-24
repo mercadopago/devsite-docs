@@ -67,7 +67,7 @@ The score indicates how secure your application's configuration is and is in lin
 
 #### Score details 
 
-Access button to the Homologator tool.
+Access button to the tool where you can **measure the quality of your application**, where you can identify points of improvement in your integration and bring it up to Mercado Pago standards. Check out [Homologator](/developers/en/guides/additional-content/homologator/homologator) for more information.
 
 #### My credentials 
 
