@@ -29,7 +29,7 @@ Después de crear tu aplicación, puedes hacer clic en el botón "Editar" para v
  
   - Nombre de la aplicación (límite de 50 caracteres).
   - Solución de pago a integrar.
-  - Nombre corto de la aplicación.
+  - Nombre corto de la aplicación. El nombre corto sirve para identificar personalmente al usuario que crea la aplicación y se mostrará en la herramienta de **medir la calidad de tu aplicación**. Consulte [Calidad de integración](/developers/rd/guides/additional-content/homologator/homologator) para obtener más información.
   - Descripción de la aplicación (límite de 150 caracteres).
   - Permisos de la aplicación. Este campo muestra las opciones de acceso para tu aplicación, las cuales son: lectura (read), acceso sin conexión (offline access) y escritura (write). De forma predeterminada, tu aplicación se crea con todos los permisos habilitados. Pero puedes deshabilitar un permiso haciendo clic en la casilla de verificación del que deseas cambiar.
   - Redirigir URL. Este campo define la URL en la que deseas recibir el código de autorización cuando tu integración se configura como Marketplace o se realiza a través de OAuth. Lee [OAuth](/developers/es/docs/security/oauth/introduction) para más detalles.
@@ -63,7 +63,13 @@ En esta área puede ver el ID de la aplicación.
 El puntaje indica qué tan segura es la configuración de tu aplicación y está en línea con las buenas prácticas de integración de Mercado Pago.
 
 #### Detalles de la puntuación
-Botón de acceso a la herramienta donde podrás **medir la calidad de tu aplicación**, donde podrás identificar puntos de mejora en tu integración y llevarla a los estándares de Mercado Pago. Consulte [Homologator](/developers/rd/guides/additional-content/homologator/homologator) para obtener más información.
+Botón de acceso a la herramienta donde podrás **medir la calidad de tu aplicación**, donde podrás identificar puntos de mejora en tu integración y llevarla a los estándares de Mercado Pago. Consulte [Calidad de integración](/developers/rd/guides/additional-content/homologator/homologator) para obtener más información.
+
+> WARNING
+>
+> Atención
+>
+> Por ahora, la herramienta de medición de la [calidad de integración](/developers/es/guides/additional-content/homologator/homologator) solo está disponible para integraciones con [Checkout Pro](/developers/es/docs/checkout-pro/landing).
 
 #### Mis credenciales
 Contraseñas únicas con las que identificamos una integración en tu cuenta, que sirven para capturar pagos en tiendas online y otras aplicaciones.

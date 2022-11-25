@@ -30,7 +30,7 @@ After creating your application, you can click on the "Edit" button to see the a
  
   - Application name (limit of 50 characters).
   - Payment solution to be integrated.
-  - Application short name.
+  - Application short name. Short name serves to personally identify the user who creates the application and will be displayed in the **measure the quality of your application** tool. Check out [Integration quality](/developers/en/guides/additional-content/homologator/homologator) for more information.
   - Application description (limit of 150 characters).
   - Application permissions. This field displays the access options for your application, namely: read, offline access and write. By default, your application is created with all permissions enabled. You can disable permissions by clicking on their respective checkboxes.
   - Redirect URL. This field defines the URL (in https) where you want to receive the authorization code when your integration is configured as Marketplace or performed via OAuth. Check [OAuth](/developers/en/docs/security/oauth/introduction) for more details.
@@ -67,7 +67,13 @@ The score indicates how secure your application's configuration is and is in lin
 
 #### Score details 
 
-Access button to the tool where you can **measure the quality of your application**, where you can identify points of improvement in your integration and bring it up to Mercado Pago standards. Check out [Homologator](/developers/en/guides/additional-content/homologator/homologator) for more information.
+Access button to the tool where you can **measure the quality of your application**, where you can identify points of improvement in your integration and bring it up to Mercado Pago standards. Check out [Integration quality](/developers/en/guides/additional-content/homologator/homologator) for more information.
+
+> WARNING
+>
+> Attention
+>
+> For now, the [integration quality](/developers/en/guides/additional-content/homologator/homologator) measuring tool is only available for integrations with [Checkout Pro](/developers/en/docs/checkout-pro/landing).
 
 #### My credentials 
 

@@ -29,7 +29,7 @@ Você pode clicar no botão "Editar" para ver as configurações avançadas que 
  
   - Nome da aplicação (limite de 50 caracteres).
   - Solução de pagamento a ser integrada.
-  - Nome curto da aplicação.
+  - Nome curto da aplicação. Nome curto serve para identificação pessoal do usuário que cria a aplicação e será exibido na ferramenta de **medir a qualidade da sua aplicação**. Veja [Qualidade da integração](/developers/pt/guides/additional-content/homologator/homologator) para mais informações.
   - Descrição da aplicação (limite de 150 caracteres).
   - Permissões da aplicação. Este campo apresenta as opções de acesso da sua aplicação, sendo elas: read (ler), offline access (acesso offline) e write (escrever). Por padrão, sua aplicação é criada com todas as permissões ativadas, mas você pode desativar uma permissão clicando na caixa de seleção referente à permissão que você deseja alterar.
   - Redirect URL. Este campo define a URL (em https) na qual você deseja receber o código de autorização quando sua integração for configurada como Marketplace ou realizada através de OAuth. Veja [OAuth](/developers/pt/docs/security/oauth/introduction) para mais detalhes.
@@ -68,7 +68,13 @@ A pontuação indica o quanto a configuração da sua aplicação é segura e es
 
 #### Detalhes da pontuação
 
-Botão de acesso à ferramenta em que você poderá **medir a qualidade da suaaplicação**, onde será possível identificar pontos de melhoria na sua integração e deixá-la de acordo com os padrões do Mercado Pago. Veja [Homologator](/developers/pt/guides/additional-content/homologator/homologator) para mais informaçÕes.
+Botão de acesso à ferramenta em que você poderá **medir a qualidade da sua aplicação**, onde será possível identificar pontos de melhoria na sua integração e deixá-la de acordo com os padrões do Mercado Pago. Veja [Qualidade da integração](/developers/pt/guides/additional-content/homologator/homologator) para mais informações.
+
+> WARNING
+>
+> Atenção
+>
+> Por enquanto, a ferramenta de medir a [qualidade da integração](/developers/pt/guides/additional-content/homologator/homologator) só está disponível para integrações com o [Checkout Pro](/developers/pt/docs/checkout-pro/landing).
 
 #### Minhas credenciais
 
