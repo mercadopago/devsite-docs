@@ -17,7 +17,6 @@ Abaixo você encontra uma lista com os plugins que permitem adicionar o `integra
 - [Magento](/developers/pt/docs/magento-two/landing)
 - [VTEX](/developers/pt/docs/vtex/introduction)
 
-
 ## Integração 
 
 Para identificar suas integrações e trabalhar com métricas, utilize um dos SDKs abaixo informando o `integrator_id` e/ou `x-platform-id` e execute a requisição.
