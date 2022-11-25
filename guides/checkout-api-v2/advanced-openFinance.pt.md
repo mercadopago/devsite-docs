@@ -227,7 +227,7 @@ curl --request GET \
            "name": "Mercado Pago - Payments",
            "code": "370",
            "ispb": "10573521",
-           "logo": "https://http2.mlstatic.com/open-banking/assets/81d8e591-5d8e-46e2-8b4a.svg",
+           "logo": "https://http2.mlstatic.com/open-banking/assets/88b4a.svg",
            "isFrequentlyUsed": true
        },
        {
@@ -235,7 +235,7 @@ curl --request GET \
            "name": "Mock Bank",
            "code": "345",
            "ispb": "",
-           "logo": "https://http2.mlstatic.com/open-banking/assets/87290355-03e2-4cf9-b30b.svg",
+           "logo": "https://http2.mlstatic.com/open-banking/assets/8b30b.svg",
            "isFrequentlyUsed": false
        }
    ]
