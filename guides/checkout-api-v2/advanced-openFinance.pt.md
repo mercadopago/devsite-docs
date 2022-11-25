@@ -283,7 +283,7 @@ Atualmente as Instituições Financeiras participantes homologadas e disponívei
 #### 2 - Criar um pagamento
 Já com o ID do banco escolhido pelo usuário, crie um pagamento e passe essa informação para o campo transaction_data.bank_info.origin_bank_id da requisição de criação de pagamentos.
 
-Para mais informações, acesse a seção de criação de pagamentos desta documentação, ou [clicando aqui](#criação-de-pagamento)
+Para mais informações, acesse a seção de criação de pagamentos desta documentação, ou [clicando aqui](#bookmark_criação_de_pagamento)
 
 #### Dicas para exibição
 O vendedor poderá exibir as instituições favoritas primeiro na lista ou no formato que preferir, porém, **não poderá impedir que o cliente possa selecionar alguma das instituições disponíveis para uso**.
@@ -322,7 +322,7 @@ Para conseguir iniciar um pagamento Pix via Open Finance o vendedor deverá util
 
 * As informações do pagador são obrigatórias e devem ser inseridas no atributo `payer`
 
-* Deve ser enviado uma URL de callback, através do campo `callback_url`, para mostrar o feedback ao pagador. Para mais informações, acesse a [seção de callback](#callback) desta documentação. 
+* Deve ser enviado uma URL de callback, através do campo `callback_url`, para mostrar o feedback ao pagador. Para mais informações, acesse a [seção de callback](#bookmark_callback) desta documentação. 
 
 **Requisição**
 
