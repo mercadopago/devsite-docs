@@ -2,11 +2,17 @@
 
 Las suscripciones con plan asociado se utilizan cuando es necesario utilizar la misma suscripción en diferentes ocasiones para organizarlas en grupos identificables. Por ejemplo, para una suscripción mensual y anual a un gimnasio.
 
+> NOTE
+>
+> Importante
+>
+> Una Suscripción con Plan siempre deberá ser creada con su `card_token_id` y en status `Authorized`.
+
 ## Crear plan
 
 La integración de **suscripciones con plan asociado** se realiza en dos pasos. En el primero es necesario **crear un plan** que irá asociado a la suscripción y en el segundo, la **creación de la suscripción**. 
 
-El plan de suscripción te permite definir, entre otros atributos, el título, el valor y la frecuencia de las suscripciones creadas por el vendedor. Para crear un plan y asociarlo con una suscripción, mira el endpoint [/preapproval_plan](/developers/es/reference/subscriptions/_preapproval_plan/post), completa los atributos necesarios y ejecuta la solicitud o, si lo prefiere, use el curl a continuación.
+El plan de suscripción te permite definir, entre otros atributos, el título, el valor y la frecuencia de las suscripciones creadas por el vendedor. Para crear un plan y asociarlo con una suscripción, mira el endpoint [/preapproval_plan](/developers/es/reference/subscriptions/_preapproval_plan/post), completa los atributos necesarios y ejecuta el request o, si lo prefiere, use el curl a continuación.
 
 > NOTE
 >
@@ -58,4 +64,4 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval?access_t
 ```
 ]]]
 
-Cuando termines de llenar los atributos, ejecuta la solicitud y ¡listo! Se habrá creado la suscripción con el plan asociado.
+Cuando termines de llenar los atributos, ejecuta el request y ¡listo! Se habrá creado la suscripción con el plan asociado.

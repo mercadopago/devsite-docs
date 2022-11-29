@@ -7,6 +7,12 @@ Este modelo de assinatura pode ser feito de duas maneiras:
 * [Com pagamento autorizado](/developers/pt/guides/subscriptions/integration-configuration/subscription-no-associated-plan#bookmark_assinaturas_com_pagamento_autorizado) 
 * [Com pagamento pendente](/developers/pt/guides/subscriptions/integration-configuration/subscription-no-associated-plan#bookmark_assinaturas_com_pagamento_pendente) 
 
+> NOTE
+>
+> Importante
+>
+> Criar assinaturas com `status = Pending` é suportado apenas para assinaturas sem plano associado.
+
 ## Assinaturas com pagamento autorizado
 
 Assinaturas com pagamento autorizado permitem que a parcela de uma assinatura seja gerada e cobrada com base na recorrência definida, fazendo com que o mecanismo de assinatura agende e crie os pagamentos automaticamente com base no meio de pagamento definido no ato da criação da assinatura.

@@ -2,6 +2,12 @@
 
 Subscriptions with an associated plan are used when it is necessary to use the same subscription on different occasions to organize them into identifiable groups. For example, for a monthly and yearly subscription to a gym.
 
+> NOTE
+>
+> Important
+>
+> A subscription with an associated plan must always be created with your `card_token_id` and with the status `Authorized`
+
 ## Create plan 
 
 The integration of **subscriptions with an associated plan** happens in two steps: In the first one, it is necessary to **create a plan** to be associated with the subscription, and in the second step, to **create a subscription**.

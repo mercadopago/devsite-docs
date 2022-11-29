@@ -7,6 +7,12 @@ This subscription model can be
 * [With authorized payments](/developers/en/guides/subscriptions/integration-configuration/subscription-no-associated-plan#bookmark_subscriptions_with_authorized_payment)
 * [Pending payments](/developers/en/guides/subscriptions/integration-configuration/subscription-no-associated-plan#bookmark_subcriptions_with_pending_payment)
 
+> NOTE
+>
+> Important
+>
+> Creating subscriptions with `status = Pending` is supported only for Subscriptions without an associated plan.
+
 ## Subscriptions with authorized payment
 
 Subscriptions with authorized payment allow an installment to be generated and billed based on a defined recurrence, causing the subscription engine to automatically schedule and create payments based on the payment method defined at the time of the subscription creation.

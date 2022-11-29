@@ -2,6 +2,12 @@
 
 Assinaturas com plano associado são utilizadas quando é necessário utilizar a mesma assinatura em ocasiões diferentes e organizá-las em grupos identificáveis. Por exemplo, para uma assinatura mensal e anual de uma academia.
 
+> NOTE
+>
+> Importante
+>
+> Uma assinatura com plano associado sempre deverá ser criada com seu `card_token_id` e com status `Authorized`
+
 ## Criar plano
 
 A integração de **assinaturas com plano associado** é feita em duas etapas. Na primeira, é preciso **criar um plano** que será associado à assinatura e na segunda, a **criação da assinatura**. 
