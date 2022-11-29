@@ -19,7 +19,6 @@ Abaixo você encontra uma lista com os plugins que permitem adicionar o `integra
 
 Para mais detalhes sobre como e por que utilizar o `integrator_id` nas suas integrações, acesse nossa FAQ.
 
-
 ## Integração 
 
 Para identificar suas integrações e trabalhar com métricas, utilize um dos SDKs abaixo informando o `integrator_id` e/ou `x-platform-id` e execute a requisição.
