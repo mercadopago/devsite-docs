@@ -1,6 +1,6 @@
 # Métricas de integración
 
-Los miembros certificados del [&lt;dev>programa](https://www.mercadopago.com/developers/en/developer-program) pueden identificar sus integraciones de Checkout Pro para acceder a los [beneficios del programa](https://www.mercadopago.com/developers/pt/developer-program#dev-program-benefits).
+Los miembros certificados del [&lt;dev>programa](https://www.mercadopago.com/developers/en/developer-program) pueden identificar sus integraciones de Checkout Pro para acceder a los [beneficios del programa](https://www.mercadopago.com/developers/pt/developer-program#dev-program-benefits) **ya sean estas integraciones antiguas o nuevas**. Por eso, no olvides incluir tus credenciales en todas las integraciones que realices.
 
 Para trabajar con métricas, utilice _headers_ en su preferencia de pago, agregando el código de identificación según el escenario deseado (no es obligatorio completar los tres campos que se mencionan a continuación).
 

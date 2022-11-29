@@ -1,6 +1,6 @@
 # Métricas de integração
 
-Os membros certificados do [&lt;dev>program](https://www.mercadopago.com.br/developers/pt/developer-program) podem identificar suas integrações do Checkout Pro para ter acesso aos [benefícios do programa](https://www.mercadopago.com.br/developers/pt/developer-program#dev-program-benefits). Por isso, não esqueça de incluir suas credenciais em todas as integrações que realizar.
+Os membros certificados do [&lt;dev>program](https://www.mercadopago.com.br/developers/pt/developer-program) podem identificar suas integrações do Checkout Pro para ter acesso aos [benefícios do programa](https://www.mercadopago.com.br/developers/pt/developer-program#dev-program-benefits) **sejam essas integrações antigas ou novas**. Por isso, não esqueça de incluir suas credenciais em todas as integrações que realizar.
 
 > NOTE
 >
@@ -16,6 +16,8 @@ Abaixo você encontra uma lista com os plugins que permitem adicionar o `integra
 - [Prestashop](/developers/pt/docs/prestashop/landing)
 - [Magento](/developers/pt/docs/magento-two/landing)
 - [VTEX](/developers/pt/docs/vtex/introduction)
+
+Para mais detalhes sobre como e por que utilizar o `integrator_id` nas suas integrações, acesse nossa FAQ.
 
 
 ## Integração 
