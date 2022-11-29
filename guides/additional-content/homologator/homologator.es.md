@@ -6,4 +6,27 @@ Homologator es una herramienta con la que puedes **medir la calidad de tu aplica
 >
 > Atención
 >
-> Por ahora, la herramienta de medición de la [calidad de integración](/developers/es/guides/additional-content/homologator/homologator) solo está disponible para integraciones con [Checkout Pro](/developers/es/docs/checkout-pro/landing).
+> Por ahora, la herramienta de medición de la calidad de integración solo está disponible para integraciones con [Checkout Pro](/developers/es/docs/checkout-pro/landing).
+
+Para medir la calidad de su aplicación, siga los pasos a continuación.
+
+1. En el [Devsite](/developers/es/docs), accede al menú **Tus integraciones > [Dashboard](/developers/es/guides/additional-content/dashboard/introduction)**.
+2. En la área [Sus aplicaciones](/developers/es/docs/dashboard/applications) del Dashboard, **haz clic en la card** de la aplicación deseada.
+3. Luego haz clic en **Detalles de puntaje** para acceder a la herramienta donde puedes **medir la calidad de tu aplicación** y ver el puntaje que indica qué tan segura y alineada está la configuración de tu aplicación con las buenas prácticas de integración de Mercado Pago .
+4. En la pantalla "Calidad de integración", haz clic en **Evaluar calidad** e ingrese el `payment ID` de un pago realizado con [credenciales](/developers/es/guides/additional-content/credentials/credentials) de producción de la aplicación en cuestión. Siempre que sea posible, mostraremos en el campo el último `payment ID` productivo que identificamos en la aplicación en cuestión.
+
+¡Listo! Se ha realizado la medición de calidad y se mostrará la siguiente información:
+
+* **Puntuación**: indica qué tan segura es la configuración de tu aplicación y está en línea con las buenas prácticas de integración de Mercado Pago.
+* **Aumentar la aprobación de pagos**: presenta las acciones necesarias o buenas prácticas que pueden aumentar las aprobaciones de pago de la solución de pago integrada en la aplicación.
+* **Mejora la experiencia del comprador**: indica las acciones necesarias o buenas prácticas que pueden mejorar la experiencia de tus compradores al utilizar Mercado Pago como solución de pago.
+* **Conciliación financiera**.
+* **Escalabilidad**.
+
+> WARNING
+>
+> Importante
+>
+> Las acciones indicadas como **necesarias** deben completarse para sumar puntos que mejorarán la calidad de su integración, mientras que las indicadas como **buenas prácticas** no afectarán la puntuación.
+
+Después de finalizar las acciones indicadas, haz clic en **Actualizar puntaje** para completar la medición y dejar su aplicación completa para la integración.
