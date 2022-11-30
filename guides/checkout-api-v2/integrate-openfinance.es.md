@@ -176,7 +176,7 @@ Respuesta
 ## Orientar al usuario para finalizar el pago
 Con la respuesta de solicitud de creación de pago, simplemente usa la URL disponible en el objeto `point_of_interaction.transaction_data.ticket_url` para que el comprador pueda finalizar el pago a través de Open Finance.
 
-Para esto, puede redirigir al usuario a la URL directamente o presentar un botón que redirija cuando se haga clic.
+Para esto, puedes redirigir al usuario a la URL directamente o presentar un botón que redirija cuando se haga clic.
 
 La imagen siguiente muestra un ejemplo de este proceso en la vista del usuario:
 
