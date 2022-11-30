@@ -8,7 +8,7 @@ Homologator es una herramienta con la que puedes **medir la calidad de tu aplica
 >
 > Por ahora, la herramienta de medición de la calidad de integración solo está disponible para integraciones con [Checkout Pro](/developers/es/docs/checkout-pro/landing).
 
-Para medir la calidad de su aplicación, siga los pasos a continuación.
+Para medir la calidad de tu aplicación, sigue los pasos a continuación.
 
 1. En el [Devsite](/developers/es/docs), accede al menú **Tus integraciones > [Dashboard](/developers/es/guides/additional-content/dashboard/introduction)**.
 2. En la área [Tus aplicaciones](/developers/es/docs/dashboard/applications) del Dashboard, **haz clic en la card** de la aplicación deseada.
