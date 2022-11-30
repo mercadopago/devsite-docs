@@ -531,7 +531,7 @@ En este momento, si desea obtener el estado actual del pago, debe consultar la A
 > 
 > La URL de devolución de llamada vendrá con el parámetro `paymentId` que contiene la identificación de pago creada anteriormente.
 
-Si necesita abrir una aplicación móvil, le recomendamos que cree un [Android App Link](https://developer.android.com/training/app-links) o un [Universal Link](https://developer.android.com/training/app-links). Vale recordar que en Androids con versiones anteriores a la 12, el usuario tiene la posibilidad de elegir dónde abrir el App Link como se muestra en la siguiente imagen:
+Si necesitas abrir una aplicación móvil, te recomendamos que crees un [Android App Link](https://developer.android.com/training/app-links) o un [Universal Link](https://developer.android.com/training/app-links). Vale recordar que en Androids con versiones anteriores a la 12, el usuario tiene la posibilidad de elegir dónde abrir el App Link como se muestra en la siguiente imagen:
 
 ![Exemplo de Android solicitando onde abrir](/images/api/open-finance(advanced)/callback.png)
 
