@@ -200,7 +200,7 @@ Crea un pago de Pix Open Finance y utiliza la URL disponible en el atributo `poi
 }
 ```
 
-En esta página, tendrá acceso a la información de pago y tendrá la posibilidad de seleccionar solo el banco 370 - Mercado Pago - Pagos para continuar con la prueba.
+En esta página, tendrás acceso a la información de pago y tendrás la posibilidad de seleccionar solo el banco 370 - Mercado Pago - Pagos para continuar con la prueba.
 
 Al seleccionar el banco indicado, será posible confirmar el pago y finalmente, se producirá la redirección a la pantalla de Feedback definida en el parámetro `callback_url`.
 
