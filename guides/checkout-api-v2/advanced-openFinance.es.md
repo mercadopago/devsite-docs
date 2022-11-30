@@ -8,7 +8,7 @@ Con Open Finance, se pueden hacer pagos Pix con saldos de otras cuentas bancaria
 > 
 > Importante
 > 
-> Para usar esta función, debe registrar una clave Pix en su cuenta de Mercado Pago. Si aún no lo ha hecho, [haga clic aquí](https://www.youtube.com/watch?v=60tApKYVnkA) para obtener más información sobre cómo registrarse.
+> Para usar esta función, debes registrar una clave Pix en su cuenta de Mercado Pago. Si aún no lo has hecho, [haz clic aquí](https://www.youtube.com/watch?v=60tApKYVnkA) para obtener más información sobre cómo registrarte.
 
 Use nuestras API o SDK para crear su propio sistema de pago Open Finance en su sitio web o aplicación móvil. Desde la configuración básica hasta la avanzada, controlando todo el flujo de acuerdo con su experiencia de pago.
 
