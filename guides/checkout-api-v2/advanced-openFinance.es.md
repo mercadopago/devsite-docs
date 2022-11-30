@@ -243,7 +243,7 @@ curl --request GET \
 }
 ```
 
-**Erros possíveis**
+**Errores posibles**
 
 | Código do error | Tipo         | Descripción                                        |
 |----------------|--------------|--------------------------------------------------|
