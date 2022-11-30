@@ -574,7 +574,7 @@ Para probar tu integración, simplemente crea un pago PIX Open Finance y haz lo 
 
 * Informe la URL de redireccionamiento en `callback_url`.
 
-En el entorno de Sandbox, se mostrará una pantalla que simula la institución propietaria de la cuenta, con tres botones que le permitirán elegir cuál será el estado final de este pago de prueba:
+En el entorno de Sandbox, se mostrará una pantalla que simula la institución propietaria de la cuenta, con tres botones que te permitirán elegir cuál será el estado final de este pago de prueba:
 
 * approved
   
