@@ -57,7 +57,7 @@ En esta área, puede ver el nombre de la aplicación y, si es necesario, editar 
 Producto o plataforma integrada con la aplicación.
 
 #### Numero de la aplicacion
-En esta área puede ver el ID de la aplicación.
+En este área puedes ver el ID de la aplicación.
 
 #### Puntuación 
 El puntaje indica qué tan segura es la configuración de tu aplicación y está en línea con las buenas prácticas de integración de Mercado Pago.
