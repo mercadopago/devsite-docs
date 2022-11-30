@@ -38,7 +38,7 @@ Después de crear tu aplicación, puedes hacer clic en el botón "Editar" para v
   <br/>
  
 ### Elimina una aplicación
-Si necesita eliminar una aplicación en su Dashboard, haz clic en los 3 puntos verticales en la tarjeta de la aplicación, seleccione la opción **Eliminar** y confirme la acción en el cuadro de diálogo.
+Si necesita eliminar una aplicación en su Dashboard, haz clic en los 3 puntos verticales en la tarjeta de la aplicación, selecciona la opción **Eliminar** y confirma la acción en el cuadro de diálogo.
  
 > WARNING
 >
