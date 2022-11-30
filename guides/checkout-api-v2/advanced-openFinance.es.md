@@ -518,7 +518,7 @@ Es necesario señalar que el redireccionamiento es parte de Open Finance, por lo
 > 
 > Importante
 > 
-> Recuerde que el Banco Central de Brasil requiere que el cliente conozca el Iniciador de la Transacción de Pago que está orquestando la transacción, por lo que es necesario informar que la transacción se "realiza a través de Mercado Pago".
+> Recuerda que el Banco Central de Brasil requiere que el cliente conozca el Iniciador de la Transacción de Pago que está orquestando la transacción, por lo que es necesario informar que la transacción se "realiza a través de Mercado Pago".
 
 ## Callback
 Luego de la autorización del pago en la otra institución, el usuario será redirigido a **una página web de Mercado Pago**, que regula este flujo de pago, y pronto será dirigido a la URL insertada en el atributo `callback_url` al momento de crear el pago. 
