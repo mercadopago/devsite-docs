@@ -17,13 +17,13 @@ Abaixo você encontra uma lista com os plugins que permitem adicionar o `integra
 - [Magento](/developers/pt/docs/magento-two/landing)
 - [VTEX](/developers/pt/docs/vtex/introduction)
 
-Para mais detalhes sobre como e por que utilizar o `integrator_id` nas suas integrações, acesse nossa FAQ.
+Para mais detalhes sobre como e por que utilizar o `integrator_id` nas suas integrações, acesse nossa [FAQ](https://www.mercadopago.com/developers/pt/support/23937).
 
 ## Integração 
 
 Para identificar suas integrações e trabalhar com métricas, utilize um dos SDKs abaixo informando o `integrator_id` e/ou `x-platform-id` e execute a requisição.
 
-> Além dos SDKs, é possível identificar suas integrações através da API de preferências. Para isso, envie o parâmetro `integrator_id` e/ou `x-platform-id` com suas respectivas informações ao endpoint [/checkout/preferences](/developers/pt/reference/preferences/_checkout_preferences/post) e execute a requisição.
+> Além dos SDKs, é possível identificar suas integrações através da API de preferências. Para isso, envie o parâmetro `integrator_id` e/ou `x-platform-id` com suas respectivas informações ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição.
 
 
 | Header | Tipo de código | Identificador |
