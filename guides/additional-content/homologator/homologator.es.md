@@ -27,6 +27,6 @@ Para medir la calidad de su aplicación, siga los pasos a continuación.
 >
 > Importante
 >
-> Las acciones indicadas como **necesarias** deben completarse para sumar puntos que mejorarán la calidad de su integración, mientras que las indicadas como **buenas prácticas** no afectarán la puntuación.
+> Las acciones indicadas como **necesarias** deben completarse para sumar puntos que mejorarán la calidad de tu integración, mientras que las indicadas como **buenas prácticas** no afectarán la puntuación.
 
 Después de finalizar las acciones indicadas, haz clic en **Actualizar puntaje** para completar la medición y dejar tu aplicación completa para la integración.
