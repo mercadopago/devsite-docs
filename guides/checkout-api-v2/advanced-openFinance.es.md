@@ -546,7 +546,7 @@ Por ejemplo, si la cuenta elegida para iniciar el pago no tiene saldo suficiente
 > 
 > Importante
 > 
-> Recuerde que el Banco Central de Brasil requiere que cada transacción comenzada a través del Iniciador de transacciones de pago venza después de 60 minutos.
+> Recuerda que el Banco Central de Brasil requiere que cada transacción comenzada a través del Iniciador de transacciones de pago venza después de 60 minutos.
 
 **Status del Pago**
 | Status   | Situación                                  | Mensaje sugerido                     |
