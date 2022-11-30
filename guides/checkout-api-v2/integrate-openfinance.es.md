@@ -185,7 +185,7 @@ La imagen siguiente muestra un ejemplo de este proceso en la vista del usuario:
 ## Probando tu integración
 Para probar la integración, debe usar una credencial de prueba al crear un pago y tener un usuario de prueba con una clave Pix registrada. [Haga clic aquí](/developers/es/docs/checkout-api/integration-test/make-test-purchase) para acceder a la documentación y encontrar más detalles sobre cómo hacerlo.
 
-Cree un pago de Pix Open Finance y utilice la URL disponible en el atributo `point_of_interaction.transaction_data.ticket_url` para acceder a la página de redirección.
+Crea un pago de Pix Open Finance y utiliza la URL disponible en el atributo `point_of_interaction.transaction_data.ticket_url` para acceder a la página de redirección.
 
 ```json
 {
