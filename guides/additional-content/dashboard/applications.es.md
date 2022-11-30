@@ -29,7 +29,7 @@ Después de crear tu aplicación, puedes hacer clic en el botón "Editar" para v
  
   - Nombre de la aplicación (límite de 50 caracteres).
   - Solución de pago a integrar.
-  - Nombre corto de la aplicación. El nombre corto sirve para identificar personalmente al usuario que crea la aplicación y se mostrará en la herramienta de **medir la calidad de tu aplicación**. Consulte [Calidad de integración](/developers/rd/guides/additional-content/homologator/homologator) para obtener más información.
+  - Nombre corto de la aplicación. El nombre corto sirve para identificar personalmente al usuario que crea la aplicación y se mostrará en la herramienta de **medir la calidad de tu aplicación**. Consulta [Calidad de integración](/developers/rd/guides/additional-content/homologator/homologator) para obtener más información.
   - Descripción de la aplicación (límite de 150 caracteres).
   - Permisos de la aplicación. Este campo muestra las opciones de acceso para tu aplicación, las cuales son: lectura (read), acceso sin conexión (offline access) y escritura (write). De forma predeterminada, tu aplicación se crea con todos los permisos habilitados. Pero puedes deshabilitar un permiso haciendo clic en la casilla de verificación del que deseas cambiar.
   - Redirigir URL. Este campo define la URL en la que deseas recibir el código de autorización cuando tu integración se configura como Marketplace o se realiza a través de OAuth. Lee [OAuth](/developers/es/docs/security/oauth/introduction) para más detalles.
