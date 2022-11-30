@@ -14,7 +14,7 @@ Para crear una aplicación, sigue los pasos a continuación.
 2. Ponle un nombre a tu aplicación (límite de 50 caracteres).
 3. Elige una solución para integrarte.
    * **Pagos online**. Si estás utilizando una plataforma de e-commerce, selecciona la **plataforma** que utilizarás para la integración. De no ser así, selecciona el **producto de Mercado Pago** que deseas integrar.
-   * **Pagos presenciales**. Seleccione el **producto de Mercado Pago** a integrar.
+   * **Pagos presenciales**. Selecciona el **producto de Mercado Pago** a integrar.
 4. Acepta nuestros términos y condiciones.
 5. Crea la aplicación haciendo clic en el botón "Crear aplicación".
  
