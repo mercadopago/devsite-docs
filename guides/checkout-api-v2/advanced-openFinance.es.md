@@ -566,7 +566,7 @@ Por ejemplo, si la cuenta elegida para iniciar el pago no tiene saldo suficiente
 
 
 ## Pruebe su integración
-Para probar su integración, simplemente cree un pago PIX Open Finance y haga lo siguiente:
+Para probar tu integración, simplemente crea un pago PIX Open Finance y haz lo siguiente:
 
 * Redirigir a la URL informada en `point_of_interaction.transaction_data.ticket_url`, que tiene el enlace al entorno Sandbox;
 
