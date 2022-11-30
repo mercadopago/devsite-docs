@@ -4,7 +4,7 @@ Llamamos aplicaciones a las distintas integraciones contenidas en una o varias t
  
 Cada aplicación tiene un conjunto de credenciales y la posibilidad de configurar sus propias notificaciones. Cada tarjeta representa una aplicación creada y muestra el **nombre**, la **descripción**, el **ID de la aplicación** y un **botón que permite administrar la aplicación**.
 
-> Por defecto, la pantalla muestra solo 3 aplicaciones creadas. Para ver las otras aplicaciones, haga clic en **Ver todas las aplicaciones**.
+> Por defecto, la pantalla muestra solo 3 aplicaciones creadas. Para ver las otras aplicaciones, haz clic en **Ver todas las aplicaciones**.
 
 ## Crear nueva aplicación
  
