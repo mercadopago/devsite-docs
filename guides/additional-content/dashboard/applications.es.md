@@ -51,7 +51,7 @@ Si necesita eliminar una aplicación en su Dashboard, haz clic en los 3 puntos v
 Al hacer clic en la tarjeta de una aplicación, tendrás acceso a los detalles de la aplicación, que incluyen:
 
 #### Nombre de la aplicación
-En esta área, puede ver el nombre de la aplicación y, si es necesario, editar los datos de la aplicación haciendo clic en el icono correspondiente.
+En este área, puedes ver el nombre de la aplicación y, si es necesario, editar los datos de la aplicación haciendo clic en el ícono correspondiente.
 
 #### Integración 
 Producto o plataforma integrada con la aplicación.
