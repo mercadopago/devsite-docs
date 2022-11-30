@@ -18,10 +18,13 @@ Para medir la calidad de tu aplicación, sigue los pasos a continuación.
 ¡Listo! Se ha realizado la medición de calidad y se mostrará la siguiente información:
 
 * **Puntuación**: indica qué tan segura es la configuración de tu aplicación y está en línea con las buenas prácticas de integración de Mercado Pago.
-* **Aumentar la aprobación de pagos**: presenta las acciones necesarias o buenas prácticas que pueden aumentar las aprobaciones de pago de la solución de pago integrada en la aplicación.
-* **Mejora la experiencia del comprador**: indica las acciones necesarias o buenas prácticas que pueden mejorar la experiencia de tus compradores al utilizar Mercado Pago como solución de pago.
-* **Conciliación financiera**.
-* **Escalabilidad**.
+* **Payment ID**: `payment ID` en el que se basa el puntaje de calidad de la aplicación.
+* **Última actualización**: fecha de la última actualización del puntaje de calidad de la aplicación.
+* **Mejora la experiencia de la persona que compra**: acciones necesarias o buenas prácticas que pueden mejorar la experiencia de tus compradores al utilizar Mercado Pago como solución de pago.
+* **Conciliación financiera**: acciones necesarias o buenas prácticas que podrían mejorar la consistencia en la verificación de la información financiera.
+* **Aumentar la aprobación de pagos**: acciones necesarias o buenas prácticas que pueden aumentar las aprobaciones de pago de la solución de pago integrada en la aplicación.
+* **Escalabilidad**: acciones necesarias o buenas prácticas que pueden mejorar la escalabilidad de su integración, es decir, satisfacer las demandas sin perder las cualidades que aportan valor.
+* **Seguridad**: acciones necesarias o buenas prácticas que pueden aumentar la seguridad de tu integración.
 
 > WARNING
 >

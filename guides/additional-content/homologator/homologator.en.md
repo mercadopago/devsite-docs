@@ -18,10 +18,13 @@ To measure the quality of your application, follow the steps below.
 Ready! The quality measurement has been performed and the following information will be displayed:
 
 * **Score**: indicates how safe your application's configuration is and is in line with Mercado Pago's best integration practices.
+* **Payment ID**: `payment ID` on which the application quality score is based.
+* **Last update**: Date of last update of the application's quality score.
+* **Improve the experience of the person who buys**: indicate the required actions or best practices that can improve the experience of your buyers when using Mercado Pago as a payment solution.
+* **Financial reconciliation**: necessary actions or best practices that could improve consistency in checking financial information.
 * **Increase payment approval**: present the required actions or best practices that may increase payment approvals of the payment solution integrated into the application.
-* **Improve the buyer's experience**: indicate the required actions or best practices that can improve the experience of your buyers when using Mercado Pago as a payment solution.
-* **Financial reconciliation**.
-* **Scalability**.
+* **Scalability**: necessary actions or good practices that can improve the scalability of your integration, that is, meeting the demands without losing the qualities that add value.
+* **Security**: necessary actions or good practices that can increase the security of your integration.
 
 > WARNING
 >
