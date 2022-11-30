@@ -287,7 +287,7 @@ Con el ID de banco elegido por el usuario, cree un pago y pase esta información
 Para más información, ve la sección de creación de pagos en [esta documentación](#bookmark_creación_de_pago)
 
 #### Prácticas recomendadas
-El vendedor podrá mostrar las instituciones favoritas en los primeros lugares de la lista o en el formato que prefiera, sin embargo, **no podrá impedir que el cliente seleccione alguna de las instituciones disponibles para su uso**.
+El vendedor podrá mostrar las instituciones favoritas en los primeros lugares de la lista o en el formato que prefiera. Sin embargo, **no podrá impedir que el cliente seleccione alguna de las instituciones disponibles para su uso**.
 
 ![Lista de bancos disponíveis](/images/api/open-finance(advanced)/display-tips.png)
 
