@@ -535,7 +535,7 @@ Si necesitas abrir una aplicación móvil, te recomendamos que crees un [Android
 
 ![Exemplo de Android solicitando onde abrir](/images/api/open-finance(advanced)/callback.png)
 
-Por lo tanto, incluso si el flujo va a terminar en una aplicación móvil, **le recomendamos que también cree una pantalla web de handover** para usarla cuando el usuario quiera abrir el link en su navegador.
+Por lo tanto, incluso si el flujo va a terminar en una aplicación móvil, **te recomendamos que también crees una pantalla web de handover** para usarla cuando el usuario quiera abrir el link en su navegador.
 
 ## Mensajes de respuesta
 Ofrezca a sus clientes información clara y precisa sobre posibles errores en la Iniciación de Operaciones de Pago o el estado de los pagos realizados. Esto le permite notificarles qué acción pueden tomar para resolver o comunicar si hay pasos adicionales que tomar.
