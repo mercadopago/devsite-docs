@@ -538,7 +538,7 @@ Si necesitas abrir una aplicación móvil, te recomendamos que crees un [Android
 Por lo tanto, incluso si el flujo va a terminar en una aplicación móvil, **te recomendamos que también crees una pantalla web de handover** para usarla cuando el usuario quiera abrir el link en su navegador.
 
 ## Mensajes de respuesta
-Ofrezca a sus clientes información clara y precisa sobre posibles errores en la Iniciación de Operaciones de Pago o el estado de los pagos realizados. Esto le permite notificarles qué acción pueden tomar para resolver o comunicar si hay pasos adicionales que tomar.
+Ofrece a tus clientes información clara y precisa sobre posibles errores en la Iniciación de Operaciones de Pago o el estado de los pagos realizados. Esto te permite notificarles qué acción pueden tomar para resolver o comunicar si hay pasos adicionales que tomar.
 
 Por ejemplo, si la cuenta elegida para iniciar el pago no tiene saldo suficiente para la compra, puede ser recomendable que intente pagar de nuevo con otro método de pago para completar la operación. Para obtener más información sobre posibles errores, consulte la referencia en la declaración de la API.
 
