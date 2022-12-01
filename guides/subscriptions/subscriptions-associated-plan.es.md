@@ -18,27 +18,39 @@ El plan de suscripción te permite definir, entre otros atributos, el título, e
 >
 > Importante
 >
-> Al ejecutar la API, se creará el plan y tendrás acceso a `preapproval_plan_id`, **que en la respuesta de la API se mostrará como ìd`.** Este **atributo es obligatorio** para crear la suscripción. 
+> Al ejecutar la API, se creará el plan y tendrás acceso a `preapproval_plan_id`, **que en la respuesta de la API se mostrará como `id`.** Este **atributo es obligatorio** para crear la suscripción. 
 
 [[[
 ```curl
+curl -X POST \
 
-curl --location --request POST 'https://api.mercadopago.com/preapproval_plan?access_token=APP_USR-????' \
---header 'Content-Type: application/json' \
---data-raw '{
-	"back_url":"https://www.google.com",
-	"reason":"Test Subscription",
-	"auto_recurring":{
-		"frequency":"6",
-		"frequency_type":"months",
-		"repetitions":10,
-		"transaction_amount":2300,
-		"currency_id":"BRL",
-		"free_trial":{
-			"frequency_type":"months",
-			"frequency":"6"
-		}
-	}
+      'https://api.mercadopago.com/preapproval_plan' \
+      -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
+      -H 'Content-Type: application/json' \ 
+      -d '{
+  "reason": "Yoga classes",
+  "auto_recurring": {
+    "frequency": 1,
+    "frequency_type": "months",
+    "repetitions": 12,
+    "billing_day": 10,
+    "billing_day_proportional": true,
+    "free_trial": {
+      "frequency": 1,
+      "frequency_type": "months"
+    },
+    "transaction_amount": 10,
+    "currency_id": "ARS"
+  },
+  "payment_methods_allowed": {
+    "payment_types": [
+      {}
+    ],
+    "payment_methods": [
+      {}
+    ]
+  },
+  "back_url": "https://www.yoursite.com"
 }'
 ```
 ]]]
