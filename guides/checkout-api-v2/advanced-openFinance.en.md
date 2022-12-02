@@ -162,7 +162,7 @@ Once you've configured the payment method correctly, you'll need to add new info
 > Important information
 > 
 > For this type of payment method, the **CPF number is mandatory**.
-> - The `callback_url` parameter must contain the URL value that shows the feedback page.
+> The `callback_url` parameter must contain the URL value that shows the feedback page.
 
 The response will be very similar to the return of a payment with a common Pix, with some changes:
 
