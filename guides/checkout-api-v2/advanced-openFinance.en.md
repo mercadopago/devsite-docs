@@ -513,7 +513,7 @@ It is essential to point out that the redirection is part of Open Finance; there
 
 > WARNING
 > 
-> Important
+> Attention
 > 
 > The Central Bank of Brazil says that the customer needs to know who is starting the Payment Transaction, for this reason, it is important to say that the transaction is **"done through Mercado Pago."**
 
