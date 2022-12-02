@@ -148,7 +148,7 @@ Uma vez que você tenha configurado o meio de pagamento corretamente, será prec
 > 
 > Atenção
 > 
-> - Para este meio de pagamento, o número de **CPF é obrigatório**
+> Para este meio de pagamento, o número de **CPF é obrigatório**.
 > - O parâmetro `callback_url` deve conter o valor da URL que mostra a tela de feedback
 
 O retorno da requisição será muito similar ao retorno de um pagamento com Pix comum, com algumas mudanças:
