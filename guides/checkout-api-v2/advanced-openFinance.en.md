@@ -585,7 +585,6 @@ Finally, after selecting the final payment status, you will be redirected to the
 
 After choosing the final payment status, the test flow will show a "waiting screen", which will not be shown in the productive flows.
 
-
 > WARNING
 > 
 > Attention
