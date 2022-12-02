@@ -217,7 +217,7 @@ curl --request GET \
 
 > By default, the API returns all banks, without any type of filter.
 
-**Response sample**
+**Response sample**:
 
 ```json
 {
