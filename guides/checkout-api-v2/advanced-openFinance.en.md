@@ -358,7 +358,6 @@ For authentication and confirmation at the selected Financial Institution, the c
 
 > 
 > Note
-> 
 > The value returned in `ticket_url` is the Carousel Redirect url.
 
 **Response**
