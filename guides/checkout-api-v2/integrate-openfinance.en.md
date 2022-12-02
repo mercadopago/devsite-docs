@@ -152,7 +152,6 @@ Once you've configured the payment method correctly, you'll need to add new info
 > For this type of payment method, the **CPF number is mandatory**.
 > The `callback_url` parameter must contain the URL value that shows the feedback page.
 
-
 The response will be very similar to the return of a payment with a common Pix, with some changes:
 
 * The **openfinance** value at `point_of_interaction.linked_to`
