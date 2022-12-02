@@ -193,6 +193,7 @@ It is important to make sure that the customer understands how to use the Open F
 Check below some usability tips to improve the flow of payments via Open Finance.
 
 ### How to list available banks
+
 To let the customer pay through the Open Finance Payment Transaction Initiator, you need to do the following:
 
 #### 1 - Provide the list of available Financial Institutions
