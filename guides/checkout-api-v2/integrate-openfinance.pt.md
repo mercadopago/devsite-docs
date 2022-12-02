@@ -1,4 +1,5 @@
 # Open Finance
+
 Open Finance é um novo sistema financeiro que permite que você tenha total controle dos seus dados e mais liberdade com suas finanças. Com ele é possível compartilhar históricos financeiros com outras instituições para ter acesso a produtos e serviços mais vantajosos.
 
 Com o Open Finance será possível oferecer pagamentos Pix no Checkout Transparente, utilizando saldos que estejam em instituições financeiras distintas daquela que está iniciando o pagamento.
