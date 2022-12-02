@@ -544,6 +544,7 @@ For example, if the account chosen to initiate the payment does not have enough 
 > The Central Bank of Brazil says that every payment transaction started with the Payment Transaction Initiator has to be finished in 60 minutes.
 
 **Payment Status**:
+
 | Status   | Scenario                                   | Suggested message                    |
 |----------|--------------------------------------------|--------------------------------------|
 | PENDING  | Cases where payment is still pending.      |   Your payment is being processed.   |
