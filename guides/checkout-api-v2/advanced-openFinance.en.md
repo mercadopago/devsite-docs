@@ -4,7 +4,6 @@ Payments can be made via Open Finance through Mercado Pago using the account bal
 
 With Open Finance, **it will be possible to offer Pix payments in the Checkout API**, using balances that are in financial institutions besides the one initiating the payment.
 
-
 > NOTE
 > 
 > Important
