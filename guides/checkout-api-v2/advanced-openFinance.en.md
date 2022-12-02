@@ -276,7 +276,7 @@ Currently, the participating Financial Institutions approved and available to st
 
 > WARNING
 > 
-> Importante
+> Attention
 > 
 > The list of Financial Institutions is dynamic and may be changed in case of unavailability.
 
