@@ -560,6 +560,7 @@ For example, if the account chosen to initiate the payment does not have enough 
 | REJECTED_SETTLEMENT_FAILED | Case where the customer did not agree to the payment or there was an error during the approval.     | It is not possible to do this transaction right now. We're sorry about that. Try again later.                                      |
 
 ## Testing your integration
+
 To test your integration, simply create a PIX Open Finance payment and follow the steps below:
 
 * Redirect to the URL returned in `point_of_interaction.transaction_data.ticket_url`, which has the link to the Sandbox environment;
