@@ -532,6 +532,7 @@ If you need to open a mobile application, we recommend creating an [Android App 
 Even if the flow is going to end in a mobile app, **we recommend that you also create a handover screen** to be used when the user wants to open the link in their browser.
 
 ## Response messages
+
 Ensure that your customers are provided with clear and accurate information about possible errors in the Initiation of Payment Transactions or the status of payments made. You can let them know what action they can take to resolve or communicate if there are more steps to take.
 
 For example, if the account chosen to initiate the payment does not have enough balance for the purchase, it may be recommended that the customer try again with another payment method to complete the operation. Below you will find further information about this.
