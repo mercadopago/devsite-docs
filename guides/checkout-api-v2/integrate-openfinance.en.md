@@ -147,7 +147,7 @@ Once you've configured the payment method correctly, you'll need to add new info
 
 > WARNING
 > 
-> Important information
+> Attention
 > 
 > For this type of payment method, the **CPF number is mandatory**.
 > The `callback_url` parameter must contain the URL value that shows the feedback page.
