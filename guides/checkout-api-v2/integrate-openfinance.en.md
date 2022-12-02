@@ -159,7 +159,7 @@ The response will be very similar to the return of a payment with a common Pix, 
 * **Null** value in `point_of_interaction.transaction_data.qr_code` and `point_of_interaction.transaction_data.qr_code_base64`
 * Value of `point_of_interaction.transaction_data.ticket_url` with URL to the application that finalizes the payment by Open Finance
 
-Response
+Response:
 
 ```json
 {
