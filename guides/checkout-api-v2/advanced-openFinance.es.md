@@ -282,7 +282,7 @@ Actualmente, las Instituciones Financieras participantes aprobadas y disponibles
 > La lista de entidades financieras puede cambiar si hay alguna que no esté disponible.
 
 #### 2 - Crear un pago
-Con el ID de banco elegido por el usuario, cree un pago y pase esta información al campo `transaction_data.bank_info.origin_bank_id` de la solicitud de creación de pago.
+Con el ID de banco elegido por el usuario, crea un pago y pasa esta información al campo `transaction_data.bank_info.origin_bank_id` de la solicitud de creación de pago.
 
 Para más información, ve la sección de creación de pagos en [esta documentación](#bookmark_creación_de_pago)
 
