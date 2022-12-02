@@ -252,7 +252,7 @@ curl --request GET \
 
 > WARNING
 > 
-> Important
+> Attention
 > 
 > As a prerequisite for calling this endpoint, it is necessary to pass the production `access_token` for productive requests and the test one for test requests.
 
