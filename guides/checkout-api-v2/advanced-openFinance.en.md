@@ -314,7 +314,7 @@ The review and confirmation page must include, at a minimum, the following infor
 
 > WARNING
 > 
-> Important
+> Attention
 > 
 > The Terms and Conditions can be presented as a link, depending on the Initiating Payment Transaction Institution's decision on whether to require customers to act.
 
