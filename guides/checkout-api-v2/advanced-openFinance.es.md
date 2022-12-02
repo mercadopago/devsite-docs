@@ -15,7 +15,7 @@ Usa nuestras API o SDK para crear tu propio sistema de pago Open Finance en tu s
 ### Características
 * Crea tu propia plataforma de Iniciación de Pagos dentro de tu sitio web.
   
-* Desarrolle y personalice la experiencia de inicio de transacciones de pago. 
+* Desarrolla y personaliza la experiencia de inicio de transacciones de pago. 
   
 * Permita que sus clientes paguen con saldos de otras cuentas. 
   
