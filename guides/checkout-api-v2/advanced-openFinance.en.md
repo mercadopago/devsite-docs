@@ -518,6 +518,7 @@ It is essential to point out that the redirection is part of Open Finance; there
 > The Central Bank of Brazil says that the customer needs to know who is starting the Payment Transaction, for this reason, it is important to say that the transaction is **"done through Mercado Pago."**
 
 ## Callback
+
 After the payment has been authorized at the other institution, the user will be redirected to a Mercado Pago web page, which regulates this payment flow. The user will then be directed to the URL inserted in the 'callback_url' attribute when creating the payment.
 
 At this moment, if you want to obtain the current status of the payment, you need to query the payment API, using the [Get Payment method](/developers/en/reference/payments/_payments_search/get), using the payment ID returned in the url.
