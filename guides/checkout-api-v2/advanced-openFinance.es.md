@@ -194,7 +194,7 @@ Consulte a continuación algunos consejos de usabilidad para mejorar el flujo de
 ### Cómo enumerar los bancos disponibles
 Presentar una lista de posibles entidades financieras para que el usuario seleccione la que le gustaría para proceder al pago.
 
-Para permitir que el cliente inicie una transacción de pago a través del iniciador de transacciones de pago de Open Finance, debe hacer lo siguiente:
+Para permitir que el cliente inicie una transacción de pago a través del iniciador de transacciones de pago de Open Finance, debes hacer lo siguiente:
 
 #### 1 - Proporcionar la lista de Instituciones Financieras disponibles
 Para hacer esto, solo haga la siguiente solicitud:
