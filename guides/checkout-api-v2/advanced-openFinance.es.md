@@ -24,7 +24,7 @@ Usa nuestras API o SDK para crear tu propio sistema de pago Open Finance en tu s
 ### Cómo integrar Open Finance en tu Checkout
 Para iniciar un pago utilizando Open Finance, debes tener configurado previamente el método de pago Pix. Para obtener instrucciones de configuración e integración, [consulta la documentación](/developers/es/docs/checkout-api/prerequisites).
 
-Una vez que haya configurado correctamente el método de pago, deberá agregar nueva información a la solicitud para [crear el pago](/developers/es/reference/payments/_payments/post), a través del parámetro `point_of_interaction`, que indica el modo de financiación abierta. Esto es válido tanto a través de la API como a través de nuestros SDK, como se muestra en los siguientes ejemplos:
+Una vez que hayas configurado correctamente el método de pago, deberás agregar nueva información a la solicitud para [crear el pago](/developers/es/reference/payments/_payments/post), a través del parámetro `point_of_interaction`, que indica el modo de financiación abierta. Esto es válido tanto a través de la API como a través de nuestros SDK, como se muestra en los siguientes ejemplos:
 
 [[[
     ```php
