@@ -146,7 +146,7 @@ Una vez que hayas configurado correctamente el método de pago, deberás agregar
 
 > WARNING
 > 
-> Informaciones importantes
+> Atención
 > 
 > - Para este tipo de método de pago, **el número de CPF es obligatorio**.
 > - El parámetro `callback_url` tiene que ser la URL de la pantalla de feedback.
