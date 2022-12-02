@@ -356,7 +356,6 @@ curl --request POST \
 
 For authentication and confirmation at the selected Financial Institution, the customer must be redirected to the appropriate channel through the URL returned in the `ticket_url` parameter in the request response.
 
-> Note
 > The value returned in `ticket_url` is the Carousel Redirect url.
 
 **Response**
