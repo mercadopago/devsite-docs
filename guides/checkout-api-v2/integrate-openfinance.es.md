@@ -1,5 +1,5 @@
 # Open Finance
-Open Finance es un nuevo sistema financiero que le permite tener un dominio total de sus datos y mayor libertad con sus finanzas. Con él, es posible compartir historias financieras con otras instituciones para acceder a productos y servicios más ventajosos.
+Open Finance es un nuevo sistema financiero que te permite tener un dominio total de tus datos y mayor libertad con tus finanzas. Con él, es posible compartir historias financieras con otras instituciones para acceder a productos y servicios más ventajosos.
 
 Con Open Finance, se pueden hacer pagos Pix con saldos de otras cuentas bancarias, **en el Checkout API**.
 
