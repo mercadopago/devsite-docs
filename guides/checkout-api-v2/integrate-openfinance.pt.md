@@ -173,6 +173,7 @@ Exemplo de resposta
 ```
 
 ## Guiando o usuário para a finalização do pagamento
+
 Com a resposta da requisição de criação de pagamento, basta utilizar a url disponível no objeto `point_of_interaction.transaction_data.ticket_url` para que o comprador consiga finalizar o pagamento através de Open Finance.
 
 Para isso, é preciso redirecionar o usuário para a URL diretamente ou apresentar um botão que faz o redirecionamento quando clicado.
