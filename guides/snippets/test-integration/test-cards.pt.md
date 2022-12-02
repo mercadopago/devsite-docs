@@ -132,10 +132,8 @@ Para **testar diferentes resultados de pagamento**, preencha o status desejado n
  
 | Status de pagamento | Descrição | Documento de identidade |
 | --- | --- | --- |
-| `APRO` | Pagamento aprovado | (otro) 123456789 <br/>
-(CI) 12345678 |
-| `OTHE` | Recusado por erro geral | (otro) 123456789 <br/>
-(CI) 12345678 |
+| `APRO` | Pagamento aprovado | (CI) 12345678 <br> (otro) 123456789 |
+| `OTHE` | Recusado por erro geral | (CI) 12345678 <br> (otro) 123456789 |
 | `CONT` | Pagamento pendente | - |
 | `CALL` | Recusado com validação para autorizar | - |
 | `FUND` | Recusado por quantia insuficiente | - |
