@@ -215,7 +215,6 @@ curl --request GET \
 | segment   | Query | Optional | [personal, business] | Allows you to filter banks for PJ or PF.                                                                                                                                                                             |
 | platform  | Query | Optional | [desktop, mobile]    | It allows you to filter by banks that have a specific experience. If the payment is being made on the desktop, you can filter the list of banks to only display ones that have a desktop experience, and vice versa. |
 
-> NOTE
 > 
 > Note
 > 
