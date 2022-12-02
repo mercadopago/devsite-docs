@@ -1,6 +1,6 @@
 # Calidad de integración
 
-Homologator es una herramienta con la que puedes **medir la calidad de tu aplicación**, permitiendo identificar puntos de mejora en tu integración para adecuarla a los estándares de Mercado Pago.
+El self homologator es una herramienta con la que puedes **medir la calidad de tu aplicación**, permitiendo identificar puntos de mejora en tu integración para adecuarla a los estándares de Mercado Pago.
 
 > WARNING
 >
