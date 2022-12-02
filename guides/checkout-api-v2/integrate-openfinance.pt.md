@@ -146,7 +146,7 @@ Uma vez que você tenha configurado o meio de pagamento corretamente, será prec
 
 > WARNING
 > 
-> Informações importantes
+> Atenção
 > 
 > - Para este meio de pagamento, o número de **CPF é obrigatório**
 > - O parâmetro `callback_url` deve conter o valor da URL que mostra a tela de feedback
