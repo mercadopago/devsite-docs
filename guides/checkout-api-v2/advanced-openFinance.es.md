@@ -572,7 +572,7 @@ Para probar tu integración, simplemente crea un pago PIX Open Finance y haz lo 
 
 * Informar a `transaction_data.bank_info.origin_bank_id` con el ID del banco elegido, resultante del listado público de bancos disponibles para Open Finance;
 
-* Informe la URL de redireccionamiento en `callback_url`.
+* Informar la URL de redireccionamiento en `callback_url`.
 
 En el entorno de Sandbox, se mostrará una pantalla que simula la institución propietaria de la cuenta, con tres botones que te permitirán elegir cuál será el estado final de este pago de prueba:
 
