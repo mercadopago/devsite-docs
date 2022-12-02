@@ -4,7 +4,6 @@ Open Finance es un nuevo sistema financiero que te permite tener un dominio tota
 
 Con Open Finance, se pueden hacer pagos Pix con saldos de otras cuentas bancarias, **en el Checkout API**.
 
-
 > NOTE
 > 
 > Importante
