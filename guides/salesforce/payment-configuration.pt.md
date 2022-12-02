@@ -16,7 +16,7 @@ Veja como ativar cada meio de pagamento em sua loja Salesforce:
 Por padrão, o cartucho do Mercado Pago mostrará primeiro a forma de pagamento Pix e depois o cartão de crédito. 
 
 ----[mlb]----
-![payment_methods_v2](/images/salesforce/payment-methods_v2.png)
+![payment_methods_v2](/images/salesforce/payment_methods_v2.png)
 ------------
 
 Caso queira alterar essa ordem, siga estas etapas.

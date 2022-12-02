@@ -17,7 +17,7 @@ A continuación, te explicamos cómo activar cada medio de pago en tu tienda Sal
 Por defecto, el cartucho de Mercado Pago mostrará los medios de pago en un orden determinado. 
 
 ----[mlb]----
-![payment_methods_v2](/images/salesforce/payment-methods_v2.png)
+![payment_methods_v2](/images/salesforce/payment_methods_v2.png)
 ------------
 
 Si deseas modificar este orden, sigue estos pasos.
