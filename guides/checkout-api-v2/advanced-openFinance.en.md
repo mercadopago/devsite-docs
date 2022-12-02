@@ -550,7 +550,7 @@ For example, if the account chosen to initiate the payment does not have enough 
 | APPROVED | Cases where payment are approved.          |   Your payment has been approved.    |
 | REJECTED | Cases where payment is rejected.           |   Your payment has been rejected.    |
 
-**Reasons of rejection**
+**Reasons of rejection**:
 
 | Status                     | Scenario                                                                                            | Suggested message                                                                                                                  |
 |----------------------------|-----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
