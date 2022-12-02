@@ -186,6 +186,7 @@ Response:
 ```
 
 ## Usability best practices
+
 It is important to make sure that the customer understands how to use the Open Finance Payment Transaction Initiation option at Checkout. T**hey need to know that the payment will be made through Mercado Pago** using the Open Finance Payment Transaction Initiation option.
 
 ![Payment method selection page](/images/api/open-finance(advanced)/usability-rule1.png)
