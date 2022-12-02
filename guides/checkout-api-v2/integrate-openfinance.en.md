@@ -1,4 +1,5 @@
 # Open Finance
+
 Open Finance is a new financial system that gives you more freedom with your finances and control over your data. Financial histories can be shared with other institutions to gain access to more beneficial products and services.
 
 With Open Finance, **it will be possible to offer Pix payments in the Checkout API**, using balances that are in financial institutions besides the one initiating the payment.
