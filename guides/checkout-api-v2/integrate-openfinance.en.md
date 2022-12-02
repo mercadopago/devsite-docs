@@ -185,6 +185,7 @@ An example of this flow is shown in the user's view:
 ![Payment flow sample](/images/api/api-integrate-openfinance.gif)
 
 ## Testing your integration
+
 If you want to test the integration, you must have a test user with a registered Pix key and a test credential. You can find more details on how to do this by [clicking here](/developers/en/docs/checkout-api/integration-test/make-test-purchase).
 
 Create a Pix Open Finance payment and use the URL available in the `point_of_interaction.transaction_data.ticket_url` attribute to access the redirect page.
