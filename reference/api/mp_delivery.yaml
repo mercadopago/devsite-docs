@@ -1023,7 +1023,7 @@ paths:
                         x-description-i18n:
                           eng: Estimated time that the courier will arrive at the restaurant to take the order. This attribute is only shown from the moment a courier is assigned to the order, and this occurs in the Status (ready_to_ship/on_route_to_pickup) of the Dropoff delivery flow.
                           spa: Tiempo estimado que el repartidor llegará al restaurante para tomar el pedido. Este atributo solo se muestra desde el momento en que se asigna un repartidor al pedido, y esto ocurre en el estado (ready_to_ship/on_route_to_pickup) del flujo de entrega Dropoff.
-                          por: Horário estimado que o entregador chegará ao restaurante para receber o pedido. Este atributo só é mostrado a partir do momento em que um entregador é atribuído ao pedido, e isso ocorre no Status (ready_to_ship/on_route_to_pickup) do fluxo de entrega Dropoff.
+                          por: Horário estimado que o entregador chegará ao restaurante para receber o pedido. Este atributo só é mostrado a partir do momento em que um entregador é atribuído ao pedido e isso ocorre no status (ready_to_ship/on_route_to_pickup) do fluxo de entrega Dropoff.
                         example: "2022-02-21T22:00:55Z"
         '401':
           description: Error
