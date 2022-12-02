@@ -582,7 +582,7 @@ En el entorno de Sandbox, se mostrará una pantalla que simula la institución p
   
 * rejected.
 
-Finalmente, después de elegir el estado de pago final, será redirigido a la pantalla de feedbacks.
+Finalmente, después de elegir el estado de pago final, serás redirigido a la pantalla de feedbacks.
 
 Ten en cuenta que solo en el flujo de prueba después de elegir el estado de pago final, antes de la redirección de regreso a la URL pasada en `callback_url`, se mostrará una pantalla de "espera" que no aparecerá en los flujos productivos.
 
