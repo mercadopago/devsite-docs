@@ -182,6 +182,7 @@ A imagem a seguir apresenta um exemplo deste fluxo na visão do usuário:
 ![Exemplo de fluxo de pagamento Pix Open Finance](/images/api/api-integrate-openfinance.gif)
 
 ## Testando sua integração
+
 Para testar a integração é necessário utilizar uma credencial de testes ao criar um pagamento e possuir um usuário de testes com chave Pix cadastrada. [Clique aqui](/developers/pt/docs/checkout-api/integration-test/make-test-purchase) para acessar a documentação e encontrar mais detalhes sobre como fazer isso.
 
 Crie um pagamento Pix Open Finance e utilize a URL disponível no atributo `point_of_interaction.transaction_data.ticket_url` para acessar a página de redirecionamento. 
