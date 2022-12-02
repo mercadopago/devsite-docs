@@ -525,7 +525,6 @@ At this moment, if you want to obtain the current status of the payment, you nee
 
 > NOTE
 > Note
-> 
 > The callback url will come with the `paymentId` parameter containing the previously created payment ID.
 
 If you need to open a mobile application, we recommend creating an [Android App Link](https://developer.android.com/training/app-links) or Universal Link](https://developer.android.com/training/app-links). It is worth remembering that on Androids with versions before 12, the user has the possibility to choose where to open the App Link as shown in the image below:
