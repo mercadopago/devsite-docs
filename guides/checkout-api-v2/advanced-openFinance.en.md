@@ -508,7 +508,6 @@ Redirection must occur to the secure digital channel of the Financial Institutio
 
 ![Redirection page sample](/images/api/open-finance(advanced)/authorization.gif)
 
-
 It is essential to point out that the redirection is part of Open Finance; therefore the customer is being redirected safely from the Initiating Institution of the Payment Transaction - Mercado Pago to the Account Holder Institution, using the same graphic elements for both institutions.
 
 > WARNING
