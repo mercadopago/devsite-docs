@@ -197,7 +197,7 @@ Presentar una lista de posibles entidades financieras para que el usuario selecc
 Para permitir que el cliente inicie una transacción de pago a través del iniciador de transacciones de pago de Open Finance, debes hacer lo siguiente:
 
 #### 1 - Proporcionar la lista de Instituciones Financieras disponibles
-Para hacer esto, solo haga la siguiente solicitud:
+Para hacer esto, solo haz la siguiente solicitud:
 
 ```curl
 curl --request GET \
