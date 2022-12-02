@@ -22,7 +22,7 @@ Use our APIs or SDKs to build your own payment experience with Open Finance on y
   
 * Communicate directly with your customers through error messages with personalized responses.
 
-### How to integrate Open Finance into your Checkout
+## How to integrate Open Finance into your Checkout
 Before starting a charge using Open Finance, you must have configured the Pix payment method.  To learn how to configure and integrate it, [access the documentation](/developers/en/docs/checkout-api/prerequisites).
 
 Once you've configured the payment method correctly, you'll need to add new information to the request to [create payment](/developers/en/reference/payments/_payments/post_), through `the point_of_interaction` parameter, indicating the Open finance mode. This is valid both via the API and through our SDKs, as shown in the following examples:
