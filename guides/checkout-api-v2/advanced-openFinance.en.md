@@ -326,7 +326,7 @@ To initiate a Pix payment via Open Finance, the seller must use the API Payment 
 
 * A callback URL must be sent, through the `callback_url` field, to show the feedback to the payer. For more information, visit the [callback section](#bookmark_callback) of this documentation. 
 
-**Request sample**
+**Request sample**:
 
 ```curl
 curl --request POST \
