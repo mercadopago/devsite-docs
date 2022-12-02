@@ -175,6 +175,7 @@ Response:
 ```
 
 ## Guiding the user to finalize the payment
+
 With the payment creation response, just use the URL available in the `point_of_interaction.transaction_data.ticket_url` object. This allows the buyer to finalize the payment through Open Finance.
 
 To accomplish this, you can either redirect the user to the URL directly or present a button that redirects when clicked.
