@@ -565,7 +565,7 @@ Por ejemplo, si la cuenta elegida para iniciar el pago no tiene saldo suficiente
 | REJECTED_SETTLEMENT_FAILED | El cliente no autorizó el pago o tuvo un error durante la autorización | Actualmente, no es posible realizar esta transacción. Nos disculpamos por eso. Vuelva a intentarlo más tarde.                                     |
 
 
-## Pruebe su integración
+## Prueba tu integración
 Para probar tu integración, simplemente crea un pago PIX Open Finance y haz lo siguiente:
 
 * Redirigir a la URL informada en `point_of_interaction.transaction_data.ticket_url`, que tiene el enlace al entorno Sandbox;
