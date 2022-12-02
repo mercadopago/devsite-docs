@@ -495,6 +495,7 @@ For authentication and confirmation at the selected Financial Institution, the c
 ```
 
 ## Authorization and redirection
+
 Redirection must occur to the secure digital channel of the Financial Institution holding the account, which may be:
 
 * App-to-App
