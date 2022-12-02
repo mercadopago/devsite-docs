@@ -17,7 +17,7 @@ Usa nuestras API o SDK para crear tu propio sistema de pago Open Finance en tu s
   
 * Desarrolla y personaliza la experiencia de inicio de transacciones de pago. 
   
-* Permita que sus clientes paguen con saldos de otras cuentas. 
+* Permite que tus clientes paguen con saldos de otras cuentas. 
   
 * Comunícate directamente con tus clientes a través de mensajes de error con respuestas personalizadas.
 
