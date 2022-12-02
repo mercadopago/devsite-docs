@@ -590,6 +590,6 @@ After choosing the final payment status, the test flow will show a "waiting scre
 
 > WARNING
 > 
-> Important
+> Attention
 > 
 > In Sandbox tests, it is not possible to see the callback that occurs in the browser (in the Mercado Pago domain for regulatory reasons). 
