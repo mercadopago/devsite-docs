@@ -528,7 +528,6 @@ At this moment, if you want to obtain the current status of the payment, you nee
 
 If you need to open a mobile application, we recommend creating an [Android App Link](https://developer.android.com/training/app-links) or Universal Link](https://developer.android.com/training/app-links). It is worth remembering that on Androids with versions before 12, the user has the possibility to choose where to open the App Link as shown in the image below:
 
-
 ![Android open with sample](/images/api/open-finance(advanced)/callback.png)
 
 Even if the flow is going to end in a mobile app, **we recommend that you also create a handover screen** to be used when the user wants to open the link in their browser.
