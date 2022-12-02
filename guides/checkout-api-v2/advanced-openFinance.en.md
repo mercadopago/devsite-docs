@@ -537,7 +537,6 @@ Ensure that your customers are provided with clear and accurate information abou
 
 For example, if the account chosen to initiate the payment does not have enough balance for the purchase, it may be recommended that the customer try again with another payment method to complete the operation. Below you will find further information about this.
 
-
 > WARNING
 > 
 > Important
