@@ -12,7 +12,7 @@ With Open Finance, **it will be possible to offer Pix payments in the Checkout A
 
 Use our APIs or SDKs to build your own payment experience with Open Finance on your website or mobile app. You can control the entire flow according to your checkout experience.
 
-### Features
+## Features
 * Create your own Payment Initiation platform within your website.
   
 * Develop and customize the Payment Transaction Initiation process. 
