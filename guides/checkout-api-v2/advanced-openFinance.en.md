@@ -318,7 +318,6 @@ The review and confirmation page must include, at a minimum, the following infor
 > 
 > The Terms and Conditions can be presented as a link, depending on the Initiating Payment Transaction Institution's decision on whether to require customers to act.
 
-
 ## Payment creation
 To initiate a Pix payment via Open Finance, the seller must use the API Payment Creation method, with some requirements:
 
