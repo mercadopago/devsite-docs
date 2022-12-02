@@ -158,7 +158,7 @@ O retorno da requisição será muito similar ao retorno de um pagamento com Pix
 * Valor **null** em `point_of_interaction.transaction_data.qr_code` e `point_of_interaction.transaction_data.qr_code_base64`
 * Valor de `point_of_interaction.transaction_data.ticket_url` com url para aplicação que finaliza o pagamento por Open Finance
 
-Exemplo de resposta
+Resposta:
 
 ```json
 {
