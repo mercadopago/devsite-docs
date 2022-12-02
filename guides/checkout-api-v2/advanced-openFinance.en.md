@@ -539,7 +539,7 @@ For example, if the account chosen to initiate the payment does not have enough 
 
 > WARNING
 > 
-> Important
+> Attention
 > 
 > The Central Bank of Brazil says that every payment transaction started with the Payment Transaction Initiator has to be finished in 60 minutes.
 
