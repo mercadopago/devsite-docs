@@ -6,7 +6,7 @@ Self homologator is a tool where you can **measure the quality of your applicati
 >
 > Attention
 >
-> For now, the integration quality measuring tool is only available for integrations with [Checkout Pro](/developers/en/docs/checkout-pro/landing).
+> For now, the integration quality measuring tool is only available for integrations with [Checkout Pro.](/developers/en/docs/checkout-pro/landing)
 
 To measure the quality of your application, follow the steps below.
 
