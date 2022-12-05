@@ -1,12 +1,12 @@
 # Métricas de integración
 
-Los miembros certificados del programa de sócios del Mercado pago, el [&lt;dev>program](https://www.mercadopago.com/developers/en/developer-program), pueden identificar sus integraciones de Checkout Pro para acceder a los [beneficios del programa](https://www.mercadopago.com/developers/pt/developer-program#dev-program-benefits) **ya sean estas integraciones antiguas o nuevas**. Por eso, no olvides incluir tus credenciales en todas las integraciones que realices.
+Los miembros certificados del programa de socios del Mercado pago, el [&lt;dev>program](https://www.mercadopago.com/developers/en/developer-program), pueden identificar sus integraciones de Checkout Pro para acceder a los [beneficios del programa](https://www.mercadopago.com/developers/pt/developer-program#dev-program-benefits) **ya sean estas integraciones antiguas o nuevas**. Por eso, no olvides incluir tus credenciales en todas las integraciones que realices.
 
 > NOTE
 >
 > Importante
 >
-> Si estás integrando con una plataforma o PDV (Punto de Venta), recuerda configurar OAuth para que puedas identificar correctamente los pagos de tus vendedores. Consulte [OAuth](/developers/es/docs/security/oauth/introduction) para obtener más información.
+> Si estás integrando como una plataforma o PDV (Punto de Venta), recuerda configurar OAuth para que puedas identificar correctamente los pagos de tus vendedores. Consulte [OAuth](/developers/es/docs/security/oauth/introduction) para obtener más información.
 
 ## Plugin disponibles
 
@@ -21,9 +21,9 @@ Para más detalles sobre cómo y por qué usar `integrator_id` en tus integracio
 
 ## Integración
 
-Para identificar sus integraciones y trabajar con métricas, use uno de los SDK a continuación informando el `integrator_id` y/o `x-platform-id` y ejecute el request.
+Para identificarse en sus integraciones y trabajar con métricas, puede usar uno de los SDKs disponibles para enviar el `integrator_id` y/o `x-platform_id` al ejecutar el request de pago..
 
-> Además de los SDK, es posible identificar sus integraciones a través de la API de pagos. Para tanto, envíe los parámetros `integrator_id` y/o `x-platform-id` con su respectiva información al endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) y ejecute el request.
+> Además de los SDK, es posible identificar sus integraciones a través de la API de pagos. Por lo tanto, puedes enviar los parámetros `integrator_id` y/o `x-platform-id` al endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) al ejecutar el request.
 
 
 | _Header_ | Tipo de código | Identificadores |
@@ -31,7 +31,6 @@ Para identificar sus integraciones y trabajar con métricas, use uno de los SDK 
 | `x-integrator-id` | Integrador | Para desarrolladores o agencias que realizaron la integración. |
 | `x-platform-id` | Plataforma | Para las plataformas o módulos que ofrecen Mercado Pago en sus soluciones. |
 
-Para identificar sus integraciones, utilice una de las SDKs a continuación, informando el `integrator_id` y/o `x-platform-id` con la información adecuada al realizar el request.
 
 [[[
 ```php
