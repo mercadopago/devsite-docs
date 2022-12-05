@@ -31,6 +31,17 @@ paths:
           schema:
             type: string
             example:  41034141533
+        - name: x-time-zone
+          in: header
+          description: Timezone of the times shown on the JSON.
+          x-description-i18n:
+            eng: Timezone of the times shown on the JSON.
+            spa: Zona horaria de las horas que se muestran en el JSON.
+            por: Fuso horário dos horários mostrados no JSON.
+          required: true
+          schema:
+            type: string
+            example: "GMT-3"
       responses:
         '200':
           description: Success
@@ -69,11 +80,11 @@ paths:
                   createdAt:
                     type: string
                     example: "2022-02-16T21:20:15.227Z"
-                    description: Order creation time (UTC date-time in ISO timestamp format).
+                    description: Order creation time.
                     x-description-i18n:
-                      eng: Order creation time (UTC date-time in ISO timestamp format).
-                      spa: Hora de creación del pedido (UTC date-time in ISO timestamp format).
-                      por: Hora de criação do pedido (UTC date-time in ISO timestamp format).
+                      eng: Order creation time.
+                      spa: Hora de creación del pedido.
+                      por: Hora de criação do pedido.
                   orderTiming:
                     type: string
                     example: "INSTANT"
@@ -85,11 +96,11 @@ paths:
                   preparationStartDateTime: 
                     type: string
                     example: "2022-02-16T21:20:47.755Z"
-                    description: Value referring to the start of preparation of an order. For now, the value contained in this field will be the time when the order changed its state to ready_to_ship/ready_to_print. UTC date-time in ISO timestamp format. 
+                    description: Value referring to the start of preparation of an order. For now, the value contained in this field will be the time when the order changed its state to ready_to_ship/ready_to_print.
                     x-description-i18n:
-                      eng: Value referring to the start of preparation of an order. For now, the value contained in this field will be the time when the order changed its state to ready_to_ship/ready_to_print. (UTC date-time in ISO timestamp format).
-                      spa: Valor referente al inicio de preparación de un pedido. Por ahora, el valor contenido en este campo será el momento en que el pedido cambió su estado a ready_to_ship/ready_to_print. (UTC date-time in ISO timestamp format).
-                      por: Valor referente ao início da preparação de um pedido. Por enquanto, o valor contido neste campo será o momento em que o pedido mudou seu estado para ready_to_ship/ready_to_print. (UTC date-time in ISO timestamp format).
+                      eng: Value referring to the start of preparation of an order. For now, the value contained in this field will be the time when the order changed its state to ready_to_ship/ready_to_print.
+                      spa: Valor referente al inicio de preparación de un pedido. Por ahora, el valor contenido en este campo será el momento en que el pedido cambió su estado a ready_to_ship/ready_to_print.
+                      por: Valor referente ao início da preparação de um pedido. Por enquanto, o valor contido neste campo será o momento em que o pedido mudou seu estado para ready_to_ship/ready_to_print.
                   merchant:
                     type: object
                     description: Informations about the seller.
@@ -887,19 +898,19 @@ paths:
                                 example: -58.457982
                       estimatedDeliveryDateTime:
                         type: string
-                        description: Estimated delivery time (UTC date-time in ISO timestamp format).
+                        description: Estimated delivery time.
                         x-description-i18n:
-                          eng: Estimated delivery time (UTC date-time in ISO timestamp format).
-                          spa: Tiempo de entrega estimado (UTC date-time in ISO timestamp format).
-                          por: Tempo de entrega estimado (UTC date-time in ISO timestamp format).
+                          eng: Estimated delivery time.
+                          spa: Tiempo de entrega estimado.
+                          por: Tempo de entrega estimado.
                         example: "2022-02-21T21:49:55Z"
                       deliveryDateTime:
                         type: string
-                        description: Delivery completion time (UTC date-time in ISO timestamp format). This information will be setted once the order was delivered.
+                        description: Delivery completion time. This information will be setted once the order was delivered.
                         x-description-i18n:
-                          eng: Delivery completion time (UTC date-time in ISO timestamp format). This information will be setted once the order was delivered.
-                          spa: Hora de finalización de la entrega (UTC date-time in ISO timestamp format). Esta información se configurará una vez entregado el pedido.
-                          por: Tempo de conclusão da entrega (UTC date-time in ISO timestamp format). Esta informação será definida assim que o pedido for entregue.
+                          eng: Delivery completion time. This information will be setted once the order was delivered.
+                          spa: Hora de finalización de la entrega. Esta información se configurará una vez entregado el pedido.
+                          por: Tempo de conclusão da entrega. Esta informação será definida assim que o pedido for entregue.
                         example: "2022-02-21T21:52:55Z"
                   extension:
                     type: object
@@ -1006,6 +1017,14 @@ paths:
                               spa: Código de información de seguridad.
                               por: Código de segurança.
                             example: "0"
+                      estimatedPickupDate:
+                        type: string
+                        description: Estimated time that the courier will arrive at the restaurant to take the order. This attribute is only shown from the moment a courier is assigned to the order, and this occurs in the Status (ready_to_ship/on_route_to_pickup) of the Dropoff delivery flow.
+                        x-description-i18n:
+                          eng: Estimated time that the courier will arrive at the restaurant to take the order. This attribute is only shown from the moment a courier is assigned to the order, and this occurs in the status (ready_to_ship/on_route_to_pickup) of the Dropoff delivery flow.
+                          spa: Tiempo estimado que el repartidor llegará al restaurante para tomar el pedido. Este atributo solo se muestra desde el momento en que se asigna un repartidor al pedido, y esto ocurre en el estado (ready_to_ship/on_route_to_pickup) del flujo de entrega Dropoff.
+                          por: Horário estimado que o entregador chegará ao restaurante para receber o pedido. Este atributo só é mostrado a partir do momento em que um entregador é atribuído ao pedido e isso ocorre no status (ready_to_ship/on_route_to_pickup) do fluxo de entrega Dropoff.
+                        example: "2022-02-21T22:00:55Z"
         '401':
           description: Error
           x-description-i18n:

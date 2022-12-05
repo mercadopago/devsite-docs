@@ -132,10 +132,8 @@ To **test different payment results**, fill in the desired status in the cardhol
  
 | Payment Status | Description | Identity document |
 | --- | --- | --- |
-| `APRO` | Approved payment | (otro) 123456789 <br/>
-(CI) 12345678  |
-| `OTHE` | Declined for general error | (otro) 123456789 <br/>
-(CI) 12345678  |
+| `APRO` | Approved payment | (CI) 12345678 <br> (otro) 123456789 |
+| `OTHE` | Declined for general error | (CI) 12345678 <br> (otro) 123456789 |
 | `CONT` | Pending payment | - |
 | `CALL` | Declined with validation to authorize | - |
 | `FUND` | Declined for insufficient amount | - |

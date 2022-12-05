@@ -7,7 +7,7 @@ O relatório de Dinheiro disponível é um **relatório para ser baixado que te 
 >
 > A partir do dia 1º de março de 2022, o relatório Dinheiro disponível será desabilitado
 >
-> Use o [relatório de ----[mla]----Liquidações------------ ----[mlm, mlb, mlc, mco, mlu, mpe]----Liberações------------](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/released-money/introduction) para fazer a reconciliação das transações que afetem o saldo disponível na sua conta, incluindo seus saques bancários.
+> Use o [relatório de Liberações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/released-money/introduction) para fazer a reconciliação das transações que afetem o saldo disponível na sua conta, incluindo seus saques bancários.
 ------------
 
 ----[mla]----
@@ -23,7 +23,15 @@ O relatório de Dinheiro disponível é um **relatório para ser baixado que te 
 >
 > Importante
 >
-> A partir de 12 de dezembro, não será mais possível criar novos relatórios de Dinheiro retirado. Para continuar controlando as transferências, saques e movimentações do seu saldo disponível, por favor,[use o relatório Liberações.](https://bit.ly/3RH0KJ4)
+> A partir de 12 de dezembro, não será mais possível criar novos relatórios de **Dinheiro disponível**. Para continuar controlando as transferências, saques e movimentações do seu saldo disponível, por favor,[use o relatório Liberações.](https://bit.ly/3RH0KJ4)
+------------
+
+----[mlb]----
+> WARNING
+>
+> Importante
+>
+> A partir de 1º de março de 2023, não será mais possível criar novos relatórios de **Dinheiro disponível**. Para continuar controlando as transferências, saques e movimentações do seu saldo disponível, por favor, [use o relatório "Liberações".](https://bit.ly/3UivgKt)
 ------------
 
 ## Como baixar o relatório?

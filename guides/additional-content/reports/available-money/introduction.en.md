@@ -23,7 +23,15 @@ The Available Balance report is a **downloadable report that allows you to know 
 >
 > Important
 >
-> As of December 5th, you will no longer be able to create new Money withdrawn reports. In order to keep tracking all the transfers, withdrawals and movements of your available money, [please use the Releases report.](https://bit.ly/3zCb1ye)
+> As of December 5th, you will no longer be able to create new **Available Balance** reports. In order to keep tracking all the transfers, withdrawals and movements of your available money, [please use the Releases report.](https://bit.ly/3zCb1ye)
+------------
+
+----[mlb]----
+> WARNING
+>
+> Important
+>
+> As of January 1st 2023 , you will no longer be able to create new **Available Balance** reports. In order to keep tracking all the transfers, withdrawals and movements of your available money, [please use the "Releases" report.](https://bit.ly/3zCb1ye)
 ------------
 
 ## How do I download the report?
