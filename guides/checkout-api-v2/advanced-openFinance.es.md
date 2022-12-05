@@ -216,7 +216,6 @@ curl --request GET \
 | platform  | Query       | Opcional | [desktop, mobile]    | Le permite filtrar por bancos que tienen una experiencia específica, si el pago se está realizando en el escritorio, la lista de bancos se puede filtrar para mostrar solo los bancos que tienen una experiencia de escritorio y viceversa. |
 
 > NOTE
-> 
 > Por defecto, la API devuelve todos los bancos, sin ningún tipo de filtro.
 
 **Respuesta**:
