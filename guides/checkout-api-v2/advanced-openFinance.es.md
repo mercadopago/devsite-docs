@@ -170,7 +170,7 @@ La respuesta de la solicitud será muy similar a la respuesta de un pago con un 
 * Valor **nulo** en `point_of_interaction.transaction_data.qr_code` y `point_of_interaction.transaction_data.qr_code_base64`
 * Valor de `point_of_interaction.transaction_data.ticket_url` con URL a la aplicación que finaliza el pago por Open Finance
 
-Respuesta
+Respuesta:
 
 ```json
 {
