@@ -293,7 +293,7 @@ El vendedor podrá mostrar las instituciones favoritas en los primeros lugares d
 
 > WARNING
 > 
-> Importante
+> Atención
 > 
 > Recuerde que, por el momento, el Banco Central de Brasil obliga a todos los participantes de Open Finance a mostrar todas las Instituciones Financieras disponibles para su uso sin ser excluidas de la lista, excepto en caso de errores, indisponibilidad o inoperatividad. 
 
