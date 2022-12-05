@@ -1,6 +1,6 @@
 # Métricas de integración
 
-Los miembros certificados del programa de socios del Mercado pago, el [&lt;dev>program](https://www.mercadopago.com/developers/en/developer-program), pueden identificar sus integraciones de Checkout Pro para acceder a los [beneficios del programa](https://www.mercadopago.com/developers/pt/developer-program#dev-program-benefits) **ya sean estas integraciones antiguas o nuevas**. Por eso, no olvides incluir tus credenciales en todas las integraciones que realices.
+Los miembros certificados del programa de socios del Mercado Pago, el [&lt;dev>program](https://www.mercadopago.com/developers/en/developer-program), pueden identificar sus integraciones para acceder a los [beneficios del programa](https://www.mercadopago.com/developers/pt/developer-program#dev-program-benefits) **ya sean estas integraciones antiguas o nuevas**. Por eso, no olvides incluir tus credenciales en todas las integraciones que realices.
 
 > NOTE
 >
@@ -21,9 +21,9 @@ Para más detalles sobre cómo y por qué usar `integrator_id` en tus integracio
 
 ## Integración
 
-Para identificarse en sus integraciones y trabajar con métricas, puede usar uno de los SDKs disponibles para enviar el `integrator_id` y/o `x-platform_id` al ejecutar el request de pago..
+Para identificarse en sus integraciones y trabajar con métricas, puede usar uno de los SDKs disponibles para enviar el `integrator_id` y/o `platform_id` al ejecutar el request de pago..
 
-> Además de los SDK, es posible identificar sus integraciones a través de la API de pagos. Por lo tanto, puedes enviar los parámetros `integrator_id` y/o `x-platform-id` al endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) al ejecutar el request.
+> Además de los SDK, es posible identificar sus integraciones a través de la API de pagos. Por lo tanto, puedes enviar los parámetros `x-integrator_id` y/o `x-platform-id` al endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) al ejecutar el request.
 
 
 | _Header_ | Tipo de código | Identificadores |

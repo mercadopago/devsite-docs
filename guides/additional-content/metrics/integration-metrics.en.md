@@ -1,6 +1,6 @@
 # Integration metrics
 
-Certified members of the Mercado Pago's partner program, the [&lt;dev>program](https://www.mercadopago.com/developers/en/developer-program), can identify their Checkout Pro integrations to gain access to [program benefits](https://www.mercadopago.com.br/developers/pt/developer-program#dev-program-benefits) **whether these integrations are old or new**. Therefore, do not forget to include your credentials in all the integrations you carry out.
+Certified members of the Mercado Pago's partner program, the [&lt;dev>program](https://www.mercadopago.com/developers/en/developer-program), can identify their integrations to gain access to [program benefits](https://www.mercadopago.com.br/developers/pt/developer-program#dev-program-benefits) **whether these integrations are old or new**. Therefore, do not forget to include your credentials in all the integrations you carry out.
 
 > NOTE
 >
@@ -21,7 +21,7 @@ For more details on how and why to use `integrator_id` in your integrations, acc
 
 ## Integration
 
-To identify your integrations and work with metrics, use one of the SDKs below informing the `integrator_id` and/or `x-platform-id` and execute the request.
+To identify your integrations and work with metrics, use one of the SDKs below informing the `integrator_id` and/or `platform-id` and execute the request.
 
 > In addition to the SDKs, it is possible to identify your integrations through the payments API. To do this, send the `integrator_id` and/or `x-platform-id` parameter with their respective information to the endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) and execute the request.
 

@@ -1,6 +1,6 @@
 # Métricas de integração
 
-Os membros certificados do programa de parceiros do Mercado Pago, o [&lt;dev>program](https://www.mercadopago.com.br/developers/pt/developer-program), podem identificar suas integrações do Checkout Pro para ter acesso aos [benefícios do programa](https://www.mercadopago.com.br/developers/pt/developer-program#dev-program-benefits) **sejam essas integrações antigas ou novas**. Por isso, não esqueça de incluir suas credenciais em todas as integrações que realizar.
+Os membros certificados do programa de parceiros do Mercado Pago, o [&lt;dev>program](https://www.mercadopago.com.br/developers/pt/developer-program), podem identificar suas integrações para ter acesso aos [benefícios do programa](https://www.mercadopago.com.br/developers/pt/developer-program#dev-program-benefits) **sejam essas integrações antigas ou novas**. Por isso, não esqueça de incluir suas credenciais em todas as integrações que realizar.
 
 > NOTE
 >
@@ -21,9 +21,9 @@ Para mais detalhes sobre como e por que utilizar o `integrator_id` nas suas inte
 
 ## Integração 
 
-Para identificar suas integrações e trabalhar com métricas, utilize um dos SDKs abaixo informando o `integrator_id` e/ou `x-platform-id` e execute a requisição.
+Para identificar suas integrações e trabalhar com métricas, utilize um dos SDKs abaixo informando o `integrator_id` e/ou `platform-id` e execute a requisição.
 
-> Além dos SDKs, é possível identificar suas integrações através da API de pagamentos. Para isso, envie o parâmetro `integrator_id` e/ou `x-platform-id` com suas respectivas informações ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição.
+> Além dos SDKs, é possível identificar suas integrações através da API de pagamentos. Para isso, envie o parâmetro `x-integrator_id` e/ou `x-platform-id` com suas respectivas informações ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição.
 
 | Header | Tipo de código | Identificador |
 | --- | --- | --- |
