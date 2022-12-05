@@ -186,6 +186,7 @@ Respuesta:
 ```
 
 ## Buenas prácticas de usabilidad
+
 Para asegurar que el usuario pagador comprenda el uso de la opción de Inicio de Transacción de Pago de Open Finance, es necesario asegurarse de que en el Checkout quede claro que el pago **se realiza a través de Open Finance dentro del ecosistema de pagos de Mercado Pago**.
 
 ![Tela para escolha ](/images/api/open-finance(advanced)/usability-rule1.png)
