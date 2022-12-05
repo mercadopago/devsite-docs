@@ -194,6 +194,7 @@ Para asegurar que el usuario pagador comprenda el uso de la opción de Inicio de
 Consulte a continuación algunos consejos de usabilidad para mejorar el flujo de pagos a través de Open Finance.
 
 ### Cómo enumerar los bancos disponibles
+
 Presentar una lista de posibles entidades financieras para que el usuario seleccione la que le gustaría para proceder al pago.
 
 Para permitir que el cliente inicie una transacción de pago a través del iniciador de transacciones de pago de Open Finance, debes hacer lo siguiente:
