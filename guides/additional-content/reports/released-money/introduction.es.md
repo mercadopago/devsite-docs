@@ -6,8 +6,15 @@
 # ¿Qué es el reporte de Liberaciones?
 ------------
 
-
 El reporte de ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberaciones ------------ es un **informe descargable que te permite conocer cómo está compuesto tu dinero disponible en Mercado Pago.** Contiene el **detalle de todos los fondos involucrados en un período de fechas,** e incluye los casos de ----[mla]---- liquidación ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- liberación ------------ de dinero como de bloqueos y desbloqueos.
+
+----[mlb]----
+> WARNING
+>
+> Importante
+>
+> Los informes que generes a partir del 1 de enero de 2023 mostrarán los movimientos de tu dinero en orden cronológico, por eso podrás identificarlos más fácilmente y controlar mejor las finanzas de tu negocio. [Conoce cómo utilizarlo.](https://bit.ly/3QiCD2f)
+------------
 
 ----[mla]----
 > WARNING

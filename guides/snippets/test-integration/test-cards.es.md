@@ -132,10 +132,8 @@ Para **probar diferentes resultados de pago**, completa el estado deseado en el 
  
 | Estado de pago | Descripción |Documento de identidad |
 | --- | --- | --- |
-| `APRO` | Pago aprobado | (otro) 123456789 <br/>
-(CI) 12345678  |
-| `CONT` | Pendiente de pago | otro) 123456789 <br/>
-(CI) 12345678 |
+| `APRO` | Pago aprobado | (CI) 12345678 <br> (otro) 123456789 |
+| `CONT` | Pendiente de pago | (CI) 12345678 <br> (otro) 123456789 |
 | `OTHE` | Rechazado por error general | - |
 | `CALL` | Rechazado con validación para autorizar | - |
 | `FUND` | Rechazado por importe insuficiente | - |
