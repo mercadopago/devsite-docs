@@ -21,7 +21,7 @@ Para mais detalhes sobre como e por que utilizar o `integrator_id` nas suas inte
 
 ## Integração 
 
-Para identificar suas integrações e trabalhar com métricas, utilize um dos SDKs abaixo informando o `integrator_id` e/ou `platform-id` e execute a requisição.
+Para identificar suas integrações e trabalhar com métricas, utilize um dos SDKs abaixo informando o `integrator_id` e/ou `platform_id` e execute a requisição.
 
 > Além dos SDKs, é possível identificar suas integrações através da API de pagamentos. Para isso, envie o parâmetro `x-integrator_id` e/ou `x-platform-id` com suas respectivas informações ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição.
 
