@@ -277,7 +277,7 @@ Actualmente, las Instituciones Financieras participantes aprobadas y disponibles
 
 > WARNING
 > 
-> Importante
+> Atención
 > 
 > La lista de entidades financieras puede cambiar si hay alguna que no esté disponible.
 
