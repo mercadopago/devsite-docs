@@ -32,4 +32,6 @@ Ready! The quality measurement has been performed and the following information 
 >
 > Actions indicated as **required** must be completed to add points that will improve the quality of your integration, while those indicated as **best practices** will not impact the score.
 
+![integration-quality](homologator/integration-quality-pt.png)
+
 After finishing the indicated actions, click on **Update score** to complete the measurement and leave your application complete for integration.

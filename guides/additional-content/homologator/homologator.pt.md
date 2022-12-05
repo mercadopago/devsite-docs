@@ -17,6 +17,8 @@ Para medir a qualidade sa sua aplicação, siga os passos abaixo.
 
 Pronto! A medição da qualidade foi realizada e serão exibidas as seguintes informações:
 
+![integration-quality](homologator/integration-quality-pt.png)
+
 * **Pontuação**: indica o quanto a configuração da sua aplicação é segura e está alinhada com as boas práticas de integração do Mercado Pago.
 * **Payment ID**: `payment ID` do qual está baseada a pontuação de qualidade da aplicação.
 * **Última atualização**: data da última atualização da pontuação de qualidade da aplicação.
