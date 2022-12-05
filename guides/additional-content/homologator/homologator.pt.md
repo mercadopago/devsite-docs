@@ -10,12 +10,12 @@ O self homologator é a ferramenta em que você poderá **medir a qualidade da s
 
 Para medir a qualidade sa sua aplicação, siga os passos abaixo.
 
-1. No [Devsite](/developers/pt/docs), acesse o menu **Suas integrações > [Dashboard](/developers/pt/guides/additional-content/dashboard/introduction)**.
-2. Na área de [Suas Aplicações](/developers/pt/docs/dashboard/applications) do Dashboard, **clique no card** da aplicação desejada. 
+1. No [Devsite](/developers/pt/docs), acesse o menu **Suas integrações >** [Dashboard](https://mercadopago[FAKER][URL][DOMAIN]/developers/panel).
+2. Na área de [Suas aplicações](/developers/pt/guides/additional-content/dashboard/applications) do Dashboard, **clique no card** da aplicação desejada. 
 3. Em seguida, clique em **Detalhes da pontuação** para acessar a ferramenta em que você poderá **medir a qualidade da sua aplicação** e visualizar a pontuação que indica o quanto a configuração da sua aplicação é segura e está alinhada com as boas práticas de integração do Mercado Pago. 
 4. Na tela "Qualidade da integração", clique em **Avaliar qualidade** e insira o `payment ID` de um pagamento feito com [credenciais](/developers/pt/guides/additional-content/credentials/credentials) de produção da aplicação em questão. Sempre que possível, mostraremos no campo de preenchimento o último `payment ID` produtivo que identificamos na aplicação em questão.
 
-Pronto! A medição da qualidade foi realizada e serão exibidas as seguintes informações:
+Pronto! A medição da qualidade foi realizada e serão exibidas as informações abaixo.
 
 ![integration-quality](homologator/integration-quality-pt.png)
 
