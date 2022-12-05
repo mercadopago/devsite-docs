@@ -217,7 +217,6 @@ curl --request GET \
 
 > NOTE
 > 
-> Nota
 > Por defecto, la API devuelve todos los bancos, sin ningún tipo de filtro.
 
 **Respuesta**:
