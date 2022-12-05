@@ -162,7 +162,7 @@ Una vez que hayas configurado correctamente el método de pago, deberás agregar
 > Informaciones importantes
 > 
 > Para este tipo de método de pago, **el número de CPF es obligatorio**.
-> - El parámetro `callback_url` tiene que ser la URL de la pantalla de feedback.
+> El parámetro `callback_url` tiene que ser la URL de la pantalla de feedback.
 
 La respuesta de la solicitud será muy similar a la respuesta de un pago con un Pix común, con algunas modificaciones:
 
