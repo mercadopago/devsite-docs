@@ -33,14 +33,14 @@ To identify your integrations and work with metrics, use one of the SDKs below i
 [[[
 ```php
 ===
-Add the identification codes and replace the values you want: <code>INTEGRATOR\_ID</code> and <code>PLATFORM_ID</code>.
+Add the identification codes and replace with the necessary value: <code>INTEGRATOR\_ID</code> and <code>PLATFORM_ID</code>.
 ===
 MercadoPago\SDK::setPlatformId("PLATFORM_ID");
 MercadoPago\SDK::setIntegratorId("INTEGRATOR_ID");
 ```
 ```node
 ===
-Add the identification codes and replace the values you want: <code>INTEGRATOR\_ID</code> and <code>PLATFORM_ID</code>.
+Add the identification codes and replace with the necessary value: <code>INTEGRATOR\_ID</code> and <code>PLATFORM_ID</code>.
 ===
 Mercadopago.configure({
 platform_id: 'PLATFORM_ID',
@@ -49,14 +49,14 @@ integrator_id: 'INTEGRATOR_ID',
 ```
 ```java
 ===
-Add the identification codes and replace the values you want: <code>INTEGRATOR\_ID</code> and <code>PLATFORM_ID</code>.
+Add the identification codes and replace with the necessary value: <code>INTEGRATOR\_ID</code> and <code>PLATFORM_ID</code>.
 ===
 MercadoPago.SDK.setPlatformId("PLATFORM_ID");
 MercadoPago.SDK.setIntegratorId("INTEGRATOR_ID");
 ```
 ```ruby
 ===
-Add the identification codes and replace the values you want: <code>INTEGRATOR\_ID</code> and <code>PLATFORM_ID</code>.
+Add the identification codes and replace with the necessary value: <code>INTEGRATOR\_ID</code> and <code>PLATFORM_ID</code>.
 ===
 request_options = Mercadopago::RequestOptions.new()
 request_options.platform_id = 'PLATFORM_ID'
@@ -65,14 +65,14 @@ sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN', request_options: request_options)
 ```
 ```csharp
 ===
-Add the identification codes and replace the values you want: <code>INTEGRATOR\_ID</code> and <code>PLATFORM_ID</code>.
+Add the identification codes and replace with the necessary value: <code>INTEGRATOR\_ID</code> and <code>PLATFORM_ID</code>.
 ===
 MercadoPagoConfig.PlatformId = "PLATFORM_ID";
 MercadoPagoConfig.IntegratorId = "INTEGRATOR_ID";
 ```
 ```python
 ===
-Add the identification codes and replace the values you want: <code>INTEGRATOR\_ID</code> and <code>PLATFORM_ID</code>.
+Add the identification codes and replace with the necessary value: <code>INTEGRATOR\_ID</code> and <code>PLATFORM_ID</code>.
 ===
 import market
 from Mercadopago.config import RequestOptions

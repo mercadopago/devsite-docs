@@ -40,7 +40,7 @@ MercadoPago\SDK::setIntegratorId("INTEGRATOR_ID");
 ```
 ```node
 ===
-Adicione os códigos de identificação e substitua os valores que quiser: <code>INTEGRATOR\_ID</code> e <code>PLATFORM_ID</code>.
+Adicione os códigos de identificação e substitua com o valor necessário: <code>INTEGRATOR\_ID</code> e <code>PLATFORM_ID</code>.
 ===
 mercadopago.configure({
     platform_id: 'PLATFORM_ID',
@@ -49,14 +49,14 @@ mercadopago.configure({
 ```
 ```java
 ===
-Adicione os códigos de identificação e substitua os valores que quiser: <code>INTEGRATOR\_ID</code> e <code>PLATFORM_ID</code>.
+Adicione os códigos de identificação e substitua com o valor necessário: <code>INTEGRATOR\_ID</code> e <code>PLATFORM_ID</code>.
 ===
 MercadoPago.SDK.setPlatformId("PLATFORM_ID");
 MercadoPago.SDK.setIntegratorId("INTEGRATOR_ID");
 ```
 ```ruby
 ===
-Adicione os códigos de identificação e substitua os valores que quiser: <code>INTEGRATOR\_ID</code> e <code>PLATFORM_ID</code>.
+Adicione os códigos de identificação e substitua com o valor necessário: <code>INTEGRATOR\_ID</code> e <code>PLATFORM_ID</code>.
 ===
 request_options = Mercadopago::RequestOptions.new()
 request_options.platform_id = 'PLATFORM_ID'
@@ -65,14 +65,14 @@ sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN', request_options: request_options)
 ```
 ```csharp
 ===
-Adicione os códigos de identificação e substitua os valores que quiser: <code>INTEGRATOR\_ID</code> e <code>PLATFORM_ID</code>.
+Adicione os códigos de identificação e substitua com o valor necessário: <code>INTEGRATOR\_ID</code> e <code>PLATFORM_ID</code>.
 ===
 MercadoPagoConfig.PlatformId    = "PLATFORM_ID";
 MercadoPagoConfig.IntegratorId  = "INTEGRATOR_ID";
 ```
 ```python
 ===
-Adicione os códigos de identificação e substitua os valores que quiser: <code>INTEGRATOR\_ID</code> e <code>PLATFORM_ID</code>.
+Adicione os códigos de identificação e substitua com o valor necessário: <code>INTEGRATOR\_ID</code> e <code>PLATFORM_ID</code>.
 ===
 import mercadopago
 from mercadopago.config import RequestOptions

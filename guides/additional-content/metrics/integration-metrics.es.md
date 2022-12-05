@@ -35,14 +35,14 @@ Para identificarse en sus integraciones y trabajar con métricas, puede usar uno
 [[[
 ```php
 ===
-Agrega los códigos de identificación y reemplaza los valores que quieras: <code>INTEGRATOR\_ID</code> y <code>PLATFORM_ID</code>.
+Agrega los códigos de identificación y reemplaza por el valor necesario: <code>INTEGRATOR\_ID</code> y <code>PLATFORM_ID</code>.
 ===
 MercadoPago\SDK::setPlatformId("PLATFORM_ID");
 MercadoPago\SDK::setIntegratorId("INTEGRATOR_ID");
 ```
 ```node
 ===
-Agrega los códigos de identificación y reemplaza los valores que quieras: <code>INTEGRATOR\_ID</code> y <code>PLATFORM_ID</code>.
+Agrega los códigos de identificación y reemplaza por el valor necesario: <code>INTEGRATOR\_ID</code> y <code>PLATFORM_ID</code>.
 ===
 mercadopago.configure({
     platform_id: 'PLATFORM_ID',
@@ -51,14 +51,14 @@ mercadopago.configure({
 ```
 ```java
 ===
-Agrega los códigos de identificación y reemplaza los valores que quieras: <code>INTEGRATOR\_ID</code> y <code>PLATFORM_ID</code>.
+Agrega los códigos de identificación y reemplaza por el valor necesario: <code>INTEGRATOR\_ID</code> y <code>PLATFORM_ID</code>.
 ===
 MercadoPago.SDK.setPlatformId("PLATFORM_ID");
 MercadoPago.SDK.setIntegratorId("INTEGRATOR_ID");
 ```
 ```ruby
 ===
-Agrega los códigos de identificación y reemplaza los valores que quieras: <code>INTEGRATOR\_ID</code> y <code>PLATFORM_ID</code>.
+Agrega los códigos de identificación y reemplaza por el valor necesario: <code>INTEGRATOR\_ID</code> y <code>PLATFORM_ID</code>.
 ===
 request_options = Mercadopago::RequestOptions.new()
 request_options.platform_id = 'PLATFORM_ID'
@@ -74,7 +74,7 @@ MercadoPagoConfig.IntegratorId  = "INTEGRATOR_ID";
 ```
 ```python
 ===
-Agrega los códigos de identificación y reemplaza los valores que quieras: <code>INTEGRATOR\_ID</code> y <code>PLATFORM_ID</code>.
+Agrega los códigos de identificación y reemplaza lpor el valor necesario: <code>INTEGRATOR\_ID</code> y <code>PLATFORM_ID</code>.
 ===
 import mercadopago
 from mercadopago.config import RequestOptions
