@@ -13,6 +13,7 @@ Con Open Finance, se pueden hacer pagos Pix con saldos de otras cuentas bancaria
 Usa nuestras API o SDK para crear tu propio sistema de pago Open Finance en tu sitio web o aplicación móvil. Desde la configuración básica hasta la avanzada, controlando todo el flujo de acuerdo con tu experiencia de pago.
 
 ### Características
+
 * Crea tu propia plataforma de Iniciación de Pagos dentro de tu sitio web.
   
 * Desarrolla y personaliza la experiencia de inicio de transacciones de pago. 
