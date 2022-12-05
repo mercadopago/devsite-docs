@@ -253,7 +253,7 @@ curl --request GET \
 
 > WARNING
 > 
-> Importante
+> Atención
 > 
 > Como requisito previo para realizar una llamada a este punto final, es necesario pasar el `access_token` de producción para llamadas productivas y el de prueba para llamadas de prueba.
 
