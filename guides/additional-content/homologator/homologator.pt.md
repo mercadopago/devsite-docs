@@ -34,4 +34,4 @@ Pronto! A medição da qualidade foi realizada e serão exibidas as seguintes in
 >
 > As ações indicadas como **necessárias** deverão ser concluidas para somar os pontos que irão melhorar a qualidade da sua integração, enquanto as indicadas como **boas práticas** não impactarão na pontuação.
 
-Após finalizar as ações indicadas, clique em **Atualizar pontuaçã** para concluir a medição e deixar a sua aplicacão completa para integração.
+Após finalizar as ações indicadas, clique em **Atualizar pontuação** para concluir a medição e deixar a sua aplicacão completa para integração.
