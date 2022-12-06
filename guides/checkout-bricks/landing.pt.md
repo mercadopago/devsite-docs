@@ -101,7 +101,7 @@ available_payments: credit, debit, mercadopago, efectivo
 ----[mlm]---- 
 
 ---
-available_payments: credit, debit, mercadopago
+available_payments: credit, debit, mercadopago, efectivo
 
 ---
 ------------
