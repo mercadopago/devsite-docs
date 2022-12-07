@@ -64,14 +64,26 @@ Para crear una suscripción, tenga a mano el `preapproval_plan_id`, accede al en
 [[[
 ```curl
 
-curl --location --request POST 'https://api.mercadopago.com/preapproval?access_token=APP_USR-????????' \
---header 'Content-Type: application/json' \
---header 'X-scope: stage' \
---data-raw '{
-	"preapproval_plan_id":"{{El_PREAPPROVAL_PLAN_ID_QUE_CREASTE}}",
-    "payer_email": "test_user+1020927396@testuser.com",
-    "card_token_id":"{{EL_CARD_TOKEN_ID_QUE_CREASTE}}",
-	"status":"authorized"
+curl -X POST \
+      'https://api.mercadopago.com/preapproval' \
+      -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
+      -H 'Content-Type: application/json' \ 
+      -d '{
+  "preapproval_plan_id": "2c938084726fca480172750000000000",
+  "reason": "Yoga classes",
+  "external_reference": "YG-1234",
+  "payer_email": "test_user@testuser.com",
+  "card_token_id": "e3ed6f098462036dd2cbabe314b9de2a",
+  "auto_recurring": {
+    "frequency": 1,
+    "frequency_type": "months",
+    "start_date": "2020-06-02T13:07:14.260Z",
+    "end_date": "2022-07-20T15:59:52.581Z",
+    "transaction_amount": 10,
+    "currency_id": "ARS"
+  },
+  "back_url": "https://www.mercadopago.com.ar",
+  "status": "authorized"
 }'
 ```
 ]]]

@@ -123,26 +123,22 @@ Para ofrecer **suscripciones sin plan asociado y con pago pendiente**, envía un
 [[[
 ```curl
 
-curl --location --request POST 'https://api.mercadopago.com/preapproval?access_token=APP_USR-????????' \
+curl --location --request POST 'https://api.mercadopago.com/preapproval' \
+--header 'Authorization: Bearer YOU_ACCESS_TOKEN' \
 --header 'Content-Type: application/json' \
---header 'X-scope: stage' \
 --data-raw '{
-		"back_url":"https://www.google.com",
-	"reason":"Test Subscription",
-	"auto_recurring":{
-		"frequency":"6",
-		"frequency_type":"months",
-		"repetitions":10,
-		"transaction_amount":2300,
-		"currency_id":"BRL",
-		"free_trial":{
-			"frequency_type":"months",
-			"frequency":"6"
-		}
-	},
-    "payer_email": "test_user+1020927396@testuser.com",
-    "card_token_id":"{{EL_CARD_TOKEN_QUE_CREASTE}}",
-	"status":"pending"
+    "reason": "Yoga classes",
+    "external_reference": "YG-1234",
+    "payer_email": "test_user_75650838@testuser.com",
+    "auto_recurring": {
+        "frequency": 1,
+        "frequency_type": "months",
+        "end_date": "2023-07-20T15:59:52.581Z",
+        "transaction_amount": 10,
+        "currency_id": "BRL"
+    },
+    "back_url": "https://www.yoursite.com",
+    "status": "pending"
 }'
 ```
 ]]]
