@@ -6,9 +6,12 @@ In order to transfer card data securely, Mercado Pago will provide the exporting
 
 To encrypt the file and transfer it securely, use the PGP key below.
 
-* **PGP migration key**
-
+[[[
 ```pgp
+===
+Migration key
+===
+
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 
 mQINBGMp/zABEAD2EDijQyA42FsQ/84C4VJ0gW8jWmXZqdZrmcZ/oALJOHZaybig
@@ -63,3 +66,5 @@ rt+/GYfDo9OZVgr6eupH
 
 -----END PGP PUBLIC KEY BLOCK-----
 ```
+
+]]]

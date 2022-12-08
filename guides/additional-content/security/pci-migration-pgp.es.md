@@ -9,7 +9,7 @@ Para encriptar el archivo y transferirlo de forma segura, use la **clave PGP** a
 [[[
 ```pgp
 ===
-PGP migration key
+Migration key
 ===
 
 -----BEGIN PGP PUBLIC KEY BLOCK-----
