@@ -11,7 +11,6 @@ To encrypt the file and transfer it securely, **use the PGP key below**.
 ===
 Migration key
 ===
-
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 
 mQINBGMp/zABEAD2EDijQyA42FsQ/84C4VJ0gW8jWmXZqdZrmcZ/oALJOHZaybig
