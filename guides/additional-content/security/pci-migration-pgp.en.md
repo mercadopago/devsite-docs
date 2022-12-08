@@ -8,7 +8,7 @@ To encrypt the file and transfer it securely, use the PGP key below.
 
 * **PGP migration key**
 
-```pgp key
+```pgp-key
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 
 mQINBGMp/zABEAD2EDijQyA42FsQ/84C4VJ0gW8jWmXZqdZrmcZ/oALJOHZaybig
