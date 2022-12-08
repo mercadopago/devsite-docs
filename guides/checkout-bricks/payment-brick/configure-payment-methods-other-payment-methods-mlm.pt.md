@@ -1,6 +1,6 @@
 # Configure a integração com outros meios de pagamento
 
-Com o Checkout Bricks do Mercado Pago, é possível oferecer, além de cartão, pagamentos através de **Rapipago** e **Pago Fácil**. Para oferecer pagamentos com **Rapipago** e **Pago Fácil**, siga as etapas abaixo. 
+Com o Checkout Bricks do Mercado Pago, é possível oferecer, além de cartão e Pix, pagamentos através de **boleto bancário** e **pagamento em lotérica**. Para oferecer pagamentos com **boleto bancário** e **pagamento em lotérica**, siga as etapas abaixo. 
 
 > Caso já tenha integrado pagamentos via cartão, você pode iniciar a integração a partir da **etapa 4**.
 
@@ -12,7 +12,7 @@ Com o Checkout Bricks do Mercado Pago, é possível oferecer, além de cartão, 
 
 > Os passos são realizados no back-end ou no front-end. As pills **Client-Side** e **Server-Side** localizadas imediatamente ao lado do título te ajudam a identificar qual passo é realizado em qual instância. <br/></br>
 > <br/></br>
-> E, para ajudar, preparamos um [exemplo de código](/developers/pt/docs/checkout-bricks/payment-brick/code-example/other-payment-methods/argentina) completo da configuração do Payment Brick com **Rapipago** e **Pago Fácil** que você pode usar como modelo.
+> E, para ajudar, preparamos um [exemplo de código](/developers/pt/docs/checkout-bricks/payment-brick/code-example/other-payment-methods/brasil) completo da configuração do Payment Brick com **boleto bancário** e **pagamento em lotérica** que você pode usar como modelo.
 
 > CLIENT_SIDE
 >
@@ -98,10 +98,10 @@ const renderPaymentBrick = async (bricksBuilder) => {
    },
    callbacks: {
      onReady: () => {
-       /*
-        Callback chamado quando o Brick estiver pronto.
-        Aqui você pode ocultar loadings do seu site, por exemplo.
-       */
+        /*
+          Callback chamado quando o Brick estiver pronto.
+          Aqui você pode ocultar loadings do seu site, por exemplo.
+        */
      },
      onSubmit: ({ selectedPaymentMethod, formData }) => {
        // callback chamado ao clicar no botão de submissão dos dados
@@ -142,7 +142,7 @@ renderPaymentBrick(bricksBuilder);
 
 O resultado de renderizar o Brick deve ser como na imagem abaixo:
 
-![payment-Brick-other-payments-methods-mla](checkout-bricks/payment-brick-other-payments-methods-mla-pt.jpg) 
+![payment-Brick-other-payments-methods](checkout-bricks/payment-brick-other-payments-methods-pt.png)
 
 > WARNING
 >
@@ -156,7 +156,7 @@ O resultado de renderizar o Brick deve ser como na imagem abaixo:
 >
 > Gerenciar outros meios de pagamento
 
-Para incluir pagamento via **Rapipago** e **Pago Fácil**, basta utilizar a seguinte configuração:
+Para incluir pagamento via **boleto bancário** e **pagamento em lotérica**, basta utilizar a seguinte configuração:
 
 > NOTE
 >
@@ -179,9 +179,9 @@ settings = {
 ```
 ]]]
 
-A propriedade `ticket` aceita 2 tipos de variável, `string` e `string[]`. No exemplo acima, serão aceitos pagamentos via **Rapipago** e **Pago Fácil**.
+A propriedade `ticket` aceita 2 tipos de variável, `string` e `string[]`. No exemplo acima, serão aceitos pagamentos via **boleto bancário** e **pagamento em lotérica**.
 
-Caso não queira permitir ambos os meios de pagamento, ao invés da string `all`, você pode passar um array apenas com os IDs desejados. Como no exemplo abaixo, onde é aceito apenas pagamento via **Pago Fácil**.
+Caso não queira permitir ambos os meios de pagamento, ao invés da string `all`, você pode passar um array apenas com os IDs desejados. Como no exemplo abaixo, onde é aceito apenas pagamento via **boleto**.
 
 [[[
 ```Javascript
@@ -191,14 +191,12 @@ settings = {
     ...,
     paymentMethods: {
       ...,
-      ticket: [ 'pagofacil' ]
+      ticket: [ 'bolbradesco' ]
     }
   }
 }
 ```
 ]]]
-
-Nesse caso, como **Pago Fácil** é o único meio disponível, não será exibida a lista para seleção de onde pagar. 
 
 Caso deseje uma lista completa dos IDs que podem ser passados dentro do array, consulte a API de [Obter meios de pagamento](/developers/pt/reference/payment_methods/_payment_methods/get) em nossa API Reference. Para mais informações, consulte a [seção correspondente](/developers/pt/docs/checkout-bricks/additional-content/consult-payment-methods).
 

@@ -1,8 +1,8 @@
 # Configurar la integración con otros medios de pago
 
-Con el Checkout Bricks de Mercado Pago es posible ofrecer, además de tarjeta, pagos vía **Rapipago** y **Pago Fácil**. Para ofrecer pagos con **Rapipago** y **Pago Fácil**, sigue los siguientes pasos. 
+Con el Checkout Bricks de Mercado Pago, es posible ofrecer, además de tarjeta y Pix, pagos vía **boleto bancario** y pago en **agencias de lotería**.  Para ofrecer pagos con **boleto bancário** y pago en **agencias de lotería**, sigue los siguientes pasos. 
 
-> Si ya has integrado los pagos con tarjeta, puedes iniciar la integración desde el **paso 4**.
+> Si ya ha integrado los pagos con tarjeta, puede iniciar la integración desde el **paso 4**.
 
 1. [Crear container](#bookmark_crear_container)
 2. [Incluir y configurar la librería MercadoPago.js](#bookmark_incluir_y_configurar_la_librería_mercadopago.js)
@@ -10,9 +10,9 @@ Con el Checkout Bricks de Mercado Pago es posible ofrecer, además de tarjeta, p
 4. [Renderizar Brick](#bookmark_renderizar_brick)
 5. [Administrar otros medios de pago](#bookmark_administrar_otros_medios_de_pago)
 
-> Los pasos se realizan en el backend o frontend. Las etiquetas **Client-Side** y **Server-Side** ubicadas inmediatamente al lado del título te ayudan a identificar qué paso se realiza en qué instancia. <br/></br>
+> Los pasos se realizan en el backend o frontend. Las etiquetas **Client-Side** y **Server-Side** ubicadas inmediatamente al lado del título lo ayudan a identificar qué paso se realiza en qué instancia. <br/></br>
 > <br/></br>
-> Y para ayudarte, hemos preparado un [ejemplo de código](/developers/es/docs/checkout-bricks/payment-brick/code-example/other-payment-methods/argentina) completo de la configuración de Payment Brick con **Rapipago** y **Pago Fácil** que puedes usar como modelo.
+> Y para ayudar, hemos preparado un [ejemplo de código](/developers/es/docs/checkout-bricks/payment-brick/code-example/other-payment-methods/brasil) completo de la configuración de Payment Brick con **boleto bancário** y pago en **agencias de lotería** que puede usar como modelo.
 
 > CLIENT_SIDE
 >
@@ -100,8 +100,8 @@ const renderPaymentBrick = async (bricksBuilder) => {
    callbacks: {
      onReady: () => {
        /*
-        Callback llamado cuando Brick está listo
-        Aquí puedes ocultar loadings de su sitio, por ejemplo.
+         Callback llamado cuando Brick está listo.
+         Aquí puedes ocultar loadings de su sitio, por ejemplo.
        */
      },
      onSubmit: ({ selectedPaymentMethod, formData }) => {
@@ -143,13 +143,13 @@ renderPaymentBrick(bricksBuilder);
 
 El resultado de renderizar el Brick debe ser como la imagen de abajo:
 
-![payment-Brick-other-payments-methods-mla](checkout-bricks/payment-brick-other-payments-methods-mla-es.jpg)
+![payment-Brick-other-payments-methods](checkout-bricks/payment-brick-other-payments-methods-es.png)
 
 > WARNING
 >
 > Atención
 >
-> Para un control efectivo del Brick, la función enviada en `onSubmit` siempre debe devolver una Promise. Llama el método `resolve()` solo si el procesamiento de tu backend fue exitoso. Llama el método `reject()` en caso de que ocurra un error. Esto hará que el Brick te permita completar los campos nuevamente y haga posible un nuevo intento de pago. Al llamar el `resolve()` dentro de la Promise de `onSubmit`, el Brick no permite nuevos pagos. Si deseas realizar un nuevo pago, deberás crear una nueva instancia del Brick.
+> Para un control efectivo del Brick, la función enviada en `onSubmit` siempre debe devolver una Promise. Llame el método `resolve()` solo si el procesamiento de tu backend fue exitoso. Llame el método `reject()` en caso de que ocurra un error. Esto hará que el Brick te permita completar los campos nuevamente y haga posible un nuevo intento de pago. Al llamar el `resolve()` dentro de la Promise de `onSubmit`, el Brick no permite nuevos pagos. Si deseas realizar un nuevo pago, deberás crear una nueva instancia del Brick.
 
 > CLIENT_SIDE 
 >
@@ -161,9 +161,9 @@ El resultado de renderizar el Brick debe ser como la imagen de abajo:
 >
 > Importante
 >
-> Los métodos de pago que se describen a continuación requieren que se complete la dirección, el nombre y los detalles del documento del comprador. Para una mejor experiencia de usuario, se recomienda que el integrador ya inicialice estos datos, por lo que no es necesario llenarlo manualmente. [Consulta aquí](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/initialize-data-on-the-bricks) cómo inicializar el bloque con estos datos ya completados.
+> Los métodos de pago que se describen a continuación requieren que se complete la dirección, el nombre y los detalles del documento del comprador. Para una mejor experiencia de usuario, se recomienda que el integrador ya inicialice estos datos, por lo que no es necesario llenarlo manualmente. [Consulte aquí](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/initialize-data-on-the-bricks) cómo inicializar el bloque con estos datos ya completados.
 
-Para incluir pagos con **Rapipago** y **Pago Fácil**, solo usa la siguiente configuración:
+Para incluir pagos con **boleto bancário** y pago en **agencias de lotería**, solo use la siguiente configuración:
 
 [[[
 ```Javascript
@@ -180,9 +180,9 @@ settings = {
 ```
 ]]]
 
-La propiedad `ticket` acepta 2 tipos de variables, `string` y `string[]`. En el ejemplo anterior, se aceptarán pagos a través de **Rapipago** y **Pago Fácil**. 
+La propiedad `ticket` acepta 2 tipos de variables, `string` y `string[]`. En el ejemplo anterior, se aceptarán pagos a través de **boleto** y **pago en lotería**. 
 
-Si no deseas permitir ambos métodos de pago, en lugar de la cadena `all` puedes pasar un array solo con las IDs deseadas, como en el ejemplo a continuación, donde solo se acepta el pago a través de **Pago Fácil**.
+Si no desea permitir ambos métodos de pago, en lugar de la cadena `all`, puede pasar un array con solo las ID deseadas. Como en el ejemplo a continuación, donde solo se acepta el a través de **boleto**.
 
 [[[
 ```Javascript
@@ -192,14 +192,12 @@ settings = {
     ...,
     paymentMethods: {
       ...,
-      ticket: [ 'pagofacil' ]
+      ticket: [ 'bolbradesco' ]
     }
   }
 }
 ```
 ]]]
-
-En este caso, al ser **Pago Fácil** el único medio disponible, no se mostrará la lista para seleccionar dónde pagar. 
 
 Si quieres obtener una lista completa de IDs que se pueden pasar dentro del array, consulta la API [Obtener medios de pago](/developers/es/reference/payment_methods/_payment_methods/get) en nuestra referencia de API. Para más información, consulte la [sección correspondiente](/developers/es/docs/checkout-bricks/additional-content/consult-payment-methods).
 
@@ -207,4 +205,4 @@ Si quieres obtener una lista completa de IDs que se pueden pasar dentro del arra
 >
 > Importante
 >
-> La respuesta de la API contiene IDs de varios `payment_type_id`. Las IDs aceptadas por la propiedad `ticket` son solo aquellas que contienen `payment_type_id = 'ticket'`.
+> La respuesta de la API contiene ID de varios `payment_type_id`. Los ID aceptados por la propiedad `ticket` son solo aquellos que contienen `payment_type_id = 'ticket'`.

@@ -1,6 +1,6 @@
 # Configure the integration with other payment methods
 
-With Mercado Pago's Checkout Bricks, it is possible to offer, in addition to card, payments via **Rapipago** and **Pago Fácil**. To offer **Rapipago** and **Pago Fácil**, follow the steps below. 
+With Mercado Pago's Checkout Bricks, it is possible to offer, in addition to card and Pix, payments via **boleto bancário** and **payment in lottery**. To offer **boleto bancário** and payment in **lottery**, follow the steps below. 
 
 > If you have already integrated card payments, you can start the integration from **step 4**.
 
@@ -12,7 +12,7 @@ With Mercado Pago's Checkout Bricks, it is possible to offer, in addition to car
 
 > The steps are performed on the backend or frontend. The **Client-Side** and **Server-Side** pills located immediately next to the title help you to identify which step is performed in which instance. <br/></br>
 > <br/></br>
-> And to help, we've prepared a complete [code-example](/developers/en/docs/checkout-bricks/payment-brick/code-example/other-payment-methods/argentina) of the Payment Brick configuration with **Rapipago** and **Pago Fácil** that you can use as a template.
+> And to help, we've prepared a complete [code-example](/developers/en/docs/checkout-bricks/payment-brick/code-example/other-payment-methods/brasil) of the Payment Brick configuration with **boleto bancário** and payment in **lottery** that you can use as a template.
 
 > CLIENT_SIDE
 >
@@ -141,9 +141,9 @@ const renderPaymentBrick = async (bricksBuilder) => {
 renderPaymentBrick(bricksBuilder);  
 ```
 
-The result of rendering the Brick should be like the image below:
+The result of rendering the Brick should be like the image below:”
 
-![payment-Brick-other-payments-methods-mla](checkout-bricks/payment-brick-other-payments-methods-mla-en.jpg)
+![payment-Brick-other-payments-methods](checkout-bricks/payment-brick-other-payments-methods-en.png)
 
 > WARNING
 >
@@ -163,7 +163,7 @@ The result of rendering the Brick should be like the image below:
 >
 > The payment methods described below require the buyer's address, name and document details to be filled in. For a better user experience, it is recommended that the integrator already initializes this data, so it will not be necessary to fill it manually. [Check here](/developers/en/docs/checkout-bricks/payment-brick/additional-customization/initialize-data-on-the-bricks) how to initialize the Brick with this data already filled in.
 
-To include payments via **Rapipago** and **Pago Fácil**, just use the following configuration:
+To include payments via **boleto bancário** and **payment in lottery**, just use the following configuration:
 
 [[[
 ```Javascript
@@ -180,9 +180,9 @@ settings = {
 ```
 ]]]
 
-The `ticket` property accepts 2 variable types, `string` and `string[]`. In the example above, payments via **Rapipago** and **Pago Fácil** will be accepted. 
+The `ticket` property accepts 2 variable types, `string` and `string[]`. In the example above, payments via **boleto bancário** and **payment in lottery** will be accepted. 
 
-If you don't want to allow both payment methods, instead of the string `all`, you can pass an array with just the desired IDs. As in the example below, where only payment via bank slip is accepted.
+If you don't want to allow both payment methods, instead of the string `all`, you can pass an array with just the desired IDs. As in the example below, where only payment via **boleto** is accepted.
 
 [[[
 ```Javascript
@@ -192,14 +192,12 @@ settings = {
     ...,
     paymentMethods: {
       ...,
-      ticket: [ 'pagofacil' ]
+      ticket: [ 'bolbradesco' ]
     }
   }
 }
 ```
 ]]]
-
-In this case, as **Pago Fácil** is the only available means, the list for selecting where to pay will not be displayed. 
 
 If you want a complete list of IDs that can be passed within the array, check the [Get Payment Methods](/developers/en/reference/payment_methods/_payment_methods/get) API in our API Reference. For more information, check out the [corresponding section](/developers/en/docs/checkout-bricks/additional-content/consult-payment-methods).
 

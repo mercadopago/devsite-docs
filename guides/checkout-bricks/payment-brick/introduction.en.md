@@ -4,7 +4,7 @@
 
 Payment Brick is a modular and customizable solution that allows you to add several payment methods to your store with just one Brick, allowing you to save card data for future purchases. By using Payment Brick, you will have different payment methods at your disposal and you will be able to choose which ones to enable for your site.
 
-For now, you will be able to give your customers the possibility of making payments through credit cards, the Caixa virtual debit card, Pix, boleto, payment in lottery or use the Mercado Pago Wallet. In the short term we will add the possibility that, using this same Brick, you can also allow them to make payments with Pix, ticket and lottery.
+For now, you will be able to give your customers the possibility of making payments through credit cards, the Caixa virtual debit card, Pix, boleto, payment in lottery or use the Mercado Pago Wallet.
 
 The possibility of saving the data of cards that have already been charged in previous purchases, makes the payment process more efficient and faster. For the buyer, it is no longer necessary to have to reload the data each time they enter the checkout.
 
@@ -243,11 +243,11 @@ The Payment Brick layout is based on the best UX practices, so that it is possib
 
 Payment Brick is a modular and customizable solution that allows you to add several payment methods to your store with just one Brick, allowing you to save card data for future purchases. By using Payment Brick, you will have different payment methods at your disposal and you will be able to choose which ones to enable for your site.
 
-For now, you will be able to give your customers the possibility of making payments through debit and credit cards or use the Mercado Pago Wallet. In the short term we will add the possibility that, using this same Brick, you can also allow them to make cash payments.
+For now, you will be able to give your customers the possibility of making payments through debit and credit cards, ticket and using the Mercado Pago Wallet.
 
 The possibility of saving the data of cards that have already been charged in previous purchases, makes the payment process more efficient and faster. For the buyer, it is no longer necessary to have to reload the data each time they enter the checkout.
 
-![payment-Brick-layout-all](checkout-bricks/payment-brick-layout-all-en.gif)
+![payment-Brick-layout-mlm](checkout-bricks/payment-brick-layout-mlm-en.gif)
 
 In turn, our processor complies with all security guarantees to give users maximum protection when saving their data. This is one of the great advantages of adding Checkout Bricks to your site: the peace of mind of providing a secure solution, backed by Mercado Pago, but customized to the needs of your company.
 
@@ -273,6 +273,6 @@ The Payment Brick layout is based on the best UX practices, so that it is possib
 | Card payment form | Card cardholder name input field <br><br> Property: cardholderName  | **Value:** N/A <br> **Label:** Name of the holder as it appears on the card <br> **Placeholder:** João Silva <br> **Type:** string <br> **Format:** N/A <br> **Max. characters:** 100  | Mandatory <br> Customizable (label, placeholder, type, format and maximum of wrong characters.)  |
 | Card payment form  Cardholder ID selection field <br><br> Property: cardholderIdentificationType  | **Value**: CURP, IFE, Otro <br> **Label:** ID <br> **Placeholder:** N/A <br> **Type:** select <br> **Format:** N/A <br> **Max. characters:** N/A  | Mandatory <br> Customizable (label, placeholder) <br><br> *If the document type and number data were previously provided and saved, this element becomes optional.  |
 | Card payment form | Cardholder ID number input field <br><br> Property: cardholderIdentificationNumber  | **Value:** N/A <br> **Label:** N/A <br> **Placeholder**: N/A <br> **Type**: number <br> **Format:** N/A <br> **Max. characters:** N/A  | Mandatory <br> Non customizable (label, placeholder)  |
-| Card payment form | Buyer’s email input field <br><br> Property: email  | **Value:** N/A <br> **Label:** Email <br> **Placeholder:** joaosilva@email.com <br> **Type:** string <br> **Formato:** conventional email format (example@email.com) <br> **Max. characters:** N/A  | Mandatory <br> Customizable (label, placeholder) <br><br> *If the data was previously provided and saved, this element becomes optional.  |
+| Card or ticket payment form | Buyer’s email input field <br><br> Property: email  | **Value:** N/A <br> **Label:** Email <br> **Placeholder:** joaosilva@email.com <br> **Type:** string <br> **Formato:** conventional email format (example@email.com) <br> **Max. characters:** N/A  | Mandatory <br> Customizable (label, placeholder) <br><br> *If the data was previously provided and saved, this element becomes optional.  |
 
 ------------

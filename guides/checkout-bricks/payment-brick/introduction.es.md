@@ -4,7 +4,7 @@
 
 Payment Brick es una solución modular y personalizable que permite agregar varios medios de pago a tu tienda con solamente un Brick, permitiendo guardar los datos de tarjetas para compras futuras. Al utilizar Payment Brick, tendrás a tu disposición diferentes medios de pago y podrás elegir cuáles habilitar para tu sitio.
 
-Por el momento, podrás darle a tus clientes la posibilidad de hacer pagos a través de tarjetas de crédito, tarjeta de débito virtual Caixa, Pix, boleto, ago en agencia de lotería o utilizar la Cuenta de Mercado Pago. En el corto plazo sumaremos la posibilidad de que, usando este mismo Brick, puedas permitirle también realizar pagos con Pix, boleto y en lotérica.
+Por el momento, podrás darle a tus clientes la posibilidad de hacer pagos a través de tarjetas de crédito, tarjeta de débito virtual Caixa, Pix, boleto, pago en agencia de lotería o utilizar la Cuenta de Mercado Pago.
 
 La posibilidad de guardar los datos de tarjetas que ya fueron cargadas en compras anteriores, hace que el proceso de pago sea más eficiente y rápido. Para el comprador ya no es necesario tener que volver a cargar los datos cada vez que ingrese al checkout. 
 
@@ -93,11 +93,11 @@ El layout de Payment Brick se basa en las mejores prácticas UX para que sea pos
 
 Payment Brick es una solución modular y personalizable que permite agregar varios medios de pago a tu tienda con solamente un Brick, permitiendo guardar los datos de tarjetas para compras futuras. Al utilizar Payment Brick, tendrás a tu disposición diferentes medios de pago y podrás elegir cuáles habilitar para tu sitio.
 
-Por el momento, podrás darle a tus clientes la posibilidad de hacer pagos a través de tarjetas de débito y crédito o utilizar la Cuenta de Mercado Pago. En el corto plazo sumaremos la posibilidad de que, usando este mismo Brick, puedas permitirle también realizar pagos en efectivo.
+Por el momento, podrás darle a tus clientes la posibilidad de hacer pagos a través de tarjetas de débito y crédito, ticket o utilizar la Cuenta de Mercado Pago.
 
 La posibilidad de guardar los datos de tarjetas que ya fueron cargadas en compras anteriores, hace que el proceso de pago sea más eficiente y rápido. Para el comprador ya no es necesario tener que volver a cargar los datos cada vez que ingrese al checkout. 
 
-![payment-Brick-layout-all](checkout-bricks/payment-brick-layout-all-es.gif)
+![payment-Brick-layout-mlm](checkout-bricks/payment-brick-layout-mlm-es.gif)
 
 A su vez, nuestro procesador cumple con todas las garantías de seguridad para darle a los usuarios la máxima protección al guardar sus datos. Esa es una de las grandes ventajas de sumar Checkout Bricks a su sitio: la tranquilidad de brindar una solución segura, con el respaldo de Mercado Pago, pero personalizado a las necesidades de su empresa.
 
@@ -123,7 +123,7 @@ El layout de Payment Brick se basa en las mejores prácticas UX para que sea pos
 | Formulario de pago con tarjeta | Campo para ingresar el nombre del titular de la tarjeta <br><br> Propiedad: cardholderName  | **Valor:** N/A <br> **Label**: Nombre del titular tal y como aparece en la tarjeta <br> **Placeholder**: João Silva <br> **Tipo**: string <br> **Formato**: N/A <br> **Máx. caracteres**: 100  | Obligatorio <br><br> Personalizable (label, placeholder, tipo, formato y máximo de caracteres incorrectos.)  |
 | Formulario de pago con tarjeta| Campo para seleccionar el documento del titular de la tarjeta <br><br> Propiedad: cardholderIdentificationType  | **Valor**: CURP, IFE, Otro <br> **Label**: Documento <br> **Placeholder**: N/A <br> **Tipo**: select <br> **Formato**: N/A <br> **Máx. caracteres**: N/A  | Obligatorio* <br> Personalizable (label, placeholder) <br><br> *Si los datos de tipo y número de documento se proporcionaron y guardaron previamente, este elemento se vuelve opcional.  |
 | Formulario de pago con tarjeta | Campo para ingresar el número de documento del titular de la tarjeta <br><br> Propiedad: cardholderIdentificationNumber  | **Valor**: N/A <br> **Label**: N/A <br> **Placeholder**: N/A <br> **Tipo**: number <br> **Formato**: N/A <br> **Máx. caracteres**: N/A  | Obligatorio <br> No personalizable  |
-| Formulario de pago con tarjeta | Campo para ingresar el correo electrónico del comprador <br> Propiedad: email  | **Valor**: N/A <br> **Label**: Email <br> **Placeholder**: joaosilva@email.com <br> **Tipo**: string <br> **Formato**: formato de e-mail convencional (ejemplo@email.com)  **Máx. caracteres**: N/A  | Obligatorio* <br> Personalizable (label, placeholder) <br><br> *Si los datos se proporcionaron y guardaron previamente, este elemento se vuelve opcional.  | 
+| Formulario de pago con tarjeta o ticket | Campo para ingresar el correo electrónico del comprador <br> Propiedad: email  | **Valor**: N/A <br> **Label**: Email <br> **Placeholder**: joaosilva@email.com <br> **Tipo**: string <br> **Formato**: formato de e-mail convencional (ejemplo@email.com)  **Máx. caracteres**: N/A  | Obligatorio* <br> Personalizable (label, placeholder) <br><br> *Si los datos se proporcionaron y guardaron previamente, este elemento se vuelve opcional.  | 
 
 ------------
 ----[mpe]----
