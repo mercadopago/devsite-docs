@@ -6,9 +6,10 @@ Para transferir los datos de tarjeta de forma segura, Mercado Pago brindará a l
 
 Para encriptar el archivo y transferirlo de forma segura, use la clave PGP a continuación.
 
-* **PGP migration key**
-
-```
+```pgp
+===
+PGP migration key
+===
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 
 mQINBGMp/zABEAD2EDijQyA42FsQ/84C4VJ0gW8jWmXZqdZrmcZ/oALJOHZaybig

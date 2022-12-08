@@ -1,13 +1,14 @@
-# PCI bóveda migration
+# PCI vault migration
 
 With **Mercado Pago** you can migrate your customer base and cards safely and transparently for your users. You can transfer the data from your current payment service provider to Mercado Pago without the need for your users to take any action.
 
 In order to transfer card data securely, Mercado Pago will provide the exporting company with an SFTP server to upload the encrypted file **following PCI regulations**.
 
-To encrypt the file and transfer it securely, use the key below.
+To encrypt the file and transfer it securely, use the PGP key below.
 
 * **PGP migration key**
 
+```pgp
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 
 mQINBGMp/zABEAD2EDijQyA42FsQ/84C4VJ0gW8jWmXZqdZrmcZ/oALJOHZaybig
@@ -61,3 +62,4 @@ rt+/GYfDo9OZVgr6eupH
 =e+ov
 
 -----END PGP PUBLIC KEY BLOCK-----
+```
