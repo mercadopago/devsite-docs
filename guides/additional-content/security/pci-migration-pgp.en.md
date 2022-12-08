@@ -4,7 +4,7 @@ With **Mercado Pago** you can migrate your customer base and cards safely and tr
 
 In order to transfer card data securely, Mercado Pago will provide the exporting company with an SFTP server to upload the encrypted file **following PCI regulations**.
 
-To encrypt the file and transfer it securely, use the PGP key below.
+To encrypt the file and transfer it securely, **use the PGP key below**.
 
 [[[
 ```pgp

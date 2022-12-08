@@ -4,7 +4,7 @@ Con **Mercado Pago** puedes migrar tu base de clientes y tarjetas de forma segur
 
 Para transferir los datos de tarjeta de forma segura, Mercado Pago brindará a la empresa que realiza la exportación un servidor SFTP para subir el archivo encriptado **siguiendo la normativa PCI**.
 
-Para encriptar el archivo y transferirlo de forma segura, use la **clave PGP** a continuación.
+Para encriptar el archivo y transferirlo de forma segura, **use la clave PGP a continuación**.
 
 [[[
 ```pgp
