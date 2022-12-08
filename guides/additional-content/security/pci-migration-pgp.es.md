@@ -11,7 +11,6 @@ Para encriptar el archivo y transferirlo de forma segura, **use la clave PGP a c
 ===
 Migration key
 ===
-
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 
 mQINBGMp/zABEAD2EDijQyA42FsQ/84C4VJ0gW8jWmXZqdZrmcZ/oALJOHZaybig
