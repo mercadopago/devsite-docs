@@ -2,7 +2,7 @@
 
 Genera el informe de dinero liberado manualmente tantas veces como desees o prográmalo de acuerdo con la frecuencia que elijas a través de nuestra API.
 
-----[mco, mlc]----
+----[mco, mlc, mla, mlm]----
 > WARNING
 >
 > Importante
@@ -21,10 +21,6 @@ Genera el informe de dinero liberado manualmente tantas veces como desees o prog
 
 Conoce los campos que puedes configurar para ajustar tus preferencias antes de empezar:
 
-> WARNING
->
-> Importante
->
 > Configurar el atributo `frequency` no implica que el reporte se genere automáticamente. La configuración aplicará solo cuando se active la programación automática. Para mayor detalle puedes dirigirte a la sección [Programa tus reportes](#bookmark_programa_tus_reportes_automáticos).
 
 | Campos configurables | Descripción |

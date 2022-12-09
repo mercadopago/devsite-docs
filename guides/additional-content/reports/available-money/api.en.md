@@ -2,7 +2,7 @@
 
 Generate the Released money report manually as many times as you want or schedule it according to the desired frequency through our API.
 
-----[mco, mlc, mlu, mpe]----
+----[mco, mlc, mlu, mpe, mla, mlm]----
 > WARNING
 >
 > Important
@@ -14,10 +14,6 @@ Generate the Released money report manually as many times as you want or schedul
 
 Know the fields you can configure to adjust your preferences before you start:
 
-> WARNING
->
-> Important
->
 > Setting up `frequency` feature does not mean that the report will be generated automatically. The settings will apply only when the automatic scheduling is activated. For more details, please go to the [Schedule your automatic reports](#bookmark_schedule_your_automatic_reports) section.
 
 | Configurable fields | Description |
