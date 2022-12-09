@@ -22,7 +22,7 @@ Usa nuestras API o SDK para crear tu propio sistema de pago Open Finance en tu s
   
 * Comunícate directamente con tus clientes a través de mensajes de error con respuestas personalizadas.
 
-### Cómo integrar Open Finance en tu Checkout
+### Integrar Open Finance en tu Checkout
 
 Para iniciar un pago utilizando Open Finance, debes tener configurado previamente el método de pago Pix. Para obtener instrucciones de configuración e integración, [consulta la documentación](/developers/es/docs/checkout-api/prerequisites).
 
@@ -193,7 +193,7 @@ Para asegurar que el usuario pagador comprenda el uso de la opción de Inicio de
 
 Consulte a continuación algunos consejos de usabilidad para mejorar el flujo de pagos a través de Open Finance.
 
-### Cómo enumerar los bancos disponibles
+### Enumerar los bancos disponibles
 
 Presentar una lista de posibles entidades financieras para que el usuario seleccione la que le gustaría para proceder al pago.
 
@@ -283,7 +283,7 @@ Actualmente, las Instituciones Financieras participantes aprobadas y disponibles
 #### 2 - Crear un pago
 Con el ID de banco elegido por el usuario, crea un pago y pasa esta información al campo `transaction_data.bank_info.origin_bank_id` de la solicitud de creación de pago.
 
-Para más información, ve la sección de creación de pagos en [esta documentación](#bookmark_creación_de_pago)
+Para más información, ve la sección de creación de pagos en [esta documentación](#bookmark_crear_pago)
 
 #### Prácticas recomendadas
 El vendedor podrá mostrar las instituciones favoritas en los primeros lugares de la lista o en el formato que prefiera. Sin embargo, **no podrá impedir que el cliente seleccione alguna de las instituciones disponibles para su uso**.
@@ -317,7 +317,7 @@ La pantalla de revisión y confirmación debe incluir, como mínimo, la siguient
 > 
 > La Información de Términos y Condiciones se puede presentar como un link para su lectura, quedando a criterio de la Institución Iniciadora de la Transacción de Pago definir si mostrará una acción obligatoria por parte del cliente. 
 
-## Creacíon de pago
+## Crear pago
 Para iniciar un pago Pix a través de Open Finance, el vendedor debe utilizar el método de creación de pago API, con algunos requisitos:
 
 * La información del pagador es obligatoria y debe ingresarse en el atributo `payer`
@@ -564,7 +564,7 @@ Por ejemplo, si la cuenta elegida para iniciar el pago no tiene saldo suficiente
 | REJECTED_SETTLEMENT_FAILED | El cliente no autorizó el pago o tuvo un error durante la autorización | Actualmente, no es posible realizar esta transacción. Nos disculpamos por eso. Vuelva a intentarlo más tarde.                                     |
 
 
-## Prueba tu integración
+## Prueba la integración
 Para probar tu integración, simplemente crea un pago PIX Open Finance y haz lo siguiente:
 
 * Redirigir a la URL informada en `point_of_interaction.transaction_data.ticket_url`, que tiene el enlace al entorno Sandbox;

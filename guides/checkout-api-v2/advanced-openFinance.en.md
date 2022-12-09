@@ -22,7 +22,7 @@ Use our APIs or SDKs to build your own payment experience with Open Finance on y
   
 * Communicate directly with your customers through error messages with personalized responses.
 
-## How to integrate Open Finance into your Checkout
+## Integrate Open Finance into your Checkout
 
 Before starting a charge using Open Finance, you must have configured the Pix payment method.  To learn how to configure and integrate it, [access the documentation](/developers/en/docs/checkout-api/prerequisites).
 
@@ -193,7 +193,7 @@ It is important to make sure that the customer understands how to use the Open F
 
 Check below some usability tips to improve the flow of payments via Open Finance.
 
-### How to list available banks
+### List available banks
 
 To let the customer pay through the Open Finance Payment Transaction Initiator, you need to do the following:
 
@@ -283,7 +283,7 @@ Currently, the participating Financial Institutions approved and available to st
 #### 2 - Create a payment
 Use the bank ID chosen by the user to create a payment and pass this information to the 'transaction_data.bank_info.origin_bank_id' field of the payment creation request.
 
-For more information, go to the payment creation section of this documentation, or by [clicking here](#bookmark_payment_creation)
+For more information, go to the payment creation section of this documentation, or by [clicking here](#bookmark_create_payment)
 
 #### Display tips
 The seller will be able to choose how to display the favorite institutions, **but he won't be able to stop the customer from choosing any of the available institutions**.
@@ -318,7 +318,7 @@ The review and confirmation page must include, at a minimum, the following infor
 > 
 > The Terms and Conditions can be presented as a link, depending on the Initiating Payment Transaction Institution's decision on whether to require customers to act.
 
-## Payment creation
+## Create payment
 
 To initiate a Pix payment via Open Finance, the seller must use the API Payment Creation method, with some requirements:
 
@@ -559,7 +559,7 @@ For example, if the account chosen to initiate the payment does not have enough 
 | REJECTED_CAP_EXCEEDED      | Case where the Pix value limit is exceeded.                                                         | This amount exceeds your daily Pix limit. Go back to the {{holding institution}} and choose a lower amount, or try again tomorrow. |
 | REJECTED_SETTLEMENT_FAILED | Case where the customer did not agree to the payment or there was an error during the approval.     | It is not possible to do this transaction right now. We're sorry about that. Try again later.                                      |
 
-## Testing your integration
+## Test the integration
 
 To test your integration, simply create a PIX Open Finance payment and follow the steps below:
 
