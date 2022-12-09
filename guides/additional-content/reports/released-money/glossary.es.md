@@ -11,7 +11,7 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 ------------
 
 | Nombre de la columna del reporte | Qué significa |
-| -- | --- |
+| --- | --- |
 | DATE | Fecha de liberación, bloqueo o desbloqueo, según corresponda.|
 | SOURCE_ID | ID de operación en Mercado Pago (por ejemplo, el pago de una venta).|
 | EXTERNAL_REFERENCE | <br/> Este dato ayuda a identificar una operación según su origen, el código puede ser: <br/> - ID de la venta a través de la orden o el envío (si es una compra de carrito)<br/> - ID propio provisto por el vendedor en caso de una integración externa<br/>----[mla]---- - ID generado por Coelsa, entidad que procesa el retiro hacia otra cuenta<br/><br/>------------ ----[mlc, mco, mlm, mlb]----<br/>------------Es posible que este campo esté vacío para algunos casos como el pago de facturas o un envío de dinero, entre otros.<br/>|
