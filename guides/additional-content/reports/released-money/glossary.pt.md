@@ -52,7 +52,7 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 | PAYER_ID_TYPE* | Tipo de identificação de quem faz um pagamento ou doação. | ------------ ----[mla]----
 | PAYER_ID_NUMBER* | Número de identificação de quem faz um pagamento ou doação. | ------------ ----[mla]----
 | BUSINESS_UNIT | Corresponde ao canal pelo qual uma venda foi gerada. Os canais são Mercado Pago, Mercado Livre, Mercado Shops e Delivery.|
-| SUB_UNIT | Permite identificar o meio de pagamento usado para cobrar por uma venda com o Mercado Pago.| ------------ ----[mco, mlc, mpe, mlu]----
+| SUB_UNIT | Permite identificar o meio de pagamento usado para cobrar por uma venda com o Mercado Pago.| ------------ ----[mco, mlc, mpe, mlu]---- ------------
 | BALANCE_AMOUNT | Esta coluna mostra o saldo restante de uma conta logo depois que uma transação que afeta o valor total for feita. |
 | PAYOUT_BANK_ACCOUNT_NUMBER | Aqui estão os quatro últimos números da conta para a qual o dinheiro foi enviado do Mercado Pago. |
 > INFO
