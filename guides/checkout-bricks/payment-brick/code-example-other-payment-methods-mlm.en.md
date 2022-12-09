@@ -259,4 +259,4 @@ curl -X POST \
 >
 > Important
 >
-> The ticket expiration date can be configured by sending a POST request with the `data_of_expiration` parameter to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post). After expiration, the ticket will be cancelled.
+> The ticket expiration date can be configured by sending a POST request with the `data_of_expiration` parameter to the endpoint [/v1/payments.](/developers/en/reference/payments/_payments/post) After expiration, the ticket will be cancelled.

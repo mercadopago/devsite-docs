@@ -216,4 +216,4 @@ In addition, the Status Screen can also redirect the buyer to the ticket with th
 >
 > Important
 >
-> The boleto expiration date can be configured by sending a POST request with the `data_of_expiration` parameter to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post). After expiration, the boleto will be cancelled.
+> The boleto expiration date can be configured by sending a POST request with the `data_of_expiration` parameter to the endpoint [/v1/payments.](/developers/en/reference/payments/_payments/post) After expiration, the boleto will be cancelled.

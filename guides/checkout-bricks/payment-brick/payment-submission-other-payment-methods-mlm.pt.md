@@ -216,4 +216,4 @@ Além disso, o Status Screen também poderá redirecionar o comprador para o tic
 >
 > Importante
 >
-> A data de vencimento do boleto pode ser configurada através do envio de requisição POST com parâmetro `data_of_expiration` ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post). Após o vencimento, o boleto será cancelado.
+> A data de vencimento do boleto pode ser configurada através do envio de requisição POST com parâmetro `data_of_expiration` ao endpoint [/v1/payments.](/developers/pt/reference/payments/_payments/post) Após o vencimento, o boleto será cancelado.

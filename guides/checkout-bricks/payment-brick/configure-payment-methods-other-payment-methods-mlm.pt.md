@@ -20,7 +20,7 @@ Para oferecer pagamentos com tickets, siga as etapas abaixo.
 
 > Os passos são realizados no back-end ou no front-end. As pills **Client-Side** e **Server-Side** localizadas imediatamente ao lado do título te ajudam a identificar qual passo é realizado em qual instância. <br/></br>
 > <br/></br>
-> E, para ajudar, preparamos um [exemplo de código](/developers/pt/docs/checkout-bricks/payment-brick/code-example/other-payment-methods/mexico) completo da configuração do Payment Brick em **tickets** v que você pode usar como modelo.
+> E, para ajudar, preparamos um [exemplo de código](/developers/pt/docs/checkout-bricks/payment-brick/code-example/other-payment-methods/mexico) completo da configuração do Payment Brick em **tickets** que você pode usar como modelo.
 
 > CLIENT_SIDE
 >
@@ -81,7 +81,7 @@ const bricksBuilder = mp.bricks();
 >
 > Atenção
 >
-> Durante a instanciação do Brick, é possível que apareçam diferentes erros. Para detalhamento de cada um deles, veja a seção [Possíveis erros](/developers/pt/docs/checkout-bricks/additional-content/possible-errors).
+> Durante a instanciação do Brick, é possível que apareçam diferentes erros. Para detalhamento de cada um deles, veja a seção [Possíveis erros.](/developers/pt/docs/checkout-bricks/additional-content/possible-errors)
 
 > CLIENT_SIDE
 >
@@ -150,7 +150,7 @@ renderPaymentBrick(bricksBuilder);
 
 O resultado de renderizar o Brick deve ser como na imagem abaixo:
 
-![payment-Brick-other-payments-methods-mlm](checkout-bricks/payment-brick-other-payments-methods-mlm-pt.png)
+![payment-Brick-other-payments-methods-mlm](checkout-bricks/payment-brick-other-payments-methods-mlm-pt.jpg)
 
 > WARNING
 >

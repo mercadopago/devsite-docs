@@ -240,4 +240,4 @@ curl -X POST \
 >
 > Importante
 >
-> A data de vencimento do ticket pode ser configurada através do envio de requisição POST com parâmetro `data_of_expiration` ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post). Após o vencimento, o ticket será cancelado.
+> A data de vencimento do ticket pode ser configurada através do envio de requisição POST com parâmetro `data_of_expiration` ao endpoint [/v1/payments.](/developers/pt/reference/payments/_payments/post) Após o vencimento, o ticket será cancelado.
