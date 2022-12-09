@@ -6,7 +6,7 @@ With Mercado Pago's Checkout Bricks, it is possible to offer, in addition to car
 >
 > Important
 >
-> Os meios de pagamento descritos abaixo necessitam que os dados de endereço, nome e documento do comprador sejam preenchidos. Para uma melhor experiência do usuário, é recomendável que o integrador já inicialize esses dados, assim não será necessário preencher manualmente. [Confira aqui](/developers/pt/docs/checkout-bricks/payment-brick/additional-customization/initialize-data-on-the-bricks) como inicializar o Brick com esses dados já preenchidos.
+> To make it easier for the buyer to view the tickets, Brick shows the payment points (**7 Eleven**, **Santander** and **OXXO**) to the user, instead of directly showing the payment methods (**paycash** and **citibanamex**). This allows the user to have a clearer selection of where they can pay the ticket and improves conversion.
 
 To offer payment with **tickets**, follow the steps below. 
 
@@ -107,10 +107,10 @@ const renderPaymentBrick = async (bricksBuilder) => {
    },
    callbacks: {
      onReady: () => {
-       /*
+        /*
          Callback called when Brick is ready
          Here you can hide loadings from your site, for example.
-       */
+        */
      },
      onSubmit: ({ selectedPaymentMethod, formData }) => {
        // callback called when clicking on the data submission button
@@ -146,69 +146,12 @@ const renderPaymentBrick = async (bricksBuilder) => {
    settings
  );
 };
-renderPaymentBrick(bricksBuilder);  
-
-
-
-
-
-const renderPaymentBrick = async (bricksBuilder) => {
- const settings = {
-   initialization: {
-     amount: 100, // monto a ser pago
-   },
-   customization: {
-     paymentMethods: {
-       ticket: 'all',
-     },
-   },
-   callbacks: {
-     onReady: () => {
-        /*
-         Callback llamado cuando Brick está listo.
-         Aquí puedes ocultar loadings de su sitio, por ejemplo.
-        */
-     },
-     onSubmit: ({ selectedPaymentMethod, formData }) => {
-       // callback llamado al hacer clic en el botón de envío de datos
-      
-         return new Promise((resolve, reject) => {
-           fetch("/processar-pago", {
-             method: "POST",
-             headers: {
-               "Content-Type": "application/json",
-             },
-             body: JSON.stringify(formData)
-           })
-             .then((response) => {
-               // recibir el resultado del pago
-               resolve();
-             })
-             .catch((error) => {
-               // manejar la respuesta de error al intentar crear el pago
-               reject();
-             })
-         });
-       
-     },
-     onError: (error) => {
-       // callback llamado solicitada para todos los casos de error de Brick
-       console.error(error);
-     },
-   },
- };
- window.paymentBrickController = await bricksBuilder.create(
-   'payment',
-   'paymentBrick_container',
-   settings
- );
-};
 renderPaymentBrick(bricksBuilder);
 ```
 
-The result of rendering the Brick should be like the image below:”
+The result of rendering the Brick should be like the image below:
 
-![payment-Brick-other-payments-methods](checkout-bricks/payment-brick-other-payments-methods-en.png)
+![payment-Brick-other-payments-methods-mlm](checkout-bricks/payment-brick-other-payments-methods-mlm-en.png)
 
 > WARNING
 >
@@ -228,7 +171,7 @@ The result of rendering the Brick should be like the image below:”
 >
 > The payment methods described below require the buyer's address, name and document details to be filled in. For a better user experience, it is recommended that the integrator already initializes this data, so it will not be necessary to fill it manually. [Check here](/developers/en/docs/checkout-bricks/payment-brick/additional-customization/initialize-data-on-the-bricks) how to initialize the Brick with this data already filled in.
 
-To include payments via **boleto bancário** and **payment in lottery**, just use the following configuration:
+To include payments via **tickets**, just use the following configuration:
 
 [[[
 ```Javascript
@@ -245,9 +188,9 @@ settings = {
 ```
 ]]]
 
-The `ticket` property accepts 2 variable types, `string` and `string[]`. In the example above, payments via **boleto bancário** and **payment in lottery** will be accepted. 
+The properties `ticket` (for payment by printed ticket) and `atm`_*_ (for payment by ATM) accept 2 types of variable, `string` and `string[]`. In the example above, payments will be accepted with **all tickets available in Mexico**.
 
-If you don't want to allow both payment methods, instead of the string `all`, you can pass an array with just the desired IDs. As in the example below, where only payment via **boleto** is accepted.
+If you don't want to allow both payment methods, instead of the string `all`, you can pass an array with just the desired IDs. As in the example below, where only payment via **OXXO** is accepted.
 
 [[[
 ```Javascript
@@ -257,17 +200,24 @@ settings = {
     ...,
     paymentMethods: {
       ...,
-      ticket: [ 'bolbradesco' ]
+      ticket: [ 'oxxo' ]
     }
   }
 }
 ```
 ]]]
 
-If you want a complete list of IDs that can be passed within the array, check the [Get Payment Methods](/developers/en/reference/payment_methods/_payment_methods/get) API in our API Reference. For more information, check out the [corresponding section](/developers/en/docs/checkout-bricks/additional-content/consult-payment-methods).
+In this case, as **OXXO** is the only method available, the list for selecting where to pay will not be displayed.
+
+Currently, these are the IDs that can be passed inside the array:
+
+| Type of payment | IDs |
+|---|---|
+| Tickets | `oxxo` and `paycash` |
+| ATM | `bancomer` and `banamex` |
 
 > NOTE
 >
 > Important
 >
-> The API response contains IDs of several `payment_type_id`. IDs accepted by the `ticket` property are only those that contain `payment_type_id = 'ticket'`.
+> The API response contains IDs of several `payment_type_id`. IDs accepted by the `ticket` property are only those that contain `payment_type_id = 'ticket'` and the `atm` property accepts `payment_type_id = 'atm'`.

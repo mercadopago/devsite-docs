@@ -33,14 +33,12 @@ Para facilitar y optimizar su proceso de integración, mira a continuación un e
        customization: {
          paymentMethods: {
            ticket: 'all',
+    atm: 'all',
          },
        },
        callbacks: {
          onReady: () => {
-           /*
-             Callback llamado cuando Brick está listo
-             Aquí puedes ocultar loadings de su sitio, por ejemplo.
-           */
+           // callback llamado cuando Brick está listo
          },
          onSubmit: ({ selectedPaymentMethod, formData }) => {
            // callback llamado al hacer clic en el botón de envío de datos
@@ -64,7 +62,6 @@ Para facilitar y optimizar su proceso de integración, mira a continuación un e
          },
          onError: (error) => {
            // callback llamado para todos los casos de error de Brick
-           console.error(error);
          },
        },
      };
@@ -97,10 +94,13 @@ Para facilitar y optimizar su proceso de integración, mira a continuación un e
  
  $payment = new MercadoPago\Payment();
  $payment->transaction_amount = 100;
- $payment->description = "Titulo del producto";
- $payment->payment_method_id = "rapipago";
+ $payment->description = "Título del producto";
+ $payment->payment_method_id = "oxxo";
  $payment->payer = array(
      "email" => "test@test.com",
+   );
+$payment->metadata = array(
+     "payment_point" => "oxxo",
    );
  
  $payment->save();
@@ -113,10 +113,13 @@ mercadopago.configurations.setAccessToken(config.access_token);
  
 var payment_data = {
   transaction_amount: 100,
-  description: 'Titulo del producto',
-  payment_method_id: 'rapipago',
+  description: 'Título del producto',
+  payment_method_id: 'oxxo',
   payer: {
     email: 'test@test.com',
+  },
+  metadata: {
+    payment_point: 'oxxo',
   }
 };
  
@@ -128,18 +131,20 @@ mercadopago.payment.create(payment_data).then(function (data) {
 ```
 ```java
 PaymentClient client = new PaymentClient();
- 
 PaymentCreateRequest paymentCreateRequest =
-   PaymentCreateRequest.builder()
-       .transactionAmount(new BigDecimal("100"))
-       .description("Titulo del producto")
-       .paymentMethodId("rapipago")
-       .dateOfExpiration(OffsetDateTime.of(2023, 1, 10, 10, 10, 10, 0, ZoneOffset.UTC))
-       .payer(
-           PaymentPayerRequest.builder()
-               .email("test@test.com")
-       .build();
- 
+  PaymentCreateRequest.builder()
+      .transactionAmount(new BigDecimal("100"))
+      .description("Título del producto")
+      .paymentMethodId("oxxo")
+      .dateOfExpiration(OffsetDateTime.of(2023, 1, 10, 10, 10, 10, 0, ZoneOffset.UTC))
+      .payer(
+          PaymentPayerRequest.builder()
+              .email("test@test.com").build()
+      )
+      .metadata(
+          Map.of('payment_point', 'oxxo')
+      )
+      .build()
 client.create(paymentCreateRequest);
 ```
 ```ruby
@@ -148,10 +153,13 @@ sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
  
 payment_request = {
   transaction_amount: 100,
-  description: 'Titulo del producto',
-  payment_method_id: 'rapipago',
+  description: 'Título del producto',
+  payment_method_id: 'oxxo',
   payer: {
     email: 'test@test.com',
+  },
+  metadata: {
+    payment_point: 'oxxo',
   }
 }
  
@@ -169,11 +177,15 @@ MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
 var request = new PaymentCreateRequest
 {
     TransactionAmount = 105,
-    Description = "Titulo del producto",
-    PaymentMethodId = 'rapipago',
+    Description = "Título del producto",
+    PaymentMethodId = 'oxxo',
     Payer = new PaymentPayerRequest
     {
         Email = "test@test.com",
+    },
+    Metadata = new Dictionary<string, object>
+    {
+	["payment_point"] = "oxxo",
     },
 };
  
@@ -186,10 +198,13 @@ sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
  
 payment_data = {
     "transaction_amount": 100,
-    "description": "Titulo del producto",
-    "payment_method_id": "rapipago",
+    "description": "Título del producto",
+    "payment_method_id": "oxxo",
     "payer": {
         "email": "test@test.com",
+    },
+    "metadata": {
+        "payment_point": "oxxo",
     }
 }
  
@@ -204,18 +219,21 @@ curl -X POST \
     'https://api.mercadopago.com/v1/payments' \
     -d '{
       "transaction_amount": 100,
-      "description": "Titulo del producto",
-      "payment_method_id": "rapipago",
+      "description": "Título del producto",
+      "payment_method_id": "oxxo",
       "payer": {
         "email": "test@test.com",
       }
+"metadata": {
+        "payment_point": "oxxo",
+      }
+ 
     }'
 ```
 ]]]
 
 ### Respuesta
 
-[[[
 ```json
 [
  {
@@ -228,7 +246,7 @@ curl -X POST \
         "net_received_amount": 0,
         "total_paid_amount": 100,
         "overpaid_amount": 0,
-        "external_resource_url": "https://www.mercadopago.com.ar/payments/123456/ticket?caller_id=123456&payment_method_id=rapipago&payment_id=123456&payment_method_reference_id=123456",
+        "external_resource_url": "https://www.mercadopago.com.mx/payments/123456/ticket?caller_id=123456&payment_method_id=oxxo&payment_id=123456&payment_method_reference_id=123456",
         "installment_amount": 0,
         "financial_institution": null,
         "payment_method_reference_id": "1234567890"
@@ -236,10 +254,9 @@ curl -X POST \
  }
 ]
 ```
-]]]
 
 > NOTE
 >
 > Importante
 >
-> La fecha de vencimiento del boleto se puede configurar enviando una solicitud POST con el parámetro `data_of_expiration` al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post). Después del vencimiento, el boleto será cancelado.
+> La fecha de vencimiento del ticket se puede configurar enviando una solicitud POST con el parámetro `data_of_expiration` al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post). Después del vencimiento, el ticket será cancelado.

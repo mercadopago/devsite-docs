@@ -6,7 +6,7 @@ Con el Checkout Bricks de Mercado Pago, es posible ofrecer, además de tarjeta, 
 >
 > Importante
 >
-> Os meios de pagamento descritos abaixo necessitam que os dados de endereço, nome e documento do comprador sejam preenchidos. Para uma melhor experiência do usuário, é recomendável que o integrador já inicialize esses dados, assim não será necessário preencher manualmente. [Confira aqui](/developers/pt/docs/checkout-bricks/payment-brick/additional-customization/initialize-data-on-the-bricks) como inicializar o Brick com esses dados já preenchidos.
+> Para facilitar al comprador la visualización de los tickets, el Brick muestra los puntos de pago (**7 Eleven**, **Santander** y **OXXO**) al usuario, en lugar de mostrar directamente las formas de pago (**paycash** y **citibanamex**). Esto permite al usuario tener una selección más clara de dónde puede pagar el billete y mejora la conversión.
 
 Para ofrecer pagos con **tickets**, sigue los siguientes pasos. 
 
@@ -171,7 +171,7 @@ El resultado de renderizar el Brick debe ser como la imagen de abajo:
 >
 > Los métodos de pago que se describen a continuación requieren que se complete la dirección, el nombre y los detalles del documento del comprador. Para una mejor experiencia de usuario, se recomienda que el integrador ya inicialice estos datos, por lo que no es necesario llenarlo manualmente. [Consulte aquí](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/initialize-data-on-the-bricks) cómo inicializar el bloque con estos datos ya completados.
 
-Para incluir pagos con **ticket**, solo use la siguiente configuración:
+Para incluir pagos con **tickets**, solo use la siguiente configuración:
 
 [[[
 ```Javascript
@@ -189,9 +189,11 @@ atm: 'all'
 ```
 ]]]
 
-La propiedad `ticket` acepta 2 tipos de variables, `string` y `string[]`. En el ejemplo anterior, se aceptarán pagos a través de **boleto** y **pago en lotería**. 
+Las propiedades `ticket` (para pago con ticket impreso) y `atm`_*_ (para pago con cajero automático) aceptan 2 tipos de variables, `string` y `string[]`. En el ejemplo anterior, se aceptarán pagos con **todos los boletos disponibles en México**.
 
-Si no desea permitir ambos métodos de pago, en lugar de la cadena `all`, puede pasar un array con solo las ID deseadas. Como en el ejemplo a continuación, donde solo se acepta el a través de **boleto**.
+> _*Automatic Teller Machine_
+
+Si no desea permitir ambos métodos de pago, en lugar de la cadena `all`, puede pasar un array con solo las ID deseadas. Como en el ejemplo a continuación, donde solo se acepta el a través de **OXXO**.
 
 [[[
 ```Javascript
@@ -201,17 +203,24 @@ settings = {
     ...,
     paymentMethods: {
       ...,
-      ticket: [ 'bolbradesco' ]
+      ticket: [ 'oxxo' ]
     }
   }
 }
 ```
 ]]]
 
-Si quieres obtener una lista completa de IDs que se pueden pasar dentro del array, consulta la API [Obtener medios de pago](/developers/es/reference/payment_methods/_payment_methods/get) en nuestra referencia de API. Para más información, consulte la [sección correspondiente](/developers/es/docs/checkout-bricks/additional-content/consult-payment-methods).
+En este caso, como **OXXO** es el único método disponible, no se mostrará la lista para seleccionar dónde pagar.
+
+Actualmente, estos son los ID que se pueden pasar dentro del array:
+
+| Tipo de pago | IDs |
+|---|---|
+| Tickets | `oxxo` y `paycash` |
+| ATM | `bancomer` y `banamex` |
 
 > NOTE
 >
 > Importante
 >
-> La respuesta de la API contiene ID de varios `payment_type_id`. Los ID aceptados por la propiedad `ticket` son solo aquellos que contienen `payment_type_id = 'ticket'`.
+> La respuesta de la API contiene ID de varios `payment_type_id`. Los ID aceptados por la propiedad `ticket` son solo aquellos que contienen `payment_type_id = 'ticket'` y la propiedad `atm` acepta `payment_type_id = 'atm'`.

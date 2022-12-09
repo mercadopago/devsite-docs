@@ -188,9 +188,11 @@ atm: 'all'
 ```
 ]]]
 
-A propriedade `ticket` aceita 2 tipos de variável, `string` e `string[]`. No exemplo acima, serão aceitos pagamentos via **boleto bancário** e **pagamento em lotérica**.
+As propriedades `ticket` (para pagamento por ticket impresso) e `atm`_*_ (para pagamento por caixa eletrônico) aceitam 2 tipos de variável, `string` e `string[]`. No exemplo acima, serão aceitos pagamentos com **todos os tickets disponíveis no México**.
 
-Caso não queira permitir ambos os meios de pagamento, ao invés da string `all`, você pode passar um array apenas com os IDs desejados. Como no exemplo abaixo, onde é aceito apenas pagamento via **boleto**.
+> _*Automatic Teller Machine_
+
+Caso não queira permitir ambos os meios de pagamento, ao invés da string `all`, você pode passar um array apenas com os IDs desejados. Como no exemplo abaixo, onde é aceito apenas pagamento via **OXXO**.
 
 [[[
 ```Javascript
@@ -200,17 +202,24 @@ settings = {
     ...,
     paymentMethods: {
       ...,
-      ticket: [ 'bolbradesco' ]
+      ticket: [ 'oxxo' ]
     }
   }
 }
 ```
 ]]]
 
-Caso deseje uma lista completa dos IDs que podem ser passados dentro do array, consulte a API de [Obter meios de pagamento](/developers/pt/reference/payment_methods/_payment_methods/get) em nossa API Reference. Para mais informações, consulte a [seção correspondente](/developers/pt/docs/checkout-bricks/additional-content/consult-payment-methods).
+Nesse caso, como **OXXO** é o único meio disponível, não será exibida a lista para seleção de onde pagar.
+
+Atualmente, esses são os IDs que podem ser passados dentro do array:
+
+| Tipo de pagamento | IDs |
+|---|---|
+| Tickets | `oxxo` e `paycash` |
+| ATM | `bancomer` e `banamex` |
 
 > NOTE
 >
 > Importante
 > 
-> A resposta da API contém IDs de diversos `payment_type_id`. Os IDs aceitos pela propriedade `ticket` são apenas os que contém `payment_type_id = 'ticket'`.
+> A resposta da API contém IDs de diversos `payment_type_id`. Os IDs aceitos pela propriedade `ticket` são apenas os que contém `payment_type_id = 'ticket'` e a propriedade `atm` aceita `payment_type_id = 'atm'`.

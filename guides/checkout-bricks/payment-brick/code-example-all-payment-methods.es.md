@@ -24,7 +24,7 @@ Para facilitar y optimizar su proceso de integración, ve a continuación un eje
 
   // Crear un elemento en la preferencia
   $item = new MercadoPago\Item();
-  $item->title = 'Meu produto';
+  $item->title = 'Meu producto';
   $item->quantity = 1;
   $item->unit_price = 75.56;
   $preference->items = array($item);
@@ -51,7 +51,7 @@ let preference = {
   "items": [
     {
       "id": "item-ID-1234",
-      "title": "Meu produto",
+      "title": "Meu producto",
       "quantity": 1,
       "unit_price": 75.76
     }
@@ -79,7 +79,7 @@ PreferenceClient client = new PreferenceClient();
 List<PreferenceItemRequest> items = new ArrayList<>();
 PreferenceItemRequest item =
    PreferenceItemRequest.builder()
-       .title("Meu produto")
+       .title("Meu producto")
        .quantity(1)
        .unitPrice(new BigDecimal("100"))
        .build();
@@ -106,7 +106,7 @@ preference_data = {
   purpose: 'wallet_purchase',
   items: [
     {
-      title: 'Meu produto',
+      title: 'Mi producto',
       unit_price: 75.56,
       quantity: 1
     }
@@ -134,7 +134,7 @@ var request = new PreferenceRequest
     {
         new PreferenceItemRequest
         {
-            Title = "Meu produto",
+            Title = "Mi producto",
             Quantity = 1,
             CurrencyId = "BRL",
             UnitPrice = 75.56m,
@@ -204,7 +204,7 @@ curl -X POST \
 
   // Crear un elemento en la preferencia
   $item = new MercadoPago\Item();
-  $item->title = 'Meu produto';
+  $item->title = 'Mi producto';
   $item->quantity = 1;
   $item->unit_price = 75.56;
   $preference->items = array($item);
@@ -231,7 +231,7 @@ let preference = {
   "items": [
     {
       "id": "item-ID-1234",
-      "title": "Meu produto",
+      "title": "Mi producto",
       "quantity": 1,
       "unit_price": 75.76
     }
@@ -259,7 +259,7 @@ PreferenceClient client = new PreferenceClient();
 List<PreferenceItemRequest> items = new ArrayList<>();
 PreferenceItemRequest item =
    PreferenceItemRequest.builder()
-       .title("Meu produto")
+       .title("Mi producto")
        .quantity(1)
        .unitPrice(new BigDecimal("100"))
        .build();
@@ -286,7 +286,7 @@ preference_data = {
   purpose: 'wallet_purchase',
   items: [
     {
-      title: 'Meu produto',
+      title: 'Mi producto',
       unit_price: 75.56,
       quantity: 1
     }
@@ -314,7 +314,7 @@ var request = new PreferenceRequest
     {
         new PreferenceItemRequest
         {
-            Title = "Meu produto",
+            Title = "Mi producto",
             Quantity = 1,
             CurrencyId = "BRL",
             UnitPrice = 75.56m,
@@ -1116,7 +1116,7 @@ curl -X POST \
  
  $payment = new MercadoPago\Payment();
  $payment->transaction_amount = 100;
- $payment->description = "Titulo del producto";
+ $payment->description = "Título del producto";
  $payment->payment_method_id = "rapipago";
  $payment->payer = array(
      "email" => "test@test.com",
@@ -1132,7 +1132,7 @@ mercadopago.configurations.setAccessToken(config.access_token);
  
 var payment_data = {
   transaction_amount: 100,
-  description: 'Titulo del producto',
+  description: 'Título del producto',
   payment_method_id: 'rapipago',
   payer: {
     email: 'test@test.com',
@@ -1151,7 +1151,7 @@ PaymentClient client = new PaymentClient();
 PaymentCreateRequest paymentCreateRequest =
    PaymentCreateRequest.builder()
        .transactionAmount(new BigDecimal("100"))
-       .description("Titulo del producto")
+       .description("Título del producto")
        .paymentMethodId("rapipago")
        .dateOfExpiration(OffsetDateTime.of(2023, 1, 10, 10, 10, 10, 0, ZoneOffset.UTC))
        .payer(
@@ -1168,7 +1168,7 @@ sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
  
 payment_request = {
   transaction_amount: 100,
-  description: 'Titulo del producto',
+  description: 'Título del producto',
   payment_method_id: 'rapipago',
   payer: {
     email: 'test@test.com',
@@ -1189,7 +1189,7 @@ MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
 var request = new PaymentCreateRequest
 {
     TransactionAmount = 105,
-    Description = "Titulo del producto",
+    Description = "Título del producto",
     PaymentMethodId = "rapipago",
     Payer = new PaymentPayerRequest
     {
@@ -1206,7 +1206,7 @@ sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
  
 payment_data = {
     "transaction_amount": 100,
-    "description": "Titulo del producto",
+    "description": "Título del producto",
     "payment_method_id": "rapipago",
     "payer": {
         "email": "test@test.com",
@@ -1224,11 +1224,164 @@ curl -X POST \
     'https://api.mercadopago.com/v1/payments' \
     -d '{
       "transaction_amount": 100,
-      "description": "Titulo del producto",
+      "description": "Título del producto",
       "payment_method_id": "rapipago",
       "payer": {
         "email": "test@test.com",
       }
+    }'
+```
+]]]
+
+------------
+
+----[mlm]----
+* Para el endpoint `/process_payment_ticket`:
+
+[[[
+```php
+<?php
+ 
+ require_once 'vendor/autoload.php';
+ 
+ MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+ 
+ $payment = new MercadoPago\Payment();
+ $payment->transaction_amount = 100;
+ $payment->description = "Título del producto";
+ $payment->payment_method_id = "oxxo";
+ $payment->payer = array(
+     "email" => "test@test.com",
+   );
+$payment->metadata = array(
+     "payment_point" => "oxxo",
+   );
+ 
+ $payment->save();
+ 
+?>
+```
+```node
+var mercadopago = require('mercadopago');
+mercadopago.configurations.setAccessToken(config.access_token);
+ 
+var payment_data = {
+  transaction_amount: 100,
+  description: 'Título del producto',
+  payment_method_id: 'oxxo',
+  payer: {
+    email: 'test@test.com',
+  },
+  metadata: {
+    payment_point: 'oxxo',
+  },
+};
+ 
+mercadopago.payment.create(payment_data).then(function (data) {
+ 
+}).catch(function (error) {
+ 
+});
+```
+```java
+PaymentClient client = new PaymentClient();
+PaymentCreateRequest paymentCreateRequest =
+  PaymentCreateRequest.builder()
+      .transactionAmount(new BigDecimal("100"))
+      .description("Título del producto")
+      .paymentMethodId("oxxo")
+      .dateOfExpiration(OffsetDateTime.of(2023, 1, 10, 10, 10, 10, 0, ZoneOffset.UTC))
+      .payer(
+          PaymentPayerRequest.builder()
+              .email("test@test.com").build()
+      )
+      .metadata(
+          Map.of('payment_point', 'oxxo')
+      )
+      .build()
+client.create(paymentCreateRequest);
+```
+```ruby
+require 'mercadopago'
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
+ 
+payment_request = {
+  transaction_amount: 100,
+  description: 'Título del producto',
+  payment_method_id: 'oxxo',
+  payer: {
+    email: 'test@test.com',
+  },
+  metadata: {
+    payment_point: 'oxxo',
+  }
+}
+ 
+payment_response = sdk.payment.create(payment_request)
+payment = payment_response[:response]
+```
+```csharp
+using MercadoPago.Config;
+using MercadoPago.Client.Common;
+using MercadoPago.Client.Payment;
+using MercadoPago.Resource.Payment;
+ 
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
+ 
+var request = new PaymentCreateRequest
+{
+    TransactionAmount = 105,
+    Description = "Título del producto",
+    PaymentMethodId = 'oxxo',
+    Payer = new PaymentPayerRequest
+    {
+        Email = "test@test.com",
+    },
+    Metadata = new Dictionary<string, object>
+    {
+	["payment_point"] = "oxxo",
+    },
+};
+ 
+var client = new PaymentClient();
+Payment payment = await client.CreateAsync(request);
+```
+```python
+import mercadopago
+sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
+ 
+payment_data = {
+    "transaction_amount": 100,
+    "description": "Título del producto",
+    "payment_method_id": "oxxo",
+    "payer": {
+        "email": "test@test.com",
+    },
+    "metadata": {
+        "payment_point": "oxxo",
+    }
+}
+ 
+payment_response = sdk.payment().create(payment_data)
+payment = payment_response["response"]
+```
+```curl
+curl -X POST \
+    -H 'accept: application/json' \
+    -H 'content-type: application/json' \
+    -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/payments' \
+    -d '{
+      "transaction_amount": 100,
+      "description": "Título del producto",
+      "payment_method_id": "oxxo",
+      "payer": {
+        "email": "test@test.com",
+      }
+"metadata": {
+        "payment_point": "oxxo",
+      }
+ 
     }'
 ```
 ]]]

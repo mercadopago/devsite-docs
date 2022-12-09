@@ -5,51 +5,48 @@ Para obtener una lista detallada de todos los medios de pago disponibles para in
 [[[
 ```php
 <?php
-
+ 
   MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
-
+ 
   $payment_methods = MercadoPago::get("/v1/payment_methods");
-
+ 
 ?>
 ```
 ```node
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
-
+ 
 var response = await mercadopago.payment_methods.listAll();
 var payment_methods = response.body;
 ```
 ```java
 MercadoPagoConfig.setAccessToken("ENV_ACCESS_TOKEN");
-
+ 
 PaymentMethodClient client = new PaymentMethodClient();
 client.list();
-
 ```
 ```ruby
 require 'mercadopago'
 sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
-
+ 
 payment_methods_response = sdk.payment_methods.get()
 payment_methods = payment_methods_response[:response]
-
 ```
 ```csharp
 using MercadoPago.Client.PaymentMethod;
 using MercadoPago.Config;
 using MercadoPago.Resource;
 using MercadoPago.Resource.PaymentMethod;
-
+ 
 MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
-
+ 
 var client = new PaymentMethodClient();
 ResourcesList<PaymentMethod> paymentMethods = await client.ListAsync();
-
 ```
 ```python
 import mercadopago
 sdk = mercadopago.SDK("ACCESS_TOKEN")
-
+ 
 payment_methods_response = sdk.payment_methods().list_all()
 payment_methods = payment_methods_response["response"]
 ```

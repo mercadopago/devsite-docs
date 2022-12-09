@@ -28,19 +28,17 @@ To facilitate and optimize your integration process, check below a complete exam
    const renderPaymentBrick = async (bricksBuilder) => {
      const settings = {
        initialization: {
-         amount: 100, // total amount to be paid
+         amount: 100, // total amount to be paid 
        },
        customization: {
          paymentMethods: {
            ticket: 'all',
+    atm: 'all',
          },
        },
        callbacks: {
          onReady: () => {
-           /*
-            Callback called when Brick is ready
-            Here you can hide loadings from your site, for example.
-           */
+           // callback called when Brick is ready
          },
          onSubmit: ({ selectedPaymentMethod, formData }) => {
            // callback called when clicking on the data submission button
@@ -64,7 +62,6 @@ To facilitate and optimize your integration process, check below a complete exam
          },
          onError: (error) => {
            // callback called for all Brick error cases
-           console.error(error);
          },
        },
      };
@@ -98,9 +95,12 @@ To facilitate and optimize your integration process, check below a complete exam
  $payment = new MercadoPago\Payment();
  $payment->transaction_amount = 100;
  $payment->description = "Product title";
- $payment->payment_method_id = "rapipago";
+ $payment->payment_method_id = "oxxo";
  $payment->payer = array(
      "email" => "test@test.com",
+   );
+$payment->metadata = array(
+     "payment_point" => "oxxo",
    );
  
  $payment->save();
@@ -114,9 +114,12 @@ mercadopago.configurations.setAccessToken(config.access_token);
 var payment_data = {
   transaction_amount: 100,
   description: 'Product title',
-  payment_method_id: 'rapipago',
+  payment_method_id: 'oxxo',
   payer: {
     email: 'test@test.com',
+  },
+  metadata: {
+    payment_point: 'oxxo',
   }
 };
  
@@ -128,18 +131,20 @@ mercadopago.payment.create(payment_data).then(function (data) {
 ```
 ```java
 PaymentClient client = new PaymentClient();
- 
 PaymentCreateRequest paymentCreateRequest =
-   PaymentCreateRequest.builder()
-       .transactionAmount(new BigDecimal("100"))
-       .description("Product title")
-       .paymentMethodId("rapipago")
-       .dateOfExpiration(OffsetDateTime.of(2023, 1, 10, 10, 10, 10, 0, ZoneOffset.UTC))
-       .payer(
-           PaymentPayerRequest.builder()
-               .email("test@test.com")
-       .build();
- 
+  PaymentCreateRequest.builder()
+      .transactionAmount(new BigDecimal("100"))
+      .description("Product title")
+      .paymentMethodId("oxxo")
+      .dateOfExpiration(OffsetDateTime.of(2023, 1, 10, 10, 10, 10, 0, ZoneOffset.UTC))
+      .payer(
+          PaymentPayerRequest.builder()
+              .email("test@test.com").build()
+      )
+      .metadata(
+          Map.of('payment_point', 'oxxo')
+      )
+      .build()
 client.create(paymentCreateRequest);
 ```
 ```ruby
@@ -149,9 +154,12 @@ sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 payment_request = {
   transaction_amount: 100,
   description: 'Product title',
-  payment_method_id: 'rapipago',
+  payment_method_id: 'oxxo',
   payer: {
     email: 'test@test.com',
+  },
+  metadata: {
+    payment_point: 'oxxo',
   }
 }
  
@@ -170,10 +178,14 @@ var request = new PaymentCreateRequest
 {
     TransactionAmount = 105,
     Description = "Product title",
-    PaymentMethodId = 'rapipago',
+    PaymentMethodId = 'oxxo',
     Payer = new PaymentPayerRequest
     {
         Email = "test@test.com",
+    },
+    Metadata = new Dictionary<string, object>
+    {
+	["payment_point"] = "oxxo",
     },
 };
  
@@ -187,9 +199,12 @@ sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
 payment_data = {
     "transaction_amount": 100,
     "description": "Product title",
-    "payment_method_id": "rapipago",
+    "payment_method_id": "oxxo",
     "payer": {
         "email": "test@test.com",
+    },
+    "metadata": {
+        "payment_point": "oxxo",
     }
 }
  
@@ -205,17 +220,20 @@ curl -X POST \
     -d '{
       "transaction_amount": 100,
       "description": "Product title",
-      "payment_method_id": "rapipago",
+      "payment_method_id": "oxxo",
       "payer": {
         "email": "test@test.com",
       }
+"metadata": {
+        "payment_point": "oxxo",
+      }
+ 
     }'
 ```
 ]]]
 
 ### Response
 
-[[[
 ```json
 [
  {
@@ -228,7 +246,7 @@ curl -X POST \
         "net_received_amount": 0,
         "total_paid_amount": 100,
         "overpaid_amount": 0,
-        "external_resource_url": "https://www.mercadopago.com.ar/payments/123456/ticket?caller_id=123456&payment_method_id=rapipago&payment_id=123456&payment_method_reference_id=123456",
+        "external_resource_url": "https://www.mercadopago.com.mx/payments/123456/ticket?caller_id=123456&payment_method_id=oxxo&payment_id=123456&payment_method_reference_id=123456",
         "installment_amount": 0,
         "financial_institution": null,
         "payment_method_reference_id": "1234567890"
@@ -236,10 +254,9 @@ curl -X POST \
  }
 ]
 ```
-]]]
 
 > NOTE
 >
 > Important
 >
-> The boleto expiration date can be configured by sending a POST request with the `data_of_expiration` parameter to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post). After expiration, the boleto will be cancelled.
+> The ticket expiration date can be configured by sending a POST request with the `data_of_expiration` parameter to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post). After expiration, the ticket will be cancelled.

@@ -4,7 +4,7 @@
 >
 > Enviar el pago (otros medios de pago)
 
-Para configurar pagos con **Rapipago** o **Pago Fácil**, envía un POST con los siguientes parámetros al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) y ejecuta la solicitud o, si lo prefieres, utiliza uno de nuestros SDKs indicados a continuación.
+Para configurar pagos con **ticket**, envía un POST con los siguientes parámetros al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) y ejecuta la solicitud o, si lo prefieres, utiliza uno de nuestros SDKs indicados a continuación.
 
 > NOTE
 >
@@ -12,10 +12,26 @@ Para configurar pagos con **Rapipago** o **Pago Fácil**, envía un POST con los
 >
 > Recuerda que Brick ya resuelve la mayoría de parámetros para enviar el POST. La devolución de información viene en la devolución de llamada `onSubmit`, dentro del objeto `formData`, donde puede encontrar parámetros como: `payment_method_id`, `payer.email` y `amount`.
 
-| Tipo de pago  | Parámetro  | Valor  |
-| --- | --- | --- |
-| Rapipago  | `payment_method_id`  | `rapipago`  |
-| Pago Fácil  | `payment_method_id`  | `pagofacil`  |
+| Tipo de pago | Punto de pago | Parámetro | Valor |
+| --- | --- | --- | --- |
+| Paycash  | 7 Eleven | `payment_method_id`  | `paycash`  |
+| Paycash  | Santander | `payment_method_id`  | `paycash`  |
+| Paycash  | HSBC| `payment_method_id`  | `paycash`  |
+| BBVA  | BBVA | `payment_method_id`  | `bancomer`  |
+| Citibanamex  | Citibanamex | `payment_method_id`  | `banamex`  |
+| Citibanamex  | Telecomm | `payment_method_id`  | `banamex`  |
+| Paycash  | Farmacias Yza| `payment_method_id`  | `paycash`  |
+| BBVA  | Farmacias del ahorro | `payment_method_id`  | `bancomer`  |
+| OXXO  | OXXO | `payment_method_id`  | `oxxo`  |
+| Paycash  | Circle K | `payment_method_id`  | `paycash`  |
+| Paycash  | Extra | `payment_method_id`  | `paycash`  |
+| Paycash  | Kiosko | `payment_method_id`  | `paycash`  |
+| Paycash  | Soriana | `payment_method_id`  | `paycash`  |
+| BBVA  | Casa Ley | `payment_method_id`  | `bancomer`  |
+| Citibanamex  | Chedraul | `payment_method_id`  | `banamex`  |
+| Paycash  | Calimax | `payment_method_id`  | `paycash`  |
+
+Al crear un pago, además de enviar el parámetro `payment_method_id`, que utiliza la [API de pagos](/developers/es/reference/payments/_payments/post), el Brick también devuelve al integrador el parámetro de metadatos que contiene el punto de pago. Estos datos son útiles para mejorar instrucciones de pago específicas en el [Status Screen Brick](/developers/es/docs/checkout-bricks/status-screen-brick/introduction).
 
 [[[
 ```php
@@ -27,10 +43,13 @@ Para configurar pagos con **Rapipago** o **Pago Fácil**, envía un POST con los
  
  $payment = new MercadoPago\Payment();
  $payment->transaction_amount = 100;
- $payment->description = "Titulo del producto";
- $payment->payment_method_id = "rapipago";
+ $payment->description = "Título do produto";
+ $payment->payment_method_id = "oxxo";
  $payment->payer = array(
      "email" => "test@test.com",
+   );
+$payment->metadata = array(
+     "payment_point" => "oxxo",
    );
  
  $payment->save();
@@ -43,10 +62,13 @@ mercadopago.configurations.setAccessToken(config.access_token);
  
 var payment_data = {
   transaction_amount: 100,
-  description: 'Titulo del producto',
-  payment_method_id: 'rapipago',
+  description: 'Título do produto',
+  payment_method_id: 'oxxo',
   payer: {
     email: 'test@test.com',
+  },
+  metadata: {
+    payment_point: 'oxxo',
   }
 };
  
@@ -58,18 +80,20 @@ mercadopago.payment.create(payment_data).then(function (data) {
 ```
 ```java
 PaymentClient client = new PaymentClient();
- 
 PaymentCreateRequest paymentCreateRequest =
-   PaymentCreateRequest.builder()
-       .transactionAmount(new BigDecimal("100"))
-       .description("Titulo del producto")
-       .paymentMethodId("rapipago")
-       .dateOfExpiration(OffsetDateTime.of(2023, 1, 10, 10, 10, 10, 0, ZoneOffset.UTC))
-       .payer(
-           PaymentPayerRequest.builder()
-               .email("test@test.com")
-       .build();
- 
+  PaymentCreateRequest.builder()
+      .transactionAmount(new BigDecimal("100"))
+      .description("Título do produto")
+      .paymentMethodId("oxxo")
+      .dateOfExpiration(OffsetDateTime.of(2023, 1, 10, 10, 10, 10, 0, ZoneOffset.UTC))
+      .payer(
+          PaymentPayerRequest.builder()
+              .email("test@test.com").build()
+      )
+      .metadata(
+          Map.of('payment_point', 'oxxo')
+      )
+      .build()
 client.create(paymentCreateRequest);
 ```
 ```ruby
@@ -78,10 +102,13 @@ sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
  
 payment_request = {
   transaction_amount: 100,
-  description: 'Titulo del producto',
-  payment_method_id: 'rapipago',
+  description: 'Título do produto',
+  payment_method_id: 'oxxo',
   payer: {
     email: 'test@test.com',
+  },
+  metadata: {
+    payment_point: 'oxxo',
   }
 }
  
@@ -99,11 +126,15 @@ MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
 var request = new PaymentCreateRequest
 {
     TransactionAmount = 105,
-    Description = "Titulo del producto",
-    PaymentMethodId = 'rapipago',
+    Description = "Título do produto",
+    PaymentMethodId = 'oxxo',
     Payer = new PaymentPayerRequest
     {
         Email = "test@test.com",
+    },
+    Metadata = new Dictionary<string, object>
+    {
+	["payment_point"] = "oxxo",
     },
 };
  
@@ -116,10 +147,13 @@ sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
  
 payment_data = {
     "transaction_amount": 100,
-    "description": "Titulo del producto",
-    "payment_method_id": "rapipago",
+    "description": "Título do produto",
+    "payment_method_id": "oxxo",
     "payer": {
         "email": "test@test.com",
+    },
+    "metadata": {
+        "payment_point": "oxxo",
     }
 }
  
@@ -134,18 +168,21 @@ curl -X POST \
     'https://api.mercadopago.com/v1/payments' \
     -d '{
       "transaction_amount": 100,
-      "description": "Titulo del producto",
-      "payment_method_id": "rapipago",
+      "description": "Título do produto",
+      "payment_method_id": "oxxo",
       "payer": {
         "email": "test@test.com",
       }
+"metadata": {
+        "payment_point": "oxxo",
+      }
+ 
     }'
 ```
 ]]]
 
 La respuesta mostrará el **status pendiente** hasta que el comprador realice el pago. Además, en la respuesta a la solicitud, el parámetro `external_resource_url` devolverá una URL que contiene las instrucciones para que el comprador realice el pago. Puedes redirigirlo a este mismo link para finalizar el flujo de pago.
 
-[[[
 ```json
 [
  {
@@ -158,7 +195,7 @@ La respuesta mostrará el **status pendiente** hasta que el comprador realice el
         "net_received_amount": 0,
         "total_paid_amount": 100,
         "overpaid_amount": 0,
-        "external_resource_url": "https://www.mercadopago.com.ar/payments/123456/ticket?caller_id=123456&payment_method_id=rapipago&payment_id=123456&payment_method_reference_id=123456",
+        "external_resource_url": "https://www.mercadopago.com.mx/payments/123456/ticket?caller_id=123456&payment_method_id=oxxo&payment_id=123456&payment_method_reference_id=123456",
         "installment_amount": 0,
         "financial_institution": null,
         "payment_method_reference_id": "1234567890"
@@ -166,15 +203,14 @@ La respuesta mostrará el **status pendiente** hasta que el comprador realice el
  }
 ]
 ```
-]]]
 
 ## Mostrar estado de pago
 
-Después de crear el pago desde backend con el SDK de Mercado Pago, usa el **id** recibido en la respuesta para crear una instancia del Status Screen Brick y mostrárselo al comprador.
+Después de crear el pago desde backend con el SDK de Mercado Pago, usa el **id** recibido en la respuesta para crear una instancia del [Status Screen Brick](/developers/es/docs/checkout-bricks/status-screen-brick/introduction) y mostrárselo al comprador.
 
-Además de mostrar el estado del pago, Status Screen Brick también mostrará el código de barras del ticket para copiar y pegar o para que el comprador lo escanee y pague. Descubre lo sencillo que es integrar [haz clic aquí](/developers/es/docs/checkout-bricks/status-screen-brick/configure-integration).
+Además, el Status Screen Brick también puede redirigir al comprador al ticket con el número de transacción y código de barras para que el comprador vaya a una tienda y así realizar el pago. Descubre lo sencillo que es integrar [haz clic aquí](/developers/es/docs/checkout-bricks/status-screen-brick/configure-integration).
 
-![payment-submission-other-payment-methods-status](checkout-bricks/payment-submission-other-payment-methods-status-es.jpg)
+![payment-submission-other-payment-methods-status-mlm](checkout-bricks/payment-submission-other-payment-methods-status-mlm-es.jpg)
 
 > NOTE
 >

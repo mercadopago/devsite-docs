@@ -1,6 +1,6 @@
 # Exemplo de código (outros meios de pagamento)
  
-Para facilitar e otimizar o seu processo de integração, veja abaixo um exemplo completo de como incluir **Rapipago** e **Pago Fácil** como meio de pagamento com o Payment Brick.
+Para facilitar e otimizar o seu processo de integração, veja abaixo um exemplo completo de como incluir **ticket** como meio de pagamento com o Payment Brick.
 
 > CLIENT_SIDE
 >
@@ -215,7 +215,6 @@ curl -X POST \
 
 ### Resposta
 
-[[[
 ```json
 [
  {
@@ -228,7 +227,7 @@ curl -X POST \
         "net_received_amount": 0,
         "total_paid_amount": 100,
         "overpaid_amount": 0,
-        "external_resource_url": "https://www.mercadopago.com.ar/payments/123456/ticket?caller_id=123456&payment_method_id=rapipago&payment_id=123456&payment_method_reference_id=123456",
+        "external_resource_url": "https://www.mercadopago.com.mx/payments/123456/ticket?caller_id=123456&payment_method_id=oxxo&payment_id=123456&payment_method_reference_id=123456",
         "installment_amount": 0,
         "financial_institution": null,
         "payment_method_reference_id": "1234567890"
@@ -236,10 +235,9 @@ curl -X POST \
  }
 ]
 ```
-]]]
 
 > NOTE
 >
 > Importante
 >
-> A data de vencimento do boleto pode ser configurada através do envio de requisição POST com parâmetro `data_of_expiration` ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post). Após o vencimento, o boleto será cancelado.
+> A data de vencimento do ticket pode ser configurada através do envio de requisição POST com parâmetro `data_of_expiration` ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post). Após o vencimento, o ticket será cancelado.
