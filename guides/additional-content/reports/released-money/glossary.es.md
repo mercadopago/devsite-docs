@@ -11,7 +11,7 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 ------------
 
 | Nombre de la columna del reporte | Qué significa |
-| --- | --- |
+| -- | --- |
 | DATE | Fecha de liberación, bloqueo o desbloqueo, según corresponda.|
 | SOURCE_ID | ID de operación en Mercado Pago (por ejemplo, el pago de una venta).|
 | EXTERNAL_REFERENCE | <br/> Este dato ayuda a identificar una operación según su origen, el código puede ser: <br/> - ID de la venta a través de la orden o el envío (si es una compra de carrito)<br/> - ID propio provisto por el vendedor en caso de una integración externa<br/>----[mla]---- - ID generado por Coelsa, entidad que procesa el retiro hacia otra cuenta<br/><br/>------------ ----[mlc, mco, mlm, mlb]----<br/>------------Es posible que este campo esté vacío para algunos casos como el pago de facturas o un envío de dinero, entre otros.<br/>|
@@ -54,6 +54,7 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 | BUSINESS_UNIT | Corresponde al canal por medio del cual se generó una venta. Los canales son Mercado Pago, Mercado Libre, Mercado Shops y Delivery.|
 | SUB_UNIT | Permite identificar el medio que se utilizó para cobrar una venta con Mercado Pago. | ------------  ----[mco, mlc, mpe, mlu]----
 | BALANCE_AMOUNT | En esta columna se visualiza el saldo que queda en una cuenta luego de que se ejecuta una operación que afecta el valor total. |
+| PAYOUT_BANK_ACCOUNT_NUMBER | Aquí se muestran los últimos cuatro números de la cuenta a la que se envió dinero desde mercado pago. |
 > INFO
 >
 > (*) Esta información solo se podrá usar para conciliar, será tratada conforme a las leyes de protección de datos
