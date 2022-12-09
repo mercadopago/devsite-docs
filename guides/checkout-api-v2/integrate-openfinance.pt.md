@@ -10,7 +10,7 @@ Com o Open Finance será possível oferecer pagamentos Pix no Checkout Transpare
 > 
 > É preciso ter uma chave PIX cadastrada em sua conta Mercado Pago. Caso ainda não tenha, [clique aqui](https://www.youtube.com/watch?v=60tApKYVnkA) para mais informações sobre como cadastrá-las.
 
-## Criando um pagamento Pix com Open Finance
+## Criar um pagamento Pix
 
 Antes de iniciar uma cobrança utilizando Open Finance é preciso ter configurado o meio de pagamento Pix. Para saber como realizar a configuração e a integração, acesse a documentação [clicando aqui](/developers/pt/docs/checkout-api/prerequisites).
 
@@ -173,7 +173,7 @@ Resposta:
 }
 ```
 
-## Guiando o usuário para a finalização do pagamento
+## Finalizar pagamento
 
 Com a resposta da requisição de criação de pagamento, basta utilizar a url disponível no objeto `point_of_interaction.transaction_data.ticket_url` para que o comprador consiga finalizar o pagamento através de Open Finance.
 
@@ -183,7 +183,7 @@ A imagem a seguir apresenta um exemplo deste fluxo na visão do usuário:
 
 ![Exemplo de fluxo de pagamento Pix Open Finance](/images/api/api-integrate-openfinance.gif)
 
-## Testando sua integração
+## Testar integração
 
 Para testar a integração é necessário utilizar uma credencial de testes ao criar um pagamento e possuir um usuário de testes com chave Pix cadastrada. [Clique aqui](/developers/pt/docs/checkout-api/integration-test/make-test-purchase) para acessar a documentação e encontrar mais detalhes sobre como fazer isso.
 
@@ -205,7 +205,3 @@ Crie um pagamento Pix Open Finance e utilize a URL disponível no atributo `poin
 Nesta página, você terá acesso às informações do pagamento e terá a possibilidade de selecionar apenas o banco **370 - Mercado Pago - Payments** para dar continuidade ao teste. 
 
 Ao selecionar o banco indicado, será possível **Confirmar o pagamento** e por fim, ocorrerá o redirecionamento para a tela de Feedback definido no parâmetro `callback_url`.
-
-A imagem a seguir apresenta um exemplo dessa experiência:
-
-![Exemplo de fluxo completo de pagamento Pix Open Finance](/images/api/api-integrate-openfinance-sample.gif)
