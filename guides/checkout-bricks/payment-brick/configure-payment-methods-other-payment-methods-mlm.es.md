@@ -1,6 +1,14 @@
 # Configurar la integración con otros medios de pago
 
-Con el Checkout Bricks de Mercado Pago, es posible ofrecer, además de tarjeta y Pix, pagos vía **boleto bancario** y pago en **agencias de lotería**.  Para ofrecer pagos con **boleto bancário** y pago en **agencias de lotería**, sigue los siguientes pasos. 
+Con el Checkout Bricks de Mercado Pago, es posible ofrecer, además de tarjeta, pagos vía **ticket**.  
+
+> NOTE
+>
+> Importante
+>
+> Os meios de pagamento descritos abaixo necessitam que os dados de endereço, nome e documento do comprador sejam preenchidos. Para uma melhor experiência do usuário, é recomendável que o integrador já inicialize esses dados, assim não será necessário preencher manualmente. [Confira aqui](/developers/pt/docs/checkout-bricks/payment-brick/additional-customization/initialize-data-on-the-bricks) como inicializar o Brick com esses dados já preenchidos.
+
+Para ofrecer pagos con **tickets**, sigue los siguientes pasos. 
 
 > Si ya ha integrado los pagos con tarjeta, puede iniciar la integración desde el **paso 4**.
 
@@ -12,7 +20,7 @@ Con el Checkout Bricks de Mercado Pago, es posible ofrecer, además de tarjeta y
 
 > Los pasos se realizan en el backend o frontend. Las etiquetas **Client-Side** y **Server-Side** ubicadas inmediatamente al lado del título lo ayudan a identificar qué paso se realiza en qué instancia. <br/></br>
 > <br/></br>
-> Y para ayudar, hemos preparado un [ejemplo de código](/developers/es/docs/checkout-bricks/payment-brick/code-example/other-payment-methods/brasil) completo de la configuración de Payment Brick con **boleto bancário** y pago en **agencias de lotería** que puede usar como modelo.
+> Y para ayudar, hemos preparado un [ejemplo de código](/developers/es/docs/checkout-bricks/payment-brick/code-example/other-payment-methods/mexico) completo de la configuración de Payment Brick en **tickets** que puede usar como modelo.
 
 > CLIENT_SIDE
 >
@@ -99,10 +107,10 @@ const renderPaymentBrick = async (bricksBuilder) => {
    },
    callbacks: {
      onReady: () => {
-       /*
+        /*
          Callback llamado cuando Brick está listo.
          Aquí puedes ocultar loadings de su sitio, por ejemplo.
-       */
+        */
      },
      onSubmit: ({ selectedPaymentMethod, formData }) => {
        // callback llamado al hacer clic en el botón de envío de datos
@@ -143,7 +151,7 @@ renderPaymentBrick(bricksBuilder);
 
 El resultado de renderizar el Brick debe ser como la imagen de abajo:
 
-![payment-Brick-other-payments-methods](checkout-bricks/payment-brick-other-payments-methods-es.png)
+![payment-Brick-other-payments-methods-mlm](checkout-bricks/payment-brick-other-payments-methods-mlm-es.png)
 
 > WARNING
 >
@@ -163,7 +171,7 @@ El resultado de renderizar el Brick debe ser como la imagen de abajo:
 >
 > Los métodos de pago que se describen a continuación requieren que se complete la dirección, el nombre y los detalles del documento del comprador. Para una mejor experiencia de usuario, se recomienda que el integrador ya inicialice estos datos, por lo que no es necesario llenarlo manualmente. [Consulte aquí](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/initialize-data-on-the-bricks) cómo inicializar el bloque con estos datos ya completados.
 
-Para incluir pagos con **boleto bancário** y pago en **agencias de lotería**, solo use la siguiente configuración:
+Para incluir pagos con **ticket**, solo use la siguiente configuración:
 
 [[[
 ```Javascript
@@ -173,7 +181,8 @@ settings = {
     ...,
     paymentMethods: {
       ...,
-      ticket: 'all'
+      ticket: 'all',
+atm: 'all'
     }
   }
 }

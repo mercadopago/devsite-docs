@@ -1,6 +1,14 @@
 # Configure the integration with other payment methods
 
-With Mercado Pago's Checkout Bricks, it is possible to offer, in addition to card and Pix, payments via **boleto bancário** and **payment in lottery**. To offer **boleto bancário** and payment in **lottery**, follow the steps below. 
+With Mercado Pago's Checkout Bricks, it is possible to offer, in addition to card and Pix, payments via **ticket**. 
+
+> NOTE
+>
+> Important
+>
+> Os meios de pagamento descritos abaixo necessitam que os dados de endereço, nome e documento do comprador sejam preenchidos. Para uma melhor experiência do usuário, é recomendável que o integrador já inicialize esses dados, assim não será necessário preencher manualmente. [Confira aqui](/developers/pt/docs/checkout-bricks/payment-brick/additional-customization/initialize-data-on-the-bricks) como inicializar o Brick com esses dados já preenchidos.
+
+To offer payment with **tickets**, follow the steps below. 
 
 > If you have already integrated card payments, you can start the integration from **step 4**.
 
@@ -12,7 +20,7 @@ With Mercado Pago's Checkout Bricks, it is possible to offer, in addition to car
 
 > The steps are performed on the backend or frontend. The **Client-Side** and **Server-Side** pills located immediately next to the title help you to identify which step is performed in which instance. <br/></br>
 > <br/></br>
-> And to help, we've prepared a complete [code-example](/developers/en/docs/checkout-bricks/payment-brick/code-example/other-payment-methods/brasil) of the Payment Brick configuration with **boleto bancário** and payment in **lottery** that you can use as a template.
+> And to help, we've prepared a complete [code-example](/developers/en/docs/checkout-bricks/payment-brick/code-example/other-payment-methods/mexico) of the Payment Brick configuration with **tickets** that you can use as a template.
 
 > CLIENT_SIDE
 >
@@ -139,6 +147,63 @@ const renderPaymentBrick = async (bricksBuilder) => {
  );
 };
 renderPaymentBrick(bricksBuilder);  
+
+
+
+
+
+const renderPaymentBrick = async (bricksBuilder) => {
+ const settings = {
+   initialization: {
+     amount: 100, // monto a ser pago
+   },
+   customization: {
+     paymentMethods: {
+       ticket: 'all',
+     },
+   },
+   callbacks: {
+     onReady: () => {
+        /*
+         Callback llamado cuando Brick está listo.
+         Aquí puedes ocultar loadings de su sitio, por ejemplo.
+        */
+     },
+     onSubmit: ({ selectedPaymentMethod, formData }) => {
+       // callback llamado al hacer clic en el botón de envío de datos
+      
+         return new Promise((resolve, reject) => {
+           fetch("/processar-pago", {
+             method: "POST",
+             headers: {
+               "Content-Type": "application/json",
+             },
+             body: JSON.stringify(formData)
+           })
+             .then((response) => {
+               // recibir el resultado del pago
+               resolve();
+             })
+             .catch((error) => {
+               // manejar la respuesta de error al intentar crear el pago
+               reject();
+             })
+         });
+       
+     },
+     onError: (error) => {
+       // callback llamado solicitada para todos los casos de error de Brick
+       console.error(error);
+     },
+   },
+ };
+ window.paymentBrickController = await bricksBuilder.create(
+   'payment',
+   'paymentBrick_container',
+   settings
+ );
+};
+renderPaymentBrick(bricksBuilder);
 ```
 
 The result of rendering the Brick should be like the image below:”

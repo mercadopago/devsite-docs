@@ -1,6 +1,14 @@
 # Configure a integração com outros meios de pagamento
 
-Com o Checkout Bricks do Mercado Pago, é possível oferecer, além de cartão e Pix, pagamentos através de **boleto bancário** e **pagamento em lotérica**. Para oferecer pagamentos com **boleto bancário** e **pagamento em lotérica**, siga as etapas abaixo. 
+Com o Checkout Bricks do Mercado Pago, é possível oferecer, além de cartão, pagamentos através de **ticket**. 
+
+> NOTE
+>
+> Importante
+> 
+> Para facilitar a visualização dos tickets pelo comprador, o Brick mostra os pontos de pagamento (**7 Eleven**, **Santander** e **OXXO**) ao usuário, ao invés de mostrar diretamente os métodos de pagamento (**paycash** e **citibanamex**). Isso permite que o usuário tenha uma seleção mais clara de onde pode pagar o ticket e melhora a conversão.
+
+Para oferecer pagamentos com tickets, siga as etapas abaixo. 
 
 > Caso já tenha integrado pagamentos via cartão, você pode iniciar a integração a partir da **etapa 4**.
 
@@ -12,7 +20,7 @@ Com o Checkout Bricks do Mercado Pago, é possível oferecer, além de cartão e
 
 > Os passos são realizados no back-end ou no front-end. As pills **Client-Side** e **Server-Side** localizadas imediatamente ao lado do título te ajudam a identificar qual passo é realizado em qual instância. <br/></br>
 > <br/></br>
-> E, para ajudar, preparamos um [exemplo de código](/developers/pt/docs/checkout-bricks/payment-brick/code-example/other-payment-methods/brasil) completo da configuração do Payment Brick com **boleto bancário** e **pagamento em lotérica** que você pode usar como modelo.
+> E, para ajudar, preparamos um [exemplo de código](/developers/pt/docs/checkout-bricks/payment-brick/code-example/other-payment-methods/mexico) completo da configuração do Payment Brick em **tickets** v que você pode usar como modelo.
 
 > CLIENT_SIDE
 >
@@ -142,7 +150,7 @@ renderPaymentBrick(bricksBuilder);
 
 O resultado de renderizar o Brick deve ser como na imagem abaixo:
 
-![payment-Brick-other-payments-methods](checkout-bricks/payment-brick-other-payments-methods-pt.png)
+![payment-Brick-other-payments-methods-mlm](checkout-bricks/payment-brick-other-payments-methods-mlm-pt.png)
 
 > WARNING
 >
@@ -156,7 +164,7 @@ O resultado de renderizar o Brick deve ser como na imagem abaixo:
 >
 > Gerenciar outros meios de pagamento
 
-Para incluir pagamento via **boleto bancário** e **pagamento em lotérica**, basta utilizar a seguinte configuração:
+Para incluir pagamento via **tickets**, basta utilizar a seguinte configuração:
 
 > NOTE
 >
@@ -172,7 +180,8 @@ settings = {
     ...,
     paymentMethods: {
       ...,
-      ticket: 'all'
+      ticket: 'all',
+atm: 'all'
     }
   }
 }
