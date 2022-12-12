@@ -58,3 +58,5 @@ curl -X GET \
     'https://api.mercadopago.com/v1/payment_methods' \
 ```
 ]]]
+
+> Para detalhes dos meios de pagamento aceitos em cada país, verifique a lista completa com a [disponibilidade de meios de pagamento.](/developers/pt/docs/sales-processing/payment-methods)

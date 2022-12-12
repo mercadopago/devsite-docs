@@ -58,3 +58,5 @@ curl -X GET \
     'https://api.mercadopago.com/v1/payment_methods' \
 ```
 ]]]
+
+> For details of accepted payment methods in each country, check the full list with [payment methods availability.](/developers/en/docs/sales-processing/payment-methods)
