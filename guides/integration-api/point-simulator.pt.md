@@ -8,6 +8,8 @@ O simulador possui dois modos de uso:
 * **PDV mode**: simula a integração de um sistema completo (dispositivo e PDV) com nossa API de Integrações. Acesse o [Simulador PDV Mode](https://api.mercadopago.com/point/integrator-simulator/sandbox/?ignoreapidoc=true).
 * **Device mode**: simula um dispositivo de ponto virtual para que você possa testar sua integração a partir de HTTP requests. Acesse o [Simulador device mode](https://api.mercadopago.com/point/integrator-simulator/sandbox/device?ignoreapidoc=true).
 
+> Para usar o simulador não é necessário executar o serviço Alterar o modo de operação, pois o simulador funciona por padrão no modo PDV.
+
 ## Como usar o simulador
 
 ### 1. Configure suas credenciais
@@ -25,6 +27,8 @@ Ao usar o simulador pela primeira vez, você precisará inserir suas chaves e se
 > Lembre-se que para usar o simulador você deve configurar um `access-token` de teste (`TEST-XXXXX-XXXXX-XXXXXXX`) e você pode obtê-lo em suas [integrações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/applications), opção **Minhas credenciais > Credenciais de teste**.
 > <br/>
 > Para efetuar uma consulta de um pagamento efetuado pelo simulador através da [API de payments](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_id/get), deve-se utilizar o `access-token` de teste (o mesmo utilizado no simulador).
+> <br/>
+> Se você for usar o modo dispositivo do simulador, lembre-se que deve colocar `X-Test-Scope:sandbox` no header para garantir que a tentativa de pagamento chegue ao dispositivo simulador.
 
 ### 2. Simule uma intenção de pagamento
 
@@ -53,4 +57,4 @@ Se você executou as etapas de configuração para as [notificações de Webhook
 >
 > Nota
 >
-> O simulador permitirá que você faça pagamentos de teste, desta forma, você pode consultar todas as informações correspondentes na seção [API de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_id/get).
+> O simulador permitirá que você faça pagamentos de teste. Você pode consultar todas as informações correspondentes na seção [API de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_id/get).

@@ -1,11 +1,9 @@
+----[mla]----
 # Types of integration
 
 It is possible to use Point in two ways:
 
-* **Without integration:** In this model, the seller manually enters the payment data and then inserts the buyer's card in the Point machine. After these steps, the seller will follow the next steps based on the instructions displayed in the Mercado Pago app. To offer Point payments without the need of an integration, see the section [How to use Point without integration](/developers/en/docs/mp-point/how-tos/how-to-use-point-without-integration). <br><br>
-* **Integrated:** In this model, the seller has 4 different types of integration that will vary according to the business needs and technical knowledge of the integrator. See the table below for details on each type of integration available and choose the most appropriate one for your business model.
-
-----[mla]----
+The seller has 2 different types of integration that will vary according to the business needs and technical knowledge of the integrator. See the table below for details on each type of integration available and choose the most appropriate one for your business model.
 
 | Integration type | Description | Devices |
 | --- | --- | --- |
@@ -15,6 +13,11 @@ It is possible to use Point in two ways:
 ------------
 
 ----[mlb]----
+# Types of integration
+
+It is possible to use Point in two ways:
+
+The seller has 2 different types of integration that will vary according to the business needs and technical knowledge of the integrator. See the table below for details on each type of integration available and choose the most appropriate one for your business model.
 
 | Integration type | Description | Devices |
 | --- | --- | --- |
@@ -24,6 +27,9 @@ It is possible to use Point in two ways:
 ------------
 
 ----[mlm]----
+# Integration
+
+The seller can opt for the Deep linking type of integration. See the table below for details.
 
 | Integration type | Description | Devices |
 | --- | --- | --- |

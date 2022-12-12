@@ -8,6 +8,8 @@ El simulador cuenta con dos modos de uso:
 * **PDV mode**: simula la integración de un sistema completo (dispositivo y PDV) con nuestra API de Integraciones. Ingresa al [Simulador PDV mode](https://api.mercadopago.com/point/integrator-simulator/sandbox/?ignoreapidoc=true).
 * **Device mode**: simula un dispositivo Point virtual para que puedas probar tu integración desde los requests HTTP. Ingresa al [Simulador device mode](https://api.mercadopago.com/point/integrator-simulator/sandbox/device?ignoreapidoc=true).
 
+> Para hacer uso del simulador no es necesario ejecutar el servicio de  Cambiar el modo de operación ya que el simulador funciona por defecto en modo PDV.
+
 ## Cómo usar el simulador 
 
 ### 1. Configura tus credenciales
@@ -25,6 +27,9 @@ Al utilizar el simulador por primera vez, deberás ingresar tus credenciales y s
 > Recuerda que para utilizar el simulador debes configurar un `access-token` de prueba (`TEST-XXXXX-XXXXX-XXXXXXX`) y lo puedes obtener en tus [integraciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/applications), opción **Mis credenciales > Credenciales de prueba**.
 > <br/>
 > Para consultar un pago realizado por el simulador a través de la [API de payments](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/get), debe utilizar el `access-token` de prueba  (el mismo que se usa en el simulador).
+> <br/>
+> Si vas a hacer uso del modo device del simulador recuerda debes poner en el  header `X-Test-Scope:sandbox` para lograr que en intento de pago llegue al dispositivo del simulador. 
+
 
 ### 2. Simula una intención de pago
 
@@ -53,4 +58,5 @@ Si realizaste los pasos de configuración de las [notificaciones Webhooks](/deve
 >
 > Nota
 >
-> El simulador te permitirá realizar pagos de prueba, de esta forma, puedes consultar toda la información correspondiente en la sección [API de Pagos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/get).
+> El simulador te permitirá realizar pagos de prueba. Puedes consultar toda la información correspondiente en la sección [API de Pagos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/get).
+
