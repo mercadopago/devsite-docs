@@ -32,21 +32,21 @@ future_product_avaible:
  - card_title: Card Payment Brick
  - card_description: Ofrece pagos con tarjeta de crédito y débito.
  - card_link: /developers/es/docs/checkout-bricks/card-payment-brick/introduction
- - card_linkDescription: Saber más.
+ - card_linkDescription: Saber más
  - card_pillText: DISPONIBLE
  - card_avaible: true
  - card_icon: Pay
  - card_title: Payment Brick
  - card_description: Ofrece diferentes medios de pago entre los que podrán elegir tus clientes, con la posibilidad de guardar los datos de la tarjeta para futuras compras.
  - card_link: /developers/es/docs/checkout-bricks/payment-brick/introduction
- - card_linkDescription: Saber más.
+ - card_linkDescription: Saber más
  - card_pillText: DISPONIBLE
  - card_avaible: true
  - card_icon: Loading
  - card_title: Status Screen Brick
  - card_description: Informa a tus clientes los resultados del proceso de compra, luego de realizado el pago.
  - card_link: /developers/es/docs/checkout-bricks/status-screen-brick/introduction
- - card_linkDescription: Saber más.
+ - card_linkDescription: Saber más
  - card_pillText: DISPONIBLE
  - card_avaible: false
  - card_icon: Wallet
