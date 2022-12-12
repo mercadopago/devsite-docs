@@ -10,7 +10,7 @@ With Open Finance, **it will be possible to offer Pix payments in the Checkout A
 > 
 > You must have a PIX key registered in your Mercado Pago account. If you haven't already, [click here](https://www.youtube.com/watch?v=60tApKYVnkA) and check the necessary steps.
 
-## Creating a Pix Payment with Open Finance
+## Create a Pix Payment
 
 Before starting a charge using Open Finance, you must have configured the Pix payment method. To learn how to configure and integrate it, [access the documentation](/developers/en/docs/checkout-api/prerequisites).
 
@@ -173,7 +173,7 @@ Response:
 }
 ```
 
-## Guiding the user to finalize the payment
+## Finalize the payment
 
 With the payment creation response, just use the URL available in the `point_of_interaction.transaction_data.ticket_url` object. This allows the buyer to finalize the payment through Open Finance.
 
@@ -183,7 +183,7 @@ An example of this flow is shown in the user's view:
 
 ![Payment flow sample](/images/api/api-integrate-openfinance.gif)
 
-## Testing your integration
+## Test the integration
 
 If you want to test the integration, you must have a test user with a registered Pix key and a test credential. You can find more details on how to do this by [clicking here](/developers/en/docs/checkout-api/integration-test/make-test-purchase).
 
@@ -205,7 +205,3 @@ Create a Pix Open Finance payment and use the URL available in the `point_of_int
 On this page, you will find payment information, and you will have the option to select only bank "370 - Mercado Pago - Payments" to continue with the test.
 
 When you choose the bank listed, you can pay and finally be redirected to the Feedback page with the `callback_url` parameter.
-
-This experience is presented in the following image:
-
-![Open finance payment flow sample](/images/api/api-integrate-openfinance-sample.gif)

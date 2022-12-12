@@ -10,7 +10,7 @@ Con Open Finance, se pueden hacer pagos Pix con saldos de otras cuentas bancaria
 > 
 > Para usar esta función, debes registrar una clave Pix en tu cuenta de Mercado Pago. Si aún no lo has hecho, [haz clic aquí](https://www.youtube.com/watch?v=60tApKYVnkA) para obtener más información sobre cómo registrarse.
 
-## Creación de un pago Pix con Open Finance
+## Crear un pago Pix
 
 Para iniciar un pago utilizando Open Finance, debes tener configurado previamente el método de pago Pix. Para obtener instrucciones de configuración e integración, [consulta la documentación](/developers/es/docs/checkout-api/prerequisites).
 
@@ -173,7 +173,7 @@ Respuesta:
 }
 ```
 
-## Orientar al usuario para finalizar el pago
+## Finalizar el pago
 
 Con la respuesta de solicitud de creación de pago, simplemente usa la URL disponible en el objeto `point_of_interaction.transaction_data.ticket_url` para que el comprador pueda finalizar el pago a través de Open Finance.
 
@@ -183,7 +183,7 @@ La imagen siguiente muestra un ejemplo de este proceso en la vista del usuario:
 
 ![Payment flow sample](/images/api/api-integrate-openfinance.gif)
 
-## Probando tu integración
+## Prueba la integración
 
 Para probar la integración, debes usar una credencial de prueba al crear un pago y tener un usuario de prueba con una clave Pix registrada. [Haz clic aquí](/developers/es/docs/checkout-api/integration-test/make-test-purchase) para acceder a la documentación y encontrar más detalles sobre cómo hacerlo.
 
@@ -205,7 +205,3 @@ Crea un pago de Pix Open Finance y utiliza la URL disponible en el atributo `poi
 En esta página, tendrás acceso a la información de pago y tendrás la posibilidad de seleccionar solo el banco 370 - Mercado Pago - Pagos para continuar con la prueba.
 
 Al seleccionar el banco indicado, será posible confirmar el pago y finalmente, se producirá la redirección a la pantalla de Feedback definida en el parámetro `callback_url`.
-
-La imagen siguiente muestra un ejemplo de esta experiencia:
-
-![Open finance payment flow sample](/images/api/api-integrate-openfinance-sample.gif)
