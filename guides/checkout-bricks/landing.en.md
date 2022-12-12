@@ -47,7 +47,7 @@ future_product_avaible:
  - card_description: Inform your customers of the results of the purchase process, after making the payment. 
  - card_link: /developers/en/docs/checkout-bricks/status-screen-brick/introduction
  - card_linkDescription: Learn more.
- - card_pillText: NEW
+ - card_pillText: AVAILABLE
  - card_avaible: false
  - card_icon: Wallet
  - card_title: Wallet Brick
