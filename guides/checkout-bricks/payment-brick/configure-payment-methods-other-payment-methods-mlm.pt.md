@@ -172,7 +172,6 @@ Para incluir pagamento via **tickets**, basta utilizar a seguinte configuração
 >
 > Os meios de pagamento descritos abaixo necessitam que os dados de endereço, nome e documento do comprador sejam preenchidos. Para uma melhor experiência do usuário, é recomendável que o integrador já inicialize esses dados, assim não será necessário preencher manualmente. [Confira aqui](/developers/pt/docs/checkout-bricks/payment-brick/additional-customization/initialize-data-on-the-bricks) como inicializar o Brick com esses dados já preenchidos.
 
-[[[
 ```Javascript
 settings = {
   ...,
@@ -181,12 +180,11 @@ settings = {
     paymentMethods: {
       ...,
       ticket: 'all',
-atm: 'all'
+      atm: 'all'
     }
   }
 }
 ```
-]]]
 
 As propriedades `ticket` (para pagamento por ticket impresso) e `atm`_*_ (para pagamento por caixa eletrônico) aceitam 2 tipos de variável, `string` e `string[]`. No exemplo acima, serão aceitos pagamentos com **todos os tickets disponíveis no México**.
 
@@ -194,7 +192,6 @@ As propriedades `ticket` (para pagamento por ticket impresso) e `atm`_*_ (para p
 
 Caso não queira permitir ambos os meios de pagamento, ao invés da string `all`, você pode passar um array apenas com os IDs desejados. Como no exemplo abaixo, onde é aceito apenas pagamento via **OXXO**.
 
-[[[
 ```Javascript
 settings = {
   ...,
@@ -207,7 +204,6 @@ settings = {
   }
 }
 ```
-]]]
 
 Nesse caso, como **OXXO** é o único meio disponível, não será exibida a lista para seleção de onde pagar.
 

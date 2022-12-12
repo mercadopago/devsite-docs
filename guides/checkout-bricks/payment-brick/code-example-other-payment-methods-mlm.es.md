@@ -94,7 +94,7 @@ Para facilitar y optimizar su proceso de integración, mira a continuación un e
  
  $payment = new MercadoPago\Payment();
  $payment->transaction_amount = 100;
- $payment->description = "Título del producto";
+ $payment->description = "Título do produto";
  $payment->payment_method_id = "oxxo";
  $payment->payer = array(
      "email" => "test@test.com",
@@ -113,14 +113,14 @@ mercadopago.configurations.setAccessToken(config.access_token);
  
 var payment_data = {
   transaction_amount: 100,
-  description: 'Título del producto',
+  description: 'Título do produto',
   payment_method_id: 'oxxo',
   payer: {
     email: 'test@test.com',
   },
   metadata: {
     payment_point: 'oxxo',
-  }
+  },
 };
  
 mercadopago.payment.create(payment_data).then(function (data) {

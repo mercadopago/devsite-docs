@@ -108,8 +108,8 @@ const renderPaymentBrick = async (bricksBuilder) => {
    callbacks: {
      onReady: () => {
         /*
-         Callback called when Brick is ready
-         Here you can hide loadings from your site, for example.
+          Callback called when Brick is ready
+          Here you can hide loadings from your site, for example.
         */
      },
      onSubmit: ({ selectedPaymentMethod, formData }) => {
@@ -173,7 +173,6 @@ The result of rendering the Brick should be like the image below:
 
 To include payments via **tickets**, just use the following configuration:
 
-[[[
 ```Javascript
 settings = {
   ...,
@@ -186,13 +185,11 @@ settings = {
   }
 }
 ```
-]]]
 
 The properties `ticket` (for payment by printed ticket) and `atm`_*_ (for payment by ATM) accept 2 types of variable, `string` and `string[]`. In the example above, payments will be accepted with **all tickets available in Mexico**.
 
 If you don't want to allow both payment methods, instead of the string `all`, you can pass an array with just the desired IDs. As in the example below, where only payment via **OXXO** is accepted.
 
-[[[
 ```Javascript
 settings = {
   ...,
@@ -200,12 +197,12 @@ settings = {
     ...,
     paymentMethods: {
       ...,
-      ticket: [ 'oxxo' ]
+      ticket: 'all',
+      atm: 'all'
     }
   }
 }
 ```
-]]]
 
 In this case, as **OXXO** is the only method available, the list for selecting where to pay will not be displayed.
 

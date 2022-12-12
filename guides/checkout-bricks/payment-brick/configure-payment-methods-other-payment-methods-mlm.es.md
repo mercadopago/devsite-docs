@@ -75,26 +75,6 @@ const mp = new MercadoPago('YOUR_PUBLIC_KEY');
 Con el container creado y la SDK JS instalada, el siguiente paso es instanciar el Brick builder, que permitirá generar el Brick. Para crear la instancia, inserta el código a continuación del paso anterior.
 
 ```javascript
-const bricksBuilder = mp.bricks();
-```
-
-> WARNING
->
-> Atención
->
-> Durante la instanciación del Brick, es posible que aparezcan diferentes errores. Para más detalles sobre cada uno de ellos, consulta la sección [Posibles errores.](/developers/es/docs/checkout-bricks/additional-content/possible-errors)
-
-> CLIENT_SIDE
->
-> h2
->
-> Renderizar Brick
-
-Una vez instanciado el builder, nuestro Brick puede ser renderizado y tener todas sus configuraciones compiladas para que la estructura final sea generada.
-
-Para renderizar el Brick, inserta el código a continuación del paso anterior y completa los atributos de acuerdo con los comentarios destacados en este mismo código.
-
-```javascript
 const renderPaymentBrick = async (bricksBuilder) => {
  const settings = {
    initialization: {
@@ -108,8 +88,8 @@ const renderPaymentBrick = async (bricksBuilder) => {
    callbacks: {
      onReady: () => {
         /*
-         Callback llamado cuando Brick está listo.
-         Aquí puedes ocultar loadings de su sitio, por ejemplo.
+          Callback llamado cuando Brick está listo.
+          Aquí puedes ocultar loadings de su sitio, por ejemplo.
         */
      },
      onSubmit: ({ selectedPaymentMethod, formData }) => {
@@ -173,7 +153,6 @@ El resultado de renderizar el Brick debe ser como la imagen de abajo:
 
 Para incluir pagos con **tickets**, solo use la siguiente configuración:
 
-[[[
 ```Javascript
 settings = {
   ...,
@@ -182,12 +161,11 @@ settings = {
     paymentMethods: {
       ...,
       ticket: 'all',
-atm: 'all'
+      atm: 'all'
     }
   }
 }
 ```
-]]]
 
 Las propiedades `ticket` (para pago con ticket impreso) y `atm`_*_ (para pago con cajero automático) aceptan 2 tipos de variables, `string` y `string[]`. En el ejemplo anterior, se aceptarán pagos con **todos los boletos disponibles en México**.
 
@@ -195,7 +173,6 @@ Las propiedades `ticket` (para pago con ticket impreso) y `atm`_*_ (para pago co
 
 Si no desea permitir ambos métodos de pago, en lugar de la cadena `all`, puede pasar un array con solo las ID deseadas. Como en el ejemplo a continuación, donde solo se acepta el a través de **OXXO**.
 
-[[[
 ```Javascript
 settings = {
   ...,
@@ -208,7 +185,6 @@ settings = {
   }
 }
 ```
-]]]
 
 En este caso, como **OXXO** es el único método disponible, no se mostrará la lista para seleccionar dónde pagar.
 

@@ -94,7 +94,7 @@ available_payments: credit, debit, mercadopago, boleto, pix, pec
 ----[mla]---- 
 
 ---
-available_payments: credit, debit, mercadopago, efectivo
+available_payments: credit, debit, mercadopago, efectivo, rapipago, pagofacil
 
 ---
 ------------
@@ -102,7 +102,7 @@ available_payments: credit, debit, mercadopago, efectivo
 ----[mlm]---- 
 
 ---
-available_payments: credit, debit, mercadopago
+available_payments: credit, debit, mercadopago, ticket, atm
 
 ---
 ------------

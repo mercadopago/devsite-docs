@@ -120,7 +120,7 @@ var payment_data = {
   },
   metadata: {
     payment_point: 'oxxo',
-  }
+  },
 };
  
 mercadopago.payment.create(payment_data).then(function (data) {

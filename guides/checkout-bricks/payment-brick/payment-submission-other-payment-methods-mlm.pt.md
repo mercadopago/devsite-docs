@@ -204,7 +204,7 @@ A resposta mostrará o **status pendente** até que o comprador realize o pagame
 ]
 ```
 
-## Mostre o status do pagamento
+## Mostrar o status do pagamento
 
 Após criar o pagamento pelo backend utilizando a SDK do Mercado Pago, utilize o **id** recebido na resposta para instanciar o [Status Screen Brick](/developers/pt/docs/checkout-bricks/status-screen-brick/introduction) e exibir o status do pagamento para o comprador. 
 
