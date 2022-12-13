@@ -33,7 +33,7 @@ Para facilitar y optimizar su proceso de integración, mira a continuación un e
        customization: {
          paymentMethods: {
            ticket: 'all',
-    atm: 'all',
+           atm: 'all',
          },
        },
        callbacks: {
@@ -41,7 +41,7 @@ Para facilitar y optimizar su proceso de integración, mira a continuación un e
            // callback llamado cuando Brick está listo
          },
          onSubmit: ({ selectedPaymentMethod, formData }) => {
-           // callback llamado al hacer clic en el botón de envío de datos
+           // callback llamado al hacer clic en el botón de envío de dato
            return new Promise((resolve, reject) => {
              fetch("/processar-pago", {
                method: "POST",

@@ -28,12 +28,12 @@ To facilitate and optimize your integration process, check below a complete exam
    const renderPaymentBrick = async (bricksBuilder) => {
      const settings = {
        initialization: {
-         amount: 100, // total amount to be paid 
+         amount: 100, // total amount to be paid
        },
        customization: {
          paymentMethods: {
            ticket: 'all',
-    atm: 'all',
+           atm: 'all',
          },
        },
        callbacks: {
