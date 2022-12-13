@@ -1,14 +1,14 @@
 # Configurar la integración con otros medios de pago
 
-Con el Checkout Bricks de Mercado Pago, es posible ofrecer, además de tarjeta, pagos vía **ticket**.  
+Con el Checkout Bricks de Mercado Pago, es posible ofrecer, además de tarjeta, pagos vía **pagos con dinero en efectivo via ticket**.  
 
 > NOTE
 >
 > Importante
 >
-> Para facilitar al comprador la visualización de los tickets, el Brick muestra los puntos de pago (**7 Eleven**, **Santander** y **OXXO**) al usuario, en lugar de mostrar directamente las formas de pago (**paycash** y **citibanamex**). Esto permite al usuario tener una selección más clara de dónde puede pagar el billete y mejora la conversión.
+> Para facilitar al comprador la visualización de los pagos con dinero en efectivo, el Brick muestra los puntos de pago (**7 Eleven**, **Santander** y **OXXO**) al usuario, en lugar de mostrar directamente las formas de pago (**paycash** y **citibanamex**). Esto permite al usuario tener una selección más clara de dónde puede pagar el ticket y mejorar la conversión.
 
-Para ofrecer pagos con **tickets**, sigue los siguientes pasos. 
+Para ofrecer **pagos con dinero en efectivo via ticket**, sigue los siguientes pasos. 
 
 > Si ya ha integrado los pagos con tarjeta, puede iniciar la integración desde el **paso 4**.
 
@@ -20,7 +20,7 @@ Para ofrecer pagos con **tickets**, sigue los siguientes pasos.
 
 > Los pasos se realizan en el backend o frontend. Las etiquetas **Client-Side** y **Server-Side** ubicadas inmediatamente al lado del título lo ayudan a identificar qué paso se realiza en qué instancia. <br/></br>
 > <br/></br>
-> Y para ayudar, hemos preparado un [ejemplo de código](/developers/es/docs/checkout-bricks/payment-brick/code-example/other-payment-methods/mexico) completo de la configuración de Payment Brick en **tickets** que puede usar como modelo.
+> Y para ayudar, hemos preparado un [ejemplo de código](/developers/es/docs/checkout-bricks/payment-brick/code-example/other-payment-methods/mexico) completo de la configuración de Payment Brick para **pagos con dinero en efectivo via ticket** que puede usar como modelo.
 
 > CLIENT_SIDE
 >
@@ -151,7 +151,7 @@ El resultado de renderizar el Brick debe ser como la imagen de abajo:
 >
 > Los métodos de pago que se describen a continuación requieren que se complete la dirección, el nombre y los detalles del documento del comprador. Para una mejor experiencia de usuario, se recomienda que el integrador ya inicialice estos datos, por lo que no es necesario llenarlo manualmente. [Consulte aquí](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/initialize-data-on-the-bricks) cómo inicializar el bloque con estos datos ya completados.
 
-Para incluir pagos con **tickets**, solo use la siguiente configuración:
+Para incluir **pagos con dinero en efectivo via ticket**, solo use la siguiente configuración:
 
 ```Javascript
 settings = {
@@ -167,7 +167,7 @@ settings = {
 }
 ```
 
-Las propiedades `ticket` (para pago con ticket impreso) y `atm`_*_ (para pago con cajero automático) aceptan 2 tipos de variables, `string` y `string[]`. En el ejemplo anterior, se aceptarán pagos con **todos los boletos disponibles en México**.
+Las propiedades `ticket` (para pago con ticket impreso) y `atm`_*_ (para pago con cajero automático) aceptan 2 tipos de variables, `string` y `string[]`. En el ejemplo anterior, se aceptarán pagos con **todos los tickets disponibles en México**.
 
 > _*Automatic Teller Machine_
 

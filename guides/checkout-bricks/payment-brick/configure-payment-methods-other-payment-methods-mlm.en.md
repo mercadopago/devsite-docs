@@ -1,14 +1,14 @@
 # Configure the integration with other payment methods
 
-With Mercado Pago's Checkout Bricks, it is possible to offer, in addition to card and Pix, payments via **ticket**. 
+With Mercado Pago's Checkout Bricks, it is possible to offer, in addition to card, **payments with cash via ticket**. 
 
 > NOTE
 >
 > Important
 >
-> To make it easier for the buyer to view the tickets, Brick shows the payment points (**7 Eleven**, **Santander** and **OXXO**) to the user, instead of directly showing the payment methods (**paycash** and **citibanamex**). This allows the user to have a clearer selection of where they can pay the ticket and improves conversion.
+> To make it easier for the buyer to view the payments with cash via ticket, Brick shows the payment points (**7 Eleven**, **Santander** and **OXXO**) to the user, instead of directly showing the payment methods (**paycash** and **citibanamex**). This allows the user to have a clearer selection of where they can pay the ticket and improves conversion.
 
-To offer payment with **tickets**, follow the steps below. 
+To offer **payments with cash via ticket**, follow the steps below. 
 
 > If you have already integrated card payments, you can start the integration from **step 4**.
 
@@ -20,7 +20,7 @@ To offer payment with **tickets**, follow the steps below.
 
 > The steps are performed on the backend or frontend. The **Client-Side** and **Server-Side** pills located immediately next to the title help you to identify which step is performed in which instance. <br/></br>
 > <br/></br>
-> And to help, we've prepared a complete [code-example](/developers/en/docs/checkout-bricks/payment-brick/code-example/other-payment-methods/mexico) of the Payment Brick configuration with **tickets** that you can use as a template.
+> And to help, we've prepared a complete [code-example](/developers/en/docs/checkout-bricks/payment-brick/code-example/other-payment-methods/mexico) of the Payment Brick configuration **payments with cash via ticket** that you can use as a template.
 
 > CLIENT_SIDE
 >
@@ -171,7 +171,7 @@ The result of rendering the Brick should be like the image below:
 >
 > The payment methods described below require the buyer's address, name and document details to be filled in. For a better user experience, it is recommended that the integrator already initializes this data, so it will not be necessary to fill it manually. [Check here](/developers/en/docs/checkout-bricks/payment-brick/additional-customization/initialize-data-on-the-bricks) how to initialize the Brick with this data already filled in.
 
-To include payments via **tickets**, just use the following configuration:
+To include **payments with cash via ticket**, just use the following configuration:
 
 ```Javascript
 settings = {

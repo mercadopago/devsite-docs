@@ -1,14 +1,14 @@
 # Configure a integração com outros meios de pagamento
 
-Com o Checkout Bricks do Mercado Pago, é possível oferecer, além de cartão, pagamentos através de **ticket**. 
+Com o Checkout Bricks do Mercado Pago, é possível oferecer, além de cartão, **pagamentos com dinheiro via ticket**.
 
 > NOTE
 >
 > Importante
 > 
-> Para facilitar a visualização dos tickets pelo comprador, o Brick mostra os pontos de pagamento (**7 Eleven**, **Santander** e **OXXO**) ao usuário, ao invés de mostrar diretamente os métodos de pagamento (**paycash** e **citibanamex**). Isso permite que o usuário tenha uma seleção mais clara de onde pode pagar o ticket e melhora a conversão.
+> Para facilitar a visualização dos pagamentos em dinheiro pelo comprador, o Brick mostra os pontos de pagamento (**7 Eleven**, **Santander** e **OXXO**) ao usuário, ao invés de mostrar diretamente os métodos de pagamento (**paycash** e **citibanamex**). Isso permite que o usuário tenha uma seleção mais clara de onde pode pagar o ticket e melhorar a conversão.
 
-Para oferecer pagamentos com tickets, siga as etapas abaixo. 
+Para oferecer pagamentos em dinheiro, siga as etapas abaixo. 
 
 > Caso já tenha integrado pagamentos via cartão, você pode iniciar a integração a partir da **etapa 4**.
 
@@ -20,7 +20,7 @@ Para oferecer pagamentos com tickets, siga as etapas abaixo.
 
 > Os passos são realizados no back-end ou no front-end. As pills **Client-Side** e **Server-Side** localizadas imediatamente ao lado do título te ajudam a identificar qual passo é realizado em qual instância. <br/></br>
 > <br/></br>
-> E, para ajudar, preparamos um [exemplo de código](/developers/pt/docs/checkout-bricks/payment-brick/code-example/other-payment-methods/mexico) completo da configuração do Payment Brick em **tickets** que você pode usar como modelo.
+> E, para ajudar, preparamos um [exemplo de código](/developers/pt/docs/checkout-bricks/payment-brick/code-example/other-payment-methods/mexico) completo da configuração do Payment Brick com **pagamento em dinheiro** que você pode usar como modelo.
 
 > CLIENT_SIDE
 >
@@ -164,7 +164,7 @@ O resultado de renderizar o Brick deve ser como na imagem abaixo:
 >
 > Gerenciar outros meios de pagamento
 
-Para incluir pagamento via **tickets**, basta utilizar a seguinte configuração:
+Para incluir **pagamento em dinheiro via ticket**, basta utilizar a seguinte configuração:
 
 > NOTE
 >
@@ -186,7 +186,7 @@ settings = {
 }
 ```
 
-As propriedades `ticket` (para pagamento por ticket impresso) e `atm`_*_ (para pagamento por caixa eletrônico) aceitam 2 tipos de variável, `string` e `string[]`. No exemplo acima, serão aceitos pagamentos com **todos os tickets disponíveis no México**.
+As propriedades `ticket` (para pagamento em dinheiro por ticket impresso) e `atm`_*_ (para pagamento por caixa eletrônico) aceitam 2 tipos de variável, `string` e `string[]`. No exemplo acima, serão aceitos pagamentos com **todos os tickets disponíveis no México**.
 
 > _*Automatic Teller Machine_
 

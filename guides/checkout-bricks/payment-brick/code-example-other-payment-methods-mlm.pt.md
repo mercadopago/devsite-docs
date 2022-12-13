@@ -1,6 +1,6 @@
 # Exemplo de código (outros meios de pagamento)
  
-Para facilitar e otimizar o seu processo de integração, veja abaixo um exemplo completo de como incluir **ticket** como meio de pagamento com o Payment Brick.
+Para facilitar e otimizar o seu processo de integração, veja abaixo um exemplo completo de como incluir **pagamento em dinheiro** como meio de pagamento com o Payment Brick.
 
 > CLIENT_SIDE
 >
