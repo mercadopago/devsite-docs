@@ -8,7 +8,7 @@ To facilitate and optimize your integration process, check below a complete exam
 >
 > Create your preference
 
-> Required for Mercado Pago Wallet.
+> Required for Mercado Pago Wallet and Installments without card.
 
 ----[mla, mlb, mlu, mpe, mlm]----
 [[[
@@ -376,99 +376,220 @@ curl -X POST \
 >
 > Configure the integration
 
+----[mla, mlm, mlu, mco, mlc, mpe]---- 
 ```html
 <!DOCTYPE html>
 <html lang="en">
+ 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bricks</title>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Bricks</title>
 </head>
+ 
 <body>
-  <div id="paymentBrick_container"></div>
-  <script src="https://sdk.mercadopago.com/js/v2"></script>
-  <script>
-    const mp = new MercadoPago('YOUR_PUBLIC_KEY');
-    const bricksBuilder = mp.bricks();
-    const renderPaymentBrick = async (bricksBuilder) => {
-      const settings = {
-        initialization: {
-          /*
+ <div id="paymentBrick_container"></div>
+ <script src="https://sdk.mercadopago.com/js/v2"></script>
+ <script>
+   const mp = new MercadoPago('YOUR_PUBLIC_KEY');
+   const bricksBuilder = mp.bricks();
+   const renderPaymentBrick = async (bricksBuilder) => {
+     const settings = {
+       initialization: {
+         /*
            "amount" is the total amount to be paid
            by all means of payment with the exception of the Mercado Pago Wallet,
            which has its processing value determined in the backend through the "preferenceId"
-          */
-          amount: 100, // amount of processing to be performed
-          preferenceId: '<PREFERENCE_ID>', // preferenceId generated in the backend
-        },
-        customization: {
-          paymentMethods: {
-            creditCard: 'all',
-            debitCard: 'all',
-            ticket: 'all',
-          },
-        },
-        callbacks: {
-          onReady: () => {
-            /*
+         */
+         amount: 100, // amount of processing to be performed
+         preferenceId: '<PREFERENCE_ID>', // preferenceId generated in the backend
+       },
+       customization: {
+         paymentMethods: {
+           creditCard: 'all',
+           debitCard: 'all',
+           ticket: 'all',
+           mercadoPago: 'all',
+         },
+       },
+       callbacks: {
+         onReady: () => {
+           /*
              Callback called when Brick is ready
              Here you can hide loadings from your site, for example.
-            */
-          },
-          onSubmit: ({ selectedPaymentMethod, formData }) => {
-            // callback called when clicking on the data submission button
-
-            return new Promise((resolve, reject) => {
-              let url = undefined;
-
-              if (selectedPaymentMethod === 'credit_card' || selectedPaymentMethod === 'debit_card') {
-                url = 'process_payment_card';
-              } else if (selectedPaymentMethod === 'ticket') {
-                url = 'process_payment_ticket';
-              }
-
-              if (url) {
-                fetch(url, {
-                  method: "POST",
-                  headers: {
-                    "Content-Type": "application/json",
-                  },
-                  body: JSON.stringify(formData)
-                })
-                  .then((response) => {
-                    // receive payment result
-                    resolve();
-                  })
-                  .catch((error) => {
-                    // handle error response when trying to create payment
-                    reject();
-                  })
-              } else if (selectedPaymentMethod === 'wallet_purchase') {
-                // wallet_purchase (Conta Mercado Pago) does not need to be sent from the backend
-                resolve();
-              } else {
-                reject();
-              }
-            });
-          },
-          onError: (error) => {
-            // callback called for all Brick error cases
-            console.error(error);
-          },
-        },
-      };
-      window.paymentBrickController = await bricksBuilder.create(
-        'payment',
-        'paymentBrick_container',
-        settings
-      );
-    };
-    renderPaymentBrick(bricksBuilder);
-  </script>
+           */
+         },
+         onSubmit: ({ selectedPaymentMethod, formData }) => {
+           // callback called when clicking on the data submission button
+ 
+           return new Promise((resolve, reject) => {
+             let url = undefined;
+ 
+             if (selectedPaymentMethod === 'credit_card' || selectedPaymentMethod === 'debit_card') {
+               url = 'process_payment_card';
+             } else if (selectedPaymentMethod === 'ticket') {
+               url = 'process_payment_ticket';
+             }
+ 
+             if (url) {
+               fetch(url, {
+                 method: "POST",
+                 headers: {
+                   "Content-Type": "application/json",
+                 },
+                 body: JSON.stringify(formData)
+               })
+                 .then((response) => {
+                   // receive payment result
+                   resolve();
+                 })
+                 .catch((error) => {
+                   // handle error response when trying to create payment
+                   reject();
+                 })
+             } else if (
+               selectedPaymentMethod === 'wallet_purchase' ||
+               selectedPaymentMethod === 'onboarding_credits'
+             ) {
+               /*
+                 wallet_purchase (Mercado Pago Wallet) e
+                 onboarding_credits (Installments without card)
+                 does not need to be sent from the backend
+		           */
+               resolve();
+             } else {
+               reject();
+             }
+           });
+         },
+         onError: (error) => {
+           // callback called for all Brick error cases
+           console.error(error);
+         },
+       },
+     };
+     window.paymentBrickController = await bricksBuilder.create(
+       'payment',
+       'paymentBrick_container',
+       settings
+     );
+   };
+   renderPaymentBrick(bricksBuilder);
+ </script>
+</body>
+ 
+</html>
+```
+------------
+----[mlb]----
+```html
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Bricks</title>
+</head>
+ 
+<body>
+ <div id="paymentBrick_container"></div>
+ <script src="https://sdk.mercadopago.com/js/v2"></script>
+ <script>
+   const mp = new MercadoPago('YOUR_PUBLIC_KEY');
+   const bricksBuilder = mp.bricks();
+   const renderPaymentBrick = async (bricksBuilder) => {
+     const settings = {
+       initialization: {
+         /*
+           "amount" is the total amount to be paid
+           by all means of payment with the exception of the Mercado Pago Wallet,
+           which has its processing value determined in the backend through the "preferenceId"
+         */
+         amount: 100, // amount of processing to be performed
+         preferenceId: '<PREFERENCE_ID>', // preferenceId generated in the backend
+       },
+       customization: {
+         paymentMethods: {
+           creditCard: 'all',
+           debitCard: 'all',
+           ticket: 'all',
+           bankTransfer: 'all',
+           mercadoPago: 'all',
+         },
+       },
+       callbacks: {
+         onReady: () => {
+           /*
+             Callback called when Brick is ready
+             Here you can hide loadings from your site, for example.
+           */
+         },
+         onSubmit: ({ selectedPaymentMethod, formData }) => {
+           // callback called when clicking on the data submission button
+ 
+           return new Promise((resolve, reject) => {
+             let url = undefined;
+ 
+             if (selectedPaymentMethod === 'credit_card' || selectedPaymentMethod === 'debit_card') {
+               url = 'process_payment_card';
+             } else if (selectedPaymentMethod === 'bank_transfer') {
+               url = 'process_payment_pix';
+             } else if (selectedPaymentMethod === 'ticket') {
+               url = 'process_payment_ticket';
+             }
+ 
+             if (url) {
+               fetch(url, {
+                 method: "POST",
+                 headers: {
+                   "Content-Type": "application/json",
+                 },
+                 body: JSON.stringify(formData)
+               })
+                 .then((response) => {
+                   // receive payment result
+                   resolve();
+                 })
+                 .catch((error) => {
+                   // handle error response when trying to create payment
+                   reject();
+                 })
+             } else if (
+               selectedPaymentMethod === 'wallet_purchase' ||
+               selectedPaymentMethod === 'onboarding_credits'
+             ) {
+               /*
+                 wallet_purchase (Mercado Pago Wallet) e
+                 onboarding_credits (Installments without card)
+                 does not need to be sent from the backend
+		           */
+               resolve();
+             } else {
+               reject();
+             }
+           });
+         },
+         onError: (error) => {
+           // callback called for all Brick error cases
+           console.error(error);
+         },
+       },
+     };
+     window.paymentBrickController = await bricksBuilder.create(
+       'payment',
+       'paymentBrick_container',
+       settings
+     );
+   };
+   renderPaymentBrick(bricksBuilder);
+ </script>
 </body>
 </html>
 ```
+------------
 
 > SERVER_SIDE
 >
@@ -476,8 +597,7 @@ curl -X POST \
 >
 > Payment submission to Mercado Pago
 
-
-> Payments with **Mercado Pago Wallet** do not need to be sent via the backend. If the user selects this option as a means of payment, the `preferenceId` sent at the initialization of the Brick is responsible for redirecting the buyer to the Mercado Pago website, where the payment will be made directly on our website. To redirect the buyer back to your site, you can configure the `back_urls` as described [in this article.](/developers/en/docs/checkout-bricks/payment-brick/additional-customization/preferences#bookmark_redirect_the_buyer_to_your_site)
+> Payments with **Mercado Pago Wallet and Installments without card** do not need to be sent via the backend. If the user selects this option as a means of payment, the `preferenceId` sent at the initialization of the Brick is responsible for redirecting the buyer to the Mercado Pago website, where the payment will be made directly on our website. To redirect the buyer back to your site, you can configure the `back_urls` as described [in this article.](/developers/en/docs/checkout-bricks/payment-brick/additional-customization/preferences#bookmark_redirect_the_buyer_to_your_site)
 
 * For the endpoint `/process_payment_card`:
 

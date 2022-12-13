@@ -1,6 +1,16 @@
-# Ejemplo de código (Cuenta de Mercado Pago)
+----[mla, mlb, mlu, mco, mlc, mpe]---- 
+# Ejemplo de código (Cuenta de Mercado Pago y Cuotas sin tarjeta)
 
-Para facilitar y optimizar su proceso de integración, ve a continuación un ejemplo completo de cómo incluir la Cuenta de Mercado Pago como medio de pago con Payment Brick. 
+Para facilitar y optimizar su proceso de integración, ve a continuación un ejemplo completo de cómo incluir la Cuenta de Mercado Pago y Cuotas sin tarjeta como medios de pago con Payment Brick. 
+
+------------
+
+----[mlm]----
+# Ejemplo de código (Cuenta de Mercado Pago y Meses sin tarjeta)
+
+Para facilitar y optimizar su proceso de integración, ve a continuación un ejemplo completo de cómo incluir la Cuenta de Mercado Pago y Meses sin tarjeta como medios de pago con Payment Brick. 
+
+------------
 
 > SERVER_SIDE
 >
@@ -390,42 +400,55 @@ curl -X POST \
 <div id="paymentBrick_container"></div>
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 <script>
-  const mp = new MercadoPago('YOUR_PUBLIC_KEY');
-  const bricksBuilder = mp.bricks();
-  const renderPaymentBrick = async (bricksBuilder) => {
-    const settings = {
-      initialization: {
-        amount: 100, // monto a ser pago
-        preferenceId: '<PREFERENCE_ID>', // preferenceId generado en el backend
-      },
-      callbacks: {
-        onReady: () => {
-           /*
-             Callback llamado cuando Brick está listo
-             Aquí puedes ocultar loadings de su sitio, por ejemplo.
-           */
-        },
-        onSubmit: ({ selectedPaymentMethod, formData }) => {
-          // callback llamado al hacer clic en el botón de envío de datos
-            // en este caso, el usuario fue redirigido a
-            // la página de Mercado Pago para realizar el pago
-        },
-        onError: (error) => {
-          // callback llamado para todos los casos de error de Brick
-          console.error(error);
-        },
-      },
-    };
-    window.paymentBrickController = await bricksBuilder.create(
-      'payment',
-      'paymentBrick_container',
-      settings
-    );
-  };
-  renderPaymentBrick(bricksBuilder);
+ const mp = new MercadoPago('YOUR_PUBLIC_KEY');
+ const bricksBuilder = mp.bricks();
+ const renderPaymentBrick = async (bricksBuilder) => {
+   const settings = {
+     initialization: {
+       amount: 100, // monto a ser pago
+       preferenceId: '<PREFERENCE_ID>', // preferenceId generado en el backend
+     },
+     customization: {
+       paymentMethods: {
+         mercadoPago: 'all',
+       },
+     },
+     callbacks: {
+       onReady: () => {
+         /*
+           Callback llamado cuando Brick está listo
+           Aquí puedes ocultar loadings de su sitio, por ejemplo.
+         */
+       },
+       onSubmit: ({ selectedPaymentMethod, formData }) => {
+         // callback llamado al hacer clic en el botón de envío de datos
+         // en este caso, el usuario fue redirigido a
+         // la página de Mercado Pago para realizar el pago
+       },
+       onError: (error) => {
+         // callback llamado para todos los casos de error de Brick
+         console.error(error);
+       },
+     },
+   };
+   window.paymentBrickController = await bricksBuilder.create(
+     'payment',
+     'paymentBrick_container',
+     settings
+   );
+ };
+ renderPaymentBrick(bricksBuilder);
 </script>
 </body>
 </html>
 ```
 
-> Los pagos con **Cuenta de Mercado Pago** no necesitan ser enviados a través del backend. Si el usuario selecciona esta opción como medio de pago, el `preferenceId` enviado en la inicialización del Brick es el encargado de redirigir al comprador al sitio web de Mercado Pago, donde el pago se realizará directamente en nuestro sitio. Para redirigir al comprador a tu sitio, puede configurar `back_urls` como se describe [en este artículo.](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/preferences#bookmark_redirigir_al_comprador_a_tu_sitio_web)
+----[mla, mlb, mlu, mco, mlc, mpe]---- 
+> Los pagos con **Cuenta de Mercado Pago y Cuotas sin tarjeta** no necesitan ser enviados a través del backend. Si el usuario selecciona esta opción como medio de pago, el `preferenceId` enviado en la inicialización del Brick es el encargado de redirigir al comprador al sitio web de Mercado Pago, donde el pago se realizará directamente en nuestro sitio. Para redirigir al comprador a tu sitio, puede configurar `back_urls` como se describe [en este artículo.](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/preferences#bookmark_redirigir_al_comprador_a_tu_sitio_web)
+
+------------
+
+----[mlm]----
+> Los pagos con **Cuenta de Mercado Pago y Meses sin tarjeta** no necesitan ser enviados a través del backend. Si el usuario selecciona esta opción como medio de pago, el `preferenceId` enviado en la inicialización del Brick es el encargado de redirigir al comprador al sitio web de Mercado Pago, donde el pago se realizará directamente en nuestro sitio. Para redirigir al comprador a tu sitio, puede configurar `back_urls` como se describe [en este artículo.](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/preferences#bookmark_redirigir_al_comprador_a_tu_sitio_web)
+
+------------

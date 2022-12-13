@@ -1,4 +1,4 @@
-----[mla]---- 
+----[mla, mlb, mlu, mco, mlc, mpe]----
 # Pagos en cuotas sin tarjeta
 
 **Mercado Crédito** es el método de financiación de Mercado Pago que permite pagar en cuotas sin tarjeta.

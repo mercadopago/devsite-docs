@@ -1,6 +1,6 @@
-# Exemplo de código (Conta Mercado Pago)
+# Exemplo de código (Conta Mercado Pago e Parcelamento sem cartão de crédito)
  
-Para facilitar e otimizar o seu processo de integração, veja abaixo um exemplo completo de como incluir a Carteira Mercado Pago como meio de pagamento com o Payment Brick.
+Para facilitar e otimizar o seu processo de integração, veja abaixo um exemplo completo de como incluir a Conta Mercado Pago e Parcelamento sem cartão de crédito como meios de pagamento com o Payment Brick.
 
 > SERVER_SIDE
 >
@@ -389,42 +389,47 @@ curl -X POST \
 <div id="paymentBrick_container"></div>
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 <script>
-  const mp = new MercadoPago('YOUR_PUBLIC_KEY');
-  const bricksBuilder = mp.bricks();
-  const renderPaymentBrick = async (bricksBuilder) => {
-    const settings = {
-      initialization: {
-        amount: 100, // valor total a ser pago
-        preferenceId: '<PREFERENCE_ID>', // preferenceId gerado no backend
-      },
-      callbacks: {
-        onReady: () => {
-          /*
-            Callback chamado quando o Brick estiver pronto.
-            Aqui você pode ocultar loadings do seu site, por exemplo.
-          */
-        },
-        onSubmit: ({ selectedPaymentMethod, formData }) => {
-          // callback chamado ao clicar no botão de submissão dos dados
-            // nesse caso, o usuário foi redirecionado para
-            // a página do Mercado Pago para fazer o pagamento
-        },
-        onError: (error) => {
-          // callback chamado para todos os casos de erro do Brick
-          console.error(error);
-        },
-      },
-    };
-    window.paymentBrickController = await bricksBuilder.create(
-      'payment',
-      'paymentBrick_container',
-      settings
-    );
-  };
-  renderPaymentBrick(bricksBuilder);
+ const mp = new MercadoPago('YOUR_PUBLIC_KEY');
+ const bricksBuilder = mp.bricks();
+ const renderPaymentBrick = async (bricksBuilder) => {
+   const settings = {
+     initialization: {
+       amount: 100, // valor total a ser pago
+       preferenceId: '<PREFERENCE_ID>', // preferenceId gerado no backend
+     },
+     customization: {
+       paymentMethods: {
+         mercadoPago: 'all',
+       },
+     },
+     callbacks: {
+       onReady: () => {
+         /*
+           Callback chamado quando o Brick estiver pronto.
+           Aqui você pode ocultar loadings do seu site, por exemplo.
+         */
+       },
+       onSubmit: ({ selectedPaymentMethod, formData }) => {
+         // callback chamado ao clicar no botão de submissão dos dados
+         // nesse caso, o usuário foi redirecionado para
+         // a página do Mercado Pago para fazer o pagamento
+       },
+       onError: (error) => {
+         // callback chamado para todos os casos de erro do Brick
+         console.error(error);
+       },
+     },
+   };
+   window.paymentBrickController = await bricksBuilder.create(
+     'payment',
+     'paymentBrick_container',
+     settings
+   );
+ };
+ renderPaymentBrick(bricksBuilder);
 </script>
 </body>
 </html>
 ```
 
-> Os pagamentos com **Conta Mercado Pago** não precisam ser enviados via backend. Caso o usuário selecione esta opção como meio de pagamento, a `preferenceId` enviada na inicialização do Brick é responsável por redirecionar o comprador ao site do Mercado Pago, onde será feito o pagamento diretamente em nosso site. Para redirecionar o comprador de volta para o seu site, você pode configurar as `back_urls` como descrito [neste artigo.](/developers/pt/docs/checkout-bricks/payment-brick/additional-customization/preferences#bookmark_redirecione_o_comprador_para_o_seu_site)
+> Os pagamentos com **Conta Mercado Pago e Parcelamento sem cartão de crédito** não precisam ser enviados via backend. Caso o usuário selecione esta opção como meio de pagamento, a `preferenceId` enviada na inicialização do Brick é responsável por redirecionar o comprador ao site do Mercado Pago, onde será feito o pagamento diretamente em nosso site. Para redirecionar o comprador de volta para o seu site, você pode configurar as `back_urls` como descrito [neste artigo.](/developers/pt/docs/checkout-bricks/payment-brick/additional-customization/preferences#bookmark_redirecione_o_comprador_para_o_seu_site)

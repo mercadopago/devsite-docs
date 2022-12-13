@@ -8,7 +8,7 @@ Para facilitar e otimizar o seu processo de integração, veja abaixo um exemplo
 >
 > Crie sua preferência 
 
-> Necessário para Conta Mercado Pago.
+> Necessário para Conta Mercado Pago e Parcelamento sem cartão de crédito. 
 
 ----[mla, mlb, mlu, mpe, mlm]----
 [[[
@@ -376,99 +376,220 @@ curl -X POST \
 >
 > Configure a integração
 
+----[mla, mlm, mlu, mco, mlc, mpe]---- 
 ```html
 <!DOCTYPE html>
 <html lang="en">
+ 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bricks</title>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Bricks</title>
 </head>
+ 
 <body>
-  <div id="paymentBrick_container"></div>
-  <script src="https://sdk.mercadopago.com/js/v2"></script>
-  <script>
-    const mp = new MercadoPago('YOUR_PUBLIC_KEY');
-    const bricksBuilder = mp.bricks();
-    const renderPaymentBrick = async (bricksBuilder) => {
-      const settings = {
-        initialization: {
-          /*
-            "amount" é o valor total a ser pago
-            por todos os meios de pagamento com exceção da Conta Mercado Pago,
-            que tem seu valor de processamento determinado no backend através do "preferenceId"
-          */
-          amount: 100, // valor do processamento a ser realizado
-          preferenceId: '<PREFERENCE_ID>', // preferenceId gerado no backend
-        },
-        customization: {
-          paymentMethods: {
-            creditCard: 'all',
-            debitCard: 'all',
-            ticket: 'all',
-          },
-        },
-        callbacks: {
-          onReady: () => {
-            /*
-              Callback chamado quando o Brick estiver pronto.
-              Aqui você pode ocultar loadings do seu site, por exemplo.
-            */
-          },
-          onSubmit: ({ selectedPaymentMethod, formData }) => {
-            // callback chamado ao clicar no botão de submissão dos dados
-
-            return new Promise((resolve, reject) => {
-              let url = undefined;
-
-              if (selectedPaymentMethod === 'credit_card' || selectedPaymentMethod === 'debit_card') {
-                url = 'process_payment_card';
-              } else if (selectedPaymentMethod === 'ticket') {
-                url = 'process_payment_ticket';
-              }
-
-              if (url) {
-                fetch(url, {
-                  method: "POST",
-                  headers: {
-                    "Content-Type": "application/json",
-                  },
-                  body: JSON.stringify(formData)
-                })
-                  .then((response) => {
-                    // receber o resultado do pagamento
-                    resolve();
-                  })
-                  .catch((error) => {
-                    // lidar com a resposta de erro ao tentar criar o pagamento
-                    reject();
-                  })
-              } else if (selectedPaymentMethod === 'wallet_purchase') {
-                // wallet_purchase (Conta Mercado Pago) não precisa ser enviado pelo backend
-                resolve();
-              } else {
-                reject();
-              }
-            });
-          },
-          onError: (error) => {
-            // callback chamado para todos os casos de erro do Brick
-            console.error(error);
-          },
-        },
-      };
-      window.paymentBrickController = await bricksBuilder.create(
-        'payment',
-        'paymentBrick_container',
-        settings
-      );
-    };
-    renderPaymentBrick(bricksBuilder);
-  </script>
+ <div id="paymentBrick_container"></div>
+ <script src="https://sdk.mercadopago.com/js/v2"></script>
+ <script>
+   const mp = new MercadoPago('YOUR_PUBLIC_KEY');
+   const bricksBuilder = mp.bricks();
+   const renderPaymentBrick = async (bricksBuilder) => {
+     const settings = {
+       initialization: {
+         /*
+           "amount" é o valor total a ser pago por todos os meios de pagamento
+           com exceção da Conta Mercado Pago e Parcelamento sem cartão de crédito,
+           que tem seu valor de processamento determinado no backend através do "preferenceId"
+         */
+         amount: 100, // valor do processamento a ser realizado
+         preferenceId: '<PREFERENCE_ID>', // preferenceId gerado no backend
+       },
+       customization: {
+         paymentMethods: {
+           creditCard: 'all',
+           debitCard: 'all',
+           ticket: 'all',
+           mercadoPago: 'all',
+         },
+       },
+       callbacks: {
+         onReady: () => {
+           /*
+             Callback chamado quando o Brick estiver pronto.
+             Aqui você pode ocultar loadings do seu site, por exemplo.
+           */
+         },
+         onSubmit: ({ selectedPaymentMethod, formData }) => {
+           // callback chamado ao clicar no botão de submissão dos dados
+ 
+           return new Promise((resolve, reject) => {
+             let url = undefined;
+ 
+             if (selectedPaymentMethod === 'credit_card' || selectedPaymentMethod === 'debit_card') {
+               url = 'process_payment_card';
+             } else if (selectedPaymentMethod === 'ticket') {
+               url = 'process_payment_ticket';
+             }
+ 
+             if (url) {
+               fetch(url, {
+                 method: "POST",
+                 headers: {
+                   "Content-Type": "application/json",
+                 },
+                 body: JSON.stringify(formData)
+               })
+                 .then((response) => {
+                   // receber o resultado do pagamento
+                   resolve();
+                 })
+                 .catch((error) => {
+                   // lidar com a resposta de erro ao tentar criar o pagamento
+                   reject();
+                 })
+             } else if (
+               selectedPaymentMethod === 'wallet_purchase' ||
+               selectedPaymentMethod === 'onboarding_credits'
+             ) {
+               /*
+                 wallet_purchase (Conta Mercado Pago) e
+                 onboarding_credits (Parcelamento sem cartão de crédito)
+                 não precisa ser enviado pelo backend
+		           */
+               resolve();
+             } else {
+               reject();
+             }
+           });
+         },
+         onError: (error) => {
+           // callback chamado para todos os casos de erro do Brick
+           console.error(error);
+         },
+       },
+     };
+     window.paymentBrickController = await bricksBuilder.create(
+       'payment',
+       'paymentBrick_container',
+       settings
+     );
+   };
+   renderPaymentBrick(bricksBuilder);
+ </script>
+</body>
+ 
+</html>
+```
+------------
+----[mlb]----
+```html
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Bricks</title>
+</head>
+ 
+<body>
+ <div id="paymentBrick_container"></div>
+ <script src="https://sdk.mercadopago.com/js/v2"></script>
+ <script>
+   const mp = new MercadoPago('YOUR_PUBLIC_KEY');
+   const bricksBuilder = mp.bricks();
+   const renderPaymentBrick = async (bricksBuilder) => {
+     const settings = {
+       initialization: {
+         /*
+           "amount" é o valor total a ser pago por todos os meios de pagamento
+           com exceção da Conta Mercado Pago e Parcelamento sem cartão de crédito,
+           que tem seu valor de processamento determinado no backend através do "preferenceId"
+         */
+         amount: 100, // valor do processamento a ser realizado
+         preferenceId: '<PREFERENCE_ID>', // preferenceId gerado no backend
+       },
+       customization: {
+         paymentMethods: {
+           creditCard: 'all',
+           debitCard: 'all',
+           ticket: 'all',
+           bankTransfer: 'all',
+           mercadoPago: 'all',
+         },
+       },
+       callbacks: {
+         onReady: () => {
+           /*
+             Callback chamado quando o Brick estiver pronto.
+             Aqui você pode ocultar loadings do seu site, por exemplo.
+           */
+         },
+         onSubmit: ({ selectedPaymentMethod, formData }) => {
+           // callback chamado ao clicar no botão de submissão dos dados
+ 
+           return new Promise((resolve, reject) => {
+             let url = undefined;
+ 
+             if (selectedPaymentMethod === 'credit_card' || selectedPaymentMethod === 'debit_card') {
+               url = 'process_payment_card';
+             } else if (selectedPaymentMethod === 'bank_transfer') {
+               url = 'process_payment_pix';
+             } else if (selectedPaymentMethod === 'ticket') {
+               url = 'process_payment_ticket';
+             }
+ 
+             if (url) {
+               fetch(url, {
+                 method: "POST",
+                 headers: {
+                   "Content-Type": "application/json",
+                 },
+                 body: JSON.stringify(formData)
+               })
+                 .then((response) => {
+                   // receber o resultado do pagamento
+                   resolve();
+                 })
+                 .catch((error) => {
+                   // lidar com a resposta de erro ao tentar criar o pagamento
+                   reject();
+                 })
+             } else if (
+               selectedPaymentMethod === 'wallet_purchase' ||
+               selectedPaymentMethod === 'onboarding_credits'
+             ) {
+               /*
+                 wallet_purchase (Conta Mercado Pago) e
+                 onboarding_credits (Parcelamento sem cartão de crédito)
+                 não precisa ser enviado pelo backend
+		           */
+               resolve();
+             } else {
+               reject();
+             }
+           });
+         },
+         onError: (error) => {
+           // callback chamado para todos os casos de erro do Brick
+           console.error(error);
+         },
+       },
+     };
+     window.paymentBrickController = await bricksBuilder.create(
+       'payment',
+       'paymentBrick_container',
+       settings
+     );
+   };
+   renderPaymentBrick(bricksBuilder);
+ </script>
 </body>
 </html>
 ```
+------------
 
 > SERVER_SIDE
 >
@@ -476,7 +597,7 @@ curl -X POST \
 >
 > Enviar pagamento ao Mercado Pago
 
-> Os pagamentos com **Conta Mercado Pago** não precisam ser enviados via backend. Caso o usuário selecione esta opção como meio de pagamento, a `preferenceId` enviada na inicialização do Brick é responsável por redirecionar o comprador ao site do Mercado Pago, onde será feito o pagamento diretamente em nosso site. Para redirecionar o comprador de volta para o seu site, você pode configurar as `back_urls` como descrito [neste artigo.](/developers/pt/docs/checkout-bricks/payment-brick/additional-customization/preferences#bookmark_redirecione_o_comprador_para_o_seu_site)
+> Os pagamentos com **Conta Mercado Pago e Parcelamento sem cartão de crédito** não precisam ser enviados via backend. Caso o usuário selecione esta opção como meio de pagamento, a `preferenceId` enviada na inicialização do Brick é responsável por redirecionar o comprador ao site do Mercado Pago, onde será feito o pagamento diretamente em nosso site. Para redirecionar o comprador de volta para o seu site, você pode configurar as `back_urls` como descrito [neste artigo.](/developers/pt/docs/checkout-bricks/payment-brick/additional-customization/preferences#bookmark_redirecione_o_comprador_para_o_seu_site)
 
 * Para o endpoint `/process_payment_card`:
 

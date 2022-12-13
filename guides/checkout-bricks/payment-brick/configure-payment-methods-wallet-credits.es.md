@@ -1,16 +1,38 @@
-# Configurar la integración con Cuenta de Mercado Pago
+----[mla, mlb, mlu, mco, mlc, mpe]---- 
+# Configurar la integración con Cuenta de Mercado Pago y Cuotas sin tarjeta
 
-Para configurar la integración de Payment Brick para recibir pagos con la Cuenta de Mercado Pago debe seguir los pasos a continuación. 
+Para configurar la integración de Payment Brick para recibir pagos con la **Cuenta de Mercado Pago y Cuotas sin tarjeta** debe seguir los pasos a continuación. 
 
 1. [Crear preferencia](#bookmark_crear_preferencia)
 2. [Crear container](#bookmark_crear_container)
 3. [Incluir y configurar la librería MercadoPago.js](#bookmark_incluir_y_configurar_la_librería_mercadopago.js)
 4. [Instanciar Brick](#bookmark_instanciar_brick)
 5. [Renderizar Brick](#bookmark_renderizar_brick)
+6. [Administrar opciones de pago](#bookmark_administrar_opciones_de_pago)
 
 > Los pasos se realizan en el backend o frontend. Las etiquetas **Client-Side** y **Server-Side** ubicadas inmediatamente al lado del título lo ayudan a identificar qué paso se realiza en qué instancia. <br/></br>
 > <br/></br>
-> Y, para ayudar, hemos preparado un [ejemplo de código](/developers/es/docs/checkout-bricks/payment-brick/code-example/wallet) completo de la configuración de Payment Brick con la Cuenta de Mercado Pago que puede usar como modelo.
+> Y, para ayudar, hemos preparado un [ejemplo de código](/developers/es/docs/checkout-bricks/payment-brick/code-example/wallet-credits) completo de la configuración de Payment Brick con la **Cuenta de Mercado Pago y Cuotas sin tarjeta** que puede usar como modelo.
+
+------------
+
+----[mlm]----
+# Configurar la integración con Cuenta de Mercado Pago y Meses sin tarjeta
+
+Para configurar la integración de Payment Brick para recibir pagos con la **Cuenta de Mercado Pago Y Meses sin tarjeta** debe seguir los pasos a continuación. 
+
+1. [Crear preferencia](#bookmark_crear_preferencia)
+2. [Crear container](#bookmark_crear_container)
+3. [Incluir y configurar la librería MercadoPago.js](#bookmark_incluir_y_configurar_la_librería_mercadopago.js)
+4. [Instanciar Brick](#bookmark_instanciar_brick)
+5. [Renderizar Brick](#bookmark_renderizar_brick)
+6. [Administrar opciones de pago](#bookmark_administrar_opciones_de_pago)
+
+> Los pasos se realizan en el backend o frontend. Las etiquetas **Client-Side** y **Server-Side** ubicadas inmediatamente al lado del título lo ayudan a identificar qué paso se realiza en qué instancia. <br/></br>
+> <br/></br>
+> Y, para ayudar, hemos preparado un [ejemplo de código](/developers/es/docs/checkout-bricks/payment-brick/code-example/wallet-credits) completo de la configuración de Payment Brick con la **Cuenta de Mercado Pago Y Meses sin tarjeta** que puede usar como modelo.
+
+------------
 
 > SERVER_SIDE
 >
@@ -452,17 +474,22 @@ const renderPaymentBrick = async (bricksBuilder) => {
    amount: 100, // monto a ser pago
    preferenceId: '<PREFERENCE_ID>', // preferenceId generado en el backend
  },
+ customization: {
+   paymentMethods: {
+     mercadoPago: 'all',
+   },
+ },
  callbacks: {
    onReady: () => {
-     /*
+      /*
        Callback llamado cuando Brick está listo
        Aquí puedes ocultar loadings de su sitio, por ejemplo.
-     */
+      */
    },
    onSubmit: ({ selectedPaymentMethod, formData }) => {
      // callback llamado al hacer clic en el botón de envío de datos
-      // en este caso, el usuario fue redirigido a
-      // la página de Mercado Pago para realizar el pago
+     // en este caso, el usuario fue redirigido a
+     // la página de Mercado Pago para realizar el pago
    },
    onError: (error) => {
      // callback llamado para todos los casos de error de Brick
@@ -470,8 +497,7 @@ const renderPaymentBrick = async (bricksBuilder) => {
    },
  },
 };
- 
- window.paymentBrickController = await bricksBuilder.create(
+  window.paymentBrickController = await bricksBuilder.create(
    'payment',
    'paymentBrick_container',
    settings
@@ -506,3 +532,64 @@ El resultado de renderizar el Brick debe ser como la imagen de abajo:
 ![payment-Brick-wallet-mco-mpe](checkout-bricks/payment-brick-wallet-mco-mpe-es.png)
 
 ------------
+
+> CLIENT_SIDE
+>
+> h2
+>
+> Administrar opciones de pago
+
+----[mla, mlb, mlu, mco, mlc, mpe]---- 
+Vea a continuación el fragmento de código responsable de incluir pagos con **Cuenta de Mercado Pago y Cuota sin tarjeta de crédito** como medio de pago.
+
+```Javascript
+settings = {
+ ...,
+ customization: {
+   ...,
+   paymentMethods: {
+     ...,
+     mercadoPago: 'all',
+   }
+ }
+}
+```
+
+La propiedade `mercadoPago` acepta 2 tipos de variables, `string` y `string[]`. En el ejemplo anterior se aceptarán pagos con **Cuenta de Mercado Pago y Cuotas sin tarjeta**.
+
+------------
+
+----[mlm]----
+Vea a continuación el fragmento de código responsable de incluir pagos con **Cuenta de Mercado Pago y Meses sin tarjeta de crédito** como medio de pago.
+
+```Javascript
+settings = {
+ ...,
+ customization: {
+   ...,
+   paymentMethods: {
+     ...,
+     mercadoPago: 'all',
+   }
+ }
+}
+```
+
+La propiedade `mercadoPago` acepta 2 tipos de variables, `string` y `string[]`. En el ejemplo anterior se aceptarán pagos con **Cuenta de Mercado Pago y Meses sin tarjeta**.
+
+------------
+
+Si desea seleccionar una de las dos opciones, en lugar de la string `all`, puede pasar un array con solo con los medios deseados (`wallet_purchase` o `onboarding_credits`). Como en el ejemplo a continuación, donde solo se aceptarán pagos 
+
+```Javascript
+settings = {
+ ...,
+ customization: {
+   ...,
+   paymentMethods: {
+     ...,
+     mercadoPago: ['wallet_purchase'], // ['onboarding_credits']
+   }
+ }
+}
+```

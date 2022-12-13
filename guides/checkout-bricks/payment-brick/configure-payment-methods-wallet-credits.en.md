@@ -1,6 +1,6 @@
-# Configure the integration with Mercado Pago Wallet
+# Configure the integration with Mercado Pago Wallet and Installments without card
 
-To configure Payment Brick integration to receive payments with Mercado Pago Wallet you need to follow the steps below. 
+To configure Payment Brick integration to receive payments with **Mercado Pago Wallet and Installments without card** you need to follow the steps below. 
 
 1. [Create preference](#bookmark_create_preference)
 2. [Create container](#bookmark_create_container)
@@ -10,7 +10,7 @@ To configure Payment Brick integration to receive payments with Mercado Pago Wal
 
 > The steps are performed on the backend or frontend. The **Client-Side** and **Server-Side** pills located immediately next to the title help you to identify which step is performed in which instance. <br/></br>
 > <br/></br>
-> And, to help, we've prepared a complete [code example](/developers/en/docs/checkout-bricks/payment-brick/code-example/wallet) of the Payment Brick configuration with Mercado Pago Wallet that you can use as a template.
+> And, to help, we've prepared a complete [code example](/developers/en/docs/checkout-bricks/payment-brick/code-example/wallet-credits) of the Payment Brick configuration with **Mercado Pago Wallet and Installments without card** that you can use as a template.
 
 > SERVER_SIDE
 >
@@ -450,17 +450,22 @@ const renderPaymentBrick = async (bricksBuilder) => {
    amount: 100, // total amount to be paid
    preferenceId: '<PREFERENCE_ID>', // preferenceId generated in the backend
  },
+ customization: {
+   paymentMethods: {
+     mercadoPago: 'all',
+   },
+ },
  callbacks: {
    onReady: () => {
-     /*
+      /*
        Callback llamado cuando Brick está listo
        Aquí puedes ocultar loadings de su sitio, por ejemplo.
-     */
+      */
    },
    onSubmit: ({ selectedPaymentMethod, formData }) => {
      // callback called when clicking on the data submission button
-       // in this case, the user was redirected to
-       // the Mercado Pago page to make the payment
+     // in this case, the user was redirected to
+     // the Mercado Pago page to make the payment
    },
    onError: (error) => {
      // callback called for all Brick error cases
@@ -468,8 +473,7 @@ const renderPaymentBrick = async (bricksBuilder) => {
    },
  },
 };
- 
- window.paymentBrickController = await bricksBuilder.create(
+  window.paymentBrickController = await bricksBuilder.create(
    'payment',
    'paymentBrick_container',
    settings
@@ -504,3 +508,41 @@ The result of rendering the Brick should be like the image below:”
 ![payment-Brick-wallet-mco-mpe](checkout-bricks/payment-brick-wallet-mco-mpe-en.png)
 
 ------------
+
+> CLIENT_SIDE
+>
+> h2
+>
+> Gerenciar opções de pagamento
+
+O trecho de código responsável por incluir pagamentos com Carteira Mercado Pago e Parcelamento sem cartão de crédito como meio de pagamento é o seguinte:
+
+```Javascript
+settings = {
+ ...,
+ customization: {
+   ...,
+   paymentMethods: {
+     ...,
+     mercadoPago: 'all',
+   }
+ }
+}
+```
+
+A propriedade `mercadoPago` aceita 2 tipos de variável, `string` e `string[]`. No exemplo acima, serão aceitos pagamentos com **Carteira Mercado Pago e Parcelamento sem cartão de crédito**.
+
+Caso queira selecionar apenas uma das duas opções, ao invés da string `all`, você pode passar um array apenas com o meio desejado (`wallet_purchase` ou `onboarding_credits`). Como no exemplo abaixo, onde apenas serão aceitos pagamentos com Carteira Mercado Pago.
+
+```Javascript
+settings = {
+ ...,
+ customization: {
+   ...,
+   paymentMethods: {
+     ...,
+     mercadoPago: ['wallet_purchase'], // ['onboarding_credits']
+   }
+ }
+}
+```

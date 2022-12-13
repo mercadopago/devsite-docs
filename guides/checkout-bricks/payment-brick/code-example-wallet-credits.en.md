@@ -1,6 +1,6 @@
-# Code example (Mercado Pago Wallet)
+# Code example (Mercado Pago Wallet and Installments without card)
 
-To facilitate and optimize your integration process, check below a complete example of how to include the Mercado Pago Wallet as a means of payment with Payment Brick. 
+To facilitate and optimize your integration process, check below a complete example of how to include the Mercado Pago Wallet and Installments without card as a means of payment with Payment Brick. 
 
 > SERVER_SIDE
 >
@@ -389,42 +389,47 @@ curl -X POST \
 <div id="paymentBrick_container"></div>
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 <script>
-  const mp = new MercadoPago('YOUR_PUBLIC_KEY');
-  const bricksBuilder = mp.bricks();
-  const renderPaymentBrick = async (bricksBuilder) => {
-    const settings = {
-      initialization: {
-        amount: 100, // total amount to be paid
-        preferenceId: '<PREFERENCE_ID>', // preferenceId generated in the backend
-      },
-      callbacks: {
-        onReady: () => {
-          /*
-            Callback called when Brick is ready
-            Here you can hide loadings from your site, for example.
-          */
-        },
-        onSubmit: ({ selectedPaymentMethod, formData }) => {
-          // callback called when clicking on the data submission button
-            // in this case, the user was redirected to
-            // the Mercado Pago page to make the payment
-        },
-        onError: (error) => {
-          // callback called for all Brick error cases
-          console.error(error);
-        },
-      },
-    };
-    window.paymentBrickController = await bricksBuilder.create(
-      'payment',
-      'paymentBrick_container',
-      settings
-    );
-  };
-  renderPaymentBrick(bricksBuilder);
+ const mp = new MercadoPago('YOUR_PUBLIC_KEY');
+ const bricksBuilder = mp.bricks();
+ const renderPaymentBrick = async (bricksBuilder) => {
+   const settings = {
+     initialization: {
+       amount: 100, // total amount to be paid
+       preferenceId: '<PREFERENCE_ID>', // preferenceId generated in the backend
+     },
+     customization: {
+       paymentMethods: {
+         mercadoPago: 'all',
+       },
+     },
+     callbacks: {
+       onReady: () => {
+         /*
+           Callback llamado cuando Brick está listo
+           Aquí puedes ocultar loadings de su sitio, por ejemplo.
+         */
+       },
+       onSubmit: ({ selectedPaymentMethod, formData }) => {
+         // callback called when clicking on the data submission button
+         // in this case, the user was redirected to
+         // the Mercado Pago page to make the payment
+       },
+       onError: (error) => {
+         // callback called for all Brick error cases
+         console.error(error);
+       },
+     },
+   };
+   window.paymentBrickController = await bricksBuilder.create(
+     'payment',
+     'paymentBrick_container',
+     settings
+   );
+ };
+ renderPaymentBrick(bricksBuilder);
 </script>
 </body>
 </html>
 ```
 
-> Payments with **Mercado Pago Wallet** do not need to be sent via the backend. If the user selects this option as a means of payment, the `preferenceId` sent at the initialization of the Brick is responsible for redirecting the buyer to the Mercado Pago website, where the payment will be made directly on our website. To redirect the buyer back to your site, you can configure the `back_urls` as described [in this article.](/developers/en/docs/checkout-bricks/payment-brick/additional-customization/preferences#bookmark_redirect_the_buyer_to_your_site)
+> Payments with **Mercado Pago Wallet and Installments without card** do not need to be sent via the backend. If the user selects this option as a means of payment, the `preferenceId` sent at the initialization of the Brick is responsible for redirecting the buyer to the Mercado Pago website, where the payment will be made directly on our website. To redirect the buyer back to your site, you can configure the `back_urls` as described [in this article.](/developers/en/docs/checkout-bricks/payment-brick/additional-customization/preferences#bookmark_redirect_the_buyer_to_your_site)
