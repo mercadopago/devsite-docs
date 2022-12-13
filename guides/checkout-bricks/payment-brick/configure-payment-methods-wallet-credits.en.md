@@ -7,6 +7,7 @@ To configure Payment Brick integration to receive payments with **Mercado Pago W
 3. [Include and configure MercadoPago.js library](#bookmark_include_and_configure_mercadopago.js_library)
 4. [Instantiate Brick](#bookmark_instantiate_brick)
 5. [Render Brick](#bookmark_render_brick)
+6. [Manage payment options](#bookmark_manage_payment_options)
 
 > The steps are performed on the backend or frontend. The **Client-Side** and **Server-Side** pills located immediately next to the title help you to identify which step is performed in which instance. <br/></br>
 > <br/></br>
@@ -513,9 +514,9 @@ The result of rendering the Brick should be like the image below:”
 >
 > h2
 >
-> Gerenciar opções de pagamento
+> Manage payment options
 
-O trecho de código responsável por incluir pagamentos com Carteira Mercado Pago e Parcelamento sem cartão de crédito como meio de pagamento é o seguinte:
+The code snippet responsible for including payments with Mercado Pago Wallet and Installment without credit card as payment method is the following:
 
 ```Javascript
 settings = {
@@ -530,9 +531,9 @@ settings = {
 }
 ```
 
-A propriedade `mercadoPago` aceita 2 tipos de variável, `string` e `string[]`. No exemplo acima, serão aceitos pagamentos com **Carteira Mercado Pago e Parcelamento sem cartão de crédito**.
+The `mercadoPago` property accepts 2 types of variable, `string` and `string[]`. In the example above, payments with **Mercado Pago Wallet and Installment without credit card** will be accepted.
 
-Caso queira selecionar apenas uma das duas opções, ao invés da string `all`, você pode passar um array apenas com o meio desejado (`wallet_purchase` ou `onboarding_credits`). Como no exemplo abaixo, onde apenas serão aceitos pagamentos com Carteira Mercado Pago.
+If you only want to select one of the two options, instead of the string `all`, you can pass an array with just the desired medium (`wallet_purchase` or `onboarding_credits`). As in the example below, where only payments with Mercado Pago Wallet will be accepted.
 
 ```Javascript
 settings = {
