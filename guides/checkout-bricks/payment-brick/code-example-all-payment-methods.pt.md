@@ -8,7 +8,7 @@ Para facilitar e otimizar o seu processo de integração, veja abaixo um exemplo
 >
 > Crie sua preferência 
 
-> Necessário para Conta Mercado Pago e Parcelamento sem cartão de crédito. 
+> Necessário para Conta Mercado Pago e Parcelamento sem cartão. 
 
 ----[mla, mlb, mlu, mpe, mlm]----
 [[[
