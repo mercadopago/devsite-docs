@@ -25,9 +25,7 @@ Ao usar o simulador pela primeira vez, você precisará inserir suas chaves e se
 > Importante
 >
 > * Lembre-se que para usar o simulador você deve configurar um `access-token` de teste (`TEST-XXXXX-XXXXX-XXXXXXX`) e você pode obtê-lo em suas [integrações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/applications), opção **Minhas credenciais > Credenciais de teste**.
-> <br/>
-> * Para efetuar uma consulta de um pagamento efetuado pelo simulador através da [API de payments](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_id/get), deve-se utilizar o `access-token` de teste (o mesmo utilizado no simulador).
-> <br/>
+> * Para efetuar uma consulta de um pagamento efetuado pelo simulador através da [API de Pagamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_id/get), deve-se utilizar o `access-token` de teste (o mesmo utilizado no simulador).
 > * Se você for usar o modo dispositivo do simulador, lembre-se que deve colocar `X-Test-Scope:sandbox` no header para garantir que a tentativa de pagamento chegue ao dispositivo simulador.
 
 ### 2. Simule uma intenção de pagamento

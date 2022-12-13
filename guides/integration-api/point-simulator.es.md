@@ -23,11 +23,9 @@ Al utilizar el simulador por primera vez, deberás ingresar tus credenciales y s
 > WARNING
 >
 > Importante
->
+> 
 > * Recuerda que para utilizar el simulador debes configurar un `access-token` de prueba (`TEST-XXXXX-XXXXX-XXXXXXX`) y lo puedes obtener en tus [integraciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/applications), opción **Mis credenciales > Credenciales de prueba**.
-> <br/>
-> * Para consultar un pago realizado por el simulador a través de la [API de payments](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/get), debe utilizar el `access-token` de prueba  (el mismo que se usa en el simulador).
-> <br/>
+> * Para consultar un pago realizado por el simulador a través de la [API de Pagos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/get), debe utilizar el `access-token` de prueba  (el mismo que se usa en el simulador).
 > * Si vas a hacer uso del modo device del simulador recuerda debes poner en el  header `X-Test-Scope:sandbox` para lograr que en intento de pago llegue al dispositivo del simulador. 
 
 
