@@ -4,7 +4,7 @@
 >
 > Payment submission (other payment methods)
 
-To configure payments with **ticket**, send a **POST** with the following parameters to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post) and run the request or, if you prefer, use one of our SDKs below.
+To configure **payments with cash via ticket**, send a **POST** with the following parameters to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post) and run the request or, if you prefer, use one of our SDKs below.
 
 > NOTE
 >

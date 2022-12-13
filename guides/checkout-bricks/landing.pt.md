@@ -101,7 +101,7 @@ available_payments: credit, debit, mercadopago, rapipago, pagofacil
 ----[mlm]---- 
 
 ---
-available_payments: credit, debit, mercadopago, ticket, atm
+available_payments: credit, debit, mercadopago, efectivo, atm
 
 ---
 ------------

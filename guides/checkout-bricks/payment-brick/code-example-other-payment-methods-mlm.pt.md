@@ -1,6 +1,6 @@
 # Exemplo de código (outros meios de pagamento)
  
-Para facilitar e otimizar o seu processo de integração, veja abaixo um exemplo completo de como incluir **ticket** como meio de pagamento com o Payment Brick.
+Para facilitar e otimizar o seu processo de integração, veja abaixo um exemplo completo de como incluir **pagamento em dinheiro** como meio de pagamento com o Payment Brick.
 
 > CLIENT_SIDE
 >
@@ -33,14 +33,12 @@ Para facilitar e otimizar o seu processo de integração, veja abaixo um exemplo
        customization: {
          paymentMethods: {
            ticket: 'all',
+           atm: 'all',
          },
        },
        callbacks: {
          onReady: () => {
-           /*
-             Callback chamado quando o Brick estiver pronto.
-             Aqui você pode ocultar loadings do seu site, por exemplo.
-           */
+           // callback chamado quando o Brick estiver pronto
          },
          onSubmit: ({ selectedPaymentMethod, formData }) => {
            // callback chamado ao clicar no botão de submissão dos dados
@@ -64,7 +62,6 @@ Para facilitar e otimizar o seu processo de integração, veja abaixo um exemplo
          },
          onError: (error) => {
            // callback chamado para todos os casos de erro do Brick
-           console.error(error);
          },
        },
      };
