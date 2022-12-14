@@ -10,7 +10,7 @@ Alguns termos são novos e você pode não estar familiarizado com eles. Use est
 | Poi | Série do dispositivo. Você pode ver na parte de trás do seu dispositivo (SN, NS). |
 | Poi Type | Tipo de dispositivo. |
 | PDV | Ponto de venda.|
-| Self-service | Traduz-se como autoatendimento. É a prática onde o cliente pode fazer uso dos dispositivos de forma autónoma e autogerida. |
+| Self-service | Traduz-se como autoatendimento. É o modelo onde o cliente pode fazer uso dos dispositivos de forma autónoma e autogerida. |
 | Webhook | É uma notificação que é enviada do nosso servidor para o integrador através de uma chamada HTTP POST em relação às suas transações. |
 
 ## Possíveis status de uma intenção de pagamento
