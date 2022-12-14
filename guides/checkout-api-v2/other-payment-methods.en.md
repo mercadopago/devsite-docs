@@ -1,7 +1,7 @@
 # Other payment methods
 
 ----[mlb]----
-With Mercado Pago's Checkout API, it is possible to offer, in addition to card and Pix, **payments via boleto bancário and pagamento em lotérica**.
+With Mercado Pago's Checkout API, it is possible to offer, in addition to card, Pix and payments via boleto bancário, **pagamentos em lotérica**.
 ------------
 
 ----[mla]----
@@ -87,7 +87,7 @@ curl -X GET \
 ]]]
 
 ----[mlb]----
-To offer **Boleto Bancário** and/or **Pagamento em lotérica**, follow the steps below.
+To offer **Pagamento em lotérica**, follow the steps below.
 ------------
 
 ----[mla]----
@@ -145,7 +145,7 @@ const mp = new MercadoPago('YOUR_PUBLIC_KEY');
 With the MercadoPago.js library included, add the payment form below to your project to ensure the secure capture of buyer data. In this step, it is important to use the list you consulted to obtain the available payment methods to create the payment options you want to offer.
 
 
-[[[[
+[[[
 ```html
 
   <form id="form-checkout" action="/process_payment" method="post">
@@ -237,7 +237,7 @@ elem.appendChild(tempOptions);
 When finalizing the inclusion of the payment form and obtaining the types of documents, it is necessary to forward the buyer's email, type and document number, the payment method used and the details of the amount to be paid using our Payments API or one of our SDKs.
 
 ----[mlb]----
-To configure payments with **Boleto Bancário** or **Pagamento em lotérica**, send a **POST** with the following parameters to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post) and run the request or, if you prefer, use one of our SDKs below.
+To configure **Pagamento em lotérica**, send a **POST** with the following parameters to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post) and run the request or, if you prefer, use one of our SDKs below.
 
 
 > WARNING
@@ -248,7 +248,6 @@ To configure payments with **Boleto Bancário** or **Pagamento em lotérica**, s
 
 | Payment Type | Parameter | Value |
 | --- | --- | --- |
-| Boleto | `payment_method_id` | `bolbradesco` |
 | Lottery payment | `payment_method_id` | `pec` |
 
 [[[
@@ -262,7 +261,7 @@ MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
 $payment = new MercadoPago\Payment();
 $payment->transaction_amount = 100;
 $payment->description = "Product title";
-$payment->payment_method_id = "bolbradesco";
+$payment->payment_method_id = "pec";
 $payment->payer = array(
 "email" => "test@test.com",
 "first_name" => "Test",
@@ -292,7 +291,7 @@ Mercadopago.configurations.setAccessToken(config.access_token);
 var payment_data = {
 transaction_amount: 100,
 description: 'Product title',
-payment_method_id: 'bolbradesco',
+payment_method_id: 'pec',
 payer: {
 email: 'test@test.com',
 first_name: 'Test',
@@ -326,7 +325,7 @@ PaymentCreateRequest paymentCreateRequest =
 PaymentCreateRequest.builder()
 .transactionAmount(new BigDecimal("100"))
 .description("Product Title")
-.paymentMethodId("bolbradesco")
+.paymentMethodId("pec")
 .dateOfExpiration(OffsetDateTime.of(2023, 1, 10, 10, 10, 10, 0, ZoneOffset.UTC))
 .payer(
 PaymentPayerRequest.builder()
@@ -347,7 +346,7 @@ sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 payment_request = {
 transaction_amount: 100,
 description: 'Product title',
-payment_method_id: 'bolbradesco',
+payment_method_id: 'pec',
 payer: {
 email: 'test@test.com',
 first_name: 'Test',
@@ -384,7 +383,7 @@ var request = new PaymentCreateRequest
 {
 TransactionAmount = 105,
 Description = "Product Title",
-PaymentMethodId = "bolbradesco",
+PaymentMethodId = "pec",
 Payer = new PaymentPayerRequest
 {
 Email = "test@test.com",
@@ -409,7 +408,7 @@ sdk = Mercadopago.SDK("ENV_ACCESS_TOKEN")
 payment_data = {
 "transaction_amount": 100,
 "description": "Product title",
-"payment_method_id": "bolbradesco",
+"payment_method_id": "pec",
 "payer": {
 "email": "test@test.com",
 "first_name": "Test",
@@ -441,7 +440,7 @@ curl -X POST \
 -d '{
 "transaction_amount": 100,
 "description": "Product title",
-"payment_method_id": "bolbradesco",
+"payment_method_id": "pec",
 "payer": {
 "email": "test@test.com",
 "first_name": "Test",
@@ -498,7 +497,7 @@ The response will show the **pending status** until the buyer completes the paym
 
 ## Expiration date
 
-The default expiration date for payments with boleto is 3 days. Optionally, it is possible to change this date by sending the `date_of_expiration` field in the payment creation request, defining a period between 1 and 30 days from the boleto issuance date.
+The default expiration date for **pagamento em lotérica** is 4 days. Optionally, it is possible to change this date by sending the `date_of_expiration` field in the payment creation request, defining a period between 1 and 30 days from the boleto issuance date.
 
 To change the expiration date, use one of the codes available below.
 
@@ -548,13 +547,13 @@ The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
 ```
 ]]]
 
-The time for payments with boleto approval is up to 48 working hours. Therefore, set the expiration date to a minimum of 3 days to ensure that the payment is made.
+The time for payment approval is 1 hour. Therefore, set the expiration date to a minimum of 4 days to ensure that the payment is made.
 
 > WARNING
 >
 > Important
 >
-> If the boleto is paid after the expiration date, the amount will be refunded to the payer's Mercado Pago account.
+> If the payment is made after the expiration date, the amount will be refunded to the payer's Mercado Pago account.
 
 ## Cancel payment
 

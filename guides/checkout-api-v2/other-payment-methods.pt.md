@@ -1,7 +1,7 @@
 # Outros meios de pagamento
 
 ----[mlb]----
-Com o Checkout Transparente do Mercado Pago, é possível oferecer, além de cartão e Pix, **pagamentos através de boleto bancário e pagamento em lotérica**.
+Com o Checkout Transparente do Mercado Pago, é possível oferecer, além de cartão, Pix e boleto bancário, **pagamentos em lotérica**.
 ------------
 
 ----[mla]----
@@ -87,7 +87,8 @@ curl -X GET \
 ]]]
 
 ----[mlb]----
-Para oferecer pagamentos com **boleto bancário** e/ou **pagamento em lotérica**, siga as etapas abaixo.
+Para oferecer **pagamento em lotérica**, siga as etapas abaixo.
+
 ------------
 
 ----[mla]----
@@ -236,7 +237,7 @@ Incluindo o elemento do tipo `select` com o id: `id = docType` que está no form
 Ao finalizar a inclusão do formulário de pagamento e obter os tipos de documento, é necessário encaminhar o e-mail do comprador, tipo e número de documento, o meio de pagamento utilizado e o detalhe do valor a ser pago utilizando nossa API de Pagamentos ou um de nossos SDKs.
 
 ----[mlb]----
-Para configurar pagamentos com **boleto bancário** ou **pagamento em lotérica**, envie um POST com os seguintes parâmetros ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, utilize um de nossos SDKs abaixo.
+Para configurar **pagamento em lotérica**, envie um POST com os seguintes parâmetros ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, utilize um de nossos SDKs abaixo.
 
 
 > WARNING
@@ -247,7 +248,6 @@ Para configurar pagamentos com **boleto bancário** ou **pagamento em lotérica*
 
 | Tipo de pagamento  | Parâmetro  | Valor  |
 | --- | --- | --- |
-| Boleto  | `payment_method_id`  | `bolbradesco`  |
 | Pagamento em lotérica  | `payment_method_id`  | `pec`  |
 
 [[[
@@ -261,7 +261,7 @@ Para configurar pagamentos com **boleto bancário** ou **pagamento em lotérica*
  $payment = new MercadoPago\Payment();
  $payment->transaction_amount = 100;
  $payment->description = "Título do produto";
- $payment->payment_method_id = "bolbradesco";
+ $payment->payment_method_id = "pec";
  $payment->payer = array(
      "email" => "test@test.com",
      "first_name" => "Test",
@@ -291,7 +291,7 @@ mercadopago.configurations.setAccessToken(config.access_token);
 var payment_data = {
   transaction_amount: 100,
   description: 'Título do produto',
-  payment_method_id: 'bolbradesco',
+  payment_method_id: 'pec',
   payer: {
     email: 'test@test.com',
     first_name: 'Test',
@@ -325,7 +325,7 @@ PaymentCreateRequest paymentCreateRequest =
    PaymentCreateRequest.builder()
        .transactionAmount(new BigDecimal("100"))
        .description("Título do produto")
-       .paymentMethodId("bolbradesco")
+       .paymentMethodId("pec")
        .dateOfExpiration(OffsetDateTime.of(2023, 1, 10, 10, 10, 10, 0, ZoneOffset.UTC))
        .payer(
            PaymentPayerRequest.builder()
@@ -346,7 +346,7 @@ sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 payment_request = {
   transaction_amount: 100,
   description: 'Título do produto',
-  payment_method_id: 'bolbradesco',
+  payment_method_id: 'pec',
   payer: {
     email: 'test@test.com',
     first_name: 'Test',
@@ -383,7 +383,7 @@ var request = new PaymentCreateRequest
 {
     TransactionAmount = 105,
     Description = "Título do produto",
-    PaymentMethodId = "bolbradesco",
+    PaymentMethodId = "pec",
     Payer = new PaymentPayerRequest
     {
         Email = "test@test.com",
@@ -408,7 +408,7 @@ sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
 payment_data = {
     "transaction_amount": 100,
     "description": "Título do produto",
-    "payment_method_id": "bolbradesco",
+    "payment_method_id": "pec",
     "payer": {
         "email": "test@test.com",
         "first_name": "Test",
@@ -440,7 +440,7 @@ curl -X POST \
     -d '{
       "transaction_amount": 100,
       "description": "Título do produto",
-      "payment_method_id": "bolbradesco",
+      "payment_method_id": "pec",
       "payer": {
         "email": "test@test.com",
         "first_name": "Test",
@@ -497,7 +497,7 @@ A resposta mostrará o **status pendente** até que o comprador realize o pagame
 
 ## Data de vencimento
 
-A data de vencimento padrão para pagamentos com boleto é de 3 dias. Opcionalmente, é possível alterar essa data enviando o campo `date_of_expiration` na requisição de criação do pagamento definindo um período entre 1 e 30 dias a partir da data de emissão do boleto. 
+A data de vencimento padrão para pagamentos em lotéricas é de 4 dias. Opcionalmente, é possível alterar essa data enviando o campo `date_of_expiration` na requisição de criação do pagamento definindo um período entre 1 e 30 dias a partir da data de emissão do boleto.
 
 Para alterar a data de vencimento, utilize um dos códigos disponíveis abaixo. 
 
@@ -547,13 +547,13 @@ A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ```
 ]]]
 
-O prazo de aprovação do boleto é de até 48h úteis. Por isso, configure a data de expiração com no mínimo 3 dias para garantir que o pagamento seja abonado.
+O prazo de aprovação do pagamento em lotéricas é de 1h. Por isso, configure a data de expiração com no mínimo 4 dias para garantir que o pagamento seja abonado.
 
 > WARNING
 >
 > Importante
 >
-> Caso o boleto seja pago depois da data de expiração, o valor será estornado na conta do Mercado Pago do pagador.
+> Caso o pagamento seja efetuado após o vencimento, o valor será estornado na conta do Mercado Pago do pagador.
 
 ## Cancelar pagamento
 

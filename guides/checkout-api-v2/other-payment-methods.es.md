@@ -1,7 +1,7 @@
 # Otros medios de pago
 
 ----[mlb]----
-Con el Checkout API de Mercado Pago, es posible ofrecer, además de tarjeta y Pix, **pagos vía boleto bancario y pago en agencias de lotería**.
+Con el Checkout API de Mercado Pago, es posible ofrecer, además de tarjeta, Pix y Boleto, **pagos en agencias de lotería**.
 ------------
 
 ----[mla]----
@@ -87,7 +87,7 @@ curl -X GET \
 ]]]
 
 ----[mlb]----
-Para ofrecer pagos con **boleto bancário** y/o **pago en agencias de lotería**, sigue las siguientes etapas.
+Para ofrecer **pagos en agencias de lotería**, sigue las siguientes etapas.
 ------------
 
 ----[mla]----
@@ -241,13 +241,12 @@ function createSelectOptions(elem, options, labelsAndKeys = { label : "name", va
 Al finalizar la inclusión del formulario de pago y obtener los tipos de documentos, es necesario enviar el email del comprador, el tipo y número de documento, el medio de pago utilizado y el detalle del importe a pagar utilizando nuestra API de Pagos o uno de nuestros SDKs.
 
 ----[mlb]----
-Para configurar pagos con **boleto bancario** o **pago en agencia de lotería**, envía un POST con los siguientes parámetros al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) y ejecuta la solicitud o, si lo prefieres, utiliza uno de nuestros SDKs indicados a continuación.
+Para configurar **pagos en agencia de lotería**, envía un POST con los siguientes parámetros al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) y ejecuta la solicitud o, si lo prefieres, utiliza uno de nuestros SDKs indicados a continuación.
 
 
 | Tipo de pago  | Parámetro  | Valor  |
 | --- | --- | --- |
-| Boleto  | `payment_method_id`  | `bolbradesco`  |
-| Pago en agencia de loteria  | `payment_method_id`  | `pec`  |
+| Pago en agencia de lotería  | `payment_method_id`  | `pec`  |
 
 
 
@@ -268,7 +267,7 @@ Para configurar pagos con **boleto bancario** o **pago en agencia de lotería**,
  $payment = new MercadoPago\Payment();
  $payment->transaction_amount = 100;
  $payment->description = "Título del producto";
- $payment->payment_method_id = "bolbradesco";
+ $payment->payment_method_id = "pec";
  $payment->payer = array(
      "email" => "test@test.com",
      "first_name" => "Test",
@@ -298,7 +297,7 @@ mercadopago.configurations.setAccessToken(config.access_token);
 var payment_data = {
   transaction_amount: 100,
   description: 'Título del producto',
-  payment_method_id: 'bolbradesco',
+  payment_method_id: 'pec',
   payer: {
     email: 'test@test.com',
     first_name: 'Test',
@@ -332,7 +331,7 @@ PaymentCreateRequest paymentCreateRequest =
    PaymentCreateRequest.builder()
        .transactionAmount(new BigDecimal("100"))
        .description("Título del producto")
-       .paymentMethodId("bolbradesco")
+       .paymentMethodId("pec")
        .dateOfExpiration(OffsetDateTime.of(2023, 1, 10, 10, 10, 10, 0, ZoneOffset.UTC))
        .payer(
            PaymentPayerRequest.builder()
@@ -353,7 +352,7 @@ sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 payment_request = {
   transaction_amount: 100,
   description: 'Título del producto',
-  payment_method_id: 'bolbradesco',
+  payment_method_id: 'pec',
   payer: {
     email: 'test@test.com',
     first_name: 'Test',
@@ -390,7 +389,7 @@ var request = new PaymentCreateRequest
 {
     TransactionAmount = 105,
     Description = "Título del producto",
-    PaymentMethodId = "bolbradesco",
+    PaymentMethodId = "pec",
     Payer = new PaymentPayerRequest
     {
         Email = "test@test.com",
@@ -415,7 +414,7 @@ sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
 payment_data = {
     "transaction_amount": 100,
     "description": "Título del producto",
-    "payment_method_id": "bolbradesco",
+    "payment_method_id": "pec",
     "payer": {
         "email": "test@test.com",
         "first_name": "Test",
@@ -447,7 +446,7 @@ curl -X POST \
     -d '{
       "transaction_amount": 100,
       "description": "Título del producto",
-      "payment_method_id": "bolbradesco",
+      "payment_method_id": "pec",
       "payer": {
         "email": "test@test.com",
         "first_name": "Test",
@@ -505,9 +504,9 @@ La respuesta mostrará el **status pendiente** hasta que el comprador realice el
 
 ## Fecha de vencimiento
 
-La fecha de vencimiento predeterminada para los pagos de boletos es de 3 días. Opcionalmente, es posible cambiar esta fecha enviando el campo `date_of_expiration` en la solicitud de creación del pago, definiendo un plazo entre 1 y 30 días a partir de la fecha de emisión del boleto.
+La fecha de vencimiento predeterminada para los pagos en agencia de lotería es de 4 días. Opcionalmente, es posible cambiar esta fecha enviando el campo `date_of_expiration` en la solicitud de creación del pago, definiendo un plazo entre 1 y 30 días a partir de la fecha de emisión del boleto.
 
-Para cambiar la fecha de vencimiento, utilice uno de los códigos disponibles a continuación.
+Para cambiar la fecha de vencimiento, utiliza uno de los códigos disponibles a continuación.
 
 [[[
 ```php
@@ -555,21 +554,21 @@ La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ```
 ]]]
 
-El tiempo para la aprobación del boleto es de hasta 48 horas hábiles. Por lo tanto, establezca la fecha de vencimiento en un mínimo de 3 días para asegurarse de que se pague el pago.
+El tiempo para la aprobación del boleto es de 1 hora. Igualmente, establece la fecha de vencimiento en un mínimo de 4 días para asegurarte de que el pago se efectúe.
 
 
 > WARNING
 >
 > Importante
 >
-> Si el boleto se paga después de la fecha de vencimiento, el monto se devolverá a la cuenta de Mercado Pago del pagador.
+> Si el pago se realiza después de la fecha de vencimiento, el monto se devolverá a la cuenta de Mercado Pago del pagador.
 
 ## Cancelar pago
 
 
 Para evitar problemas de facturación, es importante cancelar los pagos expirados. Además, ten en cuenta que **es posible cancelar solo los pagos que están pendientes o en proceso**. Si un pago vence dentro de los 30 días, la cancelación es automática y el estado final del pago será "cancelado" o "expirado".
 
-Para obtener más información, consulte la sección [Reembolsos y cancelaciones](/developers/es/docs/checkout-api/payment-management/cancellations-and-refunds).
+Para obtener más información, consulta la sección [Reembolsos y cancelaciones](/developers/es/docs/checkout-api/payment-management/cancellations-and-refunds).
 
 
 
