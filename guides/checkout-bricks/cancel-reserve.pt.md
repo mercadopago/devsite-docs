@@ -1,4 +1,4 @@
-# Cancelar reserva
+# Cancele a reserva
 
 O cancelamento de uma reserva ocorre quando, por algum motivo, o pagamento de uma compra não é aprovado e a reserva do valor precisa retornar para o limite do cartão do cliente ou quando um comprador desiste da compra. Para mais informações sobre reembolsos e cancelamentos de pagamentos, veja a seção [Reembolsos e cancelamentos](/developers/pt/docs/checkout-bricks/payment-management/cancellations-and-refunds).
 

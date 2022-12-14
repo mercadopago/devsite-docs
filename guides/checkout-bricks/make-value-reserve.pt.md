@@ -1,4 +1,4 @@
-# Reservar valores
+# Reserve valores
 
 Uma reserva de valores acontece quando uma compra é realizada e seu montante é reservado do limite total do cartão, garantindo que o valor fique guardado até a conclusão do processamento.
 

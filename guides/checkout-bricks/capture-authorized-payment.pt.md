@@ -1,4 +1,4 @@
-# Capturar pagamento autorizado
+# Capture pagamento autorizado
 
 A finalização de um pagamento acontece após a captura do pagamento autorizado, o que significa que o valor reservado para a compra pode ser debitado do cartão. 
 

@@ -1,4 +1,4 @@
-# Reservar fondos
+# Reserva fondos
 
 Una reserva de fondos ocurre cuando se realiza una compra y se reserva su monto del límite total de la tarjeta, asegurando que el valor se mantenga hasta la finalización del procesamiento.
 
