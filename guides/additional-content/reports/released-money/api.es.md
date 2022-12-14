@@ -728,6 +728,11 @@ request(options, callback);
 
 Recibirás como respuesta un `HTTP STATUS 202 (Accepted)` si no se encuentra ningún error, y el reporte se generará de manera asincrónica.
 
+----[mlm, mla, mco, mpe, mlu, mlc]----
+Una respuesta `HTTP STATUS 203 (Non-Authoritative Information)` indica que la solicitud es la esperada, sin embargo, no fue posible crear tu reporte y será necesario solicitarlo nuevamente con las fechas que te indique el sistema.
+
+------------
+
 ### 2. Consulta
 
 Consulta a la API para ver si la generación de reportes quedó lista:

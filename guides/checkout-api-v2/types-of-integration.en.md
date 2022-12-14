@@ -2,11 +2,32 @@
 
 The integration with Checkout API can be done by using different procedures that vary according to technical knowledge and business needs. See the table below for details on each of the available options.
 
+----[mlb]---- 
 | Integration type | Payment methods | Frontend complexity | User Interface (UI) |
 | --- | --- | --- | --- |
-| [Checkout Bricks](/developers/en/docs/checkout-bricks/landing) | Debit and Credit | Easy | Components with UI already defined and that can be customized if necessary. |
+| [Checkout Bricks](/developers/en/docs/checkout-bricks/landing) | Credit, the Caixa virtual debit card, Pix, boleto, payment in lottery and Mercado Pago Wallet. | Easy | Components with UI already defined and that can be customized if necessary. |
 | [Cardform](/developers/en/docs/checkout-api/integration-configuration/card/integrate-via-cardform) | All available methods | Medium | Form without styling so it is possible to start the settings from scratch. |
 | [Core Methods](/developers/en/docs/checkout-api/integration-configuration/card/integrate-via-core-methods) | All available methods | High | Create your form and styling |
+
+------------
+
+----[mla]---- 
+| Integration type | Payment methods | Frontend complexity | User Interface (UI) |
+| --- | --- | --- | --- |
+| [Checkout Bricks](/developers/en/docs/checkout-bricks/landing) | Credit, debit, Pago Fácil, Rapipago and Mercado Pago Wallet | Easy | Components with UI already defined and that can be customized if necessary. |
+| [Cardform](/developers/en/docs/checkout-api/integration-configuration/card/integrate-via-cardform) | All available methods | Medium | Form without styling so it is possible to start the settings from scratch. |
+| [Core Methods](/developers/en/docs/checkout-api/integration-configuration/card/integrate-via-core-methods) | All available methods | High | Create your form and styling |
+
+------------
+
+----[mlm, mpe, mco, mlu, mlc]---- 
+| Integration type | Payment methods | Frontend complexity | User Interface (UI) |
+| --- | --- | --- | --- |
+| [Checkout Bricks](/developers/en/docs/checkout-bricks/landing) | Credit, debit and Mercado Pago Wallet | Easy | Components with UI already defined and that can be customized if necessary. |
+| [Cardform](/developers/en/docs/checkout-api/integration-configuration/card/integrate-via-cardform) | All available methods | Medium | Form without styling so it is possible to start the settings from scratch. |
+| [Core Methods](/developers/en/docs/checkout-api/integration-configuration/card/integrate-via-core-methods) | All available methods | High | Create your form and styling |
+
+------------
 
 The three types of integration mentioned above are eligible for **PCI SAQ A certification**. This is because **card data**, **CVV** and **expiration date** travel through an iframe directly to Mercado Pago servers, which prevent PCI data (card number, security code and expiration date) from being accessible to third parties.
 
