@@ -33,7 +33,7 @@ En las siguientes secciones, vea cómo enviar a Mercado Pago pagos realizados co
 
 ----[mlm]----
 * [Tarjetas](/developers/es/docs/checkout-bricks/payment-brick/payment-submission/cards)
-* [Cuenta de Mercado Pago y Meses sin tarjeta](/developers/es/docs/checkout-bricks/payment-brick/payment-submission/wallet-credits)
+* [Cuenta de Mercado Pago y Meses sin tarjeta de crédito](/developers/es/docs/checkout-bricks/payment-brick/payment-submission/wallet-credits)
 * [Otros medios de pago](/developers/es/docs/checkout-bricks/payment-brick/payment-submission/other-payment-methods/mexico)
 ------------
 
