@@ -16,9 +16,9 @@ Para configurar la integración de Payment Brick para recibir pagos con la **Cue
 
 ------------
 ----[mlm]----
-# Configurar la integración con Cuenta de Mercado Pago y Meses sin tarjeta
+# Configurar la integración con Cuenta de Mercado Pago y Meses sin tarjeta de crédito
 
-Para configurar la integración de Payment Brick para recibir pagos con la **Cuenta de Mercado Pago Y Meses sin tarjeta** debe seguir los pasos a continuación. 
+Para configurar la integración de Payment Brick para recibir pagos con la **Cuenta de Mercado Pago Y Meses sin tarjeta de crédito** debe seguir los pasos a continuación. 
 
 1. [Crear preferencia](#bookmark_crear_preferencia)
 2. [Crear container](#bookmark_crear_container)
@@ -29,7 +29,7 @@ Para configurar la integración de Payment Brick para recibir pagos con la **Cue
 
 > Los pasos se realizan en el backend o frontend. Las etiquetas **Client-Side** y **Server-Side** ubicadas inmediatamente al lado del título lo ayudan a identificar qué paso se realiza en qué instancia. <br/></br>
 > <br/></br>
-> Y, para ayudar, hemos preparado un [ejemplo de código](/developers/es/docs/checkout-bricks/payment-brick/code-example/wallet-credits) completo de la configuración de Payment Brick con la **Cuenta de Mercado Pago Y Meses sin tarjeta** que puede usar como modelo.
+> Y, para ayudar, hemos preparado un [ejemplo de código](/developers/es/docs/checkout-bricks/payment-brick/code-example/wallet-credits) completo de la configuración de Payment Brick con la **Cuenta de Mercado Pago Y Meses sin tarjeta de crédito** que puede usar como modelo.
 
 ------------
 
@@ -393,7 +393,7 @@ La propiedade `mercadoPago` acepta 2 tipos de variables, `string` y `string[]`. 
 ------------
 
 ----[mlm]----
-Vea a continuación el fragmento de código responsable de incluir pagos con **Cuenta de Mercado Pago y Meses sin tarjeta** como medio de pago.
+Vea a continuación el fragmento de código responsable de incluir pagos con **Cuenta de Mercado Pago y Meses sin tarjeta de crédito** como medio de pago.
 
 ```Javascript
 settings = {
@@ -408,7 +408,7 @@ settings = {
 }
 ```
 
-La propiedade `mercadoPago` acepta 2 tipos de variables, `string` y `string[]`. En el ejemplo anterior se aceptarán pagos con **Cuenta de Mercado Pago y Meses sin tarjeta**.
+La propiedade `mercadoPago` acepta 2 tipos de variables, `string` y `string[]`. En el ejemplo anterior se aceptarán pagos con **Cuenta de Mercado Pago y Meses sin tarjeta de crédito**.
 
 ------------
 

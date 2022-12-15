@@ -6,9 +6,9 @@ Para facilitar y optimizar su proceso de integración, ve a continuación un eje
 ------------
 
 ----[mlm]----
-# Ejemplo de código (Cuenta de Mercado Pago y Meses sin tarjeta)
+# Ejemplo de código (Cuenta de Mercado Pago y Meses sin tarjeta de crédito)
 
-Para facilitar y optimizar su proceso de integración, ve a continuación un ejemplo completo de cómo incluir la Cuenta de Mercado Pago y Meses sin tarjeta como medios de pago con Payment Brick. 
+Para facilitar y optimizar su proceso de integración, ve a continuación un ejemplo completo de cómo incluir la Cuenta de Mercado Pago y Meses sin tarjeta de crédito como medios de pago con Payment Brick. 
 
 ------------
 
@@ -264,6 +264,6 @@ curl -X POST \
 ------------
 
 ----[mlm]----
-> Los pagos con **Cuenta de Mercado Pago y Meses sin tarjeta** no necesitan ser enviados a través del backend. Si el usuario selecciona esta opción como medio de pago, el `preferenceId` enviado en la inicialización del Brick es el encargado de redirigir al comprador al sitio web de Mercado Pago, donde el pago se realizará directamente en nuestro sitio. Para redirigir al comprador a tu sitio, puede configurar `back_urls` como se describe [en este artículo.](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/preferences#bookmark_redirigir_al_comprador_a_tu_sitio_web)
+> Los pagos con **Cuenta de Mercado Pago y Meses sin tarjeta de crédito** no necesitan ser enviados a través del backend. Si el usuario selecciona esta opción como medio de pago, el `preferenceId` enviado en la inicialización del Brick es el encargado de redirigir al comprador al sitio web de Mercado Pago, donde el pago se realizará directamente en nuestro sitio. Para redirigir al comprador a tu sitio, puede configurar `back_urls` como se describe [en este artículo.](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/preferences#bookmark_redirigir_al_comprador_a_tu_sitio_web)
 
 ------------
