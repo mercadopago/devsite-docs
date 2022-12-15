@@ -2,16 +2,28 @@
 
 O self homologator é a ferramenta em que você poderá **medir a qualidade da sua aplicação**, sendo possível identificar pontos de melhoria em sua integração para deixá-la de acordo com os padrões do Mercado Pago.
 
+----[mla, mlm, mlu, mco, mlc, mpe]---- 
 > WARNING
 >
 > Atenção
 >
-> Por enquanto, a ferramenta para medir a qualidade da integração só está disponível para integrações com o [Checkout Pro.](/developers/pt/docs/checkout-pro/landing)
+> Por enquanto, a ferramenta para medir a qualidade da integração só está disponível para integrações com o [Checkout Pro,](/developers/pt/docs/checkout-pro/landing) [Checkout API](/developers/pt/docs/checkout-api/landing) e [Checkout Bricks.](/developers/pt/docs/checkout-bricks/landing)
+
+------------
+
+----[mlb]---- 
+> WARNING
+>
+> Atenção
+>
+> Por enquanto, a ferramenta para medir a qualidade da integração só está disponível para integrações com o [Checkout Pro,](/developers/pt/docs/checkout-pro/landing) [Checkout Transparente](/developers/pt/docs/checkout-api/landing) e [Checkout Bricks.](/developers/pt/docs/checkout-bricks/landing)
+
+------------
 
 Para medir a qualidade sa sua aplicação, siga os passos abaixo.
 
 1. No [Devsite](/developers/pt/docs), acesse o menu **Suas integrações >** [Dashboard](https://mercadopago[FAKER][URL][DOMAIN]/developers/panel).
-2. Na área de [Suas aplicações](/developers/pt/guides/additional-content/dashboard/applications) do Dashboard, **clique no card** da aplicação desejada. 
+2. Na área de [Suas aplicações](/developers/pt/guides/additional-content/dashboard/applications) do Dashboard, **clique no card** da aplicação desejada. É necessário que seja uma aplicação em que haja um produto a ser integrado e que este seja um dos que a ferramenta de medição está disponível.
 3. Em seguida, clique em **Detalhes da pontuação** para acessar a ferramenta em que você poderá **medir a qualidade da sua aplicação** e visualizar a pontuação que indica o quanto a configuração da sua aplicação é segura e está alinhada com as boas práticas de integração do Mercado Pago. 
 4. Na tela "Qualidade da integração", clique em **Avaliar qualidade** e insira o `payment ID` de um pagamento feito com [credenciais](/developers/pt/guides/additional-content/credentials/credentials) de produção da aplicação em questão. Sempre que possível, mostraremos no campo de preenchimento o último `payment ID` produtivo que identificamos na aplicação em questão.
 

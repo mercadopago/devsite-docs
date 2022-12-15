@@ -73,7 +73,7 @@ Access button to the tool where you can **measure the quality of your applicatio
 >
 > Attention
 >
-> For now, the [integration quality](/developers/en/guides/additional-content/homologator/homologator) measuring tool is only available for integrations with [Checkout Pro](/developers/en/docs/checkout-pro/landing).
+> For now, the integration quality measuring tool is only available for integrations with [Checkout Pro,](/developers/en/docs/checkout-pro/landing) [Checkout API](/developers/en/docs/checkout-api/landing) and [Checkout Bricks.](/developers/en/docs/checkout-bricks/landing)
 
 #### My credentials 
 

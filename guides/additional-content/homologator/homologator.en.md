@@ -6,12 +6,12 @@ Self homologator is a tool where you can **measure the quality of your applicati
 >
 > Attention
 >
-> For now, the integration quality measuring tool is only available for integrations with [Checkout Pro.](/developers/en/docs/checkout-pro/landing)
+> For now, the integration quality measuring tool is only available for integrations with [Checkout Pro,](/developers/en/docs/checkout-pro/landing) [Checkout API](/developers/en/docs/checkout-api/landing) and [Checkout Bricks.](/developers/en/docs/checkout-bricks/landing)
 
 To measure the quality of your application, follow the steps below.
 
 1. In [Devsite](/developers/en/docs), access the menu **Your integrations >** [Dashboard](https://mercadopago[FAKER][URL][DOMAIN]/developers/panel)**.
-2. In the [Your applications](/developers/en/guides/additional-content/dashboard/applications) area of ​​the Dashboard, **click on the card** of the desired application.
+2. In the [Your applications](/developers/en/guides/additional-content/dashboard/applications) area of ​​the Dashboard, **click on the card** of the desired application. It must be an application in which there is a product to be integrated and that this is one of which the measurement tool is available.
 3. Then click on **Score details** to access the tool where you can **measure the quality of your application** and view the score that indicates how secure and aligned your application configuration is with the good practices of Mercado Pago integration.
 4. On the "Integration Quality" screen, click **Evaluate quality** and enter the `payment ID` of a payment made with production [credentials](/developers/en/guides/additional-content/credentials/credentials) of the application in question. Whenever possible, we will show in the field the last productive `payment ID` that we identified in the application in question.
 

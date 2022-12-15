@@ -70,11 +70,23 @@ A pontuação indica o quanto a configuração da sua aplicação é segura e es
 
 Botão de acesso à ferramenta em que você poderá **medir a qualidade da sua aplicação**, onde será possível identificar pontos de melhoria na sua integração e deixá-la de acordo com os padrões do Mercado Pago. Veja [Qualidade da integração](/developers/pt/guides/additional-content/homologator/homologator) para mais informações.
 
+----[mla, mlm, mlu, mco, mlc, mpe]---- 
 > WARNING
 >
 > Atenção
 >
-> Por enquanto, a ferramenta de medir a [qualidade da integração](/developers/pt/guides/additional-content/homologator/homologator) só está disponível para integrações com o [Checkout Pro](/developers/pt/docs/checkout-pro/landing).
+> Por enquanto, a ferramenta para medir a qualidade da integração só está disponível para integrações com o [Checkout Pro,](/developers/pt/docs/checkout-pro/landing) [Checkout API](/developers/pt/docs/checkout-api/landing) e [Checkout Bricks.](/developers/pt/docs/checkout-bricks/landing)
+
+------------
+
+----[mlb]---- 
+> WARNING
+>
+> Atenção
+>
+> Por enquanto, a ferramenta para medir a qualidade da integração só está disponível para integrações com o [Checkout Pro,](/developers/pt/docs/checkout-pro/landing) [Checkout Transparente](/developers/pt/docs/checkout-api/landing) e [Checkout Bricks.](/developers/pt/docs/checkout-bricks/landing)
+
+------------
 
 #### Minhas credenciais
 
