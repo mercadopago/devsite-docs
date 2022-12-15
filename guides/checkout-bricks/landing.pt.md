@@ -54,7 +54,7 @@ future_product_avaible:
  - card_description: Vincule carteiras digitais e permita pagamentos registrados.
  - card_link:
  - card_linkDescription:
- - card_pillText: EM BREVE
+ - card_pillText: DISPONÍVEL
  - card_avaible: false
  - card_icon: User
  - card_title: User Info Brick

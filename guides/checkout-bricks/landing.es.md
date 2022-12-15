@@ -54,7 +54,7 @@ future_product_avaible:
  - card_description: Vincula billeteras digitales y permite pagos logueados.
  - card_link:
  - card_linkDescription:
- - card_pillText: MUY PRONTO
+ - card_pillText: DISPONIBLE
  - card_avaible: false
  - card_icon: User
  - card_title: User Info Brick

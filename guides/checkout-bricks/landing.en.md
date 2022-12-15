@@ -54,7 +54,7 @@ future_product_avaible:
  - card_description: Link digital wallets and allow logged payments. 
  - card_link:
  - card_linkDescription:
- - card_pillText: SOON
+ - card_pillText: AVAILABLE
  - card_avaible: false
  - card_icon: User
  - card_title: User Info Brick
