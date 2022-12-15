@@ -2,7 +2,7 @@
 
 Gere manualmente o relatório de dinheiro ----[mla]----liquidado------------ ----[mlm, mlb, mlc, mco, mlu, mpe]----liberado------------ quantas vezes quiser ou programe-o de acordo com a frequência que você escolher por meio de nossa API.
 
-----[mco, mlc, mlu, mpe]----
+----[mco, mlc, mlu, mpe, mla, mlm]----
 > WARNING
 >
 > Importante
@@ -14,10 +14,6 @@ Gere manualmente o relatório de dinheiro ----[mla]----liquidado------------ ---
 
 Confira os campos que você pode configurar para ajustar suas preferências antes de começar:
 
-> WARNING
->
-> Importante
->
 > Configurar este atributo de `frequency` não significa que o relatório será gerado automaticamente. A configuração será aplicada somente quando o agendamento automático for ativado. Para mais detalhes, confira a seção [Agende seus relatórios.](#bookmark_agende_seus_relatórios_automáticos)
 
 | Campos configuráveis | Descrição |
