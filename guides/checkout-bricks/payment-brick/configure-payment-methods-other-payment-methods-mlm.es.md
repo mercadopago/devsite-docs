@@ -1,16 +1,16 @@
 # Configurar la integración con otros medios de pago
 
-Con el Checkout Bricks de Mercado Pago, es posible ofrecer, además de tarjeta, pagos vía **pagos con dinero en efectivo via ticket**.  
+Con el Checkout Bricks de Mercado Pago, es posible ofrecer, además de tarjeta, **pagos con dinero en efectivo via tickets**.  
 
 > NOTE
 >
 > Importante
 >
-> Para facilitar al comprador la visualización de los pagos con dinero en efectivo, el Brick muestra los puntos de pago (**7 Eleven**, **Santander** y **OXXO**) al usuario, en lugar de mostrar directamente las formas de pago (**paycash** y **citibanamex**). Esto permite al usuario tener una selección más clara de dónde puede pagar el ticket y mejorar la conversión.
+> Para facilitar al comprador la visualización de los pagos con dinero en efectivo, el Brick muestra los puntos de pago (Ejemplo: **7 Eleven**, **Santander**, **OXXO**, etc.) al usuario, en lugar de mostrar directamente las conexiones de pago (**Citibanamex**, **Paycash**, **BBVA** y **OXXO**). Esto permite al usuario tener una selección más clara de dónde puede pagar el ticket y mejorar la conversión.
 
 Para ofrecer **pagos con dinero en efectivo via ticket**, sigue los siguientes pasos. 
 
-> Si ya ha integrado los pagos con tarjeta, puede iniciar la integración desde el **paso 4**.
+> Si ya has integrado los pagos con tarjeta, puedes iniciar la integración desde el **paso 4**.
 
 1. [Crear container](#bookmark_crear_container)
 2. [Incluir y configurar la librería MercadoPago.js](#bookmark_incluir_y_configurar_la_librería_mercadopago.js)
@@ -151,7 +151,7 @@ El resultado de renderizar el Brick debe ser como la imagen de abajo:
 >
 > Los métodos de pago que se describen a continuación requieren que se complete la dirección, el nombre y los detalles del documento del comprador. Para una mejor experiencia de usuario, se recomienda que el integrador ya inicialice estos datos, por lo que no es necesario llenarlo manualmente. [Consulte aquí](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/initialize-data-on-the-bricks) cómo inicializar el bloque con estos datos ya completados.
 
-Para incluir **pagos con dinero en efectivo via ticket**, solo use la siguiente configuración:
+Para incluir **pagos con dinero en efectivo via ticket**, solo usa la siguiente configuración:
 
 ```Javascript
 settings = {

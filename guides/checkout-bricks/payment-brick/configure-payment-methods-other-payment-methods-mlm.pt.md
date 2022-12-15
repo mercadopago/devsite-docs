@@ -6,7 +6,7 @@ Com o Checkout Bricks do Mercado Pago, é possível oferecer, além de cartão, 
 >
 > Importante
 > 
-> Para facilitar a visualização dos pagamentos em dinheiro pelo comprador, o Brick mostra os pontos de pagamento (**7 Eleven**, **Santander** e **OXXO**) ao usuário, ao invés de mostrar diretamente os métodos de pagamento (**paycash** e **citibanamex**). Isso permite que o usuário tenha uma seleção mais clara de onde pode pagar o ticket e melhorar a conversão.
+> Para facilitar a visualização dos pagamentos em dinheiro pelo comprador, o Brick mostra os pontos de pagamento (Exemplo: **7 Eleven**, **Santander**, **OXXO**, etc.) ao usuário, ao invés de mostrar diretamente os métodos de pagamento (**Citibanamex**, **Paycash**, **BBVA** e **OXXO**). Isso permite que o usuário tenha uma seleção mais clara de onde pode pagar o ticket e melhorar a conversão.
 
 Para oferecer pagamentos em dinheiro, siga as etapas abaixo. 
 

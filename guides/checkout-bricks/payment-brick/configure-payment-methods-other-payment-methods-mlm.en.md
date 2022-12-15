@@ -6,7 +6,7 @@ With Mercado Pago's Checkout Bricks, it is possible to offer, in addition to car
 >
 > Important
 >
-> To make it easier for the buyer to view the payments with cash via ticket, Brick shows the payment points (**7 Eleven**, **Santander** and **OXXO**) to the user, instead of directly showing the payment methods (**paycash** and **citibanamex**). This allows the user to have a clearer selection of where they can pay the ticket and improves conversion.
+> To make it easier for the buyer to view the payments with cash via ticket, Brick shows the payment points (Example: **7 Eleven**, **Santander**, **OXXO**, etc.) to the user, instead of directly showing the payment methods (**Citibanamex**, **Paycash**, **BBVA** and **OXXO**). This allows the user to have a clearer selection of where they can pay the ticket and improves conversion.
 
 To offer **payments with cash via ticket**, follow the steps below. 
 
