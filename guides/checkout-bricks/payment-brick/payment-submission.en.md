@@ -20,24 +20,24 @@ In the following sections, check out how to send to Mercado Pago payments made w
 
 ----[mlb]----
 * [Cards](/developers/en/docs/checkout-bricks/payment-brick/payment-submission/cards)
-* [Mercado Pago Wallet](/developers/en/docs/checkout-bricks/payment-brick/payment-submission/wallet-credits)
+* [Mercado Pago Wallet and Installments without card](/developers/en/docs/checkout-bricks/payment-brick/payment-submission/wallet-credits)
 * [Pix](/developers/en/docs/checkout-bricks/payment-brick/payment-submission/pix)
 * [Other payment methods](/developers/en/docs/checkout-bricks/payment-brick/payment-submission/other-payment-methods/brasil)
 ------------
 
 ----[mla]----
 * [Cards](/developers/en/docs/checkout-bricks/payment-brick/payment-submission/cards)
-* [Mercado Pago Wallet](/developers/en/docs/checkout-bricks/payment-brick/payment-submission/wallet-credits)
+* [Mercado Pago Wallet and Installments without card](/developers/en/docs/checkout-bricks/payment-brick/payment-submission/wallet-credits)
 * [Other payment methods](/developers/en/docs/checkout-bricks/payment-brick/payment-submission/other-payment-methods/argentina)
 ------------
 
 ----[mlm]----
 * [Cards](/developers/en/docs/checkout-bricks/payment-brick/payment-submission/cards)
-* [Mercado Pago Wallet](/developers/en/docs/checkout-bricks/payment-brick/payment-submission/wallet-credits)
+* [Mercado Pago Wallet and Installments without card](/developers/en/docs/checkout-bricks/payment-brick/payment-submission/wallet-credits)
 * [Other payment methods](/developers/en/docs/checkout-bricks/payment-brick/payment-submission/other-payment-methods/mexico)
 ------------
 
 ----[mpe, mco, mlu, mlc]----
 * [Cards](/developers/en/docs/checkout-bricks/payment-brick/payment-submission/cards)
-* [Mercado Pago Wallet](/developers/en/docs/checkout-bricks/payment-brick/payment-submission/wallet-credits)
+* [Mercado Pago Wallet](/developers/en/docs/checkout-bricks/payment-brick/payment-submission/wallet)
 ------------
