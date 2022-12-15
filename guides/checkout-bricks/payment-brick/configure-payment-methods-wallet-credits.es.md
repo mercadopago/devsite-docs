@@ -412,7 +412,7 @@ La propiedade `mercadoPago` acepta 2 tipos de variables, `string` y `string[]`. 
 
 ------------
 
-Si desea seleccionar una de las dos opciones, en lugar de la string `all`, puede pasar un array con solo con los medios deseados (`wallet_purchase` o `onboarding_credits`). Como en el ejemplo a continuación, donde solo se aceptarán pagos 
+Si desea seleccionar una de las dos opciones, en lugar de la string `all`, puede pasar un array con solo con los medios deseados (`wallet_purchase` o `onboarding_credits`). Como en el ejemplo a continuación, donde solo se aceptarán pagos con Cuenta de Mercado Pago.
 
 ```Javascript
 settings = {
