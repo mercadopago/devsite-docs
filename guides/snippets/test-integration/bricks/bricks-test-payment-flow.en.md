@@ -12,3 +12,9 @@ With the credentials in hand, follow the steps below to make the test purchase.
 3. Confirm the purchase.
 
 Done! Once these steps are finished, the integration will be complete and you will be able to use your production credentials to use the Checkout Bricks.
+
+> WARNING
+>
+> Attention
+>
+> Do not use test user email into the Brick email field (if applicable).

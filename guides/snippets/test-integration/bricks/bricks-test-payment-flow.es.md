@@ -12,3 +12,9 @@ Con las credenciales configuradas, siga los pasos a continuación para realizar 
 3. Confirma la compra.
 
 ¡Listo! Una vez que se completen estos pasos, la integración estará completa y podrá usar sus credenciales de producción para usar el Checkout Bricks.
+
+> WARNING
+>
+> Atención
+>
+> No use el correo electrónico de usuario de prueba en el campo de correo electrónico del Brick (si corresponde).
