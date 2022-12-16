@@ -2,9 +2,9 @@
 >
 > h1
 >
-> Modificar textos
+> Cambiar textos
 
-| - | Brick |
+| - | Descripción |
 | --- | --- |
 | Momento de personalización  | Al renderizar el Brick  |
 | Propiedad  | customization.visual.texts.{cardNumber, cardExpirationDate, cardSecurityCode, cardholderName, cardholderIdentification, cardholderEmail, formTitle, emailSectionTitle, installmentsSectionTitle, selectInstallments, formSubmit}  |
