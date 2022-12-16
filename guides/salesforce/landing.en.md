@@ -32,9 +32,17 @@ available_countries: mla, mlb, mlm, mlu, mlc, mco, mpe
 
 ---
 bullet_section_with_media: 
- - title: Start charging with card
+ - title: Receive payments with Checkout Pro
  - type: normal
- - message: Integrate the Mercado Pago Checkout API and receive payments with credit and debit cards.
+ - message: Integrate Mercado Pago in your Salesforce Commerce Cloud and redirect your shoppers to a Mercado Pago page to complete the checkout.
+ - image: /cow/cho-pro-landing__pt.png
+---
+
+---
+bullet_section_with_media: 
+ - title: Customize payments with Checkout API
+ - type: reversed
+ - message: Integrate the Mercado Pago Checkout API and receive payments with credit and debit cards, without the need to redirect to a page outside your store.
  - image: /shopify/mini-landing-1.png
 ---
 
@@ -44,45 +52,89 @@ bullet_section_with_media:
 
 ---
 bullet_section_with_media: 
- - title: Start charging with card
+ - title: Receive payments with Checkout Pro
  - type: normal
- - message: Integrate the Mercado Pago Transparent Checkout and receive payments with credit and debit cards.
+ - message: Integrate Mercado Pago in your Salesforce Commerce Cloud and redirect your shoppers to a Mercado Pago page to complete the checkout.
+ - image: /cow/cho-pro-landing__pt.png
+---
+
+---
+bullet_section_with_media: 
+ - title: Customize payments with Transparent Checkout
+ - type: reversed
+ - message: Integrate the Mercado Pago Transparent Checkout and receive payments with credit and debit cards, without the need to redirect to a page outside your store.
  - image: /shopify/mini-landing-1.png
 ---
 
 ---
 bullet_section_with_media: 
  - title: Receive payments with Pix
- - type: reversed
+ - type: normal
  - message: With Mercado Pago, receive transfers immediately with Pix.
  - image: /shopify/mini-landing-4.png
 ---
 
 ------------
 
+--- mini_landing_separator ---
+
+
+>>>> Accepted payment types <<<<
+
+
 ----[mlb]----
 
---- mini_landing_separator ---
-
->>>> Accepted payment types <<<<
 ---
-available_payments: mercadopago, credit, debit, pix
+available_payments: credit, debit, mercadopago, boleto, pix, pec, moneda, cartera
 
 ---
-
-> For details of accepted payment methods in each country, check the full list with [payment methods availability.](/developers/en/docs/sales-processing/payment-methods)
-
 ------------
 
-----[mla, mlm, mlu, mpe, mco, mlc]----
---- mini_landing_separator ---
+----[mla]---- 
 
->>>> Accepted payment types <<<<
+---
+available_payments: credit, debit, mercadopago, efectivo, atm
+
+----
+------------
+
+----[mlm]---- 
+
+---
+available_payments: credit, debit, mercadopago, efectivo, atm, moneda
+
+----
+------------
+
+----[mlu]---- 
+
+---
+available_payments: credit, efectivo
+
+----
+------------
+
+----[mco]---- 
+
+---
+available_payments: mercadopago, pse, credit, debit, cartera, efectivo
+
+----
+------------
+
+----[mlc]---- 
+
 ---
 available_payments: mercadopago, credit, debit
 
----
-
-> For details of accepted payment methods in each country, check the full list with [payment methods availability.](/developers/en/docs/sales-processing/payment-methods)
-
+----
 ------------
+
+----[mpe]---- 
+
+---
+available_payments: mercadopago, atm, credit, debit
+
+----
+------------
+> For details of accepted payment methods in each country, check the full list with [payment methods availability](/developers/en/docs/sales-processing/payment-methods).
