@@ -7,7 +7,7 @@ To make a t purchase, you must use the **test credentials** of your **production
 With the credentials in hand, follow the steps below to make the test purchase.
 
 1. Start the integration configured with the **Test credentials**.
-2. Enter your e-mail (remembering that it must be different from the email you use on Mercado Pago).
+2. Enter any email as a paying user (remembering that it must be different from the email you use on Mercado Pago).
 4. Enter data from one of our [test cards](/developers/en/guides/additional-content/testing/test-cards).
 3. Confirm the purchase.
 

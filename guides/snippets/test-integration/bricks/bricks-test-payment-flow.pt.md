@@ -7,7 +7,7 @@ Para realizar uma compra teste é preciso utilizar as **credenciais de teste** d
 Com as credenciais em mãos, siga os passos abaixo para realizar a compra teste.
 
 1. Inicie a integração configurada com as **credenciais de teste**.
-2. Insira um e-mail (lembrando que deve ser diferente do e-mail que você utiliza no Mercado Pago).
+2. Insira qualquer e-mail como usuário pagador (lembrando que deve ser diferente do e-mail que você utiliza no Mercado Pago).
 4. Insira os dados de um dos nossos [cartões de teste](/developers/pt/guides/additional-content/testing/test-cards).
 3. Confirme a compra.
 
