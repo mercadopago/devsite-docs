@@ -52,9 +52,9 @@ future_product_avaible:
  - card_icon: Wallet
  - card_title: Wallet Brick
  - card_description: Vincula billeteras digitales y permite pagos logueados.
- - card_link: /developers/es/docs/checkout-bricks/wallet-brick/introduction
- - card_linkDescription: Saber más
- - card_pillText: DISPONIBLE
+ - card_link:
+ - card_linkDescription:
+ - card_pillText: MUY PRONTO
  - card_avaible: false
  - card_icon: User
  - card_title: User Info Brick
