@@ -52,14 +52,14 @@ future_product_avaible:
  - card_icon: Wallet
  - card_title: Wallet Brick
  - card_description: Link digital wallets and allow logged payments. 
- - card_link:
+ - card_link: /developers/en/docs/checkout-bricks/wallet-brick/introduction
  - card_linkDescription:
  - card_pillText: AVAILABLE
  - card_avaible: false
  - card_icon: User
  - card_title: User Info Brick
  - card_description: Collect the data of your clients and infer those that will be needed in the purchase process.
- - card_link:
+ - card_link: Learn more
  - card_linkDescription:
  - card_pillText: SOON
  - card_avaible: false

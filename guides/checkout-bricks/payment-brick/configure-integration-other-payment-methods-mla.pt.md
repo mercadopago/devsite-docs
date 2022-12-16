@@ -1,17 +1,18 @@
-# Configure a integração com cartões
+# Configure a integração com outros meios de pagamento
 
-Para configurar a integração do Payment Brick para receber pagamentos com cartões de crédito e débito você precisa seguir os passos abaixo.
+Com o Checkout Bricks do Mercado Pago, é possível oferecer, além de cartão, pagamentos através de **Rapipago** e **Pago Fácil**. Para oferecer pagamentos com **Rapipago** e **Pago Fácil**, siga as etapas abaixo. 
+
+> Caso já tenha integrado pagamentos via cartão, você pode iniciar a integração a partir da **etapa 4**.
 
 1. [Criar container](#bookmark_criar_container)
 2. [Incluir e configurar a biblioteca MercadoPago.js](#bookmark_incluir_e_configurar_a_biblioteca_mercadopago.js)
 3. [Instanciar Brick](#bookmark_instanciar_brick)
 4. [Renderizar Brick](#bookmark_renderizar_brick)
-5. [Gerenciar cartões de crédito e débito](#bookmark_gerenciar_cartões_de_crédito_e_débito)
-6. [Incluir cartões salvos](#bookmark_incluir_cartões_salvos)
+5. [Gerenciar outros meios de pagamento](#bookmark_gerenciar_outros_meios_de_pagamento)
 
 > Os passos são realizados no back-end ou no front-end. As pills **Client-Side** e **Server-Side** localizadas imediatamente ao lado do título te ajudam a identificar qual passo é realizado em qual instância. <br/></br>
 > <br/></br>
-> E, para ajudar, preparamos um [exemplo de código](/developers/pt/docs/checkout-bricks/payment-brick/code-example/cards) completo da configuração do Payment Brick com cartões que você pode usar como modelo.
+> E, para ajudar, preparamos um [exemplo de código](/developers/pt/docs/checkout-bricks/payment-brick/code-example/other-payment-methods/argentina) completo da configuração do Payment Brick com **Rapipago** e **Pago Fácil** que você pode usar como modelo.
 
 > CLIENT_SIDE
 >
@@ -72,7 +73,7 @@ const bricksBuilder = mp.bricks();
 >
 > Atenção
 >
-> Durante a instanciação do Brick, é possível que apareçam diferentes erros. Para detalhamento de cada um deles, veja a seção [Possíveis erros](/developers/pt/docs/checkout-bricks/additional-content/possible-errors).
+> Durante a instanciação do Brick, é possível que apareçam diferentes erros. Para detalhamento de cada um deles, veja a seção [Possíveis erros.](/developers/pt/docs/checkout-bricks/additional-content/possible-errors)
 
 > CLIENT_SIDE
 >
@@ -92,19 +93,19 @@ const renderPaymentBrick = async (bricksBuilder) => {
    },
    customization: {
      paymentMethods: {
-       creditCard: 'all',
-       debitCard: 'all',
+       ticket: 'all',
      },
    },
    callbacks: {
      onReady: () => {
        /*
-         Callback chamado quando o Brick estiver pronto.
-         Aqui você pode ocultar loadings do seu site, por exemplo.
+        Callback chamado quando o Brick estiver pronto.
+        Aqui você pode ocultar loadings do seu site, por exemplo.
        */
      },
      onSubmit: ({ selectedPaymentMethod, formData }) => {
        // callback chamado ao clicar no botão de submissão dos dados
+      
          return new Promise((resolve, reject) => {
            fetch("/processar-pago", {
              method: "POST",
@@ -122,6 +123,7 @@ const renderPaymentBrick = async (bricksBuilder) => {
                reject();
              })
          });
+       
      },
      onError: (error) => {
        // callback chamado para todos os casos de erro do Brick
@@ -140,7 +142,7 @@ renderPaymentBrick(bricksBuilder);
 
 O resultado de renderizar o Brick deve ser como na imagem abaixo:
 
-![payment-Brick](checkout-bricks/payment-brick-pt.png)
+![payment-Brick-other-payments-methods-mla](checkout-bricks/payment-brick-other-payments-methods-mla-pt.jpg) 
 
 > WARNING
 >
@@ -152,10 +154,17 @@ O resultado de renderizar o Brick deve ser como na imagem abaixo:
 >
 > h2
 >
-> Gerenciar cartões de crédito e débito
+> Gerenciar outros meios de pagamento
 
-O trecho de código responsável por incluir o cartão de crédito e débito como meio de pagamento é o seguinte:
+Para incluir pagamento via **Rapipago** e **Pago Fácil**, basta utilizar a seguinte configuração:
 
+> NOTE
+>
+> Importante
+>
+> Os meios de pagamento descritos abaixo necessitam que os dados de endereço, nome e documento do comprador sejam preenchidos. Para uma melhor experiência do usuário, é recomendável que o integrador já inicialize esses dados, assim não será necessário preencher manualmente. [Confira aqui](/developers/pt/docs/checkout-bricks/payment-brick/additional-customization/initialize-data-on-the-bricks) como inicializar o Brick com esses dados já preenchidos.
+
+[[[
 ```Javascript
 settings = {
   ...,
@@ -163,17 +172,18 @@ settings = {
     ...,
     paymentMethods: {
       ...,
-      creditCard: 'all',
-      debitCard: 'all'
+      ticket: 'all'
     }
   }
 }
 ```
+]]]
 
-As propriedades `creditCard` e `debitCard` aceitam 2 tipos de variável, `string` e `string[]`. No exemplo acima, serão aceitos pagamentos com cartões de crédito e débito de qualquer bandeira aceita pelo Mercado Pago.
+A propriedade `ticket` aceita 2 tipos de variável, `string` e `string[]`. No exemplo acima, serão aceitos pagamentos via **Rapipago** e **Pago Fácil**.
 
-Caso queira selecionar as bandeiras, ao invés da string `all`, você pode passar um array apenas com os IDs desejados. Como no exemplo abaixo, onde apenas serão aceitos os cartões de crédito **MASTER** e **VISA** e os cartões de débito **ELO**.
+Caso não queira permitir ambos os meios de pagamento, ao invés da string `all`, você pode passar um array apenas com os IDs desejados. Como no exemplo abaixo, onde é aceito apenas pagamento via **Pago Fácil**.
 
+[[[
 ```Javascript
 settings = {
   ...,
@@ -181,21 +191,19 @@ settings = {
     ...,
     paymentMethods: {
       ...,
-      creditCard: [ 'master', 'visa' ],
-      debitCard: [ 'debelo' ]
+      ticket: [ 'pagofacil' ]
     }
   }
 }
 ```
+]]]
 
-Para uma lista completa dos IDs que podem ser passados dentro do array, consulte a API de [Obter meios de pagamento](/developers/pt/reference/payment_methods/_payment_methods/get) em nossa API Reference.
+Nesse caso, como **Pago Fácil** é o único meio disponível, não será exibida a lista para seleção de onde pagar. 
+
+Caso deseje uma lista completa dos IDs que podem ser passados dentro do array, consulte a API de [Obter meios de pagamento](/developers/pt/reference/payment_methods/_payment_methods/get) em nossa API Reference. Para mais informações, consulte a [seção correspondente](/developers/pt/docs/checkout-bricks/additional-content/consult-payment-methods).
 
 > NOTE
 >
 > Importante
 > 
-> A resposta da API contém IDs de diversos `payment_type_id`. Os IDs aceitos pela propriedade `creditCard` são apenas os que contém `payment_type_id = 'credit_card'` e os IDs aceitos pela propriedade `debitCard` são apenas os que contém `payment_type_id = 'debit_card'`.
-
-## Incluir cartões salvos
-
-No Payment Brick é possível disponibilizar cartões salvos para os seus clientes. Para saber como incluir os cartões salvos, consulte a seção [Incluir cartões salvos](/developers/pt/docs/checkout-bricks/payment-brick/additional-customization/customers-cards).
+> A resposta da API contém IDs de diversos `payment_type_id`. Os IDs aceitos pela propriedade `ticket` são apenas os que contém `payment_type_id = 'ticket'`.

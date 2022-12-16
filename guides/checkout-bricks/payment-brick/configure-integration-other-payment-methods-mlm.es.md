@@ -1,8 +1,16 @@
 # Configurar la integración con otros medios de pago
 
-Con el Checkout Bricks de Mercado Pago, es posible ofrecer, además de tarjeta y Pix, pagos vía **boleto bancario** y pago en **agencias de lotería**.  Para ofrecer pagos con **boleto bancário** y pago en **agencias de lotería**, sigue los siguientes pasos. 
+Con el Checkout Bricks de Mercado Pago, es posible ofrecer, además de tarjeta, **pagos con dinero en efectivo via tickets**.  
 
-> Si ya ha integrado los pagos con tarjeta, puede iniciar la integración desde el **paso 4**.
+> NOTE
+>
+> Importante
+>
+> Para facilitar al comprador la visualización de los pagos con dinero en efectivo, el Brick muestra los puntos de pago (Ejemplo: **7 Eleven**, **Santander**, **OXXO**, etc.) al usuario, en lugar de mostrar directamente las conexiones de pago (**Citibanamex**, **Paycash**, **BBVA** y **OXXO**). Esto permite al usuario tener una selección más clara de dónde puede pagar el ticket y mejorar la conversión.
+
+Para ofrecer **pagos con dinero en efectivo via ticket**, sigue los siguientes pasos. 
+
+> Si ya has integrado los pagos con tarjeta, puedes iniciar la integración desde el **paso 4**.
 
 1. [Crear container](#bookmark_crear_container)
 2. [Incluir y configurar la librería MercadoPago.js](#bookmark_incluir_y_configurar_la_librería_mercadopago.js)
@@ -12,7 +20,7 @@ Con el Checkout Bricks de Mercado Pago, es posible ofrecer, además de tarjeta y
 
 > Los pasos se realizan en el backend o frontend. Las etiquetas **Client-Side** y **Server-Side** ubicadas inmediatamente al lado del título lo ayudan a identificar qué paso se realiza en qué instancia. <br/></br>
 > <br/></br>
-> Y para ayudar, hemos preparado un [ejemplo de código](/developers/es/docs/checkout-bricks/payment-brick/code-example/other-payment-methods/brasil) completo de la configuración de Payment Brick con **boleto bancário** y pago en **agencias de lotería** que puede usar como modelo.
+> Y para ayudar, hemos preparado un [ejemplo de código](/developers/es/docs/checkout-bricks/payment-brick/code-example/other-payment-methods/mexico) completo de la configuración de Payment Brick para **pagos con dinero en efectivo via ticket** que puede usar como modelo.
 
 > CLIENT_SIDE
 >
@@ -67,14 +75,14 @@ const mp = new MercadoPago('YOUR_PUBLIC_KEY');
 Con el container creado y la SDK JS instalada, el siguiente paso es instanciar el Brick builder, que permitirá generar el Brick. Para crear la instancia, inserta el código a continuación del paso anterior.
 
 ```javascript
-const bricksBuilder = mp.bricks();
+const bricksBuilder = mp.bricks(); 
 ```
 
 > WARNING
 >
 > Atención
 >
-> Durante la instanciación del Brick, es posible que aparezcan diferentes errores. Para más detalles sobre cada uno de ellos, consulta la sección [Posibles errores](/developers/es/docs/checkout-bricks/additional-content/possible-errors).
+> Durante la instanciación del Brick, es posible que aparezcan diferentes errores. Para más detalles sobre cada uno de ellos, consulta la sección [Posibles errores.](/developers/es/docs/checkout-bricks/additional-content/possible-errors)
 
 > CLIENT_SIDE
 >
@@ -99,10 +107,10 @@ const renderPaymentBrick = async (bricksBuilder) => {
    },
    callbacks: {
      onReady: () => {
-       /*
-         Callback llamado cuando Brick está listo.
-         Aquí puedes ocultar loadings de su sitio, por ejemplo.
-       */
+        /*
+          Callback llamado cuando Brick está listo.
+          Aquí puedes ocultar loadings de su sitio, por ejemplo.
+        */
      },
      onSubmit: ({ selectedPaymentMethod, formData }) => {
        // callback llamado al hacer clic en el botón de envío de datos
@@ -143,7 +151,7 @@ renderPaymentBrick(bricksBuilder);
 
 El resultado de renderizar el Brick debe ser como la imagen de abajo:
 
-![payment-Brick-other-payments-methods](checkout-bricks/payment-brick-other-payments-methods-es.png)
+![payment-Brick-other-payments-methods-mlm](checkout-bricks/payment-brick-other-payments-methods-mlm-es.jpg)
 
 > WARNING
 >
@@ -163,9 +171,8 @@ El resultado de renderizar el Brick debe ser como la imagen de abajo:
 >
 > Los métodos de pago que se describen a continuación requieren que se complete la dirección, el nombre y los detalles del documento del comprador. Para una mejor experiencia de usuario, se recomienda que el integrador ya inicialice estos datos, por lo que no es necesario llenarlo manualmente. [Consulte aquí](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/initialize-data-on-the-bricks) cómo inicializar el bloque con estos datos ya completados.
 
-Para incluir pagos con **boleto bancário** y pago en **agencias de lotería**, solo use la siguiente configuración:
+Para incluir **pagos con dinero en efectivo via ticket**, solo usa la siguiente configuración:
 
-[[[
 ```Javascript
 settings = {
   ...,
@@ -173,18 +180,19 @@ settings = {
     ...,
     paymentMethods: {
       ...,
-      ticket: 'all'
+      ticket: 'all',
+      atm: 'all'
     }
   }
 }
 ```
-]]]
 
-La propiedad `ticket` acepta 2 tipos de variables, `string` y `string[]`. En el ejemplo anterior, se aceptarán pagos a través de **boleto** y **pago en lotería**. 
+Las propiedades `ticket` (para pago con ticket impreso) y `atm`_*_ (para pago con cajero automático) aceptan 2 tipos de variables, `string` y `string[]`. En el ejemplo anterior, se aceptarán pagos con **todos los tickets disponibles en México**.
 
-Si no desea permitir ambos métodos de pago, en lugar de la cadena `all`, puede pasar un array con solo las ID deseadas. Como en el ejemplo a continuación, donde solo se acepta el a través de **boleto**.
+> _*Automatic Teller Machine_
 
-[[[
+Si no desea permitir ambos métodos de pago, en lugar de la cadena `all`, puede pasar un array con solo las ID deseadas. Como en el ejemplo a continuación, donde solo se acepta el a través de **OXXO**.
+
 ```Javascript
 settings = {
   ...,
@@ -192,17 +200,23 @@ settings = {
     ...,
     paymentMethods: {
       ...,
-      ticket: [ 'bolbradesco' ]
+      ticket: [ 'oxxo' ]
     }
   }
 }
 ```
-]]]
 
-Si quieres obtener una lista completa de IDs que se pueden pasar dentro del array, consulta la API [Obtener medios de pago](/developers/es/reference/payment_methods/_payment_methods/get) en nuestra referencia de API. Para más información, consulte la [sección correspondiente](/developers/es/docs/checkout-bricks/additional-content/consult-payment-methods).
+En este caso, como **OXXO** es el único método disponible, no se mostrará la lista para seleccionar dónde pagar.
+
+Actualmente, estos son los ID que se pueden pasar dentro del array:
+
+| Tipo de pago | IDs |
+|---|---|
+| Tickets | `oxxo` y `paycash` |
+| ATM | `bancomer` y `banamex` |
 
 > NOTE
 >
 > Importante
 >
-> La respuesta de la API contiene ID de varios `payment_type_id`. Los ID aceptados por la propiedad `ticket` son solo aquellos que contienen `payment_type_id = 'ticket'`.
+> La respuesta de la API contiene ID de varios `payment_type_id`. Los ID aceptados por la propiedad `ticket` son solo aquellos que contienen `payment_type_id = 'ticket'` y la propiedad `atm` acepta `payment_type_id = 'atm'`.
