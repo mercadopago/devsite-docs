@@ -90,15 +90,15 @@ const renderWalletBrick = async (bricksBuilder) => {
  callbacks: {
    onReady: () => {
       /*
-        Callback chamado quando o Brick estiver pronto.
-        Aqui você pode ocultar loadings do seu site, por exemplo.
-      */
+        Callback llamado cuando el Brick está listo.
+        Aquí puedes ocultar loading de su sitio, por ejemplo.
+      */ 
    },
    onSubmit: () => {
-      // callback chamado ao clicar no Wallet Brick
-      // isso é possível porque o brick é um botão
-      // neste momento de submit, você deve criar a preferência (para mais
-      // informações veja o passo 5, criar preferência)
+      // callback called when clicking Wallet Brick
+      // this is possible because the brick is a button
+      // at this time of submit, you must create the preference (for more
+      // info see step 5, create preference)
       const yourRequestBodyHere = {
           items: [
     	        id: "202809963",
@@ -119,17 +119,17 @@ const renderWalletBrick = async (bricksBuilder) => {
                 body: JSON.stringify(yourRequestBodyHere)
               })
                 .then((response) => {
-                  // resolver a promise com o ID da preferência
+                  // resuelve la promise con el ID de preferencia
                   resolve(response.preference_id);
                 })
                 .catch((error) => {
-                  // lidar com a resposta de erro ao tentar criar a preferência
+                  // manejar la respuesta de error al intentar crear la preferencia
                   reject();
                 })
        });
    },
    onError: (error) => {
-     // callback chamado para todos os casos de erro do Brick
+     // callback llamado para todos los casos de error de Brick
      console.error(error);
    },
  },
