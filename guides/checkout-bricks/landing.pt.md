@@ -55,7 +55,7 @@ future_product_avaible:
  - card_link: /developers/pt/docs/checkout-bricks/wallet-brick/introduction
  - card_linkDescription: Saiba mais
  - card_pillText: DISPONÍVEL
- - card_avaible: true
+ - card_avaible: false
  - card_icon: User
  - card_title: User Info Brick
  - card_description: Colete os dados dos clientes para deduzir aqueles que serão necessários no processo de compra.
