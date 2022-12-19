@@ -4,6 +4,8 @@
 >
 > Alterar visual
 
+## Propriedades de estilo
+
 | - | Descrição |
 |--- |--- |
 | Momento de customização | Ao renderizar Brick |
@@ -26,6 +28,26 @@ const settings = {
          visual: {
              buttonBackground: 'black',
              borderRadius: '16px',
+         },
+    },
+}
+```
+
+## Ocultar texto da proposta de valor
+
+| - | Descrição |
+|--- |--- |
+| Momento de customização | Ao renderizar Brick |
+| Propriedade | customization.visual.hideValueProp |
+| Tipo | Boolean |
+| Observações | Quando `true`, oculta o texto da proposta de valor (fica abaixo do botão).|
+
+```javascript
+const settings = {
+    ...,
+    customization: {
+         visual: {
+             hideValueProp: true
          },
     },
 }

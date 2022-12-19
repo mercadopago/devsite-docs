@@ -2,7 +2,9 @@
 >
 > h1
 >
-> Change texts
+> Change appearance
+
+# Style properties
 
 | - | Description |
 | --- | --- |
@@ -26,6 +28,26 @@ const settings = {
          visual: {
              buttonBackground: 'black',
              borderRadius: '16px',
+         },
+    },
+}
+```
+
+## Hide value proposition text
+
+| - | Description |
+| --- | --- |
+| Customization moment  | When rendering the Brick  |
+| Property  | customization.visual.hideValueProp  |
+| Type  | Boolean  |
+| Comments  | When `true`, hides the value proposition text (below the button). |
+
+```javascript
+const settings = {
+    ...,
+    customization: {
+         visual: {
+             hideValueProp: true
          },
     },
 }
