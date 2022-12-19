@@ -68,11 +68,11 @@ paths:
                   example: e3ed6f098462036dd2cbabe314b9de2a
                 auto_recurring:
                   type: object
-                  description: Configuration data for recurrence It is only required for subscriptions without a plan.
+                  description: Configuration data for recurrence.
                   x-description-i18n:
-                    eng: Configuration data for recurrence It is only required for subscriptions without a plan.
-                    spa: Datos de configuración para recurrencia. Solo se requiere para suscripciones sin plan asociado.
-                    por: Configuração de recorrência. É obrigatório apenas para assinaturas sem plano associado.
+                    eng: Configuration data for recurrence.
+                    spa: Datos de configuración para recurrencia.
+                    por: Configuração de recorrência. 
                   properties:
                     frequency:
                       required: true
