@@ -170,7 +170,7 @@ Para incluir **pagamento em dinheiro via ticket**, basta utilizar a seguinte con
 >
 > Importante
 >
-> Os meios de pagamento descritos abaixo necessitam que os dados de endereço, nome e documento do comprador sejam preenchidos. Para uma melhor experiência do usuário, é recomendável que o integrador já inicialize esses dados, assim não será necessário preencher manualmente. [Confira aqui](/developers/pt/docs/checkout-bricks/payment-brick/additional-customization/initialize-data-on-the-bricks) como inicializar o Brick com esses dados já preenchidos.
+> Os meios de pagamento descritos abaixo necessitam que os dados de endereço, nome e documento do comprador sejam preenchidos. Para uma melhor experiência do usuário, é recomendável que o integrador já inicialize esses dados, assim não será necessário preencher manualmente. [Confira aqui](/developers/pt/docs/checkout-bricks/payment-brick/additional-customization/initialize-data-on-the-bricks) como inicializar o Brick com esses dados já preenchidos. 
 
 ```Javascript
 settings = {

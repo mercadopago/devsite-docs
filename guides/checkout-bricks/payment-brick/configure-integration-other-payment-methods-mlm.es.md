@@ -165,13 +165,13 @@ El resultado de renderizar el Brick debe ser como la imagen de abajo:
 >
 > Administrar otros medios de pago
 
+Para incluir **pagos con dinero en efectivo via ticket**, solo usa la siguiente configuración:
+
 > NOTE
 >
 > Importante
 >
 > Los métodos de pago que se describen a continuación requieren que se complete la dirección, el nombre y los detalles del documento del comprador. Para una mejor experiencia de usuario, se recomienda que el integrador ya inicialice estos datos, por lo que no es necesario llenarlo manualmente. [Consulte aquí](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/initialize-data-on-the-bricks) cómo inicializar el bloque con estos datos ya completados.
-
-Para incluir **pagos con dinero en efectivo via ticket**, solo usa la siguiente configuración:
 
 ```Javascript
 settings = {

@@ -180,13 +180,16 @@ settings = {
     ...,
     paymentMethods: {
       ...,
-      ticket: 'all'
+      ticket: 'all',
+      atm: 'all'
     }
   }
 }
 ```
 
 The properties `ticket` (for payment by printed ticket) and `atm`_*_ (for payment by ATM) accept 2 types of variable, `string` and `string[]`. In the example above, payments will be accepted with **all tickets available in Mexico**.
+
+> _*Automatic Teller Machine_
 
 If you don't want to allow both payment methods, instead of the string `all`, you can pass an array with just the desired IDs. As in the example below, where only payment via **OXXO** is accepted.
 
@@ -197,8 +200,7 @@ settings = {
     ...,
     paymentMethods: {
       ...,
-      ticket: 'all',
-      atm: 'all'
+      ticket: [ 'oxxo' ]
     }
   }
 }
