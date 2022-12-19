@@ -63,10 +63,17 @@ To facilitate and optimize your integration process, check below a complete exam
 >
 > Create your preference
 
+----[mla, mlb, mlm]----
 The code examples below set the **purpose of preference** to `wallet_purchase`, but it is also possible to set it to `onboarding_credits`. Understand the difference between the two:
 
 * **wallet_purchase**: the user must log in when redirected to his Mercado Pago account.
 * **onboarding_credits**: after logging in, the user will see the pre-selected credit payment option in his Mercado Pago account.
+
+------------
+----[mlu, mlc, mco, mpe]----
+The code examples below set the **purpose of preference** to `wallet_purchase`, but it is also possible to set it to `onboarding_credits`, where the user must log in when redirected to his Mercado Pago account.
+
+------------
 
 [[[
 ```php

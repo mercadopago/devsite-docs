@@ -1,9 +1,16 @@
 # Preferencia en el inicio
 
+----[mla, mlb, mlm]----
 Los ejemplos de código a continuación establecen el **purpose de la preferencia** en `wallet_purchase`, pero también es posible establecerlo en `onboarding_credits`. Entienda la diferencia entre los dos:
 
 * **wallet_purchase**: el usuario debes iniciar sesión cuando es redirigido a su cuenta de Mercado Pago.
 * **onboarding_credits**: luego de iniciar sesión, el usuario verá la opción de pago de crédito preseleccionada en su cuenta de Mercado Pago.
+
+------------
+----[mlu, mlc, mco, mpe]----
+Los ejemplos de código a continuación establecen el **purpose de la preferencia** en `wallet_purchase`, pero también es posible establecerlo en `onboarding_credits`, donde el usuario debe iniciar sesión cuando es redirigido a su cuenta de Mercado Pago.
+
+------------
 
 > SERVER_SIDE
 >

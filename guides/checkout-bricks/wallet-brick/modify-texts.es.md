@@ -21,6 +21,7 @@ Wallet Brick ofrece dos niveles de lectura: el **call to action (botón)** y la 
 
 Consulte a continuación los textos disponibles para modificar y un código de ejemplo.
 
+----[mla, mlb]----
 | Clave | Opciones disponibles | Predeterminado |
 |--- |--- | --- |
 | action | pay, buy | pay |
@@ -28,7 +29,6 @@ Consulte a continuación los textos disponibles para modificar y un código de e
 
 Consulte los textos relacionados con cada opción:
 
-----[mla, mlb]----
 | Clave | Opción | Texto |
 |action |pay | Pagar con Mercado Pago |
 |action |buy | Comprar con Mercado Pago |
@@ -39,11 +39,34 @@ Consulte los textos relacionados con cada opción:
 
 ------------
 ----[mlm]----
+| Clave | Opciones disponibles | Predeterminado |
+|--- |--- | --- |
+| action | pay, buy | pay |
+| valueProp | practicality, convenience, security_details, security_safety | security_safety |
+
+Consulte los textos relacionados con cada opción:
+
 | Clave | Opción | Texto |
 |action |pay | Pagar con Mercado Pago |
 |action |buy | Comprar con Mercado Pago |
 |valueProp |practicality | Usá tarjetas guardadas o dinero en cuenta |
 |valueProp |convenience | Meses con o sin tarjeta de crédito |
+|valueProp |security_details | Todos tus datos protegidos |
+|valueProp |security_safety | Pagá de forma segura |
+
+------------
+----[mlu, mlc, mco, mpe]----
+| Clave | Opciones disponibles | Predeterminado |
+|--- |--- | --- |
+| action | pay, buy | pay |
+| valueProp | practicality, security_details, security_safety | security_safety |
+
+Consulte los textos relacionados con cada opción:
+
+| Clave | Opción | Texto |
+|action |pay | Pagar con Mercado Pago |
+|action |buy | Comprar con Mercado Pago |
+|valueProp |practicality | Usá tarjetas guardadas o dinero en cuenta |
 |valueProp |security_details | Todos tus datos protegidos |
 |valueProp |security_safety | Pagá de forma segura |
 

@@ -88,10 +88,17 @@ Para facilitar e otimizar o seu processo de integração, veja abaixo um exemplo
 >
 > Crie sua preferência
 
+----[mla, mlb, mlm]----
 Os exemplos de código abaixo configuram o **purpose da preferência** como `wallet_purchase`, mas também é possível configurá-lo como `onboarding_credits`. Entenda a diferença entre os dois:
 
-* **wallet_purchase**: o usuário deve fazer login quando for redirecionado para sua conta do Mercado Pago.
+* **wallet_purchase**: o usuário deverá fazer login quando for redirecionado para sua conta do Mercado Pago.
 * **onboarding_credits**: após fazer login, o usuário verá a opção de pagamento com crédito pré-selecionada em sua conta do Mercado Pago.
+
+------------
+----[mlu, mlc, mco, mpe]----
+Os exemplos de código abaixo configuram o **purpose da preferência** como `wallet_purchase`, onde o usuário deverá fazer login quando for redirecionado para sua conta do Mercado Pago.
+
+------------
 
 [[[
 ```php

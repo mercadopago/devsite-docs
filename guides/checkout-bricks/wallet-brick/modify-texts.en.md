@@ -21,6 +21,7 @@ Wallet Brick offers two reading levels: the **call to action (button)** and the 
 
 Check below the texts available for alteration and a code example.
 
+----[mla, mlb, mlm]----
 | Key | Available options | Default |
 |--- |--- | --- |
 | action | pay, buy | pay |
@@ -35,6 +36,24 @@ See the texts related to each option:
 |valueProp |convenience | Installment with or without card |
 |valueProp |security_details | Protection for your data |
 |valueProp |security_safety | Pay securely |
+
+------------
+----[mlu, mlc, mco, mpe]----
+| Key | Available options | Default |
+|--- |--- | --- |
+| action | pay, buy | pay |
+| valueProp | practicality, security_details, security_safety | security_safety |
+
+See the texts related to each option:
+
+| Key | Option | Text |
+|action |pay | Pay with Mercado Pago |
+|action |buy | Buy with Mercado Pago |
+|valueProp |practicality | Use saved cards or your account balance |
+|valueProp |security_details | Protection for your data |
+|valueProp |security_safety | Pay securely |
+
+------------
 
 ```javascript
 const settings = {

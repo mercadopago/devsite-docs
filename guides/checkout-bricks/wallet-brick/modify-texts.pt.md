@@ -21,6 +21,7 @@ O Wallet Brick oferece dois níveis de leitura: o **call to action (botão)** e 
 
 Confira a seguir os textos disponíveis para alteração e um exemplo de código.
 
+----[mla, mlb, mlm]----
 | Chave | Opções disponíveis | Padrão |
 |--- |--- | --- |
 | action | pay, buy | pay |
@@ -34,7 +35,25 @@ Veja quais são os textos relacionados a cada opção:
 |valueProp |practicality | Use cartões salvos ou seu saldo em conta |
 |valueProp |convenience | Parcelamento com ou sem cartão |
 |valueProp |security_details | Proteção para seus dados |
-|valueProp |security_safety | Pague com segurança |
+|valueProp |security_safety | Pague com segurança | 
+
+------------
+----[mlu, mlc, mco, mpe]----
+| Chave | Opções disponíveis | Padrão |
+|--- |--- | --- |
+| action | pay, buy | pay |
+| valueProp | practicality, security_details, security_safety | security_safety |
+
+Veja quais são os textos relacionados a cada opção:
+
+| Chave | Opção | Texto |
+|action |pay | Pagar com Mercado Pago |
+|action |buy | Comprar com Mercado Pago |
+|valueProp |practicality | Use cartões salvos ou seu saldo em conta |
+|valueProp |security_details | Proteção para seus dados |
+|valueProp |security_safety | Pague com segurança | 
+
+------------
 
 ```javascript
 const settings = {
