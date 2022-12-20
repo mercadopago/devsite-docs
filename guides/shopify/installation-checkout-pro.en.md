@@ -13,6 +13,14 @@ To install Checkout Pro in a Shopify store, follow the steps below:
  
 > In case of renewing your credentials, remember to replace both the production and test credentials in your integration.
 
+----[mlb]----
+![configuración PT](/images/shopify/configurar-PT.gif)
+------------
+
+----[mla, mlu, mlc, mco, mpe, mlm]----
+![configuración ES](/images/shopify/configurar-ES.gif)
+------------
+
 > PREV_STEP_CARD_EN
 >
 > Previous requirements
