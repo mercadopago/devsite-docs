@@ -71,7 +71,7 @@ Los ejemplos de código a continuación establecen el **purpose de la preferenci
 
 ------------
 ----[mlu, mlc, mco, mpe]----
-Los ejemplos de código a continuación establecen el **purpose de la preferencia** en `wallet_purchase`, pero también es posible establecerlo en `onboarding_credits`, donde el usuario debe iniciar sesión cuando es redirigido a su cuenta de Mercado Pago.
+Los ejemplos de código a continuación establecen el **purpose de la preferencia** en `wallet_purchase`, donde el usuario debe iniciar sesión cuando es redirigido a su cuenta de Mercado Pago.
 
 ------------
 

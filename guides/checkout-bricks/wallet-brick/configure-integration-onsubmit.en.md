@@ -213,7 +213,7 @@ The code examples below set the **purpose of preference** to `wallet_purchase`, 
 ----[mlu, mlc, mco, mpe]----
 Then set the preference according to your product or service. 
 
-The code examples below set the **purpose of preference** to `wallet_purchase`, but it is also possible to set it to `onboarding_credits`, where the user must log in when redirected to his Mercado Pago account.
+The code examples below set the **purpose of preference** to `wallet_purchase`, where the user must log in when redirected to his Mercado Pago account.
 
 ------------
 
