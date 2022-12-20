@@ -30,6 +30,7 @@ Check below the texts available for alteration and a code example.
 See the texts related to each option:
 
 | Key | Option | Text |
+|--- |--- | --- |
 |action |pay | Pay with Mercado Pago |
 |action |buy | Buy with Mercado Pago |
 |valueProp |practicality | Use saved cards or your account balance |
@@ -47,6 +48,7 @@ See the texts related to each option:
 See the texts related to each option:
 
 | Key | Option | Text |
+|--- |--- | --- |
 |action |pay | Pay with Mercado Pago |
 |action |buy | Buy with Mercado Pago |
 |valueProp |practicality | Use saved cards or your account balance |

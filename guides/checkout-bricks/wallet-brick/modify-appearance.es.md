@@ -20,6 +20,7 @@
 | borderRadius | - | 6px | - |
 | valuePropColor | grey, white | grey | - |
 | verticalPadding | - | 16px | Mínimo: 16px. <br> Máximo: libre elección. |
+| horizontalPadding | - | 0px | Mínimo: 0px. <br> Máximo: libre elección. |
 
 ```javascript
 const settings = {

@@ -16,10 +16,11 @@
 | Key | Available options | Default | Comments |
 |--- |--- | --- | --- |
 | buttonBackground | default, black, blue, white | default | - |
-| buttonHeight | - | 48px | Minimum: 48px. <br> Maximum: livre escolha. |
+| buttonHeight | - | 48px | Minimum: 48px. <br> Maximum: free choice. |
 | borderRadius | - | 6px | - |
 | valuePropColor | grey, white | grey | - |
-| verticalPadding | - | 16px | Minimum: 16px. <br> Maximum: livre escolha. |
+| verticalPadding | - | 16px | Minimum: 16px. <br> Maximum: free choice. |
+| horizontalPadding | - | 0px | Minimum: 0px. <br> Maximum: free choice. |
 
 ```javascript
 const settings = {

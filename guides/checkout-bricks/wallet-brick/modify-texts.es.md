@@ -30,6 +30,7 @@ Consulte a continuación los textos disponibles para modificar y un código de e
 Consulte los textos relacionados con cada opción:
 
 | Clave | Opción | Texto |
+|--- |--- | --- |
 |action |pay | Pagar con Mercado Pago |
 |action |buy | Comprar con Mercado Pago |
 |valueProp |practicality | Usá tarjetas guardadas o dinero en cuenta |
@@ -47,6 +48,7 @@ Consulte los textos relacionados con cada opción:
 Consulte los textos relacionados con cada opción:
 
 | Clave | Opción | Texto |
+|--- |--- | --- |
 |action |pay | Pagar con Mercado Pago |
 |action |buy | Comprar con Mercado Pago |
 |valueProp |practicality | Usá tarjetas guardadas o dinero en cuenta |
@@ -64,6 +66,7 @@ Consulte los textos relacionados con cada opción:
 Consulte los textos relacionados con cada opción:
 
 | Clave | Opción | Texto |
+|--- |--- | --- |
 |action |pay | Pagar con Mercado Pago |
 |action |buy | Comprar con Mercado Pago |
 |valueProp |practicality | Usá tarjetas guardadas o dinero en cuenta |

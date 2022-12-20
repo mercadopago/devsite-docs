@@ -10,7 +10,7 @@ To configure Wallet Brick integration to receive payments with Mercado Pago Wall
 
 > The steps are performed on the backend or frontend. The **Client-Side** and **Server-Side** pills located immediately next to the title help you to identify which step is performed in which instance. <br/></br>
 > <br/></br>
-> And, to help, we've prepared a complete [code example](/developers/en/docs/checkout-bricks/wallet-brick/code-example-startup) of the Wallet Brick configuration with Mercado Pago Wallet that you can use as a template.
+> And, to help, we've prepared a complete [code example](/developers/en/docs/checkout-bricks/wallet-brick/code-example/preference-startup) of the Wallet Brick configuration with Mercado Pago Wallet that you can use as a template.
 
 > SERVER_SIDE
 >

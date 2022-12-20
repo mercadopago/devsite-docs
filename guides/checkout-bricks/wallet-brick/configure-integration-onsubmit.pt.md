@@ -10,7 +10,7 @@ Para configurar a integração do Wallet Brick para receber pagamentos com a Con
 
 > Os passos são realizados no back-end ou no front-end. As pills **Client-Side** e **Server-Side** localizadas imediatamente ao lado do título te ajudam a identificar qual passo é realizado em qual instância.<br/></br>
 > <br/></br>
-> E, para ajudar, preparamos um [exemplo de código](/developers/pt/docs/checkout-bricks/wallet-brick/code-example-onsubmit) completo da configuração do Wallet Brick com Conta Mercado Pago que você pode usar como modelo.
+> E, para ajudar, preparamos um [exemplo de código](/developers/pt/docs/checkout-bricks/wallet-brick/code-example/preference-onsubmit) completo da configuração do Wallet Brick com Conta Mercado Pago que você pode usar como modelo.
 
 > CLIENT_SIDE
 >

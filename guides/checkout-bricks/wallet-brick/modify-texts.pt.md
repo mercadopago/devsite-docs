@@ -30,6 +30,7 @@ Confira a seguir os textos disponíveis para alteração e um exemplo de código
 Veja quais são os textos relacionados a cada opção:
 
 | Chave | Opção | Texto |
+|--- |--- | --- |
 |action |pay | Pagar com Mercado Pago |
 |action |buy | Comprar com Mercado Pago |
 |valueProp |practicality | Use cartões salvos ou seu saldo em conta |
@@ -47,6 +48,7 @@ Veja quais são os textos relacionados a cada opção:
 Veja quais são os textos relacionados a cada opção:
 
 | Chave | Opção | Texto |
+|--- |--- | --- |
 |action |pay | Pagar com Mercado Pago |
 |action |buy | Comprar com Mercado Pago |
 |valueProp |practicality | Use cartões salvos ou seu saldo em conta |
