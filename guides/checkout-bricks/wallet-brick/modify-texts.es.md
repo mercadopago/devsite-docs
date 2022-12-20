@@ -51,10 +51,10 @@ Consulte los textos relacionados con cada opción:
 |--- |--- | --- |
 |action |pay | Pagar con Mercado Pago |
 |action |buy | Comprar con Mercado Pago |
-|valueProp |practicality | Usá tarjetas guardadas o dinero en cuenta |
+|valueProp |practicality | Usa tarjetas guardadas o dinero en cuenta |
 |valueProp |convenience | Meses con o sin tarjeta de crédito |
 |valueProp |security_details | Todos tus datos protegidos |
-|valueProp |security_safety | Pagá de forma segura |
+|valueProp |security_safety | Paga de forma segura |
 
 ------------
 ----[mlu, mlc, mco, mpe]----
@@ -69,9 +69,9 @@ Consulte los textos relacionados con cada opción:
 |--- |--- | --- |
 |action |pay | Pagar con Mercado Pago |
 |action |buy | Comprar con Mercado Pago |
-|valueProp |practicality | Usá tarjetas guardadas o dinero en cuenta |
+|valueProp |practicality | Usa tarjetas guardadas o dinero en cuenta |
 |valueProp |security_details | Todos tus datos protegidos |
-|valueProp |security_safety | Pagá de forma segura |
+|valueProp |security_safety | Paga de forma segura |
 
 ------------
 

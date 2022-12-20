@@ -9,7 +9,7 @@
 | - | Description |
 | --- | --- |
 | Customization moment  | When rendering the Brick  |
-| Property  | customization.visual.{buttonBackground, buttonHeight, borderRadius, valuePropColor, verticalPadding} |
+| Property  | customization.visual.{buttonBackground, buttonHeight, borderRadius, valuePropColor, verticalPadding, horizontalPadding} |
 | Type  | String  |
 | Comments  | When sending an empty property, the screen will present the text defined by the default layout. On the other hand, when you submit a custom text, it will replace the default text. To check what the default texts are, check out the table below. |
 

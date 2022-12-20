@@ -307,7 +307,7 @@ Una vez instanciado el builder, nuestro Brick puede ser renderizado y tener toda
 Para renderizar el Brick, inserta el código a continuación del paso anterior y completa los atributos de acuerdo con los comentarios destacados en este mismo código.
 
 ```javascript
-const renderPaymentBrick = async (bricksBuilder) => {
+const renderWalletBrick  = async (bricksBuilder) => {
  const settings = {
  initialization: {
    amount: 100, // monto a ser pago
@@ -338,7 +338,7 @@ const renderPaymentBrick = async (bricksBuilder) => {
    settings
  );
 };
-renderPaymentBrick(bricksBuilder);
+renderWalletBrick (bricksBuilder);
 ```
 
 El resultado de renderizar el Brick debe ser como la imagen de abajo:

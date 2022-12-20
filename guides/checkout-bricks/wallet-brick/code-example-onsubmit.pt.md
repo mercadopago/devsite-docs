@@ -1,4 +1,4 @@
-# Preferência na inicialização
+# Preferência no onSubmit
  
 Para facilitar e otimizar o seu processo de integração, veja abaixo um exemplo completo de como incluir o Wallet Brick em seu site.
 

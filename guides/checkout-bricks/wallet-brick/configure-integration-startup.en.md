@@ -305,7 +305,7 @@ Once instantiated, the Brick can be rendered and have all its configurations com
 To render the Brick, insert the following code after the previous step and fill in the attributes according to the comments highlighted in this same code.
 
 ```javascript
-const renderPaymentBrick = async (bricksBuilder) => {
+const renderWalletBrick  = async (bricksBuilder) => {
  const settings = {
  initialization: {
    amount: 100, // total amount to be paid
@@ -336,7 +336,7 @@ const renderPaymentBrick = async (bricksBuilder) => {
    settings
  );
 };
-renderPaymentBrick(bricksBuilder); 
+renderWalletBrick (bricksBuilder); 
 ```
 
 The result of rendering the Brick should be like the image below:”

@@ -9,7 +9,7 @@
 | - | Descripción |
 | --- | --- |
 | Momento de personalización  | Al renderizar el Brick  |
-| Propiedad  | customization.visual.{buttonBackground, buttonHeight, borderRadius, valuePropColor, verticalPadding} |
+| Propiedad  | customization.visual.{buttonBackground, buttonHeight, borderRadius, valuePropColor, verticalPadding, horizontalPadding} |
 | Tipo  | String  |
 | Observaciones  | Al enviar una propiedad vacía, la pantalla presentará el texto definido por el layout predeterminado. Por otro lado, al enviar un texto personalizado, reemplazará el texto predeterminado. Para comprobar cuáles son los textos por defecto, consulta la tabla a continuación. |
 
