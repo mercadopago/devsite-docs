@@ -10,20 +10,3 @@ Para integrar o Checkout Transparente do Mercado Pago na sua loja Shopify, você
 | Loja da Shopify | Você precisará ter uma loja criada na Shopify. Se você ainda não tem uma, [acesse aqui](https://www.shopify.com). |
 | Checkout Pro | Para integrar o Checkout Transparente, você deve ter o Checkout Pro na sua loja da Shopify. Para saber como integrá-lo, consulte a [documentação](/developers/pt/docs/shopify/introduction). |
 
-
-> PREV_STEP_CARD_PT
->
-> Introdução
->
-> Conheça os benefícios de integrar o Checkout Transparente.
->
-> [Introdução](/developers/pt/docs/shopify/introduction-checkout-transparente)
-
-> NEXT_STEP_CARD_PT
->
-> Instalação
->
-> Aprenda a instalar o Checkout Transparente na sua loja Shopify.
->
-> [Instalação](/developers/pt/docs/shopify/installation-checkout-transparente)
-

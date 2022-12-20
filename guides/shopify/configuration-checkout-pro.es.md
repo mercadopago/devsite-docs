@@ -34,21 +34,3 @@ La tienda de Shopify mostrará los campos de solicitud de identificación person
 6. Haz clic en Guardar.
 
 ![cambiar idioma ES](/images/shopify/company-name-es.gif)
-
-
-> PREV_STEP_CARD_ES
->
-> Instalación
->
-> Aprende a instalar Checkout Pro en tu tienda Shopify.
->
-> [Instalación](/developers/es/docs/shopify/installation)
-
-> NEXT_STEP_CARD_ES
->
-> Realizar una prueba
->
-> Haz una compra de prueba para asegurarte de que el Checkout Pro funcione correctamente.
->
-> [Realizar una prueba](/developers/es/docs/shopify/integration-test)
-
