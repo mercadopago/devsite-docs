@@ -13,6 +13,8 @@ Para instalar Checkout Pro en una tienda Shopify, sigue los pasos a continuació
 
 > En caso de renovar tus credenciales, recuerda reemplazar tanto las de producción como las de pruba en tu integración.
 
+![configuración ES](/images/shopify/configurar-ES.gif)
+
 > PREV_STEP_CARD_ES
 >
 > Requisitos previos
