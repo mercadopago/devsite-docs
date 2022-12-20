@@ -51,7 +51,7 @@ Consulte los textos relacionados con cada opción:
 |--- |--- | --- |
 |action |pay | Pagar con Mercado Pago |
 |action |buy | Comprar con Mercado Pago |
-|valueProp |practicality | Usa tarjetas guardadas o dinero en cuenta |
+|valueProp |practicality | Usa tarjetas guardadas o saldo en cuenta |
 |valueProp |convenience | Meses con o sin tarjeta de crédito |
 |valueProp |security_details | Todos tus datos protegidos |
 |valueProp |security_safety | Paga de forma segura |
