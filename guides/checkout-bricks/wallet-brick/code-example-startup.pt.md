@@ -196,7 +196,7 @@ curl -X POST \
                 Aqui você pode ocultar loadings do seu site, por exemplo.
               */
             },
-            onSubmit: ({ selectedPaymentMethod, formData }) => {
+            onSubmit: () => {
               // callback chamado ao clicar no Wallet Brick
               // isso é possível porque o Brick é um botão
             },

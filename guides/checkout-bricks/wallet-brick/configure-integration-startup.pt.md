@@ -317,7 +317,7 @@ const renderPaymentBrick = async (bricksBuilder) => {
         Aqui você pode ocultar loadings do seu site, por exemplo.
       */
    },
-   onSubmit: ({ selectedPaymentMethod, formData }) => {
+   onSubmit: () => {
      // callback chamado ao clicar no botão de submissão dos dados
        // nesse caso, o usuário foi redirecionado para
        // a página do Mercado Pago para fazer o pagamento
