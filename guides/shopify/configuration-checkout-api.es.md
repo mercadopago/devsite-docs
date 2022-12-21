@@ -33,4 +33,4 @@ La tienda de Shopify mostrará los campos de solicitud de identificación person
     * **Address – Company**
 6. Haz clic en Guardar.
 
-![cambiar idioma ES](/images/shopify/company-name-es.gif)
+![cambiar idioma ES](/images/shopify/company-name-es-v2.gif)

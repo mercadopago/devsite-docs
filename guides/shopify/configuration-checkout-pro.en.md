@@ -46,9 +46,9 @@ The Shopify store will display the request fields of the buyer's identification 
 6. Click Save.
 
 ----[mlb]----
-![cambiar idioma PT](/images/shopify/company-name-pt.gif)
+![cambiar idioma PT](/images/shopify/company-name-pt-v2.gif)
 ------------
 
 ----[mla, mlu, mlc, mco, mpe, mlm]----
-![cambiar idioma ES](/images/shopify/company-name-es.gif)
+![cambiar idioma ES](/images/shopify/company-name-es-v2.gif)
 ------------
