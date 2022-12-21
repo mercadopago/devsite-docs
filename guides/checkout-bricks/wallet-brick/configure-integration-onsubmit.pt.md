@@ -85,63 +85,64 @@ Para renderizar o Brick, insira o código abaixo após o passo anterior e preenc
 
 ```javascript
 const renderWalletBrick = async (bricksBuilder) => {
- const settings = {
- callbacks: {
-   onReady: () => {
-      /*
-        Callback chamado quando o Brick estiver pronto.
-        Aqui você pode ocultar loadings do seu site, por exemplo.
-      */
-   },
-   onSubmit: () => {
-      // callback chamado ao clicar no Wallet Brick
-      // isso é possível porque o brick é um botão
-      // neste momento de submit, você deve criar a preferência (para mais
-      // informações veja o passo 5, criar preferência)
-      const yourRequestBodyHere = {
+  const settings = {
+    callbacks: {
+      onReady: () => {
+        /*
+            Callback chamado quando o Brick estiver pronto.
+            Aqui você pode ocultar loadings do seu site, por exemplo.
+          */
+      },
+      onSubmit: () => {
+        // callback chamado ao clicar no Wallet Brick
+        // isso é possível porque o brick é um botão
+        // neste momento de submit, você deve criar a preferência (para mais
+        // informações veja o passo 5, criar preferência)
+        const yourRequestBodyHere = {
           items: [
-    	        id: "202809963",
-		  title: "Dummy title",
-		  description: "Dummy description",
-		  quantity: 1,
-		  unit_price: 10
+            {
+              id: '202809963',
+              title: 'Dummy title',
+              description: 'Dummy description',
+              quantity: 1,
+              unit_price: 10,
+            },
           ],
-          purpose: "wallet_purchase"
-      };
- 
-       return new Promise((resolve, reject) => {
-              fetch("/create_preference", {
-                method: "POST",
-                headers: {
-                  "Content-Type": "application/json",
-                },
-                body: JSON.stringify(yourRequestBodyHere)
-              })
-                .then((response) => {
-                  // resolver a promise com o ID da preferência
-                  resolve(response.preference_id);
-                })
-                .catch((error) => {
-                  // lidar com a resposta de erro ao tentar criar a preferência
-                  reject();
-                })
-       });
-   },
-   onError: (error) => {
-     // callback chamado para todos os casos de erro do Brick
-     console.error(error);
-   },
- },
+          purpose: 'wallet_purchase',
+        };
+
+        return new Promise((resolve, reject) => {
+          fetch('/create_preference', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(yourRequestBodyHere),
+          })
+            .then((response) => {
+              // resolver a promise com o ID da preferência
+              resolve(response.preference_id);
+            })
+            .catch((error) => {
+              // lidar com a resposta de erro ao tentar criar a preferência
+              reject();
+            });
+        });
+      },
+      onError: (error) => {
+        // callback chamado para todos os casos de erro do Brick
+        console.error(error);
+      },
+    },
+  };
+
+  window.walletBrickController = await bricksBuilder.create(
+    'wallet',
+    'walletBrick_container',
+    settings,
+  );
 };
- 
- 
-window.walletBrickController = await bricksBuilder.create(
-   'wallet',
-   'walletBrick_container',
-   settings
- );
-};
- 
+
 renderWalletBrick(bricksBuilder);
 ```
 
