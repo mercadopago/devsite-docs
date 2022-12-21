@@ -4,7 +4,7 @@
 
 Com o Checkout Transparente do Mercado Pago, é possível oferecer, além de cartão e  Pix, **pagamentos através de boleto bancário**. Além disso, você pode **criar boletos bancários com descontos, multas e juros** para pagamentos antecipados ou fora do prazo estipulado na data de vencimento.
 
-Para obter uma lista detalhada com todos os meios de pagamento disponíveis para integração, envie um **GET** com seu _Access token_ ao endpoint [/v1/payment_methods](/developers/pt/reference/payment_methods/_payment_methods/get) e execute a requisição.  Se preferir, faça a requisição utilizando os SDKs abaixo:
+Para obter uma lista detalhada com todos os meios de pagamento disponíveis para integração, envie um **GET** com seu _Access token_ ao endpoint [/v1/payment_methods](/developers/pt/reference/payment_methods/_payment_methods/get) e execute a requisição. Se preferir, faça a requisição utilizando os SDKs abaixo:
 
 [[[
 ```php
@@ -87,7 +87,7 @@ Esta captura é feita a partir da inclusão da biblioteca MercadoPago.js em seu 
 
 As credenciais são senhas únicas com as quais identificamos uma integração na sua conta. Servem para capturar pagamentos em lojas virtuais e outras aplicações de forma segura.
 
-Esta é a primeira etapa de uma estrutura completa de códigos que deverá ser seguida para a correta integração dos pagamentos. Atente-se aos blocos abaixo e adicione os códigos conforme indicado.
+Esta é a primeira etapa de uma estrutura completa de códigos que deverá ser seguida para a correta integração dos pagamentos. Atente-se aos blocos abaixo e adicione aos códigos conforme indicado.
 
 
 [[[
@@ -418,11 +418,9 @@ A resposta mostrará o **status pendente** até que o comprador realize o pagame
 ```json
 [
  {
-    ...,
     "id": 5466310457,
     "status": "pending",
     "status_detail": "pending_waiting_payment",
-    ...,
     "transaction_details": {
         "net_received_amount": 0,
         "total_paid_amount": 100,
@@ -638,6 +636,66 @@ payment_data = {
 result = sdk.payment.create(payment_data)
 puts result[:response]["transaction_details"]["external_resource_url"]
 ```
+```csharp
+using System;
+using MercadoPago.Config;
+using MercadoPago.Client.Common;
+using MercadoPago.Client.Payment;
+using MercadoPago.Resource.Payment;
+
+MercadoPagoConfig.AccessToken = "YOUR_ACCESS_TOKEN";
+
+var paymentRequest = new PaymentCreateRequest {
+    Description = "Titulo do produto",
+    DateOfExpiration = new DateTime(2022, 12, 24, 23, 59, 59, 000, DateTimeKind.Local),
+    PaymentMethodId = "bolbradesco",
+    TransactionAmount = 100,
+    Payer = new PaymentPayerRequest
+    {
+        FirstName = "Test",
+        LastName = "User",
+        Email = "test_user_123456@testuser.com",
+        Identification = new IdentificationRequest
+        {
+            Type = "CPF",
+            Number = "19119119100"
+        }
+    },
+    PaymentMethod = new PaymentMethodRequest
+    {
+        Data = new PaymentDataRequest
+        {
+            Rules = new PaymentRulesRequest
+            {
+                Discounts = new List<PaymentDiscountRequest>()
+                {
+                    new PaymentDiscountRequest
+                    {
+                        Value = 5,
+                        Type = "fixed",
+                        LimitDate = new DateTime(2022, 12, 1)
+                    }
+                },
+                Fine = new PaymentFeeRequest
+                {
+                    Value = 2,
+                    Type = "percentage"
+                },
+                Interest = new PaymentFeeRequest
+                {
+                    Value = 1m,
+                    Type = "percentage"
+                }
+            }
+        }
+    }
+};
+
+var client = new PaymentClient();
+Payment payment = await client.CreateAsync(paymentRequest);
+
+Console.WriteLine(payment.TransactionDetails.ExternalResourceUrl);
+```
 ```python
 import mercadopago
 
@@ -683,59 +741,7 @@ payment_data = {
 result = sdk.payment().create(payment_data)
 print(result["response"]["transaction_details"]["external_resource_url"])
 ```
-]]]
-
-A resposta retornará o seguinte resultado:
-
-[[[
-```json
-{
-  "id": 123456789,
-  "status": "pending",
-  "status_detail": "pending_waiting_payment",
-  ...,
-  "payment_method": {
-    "id": "bolbradesco",
-    "type": "ticket",
-    "data": {
-      "rules": {
-        "discounts": [
-          {
-            "value": 1,
-            "type": "fixed",
-            "limit_date": "2022-12-12"
-          }
-        ],
-        "fine": {
-          "value": 2,
-          "type": "percentage"
-        },
-        "interest": {
-          "value": 0.03,
-          "type": "percentage"
-        }
-      }
-    }
-  },
-  ...,
-  "transaction_details": {
-    "net_received_amount": 0,
-    "total_paid_amount": 100,
-    "overpaid_amount": 0,
-    "external_resource_url": "https://www.mercadopago.com.br/payments/123456789/ticket?caller_id=123456&hash=e10c4695-49a0-475e-8adc-29a8055b9167",
-    "installment_amount": 0,
-    "financial_institution": null,
-    "payment_method_reference_id": "1234567890"
-  }
-}
-```
-]]]
-
-
-Se você deseja criá-los através da API do Mercado Pago, envie uma solicitação seguindo o seguinte modelo:
-
-[[[
-```Curl
+```curl
 curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
 --header 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
 --header 'Content-Type: application/json' \
@@ -778,6 +784,7 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
 ```
 ]]]
 
+
 Você deve preencher os campos para enviar um pagamento seguindo as especificações das tabelas abaixo:
 
 |      CAMPO     |  TIPO  |                               DESCRIÇÃO                              |                           VALIDAÇÕES                          |
@@ -817,49 +824,42 @@ A resposta retornará o seguinte resultado:
 [[[
 ```json
 {
-  "id": 1111111111111,
-  "date_created": "2022-11-07T15:47:21.753-04:00",
-  "date_last_updated": "2022-11-07T15:47:21.753-04:00",
-  "date_of_expiration": "2022-11-24T22:59:59.000-04:00",
-  "operation_type": "regular_payment",
-  "payment_method_id": "bolbradesco",
-  "payment_type_id": "ticket",
+  "id": 123456789,
   "status": "pending",
   "status_detail": "pending_waiting_payment",
-  "currency_id": "BRL",
-  "description": "Streaming subscription",
-  "site_id": "MLB",
-  "marketplace": "NONE",
-  ...
   "payment_method": {
     "id": "bolbradesco",
     "type": "ticket",
     "data": {
-      "paid_date": null,
       "rules": {
         "discounts": [
-            {
-                "type": "fixed",
-                "value": 1,
-                "limit_date": "2022-11-10",
-                "amount_applied": 0
-            }
+          {
+            "value": 1,
+            "type": "fixed",
+            "limit_date": "2022-12-12"
+          }
         ],
         "fine": {
-            "type": "percentage",
-            "value": 2,
-            "amount_applied": 0
+          "value": 2,
+          "type": "percentage"
         },
         "interest": {
-            "type": "percentage",
-            "value": 0.03,
-            "amount_applied": 0
+          "value": 0.03,
+          "type": "percentage"
         }
       }
     }
+  },
+  "transaction_details": {
+    "net_received_amount": 0,
+    "total_paid_amount": 100,
+    "overpaid_amount": 0,
+    "external_resource_url": "https://www.mercadopago.com.br/payments/123456789/ticket?caller_id=123456&hash=e10c4695-49a0-475e-8adc-29a8055b9167",
+    "installment_amount": 0,
+    "financial_institution": null,
+    "payment_method_reference_id": "1234567890"
   }
 }
-
 ```
 ]]]
 
