@@ -54,7 +54,7 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 | BUSINESS_UNIT | Corresponde al canal por medio del cual se generó una venta. Los canales son Mercado Pago, Mercado Libre, Mercado Shops y Delivery.|
 | SUB_UNIT | Permite identificar el medio que se utilizó para cobrar una venta con Mercado Pago. | ------------  ----[mco, mlc, mpe, mlu]---- ------------
 | BALANCE_AMOUNT | En esta columna se visualiza el saldo que queda en una cuenta luego de que se ejecuta una operación que afecta el valor total. |
-| PAYOUT_BANK_ACCOUNT_NUMBER | Aquí se muestran los últimos cuatro números de la cuenta a la que se envió dinero desde mercado pago. |
+| PAYOUT_BANK_ACCOUNT_NUMBER | Aquí se muestra el número completo de la cuenta a la que se envió dinero desde Mercado Pago. |
 > INFO
 >
 > (*) Esta información solo se podrá usar para conciliar, será tratada conforme a las leyes de protección de datos
