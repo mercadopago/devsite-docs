@@ -7,13 +7,44 @@ Este modelo de suscripción se puede realizar de dos formas:
 * [Con pago autorizado](/developers/es/guides/subscriptions/integration-configuration/subscription-no-associated-plan#bookmark_suscripciones_con_pago_autorizado) 
 * [Con pago pendiente](/developers/es/guides/subscriptions/integration-configuration/subscription-no-associated-plan#bookmark_suscripciones_con_pago_pendiente)
 
+> NOTE
+>
+> Importante
+>
+> Crear suscripciones en `status = Pending` está soportado únicamente para Suscripciones sin plan asociado.
+
 ## Suscripciones con pago autorizado
 
 Las suscripciones con pago autorizado permiten generar y facturar la cuota de una suscripción en función de la periodicidad definida, lo que hace que el motor de suscripciones programe y cree automáticamente pagos en función del método de pago definido en el momento de la creación de la firma.
 
-Para ofrecer **suscripciones sin plan asociado y con pago autorizado**, envía un POST con los atributos necesarios al endpoint [/preapproval](/developers/es/reference/subscriptions/_preapproval/post) y presta atención al parámetro `status`, que debe ser rellenado con el valor `autorizado`. 
+Para ofrecer **suscripciones sin plan asociado y con pago autorizado**, envía un POST con los atributos necesarios al endpoint [/preapproval](/developers/es/reference/subscriptions/_preapproval/post) y presta atención al parámetro `status`, que debe ser rellenado con el valor `authorized`. Si lo prefiere, use el _curl_ a continuación.
 
-Después de completar los campos, ejecuta la solicitud.
+[[[
+```curl
+
+curl --location --request POST 'https://api.mercadopago.com/preapproval?access_token=APP_USR-????????' \
+--header 'Content-Type: application/json' \
+--header 'X-scope: stage' \
+--data-raw '{
+		"back_url":"https://www.google.com",
+	"reason":"Test Subscription",
+	"auto_recurring":{
+         "frequency": 1,
+         "frequency_type": "months",
+         "start_date": "2020-06-02T13:07:14.260Z",
+         "end_date": "2022-07-20T15:59:52.581Z",
+         "transaction_amount": 10,
+         "currency_id": "ARS"
+		}
+	},
+    "payer_email": "test_user+1020927396@testuser.com",
+    "card_token_id":"{{EL_CARD_TOKEN_QUE_CREASTE}}",
+	"status":"authorized"
+}'
+```
+]]]
+
+Después de completar los campos, ejecuta el request.
 
 > NOTE
 >
@@ -85,9 +116,30 @@ Las suscripciones con pago pendiente son un modelo de suscripción donde no se d
 
 En este caso, es posible actualizar la suscripción y definir un medio de pago a través del endpoint [/preapproval/{id}](/developers/es/reference/subscriptions/_preapproval_id/put), o compartir un link de pago para que el comprador pueda completar la compra con el método de pago de su elección.
 
-Para ofrecer **suscripciones sin plan asociado y con pago pendiente**, envía un POST con los atributos necesarios al endpoint [/preapproval](/developers/es/reference/subscriptions/_preapproval/post) y presta atención al parámetro `status`, que debe ser rellenado con el valor `pending`. 
+Para ofrecer **suscripciones sin plan asociado y con pago pendiente**, envía un POST con los atributos necesarios al endpoint [/preapproval](/developers/es/reference/subscriptions/_preapproval/post) y presta atención al parámetro `status`, que debe ser rellenado con el valor `pending`. Si lo prefiere, usa el curl a continuación.
 
-Después de completar los campos, ejecute la solicitud.
+[[[
+```curl
+
+curl --location --request POST 'https://api.mercadopago.com/preapproval' \
+--header 'Authorization: Bearer YOU_ACCESS_TOKEN' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "reason": "Yoga classes",
+    "external_reference": "YG-1234",
+    "payer_email": "test_user_75650838@testuser.com",
+    "auto_recurring": {
+        "frequency": 1,
+        "frequency_type": "months",
+        "end_date": "2023-07-20T15:59:52.581Z",
+        "transaction_amount": 10,
+        "currency_id": "BRL"
+    },
+    "back_url": "https://www.yoursite.com",
+    "status": "pending"
+}'
+```
+]]]
 
 > PREV_STEP_CARD_ES
 >

@@ -13,19 +13,3 @@ En la siguiente tabla encontrarás más información sobre las posibilidades de 
 | Cambiar la fecha de facturación | Para las suscripciones con una frecuencia de pago mensual, puede elegir un día fijo del mes para que se produzca la facturación. Para hacerlo, envía un PUT con los parámetros necesarios al endpoint [/preapproval/{id}](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/subscriptions/_preapproval_id/put) y ejecuta la solicitud. |
 | Establecer monto proporcional | Puedes establecer un monto proporcional para facturar una suscripción en particular. Para hacerlo, envía un PUT con los parámetros necesarios al endpoint [/preapproval/{id}](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/subscriptions/_preapproval_id/put) y ejecuta la solicitud. |
 | Ofrecer prueba gratuita | Es posible ofrecer un período de prueba gratuito para que los clientes puedan probar el producto y/o servicio antes de comprarlo. Para ello, envía un PUT con los parámetros `free_trial`, `frequency` y `frequency_type` con el número de días y el tipo (días/meses) al endpoint [/preapproval_plan/{id}](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/subscriptions/_preapproval_plan_id/put) y ejecuta la solicitud. |
-
-> PREV_STEP_CARD_ES 
->
-> Haz una compra de prueba
->
-> Sepa cómo hacer una compra de prueba y validar los trabajos de suscripción.
->
-> [Haz una compra de prueba](/developers/es/docs/subscriptions/integration-test/payment-approval)
-
-> NEXT_STEP_CARD_ES
->
-> Procesamiento de ventas
->
-> Sepa gestionar pagos, contracargos y devoluciones.
->
-> [Procesamiento de ventas](/developers/es/docs/subscriptions/production-mode/sales-processing/payment-methods)
