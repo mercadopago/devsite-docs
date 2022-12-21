@@ -308,7 +308,6 @@ To render the Brick, insert the following code after the previous step and fill 
 const renderWalletBrick  = async (bricksBuilder) => {
  const settings = {
  initialization: {
-   amount: 100, // total amount to be paid
    preferenceId: '<PREFERENCE_ID>', // preferenceId generated in the backend
  },
  callbacks: {
