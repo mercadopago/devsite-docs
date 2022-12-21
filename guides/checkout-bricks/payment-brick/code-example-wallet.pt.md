@@ -1,6 +1,6 @@
 # Exemplo de código (Conta Mercado Pago)
  
-Para facilitar e otimizar o seu processo de integração, veja abaixo um exemplo completo de como incluir a Carteira Mercado Pago como meio de pagamento com o Payment Brick.
+Para facilitar e otimizar o seu processo de integração, veja abaixo um exemplo completo de como incluir a Conta Mercado Pago como meio de pagamento com o Payment Brick.
 
 > SERVER_SIDE
 >
@@ -8,7 +8,7 @@ Para facilitar e otimizar o seu processo de integração, veja abaixo um exemplo
 >
 > Crie sua preferência
 
-----[mla, mlb, mlu, mpe, mlm]----
+----[mlu, mpe]----
 [[[
 ```php
 <?php
@@ -188,7 +188,6 @@ curl -X POST \
 ]]]
 
 ------------
-
 ----[mlc, mco]----
 [[[
 ```php

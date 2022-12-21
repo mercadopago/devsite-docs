@@ -87,3 +87,22 @@ settings = {
 }
 ```
 ------------
+----[mlm]----
+## Other payment methods
+
+In the form displayed for payment by **ticket**, you can start with the fields already filled in. For this, it is necessary to pass the following configuration in the Brick's initialization object.
+
+```javascript
+settings = {
+  ...,
+  initialization: {
+    ...,
+    payer: {
+      email: 'jose@maria.com',
+      firstName: 'Jose',
+      lastName: 'Maria',
+    }
+  }
+}
+```
+------------

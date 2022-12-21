@@ -45,11 +45,3 @@ curl --location
 > Importante
 >
 > Te notificaremos por correo electrónico cuando llegue tu fecha límite de migración. Es importante que programes y tengas preparados los cambios para la migración, ya que todos los `Planes` y `Suscripciones` con estado **cancelado**, **inactivo** y/o **finalizado**, así como `Invoices` de más de seis meses no se migrarán.
-
-> PREV_STEP_CARD_ES
->
-> Procesamiento de ventas
->
-> Saber gestionar pagos, contracargos y devoluciones.
->
-> [Procesamiento de ventas](/developers/es/docs/subscriptions/production-mode/sales-processing/cancellations-and-refunds)

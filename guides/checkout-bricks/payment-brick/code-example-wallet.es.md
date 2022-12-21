@@ -8,7 +8,7 @@ Para facilitar y optimizar su proceso de integración, ve a continuación un eje
 >
 > Crea tu preferencia
 
-----[mla, mlb, mlu, mpe, mlm]----
+----[mlu, mpe]----
 [[[
 ```php
 <?php
