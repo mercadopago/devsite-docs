@@ -232,7 +232,7 @@ curl -X POST \
 >
 > Para más detalles sobre cómo configurarlo, acceda a la sección [Preferencias.](/developers/es/docs/checkout-bricks/wallet-brick/additional-customization/preferences)<br/></br>
 > <br/></br>
-> Considera que cuando un usuario elige realizar un pago a través de la Billetera de Mercado Pago, será redirigido a la página de Mercado Pago para completar el pago. Por lo tanto, es necesario configurar `back_url`s si desea volver a su sitio al finalizar el pago. Para obtener más información, visite la sección [Redirigir al comprador a su sitio web.](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/preferences#bookmark_redirigir_al_comprador_a_tu_sitio_web)
+> Considera que cuando un usuario elige realizar un pago a través de la Billetera de Mercado Pago, será redirigido a la página de Mercado Pago para completar el pago. Por lo tanto, es necesario configurar `back_url`s si desea volver a su sitio al finalizar el pago. Para obtener más información, visite la sección [Redirigir al comprador a su sitio web.](/developers/es/docs/checkout-bricks/wallet-brick/additional-customization/preferences#bookmark_redirigir_al_comprador_a_tu_sitio_web)
 
 > CLIENT_SIDE
 >
@@ -249,7 +249,7 @@ Deberás crear un container para definir dónde se colocará el Brick en la pant
 > El valor que se muestra en la propiedad `id` a continuación es solo un ejemplo y puede ser alterado, pero siempre debe coincidir con el `id` indicado en la renderización.
 
 ```html
-  <div id="paymentBrick_container"></div>
+  <div id="walletBrick_container"></div>
 ```
 
 > CLIENT_SIDE
@@ -332,7 +332,7 @@ const renderWalletBrick  = async (bricksBuilder) => {
  },
 };
  
- window.paymentBrickController = await bricksBuilder.create(
+ window.walletBrickController = await bricksBuilder.create(
    'wallet',
    'walletBrick_container',
    settings
