@@ -65,7 +65,7 @@ sdk = mercadopago.SDK("PROD_ACCESS_TOKEN")
 
 Luego configura la preferencia de acuerdo a tu producto o servicio:
 
-----[mla, mlb, mlu, mpe, mlm]----
+----[mlu, mpe]----
 
 [[[
 ```php
@@ -214,7 +214,6 @@ curl -X POST \
 ]]]
 
 ------------
-
 ----[mlc, mco]----
 
 [[[
@@ -433,7 +432,7 @@ const bricksBuilder = mp.bricks();
 >
 > Atención
 >
-> Durante la instanciación del Brick, es posible que aparezcan diferentes errores. Para más detalles sobre cada uno de ellos, consulta la sección [Posibles errores](/developers/es/docs/checkout-bricks/additional-content/possible-errors).
+> Durante la instanciación del Brick, es posible que aparezcan diferentes errores. Para más detalles sobre cada uno de ellos, consulta la sección [Posibles errores.](/developers/es/docs/checkout-bricks/additional-content/possible-errors)
 
 > CLIENT_SIDE
 >
@@ -482,20 +481,8 @@ renderPaymentBrick(bricksBuilder);
 
 El resultado de renderizar el Brick debe ser como la imagen de abajo:
 
-----[mlb]---- 
-![payment-Brick-wallet-mlb](checkout-bricks/payment-brick-wallet-mlb-es.png)
-
-------------
-----[mla]---- 
-![payment-Brick-wallet-mla](checkout-bricks/payment-brick-wallet-mla-es.png)
-
-------------
 ----[mlc]---- 
 ![payment-Brick-wallet-mlc](checkout-bricks/payment-brick-wallet-mlc-es.png)
-
-------------
-----[mlm]---- 
-![payment-Brick-wallet-mlm](checkout-bricks/payment-brick-wallet-mlm-es.png)
 
 ------------
 ----[mlu]---- 

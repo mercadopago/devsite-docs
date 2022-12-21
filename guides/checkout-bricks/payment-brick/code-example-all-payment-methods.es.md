@@ -8,9 +8,14 @@ Para facilitar y optimizar su proceso de integración, ve a continuación un eje
 >
 > Crea tu preferencia
 
-> Requerido para Cuenta de Mercado Pago.
+----[mla, mlb]---- 
+> Requerido para Cuenta de Mercado Pago y Cuotas sin tarjeta.
+------------
 
-----[mla, mlb, mlu, mpe, mlm]----
+----[mlm]----
+> Requerido para Cuenta de Mercado Pago y Meses sin tarjeta de crédito.
+------------
+
 [[[
 ```php
 <?php
@@ -24,7 +29,7 @@ Para facilitar y optimizar su proceso de integración, ve a continuación un eje
 
   // Crear un elemento en la preferencia
   $item = new MercadoPago\Item();
-  $item->title = 'Meu produto';
+  $item->title = 'Meu producto';
   $item->quantity = 1;
   $item->unit_price = 75.56;
   $preference->items = array($item);
@@ -51,7 +56,7 @@ let preference = {
   "items": [
     {
       "id": "item-ID-1234",
-      "title": "Meu produto",
+      "title": "Meu producto",
       "quantity": 1,
       "unit_price": 75.76
     }
@@ -79,7 +84,7 @@ PreferenceClient client = new PreferenceClient();
 List<PreferenceItemRequest> items = new ArrayList<>();
 PreferenceItemRequest item =
    PreferenceItemRequest.builder()
-       .title("Meu produto")
+       .title("Meu producto")
        .quantity(1)
        .unitPrice(new BigDecimal("100"))
        .build();
@@ -106,7 +111,7 @@ preference_data = {
   purpose: 'wallet_purchase',
   items: [
     {
-      title: 'Meu produto',
+      title: 'Mi producto',
       unit_price: 75.56,
       quantity: 1
     }
@@ -134,7 +139,7 @@ var request = new PreferenceRequest
     {
         new PreferenceItemRequest
         {
-            Title = "Meu produto",
+            Title = "Mi producto",
             Quantity = 1,
             CurrencyId = "BRL",
             UnitPrice = 75.56m,
@@ -187,188 +192,6 @@ curl -X POST \
 }'
 ```
 ]]]
-
-------------
-
-----[mlc, mco]----
-[[[
-```php
-<?php
-  // SDK do Mercado Pago
-  require __DIR__ .  '/vendor/autoload.php';
-  // Agregar credenciales
-  MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
-
-  // Crear un objeto de preferencia
-  $preference = new MercadoPago\Preference();
-
-  // Crear un elemento en la preferencia
-  $item = new MercadoPago\Item();
-  $item->title = 'Meu produto';
-  $item->quantity = 1;
-  $item->unit_price = 75.56;
-  $preference->items = array($item);
-
-  // el $preference->purpose = 'wallet_purchase'; solo permite pagos registrados
-  // para permitir pagos de guest, puede omitir esta propiedad
-  $preference->purpose = 'wallet_purchase';
-  $preference->save();
-?>
-```
-```node
-// SDK de Mercado Pago
-const mercadopago = require ('mercadopago');
-// Agregar credenciales
-mercadopago.configure({
- access_token: 'PROD_ACCESS_TOKEN'
-});
- 
-// Crear un objeto de preferencia
-let preference = {
-  // el "purpose": "wallet_purchase" solo permite pagos registrados
-  // para permitir pagos de guest, puede omitir esta propiedad
-  "purpose": "wallet_purchase",
-  "items": [
-    {
-      "id": "item-ID-1234",
-      "title": "Meu produto",
-      "quantity": 1,
-      "unit_price": 75.76
-    }
-  ]
-};
-
-mercadopago.preferences.create(preference)
-  .then(function (response) {
-    // Este valor es el ID de preferencia que se enviará al ladrillo al inicio
-    const preferenceId = response.body.id;
-  }).catch(function (error) {
-    console.log(error);
-  });
-```
-```java
-// SDK de Mercado Pago
-import com.mercadopago.MercadoPagoConfig;
-// Agregar credenciales
-MercadoPagoConfig.setAccessToken("PROD_ACCESS_TOKEN");
-
-// Crear un objeto de preferencia
-PreferenceClient client = new PreferenceClient();
-
-// Crear un elemento en la preferencia
-List<PreferenceItemRequest> items = new ArrayList<>();
-PreferenceItemRequest item =
-   PreferenceItemRequest.builder()
-       .title("Meu produto")
-       .quantity(1)
-       .unitPrice(new BigDecimal("100"))
-       .build();
-items.add(item);
-
-PreferenceRequest request = PreferenceRequest.builder()
-  // el .purpose('wallet_purchase') solo permite pagos registrados
-  // para permitir pagos de guest, puede omitir esta línea
-  .purpose('wallet_purchase')
-  .items(items).build();
-
-client.create(request);
-```
-```ruby
-# SDK de Mercado Pago
-require 'mercadopago'
-# Agregar credenciales
-sdk = Mercadopago::SDK.new('PROD_ACCESS_TOKEN')
-
-# Crear un objeto de preferencia
-preference_data = {
-  # el purpose: 'wallet_purchase', solo permite pagos registrados
-  # para permitir pagos de guests, puede omitir esta propiedad
-  purpose: 'wallet_purchase',
-  items: [
-    {
-      title: 'Meu produto',
-      unit_price: 75.56,
-      quantity: 1
-    }
-  ]
-}
-preference_response = sdk.preference.create(preference_data)
-preference = preference_response[:response]
-
-# Este valor es el ID de preferencia que usará en el HTML en el inicio del Brick
-@preference_id = preference['id']
-```
-```csharp
-// SDK de Mercado Pago
- using MercadoPago.Config;
- // Agregar credenciales
-MercadoPagoConfig.AccessToken = "PROD_ACCESS_TOKEN";
-
-// Crear el objeto de request de preferencia
-var request = new PreferenceRequest
-{
-  // el Purpose = 'wallet_purchase', solo permite pagos registrados
-  // para permitir pagos de invitados, puede omitir esta propiedad
-    Purpose = 'wallet_purchase',
-    Items = new List<PreferenceItemRequest>
-    {
-        new PreferenceItemRequest
-        {
-            Title = "Meu produto",
-            Quantity = 1,
-            CurrencyId = "BRL",
-            UnitPrice = 75.56m,
-        },
-    },
-};
-
-// Crea la preferencia usando el cliente
-var client = new PreferenceClient();
-Preference preference = await client.CreateAsync(request);
-```
-```python
-# SDK de Mercado Pago
-import mercadopago
-# Agregar credenciales
-sdk = mercadopago.SDK("PROD_ACCESS_TOKEN")
-
-# Crear un elemento en la preferencia
-preference_data = {
-  # el "purpose": "wallet_purchase", solo permite pagos registrados
-  # para permitir pagos de invitados, puede omitir esta propiedad
-    "purpose": "wallet_purchase",
-    "items": [
-        {
-            "title": "Mi elemento",
-            "quantity": 1,
-            "unit_price": 75.76
-        }
-    ]
-}
-
-preference_response = sdk.preference().create(preference_data)
-preference = preference_response["response"]
-```
-```curl
-curl -X POST \
-  'https://api.mercadopago.com/checkout/preferences' \
-  -H 'Content-Type: application/json' \
-  -H 'cache-control: no-cache' \
-  -H 'Authorization: Bearer **PROD_ACCESS_TOKEN**' \
-  -d '{
-    "purpose": "wallet_purchase",
-    "items": [
-        {
-            "title": "Mi producto",
-            "quantity": 1,
-            "unit_price": 75.76
-        }
-    ]
-}'
-```
-]]]
-
-------------
 
 > CLIENT_SIDE
 >
@@ -376,99 +199,326 @@ curl -X POST \
 >
 > Configurar la integración
 
+----[mla]---- 
 ```html
 <!DOCTYPE html>
 <html lang="en">
+ 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bricks</title>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Bricks</title>
 </head>
+ 
 <body>
-  <div id="paymentBrick_container"></div>
-  <script src="https://sdk.mercadopago.com/js/v2"></script>
-  <script>
-    const mp = new MercadoPago('YOUR_PUBLIC_KEY');
-    const bricksBuilder = mp.bricks();
-    const renderPaymentBrick = async (bricksBuilder) => {
-      const settings = {
-        initialization: {
-           /*
+ <div id="paymentBrick_container"></div>
+ <script src="https://sdk.mercadopago.com/js/v2"></script>
+ <script>
+   const mp = new MercadoPago('YOUR_PUBLIC_KEY');
+   const bricksBuilder = mp.bricks();
+   const renderPaymentBrick = async (bricksBuilder) => {
+     const settings = {
+       initialization: {
+         /*
            "amount" es el monto a ser pago
            por todos los medios de pago a excepción de la Cuenta de Mercado Pago,
            que tiene su valor de procesamiento determinado en el backend a través de "preferenceId"
-           */
-          amount: 100, // cantidad de procesamiento a realizar
-          preferenceId: '<PREFERENCE_ID>', // preferenceId generado en el backend
-        },
-        customization: {
-          paymentMethods: {
-            creditCard: 'all',
-            debitCard: 'all',
-            ticket: 'all',
-          },
-        },
-        callbacks: {
-          onReady: () => {
-            /*
+         */
+         amount: 100, // cantidad de procesamiento a realizar
+         preferenceId: '<PREFERENCE_ID>', // preferenceId generado en el backend
+       },
+       customization: {
+         paymentMethods: {
+           creditCard: 'all',
+           debitCard: 'all',
+           ticket: 'all',
+           mercadoPago: 'all',
+         },
+       },
+       callbacks: {
+         onReady: () => {
+           /*
              Callback llamado cuando Brick está listo
              Aquí puedes ocultar loadings de su sitio, por ejemplo.
-            */
-          },
-          onSubmit: ({ selectedPaymentMethod, formData }) => {
-            //  callback llamado al hacer clic en el botón de envío de datos
-
-            return new Promise((resolve, reject) => {
-              let url = undefined;
-
-              if (selectedPaymentMethod === 'credit_card' || selectedPaymentMethod === 'debit_card') {
-                url = 'process_payment_card';
-              } else if (selectedPaymentMethod === 'ticket') {
-                url = 'process_payment_ticket';
-              }
-
-              if (url) {
-                fetch(url, {
-                  method: "POST",
-                  headers: {
-                    "Content-Type": "application/json",
-                  },
-                  body: JSON.stringify(formData)
-                })
-                  .then((response) => {
-                    // recibir el resultado del pago
-                    resolve();
-                  })
-                  .catch((error) => {
-                    // manejar la respuesta de error al intentar crear el pago
-                    reject();
-                  })
-              } else if (selectedPaymentMethod === 'wallet_purchase') {
-                // wallet_purchase (Cuenta de Mercado Pago) no necesita ser enviado desde el backend
-                resolve();
-              } else {
-                reject();
-              }
-            });
-          },
-          onError: (error) => {
-            // callback llamado para todos los casos de error de Brick
-            console.error(error);
-          },
-        },
-      };
-      window.paymentBrickController = await bricksBuilder.create(
-        'payment',
-        'paymentBrick_container',
-        settings
-      );
-    };
-    renderPaymentBrick(bricksBuilder);
-  </script>
+           */
+         },
+         onSubmit: ({ selectedPaymentMethod, formData }) => {
+           // callback llamado al hacer clic en el botón de envío de datos
+ 
+           return new Promise((resolve, reject) => {
+             let url = undefined;
+ 
+             if (selectedPaymentMethod === 'credit_card' || selectedPaymentMethod === 'debit_card') {
+               url = 'process_payment_card';
+             } else if (selectedPaymentMethod === 'ticket') {
+               url = 'process_payment_ticket';
+             }
+ 
+             if (url) {
+               fetch(url, {
+                 method: "POST",
+                 headers: {
+                   "Content-Type": "application/json",
+                 },
+                 body: JSON.stringify(formData)
+               })
+                 .then((response) => {
+                   // recibir el resultado del pago
+                   resolve();
+                 })
+                 .catch((error) => {
+                   // manejar la respuesta de error al intentar crear el pago
+                   reject();
+                 })
+             } else if (
+               selectedPaymentMethod === 'wallet_purchase' ||
+               selectedPaymentMethod === 'onboarding_credits'
+             ) {
+               /*
+                 wallet_purchase (Cuenta de Mercado Pago) e
+                 onboarding_credits (Cuotas sin tarjeta)
+                 no necesita ser enviado desde el backend
+		           */
+               resolve();
+             } else {
+               reject();
+             }
+           });
+         },
+         onError: (error) => {
+           // callback llamado para todos los casos de error de Brick
+           console.error(error);
+         },
+       },
+     };
+     window.paymentBrickController = await bricksBuilder.create(
+       'payment',
+       'paymentBrick_container',
+       settings
+     );
+   };
+   renderPaymentBrick(bricksBuilder);
+ </script>
+</body>
+ 
+</html>
+```
+------------
+----[mlm]---- 
+```html
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Bricks</title>
+</head>
+ 
+<body>
+ <div id="paymentBrick_container"></div>
+ <script src="https://sdk.mercadopago.com/js/v2"></script>
+ <script>
+   const mp = new MercadoPago('YOUR_PUBLIC_KEY');
+   const bricksBuilder = mp.bricks();
+   const renderPaymentBrick = async (bricksBuilder) => {
+     const settings = {
+       initialization: {
+         /*
+           "amount" es el monto a ser pago
+           por todos los medios de pago a excepción de la Cuenta de Mercado Pago,
+           que tiene su valor de procesamiento determinado en el backend a través de "preferenceId"
+         */
+         amount: 100, // cantidad de procesamiento a realizar
+         preferenceId: '<PREFERENCE_ID>', // preferenceId generado en el backend
+       },
+       customization: {
+         paymentMethods: {
+           creditCard: 'all',
+           debitCard: 'all',
+           ticket: 'all',
+           mercadoPago: 'all',
+         },
+       },
+       callbacks: {
+         onReady: () => {
+           /*
+             Callback llamado cuando Brick está listo
+             Aquí puedes ocultar loadings de su sitio, por ejemplo.
+           */
+         },
+         onSubmit: ({ selectedPaymentMethod, formData }) => {
+           // callback llamado al hacer clic en el botón de envío de datos
+ 
+           return new Promise((resolve, reject) => {
+             let url = undefined;
+ 
+             if (selectedPaymentMethod === 'credit_card' || selectedPaymentMethod === 'debit_card') {
+               url = 'process_payment_card';
+             } else if (selectedPaymentMethod === 'ticket') {
+               url = 'process_payment_ticket';
+             }
+ 
+             if (url) {
+               fetch(url, {
+                 method: "POST",
+                 headers: {
+                   "Content-Type": "application/json",
+                 },
+                 body: JSON.stringify(formData)
+               })
+                 .then((response) => {
+                   // recibir el resultado del pago
+                   resolve();
+                 })
+                 .catch((error) => {
+                   // manejar la respuesta de error al intentar crear el pago
+                   reject();
+                 })
+             } else if (
+               selectedPaymentMethod === 'wallet_purchase' ||
+               selectedPaymentMethod === 'onboarding_credits'
+             ) {
+               /*
+                 wallet_purchase (Cuenta de Mercado Pago) e
+                 onboarding_credits (Meses sin tarjeta)
+                 no necesita ser enviado desde el backend
+		           */
+               resolve();
+             } else {
+               reject();
+             }
+           });
+         },
+         onError: (error) => {
+           // callback llamado para todos los casos de error de Brick
+           console.error(error);
+         },
+       },
+     };
+     window.paymentBrickController = await bricksBuilder.create(
+       'payment',
+       'paymentBrick_container',
+       settings
+     );
+   };
+   renderPaymentBrick(bricksBuilder);
+ </script>
+</body>
+ 
+</html>
+```
+------------
+----[mlb]----
+```html
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Bricks</title>
+</head>
+ 
+<body>
+ <div id="paymentBrick_container"></div>
+ <script src="https://sdk.mercadopago.com/js/v2"></script>
+ <script>
+   const mp = new MercadoPago('YOUR_PUBLIC_KEY');
+   const bricksBuilder = mp.bricks();
+   const renderPaymentBrick = async (bricksBuilder) => {
+     const settings = {
+       initialization: {
+         /*
+           "amount" es el monto a ser pago
+           por todos los medios de pago a excepción de la Cuenta de Mercado Pago,
+           que tiene su valor de procesamiento determinado en el backend a través de "preferenceId"
+         */
+         amount: 100, // cantidad de procesamiento a realizar
+         preferenceId: '<PREFERENCE_ID>', // preferenceId generado en el backend
+       },
+       customization: {
+         paymentMethods: {
+           creditCard: 'all',
+           debitCard: 'all',
+           ticket: 'all',
+           bankTransfer: 'all',
+           mercadoPago: 'all',
+         },
+       },
+       callbacks: {
+         onReady: () => {
+           /*
+             Callback llamado cuando Brick está listo
+             Aquí puedes ocultar loadings de su sitio, por ejemplo.
+           */
+         },
+         onSubmit: ({ selectedPaymentMethod, formData }) => {
+           // callback llamado al hacer clic en el botón de envío de datos
+ 
+           return new Promise((resolve, reject) => {
+             let url = undefined;
+ 
+             if (selectedPaymentMethod === 'credit_card' || selectedPaymentMethod === 'debit_card') {
+               url = 'process_payment_card';
+             } else if (selectedPaymentMethod === 'bank_transfer') {
+               url = 'process_payment_pix';
+             } else if (selectedPaymentMethod === 'ticket') {
+               url = 'process_payment_ticket';
+             }
+ 
+             if (url) {
+               fetch(url, {
+                 method: "POST",
+                 headers: {
+                   "Content-Type": "application/json",
+                 },
+                 body: JSON.stringify(formData)
+               })
+                 .then((response) => {
+                   // recibir el resultado del pago
+                   resolve();
+                 })
+                 .catch((error) => {
+                   // manejar la respuesta de error al intentar crear el pago
+                   reject();
+                 })
+             } else if (
+               selectedPaymentMethod === 'wallet_purchase' ||
+               selectedPaymentMethod === 'onboarding_credits'
+             ) {
+               /*
+                 wallet_purchase (Cuenta de Mercado Pago) e
+                 onboarding_credits (Cuotas sin tarjeta)
+                 no necesita ser enviado desde el backend
+		           */
+               resolve();
+             } else {
+               reject();
+             }
+           });
+         },
+         onError: (error) => {
+           // callback llamado para todos los casos de error de Brick
+           console.error(error);
+         },
+       },
+     };
+     window.paymentBrickController = await bricksBuilder.create(
+       'payment',
+       'paymentBrick_container',
+       settings
+     );
+   };
+   renderPaymentBrick(bricksBuilder);
+ </script>
 </body>
 </html>
 ```
+------------
 
 > SERVER_SIDE
 >
@@ -476,7 +526,15 @@ curl -X POST \
 >
 > Envía el pago a Mercado Pago
 
+----[mla, mlb]---- 
 > Los pagos con **Cuenta de Mercado Pago** no necesitan ser enviados a través del backend. Si el usuario selecciona esta opción como medio de pago, el `preferenceId` enviado en la inicialización del Brick es el encargado de redirigir al comprador al sitio web de Mercado Pago, donde el pago se realizará directamente en nuestro sitio. Para redirigir al comprador a tu sitio, puede configurar `back_urls` como se describe [en este artículo.](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/preferences#bookmark_redirigir_al_comprador_a_tu_sitio_web)
+
+------------
+
+----[mlm]----
+> Los pagos con **Cuenta de Mercado Pago** no necesitan ser enviados a través del backend. Si el usuario selecciona esta opción como medio de pago, el `preferenceId` enviado en la inicialización del Brick es el encargado de redirigir al comprador al sitio web de Mercado Pago, donde el pago se realizará directamente en nuestro sitio. Para redirigir al comprador a tu sitio, puede configurar `back_urls` como se describe [en este artículo.](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/preferences#bookmark_redirigir_al_comprador_a_tu_sitio_web)
+
+------------
 
 * Para el endpoint `/process_payment_card`:
 
@@ -1116,7 +1174,7 @@ curl -X POST \
  
  $payment = new MercadoPago\Payment();
  $payment->transaction_amount = 100;
- $payment->description = "Titulo del producto";
+ $payment->description = "Título del producto";
  $payment->payment_method_id = "rapipago";
  $payment->payer = array(
      "email" => "test@test.com",
@@ -1132,7 +1190,7 @@ mercadopago.configurations.setAccessToken(config.access_token);
  
 var payment_data = {
   transaction_amount: 100,
-  description: 'Titulo del producto',
+  description: 'Título del producto',
   payment_method_id: 'rapipago',
   payer: {
     email: 'test@test.com',
@@ -1151,7 +1209,7 @@ PaymentClient client = new PaymentClient();
 PaymentCreateRequest paymentCreateRequest =
    PaymentCreateRequest.builder()
        .transactionAmount(new BigDecimal("100"))
-       .description("Titulo del producto")
+       .description("Título del producto")
        .paymentMethodId("rapipago")
        .dateOfExpiration(OffsetDateTime.of(2023, 1, 10, 10, 10, 10, 0, ZoneOffset.UTC))
        .payer(
@@ -1168,7 +1226,7 @@ sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
  
 payment_request = {
   transaction_amount: 100,
-  description: 'Titulo del producto',
+  description: 'Título del producto',
   payment_method_id: 'rapipago',
   payer: {
     email: 'test@test.com',
@@ -1189,7 +1247,7 @@ MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
 var request = new PaymentCreateRequest
 {
     TransactionAmount = 105,
-    Description = "Titulo del producto",
+    Description = "Título del producto",
     PaymentMethodId = "rapipago",
     Payer = new PaymentPayerRequest
     {
@@ -1206,7 +1264,7 @@ sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
  
 payment_data = {
     "transaction_amount": 100,
-    "description": "Titulo del producto",
+    "description": "Título del producto",
     "payment_method_id": "rapipago",
     "payer": {
         "email": "test@test.com",
@@ -1224,11 +1282,164 @@ curl -X POST \
     'https://api.mercadopago.com/v1/payments' \
     -d '{
       "transaction_amount": 100,
-      "description": "Titulo del producto",
+      "description": "Título del producto",
       "payment_method_id": "rapipago",
       "payer": {
         "email": "test@test.com",
       }
+    }'
+```
+]]]
+
+------------
+
+----[mlm]----
+* Para el endpoint `/process_payment_ticket`:
+
+[[[
+```php
+<?php
+ 
+ require_once 'vendor/autoload.php';
+ 
+ MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+ 
+ $payment = new MercadoPago\Payment();
+ $payment->transaction_amount = 100;
+ $payment->description = "Título del producto";
+ $payment->payment_method_id = "oxxo";
+ $payment->payer = array(
+     "email" => "test@test.com",
+   );
+$payment->metadata = array(
+     "payment_point" => "oxxo",
+   );
+ 
+ $payment->save();
+ 
+?>
+```
+```node
+var mercadopago = require('mercadopago');
+mercadopago.configurations.setAccessToken(config.access_token);
+ 
+var payment_data = {
+  transaction_amount: 100,
+  description: 'Título del producto',
+  payment_method_id: 'oxxo',
+  payer: {
+    email: 'test@test.com',
+  },
+  metadata: {
+    payment_point: 'oxxo',
+  },
+};
+ 
+mercadopago.payment.create(payment_data).then(function (data) {
+ 
+}).catch(function (error) {
+ 
+});
+```
+```java
+PaymentClient client = new PaymentClient();
+PaymentCreateRequest paymentCreateRequest =
+  PaymentCreateRequest.builder()
+      .transactionAmount(new BigDecimal("100"))
+      .description("Título del producto")
+      .paymentMethodId("oxxo")
+      .dateOfExpiration(OffsetDateTime.of(2023, 1, 10, 10, 10, 10, 0, ZoneOffset.UTC))
+      .payer(
+          PaymentPayerRequest.builder()
+              .email("test@test.com").build()
+      )
+      .metadata(
+          Map.of('payment_point', 'oxxo')
+      )
+      .build()
+client.create(paymentCreateRequest);
+```
+```ruby
+require 'mercadopago'
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
+ 
+payment_request = {
+  transaction_amount: 100,
+  description: 'Título del producto',
+  payment_method_id: 'oxxo',
+  payer: {
+    email: 'test@test.com',
+  },
+  metadata: {
+    payment_point: 'oxxo',
+  }
+}
+ 
+payment_response = sdk.payment.create(payment_request)
+payment = payment_response[:response]
+```
+```csharp
+using MercadoPago.Config;
+using MercadoPago.Client.Common;
+using MercadoPago.Client.Payment;
+using MercadoPago.Resource.Payment;
+ 
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
+ 
+var request = new PaymentCreateRequest
+{
+    TransactionAmount = 105,
+    Description = "Título del producto",
+    PaymentMethodId = 'oxxo',
+    Payer = new PaymentPayerRequest
+    {
+        Email = "test@test.com",
+    },
+    Metadata = new Dictionary<string, object>
+    {
+	["payment_point"] = "oxxo",
+    },
+};
+ 
+var client = new PaymentClient();
+Payment payment = await client.CreateAsync(request);
+```
+```python
+import mercadopago
+sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
+ 
+payment_data = {
+    "transaction_amount": 100,
+    "description": "Título del producto",
+    "payment_method_id": "oxxo",
+    "payer": {
+        "email": "test@test.com",
+    },
+    "metadata": {
+        "payment_point": "oxxo",
+    }
+}
+ 
+payment_response = sdk.payment().create(payment_data)
+payment = payment_response["response"]
+```
+```curl
+curl -X POST \
+    -H 'accept: application/json' \
+    -H 'content-type: application/json' \
+    -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/payments' \
+    -d '{
+      "transaction_amount": 100,
+      "description": "Título del producto",
+      "payment_method_id": "oxxo",
+      "payer": {
+        "email": "test@test.com",
+      }
+"metadata": {
+        "payment_point": "oxxo",
+      }
+ 
     }'
 ```
 ]]]

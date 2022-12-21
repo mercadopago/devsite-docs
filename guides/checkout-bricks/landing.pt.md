@@ -32,22 +32,22 @@ future_product_avaible:
  - card_title: Card Payment Brick
  - card_description: Ofereça pagamentos com cartão de crédito e débito.
  - card_link: /developers/pt/docs/checkout-bricks/card-payment-brick/introduction
- - card_linkDescription: Saiba mais.
+ - card_linkDescription: Saiba mais
  - card_pillText: DISPONÍVEL
  - card_avaible: true
  - card_icon: Pay
  - card_title: Payment Brick
  - card_description: Ofereça diferentes métodos de pagamento para os clientes escolherem, com a capacidade de salvar detalhes do cartão para compras futuras.
  - card_link: /developers/pt/docs/checkout-bricks/payment-brick/introduction
- - card_linkDescription: Saiba mais.
+ - card_linkDescription: Saiba mais
  - card_pillText: DISPONÍVEL
  - card_avaible: true
  - card_icon: Loading
  - card_title: Status Screen Brick
  - card_description: Informe os clientes dos resultados do processo de compra após efetuar o pagamento.
  - card_link: /developers/pt/docs/checkout-bricks/status-screen-brick/introduction
- - card_linkDescription: Saiba mais.
- - card_pillText: NOVO
+ - card_linkDescription: Saiba mais
+ - card_pillText: DISPONÍVEL
  - card_avaible: false
  - card_icon: Wallet
  - card_title: Wallet Brick
@@ -93,7 +93,7 @@ available_payments: credit, debit, mercadopago, boleto, pix, pec
 ----[mla]---- 
 
 ---
-available_payments: credit, debit, mercadopago, efectivo
+available_payments: credit, debit, mercadopago, rapipago, pagofacil
 
 ---
 ------------
@@ -101,7 +101,7 @@ available_payments: credit, debit, mercadopago, efectivo
 ----[mlm]---- 
 
 ---
-available_payments: credit, debit, mercadopago
+available_payments: credit, debit, mercadopago, efectivo, atm
 
 ---
 ------------

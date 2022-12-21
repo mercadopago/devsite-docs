@@ -65,7 +65,7 @@ sdk = mercadopago.SDK("PROD_ACCESS_TOKEN")
 
 Then configure the preference according to your product or service:
 
-----[mla, mlb, mlu, mpe, mlm]----
+----[mlu, mpe]----
 
 [[[
  ```php
@@ -480,20 +480,8 @@ renderPaymentBrick(bricksBuilder);
 
 The result of rendering the Brick should be like the image below:”
 
-----[mlb]---- 
-![payment-Brick-wallet-mlb](checkout-bricks/payment-brick-wallet-mlb-en.png)
-
-------------
-----[mla]---- 
-![payment-Brick-wallet-mla](checkout-bricks/payment-brick-wallet-mla-en.png)
-
-------------
 ----[mlc]---- 
 ![payment-Brick-wallet-mlc](checkout-bricks/payment-brick-wallet-mlc-en.png)
-
-------------
-----[mlm]---- 
-![payment-Brick-wallet-mlm](checkout-bricks/payment-brick-wallet-mlm-en.png)
 
 ------------
 ----[mlu]---- 

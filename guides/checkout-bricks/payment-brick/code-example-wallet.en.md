@@ -8,7 +8,7 @@ To facilitate and optimize your integration process, check below a complete exam
 >
 > Create your preference
 
-----[mla, mlb, mlu, mpe, mlm]----
+----[mlu, mpe]----
 [[[
 ```php
 <?php
