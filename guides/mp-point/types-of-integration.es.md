@@ -1,11 +1,7 @@
+----[mla]----
 # Tipos de integración
 
-Es posible usar Point de dos maneras:
-
-* **Sin integración:** En este modelo, el vendedor ingresa manualmente los datos de pago y luego inserta la tarjeta del comprador en la máquina Point. Luego de estos pasos, el vendedor seguirá los siguientes pasos en base a las instrucciones que se muestran en la app de Mercado Pago. Para ofrecer pagos con Point sin integración, consulte la sección [Cómo usar Point sin integración](/developers/es/docs/mp-point/how-tos/how-to-use-point-without-integration).<br><br>
-* **Integrado:** En este modelo, el vendedor tiene 2 tipos diferentes de integración que variarán según las necesidades del negocio y el conocimiento técnico del integrador. Consulte la siguiente tabla para obtener detalles sobre cada tipo de integración disponible y elija la más adecuada para su modelo de negocio.
-
-----[mla]----
+El vendedor tiene 2 tipos diferentes de integración que variarán según las necesidades del negocio y el conocimiento técnico del integrador. Consulta la siguiente tabla para obtener detalles sobre cada tipo de integración disponible y elige la más adecuada para tu modelo de negocio.
 
 | Tipo de integración | Descripción | Dispositivos |
 | --- | --- | --- |
@@ -15,6 +11,10 @@ Es posible usar Point de dos maneras:
 ------------
 
 ----[mlb]----
+# Tipos de integración
+
+El vendedor tiene 2 tipos diferentes de integración que variarán según las necesidades del negocio y el conocimiento técnico del integrador. Consulta la siguiente tabla para obtener detalles sobre cada tipo de integración disponible y elige la más adecuada para tu modelo de negocio.
+
 
 | Tipo de integración | Descripción | Dispositivos |
 | --- | --- | --- |
@@ -24,6 +24,9 @@ Es posible usar Point de dos maneras:
 ------------
 
 ----[mlm]----
+# Integración
+
+El vendedor puede optar por el tipo de integración Deep linking. Consulta la siguiente tabla para obtener los detalles.
 
 | Tipo de integración | Descripción | Dispositivos |
 | --- | --- | --- |
