@@ -4,13 +4,13 @@ Alguns termos são novos e você pode não estar familiarizado com eles. Use est
 
 | Termo | Descrição |
 | --- | --- |
-| Access token | Chave privada com a qual você pode gerar cobranças. Você deve usá-lo para se identificar em suas integrações. É muito importante que esses dados estejam protegidos em seus servidores e não sejam acessíveis a qualquer usuário ou invasor. |
+| Access token | Chave privada com a qual você pode gerar cobranças. Você deve usá-la para se identificar em suas integrações. É muito importante que esses dados estejam protegidos em seus servidores e não sejam acessíveis a qualquer usuário ou invasor. |
 | Integrador | Pessoa ou entidade que deseja processar um pagamento por meio de nossa API.|
 | Intenção de pagamento | Contém os detalhes da transação.|
 | Poi | Série do dispositivo. Você pode ver na parte de trás do seu dispositivo (SN, NS). |
 | Poi Type | Tipo de dispositivo. |
 | PDV | Ponto de venda.|
-| Self-service | Traduz-se como autoatendimento. É o modelo onde o cliente pode fazer uso dos dispositivos de forma autónoma e autogerida. |
+| Self-service | Traduz-se como autoatendimento. É o modelo onde o cliente pode fazer uso dos dispositivos de forma autônoma e autogerida. |
 | Webhook | É uma notificação que é enviada do nosso servidor para o integrador através de uma chamada HTTP POST em relação às suas transações. |
 
 ## Possíveis status de uma intenção de pagamento

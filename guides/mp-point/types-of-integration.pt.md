@@ -1,7 +1,7 @@
 ----[mla]----
 # Tipos de integração
 
-O vendedor dispõe de diferentes tipos de integração que irão variar de acordo com a necessidade de negócio e conhecimento técnico do integrador. Veja na tabela abaixo o detalhe de cada tipo de integração disponível e escolha a mais adequada com seu modelo de negócio.
+O vendedor dispõe de diferentes tipos de integração que irão variar de acordo com a necessidade de negócio e conhecimento técnico do integrador. Veja na tabela abaixo o detalhe de cada tipo de integração disponível e escolha a mais adequada ao seu modelo de negócio.
 
 | Tipo de integração  | Descrição  | Dispositivos  |
 | --- | --- | --- |
@@ -13,7 +13,7 @@ O vendedor dispõe de diferentes tipos de integração que irão variar de acord
 ----[mlb]----
 # Tipos de integração
 
-O vendedor dispõe de diferentes tipos de integração que irão variar de acordo com a necessidade de negócio e conhecimento técnico do integrador. Veja na tabela abaixo o detalhe de cada tipo de integração disponível e escolha a mais adequada com seu modelo de negócio.
+O vendedor dispõe de diferentes tipos de integração que irão variar de acordo com a necessidade de negócio e conhecimento técnico do integrador. Veja na tabela abaixo o detalhe de cada tipo de integração disponível e escolha a mais adequada ao seu modelo de negócio.
 
 | Tipo de integração  | Descrição  | Dispositivos  |
 | --- | --- | --- |
@@ -25,7 +25,7 @@ O vendedor dispõe de diferentes tipos de integração que irão variar de acord
 ----[mlm]----
 # Integração
 
-O vendedor pode optar pelo tipo de integração Deep linking. Veja na tabela abaixo o detalhe.
+O vendedor pode optar pelo tipo de integração **Deep linking**. Veja mais detalhes na tabela abaixo.
 
 | Tipo de integração  | Descrição  | Dispositivos  |
 | --- | --- | --- |

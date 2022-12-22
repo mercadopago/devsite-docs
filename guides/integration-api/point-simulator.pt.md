@@ -8,7 +8,7 @@ O simulador possui dois modos de uso:
 * **PDV mode**: simula a integração de um sistema completo (dispositivo e PDV) com nossa API de Integrações. Acesse o [Simulador PDV Mode](https://api.mercadopago.com/point/integrator-simulator/sandbox/?ignoreapidoc=true).
 * **Device mode**: simula um dispositivo de ponto virtual para que você possa testar sua integração a partir de HTTP requests. Acesse o [Simulador device mode](https://api.mercadopago.com/point/integrator-simulator/sandbox/device?ignoreapidoc=true).
 
-> Para usar o simulador não é necessário executar o serviço [Alterar o modo de operação](/developers/pt/reference/integrations_api/_point_integration-api_devices_device-id/patch), pois o simulador funciona por padrão no modo PDV.
+> Para usar o simulador não é necessário executar o serviço [Alterar o modo de operação](/developers/pt/reference/integrations_api/_point_integration-api_devices_device-id/patch) porque, por padrão, o simulador funciona no modo PDV.
 
 ## Como usar o simulador
 
@@ -25,8 +25,8 @@ Ao usar o simulador pela primeira vez, você precisará inserir suas chaves e se
 > Importante
 >
 > * Lembre-se que para usar o simulador você deve configurar um `access-token` de teste (`TEST-XXXXX-XXXXX-XXXXXXX`) e você pode obtê-lo em suas [integrações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/applications), opção **Minhas credenciais > Credenciais de teste**.
-> * Para efetuar uma consulta de um pagamento efetuado pelo simulador através da [API de Pagamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_id/get), deve-se utilizar o `access-token` de teste (o mesmo utilizado no simulador).
-> * Se você for usar o modo dispositivo do simulador, lembre-se que deve colocar `X-Test-Scope:sandbox` no header para garantir que a tentativa de pagamento chegue ao dispositivo simulador.
+> * Para efetuar uma consulta de um pagamento efetuado pelo simulador através da [API de Pagamentos](/developers/pt/reference/payments/_payments_id/get), deve-se utilizar o `access-token` de teste (o mesmo utilizado no simulador).
+> * Se você for utilizar o modo dispositivo do simulador, lembre-se que deve colocar `X-Test-Scope:sandbox` no header para garantir que a tentativa de pagamento chegue ao dispositivo simulador.
 
 ### 2. Simule uma intenção de pagamento
 

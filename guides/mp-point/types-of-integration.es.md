@@ -1,7 +1,7 @@
 ----[mla]----
 # Tipos de integración
 
-El vendedor tiene 2 tipos diferentes de integración que variarán según las necesidades del negocio y el conocimiento técnico del integrador. Consulta la siguiente tabla para obtener detalles sobre cada tipo de integración disponible y elija la más adecuada para su modelo de negocio.
+El vendedor tiene 2 tipos diferentes de integración que variarán según las necesidades del negocio y el conocimiento técnico del integrador. Consulta la siguiente tabla para obtener detalles sobre cada tipo de integración disponible y elige la más adecuada para tu modelo de negocio.
 
 | Tipo de integración | Descripción | Dispositivos |
 | --- | --- | --- |
@@ -13,7 +13,7 @@ El vendedor tiene 2 tipos diferentes de integración que variarán según las ne
 ----[mlb]----
 # Tipos de integración
 
-El vendedor tiene 2 tipos diferentes de integración que variarán según las necesidades del negocio y el conocimiento técnico del integrador. Consulta la siguiente tabla para obtener detalles sobre cada tipo de integración disponible y elija la más adecuada para su modelo de negocio.
+El vendedor tiene 2 tipos diferentes de integración que variarán según las necesidades del negocio y el conocimiento técnico del integrador. Consulta la siguiente tabla para obtener detalles sobre cada tipo de integración disponible y elige la más adecuada para tu modelo de negocio.
 
 
 | Tipo de integración | Descripción | Dispositivos |
