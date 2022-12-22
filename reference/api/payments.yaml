@@ -353,6 +353,7 @@ paths:
                     spa: Descripción del producto adquirido, el motivo del pago. Ej. - "Celular Xiaomi Redmi Note 11S 128gb 6gb Ram Original Global Blue Version" (descripción de un producto en el marketplace).
                     por: Descrição do produto comprado, a razão de pagamento. Por exemplo -  "Celular Xiaomi Redmi Note 11S 128gb 6gb Ram Versão Global Original azul" (descrição de um produto no marketplace).
                   example: Payment for product
+                  required: true
                 differential_pricing_id:
                   type: number
                   description: Attribute that commonly contains an agreement on how much the user will be charged (generally, this field is more relevant for Marketplace payments). Pricing and fees are calculated based on this identifier.
