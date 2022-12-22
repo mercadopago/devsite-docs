@@ -1,6 +1,6 @@
 # Qualidade da integração
 
-O self homologator é a ferramenta em que você poderá **medir a qualidade da sua aplicação**, sendo possível identificar pontos de melhoria em sua integração para deixá-la de acordo com os padrões do Mercado Pago.
+Com esta ferramenta você poderá **medir a qualidade da sua aplicação**, sendo possível identificar pontos de melhoria em sua integração para deixá-la de acordo com os padrões do Mercado Pago.
 
 ----[mla, mlm, mlu, mco, mlc, mpe]---- 
 > WARNING
@@ -10,7 +10,6 @@ O self homologator é a ferramenta em que você poderá **medir a qualidade da s
 > Por enquanto, a ferramenta para medir a qualidade da integração só está disponível para integrações com o [Checkout Pro,](/developers/pt/docs/checkout-pro/landing) [Checkout API](/developers/pt/docs/checkout-api/landing) e [Checkout Bricks.](/developers/pt/docs/checkout-bricks/landing)
 
 ------------
-
 ----[mlb]---- 
 > WARNING
 >
