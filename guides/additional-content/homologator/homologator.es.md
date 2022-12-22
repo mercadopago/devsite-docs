@@ -1,8 +1,6 @@
 # Calidad de integración
 
-Con esta herramienta puedes **medir la calidad de tu aplicación**, permitiendo identificar puntos de mejora en tu integración para adecuarla a los estándares de Mercado Pago.
-
-Con esta herramienta podrás **medir la calidad de tu aplicación**, lo que permitirá identificar puntos de mejora en tu integración para adecuarla a los estándares de Mercado Pago.
+Con esta herramienta puedes **medir la calidad de tu aplicación**, lo que permitirá identificar puntos de mejora en tu integración para adecuarla a los estándares de Mercado Pago.
 
 ----[mla, mlm, mlu, mco, mlc, mpe]---- 
 > WARNING
