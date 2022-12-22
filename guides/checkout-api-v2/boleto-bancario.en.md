@@ -802,23 +802,23 @@ Within the **"Discounts"** field, you must replace the values following the spec
 |    FIELD   |    TYPE    |                                                  DESCRIPTION                                                  |                                                                   VALIDATIONS                                                                  |
 |:----------:|:----------:|:-------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------:|
 | value      | BigDecimal | Property to define the amount of the discount to be applied when the payment is made before the defined term. | **Number of decimal places**: 0 - 2. **Maximum value**: Must be **positive** and **less than or equal** to the value reported in "transaction_amount". |
-| type       | String     | Property to define the type of calculation on the value reported in "value".                                  | Possible values: "fixed".                                                                                                                      |
-| limit_date | Date       | Property to define the term to consider the discount.                                                         | Format: yyyy-MM-dd. The expiration date must be before the date entered in "date_of_expiration". 
+| type       | String     | Property to define the type of calculation on the value reported in "value".                                  | **Possible values**: "fixed".                                                                                                                      |
+| limit_date | Date       | Property to define the term to consider the discount.                                                         | **Format**: yyyy-MM-dd. The expiration date must be before the date entered in "date_of_expiration". 
 
 Within the **“Fine"** field, you must replace the values following the specifications below:
 
 | FIELD |    TYPE    |                                           DESCRIPTION                                          |                               VALIDATIONS                               |
 |:-----:|:----------:|:----------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------:|
-| value | BigDecimal | Property to define the value of the fine to apply when the payment is made after the due date. | **Number of decimal**: 0 - 2. **Maximum values**: "type = percentage: 2" |
-| type  | String     | Property to define the type of calculation on the value reported in "value".                   | Possible values: "percentage".                                          |
+| value | BigDecimal | Property to define the value of the fine to apply when the payment is made after the due date. | **Number of decimal**: 0 - 2. **Maximum value**: "2%" |
+| type  | String     | Property to define the type of calculation on the value reported in "value".                   | **Possible values**: "percentage".                                          |
 
 
 Within the **"Interest"** field, you must replace the values following the specifications below:
 
 | FIELD |    TYPE    |                                               DESCRIPTION                                              |                                 VALIDATIONS                                 |
 |:-----:|:----------:|:------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------:|
-| value | BigDecimal | Property to define the daily interest value to be applied when the payment is made after the due date. | **Number of decimal**: 0 - 2. **Maximum values**: "type = percentage: 0.03". |
-| type  | String     | Property to define the type of calculation on the value reported in "value".                           | Possible values: "percentage".                                              |
+| value | BigDecimal | Property to define the monthly interest value to be applied when the payment is made after the due date. | **Number of decimal**: 0 - 2. **Maximum value**: "1%". |
+| type  | String     | Property to define the type of calculation on the value reported in "value".                           | **Possible values**: "percentage".                                              |
 
 
 The response will return the following result:
@@ -873,7 +873,6 @@ In the following charts you will find the specifications for each field returned
 | payment_method | Object | Object that keeps the information related to the payment method. |
 | id             | String | Payment method’s identification                                  |
 | data           | Object | Object that preserves the data related to the means of payment.  |
-| paid_date      | Date   | Date in which the payment was made. yyyy-MM-dd format.           |
 | rules          | Object | Object that preserves the rules related to the means of payment. |
 | discounts      | List   | List of discounts applied.                                       |
 | fine           | Object | Object that holds the information related to the fine.           |
@@ -886,7 +885,6 @@ For the **“Discounts”** value, the specifications are as follows:
 | value          | BigDecimal | Property to define the amount of the discount to be applied when the payment is made before the defined term.                                                                                                                                                              |
 | type           | String     | Property to define the type of calculation on the value reported in "value".                                                                                                                                                                                               |
 | limit_date     | Date       | Property to define de due date to consider the discount.                                                                                                                                                                                                                   |
-| amount_applied | BigDecimal | Property with discount calculated value. To calculate the discount applied to the "transaction_amount" value, check if the current date is less than or equal to the discount due date. In case the current date is greater than the due date, the returned value will be 0. |
 
 For the **“Fine”** value, the specifications are as follows:
 
@@ -894,7 +892,6 @@ For the **“Fine”** value, the specifications are as follows:
 |:--------------:|:----------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | value          | BigDecimal | Property to define the value of the fine to apply when the payment is made after the due date.                                                                                                                                                             |
 | type           | String     | Property to define the type of calculation on the value reported in "value".                                                                                                                                                                               |
-| amount_applied | BigDecimal | Property with fine calculated value. To calculate the fine applied over the "transaction_amount" value, check if the current date is greater than the boleto’s due date. In case it is less than or equal to the current date, the returned value will be 0. |
 
 For the **“Interest”** value, the specifications are as follows:
 
@@ -902,7 +899,6 @@ For the **“Interest”** value, the specifications are as follows:
 |:--------------:|:----------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | value          | BigDecimal | Property to define the daily interest value to be applied when the payment is made after the due date.                                                                                                                                                                                                                                                                                                                                                          |
 | type           | String     | Property to define the type of calculation on the value reported in "value".                                                                                                                                                                                                                                                                                                                                                                                    |
-| amount_applied | BigDecimal | Property with interests’ calculated value. To calculate this interest applied over the "transaction_amount" value, check if the current date is greater than the boleto’s due date and the difference of days between these dates; that is, the amount applied is the number of days after the due date, multiplied by the interest defined in the request.  In case the current date is less than or equal to the expiration date, the returned value will be 0. |
 
 
 ## Expiration date

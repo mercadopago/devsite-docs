@@ -801,21 +801,21 @@ Dentro do campo **"Discounts"**, você deve substituir os valores seguindo as es
 |    CAMPO   |    TIPO    |                                                        DESCRIÇÃO                                                        |                                                               VALIDAÇÕES                                                              |
 |:----------:|:----------:|:-----------------------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------:|
 | value      | BigDecimal | Propriedade para definir o valor do desconto a ser aplicado quando o pagamento for efetuado até a data limite definida. | **Número de casas decimais**: 0 - 2. **Valor máximo**: Deve ser **positivo** e **menor ou igual** ao valor informado em "transaction_amount". |
-| type       | String     | Propriedade para definir o tipo de cálculo sobre o valor informado em "value".                                          | Valores possíveis: "fixed".                                                                                                           |
-| limit_date | Date       | Propriedade para definir a data limite para considerar o desconto.                                                      | Formato: yyyy-MM-dd. Data limite deve ser menor que data informada em "date_of_expiration".                                           |
+| type       | String     | Propriedade para definir o tipo de cálculo sobre o valor informado em "value".                                          | **Valores possíveis**: "fixed".                                                                                                           |
+| limit_date | Date       | Propriedade para definir a data limite para considerar o desconto.                                                      | **Formato**: yyyy-MM-dd. Data limite deve ser menor que data informada em "date_of_expiration".                                           |
 
 Dentro do campo **"Fine"**, você deve substituir os valores seguindo as especificações abaixo:
 
 | CAMPO |    TIPO    |                                                     DESCRIÇÃO                                                     |                                VALIDAÇÕES                                |
 |:-----:|:----------:|:-----------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------:|
-| value | BigDecimal | Propriedade para definir o valor da multa a ser aplicada quando o pagamento for efetuado após data de vencimento. | **Número de casas decimais**: 0 - 2. **Valores máximos**: "type = percentage: 2" |
-| type  | String     | Propriedade para definir o tipo de cálculo sobre o valor informado em "value".                                    | Valores possíveis: "percentage".                                         |
+| value | BigDecimal | Propriedade para definir o valor da multa a ser aplicada quando o pagamento for efetuado após data de vencimento. | **Número de casas decimais**: 0 - 2. **Valor máximo**: "2%" |
+| type  | String     | Propriedade para definir o tipo de cálculo sobre o valor informado em "value".                                    | **Valores possíveis**: "percentage".                                         |
 
 Dentro do campo **"Interest"**, você deve substituir os valores seguindo as especificações abaixo:
 
 | CAMPO |    TIPO    |                                                           DESCRIÇÃO                                                          |                                   VALIDAÇÕES                                  |
 |:-----:|:----------:|:----------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------:|
-| value | BigDecimal | Propriedade para definir o valor de juros diários a serem aplicados quando o pagamento for efetuado após data de vencimento. | **Número de casas decimais**: 0 - 2. **Valores máximos**:  "type = percentage: 0.03". |
+| value | BigDecimal | Propriedade para definir o valor de juros mensal a serem aplicados quando o pagamento for efetuado após data de vencimento. | **Número de casas decimais**: 0 - 2. **Valor máximo**:  "1%". |
 | type  | String     | Propriedade para definir o tipo de cálculo sobre o valor informado em "value".                                               | Valores possíveis: "percentage".                                              |
 
 
@@ -870,7 +870,6 @@ Nas tabelas a seguir você encontra as especificações de cada campo retornado 
 | payment_method | Objeto | Objeto para manter as informações relacionadas ao meio de pagamento. |
 | id             | String | Identificador do meio de pagamento                                   |
 | data           | Objeto | Objeto para manter os dados relacionados ao meio de pagamento        |
-| paid_date      | Date   | Data que o pagamento foi efetivado. Formato yyyy-MM-dd               |
 | rules          | Objeto | Objeto para manter as regras relacionadas ao meio de pagamento       |
 | discounts      | Lista  | Lista com os descontos praticados                                    |
 | fine           | Objeto | Objeto para manter as informações relacionadas a multa               |
@@ -884,7 +883,6 @@ Para o valor **“Discounts”** as especificações são as seguintes:
 | value          | BigDecimal | Propriedade com o valor do desconto a ser aplicado quando o pagamento for efetuado até a data limite definida.                                                                                                                                                    |
 | type           | String     | Propriedade com o tipo de cálculo sobre o valor informado em "value".                                                                                                                                                                                               |
 | limit_date     | Date       | Propriedade com a data limite para considerar o desconto.                                                                                                                                                                                                         |
-| amount_applied | BigDecimal | Propriedade com o valor calculado do desconto. Para realizar o cálculo do desconto aplicado sobre o valor de "transaction_amount", é verificada se a data atual é menor igual à data limite do desconto, caso data atual maior que data limite retornará o valor 0. |
 
 Para o valor **“Fine”** as especificações são as seguintes:
 
@@ -892,7 +890,6 @@ Para o valor **“Fine”** as especificações são as seguintes:
 |:--------------:|:----------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | value          | BigDecimal | Propriedade com o valor da multa a ser aplicada quando o pagamento for efetuado após data de vencimento.                                                                                                                                                                    |
 | type           | String     | Propriedade com o tipo de cálculo sobre o valor informado em "value".                                                                                                                                                                                                         |
-| amount_applied | BigDecimal | Propriedade com o valor calculado da multa. Para realizar o cálculo da multa aplicada sobre o valor de "transaction_amount", é verificada se a data atual é maior que a data de vencimento do boleto, caso data atual menor igual que data de vencimento retornará o valor 0. |
 
 Para o valor **“Interest”** as especificações são as seguintes:
 
@@ -900,7 +897,6 @@ Para o valor **“Interest”** as especificações são as seguintes:
 |:--------------:|:----------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | value          | BigDecimal | Propriedade para definir o valor de juros diários a serem aplicados quando o pagamento for efetuado após data de vencimento.                                                                                                                                                                                                                                                                                                                      |
 | type           | String     | Propriedade para definir o tipo de cálculo sobre o valor informado em "value".                                                                                                                                                                                                                                                                                                                                                                      |
-| amount_applied | BigDecimal | Propriedade com o valor calculado dos juros. Para realizar o cálculo dos juros aplicados sobre o valor de "transaction_amount", é verificada se a data atual é maior que a data de vencimento do boleto e a diferença de dias entre essas datas, ou seja, o montante aplicado é a quantidade de dias pós data de vencimento multiplicado pelo juros definido na requisição, caso data atual menor igual que data de vencimento retornará o valor 0. |
 
 
 ## Data de vencimento

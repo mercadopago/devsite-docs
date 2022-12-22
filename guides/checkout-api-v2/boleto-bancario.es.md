@@ -810,8 +810,8 @@ Dentro del campo **“Discounts”**, deberás reemplazar los valores siguiendo 
 |    CAMPO   |    TIPO    |                                                  DESCRIPCIÓN                                                  |                                                           VALIDACIONES                                                          |
 |:----------:|:----------:|:-------------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------:|
 | value      | BigDecimal | Propiedad para definir el importe del descuento a aplicar cuando el pago se realiza antes del plazo definido. | **Número de decimales**: 0 - 2. **Valor máximo**: Debe ser **positivo** y **menor o igual** al valor informado en "transaction_amount". |
-| type       | String     | Propiedad para definir el tipo de cálculo sobre el valor informado en "value".                                | Valores posibles: "fixed".                                                                                                      |
-| limit_date | Date       | Propiedad para definir el plazo para considerar el descuento.                                                 | Formato: yyyy-MM-dd. La fecha límite debe ser anterior a la fecha ingresada en "date_of_expiration".                            |
+| type       | String     | Propiedad para definir el tipo de cálculo sobre el valor informado en "value".                                | **Valores posibles**: "fixed".                                                                                                      |
+| limit_date | Date       | Propiedad para definir el plazo para considerar el descuento.                                                 | **Formato**: yyyy-MM-dd. La fecha límite debe ser anterior a la fecha ingresada en "date_of_expiration".                            |
 
 
 
@@ -819,16 +819,16 @@ Dentro del campo **“Fine”**, deberás reemplazar los valores siguiendo las e
 
 | CAMPO |    TIPO    |                                                          DESCRIPCIÓN                                                         |                             VALIDACIONES                            |
 |:-----:|:----------:|:----------------------------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------:|
-| value | BigDecimal | Propiedad para definir el valor de la multa a aplicar cuando el pago se realice con posterioridad a la fecha de vencimiento. | **Número de decimales**: 0 - 2. **Valores máximos**: "type = percentage: 2" |
-| type  | String     | Propiedad para definir el tipo de cálculo sobre el valor informado en "value".                                               | Valores posibles: "percentage".                                     |
+| value | BigDecimal | Propiedad para definir el valor de la multa a aplicar cuando el pago se realice con posterioridad a la fecha de vencimiento. | **Número de decimales**: 0 - 2. **Valor máximo**: "2%" |
+| type  | String     | Propiedad para definir el tipo de cálculo sobre el valor informado en "value".                                               | **Valores posibles**: "percentage".                                     |
 
 
 Dentro del campo **“Interest”**, deberás reemplazar los valores siguiendo las especificaciones a continuación:
 
 | CAMPO |    TIPO    |                                                             DESCRIPCIÓN                                                             |                               VALIDACIONES                               |
 |:-----:|:----------:|:-----------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------:|
-| value | BigDecimal | Propiedad para definir el valor del intereses diarios a ser aplicados cuando el pago se realice después de la fecha de vencimiento. | **Número de decimales**: 0 - 2. **Valores máximos**:  "type = percentage: 0.03". |
-| type  | String     | Propiedad para definir el tipo de cálculo sobre el valor informado en "value".                                                      | Valores posibles: "percentage".                                          |
+| value | BigDecimal | Propiedad para definir el valor del intereses mensuales a ser aplicados cuando el pago se realice después de la fecha de vencimiento. | **Número de decimales**: 0 - 2. **Valor máximo**:  "1%". |
+| type  | String     | Propiedad para definir el tipo de cálculo sobre el valor informado en "value".                                                      | **Valores posibles**: "percentage".                                          |
 
 
 La respuesta devolverá el siguiente resultado:
@@ -882,7 +882,6 @@ En las siguientes tablas encontrarás las especificaciones para cada campo devue
 | payment_method | Objeto | Objeto que conserva la información relacionada con el método de pago. |
 | id             | String | Identificador del método de pago.                                     |
 | data           | Objeto | Objeto que conserva los datos relacionados a los medios de pago.      |
-| paid_date      | Date   | Fecha en la que fue hecho el pago. Formato yyyy-MM-dd                 |
 | rules          | Objeto | Objeto que conserva las reglas relacionadas al medio de pago.         |
 | discounts      | Lista  | Lista con los descuentos efectuados.                                  |
 | fine           | Objeto | Objeto que conserva la información relacionada con la multa.          |
@@ -895,7 +894,6 @@ Para el valor **“Discounts”**, las especificaciones son las siguientes:
 | value          | BigDecimal | Propiedad para definir el importe del descuento a aplicar cuando el pago se realiza antes del plazo definido.                                                                                                                                                                             |
 | type           | String     | Propiedad con el tipo de cálculo sobre el valor informado en “value”.                                                                                                                                                                                                                     |
 | limit_date     | Date       | Propiedad con la fecha límite para considerar el descuento.                                                                                                                                                                                                                               |
-| amount_applied | BigDecimal | Propiedad con el valor calculado de descuento.  Para calcular el descuento aplicado sobre el valor de "transaction_amount", verifica si la fecha actual es menor o igual a la fecha límite del descuento. En caso de que la fecha actual sea mayor a la fecha límite, devolverá el valor 0. |
 
 Para el valor **“Fine”**, las especificaciones son las siguientes:
 
@@ -903,7 +901,6 @@ Para el valor **“Fine”**, las especificaciones son las siguientes:
 |:--------------:|:----------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | value          | BigDecimal | Propiedad con el valor de la multa a ser aplicada cuando el pago se efectúe después de la fecha de vencimiento.                                                                                                                                                                              |
 | type           | String     | Propiedad con el tipo de cálculo sobre el valor informado en “value”.                                                                                                                                                                                                                        |
-| amount_applied | BigDecimal | Propiedad con el valor calculado de multa.  Para calcular la multa aplicada sobre el valor de "transaction_amount", verifica si la fecha actual es mayor la fecha de vencimiento del boleto. En caso de que la fecha actual sea menor o igual a la fecha de vencimiento, devolverá el valor 0. |
 
 Para el valor **“Interest”**, las especificaciones son las siguientes:
 
@@ -911,7 +908,6 @@ Para el valor **“Interest”**, las especificaciones son las siguientes:
 |:--------------:|:----------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | value          | BigDecimal | Propiedad para definir el valor de los intereses diarios a ser aplicados cuando el pago fuera efectuado luego de la fecha de vencimiento.                                                                                                                                                                                                                                                                                                                                                          |
 | type           | String     | Propiedad para definir el tipo de cálculo sobre el valor informado en “value”.                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| amount_applied | BigDecimal | Propiedad con el valor calculado de intereses. Para calcular estos intereses aplicados sobre el valor de "transaction_amount", verifique si la fecha actual es mayor a la fecha de vencimiento del boleto y la diferencia de días entre estas fechas; es decir, el monto aplicado es el número de días posteriores a la fecha de vencimiento multiplicado por el interés definido en la solicitud. En caso de que la fecha actual sea menor o igual a la fecha de vencimiento, devolverá el valor 0. |
 
 
 ## Fecha de vencimiento
