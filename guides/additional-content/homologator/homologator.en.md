@@ -32,4 +32,4 @@ Ready! The quality measurement has been performed and the information below will
 >
 > Actions indicated as **required** must be completed to add points that will improve the quality of your integration, while those indicated as **best practices** will not impact the score.
 
-After finishing the indicated actions, click on **Update score** to complete the measurement and leave your application complete for integration.
+After completing the indicated actions, click **Refresh score** to reassess the quality and leave your application complete for integration.
