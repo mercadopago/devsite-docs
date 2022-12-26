@@ -170,6 +170,7 @@ Por meio da preferência de pagamento, você pode configurar um meio de pagament
 | `excluded_payment_methods` | Método que exclui bandeiras específicas de cartões de crédito e débito, como Visa, Mastercard, American Express, entre outros. |
 | `installments` | Método que define o número máximo de parcelas a serem ofertadas. |
 | `purpose` | Ao indicar o valor `wallet_purchase` neste método, o Payment Brick apenas aceitará pagamentos de usuários cadastrados no Mercado Pago, com cartão e saldo em conta. |
+
 ------------
 
 ----[mlb]----
@@ -184,9 +185,25 @@ Por meio da preferência de pagamento, você pode configurar um meio de pagament
 | `excluded_payment_methods` | Método que exclui bandeiras específicas de cartões de crédito e débito, como Visa, Mastercard, American Express, entre outros. |
 | `installments` | Método que define o número máximo de parcelas a serem ofertadas. |
 | `purpose` | Ao indicar o valor `wallet_purchase` neste método, o Payment Brick apenas aceitará pagamentos de usuários cadastrados no Mercado Pago, com cartão e saldo em conta. |
+
 ------------
 
-----[mlm, mlc, mco, mpe, mlu]----
+----[mlm]----
+## Defina os meios de pagamento desejados
+
+Por meio da preferência de pagamento, você pode configurar um meio de pagamento padrão para ser renderizado, excluir algum indesejado ou ainda escolher um número máximo de parcelas a serem ofertadas.
+
+| Atributo de preferência | Descrição |
+| --- | --- |
+| `payment_methods` | Classe que descreve os atributos e métodos de meios de pagamento do Payment Brick. |
+| `excluded_payment_types` | Método que exclui meios de pagamento indesejados, como cartão de crédito, ticket, entre outros. |
+| `excluded_payment_methods` | Método que exclui bandeiras específicas de cartões de crédito e débito, como Visa, Mastercard, American Express, entre outros. |
+| `installments` | Método que define o número máximo de parcelas a serem ofertadas. |
+| `purpose` | Ao indicar o valor `wallet_purchase` neste método, o Payment Brick apenas aceitará pagamentos de usuários cadastrados no Mercado Pago, com cartão e saldo em conta. |
+
+------------
+
+----[mlc, mco, mpe, mlu]----
 ## Defina os meios de pagamento desejados
 
 Por meio da preferência de pagamento, você pode configurar um meio de pagamento padrão para ser renderizado, excluir algum indesejado, ou ainda escolher um número máximo de parcelas a serem ofertadas.
@@ -198,6 +215,7 @@ Por meio da preferência de pagamento, você pode configurar um meio de pagament
 | `excluded_payment_methods` | Método que exclui bandeiras específicas de cartões de crédito e débito, como Visa, Mastercard, American Express, entre outros. |
 | `installments` | Método que define o número máximo de parcelas a serem ofertadas. |
 | `purpose` | Ao indicar o valor `wallet_purchase` neste método, o Payment Brick apenas aceitará pagamentos de usuários cadastrados no Mercado Pago, com cartão e saldo em conta. |
+
 ------------
 
 Por exemplo:

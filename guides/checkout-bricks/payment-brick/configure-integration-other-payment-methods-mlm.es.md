@@ -1,27 +1,26 @@
-# Configurar la integración con Pix
+# Configurar la integración con otros medios de pago
 
-Pix es un método de pago electrónico instantáneo ofrecido por el Banco Central de Brasil a personas físicas y jurídicas. A través de Checkout Bricks, es posible ofrecer esta opción de pago desde un **código QR** o un **código de pago**.
+Con el Checkout Bricks de Mercado Pago, es posible ofrecer, además de tarjeta, **pagos con dinero en efectivo via tickets**.  
 
-> WARNING
+> NOTE
 >
 > Importante
-> 
-> La opción de pago por Pix solo se mostrará si existe una Clave de Pix registrada en Mercado Pago. Si aún no las creaste, [haz clic aquí](https://www.youtube.com/watch?v=60tApKYVnkA) y consulta el paso a paso. <br/></br>
-> <br/></br>
-> Para iniciar el formulario de Pix con el campo de correo electrónico completado, [haz clic aquí](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/initialize-data-on-the-bricks).<br/></br>
-> <br/></br>
-> Y para ayudar, hemos preparado un [ejemplo de código](/developers/es/docs/checkout-bricks/payment-brick/code-example/pix) completo de la configuración de Payment Brick con Pix que puede usar como modelo.
+>
+> Para facilitar al comprador la visualización de los pagos con dinero en efectivo, el Brick muestra los puntos de pago (Ejemplo: **7 Eleven**, **Santander**, **OXXO**, etc.) al usuario, en lugar de mostrar directamente las conexiones de pago (**Citibanamex**, **Paycash**, **BBVA** y **OXXO**). Esto permite al usuario tener una selección más clara de dónde puede pagar el ticket y mejorar la conversión.
 
-Para configurar la integración de Payment Brick para recibir pagos con Pix debe seguir los pasos a continuación. 
+Para ofrecer **pagos con dinero en efectivo via ticket**, sigue los siguientes pasos. 
 
-> Si ya ha integrado los pagos con tarjeta, puede iniciar la integración desde el **paso 4**.
+> Si ya has integrado los pagos con tarjeta, puedes iniciar la integración desde el **paso 4**.
 
 1. [Crear container](#bookmark_crear_container)
 2. [Incluir y configurar la librería MercadoPago.js](#bookmark_incluir_y_configurar_la_librería_mercadopago.js)
 3. [Instanciar Brick](#bookmark_instanciar_brick)
 4. [Renderizar Brick](#bookmark_renderizar_brick)
+5. [Administrar otros medios de pago](#bookmark_administrar_otros_medios_de_pago)
 
-> Los pasos se realizan en el backend o frontend. Las etiquetas **Client-Side** y **Server-Side** ubicadas inmediatamente al lado del título lo ayudan a identificar qué paso se realiza en qué instancia.
+> Los pasos se realizan en el backend o frontend. Las etiquetas **Client-Side** y **Server-Side** ubicadas inmediatamente al lado del título lo ayudan a identificar qué paso se realiza en qué instancia. <br/></br>
+> <br/></br>
+> Y para ayudar, hemos preparado un [ejemplo de código](/developers/es/docs/checkout-bricks/payment-brick/code-example/other-payment-methods/mexico) completo de la configuración de Payment Brick para **pagos con dinero en efectivo via ticket** que puede usar como modelo.
 
 > CLIENT_SIDE
 >
@@ -38,7 +37,7 @@ Deberás crear un container para definir dónde se colocará el Brick en la pant
 > El valor que se muestra en la propiedad `id` a continuación es solo un ejemplo y puede ser alterado, pero siempre debe coincidir con el `id` indicado en la renderización.
 
 ```html
-  <div id="PaymentBrick_container"></div>
+  <div id="paymentBrick_container"></div>
 ```
 
 > CLIENT_SIDE
@@ -76,14 +75,14 @@ const mp = new MercadoPago('YOUR_PUBLIC_KEY');
 Con el container creado y la SDK JS instalada, el siguiente paso es instanciar el Brick builder, que permitirá generar el Brick. Para crear la instancia, inserta el código a continuación del paso anterior.
 
 ```javascript
-const bricksBuilder = mp.bricks();
+const bricksBuilder = mp.bricks(); 
 ```
 
 > WARNING
 >
 > Atención
 >
-> Durante la instanciación del Brick, es posible que aparezcan diferentes errores. Para más detalles sobre cada uno de ellos, consulta la sección [Posibles errores](/developers/es/docs/checkout-bricks/additional-content/possible-errors).
+> Durante la instanciación del Brick, es posible que aparezcan diferentes errores. Para más detalles sobre cada uno de ellos, consulta la sección [Posibles errores.](/developers/es/docs/checkout-bricks/additional-content/possible-errors)
 
 > CLIENT_SIDE
 >
@@ -103,13 +102,13 @@ const renderPaymentBrick = async (bricksBuilder) => {
    },
    customization: {
      paymentMethods: {
-       bankTransfer: ['pix'],
+       ticket: 'all',
      },
    },
    callbacks: {
      onReady: () => {
         /*
-          Callback llamado cuando Brick está listo
+          Callback llamado cuando Brick está listo.
           Aquí puedes ocultar loadings de su sitio, por ejemplo.
         */
      },
@@ -136,7 +135,7 @@ const renderPaymentBrick = async (bricksBuilder) => {
        
      },
      onError: (error) => {
-       // callback llamado para todos los casos de error de Brick
+       // callback llamado solicitada para todos los casos de error de Brick
        console.error(error);
      },
    },
@@ -152,7 +151,7 @@ renderPaymentBrick(bricksBuilder);
 
 El resultado de renderizar el Brick debe ser como la imagen de abajo:
 
-![payment-Brick-pix](checkout-bricks/payment-brick-pix-es.png)
+![payment-Brick-other-payments-methods-mlm](checkout-bricks/payment-brick-other-payments-methods-mlm-es.jpg)
 
 > WARNING
 >
@@ -160,15 +159,64 @@ El resultado de renderizar el Brick debe ser como la imagen de abajo:
 >
 > Para un control efectivo del Brick, la función enviada en `onSubmit` siempre debe devolver una Promise. Llame el método `resolve()` solo si el procesamiento de tu backend fue exitoso. Llame el método `reject()` en caso de que ocurra un error. Esto hará que el Brick te permita completar los campos nuevamente y haga posible un nuevo intento de pago. Al llamar el `resolve()` dentro de la Promise de `onSubmit`, el Brick no permite nuevos pagos. Si deseas realizar un nuevo pago, deberás crear una nueva instancia del Brick.
 
-Para pagar con Pix, el comprador debe ingresar su dirección de correo electrónico. Se recomienda encarecidamente que el integrador ingrese este campo de correo electrónico al inicio del Brick, para que el comprador no tenga que escribirlo manualmente. Para inicializar el campo de correo electrónico, simplemente siga el **ejemplo a continuación**.
+> CLIENT_SIDE 
+>
+> h2
+>
+> Administrar otros medios de pago
+
+Para incluir **pagos con dinero en efectivo via ticket**, solo usa la siguiente configuración:
+
+> NOTE
+>
+> Importante
+>
+> Los métodos de pago que se describen a continuación requieren que se complete la dirección, el nombre y los detalles del documento del comprador. Para una mejor experiencia de usuario, se recomienda que el integrador ya inicialice estos datos, por lo que no es necesario llenarlo manualmente. [Consulte aquí](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/initialize-data-on-the-bricks) cómo inicializar el bloque con estos datos ya completados.
 
 ```Javascript
 settings = {
   ...,
-  initialization: {
- ...,
- payer: {
-   email: 'jose@maria.com'
- }
+  customization: {
+    ...,
+    paymentMethods: {
+      ...,
+      ticket: 'all',
+      atm: 'all'
+    }
+  }
 }
 ```
+
+Las propiedades `ticket` (para pago con ticket impreso) y `atm`_*_ (para pago con cajero automático) aceptan 2 tipos de variables, `string` y `string[]`. En el ejemplo anterior, se aceptarán pagos con **todos los tickets disponibles en México**.
+
+> _*Automatic Teller Machine_
+
+Si no desea permitir ambos métodos de pago, en lugar de la cadena `all`, puede pasar un array con solo las ID deseadas. Como en el ejemplo a continuación, donde solo se acepta el a través de **OXXO**.
+
+```Javascript
+settings = {
+  ...,
+  customization: {
+    ...,
+    paymentMethods: {
+      ...,
+      ticket: [ 'oxxo' ]
+    }
+  }
+}
+```
+
+En este caso, como **OXXO** es el único método disponible, no se mostrará la lista para seleccionar dónde pagar.
+
+Actualmente, estos son los ID que se pueden pasar dentro del array:
+
+| Tipo de pago | IDs |
+|---|---|
+| Tickets | `oxxo` y `paycash` |
+| ATM | `bancomer` y `banamex` |
+
+> NOTE
+>
+> Importante
+>
+> La respuesta de la API contiene ID de varios `payment_type_id`. Los ID aceptados por la propiedad `ticket` son solo aquellos que contienen `payment_type_id = 'ticket'` y la propiedad `atm` acepta `payment_type_id = 'atm'`.

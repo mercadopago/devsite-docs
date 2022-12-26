@@ -1335,7 +1335,7 @@ paths:
                     enum:
                       - 500-- Internal server error
   /proximity-integration/shipments/{shipment_id}/cancellation-reasons:
-    put:
+    get:
       tags:
         - $ref: '#/tags/mp-delivery'
       summary: Reasons for cancellation
@@ -2000,7 +2000,7 @@ paths:
                       spa: Estado referente al estado actual de funcionamiento de la tienda.
                       por: Status referente ao estado atual de funcionamento da loja.
                     enum:
-                      - disabled -- The store is disabled, and will not be shown on marketplace.
+                      - disabled -- The store is disabled, and will not be shown on marketplace. It is important to bear in mind that once a store has been disabled, it cannot be enabled again. Therefore, this state should only be used to delete a store.
                       - enabled -- The store is enabled and is shown on marketplace.
                       - paused -- The delivery of store is paused, but the store will cotinue to be shown on marketplace.
                   business_hours:
@@ -2971,7 +2971,7 @@ paths:
                     spa: Estado referente al estado de funcionamiento de la tienda que se actualizará.
                     por: Status referente ao estado de funcionamento da loja que será atualizada.
                   enum:
-                    - disabled -- The store is disabled, and will not be shown on marketplace.
+                    - disabled -- The store is disabled, and will not be shown on marketplace. It is important to bear in mind that once a store has been disabled, it cannot be enabled again. Therefore, this state should only be used to delete a store.
                     - enabled -- The store is enabled and is shown on marketplace.
                     - paused -- The delivery of store is paused, but the store will cotinue to be shown on marketplace.
       responses:
@@ -3015,7 +3015,7 @@ paths:
                       spa: Estado referente al estado actual de funcionamiento de la tienda.
                       por: Status referente ao estado atual de funcionamento da loja.
                     enum:
-                      - disabled -- The store is disabled, and will not be shown on marketplace.
+                      - disabled -- The store is disabled, and will not be shown on marketplace. It is important to bear in mind that once a store has been disabled, it cannot be enabled again. Therefore, this state should only be used to delete a store.
                       - enabled -- The store is enabled and is shown on marketplace.
                       - paused -- The delivery of store is paused, but the store will cotinue to be shown on marketplace.
                   business_hours:

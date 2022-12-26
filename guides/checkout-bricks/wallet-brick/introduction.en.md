@@ -1,3 +1,9 @@
 # Wallet Brick
 
-The Wallet Brick will allow you to link the Mercado Pago digital wallet directly to the Checkout API, offering the buyer one more payment method and increasing the chances of conversion.
+Wallet Brick allows you to offer payments from your Mercado Pago account at any stage of the purchase process. This Brick can be implemented through a direct and customized integration that allows:
+
+* **Fast payments**
+* **Safe environment**
+* **Increase in payment approval rate**
+
+![wallet-brick-themes](checkout-bricks/wallet-brick-themes-en.png)

@@ -1,4 +1,4 @@
-----[mla]---- 
+----[mla, mlb, mlu, mco, mlc, mpe]----
 # Pagos en cuotas sin tarjeta
 
 **Mercado Crédito** es el método de financiación de Mercado Pago que permite pagar en cuotas sin tarjeta.
@@ -9,9 +9,9 @@ En esta guía encontrarás los pasos necesarios para ofrecer cuotas sin tarjeta 
 
 ------------
 ----[mlm]----
-# Pagos en meses sin tarjeta
+# Pagos en meses sin tarjeta de crédito
 
-Mercado Crédito es el método de financiación de Mercado Pago que permite pagar en meses sin tarjeta.
+Mercado Crédito es el método de financiación de Mercado Pago que permite pagar en meses sin tarjeta de crédito.
 
 Al ofrecer esta opción en tu tienda, tus clientes podrán comprar un producto hoy y pagarlo después a meses. Para tu negocio, la aprobación de la compra es inmediata y está garantizada, se te acredita la totalidad por adelantado y tus clientes nos pagan después.
 

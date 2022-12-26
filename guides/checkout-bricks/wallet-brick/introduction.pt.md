@@ -1,3 +1,9 @@
 # Wallet Brick
 
-O Wallet Brick permitirá associar a carteira digital do mercado pago diretamente ao Checkout Transparente, oferecendo ao comprador mais uma forma de pagamento e aumentando as chances de conversão.
+O Wallet Brick permite oferecer pagamentos a partir da conta do Mercado Pago em qualquer etapa do processo de compra. Este Brick pode ser implementado através de uma integração direta e personalizada que possibilita:
+
+* **Pagamentos ágeis**
+* **Ambiente seguro**
+* **Aumento na taxa de aprovação dos pagamentos**
+
+![wallet-brick-themes](checkout-bricks/wallet-brick-themes-pt.png)
