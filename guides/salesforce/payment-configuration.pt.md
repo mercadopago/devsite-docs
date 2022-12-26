@@ -10,10 +10,11 @@ Veja como ativar cada meio de pagamento em sua loja Salesforce:
 * [Configurar cartões de crédito e/ou débito](/developers/pt/docs/salesforce-commerce-cloud/integration-configuration/payments-configuration/credit-debit)
 ----[mlb]----
 * [Configurar pagamentos com Pix](/developers/pt/docs/salesforce-commerce-cloud/integration-configuration/payments-configuration/pix)
+------------
 
 ## Escolha a localização do meio de pagamento
 
-Por padrão, o cartucho do Mercado Pago mostrará primeiro a forma de pagamento Pix e depois o cartão de crédito. 
+Por padrão, o cartucho do Mercado Pago mostrará os tipos de pagamento em uma determinada ordem.
 
 ----[mlb]----
 ![payment_methods_v2](/images/salesforce/payment_methods_v2.png)

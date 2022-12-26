@@ -14,7 +14,7 @@ Here's how to activate each payment method in your Salesforce Commerce Cloud sto
 
 ## Choose the location of the means of payment
 
-By default, the Mercado Pago cartridge will first show the Pix payment method and then the credit card. 
+By default, the Mercado Pago cartridge will show the means of payment in a certain order.
 
 ----[mlb]----
 ![payment_methods_v2](/images/salesforce/payment_methods_v2.png)
