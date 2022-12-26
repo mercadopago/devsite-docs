@@ -10,6 +10,7 @@ Veja como ativar cada meio de pagamento em sua loja Salesforce:
 * [Configurar cartões de crédito e/ou débito](/developers/pt/docs/salesforce-commerce-cloud/integration-configuration/payments-configuration/credit-debit)
 ----[mlb]----
 * [Configurar pagamentos com Pix](/developers/pt/docs/salesforce-commerce-cloud/integration-configuration/payments-configuration/pix)
+------------
 
 ## Escolha a localização do meio de pagamento
 
