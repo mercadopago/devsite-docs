@@ -187,7 +187,7 @@ Incluindo o elemento do tipo `select` com o id: `id = docType` que está no form
 
 Ao finalizar a inclusão do formulário de pagamento e obter os tipos de documento, é necessário encaminhar o e-mail do comprador, tipo e número de documento, o meio de pagamento utilizado e o detalhe do valor a ser pago utilizando nossa API de Pagamentos ou um de nossos SDKs.
 
-Para configurar **pagamentos com boleto bancário**, envie um POST com os seguintes parâmetros ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, utilize um de nossos SDKs abaixo.
+Para configurar **pagamentos com boleto bancário**, envie um **POST** com os seguintes parâmetros ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, utilize um de nossos SDKs abaixo.
 
 | Tipo de pagamento  | Parâmetro  | Valor  |
 | --- | --- | --- |

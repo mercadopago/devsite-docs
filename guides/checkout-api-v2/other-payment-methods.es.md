@@ -1,7 +1,7 @@
 # Otros medios de pago
 
 ----[mlb]----
-Con el Checkout API de Mercado Pago, es posible ofrecer, además de tarjeta, Pix y Boleto, **pagos en agencias de lotería**.
+Con el Checkout Transparente de Mercado Pago, es posible ofrecer, además de tarjeta, Pix y Boleto, **pagos en agencias de lotería**.
 ------------
 
 ----[mla]----

@@ -2,7 +2,7 @@
 
 # Boleto bancario
 
-Con el Checkout API de Mercado Pago, es posible ofrecer, además de tarjeta y Pix, **pagos vía boleto bancario**. También puedes crear **boletos bancarios con descuentos, multas e intereses** para los pagos que se realicen o bien por adelantado, o bien por fuera del plazo estipulado en la fecha de vencimiento.
+Con el Checkout Transparente de Mercado Pago, es posible ofrecer, además de tarjeta y Pix, **pagos vía boleto bancario**. También puedes crear **boletos bancarios con descuentos, multas e intereses** para los pagos que se realicen o bien por adelantado, o bien por fuera del plazo estipulado en la fecha de vencimiento.
 
 Para obtener una lista detallada de todos los medios de pago disponibles para integración, envía un **GET** con tu _Access token_ al endpoint [/v1/payment_methods](/developers/es/reference/payment_methods/_payment_methods/get) y ejecuta la solicitud o, si lo prefieres, haz la solicitud utilizando los siguientes SDKs.
 
@@ -67,12 +67,12 @@ curl -X GET \
 ]]]
 
 
-Para ofrecer **pagos con boleto bancario**, sigue las siguientes etapas.
+Para ofrecer **pagos vía boleto bancario**, sigue las siguientes etapas.
 
 
 ## Importar MercadoPago.js
 
-Para realizar la integración de Checkout API, es necesario capturar los datos necesarios para procesar el pago.
+Para realizar la integración de Checkout Transparente, es necesario capturar los datos necesarios para procesar el pago.
 
 Esta captura se realiza incluyendo la biblioteca MercadoPago.js en tu proyecto, seguida del formulario de pago. Utiliza el siguiente código para importar la biblioteca MercadoPago.js antes de añadir el formulario de pago.
 
@@ -193,7 +193,7 @@ function createSelectOptions(elem, options, labelsAndKeys = { label : "name", va
 
 Al finalizar la inclusión del formulario de pago y obtener los tipos de documentos, es necesario enviar el email del comprador, el tipo y número de documento, el medio de pago utilizado y el detalle del importe a pagar utilizando nuestra API de Pagos o uno de nuestros SDKs.
 
-Para configurar **pagos con boleto bancario**, envía un POST con los siguientes parámetros al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) y ejecuta la solicitud o, si lo prefieres, utiliza uno de nuestros SDKs indicados a continuación.
+Para configurar **pagos vía boleto bancario**, envía un **POST** con los siguientes parámetros al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) y ejecuta la solicitud o, si lo prefieres, utiliza uno de nuestros SDKs indicados a continuación.
 
 
 | Tipo de pago  | Parámetro  | Valor  |
@@ -453,7 +453,7 @@ La respuesta mostrará el **status pendiente** hasta que el comprador realice el
 
 ## Crear boleto con multas, intereses y descuentos
 
-Si quieres ofrecer **boletos bancarios con descuentos, multas e intereses**, ya sea para los pagos que se realicen por adelantado, como para los pagos que se realicen por fuera de la fecha de vencimiento, puedes crearlos directamente vía Mercado Pago API, o bien utilizando los siguientes SDKs:
+Si quieres ofrecer **boletos bancarios con descuentos, multas e intereses**, ya sea para los pagos que se realicen por adelantado, como para los pagos que se realicen por fuera de la fecha de vencimiento, puedes crearlos directamente vía la API de Mercado Pago, o bien utilizando los siguientes SDKs:
 
 [[[
 ```php

@@ -66,7 +66,7 @@ curl -X GET \
 ```
 ]]]
 
-To offer **Pagamento via boleto bancário**, follow the steps below.
+To offer **payments via boleto bancário**, follow the steps below.
 
 ## Import MercadoPago.js
 
@@ -188,7 +188,7 @@ elem.appendChild(tempOptions);
 
 When finalizing the inclusion of the payment form and obtaining the types of documents, it is necessary to forward the buyer's email, type and document number, the payment method used and the details of the amount to be paid using our Payments API or one of our SDKs.
 
-To configure **pagamento via boleto bancárioa**, send a **POST** with the following parameters to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post) and run the request or, if you prefer, use one of our SDKs below.
+To configure **payments via boleto bancárioa**, send a **POST** with the following parameters to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post) and run the request or, if you prefer, use one of our SDKs below.
 
 
 | Payment Type | Parameter | Value |
@@ -903,7 +903,7 @@ For the **“Interest”** value, the specifications are as follows:
 
 ## Expiration date
 
-The default expiration date for **pagamento com boleto bancário** is 3 days. Optionally, it is possible to change this date by sending the date_of_expiration field in the payment creation request, defining a period between 1 and 30 days from the boleto issuance date.
+The default expiration date for **payments via boleto bancário** is 3 days. Optionally, it is possible to change this date by sending the date_of_expiration field in the payment creation request, defining a period between 1 and 30 days from the boleto issuance date.
 
 To change the expiration date, use one of the codes available below.
 

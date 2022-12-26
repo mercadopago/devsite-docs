@@ -1,7 +1,7 @@
 # Other payment methods
 
 ----[mlb]----
-With Mercado Pago's Checkout API, it is possible to offer, in addition to card, Pix and payments via boleto bancário, **pagamentos em lotérica**.
+With Mercado Pago's Transparent Checkout, it is possible to offer, in addition to card, Pix and payments via boleto bancário, **pagamentos em lotérica**.
 ------------
 
 ----[mla]----
