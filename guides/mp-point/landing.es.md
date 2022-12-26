@@ -22,10 +22,10 @@ bullet_section_with_media:
  - benefit_message: Ofrece pagos por crédito, débito y usando el código QR
  - benefit_title: Fácil administración de dinero
  - benefit_message: Rastree y administre transacciones tanto a través de la aplicación de Mercado Pago como a través del sitio web.
- - benefit_title: La maquina es tuya
+ - benefit_title: La máquina es tuya
  - benefit_message: Usted compra la máquina y no tiene que pagar alquiler ni cuotas de membresía.
  - benefit_title: Mayor control financiero
- - benefit_message: Accede a una cuenta digital, tarjeta de Mercado Pago y benefíciate de Mercado Pontos.
+ - benefit_message: Accede a una cuenta digital, tarjeta de Mercado Pago y benefíciate de Mercado Puntos.
  - image: /point-api/point-landing2.png
 ---
 

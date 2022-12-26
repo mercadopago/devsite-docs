@@ -15,6 +15,6 @@ Para oferecer pagamentos com Point, é importante atender aos requisitos mostrad
 >
 > Para as maquininhas **Point mini** e **Point blue**, o aplicativo é necessário para realizar e gerenciar as cobranças. Já para **POS** e **SmartPOS**, o aplicativo é necessário apenas para realizar login com QR Code. <br/></br>
 > <br/></br>
-> O modo de integração de API para PDVs está disponível apenas para ser operado por um operador de loja. Caso seja implementado em modo de autoatendimento, será de total responsabilidade do negócio, uma vez que os dispositivos não estão habilitados para serem utilizados neste tipo de modelo de negócio.
+> O modo de integração de API para PDVs está disponível apenas para ser operado por um operador de loja. Caso seja implementado em modo de [self-service](/developers/pt/docs/mp-point/integration-api/glossary), será de total responsabilidade do negócio, uma vez que os dispositivos não estão habilitados para serem utilizados neste tipo de modelo de negócio.
 
 Se todos os requisitos foram cumpridos, siga as etapas seguintes para realizar a integração com Point.

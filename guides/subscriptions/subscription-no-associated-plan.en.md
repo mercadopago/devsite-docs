@@ -7,13 +7,42 @@ This subscription model can be
 * [With authorized payments](/developers/en/guides/subscriptions/integration-configuration/subscription-no-associated-plan#bookmark_subscriptions_with_authorized_payment)
 * [Pending payments](/developers/en/guides/subscriptions/integration-configuration/subscription-no-associated-plan#bookmark_subcriptions_with_pending_payment)
 
+> NOTE
+>
+> Important
+>
+> Creating subscriptions with `status = Pending` is supported only for Subscriptions without an associated plan.
+
 ## Subscriptions with authorized payment
 
 Subscriptions with authorized payment allow an installment to be generated and billed based on a defined recurrence, causing the subscription engine to automatically schedule and create payments based on the payment method defined at the time of the subscription creation.
 
-To offer **subscriptions without an associated plan and with authorized payment**, send a POST with the necessary attributes to the [/preapproval](/developers/en/reference/subscriptions/_preapproval/post) endpoint and pay attention to the `status` parameter, which must be filled in with the value `authorized`.
+To offer **subscriptions without an associated plan and with authorized payment**, send a POST with the necessary attributes to the [/preapproval](/developers/en/reference/subscriptions/_preapproval/post) endpoint and pay attention to the `status` parameter, which must be filled in with the value `authorized`. If you prefer, use the _curl_ below.
 
-After completing the fields, execute the request.
+[[[
+```curl
+
+curl --location --request POST 'https://api.mercadopago.com/preapproval?access_token=APP_USR-????????' \
+--header 'Content-Type: application/json' \
+--header 'X-scope: stage' \
+--data-raw '{
+		"back_url":"https://www.google.com",
+	"reason":"Test Subscription",
+	"auto_recurring":{
+         "frequency": 1,
+         "frequency_type": "months",
+         "start_date": "2020-06-02T13:07:14.260Z",
+         "end_date": "2022-07-20T15:59:52.581Z",
+         "transaction_amount": 10,
+         "currency_id": "ARS"
+		}
+	},
+    "payer_email": "test_user+1020927396@testuser.com",
+    "card_token_id":"{{INSERT_THE_CREATED_CARD_TOKEN}}",
+	"status":"authorized"
+}'
+```
+]]]
 
 > NOTE
 >
@@ -85,9 +114,30 @@ Subscriptions with pending payments are a model in which the payment method is n
 
 In this case, there are two options: The first one is to update the subscription by defining a payment method through the [/preapproval/{id}](/developers/en/reference/subscriptions/_preapproval_id/put) endpoint. The second one is to share a payment link with the buyer so they can complete the purchase with the payment method of their choice.
 
-To offer **subscriptions without an associated plan and with pending payments**, send a POST with the necessary attributes to the [/preapproval](/developers/pt/reference/subscriptions/_preapproval/post) endpoint and then pay attention to the `status` parameter, which must be filled in with the `pending` value.
+To offer **subscriptions without an associated plan and with pending payments**, send a POST with the necessary attributes to the [/preapproval](/developers/pt/reference/subscriptions/_preapproval/post) endpoint and then pay attention to the `status` parameter, which must be filled in with the `pending` value. If you prefer, use the curl below.
 
-After completing the fields, execute the request.
+[[[
+```curl
+
+curl --location --request POST 'https://api.mercadopago.com/preapproval' \
+--header 'Authorization: Bearer YOU_ACCESS_TOKEN' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "reason": "Yoga classes",
+    "external_reference": "YG-1234",
+    "payer_email": "test_user_75650838@testuser.com",
+    "auto_recurring": {
+        "frequency": 1,
+        "frequency_type": "months",
+        "end_date": "2023-07-20T15:59:52.581Z",
+        "transaction_amount": 10,
+        "currency_id": "BRL"
+    },
+    "back_url": "https://www.yoursite.com",
+    "status": "pending"
+}'
+```
+]]]
 
 > PREV_STEP_CARD_EN
 >

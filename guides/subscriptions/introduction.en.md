@@ -13,11 +13,3 @@ There are two types of subscriptions available for integration:
 Below we show a diagram that explains the flow of each subscription model:
 
 ![Basic-subscriptions](/images/subscriptions/Integrations-EN.png)
-
-> NEXT_STEP_CARD_EN
->
-> Prerequisites
->
-> Check out all the necessary requirements to start integrating.
->
-> [Prerequisites](developers/en/docs/subscriptions/requirements)
