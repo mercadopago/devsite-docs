@@ -15,6 +15,7 @@ Descubra como testar os diversos tipos de pagamento.
 Para realizar uma compra teste, siga estas etapas:
 
 
+
 1. Adicione um produto ao carrinho da loja.
 2. Clique no botão **comprar**.
 3. Continue comprando como usuário convidado e preencha as informações de envio. Em seguida, clique em “Avançar > Pagamento”.
