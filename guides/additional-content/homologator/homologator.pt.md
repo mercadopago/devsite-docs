@@ -35,8 +35,8 @@ Pronto! A medição da qualidade foi realizada e serão exibidas as informaçõe
 * **Última atualização**: data da última atualização da pontuação de qualidade da aplicação.
 * **Melhorar a experiência da pessoa que compra**: ações necessárias ou boas práticas que poderão melhorar a experiência das pessoas que compram utilizando o Mercado Pago como solução de pagamento.
 * **Conciliação financeira**: ações necessárias ou boas práticas que poderão melhorar a consistência em conferir informações financeiras.
-* **Aumentar a aprovação dos pagamentos**: ações necessárias ou boas práticas que poderão aumentar as aprovações de pagamento da solução de pagamento integrada à aplicação.
-* **Escalabilidade**: ações necessárias ou boas práticas que poderão melhorar a escalabilidade de sua integração, ou seja, atendendo as demandas sem perder as qualidades que lhe agreguem valor.
+* **Aumentar a aprovação dos pagamentos**: ações necessárias ou boas práticas que poderão aumentar as aprovações de pagamento da solução de pagamento integrada à aplicação, visto que ao fornecer mais informações na hora de gerar uma transação, damos mais elementos às nossas ferramentas de fraude para que possam fazer uma avaliação mais detalhada.
+* **Escalabilidade**: ações necessárias ou boas práticas que poderão facilitar algumas mudanças e a manutenção da integração no futuro (exemplos de itens de escalabilidade são os SDKs, que nos eximem de implementar a lógica de algumas mudanças), atendendo as demandas sem perder as qualidades que lhe agreguem valor.
 * **Segurança**: ações necessárias ou boas práticas que poderão aumentar a segurança da sua integração.
 
 > WARNING

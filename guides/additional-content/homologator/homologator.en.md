@@ -22,8 +22,8 @@ Ready! The quality measurement has been performed and the information below will
 * **Last update**: Date of last update of the application's quality score.
 * **Improve the experience of the person who buys**: indicate the required actions or best practices that can improve the experience of your buyers when using Mercado Pago as a payment solution.
 * **Financial reconciliation**: necessary actions or best practices that could improve consistency in checking financial information.
-* **Increase payment approval**: present the required actions or best practices that may increase payment approvals of the payment solution integrated into the application.
-* **Scalability**: necessary actions or good practices that can improve the scalability of your integration, that is, meeting the demands without losing the qualities that add value.
+* **Increase payment approval**: necessary actions or good practices that could increase the payment approvals of the payment solution integrated into the application, since by providing more information when generating a transaction, we give more elements to our fraud tools so that they can make a more detailed assessment.
+* **Scalability**: necessary actions or good practices that may facilitate some changes and maintenance of the integration in the future (examples of scalability items are the SDKs, which abstract us from implementing the logic of some changes), meeting the demands without losing the qualities that add value .
 * **Security**: necessary actions or good practices that can increase the security of your integration.
 
 > WARNING

@@ -35,8 +35,8 @@ Para medir la calidad de tu aplicación, sigue los pasos a continuación.
 * **Última actualización**: fecha de la última actualización del puntaje de calidad de la aplicación.
 * **Mejora la experiencia de la persona que compra**: acciones necesarias o buenas prácticas que pueden mejorar la experiencia de tus compradores al utilizar Mercado Pago como solución de pago.
 * **Conciliación financiera**: acciones necesarias o buenas prácticas que podrían mejorar la consistencia en la verificación de la información financiera.
-* **Aumentar la aprobación de pagos**: acciones necesarias o buenas prácticas que pueden aumentar las aprobaciones de pago de la solución de pago integrada en la aplicación.
-* **Escalabilidad**: acciones necesarias o buenas prácticas que pueden mejorar la escalabilidad de tu integración; es decir, satisfacer las demandas sin perder las cualidades que aportan valor.
+* **Aumentar la aprobación de pagos**: acciones necesarias o buenas prácticas que pueden aumentar las aprobaciones de pago de la solución de pago integrada en la aplicación, ya que al brindar más información al momento de generar una transacción, le damos más elementos a nuestras herramientas de fraude para que puedan hacer una evaluación más detallada.
+* **Escalabilidad**: acciones necesarias o buenas prácticas que puedan facilitar algunos cambios y el mantenimiento de la integración en el futuro (ejemplos de ítems de escalabilidad son los SDKs, que nos abstraen de implementar la lógica de algunos cambios), cumpliendo con las demandas sin perder las cualidades que agregan valor.
 * **Seguridad**: acciones necesarias o buenas prácticas que pueden aumentar la seguridad de tu integración.
 
 > WARNING
