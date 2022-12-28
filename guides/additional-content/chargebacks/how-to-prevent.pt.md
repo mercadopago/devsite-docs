@@ -21,7 +21,7 @@ Não é possível evitar todas as contestações, porém, você pode diminuir a 
    
 
 ## Alerta de Fraudes
-Vamos avisar via notificações IPN toda vez que percebermos atividades irregulares ou houver um alerta de fraude em sua conta. Nessa situação, você deve cancelar a compra e devolver o dinheiro ao comprador para evitar a contestação.
+Vamos avisar via notificações IPN toda vez que percebermos atividades irregulares ou houver um alerta de fraude em sua conta. Nessa situação, você deve [cancelar a compra](/docs/checkout-api/payment-management/cancellations-and-refunds) e devolver o dinheiro ao comprador para evitar a contestação.
 
 Configure e ative as [notificações IPN](/developers/panel/notifications/ipn) no painel para receber alertas de comportamentos irregulares, ativando a opção Alerta de Fraudes (`delivery_cancellation`)
 
