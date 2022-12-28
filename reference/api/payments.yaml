@@ -30,20 +30,19 @@ paths:
               properties:
                 additional_info:
                   type: object
-                  description: Data that could improve fraud analysis and conversion rates. Try to send as much information as possible.
+                  description: At Payments level, it's only data, and we only forward that information to other APIs like Risk, to perform scoring and prevent fraud, or to Tax, to determine them for international payments.
                   x-description-i18n:
-                    eng: Data that could improve fraud analysis and conversion rates. Try to send as much information as possible.
-                    spa: Información que puede mejorar el análisis de prevención de fraude y la tasa de conversión. Trata de enviarnos toda la infomación posible.
-                    por: Informações que podem melhorar a análise de prevenção de fraude e a taxa de conversão. Trata de enviar-nos toda a informação possível.
+                    eng: At Payments level, it's only data, and we only forward that information to other APIs like Risk, to perform scoring and prevent fraud, or to Tax, to determine them for international payments.
+                    spa: En el nivel de Pagos, son solo datos y únicamente reenviamos esa información a otras API, como Riesgo, para realizar puntajes y prevenir fraudes, o a Impuestos, para determinarlos para pagos internacionales.
+                    por: No nível de Pagamentos, são apenas dados e apenas encaminhamos essas informações para outras APIS, como Risco, para realizar pontuação e prevenir fraudes, para Impostos para determiná-los para pagamentos internacionais.
                   properties:
                     ip_address:
                       type: string
-                      description: 
-                        IP from where the request comes from (only for bank transfers).
+                      description: Internal protocol (IP) that comes from the request (for bank transfer only).
                       x-description-i18n:
-                        eng: IP from where the request comes from (only for bank transfers).
-                        spa: IP del cual proviene el request (sólo para transferencia bancaria)
-                        por: IP do qual provém o request (apenas para transferência bancária)
+                        eng: Internal protocol (IP) that comes from the request (for bank transfer only).
+                        spa: Protocolo interno (IP) que proviene del request (solo para transferencia bancaria).
+                        por: Protocolo interno (IP) que provém do request (apenas para transferência bancária).
                     items:
                       type: array
                       description: List of items to be paid.
@@ -56,12 +55,12 @@ paths:
                         properties:
                           id:
                             type: string
-                            description: Item code.
+                            description: It is the purchased product ad identifier. For example - “MLB2907679857”.
                             x-description-i18n:
-                              eng: Item code.
-                              spa: Código de ítem
-                              por: Código de anúncio
-                            example: PR0001
+                              eng: It is the purchased product ad identifier. For example - “MLB2907679857”.
+                              spa: Es el identificador del anuncio del producto adquirido. Por ejemplo - “MLB2907679857”.
+                              por: É o identificador do anúncio do produto comprado. Por exemplo - “MLB2907679857”.
+                            example: MLB2907679857
                           title:
                             type: string
                             description: Item name.
@@ -88,11 +87,11 @@ paths:
                             example: https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium@2x.png
                           category_id:
                             type: string
-                            description: Category of the item.
+                            description: It is the category of the purchased item. It is possible to mention two main forms of category_id - categories inserted through a code, such as “MLB189908”, or those that are a tag, such as “phone”.
                             x-description-i18n:
-                              eng: Category of the item.
-                              spa: Categoría del ítem
-                              por: Categoria do item
+                              eng: It is the category of the purchased item. It is possible to mention two main forms of category_id - categories inserted through a code, such as “MLB189908”, or those that are a tag, such as “phone”.
+                              spa: Es la categoría del ítem que se compró. Es posible citar dos formas principales de category_id - categorías insertadas a través de un código, como “MLB189908”, o aquellas que son una tag, como “phone”.
+                              por: É a categoria do item que foi comprado. É possível citar duas formas principais de category_id - as categorias inseridas por meio de um código, como “MLB189908”, ou as que são uma tag, como “phone”.
                             example: electronics
                           quantity:
                             type: number
@@ -104,15 +103,19 @@ paths:
                             example: 1
                           unit_price:
                             type: number
-                            description: Unit price.
+                            description: Unit price of the purchased item.
+                            x-description-i18n:
+                              eng: Unit price of the purchased item.
+                              spa: Precio unitario del ítem comprado.
+                              por: Preço unitário do item comprado.
                             example: 58.8
                     payer:
                       type: object
-                      description: Buyer's information.
+                      description: The payer is the one who makes the payment. This field is an object that has the payer's information.
                       x-description-i18n:
-                        eng: Buyer's information.
-                        spa: Información del comprador
-                        por: Informação do comprador
+                        eng: The payer is the one who makes the payment. This field is an object that has the payer's information.
+                        spa: El payer es quien realiza el pago. Este campo es un objeto que tiene la información del pagador.
+                        por: O payer é aquele que faz o pagamento. Este campo é um objeto que possui as informações do pagador.
                       required: true
                       properties:
                         first_name:
@@ -125,11 +128,11 @@ paths:
                           example: Test
                         last_name:
                           type: string
-                          description: Buyer's last name.
+                          description: It's the buyer's last name field.
                           x-description-i18n:
-                            eng: Buyer's last name.
-                            spa: Apellido del comprador
-                            por: Apelido do comprador
+                            eng: It's the buyer's last name field.
+                            spa: Es el campo de apellido del comprador.
+                            por: É o campo do sobrenome do comprador.
                           example: Test
                         phone:
                           type: object
@@ -143,70 +146,70 @@ paths:
                               type: string
                               description: Area code.
                               x-description-i18n:
-                                eng: Area code.
-                                spa: Código de área
-                                por: Código de área
+                                eng: Area code where the buyer resides.
+                                spa: Código de área donde reside el comprador.
+                                por: Código de área onde reside o comprador.
                               example: 11
                             number:
                               type: string
-                              description: Phone number.
+                              description: Buyer's fone number
                               x-description-i18n:
-                                eng: Phone number.
-                                spa: Número telefónico
-                                por: Número de telefone
+                                eng: Buyer's fone number
+                                spa: Número telefónico del comprador.
+                                por: Número de telefone do comprador.
                               example: '987654321'
                         address:
-                          type: object
-                          description: Address.
-                          x-description-i18n:
-                            eng: Address.
-                            spa: Dirección
-                            por: Endereço
-                          properties:
-                            zip_code:
-                              type: string
-                              description: Zip code.
-                              x-description-i18n:
-                                eng: Zip code.
-                                spa: Código postal
-                                por: Código postal
-                            street_name:
-                              type: string
-                              description: Street name.
-                              x-description-i18n:
-                                eng: Street name.
-                                spa: Calle
-                                por: Rua
-                            street_number:
-                              type: number
-                              description: Number.
-                              x-description-i18n:
-                                eng: Number.
-                                spa: Número
-                                por: Número
-                        registration_date:
-                          type: string
-                          format: date
-                          description: Date of registration of the buyer on your site.
-                          x-description-i18n:
-                            eng: Date of registration of the buyer on your site.
-                            spa: Fecha de registración del comprador en tu sitio
-                            por: Data de cadastro do comprador em seu site
-                    shipments:
-                      type: object
-                      description: Shipping information.
-                      x-description-i18n:
-                        eng: Shipping information.
-                        spa: Información de envío
-                        por: Informações de envio
-                      properties:
-                        receiver_address:
                           type: object
                           description: Buyer's address.
                           x-description-i18n:
                             eng: Buyer's address.
-                            spa: Dirección del comprador
-                            por: Endereço do comprador
+                            spa: Dirección del comprador.
+                            por: Endereço do comprador.
+                          properties:
+                            zip_code:
+                              type: string
+                              description: Buyer's zip code.
+                              x-description-i18n:
+                                eng: Buyer's zip code.
+                                spa: Código postal del comprador.
+                                por: Código postal do comprador.
+                            street_name:
+                              type: string
+                              description: Street where the buyer lives.
+                              x-description-i18n:
+                                eng: Street where the buyer lives.
+                                spa: Calle donde vive el comprador.
+                                por: Rua onde mora o comprador.
+                            street_number:
+                              type: number
+                              description: Number of the property where the buyer lives.
+                              x-description-i18n:
+                                eng: Number of the property where the buyer lives.
+                                spa: Número de la propiedad donde vive el comprador.
+                                por: Número do imóvel onde mora o comprador.
+                        registration_date:
+                          type: string
+                          format: date
+                          description: Date of registration of the buyer (payer) on your website. The valid format of the attribute is as follows - "yyyy-MM-dd'T'HH:mm:ssz". Ex - 2021-06-15T19:22:41.001-03:00.
+                          x-description-i18n:
+                            eng: Date of registration of the buyer (payer) on your website. The valid format of the attribute is as follows - "yyyy-MM-dd'T'HH:mm:ssz". Ex - 2021-06-15T19:22:41.001-03:00.
+                            spa: Fecha de registro del comprador (payer) en tu sitio web. El formato válido del atributo es el siguiente - "yyyy-MM-dd'T'HH:mm:ssz". Ej - 2021-06-15T19:22:41.001-03:00.
+                            por: Data de cadastro do comprador (payer) em seu site.  O formato válido do atributo é o seguinte - "yyyy-MM-dd'T'HH:mm:ssz". Ex - 2021-06-15T19:22:41.001-03:00.
+                    shipments:
+                      type: object
+                      description: Object containing all the information for shipping the customer's purchase.
+                      x-description-i18n:
+                        eng: Object containing all the information for shipping the customer's purchase.
+                        spa: Objeto que comprende toda la información para el envío de la compra del cliente.
+                        por: Objeto que compreende todas as informações para o envio da compra do cliente. 
+                      properties:
+                        receiver_address:
+                          type: object
+                          description: Object comprising the address of the receiver of the purchase.
+                          x-description-i18n:
+                            eng: Object comprising the address of the receiver of the purchase.
+                            spa: Objeto que comprende la dirección del destinatario de la compra.
+                            por: Objeto que compreende o endereço do destinatário da compra.
                           properties:
                             zip_code:
                               type: string
@@ -250,18 +253,18 @@ paths:
                               example: 3003
                             floor:
                               type: string
-                              description: Floor.
+                              description: Delivery address floor.
                               x-description-i18n:
-                                eng: Floor.
-                                spa: Piso
-                                por: Apartamento
+                                eng: Delivery address floor.
+                                spa: Piso de la dirección de entrega
+                                por: Andar do endereço de entrega.
                             apartment:
                               type: string
-                              description: Department.
+                              description: Delivery address apartment number.
                               x-description-i18n:
-                                eng: Department.
-                                spa: Departmento
-                                por: Departamento
+                                eng: Delivery address apartment number.
+                                spa: Número de departamento de la dirección de entrega.
+                                por: Número do apartamento do endereço de entrega.
                     barcode:
                       type: object
                       description: Barcode information.
@@ -295,11 +298,11 @@ paths:
                             por: Altura do código de barras
                 application_fee:
                   type: number
-                  description: Fee collected by a marketplace or Mercado Pago Application.
+                  description: Commission (fee) that third parties (integrators) charge their customers, in this case, sellers, for using the marketplace platform and other services. This is a value in reais to be defined by the integrator to the seller.
                   x-description-i18n:
-                    eng: Fee collected by a marketplace or Mercado Pago Application.
-                    spa: Comisión recolectada por el marketplace o por Mercado Pago
-                    por: Comissão coletadas pelo mercado ou pelo Mercado Pago
+                    eng: Commission (fee) that third parties (integrators) charge their customers, in this case, sellers, for using the marketplace platform and other services. This is a value in reais to be defined by the integrator to the seller.
+                    spa: Comisión (fee) que los terceros (integradores) cobran a sus clientes, en este caso vendedores, por utilizar la plataforma del marketplace y otros servicios. Este es un valor en reales que será definido por el integrador para el vendedor.
+                    por: Comissão (taxa) que terceiros (integradores) cobram de seus clientes, neste caso, vendedores, pelo uso da plataforma do marketplace e de outros serviços. Esse é um valor em reais a ser definido pelo integrador ao vendedor.
                 binary_mode:
                   type: boolean
                   description: When set to TRUE, payments can only be approved or rejected. Otherwise they can also result in_process.
@@ -309,34 +312,32 @@ paths:
                     por: Quando definido como TRUE, os pagamentos só podem ser aprovados ou rejeitados. Caso contrário, eles também podem resultar in_process.
                 callback_url:
                   type: string
-                  description: 
-                    URL where mercadopago does the final redirect (only for bank transfers).
+                  description: URL where mercadopago does the final redirect (only for bank transfers).
                   x-description-i18n:
                     eng: URL where mercadopago does the final redirect (only for bank transfers).
                     spa: URL a la cual Mercado Pago hace la redirección final (sólo para transferencia bancaria).
                     por: URL para a qual o Mercado Pago faz o redirecionamento final (apenas para transferência bancária).
                 campaign_id:
                   type: number
-                  description: Discount campaign ID.
+                  description: It is the identifier of  the entity that models the nature of discounts. All coupons come from a single campaign. The campaign configures, among other things, the available budget balance, dates between which coupons can be used, rules for coupon application. It's the discount promise.
                   x-description-i18n:
-                    eng: Discount campaign ID.
-                    spa: Identificador de la campaña de descuento
-                    por: Identificador da campanha de desconto
+                    eng: It is the identifier of  the entity that models the nature of discounts. All coupons come from a single campaign. The campaign configures, among other things, the available budget balance, dates between which coupons can be used, rules for coupon application. It's the discount promise.
+                    spa: Es el identificador de la entidad que modela la fuente de los descuentos. Todos los cupones provienen de una sola campaña. La campaña configura, entre otras cosas, el saldo presupuestario disponible, fechas entre las cuales se pueden utilizar los cupones, reglas para la aplicación de los mismos, etc. Es la promesa de descuento.
+                    por: É o identificador da entidade que modela a natureza dos descontos. Todos os cupons vêm de uma única campanha. A campanha configura, entre outras coisas, o saldo orçamentário disponível, datas entre as quais os cupons podem ser utilizados, regras para aplicação de cupom, entre outros. É a promessa de desconto.
                 capture:
                   type: boolean
-                  description: 
-                    Determines if the payment should be captured (true, default value) or just reserved (false).
+                  description: It is a boolean field found in two-step payments (like debit card). In this type of payment, which is carried out asynchronously, the purchase value is first reserved (capture = false). This amount is captured and not debited from the account instantly. When the money is actually transferred to the collector (who receives the payment) the amount is captured (capture = true).
                   x-description-i18n:
-                    eng: Determines if the payment should be captured (true, default value) or just reserved (false).
-                    spa: Determina si el pago debe ser capturado(true, default value) o solo reservado(false).
-                    por: Determina se o pagamento deve ser capturado(true, default value), ou apenas reservado(false).
+                    eng: It is a boolean field found in two-step payments (like debit card). In this type of payment, which is carried out asynchronously, the purchase value is first reserved (capture = false). This amount is captured and not debited from the account instantly. When the money is actually transferred to the collector (who receives the payment) the amount is captured (capture = true).
+                    spa: Es un campo booleano que se encuentra en pagos de dos pasos (como tarjeta de débito). En este tipo de pago, que se realiza de forma asíncrona, primero se reserva el valor de la compra (capture = false). Esta cantidad se captura y no se debita de la cuenta al instante. Cuando el dinero se transfiere realmente al cobrador (que recibe el pago), se captura la cantidad (capture = true).
+                    por: É um campo booleano existente em pagamentos de duas etapas (como o cartão de débito). Nesse tipo de pagamento, que é realizado de modo assíncrono, primeiro é feito a reserva do valor da compra (capture = false). Esse valor é capturado e não é debitado da conta instantaneamente. Quando o dinheiro é de fato transferido ao collector (quem recebe o pagamento) a captura do montante é feita (capture = true).
                 coupon_amount:
                   type: number
-                  description: Amount of the coupon discount.
+                  description: It is the value of the discount coupon. E.g. - BRL 14.50. The attribute's type is BigDecimal.
                   x-description-i18n:
-                    eng: Amount of the coupon discount.
-                    spa: Monto del cupón de descuento
-                    por: Valor do cupom de desconto
+                    eng: It is the value of the discount coupon. E.g. - BRL 14.50. The attribute's type is BigDecimal.
+                    spa: Es el valor del cupón de descuento. Por ejemplo - BRL 14,50. El tipo del atributo es BigDecimal.
+                    por: É o valor do cupom de desconto. Por exemplo - R$14,50. O tipo do atributo é BigDecimal. 
                 coupon_code:
                   type: string
                   description: Discount campaign with a specific code.
@@ -346,30 +347,35 @@ paths:
                     por: Campanha de desconto com um código específico
                 description:
                   type: string
-                  description: Payment reason or item title.
+                  description: Purchased product’s description, the reason for payment. E.g. - "Xiaomi Redmi Note 11S mobile phone 128gb 6gb Ram Original Global Blue Version" (description of a product in the marketplace).
                   x-description-i18n:
-                    eng: Payment reason or item title.
-                    spa: Razón de pago o título de ítem
-                    por: Razão de pagamento ou título do item
+                    eng: Purchased product’s description, the reason for payment. E.g. - "Xiaomi Redmi Note 11S mobile phone 128gb 6gb Ram Original Global Blue Version" (description of a product in the marketplace).
+                    spa: Descripción del producto adquirido, el motivo del pago. Ej. - "Celular Xiaomi Redmi Note 11S 128gb 6gb Ram Original Global Blue Version" (descripción de un producto en el marketplace).
+                    por: Descrição do produto comprado, a razão de pagamento. Por exemplo -  "Celular Xiaomi Redmi Note 11S 128gb 6gb Ram Versão Global Original azul" (descrição de um produto no marketplace).
                   example: Payment for product
+                  required: true
                 differential_pricing_id:
                   type: number
-                  description: Id of the scheme for the absorption of financing fee.
+                  description: Attribute that commonly contains an agreement on how much the user will be charged (generally, this field is more relevant for Marketplace payments). Pricing and fees are calculated based on this identifier.
                   x-description-i18n:
-                    eng: Id of the scheme for the absorption of financing fee.
-                    spa: Identificador del esquema de absorción del costo financiero
-                    por: Id do esquema de absorção do custo financeiro
+                    eng: Attribute that commonly contains an agreement on how much the user will be charged (generally, this field is more relevant for Marketplace payments). Pricing and fees are calculated based on this identifier.
+                    spa: Atributo que comúnmente contiene un acuerdo sobre cuánto se le cobrará al usuario (generalmente, este campo es más relevante para los pagos de Marketplace). Los precios y las tarifas se calculan en función de este identificador.
+                    por: Atributo que comumente contém um acordo de quanto vai ser cobrado do usuário (geralmente, este campo é mais relevante para pagamentos do Marketplace). A precificação e as taxas são calculadas com base nesse identificador.
                 date_of_expiration:
                   type: string
                   format: date
-                  description: Payment´s expiration date.
+                  description: Payment’s expiration date. The valid format of the attribute is as follows - "yyyy-MM-dd'T'HH:mm:ssz". Ex - 2022-11-17T09:37:52.000-04:00.
+                  x-description-i18n:
+                    eng: Payment’s expiration date. The valid format of the attribute is as follows - "yyyy-MM-dd'T'HH:mm:ssz". Ex - 2022-11-17T09:37:52.000-04:00.
+                    spa: Fecha de vencimiento del pago. El formato válido del atributo es el siguiente - "yyyy-MM-dd'T'HH:mm:ssz". Ej - 2022-11-17T09:37:52.000-04:00.
+                    por: Data de expiração do pagamento. O formato válido do atributo é o seguinte - "yyyy-MM-dd'T'HH:mm:ssz". Por exemplo - 2022-11-17T09:37:52.000-04:00.
                 external_reference:
                   type: string
-                  description: ID given by the merchant in their system.
+                  description: It is a payment external reference. It could be, for example, a hashcode from the Central Bank, working as a transaction origin identifier.
                   x-description-i18n:
-                    eng: ID given by the merchant in their system.
-                    spa: Identificador provisto por el vendedor en su sistema
-                    por: Identificação fornecida pelo vendedor em seu sistema
+                    eng: It is a payment external reference. It could be, for example, a hashcode from the Central Bank, working as a transaction origin identifier.
+                    spa: Es una referencia de pago externa. Podría ser, por ejemplo, un hashcode del Banco Central, funcionando como identificador del origen de la transacción.
+                    por: É uma referência externa do pagamento. Pode ser, por exemplo, um hashcode do Banco Central, funcionando como identificador de origem da transação.
                   example: MP0001
                 installments:
                   type: number
@@ -382,19 +388,19 @@ paths:
                   example: 1
                 issuer_id:
                   type: string
-                  description: Payment method issuer.
+                  description: It is the identifier of the card issuer being used in a credit or debit card payment.
                   x-description-i18n:
-                    eng: Payment method issuer.
-                    spa: Identificador del emisor del medio de pago
-                    por: Id do emitente do meio de pagamento
+                    eng: It is the identifier of the card issuer being used in a credit or debit card payment.
+                    spa: Es el identificador del emisor de la tarjeta que se utiliza en un pago con tarjeta de crédito o débito.
+                    por: É o identificador do emissor do cartão que está sendo utilizado em um pagamento com cartão de crédito ou débito.
                   required: true
                 metadata:
                   type: object
-                  description: The metadata object shows (if used in the integration) the JSON sent by the client containing additional information that needs to be recorded in the payment.
+                  description: This is an optional key-value object where the customer can add additional information that needs to be recorded at checkout. Ex - {"payments_group_size":1,"payments_group_timestamp":"2022-11-18T15:01:44Z","payments_group_uuid":"96cfd2a4-0b06-4dea-b25f-c5accb02ba10"}
                   x-description-i18n:
-                    eng: The metadata object shows (if used in the integration) the JSON sent by the client containing additional information that needs to be recorded in the payment.
-                    spa: En el objeto metadata se muestra (en caso de ser utilizado en la integración) el JSON enviado por el cliente con información complementaria que necesite mantener registrada en el pago.
-                    por: O objeto de metadata mostra (se usado na integração) o JSON enviado pelo cliente com informações adicionais que precisam ser registradas no pagamento.
+                    eng: This is an optional key-value object where the customer can add additional information that needs to be recorded at checkout. Ex - {"payments_group_size":1,"payments_group_timestamp":"2022-11-18T15:01:44Z","payments_group_uuid":"96cfd2a4-0b06-4dea-b25f-c5accb02ba10"}
+                    spa: Este es un objeto clave-valor opcional en el que el cliente puede agregar información adicional que debe registrarse al finalizar la compra. Por ejemplo - {"payments_group_size":1,"payments_group_timestamp":"2022-11-18T15:01:44Z","payments_group_uuid":"96cfd2a4-0b06-4dea-b25f-c5accb02ba10"}
+                    por: Este é um objeto opcional do tipo chave-valor  no qual o cliente  pode adicionar informações adicionais que precisam ser registradas no pagamento. Ex - {"payments_group_size":1,"payments_group_timestamp":"2022-11-18T15:01:44Z","payments_group_uuid":"96cfd2a4-0b06-4dea-b25f-c5accb02ba10"}
                 notification_url:
                   type: string
                   description: Notifications URL available to receive notifications of events related to Payment.
@@ -424,26 +430,45 @@ paths:
                         por: Identificação do pagador associado
                     email:
                       type: string
-                      description: Email associated to the payer. This value will only return a response when status=approved, status=refunded or status=charged_back
+                      description: Email associated with the payer. This value will only return a response when status=approved, status=refunded, or status=charged_back.
+                      x-description-i18n:
+                        eng: Email associated with the payer. This value will only return a response when status=approved, status=refunded, or status=charged_back.
+                        spa: Correo electrónico asociado al payer. Este valor sólo devolverá una respuesta cuando status=approved, status=refunded o status=charged_back.
+                        por: Email associado ao payer. Este valor só retornará uma resposta quando status=approved, status=refunded ou status=charged_back.
                       required: true
                     identification:
                       type: object
-                      description: Personal identification. This value will only return a response when status=approved, status=refunded or status=charged_back
+                      description: User's personal identification. As an example, in Brazil, there is the CPF (Individual Taxpayer Registry) and the CNPJ (National Corporate Taxpayer Registry), for companies. Other possible identification codes are CURP (Mexico), CUIL (Argentina). This object will only return a response when status=approved, status=refunded or status=charged_back.
+                      x-description-i18n:
+                        eng: User's personal identification. As an example, in Brazil, there is the CPF (Individual Taxpayer Registry) and the CNPJ (National Corporate Taxpayer Registry), for companies. Other possible identification codes are CURP (Mexico), CUIL (Argentina). This object will only return a response when status=approved, status=refunded or status=charged_back.
+                        spa: Identificación personal del usuario. Como ejemplo, en Brasil, existe el CPF (Registro de Contribuyentes Individuales) y el CNPJ (Registro Nacional de Personas Jurídicas) para empresas. Otros posibles códigos de identificación son CURP (México), CUIL (Argentina). Este objeto sólo devolverá una respuesta cuando status=approved, status=refunded or status=charged_back.
+                        por: Identificação pessoal do usuário. Como exemplo, a nível Brasil, temos o CPF (Cadastro de Pessoa Física) e o CNPJ (Cadastro Nacional de Pessoas Jurídicas), para empresas. Outros códigos de identificação possíveis são o CURP (México), CUIL (Argentina), Este objeto só retornará uma response quando status=approved, status=refunded or status=charged_back.
                       properties:
                         type:
                           type: string
-                          description: Identification type.
+                          description: Refers to the type of identification. It can be one of the following types.
                           x-description-i18n:
-                            eng: Identification type.
-                            spa: Tipo de identificación
-                            por: Tipo de identificação
+                            eng: Refers to the type of identification. It can be one of the following types.
+                            spa: Se refiere al tipo de identificación. Puede ser de los siguientes tipos.
+                            por: Refere-se ao tipo de identificação. Pode ser dos seguintes tipos.
+                          enum:
+                            - CPF -- Individual Taxpayer Registration, Brazil.
+                            - CNPJ -- National Register of Legal Entities, Brazil.
+                            - CUIT -- Unique Tax Identification Code, Argentina.
+                            - CUIL -- Unique Labor Identification Code, Argentina.
+                            - DNI -- National Identity Document, Argentina.
+                            - CURP -- Single Population Registration Code, Mexico.
+                            - RFC -- Federal Registry of Taxpayers, Mexico.
+                            - CC -- Citizenship Card, Colombia.
+                            - RUT -- Single Tax List, Chile.
+                            - CI -- Identity Card, Uruguay.
                         number:
                           type: string
-                          description: Identification number.
+                          description: The number refers to the identifier of the user in question. If it is a CPF, for example, it will have 11 numbers.
                           x-description-i18n:
-                            eng: Identification number.
-                            spa: Número de identificación
-                            por: Número de identificação
+                            eng: The number refers to the identifier of the user in question. If it is a CPF, for example, it will have 11 numbers.
+                            spa: El número hace referencia al identificador del usuario en cuestión. Si es un CPF, por ejemplo, tendrá 11 números.
+                            por: O número se refere ao identificador do usuário em questão. Se for um CPF, por exemplo, terá 11 números.
                     first_name:
                       type: string
                       description: First name of the associated payer.
@@ -460,11 +485,17 @@ paths:
                         por: Sobrenome do pagante associado
                 payment_method_id:
                   type: string
-                  description: Payment method identifier. Indicates the ID of the payment method selected to make the payment.
+                  description: It indicates the identifier of the payment method selected to make the transaction. Here are some examples.
                   x-description-i18n:
-                    eng: Payment method identifier. Indicates the ID of the payment method selected to make the payment.
+                    eng: It indicates the identifier of the payment method selected to make the transaction. Here are some examples.
                     spa: Identificador del medio de pago. Indica el ID del medio de pago seleccionado para realizar el pago.
-                    por: Id do meio de pagamento. Indica o ID do meio de pagamento selecionado para efetuar o pagamento.
+                    por: Indica o identificador do meio de pagamento selecionado para efetuar o pagamento. A seguir, apresentamos alguns exemplos.
+                  enum:
+                    - Pix -- Instant digital payment method used in Brazil.
+                    - Account_money -- When the payment is debited directly from a Mercado Pago account.
+                    - Debin_transfer -- Digital payment method used in Argentina that immediately debits an amount from an account, requesting prior authorization.
+                    - Ted -- It is the Electronic Transfer Available payment, used in Brazil, that has fees to be used. The payment is made the same day of the transaction, but for this it is necessary to make the transfer within the stipulated period;
+                    - Cvu -- Payment method used in Argentina.
                   required: true
                   example: visa
                 statement_descriptor:
@@ -476,19 +507,19 @@ paths:
                     por: Descrição com a qual o pagamento aparecerá no resumo do cartão (ex. MERCADOPAGO)
                 token:
                   type: string
-                  description: Card token ID. (Required for credit card)
+                  description: Token card identifier (mandatory for credit card). The card token is created from the card's own information, increasing security during the payment flow. In addition, once the token is used in a given purchase, it is discarded, requiring the creation of a new token for future purchases.
                   x-description-i18n:
-                    eng: Card token ID. (Required for credit card)
-                    spa: Identificador de card token. (Obligatorio para tarjeta de crédito)
-                    por: Identificador de token card. (Obrigatório para cartão de crédito)
+                    eng: Token card identifier (mandatory for credit card). The card token is created from the card's own information, increasing security during the payment flow. In addition, once the token is used in a given purchase, it is discarded, requiring the creation of a new token for future purchases.
+                    spa: Identificador del token card. (obligatorio para tarjeta de crédito). El token de la tarjeta se crea a partir de la información de la propia tarjeta, aumentando la seguridad durante el flujo de pago. Además, una vez que el token se usa en una compra determinada, se descarta, lo que requiere la creación de un nuevo token para futuras compras.
+                    por: Identificador de token card (obrigatório para cartão de crédito). O token do cartão é criado a partir das próprias informações do cartão, aumentando a segurança durante o fluxo do pagamento. Além disso, uma vez que o token é utilizado em determinada compra, ele é descartado, sendo necessária a criação de um novo token para compras futuras. 
                   required: true
                 transaction_amount:
                   type: number
-                  description: Product cost.
+                  description: Product’s cost. Example - The sale of a product for R$100.00 will have a transactionAmount = 100.
                   x-description-i18n:
-                    eng: Product cost.
-                    spa: Costo del producto
-                    por: Custo do produto
+                    eng: Product’s cost. Example - The sale of a product for R$100.00 will have a transactionAmount = 100.
+                    spa: Costo del producto. Ejemplo - La venta de un producto por R$ 100,00 tendrá un transactionAmount = 100.
+                    por: Custo do produto. Exemplo - A venda de um produto por R$100,00 terá um transactionAmount = 100.
                   required: true
                   example: 58.8
       responses:
@@ -534,29 +565,29 @@ paths:
                   date_of_expiration:
                     type: string
                     format: nullable
-                    description: Deadline to make the Payment through an off payment method (in cash)
+                    description: Payment’s expiration date. The attribute’s valid format is as follows - "yyyy-MM-dd'T'HH:mm:ssz". Ex. - 2022-11-17T09:37:52.000-04:00.
                     x-description-i18n:
-                      eng: Deadline to make the Payment through an off payment method (in cash)
-                      spa: Fecha límite para realizar el Pago a través de un medio de pago off (en efectivo)
-                      por: Prazo para efetuar o Pagamento através de um método de pagamento à vista (em dinheiro)
+                      eng: Payment’s expiration date. The attribute’s valid format is as follows - "yyyy-MM-dd'T'HH:mm:ssz". Ex. - 2022-11-17T09:37:52.000-04:00.
+                      spa: Fecha de vencimiento del pago. El formato válido del atributo es el siguiente - "yyyy-MM-dd'T'HH:mm:ssz". Ej. -  2022-11-17T09:37:52.000-04:00.
+                      por: Data de expiração do pagamento. O formato válido do atributo é o seguinte - "yyyy-MM-dd'T'HH:mm:ssz". Ex. - 2022-11-17T09:37:52.000-04:00.
                   money_release_date:
                     type: string
                     example: 2019-07-24T14:47:58.000Z
-                    description: Date on which the payment is settled (available) in the Collector´s Mercado Pago account
+                    description: Date on which the payment is settled from the Payer's account (the payer) and is made available in the Mercado Pago account of the Collector (the one who receives the payment).
                     x-description-i18n:
-                      eng: Date on which the payment is settled (available) in the Collector´s Mercado Pago account
-                      spa: Fecha en la que el pago se encuentra liquidado (disponible) en la cuenta de Mercado Pago del Collector
-                      por: Data em que o pagamento é liquidado (disponível) na conta Mercado Pago do Collector
+                      eng: Date on which the payment is settled from the Payer's account (the payer) and is made available in the Mercado Pago account of the Collector (the one who receives the payment).
+                      spa: Fecha en que se liquida el pago de la cuenta del Payer (el pagador) y se pone a disposición en la cuenta de Mercado Pago del Collector (el que recibe el pago).
+                      por: Data em que o pagamento é liquidado da conta do Payer (o pagador) e é disponibilizado na conta Mercado Pago do Collector (aquele que recebe o pagamento).
                   operation_type:
                     $ref: '#/components/schemas/operation_type'
                   issuer_id:
                     type: string
                     example: 25
-                    description: Identifier of the issuer of the payment method.
+                    description: It is the identifier of the card issuer that’s being used in a credit or debit card payment.
                     x-description-i18n:
-                      eng: Identifier of the issuer of the payment method.
-                      spa: Identificador del emisor del medio de pago
-                      por: Identificador do emissor do meio de pagamento
+                      eng: It is the identifier of the card issuer that’s being used in a credit or debit card payment.
+                      spa: Es el identificador del emisor de la tarjeta que se utiliza en un pago con tarjeta de crédito o débito.
+                      por: É o identificador do emissor do cartão que está sendo utilizado em um pagamento com cartão de crédito ou débito.
                   payment_method_id:
                     type: string
                     example: visa
@@ -597,14 +628,12 @@ paths:
                     $ref: '#/components/schemas/currency_id'
                   description:
                     type: string
-                    example: 
-                      Point Mini a maquininha que dá o dinheiro de suas vendas
-                      na hora
-                    description: Description sent in the payment creation request.
+                    example: Point Mini a maquininha que dá o dinheiro de suas vendas na hora.
+                    description: Description sent in the payment creation request. Ex. - In a pix payment, the description is “Payment of Credit Market installments”. In another cases, such as a purchase in a physical store where the customer uses the machine to pay, we can find the description “Sale in person”. In marketplace purchases, the purchase description usually corresponds to a purchased product - “Pendrive Multilaser Twist Pd590 64gb 2.0 Black And Silver + 1 product”.
                     x-description-i18n:
-                      eng: Description sent in the payment creation request.
-                      spa: Descripción enviada en la solicitud de creación del Pago.
-                      por: Descrição enviada na solicitação de criação de pagamento.
+                      eng: Description sent in the payment creation request. Ex. - In a pix payment, the description is “Payment of Credit Market installments”. In another cases, such as a purchase in a physical store where the customer uses the machine to pay, we can find the description “Sale in person”. In marketplace purchases, the purchase description usually corresponds to a purchased product - “Pendrive Multilaser Twist Pd590 64gb 2.0 Black And Silver + 1 product”.
+                      spa: Descripción enviada en el request de creación de pago. Por ejemplo - En un pago con pix, se encuentra la descripción “Pago de cuotas Mercado Crédito”. En otro caso, una compra en una tienda física donde el cliente utiliza la máquina para pagar, podemos encontrar la descripción “Venta en persona”. En las compras en marketplace, la descripción de compra suele corresponder a un producto comprado - “Pendrive Multilaser Twist Pd590 64gb 2.0 Negro Y Plata + 1 producto”.
+                      por: Descrição enviada na solicitação de criação de pagamento. Por exemplo - Em um pagamento pix, há a descrição “Pagamento de parcelas de Mercado Crédito”. Em outro caso, uma compra em loja física onde o cliente utiliza a maquininha para pagar, podemos encontrar a descrição - “Venda presencial”. Já em compras do marketplace, a descrição da compra geralmente corresponde a um produto comprado - “	Pendrive Multilaser Twist Pd590 64gb 2.0 Preto E Prateado + 1 produto”.
                   live_mode:
                     type: boolean
                     description: Indicates whether the Payment was made in a production environment or in a Test environment. If TRUE, then the chargeback will be processed in production mode. If FALSE, then the chargeback will be processed in sandbox mode.
@@ -615,27 +644,27 @@ paths:
                   sponsor_id:
                     type: string
                     format: nullable
-                    description: Identifier of the Partners Mercado Pago account. It is used to identify if the integration was performed by a partner.
+                    description: This field is deprecated and no longer in use.
                     x-description-i18n:
-                      eng: Identifier of the Partners Mercado Pago account. It is used to identify if the integration was performed by a partner.
-                      spa: Identificador de la cuenta de Mercado Pago del Partner. Se utiliza para identificar si la integración fue realizada por algún partner.
-                      por: Identificador da conta Mercado Pago do Partnet. É usado para identificar se a integração foi realizada por um partner.
+                      eng: This field is deprecated and no longer in use.
+                      spa: Este campo está deprecado y ya no se usa.
+                      por: Este campo está deprecado e não é mais utilizado.
                   authorization_code:
                     type: string
                     format: nullable
-                    description: Transaction authorization code.
+                    description: Transaction’s authorization code for payments with “payment_method_type” of type “credit_card” (credit card), “debit_card” (debit card) and “voucher_card” (voucher card for benefits, such as Alelo). In summary, this code is used for card transactions. The code is numerical and has 6 digits.
                     x-description-i18n:
-                      eng: Transaction authorization code.
-                      spa: Código de autorización de la transacción.
-                      por: Código de autorização de transação.
+                      eng: Transaction’s authorization code for payments with “payment_method_type” of type “credit_card” (credit card), “debit_card” (debit card) and “voucher_card” (voucher card for benefits, such as Alelo). In summary, this code is used for card transactions. The code is numerical and has 6 digits.
+                      spa: Código de autorización de transacción para pagos con “payment_method_type” de tipo “credit_card” (tarjeta de crédito), “debit_card” (tarjeta de débito) y “voucher_card” (tarjeta de bono para beneficios, como Alelo). En resumen, este código se utiliza para transacciones con tarjeta. Es numérico y tiene 6 dígitos.
+                      por: Código de autorização de transação para pagamentos com “payment_method_type” do tipo “credit_card” (cartão de crédito), “debit_card” (cartão de crédito) e “voucher_card” (cartão de voucher para benefícios, como Alelo). Em síntese, este código é utilizado para transações com cartão. O código é numérico e possui 6 dígitos.
                   money_release_schema:
                     type: string
                     format: nullable
-                    description: Money release schema
+                    description: This field is used to identify whether a payment is PNF (Payment in Flow). Payment in flow is a form of cash release in which the installments received by a seller are released over the months (which corresponds to the number of installments). Possible values ​​for this field are “null” or “payment_in_flow”.
                     x-description-i18n:
-                      eng: Money release schema
-                      spa: Esquema de liberación de dinero
-                      por: Esquema de liberação de dinheiro
+                      eng: This field is used to identify whether a payment is PNF (Payment in Flow). Payment in flow is a form of cash release in which the installments received by a seller are released over the months (which corresponds to the number of installments). Possible values ​​for this field are “null” or “payment_in_flow”.
+                      spa: Este campo se utiliza para identificar si un pago es PNF (Pay in Flow). El pago en flujo es una forma de liberación de dinero en la que las cuotas recibidas por un vendedor se van liberando a lo largo de los meses (lo que corresponde al número de cuotas). Los valores posibles para este campo son "null" o "payment_in_flow".
+                      por: Esse campo é usado para identificar se um pagamento é PNF (pagamento no fluxo). Pagamento no fluxo é uma forma de liberação de dinheiro em que as parcelas recebidas por um vendedor são liberadas com o passar dos meses (que corresponde ao número de parcelas). Os valores possíveis para este campo são “null” ou “payment_in_flow”.
                   taxes_amount:
                     type: number
                     example: 0
@@ -647,23 +676,27 @@ paths:
                   counter_currency:
                     type: string
                     format: nullable
-                    description: Information related to dollar values ​​for CBT (Cross Border Trade) payments.
+                    description: Basically, it is an object that will allow you to convert payments of CBT type (Cross Border Trade) into dollars, which are international payments made in a foreign currency.
+                    x-description-i18n:
+                      eng: Basically, it is an object that will allow you to convert payments of CBT type (Cross Border Trade) into dollars, which are international payments made in a foreign currency.
+                      spa: Básicamente, es un objeto que te permitirá convertir pagos del tipo CBT (Cross Border Trade) en dólares, que son pagos internacionales realizados en moneda extranjera.
+                      por: Basicamente, é um objeto que permitirá converter em dólares pagamentos do tipo CBT (Cross Border Trade), que são pagamentos internacionais, feitos em moeda estrangeira. 
                   shipping_amount:
                     type: number
                     example: 0
-                    description: Shipping amount
+                    description: Amount of charge for shipping the purchase. It is of type BigDecimal.
                     x-description-i18n:
-                      eng: Shipping amount
-                      spa: Valor de envío
-                      por: Valor de envio
+                      eng: Amount of charge for shipping the purchase. It is of type BigDecimal.
+                      spa: Importe del cargo por el envío de la compra. Es de tipo BigDecimal.
+                      por: Valor da cobrança de envio da compra. É do tipo BigDecimal.
                   pos_id:
                     type: string
                     format: nullable
-                    description: POS identifier
+                    description: Point of Sale (POS) digital identifier. They are physical points of sale that use a card machine for sales.
                     x-description-i18n:
-                      eng: POS identifier
-                      spa: Identificador de POS
-                      por: Identificador de POS
+                      eng: Point of Sale (POS) digital identifier. They are physical points of sale that use a card machine for sales.
+                      spa: Identificador digital de Punto de Venta (PDV). Son puntos de venta físicos que utilizan una máquina de tarjetas para la venta.
+                      por: Identificador digital do ponto de vendas(Point of Sale - POS). São pontos de vendas físicos que utilizam maquininha de cartão para vendas.
                   store_id:
                     type: string
                     format: nullable
@@ -675,11 +708,11 @@ paths:
                   collector_id:
                     type: number
                     example: 448876418
-                    description: Identifier of the collecting Mercado Pago account
+                    description: It is the user who receives the money. Ex - A user (payer) buys a cell phone through the marketplace. The identifier of the store/seller to receive the payment is the collector_id.
                     x-description-i18n:
-                      eng: Identifier of the collecting Mercado Pago account
-                      spa: Identificador de la cuenta de Mercado Pago recaudadora
-                      por: Identificador da conta coletora do Mercado Pago
+                      eng: It is the user who receives the money. Ex - A user (payer) buys a cell phone through the marketplace. The identifier of the store/seller to receive the payment is the collector_id.
+                      spa: Es el usuario quien recibe el dinero. Por ejemplo - Un usuario (payer) compra un celular a través del marketplace. El identificador de la tienda/vendedor para recibir el pago es el collector_id.
+                      por: É o usuário que recebe o dinheiro. Por exemplo - Um usuário (payer) compra um celular pelo marketplace. O identificador da loja/vendedor a receber o pagamento é o collector_id. 
                   payer:
                     type: object
                     properties:
@@ -697,18 +730,22 @@ paths:
                         type: string
                         required: true
                         example: test_user_80507629@testuser.com
-                        description: Email associated to the payer. This value will only return a response when status=approved, status=refunded or status=charged_back
+                        description: Email associated with the payer. This value will only return a response when status=approved, status=refunded, or status=charged_back.
+                        x-description-i18n:
+                          eng: Email associated with the payer. This value will only return a response when status=approved, status=refunded, or status=charged_back.
+                          spa: Correo electrónico asociado al payer. Este valor sólo devolverá una respuesta cuando el status=approved, status=refunded o status=charged_back.
+                          por: Email associado ao payer. Este valor só retornará uma resposta quando status=approved, status=refunded ou status=charged_back.
                       identification:
                         type: object
                         properties:
                           number:
                             type: string
                             example: 19119119100
-                            description: Identification number.
+                            description: The number refers to the user’s identifier. If it is a CPF, for example, it will have 11 numbers.
                             x-description-i18n:
-                              eng: Identification number.
-                              spa: Número de identificación
-                              por: Número de identificação
+                              eng: The number refers to the user’s identifier. If it is a CPF, for example, it will have 11 numbers.
+                              spa: El número hace referencia al identificador del usuario en cuestión. Si es un CPF, por ejemplo, tendrá 11 números.
+                              por: O número se refere ao identificador do usuário em questão. Se for um CPF, por exemplo, terá 11 números.
                           type:
                             type: string
                             example: CPF
@@ -727,11 +764,11 @@ paths:
                       por: Dados do pagador - ID (número de identificação), e-mail, identificação (tipo e número de documento)
                   metadata:
                     type: object
-                    description: The metadata object shows (if used in the integration) the JSON sent by the client containing additional information that needs to be recorded in the payment.
+                    description: This is an optional key-value object where the customer can add additional information that needs to be recorded at checkout. Ex - {"payments_group_size":1,"payments_group_timestamp":"2022-11-18T15:01:44Z","payments_group_uuid":"96cfd2a4-0b06-4dea-b25f-c5accb02ba10"}.
                     x-description-i18n:
-                      eng: The metadata object shows (if used in the integration) the JSON sent by the client containing additional information that needs to be recorded in the payment.
-                      spa: En el objeto metadata se muestra (en caso de ser utilizado en la integración) el JSON enviado por el cliente con información complementaria que necesite mantener registrada en el pago.
-                      por: O objeto de metadata mostra (se usado na integração) o JSON enviado pelo cliente com informações adicionais que precisam ser registradas no pagamento.
+                      eng: This is an optional key-value object where the customer can add additional information that needs to be recorded at checkout. Ex - {"payments_group_size":1,"payments_group_timestamp":"2022-11-18T15:01:44Z","payments_group_uuid":"96cfd2a4-0b06-4dea-b25f-c5accb02ba10"}.
+                      spa: Este es un objeto clave-valor opcional en el que el cliente puede agregar información adicional que debe registrarse al finalizar la compra. Por ejemplo - {"payments_group_size":1,"payments_group_timestamp":"2022-11-18T15:01:44Z","payments_group_uuid":"96cfd2a4-0b06-4dea-b25f-c5accb02ba10"}.
+                      por: Este é um objeto opcional do tipo chave-valor no qual o cliente pode adicionar informações adicionais que precisam ser registradas no pagamento. Por exemplo - {"payments_group_size":1,"payments_group_timestamp":"2022-11-18T15:01:44Z","payments_group_uuid":"96cfd2a4-0b06-4dea-b25f-c5accb02ba10"}.
                   additional_info:
                     type: object
                     properties:
@@ -743,11 +780,11 @@ paths:
                             id:
                               type: string
                               example: PR0001
-                              description: Item code.
+                              description: It is the purchased product ad identifier. Ex - “MLB2907679857”
                               x-description-i18n:
-                                eng: Item code.
-                                spa: Código de ítem
-                                por: Código de anúncio
+                                eng: It is the purchased product ad identifier. Ex - “MLB2907679857”
+                                spa: Es el identificador del anuncio del producto adquirido. Por ejemplo - “MLB2907679857”.
+                                por: É o identificador do anúncio do produto comprado. Por exemplo - “MLB2907679857”.
                             title:
                               type: string
                               example: Point Mini
@@ -880,19 +917,19 @@ paths:
                   external_reference:
                     type: string
                     example: MP0001
-                    description: Unique identifier sent by the seller to relate the payment_id generated by Mercado Pago, with the ID of its system.
+                    description: It is a payment external reference. It could be, for example, a hashcode from the Central Bank, working as a transaction origin identifier.
                     x-description-i18n:
-                      eng: Unique identifier sent by the seller to relate the payment_id generated by Mercado Pago, with the ID of its system.
-                      spa: Identificador único que envía el vendedor para relacionar el payment_id generado por mercado pago, con el ID de tu sistema.
-                      por: Identificador único enviado pelo vendedor para relacionar o payment_id gerado pelo Mercado Pago com o ID de seu sistema.
+                      eng: It is a payment external reference. It could be, for example, a hashcode from the Central Bank, working as a transaction origin identifier.
+                      spa: Es una referencia de pago externa. Podría ser, por ejemplo, un hashcode del Banco Central, funcionando como identificador del origen de la transacción.
+                      por: É uma referência externa do pagamento. Pode ser, por exemplo, um hashcode do Banco Central, funcionando como identificador de origem da transação.
                   transaction_amount:
                     type: number
                     example: 58.8
-                    description: Transaction amount
+                    description: Product’s cost. Example - The sale of a product for R$100.00 will have a transactionAmount = 100.
                     x-description-i18n:
-                      eng: Transaction amount
-                      spa: Monto de la transacción
-                      por: Valor da transação
+                      eng: Product’s cost. Example - The sale of a product for R$100.00 will have a transactionAmount = 100.
+                      spa: Costo del producto. Ejemplo - La venta de un producto por R$ 100,00 tendrá un transactionAmount = 100.
+                      por: Custo do produto. Exemplo - A venda de um produto por R$100,00 terá um transactionAmount = 100.
                   transaction_amount_refunded:
                     type: number
                     example: 0
@@ -904,27 +941,27 @@ paths:
                   coupon_amount:
                     type: number
                     example: 0
-                    description: Coupon in favor of the payer. If it exists, it is deducted from the total to be paid.
+                    description: It is the value of the discount coupon. E.g. - BRL 14.50. The attribute's type is BigDecimal.
                     x-description-i18n:
-                      eng: Coupon in favor of the payer. If it exists, it is deducted from the total to be paid.
-                      spa: Cupón a favor del payer. De existir, es descontado del total a pagar.
-                      por: Cupom a favor do pagador. Se existir, é deduzido do total a pagar.
+                      eng: It is the value of the discount coupon. E.g. - BRL 14.50. The attribute's type is BigDecimal.
+                      spa: Es el valor del cupón de descuento. Por ejemplo - BRL 14,50. El tipo del atributo es BigDecimal.
+                      por: É o valor do cupom de desconto. Ex. - R$14,50. O tipo do atributo é BigDecimal. 
                   differential_pricing_id:
                     type: string
                     format: nullable
-                    description: Differential code of the Pricing Schema applied by Mercado Pago.
+                    description: Attribute that commonly contains an agreement on how much the user will be charged (generally, this field is more relevant for Marketplace payments). Pricing and fees are calculated based on this identifier.
                     x-description-i18n:
-                      eng: Differential code of the Pricing Schema applied by Mercado Pago.
-                      spa: Código diferencial del Schema de Pricing aplicado por Mercado Pago.
-                      por: Código diferencial do Schema de Pricing aplicado pelo Mercado Pago.
+                      eng: Attribute that commonly contains an agreement on how much the user will be charged (generally, this field is more relevant for Marketplace payments). Pricing and fees are calculated based on this identifier.
+                      spa: Atributo que comúnmente contiene un acuerdo sobre cuánto se le cobrará al usuario (generalmente, este campo es más relevante para los pagos de Marketplace). Los precios y las tarifas se calculan en función de este identificador.
+                      por: Atributo que comumente contém um acordo de quanto vai ser cobrado do usuário (geralmente, este campo é mais relevante para pagamentos do Marketplace). A precificação e as taxas são calculadas com base nesse identificador.
                   deduction_schema:
                     type: string
                     format: nullable
-                    description: Pricing Schema applied by Mercado Pago.
+                    description: Pricing Scheme applied by Mercado Pago. It is a field that represents the information of a type of financing (installment). Ex - “ahora12” is a schema that indicates that the payment is divided into 12 installments. In addition, financing may have an additional cost, such cost being included in that same answer and pointed out to whom this applies (payer/collector).
                     x-description-i18n:
-                      eng: Pricing Schema applied by Mercado Pago.
-                      spa: Schema de Pricing aplicado por Mercado Pago.
-                      por: Schema de Pricing aplicado pelo Mercado Pago.
+                      eng: Pricing Scheme applied by Mercado Pago. It is a field that represents the information of a type of financing (installment). Ex - “ahora12” is a schema that indicates that the payment is divided into 12 installments. In addition, financing may have an additional cost, such cost being included in that same answer and pointed out to whom this applies (payer/collector).
+                      spa: Esquema de precios aplicado por Mercado Pago. Es un campo que representa la información de un tipo de financiamiento (cuota). Ej - “ahora12” es un esquema que indica que el pago se divide en 12 cuotas. Además, el financiamiento puede tener un costo adicional, siendo incluido dicho costo en esa misma respuesta y señalándose a quién aplica (payer/collector).
+                      por: Esquema de Pricing aplicado pelo Mercado Pago. É um campo que representa as informações de um tipo de financiamento (parcelamento). Ex. - “ahora12” é um schema que indica que o pagamento está parcelado em 12 vezes. Em adição, o financiamento pode ter um custo adicional, sendo tal custo incluído nessa mesma resposta  e apontado a quem se aplica isso (payer/collector).
                   transaction_details:
                     type: object
                     properties:
@@ -1137,11 +1174,11 @@ paths:
                               number:
                                 type: string
                                 example: 19119119100
-                                description: Identification number.
+                                description: The number refers to the user’s identifier. If it is a CPF, for example, it will have 11 numbers.
                                 x-description-i18n:
-                                  eng: Identification number.
-                                  spa: Número de identificación
-                                  por: Número de identificação
+                                  eng: The number refers to the user’s identifier. If it is a CPF, for example, it will have 11 numbers.
+                                  spa: El número hace referencia al identificador del usuario en cuestión. Si es un CPF, por ejemplo, tendrá 11 números.
+                                  por: O número se refere ao identificador do usuário em questão. Se for um CPF, por exemplo, terá 11 números.
                               type:
                                 type: string
                                 example: CPF
@@ -1183,11 +1220,11 @@ paths:
                   merchant_account_id:
                     type: string
                     format: nullable
-                    description: Merchant account ID. Applies to gateway model.
+                    description: Merchant store code identifier. Applies only to the gateway model (since the delivery of money to the merchant does not go through the Mercado Pago system).
                     x-description-i18n:
-                      eng: Merchant account ID. Applies to gateway model.
-                      spa: ID del código de comercio (merchant account ID). Aplica para modelo gateway.
-                      por: ID do código do comerciante (Mmerchant account ID). Aplica-se ao modelo de gateway.
+                      eng: Merchant store code identifier. Applies only to the gateway model (since the delivery of money to the merchant does not go through the Mercado Pago system).
+                      spa: Identificador del código de la tienda del merchant. Aplica solo para el modelo de gateway (ya que la entrega de dinero al comercio no pasa por el sistema de Mercado Pago).
+                      por: Identificador do código da loja comerciante. Aplica-se somente ao modelo gateway (porque a entrega de dinheiro ao comerciante não passa pelo sistema do Mercado Pago).
                   acquirer:
                     type: string
                     format: nullable
@@ -1471,37 +1508,43 @@ paths:
                   date_of_expiration:
                     type: string
                     format: nullable
-                    description: Deadline to make the Payment through an off payment method (in cash)
+                    description: Payment’s expiration date. The attribute’s valid format is as follows - "yyyy-MM-dd'T'HH:mm:ssz". Ex. - 2022-11-17T09:37:52.000-04:00.
                     x-description-i18n:
-                      eng: Deadline to make the Payment through an off payment method (in cash)
-                      spa: Fecha límite para realizar el Pago a través de un medio de pago off (en efectivo)
-                      por: Prazo para efetuar o Pagamento através de um método de pagamento à vista (em dinheiro)
+                      eng: Payment’s expiration date. The attribute’s valid format is as follows - "yyyy-MM-dd'T'HH:mm:ssz". Ex. - 2022-11-17T09:37:52.000-04:00.
+                      spa: Fecha de vencimiento del pago. El formato válido del atributo es el siguiente - "yyyy-MM-dd'T'HH:mm:ssz". Ej. - 2022-11-17T09:37:52.000-04:00.
+                      por: Data de expiração do pagamento. O formato válido do atributo é o seguinte - "yyyy-MM-dd'T'HH:mm:ssz". Ex. - 2022-11-17T09:37:52.000-04:00.
                   money_release_date:
                     type: string
                     example: 2017-09-14T11:26:38.000Z
-                    description: Date on which the payment is settled (available) in the Collector´s Mercado Pago account
+                    description: Date on which the payment is settled from the Payer's account (the payer) and is made available in the Mercado Pago account of the Collector (the one who receives the payment).
                     x-description-i18n:
-                      eng: Date on which the payment is settled (available) in the Collector´s Mercado Pago account
-                      spa: Fecha en la que el pago se encuentra liquidado (disponible) en la cuenta de Mercado Pago del Collector
-                      por: Data em que o pagamento é liquidado (disponível) na conta Mercado Pago do Collector
+                      eng: Date on which the payment is settled from the Payer's account (the payer) and is made available in the Mercado Pago account of the Collector (the one who receives the payment).
+                      spa: Fecha en que se liquida el pago de la cuenta del Payer (el pagador) y se pone a disposición en la cuenta de Mercado Pago del Collector (el que recibe el pago).
+                      por: Data em que o pagamento é liquidado da conta do Payer (o pagador) e é disponibilizado na conta Mercado Pago do Collector (aquele que recebe o pagamento).
                   operation_type:
                     $ref: '#/components/schemas/operation_type'
                   issuer_id:
                     type: string
                     format: nullable
-                    description: Identifier of the issuer of the payment method.
+                    description: Is the identifier of the card issuer being used in a credit or debit card payment.
                     x-description-i18n:
-                      eng: Identifier of the issuer of the payment method.
-                      spa: Identificador del emisor del medio de pago
-                      por: Identificador do emissor do meio de pagamento
+                      eng: Is the identifier of the card issuer being used in a credit or debit card payment.
+                      spa: Es el identificador del emisor de la tarjeta que se utiliza en un pago con tarjeta de crédito o débito.
+                      por: É o identificador do emissor do cartão que está sendo utilizado em um pagamento com cartão de crédito ou débito.
                   payment_method_id:
                     type: string
                     example: account_money
-                    description: Payment method identifier. Indicates the ID of the payment method selected to make the payment.
+                    description: It indicates the identifier of the payment method selected to make the transaction. Here are some examples.
                     x-description-i18n:
-                      eng: Payment method identifier. Indicates the ID of the payment method selected to make the payment.
-                      spa: Identificador del medio de pago. Indica el ID del medio de pago seleccionado para realizar el pago.
-                      por: Id do meio de pagamento. Indica o ID do meio de pagamento selecionado para efetuar o pagamento.
+                      eng: It indicates the identifier of the payment method selected to make the transaction. Here are some examples.
+                      spa: Indica el identificador del medio de pago seleccionado para realizarlo. A continuación presentamos algunos ejemplos.
+                      por:  Indica o identificador do meio de pagamento selecionado para efetuar o pagamento. A seguir, apresentamos alguns exemplos.
+                    enum:
+                      - pix -- Instant digital payment method used in Brazil;
+                      - account_money -- When the payment is debited directly from a Mercado Pago account;
+                      - debin_transfer -- Digital payment method used in Argentina that immediately debits an amount from an account, requesting prior authorization;
+                      - ted -- It is the Electronic Transfer Available payment, used in Brazil, that has fees to be used. The payment is made the same day of the transaction, but for this it is necessary to make the transfer within the stipulated period;
+                      - cvu -- Payment method used in Argentina.
                   payment_type_id:
                     $ref: '#/components/schemas/payment_type_id'
                   status:
@@ -1535,11 +1578,11 @@ paths:
                   description:
                     type: string
                     example: Pago Pizza
-                    description: Description sent in the payment creation request.
+                    description: Description sent in the payment creation request. Ex. - In a pix payment, the description is “Payment of Credit Market installments”. In another cases, such as a purchase in a physical store where the customer uses the machine to pay, we can find the description “Sale in person”. In marketplace purchases, the purchase description usually corresponds to a purchased product - “Pendrive Multilaser Twist Pd590 64gb 2.0 Black And Silver + 1 product”.
                     x-description-i18n:
-                      eng: Description sent in the payment creation request.
-                      spa: Descripción enviada en la solicitud de creación del Pago.
-                      por: Descrição enviada na solicitação de criação de pagamento.
+                      eng: Description sent in the payment creation request. Ex. - In a pix payment, the description is “Payment of Credit Market installments”. In another cases, such as a purchase in a physical store where the customer uses the machine to pay, we can find the description “Sale in person”. In marketplace purchases, the purchase description usually corresponds to a purchased product - “Pendrive Multilaser Twist Pd590 64gb 2.0 Black And Silver + 1 product”.
+                      spa: Descripción enviada en el request de creación de pago. Por ejemplo - En un pago con pix, se encuentra la descripción “Pago de cuotas Mercado Crédito”. En otro caso, una compra en una tienda física donde el cliente utiliza la máquina para pagar, podemos encontrar la descripción “Venta en persona”. En las compras en marketplace, la descripción de compra suele corresponder a un producto comprado - “Pendrive Multilaser Twist Pd590 64gb 2.0 Negro Y Plata + 1 producto”.
+                      por: Descrição enviada na solicitação de criação de pagamento. Por exemplo - Em um pagamento pix, há a descrição “Pagamento de parcelas de Mercado Crédito”. Em outro caso, uma compra em loja física onde o cliente utiliza a maquininha para pagar, podemos encontrar a descrição - “Venda presencial”. Já em compras do marketplace, a descrição da compra geralmente corresponde a um produto comprado - “	Pendrive Multilaser Twist Pd590 64gb 2.0 Preto E Prateado + 1 produto”.
                   live_mode:
                     type: boolean
                     description: Indicates whether the Payment was made in a production environment or in a Test environment. If TRUE, then the chargeback will be processed in production mode. If FALSE, then the chargeback will be processed in sandbox mode.
@@ -1550,39 +1593,43 @@ paths:
                   sponsor_id:
                     type: string
                     format: nullable
-                    description: Identifier of the Partners Mercado Pago account. It is used to identify if the integration was performed by a partner.
+                    description: This field is deprecated and no longer used.
                     x-description-i18n:
-                      eng: Identifier of the Partners Mercado Pago account. It is used to identify if the integration was performed by a partner.
-                      spa: Identificador de la cuenta de Mercado Pago del Partner. Se utiliza para identificar si la integración fue realizada por algún partner.
-                      por: Identificador da conta Mercado Pago do Partnet. É usado para identificar se a integração foi realizada por um partner.
+                      eng: This field is deprecated and no longer used.
+                      spa: Este campo está deprecado y ya no se usa.
+                      por: Este campo está deprecado e não é mais utilizado.
                   authorization_code:
                     type: string
                     format: nullable
-                    description: Transaction authorization code.
+                    description: Transaction’s authorization code for payments with “payment_method_type” of type “credit_card” (credit card), “debit_card” (debit card) and “voucher_card” (voucher card for benefits, such as Alelo). In summary, this code is used for card transactions. The code is numerical and has 6 digits.
                     x-description-i18n:
-                      eng: Transaction authorization code.
-                      spa: Código de autorización de la transacción.
-                      por: Código de autorização de transação.
+                      eng: Transaction’s authorization code for payments with “payment_method_type” of type “credit_card” (credit card), “debit_card” (debit card) and “voucher_card” (voucher card for benefits, such as Alelo). In summary, this code is used for card transactions. The code is numerical and has 6 digits.
+                      spa: Código de autorización de transacción para pagos con “payment_method_type” de tipo “credit_card” (tarjeta de crédito), “debit_card” (tarjeta de débito) y “voucher_card” (tarjeta de bono para beneficios, como Alelo). En resumen, este código se utiliza para transacciones con tarjeta. Es numérico y tiene 6 dígitos.
+                      por: Código de autorização de transação para pagamentos com “payment_method_type” do tipo “credit_card” (cartão de crédito), “debit_card” (cartão de crédito) e “voucher_card” (cartão de voucher para benefícios, como Alelo). Em síntese, este código é utilizado para transações com cartão. O código é numérico e possui 6 dígitos.
                   money_release_schema:
                     type: string
                     format: nullable
-                    description: Money release schema
+                    description: This field is used to identify whether a payment is PNF (Payment in Flow). Payment in flow is a form of cash release in which the installments received by a seller are released over the months (which corresponds to the number of installments). Possible values ​​for this field are “null” or “payment_in_flow”.
                     x-description-i18n:
-                      eng: Money release schema
-                      spa: Esquema de liberación de dinero
-                      por: Esquema de liberação de dinheiro
+                      eng: This field is used to identify whether a payment is PNF (Payment in Flow). Payment in flow is a form of cash release in which the installments received by a seller are released over the months (which corresponds to the number of installments). Possible values ​​for this field are “null” or “payment_in_flow”.
+                      spa: Este campo se utiliza para identificar si un pago es PNF (Pay in Flow). El pago en flujo es una forma de liberación de dinero en la que las cuotas recibidas por un vendedor se van liberando a lo largo de los meses (lo que corresponde al número de cuotas). Los valores posibles para este campo son "null" o "payment_in_flow".
+                      por: Esse campo é usado para identificar se um pagamento é PNF (pagamento no fluxo). Pagamento no fluxo é uma forma de liberação de dinheiro em que as parcelas recebidas por um vendedor são liberadas com o passar dos meses (que corresponde ao número de parcelas). Os valores possíveis para este campo são “null” ou “payment_in_flow”.
                   counter_currency:
                     type: string
                     format: nullable
-                    description: Information related to dollar values ​​for CBT (Cross Border Trade) payments.
+                    description: Basically, it is an object that will allow you to convert payments of the CBT (Cross Border Trade) type into dollars, which are international payments made in foreign currency.
+                    x-description-i18n:
+                      eng: Basically, it is an object that will allow you to convert payments of the CBT (Cross Border Trade) type into dollars, which are international payments made in foreign currency.
+                      spa: Básicamente, es un objeto que te permitirá convertir pagos del tipo CBT (Cross Border Trade) en dólares, que son pagos internacionales realizados en moneda extranjera. 
+                      por: Basicamente, é um objeto que permitirá converter em dólares pagamentos do tipo CBT (Cross Border Trade), que são pagamentos internacionais, feitos em moeda estrangeira. 
                   collector_id:
                     type: string
                     example: 2
-                    description: Identifier of the collecting Mercado Pago account
+                    description: It is the user who receives the money. Ex - A user (payer) buys a cell phone through the marketplace. The identifier of the store/seller to receive the payment is the collector_id.
                     x-description-i18n:
-                      eng: Identifier of the collecting Mercado Pago account
-                      spa: Identificador de la cuenta de Mercado Pago recaudadora
-                      por: Identificador da conta coletora do Mercado Pago
+                      eng: It is the user who receives the money. Ex - A user (payer) buys a cell phone through the marketplace. The identifier of the store/seller to receive the payment is the collector_id.
+                      spa: Es el usuario quien recibe el dinero. Por ejemplo - Un usuario (payer) compra un celular a través del marketplace. El identificador de la tienda/vendedor para recibir el pago es el collector_id.
+                      por: É o usuário que recebe o dinheiro. Por exemplo - Um usuário (payer) compra um celular pelo marketplace. O identificador da loja/vendedor a receber o pagamento é o collector_id. 
                   payer:
                     type: object
                     description: Payer data - ID (identifying number), email address, identification (type and number of id)
@@ -1602,59 +1649,78 @@ paths:
                       email:
                         type: string
                         example: afriend@gmail.com
-                        description: Email associated to the payer. This value will only return a response when status=approved, status=refunded or status=charged_back
+                        description: Email associated with the payer. This value will only return a response when status=approved, status=refunded, or status=charged_back.
+                        x-description-i18n:
+                          eng: Email associated with the payer. This value will only return a response when status=approved, status=refunded, or status=charged_back.
+                          spa: Correo electrónico asociado al payer. Este valor sólo devolverá una respuesta cuando el status=approved, status=refunded o status=charged_back.
+                          por: Email associado ao payer. Este valor só retornará uma resposta quando status=approved, status=refunded ou status=charged_back.
                       identification:
                         type: object
-                        description: Personal identification. This value will only return a response when status=approved, status=refunded or status=charged_back
+                        description: User's personal identification. As an example, in Brazil, we have the CPF (Individual Taxpayer Registry) and the CNPJ (National Corporate Taxpayer Registry), for companies. Other possible identification codes are CURP (Mexico), CUIL (Argentina). This object will only return a response when status=approved, status=refunded or status=charged_back.
+                        x-description-i18n:
+                          eng: User's personal identification. As an example, in Brazil, we have the CPF (Individual Taxpayer Registry) and the CNPJ (National Corporate Taxpayer Registry), for companies. Other possible identification codes are CURP (Mexico), CUIL (Argentina). This object will only return a response when status=approved, status=refunded or status=charged_back.
+                          spa: Identificación personal del usuario. Como ejemplo, en Brasil, existe el CPF (Registro de Contribuyentes Individuales) y el CNPJ (Registro Nacional de Contribuyentes de Personas Jurídicas), para empresas. Otros posibles códigos de identificación son CURP (México), CUIL (Argentina). Este objeto sólo devolverá una respuesta cuando status=approved, status=refunded or status=charged_back.
+                          por: Identificação pessoal do usuário. Como exemplo, a nível Brasil, temos o CPF (Cadastro de Pessoa Física) e o CNPJ (Cadastro Nacional de Pessoas Jurídicas), para empresas. Outros códigos de identificação possíveis são o CURP (México), CUIL (Argentina), Este objeto só retornará uma response quando status=approved, status=refunded or status=charged_back. 
                         properties:
                           type:
                             type: string
                             example: DNI
-                            description: Identification type.
+                            description: Refers to the type of identification. It can be one of the following types.
                             x-description-i18n:
-                              eng: Identification type.
-                              spa: Tipo de identificación
-                              por: Tipo de identificação
+                              eng: Refers to the type of identification. It can be one of the following types.
+                              spa: Se refiere al tipo de identificación. Puede ser de los siguientes tipos.
+                              por: Refere-se ao tipo de identificação. Pode ser dos seguintes tipos.
+                            enum:
+                              - CPF -- Individual Taxpayer Registration, Brazil.
+                              - CNPJ -- National Register of Legal Entities, Brazil.
+                              - CUIT -- Unique Tax Identification Code, Argentina. 
+                              - CUIL -- Unique Labor Identification Code, Argentina.
+                              - DNI -- National Identity Document, Argentina.
+                              - CURP -- Single Population Registration Code, Mexico.
+                              - RFC -- Federal Registry of Taxpayers, Mexico.
+                              - CC -- Citizenship Card, Colombia.
+                              - RUT -- Single Tax List, Chile.
+                              - CI -- Identity Card, Uruguay.
                           number:
                             type: string
                             example: 12345678
-                            description: Identification number.
+                            description: The number refers to the user’s identifier. If it is a CPF, for example, it will have 11 numbers.
                             x-description-i18n:
-                              eng: Identification number.
-                              spa: Número de identificación
-                              por: Número de identificação
+                              eng: The number refers to the user’s identifier. If it is a CPF, for example, it will have 11 numbers.
+                              spa: El número hace referencia al identificador del usuario en cuestión. Si es un CPF, por ejemplo, tendrá 11 números.
+                              por: O número se refere ao identificador do usuário em questão. Se for um CPF, por exemplo, terá 11 números.
                       type:
                         $ref: '#/components/schemas/payer_type'
                   metadata:
                     type: object
-                    description: The metadata object shows (if used in the integration) the JSON sent by the client containing additional information that needs to be recorded in the payment.
+                    description: This is an optional key-value object where the customer can add additional information that needs to be recorded at checkout. Ex - {"payments_group_size":1,"payments_group_timestamp":"2022-11-18T15:01:44Z","payments_group_uuid":"96cfd2a4-0b06-4dea-b25f-c5accb02ba10"}.
                     x-description-i18n:
-                      eng: The metadata object shows (if used in the integration) the JSON sent by the client containing additional information that needs to be recorded in the payment.
-                      spa: En el objeto metadata se muestra (en caso de ser utilizado en la integración) el JSON enviado por el cliente con información complementaria que necesite mantener registrada en el pago.
-                      por: O objeto de metadata mostra (se usado na integração) o JSON enviado pelo cliente com informações adicionais que precisam ser registradas no pagamento.
+                      eng: This is an optional key-value object where the customer can add additional information that needs to be recorded at checkout. Ex - {"payments_group_size":1,"payments_group_timestamp":"2022-11-18T15:01:44Z","payments_group_uuid":"96cfd2a4-0b06-4dea-b25f-c5accb02ba10"}.
+                      spa: Este es un objeto clave-valor opcional en el que el cliente puede agregar información adicional que debe registrarse al finalizar la compra. Por ejemplo - {"payments_group_size":1,"payments_group_timestamp":"2022-11-18T15:01:44Z","payments_group_uuid":"96cfd2a4-0b06-4dea-b25f-c5accb02ba10"}.
+                      por: Este é um objeto opcional do tipo chave-valor  no qual o cliente  pode adicionar informações adicionais que precisam ser registradas no pagamento. Por exemplo - {"payments_group_size":1,"payments_group_timestamp":"2022-11-18T15:01:44Z","payments_group_uuid":"96cfd2a4-0b06-4dea-b25f-c5accb02ba10"}.
                   additional_info:
                     type: object
-                    description: Additional information.
+                    description: At Payments level, it's only data, and we only forward that information to other APIs like Risk, to perform scoring and prevent fraud, or to Tax, to determine them for international payments.
                     x-description-i18n:
-                      eng: Additional information.
-                      spa: Información adicional
-                      por: Informações adicionais
+                      eng: At Payments level, it's only data, and we only forward that information to other APIs like Risk, to perform scoring and prevent fraud, or to Tax, to determine them for international payments.
+                      spa: En el nivel de Pagos, son solo datos y únicamente reenviamos esa información a otras API, como Riesgo, para realizar puntajes y prevenir fraudes, o a Impuestos, para determinarlos para pagos internacionales.
+                      por: No nível de Pagamentos, são apenas dados e apenas encaminhamos essas informações para outras APIS, como Risco, para realizar pontuação e prevenir fraudes, para Impostos para determiná-los para pagamentos internacionais.
                   external_reference:
                     type: string
                     format: nullable
-                    description: Unique identifier sent by the seller to relate the payment_id generated by Mercado Pago, with the ID of its system.
+                    description: It is a payment external reference. It could be, for example, a hashcode from the Central Bank, working as a transaction origin identifier.
                     x-description-i18n:
-                      eng: Unique identifier sent by the seller to relate the payment_id generated by Mercado Pago, with the ID of its system.
-                      spa: Identificador único que envía el vendedor para relacionar el payment_id generado por mercado pago, con el ID de tu sistema.
-                      por: Identificador único enviado pelo vendedor para relacionar o payment_id gerado pelo Mercado Pago com o ID de seu sistema.
+                      eng: It is a payment external reference. It could be, for example, a hashcode from the Central Bank, working as a transaction origin identifier.
+                      spa: Es una referencia de pago externa. Podría ser, por ejemplo, un hashcode del Banco Central, funcionando como identificador del origen de la transacción.
+                      por: É uma referência externa do pagamento. Pode ser, por exemplo, um hashcode do Banco Central, funcionando como identificador de origem da transação.
                   transaction_amount:
                     type: number
                     example: 250
-                    description: Transaction amount
+                    description: Product cost. Example - The sale of a product for R$100.00 will have a transactionAmount = 100.
                     x-description-i18n:
-                      eng: Transaction amount
-                      spa: Monto de la transacción
-                      por: Valor da transação
+                      eng: Product cost. Example - The sale of a product for R$100.00 will have a transactionAmount = 100.
+                      spa: Costo del producto. Ejemplo - La venta de un producto por R$ 100,00 tendrá un transactionAmount = 100.
+                      por: Custo do produto. Exemplo - A venda de um produto por R$100,00 terá um transactionAmount = 100.
                   transaction_amount_refunded:
                     type: number
                     example: 0
@@ -1666,27 +1732,27 @@ paths:
                   coupon_amount:
                     type: number
                     example: 0
-                    description: Coupon in favor of the payer. If it exists, it is deducted from the total to be paid.
+                    description: It is the value of the discount coupon. E.g. - BRL 14.50. The attribute's type is BigDecimal.
                     x-description-i18n:
-                      eng: Coupon in favor of the payer. If it exists, it is deducted from the total to be paid.
-                      spa: Cupón a favor del payer. De existir, es descontado del total a pagar.
-                      por: Cupom a favor do pagador. Se existir, é deduzido do total a pagar.
+                      eng: It is the value of the discount coupon. E.g. - BRL 14.50. The attribute's type is BigDecimal.
+                      spa: Es el valor del cupón de descuento. Por ejemplo - BRL 14,50. El tipo del atributo es BigDecimal.
+                      por: É o valor do cupom de desconto. Ex - R$14,50. O tipo do atributo é BigDecimal.
                   differential_pricing_id:
                     type: string
                     format: nullable
-                    description: Differential code of the Pricing Schema applied by Mercado Pago.
+                    description: Attribute that commonly contains an agreement on how much the user will be charged (generally, this field is more relevant for Marketplace payments). Pricing and fees are calculated based on this identifier.
                     x-description-i18n:
-                      eng: Differential code of the Pricing Schema applied by Mercado Pago.
-                      spa: Código diferencial del Schema de Pricing aplicado por Mercado Pago.
-                      por: Código diferencial do Schema de Pricing aplicado pelo Mercado Pago.
+                      eng: Attribute that commonly contains an agreement on how much the user will be charged (generally, this field is more relevant for Marketplace payments). Pricing and fees are calculated based on this identifier.
+                      spa: Atributo que comúnmente contiene un acuerdo sobre cuánto se le cobrará al usuario (generalmente, este campo es más relevante para los pagos de Marketplace). Los precios y las tarifas se calculan en función de este identificador.
+                      por: Atributo que comumente contém um acordo de quanto vai ser cobrado do usuário (geralmente, este campo é mais relevante para pagamentos do Marketplace). A precificação e as taxas são calculadas com base nesse identificador.
                   deduction_schema:
                     type: string
                     format: nullable
-                    description: Pricing Schema applied by Mercado Pago.
+                    description: Pricing Scheme applied by Mercado Pago. It is a field that represents the information of a type of financing (installment). Ex - “ahora12” is a schema that indicates that the payment is divided into 12 installments. In addition, financing may have an additional cost, such cost being included in that same answer and pointed out to whom this applies (payer/collector).
                     x-description-i18n:
-                      eng: Pricing Schema applied by Mercado Pago.
-                      spa: Schema de Pricing aplicado por Mercado Pago.
-                      por: Schema de Pricing aplicado pelo Mercado Pago.
+                      eng: Pricing Scheme applied by Mercado Pago. It is a field that represents the information of a type of financing (installment). Ex - “ahora12” is a schema that indicates that the payment is divided into 12 installments. In addition, financing may have an additional cost, such cost being included in that same answer and pointed out to whom this applies (payer/collector).
+                      spa: Esquema de precios aplicado por Mercado Pago. Es un campo que representa la información de un tipo de financiamiento (cuota). Ej - “ahora12” es un esquema que indica que el pago se divide en 12 cuotas. Además, el financiamiento puede tener un costo adicional, siendo incluido dicho costo en esa misma respuesta y señalándose a quién aplica (payer/collector).
+                      por: Esquema de Pricing aplicado pelo Mercado Pago. É um campo que representa as informações de um tipo de financiamento (parcelamento). Ex. - “ahora12” é um schema que indica que o pagamento está parcelado em 12 vezes. Em adição, o financiamento pode ter um custo adicional, sendo tal custo incluído nessa mesma resposta  e apontado a quem se aplica isso (payer/collector).
                   transaction_details:
                     type: object
                     description: Transaction details
@@ -1834,11 +1900,11 @@ paths:
                   merchant_account_id:
                     type: string
                     format: nullable
-                    description: Merchant account ID. Applies to gateway model.
+                    description: Merchant store code identifier. Applies only to the gateway model (since the delivery of money to the merchant does not go through the Mercado Pago system).
                     x-description-i18n:
-                      eng: Merchant account ID. Applies to gateway model.
-                      spa: ID del código de comercio (merchant account ID). Aplica para modelo gateway.
-                      por: ID do código do comerciante (Mmerchant account ID). Aplica-se ao modelo de gateway.
+                      eng: Merchant store code identifier. Applies only to the gateway model (since the delivery of money to the merchant does not go through the Mercado Pago system).
+                      spa: Identificador del código de la tienda del merchant. Aplica solo para el modelo de gateway (ya que la entrega de dinero al comercio no pasa por el sistema de Mercado Pago).
+                      por: Identificador do código da loja comerciante. Aplica-se somente ao modelo gateway (porque a entrega de dinheiro ao comerciante não passa pelo sistema do Mercado Pago).
                   acquirer:
                     type: string
                     format: nullable
@@ -1854,7 +1920,7 @@ paths:
                     x-description-i18n:
                       eng: Merchant number (Applies to gateway model).
                       spa: Número de comercio (Aplica para modelo gateway).
-                      por: Número da loja (aplica-se ao modelo de gateway).
+                      por: Número do estabelecimento (aplica-se ao modelo de gateway).
         '400':
           description: Error
           x-description-i18n:
@@ -1976,37 +2042,52 @@ paths:
               properties:
                 capture:
                   type: boolean
-                  description: 
-                    Determines if the payment should be captured (true, default
-                    value) or just reserved (false).
+                  description: It is a boolean field found in two-step payments (like debit card). In this type of payment, which is carried out asynchronously, the purchase value is first reserved (capture = false). This amount is captured and not debited from the account instantly. When the money is actually transferred to the collector (who receives the payment) the amount is captured (capture = true).
+                  x-description-i18n:
+                    eng: It is a boolean field found in two-step payments (like debit card). In this type of payment, which is carried out asynchronously, the purchase value is first reserved (capture = false). This amount is captured and not debited from the account instantly. When the money is actually transferred to the collector (who receives the payment) the amount is captured (capture = true).
+                    spa: Es un campo booleano que se encuentra en pagos de dos pasos (como tarjeta de débito). En este tipo de pago, que se realiza de forma asíncrona, primero se reserva el valor de la compra (capture = false). Esta cantidad se captura y no se debita de la cuenta al instante. Cuando el dinero se transfiere realmente al cobrador (que recibe el pago), se captura la cantidad (capture = true).
+                    por: É um campo booleano existente em pagamentos de duas etapas (como o cartão de débito). Nesse tipo de pagamento, que é realizado de modo assíncrono, primeiro é feito a reserva do valor da compra (capture = false). Esse valor é capturado e não é debitado da conta instantaneamente. Quando o dinheiro é de fato transferido ao collector (quem recebe o pagamento) a captura do montante é feita (capture = true).
                   example: true
                 date_of_expiration:
                   type: string
                   format: date
-                  description: Payment’s expiration date.
+                  description: Payment’s expiration date. The valid format of the attribute is as follows - "yyyy-MM-dd'T'HH:mm:ssz". Ex - 2022-11-17T09:37:52.000-04:00.
                   x-description-i18n:
-                    eng: Payment’s expiration date.
-                    spa: Fecha de expiración del pago
-                    por: Data de expiração do pagamento
+                    eng: Payment’s expiration date. The valid format of the attribute is as follows - "yyyy-MM-dd'T'HH:mm:ssz". Ex - 2022-11-17T09:37:52.000-04:00.
+                    spa: Fecha de vencimiento del pago. El formato válido del atributo es el siguiente - "yyyy-MM-dd'T'HH:mm:ssz". Por ejemplo - 2022-11-17T09:37:52.000-04:00.
+                    por: Data de expiração do pagamento. O formato válido do atributo é o seguinte - "yyyy-MM-dd'T'HH:mm:ssz". Por exemplo - 2022-11-17T09:37:52.000-04:00.
                 metadata:
                   type: object
-                  description: The metadata object shows (if used in the integration) the JSON sent by the client containing additional information that needs to be recorded in the payment.
+                  description: This is an optional key-value object where the customer can add additional information that needs to be recorded at checkout. Ex - {"payments_group_size":1,"payments_group_timestamp":"2022-11-18T15:01:44Z","payments_group_uuid":"96cfd2a4-0b06-4dea-b25f-c5accb02ba10"}.
                   x-description-i18n:
-                    eng: The metadata object shows (if used in the integration) the JSON sent by the client containing additional information that needs to be recorded in the payment.
-                    spa: En el objeto metadata se muestra (en caso de ser utilizado en la integración) el JSON enviado por el cliente con información complementaria que necesite mantener registrada en el pago.
-                    por: O objeto de metadata mostra (se usado na integração) o JSON enviado pelo cliente com informações adicionais que precisam ser registradas no pagamento.
+                    eng: This is an optional key-value object where the customer can add additional information that needs to be recorded at checkout. Ex - {"payments_group_size":1,"payments_group_timestamp":"2022-11-18T15:01:44Z","payments_group_uuid":"96cfd2a4-0b06-4dea-b25f-c5accb02ba10"}.
+                    spa: Este es un objeto clave-valor opcional en el que el cliente puede agregar información adicional que debe registrarse al finalizar la compra. Por ejemplo - {"payments_group_size":1,"payments_group_timestamp":"2022-11-18T15:01:44Z","payments_group_uuid":"96cfd2a4-0b06-4dea-b25f-c5accb02ba10"}.
+                    por: Este é um objeto opcional do tipo chave-valor  no qual o cliente  pode adicionar informações adicionais que precisam ser registradas no pagamento. Ex. - {"payments_group_size":1,"payments_group_timestamp":"2022-11-18T15:01:44Z","payments_group_uuid":"96cfd2a4-0b06-4dea-b25f-c5accb02ba10"}.
                 status:
                   type: string
-                  description: 
-                    Determines if the payment should be cancelled
+                  description: It is the current state of payment. It can be two following types.
+                  x-description-i18n:
+                    eng: It is the current state of payment. It can be two following types.
+                    spa: Es el estado actual de pago. Puede ser de dos tipos siguientes.
+                    por: É o estado atual do pagamento. Podem ser ser dos seguintes tipos
                   example: "cancelled"
+                  enum: 
+                    - pending -- The user has not concluded the payment process (for example, to generate a payment by boleto, this payment will be concluded at the moment in which the user makes the non-corresponding payment selected);
+                    - approved -- The payment was approved and credited;
+                    - authorized -- The payment was authorized, but still was not captured;
+                    - in_process -- The payment is in analysis;
+                    - in_mediation -- The user started a dispute;
+                    - rejected -- The payment was rejected. (The user can try the payment again);
+                    - cancelled -- Either the payment was canceled by one of the parties or the payment expired;
+                    - refunded -- The payment was returned to the user;
+                    - charged_back -- A chargeback was placed on the buyer's credit card.
                 transaction_amount:
                   type: number
-                  description: Product cost.
+                  description: Product cost. Example - The sale of a product for R$100.00 will have a transactionAmount = 100.
                   x-description-i18n:
-                    eng: Product cost.
-                    spa: Costo del producto
-                    por: Custo do produto
+                    eng: Product cost. Example - The sale of a product for R$100.00 will have a transactionAmount = 100.
+                    spa: Costo del producto. Ejemplo - La venta de un producto por R$ 100,00 tendrá un transactionAmount = 100.
+                    por: Custo do produto. Exemplo - A venda de um produto por R$100,00 terá um transactionAmount = 100.
                   example: 58.8
       responses:
         '200':
@@ -2051,37 +2132,43 @@ paths:
                   date_of_expiration:
                     type: string
                     format: nullable
-                    description: Deadline to make the Payment through an off payment method (in cash)
+                    description: Payment’s expiration date. The attribute’s valid format is as follows - "yyyy-MM-dd'T'HH:mm:ssz". Ex. - 2022-11-17T09:37:52.000-04:00.
                     x-description-i18n:
-                      eng: Deadline to make the Payment through an off payment method (in cash)
-                      spa: Fecha límite para realizar el Pago a través de un medio de pago off (en efectivo)
-                      por: Prazo para efetuar o Pagamento através de um método de pagamento à vista (em dinheiro)
+                      eng: Payment’s expiration date. The attribute’s valid format is as follows - "yyyy-MM-dd'T'HH:mm:ssz". Ex. - 2022-11-17T09:37:52.000-04:00.
+                      spa: Fecha de vencimiento del pago. El formato válido del atributo es el siguiente - "yyyy-MM-dd'T'HH:mm:ssz". Ej. - 2022-11-17T09:37:52.000-04:00.
+                      por: Data de expiração do pagamento. O formato válido do atributo é o seguinte - "yyyy-MM-dd'T'HH:mm:ssz". Ex. - 2022-11-17T09:37:52.000-04:00.
                   money_release_date:
                     type: string
                     example: 2019-07-24T14:47:58.000Z
-                    description: Date on which the payment is settled (available) in the Collector´s Mercado Pago account
+                    description: Date on which the payment is settled from the Payer's account (the payer) and is made available in the Mercado Pago account of the Collector (the one who receives the payment).
                     x-description-i18n:
-                      eng: Date on which the payment is settled (available) in the Collector´s Mercado Pago account
-                      spa: Fecha en la que el pago se encuentra liquidado (disponible) en la cuenta de Mercado Pago del Collector
-                      por: Data em que o pagamento é liquidado (disponível) na conta Mercado Pago do Collector
+                      eng: Date on which the payment is settled from the Payer's account (the payer) and is made available in the Mercado Pago account of the Collector (the one who receives the payment).
+                      spa: Fecha en que se liquida el pago de la cuenta del Payer (el pagador) y se pone a disposición en la cuenta de Mercado Pago del Collector (el que recibe el pago).
+                      por: Data em que o pagamento é liquidado da conta do Payer (o pagador) e é disponibilizado na conta Mercado Pago do Collector (aquele que recebe o pagamento).
                   operation_type:
                     $ref: '#/components/schemas/operation_type'
                   issuer_id:
                     type: string
                     example: 25
-                    description: Identifier of the issuer of the payment method.
+                    description: Is the identifier of the card issuer being used in a credit or debit card payment.
                     x-description-i18n:
-                      eng: Identifier of the issuer of the payment method.
-                      spa: Identificador del emisor del medio de pago
-                      por: Identificador do emissor do meio de pagamento
+                      eng: Is the identifier of the card issuer being used in a credit or debit card payment.
+                      spa: Es el identificador del emisor de la tarjeta que se utiliza en un pago con tarjeta de crédito o débito.
+                      por: É o identificador do emissor do cartão que está sendo utilizado em um pagamento com cartão de crédito ou débito.
                   payment_method_id:
                     type: string
                     example: visa
-                    description: Payment method identifier. Indicates the ID of the payment method selected to make the payment.
+                    description: It indicates the identifier of the payment method selected to make the transaction. Here are some examples.
                     x-description-i18n:
-                      eng: Payment method identifier. Indicates the ID of the payment method selected to make the payment.
-                      spa: Identificador del medio de pago. Indica el ID del medio de pago seleccionado para realizar el pago.
-                      por: Id do meio de pagamento. Indica o ID do meio de pagamento selecionado para efetuar o pagamento.
+                      eng: It indicates the identifier of the payment method selected to make the transaction. Here are some examples.
+                      spa: Indica el identificador del medio de pago seleccionado para realizarlo. A continuación presentamos algunos ejemplos.
+                      por: Indica o identificador do meio de pagamento selecionado para efetuar o pagamento. A seguir, apresentamos alguns exemplos.
+                    enum:
+                      - pix -- Instant digital payment method used in Brazil;
+                      - account_money -- When the payment is debited directly from a Mercado Pago account;
+                      - debin_transfer -- Digital payment method used in Argentina that immediately debits an amount from an account, requesting prior authorization;
+                      - ted -- It is the Electronic Transfer Available payment, used in Brazil, that has fees to be used. The payment is made the same day of the transaction, but for this it is necessary to make the transfer within the stipulated period;
+                      - cvu -- Payment method used in Argentina. 
                   payment_type_id:
                     $ref: '#/components/schemas/payment_type_id'
                   status:
@@ -2117,11 +2204,11 @@ paths:
                     example: 
                       Point Mini a maquininha que dá o dinheiro de suas vendas
                       na hora
-                    description: Description sent in the payment creation request.
+                    description: Purchased product’s description, the reason for payment. E.g. - "Xiaomi Redmi Note 11S mobile phone 128gb 6gb Ram Original Global Blue Version" (description of a product in the marketplace).
                     x-description-i18n:
-                      eng: Description sent in the payment creation request.
-                      spa: Descripción enviada en la solicitud de creación del Pago.
-                      por: Descrição enviada na solicitação de criação de pagamento.
+                      eng: Purchased product’s description, the reason for payment. E.g. - "Xiaomi Redmi Note 11S mobile phone 128gb 6gb Ram Original Global Blue Version" (description of a product in the marketplace).
+                      spa: Descripción del producto adquirido, el motivo del pago. Ej. - "Celular Xiaomi Redmi Note 11S 128gb 6gb Ram Original Global Blue Version" (descripción de un producto en el marketplace).
+                      por: Descrição do produto comprado, a razão de pagamento. Ex. - "Celular Xiaomi Redmi Note 11S 128gb 6gb Ram Versão Global Original azul" (descrição de um produto no marketplace).
                   live_mode:
                     type: boolean
                     description: Indicates whether the Payment was made in a production environment or in a Test environment. If TRUE, then the chargeback will be processed in production mode. If FALSE, then the chargeback will be processed in sandbox mode.
@@ -2132,27 +2219,27 @@ paths:
                   sponsor_id:
                     type: string
                     format: nullable
-                    description: Identifier of the Partners Mercado Pago account. It is used to identify if the integration was performed by a partner.
+                    description: This field is deprecated and no longer in use.
                     x-description-i18n:
-                      eng: Identifier of the Partners Mercado Pago account. It is used to identify if the integration was performed by a partner.
-                      spa: Identificador de la cuenta de Mercado Pago del Partner. Se utiliza para identificar si la integración fue realizada por algún partner.
-                      por: Identificador da conta Mercado Pago do Partnet. É usado para identificar se a integração foi realizada por um partner.
+                      eng: This field is deprecated and no longer in use.
+                      spa: Este campo está deprecado y ya no se usa.
+                      por: Este campo está deprecado e não é mais utilizado.
                   authorization_code:
                     type: string
                     format: nullable
-                    description: Transaction authorization code.
+                    description: Transaction’s authorization code for payments with “payment_method_type” of type “credit_card” (credit card), “debit_card” (debit card) and “voucher_card” (voucher card for benefits, such as Alelo). In summary, this code is used for card transactions. The code is numerical and has 6 digits.
                     x-description-i18n:
-                      eng: Transaction authorization code.
-                      spa: Código de autorización de la transacción.
-                      por: Código de autorização de transação.
+                      eng: Transaction’s authorization code for payments with “payment_method_type” of type “credit_card” (credit card), “debit_card” (debit card) and “voucher_card” (voucher card for benefits, such as Alelo). In summary, this code is used for card transactions. The code is numerical and has 6 digits.
+                      spa: Código de autorización de transacción para pagos con “payment_method_type” de tipo “credit_card” (tarjeta de crédito), “debit_card” (tarjeta de débito) y “voucher_card” (tarjeta de bono para beneficios, como Alelo). En resumen, este código se utiliza para transacciones con tarjeta. Es numérico y tiene 6 dígitos.
+                      por: Código de autorização de transação para pagamentos com “payment_method_type” do tipo “credit_card” (cartão de crédito), “debit_card” (cartão de crédito) e “voucher_card” (cartão de voucher para benefícios, como Alelo). Em síntese, este código é utilizado para transações com cartão. O código é numérico e possui 6 dígitos.
                   money_release_schema:
                     type: string
                     format: nullable
-                    description: Money release schema
+                    description: This field is used to identify whether a payment is PNF (Payment in Flow). Payment in flow is a form of cash release in which the installments received by a seller are released over the months (which corresponds to the number of installments). Possible values ​​for this field are “null” or “payment_in_flow”.
                     x-description-i18n:
-                      eng: Money release schema
-                      spa: Esquema de liberación de dinero
-                      por: Esquema de liberação de dinheiro
+                      eng: This field is used to identify whether a payment is PNF (Payment in Flow). Payment in flow is a form of cash release in which the installments received by a seller are released over the months (which corresponds to the number of installments). Possible values ​​for this field are “null” or “payment_in_flow”.
+                      spa: Este campo se utiliza para identificar si un pago es PNF (Pay in Flow). El pago en flujo es una forma de liberación de dinero en la que las cuotas recibidas por un vendedor se van liberando a lo largo de los meses (lo que corresponde al número de cuotas). Los valores posibles para este campo son "null" o "payment_in_flow".
+                      por: Esse campo é usado para identificar se um pagamento é PNF (pagamento no fluxo). Pagamento no fluxo é uma forma de liberação de dinheiro em que as parcelas recebidas por um vendedor são liberadas com o passar dos meses (que corresponde ao número de parcelas). Os valores possíveis para este campo são “null” ou “payment_in_flow”.
                   taxes_amount:
                     type: number
                     example: 0
@@ -2164,23 +2251,27 @@ paths:
                   counter_currency:
                     type: string
                     format: nullable
-                    description: Information related to dollar values ​​for CBT (Cross Border Trade) payments.
+                    description: Basically, it is an object that will allow you to convert payments of the CBT (Cross Border Trade) type into dollars, which are international payments made in foreign currency.
+                    x-description-i18n:
+                      eng: Basically, it is an object that will allow you to convert payments of the CBT (Cross Border Trade) type into dollars, which are international payments made in foreign currency.
+                      spa: Básicamente, es un objeto que te permitirá convertir pagos del tipo CBT (Cross Border Trade) en dólares, que son pagos internacionales realizados en moneda extranjera.
+                      por: Basicamente, é um objeto que permitirá converter em dólares pagamentos do tipo CBT (Cross Border Trade), que são pagamentos internacionais, feitos em moeda estrangeira. 
                   shipping_amount:
                     type: number
                     example: 0
-                    description: Shipping amount
+                    description: Amount of charge for shipping the purchase. It is of type BigDecimal.
                     x-description-i18n:
-                      eng: Shipping amount
-                      spa: Valor de envío
-                      por: Valor de envio
+                      eng: Amount of charge for shipping the purchase. It is of type BigDecimal.
+                      spa: Importe del cargo por el envío de la compra. Es de tipo BigDecimal.
+                      por: Valor da cobrança de envio da compra. É do tipo BigDecimal.
                   pos_id:
                     type: string
                     format: nullable
-                    description: POS identifier
+                    description: Digital identifier of the point of sale (Point of Sale - POS / machine). They are physical points of sale that use a card machine for sales.
                     x-description-i18n:
-                      eng: POS identifier
-                      spa: Identificador de POS
-                      por: Identificador de POS
+                      eng: Digital identifier of the point of sale (Point of Sale - POS / machine). They are physical points of sale that use a card machine for sales.
+                      spa: Identificador digital del punto de venta (Punto de Venta - POS / máquina). Son puntos de venta físicos que utilizan una máquina de tarjetas para la venta.
+                      por: Identificador digital do ponto de vendas(Point of Sale - POS / maquininha). São pontos de vendas físicos que utilizam maquininha de cartão para vendas.
                   store_id:
                     type: string
                     format: nullable
@@ -2192,11 +2283,11 @@ paths:
                   collector_id:
                     type: number
                     example: 448876418
-                    description: Identifier of the collecting Mercado Pago account
+                    description: It is the user who receives the money. Ex - A user (payer) buys a cell phone through the marketplace. The identifier of the store/seller to receive the payment is the collector_id.
                     x-description-i18n:
-                      eng: Identifier of the collecting Mercado Pago account
-                      spa: Identificador de la cuenta de Mercado Pago recaudadora
-                      por: Identificador da conta coletora do Mercado Pago
+                      eng: It is the user who receives the money. Ex - A user (payer) buys a cell phone through the marketplace. The identifier of the store/seller to receive the payment is the collector_id.
+                      spa: Es el usuario quien recibe el dinero. Por ejemplo - Un usuario (payer) compra un celular a través del marketplace. El identificador de la tienda/vendedor para recibir el pago es el collector_id.
+                      por: É o usuário que recebe o dinheiro. Por exemplo - Um usuário (payer) compra um celular pelo marketplace. O identificador da loja/vendedor a receber o pagamento é o collector_id. 
                   payer:
                     type: object
                     description: Payer data - ID (identifying number), email address, identification (type and number of id)
@@ -2217,14 +2308,22 @@ paths:
                       email:
                         type: string
                         example: test_user_80507629@testuser.com
-                        description: Email associated to the payer. This value will only return a response when status=approved, status=refunded or status=charged_back
+                        description: Email associated with the payer. This value will only return a response when status=approved, status=refunded, or status=charged_back.
+                        x-description-i18n:
+                          eng: Email associated with the payer. This value will only return a response when status=approved, status=refunded, or status=charged_back.
+                          spa: Correo electrónico asociado al payer. Este valor sólo devolverá una respuesta cuando el status=approved, status=refunded o status=charged_back.
+                          por: Email associado ao payer. Este valor só retornará uma resposta quando status=approved, status=refunded ou status=charged_back.
                       identification:
                         type: object
                         properties:
                           number:
                             type: string
                             example: 19119119100
-                            description: Identification number. 
+                            description: The number refers to the identifier of the user in question. If it is a CPF, for example, it will have 11 numbers.
+                            x-description-i18n:
+                              eng: The number refers to the identifier of the user in question. If it is a CPF, for example, it will have 11 numbers.
+                              spa: El número hace referencia al identificador del usuario en cuestión. Si es un CPF, por ejemplo, tendrá 11 números.
+                              por: O número se refere ao identificador do usuário em questão. Se for um CPF, por exemplo, terá 11 números.
                           type:
                             type: string
                             example: CPF
@@ -2238,11 +2337,11 @@ paths:
                         $ref: '#/components/schemas/payer_type'
                   metadata:
                     type: object
-                    description: The metadata object shows (if used in the integration) the JSON sent by the client containing additional information that needs to be recorded in the payment.
+                    description: This is an optional key-value object where the customer can add additional information that needs to be recorded at checkout. Ex - {"payments_group_size":1,"payments_group_timestamp":"2022-11-18T15:01:44Z","payments_group_uuid":"96cfd2a4-0b06-4dea-b25f-c5accb02ba10"}.
                     x-description-i18n:
-                      eng: The metadata object shows (if used in the integration) the JSON sent by the client containing additional information that needs to be recorded in the payment.
-                      spa: En el objeto metadata se muestra (en caso de ser utilizado en la integración) el JSON enviado por el cliente con información complementaria que necesite mantener registrada en el pago.
-                      por: O objeto de metadata mostra (se usado na integração) o JSON enviado pelo cliente com informações adicionais que precisam ser registradas no pagamento.
+                      eng: This is an optional key-value object where the customer can add additional information that needs to be recorded at checkout. Ex - {"payments_group_size":1,"payments_group_timestamp":"2022-11-18T15:01:44Z","payments_group_uuid":"96cfd2a4-0b06-4dea-b25f-c5accb02ba10"}.
+                      spa: Este es un objeto clave-valor opcional en el que el cliente puede agregar información adicional que debe registrarse al finalizar la compra. Por ejemplo - {"payments_group_size":1,"payments_group_timestamp":"2022-11-18T15:01:44Z","payments_group_uuid":"96cfd2a4-0b06-4dea-b25f-c5accb02ba10"}
+                      por: Este é um objeto opcional do tipo chave-valor  no qual o cliente  pode adicionar informações adicionais que precisam ser registradas no pagamento. Ex. - {"payments_group_size":1,"payments_group_timestamp":"2022-11-18T15:01:44Z","payments_group_uuid":"96cfd2a4-0b06-4dea-b25f-c5accb02ba10"}.
                   additional_info:
                     type: object
                     properties:
@@ -2254,11 +2353,11 @@ paths:
                             id:
                               type: string
                               example: PR0001
-                              description: Item code.
+                              description: It is the purchased product ad identifier. Ex - “MLB2907679857”.
                               x-description-i18n:
-                                eng: Item code.
-                                spa: Código de ítem
-                                por: Código de anúncio
+                                eng: It is the purchased product ad identifier. Ex - “MLB2907679857”.
+                                spa: Es el identificador del anuncio del producto adquirido. Por ejemplo - “MLB2907679857”.
+                                por: É o identificador do anúncio do produto comprado. Por exemplo - “MLB2907679857”.
                             title:
                               type: string
                               example: Point Mini
@@ -2269,9 +2368,7 @@ paths:
                                 por: Nome do item
                             description:
                               type: string
-                              example: 
-                                Producto Point para cobros con tarjetas mediante
-                                bluetooth
+                              example: Producto Point para cobros con tarjetas mediante bluetooth
                               description: Long item description.
                               x-description-i18n:
                                 eng: Long item description.
@@ -2279,8 +2376,7 @@ paths:
                                 por: Descrição do artigo
                             picture_url:
                               type: string
-                              example: 
-                                https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium@2x.png
+                              example: https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium@2x.png
                               description: Image URL.
                               x-description-i18n:
                                 eng: Image URL.
@@ -2313,11 +2409,11 @@ paths:
                           por: Lista de itens a pagar
                       payer:
                         type: object
-                        description: Payer details.
+                        description: The payer is the one who makes the payment. This field is an object that has the payer's information.
                         x-description-i18n:
-                          eng: Payer details.
-                          spa: Detalles del pagador.
-                          por: Detalhes do pagador.
+                          eng: The payer is the one who makes the payment. This field is an object that has the payer's information.
+                          spa: El payer es quien realiza el pago. Este campo es un objeto que tiene la información del pagador.
+                          por: O payer é aquele que faz o pagamento. Este campo é um objeto que possui as informações do pagador.
                         properties:
                           registration_date:
                             type: string
@@ -2391,19 +2487,19 @@ paths:
                   external_reference:
                     type: string
                     example: MP0001
-                    description: Unique identifier sent by the seller to relate the payment_id generated by Mercado Pago, with the ID of its system.
+                    description: It is a payment’s external reference. It could be, for example, a hashcode from the Central Bank, working as a transaction origin identifier.
                     x-description-i18n:
-                      eng: Unique identifier sent by the seller to relate the payment_id generated by Mercado Pago, with the ID of its system.
-                      spa: Identificador único que envía el vendedor para relacionar el payment_id generado por mercado pago, con el ID de tu sistema.
-                      por: Identificador único enviado pelo vendedor para relacionar o payment_id gerado pelo Mercado Pago com o ID de seu sistema.
+                      eng: It is a payment’s external reference. It could be, for example, a hashcode from the Central Bank, working as a transaction origin identifier.
+                      spa: Es una referencia de pago externa. Podría ser, por ejemplo, un código hash del Banco Central, funcionando como identificador del origen de la transacción.
+                      por: É uma referência externa do pagamento. Pode ser, por exemplo, um hashcode do Banco Central, funcionando como identificador de origem da transação.
                   transaction_amount:
                     type: number
                     example: 58.8
-                    description: Transaction amount
+                    description: Product cost. Example - The sale of a product for R$100.00 will have a transactionAmount = 100.
                     x-description-i18n:
-                      eng: Transaction amount
-                      spa: Monto de la transacción
-                      por: Valor da transação
+                      eng: Product cost. Example - The sale of a product for R$100.00 will have a transactionAmount = 100.
+                      spa: Costo del producto. Ejemplo - La venta de un producto por R$ 100,00 tendrá un transactionAmount = 100.
+                      por: Custo do produto. Exemplo - A venda de um produto por R$100,00 terá um transactionAmount = 100.
                   transaction_amount_refunded:
                     type: number
                     example: 0
@@ -2415,27 +2511,27 @@ paths:
                   coupon_amount:
                     type: number
                     example: 0
-                    description: Coupon in favor of the payer. If it exists, it is deducted from the total to be paid.
+                    description: It is the value of the discount coupon. E.g. -  BRL 14.50. The attribute's type is BigDecimal.
                     x-description-i18n:
-                      eng: Coupon in favor of the payer. If it exists, it is deducted from the total to be paid.
-                      spa: Cupón a favor del payer. De existir, es descontado del total a pagar.
-                      por: Cupom a favor do pagador. Se existir, é deduzido do total a pagar.
+                      eng: It is the value of the discount coupon. E.g. - BRL 14.50. The attribute's type is BigDecimal.
+                      spa: Es el valor del cupón de descuento. Por ejemplo - BRL 14,50. El tipo del atributo es BigDecimal.
+                      por: É o valor do cupom de desconto. Ex. - R$14,50. O tipo do atributo é BigDecimal. 
                   differential_pricing_id:
                     type: string
                     format: nullable
-                    description: Differential code of the Pricing Schema applied by Mercado Pago.
+                    description: Attribute that commonly contains an agreement on how much the user will be charged (generally, this field is more relevant for Marketplace payments). Pricing and fees are calculated based on this identifier.
                     x-description-i18n:
-                      eng: Differential code of the Pricing Schema applied by Mercado Pago.
-                      spa: Código diferencial del Schema de Pricing aplicado por Mercado Pago.
-                      por: Código diferencial do Schema de Pricing aplicado pelo Mercado Pago.
+                      eng: Attribute that commonly contains an agreement on how much the user will be charged (generally, this field is more relevant for Marketplace payments). Pricing and fees are calculated based on this identifier.
+                      spa: Atributo que comúnmente contiene un acuerdo sobre cuánto se le cobrará al usuario (generalmente, este campo es más relevante para los pagos de Marketplace). Los precios y las tarifas se calculan en función de este identificador.
+                      por: Atributo que comumente contém um acordo de quanto vai ser cobrado do usuário (geralmente, este campo é mais relevante para pagamentos do Marketplace). A precificação e as taxas são calculadas com base nesse identificador.
                   deduction_schema:
                     type: string
                     format: nullable
-                    description: Pricing Schema applied by Mercado Pago.
+                    description: Pricing Scheme applied by Mercado Pago. It is a field that represents the information of a type of financing (installment). Ex - “ahora12” is a schema that indicates that the payment is divided into 12 installments. In addition, financing may have an additional cost, such cost being included in that same answer and pointed out to whom this applies (payer/collector).
                     x-description-i18n:
-                      eng: Pricing Schema applied by Mercado Pago.
-                      spa: Schema de Pricing aplicado por Mercado Pago.
-                      por: Schema de Pricing aplicado pelo Mercado Pago.
+                      eng: Pricing Scheme applied by Mercado Pago. It is a field that represents the information of a type of financing (installment). Ex - “ahora12” is a schema that indicates that the payment is divided into 12 installments. In addition, financing may have an additional cost, such cost being included in that same answer and pointed out to whom this applies (payer/collector).
+                      spa: Esquema de precios aplicado por Mercado Pago. Es un campo que representa la información de un tipo de financiamiento (cuota). Ej - “ahora12” es un esquema que indica que el pago se divide en 12 cuotas. Además, el financiamiento puede tener un costo adicional, siendo incluido dicho costo en esa misma respuesta y señalándose a quién aplica (payer/collector).
+                      por: Esquema de Pricing aplicado pelo Mercado Pago. É um campo que representa as informações de um tipo de financiamento (parcelamento). Ex. - “ahora12” é um schema que indica que o pagamento está parcelado em 12 vezes. Em adição, o financiamento pode ter um custo adicional, sendo tal custo incluído nessa mesma resposta  e apontado a quem se aplica isso (payer/collector).
                   transaction_details:
                     type: object
                     properties:
@@ -2648,11 +2744,11 @@ paths:
                               number:
                                 type: string
                                 example: 19119119100
-                                description: Identification number.
+                                description: The number refers to the identifier of the user in question. If it is a CPF, for example, it will have 11 numbers.
                                 x-description-i18n:
-                                  eng: Identification number.
-                                  spa: Número de identificación
-                                  por: Número de identificação
+                                  eng: The number refers to the identifier of the user in question. If it is a CPF, for example, it will have 11 numbers.
+                                  spa: El número hace referencia al identificador del usuario en cuestión. Si es un CPF, por ejemplo, tendrá 11 números.
+                                  por: O número se refere ao identificador do usuário em questão. Se for um CPF, por exemplo, terá 11 números.
                               type:
                                 type: string
                                 example: CPF
@@ -2698,11 +2794,11 @@ paths:
                   merchant_account_id:
                     type: string
                     format: nullable
-                    description: Merchant account ID. Applies to gateway model.
+                    description: Merchant store code identifier. Applies only to the gateway model (since the delivery of money to the merchant does not go through the Mercado Pago system).
                     x-description-i18n:
-                      eng: Merchant account ID. Applies to gateway model.
-                      spa: ID del código de comercio (merchant account ID). Aplica para modelo gateway.
-                      por: ID do código do comerciante (Mmerchant account ID). Aplica-se ao modelo de gateway.
+                      eng: Merchant store code identifier. Applies only to the gateway model (since the delivery of money to the merchant does not go through the Mercado Pago system).
+                      spa: Identificador del código de la tienda del merchant. Aplica solo para el modelo de gateway (ya que la entrega de dinero al comercio no pasa por el sistema de Mercado Pago)
+                      por: Identificador do código da loja comerciante. Aplica-se somente ao modelo gateway (porque a entrega de dinheiro ao comerciante não passa pelo sistema do Mercado Pago).
                   acquirer:
                     type: string
                     format: nullable
@@ -2866,33 +2962,33 @@ paths:
       parameters:
         - name: sort
           in: query
-          description: Define the field to sort
+          description: Parameter used for ordering a list of payments. Sorting can be done using the following attributes - "date_approved", "date_created", "date_last_updated", "id", "money_release_date".
           x-description-i18n:
-            eng: Define the field to sort
-            spa: Define el campo para ordenar
-            por: Define o campo para ordenação
+            eng: Parameter used for ordering a list of payments. Sorting can be done using the following attributes - "date_approved", "date_created", "date_last_updated", "id", "money_release_date".
+            spa: Parámetro utilizado para ordenar una lista de pagos. La clasificación se puede hacer usando los siguientes atributos - "date_approved", "date_created", "date_last_updated", "id", "money_release_date".
+            por: Parâmetro utilizado para a ordenação de uma lista de pagamentos. A ordenação pode ser feita a partir dos seguintes atributos - "date_approved", "date_created", "date_last_updated", "id", "money_release_date".
           required: true
           schema:
             type: string
             example: date_created
         - name: criteria
           in: query
-          description: The criteria result
+          description: It sorts the payments in ascending order (using “asc”) or in descending order (“desc”).
           x-description-i18n:
-            eng: The criteria result
-            spa: Filtro utilizado en la búsqueda
-            por: O filtro utilizado na pesquisa
+            eng: It sorts the payments in ascending order (using “asc”) or in descending order (“desc”).
+            spa: Ordena el pago en orden ascendente (usando "asc") o en orden descendente ("desc").
+            por: Ordena o pagamento de maneira ascendente (utilizando “asc”) ou descendente (“desc”).
           required: true
           schema:
             type: string
             example: desc
         - name: external_reference
           in: query
-          description: Unique identifier sent by the seller to relate the payment_id generated by Mercado Pago, with the ID of its system.
+          description: It is a payment’s external reference. It could be, for example, a hashcode from the Central Bank, working as a transaction origin identifier.
           x-description-i18n:
-            eng: Unique identifier sent by the seller to relate the payment_id generated by Mercado Pago, with the ID of its system.
-            spa: Identificador único que envía el vendedor para relacionar el payment_id generado por mercado pago, con el ID de tu sistema.
-            por: Identificador único enviado pelo vendedor para relacionar o payment_id gerado pelo Mercado Pago com o ID de seu sistema.
+            eng: It is a payment’s external reference. It could be, for example, a hashcode from the Central Bank, working as a transaction origin identifier.
+            spa: Es una referencia de pago externa. Podría ser, por ejemplo, un código hash del Banco Central, funcionando como identificador del origen de la transacción.
+            por: É uma referência externa do pagamento. Pode ser, por exemplo, um hashcode do Banco Central, funcionando como identificador de origem da transação.
           required: true
           schema:
             type: string
@@ -2979,37 +3075,43 @@ paths:
                           date_of_expiration:
                             type: string
                             format: nullable
-                            description: Deadline to make the Payment through an off payment method (in cash)
+                            description: Payment’s expiration date. The attribute’s valid format is as follows - "yyyy-MM-dd'T'HH:mm:ssz". Ex. - 2022-11-17T09:37:52.000-04:00.
                             x-description-i18n:
-                              eng: Deadline to make the Payment through an off payment method (in cash)
-                              spa: Fecha límite para realizar el Pago a través de un medio de pago off (en efectivo)
-                              por: Prazo para efetuar o Pagamento através de um método de pagamento à vista (em dinheiro)
+                              eng: Payment’s expiration date. The attribute’s valid format is as follows - "yyyy-MM-dd'T'HH:mm:ssz". Ex. - 2022-11-17T09:37:52.000-04:00.
+                              spa: Fecha de vencimiento del pago. El formato válido del atributo es el siguiente - "yyyy-MM-dd'T'HH:mm:ssz". Ej. - 2022-11-17T09:37:52.000-04:00.
+                              por: Data de expiração do pagamento. O formato válido do atributo é o seguinte - "yyyy-MM-dd'T'HH:mm:ssz". Ex. - 2022-11-17T09:37:52.000-04:00.
                           money_release_date:
                             type: string
                             example: 2017-09-14T11:26:38.000Z
-                            description: Date on which the payment is settled (available) in the Collector´s Mercado Pago account
+                            description: Date on which the payment is settled from the Payer's account (the payer) and is made available in the Mercado Pago account of the Collector (the one who receives the payment).
                             x-description-i18n:
-                              eng: Date on which the payment is settled (available) in the Collector´s Mercado Pago account
-                              spa: Fecha en la que el pago se encuentra liquidado (disponible) en la cuenta de Mercado Pago del Collector
-                              por: Data em que o pagamento é liquidado (disponível) na conta Mercado Pago do Collector
+                              eng: Date on which the payment is settled from the Payer's account (the payer) and is made available in the Mercado Pago account of the Collector (the one who receives the payment).
+                              spa: Fecha en que se liquida el pago de la cuenta del Payer (el pagador) y se pone a disposición en la cuenta de Mercado Pago del Collector (el que recibe el pago).
+                              por: Data em que o pagamento é liquidado da conta do Payer (o pagador) e é disponibilizado na conta Mercado Pago do Collector (aquele que recebe o pagamento).
                           operation_type:
                             $ref: '#/components/schemas/operation_type'
                           issuer_id:
                             type: string
                             format: nullable
-                            description: Identifier of the issuer of the payment method.
+                            description: Is the identifier of the card issuer being used in a credit or debit card payment.
                             x-description-i18n:
-                              eng: Identifier of the issuer of the payment method.
-                              spa: Identificador del emisor del medio de pago
-                              por: Identificador do emissor do meio de pagamento
+                              eng: Is the identifier of the card issuer being used in a credit or debit card payment.
+                              spa: Es el identificador del emisor de la tarjeta que se utiliza en un pago con tarjeta de crédito o débito.
+                              por: É o identificador do emissor do cartão que está sendo utilizado em um pagamento com cartão de crédito ou débito.
                           payment_method_id:
                             type: string
                             example: account_money
-                            description: Payment method identifier. Indicates the ID of the payment method selected to make the payment.
+                            description: It indicates the identifier of the payment method selected to make the transaction. Here are some examples.
                             x-description-i18n:
-                              eng: Payment method identifier. Indicates the ID of the payment method selected to make the payment.
+                              eng: It indicates the identifier of the payment method selected to make the transaction. Here are some examples
                               spa: Identificador del medio de pago. Indica el ID del medio de pago seleccionado para realizar el pago.
-                              por: Id do meio de pagamento. Indica o ID do meio de pagamento selecionado para efetuar o pagamento.
+                              por: Indica el identificador del medio de pago seleccionado para realizarlo. A continuación presentamos algunos ejemplos.
+                            enum:
+                              - pix -- Instant digital payment method used in Brazil.
+                              - account_money -- When the payment is debited directly from a Mercado Pago account.
+                              - debin_transfer -- Digital payment method used in Argentina that immediately debits an amount from an account, requesting prior authorization.
+                              - ted -- It is the Electronic Transfer Available payment, used in Brazil, that has fees to be used. The payment is made the same day of the transaction, but for this it is necessary to make the transfer within the stipulated period.
+                              - cvu -- Payment method used in Argentina.
                           payment_type_id:
                             $ref: '#/components/schemas/payment_type_id'
                           status:
@@ -3029,25 +3131,25 @@ paths:
                               - cc_rejected_bad_filled_date -- incorrect expiration date.
                               - cc_rejected_bad_filled_other -- incorrect card details.
                               - cc_rejected_bad_filled_security_code -- incorrect CVV.
-                              - cc_rejected_blacklist -- the card is on a black list for theft/complaints/fraud.
-                              - cc_rejected_call_for_authorize -- the means of payment requires prior authorization of the amount of the operation.
+                              - cc_rejected_blacklist -- the card is in the denial list, being present in problems related to theft/complaints/fraud.
+                              - cc_rejected_call_for_authorize -- the payment method requires prior authorization of the transaction value.
                               - cc_rejected_card_disabled -- the card is inactive.
-                              - cc_rejected_duplicated_payment -- transacción duplicada.
-                              - cc_rejected_high_risk -- rechazo por Prevención de Fraude.
+                              - cc_rejected_duplicated_payment -- duplicated transaction.
+                              - cc_rejected_high_risk -- rejected by Fraud Prevention.
                               - cc_rejected_insufficient_amount -- insufficient amount.
                               - cc_rejected_invalid_installments -- invalid number of installments.
-                              - cc_rejected_max_attempts -- exceeded maximum number of attempts.
+                              - cc_rejected_max_attempts -- maximum number of attempts exceeded.
                               - cc_rejected_other_reason -- generic error.
                           currency_id:
                             $ref: '#/components/schemas/currency_id'
                           description:
                             type: string
                             example: Pago Pizza
-                            description: Description sent in the payment creation request.
+                            description: Purchased product’s description, the reason for payment. E.g. - "Xiaomi Redmi Note 11S mobile phone 128gb 6gb Ram Original Global Blue Version" (description of a product in the marketplace).
                             x-description-i18n:
-                              eng: Description sent in the payment creation request.
-                              spa: Descripción enviada en la solicitud de creación del Pago.
-                              por: Descrição enviada na solicitação de criação de pagamento.
+                              eng: Purchased product’s description, the reason for payment. E.g. - "Xiaomi Redmi Note 11S mobile phone 128gb 6gb Ram Original Global Blue Version" (description of a product in the marketplace).
+                              spa: Descripción del producto adquirido, el motivo del pago. Ej. - "Celular Xiaomi Redmi Note 11S 128gb 6gb Ram Original Global Blue Version" (descripción de un producto en el marketplace).
+                              por: Descrição do produto comprado, a razão de pagamento. Ex. - "Celular Xiaomi Redmi Note 11S 128gb 6gb Ram Versão Global Original azul" (descrição de um produto no marketplace).
                           live_mode:
                             type: boolean
                             description: Indicates whether the Payment was made in a production environment or in a Test environment. If TRUE, then the chargeback will be processed in production mode. If FALSE, then the chargeback will be processed in sandbox mode.
@@ -3058,39 +3160,43 @@ paths:
                           sponsor_id:
                             type: string
                             format: nullable
-                            description: Identifier of the Partners Mercado Pago account. It is used to identify if the integration was performed by a partner.
+                            description: This field is deprecated and no longer used.
                             x-description-i18n:
-                              eng: Identifier of the Partners Mercado Pago account. It is used to identify if the integration was performed by a partner.
-                              spa: Identificador de la cuenta de Mercado Pago del Partner. Se utiliza para identificar si la integración fue realizada por algún partner.
-                              por: Identificador da conta Mercado Pago do Partnet. É usado para identificar se a integração foi realizada por um partner.
+                              eng: This field is deprecated and no longer used.
+                              spa: Este campo está deprecado y ya no se usa.
+                              por: Este campo está deprecado e não é mais utilizado.
                           authorization_code:
                             type: string
                             format: nullable
-                            description: Transaction authorization code.
+                            description: Transaction authorization code for payments with “payment_method_type” of type “credit_card” (credit card), “debit_card” (credit card) and “voucher_card” (voucher card for benefits, such as Alelo). In summary, this code is used for card transactions. The code is numerical and has 6 digits.
                             x-description-i18n:
-                              eng: Transaction authorization code.
-                              spa: Código de autorización de la transacción.
-                              por: Código de autorização de transação.
+                              eng: Transaction authorization code for payments with “payment_method_type” of type “credit_card” (credit card), “debit_card” (credit card) and “voucher_card” (voucher card for benefits, such as Alelo). In summary, this code is used for card transactions. The code is numerical and has 6 digits.
+                              spa: Código de autorización de transacción para pagos con “payment_method_type” de tipo “credit_card” (tarjeta de crédito), “debit_card” (tarjeta de débito) y “voucher_card” (tarjeta de bono para beneficios, como Alelo). En resumen, este código se utiliza para transacciones con tarjeta. El código es numérico y tiene 6 dígitos.
+                              por: Código de autorização de transação para pagamentos com “payment_method_type” do tipo “credit_card” (cartão de crédito), “debit_card” (cartão de crédito) e “voucher_card” (cartão de voucher para benefícios, como Alelo). Em síntese, este código é utilizado para transações com cartão. O código é numérico e possui 6 dígitos.
                           money_release_schema:
                             type: string
                             format: nullable
-                            description: Money release schema
+                            description: This field is used to identify whether a payment is PNF (Payment in Flow). Payment in flow is a form of cash release in which the installments received by a seller are released over the months (which corresponds to the number of installments). Possible values ​​for this field are “null” or “payment_in_flow”.
                             x-description-i18n:
-                              eng: Money release schema
-                              spa: Esquema de liberación de dinero
-                              por: Esquema de liberação de dinheiro
+                              eng: This field is used to identify whether a payment is PNF (Payment in Flow). Payment in flow is a form of cash release in which the installments received by a seller are released over the months (which corresponds to the number of installments). Possible values ​​for this field are “null” or “payment_in_flow”.
+                              spa: Este campo se utiliza para identificar si un pago es PNF (Pay in Flow). El pago en flujo es una forma de liberación de dinero en la que las cuotas recibidas por un vendedor se van liberando a lo largo de los meses (lo que corresponde al número de cuotas). Los valores posibles para este campo son "null" o "payment_in_flow".
+                              por: Esse campo é usado para identificar se um pagamento é PNF (pagamento no fluxo). Pagamento no fluxo é uma forma de liberação de dinheiro em que as parcelas recebidas por um vendedor são liberadas com o passar dos meses (que corresponde ao número de parcelas). Os valores possíveis para este campo são “null” ou “payment_in_flow”.
                           counter_currency:
                             type: string
                             format: nullable
-                            description: Information related to dollar values ​​for CBT (Cross Border Trade) payments.
+                            description: Basically, it is an object that will allow you to convert payments of the CBT type (Cross Border Trade) into dollars, which are international payments made in foreign currency.
+                            x-description-i18n:
+                              eng: Basically, it is an object that will allow you to convert payments of the CBT type (Cross Border Trade) into dollars, which are international payments made in foreign currency.
+                              spa: Básicamente, es un objeto que te permitirá convertir pagos del tipo CBT (Cross Border Trade) en dólares, que son pagos internacionales realizados en moneda extranjera.
+                              por: Basicamente, é um objeto que permitirá converter em dólares pagamentos do tipo CBT (Cross Border Trade), que são pagamentos internacionais, feitos em moeda estrangeira. 
                           collector_id:
                             type: string
                             example: 2
-                            description: Identifier of the collecting Mercado Pago account
+                            description: It is the user who receives the money. Ex - A user (payer) buys a cell phone through the marketplace. The identifier of the store/seller to receive the payment is the collector_id.
                             x-description-i18n:
-                              eng: Identifier of the collecting Mercado Pago account
-                              spa: Identificador de la cuenta de Mercado Pago recaudadora
-                              por: Identificador da conta coletora do Mercado Pago
+                              eng: It is the user who receives the money. Ex - A user (payer) buys a cell phone through the marketplace. The identifier of the store/seller to receive the payment is the collector_id.
+                              spa: Es el usuario quien recibe el dinero. Por ejemplo - Un usuario (payer) compra un celular a través del marketplace. El identificador de la tienda/vendedor para recibir el pago es el collector_id.
+                              por: É o usuário que recebe o dinheiro. Por exemplo - Um usuário (payer) compra um celular pelo marketplace. O identificador da loja/vendedor a receber o pagamento é o collector_id. 
                           payer:
                             type: object
                             description: Payer data - ID (identifying number), email address, identification (type and number of id)
@@ -3110,59 +3216,78 @@ paths:
                               email:
                                 type: string
                                 example: afriend@gmail.com
-                                description: Email associated to the payer. This value will only return a response when status=approved, status=refunded or status=charged_back
+                                description: Email associated with the payer. This value will only return a response when status=approved, status=refunded, or status=charged_back.
+                                x-description-i18n:
+                                  eng: Email associated with the payer. This value will only return a response when status=approved, status=refunded, or status=charged_back.
+                                  spa: Correo electrónico asociado al payer. Este valor sólo devolverá una respuesta cuando status=approved, status=refunded o status=charged_back.
+                                  por: Email associado ao payer. Este valor só retornará uma resposta quando status=approved, status=refunded ou status=charged_back.
                               identification:
                                 type: object
-                                description: Personal identification. This value will only return a response when status=approved, status=refunded or status=charged_back
+                                description: User's personal identification. As an example, in Brazil, we have the CPF (Individual Taxpayer Registry) and the CNPJ (National Corporate Taxpayer Registry), for companies. Other possible identification codes are CURP (Mexico), CUIL (Argentina). This object will only return a response when status=approved, status=refunded or status=charged_back.
+                                x-description-i18n:
+                                  eng: User's personal identification. As an example, in Brazil, we have the CPF (Individual Taxpayer Registry) and the CNPJ (National Corporate Taxpayer Registry), for companies. Other possible identification codes are CURP (Mexico), CUIL (Argentina). This object will only return a response when status=approved, status=refunded or status=charged_back.
+                                  spa: Identificación personal del usuario. Como ejemplo, en Brasil, existe el CPF (Registro de Contribuyentes Individuales) y el CNPJ (Registro Nacional de Contribuyentes de Personas Jurídicas), para empresas. Otros posibles códigos de identificación son CURP (México), CUIL (Argentina). Este objeto sólo devolverá una respuesta cuando status=approved, status=refunded or status=charged_back.
+                                  por: Identificação pessoal do usuário. Como exemplo, a nível Brasil, temos o CPF (Cadastro de Pessoa Física) e o CNPJ (Cadastro Nacional de Pessoas Jurídicas), para empresas. Outros códigos de identificação possíveis são o CURP (México), CUIL (Argentina), Este objeto só retornará uma response quando status=approved, status=refunded or status=charged_back. 
                                 properties:
                                   type:
                                     type: string
                                     example: DNI
-                                    description: Identification type.
+                                    description: Refers to the type of identification. It can be one of the following types.
                                     x-description-i18n:
-                                      eng: Identification type.
-                                      spa: Tipo de identificación
-                                      por: Tipo de identificação
+                                      eng: Refers to the type of identification. It can be one of the following types.
+                                      spa: Se refiere al tipo de identificación. Puede ser de los siguientes tipos.
+                                      por: Refere-se ao tipo de identificação. Pode ser dos seguintes tipos.
+                                    enum:
+                                      - CPF -- Individual Taxpayer Registration, Brazil.
+                                      - CNPJ -- National Register of Legal Entities, Brazil.
+                                      - CUIT -- Unique Tax Identification Code, Argentina. 
+                                      - CUIL -- Unique Labor Identification Code, Argentina.
+                                      - DNI -- National Identity Document, Argentina.
+                                      - CURP -- Single Population Registration Code, Mexico.
+                                      - RFC -- Federal Registry of Taxpayers, Mexico.
+                                      - CC -- Citizenship Card, Colombia.
+                                      - RUT -- Single Tax List, Chile.
+                                      - CI -- Identity Card, Uruguay.
                                   number:
                                     type: string
                                     example: 12345678
-                                    description: Identification number.
+                                    description: The number refers to the user’s identifier. If it is a CPF, for example, it will have 11 numbers.
                                     x-description-i18n:
-                                      eng: Identification number.
-                                      spa: Número de identificación
-                                      por: Número de identificação
+                                      eng: The number refers to the user’s identifier. If it is a CPF, for example, it will have 11 numbers.
+                                      spa: El número hace referencia al identificador del usuario en cuestión. Si es un CPF, por ejemplo, tendrá 11 números.
+                                      por: O número se refere ao identificador do usuário em questão. Se for um CPF, por exemplo, terá 11 números.
                               type:
                                 $ref: '#/components/schemas/payer_type'
                           metadata:
                             type: object
-                            description: The metadata object shows (if used in the integration) the JSON sent by the client containing additional information that needs to be recorded in the payment.
+                            description: This is an optional key-value object where the customer can add additional information that needs to be recorded at checkout. Ex. - {"payments_group_size":1,"payments_group_timestamp":"2022-11-18T15:01:44Z","payments_group_uuid":"96cfd2a4-0b06-4dea-b25f-c5accb02ba10"}.
                             x-description-i18n:
-                              eng: The metadata object shows (if used in the integration) the JSON sent by the client containing additional information that needs to be recorded in the payment.
-                              spa: En el objeto metadata se muestra (en caso de ser utilizado en la integración) el JSON enviado por el cliente con información complementaria que necesite mantener registrada en el pago.
-                              por: O objeto de metadata mostra (se usado na integração) o JSON enviado pelo cliente com informações adicionais que precisam ser registradas no pagamento.
+                              eng: This is an optional key-value object where the customer can add additional information that needs to be recorded at checkout. Ex. - {"payments_group_size":1,"payments_group_timestamp":"2022-11-18T15:01:44Z","payments_group_uuid":"96cfd2a4-0b06-4dea-b25f-c5accb02ba10"}.
+                              spa: Este es un objeto clave-valor opcional en el que el cliente puede agregar información adicional que debe registrarse al finalizar la compra. Por ejemplo - {"payments_group_size":1,"payments_group_timestamp":"2022-11-18T15:01:44Z","payments_group_uuid":"96cfd2a4-0b06-4dea-b25f-c5accb02ba10"}
+                              por: Este é um objeto opcional do tipo chave-valor  no qual o cliente  pode adicionar informações adicionais que precisam ser registradas no pagamento. Por exemplo - {"payments_group_size":1,"payments_group_timestamp":"2022-11-18T15:01:44Z","payments_group_uuid":"96cfd2a4-0b06-4dea-b25f-c5accb02ba10"}.
                           additional_info:
                             type: object
-                            description: Additional information.
+                            description: At Payments level, it's only data, and we only forward that information to other APIs like Risk, to perform scoring and prevent fraud, or to Tax, to determine them for international payments.
                             x-description-i18n:
-                              eng: Additional information.
-                              spa: Información adicional
-                              por: Informações adicionais
+                              eng: At Payments level, it's only data, and we only forward that information to other APIs like Risk, to perform scoring and prevent fraud, or to Tax, to determine them for international payments.
+                              spa: En el nivel de Pagos, son solo datos y únicamente reenviamos esa información a otras API, como Riesgo, para realizar puntajes y prevenir fraudes, o a Impuestos, para determinarlos para pagos internacionales.
+                              por: No nível de Pagamentos, são apenas dados e apenas encaminhamos essas informações para outras APIS, como Risco, para realizar pontuação e prevenir fraudes, para Impostos para determiná-los para pagamentos internacionais.
                           external_reference:
                             type: string
                             format: nullable
-                            description: Unique identifier sent by the seller to relate the payment_id generated by Mercado Pago, with the ID of its system.
+                            description: It is a payment’s external reference. It could be, for example, a hashcode from the Central Bank, working as a transaction origin identifier.
                             x-description-i18n:
-                              eng: Unique identifier sent by the seller to relate the payment_id generated by Mercado Pago, with the ID of its system.
-                              spa: Identificador único que envía el vendedor para relacionar el payment_id generado por mercado pago, con el ID de tu sistema.
-                              por: Identificador único enviado pelo vendedor para relacionar o payment_id gerado pelo Mercado Pago com o ID de seu sistema.
+                              eng: It is a payment’s external reference. It could be, for example, a hashcode from the Central Bank, working as a transaction origin identifier.
+                              spa: Es una referencia de pago externa. Podría ser, por ejemplo, un código hash del Banco Central, funcionando como identificador del origen de la transacción.
+                              por: É uma referência externa do pagamento. Pode ser, por exemplo, um hashcode do Banco Central, funcionando como identificador de origem da transação.
                           transaction_amount:
                             type: number
                             example: 250
-                            description: Transaction amount
+                            description: Product cost. Example - The sale of a product for R$100.00 will have a transactionAmount = 100.
                             x-description-i18n:
-                              eng: Transaction amount
-                              spa: Monto de la transacción
-                              por: Valor da transação
+                              eng: Product cost. Example - The sale of a product for R$100.00 will have a transactionAmount = 100.
+                              spa: Costo del producto. Ejemplo - La venta de un producto por R$ 100,00 tendrá un transactionAmount = 100.
+                              por: Custo do produto. Exemplo - A venda de um produto por R$100,00 terá um transactionAmount = 100.
                           transaction_amount_refunded:
                             type: number
                             example: 0
@@ -3174,27 +3299,27 @@ paths:
                           coupon_amount:
                             type: number
                             example: 0
-                            description: Coupon in favor of the payer. If it exists, it is deducted from the total to be paid.
+                            description: It is the value of the discount coupon. E.g. - BRL 14.50. The attribute's type is BigDecimal.
                             x-description-i18n:
-                              eng: Coupon in favor of the payer. If it exists, it is deducted from the total to be paid.
-                              spa: Cupón a favor del payer. De existir, es descontado del total a pagar.
-                              por: Cupom a favor do pagador. Se existir, é deduzido do total a pagar.
+                              eng: It is the value of the discount coupon. E.g. - BRL 14.50. The attribute's type is BigDecimal.
+                              spa: Es el valor del cupón de descuento. Por ejemplo - BRL 14,50. El tipo del atributo es BigDecimal.
+                              por: É o valor do cupom de desconto. Ex - R$14,50. O tipo do atributo é BigDecimal. 
                           differential_pricing_id:
                             type: string
                             format: nullable
-                            description: Differential code of the Pricing Schema applied by Mercado Pago.
+                            description: Attribute that commonly contains an agreement on how much the user will be charged (generally, this field is more relevant for Marketplace payments). Pricing and fees are calculated based on this identifier.
                             x-description-i18n:
-                              eng: Differential code of the Pricing Schema applied by Mercado Pago.
-                              spa: Código diferencial del Schema de Pricing aplicado por Mercado Pago.
-                              por: Código diferencial do Schema de Pricing aplicado pelo Mercado Pago.
+                              eng: Attribute that commonly contains an agreement on how much the user will be charged (generally, this field is more relevant for Marketplace payments). Pricing and fees are calculated based on this identifier.
+                              spa: Atributo que comúnmente contiene un acuerdo sobre cuánto se le cobrará al usuario (generalmente, este campo es más relevante para los pagos de Marketplace). Los precios y las tarifas se calculan en función de este identificador.
+                              por: Atributo que comumente contém um acordo de quanto vai ser cobrado do usuário (geralmente, este campo é mais relevante para pagamentos do Marketplace). A precificação e as taxas são calculadas com base nesse identificador.
                           deduction_schema:
                             type: string
                             format: nullable
-                            description: Pricing Schema applied by Mercado Pago.
+                            description: Pricing Scheme applied by Mercado Pago. It is a field that represents the information of a type of financing (installment). Ex - “ahora12” is a schema that indicates that the payment is divided into 12 installments. In addition, financing may have an additional cost, such cost being included in that same answer and pointed out to whom this applies (payer/collector).
                             x-description-i18n:
-                              eng: Pricing Schema applied by Mercado Pago.
-                              spa: Schema de Pricing aplicado por Mercado Pago.
-                              por: Schema de Pricing aplicado pelo Mercado Pago.
+                              eng: Pricing Scheme applied by Mercado Pago. It is a field that represents the information of a type of financing (installment). Ex - “ahora12” is a schema that indicates that the payment is divided into 12 installments. In addition, financing may have an additional cost, such cost being included in that same answer and pointed out to whom this applies (payer/collector).
+                              spa: Esquema de precios aplicado por Mercado Pago. Es un campo que representa la información de un tipo de financiamiento (cuota). Por ejemplo - “ahora12” es un esquema que indica que el pago se divide en 12 cuotas. Además, el financiamiento puede tener un costo adicional, siendo incluido dicho costo en esa misma respuesta y señalándose a quién aplica (payer/collector).
+                              por: Esquema de Pricing aplicado pelo Mercado Pago. É um campo que representa as informações de um tipo de financiamento (parcelamento). Por exemplo - “ahora12” é um schema que indica que o pagamento está parcelado em 12 vezes. Em adição, o financiamento pode ter um custo adicional, sendo tal custo incluído nessa mesma resposta  e apontado a quem se aplica isso (payer/collector).
                           transaction_details:
                             type: object
                             properties:
@@ -3331,22 +3456,22 @@ paths:
                           processing_mode:
                             type: string
                             format: nullable
-                            description: Processing mode. There are two types.
+                            description: Payment’s processing method. There are two types.
                             x-description-i18n:
                               eng: Processing mode. There are two types.
-                              spa: Modo de procesamiento. Existen dos tipos.
-                              por: Modo de processamento. Existem dois tipos.
+                              spa: Método de procesamiento de pagos. Hay dos tipos.
+                              por: Modo de processamento do pagamento. Existem dois tipos.
                             enum:
-                              - Aggregator -- The merchant will use the Mercado Pago merchant codes and will take advantage of the financial advantages that we offer.
-                              - Gateway -- For the merchant it is necessary to have their own merchant codes for online sales and to have an agreement with each of the desired means of payment.
+                              - Aggregator -- The merchant will use the Mercado Pago merchant codes and take advantage of the financial advantages we offer.
+                              - Gateway -- For the merchant, it is necessary to have his own merchant code for online sales and to have an agreement with each of the desired payment methods.
                           merchant_account_id:
                             type: string
                             format: nullable
-                            description: Merchant account ID. Applies to gateway model.
+                            description: Merchant store code identifier. Applies only to the gateway model (since the delivery of money to the merchant does not go through the Mercado Pago system).
                             x-description-i18n:
-                              eng: Merchant account ID. Applies to gateway model.
-                              spa: ID del código de comercio (merchant account ID). Aplica para modelo gateway.
-                              por: ID do código do comerciante (Mmerchant account ID). Aplica-se ao modelo de gateway.
+                              eng: Merchant store code identifier. Applies only to the gateway model (since the delivery of money to the merchant does not go through the Mercado Pago system).
+                              spa: Identificador del código de la tienda del merchant. Aplica solo para el modelo de gateway (ya que la entrega de dinero al comercio no pasa por el sistema de Mercado Pago).
+                              por: Identificador do código da loja comerciante. Aplica-se somente ao modelo gateway (porque a entrega de dinheiro ao comerciante não passa pelo sistema do Mercado Pago).
                           acquirer:
                             type: string
                             format: nullable
@@ -3362,7 +3487,7 @@ paths:
                             x-description-i18n:
                               eng: Merchant number (Applies to gateway model).
                               spa: Número de comercio (Aplica para modelo gateway).
-                              por: Número da loja (aplica-se ao modelo de gateway).
+                              por: Número do estabelecimento (aplica-se ao modelo de gateway).
                       description: Search results
                       x-description-i18n:
                         eng: Search results
@@ -3456,17 +3581,17 @@ paths:
                     type: string
                     enum:
                       - 2000--Payment not found.
-
 components:
   schemas:
     operation_type:
       type: string
-      description: Payment type.
+      description: It is the type of payment. The available types are as follows.
       x-description-i18n:
-        eng: Payment type.
-        spa: Tipo de pago
-        por: Tipo de pagamento
+        eng: It is the type of payment. The available types are as follows.
+        spa: Es el tipo de pago. Los tipos disponibles son los siguientes.
+        por: É o tipo de pagamento. Os tipos disponíveis são os seguintes.
       enum:
+        - investment -- When money is put into an investment, such as CDB, in the Mercado Pago application;
         - regular_payment -- Typification by default of a purchase being paid using Mercado Pago.
         - money_transfer -- Funds transfer between two users.
         - recurring_payment -- Automatic recurring payment due to an active user subscription.
@@ -3474,6 +3599,7 @@ components:
         - payment_addition -- Addition of money to an existing payment, made through a Mercado Pago account.
         - cellphone_recharge -- Recharge of a user's cellphone account.
         - pos_payment -- Payment done through a Point of Sale.
+        - money_exchange -- Payment to exchange currency for a user.
     entity_type:
       type: string
       description: Entity type of the payer (only for bank transfers).
@@ -3499,11 +3625,11 @@ components:
         - guest -- The payer doesn't have an account.
     currency_id:
       type: string
-      description: ID of the currency used in the payment.
+      description: Identifier of the currency used in the payment. We currently have the following options.
       x-description-i18n:
-        eng: ID of the currency used in the payment.
-        spa: Identificador de la moneda utilizada en el pago
-        por: Identificador da moeda utilizada no pagamento
+        eng: Identifier of the currency used in the payment. We currently have the following options.
+        spa: Identificador de la moneda utilizada en el pago. Actualmente tenemos las siguientes opciones.
+        por: Identificador da moeda utilizada no pagamento. Atualmente, possuímos as opções a seguir.
       example: BRL
       enum:
         - ARS -- Argentine peso.
@@ -3513,6 +3639,15 @@ components:
         - COP -- Colombian peso.
         - PEN -- Peruvian sol.
         - UYU -- Uruguayan peso.
+        - VES -- Venezuelan Bolivar.
+        - MCN -- Mercado Coin (internal cryptocurrency of Mercado Livre and Mercado Pago).
+        - BTC -- Bitcoin.
+        - USD -- US dollar.
+        - USDP -- Pax Dollar (stable cryptocurrency pegged to the US dollar).
+        - DCE -- Dollar Currency Equivalent.
+        - ETH -- Ethereum.
+        - FDI -- Investment Funds.
+        - CDB -- Bank deposit certificate
     fee_details_type:
       type: string
       description: Fee detail.
@@ -3542,37 +3677,41 @@ components:
     status:
       type: string
       example: approved
-      description: Payment status.
+      description: It is the payment’s current state. It can be of the following types.
       x-description-i18n:
-        eng: Payment status.
-        spa: Estado del pago
-        por: Estado do pagamento
+        eng: It is the payment’s current state. It can be of the following types.
+        spa: Es el estado actual del pago. Puede ser de los siguientes tipos.
+        por: É o estado atual do pagamento. Podem ser ser dos seguintes tipos.
       enum:
-        - pending -- The user has not yet completed the payment process.
-        - approved -- The payment has been approved and accredited.
+        - pending -- The user has not concluded the payment process (for example, by generating a payment by boleto, it will be concluded at the moment in which the user makes the payment in the selected place).
+        - approved -- The payment has been approved and credited.
         - authorized -- The payment has been authorized but not captured yet.
-        - in_process -- Payment is being reviewed.
-        - in_mediation -- Users have initiated a dispute.
-        - rejected -- Payment was rejected. The user may retry payment.
-        - cancelled -- Payment was cancelled by one of the parties or because time for payment has expired
-        - refunded -- Payment was refunded to the user.
-        - charged_back -- A chargeback was made in the buyer’s credit card.
+        - in_process -- The payment is in analysis.
+        - in_mediation -- The user started a dispute.
+        - rejected -- The payment was rejected (the user can try to pay again).
+        - cancelled -- Either the payment was canceled by one of the parties or expired.
+        - refunded -- The payment was returned to the user.
+        - charged_back -- A chargeback was placed on the buyer's credit card.
     payment_type_id:
       type: string
-      description: Type of payment method chosen.
+      description: It is the type of payment method (card, bank transfer, boleto bancário, ATM, etc.). They can be of the following types.
       x-description-i18n:
-        eng: Type of payment method chosen.
-        spa: Tipo del medio de pago elegido
-        por: Tipo do meio de pagamento escolhido
+        eng: It is the type of payment method (card, bank transfer, boleto bancário, ATM, etc.). They can be of the following types.
+        spa: Es el tipo de método de pago (tarjeta, transferencia bancaria, ticket, ATM, etc.). Puede ser de los siguientes tipos.
+        por: É o tipo da forma de pagamento (cartão, transferência bancária, boleto, caixa eletrônico, etc). Podem ser dos seguintes tipos.
       example: credit_card
       enum:
         - account_money -- Money in the Mercado Pago account.
-        - ticket -- Printed ticket.
-        - bank_transfer -- Wire transfer.
-        - atm -- Payment by ATM.
+        - ticket -- Boletos, Caixa Electronica Payment, PayCash and Oxxo, etc.
+        - bank_transfer -- Bank transfer (pix).
+        - atm -- ATM payment (widely used in Mexico through BBVA Bancomer).
         - credit_card -- Payment by credit card.
         - debit_card -- Payment by debit card.
         - prepaid_card -- Payment by prepaid card.
+        - digital_currency -- Purchases with Mercado Crédito.
+        - digital_wallet -- Paypal.
+        - voucher_card -- Alelo benefits, Sodexo.
+        - crypto_transfer -- Payment with cryptocurrencies such as Ethereum and Bitcoin.
     refund_source_type:
       type: string
       description: Type of user who issued the refund.
