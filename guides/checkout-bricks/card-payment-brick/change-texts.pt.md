@@ -4,7 +4,7 @@
 >
 > Alterar textos
 
-| - | Brick |
+| - | Descrição |
 |--- |--- |
 | Momento de customização | Ao renderizar Brick |
 | Propriedade | customization.visual.texts.{cardNumber, cardExpirationDate, cardSecurityCode, cardholderName, cardholderIdentification, cardholderEmail, formTitle, emailSectionTitle, installmentsSectionTitle, selectInstallments, formSubmit} |

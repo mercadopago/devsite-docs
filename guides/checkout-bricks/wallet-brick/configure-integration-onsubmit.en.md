@@ -1,22 +1,161 @@
-# Preference on startup
+# Preference in onSubmit
 
 To configure Wallet Brick integration to receive payments with Mercado Pago Wallet you need to follow the steps below. 
 
-1. [Create preference](#bookmark_create_preference)
-2. [Create container](#bookmark_create_container)
-3. [Include and configure MercadoPago.js library](#bookmark_include_and_configure_mercadopago.js_library)
-4. [Instantiate Brick](#bookmark_instantiate_brick)
-5. [Render Brick](#bookmark_render_brick)
+1. [Create container](#bookmark_create_container)
+2. [Include and configure MercadoPago.js library](#bookmark_include_and_configure_mercadopago.js_library)
+3. [Instantiate Brick](#bookmark_instantiate_brick)
+4. [Render Brick](#bookmark_render_brick)
+5. [Create preference and submit it in onSubmit callback](#bookmark_create_preference_and_submit_it_in_onSubmit_callback)
 
 > The steps are performed on the backend or frontend. The **Client-Side** and **Server-Side** pills located immediately next to the title help you to identify which step is performed in which instance. <br/></br>
 > <br/></br>
-> And, to help, we've prepared a complete [code example](/developers/en/docs/checkout-bricks/wallet-brick/code-example/preference-startup) of the Wallet Brick configuration with Mercado Pago Wallet that you can use as a template.
+> And, to help, we've prepared a complete [code example](/developers/en/docs/checkout-bricks/wallet-brick/code-example/preference-onsubmit) of the Wallet Brick configuration with Mercado Pago Wallet that you can use as a template.
+
+> CLIENT_SIDE
+>
+> h2
+>
+> Create container
+
+You will need to create a container to define where the Brick will be placed on the screen. The creation of the container is done by inserting an element (for example, a div) in the HTML code of the page where the Brick will be rendered (see the code below).
+
+> NOTE
+> 
+> Attention
+>
+> The value shown in the `id` property below is just an example and can be altered, however, it should always match the `id` indicated in the render.
+
+```html
+  <div id="paymentBrick_container"></div>
+```
+
+> CLIENT_SIDE
+>
+> h2
+>
+> Include and configure MercadoPago.js library
+
+**Use our official library to access Mercado Pago features** from your frontend securely.
+
+> NOTE
+>
+> Attention
+>
+> JS code can be included in a `< script >` tag or a separate JS file.
+
+You will need to install the SDK by adding the following in your HTML code:
+
+```html
+<script src="https://sdk.mercadopago.com/js/v2"></script>
+```
+
+Next, initialize the SDK by setting your [public key](/developers/en/guides/additional-content/credentials/credentials)using JavaScript code as follows:
+
+```javascript
+const mp = new MercadoPago('YOUR_PUBLIC_KEY');
+```
+
+> CLIENT_SIDE
+>
+> h2
+>
+> Instantiate Brick
+
+With the container created and our SDK JS installed, the next step is to instantiate the Brick builder, which will allow generating the Brick. To create the Brick instance, insert the code below after the previous step.
+
+```javascript
+const bricksBuilder = mp.bricks();
+```
+
+> WARNING
+>
+> Attention
+>
+> During Brick instantiation, different errors may appear. For more details on each of them, see the [Possible Errors](/developers/en/docs/checkout-bricks/additional-content/possible-errors) section.
+
+> CLIENT_SIDE
+>
+> h2
+>
+> Render Brick
+
+Once instantiated, the Brick can be rendered and have all its configurations compiled so that the final structure of the Brick is generated.
+
+To render the Brick, insert the following code after the previous step and fill in the attributes according to the comments highlighted in this same code.
+
+```javascript
+const renderWalletBrick = async (bricksBuilder) => {
+  const settings = {
+    callbacks: {
+      onReady: () => {
+          /*
+            Callback called when Brick is ready.
+            Here you can hide loadings from your site, for example.
+          */
+      },
+      onSubmit: () => {
+        // callback called when clicking Wallet Brick
+        // this is possible because the brick is a button
+        // at this time of submit, you must create the preference (for more
+        // info see step 5, create preference)
+        const yourRequestBodyHere = {
+          items: [
+            {
+              id: '202809963',
+              title: 'Dummy title',
+              description: 'Dummy description',
+              quantity: 1,
+              unit_price: 10,
+            },
+          ],
+          purpose: 'wallet_purchase',
+        };
+
+        return new Promise((resolve, reject) => {
+          fetch('/create_preference', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(yourRequestBodyHere),
+          })
+            .then((response) => {
+              // resolve the promise with the preference ID
+              resolve(response.preference_id);
+            })
+            .catch((error) => {
+              // handle the error response when trying to create the preference
+              reject();
+            });
+        });
+      },
+      onError: (error) => {
+        // callback called for all Brick error cases
+        console.error(error);
+      },
+    },
+  };
+
+  window.walletBrickController = await bricksBuilder.create(
+    'wallet',
+    'walletBrick_container',
+    settings,
+  );
+};
+
+renderWalletBrick(bricksBuilder);
+```
+
+The result of rendering the Brick should be like the image below:”
+
+![wallet-brick-render](checkout-bricks/wallet-brick-render-en.png)
 
 > SERVER_SIDE
 >
 > h2
 >
-> Create preference
+> Create preference and submit it in onSubmit callback
 
 The first step to give the user the possibility to pay using the Mercado Pago Wallet is to create a preference in your backend. Add the [Mercado Pago SDK](/developers/en/docs/sdks-library/landing) and the necessary [credentials](/developers/en/guides/additional-content/credentials/credentials) to your project to enable the preference usage:
 
@@ -230,114 +369,4 @@ curl -X POST \
 >
 > For more details on how to configure it, access the [Preferences](/developers/en/docs/checkout-bricks/wallet-brick/additional-customization/preferences) section.<br/></br>
 > <br/></br>
-> Consider that when a user chooses to make a payment using the Mercado Pago Wallet, he will be redirected to the Mercado Pago page to complete the payment. Therefore, it is necessary to configure the `back_urls` if you want to return to your site at the end of the payment. For more information, visit the [Redirect buyer to your website](/developers/en/docs/checkout-bricks/wallet-brick/additional-customization/preferences#bookmark_redirect_the_buyer_to_your_site) section.
-
-> CLIENT_SIDE
->
-> h2
->
-> Create container
-
-You will need to create a container to define where the Brick will be placed on the screen. The creation of the container is done by inserting an element (for example, a div) in the HTML code of the page where the Brick will be rendered (see the code below).
-
-> NOTE
-> 
-> Attention
->
-> The value shown in the `id` property below is just an example and can be altered, however, it should always match the `id` indicated in the render.
-
-```html
-  <div id="walletBrick_container"></div>
-```
-
-> CLIENT_SIDE
->
-> h2
->
-> Include and configure MercadoPago.js library
-
-**Use our official library to access Mercado Pago features** from your frontend securely.
-
-> NOTE
->
-> Attention
->
-> JS code can be included in a `< script >` tag or a separate JS file.
-
-You will need to install the SDK by adding the following in your HTML code:
-
-```html
-<script src="https://sdk.mercadopago.com/js/v2"></script>
-```
-
-Next, initialize the SDK by setting your [public key](/developers/en/guides/additional-content/credentials/credentials)using JavaScript code as follows:
-
-```javascript
-const mp = new MercadoPago('YOUR_PUBLIC_KEY');
-```
-
-> CLIENT_SIDE
->
-> h2
->
-> Instantiate Brick
-
-With the container created and our SDK JS installed, the next step is to instantiate the Brick builder, which will allow generating the Brick. To create the Brick instance, insert the code below after the previous step.
-
-```javascript
-const bricksBuilder = mp.bricks();
-```
-
-> WARNING
->
-> Attention
->
-> During Brick instantiation, different errors may appear. For more details on each of them, see the [Possible Errors](/developers/en/docs/checkout-bricks/additional-content/possible-errors) section.
-
-> CLIENT_SIDE
->
-> h2
->
-> Render Brick
-
-Once instantiated, the Brick can be rendered and have all its configurations compiled so that the final structure of the Brick is generated.
-
-To render the Brick, insert the following code after the previous step and fill in the attributes according to the comments highlighted in this same code.
-
-```javascript
-const renderWalletBrick  = async (bricksBuilder) => {
- const settings = {
- initialization: {
-   preferenceId: '<PREFERENCE_ID>', // preferenceId generated in the backend
- },
- callbacks: {
-   onReady: () => {
-     /*
-       Callback llamado cuando Brick está listo
-       Aquí puedes ocultar loadings de su sitio, por ejemplo.
-     */
-   },
-   onSubmit: () => {
-     // callback called when clicking on the data submission button
-       // in this case, the user was redirected to
-       // the Mercado Pago page to make the payment
-   },
-   onError: (error) => {
-     // callback called for all Brick error cases
-     console.error(error);
-   },
- },
-};
- 
- window.walletBrickController = await bricksBuilder.create(
-   'wallet',
-   'walletBrick_container',
-   settings
- );
-};
-renderWalletBrick (bricksBuilder); 
-```
-
-The result of rendering the Brick should be like the image below:”
-
-![wallet-brick-render](checkout-bricks/wallet-brick-render-en.png)
+> Consider that when a user chooses to make a payment using the Mercado Pago Wallet, he will be redirected to the Mercado Pago page to complete the payment. Therefore, it is necessary to configure the `back_urls` if you want to return to your site at the end of the payment. For more information, visit the [Redirect buyer to your website](/developers/en/docs/checkout-bricks/payment-brick/additional-customization/preferences#bookmark_redirect_the_buyer_to_your_site) section.

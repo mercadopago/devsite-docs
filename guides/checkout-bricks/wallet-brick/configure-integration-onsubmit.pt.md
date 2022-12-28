@@ -1,24 +1,162 @@
-# Preferência na inicialização
+# Preferência no onSubmit 
 
 Para configurar a integração do Wallet Brick para receber pagamentos com a Conta Mercado Pago você precisa seguir os passos abaixo. 
 
-1. [Criar preferência](#bookmark_criar_preferência)
-2. [Criar container](#bookmark_criar_container)
-3. [Incluir e configurar a biblioteca MercadoPago.js](#bookmark_incluir_e_configurar_a_biblioteca_mercadopago.js)
-4. [Instanciar Brick](#bookmark_instanciar_brick)
-5. [Renderizar Brick](#bookmark_renderizar_brick)
+1. [Criar container](#bookmark_criar_container)
+2. [Incluir e configurar a biblioteca MercadoPago.js](#bookmark_incluir_e_configurar_a_biblioteca_mercadopago.js)
+3. [Instanciar Brick](#bookmark_instanciar_brick)
+4. [Renderizar Brick](#bookmark_renderizar_brick)
+5. [Criar preferência e enviá-la no callback onSubmit](#bookmark_criar_preferência_e_enviá-la_no_callback_onSubmit)
 
 > Os passos são realizados no back-end ou no front-end. As pills **Client-Side** e **Server-Side** localizadas imediatamente ao lado do título te ajudam a identificar qual passo é realizado em qual instância.<br/></br>
 > <br/></br>
-> E, para ajudar, preparamos um [exemplo de código](/developers/pt/docs/checkout-bricks/wallet-brick/code-example/preference-startup) completo da configuração do Wallet Brick com Conta Mercado Pago que você pode usar como modelo.
+> E, para ajudar, preparamos um [exemplo de código](/developers/pt/docs/checkout-bricks/wallet-brick/code-example/preference-onsubmit) completo da configuração do Wallet Brick com Conta Mercado Pago que você pode usar como modelo.
+
+> CLIENT_SIDE
+>
+> h2
+>
+> Criar container
+
+Você vai precisar criar um container para definir o local que o Brick será inserido na tela. A criação do container é feita inserindo um elemento (por exemplo, uma div) no código HTML da página no qual o Brick será renderizado (veja código abaixo). 
+
+> NOTE
+>
+> Atenção
+>
+> O valor exibido na propriedade `id` a seguir é apenas um exemplo, e pode ser alterado, mas deve sempre corresponder ao `id` indicado na renderização.
+
+```html
+  <div id="walletBrick_container"></div>
+```
+
+> CLIENT_SIDE
+>
+> h2
+>
+> Incluir e configurar a biblioteca MercadoPago.js
+
+**Utilize a nossa biblioteca oficial para acessar as funcionalidades do Mercado Pago** com segurança desde seu frontend.
+
+> NOTE
+>
+> Atenção
+>
+> O codigo JS pode ser incluido em uma tag `< script >` ou um arquivo JS separado.
+
+Você precisará instalar o SDK adicionando o seguinte em seu código HTML:
+
+```html
+<script src="https://sdk.mercadopago.com/js/v2"></script>
+```
+
+Em seguida, inicialize o SDK definindo sua [chave pública](/developers/pt/guides/additional-content/credentials/credentials) usando código JavaScript:
+
+```javascript
+const mp = new MercadoPago('YOUR_PUBLIC_KEY');
+```
+> CLIENT_SIDE
+>
+> h2
+>
+> Instanciar Brick
+
+Com o container criado e o SDK JS instalado, o próximo passo é instanciar o Brick builder, que permitirá gerar o Brick. Para instanciar o Brick, insira o código abaixo após a etapa anterior. 
+
+```javascript
+const bricksBuilder = mp.bricks();
+```
+
+> WARNING
+>
+> Atenção
+>
+> Durante a instanciação do Brick, é possível que apareçam diferentes erros. Para detalhamento de cada um deles, veja a seção [Possíveis erros.](/developers/pt/docs/checkout-bricks/additional-content/possible-errors)
+
+> CLIENT_SIDE
+>
+> h2
+>
+> Renderizar Brick
+
+Uma vez instanciado, o Brick pode ser renderizado e ter todas as suas configurações compiladas de modo que a estrutura final do Brick seja gerada.
+
+Para renderizar o Brick, insira o código abaixo após o passo anterior e preencha os atributos conforme os comentários destacados neste mesmo código.
+
+```javascript
+const renderWalletBrick = async (bricksBuilder) => {
+  const settings = {
+    callbacks: {
+      onReady: () => {
+        /*
+            Callback chamado quando o Brick estiver pronto.
+            Aqui você pode ocultar loadings do seu site, por exemplo.
+          */
+      },
+      onSubmit: () => {
+        // callback chamado ao clicar no Wallet Brick
+        // isso é possível porque o brick é um botão
+        // neste momento de submit, você deve criar a preferência (para mais
+        // informações veja o passo 5, criar preferência)
+        const yourRequestBodyHere = {
+          items: [
+            {
+              id: '202809963',
+              title: 'Dummy title',
+              description: 'Dummy description',
+              quantity: 1,
+              unit_price: 10,
+            },
+          ],
+          purpose: 'wallet_purchase',
+        };
+
+        return new Promise((resolve, reject) => {
+          fetch('/create_preference', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(yourRequestBodyHere),
+          })
+            .then((response) => {
+              // resolver a promise com o ID da preferência
+              resolve(response.preference_id);
+            })
+            .catch((error) => {
+              // lidar com a resposta de erro ao tentar criar a preferência
+              reject();
+            });
+        });
+      },
+      onError: (error) => {
+        // callback chamado para todos os casos de erro do Brick
+        console.error(error);
+      },
+    },
+  };
+
+  window.walletBrickController = await bricksBuilder.create(
+    'wallet',
+    'walletBrick_container',
+    settings,
+  );
+};
+
+renderWalletBrick(bricksBuilder);
+```
+
+O resultado de renderizar o Brick deve ser como na imagem abaixo:
+
+![wallet-brick-render](checkout-bricks/wallet-brick-render-pt.png)
 
 > SERVER_SIDE
 >
 > h2
 >
-> Criar preferência
+> Criar preferência e enviá-la no callback onSubmit
 
-O primeiro passo para dar ao usuário a possibilidade de pagar utilizando a Conta Mercado Pago, é criar uma preferência em seu backend. Adicione o [SDK do Mercado Pago](/developers/pt/docs/sdks-library/landing) e as [credenciais](/developers/pt/guides/additional-content/credentials/credentials) necessárias ao seu projeto para habilitar o uso de preferências:
+Quando o usuário clicar no Wallet Brick para seguir com o pagamento, será criada uma preferência em seu backend que retornará ao Brick dentro do callback onSubmit. Adicione o [SDK do Mercado Pago](/developers/pt/docs/sdks-library/landing) e as [credenciais](/developers/pt/guides/additional-content/credentials/credentials) necessárias ao seu projeto para habilitar o uso de preferências:
 
 [[[
 ```php
@@ -230,113 +368,4 @@ curl -X POST \
 >
 > Para saber mais detalhes de como configurá-la, acesse a seção [Preferências.](/developers/pt/docs/checkout-bricks/wallet-brick/additional-customization/preferences)<br/></br>
 > <br/></br>
-> Considere que quando um usuário opta por fazer o pagamento utilizando a Conta Mercado Pago, este será redirecionado para a página do Mercado Pago para concluir o pagamento. Por isso, é necessário configurar as `back_urls` se você quiser retornar ao seu site ao final do pagamento. Para mais informações, visite a seção [Redirecione o comprador para o seu site.](/developers/pt/docs/checkout-bricks/wallet-brick/additional-customization/preferences#bookmark_redirecione_o_comprador_para_o_seu_site).
-
-> CLIENT_SIDE
->
-> h2
->
-> Criar container
-
-Você vai precisar criar um container para definir o local que o Brick será inserido na tela. A criação do container é feita inserindo um elemento (por exemplo, uma div) no código HTML da página no qual o Brick será renderizado (veja código abaixo). 
-
-> NOTE
->
-> Atenção
->
-> O valor exibido na propriedade `id` a seguir é apenas um exemplo, e pode ser alterado, mas deve sempre corresponder ao `id` indicado na renderização.
-
-```html
-  <div id="walletBrick_container"></div>
-```
-
-> CLIENT_SIDE
->
-> h2
->
-> Incluir e configurar a biblioteca MercadoPago.js
-
-**Utilize a nossa biblioteca oficial para acessar as funcionalidades do Mercado Pago** com segurança desde seu frontend.
-
-> NOTE
->
-> Atenção
->
-> O codigo JS pode ser incluido em uma tag `< script >` ou um arquivo JS separado.
-
-Você precisará instalar o SDK adicionando o seguinte em seu código HTML:
-
-```html
-<script src="https://sdk.mercadopago.com/js/v2"></script>
-```
-
-Em seguida, inicialize o SDK definindo sua [chave pública](/developers/pt/guides/additional-content/credentials/credentials) usando código JavaScript:
-
-```javascript
-const mp = new MercadoPago('YOUR_PUBLIC_KEY');
-```
-> CLIENT_SIDE
->
-> h2
->
-> Instanciar Brick
-
-Com o container criado e o SDK JS instalado, o próximo passo é instanciar o Brick builder, que permitirá gerar o Brick. Para instanciar o Brick, insira o código abaixo após a etapa anterior. 
-
-```javascript
-const bricksBuilder = mp.bricks();
-```
-
-> WARNING
->
-> Atenção
->
-> Durante a instanciação do Brick, é possível que apareçam diferentes erros. Para detalhamento de cada um deles, veja a seção [Possíveis erros.](/developers/pt/docs/checkout-bricks/additional-content/possible-errors)
-
-> CLIENT_SIDE
->
-> h2
->
-> Renderizar Brick
-
-Uma vez instanciado, o Brick pode ser renderizado e ter todas as suas configurações compiladas de modo que a estrutura final do Brick seja gerada.
-
-Para renderizar o Brick, insira o código abaixo após o passo anterior e preencha os atributos conforme os comentários destacados neste mesmo código.
-
-```javascript
-const renderWalletBrick  = async (bricksBuilder) => {
- const settings = {
- initialization: {
-   preferenceId: '<PREFERENCE_ID>', // preferenceId gerado no backend
- },
- callbacks: {
-   onReady: () => {
-      /*
-        Callback chamado quando o Brick estiver pronto.
-        Aqui você pode ocultar loadings do seu site, por exemplo.
-      */
-   },
-   onSubmit: () => {
-     // callback chamado ao clicar no botão de submissão dos dados
-       // nesse caso, o usuário foi redirecionado para
-       // a página do Mercado Pago para fazer o pagamento
-   },
-   onError: (error) => {
-     // callback chamado para todos os casos de erro do Brick
-     console.error(error);
-   },
- },
-};
- 
- window.walletBrickController = await bricksBuilder.create(
-   'wallet',
-   'walletBrick_container',
-   settings
- );
-};
-renderWalletBrick (bricksBuilder);
-```
-
-O resultado de renderizar o Brick deve ser como na imagem abaixo:
-
-![wallet-brick-render](checkout-bricks/wallet-brick-render-pt.png)
+> Considere que quando um usuário opta por fazer o pagamento utilizando a Conta Mercado Pago, este será redirecionado para a página do Mercado Pago para concluir o pagamento. Por isso, é necessário configurar as `back_urls` se você quiser retornar ao seu site ao final do pagamento. Para mais informações, visite a seção [Redirecione o comprador para o seu site.](/developers/pt/docs/checkout-bricks/payment-brick/additional-customization/preferences#bookmark_redirecione_o_comprador_para_o_seu_site).
