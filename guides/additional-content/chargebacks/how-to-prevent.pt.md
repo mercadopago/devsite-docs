@@ -19,7 +19,11 @@ Não é possível evitar todas as contestações, porém, você pode diminuir a 
    
 4. [Envie o comprovante de compra](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/16170) para o seu cliente via email ou mensagem de texto.
    
-5. Configure e ative as [notificações IPN](/developers/panel/notifications/ipn) no painel para receber alertas de comportamentos irregulares, ativando a opção Alerta de Fraudes (`delivery_cancellation`)
+
+## Alerta de Fraudes
+Vamos avisar via notificações IPN toda vez que percebermos atividades irregulares ou houver um alerta de fraude em sua conta. Nessa situação, você deve [cancelar a compra](/docs/checkout-api/payment-management/cancellations-and-refunds) e devolver o dinheiro ao comprador para evitar a contestação.
+
+Configure e ative as [notificações IPN](/developers/panel/notifications/ipn) no painel para receber alertas de comportamentos irregulares, ativando a opção Alerta de Fraudes (`delivery_cancellation`)
 
 > NOTE
 >
