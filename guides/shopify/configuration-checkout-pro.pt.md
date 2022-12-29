@@ -11,7 +11,7 @@ Recomendamos personalizar as informações do checkout da loja para garantir uma
 
 ![configurar empresa portugues](/images/shopify/configurar-empresa-PT.gif)
 
-## Configure o idioma da loja
+## Configurar o idioma da loja
 
 1. No painel administrativo da loja, clique em **Configurações**. Lá, clique em **Idiomas**.
 2. Na seção "Idiomas publicados", você pode escolher o idioma no qual deseja que a loja opere. Clique em **Alterar padrão**. 
@@ -19,7 +19,7 @@ Recomendamos personalizar as informações do checkout da loja para garantir uma
 
 ![configurar idioma pt](/images/shopify/cambiar-idioma-PT.png)
 
-## Ajuste os valores de identificação pessoal do comprador
+## Ajustar valores de identificação pessoal do comprador
 
 A loja Shopify exibirá os campos de solicitação de identificação pessoal do comprador com o termo "Company". Para alterar isso para a identificação solicitada pelo país em que a loja opera, siga estes passos:
 
