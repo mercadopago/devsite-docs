@@ -1,7 +1,15 @@
 # Receive payments through my website
 
-If you have a website, you can add a button to receive payments.
-Simply copy the automatically generated HTML code and paste the source code of your page.
+If you have a website, you can add a button to receive payments. To do so, simply copy the automatically generated HTML code and paste your page's source code as shown below.
+
+[[[
+```html
+
+<script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+data-preference-id="1273324264-f92cada3-65b7-4a53-a55b-af7cfb015eb6" data-source="button">
+</script>
+```
+]]]
 
 > WARNING
 > 
