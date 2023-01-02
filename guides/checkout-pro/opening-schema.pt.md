@@ -4,7 +4,7 @@ O esquema de abertura permite definir como o checkout será aberto para o usuár
 
 Contudo, é possível personalizar a abertura e definir o modelo **Redirect**, no qual o Checkout Pro é aberto em uma nova janela redirecionando o comprador à tela de pagamento. 
 
-Para definir o modelo de abertura **redirect**, insira o código HTML abaixo diretamente em seu projeto informando o `init_point` da preferência gerada anteriormente.
+Para definir o modelo de abertura **Redirect**, insira o código HTML abaixo diretamente em seu projeto informando o `init_point` da preferência gerada anteriormente.
 
 [[[
 ```html
@@ -24,19 +24,3 @@ Para definir o modelo de abertura **redirect**, insira o código HTML abaixo dir
 </html>
 ```
 ]]]
-
-> PREV_STEP_CARD_PT
->
-> Vencimento de boleto 
->
-> Veja como alterar a data de vencimento padrão para pagamentos com boleto.
->
-> [Vencimento de boleto](/developers/pt/docs/checkout-pro/checkout-customization/preferences/expiration-date)
-
-> NEXT_STEP_CARD_PT
->
-> Botão de pagamento 
->
-> Saiba como definir e personalizar a interface exibida para o usuário, incluindo o modo de entrada à tela de checkout.
->
-> [Botão de pagamento](/developers/pt/docs/checkout-pro/checkout-customization/user-interface/payment-button)
