@@ -6,22 +6,29 @@
 # ¿Qué es el reporte de Liberaciones?
 ------------
 
-
 El reporte de ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberaciones ------------ es un **informe descargable que te permite conocer cómo está compuesto tu dinero disponible en Mercado Pago.** Contiene el **detalle de todos los fondos involucrados en un período de fechas,** e incluye los casos de ----[mla]---- liquidación ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- liberación ------------ de dinero como de bloqueos y desbloqueos.
+
+----[mlb]----
+> WARNING
+>
+> Importante
+>
+> Los informes que generes a partir del 1 de enero de 2023 mostrarán los movimientos de tu dinero en orden cronológico, por eso podrás identificarlos más fácilmente y controlar mejor las finanzas de tu negocio. [Conoce cómo utilizarlo.](https://bit.ly/3QiCD2f)
+------------
 
 ----[mla]----
 > WARNING
 >
 > Importante
 >
-> Los reportes que generes a partir del 5 de octubre presentarán tus movimientos en orden cronológico para que puedas identificarlos más fácil y controlar mejor las finanzas de tu negocio. [Confira o novo formato do relatório](https://bit.ly/3JzFPEG)
+> En tus reportes de octubre y de los próximos meses verás los movimientos de tu dinero ordenados por fecha de creación para que puedas identificarlos más fácilmente. [Aprendé cómo leer tu reporte.](https://bit.ly/3JzFPEG)
 ------------
 ----[mlm]----
 > WARNING
 >
 > Importante
 >
-> Los reportes que generes a partir del 12 de octubre presentarán tus movimientos en orden cronológico para que puedas identificarlos más facilmente y controlar mejor las finanzas de tu negocio. [Confira o novo formato do relatório](https://bit.ly/3QiCD2f)
+> En tus reportes de octubre y de los próximos meses verás los movimientos de tu dinero ordenados por fecha de creación para que puedas identificarlos más fácilmente. [Aprende cómo leer tu reporte](https://bit.ly/3QiCD2f).
 ------------
 
 ## ¿Cómo descargo el reporte?
@@ -42,7 +49,6 @@ Los plazos de liquidación tienen que ver con los tiempos de los bancos o por lo
 
 > Para saber la fecha exacta en la que estará disponible el dinero de una operación, revisa el [detalle de tus cobros acreditados](https://www.mercadopago[FAKER][URL][DOMAIN]/activities/balance).
 
-
 ## Para qué usar el reporte
 
 ### Usa el reporte para conciliar
@@ -50,7 +56,6 @@ Los plazos de liquidación tienen que ver con los tiempos de los bancos o por lo
 **Este reporte se usa para conciliar** el dinero que existe en tu cuenta en un momento determinado e incluye las transacciones que componen a esos movimientos. 
 
 Genera el reporte de ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberaciones ------------ cada vez que necesites conciliar el detalle del dinero liberado entre dos fechas. Podrás saber cuándo se hizo cada transacción, en qué concepto y por qué monto, incluyendo los casos de bloqueo y desbloqueo. 
-
 
 ### Usa el reporte para conocer tu historial
 
@@ -72,22 +77,3 @@ Además, puedes usar el reporte para conocer el historial de dinero ----[mla]---
 >
 > Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/glossary) de ------------ ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu]---- Liberaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mla]---- para revisarlo cuando lo necesites o quieras consultar algún término técnico.
 ------------
-<hr/>
-
-### Próximos pasos
-
-> LEFT_BUTTON_RECOMMENDED_ES
->
-> Cómo usar el reporte
->
-> Conoce la composición del reporte y aprende a leerlo para hacer tu conciliación.
->
-> [Cómo usar el reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/how-to-use)
-
-> RIGHT_BUTTON_REQUIRED_ES
->
-> Genera tus reportes
->
-> Conoce las formas de generar un reporte y sigue los pasos para configurar tus preferencias.
->
-> [Genera tus reportes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/generate)

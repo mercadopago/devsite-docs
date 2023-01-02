@@ -17,7 +17,7 @@ The URL to be intercepted is the following: `https://www.mercadopago.com/point/i
 The parameters that you can include are:
 
 * `amount`: The amount that will be charged to the client (\*).
-* `description`: Description of the operation (Máx.: 20 caracters) (\*).
+* `description`: Description of the operation (Máx.: 19 caracters) (\*).
 * `external_reference`: The `external_reference` is a reference code that allows you to track the Mercado Pago `payment_id` in your system. 
 * `notification_url`: The URL where you will receive the notifications.
 * `payer_email`: Email of the payer.

@@ -12,7 +12,7 @@ Notifications are messages sent by the Mercado Pago server from events carried o
 * Creation of countercharges;
 * Finalization and cancellation of paid intent;
 * Error while processing payment intent.
-* [Fraud allerts](/developers/en/docs/additional-content/sales-processing/chargebacks)
+* [Fraud allerts](/developers/en/docs/additional-content/chargebacks/how-to-prevent#bookmark_fraud_alert)
 
 There are **two types** of notifications available for configuration which ,once configured, allow you to program your store's backend to, for example, update the status of orders when a payment is created, send an order confirmation email from store when an order is updated on Mercado Pago, update a customer's record when a subscription plan is linked, or any other actions arising from the events listed above.
 

@@ -10,22 +10,6 @@ This endpoint point returns all data from the previous endpoint, plus informatio
 >
 > Important
 >
-> You will also be able to consult the information of a store through its external ID, if it has one. For that, just send as request parameters the `user_id` related to the store, the `external_id` and the `access_token`. Check more information in the API [Get store by external ID](/developers/pt/reference/mp_delivery/_proximity-integration_users_SellerID_stores_external_id_ExternalID/get).
-> </br>
-> To learn how to create an external ID for your store and use it as an identifier for the order management software system, access [Change external store ID](/developers/en/docs/mp-delivery/store-management/change-store-external-id).
-
-> PREV_STEP_CARD_EN
->
-> Store management
->
-> Learn how to consult and manage store information.
->
-> [Store management](/developers/en/docs/mp-delivery/store-management)
-
-> NEXT_STEP_CARD_EN
->
-> Change store status
->
-> Learn how to change the store's working status of the store.
->
-> [Change store status](/developers/en/docs/mp-delivery/store-management/change-store-status)
+> You will also be able to consult the information of a store through its external ID, if it has one. For that, just send as request parameters the `user_id` related to the store, the `external_id` and the `access_token`. Check more information in the API [Get store by external ID.](/developers/pt/reference/mp_delivery/_proximity-integration_users_SellerID_stores_external_id_ExternalID/get).<br/></br>
+> <br/></br>
+> To learn how to create an external ID for your store and use it as an identifier for the order management software system, access [Change external store ID.](/developers/en/docs/mp-delivery/store-management/change-store-external-id).

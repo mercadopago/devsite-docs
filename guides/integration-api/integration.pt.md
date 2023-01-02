@@ -9,7 +9,7 @@ Siga estas etapas para começar a integrar a API de integrações aos seus ponto
 ----[mla, mlb]----
 Para iniciar a integração, é necessário ter uma conta no Mercado Pago ou no Mercado Livre.
 Você pode [Entrar](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/qr-code/pre-requisites)
-em uma conta existente ou [Criar uma nova conta](https://www.mercadopago[FAKER][URL][DOMAIN]).
+em uma conta existente ou [Criar uma nova conta](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
 
 ------------
 
@@ -49,15 +49,17 @@ E pronto!
 >
 > Nota
 >
-> Se você vai realizar operações em nome de outros vendedores, pode gerenciar a ligação segura integrando [OAuth](/developers/pt/docs/mp-point/additional-content/security/oauth/introduction).
+> Se você vai realizar operações em nome de outros vendedores, pode gerenciar a ligação segura integrando [OAuth.](/developers/pt/docs/seguridad/additional-content/security/oauth/introduction)
 
 ### Acesse as credenciais da sua aplicação
 
 Depois de criar uma aplicação, você poderá acessar as [suas credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/credentials). Com elas você pode conectar uma integração à sua conta e configurá-la do seu jeito.
 
-### Gerar usuários de teste
+### Gere usuários de teste
 
-Você pode testar suas integrações em um ambiente controlado com usuários de teste. Você pode criá-los usando o seguinte comando:
+[TXTSNIPPET][/guides/snippets/test-integration/create-test-users]
+
+Além disso, você também poderá criar usuários de teste utilizando o seguinte comando:
 
 ```curl
 curl -X POST \
@@ -66,8 +68,6 @@ curl -X POST \
 "https://api.mercadopago.com/users/test" \
 -d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]","description" : "a description"}'
 ```
-
-Você pode gerar até 10 contas de usuário de teste simultaneamente. Lembre-se de que os usuários de teste expiram após 60 dias sem atividade no Mercado Pago.
 
 ## 2. Associe o seu dispositivo Point à sua conta do Mercado Pago
 
@@ -82,13 +82,11 @@ Pronto! Seu dispositivo Point será vinculado à sua conta.
 
 ### Configure sua loja e sua caixa
 
-Depois de vincular seu dispositivo Point à sua conta do Mercado Pago, você deve preencher seus dados comerciais e configurar sua caixa registradora no [site do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]). Para fazer isso, você deve inserir as informações em **Sua loja > Lojas e caixas**.
+Depois de vincular seu dispositivo Point à sua conta do Mercado Pago, você deve preencher seus dados comerciais e configurar sua caixa registradora no [site do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/stores). Para fazer isso, você deve inserir as informações em **Sua loja > Lojas e caixas**.
 
 ### Ative o modo integrado no seu dispositivo Point
 
-Para integrar seu dispositivo Point com a nossa API, é necessário ativar o modo de operação ponto de venda (PDV). Para fazer isso, execute o seguinte comando:
-
-
+Para integrar seu dispositivo Point com a nossa API, é necessário ativar o modo de operação ponto de venda (PDV). Para fazer isso, consulte os dispositivos através de nosssa API [Obter dispositivos](/developers/pt/reference/integrations_api/_point_integration-api_devices/get) e execute o seguinte comando:
 
 ``` bash
 curl --location --request PATCH 'https://api.mercadopago.com/point/integration-api/devices/:deviceId' \
@@ -117,3 +115,9 @@ Você receberá uma resposta como esta:
 ```
 
 > Caso necessite usar o dispositivo em modo não integrado, deve-se configurar o campo `operating_mode` com o valor `STANDALONE`.
+
+> NOTE
+> 
+> Importante
+> 
+> É necessário reiniciar o dispositivo para que a alteração tenha efeito.

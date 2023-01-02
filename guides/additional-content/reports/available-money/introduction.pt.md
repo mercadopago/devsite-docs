@@ -1,23 +1,39 @@
-
 # O que é o relatório de Dinheiro disponível?
 
-
 O relatório de Dinheiro disponível é um **relatório para ser baixado que te permite saber a liquidez do seu negócio**, ou seja, quanto você tem para usar. Ele contém **detalhes dos pagamentos liberados** que estão prontos para serem retirados para uma conta bancária, render no Mercado Pago ou para usar saldo no cartão pré-pago Cartão Mercado Pago.
+
 ----[mpe, mlu, mlc, mco]----
 > WARNING
 >
 > A partir do dia 1º de março de 2022, o relatório Dinheiro disponível será desabilitado
 >
-> Use o [relatório de ----[mla]----Liquidações------------ ----[mlm, mlb, mlc, mco, mlu, mpe]----Liberações------------](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/released-money/introduction) para fazer a reconciliação das transações que afetem o saldo disponível na sua conta, incluindo seus saques bancários.
+> Use o [relatório de Liberações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/released-money/introduction) para fazer a reconciliação das transações que afetem o saldo disponível na sua conta, incluindo seus saques bancários.
 ------------
 
-----[mlm, mla]----
+----[mla]----
 > WARNING
 >
 > Importante
 >
-> A partir de 5 de dezembro, não será mais possível criar novos relatórios de "Dinheiro retirado". Para continuar controlando as transferências, saques e movimentações do seu saldo disponível, por favor,[use o relatório "Liberações".](https://bit.ly/3QiCD2f)
+> A partir de 5 de dezembro, não será mais possível criar novos relatórios de Dinheiro retirado. Para continuar controlando as transferências, saques e movimentações do seu saldo disponível, por favor,[use o relatório Liberações.](https://bit.ly/3B7Q5Qy)
 ------------
+
+----[mlm]----
+> WARNING
+>
+> Importante
+>
+> A partir de 12 de dezembro, não será mais possível criar novos relatórios de **Dinheiro disponível**. Para continuar controlando as transferências, saques e movimentações do seu saldo disponível, por favor,[use o relatório Liberações.](https://bit.ly/3RH0KJ4)
+------------
+
+----[mlb]----
+> WARNING
+>
+> Importante
+>
+> A partir de 1º de março de 2023, não será mais possível criar novos relatórios de **Dinheiro disponível**. Para continuar controlando as transferências, saques e movimentações do seu saldo disponível, por favor, [use o relatório "Liberações".](https://bit.ly/3UivgKt)
+------------
+
 ## Como baixar o relatório?
 
 Lembre-se de que a geração deste relatório leva alguns minutos, dependendo de quantas informações você queira incluir nele. Nem sempre ele estará pronto de imediato e, enquanto estiver sendo gerado, você verá na tela o status Em preparação. 
@@ -33,9 +49,7 @@ Dependendo das [tarifas e prazos](https://www.mercadopago.com.abrr/settings/rele
 
 Os prazos de liberação têm relação com os tempos dos bancos ou com os fluxos de intermediação quando as transações são feitas no Mercado Livre. Outras transações que podem afetar a liberação do seu dinheiro são as Contestações e Reclamações que você possa receber na venda. 
 
-
 > Para saber a data exata que o dinheiro de uma transação vai estar disponível, revise os [detalhes dos seus pagamentos creditados](https://www.mercadopago.com.br/activities/balance).
-
 
 ## Para que usar o relatório? 
 
@@ -58,24 +72,4 @@ Além disso, você pode usar o relatório para saber o histórico do saldo dispo
 >
 > Nota
 >
-> Tenha em mãos o [Glossário do relatório](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/available-money/glossary) de dinheiro disponível para revisá-lo quando precisar ou caso queira consultar algum termo técnico
-
-<hr/>
-
-### Próximos passos
-
-> LEFT_BUTTON_RECOMMENDED_PT
->
-> Como usar o relatório
->
-> Saiba como o relatório é composto e aprenda a analisá-lo para fazer sua conciliação.
->
-> [Como usar o relatório](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/available-money/how-to-use)
-
-> RIGHT_BUTTON_REQUIRED_PT
->
-> Gere seus relatórios
->
-> Saiba as formas de gerar um relatório e siga as etapas para configurar suas preferências.
->
-> [Gere seus relatórios](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/available-money/generate)
+> Tenha em mãos o [Glossário do relatório](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/available-money/glossary) de dinheiro disponível para revisá-lo quando precisar ou caso queira consultar algum termo técnico.

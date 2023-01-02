@@ -2,11 +2,20 @@
 
 O Card Payment Brick oferece um formulário de pagamento com um layout otimizado e temas diferentes, trazendo todos os campos necessários para se efetuar um pagamento através de cartão de crédito e/ou débito, e inclui os mecanismos necessários para receber automaticamente os dados necessários para criar o pagamento no back-end.
 
-Este brick, além de conter os campos de coleta dos dados pessoais do titular do cartão (nome do titular e documento), conta também com campos de coleta do número do cartão, data de vencimento e código de segurança (CVV) que já estão em conformidade com padrões de segurança [PCI](/developers/pt/guides/additional-content/security/pci), eliminando a necessidade de tratamento desses dados.
+Este Brick, além de conter os campos de coleta dos dados pessoais do titular do cartão (nome do titular e documento), conta também com campos de coleta do número do cartão, data de vencimento e código de segurança (CVV) que já estão em conformidade com padrões de segurança [PCI](/developers/pt/guides/additional-content/security/pci), eliminando a necessidade de tratamento desses dados.
 
-Além de coletar os campos necessários para efetuar o pagamento, este componente ainda auxilia o usuário a finalizar o preenchimento da tela com alertas de campos incompletos e possíveis erros no preenchimento. Veja a seguir as principais caracteristicas deste brick. 
+Além de coletar os campos necessários para efetuar o pagamento, este componente ainda auxilia o usuário a finalizar o preenchimento da tela com alertas de campos incompletos e possíveis erros no preenchimento. Veja a seguir as principais caracteristicas deste Brick. 
 
-![cardform](checkout-bricks/card-form-pt.png)
+---
+live_demo_code_action:
+ - title: Experimente nosso Brick
+ - description: Construa e confira a experiência visual do Card Payment Brick em tempo real. Quando estiver tudo pronto, baixe ou copie o código gerado.
+ - link: /developers/pt/live-demo/card-payment-brick
+ - image:https://http2.mlstatic.com/frontend-assets/dx-devsite/images/card-payment-brick.png
+ - linkName: Demo
+ - buttonDescription: Construir seu Card Payment Brick
+---
+<br>
 
 ## Layout 
 
@@ -16,13 +25,13 @@ O layout do Card Payment Brick foi construído com base nas melhores práticas d
 >
 > Atenção
 >
-> Os bricks foram criados para atender não somente necessidades técnicas de implementação e segurança, mas também para prover a melhor experiência ao comprador. Customizar um brick pode mudar drasticamente a experiência do comprador. Nossa recomendação é que você sempre faça uso do brick com a menor quantidade possível de customizações adicionais para garantir sempre a melhor experiência.
+> Os Bricks foram criados para atender não somente necessidades técnicas de implementação e segurança, mas também para prover a melhor experiência ao comprador. Customizar um Brick pode mudar drasticamente a experiência do comprador. Nossa recomendação é que você sempre faça uso do Brick com a menor quantidade possível de customizações adicionais para garantir sempre a melhor experiência.
 
 | Elemento | Características | Observações |
 |---|---|---|
 |Título e bandeiras aceitas <br><br> Propriedade: formTitle | **Valor (título):** Cartão de crédito ou débito <br> **Label** N/A <br> **Placeholder:** N/A <br> **Tipo:** text/imagem <br> **Formato:** N/A <br> **Máx caracteres**: N/A | Opcional <br> Customizável  </br> <br> *As bandeiras são exibidas em conjunto com o título. A única customização disponível para elas é ocultá-las junto ao título do formulário, deixando de exibir ambas informações. |
 | Campo para inserção do número do cartão <br><br> Propriedade: cardNumber | **Valor:** N/A <br> *Label*: Número do cartão <br> **Placeholder:** 1234 1234 1234 1234 <br> **Tipo:** number <br> **Formato:** N/A <br> **Máx. caracteres:** a depender do emissor, podendo variar entre 15 e 16.| Obrigatório <br> Customizável (label, placeholder) |
-| Campo para inserção da data de vencimento do cartão <br><br> Propriedade: expirationDate | **Valor:** N/A <br> **Label:** Data de vencimento <br> **Placeholder:** MM/AA <br> **Tipo:** date <br> **Formato:** MM/AA <br> **Máx. caracteres:** 5 | Obrigatório <br> <br> Customizável (label, placeholder) |
+| Campo para inserção da data de vencimento do cartão <br><br> Propriedade: expirationDate | **Valor:** N/A <br> **Label:** Data de vencimento <br> **Placeholder:** MM/AA <br> **Tipo:** date <br> **Formato:** MM/AA <br> **Máx. caracteres:** 5 | Obrigatório <br> Customizável (label, placeholder) |
 | Campo para inserção do código de segurança <br><br> Propriedade: securityCode | **Valor:** N/A <br> **Label:** Nome do titular como aparece no cartão <br> **Placeholder:** João Silva <br> **Tipo:** string <br> **Formato:** N/A <br> **Máx. caracteres:** 100 | Obrigatório <br> Customizável (label, placeholder e máximo de caracteres errados) | 
 | Campo para inserção do nome do titular do cartão <br><br> Propriedade: cardholderName | **Valor:** N/A <br> **Label:** Documento <br> **Placeholder:** N/A <br> **Tipo:** select <br> **Formato:** N/A <br> **Máx. caracteres:** N/A | Obrigatório <br><br> Customizável (label, placeholder, tipo, formato e máximo de caracteres errados) |
 | Campo para seleção do documento do titular do cartão <br><br> Propriedade: cardholderIdentificationType | **Valor:** ----[mlb]----CPF, CNPJ------------ ----[mla]----DNI, CI, LC, LE, Otro------------ ----[mco]----CC, CE, NIT, Otro------------ ----[mlc]----RUT, Otro

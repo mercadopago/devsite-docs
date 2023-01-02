@@ -3,7 +3,7 @@
 Con tu nombre de usuario y contraseña de teste, sigue los siguientes pasos:
 
 1. Ve a su sitio web y busca el producto/servicio deseado.
-2. Realiza el flujo de compra y, al momento del pago, ingresa los datos de una tarjeta de crédito de prueba. Recomendamos utilizar nuestras [tarjetas de crédito nacionales](/developers/es/guides/additional-content/testing/test-cards) en esta etapa.
+2. Realiza el flujo de compra y, al momento del pago, ingresa los datos de una tarjeta de crédito de prueba. Recomendamos utilizar nuestras [tarjetas de crédito nacionales](/developers/es/docs/testing/test-cards) en esta etapa.
 3. Introduce tus datos de usuario de prueba.
 4. Confirma la compra.
 

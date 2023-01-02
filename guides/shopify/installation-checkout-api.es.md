@@ -13,24 +13,10 @@ Para instalar Checkout Transparente en una tienda Shopify, sigue los pasos a con
 
 > En caso de renovar tus credenciales, recuerda reemplazar tanto las de producción como las de pruba en tu integración.
 
+![installation choapi](/images/shopify/configurar-chotransparente-pt.gif)
+
 > NOTE
 >
 > Nota
 >
 > Una vez instalado, el Checkout Transparente puede demorar hasta 10 minutos en aparecer vinculado en la tienda de Shopify debido al caché. Si necesitas asistencia instalando Checkout Transparente, puedes contactarte con [Soporte](https://www.mercadopago.com/developers/es/support).
-
-> PREV_STEP_CARD_ES
->
-> Requisitos previos
->
-> Qué necesitas para integrar Mercado pago a tu tienda de Shopify.
->
-> [Requisitos previos](/developers/es/docs/shopify/requirements-checkout-transparente)
-
-> NEXT_STEP_CARD_ES
->
-> Configuración
->
-> Aprende a configurar Checkout Transparente en tu tienda Shopify.
->
-> [Configuración](/developers/es/docs/shopify/configuration-checkout-transparente)

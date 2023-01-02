@@ -4,10 +4,3 @@ With Mercado Pago’s Checkout Pro, **buyers will be redirected from the store t
 
 **Mercado Pago’s Checkout Pro is exclusively installed in a production environment**, allowing to process actual payments. With this method, you will not need to set a production mode up to start receiving payments in the store.
 
-> NEXT_STEP_CARD_EN
->
-> Previous requirements
->
-> What you need to integrate Mercado Pago with your Shopify store.
->
-> [Previous requirements](/developers/en/docs/shopify/requirements)

@@ -81,20 +81,61 @@ bullet_section_with_media:
 
 --- mini_landing_separator ---
 
->>>> Medios de pago aceptados <<<<
+>>>> Tipos de pago aceptados <<<<
+
 ----[mlb]----
 
 ---
-available_payments: credit, debit, mercadopago, pix, mercadocredito
+available_payments: credit, debit, mercadopago, boleto, pix, pec, moneda, cartera
 
 ---
 ------------
 
-----[mla, mlm, mlu, mco, mlc, mpe]----
+----[mla]---- 
 
 ---
-available_payments: credit, debit, mercadopago, mercadocredito
+available_payments: credit, debit, mercadopago, efectivo, atm
+
+----
+------------
+
+----[mlm]---- 
 
 ---
+available_payments: credit, debit, mercadopago, efectivo, atm, moneda
+
+----
+------------
+
+----[mlu]---- 
+
+---
+available_payments: credit, efectivo
+
+----
+------------
+
+----[mco]---- 
+
+---
+available_payments: mercadopago, pse, credit, debit, cartera, efectivo
+
+----
+------------
+
+----[mlc]---- 
+
+---
+available_payments: mercadopago, credit, debit
+
+----
+------------
+
+----[mpe]---- 
+
+---
+available_payments: mercadopago, atm, credit, debit
+
+----
 ------------
 > Para obtener detalles sobre los medios de pago aceptados en cada país, consulte la lista completa con [disponibilidad de medios de pago.](/developers/es/docs/sales-processing/payment-methods)

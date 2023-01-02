@@ -2,7 +2,7 @@
 >
 > h1
 >
-> Enviar pagamento ao Mercado Pago
+> Envie pagamento ao Mercado Pago
 
 Para continuar o processo de pagamento ao Mercado Pago, é necessário que seu backend possa receber a informação do formulário com o token gerado e os dados completos. O seu backend deverá disponibilizar um endpoint `/process_payment` para receber ali todos os dados depois de realizar a ação submit.
 
@@ -22,36 +22,30 @@ Tenha em conta que para que esse passo funcione é necessário que configure sua
 Encontre o estado do pagamento no campo _status_.
 ===
 <?php
-    require_once 'vendor/autoload.php';
-
-    MercadoPago\SDK::setAccessToken("YOUR_ACCESS_TOKEN");
-
-    $payment = new MercadoPago\Payment();
-    $payment->transaction_amount = (float)$_POST['transactionAmount'];
-    $payment->token = $_POST['token'];
-    $payment->description = $_POST['description'];
-    $payment->installments = (int)$_POST['installments'];
-    $payment->payment_method_id = $_POST['paymentMethodId'];
-    $payment->issuer_id = (int)$_POST['issuer'];
-
-    $payer = new MercadoPago\Payer();
-    $payer->email = $_POST['cardholderEmail'];
-    $payer->identification = array(----[mla, mlb, mlu, mlc, mpe, mco]----
-        "type" => $_POST['identificationType'],------------
-        "number" => $_POST['identificationNumber']
-    );
-    $payer->first_name = $_POST['cardholderName'];
-    $payment->payer = $payer;
-
-    $payment->save();
-
-    $response = array(
-        'status' => $payment->status,
-        'status_detail' => $payment->status_detail,
-        'id' => $payment->id
-    );
-    echo json_encode($response);
-
+  require_once 'vendor/autoload.php';
+  MercadoPago\SDK::setAccessToken("YOUR_ACCESS_TOKEN");
+  $contents = json_decode(file_get_contents('php://input'), true);
+ 
+  $payment = new MercadoPago\Payment();
+  $payment->transaction_amount = $contents['transaction_amount'];
+  $payment->token = $contents['token'];
+  $payment->installments = $contents['installments'];
+  $payment->payment_method_id = $contents['payment_method_id'];
+  $payment->issuer_id = $contents['issuer_id'];
+  $payer = new MercadoPago\Payer();
+  $payer->email = $contents['payer']['email'];
+  $payer->identification = array(
+     "type" => $contents['payer']['identification']['type'],
+     "number" => $contents['payer']['identification']['number']
+  );
+  $payment->payer = $payer;
+  $payment->save();
+  $response = array(
+     'status' => $payment->status,
+     'status_detail' => $payment->status_detail,
+     'id' => $payment->id
+  );
+  echo json_encode($response);   
 ?>
 ```
 ```node
@@ -82,13 +76,11 @@ PaymentCreateRequest paymentCreateRequest =
    PaymentCreateRequest.builder()
        .transactionAmount(request.getTransactionAmount())
        .token(request.getToken())
-       .description(request.getDescription())
        .installments(request.getInstallments())
        .paymentMethodId(request.getPaymentMethodId())
        .payer(
            PaymentPayerRequest.builder()
                .email(request.getPayer().getEmail())
-               .firstName(request.getPayer().getFirstName())
                .identification(
                    IdentificationRequest.builder()
                        .type(request.getPayer().getIdentification().getType())
@@ -110,7 +102,6 @@ sdk = Mercadopago::SDK.new('YOUR_ACCESS_TOKEN')
 payment_data = {
   transaction_amount: params[:transactionAmount].to_f,
   token: params[:token],
-  description: params[:description],
   installments: params[:installments].to_i,
   payment_method_id: params[:paymentMethodId],
   payer: {
@@ -118,8 +109,7 @@ payment_data = {
     identification: {----[mla, mlb, mlu, mlc, mpe, mco]----
       type: params[:identificationType],------------
       number: params[:identificationNumber]
-    },
-    first_name: params[:cardholderName]
+    }
   }
 }
 
@@ -143,20 +133,18 @@ MercadoPagoConfig.AccessToken = "YOUR_ACCESS_TOKEN";
 
 var paymentRequest = new PaymentCreateRequest
 {
-    TransactionAmount = decimal.Parse(Request["transactionAmount"]),
+    TransactionAmount = decimal.Parse(Request["transaction_amount"]),
     Token = Request["token"],
-    Description = Request["description"],
     Installments = int.Parse(Request["installments"]),
-    PaymentMethodId = Request["paymentMethodId"],
+    PaymentMethodId = Request["payment_method_id"],
     Payer = new PaymentPayerRequest
     {
-        Email = Request["cardholderEmail"],
+        Email = Request["payer"]["email"],
         Identification = new IdentificationRequest
         {----[mla, mlb, mlu, mlc, mpe, mco]----
-            Type = Request["identificationType"],------------
-            Number = Request["identificationNumber"],
+            Type = Request["payer"]["identification"]["type"],------------
+            Number = Request["payer"]["identification"]["number"],
         },
-        FirstName = Request["cardholderName"]
     },
 };
 
@@ -173,26 +161,29 @@ Encontre o estado do pagamento no campo _status_.
 import mercadopago
 sdk = mercadopago.SDK("ACCESS_TOKEN")
 
+request_values = request.get_json()
+    
 payment_data = {
-    "transaction_amount": float(request.POST.get("transaction_amount")),
-    "token": request.POST.get("token"),
-    "description": request.POST.get("description"),
-    "installments": int(request.POST.get("installments")),
-    "payment_method_id": request.POST.get("payment_method_id"),
+    "transaction_amount": float(request_values["transaction_amount"]),
+    "token": request_values["token"],
+    "installments": int(request_values["installments"]),
+    "payment_method_id": request_values["payment_method_id"],
+    "issuer_id": request_values["issuer_id"],
     "payer": {
-        "email": request.POST.get("cardholderEmail"),
-        "identification": {----[mla, mlb, mlu, mlc, mpe, mco]----
-            "type": request.POST.get("identificationType"), ------------
-            "number": request.POST.get("identificationNumber")
+        "email": request_values["payer"]["email"],
+        "identification": {
+            "type": request_values["payer"]["identification"]["type"], 
+            "number": request_values["payer"]["identification"]["number"]
         }
-        "first_name": request.POST.get("cardholderName")
     }
 }
 
 payment_response = sdk.payment().create(payment_data)
 payment = payment_response["response"]
 
-print(payment)
+print("status =>", payment["status"])
+print("status_detail =>", payment["status_detail"])
+print("id =>", payment["id"])
 ```
 ```curl
 ===
@@ -207,7 +198,6 @@ curl -X POST \
     -d '{
           "transaction_amount": 100,
           "token": "ff8080814c11e237014c1ff593b57b4d",
-          "description": "Blue shirt",
           "installments": 1,
           "payment_method_id": "visa",
           "issuer_id": 310,

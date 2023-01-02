@@ -15,12 +15,3 @@ Las pruebas de compras ayudan a garantizar que los pagos se procesan correctamen
 > Importante
 >
 > Esta información de pago aprobado no aparecerá en el historial de la cuenta de Mercado Pago porque solo contiene gastos reales (realizados en producción).
-
-
-> PREV_STEP_CARD_ES
->
-> Configuración
->
-> Aprende a configurar Checkout Transparente en tu tienda Shopify.
->
-> [Configuración](/developers/es/docs/shopify/configuration-checkout-transparente)

@@ -30,6 +30,18 @@ The Point Integrations API allows you to connect your points of sale (POS) to th
 
 ------------
 
+----[mlm]----
+> INFO
+>
+> This integration supports the following devices:
+>
+> - Point Smart
+>
+> You can purchase your Point device from our [official store](https://www.mercadopago.com.br/point)
+
+------------
+
+
 
 ### Learn about its advantages
 

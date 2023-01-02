@@ -1,6 +1,6 @@
 ---
 content_section_with_media: 
- - title: Mercado Pago Delivery
+ - title: Introduction
  - message: Mercado Pago Delivery is an on-demand meal delivery solution where the customer accesses a list of registered restaurants, selects their order, and pays directly from the Mercado Pago application.
  - media_image: /mpdelivery/mp-delivery-enlanding.png
 ---
@@ -37,9 +37,10 @@ bullet_section_with_media:
 ---
 
 --- mini_landing_separator ---
->>>> Accepted payment methods <<<<
+>>>> Accepted payment types <<<<
 ---
-available_payments: credit, debit, mercadopago
+available_payments: credit, debit, mercadopago, efectivo, atm
 
 ---
+
 > For details of accepted payment methods in each country, check the full list with [payment methods availability.](/developers/en/docs/sales-processing/payment-methods)

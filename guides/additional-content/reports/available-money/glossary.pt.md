@@ -1,11 +1,20 @@
 # Glossário
 
+----[mla]----
 > WARNING
 >
-> A partir do dia 1º de março de 2022, o relatório Dinheiro disponível será desabilitado
+> Importante
 >
-> Você pode usar o [relatório de ----[mla]----Liquidações------------ ----[mlm, mlb, mlc, mco, mlu, mpe]----Liberações------------](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/released-money/introduction) para fazer a reconciliação das transações que afetem o saldo disponível na sua conta, incluindo seus saques bancários.
+> A partir de 5 de dezembro, não será mais possível criar novos relatórios de Dinheiro retirado. Para continuar controlando as transferências, saques e movimentações do seu saldo disponível, por favor,[use o relatório Liberações.](https://bit.ly/3B7Q5Qy)
+------------
 
+----[mlm]----
+> WARNING
+>
+> Importante
+>
+> A partir de 12 de dezembro, não será mais possível criar novos relatórios de Dinheiro retirado. Para continuar controlando as transferências, saques e movimentações do seu saldo disponível, por favor,[use o relatório Liberações.](https://bit.ly/3RH0KJ4)
+------------
 
 Sabemos que alguns termos são técnicos e você pode não estar familiarizado com todos eles. Use este glossário para não se perder!
 
@@ -27,7 +36,7 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 | TAXES_AMOUNT | ----[mla]---- Impostos cobrados por retenção de Receita Bruta na fonte, IVA, Lucros; e impostos sobre Créditos e Débitos, entre outros.[Saiba mais sobre retenções e impostos.](https://vendedores.mercadolibre.com.ar/nota/retenciones-y-percepciones-sobre-tus-ventas-lo-que-debes-saber/) ------------  ----[mlm, mlc, mlu, mlb, mco, mpe]----Impostos recebidos por retenção de receita bruta.------------ |
 | COUPON_AMOUNT | Valor do cupom de desconto. Apenas o valor bruto (`GROSS_AMOUNT`) é descontado se fornecido pelo vendedor. |
 | INSTALLMENTS | Número de parcelas em que a transação foi realizada. |
-| PAYMENT METHOD | Meio de pagamento. |
+| PAYMENT METHOD | [Meio de pagamento](/developers/pt/docs/sales-processing/payment-methods) disponível por país. |
 | TAX_DETAIL | <br/> Descrição do imposto retido por operação no `TAXES_AMOUNT`. ----[mla]---- Você pode considerar os seguintes valores conforme a jurisdição: <br/>cordoba<br/>corrientes<br/>mendoza<br/>la_pampa<br/>santa_fe<br/>tucuman<br/>entre_rios<br/>catamarca<br/>neuquen<br/>santiago_del_estero<br/>rio_negro<br/>jujuy ------------ <br/><br/> |
 | TAX_AMOUNT_TELCO | É o valor do imposto às empresas de telecomunicação descontado do valor bruto. |
 | TRANSACTION_APPROVAL_DATE | Data de aprovação da operação. |
@@ -44,23 +53,3 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 | TAXES_DISAGGREGATED | Impostos desagregados no formato JSON. |
 | EFFECTIVE_COUPON_AMOUNT | Custo de oferecer desconto. |
 | POI_ID | ID da maquininha se o pagamento é feito em uma loja física. |
-
-<hr/>
-
-### Próximos passos
-
-> LEFT_BUTTON_RECOMMENDED_PT
->
-> Como usar o relatório
->
-> Saiba como o relatório é composto e aprenda a analisá-lo.
->
-> [Como usar o relatório](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/available-money/how-to-use)
-
-> RIGHT_BUTTON_REQUIRED_PT
->
-> Gere seus relatórios
->
-> Saiba as formas de gerar um relatório e siga as etapas para configurar suas preferências.
->
-> [Gere seus relatórios](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/available-money/generate)

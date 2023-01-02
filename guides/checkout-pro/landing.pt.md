@@ -38,24 +38,98 @@ bullet_section_with_media:
 
 --- mini_landing_separator ---
 
+<<<<<<< HEAD
+=======
+>>>> Diferenças entre Checkout Pro e Checkout Transparente <<<<
 
->>>> Meios de pagamento aceitos <<<<
+----[mla, mlb]----
+|   Benefícios                          | Checkout Pro | Checkout Transparente |
+| :--- | :---: | :---: |
+| Dificuldade de integração             | Baixa | Alta |
+| Design UI/UX                          | ✔ |   |
+| Conversão otimizada                   | ✔ |   |
+| Aprovação otimizada                   | ✔ |   |
+| Usuários convidados     			| ✔ | ✔ |
+| Usuários cadastrados     		| ✔ |   |
+| Prevenção de fraude                   | ✔ | ✔ |
+| Tela de finalização de pagamento      | ✔ |   |
+| Pagamento com dois cartões            | ✔ |   |
+
+------------
+
+----[mlm, mlu, mco, mlc, mpe]----
+|   Benefícios                          | Checkout Pro | Checkout Transparente |
+| :--- | :---: | :---: |
+| Dificuldade de integração             | Baixa | Alta |
+| Design UI/UX                          | ✔ |   |
+| Conversão otimizada                   | ✔ |   |
+| Aprovação otimizada                   | ✔ |   |
+| Usuários convidados      		| ✔ | ✔ |
+| Usuários cadastrados     		| ✔ |   |
+| Prevenção de fraude                   | ✔ | ✔ |
+| Tela de finalização de pagamento      | ✔ |   |
+
+------------
+
+--- mini_landing_separator ---
+>>>>>>> 8acda2279d74a955809ab691c731cb092c11b14f
+
+>>>> Tipos de pagamento aceitos <<<<
 
 ----[mlb]----
 
 ---
-available_payments: credit, debit, mercadopago, ticket, pix, pec
+available_payments: credit, debit, mercadopago, boleto, pix, pec, moneda, cartera
 
 ---
 ------------
 
-----[mla, mlm, mlu, mco, mlc, mpe]----
+----[mla]---- 
 
 ---
+available_payments: credit, debit, mercadopago, efectivo, atm
 
-available_payments: credit, debit, mercadopago, ticket
+----
+------------
+
+----[mlm]---- 
 
 ---
+available_payments: credit, debit, mercadopago, efectivo, atm, moneda
+
+----
+------------
+
+----[mlu]---- 
+
+---
+available_payments: credit, efectivo
+
+----
+------------
+
+----[mco]---- 
+
+---
+available_payments: mercadopago, pse, credit, debit, cartera, efectivo
+
+----
+------------
+
+----[mlc]---- 
+
+---
+available_payments: mercadopago, credit, debit
+
+----
+------------
+
+----[mpe]---- 
+
+---
+available_payments: mercadopago, atm, credit, debit
+
+----
 ------------
 
 > Para detalhes dos meios de pagamento aceitos em cada país, verifique a lista completa com a [disponibilidade de meios de pagamento.](/developers/pt/docs/sales-processing/payment-methods)

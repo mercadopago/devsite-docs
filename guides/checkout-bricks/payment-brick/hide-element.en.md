@@ -6,7 +6,7 @@
 
 | - | Brick |
 | --- | --- |
-| Customization moment  | When rendering the brick  |
+| Customization moment  | When rendering the Brick  |
 | Property  | customization.hideFormTitle  |
 | Type  | Boolean  |
 | Comments  | When **true**, hides the title line.  |
@@ -30,7 +30,7 @@ const settings = {
 
 | - | Brick |
 | --- | --- |
-| Customization moment  | When rendering the brick  |
+| Customization moment  | When rendering the Brick  |
 | Property  | customization.visual.hidePaymentButton  |
 | Type  | Boolean  |
 | Comments  | When true, the form submit button is not displayed and it becomes necessary to use the getFormData function to get the form data (see example below). |
@@ -78,3 +78,33 @@ function createPayment(){
         });
 };
 ```
+
+> CLIENT_SIDE
+>
+> h1
+>
+> Hide Mercado Pago Wallet panel
+
+| - | Brick |
+| --- | --- |
+| Customization moment  | When rendering the Brick  |
+| Property  | customization.visual.hideRedirectionPanel  |
+| Type  | Boolean  |
+| Comments  | When **true**, hides within the payment option with the Mercado Pago Wallet, the redirection panel to the Mercado Pago website. |
+
+```javascript
+const settings = {
+   ...,
+   customization: {
+       visual: {
+           hideRedirectionPanel: true
+       }
+   }
+}
+```
+
+> NOTE
+>
+> Important
+> 
+> In case you need to customize the Brick’s visual style beyond the available **themes and custom variables**, avoid using the CSS ids and classes values that are bundled with the Bricks as reference, because they are automatically generated during the application’s build process and their names change regularly. Instead, use HTML inheritance to access the elements you need to customize.

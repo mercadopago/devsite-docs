@@ -9,7 +9,7 @@ Follow these steps to start integrating the Integrations API to your Points of S
 ----[mla, mlb]----
 In order to start the integration, it is necessary to have a Mercado Pago or Mercado Libre account.
 You can [access](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/qr-code/pre-requisites)
-an existing account or [create a new one](https://www.mercadopago[FAKER][URL][DOMAIN]).
+an existing account or [create a new one](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
 
 ------------
 
@@ -49,7 +49,7 @@ Next, you will need to create an application to obtain the credentials. It's eas
 >
 > Note
 >
-> If you are going to operate on behalf of other sellers, you can manage the link safely by integrating [OAuth](/developers/en/docs/mp-point/additional-content/security/oauth/introduction).
+> If you are going to operate on behalf of other sellers, you can manage the link safely by integrating [OAuth.](/developers/en/docs/seguridad/additional-content/security/oauth/introduction)
 
 ### Access your application credentials
 
@@ -57,8 +57,9 @@ Once you have created an application, you will be able to access [your credentia
 
 ### Generate test users
 
-You can test your integrations in a controlled environment with test users. You can create them using the following command:
+[TXTSNIPPET][/guides/snippets/test-integration/create-test-users]
 
+In addition, you can also create test users using the following command:
 
 ```curl
 curl -X POST \
@@ -67,8 +68,6 @@ curl -X POST \
 "https://api.mercadopago.com/users/test" \
 -d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]","description" : "a description"}'
 ```
-
-You can generate up to 10 test user accounts simultaneously. Keep in mind that test users expire after 60 days without activity in Mercado Pago.
 
 ## 2. Associate your Point device with your Mercado Pago account
 
@@ -81,11 +80,11 @@ First, log into the Mercado Pago application. Then, click on the QR icon and sca
 
 ### Configure your store and your point of sale
 
-Once you have linked your Point device to your Mercado Pago account, you must complete your store data and configure your point of sale on the [Mercado Pago site](https://www.mercadopago[FAKER][URL][DOMAIN]). To do this, you must access **Your business> Stores and points of sale**.
+Once you have linked your Point device to your Mercado Pago account, you must complete your store data and configure your point of sale on the [Mercado Pago site](https://www.mercadopago[FAKER][URL][DOMAIN]/stores). To do this, you must access **Your business> Stores and points of sale**.
 
 ### Activate the integrated mode on your Point device
 
-To integrate your Point device with our API it is necessary to activate the point of sale (POS) operating mode. To achieve this, run the following command:
+To integrate your Point device with our API it is necessary to activate the point of sale (POS) operating mode. To achieve this, consult the devices through our [Get devices API](/developers/en/reference/integrations_api/_point_integration-api_devices/get) and run the following command:
 
 ``` bash
  curl --location --request PATCH 'https://api.mercadopago.com/point/integration-api/devices/:deviceId' \
@@ -114,3 +113,9 @@ You will receive a response like this:
 ```
 
 > In case you need to use the device in non-integrated mode, you must configure the `operating_mode` field with the value `STANDALONE`.
+
+>  NOTE
+> 
+> Important
+> 
+> It is necessary to restart the device for the change to take effect.

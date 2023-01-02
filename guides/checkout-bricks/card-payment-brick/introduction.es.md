@@ -2,11 +2,20 @@
 
 Card Payment Brick ofrece un formulario de pago con un diseño optimizado y diferentes temas, trayendo todos los campos necesarios para realizar un pago con tarjeta de crédito y/o débito, e incluye los mecanismos necesarios para recibir automáticamente los datos necesarios para crear el pago en el back-end.
 
-Este brick, además de contener los campos para recolectar los datos personales del titular de la tarjeta (nombre del titular y documento), también tiene campos para recolectar el número de tarjeta, la fecha de vencimiento y el código de seguridad (CVV), que ya cumplen con los estándares de seguridad [PCI](/developers/es/guides/additional-content/security/pci), eliminando la necesidad de procesar estos datos.
+Este Brick, además de contener los campos para recolectar los datos personales del titular de la tarjeta (nombre del titular y documento), también tiene campos para recolectar el número de tarjeta, la fecha de vencimiento y el código de seguridad (CVV), que ya cumplen con los estándares de seguridad [PCI](/developers/es/guides/additional-content/security/pci), eliminando la necesidad de procesar estos datos.
 
-Además de recopilar los campos necesarios para realizar el pago, este componente también ayuda al usuario a terminar de completar la pantalla con alertas de campos incompletos y posibles errores en el llenado. Ve a continuación las principales características de este brick.
+Además de recopilar los campos necesarios para realizar el pago, este componente también ayuda al usuario a terminar de completar la pantalla con alertas de campos incompletos y posibles errores en el llenado. Ve a continuación las principales características de este Brick.
 
-![cardform](checkout-bricks/card-form-es.png)
+---
+live_demo_code_action:
+ - title: Prueba nuestro Brick
+ - description: Construye y comprueba la experiencia visual de Card Payment Brick en tiempo real. Cuando esté todo listo, descarga o copia el código generado.
+ - link: /developers/es/live-demo/card-payment-brick
+ - image:https://http2.mlstatic.com/frontend-assets/dx-devsite/images/card-payment-brick.png
+ - linkName: Demo
+ - buttonDescription: Construir tu Card Payment Brick
+---
+<br>
 
 ## Layout 
 
@@ -16,7 +25,7 @@ El layout de Card Payment Brick se basa en las mejores prácticas de UX para que
 >
 > Atención
 >
-> Los bricks se crearon no solo para satisfacer las necesidades técnicas de implementación y seguridad, sino también para brindar la mejor experiencia al comprador. La personalización de un brick puede cambiar drásticamente la experiencia del comprador. Nuestra recomendación es que siempre hagas uso del brick con la menor personalización adicional posible para garantizar siempre la mejor experiencia.
+> Los Bricks se crearon no solo para satisfacer las necesidades técnicas de implementación y seguridad, sino también para brindar la mejor experiencia al comprador. La personalización de un Brick puede cambiar drásticamente la experiencia del comprador. Nuestra recomendación es que siempre hagas uso del Brick con la menor personalización adicional posible para garantizar siempre la mejor experiencia.
 
 | Elemento  | Características  | Observaciones  |
 | --- | --- | --- |

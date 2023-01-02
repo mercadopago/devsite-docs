@@ -13,18 +13,10 @@ To install Checkout Pro in a Shopify store, follow the steps below:
  
 > In case of renewing your credentials, remember to replace both the production and test credentials in your integration.
 
-> PREV_STEP_CARD_EN
->
-> Previous requirements
->
-> What you need to integrate Mercado Pago with your Shopify store.
->
-> [Previous requirements](/developers/en/docs/shopify/requirements)
+----[mlb]----
+![instalación PT](/images/shopify/install-chopro-PT.gif)
+------------
 
-> NEXT_STEP_CARD_EN
->
-> Configuration
->
-> Learn how to configure Checkout Pro in your Shopify store.
->
-> [Configuration](/developers/en/docs/shopify/configuration)
+----[mla, mlu, mlc, mco, mpe, mlm]----
+![instalación ES](/images/shopify/install-chopro-ES.gif)
+------------

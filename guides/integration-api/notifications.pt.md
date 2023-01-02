@@ -60,7 +60,6 @@ Depois de implementar as notificações e fazer os ajustes necessários, elas te
 ------------
 
 ----[mlm]----
-
 ```json
 {
  "amount": 100,
@@ -117,7 +116,6 @@ Depois de implementar as notificações e fazer os ajustes necessários, elas te
 ------------
 
 ----[mlm]----
-
 ```json
 {
  "amount": 100,
@@ -169,7 +167,6 @@ Depois de implementar as notificações e fazer os ajustes necessários, elas te
 ------------
 
 ----[mlm]----
-
 ```json
 {
  "amount": 100,
@@ -183,4 +180,69 @@ Depois de implementar as notificações e fazer os ajustes necessários, elas te
  }
 }
 ```
+------------
+
+## Notificações dos meus dispositivos point
+
+Você pode receber notificações sobre eventos gerados por cada um de seus dispositivos point, desta forma você conseguirá
+ter controle e monitoramento de seus dispositivos. Essas notificações podem ser causadas por:
+
+- Terminal reinicia.
+- Logouts.
+- Mudança no modo de operação de PDV para STANDALONE ou vice-versa.
+
+As notificações chegarão ao seu e-mail cadastrado no MercadoPago, caso não encontre
+verifique sua pasta de SPAM.
+
+
+> WARNING
+>
+> Importante
+>
+> Você receberá notificações de todos os dispositivos associados às suas credenciais de acesso (Acess Token).
+Exemplo de notificação.
+
+![Email notification](/images/point-api/email-notification-pt.png)
+
+## Ativar notificações
+
+Para ativar as notificações é necessário habilitar o canal de e-mail do integrador, você pode usar o
+seguinte comando:
+
+```curl
+curl --location --request PATCH 'https://api.mercadopago.com/point/integration-api/integrator' \
+--header 'Authorization: Bearer ${ACCESS_TOKEN}' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+	"event_channel_devices": [
+		"email"
+	]
+}'
+```
+
+## Verifique os canais ativados
+
+Uma vez configurado o canal de notificação, você pode verificar seu status executando o seguinte comando:
+
+```curl
+curl --location --request GET 'https://api.mercadopago.com/point/integration-api/integrator' \
+--header 'Authorization: Bearer ${ACCESS_TOKEN}'
+```
+
+------------
+
+Exemplo de resposta:
+
+```json
+{
+  "id": 1234567890,
+  "created_at": "0001-01-01T00:00:00Z",
+  "updated_at": "0002-02-02T00:00:00Z",
+  "notification_url_enabled": true,
+  "event_channel_devices": [
+    "email"
+  ]
+}
+```
+
 ------------

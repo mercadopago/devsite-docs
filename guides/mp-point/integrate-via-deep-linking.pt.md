@@ -17,7 +17,7 @@ A URL a ser interceptada é a seguinte: `https://www.mercadopago.com/mp-brasil/p
 Os parâmetros que se podem incluir são:
 
 * `amount`: O valor que será cobrado do cliente (\*).
-* `description`: Uma descrição da operação (Máx.: 20 caracteres) (\*).
+* `description`: Uma descrição da operação (Máx.: 19 caracteres) (\*).
 * `external_reference`: O código de referência do seu sistema, o mesmo permitirá conciliar seu pedido de compra com o pagamento.
 * `notification_url`: É a URL que receberá a notificação desse pagamento.
 * `payer_email`: É o email do pagador.
