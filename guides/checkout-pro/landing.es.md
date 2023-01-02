@@ -38,44 +38,8 @@ bullet_section_with_media:
 
 --- mini_landing_separator ---
 
-<<<<<<< HEAD
->>>> Medios de pago aceptados <<<<
-
-=======
->>>> Diferencias entre Checkout Pro y Checkout API <<<<
-----[mla, mlb]----
-|      Beneficios                       | Checkout Pro | Checkout API |
-| :--- | :---: | :---: |
-| Dificultad de integración             | Baja | Alta |
-| Design UI/UX                          | ✔ |   |
-| Conversión optimizada                   | ✔ |   |
-| Aprobación optimizada                   | ✔ |   |
-| Usuarios invitados     			| ✔ | ✔ |
-| Usuarios registrados     		| ✔ |   |
-| Prevención del fraude                   | ✔ | ✔ |
-| Pantalla finalización del pago      | ✔ |   |
-| Pago con dos tarjetas            | ✔ |   |
-
-------------
-
-----[mlm, mlu, mco, mlc, mpe]----
-|    Beneficios                         | Checkout Pro | Checkout API |
-| :--- | :---: | :---: |
-| Dificultad de integración             | Baja | Alta |
-| Design UI/UX                          | ✔ |   |
-| Conversión optimizada                  | ✔ |   |
-| Aprobación optimizada                   | ✔ |   |
-| Usuarios invitados      		| ✔ | ✔ |
-| Usuarios registrados     		| ✔ |   |
-| Prevención del fraude                   | ✔ | ✔ |
-| Pantalla finalización del pago      | ✔ |   |
-
-------------
-
---- mini_landing_separator ---
-
 >>>> Tipos de pago aceptados <<<<
->>>>>>> 8acda2279d74a955809ab691c731cb092c11b14f
+
 ----[mlb]----
 
 ---

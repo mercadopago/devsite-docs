@@ -38,41 +38,6 @@ bullet_section_with_media:
 
 --- mini_landing_separator ---
 
-<<<<<<< HEAD
-=======
->>>> Diferenças entre Checkout Pro e Checkout Transparente <<<<
-
-----[mla, mlb]----
-|   Benefícios                          | Checkout Pro | Checkout Transparente |
-| :--- | :---: | :---: |
-| Dificuldade de integração             | Baixa | Alta |
-| Design UI/UX                          | ✔ |   |
-| Conversão otimizada                   | ✔ |   |
-| Aprovação otimizada                   | ✔ |   |
-| Usuários convidados     			| ✔ | ✔ |
-| Usuários cadastrados     		| ✔ |   |
-| Prevenção de fraude                   | ✔ | ✔ |
-| Tela de finalização de pagamento      | ✔ |   |
-| Pagamento com dois cartões            | ✔ |   |
-
-------------
-
-----[mlm, mlu, mco, mlc, mpe]----
-|   Benefícios                          | Checkout Pro | Checkout Transparente |
-| :--- | :---: | :---: |
-| Dificuldade de integração             | Baixa | Alta |
-| Design UI/UX                          | ✔ |   |
-| Conversão otimizada                   | ✔ |   |
-| Aprovação otimizada                   | ✔ |   |
-| Usuários convidados      		| ✔ | ✔ |
-| Usuários cadastrados     		| ✔ |   |
-| Prevenção de fraude                   | ✔ | ✔ |
-| Tela de finalização de pagamento      | ✔ |   |
-
-------------
-
---- mini_landing_separator ---
->>>>>>> 8acda2279d74a955809ab691c731cb092c11b14f
 
 >>>> Tipos de pagamento aceitos <<<<
 

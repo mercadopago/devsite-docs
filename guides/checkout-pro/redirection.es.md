@@ -1,14 +1,14 @@
 # URLs de retorno
 
-Al final del proceso de pago, es posible redirigir al comprador a otro entorno del sitio a través del atributo `back_urls`. Este atributo le permite definir las URL a las que se debe redirigir el comprador al completar el pago.
+Al final del proceso de pago, es posible redirigir al comprador a otro entorno del sitio a través del atributo `back_urls`. Este atributo te permite definir las URL a las que se debe redirigir el comprador al completar el pago.
 
 > NOTE
 >
 > Importante
 >
-> Si desea que la redirección para los pagos aprobados sea automática, sin generar un botón de retorno, debe agregar también el atributo `auto_return` con el valor `aprobado`. Además, el atributo `auto_return` solo funciona para el modo **redirect** y **mobile** de Checkout Pro. Lo mismo no funciona en modo modal, ya que en este último el comprador permanece en el sitio durante todo el proceso de pago.
+> Si deseas que la redirección para los pagos aprobados sea automática, sin generar un botón de retorno, debes agregar también el atributo `auto_return` con el valor `aprobado`. Además, el atributo `auto_return` solo funciona para el modo **redirect** y **mobile** de Checkout Pro. Este atributo no funciona en modo modal, ya que en este último el comprador permanece en el sitio durante todo el proceso de pago.
 
-En las siguientes tablas encontrará el detalle de cada uno de los posibles parámetros de request y respuesta.
+En las siguientes tablas encontrarás el detalle de cada uno de los posibles parámetros de request y respuesta.
 
 | Atributo | 	Descripción |
 | ------------ 	| 	-------- |
@@ -25,9 +25,9 @@ A través de `back_urls`, se devolverán los siguientes parámetros:
 | `merchant_order_id` | ID (identificador) de la orden de pago generada en Mercado Pago. |
 
 
-Para definir las `back_urls`, use uno de las SDK a continuación que informa las URL a las que se debe dirigir al comprador al finalizar el pago.
+Para definir las `back_urls`, usa uno de las SDK a continuación que informa las URL a las que se debe dirigir al comprador al finalizar el pago.
 
-> Además de los SDK, también es posible configurar `back_urls` a través de la API de preferencias. Para tanto, envíe un **POST** con el atributo `back_urls` que informe las URLs a las que se debe dirigir al comprador al finalizar el pago al endpoint [/checkout/preferences](/developers/es/reference/preferencias/_checkout_preferences/post) y ejecuta el request.
+> Además de los SDK, también es posible configurar `back_urls` a través de la API de preferencias. Para esto, envía un **POST** con el atributo `back_urls` informando las URLs a las que se debe dirigir al comprador al finalizar el pago al endpoint [/checkout/preferences](/developers/es/reference/preferencias/_checkout_preferences/post) y ejecuta el request.
 
 [[[
 ```php

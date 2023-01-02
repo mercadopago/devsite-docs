@@ -12,7 +12,7 @@ Es posible pagar con **tarjeta**, **saldo disponible** y **Mercado Crédito** en
 >
 > Al agregar esta opción, no será posible recibir pagos de usuarios no registrados en Mercado Pago, así como tampoco podrá recibir pagos vía efectivo o transferencia.
 
-Siga los pasos a continuación para configurar el Monedero de Mercado Pago como método de pago.
+Sigue los pasos a continuación para configurar el Monedero de Mercado Pago como método de pago.
 
 
 > SERVER_SIDE
@@ -22,10 +22,10 @@ Siga los pasos a continuación para configurar el Monedero de Mercado Pago como 
 > Crear preferencia
 
 
-Si es un usuario y desea que todos sus pagos se realicen a través de Wallet, puede determinarlo a través de un atributo en la llamada a la API de preferencias. Para crear una preferencia, use uno de los SDK disponibles a continuación.
+Si eres un usuario y deseas que todos tus pagos se realicen a través de Wallet, puedes determinarlo a través de un atributo en la llamada a la API de preferencias. Para crear una preferencia, usa uno de los SDK disponibles a continuación.
 
 
-> Además de las SDKs, también es posible crear una preferencia a través de la API de preferencias.Para eso, envíe un **POST** con el parámetro `purpose` y el valor `wallet_purchase` al endpoint [/checkout/preferences](/developers/es/reference/preferences/_checkout_preferences/post) y ejecute el request o, si lo prefiere, use uno de los SDK a continuación.
+> Además de las SDKs, también es posible crear una preferencia a través de la API de preferencias. Para eso, envíe un **POST** con el parámetro `purpose` y el valor `wallet_purchase` al endpoint [/checkout/preferences](/developers/es/reference/preferences/_checkout_preferences/post) y ejecuta el request o, si lo prefieres, usa uno de los SDK a continuación.
 
 
 
@@ -203,4 +203,4 @@ Con la preferencia creada, se debe exhibir el botón de pago que permitirá al c
 >
 > Importante
 >
-> Al crear un pago es posible recibir 3 estados diferentes: `Pendiente`, `Rechazado` y `Aprobado`. Para mantenerse al día con las actualizaciones, debe configurar su sistema para recibir notificaciones de pago y otras actualizaciones de estado. Consulte [Notificaciones](/developers/es/docs/checkout-pro/additional-content/notifications/Introduction) para obtener más detalles.
+> Al crear un pago es posible recibir tres estados diferentes: `Pendiente`, `Rechazado` y `Aprobado`. Para mantenerse al día con las actualizaciones, debes configurar tu sistema para recibir notificaciones de pago y otras actualizaciones de estado. Consulta [Notificaciones](/developers/es/docs/checkout-pro/additional-content/notifications/Introduction) para obtener más detalles.

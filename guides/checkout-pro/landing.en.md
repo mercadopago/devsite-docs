@@ -37,93 +37,20 @@ bullet_section_with_media:
 
 --- mini_landing_separator ---
 
-<<<<<<< HEAD
->>>> Accepted Payment Methods <<<<
+>>>> Accepted Payment types <<<<
 
-=======
->>>> Differences between Checkout Pro and Checkout API<<<<
-----[mla, mlb]----
-|      Benefits                      | Checkout Pro | Checkout API |
-| :--- | :---: | :---: |
-| Integration difficulty             | Low | High |
-| Design UI/UX                          | ✔ |   |
-| Optimized conversion                   | ✔ |   |
-| Optimized approval                   | ✔ |   |
-| Guest users     			| ✔ | ✔ |
-| Registered users     		| ✔ |   |
-| Fraud prevention                   | ✔ | ✔ |
-| Payment completion screen      | ✔ |   |
-| Payment with two cards            | ✔ |   |
-------------
-
-----[mlm, mlu, mco, mlc, mpe]----
-|  Benefits                          | Checkout Pro | Checkout API |
-| :--- | :---: | :---: |
-| Integration difficulty             | Low | High |
-| Design UI/UX                          | ✔ |   |
-| Optimized conversion                  | ✔ |   |
-| Optimized approval                   | ✔ |   |
-| Guest users      		| ✔ | ✔ |
-| Registered users     		| ✔ |   |
-| Fraud prevention                   | ✔ | ✔ |
-| Payment completion screen      | ✔ |   |
-------------
-
---- mini_landing_separator ---
-
->>>> Accepted payment types <<<<
->>>>>>> 8acda2279d74a955809ab691c731cb092c11b14f
 ----[mlb]----
 ---
-<<<<<<< HEAD
 available_payments: credit, debit, Mercadopago, ticket, pix, pec
-=======
-available_payments: credit, debit, mercadopago, boleto, pix, pec, moneda, cartera
-
----
-------------
-
-----[mla]---- 
-
----
-available_payments: credit, debit, mercadopago, efectivo, atm
-
-----
-------------
-
-----[mlm]---- 
-
----
-available_payments: credit, debit, mercadopago, efectivo, atm, moneda
-
-----
-------------
-
-----[mlu]---- 
-
->>>>>>> 8acda2279d74a955809ab691c731cb092c11b14f
 ---
 available_payments: credit, efectivo
 
 ----
 ------------
 
-<<<<<<< HEAD
 ----[mla, mlm, mlu, mco, mlc, mpe]----
 ---
 available_payments: credit, debit, Mercadopago, ticket
-=======
-----[mco]---- 
-
----
-available_payments: mercadopago, pse, credit, debit, cartera, efectivo
-
-----
-------------
-
-----[mlc]---- 
-
->>>>>>> 8acda2279d74a955809ab691c731cb092c11b14f
 ---
 available_payments: mercadopago, credit, debit
 

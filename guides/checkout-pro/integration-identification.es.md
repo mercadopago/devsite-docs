@@ -2,7 +2,7 @@
 
 Los miembros certificados del [&lt;dev>programa](https://www.mercadopago.com/developers/en/developer-program) pueden identificar sus integraciones de Checkout Pro para acceder a los [beneficios del programa](https://www.mercadopago.com/developers/pt/developer-program#dev-program-benefits).
 
-Para trabajar con métricas, utilice _headers_ en su preferencia de pago, agregando el código de identificación según el escenario deseado (no es obligatorio completar los tres campos que se mencionan a continuación).
+Para trabajar con métricas, utiliza _headers_ en su preferencia de pago, agregando el código de identificación según el escenario deseado (no es obligatorio completar los tres campos que se mencionan a continuación).
 
 | _Header_ | Tipo de código | Identificadores |
 | --- | --- | --- |
@@ -10,9 +10,9 @@ Para trabajar con métricas, utilice _headers_ en su preferencia de pago, agrega
 | `x-platform-id` | Plataforma | Para las plataformas o módulos que ofrecen Mercado Pago en sus soluciones. |
 | `x-corporation-id` | Corporaciones | Para cuentas asociadas a una cuenta vendedor o grupo económico. |
 
-Para identificar sus integraciones, utilice una de las SDKs a continuación, informando el `integrator_id`, `x-platform-id` y/o `x-corporation-id` con la información adecuada al realizar el request.
+Para identificar sus integraciones, utiliza una de las SDKs a continuación, informando el `integrator_id`, `x-platform-id` y/o `x-corporation-id` con la información adecuada al realizar el request.
 
-> Además de las SDKs, es posible identificar sus integraciones a través de la API de preferencias. Para tanto, envie el parámetro `integrator_id`, `x-platform-id` y/o `x-corporation-id` con su respectiva información al endpoint [/checkout/preferences](/developers/es/reference/preferences/_checkout_preferences/post) y ejecute el request.
+> Además de las SDKs, es posible identificar tus integraciones a través de la API de preferencias. Para esto, envía el parámetro `integrator_id`, `x-platform-id` y/o `x-corporation-id` con su respectiva información al endpoint [/checkout/preferences](/developers/es/reference/preferences/_checkout_preferences/post) y ejecuta el request.
 
 
 [[[

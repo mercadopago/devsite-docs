@@ -1,10 +1,10 @@
 # Preferencia para múltiples ítems
 
-Si necesita crear una preferencia para más de un ítem, debe agregarlos como una lista y sus respectivos atributos.
+Si necesitas crear una preferencia para más de un ítem, debes agregarlos como una lista y sus respectivos atributos.
 
-Para crear una preferencia para varios ítems, utilice una de las SDKs disponibles a continuación.
+Para crear una preferencia para varios ítems, utiliza uno de los SDKs disponibles a continuación.
 
-> Además de los SDKs, también es posible crear una preferencia para varios ítems desde la API de preferencias. Para tanto, envía un **POST** con toda la información del producto/servicio al endpoint [/checkout/preferences](/developers/es/reference/preferences/_checkout_preferences/post) y ejecuta el request.
+> Además de los SDKs, también es posible crear una preferencia para varios ítems desde la API de preferencias. Para esto, envía un **POST** con toda la información del producto/servicio al endpoint [/checkout/preferences](/developers/es/reference/preferences/_checkout_preferences/post) y ejecuta el request.
 
 [[[
 ```php

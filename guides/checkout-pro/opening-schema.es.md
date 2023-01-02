@@ -1,6 +1,6 @@
 # Esquema de apertura
 
-El esquema de apertura te permite definir cómo se abrirá el checkout para el usuario. Por defecto, checkout pro se abre de forma **Modal**, es decir, en una ventana dentro del propio sitio web, sin redirigir a una página externa para completar el pago.
+El esquema de apertura te permite definir cómo se abrirá el checkout para el usuario. Por defecto, Checkout Pro se abre de forma **Modal**, es decir, en una ventana dentro del propio sitio web, sin redirigir a una página externa para completar el pago.
 
 Sin embargo, es posible personalizar la apertura y definir el modelo **Redirect**, en el que Checkout Pro se abre en una nueva ventana redirigiendo al comprador a la pantalla de pago.
 
