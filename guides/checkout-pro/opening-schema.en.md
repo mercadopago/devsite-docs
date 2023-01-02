@@ -24,19 +24,3 @@ To define the **redirect** opening template, insert the HTML code below directly
 </html>
 ```
 ]]]
-
-> PREV_STEP_CARD_EN
->
-> Boleto expiration
->
-> Check how to change the default due date for boleto payments. 
->
-> [Boleto expiration](/developers/en/docs/checkout-pro/checkout-customization/preferences/expiration-date)
-
-> NEXT_STEP_CARD_EN
->
-> Payment button 
->
-> Learn how to define and customize the interface displayed to the user, including how to enter the checkout screen. 
->
-> [Payment button](/developers/en/docs/checkout-pro/checkout-customization/user-interface/payment-button)
