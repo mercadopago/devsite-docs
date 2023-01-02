@@ -289,4 +289,4 @@ Ao concluir a configuração, uma conversão será associada à tag especificada
 >
 > Importante
 >
-> Somente é possível configurar uma única tag por preferência. Para mais informações sobre as tags de conversões do Google Ads, visite o site oficial do Google .
+> Somente é possível configurar uma única tag por preferência. Para mais informações sobre as tags de conversões do Google Ads, visite o [site oficial do Google](https://support.google.com/google-ads?hl=es-419#topic=7456157).
