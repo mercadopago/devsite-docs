@@ -6,11 +6,9 @@ A integração de pagamentos via cartão é feita via cardform. Neste modo de in
 
 Confira abaixo o diagrama que ilustra o processo de pagamento via cartão utilizando o Card Form.
 
-![API-integration-flowchart](/images/api/api-integration-flowchart-cardform-pt.png)
-
+![API-integration-flowchart](/images/api/api-integration-flowchart2-cardform-pt.png)
 
 Para integrar pagamentos com cartão no Checkout Transparente siga as etapas abaixo.
-
 
 ##  Importar MercadoPago.js
 

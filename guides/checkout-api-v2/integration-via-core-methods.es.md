@@ -6,14 +6,11 @@ En la integración vía Métodos Core, el integrador decide cuándo buscar infor
 
 Consulta el diagrama que ilustra el proceso de pago con tarjeta a través de los Métodos Core.
 
-
-
 ![API-integration-flowchart](/images/api/api-integration-flowchart-coremethods-es.png)
 
 ## Importar MercadoPago.js
 
 La primera etapa del proceso de integración de los pagos con tarjeta es la **captura de los datos de la tarjeta**. Esta captura se realiza a través de la inclusión de la biblioteca MercadoPago.js en tu proyecto, seguida del formulario de pago. Utiliza el siguiente código para importar la biblioteca MercadoPago.js antes de añadir el formulario de pago.
-
 
 [[[
 ```html

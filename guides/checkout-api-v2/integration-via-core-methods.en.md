@@ -6,16 +6,11 @@ In integration via Core Methods, the integrator decides when to look for informa
 
 Check below the diagram that illustrates the card payment process using Core Methods.
 
-
-
 ![API-integration-flowchart](/images/api/api-integration-flowchart-coremethods-en.png)
-
-
 
 ## Import MercadoPago.js
 
 The first step in the card payment integration process is the **card data capture**. This capture is made by including the MercadoPago.js library in your project, followed by the payment form. Use the code below to import the MercadoPago.js library before adding the payment form.
-
 
 [[[
 ```html

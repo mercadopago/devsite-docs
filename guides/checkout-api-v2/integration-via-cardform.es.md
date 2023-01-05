@@ -6,8 +6,7 @@ A medida que se introducen los datos de la tarjeta, se realiza una búsqueda aut
 
 Consulta el siguiente diagrama que ilustra el proceso de pago con tarjeta utilizando Card Form.
 
-![API-integration-flowchart](/images/api/api-integration-flowchart-cardform-es.png)
-
+![API-integration-flowchart](/images/api/api-integration-flowchart2-cardform-es.png)
 
 Para integrar los pagos con tarjeta en Checkout API sigue las siguientes etapas.
 
