@@ -8,6 +8,14 @@
 > Conoce los términos que necesitas para leer tu reporte. Usa este glosario para conocer los términos de los reportes que generes con fechas anteriores a octubre. Para los reportes que abarquen fechas posteriores [consulta este Glosario.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/subscriptions/additional-content/reports/released-money/report-fields)
 ------------
 
+----[mlb]----
+> WARNING
+>
+> Importante
+>
+> Conoce los términos que necesitas para leer tu reporte. Usa este glosario para conocer los términos de los reportes que generes con fechas anteriores a enero. Para los reportes que abarquen fechas posteriores [consulta este Glosario.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/subscriptions/additional-content/reports/released-money/report-fields)
+------------
+
 ----[mla]----
 > WARNING
 >
