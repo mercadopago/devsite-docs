@@ -12,7 +12,7 @@
 >
 > Important
 >
-> Learn the terms you need to analyze your report. Use this glossary to check the terms for the reports you generate with dates prior to January. For reports that include later dates, [please check this Glossary.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/subscriptions/additional-content/reports/released-money/report-fields)
+> Learn the terms you need to analyze your report. Use this glossary to check the terms for the reports you generate with dates prior to January. For reports that include later dates, [please check this Glossary.](/developers/en/docs/subscriptions/additional-content/reports/released-money/report-fields)
 ------------
 
 If you have any doubts about the technical terms used, check the glossary below.
