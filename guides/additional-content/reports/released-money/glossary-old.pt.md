@@ -12,7 +12,7 @@
 >
 > Importante
 >
-> Conheça os termos que você precisa para ler seu relatório. Use este glossário para saber os termos dos relatórios gerados antes de Janeiro. Para relatórios que cobrem datas posteriores, [consulte este Glossário.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/subscriptions/additional-content/reports/released-money/report-fields)
+> Conheça os termos que você precisa para ler seu relatório. Utilize este glossário para saber os termos dos relatórios gerados antes de Janeiro. Para relatórios que cobrem datas posteriores, [consulte este Glossário.](/developers/pt/docs/subscriptions/additional-content/reports/released-money/report-fields)
 ------------
 
 
