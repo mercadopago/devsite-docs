@@ -79,7 +79,7 @@ future_product_avaible:
 ---
 
 --- mini_landing_separator ---
->>>>  Accepted Payment types <<<<
+>>>>  Accepted payment types <<<<
 
 ----[mlb]----
 
