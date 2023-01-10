@@ -58,8 +58,11 @@ The default version will show an extended view of the columns. The final report 
 ----[mla, mlm]----
 ## How do I analyze the reports generated from October 2022 onwards?
 ------------
-----[mpe, mlu, mla, mlm, mlc, mco]----
-The reports generated as of  ------------ ----[mpe]----January------------  ----[mlu]----March------------ ----[mla, mlm]----October------------  ----[mco, mlc]----August ------------  ----[mpe, mlu, mla, mlm, mlc, mco]---- 2022 have the following characteristics:
+----[mlb]----
+## How do I analyze the reports generated from January 2023 onwards?
+------------
+----[mpe, mlu, mla, mlm, mlc, mco, mlb]----
+The reports generated as of  ------------ ----[mpe]----January 2022------------  ----[mlu]----March 2022------------ ----[mla, mlm]----October 2022------------  ----[mco, mlc]----August 2022------------ ----[mlb]----January 2023------------  ----[mpe, mlu, mla, mlm, mlc, mco, mlb]----  have the following characteristics:
 
 1. The movements are displayed in chronological order, which allows you to identify them more easily and better control your orders.
 2. If there is a complaint or chargeback due to a problem with the service or the product provided, the respective amount is withheld until the mediation is resolved. This information is included in your report and you can find it by searching for the prefix "reserve-".  

@@ -65,8 +65,11 @@ La versión por defecto mostrará una vista extendida de las columnas. El inform
 ----[mla, mlm]----
 ## ¿Cómo leer los reportes que generes a partir de octubre de 2022?
 ------------
-----[mpe, mlu, mla, mlm, mlc, mco]----
-Los reportes que generes a partir de  ------------ ----[mpe]----enero de 2022 ------------  ----[mlu]---- marzo de 2022 ------------ ----[mla, mlm]----octubre de 2022------------  ----[mco, mlc]----agosto de 2022 ------------  ----[mpe, mlu, mla, mlm, mlc, mco]---- tienen las siguientes características:
+----[mlb]----
+## ¿Cómo leer los reportes que generes a partir de enero de 2023?
+------------
+----[mpe, mlu, mla, mlm, mlc, mco, mlb]----
+Los reportes que generes a partir de  ------------ ----[mpe]----enero de 2022 ------------  ----[mlu]---- marzo de 2022 ------------ ----[mla, mlm]----octubre de 2022------------  ----[mco, mlc]----agosto de 2022 ------------ ----[mlb]----enero de 2023 ------------  ----[mpe, mlu, mla, mlm, mlc, mco, mlb]---- tienen las siguientes características:
 1. Los movimientos se presentan en el orden en que ocurrieron, con lo cual podrás identificarlos con mayor facilidad y controlar mejor tus ventas. 
 2. Cuando se presenta alguna reclamación o contracargo por algún problema con el servicio o producto que vendiste, tu dinero es retenido hasta que la mediación se resuelva. Esta información se visualiza en tu reporte y la reconoces porque su descripción lleva el prefijo reserve-.
 3. Los movimientos relacionados con los retiros sobre tu dinero disponible se muestran como payout y todas las mediaciones que surgen cuando se inicia o resuelve un reclamo se presentan como dispute. Para conocer la descripción de otros movimientos y términos, puedes usar [este glosario](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/glossary). 
