@@ -6,7 +6,7 @@ As the card data is entered, an automatic search takes place for the issuer info
 
 Check below the diagram that illustrates the card payment process using the Card Form.
 
-![API-integration-flowchart](/images/api/api-integration-flowchart2-cardform-en.png)
+![API-integration-flowchart](/images/api/api-integration-flowchart-cardform-2-en.png)
 
 To integrate card payments into Checkout API, follow the steps below.
 
