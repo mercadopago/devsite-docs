@@ -59,8 +59,10 @@ If you have any doubts about the technical terms used, check the glossary below.
 | PAYER_ID_TYPE* | Type of identification of who is making a payment or donation. | ------------ ----[mla]----
 | PAYER_ID_NUMBER* | Identification number of who is making a payment or donation. | ------------ ----[mla]----
 | BUSINESS_UNIT | Corresponds to the channel through which an order was generated. The channels are Mercado Pago, Mercado Libre, Mercado Shops and Delivery.|
-| SUB_UNIT | Allows you to identify the method that was used to collect the payment of an order with Mercado Pago.| ------------ ----[mco, mlc, mpe, mlu]----
+| SUB_UNIT | Allows you to identify the method that was used to collect the payment of an order with Mercado Pago.| ------------ ----[mco, mlc, mpe, mlu]---- ------------
 | BALANCE_AMOUNT | This column shows the balance remaining in an account after a transaction that affects the total value is executed. |
+| PAYOUT_BANK_ACCOUNT_NUMBER | The full account number to which the money was sent from Mercado Pago is shown here. |
+> 
 > INFO
 >
 > (*) This information can only be used for reconciliation purposes, will be treated according to the applicable
