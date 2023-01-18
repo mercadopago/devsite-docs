@@ -1,4 +1,4 @@
-# Configure the integration with other payment methods
+# Other payment methods
 
 With Mercado Pago's Checkout Bricks, it is possible to offer, in addition to card and Pix, payments via **boleto bancário** and **payment in lottery**. To offer **boleto bancário** and payment in **lottery**, follow the steps below.
 

@@ -1,4 +1,4 @@
-# Configure the integration with Pix
+# Pix
 
 Pix is an instant electronic payment method offered by the Central Bank of Brazil to individuals and legal entities. Through Checkout Bricks, it is possible to offer this payment option from a **QR code** or a **payment code**.
 
@@ -8,13 +8,11 @@ Pix is an instant electronic payment method offered by the Central Bank of Brazi
 >
 > The Pix payment option will only be displayed if there is a Pix key registered] in Mercado Pago. If you haven't created it yet, [click here](https://www.youtube.com/watch?v=60tApKYVnkA) and check the necessary steps. <br/></br>
 > <br/></br>
-> To initialize the Pix form with the email field filled in, [click here](/developers/en/docs/checkout-bricks/payment-brick/additional-customization/initialize-data-on-the-bricks).<br/></br>
+> To initialize the Pix form with the email field filled in, [click here.](/developers/en/docs/checkout-bricks/payment-brick/additional-customization/initialize-data-on-the-bricks)<br/></br>
 > <br/></br>
 > And to help, we've prepared a complete [code-example](/developers/en/docs/checkout-bricks/payment-brick/code-example/pix) of the Payment Brick configuration with Pix that you can use as a template.
 
 To configure Payment Brick integration to receive payments with Pix you need to follow the step below. 
-
-1. [Render Brick](#bookmark_render_brick)
 
 > CLIENT_SIDE
 >

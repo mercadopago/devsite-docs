@@ -1,4 +1,4 @@
-# Configure a integração com outros meios de pagamento
+# Outros meios de pagamento
 
 Com o Checkout Bricks do Mercado Pago, é possível oferecer, além de cartão, pagamentos através de **Rapipago** e **Pago Fácil**. Para oferecer pagamentos com **Rapipago** e **Pago Fácil**, siga as etapas abaixo. 
 

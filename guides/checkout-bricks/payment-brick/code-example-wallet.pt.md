@@ -1,4 +1,4 @@
-# Exemplo de código (Conta Mercado Pago)
+# Conta Mercado Pago
  
 Para facilitar e otimizar o seu processo de integração, veja abaixo um exemplo completo de como incluir a Conta Mercado Pago como meio de pagamento com o Payment Brick.
 

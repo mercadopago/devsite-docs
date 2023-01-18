@@ -1,4 +1,4 @@
-# Exemplo de código (Pix)
+# Pix
  
 Para facilitar e otimizar o seu processo de integração, veja abaixo um exemplo completo de como incluir Pix como meio de pagamento com o Payment Brick.
 

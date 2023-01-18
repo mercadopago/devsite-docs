@@ -1,4 +1,4 @@
-# Configure a integração com Pix
+# Pix
 
 Pix é um meio de pagamento eletrônico instantâneo oferecido pelo Banco Central do Brasil a pessoas físicas e jurídicas. Através do Checkout Bricks, é possível oferecer esta opção de pagamento a partir de um **código QR** ou um **código de pagamento**.
 
@@ -8,13 +8,11 @@ Pix é um meio de pagamento eletrônico instantâneo oferecido pelo Banco Centra
 > 
 > A opção de pagamento com Pix só será exibida se houver uma chave Pix cadastrada no Mercado Pago. Caso ainda não tenha criado, [clique aqui](https://www.youtube.com/watch?v=60tApKYVnkA) e veja o passo a passo. <br/></br>
 > <br/></br>
-> Para já inicializar o formulário do Pix com o campo de e-mail preenchido, [clique aqui](/developers/pt/docs/checkout-bricks/payment-brick/additional-customization/initialize-data-on-the-bricks).<br/></br>
+> Para já inicializar o formulário do Pix com o campo de e-mail preenchido, [clique aqui.](/developers/pt/docs/checkout-bricks/payment-brick/additional-customization/initialize-data-on-the-bricks)<br/></br>
 > <br/></br>
 > E, para ajudar, preparamos um [exemplo de código](/developers/pt/docs/checkout-bricks/payment-brick/code-example/pix) completo da configuração do Payment Brick com Pix que você pode usar como modelo.
 
 Para configurar a integração do Payment Brick para receber pagamentos com Pix você precisa seguir o passo abaixo. 
-
-1. [Renderizar Brick](#bookmark_renderizar_brick)
 
 > CLIENT_SIDE
 >

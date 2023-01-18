@@ -1,4 +1,4 @@
-# Configure a integração com outros meios de pagamento
+# Outros meios de pagamento
 
 Com o Checkout Bricks do Mercado Pago, é possível oferecer, além de cartão e Pix, pagamentos através de **boleto bancário** e **pagamento em lotérica**. Para oferecer pagamentos com **boleto bancário** e **pagamento em lotérica**, siga as etapas abaixo. 
 

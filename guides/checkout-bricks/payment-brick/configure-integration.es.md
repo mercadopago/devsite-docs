@@ -6,7 +6,7 @@ Para configurar la integración de Payment Brick para recibir pagos, debes segui
 2. [Crear container](#bookmark_crear_container)
 3. [Incluir y configurar la librería MercadoPago.js](#bookmark_incluir_y_configurar_la_librería_mercadopago.js)
 4. [Instanciar Brick](#bookmark_instanciar_brick)
-5. [Configurar método de pago](#bookmark_configurar_método_de_pago)
+5. [Configurar medios de pago](#bookmark_configurar_medios_de_pago)
 
 > Los pasos se realizan en el backend o frontend. Las etiquetas **Client-Side** y **Server-Side** ubicadas inmediatamente al lado del título lo ayudan a identificar qué paso se realiza en qué instancia.
 
@@ -631,7 +631,7 @@ const bricksBuilder = mp.bricks();
 >
 > h2
 >
-> Configurar método de pago
+> Configurar medios de pago
 
 Después de realizar los primeros pasos para configurar tu integración, deberás configurar el método de pago deseado. Para ello acceda a las secciones correspondientes:
 

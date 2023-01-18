@@ -1,8 +1,6 @@
-# Configurar la integración con Cuenta de Mercado Pago
+# Cuenta de Mercado Pago
 
 Para configurar la integración de Payment Brick para recibir pagos con la Cuenta de Mercado Pago debe seguir lo paso a continuación. 
-
-1. [Renderizar Brick](#bookmark_renderizar_brick)
 
 > WARNING
 >

@@ -1,4 +1,4 @@
-# Code example (Mercado Pago Wallet and Installments without card)
+# Mercado Pago Wallet and Installments without card
 
 To facilitate and optimize your integration process, check below a complete example of how to include the Mercado Pago Wallet and Installments without card as a means of payment with Payment Brick. 
 

@@ -1,4 +1,4 @@
-# Configurar la integración con otros medios de pago
+# Otros medios de pago
 
 Con el Checkout Bricks de Mercado Pago, es posible ofrecer, además de tarjeta, **pagos con dinero en efectivo via tickets**.  
 

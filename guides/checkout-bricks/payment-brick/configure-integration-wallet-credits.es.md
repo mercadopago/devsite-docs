@@ -1,5 +1,5 @@
 ----[mla, mlb]---- 
-# Configurar la integración con Cuenta de Mercado Pago y Cuotas sin tarjeta
+# Cuenta de Mercado Pago y Cuotas sin tarjeta
 
 Para configurar la integración de Payment Brick para recibir pagos con la **Cuenta de Mercado Pago y Cuotas sin tarjeta** debe seguir los pasos a continuación. 
 
@@ -16,7 +16,7 @@ Para configurar la integración de Payment Brick para recibir pagos con la **Cue
 
 ------------
 ----[mlm]----
-# Configurar la integración con Cuenta de Mercado Pago y Meses sin tarjeta de crédito
+# Cuenta de Mercado Pago y Meses sin tarjeta de crédito
 
 Para configurar la integración de Payment Brick para recibir pagos con la **Cuenta de Mercado Pago Y Meses sin tarjeta de crédito** debe seguir los pasos a continuación. 
 

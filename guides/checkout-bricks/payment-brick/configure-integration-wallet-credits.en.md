@@ -1,4 +1,4 @@
-# Configure the integration with Mercado Pago Wallet and Installments without card
+# Mercado Pago Wallet and Installments without card
 
 To configure Payment Brick integration to receive payments with **Mercado Pago Wallet and Installments without card** you need to follow the steps below. 
 

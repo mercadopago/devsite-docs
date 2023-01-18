@@ -1,4 +1,4 @@
-# Exemplo de código (Conta Mercado Pago e Parcelamento sem cartão)
+# Conta Mercado Pago e Parcelamento sem cartão
  
 Para facilitar e otimizar o seu processo de integração, veja abaixo um exemplo completo de como incluir a Conta Mercado Pago e Parcelamento sem cartão de crédito como meios de pagamento com o Payment Brick.
 

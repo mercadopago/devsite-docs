@@ -1,4 +1,4 @@
-# Code example (other payment methods)
+# Other payment methods
 
 To facilitate and streamline your integration process, see below a complete example of how to include **cash payment** as a payment method with Payment Brick.
 

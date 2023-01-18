@@ -1,4 +1,4 @@
-# Configure a integração com cartões
+# Cartões
 
 Para configurar a integração do Payment Brick para receber pagamentos com cartões de crédito e débito você precisa seguir os passos abaixo.
 

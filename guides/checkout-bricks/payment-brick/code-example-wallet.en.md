@@ -1,4 +1,4 @@
-# Code example (Mercado Pago Wallet)
+# Mercado Pago Wallet
 
 To facilitate and optimize your integration process, check below a complete example of how to include the Mercado Pago Wallet as a means of payment with Payment Brick. 
 

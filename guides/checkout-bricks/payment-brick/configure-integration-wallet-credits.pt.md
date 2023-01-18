@@ -1,4 +1,4 @@
-# Configure a integração com Conta Mercado Pago e Parcelamento sem cartão
+# Conta Mercado Pago e Parcelamento sem cartão
 
 Para configurar a integração do Payment Brick para receber pagamentos com a **Conta Mercado Pago e Parcelamento sem cartão** você precisa seguir os passos abaixo. 
 

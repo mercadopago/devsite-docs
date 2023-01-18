@@ -1,12 +1,12 @@
 ----[mla, mlb]---- 
-# Ejemplo de código (Cuenta de Mercado Pago y Cuotas sin tarjeta)
+# Cuenta de Mercado Pago y Cuotas sin tarjeta
 
 Para facilitar y optimizar su proceso de integración, ve a continuación un ejemplo completo de cómo incluir la Cuenta de Mercado Pago y Cuotas sin tarjeta como medios de pago con Payment Brick. 
 
 ------------
 
 ----[mlm]----
-# Ejemplo de código (Cuenta de Mercado Pago y Meses sin tarjeta de crédito)
+# Cuenta de Mercado Pago y Meses sin tarjeta de crédito
 
 Para facilitar y optimizar su proceso de integración, ve a continuación un ejemplo completo de cómo incluir la Cuenta de Mercado Pago y Meses sin tarjeta de crédito como medios de pago con Payment Brick. 
 

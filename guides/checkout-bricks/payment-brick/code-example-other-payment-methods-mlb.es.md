@@ -1,4 +1,4 @@
-# Ejemplo de código (otros medios de pago)
+# Otros medios de pago
 
 Para facilitar y optimizar su proceso de integración, vea a continuación un ejemplo completo de cómo incluir **boleto bancario** y pago en **agencias de lotería** como medio de pago con Payment Brick. 
 

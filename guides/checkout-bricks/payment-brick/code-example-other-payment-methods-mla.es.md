@@ -1,4 +1,4 @@
-# Ejemplo de código (otros medios de pago)
+# Otros medios de pago
 
 Para facilitar y optimizar su proceso de integración, mira a continuación un ejemplo completo de cómo incluir **Rapipago** y **Pago Fácil** como medio de pago con Payment Brick. 
 

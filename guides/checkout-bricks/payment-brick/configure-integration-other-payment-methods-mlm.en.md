@@ -1,4 +1,4 @@
-# Configure the integration with other payment methods
+# Other payment methods
 
 With Mercado Pago's Checkout Bricks, it is possible to offer, in addition to card, **payments with cash via ticket**. 
 
