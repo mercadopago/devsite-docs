@@ -2,78 +2,13 @@
 
 To configure Payment Brick integration to receive payments with credit and debit cards you need to follow the steps below.
 
-1. [Create container](#bookmark_create_container)
-2. [Include and configure MercadoPago.js library](#bookmark_include_and_configure_mercadopago.js_library)
-3. [Instantiate Brick](#bookmark_instantiate_brick)
-4. [Render Brick](#bookmark_render_brick)
-5. [Manage credit and debit cards](#bookmark_manage_credit_and_debit_cards)
-6. [Include saved cards](#bookmark_include_saved_cards)
+1. [Render Brick](#bookmark_render_brick)
+2. [Manage credit and debit cards](#bookmark_manage_credit_and_debit_cards)
+3. [Include saved cards](#bookmark_include_saved_cards)
 
 > The steps are performed on the backend or frontend. The **Client-Side** and **Server-Side** pills located immediately next to the title help you to identify which step is performed in which instance. <br/></br>
 > <br/></br>
 > And to help, we've prepared a complete [code-example](/developers/en/docs/checkout-bricks/payment-brick/code-example/cards) of the Payment Brick configuration with cards that you can use as a template.
-
-> CLIENT_SIDE
->
-> h2
->
-> Create container
-
-You will need to create a container to define where the Brick will be placed on the screen. The creation of the container is done by inserting an element (for example, a div) in the HTML code of the page where the Brick will be rendered (see the code below).
-
-> NOTE
-> 
-> Attention
->
-> The value shown in the `id` property below is just an example and can be altered, however, it should always match the `id` indicated in the render.
-
-```html
-  <div id="paymentBrick_container"></div>
-```
-
-> CLIENT_SIDE
->
-> h2
->
-> Include and configure MercadoPago.js library
-
-**Use our official library to access Mercado Pago features** from your frontend securely.
-
-> NOTE
->
-> Attention
->
-> JS code can be included in a `< script >` tag or a separate JS file.
-
-You will need to install the SDK by adding the following in your HTML code:
-
-```html
-<script src="https://sdk.mercadopago.com/js/v2"></script>
-```
-
-Next, initialize the SDK by setting your [public key](/developers/en/guides/additional-content/credentials/credentials)using JavaScript code as follows:
-
-```javascript
-const mp = new MercadoPago('YOUR_PUBLIC_KEY');
-```
-
-> CLIENT_SIDE
->
-> h2
->
-> Instantiate Brick
-
-With the container created and our SDK JS installed, the next step is to instantiate the Brick builder, which will allow generating the Brick. To create the Brick instance, insert the code below after the previous step.
-
-```javascript
-const bricksBuilder = mp.bricks();
-```
-
-> WARNING
->
-> Attention
->
-> During Brick instantiation, different errors may appear. For more details on each of them, see the [Possible Errors](/developers/en/docs/checkout-bricks/additional-content/possible-errors) section.
 
 > CLIENT_SIDE
 >
