@@ -630,7 +630,7 @@ const bricksBuilder = mp.bricks();
 >
 > Configurar meio de pagamento
 
-Após realizar as primeiras configurações da sua integração, será necessário . Para isso, acesse as seções correspondentes:
+Após realizar os primeiras etapas de configuração da sua integração, será necessário configurar o meio de pagamento desejado. Para isso, acesse as seções correspondentes:
 
 ----[mlb]---- 
 * [Cartões](/developers/pt/docs/checkout-bricks/payment-brick/configure-integration/cards)

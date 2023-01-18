@@ -633,7 +633,7 @@ const bricksBuilder = mp.bricks();
 >
 > Configurar método de pago
 
-Após realizar as primeiras configurações da sua integração, será necessário . Para isso, acesse as seções correspondentes:
+Después de realizar los primeros pasos para configurar tu integración, deberás configurar el método de pago deseado. Para ello acceda a las secciones correspondientes:
 
 ----[mlb]---- 
 * [Tarjetas](/developers/es/docs/checkout-bricks/payment-brick/configure-integration/cards)
