@@ -2,7 +2,7 @@
 
 Para configurar a integração do Payment Brick para receber pagamentos você precisa seguir os passos abaixo.
 
-1. [Criar preferência](#bookmark_criar_preferência) (**Necessário apenas para Conta Mercado Pago.**)
+1. [Criar preferência](#bookmark_criar_preferência) (**Necessário apenas para Conta Mercado Pago**)
 2. [Criar container](#bookmark_criar_container)
 3. [Incluir e configurar a biblioteca MercadoPago.js](#bookmark_incluir_e_configurar_a_biblioteca_mercadopago.js)
 4. [Instanciar Brick](#bookmark_instanciar_brick)

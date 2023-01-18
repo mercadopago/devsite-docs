@@ -2,7 +2,7 @@
 
 To configure Payment Brick integration to receive payments you need to follow the steps below.
 
-1. [Create preference](#bookmark_create_preference) (**Required only for Mercado Pago Wallet.**)
+1. [Create preference](#bookmark_create_preference) (**Required only for Mercado Pago Wallet**)
 2. [Create container](#bookmark_create_container)
 3. [Include and configure MercadoPago.js library](#bookmark_include_and_configure_mercadopago.js_library)
 4. [Instantiate Brick](#bookmark_instantiate_brick)
