@@ -1,8 +1,14 @@
 # Como migrar do SDK JS V1 para SDK JS V2 com Secure Fields
 
-Nesse artigo explicaremos as configurações necessárias para a migração da **utilização de SDK de JavaScript na versão 1** para a **utilização da SDK de JavaScript na Versão 2 com Secure Fields**.
+No Mercado Pago, lançamos o _Secure Fields_, um novo recurso de segurança para processar pagamentos com cartão que está disponível apenas na versão mais atual do JS SDK e possui vários benefícios como:
 
-A migração é bastante simples e a ordem de acontecimentos é exatamente a mesma, as diferenças são: 
+- Implementação mais simples
+- Maior segurança para sua loja
+- Facilidade para obter a certificação PCI SAQ A
+
+Nesse artigo explicaremos as configurações necessárias para a migração da **utilização de SDK de JavaScript na versão 1** para a **utilização da SDK de JavaScript na Versão 2 com Secure Fields**. 
+
+Abaixo mostramos as principais diferenças entre as etapas de migração.
 
 * Alteramos a forma de instanciar o Mercado Pago; 
 * Não utilizaremos mais as funções de callback de cada método, mas sim o retorno deles para trabalhar com os dados;
