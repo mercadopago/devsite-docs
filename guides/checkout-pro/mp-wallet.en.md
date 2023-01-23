@@ -174,7 +174,7 @@ preference = preference_response["response"]
 > Add checkout
 
 
-With the preference created, it is necessary to display the payment button that will allow the buyer to use the Mercado Pago Wallet for payment. To display the payment button, use one of the HTML available below.
+With the preference created, it is necessary to display the payment button that will allow the buyer to use the Mercado Pago Wallet for payment. To display the payment button, use the HTML available below.
 
 
 
