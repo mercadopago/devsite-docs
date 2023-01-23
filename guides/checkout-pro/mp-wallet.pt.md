@@ -173,7 +173,7 @@ preference = preference_response["response"]
 > Adicionar checkout
 
 
-Com a preferência criada, é preciso exibir o botão de pagamento que permitirá o comprador utilizar a carteira Mercado Pago para pagamento. Para exibir o botão de pagamento, utilize um dos SDKs disponíveis abaixo.
+Com a preferência criada, é preciso exibir o botão de pagamento que permitirá o comprador utilizar a carteira Mercado Pago para pagamento. Para exibir o botão de pagamento, utilize o código HTML abaixo.
 
 
 
