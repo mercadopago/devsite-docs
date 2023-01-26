@@ -18,7 +18,7 @@ A configuração das condições de pagamento é feita na aba **Condições de p
 * **Cartão de débito:** refere-se a transações com cartões de débito.
 ------------
 ----[mla, mlm, mlb]----
- * **Buy now, pay later Mercado Pago:** é a forma de financiamento do Mercado Pago que permite que você pague parcelado sem cartão. Para ativar o botão **Buy now, pay later Mercado Pago**, você pode seguir os passos detalhados abaixo:
+* **Buy now, pay later Mercado Pago:** é a forma de financiamento do Mercado Pago que permite que você pague parcelado sem cartão. Para ativar o botão **Buy now, pay later Mercado Pago**, você pode seguir os passos detalhados abaixo:
   * Você deve criar uma afiliação de gateway MercadoPagoV2, se ainda não tiver uma. Como? Aqui está o [passo a passo](/developers/pt/docs/vtex/gateway-affiliations).
   * No painel administrativo da VTEX, acesse **Pagamentos** e, em seguida, **Configurações**.
   * Vá na aba **Condições de pagamento**, clique no botão “+” e procure por **Buy now, pay later Mercado Pago**.
@@ -28,7 +28,7 @@ A configuração das condições de pagamento é feita na aba **Condições de p
 
 ------------
 ----[mco]----
- * **PSE:** para oferecer o PSE como meio de pagamento em sua loja VTEX, primeiro você deve se certificar de instalar o aplicativo PSE desenvolvido pela VTEX. Para isso, siga os passos abaixo:
+* **PSE:** para oferecer o PSE como meio de pagamento em sua loja VTEX, primeiro você deve se certificar de instalar o aplicativo PSE desenvolvido pela VTEX. Para isso, siga os passos abaixo:
   * Em sua loja VTEX, acesse **Configurações da Conta > Aplicativos > Loja de aplicativos**.
   * Pesquise por **Banks for PSE** e faça o download do aplicativo para a sua loja.
 
