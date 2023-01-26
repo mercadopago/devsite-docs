@@ -12,34 +12,31 @@ Após criar sua afiliação com o **MercadoPagoV2**, você deverá configurar as
 
 A configuração das condições de pagamento é feita na aba **Condições de pagamento** do menu **Configurações** no módulo de **Pagamentos** no portal do administrador da plataforma VTEX.  Nessa aba, você deverá clicar no botão  "+" (*Adicionar nova condição de pagamento para...*) e selecionar uma das seguintes condições de pagamento:
 
-* **Cartão de Crédito:** refere-se a transações com cartões de crédito que serão realizadas em sua loja. Este configuração requer que você selecione cada bandeira de cartão de crédito que deseja em sua loja. [Clique aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/vtex/payment-methods) para mais informações sobre as bandeiras disponíveis. Além disso, dependendo das condições de pagamento que selecionar (À vista ou Parcelado), sua configuração pode exigir o preenchimento de campos adicionais. Para mais informações sobre como configurar parcelas na VTEX, clique [aqui](https://help.vtex.com/pt/tutorial/condicoes-de-pagamento--tutorials_455#parcelado-sem-juros).
+* **Cartão de crédito:** refere-se a transações com cartões de crédito que serão realizadas em sua loja. Este configuração requer que você selecione cada bandeira de cartão de crédito que deseja em sua loja. [Clique aqui](/developers/pt/docs/vtex/payment-methods) para mais informações sobre as bandeiras disponíveis. Além disso, dependendo das condições de pagamento que selecionar (à vista ou parcelado), sua configuração pode exigir o preenchimento de campos adicionais. Para mais informações sobre como configurar parcelas na VTEX, clique [aqui](https://help.vtex.com/pt/tutorial/condicoes-de-pagamento--tutorials_455#parcelado-sem-juros).
 
 ----[mla, mlu, mlc, mlm, mpe, mco]----
-* **Cartão de Débito:** refere-se a transações com cartões de Débito.
+* **Cartão de débito:** refere-se a transações com cartões de débito.
 ------------
-
 ----[mla, mlm, mlb]----
-* **Buy now, pay later Mercado Pago:** é a forma de financiamento do Mercado Pago que permite que você pague parcelado sem cartão. Para ativar o botão **Buy now, pay later Mercado Pago**, você pode seguir os passos detalhados abaixo:
+ * **Buy now, pay later Mercado Pago:** é a forma de financiamento do Mercado Pago que permite que você pague parcelado sem cartão. Para ativar o botão **Buy now, pay later Mercado Pago**, você pode seguir os passos detalhados abaixo:
   * Você deve criar uma afiliação de gateway MercadoPagoV2, se ainda não tiver uma. Como? Aqui está o [passo a passo](/developers/pt/docs/vtex/gateway-affiliations).
-  * No painel administrativo da VTEX, acesse **Pagamentos**, e, em seguida, **Configurações**.
+  * No painel administrativo da VTEX, acesse **Pagamentos** e, em seguida, **Configurações**.
   * Vá na aba **Condições de pagamento**, clique no botão “+” e procure por **Buy now, pay later Mercado Pago**.
   * Nomeie a regra para facilitar a identificação e ative a condição de pagamento no campo **Status**.
   * Em **Processo com afiliação**, escolha MercadoPagoV2 como afiliação.
   * Clique em **Salvar** e pronto!
 
 ------------
-
 ----[mco]----
-* **PSE:** Para oferecer o PSE como método de pagamento em sua loja VTEX, você deve certificar-se, primeiro, de instalar o App PSE desenvolvido pela VTEX. Para isso, siga os passos abaixo:
+ * **PSE:** para oferecer o PSE como meio de pagamento em sua loja VTEX, primeiro você deve se certificar de instalar o aplicativo PSE desenvolvido pela VTEX. Para isso, siga os passos abaixo:
   * Em sua loja VTEX, acesse **Configurações da Conta > Aplicativos > Loja de aplicativos**.
   * Pesquise por **Banks for PSE** e faça o download do aplicativo para a sua loja.
-
 
 > WARNING
 >
 > Importante
 >
-> Caso não encontre o App na Loja de aplicativos, é necessário solicitar a instalação pela equipe da VTex através de ticket no [Support VTEX](https://help.vtex.com/pt/support).
+> Caso não encontre o aplicativo na loja de aplicativos, é necessário solicitar a instalação pela equipe da VTEX através de um ticket no [Support VTEX.](https://help.vtex.com/pt/support)
 
 
 Depois de instalar o Banks for PSE, você pode configurar o PSE como método de pagamento seguindo as etapas detalhadas acima.

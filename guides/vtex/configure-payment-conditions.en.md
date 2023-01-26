@@ -12,12 +12,11 @@ After you have created your affiliation with **MercadoPagoV2**, you must configu
 
 The configuration of payment conditions is done in the **Payment conditions** tab of the **Settings** menu in the **Payments** module in the VTEX platform administrator portal. In this tab, you must click on the "+" button (*Add new payment condition for ...*) and select on eof the following payment conditions:
 
-* **Credit Card:** this refers to credit card transactions carried out on your store's website. This setup requires you to select each credit card brand that you want in your store. [Click here to see a list of available credit card brands](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/vtex/payment-methods). In addition, depending on the payment terms you select (Cash or Installments), your configuration may require you to fill in additional fields. For more information on how to configure installments in VTEX, click [here](https://help.vtex.com/en/tutorial/condicoes-de-pagamento--tutorials_455#parcelado-sem-juros). 
+* **Credit Card:** this refers to credit card transactions carried out on your store's website. This setup requires you to select each credit card brand that you want in your store. [Click here to see a list of available credit card brands](/developers/en/docs/vtex/payment-methods). In addition, depending on the payment terms you select (Cash or Installments), your configuration may require you to fill in additional fields. For more information on how to configure installments in VTEX, click [here](https://help.vtex.com/en/tutorial/condicoes-de-pagamento--tutorials_455#parcelado-sem-juros). 
 
 ----[mla, mlu, mlc, mlm, mpe, mco]----
 * **Debit Card:** this referers to debit card transactions. 
 ------------
-
 ----[mla, mlm, mlb]----
 * **Buy now, pay later Mercado Pago:** it's Mercado Pago's financing method that allows you to pay in installments without a credit card. To activate the **Buy now, pay later Mercado Pago** button, you must follow these steps listed below:
   * You must have created a MercadoPagoV2 gateway affiliation. If you haven't done it yet, you can learn how to do it in [this documentation](/developers/en/docs/vtex/gateway-affiliations).
@@ -27,19 +26,16 @@ The configuration of payment conditions is done in the **Payment conditions** ta
   * In **Process with affiliation**, choose MercadoPagoV2 as your affiliation.
   * Save your changes by clicking on **Save**.
 ------------
-
 ----[mco]----
 * **PSE:** to offer PSE as a payment method in your VTEX store, you must make sure first to install the PSE App developed by VTEX. In order to do so, you must follow the steps listed below:
   * In your VTEX store, go to **Settings> Apps> App store**.
   * Look for **Banks for PSE** and download the app for your store.
-
 
 > WARNING
 >
 > Important
 >
 > In case you can’t find the App in the App store, you will have to submit a  [Support VTEX ticket](https://help.vtex.com/pt/support) asking for the installation.
-
 
 After installing Banks for PSE, you can continue configuring PSE as a payment method following the steps previously mentioned.
 

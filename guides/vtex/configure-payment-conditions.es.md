@@ -12,7 +12,7 @@ Luego de haber creado tu afiliación con **MercadoPagoV2**, debes configurar los
 
 La configuración de los planes de pago se realiza en la pestaña **Planes de pago** del menú **Configuración** en el módulo **Pagos** en el portal del administrador de la plataforma VTEX. En esta pestaña, debes hacer clic en el botón "+" (*Agregar nuevo plan de pago para ...*) y seleccionar uno de los siguientes planes de pago:
 
-* **Tarjeta de Crédito:** se refiere a transacciones con tarjeta de crédito que se realizan en el sitio web de tu tienda. Esta configuración requiere que selecciones cada marca de tarjeta de crédito que desees en tu tienda. [Puedes hacer clic aquí para descubrir las marcas de tarjeta de crédito disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/vtex/payment-methods). Además, dependiendo de las condiciones de pago que selecciones (Efectivo o Cuotas), tu configuración puede requerir que completes campos adicionales. Para obtener más información sobre cómo configurar las cuotas en VTEX, haz clic [aquí](https://help.vtex.com/es/tutorial/condicoes-de-pagamento--tutorials_455#parcelado-sem-juros). 
+* **Tarjeta de Crédito:** se refiere a transacciones con tarjeta de crédito que se realizan en el sitio web de tu tienda. Esta configuración requiere que selecciones cada marca de tarjeta de crédito que desees en tu tienda. [Puedes hacer clic aquí para descubrir las marcas de tarjeta de crédito disponibles](/developers/es/docs/vtex/payment-methods). Además, dependiendo de las condiciones de pago que selecciones (Efectivo o Cuotas), tu configuración puede requerir que completes campos adicionales. Para obtener más información sobre cómo configurar las cuotas en VTEX, haz clic [aquí](https://help.vtex.com/es/tutorial/condicoes-de-pagamento--tutorials_455#parcelado-sem-juros). 
 
 ----[mla, mlu, mlc, mlm, mpe, mco]----
 * **Tarjeta de Débito:** se refiere a transacciones con tarjeta de débito. ------------
@@ -26,19 +26,16 @@ La configuración de los planes de pago se realiza en la pestaña **Planes de pa
   * En **Proceso con afiliación**, elige MercadoPagoV2 como tu afiliación.
   * Haz click en **Guardar**, ¡y listo!
 ------------
-
 ----[mco]----
 * **PSE:** para ofrecer Pago Seguro en Línea como método de pago en tu tienda VTEX, debes asegurarte, primero, de instalar la App de PSE desarrollada por VTEX. Para eso, sigue los siguientes pasos:
   * En tu tienda VTEX, ve a **Configuración de la Cuenta > Apps > App Store**.
   * Busca por **Banks for PSE** y descarga la aplicación en tu tienda.
 
-
 > WARNING
 >
 > Importante
 >
-> En caso de no encontrar la App en la tienda, debes solicitar su instalación al equipo de VTEX a través de un ticket en [Support VTEX](https://help.vtex.com/pt/support).
-
+> En caso de no encontrar la App en la tienda, debes solicitar su instalación al equipo de VTEX a través de un ticket en [Support VTEX.](https://help.vtex.com/pt/support)
 
 Una vez que hayas instalado Banks for PSE, puedes configurar PSE como método de pago siguiendo los pasos detallados al inicio.
 
