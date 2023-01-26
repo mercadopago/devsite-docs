@@ -39,7 +39,7 @@ A configuração das condições de pagamento é feita na aba **Condições de p
 >
 > Importante
 >
-> Caso não encontre o App na Loja de aplicativos, é necessário solicitar a instalação pela equipe da VTex através de ticket no [Support VTEX] (https://help.vtex.com/pt/support).
+> Caso não encontre o App na Loja de aplicativos, é necessário solicitar a instalação pela equipe da VTex através de ticket no [Support VTEX](https://help.vtex.com/pt/support).
 
 
 Depois de instalar o Banks for PSE, você pode configurar o PSE como método de pagamento seguindo as etapas detalhadas acima.

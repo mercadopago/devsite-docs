@@ -37,7 +37,7 @@ La configuración de los planes de pago se realiza en la pestaña **Planes de pa
 >
 > Importante
 >
-> En caso de no encontrar la App en la tienda, debes solicitar su instalación al equipo de VTEX a través de un ticket en [Support VTEX] (https://help.vtex.com/pt/support).
+> En caso de no encontrar la App en la tienda, debes solicitar su instalación al equipo de VTEX a través de un ticket en [Support VTEX](https://help.vtex.com/pt/support).
 
 
 Una vez que hayas instalado Banks for PSE, puedes configurar PSE como método de pago siguiendo los pasos detallados al inicio.
