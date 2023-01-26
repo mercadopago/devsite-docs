@@ -275,9 +275,7 @@ curl -X POST \
   "live_mode": true,
   "type": "payment",
   "date_created": "2015-03-25T10:04:58.396-04:00",
-  "application_id": 123123123,
   "user_id": 44444,
-  "version": 1,
   "api_version": "v1",
   "action": "payment.created",
   "data": {
@@ -293,9 +291,7 @@ Isso indica que foi criado o pagamento **999999999** para o usuário **44444** e
 | **live_mode** | Indica se a URL informada é valida |
 | **type** | Tipo de notificação recebida (payments, mp-connect, subscription, etc) |
 | **date_created** | Data de criação do recurso (payments, mp-connect, subscription etc) |
-| **application_id** | ID da aplicação que recebeu o recurso (payments, mp-connect, subscription etc) |
 | **user_id**| UserID de vendedor |
-| **version** | Número de vezes que uma notificação foi enviada |
 | **api_version** | Indica se é uma notificação duplicada ou não |
 | **action** | Tipo de notificação recebida, indicando se se trata da atualização de um recurso ou da criação de um novo |
 | **data - id** | ID do payment ou merchant_order |
