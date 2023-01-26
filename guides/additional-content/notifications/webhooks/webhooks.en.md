@@ -275,9 +275,7 @@ curl -X POST \
   "live_mode": true,
   "type": "payment",
   "date_created": "2015-03-25T10:04:58.396-04:00",
-  "application_id": 123123123,
   "user_id": 44444,
-  "version": 1,
   "api_version": "v1",
   "action": "payment.created",
   "data": {
@@ -293,9 +291,7 @@ This indicates that payment **999999999** was created for user **44444** in prod
 | **id** | Notification ID |
 | **live_mode** | Indicates if the URL entered is valid. |
 | **date_created** | Resorce (payments, mp-connect, subscription etc) creation date |
-| **application_id** | Application ID that received the resource (payments, merchant_order, subscription, preapproval, etc) |
 | **user_id** | Vendor UserID |
-| **version** | Number of times a notification was sent |
 | **api_version** | Indicates if it is a duplicate notification or not |
 | **action** | Type of notification received, indicating whether it is the update of a resource or the creation of a new |
 | **data - id** | Payment ID or merchant_order |
