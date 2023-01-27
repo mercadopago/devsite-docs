@@ -6,7 +6,6 @@ You can adapt the Payment Brick integration to your business model by setting [p
 If you offer high-value purchases, for example, you can accept [payments with two credit cards](#bookmark_accept_payments_with_2_credit_cards) or [delete undesired payment methods](#bookmark_define_the_desired_payment_methods) for your operation.
 
 ------------
-
 ----[mlm, mlc, mlu, mco, mpe]----
 If you offer high-value purchases, for example, you can [exclude undesired payment methods](#bookmark_define_the_desired_payment_methods) for your operation.
 
@@ -19,10 +18,10 @@ If you offer high-value purchases, for example, you can [exclude undesired payme
     "items": [
         {
             "id": "item-ID-1234",
-            "title": "Meu produto",
+            "title": "My product",
             "currency_id": "BRL",
             "picture_url": "https://www.mercadopago.com/org-img/MP3/home/logomp3.gif",
-            "description": "Descrição do Item",
+            "description": "Item description",
             "category_id": "art",
             "quantity": 1,
             "unit_price": 75.76
@@ -66,7 +65,7 @@ If you offer high-value purchases, for example, you can [exclude undesired payme
         "installments": 12
     },
     "notification_url": "https://www.your-site.com/ipn",
-    "statement_descriptor": "MEUNEGOCIO",
+    "statement_descriptor": "MYBUSINESS",
     "external_reference": "Reference_1234",
     "expires": true,
     "expiration_date_from": "2016-02-01T12:00:00.000-04:00",
@@ -86,8 +85,8 @@ Through payment preference, you can configure a default payment method to be ren
 | `excluded_payment_methods` | Method that excludes specific credit and debit card brands, such as Visa, Mastercard, American Express, etc. |
 | `installments` | Method that defines the maximum number of installments to be offered. |
 | `purpose` | By indicating the value `wallet_purchase` in this method, Payment Brick will only accept payments from registered users in Mercado Pago, with card and account balance. |
-------------
 
+------------
 ----[mlb]---- 
 ## Define the desired payment methods
 
@@ -102,7 +101,6 @@ Through payment preference, you can configure a default payment method to be ren
 | `purpose` | By indicating the value `wallet_purchase` in this method, Payment Brick will only accept payments from registered users in Mercado Pago, with card and account balance. |
 
 ------------
-
 ----[mlm]---- 
 ## Define the desired payment methods
 
@@ -117,7 +115,6 @@ Through payment preference, you can configure a default payment method to be ren
 | `purpose` | By indicating the value `wallet_purchase` in this method, Payment Brick will only accept payments from registered users in Mercado Pago, with card and account balance. |
 
 ------------
-
 ----[mlc, mco, mpe, mlu]---- 
 ## Define the desired payment methods
 
@@ -263,6 +260,7 @@ You can activate the option to offer payments with two credit cards from the Mer
 To activate this payment option, go to "[Business Options](https://www.mercadopago.com.ar/settings/my-business)" and select the option "Receive payments with 2 credit cards".
 
 ![Config pago 2 tarjetas](/images/web-payment-checkout/config_pago_dos_tarjetas.gif)
+
 ------------
 
 ## Accept payments from registered users only
@@ -271,7 +269,6 @@ To activate this payment option, go to "[Business Options](https://www.mercadopa
 You can accept payments with the Mercado Pago wallet only from registered users, with a credit card, money in account, or Mercado Crédito.
 
 ------------
-
 ----[mlm, mlc, mco, mpe, mlu]----
 You can accept payments with the Mercado Pago wallet only from registered users, with a credit card or money in account.
 
@@ -335,10 +332,8 @@ Use the taxes attribute to define the corresponding value
 ]]]
 
 ------------
-
 ----[mla, mlb, mco]----
-
-## Change the due date for cash payments
+## Modify the due date for cash payments
 
 You can change the default expiration date for cash payments by sending the `date_of_expiration` field in the preference creation request. The date set by you must be between 1 day and 30 days from the date the payment is issued.
 

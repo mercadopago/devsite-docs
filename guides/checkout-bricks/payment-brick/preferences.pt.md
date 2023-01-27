@@ -6,7 +6,6 @@ Você pode adaptar a integração do Payment Brick ao seu modelo negócio config
 Se você oferece compras de valores altos, por exemplo, pode aceitar [pagamentos com dois cartões de crédito](#bookmark_aceite_pagamentos_com_2_cartões_de_crédito) ou ainda [excluir meios de pagamento](#bookmark_defina_os_meios_de_pagamento_desejados) indesejados para a sua operação.
 
 ------------
-
 ----[mlm, mlc, mlu, mco, mpe]----
 Se você oferece compras de valores altos, por exemplo, pode [excluir meios de pagamento](#bookmark_defina_os_meios_de_pagamento_desejados) indesejados para a sua operação.
 
@@ -88,7 +87,6 @@ Por meio da preferência de pagamento, você pode configurar um meio de pagament
 | `purpose` | Ao indicar o valor `wallet_purchase` neste método, o Payment Brick apenas aceitará pagamentos de usuários cadastrados no Mercado Pago, com cartão e saldo em conta. |
 
 ------------
-
 ----[mlb]----
 ## Defina os meios de pagamento desejados
 
@@ -103,7 +101,6 @@ Por meio da preferência de pagamento, você pode configurar um meio de pagament
 | `purpose` | Ao indicar o valor `wallet_purchase` neste método, o Payment Brick apenas aceitará pagamentos de usuários cadastrados no Mercado Pago, com cartão e saldo em conta. |
 
 ------------
-
 ----[mlm]----
 ## Defina os meios de pagamento desejados
 
@@ -118,7 +115,6 @@ Por meio da preferência de pagamento, você pode configurar um meio de pagament
 | `purpose` | Ao indicar o valor `wallet_purchase` neste método, o Payment Brick apenas aceitará pagamentos de usuários cadastrados no Mercado Pago, com cartão e saldo em conta. |
 
 ------------
-
 ----[mlc, mco, mpe, mlu]----
 ## Defina os meios de pagamento desejados
 
@@ -275,7 +271,6 @@ Para ativar essa opção de pagamento, acesse "[Opcões de negócio](https://www
 Você pode aceitar pagamentos com a carteira do Mercado Pago apenas de usuários cadastrados, com cartão, saldo disponível e Mercado Crédito.
 
 ------------
-
 ----[mlm, mlc, mco, mpe, mlu]----
 Você pode aceitar pagamentos com a carteira do Mercado Pago apenas de usuários cadastrados, com cartão e saldo disponível.
 
@@ -338,7 +333,6 @@ Por exemplo:
 ------------
 
 ----[mla, mlb, mco]----
-
 ## Altere a data de vencimento de pagamentos em dinheiro
 
 É possível alterar a data de vencimento padrão de pagamentos em dinheiro enviando o campo `date_of_expiration` na requisição de criação da preferência. A data configurada por você deve ser entre 1 dia e 30 dias a partir da data de emissão do pagamento.
@@ -367,6 +361,7 @@ Revise os [tempos de creditação por meio de pagamento](https://www.mercadopago
 > Importante
 >
 > Caso o pagamento seja realizado depois da data de expiração, o valor será estornado na conta Mercado Pago do pagador.
+
 ------------
 
 ## Ative o modo binário

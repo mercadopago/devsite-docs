@@ -6,7 +6,6 @@ Puedes adaptar la integración de Payment Brick a tu modelo de negocio configura
 Si ofreces compras de alto valor, por ejemplo, puedes aceptar [pagos con dos tarjetas de crédito](#bookmark_acepta_pagos_con_2_tarjetas_de_crédito) o [eliminar métodos de pago](#bookmark_define_los_medios_de_pago) no deseados para tu operación.
 
 ------------
-
 ----[mlm, mlc, mlu, mco, mpe]----
 Si ofreces compras de alto valor, por ejemplo, puedes [excluir métodos de pago](#bookmark_define_los_medios_de_pago) no deseado para tu operación.
 
@@ -19,7 +18,7 @@ Si ofreces compras de alto valor, por ejemplo, puedes [excluir métodos de pago]
     "items": [
         {
             "id": "item-ID-1234",
-            "title": "Meu produto",
+            "title": "Mi producto",
             "currency_id": "BRL",
             "picture_url": "https://www.mercadopago.com/org-img/MP3/home/logomp3.gif",
             "description": "Descrição do Item",
@@ -29,21 +28,21 @@ Si ofreces compras de alto valor, por ejemplo, puedes [excluir métodos de pago]
         }
     ],
     "payer": {
-        "name": "João",
-        "surname": "Silva",
+        "name": "Juan",
+        "surname": "Lopez",
         "email": "user@email.com",
         "phone": {
             "area_code": "11",
             "number": 4444-4444
         },
         "identification": {
-            "type": "CPF",
-            "number": "19119119100"
+            "type": "DNI",
+            "number": "12345678"
         },
         "address": {
             "street_name": "Street",
             "street_number": 123,
-            "zip_code": "06233200"
+            "zip_code": "5700"
         }
     },
     "back_urls": {
@@ -66,13 +65,76 @@ Si ofreces compras de alto valor, por ejemplo, puedes [excluir métodos de pago]
         "installments": 12
     },
     "notification_url": "https://www.your-site.com/ipn",
-    "statement_descriptor": "MEUNEGOCIO",
+    "statement_descriptor": "MINEGOCIO",
     "external_reference": "Reference_1234",
     "expires": true,
     "expiration_date_from": "2016-02-01T12:00:00.000-04:00",
     "expiration_date_to": "2016-02-28T12:00:00.000-04:00"
 }
 ```
+
+----[mco]----
+```json
+{
+    "items": [
+        {
+            "id": "item-ID-1234",
+            "title": "Mi producto",
+            "currency_id": "BRL",
+            "picture_url": "https://www.mercadopago.com/org-img/MP3/home/logomp3.gif",
+            "description": "Descrição do Item",
+            "category_id": "art",
+            "quantity": 1,
+            "unit_price": 75.76
+        }
+    ],
+    "payer": {
+        "name": "Juan",
+        "surname": "Lopez",
+        "email": "user@email.com",
+        "phone": {
+            "area_code": "11",
+            "number": 4444-4444
+        },
+        "identification": {
+            "type": "RUT",
+            "number": "12345678"
+        },
+        "address": {
+            "street_name": "Street",
+            "street_number": 123,
+            "zip_code": "5700"
+        }
+    },
+    "back_urls": {
+        "success": "https://www.success.com",
+        "failure": "http://www.failure.com",
+        "pending": "http://www.pending.com"
+    },
+    "auto_return": "approved",
+    "payment_methods": {
+        "excluded_payment_methods": [
+            {
+                "id": "master"
+            }
+        ],
+        "excluded_payment_types": [
+            {
+                "id": "ticket"
+            }
+        ],
+        "installments": 12
+    },
+    "notification_url": "https://www.your-site.com/ipn",
+    "statement_descriptor": "MINEGOCIO",
+    "external_reference": "Reference_1234",
+    "expires": true,
+    "expiration_date_from": "2016-02-01T12:00:00.000-04:00",
+    "expiration_date_to": "2016-02-28T12:00:00.000-04:00"
+}
+```
+
+------------
 
 ----[mla]----
 ## Define los medios de pago
@@ -86,8 +148,8 @@ A través de la preferencia de pago, puedes configurar un método de pago por de
 | `excluded_payment_methods` | Método que excluye marcas de tarjetas de crédito o débito, como Visa, Mastercard o American Express, entre otras.|
 | `installments` | Método que define la cantidad de cuotas máximas a ofrecer. |
 | `purpose` | Al indicar el valor `wallet_purchase` en este método, Payment Brick solo aceptará pagos de usuarios registrados en Mercado Pago, con tarjeta y saldo de cuenta. |
-------------
 
+------------
 ----[mlb]----
 ## Define los medios de pago
 
@@ -102,7 +164,6 @@ A través de la preferencia de pago, puedes configurar un método de pago por de
 | `purpose` | Al indicar el valor `wallet_purchase` en este método, Payment Brick solo aceptará pagos de usuarios registrados en Mercado Pago, con tarjeta y saldo de cuenta. |
 
 ------------
-
 ----[mlc, mco, mpe, mlu]----
 ## Define los medios de pago
 
@@ -117,7 +178,6 @@ A través de la preferencia de pago, puedes configurar un método de pago por de
 | `purpose` | Al indicar el valor `wallet_purchase` en este método, Payment Brick solo aceptará pagos de usuarios registrados en Mercado Pago, con tarjeta y saldo de cuenta. |
 
 ------------
-
 ----[mlm]----
 ## Define los medios de pago
 
@@ -263,6 +323,7 @@ Puedes activar la opción de ofrecer pagos con dos tarjetas de crédito desde la
 Para activar esta opción de pago, ve a tus "[opciones de negocio](https://www.mercadopago.com.ar/settings/my-business)" y elige la opción "Recibir pagos con 2 tarjetas de crédito".
 
 ![Config pago 2 tarjetas](/images/web-payment-checkout/config_pago_dos_tarjetas.gif)
+
 ------------
 
 ## Acepta pagos únicamente de usuarios registrados
@@ -271,7 +332,6 @@ Para activar esta opción de pago, ve a tus "[opciones de negocio](https://www.m
 Puedes aceptar pagos con la billetera de Mercado Pago exclusivamente de usuarios registrados, con tarjetas, dinero disponible y Mercado Crédito.
 
 ------------
-
 ----[mlm, mlc, mco, mpe, mlu]----
 Puedes aceptar pagos con la billetera de Mercado Pago exclusivamente de usuarios registrados, con tarjetas y dinero disponible.
 
@@ -306,7 +366,6 @@ Al hacerlo, tu preferencia tendría una estructura similar al ejemplo siguiente:
 }
 ```
 ----[mco]----
-
 ## Modifica la tasa de impuestos DIAN
 
 Puedes modificar el valor del impuesto para la Dirección de Impuestos y Aduanas Nacionales (DIAN), aplicado según el producto o servicio que ofrezcas. 
@@ -332,9 +391,7 @@ Por ejemplo:
 ]]]
 
 ------------
-
 ----[mla, mlb, mco]----
-
 ## Cambia la fecha de vencimiento para pagos en efectivo
 
 Puedes cambiar la fecha de vencimiento por defecto de un pago en efectivo enviando el campo `date_of_expiration` en la solicitud de creación de la preferencia. La fecha configurada debe ser entre 1 y 30 días a partir de la fecha de creación de la preferencia de pago.
@@ -363,6 +420,7 @@ Ten en cuenta los [tiempos de acreditación por medio de pago](https://www.merca
 > Importante
 >
 > Si el pago se realiza después de la fecha de vencimiento, el monto se devolverá a la cuenta de Mercado Pago del pagador.
+
 ------------
 
 ## Activa el modo binario
