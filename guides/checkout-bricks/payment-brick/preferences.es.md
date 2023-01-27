@@ -13,6 +13,7 @@ Si ofreces compras de alto valor, por ejemplo, puedes [excluir métodos de pago]
 
 ## Ejemplo de preferencia completa
 
+----[mla, mlm, mlc, mlu, mlb, mpe]----
 ```json
 {
     "items": [
@@ -73,6 +74,7 @@ Si ofreces compras de alto valor, por ejemplo, puedes [excluir métodos de pago]
 }
 ```
 
+------------
 ----[mco]----
 ```json
 {
