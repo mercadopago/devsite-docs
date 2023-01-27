@@ -6,7 +6,6 @@ Você pode adaptar a integração do Payment Brick ao seu modelo negócio config
 Se você oferece compras de valores altos, por exemplo, pode aceitar [pagamentos com dois cartões de crédito](#bookmark_aceite_pagamentos_com_2_cartões_de_crédito) ou ainda [excluir meios de pagamento](#bookmark_defina_os_meios_de_pagamento_desejados) indesejados para a sua operação.
 
 ------------
-
 ----[mlm, mlc, mlu, mco, mpe]----
 Se você oferece compras de valores altos, por exemplo, pode [excluir meios de pagamento](#bookmark_defina_os_meios_de_pagamento_desejados) indesejados para a sua operação.
 
@@ -14,15 +13,13 @@ Se você oferece compras de valores altos, por exemplo, pode [excluir meios de p
 
 ## Exemplo de preferência completa
 
-----[mlm, mla, mlb, mlc, mlu, mpe]----
-
 ```json
 {
     "items": [
         {
             "id": "item-ID-1234",
             "title": "Meu produto",
-            "currency_id": "[FAKER][CURRENCY][ACRONYM]",
+            "currency_id": "BRL",
             "picture_url": "https://www.mercadopago.com/org-img/MP3/home/logomp3.gif",
             "description": "Descrição do Item",
             "category_id": "art",
@@ -36,7 +33,7 @@ Se você oferece compras de valores altos, por exemplo, pode [excluir meios de p
         "email": "user@email.com",
         "phone": {
             "area_code": "11",
-            "number": "4444-4444"
+            "number": 4444-4444
         },
         "identification": {
             "type": "CPF",
@@ -76,88 +73,6 @@ Se você oferece compras de valores altos, por exemplo, pode [excluir meios de p
 }
 ```
 
-------------
-----[mco]----
-
- ```json
-{
-	"items": [
-		{
-			"id": "item-ID-1234",
-			"title": "Title of what you are paying for. It will be displayed in the payment process.",
-			"currency_id": "CLP",
-			"picture_url": "https://www.mercadopago.com/org-img/MP3/home/logomp3.gif",
-			"description": "Item description",
-			"category_id": "art", // Available categories at https://api.mercadopago.com/item_categories
-			"quantity": 1,
-			"unit_price": 100
-		}
-	],
-	"payer": {
-		"name": "user-name",
-		"surname": "user-surname",
-		"email": "user@email.com",
-		"date_created": "2015-06-02T12:58:41.425-04:00",
-		"phone": {
-			"area_code": "11",
-			"number": "4444-4444"
-		},
-		"identification": {
-			"type": "RUT", // Available ID types at https://api.mercadopago.com/v1/identification_types
-			"number": "12345678"
-		},
-		"address": {
-			"street_name": "Street",
-			"street_number": 123,
-			"zip_code": "5700"
-		}
-	},
-	"back_urls": {
-		"success": "https://www.success.com",
-		"failure": "http://www.failure.com",
-		"pending": "http://www.pending.com"
-	},
-	"auto_return": "approved",
-	"payment_methods": {
-		"excluded_payment_methods": [
-			{
-				"id": "master"
-			}
-		],
-		"excluded_payment_types": [
-			{
-				"id": "ticket"
-			}
-		],
-		"installments": 12,
-		"default_payment_method_id": null,
-		"default_installments": null
-	},
-	"shipments": {
-		"receiver_address": {
-			"zip_code": "5700",
-			"street_number": 123,
-			"street_name": "Street",
-			"floor": 4,
-			"apartment": "C"
-		}
-	},
-	"notification_url": "https://www.your-site.com/ipn",
-	"statement_descriptor": "MEUNEGOCIO",
-	"external_reference": "Reference_1234",
-	"expires": true,
-	"expiration_date_from": "2016-02-01T12:00:00.000-04:00",
-	"expiration_date_to": "2016-02-28T12:00:00.000-04:00",
-	"taxes": [
-		{
-			"type": "IVA",
-			"value": 16
-		}
-	]
-}
- ```
-------------
-
 ----[mla]----
 ## Defina os meios de pagamento desejados
 
@@ -172,7 +87,6 @@ Por meio da preferência de pagamento, você pode configurar um meio de pagament
 | `purpose` | Ao indicar o valor `wallet_purchase` neste método, o Payment Brick apenas aceitará pagamentos de usuários cadastrados no Mercado Pago, com cartão e saldo em conta. |
 
 ------------
-
 ----[mlb]----
 ## Defina os meios de pagamento desejados
 
@@ -187,7 +101,6 @@ Por meio da preferência de pagamento, você pode configurar um meio de pagament
 | `purpose` | Ao indicar o valor `wallet_purchase` neste método, o Payment Brick apenas aceitará pagamentos de usuários cadastrados no Mercado Pago, com cartão e saldo em conta. |
 
 ------------
-
 ----[mlm]----
 ## Defina os meios de pagamento desejados
 
@@ -202,7 +115,6 @@ Por meio da preferência de pagamento, você pode configurar um meio de pagament
 | `purpose` | Ao indicar o valor `wallet_purchase` neste método, o Payment Brick apenas aceitará pagamentos de usuários cadastrados no Mercado Pago, com cartão e saldo em conta. |
 
 ------------
-
 ----[mlc, mco, mpe, mlu]----
 ## Defina os meios de pagamento desejados
 
@@ -359,7 +271,6 @@ Para ativar essa opção de pagamento, acesse "[Opcões de negócio](https://www
 Você pode aceitar pagamentos com a carteira do Mercado Pago apenas de usuários cadastrados, com cartão, saldo disponível e Mercado Crédito.
 
 ------------
-
 ----[mlm, mlc, mco, mpe, mlu]----
 Você pode aceitar pagamentos com a carteira do Mercado Pago apenas de usuários cadastrados, com cartão e saldo disponível.
 
@@ -422,7 +333,6 @@ Por exemplo:
 ------------
 
 ----[mla, mlb, mco]----
-
 ## Altere a data de vencimento de pagamentos em dinheiro
 
 É possível alterar a data de vencimento padrão de pagamentos em dinheiro enviando o campo `date_of_expiration` na requisição de criação da preferência. A data configurada por você deve ser entre 1 dia e 30 dias a partir da data de emissão do pagamento.
@@ -451,6 +361,7 @@ Revise os [tempos de creditação por meio de pagamento](https://www.mercadopago
 > Importante
 >
 > Caso o pagamento seja realizado depois da data de expiração, o valor será estornado na conta Mercado Pago do pagador.
+
 ------------
 
 ## Ative o modo binário
