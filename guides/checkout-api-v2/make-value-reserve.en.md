@@ -211,11 +211,3 @@ In addition, it is also possible to return as `rejected` or `pending`. Please no
 >
 > The reservation will be valid for 5 days. If you do not capture it within this period, it will be canceled. In addition, it is necessary to save the payment ID in order to complete the process.
 ------------
-
-> NEXT_STEP_CARD_EN
->
-> Capture authorized payment
->
-> Learn about the available ways to capture an authorized payment.
->
-> [Capture authorized payment](/developers/en/docs/checkout-api/payment-management/capture-authorized-payment)

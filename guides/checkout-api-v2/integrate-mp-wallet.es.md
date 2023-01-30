@@ -218,20 +218,3 @@ Con la preferencia creada, se debe exhibir el botón de pago que permitirá al c
 > Importante
 >
 > Al crear un pago es posible recibir 3 estados diferentes: "Pendiente", "Rechazado" y "Aprobado". Para mantenerse al día con las actualizaciones, debe configurar su sistema para recibir notificaciones de pago y otras actualizaciones de estado. Consulte [Notificaciones](/developers/es/docs/checkout-api/additional-content/notifications/introduction) para obtener más detalles.
-
-> PREV_STEP_CARD_ES
->
-> Requisitos previos
->
-> Consulta los requisitos previos que se necesitan para integrar Checkout API.
->
-> [Integrar Checkout API](/developers/es/docs/checkout-api/prerequisites)
-
-
-> NEXT_STEP_CARD_ES
->
-> Prueba de integración
->
-> Aprende cómo probar la integración de Checkout API en tu tienda.
->
-> [Prueba de integración](/developers/es/docs/checkout-api/integration-test/make-test-purchase)

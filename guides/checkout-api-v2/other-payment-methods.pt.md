@@ -1552,20 +1552,3 @@ Tenha em conta que apenas se pode cancelar os pagamentos que se encontram com st
 Para cancelar um pagamento, veja a seção [Reembolsos e cancelamentos](/developers/pt/docs/checkout-api/payment-management/cancellations-and-refunds).
 
 ------------
-
-> PREV_STEP_CARD_PT
->
-> Pré-requisitos
->
-> Veja os pré-requisitos necessários para integrar o Checkout Transparente.
->
-> [Integrar Checkout Transparente](/developers/pt/docs/checkout-api/prerequisites)
-
-
-> NEXT_STEP_CARD_PT
->
-> Teste de integração
->
-> Saiba como testar a integração do Checkout Transparente em sua loja.
->
-> [Teste de integração](/developers/pt/docs/checkout-api/integration-test/make-test-purchase)

@@ -15,18 +15,3 @@ Con las credenciales configuradas, siga los pasos a continuación para realizar 
 
 ¡Listo! Una vez que se completen estos pasos, la integración estará completa y podrá usar sus credenciales de producción para usar el Checkout API. Para más información, consulte la sección [Requisitos para salir a producción](/developers/es/docs/checkout-api/integration-test/go-to-production-requirements)
 
-> PREV_STEP_CARD_ES
->
-> Gestión de pagos
->
-> Aprende a administrar los pagos de tu tienda.
->
-> [Gestión de pagos](/developers/es/docs/checkout-api/payment-management)
-
-> NEXT_STEP_CARD_ES
->
-> Tarjetas de prueba
->
-> Utilice tarjetas de prueba para simular todo el flujo de compra
->
-> [Tarjetas de prueba](/developers/es/docs/checkout-api/integration-test/test-cards)

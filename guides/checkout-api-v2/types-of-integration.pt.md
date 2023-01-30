@@ -40,19 +40,3 @@ Os três tipos de integração citados anteriormente são elegíveis a **certifi
 Além dos meios de pagamento mostrados na tabela acima, também é possível oferecer outras formas de pagamento. Para obter uma lista detalhada com todos as opções disponíveis para integração, envie um **GET** ao endpoint [/v1/payment_methods](/developers/pt/reference/payment_methods/_payment_methods/get) e execute a requisição. Na resposta você terá acesso a cada uma das opções.
 
 
-> PREV_STEP_CARD_PT
->
-> Página inicial
->
-> Retorne para a página inicial da documentação de Checkout Transparente.
->
-> [Página inicial](/developers/pt/docs/checkout-api/landing)
-
-
-> NEXT_STEP_CARD_PT
->
-> Pré-requisitos
->
-> Veja os pré-requisitos necessários para integrar o Checkout Transparente.
->
-> [Integrar Checkout Transparente](/developers/pt/docs/checkout-api/prerequisites)

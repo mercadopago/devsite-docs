@@ -19,10 +19,3 @@ To create a test user, send a **POST** with your **production credential** _Acce
 >
 > It is possible to generate up to 10 test user accounts at the same time. Therefore, we recommend saving each one's email and password. Trial users expire after 60 days without activity on Mercado Pago. Both buyer and seller must be test users.
 
-> NEXT_STEP_CARD_EN
->
-> Make test purchase
->
-> Learn how to make a purchase to test the Checkout API integration.
->
-> [Make test purchase](/developers/en/docs/checkout-api/integration-test/make-test-purchase)

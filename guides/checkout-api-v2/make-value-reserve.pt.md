@@ -185,7 +185,7 @@ A resposta indica que o pagamento se encontra autorizado e pendente de captura.
 ```
 ]]]
 
-Além disso, também é possível retornar como rejeitado ou pendente. Tenha em conta que os valores autorizados não poderão ser utilizados pelo seu cliente até que não sejam capturados. Recomendamos realizar a captura o quanto antes.
+Além disso, também é possível retornar como `rejeitado` ou `pendente`. Tenha em conta que os valores autorizados não poderão ser utilizados pelo seu cliente até que não sejam capturados. Recomendamos realizar a captura o quanto antes.
 
 
 ----[mla, mlm]----
@@ -211,11 +211,3 @@ Além disso, também é possível retornar como rejeitado ou pendente. Tenha em 
 >
 > A reserva terá validade de 5 dias. Se não capturá-la nesse período, será cancelada. Além disso, é necessário guardar o ID do pagamento para poder finalizar o processo.
 ------------
-
-> NEXT_STEP_CARD_PT
->
-> Capturar pagamento autorizado
->
-> Conheça as formas disponíveis para captura de um pagamento autorizado.
->
-> [Capturar pagamento autorizado](/developers/pt/docs/checkout-api/payment-management/capture-authorized-payment)

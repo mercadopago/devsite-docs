@@ -185,18 +185,3 @@ The response will bring the following result.
 }
 ```
 
-> PREV_STEP_CARD_EN
->
-> Search customer
->
-> Learn how to search for a customer based on specific information.
->
-> [Search Customer](/developers/en/docs/checkout-api/cards-and-customers-management/search-customers)
-
-> NEXT_STEP_CARD_EN
->
-> Get cards list
->
-> Learn how to consult the list of cards for a given customer.
->
-> [Get cards list](/developers/en/docs/checkout-api/cards-and-customers-management/get-cards-list)

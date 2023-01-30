@@ -11,19 +11,3 @@ Para integrar Checkout API, es importante cumplir con los requisitos que se mues
 
 Si se cumplen todos los requisitos previos, podrás realizar la integración de Checkout API.
 
-> PREV_STEP_CARD_ES
->
-> Tipos de integración
->
-> Consulta los tipos de integración disponibles para cada medio de pago.
->
-> [Tipos de integración](/developers/es/docs/checkout-api/types-of-integration)
-
-
-> NEXT_STEP_CARD_ES
->
-> Configuración de la integración
->
-> Aprende a realizar la integración de Checkout API para pagos con tarjeta.
->
-> [Configuración de la integración](/developers/es/docs/checkout-api/integration-configuration/card/integrate-via-cardform)

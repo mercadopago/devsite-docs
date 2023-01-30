@@ -64,18 +64,4 @@ curl -X GET \
 ]]]
 
 
-> PREV_STEP_CARD_ES
->
-> Agregar nuevas tarjetas a un cliente
->
-> Aprende a agregar nuevas tarjetas a un cliente previamente creado.
->
-> [Agregar nuevas tarjetas a un cliente](/developers/es/docs/checkout-api/cards-and-customers-management/add-new-cards-to-customer)
 
-> NEXT_STEP_CARD_ES
->
-> Recibir pagos con tarjetas guardadas
->
-> Aprende a recibir pagos desde tarjetas previamente guardadas en la cuenta del comprador.
->
-> [Recibir pagos con tarjetas guardadas](/developers/es/docs/checkout-api/cards-and-customers-management/receive-payments-with-saved-cards)
