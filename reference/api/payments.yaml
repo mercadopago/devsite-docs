@@ -1343,6 +1343,7 @@ paths:
                       - 2007--Connection to Card Token API fail.
                       - 2009--Card token issuer can't be null.
                       - 2060--The customer can't be equal to the collector.
+                      - 2077--Deferred capture not supported.
                       - 3000--You must provide your cardholder_name with your card data.
                       - 3001--You must provide your cardissuer_id with your card data.
                       - 3003--Invalid card_token_id.
