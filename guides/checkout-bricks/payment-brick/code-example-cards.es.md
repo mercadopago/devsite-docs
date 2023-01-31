@@ -8,6 +8,13 @@ Para facilitar y optimizar su proceso de integración, vea a continuación un ej
 >
 > Configurar la integración
 
+> NOTA
+>
+> Atención
+>
+> Si es necesario cerrar y volver a abrir el Brick (cuando un usuario vuelve al carrito para cambiar algún detalle de compra, por ejemplo) es necesario eliminar la instancia actual del Brick y crear una nueva cuando sea necesario mostrarlo otra vez. 
+> Para ello, utilice el método `unmount` disponible en el controller de Brick, en este caso: `cardPaymentBrickController.unmount()`.
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
