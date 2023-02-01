@@ -408,3 +408,1330 @@ paths:
                     type: string
                     enum:
                       - 500--Error--Internal server error
+  /v1/advanced_payments: 
+    post:
+      tags:
+        - $ref: '#/tags/wallet-connect'
+      summary: Create an Advanced Payment.
+      x-summary-i18n:
+        eng: Create an Advanced Payment
+        spa: Crear un Advanced Payment
+        por: Criar um Advanced Payment
+      description: Advanced Payments are particular payments for wallet connect where the integrator obtains a "payer token" from the payer when it performs the agreement flow. This “payer token” is used by the integrator to make payment from the payer's wallet
+      x-description-i18n:
+        eng: 
+        spa: Los Advanced Payments son pagos particulares para Wallet Connect donde el integrador obtiene un "payer token" del pagador cuando realiza el flujo del agreement. Este "payer token" es utilizado por el integrador para realizar el pago desde la billetera del pagador
+        por: Advanced Payments são pagamentos específicos para Wallet Connect nos quais o integrador obtém um "payer token" do pagador quando realiza o fluxo do agreement. Este “payer tokenr” é usado pelo integrador para fazer o pagamento a partir da carteira do pagador
+      requestBody:
+        description: Here are the fields needed to complete a request for create an Advanced Payments.
+        x-description-i18n:
+          eng: Here are the fields needed to complete a request for create an Advanced Payments.
+          spa: Estos son los campos necesarios para completar un request para crear un Advanced Payment.
+          por: Estes são os campos necessários para preencher um request e criar um Advanced Payment.
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              description: Advanced payment data.
+              x-description-i18n:
+                eng: Advanced payment data. 
+                spa: Datos del Advanced Payment.
+                por: Dados do Advanced Payment.              
+              properties: 
+                wallet_payment: 
+                  required: true
+                  type: object
+                  description: It indicates is an advanced payements from a seller with a previous Wallet Connect vinculation.
+                  x-description-i18n:
+                    eng: It indicates is an advanced payements from a seller with a previous Wallet Connect vinculation.
+                    spa: Indica que es un advanced payment de un vendedor con una vinculación previa de Wallet Connect.
+                    por: Indica que é um advanced payment de um vendedor com Wallet Connect previamente vinculado.
+                  properties:
+                    transaction_amount: 
+                      required: true
+                      type: number
+                      description: Payment amount.
+                      x-description-i18n:
+                        eng: Payment amount.
+                        spa: Monto del pago.
+                        por: Valor do pagamento.
+                      example: 125.98
+                    description:
+                      type: string
+                      description: A brief description of the payment.
+                      x-description-i18n:
+                        eng: A brief description of the payment.
+                        spa: Breve descripción del pago.
+                        por: Breve descrição do pagamento.
+                      example: Google payment
+                    external_reference:
+                      type: string
+                      description: An string to allow identification of payment in case of an issue.
+                      x-description-i18n:
+                        eng: An string to allow identification of payment in case of an issue.
+                        spa: Una string para permitir la identificación del pago en caso de un problema.
+                        por: Uma string que permite identificar um pagamento caso haja algum problema.
+                      example: Payment_seller_123
+                payer:
+                  required: true
+                  type: object
+                  description: Payer information required to craete the advanced payment.
+                  x-description-i18n:
+                    eng: Payer information required to craete the advanced payment. 
+                    spa: Información del pagador requerida para crear el pago adelantado.
+                    por: Informação obrigatória sobre o pagador para criar o advanced payment.
+                  properties:
+                    token:
+                      required: true
+                      type: string
+                      description: The payer token is the token used by the integrator to make payment from the payer's wallet.
+                      x-description-i18n:
+                        eng: The payer token is the token used by the integrator to make payment from the payer's wallet.
+                        spa: El payer token es el token utilizado por el integrador para realizar el pago desde la billetera del pagador.
+                        por: O payer token é o token usado pelo integrador para fazer o pagamento da carteira do pagador.
+                      example: abcdef1e23f4567d8e9123eb6591ff68df74c57930551ed980239f4538a7e530
+                    type_token:
+                      required: true
+                      type: string
+                      description: The token type.
+                      x-description-i18n:
+                        eng: The token type.
+                        spa: El tipo de token
+                        por: Tipo de token.
+                      example: wallet-tokens
+                binary_mode:
+                  type: boolean
+                  description: When the payment is activated, it can only be approved or rejected. Otherwise, the payment may be pending.
+                  x-description-i18n:
+                    eng: When the payment is activated, it can only be approved or rejected. Otherwise, the payment may be pending.
+                    spa: Cuando el pago está activado, solo puede ser aprobado o rechazado. De lo contrario, el pago puede estar pendiente.
+                    por: Quando o pagamento é ativado, somente pode ser aprovado ou rejeitado, caso contrário, o paagmento ficará como pendente.
+                  example: false
+                capture:
+                  type: boolean
+                  description: It is a boolean field found in two-step payments (like debit card). In this type of payment, which is carried out asynchronously, the purchase value is first reserved (capture = false). This amount is captured and not debited from the account instantly. When the money is actually transferred to the collector (who receives the payment) the amount is captured (capture = true).
+                  x-description-i18n:
+                    eng: It is a boolean field found in two-step payments (like debit card). In this type of payment, which is carried out asynchronously, the purchase value is first reserved (capture = false). This amount is captured and not debited from the account instantly. When the money is actually transferred to the collector (who receives the payment) the amount is captured (capture = true).
+                    spa: Es un campo booleano que se encuentra en pagos de dos pasos (como tarjeta de débito). En este tipo de pago, que se realiza de forma asíncrona, primero se reserva el valor de la compra (capture = false). Esta cantidad se captura y no se debita de la cuenta al instante. Cuando el dinero se transfiere realmente al cobrador (que recibe el pago), se captura la cantidad (capture = true).
+                    por: É um campo booleano encontrado em pagamentos em duas etapas (como cartão de débito). Nesse tipo de pagamento, que é realizado de forma assíncrona, o valor da compra é reservado primeiro (capture = false). Esse valor é capturado e não debitado da conta instantaneamente. Quando o dinheiro é realmente transferido para o cobrador (quem recebe o pagamento) o valor é capturado (capture = true).
+                  example: true
+      responses:
+        '201': 
+          description: Advanced payment created. Check SCHEMAS Status for variants, payment associated to the advanced payments may be rejected.
+          x-description-i18n:
+            eng: Advanced payment created. Check SCHEMAS Status for variants, payment associated to the advanced payments may be rejected.
+            spa: Advanced payment creado. Consulta SCHEMAS Status por variantes, el pago asociado a los advanced payments puede ser rechazado.
+            por: Advanced payment criado. Verifique o status do SCHEMAS para variantes, o pagamento associado aos advanced payments pode ser rejeitado.
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  advancedPaymentRespAccepted:
+                    title: Response of advance payment creation accepted.
+                    type: object
+                    properties:
+                      id:
+                        type: number
+                        description: Unique ID that identifies the advanced payment.
+                        x-description-i18n:
+                          eng: Unique ID that identifies the advanced payment.
+                          spa: ID único que identifica el advanced payment.
+                          por: ID único que identifica o advanced payment.
+                        example: 10267812
+                      wallet_payment: 
+                        required: true
+                        type: object
+                        description: It indicates is an advanced payements from a seller with a previous wallet connect vinculation.
+                        x-description-i18n:
+                          eng: It indicates is an advanced payements from a seller with a previous Wallet Connect vinculation.
+                          spa: Indica que es un advanced payment de un vendedor con una vinculación previa de Wallet Connect.
+                          por: Indica que é um advanced payment de um vendedor com Wallet Connect previamente vinculado.
+                        properties:
+                          transaction_amount: 
+                            required: true
+                            type: number
+                            description: Payment amount.
+                            x-description-i18n:
+                              eng: Payment amount.
+                              spa: Monto del pago.
+                              por: Valor do pagamento.
+                            example: 125.98
+                          description:
+                            type: string
+                            description: A brief description of the payment.
+                            x-description-i18n:
+                              eng: A brief description of the payment.
+                              spa: Una breve descripción del pago.
+                              por: Breve descrição do pagamento.
+                            example: payment of a bussines trip
+                          external_reference:
+                            type: string
+                            description: An string to allow identification of payment in case of an issue.
+                            x-description-i18n:
+                              eng: An string to allow identification of payment in case of an issue.
+                              spa: Una string para permitir la identificación del pago en caso de un problema.
+                              por: Uma string que permite identificar um pagamento caso haja algum problema.
+                            example: Payment_seller_123
+                      payments:
+                        type: array
+                        title: Response Advanced Payment approved
+                        items:
+                          type: object
+                          description: Payment data generated.
+                          x-description-i18n:
+                            eng: Payment data generated.
+                            spa: Datos de pago generados.
+                            por: Dados de pagamento gerados.
+                          properties:
+                            id:
+                              type: number
+                              description: Unique payment ID.
+                              x-description-i18n:
+                                eng: Unique payment ID.
+                                spa: ID de pago único.
+                                por: ID único de pagamento.
+                              example: 3870106238
+                            status:
+                              type: string
+                              description: The status of a payment made by Advanced Payments internal-api.mercadopago.com
+                              x-description-i18n:
+                                eng: The status of a payment made by Advanced Payments internal-api.mercadopago.com
+                                spa: El status de un pago realizado por Advanced Paymentrs internal-api.mercadopago.com
+                                por: O status de um pagamento feito pelo Advanced Payments internal-api.mercadopago.com
+                              enum:
+                                - approved
+                                - in_process
+                            status_detail:
+                              type: string
+                              description: Status description.
+                              x-description-i18n:
+                                eng: Status description.
+                                spa: Descripción del status.
+                                por: Descrição do status.
+                              example: approved_id
+                            payment_type_id: 
+                              type: string
+                              description: The preferred payment type of the payer.
+                              x-description-i18n:
+                                eng: O tipo de pagamento preferencial do pagador.
+                                spa: El tipo de pago preferido del pagador.
+                                por: Tipo de pagamento preferido pelo pagador.
+                              enum:
+                                - credit_card
+                                - debit_card
+                                - account_money
+                            payment_method_id: 
+                              type: string
+                              description: Method used in payment type.
+                              x-description-i18n:
+                                eng: Method used in payment type.
+                                spa: Método utilizado en el tipo de pago.
+                                por: Método utilizado no tipo de pagamento.
+                              example: credit_card_id
+                            transaction_amount:
+                              type: number
+                              description: The payment amount.
+                              x-description-i18n:
+                                eng: The payment amount.
+                                spa: Monto del pago.
+                                por: Valor do pagamento.
+                              example: 700.50
+                            installments: 
+                              type: number
+                              description: Total installment for the payment.
+                              x-description-i18n:
+                                eng: Total installment for the payment.
+                                spa: Cuota total para el pago.
+                                por: Total de parcelas para o pagamento.
+                              example: 1
+                            description: 
+                              type: string
+                              description: Purchased product’s description, the reason for payment.
+                              x-description-i18n:
+                                eng: Purchased product’s description, the reason for payment.
+                                spa: Descripción del producto adquirido, motivo del pago.
+                                por: Descrição do produto adquirido, motivo do pagamento.
+                              example: Google Payment
+                            capture:
+                              type: boolean
+                              description: It is a boolean field found in two-step payments (like debit card). In this type of payment, which is carried out asynchronously,
+                               the purchase value is first reserved (capture = false). This amount is captured and not debited from the account instantly.
+                               When the money is actually transferred to the collector (who receives the payment) the amount is captured (capture = true).
+                              x-description-i18n:
+                                eng: It is a boolean field found in two-step payments (like debit card). In this type of payment, which is carried out asynchronously, the purchase value is first reserved (capture = false). This amount is captured and not debited from the account instantly. When the money is actually transferred to the collector (who receives the payment) the amount is captured (capture = true).
+                                spa: Es un campo booleano que se encuentra en pagos de dos pasos (como tarjeta de débito). En este tipo de pago, que se realiza de forma asíncrona, primero se reserva el valor de la compra (capture = false). Esta cantidad se captura y no se debita de la cuenta al instante. Cuando el dinero se transfiere realmente al cobrador (que recibe el pago), se captura la cantidad (capture = true).
+                                por: É um campo booleano encontrado em pagamentos em duas etapas (como cartão de débito). Nesse tipo de pagamento, que é realizado de forma assíncrona, o valor da compra é reservado primeiro (capture = false). Esse valor é capturado e não debitado da conta instantaneamente. Quando o dinheiro é realmente transferido para o cobrador (quem recebe o pagamento) o valor é capturado (capture = true).
+                              example: true
+                            external_reference: 
+                              type: string
+                              description: This is a custom seller identifier, used in case to match a request between seller and Mercado Pago.
+                              x-description-i18n:
+                                eng: This is a custom seller identifier, used in case to match a request between seller and Mercado Pago.
+                                spa: Este es un identificador de vendedor personalizado, utilizado en caso de hacer coincidir una solicitud entre el vendedor y Mercado Pago.
+                                por: Identificador de vendedor personalizado, usado no caso de corresponder uma solicitação entre o vendedor e o Mercado Pago.
+                              example: payment_123
+                      disbursements:
+                        type: object
+                        description: List of payments that correspond to each Seller.
+                        x-description-i18n:
+                          eng: List of payments that correspond to each Seller.
+                          spa: Lista de pagos que corresponden a cada Seller.
+                          por: Lista de pagamentos que correspondem a cada Seller.
+                        properties:
+                          collector_id:
+                            type: string
+                            description: Merchant Mercado Pago account id.
+                            x-description-i18n:
+                              eng: Merchant Mercado Pago account id.
+                              spa: Identificación de la cuenta de Mercado Pago del Merchant.
+                              por: ID da conta Mercado Pago do Merchant.
+                            example: collectorId
+                      payer:
+                        type: object
+                        properties:
+                          id: 
+                            type: number
+                            description: The payment identifier.
+                            x-description-i18n:
+                              eng: The payment identifier.
+                              spa: El identificador de pago.
+                              por: Identificador do pagamento.
+                            example: 8879
+                      site_id:
+                        type: string
+                        description: Country of origin of the Mercado Pago account.
+                        x-description-i18n:
+                          eng: Country of origin of the Mercado Pago account.
+                          spa: País de origen de la cuenta de Mercado Pago.
+                          por: País de origem da conta Mercado Pago. 
+                        example: MLA
+                      binary_mode:
+                        type: boolean
+                        description: When the payment is activated, it can only be approved or rejected. Otherwise, the payment may be pending.
+                        x-description-i18n:
+                          eng: When the payment is activated, it can only be approved or rejected. Otherwise, the payment may be pending.
+                          spa: Cuando el pago está activado, solo puede ser aprobado o rechazado. De lo contrario, el pago puede estar pendiente.
+                          por: Quando o pagamento é ativado, somente pode ser aprovado ou rejeitado, caso contrário, o paagmento ficará como pendente.
+                        example: true
+                      date_created:
+                        type: string
+                        description: Advanced Payment creation date.
+                        x-description-i18n:
+                          eng: Advance Payment creation date.
+                          spa: Fecha de creación del Advanced Payment.
+                          por: Data de criação do Advanced Payment.
+                        example: "2018-10-20T09:34:20.518-04:00"
+                      date_last_updated:
+                        type: string
+                        description: Advance Payment last update date.
+                        x-description-i18n:
+                          eng: Advance Payment last update date.
+                          spa: Fecha de la última actualización del Advanced Payment.
+                          por: Data da última atualização do Advanced Payment.
+                        example: "2018-10-20T09:34:20.518-04:00"
+                  advancedPaymentRespRejected:
+                    title: Response of advance payment creation rejected.
+                    type: object
+                    properties:
+                      id:
+                        type: number
+                        description: Unique ID that identifies the advanced payment.
+                        x-description-i18n:
+                          eng: Unique ID that identifies the advanced payment.
+                          spa: ID único que identifica el advanced payment.
+                          por: ID único que identifica o advanced payment.
+                        example: 10267812
+                      wallet_payment:
+                        required: true
+                        type: object
+                        description: It indicates is an advanced payements from a seller with a previous wallet connect vinculation.
+                        x-description-i18n:
+                          eng: It indicates is an advanced payements from a seller with a previous Wallet Connect vinculation.
+                          spa: Indica que es un advanced payment de un vendedor con una vinculación previa de Wallet Connect.
+                          por: Indica que é um advanced payment de um vendedor com Wallet Connect previamente vinculado.
+                        properties:
+                          transaction_amount: 
+                            required: true
+                            type: number
+                            description: Payment amount.
+                            x-description-i18n:
+                              eng: Payment amount.
+                              spa: Monto del pago.
+                              por: Valor a ser pago.
+                            example: 125.98
+                          description:
+                            type: string
+                            description: A brief description of the payment.
+                            x-description-i18n:
+                              eng: A brief description of the payment.
+                              spa: Una breve descripción del pago.
+                              por: Breve descrição do pagamento.
+                            example: Google payment
+                          external_reference:
+                            type: string
+                            description: An string to allow identification of payment in case of an issue.
+                            x-description-i18n:
+                              eng: An string to allow identification of payment in case of an issue.
+                              spa: Una string para permitir la identificación del pago en caso de un problema.
+                              por: Uma string que permite identificar um pagamento caso haja algum problema.
+                            example: Payment_seller_123
+                      payments:
+                        type: array
+                        title: Response Advanced Payment approved
+                        items:
+                          type: object
+                          description: Payment data generated.
+                          x-description-i18n:
+                            eng: Payment data generated.
+                            spa: Datos de pago generados.
+                            por: Dados de pagamento gerados.
+                          properties:
+                            id:
+                              type: number
+                              description: Unique payment ID.
+                              x-description-i18n:
+                                eng: Unique payment ID.
+                                spa: ID de pago único.
+                                por: ID único de pagamento.
+                              example: 3870106238
+                            status:
+                              type: string
+                              description: The status of a payment made by Advanced Payments internal-api.mercadopago.com
+                              x-description-i18n:
+                                eng: The status of a payment made by Advanced Payments internal-api.mercadopago.com
+                                spa: El status de un pago realizado por Advanced Paymentrs internal-api.mercadopago.com
+                                por: O status de um pagamento feito pelo Advanced Payments internal-api.mercadopago.com
+                              enum:
+                                - approved
+                                - in_process
+                            status_detail:
+                              type: string
+                              description: Status description.
+                              x-description-i18n:
+                                eng: Status description.
+                                spa: Descripción del status.
+                                por: Descrição do status.
+                              example: approved_id
+                            payment_type_id: 
+                              type: string
+                              description: The preferred payment type of the payer.
+                              x-description-i18n:
+                                eng: O tipo de pagamento preferencial do pagador.
+                                spa: El tipo de pago preferido del pagador.
+                                por: Tipo de pagamento preferido pelo pagador.
+                              enum:
+                                - credit_card
+                                - debit_card
+                                - account_money
+                            payment_method_id: 
+                              type: string
+                              description: Mehtod used in payment type.
+                              x-description-i18n:
+                                eng: Method used in payment type.
+                                spa: Método utilizado en el tipo de pago.
+                                por: Método utilizado no tipo de pagamento.
+                              example: account_money_id
+                            transaction_amount:
+                              type: number
+                              description: The payment amount.
+                              x-description-i18n:
+                                eng: The payment amount.
+                                spa: Monto del pago.
+                                por: Valor do pagamento.
+                              example: 700.50
+                            installments: 
+                              type: number
+                              description: Total installment for the payment.
+                              x-description-i18n:
+                                eng: Total installment for the payment.
+                                spa: Cuota total para el pago.
+                                por: Total de parcelas para o pagamento.
+                              example: 1
+                            description: 
+                              type: string
+                              description: Purchased product’s description, the reason for payment.
+                              x-description-i18n:
+                                eng: Purchased product’s description, the reason for payment.
+                                spa: Descripción del producto adquirido, motivo del pago.
+                                por: Descrição do produto adquirido, motivo do pagamento.
+                              example: Google Payment
+                            capture:
+                              type: boolean
+                              description: It is a boolean field found in two-step payments (like debit card). In this type of payment, which is carried out asynchronously,
+                               the purchase value is first reserved (capture = false). This amount is captured and not debited from the account instantly.
+                               When the money is actually transferred to the collector (who receives the payment) the amount is captured (capture = true).
+                              x-description-i18n:
+                                eng: It is a boolean field found in two-step payments (like debit card). In this type of payment, which is carried out asynchronously, the purchase value is first reserved (capture = false). This amount is captured and not debited from the account instantly. When the money is actually transferred to the collector (who receives the payment) the amount is captured (capture = true).
+                                spa: Es un campo booleano que se encuentra en pagos de dos pasos (como tarjeta de débito). En este tipo de pago, que se realiza de forma asíncrona, primero se reserva el valor de la compra (capture = false). Esta cantidad se captura y no se debita de la cuenta al instante. Cuando el dinero se transfiere realmente al cobrador (que recibe el pago), se captura la cantidad (capture = true).
+                                por: É um campo booleano encontrado em pagamentos em duas etapas (como cartão de débito). Nesse tipo de pagamento, que é realizado de forma assíncrona, o valor da compra é reservado primeiro (capture = false). Esse valor é capturado e não debitado da conta instantaneamente. Quando o dinheiro é realmente transferido para o cobrador (quem recebe o pagamento) o valor é capturado (capture = true).
+                              example: false
+                            external_reference: 
+                              type: string
+                              description: This is a custom seller identifier, used in case to match a request between seller and Mercado Pago.
+                              x-description-i18n:
+                                eng: This is a custom seller identifier, used in case to match a request between seller and Mercado Pago.
+                                spa: Este es un identificador de vendedor personalizado, utilizado en caso de hacer coincidir una solicitud entre el vendedor y Mercado Pago.
+                                por: Identificador de vendedor personalizado, usado no caso de corresponder uma solicitação entre o vendedor e o Mercado Pago.
+                              example: payment_123
+                      disbursements:
+                        type: object
+                        description: List of payments that correspond to each Seller.
+                        x-description-i18n:
+                          eng: List of payments that correspond to each Seller.
+                          spa: Lista de pagos que corresponden a cada Seller.
+                          por: Lista de pagamentos que correspondem a cada Seller.
+                        properties:
+                          collector_id:
+                            type: string
+                            description: Merchant Mercado Pago account id.
+                            x-description-i18n:
+                              eng: Merchant Mercado Pago account id.
+                              spa: Identificación de la cuenta de Mercado Pago del Merchant.
+                              por: ID da conta Mercado Pago do Merchant.
+                            example: collectorId
+                      payer:
+                        type: object
+                        properties:
+                          id: 
+                            type: number
+                            description: The payment identifier.
+                            x-description-i18n:
+                              eng: The payment identifier.
+                              spa: El identificador de pago.
+                              por: Identificador do pagamento.
+                            example: 8879
+                      site_id:
+                        type: string
+                        description: Country of origin of the Mercado Pago account.
+                        x-description-i18n:
+                          eng: Country of origin of the Mercado Pago account.
+                          spa: País de origen de la cuenta de Mercado Pago.
+                          por: País de origem da conta Mercado Pago. 
+                        example: MLB
+                      binary_mode:
+                        type: boolean
+                        description: When the payment is activated, it can only be approved or rejected. Otherwise, the payment may be pending.
+                        x-description-i18n:
+                          eng: When the payment is activated, it can only be approved or rejected. Otherwise, the payment may be pending.
+                          spa: Cuando el pago está activado, solo puede ser aprobado o rechazado. De lo contrario, el pago puede estar pendiente.
+                          por: Quando o pagamento é ativado, somente pode ser aprovado ou rejeitado, caso contrário, o paagmento ficará como pendente.
+                        example: true
+        '400':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 400--Bad-Request--Invalid transaction amount in wallet payments.
+                      - 400--Bad-Request--Invalid capture payment status
+                      - 400--Bad-Request--Some of the payment methods don't support deferred capture
+                      - 400--Bad-Request--Field payment_type_id is required.
+                      - 400--Bad-Request--Maximum disbursements allowed is 100
+                      - 400--Bad-Request--Field id must not be blank
+                      - 400--Bad-Request--external_reference is required.
+                      - 400--Bad-Request--Invalid payer token.
+        '500':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500--Error--Internal server error
+                      - 500--Error--IInternal Error in Discarded List.
+  /v1/advanced_payments/{advanced_payment_id}:
+    put:
+      tags:
+        - $ref: '#/tags/wallet-connect'
+      summary: Confirm or cancel an advanced payment
+      x-summary-i18n:
+        eng: Confirm or cancel an advanced payment
+        spa: Confirmar o cancelar un advanced payment
+        por: Confirmar ou cancelar um advanced payment
+      description: This endpoint allows to perform one of two actions. Capture or cancel and advanced payment. To confirm you must send the wallet payment data and field capture in true. To cancel you send wallet payment data and field status 'cancelled'.
+      x-description-i18n:
+        eng: This endpoint allows to perform one two actions. Capture or cancel and advanced payment. To confirm you must send the wallet payment data and field capture in true. To cancel you send wallet payment data and field status 'cancelled'.
+        spa: Este endpoint le permite realizar dos acciones. Capturar o cancelar un advanced payment. Para confirmar, es necesario enviar los datos de pago de la billetera y el campo de captura en true. Para cancelar, envíe los detalles de pago de su billetera y el campo de status 'cancelled'.
+        por: Este endpoint permite executar duas ações. Captura ou cancelamento de um advanced payment. Para confirmar, é preciso enviar os dados de pagamento da carteira e o campo de captura em true. Para cancelar, envie os dados de pagamento da carteira e o campo status 'cancelled'.
+      parameters:
+       - in: path
+         name: advanced_payment_id
+         schema:
+          type: number
+         required: true
+         description: The advanced payment, with the id 'advanced_payment_id' to be confirmed.
+         x-description-i18n:
+           eng: The advanced payment, with id 'advanced_payment_id' to be confirmed.
+           spa: Se refiere al advanced payment con el id 'advanced_payment_id' para ser confirmado.
+           por: Refere-se ao advanced payment com o id 'advanced_payment_id' a ser confirmado.
+      requestBody:
+        required: true
+        content: 
+          application/json:
+            schema:
+              oneOf:
+                advancedPaymentReqCapture:
+                  title: Request Advanced Payment Capture
+                  type: object
+                  description: Capture data.
+                  x-description-i18n:
+                    eng: Capture data.
+                    spa: Fecha de captura.
+                    por: Data de captura.
+                  properties: 
+                    capture:
+                      required: true
+                      type: boolean
+                      description: It is a boolean field found in two-step payments (like debit card). In this type of payment, which is carried out asynchronously,
+                       the purchase value is first reserved (capture = false). This amount is captured and not debited from the account instantly.
+                       When the money is actually transferred to the collector (who receives the payment) the amount is captured (capture = true).
+                      x-description-i18n:
+                        eng: It is a boolean field found in two-step payments (like debit card). In this type of payment, which is carried out asynchronously, the purchase value is first reserved (capture = false). This amount is captured and not debited from the account instantly. When the money is actually transferred to the collector (who receives the payment) the amount is captured (capture = true).
+                        spa: Es un campo booleano que se encuentra en pagos de dos pasos (como tarjeta de débito). En este tipo de pago, que se realiza de forma asíncrona, primero se reserva el valor de la compra (capture = false). Esta cantidad se captura y no se debita de la cuenta al instante. Cuando el dinero se transfiere realmente al cobrador (que recibe el pago), se captura la cantidad (capture = true).
+                        por: É um campo booleano encontrado em pagamentos em duas etapas (como cartão de débito). Nesse tipo de pagamento, que é realizado de forma assíncrona, o valor da compra é reservado primeiro (capture = false). Esse valor é capturado e não debitado da conta instantaneamente. Quando o dinheiro é realmente transferido para o cobrador (quem recebe o pagamento) o valor é capturado (capture = true).
+                      example: true
+                    wallet_payment: 
+                      required: true
+                      type: object
+                      description: It indicates is an advanced payements from a seller with a previous wallet connect vinculation.
+                      x-description-i18n:
+                        eng: It indicates is an advanced payements from a seller with a previous Wallet Connect vinculation.
+                        spa: Indica que es un advanced payment de un vendedor con una vinculación previa de Wallet Connect.
+                        por: Indica que é um advanced payment de um vendedor com Wallet Connect previamente vinculado.
+                      properties:
+                        transaction_amount: 
+                          required: true
+                          type: number
+                          description: Payment amount.
+                          x-description-i18n:
+                            eng: Payment amount.
+                            spa: Monto del pago.
+                            por: Valor do pagamento.
+                          example: 125.98
+                        description:
+                          type: string
+                          description: A brief description of the payment.
+                          x-description-i18n:
+                            eng: A brief description of the payment.
+                            spa: Breve descripción del pago.
+                            por: Breve descrição do pagamento.
+                          example: Google payment
+                        external_reference:
+                          type: string
+                          description: An string to allow identification of payment in case of an issue.
+                          x-description-i18n:
+                            eng: An string to allow identification of payment in case of an issue.
+                            spa: Una string para permitir la identificación del pago en caso de un problema.
+                            por: Uma string que permite identificar um pagamento caso haja algum problema.
+                          example: Payment_seller_123
+                advancedPaymentReqCancelled:
+                  title: Request an advanced payment cancellation
+                  type: object
+                  description: Capture data.
+                  x-description-i18n:
+                    eng: Capture data.
+                    spa: Fecha de captura.
+                    por: Data de captura.
+                  properties: 
+                    status:
+                      required: true
+                      type: string
+                      description: Status to be updated. The value to be entered is 'cancelled'.
+                      x-description-i18n:
+                        eng: Status to be updated. The value to be entered is 'cancelled'.
+                        spa: Status por actualizar. El valor a introducir es 'cancelled'.
+                        por: Status a ser atualizado. O valor a ser inserido é 'cancelled'.
+                      example: cancelled
+                    wallet_payment: 
+                      required: true
+                      type: object
+                      description: It indicates is an advanced payment from a seller with a previous wallet connect vinculation.
+                      x-description-i18n:
+                        eng: It indicates is an advanced payements from a seller with a previous Wallet Connect vinculation.
+                        spa: Indica que es un advanced payment de un vendedor con una vinculación previa de Wallet Connect.
+                        por: Indica que é um advanced payment de um vendedor com Wallet Connect previamente vinculado.
+                      properties:
+                        transaction_amount: 
+                          required: true
+                          type: number
+                          description: Payment amount.
+                          x-description-i18n:
+                            eng: Payment amount.
+                            spa: Monto del pago.
+                            por: Valor a ser pago.
+                          example: 125.98
+                        description:
+                          type: string
+                          description: A brief description of the payment.
+                          x-description-i18n:
+                            eng: A brief description of the payment.
+                            spa: Una breve descripción del pago.
+                            por: Breve descrição do pagamento.
+                          example: Google payment
+                        external_reference:
+                          type: string
+                          description: An string to allow identification of payment in case of an issue.
+                          x-description-i18n:
+                            eng: An string to allow identification of payment in case of an issue.
+                            spa: Una string para permitir la identificación del pago en caso de un problema.
+                            por: Uma string que permite identificar um pagamento caso haja algum problema.
+                          example: Payment_seller_123
+      responses:
+        '201': 
+          description: Advanced Payments confirmed.
+          x-description-i18n:
+            eng: Advanced Payments confirmed.
+            spa: Advanced Payments confirmado.
+            por: Advanced Payments confirmado.
+          content:
+            application/json:
+              schema:
+                advancedPaymentRespAccepted:
+                title: Response of advance payment creation accepted.
+                type: object
+                properties:
+                  id:
+                    type: number
+                    description: Unique ID that identifies the advanced payment.
+                    x-description-i18n:
+                      eng: Unique ID that identifies the advanced payment.
+                      spa: ID único que identifica el advanced payment.
+                      por: ID único que identifica o advanced payment.
+                    example: 10234567
+                  wallet_payment: 
+                    required: true
+                    type: object
+                    description: It indicates is an advanced payements from a seller with a previous wallet connect vinculation.
+                    x-description-i18n:
+                      eng: It indicates is an advanced payements from a seller with a previous Wallet Connect vinculation.
+                      spa: Indica que es un advanced payment de un vendedor con una vinculación previa de Wallet Connect.
+                      por: Indica que é um advanced payment de um vendedor com Wallet Connect previamente vinculado.
+                    properties:
+                      transaction_amount: 
+                        required: true
+                        type: number
+                        description: Payment amount.
+                        x-description-i18n:
+                          eng: Payment amount.
+                          spa: Monto del pago.
+                          por: Valor do pagamento.
+                        example: 125.98
+                      description:
+                        type: string
+                        description: A brief description of the payment.
+                        x-description-i18n:
+                          eng: A brief description of the payment.
+                          spa: Una breve descripción del pago.
+                          por: Breve descrição do pagamento.
+                        example: Google payment
+                      external_reference:
+                        type: string
+                        description: An string to allow identification of payment in case of an issue.
+                        x-description-i18n:
+                          eng: An string to allow identification of payment in case of an issue.
+                          spa: Una string para permitir la identificación del pago en caso de un problema.
+                          por: Uma string que permite identificar um pagamento caso haja algum problema.
+                        example: Payment_seller_123
+                  payments:
+                    type: array
+                    title: Response Advanced Payment approved
+                    items:
+                      type: object
+                      description: Payment data generated.
+                      x-description-i18n:
+                        eng: Payment data generated.
+                        spa: Datos de pago generados.
+                        por: Dados de pagamento gerados.
+                      properties:
+                        id:
+                          type: number
+                          description: Unique payment ID.
+                          x-description-i18n:
+                            eng: Unique payment ID.
+                            spa: ID de pago único.
+                            por: ID único de pagamento.
+                          example: 12345566234
+                        status:
+                          type: string
+                          description: The status of a payment made by Advanced Payments internal-api.mercadopago.com
+                          x-description-i18n:
+                            eng: The status of a payment made by Advanced Payments internal-api.mercadopago.com
+                            spa: El status de un pago realizado por Advanced Paymentrs internal-api.mercadopago.com
+                            por: O status de um pagamento feito pelo Advanced Payments internal-api.mercadopago.com
+                          enum:
+                            - approved
+                            - in_process
+                        status_detail:
+                          type: string
+                          description: Status description.
+                          x-description-i18n:
+                            eng: Status description.
+                            spa: Descripción del status.
+                            por: Descrição do status.
+                          example: approved-detail
+                        payment_type_id: 
+                          type: string
+                          description: The preferred payment type of the payer.
+                          x-description-i18n:
+                            eng: O tipo de pagamento preferencial do pagador.
+                            spa: El tipo de pago preferido del pagador.
+                            por: Tipo de pagamento preferido pelo pagador.
+                          enum:
+                            - credit_card
+                            - debit_card
+                            - account_money
+                        payment_method_id: 
+                          type: string
+                          description: Mehtod used in payment type.
+                          x-description-i18n:
+                            eng: Method used in payment type.
+                            spa: Método utilizado en el tipo de pago.
+                            por: Método utilizado no tipo de pagamento.
+                          example: debit_card_id
+                        transaction_amount:
+                          type: number
+                          description: The payment amount.
+                          x-description-i18n:
+                            eng: The payment amount.
+                            spa: Monto del pago.
+                            por: Valor do pagamento.
+                          example: 700.50
+                        installments: 
+                          type: number
+                          description: Total installment for the payment.
+                          x-description-i18n:
+                            eng: Total installment for the payment.
+                            spa: Cuota total para el pago.
+                            por: Total de parcelas para o pagamento.
+                          example: 1
+                        description: 
+                          type: string
+                          description: Purchased product’s description, the reason for payment.
+                          x-description-i18n:
+                            eng: Purchased product’s description, the reason for payment.
+                            spa: Descripción del producto adquirido, motivo del pago.
+                            por: Descrição do produto adquirido, motivo do pagamento.
+                          example: Google Payment
+                        capture:
+                          type: boolean
+                          description: It is a boolean field found in two-step payments (like debit card). In this type of payment, which is carried out asynchronously,
+                           the purchase value is first reserved (capture = false). This amount is captured and not debited from the account instantly.
+                           When the money is actually transferred to the collector (who receives the payment) the amount is captured (capture = true).
+                          x-description-i18n:
+                            eng: It is a boolean field found in two-step payments (like debit card). In this type of payment, which is carried out asynchronously, the purchase value is first reserved (capture = false). This amount is captured and not debited from the account instantly. When the money is actually transferred to the collector (who receives the payment) the amount is captured (capture = true).
+                            spa: Es un campo booleano que se encuentra en pagos de dos pasos (como tarjeta de débito). En este tipo de pago, que se realiza de forma asíncrona, primero se reserva el valor de la compra (capture = false). Esta cantidad se captura y no se debita de la cuenta al instante. Cuando el dinero se transfiere realmente al cobrador (que recibe el pago), se captura la cantidad (capture = true).
+                            por: É um campo booleano encontrado em pagamentos em duas etapas (como cartão de débito). Nesse tipo de pagamento, que é realizado de forma assíncrona, o valor da compra é reservado primeiro (capture = false). Esse valor é capturado e não debitado da conta instantaneamente. Quando o dinheiro é realmente transferido para o cobrador (quem recebe o pagamento) o valor é capturado (capture = true).
+                          example: true
+                        external_reference: 
+                          type: string
+                          description: This is a custom seller identifier, used in case to match a request between seller and Mercado Pago.
+                          x-description-i18n:
+                            eng: This is a custom seller identifier, used in case to match a request between seller and Mercado Pago.
+                            spa: Este es un identificador de vendedor personalizado, utilizado en caso de hacer coincidir una solicitud entre el vendedor y Mercado Pago.
+                            por: Identificador de vendedor personalizado, usado no caso de corresponder uma solicitação entre o vendedor e o Mercado Pago.
+                          example: payment_123
+                  disbursements:
+                    type: object
+                    description: List of payments that correspond to each Seller.
+                    x-description-i18n:
+                      eng: List of payments that correspond to each Seller.
+                      spa: Lista de pagos que corresponden a cada Seller.
+                      por: Lista de pagamentos que correspondem a cada Seller.
+                    properties:
+                      collector_id:
+                        type: string
+                        description: Merchant Mercado Pago account id.
+                        x-description-i18n:
+                          eng: Merchant Mercado Pago account id.
+                          spa: Identificación de la cuenta de Mercado Pago del Merchant.
+                          por: ID da conta Mercado Pago do Merchant.
+                        example: collectorId
+                  payer:
+                    type: object
+                    properties:
+                      id: 
+                        type: number
+                        description: The payment identifier.
+                        x-description-i18n:
+                          eng: The payment identifier.
+                          spa: El identificador de pago.
+                          por: Identificador do pagamento.
+                        example: 8879
+                    site_id:
+                      type: string
+                      description: Country of origin of the Mercado Pago account.
+                      x-description-i18n:
+                        eng: Country of origin of the Mercado Pago account.
+                        spa: País de origen de la cuenta de Mercado Pago.
+                        por: País de origem da conta Mercado Pago. 
+                      example: MLA
+                    binary_mode:
+                      type: boolean
+                      description: When the payment is activated, it can only be approved or rejected. Otherwise, the payment may be pending.
+                      x-description-i18n:
+                        eng: When the payment is activated, it can only be approved or rejected. Otherwise, the payment may be pending.
+                        spa: Cuando el pago está activado, solo puede ser aprobado o rechazado. De lo contrario, el pago puede estar pendiente.
+                        por: Quando o pagamento é ativado, somente pode ser aprovado ou rejeitado, caso contrário, o paagmento ficará como pendente.
+                      example: true
+                    date_created:
+                      type: string
+                      description: Advance Payment creation date.
+                      x-description-i18n:
+                        eng: Advance Payment creation date.
+                        spa: Fecha de creación del Advanced Payment.
+                        por: Data de criação do Advanced Payment.
+                      example: "2018-10-20T09:34:20.518-04:00"
+                    date_last_updated:
+                      type: string
+                      description: Advance Payment last update date.
+                      x-description-i18n:
+                        eng: Advance Payment last update date.
+                        spa: Fecha de la última actualización del Advanced Payment.
+                        por: Data da última atualização do Advanced Payment.
+                      example: "2018-10-20T09:34:20.518-04:00"                  
+        '400':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 400--Bad-Request--Invalid transaction amount in wallet payments.
+                      - 400--Bad-Request--Field transaction_amount is required.
+                      - 400--Bad-Request--Some of the payment methods don't support deferred capture
+                      - 400--Bad-Request--Field payment_type_id is required.
+                      - 400--Bad-Request--Maximum disbursements allowed is 100
+                      - 400--Bad-Request--Field id must not be blank
+                      - 400--Bad-Request--external_reference is required.
+        '500':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500--Error--Internal server error
+                      - 500--Error--IInternal Error in Discarded List.
+    get:
+      tags:
+        - $ref: '#/tags/wallet-connect'
+      summary: Retrieve Advanced Payment data
+      x-summary-i18n:
+        eng: Retrieve Advanced Payment data
+        spa: Recuperar datos de um Advanced Payment
+        por: Recuperar dados de um advanced payment.
+      description: This endpoint is used to retrieve an Advanced Payment data from its id.
+      x-description-i18n:
+        eng: This endpoint is used to retrieve an Advanced Payment data from its id.
+        spa: Este endpoint se utiliza para recuperar datos de un Advanced Payment desde su id.
+        por: Este endpoint é utilizado para recuperar os dados de um Advanced Payment a partir de seu id.
+      responses:
+        '200':
+          description: Advanced Payments confirmed.
+          x-description-i18n:
+            eng: Advanced Payments confirmed.
+            spa: Este endpoint se utiliza para recuperar datos de un Advanced Payment desde su id.
+            por: Este endpoint é utilizado para recuperar os dados de um Advanced Payment a partir de seu id.
+          content:
+            application/json:
+              schema:
+                title: Response of advance payment creation accepted.
+                type: object
+                properties:
+                  id:
+                    type: number
+                    description: Unique ID that identifies the advanced payment.
+                    x-description-i18n:
+                      eng: Unique ID that identifies the advanced payment.
+                      spa: ID único que identifica el advanced payment.
+                      por: ID único que identifica o advanced payment.
+                    example: 10267812
+                  wallet_payment: 
+                    required: true
+                    type: object
+                    description: It indicates is an advanced payements from a seller with a previous wallet connect vinculation.
+                    x-description-i18n:
+                      eng: It indicates is an advanced payements from a seller with a previous Wallet Connect vinculation.
+                      spa: Indica que es un advanced payment de un vendedor con una vinculación previa de Wallet Connect.
+                      por: Indica que é um advanced payment de um vendedor com Wallet Connect previamente vinculado.
+                    properties:
+                      transaction_amount: 
+                        required: true
+                        type: number
+                        description: Payment amount.
+                        x-description-i18n:
+                          eng: Payment amount.
+                          spa: Monto del pago.
+                          por: Valor do pagamento.
+                        example: 125.98
+                      description:
+                        type: string
+                        description: A brief description of the payment.
+                        x-description-i18n:
+                          eng: A brief description of the payment.
+                          spa: Una breve descripción del pago.
+                          por: Breve descrição do pagamento.
+                        example: Google payment
+                      external_reference:
+                        type: string
+                        description: An string to allow identification of payment in case of an issue.
+                        x-description-i18n:
+                          eng: An string to allow identification of payment in case of an issue.
+                          spa: Una string para permitir la identificación del pago en caso de un problema.
+                          por: Uma string que permite identificar um pagamento caso haja algum problema.
+                        example: Payment_seller_123
+                      payments:
+                        type: array
+                        title: Response Advanced Payment approved
+                        items:
+                          type: object
+                          description: Payment data generated.
+                          x-description-i18n:
+                            eng: Payment data generated.
+                            spa: Datos de pago generados.
+                            por: Dados de pagamento gerados.
+                          properties:
+                            id:
+                              type: number
+                              description: Unique payment ID.
+                              x-description-i18n:
+                                eng: Unique payment ID.
+                                spa: ID de pago único.
+                                por: ID único de pagamento.
+                              example: 3870106238
+                            status:
+                              type: string
+                              description: The status of a payment made by Advanced Payments internal-api.mercadopago.com
+                              x-description-i18n:
+                                eng: The status of a payment made by Advanced Payments internal-api.mercadopago.com
+                                spa: El status de un pago realizado por Advanced Paymentrs internal-api.mercadopago.com
+                                por: O status de um pagamento feito pelo Advanced Payments internal-api.mercadopago.com
+                              enum:
+                                - approved
+                                - in_process
+                            status_detail:
+                              type: string
+                              description: Status description.
+                              x-description-i18n:
+                                eng: Status description.
+                                spa: Descripción del status.
+                                por: Descrição do status.
+                              example: approved-detail
+                            payment_type_id: 
+                              type: string
+                              description: The preferred payment type of the payer.
+                              x-description-i18n:
+                                eng: O tipo de pagamento preferencial do pagador.
+                                spa: El tipo de pago preferido del pagador.
+                                por: Tipo de pagamento preferido pelo pagador.
+                              enum:
+                                - credit_card
+                                - debit_card
+                                - account_money
+                            payment_method_id: 
+                              type: string
+                              description: Method used in payment type.
+                              x-description-i18n:
+                                eng: Method used in payment type.
+                                spa: Método utilizado en el tipo de pago.
+                                por: Método utilizado no tipo de pagamento.
+                              example: account_money_id
+                            transaction_amount:
+                              type: number
+                              description: The payment amount.
+                              x-description-i18n:
+                                eng: The payment amount.
+                                spa: Monto del pago.
+                                por: Valor do pagamento.
+                              example: 700.50
+                            installments: 
+                              type: number
+                              description: Total installment for the payment.
+                              x-description-i18n:
+                                eng: Total installment for the payment.
+                                spa: Cuota total para el pago.
+                                por: Total de parcelas para o pagamento.
+                              example: 1
+                            description: 
+                              type: string
+                              description: Purchased products description, the reason for payment.
+                              x-description-i18n:
+                                eng: Purchased products description, the reason for payment.
+                                spa: Descripción del producto adquirido, motivo del pago.
+                                por: Descrição do produto adquirido, motivo do pagamento.
+                              example: Google Payment
+                            capture:
+                              type: boolean
+                              description: It is a boolean field found in two-step payments (like debit card). In this type of payment, which is carried out asynchronously,
+                               the purchase value is first reserved (capture = false). This amount is captured and not debited from the account instantly.
+                               When the money is actually transferred to the collector (who receives the payment) the amount is captured (capture = true).
+                            external_reference: 
+                              type: string
+                              description: This is a custom seller identifier, used in case to match a request between seller and Mercado Pago.
+                              x-description-i18n:
+                                eng: It is a boolean field found in two-step payments (like debit card). In this type of payment, which is carried out asynchronously, the purchase value is first reserved (capture = false). This amount is captured and not debited from the account instantly. When the money is actually transferred to the collector (who receives the payment) the amount is captured (capture = true).
+                                spa: Es un campo booleano que se encuentra en pagos de dos pasos (como tarjeta de débito). En este tipo de pago, que se realiza de forma asíncrona, primero se reserva el valor de la compra (capture = false). Esta cantidad se captura y no se debita de la cuenta al instante. Cuando el dinero se transfiere realmente al cobrador (que recibe el pago), se captura la cantidad (capture = true).
+                                por: É um campo booleano encontrado em pagamentos em duas etapas (como cartão de débito). Nesse tipo de pagamento, que é realizado de forma assíncrona, o valor da compra é reservado primeiro (capture = false). Esse valor é capturado e não debitado da conta instantaneamente. Quando o dinheiro é realmente transferido para o cobrador (quem recebe o pagamento) o valor é capturado (capture = true).
+                              example: payment_123
+                      disbursements:
+                        type: object
+                        description: List of payments that correspond to each Seller.
+                        x-description-i18n:
+                          eng: List of payments that correspond to each Seller.
+                          spa: Lista de pagos que corresponden a cada Seller.
+                          por: Lista de pagamentos que correspondem a cada Seller.
+                        properties:
+                          collector_id:
+                            type: string
+                            description: Merchant Mercado Pago account id.
+                            x-description-i18n:
+                              eng: Merchant Mercado Pago account id.
+                              spa: Identificación de la cuenta de Mercado Pago del Merchant.
+                              por: ID da conta Mercado Pago do Merchant.
+                            example: collectorId
+                      payer:
+                        type: object
+                        properties:
+                          id: 
+                            type: number
+                            description: The payment identifier.
+                            x-description-i18n:
+                              eng: The payment identifier.
+                              spa: El identificador de pago.
+                              por: Identificador do pagamento.
+                            example: 8879
+                      site_id:
+                        type: string
+                        description: Country of origin of the Mercado Pago account.
+                        x-description-i18n:
+                          eng: Country of origin of the Mercado Pago account.
+                          spa: País de origen de la cuenta de Mercado Pago.
+                          por: País de origem da conta Mercado Pago. 
+                        example: MLB
+                      binary_mode:
+                        type: boolean
+                        description: When the payment is activated, it can only be approved or rejected. Otherwise, the payment may be pending.
+                        x-description-i18n:
+                          eng: When the payment is activated, it can only be approved or rejected. Otherwise, the payment may be pending.
+                          spa: Cuando el pago está activado, solo puede ser aprobado o rechazado. De lo contrario, el pago puede estar pendiente.
+                          por: Quando o pagamento é ativado, somente pode ser aprovado ou rejeitado, caso contrário, o paagmento ficará como pendente.
+                      date_created:
+                        type: string
+                        description: Advance Payment creation date.
+                        x-description-i18n:
+                          eng: Advance Payment creation date.
+                          spa: Fecha de creación del Advanced Payment.
+                          por: Data de criação do Advanced Payment.
+                        example: "2018-10-20T09:34:20.518-04:00"
+                      date_last_updated:
+                        type: string
+                        description: Advance Payment last update date.
+                        x-description-i18n:
+                          eng: Advance Payment last update date.
+                          spa: Fecha de la última actualización del Advanced Payment.
+                          por: Data da última atualização do Advanced Payment.
+                        example: "2018-10-20T09:34:20.518-04:00"
+        '400':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 400--Bad-Request--Some parameters are invalid for search.
+                      - 404--Not-Found---Advanced payment not found.
+                      - 404--Not-Found--Client ID not found in whitelist.
+                      - 404--Not-Found--collector_id not found in the merchant list.    
+        '500':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500--Error--Internal server error
+                      - 500--Error--IInternal Error in Discarded List.
+  /v1/advanced_payments/{advanced_payment_id}/refunds:
+    post:
+      tags:
+        - $ref: '#/tags/wallet-connect'
+      summary: Refund an advanced payment
+      x-summary-i18n:
+        eng: Refund an advanced payment
+        spa: Reembolsar un advanced payment
+        por: Reembolsar um advanced payment
+      description: A refund operation may be total, this is the total amount of the advnaced payment will be restored, o may be a partial refund, the amount in the request will be restored
+      x-description-i18n:
+        eng: A refund operation may be total, this is the total amount of the advnaced payment will be restored, o may be a partial refund, the amount in the request will be restored
+        spa: Una operación de reembolso puede ser total, es decir se devolverá el importe total del advanced payment, o puede ser una devolución parcial, se devolverá el importe solicitado
+        por: Uma operação de reembolso pode ser total, ou seja, o valor total do advanced payment que será reposto, ou pode ser um reembolso parcial, o valor parcial do pedido será reposto.
+      parameters:    
+        - in: path
+          name: advanced_payment_id
+          schema:
+            type: number
+          required: true
+          description: The advanced payment, with the id 'advanced_payment_id' to be confirmed.
+          x-description-i18n:
+            eng: The advanced payment, with id 'advanced_payment_id' to be confirmed.
+            spa: Se refiere al advanced payment con el id 'advanced_payment_id' para ser confirmado.
+            por: Refere-se ao advanced payment com o id 'advanced_payment_id' a ser confirmado.
+      requestBody:
+        content: 
+          application/json:
+            schema:
+              type: object
+              description: If the body of the request is empty, a total refund will be done.
+              x-description-i18n:
+                eng: If the body of the request is empty, a total refund will be done.
+                spa: Si el body del request está vacío, el reembolso se realizará en su totalidad.
+                por: Se o body do request estiver vazio, o reebolso será feito de forma integral.
+              properties:
+                amount:
+                  type: number
+                  description: If amount is 0 then this is a refund of the total advanced payments amounts, otherwise is a partial refund.
+                  x-description-i18n:
+                    eng: If amount is 0 then this is a refund of the total advanced payments amounts, otherwise is a partial refund.
+                    spa: Si el monto es 0, se trata de un reembolso de los montos totales de los advanced payments; de lo contrario, se trata de un reembolso parcial.
+                    por: Se o valor for 0, trata-se de um reembolso do valor total dos advanced payments; caso contrário, será um reembolso parcial.
+      responses:
+        '200':
+          description: A refund data array will be returned.
+          x-description-i18n:
+            eng: A refund data array will be returned.
+            spa: Se devolverá un array de datos de reembolso.
+            por: Um array de dados de reembolso será retornado.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  title: Refund information.
+                  type: object
+                  description: Refund information data.
+                  x-description-i18n:
+                    eng: Refund information data.
+                    spa: Información sobre el reembolso.
+                    por: Dados informativos a respeito do reembolso.
+                  properties:
+                    id:
+                      type: number
+                      description: Refund id.
+                      x-description-i18n:
+                        eng: Refund id.
+                        spa: Identificación de reembolso.
+                        por: Identificação de reembolso.
+                      example: '1009042015'
+                    payment_id:
+                      type: number
+                      description: Payment id.
+                      x-description-i18n:
+                        eng: Payment id.
+                        spa: Identificación de pago.
+                        por: Identificação de pagamento.
+                      example: '18552260055'
+                    amount:
+                      type: number
+                      description: Refund amount.
+                      x-description-i18n:
+                        eng: Refund amount.
+                        spa: Monto del reembolso.
+                        por: Valor do reembolso
+                      example: 10
+                    source:
+                      type: object
+                      properties:
+                        name:
+                          type: string
+                          description: The name of the user who submitted the refund.
+                          x-description-i18n:
+                            eng: The name of the user who submitted the refund.
+                            spa: El nombre del usuario que envió el reembolso.
+                            por: Nome do usuário que enviou o reembolso.
+                          example: user_name
+                        id:
+                          type: string
+                          description: The id of the user who sent the refund request.
+                          x-description-i18n:
+                            eng: The id of the user who sent the refund request.
+                            spa: El id del usuario que envió el request de reembolso.
+                            por: Id do usuário que enviou a solicitação de reembolso.
+                          example: abcdef1e23f4567d8e9123eb6591ff68df74c57930551ed980239f4538a7e530
+        '400':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 400--Bad-Request--AdvancedPayment too old to be refunded.
+                      - 400--Bad-Request--Can't set status refunded.
+                      - 400--Bad-Request--Payment already refunded
+                      - 400--Bad-Request--Invalid amount
+        '500':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500--Error--Internal server error
+                      - 500--Error--IInternal Error in Discarded List.
