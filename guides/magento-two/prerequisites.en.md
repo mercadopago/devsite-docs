@@ -6,7 +6,7 @@ To use the Mercado Pago integration with Magento 2 in your store, you must meet 
 >
 > Attention
 >
-> In October 2022, versions of the Mercado Pago module prior to 3.5.0 will be discontinued and will no longer work. In addition, in April, credit card brands applied international changes to transactions.
+> All versions of the Mercado Pago module prior to 3.5.0 were discontinued.
 > </br><br/>
 > **Keep your module and your store always up to date so you don't lose sales.**
 
