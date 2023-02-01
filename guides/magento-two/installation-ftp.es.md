@@ -7,19 +7,3 @@
 5. Luego, sigue las instrucciones de [Instalación via Composer](#bookmark_instalación_via_composer)
 
 ¡Y listo! Ya instalaste con éxito el módulo de Mercado Pago para Magento 2.
-
-> PREV_STEP_CARD_ES
->
-> Instalación via Magento Marketplace
->
-> Ve cómo instalar el complemento de Mercado Pago en la plataforma Magento 2 a través de Magento Marketplace.
->
-> [Instalación via Magento Marketplace](/developers/es/docs/magento-two/installation/magento-marketplace)
-
-> NEXT_STEP_CARD_ES
->
-> Configuración de la integración
->
-> Conecta tu cuenta de Mercado Pago al módulo y captura los pagos que recibes por tus ventas online.
->
-> [Configuración de la integración](/developers/es/docs/magento-two/integration-configuration)

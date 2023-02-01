@@ -42,19 +42,3 @@ Una vez que se complete el proceso de compra inicial, observa a continuación c�
 > Con la prueba de compra realizada con el Checkout Transparente, se podrá visualizar la aprobación del pedido. </br>
 > </br> <br/>
 > También es importante señalar que, en ambos checkouts, esta información sobre el pago aprobado no se incluirá en el historial de la cuenta de Mercado Pago porque solo contiene gastos reales (realizados en producción).
-
-> NEXT_STEP_CARD_ES
->
-> Configurar pagos con Checkout Pro 
->
-> Aprenda a configurar Checkout Pro para recibir pagos de su tienda.
->
-> [Configurar pagos con Checkout Pro](/developers/es/docs/magento-two/payment-configuration/checkout-pro)
-
-> NEXT_STEP_CARD_ES
->
-> Recibir pagos
->
-> Aprenda cómo habilitar la tienda para procesar ventas reales.
->
-> [Recibir pagos](/developers/es/docs/magento-two/sales-processing/go-to-production)

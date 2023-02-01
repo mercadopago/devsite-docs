@@ -29,30 +29,3 @@ Para integrar el método de pago, siga los pasos a continuación.
 7. En el campo **Redirect Payer**, indica si el comprador será redirigido automáticamente a la página de pago del banco, sin tener que pasar por una página intermedia en tu tienda.
 8. Luego haga clic en ** **Save Config** para guardar sus preferencias.
 
-----[mlb]----
-> PREV_STEP_CARD_ES
->
-> Configurar pagos offline (ticket)
->
-> Configure su tienda para recibir pagos fuera de línea (efectivo y cajero automático) utilizando el Checkout Transparente.
->
-> [Ticket](/developers/es/docs/magento-two/payment-configuration/checkout-api/ticket)
-------------
-
-----[mla, mlm, mpe, mco, mlu, mlc]----
-> PREV_STEP_CARD_ES
->
-> Configurar pagos offline (ticket)
->
-> Configure su tienda para recibir pagos fuera de línea (efectivo y cajero automático) utilizando el Checkout API.
->
-> [Ticket](/developers/es/docs/magento-two/payment-configuration/checkout-api/ticket)
-------------
-
-> NEXT_STEP_CARD_ES
->
-> Configurar pagos con Checkout Pro 
->
-> Aprenda a configurar Checkout Pro para recibir pagos de su tienda.
->
-> [Configurar pagamentos com Checkout Pro](/developers/es/docs/magento-two/payment-configuration/checkout-pro)

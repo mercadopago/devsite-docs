@@ -44,9 +44,9 @@ Para crear una **afiliación de gateway de pago con MercadoPagoV2**, sigue los p
    - **Categoría principal da loja - Categoría principal de la tienda:** categoría de la tienda.
    - **Reembolso automático / manual:** selecciona si deseas que Mercado Pago reembolse automáticamente en caso de cancelación o si deseas retener el monto pagado para que el cliente lo use en futuras compras.
    - **Modo binário - binário:** configura si el pago puede pasar por revisión manual o no.
-   - **Métodos de pagamento excluídos - Métodos de pago excluídos (visa, paypal, bolbradesco, oxxo...):** métodos de pago que se excluirán en el momento de la compra. [Mira las opciones aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/vtex/payment-methods). Aplicable solo para MercadoPagoPRO, MercadoPagoWallet y MercadoPAgoOff.
-   - **Tipos de pagamento excluídos - Tipos de pago excluidos (credit_card, bank_transfer, ticket...):** tipos de pago que se excluirán en el momento de la compra. [Mira las opciones aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/vtex/payment-methods). Aplicable solo para MercadoPagoPRO, MercadoPagoWallet y MercadoPagoOff.
-   - **Modo de processamento - Modo de procesamiento:** configura si el pago será gateway o agregador. Para procesar pagos en modo Gateway, comunícate con tu Asesor de Mercado Pago.
+   - **Métodos de pagamento excluídos - Métodos de pago excluídos:** métodos de pago que se excluirán en el momento de la compra. [Mira las opciones aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/vtex/payment-methods). Aplicable solo para MercadoPagoPRO, MercadoPagoWallet y MercadoPAgoOff.
+   - **Tipos de pagamento excluídos - Tipos de pago excluidos:** tipos de pago que se excluirán en el momento de la compra. [Mira las opciones aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/vtex/payment-methods). Aplicable solo para MercadoPagoPRO, MercadoPagoWallet y MercadoPagoOff.
+   - **Modo de processamento - Modo de procesamiento:** configura el pago a través del modelo agregador.
    - **Integrator ID:** para programadores o agencias que realizan la integración.
    - **Moeda - Moneda:** moneda a configurar (USD o Local).
    - **Plazo de captura de pagamento aprobado - Plazo de captura de pagos aprobado:** configura un retraso en la captura automática de VTEX.

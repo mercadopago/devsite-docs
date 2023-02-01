@@ -29,18 +29,3 @@ Para utilizar la integración de Mercado Pago con Magento 2 en tu tienda, debes 
 
 Si se cumplen todos los requisitos previos, puedes instalar el módulo de Mercado Pago en la plataforma Magento 2.
 
-> PREV_STEP_CARD_ES
->
-> Página de inicio
->
-> Regrese a la página de inicio de documentación de Magento 2.
->
-> [Página de inicio](/developers/es/docs/magento-two/landing)
-
-> NEXT_STEP_CARD_ES
->
-> Instalación del módulo
->
-> Aprende a instalar el módulo de Mercado Pago en la plataforma Magento 2.
->
-> [Instalación del módulo](/developers/es/docs/magento-two/installation)
