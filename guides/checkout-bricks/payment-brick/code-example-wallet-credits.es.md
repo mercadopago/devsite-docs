@@ -207,7 +207,7 @@ curl -X POST \
 > Atención
 >
 > Si es necesario cerrar y volver a abrir el Brick (cuando un usuario vuelve al carrito para cambiar algún detalle de compra, por ejemplo) es necesario eliminar la instancia actual del Brick y crear una nueva cuando sea necesario mostrarlo otra vez. 
-> Para ello, utilice el método `unmount` disponible en el controller de Brick, en este caso: `cardPaymentBrickController.unmount()`.
+> Para ello, utilice el método `unmount` disponible en el controller de Brick, en este caso: `window.paymentBrickController.unmount()`.
 
 ```html
 <!DOCTYPE html>

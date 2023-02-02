@@ -13,7 +13,7 @@ Para facilitar e otimizar o seu processo de integração, veja abaixo um exemplo
 > Atenção
 >
 > Caso seja necessário fechar e abrir o Brick novamente (quando um usuário retorna ao carrinho para alterar algum detalhe da compra, por exemplo) é necessário eliminar a instância atual do Brick e criar uma nova quando for preciso mostrar o Brick novamente.
-> Para isso, utilize o método `unmount` disponível no controller do Brick, sendo neste caso: `cardPaymentBrickController.unmount()`.
+> Para isso, utilize o método `unmount` disponível no controller do Brick, sendo neste caso: `window.walletBrickController.unmount()`.
 
 ```html
 <!DOCTYPE html>
