@@ -35,7 +35,7 @@ The configuration of payment conditions is done in the **Payment conditions** ta
 >
 > Important
 >
-> In case you can’t find the App in the App store, you will have to submit a  [Support VTEX ticket](https://help.vtex.com/pt/support) asking for the installation.
+> In case you can’t find the app in the App store, you can enter the URL *https://**VTEXACCOUNT**.myvtex.com/admin/apps/vtex.banks-for-pse@0.1.2/setup/*, changing "VTEXACCOUNT" for the name of the VTEX store where you'd like to install the app.
 
 After installing Banks for PSE, you can continue configuring PSE as a payment method following the steps previously mentioned.
 
