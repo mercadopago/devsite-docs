@@ -36,12 +36,11 @@ A configuração das condições de pagamento é feita na aba **Condições de p
 >
 > Importante
 >
-> Caso não encontre o app na Loja de aplicativos, você pode inserir o URL *https://**VTEXACCOUNT**.myvtex.com/admin/apps/vtex.banks-for-pse@0.1.2/setup/*, substituindo "VTEXACCOUNT" pelo nome da sua loja VTEX onde deseja instalar o aplicativo.
+> Caso não encontre o aplicativo na loja, você pode inserir o URL *`https://VTEXACCOUNT.myvtex.com/admin/apps/vtex.banks-for-pse@0.1.2/setup/`*, substituindo "VTEXACCOUNT" pelo nome da sua loja VTEX onde deseja instalar o aplicativo.
 
 Depois de instalar o Banks for PSE, você pode configurar o PSE como método de pagamento seguindo as etapas detalhadas acima.
 
 ------------
-
 * **Outro:** refere-se às transações com **MercadoPagoOff**, **MercadoPagoWallet**, ou **MercadoPagoPro**.
   * Se você configurar **MercadoPagoPro**, o comprador será direcionado para o ambiente do Mercado Pago onde deverá concluir o pagamento de sua compra utilizando qualquer um dos meios de pagamento disponíveis na plataforma.
   * Se você configurar **MercadoPagoWallet**, o comprador utilizará sua carteira do Mercado Pago. Este modo é exclusivo para compradores cadastrados no Mercado Pago ou Mercado Livre e sugerimos utilizar caso opte pela **Condição de Pagamento Cartão de Crédito**.

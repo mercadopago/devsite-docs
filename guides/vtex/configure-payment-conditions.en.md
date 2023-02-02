@@ -25,6 +25,7 @@ The configuration of payment conditions is done in the **Payment conditions** ta
   * Name the rule to facilitate its identification and activate the payment condition in the **Status** field.
   * In **Process with affiliation**, choose MercadoPagoV2 as your affiliation.
   * Save your changes by clicking on **Save**.
+
 ------------
 ----[mco]----
 * **PSE:** to offer PSE as a payment method in your VTEX store, you must make sure first to install the PSE App developed by VTEX. In order to do so, you must follow the steps listed below:
@@ -35,12 +36,11 @@ The configuration of payment conditions is done in the **Payment conditions** ta
 >
 > Important
 >
-> In case you can’t find the app in the App store, you can enter the URL *https://**VTEXACCOUNT**.myvtex.com/admin/apps/vtex.banks-for-pse@0.1.2/setup/*, changing "VTEXACCOUNT" for the name of the VTEX store where you'd like to install the app.
+> In case you can’t find the app in the App store, you can enter the URL *`https://VTEXACCOUNT.myvtex.com/admin/apps/vtex.banks-for-pse@0.1.2/setup/`*, changing "VTEXACCOUNT" for the name of the VTEX store where you'd like to install the app.
 
 After installing Banks for PSE, you can continue configuring PSE as a payment method following the steps previously mentioned.
 
 ------------
-
 * **Other:** this refers to transactions with  **MercadoPagoOff**, **MercadoPagoWallet**, or **MercadoPagoPro**.
   * If you configure **MercadoPagoPro**, the buyer will make the payment in the Mercado Pago environment, via a form presented directly in their store and will have access to all payment methods available on the platform.
   * If you configure **MercadoPagoWallet**, the buyer will use their Mercado Pago wallet. This mode is exclusive to buyers registered in Mercado Pago or Mercado Libre and we suggest using it if you select **Credit Card Payment Condition**.

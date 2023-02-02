@@ -35,12 +35,11 @@ La configuración de los planes de pago se realiza en la pestaña **Planes de pa
 >
 > Importante
 >
-> En caso de no encontrar la app en la tienda, puedes ingresar a la URL *https://**VTEXACCOUNT**.myvtex.com/admin/apps/vtex.banks-for-pse@0.1.2/setup/*, sustituyendo "VTEXACCOUNT" por el nombre de tu tienda VTEX donde deseas instalar la app.
+> En caso de no encontrar la app en la tienda, puedes ingresar a la URL *`https://VTEXACCOUNT.myvtex.com/admin/apps/vtex.banks-for-pse@0.1.2/setup/`*, sustituyendo "VTEXACCOUNT" por el nombre de tu tienda VTEX donde deseas instalar la app.
 
 Una vez que hayas instalado Banks for PSE, puedes configurar PSE como método de pago siguiendo los pasos detallados al inicio.
 
 ------------
-
 * **Otro:** se refiere a transacciones con **MercadoPagoOff**, **MercadoPagoWallet**, o **MercadoPagoPro**.
   * Si configuras **MercadoPagoPro**, el comprador realizará el pago en el entorno de Mercado Pago, a través de un formulario presentado directamente en tu tienda y tendrá acceso a todos los métodos de pago disponibles en la plataforma.
   * Si configuras **MercadoPagoWallet**, el comprador utilizará su billetera de Mercado Pago. Este modo es exclusivo para compradores registrados en Mercado Pago o Mercado Libre y sugerimos usarlo si eliges **Plan de Pago con Tarjeta de Crédito**.
