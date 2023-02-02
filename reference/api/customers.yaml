@@ -148,19 +148,19 @@ paths:
                         por: Número da rua
                     city:
                       type: object
-                      description: City name.
+                      description: City.
                       x-description-i18n:
-                        eng: City name.
-                        spa: Nombre de la ciudad.
-                        por: Nome da cidade.
+                        eng: City.
+                        spa: Ciudad.
+                        por: Cidade.
                       properties:
                           name:
                             type: string
-                            description: Autonomous City of Buenos Aires
+                            description: City name. For example, Autonomous City of Buenos Aires.
                             x-description-i18n:
-                              eng: Autonomous City of Buenos Aires
-                              spa: Ciudad Autónoma de Buenos Aires
-                              por: Cidade Autônoma de Buenos Aires
+                              eng: City name. For example, Autonomous City of Buenos Aires.
+                              spa: Nombre de la ciudad. Por ejemplo, Ciudad Autónoma de Buenos Aires.
+                              por: Nome da cidade. Por exemplo, Cidade Autônoma de Buenos Aires.
                 date_registered:
                   type: Date(ISO_8601)
                   example: '2021-10-20T11:37:30.000-04:00'
