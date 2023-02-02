@@ -123,4 +123,4 @@ O resultado de renderizar o Brick deve ser como na imagem abaixo:
 >
 > Importante
 >
->  Sempre permita que o usuário retorne ao seu site desde a tela de status de pagamento. Adicione um link para que, caso o pagamento falhe, o usuário possa tentar novamente.
+> Sempre permita que o usuário retorne ao seu site a partir da tela de status de pagamento. Adicione um link para que, caso o pagamento falhe, o usuário possa tentar novamente.

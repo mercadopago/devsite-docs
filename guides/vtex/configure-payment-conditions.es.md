@@ -8,7 +8,7 @@ Luego de haber creado tu afiliación con **MercadoPagoV2**, debes configurar los
 >
 > Importante
 >
-> Verifica en tu tienda de aplicaciones VTEX que la App **Mercado Pago Payment APP** este instalada para usar las condiciones de pago **MercadoPagoPro, MercadoPagoWallet y MercadoPagoOff** o solicita la instalación al equipo de VTEX a través de [Support VTEX](https://help.vtex.com/es/support).
+> Verifica en tu tienda de aplicaciones VTEX que la App **Mercado Pago Payment APP** este instalada para usar las condiciones de pago **MercadoPagoPro, MercadoPagoWallet y MercadoPagoOff** o solicita la instalación al equipo de VTEX a través de [Support VTEX.](https://help.vtex.com/es/support)
 
 La configuración de los planes de pago se realiza en la pestaña **Planes de pago** del menú **Configuración** en el módulo **Pagos** en el portal del administrador de la plataforma VTEX. En esta pestaña, debes hacer clic en el botón "+" (*Agregar nuevo plan de pago para ...*) y seleccionar uno de los siguientes planes de pago:
 
@@ -81,12 +81,4 @@ Para obtener más información sobre cómo configurar los términos de pago en V
 > Las tasas e impuestos deben configurarse en la plataforma, ya que Mercado Pago los procesa de acuerdo a la información proporcionada por VTEX. Haz clic [aquí](https://help.vtex.com/es/tutorial/creando-la-tasaimpuesto/) para obtener más información.
 > <br>
 > <br>
-> Si tienes dificultades durante tu integración, consulta nuestro [lista de errores](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/vtex/common-errors) y nuestro documento sobre [logs de VTEX](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/vtex/logs).
-
-> NEXT_STEP_CARD_ES
->
-> Device Fingerprint
->
-> Aprende a configurar fingerprint.
->
-> [Device Fingerprint](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/vtex/device-fingerprint)
+> Si tienes dificultades durante tu integración, consulta nuestro [lista de errores](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/vtex/common-errors) y nuestro documento sobre [logs de VTEX.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/vtex/logs)

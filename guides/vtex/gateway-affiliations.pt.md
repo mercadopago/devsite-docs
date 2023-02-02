@@ -11,13 +11,11 @@ Com isso, é possível decidir por qual gateway de pagamento serão processados 
 A afiliação MercadoPagoV2 processa as condições de pagamento Cartão de Crédito, Boleto Bancário, Pix, Mercado Pago Offline e Checkout Pro.
 
 ------------
-
 ----[mla, mlm, mlu, mco, mpe]----
 
 A afiliação MercadoPagoV2 processa as condições de pagamento Cartão de Crédito, Cartão de Débito, Mercado Pago Offline e Checkout Pro.
 
 ------------
-
 ----[mlc]----
 
 A afiliação MercadoPagoV2 processa as condições de pagamento Cartão de Crédito, Cartão de Débito e Checkout Pro.
@@ -28,7 +26,7 @@ A afiliação MercadoPagoV2 processa as condições de pagamento Cartão de Cré
 >
 > Importante
 >
-> Por motivos de segurança, caso você tenha uma afiliação de gateway do MercadoPagoV1, recomendamos [migrar para o MercadoPagoV2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/vtex/mp1-mp2-migration).
+> Por motivos de segurança, caso você tenha uma afiliação de gateway do MercadoPagoV1, recomendamos [migrar para o MercadoPagoV2.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/vtex/mp1-mp2-migration)
 
 Para criar uma **afiliação de gateway de pagamento com o MercadoPagoV2**, siga os passos abaixo:
 
@@ -57,22 +55,6 @@ Pronto! Sua afiliação com MercadoPagoV2 já está ativada.
 >
 > Nota
 > 
-> Se você tiver dificuldades durante sua integração, verifique nossa [lista de erros](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/vtex/common-errors) e nosso documento sobre [logs do VTEX](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/vtex/logs).
+> Se você tiver dificuldades durante sua integração, verifique nossa [lista de erros](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/vtex/common-errors) e nosso documento sobre [logs do VTEX.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/vtex/logs)
 
 ![Criando afiliação de gateway MercadoPagoV2](/images/vtex/affiliationV2-imagenv2-pt.gif)
-
-> PREV_STEP_CARD_PT
->
-> Migração de versão de gateway
->
-> Conheça como migrar de MercadoPagoV1 para MercadoPagoV2.
->
-> [Migração de versão de gateway](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/vtex/mp1-mp2-migration)
-
-> NEXT_STEP_CARD_PT
->
-> Condições de pagamento
->
-> Conheça como configurar condições de pagamento.
->
-> [Condições de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/vtex/configure-payment-conditions)

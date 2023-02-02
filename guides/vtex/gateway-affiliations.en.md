@@ -11,13 +11,11 @@ With this, it is possible to choose which payments gateway will process the diff
 The MercadoPagoV2 affiliation processes payment conditions with Credit Card, Boleto Bancário, Pix, Mercado Pago Offline and Checkout Pro.
 
 ------------
-
 ----[mla, mlm, mlu, mco, mpe]----
 
 The MercadoPagoV2 affiliation processes payment conditions with Credit Card, Debit Card, Mercado Pago Offline and Checkout Pro.
 
 ------------
-
 ----[mlc]----
 
 The MercadoPagoV2 affiliation processes payment conditions with Credit Card, Debit Card, and Checkout Pro.
@@ -28,7 +26,7 @@ The MercadoPagoV2 affiliation processes payment conditions with Credit Card, Deb
 >
 > Important
 >
-> If you have a MercadoPagoV1 affiliation, we recommend that you [migrate to MercadoPagoV2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/vtex/mp1-mp2-migration). for security reasons.
+> If you have a MercadoPagoV1 affiliation, we recommend that you [migrate to MercadoPagoV2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/vtex/mp1-mp2-migration) for security reasons.
 
 To create a **payment gateway affiliation with MercadoPagoV2**, follow the steps below:
 
@@ -57,22 +55,6 @@ And that's it! Your affiliation with MercadoPagoV2 is already active!
 >
 > Note
 > 
-> If you have difficulties during your integration, check our [errors list](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/vtex/common-errors), and our document about [VTEX logs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/vtex/logs).
+> If you have difficulties during your integration, check our [errors list](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/vtex/common-errors), and our document about [VTEX logs.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/vtex/logs)
 
 ![Creating a MercadoPagoV2 gateway affiliation](/images/vtex/affiliationV2-imagenv2-en.gif)
-
-> PREV_STEP_CARD_EN
->
-> Gateway version migration
->
-> Learn how to migrate from MercadoPagoV1 to MercadoPagoV2.
->
-> [Gateway version migration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/vtex/mp1-mp2-migration)
-
-> NEXT_STEP_CARD_EN
->
-> Payment conditions
->
-> Lean how to configure payment conditions.
->
-> [Payment conditions](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/vtex/configure-payment-conditions)

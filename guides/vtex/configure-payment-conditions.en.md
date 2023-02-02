@@ -8,7 +8,7 @@ After you have created your affiliation with **MercadoPagoV2**, you must configu
 >
 > Important
 >
-> Verify in your VTEX application store that the App **Mercado Pago Payment APP** has been installed to use the **MercadoPagoPro, MercadoPagoWallet and MercadoPagoOff**  payment conditions, or request its installation by the VTEX team through [VTEX Support](https://help.vtex.com/en/support).
+> Verify in your VTEX application store that the App **Mercado Pago Payment APP** has been installed to use the **MercadoPagoPro, MercadoPagoWallet and MercadoPagoOff**  payment conditions, or request its installation by the VTEX team through [VTEX Support.](https://help.vtex.com/en/support)
 
 The configuration of payment conditions is done in the **Payment conditions** tab of the **Settings** menu in the **Payments** module in the VTEX platform administrator portal. In this tab, you must click on the "+" button (*Add new payment condition for ...*) and select on eof the following payment conditions:
 
@@ -82,12 +82,4 @@ For more information on how to configure payment terms in VTEX, click [here](htt
 > Rates and taxes must be configured on the platform, since Mercado Pago processes them according to the information provided by VTEX. Click [here](https://help.vtex.com/en/tutorial/creando-la-tasaimpuesto/) for more information.
 > <br>
 > <br>
-> If you have difficulties during your integration, check our [errors list](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/vtex/common-errors), and our document about [VTEX logs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/vtex/logs).
-
-> NEXT_STEP_CARD_EN
->
-> Device Fingerprint
->
-> Lean how to configure fingerprint.
->
-> [Device Fingerprint](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/vtex/device-fingerprint)
+> If you have difficulties during your integration, check our [errors list](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/vtex/common-errors), and our document about [VTEX logs.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/vtex/logs)

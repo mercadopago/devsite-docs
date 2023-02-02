@@ -8,7 +8,7 @@ Após criar sua afiliação com o **MercadoPagoV2**, você deverá configurar as
 >
 > Importante
 >
-> Certifique em sua loja de aplicativos da VTEX se o App **Mercado Pago Payment APP** está instalado para utilização das condições de pagamento **MercadoPagoPro, MercadoPagoWallet e MercadoPagoOff**. Caso não esteja, solicite a instalação para a equipe de VTEX através do [Support VTEX](https://help.vtex.com/pt/support).
+> Certifique em sua loja de aplicativos da VTEX se o App **Mercado Pago Payment APP** está instalado para utilização das condições de pagamento **MercadoPagoPro, MercadoPagoWallet e MercadoPagoOff**. Caso não esteja, solicite a instalação para a equipe de VTEX através do [Support VTEX.](https://help.vtex.com/pt/support)
 
 A configuração das condições de pagamento é feita na aba **Condições de pagamento** do menu **Configurações** no módulo de **Pagamentos** no portal do administrador da plataforma VTEX.  Nessa aba, você deverá clicar no botão  "+" (*Adicionar nova condição de pagamento para...*) e selecionar uma das seguintes condições de pagamento:
 
@@ -79,15 +79,7 @@ Para mais informações sobre como configurar as condições de pagamento na VTE
 >
 > Nota
 > 
-> Taxas e impostos devem ser configurados na plataforma, porque o Mercado Pago os processa de acordo com as informações fornecidas pela VTEX. Clique [aqui](https://help.vtex.com/pt/tutorial/creando-la-tasaimpuesto/) para obter mais informações.
+> Taxas e impostos devem ser configurados na plataforma, porque o Mercado Pago os processa de acordo com as informações fornecidas pela VTEX. Clique [aqui.](https://help.vtex.com/pt/tutorial/creando-la-tasaimpuesto/) para obter mais informações
 > <br>
 > <br>
-> Caso tenha alguma dúvida durante a integração, acesse nossa [lista de erros](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/common-errors) e nosso documento sobre [logs do VTEX](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/vtex/logs).
-
-> NEXT_STEP_CARD_PT
->
-> Device Fingerprint
->
-> Saiba como configurar o Device Fingerprint.
->
-> [Device Fingerprint](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/vtex/device-fingerprint)
+> Caso tenha alguma dúvida durante a integração, acesse nossa [lista de erros](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/common-errors) e nosso documento sobre [logs do VTEX.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/vtex/logs)
