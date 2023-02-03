@@ -21,12 +21,6 @@ live_demo_code_action:
 
 The Card Payment Brick layout is based on the best UX practices, so that it is possible to offer the best shopping experience without having to worry about design details. The layout offers the elements detailed below.
 
-> WARNING
->
-> Attention
->
-> The Bricks were created not only to meet the technical needs of implementation and security, but also to provide the best experience for the buyer. Customizing a Brick can drastically change the buyer's experience. Our recommendation is that you always use the Brick with as little additional customization as possible to always ensure the best experience.
-
 | Element  | Characteristics  | Comments  |
 | --- | --- | --- |
 | Accepted title and flags <br><br>  Property: formTitle  | **Value (title):** Credit or debit card  <br> **Label:** N/A <br> **Placeholder:** N/A <br> **Type:** text/image <br> **Format:** N/A <br> **Max. characters:** N/A  | Optional <br> Customizable <br><br>  *Flags are displayed along with the title. The only customization available for them is to hide them along with the form title, no longer displaying that information.  |
