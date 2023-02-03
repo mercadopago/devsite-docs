@@ -21,12 +21,6 @@ live_demo_code_action:
 
 O layout do Card Payment Brick foi construído com base nas melhores práticas de UX para que seja possível entregar ao comprador a melhor experiência sem que você precise se preocupar com detalhes de design. O layout traz os elementos detalhados abaixo.
 
-> WARNING
->
-> Atenção
->
-> Os Bricks foram criados para atender não somente necessidades técnicas de implementação e segurança, mas também para prover a melhor experiência ao comprador. Customizar um Brick pode mudar drasticamente a experiência do comprador. Nossa recomendação é que você sempre faça uso do Brick com a menor quantidade possível de customizações adicionais para garantir sempre a melhor experiência.
-
 | Elemento | Características | Observações |
 |---|---|---|
 |Título e bandeiras aceitas <br><br> Propriedade: formTitle | **Valor (título):** Cartão de crédito ou débito <br> **Label** N/A <br> **Placeholder:** N/A <br> **Tipo:** text/imagem <br> **Formato:** N/A <br> **Máx caracteres**: N/A | Opcional <br> Customizável  </br> <br> *As bandeiras são exibidas em conjunto com o título. A única customização disponível para elas é ocultá-las junto ao título do formulário, deixando de exibir ambas informações. |
