@@ -13,30 +13,3 @@ To integrate the payment method, follow the steps below.
 7. In **Checkout Position**, indicate the position in which the payment method will be available to the buyer in the checkout flow.
 8. Then click** **Save Config** to save your preferences.
 
-> PREV_STEP_CARD_EN
->
-> Configure card payments
->
-> Learn how to configure the Checkout API to receive card payments in your store.
->
-> [Configure card payments](/developers/en/docs/magento-two/payment-configuration/checkout-api/cards)
-
-----[mlb]----
-> NEXT_STEP_CARD_EN
->
-> Configure payments with Pix
->
-> Set up your store to receive Pix payments using Checkout API.
->
-> [Pix](/developers/en/docs/magento-two/payment-configuration/checkout-api/pix)
-------------
-
-----[mla, mlm, mpe, mco, mlu, mlc]----
-> NEXT_STEP_CARD_EN
->
-> Configure bank transfer payments
->
-> Configure your store to receive payments via bank transfer using the Checkout API.
->
-> [Bank transfer](/developers/en/docs/magento-two/payment-configuration/checkout-api/bank-transfer)
-------------

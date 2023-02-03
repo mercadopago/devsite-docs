@@ -21,30 +21,3 @@ Para integrar a forma de pagamento, siga os passos abaixo.
 7. Em **Checkout Position**, indique a posição em que o meio de pagamento ficará disponível para o comprador no fluxo de checkout. 
 8. Em seguida, clique em **Save Config** para salvar suas preferências.
 
-> PREV_STEP_CARD_PT
->
-> Configurar pagamentos com cartões
->
-> Saiba como configurar o ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------ para receber pagamentos com cartões em sua loja.
->
-> [Configurar pagamentos com cartões](/developers/pt/docs/magento-two/payment-configuration/checkout-api/cards)
-
-----[mlb]----
-> NEXT_STEP_CARD_PT
->
-> Configurar pagamentos com Pix
->
-> Configure a sua loja para receber pagamentos com Pix utilizando o Checkout Transparente.
->
-> [Pix](/developers/pt/docs/magento-two/payment-configuration/checkout-api/pix)
-------------
-
-----[mla, mlm, mpe, mco, mlu, mlc]----
-> NEXT_STEP_CARD_PT
->
-> Configurar pagamentos via transferência bancária
->
-> Configure a sua loja para receber pagamentos via transferência bancária utilizando o Checkout API.
->
-> [Transferência bancária](/developers/pt/docs/magento-two/payment-configuration/checkout-api/bank-transfer)
-------------

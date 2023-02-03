@@ -42,19 +42,3 @@ Feito o processo inicial de compra, veja abaixo como testar a integração de ac
 > Já com teste de compra feito com o Checkout Transparente, será possível visualizar a aprovação do pedido. </br> 
 > </br> <br/>
 > Importante salientar também que, em ambos os checkouts, essa informação de pagamento aprovado não constará no histórico da conta do Mercado Pago porque nele só constam despesas reais (feitas em produção).
-
-> NEXT_STEP_CARD_PT
->
-> Configurar pagamentos com Checkout Pro
->
-> Saiba como configurar o Checkout Pro para receber os pagamento de sua loja.
->
-> [Configurar pagamentos com Checkout Pro](/developers/pt/docs/magento-two/payment-configuration/checkout-pro)
-
-> NEXT_STEP_CARD_PT
->
-> Receber os pagamentos
->
-> Saiba como ativar a loja para processar vendas reais.
->
-> [Receber os pagamentos](/developers/pt/docs/magento-two/sales-processing/go-to-production)

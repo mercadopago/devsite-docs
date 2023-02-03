@@ -44,9 +44,9 @@ Para criar uma **afiliação de gateway de pagamento com o MercadoPagoV2**, siga
    * **Categoría principal da loja - Categoría principal de la tienda:** Categoria da loja.
    * **Reembolso automático / manual:** Selecionar se deseja que o Mercado Pago realize automaticamente o reembolso em caso de cancelamento ou se deseja reter o valor pago para o cliente usar em compras futuras.
    * **Modo binário - binário:** Escolha se o pagamento poderá passar por revisão manual ou não.
-   * **Métodos de pagamento excluídos - Métodos de pago excluídos (visa, paypal, bolbradesco, oxxo...):** Métodos de pagamento a serem excluídos no momento da compra. [Veja as opções aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/vtex/payment-methods). Aplicável somente ao MercadoPagoPRO, MercadoPagoWallet e MercadoPAgoOff.
-   * **Tipos de pagamento excluídos - Tipos de pago excluidos (credit_card, bank_transfer, ticket...):** Tipos de pagamento a serem excluídos no momento da compra. [Veja as opções aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/vtex/payment-methods). Aplicável somente ao MercadoPagoPRO, MercadoPagoWallet e MercadoPagoOff.
-   * **Modo de processamento - Modo de procesamiento:** Selecione se o pagamento será gateway ou agregador. Para processar pagamentos em modo Gateway contate o seu Assessor do Mercado Pago.
+   * **Métodos de pagamento excluídos - Métodos de pago excluídos:** Métodos de pagamento a serem excluídos no momento da compra. [Veja as opções aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/vtex/payment-methods). Aplicável somente ao MercadoPagoPRO, MercadoPagoWallet e MercadoPAgoOff.
+   * **Tipos de pagamento excluídos - Tipos de pago excluidos:** Tipos de pagamento a serem excluídos no momento da compra. [Veja as opções aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/vtex/payment-methods). Aplicável somente ao MercadoPagoPRO, MercadoPagoWallet e MercadoPagoOff.
+   * **Modo de processamento - Modo de procesamiento:** Configure o pagamento através do modelo agregador.
    * **Integrator ID:** Para programadores ou agências que realizam a integração.
    * **Moeda - Moneda:** Moeda a ser configurada (USD ou Local).
 5. Clique em **Salvar**.
