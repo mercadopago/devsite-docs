@@ -83,6 +83,13 @@ const bricksBuilder = mp.bricks();
 
 Once instantiated, the Brick can be rendered and have all its configurations compiled so that the final structure of the Brick is generated.
 
+> NOTE
+>
+> Attention
+>
+> If it is necessary to close and reopen the Brick (when a user returns to the cart to change some purchase detail, for example) it is necessary to eliminate the current instance of the Brick and create a new one when it is necessary to show the Brick again.
+> To do so, use the `unmount` method available in the Brick controller, in this case: `window.paymentBrickController.unmount()`.
+
 To render the Brick, insert the following code after the previous step and fill in the attributes according to the comments highlighted in this same code.
 
 ```javascript

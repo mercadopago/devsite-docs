@@ -8,7 +8,7 @@ Após criar sua afiliação com o **MercadoPagoV2**, você deverá configurar as
 >
 > Importante
 >
-> Certifique em sua loja de aplicativos da VTEX se o App **Mercado Pago Payment APP** está instalado para utilização das condições de pagamento **MercadoPagoPro, MercadoPagoWallet e MercadoPagoOff**. Caso não esteja, solicite a instalação para a equipe de VTEX através do [Support VTEX](https://help.vtex.com/pt/support).
+> Certifique em sua loja de aplicativos da VTEX se o App **Mercado Pago Payment APP** está instalado para utilização das condições de pagamento **MercadoPagoPro, MercadoPagoWallet e MercadoPagoOff**. Caso não esteja, solicite a instalação para a equipe de VTEX através do [Support VTEX.](https://help.vtex.com/pt/support)
 
 A configuração das condições de pagamento é feita na aba **Condições de pagamento** do menu **Configurações** no módulo de **Pagamentos** no portal do administrador da plataforma VTEX.  Nessa aba, você deverá clicar no botão  "+" (*Adicionar nova condição de pagamento para...*) e selecionar uma das seguintes condições de pagamento:
 
@@ -36,13 +36,11 @@ A configuração das condições de pagamento é feita na aba **Condições de p
 >
 > Importante
 >
-> Caso não encontre o app na Loja de aplicativos, você pode inserir o URL *https://**VTEXACCOUNT**.myvtex.com/admin/apps/vtex.banks-for-pse@0.1.2/setup/*, substituindo "VTEXACCOUNT" pelo nome da sua loja VTEX onde deseja instalar o aplicativo.
-
+> Caso não encontre o aplicativo na loja, você pode inserir o URL *`https://VTEXACCOUNT.myvtex.com/admin/apps/vtex.banks-for-pse@0.1.2/setup/`*, substituindo "VTEXACCOUNT" pelo nome da sua loja VTEX onde deseja instalar o aplicativo.
 
 Depois de instalar o Banks for PSE, você pode configurar o PSE como método de pagamento seguindo as etapas detalhadas acima.
 
 ------------
-
 * **Outro:** refere-se às transações com **MercadoPagoOff**, **MercadoPagoWallet**, ou **MercadoPagoPro**.
   * Se você configurar **MercadoPagoPro**, o comprador será direcionado para o ambiente do Mercado Pago onde deverá concluir o pagamento de sua compra utilizando qualquer um dos meios de pagamento disponíveis na plataforma.
   * Se você configurar **MercadoPagoWallet**, o comprador utilizará sua carteira do Mercado Pago. Este modo é exclusivo para compradores cadastrados no Mercado Pago ou Mercado Livre e sugerimos utilizar caso opte pela **Condição de Pagamento Cartão de Crédito**.
@@ -81,15 +79,7 @@ Para mais informações sobre como configurar as condições de pagamento na VTE
 >
 > Nota
 > 
-> Taxas e impostos devem ser configurados na plataforma, porque o Mercado Pago os processa de acordo com as informações fornecidas pela VTEX. Clique [aqui](https://help.vtex.com/pt/tutorial/creando-la-tasaimpuesto/) para obter mais informações.
+> Taxas e impostos devem ser configurados na plataforma, porque o Mercado Pago os processa de acordo com as informações fornecidas pela VTEX. Clique [aqui.](https://help.vtex.com/pt/tutorial/creando-la-tasaimpuesto/) para obter mais informações
 > <br>
 > <br>
-> Caso tenha alguma dúvida durante a integração, acesse nossa [lista de erros](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/common-errors) e nosso documento sobre [logs do VTEX](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/vtex/logs).
-
-> NEXT_STEP_CARD_PT
->
-> Device Fingerprint
->
-> Saiba como configurar o Device Fingerprint.
->
-> [Device Fingerprint](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/vtex/device-fingerprint)
+> Caso tenha alguma dúvida durante a integração, acesse nossa [lista de erros](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/common-errors) e nosso documento sobre [logs do VTEX.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/vtex/logs)

@@ -11,13 +11,11 @@ Con esto, es posible decidir por qué gateway de pagos se procesarán los difere
 La afiliación MercadoPagoV2 procesa los planes de pago con Tarjeta de Crédito, Boleto Bancário, Pix, Mercado Pago Offline y Checkout Pro.
 
 ------------
-
 ----[mla, mlm, mlu, mco, mpe]----
 
 La afiliación MercadoPagoV2 procesa los planes de pago con Tarjeta de crédito, Tarjeta de débito, Mercado Pago Offline y Checkout Pro.
 
 ------------
-
 ----[mlc]----
 
 La afiliación MercadoPagoV2 procesa los planes de pago con Tarjeta de crédito, Tarjeta de débito, y Checkout Pro.
@@ -28,7 +26,7 @@ La afiliación MercadoPagoV2 procesa los planes de pago con Tarjeta de crédito,
 >
 > Importante
 >
-> Si cuentas con una afiliación de gateway MercadoPagoV1, por cuestiones de seguridad te recomendamos [migrar a MercadoPagoV2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/vtex/mp1-mp2-migration).
+> Si cuentas con una afiliación de gateway MercadoPagoV1, por cuestiones de seguridad te recomendamos [migrar a MercadoPagoV2.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/vtex/mp1-mp2-migration)
 
 Para crear una **afiliación de gateway de pago con MercadoPagoV2**, sigue los pasos a continuación:
 
@@ -58,22 +56,6 @@ Para crear una **afiliación de gateway de pago con MercadoPagoV2**, sigue los p
 >
 > Nota
 >
-> Si tienes dificultades durante tu integración, consulta nuestra [lista de errores](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/vtex/common-errors) y nuestro documento sobre [logs de VTEX](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/vtex/logs).
+> Si tienes dificultades durante tu integración, consulta nuestra [lista de errores](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/vtex/common-errors) y nuestro documento sobre [logs de VTEX.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/vtex/logs)
 
 ![Creando una afiliación de gateway MercadoPagoV2](/images/vtex/affiliationV2-imagenv2-es.gif)
-
-> PREV_STEP_CARD_ES
->
-> Migración de versión de gateway
->
-> Aprende a migrar de MercadoPagoV1 a MercadoPagoV2.
->
-> [Migración de versión de gateway](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/vtex/mp1-mp2-migration)
-
-> NEXT_STEP_CARD_ES
->
-> Planes de pago
->
-> Aprende a configurar planes de pago.
->
-> [Planes de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/vtex/configure-payment-conditions)

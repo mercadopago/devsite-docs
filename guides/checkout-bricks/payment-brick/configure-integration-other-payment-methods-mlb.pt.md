@@ -83,6 +83,13 @@ const bricksBuilder = mp.bricks();
 
 Uma vez instanciado, o Brick pode ser renderizado e ter todas as suas configurações compiladas de modo que a estrutura final do Brick seja gerada.
 
+> NOTE
+>
+> Atenção
+>
+> Caso seja necessário fechar e abrir o Brick novamente (quando um usuário retorna ao carrinho para alterar algum detalhe da compra, por exemplo) é necessário eliminar a instância atual do Brick e criar uma nova quando for preciso mostrar o Brick novamente.
+> Para isso, utilize o método `unmount` disponível no controller do Brick, sendo neste caso: `window.paymentBrickController.unmount()`.
+
 Para renderizar o Brick, insira o código abaixo após o passo anterior e preencha os atributos conforme os comentários destacados neste mesmo código.
 
 ```javascript
