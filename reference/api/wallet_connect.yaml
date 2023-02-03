@@ -412,7 +412,7 @@ paths:
     post:
       tags:
         - $ref: '#/tags/wallet-connect'
-      summary: Create an Advanced Payment.
+      summary: Create an Advanced Payment
       x-summary-i18n:
         eng: Create an Advanced Payment
         spa: Crear un Advanced Payment
@@ -964,11 +964,11 @@ paths:
         eng: Confirm or cancel an advanced payment
         spa: Confirmar o cancelar un advanced payment
         por: Confirmar ou cancelar um advanced payment
-      description: This endpoint allows to perform one of two actions. Capture or cancel and advanced payment. To confirm you must send the wallet payment data and field capture in true. To cancel you send wallet payment data and field status 'cancelled'.
+      description: This endpoint allows to perform one of two actions. Capture or cancel and advanced payment. To confirm you must send the wallet payment data and field capture in true. To cancel you send wallet payment data and field status 'cancelled'
       x-description-i18n:
-        eng: This endpoint allows to perform one two actions. Capture or cancel and advanced payment. To confirm you must send the wallet payment data and field capture in true. To cancel you send wallet payment data and field status 'cancelled'.
-        spa: Este endpoint le permite realizar dos acciones. Capturar o cancelar un advanced payment. Para confirmar, es necesario enviar los datos de pago de la billetera y el campo de captura en true. Para cancelar, envíe los detalles de pago de su billetera y el campo de status 'cancelled'.
-        por: Este endpoint permite executar duas ações. Captura ou cancelamento de um advanced payment. Para confirmar, é preciso enviar os dados de pagamento da carteira e o campo de captura em true. Para cancelar, envie os dados de pagamento da carteira e o campo status 'cancelled'.
+        eng: This endpoint allows to perform one two actions. Capture or cancel and advanced payment. To confirm you must send the wallet payment data and field capture in true. To cancel you send wallet payment data and field status 'cancelled'
+        spa: Este endpoint le permite realizar dos acciones. Capturar o cancelar un advanced payment. Para confirmar, es necesario enviar los datos de pago de la billetera y el campo de captura en true. Para cancelar, envíe los detalles de pago de su billetera y el campo de status 'cancelled'
+        por: Este endpoint permite executar duas ações. Captura ou cancelamento de um advanced payment. Para confirmar, é preciso enviar os dados de pagamento da carteira e o campo de captura em true. Para cancelar, envie os dados de pagamento da carteira e o campo status 'cancelled'
       parameters:
        - in: path
          name: advanced_payment_id
@@ -1349,12 +1349,12 @@ paths:
       x-summary-i18n:
         eng: Retrieve Advanced Payment data
         spa: Recuperar datos de um Advanced Payment
-        por: Recuperar dados de um advanced payment.
-      description: This endpoint is used to retrieve an Advanced Payment data from its id.
+        por: Recuperar dados de um advanced payment
+      description: This endpoint is used to retrieve an Advanced Payment data from its id
       x-description-i18n:
-        eng: This endpoint is used to retrieve an Advanced Payment data from its id.
-        spa: Este endpoint se utiliza para recuperar datos de un Advanced Payment desde su id.
-        por: Este endpoint é utilizado para recuperar os dados de um Advanced Payment a partir de seu id.
+        eng: This endpoint is used to retrieve an Advanced Payment data from its id
+        spa: Este endpoint se utiliza para recuperar datos de un Advanced Payment desde su id
+        por: Este endpoint é utilizado para recuperar os dados de um Advanced Payment a partir de seu id
       responses:
         '200':
           description: Advanced Payments confirmed.
@@ -1608,7 +1608,7 @@ paths:
       x-description-i18n:
         eng: A refund operation may be total, this is the total amount of the advnaced payment will be restored, o may be a partial refund, the amount in the request will be restored
         spa: Una operación de reembolso puede ser total, es decir se devolverá el importe total del advanced payment, o puede ser una devolución parcial, se devolverá el importe solicitado
-        por: Uma operação de reembolso pode ser total, ou seja, o valor total do advanced payment que será reposto, ou pode ser um reembolso parcial, o valor parcial do pedido será reposto.
+        por: Uma operação de reembolso pode ser total, ou seja, o valor total do advanced payment que será reposto, ou pode ser um reembolso parcial, o valor parcial do pedido será reposto
       parameters:    
         - in: path
           name: advanced_payment_id
