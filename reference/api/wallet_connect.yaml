@@ -506,7 +506,7 @@ paths:
                   x-description-i18n:
                     eng: When the payment is activated, it can only be approved or rejected. Otherwise, the payment may be pending.
                     spa: Cuando el pago está activado, solo puede ser aprobado o rechazado. De lo contrario, el pago puede estar pendiente.
-                    por: Quando o pagamento é ativado, somente pode ser aprovado ou rejeitado, caso contrário, o paagmento ficará como pendente.
+                    por: Quando o pagamento é ativado, somente pode ser aprovado ou rejeitado, caso contrário, o pagamento ficará como pendente.
                   example: false
                 capture:
                   type: boolean
@@ -567,8 +567,8 @@ paths:
                             spa: El status de un pago realizado por Advanced Paymentrs internal-api.mercadopago.com
                             por: O status de um pagamento feito pelo Advanced Payments internal-api.mercadopago.com
                           enum:
-                            - approved
-                            - in_process
+                            - approved--approved
+                            - in_process--in process 
                         status_detail:
                           type: string
                           description: Status description.
@@ -585,9 +585,9 @@ paths:
                             spa: El tipo de pago preferido del pagador.
                             por: Tipo de pagamento preferido pelo pagador.
                           enum:
-                            - credit_card
-                            - debit_card
-                            - account_money
+                            - credit_card--credit card
+                            - debit_card--debit card
+                            - account_money--account money
                         payment_method_id: 
                           type: string
                           description: Method used in payment type.
@@ -899,8 +899,8 @@ paths:
                             spa: El status de un pago realizado por Advanced Paymentrs internal-api.mercadopago.com
                             por: O status de um pagamento feito pelo Advanced Payments internal-api.mercadopago.com
                           enum:
-                            - approved
-                            - in_process
+                            - approved--approved
+                            - in_process--in process
                         status_detail:
                           type: string
                           description: Status description.
@@ -917,9 +917,9 @@ paths:
                             spa: El tipo de pago preferido del pagador.
                             por: Tipo de pagamento preferido pelo pagador.
                           enum:
-                            - credit_card
-                            - debit_card
-                            - account_money
+                            - credit_card--credit card
+                            - debit_card--debit card
+                            - account_money--account money
                         payment_method_id: 
                           type: string
                           description: Method used in payment type.
@@ -1216,8 +1216,8 @@ paths:
                             spa: El status de un pago realizado por Advanced Paymentrs internal-api.mercadopago.com
                             por: O status de um pagamento feito pelo Advanced Payments internal-api.mercadopago.com
                           enum:
-                            - approved
-                            - in_process
+                            - approved--approved
+                            - in_process--in process
                         status_detail:
                           type: string
                           description: Status description.
@@ -1234,9 +1234,9 @@ paths:
                             spa: El tipo de pago preferido del pagador.
                             por: Tipo de pagamento preferido pelo pagador.
                           enum:
-                            - credit_card
-                            - debit_card
-                            - account_money
+                            - credit_card--credit card
+                            - debit_card--debit card
+                            - account_money--account money
                         payment_method_id: 
                           type: string
                           description: Method used in payment type.
