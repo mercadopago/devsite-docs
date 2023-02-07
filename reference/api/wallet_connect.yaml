@@ -536,47 +536,13 @@ paths:
                       spa: ID único que identifica el advanced payment.
                       por: ID único que identifica o advanced payment.
                     example: 10267812
-                  wallet_payment: 
-                    required: true
-                    type: object
-                    description: It indicates is an advanced payements from a seller with a previous wallet connect vinculation.
-                    x-description-i18n:
-                      eng: It indicates is an advanced payements from a seller with a previous Wallet Connect vinculation.
-                      spa: Indica que es un advanced payment de un vendedor con una vinculación previa de Wallet Connect.
-                      por: Indica que é um advanced payment de um vendedor com Wallet Connect previamente vinculado.
-                    properties:
-                      transaction_amount: 
-                        required: true
-                        type: number
-                        description: Payment amount.
-                        x-description-i18n:
-                          eng: Payment amount.
-                          spa: Monto del pago.
-                          por: Valor do pagamento.
-                        example: 125.98
-                      description:
-                        type: string
-                        description: A brief description of the payment.
-                        x-description-i18n:
-                          eng: A brief description of the payment.
-                          spa: Una breve descripción del pago.
-                          por: Breve descrição do pagamento.
-                        example: payment of a bussines trip
-                      external_reference:
-                        type: string
-                        description: An string to allow identification of payment in case of an issue.
-                        x-description-i18n:
-                          eng: An string to allow identification of payment in case of an issue.
-                          spa: Una string para permitir la identificación del pago en caso de un problema.
-                          por: Uma string que permite identificar um pagamento caso haja algum problema.
-                        example: Payment_seller_123
                   payments:
                     type: array
-                    description: Response Advanced Payment approved.
+                    description: List of payments.
                     x-description-i18n:
-                      eng: Response Advanced Payment approved.
-                      spa: Respuesta de aprobación del Advanced Payment.
-                      por: Resposta de aprovação do Advanced Payment.
+                      eng: List of payments.
+                      spa: Listado de pagos.
+                      por: Lista de pagamentos.
                     items:
                       type: object
                       description: Payment data generated.
@@ -671,7 +637,41 @@ paths:
                             eng: This is a custom seller identifier, used in case to match a request between seller and Mercado Pago.
                             spa: Este es un identificador de vendedor personalizado, utilizado en caso de hacer coincidir una solicitud entre el vendedor y Mercado Pago.
                             por: Identificador de vendedor personalizado, usado no caso de corresponder uma solicitação entre o vendedor e o Mercado Pago.
-                          example: payment_123
+                          example: payment_123                    
+                  wallet_payment: 
+                    required: true
+                    type: object
+                    description: It indicates is an advanced payements from a seller with a previous wallet connect vinculation.
+                    x-description-i18n:
+                      eng: It indicates is an advanced payements from a seller with a previous Wallet Connect vinculation.
+                      spa: Indica que es un advanced payment de un vendedor con una vinculación previa de Wallet Connect.
+                      por: Indica que é um advanced payment de um vendedor com Wallet Connect previamente vinculado.
+                    properties:
+                      transaction_amount: 
+                        required: true
+                        type: number
+                        description: Payment amount.
+                        x-description-i18n:
+                          eng: Payment amount.
+                          spa: Monto del pago.
+                          por: Valor do pagamento.
+                        example: 125.98
+                      description:
+                        type: string
+                        description: A brief description of the payment.
+                        x-description-i18n:
+                          eng: A brief description of the payment.
+                          spa: Una breve descripción del pago.
+                          por: Breve descrição do pagamento.
+                        example: payment of a bussines trip
+                      external_reference:
+                        type: string
+                        description: An string to allow identification of payment in case of an issue.
+                        x-description-i18n:
+                          eng: An string to allow identification of payment in case of an issue.
+                          spa: Una string para permitir la identificación del pago en caso de un problema.
+                          por: Uma string que permite identificar um pagamento caso haja algum problema.
+                        example: Payment_seller_123
                   disbursements:
                     type: array
                     items:
@@ -770,7 +770,7 @@ paths:
                     type: string
                     enum:
                       - 500--Error--Internal server error
-                      - 500--Error--IInternal Error in Discarded List.
+                      - 500--Error--Internal Error in Discarded List.
   /v1/advanced_payments/{advanced_payment_id}:
     put:
       tags:
@@ -872,43 +872,9 @@ paths:
                       spa: ID único que identifica el advanced payment.
                       por: ID único que identifica o advanced payment.
                     example: 10234567
-                  wallet_payment: 
-                    type: object
-                    required: true
-                    description: It indicates is an advanced payements from a seller with a previous wallet connect vinculation.
-                    x-description-i18n:
-                      eng: It indicates is an advanced payements from a seller with a previous Wallet Connect vinculation.
-                      spa: Indica que es un advanced payment de un vendedor con una vinculación previa de Wallet Connect.
-                      por: Indica que é um advanced payment de um vendedor com Wallet Connect previamente vinculado.
-                    properties:
-                      transaction_amount: 
-                        type: number
-                        required: true
-                        description: Payment amount.
-                        x-description-i18n:
-                          eng: Payment amount.
-                          spa: Monto del pago.
-                          por: Valor do pagamento.
-                        example: 125.98
-                      description:
-                        type: string
-                        description: A brief description of the payment.
-                        x-description-i18n:
-                          eng: A brief description of the payment.
-                          spa: Una breve descripción del pago.
-                          por: Breve descrição do pagamento.
-                        example: Google payment
-                      external_reference:
-                        type: string
-                        description: An string to allow identification of payment in case of an issue.
-                        x-description-i18n:
-                          eng: An string to allow identification of payment in case of an issue.
-                          spa: Una string para permitir la identificación del pago en caso de un problema.
-                          por: Uma string que permite identificar um pagamento caso haja algum problema.
-                        example: Payment_seller_123
                   payments:
                     type: array
-                    description: Response Advanced Payment approved
+                    description: List of payments.
                     items:
                       type: object
                       description: Payment data generated.
@@ -924,7 +890,7 @@ paths:
                             eng: Unique payment ID.
                             spa: ID de pago único.
                             por: ID único de pagamento.
-                          example: 12345566234
+                          example: 3870106238
                         status:
                           type: string
                           description: The status of a payment made by Advanced Payments internal-api.mercadopago.com
@@ -942,7 +908,7 @@ paths:
                             eng: Status description.
                             spa: Descripción del status.
                             por: Descrição do status.
-                          example: approved-detail
+                          example: approved_id
                         payment_type_id: 
                           type: string
                           description: The preferred payment type of the payer.
@@ -956,12 +922,12 @@ paths:
                             - account_money
                         payment_method_id: 
                           type: string
-                          description: Mehtod used in payment type.
+                          description: Method used in payment type.
                           x-description-i18n:
                             eng: Method used in payment type.
                             spa: Método utilizado en el tipo de pago.
                             por: Método utilizado no tipo de pagamento.
-                          example: debit_card_id
+                          example: credit_card_id
                         transaction_amount:
                           type: number
                           description: The payment amount.
@@ -1004,22 +970,58 @@ paths:
                             spa: Este es un identificador de vendedor personalizado, utilizado en caso de hacer coincidir una solicitud entre el vendedor y Mercado Pago.
                             por: Identificador de vendedor personalizado, usado no caso de corresponder uma solicitação entre o vendedor e o Mercado Pago.
                           example: payment_123
-                  disbursements:
+                  wallet_payment: 
                     type: object
-                    description: List of payments that correspond to each Seller.
+                    required: true
+                    description: It indicates is an advanced payements from a seller with a previous wallet connect vinculation.
                     x-description-i18n:
-                      eng: List of payments that correspond to each Seller.
-                      spa: Lista de pagos que corresponden a cada Seller.
-                      por: Lista de pagamentos que correspondem a cada Seller.
+                      eng: It indicates is an advanced payements from a seller with a previous Wallet Connect vinculation.
+                      spa: Indica que es un advanced payment de un vendedor con una vinculación previa de Wallet Connect.
+                      por: Indica que é um advanced payment de um vendedor com Wallet Connect previamente vinculado.
                     properties:
-                      collector_id:
-                        type: string
-                        description: Merchant Mercado Pago account id.
+                      transaction_amount: 
+                        type: number
+                        required: true
+                        description: Payment amount.
                         x-description-i18n:
-                          eng: Merchant Mercado Pago account id.
-                          spa: Identificación de la cuenta de Mercado Pago del Merchant.
-                          por: ID da conta Mercado Pago do Merchant.
-                        example: collectorId
+                          eng: Payment amount.
+                          spa: Monto del pago.
+                          por: Valor do pagamento.
+                        example: 125.98
+                      description:
+                        type: string
+                        description: A brief description of the payment.
+                        x-description-i18n:
+                          eng: A brief description of the payment.
+                          spa: Una breve descripción del pago.
+                          por: Breve descrição do pagamento.
+                        example: Google payment
+                      external_reference:
+                        type: string
+                        description: An string to allow identification of payment in case of an issue.
+                        x-description-i18n:
+                          eng: An string to allow identification of payment in case of an issue.
+                          spa: Una string para permitir la identificación del pago en caso de un problema.
+                          por: Uma string que permite identificar um pagamento caso haja algum problema.
+                        example: Payment_seller_123                  
+                  disbursements:
+                    type: array
+                    items:
+                      type: object                  
+                      description: List of payments that correspond to each Seller.
+                      x-description-i18n:
+                        eng: List of payments that correspond to each Seller.
+                        spa: Lista de pagos que corresponden a cada Seller.
+                        por: Lista de pagamentos que correspondem a cada Seller.
+                      properties:
+                        collector_id:
+                          type: string
+                          description: Merchant Mercado Pago account id.
+                          x-description-i18n:
+                            eng: Merchant Mercado Pago account id.
+                            spa: Identificación de la cuenta de Mercado Pago del Merchant.
+                            por: ID da conta Mercado Pago do Merchant.
+                          example: collectorId
                   payer:
                     type: object
                     properties:
@@ -1099,7 +1101,7 @@ paths:
                     type: string
                     enum:
                       - 500--Error--Internal server error
-                      - 500--Error--IInternal Error in Discarded List.
+                      - 500--Error--Internal Error in Discarded List.
     get:
       tags:
         - $ref: '#/tags/wallet-connect'
