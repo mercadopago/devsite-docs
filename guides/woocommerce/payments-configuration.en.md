@@ -7,16 +7,11 @@ You can choose to configure these payment methods:
 * [Mercado Pago con Checkout Pro](/developers/es/docs/woocommerce/integration-configuration/payments-configuration/checkoutpro)
 
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-* [Debit or credit with Checkout API](/developers/es/docs/woocommerce/integration-configuration/payments-configuration/credit-debit)
+* [Cards with Checkout API](/developers/es/docs/woocommerce/integration-configuration/payments-configuration/credit-debit)
+* [Offline payment methods with Checkout API](/developers/es/docs/woocommerce/woocommerce/integration-configuration/payments-configuration/offline-payments)
 ------------
-
 ----[mlb]----
-* [Debit or credit with Transparent Checkout](/developers/es/docs/woocommerce/integration-configuration/payments-configuration/credit-debit)
+* [Cards with Checkout Transparente](/developers/es/docs/woocommerce/integration-configuration/payments-configuration/credit-debit)
+* [Offline payment methods with Checkout Transparente](/developers/es/docs/woocommerce/woocommerce/integration-configuration/payments-configuration/offline-payments)
+* [Pix with Checkout Transparente](/developers/es/docs/woocommerce/integration-configuration/payments-configuration/pix)
 ------------
-
-* [Offline payment methods](/developers/es/docs/woocommerce/woocommerce/integration-configuration/payments-configuration/offline-payments)
-
-----[mlb]----
-* [Pix](/developers/es/docs/woocommerce/integration-configuration/payments-configuration/pix)
-------------
-
