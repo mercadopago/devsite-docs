@@ -46,9 +46,14 @@ Depois de instalar o Banks for PSE, você pode configurar o PSE como método de 
 * **Outro:** refere-se às transações com **MercadoPagoOff**, **MercadoPagoWallet**, ou **MercadoPagoPro**.
   * Se você configurar **MercadoPagoPro**, o comprador será direcionado para o ambiente do Mercado Pago onde deverá concluir o pagamento de sua compra utilizando qualquer um dos meios de pagamento disponíveis na plataforma.
   * Se você configurar **MercadoPagoWallet**, o comprador utilizará sua carteira do Mercado Pago. Este modo é exclusivo para compradores cadastrados no Mercado Pago ou Mercado Livre e sugerimos utilizar caso opte pela **Condição de Pagamento Cartão de Crédito**.
-  * Se você configurar **MercadoPagoOff**, poderá contar com os meios de pagamento em dinheiro.----[mlb]----
+  * Se você configurar **MercadoPagoOff**, poderá contar com os meios de pagamento em dinheiro.
+  
+  ----[mlb]----
 * **Boleto Bancário:** refere-se a transações com boleto bancário **exclusivamente**.
-* **Pix:** refere-se a transações com Pix através de **QR Code** ou **Copia e Cola**. Para configurar esta condição de pagamento é necessário uma chave Pix esteja cadastrada na sua conta do Mercado Pago. Para mais informações sobre como criar sua chave Pix, clique [aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required). ------------
+* **Pix:** refere-se a transações com Pix através de **QR Code** ou **Copia e Cola**. Para configurar esta condição de pagamento é necessário uma chave Pix esteja cadastrada na sua conta do Mercado Pago. Para mais informações sobre como criar sua chave Pix, clique [aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required).
+* **Open Finance Mercado Pago:** refere-se a transações feitas diretamente no seu site, conectando o cliente à instituição bancária de sua preferência através do Mercado Pago. Assim, o pagamento é semelhante a uma transação bancária, mas o cliente faz de uma forma fluída sem a necessidade de copiar e colar informações. O Mercado Pago encaminha o cliente para fazer a autenticação e aprovação da transação no seu banco e depois o retorna a sua loja de forma automática, atualizando o status do pedido. Para mais informações sobre como funciona o Open Finance, clique [aqui](https://www.mercadopago.com.br/c/openfinance), , ou acesse nosso [blog](https://empresas.mercadopago.com.br/pagamentos-via-open-finance).
+
+------------
 
 > NOTE
 >
