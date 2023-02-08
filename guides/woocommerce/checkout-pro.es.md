@@ -8,7 +8,7 @@ No es necesario que el comprador tenga una cuenta de Mercado Pago, **pero recome
 > Recomendamos incentivar el inicio de sesión en una cuenta de Mercado Pago para garantizar las ventajas que pueden tener los compradores al realizar un pago registrado, como: <br/></br>
 > <br/></br>
 > * **Paga rápido**: usa el dinero disponible o tarjetas guardadas.
-> * **Accede a cuotas**: cuotas con o sin tarjeta de credito.
+> * **Accede a cuotas**: cuotas con o sin tarjeta de crédito.
 > * **Compra con confianza**: recibir ayuda si hay un problema con la compra.
 ------------
 ----[mlm]----
