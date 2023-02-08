@@ -8,7 +8,7 @@ Não é necessário que o comprador tenha conta no Mercado Pago, **mas recomenda
 > <br/></br>
 > * **Entrar com facilidade**: iniciar a sessão com o mesmo e-mail e senha do Mercado Livre.
 > * **Pagar com facilidade**: utilizar os cartões salvos em conta, Pix ou saldo disponível em conta.
-> * **Proteger a compra**: recupera el dinero si no recibe el producto.
+> * **Proteger a compra**: receber o dinheiro de volta caso a compra não seja entregue,
 
 ## Configure o meio de pagamento
 
