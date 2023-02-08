@@ -1,4 +1,4 @@
-## Offline payment methods
+# Offline payment methods
 
 This means of payment will add----[mlb]---- Transparent Checkout ------------ ----[mla, mlm, mpe, mco, mlu, mlc]--- - Checkout API ------------and it will allow you to offer cash payments using offline payment methods through Mercado Pago.
 

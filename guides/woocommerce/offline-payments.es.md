@@ -1,4 +1,4 @@
-## Medios de pago offline
+# Medios de pago offline
 
 Este medio de pago adicionará----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------y te permitirá ofrecer pagos en efectivo utilizando medios de pago offline a través de Mercado Pago.
 
