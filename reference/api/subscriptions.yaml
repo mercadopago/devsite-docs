@@ -98,11 +98,11 @@ paths:
                     start_date:
                       type: string
                       format: date
-                      description: Date from which the subscription will be active and we start collecting invoices.
+                      description: Date from which the subscription will be active and we start collecting invoices. It is important to emphasize that this field only works together with the `end_date` parameter, that is, if `end_date` is not filled in, the `start_date` will not be recognized.
                       x-description-i18n:
-                        eng: Date from which the subscription will be active and we start collecting invoices.
-                        spa: Fecha a partir de la cual la suscripción estará activa y se empiezan a cobrar las facturas.
-                        por: Data que indica o momento em que a assinatura será ativada e começará a cobrança das faturas.
+                        eng: Date from which the subscription will be active and we start collecting invoices. It is important to emphasize that this field only works together with the `end_date` parameter, that is, if `end_date` is not filled in, the `start_date` will not be recognized.
+                        spa: Fecha a partir de la cual la suscripción estará activa y se empezarán a cobrar las facturas. Es importante recalcar que este campo solo funciona en conjunto con el parámetro `end_date`, es decir, si no se completa `end_date`, no se reconocerá `start_date`.
+                        por: Data que indica o momento em que a assinatura será ativada e começará a cobrança das faturas. É importante frisar que este campo somente funciona em conjunto com o parâmetro `end_date`, ou seja, se `end_date` não for preenchido, a `start_date` não será reconhecida.
                       example: "2020-06-02T13:07:14.260Z"
                     end_date:
                       type: string
