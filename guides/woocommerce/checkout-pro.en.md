@@ -1,6 +1,37 @@
 # Mercado Pago with Checkout Pro
 
-With Checkout Pro, the buyer will be directed from the store to the Mercado Pago website, where they must complete the requested information and make the payment. In this way, the transaction is processed and completed outside of the store environment. It is not necessary for the buyer to have a Mercado Pago account and, at the end of the transaction, the buyer can be returned to the store.
+With Checkout Pro, the buyer will be directed from the store to the Mercado Pago website, where they must complete the requested information and make the payment. In this way, the transaction is processed and completed outside of the store environment. 
+
+It is not necessary for the buyer to have a Mercado Pago account, **but we recommend encouraging the login to a Mercado Pago account to facilitate the entire purchase process**. At the end of the transaction, the buyer can be returned to the store.
+
+----[mln]----
+> We recommend the incentive to log into a Mercado Pago account to guarantee the advantages that buyers can have when making a logged payment, such as: <br/></br>
+> <br/></br>
+> * **Login with ease**: log in with the same e-mail and password as Mercado Libre.
+> * **Pay easily**: use cards saved in account, Pix or money available in account.
+> * **Protect the purchase**: recover the money if you do not receive the product.
+------------
+----[mla]----
+> We recommend the incentive to log into a Mercado Pago account to guarantee the advantages that buyers can have when making a logged payment, such as: <br/></br>
+> <br/></br>
+> * **Pay quickly**: use available money or saved cards.
+> * **Access quotas**: quotas with or without credit card.
+> * **Buy with Confidence**: get help if there's a problem with your purchase.
+------------
+----[mlm]----
+> We recommend the incentive to log into a Mercado Pago account to guarantee the advantages that buyers can have when making a logged payment, such as: <br/></br>
+> <br/></br>
+> * **Enter with ease**: log in with the same Mercado Libre e-mail and password.
+> * **Pay quickly**: use the available money in Mercado Pago Wallet or stored cards.
+> * **Protect your purchase**: get your money back if you don't receive the product.
+------------
+----[mpe, mco, mlu, mlc]----
+> We recommend the incentive to log into a Mercado Pago account to guarantee the advantages that buyers can have when making a logged payment, such as: <br/></br>
+> <br/></br>
+> * **Enter with ease**: log in with the same Mercado Libre e-mail and password.
+> * **Pay quickly**: use available money or saved cards.
+> * **Access installments**: interest free installments with selected banks.
+------------
 
 ## Configure the payment method
 

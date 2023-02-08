@@ -1,11 +1,13 @@
-# Debit and credit
+# Cards
 
 ----[mlb]----
 This payment method will add Transparent Checkout, the payment method that will allow you to accept payments with credit and debit cards through Mercado Pago, without the need for the customer to leave the store.
+
 ------------
 
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 This payment method will add Checkout API, the payment method that will allow you to accept payments with credit and debit cards through Mercado Pago, without the need for the customer to leave the store.
+
 ------------
 
 ## Configure the payment method

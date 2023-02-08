@@ -1,6 +1,14 @@
 # Mercado Pago com o Checkout Pro
 
-Com o Checkout Pro, o comprador será direcionado da loja para o site do Mercado Pago, onde deverá preencher as informações solicitadas e efetuar o pagamento. Dessa forma, a transação é processada e concluída fora do ambiente da loja. Não é necessário que o comprador tenha conta no Mercado Pago e, ao final da transação, o comprador pode ser devolvido à loja.
+Com o Checkout Pro, o comprador será direcionado da loja para o site do Mercado Pago, onde deverá preencher as informações solicitadas e efetuar o pagamento. Dessa forma, a transação é processada e concluída fora do ambiente da loja. 
+
+Não é necessário que o comprador tenha conta no Mercado Pago, **mas recomendamos o incentivo ao login em uma conta Mercado Pago para facilitar todo o processo de compra**. Ao final da transação, o comprador pode ser devolvido à loja.
+
+> Recomendamos o incentivo ao login em uma conta Mercado Pago para garantir as vantagens que os compradores podem ter ao realizar um pagamento logado, como: <br/></br>
+> <br/></br>
+> * **Entrar com facilidade**: iniciar a sessão com o mesmo e-mail e senha do Mercado Livre.
+> * **Pagar com facilidade**: utilizar os cartões salvos em conta, Pix ou saldo disponível em conta.
+> * **Proteger a compra**: recupera el dinero si no recibe el producto.
 
 ## Configure o meio de pagamento
 

@@ -1,6 +1,30 @@
 # Mercado Pago con Checkout Pro
 
-Con Checkout Pro, el comprador será dirigido desde la tienda al sitio web de Mercado Pago, donde deberá completar los datos solicitados y realizar el pago. De esta manera, la transacción se procesa y completa fuera del entorno de la tienda. No es necesario que el comprador tenga una cuenta de Mercado Pago y, al finalizar la transacción, el comprador puede ser devuelto a la tienda. 
+Con Checkout Pro, el comprador será dirigido desde la tienda al sitio web de Mercado Pago, donde deberá completar los datos solicitados y realizar el pago. De esta manera, la transacción se procesa y completa fuera del entorno de la tienda.   
+
+No es necesario que el comprador tenga una cuenta de Mercado Pago, **pero recomendamos incentivar el ingreso a una cuenta de Mercado Pago para facilitar todo el proceso de compra**. Al final de la transacción, el comprador puede ser devuelto a la tienda.
+
+----[mla]----
+> Recomendamos incentivar el inicio de sesión en una cuenta de Mercado Pago para garantizar las ventajas que pueden tener los compradores al realizar un pago registrado, como: <br/></br>
+> <br/></br>
+> * **Paga rápido**: usa el dinero disponible o tarjetas guardadas.
+> * **Accede a cuotas**: cuotas con o sin tarjeta de credito.
+> * **Compra con confianza**: recibir ayuda si hay un problema con la compra.
+------------
+----[mlm]----
+> Recomendamos incentivar el inicio de sesión en una cuenta de Mercado Pago para garantizar las ventajas que pueden tener los compradores al realizar un pago registrado, como: <br/></br>
+> <br/></br>
+> * **Ingresa con facilidad**: inicia sesión con el mismo e-mail y contraseña de Mercado Libre.
+> * **Paga rápido**: usa el saldo disponible en Mercado Pago Wallet o tarjetas guardadas.
+> * **Protege tu compra**: recupera el dinero si no recibe el producto.
+------------
+----[mpe, mco, mlu, mlc]----
+> Recomendamos incentivar el inicio de sesión en una cuenta de Mercado Pago para garantizar las ventajas que pueden tener los compradores al realizar un pago registrado, como: <br/></br>
+> <br/></br>
+> * **Ingresa con facilidad**: inicia sesión con el mismo e-mail y contraseña de Mercado Libre.
+> * **Paga rápido**: usa dinero disponible o tarjetas guardadas.
+> * **Accede a cuotas**: cuotas sin interés con bancos seleccionados.
+------------
 
 ## Configurar el medio de pago
 

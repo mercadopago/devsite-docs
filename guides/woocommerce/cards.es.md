@@ -1,11 +1,13 @@
-# Débito y crédito
+# Tarjetas
 
 ----[mlb]----
-Este medio de pago adicionará Checkout Transparente, el medio de pago que te permitirá aceptar pagos con tarjetas de crédito y débito a través de Mercado Pago, sin necesidad de que el cliente salga de a tienda. 
+Este medio de pago adicionará Checkout Transparente, el medio de pago que te permitirá aceptar pagos con tarjetas de crédito y débito a través de Mercado Pago, sin necesidad de que el cliente salga de a tienda.
+
 ------------
 
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 Este medio de pago adicionará Checkout API, el medio de pago que te permitirá aceptar pagos con tarjetas de crédito y débito a través de Mercado Pago, sin necesidad de que el cliente salga de a tienda. 
+
 ------------
 
 ## Configurar el medio de pago
