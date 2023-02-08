@@ -26,19 +26,3 @@ To integrate Checkout Pro, follow the steps below.
 Ready! Mercado Pago Checkout Pro is ready to receive payments from your store.
 
 > If you want to use the Checkout API to receive payments in the store, see the section [Configure payments with Checkout API](/developers/en/docs/prestashop/payment-configuration/checkout-api/introduction)
-
-> PREV_STEP_CARD_EN
->
-> Payment configuration
->
-> Learn how to configure Mercado Pago checkouts to receive payments from your store.
->
-> [Payment configuration](/developers/en/docs/prestashop/payment-configuration)
-
-> NEXT_STEP_CARD_EN
->
-> Test payments
->
-> Learn how to make a test purchase and ensure the integration works.
->
-> [Test payments](/developers/en/docs/prestashop/sales-processing/integration-test)

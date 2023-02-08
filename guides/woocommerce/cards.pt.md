@@ -1,4 +1,4 @@
-# CartÕes
+# Cartões
 
 ----[mlb]----
 Essa forma de pagamento adicionará o Checkout Transparente, a forma de pagamento que permitirá que você aceite pagamentos com cartões de crédito e débito pelo Mercado Pago, sem a necessidade do cliente sair da loja.

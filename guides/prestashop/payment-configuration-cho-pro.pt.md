@@ -32,19 +32,3 @@ Pronto! O Checkout Pro do Mercado Pago está pronto para receber os pagamentos d
 ----[mla, mlm, mpe, mco, mlu, mlc]---- 
 > Caso deseje utilizar o Checkout API para receber pagamentos na loja, veja a seção [Configurar os pagamentos com Checkout API](/developers/pt/docs/prestashop/payment-configuration/checkout-api/introduction).
 ------------
-
-> PREV_STEP_CARD_PT
->
-> Configuração de pagamentos
->
-> Saiba como configurar os checkouts do Mercado Pago para receber os pagamento de sua loja.
->
-> [Configuração de pagamentos](/developers/pt/docs/prestashop/payment-configuration)
-
-> NEXT_STEP_CARD_PT
->
-> Testar os pagamentos
->
-> Saiba como realizar uma compra teste e garantir o funcionamento da integração.
->
-> [Testar os pagamentos](/developers/pt/docs/prestashop/sales-processing/integration-test)

@@ -11,19 +11,3 @@ To integrate the payment method, follow the steps below.
 5. If necessary, define a percentage discount for customers who pay with Mercado Pago.
 
 Ready! Card payment via Transparent Checkout has been set up and is ready for testing and/or receiving payments in your store.
-
-> PREV_STEP_CARD_EN
->
-> Configure payments with Checkout API
->
-> Learn how to configure the Checkout API to receive payments in your store.
->
-> [Checkout Transparente](/developers/en/docs/prestashop/payment-configuration/checkout-api/introduction)
-
-> NEXT_STEP_CARD_EN
->
-> Configure payments with ticket checkout
->
-> Configure your store to receive cash payments using the Checkout API.
->
-> [Ticket checkout](/developers/en/docs/prestashop/payment-configuration/checkout-api/ticket-checkout)

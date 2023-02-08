@@ -32,19 +32,3 @@ Para integrar Checkout Pro, siga los pasos a continuación.
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 > Si desea utilizar el Checkout API para recibir pagos en la tienda, consulte la sección [Configurar pagos con Checkout API](developers/es/docs/prestashop/payment-configuration/checkout-api/introduction).
 ------------
-
-> PREV_STEP_CARD_ES
->
-> Configuración de pago
->
-> Aprende a configurar los checkouts de Mercado Pago para recibir pagos de tu tienda.
->
-> [Configuración de pago](/developers/es/docs/prestashop/payment-configuration)
-
-> NEXT_STEP_CARD_ES
->
-> Prueba de pagos
->
-> Aprenda cómo hacer una compra de prueba y asegúrese de que la integración funcione.
->
-> [Prueba de pagos](/developers/es/docs/prestashop/sales-processing/integration-test)

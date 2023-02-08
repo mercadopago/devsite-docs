@@ -46,19 +46,3 @@ Once the initial purchase process is complete, see below how to test the integra
 > </br> <br/>
 > In addition, in both checkouts this information about the approved payment will not be included in the Mercado Pago account history because it only contains real expenses (made in production).
 ------------
-
-> PREV_STEP_CARD_EN
->
-> Payment configuration
->
-> Learn how to configure Mercado Pago checkouts to receive payments from your store.
->
-> [Payment configuration](/developers/en/docs/prestashop/payment-configuration)
-
-> NEXT_STEP_CARD_EN
->
-> Receive payments
->
-> Learn how to enable the store to process real sales.
->
-> [Receive payments](/developers/en/docs/prestashop/sales-processing/go-to-production)
