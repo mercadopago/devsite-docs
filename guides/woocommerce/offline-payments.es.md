@@ -9,4 +9,3 @@ Este medio de pago adicionará----[mlb]---- Checkout Transparente ------------ -
 5. Con **Vencimiento del pago** podrás configurar en cuántos días caducarán los pedidos con pagos en efectivo.
 
 Para guardar los cambios en la configuración, haz clic en el botón **Guardar cambios**.
-

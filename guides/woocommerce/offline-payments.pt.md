@@ -9,4 +9,3 @@ Este meio de pagamento irá adicionar o----[mlb]---- Checkout Transparente -----
 5. Com o vencimento do pagamento você pode configurar em quantos dias os pedidos com pagamento em dinheiro expirarão.
 
 Para salvar as alterações nas configurações, clique no botão **Salvar alterações**.
-
