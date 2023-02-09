@@ -2,28 +2,17 @@
 
 Con Checkout Pro, el comprador será dirigido desde la tienda al sitio web de Mercado Pago, donde deberá completar los datos solicitados y realizar el pago. De esta manera, la transacción se procesa y completa fuera del entorno de la tienda.   
 
-No es necesario que el comprador tenga una cuenta de Mercado Pago, **pero recomendamos incentivar el ingreso a una cuenta de Mercado Pago para facilitar todo el proceso de compra**. Al final de la transacción, el comprador puede ser devuelto a la tienda.
+Al instalar Checkout Pro, es posible que haya un aumento en la tasa de aprobación de las ventas de la tienda en línea. Esto sucede porque los compradores podrán pagar con una cuenta de Mercado Pago y todo el proceso de compra se hará en nuestro entorno, lo que nos permite saber mejor quién está comprando. Al final de la transacción, estos compradores son redirigidos al entorno de la tienda.
 
-----[mla]----
-> Recomendamos incentivar el inicio de sesión en una cuenta de Mercado Pago para garantizar las ventajas que pueden tener los compradores al realizar un pago registrado, como: <br/></br>
-> <br/></br>
-> * **Paga rápido**: usa el dinero disponible o tarjetas guardadas.
-> * **Accede a cuotas**: cuotas con o sin tarjeta de crédito.
-> * **Compra con confianza**: recibe ayuda si hay un problema con la compra.
-------------
-----[mlm]----
-> Recomendamos incentivar el inicio de sesión en una cuenta de Mercado Pago para garantizar las ventajas que pueden tener los compradores al realizar un pago registrado, como: <br/></br>
-> <br/></br>
-> * **Ingresa con facilidad**: inicia sesión con el mismo e-mail y contraseña de Mercado Libre.
-> * **Paga rápido**: usa el saldo disponible en Mercado Pago Wallet o tarjetas guardadas.
-> * **Protege tu compra**: recupera el dinero si no recibe el producto.
-------------
-----[mpe, mco, mlu, mlc]----
-> Recomendamos incentivar el inicio de sesión en una cuenta de Mercado Pago para garantizar las ventajas que pueden tener los compradores al realizar un pago registrado, como: <br/></br>
-> <br/></br>
-> * **Ingresa con facilidad**: inicia sesión con el mismo e-mail y contraseña de Mercado Libre.
-> * **Paga rápido**: usa dinero disponible o tarjetas guardadas.
-> * **Accede a cuotas**: cuotas sin interés con bancos seleccionados.
+Al finalizar la compra, cuando los compradores eligen pagar con Mercado Pago, se presenta información que destaca las ventajas exclusivas de pagar con una cuenta de Mercado Pago, tales como:
+
+* **Inicio de sesión fácil**: inicie sesión con el mismo correo electrónico y contraseña que Mercado Libre.
+* **Paga más rápido y de muchas formas**: usa tarjetas guardadas, Pix o saldo disponible en la cuenta de Mercado Pago.
+* **Protección de compra**: recupera tu dinero si el producto no se entrega.
+
+----[mlb]----
+![woo-cho-pro-en](/images/woocomerce/cho-pro-en-mlb.png)
+
 ------------
 
 ## Configurar el medio de pago

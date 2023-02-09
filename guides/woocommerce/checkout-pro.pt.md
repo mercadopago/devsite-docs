@@ -2,13 +2,18 @@
 
 Com o Checkout Pro, o comprador será direcionado da loja para o site do Mercado Pago, onde deverá preencher as informações solicitadas e efetuar o pagamento. Dessa forma, a transação é processada e concluída fora do ambiente da loja. 
 
-Não é necessário que o comprador tenha conta no Mercado Pago, **mas recomendamos o incentivo ao login em uma conta Mercado Pago para facilitar todo o processo de compra**. Ao final da transação, o comprador pode ser devolvido à loja.
+Ao instalar o Checkout Pro, é possível que haja um **aumento na taxa de aprovação das vendas da loja on-line**. Isso acontece porque os compradores poderão pagar usando uma conta Mercado Pago e todo o processo de compra será feito em nosso ambiente, o que possibilita que conheçamos melhor quem está comprando. Ao final da transação, esses compradores são redirecionados ao ambiente da loja.
 
-> Recomendamos o incentivo ao login em uma conta Mercado Pago para garantir as vantagens que os compradores podem ter ao realizar um pagamento logado, como: <br/></br>
-> <br/></br>
-> * **Entrar com facilidade**: iniciar a sessão com o mesmo e-mail e senha do Mercado Livre.
-> * **Pagar com facilidade**: utilizar os cartões salvos em conta, Pix ou saldo disponível em conta.
-> * **Proteger a compra**: receber o dinheiro de volta caso a compra não seja entregue.
+No checkout, quando os compradores escolhem pagar com Mercado Pago, é apresentado um informativo que ressalta  as vantagens exclusivas de pagar com uma conta Mercado Pago, como:
+
+* **Login facilitado**: iniciar a sessão com o mesmo e-mail e senha do Mercado Livre.
+* **Pagar mais rápido e de várias maneiras**: utilizar os cartões salvos, Pix ou saldo disponível na  conta Mercado Pago.
+* **Proteção à compra**: receber o dinheiro de volta caso o produto não seja entregue.
+
+----[mlb]----
+![woo-cho-pro-pt](/images/woocomerce/cho-pro-pt-mlb.png)
+
+------------
 
 ## Configure o meio de pagamento
 

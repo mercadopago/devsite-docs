@@ -2,7 +2,7 @@
 
 Para escolher quais métodos de pagamento oferecer através do Mercado Pago na loja e configurá-los, acesse a opção **3. Configure os meios de pagamento**. Escolha uma forma de pagamento e clique em **Configurar >** para modificar suas preferências.
 
-Você pode optar por configurar estes métodos de pagamento:
+Você pode optar por configurar estes meios de pagamento:
 
 * [Mercado Pago com Checkout Pro](/developers/pt/docs/woocommerce/payments-configuration/checkoutpro)
 
