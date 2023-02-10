@@ -1104,16 +1104,16 @@ paths:
     get:
       tags:
         - $ref: '#/tags/wallet-connect'
-      summary: Retrieve Advanced Payment data
+      summary: Get Advanced Payment data
       x-summary-i18n:
-        eng: Retrieve Advanced Payment data
-        spa: Recuperar datos de um Advanced Payment
-        por: Recuperar dados de um advanced payment
-      description: This endpoint is used to retrieve an Advanced Payment data from its id
+        eng: Get Advanced Payment data
+        spa: Obtener datos de um Advanced Payment
+        por: Obter dados de um advanced payment
+      description: This endpoint is used to get an Advanced Payment data from its id
       x-description-i18n:
-        eng: This endpoint is used to retrieve an Advanced Payment data from its id
-        spa: Este endpoint se utiliza para recuperar datos de un Advanced Payment desde su id
-        por: Este endpoint é utilizado para recuperar os dados de um Advanced Payment a partir de seu id
+        eng: This endpoint is used to get an Advanced Payment data from its id
+        spa: Este endpoint se utiliza para obtener datos de un Advanced Payment desde su id
+        por: Este endpoint é utilizado para obter os dados de um Advanced Payment a partir de seu id
       parameters:
         - in: path
           name: advanced_payment_id
