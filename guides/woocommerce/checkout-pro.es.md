@@ -43,7 +43,7 @@ Al concluir la compra, cuando los compradores eligen pagar con Mercado Pago, se 
 ------------
 
 ----[mpe, mco, mlu, mlc]----
-* **Inicio de sesión fácil**: inicie sesión con el mismo correo electrónico y contraseña que Mercado Libre.
+* **Inicio de sesión fácil**: inicia sesión con el mismo correo electrónico y contraseña que Mercado Libre.
 * **Paga más rápido**: usa efectivo o saldo disponible en tu cuenta de Mercado Pago.
 * **Cuotas**: cuotas sin interés en bancos seleccionados.
 
