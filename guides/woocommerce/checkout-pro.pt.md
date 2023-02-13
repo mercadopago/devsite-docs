@@ -1,4 +1,4 @@
-# Mercado Pago com o Checkout Pro
+# Checkout Pro
 
 Com o Checkout Pro, o comprador será direcionado da loja para o site do Mercado Pago, onde deverá preencher as informações solicitadas e efetuar o pagamento. Dessa forma, a transação é processada e concluída fora do ambiente da loja. 
 
