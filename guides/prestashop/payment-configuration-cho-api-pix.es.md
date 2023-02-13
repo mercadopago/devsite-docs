@@ -24,4 +24,4 @@ Para integrar el método de pago, siga los pasos a continuación.
 2. Indicar la fecha de caducidad que tendrán los clientes para realizar la transferencia vía Pix.
 3. Si lo desea, defina un porcentaje de descuento para los clientes que pagan con Pix. El porcentaje definido se deducirá del importe total de la compra.
 
-¡Listo! El pago de Pix a través del ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------ se ha configurado y está listo para recibir pagos en su tienda.
+¡Listo! El pago de Pix a través del ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------ se ha configurado y está listo para recibir pagos en tu tienda.
