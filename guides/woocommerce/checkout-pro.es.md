@@ -7,7 +7,7 @@ Al instalar Checkout Pro, puede haber un **aumento en la tasa de aprobación de 
 Al concluir la compra, cuando los compradores eligen pagar con Mercado Pago, se muestra información que destaca las ventajas exclusivas de pagar con una cuenta de Mercado Pago, tales como:
 
 ----[mlb]----
-* **Inicio de sesión fácil**: inicie sesión con el mismo correo electrónico y contraseña que Mercado Libre.
+* **Inicio de sesión fácil**: inicia sesión con el mismo correo electrónico y contraseña que Mercado Libre.
 * **Paga más rápido y de muchas formas**: usa tarjetas guardadas, Pix o saldo disponible en la cuenta de Mercado Pago.
 * **Protección de compra**: recupera tu dinero si el producto no se entrega.
 
