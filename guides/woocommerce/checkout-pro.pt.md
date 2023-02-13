@@ -11,12 +11,8 @@ No checkout, quando os compradores escolhem pagar com Mercado Pago, é apresenta
 * **Pagar mais rápido e de várias maneiras**: utilizar os cartões salvos, Pix ou saldo disponível na conta Mercado Pago.
 * **Proteção à compra**: receber o dinheiro de volta caso o produto não seja entregue.
 
-------------
-----[mlb]----
 <div align="center">
-
 ![woo-chopro-pt-mlb](/images/woocomerce/woo-chopro-pt-mlb.png)
-
 </div>
 ------------
 
