@@ -31,7 +31,7 @@ Al concluir la compra, cuando los compradores eligen pagar con Mercado Pago, se 
 ------------
 
 ----[mlm]----
-* **Inicio de sesión fácil**: inicie sesión con el mismo correo electrónico y contraseña que Mercado Libre.
+* **Inicio de sesión fácil**: inicia sesión con el mismo correo electrónico y contraseña que Mercado Libre.
 * **Paga más rápido y de diferentes formas**: usa tarjetas guardadas, efectivo, medios de pago offline o saldo disponible en tu cuenta de Mercado Pago.
 * **Protección de compra**: recupera tu dinero si el producto no se entrega.
 
