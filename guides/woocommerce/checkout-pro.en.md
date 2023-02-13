@@ -11,7 +11,7 @@ At checkout, when buyers choose to pay with Mercado Pago, information is display
 * **Pay faster and in many ways**: use saved cards, Pix or available balance in the Mercado Pago account.
 * **Purchase protection**: get your money back if the product is not delivered.
 
-<div align="center">
+<div align='center'>
 
 ![woo-chopro-en-mlb](/images/woocomerce/woo-chopro-en-mlb.png)
 
@@ -23,7 +23,7 @@ At checkout, when buyers choose to pay with Mercado Pago, information is display
 * **Installment**: pay in installments with or without a credit card.
 * **Mercado Pago support**: receive help if you have any problems with your purchase.
 
-<div align="center">
+<div align='center'>
 
 ![woo-chopro-en-mla](/images/woocomerce/woo-chopro-en-mla.png)
 
@@ -35,7 +35,7 @@ At checkout, when buyers choose to pay with Mercado Pago, information is display
 * **Pay faster and in different ways**: use saved cards, cash, offline means or available balance in your Mercado Pago account.
 * **Purchase protection**: get your money back if the product is not delivered.
 
-<div align="center">
+<div align='center'>
 
 ![woo-chopro-en-mlm](/images/woocomerce/woo-chopro-en-mlm.png)
 
@@ -47,7 +47,7 @@ At checkout, when buyers choose to pay with Mercado Pago, information is display
 * **Pay faster**: use cash or available balance in your Mercado Pago account.
 * **Installment**: interest-free installments at selected banks.
 
-<div align="center">
+<div align='center'>
 
 ![woo-chopro-en-all](/images/woocomerce/woo-chopro-en-all.png)
 
