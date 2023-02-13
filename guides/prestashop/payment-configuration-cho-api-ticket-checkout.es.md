@@ -24,4 +24,4 @@ Para integrar el método de pago, siga los pasos a continuación.
 3. Indicar a los cuantos días de su emisión caducarán.
 4. De ser necesario, define un porcentaje de descuento para clientes que paguen con Mercado Pago.
 
-¡Listo! El pago con ticket checkout a través de ----[mlb]----Checkout Transparente------------ ----[mla, mlm, mpe, mco, mlu, mlc]----Checkout API------------  se ha configurado y está listo para recibir pagos en su tienda.
+¡Listo! El pago con ticket checkout a través de ----[mlb]----Checkout Transparente------------ ----[mla, mlm, mpe, mco, mlu, mlc]----Checkout API------------  se ha configurado y está listo para recibir pagos en tu tienda.
