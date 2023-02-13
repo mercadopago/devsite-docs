@@ -2,17 +2,56 @@
 
 With Checkout Pro, the buyer will be directed from the store to the Mercado Pago website, where they must complete the requested information and make the payment. In this way, the transaction is processed and completed outside of the store environment. 
 
-By installing Checkout Pro, it is possible that there is an **increase in the pass rate of online store sales**. This happens because buyers will be able to pay using a Mercado Pago account and the entire purchase process will be done in our environment, which allows us to know better who is buying. At the end of the transaction, these buyers are redirected to the store environment.
+Ao instalar o Checkout Pro, é possível que haja um **aumento na taxa de aprovação das vendas da loja on-line**. Isso acontece porque os compradores poderão pagar usando uma conta Mercado Pago e todo o processo de compra será feito em nosso ambiente, o que facilita o pagamento. Ao final da transação, esses compradores são redirecionados ao ambiente da loja.
 
-At checkout, when buyers choose to pay with Mercado Pago, information is displayed that highlights the exclusive advantages of paying with a Mercado Pago account, such as:
-
-* **Easy login**: login with the same e-mail and password as Mercado Libre.
-* **Pay faster and in many ways**: use saved cards or available money in the Mercado Pago account.
-* **Purchase protection**: get your money back if the product is not delivered.
+No checkout, quando os compradores escolhem pagar com Mercado Pago, é apresentado um informativo que ressalta   as vantagens exclusivas de pagar com uma conta Mercado Pago, como:
 
 ----[mlb]----
-![woo-cho-pro-es](/images/woocomerce/1-cho-pro-es-mlb.png)
+* **Easy login**: login with the same e-mail and password as Mercado Libre.
+* **Pay faster and in many ways**: use saved cards, Pix or available balance in the Mercado Pago account.
+* **Purchase protection**: get your money back if the product is not delivered.
 
+<div align="center">
+
+![woo-cho-pro-pt](/images/woocomerce/cho-pro-en-mlb.png)
+
+</div>
+------------
+
+----[mla]----
+* **Pay faster**: use saved cards or available balance in your Mercado Pago account.
+* **Installment**: pay in installments with or without a credit card.
+* **Mercado Pago support**: receive help if you have any problems with your purchase.
+
+<div align="center">
+
+![woo-cho-pro-pt](/images/woocomerce/cho-pro-en-mla.png)
+
+</div>
+------------
+
+----[mlm]----
+* **Easy login**: login with the same e-mail and password as Mercado Libre.
+* **Pay faster and in different ways**: use saved cards, cash, offline means or available balance in your Mercado Pago account.
+* **Purchase protection**: get your money back if the product is not delivered.
+
+<div align="center">
+
+![woo-cho-pro-pt](/images/woocomerce/cho-pro-en-mlm.png)
+
+</div>
+------------
+
+----[mpe, mco, mlu, mlc]----
+* **Easy login**: login with the same e-mail and password as Mercado Libre.
+* **Pay faster**: use cash or available balance in your Mercado Pago account.
+* **Installment**: interest-free installments at selected banks.
+
+<div align="center">
+
+![woo-cho-pro-pt](/images/woocomerce/cho-pro-en-all.png)
+
+</div>
 ------------
 
 ## Configure the payment method
