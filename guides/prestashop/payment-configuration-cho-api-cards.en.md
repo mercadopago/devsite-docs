@@ -10,4 +10,4 @@ To integrate the payment method, follow the steps below.
 4. Activate **binary mode** when you do not want to leave payments in pending or review status. With binary mode, payments will be automatically accepted or declined.
 5. If necessary, define a percentage discount for customers who pay with Mercado Pago.
 
-Ready! Card payment via Transparent Checkout has been set up and is ready for testing and/or receiving payments in your store.
+Ready! Card payment via ----[mlb]---- Transparent Checkout  ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------ has been set up and is ready for testing and/or receiving payments in your store.
