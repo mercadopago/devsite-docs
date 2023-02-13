@@ -1,4 +1,4 @@
-# Configurar plugin
+# Configuração da integração
 
 Uma vez instalado o plugin Mercado Pago com WooCommerce, é necessário configurá-lo. Para isso, siga estes passos:
 

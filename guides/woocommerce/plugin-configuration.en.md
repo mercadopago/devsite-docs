@@ -1,4 +1,4 @@
-# Plugin configuration
+# Integration configuration
 
 Once the Mercado Pago with WooCommerce plugin is installed, it is necessary to configure it. For that, follow these steps:
 

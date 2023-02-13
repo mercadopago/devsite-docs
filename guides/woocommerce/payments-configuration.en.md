@@ -1,4 +1,4 @@
-# Configure the payment methods
+# Payment configuration
 
 To choose which payment methods to offer through Mercado Pago in the store and configure them, access option **3. Configure the payment methods**. Choose a payment method and click on **Configure >** to change your preferences.
 
