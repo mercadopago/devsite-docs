@@ -18,4 +18,4 @@ Para integrar el método de pago, siga los pasos a continuación.
 4. Activa el **modo binario** cuando no quieras dejar los pagos en estado pendiente o en revisión. Con el modo binario, los pagos se aceptarán o rechazarán automáticamente.
 5. De ser necesario, define un porcentaje de descuento para clientes que paguen con Mercado Pago.
 
-¡Listo! El pago con tarjeta a través de Transparent Checkout se ha configurado y está listo para probar y/o recibir pagos en su tienda.
+¡Listo! El pago con tarjeta a través de ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------ se ha configurado y está listo para probar y/o recibir pagos en su tienda.
