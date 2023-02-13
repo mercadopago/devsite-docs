@@ -16,6 +16,6 @@ Para utilizar la integración de Mercado Pago con WooCommerce en un sitio WordPr
 | Servidor Web | Software responsable de aceptar solicitudes HTTP de clientes, normalmente navegadores, y de atenderlas con respuestas HTTP | Apache 2.x, Nginx 1.7.x|
 | Sistema operativo | Sistema responsable de la gestión del hardware informático. | Linux x86, Windows x86-64 |
 | SSL | Protocolo que te permite establecer comunicaciones seguras a través de internet para actividades como navegación, correo electrónico y otras transferencias de datos. | Certificado SSL |
-| Versão PHP | PHP es un lenguaje de programación ampliamente utilizado para el desarrollo de aplicaciones web. Para obtener más información, [haz clic aquí](https://www.php.net/). | PHP 7.x |
+| Versión PHP | PHP es un lenguaje de programación ampliamente utilizado para el desarrollo de aplicaciones web. Para obtener más información, [haz clic aquí](https://www.php.net/). | PHP 7.x |
 | WooCommerce | WordPress plugin que permite crear tiendas virtuales desde código abierto. [Haz clic aquí](https://woocommerce.com/es-es/woocommerce-features/) para obtener más información. | Versión requerida: 5.9.x o superior. Probado hasta 7.1.x |
 | WordPress | Herramienta online para creación de tiendas, sitios web y blogs. [Haz clic aquí](https://es.wordpress.org/) para crear tu cuenta. | Versión de instalación requerida: 5.6.x o superior. Probado hasta 6.1.x |
