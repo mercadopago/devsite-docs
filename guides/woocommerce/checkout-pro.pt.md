@@ -12,6 +12,7 @@ No checkout, quando os compradores escolhem pagar com Mercado Pago, é apresenta
 * **Proteção à compra**: receber o dinheiro de volta caso o produto não seja entregue.
 
 <div align="center">
+
 ![woo-chopro-pt-mlb](/images/woocomerce/woo-chopro-pt-mlb.png)
 </div>
 ------------
