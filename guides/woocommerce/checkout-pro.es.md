@@ -1,4 +1,4 @@
-# Mercado Pago con Checkout Pro
+# Checkout Pro
 
 Con Checkout Pro, el comprador será dirigido desde la tienda al sitio web de Mercado Pago, donde deberá completar los datos solicitados y realizar el pago. De esta manera, la transacción se procesa y completa fuera del entorno de la tienda.   
 
@@ -32,7 +32,7 @@ Al finalizar la compra, cuando los compradores eligen pagar con Mercado Pago, se
 
 ----[mlm]----
 * **Inicio de sesión fácil**: inicie sesión con el mismo correo electrónico y contraseña que Mercado Libre.
-* **Paga más rápido y de diferentes formas**: usa tarjetas guardadas, efectivo, medios offline o saldo disponible en tu cuenta de Mercado Pago.
+* **Paga más rápido y de diferentes formas**: usa tarjetas guardadas, efectivo, medios de pago offline o saldo disponible en tu cuenta de Mercado Pago.
 * **Protección de compra**: recupera tu dinero si el producto no se entrega.
 
 <div align="center">
@@ -45,7 +45,7 @@ Al finalizar la compra, cuando los compradores eligen pagar con Mercado Pago, se
 ----[mpe, mco, mlu, mlc]----
 * **Inicio de sesión fácil**: inicie sesión con el mismo correo electrónico y contraseña que Mercado Libre.
 * **Paga más rápido**: usa efectivo o saldo disponible en tu cuenta de Mercado Pago.
-* **Cuota**: cuotas sin interés en bancos seleccionados.
+* **Cuotas**: cuotas sin interés en bancos seleccionados.
 
 <div align="center">
 

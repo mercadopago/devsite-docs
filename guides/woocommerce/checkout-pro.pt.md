@@ -4,11 +4,11 @@ Com o Checkout Pro, o comprador será direcionado da loja para o site do Mercado
 
 Ao instalar o Checkout Pro, é possível que haja um **aumento na taxa de aprovação das vendas da loja on-line**. Isso acontece porque os compradores poderão pagar usando uma conta Mercado Pago e todo o processo de compra será feito em nosso ambiente, o que facilita o pagamento. Ao final da transação, esses compradores são redirecionados ao ambiente da loja.
 
-No checkout, quando os compradores escolhem pagar com Mercado Pago, é apresentado um informativo que ressalta   as vantagens exclusivas de pagar com uma conta Mercado Pago, como:
+No checkout, quando os compradores escolhem pagar com Mercado Pago, é apresentado um informativo que ressalta as vantagens exclusivas de pagar com uma conta Mercado Pago, como:
 
 ----[mlb]----
 * **Login facilitado**: iniciar a sessão com o mesmo e-mail e senha do Mercado Livre.
-* **Pagar mais rápido e de várias maneiras**: utilizar os cartões salvos, Pix ou saldo disponível na  conta Mercado Pago.
+* **Pagar mais rápido e de várias maneiras**: utilizar os cartões salvos, Pix ou saldo disponível na conta Mercado Pago.
 * **Proteção à compra**: receber o dinheiro de volta caso o produto não seja entregue.
 
 <div align="center">
@@ -32,7 +32,7 @@ No checkout, quando os compradores escolhem pagar com Mercado Pago, é apresenta
 
 ----[mlm]----
 * **Login facilitado**: iniciar a sessão com o mesmo e-mail e senha do Mercado Livre. 
-* **Pagar mais rápido e de várias maneiras**: utilizar os cartões salvos, efectivo, meios off-line ou saldo disponível na conta Mercado Pago.
+* **Pagar mais rápido e de várias maneiras**: utilizar os cartões salvos, efectivo, meios de pagamento off-line ou saldo disponível na conta Mercado Pago.
 * **Proteção à compra**: receber o dinheiro de volta caso o produto não seja entregue.
 
 <div align="center">

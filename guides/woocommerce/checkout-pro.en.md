@@ -1,10 +1,10 @@
-# Mercado Pago with Checkout Pro
+# Checkout Pro
 
 With Checkout Pro, the buyer will be directed from the store to the Mercado Pago website, where they must complete the requested information and make the payment. In this way, the transaction is processed and completed outside of the store environment. 
 
-Ao instalar o Checkout Pro, é possível que haja um **aumento na taxa de aprovação das vendas da loja on-line**. Isso acontece porque os compradores poderão pagar usando uma conta Mercado Pago e todo o processo de compra será feito em nosso ambiente, o que facilita o pagamento. Ao final da transação, esses compradores são redirecionados ao ambiente da loja.
+When installing Checkout Pro, there may be an **increase in the approval rate of online store sales**. This happens because buyers will be able to pay using a Mercado Pago account and the entire purchase process will be done in our environment, which facilitates payment. At the end of the transaction, these buyers are redirected to the store environment.
 
-No checkout, quando os compradores escolhem pagar com Mercado Pago, é apresentado um informativo que ressalta   as vantagens exclusivas de pagar com uma conta Mercado Pago, como:
+At checkout, when buyers choose to pay with Mercado Pago, information is displayed that highlights the exclusive advantages of paying with a Mercado Pago account, such as:
 
 ----[mlb]----
 * **Easy login**: login with the same e-mail and password as Mercado Libre.
