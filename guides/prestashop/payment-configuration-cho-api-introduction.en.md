@@ -1,6 +1,6 @@
 # Configure payments with Checkout API
 
-With the [Checkout API](/developers/en/guides/checkout-api/landing), the entire checkout process will take place within the online store environment, without the need to redirect to an external page. In addition to allowing greater control in the customization and integration process, the checkout offers a complete structure for processing payments with the main means available on the market.
+With the [Checkout API](/developers/en/docs/checkout-api/landing), the entire checkout process will take place within the online store environment, without the need to redirect to an external page. In addition to allowing greater control in the customization and integration process, the checkout offers a complete structure for processing payments with the main means available on the market.
 
 See below which payment methods are available for the store when integrating the Checkout API.
 

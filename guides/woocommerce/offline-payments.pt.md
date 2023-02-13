@@ -1,6 +1,6 @@
-# Meios de pagamento offline
+# Meios de pagamento off-line
 
-Este meio de pagamento irá adicionar o----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API------------ e permitirá oferecer pagamentos em dinheiro utilizando métodos de pagamento offline através do Mercado Pago.
+Este meio de pagamento irá adicionar o----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API------------ e permitirá oferecer pagamentos em dinheiro utilizando métodos de pagamento off-line através do Mercado Pago.
 
 1. Para ativar o checkout, você deve clicar no botão deslizante.
 2. Na alteração **Título no checkout da loja** você pode escolher o nome com que esta forma de pagamento será exibida na loja. Por exemplo, você pode chamá-lo de **pagamento em dinheiro**.

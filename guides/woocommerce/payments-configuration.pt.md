@@ -4,14 +4,11 @@ Para escolher quais métodos de pagamento oferecer através do Mercado Pago na l
 
 Você pode optar por configurar estes meios de pagamento:
 
-* [Mercado Pago com Checkout Pro](/developers/pt/docs/woocommerce/payments-configuration/checkoutpro)
-
-----[mla, mlm, mpe, mco, mlu, mlc]----
-* [Cartões com Checkout API](/developers/pt/docs/woocommerce/payments-configuration/cards)
-* [Meios de pagamento offline com Checkout API](/developers/pt/docs/woocommerce/payments-configuration/offline-payments)
+----[mlb]---- 
+* [Checkout Pro](/developers/pt/docs/woocommerce/payments-configuration/checkout-pro): pagamento é realizado na página do Mercado Pago com cartões (débito ou crédito), dinheiro (saldo da conta do Mercado Pago ou boleto bancário) e transferência bancária (Pix ou PEC).
+* [Checkout Transparente](/developers/pt/docs/woocommerce/payments-configuration/checkout-api): pagamento é realizado sem sair da sua loja virtual com cartões (débito ou crédito), meios de pagamento offline (saldo da conta do Mercado Pago, boleto bancário ou pagamento em lotérica sem boleto) e Pix. 
 ------------
-----[mlb]----
-* [Cartões com Checkout Transparente](/developers/pt/docs/woocommerce/payments-configuration/cards)
-* [Meios de pagamento offline com Checkout Transparente](/developers/pt/docs/woocommerce/payments-configuration/offline-payments)
-* [Pix com Checkout Transparente](/developers/pt/docs/woocommerce/payments-configuration/pix)
+----[mla, mlm, mpe, mco, mlu, mlc]----
+* [Checkout Pro](/developers/pt/docs/woocommerce/payments-configuration/checkout-pro): pagamento é realizado na página do Mercado Pago (dentro ou fora da sua loja) com cartões (débito ou crédito), dinheiro (saldo da conta do Mercado Pago ou outros meios de pagamentos disponíveis) e transferência bancária.
+* [Checkout API](/developers/pt/docs/woocommerce/payments-configuration/checkout-api): pagamento é realizado sem sair da sua loja virtual com cartões (débito ou crédito) e meios de pagamento offline (saldo da conta do Mercado Pago ou efectivo). 
 ------------
