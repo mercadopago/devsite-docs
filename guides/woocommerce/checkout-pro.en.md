@@ -11,7 +11,7 @@ At checkout, when buyers choose to pay with Mercado Pago, information is display
 * **Purchase protection**: get your money back if the product is not delivered.
 
 ----[mlb]----
-![woo-cho-pro-es](/images/woocomerce/cho-pro-es-mlb.png)
+![woo-cho-pro-es](/images/woocomerce/1-cho-pro-es-mlb.png)
 
 ------------
 
