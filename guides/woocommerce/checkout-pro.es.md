@@ -4,10 +4,10 @@ Con [Checkout Pro](/developers/es/docs/checkout-pro/landing), el comprador será
 
 Al instalar Checkout Pro, puede haber un **aumento en la tasa de aprobación de las ventas en la tienda en línea**. Esto sucede porque los compradores podrán pagar con una cuenta de Mercado Pago y todo el proceso de compra se realizará en nuestro entorno, lo que facilita el pago. Al final de la transacción, estos compradores son redirigidos al entorno de la tienda.
 
-Al finalizar la compra, cuando los compradores eligen pagar con Mercado Pago, se muestra información que destaca las ventajas exclusivas de pagar con una cuenta de Mercado Pago, tales como:
+Al concluir la compra, cuando los compradores eligen pagar con Mercado Pago, se muestra información que destaca las ventajas exclusivas de pagar con una cuenta de Mercado Pago, tales como:
 
 ----[mlb]----
-* **Inicio de sesión fácil**: inicie sesión con el mismo correo electrónico y contraseña que Mercado Libre.
+* **Inicio de sesión fácil**: inicia sesión con el mismo correo electrónico y contraseña que Mercado Libre.
 * **Paga más rápido y de muchas formas**: usa tarjetas guardadas, Pix o saldo disponible en la cuenta de Mercado Pago.
 * **Protección de compra**: recupera tu dinero si el producto no se entrega.
 
@@ -31,7 +31,7 @@ Al finalizar la compra, cuando los compradores eligen pagar con Mercado Pago, se
 ------------
 
 ----[mlm]----
-* **Inicio de sesión fácil**: inicie sesión con el mismo correo electrónico y contraseña que Mercado Libre.
+* **Inicio de sesión fácil**: inicia sesión con el mismo correo electrónico y contraseña que Mercado Libre.
 * **Paga más rápido y de diferentes formas**: usa tarjetas guardadas, efectivo, medios de pago offline o saldo disponible en tu cuenta de Mercado Pago.
 * **Protección de compra**: recupera tu dinero si el producto no se entrega.
 
@@ -43,7 +43,7 @@ Al finalizar la compra, cuando los compradores eligen pagar con Mercado Pago, se
 ------------
 
 ----[mpe, mco, mlu, mlc]----
-* **Inicio de sesión fácil**: inicie sesión con el mismo correo electrónico y contraseña que Mercado Libre.
+* **Inicio de sesión fácil**: inicia sesión con el mismo correo electrónico y contraseña que Mercado Libre.
 * **Paga más rápido**: usa efectivo o saldo disponible en tu cuenta de Mercado Pago.
 * **Cuotas**: cuotas sin interés en bancos seleccionados.
 
