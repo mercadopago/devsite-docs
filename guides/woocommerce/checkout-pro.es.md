@@ -4,7 +4,7 @@ Con Checkout Pro, el comprador será dirigido desde la tienda al sitio web de Me
 
 Al instalar Checkout Pro, puede haber un **aumento en la tasa de aprobación de las ventas en la tienda en línea**. Esto sucede porque los compradores podrán pagar con una cuenta de Mercado Pago y todo el proceso de compra se realizará en nuestro entorno, lo que facilita el pago. Al final de la transacción, estos compradores son redirigidos al entorno de la tienda.
 
-Al finalizar la compra, cuando los compradores eligen pagar con Mercado Pago, se muestra información que destaca las ventajas exclusivas de pagar con una cuenta de Mercado Pago, tales como:
+Al concluir la compra, cuando los compradores eligen pagar con Mercado Pago, se muestra información que destaca las ventajas exclusivas de pagar con una cuenta de Mercado Pago, tales como:
 
 ----[mlb]----
 * **Inicio de sesión fácil**: inicie sesión con el mismo correo electrónico y contraseña que Mercado Libre.
