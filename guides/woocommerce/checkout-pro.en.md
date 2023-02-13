@@ -13,7 +13,7 @@ At checkout, when buyers choose to pay with Mercado Pago, information is display
 
 <div align="center">
 
-![woo-cho-pro-pt](/images/woocomerce/cho-pro-en-mlb.png)
+![woo-cho-pro-pt](/images/woocomerce/woo-chopro-pt-mlb.png)
 
 </div>
 ------------
@@ -25,7 +25,7 @@ At checkout, when buyers choose to pay with Mercado Pago, information is display
 
 <div align="center">
 
-![woo-cho-pro-pt](/images/woocomerce/cho-pro-en-mla.png)
+![woo-cho-pro-pt](/images/woocomerce/woo-chopro-pt-mla.png)
 
 </div>
 ------------
@@ -37,7 +37,7 @@ At checkout, when buyers choose to pay with Mercado Pago, information is display
 
 <div align="center">
 
-![woo-cho-pro-pt](/images/woocomerce/cho-pro-en-mlm.png)
+![woo-cho-pro-pt](/images/woocomerce/woo-chopro-pt-mlm.png)
 
 </div>
 ------------
@@ -49,7 +49,7 @@ At checkout, when buyers choose to pay with Mercado Pago, information is display
 
 <div align="center">
 
-![woo-cho-pro-pt](/images/woocomerce/cho-pro-en-all.png)
+![woo-cho-pro-pt](/images/woocomerce/woo-chopro-pt-all.png)
 
 </div>
 ------------

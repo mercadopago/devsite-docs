@@ -13,7 +13,7 @@ No checkout, quando os compradores escolhem pagar com Mercado Pago, é apresenta
 
 <div align="center">
 
-![woo-cho-pro-pt](/images/woocomerce/cho-pro-pt-mlb.png)
+![woo-chopro-en-mlb](/images/woocomerce/woo-chopro-en-mlb.png)
 
 </div>
 ------------
@@ -25,7 +25,7 @@ No checkout, quando os compradores escolhem pagar com Mercado Pago, é apresenta
 
 <div align="center">
 
-![woo-cho-pro-pt](/images/woocomerce/cho-pro-pt-mla.png)
+![woo-chopro-en-mla](/images/woocomerce/woo-chopro-en-mla.png)
 
 </div>
 ------------
@@ -37,7 +37,7 @@ No checkout, quando os compradores escolhem pagar com Mercado Pago, é apresenta
 
 <div align="center">
 
-![woo-cho-pro-pt](/images/woocomerce/cho-pro-pt-mlm.png)
+![woo-chopro-en-mlm](/images/woocomerce/woo-chopro-en-mlm.png)
 
 </div>
 ------------
@@ -49,7 +49,7 @@ No checkout, quando os compradores escolhem pagar com Mercado Pago, é apresenta
 
 <div align="center">
 
-![woo-cho-pro-pt](/images/woocomerce/cho-pro-pt-all.png)
+![woo-chopro-en-all](/images/woocomerce/woo-chopro-en-all.png)
 
 </div>
 ------------

@@ -13,7 +13,7 @@ Al finalizar la compra, cuando los compradores eligen pagar con Mercado Pago, se
 
 <div align="center">
 
-![woo-cho-pro-pt](/images/woocomerce/cho-pro-es-mlb.png)
+![woo-chopro-es-mlb](/images/woocomerce/woo-chopro-es-mlb.png)
 
 </div>
 ------------
@@ -25,7 +25,7 @@ Al finalizar la compra, cuando los compradores eligen pagar con Mercado Pago, se
 
 <div align="center">
 
-![woo-cho-pro-pt](/images/woocomerce/cho-pro-es-mla.png)
+![woo-chopro-es-mla](/images/woocomerce/woo-chopro-es-mla.png)
 
 </div>
 ------------
@@ -37,7 +37,7 @@ Al finalizar la compra, cuando los compradores eligen pagar con Mercado Pago, se
 
 <div align="center">
 
-![woo-cho-pro-pt](/images/woocomerce/cho-pro-es-mlm.png)
+![woo-chopro-es-mlm](/images/woocomerce/woo-chopro-es-mlm.png)
 
 </div>
 ------------
@@ -49,7 +49,7 @@ Al finalizar la compra, cuando los compradores eligen pagar con Mercado Pago, se
 
 <div align="center">
 
-![woo-cho-pro-pt](/images/woocomerce/cho-pro-es-all.png)
+![woo-chopro-es-all](/images/woocomerce/woo-chopro-es-all.png)
 
 </div>
 ------------
