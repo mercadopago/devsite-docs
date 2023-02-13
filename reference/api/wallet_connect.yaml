@@ -464,7 +464,7 @@ paths:
                         eng: A brief description of the payment.
                         spa: Breve descripción del pago.
                         por: Breve descrição do pagamento.
-                      example: Google payment
+                      example: Payment for the purchase of furniture
                     external_reference:
                       type: string
                       description: An string to allow identification of payment in case of an issue.
@@ -619,7 +619,7 @@ paths:
                             eng: Purchased product’s description, the reason for payment.
                             spa: Descripción del producto adquirido, motivo del pago.
                             por: Descrição do produto adquirido, motivo do pagamento.
-                          example: Google Payment
+                          example: Payment for the purchase of furniture
                         capture:
                           type: boolean
                           description: It is a boolean field found in two-step payments (like debit card). In this type of payment, which is carried out asynchronously,
@@ -834,7 +834,7 @@ paths:
                         eng: A brief description of the payment.
                         spa: Breve descripción del pago.
                         por: Breve descrição do pagamento.
-                      example: Google payment
+                      example: Payment for the purchase of furniture
                     external_reference:
                       type: string
                       description: An string to allow identification of payment in case of an issue.
@@ -950,7 +950,7 @@ paths:
                             eng: Purchased product’s description, the reason for payment.
                             spa: Descripción del producto adquirido, motivo del pago.
                             por: Descrição do produto adquirido, motivo do pagamento.
-                          example: Google Payment
+                          example: Payment for the purchase of furniture
                         capture:
                           type: boolean
                           description: It is a boolean field found in two-step payments (like debit card). In this type of payment, which is carried out asynchronously,
@@ -994,7 +994,7 @@ paths:
                           eng: A brief description of the payment.
                           spa: Una breve descripción del pago.
                           por: Breve descrição do pagamento.
-                        example: Google payment
+                        example: Payment for the purchase of furniture
                       external_reference:
                         type: string
                         description: An string to allow identification of payment in case of an issue.
@@ -1179,7 +1179,7 @@ paths:
                           eng: A brief description of the payment.
                           spa: Una breve descripción del pago.
                           por: Breve descrição do pagamento.
-                        example: Google payment
+                        example: Payment for the purchase of furniture
                       external_reference:
                         type: string
                         description: An string to allow identification of payment in case of an issue.
@@ -1267,7 +1267,7 @@ paths:
                             eng: Purchased product’s description, the reason for payment.
                             spa: Descripción del producto adquirido, motivo del pago.
                             por: Descrição do produto adquirido, motivo do pagamento.
-                          example: Google Payment
+                          example: Payment for the purchase of furniture
                         capture:
                           type: boolean
                           description: It is a boolean field found in two-step payments (like debit card). In this type of payment, which is carried out asynchronously,
