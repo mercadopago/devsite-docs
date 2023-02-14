@@ -1,30 +1,22 @@
-# Débito y crédito
+# Configurar pagos con ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------
 
 ----[mlb]----
-Este medio de pago adicionará Checkout Transparente, el medio de pago que te permitirá aceptar pagos con tarjetas de crédito y débito a través de Mercado Pago, sin necesidad de que el cliente salga de a tienda. 
+Con el [Checkout Transparente](/developers/es/guides/checkout-api/landing), todo el proceso de pago se realizará dentro del entorno de la tienda en línea, sin necesidad de redirigir a una página externa. Además de permitir un mayor control en el proceso de personalización e integración, el checkout ofrece una estructura completa para el procesamiento de pagos con los principales medios disponibles en el mercado.
+
 ------------
 
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-Este medio de pago adicionará Checkout API, el medio de pago que te permitirá aceptar pagos con tarjetas de crédito y débito a través de Mercado Pago, sin necesidad de que el cliente salga de a tienda. 
+Con el [Checkout API](/developers/es/guides/checkout-api/landing), todo el proceso de pago se realizará dentro del entorno de la tienda en línea, sin necesidad de redirigir a una página externa. Además de permitir un mayor control en el proceso de personalización e integración, el checkout ofrece una estructura completa para el procesamiento de pagos con los principales medios disponibles en el mercado.
+
 ------------
 
-## Configurar el medio de pago
+Mira a continuación qué métodos de pago están disponibles para la tienda al integrar el ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------.
 
-1. Para activar el checkout, deberás hacer clic en el botón slider.
-2. En el campo **Título en el checkout de la tienda** puedes elegir el nombre con el que se mostrará este medio de pago en la tienda. Por ejemplo, puedes nombrarlo **Tarjeta de crédito o débito**.
-3. La opción **Convertir moneda** permite que el valor de la moneda configurada en WooCommerce sea compatible al valor de la moneda que usas en Mercado Pago. Si deseas activarla, solo deber hacer clic en el botón slider. 
-4. En **Medios de pago**, podrás seleccionar qué tipos de medio de pago deseas recibir a través del ----[mlb]----Checkout Transparente----------------[mla, mlm, mpe, mco, mlu, mlc]----Checkout API------------. Marca la opción "Todos los medios de pago" para recibir todas las opciones de pago disponible, o bien marca solo las que quieras recibir.
-5. **Compras con tarjetas guardadas o saldo en Mercado Pago** es una funcionalidad para quienes quienes tienen tarjetas guardadas o saldo en su cuenta de Mercado Pago puedan comprar sin la necesidad de completar datos. Esta opción mostrará un botón especial en tu cuenta y derivará a los clientes al checkout de Mercado Pago para completar la transacción. Si deseas ofrecerla, actívala con el botón slider.
-
-Para guardar los cambios en la configuración, haz clic en el botón **Guardar cambios**.
-
-## Configuración avanzada
-
-Si lo deseas, puedes cambiar las opciones en la configuración avanzada del medio de pago para ofrecer una experiencia más personalizada en la tienda. Para acceder a estas opciones, haz clic sobre el titular **Configuración Avanzada** y se desplegarán las opciones que describimos aquí debajo: 
-
-- **Cupones de descuento**: permite ofrecer cupones de descuento a los clientes que compren con Mercado Pago. Puedes activar esta opción haciendo clic en el botón slider. 
-- **Rechazo automático de pagos sin aprobación instantánea**: activa esta opción con el botón slider para rechazar automáticamente los pagos que nos aprobados instantáneamente. 
-- **Descuento en los checkouts de Mercado Pago**: permite elegir un valor porcentual de descuento que quieras ofrecer a los clientes por pagar utilizando este medio de pago. Para activarlo, deberás colocar un porcentaje y seleccionar el botón _Activar y mostrar esa información en el checkout de Mercado Pago_.
-- **Comisiones en los checkout de Mercado Pago**: permite elegir un valor porcentual adicional que quieras cobrar como comisión a los clientes que eligan este medio de pago. Para activarlo, deberás colocar un porcentaje y seleccionar el botón _Activar y mostrar esa información en el checkout de Mercado Pago_.
-
-Para guardar los cambios en la configuración, haz clic en el botón **Guardar cambios**.
+* [Tarjetas](/developers/es/docs/woocommerce/payments-configuration/checkout-api/cards)): tarjetas de crédito y débito.
+----[mlb]----
+* [Medios de pago offline](/developers/es/docs/woocommerce/payments-configuration/checkout-api/offline-payments): pagos en efectivo (saldo de Mercado Pago o boleto bancário) y pago de lotería sin boleto (con CPF).
+* [Pix](/developers/es/docs/woocommerce/payments-configuration/checkout-api/pix): transferencia bancaria disponible las 24 horas. La opción de pago con Pix solo se mostrará si existe una clave de Pix registrada en Mercado Pago. Si aún no las creaste, [haz clic aquí](https://www.youtube.com/watch?v=60tApKYVnkA) y consulta el paso a paso.
+------------
+----[mla, mlm, mpe, mco, mlu, mlc]---- 
+* [Medios de pago offline](/developers/es/docs/woocommerce/payments-configuration/checkout-api/offline-payments): pagos en efectivo (saldo Mercado Pago o ticket).
+------------

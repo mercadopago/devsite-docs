@@ -17,11 +17,3 @@ Pronto! O módulo do Mercado Pago está pronto para receber pagamentos online.
 > Existem alguns motivos que podem impactar diretamente na aprovação dos pagamentos na sua loja. Veja mais informações em [Motivos de recusas de pagamentos](/developers/pt/docs/prestashop/additional-content/reasons-for-refusals).
 
 ![Status de pagamento](/images/prestashop/status_pt.png)
-
-> PREV_STEP_CARD_PT
->
-> Testar os pagamentos
->
-> Saiba como realizar uma compra teste e garantir o funcionamento da integração.
->
-> [Testar os pagamentos](/developers/pt/docs/prestashop/sales-processing/integration-test)

@@ -1,6 +1,56 @@
-# Mercado Pago com o Checkout Pro
+# Configurar os pagamentos com Checkout Pro
 
-Com o Checkout Pro, o comprador será direcionado da loja para o site do Mercado Pago, onde deverá preencher as informações solicitadas e efetuar o pagamento. Dessa forma, a transação é processada e concluída fora do ambiente da loja. Não é necessário que o comprador tenha conta no Mercado Pago e, ao final da transação, o comprador pode ser devolvido à loja.
+Ao instalar o [Checkout Pro](/developers/pt/docs/checkout-pro/landing), é possível que haja um **aumento na taxa de aprovação das vendas da loja on-line**. Isso acontece porque os compradores poderão pagar usando uma conta Mercado Pago e todo o processo de compra será feito em nosso ambiente, o que facilita o pagamento. Ao final da transação, esses compradores são redirecionados ao ambiente da loja.
+
+No checkout, quando os compradores escolhem pagar com Mercado Pago, é apresentado um informativo que ressalta as vantagens exclusivas de pagar com uma conta Mercado Pago, como:
+
+----[mlb]----
+* **Login facilitado**: iniciar a sessão com o mesmo e-mail e senha do Mercado Livre.
+* **Pagar mais rápido e de várias maneiras**: utilizar os cartões salvos, Pix ou saldo disponível na conta Mercado Pago.
+* **Proteção à compra**: receber o dinheiro de volta caso o produto não seja entregue.
+
+<center>
+
+![woo-chopro-pt-mlb](/images/woocomerce/woo-chopro-pt-mlb.png)
+
+</center>
+------------
+
+----[mla]----
+* **Pagar mais rápido**: utilizar os cartões salvos ou saldo disponível na conta Mercado Pago.
+* **Parcelamento**: parcelar com ou sem cartão de crédito.
+* **Suporte do Mercado Pago**: receber ajuda caso tenha algum problema com a compra.
+
+<center>
+
+![woo-chopro-pt-mla](/images/woocomerce/woo-chopro-pt-mla.png)
+
+</center>>
+------------
+
+----[mlm]----
+* **Login facilitado**: iniciar a sessão com o mesmo e-mail e senha do Mercado Livre. 
+* **Pagar mais rápido e de várias maneiras**: utilizar os cartões salvos, efectivo, meios de pagamento off-line ou saldo disponível na conta Mercado Pago.
+* **Proteção à compra**: receber o dinheiro de volta caso o produto não seja entregue.
+
+<center>
+
+![woo-chopro-pt-mlm](/images/woocomerce/woo-chopro-pt-mlm.png)
+
+</center>>
+------------
+
+----[mpe, mco, mlu, mlc]----
+* **Login facilitado**: iniciar a sessão com o mesmo e-mail e senha do Mercado Livre. 
+* **Pagar mais rápido**: utilizar dinheiro ou saldo disponível na conta Mercado Pago. 
+* **Parcelamento**: parcelar sem juros em bancos selecionados.
+
+<center>
+
+![woo-chopro-pt-all](/images/woocomerce/woo-chopro-pt-all.png)
+
+</center>
+------------
 
 ## Configure o meio de pagamento
 

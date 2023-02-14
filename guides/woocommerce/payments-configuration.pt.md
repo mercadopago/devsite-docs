@@ -1,21 +1,14 @@
-# Configurar métodos de pagamento
+# Configuração de pagamentos
 
 Para escolher quais métodos de pagamento oferecer através do Mercado Pago na loja e configurá-los, acesse a opção **3. Configure os meios de pagamento**. Escolha uma forma de pagamento e clique em **Configurar >** para modificar suas preferências.
 
-Você pode optar por configurar estes métodos de pagamento:
+Você pode optar por configurar estes meios de pagamento:
 
-* [Mercado Pago con Checkout Pro](/developers/pt/docs/woocommerce/integration-configuration/payments-configuration/checkoutpro)
-
+----[mlb]---- 
+* [Checkout Pro](/developers/pt/docs/woocommerce/payments-configuration/checkout-pro): pagamento é realizado na página do Mercado Pago com cartões (débito ou crédito), dinheiro (saldo da conta do Mercado Pago ou boleto bancário) e transferência bancária (Pix ou PEC).
+* [Checkout Transparente](/developers/pt/docs/woocommerce/payments-configuration/checkout-api): pagamento é realizado sem sair da sua loja virtual com cartões (débito ou crédito), meios de pagamento offline (saldo da conta do Mercado Pago, boleto bancário ou pagamento em lotérica sem boleto) e Pix. 
+------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-* [Débito o crédito com Checkout API](/developers/pt/docs/woocommerce/integration-configuration/payments-configuration/credit-debit)
-------------
-
-----[mlb]----
-* [Débito ou crédito com Checkout Transparente](/developers/pt/docs/woocommerce/integration-configuration/payments-configuration/credit-debit)
-------------
-
-* [Métodos de pagamento offline](/developers/pt/docs/woocommerce/integration-configuration/payments-configuration/offline-payments)
-
-----[mlb]----
-* [Pix](/developers/pt/docs/woocommerce/integration-configuration/payments-configuration/offline-payments)
+* [Checkout Pro](/developers/pt/docs/woocommerce/payments-configuration/checkout-pro): pagamento é realizado na página do Mercado Pago (dentro ou fora da sua loja) com cartões (débito ou crédito), dinheiro (saldo da conta do Mercado Pago ou outros meios de pagamentos disponíveis) e transferência bancária.
+* [Checkout API](/developers/pt/docs/woocommerce/payments-configuration/checkout-api): pagamento é realizado sem sair da sua loja virtual com cartões (débito ou crédito) e meios de pagamento offline (saldo da conta do Mercado Pago ou efectivo). 
 ------------
