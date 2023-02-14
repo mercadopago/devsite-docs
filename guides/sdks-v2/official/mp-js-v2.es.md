@@ -15,7 +15,7 @@ content_section_with_media:
 bullet_section_with_media: 
  - title: Prevención de fraudes
  - type: normal
- - message: Esta versión posee una funcionalidad que, con base en el análisis del comportamiento del comprador, identifica si una transacción es fraudulenta o sospechosa. Este análisis tiene como objetivo mejorar la aprobación de los pagos. Si lo deseas, puedes desactivar esta función. Consulta nuestra [referencia técnica](https://github.com/mercadopago/sdk-js#api).
+ - message: Esta versión posee una funcionalidad que, con base en el análisis del comportamiento del comprador, identifica si una transacción es fraudulenta o sospechosa. Este análisis tiene como objetivo mejorar la aprobación de los pagos. Si lo deseas, puedes desactivar esta función. Consulta nuestra referencia técnica: https://github.com/mercadopago/sdk-js#api
  - image: /sdk/mpjsv2-3.png
 ---
 
