@@ -2993,6 +2993,39 @@ paths:
           schema:
             type: string
             example: ID_REF
+        - name: range
+          in: query
+          description: Parameter used to define the payments search interval. The range can refer to the following attributes - "date_created", "date_last_updated", "date_approved", "money_release_date". If not informed, use default "date_created".
+          x-description-i18n:
+            eng: Parameter used to define the payments search interval. The range can refer to the following attributes - "date_created", "date_last_updated", "date_approved", "money_release_date". If not informed, use default "date_created".
+            spa: Parámetro utilizado para definir el intervalo de búsqueda de pagos. El rango puede hacer referencia a los siguientes atributos - "date_created", "date_last_updated", "date_approved", "money_release_date". Si no se informa, usa por defecto "date_created"
+            por: Parâmetro utilizado para definir o intervalo de busca pelos pagamentos. O intervalo pode ser referente aos seguintes atributos - "date_created", "date_last_updated", "date_approved", "money_release_date". Se não for informado utiliza por padrão "date_created".
+          required: true
+          schema:
+            type: string
+            example: date_created
+        - name: begin_date
+          in: query
+          description: Defines the start of the payments search interval. Its format can be a relative date - "NOW-XDAYS", "NOW-XMONTHS" - or an absolute date - ISO8601. If not informed, it defaults to "NOW-3MONTHS".
+          x-description-i18n:
+            eng: Defines the start of the payments search interval. Its format can be a relative date - "NOW-XDAYS", "NOW-XMONTHS" - or an absolute date - ISO8601. If not informed, it defaults to "NOW-3MONTHS".
+            spa: Define el inicio del intervalo de búsqueda de pagos. Su formato puede ser una fecha relativa - "NOW-XDAYS", "NOW-XMONTHS" - o una fecha absoluta - ISO8601. Si no se informa, el valor predeterminado es "NOW-3MONTHS".
+            por: Define o início do intervalo de busca dos pagamentos. Seu formato pode ser uma data relativa - "NOW-XDAYS", "NOW-XMONTHS" - ou uma data absoluta - ISO8601. Se não for informado utiliza por padrão "NOW-3MONTHS".
+          required: true
+          schema:
+            type: string
+            example: NOW-30DAYS
+        - name: end_date
+          in: query
+          description: Defines the end of the payments search interval. Its format can be a relative date - "NOW-XDAYS", "NOW-XMONTHS" - or an absolute date - ISO8601. If not informed, it defaults to "NOW".
+          x-description-i18n:
+            eng: Defines the end of the payments search interval. Its format can be a relative date - "NOW-XDAYS", "NOW-XMONTHS" - or an absolute date - ISO8601. If not informed, it defaults to "NOW".
+            spa: Define el final del intervalo de búsqueda de pagos. Su formato puede ser una fecha relativa - "NOW-XDAYS", "NOW-XMONTHS" - o una fecha absoluta - ISO8601. Si no se informa, el valor predeterminado es "NOW".
+            por: Define o fim do intervalo de busca dos pagamentos. Seu formato pode ser uma data relativa - "NOW-XDAYS", "NOW-XMONTHS" - ou uma data absoluta - ISO8601. Se não for informado utiliza por padrão "NOW".
+          required: true
+          schema:
+            type: string
+            example: NOW
       responses:
         '200':
           description: Success
@@ -3550,6 +3583,7 @@ paths:
                       - 3028--Invalid payment_method_id.
                       - 3029--Invalid card expiration month.
                       - 3030--Invalid card expiration year.
+                      - 9062--Invalid range interval - Must be less than 365 days.
         '403':
           description: Error
           x-description-i18n:
