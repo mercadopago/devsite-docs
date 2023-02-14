@@ -17,11 +17,3 @@ Después de realizar la integración y las pruebas, su tienda está lista para e
 > Hay algunas razones que pueden afectar directamente la aprobación de pagos en su tienda. Vea más información en [Razones por las que se rechazan los pagos](/developers/es/docs/prestashop/additional-content/reasons-for-refusals).
 
 ![Estado de pago](/images/prestashop/status_es.png)
-
-> PREV_STEP_CARD_ES
->
-> Prueba de pagos
->
-> Aprenda cómo hacer una compra de prueba y asegúrese de que la integración funcione.
->
-> [Prueba de pagos](/developers/es/docs/prestashop/sales-processing/integration-test)

@@ -18,32 +18,4 @@ Para integrar el método de pago, siga los pasos a continuación.
 4. Activa el **modo binario** cuando no quieras dejar los pagos en estado pendiente o en revisión. Con el modo binario, los pagos se aceptarán o rechazarán automáticamente.
 5. De ser necesario, define un porcentaje de descuento para clientes que paguen con Mercado Pago.
 
-¡Listo! El pago con tarjeta a través de Transparent Checkout se ha configurado y está listo para probar y/o recibir pagos en su tienda.
-
-> PREV_STEP_CARD_ES
->
-> Configurar pagos con ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------
->
-> Aprende a configurar el ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------ para recibir pagos en tu tienda.
->
-> [Checkout Transparente](/developers/es/docs/prestashop/payment-configuration/checkout-api/introduction)
-
-----[mlb]---- 
-> NEXT_STEP_CARD_ES
->
-> Configurar pagos con ticket checkout
->
-> Configura tu tienda para recibir pagos en efectivo (saldo cuenta Mercado Pago o boleto bancário) utilizando el Checkout Transparente.
->
-> [Ticket checkout](/developers/es/docs/prestashop/payment-configuration/checkout-api/ticket-checkout)
-------------
-
-----[mla, mlm, mpe, mco, mlu, mlc]----
-> NEXT_STEP_CARD_ES
->
-> Configurar pagos con ticket checkout
->
-> Configura tu tienda para recibir pagos en efectivo (saldo cuenta Mercado Pago o boleto bancário) utilizando el Checkout API.
->
-> [Ticket checkout](/developers/es/docs/prestashop/payment-configuration/checkout-api/ticket-checkout)
-------------
+¡Listo! El pago con tarjeta a través de ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------ se ha configurado y está listo para probar y/o recibir pagos en su tienda.

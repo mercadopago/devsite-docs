@@ -10,19 +10,3 @@ To integrate with Mercado Pago, follow the procedures below.
 6. If you are a member of the **&lt;dev&gt;program**, the Mercado Pago developer program, enter your *integrator_id* as a member of the program. If you are still a member, [click here](/developers/en/developer-program) for more information.
  
 Once the business settings are done, configure your store's payment experiences according to the selected checkout type.
-
-> PREV_STEP_CARD_EN
->
-> Prerequisites
->
-> Know the prerequisites to perform the integration.
->
-> [Prerequisites](/developers/en/docs/prestashop/prerequisites)
-
-> NEXT_STEP_CARD_EN
->
-> Payment configuration
->
-> Learn how to configure Mercado Pago checkouts to receive payments from your store.
->
-> [Payment configuration](/developers/en/docs/prestashop/payment-configuration)
