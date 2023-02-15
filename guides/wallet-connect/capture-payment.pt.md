@@ -4,7 +4,7 @@ A captura do pagamento é a confirmação do valor que deseja cobrar do comprado
 
 Veja o diagrama abaixo que ilustra o processo de captura de pagamento por meio da API de Advanced Payments.
 
-![Capture-payment-flow](/images/wallet-connect/captured-payment.pt.png
+![Capture-payment-flow](/images/wallet-connect/captured-payment.pt.png)
 
 ## Enviar request
 
