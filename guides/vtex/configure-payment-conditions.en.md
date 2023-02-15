@@ -44,9 +44,14 @@ After installing Banks for PSE, you can continue configuring PSE as a payment me
 * **Other:** this refers to transactions with  **MercadoPagoOff**, **MercadoPagoWallet**, or **MercadoPagoPro**.
   * If you configure **MercadoPagoPro**, the buyer will make the payment in the Mercado Pago environment, via a form presented directly in their store and will have access to all payment methods available on the platform.
   * If you configure **MercadoPagoWallet**, the buyer will use their Mercado Pago wallet. This mode is exclusive to buyers registered in Mercado Pago or Mercado Libre and we suggest using it if you select **Credit Card Payment Condition**.
-  * If you configure **MercadoPagoOff**, you can use means of payment in cash.  ----[mlb]----
+  * If you configure **MercadoPagoOff**, you can use means of payment in cash. 
+  
+  ----[mlb]----
 * **Boleto Bancário:** this refers to boleto bancário transactions **exclusively**.
-* **Pix:** This refers to transactions with Pix via **QR Code** or **Copy and Paste**. To configure this payment condition, you must have a Pix key registered in your Mercado Pago account. For more information on creating your Pix key, click [here](https://www.mercadopago[FAKER][URL][DOMAIN]/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required). ------------
+* **Pix:** This refers to transactions with Pix via **QR Code** or **Copy and Paste**. To configure this payment condition, you must have a Pix key registered in your Mercado Pago account. For more information on creating your Pix key, click [here](https://www.mercadopago[FAKER][URL][DOMAIN]/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required). 
+* **Open Finance Mercado Pago:** This refers to transactions that are made directly in your store and connect the client with his preferred banking institution through Mercado Pago. By doing this, the payment is similar to a banking transaction, but the client won’t need to copy-paste any informations, making it a more fluent experience. He would be directed to his bank account by Mercado Pago to authenticate and approve the transaction, and then, he would be redirected automatically to your store, keeping the order status updated. You can learn more about Open Finance by clicking [here](https://www.mercadopago.com.br/c/openfinance) or by consulting our [blog](https://empresas.mercadopago.com.br/pagamentos-via-open-finance).
+
+------------
 
 ![Configure payment plans](/images/vtex/paymentconditions-imagenv2-en.gif)
 
