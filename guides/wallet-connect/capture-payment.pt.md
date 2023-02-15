@@ -55,5 +55,3 @@ https://api.mercadopago.com/v1/advanced_payments
 
 ```
 ]]]
-
-Ao executar o _request_ para captura de pagamentos, é possível que se retornem diferentes respostas. Na próxima seção você encontra o detalhe de cada uma delas, bem como as possíveis causas.
