@@ -52,8 +52,6 @@ Código de status: 201
 
 ## Pagamento rejeitado
 
-Código de status: 201
-
 
 > NOTE
 >
