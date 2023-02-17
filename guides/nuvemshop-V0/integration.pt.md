@@ -2,27 +2,25 @@
  
 Para realizar a integração com o Mercado Pago, siga os procedimentos abaixo.
  
-1. No Painel Administrativo da sua loja na Prestashop, acesse o menu **Módulos e serviços**, localize o plugin do Mercado Pago e clique em **configurar**.
-2. Na tela de gerenciamento do módulo, preencha os campos solicitados de acordo com suas informações de negócio.
-3. No campo **Localização**, selecione o país de operação da sua conta do Mercado Pago.
-4. Na seção **Credenciais**, preencha com as [credenciais](/developers/pt/guides/additional-content/credentials/credentials) de **produção** e **teste** indicadas em seu [Dashboard](/developers/pt/guides/additional-content/dashboard/introduction). 
-5. Na tela de gerenciamento do módulo, insira o **nome e a categoria da sua loja**.
-6. Caso seja membro do **&lt;dev&gt;program**, o programa para desenvolvedores do Mercado Pago, informe o seu *integrator_id* como membro do programa. Se ainda for membro, [clique aqui](/developers/pt/developer-program) para mais informações.
- 
+1. No Painel Administrativo da sua loja na Nuvemshop, acesse as **Configurações > Meios de pagamento**. 
+2. Localize o plugin do Mercado Pago na lista de meios de pagamentos, clique em **Configurar** e, em seguida,  em **Ativar**.
+3. Você **será redirecionado para uma página do Mercado Pago** para acessar com seus dados. Clique em **Permitir** para autorizar a conexão.
+
 Feitas as configurações de negócio, configure as experiências de pagamento da sua loja de acordo com o tipo de checkout selecionado.
 
-> PREV_STEP_CARD_PT
+> WARNING
 >
-> Pré-requisitos da integração
+> Importante
 >
-> Conheça os pré-requisitos para realizar a integração.
->
-> [Pré-requisitos da integração](/developers/pt/docs/prestashop/prerequisites)
+> Por padrão, a Nuvemshop apresenta algumas informações da conta que está recebendo pagamento, sendo elas: **e-mail**, **país** e a **moeda correspondente a sua conta Mercado Pago**.
 
-> NEXT_STEP_CARD_PT
->
-> Configuração de pagamentos
->
-> Saiba como configurar os checkouts do Mercado Pago para receber os pagamento de sua loja.
->
-> [Configuração de pagamentos](/developers/pt/docs/prestashop/payment-configuration)
+## Alterar conta do Mercado Pago
+
+Se, por algum motivo, você precisar trocar a conta atual do Mercado Pago por outra, siga os passos abaixo.
+
+1. Caso ainda esteja conectado a sua conta Mercado Pago em um navegeador, desconecte-a acessando "Menu de opções" e, em seguida, clicando em **Sair**.
+2. No Painel Administrativo da sua loja na Nuvemshop, acesse as **Configurações > Meios de pagamento**. 
+3. Localize o plugin do Mercado Pago na lista de meios de pagamentos, clique em **Configurar** e, em seguida,  em **Editar**.
+4. Clique em **Mudar usuário** para desvincular a conta atual.
+
+Pronto! Basta você refazer o processo para [ativar uma nova conta](#bookmark_ative_o_mercado_pago_em_sua_loja).

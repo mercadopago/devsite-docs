@@ -1,11 +1,9 @@
 ---
 content_section_with_media:
- - title: PrestaShop
- - message: PrestaShop es una plataforma de comercio electrónico con software de código abierto que permite a cualquier usuario crear y desarrollar un sitio web comercial. Como socios oficiales de PrestaShop, brindamos mayor seguridad y eficiencia a tu tienda.
- - media_video: https://www.youtube.com/embed/OQ0vdvKvy3o
+ - title: Tiendanube
+ - message: Es una plataforma de e-commerce que permite recibir pagos con Mercado Pago. Tiendanube se adapta a cada tipo de negocio de diferentes formas, permitiendo que la disposición de las tiendas sea única.
+ - media_image: /magento-two/magento2-landing.png 
 ---
- 
-----[mlb]---- 
 
 ---
 bullet_section_with_media:
@@ -16,7 +14,7 @@ bullet_section_with_media:
  - benefit_message: El pago se realiza en la página de Mercado Pago (dentro o fuera de tu tienda) con tarjetas (débito o crédito), efectivo (saldo de cuenta de Mercado Pago o boleto bancário) y transferencia bancaria (Pix o PEC).
  - benefit_title: Checkout Transparente
  - benefit_message: El pago se realiza sin salir de tu tienda virtual con tarjetas (débito o crédito), ticket checkout (saldo cuenta Mercado Pago o boleto bancário) y Pix.
- - image: /prestashop/prestashop-payment.png 
+ - image: /magento-two/magento2-payment.png 
 ---
 ------------
 
@@ -31,7 +29,7 @@ bullet_section_with_media:
  - benefit_message: El pago se realiza en la página de Mercado Pago (dentro o fuera de tu tienda) con tarjetas (débito o crédito), efectivo (saldo de cuenta de Mercado Pago o efectivo) y transferencia bancaria.
  - benefit_title: Checkout API
  - benefit_message: El pago se realiza sin salir de tu tienda virtual con tarjetas (débito o crédito), ticket checkout (saldo cuenta Mercado Pago o boleto bancário).
- - image: /prestashop/prestashop-payment.png 
+ - image: /magento-two/magento2-payment.png 
 ---
 ------------
 
@@ -41,14 +39,6 @@ bullet_section_with_media:
 ---
 available_countries: mla, mlb, mlm, mlu, mco, mlc, mpe
 
----
-
----
-bullet_section_with_media:
- - title: Ventajas
- - type: reversed
- - message: Posibilidad de activar el modo binario, característica que permite configurar la denegación automática de pagos que no sean aprobados instantáneamente por bancos u otros adquirentes. Además, los usuarios también podrán pagar en tu tienda sin estar necesariamente registrados en Mercado Pago.
- - image: /prestashop/prestashop-benefit.png
 ---
  
 --- mini_landing_separator ---
