@@ -5,12 +5,7 @@ O **Mercado Crédito** é a modalidade de financiamento do Mercado Pago que ofer
 
 Com essa linha de crédito, administrada pelo Mercado Pago, o pagamento é creditado integralmente na conta do vendedor, podendo o cliente optar por pagar em até 12 parcelas fixas mensais, sem a necessidade de cartão. O usuário terá apenas que entrar em sua conta no Mercado Pago (ou criar uma), saber o limite disponível e escolher em quantas parcelas deseja pagar.
 
-
-> WARNING
->
-> Atenção
->
-> Atualmente o **Mercado Crédito** é oferecido em nosso Checkout Pro e agora também é possível acessá-lo diretamente do checkout da loja. Para saber como **exibir o Mercado Crédito no checkout da sua loja**, continue lendo os passos abaixo. Para saber como **configurar o Checkout Pro**, você pode clicar [aqui](/developers/pt/docs/woocommerce/payments-configuration/checkout-pro). 
+Atualmente o **Mercado Crédito** é oferecido em nosso Checkout Pro e agora também é possível acessá-lo diretamente do checkout da loja. Para saber como **exibir o Mercado Crédito no checkout da sua loja**, continue lendo os passos abaixo. Para saber como **configurar o Checkout Pro**, você pode clicar [aqui](/developers/pt/docs/woocommerce/payments-configuration/checkout-pro). 
 
 
 ## Configurar o meio de pagamento no checkout da loja
@@ -19,7 +14,7 @@ Com essa linha de crédito, administrada pelo Mercado Pago, o pagamento é credi
 >
 > Atenção
 >
-> Para oferecer **Parcelado sem cartão** como meio de pagamento na sua loja WooCommerce, você deve primeiro **atualizar o plugin do Mercado Pago** para a versão mais recente disponível. Para fazer isso, no painel de administração da sua loja, vá para **Plugins > Plugins Instalados > Configurações**, procure por **Mercado Pago**, e clique em **Atualizar**.
+> Para oferecer **Parcelado sem cartão** como meio de pagamento na sua loja WooCommerce, você deve primeiro **atualizar o plugin do Mercado Pago** para a versão mais recente disponível. Para fazer isso, no painel de administração da sua loja, vá para **Plugins > Plugins Instalados**, procure por **Mercado Pago**, e clique em **Atualizar**.
 
 
 1. Dentro do botão **Parcelamento sem cartão**, clique em **Configurar**.
@@ -30,8 +25,7 @@ Com essa linha de crédito, administrada pelo Mercado Pago, o pagamento é credi
 
 <center>
 
-![woo-credits-admin-es](/images/woocomerce/woo-credits-admin-pt.png)
+![woo-credits-admin-pt](/images/woocomerce/woo-credits-admin-pt.png)
 
-------------
-
+</center>>
 ------------
