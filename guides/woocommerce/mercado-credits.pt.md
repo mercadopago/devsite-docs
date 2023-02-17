@@ -1,0 +1,37 @@
+----[mla, mlm, mlb]----
+# Parcelado sem cartão
+
+O **Mercado Crédito** é a modalidade de financiamento do Mercado Pago que oferece a opção de parcelar sem precisar de cartão.
+
+Com essa linha de crédito, administrada pelo Mercado Pago, o pagamento é creditado integralmente na conta do vendedor, podendo o cliente optar por pagar em até 12 parcelas fixas mensais, sem a necessidade de cartão. O usuário terá apenas que entrar em sua conta no Mercado Pago (ou criar uma), saber o limite disponível e escolher em quantas parcelas deseja pagar.
+
+
+> WARNING
+>
+> Atenção
+>
+> Atualmente o **Mercado Crédito** é oferecido em nosso Checkout Pro e agora também é possível acessá-lo diretamente do checkout da loja. Para saber como **exibir o Mercado Crédito no checkout da sua loja**, continue lendo os passos abaixo. Para saber como **configurar o Checkout Pro**, você pode clicar [aqui](/developers/pt/docs/woocommerce/payments-configuration/checkout-pro). 
+
+
+## Configurar o meio de pagamento no checkout da loja
+
+> WARNING
+>
+> Atenção
+>
+> Para oferecer **Parcelado sem cartão** como meio de pagamento na sua loja WooCommerce, você deve primeiro **atualizar o plugin do Mercado Pago** para a versão mais recente disponível. Para fazer isso, no painel de administração da sua loja, vá para **Plugins > Plugins Instalados > Configurações**, procure por **Mercado Pago**, e clique em **Atualizar**.
+
+
+1. Dentro do botão **Parcelamento sem cartão**, clique em **Configurar**.
+2. Em **Ativar parcelamento sem cartão no checkout da loja**, clique no botão deslizante para disponibilizar esta forma de pagamento. Preste atenção que seu status seja **ativo**.
+3. No campo **Título no checkout** você pode escolher o nome com que essa forma de pagamento será exibida na loja. Recomendamos usar **“Parcelado em até 12x sem cartão com Mercado Pago”**.
+4. Para informar seus clientes sobre essa opção de pagamento na página de cada produto, procure por **Informe aos seus clientes sobre a opção de parcelamento sem cartão**, e clique no botão deslizante que ativará o componente.
+5. Clique no botão **Salvar alterações** para finalizar sua configuração.
+
+<center>
+
+![woo-credits-admin-es](/images/woocomerce/woo-credits-admin-pt.png)
+
+------------
+
+------------
