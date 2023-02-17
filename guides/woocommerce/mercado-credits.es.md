@@ -30,3 +30,4 @@ Con esta línea de crédito, administrada por Mercado Pago, el dinero se acredit
 
 ![woo-credits-admin-es](/images/woocomerce/woo-credits-admin-es.png)
 
+</center>

@@ -26,5 +26,6 @@ With this line of credit, administered by Mercado Pago, the payment is credited 
 
 ![woo-credits-admin-en](/images/woocomerce/woo-credits-admin-en.png)
 
+</center>
 ------------
 
