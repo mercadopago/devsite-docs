@@ -1,12 +1,19 @@
 # Integration configuration
  
 To integrate with Mercado Pago, follow the procedures below.
+
+> WARNING
+>
+> Attention
+>
+> If you are using the old version of the Mercado Pago plugin, [click here](/developers/en/docs/nuvemshop-V0/how-tos/migration) to find out how to migrate to the current version.
  
 1. In your store's Administrative Panel at Tiendanube, access **Settings > Payment Methods**.
 2. Look for Mercado Pago in the payment methods list, click on **Settings** and then on **Activate**.
-3. You **will be redirected to a Mercado Pago** page to access with your data. Click **Allow** to authorize the connection.
+3. Click on **Install application**, give your consent to the application's permissions and, finally, click on **Accept**.
+4. You **will be redirected to a Mercado Pago** page to access with your data. Click **Allow** to authorize the connection.
 
-Once the business settings are done, configure your store's payment experiences according to the selected checkout type.
+Once the initial settings are done, configure your store's payment experiences according to the selected checkout type.
 
 > WARNING
 >

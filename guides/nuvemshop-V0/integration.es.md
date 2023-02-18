@@ -1,14 +1,19 @@
 # Configuración de integración
  
 Para integrarte con Mercado Pago, sigue los procedimientos a continuación.
+
+> WARNING
+>
+> Atención
+>
+> Si estás usando la versión anterior del plugin de Mercado Pago, [haz clic aquí](/developers/es/docs/nuvemshop-V0/how-tos/migration) para saber cómo migrar a la versión actual.
  
-1. En el Panel Administrativo de tu tienda de tu tienda Tiendanube, accede a las **Configuraciones > Métodos de pago**. 
+1. En el Panel Administrativo de tu tienda Tiendanube, accede a las **Configuraciones > Métodos de pago**. 
 2. Localiza el plugin Mercado Pago, haz clic en **Configurar** y, luego, en **Activar**.
-Localiza el plugin Mercado Pago y haz clic en **configura**.
-2. En la pantalla de administración de complementos, completa los campos obligatorios de acuerdo con la información de tu empresa.
-3. Vas a ser **r**edirigido a Mercado Pago para que ingreses con los datos de tu cuenta**. Para autorizar la conexión, haz clic en **Permitir**.
+3. Haz clic en el botón **Instalar aplicación**, de tu consentimiento ante los permisos de aplicación y, por fin, haz clic en **Aceptar**
+4. Vas a ser **redirigido a Mercado Pago para que ingreses con los datos de tu cuenta**. Para autorizar la conexión, haz clic en **Permitir**.
  
-Una vez que haya realizado la configuración comercial, configure las experiencias de pago de su tienda de acuerdo con el tipo de pago seleccionado.
+Una vez que haya realizado la configuración inicial, configure las experiencias de pago de su tienda de acuerdo con el tipo de pago seleccionado.
 
 > WARNING
 >

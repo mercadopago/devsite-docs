@@ -1,14 +1,21 @@
 # Configuração da integração
  
 Para realizar a integração com o Mercado Pago, siga os procedimentos abaixo.
- 
-1. No Painel Administrativo da sua loja na Nuvemshop, acesse as **Configurações > Meios de pagamento**. 
-2. Localize o plugin do Mercado Pago na lista de meios de pagamentos, clique em **Configurar** e, em seguida,  em **Ativar**.
-3. Você **será redirecionado para uma página do Mercado Pago** para acessar com seus dados. Clique em **Permitir** para autorizar a conexão.
-
-Feitas as configurações de negócio, configure as experiências de pagamento da sua loja de acordo com o tipo de checkout selecionado.
 
 > WARNING
+>
+> Atenção
+>
+> Caso esteja utilizando a antiga versão do plugin do Mercado Pago, [clique aqui](/developers/pt/docs/nuvemshop-V0/how-tos/migration) para saber como migrar para a versão atual.
+
+1. No Painel Administrativo da sua loja na Nuvemshop, acesse as **Configurações > Meios de pagamento**. 
+2. Localize o plugin do Mercado Pago na lista de meios de pagamentos, clique em **Configurar** e, em seguida,  em **Ativar**.
+3. Clique em **Instalar aplicação**, de o seu consentimento as permissões da aplicação e, por fim, clique em **Aceitar**.
+4. Você **será redirecionado para uma página do Mercado Pago** para acessar com seus dados. Clique em **Permitir** para autorizar a conexão.
+
+Feitas as configurações iniciais, configure as experiências de pagamento da sua loja de acordo com o tipo de checkout selecionado.
+
+> NOTE
 >
 > Importante
 >
