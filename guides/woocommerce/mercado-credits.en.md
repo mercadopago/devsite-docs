@@ -15,7 +15,6 @@ With this line of credit, administered by Mercado Pago, the payment is credited 
 >
 > In order to offer **Installments without a card** as a payment method in your WooCommerce store, you must first **update the Mercado Pago plugin** to the most recent version available. To do so, in your store’s admin panel go to **Plugins > Installed Plugins**, search for **Mercado Pago**, and click on **Update**.
 
-
 1. On the **Installments without card** button, click on **Settings**.
 2. Search for **Activate installments without a card** in your store checkout and click on the slider button to enable this payment method. You must check its status going from inactive to **active**.
 3. In the **Title in the checkout** field, you can choose the name with which this payment method will be displayed in the store. We recommend using **"Up to 12 installments without a card with Mercado Pago"**.
