@@ -15,7 +15,6 @@ Atualmente o **Mercado Crédito** é oferecido em nosso Checkout Pro e agora tam
 >
 > Para oferecer **Parcelado sem cartão** como meio de pagamento na sua loja WooCommerce, você deve primeiro **atualizar o plugin do Mercado Pago** para a versão mais recente disponível. Para fazer isso, no painel de administração da sua loja, vá para **Plugins > Plugins Instalados**, procure por **Mercado Pago**, e clique em **Atualizar**.
 
-
 1. Dentro do botão **Parcelamento sem cartão**, clique em **Configurar**.
 2. Em **Ativar parcelamento sem cartão no checkout da loja**, clique no botão deslizante para disponibilizar esta forma de pagamento. Preste atenção que seu status seja **ativo**.
 3. No campo **Título no checkout** você pode escolher o nome com que essa forma de pagamento será exibida na loja. Recomendamos usar **“Parcelado em até 12x sem cartão com Mercado Pago”**.
