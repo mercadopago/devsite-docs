@@ -7,7 +7,6 @@ Com essa linha de crédito, administrada pelo Mercado Pago, o pagamento é credi
 
 Atualmente o **Mercado Crédito** é oferecido em nosso Checkout Pro e agora também é possível acessá-lo diretamente do checkout da loja. Para saber como **exibir o Mercado Crédito no checkout da sua loja**, continue lendo os passos abaixo. Para saber como **configurar o Checkout Pro**, você pode clicar [aqui](/developers/pt/docs/woocommerce/payments-configuration/checkout-pro). 
 
-
 ## Configurar o meio de pagamento no checkout da loja
 
 > WARNING
