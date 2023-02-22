@@ -73,7 +73,7 @@ No checkout, quando os compradores escolhem pagar com Mercado Pago, é apresenta
 ----[mpe, mco, mlu, mlc]----
     - **Cartões de débito e crédito**.
     - **Dinheiro (saldo da conta Mercado Pago)**.
-    - Transferência bancária.
+    - **Transferência bancária**.
 ------------
 5. No campo **Parcelas máximas** você pode escolher quantas parcelas deseja oferecer aos clientes através do Mercado Pago. Você pode escolher entre 1 e 24 parcelas.
 
