@@ -59,7 +59,7 @@ No checkout, quando os compradores escolhem pagar com Mercado Pago, é apresenta
 3. A opção **Converter moeda** permite que o valor da moeda configurada no WooCommerce seja compatível com o valor da moeda que você utiliza no Mercado Pago. Se você quiser ativá-la, basta clicar no botão deslizante.
 4. Em **Escolha as formas de pagamento aceitas na loja** você pode escolher quais formas de pagamento aceitará na loja através do Checkout Pro, podendo ser:
 ----[mlb]----
-    - Cartões de débito e crédito.
+    - **Cartões de débito e crédito**.
     - Dinheiro (saldo da conta Mercado Pago ou boleto bancário).
     - Transferência bancária (Pix e PEC). A opção de pagamento Pix só será exibida se houver uma chave Pix cadastrada no Mercado Pago.
     - Parcelado sem cartão: Ao configurar o Checkout Pro, você pode oferecer a opção de pagar em até 12 parcelas sem cartão. Se também quiser mostrar esta opção no checkout da sua loja, clique [aqui](/developers/pt/docs/woocommerce/payments-configuration/mercado-credito). 
