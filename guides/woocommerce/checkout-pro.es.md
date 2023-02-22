@@ -73,7 +73,7 @@ Al concluir la compra, cuando los compradores eligen pagar con Mercado Pago, se 
 ----[mpe, mco, mlu, mlc]----
     - **Tarjetas de débito y crédito**.
     - **Efectivo (saldo de cuenta de Mercado Pago)**.
-    - Transferencia bancaria.
+    - **Transferencia bancaria**.
 ------------
 5. En el campo **Máximo de cuotas** puedes elegir cuántas cuotas quieres ofrecer a los clientes a través de Mercado Pago. Puedes escoger entre 1 y 24 cuotas. 
 
