@@ -72,7 +72,7 @@ At checkout, when buyers choose to pay with Mercado Pago, information is display
 ------------
 ----[mpe, mco, mlu, mlc]----
     - **Debit and credit cards**.
-    - Cash (Mercado Pago account balance).
+    - **Cash (Mercado Pago account balance)**.
     - Wire transfer.
 ------------
 5. In the field **Maximum installments** you can choose how many installments you want to offer to customers through Mercado Pago. You can choose between 1 and 24 installments.
