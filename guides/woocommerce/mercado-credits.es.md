@@ -9,7 +9,10 @@ Con esta línea de crédito, administrada por Mercado Pago, el dinero se acredit
 Con esta línea de crédito, administrada por Mercado Pago, el dinero se acredita en su totalidad en la cuenta del vendedor, mientras que el cliente puede optar por pagar en hasta 12 pagos fijos mensuales, sin necesidad de contar con una tarjeta. El usuario solamente tendrá que ingresar a su cuenta de Mercado Pago (o crear una), conocer su límite disponible y elegir en cuántos meses quiere pagar.
 ------------
  
-**Mercado Crédito** actualmente es ofrecido en nuestro Checkout Pro y ahora también es posible acceder directo desde el checkout de la tienda. Para saber **cómo mostrar Mercado Crédito en el checkout de tu tienda**, sigue leyendo los pasos a continuación. Para saber cómo **configurar Checkout Pro**, puedes hacer clic [aquí](/developers/es/docs/woocommerce/payments-configuration/checkout-pro).
+**Mercado Crédito** actualmente es ofrecido en nuestro [Checkout Pro](/developers/es/docs/checkout-pro/landing) y ahora también es posible acceder directo desde el checkout de la tienda. En caso de no haber configurado todavía Checkout Pro, accede a la sección [Configurar pagos con Checkout Pro](/developers/es/docs/woocommerce/payments-configuration/checkout-pro).
+
+Para **configurar Mercado Crédito en el checkout de tu tienda**, sigue los pasos a continuación.
+
 
 ## Configurar el medio de pago en el checkout de tu tienda
 
