@@ -25,7 +25,7 @@ Atualmente o **Mercado Crédito** é oferecido em nosso Checkout Pro e agora tam
 
 <center>
 
-![woo-credits-admin-pt](/images/woocomerce/woo-credits-admin-pt.png)
+![woo-credits-admin-pt](/images/woocomerce/woo-credits-pt.png)
 
 </center>
 ------------
