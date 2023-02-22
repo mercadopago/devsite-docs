@@ -67,7 +67,7 @@ No checkout, quando os compradores escolhem pagar com Mercado Pago, é apresenta
 ----[mla, mlm]----
     - **Cartões de débito e crédito**.
     - **Dinheiro (saldo da conta Mercado Pago)**.
-    - Transferência bancária.
+    - **Transferência bancária**.
     - Parcelado sem cartão: Ao configurar o Checkout Pro, você pode oferecer a opção de pagar em até 12 parcelas sem cartão. Se também quiser mostrar esta opção no checkout da sua loja, clique [aqui](/developers/pt/docs/woocommerce/payments-configuration/mercado-credito). 
 ------------
 ----[mpe, mco, mlu, mlc]----
