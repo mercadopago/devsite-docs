@@ -66,7 +66,7 @@ At checkout, when buyers choose to pay with Mercado Pago, information is display
 ------------
 ----[mla, mlm]----
     - **Debit and credit cards**.
-    - Cash (Mercado Pago account balance).
+    - **Cash (Mercado Pago account balance)**.
     - Wire transfer.
     - Installments without a card: by setting up Checkout Pro, you can offer the option to pay up to 12 installments without a card. If you also want to show this option at the checkout of your store, click [here](/developers/en/docs/woocommerce/payments-configuration/mercado-credito).
 ------------
