@@ -59,7 +59,7 @@ At checkout, when buyers choose to pay with Mercado Pago, information is display
 3. The option **Convert currency** allows the value of the currency configured in WooCommerce to be compatible with the value of the currency you use in Mercado Pago. If you want to activate it, you just have to click on the slider button.
 4. In **Choose the payment methods accepted in the store** you can choose which payment methods you will accept in the store through Mercado Pago Checkout Pro. These might be:
 ----[mlb]----
-    - Debit and credit cards.
+    - **Debit and credit cards**.
     - **Cash (Mercado Pago account balance or bank receipt)**.
     - **Bank transfer (Pix and PEC)**. The Pix payment option will only be shown if there is a Pix key registered in Mercado Pago.
     - Installments without a card: by setting up Checkout Pro, you can offer the option to pay up to 12 installments without a card. If you also want to show this option at the checkout of your store, click [here](/developers/en/docs/woocommerce/payments-configuration/mercado-credito).
