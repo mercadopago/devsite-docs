@@ -21,7 +21,7 @@ You will need to create a container to define where the Brick will be placed on 
 
 > NOTE
 > 
-> Attention
+> WARNING
 >
 > The value shown in the `id` property below is just an example and can be altered, however, it should always match the `id` indicated in the render.
 
@@ -80,6 +80,13 @@ const bricksBuilder = mp.bricks();
 > Render Brick
 
 Once instantiated, the Brick can be rendered and have all its configurations compiled so that the final structure of the Brick is generated.
+
+> WARNING
+>
+> Attention
+>
+> If it is necessary to close and reopen the Brick (when a user returns to the cart to change some purchase detail, for example) it is necessary to eliminate the current instance of the Brick and create a new one when it is necessary to show the Brick again.
+> To do so, use the `unmount` method available in the Brick controller, in this case: `cardPaymentBrickController.unmount()`.
 
 To render the Brick, insert the following code after the previous step and fill in the attributes according to the comments highlighted in this same code.
 
