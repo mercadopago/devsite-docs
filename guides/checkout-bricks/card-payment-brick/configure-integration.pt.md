@@ -80,7 +80,7 @@ const bricksBuilder = mp.bricks();
 
 Uma vez instanciado, o Brick pode ser renderizado e ter todas as suas configurações compiladas de modo que a estrutura final do Brick seja gerada.
 
-> NOTE
+> WARNING
 >
 > Atenção
 >

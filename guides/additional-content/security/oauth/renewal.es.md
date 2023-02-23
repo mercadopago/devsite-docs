@@ -20,19 +20,3 @@ Para renovar el **access token**:
 > Importante
 >
 > Recuerda que cada vez que renueves el access token, también se renovará el `refresh_token`, por lo que deberás almacenarlo nuevamente.
-
-> PREV_STEP_CARD_ES
->
-> Creación de acceso
->
-> Conoce el flujo de autorización de acceso a datos.
->
-> [Creación](developers/es/guides/additional-content/security/oauth/creation)
- 
-> NEXT_STEP_CARD_ES
->
-> Administración de OAuth.
->
-> Aprende cómo deshabilitar e invalidar funciones.
->
-> [Administración](/developers/es/guides/additional-content/security/oauth/management)

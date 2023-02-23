@@ -12,11 +12,3 @@ Os fluxos, também chamados de grant types, fazem referência ao modo no qual um
 > Importante
 >
 > A utilização do protocolo OAuth se difere do processo do compartilhamento de credenciais. OAuth não aborda questões relacionadas à autenticação do cliente, nem informações relacionadas a ela, sua responsabilidade está nos métodos de obtenção de um token para acessar um recurso.
-
-> NEXT_STEP_CARD_PT
->
-> Criação de acesso
->
-> Conheça o fluxo de autorização de acesso aos dados.
->
-> [Criação](/developers/pt/guides/additional-content/security/oauth/creation)
