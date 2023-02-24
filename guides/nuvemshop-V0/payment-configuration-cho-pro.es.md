@@ -1,50 +1,36 @@
 # Configurar pagos con Checkout Pro
  
-Con [Checkout Pro](/developers/pt/guides/checkout-pro/landing), el comprador será dirigido desde la tienda al sitio web de Mercado Pago donde deberá completar los datos solicitados y realizar el pago. De esta manera, la transacción se procesa y completa fuera del entorno de su tienda. No es necesario que el comprador tenga una cuenta de Mercado Pago y, al finalizar la transacción, el comprador puede ser devuelto a tu tienda.
+Con [Checkout Pro](/developers/es/docs/checkout-pro/landing), el comprador será dirigido desde la tienda al sitio web de Mercado Pago donde deberá completar los datos solicitados y realizar el pago. De esta manera, la transacción se procesa y completa fuera del entorno de su tienda. No es necesario que el comprador tenga una cuenta de Mercado Pago y, al finalizar la transacción, el comprador puede ser devuelto a tu tienda.
  
 Para integrar Checkout Pro, siga los pasos a continuación.
  
-1. Selecciona **Sí** para activar la experiencia de Mercado Pago en el checkout de tu tienda.
-2. Elige las formas de pago que quieres ofrecer en el entorno de pago de Mercado Pago, las cuales pueden ser:
+1. En el Panel Administrativo de tu tienda Tiendanube, accede a las **Configuraciones > Métodos de pago**. 
+2. Localiza el plugin Mercado Pago, haz clic en **Configurar** y, luego, en **Editar**.
+3. Seleccione el **país de operación** y la **moneda** de su tienda.
+4. En el campo "Tipo de integración", cambia a la opción **Proceso de compra en el sitio de Mercado Pago**.
+5. Elige las formas de pago que quieres ofrecer en el entorno de pago de Mercado Pago, las cuales pueden ser:
  ----[mlb]---- 
- * Tarjetas de débito y crédito;
- * Efectivo (saldo de cuenta de Mercado Pago o boleto bancário);
- * Transferencia bancaria (Pix y PEC). La opción de pago con Pix solo se mostrará si existe una [chave Pix cadastrada](/developers/es/guides/checkout-api/receiving-payment-by-pix) en Mercado Pago. 
+ * **Tarjeta de crédito**.
+ * **Boleto bancário** (o saldo de cuenta de Mercado Pago).
+ * **Pix**. La opción de pago con Pix solo se mostrará si existe una chave Pix cadastrada en Mercado Pago. Si aún no las creaste, [haz clic aquí](https://www.youtube.com/watch?v=60tApKYVnkA) y consulta el paso a paso.
  ------------ 
 ----[mla, mlm, mpe, mco, mlu, mlc]---- 
- * Tarjetas de débito y crédito;
- * Efectivo (saldo de cuenta de Mercado Pago o efectivo);
- * Transferencia bancaria.
+ * **Tarjeta de crédito**.
+ * **Transferencia bancaria**.
+ * **Redes de pago en efectivo**.
   ------------
-3. Selecciona las **cuotas máximas** que deseas ofrecer en tu tienda.
-4. [Configurar](https://www.mercadopago[FAKER][URL][DOMAIN]/costs-section#from-section=menu) la tarifa que se pagará en cada compra y además ofrecer cuotas sin intereses a tus clientes.
-5. Seleccione si desea o no que el cliente **regrese automáticamente** a su tienda después de completar el pago.
-6. Define si los clientes tendrán acceso a **modal checkout**, una forma de pago de Mercado Pago sin salir de tu tienda. Si esta opción está deshabilitada, los compradores serán redirigidos a otra página.
-7. Si lo desea, active el **modo binario** cuando no desee dejar los pagos en estado pendiente o en revisión. Con el modo binario, los pagos se aceptarán o rechazarán automáticamente.
-8. Indicar el plazo en el que se guardarán las preferencias de pago del cliente sin que el cliente tenga que volver a introducirlas.
+6. Finalmente, haz clic en **Guardar cambios**.
+
+----[mla, mlb, mpe, mco, mlu, mlc]---- 
+> Tiendanube utiliza la configuración de **financiación de tu cuenta de Mercado Pago**. Si hiciste cambios, ten en cuenta que se van a ver reflejados en tu tienda en las próximas 24 hs. <br/></br>
+> <br/></br>
+> Para **sincronizar tus configuraciones manualmente**, accede al "Panel Administrativo" de tu tienda, ve a **Configuración > Métodos de Pago > Mercado Pago**, haz clic en **Editar** y, en el ítem "Cuotas", haz clic en **Reflejar ahora**.
+
+------------
+----[mlm]---- 
+> Tiendanube utiliza la configuración de **financiación de tu cuenta de Mercado Pago**. Si hiciste cambios, ten en cuenta que se van a ver reflejados en tu tienda en las próximas 24 hs. <br/></br>
+> <br/></br>
+> Para **sincronizar tus configuraciones manualmente**, accede al "Panel Administrativo" de tu tienda, ve a **Configuración > Métodos de Pago > Mercado Pago**, haz clic en **Editar** y, en el ítem "Meses", haz clic en **Reflejar ahora**.
+------------
 
 ¡Listo! El Checkout Pro está listo para recibir pagos de tu tienda.
-
-----[mlb]----
-> Si desea utilizar el Checkout Transparente para recibir pagos en la tienda, consulte la sección [Configurar pagos con Checkout Transparente](/developers/es/docs/prestashop/payment-configuration/checkout-api/introduction).
-------------
-
-----[mla, mlm, mpe, mco, mlu, mlc]----
-> Si desea utilizar el Checkout API para recibir pagos en la tienda, consulte la sección [Configurar pagos con Checkout API](developers/es/docs/prestashop/payment-configuration/checkout-api/introduction).
-------------
-
-> PREV_STEP_CARD_ES
->
-> Configuración de pago
->
-> Aprende a configurar los checkouts de Mercado Pago para recibir pagos de tu tienda.
->
-> [Configuración de pago](/developers/es/docs/prestashop/payment-configuration)
-
-> NEXT_STEP_CARD_ES
->
-> Prueba de pagos
->
-> Aprenda cómo hacer una compra de prueba y asegúrese de que la integración funcione.
->
-> [Prueba de pagos](/developers/es/docs/prestashop/sales-processing/integration-test)

@@ -1,50 +1,28 @@
 # Configurar os pagamentos com Checkout Pro
  
-Com o [Checkout Pro](/developers/pt/guides/checkout-pro/landing), o comprador será direcionado da loja para o site do Mercado Pago onde deverá preencher as informações solicitadas e efetuar o pagamento. Dessa forma, a transação é processada e concluída fora do ambiente de sua loja. Não é necessário que o comprador possua uma conta no Mercado Pago e, ao final da transação, o comprador pode ser devolvido à sua loja.
+Com o [Checkout Pro](/developers/pt/docs/checkout-pro/landing), o comprador será direcionado da loja para o site do Mercado Pago onde deverá preencher as informações solicitadas e efetuar o pagamento. Dessa forma, a transação é processada e concluída fora do ambiente de sua loja. Não é necessário que o comprador possua uma conta no Mercado Pago e, ao final da transação, o comprador será devolvido à sua loja.
  
 Para integrar o Checkout Pro, siga os passos abaixo.
- 
-1. Selecione **Sim** para ativar a experiência do Mercado Pago no checkout da sua loja. 
-2. Escolha os meios de pagamento que deseja oferecer no ambiente de pagamento do Mercado Pago, podendo ser: 
+
+1. No Painel Administrativo da sua loja na Nuvemshop, acesse as **Configurações > Meios de pagamento**. 
+2. Localize o plugin do Mercado Pago na lista de meios de pagamentos e clique em **Editar**.
+3. Selecione o **país de operação** da sua loja e a **moeda**.
+4. No campo "Tipo de integração", altere para **Processo de compra no site do Mercado Pago**.
+5. Escolha os meios de pagamento que deseja oferecer no ambiente de pagamento do Mercado Pago, podendo ser: 
  ----[mlb]---- 
- * Cartões de débito e crédito; 
- * Dinheiro (saldo da conta do Mercado Pago ou boleto bancário); 
- * Transferência bancária (Pix e PEC). A opção de pagamento com Pix só será exibida se houver uma [chave Pix cadastrada](/developers/pt/guides/checkout-api/receiving-payment-by-pix) no Mercado Pago. 
+ * **Cartão de crédito**.
+ * **Boleto bancário (ou saldo da conta do Mercado Pago)**.
+ * **Pix**. A opção de pagamento com Pix só será exibida se houver uma chave Pix cadastrada no Mercado Pago. Caso ainda não tenha criado, [clique aqui](https://www.youtube.com/watch?v=60tApKYVnkA) e veja o passo a passo.
  ------------ 
 ----[mla, mlm, mpe, mco, mlu, mlc]---- 
- * Cartões de débito e crédito;
- * Dinheiro (saldo da conta do Mercado Pago ou efectivo);
- * Transferência bancária. 
+ * **Cartão de crédito**.
+ * **Transferência bancária**.
+ * **Redes de pagamento em efectivo**.
   ------------
-3. Selecione o **máximo de parcelas** que deseja oferecer em sua loja.
-4. [Configure](https://www.mercadopago[FAKER][URL][DOMAIN]/costs-section#from-section=menu) a tarifa que será paga em cada compra e também ofereça parcelas sem juros para seus clientes.
-5. Selecione se deseja ou não que o cliente **retorne automaticamente** à sua loja após concluir o pagamento.
-6. Defina se os clientes terão acesso ao **modal checkout**, um formulário de pagamentos do Mercado Pago sem sair da sua loja. Se essa opção estiver desativada, os compradores serão redirecionados a outra página.
-7. Caso deseje, ative o **modo binário** quando não quiser deixar os pagamentos em estado pendente ou em revisão. Com o modo binário, os pagamentos serão aceitos ou recusados automaticamente.
-8. Indique o período em que as preferências de pagamento do cliente ficarão salvas sem que este precise incluí-las novamente.
+6. Por fim, clique em **Salvar alterações**.
+
+> A Nuvemshop utiliza as informações de **parcelamento diretamente de sua conta Mercado Pago**. As alterações feitas nas configurações de parcelamento em sua conta serão refletidas na sua loja online em até 24h. <br/></br>
+> <br/></br>
+> Para **sincronizar suas alterações de parcelamento manualmente**, vá ao "Painel Administrativo" da sua loja, acesse as **Configurações > Meios de pagamento > Mercado Pago**, clique em **Editar** e, no item "Parcelas", clique em **Ativar agora**.
 
 Pronto! O Checkout Pro do Mercado Pago está pronto para receber os pagamentos da sua loja.
-
-----[mlb]---- 
-> Caso deseje utilizar o Checkout Transparente para receber pagamentos na loja, veja a seção [Configurar os pagamentos com Checkout Transparente](/developers/pt/docs/prestashop/payment-configuration/checkout-api/introduction).
-------------
-
-----[mla, mlm, mpe, mco, mlu, mlc]---- 
-> Caso deseje utilizar o Checkout API para receber pagamentos na loja, veja a seção [Configurar os pagamentos com Checkout API](/developers/pt/docs/prestashop/payment-configuration/checkout-api/introduction).
-------------
-
-> PREV_STEP_CARD_PT
->
-> Configuração de pagamentos
->
-> Saiba como configurar os checkouts do Mercado Pago para receber os pagamento de sua loja.
->
-> [Configuração de pagamentos](/developers/pt/docs/prestashop/payment-configuration)
-
-> NEXT_STEP_CARD_PT
->
-> Testar os pagamentos
->
-> Saiba como realizar uma compra teste e garantir o funcionamento da integração.
->
-> [Testar os pagamentos](/developers/pt/docs/prestashop/sales-processing/integration-test)

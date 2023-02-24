@@ -15,8 +15,6 @@ Con [Checkout API](/developers/es/guides/checkout-api/landing), ofrece pagos de 
 > Importante
 >
 > La opción de pago por Pix solo se mostrará si existe una Clave de Pix registrada en Mercado Pago. Si aún no las creaste, [haz clic aquí](https://www.youtube.com/watch?v=60tApKYVnkA) y consulta el paso a paso. </br>
-> </br> <br/>
-> Además, existe un límite al valor de Pix, establecido por el Banco Central de Brasil, que se puede mover en el período de la noche (entre las 20 y las 6 horas) de R$1 mil. Para el período diurno (entre las 6 am y las 8 pm), sin embargo, no hay límite de movimiento.
 
 Para integrar el método de pago, siga los pasos a continuación.
 

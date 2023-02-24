@@ -13,9 +13,9 @@ bullet_section_with_media:
  - type: normal
  - message: With the Mercado Pago module you can configure the payment using:
  - benefit_title: Checkout Pro
- - benefit_message: Payment is made on the Mercado Pago page (inside or outside your store) with cards (debit or credit), cash (Mercado Pago account or boleto bancário) and bank transfer (Pix or PEC).
+ - benefit_message: Payment is made on the Mercado Pago page with credit card, bank slip (or Mercado Pago account balance) and Pix.
  - benefit_title: Checkout Transparente
- - benefit_message: Payment is made without leaving your virtual store with cards (debit or credit), ticket checkout (Mercado Pago account balance or boleto bancário) and Pix.
+ - benefit_message: Payment is made without leaving your virtual store credit card, bank slip (or Mercado Pago account balance) and Pix.
  - image: /magento-two/magento2-payment.png 
 ---
 ------------
@@ -28,9 +28,9 @@ bullet_section_with_media:
  - type: normal
  - message: With the Mercado Pago module you can configure the payment using:
  - benefit_title: Checkout Pro
- - benefit_message: Payment is made on the Mercado Pago page (inside or outside your store) with cards (debit or credit), cash (Mercado Pago account or ticket) and bank transfer.
+ - benefit_message: Payment is made on the Mercado Pago page by credit card, bank transfer and cash payment networks.
  - benefit_title: Checkout API
- - benefit_message: Payment is made without leaving your virtual store with cards (debit or credit), ticket checkout (Mercado Pago account or boleto bancário).
+ - benefit_message: Payment is made without leaving your virtual store using your credit card and cash payment networks.
  - image: /magento-two/magento2-payment.png 
 ---
 ------------
@@ -50,7 +50,7 @@ available_countries: mla, mlb, mlm, mlu, mco, mlc, mpe
 ----[mlb]----
 
 ---
-available_payments: credit, debit, mercadopago, boleto, pix, pec, moneda, cartera
+available_payments: credit, mercadopago, boleto, pix,
 
 ---
 ------------
@@ -58,7 +58,7 @@ available_payments: credit, debit, mercadopago, boleto, pix, pec, moneda, carter
 ----[mla]---- 
 
 ---
-available_payments: credit, debit, mercadopago, efectivo, atm
+available_payments: credit, mercadopago, efectivo, atm
 
 ----
 ------------
@@ -66,7 +66,7 @@ available_payments: credit, debit, mercadopago, efectivo, atm
 ----[mlm]---- 
 
 ---
-available_payments: credit, debit, mercadopago, efectivo, atm, moneda
+available_payments: credit, mercadopago, efectivo, atm
 
 ----
 ------------
@@ -74,7 +74,7 @@ available_payments: credit, debit, mercadopago, efectivo, atm, moneda
 ----[mlu]---- 
 
 ---
-available_payments: credit, efectivo
+available_payments: credit, mercadopago, efectivo, atm
 
 ----
 ------------
@@ -82,7 +82,7 @@ available_payments: credit, efectivo
 ----[mco]---- 
 
 ---
-available_payments: mercadopago, pse, credit, debit, cartera, efectivo
+available_payments: credit, mercadopago, efectivo, atm
 
 ----
 ------------
@@ -90,7 +90,7 @@ available_payments: mercadopago, pse, credit, debit, cartera, efectivo
 ----[mlc]---- 
 
 ---
-available_payments: mercadopago, credit, debit
+available_payments: credit, mercadopago, efectivo, atm
 
 ----
 ------------
@@ -98,7 +98,7 @@ available_payments: mercadopago, credit, debit
 ----[mpe]---- 
 
 ---
-available_payments: mercadopago, atm, credit, debit
+available_payments: credit, mercadopago, efectivo, atm
 
 ----
 ------------
