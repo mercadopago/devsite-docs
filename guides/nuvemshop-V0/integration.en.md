@@ -6,7 +6,7 @@ To integrate with Mercado Pago, follow the procedures below.
 >
 > Attention
 >
-> If you are using the old version of the Mercado Pago plugin, [click here](/developers/en/docs/nuvemshop-V0/how-tos/migration) to find out how to migrate to the current version.
+> If you are using the old version of the Mercado Pago plugin, [click here](/developers/en/docs/nuvemshop/how-tos/migration) to find out how to migrate to the current version.
  
 1. In your store's Administrative Panel at Tiendanube, access **Settings > Payment Methods**.
 2. Look for Mercado Pago in the payment methods list, click on **Settings** and then on **Activate**.
@@ -30,4 +30,4 @@ If, for any reason, you need to change your current Mercado Pago account for ano
 3. Locate the Mercado Pago plugin in the list of payment methods, click on **Settings** and then on **Edit**.
 4. Click **Change User** to unlink the current account.
 
-Ready! Just redo the process to [activate a new account](#bookmark_activate_o_mercado_pago_em_sua_loja).
+Ready! Just redo the process to **activate a new account**.

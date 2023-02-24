@@ -12,7 +12,7 @@ In order to integrate Mercado Pago with Tiendanube, you must meet the requiremen
 | Environment | Hosting Service | AMP (Linux, Apache, MySQL, and PHP) or LNMP stack. |
 | Extension dependency | Extensions give PHP new abilities, complementing it with more functions. | PDO_MySQL, simplexml, mcrypt, hash, GD, DOM, iconv, curl, SOAP (for Webservices API) |
 | Mercado Pago seller account | To make sales, you need a seller account on Mercado Pago. If you don't have one, [click here](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) to create it.| Seller account on Mercado Pago |
-| Mercado Pago plugin | Always keep the module up to date with the latest version to ensure data security and integration operation. | For more information on how to install the plugin, access the [Integration configuration](/developers/en/docs/nuvemshop-V0/integration) section. |
+| Mercado Pago plugin | Always keep the module up to date with the latest version to ensure data security and integration operation. | For more information on how to install the plugin, access the [Integration configuration](/developers/en/docs/nuvemshop/integration) section. |
 | Operating system | System responsible for managing computer hardware. | Linux x86, Windows x86-64 |
 | Tiendanube | Is an ecommerce platform that allows you to receive payments with Mercado Pago. [Click here](https://www.nuvemshop.com) for more information. | Required 1.7.x or higher. |
 | PHP Version | PHP is a widely used programming language for web application development. For more information, [click here](https://www.php.net/). | PHP 5.6 or up |

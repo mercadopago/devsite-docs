@@ -6,7 +6,7 @@ Para realizar a integração com o Mercado Pago, siga os procedimentos abaixo.
 >
 > Atenção
 >
-> Caso esteja utilizando a antiga versão do plugin do Mercado Pago, [clique aqui](/developers/pt/docs/nuvemshop-V0/how-tos/migration) para saber como migrar para a versão atual.
+> Caso esteja utilizando a antiga versão do plugin do Mercado Pago, [clique aqui](/developers/pt/docs/nuvemshop/how-tos/migration) para saber como migrar para a versão atual.
 
 1. No Painel Administrativo da sua loja na Nuvemshop, acesse as **Configurações > Meios de pagamento**. 
 2. Localize o plugin do Mercado Pago na lista de meios de pagamentos, clique em **Configurar** e, em seguida,  em **Ativar**.
@@ -30,4 +30,4 @@ Se, por algum motivo, você precisar trocar a conta atual do Mercado Pago por ou
 3. Localize o plugin do Mercado Pago na lista de meios de pagamentos, clique em **Configurar** e, em seguida,  em **Editar**.
 4. Clique em **Mudar usuário** para desvincular a conta atual.
 
-Pronto! Basta você refazer o processo para [ativar uma nova conta](#bookmark_ative_o_mercado_pago_em_sua_loja).
+Pronto! Basta você refazer o processo para **ativar uma nova conta**.
