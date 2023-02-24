@@ -39,7 +39,8 @@ bullet_section_with_media:
  
 >>>> Disponibilidade por país <<<<
 ---
-available_countries: mla, mlb, mlm
+available_countries: mlb, mlm
+
 ---
  
 --- mini_landing_separator ---
