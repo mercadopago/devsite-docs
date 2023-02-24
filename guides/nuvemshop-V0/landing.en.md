@@ -50,7 +50,7 @@ available_countries: mla, mlb, mlm, mlu, mco, mlc, mpe
 ----[mlb]----
 
 ---
-available_payments: credit, mercadopago, boleto, pix,
+available_payments: credit, mercadopago, boleto, pix
 
 ---
 ------------
