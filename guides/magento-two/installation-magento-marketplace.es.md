@@ -7,18 +7,3 @@ Puedes instalar la extensión de Mercado Pago sin costo a través de la tienda d
 3. Haz clic en el carrito que se encuentra en la parte superior derecha del sitio y luego haz clic en **Proceed to Checkout** para finalizar tu compra.
 4. Para continuar, deberás hacer login con tu cuenta de Magento o crear una nueva. Una vez registrado, podrás descargar el módulo de Mercado Pago e instalarlo.
 
-> PREV_STEP_CARD_ES
->
-> Instalación via Composer
->
-> Ve cómo instalar el complemento de Mercado Pago en la plataforma Magento 2 a través de Composer.
->
-> [Instalación via Composer](/developers/es/docs/magento-two/installation/composer)
-
-> NEXT_STEP_CARD_ES
->
-> Instalación via FTP
->
-> Ve cómo instalar el modulo de Mercado Pago en la plataforma Magento 2 vía FTP.
->
-> [Instalación via FTP](/developers/es/docs/magento-two/installation/ftp)

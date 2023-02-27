@@ -14,7 +14,7 @@ Com o [Checkout API ](/developers/pt/guides/checkout-api/landing), ofereça paga
 >
 > Importante
 > 
-> A opção de pagamento com Pix só será exibida se houver uma chave Pix cadastrada no Mercado Pago. Caso ainda não tenha criado, [clique aqui]((https://www.youtube.com/watch?v=60tApKYVnkA)) e veja o passo a passo. </br> 
+> A opção de pagamento com Pix só será exibida se houver uma chave Pix cadastrada no Mercado Pago. Caso ainda não tenha criado, [clique aqui](https://www.youtube.com/watch?v=60tApKYVnkA) e veja o passo a passo. </br> 
 > </br> <br/>
 > Além disso, existe um limite para o valor de Pix, estabelecido pelo Banco Central do Brasil, que poderá ser movimentado no decorrer do período noturno (entre 20h e 6h) de R$1 mil. Para o período diurno (entre 6h e 20h), contudo, não há limite de movimentação.
 
@@ -29,30 +29,3 @@ Para integrar a forma de pagamento, siga os passos abaixo.
 7. No campo **Redirect Payer**,	indique se o comprador será automaticamente redirecionado para a página de pagamento do banco, sem a necessidade de passar por uma página intermediária da sua loja.
 8. Em seguida, clique em** **Save Config** para salvar suas preferências.
 
-----[mlb]----
-> PREV_STEP_CARD_PT
->
-> Configurar pagamentos com ticket
->
-> Configure a sua loja para receber pagamentos offline (boleto e caixa eletrônico) utilizando o Checkout Transparente. 
->
-> [Ticket](/developers/pt/docs/magento-two/payment-configuration/checkout-api/ticket)
-------------
-
-----[mla, mlm, mpe, mco, mlu, mlc]----
-> PREV_STEP_CARD_PT
->
-> Configurar pagamentos com ticket
->
-> Configure a sua loja para receber pagamentos offline (ticket e caixa eletrônico) utilizando o Checkout API. 
->
-> [Ticket](/developers/pt/docs/magento-two/payment-configuration/checkout-api/ticket)
-------------
-
-> NEXT_STEP_CARD_PT
->
-> Configurar pagamentos com Checkout Pro
->
-> Saiba como configurar o Checkout Pro para receber os pagamento de sua loja.
->
-> [Configurar pagamentos com Checkout Pro](/developers/pt/docs/magento-two/payment-configuration/checkout-pro)

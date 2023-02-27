@@ -11,13 +11,11 @@ With this, it is possible to choose which payments gateway will process the diff
 The MercadoPagoV2 affiliation processes payment conditions with Credit Card, Boleto Bancário, Pix, Mercado Pago Offline and Checkout Pro.
 
 ------------
-
 ----[mla, mlm, mlu, mco, mpe]----
 
 The MercadoPagoV2 affiliation processes payment conditions with Credit Card, Debit Card, Mercado Pago Offline and Checkout Pro.
 
 ------------
-
 ----[mlc]----
 
 The MercadoPagoV2 affiliation processes payment conditions with Credit Card, Debit Card, and Checkout Pro.
@@ -28,7 +26,7 @@ The MercadoPagoV2 affiliation processes payment conditions with Credit Card, Deb
 >
 > Important
 >
-> If you have a MercadoPagoV1 affiliation, we recommend that you [migrate to MercadoPagoV2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/vtex/mp1-mp2-migration). for security reasons.
+> If you have a MercadoPagoV1 affiliation, we recommend that you [migrate to MercadoPagoV2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/vtex/mp1-mp2-migration) for security reasons.
 
 To create a **payment gateway affiliation with MercadoPagoV2**, follow the steps below:
 
@@ -44,9 +42,9 @@ To create a **payment gateway affiliation with MercadoPagoV2**, follow the steps
    * **Categoría principal da loja - Categoría principal de la tienda:** Store's category.
    * **Reembolso automático / manual:** Select whether you want Mercado Pago to automatically reimburse in case of cancellation, or if you want to retain the amount paid for the customer to use in future purchases.
    * **Modo binário - binário:** Configure whether the payment can go through manual review or not.
-   * **Métodos de pagamento excluídos - Métodos de pago excluídos (visa, paypal, bolbradesco, oxxo...):** Payment methods to be excluded at the time of purchase. [Here are the options](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/vtex/payment-methods). Applies only to MercadoPagoPRO, MercadoPagoWallet and MercadoPAgoOff.
-   * **Tipos de pagamento excluídos - Tipos de pago excluidos (credit_card, bank_transfer, ticket...):** Payment types to be excluded at the time of purchase. [Here are the options](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/vtex/payment-methods). Applies only to MercadoPagoPRO, MercadoPagoWallet and MercadoPagoOff.
-   * **Modo de processamento - Modo de procesamiento** Configure if the payment will be gateway of aggregator. To process payments in Gateway mode, contact your Mercado Pago Advisor.
+   * **Métodos de pagamento excluídos - Métodos de pago excluídos:** Payment methods to be excluded at the time of purchase. [Here are the options](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/vtex/payment-methods). Applies only to MercadoPagoPRO, MercadoPagoWallet and MercadoPAgoOff.
+   * **Tipos de pagamento excluídos - Tipos de pago excluidos:** Payment types to be excluded at the time of purchase. [Here are the options](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/vtex/payment-methods). Applies only to MercadoPagoPRO, MercadoPagoWallet and MercadoPagoOff.
+   * **Modo de processamento - Modo de procesamiento:** Configure the payment through the aggregator model.
    * **Integrator ID:** Para programadores o agencias que realizan la integración.
    * **Moeda - Moneda:** Currency to be configured (USD or Local).
 5. Click on **Save**.
@@ -57,22 +55,6 @@ And that's it! Your affiliation with MercadoPagoV2 is already active!
 >
 > Note
 > 
-> If you have difficulties during your integration, check our [errors list](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/vtex/common-errors), and our document about [VTEX logs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/vtex/logs).
+> If you have difficulties during your integration, check our [errors list](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/vtex/common-errors), and our document about [VTEX logs.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/vtex/logs)
 
 ![Creating a MercadoPagoV2 gateway affiliation](/images/vtex/affiliationV2-imagenv2-en.gif)
-
-> PREV_STEP_CARD_EN
->
-> Gateway version migration
->
-> Learn how to migrate from MercadoPagoV1 to MercadoPagoV2.
->
-> [Gateway version migration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/vtex/mp1-mp2-migration)
-
-> NEXT_STEP_CARD_EN
->
-> Payment conditions
->
-> Lean how to configure payment conditions.
->
-> [Payment conditions](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/vtex/configure-payment-conditions)

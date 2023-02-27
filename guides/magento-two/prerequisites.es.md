@@ -6,7 +6,7 @@ Para utilizar la integración de Mercado Pago con Magento 2 en tu tienda, debes 
 >
 > Atención
 >
-> En octubre de 2022, las versiones del módulo de Mercado Pago anteriores a la 3.5.0 serán descontinuadas y dejarán de funcionar. Además, en abril, las marcas de tarjetas de crédito aplicaron cambios internacionales a las transacciones.
+> Las versiones del módulo de Mercado Pago anteriores a la 3.5.0 fueron descontinuadas. 
 > </br><br/>
 > **Mantén tu módulo y tu tienda siempre actualizados para no perder ventas.**
 
@@ -29,18 +29,3 @@ Para utilizar la integración de Mercado Pago con Magento 2 en tu tienda, debes 
 
 Si se cumplen todos los requisitos previos, puedes instalar el módulo de Mercado Pago en la plataforma Magento 2.
 
-> PREV_STEP_CARD_ES
->
-> Página de inicio
->
-> Regrese a la página de inicio de documentación de Magento 2.
->
-> [Página de inicio](/developers/es/docs/magento-two/landing)
-
-> NEXT_STEP_CARD_ES
->
-> Instalación del módulo
->
-> Aprende a instalar el módulo de Mercado Pago en la plataforma Magento 2.
->
-> [Instalación del módulo](/developers/es/docs/magento-two/installation)

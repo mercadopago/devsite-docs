@@ -11,18 +11,3 @@ Once the credentials and payment notifications are configured, configure your st
 7. In the **Log to File** field you can enable the option to generate a file called `mercadopago.log`. This file will be created in your store's log folder (var/log) and will contain the debug module, which will help you understand the module's behavior.
 8. Once the necessary settings have been made, click on the **Save Config** button in the upper right corner.
 
-> PREV_STEP_CARD_EN
->
-> Configure payment notifications
->
-> Follow the steps to configure order status for payment notifications.
->
-> [Configure payment notifications](/developers/en/docs/magento-two/integration-configuration/notifications)
-
-> NEXT_STEP_CARD_EN
->
-> Payment configuration
->
-> Learn how to configure Mercado Pago checkouts to receive payments from your store.
->
-> [Payment configuration](/developers/en/docs/magento-two/payment-configuration)

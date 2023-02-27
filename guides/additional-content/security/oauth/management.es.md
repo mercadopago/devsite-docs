@@ -10,19 +10,3 @@ Actualmente existen diferentes formas en las que los **access tokens** y las **t
 * **Eliminación de la aplicación**: cuando se elimina una aplicación, se eliminan todos los tokens y temporal grants que le pertenecen.
  
 Puedes recibir notificaciones de webhook cada vez que un vendedor autorice o desautorice tu aplicación. Para configurarlos, lee [Your applications](/developers/es/guides/additional-content/dashboard/applications) a través del Dashboard.
- 
-> PREV_STEP_CARD_ES
->
-> Renovación del access token
->
-> Lee sobre el flujo de renovación de un access token caducado.
->
-> [Renovación](/developers/es/guides/additional-content/security/oauth/renewal)
-
-> NEXT_STEP_CARD_ES
->
-> Recursos adicionales
->
-> Accede a videos tutoriales y a las APIs.
->
-> [Recursos](/developers/es/guides/additional-content/security/oauth/resources)

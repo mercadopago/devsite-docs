@@ -9,11 +9,3 @@ After performing the integration and testing, your store is ready to go into pro
 5. After setting your credentials, click the **Save Config** button in the upper right corner. It is important that you save your credentials before proceeding as this will enable the payment methods available in your country.
 
 Ready! The Mercado Pago module is ready to receive online payments. With all the steps completed, your customers will be able to make purchases in your store.
-
-> PREV_STEP_CARD_EN
->
-> Test payments
->
-> Learn how to make a test purchase and ensure the integration works.
->
-> [Test payments](/developers/en/docs/magento-two/sales-processing/integration-test)

@@ -21,7 +21,6 @@ Este documento contém os métodos e tipos de pagamento disponíveis para sua in
 |Rapipago|`rapipago`|`ticket`|MercadoPagoPro e MercadoPagoOff|
 
 ------------
-
 ----[mlb]----
 
 |Nome|Métodos de Pagamento|Tipos de Pagamentos|Condições na VTEX|
@@ -49,7 +48,6 @@ Este documento contém os métodos e tipos de pagamento disponíveis para sua in
 |Visa Débito|`debvisa`|`debit_card`|Visa Electron, MercadoPagoPro e MercadoPagoWallet|
 
 ------------
-
 ----[mco]----
 
 |Nome|Métodos de Pagamento|Tipos de Pagamentos|Condições na VTEX|
@@ -64,7 +62,6 @@ Este documento contém os métodos e tipos de pagamento disponíveis para sua in
 |PSE|`pse`|`bank_transfer`|PSE e MercadoPagoPro|
 
 ------------
-
 ----[mlm]----
 
 |Nome|Métodos de Pagamento|Tipos de Pagamentos|Condições na VTEX|
@@ -79,7 +76,6 @@ Este documento contém os métodos e tipos de pagamento disponíveis para sua in
 |Citibanamex|`banamex`|`atm`|MercadoPagoPro e MercadoPagoOff|
 
 ------------
-
 ----[mpe]----
 
 |Nome|Métodos de Pagamento|Tipos de Pagamentos|Condições na VTEX|
@@ -93,7 +89,6 @@ Este documento contém os métodos e tipos de pagamento disponíveis para sua in
 |Pago Efectivo|`pagoefectivo_atm`|`atm`|MercadoPagoPro e MercadoPagoOff|
 
 ------------
-
 ----[mlu]----
 
 |Nome|Métodos de Pagamento|Tipos de Pagamentos|Condições na VTEX|

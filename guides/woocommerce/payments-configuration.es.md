@@ -1,22 +1,22 @@
-# Configura los métodos de pago
+# Configuración de pago
 
 Para elegir qué métodos de pago ofrecer a través de Mercado Pago en la tienda y configurarlos, accede a la opción **3. Configura los medios de pago**. Elige un medio de pago y haz clic en **Configurar >** para modificar tus preferencias.
 
 Puedes elegir configurar estos métodos de pago:
 
-* [Mercado Pago con Checkout Pro](/developers/es/docs/woocommerce/integration-configuration/payments-configuration/checkoutpro)
-
-----[mla, mlm, mpe, mco, mlu, mlc]----
-* [Débito o crédito con Checkout API](/developers/es/docs/woocommerce/integration-configuration/payments-configuration/credit-debit)
+----[mlb]---- 
+* [Checkout Pro](/developers/en/docs/woocommerce/payments-configuration/checkout-pro): el pago se realiza en la página de Mercado Pago (dentro o fuera de tu tienda) con tarjetas (débito o crédito), efectivo (saldo de cuenta de Mercado Pago o boleto bancário) y transferencia bancaria (Pix o PEC).
+* [Checkout Transparente](/developers/en/docs/woocommerce/payments-configuration/checkout-api): el pago se realiza sin salir de tu tienda virtual con tarjetas (débito o crédito), medios de pago offline (saldo cuenta Mercado Pago o boleto bancário) y Pix.
+* [Financiación sin tarjeta](/developers/es/docs/woocommerce/payments-configuration/mercado-credito): el cliente puede pagar en hasta 12 pagos fijos mensuales sin necesidad de contar con una tarjeta, y el pago se acredita en su totalidad en la cuenta del vendedor.
 ------------
 
-----[mlb]----
-* [Débito o crédito con Checkout Transparente](/developers/es/docs/woocommerce/integration-configuration/payments-configuration/credit-debit)
+----[mla, mlm]----
+* [Checkout Pro](/developers/en/docs/woocommerce/payments-configuration/checkout-pro): el pago se realiza en la página de Mercado Pago (dentro o fuera de tu tienda) con tarjetas (débito o crédito), efectivo (saldo de cuenta de Mercado Pago o otros medios de pago disponibles) y transferencia bancaria.
+* [Checkout API](/developers/en/docs/woocommerce/payments-configuration/checkout-api): el pago se realiza sin salir de tu tienda virtual con tarjetas (débito o crédito), medios de pago offline (saldo en cuenta Mercado Pago o efectivo).
+* [Financiación sin tarjeta](/developers/es/docs/woocommerce/payments-configuration/mercado-credito): el cliente puede pagar en hasta 12 pagos fijos mensuales sin necesidad de contar con una tarjeta, y el pago se acredita en su totalidad en la cuenta del vendedor.
 ------------
 
-* [Métodos de pago offline](/developers/es/docs/woocommerce/integration-configuration/payments-configuration/offline-payments)
-
-----[mlb]----
-* [Pix](/developers/es/docs/woocommerce/integration-configuration/payments-configuration/pix)
+----[mpe, mco, mlu, mlc]----
+* [Checkout Pro](/developers/en/docs/woocommerce/payments-configuration/checkout-pro): el pago se realiza en la página de Mercado Pago (dentro o fuera de tu tienda) con tarjetas (débito o crédito), efectivo (saldo de cuenta de Mercado Pago o otros medios de pago disponibles) y transferencia bancaria.
+* [Checkout API](/developers/en/docs/woocommerce/payments-configuration/checkout-api): el pago se realiza sin salir de tu tienda virtual con tarjetas (débito o crédito), medios de pago offline (saldo en cuenta Mercado Pago o efectivo).
 ------------
-

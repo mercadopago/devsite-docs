@@ -21,7 +21,6 @@ This document contains the means and types of payment available for your integra
 |Rapipago|`rapipago`|`ticket`|MercadoPagoPro and MercadoPagoOff|
 
 ------------
-
 ----[mlb]----
 
 |Name|Payment methods|Payment types|Conditions in VTEX|
@@ -36,7 +35,6 @@ This document contains the means and types of payment available for your integra
 |Pix|`pix`|`bank_transfer`|Pix and MercadoPagoPro|
 
 ------------
-
 ----[mlc]----
 
 |Name|Payment methods|Payment types|Conditions in VTEX|
@@ -49,7 +47,6 @@ This document contains the means and types of payment available for your integra
 |Visa Debit|`debvisa`|`debit_card`|Visa Electron, MercadoPagoPro and MercadoPagoWallet|
 
 ------------
-
 ----[mco]----
 
 |Name|Payment methods|Payment types|Conditions in VTEX|
@@ -64,7 +61,6 @@ This document contains the means and types of payment available for your integra
 |PSE|`pse`|`bank_transfer`|PSE and MercadoPagoPro|
 
 ------------
-
 ----[mlm]----
 
 |Name|Payment methods|Payment types|Conditions in VTEX|
@@ -79,7 +75,6 @@ This document contains the means and types of payment available for your integra
 |Citibanamex|`banamex`|`atm`|MercadoPagoPro and MercadoPagoOff|
 
 ------------
-
 ----[mpe]----
 
 |Name|Payment methods|Payment types|Conditions in VTEX|
@@ -93,7 +88,6 @@ This document contains the means and types of payment available for your integra
 |Pago Efectivo|`pagoefectivo_atm`|`atm`|MercadoPagoPro and MercadoPagoOff|
 
 ------------
-
 ----[mlu]----
 
 |Name|Payment methods|Payment types|Conditions in VTEX|

@@ -11,11 +11,3 @@ See below how to customize the **transactional email** notifications in the Pres
 5. Configure the SMTP server and enable the sending of emails.
 6. Access **Advanced Parameters > E-mail** and select the option "Set my own SMTP parameters (for advanced users ONLY)". Fill in the information of the server responsible for sending.
 7. Send a test email to ensure the platform is sending emails correctly.
-
-> PREV_STEP_CARD_EN
->
-> How to install the Mercado Pago module manually
->
-> See how, if necessary, to install the module manually.
->
-> [How to install the Mercado Pago module manually](/developers/en/docs/prestashop/how-tos/install-module-manually)

@@ -42,19 +42,3 @@ Once the initial purchase process is complete, see below how to test the integra
 > Already with test purchase done with Checkout API, you will be able to view the order approval. </br>
 > </br> <br/>
 > It is also important to note that, in both checkouts, this information about the approved payment will not be included in the Mercado Pago account history because it only contains actual expenses (made in production).
-
-> NEXT_STEP_CARD_EN
->
-> Configure payments with Checkout Pro
->
-> Learn how to set up Checkout Pro to receive payments from your store.
->
-> [Configure payments with Checkout Pro](/developers/en/docs/magento-two/payment-configuration/checkout-pro)
-
-> NEXT_STEP_CARD_EN
->
-> Receive payments
-> 
-> Learn how to enable the store to process real sales.
->
-> [Receive payments](/developers/en/docs/magento-two/sales-processing/go-to-production)
