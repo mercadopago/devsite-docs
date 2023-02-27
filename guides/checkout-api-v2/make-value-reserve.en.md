@@ -162,7 +162,7 @@ curl -X POST \
 "payer": {
 "email": "test_user_19653727@testuser.com"
 },
-"capture": "false"
+"capture": false
 }'
 ```
 ]]]

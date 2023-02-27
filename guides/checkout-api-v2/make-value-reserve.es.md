@@ -162,7 +162,7 @@ curl -X POST \
           "payer": {
             "email": "test_user_19653727@testuser.com"
           },
-          "capture": "false"
+          "capture": false
     }'
 ```
 ]]]
@@ -184,7 +184,9 @@ La respuesta indica que el pago se encuentra autorizado y pendiente de captura.
 ]]]
 
 
-Además, también es posible resultar como rechazado o pendiente. Ten en cuenta que los fondos autorizados no podrán ser utilizados por su cliente hasta que sean capturados. Recomendamos capturar lo antes posible.
+Además, también es posible resultar como `rechazado` o `pendiente`. En caso de que retorne como `pendiente`, deberás prestar atención a las notificaciones para saber cuál es el estado final del pago.
+
+Ten en cuenta que los fondos autorizados no podrán ser utilizados por su cliente hasta que sean capturados. Recomendamos capturar lo antes posible.
 
 ----[mla, mlm]----
 > WARNING
@@ -209,11 +211,3 @@ Además, también es posible resultar como rechazado o pendiente. Ten en cuenta 
 >
 > La reserva tendrá una validez de 5 días. Si no la capturas hasta ese momento, será cancelada. Además, debes guardar el ID del pago para poder finalizar el proceso.
 ------------
-
-> NEXT_STEP_CARD_ES
->
-> Capturar pago autorizado
->
-> Conozca las formas disponibles para capturar un pago autorizado.
->
-> [Capturar pago autorizado](/developers/es/docs/checkout-api/payment-management/capture-authorized-payment)
