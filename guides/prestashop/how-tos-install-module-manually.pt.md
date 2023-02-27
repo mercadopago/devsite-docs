@@ -12,23 +12,3 @@ Para instalar o módulo de forma manual, siga os passos abaixo:
 Pronto! O módulo do Mercado Pago foi instalado e está pronto para ser configurado.
  
 ![Ativar módulo manualmente](/images/prestashop/instalacao_manual_pt.gif)
-
-----[mlb]----
-> NEXT_STEP_CARD_PT
->
-> Como customizar notificação de pagamento para Checkout Transparente
->
-> Após configurar o Checkout Transparente para receber pagamentos, saiba como configurar o envio de e-mails que notificarão o usuário de suas transações.
->
-> [Customização de e-mail](/developers/pt/docs/prestashop/how-tos/email-customization)
-------------
-
-----[mla, mlm, mpe, mco, mlu, mlc]----
-> NEXT_STEP_CARD_PT
->
-> Como customizar notificação de pagamento para Checkout API
->
-> Após configurar o Checkout API para receber pagamentos, saiba como configurar o envio de e-mails que notificarão o usuário de suas transações.
->
-> [Customização de e-mail](/developers/pt/docs/prestashop/how-tos/email-customization)
-------------

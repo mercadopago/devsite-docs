@@ -7,13 +7,3 @@ Si registraste una afiliación MercadoPagoV1, puedes **migrar de MercadoPagoV1 a
 1. Registra una gateway de pago afiliada a **MercadoPagoV2**.
 2. En las Condiciones de Pago, cambia el **Proceso con la afiliación** al nuevo que creaste.
 3. Realiza esta alteración en todas las condiciones existentes en tu comercio electrónico.
-
-&nbsp;
-
-> NEXT_STEP_CARD_ES
->
-> Creando una afiliación de gateway MercadoPagoV2
->
-> Aprende a crear una afiliación con MercadoPagoV2.
->
-> [Creando una afiliación de gateway MercadoPagoV2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/vtex/gateway-affiliations)

@@ -1,4 +1,4 @@
-## Medios de pago offline
+# Medios de pago offline
 
 Este medio de pago adicionará----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------y te permitirá ofrecer pagos en efectivo utilizando medios de pago offline a través de Mercado Pago.
 
@@ -9,4 +9,3 @@ Este medio de pago adicionará----[mlb]---- Checkout Transparente ------------ -
 5. Con **Vencimiento del pago** podrás configurar en cuántos días caducarán los pedidos con pagos en efectivo.
 
 Para guardar los cambios en la configuración, haz clic en el botón **Guardar cambios**.
-

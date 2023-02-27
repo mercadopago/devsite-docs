@@ -18,30 +18,3 @@ Para integrar o Checkout Pro, siga os passos abaixo.
 12. Clique em **Set up installment and interest** para [configurar no Mercado Pago](https://www.mercadopago.com.br/costs-section#from-section=menu) a tarifa que será paga em cada compra e também oferecer parcelas sem juros para seus clientes.
 13. Em seguida, clique em **Save Config** para salvar suas preferências.
 
-----[mlb]----
-> PREV_STEP_CARD_PT
->
-> Configurar os pagamentos com Pix
->
-> Configure a sua loja para receber pagamentos com Pix utilizando o Checkout Transparente.
->
-> [Pix](/developers/pt/docs/magento-two/payment-configuration/checkout-api/pix)
-------------
-
-----[mla, mlm, mpe, mco, mlu, mlc]----
-> PREV_STEP_CARD_PT
->
-> Configurar os pagamentos via transferência bancária
->
-> Configure a sua loja para receber pagamentos via transferência bancária utilizando o Checkout API.
->
-> [Pix](/developers/pt/docs/magento-two/payment-configuration/checkout-api/bank-transfer)
-------------
-
-> NEXT_STEP_CARD_PT
->
-> Testar os pagamentos
->
-> Saiba como realizar uma compra teste e garantir o funcionamento da integração.
->
-> [Testar os pagamentos](/developers/pt/docs/magento-two/sales-processing/integration-test)

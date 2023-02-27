@@ -1,4 +1,4 @@
-## Pix
+# Pix
 
 ----[mlb]----
 Con Checkout Transparente, ofrece pagos con Pix directamente en tu tienda. Pix es un medio de pago instantáneo disponible las 24 horas del día.

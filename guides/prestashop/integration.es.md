@@ -9,20 +9,4 @@ Para integrarte con Mercado Pago, sigue los procedimientos a continuación.
 5. En la pantalla de administración de módulos, ingresa el **nombre y categoría de tu tienda**.
 6. Si eres miembro del **&lt;dev&gt;program**, el programa para desarrolladores de Mercado Pago, ingresa tu *integrator_id* como miembro del programa. Si aún es miembro, [haz clic aquí](/developers/es/developer-program) para obtener más información.
  
-Una vez que haya realizado la configuración comercial, configure las experiencias de pago de su tienda de acuerdo con el tipo de pago seleccionado.
-
-> PREV_STEP_CARD_ES
->
-> Requisitos previos
->
-> Conocer los requisitos previos para realizar la integración.
->
-> [Requisitos previos](/developers/es/docs/prestashop/prerequisites)
-
-> NEXT_STEP_CARD_ES
->
-> Configuración de pago
->
-> Aprende a configurar los checkouts de Mercado Pago para recibir pagos de tu tienda.
->
-> [Configuración de pago](/developers/es/docs/prestashop/payment-configuration)
+Una vez que hayas realizado la configuración comercial, configura las experiencias de pago de tu tienda de acuerdo con el tipo de pago seleccionado.

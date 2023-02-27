@@ -14,7 +14,7 @@ To define the **redirect** opening template, insert the HTML code below directly
    <title>Pay</title>
  </head>
  <body>
-   <a href="YOUR_INIT_POINT"> // Enter the preference ID
+   <a href="YOUR_INIT_POINT"> // Enter the init_point field returned when creating the preference
    <button>
      Pay with Mercado Pago
    </button>

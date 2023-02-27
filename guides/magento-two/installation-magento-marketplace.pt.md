@@ -9,18 +9,3 @@ Através da loja Magento 2, você pode instalar gratuitamente o modulo do Mercad
 
 Pronto! Você instalou com sucesso o modulo Mercado Pago para Magento 2.
 
-> PREV_STEP_CARD_PT
->
-> Instalação via Composer
->
-> Veja como instalar o modulo do Mercado Pago na plataforma Magento 2 via Composer.
->
-> [Instalação via Composer](/developers/pt/docs/magento-two/installation/composer)
-
-> NEXT_STEP_CARD_PT
->
-> Instalação via FTP
->
-> Veja como instalar o modulo do Mercado Pago na plataforma Magento 2 via FTP.
->
-> [Instalação via FTP](/developers/pt/docs/magento-two/installation/ftp)

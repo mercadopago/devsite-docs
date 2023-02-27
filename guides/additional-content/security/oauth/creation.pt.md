@@ -48,19 +48,3 @@ Para gerar o authorization code é preciso atender aos requisitos abaixo.
 > É recomendado realizar este procedimento por completo de uma única vez em conjunto com o usuário, visto que o código recebido pela Redirect URL após a autorização tem validade de 10 minutos e o access token recebido através do endpoint tem validade de 180 dias.
 > 
 > Para gerar credenciais de sandbox para realização de testes, envie o parâmetro `test_token` com valor `true`.
-
-> PREV_STEP_CARD_PT
->
-> Introdução
->
-> Veja mais informações sobre as principais características do OAuth.
->
-> [Introdução](/developers/pt/guides/additional-content/security/oauth/introduction)
-
-> NEXT_STEP_CARD_PT
->
-> Renovação de access token
->
-> Veja o fluxo de renovação de um access token vencido.
->
-> [Renovação](/developers/pt/guides/additional-content/security/oauth/renewal)
