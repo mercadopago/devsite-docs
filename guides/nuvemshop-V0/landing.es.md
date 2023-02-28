@@ -2,7 +2,7 @@
 content_section_with_media:
  - title: Tiendanube
  - message: Es una plataforma de e-commerce que permite recibir pagos con Mercado Pago. Tiendanube se adapta a cada tipo de negocio de diferentes formas, permitiendo que la disposición de las tiendas sea única.
- - media_image: /magento-two/magento2-landing.png 
+ - media_image: /nuvemshop/nuvemshop-landing.png 
 ---
 
 ---
@@ -11,13 +11,12 @@ bullet_section_with_media:
  - type: normal
  - message: Con el módulo de Mercado Pago puedes configurar el pago mediante:
  - benefit_title: Checkout Pro
- - benefit_message: El pago se realiza en la página de Mercado Pago con tarjeta de crédito, boleto bancário (o saldo de cuenta de Mercado Pago) y Pix.
+ - benefit_message: Los compradores podrán pagar con una cuenta de Mercado Pago y todo el proceso de compra se realizará en nuestro entorno, lo que facilita el pago con tarjeta de crédito, boleto bancário (o saldo de cuenta de Mercado Pago) y Pix.
  - benefit_title: Checkout Transparente
  - benefit_message: El pago se realiza sin salir de tu tienda virtual con tarjeta de crédito, boleto bancário (o saldo de cuenta de Mercado Pago) y Pix.
- - image: /magento-two/magento2-payment.png 
+ - image: /nuvemshop/nuvemshop-payment.png 
 ---
 ------------
-
 ----[mla, mlm, mlu, mco, mlc, mpe]----
 
 ---
@@ -26,10 +25,10 @@ bullet_section_with_media:
  - type: normal
  - message: Con el módulo de Mercado Pago puedes configurar el pago mediante:
  - benefit_title: Checkout Pro
- - benefit_message: El pago se realiza en la página de Mercado Pago con tarjeta de crédito, transferencia bancaria y redes de pago en efectivo.
+ - benefit_message: Los compradores podrán pagar con una cuenta de Mercado Pago y todo el proceso de compra se realizará en nuestro entorno, lo que facilita el pago con tarjeta de crédito, transferencia bancaria y redes de pago en efectivo.
  - benefit_title: Checkout API
  - benefit_message: El pago se realiza sin salir de tu tienda virtual con tarjeta de crédito y redes de pago en efectivo.
- - image: /magento-two/magento2-payment.png 
+ - image: /nuvemshop/nuvemshop-payment.png 
 ---
 ------------
 

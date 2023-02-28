@@ -2,7 +2,7 @@
 content_section_with_media:
  - title: Nuvemshop
  - message: É uma plataforma e-commerce para sua loja virtual que permite processar pagamentos através do Mercado Pago. A Nuvemshop se adapta a cada tipo de negócio de formas diferentes, permitindo que o layout das lojas sejam únicos.
- - media_image: /magento-two/magento2-landing.png 
+ - media_image: /nuvemshop/nuvemshop-landing.png 
 ---
 
 ----[mlb]----
@@ -13,13 +13,12 @@ bullet_section_with_media:
  - type: normal
  - message: Com o módulo do Mercado Pago você pode configurar o pagamento utilizando:
  - benefit_title: Checkout Pro
- - benefit_message: O pagamento é realizado na página do Mercado Pago com cartão crédito, boleto bancário (ou saldo da conta do Mercado Pago) e Pix.
+ - benefit_message: O pagamento é realizado na página do Mercado Pago e os compradores poderão pagar usando uma conta Mercado Pago, facilitando o pagamento com cartão crédito, boleto bancário (ou saldo da conta do Mercado Pago) e Pix.
  - benefit_title: Checkout Transparente
  - benefit_message: O pagamento é realizado sem sair da sua loja virtual cartão crédito, boleto bancário (ou saldo da conta do Mercado Pago) e Pix.
- - image: /magento-two/magento2-payment.png  
+ - image: /nuvemshop/nuvemshop-payment.png  
 ---
 ------------
-
 ----[mla, mlm, mlu, mco, mlc, mpe]----
 
 ---
@@ -28,10 +27,10 @@ bullet_section_with_media:
  - type: normal
  - message: Com o módulo do Mercado Pago você pode configurar o pagamento utilizando:
  - benefit_title: Checkout Pro
- - benefit_message: O pagamento é realizado na página do Mercado Pago com cartão crédito, transferência bancária e redes de pagamento em efectivo.
+ - benefit_message: O pagamento é realizado na página do Mercado Pago e os compradores poderão pagar usando uma conta Mercado Pago, facilitando o pagamento com cartão crédito, transferência bancária e redes de pagamento em efectivo.
  - benefit_title: Checkout API
  - benefit_message: O pagamento é realizado sem sair da sua loja virtual com cartão crédito e redes de pagamento em efectivo.
- - image: /magento-two/magento2-payment.png  
+ - image: /nuvemshop/nuvemshop-payment.png  
 ---
 ------------
 
