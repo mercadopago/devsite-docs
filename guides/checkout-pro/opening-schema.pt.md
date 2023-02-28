@@ -14,7 +14,7 @@ Para definir o modelo de abertura **Redirect**, insira o código HTML abaixo dir
     <title>Pagar</title>
   </head>
   <body>
-    <a href="YOUR_INIT_POINT"> // Indique o campo "init_point" retornado na criação da preferência
+    <a href="YOUR_INIT_POINT"> // Indique o campo  init_point retornado na criação da preferência
     <button>
       Pagar com Mercado Pago
     </button>
