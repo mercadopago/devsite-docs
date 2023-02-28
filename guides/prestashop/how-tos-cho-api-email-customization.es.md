@@ -10,12 +10,4 @@ Ve a continuación cómo personalizar el envío del **e-mail transaccional** en 
 4. Defina una plantilla de correo electrónico para cada estado de pedido.
 5. Configure el servidor SMTP y habilite el envío de correos electrónicos.
 6. Accede a **Advanced Parameters > E-mail** y selecciona la opción "Establecer mis propios parámetros SMTP (SÓLO para usuarios avanzados)". Rellena los datos del servidor responsable del envío.
-7. Envíe un e-mail de prueba para asegurarte de que la plataforma está enviando correos electrónicos correctamente.
-
-> PREV_STEP_CARD_ES
->
-> Cómo instalar el módulo de Mercado Pago manualmente
->
-> Vea cómo, si es necesario, instalar el módulo manualmente.
->
-> [Cómo instalar el módulo de Mercado Pago manualmente](/developers/es/docs/prestashop/how-tos/install-module-manually)
+7. Envía un e-mail de prueba para asegurarte de que la plataforma esté enviando correos electrónicos correctamente.

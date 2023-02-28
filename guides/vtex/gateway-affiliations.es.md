@@ -11,13 +11,11 @@ Con esto, es posible decidir por qué gateway de pagos se procesarán los difere
 La afiliación MercadoPagoV2 procesa los planes de pago con Tarjeta de Crédito, Boleto Bancário, Pix, Mercado Pago Offline y Checkout Pro.
 
 ------------
-
 ----[mla, mlm, mlu, mco, mpe]----
 
 La afiliación MercadoPagoV2 procesa los planes de pago con Tarjeta de crédito, Tarjeta de débito, Mercado Pago Offline y Checkout Pro.
 
 ------------
-
 ----[mlc]----
 
 La afiliación MercadoPagoV2 procesa los planes de pago con Tarjeta de crédito, Tarjeta de débito, y Checkout Pro.
@@ -28,7 +26,7 @@ La afiliación MercadoPagoV2 procesa los planes de pago con Tarjeta de crédito,
 >
 > Importante
 >
-> Si cuentas con una afiliación de gateway MercadoPagoV1, por cuestiones de seguridad te recomendamos [migrar a MercadoPagoV2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/vtex/mp1-mp2-migration).
+> Si cuentas con una afiliación de gateway MercadoPagoV1, por cuestiones de seguridad te recomendamos [migrar a MercadoPagoV2.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/vtex/mp1-mp2-migration)
 
 Para crear una **afiliación de gateway de pago con MercadoPagoV2**, sigue los pasos a continuación:
 
@@ -44,9 +42,9 @@ Para crear una **afiliación de gateway de pago con MercadoPagoV2**, sigue los p
    - **Categoría principal da loja - Categoría principal de la tienda:** categoría de la tienda.
    - **Reembolso automático / manual:** selecciona si deseas que Mercado Pago reembolse automáticamente en caso de cancelación o si deseas retener el monto pagado para que el cliente lo use en futuras compras.
    - **Modo binário - binário:** configura si el pago puede pasar por revisión manual o no.
-   - **Métodos de pagamento excluídos - Métodos de pago excluídos (visa, paypal, bolbradesco, oxxo...):** métodos de pago que se excluirán en el momento de la compra. [Mira las opciones aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/vtex/payment-methods). Aplicable solo para MercadoPagoPRO, MercadoPagoWallet y MercadoPAgoOff.
-   - **Tipos de pagamento excluídos - Tipos de pago excluidos (credit_card, bank_transfer, ticket...):** tipos de pago que se excluirán en el momento de la compra. [Mira las opciones aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/vtex/payment-methods). Aplicable solo para MercadoPagoPRO, MercadoPagoWallet y MercadoPagoOff.
-   - **Modo de processamento - Modo de procesamiento:** configura si el pago será gateway o agregador. Para procesar pagos en modo Gateway, comunícate con tu Asesor de Mercado Pago.
+   - **Métodos de pagamento excluídos - Métodos de pago excluídos:** métodos de pago que se excluirán en el momento de la compra. [Mira las opciones aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/vtex/payment-methods). Aplicable solo para MercadoPagoPRO, MercadoPagoWallet y MercadoPAgoOff.
+   - **Tipos de pagamento excluídos - Tipos de pago excluidos:** tipos de pago que se excluirán en el momento de la compra. [Mira las opciones aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/vtex/payment-methods). Aplicable solo para MercadoPagoPRO, MercadoPagoWallet y MercadoPagoOff.
+   - **Modo de processamento - Modo de procesamiento:** configura el pago a través del modelo agregador.
    - **Integrator ID:** para programadores o agencias que realizan la integración.
    - **Moeda - Moneda:** moneda a configurar (USD o Local).
    - **Plazo de captura de pagamento aprobado - Plazo de captura de pagos aprobado:** configura un retraso en la captura automática de VTEX.
@@ -58,22 +56,6 @@ Para crear una **afiliación de gateway de pago con MercadoPagoV2**, sigue los p
 >
 > Nota
 >
-> Si tienes dificultades durante tu integración, consulta nuestra [lista de errores](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/vtex/common-errors) y nuestro documento sobre [logs de VTEX](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/vtex/logs).
+> Si tienes dificultades durante tu integración, consulta nuestra [lista de errores](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/vtex/common-errors) y nuestro documento sobre [logs de VTEX.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/vtex/logs)
 
 ![Creando una afiliación de gateway MercadoPagoV2](/images/vtex/affiliationV2-imagenv2-es.gif)
-
-> PREV_STEP_CARD_ES
->
-> Migración de versión de gateway
->
-> Aprende a migrar de MercadoPagoV1 a MercadoPagoV2.
->
-> [Migración de versión de gateway](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/vtex/mp1-mp2-migration)
-
-> NEXT_STEP_CARD_ES
->
-> Planes de pago
->
-> Aprende a configurar planes de pago.
->
-> [Planes de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/vtex/configure-payment-conditions)

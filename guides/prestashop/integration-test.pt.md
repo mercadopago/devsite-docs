@@ -39,19 +39,3 @@ Feito o processo inicial de compra, veja abaixo como testar a integração de ac
 > Ao finalizar a compra teste com Checkout Pro, no Painel Administrativo da PrestaShop não será possível visualizar a compra como aprovada porque o processo ocorre dentro do ambiente do Mercado Pago e não no ambiente da loja. Com o teste feito com o ----[mlb]---- Checkout Transparente, ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API, ------------ será possível visualizar a aprovação do pedido.<br>
 > </br> <br/>
 > Além disso, em ambos os checkouts essa informação de pagamento aprovado não constará no histórico da conta do Mercado Pago porque nele só constam despesas reais (feitas em produção).
-
-> PREV_STEP_CARD_PT
->
-> Configuração de pagamentos
->
-> Saiba como configurar os checkouts do Mercado Pago para receber os pagamento de sua loja.
->
-> [Configuração de pagamentos](/developers/pt/docs/prestashop/payment-configuration)
-
-> NEXT_STEP_CARD_PT
->
-> Receber os pagamentos
->
-> Saiba como ativar a loja para processar vendas reais.
->
-> [Receber os pagamentos](/developers/pt/docs/prestashop/sales-processing/go-to-production)

@@ -7,13 +7,3 @@ Se você cadastrou uma afiliação MercadoPagoV1, siga os passos abaixo para **m
 1. Cadastre uma afiliação de gateway de pagamento com o **MercadoPagoV2**.
 2. Nas Condições de Pagamento altere o **Processar com a afiliação** para a nova que criou.
 3. Realize a alteração em todas as condições existentes no seu e-commerce.
-
-&nbsp;
-
-> NEXT_STEP_CARD_PT
->
-> Criando afiliação de gateway MercadoPagoV2
->
-> Conheça como criar uma afiliação com MercadoPagoV2.
->
-> [Criando afiliação de gateway MercadoPagoV2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/vtex/gateway-affiliations)

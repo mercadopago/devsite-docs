@@ -2,7 +2,7 @@
 
 Notificações são mensagens enviadas pelo servidor do Mercado Pago de eventos que ocorrem em seu aplicativo. **IPN** (Instant Payment Notification) é um mecanismo que permite que seu aplicativo receba notificações do Mercado Pago, informando o status de um determinado pagamento, estorno e comerciante_order, por meio de uma chamada HTTP POST para informar suas transações.
 
-Se você quiser saber mais sobre notificações de IPN, acesse [esta documentação](/developers/pt/docs/WooCommerce/additional-content/notifications/ipn).
+Se você quiser saber mais sobre notificações de IPN, acesse [esta documentação](/developers/pt/docs/woocommerce/additional-content/notifications/ipn).
 
 Para receber notificações de IPN, siga as etapas abaixo:
 
@@ -16,4 +16,3 @@ Para receber notificações de IPN, siga as etapas abaixo:
 6. Preencha os campos **URL para IPN** com o URL do site de produção.
 7. Preencha o campo **integrator_id** com seu número de membro do **&lt;dev&gt;program** do Mercado Pago. Se você ainda não é membro, [clique aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/developer-program) para mais informações.
 8. Clique em **Salvar e continuar**.
-

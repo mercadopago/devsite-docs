@@ -17,12 +17,4 @@ Los siguientes son errores comunes que pueden ocurrir durante tu integración:
 >
 > Antes de comenzar tu operación de producción, debes activar tus [credenciales]([FAKER][CREDENTIALS][URL]).
 
-Para más información, visita el [site oficial de VTEX](https://help.vtex.com/) y el [site de status de VTEX](https://status.vtex.com/).
-
-> NEXT_STEP_CARD_ES
->
-> Verificación de logs
->
-> Conoce los principales logs de VTEX.
->
-> [Verificación de logs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/vtex/logs)
+Para más información, visita el [site oficial de VTEX](https://help.vtex.com/) y el [site de status de VTEX.](https://status.vtex.com/)

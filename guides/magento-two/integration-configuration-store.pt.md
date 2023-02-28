@@ -11,18 +11,3 @@ Feita a configuração das credenciais e das notificações de pagamento, config
 7. No campo **Log to File** você poderá habilitar a opção de geração de um arquivo chamado `mercadopago.log`. Este arquivo será criado na pasta de log da sua loja (var/log) e conterá o módulo debug, o que te ajudará a entender o comportamento do módulo.
 8. Feitas as devidas configurações, clique no botão **Save Config** no canto superior direito.
 
-> PREV_STEP_CARD_PT
->
-> Configure notificações de pagamento
->
-> Siga as etapas para configurar o status do pedido para notificações de pagamento.
->
-> [Configure notificações de pagamento](/developers/pt/docs/magento-two/integration-configuration/notifications)
-
-> NEXT_STEP_CARD_PT
->
-> Configuração de pagamentos
->
-> Saiba como configurar os checkouts do Mercado Pago para receber os pagamento de sua loja.
->
-> [Configuração de pagamentos](/developers/pt/docs/magento-two/payment-configuration)

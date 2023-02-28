@@ -8,7 +8,7 @@ Luego de haber creado tu afiliación con **MercadoPagoV2**, debes configurar los
 >
 > Importante
 >
-> Verifica en tu tienda de aplicaciones VTEX que la App **Mercado Pago Payment APP** este instalada para usar las condiciones de pago **MercadoPagoPro, MercadoPagoWallet y MercadoPagoOff** o solicita la instalación al equipo de VTEX a través de [Support VTEX](https://help.vtex.com/es/support).
+> Verifica en tu tienda de aplicaciones VTEX que la App **Mercado Pago Payment APP** este instalada para usar las condiciones de pago **MercadoPagoPro, MercadoPagoWallet y MercadoPagoOff** o solicita la instalación al equipo de VTEX a través de [Support VTEX.](https://help.vtex.com/es/support)
 
 La configuración de los planes de pago se realiza en la pestaña **Planes de pago** del menú **Configuración** en el módulo **Pagos** en el portal del administrador de la plataforma VTEX. En esta pestaña, debes hacer clic en el botón "+" (*Agregar nuevo plan de pago para ...*) y seleccionar uno de los siguientes planes de pago:
 
@@ -35,18 +35,22 @@ La configuración de los planes de pago se realiza en la pestaña **Planes de pa
 >
 > Importante
 >
-> En caso de no encontrar la app en la tienda, puedes ingresar a la URL *https://**VTEXACCOUNT**.myvtex.com/admin/apps/vtex.banks-for-pse@0.1.2/setup/*, sustituyendo "VTEXACCOUNT" por el nombre de tu tienda VTEX donde deseas instalar la app.
+> En caso de no encontrar la app en la tienda, puedes ingresar a la URL *`https://VTEXACCOUNT.myvtex.com/admin/apps/vtex.banks-for-pse@0.1.2/setup/`*, sustituyendo "VTEXACCOUNT" por el nombre de tu tienda VTEX donde deseas instalar la app.
 
 Una vez que hayas instalado Banks for PSE, puedes configurar PSE como método de pago siguiendo los pasos detallados al inicio.
 
 ------------
-
 * **Otro:** se refiere a transacciones con **MercadoPagoOff**, **MercadoPagoWallet**, o **MercadoPagoPro**.
   * Si configuras **MercadoPagoPro**, el comprador realizará el pago en el entorno de Mercado Pago, a través de un formulario presentado directamente en tu tienda y tendrá acceso a todos los métodos de pago disponibles en la plataforma.
   * Si configuras **MercadoPagoWallet**, el comprador utilizará su billetera de Mercado Pago. Este modo es exclusivo para compradores registrados en Mercado Pago o Mercado Libre y sugerimos usarlo si eliges **Plan de Pago con Tarjeta de Crédito**.
-  * Si configuras **MercadoPagoOff**, puedes contar con medios de pago en efectivo. ----[mlb]----
+  * Si configuras **MercadoPagoOff**, puedes contar con medios de pago en efectivo. 
+  
+  ----[mlb]----
 * **Boleto Bancário:** se refiere a transacciones con boleto bancário **exclusivamente**.
-* **Pix:** se refiere a transacciones con Pix a través de **Código QR** o **Copiar y pegar**. Para configurar este plan de pago, debes tener una clave Pix registrada en tu cuenta de Mercado Pago. Para obtener más información sobre cómo crear tu clave Pix, haz clic [aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required). ------------
+* **Pix:** se refiere a transacciones con Pix a través de **Código QR** o **Copiar y pegar**. Para configurar este plan de pago, debes tener una clave Pix registrada en tu cuenta de Mercado Pago. Para obtener más información sobre cómo crear tu clave Pix, haz clic [aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required). 
+* **Open Finance Mercado Pago:** se refiere a transacciones que son hechas directamente en tu tienda y conectan al cliente con la institución bancaria de su preferencia a través de Mercado Pago. De esta forma, el pago es semejante a una transacción bancaria, pero el cliente puede hacerlo de forma fluida y sin la necesidad de copiar y pegar información. Mercado Pago lo dirige a hacer la autenticación y aprobación de la transacción en su banco y, después, lo retorna a la tienda de forma automática, actualizando el estatus del pedido. Para más información sobre cómo funciona el pago con Open Finance, haz clic [aquí](https://www.mercadopago.com.br/c/openfinance), o consulta nuestro [blog](https://empresas.mercadopago.com.br/pagamentos-via-open-finance).
+
+------------
 
 > NOTE
 >
@@ -82,12 +86,4 @@ Para obtener más información sobre cómo configurar los términos de pago en V
 > Las tasas e impuestos deben configurarse en la plataforma, ya que Mercado Pago los procesa de acuerdo a la información proporcionada por VTEX. Haz clic [aquí](https://help.vtex.com/es/tutorial/creando-la-tasaimpuesto/) para obtener más información.
 > <br>
 > <br>
-> Si tienes dificultades durante tu integración, consulta nuestro [lista de errores](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/vtex/common-errors) y nuestro documento sobre [logs de VTEX](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/vtex/logs).
-
-> NEXT_STEP_CARD_ES
->
-> Device Fingerprint
->
-> Aprende a configurar fingerprint.
->
-> [Device Fingerprint](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/vtex/device-fingerprint)
+> Si tienes dificultades durante tu integración, consulta nuestro [lista de errores](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/vtex/common-errors) y nuestro documento sobre [logs de VTEX.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/vtex/logs)
