@@ -36,10 +36,10 @@ Para generar una orden, accede a nuestra [Referencia de API](/developers/es/refe
   "qr_data": "00020101021243650016COM.MERCADOLIBRE02013063638f1192a-5fd1-4180-a180-8bcae3556bc35204000053039865802BR5925IZABEL AAAA DE MELO6007BARUERI62070503***63040B6D"
 }
 ```
+
 La respuesta será un string con el estándar EMVCo. Usa el `qr_data` para disponibilizar el código QR con un generador o por tu aplicación.
 
 ----[mlb]----
-
 Si en tu cuenta de Mercado Pago **tienes una llave Pix configurada**, la estructura del string de datos tendrá datos referentes a Pix.
 Por ejemplo:
 

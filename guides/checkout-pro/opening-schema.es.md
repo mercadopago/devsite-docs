@@ -15,7 +15,7 @@ Para definir el modelo de apertura de **redirect**, agrega el siguiente código 
     <title>Pagar</title>
   </head>
   <body>
-    <a href="YOUR_INIT_POINT"> // Indica el ID de la preferencia
+    <a href="YOUR_INIT_POINT"> // Indica el campo "init_point" devuelto al crear la preferencia
     <button>
       Pagar con Mercado Pago
     </button>
