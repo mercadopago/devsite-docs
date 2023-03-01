@@ -2,11 +2,13 @@
 
 The integration of the Mercado Pago module with the Tiendanube store allows you to use two types of checkouts to receive payments for your sales, namely:
 
-----[mlb]---- 
-* [Checkout Pro](/developers/en/docs/nuvemshop/payment-configuration/checkout-pro): buyers will be able to pay using a Mercado Pago account and the entire purchase process will be done in our environment, which facilitates payment with credit card, bank slip (or Mercado Pago account balance) and Pix.
-* [Checkout Transparente](/developers/en/docs/nuvemshop/payment-configuration/checkout-api): payment is made without leaving your virtual store credit card, bank slip (or Mercado Pago account balance) and Pix.
+----[mlb]----
+* [Checkout Pro](/developers/en/docs/nuvemshop/payment-configuration/checkout-pro): payment is made on the Mercado Pago page and buyers can pay using a Mercado Pago account, making it easier to pay with a credit card , debit and other means of payment (Pix, bank slip, lottery payment without slip, balance in Mercado Pago account and Mercado Credit).
+* [Transparent Checkout](/developers/en/docs/nuvemshop/payment-configuration/checkout-api): payment is made without leaving your virtual store with Pix, credit card and bank slip.
+
+> The Pix payment option will only be displayed if there is a Pix key registered with Mercado Pago. If you haven't created it yet, [click here](https://www.youtube.com/watch?v=60tApKYVnkA) and see the step by step.
+
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-* [Checkout Pro](/developers/en/docs/nuvemshop/payment-configuration/checkout-pro): buyers will be able to pay using a Mercado Pago account and the entire purchase process will be done in our environment, which facilitates payment with credit card, bank transfer and cash payment networks.
-* [Checkout API](/developers/en/docs/nuvemshop/payment-configuration/checkout-api): payment is made without leaving your virtual store using your credit card and cash payment networks.
-------------
+* [Checkout Pro](/developers/en/docs/nuvemshop/payment-configuration/checkout-pro): payment is made on the Mercado Pago page and buyers can pay using a Mercado Pago account, making it easier to pay with a credit card , debit and other means of payment (cash payment networks and Mercado Credit)
+* [Checkout API](/developers/en/docs/nuvemshop/payment-configuration/checkout-api): payment is made without leaving your virtual store using cards (credit and debit) and cash payment networks.

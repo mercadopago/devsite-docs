@@ -5,15 +5,17 @@ content_section_with_media:
  - media_image: /nuvemshop/nuvemshop-landing.png 
 ---
 
+----[mlb]----
+
 ---
 bullet_section_with_media:
  - title: Pago
  - type: normal
  - message: Con el módulo de Mercado Pago puedes configurar el pago mediante:
  - benefit_title: Checkout Pro
- - benefit_message: Los compradores podrán pagar con una cuenta de Mercado Pago y todo el proceso de compra se realizará en nuestro entorno, lo que facilita el pago con tarjeta de crédito, boleto bancário (o saldo de cuenta de Mercado Pago) y Pix.
+ - benefit_message: Los compradores podrán pagar con una cuenta de Mercado Pago y todo el proceso de compra se realizará en nuestro entorno, lo que facilita el pago con tarjetas de débito, de crédito y otros medios de pago (Pix, boleto bancário, pago en lotería sin boleto, cuenta Mercado Pago y Mercado Crédito).
  - benefit_title: Checkout Transparente
- - benefit_message: El pago se realiza sin salir de tu tienda virtual con tarjeta de crédito, boleto bancário (o saldo de cuenta de Mercado Pago) y Pix.
+ - benefit_message: El pago se realiza sin salir de tu tienda virtual con Pix, tarjeta de crédito y boleto bancário.
  - image: /nuvemshop/nuvemshop-payment.png 
 ---
 ------------
@@ -25,9 +27,9 @@ bullet_section_with_media:
  - type: normal
  - message: Con el módulo de Mercado Pago puedes configurar el pago mediante:
  - benefit_title: Checkout Pro
- - benefit_message: Los compradores podrán pagar con una cuenta de Mercado Pago y todo el proceso de compra se realizará en nuestro entorno, lo que facilita el pago con tarjeta de crédito, transferencia bancaria y redes de pago en efectivo.
+ - benefit_message: Los compradores podrán pagar con una cuenta de Mercado Pago y todo el proceso de compra se realizará en nuestro entorno, lo que facilita el pago con tarjetas de débito, de crédito y otros medios de pago (redes de pago en efectivo y Mercado Crédito).
  - benefit_title: Checkout API
- - benefit_message: El pago se realiza sin salir de tu tienda virtual con tarjeta de crédito y redes de pago en efectivo.
+ - benefit_message: El pago se realiza sin salir de tu tienda virtual con tarjetas (crédito y debito) y redes de pago en efectivo.
  - image: /nuvemshop/nuvemshop-payment.png 
 ---
 ------------

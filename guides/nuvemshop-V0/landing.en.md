@@ -13,7 +13,7 @@ bullet_section_with_media:
  - type: normal
  - message: With the Mercado Pago module you can configure the payment using:
  - benefit_title: Checkout Pro
- - benefit_message: Buyers will be able to pay using a Mercado Pago account and the entire purchase process will be done in our environment, which facilitates payment with credit card, bank slip (or Mercado Pago account balance) and Pix.
+ - benefit_message: Buyers will be able to pay using a Mercado Pago account and the entire purchase process will be carried out in our environment, facilitating payment with credit card, debit card and other means of payment (Pix, bank slip, lottery payment without slip, balance in the Mercado Pago account and Mercado Credit).
  - benefit_title: Checkout API
  - benefit_message: Payment is made without leaving your virtual store credit card, bank slip (or Mercado Pago account balance) and Pix.
  - image: /nuvemshop/nuvemshop-payment.png 
@@ -27,7 +27,7 @@ bullet_section_with_media:
  - type: normal
  - message: With the Mercado Pago module you can configure the payment using:
  - benefit_title: Checkout Pro
- - benefit_message: Buyers will be able to pay using a Mercado Pago account and the entire purchase process will be done in our environment, which facilitates payment with credit card, bank transfer and cash payment networks.
+ - benefit_message: Buyers will be able to pay using a Mercado Pago account and the entire purchase process will be carried out in our environment, facilitating payment with credit card, debit card and other means of payment (cash payment networks and Mercado Credit).
  - benefit_title: Checkout API
  - benefit_message: Payment is made without leaving your virtual store using your credit card and cash payment networks.
  - image: /nuvemshop/nuvemshop-payment.png 

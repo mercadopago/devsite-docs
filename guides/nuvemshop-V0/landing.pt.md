@@ -13,9 +13,9 @@ bullet_section_with_media:
  - type: normal
  - message: Com o módulo do Mercado Pago você pode configurar o pagamento utilizando:
  - benefit_title: Checkout Pro
- - benefit_message: O pagamento é realizado na página do Mercado Pago e os compradores poderão pagar usando uma conta Mercado Pago, facilitando o pagamento com cartão crédito, boleto bancário (ou saldo da conta do Mercado Pago) e Pix.
+ - benefit_message: Os compradores poderão pagar usando uma conta Mercado Pago e todo o processo de compra será realizado em nosso ambiente, facilitando o pagamento com cartão crédito, de débito e outros meios de pagamento (Pix, boleto bancário, pagamento em lotérica sem boleto, saldo na conta Mercado Pago e Mercado Crédito).
  - benefit_title: Checkout Transparente
- - benefit_message: O pagamento é realizado sem sair da sua loja virtual cartão crédito, boleto bancário (ou saldo da conta do Mercado Pago) e Pix.
+ - benefit_message: Payment is made without leaving your virtual store with Pix, credit card and bank slip.
  - image: /nuvemshop/nuvemshop-payment.png  
 ---
 ------------
@@ -27,9 +27,9 @@ bullet_section_with_media:
  - type: normal
  - message: Com o módulo do Mercado Pago você pode configurar o pagamento utilizando:
  - benefit_title: Checkout Pro
- - benefit_message: O pagamento é realizado na página do Mercado Pago e os compradores poderão pagar usando uma conta Mercado Pago, facilitando o pagamento com cartão crédito, transferência bancária e redes de pagamento em efectivo.
+ - benefit_message: Os compradores poderão pagar usando uma conta Mercado Pago e todo o processo de compra será realizado em nosso ambiente, facilitando o pagamento com cartão crédito, de débito e outros meios de pagamento (redes de pagamento em efectivo e Mercado Crédito)
  - benefit_title: Checkout API
- - benefit_message: O pagamento é realizado sem sair da sua loja virtual com cartão crédito e redes de pagamento em efectivo.
+ - benefit_message: O pagamento é realizado sem sair da sua loja virtual com cartões (crédito e débito) e redes de pagamento em efectivo.
  - image: /nuvemshop/nuvemshop-payment.png  
 ---
 ------------
