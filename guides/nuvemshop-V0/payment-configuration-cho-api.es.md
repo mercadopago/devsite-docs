@@ -35,10 +35,12 @@ Para integrar Checkout API, siga los pasos a continuación.
 ------------ 
 ----[mla, mpe, mco, mlu, mlc]---- 
 * **Tarjeta de crédito y débito**. Elige también el número máximo de cuotas permitidas.
+* **Tarjeta de débito**.
 * **Redes de pago en efectivo**. Elige también el número de días para vencimiento del ticket (incluye sábado y domingo).
 ------------
 ----[mlm]---- 
-* **Tarjeta de crédito y débito**. Elige también el número máximo de meses permitidos.
+* **Tarjeta de crédito**. Elige también el número máximo de meses permitidos.
+* **Tarjeta de débito**. Elige también el número máximo de meses permitidos.
 * **Redes de pago en efectivo**. Elige también el número de días para vencimiento del ticket (incluye sábado y domingo).
 ------------
 9. Finalmente, haz clic en **Guardar configuraciones**.
