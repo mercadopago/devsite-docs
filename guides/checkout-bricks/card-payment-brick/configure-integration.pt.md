@@ -94,7 +94,7 @@ const renderCardPaymentBrick = async (bricksBuilder) => {
 
   const settings = {
     initialization: {
-      amount: 100, // valor total a ser pago
+      amount: 10.000, // valor total a ser pago
     },
     callbacks: {
       onReady: () => {
