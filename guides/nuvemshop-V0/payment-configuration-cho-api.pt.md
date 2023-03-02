@@ -18,7 +18,7 @@ Para integrar o Checkout API, siga os passos abaixo.
 3. Na lista de meios de pagamentos, localize o plugin do Mercado Pago, clique em **Configurar** e, em seguida, em **Editar**.
 4. Para aplicar um valor mínimo de parcelas para os pagamentos, informe o valor no campo disponível.
 ----[mla, mlm, mpe, mco, mlu, mlc]---- 
-5. Se deseja aplicar descontos para pagamentos com Checkout transparente (----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------), **informe a porcentagem** para pagamentos em efectivo e cartões (crédito e débito).
+5. Se deseja aplicar descontos para pagamentos com Checkout transparente ( ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------ ), **informe a porcentagem** para pagamentos em efectivo e cartões (crédito e débito).
 ------------
 ----[mlb]---- 
 5. Se deseja aplicar descontos para pagamentos com Checkout transparente, **informe a porcentagem** para pagamentos em boleto, cartão de crédito e Pix.
@@ -40,7 +40,11 @@ Para integrar o Checkout API, siga os passos abaixo.
 ------------
 9. Por fim, clique em **Salvar alterações**.
 
+<center>>
+
 ![Payments Checkout Transparente - Nuvemshop](/images/nuvemshop/cho-api-pt.gif)
+
+</center>>
 
 ----[mlb]----
 Pronto! O Checkout Transparente está pronto para receber os pagamentos da sua loja.
