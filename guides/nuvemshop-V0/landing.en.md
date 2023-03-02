@@ -49,7 +49,7 @@ available_countries: mlb, mla, mlm
 ----[mlb]----
 
 ---
-available_payments: credit, mercadopago, boleto, pix
+available_payments: credit, debit, mercadopago, boleto, pix
 
 ---
 ------------
@@ -57,7 +57,7 @@ available_payments: credit, mercadopago, boleto, pix
 ----[mla]---- 
 
 ---
-available_payments: credit, mercadopago, efectivo, atm
+available_payments: credit, debit, mercadopago, efectivo, atm
 
 ----
 ------------
@@ -65,7 +65,7 @@ available_payments: credit, mercadopago, efectivo, atm
 ----[mlm]---- 
 
 ---
-available_payments: credit, mercadopago, efectivo, atm
+available_payments: credit, debit, mercadopago, efectivo, atm
 
 ----
 ------------
@@ -73,7 +73,7 @@ available_payments: credit, mercadopago, efectivo, atm
 ----[mlu]---- 
 
 ---
-available_payments: credit, mercadopago, efectivo, atm
+available_payments: credit, debit, mercadopago, efectivo, atm
 
 ----
 ------------
@@ -81,7 +81,7 @@ available_payments: credit, mercadopago, efectivo, atm
 ----[mco]---- 
 
 ---
-available_payments: credit, mercadopago, efectivo, atm
+available_payments: credit, debit, mercadopago, efectivo, atm
 
 ----
 ------------
@@ -89,7 +89,7 @@ available_payments: credit, mercadopago, efectivo, atm
 ----[mlc]---- 
 
 ---
-available_payments: credit, mercadopago, efectivo, atm
+available_payments: credit, debit, mercadopago, efectivo, atm
 
 ----
 ------------
@@ -97,8 +97,9 @@ available_payments: credit, mercadopago, efectivo, atm
 ----[mpe]---- 
 
 ---
-available_payments: credit, mercadopago, efectivo, atm
+available_payments: credit, debit, mercadopago, efectivo, atm
 
 ----
 ------------
+
 > For details of accepted payment methods in each country, check the full list with [payment methods availability.](/developers/en/docs/sales-processing/payment-methods)
