@@ -161,7 +161,7 @@ curl -X POST \
           "payer": {
             "email": "test_user_19653727@testuser.com"
           },
-          "capture": "false"
+          "capture": false
     }'
 ```
 ]]]
@@ -183,7 +183,10 @@ La respuesta indica que el pago se encuentra autorizado y pendiente de captura.
 ]]]
 
 
-Además, también es posible que retorne como `rechazado` o `pendiente`. Ten en cuenta que tu cliente no podrá utilizar los valores autorizados hasta que se capturen. Recomendamos realizar la captura lo antes posible.
+Además, también es posible que retorne como `rechazado` o `pendiente`. En caso de que retorne como `pendiente`, deberás prestar atención a las notificaciones para saber cuál es el estado final del pago.
+
+Ten en cuenta que tu cliente no podrá utilizar los valores autorizados hasta que se capturen. Recomendamos realizar la captura lo antes posible.
+
 
 ----[mla, mlm]----
 > WARNING

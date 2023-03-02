@@ -162,7 +162,7 @@ curl -X POST \
 "payer": {
 "email": "test_user_19653727@testuser.com"
 },
-"capture": "false"
+"capture": false
 }'
 ```
 ]]]
@@ -185,7 +185,9 @@ The response indicates that the payment is authorized and pending capture.
 ```
 ]]]
 
-In addition, it is also possible to return as `rejected` or `pending`. Please note that authorized values cannot be used by your client until they are captured. We recommend capturing as soon as possible.
+In addition, it is also possible to return as `rejected` or `pending`. In case it returns as `pending`, you should pay attention to the notifications to know what the final status of the payment is.
+
+Please note that authorized values cannot be used by your client until they are captured. We recommend capturing as soon as possible.
 
 
 ----[mla, mlm]----
