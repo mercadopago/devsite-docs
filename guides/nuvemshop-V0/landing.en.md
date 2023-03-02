@@ -38,7 +38,7 @@ bullet_section_with_media:
  
 >>>> Availability by country <<<<
 ---
-available_countries: mlb, mlm
+available_countries: mlb, mla, mlm
 
 ---
  
