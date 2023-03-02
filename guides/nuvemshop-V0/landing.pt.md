@@ -15,7 +15,7 @@ bullet_section_with_media:
  - benefit_title: Checkout Pro
  - benefit_message: Os compradores poderão pagar usando uma conta Mercado Pago e todo o processo de compra será realizado em nosso ambiente, facilitando o pagamento com cartão crédito, de débito e outros meios de pagamento (Pix, boleto bancário, pagamento em lotérica sem boleto, saldo na conta Mercado Pago e Mercado Crédito).
  - benefit_title: Checkout Transparente
- - benefit_message: Payment is made without leaving your virtual store with Pix, credit card and bank slip. O pagamento é realizado sem sair da sua loja virtual com Pix, cartão de crédito e boleto.
+ - benefit_message: O pagamento é realizado sem sair da sua loja virtual com Pix, cartão de crédito e boleto.
  - image: /nuvemshop/nuvemshop-payment.png  
 ---
 ------------

@@ -59,7 +59,7 @@ Para integrar o Checkout Pro, siga os passos abaixo.
 3. Na lista de meios de pagamentos, localize o plugin do Mercado Pago, clique em **Configurar** e, em seguida, em **Editar**.
 4. Para aplicar um valor mínimo de parcelas para os pagamentos, informe o valor no campo disponível.
 ----[mla, mlm, mpe, mco, mlu, mlc]---- 
-5. Se deseja aplicar descontos para pagamentos com Checkout transparente ( ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------ ), **informe a porcentagem** para pagamentos em efectivo e cartões (crédito e débito).
+5. Se deseja aplicar descontos para pagamentos com Checkout transparente (Checkout API), **informe a porcentagem** para pagamentos em efectivo e cartões (crédito e débito).
 ------------
 ----[mlb]---- 
 5. Se deseja aplicar descontos para pagamentos com Checkout transparente, **informe a porcentagem** para pagamentos em boleto, cartão de crédito e Pix.

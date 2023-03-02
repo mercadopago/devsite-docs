@@ -19,7 +19,7 @@ Para integrar Checkout API, siga los pasos a continuación.
 3. En la lista de métodos de pago, localiza el plugin Mercado Pago, haz clic en **Configurar** y, luego, en **Editar**.
 4. Para aplicar un monto mínimo de cuotas para los pagos, informa el monto en el campo disponible. 
 ----[mla, mlm, mpe, mco, mlu, mlc]---- 
-5. Si deseas aplicar descuentos para pagos con Checkout transparente ( ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------ ), **informa la percentage** para pagos en efectivo y tarjetas (crédito y débito).
+5. Si deseas aplicar descuentos para pagos con Checkout transparente (Checkout API), **informa la percentage** para pagos en efectivo y tarjetas (crédito y débito).
 ------------
 ----[mlb]---- 
 5. Si deseas aplicar descuentos para pagos con Checkout transparente, **informa la percentage** para pagos en boleto, tarjeta de crédito y Pix.
