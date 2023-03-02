@@ -40,11 +40,11 @@ Para integrar o Checkout API, siga os passos abaixo.
 ------------
 9. Por fim, clique em **Salvar alterações**.
 
-<center>>
+<center>
 
 ![Payments Checkout Transparente - Nuvemshop](/images/nuvemshop/cho-api-pt.gif)
 
-</center>>
+</center>
 
 ----[mlb]----
 Pronto! O Checkout Transparente está pronto para receber os pagamentos da sua loja.

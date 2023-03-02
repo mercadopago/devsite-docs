@@ -84,6 +84,6 @@ Para integrar o Checkout Pro, siga os passos abaixo.
 
 ![Payments Checkout Pro - Nuvemshop](/images/nuvemshop/cho-pro-pt.gif)
 
-</center>>
+</center>
 
 Pronto! O Checkout Pro do Mercado Pago está pronto para receber os pagamentos da sua loja.

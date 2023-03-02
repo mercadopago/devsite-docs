@@ -84,10 +84,10 @@ Para integrar Checkout Pro, siga los pasos a continuación.
 ------------
 9. Finalmente, haz clic en **Guardar cambios**.
 
-<center>>
+<center>
 
 ![Payments Checkout Pro - Nuvemshop](/images/nuvemshop/cho-pro-es.gif)
 
-</center>>
+</center>
 
 ¡Listo! El Checkout Pro está listo para recibir pagos de tu tienda.
