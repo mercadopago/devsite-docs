@@ -13,8 +13,12 @@ Para integrarte con Mercado Pago, sigue los procedimientos a continuación.
 3. De tu consentimiento ante los permisos de aplicación y, por fin, haz clic en **Aceptar**
 4. Vas a ser **redirigido a Mercado Pago para que ingreses con los datos de tu cuenta**. Para autorizar la conexión, haz clic en **Permitir**.
 
+<center>
+
 ![Integration - Nuvemshop](/images/nuvemshop/plugin-mp-es.gif)
- 
+
+</center>
+
 Una vez que haya realizado la configuración inicial, configure las experiencias de pago de su tienda de acuerdo con el tipo de pago seleccionado.
 
 > WARNING
