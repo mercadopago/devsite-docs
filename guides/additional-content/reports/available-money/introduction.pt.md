@@ -31,7 +31,7 @@ O relatório de Dinheiro disponível é um **relatório para ser baixado que te 
 >
 > Importante
 >
-> A partir de 1 de março de 2023, não será mais possível criar novos relatórios de **Dinheiro disponível**. Para continuar controlando as transferências, saques e movimentações do seu saldo disponível, por favor,[use o relatório Liberações.](http://bit.ly/41KIWC4)
+> A partir de 1 de março de 2023, não será mais possível criar novos relatórios de **Dinheiro disponível**. Para continuar controlando as transferências, saques e movimentações do seu saldo disponível, [utilize o relatório Liberações.](http://bit.ly/41KIWC4)
 ------------
 
 ## Como baixar o relatório?
