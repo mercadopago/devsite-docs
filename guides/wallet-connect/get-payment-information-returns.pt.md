@@ -61,7 +61,6 @@ Código de status: 404
 ]]]
 
 
-
 ## Falha devido a Client ID not found in whitelist.
 
 [[[
