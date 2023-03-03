@@ -49,7 +49,6 @@ Código de status: 200
 ```
 ]]]
 
-
 ## Resposta com falha: Bad request
 
 [[[
