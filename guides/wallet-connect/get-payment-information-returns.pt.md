@@ -78,7 +78,6 @@ Código de status: 404
 ]]]
 
 
-
 ## Falha devido a collector_id not found in the merchant list.
 
 [[[
