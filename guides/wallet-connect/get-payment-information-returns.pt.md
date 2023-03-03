@@ -4,7 +4,6 @@ Ao executar o request para obter informações de pagamento, é possível que se
 
 ## Resposta de sucesso 
 
-
 [[[
 ```Json
 ===
