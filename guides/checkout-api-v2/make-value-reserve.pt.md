@@ -153,17 +153,19 @@ curl -X POST \
     -H 'content-type: application/json' \
     -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
     'https://api.mercadopago.com/v1/payments' \
-    -d '{
-          "transaction_amount": 100,
-          "token": "ff8080814c11e237014c1ff593b57b4d",
-          "description": "Título do produto",
-          "installments": 1,
-          "payment_method_id": "visa",
-          "payer": {
-            "email": "test_user_19653727@testuser.com"
-          },
-          "capture": false
-    }'
+    -d '
+{
+   "transaction_amount":100,
+   "token":"ff8080814c11e237014c1ff593b57b4d",
+   "description":"Product title",
+   "installments":1,
+   "payment_method_id":"visa",
+   "payer":{
+      "email":"test_user_3931694@testuser.com"
+   },
+   "capture":false
+}'
+
 ```
 ]]]
 

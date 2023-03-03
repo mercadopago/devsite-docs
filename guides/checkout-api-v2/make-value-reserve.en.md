@@ -149,21 +149,23 @@ payment = payment_response["response"]
 ```curl
 
 curl -X POST \
--H 'accept: application/json' \
--H 'content-type: application/json' \
--H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
-'https://api.mercadopago.com/v1/payments' \
--d '{
-"transaction_amount": 100,
-"token": "ff8080814c11e237014c1ff593b57b4d",
-"description": "Product title",
-"installations": 1,
-"payment_method_id": "visa",
-"payer": {
-"email": "test_user_19653727@testuser.com"
-},
-"capture": false
+    -H 'accept: application/json' \
+    -H 'content-type: application/json' \
+    -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/payments' \
+    -d '
+{
+   "transaction_amount":100,
+   "token":"ff8080814c11e237014c1ff593b57b4d",
+   "description":"Product title",
+   "installments":1,
+   "payment_method_id":"visa",
+   "payer":{
+      "email":"test_user_3931694@testuser.com"
+   },
+   "capture":false
 }'
+
 ```
 ]]]
 
