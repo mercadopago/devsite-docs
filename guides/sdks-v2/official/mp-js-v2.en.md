@@ -59,5 +59,4 @@ const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
 
 >
 >Learn more about the Public Key at [Credentials](/developers/en/docs/credentials).
->
 
