@@ -15,7 +15,6 @@ Veja a seção [Criar payer token](/developers/pt/docs/wallet-connect/integratio
 
 Nesta documentação você encontra os seguintes endpoints para integração com  Advanced Payments:
 
-
 * [Capturar pagamento](/developers/pt/docs/wallet-connect/advanced-payments/capture-payment)
 * [Idempotência](/developers/pt/docs/wallet-connect/advanced-payments/idempotency)
 * [Reembolsar pagamento (total e parcial)](/developers/pt/docs/wallet-connect/advanced-payments/refund-payment)
