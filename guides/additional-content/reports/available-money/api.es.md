@@ -2,7 +2,7 @@
 
 Genera el informe de dinero liberado manualmente tantas veces como desees o prográmalo de acuerdo con la frecuencia que elijas a través de nuestra API.
 
-----[mco, mlc, mla, mlm]----
+----[mco, mlc, mla, mlm, mlb]----
 > WARNING
 >
 > Importante

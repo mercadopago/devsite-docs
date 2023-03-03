@@ -2,7 +2,7 @@
 
 Gere manualmente o relatório de dinheiro ----[mla]----liquidado------------ ----[mlm, mlb, mlc, mco, mlu, mpe]----liberado------------ quantas vezes quiser ou programe-o de acordo com a frequência que você escolher por meio de nossa API.
 
-----[mco, mlc, mlu, mpe, mla, mlm]----
+----[mco, mlc, mlu, mpe, mla, mlm, mlb]----
 > WARNING
 >
 > Importante

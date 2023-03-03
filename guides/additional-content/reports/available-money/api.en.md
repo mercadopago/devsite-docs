@@ -2,7 +2,7 @@
 
 Generate the Released money report manually as many times as you want or schedule it according to the desired frequency through our API.
 
-----[mco, mlc, mlu, mpe, mla, mlm]----
+----[mco, mlc, mlu, mpe, mla, mlm, mlb]----
 > WARNING
 >
 > Important
