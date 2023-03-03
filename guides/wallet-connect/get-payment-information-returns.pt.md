@@ -43,7 +43,6 @@ Código de status: 200
 ```
 ]]]
 
-
 ## Falha devido a Advanced payment not found.
 
 [[[
