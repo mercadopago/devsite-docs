@@ -26,6 +26,7 @@ bullet_section_with_media:
 To install the frontend SDK, you must include MercadoPago.js in the HTML of your application, as shown in the code below or install the SDK JS library by npm.
 
 [[[
+
 ```html
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 
