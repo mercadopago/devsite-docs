@@ -25,7 +25,6 @@ https://api.mercadopago.com/v1/advanced_payments/10458724/refunds
 
 Ao executar o request para um reembolso parcial, é possível que se retornem diferentes respostas. Na próxima seção você encontra o detalhe de cada uma delas, bem como as possíveis causas.
 
-
 ### Resposta de sucesso
 
 [[[
