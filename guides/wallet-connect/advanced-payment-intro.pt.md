@@ -4,7 +4,6 @@ Advanced Payments são pagamentos específicos para Wallet Connect nos quais o i
 
 Veja a seção [Criar payer token](/developers/pt/docs/wallet-connect/integration-configuration/create-payer-token) para mais informações.
 
-
 > WARNING
 >
 > Importante
