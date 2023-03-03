@@ -62,4 +62,3 @@ const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
 >
 
 
-
