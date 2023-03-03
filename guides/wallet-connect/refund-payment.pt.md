@@ -4,7 +4,6 @@ Reembolsos são transações realizadas quando determinada cobrança é revertid
 
 Com Wallet Connect, também é possível reembolsar um Advanced Payment. Esta operação mudará o status para `refunded`.
 
-
 > WARNING
 >
 > Importante
