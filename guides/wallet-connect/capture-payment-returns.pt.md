@@ -96,7 +96,6 @@ Código de status: 201
 ]]]
 
 
-
 ## Pagamento rejeitado devido a dinheiro insuficiente na conta
 
 [[[
