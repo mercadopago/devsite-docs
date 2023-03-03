@@ -60,4 +60,3 @@ const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
 
 >
 > Conoce más sobre la Public Key en [Credenciales](/developers/es/docs/credentials).
->
