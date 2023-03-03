@@ -56,7 +56,6 @@ Código de status: 201
 > Para mais informações sobre o motivo da recusa de pagamento, veja o campo `payment.status_detail`.
 
 
-
 [[[
 ```Json
 ===
