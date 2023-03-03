@@ -132,7 +132,7 @@ Para capturar um valor inferior ao reservado, envie o valor que deve ser captura
 >
 > Importante
 >
-> Não é possível capturar um valor superior ao reservado, para isso é preciso cancelar a reserva e gerar uma nova.
+> Não é possível capturar um valor superior ao reservado, sendo necessário cancelar a reserva e gerar uma nova.
 ------------
 
  
