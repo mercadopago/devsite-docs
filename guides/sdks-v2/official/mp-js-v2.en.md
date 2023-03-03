@@ -19,7 +19,6 @@ bullet_section_with_media:
  - image:/sdk/mpjsv2-3.png
 ---
 
-
 --- mini_landing_separator ---
 
 >>>> Installation <<<<
