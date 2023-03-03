@@ -137,7 +137,6 @@ Código de status: 201
 ]]]
 
 
-
 ## Pagamento rejeitado por falta de autorização
 
 Este erro é retornado quando o cliente cancela o agreement.
