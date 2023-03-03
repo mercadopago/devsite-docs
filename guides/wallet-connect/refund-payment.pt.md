@@ -13,4 +13,3 @@ Com Wallet Connect, também é possível reembolsar um Advanced Payment. Esta op
 O diagrama abaixo ilustra o fluxo de reembolso de um Advanced Payment.
 
 ![refund-a-payment](/images/wallet-connect/refund-a-payment.pt.png)
-
