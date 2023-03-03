@@ -22,7 +22,6 @@ Ao enviar o _request_ ao endpoint de Advanced Payments, garanta que os seguintes
 | wallet_payment  | Indica que é um advanced payment de um vendedor com Wallet Connect previamente vinculado.  |
 | payer  | Informação do pagador requerida para criação do advanced payment  |
 
-
 Com esses parâmetros em mãos, envie um POST ao endpoint /v1/advanced_payments e execute a requisição ou, se preferir, utilize o `curl` abaixo.
 
 [[[
