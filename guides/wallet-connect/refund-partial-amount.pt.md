@@ -73,7 +73,6 @@ Código de status: 400
 ```
 ]]]
 
-
 ### Resposta com falha: Not found
 
 [[[
