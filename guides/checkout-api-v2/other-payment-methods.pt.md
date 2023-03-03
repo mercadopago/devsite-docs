@@ -17,7 +17,7 @@ Com o Checkout Transparente do Mercado Pago, também é possível oferecer pagam
 ------------
 
 ----[mco]----
-Com o Checkout Transparente do Mercado Pago, também é possível oferecer pagamentos com **Efecty** e **PSE**.
+Com o Checkout Transparente do Mercado Pago, também é possível oferecer pagamentos com **Efecty**.
 ------------
 
 ----[mlu]----
@@ -103,7 +103,7 @@ Para oferecer pagamentos com **PagoEfectivo**, siga as etapas abaixo.
 ------------
 
 ----[mco]----
-Para oferecer pagamentos com **Efecty** e/ou **PSE**, siga as etapas abaixo.
+Para oferecer pagamentos com **Efecty**, siga as etapas abaixo.
 ------------
 
 ----[mlu]----
@@ -1154,13 +1154,13 @@ Se o vencimento de um pagamento ocorre em 30 dias, o cancelamento é automático
 
 ----[mco]----
 
-Para configurar pagamentos com **Efecty** e/ou **PSE**, envie um **POST** com os devidos parâmetros ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, utilize um de nossos SDKs abaixo.
+Para configurar pagamentos com **Efecty**, envie um **POST** com os devidos parâmetros ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, utilize um de nossos SDKs abaixo.
 
 > WARNING
 >
 > Importante
 >
-> Para receber pagamentos com **PSE** é preciso enviar, na criação do pagamento, o parâmetro `financial_institution` com o número da instituição financeira responsável pelo processamento do pagamento. 
+> Para esta etapa, ao realizar a requisição via API ou SDKs, é necessário enviar sua Chave Privada - Access token. 
 
 [[[
 ```php
