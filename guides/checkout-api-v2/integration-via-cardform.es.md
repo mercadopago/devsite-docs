@@ -444,19 +444,3 @@ La respuesta devolverá el siguiente resultado
 
 ------------
 
-> PREV_STEP_CARD_ES
->
-> Requisitos previos
->
-> Consulta los requisitos previos que se necesitan para integrar Checkout API.
->
-> [Integrar Checkout API](/developers/es/docs/checkout-api/prerequisites)
-
-
-> NEXT_STEP_CARD_ES
->
-> Otros medios de pagos
->
-> Descubre las otras opciones de pago disponibles para la integración.
->
-> [Otros medios de pagos](/developers/es/docs/checkout-api/integration-configuration/other-payment-methods)

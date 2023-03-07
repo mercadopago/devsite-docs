@@ -14,19 +14,3 @@ With the credentials in hand, follow the steps below to make the test purchase.
 3. Confirm the purchase.
 
 Done! Once these steps are finished, the integration will be complete and you will be able to use your production credentials to use the Checkout API. For more information, see the section [Requirements to go to production](/developers/en/docs/checkout-api/integration-test/go-to-production-requirements)
-
-> PREV_STEP_CARD_EN
->
-> Payment management
->
-> Learn how to manage your store payments.
->
-> [Payment management](/developers/en/docs/checkout-api/payment-management)
-
-> NEXT_STEP_CARD_EN
->
-> Test cards
->
-> Use test cards to simulate the entire purchase flow
->
-> [Test Cards](/developers/en/docs/checkout-api/integration-test/test-cards)

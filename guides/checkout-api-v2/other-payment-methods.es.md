@@ -1558,19 +1558,3 @@ Para obtener más información, consulte la sección [Reembolsos y cancelaciones
 
 ------------
 
-> PREV_STEP_CARD_ES
->
-> Requisitos Previos
->
-> Consulta los requisitos previos que se necesitan para integrar Checkout API.
->
-> [Integrar Checkout API](/developers/es/docs/checkout-api/prerequisites)
-
-
-> NEXT_STEP_CARD_ES
->
-> Prueba de integración
->
-> Consulta cómo probar la integración de Checkout API en tu tienda.
->
-> [Prueba de integración](/developers/es/docs/checkout-api/integration-test/make-test-purchase)

@@ -13,19 +13,3 @@ To integrate Checkout API, it is important to meet the requirements shown below.
 
 If all the prerequisites have been met, you can perform the Checkout API integration.
 
-> PREV_STEP_CARD_EN
->
-> Types of Integration
->
-> See the types of integration available for each payment method.
->
-> [Types of Integration](/developers/en/docs/checkout-api/types-of-integration)
-
-
-> NEXT_STEP_CARD_EN
->
-> Integration configuration
->
-> Learn how to perform the Checkout API integration for card payments.
->
-> [Integration configuration](/developers/en/docs/checkout-api/integration-configuration/card/integrate-via-cardform)
