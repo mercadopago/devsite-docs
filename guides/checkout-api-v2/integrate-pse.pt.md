@@ -196,7 +196,7 @@ Para configurar pagamentos com **PSE**, envie um **POST** com os devidos parâme
 [[[
 ```php
 
-
+<?php
 require '../vendor/autoload.php';
 
 
@@ -472,7 +472,7 @@ Os seguintes campos para enviar um pagamento são **obrigatórios** e você deve
 
 |                   CAMPO                   |                                                                                                         DESCRIÇÃO                                                                                                         | POSSÍVEIS VALORES/VALIDAÇÕES | CHAMADO PARA OBTER OS VALORES                                                                                      |   |
 |:-----------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|------------------------------|--------------------------------------------------------------------------------------------------------------------|---|
-| transaction_details.financial_institution | Banco informado no POST para efetuar a transferência eletrônica. A lista de bancos deve ser mostrada ao usuário e permitida a seleção. A lista é atualizada, por isso é recomendável consumir as informações a cada hora. | -                            | https://api.mercadolibre.com/v1/payment_methods/search?public_key=**YOUR_PUBLIC_KEY**                                  |   |
+| transaction_details.financial_institution | Banco informado no POST para efetuar a transferência eletrônica. A lista de bancos deve ser mostrada ao usuário e permitida a seleção. A lista é atualizada, por isso é recomendável consumir as informações a cada hora. | -                            | https://api.mercadolibre.com/v1/payment_methods/search?public_key=YOUR_PUBLIC_KEY                                  |   |
 | payer.entity_type                         | Tipo de pessoa, física ou jurídica.                                                                                                                                                                                       | individual o association     | -                                                                                                                  |   |
 | payer.identification                      | Tipo e número do documento do comprador.                                                                                                                                                                                  | -                            | curl -X GET \ 'https://api.mercadopago.com/v1/identification_types' \ -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' |   |
 | additional_info.ip_address                | IP address do comprador, onde o pagamento é gerado.                                                                                                                                                                       | -                            | -                                                                                                                  |   |
