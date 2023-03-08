@@ -40,7 +40,7 @@ Este tipo de logística es utilizada por los restaurantes que han acordado que l
   * **cancelled/time_expired:** En este estado, el pedido se canceló debido a un timeout. Se produce cuando no se han realizado operaciones en los primeros cinco minutos desde la creación de la orden.
   * **ready_to_ship/printed:** Estado que indica que se ha aceptado un pedido.
   * **ready_to_ship/on_route_to_pickup:** Este estado indica que el repartidor se dirige al restaurante. Es importante tener en cuenta que los pedidos pueden tener un repartidor incluso sin que el pedido haya sido aceptado, pero aún así es necesario aceptar el pedido dentro de los 5 minutos, de lo contrario terminará siendo cancelado por timeout.
-  * **ready_to_ship/picking_up:** El Estado indica que el repartidor ha llegado al restaurante y está recogiendo el pedido.
+  * **ready_to_ship/picking_up:** El estado indica que el repartidor ha llegado al restaurante y está recogiendo el pedido.
   * **shipped/out_for_delivery:** Indica que el repartidor ya ha salido a entregar el pedido.
   * **shipped/at_the_door:** Indica que el repartidor ha llegado al destino del pedido.
   * **delivered:** La entrega fue exitosa.
