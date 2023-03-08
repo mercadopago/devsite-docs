@@ -90,7 +90,7 @@ Uma vez instanciado, o Brick pode ser renderizado e ter todas as suas configura�
 Para renderizar o Brick, insira o código abaixo após o passo anterior e preencha os atributos conforme os comentários destacados neste mesmo código.
 
 ```javascript
-const renderStausScreenBrick = async (bricksBuilder) => {
+const renderStatusScreenBrick = async (bricksBuilder) => {
 const settings = {
   initialization: {
     paymentId: '1234567890', // id de pagamento gerado pelo Mercado Pago
@@ -110,7 +110,7 @@ window.statusBrickController = await bricksBuilder.create(
   settings
 );
 };
-renderStausScreenBrick(bricksBuilder);
+renderStatusScreenBrick(bricksBuilder);
 ```
 
 > O `paymentId` que deve ser enviado ao Brick para a sua inicialização é o id retornado pela API de [Pagamentos](/developers/pt/reference/payments/_payments/post) ao se gerar um pagamento com Mercado Pago.
