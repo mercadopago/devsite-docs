@@ -40,7 +40,7 @@ This type of logistics is used by restaurants that have agreed that logistics co
   * **cancelled/time_expired:** In this Status, the order was canceled due to timeout. It occurs when no operations have been performed in the first five minutos since the creation of the order.
   * **ready_to_ship/printed:** Status indicating that an order has been accepted.
   * **ready_to_ship/on_route_to_pickup:** This status indicates that the delivery person is on his way to the restaurant. It is important to note that orders can have a courier even without the order being accepted, but it is still necessary to accept the order within 5 minutes, otherwise it will end up being canceled due to timeout.
-  * **ready_to_ship/picking_up:** The Status indicates that the delivery person has arrived at the restaurant and is picking up the order.
+  * **ready_to_ship/picking_up:** The status indicates that the delivery person has arrived at the restaurant and is picking up the order.
   * **shipped/out_for_delivery:** Indicates that the delivery person has already left to deliver the order.
   * **shipped/at_the_door:** Indicates that the delivery person has arrived at the order's destination.
   * **delivered:** Delivery was successful.
