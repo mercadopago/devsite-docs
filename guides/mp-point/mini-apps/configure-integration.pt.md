@@ -1,141 +1,217 @@
-# Configure a integração  
+# Integração com o Mercado Pago
 
-Para configurar a integração do Card Payment Brick você precisa seguir os passos abaixo:
+Para se comunicar com o aplicativo do Mercado Pago, o Mini App deve utilizar alguns comandos que estarão disponíveis para uso somente após o carregamento do MiniApp. Veja mais informações na seção [Ciclo de vida dos Mini Apps]().
 
-1. [Criar container](#bookmark_criar_container)
-2. [Incluir e configurar a biblioteca MercadoPago.js](#bookmark_incluir_e_configurar_a_biblioteca_mercadopago.js)
-3. [Instanciar Brick](#bookmark_instanciar_brick)
-4. [Renderizar Brick](#bookmark_renderizar_brick)
+Todos os comandos disponíveis suportam os seguintes parâmetros:
 
-> Os passos são realizados no back-end ou no front-end. As pills **Client-Side** e **Server-Side** localizadas imediatamente ao lado do título te ajudam a identificar qual passo é realizado em qual instância. <br/></br>
-> <br/></br>
-> E, para ajudar, preparamos um [exemplo de código](/developers/pt/docs/checkout-bricks/card-payment-brick/code-example) completo da configuração do Card Payment Brick que você pode usar como modelo.
-
-> CLIENT_SIDE
->
-> h2
->
-> Criar container
-
-Você vai precisar criar um container para definir o local que o Brick será inserido na tela. A criação do container é feita inserindo um elemento (por exemplo, uma div) no código HTML da página no qual o Brick será renderizado (veja código abaixo). 
-
-> NOTE
->
-> Atenção
->
-> O valor exibido na propriedade `id` a seguir é apenas um exemplo, e pode ser alterado, mas deve sempre corresponder ao `id` indicado na renderização.
-
-```html
-  <div id="cardPaymentBrick_container"></div>
-```
-
-> CLIENT_SIDE
->
-> h2
->
-> Incluir e configurar a biblioteca MercadoPago.js
-
-**Utilize a nossa biblioteca oficial para acessar as funcionalidades do Mercado Pago** com segurança desde seu frontend.
-
-> NOTE
->
-> Atenção
->
-> O codigo JS pode ser incluido em uma tag `< script >` ou um arquivo JS separado.
-
-Você precisará instalar o SDK adicionando o seguinte em seu código HTML:
-
-```html
-<script src="https://sdk.mercadopago.com/js/v2"></script>
-```
-
-Em seguida, inicialize o SDK definindo sua [chave pública](/developers/pt/guides/additional-content/credentials/credentials) usando código JavaScript:
+| Parâmetro  | Tipo  | Obrigatório  | Descrição |
+| --- | --- | --- | --- |
+| method | string | true | set_title <br><br> payment_flow | 
+| args | objeto JSON  | depende do método | qualquer objeto JSON | 
+| callback | function | false | function <br><br> (result, error) | 
 
 ```javascript
-const mp = new MercadoPago('YOUR_PUBLIC_KEY');
+var exampleCommand =
+    {
+        "method": 'example',
+        "args": {
+            'arg1': value1
+         },
+         "callback": function(result, error) {
+             if (!result) {
+                 console.log("ERROR: wrong echo result");
+             } else {
+                 console.log("SUCCESS: echo arrives " + result);
+             }
+         }
+    }
+MobileWebKit.executeNative(exampleCommand)
 ```
-> CLIENT_SIDE
->
-> h2
->
-> Instanciar Brick
 
-Com o container criado e o SDK JS instalado, o próximo passo é instanciar o Brick builder, que permitirá gerar o Brick. Para instanciar o Brick, insira o código abaixo após a etapa anterior. 
+## Comandos
+
+### Configurar título da ActionBar (*set_title*)
+
+Permite atualizar o título da barra de ferramentas.
+
+| Parâmetro  | Tipo  | Obrigatório  | Valores possíveis | Descrição |
+| --- | --- | --- | --- | --- |
+| title | string | true | qualquer string | Texto a ser exibido na ActionBar. | 
 
 ```javascript
-const bricksBuilder = mp.bricks();
+{
+    "method": 'set_title',
+    "args": {
+        'title': title
+     }
+}
 ```
 
-> WARNING
->
-> Atenção
->
-> Durante a instanciação do Brick, é possível que apareçam diferentes erros. Para detalhamento de cada um deles, veja a seção [Possíveis erros.](/developers/pt/docs/checkout-bricks/additional-content/possible-errors)
+* **_back_**
 
-> CLIENT_SIDE
->
-> h2
->
-> Renderizar Brick
+Permite navegar para trás, podendo voltar para várias telas.
 
-Uma vez instanciado, o Brick pode ser renderizado e ter todas as suas configurações compiladas de modo que a estrutura final do Brick seja gerada.
-
-
-Para renderizar o Brick, insira o código abaixo após o passo anterior e preencha os atributos conforme os comentários destacados neste mesmo código.
+| Parâmetro  | Tipo  | Obrigatório  | Valores possíveis | Descrição |
+| --- | --- | --- | --- | --- |
+| screen | int | true | 0 < n < 50 | O número de telas para voltar, sendo por padrão = 1. | 
 
 ```javascript
-const renderCardPaymentBrick = async (bricksBuilder) => {
-
-  const settings = {
-    initialization: {
-      amount: 100, // valor total a ser pago
-    },
-    callbacks: {
-      onReady: () => {
-        /*
-          Callback chamado quando o Brick estiver pronto.
-          Aqui você pode ocultar loadings do seu site, por exemplo.
-        */
-      },
-      onSubmit: (cardFormData) => {
-        // callback chamado o usuário clicar no botão de submissão dos dados
-
-        // ejemplo de envío de los datos recolectados por el Brick a su servidor
-        return new Promise((resolve, reject) => {
-            fetch("/process_payment", { 
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(cardFormData)
-            })
-            .then((response) => {
-                // receber o resultado do pagamento
-                resolve();
-            })
-            .catch((error) => {
-                // lidar com a resposta de erro ao tentar criar o pagamento
-                reject();
-            })
-          });
-      },
-      onError: (error) => { 
-        // callback chamado para todos os casos de erro do Brick
-        console.error(error);
-      },
-    },
-  };
-  const cardPaymentBrickController = await bricksBuilder.create('cardPayment', 'cardPaymentBrick_container', settings);
-};
-renderCardPaymentBrick(bricksBuilder);
+{
+    "method": 'back',
+    "args": {
+        'screen': screens
+     }
+}
 ```
 
-O resultado de renderizar o Brick deve ser como na imagem abaixo:
+* `back_action`
 
-![cardform](checkout-bricks/card-form-pt.png)
+Permite alterar o comportamento do botão **Voltar**.
 
-> WARNING
->
-> Atenção
->
-> Para um controle eficaz do Brick, a função enviada no `onSubmit` deve sempre retornar uma Promise. Chame o `resolve()` apenas se o processamento em seu backend ocorreu com sucesso. Chame o `reject()` caso algum erro ocorra. Isso fará com que o Brick permita o preenchimento dos campos novamente e viabilize uma nova tentativa de pagamento. Ao chamar o método `resolve()` dentro da Promise do `onSubmit`, o Brick não permite novos pagamentos. Caso queira realizar um novo pagamento, deve-se criar uma nova instância do Brick.
+| Parâmetro  | Tipo  | Obrigatório  | Valores possíveis | Descrição |
+| --- | --- | --- | --- | --- |
+| type | String | true | back  <br><br> close | back: funciona como padrão de voltar a tela anterior. <br><br> close: fecha a tela.| 
+
+```javascript
+{
+    "method": 'back_action',
+    "args": {
+        'type': type
+     }
+}
+```
+
+### Fechar
+
+* `close`
+
+Permite fechar a tela do Mini App. 
+
+| Parâmetro  | Tipo  | Obrigatório  | Valores possíveis | Descrição |
+| --- | --- | --- | --- | --- |
+| nenhum | nenhum | nenhum | nenhum| nenhum |
+
+```javascript
+{
+    "method": 'close',
+    "args": {}
+}
+```
+
+### Histórico
+
+* `history`
+
+Permite obter o histórico de navegação.
+
+| Parâmetro  | Tipo  | Obrigatório  | Valores possíveis | Descrição |
+| --- | --- | --- | --- | --- |
+| - | - | - | - | - |
+
+```javascript
+{
+    "method": 'history',
+    "args": {}
+}
+```
+
+Exemplo de resposta:
+
+```
+{
+  "result": {
+    "serial_number": "SMARTPOS123044",
+    "brand_name": "PAX",
+    "model": "A910"
+  }
+}
+``` 
+
+### InformaçÕes do dispositivo
+
+* `info_device`
+
+Permite obter informações do dispositivo Point Smart, como: **número de série**, **marca** e **modelo**.
+
+| Parâmetro  | Tipo  | Obrigatório  | Valores possíveis | Descrição |
+| --- | --- | --- | --- | --- |
+| - | - | - | - | - |
+
+```javascript
+{
+    "method": 'info_device',
+    "args": {}
+}
+```
+
+Exemplo de resposta:
+
+```
+{
+  "result": {
+    "serial_number": "SMARTPOS123044",
+    "brand_name": "PAX",
+    "model": "A910"
+  }
+}
+``` 
+
+### InformaçÕes do dispositivo
+
+* `clear_history`
+
+Permite limpar histórico de navegação.
+
+| Parâmetro  | Tipo  | Obrigatório  | Valores possíveis | Descrição |
+| --- | --- | --- | --- | --- |
+| - | - | - | - | - |
+
+```javascript
+{
+    "method": 'clear_history',
+    "args": {},
+    "callback": callbackResult
+}
+
+function callbackResult(result, error) {
+   if (result == 'success') {
+       // Success call
+   } else {
+       //'error' has detailed info of error
+   }
+}
+```
+
+### Obter os métodos de pagamento disponíveis
+
+* `payment_methods`
+
+Permite obter as variantes de meios de pagamento permitidas para iniciar o fluxo de pagamento com um meio de pagamento específico. Todas as variantes de métodos de pagamento compatíveis com esta versão são: **cartões de crédito e débito**, **código QR**, **link de pagamento** e **voucher (cartões Sodexo)**.
+
+| Parâmetro  | Tipo  | Obrigatório  | Valores possíveis | Descrição |
+| --- | --- | --- | --- | --- |
+| - | - | - | - | - |
+
+```javascript
+getPaymentMethods(callback)
+
+function callbackResult(result, error) {
+    for (var method in result) {
+
+    }
+}
+```
+
+Exemplo de resposta:
+
+```
+{
+  "result": [
+    "credit",
+    "debit",
+    "voucher",
+    "qr",
+    "link"
+  ]
+}
+``` 
