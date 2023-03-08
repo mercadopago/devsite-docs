@@ -242,7 +242,6 @@ mercadopago.configurations.setAccessToken(config.access_token);
  
 var payment = req.body;
 
-
 var payment_data = {
  	transaction_amount: 5000,
  	description: 'Título del producto',
@@ -264,7 +263,6 @@ var payment_data = {
  	callback_url: 'http://www.your-site.com'
 };
 
-
 mercadopago.payment.save(payment_data)
  	.then(function(response) {
  		res.status(response.status).json({
@@ -283,13 +281,11 @@ mercadopago.payment.save(payment_data)
 
   PaymentClient client = new PaymentClient();
 
-
   IdentificationRequest identification =
   	IdentificationRequest.builder()
   	.type(request.getPayer().getIdentification().getType())
   	.number(request.getPayer().getIdentification().getNumber())
   	.build();
-
 
   PaymentPayerRequest payer =
   	PaymentPayerRequest.builder()
@@ -301,17 +297,14 @@ mercadopago.payment.save(payment_data)
   	.identification(identification)
   	.build();
 
-
   PaymentAdditionalInfoRequest additionalInfo =
   	PaymentAdditionalInfoRequest.builder()
   	.ipAddress("127.0.0.1")
   	.build();
 
-
   PaymentTransactionDetailsRequest transactionDetails = PaymentTransactionDetailsRequest.builder()
   	.financialInstitution("1009")
   	.build();
-
 
   PaymentCreateRequest paymentCreateRequest = PaymentCreateRequest.builder()
   	.transactionAmount(new BigDecimal(5000))
@@ -322,7 +315,6 @@ mercadopago.payment.save(payment_data)
   	.notificationUrl("https://your-site.com")
   	.payer(payer)
   	.build();
-
 
   client.create(paymentCreateRequest);
 ```
