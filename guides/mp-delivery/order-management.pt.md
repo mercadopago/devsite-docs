@@ -37,7 +37,7 @@ Essa modalidade de logística é utilizada por restaurantes que concordaram que 
   
   * **ready_to_ship/ready_to_print:** Nesse status, alguma ação deve ser realizada (aceitar ou cancelar) em no máximo 5 minutos, caso contrário o pedido será cancelado por timeout.
   * **cancelled/cancelled_manually:** Status indicando que uma operação de cancelamento foi executada no pedido.
-  * **cancelled/time_expired:** Nesse Status, o pedido foi cancelado por timeout devido ao fato de não ter sido realizada nenhuma operação nos primeiros 5 minutos desde sua criação.
+  * **cancelled/time_expired:** Nesse status, o pedido foi cancelado por timeout devido ao fato de não ter sido realizada nenhuma operação nos primeiros 5 minutos desde sua criação.
   * **ready_to_ship/printed:** Status que indica que um pedido foi aceito.
   * **ready_to_ship/on_route_to_pickup:** Esse status indica que o entregador está a caminho do restaurante. É importante observar que os pedidos podem ter um entregador mesmo sem o pedido estar aceito, mas ainda sim é necessário aceitar o pedido em até 5 minutos, caso contrário ele acabará sendo cancelado por timeout.
   * **ready_to_ship/picking_up:** Esse status indica que o entregador está retirando o pedido no restaurante.
