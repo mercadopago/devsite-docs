@@ -200,9 +200,7 @@ Para configurar pagamentos com **PSE**, envie um **POST** com os devidos parâme
 <?php
 require '../vendor/autoload.php';
 
-
 MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
-
 
 $payment = new MercadoPago\Payment();
 $payment->transaction_amount = 5000;
@@ -216,7 +214,6 @@ $payment->transaction_details = array(
 );
 $payment->callback_url = "http://www.your-site.com";
 
-
 $payer = new MercadoPago\Payer();
 $payer->email = $_POST['email'];
 $payer->identification = array(
@@ -225,16 +222,17 @@ $payer->identification = array(
 );
 $payer->entity_type = "individual";
 
-
 $payment->payer = $payer;
-
 
 $payment->save();
 
+$response = array(
+    'status' => $payment->status,
+    'status_detail' => $payment->status_detail,
+    'id' => $payment->id
+);
+echo json_encode($response);
 
-echo $payment->status;
-echo " ";
-echo $payment->id;
 ?>
 ```
 ```node
@@ -471,13 +469,13 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
 
 Os seguintes campos para enviar um pagamento são **obrigatórios** e você deve preenchê-los seguindo as especificações da tabela abaixo:
 
-|                   Campo                   |                                                                                                         Descrição                                                                                                         | Possíveis valores /Validações | Chamado para obter os valores                                                                                      |   |
-|:-----------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|------------------------------|--------------------------------------------------------------------------------------------------------------------|---|
-| transaction_details.financial_institution | Banco informado no POST para efetuar a transferência eletrônica. A lista de bancos deve ser mostrada ao usuário e permitida a seleção. A lista é atualizada, por isso é recomendável consumir as informações a cada hora. | -                            | https://api.mercadolibre.com/v1/payment_methods/search?public_key=YOUR_PUBLIC_KEY                                  |   |
-| payer.entity_type                         | Tipo de pessoa, física ou jurídica.                                                                                                                                                                                       | *individual* o *association*     | -                                                                                                                  |   |
-| payer.identification                      | Tipo e número do documento do comprador.                                                                                                                                                                                  | -                            | curl -X GET \ 'https://api.mercadopago.com/v1/identification_types' \ -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' |   |
-| additional_info.ip_address                | IP address do comprador, onde o pagamento é gerado.                                                                                                                                                                       | -                            | -                                                                                                                  |   |
-| callback_url                              | Página onde o comprador é redirecionado por padrão após efetuar o pagamento dentro da página do banco, quando o comprador indica que deseja retornar à loja.                                                              | -                            | -                                                                                                                  |   |
+|                   Campo                   |                                                                                                         Descrição                                                                                                         | Possíveis valores /Validações | Chamado para obter os valores                                                                                      |
+|:-----------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|------------------------------|--------------------------------------------------------------------------------------------------------------------|
+| transaction_details.financial_institution | Banco informado no POST para efetuar a transferência eletrônica. A lista de bancos deve ser mostrada ao usuário e permitida a seleção. A lista é atualizada, por isso é recomendável consumir as informações a cada hora. | -                            | https://api.mercadolibre.com/v1/payment_methods/search?public_key=YOUR_PUBLIC_KEY                                  |
+| payer.entity_type                         | Tipo de pessoa, física ou jurídica.                                                                                                                                                                                       | *individual* o *association*     | -                                                                                                                  |
+| payer.identification                      | Tipo e número do documento do comprador.                                                                                                                                                                                  | -                            | curl -X GET \ 'https://api.mercadopago.com/v1/identification_types' \ -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' |
+| additional_info.ip_address                | IP address do comprador, onde o pagamento é gerado.                                                                                                                                                                       | -                            | -                                                                                                                  |
+| callback_url                              | Página onde o comprador é redirecionado por padrão após efetuar o pagamento dentro da página do banco, quando o comprador indica que deseja retornar à loja.                                                              | -                            | -                                                                                                                  |
 
 A resposta mostrará o **status pendente** até que o comprador realize o pagamento. Além disso, na resposta à requisição, o parâmetro `external_resource_url` retornará uma URL que contém as instruções para que o comprador realize o pagamento. Você pode redirecioná-lo para este mesmo link para conclusão do fluxo de pagamento.
 

@@ -202,9 +202,7 @@ To configure payments with **PSE**, send a **POST** with the appropriate paramet
 <?php
 require '../vendor/autoload.php';
 
-
 MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
-
 
 $payment = new MercadoPago\Payment();
 $payment->transaction_amount = 5000;
@@ -218,7 +216,6 @@ $payment->transaction_details = array(
 );
 $payment->callback_url = "http://www.your-site.com";
 
-
 $payer = new MercadoPago\Payer();
 $payer->email = $_POST['email'];
 $payer->identification = array(
@@ -227,16 +224,17 @@ $payer->identification = array(
 );
 $payer->entity_type = "individual";
 
-
 $payment->payer = $payer;
-
 
 $payment->save();
 
+$response = array(
+    'status' => $payment->status,
+    'status_detail' => $payment->status_detail,
+    'id' => $payment->id
+);
+echo json_encode($response);
 
-echo $payment->status;
-echo " ";
-echo $payment->id;
 ?>
 ```
 ```node
@@ -473,13 +471,13 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
 
 The following are **mandatory** fields that must be completed when sending a payment according to the specifications below:
 
-|                   Field                   |                                                                                                                                                          Description                                                                                                                                                          | Possible values/Validations |                                               Call to get the value                                               |   |
-|:-----------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:---------------------------:|:------------------------------------------------------------------------------------------------------------------:|---|
-| transaction_details.financial_institution | Bank informed in the POST to make the electronic transfer. You must show the list to the user and allow him to select. This list usually refreshes, so it’s  Se debe mostrar al usuario el listado de bancos y permitirle seleccionar. El listado se actualiza, por lo que recommended to consume the information every hour. | -                           | https://api.mercadolibre.com/v1/payment_methods/search?public_key=YOUR_PUBLIC_KEY                                  |   |
-| payer.entity_type                         | Type of personality, physical or legal.                                                                                                                                                                                                                                                                                       | *individual* or *association*   | -                                                                                                                  |   |
-| payer.identification                      | Type and number of the buyer's document.                                                                                                                                                                                                                                                                                      | -                           | curl -X GET \ 'https://api.mercadopago.com/v1/identification_types' \ -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' |   |
-| additional_info.ip_address                |  Buyer’s IP address, where the payment is made..                                                                                                                                                                                                                                                                              | -                           | -                                                                                                                  |   |
-| callback_url                              | URL where the buyer is redirected by default after making the payment within the bank's page, when the buyer indicates that they want to return to the store.                                                                                                                                                                 | -                           | -                                                                                                                  |   |
+|                   Field                   |                                                                                                                                                          Description                                                                                                                                                          | Possible values/Validations |                                               Call to get the value                                               |
+|:-----------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:---------------------------:|:------------------------------------------------------------------------------------------------------------------:|
+| transaction_details.financial_institution | Bank informed in the POST to make the electronic transfer. You must show the list to the user and allow him to select. This list usually refreshes, so it’s  Se debe mostrar al usuario el listado de bancos y permitirle seleccionar. El listado se actualiza, por lo que recommended to consume the information every hour. | -                           | https://api.mercadolibre.com/v1/payment_methods/search?public_key=YOUR_PUBLIC_KEY                                  |
+| payer.entity_type                         | Type of personality, physical or legal.                                                                                                                                                                                                                                                                                       | *individual* or *association*   | -                                                                                                                  |
+| payer.identification                      | Type and number of the buyer's document.                                                                                                                                                                                                                                                                                      | -                           | curl -X GET \ 'https://api.mercadopago.com/v1/identification_types' \ -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' |
+| additional_info.ip_address                |  Buyer’s IP address, where the payment is made.                                                                                                                                                                                                                                                                              | -                           | -                                                                                                                  |
+| callback_url                              | URL where the buyer is redirected by default after making the payment within the bank's page, when the buyer indicates that they want to return to the store.                                                                                                                                                                 | -                           | -                                                                                                                  |
 
 The response will show the **pending status** until the buyer completes the payment. Also, in the response to the request, the `external_resource_url` parameter will return a URL that contains instructions for the buyer to make the payment. You can redirect to this same link to complete the payment flow.
 
