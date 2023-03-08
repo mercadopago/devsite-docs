@@ -1,4 +1,4 @@
-# Integração com o Mercado Pago
+# Configure a integração com o Mercado Pago
 
 Para se comunicar com o aplicativo do Mercado Pago, o Mini App deve utilizar alguns comandos que estarão disponíveis para uso somente após o carregamento do MiniApp. Veja mais informações na seção [Ciclo de vida dos Mini Apps]().
 
