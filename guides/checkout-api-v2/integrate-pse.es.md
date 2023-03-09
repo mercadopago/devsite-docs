@@ -1,8 +1,8 @@
 ----[mco]----
 # PSE
-Con el Checkout API de Mercado Pago se puede ofrecer pagos con **PSE -Pagos Seguros en Línea-**, el servicio que permite realizar compras y pagos a través de internet debitando los recursos en línea directamente de cuentas de ahorros, corriente o depósito electrónico.
+Con el Checkout API de Mercado Pago puedes ofrecer pagos con **PSE -Pagos Seguros en Línea-**, el servicio que permite realizar compras y pagos a través de internet debitando los recursos en línea directamente de cuentas de ahorros, corriente o depósito electrónico.
 
-Para obtener una lista detallada de todos los medios de pago disponibles para integración, envía un **GET** con tu _Access token_ al endpoint [/v1/payment_methods](/developers/es/reference/payment_methods/_payment_methods/get) y ejecuta la solicitud o, si lo prefieres, haz la solicitud utilizando uno de nuestros SDKs.
+Para obtener una lista detallada de todos los medios de pago disponibles para integración, envía un **GET** con tu `access_token` al endpoint [/v1/payment_methods](/developers/es/reference/payment_methods/_payment_methods/get) y ejecuta la solicitud o, si lo prefieres, haz la solicitud utilizando uno de nuestros SDKs.
 
 [[[
 ```php
@@ -196,7 +196,7 @@ Para configurar pagos con **PSE**, envía un **POST** con los parámetros requer
 >
 > Importante
 >
-> Para esta etapa, al realizar la solicitud vía API o SDKs, es necesario que envíes tu clave privada - Access Token.
+> Para esta etapa, al realizar la solicitud vía API o SDKs, es necesario que envíes tu clave privada (`access_token`).
 
 [[[
 ```php
@@ -463,7 +463,7 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
 ```
 ]]]
 
-Los siguientes campos para enviar un pago son **obligatorios** y deberás completarlos siguiendo las especificaciones de la siguiente tabla:
+Los siguientes campos para enviar un pago son **obligatorios** y deberás completarlos siguiendo las especificaciones de la de la tabla a continuación:
 
 |                   Campo                   |                                                                                                               Descripción                                                                                                             | Valores posibles/Validaciones |                                          LLamado para obtener los valores                                          |
 |:-----------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:-----------------------------:|:------------------------------------------------------------------------------------------------------------------:|
@@ -474,7 +474,7 @@ Los siguientes campos para enviar un pago son **obligatorios** y deberás comple
 | callback_url                              | Página donde se redirecciona al comprador por defecto luego de realizar el pago dentro de la página del banco, cuando el comprador indica que desea regresar a la tienda.                                                              | -                             | -                                                                                                                  |
 
 
-La respuesta mostrará el **status pendiente** hasta que el comprador realice el pago. Además, en la respuesta a la solicitud, el parámetro `external_resource_url` devolverá una URL que contiene las instrucciones para que el comprador efectúe el pago. Puedes redirigirlo a este mismo link para finalizar el flujo de pago.
+La respuesta mostrará el status `pendiente` hasta que el comprador realice el pago. Además, en la respuesta a la solicitud, el parámetro `external_resource_url` devolverá una URL que contiene las instrucciones para que el comprador efectúe el pago. Puedes redirigirlo a este mismo link para finalizar el flujo de pago.
 
 ```json
 {
@@ -518,6 +518,6 @@ La respuesta mostrará el **status pendiente** hasta que el comprador realice el
 
 ## Expiración
 
-El pago creado con **PSE** expira automáticamente dentro de los 15 minutos de generado y su status pasa a ser rechazado. Si el usuario no accede a la web y realiza el pago dentro de ese tiempo, se deberá generar uno nuevo.
+El pago creado con **PSE** expira automáticamente dentro de los 15 minutos de generado y su status pasa a ser `rechazado`. Si el comprador no accede a la web y realiza el pago dentro de ese tiempo, será necesario generar uno nuevo.
 
 ------------

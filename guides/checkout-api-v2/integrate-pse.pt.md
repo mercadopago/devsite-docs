@@ -191,7 +191,7 @@ Para configurar pagamentos com **PSE**, envie um **POST** com os devidos parâme
 >
 > Importante
 >
-> Para esta etapa, ao realizar a requisição via API ou SDKs, é necessário enviar sua Chave Privada - Access token.
+> Para esta etapa, ao realizar a requisição via API ou SDKs, é necessário enviar sua Chave Privada (`access_token`).
 
 [[[
 ```php
@@ -468,7 +468,7 @@ Os seguintes campos para enviar um pagamento são **obrigatórios** e você deve
 | additional_info.ip_address                | IP address do comprador, onde o pagamento é gerado.                                                                                                                                                                       | -                            | -                                                                                                                  |
 | callback_url                              | Página onde o comprador é redirecionado, por padrão, após efetuar o pagamento dentro da página do banco quando este indica que deseja retornar à loja.                                                              | -                            | -                                                                                                                  |
 
-A resposta mostrará o **status pendente** até que o comprador realize o pagamento. Além disso, na resposta à requisição, o parâmetro `external_resource_url` retornará uma URL que contém as instruções para que o comprador realize o pagamento. Você pode redirecioná-lo para este mesmo link para conclusão do fluxo de pagamento.
+A resposta mostrará o status `pendente` até que o comprador realize o pagamento. Além disso, na resposta à requisição, o parâmetro `external_resource_url` retornará uma URL que contém as instruções para que o comprador realize o pagamento. Você pode redirecioná-lo para este mesmo link para conclusão do fluxo de pagamento.
 
 ```json
 {
@@ -509,9 +509,8 @@ A resposta mostrará o **status pendente** até que o comprador realize o pagame
 >
 > Caso receba um erro ao gerar um pagamento, você pode consultar a lista de possíveis erros na seção [Referência de API](/developers/pt/reference/payments/_payments/post).
 
-
 ## Expiração
 
-O pagamento criado com **PSE** expira automaticamente em 15 minutos após a geração e seu status passa a ser rejeitado. Caso o usuário não acesse a web e efetue o pagamento dentro desse prazo, deverá ser gerado um novo. 
+O pagamento criado com **PSE** expira automaticamente em 15 minutos após a geração e seu status passa a ser `rejeitado`. Caso o comprador não acesse a web e efetue o pagamento dentro desse prazo, deverá ser gerado um novo. 
 
 ------------

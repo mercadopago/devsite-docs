@@ -24,7 +24,7 @@ Con el Checkout API de Mercado Pago, también se puede ofrecer pagos con **Efect
 Con el Checkout API de Mercado Pago, también es posible ofrecer pagos con **Abitab** y **Redpagos**.
 ------------
 
-Para obtener una lista detallada de todos los medios de pago disponibles para integración, envía un **GET** con tu _Access token_ al endpoint [/v1/payment_methods](/developers/es/reference/payment_methods/_payment_methods/get) y ejecuta la solicitud o, si lo prefieres, haz la solicitud utilizando uno de nuestros SDKs.
+Para obtener una lista detallada de todos los medios de pago disponibles para integración, envía un **GET** con tu `access_token` al endpoint [/v1/payment_methods](/developers/es/reference/payment_methods/_payment_methods/get) y ejecuta la solicitud o, si lo prefieres, haz la solicitud utilizando uno de nuestros SDKs.
 
 [[[
 ```php
@@ -1171,7 +1171,7 @@ Para configurar pagos con **Efecty**, envía un **POST** con los parámetros req
 >
 > Importante
 >
-> Para esta etapa, al realizar la solicitud vía API o SDKs, es necesario que envíes tu clave privada - Access Token.
+> Para esta etapa, al realizar la solicitud vía API o SDKs, es necesario que envíes tu clave privada (`access_token`).
 
 [[[
 ```php
