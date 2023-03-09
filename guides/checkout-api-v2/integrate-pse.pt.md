@@ -71,7 +71,7 @@ Para oferecer pagamentos com **PSE**, siga as etapas abaixo.
 
 Para realizar a integração do Checkout Transparente é preciso capturar os dados necessários para processar o pagamento.
 
-Esta captura é feita a partir da inclusão da biblioteca MercadoPago.js em seu projeto, seguida do formulário de pagamento. Utilize o código abaixo para importar a biblioteca MercadoPago.js antes de adicionar o formulário de pagamento.
+Esta captura é feita a partir da inclusão da biblioteca `MercadoPago.js` em seu projeto, seguida do formulário de pagamento. Utilize o código abaixo para importar a biblioteca MercadoPago.js antes de adicionar o formulário de pagamento.
 
 [[[
 ```html
@@ -84,10 +84,9 @@ Esta captura é feita a partir da inclusão da biblioteca MercadoPago.js em seu 
 
 ## Configurar credencial
 
-As credenciais são senhas únicas com as quais identificamos uma integração na sua conta. Servem para capturar pagamentos em lojas virtuais e outras aplicações de forma segura.
+As [credenciais](/developers/pt/guides/additional-content/credentials/credentials) são senhas únicas com as quais identificamos uma integração na sua conta, servindo para capturar pagamentos em lojas virtuais e outras aplicações de forma segura.
 
-Esta é a primeira etapa de uma estrutura completa de código que deverá ser seguida para a correta integração dos pagamentos. Atente-se aos blocos abaixo para adicionar aos códigos conforme indicado.
-
+Essa é a primeira etapa de uma estrutura completa de código que deverá ser seguida para a correta integração dos pagamentos. Atente-se aos blocos abaixo para adicionar aos códigos conforme indicado.
 
 [[[
 ```javascript
@@ -97,7 +96,7 @@ const mp = new MercadoPago('YOUR_PUBLIC_KEY');
 
 ## Adicionar formulário de pagamento
 
-Com a biblioteca MercadoPago.js incluída, adicione o formulário de pagamento abaixo ao seu projeto para garantir a captura segura dos dados dos compradores. Nesta etapa é importante utilizar a lista que você consultou para obter os meios de pagamento disponíveis para criar as opções de pagamento que deseja oferecer.
+Com a biblioteca `MercadoPago.js` incluída, adicione o formulário de pagamento abaixo ao seu projeto para garantir a captura segura dos dados dos compradores. Nesta etapa, é importante utilizar a lista que você consultou para obter os meios de pagamento disponíveis para criar as opções de pagamento que deseja oferecer.
 
 
 [[[
@@ -143,7 +142,7 @@ Com a biblioteca MercadoPago.js incluída, adicione o formulário de pagamento a
 
 Após configurar a credencial, é preciso obter os tipos de documento que farão parte do preenchimento do formulário para pagamento. 
 
-Incluindo o elemento do tipo `select` com o id: `id = docType` que está no formulário, será possível preencher automaticamente as opções disponíveis quando chamar a função a seguir:
+Incluindo o elemento do tipo `select` com o ID `id = docType` que está no formulário, será possível preencher automaticamente as opções disponíveis quando chamar a função a seguir:
 
 [[[
 ```javascript
@@ -184,7 +183,7 @@ Incluindo o elemento do tipo `select` com o id: `id = docType` que está no form
 
 ## Enviar pagamento
 
-Ao finalizar a inclusão do formulário de pagamento e obter os tipos de documento, é necessário encaminhar o e-mail do comprador, tipo e número de documento, o meio de pagamento utilizado e o detalhe do valor a ser pago utilizando nossa API de Pagamentos ou um de nossos SDKs.
+Ao finalizar a inclusão do formulário de pagamento e obter os tipos de documento, utilize nossa API de Pagamentos ou um de nossos SDKs para encaminhar o e-mail do comprador, o tipo e o número do documento, o meio de pagamento utilizado e o detalhe do valor a ser pago.
 
 Para configurar pagamentos com **PSE**, envie um **POST** com os devidos parâmetros ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, utilize um de nossos SDKs abaixo.
 
@@ -467,7 +466,7 @@ Os seguintes campos para enviar um pagamento são **obrigatórios** e você deve
 | payer.entity_type                         | Tipo de pessoa, física ou jurídica.                                                                                                                                                                                       | *individual* o *association*     | -                                                                                                                  |
 | payer.identification                      | Tipo e número do documento do comprador.                                                                                                                                                                                  | -                            | curl -X GET \ 'https://api.mercadopago.com/v1/identification_types' \ -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' |
 | additional_info.ip_address                | IP address do comprador, onde o pagamento é gerado.                                                                                                                                                                       | -                            | -                                                                                                                  |
-| callback_url                              | Página onde o comprador é redirecionado por padrão após efetuar o pagamento dentro da página do banco, quando o comprador indica que deseja retornar à loja.                                                              | -                            | -                                                                                                                  |
+| callback_url                              | Página onde o comprador é redirecionado, por padrão, após efetuar o pagamento dentro da página do banco quando este indica que deseja retornar à loja.                                                              | -                            | -                                                                                                                  |
 
 A resposta mostrará o **status pendente** até que o comprador realize o pagamento. Além disso, na resposta à requisição, o parâmetro `external_resource_url` retornará uma URL que contém as instruções para que o comprador realize o pagamento. Você pode redirecioná-lo para este mesmo link para conclusão do fluxo de pagamento.
 
@@ -504,7 +503,7 @@ A resposta mostrará o **status pendente** até que o comprador realize o pagame
 
 ```
 
-> WARNING
+> NOTE
 >
 > Importante
 >
@@ -516,5 +515,3 @@ A resposta mostrará o **status pendente** até que o comprador realize o pagame
 O pagamento criado com **PSE** expira automaticamente em 15 minutos após a geração e seu status passa a ser rejeitado. Caso o usuário não acesse a web e efetue o pagamento dentro desse prazo, deverá ser gerado um novo. 
 
 ------------
-
-

@@ -1160,7 +1160,7 @@ Para configurar pagamentos com **Efecty**, envie um **POST** com os devidos par�
 >
 > Importante
 >
-> Para esta etapa, ao realizar a requisição via API ou SDKs, é necessário enviar sua Chave Privada - Access token. 
+> Para esta etapa, ao realizar a requisição via API ou SDKs, é necessário enviar a sua Chave Privada (`access_token`). 
 
 [[[
 ```php

@@ -71,7 +71,7 @@ Para ofrecer pagos con **PSE**, sigue los siguientes pasos.
 
 Para realizar la integración de Checkout API, es necesario capturar los datos necesarios para procesar el pago.
 
-Esta captura se realiza incluyendo la biblioteca MercadoPago.js en tu proyecto, seguida del formulario de pago. Utiliza el siguiente código para importar la biblioteca MercadoPago.js antes de añadir el formulario de pago.
+Esta captura se realiza incluyendo la biblioteca `MercadoPago.js` en tu proyecto, seguida del formulario de pago. Utiliza el siguiente código para importar la biblioteca MercadoPago.js antes de añadir el formulario de pago.
 
 [[[
 ```html
@@ -99,7 +99,7 @@ const mp = new MercadoPago('YOUR_PUBLIC_KEY');
 
 ## Añadir formulario de pago
 
-Con la biblioteca MercadoPago.js incluida, añade el siguiente formulario de pago a tu proyecto para garantizar la captura segura de los datos de los compradores. En esta etapa es importante utilizar la lista que consultaste para obtener los medios de pago disponibles para crear las opciones de pago que deseas ofrecer.
+Con la biblioteca `MercadoPago.js` incluida, añade el siguiente formulario de pago a tu proyecto para garantizar la captura segura de los datos de los compradores. En esta etapa es importante utilizar la lista que consultaste para obtener los medios de pago disponibles para crear las opciones de pago que deseas ofrecer.
 
 [[[
 ```html
@@ -509,7 +509,7 @@ La respuesta mostrará el **status pendiente** hasta que el comprador realice el
 
 ```
 
-> WARNING
+> NOTE
 >
 > Importante
 >

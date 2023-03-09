@@ -71,7 +71,7 @@ To offer **PSE** payments, please follow the steps below.
 
 To perform the Checkout API integration, you need to capture the necessary data to process the payment.
 
-This capture is made by including the MercadoPago.js library in your project, followed by the payment form. Use the code below to import the library before adding the payment form.
+This capture is made by including the `MercadoPago.js` library in your project, followed by the payment form. Use the code below to import the library before adding the payment form.
 
 [[[
 ```html
@@ -98,7 +98,7 @@ const mp = new MercadoPago('YOUR_PUBLIC_KEY');
 
 ## Add payment form
 
-With the MercadoPago.js library included, add the payment form below to your project to ensure the secure capture of buyer data. In this step, it is important to use the list you consulted to obtain the available payment methods to create the payment options you want to offer.
+With the `MercadoPago.js` library included, add the payment form below to your project to ensure the secure capture of buyer data. In this step, it is important to use the list you consulted to obtain the available payment methods to create the payment options you want to offer.
 
 
 [[[
@@ -145,7 +145,7 @@ With the MercadoPago.js library included, add the payment form below to your pro
 
 After configuring the credential, it is necessary to obtain the types of documents that will be part of filling out the payment form.
 
-By including the element of type `select` with the id: `id = docType` that is on the form, it will be possible to automatically fill in the available options when calling the following function:
+By including the element of type `select` with the ID: `id = docType` that is on the form, it will be possible to automatically fill in the available options when calling the following function:
 
 [[[
 ```javascript
@@ -194,7 +194,7 @@ To configure payments with **PSE**, send a **POST** with the appropriate paramet
 >
 > Important
 >
-> For this step, when making the request via API or SDKs, it is necessary to send your Private Key - Access token.
+> For this step, when making the request via API or SDKs, it is necessary to send your Private Key (`access_token`).
 
 [[[
 ```php
@@ -506,7 +506,7 @@ The response will show the **pending status** until the buyer completes the paym
 
 ```
 
-> WARNING
+> NOTE
 >
 > Important
 >
