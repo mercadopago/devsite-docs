@@ -7,7 +7,7 @@ O manifesto dos Mini Apps pode conter os seguintes campos:
 | Campo  | Tipo  | Obrigatório  | Descrição |
 | --- | --- | --- | --- |
 | name | string | sim | Caso o Super App precise exibir o nome do Mini App, o valor deste campo será utilizado para esse fim. | 
-| version | string | sim | O número da versão do Mini App formatado como um número dividido por pontos(**.**).| 
+| version | string | sim | O número da versão do Mini App formatado como um número dividido por pontos.| 
 | state_persistence | boolean | não | Define se o Mini App mantém seu estado após ser fechado. <br><br> Isso é _True__ por padrão. | 
 | show_action_bar | boolean | não | Define se os Mini Apps suportam a barra de ação do Android. <br><br> Isso é _False_ por padrão. | 
 | use_wide_view_port | boolean | não | Define se os Mini Apps suportam uma porta de visualização ampla. <br><br> Isso é _False_ por padrão. | 
