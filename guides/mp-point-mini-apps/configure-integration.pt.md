@@ -30,7 +30,7 @@ MobileWebKit.executeNative(exampleCommand)
 
 ## Comandos
 
-### Configurar título da ActionBar (*set_title*)
+* `set_title`
 
 Permite atualizar o título da barra de ferramentas.
 
@@ -47,7 +47,7 @@ Permite atualizar o título da barra de ferramentas.
 }
 ```
 
-* **_back_**
+* `back`
 
 Permite navegar para trás, podendo voltar para várias telas.
 
@@ -81,8 +81,6 @@ Permite alterar o comportamento do botão **Voltar**.
 }
 ```
 
-### Fechar
-
 * `close`
 
 Permite fechar a tela do Mini App. 
@@ -97,8 +95,6 @@ Permite fechar a tela do Mini App.
     "args": {}
 }
 ```
-
-### Histórico
 
 * `history`
 
@@ -127,8 +123,6 @@ Exemplo de resposta:
 }
 ``` 
 
-### InformaçÕes do dispositivo
-
 * `info_device`
 
 Permite obter informações do dispositivo Point Smart, como: **número de série**, **marca** e **modelo**.
@@ -156,8 +150,6 @@ Exemplo de resposta:
 }
 ``` 
 
-### InformaçÕes do dispositivo
-
 * `clear_history`
 
 Permite limpar histórico de navegação.
@@ -181,8 +173,6 @@ function callbackResult(result, error) {
    }
 }
 ```
-
-### Obter os métodos de pagamento disponíveis
 
 * `payment_methods`
 
