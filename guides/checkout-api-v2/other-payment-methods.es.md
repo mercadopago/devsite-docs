@@ -17,14 +17,14 @@ Con el Checkout API de Mercado Pago, también es posible ofrecer pagos a través
 ------------
 
 ----[mco]----
-Con el Checkout API de Mercado Pago, también se puede ofrecer pagos con **Efecty** y **PSE**.
+Con el Checkout API de Mercado Pago, también se puede ofrecer pagos con **Efecty**.
 ------------
 
 ----[mlu]----
 Con el Checkout API de Mercado Pago, también es posible ofrecer pagos con **Abitab** y **Redpagos**.
 ------------
 
-Para obtener una lista detallada de todos los medios de pago disponibles para integración, envía un **GET** con tu _Access token_ al endpoint [/v1/payment_methods](/developers/es/reference/payment_methods/_payment_methods/get) y ejecuta la solicitud o, si lo prefieres, haz la solicitud utilizando los siguientes SDKs.
+Para obtener una lista detallada de todos los medios de pago disponibles para integración, envía un **GET** con tu `access_token` al endpoint [/v1/payment_methods](/developers/es/reference/payment_methods/_payment_methods/get) y ejecuta la solicitud o, si lo prefieres, haz la solicitud utilizando uno de nuestros SDKs.
 
 [[[
 ```php
@@ -103,7 +103,7 @@ Para ofrecer pagos con **PagoEfectivo**, sigue las siguientes etapas.
 ------------
 
 ----[mco]----
-Para ofrecer pagos con **Efecty** y/o **PSE**, sigue las siguientes etapas.
+Para ofrecer pagos con **Efecty**, sigue las siguientes etapas.
 ------------
 
 ----[mlu]----
@@ -1165,13 +1165,13 @@ Para obtener más información, consulte la sección [Reembolsos y cancelaciones
 
 ----[mco]----
 
-Para configurar pagos con **Efecty** e/ou **PSE**, envie um **POST** con los parámetros requeridos al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) y ejecuta la solicitud o, si lo prefieres, utiliza uno de nuestros SDKs indicados a continuación.
+Para configurar pagos con **Efecty**, envía un **POST** con los parámetros requeridos al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) y ejecuta la solicitud o, si lo prefieres, utiliza uno de nuestros SDKs indicados a continuación.
 
 > WARNING
 >
 > Importante
 >
-> Para recibir pagos con **PSE** debes enviar, durante la creación del pago, el parámetro `financial_institution` con el número de la institución financiera encargada de procesar el pago. 
+> Para esta etapa, al realizar la solicitud vía API o SDKs, es necesario que envíes tu clave privada (`access_token`).
 
 [[[
 ```php
@@ -1325,7 +1325,7 @@ La respuesta mostrará el **status pendiente** hasta que el comprador realice el
 
 Opcionalmente, es posible cambiar la fecha de vencimiento para pagos con dinero enviando el campo `date_of_expiration` en la solicitud de creación del pago, definiendo un plazo entre 1 y 30 días a partir de la fecha de emisión del pago.
 
-Para cambiar la fecha de vencimiento, utilice uno de los códigos disponibles a continuación.
+Para cambiar la fecha de vencimiento, utiliza uno de los códigos disponibles a continuación.
 
 [[[
 ```php
@@ -1373,7 +1373,7 @@ La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ```
 ]]]
 
-El tiempo para la aprobación toma entre 1 y 2 días hábiles. Por lo tanto, establezca la fecha de vencimiento en un mínimo de 3 días para asegurarse de que se pague el pago.
+El tiempo para la aprobación toma entre 1 y 2 días hábiles. Por lo tanto, establece la fecha de vencimiento en un mínimo de 3 días para asegurarse de que el pago se efectúe.
 
 
 > WARNING
