@@ -1,6 +1,6 @@
 # Configure a impressão na Point Smart 
 
-Para processar corretamente o recibo _HTML_ e imprimir todas as informações, deve-se incluir os seguintes scripts do Mercado Pago antes da tag `</ body>`:
+Para processar corretamente o recibo _HTML_ e imprimir todas as informações, deve-se incluir os seguintes scripts do Mercado Pago antes da tag `body`:
 
 * `mobilewebkit.js`
 * `smart_render.js `
