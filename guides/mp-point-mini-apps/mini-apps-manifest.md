@@ -11,7 +11,7 @@ O manifesto dos MiniApps pode conter os seguintes campos:
 | state_persistence | boolean | sim | Define se o MiniApp mantém seu estado após ser fechado. <br><br> Isso é *True* por padrão. | 
 | show_action_bar | boolean | não | Define se os MiniApps suportam a barra de ação do Android. <br><br> Isso é *False* por padrão. | 
 | use_wide_view_port | boolean | não | Define se os MiniApps suportam uma porta de visualização ampla. <br><br> Isso é *False* por padrão. | 
-| related_hosts | array < string > | não | Funciona como uma lista de permissões, declarando com quais hosts o MiniApp pode se comunicar. Se o host não estiver na lista, a comunicação será bloqueada. | 
+| related_hosts | array  string  | não | Funciona como uma lista de permissões, declarando com quais hosts o MiniApp pode se comunicar. Se o host não estiver na lista, a comunicação será bloqueada. | 
 | client_id | string | sim | Funciona como ID do MiniApp ao lançar um fluxo de pagamento para rastreabilidade de pagamentos. | 
 | control_back_action | boolean | não | Define se o MiniApp pode lidar com ações de retorno nativas. <br><br> Isso é *False* por padrão. | 
 
