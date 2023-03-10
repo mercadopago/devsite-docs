@@ -1,6 +1,6 @@
 # Configure a integração com o Mercado Pago
 
-Para se comunicar com o aplicativo do Mercado Pago, o Mini App deve utilizar alguns comandos que estarão disponíveis para uso somente após o carregamento do Mini App. Veja mais informações na seção [Ciclo de vida dos Mini Apps]().
+Para se comunicar com o aplicativo do Mercado Pago, o Mini App deve utilizar alguns comandos que estarão disponíveis para uso somente após o carregamento do MiniApp. Veja mais informações na seção [Ciclo de vida dos MiniApps]().
 
 Todos os comandos disponíveis suportam os seguintes parâmetros:
 
@@ -9,6 +9,8 @@ Todos os comandos disponíveis suportam os seguintes parâmetros:
 | method | string | true | set_title <br><br> payment_flow | 
 | args | objeto JSON  | depende do método | qualquer objeto JSON | 
 | callback | function | false | function <br><br> (result, error) | 
+
+Exemplo de requisição:
 
 ```javascript
 var exampleCommand =
@@ -30,7 +32,7 @@ MobileWebKit.executeNative(exampleCommand)
 
 ## Comandos disponíveis
 
-Veja abaixo quais são os comandos disponíveis para uso somente após o carregamento do Mini App.
+Veja abaixo quais são os comandos disponíveis para uso somente após o carregamento do MiniApp.
 
 * `set_title`
 
@@ -39,6 +41,8 @@ Permite atualizar o título da barra de ferramentas.
 | Parâmetro  | Tipo  | Obrigatório  | Valores possíveis | Descrição |
 | --- | --- | --- | --- | --- |
 | title | string | true | qualquer string | Texto a ser exibido na ActionBar. | 
+
+Exemplo de requisição:
 
 ```javascript
 {
@@ -57,6 +61,8 @@ Permite navegar para trás, podendo voltar para várias telas.
 | --- | --- | --- | --- | --- |
 | screen | int | true | 0 < n < 50 | O número de telas para voltar, sendo por padrão = 1. | 
 
+Exemplo de requisição:
+
 ```javascript
 {
     "method": 'back',
@@ -73,6 +79,8 @@ Permite alterar o comportamento do botão **Voltar**.
 | Parâmetro  | Tipo  | Obrigatório  | Valores possíveis | Descrição |
 | --- | --- | --- | --- | --- |
 | type | String | true | back  <br><br> close | back: funciona como padrão de voltar a tela anterior. <br><br> close: fecha a tela.| 
+
+Exemplo de requisição:
 
 ```javascript
 {
@@ -91,6 +99,8 @@ Permite fechar a tela do Mini App.
 | --- | --- | --- | --- | --- |
 | nenhum | nenhum | nenhum | nenhum| nenhum |
 
+Exemplo de requisição:
+
 ```javascript
 {
     "method": 'close',
@@ -105,6 +115,8 @@ Permite obter o histórico de navegação.
 | Parâmetro  | Tipo  | Obrigatório  | Valores possíveis | Descrição |
 | --- | --- | --- | --- | --- |
 | - | - | - | - | - |
+
+Exemplo de requisição:
 
 ```javascript
 {
@@ -133,6 +145,8 @@ Permite obter informações do dispositivo Point Smart, como: **número de séri
 | --- | --- | --- | --- | --- |
 | - | - | - | - | - |
 
+Exemplo de requisição:
+
 ```javascript
 {
     "method": 'info_device',
@@ -160,6 +174,8 @@ Permite limpar histórico de navegação.
 | --- | --- | --- | --- | --- |
 | - | - | - | - | - |
 
+Exemplo de requisição:
+
 ```javascript
 {
     "method": 'clear_history',
@@ -184,6 +200,8 @@ Permite obter as variantes de meios de pagamento permitidas para iniciar o fluxo
 | --- | --- | --- | --- | --- |
 | - | - | - | - | - |
 
+Exemplo de requisição:
+
 ```javascript
 getPaymentMethods(callback)
 
@@ -196,7 +214,7 @@ function callbackResult(result, error) {
 
 Exemplo de resposta:
 
-```
+```javascript
 {
   "result": [
     "credit",
