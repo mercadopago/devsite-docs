@@ -14,11 +14,25 @@ Abaixo mostramos as principais diferenças entre as etapas de migração.
 * Não utilizaremos mais as funções de callback de cada método, mas sim o retorno deles para trabalhar com os dados;
 * Os nomes de alguns métodos também sofreram algumas pequenas alterações e estas ficaram mais claras nos snippets comparativos.
 
+----[mla, mlm, mpe, mlu, mlc, mlb]----
+
 > WARNING
 >
 > Atenção
 >
 > A migração não afetará em nada o seu backend, as modificações são inteiramente no frontend da aplicação.
+
+------------
+
+----[mco]----
+
+> WARNING
+>
+> Atenção
+>
+> A migração não afetará em nada o seu backend, as modificações são inteiramente no frontend da aplicação. Além disso, essa modificação afeta somente cartão e não influencia em outros meios de pagamento, como, por exemplo, PSE.
+
+------------
 
 Veja abaixo um comparativo dos diagramas. 
 
