@@ -25,8 +25,6 @@ https://api.mercadopago.com/v1/advanced_payments/10458724/refunds
 
 Ao executar o request para um reembolso parcial, é possível que se retornem diferentes respostas. Na próxima seção você encontra o detalhe de cada uma delas, bem como as possíveis causas.
 
-
-
 ### Resposta de sucesso
 
 [[[
@@ -51,8 +49,6 @@ Código de status: 200
 
 ```
 ]]]
-
-
 
 ### Resposta com falha: Bad request
 
@@ -79,7 +75,6 @@ Código de status: 400
 ```
 ]]]
 
-
 ### Resposta com falha: Not found
 
 Esta é uma resposta comum que é retornada quando nenhum pagamento antecipado criado com o id fornecido nos parâmetros da solicitação é encontrado.
@@ -105,7 +100,6 @@ Código de status: 404
 ```
 ]]]
 
-
 ### Resposta com falha: Internal error code
 
 É a resposta que indica que ocorreu um erro no servidor durante o processamento da solicitação. Isso significa que a solicitação do cliente não pôde ser concluída devido a um problema interno no servidor.
@@ -130,5 +124,4 @@ Código de status: 500
 
 ```
 ]]]
-
 

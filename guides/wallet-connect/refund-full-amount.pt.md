@@ -41,8 +41,6 @@ Código de status: 200
 ```
 ]]]
 
-
-
 ### Resposta com falha: Bad request
 
 Esta é uma resposta comum quando um dos parâmetros de solicitação está incorreto ou não foi encontrado. Por exemplo, esse erro ocorrerá se um ID com formato incorreto for enviado no momento da requisição.
@@ -94,8 +92,6 @@ Código de status: 404
 
 ```
 ]]]
-
-
 
 ### Resposta com falha: Internal error code
 

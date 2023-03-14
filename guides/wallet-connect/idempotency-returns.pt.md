@@ -49,8 +49,6 @@ Código de status: 200
 ```
 ]]]
 
-
-
 ## Resposta com falha: Bad request
 
 Esta é uma resposta que retorna quando algum dos parâmetros de requisição está incorreto ou não pode ser encontrado. Por exemplo, este erro aparecerá caso um dos parâmetros obrigatórios não seja enviado no momento da requisição.
@@ -68,7 +66,6 @@ Código de status: 400
 
 ```
 ]]]
-
 
 ## Falha devido a conflito
 
@@ -94,7 +91,6 @@ Código de status: 409
 
 ```
 ]]]
-
 
 ## Falha devido a entidade não processável
 

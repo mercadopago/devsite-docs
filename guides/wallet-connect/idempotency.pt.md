@@ -10,8 +10,6 @@ O diagrama abaixo ilustra o funcionamento da Idempotency key no processo de cria
 
 ![idempotency-flow](/images/wallet-connect/idempotency.pt.png)
 
-
-
 ## Enviar request
 
 [[[

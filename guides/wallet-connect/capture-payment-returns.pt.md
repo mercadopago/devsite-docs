@@ -2,7 +2,6 @@
 
 Ao executar o _request_ para captura de pagamentos, é possível que se retornem diferentes respostas. Nesta seção você encontra o detalhe de cada uma delas, bem como as possíveis causas.
 
-
 ## Pagamento aprovado
 
 [[[
@@ -48,18 +47,13 @@ Código de status: 201
 ```
 ]]]
 
-
-
 ## Pagamento rejeitado
-
 
 > NOTE
 >
 > Importante
 >
 > Para mais informações sobre o motivo da recusa de pagamento, veja o campo `payment.status_detail`.
-
-
 
 [[[
 ```Json
@@ -100,8 +94,6 @@ Código de status: 201
 }
 ```
 ]]]
-
-
 
 ## Pagamento rejeitado devido a dinheiro insuficiente na conta
 
@@ -145,8 +137,6 @@ Código de status: 201
 ```
 ]]]
 
-
-
 ## Pagamento rejeitado por falta de autorização
 
 Este erro é retornado quando o cliente cancela o agreement.
@@ -171,5 +161,4 @@ Código de status: 201
 
 ```
 ]]]
-
 

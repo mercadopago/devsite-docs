@@ -4,7 +4,6 @@ Ao executar o request para obter informações de pagamento, é possível que se
 
 ## Resposta de sucesso 
 
-
 [[[
 ```Json
 ===
@@ -44,8 +43,6 @@ Código de status: 200
 ```
 ]]]
 
-
-
 ## Falha devido a Advanced payment não encontrado
 
 Esta é uma falha que acontece quando não se encontra nenhum Advanced Payment criado com o ID fornecido nos parâmetros de requisição.
@@ -63,7 +60,6 @@ Código de status: 404
 
 ```
 ]]]
-
 
 
 ## Falha devido a Client ID não encontrado na whitelist
@@ -84,10 +80,10 @@ Código de status: 404
 ```
 ]]]
 
-
 ## Falha devido a collector_id não encontrado na merchant list
 
 Esta resposta retorna quando o collector não se encontra na merchant list.
+
 
 [[[
 ```Json

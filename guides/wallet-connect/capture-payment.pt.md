@@ -23,7 +23,6 @@ Ao enviar o _request_ ao endpoint de Advanced Payments, garanta que os seguintes
 | payer  | Informação do pagador requerida para criação do advanced payment  |
 
 
-
 Com esses parâmetros em mãos, envie um **POST** ao endpoint [/v1/advanced_payments](/developers/pt/reference/wallet_connect/_advanced_payments/post) e execute a requisição ou, se preferir, utilize o `curl` abaixo.
 
 [[[
