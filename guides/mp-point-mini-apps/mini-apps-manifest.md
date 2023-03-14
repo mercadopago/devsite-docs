@@ -17,7 +17,7 @@ O manifesto dos MiniApps pode conter os seguintes campos:
 
 Veja abaixo um exemplo de `miniapp_manifest.json`.
 
-```json
+```javascript
 {
    "name": "MercadoPago",
    "version": "1.0.0",
