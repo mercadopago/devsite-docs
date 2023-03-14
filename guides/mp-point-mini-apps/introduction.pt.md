@@ -4,8 +4,8 @@ MiniApps son una solución híbrida basada en tecnologías web embebidas en un w
 
 Estos MiniApps se pueden desarrollar como cualquier otra solución web usando **HTML**, **CSS** y **avascript**, se pueden desarrollar usando **Javascript tradicional** (_Vanilla JS_) o usando un **Framework Javascript** como _React JS_ o cualquier otra herramienta utilizada para crear interfaces de usuario web.
 
-> NOTA
+> NOTE
 >
 > Importante
 >
-> Todas las URL deben funcionar sobre HTTPS.
+> Todas as URL devem funcionar sobre HTTPS.
