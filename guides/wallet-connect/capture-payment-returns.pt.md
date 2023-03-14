@@ -144,7 +144,7 @@ Este erro é retornado quando o cliente cancela o agreement.
 [[[
 ```Json
 ===
-Código de status: 201
+Código de status: 401
 ===
 {
    "status": "401",

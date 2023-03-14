@@ -8,15 +8,15 @@ Para reembolsar um valor parcial, é necessário indicar o valor que deve ser de
 ```curl
 
 POST
+'https://api.mercadopago.com/v1/advanced_payments/10458724/refunds' \
   -H 'X-Idempotency-Key: haSF4313get124' \
-  -H ‘Authorization: Bearer ${ACCESS_TOKEN}’ \
+  -H 'Authorization: Bearer ${ACCESS_TOKEN}' \
   -H 'accept: application/json' \
   -H 'content-type: application/json' \
-https://api.mercadopago.com/v1/advanced_payments/10458724/refunds
+  -d '{
+        "amount":25
+      }'
 
-{
-    "amount":25
-}
 
 ```
 ]]]
