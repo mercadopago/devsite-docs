@@ -12,16 +12,15 @@ Ao enviar o _request_ ao endpoint de Advanced Payments, garanta que os seguintes
 
 | Parâmetro  | Descrição  |
 | --- | --- |
+| wallet_payment | Indica que é um advanced payment de um vendedor com Wallet Connect previamente vinculado.  |
 | transaction_amount  | Valor total que deverá ser cobrado do comprador.  |
 | description  | Descrição do pagamento.  |
 | external_reference  | Referência de pagamento atribuída pelo vendedor  |
+| payer  | Informação do pagador requerida para criação do advanced payment  |
 | token  | payer_token obtido após a finalização do fluxo do agreement.  |
 | type_token  | Tipo de pagamento, para o uso no fluxo de Wallet Connect é preciso definir o valor “wallet-token”.  |
 | binary_mode  | O valor deste campo é obrigatoriamente "true".  |
 | X-Idempotency-Key  | Este parâmetro deve ser inserido no header de todos os requests. Para mais informações, veja a seção Idempotência.  |
-| wallet_payment  | Indica que é um advanced payment de um vendedor com Wallet Connect previamente vinculado.  |
-| payer  | Informação do pagador requerida para criação do advanced payment  |
-
 
 Com esses parâmetros em mãos, envie um **POST** ao endpoint [/v1/advanced_payments](/developers/pt/reference/wallet_connect/_advanced_payments/post) e execute a requisição ou, se preferir, utilize o `curl` abaixo.
 
