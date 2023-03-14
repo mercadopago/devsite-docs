@@ -53,6 +53,8 @@ Código de status: 200
 
 ## Resposta com falha: Bad request
 
+Esta é uma resposta que retorna quando algum dos parâmetros de requisição está incorreto ou não pode ser encontrado. Por exemplo, este erro aparecerá caso um dos parâmetros obrigatórios não seja enviado no momento da requisição.
+
 [[[
 ```Json
 ===
@@ -69,6 +71,8 @@ Código de status: 400
 
 
 ## Falha devido a conflito
+
+Esta falha ocorre quando um Advanced Payment é criado e o mesmo está em processamento ou já foi pago. Neste caso, o processo de idempotência não é cumprido e por isso é rejeitado.
 
 [[[
 ```Json

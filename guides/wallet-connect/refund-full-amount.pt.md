@@ -1,6 +1,6 @@
 # Reembolsar valor total
 
-Para reembolsar o valor total de um pagamento é necessário enviar um `body` vazio no _request_. Para isso, envie um **POST** ao endpoint /v1/advanced_payments/{advanced_payment_id}/refunds e execute a requisição ou, se preferir, utilize o `curl` abaixo. 
+Para reembolsar o valor total de um pagamento é necessário enviar um `body` vazio no _request_. Para isso, envie um **POST** ao endpoint [/v1/advanced_payments/{advanced_payment_id}/refunds](/developers/pt/reference/wallet_connect/_advanced_payments_advanced_payment_id_refunds/post) e execute a requisição ou, se preferir, utilize o `curl` abaixo. 
 
 [[[
 ```curl
@@ -45,6 +45,8 @@ Código de status: 200
 
 ### Resposta com falha: Bad request
 
+Esta é uma resposta comum quando um dos parâmetros de solicitação está incorreto ou não foi encontrado. Por exemplo, esse erro ocorrerá se um ID com formato incorreto for enviado no momento da requisição.
+
 [[[
 ```Json
 ===
@@ -70,6 +72,8 @@ Código de status: 400
 
 ### Resposta com falha: Not found
 
+Esta é uma resposta comum que é retornada quando nenhum Advanced Payment criado com o id fornecido nos parâmetros da solicitação é encontrado.
+
 [[[
 ```Json
 ===
@@ -94,6 +98,8 @@ Código de status: 404
 
 
 ### Resposta com falha: Internal error code
+
+É a resposta que indica que ocorreu um erro no servidor durante o processamento da solicitação. Isso significa que a solicitação do cliente não pôde ser concluída devido a um problema interno no servidor.
 
 [[[
 ```Json

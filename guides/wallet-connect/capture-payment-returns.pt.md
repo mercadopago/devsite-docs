@@ -105,6 +105,8 @@ Código de status: 201
 
 ## Pagamento rejeitado devido a dinheiro insuficiente na conta
 
+Esta resposta retorna quando ocorre a tentativa de criação de um Advanced Payment porém o payer não tem saldo em sua conta Mercado Pago. 
+
 [[[
 ```Json
 ===

@@ -46,7 +46,9 @@ Código de status: 200
 
 
 
-## Falha devido a Advanced payment not found.
+## Falha devido a Advanced payment não encontrado
+
+Esta é uma falha que acontece quando não se encontra nenhum Advanced Payment criado com o ID fornecido nos parâmetros de requisição.
 
 [[[
 ```Json
@@ -64,7 +66,9 @@ Código de status: 404
 
 
 
-## Falha devido a Client ID not found in whitelist.
+## Falha devido a Client ID não encontrado na whitelist
+
+Esta resposta retorna quando o `Client ID` não está na whitelist, portanto, não está habilitado para processamento.
 
 [[[
 ```Json
@@ -81,8 +85,9 @@ Código de status: 404
 ]]]
 
 
+## Falha devido a collector_id não encontrado na merchant list
 
-## Falha devido a collector_id not found in the merchant list.
+Esta resposta retorna quando o collector não se encontra na merchant list.
 
 [[[
 ```Json

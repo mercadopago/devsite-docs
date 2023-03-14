@@ -24,7 +24,7 @@ Ao enviar o _request_ ao endpoint de Advanced Payments, garanta que os seguintes
 
 
 
-Com esses parâmetros em mãos, envie um POST ao endpoint /v1/advanced_payments e execute a requisição ou, se preferir, utilize o `curl` abaixo.
+Com esses parâmetros em mãos, envie um **POST** ao endpoint [/v1/advanced_payments](/developers/pt/reference/wallet_connect/_advanced_payments/post) e execute a requisição ou, se preferir, utilize o `curl` abaixo.
 
 [[[
 ```curl
@@ -55,3 +55,5 @@ https://api.mercadopago.com/v1/advanced_payments
 
 ```
 ]]]
+
+Ao executar o `request` você poderá receber diferentes tipos de respostas originadas por razões específicas. Veja a seção [Respostas](/developers/pt/docs/wallet-connect/advanced-payments/capture-payment/returns) para mais informações.

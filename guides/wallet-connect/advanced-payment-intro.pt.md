@@ -18,4 +18,5 @@ Nesta documentação você encontra os seguintes endpoints para integração com
 
 * [Capturar pagamento](/developers/pt/docs/wallet-connect/advanced-payments/capture-payment)
 * [Idempotência](/developers/pt/docs/wallet-connect/advanced-payments/idempotency)
+* [Obter informações de pagamento](/developers/pt/docs/wallet-connect/advanced-payments/get-payment-information)
 * [Reembolsar pagamento (total e parcial)](/developers/pt/docs/wallet-connect/advanced-payments/refund-payment)
