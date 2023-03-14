@@ -94,6 +94,8 @@ Código de status: 409
 
 ## Falha devido a entidade não processável
 
+Esta falha ocorre quando, ao criar um Advanced Payment é identificado um erro ou alguma informação vazia. Quando isso acontece, não se cumpre o processo de idempotência, tornando-se uma entidade não processável e por isso é rejeitado.
+
 [[[
 ```Json
 ===
