@@ -1,6 +1,6 @@
 # Configure a integração com o Mercado Pago
 
-Para se comunicar com o aplicativo do Mercado Pago, o Mini App deve utilizar alguns comandos que estarão disponíveis para uso somente após o carregamento do MiniApp. Veja mais informações na seção [Ciclo de vida dos MiniApps]().
+Para se comunicar com o aplicativo do Mercado Pago, o MiniApp deve utilizar alguns comandos que estarão disponíveis para uso somente após o carregamento do MiniApp. Veja mais informações na seção [Ciclo de vida dos MiniApps](/developers/pt/docs/point/mini-apps/additional-content/lifecycle).
 
 Todos os comandos disponíveis suportam os seguintes parâmetros:
 
@@ -93,11 +93,11 @@ Exemplo de requisição:
 
 * `close`
 
-Permite fechar a tela do Mini App. 
+Permite fechar a tela do MiniApp. 
 
 | Parâmetro  | Tipo  | Obrigatório  | Valores possíveis | Descrição |
 | --- | --- | --- | --- | --- |
-| nenhum | nenhum | nenhum | nenhum| nenhum |
+| - | - | - | - | - |
 
 Exemplo de requisição:
 
@@ -185,9 +185,9 @@ Exemplo de requisição:
 
 function callbackResult(result, error) {
    if (result == 'success') {
-       // Success call
+       // Chamada de sucesso
    } else {
-       //'error' has detailed info of error
+       //'error' tem informações de erro detalhadas
    }
 }
 ```

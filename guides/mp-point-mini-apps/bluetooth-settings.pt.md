@@ -159,12 +159,6 @@ MobileWebKit.executeNative(
 
 Para emparelhar uma impressora, execute o comando JS `bluetooth_printer_devices` como no exemplo abaixo.
 
-| Parâmetro  | Tipo  | Obrigatório | Valores possíveis | Descrição |
-| --- | --- | --- | --- | --- |
-| id | string | true | UUID | O ID do dispositivo a ser desemparelhado. |
-
-Exemplo de requisição:
-
 ```javascript
 MobileWebKit.executeNative({
             "method": 'bluetooth_printer_devices',

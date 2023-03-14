@@ -12,7 +12,7 @@ Exemplo:
 <script src="share/smart_webkit.js" type="text/javascript"></script>
 ```
 
-Além disso, o recibo _HTML_` deve chamar a `notifyHtmlReadyToPrint` quando o recibo estiver pronto para impressão (por exemplo, imprimir recibo após carregar uma imagem de um serviço).
+Além disso, o recibo _HTML_ deve chamar a `notifyHtmlReadyToPrint` quando o recibo estiver pronto para impressão (por exemplo, imprimir recibo após carregar uma imagem de um serviço).
 
 Veja abaixo um uxemplo de código, que notifica o _HTML_ pronto para imprimir, após consumir um serviço e carregar uma imagem.
 

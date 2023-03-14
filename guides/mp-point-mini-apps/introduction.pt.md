@@ -1,11 +1,11 @@
 # Point MiniApps
 
-Os MiniApps são uma solução híbrida baseada em tecnologias web embarcadas em um wrapper nativo que fornece as capacidades nativas e serviços de pagamento fornecidos pelo Mercado Pago através do dispositivo Point Smart.
+MiniApps son una solución híbrida basada en tecnologías web embebidas en un wrapper nativo que brinda las capacidades nativas y los servicios de pago que brinda Mercado Pago a través del dispositivo Point Smart.
 
-Esses MiniApps podem ser desenvolvidos como qualquer outra solução Web usando **HTML**, **CSS** e **avascript**, podendo ser desenvolvidos usando **Javascript tradicional** (_Vanilla JS_) ou utilizando um **Framework Javascript** como _React JS_ ou qualquer outra ferramenta utilizada para construir interfaces de usuário da Web.
+Estos MiniApps se pueden desarrollar como cualquier otra solución web usando **HTML**, **CSS** y **avascript**, se pueden desarrollar usando **Javascript tradicional** (_Vanilla JS_) o usando un **Framework Javascript** como _React JS_ o cualquier otra herramienta utilizada para crear interfaces de usuario web.
 
-> NOTE
+> NOTA
 >
 > Importante
 >
-> Todos os URLs devem funcionar em HTTPS.
+> Todas las URL deben funcionar sobre HTTPS.

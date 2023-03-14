@@ -8,7 +8,7 @@ launchScannerCode((data, error) => {
        // Ocorreu um erro
        return
     }
-    // utilize dados var como resultado da leitura do scanner
+    // Utilize dados var como resultado da leitura do scanner
 })
 ```
 

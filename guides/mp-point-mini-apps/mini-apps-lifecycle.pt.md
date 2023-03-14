@@ -15,7 +15,7 @@ Esta categoria apresenda o estado do ciclo de vida geral do MiniApp, podendo ser
 Esta categoria apresenda o estado do ciclo de vida da página do MiniApp, podendo ser:
 
 * `PageState.ready`: se o MiniApp estiver pronto para ser usado, mas for para segundo plano antes de estar totalmente carregado, é possível que este evento seja enviado após o `GlobalState.hidden`.
-* `PageState.back`: se no [manifesto]() `control_back_action` for declarado como verdadeiro e o usuário pressionar o botão voltar no dispositivo, este evento será enviado ao MiniApp.
+* `PageState.back`: se no [manifesto](/developers/pt/docs/point/mini-apps/additional-content/manifest) `control_back_action` for declarado como verdadeiro e o usuário pressionar o botão voltar no dispositivo, este evento será enviado ao MiniApp.
 
 ## PointPayment
 
