@@ -1,6 +1,6 @@
 # Configurar la integración con Mercado Pago
 
-Para comunicarse con la aplicación de Mercado Pago, la MiniApp debe utilizar algunos comandos que solo estarán disponibles para su uso después de cargar la Mini App. Ver más información en la sección [Ciclo de vida de los MiniApps](/developers/es/docs/point/mini-apps/additional-content/lifecycle).
+Para comunicarse con la aplicación de Mercado Pago, la MiniApp debe utilizar algunos comandos que solo estarán disponibles para su uso después de cargarla. Ve más información en la sección [Ciclo de vida de las MiniApps](/developers/es/docs/point/mini-apps/additional-content/lifecycle).
 
 Todos los comandos disponibles admiten los siguientes parámetros:
 
