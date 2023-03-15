@@ -102,7 +102,7 @@ function callback_payment_error(data) {
 
 ### Eventos globales
 
-Independientemente del tipo de callback que se configure al iniciar el flujo de pago, el sistema enviará un evento global en *JavaScript* cuando el flujo se complete correctamente o cuando el flujo de pago falle. Estos eventos se denominan `PointPayment.Success` para cuando tiene éxito y `PointPayment.Error` para cuando falla.
+Independientemente del tipo de callback que se configure al iniciar el flujo de pago, el sistema enviará un evento global en *JavaScript* cuando el flujo se complete correctamente o cuando falle. Estos eventos se denominan `PointPayment.Success`,en caso de que sea exitoso, y `PointPayment.Error`,en caso de que falle.
 
 Ejemplo de implementación con manejo exitoso de eventos de pago:
 
