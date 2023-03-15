@@ -16,7 +16,7 @@ Para instalar los MiniApps en tu dispositivo Point SmartPOS, sigue estos pasos.
 * **Archivo _.zip_**: `miniapp_app123.zip`
 * **Dominio de App**: `app123.mp`
 
-5. Después de recibir la notificación de que la miniaplicación está disponible en el dispositivo SmartPOS, va a **Más opciones > Aplicaciones** y haz clic en **Instalar**. En la imagen de abajo, por ejemplo, el MiniApp se llama "Prueba de Mini-app".
+5. Después de recibir la notificación de que la miniaplicación está disponible en el dispositivo SmartPOS, ve a **Más opciones > Aplicaciones** y haz clic en **Instalar**. En la imagen de ejemplo de aquí debajo, el MiniApp se llama "Prueba de Mini-app".
 
 [IMAGEN]
 
