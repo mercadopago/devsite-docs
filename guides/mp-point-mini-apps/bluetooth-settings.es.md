@@ -87,7 +87,7 @@ MobileWebKit.executeNative(
             "callback": function (result, error) {
 
                 if (error != null) {
-                    // Ocurrio un error
+                    // Ocurrió un error
                     return
                 }
 
