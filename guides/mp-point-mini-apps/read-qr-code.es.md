@@ -16,4 +16,4 @@ launchScannerCode((data, error) => {
 >
 > Atención
 >
-> Debe validar los datos antes de usarlos porque existen riesgos de _XSS_ y _JavaScript Injection Attacks_. Tu es responsable de su aplicación.
+> Debes validar los datos antes de usarlos porque existen riesgos de _XSS_ y _JavaScript Injection Attacks_. Eres responsable de tu aplicación.
