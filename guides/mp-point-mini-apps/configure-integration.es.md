@@ -168,7 +168,7 @@ Ejemplo de respuesta:
 
 * `clear_history`
 
-Le permite borrar el historial de navegación.
+Te permite borrar el historial de navegación.
 
 | Parámetro | Tipo | Requerido | Valores posibles | Descripción |
 | --- | --- | --- | --- | --- |
