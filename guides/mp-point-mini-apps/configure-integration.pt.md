@@ -112,10 +112,6 @@ Exemplo de requisição:
 
 Permite obter o histórico de navegação.
 
-| Parâmetro  | Tipo  | Obrigatório  | Valores possíveis | Descrição |
-| --- | --- | --- | --- | --- |
-| - | - | - | - | - |
-
 Exemplo de requisição:
 
 ```javascript
@@ -140,10 +136,6 @@ Exemplo de resposta:
 * `info_device`
 
 Permite obter informações do dispositivo Point Smart, como: **número de série**, **marca** e **modelo**.
-
-| Parâmetro  | Tipo  | Obrigatório  | Valores possíveis | Descrição |
-| --- | --- | --- | --- | --- |
-| - | - | - | - | - |
 
 Exemplo de requisição:
 
@@ -170,10 +162,6 @@ Exemplo de resposta:
 
 Permite limpar histórico de navegação.
 
-| Parâmetro  | Tipo  | Obrigatório  | Valores possíveis | Descrição |
-| --- | --- | --- | --- | --- |
-| - | - | - | - | - |
-
 Exemplo de requisição:
 
 ```javascript
@@ -195,10 +183,6 @@ function callbackResult(result, error) {
 * `payment_methods`
 
 Permite obter as variantes de meios de pagamento permitidas para iniciar o fluxo de pagamento com um meio de pagamento específico. Todas as variantes de métodos de pagamento compatíveis com esta versão são: **cartões de crédito e débito**, **código QR**, **link de pagamento** e **voucher (cartões Sodexo)**.
-
-| Parâmetro  | Tipo  | Obrigatório  | Valores possíveis | Descrição |
-| --- | --- | --- | --- | --- |
-| - | - | - | - | - |
 
 Exemplo de requisição:
 

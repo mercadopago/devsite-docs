@@ -40,7 +40,7 @@ Te permite actualizar el título de la barra de herramientas.
 
 | Parámetro | Tipo | Requerido | Valores posibles | Descripción |
 | --- | --- | --- | --- | --- |
-| title | string | true | qualquer string | Texto para mostrar en ActionBar. | 
+| title | string | true | cualquier string | Texto para mostrar en ActionBar. | 
 
 Ejemplo de solicitud:
 
@@ -95,9 +95,6 @@ Ejemplo de solicitud:
 
 Te permite cerrar la pantalla del MiniApp.
 
-| Parámetro | Tipo | Requerido | Valores posibles | Descripción |
-| --- | --- | --- | --- | --- |
-| - | - | - | - | - |
 
 Ejemplo de solicitud:
 
@@ -111,10 +108,6 @@ Ejemplo de solicitud:
 * `history`
 
 Te permite obtener el historial de navegación.
-
-| Parámetro | Tipo | Requerido | Valores posibles | Descripción |
-| --- | --- | --- | --- | --- |
-| - | - | - | - | - |
 
 Ejemplo de solicitud:
 
@@ -141,10 +134,6 @@ Ejemplo de respuesta:
 
 Permite obtener información del dispositivo Point Smart, como: **número de serie**, **marca** y **modelo**.
 
-| Parámetro | Tipo | Requerido | Valores posibles | Descripción |
-| --- | --- | --- | --- | --- |
-| - | - | - | - | - |
-
 Ejemplo de solicitud:
 
 ```javascript
@@ -170,10 +159,6 @@ Ejemplo de respuesta:
 
 Te permite borrar el historial de navegación.
 
-| Parámetro | Tipo | Requerido | Valores posibles | Descripción |
-| --- | --- | --- | --- | --- |
-| - | - | - | - | - |
-
 Ejemplo de solicitud:
 
 ```javascript
@@ -195,10 +180,6 @@ function callbackResult(result, error) {
 * `payment_methods`
 
 Te permite obtener las variantes de método de pago permitidas para iniciar el flujo de pago con un método específico. Las variantes que admite esta versión son: **tarjetas de crédito y débito**, **código QR**, **link de pago** y **voucher (tarjetas Sodexo)**.
-
-| Parámetro | Tipo | Requerido | Valores posibles | Descripción |
-| --- | --- | --- | --- | --- |
-| - | - | - | - | - |
 
 Ejemplo de solicitud:
 

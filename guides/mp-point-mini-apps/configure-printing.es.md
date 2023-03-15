@@ -24,7 +24,7 @@ Una vez configurado correctamente el procesamiento del recibo _HTML_, para inici
 
 | Parámetro | Tipo | Requerido | Valores posibles | Descripción |
 | --- | --- | --- | --- | --- |
-| data | string | false | path o texto _HTML_ simple | Opcional: <br><br> Ruta del archivo _HTML_ con/sin parámetros, almacenado en una miniaplicación <br><br> Texto _HTML_ sin formato como string. |
+| data | string | false | path o texto _HTML_ simple | Opcional: <br><br> Ruta del archivo _HTML_ con/sin parámetros, almacenado en un MiniApp <br><br> Texto _HTML_ sin formato como string. |
 | callback | function | false | function callbackResult(result, error) | Devuelve el resultado de la impresión. |
 
 Ejemplo de solicitud con URL:
