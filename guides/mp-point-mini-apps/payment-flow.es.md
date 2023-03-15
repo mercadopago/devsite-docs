@@ -70,7 +70,7 @@ let errorStatus = urlParams.get('error_status');
 let metadata = urlParams.get('metadata');
 	
 /**  
-* Escreva o código aqui...
+* Escribe el código aquí...
 **/ 	
 ```
 
