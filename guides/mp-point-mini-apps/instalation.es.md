@@ -11,7 +11,7 @@ Para instalar los MiniApps en tu dispositivo Point SmartPOS, sigue estos pasos.
 ```
 
 3. Completa los campos del archivo de manifiesto correctamente, como se indica en la sección [Manifiesto de MiniApps](/developers/es/docs/point/mini-apps/additional-content/manifest). El archivo debe estar ubicado en la raíz del archivo _.zip_ y debe llamarse `miniapp_manifest.json`.
-4. Agregue el dominio que utilizará la MiniApp a las reglas de **CORS** utilizadas por la API remota. Para este paso de prueba, el nombre de dominio formará parte del nombre del archivo _.zip_ con el sufijo `.mp`. Ejemplo:
+4. Agrega el dominio que utilizará la MiniApp a las reglas de **CORS** utilizadas por la API remota. Para este paso de prueba, el nombre de dominio formará parte del nombre del archivo _.zip_ con el sufijo `.mp`. Ejemplo:
 
 * **Arquivo _.zip_**: `miniapp_app123.zip`
 * **Domínio do aplicativo**: `app123.mp`
