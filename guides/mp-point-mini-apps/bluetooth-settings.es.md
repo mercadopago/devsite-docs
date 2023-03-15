@@ -108,7 +108,7 @@ MobileWebKit.executeNative(
 
 ## Emparejar y desemparejar un dispositivo
 
-Para emparejar un dispositivo, ejecute el comando JS `bluetooth_pair_request` enviando el ID del dispositivo proporcionado por el comando de descubrimiento de dispositivos (`bluetooth_devices`).
+Para emparejar un dispositivo, ejecuta el comando JS `bluetooth_pair_request` enviando el ID del dispositivo proporcionado por el comando de descubrimiento de dispositivos (`bluetooth_devices`) ejecutado previamente.
 
 | Parámetro | Tipo | Requerido | Valores posibles | Descripción |
 | --- | --- | --- | --- | --- |
