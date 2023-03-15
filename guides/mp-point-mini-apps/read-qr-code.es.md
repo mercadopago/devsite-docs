@@ -1,6 +1,6 @@
 # Leer código QR
 
-Para leer un código QR usando la cámara del dispositivo, llame a la función `launchScannerCode` como en el ejemplo a continuación.
+Para leer un código QR usando la cámara del dispositivo, llama a la función `launchScannerCode` como en el ejemplo a continuación.
 
 ```javascript
 launchScannerCode((data, error) => {
