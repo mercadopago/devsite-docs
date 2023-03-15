@@ -93,7 +93,7 @@ Ejemplo de solicitud:
 
 * `close`
 
-Le permite cerrar la pantalla del MiniApp.
+Te permite cerrar la pantalla del MiniApp.
 
 | Parámetro | Tipo | Requerido | Valores posibles | Descripción |
 | --- | --- | --- | --- | --- |
