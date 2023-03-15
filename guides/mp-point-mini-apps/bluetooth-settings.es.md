@@ -157,7 +157,7 @@ MobileWebKit.executeNative(
 
 ## Emparejar impresora
 
-Para emparejar una impresora, ejecute el comando JS `bluetooth_printer_devices` como en el ejemplo a continuación.
+Para emparejar una impresora, ejecuta el comando JS `bluetooth_printer_devices` como en el ejemplo a continuación.
 
 ```javascript
 MobileWebKit.executeNative({
