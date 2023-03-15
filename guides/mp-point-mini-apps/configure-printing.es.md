@@ -35,7 +35,7 @@ launchPrint("receipt/index.html?product_value=300&taxes=45&total=345",
 
 function callbackResult(result, error) {
    if (result == 'success') {
-       // Escriba el código con éxito aquí
+       // Escribe el código con éxito aquí
    } else {
        //'error' tiene información de error detallada, como "outOfPaper"
    }
