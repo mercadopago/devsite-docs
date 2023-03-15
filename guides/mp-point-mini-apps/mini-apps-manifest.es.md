@@ -12,7 +12,7 @@ El manifiesto de MiniApps puede contener los siguientes campos:
 | show_action_bar | boolean | false | Define si los MiniApps admiten la barra de acciones de Android. <br><br> Esto es *False* por defecto. | 
 | use_wide_view_port | boolean | false |Define si los MiniApps admiten una ventana gráfica amplia. <br><br> Esto es *False* por defecto. | 
 | related_hosts | array  string  | false | Funciona como una lista blanca que declara con qué hosts se puede comunicar el MiniApp. Si el host no está en la lista, la comunicación se bloqueará. | 
-| client_id | string | true | Funciona como ID de MiniApp al iniciar un flujo de pago para la trazabilidad del pago. | 
+| client_id | string | true | Funciona como ID de MiniApp al iniciar un flujo de pago para la trazabilidad del mismo. | 
 | control_back_action | boolean | false | Define si el MiniApp puede manejar acciones de callback nativas. <br><br> Esto es *False* por defecto.| 
 
 A continuación se muestra un ejemplo de `miniapp_manifest.json`.
