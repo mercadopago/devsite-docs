@@ -55,7 +55,7 @@ Ejemplo de solicitud:
 
 * `back`
 
-Le permite navegar hacia atrás, pudiendo volver a varias pantallas.
+Te permite navegar hacia atrás, pudiendo retroceder varias pantallas.
 
 | Parámetro | Tipo | Requerido | Valores posibles | Descripción |
 | --- | --- | --- | --- | --- |
