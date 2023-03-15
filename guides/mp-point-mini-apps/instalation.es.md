@@ -14,7 +14,7 @@ Para instalar los MiniApps en tu dispositivo Point SmartPOS, sigue estos pasos.
 4. Agrega el dominio que utilizará la MiniApp a las reglas de **CORS** utilizadas por la API remota. Para este paso de prueba, el nombre de dominio formará parte del nombre del archivo _.zip_ con el sufijo `.mp`. Ejemplo:
 
 * **Archivo _.zip_**: `miniapp_app123.zip`
-* **Domínio do aplicativo**: `app123.mp`
+* **Dominio de App**: `app123.mp`
 
 5. Después de recibir la notificación de que la miniaplicación está disponible en el dispositivo SmartPOS, va a **Más opciones > Aplicaciones** y haz clic en **Instalar**. En la imagen de abajo, por ejemplo, el MiniApp se llama "Prueba de Mini-app".
 
