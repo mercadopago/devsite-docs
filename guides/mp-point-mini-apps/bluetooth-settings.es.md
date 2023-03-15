@@ -57,7 +57,7 @@ MobileWebKit.executeNative(
                     // Escribe el código aquí si el bluetooth está activado
 
                 } else {
-                    // Escriba el código aquí si el bluetooth está apagado
+                    // Escribe el código aquí si el bluetooth está apagado
 
                 }
             }
