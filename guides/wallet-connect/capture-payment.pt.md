@@ -27,7 +27,7 @@ Com esses parâmetros em mãos, envie um **POST** ao endpoint [/v1/advanced_paym
 [[[
 ```curl
 
-POST
+curl -X POST \
     'https://api.mercadopago.com/v1/advanced_payments' \
     -H 'X-Idempotency-Key: IDEMPOTENCY_KEY' \
     -H 'Authorization: Bearer ACCESS_TOKEN' \
