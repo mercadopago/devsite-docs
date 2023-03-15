@@ -110,7 +110,7 @@ Ejemplo de solicitud:
 
 * `history`
 
-Le permite obtener su historial de navegación.
+Te permite obtener el historial de navegación.
 
 | Parámetro | Tipo | Requerido | Valores posibles | Descripción |
 | --- | --- | --- | --- | --- |
