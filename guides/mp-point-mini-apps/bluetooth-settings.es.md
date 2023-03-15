@@ -167,7 +167,7 @@ MobileWebKit.executeNative({
 })
 ```
 
-Con la impresora emparejada, ejecute el comando JS `bluetooth_print` para imprimir en esta impresora. Envíe la ID de la impresora proporcionada por el comando de descubrimiento de dispositivos (`bluetooth_devices`) y el texto que se imprimirá.
+Una vez emparejada, ejecuta el comando JS `bluetooth_print` para imprimir en esa impresora. Envía la ID de la impresora proporcionada por el comando de descubrimiento de dispositivos (`bluetooth_devices`) y el texto que se imprimirá.
 
 | Parámetro | Tipo | Requerido | Valores posibles | Descripción |
 | --- | --- | --- | --- | --- |
