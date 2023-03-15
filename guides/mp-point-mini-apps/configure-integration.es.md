@@ -74,7 +74,7 @@ Ejemplo de solicitud:
 
 * `back_action`
 
-Le permite cambiar el comportamiento del botón **Volver**.
+Te permite cambiar el comportamiento del botón **Volver**.
 
 | Parámetro | Tipo | Requerido | Valores posibles | Descripción |
 | --- | --- | --- | --- | --- |
