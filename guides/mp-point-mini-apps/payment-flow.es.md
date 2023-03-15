@@ -30,7 +30,7 @@ Hay tres tipos de callbacks que se pueden configurar para capturar el resultado 
 | Parámetro | Tipo | Requerido | Descripción |
 | --- | --- | --- | --- |
 | payment_type | string | crédito, débito, voucher, qr e link | Indica el tipo de pago realizado. | 
-| payment_reference | string | paymentId ou um link de pagamento | Indica una referencia de tipo de pago. | 
+| payment_reference | string | paymentId ou link de pago | Indica una referencia de tipo de pago. | 
 | payment_creation_date | number | yyyy-MM-dd'T'HH:mm:ss'Z' | Indica la fecha y hora de pago en formato ISO INSTANT. | 
 | payment_sn_device | number |  - | Indica el número de serie del dispositivo. | 
 | payment_amount | number | 0.01 <= n <  50000 | Indica el monto total del pago. | 
