@@ -14,7 +14,7 @@ Ejemplo:
 
 Además, el recibo _HTML_ debe llamar a `notifyHtmlReadyToPrint` cuando el recibo esté listo para imprimirse (por ejemplo, imprimir el recibo después de cargar una imagen de un servicio).
 
-Ve a continuación un ejemplo de código, que notifica _HTML_ listo para imprimir, después de consumir un servicio y cargar una imagen.
+Ve a continuación un ejemplo de código, que notifica el _HTML_ listo para imprimir, después de consumir un servicio y cargar una imagen.
 
 ```html
 <img onload="notifyHtmlReadyToPrint()" src="https://mp.mp/code.aspx?tpcodigo=qrcode&vcodigo=abcd">
