@@ -10,7 +10,7 @@ Para **iniciar el flujo de pago con una configuración definida**, debes crear u
 | setCallbackSuccess | string | no | paths | Define un callback cuando el pago se completa con éxito. Este callback puede ser una ruta relativa o un nombre de función. | 
 | setCallbackError | string | no | paths | Define un callback cuando el pago falla por cualquier motivo. Este callback puede ser una ruta relativa o un nombre de función. | 
 
-Ejemplo solicitud:
+Ejemplo de solicitud:
 
 ```javascript
 var config = new PaymentConfigBuilder();
