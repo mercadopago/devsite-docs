@@ -6,7 +6,7 @@ El manifiesto de MiniApps puede contener los siguientes campos:
 
 | Parámetro | Tipo | Requerido | Descripción |
 | --- | --- | --- | --- |
-| name | string | true | En caso de que la Super App necesite mostrar el nombre de la MiniApp, el valor de este campo se utilizará para este propósito. | 
+| name | string | true | En caso de que la Super App necesite mostrar el nombre de la MiniApp, se mostrará el valor de este campo. | 
 | version | string | true | El número de versión de MiniApp formateado como un número dividido por puntos.|
 | state_persistence | boolean | true | Define si el MiniApp mantiene su estado después de cerrarse. <br><br> Esto es *True* por defecto. | 
 | show_action_bar | boolean | false | Define si los MiniApps admiten la barra de acciones de Android. <br><br> Esto es *False* por defecto. | 
