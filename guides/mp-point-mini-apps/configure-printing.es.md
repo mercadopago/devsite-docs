@@ -50,7 +50,7 @@ launchPrint("<html><head>...</head><body>...</body></html>",
 
 function callbackResult(result, error) {
    if (result == 'success') {
-       // Escriba el código con éxito aquí
+       // Escribe el código con éxito aquí
    } else {
        //'error' tiene información de error detallada, como "outOfPaper"
    }
