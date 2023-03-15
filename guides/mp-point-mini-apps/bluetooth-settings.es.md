@@ -23,7 +23,7 @@ Para encender y apagar un dispositivo bluetooth desde una MiniApp, se debe ejecu
 | --- | --- | --- | --- | --- |
 | action | string | true | on <br><br> off | Enciende o apaga el dispositivo bluetooth. |
 
-Si el comando tiene éxito, la devolución de llamada enviará un valor de "éxito".
+Si el comando tiene éxito, la devolución del llamado enviará un valor de "éxito".
 
 Ejemplo de solicitud:
 
