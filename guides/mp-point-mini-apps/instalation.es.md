@@ -3,7 +3,7 @@
 Para instalar los MiniApps en tu dispositivo Point SmartPOS, sigue estos pasos.
 
 1. Inserta un archivo de índice `index.html` en la raíz del archivo `.zip`.
-2. Importe los scripts puente para interactuar con el dispositivo Point Smart y los recursos que ofrece MercadoPago, incluyendo en cada archivo `html` los scripts de MercadoPago `smart_webkit.js` y `mobilewebkit.js` antes de la tag `</body>`.
+2. Importa los scripts puente para interactuar con el dispositivo Point Smart y los recursos que ofrece MercadoPago, incluyendo en cada archivo `html` los scripts de MercadoPago `smart_webkit.js` y `mobilewebkit.js` antes de la tag `</body>`.
 
 ```html
 <script source="share/mobilewebkit.js" type="text/javascript"></script>
