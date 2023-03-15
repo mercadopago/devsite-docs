@@ -194,7 +194,7 @@ function callbackResult(result, error) {
 
 * `payment_methods`
 
-Le permite obtener las variantes de método de pago permitidas para iniciar el flujo de pago con un método de pago específico. Todas las variantes de métodos de pago que admite esta versión son: **tarjetas de crédito y débito**, **código QR**, **link de pago** y **voucher (tarjetas Sodexo)**.
+Te permite obtener las variantes de método de pago permitidas para iniciar el flujo de pago con un método específico. Las variantes que admite esta versión son: **tarjetas de crédito y débito**, **código QR**, **link de pago** y **voucher (tarjetas Sodexo)**.
 
 | Parámetro | Tipo | Requerido | Valores posibles | Descripción |
 | --- | --- | --- | --- | --- |
