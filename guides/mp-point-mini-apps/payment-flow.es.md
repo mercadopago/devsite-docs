@@ -1,6 +1,6 @@
 # Flujo de pago
 
-Para **iniciar el flujo de pago con una configuración definida** debe crear una instancia `PaymentConfigBuilder` para definir una configuración necesaria. Luego use el método `launchPayment` con esta configuración para iniciar el flujo de pago.
+Para **iniciar el flujo de pago con una configuración definida**, debes crear una instancia `PaymentConfigBuilder` y definir una configuración necesaria. Luego usa el método `launchPayment` con esta configuración para iniciar el flujo de pago.
 
 | Parámetro | Tipo | Requerido | Valores posibles | Descripción |
 | --- | --- | --- | --- | --- |
