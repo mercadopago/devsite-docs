@@ -24,4 +24,4 @@ Para instalar los MiniApps en tu dispositivo Point SmartPOS, sigue estos pasos.
 
 [IMAGEN]
 
-7. Seleccione el elemento y vea el MiniApp.
+7. Selecciona el elemento y ve el MiniApp.
