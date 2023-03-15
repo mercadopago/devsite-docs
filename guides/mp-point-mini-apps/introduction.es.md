@@ -8,4 +8,4 @@ Estos MiniApps se pueden desarrollar como cualquier otra solución web, usando *
 >
 > Importante
 >
-> Todas as URL devem funcionar sobre HTTPS.
+> Todas las URL deben funcionar sobre HTTPS.
