@@ -54,7 +54,7 @@ MobileWebKit.executeNative(
             "args": {},
             "callback": function (isOn, error) {
                 if (isOn) {
-                    // Escriba el código aquí si el bluetooth está activado
+                    // Escribe el código aquí si el bluetooth está activado
 
                 } else {
                     // Escriba el código aquí si el bluetooth está apagado
