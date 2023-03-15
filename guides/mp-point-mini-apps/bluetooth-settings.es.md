@@ -43,7 +43,7 @@ MobileWebKit.executeNative(
 
 ## Obtener el estado
 
-Para saber si el bluetooth está activado o no en la MiniApp, debes ejecutar el comando JS `bluetooth_status` donde el resultado es un booleano que indica si está activado.
+Para saber si el bluetooth está activado o no en la MiniApp, debes ejecutar el comando JS `bluetooth_status`, cuyo resultado es un booleano que indica si está activado.
 
 Ejemplo de solicitud:
 
