@@ -5,7 +5,7 @@ Para **iniciar el flujo de pago con una configuración definida**, debes crear u
 | Parámetro | Tipo | Requerido | Valores posibles | Descripción |
 | --- | --- | --- | --- | --- |
 | setAmount | number | true | 0.01 <= n <  50000 | Define el monto a cobrar.| 
-| setPaymentMethod | string | true | crédito, débito, qr e link | Indica si el flujo de facturación se inicia directamente para un método de pago sin pasar por el selector de métodos de pago. | 
+| setPaymentMethod | string | true | crédito, débito, qr y link | Indica si el flujo de facturación se inicia directamente para un método de pago sin pasar por el selector de métodos de pago. | 
 | setMetadata | string | no | objeto Json como uma string | Información adicional en formato JSON con codificación de URL y que se devolverá en el callback cuando se complete el flujo de pago. | 
 | setCallbackSuccess | string | no | paths | Define un callback cuando el pago se completa con éxito. Este callback puede ser una ruta relativa o un nombre de función. | 
 | setCallbackError | string | no | paths | Define un callback cuando el pago falla por cualquier motivo. Este callback puede ser una ruta relativa o un nombre de función. | 
