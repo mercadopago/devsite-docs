@@ -34,7 +34,7 @@ MobileWebKit.executeNative(
        "args": {"action": on},
        "callback": function (result, error) {
            if (result === "success") {
-               //  Escriba el código con éxito aquí
+               //  Escribe el código con éxito aquí
            }
        }
    }
