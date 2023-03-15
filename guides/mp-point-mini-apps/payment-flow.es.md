@@ -25,7 +25,7 @@ launchPayment(config);
 
 ## Manejo de callbacks con resultados de pago
 
-Hay tres tipos de callbacks que se pueden configurar para capturar el resultado del flujo de pago, dos de ellos se configuran cuando se lanza el flujo de pago, que son **por URL y por funciones nativas de _JavaScript_**, y el otro es vía de **eventos globales**.
+Hay tres tipos de callbacks que se pueden configurar para capturar el resultado del flujo de pago. Dos de ellos se configuran cuando se lanza el flujo de pago, uno  **por URL y por funciones nativas de _JavaScript_**, y el otro vía **eventos globales**.
 
 | Parámetro | Tipo | Requerido | Descripción |
 | --- | --- | --- | --- |
