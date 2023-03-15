@@ -5,9 +5,13 @@ Para reembolsar o valor total de um pagamento é necessário enviar um `body` va
 [[[
 ```curl
 
-curl -X POST \
+POST \
       'https://api.mercadopago.com/v1/advanced_payments/{advanced_payment_id}/refunds' \
-      -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' 
+  -H 'X-Idempotency-Key: haSF4313get124' \
+  -H ‘Authorization: Bearer ${ACCESS_TOKEN}’ \
+  -H 'accept: application/json' \
+  -H 'content-type: application/json' \
+
 
 ```
 ]]]
