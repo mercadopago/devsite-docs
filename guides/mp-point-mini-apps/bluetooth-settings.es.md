@@ -67,7 +67,7 @@ MobileWebKit.executeNative(
 
 ## Descubrir dispositivos para emparejar
 
-Para descubrir los dispositivos visibles para iniciar un emparejamiento, se debe ejecutar el comando JS `bluetooth_devices` enviando el parámetro `state` con el valor de `all` y, para listar los dispositivos emparejados, se debe ejecutar el comando JS `bluetooth_devices` enviando el parámetro `state` con el valor de `paired`.
+Para descubrir los dispositivos visibles e iniciar un emparejamiento, debes ejecutar el comando JS `bluetooth_devices` enviando el parámetro `state` con el valor de `all`. Para listar los dispositivos emparejados, debes ejecutar el comando JS `bluetooth_devices` enviando el parámetro `state` con el valor de `paired`.
 
 | Parámetro | Tipo | Requerido | Valores posibles | Descripción |
 | --- | --- | --- | --- | --- |
