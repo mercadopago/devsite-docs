@@ -76,7 +76,7 @@ let metadata = urlParams.get('metadata');
 
 ### Callbacks de funciones nativas de JS
 
-Habiendo configurado una función de callback *JavaScript* al iniciar el flujo de pago, los datos de pago se pueden obtener de la siguiente manera.
+Con una función de callback *JavaScript* configurada al iniciar el flujo de pago, los datos de pago se pueden obtener de la siguiente manera.
 
 Ejemplo de callback exitoso:
 
