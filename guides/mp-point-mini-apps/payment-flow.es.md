@@ -35,7 +35,7 @@ Hay tres tipos de callbacks que se pueden configurar para capturar el resultado 
 | payment_sn_device | number |  - | Indica el número de serie del dispositivo. | 
 | payment_amount | number | 0.01 <= n <  50000 | Indica el monto total del pago. | 
 | payment_installments | number | - | Indica el número de cuotas (crédito, débito y voucher), si aplica. | 
-| payment_brand_name  | string | - | Indica la marca de la tarjeta (crédito, débito y voucher), cuando se aplica. | 
+| payment_brand_name  | string | - | Indica la marca de la tarjeta (crédito, débito y voucher), si aplica. | 
 | error_status | string | canceled e unknown | Indica el tipo de falla que ocurrió durante el proceso, que puede ser que se canceló el flujo de efectivo o que ocurrió un error desconocido en el flujo de cobranza que no se pudo determinar.| 
 | metadata | string | objeto Json como uma string | La información adicional proporcionada por MiniApp al iniciar el flujo de pago. | 
 
