@@ -56,7 +56,7 @@ let paymentReference = urlParams.get('payment_reference');
 let metadata = urlParams.get('metadata');
 	
 /**  
-* Escreva o código aqui...
+* Escribe el código aquí...
 **/ 	
 ```
 
