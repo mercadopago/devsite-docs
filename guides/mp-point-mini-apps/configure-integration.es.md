@@ -36,7 +36,7 @@ Ve a continuación qué comandos están disponibles para usar solo después de c
 
 * `set_title`
 
-Le permite actualizar el título de la barra de herramientas.
+Te permite actualizar el título de la barra de herramientas.
 
 | Parámetro | Tipo | Requerido | Valores posibles | Descripción |
 | --- | --- | --- | --- | --- |
