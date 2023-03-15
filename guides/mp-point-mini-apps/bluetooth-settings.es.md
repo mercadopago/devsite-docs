@@ -17,7 +17,7 @@ function callbackResult(result, error) {
 
 ## Encender y apagar
 
-Para encender y apagar un dispositivo bluetooth desde una MiniApp, se debe ejecutar el comando JS `bluetooth_enable` enviando como parámetro una acción para indicar la `action` a realizar.
+Para encender y apagar un dispositivo bluetooth desde una MiniApp, se debe ejecutar el comando JS `bluetooth_enable`, enviando como parámetro una acción para indicar la `action` a realizar.
 
 | Parámetro | Tipo | Requerido | Valores posibles | Descripción |
 | --- | --- | --- | --- | --- |
