@@ -43,7 +43,7 @@ A continuación se muestra un ejemplo de cada tipo de callback personalizado.
 
 ### URL de callback
 
-Con una URL de callback configurado para cuando el flujo de pago sea exitoso, es posible obtener los datos de pago de la siguiente manera:
+Con una URL de callback configurada para cuando el flujo de pago sea exitoso, es posible obtener los datos de pago de la siguiente manera:
 
 ```javascript
 launchPaymentFlow(15.50, null,'congrats.html','error.html')
