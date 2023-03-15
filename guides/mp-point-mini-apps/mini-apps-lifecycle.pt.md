@@ -1,6 +1,6 @@
 # Ciclo de vida dos Mini Apps
 
-O ciclo de vida do MiniApps é controlado por meio de eventos de callback que podem ser inscritos como qualquer evento personalizado `DOM`. Existem três categorias de eventos de ciclo de vida, veja mais informações abaixo.
+O ciclo de vida dos MiniApps é controlado por meio de eventos de callback que podem ser inscritos como qualquer evento personalizado `DOM`. Existem três categorias de eventos de ciclo de vida, veja mais informações abaixo.
 
 ## GlobalState
 
@@ -15,7 +15,7 @@ Esta categoria apresenda o estado do ciclo de vida geral do MiniApp, podendo ser
 Esta categoria apresenda o estado do ciclo de vida da página do MiniApp, podendo ser:
 
 * `PageState.ready`: se o MiniApp estiver pronto para ser usado, mas for para segundo plano antes de estar totalmente carregado, é possível que este evento seja enviado após o `GlobalState.hidden`.
-* `PageState.back`: se no [manifesto](/developers/pt/docs/point/mini-apps/additional-content/manifest) `control_back_action` for declarado como verdadeiro e o usuário pressionar o botão voltar no dispositivo, este evento será enviado ao MiniApp.
+* `PageState.back`: se no [manifesto](/developers/pt/docs/point/mini-apps/additional-content/manifest) `control_back_action` for declarado como verdadeiro e o usuário pressionar o botão **Voltar** no dispositivo, este evento será enviado ao MiniApp.
 
 ## PointPayment
 

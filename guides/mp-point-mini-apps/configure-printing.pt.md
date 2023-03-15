@@ -25,8 +25,8 @@ Configurado o processamento do recibo _HTML_ corretamente, para iniciar a impres
 
 | Parâmetro  | Tipo  | Obrigatório | Valores possíveis | Descrição |
 | --- | --- | --- | --- | --- |
-| data | string | no | path ou texto _HTML_ simples | Opcional: <br><br> O caminho do arquivo _HTML_ com/sem parâmetros, armazenado em um MiniApp <br><br> Texto _HTML_ simples como string |
-| callback | function | no | function callbackResult(result, error) | Retorna o resultado da impressão. |
+| data | string | false | path ou texto _HTML_ simples | Opcional: <br><br> O caminho do arquivo _HTML_ com/sem parâmetros, armazenado em um MiniApp <br><br> Texto _HTML_ simples como string |
+| callback | function | false | function callbackResult(result, error) | Retorna o resultado da impressão. |
 
 Exemplo de requisição com URL:
 

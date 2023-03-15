@@ -39,7 +39,7 @@ Existem três tipos de callbacks que podem ser configurados para capturar o resu
 | error_status | string | canceled e unknown | Indica o tipo de falha que ocorreu durante o processo, podendo ser que o fluxo de caixa foi cancelado ou de que ocorreu um erro desconhecido no fluxo de coleta que não pôde ser determinado. | 
 | metadata | string | objeto Json como uma string | As informações adicionais fornecidas pelo MiniApp ao iniciar o fluxo de pagamento.| 
 
-Veja abaixo um exemplo de cada tipo de retorno de chamada personalizado.
+Veja abaixo um exemplo de cada tipo de callback personalizado.
 
 ### URL de callback
 
@@ -50,7 +50,7 @@ launchPaymentFlow(15.50, null,'congrats.html','error.html')
 
 let urlQueryString = window.location.search;
 let urlParams = new URLSearchParams(urlQueryString);
-// Getting payment data successful from url params
+// Obtendo erro de dados de pagamento a partir de dados de evento
 let paymentType = urlParams.get('payment_type');
 let paymentReference = urlParams.get('payment_reference');
 let metadata = urlParams.get('metadata');
@@ -65,7 +65,7 @@ Com uma URL de callback configurada para quando o fluxo de pagamento falhar, é 
 ```javascript
 let urlQueryString = window.location.search;
 let urlParams = new URLSearchParams(urlQueryString);
-// Getting payment data successful from url params
+// Obtendo erro de dados de pagamento a partir de dados de evento
 let errorStatus = urlParams.get('error_status');
 let metadata = urlParams.get('metadata');
 	
@@ -102,7 +102,7 @@ function callback_payment_error(data) {
 
 ### Eventos globais
 
-Independente do tipo de callback que for configurado ao lançar o fluxo de pagamento, o sistema enviará um evento global em JavaScript quando o fluxo for concluído com sucesso ou quando o fluxo de pagamento falhar. Esses eventos são nomeados `PointPayment.Success` para quando for bem sucedido e `PointPayment.Error` para quando falhou.
+Independente do tipo de callback que for configurado ao lançar o fluxo de pagamento, o sistema enviará um evento global em _JavaScript_ quando o fluxo for concluído com sucesso ou quando o fluxo de pagamento falhar. Esses eventos são nomeados `PointPayment.Success` para quando for bem sucedido e `PointPayment.Error` para quando falhou.
 
 Exemplo de implementação com tratamento do evento de pagamento bem-sucedido:
 
@@ -110,7 +110,7 @@ Exemplo de implementação com tratamento do evento de pagamento bem-sucedido:
 window.addEventListener("PointPayment.Success", (event) => {
 
    let data=event.detail;
-   // Getting payment data successful from event data
+   // Obtendo erro de dados de pagamento a partir de dados de evento
    let paymentType = data["payment_type"];
    let paymentReference = data["payment_reference"];
    let paymentCreationDate = data["payment_creation_date"];
@@ -134,7 +134,7 @@ Exemplo de implementação com tratamento do evento de falha de pagamento:
 window.addEventListener("PointPayment.Error", (event) => {
   
 	let data=event.detail;
-	// Getting payment data error from event data
+	// Obtendo erro de dados de pagamento a partir de dados de evento
 	let errorStatus = data["error_status"]; 
 	let metadata = data['metadata'];
 	
