@@ -59,7 +59,7 @@ Te permite navegar hacia atrás, pudiendo retroceder varias pantallas.
 
 | Parámetro | Tipo | Requerido | Valores posibles | Descripción |
 | --- | --- | --- | --- | --- |
-| screen | int | true | 0 < n < 50 | El número de pantallas para retroceder, por defecto = 1. | 
+| screen | int | true | 0 < n < 50 | El número de pantallas para retroceder. Por defecto = 1. | 
 
 Ejemplo de solicitud:
 
