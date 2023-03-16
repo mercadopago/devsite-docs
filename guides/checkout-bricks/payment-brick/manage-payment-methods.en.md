@@ -1,6 +1,8 @@
 # Manage payment methods
 
-Payment Brick allows integration with multiple payment methods. To do so, adjust the accepted payment methods in Brick's customizations. To not include the payment method of a certain type, remove it from the `paymentMethods` object.
+Payment Brick allows integration with multiple payment methods and, to do so, adjust the accepted payment methods in Brick's customizations. 
+
+> To not include the payment method of a certain type, remove it from the `paymentMethods` object.
 
 ```Javascript
 const settings = {

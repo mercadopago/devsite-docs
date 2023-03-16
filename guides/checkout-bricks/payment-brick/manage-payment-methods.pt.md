@@ -1,6 +1,8 @@
 # Gerenciar meios de pagamento
 
-O Payment Brick permite a integração com múltiplos meios de pagamento. Ppara isso, ajuste nas customizações do Brick os meios de pagamento aceitos. Para não incluir o meio de pagamento de um determinado tipo, remova-o do objeto de `paymentMethods`.
+O Payment Brick permite a integração com múltiplos meios de pagamento e, para isso, ajuste nas customizações do Brick os meios de pagamento aceitos. 
+
+> Para não incluir o meio de pagamento de um determinado tipo, remova-o do objeto de `paymentMethods`.
 
 ```Javascript
 const settings = {
