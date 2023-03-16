@@ -23,15 +23,15 @@ Veja abaixo o diagrama que ilustra o funcionamento da `Idempotency Key` no proce
 
 curl -X POST \
     -H 'X-Idempotency-Key: IDEMPOTENCY_KEY' \
-    -H ‘Authorization: Bearer ACCESS_TOKEN’
+    -H 'Authorization: Bearer ACCESS_TOKEN'
     -H 'accept: application/json' \
     -H 'content-type: application/json' \
-    'https://api.mercadopago.com/v1/advanced_payments’ \
+    'https://api.mercadopago.com/v1/advanced_payments' \
     -d '{
         "wallet_payment":{
            "transaction_amount":700.50,
            "description":"Payment Description",
-           "external_reference":"Pago_123”     
+           "external_reference":"Pago_123"     
         },
        "payer":{
            "token":"PAYER_TOKEN",

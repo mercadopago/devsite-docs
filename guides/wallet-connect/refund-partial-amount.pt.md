@@ -7,14 +7,14 @@ Para reembolsar um valor parcial, ou seja, devolver somente parte do valor pago,
 
 curl -X POST \
 'https://api.mercadopago.com/v1/advanced_payments/ADVANCED_PAYMENT_ID/refunds' \
-  -H 'X-Idempotency-Key: IDEMPOTENCY_KEY \
+  -H 'X-Idempotency-Key: IDEMPOTENCY_KEY' \
   -H 'Authorization: Bearer ACCESS_TOKEN' \
   -H 'accept: application/json' \
   -H 'content-type: application/json' \
   -d '{
         "amount":25
       }'
-
+      
 ```
 ]]]
 
