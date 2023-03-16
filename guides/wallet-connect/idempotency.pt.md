@@ -22,8 +22,8 @@ Veja abaixo o diagrama que ilustra o funcionamento da `Idempotency Key` no proce
 ```curl
 
 curl -X POST \
-    -H 'X-Idempotency-Key: faDF8323asd298' \
-    -H ‘Authorization: Bearer ${ACCESS_TOKEN}’
+    -H 'X-Idempotency-Key: IDEMPOTENCY_KEY' \
+    -H ‘Authorization: Bearer ACCESS_TOKEN’
     -H 'accept: application/json' \
     -H 'content-type: application/json' \
     'https://api.mercadopago.com/v1/advanced_payments’ \

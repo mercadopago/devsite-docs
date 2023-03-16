@@ -15,7 +15,7 @@ Código de status: 200
    "status":"approved",
    "wallet_payment":{
       "transaction_amount":700.50,
-      "description":"Payment Google",
+      "description":"Payment for the purchase of furniture",
       "external_reference":"Pago_123”
    },
    "payments":[
