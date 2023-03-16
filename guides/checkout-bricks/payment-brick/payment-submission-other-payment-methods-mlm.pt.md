@@ -2,7 +2,7 @@
 >
 > h1
 >
-> Enviar pagamento (outros meios de pagamento)
+> Outros meios de pagamento
 
 Para configurar **pagamentos com dinheiro via ticket**, envie um POST com os seguintes parâmetros ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, utilize um de nossos SDKs abaixo.
 

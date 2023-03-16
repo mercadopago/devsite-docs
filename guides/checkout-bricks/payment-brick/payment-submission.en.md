@@ -2,7 +2,7 @@
 >
 > h1
 >
-> Payment submission to Mercado Pago
+> Payments submission
 
 To continue with the Mercado Pago payment process, your backend should know how to receive form information with the generated token and the filled out data. Your backend should make available a `/process_payment` endpoint to receive all the data.
 

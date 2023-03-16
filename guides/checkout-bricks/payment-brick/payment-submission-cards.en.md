@@ -2,7 +2,7 @@
 >
 > h1
 >
-> Send payment (cards)
+> Cards
 
 With all the information collected in the backend, send a POST with the necessary attributes to the endpoint [/v1/payments ](/developers/en/reference/payments/_payments/post) and execute the request or, if you prefer, send the information using our SDKs.
 
