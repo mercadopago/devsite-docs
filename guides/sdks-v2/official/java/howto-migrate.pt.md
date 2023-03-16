@@ -142,7 +142,7 @@ const securityCodeElement = mp.fields.create('securityCode', {
 }).mount('securityCode');
 ````
 
-Com isso, agora temos os nossos campos PCI seguros dentro do formulário.
+Com isso, agora temos os nossos campos PCI seguros dentro do formulário. Para mais informações sobre como configurar os iframes, acesse nosso [Github](https://github.com/mercadopago/sdk-js/blob/main/API/fields.md).
 
 ## Obter tipos de documento
 
