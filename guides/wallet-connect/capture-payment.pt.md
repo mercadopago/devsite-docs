@@ -1,8 +1,8 @@
 # Capturar pagamento
 
-A captura do pagamento é a confirmação do valor que deseja cobrar do comprador. Nesse ponto do fluxo de pagamento, o vendedor precisa que determinado pagamento seja retirado da carteira do cliente no momento de sua criação.
+A captura do pagamento é a **confirmação do valor que deseja cobrar do comprador**. Nesse ponto do fluxo de pagamento, o vendedor precisa que determinado pagamento seja retirado da carteira do cliente no momento de sua criação.
 
-Veja o diagrama abaixo que ilustra o processo de captura de pagamento por meio da API de Advanced Payments.
+Veja abaixo o diagrama que ilustra o processo de captura de pagamento por meio da API de Advanced Payments.
 
 ![Capture-payment-flow](/images/wallet-connect/captured-payment.pt.png)
 

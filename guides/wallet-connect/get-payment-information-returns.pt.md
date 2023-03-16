@@ -1,6 +1,6 @@
 # Respostas
 
-Ao executar o request para obter informações de pagamento, é possível que se retornem diferentes respostas. Na próxima seção você encontra o detalhe de cada uma delas, bem como as possíveis causas.
+Nesta seção você encontra o detalhe de cada resposta às requisições realizadas para obter informações de pagamento.
 
 ## Resposta de sucesso 
 

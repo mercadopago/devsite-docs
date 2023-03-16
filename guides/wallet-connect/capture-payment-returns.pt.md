@@ -1,6 +1,6 @@
 # Respostas 
 
-Ao executar o _request_ para captura de pagamentos, é possível que se retornem diferentes respostas. Nesta seção você encontra o detalhe de cada uma delas, bem como as possíveis causas.
+Nesta seção você encontra o detalhe de cada resposta às requisições realizadas para a captura de pagamento.
 
 ## Pagamento aprovado
 

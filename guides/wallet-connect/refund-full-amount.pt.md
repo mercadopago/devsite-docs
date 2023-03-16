@@ -17,7 +17,7 @@ curl -X POST \
 
 ## Respostas
 
-Ao executar o request para um reembolso total, é possível que se retornem diferentes respostas. Na próxima seção você encontra o detalhe de cada uma delas, bem como as possíveis causas.
+Ao executar o request para um reembolso total, é possível que se retornem diferentes respostas. Abaixo você encontra o detalhe de cada uma delas, bem como as possíveis causas.
 
 ### Resposta de sucesso
 

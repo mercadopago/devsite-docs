@@ -1,8 +1,6 @@
 # Reembolsar valor parcial
 
-Um reembolso parcial ocorre quando somente parte do valor pago é devolvido ao comprador. 
-
-Para reembolsar um valor parcial, é necessário indicar o valor que deve ser devolvido diretamente no `body` do _request_. Para isso, envie um **POST** ao endpoint [/v1/advanced_payments/{advanced_payment_id}/refunds](/developers/pt/reference/wallet_connect/_advanced_payments_advanced_payment_id_refunds/post) com as devidas informações e execute a requisição ou, se preferir, utilize o `curl` abaixo.
+Para reembolsar um valor parcial, ou seja, devolver somente parte do valor pago, é necessário indicar o valor que deve ser devolvido diretamente no `body` do _request_. Para isso, envie um **POST** ao endpoint [/v1/advanced_payments/{advanced_payment_id}/refunds](/developers/pt/reference/wallet_connect/_advanced_payments_advanced_payment_id_refunds/post) com as devidas informações e execute a requisição ou, se preferir, utilize o `curl` abaixo.
 
 [[[
 ```curl
@@ -22,7 +20,7 @@ curl -X POST \
 
 ## Respostas
 
-Ao executar o request para um reembolso parcial, é possível que se retornem diferentes respostas. Na próxima seção você encontra o detalhe de cada uma delas, bem como as possíveis causas.
+Ao executar o request para um reembolso parcial, é possível que se retornem diferentes respostas. Abaixo você encontra o detalhe de cada uma delas, bem como as possíveis causas.
 
 ### Resposta de sucesso
 

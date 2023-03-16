@@ -2,8 +2,6 @@
 
 Advanced Payments são pagamentos específicos para Wallet Connect nos quais o integrador obtém um "payer token" do pagador ao realizar o fluxo do Agreement. Este "payer token" é usado pelo integrador para fazer o pagamento a partir da carteira digital do pagador. 
 
-Veja a seção [Criar payer token](/developers/pt/docs/wallet-connect/integration-configuration/create-payer-token) para mais informações.
-
 > WARNING
 >
 > Importante
