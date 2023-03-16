@@ -386,7 +386,6 @@ With Pix, you can also choose the period that the customer will have to pay for 
 >
 > By default, the expiration date for payments with Pix is **24 hours**, but you can change it by submitting the `date_of_expiration` field in the payment creation request. The configured date must be between **5 minutes and 30 days** from the payment issue date.
 
-
 ## Payment visualization
 
 For the user to make the payment, you must choose the way to open it, which can be through a button or a QR code that must be rendered.
