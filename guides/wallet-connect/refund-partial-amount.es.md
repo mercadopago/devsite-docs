@@ -1,6 +1,6 @@
 # Reembolsar monto parcial
 
-Para reembolsar un monto parcial, es decir, devolver solo una parte del valor pagado, es necesario indicar el valor que debe ser devuelto directamente en el `body` del _request_. Para ello, envíe un **POST** al endpoint [/v1/advanced_payments/{advanced_payment_id}/refunds](/developers/pt/reference/wallet_connect/_advanced_payments_advanced_payment_id_refunds/post) con la información adecuada y ejecute el _request_ o, si lo prefiere, utilice el `curl` que se muestra a continuación.
+Para reembolsar un monto parcial, es decir, devolver solo una parte del valor pagado, es necesario indicar el valor que debe ser devuelto directamente en el `body` del _request_. Para ello, envía un **POST** al endpoint [/v1/advanced_payments/{advanced_payment_id}/refunds](/developers/es/reference/wallet_connect/_advanced_payments_advanced_payment_id_refunds/post) con la información adecuada y ejecuta el _request_ o, si lo prefieres, utiliza el `curl` que se muestra a continuación.
 
 
 [[[

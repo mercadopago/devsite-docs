@@ -1,6 +1,6 @@
 # Respuestas
 
-En esta sección encontrará el detalle de cada respuesta a los _requests_ realizados para la captura de pago.
+En esta sección encontrarás el detalle de cada respuesta a los _requests_ realizados para la captura de pago.
 
 ## Pago aprobado
 
@@ -54,7 +54,7 @@ Código de status: 201
 >
 > Importante
 >
-> Para obtener más información sobre el motivo del rechazo del pago, consulte el campo `payment.status_detail`.
+> Para obtener más información sobre el motivo del rechazo del pago, consulta el campo `payment.status_detail`.
 
 [[[
 ```Json
@@ -143,7 +143,7 @@ Código de status: 201
 
 ## Pago rechazado por falta de autorización
 
-Este error se produce cuando el cliente cancela el agreement.
+Este error se produce cuando el cliente cancela el Agreement.
 
 [[[
 ```Json

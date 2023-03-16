@@ -1,6 +1,6 @@
 # Capturar pago
 
-La captura de pago es la confirmación del valor que se desea cobrar al comprador. En este punto del flujo de pago, el vendedor necesita que se retire el pago específico de la billetera del cliente en el momento de su creación.
+La captura de pago es la confirmación del valor que se desea cobrar al comprador. En este punto del flujo de pago, el vendedor necesita que se retire el pago de la billetera del cliente en el momento de su creación.
 
 A continuación, se muestra el diagrama que ilustra el proceso de captura de pago a través de la API de Advanced Payments.
 
@@ -9,7 +9,7 @@ A continuación, se muestra el diagrama que ilustra el proceso de captura de pag
 
 ## Enviar request
 
-Al enviar el _request_ al endpoint de Advanced Payments, asegúrese de incluir los siguientes atributos según los ejemplos a continuación.
+Al enviar el _request_ al endpoint de Advanced Payments, asegúrate de incluir los atributos según los ejemplos a continuación.
 
 | Parámetro | Descripción |
 | --- | --- |
@@ -19,11 +19,11 @@ Al enviar el _request_ al endpoint de Advanced Payments, asegúrese de incluir l
 | description | Descripción de pago. |
 | external_reference | Referencia de pago asignada por el vendedor |
 | payer | Información del pagador requerida para la creación del Advanced Payment. |
-| token | payer_token obtenido después de finalizar el flujo del agreement. |
+| token | payer_token obtenido después de finalizar el flujo del Agreement. |
 | type_token | Tipo de pago, para el uso en el flujo de Wallet Connect es necesario definir el valor "wallet-token". |
 | binary_mode | El valor de este campo debe ser "true". |
 
-Con estos parámetros, envíe un **POST** al endpoint [/v1/advanced_payments](/developers/es/reference/wallet_connect/_advanced_payments/post) y ejecute el _request_ o, si lo prefiere, utilice el `curl ` a continuación .
+Con estos parámetros, envía un **POST** al endpoint [/v1/advanced_payments](/developers/es/reference/wallet_connect/_advanced_payments/post) y ejecute el _request_ o, si lo prefieres, utiliza el `curl ` a continuación .
 
 [[[
 ```curl
@@ -51,4 +51,4 @@ curl -X POST \
 ```
 ]]]
 
-Al ejecutar el _request_, puede recibir diferentes tipos de respuestas originadas por razones específicas. Consulte la sección [Respuestas](/developers/es/docs/wallet-connect/advanced-payments/capture-payment/returns) para obtener más información.
+Al ejecutar el _request_, puedes recibir diferentes tipos de respuestas originadas por razones específicas. Consulta la sección [Respuestas](/developers/es/docs/wallet-connect/advanced-payments/capture-payment/returns) para obtener más información.

@@ -1,10 +1,10 @@
 # Idempotencia
 
-Problemas de conexión o interrupciones del servicio pueden interrumpir la comunicación al enviar o recibir datos para crear un Advanced Payment.
+Problemas de conexión o interrupciones del servicio pueden interferir en la comunicación al enviar o recibir datos para crear un Advanced Payment.
 
-Para garantizar la creación correcta de un Advanced Payment, se puede realizar un nuevo intento de envío de los datos, sin embargo, es posible que ya se haya creado el pago y debido a la interrupción no se haya recibido la respuesta correcta. Por lo tanto, estos nuevos intentos crearán un nuevo Advanced Payment.
+Para garantizar la creación correcta de un Advanced Payment, puedes realizar un nuevo intento de envío de los datos. Sin embargo, es posible que ya se haya creado el pago y debido a la interrupción no se haya recibido la respuesta correcta. Por lo que estos nuevos intentos crearán un nuevo Advanced Payment.
 
-Para evitar la duplicidad, es obligatorio enviar una clave única en el header X-Idempotency-Key que identifique la creación de un solo Advanced Payment. De esta manera, cuando se haga un nuevo intento, se puede enviar la misma clave para indicar que es el mismo proceso.
+Para evitar la duplicidad, es obligatorio enviar una clave única en el header X-Idempotency-Key que identifique la creación de un solo Advanced Payment. De esta manera, cuando hagas un nuevo intento, puedes enviar la misma clave para indicar que es el mismo proceso.
 
 
 > NOTE
@@ -45,4 +45,4 @@ curl -X POST \
 ```
 ]]]
 
-Al ejecutar el _request_, puede recibir diferentes tipos de respuestas originadas por razones específicas. Consulte la sección [Respuestas](/developers/es/docs/wallet-connect/advanced-payments/idempotency/returns) para obtener más información.
+Al ejecutar el _request_, puedes recibir diferentes tipos de respuestas originadas por razones específicas. Consulta la sección [Respuestas](/developers/es/docs/wallet-connect/advanced-payments/idempotency/returns) para obtener más información.
