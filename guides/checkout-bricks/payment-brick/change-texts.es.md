@@ -16,7 +16,7 @@ Si los textos personalizados son más grandes que el espacio disponible, el text
 
 Los textos personalizables se muestran a continuación.
 
-```javascript
+```Javascript
 const settings = {
   "customization": {
       "visual": {
@@ -99,6 +99,90 @@ const settings = {
            }
       },
   }
+};
+```
+
+```react-jsx
+const customization = {
+ visual: {
+   texts: {
+     formTitle: 'string',
+     emailSectionTitle: 'string',
+     installmentsSectionTitle: 'string',
+     cardholderName: {
+       label: 'string',
+       placeholder: 'string'
+     },
+     email: {
+       label: 'string',
+       placeholder: 'string'
+     },
+     cardholderIdentification: {
+       label:'string'
+     },
+     cardNumber: {
+       label: 'string',
+       placeholder: 'string'
+     },
+     expirationDate: {
+       label: 'string',
+       placeholder: 'string'
+     },
+     securityCode: {
+       label: 'string' ,
+       placeholder: 'string'
+     },
+     selectInstallments: 'string' ,
+     selectIssuerBank: 'string' ,
+     formSubmit: 'string' ,
+     payerFirstName: {
+       placeholder: 'string',
+       label:  'string'
+     },
+     payerLastName: {
+       placeholder: 'string',
+       label: 'string'
+     },
+     zipCode: {
+       placeholder: 'string',
+       label: 'string'
+     },
+     addressState: {
+       placeholder: 'string',
+       label: 'string'
+     },
+     addressCity: {
+       placeholder: 'string',
+       label: 'string'
+     },
+     addressNeighborhood: {
+       placeholder: 'string',
+       label: 'string'
+     },
+     addressStreet: {
+       placeholder: 'string',
+       label: 'string'
+     },
+     addressNumber: {
+       label: 'string'
+     },
+     addressComplement: {
+       label: 'string'
+     },
+     paymentMethods: {
+       newCreditCardTitle: 'string',
+       creditCardTitle: 'string',
+       creditCardValueProp: 'string',
+       newDebitCardTitle: 'string',
+       debitCardTitle: 'string',
+       debitCardValueProp: 'string',
+       ticketTitle: 'string',
+       ticketValueProp: 'string',
+       bankTransferTitle: 'string',
+       bankTransferValueProp: 'string',
+     }
+   }
+ }
 };
 ```
 

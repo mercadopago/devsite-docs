@@ -11,7 +11,7 @@
 | Tipo  | Boolean  |
 | Observaciones  | Cuando **true**, oculta la línea de título.  |
 
-```javascript
+```Javascript
 const settings = {
    ...,
    customization: {
@@ -20,6 +20,14 @@ const settings = {
        }
    }
 }
+```
+
+```react-jsx
+const customization = {
+ visual: {
+   hideFormTitle: true
+ }
+};
 ```
 
 > CLIENT_SIDE
@@ -35,7 +43,7 @@ const settings = {
 | Tipo  | Boolean  |
 | Observaciones  | Cuando true, el botón de envío del formulario no se muestra y pasa a ser necesario usar la función getFormData para obtener los datos del formulario (ver el ejemplo a continuación).  |
 
-```javascript
+```Javascript
 const settings = {
     ...,
     callbacks: {
@@ -58,7 +66,7 @@ const settings = {
 <button type="button" onclick="createPayment();">Custom Payment Button</button>
 ```
 
-```javascript
+```Javascript
 function createPayment(){
     window.paymentBrickController.getFormData()
         .then(({ paymentType, formData }) => {
@@ -79,6 +87,14 @@ function createPayment(){
 };
 ```
 
+```react-jsx
+const customization = {
+ visual: {
+   hidePaymentButton: true
+ }
+};
+```
+
 > CLIENT_SIDE
 >
 > h1
@@ -92,7 +108,7 @@ function createPayment(){
 | Tipo  | Boolean  |
 | Observaciones  | Cuando **true**, oculta dentro de la opción de pago con la Billetera de Mercado Pago, el panel de redirección al sitio web de Mercado Pago. |
 
-```javascript
+```Javascript
 const settings = {
    ...,
    customization: {
@@ -101,6 +117,14 @@ const settings = {
        }
    }
 }
+```
+
+```react-jsx
+const customization = {
+ visual: {
+   hideRedirectionPanel: true
+ }
+};
 ```
 
 > NOTE

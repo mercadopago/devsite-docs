@@ -11,7 +11,7 @@
 | Type  | Boolean  |
 | Comments  | When **true**, hides the title line.  |
 
-```javascript
+```Javascript
 const settings = {
    ...,
    customization: {
@@ -20,6 +20,14 @@ const settings = {
        }
    }
 }
+```
+
+```react-jsx
+const customization = {
+ visual: {
+   hideFormTitle: true
+ }
+};
 ```
 
 > CLIENT_SIDE
@@ -35,7 +43,7 @@ const settings = {
 | Type  | Boolean  |
 | Comments  | When true, the form submit button is not displayed and it becomes necessary to use the getFormData function to get the form data (see example below). |
 
-```javascript
+```Javascript
 const settings = {
     ...,
     callbacks: {
@@ -58,7 +66,7 @@ const settings = {
 <button type="button" onclick="createPayment();">Custom Payment Button</button>
 ```
 
-```javascript
+```Javascript
 function createPayment(){
     window.paymentBrickController.getFormData()
         .then(({ paymentType, formData }) => {
@@ -79,6 +87,14 @@ function createPayment(){
 };
 ```
 
+```react-jsx
+const customization = {
+ visual: {
+   hidePaymentButton: true
+ }
+};
+```
+
 > CLIENT_SIDE
 >
 > h1
@@ -92,7 +108,7 @@ function createPayment(){
 | Type  | Boolean  |
 | Comments  | When **true**, hides within the payment option with the Mercado Pago Wallet, the redirection panel to the Mercado Pago website. |
 
-```javascript
+```Javascript
 const settings = {
    ...,
    customization: {
@@ -101,6 +117,14 @@ const settings = {
        }
    }
 }
+```
+
+```react-jsx
+const customization = {
+ visual: {
+   hideRedirectionPanel: true
+ }
+};
 ```
 
 > NOTE

@@ -6,7 +6,6 @@
 
 Para que o Payment Brick possa exibir os cartões salvos de um determinado comprador, é preciso enviar ao Brick no momento de sua inicialização, o ID do customer e os IDs dos cards, como no exemplo abaixo.
 
-[[[
 ```Javascript
 settings = {
    initialization: {
@@ -20,7 +19,17 @@ settings = {
    ...
 }
 ```
-]]]
+
+```react-jsx
+const initialization = {
+ ...,
+ payer: {
+   ...,
+   customerId: '209277402-FqRqgEc3XItrxs',
+   cardsIds: [ '1518023392627', '1518023332143' ]
+ },
+};
+```
 
 Apenas passando essas duas propriedades, o Brick automaticamente dará ao usuário a opção de realizar o pagamento com seus cartões salvos.
 

@@ -2,7 +2,7 @@
 
 It is possible to initialize Payment Brick with a payment option already open. To configure a default payment method, use the configuration below.
 
-```javascript
+```Javascript
 settings = {
  ...,
  customization: {
@@ -20,6 +20,21 @@ settings = {
    },
  }
 }
+```
+
+```react-jsx
+const customization = {
+ visual: {
+   defaultPaymentOption: {
+     walletForm: true,
+     // creditCardForm: true,
+     // debitCardForm: true,
+     // savedCardForm: 'card id sent in the initialization',
+     // ticketForm: true,
+     // bankTransferForm: true,
+   },
+ }
+};
 ```
 
 > WARNING
