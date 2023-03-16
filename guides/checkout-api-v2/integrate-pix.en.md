@@ -380,8 +380,11 @@ The response will show the payment **pending status** and all the information yo
 
 With Pix, you can also choose the period that the customer will have to pay for the purchase, defining the expiration date of the payment code sent after the order is placed.
 
-By default, the expiration date for payments with Pix is **24 hours**, but you can change it by submitting the `date_of_expiration` field in the payment creation request.
-
+> NOTE
+>
+> Important
+>
+> By default, the expiration date for payments with Pix is **24 hours**, but you can change it by submitting the `date_of_expiration` field in the payment creation request. The configured date must be between **5 minutes and 30 days** from the payment issue date.
 
 ## Payment visualization
 
