@@ -51,7 +51,7 @@ future_product_avaible:
  - card_avaible: true
  - card_icon: Wallet
  - card_title: Wallet Brick
- - card_description: Vincule carteiras digitais e permita pagamentos registrados.
+ - card_description: Vincule a conta Mercado Pago e permita pagamentos registrados.
  - card_link: /developers/pt/docs/checkout-bricks/wallet-brick/introduction
  - card_linkDescription: Saiba mais
  - card_pillText: DISPONÍVEL

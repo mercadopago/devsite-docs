@@ -51,7 +51,7 @@ future_product_avaible:
  - card_avaible: true
  - card_icon: Wallet
  - card_title: Wallet Brick
- - card_description: Link digital wallets and allow logged payments. 
+ - card_description:  Link Mercado Pago Wallet and allow logged payments.
  - card_link: /developers/en/docs/checkout-bricks/wallet-brick/introduction
  - card_linkDescription: Learn more
  - card_pillText: AVAILABLE
