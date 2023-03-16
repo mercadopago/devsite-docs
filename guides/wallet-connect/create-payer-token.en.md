@@ -22,5 +22,5 @@ curl -X POST \
 ```
 ]]]
 
-With the creation of the payer token, the Wallet Connect integration will finish successfully. Therefore, we recommend you check the [Webhooks](/docs/wallet-connect/additional-content/notifications/webhooks) documentation to set notifications up and receive real-time information anytime an event occurs.
+With the payer token created, the account integration flow with Wallet Connect will have been successfully completed. Go to the [Advanced Payments](/developers/en/docs/wallet-connect/advanced-payments) section to perform the payment flow.
 
