@@ -33,7 +33,7 @@ Para instalar o SDK no seu projeto [Maven](http://maven.apache.org/install.html)
 <dependency>
    <groupId>com.mercadopago</groupId>
    <artifactId>sdk-java</artifactId>
-   <version>2.0.0</version>
+   <version>2.1.7</version>
 </dependency>
 ```
 ```ruby
@@ -64,8 +64,6 @@ pip3 install mercadopago
 ```
 ]]]
 
-
-
 > SERVER_SIDE
 >
 > h2
@@ -75,8 +73,6 @@ pip3 install mercadopago
 Preferências são conjuntos de informações que permitem configurar um produto ou serviço que se deseja cobrar, como preço e quantidade, além de outras configurações relacionadas ao fluxo de pagamento definido.
 
 Para criar uma preferência, utilize um dos SDKs disponíveis abaixo preenchendo os atributos com as respectivas informações.
-
-
 
 [[[
 ```php
@@ -96,9 +92,9 @@ mercadopago.configure({
 });
 ```
 ```java
-// SDK do Mercado Pago
+// SDK de Mercado Pago
 import com.mercadopago.MercadoPagoConfig;
-// Adicione as credenciais
+// Agrega credenciales
 MercadoPagoConfig.setAccessToken("PROD_ACCESS_TOKEN");
 ```
 ```ruby
@@ -121,9 +117,7 @@ sdk = mercadopago.SDK("PROD_ACCESS_TOKEN")
 ```
 ]]]
 
-
 Ao finalizar a criação da preferência, é preciso configurá-la de acordo com seu produto ou serviço. Para isso, utilize um dos códigos disponíveis abaixo preenchendo os atributos com as respectivas informações.
-
 
 ----[mla, mlb, mlu, mpe, mlm]----
 
@@ -163,22 +157,23 @@ mercadopago.preferences.create(preference)
 });
 ```
 ```java
-// Cria um objeto de preferência
+ PreferenceItemRequest itemRequest =
+       PreferenceItemRequest.builder()
+           .id("1234")
+           .title("Games")
+           .description("PS5")
+           .pictureUrl("http://picture.com/PS5")
+           .categoryId("games")
+           .quantity(2)
+           .currencyId("BRL")
+           .unitPrice(new BigDecimal("4000"))
+           .build();
+   List<PreferenceItemRequest> items = new ArrayList<>();
+   items.add(itemRequest);
+PreferenceRequest preferenceRequest = PreferenceRequest.builder()
+.items(items).build();
 PreferenceClient client = new PreferenceClient();
-
-// Cria um item na preferência
-List<PreferenceItemRequest> items = new ArrayList<>();
-PreferenceItemRequest item =
-   PreferenceItemRequest.builder()
-       .title("Meu produto")
-       .quantity(1)
-       .unitPrice(new BigDecimal("100"))
-       .build();
-items.add(item);
-
-PreferenceRequest request = PreferenceRequest.builder().items(items).build();
-
-client.create(request);
+Preference preference = client.create(request);
 ```
 ```ruby
 # Cria um objeto de preferência
@@ -235,7 +230,6 @@ preference = preference_response["response"]
 ]]]
 
 ------------
-
 ----[mlc, mco]----
 
 [[[
@@ -274,16 +268,23 @@ mercadopago.preferences.create(preference)
 });
 ```
 ```java
-// Cria um objeto de preferência
-Preference preference = new Preference();
-
-// Cria um item na preferência
-Item item = new Item();
-item.setTitle("Meu produto")
-    .setQuantity(1)
-    .setUnitPrice((float) 75);
-preference.appendItem(item);
-preference.save();
+ PreferenceItemRequest itemRequest =
+       PreferenceItemRequest.builder()
+           .id("1234")
+           .title("Games")
+           .description("PS5")
+           .pictureUrl("http://picture.com/PS5")
+           .categoryId("games")
+           .quantity(2)
+           .currencyId("BRL")
+           .unitPrice(new BigDecimal("4000"))
+           .build();
+   List<PreferenceItemRequest> items = new ArrayList<>();
+   items.add(itemRequest);
+PreferenceRequest preferenceRequest = PreferenceRequest.builder()
+.items(items).build();
+PreferenceClient client = new PreferenceClient();
+Preference preference = client.create(request);
 ```
 ```ruby
 # Cria um objeto de preferência
@@ -339,7 +340,6 @@ preference = preference_response["response"]
 ```
 ]]]
 
-
 > WARNING
 >
 > Importante
@@ -348,24 +348,17 @@ preference = preference_response["response"]
 
 ------------
 
-
 > CLIENT_SIDE
 >
 > h2
 >
 > Adicionar Checkout
 
-
 Após ter criado a preferência em seu backend, será necessário instalar o SDK de frontend do Mercado Pago ao seu projeto para adicionar o botão do Checkout Pro.
-
 
 A instalação é feita em **duas etapas**: incluindo o SDK do Mercado Pago ao projeto com suas credenciais configuradas e iniciando o checkout a partir da preferência gerada anteriormente.
 
-
-
 1. Para incluir o SDK Mercado Pago.js, adicione o código abaixo no HTML do projeto.
-
-
 
 ```html
 // SDK MercadoPago.js
@@ -373,7 +366,6 @@ A instalação é feita em **duas etapas**: incluindo o SDK do Mercado Pago ao p
 ```
 
 2. Ao finalizar a inclusão do SDK Mercado Pago.js, **configure as credenciais do SDK** e inicialize seu checkout com o **ID da preferência** previamente criada e o identificador do elemento onde o botão de pagamento deverá ser exibido conforme exemplo abaixo.
-
 
 [[[
 ```html
@@ -403,7 +395,6 @@ A instalação é feita em **duas etapas**: incluindo o SDK do Mercado Pago ao p
 > Os pagamentos criados possuem os seguintes status: `Pendente`, `Rejeitado` e `Aprovado`. Para acompanhar as atualizações é necessário configurar seu sistema para receber as notificações de pagamentos e outras atualizações de status. Veja [Notificações](/developers/pt/docs/checkout-pro/additional-content/notifications/Introduction) para mais detalhes.
 
 No exemplo acima, um botão de pagamento será renderizado e ficará responsável por abrir o Checkout Pro. Caso queira personalizar a forma como o checkout será aberto, veja a seção [Esquema de abertura](/developers/pt/docs/checkout-pro/checkout-customization/user-interface/opening-schema)
-
 
 ## Exemplo de implementação
 
