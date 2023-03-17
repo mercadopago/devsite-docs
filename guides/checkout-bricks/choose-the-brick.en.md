@@ -4,8 +4,6 @@ With the MercadoPago library added and configured in your project, you are ready
 
 ---
 future_product_avaible: 
- - title: Bricks
- - description:
  - card_avaible: true
  - card_icon: Card
  - card_title: Card Payment Brick

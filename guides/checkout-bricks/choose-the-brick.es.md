@@ -6,8 +6,6 @@ Con la biblioteca de MercadoPago agregada y configurada en su proyecto, está li
 
 ---
 future_product_avaible: 
- - title: Bricks
- - description: Conoce todos los módulos de Checkout Bricks y su disponibilidad.
  - card_avaible: true
  - card_icon: Card
  - card_title: Card Payment Brick
@@ -44,8 +42,6 @@ future_product_avaible:
 
 ---
 future_product_avaible: 
- - title: Bricks
- - description: Conoce todos los módulos de Checkout Bricks y su disponibilidad.
  - card_avaible: true
  - card_icon: Card
  - card_title: Card Payment Brick
