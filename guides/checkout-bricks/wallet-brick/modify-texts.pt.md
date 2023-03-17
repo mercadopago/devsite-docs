@@ -57,6 +57,7 @@ Veja quais são os textos relacionados a cada opção:
 
 ------------
 
+[[[
 ```javascript
 const settings = {
     ...,
@@ -68,3 +69,15 @@ const settings = {
     },
 }
 ```
+```react-jsx
+const customization = {
+ visual: {
+   texts: {
+     action: 'buy',
+     valueProp: 'security_details'
+     ...,
+   }
+ }
+};
+```
+]]]

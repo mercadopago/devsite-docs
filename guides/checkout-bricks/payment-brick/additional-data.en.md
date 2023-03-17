@@ -10,6 +10,7 @@ See the following table for the fields contained within the `additionalData` obj
 
 See an example of usage below:
 
+[[[
 ```Javascript
 const settings = {
  ...,
@@ -57,7 +58,6 @@ const settings = {
  },
 }
 ```
-
 ```react-jsx
 // variable where the Brick controller is saved
 cardPaymentBrickController.getAdditionalData()
@@ -66,6 +66,7 @@ cardPaymentBrickController.getAdditionalData()
         })
         .catch((error) => console.error(error));
 ```
+]]]
 
 If you are not using the native [submit Brick form button](/developers/en/docs/checkout-bricks/payment-brick/additional-customization/hide-element), you can also access the `additionalData` object via the ` getAdditionalData`. Check out an example usage below.
 

@@ -2,6 +2,7 @@
 
 It is possible to initialize Payment Brick with a payment option already open. To configure a default payment method, use the configuration below.
 
+[[[
 ```Javascript
 settings = {
  ...,
@@ -21,7 +22,6 @@ settings = {
  }
 }
 ```
-
 ```react-jsx
 const customization = {
  visual: {
@@ -36,6 +36,7 @@ const customization = {
  }
 };
 ```
+]]]
 
 > WARNING
 > 

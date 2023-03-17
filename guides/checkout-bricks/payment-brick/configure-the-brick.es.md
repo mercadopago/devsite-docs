@@ -4,6 +4,7 @@ Creae la configuración de inicio de Brick
 
 ----[mlb]----
 
+[[[
 ```Javascript
 const settings = {
  initialization: {
@@ -62,7 +63,6 @@ window.paymentBrickController = await bricksBuilder.create(
  settings
 );
 ```
-
 ```react-jsx
 const initialization = {
  amount: 100,
@@ -110,10 +110,12 @@ const onReady = async () => {
  */
 };
 ```
+]]]
 
 ------------
 ----[mlm]----
 
+[[[
 ```Javascript
 const settings = {
  initialization: {
@@ -172,7 +174,6 @@ window.paymentBrickController = await bricksBuilder.create(
  settings
 );
 ```
-
 ```react-jsx
 const initialization = {
  amount: 100,
@@ -220,10 +221,12 @@ const onReady = async () => {
  */
 };
 ```
+]]]
 
 ------------
 ----[mpe]----
 
+[[[
 ```Javascript
 const settings = {
  initialization: {
@@ -280,7 +283,6 @@ window.paymentBrickController = await bricksBuilder.create(
  settings
 );
 ```
-
 ```react-jsx
 const initialization = {
  amount: 100,
@@ -326,11 +328,13 @@ const onReady = async () => {
  */
 };
 ```
+]]]
 
 ------------
 ----[mla, mlc, mco, mlu]----
 
-```js
+[[[
+```Javascript
 const settings = {
  initialization: {
    /*
@@ -387,7 +391,6 @@ window.paymentBrickController = await bricksBuilder.create(
  settings
 );
 ```
-
 ```react-jsx
 const initialization = {
  amount: 100,
@@ -434,6 +437,7 @@ const onReady = async () => {
  */
 };
 ```
+]]]
 
 ------------
 

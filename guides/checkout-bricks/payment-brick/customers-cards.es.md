@@ -6,6 +6,7 @@
 
 Para que Payment Brick pueda mostrar las tarjetas guardadas de un determinado comprador, es necesario enviar a Brick en el momento de su inicialización, lo ID del customer y los IDs de los cards, como en el ejemplo a continuación.
 
+[[[
 ```Javascript
 settings = {
    initialization: {
@@ -19,7 +20,6 @@ settings = {
    ...
 }
 ```
-
 ```react-jsx
 const initialization = {
  ...,
@@ -30,6 +30,7 @@ const initialization = {
  },
 };
 ```
+]]]
 
 Con solo pasar estas dos propiedades, Brick le dará automáticamente al usuario la opción de realizar el pago con sus tarjetas guardadas.
 

@@ -16,6 +16,7 @@ Caso os textos customizados sejam maiores do que o espaço disponível, o texto 
 
 Os textos customizáveis estão indicados abaixo.
 
+[[[
 ```Javascript
 const settings = {
   "customization": {
@@ -101,7 +102,6 @@ const settings = {
   }
 };
 ```
-
 ```react-jsx
 const customization = {
  visual: {
@@ -185,6 +185,7 @@ const customization = {
  }
 };
 ```
+]]]
 
 Para alterar os textos dos meios de pagamento offline (tickets, Pix e ATM, por exemplo), dentro do objeto de `paymentMethods` utilize o padrão `{paymentMethodId}{ValueProp/Title} `.
 

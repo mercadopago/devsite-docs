@@ -8,6 +8,7 @@
 
 In the form displayed for payment by card, you can start with the **document** and **email** fields already filled in. For this, it is necessary to pass the following configuration in the Brick's initialization object.
 
+[[[
 ```Javascript
 settings = {
   ...,
@@ -24,7 +25,6 @@ settings = {
   }
 }
 ```
-
 ```react-jsx
 const initialization = {
  ...,
@@ -38,12 +38,14 @@ const initialization = {
  },
 };
 ```
+]]]
 
 ----[mlb]----
 ## Pix
 
 In the form displayed for payment by Pix, you can start with the **email** field already filled in. For this, it is necessary to pass the following configuration in the Brick's initialization object.
 
+[[[
 ```Javascript
 settings = {
   ...,
@@ -54,7 +56,6 @@ settings = {
    }
 }
 ```
-
 ```react-jsx
 const initialization = {
  ...,
@@ -64,6 +65,7 @@ const initialization = {
  },
 };
 ```
+]]]
 
 ----[mpe, mco, mlu, mlc]----
 
@@ -71,6 +73,7 @@ const initialization = {
 
 In the form displayed for payment by **boleto bancário** and **payment in lottery**, you can start with the fields already filled in. For this, it is necessary to pass the following configuration in the Brick's initialization object.
 
+[[[
 ```Javascript
 settings = {
   ...,
@@ -96,7 +99,6 @@ settings = {
  }
 }
 ```
-
 ```react-jsx
 const initialization = {
  ...,
@@ -120,6 +122,7 @@ const initialization = {
  },
 };
 ```
+]]]
 
 ------------
 ----[mla]----
@@ -127,6 +130,7 @@ const initialization = {
 
 In the form displayed for payment by **Rapipago** and **Pago Fácil**, you can start with the fields already filled in. For this, it is necessary to pass the following configuration in the Brick's initialization object.
 
+[[[
 ```Javascript
 settings = {
   ...,
@@ -137,7 +141,6 @@ settings = {
    }
 }
 ```
-
 ```react-jsx
 const initialization = {
  ...,
@@ -161,6 +164,7 @@ const initialization = {
  },
 };
 ```
+]]]
 
 ------------
 ----[mlm]----
@@ -168,6 +172,7 @@ const initialization = {
 
 In the form displayed for payment by **ticket**, you can start with the fields already filled in. For this, it is necessary to pass the following configuration in the Brick's initialization object.
 
+[[[
 ```Javascript
 settings = {
   ...,
@@ -181,7 +186,6 @@ settings = {
   }
 }
 ```
-
 ```react-jsx
 const initialization = {
  ...,
@@ -205,5 +209,6 @@ const initialization = {
  },
 };
 ```
+]]]
 
 ------------

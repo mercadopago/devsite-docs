@@ -22,6 +22,7 @@
 | verticalPadding | - | 16px | Minimum: 16px. <br> Maximum: free choice. |
 | horizontalPadding | - | 0px | Minimum: 0px. <br> Maximum: free choice. |
 
+[[[
 ```javascript
 const settings = {
     ...,
@@ -33,6 +34,18 @@ const settings = {
     },
 }
 ```
+```react-jsx
+const settings = {
+    ...,
+    customization: {
+         visual: {
+             buttonBackground: 'black',
+             borderRadius: '16px',
+         },
+    },
+}
+```
+]]]
 
 ## Hide value proposition text
 
@@ -43,6 +56,7 @@ const settings = {
 | Type  | Boolean  |
 | Comments  | When `true`, hides the value proposition text (below the button). |
 
+[[[
 ```javascript
 const settings = {
     ...,
@@ -53,3 +67,11 @@ const settings = {
     },
 }
 ```
+```react-jsx
+const customization = {
+ visual: {
+   hideValueProp: true
+ }
+};
+```
+]]]

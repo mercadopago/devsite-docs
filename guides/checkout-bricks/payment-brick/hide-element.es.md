@@ -108,6 +108,7 @@ const customization = {
 | Tipo  | Boolean  |
 | Observaciones  | Cuando **true**, oculta dentro de la opción de pago con la Billetera de Mercado Pago, el panel de redirección al sitio web de Mercado Pago. |
 
+[[[
 ```Javascript
 const settings = {
    ...,
@@ -118,7 +119,6 @@ const settings = {
    }
 }
 ```
-
 ```react-jsx
 const customization = {
  visual: {
@@ -126,6 +126,7 @@ const customization = {
  }
 };
 ```
+]]]
 
 > NOTE
 >

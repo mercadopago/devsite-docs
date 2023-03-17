@@ -6,6 +6,7 @@
 
 In order for Payment Brick to be able to display the saved cards of a given buyer, it is necessary to send the customer ID and card IDs to Brick at the time of its initialization, as in the example below.
 
+[[[
 ```Javascript
 settings = {
    initialization: {
@@ -19,7 +20,6 @@ settings = {
    ...
 }
 ```
-
 ```react-jsx
 const initialization = {
  ...,
@@ -30,6 +30,7 @@ const initialization = {
  },
 };
 ```
+]]]
 
 Just passing these two properties, Brick will automatically give the user the option to make the payment with their saved cards.
 

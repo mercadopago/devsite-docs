@@ -108,6 +108,7 @@ const customization = {
 | Tipo | Boolean |
 | Observações | Quando **true**, oculta dentro da opção de pagamento com a Conta Mercado Pago, o painel de redirecionamento para o site do Mercado Pago. |
 
+[[[
 ```Javascript
 const settings = {
    ...,
@@ -118,7 +119,6 @@ const settings = {
    }
 }
 ```
-
 ```react-jsx
 const customization = {
  visual: {
@@ -126,6 +126,7 @@ const customization = {
  }
 };
 ```
+]]]
 
 > NOTE
 >

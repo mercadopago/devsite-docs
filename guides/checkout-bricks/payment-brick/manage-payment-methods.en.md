@@ -4,6 +4,7 @@ Payment Brick allows integration with multiple payment methods and, to do so, ad
 
 > To not include the payment method of a certain type, remove it from the `paymentMethods` object.
 
+[[[
 ```Javascript
 const settings = {
  ...,
@@ -14,7 +15,6 @@ const settings = {
    },
  },
 ```
-
 ```react-jsx
 const customization = {
  paymentMethods: {
@@ -23,6 +23,7 @@ const customization = {
  }
 };
 ```
+]]]
 
 The table below shows the available payment methods:
 

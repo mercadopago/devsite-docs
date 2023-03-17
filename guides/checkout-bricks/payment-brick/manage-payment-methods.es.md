@@ -4,6 +4,7 @@ Payment Brick permite la integración con múltiples medios de pago y, para eso,
 
 > Para no incluir el medios de pago de un determinado tipo, elimínelo del objeto `paymentMethods`.
 
+[[[
 ```Javascript
 const settings = {
  ...,
@@ -14,7 +15,6 @@ const settings = {
    },
  },
 ```
-
 ```react-jsx
 const customization = {
  paymentMethods: {
@@ -23,6 +23,7 @@ const customization = {
  }
 };
 ```
+]]]
 
 La siguiente tabla muestra los medios de pago disponibles:
 

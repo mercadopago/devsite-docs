@@ -4,10 +4,10 @@ Once the configurations are created, the Brick can be rendered and have all its 
 
 To render the Brick, enter the code below.
 
-[[[
 ```html
 <div id="paymentBrick_container"></div>
 ```
+
 ```react-jsx
 import { Payment } from '@mercadopago/sdk-react';
 
@@ -19,8 +19,7 @@ import { Payment } from '@mercadopago/sdk-react';
    onError={onError}
 />
 ```
-]]]
 
 The result of rendering the Brick should look like the image below.
 
-[IMAGEM]
+![wallet-brick-render](checkout-bricks/wallet-brick-render-en.png)

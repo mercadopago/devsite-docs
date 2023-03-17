@@ -16,6 +16,7 @@ Si los textos personalizados son más grandes que el espacio disponible, el text
 
 Los textos personalizables se muestran a continuación.
 
+[[[
 ```Javascript
 const settings = {
   "customization": {
@@ -101,7 +102,6 @@ const settings = {
   }
 };
 ```
-
 ```react-jsx
 const customization = {
  visual: {
@@ -185,6 +185,7 @@ const customization = {
  }
 };
 ```
+]]]
 
 Para cambiar los textos de los métodos de pago fuera de línea (tickets, Pix y ATM, por ejemplo), dentro del objeto `paymentMethods`, use el patrón `{paymentMethodId}{ValueProp/Title} `.
 

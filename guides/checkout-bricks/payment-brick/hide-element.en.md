@@ -108,6 +108,7 @@ const customization = {
 | Type  | Boolean  |
 | Comments  | When **true**, hides within the payment option with the Mercado Pago Wallet, the redirection panel to the Mercado Pago website. |
 
+[[[
 ```Javascript
 const settings = {
    ...,
@@ -118,7 +119,6 @@ const settings = {
    }
 }
 ```
-
 ```react-jsx
 const customization = {
  visual: {
@@ -126,6 +126,7 @@ const customization = {
  }
 };
 ```
+]]]
 
 > NOTE
 >

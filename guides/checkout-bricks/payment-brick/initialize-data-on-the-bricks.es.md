@@ -8,6 +8,7 @@
 
 En el formulario que se muestra para el pago con tarjetas, puedes empezar con los campos de **documento** y **correo electrónico** ya rellenados. Para eso, es necesario pasar la siguiente configuración en el objeto de inicialización del Brick.
 
+[[[
 ```Javascript
 settings = {
   ...,
@@ -24,7 +25,6 @@ settings = {
   }
 }
 ```
-
 ```react-jsx
 const initialization = {
  ...,
@@ -38,12 +38,14 @@ const initialization = {
  },
 };
 ```
+]]]
 
 ----[mlb]----
 ## Pix
 
 En el formulario que se muestra para el pago con Pix, puedes empezar con el **correo electrónico** ya rellenado. Para eso, es necesario pasar la siguiente configuración en el objeto de inicialización del Brick.
 
+[[[
 ```Javascript
 settings = {
   ...,
@@ -54,7 +56,6 @@ settings = {
    }
 }
 ```
-
 ```react-jsx
 const initialization = {
  ...,
@@ -64,6 +65,7 @@ const initialization = {
  },
 };
 ```
+]]]
 
 ----[mpe, mco, mlu, mlc]----
 
@@ -71,6 +73,7 @@ const initialization = {
 
 En el formulario que se muestra para el pago con **boleto bancário** y en **agencias de lotería** puedes empezar con los campos ya rellenados. Para eso, es necesario pasar la siguiente configuración en el objeto de inicialización del Brick.
 
+[[[
 ```Javascript
 settings = {
   ...,
@@ -96,7 +99,6 @@ settings = {
  }
 }
 ```
-
 ```react-jsx
 const initialization = {
  ...,
@@ -120,6 +122,7 @@ const initialization = {
  },
 };
 ```
+]]]
 
 ------------
 ----[mla]----
@@ -127,6 +130,7 @@ const initialization = {
 
 En el formulario que se muestra para el pago con **Rapipago** y **Pago Fácil** puedes empezar con los campos ya rellenados. Para eso, es necesario pasar la siguiente configuración en el objeto de inicialización del Brick.
 
+[[[
 ```Javascript
 settings = {
   ...,
@@ -137,7 +141,6 @@ settings = {
    }
 }
 ```
-
 ```react-jsx
 const initialization = {
  ...,
@@ -161,6 +164,7 @@ const initialization = {
  },
 };
 ```
+]]]
 
 ------------
 ----[mlm]----
@@ -168,6 +172,7 @@ const initialization = {
 
 En el formulario que se muestra para el pago con **ticket** puedes empezar con los campos ya rellenados. Para eso, es necesario pasar la siguiente configuración en el objeto de inicialización del Brick.
 
+[[[
 ```Javascript
 settings = {
   ...,
@@ -181,7 +186,6 @@ settings = {
   }
 }
 ```
-
 ```react-jsx
 const initialization = {
  ...,
@@ -205,5 +209,6 @@ const initialization = {
  },
 };
 ```
+[[[
 
 ------------

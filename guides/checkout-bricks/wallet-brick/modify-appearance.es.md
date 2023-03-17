@@ -22,6 +22,7 @@
 | verticalPadding | - | 16px | Mínimo: 16px. <br> Máximo: libre elección. |
 | horizontalPadding | - | 0px | Mínimo: 0px. <br> Máximo: libre elección. |
 
+[[[
 ```javascript
 const settings = {
     ...,
@@ -33,6 +34,18 @@ const settings = {
     },
 }
 ```
+```react-jsx
+const settings = {
+    ...,
+    customization: {
+         visual: {
+             buttonBackground: 'black',
+             borderRadius: '16px',
+         },
+    },
+}
+```
+]]]
 
 ## Ocultar texto de propuesta de valor
 
@@ -43,6 +56,7 @@ const settings = {
 | Tipo  | Boolean  |
 | Observaciones  | Cuando es `true`, oculta el texto de la propuesta de valor (debajo del botón). |
 
+[[[
 ```javascript
 const settings = {
     ...,
@@ -53,3 +67,11 @@ const settings = {
     },
 }
 ```
+```react-jsx
+const customization = {
+ visual: {
+   hideValueProp: true
+ }
+};
+```
+]]]

@@ -2,6 +2,7 @@
 
 Es posible inicializar Payment Brick con una opción de pago ya abierta. Para configurar un método de pago predeterminado, utiliza la configuración a continuación.
 
+[[[
 ```Javascript
 settings = {
  ...,
@@ -21,7 +22,6 @@ settings = {
  }
 }
 ```
-
 ```react-jsx
 const customization = {
  visual: {
@@ -36,6 +36,7 @@ const customization = {
  }
 };
 ```
+]]]
 
 > WARNING
 > 
