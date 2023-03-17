@@ -45,7 +45,7 @@ const customization = {
 | Comments  | When true, the form submit button is not displayed and it becomes necessary to use the getFormData function to get the form data (see example below). |
 
 [[[
-```javascript
+```Javascript
 const settings = {
     ...,
     callbacks: {
@@ -63,10 +63,20 @@ const settings = {
     }
 }
 ```
+```react-jsx
+const customization = {
+ visual: {
+   hidePaymentButton: true
+ }
+};
+```
+]]]
+
 ```html
 <button type="button" onclick="createPayment();">Custom Payment Button</button>
 ```
-```javascript
+
+```Javascript
 function createPayment(){
     window.cardPaymentBrickController.getFormData()
         .then((cardFormData) => {
@@ -84,14 +94,6 @@ function createPayment(){
         });
 };
 ```
-```react-jsx
-const customization = {
- visual: {
-   hidePaymentButton: true
- }
-};
-```
-]]]
 
 > NOTE
 >

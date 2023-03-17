@@ -21,7 +21,7 @@ El cambio del comportamiento de redirección se realiza mediante la propiedad `r
 Los bloques de código a continuación implementan el pago en modo **redirect** a otra página.
 
 [[[
-```Javascript/html
+```Javascript
 const renderComponent = async (bricksBuilder) => {
  const settings = {
    initialization: {
@@ -47,7 +47,7 @@ renderComponent (bricksBuilder);
 Para definir el **modelo de apertura modal**, simplemente cambie la propiedad `redirectMode: 'modal'` durante la integración, como en el ejemplo a continuación.
 
 [[[
-```Javascript/html
+```Javascript
 const renderComponent = async (bricksBuilder) => {
  const settings = {
    initialization: {

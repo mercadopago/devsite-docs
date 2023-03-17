@@ -45,7 +45,7 @@ const customization = {
 | Observações | Quando **true** não mostra o botão de enviar o formulário e passa a ser necessário utilizar a função getFormData para obter os dados do formulário (veja exemplo abaixo). |
 
 [[[
-```javascript
+```Javascript
 const settings = {
     ...,
     callbacks: {
@@ -63,9 +63,19 @@ const settings = {
     }
 }
 ```
+```react-jsx
+const customization = {
+ visual: {
+   hidePaymentButton: true
+ }
+};
+```
+]]]
+
 ```html
 <button type="button" onclick="createPayment();">Custom Payment Button</button>
 ```
+
 ```Javascript
 function createPayment(){
     window.cardPaymentBrickController.getFormData()
@@ -84,14 +94,6 @@ function createPayment(){
         });
 };
 ```
-```react-jsx
-const customization = {
- visual: {
-   hidePaymentButton: true
- }
-};
-```
-]]]
 
 > NOTE
 >

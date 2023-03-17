@@ -11,6 +11,7 @@
 | Type  | Boolean  |
 | Comments  | When **true**, hides the title line.  |
 
+[[[
 ```Javascript
 const settings = {
    ...,
@@ -21,7 +22,6 @@ const settings = {
    }
 }
 ```
-
 ```react-jsx
 const customization = {
  visual: {
@@ -29,6 +29,7 @@ const customization = {
  }
 };
 ```
+]]]
 
 > CLIENT_SIDE
 >
@@ -43,6 +44,7 @@ const customization = {
 | Type  | Boolean  |
 | Comments  | When true, the form submit button is not displayed and it becomes necessary to use the getFormData function to get the form data (see example below). |
 
+[[[
 ```Javascript
 const settings = {
     ...,
@@ -61,6 +63,14 @@ const settings = {
     }
 }
 ```
+```react-jsx
+const customization = {
+ visual: {
+   hidePaymentButton: true
+ }
+};
+```
+]]]
 
 ```html
 <button type="button" onclick="createPayment();">Custom Payment Button</button>
@@ -84,14 +94,6 @@ function createPayment(){
         .catch((error) => {
             // error handling when calling getFormData()
         });
-};
-```
-
-```react-jsx
-const customization = {
- visual: {
-   hidePaymentButton: true
- }
 };
 ```
 

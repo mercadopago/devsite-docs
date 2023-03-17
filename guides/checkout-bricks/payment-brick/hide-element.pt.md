@@ -11,6 +11,7 @@
 | Tipo | Boolean |
 | Observações | Quando **true**, oculta a linha de título. |
 
+[[[
 ```Javascript
 const settings = {
    ...,
@@ -21,7 +22,6 @@ const settings = {
    }
 }
 ```
-
 ```react-jsx
 const customization = {
  visual: {
@@ -29,6 +29,7 @@ const customization = {
  }
 };
 ```
+]]]
 
 > CLIENT_SIDE
 >
@@ -43,6 +44,7 @@ const customization = {
 | Tipo | Boolean |
 | Observações | Quando **true** não mostra o botão de enviar o formulário e passa a ser necessário utilizar a função getFormData para obter os dados do formulário (veja exemplo abaixo). |
 
+[[[
 ```Javascript
 const settings = {
     ...,
@@ -61,6 +63,14 @@ const settings = {
     }
 }
 ```
+```react-jsx
+const customization = {
+ visual: {
+   hidePaymentButton: true
+ }
+};
+```
+]]]
 
 ```html
 <button type="button" onclick="createPayment();">Custom Payment Button</button>
@@ -84,14 +94,6 @@ function createPayment(){
         .catch((error) => {
             // tratamento de erros ao chamar getFormData()
         });
-};
-```
-
-```react-jsx
-const customization = {
- visual: {
-   hidePaymentButton: true
- }
 };
 ```
 

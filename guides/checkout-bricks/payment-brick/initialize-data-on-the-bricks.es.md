@@ -67,8 +67,6 @@ const initialization = {
 ```
 ]]]
 
-----[mpe, mco, mlu, mlc]----
-
 ## Otros medios de pago
 
 En el formulario que se muestra para el pago con **boleto bancário** y en **agencias de lotería** puedes empezar con los campos ya rellenados. Para eso, es necesario pasar la siguiente configuración en el objeto de inicialización del Brick.

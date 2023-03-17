@@ -21,7 +21,7 @@ A alteração no comportamento do redirecionamento é feita pela propriedade `re
 Os blocos de código abaixo implementam o checkout em modo **redirect** para outra página
 
 [[[
-```Javascript/html
+```Javascript
 const renderComponent = async (bricksBuilder) => {
  const settings = {
    initialization: {
@@ -47,7 +47,7 @@ renderComponent (bricksBuilder);
 Para definir o **modelo de abertura modal**, basta alterar a propriedade `redirectMode: 'modal'` durante a integração, como no exemplo abaixo.
 
 [[[
-```Javascript/html
+```Javascript
 const renderComponent = async (bricksBuilder) => {
  const settings = {
    initialization: {

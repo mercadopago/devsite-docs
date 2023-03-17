@@ -63,10 +63,20 @@ const settings = {
     }
 }
 ```
+```react-jsx
+const customization = {
+ visual: {
+   hidePaymentButton: true
+ }
+};
+```
+]]]
+
 ```html
 <button type="button" onclick="createPayment();">Custom Payment Button</button>
 ```
-```javascript
+
+```Javascript
 function createPayment(){
     window.cardPaymentBrickController.getFormData()
         .then((cardFormData) => {
@@ -84,14 +94,6 @@ function createPayment(){
         });
 };
 ```
-```react-jsx
-const customization = {
- visual: {
-   hidePaymentButton: true
- }
-};
-```
-]]]
 
 > NOTE
 >
