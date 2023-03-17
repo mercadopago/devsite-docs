@@ -1,6 +1,6 @@
 ## Obtener información de pago
 
-Este endpoint se utiliza para obtener los datos de un Advanced Payment a través de su (id). A continuación se muestra un diagrama que ilustra el proceso de captura de pago mediante la API de Advanced Payments.
+Este endpoint se utiliza para obtener los datos de un Advanced Payment a través de su id. A continuación se muestra un diagrama que ilustra el proceso de captura de pago mediante la API de Advanced Payments.
 
 ![get-payment-info](/images/wallet-connect/get-payment-information.es.png)
 
