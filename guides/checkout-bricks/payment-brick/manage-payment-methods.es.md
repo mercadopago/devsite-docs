@@ -81,7 +81,17 @@ La siguiente tabla muestra los medios de pago disponibles:
 | ticket | ['efecty'] |
 
 ------------
-----[mlc, mpe]---- 
+----[mpe]---- 
+
+| paymentMethods | Valores posibles |
+|--- |--- |
+| creditCard | string[] <br><br> Para conocer los montos de tarjetas de crédito disponibles, consulte la API [Obtener medios de pago](/developers/es/reference/payment_methods/_payment_methods/get).|
+| debitCard | string[] <br><br> Para conocer los montos de tarjetas de débito disponibles, consulte la API [Obtener medios de pago](/developers/es/reference/payment_methods/_payment_methods/get). |
+| mercadoPago | ['wallet_purchase'] |
+| atm | ['pagoefectivo_atm'] |
+
+------------
+----[mlc]---- 
 
 | paymentMethods | Valores posibles |
 |--- |--- |

@@ -133,7 +133,7 @@ available_payments: credit, debit, mercadopago
 ----[mpe]---- 
 
 ---
-available_payments: credit, debit, mercadopago
+available_payments: credit, debit, mercadopago, atm
 
 ---
 ------------

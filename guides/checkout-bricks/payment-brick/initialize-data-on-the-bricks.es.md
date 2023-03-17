@@ -209,6 +209,35 @@ const initialization = {
  },
 };
 ```
+]]]
+
+------------
+----[mpe]----
+## Otros medios de pago
+
+En el formulario que se muestra para el pago con **PagoEfectivo** puedes empezar con los campos ya rellenados. Para eso, es necesario pasar la siguiente configuración en el objeto de inicialización del Brick.
+
 [[[
+```Javascript
+settings = {
+  ...,
+  initialization: {
+    ...,
+    payer: {
+      ...,
+      email: 'jose@maria.com',
+    }
+  }
+}
+```
+```react-jsx
+const initialization = {
+ ...,
+ payer: {
+   email: 'jose@maria.com',
+ },
+};
+```
+]]]
 
 ------------

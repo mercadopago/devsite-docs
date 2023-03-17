@@ -27,7 +27,7 @@ const settings = {
  callbacks: {
    onReady: () => {
      /*
-     Callback llamado cuando el ladrillo está listo.
+     Callback llamado cuando el Brick está listo.
      Aquí puede ocultar cargamentos de su sitio, por ejemplo.
      */
    },
@@ -105,7 +105,7 @@ const onError = async (error) => {
 };
 const onReady = async () => {
  /*
-   Callback llamado cuando el ladrillo está listo.
+   Callback llamado cuando el Brick está listo.
    Aquí puede ocultar cargamentos de su sitio, por ejemplo.
  */
 };
@@ -138,7 +138,7 @@ const settings = {
  callbacks: {
    onReady: () => {
      /*
-     Callback llamado cuando el ladrillo está listo.
+     Callback llamado cuando el Brick está listo.
      Aquí puede ocultar cargamentos de su sitio, por ejemplo.
      */
    },
@@ -216,7 +216,7 @@ const onError = async (error) => {
 };
 const onReady = async () => {
  /*
-   Callback llamado cuando el ladrillo está listo.
+   Callback llamado cuando el Brick está listo.
    Aquí puede ocultar cargamentos de su sitio, por ejemplo.
  */
 };
@@ -241,15 +241,16 @@ const settings = {
    paymentMethods: {
      creditCard: "all",
      debitCard: "all",
-     mercadoPago: "all",
+     mercadoPago: ["wallet_purchase"],
+     atm: "all",
    },
  },
  callbacks: {
    onReady: () => {
-     /*
-     Callback llamado cuando el ladrillo está listo.
+    /*
+     Callback llamado cuando el Brick está listo.
      Aquí puede ocultar cargamentos de su sitio, por ejemplo.
-     */
+    */
    },
    onSubmit: ({ selectedPaymentMethod, formData }) => {
      // callback llamado al hacer clic en el botón enviar datos
@@ -292,7 +293,8 @@ const customization = {
  paymentMethods: {
    creditCard: "all",
    debitCard: "all",
-   mercadoPago: "all",
+   mercadoPago: ["wallet_purchase"],
+   atm: "all",
  },
 };
 const onSubmit = async (
@@ -319,11 +321,11 @@ const onSubmit = async (
 };
 const onError = async (error) => {
  // callback llamado para todos los casos de error de Brick
- console.log(error);
+ console.error(error);
 };
 const onReady = async () => {
  /*
-   Callback llamado cuando el ladrillo está listo.
+   Callback llamado cuando el Brick está listo.
    Aquí puede ocultar cargamentos de su sitio, por ejemplo.
  */
 };
@@ -355,7 +357,7 @@ const settings = {
  callbacks: {
    onReady: () => {
      /*
-     Callback llamado cuando el ladrillo está listo.
+     Callback llamado cuando el Brick está listo.
      Aquí puede ocultar cargamentos de su sitio, por ejemplo.
      */
    },
@@ -432,7 +434,7 @@ const onError = async (error) => {
 };
 const onReady = async () => {
  /*
-   Callback llamado cuando el ladrillo está listo.
+   Callback llamado cuando el Brick está listo.
    Aquí puede ocultar cargamentos de su sitio, por ejemplo.
  */
 };

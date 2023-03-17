@@ -232,7 +232,7 @@ const settings = {
  initialization: {
    /*
      "amount" é o valor total a ser pago por todos os meios de pagamento
-     com exceção da Conta Mercado Pago e Parcelamento sem cartão de crédito, que tem seu valor de processamento determinado no backend através do "preferenceId"
+     com exceção da Conta Mercado Pago, que tem seu valor de processamento determinado no backend através do "preferenceId"
    */
    amount: 100,
    preferenceId: "<PREFERENCE_ID>",
@@ -241,15 +241,16 @@ const settings = {
    paymentMethods: {
      creditCard: "all",
      debitCard: "all",
-     mercadoPago: "all",
+     mercadoPago: ["wallet_purchase"],
+     atm: "all",
    },
  },
  callbacks: {
    onReady: () => {
-     /*
+    /*
      Callback chamado quando o Brick estiver pronto.
      Aqui você pode ocultar loadings do seu site, por exemplo.
-     */
+    */
    },
    onSubmit: ({ selectedPaymentMethod, formData }) => {
      // callback chamado ao clicar no botão de submissão dos dados
@@ -292,7 +293,8 @@ const customization = {
  paymentMethods: {
    creditCard: "all",
    debitCard: "all",
-   mercadoPago: "all",
+   mercadoPago: ["wallet_purchase"],
+   atm: "all",
  },
 };
 const onSubmit = async (
@@ -319,7 +321,7 @@ const onSubmit = async (
 };
 const onError = async (error) => {
  // callback chamado para todos os casos de erro do Brick
- console.log(error);
+ console.error(error);
 };
 const onReady = async () => {
  /*

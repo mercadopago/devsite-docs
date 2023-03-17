@@ -132,11 +132,11 @@ O layout do Payment Brick foi construído com base nas melhores práticas de UX 
 
 O Payment Brick é uma solução modular e personalizável que permite adicionar vários métodos de pagamento à sua loja com apenas um Brick, permitindo que você salve os dados do cartão para compras futuras. Ao utilizar o Payment Brick, você terá diferentes métodos de pagamento à sua disposição e poderá escolher quais habilitar para o seu site.
 
-Por enquanto, você pode dar aos seus clientes a possibilidade de fazer pagamentos por meio de cartões de débito e crédito ou utilizar a Conta Mercado Pago. A curto prazo, adicionaremos a possibilidade de que, usando este mesmo Brick, você também possa permitir que eles façam pagamentos em dinheiro.
+Neste momento, você poderá dar aos seus clientes a possibilidade de efetuarem pagamentos com cartões de débito e crédito, PagoEfectivo ou utilizar a Conta Mercado Pago.
 
 A possibilidade de guardar os dados dos cartões que já foram debitados em compras anteriores torna o processo de pagamento mais eficiente e rápido. Para o comprador, não é mais necessário recarregar os dados cada vez que entrar no checkout.
 
-![payment-Brick-layout-all](checkout-bricks/payment-brick-layout-all-pt.gif)
+[IMAGEM]
 
 Por sua vez, nosso processador cumpre todas as garantias de segurança para oferecer aos usuários a máxima proteção ao salvar seus dados. Essa é uma das grandes vantagens de adicionar o Checkout Bricks ao seu site: a tranquilidade de oferecer uma solução segura, respaldada pelo Mercado Pago, mas customizada para as necessidades da sua empresa.
 
@@ -162,7 +162,7 @@ O layout do Payment Brick foi construído com base nas melhores práticas de UX 
 | Formulário do pagamento com cartão | Campo para inserção do nome do titular do cartão <br><br> Propriedade: cardholderName | **Valor**: N/A <br> **Label**: Nome do titular como aparece no cartão <br> **Placeholder**: Ex.: João Silva <br> **Tipo**: select <br> **Formato**: N/A <br> **Máx. caracteres**: N/A | Obrigatório <br><br> Customizável (label, placeholder, tipo, formato e máximo de caracteres errados) |
 | Formulário do pagamento com cartão | Campo para seleção do documento do titular do cartão <br><br> Propriedade: cardholderIdentificationType | **Valor**: DNI, C.E, RUC, Otro <br> **Label:** Documento <br> **Placeholder:** N/A <br> **Tipo:** select <br> **Formato:** N/A <br> **Máx. caracteres:** N/A | Obrigatório* <br> Customizável (label, placeholder)<br><br> *Se os dados de tipo de documento e número de documento foram fornecidos e salvos anteriormente, este elemento se torna opcional. |
 | Formulário do pagamento com cartão | Campo para inserção do número do documento do titular do cartão <br><br> Propriedade: cardholderIdentificationNumber | **Valor**: N/A <br> **Label**:  N/A <br> **Placeholder**: N/A. <br> **Tipo:** number <br> **Formato:** N/A <br> **Máx. caracteres:** N/A | Obrigatório <br> Não customizável |
-| Formulário do pagamento com cartão | Campo para inserção do email do comprador <br><br> Propriedade: email | **Valor**: N/A <br> **Label**: Email <br> **Placeholder**: Ex.: joaosilva@email.com <br> **Tipo**: string <br> **Formato**: padrão de e-mail convencional (exemplo@email.com) <br> **Máx. caracteres:** N/A | Obrigatório* <br> Customizável  (label, placeholder) <br><br> _*Se os dados foram fornecidos e salvos anteriormente, este elemento se torna opcional._ | 
+| Formulário do pagamento com cartão e PagoEfectivo | Campo para inserção do email do comprador <br><br> Propriedade: email | **Valor**: N/A <br> **Label**: Email <br> **Placeholder**: Ex.: joaosilva@email.com <br> **Tipo**: string <br> **Formato**: padrão de e-mail convencional (exemplo@email.com) <br> **Máx. caracteres:** N/A | Obrigatório* <br> Customizável  (label, placeholder) <br><br> _*Se os dados foram fornecidos e salvos anteriormente, este elemento se torna opcional._ | 
 
 ------------
 ----[mco]----

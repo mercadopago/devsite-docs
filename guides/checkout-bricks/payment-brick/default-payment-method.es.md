@@ -16,7 +16,6 @@ settings = {
        // debitCardForm: true,
        // savedCardForm: 'card id sent in the initialization',
        // ticketForm: true,
-       // bankTransferForm: true,
      },
    },
  }
@@ -31,7 +30,6 @@ const customization = {
      // debitCardForm: true,
      // savedCardForm: 'card id sent in the initialization',
      // ticketForm: true,
-     // bankTransferForm: true,
    },
  }
 };

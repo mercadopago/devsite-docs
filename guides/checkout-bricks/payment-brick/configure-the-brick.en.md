@@ -230,7 +230,7 @@ const onReady = async () => {
 ```Javascript
 const settings = {
  initialization: {
-   /*
+    /*
      "amount" is the total amount to be paid by all means of payment
      with the exception of the Mercado Pago Account and Installment without a credit card, which have their processing value determined in the backend through the "preferenceId"
     */
@@ -241,15 +241,16 @@ const settings = {
    paymentMethods: {
      creditCard: "all",
      debitCard: "all",
-     mercadoPago: "all",
+     mercadoPago: ["wallet_purchase"],
+     atm: "all",
    },
  },
  callbacks: {
    onReady: () => {
-     /*
+    /*
      Callback called when Brick is ready.
      Here you can hide loadings from your site, for example.
-     */
+    */
    },
    onSubmit: ({ selectedPaymentMethod, formData }) => {
      // callback called when clicking the submit data button
@@ -292,7 +293,8 @@ const customization = {
  paymentMethods: {
    creditCard: "all",
    debitCard: "all",
-   mercadoPago: "all",
+   mercadoPago: ["wallet_purchase"],
+   atm: "all",
  },
 };
 const onSubmit = async (
@@ -319,12 +321,12 @@ const onSubmit = async (
 };
 const onError = async (error) => {
  // callback called for all Brick error cases
- console.log(error);
+ console.error(error);
 };
 const onReady = async () => {
  /*
-  Callback called when Brick is ready.
-  Here you can hide loadings from your site, for example.
+   Callback called when Brick is ready.
+   Here you can hide loadings from your site, for example.
  */
 };
 ```

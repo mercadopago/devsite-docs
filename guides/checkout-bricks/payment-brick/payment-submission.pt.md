@@ -23,21 +23,28 @@ Veja nas seções a seguir como enviar ao Mercado Pago os pagamentos realizados 
 * [Conta Mercado Pago e Parcelamento ser cartão](/developers/pt/docs/checkout-bricks/payment-brick/payment-submission/wallet-credits)
 * [Pix](/developers/pt/docs/checkout-bricks/payment-brick/payment-submission/pix)
 * [Outros meios de pagamento](/developers/pt/docs/checkout-bricks/payment-brick/payment-submission/other-payment-methods/brasil)
-------------
 
+------------
 ----[mla]----
 * [Cartões](/developers/pt/docs/checkout-bricks/payment-brick/payment-submission/cards)
 * [Conta Mercado Pago e Parcelamento ser cartão](/developers/pt/docs/checkout-bricks/payment-brick/payment-submission/wallet-credits)
 * [Outros meios de pagamento](/developers/pt/docs/checkout-bricks/payment-brick/payment-submission/other-payment-methods/argentina)
-------------
 
+------------
 ----[mlm]----
 * [Cartões](/developers/pt/docs/checkout-bricks/payment-brick/payment-submission/cards)
 * [Conta Mercado Pago e Parcelamento ser cartão](/developers/pt/docs/checkout-bricks/payment-brick/payment-submission/wallet-credits)
 * [Outros meios de pagamento](/developers/pt/docs/checkout-bricks/payment-brick/payment-submission/other-payment-methods/mexico)
-------------
 
+------------
+----[mpe]----
+* [Cartões](/developers/pt/docs/checkout-bricks/payment-brick/payment-submission/cards)
+* [Conta Mercado Pago](/developers/pt/docs/checkout-bricks/payment-brick/payment-submission/wallet)
+* [Outros meios de pagamento](/developers/pt/docs/checkout-bricks/payment-brick/payment-submission/other-payment-methods/peru)
+
+------------
 ----[mpe, mco, mlu, mlc]----
 * [Cartões](/developers/pt/docs/checkout-bricks/payment-brick/payment-submission/cards)
 * [Conta Mercado Pago](/developers/pt/docs/checkout-bricks/payment-brick/payment-submission/wallet)
+
 ------------

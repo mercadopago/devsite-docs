@@ -212,3 +212,32 @@ const initialization = {
 ]]]
 
 ------------
+----[mpe]----
+## Outros meios de pagamento
+
+No formulário exibido para pagamento com **PagoEfectivo**, é possível inicializar com as informações já preenchidas. Para isso, é necessário passar a seguinte configuração no objeto de inicialização do Brick.
+
+[[[
+```Javascript
+settings = {
+  ...,
+  initialization: {
+    ...,
+    payer: {
+      ...,
+      email: 'jose@maria.com',
+    }
+  }
+}
+```
+```react-jsx
+const initialization = {
+ ...,
+ payer: {
+   email: 'jose@maria.com',
+ },
+};
+```
+]]]
+
+------------

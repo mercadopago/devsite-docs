@@ -14,7 +14,7 @@ The Brick has responsive capabilities in terms of the size within the screen. Th
 ![responsiveness-mlb](checkout-bricks/responsiveness-mlb-en.gif)
 
 ------------
-----[mpe, mco, mlu, mlc]---- 
+----[mco, mlu, mlc]---- 
 ![responsiveness-all](checkout-bricks/responsiveness-mla-en.gif)
 
 ------------
@@ -26,6 +26,10 @@ The Brick has responsive capabilities in terms of the size within the screen. Th
 ![responsiveness-mlm](checkout-bricks/responsiveness-mlm-en.gif)
 
 ------------
+----[mpe]---- 
+[IMAGEM]
+
+------------
 
 ## Themes
 
@@ -35,7 +39,7 @@ The Checkout Bricks can be instantiated/rendered with different themes and featu
 ![themes-mlb](checkout-bricks/themes-mlb-en.png)
 
 ------------
-----[mpe, mco, mlu, mlc]---- 
+----[mco, mlu, mlc]---- 
 ![themes-all](checkout-bricks/themes-all-en.png)
 
 ------------
@@ -45,6 +49,10 @@ The Checkout Bricks can be instantiated/rendered with different themes and featu
 ------------
 ----[mlm]---- 
 ![themes-mlm](checkout-bricks/themes-mlm-en.jpg)
+
+------------
+----[mpe]---- 
+[IMAGEM]
 
 ------------
 

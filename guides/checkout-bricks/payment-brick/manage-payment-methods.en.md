@@ -81,8 +81,17 @@ The table below shows the available payment methods:
 | ticket | ['efecty'] |
 
 ------------
+----[mpe]---- 
 
-----[mlc, mpe]---- 
+| paymentMethods | Possible values |
+|--- |--- |
+| creditCard | string[] <br><br> To obtain available debit card amounts, check out the API [Get payment methods](/developers/en/reference/payment_methods/_payment_methods/get). |
+| debitCard | string[] <br><br> To obtain available credit card amounts, check out the API [Get payment methods](/developers/en/reference/payment_methods/_payment_methods/get). |
+| mercadoPago | ['wallet_purchase'] |
+| atm | ['pagoefectivo_atm'] |
+
+------------
+----[mlc]---- 
 
 | paymentMethods | Possible values |
 |--- |--- |

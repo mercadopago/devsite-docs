@@ -212,3 +212,32 @@ const initialization = {
 ]]]
 
 ------------
+----[mpe]----
+## Other payment methods
+
+In the form displayed for payment by **PagoEfectivo**, you can start with the fields already filled in. For this, it is necessary to pass the following configuration in the Brick's initialization object.
+
+[[[
+```Javascript
+settings = {
+  ...,
+  initialization: {
+    ...,
+    payer: {
+      ...,
+      email: 'jose@maria.com',
+    }
+  }
+}
+```
+```react-jsx
+const initialization = {
+ ...,
+ payer: {
+   email: 'jose@maria.com',
+ },
+};
+```
+]]]
+
+------------

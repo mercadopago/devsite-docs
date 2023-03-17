@@ -51,40 +51,6 @@ const settings = {
                "selectInstallments": "",
                "selectIssuerBank": "",
                "formSubmit": "",
-               "payerFirstName": {
-               "placeholder": "",
-                   "label": ""
-               },
-               "payerLastName": {
-                   "placeholder": "",
-                   "label": ""
-               },
-               "zipCode": {
-                   "placeholder": "",
-                   "label": ""
-               },
-               "addressState": {
-                   "placeholder": "",
-                   "label": ""
-               },
-               "addressCity": {
-                   "placeholder": "",
-                   "label": ""
-               },
-               "addressNeighborhood": {
-                   "placeholder": "",
-                   "label": ""
-               },
-               "addressStreet": {
-                   "placeholder": "",
-                   "label": ""
-               },
-               "addressNumber": {
-                   "label": ""
-               },
-               "addressComplement": {
-                   "label": ""
-               },
                "paymentMethods": {
                    "newCreditCardTitle": "",
                    "creditCardTitle": "",
@@ -92,10 +58,8 @@ const settings = {
                    "newDebitCardTitle": "",
                    "debitCardTitle": "",
                    "debitCardValueProp": "",
-                   "ticketTitle": "",
+             "ticketTitle": "",
                    "ticketValueProp": "",
-                   "bankTransferTitle": "",
-                   "bankTransferValueProp": "",
                  }
            }
       },
@@ -134,41 +98,7 @@ const customization = {
      },
      selectInstallments: 'string' ,
      selectIssuerBank: 'string' ,
-     formSubmit: 'string' ,
-     payerFirstName: {
-       placeholder: 'string',
-       label:  'string'
-     },
-     payerLastName: {
-       placeholder: 'string',
-       label: 'string'
-     },
-     zipCode: {
-       placeholder: 'string',
-       label: 'string'
-     },
-     addressState: {
-       placeholder: 'string',
-       label: 'string'
-     },
-     addressCity: {
-       placeholder: 'string',
-       label: 'string'
-     },
-     addressNeighborhood: {
-       placeholder: 'string',
-       label: 'string'
-     },
-     addressStreet: {
-       placeholder: 'string',
-       label: 'string'
-     },
-     addressNumber: {
-       label: 'string'
-     },
-     addressComplement: {
-       label: 'string'
-     },
+     formSubmit: 'string' ,    
      paymentMethods: {
        newCreditCardTitle: 'string',
        creditCardTitle: 'string',
@@ -176,10 +106,8 @@ const customization = {
        newDebitCardTitle: 'string',
        debitCardTitle: 'string',
        debitCardValueProp: 'string',
-       ticketTitle: 'string',
+	 ticketTitle: 'string',
        ticketValueProp: 'string',
-       bankTransferTitle: 'string',
-       bankTransferValueProp: 'string',
      }
    }
  }
