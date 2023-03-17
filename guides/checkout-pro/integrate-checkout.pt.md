@@ -157,7 +157,7 @@ mercadopago.preferences.create(preference)
 });
 ```
 ```java
-PreferenceItemRequest itemRequest =
+ PreferenceItemRequest itemRequest =
        PreferenceItemRequest.builder()
            .id("1234")
            .title("Games")
@@ -172,6 +172,8 @@ PreferenceItemRequest itemRequest =
    items.add(itemRequest);
 PreferenceRequest preferenceRequest = PreferenceRequest.builder()
 .items(items).build();
+PreferenceClient client = new PreferenceClient();
+Preference preference = client.create(request);
 ```
 ```ruby
 # Cria um objeto de preferência
@@ -266,16 +268,23 @@ mercadopago.preferences.create(preference)
 });
 ```
 ```java
-// Cria um objeto de preferência
-Preference preference = new Preference();
-
-// Cria um item na preferência
-Item item = new Item();
-item.setTitle("Meu produto")
-    .setQuantity(1)
-    .setUnitPrice((float) 75);
-preference.appendItem(item);
-preference.save();
+ PreferenceItemRequest itemRequest =
+       PreferenceItemRequest.builder()
+           .id("1234")
+           .title("Games")
+           .description("PS5")
+           .pictureUrl("http://picture.com/PS5")
+           .categoryId("games")
+           .quantity(2)
+           .currencyId("BRL")
+           .unitPrice(new BigDecimal("4000"))
+           .build();
+   List<PreferenceItemRequest> items = new ArrayList<>();
+   items.add(itemRequest);
+PreferenceRequest preferenceRequest = PreferenceRequest.builder()
+.items(items).build();
+PreferenceClient client = new PreferenceClient();
+Preference preference = client.create(request);
 ```
 ```ruby
 # Cria um objeto de preferência

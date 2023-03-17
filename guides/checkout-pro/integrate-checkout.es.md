@@ -155,7 +155,7 @@ mercadopago.preferences
   });
 ```
 ```java
-PreferenceItemRequest itemRequest =
+ PreferenceItemRequest itemRequest =
        PreferenceItemRequest.builder()
            .id("1234")
            .title("Games")
@@ -170,6 +170,8 @@ PreferenceItemRequest itemRequest =
    items.add(itemRequest);
 PreferenceRequest preferenceRequest = PreferenceRequest.builder()
 .items(items).build();
+PreferenceClient client = new PreferenceClient();
+Preference preference = client.create(request);
 ```
 ```ruby
 # Crea un objeto de preferencia
@@ -266,7 +268,7 @@ mercadopago.preferences
   });
 ```
 ```java
-PreferenceItemRequest itemRequest =
+ PreferenceItemRequest itemRequest =
        PreferenceItemRequest.builder()
            .id("1234")
            .title("Games")
@@ -281,6 +283,8 @@ PreferenceItemRequest itemRequest =
    items.add(itemRequest);
 PreferenceRequest preferenceRequest = PreferenceRequest.builder()
 .items(items).build();
+PreferenceClient client = new PreferenceClient();
+Preference preference = client.create(request);
 ```
 ```ruby
 # Crea un objeto de preferencia
