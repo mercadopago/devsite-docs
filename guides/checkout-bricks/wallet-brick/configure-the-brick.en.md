@@ -2,6 +2,7 @@
 
 Create Brick's startup configuration.
 
+[[[
 ```Javascript
 const settings = {
  callbacks: {
@@ -53,7 +54,6 @@ window.walletBrickController = await bricksBuilder.create(
  settings,
 );
 ```
-
 ```react-jsx
 const onSubmit = async (formData) => {
  // callback called when clicking Wallet Brick
@@ -104,6 +104,7 @@ const onReady = async () => {
  */
 };
 ```
+]]]
 
 > WARNING
 > 
