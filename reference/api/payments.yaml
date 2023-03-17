@@ -513,6 +513,7 @@ paths:
                     spa: Identificador del token card. (obligatorio para tarjeta de crédito). El token de la tarjeta se crea a partir de la información de la propia tarjeta, aumentando la seguridad durante el flujo de pago. Además, una vez que el token se usa en una compra determinada, se descarta, lo que requiere la creación de un nuevo token para futuras compras.
                     por: Identificador de token card (obrigatório para cartão de crédito). O token do cartão é criado a partir das próprias informações do cartão, aumentando a segurança durante o fluxo do pagamento. Além disso, uma vez que o token é utilizado em determinada compra, ele é descartado, sendo necessária a criação de um novo token para compras futuras. 
                   required: true
+                  example: "ff8080814c11e237014c1ff593b57b4d"
                 transaction_amount:
                   type: number
                   description: Product’s cost. Example - The sale of a product for R$100.00 will have a transactionAmount = 100.
