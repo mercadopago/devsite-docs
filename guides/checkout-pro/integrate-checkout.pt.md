@@ -33,7 +33,7 @@ Para instalar o SDK no seu projeto [Maven](http://maven.apache.org/install.html)
 <dependency>
    <groupId>com.mercadopago</groupId>
    <artifactId>sdk-java</artifactId>
-   <version>2.0.0</version>
+   <version>2.1.7</version>
 </dependency>
 ```
 ```ruby

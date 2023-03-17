@@ -30,7 +30,7 @@ To install the SDK in your [Maven](http://maven.apache.org/install.html) project
 <dependency>
 <groupId>com.mercadopago</groupId>
 <artifactId>sdk-java</artifactId>
-<version>2.0.0</version>
+<version>2.1.7</version>
 </dependency>
 ```
 ```ruby
