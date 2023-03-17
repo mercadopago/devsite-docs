@@ -11,7 +11,8 @@
 | Type  | Boolean  |
 | Comments  | When **true**, hides the title line and accepted flags.  |
 
-```javascript
+[[[
+```Javascript
 const settings = {
    ...,
    customization: {
@@ -21,6 +22,14 @@ const settings = {
    }
 }
 ```
+```react-jsx
+const customization = {
+ visual: {
+   hideFormTitle: true
+ }
+};
+```
+]]]
 
 > CLIENT_SIDE
 >
@@ -35,15 +44,16 @@ const settings = {
 | Type  | Boolean  |
 | Comments  | When true, the form submit button is not displayed and it becomes necessary to use the getFormData function to get the form data (see example below). |
 
+[[[
 ```javascript
 const settings = {
     ...,
     callbacks: {
         onReady: () => {
-            // callback chamado quando o Brick estiver pronto
+            // callback called when brick is ready
         },
         onError: (error) => { 
-            // callback chamado para todos os casos de erro do Brick
+            // callback called for all Brick error cases
         },
     },
     customization: {
@@ -53,11 +63,9 @@ const settings = {
     }
 }
 ```
-
 ```html
 <button type="button" onclick="createPayment();">Custom Payment Button</button>
 ```
-
 ```javascript
 function createPayment(){
     window.cardPaymentBrickController.getFormData()
@@ -76,6 +84,14 @@ function createPayment(){
         });
 };
 ```
+```react-jsx
+const customization = {
+ visual: {
+   hidePaymentButton: true
+ }
+};
+```
+]]]
 
 > NOTE
 >

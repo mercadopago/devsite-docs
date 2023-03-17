@@ -11,7 +11,8 @@
 | Tipo | Boolean |
 | Observações | Quando **true**, oculta a linha de título e as bandeiras aceitas. |
 
-```javascript
+[[[
+```Javascript
 const settings = {
    ...,
    customization: {
@@ -21,6 +22,14 @@ const settings = {
    }
 }
 ```
+```react-jsx
+const customization = {
+ visual: {
+   hideFormTitle: true
+ }
+};
+```
+]]]
 
 > CLIENT_SIDE
 >
@@ -35,6 +44,7 @@ const settings = {
 | Tipo | Boolean |
 | Observações | Quando **true** não mostra o botão de enviar o formulário e passa a ser necessário utilizar a função getFormData para obter os dados do formulário (veja exemplo abaixo). |
 
+[[[
 ```javascript
 const settings = {
     ...,
@@ -53,12 +63,10 @@ const settings = {
     }
 }
 ```
-
 ```html
 <button type="button" onclick="createPayment();">Custom Payment Button</button>
 ```
-
-```javascript
+```Javascript
 function createPayment(){
     window.cardPaymentBrickController.getFormData()
         .then((cardFormData) => {
@@ -76,6 +84,14 @@ function createPayment(){
         });
 };
 ```
+```react-jsx
+const customization = {
+ visual: {
+   hidePaymentButton: true
+ }
+};
+```
+]]]
 
 > NOTE
 >

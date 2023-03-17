@@ -12,7 +12,8 @@
 | Tipo | String |
 | Observações | Ao enviar um texto vazio, a tela apresentará o texto definido pelo layout padrão. Por outro lado, ao se enviar um texto customizado, este substituirá o texto padrão. Para verificar quais são os textos padrões, veja a [seção Layout](/developers/pt/docs/checkout-bricks/card-payment-brick/introduction) do Card Payment Brick. <br> <br> Caso os textos customizados sejam maiores do que o espaço disponível, o texto apresentado será interrompido até o tamanho máximo permitido e o excedente será substituído pelo símbolo "...". |
 
-```javascript
+[[[
+```Javascript
 const settings = {
     ...,
     customization: {
@@ -26,3 +27,15 @@ const settings = {
     },
 }
 ```
+```react-jsx
+const customization = {
+ visual: {
+   texts: {
+     formTitle: 'string',
+     installmentsSectionTitle: 'string'
+     ...,
+   }
+ }
+};
+```
+]]]
