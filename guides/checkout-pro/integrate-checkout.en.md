@@ -381,7 +381,7 @@ For JavaScript/HTML integrations, via CDN, you will still need to create an iden
  <div id="wallet_container"></div>
 ```
 
-> WARNING
+> NOTE
 >
 > Attention
 >

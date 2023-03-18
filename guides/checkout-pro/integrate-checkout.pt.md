@@ -380,7 +380,7 @@ Para integrações JavaScript/HTML, via CDN, você vai precisar ainda criar um c
  <div id="wallet_container"></div>
 ```
 
-> WARNING
+> NOTE
 >
 > Atenção
 >

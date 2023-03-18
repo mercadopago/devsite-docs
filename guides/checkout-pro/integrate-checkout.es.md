@@ -382,7 +382,7 @@ Para las integraciones de JavaScript/HTML, a través de CDN, deberá crear un co
  <div id="wallet_container"></div>
 ```
 
-> WARNING
+> NOTE
 >
 > Atención
 >

@@ -1,10 +1,10 @@
-# Billetera Mercado Pago
+# Cuenta de Mercado Pago
 
-La opción de pagar con Billetera Mercado Pago, por defecto, se presenta en todos los Checkouts de Mercado Pago (Checkout Pro y Link de Pago) en combinación con los pagos de los usuarios invitados (sin login).
+La opción de pagar con Cuenta de Mercado Pago, por defecto, se presenta en todos los Checkouts de Mercado Pago (Checkout Pro y Link de Pago) en combinación con los pagos de los usuarios invitados (sin login).
 
 Esta opción permite a los usuarios registrados en Mercado Pago y/o Mercado Libre iniciar sesión y utilizar los métodos disponibles para realizar sus pagos, además de poder incluir nuevas opciones de pago, como tarjetas de crédito.
 
-Es posible pagar con **tarjeta**, **saldo disponible** y **Mercado Crédito** en un entorno seguro y optimizado, aumentando las posibilidades de conversión de ventas, además de permitir al vendedor ofrecer únicamente pagos con billetera. Con esto, la opción de pagar sin iniciar sesión no existirá, sin embargo, contribuirá a un aumento en la conversión de pagos.
+Es posible pagar con **tarjeta**, **saldo disponible** y **Mercado Crédito** en un entorno seguro y optimizado, aumentando las posibilidades de conversión de ventas, además de permitir al vendedor ofrecer únicamente pagos con Cuenta de Mercado Pago. Con esto, la opción de pagar sin iniciar sesión no existirá, sin embargo, contribuirá a un aumento en la conversión de pagos.
 
 > WARNING
 >
@@ -14,25 +14,20 @@ Es posible pagar con **tarjeta**, **saldo disponible** y **Mercado Crédito** en
 
 Sigue los pasos a continuación para configurar el Monedero de Mercado Pago como método de pago.
 
-
 > SERVER_SIDE
 >
 > h2
 >
 > Crear preferencia
 
-
 Si eres un usuario y deseas que todos tus pagos se realicen a través de Wallet, puedes determinarlo a través de un atributo en la llamada a la API de preferencias. Para crear una preferencia, usa uno de los SDK disponibles a continuación.
 
-
 > Además de las SDKs, también es posible crear una preferencia a través de la API de preferencias. Para eso, envíe un **POST** con el parámetro `purpose` y el valor `wallet_purchase` al endpoint [/checkout/preferences](/developers/es/reference/preferences/_checkout_preferences/post) y ejecuta el request o, si lo prefieres, usa uno de los SDK a continuación.
-
-
 
 [[[
 ```php
 ===
-El modo billetera funciona añadiendo el atributo _purpose_ en la preferencia.
+El modo Cuenta de Mercado Pago funciona añadiendo el atributo _purpose_ en la preferencia.
 ===
 <?php
 // Crea un objeto de preferencia
@@ -50,7 +45,7 @@ $preference->save();
 ```
 ```node
 ===
-El modo billetera funciona añadiendo el atributo _purpose_ en la preferencia.
+El modo Cuenta de Mercado Pago funciona añadiendo el atributo _purpose_ en la preferencia.
 ===
 // Crea un objeto de preferencia
 let preference = {
@@ -74,7 +69,7 @@ mercadopago.preferences.create(preference)
 ```
 ```java
 ===
-El modo billetera funciona añadiendo el atributo _purpose_ en la preferencia.
+El modo Cuenta de Mercado Pago funciona añadiendo el atributo _purpose_ en la preferencia.
 ===
 // Crea un objeto de preferencia
 PreferenceClient client = new PreferenceClient();
@@ -97,7 +92,7 @@ client.create(request);
 ```
 ```ruby
 ===
-El modo billetera funciona añadiendo el atributo _purpose_ en la preferencia.
+El modo Cuenta de Mercado Pago funciona añadiendo el atributo _purpose_ en la preferencia.
 ===
 sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 # Crea un objeto de preferencia
@@ -119,7 +114,7 @@ preference = preference_response[:response]
 ```
 ```csharp
 ===
-El modo billetera funciona añadiendo el atributo _purpose_ en la preferencia.
+El modo Cuenta de Mercado Pago funciona añadiendo el atributo _purpose_ en la preferencia.
 ===
 // Crea el objeto de request de la preferencia
 var request = new PreferenceRequest
@@ -164,8 +159,8 @@ preference = preference_response["response"]
 > Importante
 >
 > El valor `unit_price` debe ser un número entero.
-------------
 
+------------
 
 > CLIENT_SIDE
 >
@@ -173,34 +168,4 @@ preference = preference_response["response"]
 >
 > Añadir checkout
 
-
-Con la preferencia creada, se debe exhibir el botón de pago que permitirá al comprador utilizar la billetera de Mercado Pago para pagar. Para exhibir el botón de pago, utiliza el HTML disponible a continuación.
-
-
-
-[[[
-```html
-<div class="cho-container"></div>
-<script src="https://sdk.mercadopago.com/js/v2"></script>
-<script>
-  const mp = new MercadoPago('PUBLIC_KEY');
-
-  mp.checkout({
-    preference: {
-      id: 'YOUR_PREFERENCE_ID'
-    },
-    render: {
-      container: '.cho-container',
-      label: 'Pagar com Mercado Pago',
-      type: 'wallet',
-    }
-  });
-</script>
-```
-]]]
-
-> WARNING
->
-> Importante
->
-> Al crear un pago es posible recibir tres estados diferentes: `Pendiente`, `Rechazado` y `Aprobado`. Para mantenerse al día con las actualizaciones, debes configurar tu sistema para recibir notificaciones de pago y otras actualizaciones de estado. Consulta [Notificaciones](/developers/es/docs/checkout-pro/additional-content/notifications/Introduction) para obtener más detalles.
+Los pasos para configurar el Cuenta de Mercado Pago (*client-side*) son los mismos que los presentados [en esta sección](/developers/es/docs/checkout-pro/integrate-checkout-pro).

@@ -1,9 +1,8 @@
-# Color style
+# Change color style
 
 Checkout Pro allows you to customize the color style of your interface elements, customizing the way it will be displayed to the user.
 
 Among the color customizations it is possible to customize the color of the header and checkout elements such as buttons, data fields, borders, transition elements and text.
-
 
 > WARNING
 >
@@ -11,20 +10,47 @@ Among the color customizations it is possible to customize the color of the head
 >
 > The customization of colors and elements is valid only for the modal opening scheme. In addition, the color attributes must be **in hexadecimal format**, for example, #ff0000.
 
-
-To enable color style editing on the checkout and its elements, add the `theme` object and the `elementsColor` attribute with the color you want to apply to the Checkout Pro launch options as shown below.
-
+To enable color style editing on the checkout and its elements, add the `theme` object and the `elementsColor` and `headerColor` attribute with the color you want to apply, launch options as shown below.
 
 [[[
-```html
-<script>
-mp.checkout({
-preference: {...},
-render: {...},
-theme: {
-elementsColor: '#ff0000'.
-}
-});
-</script>
+```Javascript
+const renderComponent = async (bricksBuilder) => {
+ const settings = {
+   initialization: {
+     preferenceId: '<PREFERENCE_ID>'
+   },
+   customization: {
+     checkout: {
+       theme: {
+         elementsColor: '#4287F5',
+         headerColor: '#4287F5'
+       },
+     },
+   };
+   const brickController = await.create(
+     'wallet',
+     'wallet_container',
+     settings
+   );
+ };
+
+
+renderComponent(bricksBuilder);
+```
+```react-jsx
+const customization = {
+ checkout: {
+   theme: {
+     elementsColor: '#4287F5',
+     headerColor: '#4287F5'
+   },
+ },
+};
+
+
+<Wallet
+  initialization={{ preferenceId: '<PREFERENCE_ID>'}}
+  customization={customization}
+/>
 ```
 ]]]
