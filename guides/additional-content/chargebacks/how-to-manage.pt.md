@@ -42,7 +42,7 @@ Se a documentação for carregada no site com sucesso, a API responderá com sta
 
 ----[mlb]----
 
-Se a documentação for carregada no site com sucesso, a API responderá com status `200 OK` e manterá o valor de `documentation_status` como `pending`. Após da análise da documentação, este mesmo valor é alterado para `valid` ou `not supplied`.
+Se a documentação for carregada no site com sucesso, a API responderá com status `200 OK` e manterá o valor de `documentation_status` como `pending`. Após a análise da documentação, este mesmo valor será alterado para `valid` ou `not supplied`.
 
 ------------
 
