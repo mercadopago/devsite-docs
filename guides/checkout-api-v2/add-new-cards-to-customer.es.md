@@ -142,19 +142,3 @@ curl -X POST \
     -d '{"token": "9b2d63e00d66a8c721607214cedaecda", "issuer": {"id": "3245612"}, "payment_method_id":"debit_card"}'
 ```
 ]]]
-
-> PREV_STEP_CARD_ES
->
-> Buscar cliente
->
-> Aprende cómo buscar un cliente a partir de una información específica.
->
-> [Buscar cliente](/developers/es/docs/checkout-api/cards-and-customers-management/search-customers)
-
-> NEXT_STEP_CARD_ES
->
-> Consultar lista de tarjetas
->
-> Aprende cómo consultar la lista de tarjetas de un determinado cliente.
->
-> [Consultar lista de tarjetas](/developers/es/docs/checkout-api/cards-and-customers-management/get-cards-list)

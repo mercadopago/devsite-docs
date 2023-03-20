@@ -1,6 +1,5 @@
 # Compra de prueba	
 
-
 Hay dos formas de realizar el pago: como **usuario invitado**, rellenando únicamente una dirección de correo electrónico, y como **usuario registrado**, accediendo a una cuenta de Mercado Pago con usuario y contraseña.
 
 ----[mlb, mlm, mpe, mco, mlu, mlc]----
@@ -10,7 +9,6 @@ En este último escenario, se habilitarán como medios de pago las tarjetas prev
 ------------
 
 ## Usuario invitado
-
 
 1. Sigue el flujo de compra y, al abrir el checkout, ingresa los datos del **usuario comprador**.
 2. Selecciona **Tarjeta** como medio de pago e ingrese los detalles de una de las tarjetas disponibles en nuestra página [tarjetas de prueba](/developers/es/docs/checkout-pro/additional-content/test-cards).

@@ -81,6 +81,7 @@ Para definir o modelo de redirect direto, insira o código abaixo em seu projeto
 ```html
 <!doctype html>
 <html>
+<<<<<<< HEAD
  <head>
    <title>Pagar</title>
  </head>
@@ -91,5 +92,18 @@ Para definir o modelo de redirect direto, insira o código abaixo em seu projeto
      </button>
    </a>
  </body>
+=======
+  <head>
+    <title>Pagar</title>
+  </head>
+  <body>
+    <a href="YOUR_INIT_POINT"> // Indique o campo  init_point retornado na criação da preferência
+    <button>
+      Pagar com Mercado Pago
+    </button>
+    
+</a>
+</body>
+>>>>>>> 171219afab997d52db0f16ba5a9643a8d2b64ff3
 </html>
 ```

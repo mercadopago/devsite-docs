@@ -85,11 +85,21 @@ To define the direct redirection model, insert the code below in your project in
    <title>Pagar</title>
  </head>
  <body>
+<<<<<<< HEAD
    <a href="YOUR_INIT_POINT"> // Indicate the init_point returned when creating the preference
      <button>
        Pay with Mercado Pago
      </button>
    </a>
  </body>
+=======
+   <a href="YOUR_INIT_POINT"> // Enter the init_point field returned when creating the preference
+   <button>
+     Pay with Mercado Pago
+   </button>
+  
+</a>
+</body>
+>>>>>>> 171219afab997d52db0f16ba5a9643a8d2b64ff3
 </html>
 ```

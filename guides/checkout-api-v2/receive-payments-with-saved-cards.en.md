@@ -326,10 +326,3 @@ id: "123456789-jxOV430go9fx2e"
 ```
 ]]]
 
-> PREV_STEP_CARD_EN
->
-> Get cards list
->
-> Learn how to consult the list of cards for a given customer.
->
-> [Get cards list](/developers/en/docs/checkout-api/customer-management/get-cards-list)

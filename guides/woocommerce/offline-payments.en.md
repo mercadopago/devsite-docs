@@ -1,4 +1,4 @@
-## Offline payment methods
+# Offline payment methods
 
 This means of payment will add----[mlb]---- Transparent Checkout ------------ ----[mla, mlm, mpe, mco, mlu, mlc]--- - Checkout API ------------and it will allow you to offer cash payments using offline payment methods through Mercado Pago.
 
@@ -9,4 +9,3 @@ This means of payment will add----[mlb]---- Transparent Checkout ------------ --
 5. With Payment expiration you can configure in how many days the orders with cash payments will expire.
 
 To save your changes to your settings, click the **Save Changes** button.
-

@@ -1,18 +1,40 @@
 # Cómo migrar de SDK JS V1 a SDK JS V2 con Secure Fields
 
+En Mercado Pago lanzamos Secure Fields, una nueva funcionalidad de seguridad para procesar pagos con tarjetas. Está disponible solo en la versión más actual de SDK JS y cuenta con varios beneficios cómo:
+
+- Implementación más simple
+- Mayor seguridad para tu tienda
+- Facilidad para sacar la certificación PCI SAQ A de forma más sencilla
+
 En este artículo explicaremos las configuraciones necesarias para la migración de **JavaScript SDK en la versión 1** a **JavaScript SDK en la versión 2 con Secure Fields**.
 
-La migración es bastante simple y el orden de los eventos es exactamente el mismo, las diferencias son:
+A continuación mostramos las principales diferencias entre los pasos de migración.
 
 * Cambiamos la forma de instanciar Mercado Pago;
 * Ya no usaremos las funciones de callback de cada método, sino su retorno para trabajar con los datos;
 * Los nombres de algunos métodos también han sufrido algunos cambios menores y se han vuelto más claros en los snippets comparativos.
+
+----[mla, mlm, mpe, mlu, mlc, mlb]----
 
 > WARNING
 >
 > Atención
 >
 > La migración no afectará su backend de ninguna manera, las modificaciones están completamente en la interfaz de la aplicación.
+
+------------
+
+----[mco]----
+
+> WARNING
+>
+> Atención
+>
+> La migración no afectará su backend de ninguna manera, las modificaciones están completamente en la interfaz de la aplicación. Además, esta modificación afecta únicamente a la tarjeta y no afecta a otros medios de pago, cómo, por ejemplo, PSE.
+
+------------
+
+
 
 Vea a continuación una comparación de los diagramas.
 
@@ -122,7 +144,7 @@ const securityCodeElement = mp.fields.create('securityCode', {
 }).mount('securityCode');
 ````
 
-Con eso tenemos nuestros campos PCI seguros dentro del formulario.
+Con eso tenemos nuestros campos PCI seguros dentro del formulario. Para obtener más información sobre cómo configurar los iframes, visite nuestro [Github](https://github.com/mercadopago/sdk-js/blob/main/API/fields.md).
 
 ## Obtener tipos de documentos
 

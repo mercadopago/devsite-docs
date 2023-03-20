@@ -800,7 +800,8 @@ paths:
                           spa: Responsable de la entrega de pedidos.
                           por: Responsável pela entrega do pedido.
                         enum:
-                          - MERCHANT -- the restaurant is responsible for the order delivery.
+                          - MERCHANT -- The restaurant is responsible for the order delivery.
+                          - MARKETPLACE -- Mercado Pago is responsible for the order delivery.
                         example: "MERCHANT"
                       deliveryAddress:
                         type: object

@@ -11,7 +11,7 @@
 | Momento de customização | Ao renderizar Brick |
 | Propriedade | customization.visual.{buttonBackground, buttonHeight, borderRadius, valuePropColor, verticalPadding, horizontalPadding} |
 | Tipo | String |
-| Observações | Ao enviar uma propriedade vazia, a tela apresentará o visual definido pelo layout padrão. Por outro lado, ao se enviar um texto customizado, este substituirá o texto padrão. Para verificar quais são os textos padrões, veja a tabela a seguir.|
+| Observações | Ao enviar uma propriedade vazia, a tela apresentará o visual definido pelo layout padrão. Por outro lado, ao se enviar um valor customizado, este substituirá o valor padrão. Para verificar quais são os valores padrões, veja a tabela a seguir.|
 
 | Chave | Opções disponíveis | Padrão | Observações |
 |--- |--- | --- | --- |

@@ -573,19 +573,3 @@ curl -X POST \
 
 Al finalizar, podrás realizar pruebas y asegurarte de que la integración funciona correctamente.
 
-> PREV_STEP_CARD_ES
->
-> Requisitos previos
->
-> Consulta los requisitos previos que se necesitan para integrar Checkout API.
->
-> [Integrar Checkout API](/developers/es/docs/checkout-api/prerequisites)
-
-
-> NEXT_STEP_CARD_ES
->
-> Prueba de integración
->
-> Aprende cómo probar la integración de Checkout API en tu tienda.
->
-> [Prueba de integración](/developers/es/docs/checkout-api/test-integration/create-test-user)

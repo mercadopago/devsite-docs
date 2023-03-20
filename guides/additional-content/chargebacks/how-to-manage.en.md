@@ -34,7 +34,18 @@ https://api.mercadopago.com/v1/chargebacks/ID/documentation
 >
 > Files can be `.jpg`, `.png` or `.pdf` and should not exceed 10mb overall.
 
+----[mla, mlm, mpe, mco, mlu, mlc]----
+
 If the documentation has been successfully uploaded, the API will answer with `200 OK`, and the `documentation_status` value will change to `review_pending`.
+
+------------
+
+----[mlb]----
+
+If the documentation is successfully uploaded to the site, the API will respond with status `200 OK` and keep the value of `documentation_status` as `pending`. After reviewing the documentation, this same value is changed to `valid` or `not supplied`.
+
+------------
+
 
 4. Upon resolution, a new IPN notification will be sent so that you can verify the case. Check the dispute using the [Get Chargeback](/developers/pt/reference/chargebacks/_chargebacks_id/get) method. The `coverage_applied` value could have taken on one of the possible values:
 

@@ -4,7 +4,7 @@
 >
 > Agregar referencia externa
 
-De forma predeterminada, el Status Screen Brick no muestra el campo `external_reference` de la API de [Pagos](/developers/es/reference/pagos/_pagos/post), pero cómo estos datos pueden ser útiles para permitir que el integrador identifique el compra en su sitio web, puede habilitar el campo a través de la configuración a continuación.
+De forma predeterminada, el Status Screen Brick no muestra el campo `external_reference` de la API de [Pagos](/developers/es/reference/pagos/_pagos/post), pero cómo estos datos pueden ser útiles para permitir que el integrador identifique la compra en su sitio web, puede habilitar el campo a través de la configuración a continuación.
 
 [[[
 ```Javascript

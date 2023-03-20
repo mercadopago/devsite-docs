@@ -1,6 +1,5 @@
 # Realizar compra teste	
 
-
 Existem duas formas de fazer o pagamento: como **usuário convidado**, preenchendo apenas um endereço de e-mail, e como **usuário cadastrado**, acessando uma conta do Mercado Pago com usuário e senha. 
 
 ----[mlb, mlm, mpe, mco, mlu, mlc]----
@@ -10,7 +9,6 @@ Existem duas formas de fazer o pagamento: como **usuário convidado**, preenchen
 ------------
 
 ## Usuário convidado
-
 
 1. Siga o fluxo de compra e, ao abrir o checkout, insira os dados de **usuário comprador**.
 2. Selecione **Cartão** como meio de pagamento e insira os dados de um dos cartões disponíveis em nossa página de [cartões de teste](/developers/pt/docs/checkout-pro/additional-content/test-cards).

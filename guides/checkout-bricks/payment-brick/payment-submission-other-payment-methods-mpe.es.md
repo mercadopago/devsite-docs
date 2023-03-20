@@ -4,7 +4,7 @@
 >
 > Otros medios de pago
 
-Para configurar pagos en **efectivo** y **banca por internet**, envía un POST con los siguientes parámetros al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) y ejecuta la solicitud o, si lo prefieres, utiliza uno de nuestros SDKs indicados a continuación.
+Para configurar pagos con **PagoEfectivo**, envía un POST con los siguientes parámetros al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) y ejecuta la solicitud o, si lo prefieres, utiliza uno de nuestros SDKs indicados a continuación.
 
 > NOTE
 >

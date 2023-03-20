@@ -14,18 +14,3 @@ See below which payment methods are available for the store when integrating the
 * [Bank transfer](/developers/en/docs/magento-two/payment-configuration/checkout-api/bank-transfer): transfer between bank accounts within the time limit stipulated by the Central Bank of your country.
 ------------
 
-> PREV_STEP_CARD_PT
->
-> Payment configuration
->
-> Learn how to configure Mercado Pago checkouts to receive payments from your store.
->
-> [Payment configuration](/developers/en/docs/magento-two/payment-configuration)
-
-> NEXT_STEP_CARD_PT
->
-> Configure card payments
->
-> Learn how to set up Checkout API to receive card payments at your store.
->
-> [Configure card payments](/developers/en/docs/magento-two/payment-configuration/checkout-api/cards)

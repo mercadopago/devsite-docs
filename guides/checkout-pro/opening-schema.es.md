@@ -81,6 +81,7 @@ Para definir el modelo de redirección directa, inserte el código a continuaci�
 ```html
 <!doctype html>
 <html>
+<<<<<<< HEAD
  <head>
    <title>Pagar</title>
  </head>
@@ -91,5 +92,18 @@ Para definir el modelo de redirección directa, inserte el código a continuaci�
      </button>
    </a>
  </body>
+=======
+  <head>
+    <title>Pagar</title>
+  </head>
+  <body>
+    <a href="YOUR_INIT_POINT"> // Indique el campo init_point devuelto al crear la preferencia
+    <button>
+      Pagar con Mercado Pago
+    </button>
+    
+</a>
+</body>
+>>>>>>> 171219afab997d52db0f16ba5a9643a8d2b64ff3
 </html>
 ```

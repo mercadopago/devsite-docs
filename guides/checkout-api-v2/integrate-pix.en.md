@@ -380,8 +380,11 @@ The response will show the payment **pending status** and all the information yo
 
 With Pix, you can also choose the period that the customer will have to pay for the purchase, defining the expiration date of the payment code sent after the order is placed.
 
-By default, the expiration date for payments with Pix is **24 hours**, but you can change it by submitting the `date_of_expiration` field in the payment creation request.
-
+> NOTE
+>
+> Important
+>
+> By default, the expiration date for payments with Pix is **24 hours**, but you can change it by submitting the `date_of_expiration` field in the payment creation request. The configured date must be between **5 minutes and 30 days** from the payment issue date.
 
 ## Payment visualization
 
@@ -430,19 +433,4 @@ Follow the steps below to render the QR code and make copy and paste available.
 
 Upon completing these steps, the QR code will have been rendered and will be displayed to the buyer at checkout.
 
-> PREV_STEP_CARD_EN
->
-> Prerequisites
->
-> See the necessary prerequisites to integrate the Checkout API.
->
-> [Integrate Checkout API](/developers/en/docs/checkout-api/prerequisites)
 
-
-> NEXT_STEP_CARD_EN
->
-> Integration test
->
-> Learn how to test the Checkout API integration in your store.
->
-> [Integration Test](/developers/en/docs/checkout-api/integration-test/make-test-purchase)

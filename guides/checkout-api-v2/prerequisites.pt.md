@@ -12,19 +12,3 @@ Para integrar o Checkout Transparente, é importante atender aos requisitos most
 
 Se todos os pré-requisitos foram cumpridos, você poderá realizar a integração do Checkout Transparente.
 
-> PREV_STEP_CARD_PT
->
-> Tipos de integração
->
-> Veja os tipos de integração disponíveis para cada meio de pagamento.
->
-> [Tipos de integração](/developers/pt/docs/checkout-api/types-of-integration)
-
-
-> NEXT_STEP_CARD_PT
->
-> Configuração da integração
->
-> Saiba como realizar a integração do Checkout Transparente para pagamentos com cartão.
->
-> [Configuração da integração](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform)

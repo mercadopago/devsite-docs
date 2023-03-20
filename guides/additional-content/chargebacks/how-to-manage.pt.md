@@ -34,7 +34,18 @@ https://api.mercadopago.com/v1/chargebacks/ID/documentation
 >
 >Os arquivos poderão ser `.jpg`, `.png` ou `.pdf` e, no total, não poderão superar 10mb.
 
+----[mla, mlm, mpe, mco, mlu, mlc]----
+
 Se a documentação for carregada no site com sucesso, a API responderá com status `200 OK` e modificará o valor de `documentation_status` para `review_pending`.
+
+------------
+
+----[mlb]----
+
+Se a documentação for carregada no site com sucesso, a API responderá com status `200 OK` e manterá o valor de `documentation_status` como `pending`. Após a análise da documentação, este mesmo valor será alterado para `valid` ou `not supplied`.
+
+------------
+
 
 4. Aguarde a notificação IPN referente à resolução. Cheque novamente a contestação usando o método [Obter estorno](/developers/pt/reference/chargebacks/_chargebacks_id/get). O valor de `coverage_applied` pode ter assumido um dos possíveis valores:
 

@@ -220,19 +220,3 @@ Com a preferência criada, é preciso exibir o botão de pagamento que permitir�
 > Os pagamentos criados possuem os seguintes status: "Pendente", "Rejeitado" e "Aprovado". Para acompanhar as atualizações é necessário configurar seu sistema para receber as notificações de pagamentos e outras atualizações de status. Veja [Notificações](/developers/pt/docs/checkout-api/additional-content/notifications/introduction) para mais detalhes.
 
 
-> PREV_STEP_CARD_PT
->
-> Pré-requisitos
->
-> Veja os pré-requisitos necessários para integrar o Checkout Transparente.
->
-> [Integrar Checkout Transparente](/developers/pt/docs/checkout-api/prerequisites)
-
-
-> NEXT_STEP_CARD_PT
->
-> Teste de integração
->
-> Saiba como testar a integração do Checkout Transparente em sua loja.
->
-> [Teste de integração](/developers/pt/docs/checkout-api/integration-test/make-test-purchase)

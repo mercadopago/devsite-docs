@@ -17,7 +17,7 @@ With Mercado Pago's Checkout API, it is also possible to offer payments through 
 ------------
 
 ----[mco]----
-With Mercado Pago's Checkout API, it is also possible to offer payments with **Efecty** and **PSE**.
+With Mercado Pago's Checkout API, it is also possible to offer payments with **Efecty**.
 ------------
 
 ----[mlu]----
@@ -103,7 +103,7 @@ To offer **PagoEfectivo** payments, please follow the steps below.
 ------------
 
 ----[mco]----
-To offer **Efecty** and/or **PSE** payments, please follow the steps below.
+To offer **Efecty** payments, please follow the steps below.
 ------------
 
 ----[mlu]----
@@ -1155,13 +1155,13 @@ If a payment expires within 30 days, the cancellation is automatic and the final
 
 ----[mco]----
 
-To configure payments with **Efecty** and/or **PSE**, send a **POST** with the appropriate parameters to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post ) and execute the request or, if you prefer, use one of our SDKs below.
+To configure payments with **Efecty**, send a **POST** with the appropriate parameters to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post ) and execute the request or, if you prefer, use one of our SDKs below.
 
 > WARNING
 >
 > Important
 >
-> To receive payments with **PSE**, it is necessary to send, when creating the payment, the `financial_institution` parameter with the number of the financial institution responsible for processing the payment.
+> For this step, when making the request via API or SDKs, it is necessary to send your Private Key - Access token.
 
 [[[
 ```php
@@ -1553,20 +1553,3 @@ Take into consideration that you can only cancel payments that are in
 To cancel a payment, see the [Refunds and Cancellations](/developers/en/docs/checkout-api/payment-management/cancellations-and-refunds) section.
 
 ------------
-
-> PREV_STEP_CARD_EN
->
-> Prerequisites
->
-> See the necessary prerequisites to integrate the Checkout API.
->
-> [Integrate Checkout API](/developers/en/docs/checkout-api/prerequisites)
-
-
-> NEXT_STEP_CARD_EN
->
-> Integration test
->
-> Learn how to test the Checkout API integration in your store.
->
-> [Integration Test](/developers/en/docs/checkout-api/integration-test/make-test-purchase)

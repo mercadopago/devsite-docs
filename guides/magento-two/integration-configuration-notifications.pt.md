@@ -26,19 +26,3 @@ Tendo selecionado o **Checkout Transparente** para receber os pagamento de sua l
 4. Envie um **e-mail de teste** para garantir que a plataforma está enviando os e-mails corretamente.
 
 Pronto! O envio dos e-mails foi configurado com sucesso.
-
-> PREV_STEP_CARD_PT
->
-> Configure suas credenciais
->
-> Saiba como inserir as credenciais para poder habilitar os meios de pagamento disponíveis no país de origem da loja.
->
-> [Configure suas credenciais](/developers/pt/docs/magento-two/integration-configuration/credentials)
-
-> NEXT_STEP_CARD_PT
->
-> Configure informações da loja
->
-> Saiba como configurar as informações de negócio da sua loja.
->
-> [Configure informações da loja](/developers/pt/docs/magento-two/integration-store)

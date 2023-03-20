@@ -1,18 +1,38 @@
 # How to migrate from SDK JS V1 to SDK JS V2 with Secure Fields
 
+Mercado Pago launched _Secure Fields_, a new security feature to process card payments that is only available in the most current version of the JS SDK and has several benefits such as:
+
+- Simpler implementation
+- Greater security for your store
+- Ease of obtaining PCI SAQ A certification
+
 In this article we will explain the necessary settings for the migration from **using JavaScript SDK in Version 1** to **using JavaScript SDK in Version 2 with Secure Fields**.
 
-The migration is quite simple and the order of events is exactly the same, the differences are:
+Below we show the main differences between the migration steps.
 
 * We changed the way to instantiate Mercado Pago;
 * We will no longer use the callback functions of each method, but their return to work with the data;
 * The names of some methods have also undergone some minor changes and these have become clearer in the comparison snippets.
+
+----[mla, mlm, mpe, mlu, mlc, mlb]----
 
 > WARNING
 >
 > Attention
 >
 > The migration will not affect your backend in any way, the modifications are entirely on the frontend of the application.
+
+------------
+
+----[mco]----
+
+> WARNING
+>
+> Attention
+>
+> The migration will not affect your backend in any way, the modifications are entirely on the frontend of the application. In addition, this modification affects only the card and does not affect other payment methods, such as PSE.
+
+------------
 
 See below for a comparison of the diagrams.
 
@@ -122,7 +142,7 @@ const securityCodeElement = mp.fields.create('securityCode', {
 }).mount('securityCode');
 ````
 
-With that, we now have our secure PCI fields inside the form.
+With that, we now have our secure PCI fields inside the form. For more information on how to configure iframes, please visit our [Github](https://github.com/mercadopago/sdk-js/blob/main/API/fields.md).
 
 ## Get document types
 

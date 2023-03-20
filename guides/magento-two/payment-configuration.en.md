@@ -12,18 +12,3 @@ The integration of the Mercado Pago module with the Magento 2 store allows you t
 * [Checkout Pro](/developers/en/docs/prestashop/payment-configuration/checkout-pro): payment is made on the Mercado Pago page (inside or outside your store) with cards (debit or credit), cash (ticket) and bank transfer.
 ------------
 
-> PREV_STEP_CARD_EN
->
-> Store settings
->
-> Learn how to configure your store's business information.
->
-> [Store settings](/developers/en/docs/magento-two/integration-store)
-
-> NEXT_STEP_CARD_EN
->
-> Configure payments with Checkout API
->
-> Learn how to set up Checkout API to receive payments in your store.
->
-> [Configure payments with Checkout API](/developers/en/docs/magento-two/payment-configuration/checkout-api)

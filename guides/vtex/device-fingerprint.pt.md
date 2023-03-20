@@ -20,4 +20,3 @@ document.body.appendChild(script);
 ```
 
 ![Configuração de fingerprint](/images/vtex/devicefingerprint-imagenv2-pt.gif)
-

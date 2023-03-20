@@ -24,30 +24,3 @@ Para integrar a forma de pagamento, siga os passos abaixo.
 10. Clique em **Set up installment and interest** para [configurar no Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/costs-section#from-section=menu) a tarifa que será paga em cada compra e também oferecer parcelas sem juros para seus clientes.
 11. Em seguida, clique em **Save Config** para salvar suas preferências.
 
-> PREV_STEP_CARD_PT
->
-> Configurar os pagamentos com ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------
->
-> Saiba como configurar o ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------ para receber pagamentos em sua loja.
->
-> [Checkout Transparente](/developers/pt/docs/magento-two/payment-configuration/checkout-api)
-
-----[mlb]----
-> NEXT_STEP_CARD_PT
->
-> Configurar os pagamentos com ticket
->
-> Configure a sua loja para receber pagamentos offline (boleto bancário e caixa eletrônico) utilizando o Checkout Transparente. 
->
-> [Ticket](/developers/pt/docs/magento-two/payment-configuration/checkout-api/ticket)
-------------
-
-----[mla, mlm, mpe, mco, mlu, mlc]----
-> NEXT_STEP_CARD_PT
->
-> Configurar os pagamentos com ticket
->
-> Configure a sua loja para receber pagamentos offline (ticket e caixa eletrônico) utilizando o Checkout API. 
->
-> [Ticket](/developers/pt/docs/magento-two/payment-configuration/checkout-api/ticket)
-------------

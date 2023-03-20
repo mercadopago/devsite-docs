@@ -17,7 +17,7 @@ Com o Checkout Transparente do Mercado Pago, também é possível oferecer pagam
 ------------
 
 ----[mco]----
-Com o Checkout Transparente do Mercado Pago, também é possível oferecer pagamentos com **Efecty** e **PSE**.
+Com o Checkout Transparente do Mercado Pago, também é possível oferecer pagamentos com **Efecty**.
 ------------
 
 ----[mlu]----
@@ -103,7 +103,7 @@ Para oferecer pagamentos com **PagoEfectivo**, siga as etapas abaixo.
 ------------
 
 ----[mco]----
-Para oferecer pagamentos com **Efecty** e/ou **PSE**, siga as etapas abaixo.
+Para oferecer pagamentos com **Efecty**, siga as etapas abaixo.
 ------------
 
 ----[mlu]----
@@ -1154,13 +1154,13 @@ Se o vencimento de um pagamento ocorre em 30 dias, o cancelamento é automático
 
 ----[mco]----
 
-Para configurar pagamentos com **Efecty** e/ou **PSE**, envie um **POST** com os devidos parâmetros ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, utilize um de nossos SDKs abaixo.
+Para configurar pagamentos com **Efecty**, envie um **POST** com os devidos parâmetros ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, utilize um de nossos SDKs abaixo.
 
 > WARNING
 >
 > Importante
 >
-> Para receber pagamentos com **PSE** é preciso enviar, na criação do pagamento, o parâmetro `financial_institution` com o número da instituição financeira responsável pelo processamento do pagamento. 
+> Para esta etapa, ao realizar a requisição via API ou SDKs, é necessário enviar a sua Chave Privada (`access_token`). 
 
 [[[
 ```php
@@ -1552,20 +1552,3 @@ Tenha em conta que apenas se pode cancelar os pagamentos que se encontram com st
 Para cancelar um pagamento, veja a seção [Reembolsos e cancelamentos](/developers/pt/docs/checkout-api/payment-management/cancellations-and-refunds).
 
 ------------
-
-> PREV_STEP_CARD_PT
->
-> Pré-requisitos
->
-> Veja os pré-requisitos necessários para integrar o Checkout Transparente.
->
-> [Integrar Checkout Transparente](/developers/pt/docs/checkout-api/prerequisites)
-
-
-> NEXT_STEP_CARD_PT
->
-> Teste de integração
->
-> Saiba como testar a integração do Checkout Transparente em sua loja.
->
-> [Teste de integração](/developers/pt/docs/checkout-api/integration-test/make-test-purchase)

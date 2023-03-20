@@ -51,19 +51,3 @@ Una vez que se complete el proceso de compra inicial, observa a continuación c�
 > </br> <br/>
 > Además, en ambos checkouts esta información sobre el pago aprobado no se incluirá en el historial de la cuenta de Mercado Pago porque solo contiene gastos reales (hechos en producción).
 ------------
-
-> PREV_STEP_CARD_ES
->
-> Configuración de pago
->
-> Aprende a configurar los checkouts de Mercado Pago para recibir pagos de tu tienda.
->
-> [Configuración de pago](/developers/es/docs/prestashop/payment-configuration)
-
-> NEXT_STEP_CARD_ES
->
-> Recibir pagos
->
-> Aprende cómo habilitar la tienda para procesar ventas reales.
->
-> [Recibir pagos](/developers/es/docs/prestashop/sales-processing/go-to-production)

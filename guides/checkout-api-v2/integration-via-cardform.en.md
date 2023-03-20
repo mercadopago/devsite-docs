@@ -455,19 +455,3 @@ The response will show the following result
 > For complete code samples, check out the [Full Integration Examples](https://github.com/mercadopago/card-payment-sample) available on GitHub.
 ------------
 
-> PREV_STEP_CARD_EN
->
-> Prerequisites
->
-> See the necessary prerequisites to integrate the Checkout API.
->
-> [Integrate Checkout API](/developers/en/docs/checkout-api/prerequisites)
-
-
-> NEXT_STEP_CARD_EN
->
-> Other payment methods
->
-> Check out other payment options available for integration.
->
-> [Other payment methods](/developers/en/docs/checkout-api/integration-configuration/other-payment-methods)

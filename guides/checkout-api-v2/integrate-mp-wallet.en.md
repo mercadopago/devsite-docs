@@ -220,19 +220,4 @@ With the preference created, it is necessary to display the payment button that 
 > When creating a payment it is possible to receive 3 different statuses: "Pending", "Rejected" and "Approved". To keep up with updates, you need to configure your system to receive payment notifications and other status updates. See [Notifications](/developers/en/docs/checkout-api/additional-content/notifications/introduction) for more details.
 
 
-> PREV_STEP_CARD_EN
->
-> Prerequisites
->
-> See the necessary prerequisites to integrate Checkout API.
->
-> [Integrate Checkout API](/developers/en/docs/checkout-api/prerequisites)
 
-
-> NEXT_STEP_CARD_EN
->
-> Integration test
->
-> Learn how to test the Checkout API integration in your store.
->
-> [Integration Test](/developers/en/docs/checkout-api/integration-test/make-test-purchase)
