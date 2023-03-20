@@ -23,4 +23,8 @@ import { CardPayment } from '@mercadopago/sdk-react';
 
 O resultado de renderizar o Brick deve ser como na imagem abaixo.
 
+<center>
+
 ![cardform](checkout-bricks/card-form-pt.png)
+
+</center>

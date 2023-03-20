@@ -10,20 +10,36 @@ Checkout Bricks enables a client-side integration in a modular way through confi
 
 The Brick has responsive capabilities in terms of the size within the screen. The Brick will always occupy the space that has been defined for it and will respond when this space changes during its use.
 
-----[mlb]---- 
+----[mlb]----
+<center>
+
 ![responsiveness-mlb](checkout-bricks/responsiveness-mlb-en.gif)
+
+</center>
 
 ------------
 ----[mco, mlu, mlc]---- 
-![responsiveness-all](checkout-bricks/responsiveness-mla-en.gif)
+<center>
+
+![responsiveness-all](checkout-bricks/responsiveness-all-en.gif)
+
+</center>
 
 ------------
 ----[mla]---- 
+<center>
+
 ![responsiveness-mla](checkout-bricks/responsiveness-mla-en.gif)
+
+</center>
 
 ------------
 ----[mlm]---- 
+<center>
+
 ![responsiveness-mlm](checkout-bricks/responsiveness-mlm-en.gif)
+
+</center>
 
 ------------
 ----[mpe]---- 
@@ -35,23 +51,39 @@ The Brick has responsive capabilities in terms of the size within the screen. Th
 
 The Checkout Bricks can be instantiated/rendered with different themes and features that can best suit the look and feel of the store. The characteristics of each of the available themes are detailed below. Check [Set Theme](/developers/en/docs/checkout-bricks/additional-content/set-theme) for instructions on how to change the theme of the Brick
 
-----[mlb]---- 
+----[mlb]----
+<center>
+
 ![themes-mlb](checkout-bricks/themes-mlb-en.png)
 
+</center>
+
 ------------
-----[mco, mlu, mlc]---- 
+----[mco, mlu, mlc]----
+<center>
+
 ![themes-all](checkout-bricks/themes-all-en.png)
 
-------------
-----[mla]---- 
-![themes-mla](checkout-bricks/themes-mla-en.jpg)
+</center>
 
 ------------
-----[mlm]---- 
-![themes-mlm](checkout-bricks/themes-mlm-en.jpg)
+----[mla]----
+<center>
+
+![themes-mla](checkout-bricks/themes-mla-en.jpg) 
+
+</center>
 
 ------------
-----[mpe]---- 
+----[mlm]----
+<center>
+
+![themes-mlm](checkout-bricks/themes-mlm-en.jpg) 
+
+</center>
+
+------------
+----[mpe]----
 [IMAGEM]
 
 ------------

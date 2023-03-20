@@ -22,4 +22,8 @@ import { Payment } from '@mercadopago/sdk-react';
 
 The result of rendering the Brick should look like the image below.
 
+<center>
+
 ![wallet-brick-render](checkout-bricks/wallet-brick-render-en.png)
+
+</center>

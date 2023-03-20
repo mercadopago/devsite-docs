@@ -184,7 +184,11 @@ Após criar o pagamento pelo backend utilizando a SDK do Mercado Pago, utilize o
 
 Além de exibir o status do pagamento, o Status Screen Brick também exibirá o código de barras para o comprador copiar e colar, ou escanear e assim fazer o pagamento. Saiba como é simples integrar [clicando aqui](/developers/pt/docs/checkout-bricks/status-screen-brick/default-rendering).
 
-[IMAGEM]
+<center>
+
+![payment-submission-other-payment-methods-status-mpe](checkout-bricks/payment-submission-other-payment-methods-status-mpe-pt.jpg)
+
+</center>
 
 > NOTE
 >

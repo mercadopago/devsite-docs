@@ -8,7 +8,11 @@ For now, you will be able to give your customers the possibility of making payme
 
 The possibility of saving the data of cards that have already been charged in previous purchases, makes the payment process more efficient and faster. For the buyer, it is no longer necessary to have to reload the data each time they enter the checkout.
 
+<center>
+
 ![payment-Brick-layout-mlb](checkout-bricks/payment-brick-layout-mlb-en.gif)
+
+</center>
 
 In turn, our processor complies with all security guarantees to give users maximum protection when saving their data. This is one of the great advantages of adding Checkout Bricks to your site: the peace of mind of providing a secure solution, backed by Mercado Pago, but customized to the needs of your company.
 
@@ -57,7 +61,11 @@ For now, you will be able to give your customers the possibility of making payme
 
 The possibility of saving the data of cards that have already been charged in previous purchases, makes the payment process more efficient and faster. For the buyer, it is no longer necessary to have to reload the data each time they enter the checkout.
 
+<center>
+
 ![payment-Brick-layout-mla](checkout-bricks/payment-brick-layout-mla-en.gif)
+
+</center>
 
 In turn, our processor complies with all security guarantees to give users maximum protection when saving their data. This is one of the great advantages of adding Checkout Bricks to your site: the peace of mind of providing a secure solution, backed by Mercado Pago, but customized to the needs of your company.
 
@@ -95,7 +103,11 @@ For now, you will be able to give your customers the possibility of making payme
 
 The possibility of saving the data of cards that have already been charged in previous purchases, makes the payment process more efficient and faster. For the buyer, it is no longer necessary to have to reload the data each time they enter the checkout.
 
+<center>
+
 ![payment-Brick-layout-all](checkout-bricks/payment-brick-layout-all-en.gif)
+
+</center>
 
 In turn, our processor complies with all security guarantees to give users maximum protection when saving their data. This is one of the great advantages of adding Checkout Bricks to your site: the peace of mind of providing a secure solution, backed by Mercado Pago, but customized to the needs of your company.
 
@@ -171,7 +183,11 @@ For now, you will be able to give your customers the possibility of making payme
 
 The possibility of saving the data of cards that have already been charged in previous purchases, makes the payment process more efficient and faster. For the buyer, it is no longer necessary to have to reload the data each time they enter the checkout.
 
+<center>
+
 ![payment-Brick-layout-all](checkout-bricks/payment-brick-layout-all-en.gif)
+
+</center>
 
 In turn, our processor complies with all security guarantees to give users maximum protection when saving their data. This is one of the great advantages of adding Checkout Bricks to your site: the peace of mind of providing a secure solution, backed by Mercado Pago, but customized to the needs of your company.
 
@@ -209,7 +225,11 @@ For now, you will be able to give your customers the possibility of making payme
 
 The possibility of saving the data of cards that have already been charged in previous purchases, makes the payment process more efficient and faster. For the buyer, it is no longer necessary to have to reload the data each time they enter the checkout.
 
+<center>
+
 ![payment-Brick-layout-all](checkout-bricks/payment-brick-layout-all-en.gif)
+
+</center>
 
 In turn, our processor complies with all security guarantees to give users maximum protection when saving their data. This is one of the great advantages of adding Checkout Bricks to your site: the peace of mind of providing a secure solution, backed by Mercado Pago, but customized to the needs of your company.
 
@@ -247,7 +267,11 @@ For now, you will be able to give your customers the possibility of making payme
 
 The possibility of saving the data of cards that have already been charged in previous purchases, makes the payment process more efficient and faster. For the buyer, it is no longer necessary to have to reload the data each time they enter the checkout.
 
+<center>
+
 ![payment-Brick-layout-mlm](checkout-bricks/payment-brick-layout-mlm-en.gif)
+
+</center>
 
 In turn, our processor complies with all security guarantees to give users maximum protection when saving their data. This is one of the great advantages of adding Checkout Bricks to your site: the peace of mind of providing a secure solution, backed by Mercado Pago, but customized to the needs of your company.
 

@@ -210,7 +210,11 @@ Después de crear el pago desde backend con el SDK de Mercado Pago, usa el **id*
 
 Además, el Status Screen Brick también puede redirigir al comprador al ticket con el número de transacción y código de barras para que el comprador vaya a una tienda y así realizar el pago. Descubre lo sencillo que es integrar [haz clic aquí](/developers/es/docs/checkout-bricks/status-screen-brick/configure-integration).
 
+<center>
+
 ![payment-submission-other-payment-methods-status-mlm](checkout-bricks/payment-submission-other-payment-methods-status-mlm-es.jpg)
+
+</center>
 
 > NOTE
 >

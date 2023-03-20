@@ -22,4 +22,8 @@ import { StatusScreen } from '@mercadopago/sdk-react';
 
 The result of rendering the Brick should look like the image below.
 
+<center>
+
 ![status-screen-Brick](checkout-bricks/status-screen-brick-en.jpg)
+
+</center>

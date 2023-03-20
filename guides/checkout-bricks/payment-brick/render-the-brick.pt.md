@@ -23,4 +23,7 @@ import { Payment } from '@mercadopago/sdk-react';
 
 O resultado de renderizar o Brick deve ser como na imagem abaixo.
 
-[IMAGEM]
+----[mpe]----
+![render-brick-mpe](checkout-bricks/render-brick-mpe-pt.png)
+
+------------

@@ -8,7 +8,11 @@ Neste momento, você poderá dar aos seus clientes a possibilidade de efetuarem 
 
 A possibilidade de guardar os dados dos cartões que já foram debitados em compras anteriores torna o processo de pagamento mais eficiente e rápido. Para o comprador, não é mais necessário recarregar os dados cada vez que entrar no checkout.
 
+<center>
+
 ![payment-Brick-layout-mlb](checkout-bricks/payment-brick-layout-mlb-pt.gif)
+
+</center>
 
 Por sua vez, nosso processador cumpre todas as garantias de segurança para oferecer aos usuários a máxima proteção ao salvar seus dados. Essa é uma das grandes vantagens de adicionar o Checkout Bricks ao seu site: a tranquilidade de oferecer uma solução segura, respaldada pelo Mercado Pago, mas customizada para as necessidades da sua empresa.
 
@@ -58,7 +62,11 @@ Neste momento, você poderá dar aos seus clientes a possibilidade de efetuarem 
 
 A possibilidade de guardar os dados dos cartões que já foram debitados em compras anteriores torna o processo de pagamento mais eficiente e rápido. Para o comprador, não é mais necessário recarregar os dados cada vez que entrar no checkout.
 
+<center>
+
 ![payment-Brick-layout-mla](checkout-bricks/payment-brick-layout-mla-pt.gif)
+
+</center>
 
 Por sua vez, nosso processador cumpre todas as garantias de segurança para oferecer aos usuários a máxima proteção ao salvar seus dados. Essa é uma das grandes vantagens de adicionar o Checkout Bricks ao seu site: a tranquilidade de oferecer uma solução segura, respaldada pelo Mercado Pago, mas customizada para as necessidades da sua empresa.
 
@@ -97,7 +105,11 @@ Neste momento, você poderá dar aos seus clientes a possibilidade de efetuarem 
 
 A possibilidade de guardar os dados dos cartões que já foram debitados em compras anteriores torna o processo de pagamento mais eficiente e rápido. Para o comprador, não é mais necessário recarregar os dados cada vez que entrar no checkout.
 
+<center>
+
 ![payment-Brick-layout-mlm](checkout-bricks/payment-brick-layout-mlm-pt.gif)
+
+</center>
 
 Por sua vez, nosso processador cumpre todas as garantias de segurança para oferecer aos usuários a máxima proteção ao salvar seus dados. Essa é uma das grandes vantagens de adicionar o Checkout Bricks ao seu site: a tranquilidade de oferecer uma solução segura, respaldada pelo Mercado Pago, mas customizada para as necessidades da sua empresa.
 
@@ -175,7 +187,11 @@ Por enquanto, você pode dar aos seus clientes a possibilidade de fazer pagament
 
 A possibilidade de guardar os dados dos cartões que já foram debitados em compras anteriores torna o processo de pagamento mais eficiente e rápido. Para o comprador, não é mais necessário recarregar os dados cada vez que entrar no checkout.
 
+<center>
+
 ![payment-brick-layout-all](checkout-bricks/payment-brick-layout-all-pt.gif)
+
+</center>
 
 Por sua vez, nosso processador cumpre todas as garantias de segurança para oferecer aos usuários a máxima proteção ao salvar seus dados. Essa é uma das grandes vantagens de adicionar o Checkout Bricks ao seu site: a tranquilidade de oferecer uma solução segura, respaldada pelo Mercado Pago, mas customizada para as necessidades da sua empresa.
 
@@ -214,7 +230,11 @@ Por enquanto, você pode dar aos seus clientes a possibilidade de fazer pagament
 
 A possibilidade de guardar os dados dos cartões que já foram debitados em compras anteriores torna o processo de pagamento mais eficiente e rápido. Para o comprador, não é mais necessário recarregar os dados cada vez que entrar no checkout.
 
+<center>
+
 ![payment-Brick-layout-all](checkout-bricks/payment-brick-layout-all-pt.gif)
+
+</center>
 
 Por sua vez, nosso processador cumpre todas as garantias de segurança para oferecer aos usuários a máxima proteção ao salvar seus dados. Essa é uma das grandes vantagens de adicionar o Checkout Bricks ao seu site: a tranquilidade de oferecer uma solução segura, respaldada pelo Mercado Pago, mas customizada para as necessidades da sua empresa.
 
@@ -253,7 +273,11 @@ Por enquanto, você pode dar aos seus clientes a possibilidade de fazer pagament
 
 A possibilidade de guardar os dados dos cartões que já foram debitados em compras anteriores torna o processo de pagamento mais eficiente e rápido. Para o comprador, não é mais necessário recarregar os dados cada vez que entrar no checkout.
 
+<center>
+
 ![payment-Brick-layout-all](checkout-bricks/payment-brick-layout-all-pt.gif)
+
+</center>
 
 Por sua vez, nosso processador cumpre todas as garantias de segurança para oferecer aos usuários a máxima proteção ao salvar seus dados. Essa é uma das grandes vantagens de adicionar o Checkout Bricks ao seu site: a tranquilidade de oferecer uma solução segura, respaldada pelo Mercado Pago, mas customizada para as necessidades da sua empresa.
 
