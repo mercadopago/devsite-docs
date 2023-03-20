@@ -411,13 +411,13 @@ renderComponent(bricksBuilder);
 
 Em seguida, você poderá observar o botão de pagamento renderizado em sua página.
 
-[IMAGEM]
+![cow-render-wallet](cow/cow-render-wallet.pt.jpg)
 
 > WARNING
 >
 > Importante
 >
-> É de extrema importância que se atente, durante a criação da preferência, para a configuração das `back_urls` porque elas serão responsáveis por guiar o fluxo de retorno ao seu website quando o checkout for finalizado. É possível definir três URLs de retorno diferentes, para cenários de pagamento pendentes, sucesso ou erro. Para mais informações, veja a seção de [URLs de retorno](/developers/pt/docs/checkout-pro/checkout-customization/user-interface/redirection).
+> É de extrema importância que se atente, durante a criação da preferência, para a configuração das `back_urls` porque elas serão responsáveis por guiar o fluxo de retorno ao seu website quando o checkout for finalizado. É possível definir três URLs de retorno diferentes, para cenários de pagamento pendentes, sucesso ou erro. Para mais informações, veja a seção de [URLs de retorno.](/developers/pt/docs/checkout-pro/checkout-customization/user-interface/redirection)
 
 Os pagamentos criados possuem os seguintes status: `Pendente`, `Rejeitado` e `Aprovado`. Para acompanhar as atualizações é necessário configurar seu sistema para receber as notificações de pagamentos e outras atualizações de status. Veja [Notificações](/developers/pt/docs/checkout-pro/additional-content/notifications/Introduction) para mais detalhes.
 

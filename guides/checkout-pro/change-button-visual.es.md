@@ -6,7 +6,7 @@
 
 Es posible personalizar el aspecto del botón de pago definiendo propiedades visuales con valores alternativos a los predeterminados. De forma predeterminada, el botón de pago se muestra como en la siguiente imagen.
 
-[IMAGEM]
+![cow-visual-wallet-default](cow/cow-visual-wallet-default.es.jpg)
 
 Para cambiar los textos predeterminados, modifique la propiedad `customization` durante el renderizado.
 
@@ -51,4 +51,4 @@ const customization = {
 
 Estos ejemplos de personalización generarán el resultado siguiente:
 
-[IMAGEM]
+![cow-visual-wallet](cow/cow-visual-wallet.es.jpg)
