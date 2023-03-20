@@ -6,7 +6,11 @@
 
 The payment button offers two reading levels: the **call to action (button)** and the **value proposition**. In both cases, the text can be customized according to the options provided by Mercado Pago. By default, the payment button renders as in the following image.
 
+<center>
+
 ![cow-text-wallet-default](cow/cow-text-wallet-default.en.jpg)
+
+</center>
 
 To change the default texts, modify the `customization` property during rendering.
 
@@ -61,4 +65,8 @@ const customization = {
 
 Such customization examples will generate the following result:
 
+<center>
+
 ![cow-text-wallet](cow/cow-text-wallet.en.jpg)
+
+</center>

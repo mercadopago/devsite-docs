@@ -6,7 +6,11 @@
 
 It is possible to customize the look of the payment button by defining visual properties with alternative values to the default ones. By default, the payment button renders as in the following image.
 
+<center>
+
 ![cow-visual-wallet-default](cow/cow-visual-wallet-default.en.jpg)
+
+</center>
 
 To change the default texts, modify the `customization` property during rendering.
 
@@ -51,4 +55,8 @@ const customization = {
 
 Such customization examples will generate the following result:
 
+<center>
+
 ![cow-visual-wallet](cow/cow-visual-wallet.en.jpg)
+
+</center>

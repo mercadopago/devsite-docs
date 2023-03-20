@@ -412,7 +412,11 @@ renderComponent(bricksBuilder);
 
 You will then be able to observe the payment button rendered on your page.
 
+<center>
+
 ![cow-render-wallet](cow/cow-render-wallet.en.jpg)
+
+</center>
 
 > WARNING
 >

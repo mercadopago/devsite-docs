@@ -411,7 +411,11 @@ renderComponent(bricksBuilder);
 
 Em seguida, você poderá observar o botão de pagamento renderizado em sua página.
 
+<center>
+
 ![cow-render-wallet](cow/cow-render-wallet.pt.jpg)
+
+</center>
 
 > WARNING
 >

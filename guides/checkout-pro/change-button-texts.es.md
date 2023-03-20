@@ -6,7 +6,11 @@
 
 El botón de pago ofrece dos niveles de lectura: la **call to action (botón)** y la **propuesta de valor**. En ambos casos, el texto se puede personalizar de acuerdo a las opciones brindadas por Mercado Pago. De forma predeterminada, el botón de pago se muestra como en la siguiente imagen.
 
+<center>
+
 ![cow-text-wallet-default](cow/cow-text-wallet-default.es.jpg)
+
+</center>
 
 Para cambiar los textos predeterminados, modifique la propiedad `customization` durante el renderizado.
 
@@ -78,4 +82,8 @@ const customization = {
 
 Estos ejemplos de personalización generarán el resultado siguiente:
 
+<center>
+
 ![cow-text-wallet](cow/cow-text-wallet.es.jpg)
+
+</center>
