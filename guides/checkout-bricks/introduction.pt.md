@@ -43,7 +43,12 @@ O Brick possui capacidades responsivas no que tange o tamanho do espaço em tela
 
 ------------
 ----[mpe]---- 
-[IMAGEM]
+
+<center>
+
+![responsiveness-mpe](checkout-bricks/responsiveness-mpe-pt.gif)
+
+</center>
 
 ------------
 
@@ -84,7 +89,11 @@ O Checkout Bricks pode ser instanciado/renderizado com diferentes temas e caract
 
 ------------
 ----[mpe]---- 
-[IMAGEM]
+<center>
+
+![themes-mpe](checkout-bricks/themes-mpe-pt.jpg) 
+
+</center>
 
 ------------
 

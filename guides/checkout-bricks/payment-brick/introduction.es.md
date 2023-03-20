@@ -148,7 +148,11 @@ Por el momento, podrás darle a tus clientes la posibilidad de hacer pagos a tra
 
 La posibilidad de guardar los datos de tarjetas que ya fueron cargadas en compras anteriores, hace que el proceso de pago sea más eficiente y rápido. Para el comprador ya no es necesario tener que volver a cargar los datos cada vez que ingrese al checkout. 
 
-[IMAGEM]
+<center>
+
+![payment-Brick-layout-mpe](checkout-bricks/payment-brick-layout-mpe-es.gif)
+
+</center>
 
 A su vez, nuestro procesador cumple con todas las garantías de seguridad para darle a los usuarios la máxima protección al guardar sus datos. Esa es una de las grandes ventajas de sumar Checkout Bricks a su sitio: la tranquilidad de brindar una solución segura, con el respaldo de Mercado Pago, pero personalizado a las necesidades de su empresa.
 

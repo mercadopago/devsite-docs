@@ -43,7 +43,11 @@ The Brick has responsive capabilities in terms of the size within the screen. Th
 
 ------------
 ----[mpe]---- 
-[IMAGEM]
+<center>
+
+![responsiveness-mpe](checkout-bricks/responsiveness-mpe-en.gif)
+
+</center>
 
 ------------
 
@@ -83,8 +87,12 @@ The Checkout Bricks can be instantiated/rendered with different themes and featu
 </center>
 
 ------------
-----[mpe]----
-[IMAGEM]
+----[mpe]---- 
+<center>
+
+![themes-mpe](checkout-bricks/themes-mpe-es.jpg) 
+
+</center>
 
 ------------
 
