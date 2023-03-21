@@ -15,7 +15,7 @@ Una transacción autenticada tiene varios beneficios, que incluyen una mayor pro
 En esta documentación encontrarás toda la información necesaria para realizar la integración con 3DS.
 
 
-# Integrar con 3DS
+## Integrar con 3DS
 
 La autenticación 3DS se puede realizar a través de dos flujos distintos: **con y sin Challenge**, que son pasos adicionales que el comprador debe completar para garantizar su identidad. La decisión de incluir o no el Challenge depende del emisor de la tarjeta y del perfil de riesgo de la transacción que se realiza.  
 
@@ -280,8 +280,7 @@ En este último caso, la respuesta mostrará un atributo del pago llamado `three
 
 
 
-
-4. Para mostrar el challenge, es necesario que generes un iframe (altura mínima: 500px, ancho mínimo: 600px) que contenga un formulario con `method post` y `action`, que será la URL obtenida en el campo `external_resource_url`, y un input oculto con el valor obtenido en `creq`. Después, debes hacer el post de este form para empezar el challenge.
+4. Para **mostrar el challenge**, es necesario que generes un iframe (altura mínima: 500px, ancho mínimo: 600px) que contenga un formulario con `method post` y `action`, que será la URL obtenida en el campo `external_resource_url`, y un input oculto con el valor obtenido en `creq`. Después, debes hacer el post de este form para empezar el challenge.
 
 [[[
 ```javascript
@@ -330,14 +329,28 @@ function doChallenge(payment) {
 
 Cuando el challenge es finalizado, el status del pago será actualizado. Será `approved` si la autenticación fue exitosa, `rejected` si no lo fue y, en caso de que la autenticación no fuera  hecha, el pago permanecerá `pending`. Esta actualización no es inmediata, puede tardar unos instantes. 
 
+> NOTE
+>
+> Importante
+>
+> Cuando se inicia el proceso de challenge, el usuario tiene 5 minutos, aproximadamente, para realizarlo. En caso de que no sea hecho, el banco recusará la transacción y Mercado Pago considerará el pago cancelado. Si el usuario nunca realiza el challenge, el pago quedará como `pending_challenge`.
 
+Mira la sección a continuación para más detalles sobre cómo consultar el status de cada transacción.
 
-5. Para saber cuál es el resultado de la transacción, hay cuatro opciones:
+## Consultar status de la transacción
 
-* Tratar el evento del iframe: debes recordar que el evento solo indica que finalizó el Challenge y no que el pago pasó a un status final, dado que la actualización no es inmediata y puede tardar unos instantes. Deberás hacer un pooling en payments y, si el status cambia, redireccionar al buyer para una pantalla que indica que la transacción fue exitosa.
-* Recibirás la notificación del cambio del status del pago usando webhooks y deberás redireccionar el buyer para una pantalla que indica que la transacción fue exitosa.
-* Deberás hacer un pooling en payments y, si el status cambia, redireccionar el buyer para una pantalla de congrats.
-* Si el pago continúa `pending` después del timeout del Challenge, entonces deberás redireccionar al buyer para una pantalla que informe que el pago expiró y que es necesario crear uno nuevo (la actualización no es inmediata, puede tardar unos instantes).
+Para saber cuál es el resultado de la transacción, hay tres opciones:
+
+* **Notificaciones**: Recibirás la notificación del cambio del status del pago usando Webhooks y deberás redireccionar el buyer para una pantalla que indica que la transacción fue exitosa. Consulta la sección de [Webhooks](/developers/es/docs/checkout-api/additional-content/notifications/webhooks) y aprende cómo configurarlos.
+* **API de Payments**: Deberás hacer un pooling en [Payments](/developers/es/reference/payments/_payments/post) y, si el status cambia, redireccionar el buyer para una pantalla de congrats.
+* **Tratar el evento del iframe (recomendado)**: debes recordar que el evento solo indica que finalizó el Challenge y no que el pago pasó a un status final, dado que la actualización no es inmediata y puede tardar unos instantes. Deberás hacer una consulta en payments y, si el status cambia, redireccionar al buyer para una pantalla que indica que la transacción fue exitosa. 
+
+Para **tratar el evento del iframe**, sigue los pasos a continuación.
+
+### Realizar implementación
+
+Utiliza el siguiente código Javascript para implementar y escuchar el evento que indica que el challenge ha finalizado y se ha redirigido a la página de congrats.
+
 
 [[[
 ```javascript
@@ -350,6 +363,11 @@ window.addEventListener("message", (e) => {
 
 ```
 ]]]
+
+### Buscar status del pago
+
+El siguiente Javascript indica cómo se puede realizar la búsqueda del status de pago actualizado y mostrarlo en la pantalla de congrats.
+
 
 [[[
 ```javascript
@@ -377,11 +395,16 @@ async function init() {
 ```
 ]]]
 
+> NOTE
+>
+> Importante
+>
+> Si el pago continúa `pending` después del timeout del Challenge, entonces deberás redireccionar al buyer para una pantalla que informe que el pago expiró y que es necesario crear uno nuevo (la actualización no es inmediata, puede tardar unos instantes).
 
 Después de seguir estos pasos, tu integración está lista para autenticar transacciones con 3DS.
 
 
-# Posibles estados del pago con 3DS
+# Posibles status del pago con 3DS
 
 Una transacción con 3DS puede devolver diferentes status según el tipo de integración realizada (con o sin challenge). En un pago sin Challenge, el estado de la transacción será directamente "approved" o "rejected".
 
