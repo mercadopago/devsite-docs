@@ -412,16 +412,3 @@ Para realizar una compra de prueba, además de las credenciales de prueba de tu 
 > Para la realización de pruebas, recomendamos que te pongas en contacto con tu consultor de Mercado Pago.
 
 
-Con las credenciales y los datos de la tarjeta de prueba a mano, sigue los siguientes pasos:
-
-
-1. Inicia la integración configurada con las credenciales de prueba.
-2. Ingresa un e-mail (recuerda que debe ser diferente al e-mail utilizado en Mercado Pago).
-3. Introduce los datos de la tarjeta de prueba.
-4. Confirma la compra.
-5. (adicionar etapas do fluxo do challenge)
-6. Espera la pantalla con el feedback de Challenge, que debe mostrarse en una pantalla configurada previamente.
-
-¡Listo! Una vez finalizadas estas etapas, habrás completado la integración y podrás utilizar tus credenciales de producción para utilizar 3DS en pagos con tarjeta de crédito.
-
-
