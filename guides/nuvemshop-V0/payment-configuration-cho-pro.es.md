@@ -69,7 +69,7 @@ Para integrar Checkout Pro, siga los pasos a continuación.
 4. Para aplicar un "valor mínimo de la mensualidad" para los pagos, informa el monto en el campo disponible.
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]---- 
-5. Si deseas aplicar descuentos para pagos con Checkout transparente (Checkout API), **informa la percentage** para pagos en efectivo y tarjetas (crédito y débito).
+5. Si deseas aplicar descuentos para pagos con Checkout API, **informa el porcentaje** para pagos en efectivo y tarjetas (crédito y débito).
 ------------
 ----[mlb]---- 
 5. Si deseas aplicar descuentos para pagos con Checkout Transparente, **informa el porcentaje** para pagos con boleto, tarjeta de crédito y Pix.
