@@ -5,6 +5,7 @@ Ao instalar o [Checkout Pro](/developers/pt/docs/checkout-pro/landing), é poss�
 No checkout, quando os compradores escolhem pagar com Mercado Pago, é apresentado um informativo que ressalta as vantagens exclusivas de pagar com uma conta Mercado Pago, como:
 
 ----[mlb]----
+
 * **Login facilitado**: iniciar a sessão com o mesmo e-mail e senha do Mercado Livre.
 * **Pagar mais rápido e de várias maneiras**: utilizar os cartões salvos, Pix ou saldo disponível na conta Mercado Pago.
 * **Proteção à compra**: receber o dinheiro de volta caso o produto não seja entregue.
@@ -14,9 +15,10 @@ No checkout, quando os compradores escolhem pagar com Mercado Pago, é apresenta
 ![woo-chopro-pt-mlb](/images/nuvemshop/nuvemshop-chopro-pt-mlb.png)
 
 </center>
-------------
 
+------------
 ----[mla]----
+
 * **Pagar mais rápido**: utilizar os cartões salvos ou saldo disponível na conta Mercado Pago.
 * **Parcelamento**: parcelar com ou sem cartão de crédito.
 * **Suporte do Mercado Pago**: receber ajuda caso tenha algum problema com a compra.
@@ -25,10 +27,11 @@ No checkout, quando os compradores escolhem pagar com Mercado Pago, é apresenta
 
 ![woo-chopro-pt-mla](/images/nuvemshop/nuvemshop-chopro-pt-mla.png)
 
-</center>>
-------------
+</center>
 
+------------
 ----[mlm]----
+
 * **Login facilitado**: iniciar a sessão com o mesmo e-mail e senha do Mercado Livre. 
 * **Pagar mais rápido e de várias maneiras**: utilizar os cartões salvos, efectivo, meios de pagamento off-line ou saldo disponível na conta Mercado Pago.
 * **Proteção à compra**: receber o dinheiro de volta caso o produto não seja entregue.
@@ -37,10 +40,11 @@ No checkout, quando os compradores escolhem pagar com Mercado Pago, é apresenta
 
 ![woo-chopro-pt-mlm](/images/nuvemshop/nuvemshop-chopro-pt-mlm.png)
 
-</center>>
-------------
+</center>
 
+------------
 ----[mpe, mco, mlu, mlc]----
+
 * **Login facilitado**: iniciar a sessão com o mesmo e-mail e senha do Mercado Livre. 
 * **Pagar mais rápido**: utilizar dinheiro ou saldo disponível na conta Mercado Pago. 
 * **Parcelamento**: parcelar sem juros em bancos selecionados.
@@ -50,13 +54,14 @@ No checkout, quando os compradores escolhem pagar com Mercado Pago, é apresenta
 ![woo-chopro-pt-all](/images/nuvemshop/nuvemshop-chopro-pt-all.png)
 
 </center>
+
 ------------
  
 Para integrar o Checkout Pro, siga os passos abaixo.
 
 1. No Painel Administrativo da sua loja na Nuvemshop, acesse **Potencializar > Meus aplicativos**. 
 2. Localize o plugin do Mercado Pago na lista das aplicações e clique em **Configurar aplicativo**.
-3. Na lista de meios de pagamentos, localize o plugin do Mercado Pago, clique em **Configurar** e, em seguida, em **Editar**.
+3. Na lista de meios de pagamentos, localize o plugin do Mercado Pago e clique em **Editar**.
 4. Para aplicar um valor mínimo de parcelas para os pagamentos, informe o valor no campo disponível.
 ----[mla, mlm, mpe, mco, mlu, mlc]---- 
 5. Se deseja aplicar descontos para pagamentos com Checkout transparente (Checkout API), **informe a porcentagem** para pagamentos em efectivo e cartões (crédito e débito).

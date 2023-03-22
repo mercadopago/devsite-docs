@@ -5,6 +5,7 @@ When installing [Checkout Pro](/developers/en/docs/checkout-pro/landing), there 
 At checkout, when buyers choose to pay with Mercado Pago, information is displayed that highlights the exclusive advantages of paying with a Mercado Pago account, such as:
 
 ----[mlb]----
+
 * **Easy login**: login with the same e-mail and password as Mercado Libre.
 * **Pay faster and in many ways**: use saved cards, Pix or available balance in the Mercado Pago account.
 * **Purchase protection**: get your money back if the product is not delivered.
@@ -14,9 +15,11 @@ At checkout, when buyers choose to pay with Mercado Pago, information is display
 ![woo-chopro-en-mlb](/images/nuvemshop/nuvemshop-chopro-en-mlb.png)
 
 </center>
+
 ------------
 
 ----[mla]----
+
 * **Pay faster**: use saved cards or available balance in your Mercado Pago account.
 * **Installment**: pay in installments with or without a credit card.
 * **Mercado Pago support**: receive help if you have any problems with your purchase.
@@ -26,9 +29,11 @@ At checkout, when buyers choose to pay with Mercado Pago, information is display
 ![woo-chopro-en-mla](/images/nuvemshop/nuvemshop-chopro-en-mla.png)
 
 </center>
+
 ------------
 
 ----[mlm]----
+
 * **Easy login**: login with the same e-mail and password as Mercado Libre.
 * **Pay faster and in different ways**: use saved cards, cash, offline means or available balance in your Mercado Pago account.
 * **Purchase protection**: get your money back if the product is not delivered.
@@ -38,9 +43,11 @@ At checkout, when buyers choose to pay with Mercado Pago, information is display
 ![woo-chopro-en-mlm](/images/nuvemshop/nuvemshop-chopro-en-mlm.png)
 
 </center>
+
 ------------
 
 ----[mpe, mco, mlu, mlc]----
+
 * **Easy login**: login with the same e-mail and password as Mercado Libre.
 * **Pay faster**: use cash or available balance in your Mercado Pago account.
 * **Installment**: interest-free installments at selected banks.
@@ -50,13 +57,14 @@ At checkout, when buyers choose to pay with Mercado Pago, information is display
 ![woo-chopro-en-all](/images/nuvemshop/nuvemshop-chopro-en-all.png)
 
 </center>
+
 ------------
  
 To integrate Checkout Pro, follow the steps below.
  
 1. In your store's Administrative Panel at Nuvemshop, access **Potencializar > My apps**.
 2. Locate the Mercado Pago plugin in the list of applications and click on **Configure application**.
-3. In the list of payment methods, locate the Mercado Pago plugin, click on **Configure** and then on **Edit**.
+3. In the list of payment methods, locate the Mercado Pago plugin and click on **Edit**.
 4. To apply a minimum amount of installments for payments, inform the amount in the available field.
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 5. If you want to apply discounts for payments with Transparent Checkout (----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------), **enter the percentage** for payments in cash and cards (credit and debit).

@@ -13,9 +13,9 @@ Para integrar o Checkout API, siga os passos abaixo.
 
 ------------
 
-1. No Painel Administrativo da sua loja na Nuvemshop, acesse **Potencializar > Meus aplicativos**. 
+1. No Painel Administrativo da sua loja na Nuvemshop, acesse **Meus aplicativos - Ver todos os aplicativos**.
 2. Localize o plugin do Mercado Pago na lista das aplicações e clique em **Configurar aplicativo**.
-3. Na lista de meios de pagamentos, localize o plugin do Mercado Pago, clique em **Configurar** e, em seguida, em **Editar**.
+3. Na lista de meios de pagamentos, localize o plugin do Mercado Pago e clique em **Editar**.
 4. Para aplicar um valor mínimo de parcelas para os pagamentos, informe o valor no campo disponível.
 ----[mla, mlm, mpe, mco, mlu, mlc]---- 
 5. Se deseja aplicar descontos para pagamentos com Checkout transparente (Checkout API), **informe a porcentagem** para pagamentos em efectivo e cartões (crédito e débito).

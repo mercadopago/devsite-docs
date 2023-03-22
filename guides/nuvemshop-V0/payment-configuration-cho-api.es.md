@@ -14,11 +14,15 @@ Para integrar Checkout API, siga los pasos a continuación.
 
 ------------
 
-1. En el Panel Administrativo de tu tienda Tiendanube, accede a **Potenciar > Mis aplicaciones**. 
+1. En el Panel Administrativo de tu tienda Tiendanube, accede a **Mis aplicaciones > Ver todas las aplicaciones**. 
 2. Localiza el plugin Mercado Pago en la lista de aplicaciones y haz clic en **Configurar aplicación**.
 3. En la lista de métodos de pago, localiza el plugin Mercado Pago, haz clic en **Configurar** y, luego, en **Editar**.
-4. Para aplicar un monto mínimo de cuotas para los pagos, informa el monto en el campo disponible. 
-----[mla, mlm, mpe, mco, mlu, mlc]---- 
+----[mla, mlb, mpe, mco, mlu, mlc]---- 
+4. Para aplicar un "valor mínimo de cuotas" para los pagos, informa el monto en el campo disponible.
+------------
+----[mlm]---- 
+4. Para aplicar un "valor mínimo de la mensualidad" para los pagos, informa el monto en el campo disponible.
+------------
 5. Si deseas aplicar descuentos para pagos con Checkout transparente (Checkout API), **informa la percentage** para pagos en efectivo y tarjetas (crédito y débito).
 ------------
 ----[mlb]---- 
@@ -34,7 +38,7 @@ Para integrar Checkout API, siga los pasos a continuación.
  
 ------------ 
 ----[mla, mpe, mco, mlu, mlc]---- 
-* **Tarjeta de crédito y débito**. Elige también el número máximo de cuotas permitidas.
+* **Tarjeta de crédito**. Elige también el número máximo de cuotas permitidas.
 * **Tarjeta de débito**.
 * **Redes de pago en efectivo**. Elige también el número de días para vencimiento del ticket (incluye sábado y domingo).
 ------------

@@ -4,9 +4,9 @@ With the [Checkout API](/developers/en/docs/checkout-pro/landing), the entire ch
 
 To integrate the Checkout API, follow the steps below.
 
-1. In your store's Administrative Panel at Nuvemshop, access **Potentialize > My apps**.
+1. In your store's Administrative Panel at Nuvemshop, access **My apps - See all apps**.
 2. Locate the Mercado Pago plugin in the list of applications and click on **Configure application**.
-3. In the list of payment methods, locate the Mercado Pago plugin, click on **Settings** and then on **Edit**.
+3. In the list of payment methods, locate the Mercado Pago plugin and click on **Edit**.
 4. To apply a minimum amount of installments for payments, inform the amount in the available field.
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 5. If you want to apply discounts for payments with Transparent Checkout (----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------), **enter the percentage** for payments in cash and cards (credit and debit).
