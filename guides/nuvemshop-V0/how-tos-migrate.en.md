@@ -11,7 +11,7 @@ Find out how to migrate to the current version of the Mercado Pago plugin for Nu
 
 5. In your store's Administrative Panel at Tiendanube, go to **Potentialize > My apps**.
 6. Locate the Mercado Pago plugin in the list of applications and click on **Configure application**.
-7. In the list of payment methods, locate the Mercado Pago plugin in the payment methods list and clique on **Uninstall**. 
+7. In the list of payment methods, locate the Mercado Pago plugin in the payment methods list and click on **Uninstall**. 
 
 > WARNING
 >
