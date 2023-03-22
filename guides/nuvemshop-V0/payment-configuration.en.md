@@ -1,6 +1,6 @@
 # Payment configuration
 
-The integration of the Mercado Pago module with the Tiendanube store allows you to use two types of checkouts to receive payments for your sales, namely:
+The integration of the Mercado Pago module with Tiendanube stores allows you to use two types of checkouts to receive payments for your sales, namely:
 
 ----[mlb]----
 * [Checkout Pro](/developers/en/docs/nuvemshop/payment-configuration/checkout-pro): payment is made on the Mercado Pago page and buyers can pay using a Mercado Pago account, making it easier to pay with a credit card , debit and other means of payment (Pix, bank slip, lottery payment without slip, balance in Mercado Pago account and Mercado Credit).
