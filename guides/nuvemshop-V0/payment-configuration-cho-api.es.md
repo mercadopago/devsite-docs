@@ -30,7 +30,7 @@ Para integrar Checkout API, siga los pasos a continuación.
 ------------
 6. Si deseas aplicar descuentos para pagos con Checkout externo (Checkout Pro / Checkout Mercado Pago), **informa el porcentaje** en el campo disponible.
 7. Para configurar las experiencias de pago de tu tienda, haz clic en **Editar en el sitio de Mercado Pago**.
-8. En Checkout Transparente, elige las formas de pago que quieres ofrecer en el entorno de pago de Mercado Pago, las cuales pueden ser:
+8. En  ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------, elige las formas de pago que quieres ofrecer en el entorno de pago de Mercado Pago, las cuales pueden ser:
 ----[mlb]---- 
 * **Pix**. Elige también la fecha de vencimiento para pago con código Pix. Además, la opción de pago con Pix solo se mostrará si existe una chave Pix cadastrada en Mercado Pago. Si aún no las creaste, [haz clic aquí](https://www.youtube.com/watch?v=60tApKYVnkA) y consulta el paso a paso.
 * **Tarjeta de crédito**. Elige también el número máximo de cuotas permitidas.
