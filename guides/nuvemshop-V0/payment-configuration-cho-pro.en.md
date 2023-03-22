@@ -2,7 +2,7 @@
  
 When installing [Checkout Pro](/developers/en/docs/checkout-pro/landing), there may be an **increase in the approval rate of online store sales**. This happens because buyers will be able to pay using a Mercado Pago account and the entire purchase process will be done in our environment, which facilitates payment. At the end of the transaction, these buyers are redirected to the store environment.
 
-At checkout, when buyers choose to pay with Mercado Pago, information is displayed that highlights the exclusive advantages of paying with a Mercado Pago account, such as:
+At checkout, when buyers choose to pay with Mercado Pago, the displayed information highlights the exclusive advantages of paying with a Mercado Pago account, such as:
 
 ----[mlb]----
 
