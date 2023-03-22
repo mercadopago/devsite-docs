@@ -16,7 +16,7 @@ Con el [Checkout API](/developers/es/guides/checkout-api/landing), ofrece pagos 
 > 
 > La opción de pago con Pix solo se mostrará si existe una chave Pix cadastrada en Mercado Pago. Si aún no las creaste, [haz clic aquí](https://www.youtube.com/watch?v=60tApKYVnkA) y consulta el paso a paso.
 
-Para integrar el método de pago, siga los pasos a continuación.
+Para integrar el método de pago, sigue los pasos a continuación.
 
 1. Selecciona **Sí** para activar la experiencia de Mercado Pago para pagos con Pix en el checkout de tu tienda. Siempre puedes administrar la(s) clave(s) Pix que registraste en tu cuenta usando la app de Mercado Pago.
 2. Indicar la fecha de caducidad que tendrán los clientes para realizar la transferencia vía Pix.
