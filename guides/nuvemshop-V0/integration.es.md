@@ -29,7 +29,7 @@ Una vez que hayas realizado esta configuración inicial, configura también las 
 
 ## Cambiar cuenta de Mercado Pago
 
-Si quieres cambiar la cuenta de Mercado Pago asociada a tu tienda, es necesarios cerrar y reinstalar el aplicativo. Para hacerlo, siga los pasos a continuación.
+Si quieres cambiar la cuenta de Mercado Pago asociada a tu tienda, es necesario cerrar y reinstalar la aplicación. Para hacerlo, sigue los pasos a continuación.
 
 1. Si todavía está conectado a su cuenta de Mercado Pago en un navegador, desconéctelo accediendo al "Menú de opciones" y, luego, haz clic en **Salir**.
 2. En el Panel Administrativo de tu tienda Tiendanube, accede a **Mis aplicaciones > Ver todas las aplicaciones**. 
