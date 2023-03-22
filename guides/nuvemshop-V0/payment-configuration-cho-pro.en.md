@@ -70,7 +70,7 @@ To integrate Checkout Pro, follow the steps below.
 5. If you want to apply discounts for payments with Checkout API, **enter the percentage** for payments in cash and cards (credit and debit).
 ------------
 ----[mlb]----
-5. If you want to apply discounts for payments with Transparent Checkout, **enter the percentage** for payments in boleto, credit card and Pix.
+5. If you want to apply discounts for payments with Checkout API, **enter the percentage** for payments in boleto, credit card and Pix.
 ------------
 6. If you want to apply discounts for payments with an external Checkout (Checkout Pro / Checkout Mercado Pago), **enter the percentage** in the available field.
 7. To configure your store's payment experiences, click on **Edit on the Mercado Pago website**.
