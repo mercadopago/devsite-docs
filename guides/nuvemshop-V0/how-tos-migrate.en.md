@@ -1,6 +1,6 @@
 # How to migrate to the new version of the Mercado Pago plugin
 
-Find out how to migrate to the current version of the Mercado Pago plugin for Nuvemshop.
+Find out how to migrate to the current version of the Mercado Pago plugin for Tiendanube.
 
 1. In your store's Administrative Panel at Tiendanube, go to **Potentialize > My apps**.
 2. Locate the Mercado Pago payment method and click **Install**.
