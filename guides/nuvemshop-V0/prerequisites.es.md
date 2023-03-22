@@ -1,6 +1,6 @@
 # Requisitos previos
 
-Para integrar el Mercado Pago con Tiendanube, debes cumplir con los requisitos a continuación.
+Para integrar Mercado Pago en Tiendanube, debes cumplir con los requisitos a continuación.
  
 | Requisitos | Descripción | Especificaciones |
 | --- | --- | --- |
