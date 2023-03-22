@@ -67,7 +67,7 @@ To integrate Checkout Pro, follow the steps below.
 3. In the list of payment methods, locate the Mercado Pago plugin and click on **Edit**.
 4. To apply a minimum amount of installments for payments, inform the amount in the available field.
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-5. If you want to apply discounts for payments with Transparent Checkout (----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------), **enter the percentage** for payments in cash and cards (credit and debit).
+5. If you want to apply discounts for payments with Checkout API, **enter the percentage** for payments in cash and cards (credit and debit).
 ------------
 ----[mlb]----
 5. If you want to apply discounts for payments with Transparent Checkout, **enter the percentage** for payments in boleto, credit card and Pix.
