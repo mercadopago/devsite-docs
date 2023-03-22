@@ -1,29 +1,29 @@
 ---
 content_section_with_media: 
  - title: Wix
- - message: Wix es una plataforma que te permite crear, diseñar, administrar y desarrollar una tienda online que te permite procesar pagos a través de Mercado Pago.
+ - message: Wix is a platform that allows you to create, design, manage and develop an online store that allows you to process payments through Mercado Pago.
  - media_video: https://www.youtube.com/embed/-jrqLcUug-0
 ---
 
 --- mini_landing_separator ---
 
->>>> Disponibilidad por país <<<<
+>>>> Availability by country <<<<
 ---
 available_countries: mla, mlb, mlm, mlu, mlc, mco, mpe
 ---
 
 ---
 bullet_section_with_media: 
- - title: Recibe pagos con Checkout Pro
+ - title: Receive payments with Checkout Pro
  - type: normal
- - message: Integra Mercado Pago en tu tienda y redirecciona a tus compradores a una página de Mercado Pago para completar el pago.
+ - message: Integrate Mercado Pago in your store and redirect your buyers to a Mercado Pago page to complete the payment.
  - image: /cow/cho-pro-landing__pt.png
 ---
 
 --- mini_landing_separator ---
 
 
->>>> Tipos de pago aceptados <<<<
+>>>> Accepted payment types <<<<
 
 ----[mlb]----
 
@@ -80,4 +80,4 @@ available_payments: mercadopago, atm, credit, debit, mercadocredito
 
 ----
 ------------
-> Para obtener detalles sobre los medios de pago aceptados en cada país, consulte la lista completa con [disponibilidad de medios de pago](/developers/es/docs/sales-processing/payment-methods).
+> For details of accepted payment methods in each country, check the full list with [payment methods availability.](/developers/en/docs/sales-processing/payment-methods).
