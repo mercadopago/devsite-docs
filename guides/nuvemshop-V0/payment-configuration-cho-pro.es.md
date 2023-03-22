@@ -75,7 +75,7 @@ Para integrar Checkout Pro, siga los pasos a continuación.
 5. Si deseas aplicar descuentos para pagos con Checkout transparente, **informa la percentage** para pagos en boleto, tarjeta de crédito y Pix.
 ------------
 6. Si deseas aplicar descuentos para pagos con Checkout externo (Checkout Pro / Checkout Mercado Pago), **informa la percentage** en el campo disponible.
-7. Para configurar las experiencias de pago de su tienda, haz clic en **Editar en el sítio de Mercado Pago**.
+7. Para configurar las experiencias de pago de su tienda, haz clic en **Editar en el sitio de Mercado Pago**.
 8. En el Checkout Mercado Pago, elige las formas de pago que quieres ofrecer en el entorno de pago de Mercado Pago, las cuales pueden ser:
 ----[mla, mpe, mco, mlu, mlc]---- 
  * **Tarjeta de crédito**. Elige también el número máximo de cuotas permitidas.
