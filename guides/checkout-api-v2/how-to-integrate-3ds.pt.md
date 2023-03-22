@@ -408,7 +408,7 @@ async function init() {
 Após seguir estes passos, sua integração está pronta para autenticar transações com 3DS.
 
 
-# Possíveis status de pagamento com 3DS
+## Possíveis status de pagamento 
 
 Uma transação com 3DS pode retornar diferentes status dependendo do tipo de integração realizada (com ou sem _Challenge_). Em um pagamento **sem _Challenge_**, o status da transação será diretamente `approved` ou `rejected`.
 
@@ -425,7 +425,7 @@ Veja abaixo a tabela com os possíveis status e suas respectivas descrições.
 
 
 
-# Teste de integração
+## Teste de integração
 
 Antes de ir à produção, é possível testar a integração para garantir que o fluxo 3DS funcione corretamente e que os pagamentos sejam processados sem erros. Dessa forma, evita-se que os compradores abandonem a transação por não conseguirem concluí-la.
 

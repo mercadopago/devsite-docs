@@ -348,14 +348,14 @@ Mira la sección a continuación para más detalles sobre cómo consultar el sta
 Para saber cuál es el resultado de la transacción, hay tres opciones:
 
 * **Notificaciones**: Recibirás la notificación del cambio del status del pago usando Webhooks y deberás redireccionar el buyer para una pantalla que indica que la transacción fue exitosa. Consulta la sección de [Webhooks](/developers/es/docs/checkout-api/additional-content/notifications/webhooks) y aprende cómo configurarlos.
-* **API de Payments**: Deberás hacer un pooling en [Payments](/developers/es/reference/payments/_payments/post) y, si el status cambia, redireccionar el buyer para una pantalla de congrats.
+* **API de Payments**: Deberás hacer un pooling en [Payments](/developers/es/reference/payments/_payments/post) y, si el status cambia, redireccionar el buyer para una pantalla de confirmación.
 * **Tratar el evento del iframe (recomendado)**: debes recordar que el evento solo indica que finalizó el _Challenge_ y no que el pago pasó a un status final, dado que la actualización no es inmediata y puede tardar unos instantes. Deberás hacer una consulta en [Payments](/developers/es/reference/payments/_payments/post) y, si el status cambia, redireccionar al buyer para una pantalla que indica que la transacción fue exitosa. 
 
 Para **tratar el evento del iframe**, sigue los pasos a continuación.
 
 ### Realizar implementación
 
-Utiliza el siguiente código Javascript para implementar y escuchar el evento que indica que el challenge ha finalizado y se ha redirigido a la página de congrats.
+Utiliza el siguiente código Javascript para implementar y escuchar el evento que indica que el challenge ha finalizado y se ha redirigido a la página de confirmación.
 
 
 [[[
@@ -372,7 +372,7 @@ window.addEventListener("message", (e) => {
 
 ### Buscar status del pago
 
-El siguiente Javascript indica cómo se puede realizar la búsqueda del status de pago actualizado y mostrarlo en la pantalla de congrats.
+El siguiente Javascript indica cómo se puede realizar la búsqueda del status de pago actualizado y mostrarlo en la pantalla de confirmación.
 
 
 [[[
@@ -410,7 +410,7 @@ async function init() {
 Después de seguir estos pasos, tu integración está lista para autenticar transacciones con 3DS.
 
 
-# Posibles status del pago con 3DS
+## Posibles status del pago 
 
 Una transacción con 3DS puede devolver diferentes status según el tipo de integración realizada (con o sin challenge). En un pago sin _Challenge_, el estado de la transacción será directamente "approved" o "rejected".
 
@@ -427,7 +427,7 @@ A continuación se muestra una tabla con los posibles status y sus descripciones
 
 
 
-# Prueba de integración
+## Prueba de integración
 
 Antes de pasar a producción, es posible probar la integración para asegurarse de que el flujo de 3DS funcione correctamente y que los pagos se procesan sin errores. De esta manera, evitas que los compradores abandonen la transacción porque no pueden completar la compra.
 
