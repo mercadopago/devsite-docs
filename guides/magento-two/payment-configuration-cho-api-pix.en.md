@@ -6,7 +6,7 @@ With the [Checkout API](/developers/en/guides/checkout-api/landing), offer **Pix
 >
 > Important
 >
-> The Pix payment option will only be displayed if there is a Pix key registered] in Mercado Pago. If you haven't created it yet, [click here](https://www.youtube.com/watch?v=60tApKYVnkA) and check the necessary steps.
+> The Pix payment option will only be displayed if there is a Pix key registered in Mercado Pago. If you haven't created one yet, [click here](https://www.youtube.com/watch?v=60tApKYVnkA) and check the necessary steps.
 
 To integrate the payment method, follow the steps below.
 
