@@ -85,7 +85,7 @@ Para integrar Checkout Pro, siga los pasos a continuación.
 ----[mlb]---- 
  * **Tarjeta de crédito**. Elige también el número máximo de cuotas permitidas.
  * **Tarjeta de débito**.
- * **Otros medios de pago**. Elige también el número de días para vencimiento del ticket (incluye sábado y domingo). Además, la opción de pago con Pix solo se mostrará si existe una chave Pix cadastrada en Mercado Pago. Si aún no las creaste, [haz clic aquí](https://www.youtube.com/watch?v=60tApKYVnkA) y consulta el paso a paso.
+ * **Otros medios de pago**. Elige también el número de días para vencimiento del ticket (incluye sábado y domingo). Además, la opción de pago con Pix solo se mostrará si existe una llave Pix registrada en Mercado Pago. Si aún no las creaste, [haz clic aquí](https://www.youtube.com/watch?v=60tApKYVnkA) y consulta el paso a paso.
 ------------ 
 ----[mlm]---- 
  * **Tarjeta de crédito**. Elige también el número máximo de meses permitidos.
