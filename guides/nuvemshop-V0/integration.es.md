@@ -19,7 +19,7 @@ Para integrar Mercado Pago a tu Tiendanube, sigue los procedimientos a continuac
 
 </center>
 
-Una vez que haya realizado la configuración inicial, configure las experiencias de pago de su tienda de acuerdo con el tipo de pago seleccionado.
+Una vez que hayas realizado esta configuración inicial, configura también las experiencias de pago de tu tienda de acuerdo con el tipo de pago seleccionado.
 
 > WARNING
 >
