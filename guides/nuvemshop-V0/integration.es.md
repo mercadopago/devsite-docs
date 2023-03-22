@@ -25,7 +25,7 @@ Una vez que hayas realizado esta configuración inicial, configura también las 
 >
 > Importante
 >
-> Por defecto, Tiendanube va a tomar información de la cuenta que está recibiendo el pago como la **configuración de correo electrónico**, **país** y la **moneda correspondiente a su cuenta de Mercado Pago**.
+> Por defecto, Tiendanube va a tomar información de la cuenta que está recibiendo el pago, como la **configuración de correo electrónico**, **país** y la **moneda correspondiente a tu cuenta de Mercado Pago**.
 
 ## Cambiar cuenta de Mercado Pago
 
