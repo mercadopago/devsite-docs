@@ -17,4 +17,4 @@ Aprende a migrar a la versión actual del plugin de Mercado Pago para Tiendanube
 >
 > Atención
 >
-> Ten cuidado para no desinstalar la nueva versión.
+> Ten cuidado de no desinstalar la nueva versión.
