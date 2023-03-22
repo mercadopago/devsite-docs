@@ -15,14 +15,14 @@ Nesta documentação você encontrará toda a informação necessária para real
 
 ## Integrar com 3DS
 
-A autenticação 3DS pode ser feita através de dois fluxos diferentes: **com e sem Challenge**, sendo esses etapas adicionais que o comprador deve cumprir para garantir sua identidade. A decisão de incluir ou não o Challenge depende do emissor do cartão e do perfil de risco da transação que está sendo realizada.
+A autenticação 3DS pode ser feita através de dois fluxos diferentes: **com e sem _Challenge_**, sendo esses etapas adicionais que o comprador deve cumprir para garantir sua identidade. A decisão de incluir ou não o _Challenge_ depende do emissor do cartão e do perfil de risco da transação que está sendo realizada.
 
-Para **transações de baixo risco**, as informações enviadas na finalização da compra são suficientes e as etapas adicionais do Challenge **não são necessárias**. Porém, **para casos de alto risco de fraude**, o Challenge é necessário para **verificar a identidade do comprador**, o que aumenta a conversão das transações com cartão.
+Para **transações de baixo risco**, as informações enviadas na finalização da compra são suficientes e as etapas adicionais do _Challenge_ **não são necessárias**. Porém, **para casos de alto risco de fraude**, o _Challenge_ é necessário para **verificar a identidade do comprador**, o que aumenta a conversão das transações com cartão.
 
 Abaixo estão as etapas para realizar uma integração com 3DS.
 
 
-1. Utilize o Mercado Pago [SDK JS](https://www.mercadopago.com.br/developers/pt/docs/sdks-library/client-side/mp-js-v2) no checkout para gerar o [token do cartão](https://www.mercadopago.com.br/developers/pt/docs/sdks-library/client-side/java/howto-migrate#:~:text=...%0A%7D%3B-,Criar%20token%20do%20cart%C3%A3o,-Finalmente%2C%20no%20enviar) crédito.
+1. Utilize o Mercado Pago [SDK JS](/developers/pt/docs/sdks-library/client-side/mp-js-v2) no checkout para gerar o [token do cartão de crédito](/developers/pt/docs/sdks-library/client-side/java/howto-migrate#bookmark_criar_token_do_cartão).
 
 [[[
 ```Javascript
@@ -40,7 +40,7 @@ async function createCardToken(){
 
 
 
-2. Em seguida, envie os dados do checkout junto com o token do cartão para o backend.
+2. Em seguida, envie os **dados do checkout** junto com o **token do cartão** para o backend.
 3. Feito isso, faça uma chamada para criar um novo pagamento com os dados recebidos. O atributo `three_d_secure_mode` precisa ser enviado com um dos seguintes valores:
     1. `not_supported`: 3DS não deve ser usado (é o valor padrão).
     2. `opcional`: 3DS pode ou não ser exigido, dependendo do perfil de risco da operação.
@@ -186,9 +186,15 @@ payment = payment_response["response"]
 ]]]
 
 
-Caso não seja necessário utilizar o fluxo do Challenge, o campo `status` do pagamento terá valor `approved` e não será necessário mostrá-lo, dessa forma, siga normalmente com o fluxo de sua aplicação. Para os casos em que o Challenge é necessário, o `status` mostrará o valor `pending`, e o `status_detail` será `pending_Challenge`.
+Caso não seja necessário utilizar o fluxo do _Challenge_, o campo `status` do pagamento terá valor `approved` e não será necessário exibi-lo, dessa forma, siga normalmente com o fluxo de sua aplicação. 
 
-Neste último caso, a resposta mostrará um atributo de pagamento chamado `three_dsinfo` com os campos `external_resource_url`, que contém a URL do Challenge, e `creq`, um identificador da solicitação do Challenge. Será necessário mostrar o Challenge e tratar seu resultado com os seguintes passos.
+Para os casos em que o _Challenge_ é necessário, o `status` mostrará o valor `pending`, e o `status_detail` será `pending_Challenge`.
+
+> NOTE
+>
+> Importante
+>
+> Neste último caso, a resposta mostrará um atributo de pagamento chamado `three_dsinfo` com os campos `external_resource_url`, que contém a URL do _Challenge_, e `creq`, um identificador da solicitação do _Challenge_. Para exibi-lo e tratar seu resultado siga os passos abaixo.
 
 
 ### Visão geral da resposta (informação omitida)
@@ -276,7 +282,7 @@ Neste último caso, a resposta mostrará um atributo de pagamento chamado `three
 ]]]
 
 
-4. Para **exibir o Challenge**, é necessário gerar um iframe (altura mínima: 500px, largura mínima: 600px) que contenha um formulário com `method post` e `action`, que será a URL obtida no campo `external_resource_url`, e um input oculto com o valor obtido em `creq`. Em seguida, faça o post deste formulário para iniciar o Challenge.
+4. Para **exibir o _Challenge_**, é necessário gerar um _iframe_ (altura mínima: 500px, largura mínima: 600px) que contenha um formulário com `method post` e `action`, que será a URL obtida no campo `external_resource_url`, e um input oculto com o valor obtido em `creq`. Em seguida, faça o post do formulário abaixo para iniciar o _Challenge_.
 
 [[[
 ```javascript
@@ -322,13 +328,13 @@ function doChallenge(payment) {
 ```
 ]]]
 
-Quando o Challenge for concluído, o status do pagamento será atualizado para `approved` se a autenticação for bem-sucedida, e `rejected` se não for. Em situações nas quais a autenticação não é realizada, o pagamento permanece `pending`. Esta atualização não é imediata e pode levar alguns instantes.
+Quando o _Challenge_ for concluído, o status do pagamento será atualizado para `approved` se a autenticação for bem-sucedida, e `rejected` se não for. Em situações nas quais a autenticação não é realizada, o pagamento permanece `pending`. Esta atualização não é imediata e pode levar alguns instantes.
 
 > NOTE
 >
 > Importante
 >
-> Quando o Challenge é iniciado, o usuário tem cerca de 5 minutos para completá-lo. Se não for concluído, o banco recusará a transação e o Mercado Pago considerará o pagamento cancelado. Se o usuário não completar o Challenge, o pagamento ficará como `pending_Challenge`.
+> Quando o _Challenge_ é iniciado, o usuário tem cerca de 5 minutos para completá-lo. Se não for concluído, o banco recusará a transação e o Mercado Pago considerará o pagamento cancelado. Se o usuário não completar o _Challenge_, o pagamento ficará como `pending_Challenge`.
 
 Consulte a seção abaixo para obter mais detalhes sobre como verificar o status de cada transação.
 
@@ -338,13 +344,13 @@ Para saber qual é o resultado de cada transação, existem três opções:
 
 * **Notificações**: Uma notificação da alteração do status do pagamento será recebida por meio de Webhooks e o comprador deverá ser redirecionado para uma tela indicando que a transação foi bem-sucedida. Consulte a seção [Webhooks](/developers/es/docs/checkout-api/additional-content/notifications/webhooks) e saiba como realizar sua configuração..
 * **API de pagamentos**: Será necessário fazer um _pooling_ em [Payments](/developers/pt/reference/payments/_payments/post) e, se o status mudar, redirecionar o comprador para uma tela de confirmação.
-* **Tratar o evento iframe (recomendado)**: Tenha em mente que o evento apenas indica que o Challenge terminou e não que o pagamento chegou a um status final, pois a atualização não é imediata e pode demorar alguns instantes. Faça uma consulta em [Payments](/developers/pt/reference/payments/_payments/post) e, caso o status mude, redirecione o comprador para uma tela indicando que a transação foi realizada com sucesso.
+* **Tratar o evento iframe (recomendado)**: Tenha em mente que o evento apenas indica que o _Challenge_ terminou e não que o pagamento chegou a um status final, pois a atualização não é imediata e pode demorar alguns instantes. Faça uma consulta em [Payments](/developers/pt/reference/payments/_payments/post) e, caso o status mude, redirecione o comprador para uma tela indicando que a transação foi realizada com sucesso.
 
 Para **tratar o evento iframe**, siga as etapas abaixo.
 
 ### Realizar implantação
 
-Utilize o código Javascript a seguir para implementar e escutar o evento que indica que o Challenge foi encerrado e redirecionado para a página de _congrats_.
+Utilize o código Javascript a seguir para implementar e escutar o evento que indica que o _Challenge_ foi encerrado e redirecionado para a tela de confirmação.
 
 
 [[[
@@ -362,7 +368,7 @@ window.addEventListener("message", (e) => {
 
 ### Buscar status de pagamento
 
-O Javascript a seguir indica como buscar o status do pagamento atualizado e exibi-lo na tela de _congrats_.
+O Javascript a seguir indica como buscar o status do pagamento atualizado e exibi-lo na tela de confirmação.
 
 
 
@@ -397,23 +403,23 @@ async function init() {
 >
 > Importante
 >
-> Caso o pagamento ainda esteja 'pending' após o timeout do Challenge, será necessário redirecionar o comprador para uma tela informando que o pagamento expirou e que é necessário criar um novo (a atualização não é imediata, pode demorar alguns momentos).
+> Caso o pagamento ainda esteja `pending` após o timeout do _Challenge_, será necessário redirecionar o comprador para uma tela informando que o pagamento expirou e que é necessário criar um novo (a atualização não é imediata, pode demorar alguns momentos).
 
 Após seguir estes passos, sua integração está pronta para autenticar transações com 3DS.
 
 
 # Possíveis status de pagamento com 3DS
 
-Uma transação com 3DS pode retornar diferentes status dependendo do tipo de integração realizada (com ou sem Challenge). Em um pagamento **sem Challenge**, o status da transação será diretamente `approved` ou `rejected`.
+Uma transação com 3DS pode retornar diferentes status dependendo do tipo de integração realizada (com ou sem _Challenge_). Em um pagamento **sem _Challenge_**, o status da transação será diretamente `approved` ou `rejected`.
 
-Em um pagamento **com Challenge**, a transação ficará com status `pending` e o processo de autenticação junto ao banco será iniciado. Somente após esta etapa o status final será exibido.
+Em um pagamento **com _Challenge_**, a transação ficará com status `pending` e o processo de autenticação junto ao banco será iniciado. Somente após esta etapa o status final será exibido.
 
-Veja abaixo a tabela com os possíveis `status` e suas respectivas descrições.
+Veja abaixo a tabela com os possíveis status e suas respectivas descrições.
 
 
 | Status  | Descrição  |
 | --- | --- |
-| `pending` | Transação com autenticação pendente ou timeout do Challenge. |
+| `pending` | Transação com autenticação pendente ou timeout do _Challenge_. |
 | `approved` | Transação aprovada com autenticação. |
 | `rejected` | Transação negada sem autenticação. |
 
