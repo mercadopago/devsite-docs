@@ -25,7 +25,7 @@ bullet_section_with_media:
 bullet_section_with_media:
  - title: Payment
  - type: normal
- - message: With the Mercado Pago module you can configure the payment using:
+ - message: With the Mercado Pago module you can configure payments using:
  - benefit_title: Checkout Pro
  - benefit_message: Buyers will be able to pay using a Mercado Pago account and the entire purchase process will be carried out in our environment, facilitating payment with credit card, debit card and other means of payment (cash payment networks and Mercado Credit).
  - benefit_title: Checkout API
