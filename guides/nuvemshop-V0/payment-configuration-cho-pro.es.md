@@ -100,4 +100,4 @@ Para integrar Checkout Pro, siga los pasos a continuación.
 
 </center>
 
-¡Listo! El Checkout Pro está listo para recibir pagos de tu tienda.
+¡Listo! Checkout Pro está listo para recibir pagos de tu tienda.
