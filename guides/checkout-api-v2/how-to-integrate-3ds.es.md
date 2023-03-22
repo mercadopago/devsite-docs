@@ -17,7 +17,7 @@ En esta documentación encontrarás toda la información necesaria para realizar
 
 ## Integrar con 3DS
 
-La autenticación 3DS se puede realizar a través de dos flujos distintos: **con y sin Challenge**, que son pasos adicionales que el comprador debe completar para garantizar su identidad. La decisión de incluir o no el Challenge depende del emisor de la tarjeta y del perfil de riesgo de la transacción que se realiza.  
+La autenticación 3DS se puede realizar a través de dos flujos distintos: **con o sin Challenge**, que son pasos adicionales que el comprador debe completar para garantizar su identidad. La decisión de incluir o no el Challenge depende del emisor de la tarjeta y del perfil de riesgo de la transacción que se realiza.  
 
 Para **transacciones de bajo riesgo**, la información enviada en el momento del pago es suficiente y los pasos adicionales de Challenge **no son necesarios**. Sin embargo, **para casos donde existe un alto riesgo de fraude**, Challenge es requerido para **verificar la identidad del comprador**, lo que aumenta la conversión de las transacciones con tarjeta.
 
@@ -25,7 +25,7 @@ A continuación se presentan los pasos para realizar una integración con 3DS.
 
 
 
-1. Debes usar el [SDK JS](https://www.mercadopago.com.br/developers/pt/docs/sdks-library/client-side/mp-js-v2) de Mercado Pago en el checkout para generar el [token de la tarjeta](https://www.mercadopago.com.br/developers/pt/docs/sdks-library/client-side/java/howto-migrate#:~:text=...%0A%7D%3B-,Criar%20token%20do%20cart%C3%A3o,-Finalmente%2C%20no%20submit) de crédito. 
+1. Debes usar el [SDK JS](https://www.mercadopago.com.br/developers/es/docs/sdks-library/client-side/mp-js-v2) de Mercado Pago en el checkout para generar el [token de la tarjeta](https://www.mercadopago.com.br/developers/es/docs/sdks-library/client-side/java/howto-migrate#:~:text=...%0A%7D%3B-,Criar%20token%20do%20cart%C3%A3o,-Finalmente%2C%20no%20submit) de crédito. 
 
 [[[
 ```Javascript
