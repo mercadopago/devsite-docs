@@ -25,7 +25,7 @@ bullet_section_with_media:
 bullet_section_with_media:
  - title: Pago
  - type: normal
- - message: Con el módulo de Mercado Pago puedes configurar el pago mediante:
+ - message: Con el módulo de Mercado Pago puedes configurar pagos mediante:
  - benefit_title: Checkout Pro
  - benefit_message: Los compradores podrán pagar con una cuenta de Mercado Pago y todo el proceso de compra se realizará en nuestro entorno, lo que facilita el pago con tarjetas de débito, de crédito y otros medios de pago (redes de pago en efectivo y Mercado Crédito).
  - benefit_title: Checkout API
