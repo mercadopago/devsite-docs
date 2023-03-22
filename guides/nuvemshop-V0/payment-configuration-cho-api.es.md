@@ -28,7 +28,7 @@ Para integrar Checkout API, siga los pasos a continuación.
 ----[mlb]---- 
 5. Si deseas aplicar descuentos para pagos con Checkout transparente, **informa el porcentaje** para pagos en boleto, tarjeta de crédito y Pix.
 ------------
-6. Si deseas aplicar descuentos para pagos con Checkout externo (Checkout Pro / Checkout Mercado Pago), **informa la percentage** en el campo disponible.
+6. Si deseas aplicar descuentos para pagos con Checkout externo (Checkout Pro / Checkout Mercado Pago), **informa el porcentaje** en el campo disponible.
 7. Para configurar las experiencias de pago de su tienda, haz clic en **Editar en el sítio de Mercado Pago**.
 8. En Checkout Transparente, elige las formas de pago que quieres ofrecer en el entorno de pago de Mercado Pago, las cuales pueden ser:
 ----[mlb]---- 
