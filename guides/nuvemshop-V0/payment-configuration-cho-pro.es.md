@@ -57,7 +57,7 @@ Al concluir la compra, cuando los compradores eligen pagar con Mercado Pago, se 
 
 ------------
  
-Para integrar Checkout Pro, siga los pasos a continuación.
+Para integrar Checkout Pro, sigue los pasos a continuación.
  
 1. En el Panel Administrativo de tu Tiendanube, accede a **Mis aplicaciones > Ver todas las aplicaciones**. 
 2. Localiza el plugin Mercado Pago en la lista de aplicaciones y haz clic en **Configurar aplicación**.
