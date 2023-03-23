@@ -6,8 +6,9 @@ Create Brick's startup configuration.
 
 [[[
 ```Javascript
-const settings = {
- initialization: {
+const renderPaymentBrick = async (bricksBuilder) => {
+ const settings = {
+   initialization: {
    /*
      "amount" is the total amount to be paid by all means of payment
      with the exception of the Mercado Pago Account and Installment without a credit card, which have their processing value determined in the backend through the "preferenceId"
@@ -117,8 +118,9 @@ const onReady = async () => {
 
 [[[
 ```Javascript
-const settings = {
- initialization: {
+const renderPaymentBrick = async (bricksBuilder) => {
+ const settings = {
+   initialization: {
    /*
      "amount" is the total amount to be paid by all means of payment
      with the exception of the Mercado Pago Account and Installment without a credit card, which have their processing value determined in the backend through the "preferenceId"
@@ -228,8 +230,9 @@ const onReady = async () => {
 
 [[[
 ```Javascript
-const settings = {
- initialization: {
+const renderPaymentBrick = async (bricksBuilder) => {
+ const settings = {
+   initialization: {
     /*
      "amount" is the total amount to be paid by all means of payment
      with the exception of the Mercado Pago Account and Installment without a credit card, which have their processing value determined in the backend through the "preferenceId"
@@ -337,8 +340,9 @@ const onReady = async () => {
 
 [[[
 ```Javascript
-const settings = {
- initialization: {
+const renderPaymentBrick = async (bricksBuilder) => {
+ const settings = {
+   initialization: {
    /*
      "amount" is the total amount to be paid by all means of payment
      with the exception of the Mercado Pago Account and Installment without a credit card, which have their processing value determined in the backend through the "preferenceId"

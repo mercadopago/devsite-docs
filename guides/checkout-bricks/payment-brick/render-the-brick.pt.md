@@ -23,7 +23,31 @@ import { Payment } from '@mercadopago/sdk-react';
 
 O resultado de renderizar o Brick deve ser como na imagem abaixo.
 
-----[mpe]----
-![render-brick-mpe](checkout-bricks/render-brick-mpe-pt.png)
+----[mlb]----
+<center>
 
+![payment-Brick-layout-mlb](checkout-bricks/payment-brick-layout-mlb-pt.gif)
+
+</center>
+------------
+
+----[mla]----
+<center>
+
+![payment-Brick-layout-mla](checkout-bricks/payment-brick-layout-mla-pt.gif)
+
+</center>
+------------
+----[mlm]----
+<center>
+
+![payment-Brick-layout-mlm](checkout-bricks/payment-brick-layout-mlm-pt.gif)
+
+</center>
+----[mpe, mco, mlu, mcl]----
+<center>
+
+![payment-brick-layout-all](checkout-bricks/payment-brick-layout-all-pt.gif)
+
+</center>
 ------------

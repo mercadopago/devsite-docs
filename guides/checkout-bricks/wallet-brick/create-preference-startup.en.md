@@ -3,17 +3,17 @@
 If you prefer, you can also add the preference at Brick startup. This can be useful if you already have your payment information when loading Brick. To do this, add the preference ID to Brick's `initialization` object.
 
 [[[
-```react-jsx
-const initialization = {
- preferenceId: '<PREFERENCE_ID>',
-};
-```
 ```Javascript
 const settings = {
  ...,
  initialization: {
    preferenceId: '<PREFERENCE_ID>',
  }
+};
+```
+```react-jsx
+const initialization = {
+ preferenceId: '<PREFERENCE_ID>',
 };
 ```
 ]]]

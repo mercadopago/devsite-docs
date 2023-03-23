@@ -4,9 +4,10 @@ Crie a configuração de inicialização do Brick.
 
 [[[
 ```Javascript
-const settings = {
- callbacks: {
-   onReady: () => {
+const renderWalletBrick = async (bricksBuilder) => {
+ const settings = {
+   callbacks: {
+     onReady: () => {
      /*
       Callback chamado quando o Brick estiver pronto.
       Aqui você pode ocultar loadings do seu site, por exemplo.
@@ -34,9 +35,10 @@ const settings = {
          headers: {
            'Content-Type': 'application/json',
          },
-         body: JSON.stringify(yourRequestBodyHere),
-       })
-         .then((response) => {
+           body: JSON.stringify(formData),
+         })
+           .then((response) => response.json())
+           .then((response) => {
            // resolver a promise com o ID da preferência
            resolve(response.preference_id);
          })
@@ -112,4 +114,4 @@ const onReady = async () => {
 >
 > Caso se faça necessário desmontar e remontar algum Brick, é recomendado destruir a instância atual e gerar uma nova. Para isso, utilize o método *unmount* disponível no *controller* do Brick, sendo neste caso: `window.walletBrickController.unmount()`.
 
-Esse fluxo de criação de [preferência no onSubmit](/developers/pt/docs/checkout-bricks/wallet-brick/configure-integration/preference-onsubmit) é pensado para vendedores que tem fluxos de one click, caso queira, também pode enviar a preferência na inicialização. Veja mais informaçÕes na seção de [Preferência na inicialização](/developers/pt/docs/checkout-bricks/wallet-brick/configure-integration/preference-startup)
+Esse fluxo de criação de [preferência no onSubmit](/developers/pt/docs/checkout-bricks/wallet-brick/configure-integration/preference-onsubmit) é pensado para vendedores que tem fluxos de one click, caso queira, também pode enviar a preferência na inicialização. Veja mais informações na seção de [Preferência na inicialização](/developers/pt/docs/checkout-bricks/wallet-brick/configure-integration/preference-startup).

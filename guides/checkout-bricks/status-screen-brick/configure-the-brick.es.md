@@ -4,7 +4,7 @@ Creae la configuración de inicio de Brick
 
 [[[
 ```Javascript
-onst settings = {
+const settings = {
  initialization: {
    paymentId: '<PAYMENT_ID>', // id de pago para mostrar
  },

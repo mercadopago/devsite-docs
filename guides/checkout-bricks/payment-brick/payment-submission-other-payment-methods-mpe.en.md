@@ -42,20 +42,21 @@ To configure payments with **PagoEfectivo**, send a **POST** with the following 
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 var payment_data = {
-  transaction_amount: 100,
-  description: 'Product title',
-  payment_method_id: 'pagoefectivo_atm',
-  payer: {
-    email: 'test@test.com',
-  },
-  metadata: {
-    payment_mode: 'online',
-  }
+ transaction_amount: 100,
+ description: 'Título do produto',
+ payment_method_id: 'pagoefectivo_atm',
+ payer: {
+   email: 'test@test.com',
+ },
+ metadata: {
+   payment_mode: 'online',
+ }
 };
- 
-mercadopago.payment.create(payment_data).then(function (data) {
-}).catch(function (error) {
-});
+
+
+mercadopago.payment.create(payment_data)
+ .then(function(data) {})
+ .catch(function(error) {});
 ```
 ```java
 PaymentClient client = new PaymentClient();

@@ -37,8 +37,9 @@ const settings = {
            headers: {
              "Content-Type": "application/json",
            },
-           body: JSON.stringify(formData)
+           body: JSON.stringify(formData),
          })
+           .then((response) => response.json())
            .then((response) => {
              // receber o resultado do pagamento
              resolve();
@@ -59,12 +60,13 @@ const settings = {
 }
 ```
 ```react-jsx
-// variável onde o controller do Brick está salvo
-cardPaymentBrickController.getAdditionalData()
-        .then((additionalData) => {
-            console.log("Additional data:", additionalData);
-        })
-        .catch((error) => console.error(error));
+<Payment
+ initialization={initialization}
+ customization={customization}
+ onSubmit={async ({ selectedPaymentMethod, formData }, additionalData) => {
+   console.log({ selectedPaymentMethod, formData }, additionalData);
+ }}
+/>
 ```
 ]]]
 

@@ -4,10 +4,10 @@ Una vez creadas las configuraciones, se puede renderizar el Brick y compilar tod
 
 Para renderizar el Brick, ingrese el código a continuación.
 
+[[[
 ```html
 <div id="paymentBrick_container"></div>
 ```
-
 ```react-jsx
 import { Payment } from '@mercadopago/sdk-react';
 
@@ -19,6 +19,7 @@ import { Payment } from '@mercadopago/sdk-react';
    onError={onError}
 />
 ```
+]]]
 
 El resultado de renderizar el Brick debería parecerse a la imagen de abajo.
 

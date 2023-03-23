@@ -4,10 +4,10 @@ Uma vez criadas as configurações, o Brick pode ser renderizado e ter todas as 
 
 Para renderizar o Brick, insira o código abaixo.
 
+[[[
 ```html
 <div id="paymentBrick_container"></div>
 ```
-
 ```react-jsx
 import { Payment } from '@mercadopago/sdk-react';
 
@@ -19,6 +19,7 @@ import { Payment } from '@mercadopago/sdk-react';
    onError={onError}
 />
 ```
+]]]
 
 O resultado de renderizar o Brick deve ser como na imagem abaixo.
 

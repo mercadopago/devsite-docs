@@ -17,7 +17,7 @@ O Wallet Brick oferece dois níveis de leitura: o **call to action (botão)** e 
 | Momento de customização | Ao renderizar Brick |
 | Propriedade | customization.texts.{action, valueProp} |
 | Tipo | String |
-| Observações | Ao enviar um texto vazio, a tela apresentará o texto definido pelo layout padrão. Por outro lado, ao se enviar um texto customizado, este substituirá o texto padrão. Para verificar quais são os textos padrões, veja a tabela a seguir.|
+| Observações | Ao enviar um texto vazio, a tela apresentará o texto definido pelo layout padrão. Por outro lado, ao se enviar um texto alternativo, este substituirá o texto padrão. Para verificar quais são os textos padrões, veja a tabela a seguir.|
 
 Confira a seguir os textos disponíveis para alteração e um exemplo de código.
 

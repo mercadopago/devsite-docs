@@ -11,7 +11,7 @@
 | Customization moment  | When rendering the Brick  |
 | Property  | customization.visual.{buttonBackground, buttonHeight, borderRadius, valuePropColor, verticalPadding, horizontalPadding} |
 | Type  | String  |
-| Comments  | When sending an empty property, the screen will present the text defined by the default layout. On the other hand, when you submit a custom value, it will replace the default value. To check what the default values are, check out the table below. |
+| Comments  | When sending an empty property, the screen will present the text defined by the default layout. On the other hand, when you submit a alternative value, it will replace the default value. To check what the default values are, check out the table below. |
 
 | Key | Available options | Default | Comments |
 |--- |--- | --- | --- |
@@ -35,15 +35,11 @@ const settings = {
 }
 ```
 ```react-jsx
-const settings = {
-    ...,
-    customization: {
-         visual: {
-             buttonBackground: 'black',
-             borderRadius: '16px',
-         },
-    },
-}
+const customization = {
+ visual: {
+   hideValueProp: true
+ }
+};
 ```
 ]]]
 

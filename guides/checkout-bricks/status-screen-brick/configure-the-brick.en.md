@@ -4,7 +4,7 @@ Create Brick's startup configuration.
 
 [[[
 ```Javascript
-onst settings = {
+const settings = {
  initialization: {
    paymentId: '<PAYMENT_ID>', // payment id to show
  },

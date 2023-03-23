@@ -4,12 +4,13 @@ Create Brick's startup configuration.
 
 [[[
 ```Javascript
-const settings = {
- initialization: {
-   amount: 100, // total amount to be paid
- },
- callbacks: {
-   onReady: () => {
+const renderCardPaymentBrick = async (bricksBuilder) => {
+ const settings = {
+   initialization: {
+     amount: 100, // valor total a ser pago
+   },
+   callbacks: {
+     onReady: () => {
      /*
        Callback called when Brick is ready.
        Here you can hide loadings from your site, for example.
@@ -23,9 +24,10 @@ const settings = {
          headers: {
            'Content-Type': 'application/json',
          },
-         body: JSON.stringify(formData),
-       })
-         .then((response) => {
+           body: JSON.stringify(formData),
+         })
+           .then((response) => response.json())
+           .then((response) => {
            // receive payment result
            resolve();
          })

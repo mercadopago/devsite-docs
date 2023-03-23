@@ -150,7 +150,7 @@ A possibilidade de guardar os dados dos cartões que já foram debitados em comp
 
 <center>
 
-![payment-Brick-layout-mpe](checkout-bricks/payment-brick-layout-mpe-pt.gif)
+![payment-brick-layout-all](checkout-bricks/payment-brick-layout-all-pt.gif)
 
 </center>
 

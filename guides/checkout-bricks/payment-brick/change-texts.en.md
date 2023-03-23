@@ -58,7 +58,7 @@ const settings = {
                    "newDebitCardTitle": "",
                    "debitCardTitle": "",
                    "debitCardValueProp": "",
-             "ticketTitle": "",
+               "ticketTitle": "",
                    "ticketValueProp": "",
                  }
            }
@@ -106,7 +106,7 @@ const customization = {
        newDebitCardTitle: 'string',
        debitCardTitle: 'string',
        debitCardValueProp: 'string',
-	 ticketTitle: 'string',
+	   ticketTitle: 'string',
        ticketValueProp: 'string',
      }
    }

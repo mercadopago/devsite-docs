@@ -6,8 +6,9 @@ Crie a configuração de inicialização do Brick.
 
 [[[
 ```Javascript
-const settings = {
- initialization: {
+const renderPaymentBrick = async (bricksBuilder) => {
+ const settings = {
+   initialization: {
    /*
      "amount" é o valor total a ser pago por todos os meios de pagamento
      com exceção da Conta Mercado Pago e Parcelamento sem cartão de crédito, que tem seu valor de processamento determinado no backend através do "preferenceId"
@@ -39,9 +40,10 @@ const settings = {
          headers: {
            "Content-Type": "application/json",
          },
-         body: JSON.stringify(formData),
-       })
-         .then((response) => {
+           body: JSON.stringify(formData),
+         })
+           .then((response) => response.json())
+           .then((response) => {
            // receber o resultado do pagamento
            resolve();
          })
@@ -117,8 +119,9 @@ const onReady = async () => {
 
 [[[
 ```Javascript
-const settings = {
- initialization: {
+const renderPaymentBrick = async (bricksBuilder) => {
+ const settings = {
+   initialization: {
    /*
      "amount" é o valor total a ser pago por todos os meios de pagamento
      com exceção da Conta Mercado Pago e Parcelamento sem cartão de crédito, que tem seu valor de processamento determinado no backend através do "preferenceId"
@@ -150,9 +153,10 @@ const settings = {
          headers: {
            "Content-Type": "application/json",
          },
-         body: JSON.stringify(formData),
-       })
-         .then((response) => {
+           body: JSON.stringify(formData),
+         })
+           .then((response) => response.json())
+           .then((response) => {
            // receber o resultado do pagamento
            resolve();
          })
@@ -228,8 +232,9 @@ const onReady = async () => {
 
 [[[
 ```Javascript
-const settings = {
- initialization: {
+const renderPaymentBrick = async (bricksBuilder) => {
+ const settings = {
+   initialization: {
    /*
      "amount" é o valor total a ser pago por todos os meios de pagamento
      com exceção da Conta Mercado Pago, que tem seu valor de processamento determinado no backend através do "preferenceId"
@@ -260,9 +265,10 @@ const settings = {
          headers: {
            "Content-Type": "application/json",
          },
-         body: JSON.stringify(formData),
-       })
-         .then((response) => {
+           body: JSON.stringify(formData),
+         })
+           .then((response) => response.json())
+           .then((response) => {
            // receber o resultado do pagamento
            resolve();
          })
@@ -337,8 +343,9 @@ const onReady = async () => {
 
 [[[
 ```Javascript
-const settings = {
- initialization: {
+const renderPaymentBrick = async (bricksBuilder) => {
+ const settings = {
+   initialization: {
    /*
      "amount" é o valor total a ser pago por todos os meios de pagamento
      com exceção da Conta Mercado Pago e Parcelamento sem cartão de crédito, que tem seu valor de processamento determinado no backend através do "preferenceId"
@@ -369,9 +376,10 @@ const settings = {
          headers: {
            "Content-Type": "application/json",
          },
-         body: JSON.stringify(formData),
-       })
-         .then((response) => {
+           body: JSON.stringify(formData),
+         })
+           .then((response) => response.json())
+           .then((response) => {
            // receber o resultado do pagamento
            resolve();
          })

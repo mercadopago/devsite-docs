@@ -4,12 +4,13 @@ Crie a configuração de inicialização do Brick.
 
 [[[
 ```Javascript
-const settings = {
- initialization: {
-   amount: 100, // valor total a ser pago
- },
- callbacks: {
-   onReady: () => {
+const renderCardPaymentBrick = async (bricksBuilder) => {
+ const settings = {
+   initialization: {
+     amount: 100, // valor total a ser pago
+   },
+   callbacks: {
+     onReady: () => {
      /*
        Callback chamado quando o Brick estiver pronto.
        Aqui você pode ocultar loadings do seu site, por exemplo.
@@ -23,9 +24,10 @@ const settings = {
          headers: {
            'Content-Type': 'application/json',
          },
-         body: JSON.stringify(formData),
-       })
-         .then((response) => {
+           body: JSON.stringify(formData),
+         })
+           .then((response) => response.json())
+           .then((response) => {
            // receber o resultado do pagamento
            resolve();
          })

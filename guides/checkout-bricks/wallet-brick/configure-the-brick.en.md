@@ -4,9 +4,10 @@ Create Brick's startup configuration.
 
 [[[
 ```Javascript
-const settings = {
- callbacks: {
-   onReady: () => {
+const renderWalletBrick = async (bricksBuilder) => {
+ const settings = {
+   callbacks: {
+     onReady: () => {
      /*
       Callback called when Brick is ready.
       Here you can hide loadings from your site, for example.
@@ -34,9 +35,10 @@ const settings = {
          headers: {
            'Content-Type': 'application/json',
          },
-         body: JSON.stringify(yourRequestBodyHere),
-       })
-         .then((response) => {
+           body: JSON.stringify(formData),
+         })
+           .then((response) => response.json())
+           .then((response) => {
            // resolve the promise with the ID of the preference
            resolve(response.preference_id);
          })

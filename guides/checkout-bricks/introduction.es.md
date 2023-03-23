@@ -18,14 +18,6 @@ El Brick posee capacidades responsivas en términos del tamaño del espacio en l
 </center>
 
 ------------
-----[mco, mlu, mlc]---- 
-<center>
-
-![responsiveness-all](checkout-bricks/responsiveness-all-es.gif)
-
-</center>
-
-------------
 ----[mla]---- 
 <center>
 
@@ -42,10 +34,10 @@ El Brick posee capacidades responsivas en términos del tamaño del espacio en l
 </center>
 
 ------------
-----[mpe]---- 
+----[mpe, mco, mlu, mlc]---- 
 <center>
 
-![responsiveness-mpe](checkout-bricks/responsiveness-mpe-es.gif)
+![responsiveness-all](checkout-bricks/responsiveness-all-es.gif)
 
 </center>
 
@@ -59,14 +51,6 @@ El Checkout Bricks se puede instanciar/renderizar con diferentes temas y caracte
 <center>
 
 ![themes-mlb](checkout-bricks/themes-mlb-es.png)
-
-</center>
-
-------------
-----[mco, mlu, mlc]----
-<center>
-
-![themes-all](checkout-bricks/themes-all-es.png)
 
 </center>
 
@@ -87,10 +71,10 @@ El Checkout Bricks se puede instanciar/renderizar con diferentes temas y caracte
 </center>
 
 ------------
-----[mpe]---- 
+----[mpe, mco, mlu, mlc]----
 <center>
 
-![themes-mpe](checkout-bricks/themes-mpe-es.jpg) 
+![themes-all](checkout-bricks/themes-all-es.png)
 
 </center>
 

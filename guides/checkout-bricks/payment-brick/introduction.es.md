@@ -150,7 +150,7 @@ La posibilidad de guardar los datos de tarjetas que ya fueron cargadas en compra
 
 <center>
 
-![payment-Brick-layout-mpe](checkout-bricks/payment-brick-layout-mpe-es.gif)
+![payment-brick-layout-all](checkout-bricks/payment-brick-layout-all-es.gif)
 
 </center>
 

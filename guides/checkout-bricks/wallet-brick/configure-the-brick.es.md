@@ -4,9 +4,10 @@ Creae la configuración de inicio de Brick
 
 [[[
 ```Javascript
-const settings = {
- callbacks: {
-   onReady: () => {
+const renderWalletBrick = async (bricksBuilder) => {
+ const settings = {
+   callbacks: {
+     onReady: () => {
      /*
       Callback llamado cuando Brick está listo.
       Aquí puedes ocultar cargamentos de su sitio, por ejemplo.
@@ -34,9 +35,10 @@ const settings = {
          headers: {
            'Content-Type': 'application/json',
          },
-         body: JSON.stringify(yourRequestBodyHere),
-       })
-         .then((response) => {
+           body: JSON.stringify(formData),
+         })
+           .then((response) => response.json())
+           .then((response) => {
            // resolver la promesa con el ID de la preferencia
            resolve(response.preference_id);
          })
