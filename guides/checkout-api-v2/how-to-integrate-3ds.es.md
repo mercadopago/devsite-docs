@@ -73,7 +73,7 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
     "installments": 1,
     "transaction_amount": 100,
     "description": "description",
-    "token": "your_cardtoken",
+    "token": "CARD_TOKEN",
     "three_d_secure_mode": "optional",
     "capture": true,
     "binary_mode": false
@@ -191,7 +191,7 @@ payment = payment_response["response"]
 
 En caso de que no sea necesario utilizar el flujo de _Challenge_, el campo `status` del pago tendrá valor `approved` y no será necesario mostrarlo, por lo que puedes seguir con el flujo de tu aplicación. 
 
-Para casos en los que el _Challenge_ es necesario, el `status` mostrará el valor `pending`, y el `status_detail` será `pending_challenge`.
+Para casos en que el _Challenge_ es necesario, el `status` mostrará el valor `pending`, y el `status_detail` será `pending_challenge`.
 
 > NOTE
 >

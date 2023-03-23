@@ -73,7 +73,7 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
     "installments": 1,
     "transaction_amount": 100,
     "description": "description",
-    "token": "your_cardtoken",
+    "token": "CARD_TOKEN",
     "three_d_secure_mode": "optional",
     "capture": true,
     "binary_mode": false
