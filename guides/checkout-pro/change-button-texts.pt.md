@@ -67,6 +67,6 @@ Tais exemplos de customização irão gerar o seguinte resultado:
 
 <center>
 
-![cow-text-wallet](cow/cow-text-wallet.pt.jpg)
+![cow-text-wallet](cow/cow-text-wallet.pt.png)
 
 </center>
