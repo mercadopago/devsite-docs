@@ -10,11 +10,9 @@ To connect with Mercado Pago as a provider in your Wix store, follow the steps b
 2. Click the **Connect** button next to "MercadoPago".
 
 
-## Configure the means of payment
+## Connect your production credentials
 
-To finish configuring Mercado Pago as a means of payment, follow the steps below.
-
-1. On the configuration page, fill in the fields with your [production credentials](https://www.mercadopago.com/settings/account/credentials) (note that the credentials requested by Wix are Public Key and Access Token) and confirm the connection.
+To finish configuring Mercado Pago as a means of payment, on the configuration page, fill in the fields with your [production credentials](https://www.mercadopago.com/settings/account/credentials) (note that the credentials requested by Wix are Public Key and Access Token) and confirm the connection.
 
 And that's it! Your integration is set up and you are already offering Mercado Pago as a payment method in your store.
 

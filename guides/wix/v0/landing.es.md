@@ -20,6 +20,27 @@ bullet_section_with_media:
  - image: /cow/cho-pro-landing__pt.png
 ---
 
+----[mlb]----
+---
+bullet_section_with_media: 
+ - title: Personaliza los pagos con Checkout Transparente
+ - type: reversed
+ - message: Integra nuestro Checkout Transparente y haz que el comprador realice todo el proceso de pago dentro del entorno de tu tienda.
+ - image: /shopify/mini-landing-4.png
+---
+------------
+
+----[mla, mlm, mlu, mpe, mco, mlc]----
+---
+bullet_section_with_media: 
+ - title: Personaliza los pagos con Checkout API
+ - type: reversed
+ - message: Integra nuestro Checkout API y haz que el comprador realice todo el proceso de pago dentro del entorno de tu tienda.
+ - image: /shopify/mini-landing-4.png
+---
+
+------------
+
 --- mini_landing_separator ---
 
 
