@@ -24,20 +24,12 @@ Os blocos de código abaixo implementam o checkout em modo **redirect** para out
 
 [[[
 ```Javascript
-const renderComponent = async (bricksBuilder) => {
- const settings = {
+mp.bricks().create("wallet", "wallet_container", {
    initialization: {
-     preferenceId: '<PREFERENCE_ID>',
-     redirectMode: 'blank'
-   }
- };
- const brickController = await bricksBuilder.create(
-   'wallet',
-   'wallet_container',
-   settings
- );
-};
-renderComponent(bricksBuilder);
+       preferenceId: "<PREFERENCE_ID>",
+       redirectMode: "blank"
+   },
+});
 ```
 ```react-jsx
 <Wallet initialization={{ preferenceId: '<PREFERENCE_ID>', redirectMode: 'blank' }} />
@@ -50,20 +42,12 @@ Para definir o modelo de abertura modal, basta alterar a propriedade `redirectMo
 
 [[[
 ```Javascript
-const renderComponent = async (bricksBuilder) => {
- const settings = {
+mp.bricks().create("wallet", "wallet_container", {
    initialization: {
-     preferenceId: '<PREFERENCE_ID>',
-     redirectMode: 'modal'
+       preferenceId: "<PREFERENCE_ID>",
+       redirectMode: "modal"
    },
- };
- const brickController = await bricksBuilder.create(
-   'wallet',
-   'wallet_container',
-   settings
- );
-};
-renderComponent(bricksBuilder);
+});
 ```
 ```react-jsx
 <Wallet initialization={{ preferenceId: '<PREFERENCE_ID>', redirectMode: 'modal' }} />

@@ -171,7 +171,7 @@ curl -X POST \
       "description": "Título do produto",
       "payment_method_id": "oxxo",
       "payer": {
-        "email": "test@test.com",
+        "email": "PAYER_EMAIL_HERE",
       }
 "metadata": {
         "payment_point": "oxxo",

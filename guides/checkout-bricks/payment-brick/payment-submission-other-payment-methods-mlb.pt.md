@@ -209,7 +209,7 @@ curl -X POST \
       "description": "Título do produto",
       "payment_method_id": "bolbradesco",
       "payer": {
-        "email": "test@test.com",
+        "email": "PAYER_EMAIL_HERE",
         "first_name": "Test",
         "last_name": "User",
         "identification": {

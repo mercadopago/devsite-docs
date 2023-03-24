@@ -190,7 +190,7 @@ curl -X POST \
       "description": "Título del producto",
       "payment_method_id": "pix",
       "payer": {
-        "email": "test@test.com",
+        "email": "PAYER_EMAIL_HERE",
         "first_name": "Test",
         "last_name": "User",
         "identification": {

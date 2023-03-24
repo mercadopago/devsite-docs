@@ -147,7 +147,7 @@ curl -X POST \
       "description": "Product title",
       "payment_method_id": "abitab",
       "payer": {
-        "email": "test@test.com",
+        "email": "PAYER_EMAIL_HERE",
       },
 "metadata": {
         "payment_mode": "online",

@@ -12,25 +12,17 @@ Veja abaixo um exemplo de como integrá-las em sua integração.
 
 [[[
 ```Javascript
-const renderComponent = async (bricksBuilder) => {
-const settings = {
-  initialization: {
-    preferenceId: '<PREFERENCE_ID>',
-    redirectMode: 'self'
-  },
-  callbacks: {
-    onReady: () => {},
-    onSubmit: () => {},
-    onError: (error) => console.error(error),
-  },
-};
-  const brickController = await bricksBuilder.create(
-    'wallet',
-    'wallet_container',
-    settings
-  );
-};
-renderComponent (bricksBuilder);
+mp.bricks().create("wallet", "wallet_container", {
+   initialization: {
+       preferenceId: "<PREFERENCE_ID>",
+       redirectMode: "self",
+   },
+   callbacks: {
+       onReady: () => {},
+       onSubmit: () => {},
+       onError: (error) => console.error(error),
+     },
+});
 ```
 ```react-jsx
 <Wallet

@@ -205,7 +205,7 @@ curl -X POST \
           "payment_method_id": "visa",
           "issuer_id": 310,
           "payer": {
-            "email": "test@test.com",
+            "email": "PAYER_EMAIL_HERE",
             "identification": {
                 "number": 19119119100
             }
@@ -229,7 +229,7 @@ curl -X POST \
           "payment_method_id": "visa",
           "issuer_id": 310,
           "payer": {
-            "email": "test@test.com",
+            "email": "PAYER_EMAIL_HERE",
             "identification": {
                 "number": 19119119100,
                 "type": "CPF"

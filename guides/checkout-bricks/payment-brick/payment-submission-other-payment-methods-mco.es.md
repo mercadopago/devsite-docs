@@ -146,7 +146,7 @@ curl -X POST \
       "description": "Titulo del producto",
       "payment_method_id": "efecty",
       "payer": {
-        "email": "test@test.com",
+        "email": "PAYER_EMAIL_HERE",
       },
 "metadata": {
         "payment_mode": "online",

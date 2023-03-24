@@ -14,28 +14,19 @@ To enable color style editing on the checkout and its elements, add the `theme` 
 
 [[[
 ```Javascript
-const renderComponent = async (bricksBuilder) => {
- const settings = {
+mp.bricks().create("wallet", "wallet_container", {
    initialization: {
-     preferenceId: '<PREFERENCE_ID>'
+       preferenceId: "<PREFERENCE_ID>",
    },
    customization: {
-     checkout: {
-       theme: {
-         elementsColor: '#4287F5',
-         headerColor: '#4287F5'
+       checkout: {
+           theme: {
+               elementsColor: "#4287F5",
+               headerColor: "#4287F5",
+           },
        },
-     },
-   };
-   const brickController = await.create(
-     'wallet',
-     'wallet_container',
-     settings
-   );
- };
-
-
-renderComponent(bricksBuilder);
+   },
+});
 ```
 ```react-jsx
 const customization = {

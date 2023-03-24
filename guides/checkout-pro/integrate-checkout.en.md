@@ -398,19 +398,11 @@ For JavaScript/HTML integrations, via CDN, you will still need to create an iden
 
 [[[
 ```Javascript
-const renderComponent = async (bricksBuilder) => {
- const settings = {
-  initialization: {
-   preferenceId: '<PREFERENCE_ID>'
-  },
- };
- const brickController = await bricksBuilder.create(
-  'wallet',
-  'wallet_container',
-  settings
- );
-};
-renderComponent(bricksBuilder);
+mp.bricks().create("wallet", "wallet_container", {
+   initialization: {
+       preferenceId: "<PREFERENCE_ID>",
+   },
+});
 ```
 ```react-jsx
 <Wallet initialization={{ preferenceId: '<PREFERENCE_ID>' }} />

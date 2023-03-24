@@ -374,7 +374,6 @@ Em seguida, inicialize a integração definindo sua [chave pública](/developers
 [[[
 ```Javascript
 const mp = new MercadoPago('YOUR_PUBLIC_KEY');
-const bricksBuilder = mp.bricks();
 ```
 ```react-jsx
 import { initMercadoPago, Wallet } from '@mercadopago/sdk-js'
@@ -398,19 +397,11 @@ Para integrações JavaScript/HTML, via CDN, você vai precisar ainda criar um c
 
 [[[
 ```Javascript
-const renderComponent = async (bricksBuilder) => {
- const settings = {
-  initialization: {
-   preferenceId: '<PREFERENCE_ID>'
-  },
- };
- const brickController = await bricksBuilder.create(
-  'wallet',
-  'wallet_container',
-  settings
- );
-};
-renderComponent(bricksBuilder);
+mp.bricks().create("wallet", "wallet_container", {
+   initialization: {
+       preferenceId: "<PREFERENCE_ID>",
+   },
+});
 ```
 ```react-jsx
 <Wallet initialization={{ preferenceId: '<PREFERENCE_ID>' }} />

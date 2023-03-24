@@ -400,19 +400,11 @@ Para las integraciones de JavaScript/HTML, a través de CDN, deberá crear un co
 
 [[[
 ```Javascript
-const renderComponent = async (bricksBuilder) => {
- const settings = {
-  initialization: {
-   preferenceId: '<PREFERENCE_ID>'
-  },
- };
- const brickController = await bricksBuilder.create(
-  'wallet',
-  'wallet_container',
-  settings
- );
-};
-renderComponent(bricksBuilder);
+mp.bricks().create("wallet", "wallet_container", {
+   initialization: {
+       preferenceId: "<PREFERENCE_ID>",
+   },
+});
 ```
 ```react-jsx
 <Wallet initialization={{ preferenceId: '<PREFERENCE_ID>' }} />
