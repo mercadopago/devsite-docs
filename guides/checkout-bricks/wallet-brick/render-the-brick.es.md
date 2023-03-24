@@ -6,14 +6,13 @@ Para renderizar el Brick, ingrese el código a continuación.
 
 [[[
 ```html
-<div id="paymentBrick_container"></div>
+<div id="walletBrick_container"></div>
 ```
 ```react-jsx
-import { Payment } from '@mercadopago/sdk-react';
+import { Wallet } from '@mercadopago/sdk-react';
 
-<Payment
-   initialization={initialization}
-   customization={customization}
+
+<Wallet
    onSubmit={onSubmit}
    onReady={onReady}
    onError={onError}

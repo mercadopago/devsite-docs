@@ -51,10 +51,13 @@ const renderWalletBrick = async (bricksBuilder) => {
  },
 };
 window.walletBrickController = await bricksBuilder.create(
- 'wallet',
- 'walletBrick_container',
- settings,
-);
+   'wallet',
+   'walletBrick_container',
+   settings,
+  );
+ 
+};
+renderWalletBrick(bricksBuilder);
 ```
 ```react-jsx
 const onSubmit = async (formData) => {

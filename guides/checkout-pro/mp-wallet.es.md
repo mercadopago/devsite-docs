@@ -12,7 +12,7 @@ Es posible pagar con **tarjeta**, **saldo disponible** y **Mercado Crédito** en
 >
 > Al agregar esta opción, no será posible recibir pagos de usuarios no registrados en Mercado Pago, así como tampoco podrá recibir pagos vía efectivo o transferencia.
 
-Sigue los pasos a continuación para configurar el Monedero de Mercado Pago como método de pago.
+Sigue los pasos a continuación para configurar el Cuenta de Mercado Pago como método de pago.
 
 > SERVER_SIDE
 >

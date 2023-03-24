@@ -1,8 +1,8 @@
 # Opening scheme
  
-The opening scheme allows you to define how the checkout will open to the user. By default, checkout pro opens in  **Modal** format, that is, in a window within the website itself, without redirecting to an external page to complete the payment.
- 
-However, it is possible to customize the opening and define the **Redirect** model, in which Checkout Pro opens in a window within the site itself, without redirection.
+The opening scheme allows you to define how the checkout will open for the user. By default, Checkout Pro is opened in a **redirect** way, that is, with user redirection within the same page.
+
+However, it is possible to customize the opening so that it opens on an external page, for example, or define the **modal** model, in which Checkout Pro opens in a window within the site itself, without redirection.
 
 > NOTE
 > 
@@ -85,21 +85,11 @@ To define the direct redirection model, insert the code below in your project in
    <title>Pagar</title>
  </head>
  <body>
-<<<<<<< HEAD
    <a href="YOUR_INIT_POINT"> // Indicate the init_point returned when creating the preference
      <button>
        Pay with Mercado Pago
      </button>
    </a>
  </body>
-=======
-   <a href="YOUR_INIT_POINT"> // Enter the init_point field returned when creating the preference
-   <button>
-     Pay with Mercado Pago
-   </button>
-  
-</a>
-</body>
->>>>>>> 171219afab997d52db0f16ba5a9643a8d2b64ff3
 </html>
 ```

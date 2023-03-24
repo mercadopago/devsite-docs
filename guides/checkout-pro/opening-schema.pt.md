@@ -1,8 +1,8 @@
 # Esquema de abertura
 
-O esquema de abertura permite definir como o checkout será aberto para o usuário. Por padrão, o checkout pro é aberto de forma **Modal**, ou seja, em uma janela dentro do próprio site, sem redirecionamento a uma página externa para concluir o pagamento.
+O esquema de abertura permite definir como o checkout será aberto para o usuário. Por padrão, o Checkout Pro é aberto de forma **redirect**, ou seja, com redirecionamento do usuário dentro da mesma página. 
 
-Contudo, é possível personalizar a abertura e definir o modelo **redirect**, no qual o Checkout Pro é aberto em uma janela dentro do próprio site, sem redirecionamento. 
+Contudo, é possível personalizar a abertura para que a abertura seja em uma página externa, por exemplo, ou definir o modelo **modal**, no qual o Checkout Pro é aberto em uma janela dentro do próprio site, sem redirecionamento. 
 
 > NOTE
 >
@@ -81,7 +81,6 @@ Para definir o modelo de redirect direto, insira o código abaixo em seu projeto
 ```html
 <!doctype html>
 <html>
-<<<<<<< HEAD
  <head>
    <title>Pagar</title>
  </head>
@@ -92,18 +91,5 @@ Para definir o modelo de redirect direto, insira o código abaixo em seu projeto
      </button>
    </a>
  </body>
-=======
-  <head>
-    <title>Pagar</title>
-  </head>
-  <body>
-    <a href="YOUR_INIT_POINT"> // Indique o campo  init_point retornado na criação da preferência
-    <button>
-      Pagar com Mercado Pago
-    </button>
-    
-</a>
-</body>
->>>>>>> 171219afab997d52db0f16ba5a9643a8d2b64ff3
 </html>
 ```

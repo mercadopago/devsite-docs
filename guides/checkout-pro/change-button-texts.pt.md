@@ -8,7 +8,7 @@ O botão de pagamento oferece dois níveis de leitura: o **call to action (botã
 
 <center>
 
-![cow-text-wallet-default](cow/cow-text-wallet-default.pt.jpg)
+![cow-text-wallet-default](cow/cow-text-wallet-default.pt.png)
 
 </center>
 

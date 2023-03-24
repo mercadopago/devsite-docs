@@ -8,7 +8,7 @@ It is possible to customize the look of the payment button by defining visual pr
 
 <center>
 
-![cow-visual-wallet-default](cow/cow-visual-wallet-default.en.jpg)
+![cow-visual-wallet-default](cow/cow-visual-wallet-default.en.png)
 
 </center>
 
@@ -57,6 +57,6 @@ Such customization examples will generate the following result:
 
 <center>
 
-![cow-visual-wallet](cow/cow-visual-wallet.en.jpg)
+![cow-visual-wallet](cow/cow-visual-wallet.en.png)
 
 </center>

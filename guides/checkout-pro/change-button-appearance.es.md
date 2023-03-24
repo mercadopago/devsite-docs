@@ -8,7 +8,7 @@ Es posible personalizar el aspecto del botón de pago definiendo propiedades vis
 
 <center>
 
-![cow-visual-wallet-default](cow/cow-visual-wallet-default.es.jpg)
+![cow-visual-wallet-default](cow/cow-visual-wallet-default.es.png)
 
 </center>
 
@@ -57,6 +57,6 @@ Estos ejemplos de personalización generarán el resultado siguiente:
 
 <center>
 
-![cow-visual-wallet](cow/cow-visual-wallet.es.jpg)
+![cow-visual-wallet](cow/cow-visual-wallet.es.png)
 
 </center>

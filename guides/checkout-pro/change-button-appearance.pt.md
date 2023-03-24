@@ -8,7 +8,7 @@
 
 <center>
 
-![cow-visual-wallet-default](cow/cow-visual-wallet-default.pt.jpg)
+![cow-visual-wallet-default](cow/cow-visual-wallet-default.pt.png)
 
 </center>
 
@@ -57,6 +57,6 @@ Tais exemplos de customização irão gerar o seguinte resultado:
 
 <center>
 
-![cow-visual-wallet](cow/cow-visual-wallet.pt.jpg)
+![cow-visual-wallet](cow/cow-visual-wallet.pt.png)
 
 </center>

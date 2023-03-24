@@ -168,38 +168,4 @@ preference = preference_response["response"]
 >
 > Adicionar checkout
 
-<<<<<<< HEAD
 Os passos para configurar a Conta Mercado Pago (*client-side*) são os mesmos apresentados [nessa seção](/developers/pt/docs/checkout-pro/integrate-checkout-pro). 
-=======
-
-Com a preferência criada, é preciso exibir o botão de pagamento que permitirá o comprador utilizar a carteira Mercado Pago para pagamento. Para exibir o botão de pagamento, utilize o código HTML abaixo.
-
-
-
-[[[
-```html
-<div class="cho-container"></div>
-<script src="https://sdk.mercadopago.com/js/v2"></script>
-<script>
-  const mp = new MercadoPago('PUBLIC_KEY');
-
-  mp.checkout({
-    preference: {
-      id: 'YOUR_PREFERENCE_ID'
-    },
-    render: {
-      container: '.cho-container',
-      label: 'Pagar com Mercado Pago',
-      type: 'wallet',
-    }
-  });
-</script>
-```
-]]]
-
-> WARNING
->
-> Importante
->
-> Os pagamentos criados possuem os seguintes status: "Pendente", "Rejeitado" e "Aprovado". Para acompanhar as atualizações é necessário configurar seu sistema para receber as notificações de pagamentos e outras atualizações de status. Veja [Notificações](/developers/pt/docs/checkout-pro/additional-content/notifications/Introduction) para mais detalhes.
->>>>>>> 171219afab997d52db0f16ba5a9643a8d2b64ff3

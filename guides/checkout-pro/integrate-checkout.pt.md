@@ -353,7 +353,6 @@ preference = preference_response["response"]
 >
 > Adicionar Checkout
 
-<<<<<<< HEAD
 Após ter criado a preferência em seu backend, será necessário instalar o SDK de frontend do Mercado Pago ao seu projeto para adicionar o botão de pagamento.
 
 A instalação é feita, basicamente, em **duas etapas**: incluindo o SDK do Mercado Pago ao projeto com suas credenciais configuradas e iniciando o checkout a partir da preferência gerada anteriormente.
@@ -361,7 +360,7 @@ A instalação é feita, basicamente, em **duas etapas**: incluindo o SDK do Mer
 1. Para incluir o SDK Mercado Pago.js, adicione o código abaixo no HTML do projeto ou instale a biblioteca para ReactJs.
 
 [[[
-```CDN
+```html
 // SDK MercadoPago.js
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
@@ -370,10 +369,10 @@ npm install @mercadopago/sdk-react
 ```
 ]]]
 
-2. Em seguida, inicialize a integração definindo sua [chave pública](/developers/pt/docs/checkout-pro/additional-content/credentials) usando o seguinte código JavaScript.
+Em seguida, inicialize a integração definindo sua [chave pública](/developers/pt/docs/checkout-pro/additional-content/credentials) usando o seguinte código JavaScript.
 
 [[[
-```CDN
+```Javascript
 const mp = new MercadoPago('YOUR_PUBLIC_KEY');
 const bricksBuilder = mp.bricks();
 ```
@@ -385,14 +384,6 @@ initMercadoPago('YOUR_PUBLIC_KEY');
 
 Para integrações JavaScript/HTML, via CDN, você vai precisar ainda criar um container identificador para definir o local que o botão será inserido na tela. A criação do container é feita inserindo um elemento no código HTML da página no qual o componente será renderizado.
 
-=======
-Após ter criado a preferência em seu backend, será necessário instalar o SDK de frontend do Mercado Pago ao seu projeto para adicionar o botão do Checkout Pro.
-
-A instalação é feita em **duas etapas**: incluindo o SDK do Mercado Pago ao projeto com suas credenciais configuradas e iniciando o checkout a partir da preferência gerada anteriormente.
-
-1. Para incluir o SDK Mercado Pago.js, adicione o código abaixo no HTML do projeto.
-
->>>>>>> 171219afab997d52db0f16ba5a9643a8d2b64ff3
 ```html
  <div id="wallet_container"></div>
 ```
@@ -403,11 +394,8 @@ A instalação é feita em **duas etapas**: incluindo o SDK do Mercado Pago ao p
 >
 > O valor exibido na propriedade ID a seguir é apenas um exemplo e pode ser alterado, mas deve sempre corresponder ao ID indicado na etapa de renderização.
 
-<<<<<<< HEAD
-3. Ao finalizar a etapa anterior, **configure as credenciais do SDK** e inicialize seu checkout com o **ID da preferência** previamente criada com o identificador do elemento onde o botão de pagamento deverá ser exibido para caso esteja utilizando a integração JavaScript/HTML ou instanciando o componente para a biblioteca React, conforme os exemplos abaixo.
+2. Ao finalizar a etapa anterior, **configure as credenciais do SDK** e inicialize seu checkout com o **ID da preferência** previamente criada com o identificador do elemento onde o botão de pagamento deverá ser exibido para caso esteja utilizando a integração JavaScript/HTML ou instanciando o componente para a biblioteca React, conforme os exemplos abaixo.
 
-=======
->>>>>>> 171219afab997d52db0f16ba5a9643a8d2b64ff3
 [[[
 ```Javascript
 const renderComponent = async (bricksBuilder) => {
@@ -433,7 +421,7 @@ Em seguida, você poderá observar o botão de pagamento renderizado em sua pág
 
 <center>
 
-![cow-render-wallet](cow/cow-render-wallet.pt.jpg)
+![wallet-render](cow/cow-render-wallet-pt.png)
 
 </center>
 
@@ -445,11 +433,8 @@ Em seguida, você poderá observar o botão de pagamento renderizado em sua pág
 
 Os pagamentos criados possuem os seguintes status: `Pendente`, `Rejeitado` e `Aprovado`. Para acompanhar as atualizações é necessário configurar seu sistema para receber as notificações de pagamentos e outras atualizações de status. Veja [Notificações](/developers/pt/docs/checkout-pro/additional-content/notifications/Introduction) para mais detalhes.
 
-<<<<<<< HEAD
 No exemplo acima, um botão de pagamento será renderizado e ficará responsável por abrir o Checkout Pro. Caso queira personalizar a forma como o checkout será aberto, veja a seção [Esquema de abertura](/developers/pt/docs/checkout-pro/checkout-customization/user-interface/opening-schema)
 
-=======
->>>>>>> 171219afab997d52db0f16ba5a9643a8d2b64ff3
 ## Exemplo de implementação
 
 Confira o [exemplo completo de integração](http://github.com/mercadopago/checkout-payment-sample) no GitHub para **PHP** ou **NodeJS** para fazer o _download_ de um projeto básico de implementação rápida do Checkout Pro.
