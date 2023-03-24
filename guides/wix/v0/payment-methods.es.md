@@ -1,6 +1,6 @@
 # Configurar los tipos de pagos
 
-Con Mercado Pago en Wix, podrás optar por ofrecer pagos redirigiendo a los clientes al sitio de Mercado Pago utilizando el Checkout Pro, o directamente en tu sitio web con----[mla, mlu, mlc, mco, mpe, mlm]----Checkout API------------ ----[mlb]----Checkout Transparente------------. A continuación, conoce cómo configurar estos medios de pago.
+Con Mercado Pago en Wix, podrás optar por ofrecer pagos redirigiendo a los clientes al sitio de Mercado Pago utilizando el Checkout Pro, o directamente en tu sitio web con ----[mla, mlu, mlc, mco, mpe, mlm]----Checkout API----------------[mlb]----Checkout Transparente------------. A continuación, conoce cómo configurar estos medios de pago.
 
 ## Pagos con Checkout Pro 
 
