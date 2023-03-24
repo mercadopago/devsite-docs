@@ -395,6 +395,9 @@ Para integrações JavaScript/HTML, via CDN, você vai precisar ainda criar um c
 
 2. Ao finalizar a etapa anterior, **configure as credenciais do SDK** e inicialize seu checkout com o **ID da preferência** previamente criada com o identificador do elemento onde o botão de pagamento deverá ser exibido para caso esteja utilizando a integração JavaScript/HTML ou instanciando o componente para a biblioteca React, conforme os exemplos abaixo.
 
+2. Ao finalizar a etapa anterior, **inicialize seu checkout utilizando o ID da preferência previamente criada com o identificador do elemento onde o botão deverá ser exibido**, caso esteja utilizando a integração `Javascript/HTML`, ou instanciando o componente, no caso da biblioteca `React`, conforme os exemplos abaixo.
+
+
 [[[
 ```Javascript
 mp.bricks().create("wallet", "wallet_container", {
@@ -416,6 +419,8 @@ Em seguida, você poderá observar o botão de pagamento renderizado em sua pág
 
 </center>
 
+No exemplo acima, um botão de pagamento será renderizado e ficará responsável por abrir o Checkout Pro. Caso queira que a experiência com Checkout Pro seja feita em uma **aba externa ou de forma modal**, veja a seção [Esquema de abertura](/developers/pt/docs/checkout-pro/checkout-customization/user-interface/opening-schema)
+
 > WARNING
 >
 > Importante
@@ -423,8 +428,6 @@ Em seguida, você poderá observar o botão de pagamento renderizado em sua pág
 > É de extrema importância que se atente, durante a criação da preferência, para a configuração das `back_urls` porque elas serão responsáveis por guiar o fluxo de retorno ao seu website quando o checkout for finalizado. É possível definir três URLs de retorno diferentes, para cenários de pagamento pendentes, sucesso ou erro. Para mais informações, veja a seção de [URLs de retorno.](/developers/pt/docs/checkout-pro/checkout-customization/user-interface/redirection)
 
 Os pagamentos criados possuem os seguintes status: `Pendente`, `Rejeitado` e `Aprovado`. Para acompanhar as atualizações é necessário configurar seu sistema para receber as notificações de pagamentos e outras atualizações de status. Veja [Notificações](/developers/pt/docs/checkout-pro/additional-content/notifications/Introduction) para mais detalhes.
-
-No exemplo acima, um botão de pagamento será renderizado e ficará responsável por abrir o Checkout Pro. Caso queira personalizar a forma como o checkout será aberto, veja a seção [Esquema de abertura](/developers/pt/docs/checkout-pro/checkout-customization/user-interface/opening-schema)
 
 ## Exemplo de implementação
 

@@ -1,6 +1,6 @@
 # Conta Mercado Pago
 
-A opção de pagar com a Carteira Mercado Pago, por padrão, é apresentada em todos os Checkouts do Mercado Pago (**Checkout Pro e Link de pagamento**) em combinação com pagamentos de usuários guest (sem login). 
+A opção de pagar com a Conta Mercado Pago, por padrão, é apresentada em todos os Checkouts do Mercado Pago (**Checkout Pro e Link de pagamento**) em combinação com pagamentos de usuários guest (sem login). 
 
 Esta opção permite que usuários cadastrados no Mercado Pago e/ou Mercado Livre façam login e utilizem-se dos métodos disponíveis para efetuar seus pagamentos, além de poder incluir novas opções de pagamento, como cartões de crédito. 
 
@@ -12,7 +12,7 @@ Esta opção permite que usuários cadastrados no Mercado Pago e/ou Mercado Livr
 >
 > Ao adicionar esta opção, não será possível receber pagamentos de usuários não cadastrados no Mercado Pago, assim como não poderá receber pagamentos via dinheiro ou transferência.
 
-Siga as etapas abaixo para configurar a Carteira Mercado Pago como meio de pagamento.
+Siga as etapas abaixo para configurar a Conta Mercado Pago como meio de pagamento.
 
 > SERVER_SIDE
 >

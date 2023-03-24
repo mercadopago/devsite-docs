@@ -394,7 +394,7 @@ For JavaScript/HTML integrations, via CDN, you will still need to create an iden
 >
 > The value displayed in the ID property below is an example only and can be changed, but it must always match the ID indicated in the rendering step.
 
-2. When you finish the previous step, configure the SDK credentials and initialize your checkout with the ID of the previously created with the identifier of the element where the payment button should be displayed in case you are using the JavaScript/HTML integration or instantiating the component for the React library, according to the examples below.
+2. At the end of the previous step, **initialize your checkout using the ID of the previously created preference with the identifier of the element where the button should be displayed**, if you are using the `Javascript/HTML` integration, or by instantiating the component, in the case from the `React` library, as shown in the examples below.
 
 [[[
 ```Javascript
@@ -417,6 +417,8 @@ You will then be able to observe the payment button rendered on your page.
 
 </center>
 
+In the example above, a payment button will be rendered and will be responsible for opening Checkout Pro. If you want the experience with Checkout Pro to be done in an **external tab or in a modal way**, check the section [Opening Schema](/developers/en/docs/checkout-pro/checkout-customization/user-interface/opening-schema)
+
 > WARNING
 >
 > Important
@@ -424,8 +426,6 @@ You will then be able to observe the payment button rendered on your page.
 > It is extremely important to pay attention, when creating the preference, to the configuration of the `back_urls` because they will be responsible for guiding the return flow to your website when the checkout is completed. It is possible to define three different return URLs, for payment pending, success or error scenarios. For more information, see the [Return URLs](/developers/en/docs/checkout-pro/checkout-customization/user-interface/redirection) section.
 
 When creating a payment it is possible to receive 3 different statuses: `Pending`, `Rejected` and `Approved`. To keep up with updates, you need to configure your system to receive payment notifications and other status updates. See [Notifications](/developers/en/docs/checkout-pro/additional-content/notifications/Introduction) for more details.
-
-In the example above, a payment button will be rendered and will be responsible for opening Checkout Pro. If you want to customize the way the checkout will be opened, see the section [Opening Schema](/developers/en/docs/checkout-pro/checkout-customization/user-interface/opening-schema)
 
 ## Implementation example
 

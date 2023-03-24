@@ -396,7 +396,7 @@ Para las integraciones de JavaScript/HTML, a través de CDN, deberá crear un co
 >
 > El valor que se muestra en la propiedad de ID a continuación es solo un ejemplo y se puede cambiar, pero siempre debe coincidir con el ID indicado en el paso de renderizado. 
 
-2. Cuando termines el paso anterior, **configura las credenciales del SDK** e inicia tu checkout con el **ID de la preferencia** creado previamente con el identificador del elemento donde se debe mostrar el botón de pago en caso de que esté utilizando la integración de JavaScript/HTML o instanciando el componente para la biblioteca React, según los ejemplos a continuación.
+2. Al finalizar el paso anterior, **inicializa tu checkout usando el ID de la preferencia previamente creada con el identificador del elemento donde se debe mostrar el botón**, si estás usando la integración `Javascript/HTML`, o por instanciando el componente, en el caso de la biblioteca `React`, como se muestra en los ejemplos a continuación.
 
 [[[
 ```Javascript
@@ -419,6 +419,8 @@ A continuación, podrá observar el botón de pago que se muestra en su página.
 
 </center>
 
+En el ejemplo anterior, se mostrará un botón de pago y será responsable por abrir el Checkout Pro. Si desea que la experiencia con Checkout Pro se realice en una **pestaña externa o de manera modal**, consulte la sección [Esquema de apertura](/developers/es/docs/checkout-pro/checkout-customization/user-interface/opening-schema)
+
 > WARNING
 >
 > Importante
@@ -426,8 +428,6 @@ A continuación, podrá observar el botón de pago que se muestra en su página.
 > Es sumamente importante prestar atención, al crear la preferencia, a la configuración de las `back_urls` porque serán las encargadas de guiar el flujo de regreso a su sitio web cuando se complete el pago. Es posible definir tres URL de retorno diferentes, para escenarios de pago pendiente, éxito o error. Para obtener más información, consulte la sección [URL de retorno.](/developers/es/docs/checkout-pro/checkout-customization/user-interface/redirection).\
 
 Al crear un pago es posible recibir 3 estados diferentes: `Pendiente`, `Rechazado` y `Aprobado`. Para mantenerse al día con las actualizaciones, debes configurar tu sistema para recibir notificaciones de pago y otras actualizaciones de estado. Consulta [Notificaciones](/developers/es/docs/checkout-pro/additional-content/notifications/Introduction) para obtener más detalles.
-
-En el ejemplo anterior, se mostrará un botón de pago y será responsable por abrir el Checkout Pro. Si deseas personalizar la forma en que se abrirá el Checkout, consulta la sección [Esquema de apertura](/developers/es/docs/checkout-pro/checkout-customization/user-interface/opening-schema)
 
 ## Ejemplo de implementación
 
