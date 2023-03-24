@@ -393,10 +393,7 @@ Para integrações JavaScript/HTML, via CDN, você vai precisar ainda criar um c
 >
 > O valor exibido na propriedade ID a seguir é apenas um exemplo e pode ser alterado, mas deve sempre corresponder ao ID indicado na etapa de renderização.
 
-2. Ao finalizar a etapa anterior, **configure as credenciais do SDK** e inicialize seu checkout com o **ID da preferência** previamente criada com o identificador do elemento onde o botão de pagamento deverá ser exibido para caso esteja utilizando a integração JavaScript/HTML ou instanciando o componente para a biblioteca React, conforme os exemplos abaixo.
-
 2. Ao finalizar a etapa anterior, **inicialize seu checkout utilizando o ID da preferência previamente criada com o identificador do elemento onde o botão deverá ser exibido**, caso esteja utilizando a integração `Javascript/HTML`, ou instanciando o componente, no caso da biblioteca `React`, conforme os exemplos abaixo.
-
 
 [[[
 ```Javascript
