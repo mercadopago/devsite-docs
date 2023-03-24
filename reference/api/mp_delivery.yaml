@@ -33,11 +33,11 @@ paths:
             example:  41034141533
         - name: x-time-zone
           in: header
-          description: Timezone of the times shown on the JSON.
+          description: Timezone of the times shown on the JSON. For example: GMT-3.
           x-description-i18n:
-            eng: Timezone of the times shown on the JSON.
-            spa: Zona horaria de las horas que se muestran en el JSON.
-            por: Fuso horário dos horários mostrados no JSON.
+            eng: Timezone of the times shown on the JSON. For example: GMT-3.
+            spa: Zona horaria de las horas que se muestran en el JSON. Por ejemplo: GMT-3.
+            por: Fuso horário dos horários mostrados no JSON. Por exemplo: GMT-3.
           required: true
           schema:
             type: string
