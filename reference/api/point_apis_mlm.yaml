@@ -235,11 +235,11 @@ paths:
                   example: 1500
                   required: true
                   minimum: 1
-                  description: A positive integer representing how much to charge. The value must have two decimal places in the integer part (e.g., 175 to charge $1.75). The value must be between [500, 20000000] (e.g., a value to charge between $5,00 to $200.000,00 MXN)
+                  description: A positive integer representing how much to charge. The value must have two decimal places in the integer part (e.g., 175 to charge $1.75). 
                   x-description-i18n:
-                    eng: A positive integer representing how much to charge. The value must have two decimal places in the integer part (e.g., 175 to charge $1.75). The value must be between [500, 20000000] (e.g., a value to charge between $5,00 to $200.000,00 MXN)
-                    spa: Un valor entero positivo que representa cuánto cobrar. El valor debe tener dos decimales en la parte entera (por ejemplo, 175 para cobrar $1,75). El valor debe estar entre [500, 20000000] (por ejemplo, un valor a cobrar entre $5,00 to $200.000,00 MXN)
-                    por: Um número inteiro positivo que representa quanto carregar. O valor deve ter duas casas decimais na parte inteira (por exemplo, 175 para cobrar R$ 1,75). O valor deve estar entre [500, 20000000] (por exemplo, um recebível entre $5,00 to $200.000,00 MXN)
+                    eng: A positive integer representing how much to charge. The value must have two decimal places in the integer part (e.g., 175 to charge $1.75). 
+                    spa: Un valor entero positivo que representa cuánto cobrar. El valor debe tener dos decimales en la parte entera (por ejemplo, 175 para cobrar $1,75). 
+                    por: Um número inteiro positivo que representa quanto carregar. O valor deve ter duas casas decimais na parte inteira (por exemplo, 175 para cobrar R$ 1,75). 
                 additional_info:
                   type: object
                   required: true
