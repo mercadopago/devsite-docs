@@ -41,6 +41,12 @@ Esta é a primeira etapa de uma estrutura completa de código que deverá ser se
 
 A captura dos dados do cartão é feita através do CardForm da biblioteca MercadoPago.js. Nosso CardForm se conectará ao seu formulário de pagamento HTML, facilitando a obtenção e validação de todos os dados necessários para processar o pagamento.
 
+> WARNING
+>
+> Importante
+>
+> O cardtoken pode ser usado **somente uma vez** e expira dentro de **7 dias**.
+
 Para adicionar o formulário de pagamento, insira o HTML abaixo diretamente no projeto. 
 
 [[[

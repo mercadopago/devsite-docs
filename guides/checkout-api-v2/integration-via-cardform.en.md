@@ -42,6 +42,12 @@ const mp = new MercadoPago("YOUR_PUBLIC_KEY");
 
 The capture of card data is done through the CardForm of the MercadoPago.js library. Our CardForm will connect to your HTML payment form, making it easy to obtain and validate all the data needed to process the payment.
 
+> WARNING
+>
+> Important
+>
+> The cardtoken can **only be used once** and expires within **7 days**.
+
 To add the payment form, insert the HTML below directly into the project.
 
 [[[
