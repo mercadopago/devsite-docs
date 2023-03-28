@@ -68,7 +68,7 @@ The table below shows the available payment methods:
 | creditCard | string[] <br><br> To obtain available debit card amounts, check out the API [Get payment methods](/developers/en/reference/payment_methods/_payment_methods/get). |
 | debitCard | string[] <br><br> To obtain available credit card amounts, check out the API [Get payment methods](/developers/en/reference/payment_methods/_payment_methods/get). |
 | mercadoPago | ['wallet_purchase'] |
-| ticket | ['redpagos', 'abitab'] |
+| ticket | ['efecty'] |
 
 ------------
 ----[mlu]---- 
@@ -78,7 +78,7 @@ The table below shows the available payment methods:
 | creditCard | string[] <br><br> To obtain available debit card amounts, check out the API [Get payment methods](/developers/en/reference/payment_methods/_payment_methods/get). |
 | debitCard | string[] <br><br> To obtain available credit card amounts, check out the API [Get payment methods](/developers/en/reference/payment_methods/_payment_methods/get). |
 | mercadoPago | ['wallet_purchase'] |
-| ticket | ['efecty'] |
+| ticket | ['redpagos', 'abitab'] |
 
 ------------
 ----[mpe]---- 

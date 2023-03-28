@@ -117,7 +117,7 @@ const customization = {
 
 Para cambiar los textos de los métodos de pago fuera de línea (tickets, Pix y ATM, por ejemplo), dentro del objeto `paymentMethods`, use el patrón `{paymentMethodId}{ValueProp/Title} `.
 
-> NOTA
+> NOTE
 >
 > Importante
 >

@@ -38,13 +38,16 @@ O resultado de renderizar o Brick deve ser como na imagem abaixo.
 
 </center>
 ------------
+
 ----[mlm]----
 <center>
 
 ![payment-Brick-layout-mlm](checkout-bricks/payment-brick-layout-mlm-pt.gif)
 
 </center>
-----[mpe, mco, mlu, mcl]----
+------------
+
+----[mpe, mco, mlu, mlc]----
 <center>
 
 ![payment-brick-layout-all](checkout-bricks/payment-brick-layout-all-pt.gif)

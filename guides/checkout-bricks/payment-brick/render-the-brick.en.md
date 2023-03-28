@@ -44,7 +44,7 @@ The result of rendering the Brick should look like the image below.
 ![payment-Brick-layout-mlm](checkout-bricks/payment-brick-layout-mlm-en.gif)
 
 </center>
-----[mpe, mco, mlu, mcl]----
+----[mpe, mco, mlu, mlc]----
 <center>
 
 ![payment-brick-layout-all](checkout-bricks/payment-brick-layout-all-en.gif)

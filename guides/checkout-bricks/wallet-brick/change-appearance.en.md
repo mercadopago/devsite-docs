@@ -37,9 +37,11 @@ const settings = {
 ```react-jsx
 const customization = {
  visual: {
-   hideValueProp: true
+   buttonBackground: 'black',
+   borderRadius: '16px',
  }
 };
+
 ```
 ]]]
 
