@@ -27,7 +27,7 @@ npm install Mercadopago
 ```
 ```java
 ===
-To install the SDK in your [Maven](http://maven.apache.org/install.html) project, you must add the following dependency to your <code>pom.xml</code> file and run the code < code>maven install</code> in your terminal command line:
+To install the SDK in your [Maven](http://maven.apache.org/install.html) project, you must add the following dependency to your <code>pom.xml</code> file and run the code <code>maven install</code> in your terminal command line:
 ===
 <dependency>
 <groupId>com.mercadopago</groupId>
@@ -384,9 +384,11 @@ initMercadoPago('YOUR_PUBLIC_KEY');
 
 For JavaScript/HTML integrations, via CDN, you will still need to create an identifier container to define the location where the button will be inserted on the screen. The creation of the container is done by inserting an element in the HTML code of the page in which the component will be rendered.
 
+[[[
 ```html
  <div id="wallet_container"></div>
 ```
+]]]
 
 > NOTE
 >

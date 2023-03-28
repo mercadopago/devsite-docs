@@ -9,61 +9,62 @@ Creae la configuración de inicio de Brick
 const renderPaymentBrick = async (bricksBuilder) => {
  const settings = {
    initialization: {
-   /*
-     "amount" es el monto total a pagar por todos los medios de pago
-     con excepción de la Cuenta de Mercado Pago y Cuotas sin tarjeta de crédito, las cuales tienen su valor de procesamiento determinado en el backend a través del "preferenceId"
-   */
-   amount: 100,
-   preferenceId: "<PREFERENCE_ID>",
- },
- customization: {
-   paymentMethods: {
-     ticket: "all",
-     bankTransfer: "all",
-     creditCard: "all",
-     debitCard: "all",
-     mercadoPago: "all",
-   },
- },
- callbacks: {
-   onReady: () => {
      /*
-     Callback llamado cuando el Brick está listo.
-     Aquí puede ocultar cargamentos de su sitio, por ejemplo.
+      "amount" es el monto total a pagar por todos los medios de pago con excepción de la Cuenta de Mercado Pago y Cuotas sin tarjeta de crédito, las cuales tienen su valor de procesamiento determinado en el backend a través del "preferenceId"
      */
+     amount: 100,
+     preferenceId: "<PREFERENCE_ID>",
    },
-   onSubmit: ({ selectedPaymentMethod, formData }) => {
-     // callback llamado al hacer clic en el botón enviar datos
-     return new Promise((resolve, reject) => {
-       fetch("/process_payment", {
-         method: "POST",
-         headers: {
-           "Content-Type": "application/json",
-         },
+   customization: {
+     paymentMethods: {
+       ticket: "all",
+       bankTransfer: "all",
+       creditCard: "all",
+       debitCard: "all",
+       mercadoPago: "all",
+     },
+   },
+   callbacks: {
+     onReady: () => {
+       /*
+        Callback llamado cuando el Brick está listo.
+        Aquí puede ocultar cargamentos de su sitio, por ejemplo.
+       */
+     },
+     onSubmit: ({ selectedPaymentMethod, formData }) => {
+       // callback llamado al hacer clic en el botón enviar datos
+       return new Promise((resolve, reject) => {
+         fetch("/process_payment", {
+           method: "POST",
+           headers: {
+             "Content-Type": "application/json",
+           },
            body: JSON.stringify(formData),
          })
            .then((response) => response.json())
            .then((response) => {
-           // recibir el resultado del pago
-           resolve();
-         })
-         .catch((error) => {
-           // manejar la respuesta de error al intentar crear el pago
-           reject();
-         });
-     });
+             // recibir el resultado del pago
+             resolve();
+           })
+           .catch((error) => {
+             // manejar la respuesta de error al intentar crear el pago
+             reject();
+           });
+       });
+     },
+     onError: (error) => {
+       // callback llamado para todos los casos de error de Brick
+       console.error(error);
+     },
    },
-   onError: (error) => {
-     // callback llamado para todos los casos de error de Brick
-     console.error(error);
-   },
- },
+ };
+ window.paymentBrickController = await bricksBuilder.create(
+   "payment",
+   "paymentBrick_container",
+   settings
+ );
 };
-window.paymentBrickController = await bricksBuilder.create(
- "payment",
- "paymentBrick_container",
- settings
-);
+renderPaymentBrick(bricksBuilder);
 ```
 ```react-jsx
 const initialization = {
@@ -91,6 +92,7 @@ const onSubmit = async (
      },
      body: JSON.stringify(formData),
    })
+     .then((response) => response.json())
      .then((response) => {
        // recibir el resultado del pago
        resolve();
@@ -122,61 +124,62 @@ const onReady = async () => {
 const renderPaymentBrick = async (bricksBuilder) => {
  const settings = {
    initialization: {
-   /*
-     "amount" es el monto total a pagar por todos los medios de pago
-     con excepción de la Cuenta de Mercado Pago y Cuotas sin tarjeta de crédito, las cuales tienen su valor de procesamiento determinado en el backend a través del "preferenceId"
-   */
-   amount: 100,
-   preferenceId: "<PREFERENCE_ID>",
- },
- customization: {
-   paymentMethods: {
-     atm: "all",
-     ticket: "all",
-     creditCard: "all",
-     debitCard: "all",
-     mercadoPago: "all",
-   },
- },
- callbacks: {
-   onReady: () => {
      /*
-     Callback llamado cuando el Brick está listo.
-     Aquí puede ocultar cargamentos de su sitio, por ejemplo.
+      "amount" es el monto total a pagar por todos los medios de pago con excepción de la Cuenta de Mercado Pago y Cuotas sin tarjeta de crédito, las cuales tienen su valor de procesamiento determinado en el backend a través del "preferenceId"
      */
+     amount: 100,
+     preferenceId: "<PREFERENCE_ID>",
    },
-   onSubmit: ({ selectedPaymentMethod, formData }) => {
-     // callback llamado al hacer clic en el botón enviar datos
-     return new Promise((resolve, reject) => {
-       fetch("/process_payment", {
-         method: "POST",
-         headers: {
-           "Content-Type": "application/json",
-         },
+   customization: {
+     paymentMethods: {
+       atm: "all",
+       ticket: "all",
+       creditCard: "all",
+       debitCard: "all",
+       mercadoPago: "all",
+     },
+   },
+   callbacks: {
+     onReady: () => {
+       /*
+        Callback llamado cuando el Brick está listo.
+        Aquí puede ocultar cargamentos de su sitio, por ejemplo.
+       */
+     },
+     onSubmit: ({ selectedPaymentMethod, formData }) => {
+       // callback llamado al hacer clic en el botón enviar datos
+       return new Promise((resolve, reject) => {
+         fetch("/process_payment", {
+           method: "POST",
+           headers: {
+             "Content-Type": "application/json",
+           },
            body: JSON.stringify(formData),
          })
            .then((response) => response.json())
            .then((response) => {
-           // recibir el resultado del pago
-           resolve();
-         })
-         .catch((error) => {
-           // manejar la respuesta de error al intentar crear el pago
-           reject();
-         });
-     });
+             // recibir el resultado del pago
+             resolve();
+           })
+           .catch((error) => {
+             // manejar la respuesta de error al intentar crear el pago
+             reject();
+           });
+       });
+     },
+     onError: (error) => {
+       // callback llamado para todos los casos de error de Brick
+       console.error(error);
+     },
    },
-   onError: (error) => {
-     // callback llamado para todos los casos de error de Brick
-     console.error(error);
-   },
- },
+ };
+ window.paymentBrickController = await bricksBuilder.create(
+   "payment",
+   "paymentBrick_container",
+   settings
+ );
 };
-window.paymentBrickController = await bricksBuilder.create(
- "payment",
- "paymentBrick_container",
- settings
-);
+renderPaymentBrick(bricksBuilder);
 ```
 ```react-jsx
 const initialization = {
@@ -204,6 +207,7 @@ const onSubmit = async (
      },
      body: JSON.stringify(formData),
    })
+     .then((response) => response.json())
      .then((response) => {
        // recibir el resultado del pago
        resolve();
@@ -228,178 +232,68 @@ const onReady = async () => {
 ]]]
 
 ------------
-----[mpe]----
-
-[[[
-```Javascript
-const renderPaymentBrick = async (bricksBuilder) => {
- const settings = {
-   initialization: {{
-   /*
-     "amount" es el monto total a pagar por todos los medios de pago
-     con excepción de la Cuenta de Mercado Pago y Cuotas sin tarjeta de crédito, las cuales tienen su valor de procesamiento determinado en el backend a través del "preferenceId"
-   */
-   amount: 100,
-   preferenceId: "<PREFERENCE_ID>",
- },
- customization: {
-   paymentMethods: {
-     creditCard: "all",
-     debitCard: "all",
-     mercadoPago: ["wallet_purchase"],
-     atm: "all",
-   },
- },
- callbacks: {
-   onReady: () => {
-    /*
-     Callback llamado cuando el Brick está listo.
-     Aquí puede ocultar cargamentos de su sitio, por ejemplo.
-    */
-   },
-   onSubmit: ({ selectedPaymentMethod, formData }) => {
-     // callback llamado al hacer clic en el botón enviar datos
-     return new Promise((resolve, reject) => {
-       fetch("/process_payment", {
-         method: "POST",
-         headers: {
-           "Content-Type": "application/json",
-         },
-           body: JSON.stringify(formData),
-         })
-           .then((response) => response.json())
-           .then((response) => {
-           // recibir el resultado del pago
-           resolve();
-         })
-         .catch((error) => {
-           // manejar la respuesta de error al intentar crear el pago
-           reject();
-         });
-     });
-   },
-   onError: (error) => {
-     // callback llamado para todos los casos de error de Brick
-     console.error(error);
-   },
- },
-};
-window.paymentBrickController = await bricksBuilder.create(
- "payment",
- "paymentBrick_container",
- settings
-);
-```
-```react-jsx
-const initialization = {
- amount: 100,
- preferenceId: "<PREFERENCE_ID>",
-};
-const customization = {
- paymentMethods: {
-   creditCard: "all",
-   debitCard: "all",
-   mercadoPago: ["wallet_purchase"],
-   atm: "all",
- },
-};
-const onSubmit = async (
- { selectedPaymentMethod, formData }
-) => {
- // callback llamado al hacer clic en el botón enviar datos
- return new Promise((resolve, reject) => {
-   fetch("/process_payment", {
-     method: "POST",
-     headers: {
-       "Content-Type": "application/json",
-     },
-     body: JSON.stringify(formData),
-   })
-     .then((response) => {
-       // recibir el resultado del pago
-       resolve();
-     })
-     .catch((error) => {
-       // manejar la respuesta de error al intentar crear el pago
-       reject();
-     });
- });
-};
-const onError = async (error) => {
- // callback llamado para todos los casos de error de Brick
- console.error(error);
-};
-const onReady = async () => {
- /*
-   Callback llamado cuando el Brick está listo.
-   Aquí puede ocultar cargamentos de su sitio, por ejemplo.
- */
-};
-```
-]]]
-
-------------
-----[mla, mlc, mco, mlu]----
+----[mla, mlu, mpe, mco]----
 
 [[[
 ```Javascript
 const renderPaymentBrick = async (bricksBuilder) => {
  const settings = {
    initialization: {
-   /*
-     "amount" es el monto total a pagar por todos los medios de pago
-     con excepción de la Cuenta de Mercado Pago y Cuotas sin tarjeta de crédito, las cuales tienen su valor de procesamiento determinado en el backend a través del "preferenceId"
-   */
-   amount: 100,
-   preferenceId: "<PREFERENCE_ID>",
- },
- customization: {
-   paymentMethods: {
-     ticket: "all",
-     creditCard: "all",
-     debitCard: "all",
-     mercadoPago: "all",
-   },
- },
- callbacks: {
-   onReady: () => {
      /*
-     Callback llamado cuando el Brick está listo.
-     Aquí puede ocultar cargamentos de su sitio, por ejemplo.
+      "amount" es el monto total a pagar por todos los medios de pago con excepción de la Cuenta de Mercado Pago y Cuotas sin tarjeta de crédito, las cuales tienen su valor de procesamiento determinado en el backend a través del "preferenceId"
      */
+     amount: 100,
+     preferenceId: "<PREFERENCE_ID>",
    },
-   onSubmit: ({ selectedPaymentMethod, formData }) => {
-     // callback llamado al hacer clic en el botón enviar datos
-     return new Promise((resolve, reject) => {
-       fetch("/process_payment", {
-         method: "POST",
-         headers: {
-           "Content-Type": "application/json",
-         },
+   customization: {
+     paymentMethods: {
+       ticket: "all",
+       creditCard: "all",
+       debitCard: "all",
+       mercadoPago: "all",
+     },
+   },
+   callbacks: {
+     onReady: () => {
+       /*
+        Callback llamado cuando el Brick está listo.
+        Aquí puede ocultar cargamentos de su sitio, por ejemplo.
+       */
+     },
+     onSubmit: ({ selectedPaymentMethod, formData }) => {
+       // callback llamado al hacer clic en el botón enviar datos
+       return new Promise((resolve, reject) => {
+         fetch("/process_payment", {
+           method: "POST",
+           headers: {
+             "Content-Type": "application/json",
+           },
            body: JSON.stringify(formData),
          })
            .then((response) => response.json())
            .then((response) => {
-           // recibir el resultado del pago
-           resolve();
-         })
-         .catch((error) => {
-           // manejar la respuesta de error al intentar crear el pago
-           reject();
-         });
-     });
+             // recibir el resultado del pago
+             resolve();
+           })
+           .catch((error) => {
+             // manejar la respuesta de error al intentar crear el pago
+             reject();
+           });
+       });
+     },
+     onError: (error) => {
+       // callback llamado para todos los casos de error de Brick
+       console.error(error);
+     },
    },
-   onError: (error) => {
-     // callback llamado para todos los casos de error de Brick
-     console.error(error);
-   },
- },
+ };
+ window.paymentBrickController = await bricksBuilder.create(
+   "payment",
+   "paymentBrick_container",
+   settings
+ );
 };
-window.paymentBrickController = await bricksBuilder.create(
- "payment",
- "paymentBrick_container",
- settings
-);
+renderPaymentBrick(bricksBuilder);
 ```
 ```react-jsx
 const initialization = {
@@ -426,6 +320,7 @@ const onSubmit = async (
      },
      body: JSON.stringify(formData),
    })
+     .then((response) => response.json())
      .then((response) => {
        // recibir el resultado del pago
        resolve();
@@ -446,6 +341,122 @@ const onReady = async () => {
    Aquí puede ocultar cargamentos de su sitio, por ejemplo.
  */
 };
+```
+]]]
+
+------------
+
+----[mlc]----
+
+[[[
+```Javascript
+
+const renderPaymentBrick = async (bricksBuilder) => {
+ const settings = {
+   initialization: {
+     /*
+      "amount" é o valor total a ser pago por todos os meios de pagamento
+    com exceção da Conta Mercado Pago e Parcelamento sem cartão de crédito, que tem seu valor de processamento determinado no backend através do "preferenceId"
+     */
+     amount: 100,
+     preferenceId: "<PREFERENCE_ID>",
+   },
+   customization: {
+     paymentMethods: {
+       creditCard: "all",
+       debitCard: "all",
+       mercadoPago: "all",
+     },
+   },
+   callbacks: {
+     onReady: () => {
+       /*
+        Callback chamado quando o Brick estiver pronto.
+        Aqui você pode ocultar loadings do seu site, por exemplo.
+       */
+     },
+     onSubmit: ({ selectedPaymentMethod, formData }) => {
+       // callback chamado ao clicar no botão de submissão dos dados
+       return new Promise((resolve, reject) => {
+         fetch("/process_payment", {
+           method: "POST",
+           headers: {
+             "Content-Type": "application/json",
+           },
+           body: JSON.stringify(formData),
+         })
+           .then((response) => response.json())
+           .then((response) => {
+             // receber o resultado do pagamento
+             resolve();
+           })
+           .catch((error) => {
+             // lidar com a resposta de erro ao tentar criar o pagamento
+             reject();
+           });
+       });
+     },
+     onError: (error) => {
+       // callback chamado para todos os casos de erro do Brick
+       console.error(error);
+     },
+   },
+ };
+ window.paymentBrickController = await bricksBuilder.create(
+   "payment",
+   "paymentBrick_container",
+   settings
+ );
+};
+renderPaymentBrick(bricksBuilder);
+```
+```react-jsx
+
+const initialization = {
+ amount: 100,
+ preferenceId: "<PREFERENCE_ID>",
+};
+const customization = {
+ paymentMethods: {
+   creditCard: "all",
+   debitCard: "all",
+   mercadoPago: "all",
+ },
+};
+const onSubmit = async (
+ { selectedPaymentMethod, formData }
+) => {
+ // callback llamado al hacer clic en el botón enviar datos
+ return new Promise((resolve, reject) => {
+   fetch("/process_payment", {
+     method: "POST",
+     headers: {
+       "Content-Type": "application/json",
+     },
+     body: JSON.stringify(formData),
+   })
+     .then((response) => response.json())
+     .then((response) => {
+       // recibir el resultado del pago
+       resolve();
+     })
+     .catch((error) => {
+       // manejar la respuesta de error al intentar crear el pago
+       reject();
+     });
+ });
+};
+const onError = async (error) => {
+ // callback llamado para todos los casos de error de Brick
+ console.log(error);
+};
+const onReady = async () => {
+ /*
+   Callback llamado cuando el Brick está listo.
+   Aquí puede ocultar cargamentos de su sitio, por ejemplo.
+ */
+};
+
 ```
 ]]]
 

@@ -187,7 +187,7 @@ Além de exibir o status do pagamento, o Status Screen Brick também exibirá o 
 
 <center>
 
-![payment-submission-other-payment-methods-status-mpe](checkout-bricks/payment-submission-other-payment-methods-status-mpe-pt.jpg)
+![payment-submission-other-payment-methods-status-mpe](checkout-bricks/payment-submission-other-payment-methods-status-mpe-pt.png)
 
 </center>
 
