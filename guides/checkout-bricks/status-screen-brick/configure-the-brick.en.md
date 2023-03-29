@@ -4,28 +4,31 @@ Create Brick's startup configuration.
 
 [[[
 ```Javascript
-const settings = {
- initialization: {
-   paymentId: '<PAYMENT_ID>', // payment id to show
- },
- callbacks: {
-   onReady: () => {
-     /*
-       Callback called when Brick is ready.
-       Here you can hide loadings from your site, for example.
-     */
+const renderStatusScreenBrick = async (bricksBuilder) => {
+ const settings = {
+   initialization: {
+     paymentId: '<PAYMENT_ID>', // payment id to show
    },
-   onError: (error) => {
-     // callback called for all Brick error cases
-     console.error(error);
+   callbacks: {
+     onReady: () => {
+       /*
+         Callback called when Brick is ready.
+         Here you can hide loadings from your site, for example.
+       */
+     },
+     onError: (error) => {
+       // callback called for all Brick error cases
+       console.error(error);
+     },
    },
- },
+  };
+  window.statusScreenBrickController = await bricksBuilder.create(
+   'statusScreen',
+   'statusScreenBrick_container',
+   settings,
+  );  
 };
-window.statusScreenBrickController = await bricksBuilder.create(
- 'statusScreen',
- 'statusScreenBrick_container',
- settings,
-);
+renderStatusScreenBrick(bricksBuilder);
 ```
 ```react-jsx
 const initialization = {

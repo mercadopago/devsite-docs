@@ -4,28 +4,31 @@ Creae la configuración de inicio de Brick
 
 [[[
 ```Javascript
-const settings = {
- initialization: {
-   paymentId: '<PAYMENT_ID>', // id de pago para mostrar
- },
- callbacks: {
-   onReady: () => {
-     /*
-       Callback llamado cuando Brick está listo.
-       Aquí puede ocultar cargamentos de su sitio, por ejemplo.
-     */
+const renderStatusScreenBrick = async (bricksBuilder) => {
+ const settings = {
+   initialization: {
+     paymentId: '<PAYMENT_ID>', // id de pago para mostrar
    },
-   onError: (error) => {
-     // callback llamado solicitada para todos los casos de error de Brick
-     console.error(error);
+   callbacks: {
+     onReady: () => {
+       /*
+         Callback llamado cuando Brick está listo.
+         Aquí puede ocultar cargamentos de su sitio, por ejemplo.
+       */
+     },
+     onError: (error) => {
+       // callback llamado solicitada para todos los casos de error de Brick
+       console.error(error);
+     },
    },
- },
+  };
+  window.statusScreenBrickController = await bricksBuilder.create(
+   'statusScreen',
+   'statusScreenBrick_container',
+   settings,
+  );  
 };
-window.statusScreenBrickController = await bricksBuilder.create(
- 'statusScreen',
- 'statusScreenBrick_container',
- settings,
-);
+renderStatusScreenBrick(bricksBuilder);
 ```
 ```react-jsx
 const initialization = {

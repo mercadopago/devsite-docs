@@ -84,6 +84,7 @@ const onSubmit = async (formData) => {
      },
      body: JSON.stringify(yourRequestBodyHere),
    })
+     .then((response) => response.json())
      .then((response) => {
        // resolver la promesa con el ID de la preferencia
        resolve(response.preference_id);

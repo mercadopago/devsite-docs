@@ -184,6 +184,13 @@ After the payment creation in the backend using the Mercado Pago SDK, use the **
 
 In addition to displaying the payment status, Status Screen Brick will also display the barcode to copy and paste or scan in order for the buyer to pay. Learn how simple it is to integrate [click here](/developers/en/docs/checkout-bricks/status-screen-brick/default-rendering).
 
+<center>
+
+![payment-submission-other-payment-methods-status-mco](checkout-bricks/payment-submission-other-payment-methods-status-mco-en.png)
+
+</center>
+
+
 > NOTE
 >
 > Important

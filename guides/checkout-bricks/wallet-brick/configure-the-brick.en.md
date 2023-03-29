@@ -84,6 +84,7 @@ const onSubmit = async (formData) => {
      },
      body: JSON.stringify(yourRequestBodyHere),
    })
+     .then((response) => response.json())
      .then((response) => {
        // resolve the promise with the ID of the preference
        resolve(response.preference_id);
@@ -104,8 +105,8 @@ const onError = async (error) => {
 
 const onReady = async () => {
  /*
-  Callback called when Brick is ready.
-  Here you can hide loadings from your site, for example.
+   Callback called when Brick is ready.
+   Here you can hide loadings from your site, for example. 
  */
 };
 ```
