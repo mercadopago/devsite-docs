@@ -476,7 +476,7 @@ const onReady = async () => {
 >
 > Si es necesario desmontar y volver a montar un Brick, se recomienda destruir la instancia actual y generar una nueva. Para hacerlo, usa el método *unmount* disponible en el *controller* de Brick, en este caso: `window.paymentBrickController.unmount()`.
 
-Para utilizar un método de pago (`paymentMethods`) del tipo "mercadoPago", se debe enviar una preferencia durante la inicialización del Brick, reemplazando el valor `<PREFERENCE_ID>` por el ID de la preferencia creada. Las instrucciones para crear una preferencia se encuentran en la sección [Crear preferencia](/developers/es/docs/checkout-bricks/payment-brick/default-rendering/create-preference).
+Para utilizar un método de pago (`paymentMethods`) del tipo "mercadoPago", se debe enviar una preferencia durante la inicialización del Brick, reemplazando el valor `<PREFERENCE_ID>` por el ID de la preferencia creada. Las instrucciones para crear una preferencia se encuentran en la sección [Habilitar pago con Mercado Pago](/developers/es/docs/checkout-bricks/payment-brick/default-rendering#bookmark_habilitar_pago_con_mercado_pago).
 
 ## Renderizar el Brick
 
