@@ -23,7 +23,7 @@ Para generar el código de autorización, es preciso cumplir con los requisitos 
 > Recuerda que utilizarás información sensible de tus vendedores. Asegúrate de guardarla de forma segura. No la utilices en la URL de autenticación y gestiona todo el proceso únicamente desde tu servidor.
  
 1. Edita tu aplicación para que contenga tu Redirect URL. Consulta [Editar aplicación](/developers/es/guides/additional-content/dashboard/applications).
-2. Envíe la URL de autenticación al vendedor cuya cuenta desea vincular a la suya con los siguientes campos:
+2. Envía la URL de autenticación con los siguientes campos al vendedor con cuya cuenta deseas vincular  la tuya:
 
    |Descripción|URL| 
    |---|---|
