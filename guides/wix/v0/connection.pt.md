@@ -1,4 +1,4 @@
-# Conectar e configurar o Mercado Pag em uma loja Wix
+# Conectar e configurar o Mercado Pago em uma loja Wix
 
 A conexão e configuração do Mercado Pago como meio de pagamento na sua loja Wix é feita em duas etapas simples e rápidas. Na primeira, é feita a conexão do Mercado Pago como meio de pagamento na sua loja Wix e na segunda, a configuração do conector com as suas credenciais de produção.
 

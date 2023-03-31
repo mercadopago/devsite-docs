@@ -1,4 +1,4 @@
-# Connect and configure Mercado Pag in a Wix store
+# Connect and configure Mercado Pago in a Wix store
 
 Connecting and configuring Mercado Pago as a payment method in your Wix store can be done in two simple and quick steps. In the first one, you connect Mercado Pago as a payment method in your Wix store, and in the second one, you configure the connector with your production credentials.
 
