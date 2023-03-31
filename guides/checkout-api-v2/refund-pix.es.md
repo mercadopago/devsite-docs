@@ -1,6 +1,6 @@
 # Reembolso de transacciones con Pix
 
-Al recibir pagos con Pix, es posible que surja la necesidad de realizar operaciones de reembolso. En caso de ser necesario, es posible que los reembolsos permanezcan en proceso (contingencia) debido a algún error durante el procesamiento de la transacción, por ejemplo, en la comunicación con el Bacen.
+Al recibir pagos con Pix, es posible que necesites realizar operaciones de reembolso. En caso de ser necesario,  los reembolsos pueden permanecer en proceso (contingencia) debido a algún error durante el procesamiento de la transacción, por ejemplo, en la comunicación con el Bacen.
 
 Por defecto, estos errores son reportados a quien hizo la solicitud como un `400 - Bad Request`, lo que puede dificultar la comprensión sobre el status en el que se encuentra el reembolso hasta que el pago pase al status `refunded` (en caso de ser aprobado).
 
