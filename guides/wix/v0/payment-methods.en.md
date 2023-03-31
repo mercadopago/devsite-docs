@@ -52,5 +52,5 @@ To activate this type of payment, do the following.
 
 <p>&nbsp;</p>
 
-![Activating Checkout API](/images/wix/activar-choapi.gif)
+![Activating Checkout API](/images/wix/conexion-choapi.gif)
 <p>&nbsp;</p>

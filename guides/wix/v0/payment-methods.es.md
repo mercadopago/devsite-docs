@@ -53,7 +53,7 @@ Para activar este tipo de pago, sigue los pasos a continuación.
 
 <p>&nbsp;</p>
 
-![Activating Checkout API](/images/wix/activar-choapi.gif)
+![Activating Checkout API](/images/wix/conexion-choapi.gif)
 <p>&nbsp;</p>
 
 
