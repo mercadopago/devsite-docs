@@ -6,7 +6,8 @@
 
 Por defecto, el Brick muestra la fecha de la transacción al usuario, sin embargo, si lo desea, es posible ocultar estos datos a través de la configuración a continuación.
 
-```javascript
+[[[
+```Javascript
 const settings = {
  initialization: {
    paymentId: 100, // id de pago generado por Mercado Pago
@@ -26,3 +27,11 @@ const settings = {
  }
 };
 ```
+```react-jsx
+const customization = {
+ visual: {
+   hideTransactionDate: true
+ }
+};
+```
+]]]

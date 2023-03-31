@@ -16,7 +16,8 @@ If the customized texts are larger than the available space, the displayed text 
 
 Customizable texts are displayed below.
 
-```javascript
+[[[
+```Javascript
 const settings = {
   "customization": {
       "visual": {
@@ -50,40 +51,6 @@ const settings = {
                "selectInstallments": "",
                "selectIssuerBank": "",
                "formSubmit": "",
-               "payerFirstName": {
-               "placeholder": "",
-                   "label": ""
-               },
-               "payerLastName": {
-                   "placeholder": "",
-                   "label": ""
-               },
-               "zipCode": {
-                   "placeholder": "",
-                   "label": ""
-               },
-               "addressState": {
-                   "placeholder": "",
-                   "label": ""
-               },
-               "addressCity": {
-                   "placeholder": "",
-                   "label": ""
-               },
-               "addressNeighborhood": {
-                   "placeholder": "",
-                   "label": ""
-               },
-               "addressStreet": {
-                   "placeholder": "",
-                   "label": ""
-               },
-               "addressNumber": {
-                   "label": ""
-               },
-               "addressComplement": {
-                   "label": ""
-               },
                "paymentMethods": {
                    "newCreditCardTitle": "",
                    "creditCardTitle": "",
@@ -93,14 +60,60 @@ const settings = {
                    "debitCardValueProp": "",
                    "ticketTitle": "",
                    "ticketValueProp": "",
-                   "bankTransferTitle": "",
-                   "bankTransferValueProp": "",
                  }
            }
       },
   }
 };
 ```
+```react-jsx
+const customization = {
+ visual: {
+   texts: {
+     formTitle: 'string',
+     emailSectionTitle: 'string',
+     installmentsSectionTitle: 'string',
+     cardholderName: {
+       label: 'string',
+       placeholder: 'string'
+     },
+     email: {
+       label: 'string',
+       placeholder: 'string'
+     },
+     cardholderIdentification: {
+       label:'string'
+     },
+     cardNumber: {
+       label: 'string',
+       placeholder: 'string'
+     },
+     expirationDate: {
+       label: 'string',
+       placeholder: 'string'
+     },
+     securityCode: {
+       label: 'string' ,
+       placeholder: 'string'
+     },
+     selectInstallments: 'string' ,
+     selectIssuerBank: 'string' ,
+     formSubmit: 'string' ,    
+     paymentMethods: {
+       newCreditCardTitle: 'string',
+       creditCardTitle: 'string',
+       creditCardValueProp: 'string',
+       newDebitCardTitle: 'string',
+       debitCardTitle: 'string',
+       debitCardValueProp: 'string',
+	     ticketTitle: 'string',
+       ticketValueProp: 'string',
+     }
+   }
+ }
+};
+```
+]]]
 
 To change the texts of offline payment methods (tickets, Pix and ATM, for example), within the `paymentMethods` object, use the pattern `{paymentMethodId}{ValueProp/Title} `.
 

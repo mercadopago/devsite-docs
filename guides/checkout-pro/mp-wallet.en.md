@@ -6,16 +6,13 @@ This option allows users registered in Mercado Pago and/or Mercado Livre to log 
 
 It is possible to pay with **card**, **available balance** and **Mercado Crédito** in a safe and optimized environment, increasing the chances of converting sales, in addition to allowing the seller to only offer payments with wallet. With this, the option to pay without logging in will not exist, however, it will contribute to an increase in the conversion of payments.
 
-
 > WARNING
 >
 > Important
 >
 > By adding this option, it will not be possible to receive payments from users not registered in Mercado Pago, as well as you will not be able to receive payments via cash or bank transfer.
 
-
 Follow the steps below to configure the Mercado Pago Wallet as a payment method.
-
 
 > SERVER_SIDE
 >
@@ -23,11 +20,9 @@ Follow the steps below to configure the Mercado Pago Wallet as a payment method.
 >
 > Create preference
 
-
 If you are a user and want all your payments to be made via Wallet, you can determine this via an attribute in the preferences API. To create a preference, use one of the SDKs below.
 
 > In addition to the SDKs, it is also possible to create a preference through the preferences API. For that, send a **POST** with the parameter `purpose` and the value `wallet_purchase` to the endpoint [/checkout/preferences](/developers/en/reference/preferences/_checkout_preferences/post) and execute the request or, if you prefer, use one of the SDKs below.
-
 
 
 [[[
@@ -165,6 +160,7 @@ preference = preference_response["response"]
 > Important
 >
 > The `unit_price` value must be an integer.
+
 ------------
 
 > CLIENT_SIDE
@@ -173,35 +169,4 @@ preference = preference_response["response"]
 >
 > Add checkout
 
-
-With the preference created, it is necessary to display the payment button that will allow the buyer to use the Mercado Pago Wallet for payment. To display the payment button, use the HTML available below.
-
-
-
-[[[
-```html
-<div class="cho-container"></div>
-<script src="https://sdk.mercadopago.com/js/v2"></script>
-<script>
-const mp = new MercadoPago('PUBLIC_KEY');
-
-mp.checkout({
-preference: {
-id: 'YOUR_PREFERENCE_ID'
-},
-render: {
-container: '.cho-container',
-label: 'Pay with Mercado Pago',
-type: 'wallet',
-}
-});
-</script>
-```
-]]]
-
-> WARNING
->
-> Important
->
-> The created payments have the following status: `Pending`, `Rejected` and `Approved`. To keep up with updates, you need to configure your system to receive payment notifications and other status updates. Check [Notifications](/developers/en/docs/checkout-pro/additional-content/notifications/Introduction) for more details.
-
+The steps to configure the Mercado Pago Wallet (*client-side*) are the same as those presented [in this section](/developers/en/docs/checkout-pro/integrate-checkout-pro).

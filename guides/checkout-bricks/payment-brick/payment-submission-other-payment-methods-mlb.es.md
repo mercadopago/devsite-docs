@@ -2,7 +2,7 @@
 >
 > h1
 >
-> Enviar el pago (otros medios de pago)
+> Otros medios de pago
 
 Para configurar pagos con **boleto bancario** o pago en **agencia de lotería**, envía un POST con los siguientes parámetros al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) y ejecuta la solicitud o, si lo prefieres, utiliza uno de nuestros SDKs indicados a continuación.
 
@@ -209,7 +209,7 @@ curl -X POST \
       "description": "Título del producto",
       "payment_method_id": "bolbradesco",
       "payer": {
-        "email": "test@test.com",
+        "email": "PAYER_EMAIL_HERE",
         "first_name": "Test",
         "last_name": "User",
         "identification": {
@@ -260,7 +260,11 @@ Después de crear el pago desde backend con el SDK de Mercado Pago, use el **id*
 
 Además de mostrar el estado del pago, Status Screen Brick también mostrará el código de barras del ticket para copiar y pegar o para que el comprador lo escanee y pague. Descubra lo sencillo que es integrar [haga clic aquí](/developers/es/docs/checkout-bricks/status-screen-brick/configure-integration).
 
-![payment-submission-other-payment-methods-status-mlb-es](checkout-bricks/payment-submission-other-payment-methods-status-mlb-es.jpg)
+<center>
+
+![payment-submission-other-payment-methods-status-mlb](checkout-bricks/payment-submission-other-payment-methods-status-mlb-es.jpg)
+
+</center>
 
 > NOTE
 >

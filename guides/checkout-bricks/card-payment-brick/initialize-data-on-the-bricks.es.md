@@ -13,6 +13,7 @@
 | Tipo | string |
 | Observaciones | Cuando se envía un correo electrónico válido, el campo de correo electrónico se oculta. |
 
+[[[
 ```javascript
 const settings = {
    initialization: {
@@ -24,6 +25,16 @@ const settings = {
    ...
 }
 ```
+```react-jsx
+const initialization = {
+ ...,
+ payer: {
+   ...,
+   email: 'jose@maria.com',
+ },
+};
+```
+]]]
 
 ## Iniciar Brick con documento
 
@@ -34,6 +45,7 @@ const settings = {
 | Tipo | string |
 | Observaciones | Cuando se envía un número de identificación válido y un tipo de identificación correspondiente, el campo del documento del pagador ya está automaticamente completado. |
 
+[[[
 ```javascript
 const settings = {
    initialization: {
@@ -48,3 +60,16 @@ const settings = {
    ...
 }
 ```
+```react-jsx
+const initialization = {
+ ...,
+ payer: {
+   ...,
+   identification: {
+     type: 'string',
+     number: 'string',
+   },
+ },
+};
+```
+]]]

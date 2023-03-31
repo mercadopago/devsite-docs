@@ -2,7 +2,7 @@
 >
 > h1
 >
-> Enviar el pago (Pix)
+> Pix
 
 Al finalizar la inclusión del formulario de pago, es necesario enviar el email del comprador, el tipo y número de documento, el medio de pago utilizado (pix) y el detalle del importe.
 
@@ -190,7 +190,7 @@ curl -X POST \
       "description": "Título del producto",
       "payment_method_id": "pix",
       "payer": {
-        "email": "test@test.com",
+        "email": "PAYER_EMAIL_HERE",
         "first_name": "Test",
         "last_name": "User",
         "identification": {
@@ -255,4 +255,8 @@ Además de mostrar el estado del pago, Status Screen Brick también mostrará el
 >
 > Si usó las credenciales de producción de un usuario de prueba para generar el pago Pix, se producirá un error al hacer clic en el botón que lo lleva a la página del QR Code. Para verlo correctamente, simplemente elimine el fragmento `/sandbox` de la URL de la página abierta.
 
+<center>
+
 ![payment-submission-pix-status](checkout-bricks/payment-submission-pix-status-es.jpg)
+
+</center>
