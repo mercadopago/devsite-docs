@@ -5,7 +5,7 @@ Ao receber pagamentos com Pix, é possível que surja a necessidade de realizar 
 
 Por padrão, esses erros são reportados a quem fez a requisição como um `400 - Bad Request`, o que pode dificultar a compreensão sobre o status em que se encontra o reembolso até que o pagamento passe ao status `refunded` (caso seja aprovado). 
 
-Para obter uma resposta mais clara,, basta enviar o header `X-Render-In-Process-Refunds: true`  junto da requisição de criação do reembolso, dessa forma, a resposta incluirá o status  `201 - Created` e o campo `status` com valor `in_process`. 
+Para obter uma resposta mais clara, basta enviar o header `X-Render-In-Process-Refunds: true`  junto da requisição de criação do reembolso, dessa forma, a resposta incluirá o status  `201 - Created` e o campo `status` com valor `in_process`. 
 
 O header também pode ser incluído em requisições para [obter a lista de reembolsos](/developers/pt/reference/chargebacks/_payments_id_refunds/get) e para a [busca de um reembolso específico](/developers/pt/reference/chargebacks/_payments_id_refunds_refund_id/get). Nesses casos, quando for aplicável, a resposta trará o mesmo valor de status mencionado anteriormente.
 
