@@ -15,8 +15,7 @@ Este medio de pago adicionará Checkout API, el medio de pago que te permitirá 
 1. Para activar el checkout, deberás hacer clic en el botón slider.
 2. En el campo **Título en el checkout de la tienda** puedes elegir el nombre con el que se mostrará este medio de pago en la tienda. Por ejemplo, puedes nombrarlo **Tarjeta de crédito o débito**.
 3. La opción **Convertir moneda** permite que el valor de la moneda configurada en WooCommerce sea compatible al valor de la moneda que usas en Mercado Pago. Si deseas activarla, solo deber hacer clic en el botón slider. 
-4. En **Medios de pago**, podrás seleccionar qué tipos de medio de pago deseas recibir a través del ----[mlb]----Checkout Transparente----------------[mla, mlm, mpe, mco, mlu, mlc]----Checkout API------------. Marca la opción "Todos los medios de pago" para recibir todas las opciones de pago disponible, o bien marca solo las que quieras recibir.
-5. **Compras con tarjetas guardadas o saldo en Mercado Pago** es una funcionalidad para quienes quienes tienen tarjetas guardadas o saldo en su cuenta de Mercado Pago puedan comprar sin la necesidad de completar datos. Esta opción mostrará un botón especial en tu cuenta y derivará a los clientes al checkout de Mercado Pago para completar la transacción. Si deseas ofrecerla, actívala con el botón slider.
+4. **Compras con tarjetas guardadas o saldo en Mercado Pago** es una funcionalidad para que quienes tienen tarjetas guardadas o saldo en su cuenta de Mercado Pago puedan comprar sin la necesidad de completar datos. Esta opción mostrará un botón especial en tu cuenta y derivará a los clientes al checkout de Mercado Pago para completar la transacción. Si deseas ofrecerla, actívala con el botón slider.
 
 Para guardar los cambios en la configuración, haz clic en el botón **Guardar cambios**.
 
