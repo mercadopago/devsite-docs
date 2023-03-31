@@ -8,7 +8,8 @@ Com o Mercado Pago Checkout Pro, **o comprador será direcionado da loja para o 
 
 Para ativar este tipo de pagamento, siga os passos abaixo.
 
-1. Em seu site Wix, acesse a seção **Configurações > Aceitar pagamentos > Configurar Mercado Pago**.
+1. No seu site Wix, vá para o painel de configurações localizado à esquerda da tela e vá para **Configurações > Aceitar pagamentos**.
+1. No "Mercado Pago", clique no botão **Gerenciar**.
 1. Na seção **Formas de pagamento disponíveis no Mercado Pago**, ative a opção "MercadoPago".
 
 ----[mlb]----
@@ -18,7 +19,8 @@ O Checkout Transparente do Mercado Pago permite que todo o processo de compra se
 
 Para ativar este tipo de pagamento, siga os passos abaixo.
 
-1. Em seu site Wix, acesse a seção **Configurações > Aceitar pagamentos > Configurar Mercado Pago**.
+1. No seu site Wix, vá para o painel de configurações localizado à esquerda da tela e vá para **Configurações > Aceitar pagamentos**.
+1. No "Mercado Pago", clique no botão **Gerenciar**.
 1. Na seção **Formas de pagamento disponíveis no Mercado Pago**, ative a opção "Cartões de crédito".
 
 > WARNING
@@ -36,7 +38,8 @@ A API Checkout do Mercado Pago permite que você conclua todo o processo de comp
 
 Para ativar este tipo de pagamento, siga os passos abaixo.
 
-1. Em seu site Wix, acesse a seção **Configurações > Aceitar pagamentos > Configurar Mercado Pago**.
+1. No seu site Wix, vá para o painel de configurações localizado à esquerda da tela e vá para **Configurações > Aceitar pagamentos**.
+1. No "Mercado Pago", clique no botão **Gerenciar**.
 1. Na seção **Formas de pagamento disponíveis no Mercado Pago**, ative a opção "Cartões de crédito".
 
 > WARNING
@@ -46,3 +49,8 @@ Para ativar este tipo de pagamento, siga os passos abaixo.
 > No momento não é possível configurar pagamentos parcelados através da API do Checkout.
 
 ------------
+
+<p>&nbsp;</p>
+
+![Activating Checkout API](/images/wix/activar-choapi.gif)
+<p>&nbsp;</p>

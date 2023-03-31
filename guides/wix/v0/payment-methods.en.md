@@ -8,7 +8,8 @@ With Mercado Pago Checkout Pro, **the buyer will be directed from the store to t
 
 To activate this type of payment, follow the steps below.
 
-1. On your Wix site, go to the **Settings > Accept Payments > Configure Mercado Pago** section.
+1. On your Wix site, go to the settings panel located on the left of the screen and go to **Settings > Accept Payments**.
+1. In "Mercado Pago", click the **Manage** button.
 1. In the **Payment methods available with Mercado Pago** section, activate the "MercadoPago" option.
 
 ----[mlb]----
@@ -18,7 +19,8 @@ Mercado Pago's Transparent Checkout allows the entire purchase process to be com
 
 To activate this type of payment, do the following.
 
-1. On your Wix site, go to the **Settings > Accept Payments > Configure Mercado Pago** section.
+1. On your Wix site, go to the settings panel located on the left of the screen and go to **Settings > Accept Payments**.
+1. In "Mercado Pago", click the **Manage** button.
 1. In the **Payment methods available with Mercado Pago** section, activate the "Credit cards" option.
 
 > WARNING
@@ -36,7 +38,8 @@ The Mercado Pago API Checkout allows you to complete the entire purchase process
 
 To activate this type of payment, do the following.
 
-1. On your Wix site, go to the **Settings > Accept Payments > Configure Mercado Pago** section.
+1. On your Wix site, go to the settings panel located on the left of the screen and go to **Settings > Accept Payments**.
+1. In "Mercado Pago", click the **Manage** button.
 1. In the **Payment methods available with Mercado Pago** section, activate the "Credit cards" option.
 
 > WARNING
@@ -46,3 +49,8 @@ To activate this type of payment, do the following.
 > At the moment, it is not possible to configure payments in installments through the Checkout API.
 
 ------------
+
+<p>&nbsp;</p>
+
+![Activating Checkout API](/images/wix/activar-choapi.gif)
+<p>&nbsp;</p>

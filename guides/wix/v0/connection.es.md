@@ -6,38 +6,17 @@ La conexión y configuración de Mercado Pago como medio de pago en tu tienda Wi
 
 Para realizar la conexión con Mercado Pago como proveedor en tu tienda Wix, sigue los pasos a continuación.
 
-1. Ve a la pestaña **Aceptar pagos** en el panel de control de tu sitio Wix.
-2. Haz clic en el botón **Conectar** junto a "MercadoPago".
+1. En el panel de configuraciones de tu sitio Wix, situado a la izquierda de la pantalla, ingresa en **Ajustes**.
+2. Dentro de la pantalla de Ajustes, haz clic en el botón **Aceptar pagos**.
+3. Encuentra la opción **Mercado Pago** y gaz clic en el botón **Conectar**.
 
 ## Conectar tus credenciales de producción
 
-Para finalizar la configuración de Mercado Pago como medio de pago, ve a la página de configuración y completa los campos con tus [credenciales de producción](https://www.mercadopago.com/settings/account/credentials) (ten en cuenta que las credenciales solicitadas por Wix son Public Key y Access Token) y confirma la conexión.
+Para finalizar la configuración de Mercado Pago como medio de pago, en la página de configuración del plugin, completa los campos con tus [credenciales de producción](https://www.mercadopago.com/settings/account/credentials) y confirma la conexión.
 
 Y listo, tu integración está configurada y ya estás ofreciendo Mercado Pago como método de pago en tu tienda.
 
-----[mla, mlc, mlu, mpe]----
 <p>&nbsp;</p>
 
-![Setting active in Wix](/images/wix/wix_pt_connect_configuration_mla_mlc_mlu_mpe.gif)
+![Setting active in Wix](/images/wix/conectar-wix.gif)
 <p>&nbsp;</p>
-------------
-
-----[mlb]----
-<p>&nbsp;</p>
-
-![Setting connect in Wix](/images/wix/wix_pt_connect_configuration_mlb.gif)
-<p>&nbsp;</p>
-------------
-
-----[mco]----
-<p>&nbsp;</p>
-
-![Setting active in Wix](/images/wix/wix_pt_connect_configuration_mco.gif)
-<p>&nbsp;</p>
-------------
-
-----[mlm]----
-<p>&nbsp;</p>
-
-![Setting active in Wix](/images/wix/wix_pt_connect_configuration_mlm.gif)
-------------
