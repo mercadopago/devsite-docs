@@ -8,8 +8,30 @@ Confira o diagrama abaixo que ilustra como funciona o fluxo de criação do agre
 
 ![Criar agreement](/images/wallet-connect/new-create-agreement.pt.png)
 
-Para criar um _agreement_, envie um **POST** com os atributos necessários ao endpoint [/v2/wallet_connect/agreements](/developers/pt/reference/wallet_connect/_wallet_connect_agreements/post) e execute a requisição. Na resposta, atente-se a dois parâmetros que serão necessários para obter a aprovação do pagador: `agreement_uri` e `return_uri`. 
+Para criar um _agreement_, envie um **POST** com os atributos necessários ao endpoint [/v2/wallet_connect/agreements](/developers/pt/reference/wallet_connect/_wallet_connect_agreements/post) e execute a requisição ou, se preferir, utilize o `curl` abaixo e atente-se à resposta da requisição que retornará **dois parâmetros** obrigatórios para obter a aprovação do pagador: `agreement_uri` e `return_uri`. 
 
+[[[
+```curl
+
+curl -X POST \
+      'https://api.mercadopago.com/v2/wallet_connect/agreements?client.id=2451675580092619' \
+      -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
+      -H 'Content-Type: application/json' \ 
+      -H 'x-platform-id: YOUR_ACCESS_TOKEN' \
+      -d '{
+  "return_url": "https://www.mercadopago.com/",
+  "external_flow_id": "EXTERNAL_FLOW_ID",
+  "external_user": {
+    "id": "usertest",
+    "description": "Test account"
+  },
+  "agreement_data": {
+    "validation_amount": 3.14,
+    "description": "Test agreement"
+  }
+}'
+```
+]]]
 
 > WARNING
 >
