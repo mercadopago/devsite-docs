@@ -212,4 +212,6 @@ Ten en cuenta que tu cliente no podrá utilizar los valores autorizados hasta qu
 > Importante
 >
 > La reserva tendrá una validez de 5 días. Si no la capturas hasta ese momento, será cancelada. Además, debes guardar el ID del pago para poder finalizar el proceso.
+
 ------------
+
