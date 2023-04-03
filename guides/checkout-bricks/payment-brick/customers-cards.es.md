@@ -20,6 +20,16 @@ settings = {
    ...
 }
 ```
+```react-jsx
+const initialization = {
+ ...,
+ payer: {
+   ...,
+   customerId: '209277402-FqRqgEc3XItrxs',
+   cardsIds: [ '1518023392627', '1518023332143' ]
+ },
+};
+```
 ]]]
 
 Con solo pasar estas dos propiedades, Brick le dará automáticamente al usuario la opción de realizar el pago con sus tarjetas guardadas.

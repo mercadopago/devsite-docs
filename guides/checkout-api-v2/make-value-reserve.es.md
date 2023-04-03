@@ -4,7 +4,6 @@
       - mlb
       - mlm
       - mpe
-      - mlu
 ---
 
 # Reservar fondos
@@ -153,17 +152,19 @@ curl -X POST \
     -H 'content-type: application/json' \
     -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
     'https://api.mercadopago.com/v1/payments' \
-    -d '{
-          "transaction_amount": 100,
-          "token": "ff8080814c11e237014c1ff593b57b4d",
-          "description": "Título del producto",
-          "installments": 1,
-          "payment_method_id": "visa",
-          "payer": {
-            "email": "test_user_19653727@testuser.com"
-          },
-          "capture": false
-    }'
+    -d '
+{
+   "transaction_amount":100,
+   "token":"ff8080814c11e237014c1ff593b57b4d",
+   "description":"Product title",
+   "installments":1,
+   "payment_method_id":"visa",
+   "payer":{
+      "email":"test_user_3931694@testuser.com"
+   },
+   "capture":false
+}'
+
 ```
 ]]]
 
@@ -184,9 +185,10 @@ La respuesta indica que el pago se encuentra autorizado y pendiente de captura.
 ]]]
 
 
-Además, también es posible resultar como `rechazado` o `pendiente`. En caso de que retorne como `pendiente`, deberás prestar atención a las notificaciones para saber cuál es el estado final del pago.
+Además, también es posible que retorne como `rechazado` o `pendiente`. En caso de que retorne como `pendiente`, deberás prestar atención a las notificaciones para saber cuál es el estado final del pago.
 
-Ten en cuenta que los fondos autorizados no podrán ser utilizados por su cliente hasta que sean capturados. Recomendamos capturar lo antes posible.
+Ten en cuenta que tu cliente no podrá utilizar los valores autorizados hasta que se capturen. Recomendamos realizar la captura lo antes posible.
+
 
 ----[mla, mlm]----
 > WARNING
@@ -210,4 +212,6 @@ Ten en cuenta que los fondos autorizados no podrán ser utilizados por su client
 > Importante
 >
 > La reserva tendrá una validez de 5 días. Si no la capturas hasta ese momento, será cancelada. Además, debes guardar el ID del pago para poder finalizar el proceso.
+
 ------------
+

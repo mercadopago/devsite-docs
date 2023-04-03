@@ -13,6 +13,7 @@
 | Type | string |
 | Comments | When a valid email is sent, the email field is hidden. |
 
+[[[
 ```javascript
 const settings = {
    initialization: {
@@ -24,6 +25,16 @@ const settings = {
    ...
 }
 ```
+```react-jsx
+const initialization = {
+ ...,
+ payer: {
+   ...,
+   email: 'jose@maria.com',
+ },
+};
+```
+]]]
 
 ## Initiate Brick with document
 
@@ -34,6 +45,7 @@ const settings = {
 | Type | string |
 | Comments | When a valid identification.number and a corresponding identification.type are sent, the payer document field is automatically filled in. |
 
+[[[
 ```javascript
 const settings = {
    initialization: {
@@ -48,3 +60,16 @@ const settings = {
    ...
 }
 ```
+```react-jsx
+const initialization = {
+ ...,
+ payer: {
+   ...,
+   identification: {
+     type: 'string',
+     number: 'string',
+   },
+ },
+};
+```
+]]]

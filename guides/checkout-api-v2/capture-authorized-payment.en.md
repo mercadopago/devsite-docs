@@ -4,7 +4,6 @@ sites_supported:
 - mlb
 - mlm
 - mpe
-- mlu
 ---
 
 # Capture authorized payment
@@ -124,9 +123,16 @@ To capture an amount lower than the one reserved, send the value to be captured 
 >
 > Important
 >
-> Only available for Visa, Cabal, Master and American Express.
+> This feature is only available for Visa, Cabal, Master and American Express flag cards.
 ------------
 
+----[mlb, mlu, mlc, mco, mpe, mlm]----
+> WARNING
+>
+> Important
+>
+> It is not possible to capture an amount greater than the reserved amount, for that it is necessary to cancel the reservation and generate a new one.
+------------
  
 [[[
 ```php
@@ -227,6 +233,7 @@ The answer will yield the following result
 }
 ```
 ]]]
+
 
 > NOTE
 >

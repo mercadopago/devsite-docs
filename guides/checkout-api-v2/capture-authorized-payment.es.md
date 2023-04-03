@@ -4,7 +4,6 @@
       - mlb
       - mlm
       - mpe
-      - mlu 
 ---
 
 # Capturar pago autorizado
@@ -118,7 +117,16 @@ Para capturar un monto inferior al reservado, envía el valor a capturar al par�
 >
 > Importante
 >
-> Solo disponible para Visa, Cabal, Master y American Express.
+> * Esta función solo está disponible para tarjetas de bandera Visa, Cabal, Master y American Express.
+> * No es posible captar un monto mayor al monto reservado. En ese caso, deberás cancelar la reserva y generar una nueva con el monto que deseas captar.
+------------
+
+----[mlb, mlu, mlc, mco, mpe, mlm]----
+> WARNING
+>
+> Importante
+>
+> No es posible captar un monto mayor al monto reservado. En ese caso, deberás cancelar la reserva y generar una nueva con el monto que deseas captar.
 ------------
 
  

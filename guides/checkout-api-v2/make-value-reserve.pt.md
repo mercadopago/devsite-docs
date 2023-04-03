@@ -153,17 +153,19 @@ curl -X POST \
     -H 'content-type: application/json' \
     -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
     'https://api.mercadopago.com/v1/payments' \
-    -d '{
-          "transaction_amount": 100,
-          "token": "ff8080814c11e237014c1ff593b57b4d",
-          "description": "Título do produto",
-          "installments": 1,
-          "payment_method_id": "visa",
-          "payer": {
-            "email": "test_user_19653727@testuser.com"
-          },
-          "capture": false
-    }'
+    -d '
+{
+   "transaction_amount":100,
+   "token":"ff8080814c11e237014c1ff593b57b4d",
+   "description":"Product title",
+   "installments":1,
+   "payment_method_id":"visa",
+   "payer":{
+      "email":"test_user_3931694@testuser.com"
+   },
+   "capture":false
+}'
+
 ```
 ]]]
 
@@ -185,8 +187,9 @@ A resposta indica que o pagamento se encontra autorizado e pendente de captura.
 ```
 ]]]
 
-Além disso, também é possível retornar como rejeitado ou pendente. Tenha em conta que os valores autorizados não poderão ser utilizados pelo seu cliente até que não sejam capturados. Recomendamos realizar a captura o quanto antes.
+Além disso, também é possível retornar como `rejeitado` ou `pendente`. Caso retorne como 'pendente', você deverá ficar atento às notificações para saber qual o status final do pagamento.
 
+Tenha em conta que os valores autorizados não poderão ser utilizados pelo seu cliente até que não sejam capturados. Recomendamos realizar a captura o quanto antes.
 
 ----[mla, mlm]----
 > WARNING
@@ -211,11 +214,3 @@ Além disso, também é possível retornar como rejeitado ou pendente. Tenha em 
 >
 > A reserva terá validade de 5 dias. Se não capturá-la nesse período, será cancelada. Além disso, é necessário guardar o ID do pagamento para poder finalizar o processo.
 ------------
-
-> NEXT_STEP_CARD_PT
->
-> Capturar pagamento autorizado
->
-> Conheça as formas disponíveis para captura de um pagamento autorizado.
->
-> [Capturar pagamento autorizado](/developers/pt/docs/checkout-api/payment-management/capture-authorized-payment)

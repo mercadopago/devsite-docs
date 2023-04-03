@@ -209,6 +209,12 @@ Ejemplo de notificación.
 Para activar las notificaciones es necesario habilitar el canal de correo electrónico del integrador, puedes utilizar el
 siguiente comando:
 
+> WARNING
+>
+> Importante
+>
+> Las notificaciones estarán disponibles 30 minutos después de haber realizado el proceso de activación.
+
 ```curl
 curl --location --request PATCH 'https://api.mercadopago.com/point/integration-api/integrator' \
 --header 'Authorization: Bearer ${ACCESS_TOKEN}' \

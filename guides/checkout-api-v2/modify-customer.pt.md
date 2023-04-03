@@ -281,19 +281,3 @@ Exemplo de resposta sem o parâmetro `customer_id`:
 }
 ```
 
-
-> PREV_STEP_CARD_PT
->
-> Criar cliente e cartão
->
-> Saiba como criar um cliente e um cartão
->
-> [Criar cliente e cartão](/developers/pt/docs/checkout-api/cards-and-customers-management/create-customer-and-card)
-
-> NEXT_STEP_CARD_PT
->
-> Buscar cliente
->
-> Saiba como buscar um cliente a partir de informações específicas.
->
-> [Buscar cliente](/developers/pt/docs/checkout-api/cards-and-customers-management/search-customers)

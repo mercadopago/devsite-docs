@@ -209,6 +209,12 @@ Notification Example.
 To activate the notifications it is necessary to enable the integrator's email channel, you can use the
 following command:
 
+> WARNING
+>
+> Important
+>
+> The notifications will be available 30 minutes after completing the activation process.
+
 ```curl
 curl --location --request PATCH 'https://api.mercadopago.com/point/integration-api/integrator' \
 --header 'Authorization: Bearer ${ACCESS_TOKEN}' \

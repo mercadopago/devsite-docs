@@ -10,36 +10,47 @@ Veja na tabela a seguir os campos contidos dentro do objeto `additionalData`.
 
 Veja abaixo um exemplo de uso:
 
-```javascript
+[[[
+```Javascript
 const settings = {
-    ...,
-    callbacks: {
-     onSubmit: (cardFormData, additionalData) => {
-        // callback chamado o usuário clicar no botão de submissão dos dados
-        // o parâmetro additionalData é opcional, você pode removê-lo se quiser 
-        console.log(additionalData);
-        // exemplo de envio dos dados coletados pelo Brick para seu servidor
-        return new Promise((resolve, reject) => {
-            fetch("/process_payment", { 
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(cardFormData)
-            })
-            .then((response) => {
-                // receber o resultado do pagamento
-                resolve();
-            })
-            .catch((error) => {
-                // lidar com a resposta de erro ao tentar criar o pagamento
-                reject();
-            })
-          });
-      },
-    },
+ ...,
+ callbacks: {
+   onSubmit: (cardFormData, additionalData) => {
+     // callback chamado após o usuário clicar no botão de submissão dos dados
+     // o parâmetro additionalData é opcional, você pode removê-lo se quiser     
+     console.log(additionalData);
+     // exemplo de envio dos dados coletados pelo Brick para seu servidor
+     return new Promise((resolve, reject) => {
+       fetch("/process_payment", {
+         method: "POST",
+         headers: {
+             "Content-Type": "application/json",
+         },
+         body: JSON.stringify(cardFormData)
+       })
+       .then((response) => {
+         // receber o resultado do pagamento
+         resolve();
+       })
+       .catch((error) => {
+         // lidar com a resposta de erro ao tentar criar o pagamento
+         reject();
+       })
+     });
+   },
+ },
 }
 ```
+```react-jsx
+<Card
+ initialization={initialization}
+ customization={customization}
+ onSubmit={async (cardFormData, additionalData) => {
+   console.log(cardFormData, additionalData);
+ }}
+/>
+```
+]]]
 
 Caso não esteja utilizando o botão nativo de [enviar formulário do Brick](/developers/pt/docs/checkout-bricks/payment-brick/additional-customization/hide-element), você também pode acessar o objeto `additionalData` através do método `getAdditionalData`. Veja um exemplo de uso a seguir.
 

@@ -10,14 +10,13 @@ En la siguiente tabla encontrarás los detalles de la personalización y el cód
 
 | Brick | Card Payment Brick |
 | --- | --- |
-| Momento de personalización | Al renderizar Brick |
+| Momento de personalización | Al renderizar Brick. |
 | Propiedad | personalización.métodos.pago.tipos.excluidos |
 | Tipo | string [] |
 | Notas | Los valores aceptados dentro del array son: `credit_card`, `debit_card`. |
 
 [[[
 ```Javascript
-
 settings = {
   ...,
   customization: {
@@ -28,5 +27,14 @@ settings = {
     }
   }
 }
+```
+```react-jsx
+const customization = {
+ paymentMethods: {
+   types: {
+     excluded: ['debit_card'],
+   },
+ },
+};
 ```
 ]]]

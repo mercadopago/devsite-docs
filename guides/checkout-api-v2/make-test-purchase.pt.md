@@ -13,20 +13,4 @@ Com as credenciais em mãos, siga os passos abaixo para realizar a compra teste.
 4. Insira os dados de um dos nossos [cartões de teste](/developers/pt/docs/checkout-api/integration-test/test-cards).
 3. Confirme a compra.
 
-Pronto! Finalizadas essas etapas a integração terá sido concluída e você já poderá utilizar suas credenciais de produção para utilizar o Checkout Transparente. Para mais informações, veja a seção [Requisitos para entrar em produção](/developers/pt/docs/checkout-api/integration-test/go-to-production-requirements)
-
-> PREV_STEP_CARD_PT
->
-> Gestão de pagamentos
->
-> Saiba como fazer a gestão dos pagamentos da sua loja.
->
-> [Gestão de pagamentos](/developers/pt/docs/checkout-api/payment-management)
-
-> NEXT_STEP_CARD_PT
->
-> Cartões de teste
->
-> Utilize os cartões de teste para simular todo fluxo de compra
->
-> [Cartões de teste](/developers/pt/docs/checkout-api/integration-test/test-cards)
+Pronto! Finalizadas essas etapas, a integração terá sido concluída e você já poderá utilizar suas credenciais de produção para utilizar o Checkout Transparente. Para mais informações, veja a seção [Requisitos para entrar em produção](/developers/pt/docs/checkout-api/integration-test/go-to-production-requirements)

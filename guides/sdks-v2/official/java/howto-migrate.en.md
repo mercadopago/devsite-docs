@@ -14,11 +14,25 @@ Below we show the main differences between the migration steps.
 * We will no longer use the callback functions of each method, but their return to work with the data;
 * The names of some methods have also undergone some minor changes and these have become clearer in the comparison snippets.
 
+----[mla, mlm, mpe, mlu, mlc, mlb]----
+
 > WARNING
 >
 > Attention
 >
 > The migration will not affect your backend in any way, the modifications are entirely on the frontend of the application.
+
+------------
+
+----[mco]----
+
+> WARNING
+>
+> Attention
+>
+> The migration will not affect your backend in any way, the modifications are entirely on the frontend of the application. In addition, this modification affects only the card and does not affect other payment methods, such as PSE.
+
+------------
 
 See below for a comparison of the diagrams.
 
@@ -128,7 +142,7 @@ const securityCodeElement = mp.fields.create('securityCode', {
 }).mount('securityCode');
 ````
 
-With that, we now have our secure PCI fields inside the form.
+With that, we now have our secure PCI fields inside the form. For more information on how to configure iframes, please visit our [Github](https://github.com/mercadopago/sdk-js/blob/main/API/fields.md).
 
 ## Get document types
 

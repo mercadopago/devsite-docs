@@ -4,7 +4,6 @@
       - mlb
       - mlm
       - mpe
-      - mlu
 ---
 
 # Capturar pagamento autorizado
@@ -125,7 +124,15 @@ Para capturar um valor inferior ao reservado, envie o valor que deve ser captura
 >
 > Importante
 >
-> Disponível somente para Visa, Cabal, Master e American Express.
+> Este recurso está disponível apenas para os cartões das bandeiras Visa, Cabal, Master e American Express.
+------------
+
+----[mlb, mlu, mlc, mco, mpe, mlm]----
+> WARNING
+>
+> Importante
+>
+> Não é possível capturar um valor superior ao reservado, sendo necessário cancelar a reserva e gerar uma nova.
 ------------
 
  
@@ -234,3 +241,4 @@ A resposta trará o seguinte resultado
 > Importante
 >
 > Não é possível capturar um valor superior ao reservado, para isso é preciso cancelar a reserva e gerar uma nova.
+

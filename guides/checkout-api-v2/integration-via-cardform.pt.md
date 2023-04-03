@@ -41,6 +41,12 @@ Esta é a primeira etapa de uma estrutura completa de código que deverá ser se
 
 A captura dos dados do cartão é feita através do CardForm da biblioteca MercadoPago.js. Nosso CardForm se conectará ao seu formulário de pagamento HTML, facilitando a obtenção e validação de todos os dados necessários para processar o pagamento.
 
+> WARNING
+>
+> Importante
+>
+> O cardtoken pode ser usado **somente uma vez** e expira dentro de **7 dias**.
+
 Para adicionar o formulário de pagamento, insira o HTML abaixo diretamente no projeto. 
 
 [[[
@@ -455,20 +461,3 @@ A resposta trará o seguinte resultado
 >
 > Para exemplos completos de código, confira os [exemplos completos de integração](https://github.com/mercadopago/card-payment-sample) disponíveis no GitHub.
 ------------
-
-> PREV_STEP_CARD_PT
->
-> Pré-requisitos
->
-> Veja os pré-requisitos necessários para integrar o Checkout Transparente.
->
-> [Integrar Checkout Transparente](/developers/pt/docs/checkout-api/prerequisites)
-
-
-> NEXT_STEP_CARD_PT
->
-> Outros meios de pagamento
->
-> Conheça as outras opções de pagamento disponíveis para integração.
->
-> [Outros meios de pagamento](/developers/pt/docs/checkout-api/integration-configuration/other-payment-methods)

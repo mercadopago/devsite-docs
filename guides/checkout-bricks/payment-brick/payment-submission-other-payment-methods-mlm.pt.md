@@ -2,7 +2,7 @@
 >
 > h1
 >
-> Enviar pagamento (outros meios de pagamento)
+> Outros meios de pagamento
 
 Para configurar **pagamentos com dinheiro via ticket**, envie um POST com os seguintes parâmetros ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, utilize um de nossos SDKs abaixo.
 
@@ -171,7 +171,7 @@ curl -X POST \
       "description": "Título do produto",
       "payment_method_id": "oxxo",
       "payer": {
-        "email": "test@test.com",
+        "email": "PAYER_EMAIL_HERE",
       }
 "metadata": {
         "payment_point": "oxxo",
@@ -210,7 +210,11 @@ Após criar o pagamento pelo backend utilizando a SDK do Mercado Pago, utilize o
 
 Além disso, o Status Screen também poderá redirecionar o comprador para o ticket com número da operação e código de barras para o comprador se dirigir a uma loja e assim fazer o pagamento.  Saiba como é simples integrar [clicando aqui](/developers/pt/docs/checkout-bricks/status-screen-brick/configure-integration).
 
+<center>
+
 ![payment-submission-other-payment-methods-status-mlm](checkout-bricks/payment-submission-other-payment-methods-status-mlm-pt.jpg)
+
+</center>
 
 > NOTE
 >

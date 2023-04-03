@@ -11,19 +11,35 @@ Checkout Bricks permite la integración del lado del cliente de forma modular a 
 El Brick posee capacidades responsivas en términos del tamaño del espacio en la pantalla. El Brick siempre ocupará el espacio que se le ha definido y responderá cuando este espacio cambie durante su uso.
 
 ----[mlb]---- 
+<center>
+
 ![responsiveness-mlb](checkout-bricks/responsiveness-mlb-es.gif)
 
-------------
-----[mpe, mco, mlu, mlc]---- 
-![responsiveness-all](checkout-bricks/responsiveness-all-es.gif)
+</center>
 
 ------------
 ----[mla]---- 
+<center>
+
 ![responsiveness-mla](checkout-bricks/responsiveness-mla-es.gif)
+
+</center>
 
 ------------
 ----[mlm]---- 
+<center>
+
 ![responsiveness-mlm](checkout-bricks/responsiveness-mlm-es.gif)
+
+</center>
+
+------------
+----[mpe, mco, mlu, mlc]---- 
+<center>
+
+![responsiveness-all](checkout-bricks/responsiveness-all-es.gif)
+
+</center>
 
 ------------
 
@@ -31,20 +47,36 @@ El Brick posee capacidades responsivas en términos del tamaño del espacio en l
 
 El Checkout Bricks se puede instanciar/renderizar con diferentes temas y características que pueden adaptarse mejor al aspecto de la tienda. Las características de cada uno de los temas disponibles se detallan a continuación. Consulta [Definir Tema](/developers/es/docs/checkout-bricks/additional-content/set-theme) para obtener instrucciones sobre cómo cambiar el tema del Brick
 
-----[mlb]---- 
+----[mlb]----
+<center>
+
 ![themes-mlb](checkout-bricks/themes-mlb-es.png)
 
+</center>
+
 ------------
-----[mpe, mco, mlu, mlc]---- 
+----[mla]----
+<center>
+
+![themes-mla](checkout-bricks/themes-mla-es.jpg) 
+
+</center>
+
+------------
+----[mlm]----
+<center>
+
+![themes-mlm](checkout-bricks/themes-mlm-es.jpg) 
+
+</center>
+
+------------
+----[mpe, mco, mlu, mlc]----
+<center>
+
 ![themes-all](checkout-bricks/themes-all-es.png)
 
-------------
-----[mla]---- 
-![themes-mla](checkout-bricks/themes-mla-es.jpg)
-
-------------
-----[mlm]---- 
-![themes-mlm](checkout-bricks/themes-mlm-es.jpg)
+</center>
 
 ------------
 

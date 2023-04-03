@@ -31,16 +31,15 @@ Para gerar um pedido, acesse nossa [Referência de API](/developers/pt/reference
 
 **Resposta**
 
-Json
+```json
 {
   "qr_data": "00020101021243650016COM.MERCADOLIBRE02013063638f1192a-5fd1-4180-a180-8bcae3556bc35204000053039865802BR5925IZABEL AAAA DE MELO6007BARUERI62070503***63040B6D"
 }
 ```
+
 A resposta será uma string com o padrão EMVCo. Utilize o `qr_data` para disponibilizar o código QR com um gerador ou através da sua aplicação.
 
 ----[mlb]----
-
-
 Se você tiver uma **chave Pix configurada** na sua conta Mercado Pago, a estrutura da string terá dados referentes a Pix.
 Por exemplo:
 
