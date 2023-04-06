@@ -209,67 +209,6 @@ Para os casos em que o _Challenge_ é necessário, o `status` mostrará o valor 
     "status": "pending",
     "status_detail": "pending_challenge",
     ...
-    "internal_metadata":
-    {
-        ...
-        "unified_processing": true,
-        "3ds_disabled_reason": "none",
-        "approval_optimization_context":
-        [
-            {
-                ...
-                "approval_decision":
-                {
-                    ...
-                    "approval_flows":
-                    [
-                        "no_cvv",
-                        "default",
-                        "tokenization",
-                        "threeds",
-                        "data_only"
-                    ],
-                    "three_ds": true,
-                    "remove_cvv": false,
-                    "operation_mode": "sync",
-                    "best_flows":
-                    [
-                        "threeds"
-                    ]
-                },
-                ...
-            }
-        ],
-        "g2": "on",
-        "3ds_status": "Challenge",
-        "3ds_Challenge": true,
-        "3dsChallengedrop_reason": "none",
-        ...
-        "approval_decision":
-        {
-            "abtesting_flows": null,
-            "deferred_retry": false,
-            "data_only": false,
-            "retry_after_time": null,
-            "approval_flows":
-            [
-                "no_cvv",
-                "default",
-                "tokenization",
-                "threeds",
-                "data_only"
-            ],
-            "three_ds": true,
-            "remove_cvv": false,
-            "operation_mode": "sync",
-            "best_flows":
-            [
-                "threeds"
-            ]
-        },
-        "mcc_source": "DEFAULT"
-    },
-    ........
     "three_dsinfo":
     {
         "external_resource_url": "https://acs-public.tp.mastercard.com/api/v1/browser_Challenges",

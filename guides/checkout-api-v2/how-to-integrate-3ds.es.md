@@ -212,70 +212,9 @@ Para casos en que el _Challenge_ es necesario, el `status` mostrará el valor `p
     "status": "pending",
     "status_detail": "pending_challenge",
     ...
-    "internal_metadata":
-    {
-        ...
-        "unified_processing": true,
-        "3ds_disabled_reason": "none",
-        "approval_optimization_context":
-        [
-            {
-                ...
-                "approval_decision":
-                {
-                    ...
-                    "approval_flows":
-                    [
-                        "no_cvv",
-                        "default",
-                        "tokenization",
-                        "threeds",
-                        "data_only"
-                    ],
-                    "three_ds": true,
-                    "remove_cvv": false,
-                    "operation_mode": "sync",
-                    "best_flows":
-                    [
-                        "threeds"
-                    ]
-                },
-                ...
-            }
-        ],
-        "g2": "on",
-        "3ds_status": "CHALLENGE",
-        "3ds_challenge": true,
-        "3ds_challenge_drop_reason": "none",
-        ...
-        "approval_decision":
-        {
-            "abtesting_flows": null,
-            "deferred_retry": false,
-            "data_only": false,
-            "retry_after_time": null,
-            "approval_flows":
-            [
-                "no_cvv",
-                "default",
-                "tokenization",
-                "threeds",
-                "data_only"
-            ],
-            "three_ds": true,
-            "remove_cvv": false,
-            "operation_mode": "sync",
-            "best_flows":
-            [
-                "threeds"
-            ]
-        },
-        "mcc_source": "DEFAULT"
-    },
-    ........
     "three_dsinfo":
     {
-        "external_resource_url": "https://acs-public.tp.mastercard.com/api/v1/browser_challenges",
+        "external_resource_url": "https://acs-public.tp.mastercard.com/api/v1/browser_Challenges",
         "creq": "eyJ0aHJlZURTU2VydmVyVHJhbnNJRCI6ImJmYTVhZjI0LTliMzAtNGY1Yi05MzQwLWJkZTc1ZjExMGM1MCIsImFjc1RyYW5zSUQiOiI3MDAwYTI2YS1jYWQ1LTQ2NjQtOTM0OC01YmRlZjUwM2JlOWYiLCJjaGFsbGVuZ2VXaW5kb3dTaXplIjoiMDQiLCJtZXNzYWdlVHlwZSI6IkNSZXEiLCJtZXNzYWdlVmVyc2lvbiI6IjIuMS4wIn0"
     },
     "owner": null
@@ -283,7 +222,6 @@ Para casos en que el _Challenge_ es necesario, el `status` mostrará el valor `p
 
 ```
 ]]]
-
 
 
 4. Para **mostrar el _Challenge_**, es necesario que generes un _iframe_ (altura mínima: 500px, ancho mínimo: 600px) que contenga un formulario con `method post` y `action`, que será la URL obtenida en el campo `external_resource_url`, y un input oculto con el valor obtenido en `creq`. Después, debes hacer el post del form a continuación para empezar el challenge.
