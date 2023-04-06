@@ -191,7 +191,7 @@ payment = payment_response["response"]
 
 If the Challenge flow is not required, the payment `status` field will have a value of `approved` and it will not be necessary to display it, so it is possible to proceed with the application flow. 
 
-For cases where the Challenge is necessary, the status will show the value `pending`, and the `status_detail` will be `pending_Challenge`.
+For cases where the Challenge is necessary, the status will show the value `pending`, and the `status_detail` will be `pending_challenge`.
 
 > NOTE
 >
@@ -340,7 +340,7 @@ When the Challenge is completed, the payment status will be updated to `approved
 >
 > Important
 >
-> When the Challenge is initiated, the user has about 5 minutes to complete it. If it is not completed, the bank will decline the transaction and Mercado Pago will consider the payment cancelled. If the user never completes the challenge, the payment will remain as `pending_Challenge`.
+> When the Challenge is initiated, the user has about 5 minutes to complete it. If it is not completed, the bank will decline the transaction and Mercado Pago will consider the payment cancelled. If the user never completes the challenge, the payment will remain as `pending_challenge`.
 
 See the section below for more details on how to check the status of each transaction.
 
@@ -356,7 +356,7 @@ To **treat the iframe event**, follow the steps below.
 
 ### Perform implementation
 
-Use the following Javascript code to implement and request the event that indicates that the challenge has ended and redirected to a confirmation page.
+Use the following JavaScript code to implement and request the event that indicates that the Challenge has ended, so it is possible to redirect the client to the confirmation screen.
 
 
 [[[

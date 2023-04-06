@@ -188,7 +188,7 @@ payment = payment_response["response"]
 
 Caso não seja necessário utilizar o fluxo do _Challenge_, o campo `status` do pagamento terá valor `approved` e não será necessário exibi-lo, dessa forma, siga normalmente com o fluxo de sua aplicação. 
 
-Para os casos em que o _Challenge_ é necessário, o `status` mostrará o valor `pending`, e o `status_detail` será `pending_Challenge`.
+Para os casos em que o _Challenge_ é necessário, o `status` mostrará o valor `pending`, e o `status_detail` será `pending_challenge`.
 
 > NOTE
 >
@@ -207,7 +207,7 @@ Para os casos em que o _Challenge_ é necessário, o `status` mostrará o valor 
     "id": 52044997115,
     ...
     "status": "pending",
-    "status_detail": "pending_Challenge",
+    "status_detail": "pending_challenge",
     ...
     "internal_metadata":
     {
@@ -294,7 +294,7 @@ function doChallenge(payment) {
       status_detail,
       three_dsinfo: { creq, external_resource_url },
     } = payment;
-    if (status === "pending" && status_detail === "pending_Challenge") {
+    if (status === "pending" && status_detail === "pending_challenge") {
       var iframe = document.createElement("iframe");
       iframe.name = "myframe";
       iframe.id = "myframe";
@@ -350,7 +350,7 @@ Para **tratar o evento iframe**, siga as etapas abaixo.
 
 ### Realizar implantação
 
-Utilize o código Javascript a seguir para implementar e escutar o evento que indica que o _Challenge_ foi encerrado e redirecionado para a tela de confirmação.
+Utilize o código Javascript a seguir para implementar e escutar o evento que indica que o _Challenge_ foi encerrado, assim é possível redirecionar o cliente para a tela de confirmação.
 
 
 [[[

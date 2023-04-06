@@ -355,7 +355,7 @@ Para **tratar el evento del iframe**, sigue los pasos a continuación.
 
 ### Realizar implementación
 
-Utiliza el siguiente código Javascript para implementar y escuchar el evento que indica que el challenge ha finalizado y se ha redirigido a la página de confirmación.
+Utilice el código JavaScript a continuación para implementar y escuchar el evento que indica que el _Challenge_ ha finalizado, de esta manera es posible redirigir al cliente a la pantalla de confirmación.
 
 
 [[[
