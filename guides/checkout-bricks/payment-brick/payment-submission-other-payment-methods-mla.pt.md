@@ -2,7 +2,7 @@
 >
 > h1
 >
-> Enviar pagamento (outros meios de pagamento)
+> Outros meios de pagamento
 
 Para configurar pagamentos com **Rapipago** ou **Pago Fácil**, envie um POST com os seguintes parâmetros ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, utilize um de nossos SDKs abaixo.
 
@@ -137,7 +137,7 @@ curl -X POST \
       "description": "Título do produto",
       "payment_method_id": "rapipago",
       "payer": {
-        "email": "test@test.com",
+        "email": "PAYER_EMAIL_HERE",
       }
     }'
 ```
@@ -174,7 +174,11 @@ Após criar o pagamento pelo backend utilizando a SDK do Mercado Pago, utilize o
 
 Além de exibir o status do pagamento, o Status Screen Brick também exibirá o código de barras para o comprador copiar e colar, ou escanear e assim fazer o pagamento. Saiba como é simples integrar [clicando aqui](/developers/pt/docs/checkout-bricks/status-screen-brick/configure-integration).
 
-![payment-submission-other-payment-methods-status-mla-pt](checkout-bricks/payment-submission-other-payment-methods-status-mla-pt.jpg)
+<center>
+
+![payment-submission-other-payment-methods-status-mla](checkout-bricks/payment-submission-other-payment-methods-status-mla-pt.jpg)
+
+</center>
 
 > NOTE
 >

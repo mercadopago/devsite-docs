@@ -110,7 +110,7 @@ La respuesta va a devolver que el pago se encuentra aprobado y acreditado.
 
 ## Capturar monto parcial
 
-Para capturar un monto inferior al monto reservado, envía el valor a capturar al parámetro `transaction_amount` y ejecuta la solicitud a través de los códigos disponibles a continuación.
+Para capturar un monto inferior al reservado, envía el valor a capturar al parámetro `transaction_amount` y ejecuta la solicitud a través de los códigos disponibles a continuación.
 
 ----[mla]----
 > WARNING
@@ -228,3 +228,10 @@ La respuesta va a devolver que el pago se encuentra aprobado y acreditado.
 }
 ```
 ]]]
+
+
+> NOTE
+>
+> Importante
+>
+> No es posible captar un monto mayor al monto reservado, para ello deberás cancelar la reserva y generar una nueva.

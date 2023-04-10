@@ -6,7 +6,8 @@
 
 Por padrão, quando for relevante o Brick exibirá detalhes do processamento do pagamento como, por exemplo, informar os dados que foram ingressados incorretamente de um cartão ou outros [resultados da criação de uma cobrança](/developers/pt/docs/checkout-api/response-handling/collection-results). Caso deseje, é possível ocultar esses detalhes através da configuração abaixo.
 
-```javascript
+[[[
+```Javascript
 const settings = {
  initialization: {
    paymentId: 100, // id de pagamento gerado por Mercado Pago
@@ -26,5 +27,13 @@ const settings = {
  }
 };
 ```
+```react-jsx
+const customization = {
+ visual: {
+   hideStatusDetails: true
+ }
+};
+```
+]]]
 
 ![status-screen-brick-hide-processing-details](checkout-bricks/status-screen-brick-hide-processing-details-pt.jpg)

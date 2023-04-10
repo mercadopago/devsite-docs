@@ -2,7 +2,7 @@
 >
 > h1
 >
-> Payment submission (other payment methods)
+> Other payment methods
 
 To configure payments with **Rapipago** or **Pago Fácil**, send a **POST** with the following parameters to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post) and run the request or, if you prefer, use one of our SDKs below.
 
@@ -137,7 +137,7 @@ curl -X POST \
       "description": "Product title",
       "payment_method_id": "rapipago",
       "payer": {
-        "email": "test@test.com",
+        "email": "PAYER_EMAIL_HERE",
       }
     }'
 ```
@@ -174,7 +174,11 @@ After the payment creation in the backend using the Mercado Pago SDK, use the **
 
 In addition to displaying the payment status, Status Screen Brick will also display the barcode to copy and paste or scan in order for the buyer to pay. Learn how simple it is to integrate [click here](/developers/en/docs/checkout-bricks/status-screen-brick/configure-integration).
 
-![payment-submission-other-payment-methods-status-mla-en](checkout-bricks/payment-submission-other-payment-methods-status-mla-en.jpg)
+<center>
+
+![payment-submission-other-payment-methods-status-mla](checkout-bricks/payment-submission-other-payment-methods-status-mla-en.jpg)
+
+</center>
 
 > NOTE
 >

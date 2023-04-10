@@ -20,6 +20,16 @@ settings = {
    ...
 }
 ```
+```react-jsx
+const initialization = {
+ ...,
+ payer: {
+   ...,
+   customerId: '209277402-FqRqgEc3XItrxs',
+   cardsIds: [ '1518023392627', '1518023332143' ]
+ },
+};
+```
 ]]]
 
 Just passing these two properties, Brick will automatically give the user the option to make the payment with their saved cards.

@@ -2,15 +2,16 @@
 >
 > h1
 >
-> Configurar monto máximo y mínimo de cuotas
+> Configurar cuotas
 
 | Brick | Card Payment Brick |
 | --- | --- |
-| Momento de personalización | Al renderizar Brick |
+| Momento de personalización | Al renderizar Brick. |
 | Propiedad | customization.paymentMethods.minInstallments && customization.paymentMethods.maxInstallments |
 | Tipo | number |
 | Observaciones | Cuando se pasa un valor para min o maxInstallments, la cantidad de cuotas estará limitada por los valores pasados. |
 
+[[[
 ```javascript
 const settings = {
     ...,
@@ -22,3 +23,12 @@ const settings = {
     },
 }
 ```
+```react-jsx
+const customization = {
+  paymentMethods: {
+   minInstallments: number,
+   maxInstallments: number,
+ },
+};
+```
+]]]
