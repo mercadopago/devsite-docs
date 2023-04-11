@@ -41,12 +41,23 @@ Para activar este tipo de pago, sigue los pasos a continuación.
 1. En tu sitio Wix, dirígete al panel de configuración ubicado a la izquierda de la pantalla y accede a **Ajustes > Aceptar pagos**.
 1. En "Mercado Pago", haz clic en el botón **Administrar**.
 1. En la sección **Métodos de pago disponibles con Mercado Pago**, activa la opción "Tarjetas de crédito".
+------------
 
+----[mla, mlu, mlc, mco, mpe]----
 > WARNING
 >
 > Importante
 >
 > Por el momento, no es posible configurar pagos en cuotas a través del Checkout API.
+
+------------
+
+----[mlm]----
+> WARNING
+>
+> Importante
+>
+> Por el momento, no es posible configurar pagos en mensualidades a través del Checkout API.
 
 ------------
 
