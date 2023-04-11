@@ -8,7 +8,7 @@ Para realizar la conexión con Mercado Pago como proveedor en tu tienda Wix, sig
 
 1. En el panel de configuraciones de tu sitio Wix, situado a la izquierda de la pantalla, ingresa en **Ajustes**.
 2. Dentro de la pantalla de Ajustes, haz clic en el botón **Aceptar pagos**.
-3. Encuentra la opción **Mercado Pago** y gaz clic en el botón **Conectar**.
+3. Encuentra la opción **Mercado Pago** y haz clic en el botón **Conectar**.
 
 ## Conectar tus credenciales de producción
 
