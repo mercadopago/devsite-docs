@@ -64,18 +64,17 @@ const initialization = {
  amount: 100,
 };
 
-
 const onSubmit = async (formData) => {
  // callback chamado ao clicar no botão de submissão dos dados
  return new Promise((resolve, reject) => {
-   fetch('/process_payment', {
-     method: 'POST',
+   fetch("/process_payment", {
+     method: "POST",
      headers: {
-       'Content-Type': 'application/json',
+       "Content-Type": "application/json",
      },
      body: JSON.stringify(formData),
    })
-     .then(response) => response.json())
+     .then((response) => response.json())
      .then((response) => {
        // receber o resultado do pagamento
        resolve();
@@ -87,18 +86,16 @@ const onSubmit = async (formData) => {
  });
 };
 
-
 const onError = async (error) => {
  // callback chamado para todos os casos de erro do Brick
  console.log(error);
 };
 
-
 const onReady = async () => {
  /*
-   Callback chamado quando o Brick estiver pronto.
-   Aqui você pode ocultar loadings do seu site, por exemplo.
- */
+     Callback chamado quando o Brick estiver pronto.
+     Aqui você pode ocultar loadings do seu site, por exemplo.
+   */
 };
 ```
 ]]]
