@@ -6,7 +6,7 @@ Se você quiser saber mais sobre notificações de IPN, acesse [esta documentaç
 
 Para receber notificações de IPN, siga as etapas abaixo:
 
-1. Acesse [Suas notificações de IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications/ipn).
+1. Acesse [Suas notificações de IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/ipn).
 2. Preencha os campos solicitados:
     - URL do site em produção: coloque a URL da loja.
     - Eventos: selecione os eventos sobre os quais deseja receber notificações.

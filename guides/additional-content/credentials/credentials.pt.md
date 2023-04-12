@@ -1,6 +1,6 @@
 # Credenciais
 
-As credenciais são senhas únicas com as quais identificamos uma integração na sua conta. Servem para capturar pagamentos em lojas virtuais e outras aplicações de forma segura. Elas podem ser encontradas no [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel) ou na sua conta Mercado Pago em [Seu negócio > Configurações > Gestão e Administração > Credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).
+As credenciais são senhas únicas com as quais identificamos uma integração na sua conta. Servem para capturar pagamentos em lojas virtuais e outras aplicações de forma segura. Elas podem ser encontradas no [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) ou na sua conta Mercado Pago em [Seu negócio > Configurações > Gestão e Administração > Credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).
 
 > WARNING 
 > 

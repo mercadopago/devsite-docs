@@ -33,7 +33,7 @@ We recommend you renew your credentials frequently to avoid possible vulnerabili
 
 Renew your credentials in a simple way by following these steps:
 
-1. Go to [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel).
+1. Go to [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app).
 2. Access the application whose credentials you want to renew.
 3. Select Production Credentials.
 4. Once there, you can renew both the Access Token and the Client Secret. To do so, click **More Options > Renew**.
@@ -48,7 +48,7 @@ Renew your credentials in a simple way by following these steps:
 If you need to share your application credentials with other Mercado Pago accounts, do so securely through **Your Applications**.
 When you share your credentials, you allow another Mercado Pago account to see and use them. To do so, follow these steps:
 
-1. Go to [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel).
+1. Go to [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app).
 2. Access the application whose credentials you want to share.
 3. Click on **Share my credentials**.
 4. Enter the e-mails of the Mercado Pago accounts that you want to share your credentials with. Both test and production credentials will be shared.

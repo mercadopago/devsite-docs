@@ -4,7 +4,7 @@ Below we will explain how to indicate the URLs that will be notified and how to 
 
 ![ipn](/images/notifications/ipn__es.png)
 
-1. Access the [IPN Notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications/ipn).
+1. Access the [IPN Notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/ipn).
 2. Next, configure the **URL** of **production** where notifications will be received.
 3. You will also be able to experiment and test if the indicated URL is receiving notifications correctly, being able to verify the request, the response given by the server and the description of the event.
 4. If you need to identify multiple accounts, at the end of the indicated URL you can specify the parameter `?customer=(sellername) endpoint` to identify the sellers.

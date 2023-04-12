@@ -18,7 +18,7 @@ Para crear una aplicación, sigue los pasos a continuación.
 4. Acepta nuestros términos y condiciones.
 5. Crea la aplicación haciendo clic en el botón "Crear aplicación".
  
-Con cada aplicación creada, se crea automáticamente una nueva tarjeta en la página de inicio del [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel) que contiene el nombre, la descripción y el ID de la aplicación.
+Con cada aplicación creada, se crea automáticamente una nueva tarjeta en la página de inicio del [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) que contiene el nombre, la descripción y el ID de la aplicación.
 
 ## Administrar aplicación
  
