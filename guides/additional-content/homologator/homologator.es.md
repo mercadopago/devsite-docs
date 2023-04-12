@@ -21,7 +21,7 @@ Con esta herramienta puedes **medir la calidad de tu aplicación**, lo que permi
 
 Para medir la calidad de tu aplicación, sigue los pasos a continuación.
 
-1. En el [Devsite](/developers/es/docs), accede al menú **Tus integraciones >** [Dashboard](https://mercadopago[FAKER][URL][DOMAIN]/developers/panel).
+1. En el [Devsite](/developers/es/docs), accede al menú **Tus integraciones >** [Dashboard](https://mercadopago[FAKER][URL][DOMAIN]/developers/panel/app).
 2. En el área [Tus aplicaciones](/developers/es/guides/additional-content/dashboard/applications) del Dashboard, **haz clic en la aplicación deseada**. Debe ser una aplicación en la que haya un producto a integrar y que este sea uno del que se disponga de la herramienta de medición.
 3. Luego haz clic en **Detalles de la puntuación** para acceder a la herramienta donde puedes **medir la calidad de tu aplicación** y ver el puntaje que indica qué tan segura y alineada está la configuración de tu aplicación con las buenas prácticas de integración de Mercado Pago.
 4. En la pantalla "Calidad de integración", haz clic en **Evaluar calidad** e ingresa el `payment ID` de un pago realizado con [credenciales](/developers/es/guides/additional-content/credentials/credentials) de producción de la aplicación en cuestión. Siempre que sea posible, mostraremos en el campo el último `payment ID` productivo que identificamos en la aplicación en cuestión.

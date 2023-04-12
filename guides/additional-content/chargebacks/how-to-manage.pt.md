@@ -4,7 +4,7 @@ Uma disputa ocorre quando **você deseja argumentar** o pedido de contestação 
 
 Abaixo você encontra as informações necessárias para o gerenciamento das disputas das contestações feitas.
 
-1. Configure as [notificações IPN](/developers/panel/notifications/ipn) no painel e ative a opção **Contestações (chargebacks)**
+1. Configure as [notificações IPN](/developers/panel/ipn) no painel e ative a opção **Contestações (chargebacks)**
    
 2. Consulte todas as informações de uma contestação com o método [Obter estorno](/developers/pt/reference/chargebacks/_chargebacks_id/get)
    1. Identifique se a contestação é [elegível a cobertura](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/294) e se é necessário apresentar alguma documentação, através dos campos `coverage_elegible` e `documentation_required`, respectivamente.

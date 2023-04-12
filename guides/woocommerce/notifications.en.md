@@ -6,7 +6,7 @@ If you want to know more about IPN notifications, go to [this documentation](/de
 
 To receive IPN notifications, follow the steps below:
 
-1. Go to [Your IPN notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications/ipn).
+1. Go to [Your IPN notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/ipn).
 2. Complete the requested fields:
     - URL of the website in production: put the URL of the store.
     - Events: select the events you want to receive notifications about.

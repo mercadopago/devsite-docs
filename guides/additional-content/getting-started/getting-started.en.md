@@ -15,9 +15,9 @@ In the case of integrable solutions, the initial integration flow is always the 
 With the account already active, you have access to two different dashboards with crucial information:
 
 * The [Business Panel](https://www.mercadopago[FAKER][URL][DOMAIN]/subscription-plans/list#from-section=menu) allows you to manage profile and financial activity, considering cash fronts, billing, metrics, employees, product catalog, and much more.
-* The [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel) allows you to manage integrations with code development.
+* The [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) allows you to manage integrations with code development.
 
-In the [Business Panel](https://www.mercadopago[FAKER][URL][DOMAIN]/subscription-plans/list#from-section=menu) and the [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel), you have access to your [credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/credentials/credentials), which are unique passwords responsible for securely capturing payments in virtual stores and other applications, and with which we identify an integration in your account.
+In the [Business Panel](https://www.mercadopago[FAKER][URL][DOMAIN]/subscription-plans/list#from-section=menu) and the [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app), you have access to your [credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/credentials/credentials), which are unique passwords responsible for securely capturing payments in virtual stores and other applications, and with which we identify an integration in your account.
 
 With credentials in hand, you can integrate solutions connecting them to e-commerce platforms avaliá-lo or getting your hands dirty writing lines of code.
 
