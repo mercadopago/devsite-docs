@@ -264,7 +264,7 @@ $payment->transaction_amount = 100;
 $payment->description = "Product title";
 $payment->payment_method_id = "bolbradesco";
 $payment->payer = array(
-"email" => "test@test.com",
+"email" => "PAYER_EMAIL",
 "first_name" => "Test",
 "last_name" => "User",
 "identification" => array(
@@ -294,7 +294,7 @@ transaction_amount: 100,
 description: 'Product title',
 payment_method_id: 'bolbradesco',
 payer: {
-email: 'test@test.com',
+email: 'PAYER_EMAIL',
 first_name: 'Test',
 last_name: 'User',
 identification: {
@@ -330,7 +330,7 @@ PaymentCreateRequest.builder()
 .dateOfExpiration(OffsetDateTime.of(2023, 1, 10, 10, 10, 10, 0, ZoneOffset.UTC))
 .payer(
 PaymentPayerRequest.builder()
-.email("test@test.com")
+.email("PAYER_EMAIL")
 .firstName("Test")
 .lastName("User")
 .identification(
@@ -349,7 +349,7 @@ transaction_amount: 100,
 description: 'Product title',
 payment_method_id: 'bolbradesco',
 payer: {
-email: 'test@test.com',
+email: 'PAYER_EMAIL',
 first_name: 'Test',
 last_name: 'User',
 identification: {
@@ -387,7 +387,7 @@ Description = "Product Title",
 PaymentMethodId = "bolbradesco",
 Payer = new PaymentPayerRequest
 {
-Email = "test@test.com",
+Email = "PAYER_EMAIL",
 FirstName = "Test",
 LastName = "User",
 Identification = new IdentificationRequest
@@ -411,7 +411,7 @@ payment_data = {
 "description": "Product title",
 "payment_method_id": "bolbradesco",
 "payer": {
-"email": "test@test.com",
+"email": "PAYER_EMAIL",
 "first_name": "Test",
 "last_name": "User",
 "identification": {
@@ -443,7 +443,7 @@ curl -X POST \
 "description": "Product title",
 "payment_method_id": "bolbradesco",
 "payer": {
-"email": "test@test.com",
+"email": "PAYER_EMAIL",
 "first_name": "Test",
 "last_name": "User",
 "identification": {

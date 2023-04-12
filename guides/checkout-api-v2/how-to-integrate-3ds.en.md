@@ -191,7 +191,7 @@ payment = payment_response["response"]
 
 If the Challenge flow is not required, the payment `status` field will have a value of `approved` and it will not be necessary to display it, so it is possible to proceed with the application flow. 
 
-For cases where the Challenge is necessary, the status will show the value `pending`, and the `status_detail` will be `pending_Challenge`.
+For cases where the Challenge is necessary, the status will show the value `pending`, and the `status_detail` will be `pending_challenge`.
 
 > NOTE
 >
@@ -201,7 +201,7 @@ For cases where the Challenge is necessary, the status will show the value `pend
 
 
 
-### Overview of the response (information omitted)
+### Response overview (information omitted)
 
 
 [[[
@@ -213,70 +213,9 @@ For cases where the Challenge is necessary, the status will show the value `pend
     "status": "pending",
     "status_detail": "pending_challenge",
     ...
-    "internal_metadata":
-    {
-        ...
-        "unified_processing": true,
-        "3ds_disabled_reason": "none",
-        "approval_optimization_context":
-        [
-            {
-                ...
-                "approval_decision":
-                {
-                    ...
-                    "approval_flows":
-                    [
-                        "no_cvv",
-                        "default",
-                        "tokenization",
-                        "threeds",
-                        "data_only"
-                    ],
-                    "three_ds": true,
-                    "remove_cvv": false,
-                    "operation_mode": "sync",
-                    "best_flows":
-                    [
-                        "threeds"
-                    ]
-                },
-                ...
-            }
-        ],
-        "g2": "on",
-        "3ds_status": "CHALLENGE",
-        "3ds_challenge": true,
-        "3ds_challenge_drop_reason": "none",
-        ...
-        "approval_decision":
-        {
-            "abtesting_flows": null,
-            "deferred_retry": false,
-            "data_only": false,
-            "retry_after_time": null,
-            "approval_flows":
-            [
-                "no_cvv",
-                "default",
-                "tokenization",
-                "threeds",
-                "data_only"
-            ],
-            "three_ds": true,
-            "remove_cvv": false,
-            "operation_mode": "sync",
-            "best_flows":
-            [
-                "threeds"
-            ]
-        },
-        "mcc_source": "DEFAULT"
-    },
-    ........
     "three_dsinfo":
     {
-        "external_resource_url": "https://acs-public.tp.mastercard.com/api/v1/browser_challenges",
+        "external_resource_url": "https://acs-public.tp.mastercard.com/api/v1/browser_Challenges",
         "creq": "eyJ0aHJlZURTU2VydmVyVHJhbnNJRCI6ImJmYTVhZjI0LTliMzAtNGY1Yi05MzQwLWJkZTc1ZjExMGM1MCIsImFjc1RyYW5zSUQiOiI3MDAwYTI2YS1jYWQ1LTQ2NjQtOTM0OC01YmRlZjUwM2JlOWYiLCJjaGFsbGVuZ2VXaW5kb3dTaXplIjoiMDQiLCJtZXNzYWdlVHlwZSI6IkNSZXEiLCJtZXNzYWdlVmVyc2lvbiI6IjIuMS4wIn0"
     },
     "owner": null
@@ -340,7 +279,7 @@ When the Challenge is completed, the payment status will be updated to `approved
 >
 > Important
 >
-> When the Challenge is initiated, the user has about 5 minutes to complete it. If it is not completed, the bank will decline the transaction and Mercado Pago will consider the payment cancelled. If the user never completes the challenge, the payment will remain as `pending_Challenge`.
+> When the Challenge is initiated, the user has about 5 minutes to complete it. If it is not completed, the bank will decline the transaction and Mercado Pago will consider the payment cancelled. If the user never completes the challenge, the payment will remain as `pending_challenge`.
 
 See the section below for more details on how to check the status of each transaction.
 
@@ -356,7 +295,7 @@ To **treat the iframe event**, follow the steps below.
 
 ### Perform implementation
 
-Use the following Javascript code to implement and request the event that indicates that the challenge has ended and redirected to a confirmation page.
+Use the following JavaScript code to implement and request the event that indicates that the Challenge has ended, so it is possible to redirect the client to the confirmation screen.
 
 
 [[[

@@ -188,7 +188,7 @@ payment = payment_response["response"]
 
 Caso não seja necessário utilizar o fluxo do _Challenge_, o campo `status` do pagamento terá valor `approved` e não será necessário exibi-lo, dessa forma, siga normalmente com o fluxo de sua aplicação. 
 
-Para os casos em que o _Challenge_ é necessário, o `status` mostrará o valor `pending`, e o `status_detail` será `pending_Challenge`.
+Para os casos em que o _Challenge_ é necessário, o `status` mostrará o valor `pending`, e o `status_detail` será `pending_challenge`.
 
 > NOTE
 >
@@ -207,69 +207,8 @@ Para os casos em que o _Challenge_ é necessário, o `status` mostrará o valor 
     "id": 52044997115,
     ...
     "status": "pending",
-    "status_detail": "pending_Challenge",
+    "status_detail": "pending_challenge",
     ...
-    "internal_metadata":
-    {
-        ...
-        "unified_processing": true,
-        "3ds_disabled_reason": "none",
-        "approval_optimization_context":
-        [
-            {
-                ...
-                "approval_decision":
-                {
-                    ...
-                    "approval_flows":
-                    [
-                        "no_cvv",
-                        "default",
-                        "tokenization",
-                        "threeds",
-                        "data_only"
-                    ],
-                    "three_ds": true,
-                    "remove_cvv": false,
-                    "operation_mode": "sync",
-                    "best_flows":
-                    [
-                        "threeds"
-                    ]
-                },
-                ...
-            }
-        ],
-        "g2": "on",
-        "3ds_status": "Challenge",
-        "3ds_Challenge": true,
-        "3dsChallengedrop_reason": "none",
-        ...
-        "approval_decision":
-        {
-            "abtesting_flows": null,
-            "deferred_retry": false,
-            "data_only": false,
-            "retry_after_time": null,
-            "approval_flows":
-            [
-                "no_cvv",
-                "default",
-                "tokenization",
-                "threeds",
-                "data_only"
-            ],
-            "three_ds": true,
-            "remove_cvv": false,
-            "operation_mode": "sync",
-            "best_flows":
-            [
-                "threeds"
-            ]
-        },
-        "mcc_source": "DEFAULT"
-    },
-    ........
     "three_dsinfo":
     {
         "external_resource_url": "https://acs-public.tp.mastercard.com/api/v1/browser_Challenges",
@@ -294,7 +233,7 @@ function doChallenge(payment) {
       status_detail,
       three_dsinfo: { creq, external_resource_url },
     } = payment;
-    if (status === "pending" && status_detail === "pending_Challenge") {
+    if (status === "pending" && status_detail === "pending_challenge") {
       var iframe = document.createElement("iframe");
       iframe.name = "myframe";
       iframe.id = "myframe";
@@ -350,7 +289,7 @@ Para **tratar o evento iframe**, siga as etapas abaixo.
 
 ### Realizar implantação
 
-Utilize o código Javascript a seguir para implementar e escutar o evento que indica que o _Challenge_ foi encerrado e redirecionado para a tela de confirmação.
+Utilize o código Javascript a seguir para implementar e escutar o evento que indica que o _Challenge_ foi encerrado, assim é possível redirecionar o cliente para a tela de confirmação.
 
 
 [[[
