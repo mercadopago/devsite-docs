@@ -2,6 +2,24 @@
 
 Você pode obter uma lista completa dos tipos e meios de pagamento disponíveis bem como seus detalhes (nomes, ids, configurações, status e etc.) através da API [Obter meios de pagamento](/developers/pt/reference/payment_methods/_payment_methods/get). Na resposta dessa API, serão indicados os meios de pagamento correspondentes ao país associado à sua conta Mercado Pago. 
 
+----[mlm]---- 
+
+> WARNING
+>
+> Atenção
+>
+> Em breve, o Paypal não estará mais disponível como meio de pagamento dentro das soluções do Mercado Pago. Não será mais possível receber pagamentos por este meio ou fazer novas integrações. Se você tiver dúvidas sobre essa alteração, veja como entrar em contato com o atendimento ao cliente [aqui](https://blog.mercadopago.com.mx/productos/atencion-al-cliente-mercado-pago-como-contactarse).
+------------
+
+----[mlb]---- 
+
+> WARNING
+>
+> Atenção
+>
+> Em breve, o Paypal não estará mais disponível como meio de pagamento dentro das soluções do Mercado Pago. Não será mais possível receber pagamentos por este meio ou fazer novas integrações. Se você tiver dúvidas sobre essa alteração, veja entre em contato com o atendimento ao cliente [aqui](https://www.mercadopago.com.br/ajuda).
+------------
+
 | Meios de pagamento | 🇦🇷 <br> Argentina | 🇧🇷 <br> Brasil | 🇨🇱 <br> Chile | 🇨🇴 <br> Colômbia | 🇲🇽 <br> México | 🇵🇪 <br> Peru | 🇺🇾 <br> Uruguai |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Dinheiro em Conta | Mercado Pago* | Mercado Pago* | Mercado Pago* | Mercado Pago* | Mercado Pago* | Mercado Pago* | - |

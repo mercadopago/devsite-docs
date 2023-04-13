@@ -2,6 +2,24 @@
 
 You can get a complete list of available payment types and methods as well as their details (names, ids, settings, status, etc.) via the [Get payment methods](/developers/en/reference/payment_methods/_payment_methods/get) API. In the response from this API, the means of payment corresponding to the country associated with your Mercado Pago account will be indicated.
 
+----[mlm]---- 
+
+> WARNING
+>
+> Attention
+>
+> Soon, Paypal will no longer be available as a means of payment within Mercado Pago solutions. It will no longer be possible to receive payments by this means or make new integrations. If you have questions about this change, you can see how to contact customer service [here](https://blog.mercadopago.com.mx/productos/atencion-al-cliente-mercado-pago-como-contactarse).
+------------
+
+----[mlb]---- 
+
+> WARNING
+>
+> Attention
+>
+> Soon, Paypal will no longer be available as a means of payment within Mercado Pago solutions. It will no longer be possible to receive payments by this means or make new integrations. If you have questions about this change, you can contact customer service [here](https://www.mercadopago.com.br/ajuda).
+------------
+
 | Payment methods | 🇦🇷 <br> Argentina | 🇧🇷 <br> Brazil | 🇨🇱 <br>  Chile | 🇨🇴 <br>  Colombia | 🇲🇽 <br> Mexico | 🇵🇪 <br> Peru | 🇺🇾 <br> Uruguay |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Cash in Account | Mercado Pago* | Mercado Pago* | Mercado Pago* | Mercado Pago* | Mercado Pago* | Mercado Pago* | - |
