@@ -1,6 +1,24 @@
 # Medios de pago disponibles
 
-Puede obtener una lista completa de los tipos y medios de pago disponibles, así como sus detalles (nombres, identificaciones, configuraciones, estado, etc.) a través de la API [Obtener métodos de pago](/developers/es/reference/payment_methods/_payment_methods/get). En la respuesta de esta API se indicará el medio de pago correspondiente al país asociado a tu cuenta de Mercado Pago.
+Puedes obtener una lista completa de los tipos y medios de pago disponibles, así como sus detalles (nombres, identificaciones, configuraciones, estado, etc.) a través de la API [Obtener métodos de pago](/developers/es/reference/payment_methods/_payment_methods/get). En la respuesta de esta API se indicará el medio de pago correspondiente al país asociado a tu cuenta de Mercado Pago.
+
+----[mlm]---- 
+
+> WARNING
+>
+> Atención
+>
+> Próximamente, Paypal dejará de estar disponible como medio de pago dentro de las soluciones de Mercado Pago. Ya no será posible recibir pagos por este medio ni realizar nuevas integraciones . Si tienes dudas sobre este cambio, puedes ver cómo contactarte con atención al cliente [aquí](https://blog.mercadopago.com.mx/productos/atencion-al-cliente-mercado-pago-como-contactarse).
+------------
+
+----[mlb]---- 
+
+> WARNING
+>
+> Atención
+>
+> Próximamente, Paypal dejará de estar disponible como medio de pago dentro de las soluciones de Mercado Pago. Ya no será posible recibir pagos por este medio ni realizar nuevas integraciones . Si tienes dudas sobre este cambio, puedes contactarte con atención al cliente [aquí](https://www.mercadopago.com.br/ajuda).
+------------
 
 | Medios de pago | 🇦🇷 <br> Argentina | 🇧🇷 <br> Brasil | 🇨🇱 <br> Chile | 🇨🇴 <br> Colombia | 🇲🇽 <br> México | 🇵🇪 <br> Perú | 🇺🇾 <br>Uruguay |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
