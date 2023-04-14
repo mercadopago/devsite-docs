@@ -1,6 +1,10 @@
+# Hide element
+
+See below how to hide Card Payment Brick elements.
+
 > CLIENT_SIDE
 >
-> h1
+> h2
 >
 > Hide title and flags
 
@@ -33,7 +37,7 @@ const customization = {
 
 > CLIENT_SIDE
 >
-> h1
+> h2
 >
 > Hide payment button
 
@@ -71,6 +75,8 @@ const customization = {
 };
 ```
 ]]]
+
+Since the default payment button has been hidden, you will need to add some replacement. The following code blocks exemplify how to implement your custom payment button.
 
 ```html
 <button type="button" onclick="createPayment();">Custom Payment Button</button>

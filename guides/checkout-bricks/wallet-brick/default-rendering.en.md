@@ -162,6 +162,8 @@ The result of rendering the Brick should look like the image below.
 
 </center>
 
+> If you want to change the Brick text, check the [Change texts](/developers/en/docs/checkout-bricks/wallet-brick/additional-customization/change-texts) section.
+
 ## Enable payment with Mercado Pago
 
 To use a payment method (paymentMethods) of the "mercadoPago" type, a preference must be sent during Brick initialization, replacing the value <PREFERENCE_ID> by the ID of the preference created.

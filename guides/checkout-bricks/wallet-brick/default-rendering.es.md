@@ -163,6 +163,7 @@ El resultado de renderizar el Brick debería parecerse a la imagen de abajo.
 
 </center>
 
+> Si desea cambiar el texto del Brick, consulte la sección [Cambiar textos.](/developers/es/docs/checkout-bricks/wallet-brick/additional-customization/change-texts)
 
 ## Habilitar pago con Mercado pago
 

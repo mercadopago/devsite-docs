@@ -376,7 +376,7 @@ Em seguida, inicialize a integração definindo sua [chave pública](/developers
 const mp = new MercadoPago('YOUR_PUBLIC_KEY');
 ```
 ```react-jsx
-import { initMercadoPago, Wallet } from '@mercadopago/sdk-js'
+import { initMercadoPago, Wallet } from '@mercadopago/sdk-react'
 initMercadoPago('YOUR_PUBLIC_KEY');
 ```
 ]]]

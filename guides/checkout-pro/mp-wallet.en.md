@@ -1,6 +1,6 @@
 # Mercado Pago Wallet
 
-The option to pay with Mercado Pago Wallet, by default, is presented in all Mercado Pago Checkouts (Checkout Pro and Payment Link) in combination with guest user payments (no login).
+The option to pay with Mercado Pago Wallet, by default, is presented in all Mercado Pago Checkouts in combination with guest user payments (no login).
 
 This option allows users registered in Mercado Pago and/or Mercado Livre to log in and use the available methods to make their payments, in addition to being able to include new payment options, such as credit cards.
 

@@ -1,6 +1,10 @@
+# Ocultar elemento
+
+Veja abaixo como ocultar elementos do Payment Brick.
+
 > CLIENT_SIDE
 >
-> h1
+> h2
 >
 > Ocultar título
 
@@ -33,7 +37,7 @@ const customization = {
 
 > CLIENT_SIDE
 >
-> h1
+> h2
 >
 > Ocultar botão de pagamento
 
@@ -72,6 +76,8 @@ const customization = {
 ```
 ]]]
 
+Visto que o botão de pagamento padrão foi oculto, será necessário adicionar alguma substituição. Os blocos de código a seguir exemplificam como implementar seu botão de pagamento customizado.
+
 ```html
 <button type="button" onclick="createPayment();">Custom Payment Button</button>
 ```
@@ -79,17 +85,15 @@ const customization = {
 ```Javascript
 function createPayment(){
     window.paymentBrickController.getFormData()
-        .then(({ paymentType, formData }) => {
+        .then(({ formData }) => {
             console.log('formData received, creating payment...');
-            if (paymentType === 'credit_card' || paymentType === 'debit_card') {
-                fetch("/process_payment", {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json",
-                    },
-                    body: JSON.stringify(formData),
-                })
-            }
+            fetch("/process_payment", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(formData),
+            })
         })
         .catch((error) => {
             // tratamento de erros ao chamar getFormData()
@@ -99,7 +103,7 @@ function createPayment(){
 
 > CLIENT_SIDE
 >
-> h1
+> h2
 >
 > Ocultar painel da Conta Mercado Pago
 

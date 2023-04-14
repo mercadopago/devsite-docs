@@ -1,6 +1,6 @@
 # Cuenta de Mercado Pago
 
-La opción de pagar con Cuenta de Mercado Pago, por defecto, se presenta en todos los Checkouts de Mercado Pago (Checkout Pro y Link de Pago) en combinación con los pagos de los usuarios invitados (sin login).
+La opción de pagar con Cuenta de Mercado Pago, por defecto, se presenta en todos los Checkouts de Mercado Pago en combinación con los pagos de los usuarios invitados (sin login).
 
 Esta opción permite a los usuarios registrados en Mercado Pago y/o Mercado Libre iniciar sesión y utilizar los métodos disponibles para realizar sus pagos, además de poder incluir nuevas opciones de pago, como tarjetas de crédito.
 

@@ -1,6 +1,10 @@
+# Ocultar elemento
+
+Ve a continuación cómo ocultar elementos de Card Payment Brick.
+
 > CLIENT_SIDE
 >
-> h1
+> h2
 >
 > Ocultar título y banderas
 
@@ -33,7 +37,7 @@ const customization = {
 
 > CLIENT_SIDE
 >
-> h1
+> h2
 >
 > Ocultar botón de pago
 
@@ -71,6 +75,8 @@ const customization = {
 };
 ```
 ]]]
+
+Dado que el botón de pago predeterminado se ha ocultado, deberá agregar algún reemplazo. Los siguientes bloques de código ejemplifican cómo implementar su botón de pago personalizado.
 
 ```html
 <button type="button" onclick="createPayment();">Custom Payment Button</button>

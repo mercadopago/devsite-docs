@@ -162,6 +162,8 @@ O resultado de renderizar o Brick deve ser como na imagem abaixo.
 
 </center>
 
+> Caso deseje alterar o texto do Brick, consulte a seção de [Alterar textos.](/developers/pt/docs/checkout-bricks/wallet-brick/additional-customization/change-texts)
+
 ## Habilitar pagamento com Mercado Pago
 
 Para utilizar o método de pagamento (paymentMethods) do tipo "mercadoPago" é preciso enviar uma preferência durante a inicialização do Brick, substituindo o valor <PREFERENCE_ID> pelo ID da preferência criada. 
