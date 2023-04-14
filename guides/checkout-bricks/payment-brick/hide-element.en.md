@@ -76,6 +76,8 @@ const customization = {
 ```
 ]]]
 
+Since the default payment button has been hidden, you will need to add some replacement. The following code blocks exemplify how to implement your custom payment button.
+
 ```html
 <button type="button" onclick="createPayment();">Custom Payment Button</button>
 ```

@@ -76,6 +76,8 @@ const customization = {
 ```
 ]]]
 
+Visto que o botão de pagamento padrão foi oculto, será necessário adicionar alguma substituição. Os blocos de código a seguir exemplificam como implementar seu botão de pagamento customizado.
+
 ```html
 <button type="button" onclick="createPayment();">Custom Payment Button</button>
 ```
