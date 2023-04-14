@@ -1,6 +1,10 @@
+# Hide element
+
+See below how to hide Card Payment Brick elements.
+
 > CLIENT_SIDE
 >
-> h1
+> h2
 >
 > Hide title and flags
 
@@ -33,7 +37,7 @@ const customization = {
 
 > CLIENT_SIDE
 >
-> h1
+> h2
 >
 > Hide payment button
 

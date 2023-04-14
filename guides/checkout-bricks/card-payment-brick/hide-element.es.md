@@ -1,6 +1,10 @@
+# Ocultar elemento
+
+Ve a continuación cómo ocultar elementos de Card Payment Brick.
+
 > CLIENT_SIDE
 >
-> h1
+> h2
 >
 > Ocultar título y banderas
 
@@ -33,7 +37,7 @@ const customization = {
 
 > CLIENT_SIDE
 >
-> h1
+> h2
 >
 > Ocultar botón de pago
 

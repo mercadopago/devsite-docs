@@ -74,7 +74,7 @@ If you are not using the native [submit Brick form button](/developers/en/docs/c
 
 ```javascript
 // variable where the Brick controller is saved
-cardPaymentBrickController.getAdditionalData()
+paymentBrickController.getAdditionalData()
         .then((additionalData) => {
             console.log("Additional data:", additionalData);
         })

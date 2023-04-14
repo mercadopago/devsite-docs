@@ -1,6 +1,10 @@
+# Hide element
+
+See below how to hide Payment Brick elements.
+
 > CLIENT_SIDE
 >
-> h1
+> h2
 >
 > Hide title
 
@@ -33,7 +37,7 @@ const customization = {
 
 > CLIENT_SIDE
 >
-> h1
+> h2
 >
 > Hide payment button
 
@@ -50,10 +54,10 @@ const settings = {
     ...,
     callbacks: {
         onReady: () => {
-            // callback chamado quando o Brick estiver pronto
+            // callback called when brick is ready
         },
         onError: (error) => { 
-            // callback chamado para todos os casos de erro do Brick
+            // callback called for all Brick error cases
         },
     },
     customization: {
@@ -79,17 +83,15 @@ const customization = {
 ```Javascript
 function createPayment(){
     window.paymentBrickController.getFormData()
-        .then(({ paymentType, formData }) => {
+        .then(({ formData }) => {
             console.log('formData received, creating payment...');
-            if (paymentType === 'credit_card' || paymentType === 'debit_card') {
-                fetch("/process_payment", {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json",
-                    },
-                    body: JSON.stringify(formData),
-                })
-            }
+            fetch("/process_payment", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(formData),
+            })
         })
         .catch((error) => {
             // error handling when calling getFormData()
@@ -99,7 +101,7 @@ function createPayment(){
 
 > CLIENT_SIDE
 >
-> h1
+> h2
 >
 > Hide Mercado Pago Wallet panel
 

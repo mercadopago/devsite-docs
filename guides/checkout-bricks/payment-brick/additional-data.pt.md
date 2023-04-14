@@ -74,7 +74,7 @@ Caso não esteja utilizando o botão nativo de [enviar formulário do Brick](/de
 
 ```javascript
 // variável onde o controller do Brick está salvo
-cardPaymentBrickController.getAdditionalData()
+paymentBrickController.getAdditionalData()
         .then((additionalData) => {
             console.log("Additional data:", additionalData);
         })
