@@ -126,7 +126,7 @@ pod ‘MercadoPagoDevicesSDK’
 ```
 ```android
 ===
-Make the following changes to the **build.gradle** file.
+You need to make these changes in the **build.gradle** file.
 Make sure you have added this repository:
 ===
 repositories {
