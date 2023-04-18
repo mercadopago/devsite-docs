@@ -127,17 +127,13 @@ pod ‘MercadoPagoDevicesSDK’
 ```
 ```android
 ===
-Necesitas realizar estos cambios en el archivo **build.gradle**.
-Asegurate de tener agregado este repositorio:
+Necesitas agregar el repositorio y la dependencia en el archivo **build.gradle**.
 ===
 repositories {
     maven {
         url "https://artifacts.mercadolibre.com/repository/android-releases"
     }
 }
-===
-Agrega esta línea en la sección de dependencias:
-===
 dependencies {
    implementation 'com.mercadolibre.android.device:sdk:3.0.5'
 }
