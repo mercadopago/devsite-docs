@@ -4,6 +4,7 @@ sites_supported:
 - mlb
 - mlm
 - mpe
+- mlu
 ---
 
 # Reserve values
@@ -148,21 +149,23 @@ payment = payment_response["response"]
 ```curl
 
 curl -X POST \
--H 'accept: application/json' \
--H 'content-type: application/json' \
--H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
-'https://api.mercadopago.com/v1/payments' \
--d '{
-"transaction_amount": 100,
-"token": "ff8080814c11e237014c1ff593b57b4d",
-"description": "Product title",
-"installations": 1,
-"payment_method_id": "visa",
-"payer": {
-"email": "test_user_19653727@testuser.com"
-},
-"capture": "false"
+    -H 'accept: application/json' \
+    -H 'content-type: application/json' \
+    -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/payments' \
+    -d '
+{
+   "transaction_amount":100,
+   "token":"ff8080814c11e237014c1ff593b57b4d",
+   "description":"Product title",
+   "installments":1,
+   "payment_method_id":"visa",
+   "payer":{
+      "email":"test_user_3931694@testuser.com"
+   },
+   "capture":false
 }'
+
 ```
 ]]]
 
@@ -184,7 +187,9 @@ The response indicates that the payment is authorized and pending capture.
 ```
 ]]]
 
-In addition, it is also possible to return as `rejected` or `pending`. Please note that authorized values cannot be used by your client until they are captured. We recommend capturing as soon as possible.
+In addition, it is also possible to return as `rejected` or `pending`. In case it returns as `pending`, you should pay attention to the notifications to know what the final status of the payment is.
+
+Please note that authorized values cannot be used by your client until they are captured. We recommend capturing as soon as possible.
 
 
 ----[mla, mlm]----
@@ -210,11 +215,3 @@ In addition, it is also possible to return as `rejected` or `pending`. Please no
 >
 > The reservation will be valid for 5 days. If you do not capture it within this period, it will be canceled. In addition, it is necessary to save the payment ID in order to complete the process.
 ------------
-
-> NEXT_STEP_CARD_EN
->
-> Capture authorized payment
->
-> Learn about the available ways to capture an authorized payment.
->
-> [Capture authorized payment](/developers/en/docs/checkout-api/payment-management/capture-authorized-payment)

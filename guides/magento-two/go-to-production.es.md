@@ -9,11 +9,3 @@ Después de realizar la integración y las pruebas, tu tienda está lista para e
 5. Después de configurar sus credenciales, haz clic en el botón **Save Config** en la esquina superior derecha. Es importante que guarde sus credenciales antes de continuar, ya que esto habilitará los métodos de pago disponibles en su país.
 
 ¡Listo! El módulo de Mercado Pago está listo para recibir pagos en línea. Con todos los pasos completados, tus clientes podrán realizar compras en tu tienda.
-
-> PREV_STEP_CARD_ES
->
-> Prueba de pagos
->
-> Aprende cómo hacer una compra de prueba y asegúrese de que la integración funcione.
->
-> [Prueba de pagos](/developers/es/docs/magento-two/sales-processing/integration-test)

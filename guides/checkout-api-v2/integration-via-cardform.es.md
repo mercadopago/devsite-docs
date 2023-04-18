@@ -1,13 +1,12 @@
-# Integración vía Cardform
+# Tarjeta
 
-En este modo de integración, **MercadoPago.js** se encarga de los flujos necesarios para obtener la información requerida para la generación de un pago. Al inicializarlo, se realiza una búsqueda para recabar los tipos de documentos disponibles para el país correspondiente.
+La integración de los pagos con tarjeta se realiza a través de cardform. En este modo de integración, **MercadoPago.js** se encarga de los flujos necesarios para obtener la información requerida para la generación de un pago. Al inicializarlo, se realiza una búsqueda para recabar los tipos de documentos disponibles para el país correspondiente.
 
 A medida que se introducen los datos de la tarjeta, se realiza una búsqueda automática de la información del emisor y las cuotas disponibles para ese método de pago. Con esto, la implementación del flujo es transparente para quien realiza la integración.
 
 Consulta el siguiente diagrama que ilustra el proceso de pago con tarjeta utilizando Card Form.
 
-![API-integration-flowchart](/images/api/api-integration-flowchart-cardform-es.png)
-
+![API-integration-flowchart](/images/api/api-integration-flowchart-cardform-2-es.png)
 
 Para integrar los pagos con tarjeta en Checkout API sigue las siguientes etapas.
 
@@ -40,6 +39,12 @@ Esta es la primera etapa de una estructura de código completa que se debe segui
 ## Añadir formulario de pago
 
 La captura de los datos de la tarjeta se realiza a través del CardForm de la biblioteca MercadoPago.js. Nuestro CardForm se conectará a tu formulario de pago HTML, facilitando la obtención y validación de todos los datos necesarios para procesar el pago.
+
+> WARNING
+>
+> Importante
+>
+> El cardtoken puede ser utilizado **solo una vez** y caduca en un plazo de **7 días**.
 
 Para añadir el formulario de pago, inserta el siguiente HTML directamente en el proyecto. 
 
@@ -403,7 +408,7 @@ curl -X POST \
          "payment_method_id": "visa",
          "issuer_id": 310,
          "payer": {
-           "email": "test@test.com"
+           "email": "PAYER_EMAIL"
          }
    }'
  
@@ -445,19 +450,3 @@ La respuesta devolverá el siguiente resultado
 
 ------------
 
-> PREV_STEP_CARD_ES
->
-> Requisitos previos
->
-> Consulta los requisitos previos que se necesitan para integrar Checkout API.
->
-> [Integrar Checkout API](/developers/es/docs/checkout-api/prerequisites)
-
-
-> NEXT_STEP_CARD_ES
->
-> Otros medios de pagos
->
-> Descubre las otras opciones de pago disponibles para la integración.
->
-> [Otros medios de pagos](/developers/es/docs/checkout-api/integration-configuration/other-payment-methods)

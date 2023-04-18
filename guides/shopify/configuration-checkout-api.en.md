@@ -9,11 +9,27 @@ We recommend you customize the checkout information of the store to ensure a bet
 3. Once there, select the **Checkout** option.
 4. In the **Customer Information** section, select the field "Company Name" as required.
 
+----[mlb]----
+![configurar empresa portugues](/images/shopify/configurar-empresa-PT.gif)
+------------
+
+----[mla, mlu, mlc, mco, mpe, mlm]----
+![configurar empresa español](/images/shopify/configurar-empresa-ES.gif)
+------------
+
 ## Configure the store language 
 
 1. In the store's administrative panel, click on **Settings**. There, click on **Languages**.
 2. In the Default Language section, you can choose the language in which the store will operate. Click **Change default**.  
 3. On the next screen, choose a language, and click on the **Save** button.
+
+----[mlb]----
+![configurar idioma pt](/images/shopify/cambiar-idioma-PT.png)
+------------
+
+----[mla, mlu, mlc, mco, mpe, mlm]----
+![configurar idioma es](/images/shopify/cambiar-idioma-ES.png)
+------------
 
 ## Set values of buyer's identification
 

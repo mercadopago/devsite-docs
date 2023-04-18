@@ -6,9 +6,7 @@ With the [Checkout API](/developers/en/guides/checkout-api/landing), offer **Pix
 >
 > Important
 >
-> The Pix payment option will only be displayed if there is a Pix key registered] in Mercado Pago. If you haven't created it yet, [click here](https://www.youtube.com/watch?v=60tApKYVnkA) and check the necessary steps. </br>
-> </br> <br/>
-> In addition, there is a limit to the value of Pix, established by the Central Bank of Brazil, which can be moved during the night period (between 8 pm and 6 am) of R$1 thousand. For the daytime period (between 6 am and 8 pm), however, there is no movement limit.
+> The Pix payment option will only be displayed if there is a Pix key registered in Mercado Pago. If you haven't created one yet, [click here](https://www.youtube.com/watch?v=60tApKYVnkA) and check the necessary steps.
 
 To integrate the payment method, follow the steps below.
 
@@ -21,18 +19,3 @@ To integrate the payment method, follow the steps below.
 7. In the **Redirect Payer** field, indicate whether the buyer will be automatically redirected to the bank's payment page, without having to go through an intermediate page in your store.
 8. Then click** **Save Config** to save your preferences.
 
-> PREV_STEP_CARD_EN
->
-> Configure offline payments (ticket)
->
-> Configure your store to receive payments offline (ticket and ATM) using the Checkout API.
->
-> [Configure offline payments (ticket)](/developers/en/docs/magento-two/payment-configuration/checkout-api/ticket)
-
-> NEXT_STEP_CARD_EN
->
-> Configure payments with Checkout Pro
->
-> Learn how to set up Checkout Pro to receive payments from your store.
->
-> [Configure payments with Checkout Pro](/developers/en/docs/magento-two/payment-configuration/checkout-pro)

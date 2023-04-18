@@ -8,10 +8,3 @@ Esta información está disponible en la sección **Notas del pedido** en el pan
 
 En esta sección, tendrás acceso a detalles del posible status y motivos de cada devolución.
 
-> NEXT_STEP_CARD_ES
->
-> Status de pago
->
-> Conoce los status de pago que muestran el estado de la venta.
->
-> [Status de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/woocommerce/payment-status)

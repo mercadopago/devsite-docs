@@ -13,28 +13,6 @@ bullet_section_with_media:
  - image: /checkout-bricks/cho-bricks-landing-v4.png
 ---
 
----
-bullet_section_with_media: 
- - title: Bricks
- - type: reversed
- - message: Know all Checkout Bricks modules and their availability.
- - benefit_title: Card Payment Brick - New
- - benefit_message: Offer credit and debit card payments with the ability to save card details for future purchases.
- - benefit_title: Payment Brick - Soon
- - benefit_message: Offer different payment methods from which your customers can choose.
- - benefit_title: Wallet Brick - Soon
- - benefit_message: Link digital wallets and allow logged payments. 
- - benefit_title: User Info Brick - Soon
- - benefit_message: Collect the data of your clients and infer those that will be needed in the purchase process.
- - benefit_title: Shipping Brick - Soon
- - benefit_message: Collect shipping data from your customers and display the available delivery options and their benefits.
- - benefit_title: Review & Confirm Brick - Soon
- - benefit_message: Shows a summary of the entire purchase process, with the most relevant information, so that your customers can review before confirming the purchase.
- - benefit_title: Status Screen Brick - Soon
- - benefit_message: Inform your customers of the results of the purchase process, after making the payment. 
- - image: /checkout-bricks/cho-bricks-landing-v5.png
----
-
 --- mini_landing_separator ---
 
 >>>> Availability by country <<<<
@@ -42,3 +20,122 @@ bullet_section_with_media:
 available_countries: mla, mlb, mlm, mlu, mlc, mco, mpe
 
 ---
+
+--- mini_landing_separator ---
+
+---
+future_product_avaible: 
+ - title: Bricks
+ - description: Know all Checkout Bricks modules and their availability.
+ - card_avaible: true
+ - card_icon: Card
+ - card_title: Card Payment Brick
+ - card_description: Offer credit and debit card payments.
+ - card_link: /developers/en/docs/checkout-bricks/card-payment-brick/introduction
+ - card_linkDescription: Learn more
+ - card_pillText: AVAILABLE
+ - card_avaible: true
+ - card_icon: Pay
+ - card_title: Payment Brick
+ - card_description: Offer different payment methods from which your customers can choose, with the ability to save card details for future purchases.
+ - card_link: /developers/en/docs/checkout-bricks/payment-brick/introduction
+ - card_linkDescription: Learn more
+ - card_pillText: AVAILABLE
+  - card_avaible: true
+ - card_icon: Loading
+ - card_title: Status Screen Brick
+ - card_description: Inform your customers of the results of the purchase process, after making the payment. 
+ - card_link: /developers/en/docs/checkout-bricks/status-screen-brick/introduction
+ - card_linkDescription: Learn more
+ - card_pillText: AVAILABLE
+ - card_avaible: true
+ - card_icon: Wallet
+ - card_title: Wallet Brick
+ - card_description:  Link Mercado Pago Wallet and allow logged payments.
+ - card_link: /developers/en/docs/checkout-bricks/wallet-brick/introduction
+ - card_linkDescription: Learn more
+ - card_pillText: AVAILABLE
+ - card_avaible: false
+ - card_icon: User
+ - card_title: User Info Brick
+ - card_description: Collect the data of your clients and infer those that will be needed in the purchase process.
+ - card_link: Learn more
+ - card_linkDescription:
+ - card_pillText: SOON
+ - card_avaible: false
+ - card_icon: Truck
+ - card_title: Shipping Brick
+ - card_description: Collect shipping data from your customers and display the available delivery options and their benefits.
+ - card_link:
+ - card_linkDescription:
+ - card_pillText: SOON
+ - card_avaible: false
+ - card_icon: Check
+ - card_title: Review & Confirm Brick
+ - card_description: Shows a summary of the entire purchase process, with the most relevant information, so that your customers can review before confirming the purchase.
+ - card_link:
+ - card_linkDescription:
+ - card_pillText: SOON
+---
+
+--- mini_landing_separator ---
+>>>>  Accepted payment types <<<<
+
+----[mlb]----
+
+---
+available_payments: credit, debit, mercadopago, boleto, pix, pec
+
+---
+
+------------
+
+----[mla]---- 
+
+---
+available_payments: credit, debit, mercadopago, rapipago, pagofacil
+
+---
+------------
+
+----[mlm]---- 
+
+---
+available_payments: credit, debit, mercadopago, efectivo, atm
+
+---
+------------
+
+----[mlu]---- 
+
+---
+available_payments: credit, debit, mercadopago
+
+---
+------------
+
+----[mco]---- 
+
+---
+available_payments: credit, debit, mercadopago
+
+---
+------------
+
+----[mlc]---- 
+
+---
+available_payments: credit, debit, mercadopago
+
+---
+------------
+
+----[mpe]---- 
+
+---
+available_payments: credit, debit, mercadopago, atm
+
+---
+------------
+
+> For details of accepted payment methods in each country, check the full list with [payment methods availability.](/developers/en/docs/sales-processing/payment-methods)

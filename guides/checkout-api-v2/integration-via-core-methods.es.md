@@ -6,14 +6,11 @@ En la integración vía Métodos Core, el integrador decide cuándo buscar infor
 
 Consulta el diagrama que ilustra el proceso de pago con tarjeta a través de los Métodos Core.
 
-
-
 ![API-integration-flowchart](/images/api/api-integration-flowchart-coremethods-es.png)
 
 ## Importar MercadoPago.js
 
 La primera etapa del proceso de integración de los pagos con tarjeta es la **captura de los datos de la tarjeta**. Esta captura se realiza a través de la inclusión de la biblioteca MercadoPago.js en tu proyecto, seguida del formulario de pago. Utiliza el siguiente código para importar la biblioteca MercadoPago.js antes de añadir el formulario de pago.
-
 
 [[[
 ```html
@@ -307,7 +304,7 @@ El token de la tarjeta se crea a partir de la información de la misma, lo que a
 >
 > Importante
 >
-> El método `createCardToken` devuelve un token con la representación segura de los datos de la tarjeta, además tomaremos el ID del token de la respuesta y lo guardaremos en una input oculto denominado`token` para enviar posteriormente el formulario a los servidores.
+> El método `createCardToken` devuelve un token con la representación segura de los datos de la tarjeta. Tomaremos el ID del token de la respuesta y lo guardaremos en una input oculto denominado`token` para enviar posteriormente el formulario a los servidores. Además, ten en cuenta que el **token tiene una validez de 7 días** y solo se **puede usar una vez**.
 
 [[[
 ```javascript
@@ -576,19 +573,3 @@ curl -X POST \
 
 Al finalizar, podrás realizar pruebas y asegurarte de que la integración funciona correctamente.
 
-> PREV_STEP_CARD_ES
->
-> Requisitos previos
->
-> Consulta los requisitos previos que se necesitan para integrar Checkout API.
->
-> [Integrar Checkout API](/developers/es/docs/checkout-api/prerequisites)
-
-
-> NEXT_STEP_CARD_ES
->
-> Prueba de integración
->
-> Aprende cómo probar la integración de Checkout API en tu tienda.
->
-> [Prueba de integración](/developers/es/docs/checkout-api/test-integration/create-test-user)

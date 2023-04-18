@@ -21,7 +21,6 @@ Este documento contiene los medios y tipos de pago disponibles para tu integraci
 |Rapipago|`rapipago`|`ticket`|MercadoPagoPro y MercadoPagoOff|
 
 ------------
-
 ----[mlb]----
 
 |Nombre|Métodos de Pago|Tipos de Pago|Planes en VTEX|
@@ -36,7 +35,6 @@ Este documento contiene los medios y tipos de pago disponibles para tu integraci
 |Pix|`pix`|`bank_transfer`|Pix y MercadoPagoPro|
 
 ------------
-
 ----[mlc]----
 
 |Nombre|Métodos de Pago|Tipos de Pago|Planes en VTEX|
@@ -49,7 +47,6 @@ Este documento contiene los medios y tipos de pago disponibles para tu integraci
 |Visa Débito|`debvisa`|`debit_card`|Visa Electron, MercadoPagoPro y MercadoPagoWallet|
 
 ------------
-
 ----[mco]----
 
 |Nombre|Métodos de Pago|Tipos de Pago|Planes en VTEX|
@@ -64,7 +61,6 @@ Este documento contiene los medios y tipos de pago disponibles para tu integraci
 |PSE|`pse`|`bank_transfer`|PSE y MercadoPagoPro|
 
 ------------
-
 ----[mlm]----
 
 |Nombre|Métodos de Pago|Tipos de Pago|Planes en VTEX|
@@ -93,7 +89,6 @@ Este documento contiene los medios y tipos de pago disponibles para tu integraci
 |Pago Efectivo|`pagoefectivo_atm`|`atm`|MercadoPagoPro y MercadoPagoOff|
 
 ------------
-
 ----[mlu]----
 
 |Nombre|Métodos de Pago|Tipos de Pago|Planes en VTEX|

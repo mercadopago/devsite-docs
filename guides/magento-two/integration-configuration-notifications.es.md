@@ -27,19 +27,3 @@ Habiendo seleccionado **Checkout API** para recibir pagos de tu tienda, es impor
 4. Envía un **e-mail de prueba** para asegurarte de que la plataforma está enviando correos electrónicos correctamente.
 
 ¡Listo! El envío de correos electrónicos se ha configurado correctamente.
-
-> PREV_STEP_CARD_ES
->
-> Configura tus credenciales
->
-> Aprende a ingresar las credenciales para habilitar los métodos de pago disponibles en el país de origen de la tienda.
->
-> [Configure suas credenciais](/developers/es/docs/magento-two/integration-configuration/credentials)
-
-> NEXT_STEP_CARD_ES
->
-> Configurar información de la tienda
->
-> Aprende a configurar la información comercial de tu tienda.
->
-> [Configurar información de la tienda](/developers/es/docs/magento-two/integration-store)

@@ -148,7 +148,7 @@ Para configurar los pagos con Pix, envía un **POST** al endpoint [/v1/payments]
  $payment->description = "Título del producto";
  $payment->payment_method_id = "pix";
  $payment->payer = array(
-     "email" => "test@test.com",
+     "email" => "PAYER_EMAIL",
      "first_name" => "Test",
      "last_name" => "User",
      "identification" => array(
@@ -178,7 +178,7 @@ var payment_data = {
   description: 'Título del producto',
   payment_method_id: 'pix',
   payer: {
-    email: 'test@test.com',
+    email: 'PAYER_EMAIL',
     first_name: 'Test',
     last_name: 'User',
     identification: {
@@ -216,7 +216,7 @@ PaymentCreateRequest paymentCreateRequest =
        .dateOfExpiration(OffsetDateTime.of(2023, 1, 10, 10, 10, 10, 0, ZoneOffset.UTC))
        .payer(
            PaymentPayerRequest.builder()
-               .email("test@test.com")
+               .email("PAYER_EMAIL")
                .firstName("Test")
                .identification(
                    IdentificationRequest.builder().type("CPF").number("19119119100").build())
@@ -234,7 +234,7 @@ payment_request = {
   description: 'Título del producto',
   payment_method_id: 'pix',
   payer: {
-    email: 'test@test.com',
+    email: 'PAYER_EMAIL',
     identification: {
       type: 'CPF',
       number: '19119119100',
@@ -262,7 +262,7 @@ var request = new PaymentCreateRequest
     PaymentMethodId = "pix",
     Payer = new PaymentPayerRequest
     {
-        Email = "test@test.com",
+        Email = "PAYER_EMAIL",
         FirstName = "Test",
         LastName = "User",
         Identification = new IdentificationRequest
@@ -286,7 +286,7 @@ payment_data = {
     "description": "Título del producto",
     "payment_method_id": "pix",
     "payer": {
-        "email": "test@test.com",
+        "email": "PAYER_EMAIL",
         "first_name": "Test",
         "last_name": "User",
         "identification": {
@@ -318,7 +318,7 @@ curl -X POST \
       "description": "Título del producto",
       "payment_method_id": "pix",
       "payer": {
-        "email": "test@test.com",
+        "email": "PAYER_EMAIL",
         "first_name": "Test",
         "last_name": "User",
         "identification": {
@@ -380,8 +380,11 @@ La respuesta mostrará el estado del pago pendiente y toda la información que n
 
 Con Pix, también puedes elegir el plazo que el cliente tendrá para pagar la compra, definiendo la validez del código de pago que se le envía después de realizar el pedido.
 
-Por defecto, la fecha de vencimiento para pagos con Pix es de **24 horas**, pero puedes modificarla enviando el campo `date_of_expiration` en la solicitud de creación del pago. 
-
+> NOTE
+>
+> Importante
+>
+> Por defecto, la fecha de vencimiento para pagos con Pix es de **24 horas**, pero puedes modificarla enviando el campo `date_of_expiration` en el request de creación del pago. La fecha configurada debe estar entre **5 minutos y hasta 30 días** a partir de la fecha de emisión del pago.
 
 ## Visualización del pago
 
@@ -430,19 +433,4 @@ Sigue las etapas que se indican a continuación para renderizar el código QR y 
 
 Al finalizar estas etapas, el código QR estará renderizado y se mostrará al comprador durante el pago. 
 
-> PREV_STEP_CARD_ES
->
-> Requisitos previos
->
-> Consulta los requisitos previos que se necesitan para integrar Checkout API.
->
-> [Integrar Checkout API](/developers/es/docs/checkout-api/prerequisites)
 
-
-> NEXT_STEP_CARD_ES
->
-> Prueba de integración
->
-> Aprende cómo probar la integración de Checkout API en tu tienda.
->
-> [Prueba de integración](/developers/es/docs/checkout-api/integration-test/make-test-purchase)

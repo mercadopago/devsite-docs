@@ -49,35 +49,37 @@ O IVA deve ser um valor determinado, não envie uma porcentagem. Caso não envie
 Se está integrando pagamentos presenciais, **é preciso informar o valor total de IVA a pagar sobre o valor total de todos os produtos discriminados em um array de items**.
 
 ```curl
-curl -X POST \
--H 'Authorization: Bearer ACCESS_TOKEN' \
-https://api.mercadopago.com/mpmobile/instore/qr/USER_ID/EXTERNAL_ID \
--d \
-{
-    "external_reference": "order-id-1234",
-    "notification_url": "www.yourserver.com/yourendpoint",
-    "sponsor_id": 629437702,
-    "items": [
-        {
-            "title": "Item 1",
-            "currency_id": "COP",
-            "unit_price": 6000,
-            "quantity": 1
-        },
-         {
-            "title": "Item 2",
-            "currency_id": "COP",
-            "unit_price": 4000,
-            "quantity": 1
-        }
-    ],
-    "taxes": [
-        {
-            "value": 500,
-            "type": "IVA"
-        }
-    ]
-}
+curl -X PUT \
+    'https://api.mercadopago.com/instore/qr/seller/collectors/{user_id}/stores/{external_store_id}/pos/{external_pos_id}/orders' \
+    -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
+    -H 'Content-Type: application/json' \
+    -d '{
+  "external_reference": 12345,
+  "title": "Product order",
+  "notification_url": "www.yourserver.com",
+  "total_amount": 6000,
+  "items": [
+    {
+      "sku_number": "A123K9191938",
+      "category": "marketplace",
+      "title": "Item 1",
+      "description": "Item",
+      "unit_price": 3000,
+      "quantity": 2,
+      "unit_measure": "unit",
+      "total_amount": 6000
+    }
+  ],
+  "taxes": [
+    {
+      "value": 1140,
+      "type": "IVA"
+    }
+  ],
+  "sponsor": {
+    "id": 446566691
+  }
+}'
 ```
 
 Caso os atributos de taxas não sejam enviados, se aplicará o IVA geral de (19%) sobre o valor toral do pedido.

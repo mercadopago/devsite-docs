@@ -948,8 +948,6 @@ EXTERNAL_REFERENCE;SOURCE_ID;USER_ID;PAYMENT_METHOD_TYPE;PAYMENT_METHOD;SITE;TRA
 2112729919;5067463621;123456789;credit_card;master;MLB;SETTLEMENT;79.00;BRL;2019-08-11T20:41:46.000-04:00;-8.85;70.15;BRL;2019-08-11T20:41:55.000-04:00;70.15;0.00;[{}];-8.85;0.00;0.00;0.00;1;2112729919;;;
 ```
 
-<br/>
-
 ## Agende seus relatórios automáticos
 
 Gere seus relatórios de forma programada configurando duas instâncias: ativação e desativação.
@@ -1139,20 +1137,4 @@ Como resposta, você receberá um `HTTP STATUS 200 (Ok)`
 >
 > Esta documentação corresponde à nova versão da API
 >
-> Para consultar a versão anterior, por favor, acesse a [seção Geração por API antiga](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/account-money/v1/api).
-
-> NEXT_STEP_CARD_PT
->
-> Geração a partir do Mercado Pago
->
-> Baixe seus relatórios de forma manual ou programada na sua conta do Mercado Pago.     
->
-> [Geração a partir do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/account-money/panel)
-
-> NEXT_STEP_CARD_PT
->
-> Glossário
->
-> Saiba o que significa cada termo e os detalhes das colunas que compõem o relatório.
->
-> [Glossário](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/account-money/glossary)
+> Para consultar a versão anterior, por favor, acesse a [seção Geração por API antiga.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/account-money/v1/api)

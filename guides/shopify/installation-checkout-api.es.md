@@ -13,6 +13,8 @@ Para instalar Checkout Transparente en una tienda Shopify, sigue los pasos a con
 
 > En caso de renovar tus credenciales, recuerda reemplazar tanto las de producción como las de pruba en tu integración.
 
+![installation choapi](/images/shopify/configurar-chotransparente-pt.gif)
+
 > NOTE
 >
 > Nota

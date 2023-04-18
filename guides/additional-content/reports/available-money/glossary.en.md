@@ -1,11 +1,19 @@
 # Glossary
 
+----[mlm]----
 > WARNING
 >
-> The Available Balance report will be disabled from March 1st, 2022
+> Important
 >
-> You can use the [Releases report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/released-money/introduction) to reconcile the transactions that affect the balance available in your account, including your bank withdrawals.
-
+> As of December 12th, you will no longer be able to create new Money withdrawn reports. In order to keep tracking all the transfers, withdrawals and movements of your available money, [please use the Releases report.](https://bit.ly/3zCb1ye)
+------------
+----[mla]----
+> WARNING
+>
+> Important
+>
+> As of December 5th, you will no longer be able to create new Money withdrawn reports. In order to keep tracking all the transfers, withdrawals and movements of your available money, [please use the Releases report.](https://bit.ly/3zCb1ye)
+------------
 
 We know, some terms are technical and you may not be familiar with all of them. Use this glossary to not get lost!
 
@@ -27,7 +35,7 @@ We know, some terms are technical and you may not be familiar with all of them. 
 | TAXES_AMOUNT | ----[mla]----Tax collected for withholdings of Gross Income, VAT, Profits; and taxes on Credits and Debits, among others.[Learn more about withholdings and perceptions.](https://vendedores.mercadolibre.com.ar/nota/retenciones-y-percepciones-sobre-tus-ventas-lo-que-debes-saber/) ------------ Taxes charged for gross income withholdings. |
 | COUPON_AMOUNT | Discount coupon amount. Only the gross amount (`GROSS_AMOUNT`) is discounted if provided by the seller. |
 | INSTALLMENTS | Number of installments in which the operation was carried out. |
-| PAYMENT METHOD | Payment method. ----[mla]---- [It can be](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods/#bookmark_argentina) ------------ ----[mlb]---- [It can be](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods/#bookmark_brasil) ------------ ----[mpe]---- [It can be](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods/#bookmark_perú) ------------ ----[mco]---- [It can be](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods/#bookmark_colombia) ------------ ----[mlm]---- [It can be](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods/#bookmark_méxico) ------------ ----[mlu]---- [It can be](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods/#bookmark_uruguay) ------------ ----[mlc]---- [It can be](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods/#bookmark_chile) ------------ |
+| PAYMENT METHOD | [Payment method](/developers/en/docs/sales-processing/payment-methods) available by country. |
 | TAX_DETAIL | <br/> Description of the tax withheld by operation in `TAXES_AMOUNT`. ----[mla]---- You can consider the following values depending on the jurisdiction: <br/>cordoba<br/>corrientes<br/>mendoza<br/>la_pampa<br/>santa_fe<br/>tucuman<br/>entre_rios<br/>catamarca<br/>neuquen<br/>santiago_del_estero<br/>rio_negro<br/>jujuy ------------ <br/><br/> |
 | TAX_AMOUNT_TELCO | It is the value of the tax on telecommunications companies that is deducted from the gross value. |
 | TRANSACTION_APPROVAL_DATE | Date of approval of the operation. |

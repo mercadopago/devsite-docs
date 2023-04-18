@@ -8,11 +8,3 @@ By integrating Mercado Pago in your VTEX store, you will install a version of [C
 2. [Register the gateway affiliation with **Mercado Pago**](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/vtex/gateway-affiliations)
 3. [Configure the Mercado Pago payment conditions](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/vtex/configure-payment-conditions)
 4. [Configure the device fingerprint (optional but recommended)](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/vtex/device-fingerprint)
-
-> NEXT_STEP_CARD_EN
->
-> Prerequisites
->
-> Learn about the prerequisites for your integration.
->
-> [Prerequisites](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/vtex/prerequisites)

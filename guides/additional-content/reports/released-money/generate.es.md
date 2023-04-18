@@ -114,23 +114,3 @@ Para validar que sea Mercado Pago quien emitió la notificación se debe usar la
 >
 > Los reportes que generes a partir del 27 de junio presentarán tus movimientos en orden cronológico para que puedas identificarlos más fácil y controlar mejor las finanzas de tu negocio. [Conoce la nueva anatomía del reporte.](https://vendedores.mercadolibre[FAKER][URL][DOMAIN]/lleva-el-control-de-tu-dinero-con-el-reporte-de-liberaciones)
 ------------
-
-<hr/>
-
-### Próximos pasos
-
-> LEFT_BUTTON_RECOMMENDED_ES
->
-> Glosario
->
-> Conoce qué significa cada término y el detalle de las columnas que componen al reporte.
->
-> [Glosario](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/glossary)
-
-> RIGHT_BUTTON_RECOMMENDED_ES
->
-> Cómo usar el reporte
->
-> Qué es y para qué sirve el reporte de ----[mla]---- Liquidaciones.------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberaciones.------------ Descubre ejemplos y casos de uso.
->
-> [Cómo usar el reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/how-to-use)

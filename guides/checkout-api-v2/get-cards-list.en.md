@@ -76,18 +76,3 @@ The response will bring the following result.
 }]
 ```
 
-> PREV_STEP_CARD_EN
->
-> Add new cards to a customer
->
-> Learn how  to add new cards to a previously created customer.
->
-> [Add new cards to a customer](/developers/en/docs/checkout-api/cards-and-customers-management/add-new-cards-to-customer)
-
-> NEXT_STEP_CARD_EN
->
-> Receive payments with saved cards
->
-> Learn how to receive payments from cards previously saved in the buyer's account.
->
-> [Receive payments with saved cards](/developers/en/docs/checkout-api/cards-and-customers-management/receive-payments-with-saved-cards)

@@ -6,12 +6,13 @@ Para usar a integração do Mercado Pago com o Magento 2 em sua loja, você deve
 > 
 > Atenção
 > 
-> Em outubro de 2022, as versões do módulo Mercado Pago anteriores a 3.5.0 serão descontinuadas e deixarão de funcionar. Além disso, em abril as bandeiras de cartões de crédito aplicaram mudanças internacionais nas transações.  
+> As versões do módulo Mercado Pago anteriores a 3.5.0 foram descontinuadas.
 > </br><br/>
 > **Mantenha seu módulo e sua loja sempre atualizados para não perder vendas.**
 
 | Requisitos  | Descrição | Especificações |
 | --- | --- | --- |
+| Aplicação | As aplicações são as diferentes integrações contidas em uma ou mais lojas. Você pode criar uma aplicação para cada solução que implementar, a fim de ter tudo organizado e manter um controle que facilite a gestão. Veja [Dashboard](/developers/pt/docs/magento-two/additional-content/dashboard/introduction) para mais informações sobre como criar uma aplicação. | N/A |
 | Ambiente | Serviço de hospedagem | LAMP (Linux, Apache, MySQL e PHP)<br/>Pilha LNMP |
 | Base de dados | Conjuntos de arquivos relacionados entre si com registros sobre pessoas, lugares ou coisas. | MySQL 5.6 (MariaDB e Percona) |
 | Configuração adicional | Ajustes recomendados para uma melhor performance e funcionamento adequado da Magento 2 e ao módulo do Mercado Pago. | Memória mínima de 2 GB de RAM |
@@ -28,18 +29,3 @@ Para usar a integração do Mercado Pago com o Magento 2 em sua loja, você deve
 
 Se todos os pré-requisitos forem atendidos, você poderá instalar o módulo do Mercado Pago na plataforma da Magento 2.
 
-> PREV_STEP_CARD_PT
->
-> Página inicial
->
-> Retorne a página inicial da documentação da Magento 2.
->
-> [Página inicial](/developers/pt/docs/magento-two/landing)
-
-> NEXT_STEP_CARD_PT
->
-> Instalação do módulo
->
-> Conheça as formas de instalação do módulo do Mercado Pago na plataforma Magento 2.
->
-> [Instalação do módulo](/developers/pt/docs/magento-two/installation)

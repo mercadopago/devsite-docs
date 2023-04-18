@@ -6,12 +6,13 @@ To use the Mercado Pago integration with Magento 2 in your store, you must meet 
 >
 > Attention
 >
-> In October 2022, versions of the Mercado Pago module prior to 3.5.0 will be discontinued and will no longer work. In addition, in April, credit card brands applied international changes to transactions.
+> All versions of the Mercado Pago module prior to 3.5.0 were discontinued.
 > </br><br/>
 > **Keep your module and your store always up to date so you don't lose sales.**
 
 | Requirements | Description | Specifications |
 | --- | --- | --- |
+| Application | Applications are the different integrations in one or more stores. You can create an application for each solution you implement to keep everything organized and on track for easier management. Check [Dashboard](/developers/en/docs/magento-two/additional-content/dashboard/introduction) for more information on how to create an application. | N/A |
 | Environment | Hosting Service | LAMP (Linux, Apache, MySQL and PHP)<br/>LNMP stack |
 | Database | Sets of files related to each other with records about people, places, or things. | MySQL 5.6 (MariaDB and Percona) |
 | Additional Configuration | Recommended adjustments for better performance and proper functioning of Magento 2 and the Mercado Pago module. | Minimum 2GB RAM |
@@ -28,18 +29,3 @@ To use the Mercado Pago integration with Magento 2 in your store, you must meet 
 
 If all the prerequisites are met, you can install the Mercado Pago módulo on the Magento 2 platform.
 
-> PREV_STEP_CARD_EN
->
-> Homepage
->
-> Return to the Magento 2 documentation homepage.
->
-> [Home](/developers/en/docs/magento-two/landing)
-
-> NEXT_STEP_CARD_EN
->
-> Module installation
->
-> Check how to install the Mercado Pago module on the Magento 2 platform.
->
-> [Module installation](/developers/en/docs/magento-two/installation)

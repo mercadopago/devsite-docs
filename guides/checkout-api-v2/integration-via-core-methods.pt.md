@@ -6,16 +6,11 @@ Na integração via Métodos Core, o integrador decide quando buscar as informa�
 
 Confira abaixo o diagrama que ilustra o processo de pagamento via cartão utilizando Métodos Core.
 
-
-
 ![API-integration-flowchart](/images/api/api-integration-flowchart-coremethods-pt.png)
-
-
 
 ## Importar MercadoPago.js
 
 A primeira etapa do processo de integração de pagamentos com cartões é a **captura de dados do cartão**. Esta captura é feita a partir da inclusão da biblioteca MercadoPago.js em seu projeto, seguida do formulário de pagamento. Utilize o código abaixo para importar a biblioteca MercadoPago.js antes de adicionar o formulário de pagamento.
-
 
 [[[
 ```html
@@ -317,7 +312,7 @@ O token do cartão é criado a partir das próprias informações do cartão, au
 >
 > Importante
 >
-> O método `createCardToken` retorna um token com a representação segura dos dados do cartão, além disso, tomaremos o token ID da resposta e salvaremos em um input oculto chamado `token` para depois enviar o formulário aos servidores.
+> O método `createCardToken` retorna um token com a representação segura dos dados do cartão. Tomaremos o token ID da resposta e salvaremos em um input oculto chamado `token` para depois enviar o formulário aos servidores. Além disso, tenha em conta que o **token tem uma validade de 7 dias** e só pode ser usado **uma única vez**.
 
 [[[
 ```javascript
@@ -585,19 +580,3 @@ curl -X POST \
 > Ao criar um pagamento é possível receber 3 status diferentes: "Pendente", "Rejeitado" e "Aprovado". Para acompanhar as atualizações é necessário configurar seu sistema para receber as notificações de pagamentos e outras atualizações de status. Veja [Notificações](/developers/pt/docs/checkout-api/additional-content/notifications/introduction) para mais detalhes.
 
 
-> PREV_STEP_CARD_PT
->
-> Pré-requisitos
->
-> Veja os pré-requisitos necessários para integrar o Checkout Transparente.
->
-> [Integrar Checkout Transparente](/developers/pt/docs/checkout-api/prerequisites)
-
-
-> NEXT_STEP_CARD_PT
->
-> Teste de integração
->
-> Saiba como testar a integração do Checkout Transparente em sua loja.
->
-> [Teste de integração](/developers/pt/docs/checkout-api/test-integration/create-test-user)

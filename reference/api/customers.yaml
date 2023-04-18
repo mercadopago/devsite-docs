@@ -136,16 +136,31 @@ paths:
                       description: Street name.
                       x-description-i18n:
                         eng: Street name.
-                        spa: Calle
-                        por: Rua
+                        spa: Nombre de la calle.
+                        por: Nome da rua.
                     street_number:
                       type: number
                       example: 123
                       description: Street number.
                       x-description-i18n:
                         eng: Street number.
-                        spa: Número
-                        por: O Número
+                        spa: Número de calle.
+                        por: Número da rua
+                    city:
+                      type: object
+                      description: City.
+                      x-description-i18n:
+                        eng: City.
+                        spa: Ciudad.
+                        por: Cidade.
+                      properties:
+                          name:
+                            type: string
+                            description: City name. For example, Autonomous City of Buenos Aires.
+                            x-description-i18n:
+                              eng: City name. For example, Autonomous City of Buenos Aires.
+                              spa: Nombre de la ciudad. Por ejemplo, Ciudad Autónoma de Buenos Aires.
+                              por: Nome da cidade. Por exemplo, Cidade Autônoma de Buenos Aires.
                 date_registered:
                   type: Date(ISO_8601)
                   example: '2021-10-20T11:37:30.000-04:00'

@@ -326,10 +326,3 @@ curl -X POST \
 ```
 ]]]
 
-> PREV_STEP_CARD_PT
->
-> Consultar lista de cartões
->
-> Saiba como consultar a lista de cartões de determinado cliente.
->
-> [Consultar lista de cartões](/developers/pt/docs/checkout-api/customer-management/get-cards-list)

@@ -1,6 +1,6 @@
 # Configurar pagos con Checkout Pro
  
-Con [Checkout Pro](/developers/pt/guides/checkout-pro/landing), el comprador será dirigido desde la tienda al sitio web de Mercado Pago donde deberá completar los datos solicitados y realizar el pago. De esta manera, la transacción se procesa y completa fuera del entorno de su tienda. No es necesario que el comprador tenga una cuenta de Mercado Pago y, al finalizar la transacción, el comprador puede ser devuelto a tu tienda.
+Con [Checkout Pro](/developers/es/docs/checkout-pro/landing), el comprador será dirigido desde la tienda al sitio web de Mercado Pago donde deberá completar los datos solicitados y realizar el pago. De esta manera, la transacción se procesa y completa fuera del entorno de su tienda. No es necesario que el comprador tenga una cuenta de Mercado Pago y, al finalizar la transacción, el comprador puede ser devuelto a tu tienda.
  
 Para integrar Checkout Pro, siga los pasos a continuación.
  
@@ -9,7 +9,7 @@ Para integrar Checkout Pro, siga los pasos a continuación.
  ----[mlb]---- 
  * Tarjetas de débito y crédito;
  * Efectivo (saldo de cuenta de Mercado Pago o boleto bancário);
- * Transferencia bancaria (Pix y PEC). La opción de pago con Pix solo se mostrará si existe una [chave Pix cadastrada](/developers/es/guides/checkout-api/receiving-payment-by-pix) en Mercado Pago. 
+ * Transferencia bancaria (Pix y PEC). La opción de pago con Pix solo se mostrará si existe una llave Pix registrada en Mercado Pago. Si aún no las creaste, [haz clic aquí](https://www.youtube.com/watch?v=60tApKYVnkA) y consulta el paso a paso.
  ------------ 
 ----[mla, mlm, mpe, mco, mlu, mlc]---- 
  * Tarjetas de débito y crédito;
@@ -32,19 +32,3 @@ Para integrar Checkout Pro, siga los pasos a continuación.
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 > Si desea utilizar el Checkout API para recibir pagos en la tienda, consulte la sección [Configurar pagos con Checkout API](developers/es/docs/prestashop/payment-configuration/checkout-api/introduction).
 ------------
-
-> PREV_STEP_CARD_ES
->
-> Configuración de pago
->
-> Aprende a configurar los checkouts de Mercado Pago para recibir pagos de tu tienda.
->
-> [Configuración de pago](/developers/es/docs/prestashop/payment-configuration)
-
-> NEXT_STEP_CARD_ES
->
-> Prueba de pagos
->
-> Aprenda cómo hacer una compra de prueba y asegúrese de que la integración funcione.
->
-> [Prueba de pagos](/developers/es/docs/prestashop/sales-processing/integration-test)

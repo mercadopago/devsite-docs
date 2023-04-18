@@ -25,12 +25,4 @@ To access the logs, access the administration panel of your VTEX store, and clic
 
 In case of a rejection, it is very important to check the `status_detail` that specifies the reason for it.
 
-For more information, access the link [Results of the creation of a position](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/collection-creation-results).
-
-> NEXT_STEP_CARD_EN
->
-> Errors list
->
-> Find out about the most common errors.
->
-> [Errors list](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/vtex/common-errors)
+For more information, access the link [Results of the creation of a position](/developers/en/docs/checkout-api/response-handling/collection-results).

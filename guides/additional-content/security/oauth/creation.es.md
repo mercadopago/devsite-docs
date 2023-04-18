@@ -23,7 +23,7 @@ Para generar el código de autorización, es preciso cumplir con los requisitos 
 > Recuerda que utilizarás información sensible de tus vendedores. Asegúrate de guardarla de forma segura. No la utilices en la URL de autenticación y gestiona todo el proceso únicamente desde tu servidor.
  
 1. Edita tu aplicación para que contenga tu Redirect URL. Consulta [Editar aplicación](/developers/es/guides/additional-content/dashboard/applications).
-2. Envie a URL de autenticación para o vendedor cuja conta você deseja vincular à sua com os seguintes campos:
+2. Envía la URL de autenticación con los siguientes campos al vendedor con cuya cuenta deseas vincular  la tuya:
 
    |Descripción|URL| 
    |---|---|
@@ -50,19 +50,3 @@ Para generar el código de autorización, es preciso cumplir con los requisitos 
 > Se recomienda realizar este procedimiento de una única vez junto con el usuario, ya que el código recibido por la Redirect URL después de la autorización tiene una validez de 10 minutos y el access token recibido a través del endpoint tiene una validez de 180 días.
 >
 > Para generar credenciales de sandbox para pruebas, envíe el parámetro `test_token` con el valor `true`.
-
-> PREV_STEP_CARD_ES
->
-> Introducción
->
-> Vea más información sobre las principales características de OAuth.
->
-> [Introducción](/developers/es/guides/additional-content/security/oauth/introduction)
-
-> NEXT_STEP_CARD_ES
->
-> Renovación del access token
->
-> Lee sobre el flujo de renovación de un access token caducado.
->
-> [Renovación](/developers/es/guides/additional-content/security/oauth/renewal)

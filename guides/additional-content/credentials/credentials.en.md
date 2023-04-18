@@ -1,6 +1,6 @@
 # Credentials
 
-Credentials are unique passwords that identify an integration in your account. They allow to capture payments in online stores and other applications securely. They can be found on the [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/credentials) or in your Mercado Pago account by accessing [Your Business > Settings > Management and Administration > Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).
+Credentials are unique passwords that identify an integration in your account. They allow to capture payments in online stores and other applications securely. They can be found on the [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) or in your Mercado Pago account by accessing [Your Business > Settings > Management and Administration > Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).
 
 > WARNING 
 > 
@@ -39,4 +39,4 @@ Share your credentials securely with anyone who helps you integrate or configure
 > 
 > Warning
 >
->Once the integration is complete, delete the credential sharing permissions to ensure privacy and security.
+> Once the integration is complete, delete the credential sharing permissions to ensure privacy and security.

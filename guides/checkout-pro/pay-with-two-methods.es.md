@@ -6,6 +6,6 @@ Aceptar pagos con dos tarjetas es la funcionalidad que permite a los compradores
 2. Haz clic en **Tu negocio > Configuración**. 
 3. En **Preferencias de pago**, activa la opción **Recibir con dos métodos de pago diferentes**.
 
-En el momento del pago, el usuario deberá informar los datos de cada un de los medios de pago y el fraccionamiento del importe será automático.
+En el momento del pago, el usuario deberá informar los datos de cada uno de los medios de pago y el fraccionamiento del importe será automático.
 
 ¡Listo! Al completar estos pasos, se habrá habilitado la opción de pagar con dos métodos de pago.

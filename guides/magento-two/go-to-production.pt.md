@@ -10,10 +10,3 @@ Após realizar a integração e fazer os devidos testes, sua loja já está pron
 
 Pronto! O módulo do Mercado Pago está pronto para receber pagamentos online. Com todas as etapas concluídas, seus clientes poderão realizar compras em sua loja. 
 
-> PREV_STEP_CARD_PT
->
-> Testar os pagamentos
->
-> Saiba como realizar uma compra teste e garantir o funcionamento da integração.
->
-> [Testar os pagamentos](/developers/pt/docs/magento-two/sales-processing/integration-test)

@@ -25,23 +25,3 @@ Ready! Checkout ticket payment via Checkout API has been set up and is ready to 
 > See how to set up Checkout Transparente to receive card payments in your store.
 >
 > [Configure payments with cards](/developers/en/docs/prestashop/payment-configuration/checkout-api/cards)
-
-----[mlb]----
-> NEXT_STEP_CARD_EN
->
-> Configure payments with Pix
->
-> See how to set up Checkout Transparente to receive Pix payments in your store.
->
-> [Pix](/developers/en/docs/prestashop/payment-configuration/checkout-api/pix)
-------------
-
-----[mla, mlm, mpe, mco, mlu, mlc]----
-> NEXT_STEP_CARD_EN
->
-> Test payments
->
-> Learn how to make a test purchase and ensure the integration works.
->
-> [Test payments](/developers/en/docs/prestashop/sales-processing/integration-test)
-------------

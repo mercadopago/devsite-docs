@@ -1,19 +1,25 @@
-
 # ¿Cómo usar el reporte?
-
-
 
 Una vez listo y descargado el reporte, tendrás un archivo para consultar las planillas de cálculo o importar en el programa de conciliación que uses.
 
 Para consultar el reporte te recomendamos descargarlo en formato .csv para abrirlo en el programa que lo visualices. Configura tu programa para que soporte el formato UTF-8, así evitas problemas de lectura.
 
-----[mlm, mlb, mla]----
+----[mlm]----
 > WARNING
 >
 > Importante
 >
-> El reporte de Dinero retirado será deshabilitado desde el 1 de marzo de 2022. Usa el [reporte de Liberaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/introduction) para conciliar las transacciones del dinero disponible en tu cuenta, incluidos tus retiros bancarios.
+> A partir del 12 de diciembre no podrás crear nuevos reportes Dinero retirado. Para seguir llevando el control de todos los retiros y movimientos de tu dinero disponible [usa el reporte Liberaciones.](https://bit.ly/3QiCD2f).
 ------------
+
+----[mla]----
+> WARNING
+>
+> Importante
+>
+> A partir del 5 de diciembre no podrás crear nuevos reportes Dinero retirado. Para seguir llevando el control de todos los retiros y movimientos de tu dinero disponible [usa el reporte Liberaciones.](https://bit.ly/3JzFPEG)
+------------
+
 ----[mpe, mlu]----
 > WARNING
 >
@@ -21,6 +27,7 @@ Para consultar el reporte te recomendamos descargarlo en formato .csv para abrir
 >
 > A partir del 15 de mayo no podrás crear nuevos reportes. Tendrás a disposición tu historial para que puedas descargar los archivos que necesites. Para seguir llevando el control de todos los retiros y movimientos de tu dinero disponible puedes usar el [reporte de liberaciones.](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/23879?utm_source=faq_mp&utm_medium=faq&utm_campaign=bank_disable)
 ------------
+
 ----[mco, mlc]----
 > WARNING
 >
@@ -28,10 +35,10 @@ Para consultar el reporte te recomendamos descargarlo en formato .csv para abrir
 >
 > A partir del 1 de agosto no podrás crear nuevos reportes **Dinero retirado**. Para seguir llevando el control de todos los retiros y movimientos de tu dinero disponible [usa el reporte Liberaciones.](https://vendedores.mercadolibre[FAKER][URL][DOMAIN]/lleva-el-control-de-tu-dinero-con-el-reporte-de-liberaciones)
 ------------
+
 ## ¿Qué contiene el reporte?
 
 El reporte está compuesto por:
-
 
 | Composición del reporte | Descripción |
 | --- | --- |
@@ -65,6 +72,7 @@ Si esto pasa, el reporte sigue siendo válido. El dinero vuelve a tu cuenta y la
 ----[mpe]----
 > Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/available-money/glossary) de Dinero retirado para revisarlo cuando lo necesites o quieras consultar algún término técnico.
 ------------
+
 ## Ejemplo de un reporte
 
 Observa cómo está compuesto el reporte de Dinero retirado en este ejemplo para identificar las secciones y leer tus propios reportes:
@@ -82,11 +90,14 @@ La versión por defecto mostrará una vista extendida de las columnas. El inform
 >
 >Por ejemplo, imagina que tienes $ 3.000 disponibles para retirar a una cuenta bancaria pero solo retiras $ 2.000. El retiro es parcial pero el valor total del reporte seguirá mostrándote el monto del balance inicial que había al momento del retiro, es decir, los $ 3.000 que tenías disponibles. En cambio, si retiras los $ 3.000, el valor total del reporte va a coincidir con el valor de ese retiro.
 ------------
+
 ----[mpe]----
 ## Diferencias entre retiro parcial y retiro total
 
 Cuando retires todo tu dinero disponible, el total del reporte va a coincidir con ese monto. En cambio, cuando hagas un retiro parcial, que no incluya la totalidad de tu dinero listo para usar, el total de dinero retirado y el total del reporte no van a coincidir. Por ejemplo, imagina que tienes $ 3.000 disponibles para retirar a una cuenta bancaria pero solo retiras $ 2.000. El retiro es parcial pero el valor total del reporte seguirá mostrándote el monto del balance inicial que había al momento del retiro, es decir, los $ 3.000 que tenías disponibles. En cambio, si retiras los $ 3.000, el valor total del reporte va a coincidir con el valor de ese retiro.
+
 ------------
+
 ----[mpe]----
 ## ¿Cómo leer los reportes que generes a partir de enero de 2022?
 ------------
@@ -115,22 +126,3 @@ Observa cómo está compuesto el reporte de Dinero retirado en este ejemplo para
 ![Reporte de Dinero retirado Ejemplos Mercado Pago](/images/manage-account/reports/example-n-ledger-es.jpg)
 
 ------------
-<hr/>
-
-### Próximos pasos
-
-> LEFT_BUTTON_REQUIRED_ES
->
-> Genera tus reportes
->
-> Conoce las formas de generar un reporte y sigue los pasos para configurar tus preferencias.
->
-> [Genera tus reportes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/available-money/generate)
-
-> RIGHT_BUTTON_RECOMMENDED_ES
->
-> Glosario
->
-> Conoce qué significa cada término y el detalle de las columnas que componen al reporte.
->
-> [Glosario](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/available-money/glossary)

@@ -8,18 +8,50 @@ After you have created your affiliation with **MercadoPagoV2**, you must configu
 >
 > Important
 >
-> Verify in your VTEX application store that the App **Mercado Pago Payment APP** has been installed to use the **MercadoPagoPro, MercadoPagoWallet and MercadoPagoOff**  payment conditions, or request its installation by the VTEX team through [VTEX Support](https://help.vtex.com/en/support).
+> Verify in your VTEX application store that the App **Mercado Pago Payment APP** has been installed to use the **MercadoPagoPro, MercadoPagoWallet and MercadoPagoOff**  payment conditions, or request its installation by the VTEX team through [VTEX Support.](https://help.vtex.com/en/support)
 
 The configuration of payment conditions is done in the **Payment conditions** tab of the **Settings** menu in the **Payments** module in the VTEX platform administrator portal. In this tab, you must click on the "+" button (*Add new payment condition for ...*) and select on eof the following payment conditions:
 
-* **Credit Card:** this refers to credit card transactions carried out on your store's website. This setup requires you to select each credit card brand that you want in your store. [Click here to see a list of available credit card brands](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/vtex/payment-methods). In addition, depending on the payment terms you select (Cash or Installments), your configuration may require you to fill in additional fields. For more information on how to configure installments in VTEX, click [here](https://help.vtex.com/en/tutorial/condicoes-de-pagamento--tutorials_455#parcelado-sem-juros). ----[mla, mlu, mlc, mlm, mpe, mco]----
-* **Debit Card:** this referers to debit card transactions. ------------
+* **Credit Card:** this refers to credit card transactions carried out on your store's website. This setup requires you to select each credit card brand that you want in your store. [Click here to see a list of available credit card brands](/developers/en/docs/vtex/payment-methods). In addition, depending on the payment terms you select (Cash or Installments), your configuration may require you to fill in additional fields. For more information on how to configure installments in VTEX, click [here](https://help.vtex.com/en/tutorial/condicoes-de-pagamento--tutorials_455#parcelado-sem-juros). 
+
+----[mla, mlu, mlc, mlm, mpe, mco]----
+* **Debit Card:** this referers to debit card transactions. 
+------------
+----[mla, mlm, mlb]----
+* **Buy now, pay later Mercado Pago:** it's Mercado Pago's financing method that allows you to pay in installments without a credit card. To activate the **Buy now, pay later Mercado Pago** button, you must follow these steps listed below:
+  * You must have created a MercadoPagoV2 gateway affiliation. If you haven't done it yet, you can learn how to do it in [this documentation](/developers/en/docs/vtex/gateway-affiliations).
+  * In the VTEX administration panel, go to **Payments > Settings**.
+  * Go to the **Payment Conditions** tab, click on the "+" button and search for **Buy now, pay later Mercado Pago**.
+  * Name the rule to facilitate its identification and activate the payment condition in the **Status** field.
+  * In **Process with affiliation**, choose MercadoPagoV2 as your affiliation.
+  * Save your changes by clicking on **Save**.
+
+------------
+----[mco]----
+* **PSE:** to offer PSE as a payment method in your VTEX store, you must make sure first to install the PSE App developed by VTEX. In order to do so, you must follow the steps listed below:
+  * In your VTEX store, go to **Settings> Apps> App store**.
+  * Look for **Banks for PSE** and download the app for your store.
+
+> WARNING
+>
+> Important
+>
+> In case you can’t find the app in the App store, you can enter the URL *`https://VTEXACCOUNT.myvtex.com/admin/apps/vtex.banks-for-pse@0.1.2/setup/`*, changing "VTEXACCOUNT" for the name of the VTEX store where you'd like to install the app.
+
+After installing Banks for PSE, you can continue configuring PSE as a payment method following the steps previously mentioned.
+
+------------
 * **Other:** this refers to transactions with  **MercadoPagoOff**, **MercadoPagoWallet**, or **MercadoPagoPro**.
   * If you configure **MercadoPagoPro**, the buyer will make the payment in the Mercado Pago environment, via a form presented directly in their store and will have access to all payment methods available on the platform.
   * If you configure **MercadoPagoWallet**, the buyer will use their Mercado Pago wallet. This mode is exclusive to buyers registered in Mercado Pago or Mercado Libre and we suggest using it if you select **Credit Card Payment Condition**.
-  * If you configure **MercadoPagoOff**, you can use means of payment in cash.  ----[mlb]----
+  * If you configure **MercadoPagoOff**, you can use means of payment in cash. 
+  
+  ----[mlb]----
 * **Boleto Bancário:** this refers to boleto bancário transactions **exclusively**.
-* **Pix:** This refers to transactions with Pix via **QR Code** or **Copy and Paste**. To configure this payment condition, you must have a Pix key registered in your Mercado Pago account. For more information on creating your Pix key, click [here](https://www.mercadopago[FAKER][URL][DOMAIN]/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required). ------------
+* **Pix:** This refers to transactions with Pix via **QR Code** or **Copy and Paste**. To configure this payment condition, you must have a Pix key registered in your Mercado Pago account. For more information on creating your Pix key, click [here](https://www.mercadopago[FAKER][URL][DOMAIN]/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required). 
+* **Open Finance Mercado Pago:** This refers to transactions that are made directly in your store and connect the client with his preferred banking institution through Mercado Pago. By doing this, the payment is similar to a banking transaction, but the client won’t need to copy-paste any informations, making it a more fluent experience. He would be directed to his bank account by Mercado Pago to authenticate and approve the transaction, and then, he would be redirected automatically to your store, keeping the order status updated. You can learn more about Open Finance by clicking [here](https://www.mercadopago.com.br/c/openfinance) or by consulting our [blog](https://empresas.mercadopago.com.br/pagamentos-via-open-finance).
+
+------------
 
 ![Configure payment plans](/images/vtex/paymentconditions-imagenv2-en.gif)
 
@@ -55,12 +87,4 @@ For more information on how to configure payment terms in VTEX, click [here](htt
 > Rates and taxes must be configured on the platform, since Mercado Pago processes them according to the information provided by VTEX. Click [here](https://help.vtex.com/en/tutorial/creando-la-tasaimpuesto/) for more information.
 > <br>
 > <br>
-> If you have difficulties during your integration, check our [errors list](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/vtex/common-errors), and our document about [VTEX logs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/vtex/logs).
-
-> NEXT_STEP_CARD_EN
->
-> Device Fingerprint
->
-> Lean how to configure fingerprint.
->
-> [Device Fingerprint](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/vtex/device-fingerprint)
+> If you have difficulties during your integration, check our [errors list](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/vtex/common-errors), and our document about [VTEX logs.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/vtex/logs)

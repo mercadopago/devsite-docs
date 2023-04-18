@@ -6,16 +6,11 @@ In integration via Core Methods, the integrator decides when to look for informa
 
 Check below the diagram that illustrates the card payment process using Core Methods.
 
-
-
 ![API-integration-flowchart](/images/api/api-integration-flowchart-coremethods-en.png)
-
-
 
 ## Import MercadoPago.js
 
 The first step in the card payment integration process is the **card data capture**. This capture is made by including the MercadoPago.js library in your project, followed by the payment form. Use the code below to import the MercadoPago.js library before adding the payment form.
-
 
 [[[
 ```html
@@ -310,14 +305,14 @@ console.error('error getting installments: ', e)
 
 ## Create card token
 
-The card token is created from the card information itself, increasing security during the payment flow. In addition, once the token is used in a given purchase, it is discarded, requiring the creation of a new one for future purchases. To create the card token, use the function below.
+The card token is created from the card information itself, increasing security during the payment flow. In addition, once the token is used in a given purchase, it is discarded, requiring the creation of a new one for future purchases. To create the card token, use the function below. In addition, remember that **the token is valid for 7 days** and can be **used only once**.
 
 
 > NOTE
 >
 > Important
 >
-> The `createCardToken` method returns a token with the secure representation of the card data, in addition, we will take the ID token from the response and save it in a hidden input called `token` and then send the form to the servers.
+> The `createCardToken` method returns a token with the secure representation of the card data. We will take the ID token from the response and save it in a hidden input called `token` and then send the form to the servers.
 
 [[[
 ```javascript
@@ -586,19 +581,4 @@ curl -X POST \
 
 When finished, you can perform tests and ensure that the integration is working correctly.
 
-> PREV_STEP_CARD_EN
->
-> Prerequisites
->
-> Check the necessary prerequisites to integrate the Checkout API.
->
-> [Integrate Checkout API](/developers/en/docs/checkout-api/prerequisites)
 
-
-> NEXT_STEP_CARD_EN
->
-> Integration test
->
-> Learn how to test the Checkout API integration in your store.
->
-> [Integration Test](/developers/en/docs/checkout-api/integration-test/create-test-user)

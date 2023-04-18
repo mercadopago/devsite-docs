@@ -4,11 +4,14 @@
       - mlb
       - mlm
       - mpe
+      - mlu
 ---
 
 # Cancelar reserva
 
-O cancelamento de uma reserva ocorre quando, por algum motivo, o pagamento de uma compra não é aprovado e a reserva do valor precisa retornar para o limite do cartão do cliente ou quando um comprador desiste da compra. Para mais informações sobre reembolsos e cancelamentos de pagamentos, veja a seção [Reembolsos e cancelamentos](/developers/pt/docs/checkout-api/payment-management/cancellations-and-refunds).
+O cancelamento de uma reserva ocorre quando, por algum motivo, o pagamento de uma compra não é aprovado e a reserva do valor precisa retornar para o limite do cartão do cliente ou quando um comprador desiste da compra.
+
+> Para mais informações sobre reembolsos e cancelamentos de pagamentos, veja a seção [Reembolsos e cancelamentos](/developers/pt/docs/checkout-api/payment-management/cancellations-and-refunds).
 
 Para cancelar uma reserva utilize um dos códigos disponíveis abaixo.
 
@@ -103,20 +106,5 @@ A resposta trará o seguinte resultado
 ```
 ]]]
 
-> PREV_STEP_CARD_PT
->
-> Capturar pagamento autorizado
->
-> Conheça as formas disponíveis para captura de um pagamento autorizado.
->
-> [Capturar pagamento autorizado](/developers/pt/docs/checkout-api/payment-management/capture-authorized-payment)
 
-
-> NEXT_STEP_CARD_PT
->
-> Reembolsos e cancelamentos
->
-> Saiba como realizar reembolsos e/ou cancelamentos de um pagamento.
->
-> [Reembolsos e cancelamentos](/developers/pt/docs/checkout-api/payment-management/cancellations-and-refunds)
 

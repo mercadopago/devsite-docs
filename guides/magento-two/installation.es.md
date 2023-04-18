@@ -5,19 +5,3 @@ Existen varias formas de instalar el módulo de Mercado Pago para Magento 2, per
 * [Instalación via Composer](/developers/es/docs/magento-two/installation/composer)
 * [Instalación via Magento Marketplace](/developers/es/docs/magento-two/installation/magento-marketplace)
 * [Instalación via FTP](/developers/es/docs/magento-two/installation/ftp)
-
-> PREV_STEP_CARD_ES
->
-> Requisitos previos
->
-> Conocer los requisitos previos para realizar la integración.
->
-> [Requisitos previos](/developers/es/docs/magento-two/prerequisites)
-
-> NEXT_STEP_CARD_ES
->
-> Instalación via Composer
->
-> Va cómo instalar el complemento de Mercado Pago en la plataforma Magento 2 a través de Composer.
->
-> [Instalación via Composer](/developers/es/docs/magento-two/installation/composer)

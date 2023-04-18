@@ -1,45 +1,20 @@
-> CLIENT_SIDE
->
-> h1
->
-> Crie usuários de teste 
+# Teste o fluxo de pagamento
 
-[TXTSNIPPET][/guides/snippets/test-integration/create-test-users]
+A etapa de testes permite analisar se a integração foi feita de maneira correta e se os pagamentos estão sendo processados sem erros, evitando que erros apareçam ao disponibilizar o checkout para os compradores finais.
 
-</br>
+Para realizar uma compra teste é preciso utilizar as **credenciais de teste** do seu **usuário de produção**. Para obtê-las, acesse **Dashboard > Sua Aplicação > Credenciais de teste** e copie as informações disponíveis.
 
-> CLIENT_SIDE
->
-> h1
->
-> Teste o fluxo de pagamento
- 
-## Configure a integração com os dados do seu usuário vendedor
- 
-Configure a [public key de produção]([FAKER][CREDENTIALS][URL]) do seu **usuário de teste comprador** no frontend da sua aplicação e o [access token de produção]([FAKER][CREDENTIALS][URL]) do seu **usuário de teste vendedor** no seu backend.
- 
-## Realize um pagamento com seu usuário comprador
- 
-### Testes com cartão de crédito
- 
-Inicie sua integração configurada com as credenciais do seu usuário de teste vendedor:
- 
-1. Preencha os dados de um [cartão de teste](/developers/pt/guides/additional-content/testing/test-cards).
-1. Insira o e-mail do seu usuário de teste comprador.
-2. Confirme a compra e pronto!
+Com as credenciais em mãos, siga os passos abaixo para realizar a compra teste.
 
-> PREV_STEP_CARD_PT
->
-> Enviar pagamento ao Mercado Pago
->
-> Após configurar a integração, veja como enviar o pagamento ao Mercado Pago.
->
-> [Enviar pagamento ao Mercado Pago](/developers/pt/docs/checkout-bricks/integration/payment-submission)
+1. Inicie a integração configurada com as **credenciais de teste**.
+2. Insira qualquer e-mail como usuário pagador (lembrando que deve ser diferente do e-mail que você utiliza no Mercado Pago).
+4. Insira os dados de um dos nossos [cartões de teste](/developers/pt/guides/additional-content/testing/test-cards).
+3. Confirme a compra.
 
-> NEXT_STEP_CARD_PT
+Pronto! Finalizadas essas etapas a integração terá sido concluída e você já poderá utilizar suas credenciais de produção para utilizar o Checkout Bricks.
+
+> WARNING
 >
-> Exemplo de código
+> Atenção
 >
-> Para facilitar e otimizar o seu processo de integração, veja um exemplo completo da integração com o Checkout Bricks.
->
-> [Exemplo de código](/developers/pt/docs/checkout-bricks/integration/code-example)
+> Não utilize e-mail de usuário de teste no campo de e-mail do Brick (se aplicável).

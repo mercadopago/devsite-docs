@@ -6,7 +6,7 @@
 >
 > **Web Tokenize Checkout** será descontinuado em agosto de 2022.
 > <br>
-> Você pode usar [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/introduction) ou [Checkout API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/introduction) como alternativa.
+> Você pode usar [Checkout Bricks](/developers/es/docs/checkout-bricks/how-tos/how-to-migrate), [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/introduction) ou [Checkout API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/introduction) como alternativa.
 >
 > Esta documentação é apenas para uso interno da equipe porque está obsoleta ou é um produto exclusivo. Para mais detalhes, fale com a equipe de vendas ou de integrações.
 

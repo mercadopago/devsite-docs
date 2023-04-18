@@ -11,19 +11,3 @@ Las preferencias son conjuntos de información sobre un producto y/o servicio qu
 Para crear una preferencia a través de la API, utiliza el endpoint [/checkout/preferences](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/preferences/_checkout_preferences/post) completando los atributos necesarios para ejecutar la solicitud o, si lo prefieres, consulta [SDKs](/developers/pt/docs/sdks-library/landing)  para crear las preferencias utilizando nuestras bibliotecas.
 
 Al crear la preferencia tendrás acceso a un campo llamado `id` el cual te devolverá un número de identificación de esta preferencia. **Esta información es obligatoria para agregar Checkout Pro a tu sitio web**.
-
-> PREV_STEP_CARD_ES
->
-> Requisitos previos 
->
-> Vea cuáles son los requisitos para integrar Checkout Pro.
->
-> [Requisitos previos](/developers/es/docs/checkout-pro/requirements)
-
-> NEXT_STEP_CARD_ES
->
-> Añadir checkout
->
-> Vea cómo instalar el SDK frontend de Mercado Pago a su proyecto y agregar el botón Checkout Pro.
->
-> [Añadir checkout](/developers/es/docs/checkout-pro/integration-configuration/add-checkout)

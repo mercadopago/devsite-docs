@@ -19,10 +19,3 @@ For more information, access the [Activities](https://www.mercadopago[FAKER][URL
 
 In addition, you can have access to the details of each payment attempt that happened in your store. To do this, go to the WordPress panel, and then click **WooCommerce > Orders > Order Details**.
 
-> NEXT_STEP_CARD_EN
->
-> Reasons for refusals 
->
-> Check the main doubts about the integration.
->
-> [Reasons for refusals](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/woocommerce/reasons-refusals)

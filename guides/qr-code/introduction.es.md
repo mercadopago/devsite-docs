@@ -1,24 +1,22 @@
-# ¿Qué es el código QR?
-
-El QR es un **código único vinculado a tu cuenta de Mercado Pago** que te permite recibir pagos de un modo simple, rápido y seguro.
-
-----[mlb]----
-
-![Pagos QR Mercado Pago](/images/mobile/qr_mla2.es.png)
-------------
-----[mla]----
+# ¿Cómo funciona?
 
 ![Pagos QR Mercado Pago](/images/mobile/qr_mla2.es.png)
 
-------------
-----[mlm]----
-![Pagos QR Mercado Pago](/images/mobile/qr_mla2.es.png)
-------------
+Una vez que hayas realizado la integración tal como te explicaremos aquí, podrás recibir pagos con QR en tu negocio **imprimiendo el Código QR y colocándolo en un lugar visible de tu PDV, o bien mostrándolo desde tu dispositivo móvil**, y cobrar desde la app de Mercado Pago.
 
-> NEXT_STEP_CARD_ES
+![Flujo QR](/images/mobile/qr_flujo.es.png)
+
+> NOTE
 >
-> Cómo funciona
+> Nota
 >
-> Conoce cómo funciona código QR.
->
-> [Cómo funciona](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/qr-code/introduction/how-it-works)
+> Si tu modelo no requiere de una integración con un sistema de punto de venta,  puedes consultar toda la información disponible en [generar QR desde el panel de Mercado Pago](/developers/es/docs/qr-code/integrations-front).
+
+## Tipos de integración
+
+| Tipo | Descripción |
+| --- | --- |
+| QR modelo atendido | Modelo de integración donde la caja publica una orden a un QR desde su propio sistema de punto de venta. El cliente ve la orden desde la App y realiza el pago. |
+| QR modelo dinámico | Modelo de integración donde se genera un QR por transacción. Usado para modelos de QR en ticket. |
+
+En base a tu modelo de negocio, puedes escoger alguna de las opciones para ofrecer a tus clientes una buena experiencia de compra en tus tiendas físicas.

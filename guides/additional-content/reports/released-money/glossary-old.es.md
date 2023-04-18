@@ -1,5 +1,28 @@
 # Glosario
 
+----[mlm]----
+> WARNING
+>
+> Importante
+>
+> Conoce los términos que necesitas para leer tu reporte. Usa este glosario para conocer los términos de los reportes que generes con fechas anteriores a octubre. Para los reportes que abarquen fechas posteriores [consulta este Glosario.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/subscriptions/additional-content/reports/released-money/report-fields)
+------------
+
+----[mlb]----
+> WARNING
+>
+> Importante
+>
+> Conoce los términos que necesitas para leer tu reporte. Usa este glosario para conocer los términos de los reportes que generes con fechas anteriores a enero. Para los reportes que abarquen fechas posteriores [consulta este Glosario.](/developers/es/docs/subscriptions/additional-content/reports/released-money/report-fields)
+------------
+
+----[mla]----
+> WARNING
+>
+> Importante
+>
+> Conocé los términos que necesitás para leer tu reporte. Usá este glosario para conocer los términos de los reportes que generes con fechas anteriores a octubre. Para los reportes que abarquen fechas posteriores [consultá este Glosario.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/subscriptions/additional-content/reports/released-money/report-fields)
+------------
 
 Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado con todos ellos. ¡Usa este glosario para no perderte!
 
@@ -38,29 +61,3 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 | TAXES_DISAGGREGATED | Impuestos desagregados en formato JSON. |
 | EFFECTIVE_COUPON_AMOUNT | Costo por ofrecer descuento. |
 | POI_ID | ID del lector si el pago se realiza a través de un comercio físico. |
-----[mpe]----
-> INFO
->
-> Algunas definiciones ya no están disponibles o han cambiado
->
-> Usa este glosario para conocer los términos de los reportes que generes con fechas anteriores a enero de 2022. Para los reportes que abarquen fechas posteriores [consulta este Glosario.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/glossary)
-------------
-<hr/>
-
-### Próximos pasos
-
-> LEFT_BUTTON_RECOMMENDED_ES
->
-> Reporte de ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberaciones ------------
->
-> Qué es y para qué sirve el reporte de ----[mla]---- liquidaciones.------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- liberaciones.------------ Descubre ejemplos y casos de uso.
->
-> [Cómo usar el reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/how-to-use)
-
-> RIGHT_BUTTON
->
-> Genera tus reportes
->
-> Conoce las formas de generar un reporte y sigue los pasos para configurar tus preferencias.
->
-> [Genera tus reportes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/generate)

@@ -20,19 +20,3 @@ To renew the **access token**:
 > Important
 >
 > Remember that every time you refresh the access token, the `refresh_token` will also be refreshed, so you will need to store it again.
-
-> PREV_STEP_CARD_EN
->
-> Access creation
->
-> Know the data access authorization flow.
->
-> [Creation](/developers/en/guides/additional-content/security/oauth/creation)
-
-> NEXT_STEP_CARD_EN
->
-> OAuth Management
->
-> See how to disabled and invalidated features.
->
-> [Management](/developers/en/guides/additional-content/security/oauth//management) 

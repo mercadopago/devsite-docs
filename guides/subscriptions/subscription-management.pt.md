@@ -13,19 +13,3 @@ Na tabela abaixo você encontra mais informações sobre as possibilidades de ge
 | Alterar data de cobrança | Para assinaturas com frequência de pagamento mensal, você pode escolher um dia fixo do mês para que ocorram as cobranças. Para isso, envie um PUT com os parâmetros necessários ao endpoint [/preapproval/{id}](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/subscriptions/_preapproval_id/put) e execute a requisição. |
 | Definir valor proporcional | É possível definir um valor proporcional para a cobrança de determinada assinatura. Para isso, envie um PUT com os parâmetros necessários ao endpoint [/preapproval/{id}](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/subscriptions/_preapproval_id/put) e execute a requisição. |
 | Oferecer teste grátis | É possível oferecer um período de teste grátis para que os clientes possam testar o produto e/ou serviço antes de adquiri-lo. Para isso, envie um PUT com parâmetro `free_trial`, `frequency` e `frequency_type` com a quantidade de dias e o tipo (dias/meses) ao endpoint [/preapproval_plan/{id}](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/subscriptions/_preapproval_plan_id/put) e execute a requisição. |
-
-> PREV_STEP_CARD_PT 
->
-> Realizar compra teste
->
-> Saiba realizar uma compra teste e validar o funcionamento da assinatura.
->
-> [Realizar compra teste](/developers/pt/docs/subscriptions/integration-test/payment-approval)
-
-> NEXT_STEP_CARD_PT
->
-> Processamento de vendas
->
-> Saiba realizar a gestão dos pagamentos, estornos e reembolsos.
->
-> [Processamento de vendas](/developers/pt/docs/subscriptions/production-mode/sales-processing/payment-methods)

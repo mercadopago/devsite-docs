@@ -15,14 +15,6 @@ The following are common errors that can occur during your integration:
 >
 > Important
 >
-> Before starting your production operation, you must activate your [credentials]([FAKER][CREDENTIALS][URL]).
+> Before starting your production operation, you must activate your [credentials.]([FAKER][CREDENTIALS][URL])
 
 For more information, visit the [VTEX official site](https://help.vtex.com/) and the [VTEX status site](https://status.vtex.com/).
-
-> NEXT_STEP_CARD_EN
->
-> Logs verification
->
-> Find out about the main VTEX logs.
->
-> [Logs verification](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/vtex/logs)

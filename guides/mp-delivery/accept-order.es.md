@@ -11,19 +11,3 @@ Al aceptar la orden, se cambiará el estado y en la respuesta se indicará el es
 > Importante
 >
 > Es importante saber que solo es posible aceptar una orden en los estados **ready_to_ship** y **ready_to_print**. Después de aceptar la orden, el subestado será **printed**. Si la orden no es aceptada 5 minutos después de su creación, se cancelará automáticamente.
-
-> PREV_STEP_CARD_ES
->
-> Obtener datos de la orden
->
-> Conoce cómo obtener datos de órdenes con Mercado Pago Delivery.
->
-> [Obtener datos de la orden](/developers/es/docs/mp-delivery/order-management/get-order-data)
-
-> NEXT_STEP_CARD_ES
->
-> Imprimir recibo de orden
->
-> Aprende a imprimir comprobantes de órdenes con Mercado Pago Delivery.
->
-> [Imprimir recibo de orden](/developers/es/docs/mp-delivery/order-management/print-order-receipt)

@@ -1,16 +1,14 @@
-# Integração via Cardform
+# Cartão
 
-Neste modo de integração, o **MercadoPago.js** é responsável pelos fluxos necessários para obtenção das informações obrigatórias para a criação de um pagamento. Quando inicializado, uma busca é realizada para recolher os tipos de documentos disponíveis para o país em questão.
+A integração de pagamentos via cartão é feita via cardform. Neste modo de integração, o **MercadoPago.js** é responsável pelos fluxos necessários para obtenção das informações obrigatórias para a criação de um pagamento. Quando inicializado, uma busca é realizada para recolher os tipos de documentos disponíveis para o país em questão.
 
-À medida que os dados do cartão são inseridos, ocorre uma busca automática das informações de emissor e parcelas disponíveis para aquele meio de pagamento Com isso, a implementação do fluxo é transparente para quem realiza a integração.
+À medida que os dados do cartão são inseridos, ocorre uma busca automática das informações de emissor e parcelas disponíveis para aquele meio de pagamento. Com isso, a implementação do fluxo é transparente para quem realiza a integração.
 
 Confira abaixo o diagrama que ilustra o processo de pagamento via cartão utilizando o Card Form.
 
-![API-integration-flowchart](/images/api/api-integration-flowchart-cardform-pt.png)
-
+![API-integration-flowchart](/images/api/api-integration-flowchart-cardform-2-pt.png)
 
 Para integrar pagamentos com cartão no Checkout Transparente siga as etapas abaixo.
-
 
 ##  Importar MercadoPago.js
 
@@ -42,6 +40,12 @@ Esta é a primeira etapa de uma estrutura completa de código que deverá ser se
 ## Adicionar formulário de pagamento
 
 A captura dos dados do cartão é feita através do CardForm da biblioteca MercadoPago.js. Nosso CardForm se conectará ao seu formulário de pagamento HTML, facilitando a obtenção e validação de todos os dados necessários para processar o pagamento.
+
+> WARNING
+>
+> Importante
+>
+> O cardtoken pode ser usado **somente uma vez** e expira dentro de **7 dias**.
 
 Para adicionar o formulário de pagamento, insira o HTML abaixo diretamente no projeto. 
 
@@ -406,7 +410,7 @@ curl -X POST \
          "payment_method_id": "visa",
          "issuer_id": 310,
          "payer": {
-           "email": "test@test.com"
+           "email": "PAYER_EMAIL"
          }
    }'
  
@@ -457,20 +461,3 @@ A resposta trará o seguinte resultado
 >
 > Para exemplos completos de código, confira os [exemplos completos de integração](https://github.com/mercadopago/card-payment-sample) disponíveis no GitHub.
 ------------
-
-> PREV_STEP_CARD_PT
->
-> Pré-requisitos
->
-> Veja os pré-requisitos necessários para integrar o Checkout Transparente.
->
-> [Integrar Checkout Transparente](/developers/pt/docs/checkout-api/prerequisites)
-
-
-> NEXT_STEP_CARD_PT
->
-> Outros meios de pagamento
->
-> Conheça as outras opções de pagamento disponíveis para integração.
->
-> [Outros meios de pagamento](/developers/pt/docs/checkout-api/integration-configuration/other-payment-methods)

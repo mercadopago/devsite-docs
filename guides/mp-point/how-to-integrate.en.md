@@ -5,17 +5,11 @@ sites_supported:
   - mlm
 ---
 
-
 # How to integrate Mercado Pago Point 
 
 In order to process payments in the *integrated mode* with our Point devices, it is necessary to download the Mercado Pago application for Android and IOS.
 
-There are two different possible situations to integrate Point: 
-
-1) When you are able to access your application from the same device (smartphone or tablet) where the Mercado Pago application is installed. These integrations can be done via Deep linking or Intent-based. 
-
-2) When you can not use your application from the same device (smartphone or tablet) where the Mercado Pago application is installed. This integration can be done vía API. 
-
+When you are able to access your application from the same device (smartphone or tablet) where the Mercado Pago application is installed. These integrations can be done via Deep linking or Intent-based. 
 
 > WARNING
 >
@@ -50,7 +44,6 @@ Next, it is necessary to configure the `device_name` from the Mercado Pago appli
 The next step consist in generating a payment order and sending it via API to the corresponding device. The user will see the order sent to the application in the device's screen. It means that the user will be able to swipe the card at that moment and continue with the process. 
 
 Once the payment is processed, the user will see the result in the Mercado Pago application. Finally, the order will close and the corresponding payment will be created
-
 
 ### Payment creation
 
@@ -151,7 +144,6 @@ curl -X DELETE \
 ```
 
 **Response status code: 204 OK**
-
  
 ### Get all the devices from an account
 
@@ -182,7 +174,6 @@ If the status of the device is `FREE`, it means that the device can receive a ne
 
 **Response status code: 200 OK**
 
-
 ### Delete a device from an account
 
 The DELETE in this API enables you to delete configured and synchronized devices from your Mercado Pago account. 
@@ -205,20 +196,17 @@ The answer will have the following format.
 
 **Response status code: 200 OK**
 
-
 ## Payment notifications
 
 It is necessary that you send the `notification_url`, where you'll receive notifications about new payments and status updates generated.
 
 For more information, check the [notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/webhooks/webhooks) article.
 
-
 ## Point payments
 
 Point payments can be searched in the Payments API. For more information, check the [API's](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_id/get) article.
 
 We also have an exclusive Point API that has some additional information about the payments: 
-
 
 ```curl
 curl -X GET \

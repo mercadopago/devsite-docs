@@ -183,19 +183,3 @@ A resposta trará o seguinte resultado.
     "live_mode": false
 }
 ```
-
-> PREV_STEP_CARD_PT
->
-> Buscar cliente
->
-> Saiba como buscar um cliente a partir de informações específicas.
->
-> [Buscar cliente](/developers/pt/docs/checkout-api/cards-and-customers-management/search-customers)
-
-> NEXT_STEP_CARD_PT
->
-> Consultar lista de cartões
->
-> Saiba como consultar a lista de cartões de determinado cliente.
->
-> [Consultar lista de cartões](/developers/pt/docs/checkout-api/cards-and-customers-management/get-cards-list)

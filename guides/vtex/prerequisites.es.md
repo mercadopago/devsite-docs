@@ -9,11 +9,3 @@ Para utilizar la integración de Mercado Pago con VTEX, debes cumplir con los si
 |Credenciales de producción activadas|Las credenciales que no están activadas no pueden ser utilizadas. Cuando tengas lista tu integración y quieras comenzar a recibir pagos, [activa las credenciales]([FAKER][CREDENTIALS][URL]) de producción y reemplaza las de prueba.|Credenciales de producción activadas|
 |Mercado Pago Payment APP instalada|Verifica en tu tienda de aplicaciones VTEX que la App **Mercado Pago Payment APP** este instalada para usar las condiciones de pago **MercadoPagoPro, MercadoPagoWallet y MercadoPagoOff** o solicita la instalación por parte del equipo de VTEX a través de un ticket en [Support VTEX](https://help.vtex.com/es/support).|Mercado Pago Payment APP instalada en tu tienda de aplicaciones VTEX.|
 ----[mlb]----|Llave Pix|Para configurar Pix en tu integración con Mercado Pago es necesario que tu llave Pix esté configurada. En caso de no tener una, haz clic [aquí](https://www.mercadopago.com.br/ajuda/17843).|Llave Pix|------------
-
-> NEXT_STEP_CARD_ES
->
-> Registro de afiliación
->
-> Aprende cómo registrar una afiliación.
->
-> [Registro de afiliación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/vtex/gateway-affiliations)

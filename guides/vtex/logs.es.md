@@ -25,12 +25,4 @@ Para acceder a los logs, accede al panel de administración de tu tienda VTEX y 
 
 Ante un rechazo, es muy importante revisar el `status_detail` que especifica el motivo del mismo.
 
-Para obtener más información, accede al enlace [Resultados de la creación de un cobro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/checkout-api/collection-creation-results).
-
-> NEXT_STEP_CARD_ES
->
-> Lista de errores
->
-> Conoce los errores más comunes.
->
-> [Lista de errores](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/vtex/common-errors)
+Para obtener más información, accede al enlace [Resultados de la creación de un cobro](/developers/es/docs/checkout-api/response-handling/collection-results).

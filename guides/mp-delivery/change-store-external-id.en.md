@@ -9,11 +9,3 @@ To enter the value of an external ID in a store, perform a PUT sending the `stor
 > Important
 >
 > You will also be able to consult the information of a store through its external ID. For that, just send as request parameters the `user_id` related to the store, the `external_id` and the `access_token`. Check more information in the API [Get store by external ID](/developers/en/reference/mp_delivery/_proximity-integration_users_SellerID_stores_external_id_ExternalID/get).
-
-> PREV_STEP_CARD_EN
->
-> Change store status
->
-> Learn how to change the store's working status.
->
-> [Change store status](/developers/en/docs/mp-delivery/store-management/change-store-status)

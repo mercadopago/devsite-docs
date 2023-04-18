@@ -17,11 +17,3 @@ Ready! The Mercado Pago plugin is ready to receive payments online.
 > There are some reasons that can directly impact the approval of payments in your store. See more information at [Reasons for payment refusals](/developers/en/docs/prestashop/additional-content/reasons-for-refusals).
 
 ![Payment status](/images/prestashop/status_en.png)
-
-> PREV_STEP_CARD_EN
->
-> Test payments
->
-> Learn how to make a test purchase and ensure the integration works.
->
-> [Test payments](/developers/en/docs/prestashop/sales-processing/integration-test)

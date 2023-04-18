@@ -60,15 +60,19 @@ paths:
                   example: test_user@testuser.com
                 card_token_id:
                   type: string
-                  description: Unique card token identifier 
+                  description: The card_token_id is a token generated from the form submission with the capture of payment data. When submitting the form, a token is generated that securely represents the card data. To get the card_token_id, see the "Card" section of the Checkout API documentation and follow all the steps up to the "Initialize payment form" section. It is through this form that it will be possible to obtain the card_token_id.
+                  x-description-i18n:
+                    eng: The card_token_id is a token generated from the form submission with the capture of payment data. When submitting the form, a token is generated that securely represents the card data. To get the card_token_id, see the "Card" section of the Checkout API documentation and follow all the steps up to the "Initialize payment form" section. It is through this form that it will be possible to obtain the card_token_id.
+                    spa: card_token_id es un token generado al enviar el formulario con la captura de datos de pago. Al enviar el formulario, se genera un token que representa de forma segura los datos de la tarjeta. Para obtener el card_token_id, consulte la sección "Tarjeta" de la documentación de Checkout API y siga todos los pasos hasta la sección "Inicializar formulario de pago". Es a través de este formulario que será posible obtener el card_token_id.
+                    por: O card_token_id é um token gerado a partir do envio do formulário com a captura dos dados para pagamento. Ao enviar o formulário, um token é gerado representando de forma segura os dados do cartão. Para obter o card_token_id, veja a seção "Cartão", da documentação Checkout Transparente e siga todas as etapas até a seção "Inicializar formulário de pagamento". É por meio deste formulário que será possível obter o card_token_id.                   
                   example: e3ed6f098462036dd2cbabe314b9de2a
                 auto_recurring:
                   type: object
-                  description: Configuration data for recurrence It is only required for subscriptions without a plan.
+                  description: Configuration data for recurrence.
                   x-description-i18n:
-                    eng: Configuration data for recurrence It is only required for subscriptions without a plan.
-                    spa: Datos de configuración para recurrencia. Solo se requiere para suscripciones sin plan asociado.
-                    por: Configuração de recorrência. É obrigatório apenas para assinaturas sem plano associado.
+                    eng: Configuration data for recurrence.
+                    spa: Datos de configuración para recurrencia.
+                    por: Configuração de recorrência. 
                   properties:
                     frequency:
                       required: true
@@ -94,11 +98,11 @@ paths:
                     start_date:
                       type: string
                       format: date
-                      description: Date from which the subscription will be active and we start collecting invoices.
+                      description: Date from which the subscription will be active and we start collecting invoices. It is important to emphasize that this field only works together with the `end_date` parameter, that is, if `end_date` is not filled in, the `start_date` will not be recognized.
                       x-description-i18n:
-                        eng: Date from which the subscription will be active and we start collecting invoices.
-                        spa: Fecha a partir de la cual la suscripción estará activa y se empiezan a cobrar las facturas.
-                        por: Data que indica o momento em que a assinatura será ativada e começará a cobrança das faturas.
+                        eng: Date from which the subscription will be active and we start collecting invoices. It is important to emphasize that this field only works together with the `end_date` parameter, that is, if `end_date` is not filled in, the `start_date` will not be recognized.
+                        spa: Fecha a partir de la cual la suscripción estará activa y se empezarán a cobrar las facturas. Es importante recalcar que este campo solo funciona en conjunto con el parámetro `end_date`, es decir, si no se completa `end_date`, no se reconocerá `start_date`.
+                        por: Data que indica o momento em que a assinatura será ativada e começará a cobrança das faturas. É importante frisar que este campo somente funciona em conjunto com o parâmetro `end_date`, ou seja, se `end_date` não for preenchido, a `start_date` não será reconhecida.
                       example: "2020-06-02T13:07:14.260Z"
                     end_date:
                       type: string
@@ -1408,7 +1412,11 @@ paths:
         eng: Update a subscription
         spa: Actualizar suscripción
         por: Atualizar assinatura
-      description: Renew the data of a subscription. Indicate the preapproval ID and send the body with the information you want to update. You can update reason, amount, payment method and status and more 
+      description: Renew the data of a subscription. Indicate the preapproval ID and send the body with the information you want to update. You can update reason, amount, payment method, status and other information that compose the subscription
+      x-description-i18n:
+        eng: Renew the data of a subscription. Indicate the preapproval ID and send the body with the information you want to update. You can update reason, amount, payment method, status and other information that compose the subscription
+        spa: Renovar datos de suscripción. Ingrese el ID de suscripción y envíe el body con la información que desea actualizar. Podrás actualizar el motivo, monto, medio de pago, status y demás información que conforma la suscripción.
+        por: Renove os dados de uma assinatura. Indique o ID da assinatura e envie o body com as informações que deseja atualizar. Você pode atualizar o motivo, valor, forma de pagamento, status e outras informações que compõem a assinatura.
       parameters:
         - name: id
           in: path

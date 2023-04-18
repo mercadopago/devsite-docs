@@ -116,16 +116,23 @@ The response will return that the payment is approved and credited.
 ## Capture partial value
 
 
-To capture an amount lower than the reserved amount, send the value to be captured to the `transaction_amount` parameter and execute the request through the codes available below.
+To capture an amount lower than the one reserved, send the value to be captured to the `transaction_amount` parameter and execute the request through the codes available below.
 
 ----[mla]----
 > WARNING
 >
 > Important
 >
-> Only available for Visa, Cabal, Master and American Express.
+> This feature is only available for Visa, Cabal, Master and American Express flag cards.
 ------------
 
+----[mlb, mlu, mlc, mco, mpe, mlm]----
+> WARNING
+>
+> Important
+>
+> It is not possible to capture an amount greater than the reserved amount, for that it is necessary to cancel the reservation and generate a new one.
+------------
  
 [[[
 ```php
@@ -227,26 +234,9 @@ The answer will yield the following result
 ```
 ]]]
 
+
 > NOTE
 >
 > Important
 >
 > It is not possible to capture a value greater than the reserved amount, for this it is necessary to cancel the reservation and generate a new one.
-
-
-> PREV_STEP_CARD_EN
->
-> Reserve values
->
-> Learn more about how a value reserve for a payment works.
->
-> [Reserve Values](/developers/en/docs/checkout-api/payment-management/make-value-reserve)
-
-
-> NEXT_STEP_CARD_EN
->
-> Cancel reserve
->
-> Learn about the necessary steps to cancel a value reserve.
->
-> [Cancel reserve](/developers/en/docs/checkout-api/payment-management/cancel-reserve)

@@ -1,7 +1,7 @@
 ---
 content_section_with_media: 
  - title: Checkout Pro
- - message: O Checkout Pro é uma solução que permite aos seus clientes realizar compras por meio do formulário Web do Mercado Pago. Ao pagar utilizando o Checkout Pro, o comprador é direcionado para uma página do Mercado Pago na qual concluirá a transação de forma segura e rápida e podendo pagar com os principais meios de pagamento disponíveis atualmente.
+ - message: O Checkout Pro é uma solução que permite aos seus clientes realizar compras por meio das páginas de pagamentos do Mercado Pago de forma segura, rápida e com a possibilidade de pagar com os principais meios de pagamento disponíveis atualmente.
  - media_video: https://www.youtube.com/embed/yQZ5KjnUfbM
 ---
 
@@ -10,12 +10,21 @@ content_section_with_media:
 >>>> Disponibilidade por país <<<<
 ---
 available_countries: mla, mlb, mlm, mlu, mco, mlc, mpe
+
+---
+
+---
+bullet_section_with_media: 
+ - type: normal
+ - title: Checkout Pro Web e Mobile
+ - message: O Checkout Pro pode ser aberto tanto via Desktop, quanto em dispositivos Mobile (Smartphones e Tablets). Para dispositivos mobile, o comprador é redirecionado automaticamente para o aplicativo do Mercado Pago (quando houver aplicativo instalado), garantindo maior agilidade e facilidade no pagamento, uma vez que não é necessário preencher formulários.
+ - image: /wallet-connect/wallet-connect-landing.png
 ---
 
 ---
 bullet_section_with_media: 
  - title: Vantagens
- - type: normal
+ - type: reverse
  - message: Além de contar com os principais meios de pagamento do país, o Checkout Pro conta com uma experiência de compra adaptada e acessível a partir de qualquer dispositivo.
  - image: /cow/cho-pro-landing__pt.png
  - benefit_title: Compras em um clique
@@ -24,51 +33,68 @@ bullet_section_with_media:
  - benefit_message: Não possuir uma conta Marcado Pago não é um problema. O Checkout Pro aceita pagamentos de compradores convidados.
  - benefit_title: Pagamento com dois cartões
  - benefit_message: Se o valor a ser pago é alto, o comprador pode dividir o valor em dois cartões diferentes. 
+—
 ---
 
 --- mini_landing_separator ---
 
->>>> Diferenças entre Checkout Pro e Checkout Transparente <<<<
-----[mla, mlb]----
-|   Benefícios                          | Checkout Pro | Checkout API |
-| :--- | :---: | :---: |
-| Dificuldade de integração             | Baixa | Alta |
-| Design UI/UX                          | ✔ |   |
-| Conversão otimizada                   | ✔ |   |
-| Aprovação otimizada                   | ✔ |   |
-| Usuários convidados     			| ✔ | ✔ |
-| Usuários cadastrados     		| ✔ |   |
-| Prevenção de fraude                   | ✔ | ✔ |
-| Tela de finalização de pagamento      | ✔ |   |
-| Pagamento com dois cartões            | ✔ |   |
-------------
-----[mlm, mlu, mco, mlc, mpe]----
-|   Benefícios                          | Checkout Pro | API |
-| :--- | :---: | :---: |
-| Dificuldade de integração             | Baixa | Alta |
-| Design UI/UX                          | ✔ |   |
-| Conversão otimizada                   | ✔ |   |
-| Aprovação otimizada                   | ✔ |   |
-| Usuários convidados      		| ✔ | ✔ |
-| Usuários cadastrados     		| ✔ |   |
-| Prevenção de fraude                   | ✔ | ✔ |
-| Tela de finalização de pagamento      | ✔ |   |
-------------
 
-<br>
-
---- mini_landing_separator ---
-
->>>> Meios de pagamento aceitos <<<<
+>>>> Tipos de pagamento aceitos <<<<
 
 ----[mlb]----
+
 ---
-available_payments: credit, debit, mercadopago, ticket, pix, pec
+available_payments: credit, debit, mercadopago, boleto, pix, pec, moneda, cartera
+
 ---
 ------------
 
-----[mla, mlm, mlu, mco, mlc, mpe]----
+----[mla]---- 
+
 ---
-available_payments: credit, debit, mercadopago, ticket
----
+available_payments: credit, debit, mercadopago, efectivo, atm
+
+----
 ------------
+
+----[mlm]---- 
+
+---
+available_payments: credit, debit, mercadopago, efectivo, atm, moneda
+
+----
+------------
+
+----[mlu]---- 
+
+---
+available_payments: credit, efectivo
+
+----
+------------
+
+----[mco]---- 
+
+---
+available_payments: mercadopago, pse, credit, debit, cartera, efectivo
+
+----
+------------
+
+----[mlc]---- 
+
+---
+available_payments: mercadopago, credit, debit
+
+----
+------------
+
+----[mpe]---- 
+
+---
+available_payments: mercadopago, atm, credit, debit
+
+----
+------------
+
+> Para detalhes dos meios de pagamento aceitos em cada país, verifique a lista completa com a [disponibilidade de meios de pagamento.](/developers/pt/docs/sales-processing/payment-methods)

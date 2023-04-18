@@ -373,21 +373,20 @@ Después, configura las credenciales de la SDK para su uso e inicializa tu check
 
 [[[
 ```html
+<div class="cho-container"></div>
 <script>
-  // Agrega credenciales de SDK
-  const mp = new MercadoPago("PUBLIC_KEY", {
-    locale: "es-AR",
+  const mp = new MercadoPago('PUBLIC_KEY', {
+    locale: 'es-AR'
   });
 
-  // Inicializa el checkout
   mp.checkout({
     preference: {
-      id: "YOUR_PREFERENCE_ID",
+      id: 'YOUR_PREFERENCE_ID'
     },
     render: {
-      container: ".cho-container", // Indica el nombre de la clase donde se mostrará el botón de pago
-      label: "Pagar", // Cambia el texto del botón de pago (opcional)
-    },
+      container: '.cho-container',
+      label: 'Pagar',
+    }
   });
 </script>
 ```
