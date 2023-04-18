@@ -1,5 +1,8 @@
 # Instalação
 
+----[mlb]----
+Com o [Checkout Transparente](/developers/pt/docs/checkout-api/landing), todo o processo de finalização de compra acontecerá dentro do ambiente da loja online, sem a necessidade de redirecionamento para uma página externa. Além de permitir maior controle no processo de customização e integração, o checkout oferece uma estrutura completa para processamento de pagamentos com os principais meios disponíveis no mercado. 
+
 Para instalar o Checkout Transparente em uma loja Shopify, siga os passos abaixo:
 
 1. Faça login na sua loja [Shopify](https://accounts.shopify.com/store-login).

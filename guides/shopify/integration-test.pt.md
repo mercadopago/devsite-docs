@@ -1,4 +1,4 @@
-# Realizar um teste
+# Testar os pagamentos
 
 Os testes de compras ajudam a garantir que os pagamentos sejam processados corretamente antes de permitir as vendas reais. Siga os passos abaixo para fazer uma compra de teste:
 

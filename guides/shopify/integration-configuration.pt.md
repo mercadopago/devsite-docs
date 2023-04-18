@@ -1,6 +1,12 @@
 # Configuração
 
-Recomendamos personalizar as informações do checkout da loja para garantir uma melhor experiência de compra e uma integração mais próxima entre o Checkout Pro e a Shopify. Para fazer isso, siga os passos abaixo:
+Recomendamos personalizar as informações do checkout da loja para garantir uma melhor experiência de compra e uma integração mais próxima entre o checkout do Mercado Pago e a Shopify. Para fazer isso, siga os passos abaixo:
+
+> WARNING
+>
+> Atenção
+>
+> Caso esteja utilizando a antiga versão do plugin do Mercado Pago para Checkout Pro, [clique aqui](/developers/pt/docs/shopify/how-tos/migration) para saber como migrar para a versão atual.
 
 ## Configure o nome da empresa
 

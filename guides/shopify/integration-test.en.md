@@ -1,4 +1,4 @@
-# Make a test
+# Test payments
 
 The test purchases ensure that payments are processed correctly before allowing actual sales. Follow the steps below to make a test purchase:
 

@@ -59,7 +59,7 @@ No checkout, quando os compradores escolhem pagar com Mercado Pago, é apresenta
  
 Para integrar o Checkout Pro, siga os passos abaixo.
 
-1. No Painel Administrativo da sua loja na Nuvemshop, acesse **Potencializar > Meus aplicativos**. 
+1. No Painel Administrativo da sua loja na Nuvemshop, acesse **Meus aplicativos - Ver todos os aplicativos**.
 2. Localize o plugin do Mercado Pago na lista das aplicações e clique em **Configurar aplicativo**.
 3. Na lista de meios de pagamentos, localize o plugin do Mercado Pago e clique em **Editar**.
 4. Para aplicar um valor mínimo de parcelas para os pagamentos, informe o valor no campo disponível.
