@@ -16,6 +16,7 @@
 > Atenção
 >
 > Em breve, o Paypal não estará mais disponível como meio de pagamento nas soluções do Mercado Pago, e não será possível receber pagamentos por este meio ou fazer novas integrações. Se você tiver dúvidas sobre essa mudança, entre em contato pelo nosso [portal de ajuda](https://www.mercadopago.com.br/ajuda).
+
 ------------
 
  - Ofereça todos os meios de pagamento: crédito, boleto, pagamento na lotérica, PayPal e Cartão de débito virtual Caixa. Até mesmo pagamento parcelado!

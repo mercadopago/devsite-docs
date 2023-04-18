@@ -9,6 +9,7 @@ Você pode obter uma lista completa dos tipos e meios de pagamento disponíveis 
 > Atenção
 >
 > Em breve, o Paypal não estará mais disponível como meio de pagamento nas soluções do Mercado Pago, e não será possível receber pagamentos por este meio ou fazer novas integrações. Se você tiver dúvidas sobre essa mudança, entre em contato pelo nosso [portal de ajuda](https://blog.mercadopago.com.mx/productos/atencion-al-cliente-mercado-pago-como-contactarse).
+
 ------------
 
 ----[mlb]---- 
@@ -18,7 +19,9 @@ Você pode obter uma lista completa dos tipos e meios de pagamento disponíveis 
 > Atenção
 >
 > Em breve, o Paypal não estará mais disponível como meio de pagamento nas soluções do Mercado Pago, e não será possível receber pagamentos por este meio ou fazer novas integrações. Se você tiver dúvidas sobre essa mudança, entre em contato pelo nosso [portal de ajuda](https://www.mercadopago.com.br/ajuda).
+
 ------------
+
 
 | Meios de pagamento | 🇦🇷 <br> Argentina | 🇧🇷 <br> Brasil | 🇨🇱 <br> Chile | 🇨🇴 <br> Colômbia | 🇲🇽 <br> México | 🇵🇪 <br> Peru | 🇺🇾 <br> Uruguai |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
