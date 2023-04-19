@@ -160,6 +160,7 @@ The configuration Webhooks configuration is done through the Dashboard. Below we
 
 | Notification type  | Action  | Description  |
 | --- | --- | --- |
-| Agreement cancellation  | status.updated  | Agreement between the integrator and the user of Mercado Pago was canceled by the user. |
-| Payment method update  | payment_method.updated  | Payment method updated by the user.  |
 | Agreement confirmation | status.updated | The user confirmed an agreement. |
+| Agreement cancellation | status.updated  | Agreement between the integrator and the user of Mercado Pago was canceled by the user. |
+| Payment method update  | payment_method.updated  | Payment method updated by the user.  |
+

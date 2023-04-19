@@ -163,6 +163,6 @@ La configuración de los webhooks se realiza a través del Dashboard. A continua
 
 | Tipo de notificación  | Acción  | Descripción  |
 | --- | --- | --- |
+| Confirmación del agreement | status.updated | El usuario ha confirmado un agreement. |
 | Cancelación del agreement | status.updated  | Agreement entre el integrador y el usuario de Mercado Pago fue cancelado por el usuario.|
 | Actualización de método de pago | payment_method.updated  | El usuario ha actualizado el método de pago de un agreement. |
-| Confirmación del agreement | status.updated | El usuario ha confirmado un agreement. |
