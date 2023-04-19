@@ -451,7 +451,7 @@ paths:
           x-description-i18n:
             eng: Field intended for platforms or modules that offer Mercado Pago in their solutions
             spa: Campo destinado a plataformas o módulos que ofrecen Mercado Pago en sus soluciones
-            por: Campo destinado para as plataformas ou módulos que oferecem Mercado Pago em suas soluções
+            por: Campo destinado às plataformas ou módulos que oferecem Mercado Pago em suas soluções
           schema:
             type: string
             example: YOUR_ACCESS_TOKEN
@@ -462,29 +462,165 @@ paths:
           content:
             application/json:
               schema:
-                description: Agreement that contains an unique identifier and a success URL.
+                description: Agreement response.
                 x-description-i18n:
-                  eng: Agreement that contains an unique identifier and a success URL.
-                  spa: Agreement que contiene un identificador único y un URL de éxito.
-                  por: Agreement que contém um identificador único e um URL de sucesso.
+                  eng: Agreement response.
+                  spa: Respuesta del Agreement.
+                  por: Resposta do Agreement.
                 type: object
                 properties:
-                  agreement_id:
+                  id:
                     type: string
-                    description: Unique ID that identifies an Agreement
+                    description: Unique ID that identifies an Agreement.
                     x-description-i18n:
-                      eng: Unique ID that identifies an Agreement
-                      spa: ID único que identifica un Agreement
-                      por: ID único que identifica um Agreement
+                      eng: Unique ID that identifies an Agreement.
+                      spa: ID único que identifica un Agreement.
+                      por: ID único que identifica um Agreement.
                     example: b1234e5678b91c23a456e78912345b67
-                  agreement_uri:
+                  date_created:
                     type: string
-                    description: This is the uri to redirect the user to the wallet linking in the frontend.
+                    description: Agreement creation date.
                     x-description-i18n:
-                      eng: This is the uri to redirect the user to the wallet linking in the frontend.
-                      spa: Este es el uri para redirigir al usuario a la billetera que se vincula en el frontend.
-                      por: Este é o uri para redirecionar o usuário para a wallet vinculada no frontend.
-                    example: https://beta.mercadopago.com.ar/v1/wallet_agreement/b1234e5678b91c23a456e78912345b67
+                      eng: Agreement creation date.
+                      spa: Data de creación del Agreement.
+                      por: Data de criação do Agreement.
+                    example: "2023-02-16T00:02:52Z"
+                  date_cancelled:
+                    type: string
+                    description: Agreement cancelled date.
+                    x-description-i18n:
+                      eng: Agreement cancelled date.
+                      spa: Fecha de cancelación del Agreement.
+                      por: Data de cancelamento do Agreement.
+                    example: "2023-02-16T00:02:52Z"
+                  date_expire:
+                    type: string
+                    description: Agreement expiration date.
+                    x-description-i18n:
+                      eng: Agreement expiration date.
+                      spa: Fecha de vencimiento del Agreement.
+                      por: Data de vencimento do Agreement.
+                    example: "2023-02-16T00:02:52Z"
+                  validation_code:
+                    type: string
+                    description: The code obtained to generate the Payer Token.
+                    x-description-i18n:
+                      eng: The code obtained to generate the Payer Token.
+                      spa: Código obtenido para generar el Payer Token.
+                      por: Código obtido para gerar o Payer Token.
+                    example: 790eb6591ff68df74c57930551ed980239f4538a7e530
+                  approval_uri:
+                    type: string
+                    description: Necessary uri to redirect the user to the previously linked wallet in the frontend.
+                    x-description-i18n:
+                      eng: Necessary uri to redirect the user to the previously linked wallet in the frontend.
+                      spa: Uri necesaria para redirigir al usuario a la billetera previamente vinculada en la interfaz.
+                      por: Uri necessária para redirecionar o usuário à wallet previamente vinculada no frontend.
+                    example: https://www.mercadopago.com.ar/v1/wallet_agreement/b1234e5678b91c23a456e78912345b67
+                  redirect_uri:
+                    type: string
+                    description: Indicates the URI to return the user to after the agreement is complete.
+                    x-description-i18n:
+                      eng: Indicates the Uri to return the user to after the agreement is complete.
+                      spa: Indica el Uri al que regresará el usuario después de que se complete el agreement.
+                      por: Indica o Uri para o qual o usuário retornará após ter completado o agreement.
+                    example: https://www.mercadopago.com/
+                  status:
+                    type: string
+                    description: Agreement status.
+                    x-description-i18n:
+                      eng: Agreement status.
+                      spa: Status del Agreement.
+                      por: Status do Agreement.
+                    example: confirmed_by_user
+                  external_flow_id:
+                    type: string
+                    description: Identifies the Seller side flow current state.
+                    x-description-i18n:
+                      eng: Identifies the Seller side flow current state.
+                      spa: Identifica el status actual del flujo Seller side.
+                      por: Identifica o status atual do fluxo Seller side.
+                    example: external_flow_id
+                  external_user:
+                    type: object
+                    description: The external_user contains the data that the Seller will need to use to indentify a User, so then it can continue with their own flow.
+                    x-description-i18n:
+                      eng: The external_user contains the data that the Seller will need to use to indentify a User, so then it can continue with their own flow.
+                      spa: El external_user contiene los datos que el vendedor necesitará para identificar un usuario a fin de que este pueda continuar con su propio flujo.
+                      por: O external_user contém os dados que o vendedor precisará para identificar um usuário, de modo que este possa seguir com o seu próprio fluxo.
+                    properties:
+                      id:
+                        type: string
+                        description: Unique ID that was used by the Seller to identify the external_user
+                        x-description-i18n:
+                          eng: Unique ID that was used by the Seller to identify the external_user
+                          spa: ID único que utilizó el vendedor para identificar el external_user
+                          por: ID único que usou o vendedor para identificar o external_user
+                        example: usertest
+                      description:
+                        type: string
+                        description: A brief description with information of the user. For example the name of the user
+                        x-description-i18n:
+                          eng: A brief description with information of the user. For example the name of the user
+                          spa: Breve descripción con información del usuario. Por ejemplo, el nombre del usuario
+                          por: Breve descrição com informações do usuário. Por exemplo, o nome do usuário
+                        example: Test account
+                  agreement_data:
+                    type: object
+                    description: Contains information about actions the user must do and the amount to be paid
+                    x-description-i18n:
+                      eng: Contains information about actions the user must do and the amount to be paid
+                      spa: Contiene información sobre las acciones que el usuario debe realizar y el monto a pagar
+                      por: Contém informação sobre as ações que o usuário deve fazer e o valor a ser pago
+                    properties:
+                      validation_amount:
+                        type: number
+                        description: Amount that the user is going to pay
+                        x-description-i18n:
+                          eng: Amount that the user is going to pay
+                          spa: Monto que el usuario pagará
+                          por: Valor que o usuário pagará
+                        example: 3.14
+                      description:
+                        type: string
+                        description: Description of the actions that the user is trying to perform
+                        x-description-i18n:
+                          eng: Description of the actions that the user is trying to perform
+                          spa: Descripción de las acciones que el usuario intenta realizar
+                          por: Descrição das ações que o usuário tenta realizar
+                        example: Test agreement
+                  site_id:
+                    type: string
+                    description: Country of origin of the Mercado Pago account.
+                    x-description-i18n:
+                      eng: Country of origin of the Mercado Pago account.
+                      spa: País de origen de la cuenta de Mercado Pago.
+                      por: País de origem da conta do Mercado Pago.
+                    example: MLA   
+                  application_id:
+                    type: number
+                    description: This is the client unique identificator.
+                    x-description-i18n:
+                      eng: This is the client unique identificator.
+                      spa: Identificador único del cliente.
+                      por: Identificador único do cliente.
+                    example: 123456789
+                  collector_id:
+                    type: number
+                    description: User owner of the application_id.
+                    x-description-i18n:
+                      eng: User owner of the application_id.
+                      spa: Usuario propietario del application_id.
+                      por: Usuário proprietário do application_id.
+                    example: 987654
+                  model_version:
+                    type: number
+                    description: Agreement API version.
+                    x-description-i18n:
+                      eng: Agreement API version.
+                      spa: Versión de la API del Agreement.
+                      por: Versão da API do Agreement.
+                    example: 2
         '400':
           description: Error
           x-description-i18n:
