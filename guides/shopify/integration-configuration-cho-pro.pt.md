@@ -1,4 +1,4 @@
-# Instalação do Checkout Pro
+# Checkout Pro
 
 > WARNING
 >

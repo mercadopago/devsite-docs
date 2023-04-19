@@ -1,6 +1,6 @@
-# Installation
+# Checkout Transparente
 
-To install Checkout Transparent in a Shopify store, follow the steps below:
+To install Checkout Transparente in a Shopify store, follow the steps below:
 
 1. Go to your [Shopify](https://accounts.shopify.com/store-login) store.
 2. Access the installation site of Mercado Pago’s Checkout Transparent [clicking here](https://apps.shopify.com/checkout-transparente-mp).
