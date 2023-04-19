@@ -31,6 +31,34 @@ Antes de configurar as notificações Webhooks para Wallet Connect considere os 
 
 Existem dois tipos diferentes de eventos que permitem o recebimento de notificações. Esses eventos referem-se à atualização e/ou cancelamento de um agreement.
 
+### Confirmação do agreement pelo usuário
+
+A partir deste evento, não é necessário depender do `return_uri` para saber se o usuário confirmou o agreement. 
+
+Para isso, é possível fazer um **GET** no endpoint [/v2/wallet_connect/agreements/{agreement_id}](/developers/pt/reference/wallet_connect/_wallet_connect_agreements_agreement_id/get) e obter o `agreement_code` e `external_flow_id`. Isso permitirá seguir com a criação do Payer token para a criação dos pagamentos.
+
+Veja abaixo um exemplo de código com as informações enviadas no momento da requisição.
+
+[[[
+```curl
+
+curl -X POST 'https://api.integrator.com/wallet_connect/events' \
+-d ‘{ 
+     id: “44ae6c7564ed497f945f755fcabat9d4”,
+     type: "wallet_connect",
+     entity: "agreement",
+     action: "status.updated",
+     date: "2021-09-30T23:24:44Z",
+     model_version: 1,
+     version: 0,
+     data: { 
+           id: "22ae6c1235ed497f945f755fcaba3c6c",
+           status: "confirmed_by_user"
+     }
+}’
+
+```
+]]]
 
 ### Cancelamento de agreement entre integrador e Mercado Pago
 
@@ -103,34 +131,6 @@ curl -X POST 'https://api.integrator.com/wallet_connect/events' \
 ```
 ]]]
 
-### Confirmação do agreement pelo usuário
-
-A partir deste evento, não é necessário depender do `return_uri` para saber se o usuário confirmou o agreement. 
-
-Para isso, é possível fazer um **GET** no endpoint [/v2/wallet_connect/agreements/{agreement_id}](/developers/pt/reference/wallet_connect/_wallet_connect_agreements_agreement_id/get) e obter o `agreement_code` e `external_flow_id`. Isso permitirá seguir com a criação do Payer token para a criação dos pagamentos.
-
-Veja abaixo um exemplo de código com as informações enviadas no momento da requisição.
-
-[[[
-```curl
-
-curl -X POST 'https://api.integrator.com/wallet_connect/events' \
--d ‘{ 
-     id: “44ae6c7564ed497f945f755fcabat9d4”,
-     type: "wallet_connect",
-     entity: "agreement",
-     action: "status.updated",
-     date: "2021-09-30T23:24:44Z",
-     model_version: 1,
-     version: 0,
-     data: { 
-           id: "22ae6c1235ed497f945f755fcaba3c6c",
-           status: "confirmed_by_user"
-     }
-}’
-
-```
-]]]
 
 Na tabela abaixo mostramos com mais detalhes os possíveis valores que são enviados no corpo da requisição do cancelamento e atualização do meio de pagamento de um agreement.
 

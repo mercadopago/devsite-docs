@@ -28,7 +28,36 @@ Before setting up Webhooks notifications for Wallet Connect, consider the requir
 
 ## Types of events
 
-There are two different types of events that allow you to receive notifications. These events refer to the update and/or cancellation of an agreement.
+There are three different types of events that allow you to receive notifications. These events refer to the update and/or cancellation of an agreement.
+
+### User confirmation of the agreement.
+
+From this event, it is not necessary to rely on the `return_uri` to know if the user has confirmed the agreement or not.
+
+For this, it is possible to make a **GET** request to the endpoint [/v2/wallet_connect/agreements/{agreement_id}](/developers/en/reference/wallet_connect/_wallet_connect_agreements_agreement_id/get) and obtain the `agreement_code` and `external_flow_id`. This will allow to proceed with the creation of the Payer token for payment creation.
+
+See below an example of the code with the information sent at the time of the request.
+
+[[[
+```curl
+
+curl -X POST 'https://api.integrator.com/wallet_connect/events' \
+-d ‘{ 
+     id: “44ae6c7564ed497f945f755fcabat9d4”,
+     type: "wallet_connect",
+     entity: "agreement",
+     action: "status.updated",
+     date: "2021-09-30T23:24:44Z",
+     model_version: 1,
+     version: 0,
+     data: { 
+           id: "22ae6c1235ed497f945f755fcaba3c6c",
+           status: "confirmed_by_user"
+     }
+}’
+
+```
+]]]
 
 ### Cancellation of agreement between integrator and Mercado Pago
 
@@ -98,35 +127,6 @@ curl -X POST 'https://api.integrator.com/wallet_connect/events' \
      }
 
 }' 
-
-```
-]]]
-
-### User confirmation of the agreement.
-
-From this event, it is not necessary to rely on the `return_uri` to know if the user has confirmed the agreement or not.
-
-For this, it is possible to make a **GET** request to the endpoint [/v2/wallet_connect/agreements/{agreement_id}](/developers/en/reference/wallet_connect/_wallet_connect_agreements_agreement_id/get) and obtain the `agreement_code` and `external_flow_id`. This will allow to proceed with the creation of the Payer token for payment creation.
-
-See below an example of the code with the information sent at the time of the request.
-
-[[[
-```curl
-
-curl -X POST 'https://api.integrator.com/wallet_connect/events' \
--d ‘{ 
-     id: “44ae6c7564ed497f945f755fcabat9d4”,
-     type: "wallet_connect",
-     entity: "agreement",
-     action: "status.updated",
-     date: "2021-09-30T23:24:44Z",
-     model_version: 1,
-     version: 0,
-     data: { 
-           id: "22ae6c1235ed497f945f755fcaba3c6c",
-           status: "confirmed_by_user"
-     }
-}’
 
 ```
 ]]]
