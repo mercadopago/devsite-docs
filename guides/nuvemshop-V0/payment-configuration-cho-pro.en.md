@@ -1,33 +1,6 @@
 # Configure payments with Checkout Pro (Checkout Mercado Pago)
  
 When installing [Checkout Pro](/developers/en/docs/checkout-pro/landing), there may be an **increase in the approval rate of online store sales**. This happens because buyers will be able to pay using a Mercado Pago account and the entire purchase process will be done in our environment, which facilitates payment. At the end of the transaction, these buyers are redirected to the store environment.
-
-At checkout, when buyers choose to pay with Mercado Pago, the displayed information highlights the exclusive advantages of paying with a Mercado Pago account, such as:
-
-----[mlb]----
-* **Easy login**: login with the same e-mail and password as Mercado Libre.
-* **Pay faster and in many ways**: use saved cards, Pix or available balance in the Mercado Pago account.
-* **Purchase protection**: get your money back if the product is not delivered.
-
-------------
-----[mla]----
-* **Pay faster**: use saved cards or available balance in your Mercado Pago account.
-* **Installment**: pay in installments with or without a credit card.
-* **Mercado Pago support**: receive help if you have any problems with your purchase.
-
-------------
-----[mlm]----
-* **Easy login**: login with the same e-mail and password as Mercado Libre.
-* **Pay faster and in different ways**: use saved cards, cash, offline means or available balance in your Mercado Pago account.
-* **Purchase protection**: get your money back if the product is not delivered.
-
-------------
-----[mpe, mco, mlu, mlc]----
-* **Easy login**: login with the same e-mail and password as Mercado Libre.
-* **Pay faster**: use cash or available balance in your Mercado Pago account.
-* **Installment**: interest-free installments at selected banks.
-
-------------
  
 To integrate Checkout Pro, follow the steps below.
  
