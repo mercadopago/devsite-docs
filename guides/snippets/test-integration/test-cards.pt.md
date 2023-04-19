@@ -3,7 +3,6 @@ Você pode utilizar cartões de teste de métodos de pagamento locais e simular 
 Para isso, de acordo com o seu país, utilize algum dos cartões que disponibilizamos a seguir.
  
 ----[mla]----
- 
 | Cartão | Número | Código de segurança | Data de vencimento |
 | :--- | :---: | :---: | :---: |
 | Mastercard | 5031 7557 3453 0604 | 123 | 11/25 |
@@ -14,8 +13,8 @@ Para **testar diferentes resultados de pagamento**, preencha o status desejado n
  
 | Status de pagamento | Descrição | Documento de identidade |
 | --- | --- | --- |
-| `APRO` | Pagamento aprovado | DNI do usuário de teste |
-| `OTHE` | Recusado por erro geral | DNI do usuário de teste |
+| `APRO` | Pagamento aprovado | (DNI) 12345678 |
+| `OTHE` | Recusado por erro geral | (DNI) 12345678 |
 | `CONT` | Pagamento pendente | - |
 | `CALL` | Recusado com validação para autorizar | - |
 | `FUND` | Recusado por quantia insuficiente | - |
@@ -23,16 +22,8 @@ Para **testar diferentes resultados de pagamento**, preencha o status desejado n
 | `EXPI` | Recusado por problema com a data de vencimento | - |
 | `FORM` | Recusado por erro no formulário | - |
 
-> WARNING
->
-> Atenção
->
->  É necessário que o DNI associado ao cartão seja o mesmo do usuário de teste que está realizando a compra. Para confirmar essa informação, na sua conta de usuário do Mercado Pago acesse **Seu perfil > Seus dados** e revise o campo **Documento**, garantindo que será o mesmo a ser associado ao cartão.
-
 ------------
-
 ----[mlb]----
- 
 | Cartão | Número | Código de segurança | Data de vencimento |
 | :--- | :---: | :---: | :---: |
 | Mastercard | 5031 4332 1540 6351 | 123 | 11/25 |
@@ -53,9 +44,7 @@ Para **testar diferentes resultados de pagamento**, preencha o status desejado n
 | `FORM` | Recusado por erro no formulário | - |
 
 ------------
-
 ----[mlc]----
- 
 | Cartão | Número | Código de segurança | Data de vencimento |
 | :--- | :---: | :---: | :---: |
 | Mastercard | 5416 7526 0258 2580 | 123 | 11/25 |
@@ -76,9 +65,7 @@ Para **testar diferentes resultados de pagamento**, preencha o status desejado n
 | `FORM` | Recusado por erro no formulário | - |
 
 ------------
-
 ----[mco]----
- 
 | Cartão | Número | Código de segurança | Data de vencimento |
 | :--- | :---: | :---: | :---: |
 | Mastercard | 5254 1336 7440 3564 | 123 | 11/25 |
@@ -99,9 +86,7 @@ Para **testar diferentes resultados de pagamento**, preencha o status desejado n
 | `FORM` | Recusado por erro no formulário | - |
 
 ------------
-
 ----[mlm]----
- 
 | Cartão | Número | Código de segurança | Data de vencimento |
 | :--- | :---: | :---: | :---: |
 | Visa | 4075 5957 1648 3764 | 123 | 11/25 |
@@ -120,9 +105,7 @@ Para **testar diferentes resultados de pagamento**, preencha o status desejado n
 | `FORM` | Recusado por erro no formulário |
 
 ------------
-
 ----[mlu]----
- 
 | Cartão | Número | Código de segurança | Data de vencimento |
 | :--- | :---: | :---: | :---: |
 | Mastercard | 5031 7557 3453 0604 | 123 | 11/25 |
@@ -142,9 +125,7 @@ Para **testar diferentes resultados de pagamento**, preencha o status desejado n
 | `FORM` | Recusado por erro no formulário | - |
 
 ------------
-
 ----[mpe]----
- 
 | Cartão | Número | Código de segurança | Data de vencimento |
 | :--- | :---: | :---: | :---: |
 | Mastercard | 5031 7557 3453 0604 | 123 | 11/25 |
