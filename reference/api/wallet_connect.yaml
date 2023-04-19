@@ -408,6 +408,125 @@ paths:
                     type: string
                     enum:
                       - 500--Error--Internal server error
+    get:
+      tags:
+        - $ref: '#/tags/wallet-connect'
+      summary: Get agreement
+      x-summary-i18n:
+        eng: Get agreement
+        spa: Obtener Agreement
+        por: Obter Agreement
+      description: Endpoint to get an agreement by id. An agreement is an authorization link that the buyer receives to allow the seller to access their Mercado Pago wallet to debit the payment 
+      x-description-i18n:
+        eng: Endpoint to get an agreement by id. An agreement is an authorization link that the buyer receives to allow the seller to access their Mercado Pago wallet to debit the payment
+        spa: Endpoint para obtener un Agreement por ID. Un Agreement es un link de autorización que el comprador recibe para permitir al vendedor acceder a su billetera de Mercado Pago a fin de debitar el pago
+        por: Endpoint para obter um Agreement por ID. Um Agreement é um link de autorização que o comprador recebe para permitir ao vendedor acessar a sua carteira do Mercado Pago a fim de debitar o pagamento
+      operationId: "getAgreement_GET"
+      parameters:
+        - name: agreementId
+          in: path
+          description: Unique ID that identifies an Agreement
+          x-description-i18n:
+            eng: Unique ID that identifies an Agreement
+            spa: ID único que identifica un Agreement
+            por: ID único que identifica um Agreement
+          required: true
+          schema:
+            type: string
+            example: b1234e5678b91c23a456e78912345b67
+        - name: client.id
+          in: query
+          description: Unique ID that identifies a Client
+          x-description-i18n:
+            eng: Unique ID that identifies a Client
+            spa: ID unico que identifica un cliente
+            por: ID único que identifica um cliente
+          required: false
+          schema:
+            type: number
+            example: 1451895580758649
+        - name: x-platform-id
+          in: header
+          description: Field intended for platforms or modules that offer Mercado Pago in their solutions
+          x-description-i18n:
+            eng: Field intended for platforms or modules that offer Mercado Pago in their solutions
+            spa: Campo destinado a plataformas o módulos que ofrecen Mercado Pago en sus soluciones
+            por: Campo destinado para as plataformas ou módulos que oferecem Mercado Pago em suas soluções
+          schema:
+            type: string
+            example: YOUR_ACCESS_TOKEN
+      responses: 
+        '200':
+          description: Success
+          name: Agreement obtained
+          content:
+            application/json:
+              schema:
+                description: Agreement that contains an unique identifier and a success URL.
+                x-description-i18n:
+                  eng: Agreement that contains an unique identifier and a success URL.
+                  spa: Agreement que contiene un identificador único y un URL de éxito.
+                  por: Agreement que contém um identificador único e um URL de sucesso.
+                type: object
+                properties:
+                  agreement_id:
+                    type: string
+                    description: Unique ID that identifies an Agreement
+                    x-description-i18n:
+                      eng: Unique ID that identifies an Agreement
+                      spa: ID único que identifica un Agreement
+                      por: ID único que identifica um Agreement
+                    example: b1234e5678b91c23a456e78912345b67
+                  agreement_uri:
+                    type: string
+                    description: This is the uri to redirect the user to the wallet linking in the frontend.
+                    x-description-i18n:
+                      eng: This is the uri to redirect the user to the wallet linking in the frontend.
+                      spa: Este es el uri para redirigir al usuario a la billetera que se vincula en el frontend.
+                      por: Este é o uri para redirecionar o usuário para a wallet vinculada no frontend.
+                    example: https://beta.mercadopago.com.ar/v1/wallet_agreement/b1234e5678b91c23a456e78912345b67
+        '400':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 400--Bad-Request--Parameter agreement_id is required
+                      - 400--Bad-Request--Parameter agreementId has more than 32 characters
+                      - 400--Bad-Request--Parameter agreement_id must be an alfanumeric value
+        '404':
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 404--Not-Found--The Agreement with that id
+        '500':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500--Error--Internal server error
   /v1/advanced_payments: 
     post:
       tags:
