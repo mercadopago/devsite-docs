@@ -1,4 +1,4 @@
-# Checkout Pro
+# Configure Checkout Pro
 
 > WARNING
 >
@@ -9,7 +9,7 @@
 When installing [Checkout Pro](/developers/en/docs/checkout-pro/landing), there may be an **increase in the approval rate of online store sales**. This happens because buyers will be able to pay using a Mercado Pago account and the entire purchase process will be done in our environment, which facilitates payment. At the end of the transaction, these buyers are redirected to the store environment.
 
 ----[mlb, mlm, mpe, mco, mlu, mlc]----
-To install Checkout Pro in a Shopify store, follow the steps below:
+To configure Checkout Pro in a Shopify store, follow the steps below:
 
 1. Go to your [Shopify](https://accounts.shopify.com/store-login) store.
 2. In the store's administrative panel, click on **Settings**.

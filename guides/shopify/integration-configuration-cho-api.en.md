@@ -1,4 +1,4 @@
-# Checkout Transparente
+# Configure Checkout Transparente
 
 To install Checkout Transparente in a Shopify store, follow the steps below:
 
