@@ -18,7 +18,7 @@ Você pode obter uma lista completa dos tipos e meios de pagamento disponíveis 
 >
 > Atenção
 >
-> Em breve, o Paypal não estará mais disponível como meio de pagamento nas soluções do Mercado Pago, e não será possível receber pagamentos por este meio ou fazer novas integrações. Se você tiver dúvidas sobre essa mudança, entre em contato pelo nosso [portal de ajuda](https://www.mercadopago.com.br/ajuda).
+> Em breve, o Paypal não estará mais disponível como meio de pagamento nas soluções do Mercado Pago e não será possível receber pagamentos por este meio ou fazer novas integrações. Se você tiver dúvidas sobre essa mudança, entre em contato pelo nosso [portal de ajuda](https://www.mercadopago.com.br/ajuda).
 
 ------------
 
