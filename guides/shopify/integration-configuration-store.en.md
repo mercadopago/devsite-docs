@@ -1,4 +1,4 @@
-# Configuration
+# Configure store information
 
 We recommend you customize the checkout information of the store to ensure a better shopping experience and a smoother integration between Mercado Pago`s checkout and Shopify. To do so, follow the steps below:
 

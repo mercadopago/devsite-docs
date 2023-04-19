@@ -1,4 +1,4 @@
-# Configuración
+# Configurar información de la tienda
 
 Te recomendamos personalizar la información del checkout de la tienda para poder garantizar una mejor experiencia de compra y una integración más estrecha entre el checkout de Mercado Pago en Shopify. Para hacerlo, sigue los pasos a continuación:
 
