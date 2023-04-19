@@ -120,7 +120,7 @@ curl -X POST 'https://api.integrator.com/wallet_connect/events' \
      entity: "agreement",
      action: "status.updated",
      date: "2021-09-30T23:24:44Z",
-     model_ version: 1,
+     model_version: 1,
      version: 0,
      data: { 
            id: "22ae6c1235ed497f945f755fcaba3c6c",
@@ -139,7 +139,7 @@ In the table below you can check more details about the possible values ​​th
 | type  | wallet_connect  | String  | Represents events about the agreement between the integrator and the Mercado Pago user. This value will always be `wallet_connect`.  |
 | entity  | agreement  | String  | Entity related to the event. The value will always be `agreement`.  |
 | action  | payment_method.updated  | String  | - Indicates that the secondary payment method associated with the contract has been updated. <br> - Can be used by the seller as a way to know if a new charge should be made.  |
-| action  | status.updated  | String  | - Indicates that the contract was canceled by the user. <br> - It can be used by the integrator to know if the user has confirmed the agreement or if it was canceled and new charges **should not** be made. |
+| action  | status.updated  | String  | - Indicates that the contract was canceled or confirmed by the user. <br> - It can be used by the integrator to know if the user has confirmed the agreement or if it was canceled and new charges **should not** be made. |
 | date  | {{action_date}}  | Date  | An approximate date (in Zulu format) associated with the event.  |
 | data  | {  id: {{agreement_id}},  status: {{agreement_status}}  }  | id: String  status: String  | This field can provide extra details about the event based on type and action.  |
 | model_version  | 1  | Integer  | Webhook body template version. It will always be `1`.  |

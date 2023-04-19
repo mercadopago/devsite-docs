@@ -34,7 +34,7 @@ Existem dois tipos diferentes de eventos que permitem o recebimento de notifica�
 
 ### Cancelamento de agreement entre integrador e Mercado Pago
 
-Neste evento, o usuário tem a possibilidade de se descadastrar de um agreement, o que faz com que o contrato existente seja cancelado. Quando isso acontece, o `payer_token` é invalidado e nenhuma outra cobrança é feita ao usuário. 
+Neste evento, o usuário tem a possibilidade de se descadastrar de um agreement, o que faz com que o agreement existente seja cancelado. Quando isso acontece, o `payer_token` é invalidado e nenhuma outra cobrança é feita ao usuário. 
 
 > NOTE
 >
@@ -105,7 +105,7 @@ curl -X POST 'https://api.integrator.com/wallet_connect/events' \
 
 ### Confirmação do agreement pelo usuário
 
-A partir deste evento, não é necessário depender do `return_uri` para saber se o usuário confirmou ou não o agreement. 
+A partir deste evento, não é necessário depender do `return_uri` para saber se o usuário confirmou o agreement. 
 
 Para isso, é possível fazer um **GET** no endpoint [/v2/wallet_connect/agreements/{agreement_id}](/developers/pt/reference/wallet_connect/_wallet_connect_agreements_agreement_id/get) e obter o `agreement_code` e `external_flow_id`. Isso permitirá seguir com a criação do Payer token para a criação dos pagamentos.
 
@@ -121,7 +121,7 @@ curl -X POST 'https://api.integrator.com/wallet_connect/events' \
      entity: "agreement",
      action: "status.updated",
      date: "2021-09-30T23:24:44Z",
-     model_ version: 1,
+     model_version: 1,
      version: 0,
      data: { 
            id: "22ae6c1235ed497f945f755fcaba3c6c",
@@ -140,8 +140,8 @@ Na tabela abaixo mostramos com mais detalhes os possíveis valores que são envi
 | id  | UUID/Number  | String  | ID exclusivo do evento. Este ID evita mensagens duplicadas do lado do integrador.  |
 | type  | wallet_connect  | String  | Representa eventos sobre o agreement entre o integrador e o usuário do Mercado Pago. Este valor sempre será `wallet_connect`  |
 | entity  | agreement  | String  | Entidade relacionada ao evento. O valor será sempre `agreement`.  |
-| action  | payment_method.updated  | String  | - Indica que a forma de pagamento secundária associada ao contrato foi atualizada. <br> - Pode ser utilizado pelo vendedor como forma de saber se uma nova cobrança deve ser realizada.  |
-| action  | status.updated  | String  | - Indica que o agreement foi cancelado pelo usuário. <br> - Pode ser usado pelo integrador para saber se o usuário confirmou o agreement ou se o mesmo foi cancelado e novas cobranças **não deverão** ser realizadas. |
+| action  | payment_method.updated  | String  | - Indica que a forma de pagamento secundária associada ao agreement foi atualizada. <br> - Pode ser utilizado pelo vendedor como forma de saber se uma nova cobrança deve ser realizada.  |
+| action  | status.updated  | String  | - Indica que o agreement foi cancelado ou confirmado pelo usuário. <br> - Pode ser usado pelo integrador para saber se o usuário confirmou o agreement ou se o mesmo foi cancelado e novas cobranças **não deverão** ser realizadas. |
 | date  | {{action_date}}  | Date  | Uma data aproximada (em formato Zulu) associada ao evento.  |
 | data  | {  id: {{agreement_id}},  status: {{agreement_status}}  }  | id: String  status: String  | Este campo pode trazer detalhes extras sobre o evento baseado no tipo e na ação.  |
 | model_version  | 1  | Integer  | Versão do modelo de corpo do webhook. Será sempre `1`.  |

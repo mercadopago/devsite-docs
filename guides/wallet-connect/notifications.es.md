@@ -106,7 +106,7 @@ curl -X POST 'https://api.integrator.com/wallet_connect/events' \
 
 ### Confirmación del agreement por parte del usuario.
 
-A partir de este evento, no es necesario depender del `return_uri` para saber si el usuario confirmó o no el agreement.
+A partir de este evento, no es necesario depender del `return_uri` para saber si el usuario confirmó el agreement.
 
 Para esto, es posible hacer un **GET** en el endpoint [/v2/wallet_connect/agreements/{agreement_id}](/developers/es/reference/wallet_connect/_wallet_connect_agreements_agreement_id/get) y obtener el `agreement_code` y `external_flow_id`. Esto permitirá seguir con la creación del Payer token para la creación de los pagos.
 
@@ -122,7 +122,7 @@ curl -X POST 'https://api.integrator.com/wallet_connect/events' \
      entity: "agreement",
      action: "status.updated",
      date: "2021-09-30T23:24:44Z",
-     model_ version: 1,
+     model_version: 1,
      version: 0,
      data: { 
            id: "22ae6c1235ed497f945f755fcaba3c6c",
@@ -142,7 +142,7 @@ En la siguiente tabla mostramos con más detalle los posibles valores que se env
 | type  | wallet_connect  | String  | Representa eventos sobre el agreement entre el integrador y el usuario de Mercado Pago. Este valor siempre será `wallet_connect`.  |
 | entity  | agreement  | String  | Entidad relacionada con el agreement. El valor siempre será `agreement`. |
 | action  | payment_method.updated  | String  | - Indica que se ha actualizado el medio de pago secundario asociado al agreement. <br> - Puede ser utilizado por el vendedor como una forma de saber si se debe realizar un nuevo cargo. |
-| action  | status.updated  | String  | - Indica que el agreement fue cancelado por el usuario. <br> - Puede ser usado por el integrador para saber si el usuario confirmó el agreement o si fue cancelado y **no se deben** realizar nuevos cobros. |
+| action  | status.updated  | String  | - Indica que el agreement fue cancelado o confirmado por el usuario. <br> - Puede ser usado por el integrador para saber si el usuario confirmó el agreement o si fue cancelado y **no se deben** realizar nuevos cobros. |
 | date  | {{action_date}}  | Date  | Una fecha aproximada (en formato Zulu) asociada con el evento.  |
 | data  | {  id: {{agreement_id}},  status: {{agreement_status}}  }  | id: String  status: String  | Este campo puede proporcionar detalles adicionales sobre el evento según el tipo y la acción. |
 | model_version  | 1  | Integer  | Versión del modelo del body del webhook. Siempre será `1`.|
