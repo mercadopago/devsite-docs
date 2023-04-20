@@ -33,9 +33,9 @@ Hay tres tipos diferentes de eventos que le permiten recibir notificaciones. Est
 
 ### Confirmación del agreement por parte del usuario.
 
-A partir de este evento, no es necesario depender del `return_uri` para saber si el usuario confirmó el agreement.
+A partir de este evento, el integrador es notificado cuando un usuario confirma el agreement.
 
-Para esto, es posible hacer un **GET** en el endpoint [/v2/wallet_connect/agreements/{agreement_id}](/developers/es/reference/wallet_connect/_wallet_connect_agreements_agreement_id/get) y obtener el `agreement_code` y `external_flow_id`. Esto permitirá seguir con la creación del Payer token para la creación de los pagos.
+Para esto, envíe un **GET** al endpoint [/v2/wallet_connect/agreements/{agreement_id}](/developers/es/reference/wallet_connect/_wallet_connect_agreements_agreement_id/get) para obtener el `agreement_code` y `external_flow_id`. Esto permitirá seguir con la creación del Payer token para la creación de los pagos.
 
 A continuación se muestra un ejemplo de código con la información enviada en el momento del request.
 

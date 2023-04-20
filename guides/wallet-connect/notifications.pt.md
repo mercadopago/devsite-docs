@@ -29,13 +29,13 @@ Antes de configurar as notificações Webhooks para Wallet Connect considere os 
 
 ## Tipos de eventos
 
-Existem dois tipos diferentes de eventos que permitem o recebimento de notificações. Esses eventos referem-se à atualização e/ou cancelamento de um agreement.
+Existem três tipos diferentes de eventos que permitem o recebimento de notificações. Esses eventos referem-se à atualização e/ou cancelamento de um agreement.
 
 ### Confirmação do agreement pelo usuário
 
-A partir deste evento, não é necessário depender do `return_uri` para saber se o usuário confirmou o agreement. 
+A partir deste evento, o integrador é notificado quando um usuário confirma o agreement. 
 
-Para isso, é possível fazer um **GET** no endpoint [/v2/wallet_connect/agreements/{agreement_id}](/developers/pt/reference/wallet_connect/_wallet_connect_agreements_agreement_id/get) e obter o `agreement_code` e `external_flow_id`. Isso permitirá seguir com a criação do Payer token para a criação dos pagamentos.
+Para isso, envie um **GET** ao endpoint [/v2/wallet_connect/agreements/{agreement_id}](/developers/pt/reference/wallet_connect/_wallet_connect_agreements_agreement_id/get) para obter o `agreement_code` e `external_flow_id`. Isso permitirá seguir com a criação do Payer token para a criação dos pagamentos.
 
 Veja abaixo um exemplo de código com as informações enviadas no momento da requisição.
 
