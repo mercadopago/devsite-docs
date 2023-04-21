@@ -2,11 +2,14 @@
 
 We recommend you customize the checkout information of the store to ensure a better shopping experience and a smoother integration between Mercado Pago`s checkout and Shopify. To do so, follow the steps below:
 
+----[mla]----
 > WARNING
 >
 > Attention
 >
 > If you are using the old version of the Mercado Pago plugin to Checkout Pro, [click here](/developers/en/docs/shopify/how-tos/migration) to find out how to migrate to the current version.
+
+------------
 
 ## Configure the company name 
 
@@ -15,27 +18,11 @@ We recommend you customize the checkout information of the store to ensure a bet
 3. Once there, select the **Checkout** option.
 4. In the **Customer Information** section, select the field "Company Name" as required.
 
-----[mlb]----
-![configurar empresa portugues](/images/shopify/configurar-empresa-PT.gif)
-------------
-
-----[mla, mlu, mlc, mco, mpe, mlm]----
-![configurar empresa español](/images/shopify/configurar-empresa-ES.gif)
-------------
-
 ## Configure the store language 
 
 1. In the administrative panel of the store, click on **Settings**. There, click on **Languages**.
 2. In the Default Language section, you can choose the language in which the store will operate. Click on **Change default**.
 3. On the next screen, choose a language, and click on the **Save** button.
-
-----[mlb]----
-![configurar idioma pt](/images/shopify/cambiar-idioma-PT.png)
-------------
-
-----[mla, mlu, mlc, mco, mpe, mlm]----
-![configurar idioma es](/images/shopify/cambiar-idioma-ES.png)
-------------
 
 ## Set values of buyer's identification
 
