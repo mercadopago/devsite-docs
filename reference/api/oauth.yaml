@@ -11,6 +11,8 @@ paths:
         - $ref: '#/tags/checkout-pro'
         - $ref: '#/tags/mobile-checkout'
         - $ref: '#/tags/subscriptions'
+        - $ref: '#/tags/mp-point'
+        - $ref: '#/tags/qr-code'
       summary: Create and refresh token
       x-summary-i18n:
         eng: Create and refresh token

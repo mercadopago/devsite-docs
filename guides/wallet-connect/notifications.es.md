@@ -4,13 +4,19 @@
 
 Webhook (también conocido como devolución de llamada web) es un método simple que facilita que una aplicación o sistema proporcione información en tiempo real cada vez que ocurre un evento, es decir, es una forma de recibir datos pasivamente entre dos sistemas a través de un HTTP POST.
 
-Las notificaciones de webhook se pueden configurar para una o más aplicaciones creadas en su Dashboard.
+Una vez configurado, el Webhook se enviará siempre que se produzcan uno o más eventos registrados, evitando un trabajo de búsqueda innecesarios de una respuesta y, en consecuencia, una sobrecarga del sistema y pérdida de datos siempre que se presente alguna situación. 
 
-Una vez configurado, el Webhook se enviará siempre que se produzcan uno o más eventos registrados, evitando un trabajo de búsqueda innecesarios de una respuesta y, en consecuencia, una sobrecarga del sistema y pérdida de datos siempre que se presente alguna situación. Luego de recibir una notificación en su plataforma, Mercado Pago esperará una respuesta para validar si la recibió correctamente.
+Luego de recibir una notificación en su plataforma, Mercado Pago esperará una respuesta para validar si la recibió correctamente.
 
-### Requisitos previos
+> NOTE
+>
+> Importante
+>
+> Las notificaciones de webhook se pueden configurar para una o más aplicaciones creadas en su Dashboard.
 
-Antes de configurar las notificaciones de webhook para Wallet Connect, es importante tener en cuenta los siguientes requisitos.
+## Requisitos previos
+
+Antes de configurar las notificaciones de Webhooks para Wallet Connect, considere los requisitos enumerados a continuación.
 
 
 | Requisito  | Descripción  |
@@ -21,14 +27,48 @@ Antes de configurar las notificaciones de webhook para Wallet Connect, es import
 | Solicitud de permiso | Para poder incluir solicitudes en la lista de permisos a través de DNS, las solicitudes llegarán a través del endpoint api.mercadopago.com. El integrador deberá deshabilitar el CSRF (**Cross-site request forgery**) para api.mercadopago.com, lo que permitirá las solicitudes de Mercado Pago. |
 
 
-### Tipos de eventos
+## Tipos de eventos
 
-Hay dos tipos diferentes de eventos que le permiten recibir notificaciones. Estos eventos se refieren a la actualización y/o cancelación de un contrato.
+Hay tres tipos diferentes de eventos que le permiten recibir notificaciones. Estos eventos se refieren a la actualización y/o cancelación de un contrato.
 
+### Confirmación del agreement por parte del usuario.
 
-#### Cancelación de un agreement entre integrador y Mercado Pago
+A partir de este evento, el integrador es notificado cuando un usuario confirma el agreement.
 
-En este caso, el usuario tiene la posibilidad de darse de baja de un agreement, lo que provoca la cancelación del contrato existente. Cuando esto sucede, el `payer_token` se invalida y no se realizan más cargos al usuario. Si el integrador realiza nuevos intentos de cobro, será rechazado.
+Para esto, envíe un **GET** al endpoint [/v2/wallet_connect/agreements/{agreement_id}](/developers/es/reference/wallet_connect/_wallet_connect_agreements_agreement_id/get) para obtener el `agreement_code` y `external_flow_id`. Esto permitirá seguir con la creación del Payer token para la creación de los pagos.
+
+A continuación se muestra un ejemplo de código con la información enviada en el momento del request.
+
+[[[
+```curl
+
+curl -X POST 'https://api.integrator.com/wallet_connect/events' \
+-d ‘{ 
+     id: “44ae6c7564ed497f945f755fcabat9d4”,
+     type: "wallet_connect",
+     entity: "agreement",
+     action: "status.updated",
+     date: "2021-09-30T23:24:44Z",
+     model_version: 1,
+     version: 0,
+     data: { 
+           id: "22ae6c1235ed497f945f755fcaba3c6c",
+           status: "confirmed_by_user"
+     }
+}’
+
+```
+]]]
+
+### Cancelación de un agreement entre integrador y Mercado Pago
+
+En este caso, el usuario tiene la posibilidad de darse de baja de un agreement, lo que provoca la cancelación del contrato existente. Cuando esto sucede, el `payer_token` se invalida y no se realizan más cargos al usuario. 
+
+> NOTE
+>
+> Importante
+>
+> En caso de que se hagan nuevos intentos de cobro, serán rechazados.
 
 Observa a continuación un ejemplo de código con la información enviada en el momento del request.
 
@@ -58,9 +98,11 @@ curl -X POST 'https://api.integrator.com/wallet_connect/events' \
 ```
 ]]]
 
-#### Actualización del medio de pago de un agreement
+### Actualización del medio de pago de un agreement
 
-En este caso, el usuario puede agregar o actualizar un medio de pago secundario (por defecto, Account Money de Mercado Pago es el primer medio de pago). En función de los estados de pago, es posible detectar pagos rechazados y notificar al usuario para que realice la actualización o agregue un medio de pago secundario.
+En este caso, el usuario puede agregar o actualizar un medio de pago secundario (por defecto, Account Money de Mercado Pago es el primer medio de pago). 
+
+En función de los estados de pago, es posible detectar pagos rechazados y notificar al usuario para que realice la actualización o agregue un medio de pago secundario.
 
 Observa a continuación un ejemplo de código con la información enviada en el momento del request.
 
@@ -91,7 +133,6 @@ curl -X POST 'https://api.integrator.com/wallet_connect/events' \
 ]]]
 
 
-
 En la siguiente tabla mostramos con más detalle los posibles valores que se envían en el cuerpo del request de cancelación y actualización del medio de pago de un agreement.
 
 | Campo  | Valor  | Tipo  | Descripción  |
@@ -100,13 +141,13 @@ En la siguiente tabla mostramos con más detalle los posibles valores que se env
 | type  | wallet_connect  | String  | Representa eventos sobre el agreement entre el integrador y el usuario de Mercado Pago. Este valor siempre será `wallet_connect`.  |
 | entity  | agreement  | String  | Entidad relacionada con el agreement. El valor siempre será `agreement`. |
 | action  | payment_method.updated  | String  | - Indica que se ha actualizado el medio de pago secundario asociado al agreement. <br> - Puede ser utilizado por el vendedor como una forma de saber si se debe realizar un nuevo cargo. |
-| action  | status.updated  | String  | - Indica que el agreement fue cancelado por el usuario. <br> - Se puede utilizar para saber que no se deben realizar nuevos cargos. |
+| action  | status.updated  | String  | - Indica que el agreement fue cancelado o confirmado por el usuario. <br> - Puede ser usado por el integrador para saber si el usuario confirmó el agreement o si fue cancelado y **no se deben** realizar nuevos cobros. |
 | date  | {{action_date}}  | Date  | Una fecha aproximada (en formato Zulu) asociada con el evento.  |
 | data  | {  id: {{agreement_id}},  status: {{agreement_status}}  }  | id: String  status: String  | Este campo puede proporcionar detalles adicionales sobre el evento según el tipo y la acción. |
 | model_version  | 1  | Integer  | Versión del modelo del body del webhook. Siempre será `1`.|
 | version  | 0  | Integer  | Versión para identificar duplicados dentro del mismo id. |
 
-### Configuración
+## Configuración
 
 
 La configuración de los webhooks se realiza a través del Dashboard. A continuación explicaremos cómo indicar las URLs que serán notificadas y cómo configurar los eventos para los que se recibirán notificaciones.
@@ -121,5 +162,6 @@ La configuración de los webhooks se realiza a través del Dashboard. A continua
 
 | Tipo de notificación  | Acción  | Descripción  |
 | --- | --- | --- |
+| Confirmación del agreement | status.updated | El usuario ha confirmado un agreement. |
 | Cancelación del agreement | status.updated  | Agreement entre el integrador y el usuario de Mercado Pago fue cancelado por el usuario.|
-| Actualización de método de pago | payment_method.updated  | El usuario ha actualizado el método de pago de un acuerdo.  |
+| Actualización de método de pago | payment_method.updated  | El usuario ha actualizado el método de pago de un agreement. |

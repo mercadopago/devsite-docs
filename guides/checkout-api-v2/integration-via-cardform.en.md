@@ -22,7 +22,6 @@ The first step in the card payment integration process is capturing card data. T
 ```
 ]]]
 
-
 ## Configure credentials
 
 Credentials are unique keys with which we identify an integration in your account. They are made to capture payments in virtual stores and other applications securely.
@@ -37,7 +36,6 @@ const mp = new MercadoPago("YOUR_PUBLIC_KEY");
 ```
 ]]]
 
-
 ## Add payment form
 
 The capture of card data is done through the CardForm of the MercadoPago.js library. Our CardForm will connect to your HTML payment form, making it easy to obtain and validate all the data needed to process the payment.
@@ -50,45 +48,82 @@ The capture of card data is done through the CardForm of the MercadoPago.js libr
 
 To add the payment form, insert the HTML below directly into the project.
 
+----[mla, mlu, mpe, mco, mlb, mlc]----
 [[[
 ```html
-<style>
-#form-checkout {
-display: flex;
-flex-direction: column;
-max-width: 600px;
-}
+  <style>
+    #form-checkout {
+      display: flex;
+      flex-direction: column;
+      max-width: 600px;
+    }
 
-.container {
-height: 18px;
-display: inline-block;
-border: 1px solid rgb(118, 118, 118);
-border-radius: 2px;
-padding: 1px 2px;
-}
-</style>
-<form id="form-checkout">
-<div id="form-checkout__cardNumber" class="container"></div>
-<div id="form-checkout__expirationDate" class="container"></div>
-<div id="form-checkout__securityCode" class="container"></div>
-<input type="text" id="form-checkout__cardholderName" />
-<select id="form-checkout__issuer"></select>
-<select id="form-checkout__installments"></select>
-<select id="form-checkout__identificationType"></select>
-<input type="text" id="form-checkout__identificationNumber" />
-<input type="email" id="form-checkout__cardholderEmail" />
+    .container {
+      height: 18px;
+      display: inline-block;
+      border: 1px solid rgb(118, 118, 118);
+      border-radius: 2px;
+      padding: 1px 2px;
+    }
+  </style>
+  <form id="form-checkout">
+    <div id="form-checkout__cardNumber" class="container"></div>
+    <div id="form-checkout__expirationDate" class="container"></div>
+    <div id="form-checkout__securityCode" class="container"></div>
+    <input type="text" id="form-checkout__cardholderName" />
+    <select id="form-checkout__issuer"></select>
+    <select id="form-checkout__installments"></select>
+    <select id="form-checkout__identificationType"></select>
+    <input type="text" id="form-checkout__identificationNumber" />
+    <input type="email" id="form-checkout__cardholderEmail" />
 
-<button type="submit" id="form-checkout__submit">Pay</button>
-<progress value="0" class="progress-bar">Loading...</progress>
-</form>
+    <button type="submit" id="form-checkout__submit">Pay</button>
+    <progress value="0" class="progress-bar">Loading...</progress>
+  </form>
 ```
 ]]]
 
+------------
+----[mlm]----
+[[[
+```html
+  <style>
+    #form-checkout {
+      display: flex;
+      flex-direction: column;
+      max-width: 600px;
+    }
+
+    .container {
+      height: 18px;
+      display: inline-block;
+      border: 1px solid rgb(118, 118, 118);
+      border-radius: 2px;
+      padding: 1px 2px;
+    }
+  </style>
+  <form id="form-checkout">
+    <div id="form-checkout__cardNumber" class="container"></div>
+    <div id="form-checkout__expirationDate" class="container"></div>
+    <div id="form-checkout__securityCode" class="container"></div>
+    <input type="text" id="form-checkout__cardholderName" />
+    <select id="form-checkout__issuer"></select>
+    <select id="form-checkout__installments"></select>
+    <input type="email" id="form-checkout__cardholderEmail" />
+
+    <button type="submit" id="form-checkout__submit">Pay</button>
+    <progress value="0" class="progress-bar">Loading...</progress>
+  </form>
+```
+]]]
+
+------------
 
 ## Initialize payment form
 
 After adding the payment form, you will need to initialize it. This step consists of relating the ID of each form field with the corresponding attributes. The library will be responsible for filling out, obtaining and validating all necessary data at the time of payment confirmation.
 
+----[mla, mlu, mpe, mco, mlb, mlc]----
 [[[
 ```javascript
 
@@ -191,16 +226,111 @@ progressBar.setAttribute("value", "0");
 ```
 ]]]
 
+------------
+----[mlm]----
+[[[
+```javascript
+
+const cardForm = mp.cardForm({
+amount: "100.5",
+iframe: true,
+form: {
+id: "form-checkout",
+cardNumber: {
+id: "form-checkout__cardNumber",
+placeholder: "Card Number",
+},
+expirationDate: {
+id: "form-checkout__expirationDate",
+placeholder: "MM/YY",
+},
+securityCode: {
+id: "form-checkout__securityCode",
+placeholder: "Security Code",
+},
+cardholderName: {
+id: "form-checkout__cardholderName",
+placeholder: "Cardholder",
+},
+issuer: {
+id: "form-checkout__issuer",
+placeholder: "Issuing bank",
+},
+installments: {
+id: "form-checkout__installments",
+placeholder: "Installments",
+},
+cardholderEmail: {
+id: "form-checkout__cardholderEmail",
+placeholder: "Email",
+},
+},
+callbacks: {
+onFormMounted: error => {
+if (error) return console.warn("Form Mounted handling error: ", error);
+console.log("Form mounted");
+},
+onSubmit: event => {
+event.preventDefault();
+
+const {
+paymentMethodId: payment_method_id,
+issuerId: issuer_id,
+cardholderEmail: email,
+amount,
+token,
+installments,
+identificationNumber,
+identificationType,
+} = cardForm.getCardFormData();
+
+fetch("/process_payment", {
+method: "POST",
+headers: {
+"Content-Type": "application/json",
+},
+body: JSON.stringify({
+token,
+issuer_id,
+payment_method_id,
+transaction_amount: Number(amount),
+installments: Number(installments),
+description: "Product Description",
+payer: {
+email,
+identification: {
+type: identificationType,
+number: identificationNumber,
+},
+},
+}),
+});
+},
+onFetching: (resource) => {
+console.log("Fetching resource: ", resource);
+
+// Animate progress bar
+const progressBar = document.querySelector(".progress-bar");
+progressBar.removeAttribute("value");
+
+return() => {
+progressBar.setAttribute("value", "0");
+};
+}
+},
+});
+```
+]]]
+
+------------
 
 When submitting the form, a token is generated securely representing the card data. You can access it via the `getCardFormData` function, as shown earlier in the `onSubmit` callback. Furthermore, this token is also stored in a hidden input within the form where it can be found with the name `MPHiddenInputToken`.
-
 
 > NOTE
 >
 > Important
 >
 > If you need to add or modify some logic in the flow of Javascript methods, consult the documentation: [Integration via Core Methods](/developers/en/docs/checkout-api/integration-configuration/card/integrate-via-core-methods)
-
 
 ## Send payment
 
@@ -210,13 +340,11 @@ In the example from the previous section, we sent all the necessary data to crea
 
 With all the information collected in the backend, send a POST with the necessary attributes, paying attention to the parameters `token`, `transaction_amount`, `installments`, `payment_method_id` and the `payer.email` to the endpoint [/v1/payments ](/developers/en/reference/payments/_payments/post) and execute the request or, if you prefer, send the information using our SDKs.
 
-
 > NOTE
 >
 > Important
 >
 > To increase the chances of payment approval and prevent the anti-fraud analysis from authorizing the transaction, we recommend entering as much information about the buyer when making the request. For more details on how to increase approval chances, see [How to improve payment approval](/developers/en/docs/checkout-api/how-tos/improve-payment-approval).
-
 
 [[[
 ```php
@@ -417,7 +545,6 @@ curl -X POST \
 ```
 ]]]
 
-
 The response will show the following result
 
 ```json
@@ -442,22 +569,10 @@ The response will show the following result
 >
 > When creating a payment it is possible to receive 3 different statuses: "Pending", "Rejected" and "Approved". To keep up with updates, you need to configure your system to receive payment notifications and other status updates. See [Notifications](/developers/en/docs/checkout-api/additional-content/notifications/introduction) for more details.
 
-
 ## Code example
 
-----[mlb]----
 > GIT
 >
 > Checkout API
 >
 > For complete code samples, check out the [Full Integration Examples](https://github.com/mercadopago/card-payment-sample) available on GitHub.
-------------
-
-----[mla, mlm, mpe, mco, mlu, mlc]----
-> GIT
->
-> Checkout API
->
-> For complete code samples, check out the [Full Integration Examples](https://github.com/mercadopago/card-payment-sample) available on GitHub.
-------------
-
