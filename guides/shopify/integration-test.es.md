@@ -1,4 +1,4 @@
-# Realizar una prueba
+# Prueba de pagos
 
 Las pruebas de compras ayudan a garantizar que los pagos se procesan correctamente antes de permitir las ventas reales. Sigue los pasos a continuación para realizar una compra de prueba:
 
@@ -9,7 +9,6 @@ Las pruebas de compras ayudan a garantizar que los pagos se procesan correctamen
 5. En la pantalla de pago, elije **pagar con una nueva tarjeta de crédito** y usa las [tarjetas de prueba](/developers/es/docs/shopify/test-cards) para realizar el pago. **Importante**: no inicies sesión en tu cuenta de Mercado Pago ni intentes realizar el pago con tarjetas de uso personal.
 6. Agrega la información de la tarjeta de prueba indicada y haz clic en **Pagar**.
 7. Al finalizar la compra, verás constancia de que la compra se ha realizado dentro de Mercado Pago y serás redirigido nuevamente a la tienda.
-
 
 > WARNING
 >

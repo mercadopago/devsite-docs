@@ -1,4 +1,4 @@
-# Make a test
+# Test payments
 
 The test purchases ensure that payments are processed correctly before allowing actual sales. Follow the steps below to make a test purchase:
 
@@ -15,5 +15,3 @@ The test purchases ensure that payments are processed correctly before allowing 
 > Important
 >
 > When completing the purchase test with Checkout Pro, it will not appear as approved in the Shopify Admin Panel as the process was performed within the Mercado Pago environment and not in the store environment. That is, the order will be generated automatically, but it will not appear as paid. Furthermore, the approved payment information will not appear in the Mercado Pago account history as it only contains actual expenses, made in production.
-
-

@@ -1,4 +1,4 @@
-# Realizar um teste
+# Testar os pagamentos
 
 Os testes de compras ajudam a garantir que os pagamentos sejam processados corretamente antes de permitir as vendas reais. Siga os passos abaixo para fazer uma compra de teste:
 
@@ -9,7 +9,6 @@ Os testes de compras ajudam a garantir que os pagamentos sejam processados corre
 5. Na tela de finalização da compra, escolha **pagar com um novo cartão de crédito** e use os [cartões de teste](/developers/pt/docs/shopify/test-cards) para efetuar o pagamento. **Importante**: não faça login em sua conta do Mercado Pago nem tente efetuar o pagamento com cartões para uso próprio.
 6. Adicione as informações do cartão de teste indicadas e clique em **Pagar**.
 7. Ao concluir a compra, você visualizará o comprovante de realização da compra no Mercado Pago e será redirecionado de volta à loja.
-
 
 > WARNING
 >

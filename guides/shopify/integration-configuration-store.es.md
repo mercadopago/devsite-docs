@@ -1,6 +1,15 @@
-# Configuración
+# Configurar información de la tienda
 
-Te recomendamos personalizar la información del checkout de la tienda para poder garantizar una mejor experiencia de compra y una integración más estrecha con Checkout Transparente en Shopify. Para hacerlo, sigue los pasos a continuación:
+Te recomendamos personalizar la información del checkout de la tienda para poder garantizar una mejor experiencia de compra y una integración más estrecha entre el checkout de Mercado Pago en Shopify. Para hacerlo, sigue los pasos a continuación:
+
+----[mla]----
+> WARNING
+>
+> Atención
+>
+> Si estás usando la versión anterior del plugin de Mercado Pago para Checkout Pro, [haz clic aquí](/developers/es/docs/shopify/how-tos/migration) para saber cómo migrar a la versión actual.
+
+------------
 
 ## Configura el nombre de la empresa
 
@@ -32,5 +41,3 @@ La tienda de Shopify mostrará los campos de solicitud de identificación person
     * **Address company blank**
     * **Address – Company**
 6. Haz clic en Guardar.
-
-![cambiar idioma ES](/images/shopify/company-name-es-v2.gif)
