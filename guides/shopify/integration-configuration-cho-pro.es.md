@@ -22,7 +22,7 @@ Para configurar el Checkout Pro en una tienda Shopify, sigue los pasos a continu
 >
 > Atención
 >
-> Si estás usando la versión anterior del plugin de Mercado Pago, [haz clic aquí](/developers/es/docs/shopify/how-tos/migration) para saber cómo migrar a la versión actual.
+> Si estás usando la aplicación antigua de Mercado Pago ("Mercado Pago"), [haz clic aquí](/developers/es/docs/shopify/how-tos/migration) para saber cómo migrar a la versión actual ("Checkout Mercado Pago").
 
 Para instalar Checkout Pro en una tienda Shopify, sigue los pasos a continuación:
 

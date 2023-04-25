@@ -7,7 +7,7 @@ We recommend you customize the checkout information of the store to ensure a bet
 >
 > Attention
 >
-> If you are using the old version of the Mercado Pago plugin to Checkout Pro, [click here](/developers/en/docs/shopify/how-tos/migration) to find out how to migrate to the current version.
+> If you are using the old Mercado Pago application ("Mercado Pago"), [click here](/developers/en/docs/shopify/how-tos/migration) to find out how to migrate to the current version ("Checkout Mercado Pago" ).
 
 ------------
 
