@@ -12,9 +12,9 @@ Find out how to migrate to the current version of the Mercado Pago plugin for Sh
 8. Lastly, the store will offer you the option to **Enable test mode**. By activating this option, orders completed with Checkout Pro **will not be real orders**. That is, they will be test orders that, even if completed, will not have their status updated on the platform and will not appear on the Mercado Pago panel in the seller's account.
 9. To finish, click on **Activate Mercado Pago**.
 
-> WARNING
+> NOTE
 >
-> Attention
+> Important
 >
 > Right now you will have both versions installed on your site. This will ensure that your store does not run out of payment methods while the migration steps are being carried out.
 

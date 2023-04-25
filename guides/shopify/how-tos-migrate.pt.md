@@ -12,9 +12,9 @@ Saiba como migrar para a versão atual do plugin do Mercado Pago para Shopify.
 8. Por último, a loja oferecerá a opção **habilite o modo de teste**. Ao ativar essa opção os pedidos finalizados com o Checkout Pro **não serão pedidos reais**. Ou seja, serão pedidos de teste que, mesmo finalizados, não terão seus status atualizados na plataforma e não aparecerão no painel do Mercado Pago na conta do vendedor.
 9. Ao finalizar, clique em **Ativar Mercado Pago**.
 
-> WARNING
+> NOTE
 >
-> Atenção
+> Importante
 >
 > Neste exato momento você terá ambas as versões instaladas em seu site. Isso servirá para garantir que a sua loja não fique sem nenhum meio de pagamento enquanto estiverem sendo realizadas as etapas de migração. 
 
