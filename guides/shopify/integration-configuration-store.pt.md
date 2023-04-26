@@ -7,7 +7,7 @@ Recomendamos personalizar as informações do checkout da loja para garantir uma
 >
 > Atenção
 >
-> Caso esteja utilizando a antiga versão do plugin do Mercado Pago para Checkout Pro, [clique aqui](/developers/pt/docs/shopify/how-tos/migration) para saber como migrar para a versão atual.
+> Caso esteja utilizando a aplicação antiga do Mercado Pago ("Mercado Pago"), [clique aqui](/developers/pt/docs/shopify/how-tos/migration) para saber como migrar para a versão atual ("Checkout Mercado Pago").
 
 ------------
 

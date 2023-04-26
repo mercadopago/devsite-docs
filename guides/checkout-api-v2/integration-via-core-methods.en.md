@@ -20,13 +20,11 @@ The first step in the card payment integration process is the **card data captur
 ```
 ]]]
 
-
 > NOTE
 >
 > Important
 >
 > The card information will be converted into a token for you to send the data to your servers securely.
-
 
 ## Configure credential
 
@@ -42,14 +40,13 @@ const mp = new MercadoPago("YOUR_PUBLIC_KEY");
 ```
 ]]]
 
-
 ## Add payment form
 
 The capture of card data (card number, security code and expiration date) is done through a payment form that allows obtaining and validating the information necessary to process the payment.
 
 To obtain this data and process payments, insert the HTML below directly into the project.
 
-
+----[mla, mlu, mpe, mco, mlb, mlc]----
 [[[
 ```html
 
@@ -95,6 +92,50 @@ padding: 1px 2px;
 ```
 ]]]
 
+------------
+----[mlm]----
+[[[
+```html
+
+<style>
+#form-checkout {
+display: flex;
+flex-direction: column;
+max-width: 600px;
+}
+
+.container {
+height: 18px;
+display: inline-block;
+border: 1px solid rgb(118, 118, 118);
+border-radius: 2px;
+padding: 1px 2px;
+}
+</style>
+<form id="form-checkout" action="/process_payment" method="POST">
+<div id="form-checkout__cardNumber" class="container"></div>
+<div id="form-checkout__expirationDate" class="container"></div>
+<div id="form-checkout__securityCode" class="container"></div>
+<input type="text" id="form-checkout__cardholderName" placeholder="Cardholder" />
+<select id="form-checkout__issuer" name="issuer">
+<option value="" disabled selected>Issuing Bank</option>
+</select>
+<select id="form-checkout__installments" name="installments">
+<option value="" disabled selected>Plots</option>
+</select>
+<input type="email" id="form-checkout__email" name="email" placeholder="Email" />
+
+<input id="token" name="token" type="hidden">
+<input id="paymentMethodId" name="paymentMethodId" type="hidden">
+<input id="transactionAmount" name="transactionAmount" type="hidden" value="100">
+<input id="description" name="description" type="hidden" value="Product Name">
+
+<button type="submit" id="form-checkout__submit">Pay</button>
+</form>
+```
+]]]
+
+------------
 
 ## Initialize card fields
 
@@ -117,13 +158,12 @@ placeholder: "Security Code"
 ```
 ]]]
 
-
+----[mla, mlu, mpe, mco, mlb, mlc]----
 ## Get document types
 
 After configuring the credential, adding the payment form and initializing the card fields, it is necessary to obtain the types of documents that will be part of filling out the payment form.
 
 By including the element of type `select` with the id: `form-checkout__identificationType` that is in the form, it will be possible to automatically fill in the available options when calling the function below.
-
 
 [[[
 ```javascript
@@ -162,10 +202,11 @@ elem.appendChild(tempOptions);
 ```
 ]]]
 
+------------
+
 ## Get card payment methods
 
 In this step, the buyers' data is validated when they fill in the necessary fields to make the payment. In order to identify the payment method used by the buyer, insert the code below directly into the project.
-
 
 [[[
 ```javascript
@@ -241,13 +282,11 @@ settings: securityCodeSettings
 ```
 ]]]
 
-
 ## Get issuing bank
 
 When filling out the payment form, it is possible to identify the card issuing bank, avoiding data processing conflicts between different issuers. In addition, it is from this identification that the installment options are displayed.
 
 The issuing bank is obtained through the `issuer_id` parameter. To get it, use the Javascript below.
-
 
 [[[
 ```javascript
@@ -274,12 +313,9 @@ console.error('error getting issuers: ', e)
 ```
 ]]]
 
-
-
 ## Get number of installments
 
 One of the mandatory fields that make up the payment form is the **number of installments**. To activate it and display the available installments at the time of payment, use the function below.
-
 
 [[[
 ```javascript
@@ -301,12 +337,9 @@ console.error('error getting installments: ', e)
 ```
 ]]]
 
-
-
 ## Create card token
 
 The card token is created from the card information itself, increasing security during the payment flow. In addition, once the token is used in a given purchase, it is discarded, requiring the creation of a new one for future purchases. To create the card token, use the function below. In addition, remember that **the token is valid for 7 days** and can be **used only once**.
-
 
 > NOTE
 >
@@ -340,20 +373,17 @@ console.error('error creating card token: ', e)
 ```
 ]]]
 
-
 ## Send payment
 
 To finish the card payment integration process, it is necessary for the backend to receive the form information with the generated token and the complete data according to the previous steps.
 
 With all the information collected in the backend, send a POST with the necessary attributes, paying attention to the parameters `token`, `transaction_amount`, `installments`, `payment_method_id` and the `payer.email` to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post) and execute the request or, if you prefer, send the information using the SDKs below.
 
-
 > NOTE
 >
 > Important
 >
 > To increase the chances of payment approval and prevent the anti-fraud analysis from authorizing the transaction, we recommend entering as much information about the buyer when making the request. For more details on how to increase approval chances, see [How to improve payment approval](/developers/en/docs/checkout-api/how-tos/improve-payment-approval).
-
 
 [[[
 ```php
@@ -580,5 +610,3 @@ curl -X POST \
 > When creating a payment it is possible to receive 3 different statuses: "Pending", "Rejected" and "Approved". To keep up with updates, you need to configure your system to receive payment notifications and other status updates. See [Notifications](/developers/en/docs/checkout-api/additional-content/notifications/introduction) for more details.
 
 When finished, you can perform tests and ensure that the integration is working correctly.
-
-

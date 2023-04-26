@@ -22,7 +22,7 @@ Para configurar o Checkout Pro em uma loja Shopify, siga os passos abaixo:
 >
 > Atenção
 >
-> Caso esteja utilizando a antiga versão do plugin do Mercado Pago, [clique aqui](/developers/pt/docs/shopify/how-tos/migration) para saber como migrar para a versão atual.
+> Caso esteja utilizando a aplicação antiga do Mercado Pago ("Mercado Pago"), [clique aqui](/developers/pt/docs/shopify/how-tos/migration) para saber como migrar para a versão atual ("Checkout Mercado Pago").
 
 Para instalar o Checkout Pro em sua loja Shopify, siga os passos abaixo:
 
@@ -30,7 +30,7 @@ Para instalar o Checkout Pro em sua loja Shopify, siga os passos abaixo:
 2. No painel administrativo da loja, clique em **Configurações**.
 3. Uma vez lá, selecione a opção **Pagamentos**. 
 4. Em **Formas de pagamento adicionais**, clique em **Adicionar formas de pagamento**.
-5. Digite "Checkout Mercado Pago" na barra de busca. Após encontrá-lo, clique na opção **disponível**.
+5. Clique na aba **Pesquisar por fornecedor** e, em seguida, digite "Checkout Mercado Pago" na barra de busca. Após encontrá-lo, clique na opção **disponível**.
 6. Digite as suas **credenciais de produção** (`public key` e `access token`) nos campos que as solicitam. Lembre-se de ter suas [credenciais](/developers/pt/docs/shopify/additional-content/credentials) à mão. 
 7. No próximo passo, você poderá selecionar as imagens dos meios de pagamento que deseja exibir na loja. **Importante: estas imagens são apenas para fins ilustrativos e não implicam a ativação do método de pagamento selecionado**.
 8. Por último, a loja oferecerá a opção **habilite o modo de teste**. Ao ativar essa opção os pedidos finalizados com o Checkout Pro **não serão pedidos reais**. Ou seja, serão pedidos de teste que, mesmo finalizados, não terão seus status atualizados na plataforma e não aparecerão no painel do Mercado Pago na conta do vendedor.
