@@ -28,21 +28,21 @@ If you offer high-value purchases, for example, you can [exclude undesired payme
         }
     ],
     "payer": {
-        "name": "João",
-        "surname": "Silva",
-        "email": "user@email.com",
+        "name": "<PAYER_NAME_HERE>",
+        "surname": "<PAYER_SURNAME_HERE>",
+        "email": "<PAYER_EMAIL_HERE>",
         "phone": {
-            "area_code": "11",
-            "number": 4444-4444
+            "area_code": "<PAYER_AREA_CODE_HERE>",
+            "number": "<PAYER_PHONE_NUMBER_HERE>"
         },
         "identification": {
-            "type": "CPF",
-            "number": "19119119100"
+            "type": "<PAYER_DOC_TYPE_HERE>",
+            "number": "<PAYER_DOC_NUMBER_HERE>"
         },
         "address": {
             "street_name": "Street",
             "street_number": 123,
-            "zip_code": "06233200"
+            "zip_code": "<PAYER_ZIP_CODE_HERE>"
         }
     },
     "back_urls": {

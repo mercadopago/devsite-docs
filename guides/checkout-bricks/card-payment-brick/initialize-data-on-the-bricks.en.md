@@ -30,7 +30,7 @@ const initialization = {
  ...,
  payer: {
    ...,
-   email: 'jose@maria.com',
+   email: '<PAYER_EMAIL_HERE>',
  },
 };
 ```

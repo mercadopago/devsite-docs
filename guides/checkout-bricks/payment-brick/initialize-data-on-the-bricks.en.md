@@ -16,7 +16,7 @@ settings = {
     ...,
     payer: {
       ...,
-      email: 'jose@maria.com',
+      email: '<PAYER_EMAIL_HERE>',
       identification: {
           type: 'string',
           number: 'string',
@@ -30,7 +30,7 @@ const initialization = {
  ...,
  payer: {
    ...,
-   email: 'jose@maria.com',
+   email: '<PAYER_EMAIL_HERE>',
    identification: {
      type: 'string',
      number: 'string',
@@ -52,7 +52,7 @@ settings = {
   initialization: {
    ...,
   payer: {
-  email: 'jose@maria.com'
+  email: '<PAYER_EMAIL_HERE>'
    }
 }
 ```
@@ -61,7 +61,7 @@ const initialization = {
  ...,
  payer: {
    ...,
-   email: 'jose@maria.com',
+   email: '<PAYER_EMAIL_HERE>',
  },
 };
 ```
@@ -78,21 +78,21 @@ settings = {
   initialization: {
  ...,
  payer: {
-   firstName: 'José',
-   lastName: 'Maria',
+   firstName: '<PAYER_FIRST_NAME_HERE>',
+   lastName: '<PAYER_LAST_NAME_HERE>',
    identification: {
-     type: 'CPF',
-     number: '01234567890',
+    "type": "<PAYER_DOC_TYPE_HERE>",
+    "number": "<PAYER_DOC_NUMBER_HERE>",
    },
-   email: 'jose@maria.com',
+   email: '<PAYER_EMAIL_HERE>',
    address: {
-     zipCode: '01.310-100',
-     federalUnit: 'São Paulo',
-     city: 'São Paulo',
-     neighborhood: 'Bela Vista',
-     streetName: 'Avenida Paulista',
-     streetNumber: '12345',
-     complement: 'Casa 2',
+     zipCode: '<PAYER_ZIP_CODE_HERE>',
+     federalUnit: '<PAYER_FED_UNIT_HERE>',
+     city: '<PAYER_CITY_HERE>',
+     neighborhood: '<PAYER_NEIGHBORHOOD_HERE>',
+     streetName: '<PAYER_STREET_NAME_HERE>',
+     streetNumber: '<PAYER_STREET_NUMBER_HERE>',
+     complement: '<PAYER_COMPLEMENT_HERE>',
    }
  }
 }
@@ -101,22 +101,22 @@ settings = {
 const initialization = {
  ...,
  payer: {
-   firstName: 'José',
-   lastName: 'Maria',
+   firstName: '<PAYER_FIRST_NAME_HERE>',
+   lastName: '<PAYER_LAST_NAME_HERE>',
    identification: {
-     type: 'CPF',
-     number: '01234567890',
+    "type": "<PAYER_DOC_TYPE_HERE>",
+    "number": "<PAYER_DOC_NUMBER_HERE>",
    },
-   email: 'jose@maria.com',
+   email: '<PAYER_EMAIL_HERE>',
    address: {
-     zipCode: '01.310-100',
-     federalUnit: 'São Paulo',
-     city: 'São Paulo',
-     neighborhood: 'Bela Vista',
-     streetName: 'Avenida Paulista',
-     streetNumber: '12345',
-     complement: 'Casa 2',
-   },
+     zipCode: '<PAYER_ZIP_CODE_HERE>',
+     federalUnit: '<PAYER_FED_UNIT_HERE>',
+     city: '<PAYER_CITY_HERE>',
+     neighborhood: '<PAYER_NEIGHBORHOOD_HERE>',
+     streetName: '<PAYER_STREET_NAME_HERE>',
+     streetNumber: '<PAYER_STREET_NUMBER_HERE>',
+     complement: '<PAYER_COMPLEMENT_HERE>',
+   }
  },
 };
 ```
@@ -135,7 +135,7 @@ settings = {
   initialization: {
    ...,
   payer: {
-  email: 'jose@maria.com',
+  email: '<PAYER_EMAIL_HERE>',
    }
 }
 ```
@@ -143,22 +143,22 @@ settings = {
 const initialization = {
  ...,
  payer: {
-   firstName: 'José',
-   lastName: 'Maria',
+   firstName: '<PAYER_FIRST_NAME_HERE>',
+   lastName: '<PAYER_LAST_NAME_HERE>',
    identification: {
-     type: 'CPF',
-     number: '01234567890',
+    "type": "<PAYER_DOC_TYPE_HERE>",
+    "number": "<PAYER_DOC_NUMBER_HERE>",
    },
-   email: 'jose@maria.com',
+   email: '<PAYER_EMAIL_HERE>',
    address: {
-     zipCode: '01.310-100',
-     federalUnit: 'São Paulo',
-     city: 'São Paulo',
-     neighborhood: 'Bela Vista',
-     streetName: 'Avenida Paulista',
-     streetNumber: '12345',
-     complement: 'Casa 2',
-   },
+     zipCode: '<PAYER_ZIP_CODE_HERE>',
+     federalUnit: '<PAYER_FED_UNIT_HERE>',
+     city: '<PAYER_CITY_HERE>',
+     neighborhood: '<PAYER_NEIGHBORHOOD_HERE>',
+     streetName: '<PAYER_STREET_NAME_HERE>',
+     streetNumber: '<PAYER_STREET_NUMBER_HERE>',
+     complement: '<PAYER_COMPLEMENT_HERE>',
+   }
  },
 };
 ```
@@ -177,9 +177,9 @@ settings = {
   initialization: {
     ...,
     payer: {
-      email: 'jose@maria.com',
-      firstName: 'Jose',
-      lastName: 'Maria',
+      email: '<PAYER_EMAIL_HERE>',
+      firstName: '<PAYER_FIRST_NAME_HERE>',
+      lastName: '<PAYER_LAST_NAME_HERE>',
     }
   }
 }
@@ -188,22 +188,22 @@ settings = {
 const initialization = {
  ...,
  payer: {
-   firstName: 'José',
-   lastName: 'Maria',
+   firstName: '<PAYER_FIRST_NAME_HERE>',
+   lastName: '<PAYER_LAST_NAME_HERE>',
    identification: {
-     type: 'CPF',
-     number: '01234567890',
+    "type": "<PAYER_DOC_TYPE_HERE>",
+    "number": "<PAYER_DOC_NUMBER_HERE>",
    },
-   email: 'jose@maria.com',
+   email: '<PAYER_EMAIL_HERE>',
    address: {
-     zipCode: '01.310-100',
-     federalUnit: 'São Paulo',
-     city: 'São Paulo',
-     neighborhood: 'Bela Vista',
-     streetName: 'Avenida Paulista',
-     streetNumber: '12345',
-     complement: 'Casa 2',
-   },
+     zipCode: '<PAYER_ZIP_CODE_HERE>',
+     federalUnit: '<PAYER_FED_UNIT_HERE>',
+     city: '<PAYER_CITY_HERE>',
+     neighborhood: '<PAYER_NEIGHBORHOOD_HERE>',
+     streetName: '<PAYER_STREET_NAME_HERE>',
+     streetNumber: '<PAYER_STREET_NUMBER_HERE>',
+     complement: '<PAYER_COMPLEMENT_HERE>',
+   }
  },
 };
 ```
@@ -223,7 +223,7 @@ settings = {
     ...,
     payer: {
       ...,
-      email: 'jose@maria.com',
+      email: '<PAYER_EMAIL_HERE>',
     }
   }
 }
@@ -232,7 +232,7 @@ settings = {
 const initialization = {
  ...,
  payer: {
-   email: 'jose@maria.com',
+   email: '<PAYER_EMAIL_HERE>',
  },
 };
 ```
