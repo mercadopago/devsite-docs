@@ -29,7 +29,7 @@ Você pode obter uma lista completa dos tipos e meios de pagamento disponíveis 
 | ATM | Red Link** | - | - | - | Bancomer** <br> Banamex** <br> Serfin** | BCP <br> Continental <br> Outros| - |
 | Transferência Bancária | - | Pix* ** | - | PSE* | - | - | - |
 | Crédito | Visa <br> Mastercard <br> American Express <br> Diners Club <br> Naranja** <br> Nativa** <br> Shopping** <br> Ceconsud <br> Argencard <br> Cordial <br> Cordobesa <br> Cabal <br> CMR | Visa <br> Mastercard <br> American Express <br> Hipercard <br> Diners Club <br> Elo <br> Mercado Livre | Visa <br> Mastercard <br> American Express <br> Diners Club <br> CMR <br> Magna <br> Presto | Visa <br> Mastercard <br> American Express <br> Diners Club <br> Codensa | Visa <br> Mastercard <br> American Express** | Visa <br> Diners Club | Visa <br> Mastercard <br> Diners Club <br> Oca <br> Lider |
-| Débito | Visa** <br> Mastercard** <br> Maestro** <br> Cabal | Visa <br> Mastercard <br> Elo | Visa <br> Mastercard <br> RedCompra | Visa <br> Mastercard | Visa <br> Mastercard | Visa <br> Mastercard | - |
+| Débito | Visa** <br> Mastercard** <br> Maestro** <br> Cabal | Cartão de débito virtual CAIXA | Visa <br> Mastercard <br> RedCompra | Visa <br> Mastercard | Visa <br> Mastercard | Visa <br> Mastercard | - |
 | Moeda Digital | - | Giftcard** | - | - | Bitcoin** | - | - |
 | Carteira Digital | - | Paypal | - | Paypal | - | - | - |
 | Cartão Pré-pago | - | - | - | - | Mercado Pago** | - | - |
