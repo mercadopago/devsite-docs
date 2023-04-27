@@ -170,7 +170,7 @@ Após ter criado a preferência no backend, será necessário instalar o SDK de 
 
 A instalação é feita em **duas etapas**: **incluindo o SDK do Mercado Pago** ao projeto com suas credenciais configuradas e **iniciando o checkout** a partir da preferência gerada anteriormente.
 
-1. Para incluir o SDK MercadoPago.js, adicione o código abaixo no HTML do projeto ou instale via NPM.
+1. Para incluir o SDK MercadoPago.js, adicione o código abaixo no HTML do projeto ou instale via NPM conforme indicado nos exemplos a seguir.
 
 [[[
 ```html
