@@ -217,6 +217,12 @@ const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
 
 3. Feito isso, é necessário criar um container para definir o local que o botão será inserido na tela. A criação do container é feita inserindo um elemento no código HTML da página no qual o componente será renderizado.
 
+> NOTE
+>
+> Importante
+>
+> O valor exibido abaixo na **propriedade ID** é apenas um exemplo e pode ser alterado, mas deve sempre corresponder ao ID indicado na etapa de renderização.
+
 [[[
 ```html
 
@@ -224,12 +230,6 @@ const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
 
 ```
 ]]]
-
-> NOTE
->
-> Importante
->
-> O valor exibido na propriedade ID acima é apenas um exemplo e pode ser alterado, mas deve sempre corresponder ao ID indicado na etapa de renderização.
 
 4. Ao finalizar a etapa anterior, inicialize seu checkout utilizando o ID da preferência previamente criada com o identificador do elemento onde o botão deverá ser exibido.
 
