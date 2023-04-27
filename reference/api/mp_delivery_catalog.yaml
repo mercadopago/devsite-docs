@@ -119,8 +119,8 @@ paths:
                                 por: Atual estado do item, pode estar ativo ("active") ou pausado ("paused").
                               example: "active"
                               enum:
-                                - active -- Active the item.
-                                - paused -- Pause the item.
+                                - active--Active the item.
+                                - paused--Pause the item.
                             options:
                               type: array
                               description: Optional field. Array containing group of complements present in the main item.
@@ -230,10 +230,10 @@ paths:
                                             por: Atual estado do item de comeplemento, pode estar ativo ("actived") ou pausado ("paused").
                                           example: "active"
                                           enum:
-                                            - active -- Active the item.
-                                            - paused -- Pause the item.
+                                            - active--Active the item.
+                                            - paused--Pause the item.
       responses:
-        '202':
+        '200':
           description: Success
           content:
             application/json:
