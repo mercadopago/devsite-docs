@@ -337,7 +337,6 @@ paths:
                           enum:
                             - processing -- The catalog has been sent successfully to the processing queue.
                             - error -- the publication could not be started because some error in the request or an internal failure.
-                          
   /proximity/integration/v1/catalog/{publication_id}:
     get:
       tags:
@@ -384,7 +383,6 @@ paths:
                       - processing -- The catalog is being processed.
                       - error -- The publication process has been aborted because some irrecoverable error occurred.
                       - success -- the catalog has been published.
-
   /proximity/integration/v1/catalog/stores/{external_store_id}/items/{external_item_id}:
     put:
       tags:
