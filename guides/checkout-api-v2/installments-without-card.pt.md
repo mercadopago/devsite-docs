@@ -1,4 +1,4 @@
-# Parcelamento sem cartão de crédito
+# Parcelamento sem cartão
 
 A opção de parcelamento sem cartão do Mercado Pago se chama **Mercado Crédito** e é um método de financiamento próprio que permite pagar em até 12x.
 
@@ -164,30 +164,83 @@ curl -X POST \
 >
 > h3
 >
-> Adicionar botão no checkout
+> Adicionar checkout
 
-Com a preferência criada, é preciso exibir o botão de pagamento que permitirá o comprador utilizar o Mercado Crédito como meio de pagamento. Para exibir o botão de pagamento, insira o código abaixo diretamente em seu projeto.
+Após ter criado a preferência no backend, será necessário instalar o SDK de frontend do Mercado Pago ao projeto para adicionar o botão de pagamento.
 
+A instalação é feita em **duas etapas**: **incluindo o SDK do Mercado Pago** ao projeto com suas credenciais configuradas e **iniciando o checkout** a partir da preferência gerada anteriormente.
+
+1. Para incluir o SDK MercadoPago.js, adicione o código abaixo no HTML do projeto ou instale via NPM.
+
+[[[
 ```html
-<div class="cho-container"></div>
-<script src="https://sdk.mercadopago.com/js/v2"></script>
-<script>
-  const mp = new MercadoPago('PUBLIC_KEY');
+<body>
+  <script src="https://sdk.mercadopago.com/js/v2"></script>
+</body>
+```
+```bash
 
-  mp.checkout({
-    preference: {
-      id: 'YOUR_PREFERENCE_ID'
-    },
-    render: {
-      container: '.cho-container',
-      label: 'Em até 12x sem cartão com Mercado Pago',
-      type: 'credits',
-    }
-  });
+npm install @mercadopago/sdk-js
+```
+]]]
+
+2. Em seguida, inicialize a integração definindo sua [chave pública](/developers/pt/docs/checkout-api/additional-content/credentials) usando o seguinte código.
+
+[[[
+```html
+
+<script>
+  const mp = new MercadoPago("YOUR_PUBLIC_KEY");
 </script>
 ```
+```javascript
 
-Ao inserir este código, você deverá visualizar um botão similar ao exemplo ilustrado abaixo.
+import { loadMercadoPago } from "@mercadopago/sdk-js";
+
+
+await loadMercadoPago();
+const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
+
+```
+]]]
+
+3. Feito isso, é necessário criar um container para definir o local que o botão será inserido na tela. A criação do container é feita inserindo um elemento no código HTML da página no qual o componente será renderizado.
+
+> NOTE
+>
+> Importante
+>
+> O valor exibido abaixo na **propriedade ID** é apenas um exemplo e pode ser alterado, mas deve sempre corresponder ao ID indicado na etapa de renderização.
+
+[[[
+```html
+
+<div id="wallet_container"></div>
+
+```
+]]]
+
+
+4. Ao finalizar a etapa anterior, inicialize seu checkout utilizando o ID da preferência previamente criada com o identificador do elemento onde o botão deverá ser exibido.
+
+[[[
+```javascript
+
+mp.bricks().create("wallet", "wallet_container", {
+  initialization: {
+    preferenceId: "<PREFERENCE_ID>",
+  },
+  customization: {
+    texts: {
+      valueProp: "convenience",
+    },
+  },
+});
+
+```
+]]]
+
+Ao concluir os passos citados acima, você deverá visualizar um botão similar ao exemplo ilustrado abaixo.
 
 ![parcelamento ser cartao](api/button-installments-w-card-pt.png)
 

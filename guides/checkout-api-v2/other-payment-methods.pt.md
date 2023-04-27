@@ -2,26 +2,62 @@
 
 ----[mlb]----
 Com o Checkout Transparente do Mercado Pago, é possível oferecer, além de cartão e Pix, **pagamentos através de boleto bancário e pagamento em lotérica**.
+
+> NOTE
+>
+> Importante
+>
+> Agora é possível também integrar o pagamento com Pix através da SDK de React, consulte os detalhes clicando aqui.
 ------------
 
 ----[mla]----
 Com o Checkout Transparente do Mercado Pago, também é possível oferecer pagamentos com **Rapipago** e/ou **Pago Fácil**.
+
+> NOTE
+>
+> Importante
+>
+> Agora é possível também integrar o pagamento com Pix através da SDK de React, consulte os detalhes clicando aqui.
 ------------
 
 ----[mlm]----
 Com o Checkout Transparente do Mercado Pago, também é possível oferecer pagamentos com **OXXO**, **Paycash**,  **Citibanamex**,  **Santander**, **BBVA Bancomer** e **Cartão Mercado Pago**.
+
+> NOTE
+>
+> Importante
+>
+> Agora é possível também integrar o pagamento com Pix através da SDK de React, consulte os detalhes clicando aqui.
 ------------
 
 ----[mpe]----
 Com o Checkout Transparente do Mercado Pago, também é possível oferecer pagamentos através do **PagoEfectivo**.
+
+> NOTE
+>
+> Importante
+>
+> Agora é possível também integrar o pagamento com Pix através da SDK de React, consulte os detalhes clicando aqui.
 ------------
 
 ----[mco]----
 Com o Checkout Transparente do Mercado Pago, também é possível oferecer pagamentos com **Efecty**.
+
+> NOTE
+>
+> Importante
+>
+> Agora é possível também integrar o pagamento com Pix através da SDK de React, consulte os detalhes clicando aqui.
 ------------
 
 ----[mlu]----
 Com o Checkout Transparente do Mercado Pago, também é possível oferecer pagamentos com **Abitab** e **Redpagos**.
+
+> NOTE
+>
+> Importante
+>
+> Agora é possível também integrar o pagamento com Pix através da SDK de React, consulte os detalhes clicando aqui.
 ------------
 
 Para obter uma lista detalhada com todos os meios de pagamento disponíveis para integração, envie um **GET** com seu _Access token_ ao endpoint [/v1/payment_methods](/developers/pt/reference/payment_methods/_payment_methods/get) e execute a requisição ou, se preferir, faça a requisição utilizando os SDKs abaixo.
@@ -124,6 +160,10 @@ Esta captura é feita a partir da inclusão da biblioteca MercadoPago.js em seu 
   <script src="https://sdk.mercadopago.com/js/v2"></script>
 </body>
 ```
+```bash
+
+npm install @mercadopago/sdk-js
+```
 ]]]
 
 ## Configurar credencial
@@ -134,8 +174,19 @@ Esta é a primeira etapa de uma estrutura completa de código que deverá ser se
 
 
 [[[
+```html
+<script>
+  const mp = new MercadoPago("YOUR_PUBLIC_KEY");
+</script>
+```
 ```javascript
-const mp = new MercadoPago('YOUR_PUBLIC_KEY');
+
+import { loadMercadoPago } from "@mercadopago/sdk-js";
+
+
+await loadMercadoPago();
+const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
+
 ```
 ]]]
 
