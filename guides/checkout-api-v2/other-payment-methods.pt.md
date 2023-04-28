@@ -183,7 +183,6 @@ Esta é a primeira etapa de uma estrutura completa de código que deverá ser se
 
 import { loadMercadoPago } from "@mercadopago/sdk-js";
 
-
 await loadMercadoPago();
 const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
 

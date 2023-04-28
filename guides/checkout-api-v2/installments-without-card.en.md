@@ -165,28 +165,77 @@ curl -X POST \
 >
 > h3
 >
-> Add button at checkout
+> Add checkout
 
-With the preference created, it is necessary to display the payment button that will allow the buyer to use Mercado Crédito as a means of payment. To display the payment button, insert the code below directly into your project.
+After creating the preference in the backend, it is necessary to install the Mercado Pago frontend SDK to the project to add the payment button.
 
+The installation is done in **two steps**: **including the Mercado Pago SDK** to the project with its configured credentials and **initiating the checkout** from the preference generated previously.
+
+1. To include the MercadoPago.js SDK, add the following to the project's HTML or install it via NPM as indicated in the examples below.
+
+[[[
 ```html
-<div class="cho-container"></div>
-<script src="https://sdk.mercadopago.com/js/v2"></script>
-<script>
-  const mp = new MercadoPago('PUBLIC_KEY');
+<body>
+  <script src="https://sdk.mercadopago.com/js/v2"></script>
+</body>
 
-  mp.checkout({
-    preference: {
-      id: 'YOUR_PREFERENCE_ID'
-    },
-    render: {
-      container: '.cho-container',
-      label: 'Em até 12x sem cartão com Mercado Pago',
-      type: 'credits',
-    }
-  });
-</script>
 ```
+```bash
+npm install @mercadopago/sdk-js
+
+```
+]]]
+
+2. Next, initialize the integration by setting your [public key](/developers/es/docs/checkout-api/additional-content/credentials) using the following code.
+
+[[[
+```html
+<script>
+  const mp = new MercadoPago("YOUR_PUBLIC_KEY");
+</script>
+
+```
+```javascript
+import { loadMercadoPago } from "@mercadopago/sdk-js";
+
+await loadMercadoPago();
+const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
+
+```
+]]]
+
+3. Once this is done, you need to create a container to define the location where the button will be inserted on the screen. The container is created by inserting an element into the HTML code of the page where the component will be rendered.
+
+> NOTE
+>
+> Important
+>
+> The value displayed below in the **ID property** is just an example and can be changed, but it must always match the ID indicated in the rendering step.
+
+[[[
+```html
+<div id="wallet_container"></div>
+
+```
+]]]
+
+4. After completing the previous step, initialize your checkout using the ID of the preference previously created with the identifier of the element where the button should be displayed.
+
+[[[
+```javascript
+mp.bricks().create("wallet", "wallet_container", {
+  initialization: {
+    preferenceId: "<PREFERENCE_ID>",
+  },
+  customization: {
+    texts: {
+      valueProp: "convenience",
+    },
+  },
+});
+
+```
+]]]
 
 ### Suggestions for use and best practices
 

@@ -4,6 +4,12 @@ A opção de parcelamento sem cartão do Mercado Pago se chama **Mercado Crédit
 
 Ao oferecer esta opção na sua loja, seus clientes poderão comprar um produto hoje e pagar depois em parcelas. Para o seu negócio, a aprovação da compra é imediata e está garantida, sendo creditado o valor total adiantado e os seus clientes nos pagam depois.
 
+> NOTE
+>
+> Importante
+>
+> Agora é possível também integrar o parcelamento sem cartão através da SDK de React, consulte os detalhes clicando aqui.
+
 Siga os passos abaixo para oferecer o parcelamento sem cartão em sua loja.
 
 ## Pré-requisitos

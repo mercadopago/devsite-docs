@@ -4,6 +4,12 @@ The integration of card payments is done via cardform. In this integration mode,
 
 As the card data is entered, an automatic search takes place for the issuer information and available installments for that payment method. As a result, the implementation of the flow is transparent for those who perform the integration.
 
+> NOTE
+>
+> Important
+>
+> It is now also possible to integrate card payments through the React SDK, please see the details by clicking here.
+
 Check below the diagram that illustrates the card payment process using the Card Form.
 
 ![API-integration-flowchart](/images/api/api-integration-flowchart-cardform-2-en.png)
@@ -17,8 +23,12 @@ The first step in the card payment integration process is capturing card data. T
 [[[
 ```html
 <body>
-<script src="https://sdk.mercadopago.com/js/v2"></script>
+  <script src="https://sdk.mercadopago.com/js/v2"></script>
 </body>
+```
+```bash
+npm install @mercadopago/sdk-js
+
 ```
 ]]]
 
@@ -29,10 +39,18 @@ Credentials are unique keys with which we identify an integration in your accoun
 This is the first step of a complete code structure that must be followed for the correct integration of payment via card. Pay attention to the blocks below to add to the codes as indicated.
 
 [[[
-```javascript
+```html
 <script>
-const mp = new MercadoPago("YOUR_PUBLIC_KEY");
+  const mp = new MercadoPago("YOUR_PUBLIC_KEY");
 </script>
+```
+```javascript
+
+import { loadMercadoPago } from "@mercadopago/sdk-js";
+
+await loadMercadoPago();
+const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
+
 ```
 ]]]
 

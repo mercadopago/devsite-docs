@@ -2,18 +2,42 @@
 
 ----[mlb]----
 With Mercado Pago's Checkout API, it is possible to offer, in addition to card and Pix, **payments via boleto bancário and pagamento em lotérica**.
+
+> NOTE
+>
+> Important
+>
+> It is now also possible to integrate card payments through the React SDK, please see the details by clicking here.
 ------------
 
 ----[mla]----
 With Mercado Pago's Checkout API, it is also possible to offer payments with **Rapipago** and/or **Pago Fácil**.
+
+> NOTE
+>
+> Important
+>
+> It is now also possible to integrate card payments through the React SDK, please see the details by clicking here.
 ------------
 
 ----[mlm]----
 With the Mercado Pago's Checkout API, it is also possible to offer payments with **OXXO**, **Paycash**, **Citibanamex**, **Santander**, **BBVA Bancomer** and **Mercado Pago Card**.
+
+> NOTE
+>
+> Important
+>
+> It is now also possible to integrate card payments through the React SDK, please see the details by clicking here.
 ------------
 
 ----[mpe]----
 With Mercado Pago's Checkout API, it is also possible to offer payments through **PagoEfectivo**.
+
+> NOTE
+>
+> Important
+>
+> It is now also possible to integrate card payments through the React SDK, please see the details by clicking here.
 ------------
 
 ----[mco]----
@@ -22,6 +46,12 @@ With Mercado Pago's Checkout API, it is also possible to offer payments with **E
 
 ----[mlu]----
 With Mercado Pago's Checkout API, it is also possible to offer payments with **Abitab** and **Redpagos**.
+
+> NOTE
+>
+> Important
+>
+> It is now also possible to integrate card payments through the React SDK, please see the details by clicking here.
 ------------
 
 To get a detailed list of all payment methods available for integration, send a **GET** with your **Access token** to the endpoint [/v1/payment_methods](/developers/en/reference/payment_methods/_payment_methods/get) and run the request or, if you prefer, make the request using the SDKs below.
@@ -119,10 +149,14 @@ This capture is made by including the MercadoPago.js library in your project, fo
 
 [[[
 ```html
-
 <body>
-<script src="https://sdk.mercadopago.com/js/v2"></script>
+  <script src="https://sdk.mercadopago.com/js/v2"></script>
 </body>
+
+```
+```bash
+npm install @mercadopago/sdk-js
+
 ```
 ]]]
 
@@ -134,8 +168,17 @@ This is the first step of a complete code structure that must be followed for th
 
 
 [[[
+```html
+<script>
+  const mp = new MercadoPago("YOUR_PUBLIC_KEY");
+</script>
+```
 ```javascript
-const mp = new MercadoPago('YOUR_PUBLIC_KEY');
+import { loadMercadoPago } from "@mercadopago/sdk-js";
+
+await loadMercadoPago();
+const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
+
 ```
 ]]]
 
