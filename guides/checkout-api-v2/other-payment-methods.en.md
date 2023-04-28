@@ -188,7 +188,7 @@ const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
 With the MercadoPago.js library included, add the payment form below to your project to ensure the secure capture of buyer data. In this step, it is important to use the list you consulted to obtain the available payment methods to create the payment options you want to offer.
 
 
-[[[[
+[[[
 ```html
 
   <form id="form-checkout" action="/process_payment" method="post">

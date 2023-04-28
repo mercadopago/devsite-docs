@@ -4,6 +4,12 @@ Mercado Pago’s card-free installment option is called **Mercado Crédito** and
 
 By offering this option in your store, your customers will be able to buy a product today and pay in installments later. For your business, approval of the purchase is immediate and guaranteed, with the total amount being credited in advance and your customers paying us later.
 
+> NOTE
+>
+> Important
+>
+> It is now also possible to integrate card payments through the React SDK, please see the details by clicking here.
+
 Follow the steps below to offer installments without card in your store.
 
 ## Prerequisites 
