@@ -93,8 +93,8 @@ paths:
                       description: A string value that must be one of this [seller or buyer], this value can be setted only if type field is equal to credit_card
                       x-description-i18n:
                         eng: A string value that must be one of this [seller or buyer], this value can be setted only if type field is equal to credit_card
-                        spa: Un valor de string que debe ser uno de este [vendedor o comprador], este valor se puede establecer solo si el campo de tipo es igual a credit_card
-                        por: Um valor de string que deve ser um destes [vendedor ou comprador], esse valor pode ser definido somente se o campo de tipo for igual a credit_card
+                        spa: Un valor de string que debe ser uno de este [seller o buyer], este valor se puede establecer solo si el campo de tipo es igual a credit_card
+                        por: Um valor de string que deve ser um destes [seller ou buyer], esse valor pode ser definido somente se o campo de tipo for igual a credit_card
                     voucher_type:
                       type: string
                       description: A string value that must be one of this [sodexo or alelo], this value can be setted only if type field is equal to voucher_card
