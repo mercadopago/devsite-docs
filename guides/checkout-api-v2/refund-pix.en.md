@@ -11,7 +11,7 @@ The header can also be included in requests to [get refund list](/developers/en/
 [[[
 ```curl
 
-curl --location --request POST 'https://internal-api.mercadopago.com/v1/payments/{payment_id}/refunds \
+curl --location --request POST 'https://api.mercadopago.com/v1/payments/{payment_id}/refunds \
 
 -H 'X-Render-In-Process-Refunds: true' \
 -H 'Content-Type: application/json' \

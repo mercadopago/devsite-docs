@@ -12,7 +12,7 @@ El header también puede ser incluido en requests para [obtener la lista de reem
 [[[
 ```curl
 
-curl --location --request POST 'https://internal-api.mercadopago.com/v1/payments/{payment_id}/refunds \
+curl --location --request POST 'https://api.mercadopago.com/v1/payments/{payment_id}/refunds \
 
 -H 'X-Render-In-Process-Refunds: true' \
 -H 'Content-Type: application/json' \
