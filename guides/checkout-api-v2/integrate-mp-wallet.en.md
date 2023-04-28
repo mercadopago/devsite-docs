@@ -1,4 +1,4 @@
-# Mercado Pago Wallet
+# Mercado Pago Account
 
 The option to pay with Mercado Pago Wallet, by default, is presented in all Mercado Pago Checkouts in combination with guest user payments (no login).
 
