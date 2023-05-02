@@ -1,8 +1,8 @@
-# Cómo migrar a la nueva versión del plugin de Mercado Pago
+# Cómo migrar a la nueva versión de la app plugin de Mercado Pago
 
-Aprende a migrar a la versión actual del plugin de Mercado Pago para Shopify.
+Aprende a instalar la nueva app y desinstalar la antigua para evitar la interrupción del servicio en Shopify.
 
-## Instala la nueva App
+## Instala la nueva app
 
 1. Ve a tu tienda [Shopify](https://accounts.shopify.com/store-login).
 2. Dentro del panel administrativo de la tienda, haz clic en **Configuración**.
@@ -34,10 +34,13 @@ Después de instalar la nueva versión, es necesario desinstalar la versión ant
 1. Ve a tu tienda [Shopify](https://accounts.shopify.com/store-login).
 2. Dentro del panel administrativo de la tienda, haz clic en **Configuración**.
 3. Una vez allí, selecciona la opción **Pagos**. 
-4. Localiza el antiguo plugin de Mercado Pago y desactívalo.
+4. Localiza la antigua app con el nombre "Mercado Pago" y selecciona **Gestionar**.
+5. Para finalizar, haz clic en **Desactiva Mercado Pago**.
 
 > WARNING
 >
 > Atención
 >
 > Ten cuidado de no desinstalar la nueva versión.
+
+![migración-c](/images/shopify/migración-c-es.gif)
