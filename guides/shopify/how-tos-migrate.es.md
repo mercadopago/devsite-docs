@@ -17,7 +17,7 @@ Aprende a instalar la nueva app y desinstalar la antigua para evitar la interrup
 8. Coloca tus **credenciales de producción** (`public key` y `access token`) en los campos que lo solicitan y haz clic en **Guardar**.
 9. Para terminar la instalación, selecciona **Activar Checkout Mercado Pago**.
 
-> En este paso, podrás seleccionar las imágenes de los medios de pago que quieras mostrar en tu tienda a modo ilustrativo. También, en caso que lo desees, podrás habilitar el [modo de prueba](/developers/pt/docs/shopify/sales-processing/integration-test).
+> En este paso, podrás seleccionar las imágenes de los medios de pago que quieras mostrar en tu tienda a modo ilustrativo. También, en caso que lo desees, podrás habilitar el [modo de prueba.](/developers/pt/docs/shopify/sales-processing/integration-test)
 
 ![migración-b](/images/shopify/migración-b-es.gif)
 

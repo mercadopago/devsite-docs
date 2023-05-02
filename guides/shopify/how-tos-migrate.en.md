@@ -14,7 +14,7 @@ Learn how to install the new app and uninstall the old one to avoid service inte
 8. Put your **production credentials** (`public key` and `access token`) in the fields that request it and click **Save**.
 9. To finish the installation, select **Activate Checkout Mercado Pago**.
 
-> In this step, you can select the images of the means of payment that you want to show in your store for illustrative purposes. Also, if you wish, you can enable [test mode](/developers/en/docs/shopify/sales-processing/integration-test).
+> In this step, you can select the images of the means of payment that you want to show in your store for illustrative purposes. Also, if you wish, you can enable [test mode.](/developers/en/docs/shopify/sales-processing/integration-test)
 
 > NOTE
 >
