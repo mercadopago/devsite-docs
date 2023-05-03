@@ -90,6 +90,7 @@ To **test different payment results**, fill in the desired status in the cardhol
 ----[mlm]----
 | Card | Number | Security code | Expiration date |
 | :--- | :---: | :---: | :---: |
+| Mastercard | 5474 9254 3267 0366 | 123 | 11/25 |
 | Visa | 4075 5957 1648 3764 | 123 | 11/25 |
 
 To **test different payment results**, fill in the desired status in the cardholder's name:
