@@ -4,7 +4,6 @@ Aprende a instalar la nueva app y desinstalar la antigua para evitar la interrup
 
 ## Instala la nueva app
 
-
 1. Ve a tu tienda [Shopify](https://accounts.shopify.com/store-login).
 2. Dentro del panel administrativo de la tienda, haz clic en **Configuración**.
 3. Una vez allí, selecciona la opción **Pagos**. 
