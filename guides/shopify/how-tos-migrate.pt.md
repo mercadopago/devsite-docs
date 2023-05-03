@@ -11,7 +11,7 @@ Saiba como instalar o novo app e desinstalar o antigo para evitar a interrupçã
 5. Acesse a aba **Pesquisar por fornecedor** e procure o novo app com o nome "Checkout Mercado Pago".
 6. Após localizá-lo, selecione-o, clique em **Ativar** e, por fim, em **Conectar**.
 7. Selecione **Instalar app** e, depois, clique em **Gerenciar**.
-8. Insira as suas **credenciais de produção** (`public key` e `access token`) nos campos solicitados e clique em **Salvar**.
+8. Insira as suas **credenciais de produção** (`public key` e `access token`) nos campos solicitados e clique em **Salvar**.Lembre-se de ter suas [credenciais](/developers/pt/docs/shopify/additional-content/credentials) à mão.
 9. Para finalizar a instalação, clique em **Ativar Checkout Mercado Pago**.
 
 > Nesta etapa, você pode selecionar as imagens dos meios de pagamento que deseja exibir em sua loja para fins ilustrativos. Além disso, se desejar, você pode ativar o [modo de teste.](/developers/pt/docs/shopify/sales-processing/integration-test)
