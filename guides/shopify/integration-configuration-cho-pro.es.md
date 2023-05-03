@@ -29,8 +29,8 @@ Para instalar Checkout Pro en una tienda Shopify, sigue los pasos a continuació
 1. Ve a tu tienda [Shopify](https://accounts.shopify.com/store-login).
 2. Dentro del panel administrativo de la tienda, haz clic en **Configuración**.
 3. Una vez allí, selecciona la opción **Pagos**. 
-4. En **Formas de pago adicionales**, haz clic en **Agregar formas de pago**.
-5. Dirígete a la pestaña "Buscar por proveedor" y busca la nueva app con el nombre **Checkout Mercado Pago**. 
+4. En "Formas de pago adicionales", haz clic en **Agregar formas de pago**.
+5. Dirígete a la pestaña **Buscar por proveedor** y busca la nueva app con el nombre "Checkout Mercado Pago". 
 6. Una vez que la hayas encontrado, selecciónala y haz clic en **Activar”** y luego **Conectar**.
 
 <center>

@@ -1,15 +1,16 @@
-# Cómo migrar a la nueva versión de la app plugin de Mercado Pago
+# Cómo migrar a la nueva versión de la app de Mercado Pago
 
 Aprende a instalar la nueva app y desinstalar la antigua para evitar la interrupción del servicio en Shopify.
 
 ## Instala la nueva app
 
+
 1. Ve a tu tienda [Shopify](https://accounts.shopify.com/store-login).
 2. Dentro del panel administrativo de la tienda, haz clic en **Configuración**.
 3. Una vez allí, selecciona la opción **Pagos**. 
-4. En **Formas de pago adicionales**, haz clic en **Agregar formas de pago**.
-5. Dirígete a la pestaña "Buscar por proveedor" y busca la nueva app con el nombre **Checkout Mercado Pago**. 
-6. Una vez que la hayas encontrado, selecciónala y haz clic en **Activar** y luego **Conectar**.
+4. En "Formas de pago adicionales", haz clic en **Agregar formas de pago**.
+5. Dirígete a la pestaña **Buscar por proveedor** y busca la nueva app con el nombre "Checkout Mercado Pago". 
+6. Una vez que la hayas encontrado, selecciónala y haz clic en **Activar”** y luego **Conectar**.
 
 <center>
 

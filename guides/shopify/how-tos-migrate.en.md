@@ -1,4 +1,4 @@
-# How to migrate to the new version of the Mercado Pago plugin
+# How to migrate to the new version of the Mercado Pago app
 
 Learn how to install the new app and uninstall the old one to avoid service interruption in Shopify.
 
@@ -7,9 +7,9 @@ Learn how to install the new app and uninstall the old one to avoid service inte
 1. Go to your [Shopify](https://accounts.shopify.com/store-login) store.
 2. In the store's administrative panel, click on **Settings**.
 3. Once there, select the **Payments** option. 
-4. In **Additional payment methods**, click on the **Add payment methods** option.
-5. Go to the "Search by provider" tab and look for the new app with the name **Checkout Mercado Pago**.
-6. Once you have found it, select it and click **Activate”** and then **Connect**.
+4. In "Additional payment methods", click on the **Add payment methods** option.
+5. Go to the **Search by provider** tab and look for the new app with the name "Checkout Mercado Pago".
+6. Once you have found it, select it and click **Activate** and then **Connect**.
 7. Select **Install App** and then **Manage**.
 8. Put your **production credentials** (`public key` and `access token`) in the fields that request it and click **Save**.
 9. To finish the installation, select **Activate Checkout Mercado Pago**.
