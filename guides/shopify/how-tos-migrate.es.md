@@ -11,7 +11,7 @@ Aprende a instalar la nueva app y desinstalar la antigua para evitar la interrup
 5. Dirígete a la pestaña "Buscar por proveedor" y busca la nueva app con el nombre **Checkout Mercado Pago**. 
 6. Una vez que la hayas encontrado, selecciónala y haz clic en **Activar** y luego **Conectar**.
 
-![migración-a](/images/shopify/migración-a-es.gif)
+![migracion a](/images/shopify/migration-a-es.gif)
 
 7. Selecciona **Instalar aplicación** y luego **Gestionar**.
 8. Coloca tus **credenciales de producción** (`public key` y `access token`) en los campos que lo solicitan y haz clic en **Guardar**.
@@ -19,7 +19,7 @@ Aprende a instalar la nueva app y desinstalar la antigua para evitar la interrup
 
 > En este paso, podrás seleccionar las imágenes de los medios de pago que quieras mostrar en tu tienda a modo ilustrativo. También, en caso que lo desees, podrás habilitar el [modo de prueba.](/developers/pt/docs/shopify/sales-processing/integration-test)
 
-![migración-b](/images/shopify/migración-b-es.gif)
+![migracion b](/images/shopify/migration-b-es.gif)
 
 > NOTE
 >
@@ -43,4 +43,4 @@ Después de instalar la nueva versión, es necesario desinstalar la versión ant
 >
 > Ten cuidado de no desinstalar la nueva versión.
 
-![migración-c](/images/shopify/migración-c-es.gif)
+![migracion c](/images/shopify/migration-c-es.gif)
