@@ -18,6 +18,10 @@ La primera etapa del proceso de integración de los pagos con tarjeta es la **ca
   <script src="https://sdk.mercadopago.com/js/v2"></script>
 </body>
 ```
+```bash
+npm install @mercadopago/sdk-js
+
+```
 ]]]
 
 > NOTE
@@ -33,10 +37,17 @@ Las credenciales son claves únicas con las que identificamos una integración e
 Esta es la primera etapa de una estructura de código completa que se debe seguir para integrar correctamente los pagos con tarjeta. Presta atención a los siguientes bloques para añadirlos a los códigos como se indica.
 
 [[[
+```html
+<script>
+  const mp = new MercadoPago("YOUR_PUBLIC_KEY");
+</script>
+```
 ```javascript
-  <script>
-    const mp = new MercadoPago("YOUR_PUBLIC_KEY");
-  </script>
+import { loadMercadoPago } from "@mercadopago/sdk-js";
+
+await loadMercadoPago();
+const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
+
 ```
 ]]]
 

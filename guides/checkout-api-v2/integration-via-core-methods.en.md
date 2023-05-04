@@ -15,8 +15,12 @@ The first step in the card payment integration process is the **card data captur
 [[[
 ```html
 <body>
-<script src="https://sdk.mercadopago.com/js/v2"></script>
+  <script src="https://sdk.mercadopago.com/js/v2"></script>
 </body>
+```
+```bash
+npm install @mercadopago/sdk-js
+
 ```
 ]]]
 
@@ -33,10 +37,17 @@ Credentials are unique keys with which we identify an integration in your accoun
 This is the first step of a complete code structure that must be followed for the correct integration of payment via card. Pay attention to the blocks below to add to the codes as indicated.
 
 [[[
-```javascript
+```html
 <script>
-const mp = new MercadoPago("YOUR_PUBLIC_KEY");
+  const mp = new MercadoPago("YOUR_PUBLIC_KEY");
 </script>
+```
+```javascript
+import { loadMercadoPago } from "@mercadopago/sdk-js";
+
+await loadMercadoPago();
+const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
+
 ```
 ]]]
 

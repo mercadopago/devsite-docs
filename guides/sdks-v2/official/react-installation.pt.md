@@ -1,4 +1,4 @@
-# React
+# SDK JS - React
 
  Nossa SDK de React é compatível com o padrão mais atualizado de desenvolvimento web, além de oferecer funções e componentes que permitem uma integração mais simplificada com Mercado Pago.
 
