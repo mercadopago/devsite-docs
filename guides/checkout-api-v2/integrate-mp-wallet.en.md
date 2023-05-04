@@ -6,7 +6,7 @@ The option to pay with Mercado Pago Wallet, by default, is presented in all Merc
 >
 > Important
 >
-> It is now also possible to integrate card payments through the React SDK, please see the details by clicking here.
+> In addition to the options available in this documentation, it is also possible to integrate card payments through the **React SDK**. See the [JS SDK - React](/developers/en/docs/sdks-library/client-side/sdk-js-react-installation) documentation for more information.
 
 This option allows users registered in Mercado Pago and/or Mercado Livre to log in and use the available methods to make their payments, in addition to being able to include new payment options, such as credit cards.
 

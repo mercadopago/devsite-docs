@@ -6,7 +6,7 @@ Pix é um meio de pagamento eletrônico instantâneo oferecido pelo Banco Centra
 >
 > Importante
 >
-> Agora é possível também integrar o pagamento com Pix através da SDK de React, consulte os detalhes clicando aqui.
+> Além das opções disponíveis nesta documentação, também é possível integrar pagamentos com cartão através da **SDK de React**. Veja a documentação [SDK JS - React](/developers/pt/docs/sdks-library/client-side/sdk-js-react-installation) para mais informações.
 
 Para integrar pagamentos via Pix, siga as etapas abaixo, mas caso você já tenha integrado pagamentos via cartão, inicie a integração a partir da etapa [Adicionar formulário de pagamento](/developers/pt/docs/checkout-api/integration-configuration/integrate-with-pix#bookmark_Adicionar_formulário_de_pagamento).
 

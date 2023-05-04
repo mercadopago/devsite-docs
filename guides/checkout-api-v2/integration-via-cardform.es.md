@@ -8,7 +8,7 @@ A medida que se introducen los datos de la tarjeta, se realiza una búsqueda aut
 >
 > Importante
 >
-> Ahora también es posible integrar el pago con tarjeta a través del SDK React. Consulta los detalles cliqueando aqui.
+> Además de las opciones disponibles en esta documentación, también es posible integrar pagos con tarjeta a través de la **SDK de React**. Consulte la documentación [SDK JS - React](/developers/es/docs/sdks-library/client-side/sdk-js-react-installation) para obtener más información.
 
 Consulta el siguiente diagrama que ilustra el proceso de pago con tarjeta utilizando Card Form.
 

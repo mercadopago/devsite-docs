@@ -7,7 +7,7 @@ Com o Checkout Transparente do Mercado Pago, é possível oferecer, além de car
 >
 > Importante
 >
-> Agora é possível também integrar o pagamento com Pix através da SDK de React, consulte os detalhes clicando aqui.
+> Além das opções disponíveis nesta documentação, também é possível integrar pagamentos com cartão através da **SDK de React**. Veja a documentação [SDK JS - React](/developers/pt/docs/sdks-library/client-side/sdk-js-react-installation) para mais informações.
 ------------
 
 ----[mla]----
@@ -17,7 +17,7 @@ Com o Checkout Transparente do Mercado Pago, também é possível oferecer pagam
 >
 > Importante
 >
-> Agora é possível também integrar o pagamento com Pix através da SDK de React, consulte os detalhes clicando aqui.
+> Além das opções disponíveis nesta documentação, também é possível integrar pagamentos com cartão através da **SDK de React**. Veja a documentação [SDK JS - React](/developers/pt/docs/sdks-library/client-side/sdk-js-react-installation) para mais informações.
 ------------
 
 ----[mlm]----
@@ -27,7 +27,7 @@ Com o Checkout Transparente do Mercado Pago, também é possível oferecer pagam
 >
 > Importante
 >
-> Agora é possível também integrar o pagamento com Pix através da SDK de React, consulte os detalhes clicando aqui.
+> Além das opções disponíveis nesta documentação, também é possível integrar pagamentos com cartão através da **SDK de React**. Veja a documentação [SDK JS - React](/developers/pt/docs/sdks-library/client-side/sdk-js-react-installation) para mais informações.
 ------------
 
 ----[mpe]----
@@ -37,7 +37,7 @@ Com o Checkout Transparente do Mercado Pago, também é possível oferecer pagam
 >
 > Importante
 >
-> Agora é possível também integrar o pagamento com Pix através da SDK de React, consulte os detalhes clicando aqui.
+> Além das opções disponíveis nesta documentação, também é possível integrar pagamentos com cartão através da **SDK de React**. Veja a documentação [SDK JS - React](/developers/pt/docs/sdks-library/client-side/sdk-js-react-installation) para mais informações.
 ------------
 
 ----[mco]----
@@ -47,7 +47,7 @@ Com o Checkout Transparente do Mercado Pago, também é possível oferecer pagam
 >
 > Importante
 >
-> Agora é possível também integrar o pagamento com Pix através da SDK de React, consulte os detalhes clicando aqui.
+> Além das opções disponíveis nesta documentação, também é possível integrar pagamentos com cartão através da **SDK de React**. Veja a documentação [SDK JS - React](/developers/pt/docs/sdks-library/client-side/sdk-js-react-installation) para mais informações.
 ------------
 
 ----[mlu]----
@@ -57,7 +57,7 @@ Com o Checkout Transparente do Mercado Pago, também é possível oferecer pagam
 >
 > Importante
 >
-> Agora é possível também integrar o pagamento com Pix através da SDK de React, consulte os detalhes clicando aqui.
+> Além das opções disponíveis nesta documentação, também é possível integrar pagamentos com cartão através da **SDK de React**. Veja a documentação [SDK JS - React](/developers/pt/docs/sdks-library/client-side/sdk-js-react-installation) para mais informações.
 ------------
 
 Para obter uma lista detalhada com todos os meios de pagamento disponíveis para integração, envie um **GET** com seu _Access token_ ao endpoint [/v1/payment_methods](/developers/pt/reference/payment_methods/_payment_methods/get) e execute a requisição ou, se preferir, faça a requisição utilizando os SDKs abaixo.

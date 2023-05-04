@@ -8,7 +8,7 @@ Ao oferecer esta opção na sua loja, seus clientes poderão comprar um produto 
 >
 > Importante
 >
-> Agora é possível também integrar o parcelamento sem cartão através da SDK de React, consulte os detalhes clicando aqui.
+> Além das opções disponíveis nesta documentação, também é possível integrar pagamentos com cartão através da **SDK de React**. Veja a documentação [SDK JS - React](/developers/pt/docs/sdks-library/client-side/sdk-js-react-installation) para mais informações.
 
 Siga os passos abaixo para oferecer o parcelamento sem cartão em sua loja.
 
@@ -246,36 +246,8 @@ mp.bricks().create("wallet", "wallet_container", {
 ```
 ]]]
 
-Ao concluir os passos citados acima, você deverá visualizar um botão similar ao exemplo ilustrado abaixo.
-
-![parcelamento ser cartao](api/button-installments-w-card-pt.png)
-
-### Exemplo do fluxo de pagamento
-
-![exemplo fluxo](api/flow-installments-w-card-pt.gif)
-
-### Sugestões de uso e boas práticas
-
-Para oferecer a melhor experiência para seus clientes usando Mercado Crédito, sugerimos:
-
-* Utilizar maiúsculas nas iniciais da marca: Mercado Pago
-
-![iniciais](api/suggestions1-installments-w-card-pt.png)
-
-* Manter o logo do Mercado Pago
-
-![logo](api/suggestions2-installments-w-card-pt.png)
-
-* Manter a proposta de valor de parcelas sem cartão
-
-![proposta](api/suggestions3-installments-w-card-pt.png)
-
-* Manter o alinhamento e os espaços dos elementos do botão
-
-![alinhamento](api/suggestions4-installments-w-card-pt.png)
-
-Para explicar melhor a seus clientes como funciona Mercado Crédito, compartilhe com eles as etapas a seguir.
+Pronto! Ao concluir os passos descritos acima, o botão para pagamento será exibido na tela e você terá finalizado a integração. Siga os passos abaixo para explicar aos  seus clientes como funciona Mercado Crédito.
 
 1. [Crie uma conta](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) ou entre com seu login e senha no Mercado Pago.
 2. Selecione **Mercado Crédito** e escolha em quantas vezes quer pagar 
-3. Pronto! Pague as parcelas todo mês como preferir, no **app do Mercado Pago**.
+3. Pague as parcelas todo mês como preferir, no **app do Mercado Pago**.

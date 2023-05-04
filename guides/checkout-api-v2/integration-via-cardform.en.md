@@ -8,7 +8,7 @@ As the card data is entered, an automatic search takes place for the issuer info
 >
 > Important
 >
-> It is now also possible to integrate card payments through the React SDK, please see the details by clicking here.
+> In addition to the options available in this documentation, it is also possible to integrate card payments through the **React SDK**. See the [JS SDK - React](/developers/en/docs/sdks-library/client-side/sdk-js-react-installation) documentation for more information.
 
 Check below the diagram that illustrates the card payment process using the Card Form.
 

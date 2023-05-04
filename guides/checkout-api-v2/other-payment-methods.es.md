@@ -7,7 +7,8 @@ Con el Checkout API de Mercado Pago, es posible ofrecer, además de tarjeta y Pi
 >
 > Importante
 >
-> Ahora también es posible integrar el pago con tarjeta a través del SDK React. Consulta los detalles cliqueando aqui.
+> Además de las opciones disponibles en esta documentación, también es posible integrar pagos con tarjeta a través de la **SDK de React**. Consulte la documentación [SDK JS - React](/developers/es/docs/sdks-library/client-side/sdk-js-react-installation) para obtener más información.
+
 ------------
 
 ----[mla]----
@@ -17,7 +18,7 @@ Con el Checkout API de Mercado Pago, también es posible ofrecer pagos con **Rap
 >
 > Importante
 >
-> Ahora también es posible integrar el pago con tarjeta a través del SDK React. Consulta los detalles cliqueando aqui.
+> Además de las opciones disponibles en esta documentación, también es posible integrar pagos con tarjeta a través de la **SDK de React**. Consulte la documentación [SDK JS - React](/developers/es/docs/sdks-library/client-side/sdk-js-react-installation) para obtener más información.
 ------------
 
 ----[mlm]----
@@ -27,7 +28,7 @@ Con el Checkout API de Mercado Pago, también se puede ofrecer pagos con **OXXO*
 >
 > Importante
 >
-> Ahora también es posible integrar el pago con tarjeta a través del SDK React. Consulta los detalles cliqueando aqui.
+> Además de las opciones disponibles en esta documentación, también es posible integrar pagos con tarjeta a través de la **SDK de React**. Consulte la documentación [SDK JS - React](/developers/es/docs/sdks-library/client-side/sdk-js-react-installation) para obtener más información.
 ------------
 
 ----[mpe]----
@@ -37,7 +38,7 @@ Con el Checkout API de Mercado Pago, también es posible ofrecer pagos a través
 >
 > Importante
 >
-> Ahora también es posible integrar el pago con tarjeta a través del SDK React. Consulta los detalles cliqueando aqui.
+> Además de las opciones disponibles en esta documentación, también es posible integrar pagos con tarjeta a través de la **SDK de React**. Consulte la documentación [SDK JS - React](/developers/es/docs/sdks-library/client-side/sdk-js-react-installation) para obtener más información.
 ------------
 
 ----[mco]----
@@ -47,7 +48,7 @@ Con el Checkout API de Mercado Pago, también se puede ofrecer pagos con **Efect
 >
 > Importante
 >
-> Ahora también es posible integrar el pago con tarjeta a través del SDK React. Consulta los detalles cliqueando aqui.
+> Además de las opciones disponibles en esta documentación, también es posible integrar pagos con tarjeta a través de la **SDK de React**. Consulte la documentación [SDK JS - React](/developers/es/docs/sdks-library/client-side/sdk-js-react-installation) para obtener más información.
 ------------
 
 ----[mlu]----
@@ -57,7 +58,7 @@ Con el Checkout API de Mercado Pago, también es posible ofrecer pagos con **Abi
 >
 > Importante
 >
-> Ahora también es posible integrar el pago con tarjeta a través del SDK React. Consulta los detalles cliqueando aqui.
+> Además de las opciones disponibles en esta documentación, también es posible integrar pagos con tarjeta a través de la **SDK de React**. Consulte la documentación [SDK JS - React](/developers/es/docs/sdks-library/client-side/sdk-js-react-installation) para obtener más información.
 ------------
 
 Para obtener una lista detallada de todos los medios de pago disponibles para integración, envía un **GET** con tu `access_token` al endpoint [/v1/payment_methods](/developers/es/reference/payment_methods/_payment_methods/get) y ejecuta la solicitud o, si lo prefieres, haz la solicitud utilizando uno de nuestros SDKs.

@@ -1,5 +1,5 @@
 ----[mla, mlb]----
-# Pagos en cuotas sin tarjeta
+# Cuotas sin tarjeta
 
 **Mercado Crédito** es el método de financiación de Mercado Pago que permite pagar en cuotas sin tarjeta.
 
@@ -9,7 +9,7 @@ Al ofrecer esta opción en tu tienda, tus clientes podrán comprar un producto h
 >
 > Importante
 >
-> Ahora también es posible integrar el pago con tarjeta a través del SDK React. Consulta los detalles cliqueando aqui.
+> Además de las opciones disponibles en esta documentación, también es posible integrar pagos con tarjeta a través de la **SDK de React**. Consulte la documentación [SDK JS - React](/developers/es/docs/sdks-library/client-side/sdk-js-react-installation) para obtener más información.
 
 En esta guía encontrarás los pasos necesarios para ofrecer cuotas sin tarjeta en tu tienda.
 
@@ -25,7 +25,7 @@ Al ofrecer esta opción en tu tienda, tus clientes podrán comprar un producto h
 >
 > Importante
 >
-> Ahora también es posible integrar el pago con tarjeta a través del SDK React. Consulta los detalles cliqueando aqui.
+> Además de las opciones disponibles en esta documentación, también es posible integrar pagos con tarjeta a través de la **SDK de React**. Consulte la documentación [SDK JS - React](/developers/es/docs/sdks-library/client-side/sdk-js-react-installation) para obtener más información.
 
 En esta guía encontrarás los pasos necesarios para ofrecer meses sin tarjeta en tu tienda.
 
@@ -263,86 +263,14 @@ mp.bricks().create("wallet", "wallet_container", {
 ```
 ]]]
 
-Al concluir los pasos mencionados anteriormente, debería ver un botón similar al ejemplo ilustrado a continuación.
-
-----[mla, mlb]---- 
-![cuotas sin tarjeta](api/button-installments-w-card-mla-es.png)
-
-------------
-----[mlm]---- 
-![meses sin tarjeta](api/button-installments-w-card-mlm-es.png)
-
-------------
-
-### Ejemplo del flujo de pago
-
-----[mla, mlb]---- 
-![ejemplo flujo](api/flow-installments-w-card-mla-es.gif)
-
-------------
-----[mlm]---- 
-![ejemplo flujo](api/flow-installments-w-card-mlm-es.gif)
-
-------------
-
-### Sugerencias y buenas prácticas
-
-Para ofrecer la mejor experiencia a tus compradores usando Mercado Crédito, te sugerimos:
-
-* Usar mayúsculas en las iniciales de la marca: Mercado Pago
-
-----[mla, mlb]----
-![iniciales](api/suggestions1-installments-w-card-mla-es.png)
-
-------------
-----[mlm]----
-![iniciales](api/suggestions1-installments-w-card-mlm-es.png)
-
-------------
-
-* Mantener el logo de Mercado Pago
-
-----[mla, mlb]----
-![logo](api/suggestions2-installments-w-card-mla-es.png)
-
-------------
-----[mlm]----
-![logo](api/suggestions2-installments-w-card-mlm-es.png)
-
-------------
-
-----[mla, mlb]----
-* Mantener la propuesta de valor de cuotas sin tarjeta
-
-![propuesta](api/suggestions3-installments-w-card-mla-es.png)
-
-------------
-----[mlm]----
-* Mantener la propuesta de valor de cuotas sin meses
-
-![propuesta](api/suggestions3-installments-w-card-mlm-es.png)
-
-------------
-
-* Mantener la alineación y los espacios entre los elementos del botón
-
-----[mla, mlb]----
-![alineación](api/suggestions4-installments-w-card-mla-es.png)
-
-------------
-----[mlm]----
-![alineación](api/suggestions4-installments-w-card-mlm-es.png)
-
-------------
-
-Para explicar mejor a tus clientes cómo funciona Mercado Crédito, puedes compartirles estos pasos a continuación.
+¡Listo! Al completar los pasos descritos anteriormente, el botón de pago se mostrará en la pantalla y habrás completado la integración. Sigue los siguientes pasos para explicar a tus clientes cómo funciona Mercado Crédito.
 
 1. [Crea una cuenta](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) o ingresa en Mercado Pago. Si usas **Mercado Libre**, ¡ya tienes cuenta!
 ----[mla, mlb]----
 2. Elige **Mercado Crédito** y la cantidad de cuotas en las que quieres pagar.
-3. ¡Listo! Después paga mes a mes tus cuotas desde la **app de Mercado Pago**.
+3. Después paga mes a mes tus cuotas desde la **app de Mercado Pago**.
 ------------
 ----[mlm]----
 2. Elige Mercado Crédito y la cantidad de mensualidades en las que quieras pagar.
-3. ¡Listo! Después paga tus mensualidades desde la app de Mercado Pago.
+3. Después paga tus mensualidades desde la app de Mercado Pago.
 ------------

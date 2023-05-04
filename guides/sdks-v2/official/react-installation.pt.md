@@ -29,6 +29,6 @@ initMercadoPago('YOUR_PUBLIC_KEY');
 
 Ao finalizar a instalação da SDK, é possível utilizar os seguintes módulos para criação do Checkout.
 
-- [Checkout Bricks](/developers/pt/docs/sdks-library/client-side/react/checkout-bricks-installation)
-- [Métodos Core](/developers/pt/docs/sdks-library/client-side/react/core-methods-installation)
-- [Secure fields](/developers/pt/docs/sdks-library/client-side/react/secure-fields-installation)
+- [Checkout Bricks](/developers/pt/docs/sdks-library/client-side/sdk-js-react/checkout-bricks-installation)
+- [Métodos Core](/developers/pt/docs/sdks-library/client-side/sdk-js-react/core-methods-installation)
+- [Secure fields](/developers/pt/docs/sdks-library/client-side/sdk-js-react/secure-fields-installation)

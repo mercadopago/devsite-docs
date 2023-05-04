@@ -8,7 +8,7 @@ A integração de pagamentos via cartão é feita via cardform. Neste modo de in
 >
 > Importante
 >
-> Agora é possível também integrar o pagamento com cartão através da SDK de React, consulte os detalhes clicando aqui.
+> Além das opções disponíveis nesta documentação, também é possível integrar pagamentos com cartão através da **SDK de React**. Veja a documentação [SDK JS - React](/developers/pt/docs/sdks-library/client-side/sdk-js-react-installation) para mais informações.
 
 Confira abaixo o diagrama que ilustra o processo de pagamento via cartão utilizando o Card Form.
 

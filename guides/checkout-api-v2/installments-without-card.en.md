@@ -8,7 +8,7 @@ By offering this option in your store, your customers will be able to buy a prod
 >
 > Important
 >
-> It is now also possible to integrate card payments through the React SDK, please see the details by clicking here.
+> In addition to the options available in this documentation, it is also possible to integrate card payments through the **React SDK**. See the [JS SDK - React](/developers/en/docs/sdks-library/client-side/sdk-js-react-installation) documentation for more information.
 
 Follow the steps below to offer installments without card in your store.
 
@@ -243,17 +243,10 @@ mp.bricks().create("wallet", "wallet_container", {
 ```
 ]]]
 
-### Suggestions for use and best practices
 
-To offer the best experience to your customers using Mercado Crédito, we suggest:
 
-* Use capital letters in the initials of the brand: Mercado Pago
-* Keep the Mercado Pago logo
-* Maintain the value proposition of installments without a card
-* Maintain alignment and spaces of button elements
-
-To better explain to your customers how Mercado Crédito works, share the following steps with them.
+Done! After completing the steps described above, the payment button will be displayed on the screen and you will have finished the integration. Follow the steps below to explain to your customers how Mercado Crédito works.
 
 1. [Create an account](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) or sign in to Mercado Pago. If you use **Mercado Livre**, you already have this account!
 2. Select **Mercado Crédito** and choose how many times you want to pay
-3. Ready! Pay the installments every month as you prefer, in the **Mercado Pago app**.
+3. Pay the installments every month as you prefer, in the **Mercado Pago app**.

@@ -7,7 +7,7 @@ With Mercado Pago's Checkout API, it is possible to offer, in addition to card a
 >
 > Important
 >
-> It is now also possible to integrate card payments through the React SDK, please see the details by clicking here.
+> In addition to the options available in this documentation, it is also possible to integrate card payments through the **React SDK**. See the [JS SDK - React](/developers/en/docs/sdks-library/client-side/sdk-js-react-installation) documentation for more information.
 ------------
 
 ----[mla]----
@@ -17,7 +17,7 @@ With Mercado Pago's Checkout API, it is also possible to offer payments with **R
 >
 > Important
 >
-> It is now also possible to integrate card payments through the React SDK, please see the details by clicking here.
+> In addition to the options available in this documentation, it is also possible to integrate card payments through the **React SDK**. See the [JS SDK - React](/developers/en/docs/sdks-library/client-side/sdk-js-react-installation) documentation for more information.
 ------------
 
 ----[mlm]----
@@ -27,7 +27,7 @@ With the Mercado Pago's Checkout API, it is also possible to offer payments with
 >
 > Important
 >
-> It is now also possible to integrate card payments through the React SDK, please see the details by clicking here.
+> In addition to the options available in this documentation, it is also possible to integrate card payments through the **React SDK**. See the [JS SDK - React](/developers/en/docs/sdks-library/client-side/sdk-js-react-installation) documentation for more information.
 ------------
 
 ----[mpe]----
@@ -37,11 +37,17 @@ With Mercado Pago's Checkout API, it is also possible to offer payments through 
 >
 > Important
 >
-> It is now also possible to integrate card payments through the React SDK, please see the details by clicking here.
+> In addition to the options available in this documentation, it is also possible to integrate card payments through the **React SDK**. See the [JS SDK - React](/developers/en/docs/sdks-library/client-side/sdk-js-react-installation) documentation for more information.
 ------------
 
 ----[mco]----
 With Mercado Pago's Checkout API, it is also possible to offer payments with **Efecty**.
+
+> NOTE
+>
+> Important
+>
+> In addition to the options available in this documentation, it is also possible to integrate card payments through the **React SDK**. See the [JS SDK - React](/developers/en/docs/sdks-library/client-side/sdk-js-react-installation) documentation for more information.
 ------------
 
 ----[mlu]----
@@ -51,7 +57,7 @@ With Mercado Pago's Checkout API, it is also possible to offer payments with **A
 >
 > Important
 >
-> It is now also possible to integrate card payments through the React SDK, please see the details by clicking here.
+> In addition to the options available in this documentation, it is also possible to integrate card payments through the **React SDK**. See the [JS SDK - React](/developers/en/docs/sdks-library/client-side/sdk-js-react-installation) documentation for more information.
 ------------
 
 To get a detailed list of all payment methods available for integration, send a **GET** with your **Access token** to the endpoint [/v1/payment_methods](/developers/en/reference/payment_methods/_payment_methods/get) and run the request or, if you prefer, make the request using the SDKs below.
