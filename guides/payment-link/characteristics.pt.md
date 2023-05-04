@@ -1,25 +1,6 @@
 # Características
 
-----[mlm]---- 
-
-> WARNING
->
-> Atenção
->
-> Em breve, o Paypal não estará mais disponível como meio de pagamento nas soluções do Mercado Pago e não será possível receber pagamentos por este meio ou fazer novas integrações. Se você tiver dúvidas sobre essa mudança, entre em contato pelo nosso [portal de ajuda](https://blog.mercadopago.com.mx/productos/atencion-al-cliente-mercado-pago-como-contactarse).
-------------
-
-----[mlb]---- 
-
-> WARNING
->
-> Atenção
->
-> Em breve, o Paypal não estará mais disponível como meio de pagamento nas soluções do Mercado Pago e não será possível receber pagamentos por este meio ou fazer novas integrações. Se você tiver dúvidas sobre essa mudança, entre em contato pelo nosso [portal de ajuda](https://www.mercadopago.com.br/ajuda).
-
-------------
-
- - Ofereça todos os meios de pagamento: crédito, boleto, pagamento na lotérica, PayPal e Cartão de débito virtual Caixa. Até mesmo pagamento parcelado!
+ - Ofereça todos os meios de pagamento: crédito, boleto, pagamento na lotérica e Cartão de débito virtual Caixa. Até mesmo pagamento parcelado!
  - Gerencie todas as suas vendas pelo painel do Mercado Pago.
  - Defina tarifas e prazos que mais te agradem.
  - Organize seus negócios pela lista de produtos ou serviços.
