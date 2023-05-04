@@ -4,6 +4,13 @@ Neste método de integração, o responsável pela integração fica a cargo de 
 
 Na integração via Métodos Core, o integrador decide quando buscar as informações sobre o tipo de documento, além das informações do cartão (emissor e parcelas). Com isso, possui total flexibilidade na construção da experiência do fluxo de checkout.
 
+> NOTE
+>
+> Importante
+>
+> Além das opções disponíveis nesta documentação, também é possível integrar pagamentos com cartão através da **SDK de React**. Veja a documentação [SDK JS - React](/developers/pt/docs/sdks-library/client-side/sdk-js-react-installation) para mais informações.
+
+
 Confira abaixo o diagrama que ilustra o processo de pagamento via cartão utilizando Métodos Core.
 
 ![API-integration-flowchart](/images/api/api-integration-flowchart-coremethods-pt.png)

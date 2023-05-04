@@ -4,6 +4,12 @@ In this integration method, the person in charge of the integration is responsib
 
 In integration via Core Methods, the integrator decides when to look for information about the type of document, in addition to card information (issuer and installments). As a result, you have complete flexibility in building the checkout flow experience.
 
+> NOTE
+>
+> Important
+>
+> In addition to the options available in this documentation, it is also possible to integrate card payments through the **React SDK**. See the [JS SDK - React](/developers/en/docs/sdks-library/client-side/sdk-js-react-installation) documentation for more information.
+
 Check below the diagram that illustrates the card payment process using Core Methods.
 
 ![API-integration-flowchart](/images/api/api-integration-flowchart-coremethods-en.png)
