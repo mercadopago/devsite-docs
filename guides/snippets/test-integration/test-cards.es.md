@@ -89,6 +89,7 @@ Para **probar diferentes resultados de pago**, completa el estado deseado en el 
 ----[mlm]----
 | Tarjeta | Número | Código de seguridad | Fecha de caducidad |
 | :--- | :---: | :---: | :---: |
+| Mastercard | 5474 9254 3267 0366 | 123 | 11/25 |
 | Visa | 4075 5957 1648 3764 | 123 | 11/25 |
 
 Para **probar diferentes resultados de pago**, completa el estado deseado en el nombre del titular de la tarjeta:

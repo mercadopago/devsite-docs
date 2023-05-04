@@ -2,7 +2,7 @@
 
 > WARNING
 >
-> Importante
+> Important
 >
 > To perform Payment Brick rendering, first perform the [initialization steps](/developers/en/docs/checkout-bricks/common-initialization) shared among all Bricks. 
 
@@ -484,7 +484,7 @@ Once the configurations are created, enter the code below to render the Brick.
 
 > NOTE
 >
-> Importante
+> Important
 >
 > The id "paymentBrick_container" of the HTML div below should correspond to the value used in the method create() of the last step.
 
