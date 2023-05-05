@@ -45,3 +45,20 @@ In these cases, the `status_detail` field may return: `cc_rejected_blacklist`, `
 >
 > Keep in mind that if the card issuer fails to inform the rejection reason, you’ll see the payment details as `cc_rejected_other_reason`. In this scenario, we recommend changing the payment method or reaching out to the bank to solve the issue.
 
+## Recommendations to improve your approval
+
+To prevent a legitimate payment from being refused because it does not meet security validations, **it is necessary to include all possible information** when carrying out the transaction. Furthermore, you must pay attention to some security requirements, such as our **Security Code** and **Device ID**.
+
+> NOTE
+>
+> Important
+>
+> If you use Checkout Pro, you already implement our security methods to prevent fraud.
+
+### Implement the Device ID in your site
+
+The Device ID is an important piece of information to ensure better security and, consequently, a better payment approval rate. **It's a unique number that's used to identify a customer's device** when they are buying.
+
+If a customer makes a purchase on a different device than usual, this may mean that the purchase was fake and should not be done.
+
+Check if the store is sending this information and if not, make sure to activate this feature.

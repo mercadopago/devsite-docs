@@ -20,4 +20,20 @@ Você pode encontrar as informações e checar o estado de um pagamento via API,
 >
 > Também é possível achar mais informações sobre pagamentos na atividade da conta de [Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/activities).
 
+## Recomendações para melhorar sua aprovação
 
+Para evitar que um pagamento legítimo seja recusado por não atender as validações de segurança, é necessário **incluir todas as informações possíveis na hora de realizar a operação** e também se atentar a alguns requisitos de segurança, como nosso **Código de Segurança** e o **Device ID**.
+
+> NOTE
+>
+> Importante
+>
+> Se você usa o Checkout Pro, você já implementou nossos métodos de segurança para evitar fraudes.
+
+### Utilizar informações do device ID na web
+
+O Device ID é uma informação importante para garantir uma melhor segurança e, consequentemente, uma melhor taxa de aprovação de pagamentos. Ele representa um **identificador único para cada dispositivo do comprador** no momento da compra. 
+
+Caso um comprador frequente faça uma compra a partir de um dispositivo diferente do habitual, isso pode representar um comportamento fraudulento e nos indicar que essa transação não deve ser efetivada. 
+
+Verifique se a loja está enviando essa informação. Caso não esteja, ative a funcionalidade.

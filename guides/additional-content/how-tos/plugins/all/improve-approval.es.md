@@ -46,3 +46,20 @@ En estos casos, el campo `status_detail` puede devolver: `cc_rejected_blacklist`
 >
 > Es importante tener en cuenta que si el emisor de la tarjeta no indica el motivo del rechazo, vas a ver el detalle del pago como `cc_rejected_other_reason`. Para este caso, es recomendable cambiar el medio de pago o contactarse con el banco para resolver el problema.
 
+## Recomendaciones para mejorar tu aprobación
+
+Para evitar que un pago real sea rechazado porque no cumple con las validaciones de seguridad, **es necesario incluir toda la información posible** al realizar la transacción y también prestar atención a algunos requisitos de seguridad, como nuestro **Código de seguridad** y el **device ID**.
+
+> NOTE
+>
+> Importante
+>
+> Si utilizas Checkout Pro, ya cuentas con toda la seguridad para prevenir fraude.
+
+### Uso del device ID en la web
+
+El Device ID es una información importante para garantizar una mejor seguridad y, en consecuencia, una mejor tasa de aprobación de pagos. Representa **un identificador único para el dispositivo de cada comprador** en el momento de la compra.
+
+Si un comprador frecuente hace una compra desde un dispositivo diferente al habitual, esto podría representar un comportamiento falso e indicarnos que esta transacción no debe realizarse.
+
+Comprueba si la tienda está enviando esta información y si no, asegúrate de activar esta funcionalidad.
