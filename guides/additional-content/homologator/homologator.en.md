@@ -41,7 +41,7 @@ Ready! The quality measurement has been performed. Now, you can learn your score
 
 Once you’ve measured your integration’s quality, you will find the next screen:
 
-![homologation-screen](/homologator/integration-quality-ES.png)
+![homologation-screen](/homologator/integration-quality-screen-es.png)
 
 
 1. **Score**: indicates how safe your application's configuration is and is in line with Mercado Pago's best integration practices. The minimum score to fullfill the requirements is 75. Either way, remember that as close as your score is to a 100, it would improve the user experience and your payment approval rates.
