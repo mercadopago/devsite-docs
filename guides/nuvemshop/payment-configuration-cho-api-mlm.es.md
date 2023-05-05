@@ -6,7 +6,6 @@ Con el [Checkout Transparente](/developers/es/guides/checkout-api/landing), todo
 Para integrar Checkout Transparente, siga los pasos a continuación.
 
 ------------
-
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 Con el [Checkout API](/developers/es/guides/checkout-api/landing), todo el proceso de pago se realizará dentro del entorno de la tienda en línea, sin necesidad de redirigir a una página externa. Además de permitir un mayor control en el proceso de personalización e integración, el checkout ofrece una estructura completa para el procesamiento de pagos con los principales medios disponibles en el mercado.
 
@@ -23,6 +22,7 @@ Para integrar Checkout API, siga los pasos a continuación.
 ----[mlm]---- 
 4. Para aplicar un "valor mínimo de la mensualidad" para los pagos, informa el monto en el campo disponible.
 ------------
+----[mla, mlm, mpe, mco, mlu, mlc]---- 
 5. Si deseas aplicar descuentos para pagos con Checkout transparente (Checkout API), **informa la percentage** para pagos en efectivo y tarjetas (crédito y débito).
 ------------
 ----[mlb]---- 
@@ -49,7 +49,7 @@ Para integrar Checkout API, siga los pasos a continuación.
 ------------
 9. Finalmente, haz clic en **Guardar configuraciones**.
 
-----[mla, mlb, mpe, mco, mlu, mlc]---- 
+----[mla, mlb, mpe, mco, mlu, mlc]----
 </center>
 
 ![Payments Checkout API - Nuvemshop](/images/nuvemshop/cho-api-all-es.gif)
