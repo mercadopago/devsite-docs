@@ -2,6 +2,8 @@
 
 Quando sua integração estiver pronta e você quiser começar a receber pagamentos, você deve [ativar as credenciais]([FAKER][CREDENTIALS][URL]) de produção e substituir as credenciais de teste, se necessário.
 
+Alén disso, você terá que avaliar a [qualidade de sua integração](/developers/pt/docs/checkout-api/additional-content/integration-quality) para verificar se está cumprindo os padrões de qualidade e segurança do Mercado Pago.
+
 ## Não se esqueça de ter um certificado SSL
 
 Para que você esteja seguro e possa proteger os dados, **é necessário ter um certificado SSL e que a forma de pagamento seja disponibilizada em uma página HTTPS**. Isso permite proteger as transações realizadas pelos compradores e seus dados.

@@ -227,6 +227,11 @@ You will receive this response:
 
 Once the payment intent has been created, you can obtain it from your Point device by pressing on the key to pay (in the case of Point Plus and Point Pro 2 the **green button** and, in the case of the Point Smart, the **digital button “Charge now”**) and following the steps shown on the screen to complete the payment.
 
+> WARNING
+>
+> Important
+>
+> We recommend to assess your [integration’s quality](/developers/en/docs/checkout-api/additional-content/integration-quality) to check if you are meeting the Mercado Pago quality and security standards that guarantee a good payment approval rate.
 
 ## Check the status of your payment intent
 
