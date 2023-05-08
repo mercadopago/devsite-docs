@@ -16,21 +16,6 @@ El reporte de ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, 
 > Los informes que generes a partir del 1 de enero de 2023 mostrarán los movimientos de tu dinero en orden cronológico, por eso podrás identificarlos más fácilmente y controlar mejor las finanzas de tu negocio. [Conoce cómo utilizarlo.](https://bit.ly/3QiCD2f)
 ------------
 
-----[mla]----
-> WARNING
->
-> Importante
->
-> En tus reportes de octubre y de los próximos meses verás los movimientos de tu dinero ordenados por fecha de creación para que puedas identificarlos más fácilmente. [Aprendé cómo leer tu reporte.](https://bit.ly/3JzFPEG)
-------------
-----[mlm]----
-> WARNING
->
-> Importante
->
-> En tus reportes de octubre y de los próximos meses verás los movimientos de tu dinero ordenados por fecha de creación para que puedas identificarlos más fácilmente. [Aprende cómo leer tu reporte](https://bit.ly/3QiCD2f).
-------------
-
 ## ¿Cómo descargo el reporte?
 
 Ten en cuenta que la generación del reporte lleva unos minutos dependiendo de cuánta información quieras que incluya. No siempre estará listo al instante y, hasta que lo esté, verás el estado *En preparación* en la pantalla.
@@ -38,7 +23,7 @@ Ten en cuenta que la generación del reporte lleva unos minutos dependiendo de c
 Una vez disponible, estará en tu bandeja de reportes y siempre lo podrás descargar de dos formas:
 
 * Desde un link de descarga que te enviaremos por e-mail.
-* Desde tu cuenta de Mercado Pago, en *Reportes*. 
+* Desde tu cuenta de Mercado Pago, en ----[mla, mlm]---- *Reportes de tus cobros y estados de cuenta.* ------------ ----[mlb, mpe, mlu, mco]---- *Reportes*. ------------ 
 
 ### Valores del reporte
 
@@ -55,7 +40,7 @@ Los plazos de liquidación tienen que ver con los tiempos de los bancos o por lo
 
 **Este reporte se usa para conciliar** el dinero que existe en tu cuenta en un momento determinado e incluye las transacciones que componen a esos movimientos. 
 
-Genera el reporte de ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberaciones ------------ cada vez que necesites conciliar el detalle del dinero liberado entre dos fechas. Podrás saber cuándo se hizo cada transacción, en qué concepto y por qué monto, incluyendo los casos de bloqueo y desbloqueo. 
+Genera el reporte de ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberaciones ------------ cada vez que necesites conciliar el detalle del dinero liberado entre dos fechas. Podrás saber cuándo se hizo cada transacción, en qué concepto ----[mla, mlm]---- y por qué monto, incluyendo los casos de bloqueo y desbloqueo. ------------ ----[mlb, mpe, mlu, mco]---- y por qué monto.  ------------ 
 
 ### Usa el reporte para conocer tu historial
 
