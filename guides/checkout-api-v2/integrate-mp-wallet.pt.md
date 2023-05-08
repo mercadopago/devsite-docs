@@ -194,7 +194,7 @@ npm install @mercadopago/sdk-js
 ```
 ]]]
 
-2. Em seguida, inicialize a integração definindo sua [chave pública](/developers/pt/docs/checkout-api/additional-content/credentials) usando o seguinte código.
+Em seguida, inicialize a integração definindo sua [chave pública](/developers/pt/docs/checkout-api/additional-content/credentials) usando o seguinte código.
 
 [[[
 ```html
@@ -215,7 +215,7 @@ const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
 ```
 ]]]
 
-3. Feito isso, é necessário criar um container para definir o local que o botão será inserido na tela. A criação do container é feita inserindo um elemento no código HTML da página no qual o componente será renderizado.
+Feito isso, é necessário criar um container para definir o local que o botão será inserido na tela. A criação do container é feita inserindo um elemento no código HTML da página no qual o componente será renderizado.
 
 > NOTE
 >
@@ -231,7 +231,7 @@ const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
 ```
 ]]]
 
-4. Ao finalizar a etapa anterior, inicialize seu checkout utilizando o ID da preferência previamente criada com o identificador do elemento onde o botão deverá ser exibido.
+2. Ao finalizar a etapa anterior, inicialize seu checkout utilizando o ID da preferência previamente criada com o identificador do elemento onde o botão deverá ser exibido.
 
 [[[
 ```javascript

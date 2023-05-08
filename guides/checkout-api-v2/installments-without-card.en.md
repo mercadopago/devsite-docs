@@ -192,7 +192,7 @@ npm install @mercadopago/sdk-js
 ```
 ]]]
 
-2. Next, initialize the integration by setting your [public key](/developers/es/docs/checkout-api/additional-content/credentials) using the following code.
+Next, initialize the integration by setting your [public key](/developers/es/docs/checkout-api/additional-content/credentials) using the following code.
 
 [[[
 ```html
@@ -210,7 +210,7 @@ const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
 ```
 ]]]
 
-3. Once this is done, you need to create a container to define the location where the button will be inserted on the screen. The container is created by inserting an element into the HTML code of the page where the component will be rendered.
+Once this is done, you need to create a container to define the location where the button will be inserted on the screen. The container is created by inserting an element into the HTML code of the page where the component will be rendered.
 
 > NOTE
 >
@@ -225,7 +225,7 @@ const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
 ```
 ]]]
 
-4. After completing the previous step, initialize your checkout using the ID of the preference previously created with the identifier of the element where the button should be displayed.
+2. After completing the previous step, initialize your checkout using the ID of the preference previously created with the identifier of the element where the button should be displayed.
 
 [[[
 ```javascript
