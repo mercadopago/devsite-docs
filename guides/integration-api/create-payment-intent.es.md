@@ -232,7 +232,7 @@ Una vez creada la intención de pago, puedes obtenerla desde tu dispositivo Poin
 >
 > Importante
 >
-> Recomendamos  evaluar la [calidad de tu integración](/developers/es/docs/checkout-api/additional-content/integration-quality) para validar si estás cumpliendo con los estándares de calidad y seguridad de Mercado Pago que garantizan que tengas una buena tasa de aprobación de pagos. 
+> Recomendamos  evaluar la [calidad de tu integración](/developers/es/docs/checkout-api/additional-content/integration-quality) para validar si estás cumpliendo con los estándares de calidad y seguridad de Mercado Pago que pueden mejorar tu tasa de aprobación de pagos. 
 
 ## Consulta el estado de tu intención de pago
 

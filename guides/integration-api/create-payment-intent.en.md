@@ -231,7 +231,7 @@ Once the payment intent has been created, you can obtain it from your Point devi
 >
 > Important
 >
-> We recommend to assess your [integration’s quality](/developers/en/docs/checkout-api/additional-content/integration-quality) to check if you are meeting the Mercado Pago quality and security standards that guarantee a good payment approval rate.
+> We recommend assessing your [integration’s quality](/developers/en/docs/checkout-api/additional-content/integration-quality) to check if you are meeting the Mercado Pago quality and security standards that would help you obtain a good payment approval rate.
 
 ## Check the status of your payment intent
 

@@ -47,7 +47,7 @@ En estos casos, el campo `status_detail` puede devolver: `cc_rejected_blacklist`
 > 
 > Importante
 >
-> Recomendamos  evaluar la [calidad de tu integración](/developers/es/docs/checkout-api/additional-content/integration-quality) antes de salir a producción para que puedas validar si estás cumpliendo con los estándares de calidad y seguridad de Mercado Pago que garantizan que tengas una buena tasa de aprobación de pagos.
+> Recomendamos  evaluar la [calidad de tu integración](/developers/es/docs/checkout-api/additional-content/integration-quality) antes de salir a producción para que puedas validar si estás cumpliendo con los estándares de calidad y seguridad de Mercado Pago  que pueden mejorar tu tasa de aprobación de pagos.
 
 Para evitar que un pago real sea rechazado porque no cumple con las validaciones de seguridad, **es necesario incluir toda la información posible** al realizar la transacción y también prestar atención a algunos requisitos de seguridad, como nuestro **Código de seguridad** y el **device ID**.
 
