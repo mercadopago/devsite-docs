@@ -40,7 +40,7 @@ Los plazos de liquidación tienen que ver con los tiempos de los bancos o por lo
 
 **Este reporte se usa para conciliar** el dinero que existe en tu cuenta en un momento determinado e incluye las transacciones que componen a esos movimientos. 
 
-Genera el reporte de ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberaciones ------------ cada vez que necesites conciliar el detalle del dinero liberado entre dos fechas. Podrás saber cuándo se hizo cada transacción, en qué concepto ----[mla, mlm]---- y por qué monto, incluyendo los casos de bloqueo y desbloqueo. ------------ ----[mlb, mpe, mlu, mco]---- y por qué monto.  ------------ 
+Genera el reporte de ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberaciones ------------ cada vez que necesites conciliar el detalle del dinero liberado entre dos fechas. Podrás saber cuándo se hizo cada transacción, en qué concepto ----[mlb, mpe, mlu, mco,]---- y por qué monto, incluyendo los casos de bloqueo y desbloqueo. ------------ ----[mla, mlm]---- y por qué monto.  ------------ 
 
 ### Usa el reporte para conocer tu historial
 
