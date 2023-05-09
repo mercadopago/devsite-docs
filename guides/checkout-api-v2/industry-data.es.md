@@ -1,6 +1,6 @@
-# Datos sobre industrias
+# Datos adicionales sobre industrias
 
-Revisa que campos puedes enviar según tu industria para mejorar tu aprobación.
+Dependiendo del ramo de actividades o industria de tu tienda, existen una serie de datos que pueden ser enviados al crear un pago que ayudarán a mejorar tu aprobación. Puedes verlos detallados por industria a continuación.
 
 > WARNING 
 > 
@@ -8,7 +8,7 @@ Revisa que campos puedes enviar según tu industria para mejorar tu aprobación.
 >
 > Uso de ejemplos
 > 
-> Esta información solo funciona para la API de Preferencias.
+> Esta información solo funciona para las integraciones con Payment API. Para ver información sobre integraciones estándar, haz clic [aquí](/developers/es/reference/payments/_payments/post).
 
 ## Apparel
 
@@ -61,86 +61,6 @@ Agrega toda la información adicional que quieras.
 | `street_number` | Integer | Número de calle |
 | `express_shipment` | Boolean | `True` si lo es, `False` si no lo es. |
 
-```curl
-curl --location --request POST 'https://api.mercadopago.com/checkout/preferences' \
---header 'Content-Type: application/json' \
---header 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
---data-raw '{
-    "auto_return": "approved",
-    "back_urls": {
-        "failure": "https://www.mercadopago.com/home/failure",
-        "pending": "https://www.mercadopago.com/home/pending",
-        "success": "https://www.mercadopago.com/home/success"
-    },
-    "notification_url": "https://webhook.site/xyz",
-    "expires": false,
-    "external_reference": "order-123",
-    "date_of_expiration": "2025-03-12T12:58:41.425-04:00",
-    "items": [
-        {
-            "id": "1234",
-            "currency_id": "[FAKER][CURRENCY][ACRONYM]",
-            "title": "Producto",
-            "picture_url": "",
-            "description": "Descripción de producto",
-            "type": "test",
-            "category_id": "fashion",
-            "quantity": 1,
-            "unit_price": 150
-        }
-    ],
-    "payer": {
-        "phone": {
-            "area_code": "11",
-            "number": "[FAKER][PHONE_NUMBER][CELL_PHONE]"
-        },
-        "address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
-            "street_name": "[FAKER][ADDRESS][STREET_NAME]",
-            "street_number": 1000
-        },
-        "identification": {
-          "identification_type": "[FAKER][IDENTIFICATION][TYPE]",
-          "identification_number": "12345678"
-        },
-        "email": "john@yourdomain.com",
-        "first_name": "[FAKER][NAME][FIRST_NAME]",
-        "last_name": "[FAKER][NAME][LAST_NAME]",
-        "date_created": "",
-        "authentication_type": "Facebook",
-        "registration date": "2015-06-02T12:58:41.425-04:00",
-        "is_prime_user": false,
-        "is_first_purchase_online": false,
-        "last_purchase": "2020-01-02T12:58:41.425-04:00"
-    },
-    "payment_methods": {
-        "excluded_payment_methods": [
-            {
-                "id": ""
-            }
-        ],
-        "default_installments": null,
-        "default_payment_method_id": null,
-        "excluded_payment_types": [
-            {
-                "id": ""
-            }
-        ],
-        "installments": null
-    },
-    "shipments": {
-        "mode": "not_specified",
-        "receiver_address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
-            "street_name": "[FAKER][ADDRESS][STREET_NAME]",
-            "city_name": "[FAKER][ADDRESS][CITY]",
-            "state_name": "[FAKER][ADDRESS][STATE]",
-            "street_number": 1000
-        },
-        "express_shipment": false
-    }
-}'
-```
 
 ## Electro
 
@@ -184,7 +104,7 @@ Agrega toda la información adicional que quieras.
 
 | Object `shipment` | Tipo | Descripción |
 | --- | --- | --- |
-| `local_pickup` | Boolean | `True` si retira en sucursal, `False` si no lo hace |
+| `pick_up_on_seller` | Boolean | `True` si retira en sucursal, `False` si no lo hace |
 | `receiver_address` | Object | Datos de dirección del comprador. |
 | `zip_code` | String | Código postal |
 | `state_name` | String | Provincia |
@@ -192,87 +112,8 @@ Agrega toda la información adicional que quieras.
 | `street_number` | Integer | Número de calle |
 | `express_shipment` | Boolean | `True` si lo es, `False` si no lo es. |
 
-```curl
-curl --location --request POST 'https://api.mercadopago.com/checkout/preferences' \
---header 'Content-Type: application/json' \
---header 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
---data-raw '{
-    "auto_return": "approved",
-    "back_urls": {
-        "failure": "https://www.mercadopago.com/home/failure",
-        "pending": "https://www.mercadopago.com/home/pending",
-        "success": "https://www.mercadopago.com/home/success"
-    },
-    "notification_url": "https://webhook.site/xyz",
-    "expires": false,
-    "external_reference": "order-123",
-    "date_of_expiration": "2025-03-12T12:58:41.425-04:00",
-    "items": [
-        {
-            "id": "1234",
-            "currency_id": "[FAKER][CURRENCY][ACRONYM]",
-            "title": "Producto",
-            "category_id": "phones",
-            "quantity": 1,
-            "unit_price": 150,
-            "warranty": false,
-        }
-    ],
-    "payer": {
-        "phone": {
-            "area_code": "11",
-            "number": "[FAKER][PHONE_NUMBER][CELL_PHONE]"
-        },
-        "address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
-            "street_name": "[FAKER][ADDRESS][STREET_NAME]",
-            "street_number": 1000
-        },
-        "identification": {
-          "identification_type": "[FAKER][IDENTIFICATION][TYPE]",
-          "identification_number": "12345678"
-        },
-        "email": "john@yourdomain.com”,
-        "first_name": "[FAKER][NAME][FIRST_NAME]",
-        "last_name": "[FAKER][NAME][LAST_NAME]",
-        "date_created": "",
-        "authentication_type": "Facebook",
-        "registration date": "2015-06-02T12:58:41.425-04:00",
-        "is_prime_user": false,
-        "is_first_purchase_online": false,
-        "last_purchase": "2020-01-02T12:58:41.425-04:00"
-    },
-    "payment_methods": {
-        "excluded_payment_methods": [
-            {
-                "id": ""
-            }
-        ],
-        "default_installments": null,
-        "default_payment_method_id": null,
-        "excluded_payment_types": [
-            {
-                "id": ""
-            }
-        ],
-        "installments": null
-    },
-    "shipments": {
-        "mode": "not_specified",
-        "receiver_address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
-            "street_name": "[FAKER][ADDRESS][STREET_NAME]",
-            "city_name": "[FAKER][ADDRESS][CITY]",
-            "state_name": "[FAKER][ADDRESS][STATE]",
-            "street_number": 1000
-        },
-        "express_shipment": false,
-        "local_pickup": false
-    }
-}'
-```
 
-## Entretenimiento
+## Tickets y entretenimiento
 
 ### Campos a enviar
 Agrega toda la información adicional que quieras.
@@ -283,10 +124,12 @@ Agrega toda la información adicional que quieras.
 | --- | --- | --- |
 | `id` | String | Código |
 | `title` | String | Nombre |
+| `description` | String | Razón del pago o nombre del ítem |
+| `picture_url` | String | URL de la foto del producto |
 | `category_id` | String | Categoría |
 | `quantity` | Integer | Cantidad |
 | `unit_price` | Float | Precio unitario |
-| `event_date` | Date | Fecha del evento |
+| `event_date` | Date | Fecha |
 
 #### Sobre el comprador
 
@@ -307,8 +150,6 @@ Agrega toda la información adicional que quieras.
 | `last_purchase` | Date | Fecha de la última compra en el sitio. |
 
 
-
-
 #### Sobre envíos
 
 | Object `shipment` | Tipo | Descripción |
@@ -321,76 +162,83 @@ Agrega toda la información adicional que quieras.
 | `express_shipment` | Boolean | `True` si lo es, `False` si no lo es. |
 
 ```curl
-curl --location --request POST 'https://api.mercadopago.com/checkout/preferences' \
+curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
 --header 'Content-Type: application/json' \
---header 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
+--header 'Authorization: Bearer ACCESS_TOKEN' \
 --data-raw '{
-    "auto_return": "approved",
-    "back_urls": {
-        "failure": "https://www.mercadopago.com/home/failure",
-        "pending": "https://www.mercadopago.com/home/pending",
-        "success": "https://www.mercadopago.com/home/success"
+    "transaction_amount": 12.34,
+    "installments": 1,
+    "statement_descriptor": "LOJA 123",
+    "capture": true,
+    "binary_mode": false,
+    "sponsor_id": null,
+    "application_fee": null,
+    "payment_method_id": "master",
+    "token": "{{card_token_id}}",
+    "external_reference": "Pedido 01",
+    "notification_url": "{{notification_url}}",
+    "metadata": {
+        "order_number": "order_01"
     },
-    "notification_url": "https://webhook.site/xyz",
-    "expires": false,
-    "external_reference": "order-123",
-    "date_of_expiration": "2025-03-12T12:58:41.425-04:00",
-    "items": [
-        {
-            "id": "1234",
-            "currency_id": "[FAKER][CURRENCY][ACRONYM]",
-            "title": "Producto",
-            "category_id": "entertainment",
-            "quantity": 1,
-            "unit_price": 150,
-            "event_date": "2020-06-02T12:58:41.425-04:00",
-        }
-    ],
+    "description": "PEDIDO NOVO - INGRESSO",
     "payer": {
-        "phone": {
-            "area_code": "11",
-            "number": "[FAKER][PHONE_NUMBER][CELL_PHONE]"
-        },
+        "first_name": "Nome",
+        "last_name": "Sobrenome",
+        "email": "test_user_123456789@testuser.com",
         "identification": {
-          "identification_type": "[FAKER][IDENTIFICATION][TYPE]",
-          "identification_number": "12345678"
+            "type": "CPF",
+            "number": "19119119100"
         },
-        "email": "john@yourdomain.com",
-        "first_name": "[FAKER][NAME][FIRST_NAME]",
-        "last_name": "[FAKER][NAME][LAST_NAME]",
-        "date_created": "",
-        "authentication_type": "Facebook",
-        "registration date": "2015-06-02T12:58:41.425-04:00",
-        "is_prime_user": false,
-        "is_first_purchase_online": false,
-        "last_purchase": "2020-01-02T12:58:41.425-04:00"
+        "address": {
+            "zip_code": "06233200",
+            "street_name": "Av. das Nações Unidas",
+            "street_number": "3003",
+            "neighborhood": "Bonfim",
+            "city": "Osasco",
+            "federal_unit": "SP"
+        }
     },
-    "payment_methods": {
-        "excluded_payment_methods": [
+    "additional_info": {
+        "items": [
             {
-                "id": ""
+                "id": "1941",
+                "title": "25/08/2022 | Pista Inteira5 lote - GREEN VALLEY GRAMADO 2022",
+                "description": "25/08/2022 | Pista Inteira5 lote - GREEN VALLEY GRAMADO 2022",
+                "picture_url": null,
+                "category_id": "Tickets",
+                "quantity": 1,
+                "unit_price": 100.00,
+                "event_date": "2019-12-25T19:30:00.000-03:00"
             }
         ],
-        "default_installments": null,
-        "default_payment_method_id": null,
-        "excluded_payment_types": [
-            {
-                "id": ""
-            }
-        ],
-        "installments": null
-    },
-    "shipments": {
-        "mode": "not_specified",
-        "receiver_address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
-            "street_name": "[FAKER][ADDRESS][STREET_NAME]",
-            "city_name": "[FAKER][ADDRESS][CITY]",
-            "state_name": "[FAKER][ADDRESS][STATE]",
-            "street_number": 1000
+        "payer": {
+            "first_name": "Nome",
+            "last_name": "Sobrenome",
+            "is_prime_user": "1",
+            "is_first_purchase_online": "1",
+            "last_purchase": "2019-10-25T19:30:00.000-03:00",
+            "phone": {
+                "area_code": "11",
+                "number": "987654321"
+            },
+            "address": {
+                "zip_code": "06233-200",
+                "street_name": "Av. das Nações Unidas",
+                "street_number": "3003"
+            },
+            "registration_date": "2020-08-06T09:25:04.000-03:00"
         },
-        "express_shipment": false,
-        "local_pickup": false
+        "shipments": {
+            "express_shipment": "0",
+            "pick_up_on_seller": "1",
+            "receiver_address": {
+                "zip_code": "06233-200",
+                "street_name": "Av. das Nações Unidas",
+                "street_number": "3003",
+                "floor": "",
+                "apartment": ""
+            }
+        }
     }
 }'
 ```
@@ -446,88 +294,6 @@ Agrega toda la información adicional que quieras.
 | `express_shipment` | Boolean | `True` si lo es, `False` si no lo es. |
 
 
-```curl
-curl --location --request POST 'https://api.mercadopago.com/checkout/preferences' \
---header 'Content-Type: application/json' \
---header 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
---data-raw '{
-    "auto_return": "approved",
-    "back_urls": {
-        "failure": "https://www.mercadopago.com/home/failure",
-        "pending": "https://www.mercadopago.com/home/pending",
-        "success": "https://www.mercadopago.com/home/success"
-    },
-    "notification_url": "https://webhook.site/xyz",
-    "expires": false,
-    "external_reference": "order-123",
-    "date_of_expiration": "2025-03-12T12:58:41.425-04:00",
-    "items": [
-        {
-            "id": "1234",
-            "currency_id": "[FAKER][CURRENCY][ACRONYM]",
-            "title": "Producto",
-            "picture_url": "",
-            "description": "Descripción de producto",
-            "category_id": "home",
-            "quantity": 1,
-            "unit_price": 150,
-            "warranty": false,
-        }
-    ],
-    "payer": {
-        "phone": {
-            "area_code": "11",
-            "number": "[FAKER][PHONE_NUMBER][CELL_PHONE]"
-        },
-        "address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
-            "street_name": "[FAKER][ADDRESS][STREET_NAME]",
-            "street_number": 1000
-        },
-        "identification": {
-          "identification_type": "[FAKER][IDENTIFICATION][TYPE]",
-          "identification_number": "12345678"
-        },
-        "email": "john@yourdomain.com",
-        "first_name": "[FAKER][NAME][FIRST_NAME]",
-        "last_name": "[FAKER][NAME][LAST_NAME]",
-        "date_created": "",
-        "authentication_type": "Facebook",
-        "registration date": "2015-06-02T12:58:41.425-04:00",
-        "is_prime_user": false,
-        "is_first_purchase_online": false,
-        "last_purchase": "2020-01-02T12:58:41.425-04:00"
-    },
-    "payment_methods": {
-        "excluded_payment_methods": [
-            {
-                "id": ""
-            }
-        ],
-        "default_installments": null,
-        "default_payment_method_id": null,
-        "excluded_payment_types": [
-            {
-                "id": ""
-            }
-        ],
-        "installments": null
-    },
-    "shipments": {
-        "mode": "not_specified",
-        "receiver_address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
-            "street_name": "[FAKER][ADDRESS][STREET_NAME]",
-            "city_name": "[FAKER][ADDRESS][CITY]",
-            "state_name": "[FAKER][ADDRESS][STATE]",
-            "street_number": 1000
-        },
-        "express_shipment": false,
-        "local_pickup": false
-    }
-}'
-```
-
 ## Aplicaciones y plataformas online
 
 ### Campos a enviar
@@ -566,74 +332,6 @@ Agrega toda la información adicional que quieras.
 | `is_first_purchase_online` | Boolean | `True` si lo es, `False` si no lo es. |
 | `last_purchase` | Date | Fecha de la última compra en el sitio. |
 
-```curl
-curl --location --request POST 'https://api.mercadopago.com/checkout/preferences' \
---header 'Content-Type: application/json' \
---header 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
---data-raw '{
-    "auto_return": "approved",
-    "back_urls": {
-        "failure": "https://www.mercadopago.com/home/failure",
-        "pending": "https://www.mercadopago.com/home/pending",
-        "success": "https://www.mercadopago.com/home/success"
-    },
-    "notification_url": "https://webhook.site/xyz",
-    "expires": false,
-    "external_reference": "order-123",
-    "date_of_expiration": "2025-03-12T12:58:41.425-04:00",
-    "items": [
-        {
-            "id": "1234",
-            "currency_id": "[FAKER][CURRENCY][ACRONYM]",
-            "title": "Producto",
-            "picture_url": "",
-            "description": "Descripción de producto",
-            "category_id": "services",
-            "quantity": 1,
-            "unit_price": 150
-        }
-    ],
-    "payer": {
-        "phone": {
-            "area_code": "11",
-            "number": "[FAKER][PHONE_NUMBER][CELL_PHONE]"
-        },
-        "address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
-            "street_name": "[FAKER][ADDRESS][STREET_NAME]",
-            "street_number": 1000
-        },
-        "identification": {
-          "identification_type": "[FAKER][IDENTIFICATION][TYPE]",
-          "identification_number": "12345678"
-        },
-        "email": "john@yourdomain.com",
-        "name": "[FAKER][NAME][FIRST_NAME]",
-        "surname": "[FAKER][NAME][LAST_NAME]",
-        "date_created": "",
-        "authentication_type": "Facebook",
-        "registration date": "2015-06-02T12:58:41.425-04:00",
-        "is_prime_user": false,
-        "is_first_purchase_online": false,
-        "last_purchase": "2020-01-02T12:58:41.425-04:00"
-    },
-    "payment_methods": {
-        "excluded_payment_methods": [
-            {
-                "id": ""
-            }
-        ],
-        "default_installments": null,
-        "default_payment_method_id": null,
-        "excluded_payment_types": [
-            {
-                "id": ""
-            }
-        ],
-        "installments": null
-    }
-}'
-```
 
 ## Retail
 
@@ -685,86 +383,6 @@ Agrega toda la información adicional que quieras.
 | `street_number` | Integer | Número de calle |
 | `express_shipment` | Boolean | `True` si lo es, `False` si no lo es. |
 
-```curl
-curl --location --request POST 'https://api.mercadopago.com/checkout/preferences' \
---header 'Content-Type: application/json' \
---header 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
---data-raw '{
-    "auto_return": "approved",
-    "back_urls": {
-        "failure": "https://www.mercadopago.com/us/home/failure",
-        "pending": "https://www.mercadopago.com/us/home/pending",
-        "success": "https://www.mercadopago.com/us/home/success"
-    },
-    "notification_url": "https://webhook.site/xyz",
-    "expires": false,
-    "external_reference": "order-123",
-    "date_of_expiration": "2025-03-12T12:58:41.425-04:00",
-    "items": [
-        {
-            "id": "1234",
-            "currency_id": "[FAKER][CURRENCY][ACRONYM]",
-            "title": "Producto",
-            "picture_url": "",
-            "description": "Descripción de producto",
-            "category_id": "others",
-            "quantity": 1,
-            "unit_price": 150
-        }
-    ],
-    "payer": {
-        "phone": {
-            "area_code": "11",
-            "number": "[FAKER][PHONE_NUMBER][CELL_PHONE]"
-        },
-        "address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
-            "street_name": "[FAKER][ADDRESS][STREET_NAME]",
-            "street_number": 1000
-        },
-        "identification": {
-          "identification_type": "[FAKER][IDENTIFICATION][TYPE]",
-          "identification_number": "12345678"
-        },
-        "email": "john@yourdomain.com",
-        "name": "[FAKER][NAME][FIRST_NAME]",
-        "surname": "[FAKER][NAME][LAST_NAME]",
-        "date_created": "",
-        "authentication_type": "Facebook",
-        "registration date": "2015-06-02T12:58:41.425-04:00",
-        "is_prime_user": false,
-        "is_first_purchase_online": false,
-        "last_purchase": "2020-01-02T12:58:41.425-04:00"
-    },
-    "payment_methods": {
-        "excluded_payment_methods": [
-            {
-                "id": ""
-            }
-        ],
-        "default_installments": null,
-        "default_payment_method_id": null,
-        "excluded_payment_types": [
-            {
-                "id": ""
-            }
-        ],
-        "installments": null
-    },
-    "shipments": {
-        "mode": "not_specified",
-        "receiver_address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
-            "street_name": "[FAKER][ADDRESS][STREET_NAME]",
-            "city_name": "[FAKER][ADDRESS][CITY]",
-            "state_name": "[FAKER][ADDRESS][STATE]",
-            "street_number": 1000
-        },
-        "express_shipment": false,
-        "local_pickup": false
-    }
-}'
-```
 
 ## Gobierno y servicios públicos
 
@@ -814,86 +432,6 @@ Agrega toda la información adicional que quieras.
 | `state_name` | String | Provincia |
 | `city_name` | String | Ciudad |
 | `street_number` | Integer | Número de calle |
-
-```curl
-curl --location --request POST 'https://api.mercadopago.com/checkout/preferences' \
---header 'Content-Type: application/json' \
---header 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
---data-raw '{
-    "auto_return": "approved",
-    "back_urls": {
-        "failure": "https://www.mercadopago.com/home/failure",
-        "pending": "https://www.mercadopago.com/home/pending",
-        "success": "https://www.mercadopago.com/home/success"
-    },
-    "notification_url": "https://webhook.site/xyz",
-    "expires": false,
-    "external_reference": "order-123",
-    "date_of_expiration": "2025-03-12T12:58:41.425-04:00",
-    "items": [
-        {
-            "id": "1234",
-            "currency_id": "[FAKER][CURRENCY][ACRONYM]",
-            "title": "Servicio",
-            "picture_url": "",
-            "description": "Descripción de servicio",
-            "category_id": "services",
-            "quantity": 1,
-            "unit_price": 150,
-            "event_date": "2020-06-02T12:58:41.425-04:00"
-        }
-    ],
-    "payer": {
-        "phone": {
-            "area_code": "11",
-            "number": "[FAKER][PHONE_NUMBER][CELL_PHONE]"
-        },
-        "address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
-            "street_name": "[FAKER][ADDRESS][STREET_NAME]",
-            "street_number": 1000
-        },
-        "identification": {
-          "identification_type": "[FAKER][IDENTIFICATION][TYPE]",
-          "identification_number": "12345678"
-        },
-        "email": "john@yourdomain.com",
-        "name": "[FAKER][NAME][FIRST_NAME]",
-        "surname": "[FAKER][NAME][LAST_NAME]",
-        "date_created": "",
-        "authentication_type": "Facebook",
-        "registration date": "2015-06-02T12:58:41.425-04:00",
-        "is_prime_user": false,
-        "is_first_purchase_online": false,
-        "last_purchase": "2020-01-02T12:58:41.425-04:00"
-    },
-    "payment_methods": {
-        "excluded_payment_methods": [
-            {
-                "id": ""
-            }
-        ],
-        "default_installments": null,
-        "default_payment_method_id": null,
-        "excluded_payment_types": [
-            {
-                "id": ""
-            }
-        ],
-        "installments": null
-    },
-    "shipments": {
-        "mode": "not_specified",
-        "receiver_address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
-            "street_name": "[FAKER][ADDRESS][STREET_NAME]",
-            "city_name": "[FAKER][ADDRESS][CITY]",
-            "state_name": "[FAKER][ADDRESS][STATE]",
-            "street_number": 1000
-        }
-    }
-}'
-```
 
 ## Turismo
 
@@ -947,84 +485,95 @@ Agrega toda la información adicional que quieras.
 
 
 ```curl
-curl --location --request POST 'https://api.mercadopago.com/checkout/preferences' \
+curl --location 'https://api.mercadopago.com/v1/payments' \
 --header 'Content-Type: application/json' \
---header 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
+--header 'Authorization: Bearer ACCESS_TOKEN' \
+--header 'Cookie: JSESSIONID=node01vge5if1qe3pv1w1y0c6ix92a123941.node0' \
 --data-raw '{
-    "auto_return": "approved",
-    "back_urls": {
-        "failure": "https://www.mercadopago.com/home/failure",
-        "pending": "https://www.mercadopago.com/home/pending",
-        "success": "https://www.mercadopago.com/home/success"
+    "transaction_amount": 150.00,
+    "installments": 1,
+    "statement_descriptor": "LOJA 123",
+    "capture": true,
+    "binary_mode": false,
+    "sponsor_id": null,
+    "application_fee": null,
+    "payment_method_id": "visa",
+    "token": "<CARD_TOKEN>",
+    "external_reference": "Pedido 01",
+    "notification_url": "https://webhook.site/3e2ba8af-41c8-41c4-9a47-bf65877f5e7c",
+    "metadata": {
+        "order_number": "order_01"
     },
-    "notification_url": "https://webhook.site/xyz",
-    "expires": false,
-    "external_reference": "order-123",
-    "date_of_expiration": "2025-03-12T12:58:41.425-04:00",
-    "items": [
-        {
-            "id": "1234",
-            "currency_id": "[FAKER][CURRENCY][ACRONYM]",
-            "title": "Servicio",
-            "description": "Descripción de servicio",
-            "category_id": "Travels",
-            "category_descriptor":{
-             "passenger": {
-                 "first_name": "[FAKER][NAME][FIRST_NAME]",
-                  "last_name": "[FAKER][NAME][LAST_NAME]",
-                   "type": "[FAKER][IDENTIFICATION][TYPE]",
-                   "number": 12345678
-              },
-              "route": {
-            	 "departure": "[FAKER][ADDRESS][CITY]",
-            	 "destination": "Londres",
-            	 "departure_date_time": "2022-03-12T12:58:41.425-04:00",
-            	 "arrival_date_time": "2022-03-14T12:58:41.425-04:00",
-            	 "company": "Compañía"
-            }
-},
-            "quantity": 1,
-            "unit_price": 150
-        }
-    ],
+    "description": "PEDIDO NOVO",
     "payer": {
-        "phone": {
-            "area_code": "11",
-            "number": "[FAKER][PHONE_NUMBER][CELL_PHONE]"
+        "first_name": "Nome",
+        "last_name": "Sobrenome",
+        "email": "test_user_123456789@testuser.com",
+        "identification": {
+            "type": "CPF",
+            "number": "12345678909"
         },
         "address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
-            "street_name": "[FAKER][ADDRESS][STREET_NAME]",
-            "street_number": 1000
-        },
-        "identification": {
-          "identification_type": "[FAKER][IDENTIFICATION][TYPE]",
-          "identification_number": "12345678"
-        },
-        "email": "john@yourdomain.com",
-        "name": "[FAKER][NAME][FIRST_NAME]",
-        "surname": "[FAKER][NAME][LAST_NAME]",
-        "date_created": "",
-        "authentication_type": "Facebook",
-        "registration date": "2015-06-02T12:58:41.425-04:00",
-        "is_prime_user": false,
-        "is_first_purchase_online": false,
-        "last_purchase": "2020-01-02T12:58:41.425-04:00"
+            "zip_code": "06233-200",
+            "street_name": "Av. das Nações Unidas",
+            "street_number": "3003",
+            "neighborhood": "Bonfim",
+            "city": "Osasco",
+            "federal_unit": "SP"
+        }
     },
-    "payment_methods": {
-        "excluded_payment_methods": [
-            {
-                "id": ""
+    "additional_info": {
+        "items": [ 
+        {
+            "id": "1234",
+            "title": "Serviço",
+            "description": "Descrição de serviço",
+            "category_id": "travels",
+            "category_descriptor":{
+                "passenger": {
+                    "first_name": "Nome",
+                    "last_name": "Sobrenome"
+                },
+                "route": {
+                    "departure": "Osasco",
+                    "destination": "Sao Paulo",
+                    "departure_date_time": "2022-03-12T12:58:41.425-04:00",
+                    "arrival_date_time": "2022-03-14T12:58:41.425-04:00",
+                    "company": "Companhia"
+                }
+            },
+            "quantity": 1,
+            "unit_price": 150
             }
         ],
-        "default_installments": null,
-        "default_payment_method_id": null,
-        "excluded_payment_types": [
-            {
-                "id": ""
+        "payer": {
+            "first_name": "Nome",
+            "last_name": "Sobrenome",
+            "is_prime_user": "1",
+            "is_first_purchase_online": "1",
+            "last_purchase": "2019-10-25T19:30:00.000-03:00",
+            "phone": {
+                "area_code": "11",
+                "number": "987654321"
+            },
+            "address": {
+                "zip_code": "06233-200",
+                "street_name": "Av. das Nações Unidas",
+                "street_number": "3003"
+            },
+            "registration_date": "2020-08-06T09:25:04.000-03:00"
+        },
+        "shipments": {
+            "express_shipment": "0",
+            "pick_up_on_seller": "1",
+            "receiver_address": {
+                "zip_code": "06233-200",
+                "street_name": "Av. das Nações Unidas",
+                "street_number": "3003",
+                "floor": "",
+                "apartment": ""
             }
-        ],
-        "installments": null
+        }
     }
 }'
 ```
@@ -1073,82 +622,6 @@ Agrega toda la información adicional que quieras.
 | `is_first_purchase_online` | Boolean | `True` si lo es, `False` si no lo es. |
 | `last_purchase` | Date | Fecha de la última compra en el sitio. |
 
-```curl
-curl --location --request POST 'https://api.mercadopago.com/checkout/preferences' \
---header 'Content-Type: application/json' \
---header 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
---data-raw '{
-    "auto_return": "approved",
-    "back_urls": {
-        "failure": "https://www.mercadopago.com/home/failure",
-        "pending": "https://www.mercadopago.com/home/pending",
-        "success": "https://www.mercadopago.com/home/success"
-    },
-    "notification_url": "https://webhook.site/xyz",
-    "expires": false,
-    "external_reference": "order-123",
-    "date_of_expiration": "2025-03-12T12:58:41.425-04:00",
-    "items": [
-        {
-            "id": "1234",
-            "currency_id": "[FAKER][CURRENCY][ACRONYM]",
-            "title": "Servicio",
-            "description": "Descripción de servicio",
-            "category_id": "Travels",
-            "category_descriptor": {
-                "passenger": {
-                    "first_name": "[FAKER][NAME][FIRST_NAME]",
-                    "last_name": "[FAKER][NAME][LAST_NAME]",
-                    "type": "[FAKER][IDENTIFICATION][TYPE]",
-                    "number": 12345678
-                }
-            },
-            "quantity": 1,
-            "event_date": "2020-06-02T12:58:41.425-04:00",
-            "unit_price": 150
-        }
-    ],
-    "payer": {
-        "phone": {
-            "area_code": "11",
-            "number": "[FAKER][PHONE_NUMBER][CELL_PHONE]"
-        },
-        "address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
-            "street_name": "[FAKER][ADDRESS][STREET_NAME]",
-            "street_number": 1000
-        },
-        "identification": {
-          "identification_type": "[FAKER][IDENTIFICATION][TYPE]",
-          "identification_number": "12345678"
-        },
-        "email": "john@yourdomain.com",
-        "name": "[FAKER][NAME][FIRST_NAME]",
-        "surname": "[FAKER][NAME][LAST_NAME]",
-        "date_created": "",
-        "authentication_type": "Facebook",
-        "registration date": "2015-06-02T12:58:41.425-04:00",
-        "is_prime_user": false,
-        "is_first_purchase_online": false,
-        "last_purchase": "2020-01-02T12:58:41.425-04:00"
-    },
-    "payment_methods": {
-        "excluded_payment_methods": [
-            {
-                "id": ""
-            }
-        ],
-        "default_installments": null,
-        "default_payment_method_id": null,
-        "excluded_payment_types": [
-            {
-                "id": ""
-            }
-        ],
-        "installments": null
-    }
-}'
-```
 
 ## Utilities
 
@@ -1187,73 +660,6 @@ Agrega toda la información adicional que quieras.
 | `is_first_purchase_online` | Boolean | `True` si lo es, `False` si no lo es. |
 | `last_purchase` | Date | Fecha de la última compra en el sitio. |
 
-```curl
-curl --location --request POST 'https://api.mercadopago.com/checkout/preferences' \
---header 'Content-Type: application/json' \
---header 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
---data-raw '{
-    "auto_return": "approved",
-    "back_urls": {
-        "failure": "https://www.mercadopago.com/home/failure",
-        "pending": "https://www.mercadopago.com/home/pending",
-        "success": "https://www.mercadopago.com/home/success"
-    },
-    "notification_url": "https://webhook.site/xyz",
-    "expires": false,
-    "external_reference": "order-123",
-    "date_of_expiration": "2025-03-12T12:58:41.425-04:00",
-    "items": [
-        {
-            "id": "1234",
-            "currency_id": "[FAKER][CURRENCY][ACRONYM]",
-            "title": "Producto",
-            "picture_url": "",
-            "category_id": "others",
-            "quantity": 1,
-            "unit_price": 150
-        }
-    ],
-    "payer": {
-        "phone": {
-            "area_code": "11",
-            "number": "[FAKER][PHONE_NUMBER][CELL_PHONE]"
-        },
-        "address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
-            "street_name": "[FAKER][ADDRESS][STREET_NAME]",
-            "street_number": 1000
-        },
-        "identification": {
-          "identification_type": "[FAKER][IDENTIFICATION][TYPE]",
-          "identification_number": "12345678"
-        },
-        "email": "john@yourdomain.com",
-        "name": "[FAKER][NAME][FIRST_NAME]",
-        "surname": "[FAKER][NAME][LAST_NAME]",
-        "date_created": "",
-        "authentication_type": "Facebook",
-        "registration date": "2015-06-02T12:58:41.425-04:00",
-        "is_prime_user": false,
-        "is_first_purchase_online": false,
-        "last_purchase": "2020-01-02T12:58:41.425-04:00"
-    },
-    "payment_methods": {
-        "excluded_payment_methods": [
-            {
-                "id": ""
-            }
-        ],
-        "default_installments": null,
-        "default_payment_method_id": null,
-        "excluded_payment_types": [
-            {
-                "id": ""
-            }
-        ],
-        "installments": null
-    }
-}'
-```
 
 ## Venta directa
 
@@ -1304,89 +710,8 @@ Agrega toda la información adicional que quieras.
 | `street_number` | Integer | Número de calle |
 | `floor` | String | Piso |
 | `apartment` | String | Apartamento |
-| `local_pickup` | Boolean | `True` si se retira en sucursal, `False` si no lo hace. |
+| `pick_up_on_seller` | Boolean | `1` si se retira en sucursal, `0` si no lo hace. |
 
-```curl
-curl --location --request POST 'https://api.mercadopago.com/checkout/preferences' \
---header 'Content-Type: application/json' \
---header 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
---data-raw '{
-    "auto_return": "approved",
-    "back_urls": {
-        "failure": "https://www.mercadopago.com/home/failure",
-        "pending": "https://www.mercadopago.com/home/pending",
-        "success": "https://www.mercadopago.com/home/success"
-    },
-    "notification_url": "https://webhook.site/xyz",
-    "expires": false,
-    "external_reference": "order-123",
-    "date_of_expiration": "2025-03-12T12:58:41.425-04:00",
-    "items": [
-        {
-            "id": "1234",
-            "currency_id": "[FAKER][CURRENCY][ACRONYM]",
-            "title": "Producto",
-            "picture_url": "",
-            "description": "Descripción de producto",
-            "category_id": "others",
-            "quantity": 1,
-            "unit_price": 150
-        }
-    ],
-    "payer": {
-        "phone": {
-            "area_code": "11",
-            "number": "[FAKER][PHONE_NUMBER][CELL_PHONE]"
-        },
-        "address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
-            "street_name": "[FAKER][ADDRESS][STREET_NAME]",
-            "street_number": 1000
-        },
-        "identification": {
-          "identification_type": "[FAKER][IDENTIFICATION][TYPE]",
-          "identification_number": "12345678"
-        },
-        "email": "john@yourdomain.com",
-        "name": "[FAKER][NAME][FIRST_NAME]",
-        "surname": "[FAKER][NAME][LAST_NAME]",
-        "date_created": "",
-        "authentication_type": "Facebook",
-        "registration date": "2015-06-02T12:58:41.425-04:00",
-        "is_prime_user": false,
-        "is_first_purchase_online": false,
-        "last_purchase": "2020-01-02T12:58:41.425-04:00"
-    },
-    "payment_methods": {
-        "excluded_payment_methods": [
-            {
-                "id": ""
-            }
-        ],
-        "default_installments": null,
-        "default_payment_method_id": null,
-        "excluded_payment_types": [
-            {
-                "id": ""
-            }
-        ],
-        "installments": null
-    },
-    "shipments": {
-        "mode": "not_specified",
-        "local_pickup": false,
-        "receiver_address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
-            "street_name": "[FAKER][ADDRESS][STREET_NAME]",
-            "city_name": "[FAKER][ADDRESS][CITY]",
-            "state_name": "[FAKER][ADDRESS][STATE]",
-            "street_number": 1000
-            "floor": "12",
-            "apartment": "B"
-        }
-    }
-}'
-```
 
 ## Automóviles y náuticas
 
@@ -1438,86 +763,6 @@ Agrega toda la información adicional que quieras.
 | `apartment` | String | Apartamento |
 | `local_pickup` | Boolean | `True` si se retira en sucursal, `False` si no lo hace. |
 
-```curl
-curl --location --request POST 'https://api.mercadopago.com/checkout/preferences' \
---header 'Content-Type: application/json' \
---header 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
---data-raw '{
-    "auto_return": "approved",
-    "back_urls": {
-        "failure": "https://www.mercadopago.com/home/failure",
-        "pending": "https://www.mercadopago.com/home/pending",
-        "success": "https://www.mercadopago.com/home/success"
-    },
-    "notification_url": "https://webhook.site/xyz",
-    "expires": false,
-    "external_reference": "order-123",
-    "date_of_expiration": "2025-03-12T12:58:41.425-04:00",
-    "items": [
-        {
-            "id": "1234",
-            "currency_id": "[FAKER][CURRENCY][ACRONYM]",
-            "title": "Producto",
-            "picture_url": "",
-            "description": "Descripción de producto",
-            "category_id": "others",
-            "quantity": 1,
-            "unit_price": 150
-        }
-    ],
-    "payer": {
-        "phone": {
-            "area_code": "11",
-            "number": "[FAKER][PHONE_NUMBER][CELL_PHONE]"
-        },
-        "address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
-            "street_name": "[FAKER][ADDRESS][STREET_NAME]",
-            "street_number": 1000
-        },
-        "identification": {
-          "identification_type": "[FAKER][IDENTIFICATION][TYPE]",
-          "identification_number": "12345678"
-        },
-        "email": "john@yourdomain.com",
-        "name": "[FAKER][NAME][FIRST_NAME]",
-        "surname": "[FAKER][NAME][LAST_NAME]",
-        "date_created": "",
-        "authentication_type": "Facebook",
-        "registration date": "2015-06-02T12:58:41.425-04:00",
-        "is_first_purchase_online": false,
-        "last_purchase": "2020-01-02T12:58:41.425-04:00"
-    },
-    "payment_methods": {
-        "excluded_payment_methods": [
-            {
-                "id": ""
-            }
-        ],
-        "default_installments": null,
-        "default_payment_method_id": null,
-        "excluded_payment_types": [
-            {
-                "id": ""
-            }
-        ],
-        "installments": null
-    },
-    "shipments": {
-        "mode": "not_specified",
-        "local_pickup": false,
-        "receiver_address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
-            "street_name": "[FAKER][ADDRESS][STREET_NAME]",
-            "city_name": "[FAKER][ADDRESS][CITY]",
-            "state_name": "[FAKER][ADDRESS][STATE]",
-            "street_number": 1000
-            "floor": "12",
-            "apartment": "B"
-        }
-    }
-}'
-```
 
 ## Transporte urbano
 
@@ -1557,71 +802,3 @@ Agrega toda la información adicional que quieras.
 | `is_first_purchase_online` | Boolean | `True` si lo es, `False` si no lo es. |
 | `last_purchase` | Date | Fecha de la última compra en el sitio. |
 
-```curl
-curl --location --request POST 'https://api.mercadopago.com/checkout/preferences' \
---header 'Content-Type: application/json' \
---header 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
---data-raw '{
-    "auto_return": "approved",
-    "back_urls": {
-        "failure": "https://www.mercadopago.com/home/failure",
-        "pending": "https://www.mercadopago.com/home/pending",
-        "success": "https://www.mercadopago.com/home/success"
-    },
-    "notification_url": "https://webhook.site/xyz",
-    "expires": false,
-    "external_reference": "order-123",
-    "date_of_expiration": "2025-03-12T12:58:41.425-04:00",
-    "items": [
-        {
-            "id": "1234",
-            "currency_id": "[FAKER][CURRENCY][ACRONYM]",
-            "title": "Producto",
-            "picture_url": "",
-            "description": "Descripción de producto",
-            "category_id": "others",
-            "quantity": 1,
-            "unit_price": 150
-        }
-    ],
-    "payer": {
-        "phone": {
-            "area_code": "11",
-            "number": "[FAKER][PHONE_NUMBER][CELL_PHONE]"
-        },
-        "address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
-            "street_name": "[FAKER][ADDRESS][STREET_NAME]",
-            "street_number": 1000
-        },
-        "identification": {
-          "identification_type": "[FAKER][IDENTIFICATION][TYPE]",
-          "identification_number": "12345678"
-        },
-        "email": "john@yourdomain.com",
-        "name": "[FAKER][NAME][FIRST_NAME]",
-        "surname": "[FAKER][NAME][LAST_NAME]",
-        "date_created": "",
-        "authentication_type": "Facebook",
-        "registration date": "2015-06-02T12:58:41.425-04:00",
-        "is_first_purchase_online": false,
-        "is_prime_user": false,
-        "last_purchase": "2020-01-02T12:58:41.425-04:00"
-    },
-    "payment_methods": {
-        "excluded_payment_methods": [
-            {
-                "id": ""
-            }
-        ],
-        "default_installments": null,
-        "default_payment_method_id": null,
-        "excluded_payment_types": [
-            {
-                "id": ""
-            }
-        ],
-        "installments": null
-    }
-}'
-```
