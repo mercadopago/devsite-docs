@@ -5,10 +5,8 @@ Dependiendo del ramo de actividades o industria de tu tienda, existen una serie 
 > WARNING 
 > 
 > Atención
->
-> Uso de ejemplos
 > 
-> Esta información solo funciona para las integraciones con Payment API. Para ver información sobre integraciones estándar, haz clic [aquí](/developers/es/reference/payments/_payments/post).
+> Esta información solo funciona para las integraciones con Payment API. Para ver información sobre integraciones estándar, haz clic [aquí.](/developers/es/reference/payments/_payments/post)
 
 ## Apparel
 
@@ -452,8 +450,6 @@ Agrega toda la información adicional que quieras.
 | `passenger` | Object | Información adicional del pasajero. |
 | `first_name`| String | Nombre |
 | `last_name` | String | Apellido |
-| `identification_type`| String | Tipo de identificación |
-| `identification_number` | String | Número de identificación |
 | `route` | Object | Información de la ruta |
 | `departure` | String | Salida |
 | `destination` | String | Llegada |

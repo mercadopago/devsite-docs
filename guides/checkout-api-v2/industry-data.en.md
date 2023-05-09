@@ -5,10 +5,8 @@ Depending on the branch of activities or industry of your store, there is a seri
 > WARNING 
 > 
 > Attention
->
-> Use of examples
 > 
-> This information applies only for Payment API integrations. To see information about the standard integration with payments api, click [here](/developers/en/reference/payments/_payments/post).
+> This information applies only for Payment API integrations. To see information about the standard integration with payments api, click [here.](/developers/en/reference/payments/_payments/post)
 
 ## Apparel
 
@@ -455,8 +453,6 @@ Add all the additional information you want.
 | `passenger` | Object | Additional passenger information. |
 | `first_name`| String | Name |
 | `last_name` | String | Surname |
-| `identification_type`| String | Identification type |
-| `identification_number` | String | Identification number |
 | `route` | Object | Route information |
 | `departure` | String | Departure |
 | `destination` | String | Arrival |

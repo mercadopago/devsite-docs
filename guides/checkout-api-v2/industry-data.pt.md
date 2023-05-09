@@ -6,9 +6,7 @@ Dependendo do ramo de atividades ou setor de sua loja, existe uma série de dado
 > 
 > Atenção
 >
-> Uso de exemplos
->
-> Esta informação só funciona para integrações com Payment API. Para informações sobre integrações padrão, clique [aqui](/developers/pt/reference/payments/_payments/post).
+> Esta informação só funciona para integrações com Payment API. Para informações sobre integrações padrão, clique [aqui.](/developers/pt/reference/payments/_payments/post)
 
 ## Apparel
 
@@ -454,8 +452,6 @@ Adicione todas as informações adicionais que você deseja.
 | `passenger` | Object |Informações adicionais sobre passageiros. |
 | `first_name`| String | Nome |
 | `last_name` | String | Sobrenome |
-| `identification_type`| String | Tipo de identificação |
-| `identification_number` | String | Número de identificação |
 | `route` | Object |Informações da rota |
 | `departure` | String | Saída |
 | `destination` | String | Chegada |
