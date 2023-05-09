@@ -5,7 +5,7 @@ Genera tus reportes de ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, m
 
 Sigue estos pasos para generar tus reportes:
 
-1. Desde tu cuenta de Mercado Pago, ve a [tus Informes](https://www.mercadopago.com.ar/balance/reports) y elige la opción de *Reportes*.
+1. Desde tu cuenta de Mercado Pago, ve a ----[mla]---- [Informes y facturación](https://www.mercadopago.com.ar/balance/reports) ------------ ----[mlm]---- [Informes y facturación](https://www.mercadopago.com.ar/balance/reports) ------------ ----[mla,mla]----  y elige la opción de *Reportes de tus cobros y estados de cuenta.* ------------ ----[mlb, mlc, mco, mlu, mpe]---- [tus Informes](https://www.mercadopago.com.ar/balance/reports) y elige la opción de Reportes. ------------ 
 1. Ve a [reporte de ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberaciones ------------](https://www.mercadopago.com.ar/balance/reports/release) y haz click en *Crear Reporte*.
 1. Busca las operaciones por período de tiempo y selecciona las que quieras conciliar.
 
