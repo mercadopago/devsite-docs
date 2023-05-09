@@ -288,7 +288,7 @@ You can check all the available attributes when creating a payment by using the 
  * Product data,
  * Shipping data.
 
-There are also some **extra fields** that can be sent depending on the **branch of activities or industry of your store**. You can find details of every branch and the buyer and shipping data that we recommend to include for each of them [here]().
+There are also some **extra fields** that can be sent depending on the **branch of activities or industry of your store**. You can find details of every branch and the buyer and shipping data that we recommend to include for each of them [here](/developers/en/docs/checkout-api/additional-content/industry-data).
 
 ### Improve the User Experience
 
