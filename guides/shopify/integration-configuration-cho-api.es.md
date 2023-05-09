@@ -1,5 +1,13 @@
 # Configurar el Checkout Transparente
 
+Con el [Checkout Transparente](/developers/es/docs/checkout-api/landing), todo el proceso de pago se realizará dentro del entorno de la tienda en línea, sin necesidad de redirigir a una página externa. Además de permitir un mayor control en el proceso de personalización e integración, el checkout ofrece una estructura completa para el procesamiento de pagos con los principales medios disponibles en el mercado.
+
+> WARNING
+>
+> Atención
+>
+> Para integrar Checkout Transparente deberás contar con Checkout Pro en tu tienda de Shopify. Para saber cómo integrarlo, ve a la [documentación.](/developers/es/docs/shopify/integration-configuration/checkout-pro)
+
 Para instalar Checkout Transparente en una tienda Shopify, sigue los pasos a continuación:
 
 1. Ingresa a tu tienda [Shopify](https://accounts.shopify.com/store-login).
@@ -17,6 +25,6 @@ Para instalar Checkout Transparente en una tienda Shopify, sigue los pasos a con
 
 > NOTE
 >
-> Nota
+> Importante
 >
-> Una vez instalado, el Checkout Transparente puede demorar hasta 10 minutos en aparecer vinculado en la tienda de Shopify debido al caché. Si necesitas asistencia instalando Checkout Transparente, puedes contactarte con [Soporte](https://www.mercadopago.com/developers/es/support).
+> Una vez instalado, el Checkout Transparente puede demorar hasta 10 minutos en aparecer vinculado en la tienda de Shopify debido al caché. Si necesitas asistencia instalando Checkout Transparente, puedes contactarte con [Soporte.](https://www.mercadopago.com/developers/es/support)
