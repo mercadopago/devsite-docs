@@ -24,7 +24,7 @@ bullet_section_with_media:
 
 >>>> Instalación <<<<
 
-Para instalar la SDK de frontend, debes incluir MercadoPago.js en el HTML de tu aplicación, tal como se muestra en el código a continuación.
+Para instalar el SDK de frontend, incluya MercadoPago.js en el HTML de su aplicación como se muestra en el código a continuación.
 
 [[[
 ```html
@@ -38,7 +38,7 @@ npm install @mercadopago/sdk-js
 ```
 ]]]
 
-Luego, debes agregar la Public Key de la cuenta que estás integrando para que esta pueda ser identificada al conectarse con Mercado Pago. 
+Luego, agregue la _Public key_ de la cuenta que se está integrando para que pueda ser identificada al conectarse con Mercado Pago. Obtenga más información sobre la _Public key_ en [Credenciales](/developers/es/docs/checkout-api/additional-content/credentials).
 
 [[[
 ```html

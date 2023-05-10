@@ -18,9 +18,7 @@ A seguir, um exemplo de como é possível utilizá-los:
 import React from 'react';
 import { Payment, initMercadoPago } from '@mercadopago/sdk-react'
 
-
 initMercadoPago('<YOUR_PUBLIC_KEY>');
-
 
 const App = () => {
  const initialization = {
@@ -37,7 +35,6 @@ const App = () => {
    },
  };
 
-
  return (
    <Payment
      initialization={initialization}
@@ -48,7 +45,6 @@ const App = () => {
    />
  );
 };
-
 
 export default App;
 

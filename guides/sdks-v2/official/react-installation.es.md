@@ -31,4 +31,3 @@ Al finalizar la instalación del SDK, puedes utilizar los siguientes módulos pa
 
 - [Checkout Bricks](/developers/es/docs/sdks-library/client-side/sdk-js-react/checkout-bricks-installation)
 - [Métodos Core](/developers/es/docs/sdks-library/client-side/sdk-js-react/core-methods-installation)
-- [Secure fields](/developers/es/docs/sdks-library/sdk-js-react/react/secure-fields-installation)

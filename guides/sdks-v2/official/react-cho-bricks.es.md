@@ -19,9 +19,7 @@ A continuación, se muestra un ejemplo de cómo se pueden utilizar.
 import React from 'react';
 import { Payment, initMercadoPago } from '@mercadopago/sdk-react'
 
-
 initMercadoPago('<YOUR_PUBLIC_KEY>');
-
 
 const App = () => {
  const initialization = {
