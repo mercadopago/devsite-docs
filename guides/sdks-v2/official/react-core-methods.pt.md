@@ -4,7 +4,7 @@ Métodos Core são a forma de integração mais transparente com Mercado Pago, o
 
 A captura de informações do cartão e a criação do token de pagamento são feitas a partir dos _Secure Fields_. Eles consistem em campos seguros para inserir informações do cartão que possibilitam a integração com cartões de crédito e débito sem a necessidade de tratar dados sensíveis, além de facilitar a obtenção do certificado PCI Compliance.
 
-Na tabela abaixo listamos os principais métodos disponibilizados através da SDK-JS.
+Na tabela abaixo listamos os principais campos disponibilizados através da SDK-JS.
 
 | Campo | Descrição |
 |---|---|
