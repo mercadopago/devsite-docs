@@ -353,7 +353,6 @@ const onReady = async () => {
 ]]]
 
 ------------
-
 ----[mlc]----
 
 [[[
@@ -474,7 +473,7 @@ const onReady = async () => {
 > 
 > Attention
 >
-> If it is necessary to dismantle and reassemble a Brick, it is recommended to destroy the current instance and generate a new one. To do so, use the *unmount* method available in Brick's *controller*, in this case: `window.paymentBrickController.unmount()`.
+> Whenever the user leaves the screen where some Brick is displayed, it is necessary to destroy the current instance with the command `window.paymentBrickController.unmount()`. When entering again, a new instance must be generated.
 
 To use a payment method (`paymentMethods`) of the "mercadoPago" type, a preference must be sent during Brick initialization, replacing the value `<PREFERENCE_ID>` by the ID of the preference created. Instructions for creating the preference are in the [Enable payment with Mercado Pago](/developers/en/docs/checkout-bricks/payment-brick/default-rendering#bookmark_enable_payment_with_mercado_pago) section.
 

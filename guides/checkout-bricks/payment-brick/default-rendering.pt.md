@@ -356,7 +356,6 @@ const onReady = async () => {
 ]]]
 
 ------------
-
 ----[mlc]----
 
 [[[
@@ -477,7 +476,7 @@ const onReady = async () => {
 > 
 > Atenção
 >
-> Caso se faça necessário desmontar e remontar algum Brick, é recomendado destruir a instância atual e gerar uma nova. Para isso, utilize o método *unmount* disponível no *controller* do Brick, sendo neste caso: `window.paymentBrickController.unmount()`.
+> Sempre que o usuário sair da tela onde algum Brick é exibido, é necessário destruir a instância atual com o comando `window.paymentBrickController.unmount()`. Ao entrar novamente, uma nova instância deve ser gerada.
 
 Para utilizar o método de pagamento (`paymentMethods`) do tipo "mercadoPago" é preciso enviar uma preferência durante a inicialização do Brick, substituindo o valor `<PREFERENCE_ID>` pelo ID da preferência criada. As instruções para criação da preferência estão na seção [Habilitar pagamento com Mercado Pago](/developers/pt/docs/checkout-bricks/payment-brick/default-rendering#bookmark_habilitar_pagamento_com_mercado_pago).
 
