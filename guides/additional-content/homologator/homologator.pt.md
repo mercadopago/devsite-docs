@@ -34,7 +34,7 @@ Você pode ver esses atributos avaliados e a importância de cada um abaixo:
 >
 > Atenção
 >
-> Por enquanto, a ferramenta para medir a qualidade da integração só está disponível para integrações com o [Checkout Pro,](/developers/pt/docs/checkout-pro/landing) [Checkout Transparente,](/developers/pt/docs/checkout-api/landing) [Checkout Bricks](/developers/pt/docs/checkout-bricks/landing) e [Mercado Pago Point.](/developers/pt/docs/mp-point/landing)
+> Por enquanto, a ferramenta para medir a qualidade da integração só está disponível para integrações com o [Checkout Pro,](/developers/pt/docs/checkout-pro/landing) [Checkout Transparente](/developers/pt/docs/checkout-api/landing), [Checkout Bricks](/developers/pt/docs/checkout-bricks/landing) e [Mercado Pago Point.](/developers/pt/docs/mp-point/landing)
 
 
 ------------
