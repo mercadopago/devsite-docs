@@ -265,23 +265,6 @@ paths:
                                 eng: Delivery address apartment number.
                                 spa: Número de departamento de la dirección de entrega.
                                 por: Número do apartamento do endereço de entrega.
-                    barcode:
-                      type: object
-                      description: Barcode information.
-                      x-description-i18n:
-                        eng: Barcode information.
-                        spa: Información de código de barra
-                        por: Informação de código de barra
-                      properties:
-                        type:
-                          $ref: '#/components/schemas/barcode_type'
-                        content:
-                          type: string
-                          description: Barcode generated.
-                          x-description-i18n:
-                            eng: Barcode generated.
-                            spa: Código de barras generado
-                            por: Código de barras gerado
                         width:
                           type: number
                           description: Width of barcode.
