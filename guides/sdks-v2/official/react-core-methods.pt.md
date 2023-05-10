@@ -14,7 +14,7 @@ Na tabela abaixo listamos os principais métodos disponibilizados através da SD
 | ExpirationMonth | Mês de expiração do cartão |
 | ExpirationYear | Ano de expiração do cartão (pode ser AA ou AAAA) |
 
-A seguir, você encontra os exemplos de como utilizá-los:
+A seguir, são apresentados exemplos de como utilizar esses métodos:
 
 [[[
 ```react-jsx
@@ -63,7 +63,7 @@ Além dos campos descritos acima, a SDK de React possui métodos auxiliares para
 | getInstallments | Retorna todas as parcelas disponíveis. |
 | createCardToken | Retorna o token do cartão. |
 
-A seguir, são apresentados exemplos de como esses métodos podem ser utilizados:
+Abaixo, são apresentados exemplos de como esses métodos podem ser utilizados:
 
 [[[
 ```react-jsx
