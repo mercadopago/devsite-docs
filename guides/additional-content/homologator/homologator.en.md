@@ -26,7 +26,7 @@ You can see the assessed attributes and the importance of each of them below.
 >
 > Attention
 >
-> For now, the integration quality measuring tool is only available for integrations with [Checkout Pro,](/developers/en/docs/checkout-pro/landing) [Checkout API](/developers/en/docs/checkout-api/landing), [Checkout Bricks](/developers/en/docs/checkout-bricks/landing) and [Mercado Pago Point](/developers/es/docs/mp-point/landing).
+> For now, the integration quality measuring tool is only available for integrations with [Checkout Pro,](/developers/en/docs/checkout-pro/landing) [Checkout API](/developers/en/docs/checkout-api/landing), [Checkout Bricks](/developers/en/docs/checkout-bricks/landing) and [Mercado Pago Point](/developers/en/docs/mp-point/landing).
 
 To measure the quality of your application, follow the steps below.
 
