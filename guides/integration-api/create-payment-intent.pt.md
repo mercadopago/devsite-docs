@@ -229,7 +229,7 @@ Uma vez que a intenção de pagamento é criada, você pode obtê-la de seu disp
 >
 > Importante
 >
-> Recomendamos avaliar a [qualidade de sua integração](/developers/pt/docs/checkout-api/additional-content/integration-quality) para verificar se você está cumprindo os padrões de qualidade e segurança do Mercado Pago que garantem uma boa taxa de aprovação de pagamentos.
+> Recomendamos avaliar a [qualidade de sua integração](/developers/pt/docs/checkout-api/additional-content/integration-quality) para verificar se você está cumprindo os padrões de qualidade e segurança do Mercado Pago que podem melhorar sua taxa de aprovação de pagamentos.
 
 ## Verifique o status da sua intenção de pagamento
 

@@ -51,7 +51,7 @@ Nestes casos o campo `status_detail` poderá retornar: `cc_rejected_blacklist`, 
 >
 > Importante
 >
-> Recomendamos avaliar a [qualidade de sua integração](/developers/pt/docs/checkout-api/additional-content/integration-quality) antes de entrar em produção para verificar se você está cumprindo os padrões de qualidade e segurança do Mercado Pago que garantem uma boa taxa de aprovação de pagamentos.
+> Recomendamos avaliar a [qualidade de sua integração](/developers/pt/docs/checkout-api/additional-content/integration-quality) antes de entrar em produção para verificar se você está cumprindo os padrões de qualidade e segurança do Mercado Pago que podem melhorar sua taxa de aprovação de pagamentos.
 
 Para evitar que um pagamento legítimo seja recusado por não atender as validações de segurança, é necessário **incluir todas as informações possíveis na hora de realizar a operação** e também se atentar a alguns requisitos de segurança, como nosso **Código de Segurança** e o **Device ID**.
 
