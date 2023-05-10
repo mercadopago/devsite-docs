@@ -59,7 +59,7 @@ const onReady = async () => {
 > 
 > Attention
 >
-> If it is necessary to dismantle and reassemble a Brick, it is recommended to destroy the current instance and generate a new one. To do so, use the *unmount* method available in Brick's *controller*, in this case: `window.statusScreenBrickController.unmount()`.
+> Whenever the user leaves the screen where some Brick is displayed, it is necessary to destroy the current instance with the command `window.statusScreenBrickController.unmount()`. When entering again, a new instance must be generated.
 
 The `paymentId` that must be sent to Brick for its initialization is the ID returned by the [Payments API](/developers/en/reference/payments/_payments/post) when generating a payment with Mercado Pago.
 
