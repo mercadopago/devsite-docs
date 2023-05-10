@@ -42,7 +42,7 @@ const renderPaymentBrick = async (bricksBuilder) => {
        initialization: {
            amount: 100, //valor do processamento a ser realizado
            payer: {
-           email: 'test@mail.com',
+           email: '<PAYER_EMAIL_HERE>',
        },
        },
        style: {

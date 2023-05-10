@@ -116,7 +116,7 @@ The response will return that the payment is approved and credited.
 ## Capture partial value
 
 
-To capture an amount lower than the reserved amount, send the value to be captured to the `transaction_amount` parameter and execute the request through the codes available below.
+To capture an amount lower than the one reserved, send the value to be captured to the `transaction_amount` parameter and execute the request through the codes available below.
 
 ----[mla]----
 > WARNING
@@ -235,4 +235,8 @@ The answer will yield the following result
 ]]]
 
 
-
+> NOTE
+>
+> Important
+>
+> It is not possible to capture a value greater than the reserved amount, for this it is necessary to cancel the reservation and generate a new one.

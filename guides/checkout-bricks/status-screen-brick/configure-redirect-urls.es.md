@@ -12,7 +12,8 @@ Con el Status Screen Brick, es posible redirigir al usuario a otra página de tu
 >
 > El Brick solo aceptará direcciones URL del mismo dominio que la página en la que está cargado el Status Screen Brick. Se ignorarán las URL pertenecientes a otros dominios o subdominios. 
 
-```javascript
+[[[
+```Javascript
 const settings = {
    initialization: {
        paymentId: 100, // id de pago generado por Mercado Pago
@@ -33,6 +34,15 @@ const settings = {
    }
 };
 ```
+```react-jsx
+const customization = {
+ backUrls: {
+   error: '<http://<your_domain>/error>',
+   return: '<http://<your_domain>/homepage>',
+ },
+};
+```
+]]]
 
 La dirección proporcionada en la propiedad `return` del objeto `backUrls` se mostrará como un enlace al usuario cada vez que se muestre el Brick de Status Screen, mientras que la dirección proporcionada en la propiedad `error` se mostrará como un enlace al usuario cuando hay un error en el procesamiento del pago.
 

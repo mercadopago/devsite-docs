@@ -2,7 +2,7 @@
 >
 > h1
 >
-> Enviar el pago (tarjetas)
+> Tarjetas
 
 Con toda la información recopilada en el backend, envía un **POST** con los atributos requeridos al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) y ejecuta la solicitud o, si lo prefieres, envía la información utilizando nuestros SDKs.
 
@@ -205,7 +205,7 @@ curl -X POST \
           "payment_method_id": "visa",
           "issuer_id": 310,
           "payer": {
-            "email": "test@test.com",
+            "email": "PAYER_EMAIL_HERE",
             "identification": {
                 "number": 19119119100
             }
@@ -229,7 +229,7 @@ curl -X POST \
           "payment_method_id": "visa",
           "issuer_id": 310,
           "payer": {
-            "email": "test@test.com",
+            "email": "PAYER_EMAIL_HERE",
             "identification": {
                 "number": 19119119100,
                 "type": "CPF"

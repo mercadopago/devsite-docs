@@ -1,17 +1,16 @@
 # Integrar Checkout Pro
 
-A integração com o Checkout Pro permite realizar cobranças através do nosso formulário web a partir qualquer dispositivo de forma simples, rápida e segura.
+A integração com o Checkout Pro permite realizar cobranças através do nosso formulário web a partir de qualquer dispositivo de forma simples, rápida e segura.
 
 Nesta documentação você encontra todos os passos necessários para integrar o Checkout Pro através dos **nossos SDKs**. Para isso, siga as etapas descritas abaixo.
 
-
-> Também é possível realizar a integração através de chamadas via backend diretamente para a [API de Preferências](/developers/pt/reference/preferences/_checkout_preferences/post). Neste modelo, você obterá o link do Checkout Pro no atributo `init_point`, na resposta à requisição da API. A partir daí, basta utilizá-lo para redirecionar o comprador ao checkout.
-
-
-## Instalar SDK do Mercado Pago
+> SERVER_SIDE
+>
+> h2
+>
+> Instalar SDK do Mercado Pago
 
 A primeira etapa para integrar o Checkout Pro é a instalação do SDK do Mercado Pago em seu projeto. Para isso, utilize um dos códigos disponíveis abaixo.
-
 
 [[[
 ```php
@@ -33,7 +32,7 @@ Para instalar o SDK no seu projeto [Maven](http://maven.apache.org/install.html)
 <dependency>
    <groupId>com.mercadopago</groupId>
    <artifactId>sdk-java</artifactId>
-   <version>2.0.0</version>
+   <version>2.1.7</version>
 </dependency>
 ```
 ```ruby
@@ -64,8 +63,6 @@ pip3 install mercadopago
 ```
 ]]]
 
-
-
 > SERVER_SIDE
 >
 > h2
@@ -75,8 +72,6 @@ pip3 install mercadopago
 Preferências são conjuntos de informações que permitem configurar um produto ou serviço que se deseja cobrar, como preço e quantidade, além de outras configurações relacionadas ao fluxo de pagamento definido.
 
 Para criar uma preferência, utilize um dos SDKs disponíveis abaixo preenchendo os atributos com as respectivas informações.
-
-
 
 [[[
 ```php
@@ -96,9 +91,9 @@ mercadopago.configure({
 });
 ```
 ```java
-// SDK do Mercado Pago
+// SDK de Mercado Pago
 import com.mercadopago.MercadoPagoConfig;
-// Adicione as credenciais
+// Agrega credenciales
 MercadoPagoConfig.setAccessToken("PROD_ACCESS_TOKEN");
 ```
 ```ruby
@@ -121,9 +116,7 @@ sdk = mercadopago.SDK("PROD_ACCESS_TOKEN")
 ```
 ]]]
 
-
 Ao finalizar a criação da preferência, é preciso configurá-la de acordo com seu produto ou serviço. Para isso, utilize um dos códigos disponíveis abaixo preenchendo os atributos com as respectivas informações.
-
 
 ----[mla, mlb, mlu, mpe, mlm]----
 
@@ -163,22 +156,23 @@ mercadopago.preferences.create(preference)
 });
 ```
 ```java
-// Cria um objeto de preferência
+ PreferenceItemRequest itemRequest =
+       PreferenceItemRequest.builder()
+           .id("1234")
+           .title("Games")
+           .description("PS5")
+           .pictureUrl("http://picture.com/PS5")
+           .categoryId("games")
+           .quantity(2)
+           .currencyId("BRL")
+           .unitPrice(new BigDecimal("4000"))
+           .build();
+   List<PreferenceItemRequest> items = new ArrayList<>();
+   items.add(itemRequest);
+PreferenceRequest preferenceRequest = PreferenceRequest.builder()
+.items(items).build();
 PreferenceClient client = new PreferenceClient();
-
-// Cria um item na preferência
-List<PreferenceItemRequest> items = new ArrayList<>();
-PreferenceItemRequest item =
-   PreferenceItemRequest.builder()
-       .title("Meu produto")
-       .quantity(1)
-       .unitPrice(new BigDecimal("100"))
-       .build();
-items.add(item);
-
-PreferenceRequest request = PreferenceRequest.builder().items(items).build();
-
-client.create(request);
+Preference preference = client.create(request);
 ```
 ```ruby
 # Cria um objeto de preferência
@@ -235,7 +229,6 @@ preference = preference_response["response"]
 ]]]
 
 ------------
-
 ----[mlc, mco]----
 
 [[[
@@ -274,16 +267,23 @@ mercadopago.preferences.create(preference)
 });
 ```
 ```java
-// Cria um objeto de preferência
-Preference preference = new Preference();
-
-// Cria um item na preferência
-Item item = new Item();
-item.setTitle("Meu produto")
-    .setQuantity(1)
-    .setUnitPrice((float) 75);
-preference.appendItem(item);
-preference.save();
+ PreferenceItemRequest itemRequest =
+       PreferenceItemRequest.builder()
+           .id("1234")
+           .title("Games")
+           .description("PS5")
+           .pictureUrl("http://picture.com/PS5")
+           .categoryId("games")
+           .quantity(2)
+           .currencyId("BRL")
+           .unitPrice(new BigDecimal("4000"))
+           .build();
+   List<PreferenceItemRequest> items = new ArrayList<>();
+   items.add(itemRequest);
+PreferenceRequest preferenceRequest = PreferenceRequest.builder()
+.items(items).build();
+PreferenceClient client = new PreferenceClient();
+Preference preference = client.create(request);
 ```
 ```ruby
 # Cria um objeto de preferência
@@ -339,7 +339,6 @@ preference = preference_response["response"]
 ```
 ]]]
 
-
 > WARNING
 >
 > Importante
@@ -348,62 +347,84 @@ preference = preference_response["response"]
 
 ------------
 
-
 > CLIENT_SIDE
 >
 > h2
 >
 > Adicionar Checkout
 
+Após ter criado a preferência em seu backend, será necessário instalar o SDK de frontend do Mercado Pago ao seu projeto para adicionar o botão de pagamento.
 
-Após ter criado a preferência em seu backend, será necessário instalar o SDK de frontend do Mercado Pago ao seu projeto para adicionar o botão do Checkout Pro.
+A instalação é feita, basicamente, em **duas etapas**: incluindo o SDK do Mercado Pago ao projeto com suas credenciais configuradas e iniciando o checkout a partir da preferência gerada anteriormente.
 
+1. Para incluir o SDK Mercado Pago.js, adicione o código abaixo no HTML do projeto ou instale a biblioteca para ReactJs.
 
-A instalação é feita em **duas etapas**: incluindo o SDK do Mercado Pago ao projeto com suas credenciais configuradas e iniciando o checkout a partir da preferência gerada anteriormente.
-
-
-
-1. Para incluir o SDK Mercado Pago.js, adicione o código abaixo no HTML do projeto.
-
-
-
+[[[
 ```html
 // SDK MercadoPago.js
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
-
-2. Ao finalizar a inclusão do SDK Mercado Pago.js, **configure as credenciais do SDK** e inicialize seu checkout com o **ID da preferência** previamente criada e o identificador do elemento onde o botão de pagamento deverá ser exibido conforme exemplo abaixo.
-
-
-[[[
-```html
-<div class="cho-container"></div>
-<script>
-  const mp = new MercadoPago('PUBLIC_KEY', {
-    locale: 'pt-BR'
-  });
-
-  mp.checkout({
-    preference: {
-      id: 'YOUR_PREFERENCE_ID'
-    },
-    render: {
-      container: '.cho-container',
-      label: 'Pagar',
-    }
-  });
-</script>
+```bash
+npm install @mercadopago/sdk-react
 ```
 ]]]
+
+Em seguida, inicialize a integração definindo sua [chave pública](/developers/pt/docs/checkout-pro/additional-content/credentials) usando o seguinte código JavaScript.
+
+[[[
+```Javascript
+const mp = new MercadoPago('YOUR_PUBLIC_KEY');
+```
+```react-jsx
+import { initMercadoPago, Wallet } from '@mercadopago/sdk-react'
+initMercadoPago('YOUR_PUBLIC_KEY');
+```
+]]]
+
+Para integrações JavaScript/HTML, via CDN, você vai precisar ainda criar um container identificador para definir o local que o botão será inserido na tela. A criação do container é feita inserindo um elemento no código HTML da página no qual o componente será renderizado.
+
+```html
+ <div id="wallet_container"></div>
+```
+
+> NOTE
+>
+> Atenção
+>
+> O valor exibido na propriedade ID a seguir é apenas um exemplo e pode ser alterado, mas deve sempre corresponder ao ID indicado na etapa de renderização.
+
+2. Ao finalizar a etapa anterior, **inicialize seu checkout utilizando o ID da preferência previamente criada com o identificador do elemento onde o botão deverá ser exibido**, caso esteja utilizando a integração `Javascript/HTML`, ou instanciando o componente, no caso da biblioteca `React`, conforme os exemplos abaixo.
+
+[[[
+```Javascript
+mp.bricks().create("wallet", "wallet_container", {
+   initialization: {
+       preferenceId: "<PREFERENCE_ID>",
+   },
+});
+```
+```react-jsx
+<Wallet initialization={{ preferenceId: '<PREFERENCE_ID>' }} />
+```
+]]]
+
+Em seguida, você poderá observar o botão de pagamento renderizado em sua página.
+
+<center>
+
+![wallet-render](cow/cow-render-wallet-pt.png)
+
+</center>
+
+No exemplo acima, um botão de pagamento será renderizado e ficará responsável por abrir o Checkout Pro. Caso queira que a experiência com Checkout Pro seja feita em uma **aba externa ou de forma modal**, veja a seção [Esquema de abertura](/developers/pt/docs/checkout-pro/checkout-customization/user-interface/opening-schema)
 
 > WARNING
 >
 > Importante
 >
-> Os pagamentos criados possuem os seguintes status: `Pendente`, `Rejeitado` e `Aprovado`. Para acompanhar as atualizações é necessário configurar seu sistema para receber as notificações de pagamentos e outras atualizações de status. Veja [Notificações](/developers/pt/docs/checkout-pro/additional-content/notifications/Introduction) para mais detalhes.
+> É de extrema importância que se atente, durante a criação da preferência, para a configuração das `back_urls` porque elas serão responsáveis por guiar o fluxo de retorno ao seu website quando o checkout for finalizado. É possível definir três URLs de retorno diferentes, para cenários de pagamento pendentes, sucesso ou erro. Para mais informações, veja a seção de [URLs de retorno.](/developers/pt/docs/checkout-pro/checkout-customization/user-interface/redirection)
 
-No exemplo acima, um botão de pagamento será renderizado e ficará responsável por abrir o Checkout Pro. Caso queira personalizar a forma como o checkout será aberto, veja a seção [Esquema de abertura](/developers/pt/docs/checkout-pro/checkout-customization/user-interface/opening-schema)
-
+Os pagamentos criados possuem os seguintes status: `Pendente`, `Rejeitado` e `Aprovado`. Para acompanhar as atualizações é necessário configurar seu sistema para receber as notificações de pagamentos e outras atualizações de status. Veja [Notificações](/developers/pt/docs/checkout-pro/additional-content/notifications/Introduction) para mais detalhes.
 
 ## Exemplo de implementação
 

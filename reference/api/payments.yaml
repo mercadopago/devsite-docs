@@ -513,6 +513,7 @@ paths:
                     spa: Identificador del token card. (obligatorio para tarjeta de crédito). El token de la tarjeta se crea a partir de la información de la propia tarjeta, aumentando la seguridad durante el flujo de pago. Además, una vez que el token se usa en una compra determinada, se descarta, lo que requiere la creación de un nuevo token para futuras compras.
                     por: Identificador de token card (obrigatório para cartão de crédito). O token do cartão é criado a partir das próprias informações do cartão, aumentando a segurança durante o fluxo do pagamento. Além disso, uma vez que o token é utilizado em determinada compra, ele é descartado, sendo necessária a criação de um novo token para compras futuras. 
                   required: true
+                  example: "ff8080814c11e237014c1ff593b57b4d"
                 transaction_amount:
                   type: number
                   description: Product’s cost. Example - The sale of a product for R$100.00 will have a transactionAmount = 100.
@@ -2057,13 +2058,6 @@ paths:
                     eng: Payment’s expiration date. The valid format of the attribute is as follows - "yyyy-MM-dd'T'HH:mm:ssz". Ex - 2022-11-17T09:37:52.000-04:00.
                     spa: Fecha de vencimiento del pago. El formato válido del atributo es el siguiente - "yyyy-MM-dd'T'HH:mm:ssz". Por ejemplo - 2022-11-17T09:37:52.000-04:00.
                     por: Data de expiração do pagamento. O formato válido do atributo é o seguinte - "yyyy-MM-dd'T'HH:mm:ssz". Por exemplo - 2022-11-17T09:37:52.000-04:00.
-                metadata:
-                  type: object
-                  description: This is an optional key-value object where the customer can add additional information that needs to be recorded at checkout. Ex - {"payments_group_size":1,"payments_group_timestamp":"2022-11-18T15:01:44Z","payments_group_uuid":"96cfd2a4-0b06-4dea-b25f-c5accb02ba10"}.
-                  x-description-i18n:
-                    eng: This is an optional key-value object where the customer can add additional information that needs to be recorded at checkout. Ex - {"payments_group_size":1,"payments_group_timestamp":"2022-11-18T15:01:44Z","payments_group_uuid":"96cfd2a4-0b06-4dea-b25f-c5accb02ba10"}.
-                    spa: Este es un objeto clave-valor opcional en el que el cliente puede agregar información adicional que debe registrarse al finalizar la compra. Por ejemplo - {"payments_group_size":1,"payments_group_timestamp":"2022-11-18T15:01:44Z","payments_group_uuid":"96cfd2a4-0b06-4dea-b25f-c5accb02ba10"}.
-                    por: Este é um objeto opcional do tipo chave-valor  no qual o cliente  pode adicionar informações adicionais que precisam ser registradas no pagamento. Ex. - {"payments_group_size":1,"payments_group_timestamp":"2022-11-18T15:01:44Z","payments_group_uuid":"96cfd2a4-0b06-4dea-b25f-c5accb02ba10"}.
                 status:
                   type: string
                   description: It is the current state of payment. It can be two following types.

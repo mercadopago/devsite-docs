@@ -14,7 +14,7 @@ Next, we will explain how to configure each item of the plugin. Click on the tit
 ## Integrate store to Mercado Pago
 
 Test and production credentials are requested in this field.
-1. Click on the **Check credentials** button to enter the Mercado Pago panel and see your credentials. You can also access your credentials at [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel). **Important**: Please note that test credentials will be requested first and then production credentials.
+1. Click on the **Check credentials** button to enter the Mercado Pago panel and see your credentials. You can also access your credentials at [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app). **Important**: Please note that test credentials will be requested first and then production credentials.
 2. Complete the requested fields and click **Save and continue**.
 
 ## Business personalization

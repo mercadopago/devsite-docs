@@ -4,15 +4,13 @@ The integration with Checkout Pro allows you to charge via our web form from any
 
 In this documentation you will find all the necessary steps to integrate Checkout Pro through **our SDKs**. To do this, follow the steps described below.
 
-
-> It is also possible to perform the integration through calls via backend directly to the [Preferences API](/developers/en/reference/preferences/_checkout_preferences/post). In this template, you will get the Checkout Pro link in the `init_point` attribute, in the API request response. From there, just use it to redirect the buyer to the checkout.
-
-
-
-## Install Mercado Pago SDK
+> SERVER_SIDE
+>
+> h2
+>
+> Install Mercado Pago SDK
 
 The first step to integrate Checkout Pro is to install the Mercado Pago SDK in your project. To do this, use one of the codes available below.
-
 
 [[[
 ```php
@@ -29,12 +27,12 @@ npm install Mercadopago
 ```
 ```java
 ===
-To install the SDK in your [Maven](http://maven.apache.org/install.html) project, you must add the following dependency to your <code>pom.xml</code> file and run the code < code>maven install</code> in your terminal command line:
+To install the SDK in your [Maven](http://maven.apache.org/install.html) project, you must add the following dependency to your <code>pom.xml</code> file and run the code <code>maven install</code> in your terminal command line:
 ===
 <dependency>
 <groupId>com.mercadopago</groupId>
 <artifactId>sdk-java</artifactId>
-<version>2.0.0</version>
+<version>2.1.7</version>
 </dependency>
 ```
 ```ruby
@@ -49,7 +47,6 @@ gem install Mercadopago-sdk
 To install the SDK, you must run the following code in the command line of your terminal using [NuGet](https://docs.microsoft.com/en-us/nuget/reference/nuget-exe-cli-reference):
 
 ------------
-
 ----[mla, mlm, mco, mlc, mlu]----
 To install the SDK, you must run the following code in the command line of your terminal using [NuGet](https://docs.microsoft.com/es-es/nuget/reference/nuget-exe-cli-reference):
 
@@ -65,8 +62,6 @@ pip3 install MercadoPago
 ```
 ]]]
 
-
-
 > SERVER_SIDE
 >
 > h2
@@ -76,8 +71,6 @@ pip3 install MercadoPago
 Preferences are sets of information that allow you to configure a product or service that you want to charge, such as price and quantity, as well as other settings related to the defined payment flow.
 
 To create a preference, use one of the SDKs available below, filling in the attributes with the respective information.
-
-
 
 [[[
 ```php
@@ -122,9 +115,7 @@ sdk = mercadopago.SDK("PROD_ACCESS_TOKEN")
 ```
 ]]]
 
-
 When you finish creating the preference, you need to configure it according to your product or service. To do so, use one of the codes available below, filling in the attributes with the respective information.
-
 
 ----[mla, mlb, mlu, mpe, mlm]----
 
@@ -164,22 +155,23 @@ mercadopago.preferences.create(preference)
 });
 ```
 ```java
-// Create a preference object
+ PreferenceItemRequest itemRequest =
+       PreferenceItemRequest.builder()
+           .id("1234")
+           .title("Games")
+           .description("PS5")
+           .pictureUrl("http://picture.com/PS5")
+           .categoryId("games")
+           .quantity(2)
+           .currencyId("BRL")
+           .unitPrice(new BigDecimal("4000"))
+           .build();
+   List<PreferenceItemRequest> items = new ArrayList<>();
+   items.add(itemRequest);
+PreferenceRequest preferenceRequest = PreferenceRequest.builder()
+.items(items).build();
 PreferenceClient client = new PreferenceClient();
-
-// Create a preference item
-List<PreferenceItemRequest> items = new ArrayList<>();
-PreferenceItemRequest item =
-   PreferenceItemRequest.builder()
-       .title("Meu produto")
-       .quantity(1)
-       .unitPrice(new BigDecimal("100"))
-       .build();
-items.add(item);
-
-PreferenceRequest request = PreferenceRequest.builder().items(items).build();
-
-client.create(request);
+Preference preference = client.create(request);
 ```
 ```ruby
 # Create a preference request
@@ -235,9 +227,7 @@ preference = preference_response["response"]
 ```
 ]]]
 
-
 ------------
-
 ----[mlc, mco]----
 
 [[[
@@ -276,16 +266,23 @@ mercadopago.preferences.create(preference)
 });
 ```
 ```java
-// Create a preference object
-Preference preference = new Preference();
-
-// Create a preference item
-Item item = new Item();
-item.setTitle("My Item")
-    .setQuantity(1)
-    .setUnitPrice((float) 75);
-preference.appendItem(item);
-preference.save();
+ PreferenceItemRequest itemRequest =
+       PreferenceItemRequest.builder()
+           .id("1234")
+           .title("Games")
+           .description("PS5")
+           .pictureUrl("http://picture.com/PS5")
+           .categoryId("games")
+           .quantity(2)
+           .currencyId("BRL")
+           .unitPrice(new BigDecimal("4000"))
+           .build();
+   List<PreferenceItemRequest> items = new ArrayList<>();
+   items.add(itemRequest);
+PreferenceRequest preferenceRequest = PreferenceRequest.builder()
+.items(items).build();
+PreferenceClient client = new PreferenceClient();
+Preference preference = client.create(request);
 ```
 ```ruby
 # Create a preference request
@@ -342,7 +339,6 @@ preference = preference_response["response"]
 ```
 ]]]
 
-
 > WARNING
 >
 > Important
@@ -351,60 +347,87 @@ preference = preference_response["response"]
 
 ------------
 
-
 > CLIENT_SIDE
 >
 > h2
 >
 > Add Checkout
 
+Once you have created the preference in your backend, you will need to install the Mercado Pago frontend SDK to your project in order to add the payment button.
 
-Once you have created the preference in your backend, you will need to install the Mercado Pago frontend SDK to your project in order to add the Checkout Pro button.
+The installation is done, basically, in **two steps**: adding the Mercado Pago SDK to the project with your configured credentials and starting the checkout from the previously generated preference.
 
-The installation is done in **two steps**: adding the Mercado Pago SDK to the project with your configured credentials and starting the checkout from the previously generated preference.
+1. To include the Mercado Pago.js SDK, add the code below to the project's HTML or install the library for ReactJs.
 
-
-
-1. To include the Mercado Pago.js SDK, add the code below to the project's HTML.
-
-
+[[[
 ```html
 // SDK MercadoPago.js
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
+```bash
+npm install @mercadopago/sdk-react
+```
+]]]
 
-2. When you finish adding the Mercado Pago.js SDK, configure the SDK credentials and initialize your checkout with the ID of the previously created preference and the identifier of the element where the payment button should be displayed, as shown in the example below.
+Then, initialize the integration by setting your [public key](/developers/en/docs/checkout-pro/additional-content/credentials) using the following JavaScript code.
 
+[[[
+```Javascript
+const mp = new MercadoPago('YOUR_PUBLIC_KEY');
+const bricksBuilder = mp.bricks();
+```
+```react-jsx
+import { initMercadoPago, Wallet } from '@mercadopago/sdk-react'
+initMercadoPago('YOUR_PUBLIC_KEY');
+```
+]]]
+
+For JavaScript/HTML integrations, via CDN, you will still need to create an identifier container to define the location where the button will be inserted on the screen. The creation of the container is done by inserting an element in the HTML code of the page in which the component will be rendered.
 
 [[[
 ```html
-<div class="cho-container"></div>
-<script>
-const mp = new MercadoPago('PUBLIC_KEY', {
-locale: 'pt-BR'
-});
-
-mp.checkout({
-preference: {
-id: 'YOUR_PREFERENCE_ID'
-},
-render: {
-container: '.cho-container',
-label: 'Pay',
-}
-});
-</script>
+ <div id="wallet_container"></div>
 ```
 ]]]
+
+> NOTE
+>
+> Attention
+>
+> The value displayed in the ID property below is an example only and can be changed, but it must always match the ID indicated in the rendering step.
+
+2. At the end of the previous step, **initialize your checkout using the ID of the previously created preference with the identifier of the element where the button should be displayed**, if you are using the `Javascript/HTML` integration, or by instantiating the component, in the case from the `React` library, as shown in the examples below.
+
+[[[
+```Javascript
+mp.bricks().create("wallet", "wallet_container", {
+   initialization: {
+       preferenceId: "<PREFERENCE_ID>",
+   },
+});
+```
+```react-jsx
+<Wallet initialization={{ preferenceId: '<PREFERENCE_ID>' }} />
+```
+]]]
+
+You will then be able to observe the payment button rendered on your page.
+
+<center>
+
+![wallet-render](cow/cow-render-wallet-en.png)
+
+</center>
+
+In the example above, a payment button will be rendered and will be responsible for opening Checkout Pro. If you want the experience with Checkout Pro to be done in an **external tab or in a modal way**, check the section [Opening Schema](/developers/en/docs/checkout-pro/checkout-customization/user-interface/opening-schema)
 
 > WARNING
 >
 > Important
 >
-> When creating a payment it is possible to receive 3 different statuses: `Pending`, `Rejected` and `Approved`. To keep up with updates, you need to configure your system to receive payment notifications and other status updates. See [Notifications](/developers/en/docs/checkout-pro/additional-content/notifications/Introduction) for more details.
+> It is extremely important to pay attention, when creating the preference, to the configuration of the `back_urls` because they will be responsible for guiding the return flow to your website when the checkout is completed. It is possible to define three different return URLs, for payment pending, success or error scenarios. For more information, see the [Return URLs](/developers/en/docs/checkout-pro/checkout-customization/user-interface/redirection) section.
 
-In the example above, a payment button will be rendered and will be responsible for opening Checkout Pro. If you want to customize the way the checkout will be opened, see the section [Opening Schema](/developers/en/docs/checkout-pro/checkout-customization/user-interface/opening-schema)
-
+When creating a payment it is possible to receive 3 different statuses: `Pending`, `Rejected` and `Approved`. To keep up with updates, you need to configure your system to receive payment notifications and other status updates. See [Notifications](/developers/en/docs/checkout-pro/additional-content/notifications/Introduction) for more details.
 
 ## Implementation example
 

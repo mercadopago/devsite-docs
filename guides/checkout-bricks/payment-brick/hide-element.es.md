@@ -1,6 +1,10 @@
+# Ocultar elemento
+
+Ve a continuación cómo ocultar elementos de Payment Brick.
+
 > CLIENT_SIDE
 >
-> h1
+> h2
 >
 > Ocultar título
 
@@ -11,7 +15,8 @@
 | Tipo  | Boolean  |
 | Observaciones  | Cuando **true**, oculta la línea de título.  |
 
-```javascript
+[[[
+```Javascript
 const settings = {
    ...,
    customization: {
@@ -21,10 +26,18 @@ const settings = {
    }
 }
 ```
+```react-jsx
+const customization = {
+ visual: {
+   hideFormTitle: true
+ }
+};
+```
+]]]
 
 > CLIENT_SIDE
 >
-> h1
+> h2
 >
 > Ocultar botón de pago
 
@@ -35,15 +48,16 @@ const settings = {
 | Tipo  | Boolean  |
 | Observaciones  | Cuando true, el botón de envío del formulario no se muestra y pasa a ser necesario usar la función getFormData para obtener los datos del formulario (ver el ejemplo a continuación).  |
 
-```javascript
+[[[
+```Javascript
 const settings = {
     ...,
     callbacks: {
         onReady: () => {
-            // callback chamado quando o Brick estiver pronto
+            // callback llamado cuando el Brick está listo
         },
         onError: (error) => { 
-            // callback chamado para todos os casos de erro do Brick
+            // callback llamado para todos los casos de error de Brick
         },
     },
     customization: {
@@ -53,35 +67,44 @@ const settings = {
     }
 }
 ```
+```react-jsx
+const customization = {
+ visual: {
+   hidePaymentButton: true
+ }
+};
+```
+]]]
+
+Dado que el botón de pago predeterminado se ha ocultado, deberá agregar algún reemplazo. Los siguientes bloques de código ejemplifican cómo implementar su botón de pago personalizado.
 
 ```html
 <button type="button" onclick="createPayment();">Custom Payment Button</button>
 ```
 
-```javascript
+```Javascript
 function createPayment(){
     window.paymentBrickController.getFormData()
-        .then(({ paymentType, formData }) => {
+        .then(({ formData }) => {
             console.log('formData received, creating payment...');
-            if (paymentType === 'credit_card' || paymentType === 'debit_card') {
-                fetch("/process_payment", {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json",
-                    },
-                    body: JSON.stringify(formData),
-                })
-            }
+            fetch("/process_payment", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(formData),
+            })
         })
         .catch((error) => {
-            // manejo de errores al llamargetFormData()
+            // manejo de errores al llamar getFormData()
         });
 };
+
 ```
 
 > CLIENT_SIDE
 >
-> h1
+> h2
 >
 > Ocultar panel de Cuenta de Mercado Pago
 
@@ -92,7 +115,8 @@ function createPayment(){
 | Tipo  | Boolean  |
 | Observaciones  | Cuando **true**, oculta dentro de la opción de pago con la Billetera de Mercado Pago, el panel de redirección al sitio web de Mercado Pago. |
 
-```javascript
+[[[
+```Javascript
 const settings = {
    ...,
    customization: {
@@ -102,6 +126,14 @@ const settings = {
    }
 }
 ```
+```react-jsx
+const customization = {
+ visual: {
+   hideRedirectionPanel: true
+ }
+};
+```
+]]]
 
 > NOTE
 >

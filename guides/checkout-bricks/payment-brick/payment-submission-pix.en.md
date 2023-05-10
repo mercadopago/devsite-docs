@@ -2,7 +2,7 @@
 >
 > h1
 >
-> Payment submission (Pix)
+> Pix
 
 When finalizing the inclusion of the payment form, it is necessary to send the buyer's email, type and document number, the payment method used (pix) and the value detail.
 
@@ -190,7 +190,7 @@ curl -X POST \
 "description": "Product title",
 "payment_method_id": "pix",
 "payer": {
-"email": "test@test.com",
+"email": "PAYER_EMAIL_HERE",
 "first_name": "Test",
 "last_name": "User",
 "identification": {
@@ -255,4 +255,8 @@ In addition to displaying the payment status, Status Screen Brick will also disp
 >
 > If you used production credentials from a test user to generate the Pix payment, an error will occur when clicking the button that takes you to the QR Code page. To view correctly, just remove `/sandbox` from the URL of the opened page.
 
+<center>
+
 ![payment-submission-pix-status](checkout-bricks/payment-submission-pix-status-en.jpg)
+
+</center>

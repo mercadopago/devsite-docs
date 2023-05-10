@@ -235,3 +235,10 @@ A resposta trará o seguinte resultado
 }
 ```
 ]]]
+
+> NOTE
+>
+> Importante
+>
+> Não é possível capturar um valor superior ao reservado, para isso é preciso cancelar a reserva e gerar uma nova.
+

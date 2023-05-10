@@ -6,4 +6,8 @@ Wallet Brick allows you to offer payments from your Mercado Pago account at any 
 * **Safe environment**
 * **Increase in payment approval rate**
 
-![wallet-brick-themes](checkout-bricks/wallet-brick-theme-en.png)
+<center>
+
+![wallet-brick-themes](checkout-bricks/wallet-brick-themes-en.png)
+
+</center>

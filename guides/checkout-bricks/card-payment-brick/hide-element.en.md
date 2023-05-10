@@ -1,6 +1,10 @@
+# Hide element
+
+See below how to hide Card Payment Brick elements.
+
 > CLIENT_SIDE
 >
-> h1
+> h2
 >
 > Hide title and flags
 
@@ -11,7 +15,8 @@
 | Type  | Boolean  |
 | Comments  | When **true**, hides the title line and accepted flags.  |
 
-```javascript
+[[[
+```Javascript
 const settings = {
    ...,
    customization: {
@@ -21,10 +26,18 @@ const settings = {
    }
 }
 ```
+```react-jsx
+const customization = {
+ visual: {
+   hideFormTitle: true
+ }
+};
+```
+]]]
 
 > CLIENT_SIDE
 >
-> h1
+> h2
 >
 > Hide payment button
 
@@ -35,15 +48,16 @@ const settings = {
 | Type  | Boolean  |
 | Comments  | When true, the form submit button is not displayed and it becomes necessary to use the getFormData function to get the form data (see example below). |
 
-```javascript
+[[[
+```Javascript
 const settings = {
     ...,
     callbacks: {
         onReady: () => {
-            // callback chamado quando o Brick estiver pronto
+            // callback called when brick is ready
         },
         onError: (error) => { 
-            // callback chamado para todos os casos de erro do Brick
+            // callback called for all Brick error cases
         },
     },
     customization: {
@@ -53,12 +67,22 @@ const settings = {
     }
 }
 ```
+```react-jsx
+const customization = {
+ visual: {
+   hidePaymentButton: true
+ }
+};
+```
+]]]
+
+Since the default payment button has been hidden, you will need to add some replacement. The following code blocks exemplify how to implement your custom payment button.
 
 ```html
 <button type="button" onclick="createPayment();">Custom Payment Button</button>
 ```
 
-```javascript
+```Javascript
 function createPayment(){
     window.cardPaymentBrickController.getFormData()
         .then((cardFormData) => {

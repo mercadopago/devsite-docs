@@ -6,7 +6,8 @@ When initializing Brick it is possible to configure additional callbacks, which 
 
 The `onBinChange` callback is used to get the **bin** of the card being inserted into the Brick. This callback is called on the fly whenever the card bin is updated.
 
-```javascript
+[[[
+```Javascript
 const settings = {
    ...,
    callbacks: {
@@ -18,6 +19,15 @@ const settings = {
    }
 };
 ```
+```react-jsx
+<Payment
+ ...,
+ onBinChange={bin => {
+   console.log(bin);
+ }}
+/>
+```
+]]]
 
 > WARNING
 >

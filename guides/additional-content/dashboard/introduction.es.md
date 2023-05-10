@@ -1,6 +1,6 @@
 # Dashboard
  
-El [Dashboard](https://mercadopago[FAKER][URL][DOMAIN]/developers/panel) es tu entorno de gestión de integración. Es creado automáticamente con un ID de usuario para tí con solo abrir una cuenta de Mercado Pago. En él puedes crear, editar y eliminar aplicaciones.
+El [Dashboard](https://mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) es tu entorno de gestión de integración. Es creado automáticamente con un ID de usuario para tí con solo abrir una cuenta de Mercado Pago. En él puedes crear, editar y eliminar aplicaciones.
  
 El Dashboard se compone de diferentes secciones, cada una con un propósito diferente.
  

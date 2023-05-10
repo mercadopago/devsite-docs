@@ -4,7 +4,7 @@ Se produce una disputa cuando deseas discutir el reclamo de contracargo con info
 
 Toda la información necesaria para gestionar las disputas de contracargos realizadas se puede encontrar aquí:
 
-1. Configura [las notificaciones IPN](/developers/panel/notifications/ipn) y habilita la opción **Contracargos**
+1. Configura [las notificaciones IPN](/developers/panel/ipn) y habilita la opción **Contracargos**
    
 2. Verifica toda la información relacionada con un contracargo utilizando la solicitud [Obtener contracargo](/developers/pt/reference/chargebacks/_chargebacks_id/get)
    1. Verifica si el [contracargo se puede cubrir](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/294) y si se requiere alguna documentación, a través de los campos `coverage_eligible` y `documentation_required`, respectivamente.
@@ -34,7 +34,18 @@ https://api.mercadopago.com/v1/chargebacks/ID/documentation
 >
 > Los archivos pueden ser `.jpg`, `.png` o `.pdf` y no deben exceder los 10 MB en total.
 
+----[mla, mlm, mpe, mco, mlu, mlc]----
+
 Si la documentación se cargó correctamente, la API responderá con el estado `200 OK` y el valor de `documentation_status` cambiará a `review_pending`.
+
+------------
+
+----[mlb]----
+
+Si la documentación se cargó correctamente en el sitio, la API responderá con el status "200 OK" y mantendrá el valor de `documentation_status` como `pending`. Después de revisar la documentación, este mismo valor se cambia a `valid` o `not supplied`.
+
+------------
+
 
 4. Espera la notificación de IPN sobre la resolución. Vuelve a verificar la disputa usando el método [Obtener contracargo](/developers/pt/reference/chargebacks/_chargebacks_id/get). El valor de `coverage_applied` puede cambiar a uno de los siguientes valores:
 

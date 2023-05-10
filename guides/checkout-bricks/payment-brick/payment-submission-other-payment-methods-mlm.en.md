@@ -2,7 +2,7 @@
 >
 > h1
 >
-> Payment submission (other payment methods)
+> Other payment methods
 
 To configure **payments with cash via ticket**, send a **POST** with the following parameters to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post) and run the request or, if you prefer, use one of our SDKs below.
 
@@ -171,7 +171,7 @@ curl -X POST \
       "description": "Título do produto",
       "payment_method_id": "oxxo",
       "payer": {
-        "email": "test@test.com",
+        "email": "PAYER_EMAIL_HERE",
       }
 "metadata": {
         "payment_point": "oxxo",
@@ -210,7 +210,11 @@ After the payment creation in the backend using the Mercado Pago SDK, use the **
 
 In addition, the Status Screen can also redirect the buyer to the ticket with the transaction number and barcode for the buyer to go to a store and thus make the payment. Check out how simple it is to integrate [click here](/developers/en/docs/checkout-bricks/status-screen-brick/configure-integration).
 
+<center>
+
 ![payment-submission-other-payment-methods-status-mlm](checkout-bricks/payment-submission-other-payment-methods-status-mlm-en.jpg)
+
+</center>
 
 > NOTE
 >
