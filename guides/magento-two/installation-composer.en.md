@@ -1,8 +1,8 @@
 # Installation via Composer
 
-To install the Mercado Pago module in Magento 2 via Composer, you must follow these steps:
+To install the Mercado Pago module in Adobe Commerce (Magento) via Composer, you must follow these steps:
 
-1. In your terminal, run this command to download the Magento 2 module with Composer:
+1. In your terminal, run this command to download the Adobe Commerce (Magento) module with Composer:
 
 ```
 composer require mercadopago/magento2-plugin:3.*
@@ -32,4 +32,4 @@ In case you experience folder permission issues when accessing the store, you wi
 chmod 777 -R var/ pub/ generated/
 ```
 
-And you’re done! You have already successfully installed the Mercado Pago module for Magento 2.
+And you’re done! You have already successfully installed the Mercado Pago module for Adobe Commerce (Magento).

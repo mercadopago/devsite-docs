@@ -6,4 +6,4 @@
 4. Copia la carpeta **MercadoPago** que se encuentra la carpeta **code/src**.
 5. Luego, sigue las instrucciones de [Instalación via Composer](#bookmark_instalación_via_composer)
 
-¡Y listo! Ya instalaste con éxito el módulo de Mercado Pago para Magento 2.
+¡Y listo! Ya instalaste con éxito el módulo de Mercado Pago para Adobe Commerce (Magento).

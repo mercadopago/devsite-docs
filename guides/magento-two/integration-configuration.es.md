@@ -6,7 +6,6 @@ La configuración básica del plugin se realiza en 3 pasos: **Integración con M
 
 Sigue los pasos descriptos en esta documentación para configurar el plugin de Mercado Pago en la tienda Adobe Commerce (Magento).
 
-
 > NOTA
 >
 > Importante
