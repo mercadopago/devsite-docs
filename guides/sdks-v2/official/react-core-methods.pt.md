@@ -14,7 +14,7 @@ Na tabela abaixo listamos os principais campos disponibilizados através da SDK-
 | ExpirationMonth | Mês de expiração do cartão |
 | ExpirationYear | Ano de expiração do cartão (pode ser AA ou AAAA) |
 
-A seguir, são apresentados exemplos de como utilizar esses métodos:
+A seguir, são apresentados exemplos de como utilizar esses campos.
 
 [[[
 ```react-jsx
