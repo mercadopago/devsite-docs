@@ -6,4 +6,4 @@ In this configuration step, it is necessary to enter store information and, opti
 2. Under **Category of your store**, set the category of the products that are sold, for example, "Cell Phones and Accessories".
 3. Under **Integrator ID**, enter your _integrator_id_ so that it is possible to register how many sales were processed with your account. If you don't have one, leave the field blank.
 
-![Store Name, Category and Integrator ID](/images/magento-two/nome_cat_id.png.png)
+![Store Name, Category and Integrator ID](/images/magento-two/nome_cat_id.png)

@@ -1,10 +1,10 @@
 # Installment and interest
 
-The installment and interest setting is made directly in your Mercado Pago account. To do so, follow the steps below.
+La configuración de financiación e intereses se realiza directamente en tu cuenta de Mercado Pago. Para ello, sigue los pasos que se describen a continuación.
 
-1. Click on the **Set up installments and interest** button and log in to your Mercado Pago seller account.
-2. Select the **QR Code and Online Payments** option, enable the installment and select the number of installments you want to offer at checkout. The options range from 1 to 12 times.
+1. Haz clic en el botón **Set up installments and interest** e inicia sesión en tu cuenta de vendedor de Mercado Pago.
+2. Selecciona la opción **QR y pagos online**, habilita el pago en veces y selecciona la cantidad que deseas ofrecer en el checkout. Las opciones van desde 1 hasta 12 veces.
 
 ![Installment and interest](/images/magento-two/parcelamento.gif)
 
-Done! After completing these steps, installment at checkout will be configured and ready to process sales.
+¡Listo! Finalizadas estas etapas, la financiación en el checkout estará configurada y lista para procesar ventas. 

@@ -1,4 +1,4 @@
-# Installment and interest
+# Plazos e intereses
 
 La configuración de pago a plazos e intereses se realiza directamente en tu cuenta Mercado Pago. Para ello, sigue los pasos descritos a continuación.
 

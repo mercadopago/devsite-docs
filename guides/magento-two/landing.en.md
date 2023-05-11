@@ -1,7 +1,7 @@
 ---
 content_section_with_media:
- - title: Magento 2
- - message: Magento is an e-commerce platform that allows you to create a customizable online store, ideal for large companies that want to offer a unique experience. Magento 2 is the latest version of this platform, offering a user-friendly interface, higher speed, built-in cache cleaning support, and more stability.
+ - title: Adobe Commerce (Magento)
+ - message: Adobe Commerce (Magento) is an e-commerce platform that allows you to create a customizable online store, ideal for large companies that want to offer a unique experience. Magento 2 is the latest version of this platform, offering a user-friendly interface, higher speed, built-in cache cleaning support, and more stability.
  - media_image: /magento-two/magento2-landing.png 
 ---
  

@@ -1,6 +1,6 @@
 # Instalación del módulo
 
-Existen varias formas de instalar el módulo de Mercado Pago para Magento 2, pero todas tienen el mismo resultado de integración. Puedes instalar el módulo de Mercado Pago en Magento 2 de tres maneras diferentes:
+Existen varias formas de instalar el módulo de Mercado Pago para Adobe Commerce (Magento), pero todas tienen el mismo resultado de integración. Puedes instalar el módulo de Mercado Pago en Adobe Commerce (Magento) de tres maneras diferentes:
 
 * [Instalación via Composer](/developers/es/docs/magento-two/installation/composer)
 * [Instalación via Magento Marketplace](/developers/es/docs/magento-two/installation/magento-marketplace)

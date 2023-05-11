@@ -7,4 +7,4 @@ En esta etapa de configuración es necesario ingresar la información de la tien
 2. En **Category of your store**, define la categoría de los productos que se venden, por ejemplo, "Cell Phones & Accessories".
 3. En **Integrator ID**, ingresa tu _integrator_id_ para poder registrar cuántas ventas se procesaron con tu cuenta. Si no tienes uno, puedes dejar el campo en blanco.
 
-![Store Name, Category and Integrator ID](/images/magento-two/nome_cat_id.png.png)
+![Store Name, Category and Integrator ID](/images/magento-two/nome_cat_id.png)
