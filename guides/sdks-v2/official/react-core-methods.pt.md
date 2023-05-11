@@ -32,7 +32,7 @@ initMercadoPago('YOUR-PUBLIC-KEY');
 const App = () => {
  const cardToken = async () => {
    const response = await createCardToken({
-     cardholderName: 'APRO',
+     cardholderName: '<CARD_HOLDER_NAME>',
      identificationType: '<BUYER_IDENTIFICATION_TYPE>',
      identificationNumber: '<BUYER_IDENTIFICATION_NUMBER>',
    })
