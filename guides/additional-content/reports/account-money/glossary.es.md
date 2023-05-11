@@ -2,7 +2,7 @@
 
 Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado con todos ellos. ¡Usa este glosario para no perderte!
 
-| Nombre de la columna del reporte | Qué significa                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| Nombre de la columna del reporte | Qué significa |
 | --- | --- |
 | EXTERNAL_REFERENCE | <br> ID que ayuda a identificar el origen de la operación. Por ejemplo, puede ser la venta a través del ID de la orden o el envío (si es una compra de carrito) o del ID propio provisto por el vendedor en caso de una integración externa.<br><br> Ten en cuenta que es posible que este campo esté vacío para algunos casos como el pago de facturas o un envío de dinero, entre otros. <br> <br> |
 | SOURCE_ID | ID de operación en Mercado Pago (por ejemplo, el pago de una venta). |
