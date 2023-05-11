@@ -33,7 +33,7 @@ Ao estar disponível, ele ficará na sua bandeja de relatórios e você poderá 
 * Por um link de download que enviaremos via e-mail.
 * Na sua conta Mercado Pago, vá até "Relatórios de pagamentos e extratos de conta" e selecione o relatório *Liberações*. 
 
-### Valores do relatório    
+### Valores do relatório
 
 Dependendo das [tarifas e prazos](/settings/release-options) que você escolher, o dinheiro que você ganhar pela venda será liberado um tempo depois que o pagamento for creditado. Por isso, o valor total exibido no relatório nem sempre vai coincidir com o seu saldo total ou com o valor total que aparece nos relatórios de faturamento.
 
