@@ -24,7 +24,7 @@ bullet_section_with_media:
 
 >>>> Instalación <<<<
 
-Para instalar el SDK de frontend, incluya MercadoPago.js en el HTML de su aplicación como se muestra en el código a continuación.
+Para instalar el SDK de frontend, incluya MercadoPago.js en el HTML de su aplicación o instale el paquete en npm según el siguiente código.
 
 [[[
 ```html
