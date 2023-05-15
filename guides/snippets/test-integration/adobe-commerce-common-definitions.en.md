@@ -1,5 +1,3 @@
-## Common payment method definitions
-
 In this section, you can define some general characteristics of the platform for using the Checkout. Fill in each of the requested fields according to their respective descriptions.
 
 1. In the **Minimum order total** option, set the minimum value for an order to be processed. In this field, enter integers. The payment method will only be displayed to the consumer if the order value is equal to or greater than what you inform.

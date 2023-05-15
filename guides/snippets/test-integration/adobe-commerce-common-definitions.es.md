@@ -1,5 +1,3 @@
-## Definiciones comunes de medios de pago
-
 En la sección **Common Payment Method Definitions**, es posible definir algunas características generales de la plataforma para el uso de Checkout Pro. Completa cada uno de los campos solicitados de acuerdo con sus respectivas descripciones.
 
 1. En la opción **Minimum order total**, define el valor mínimo para que un pedido pueda ser procesado. Deberás ingresar números enteros. El medio de pago solo se mostrará al consumidor si el valor del pedido es igual o mayor al que has indicado.

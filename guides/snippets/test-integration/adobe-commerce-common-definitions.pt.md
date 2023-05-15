@@ -1,5 +1,3 @@
-## Definições comuns de meios de pagamento
-
 Nesta seção é possível definir algumas características gerais da plataforma para o uso do Checkout Transparente. Preencha cada um dos campos solicitados de acordo com suas respectivas descrições.
 
 1. Na opção **Valor mínimo do pedido**, defina o valor mínimo para que um pedido possa ser processado. Neste campo, informe números inteiros. O método de pagamento só será exibido ao consumidor se o valor do pedido for igual ou maior ao que você informar.
