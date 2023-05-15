@@ -14,6 +14,12 @@ The simulator has two modes of usage:
 
 ### 1. Configure your credentials
 
+> WARNING
+>
+> Attention
+>
+> The simulator only works with [test accounts.](/developers/en/guides/additional-content/testing/create-test-user)
+
 When using the simulator for the first time, you will need to enter your keys and select one of your available devices.
 
 * **PDV mode:** you must enter your test `access-token` and the simulator will assign you a virtual device.
@@ -24,9 +30,9 @@ When using the simulator for the first time, you will need to enter your keys an
 >
 > Important
 > 
-> * Remember that to use the simulator you must configure a test `access-token`(`TEST-XXXXX-XXXXX-XXXXXXX`) and you can get it in your [integrations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/applications), option **My credentials > Test credentials**.
-> * To query a payment made by the simulator through the [payments API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_id/get), you must use the test `access-token` (the same one used in the simulator).
-> * If you are going to use the device mode of the simulator, remember that you must put `X-Test-Scope:sandbox` in the header to ensure that the payment attempt reaches the simulator device.
+> Remember that to use the simulator you must configure a test `access-token`(`TEST-XXXXX-XXXXX-XXXXXXX`) and you can get it in your [integrations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/applications), option **My credentials > Test credentials**.
+> To query a payment made by the simulator through the [payments API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_id/get), you must use the test `access-token` (the same one used in the simulator).
+> If you are going to use the device mode of the simulator, remember that you must put `X-Test-Scope:sandbox` in the header to ensure that the payment attempt reaches the simulator device.
 
 ### 2. Simulate a payment intent
 
@@ -51,8 +57,4 @@ If the previous step was successful, you can click on the animation of the card,
 
 If you followed the configuration steps for the [Webhooks notifications](/developers/en/docs/mp-point/integration-configuration/integrate-with-pdv/notifications), it is time for you to review your records. There, you will see that the notification of the transaction status was sent.
 
-> NOTE
->
-> Note
->
 > The simulator will allow you to make test payments. You can check out all the information corresponding in the section [Payment API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_id/get).
