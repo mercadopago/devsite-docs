@@ -21,19 +21,18 @@ curl -X GET \
 
 Respuesta:
 
-[[[
 ```
 {
-     "results": [
-         {
-             "id": 56789012345
-         }
-     ]
+    "results": [
+        {
+            "id": 56789012345
+        }
+    ]
 }
 ```
+
 ```curl
 curl -X GET \
-       'https://api.mercadopago.com/v1/payments/56789012345' \
-       -H 'Authorization: Bearer {{AccessToken}}'
+      'https://api.mercadopago.com/v1/payments/56789012345' \
+      -H 'Authorization: Bearer {{AccessToken}}'
 ```
-]]]
