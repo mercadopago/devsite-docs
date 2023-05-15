@@ -2,7 +2,7 @@
 
 Al instalar [Checkout Pro](/developers/es/docs/checkout-pro/landing), puede haber un **aumento en la tasa de aprobación de las ventas en la tienda en línea**. Esto sucede porque los compradores podrán pagar con una cuenta de Mercado Pago y todo el proceso de compra se realizará en nuestro entorno, lo que facilita el pago. Al final de la transacción, estos compradores son redirigidos al entorno de la tienda.
 
-----[mlb, mlm, mpe, mco, mlu, mlc]----
+----[mlb]----
 Para configurar el Checkout Pro en una tienda Shopify, sigue los pasos a continuación:
 
 1. Ve a tu tienda [Shopify](https://accounts.shopify.com/store-login).
@@ -17,7 +17,7 @@ Para configurar el Checkout Pro en una tienda Shopify, sigue los pasos a continu
 > En caso de renovar tus credenciales, recuerda reemplazar tanto las de producción como las de pruba en tu integración.
 
 ------------
-----[mla]----
+----[mla, mlm, mpe, mco, mlu, mlc]----
 > WARNING
 >
 > Atención

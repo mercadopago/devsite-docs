@@ -2,6 +2,9 @@
 
 When you have your integration ready and want to start receiving payments, you must [activate your credentials]([FAKER][CREDENTIALS][URL]) for production and replace the test credentials if needed.
 
+You must also test your [integration’s quality](/developers/en/docs/checkout-api/additional-content/integration-quality) to verify if you are meeting the Mercado Pago quality and security standards.
+
+
 ## Do not forget to have an SSL certificate
 
 In order for you to be secure and to take care of the data, **it is necessary that you have an SSL certificate and that the payment form be made available on an HTTPS page**. This allows to protect the transactions carried out by buyers and their data.

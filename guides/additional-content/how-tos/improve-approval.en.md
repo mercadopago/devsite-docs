@@ -47,6 +47,12 @@ In these cases, the `status_detail` field may return: `cc_rejected_blacklist`, `
 
 ## Recommendations to improve your approval
 
+> WARNING
+>
+> Important
+>
+> We recommend assessing your [integration’s quality](/developers/en/docs/checkout-api/additional-content/integration-quality) before going to production to check if you are meeting the Mercado Pago quality and security standards that would help you obtain a good payment approval rate.
+
 To prevent a legitimate payment from being refused because it does not meet security validations, **it is necessary to include all possible information** when carrying out the transaction. Furthermore, you must pay attention to some security requirements, such as our **Security Code** and **Device ID**.
 
 > NOTE

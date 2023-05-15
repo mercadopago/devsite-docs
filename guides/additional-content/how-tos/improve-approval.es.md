@@ -40,13 +40,14 @@ A la hora de efectuar un pago tenemos una serie de comprobaciones, tanto por par
 
 En estos casos, el campo `status_detail` puede devolver: `cc_rejected_blacklist`, `cc_rejected_high_risk`
 
-> WARNING
-> 
-> Rechazo sin motivo
->
-> Es importante tener en cuenta que si el emisor de la tarjeta no indica el motivo del rechazo, vas a ver el detalle del pago como `cc_rejected_other_reason`. Para este caso, es recomendable cambiar el medio de pago o contactarse con el banco para resolver el problema.
 
 ## Recomendaciones para mejorar tu aprobación
+
+> WARNING
+> 
+> Importante
+>
+> Recomendamos  evaluar la [calidad de tu integración](/developers/es/docs/checkout-api/additional-content/integration-quality) antes de salir a producción para que puedas validar si estás cumpliendo con los estándares de calidad y seguridad de Mercado Pago  que pueden mejorar tu tasa de aprobación de pagos.
 
 Para evitar que un pago real sea rechazado porque no cumple con las validaciones de seguridad, **es necesario incluir toda la información posible** al realizar la transacción y también prestar atención a algunos requisitos de seguridad, como nuestro **Código de seguridad** y el **device ID**.
 

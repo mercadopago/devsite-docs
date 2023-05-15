@@ -225,6 +225,12 @@ Você receberá esta resposta:
 
 Uma vez que a intenção de pagamento é criada, você pode obtê-la de seu dispositivo Point pressionando a tecla para iniciar o pagamento (no caso de Point Plus e Point Pro 2 o **botão verde** e, no caso de Point Smart, o **botão digital “Charge now”**) e continuar com as etapas mostradas em tela para concluir o pagamento.
 
+> WARNING
+>
+> Importante
+>
+> Recomendamos avaliar a [qualidade de sua integração](/developers/pt/docs/checkout-api/additional-content/integration-quality) para verificar se você está cumprindo os padrões de qualidade e segurança do Mercado Pago que podem melhorar sua taxa de aprovação de pagamentos.
+
 ## Verifique o status da sua intenção de pagamento
 
 Você pode verificar o status atual de sua intenção de pagamento usando o `id` que você recebeu na resposta ao criar a intenção de pagamento.
