@@ -1,4 +1,4 @@
-# Configuración de la integración
+# Configuración de integración
 
 Una vez instalado el Plugin de Mercado Pago, deberás configurarlo para poder cobrar utilizando nuestras soluciones.
 
@@ -6,7 +6,7 @@ La configuración básica del plugin se realiza en 3 pasos: **Integración con M
 
 Sigue los pasos descriptos en esta documentación para configurar el plugin de Mercado Pago en la tienda Adobe Commerce (Magento).
 
-> NOTA
+> NOTE
 >
 > Importante
 >

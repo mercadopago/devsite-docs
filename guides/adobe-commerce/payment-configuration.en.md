@@ -4,15 +4,15 @@ The integration of the Mercado Pago module with the Adobe Commerce (Magento) sto
 
 ----[mlb]----
 
-* [Checkout Transparente](/developers/en/docs/magento-two/payment-configuration/checkout-api): Payment is made without leaving your virtual store with cards (debit or credit), offline payments (bank slip and ATM), and Pix.
-* [Checkout Pro](/developers/en/docs/magento-two/payment-configuration/checkout-pro): Payment is made on the Mercado Pago page (inside or outside your store) with cards (debit or credit), money (bank slip), Pix, and Mercado Pago account balance.
+* [Checkout Transparente](/developers/en/docs/adobe-commerce/payment-configuration/checkout-api): Payment is made without leaving your virtual store with cards (debit or credit), offline payments (bank slip and ATM), and Pix.
+* [Checkout Pro](/developers/en/docs/adobe-commerce/payment-configuration/checkout-pro): Payment is made on the Mercado Pago page (inside or outside your store) with cards (debit or credit), money (bank slip), Pix, and Mercado Pago account balance.
 
 ------------
 
 ----[mlm]----
 
-* [Checkout API](/developers/en/docs/magento-two/payment-configuration/checkout-api): Payment is made without leaving your virtual store with cards (debit or credit) and offline payments in payment institutions like the ones listed below (that accept deposits/payments in cash).
-* [Checkout Pro](/developers/en/docs/magento-two/payment-configuration/checkout-pro): Payment is made on the Mercado Pago page (inside or outside your store) with cards (debit or credit), Mercado Crédito, Mercado Pago account balance, and through payment institutions like the ones listed below (that accept deposits/payments in cash).
+* [Checkout API](/developers/en/docs/adobe-commerce/payment-configuration/checkout-api): Payment is made without leaving your virtual store with cards (debit or credit) and offline payments in payment institutions like the ones listed below (that accept deposits/payments in cash).
+* [Checkout Pro](/developers/en/docs/adobe-commerce/payment-configuration/checkout-pro): Payment is made on the Mercado Pago page (inside or outside your store) with cards (debit or credit), Mercado Crédito, Mercado Pago account balance, and through payment institutions like the ones listed below (that accept deposits/payments in cash).
 
 | List of institutions |
 | --- |
@@ -37,35 +37,35 @@ The integration of the Mercado Pago module with the Adobe Commerce (Magento) sto
 
 ----[mla]----
 
-* [Checkout API](/developers/en/docs/magento-two/payment-configuration/checkout-api): Payment is made without leaving your virtual store with cards (debit or credit).
-* [Checkout Pro](/developers/en/docs/magento-two/payment-configuration/checkout-pro): Payment is made on the Mercado Pago page (inside or outside your store) with cards (debit or credit), Mercado Crédito, Rapipago, Província Net, Link, and PagoFácil.
+* [Checkout API](/developers/en/docs/adobe-commerce/payment-configuration/checkout-api): Payment is made without leaving your virtual store with cards (debit or credit).
+* [Checkout Pro](/developers/en/docs/adobe-commerce/payment-configuration/checkout-pro): Payment is made on the Mercado Pago page (inside or outside your store) with cards (debit or credit), Mercado Crédito, Rapipago, Província Net, Link, and PagoFácil.
 
 ------------
 
 ----[mpe]----
 
-* [Checkout API](/developers/en/docs/magento-two/payment-configuration/checkout-api): Payment is made without leaving your virtual store with cards (debit or credit).
-* [Checkout Pro](/developers/en/docs/magento-two/payment-configuration/checkout-pro): Payment is made on the Mercado Pago page (inside or outside your store) with cards (debit or credit) and PagoEfectivo.
+* [Checkout API](/developers/en/docs/adobe-commerce/payment-configuration/checkout-api): Payment is made without leaving your virtual store with cards (debit or credit).
+* [Checkout Pro](/developers/en/docs/adobe-commerce/payment-configuration/checkout-pro): Payment is made on the Mercado Pago page (inside or outside your store) with cards (debit or credit) and PagoEfectivo.
 
 ------------
 
 ----[mco]----
 
-* [Checkout API](/developers/en/docs/magento-two/payment-configuration/checkout-api): Payment is made without leaving your virtual store with cards (debit or credit) and offline payments (PSE).
-* [Checkout Pro](/developers/en/docs/magento-two/payment-configuration/checkout-pro): Payment is made on the Mercado Pago page (inside or outside your store) with cards (debit or credit), Mercado Pago account balance, and PagoEfectivo.
+* [Checkout API](/developers/en/docs/adobe-commerce/payment-configuration/checkout-api): Payment is made without leaving your virtual store with cards (debit or credit) and offline payments (PSE).
+* [Checkout Pro](/developers/en/docs/adobe-commerce/payment-configuration/checkout-pro): Payment is made on the Mercado Pago page (inside or outside your store) with cards (debit or credit), Mercado Pago account balance, and PagoEfectivo.
 
 ------------
 
 ----[mlu]----
 
-* [Checkout API](/developers/en/docs/magento-two/payment-configuration/checkout-api): Payment is made without leaving your virtual store with cards (debit or credit).
-* [Checkout Pro](/developers/en/docs/magento-two/payment-configuration/checkout-pro): Payment is made on the Mercado Pago page (inside or outside your store) with cards (debit or credit), Mercado Pago account balance, and Redpagos.
+* [Checkout API](/developers/en/docs/adobe-commerce/payment-configuration/checkout-api): Payment is made without leaving your virtual store with cards (debit or credit).
+* [Checkout Pro](/developers/en/docs/adobe-commerce/payment-configuration/checkout-pro): Payment is made on the Mercado Pago page (inside or outside your store) with cards (debit or credit), Mercado Pago account balance, and Redpagos.
 
 ------------
 
 ----[mlc]----
 
-* [Checkout API](/developers/en/docs/magento-two/payment-configuration/checkout-api): Payment is made without leaving your virtual store with cards (debit or credit).
-* [Checkout Pro](/developers/en/docs/magento-two/payment-configuration/checkout-pro): Payment is made on the Mercado Pago page (inside or outside your store) with cards (debit or credit) and Mercado Pago account balance.
+* [Checkout API](/developers/en/docs/adobe-commerce/payment-configuration/checkout-api): Payment is made without leaving your virtual store with cards (debit or credit).
+* [Checkout Pro](/developers/en/docs/adobe-commerce/payment-configuration/checkout-pro): Payment is made on the Mercado Pago page (inside or outside your store) with cards (debit or credit) and Mercado Pago account balance.
 
 ------------
