@@ -1,11 +1,11 @@
 ----[mlb]----
 # Checkout Transparente
 
-With Checkout Transparent, the entire checkout process will take place within the online store's environment, without the need for redirection to an external page.
+With Checkout Transparente, the entire checkout process will take place within the online store's environment, without the need for redirection to an external page.
 
-In addition to allowing greater control in the customization and integration process, Checkout Transparent offers a complete structure for payment processing with the main payment methods available in the market.
+In addition to allowing greater control in the customization and integration process, Checkout Transparente offers a complete structure for payment processing with the main payment methods available in the market.
 
-See below for the payment methods available to the store when integrating Checkout Transparent.
+See below for the payment methods available to the store when integrating Checkout Transparente.
 
 ------------
 
@@ -18,7 +18,6 @@ In addition to allowing greater control in the customization and integration pro
 See below for the payment methods available to the store when integrating Checkout API.
 
 ------------
-
 ----[mlb]----
 
 | Payment Method | Description |

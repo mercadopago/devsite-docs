@@ -2,17 +2,13 @@
 
 Com o Checkout Pro, o comprador será direcionado para o site do Mercado Pago no qual deverá preencher as informações solicitadas e efetuar o pagamento, sendo assim, a transação é processada e concluída fora do ambiente da loja. 
 
-
 > NOTE
 >
 > Importante
 >
 > Para realizar o pagamento por meio do Checkout Pro, não é necessário que o comprador possua uma conta no Mercado Pago.
 
-
 Para configurar o Checkout Pro, siga os passos descritos abaixo.
-
-
 
 1. No Painel de Controle da loja, acesse **Lojas > Configuração > Vendas > Forma de pagamento**.
 2. Em **Outros meios de pagamento**, clique em **Configurar**, no plugin do Mercado Pago.

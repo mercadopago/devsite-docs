@@ -19,9 +19,7 @@ Além de permitir maior controle no processo de customização e integração, o
 Veja abaixo quais são os meios de pagamento disponíveis para a loja ao integrar o Checkout API.
 
 ------------
-
 ----[mlb]----
-
 
 | Meio de pagamento  | Descrição  |
 | --- | --- |
@@ -34,7 +32,6 @@ Veja abaixo quais são os meios de pagamento disponíveis para a loja ao integra
 
 ----[mlm]----
 
-
 | Meio de pagamento  | Descrição  |
 | --- | --- |
 | Cartões  | Permite integração com cartão de crédito e débito.  |
@@ -44,7 +41,6 @@ Veja abaixo quais são os meios de pagamento disponíveis para a loja ao integra
 ------------
 
 ----[mla]----
-
 
 | Meio de pagamento  | Descrição  |
 | --- | --- |
@@ -56,7 +52,6 @@ Veja abaixo quais são os meios de pagamento disponíveis para a loja ao integra
 
 ----[mpe]----
 
-
 | Meio de pagamento  | Descrição  |
 | --- | --- |
 | Cartões  | Permite integração com cartão de crédito e débito.  |
@@ -65,7 +60,6 @@ Veja abaixo quais são os meios de pagamento disponíveis para a loja ao integra
 ------------
 
 ----[mco]----
-
 
 | Meio de pagamento  | Descrição  |
 | --- | --- |
@@ -77,7 +71,6 @@ Veja abaixo quais são os meios de pagamento disponíveis para a loja ao integra
 
 ----[mlu]----
 
-
 | Meio de pagamento  | Descrição  |
 | --- | --- |
 | Cartões  | Permite integração com cartão de crédito e débito.  |
@@ -87,11 +80,9 @@ Veja abaixo quais são os meios de pagamento disponíveis para a loja ao integra
 
 ----[mlc]----
 
-
 | Meio de pagamento  | Descrição  |
 | --- | --- |
 | Cartões  | Permite integração com cartão de crédito e débito.  |
 | 2 cartões  | Permite integração com 2 cartões de crédito e débito.  |
-
 
 ------------

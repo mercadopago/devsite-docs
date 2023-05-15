@@ -13,7 +13,18 @@
 
 
 ----[mlb]----
+## Captura de datos del cliente en el formulario de pago
 
+Esta función permite capturar documentos de clientes a partir de un campo adicional en el formulario de pago. Si la tienda aún no captura estos datos, simplemente seleccione la opción **Enable** en **Capture document identification**. 
+
+La activación de esta funcionalidad proporciona la inserción automática del CPF del cliente en el formulario de pago, optimizando la experiencia de llenado de datos.
+
+
+> WARNING
+>
+> Importante
+>
+> Nuestro módulo intentará capturar la información del campo `vat_id` de tu tienda. Si no lo encuentra, sobrescribirá su configuración, ya que este es un valor obligatorio para el pago.
 
 ------------
 
@@ -29,7 +40,7 @@ En la sección **Common Payment Method Definitions**, es posible definir algunas
 5. Haz clic en **Save Configuration** para guardar los cambios realizados.
 
 
-## Installment and interest
+## Plazos e intereses
 
 La configuración de financiación e intereses se realiza directamente en tu cuenta de Mercado Pago. Para ello, sigue los pasos que se describen a continuación.
 

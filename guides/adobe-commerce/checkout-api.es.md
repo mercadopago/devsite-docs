@@ -19,7 +19,6 @@ Además de permitir un mayor control en el proceso de personalización e integra
 A continuación, se muestran los medios de pago disponibles para la tienda al integrar Checkout API.
 
 ------------
-
 ----[mlb]----
 | Medio de pago | Descripción |
 | --- | --- |
