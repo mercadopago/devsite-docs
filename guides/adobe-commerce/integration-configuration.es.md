@@ -2,8 +2,14 @@
 
 Una vez instalado el Plugin de Mercado Pago, deberás configurarlo para poder cobrar utilizando nuestras soluciones.
 
+----[mlb]----
+La configuración básica del plugin se realiza en 3 pasos: **Integración con Mercado Pago**, **Nombre de la tienda**, **Categoría e ID del Integrador** y **API Integración**, seguida de la **Configuración de pagos** (Checkout Transparente y Checkout Pro).
+
+------------
+----[mla, mpe, mco, mlm, mco, mlu, mlc]----
 La configuración básica del plugin se realiza en 3 pasos: **Integración con Mercado Pago**, **Nombre de la tienda**, **Categoría e ID del Integrador** y **API Integración**, seguida de la **Configuración de pagos** (Checkout API y Checkout Pro).
 
+------------
 Sigue los pasos descriptos en esta documentación para configurar el plugin de Mercado Pago en la tienda Adobe Commerce (Magento).
 
 > NOTE

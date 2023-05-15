@@ -1,9 +1,15 @@
-# Integration Configuration
+# Integration configuration
 
 With the Mercado Pago Plugin installed, it will be necessary to configure it to be able to charge using our solution.
 
-The basic configuration of the plugin is done in 3 steps: **Mercado Pago Integration**, **Store Name**, **Category and Integrator ID**, and **Integration API**, followed by **Payment Configuration** (Transparent Checkout and Checkout Pro).
+----[mlb]----
+The basic configuration of the plugin is done in 3 steps: **Mercado Pago integration**, **Store Name**, **Category and Integrator ID**, and **Integration API**, followed by **Payment configuration** (Checkout Transparente and Checkout Pro).
 
+------------
+----[mla, mpe, mco, mlm, mco, mlu, mlc]----
+The basic configuration of the plugin is done in 3 steps: **Mercado Pago integration**, **Store Name**, **Category and Integrator ID**, and **Integration API**, followed by **Payment configuration** (Checkout Transparente and Checkout Pro).
+
+------------
 Follow the steps described in this documentation to configure the Mercado Pago plugin in Adobe Commerce (Magento) store.
 
 > NOTE
