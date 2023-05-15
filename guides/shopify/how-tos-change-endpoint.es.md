@@ -21,7 +21,6 @@ curl -X GET \
 
 Respuesta:
 
-```
 {
     "results": [
         {
@@ -29,7 +28,6 @@ Respuesta:
         }
     ]
 }
-```
 
 ```curl
 curl -X GET \
