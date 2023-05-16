@@ -9,7 +9,7 @@
     4. In the **Payment Action** field, select between **Authorization for future capture** or **Authorization for immediate capture**. This setting will define the behavior of how Mercado Pago will process the order, with "Authorization for immediate capture" being a flow that requires no future action, in this scenario the customer pays and Mercado Pago already withdraws the amount from the card balance. For the option "Authorization for future capture" Mercado Pago will only sensitize the value in the customer's balance and only after their manual action will the value be captured in fact.
     5. In **Use Binary Mode**, select between **Yes, Processed Order Synchronous** or **No, Processed Order Asynchronous**. This field defines whether to accept only payments where the final status is received immediately.
 
-![](/images/magento-two/credito_e_debito.png)
+![](/images/adobe-commerce/credito_e_debito.png)
 
 
 ----[mlb]----
@@ -39,6 +39,6 @@ The installment and interest setting is made directly in your Mercado Pago accou
 1. Click on the **Set up installments and interest** button and log in to your Mercado Pago seller account.
 2. Select the **QR Code and Online Payments** option, enable the installment and select the number of installments you want to offer at checkout. The options range from 1 to 12 times.
 
-![Installment and interest](/images/magento-two/parcelamento.gif)
+![Installment and interest](/images/adobe-commerce/parcelamento.gif)
 
 Done! After completing these steps, installment at checkout will be configured and ready to process sales.

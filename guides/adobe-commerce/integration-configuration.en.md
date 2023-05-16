@@ -39,14 +39,14 @@ In this configuration step, it is necessary to enter store information and, opti
 2. Under **Category of your store**, set the category of the products that are sold, for example, "Cell Phones and Accessories".
 3. Under **Integrator ID**, enter your _integrator_id_ so that it is possible to register how many sales were processed with your account. If you don't have one, leave the field blank.
 
-![Store Name, Category and Integrator ID](/images/magento-two/nome_cat_id.png)
+![Store Name, Category and Integrator ID](/images/adobe-commerce/nome_cat_id.png)
 
 
 ## API Integration
 
 In the **API Integration** step, it will be possible to define whether or not you want to receive refund notification. By selecting "Yes", your store will receive the refund notification by processing a "Credit Note".
 
-![API Integration](/images/magento-two/api_integracao.png)
+![API Integration](/images/adobe-commerce/api_integracao.png)
 
 
 ## Developer support
@@ -56,7 +56,7 @@ In this step, it is possible to define the transaction log registration behavior
 1. Under **Debug**, select "Yes" or "No". This field will allow registering the store's communications with Mercado Pago to offer even better support (do not use debug mode with the store in production mode).
 2. Under **Rewrite Notification URL**, it is possible to enter an alternative URL to receive the refund notification. This function is exclusive to developers.
 
-![Support](/images/magento-two/suporte_para_devs.png)
+![Support](/images/adobe-commerce/suporte_para_devs.png)
 
 ----[mlb]----
 After completing all the steps, the integration with the Mercado Pago plugin will be finalized and ready for payment configuration (Checkout Pro and Checkout Transparente).

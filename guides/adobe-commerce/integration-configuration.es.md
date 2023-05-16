@@ -39,14 +39,14 @@ En esta etapa de configuración es necesario ingresar la información de la tien
 2. En **Category of your store**, define la categoría de los productos que se venden, por ejemplo, "Cell Phones & Accessories".
 3. En **Integrator ID**, ingresa tu _integrator_id_ para poder registrar cuántas ventas se procesaron con tu cuenta. Si no tienes uno, puedes dejar el campo en blanco.
 
-![Store Name, Category and Integrator ID](/images/magento-two/nome_cat_id.png)
+![Store Name, Category and Integrator ID](/images/adobe-commerce/nome_cat_id.png)
 
 
 ## API Integración
 
 En la etapa de **API Integration** podrás definir si deseas o no recibir notificaciones de reembolso. Al seleccionar "Yes", tu tienda recibirá la notificación de reembolso procesando un "Credit Note".
 
-![API Integration](/images/magento-two/api_integracao.png)
+![API Integration](/images/adobe-commerce/api_integracao.png)
 
 
 ## Soporte para desarrolladores
@@ -56,7 +56,7 @@ En esta etapa, es posible definir el comportamiento de registro de los logs de l
 1. En **Debug**, selecciona "Yes" o "No". Este campo permite registrar las comunicaciones de la tienda con Mercado Pago para ofrecer un soporte aún mejor (no utilices el modo debug con la tienda en modo de producción).
 2. En **Rewrite Notification URL**, puedes ingresar una URL alternativa para recibir la notificación de reembolso. Esta función es exclusiva para desarrolladores.
 
-![Support](/images/magento-two/suporte_para_devs.png)
+![Support](/images/adobe-commerce/suporte_para_devs.png)
 
 ----[mlb]----
 Al finalizar todas las etapas, la integración con el plugin de Mercado Pago estará finalizada y lista para configurar los pagos (Checkout Pro y Checkout Transparente).

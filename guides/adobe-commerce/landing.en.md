@@ -2,7 +2,7 @@
 content_section_with_media:
  - title: Adobe Commerce (Magento)
  - message: Adobe Commerce (Magento) is an e-commerce platform that allows you to create a customizable online store, ideal for large companies that want to offer a unique experience. Adobe Commerce (Magento) is the latest version of this platform, offering a user-friendly interface, higher speed, built-in cache cleaning support, and more stability.
- - media_image: /magento-two/magento2-landing.png 
+ - media_image: /adobe-commerce/magento2-landing.png 
 ---
  
 ----[mlb]---- 
@@ -16,7 +16,7 @@ bullet_section_with_media:
  - benefit_message: Payment is made on the Mercado Pago page (inside or outside your store) with cards (debit or credit), cash (boleto bancário) and Pix.
  - benefit_title: Checkout API
  - benefit_message: Payment is made out without leaving your virtual store with cards (debit or credit), offline payments (boleto bancário and ATM) and Pix.
- - image: /magento-two/magento2-payment.png 
+ - image: /adobe-commerce/magento2-payment.png 
 ---
 ------------
 
@@ -31,7 +31,7 @@ bullet_section_with_media:
  - benefit_message: Payment is made on the Mercado Pago page (inside or outside your store) with cards (debit or credit), cash (ticket) and bank transfer.
  - benefit_title: Checkout API
  - benefit_message: Payment is made out without leaving your virtual store with cards (debit or credit), offline payments (ticket and ATM) and bank transfer.
- - image: /magento-two/magento2-payment.png 
+ - image: /adobe-commerce/magento2-payment.png 
 ---
 ------------
 

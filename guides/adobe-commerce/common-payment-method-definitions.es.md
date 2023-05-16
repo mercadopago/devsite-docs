@@ -8,4 +8,4 @@ En la sección **Common Payment Method Definitions**, es posible definir algunas
 4. En la opción **Sort Order**, define un orden creciente de exhibición de este medio de pago en el checkout. Cuanto menor sea el número que ingreses, menor será su posición entre todas las demás. Por ejemplo, si es 1, cualquier otro medio de pago con un orden mayor se mostrará después de él.
 5. Haz clic en **Save Configuration** para guardar los cambios realizados.
 
-![Common definitions](/images/magento-two/definicoes_comuns.png)
+![Common definitions](/images/adobe-commerce/definicoes_comuns.png)

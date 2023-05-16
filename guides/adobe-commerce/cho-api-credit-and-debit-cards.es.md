@@ -9,7 +9,7 @@
     4. En el campo **Payment Action**, selecciona entre **Authorization for future capture** o **Authorization for immediate capture**. Esta configuración definirá cómo Mercado Pago procesará el pedido, siendo "Authorization for immediate capture" un flujo en el que no se requiere ninguna acción futura (en este escenario el cliente paga y Mercado Pago retira el valor del saldo de la tarjeta). Con la opción "Authorization for future capture", Mercado Pago solo sensibilizará el valor en el saldo del cliente, y sólo después de su acción manual es que el valor se capturará de hecho.
     5. En **Use Binary Mode**, selecciona entre **Yes, Processed Order Synchronous** o **No, Processed Order Asynchronous**. Este campo define si se aceptarán pagos donde el estado final se recibe de inmediato.
 
-![](/images/magento-two/credito_e_debito.png)
+![](/images/adobe-commerce/credito_e_debito.png)
 
 
 ----[mlb]----
@@ -39,6 +39,6 @@ La configuración de financiación e intereses se realiza directamente en tu cue
 1. Haz clic en el botón **Set up installments and interest** e inicia sesión en tu cuenta de vendedor de Mercado Pago.
 2. Selecciona la opción **QR y pagos online**, habilita el pago en veces y selecciona la cantidad que deseas ofrecer en el checkout. Las opciones van desde 1 hasta 12 veces.
 
-![Installment and interest](/images/magento-two/parcelamento.gif)
+![Installment and interest](/images/adobe-commerce/parcelamento.gif)
 
 ¡Listo! Finalizadas estas etapas, la financiación en el checkout estará configurada y lista para procesar ventas. 

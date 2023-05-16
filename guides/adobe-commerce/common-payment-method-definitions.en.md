@@ -8,4 +8,4 @@ In this section, you can define some general characteristics of the Mercado Pago
 4. Under **Sort Order**, set an ascending order of display for this payment method in the checkout. The lower the number you enter, the lower the position will be among all the other payment methods. For example, if it is 1, any other payment method with a higher order will be displayed after it.
 5. Click on **Save Configuration** to save your settings.
 
-![Common definitions](/images/magento-two/definicoes_comuns.png)
+![Common definitions](/images/adobe-commerce/definicoes_comuns.png)

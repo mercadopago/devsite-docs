@@ -8,4 +8,4 @@ Nesta seção é possível definir algumas características gerais da plataforma
 4. Na opção **Ordenação**, defina uma ordem crescente de exibição deste meio de pagamento no checkout. Quanto menor o número que inserir menor será a posição dentre todas as outras. Por exemplo, se for 1, qualquer outra forma de pagamento com ordem maior será exibida depois dela.
 5. Clique em **Gravar Configuração** para salvar as alterações realizadas.
 
-![Common definitions](/images/magento-two/definicoes_comuns.png)
+![Common definitions](/images/adobe-commerce/definicoes_comuns.png)
