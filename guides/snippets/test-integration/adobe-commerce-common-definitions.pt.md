@@ -13,10 +13,10 @@ Nesta seção é possível definir algumas características gerais da plataforma
 4. Na opção **Ordenação**, defina uma ordem crescente de exibição dessa forma de pagamento no checkout. Quanto menor o número que inserir menor será a posição dessa forma de pagamento dentre todas as outras. Por exemplo, se for 1, qualquer outra forma de pagamento com ordem maior será exibida depois dela.
 
 ----[mlb]----
-Ao finalizar o preenchimento desses campos, o pagamento via cartão terá sido habilitado no Checkout Transparente. Clique em **Gravar configuração** para salvar as alterações realizadas ou, se preferir, siga para a próxima etapa e configure o parcelamento e juros para cartões.
+Ao finalizar o preenchimento desses campos, o pagamento via cartão terá sido habilitado no Checkout Transparente. Clique em **Salvar configuração** para salvar as alterações realizadas ou, se preferir, siga para a próxima etapa e configure o parcelamento e juros para cartões.
 
 ------------
 ----[mla, mpe, mco, mlm, mco, mlu, mlc]----
-Ao finalizar o preenchimento desses campos, o pagamento via cartão terá sido habilitado no Checkout API. Clique em **Gravar configuração** para salvar as alterações realizadas ou, se preferir, siga para a próxima etapa e configure o parcelamento e juros para cartões.
+Ao finalizar o preenchimento desses campos, o pagamento via cartão terá sido habilitado no Checkout API. Clique em **Salvar configuração** para salvar as alterações realizadas ou, se preferir, siga para a próxima etapa e configure o parcelamento e juros para cartões.
 
 ------------

@@ -19,6 +19,6 @@ Al completar el llenado de estos campos, el pago con tarjeta habrá sido habilit
 
 ------------
 ----[mla, mpe, mco, mlm, mco, mlu, mlc]----
-Al completar el llenado de estos campos, el pago con tarjeta habrá sido habilitado en el Checkout APIß. Haz clic en **Save Configuration** para guardar los cambios realizados o, si lo prefieres, continúa con el siguiente paso y configura la financiación y los intereses para las tarjetas.
+Al completar el llenado de estos campos, el pago con tarjeta habrá sido habilitado en el Checkout API. Haz clic en **Save Configuration** para guardar los cambios realizados o, si lo prefieres, continúa con el siguiente paso y configura la financiación y los intereses para las tarjetas.
 
 ------------
