@@ -1,4 +1,4 @@
-# Common Payment Method Definitions
+# Common payment method definitions
 
 In this section, you can define some general characteristics of the Mercado Pago Checkout Pro. Fill in each of the requested fields according to their respective descriptions.
 

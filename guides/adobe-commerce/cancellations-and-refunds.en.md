@@ -6,14 +6,6 @@
 
 Although they are similar transactions, it is important to keep in mind that the cancellation is made on the same day as the payment is captured, returning the limit to the buyer's card within the period defined by the issuing bank. The return referring to the reversal is made directly on the credit card bill, or on the checking account in cases of payment via Pix, boleto bancário or debit.
 
-In this documentation, you will find the necessary information to perform a full and partial refund, and cancel a purchase in your store.
-
-> WARNING
->
-> Important
->
-> When running the APIs referenced in this documentation, you may encounter the attribute **X-Idempotency-Key**. Its completion is important to ensure the execution and re-execution of requests without side effects such as duplicate payments in refund cases.
-
 ## Cancellations
 
 Before canceling a purchase, the following factors must be considered: 

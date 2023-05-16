@@ -9,7 +9,6 @@ In this section, you can define some general characteristics of the platform for
 After completing these fields, payment by card will have been enabled in the Checkout Transparente. Click **Save Configuration** to save the changes made or, if you prefer, go to the next step and configure installment and interest for cards.
 
 ------------
-
 ----[mla, mpe, mco, mlm, mco, mlu, mlc]----
 After completing these fields, payment by card will have been enabled in the Checkout API. Click **Save Configuration** to save the changes made or, if you prefer, go to the next step and configure installment and interest for cards.
 

@@ -6,14 +6,6 @@
 
 Apesar de serem transações similares, é importante ter em mente que o cancelamento é feito no mesmo dia da captura do pagamento, devolvendo o limite ao cartão do comprador dentro do período definido pelo banco emissor. Já o reembolso é feito diretamente na fatura do cartão de crédito ou na conta corrente em casos de pagamento via Pix, boleto ou débito.
 
-Nesta documentação, você encontra as instruções e os links das APIs necessárias para realizar uma reembolso integral, parcial, e cancelar uma compra em sua loja.
-
-> WARNING
->
-> Important
->
-> Ao executar as APIs citadas nesta documentação, você poderá encontrar o atributo **X-Idempotency-Key**. Seu preenchimento é importante para garantir a execução e re-execução de requisições sem que haja efeitos colaterais como por exemplo, pagamentos em duplicidade em casos de reembolso.
-
 ## Cancelamentos
 
 Antes de realizar o cancelamento de uma compra, é preciso atentar-se os seguintes fatores: 

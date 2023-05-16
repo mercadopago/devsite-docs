@@ -67,4 +67,5 @@ A integração do módulo do Mercado Pago com a loja Adobe Commerce (Magento) pe
 
 * [Checkout API](/developers/pt/docs/adobe-commerce/payment-configuration/checkout-api): O pagamento é realizado sem sair da sua loja virtual com cartões (débito ou crédito).
 * [Checkout Pro](/developers/pt/docs/adobe-commerce/payment-configuration/checkout-pro): O pagamento é realizado na página do Mercado Pago (dentro ou fora da sua loja) com cartões (débito ou crédito) e saldo em conta Mercado Pago.
+
 ------------

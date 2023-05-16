@@ -1,4 +1,11 @@
-Nesta seção é possível definir algumas características gerais da plataforma para o uso do Checkout Transparente. Preencha cada um dos campos solicitados de acordo com suas respectivas descrições.
+----[mlb]----
+Nesta seção é possível definir algumas características gerais da plataforma para o uso do Checkout Transparente. Preencha cada um dos campos solicitados de acordo com a descrição abaixo.
+
+------------
+----[mla, mpe, mco, mlm, mco, mlu, mlc]----
+Nesta seção é possível definir algumas características gerais da plataforma para o uso do Checkout API. Preencha cada um dos campos solicitados de acordo com a descrição abaixo.
+
+------------
 
 1. Na opção **Valor mínimo do pedido**, defina o valor mínimo para que um pedido possa ser processado. Neste campo, informe números inteiros. O método de pagamento só será exibido ao consumidor se o valor do pedido for igual ou maior ao que você informar.
 2. Em **Valor máximo do pedido**, defina um valor máximo para que o pedido seja processado. Neste campo, informe números inteiros. O método de pagamento só será exibido ao consumidor se o valor do pedido for igual ou menor ao que você informar.

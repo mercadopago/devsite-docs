@@ -6,14 +6,6 @@
 
 Si bien son transacciones similares, es importante tener en cuenta que la cancelación se realiza el mismo día en que se captura el pago, devolviendo el límite a la tarjeta del comprador dentro del plazo definido por el banco emisor. El reembolso referente a la reversión se realiza directamente en la factura de la tarjeta de crédito, o en la cuenta corriente en los casos de pago vía Pix, boleto bancário o débito.
 
-En esta documentación, encontrarás las instrucciones y los links de las APIs necesarias para realizar un reembolso total, parcial y cancelar una compra en tu tienda.
-
-> WARNING
->
-> Importante
->
-> Al ejecutar las API a las que se hace referencia en esta documentación, es posible que encuentres el atributo **X-Idempotency-Key**. Completarlo es importante para asegurar la ejecución y re-ejecución de solicitudes sin efectos secundarios como pagos duplicados en casos de reembolso.
-
 ## Cancelaciones
 
 Antes de cancelar una compra, se deben tener en cuenta los siguientes factores: 

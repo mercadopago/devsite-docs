@@ -8,13 +8,13 @@ Para instalar el módulo de Mercado Pago en Adobe Commerce (Magento) vía Compos
 composer require mercadopago/magento2-plugin:3.*
 ```
 
-2. Luego, ejecuta este comando para actualizar la lista de módulos de Magento:
+2. Luego, ejecuta este comando para actualizar la lista de módulos de Adobe Commerce (Magento):
 
 ```
 bin/magento setup:upgrade
 ```
 
-3. Ahora deberás ejecutar este comando para limpiar el cache de Magento:
+3. Ahora deberás ejecutar este comando para limpiar el cache de Adobe Commerce (Magento):
 
 ```
 bin/magento cache:clean
