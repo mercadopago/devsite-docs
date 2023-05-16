@@ -238,3 +238,68 @@ const initialization = {
 ]]]
 
 ------------
+----[mco]----
+## Otros medios de pago
+
+En el formulario que se muestra para el pago con otros medios de pago puedes empezar con los campos ya rellenados. Para eso, es necesario pasar la siguiente configuración en el objeto de inicialización del Brick.
+
+[[[
+```Javascript
+settings = {
+  ...,
+  initialization: {
+    ...,
+    payer: {
+      ...,
+      email: '<PAYER_EMAIL>',
+    }
+  }
+}
+```
+```react-jsx
+const initialization = {
+ ...,
+ payer: {
+   email: '<PAYER_EMAIL>',
+ },
+};
+```
+]]]
+
+## PSE
+
+En el formulario que se muestra para el pago con PSE, puedes empezar con el **correo electrónico** ya rellenado. Para eso, es necesario pasar la siguiente configuración en el objeto de inicialización del Brick.
+
+[[[
+```Javascript
+settings = {
+  ...,
+  initialization: {
+    ...,
+    payer: {
+      email: '<PAYER_EMAIL>',
+      entity_type: 'individual',
+      identification: {
+        type: '<PAYER_IDENTIFICATION_TYPE>',
+        number: '<PAYER_IDENTIFICATION_NUMBER>'
+      }
+    }
+  }
+}
+```
+```react-jsx
+const initialization = {
+   ...,
+   payer: {
+    email: '<PAYER_EMAIL>',
+    entity_type: 'individual',
+    identification: {
+      type: '<YOUR_IDENTIFICATION_TYPE>',
+      number: '<YOUR_IDENTIFICATION_NUMBER>'
+    }
+  }
+};
+```
+]]]
+
+------------
