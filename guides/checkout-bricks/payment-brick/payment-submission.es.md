@@ -46,6 +46,7 @@ En las siguientes secciones, vea cómo enviar a Mercado Pago pagos realizados co
 ----[mco]----
 * [Tarjetas](/developers/es/docs/checkout-bricks/payment-brick/payment-submission/cards)
 * [Cuenta de Mercado Pago](/developers/es/docs/checkout-bricks/payment-brick/payment-submission/wallet)
+* [PSE](/developers/e/docs/checkout-bricks/payment-brick/payment-submission/pse)
 * [Otros medios de pago](/developers/es/docs/checkout-bricks/payment-brick/payment-submission/other-payment-methods/colombia)
 
 ------------

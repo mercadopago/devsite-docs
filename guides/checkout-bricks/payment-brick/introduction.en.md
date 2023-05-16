@@ -4,7 +4,7 @@
 
 Payment Brick is a modular and customizable solution that allows you to add several payment methods to your store with just one Brick, allowing you to save card data for future purchases. By using Payment Brick, you will have different payment methods at your disposal and you will be able to choose which ones to enable for your site.
 
-For now, you will be able to give your customers the possibility of making payments through credit cards, the Caixa virtual debit card, Pix, boleto, payment in lottery, use the Mercado Pago Wallet and Installments without card.
+For now, you will be able to give your customers the possibility of making **payments through credit cards, the Caixa virtual debit card, Pix, boleto, payment in lottery, use the Mercado Pago Wallet or Installments without card**.
 
 The possibility of saving the data of cards that have already been charged in previous purchases, makes the payment process more efficient and faster. For the buyer, it is no longer necessary to have to reload the data each time they enter the checkout.
 
@@ -57,7 +57,7 @@ The Payment Brick layout is based on the best UX practices, so that it is possib
 
 Payment Brick is a modular and customizable solution that allows you to add several payment methods to your store with just one Brick, allowing you to save card data for future purchases. By using Payment Brick, you will have different payment methods at your disposal and you will be able to choose which ones to enable for your site.
 
-For now, you will be able to give your customers the possibility of making payments through debit and credit cards, Pago Fácil, Rapipago, using the Mercado Pago Wallet and Installments without card.
+For now, you will be able to give your customers the possibility of making **payments through debit and credit cards, Pago Fácil, Rapipago, using the Mercado Pago Wallet or Installments without card**.
 
 The possibility of saving the data of cards that have already been charged in previous purchases, makes the payment process more efficient and faster. For the buyer, it is no longer necessary to have to reload the data each time they enter the checkout.
 
@@ -99,7 +99,7 @@ The Payment Brick layout is based on the best UX practices, so that it is possib
 
 Payment Brick is a modular and customizable solution that allows you to add several payment methods to your store with just one Brick, allowing you to save card data for future purchases. By using Payment Brick, you will have different payment methods at your disposal and you will be able to choose which ones to enable for your site.
 
-For now, you will be able to give your customers the possibility of making payments through debit and credit cards or use the Mercado Pago Wallet. In the short term we will add the possibility that, using this same Brick, you can also allow them to make cash payments.
+For now, you will be able to give your customers the possibility of making **payments through debit and credit cards, payments with cash, bank transfer with PSE - Pagos Seguros en Línea or using the Mercado Pago Wallet**. 
 
 The possibility of saving the data of cards that have already been charged in previous purchases, makes the payment process more efficient and faster. For the buyer, it is no longer necessary to have to reload the data each time they enter the checkout.
 
@@ -141,7 +141,7 @@ The Payment Brick layout is based on the best UX practices, so that it is possib
 
 Payment Brick is a modular and customizable solution that allows you to add several payment methods to your store with just one Brick, allowing you to save card data for future purchases. By using Payment Brick, you will have different payment methods at your disposal and you will be able to choose which ones to enable for your site.
 
-For now, you will be able to give your customers the possibility of making payments through debit and credit cards, PagoEfectivo or using the Mercado Pago Wallet.
+For now, you will be able to give your customers the possibility of making **payments through debit and credit cards, PagoEfectivo or using the Mercado Pago Wallet**.
 
 The possibility of saving the data of cards that have already been charged in previous purchases, makes the payment process more efficient and faster. For the buyer, it is no longer necessary to have to reload the data each time they enter the checkout.
 
@@ -183,7 +183,7 @@ The Payment Brick layout is based on the best UX practices, so that it is possib
 
 Payment Brick is a modular and customizable solution that allows you to add several payment methods to your store with just one Brick, allowing you to save card data for future purchases. By using Payment Brick, you will have different payment methods at your disposal and you will be able to choose which ones to enable for your site.
 
-For now, you will be able to give your customers the possibility of making payments through debit and credit cards or use the Mercado Pago Wallet. In the short term we will add the possibility that, using this same Brick, you can also allow them to make cash payments.
+For now, you will be able to give your customers the possibility of making **payments through debit and credit cards or use the Mercado Pago Wallet**. In the short term we will add the possibility that, using this same Brick, you can also allow them to make cash payments.
 
 The possibility of saving the data of cards that have already been charged in previous purchases, makes the payment process more efficient and faster. For the buyer, it is no longer necessary to have to reload the data each time they enter the checkout.
 
@@ -225,7 +225,7 @@ The Payment Brick layout is based on the best UX practices, so that it is possib
 
 Payment Brick is a modular and customizable solution that allows you to add several payment methods to your store with just one Brick, allowing you to save card data for future purchases. By using Payment Brick, you will have different payment methods at your disposal and you will be able to choose which ones to enable for your site.
 
-For now, you will be able to give your customers the possibility of making payments through debit and credit cards or use the Mercado Pago Wallet. In the short term we will add the possibility that, using this same Brick, you can also allow them to make cash payments.
+For now, you will be able to give your customers the possibility of making **payments through debit and credit cards or use the Mercado Pago Wallet**. In the short term we will add the possibility that, using this same Brick, you can also allow them to make cash payments.
 
 The possibility of saving the data of cards that have already been charged in previous purchases, makes the payment process more efficient and faster. For the buyer, it is no longer necessary to have to reload the data each time they enter the checkout.
 
@@ -267,7 +267,7 @@ The Payment Brick layout is based on the best UX practices, so that it is possib
 
 Payment Brick is a modular and customizable solution that allows you to add several payment methods to your store with just one Brick, allowing you to save card data for future purchases. By using Payment Brick, you will have different payment methods at your disposal and you will be able to choose which ones to enable for your site.
 
-For now, you will be able to give your customers the possibility of making payments through debit and credit cards, payments with cash via ticket, using the Mercado Pago Wallet and Installments without card.
+For now, you will be able to give your customers the possibility of making **payments through debit and credit cards, payments with cash via ticket, using the Mercado Pago Wallet or Installments without card**.
 
 The possibility of saving the data of cards that have already been charged in previous purchases, makes the payment process more efficient and faster. For the buyer, it is no longer necessary to have to reload the data each time they enter the checkout.
 

@@ -46,6 +46,7 @@ In the following sections, check out how to send to Mercado Pago payments made w
 ----[mco]----
 * [Cards](/developers/en/docs/checkout-bricks/payment-brick/payment-submission/cards)
 * [Mercado Pago Wallet](/developers/en/docs/checkout-bricks/payment-brick/payment-submission/wallet)
+* [PSE](/developers/en/docs/checkout-bricks/payment-brick/payment-submission/pse)
 * [Other payment methods](/developers/en/docs/checkout-bricks/payment-brick/payment-submission/other-payment-methods/colombia)
 
 ------------
