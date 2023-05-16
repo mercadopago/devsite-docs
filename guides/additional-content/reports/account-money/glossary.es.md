@@ -50,7 +50,7 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 | PAYER_ID_NUMBER* | Número de identificación de quien hace un pago o una donación. | ----------------[mla]----  ------------
 | BUSINESS_UNIT | Corresponde al canal por medio del cual se generó una venta. Los canales son Mercado Pago, Mercado Libre, Mercado Shops y Delivery.|
 | SUB_UNIT | Permite identificar el medio que se utilizó para cobrar una venta con Mercado Pago. |
-----[mlu]---- | MONEY_RELEASE_DATE | Indica la fecha en la que está previsto que tengas disponible el dinero correspondiente a los cobros realizados a tus compradores.  | ------------ ----[mlu]----
+----[mlu]---- | MONEY_RELEASE_DATE | Indica la fecha en la que está previsto que tengas disponible el dinero correspondiente a los cobros realizados a tus compradores.  | ------------
 > INFO
 >
 > (*) Esta información solo se podrá usar para conciliar, será tratada conforme a las leyes de protección de datos 
