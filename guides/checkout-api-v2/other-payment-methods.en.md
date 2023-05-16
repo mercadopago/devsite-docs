@@ -145,7 +145,7 @@ const mp = new MercadoPago('YOUR_PUBLIC_KEY');
 With the MercadoPago.js library included, add the payment form below to your project to ensure the secure capture of buyer data. In this step, it is important to use the list you consulted to obtain the available payment methods to create the payment options you want to offer.
 
 
-[[[[
+[[[
 ```html
 
   <form id="form-checkout" action="/process_payment" method="post">
@@ -464,7 +464,7 @@ curl -X POST \
 ]]]
 
 
-The response will show the **pending status** until the buyer completes the payment. Also, in the response to the request, the `external_resource_url` parameter will return a URL that contains instructions for the buyer to make the payment. You can redirect to this same link to complete the payment flow. See below for an example return.
+The response will show the `pending` status until the buyer completes the payment. Also, in the response to the request, the `external_resource_url` parameter will return a URL that contains instructions for the buyer to make the payment. You can redirect to this same link to complete the payment flow. See below for an example return.
 
 [[[
 ```json
