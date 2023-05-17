@@ -286,6 +286,7 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
    "callback_url": "<YOUR_WEB_SITE>"
 }'
 ```
+]]]
 
 Veja abaixo um exemplo da resposta:
 
@@ -320,7 +321,6 @@ Veja abaixo um exemplo da resposta:
    },
 }
 ```
-]]]
 
 A resposta, como você pode ver no `json` acima, mostrará o status pendente até que o comprador efetue o pagamento.
 

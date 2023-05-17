@@ -6,7 +6,6 @@
 >
 > Para realizar a renderização do Payment Brick, primeiro execute os [passos de inicialização](/developers/pt/docs/checkout-bricks/common-initialization) compartilhados entre todos os Brick. 
 
-
 ## Configurar o Brick
 
 Crie a configuração de inicialização do Brick.
@@ -469,7 +468,7 @@ const onReady = async () => {
 ]]]
 
 ------------
-----[mla, mlu, mpe, mco]----
+----[mla, mlu, mpe]----
 [[[
 ```Javascript
 const renderPaymentBrick = async (bricksBuilder) => {

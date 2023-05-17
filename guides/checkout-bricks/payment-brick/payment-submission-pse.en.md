@@ -286,6 +286,7 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
    "callback_url": "<YOUR_WEB_SITE>"
 }'
 ```
+]]]
 
 Below is an example of the response:
 
@@ -320,7 +321,6 @@ Below is an example of the response:
    },
 }
 ```
-]]]
 
 The response, as you can see in the `json` above, will show the pending status until the buyer makes the payment.
 
