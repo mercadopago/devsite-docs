@@ -1,6 +1,6 @@
 # Como obter os detalhes do pagamento utilizando as APIs do Mercado Pago
 
-Na nova integração com a Shopify, houve uma mudança na informação disponível no atributo `payment_id` disponível na consulta da transação relacionada ao pedido obtida através da [API do endpoint do Shopify](/admin/orders/{{order_id}}/transactions.json). No atributo `payment_id` presente na reposta da API da Shopify, onde antes era exibido o ID único (`id`) de pagamento do Mercado Pago, passou a ser informado o ID único (`id`) de pagamento da Shopify.
+Na nova integração com a Shopify, houve uma mudança na informação disponível no atributo `payment_id` disponível na consulta da transação relacionada ao pedido obtida através da [API do endpoint do Shopify](https://shopify.dev/docs/api/admin-rest/2023-04/resources/transaction). No atributo `payment_id` presente na reposta da API da Shopify, onde antes era exibido o ID único (`id`) de pagamento do Mercado Pago, passou a ser informado o ID único (`id`) de pagamento da Shopify.
 
 Com a mudança, para obter os detalhes do pagamento utilizando as APIs do Mercado Pago, ao invés de consultar o pagamento diretamente através de seu ID único (`id`), será necessário efetuar uma busca utilizando o seu ID de referência externa (`external_reference`) para retornar uma lista de objetos referentes aos pagamentos.
 
