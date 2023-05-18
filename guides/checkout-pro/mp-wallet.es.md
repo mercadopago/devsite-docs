@@ -13,7 +13,7 @@ Es posible pagar con **tarjeta**, **saldo disponible** y **financiación sin tar
 
 ------------
 ----[mlm]----
-Es posible pagar con **tarjeta**, **saldo disponible** y **financiamento sin tarjeta** en un entorno seguro y optimizado, aumentando las posibilidades de conversión de ventas, además de permitir al vendedor ofrecer únicamente pagos con Cuenta de Mercado Pago. Con esto, la opción de pagar sin iniciar sesión no existirá, sin embargo, contribuirá a un aumento en la conversión de pagos. 
+Es posible pagar con **tarjeta**, **saldo disponible** y **Financiamiento sin tarjeta** en un entorno seguro y optimizado, aumentando las posibilidades de conversión de ventas, además de permitir al vendedor ofrecer únicamente pagos con Cuenta de Mercado Pago. Con esto, la opción de pagar sin iniciar sesión no existirá, sin embargo, contribuirá a un aumento en la conversión de pagos. 
 
 ------------
 ----[mlb]----

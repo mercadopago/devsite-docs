@@ -9,7 +9,7 @@ En esta guía encontrarás los pasos necesarios para ofrecer cuotas sin tarjeta 
 
 ------------
 ----[mlm]----
-# Financiamento sin tarjeta
+# Financiamiento sin tarjeta
 
 **Mercado Crédito** es el método de financiación de Mercado Pago que ofrece la opción de pagar en mensualidades sin contar con una tarjeta.
 

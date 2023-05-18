@@ -27,7 +27,7 @@ La configuración de los planes de pago se realiza en la pestaña **Planes de pa
   * Haz click en **Guardar**, ¡y listo!
 ------------
 ----[mlm]----
-* **Financiamento sin tarjeta:** es el método de financiamento de Mercado Pago que permite pagar en cuotas sin tarjeta. Para activar el botón de **Buy now, pay later Mercado Pago**, puedes seguir los pasos enumerados a continuación:
+* **Financiamiento sin tarjeta:** es el método de financiamento de Mercado Pago que permite pagar en cuotas sin tarjeta. Para activar el botón de **Buy now, pay later Mercado Pago**, puedes seguir los pasos enumerados a continuación:
   * Debes tener creada una afiliación de gateway de MercadoPagoV2. Si todavía no lo hiciste, puedes ver cómo hacerlo en [esta documentación](/developers/es/docs/vtex/gateway-affiliations).
   * En el panel de administración de VTEX, accede a **Pagos > Configuración**.
   * Ingresa a la pestaña **Condiciones de Pago**, haz clic en el botón "+" y busca por **Buy now, pay later Mercado Pago**.
