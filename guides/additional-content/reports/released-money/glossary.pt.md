@@ -63,7 +63,7 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 | BALANCE_AMOUNT | Esta coluna mostra o saldo restante de uma conta logo depois que uma transação que afeta o valor total for feita. |
 | PAYOUT_BANK_ACCOUNT_NUMBER | Aqui será exibido o número da conta para onde o dinheiro do Mercado Pago foi transferido. |
 | PRODUCT_SKU | Código SKU, com o qual você poderá identificar seus produtos vendidos. |
-
+>
 > INFO
 >
 > (*) Estas informações só podem ser usadas para fins de reconciliação e serão tratadas de acordo com as leis de
