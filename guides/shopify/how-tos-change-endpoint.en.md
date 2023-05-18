@@ -1,8 +1,8 @@
 # How to get payment details using Mercado Pago APIs
 
-In the new integration with Shopify, there has been a change in the information available in the `payment_id` attribute available in the query of the transaction related to the order obtained through the [Shopify endpoint API](/admin/orders/{{order_id}}/transactions.json). In the place where the **unique Mercado Pago payment identifier** was entered, the **unique Shopify payment identifier** is now entered.
+In the new integration with Shopify, there has been a change in the information available in the `payment_id` attribute available in the query of the transaction related to the order obtained through the [Shopify endpoint API](/admin/orders/{{order_id}}/transactions.json). In the `payment_id` attribute present in the Shopify API response, where the Mercado Pago payment unique ID (`id`) was previously displayed, the Shopify payment unique ID (`id`) is now informed.
 
-With this change, to obtain payment details using the Mercado Pago APIs, instead of querying the payment directly through its unique ID (`id`), it will be necessary to perform a search using its external reference ID (`external_reference `), where payment details will be returned in a list. 
+With this change, to obtain payment details using the Mercado Pago APIs, instead of querying the payment directly through its unique ID (`id`), it will be necessary to perform a search using its external reference ID (`external_reference `) to return a list of objects referring to the payments.
 
 To do so, perform a GET by sending the `external_reference` and the `access-token` (obtained from the [Credentials](/developers/en/docs/shopify/additional-content/credentials) section in your [Dashboard](https://www.mercadopago.com/developers/panel/app) or in your account [Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials)) to the endpoint [/v1/payments/search](/developers/en/reference/payments/_payments_search/get).
 

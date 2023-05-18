@@ -1,8 +1,8 @@
 # Cómo obtener detalles de pago usando las API de Mercado Pago
 
-En la nueva integración con Shopify, se ha producido un cambio en la información disponible en el atributo `payment_id` disponible en la consulta de la transacción relacionada con el pedido obtenido a través de la [API de Shopify endpoint](/admin/orders/{{order_id}}/transacciones.json). En el lugar donde se ingresó el **identificador único de pago de Mercado Pago**, ahora se ingresa el **identificador único de pago de Shopify**.
+En la nueva integración con Shopify, se ha producido un cambio en la información disponible en el atributo `payment_id` disponible en la consulta de la transacción relacionada con el pedido obtenido a través de la [API de Shopify endpoint](/admin/orders/{{order_id}}/transacciones.json). En el atributo `payment_id` presente en la respuesta de la API de Shopify, donde antes se mostraba el ID único (`id`) de pago de Mercado Pago, ahora se informa el ID único (`id`) de pago de Shopify.
 
-Con este cambio, para obtener detalles de pago utilizando las APIs de Mercado Pago, en lugar de consultar el pago directamente a través de su ID único (`id`), será necesario realizar una búsqueda utilizando su ID de referencia externa (`external_reference`), donde los detalles del pago se devolverán en una lista. 
+Con este cambio, para obtener detalles de pago utilizando las APIs de Mercado Pago, en lugar de consultar el pago directamente a través de su ID único (`id`), será necesario realizar una búsqueda utilizando su ID de referencia externa (`external_reference`) para devolver una lista de objetos que se refieren a los pagos.
 
 Para hacerlo, realice un GET enviando el `external_reference` y el `access-token` (obtenido en la sección [Credenciales](/developers/es/docs/shopify/additional-content/credentials) en tu [Dashboard](https://www.mercadopago.com/developers/panel/app) o en tu cuenta [Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials)) al endpoint [/v1/payments/search](/developers/es/reference/payments/_payments_search/get). 
 
