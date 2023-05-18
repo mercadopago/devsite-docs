@@ -4,7 +4,9 @@ Los reportes de Mercado Pago son conjuntos de información financiera que te ayu
 
 Consulta la tabla a continuación para obtener más detalles sobre los tipos de reportes disponibles.
 
-* Reportes de conciliación
+
+
+* ----[mla, mlm]---- Reportes de conciliación ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Movimientos generales ------------
     ----[mla]----
     + [Liquidaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/introduction)
     ------------
