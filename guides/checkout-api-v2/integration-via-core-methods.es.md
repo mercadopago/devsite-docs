@@ -8,7 +8,7 @@ En la integración vía Métodos Core, el integrador decide cuándo buscar infor
 >
 > Importante
 >
-> Además de las opciones disponibles en esta documentación, también es posible integrar pagos con tarjeta a través de la **SDK de React**. Consulte la documentación [SDK JS - React](/developers/es/docs/sdks-library/client-side/sdk-js-react-installation) para obtener más información.
+> Además de las opciones disponibles en esta documentación, también es posible integrar **pagos con tarjeta** utilizando el **Brick de CardPayment** en **React Js**. Consulta la documentación [Renderizado por defecto](/developers/es/docs/checkout-bricks/card-payment-brick/default-rendering#editor_2) de CardPayment para obtener más detalles.
 
 
 Consulta el diagrama que ilustra el proceso de pago con tarjeta a través de los Métodos Core.

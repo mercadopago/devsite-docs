@@ -8,7 +8,7 @@ In integration via Core Methods, the integrator decides when to look for informa
 >
 > Important
 >
-> In addition to the options available in this documentation, it is also possible to integrate card payments through the **React SDK**. See the [JS SDK - React](/developers/en/docs/sdks-library/client-side/sdk-js-react-installation) documentation for more information.
+> In addition to the options available in this documentation, it is also possible to integrate **card payments** using the **CardPayment Brick** in **React Js**. Check [Default rendering](/developers/en/docs/checkout-bricks/card-payment-brick/default-rendering#editor_2) documentation of CardPayment for more details
 
 Check below the diagram that illustrates the card payment process using Core Methods.
 
