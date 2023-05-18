@@ -15,7 +15,7 @@ Há duas formas de gerar um relatório de Dinheiro em conta:
 
 | Canais | Descrição |
 | --- | --- |
-| Painel do Mercado Pago | <br/>É muito rápido e simples. Para gerar a partir da sua conta do Mercado Pago, vá até [seus Relatórios](https://www.mercadopago.com.br/balance/reports?page=1#!/settlement-report) e selecione uma opção de *Relatórios*.<br/><br/>No painel é possível efetuar customizações e programar a geração automática do relatório.<br/><br/>Siga o passo a passo para [gerar relatórios a partir do painel](/developers/pt/guides/additional-content/reports/account-money/panel).<br/><br/> |
+| Painel do Mercado Pago | <br/>Para gerar o relatório pela sua conta Mercado Pago, vá até a seção [Relatórios e faturamento](https://www.mercadopago.com.br/balance/reports?page=1#!/settlement-report) e selecione *Relatórios de pagamentos e extratos de conta*.<br/><br/>No painel é possível efetuar customizações e programar a geração automática do relatório.<br/><br/>Siga o passo a passo para [gerar relatórios a partir do painel](/developers/pt/guides/additional-content/reports/account-money/panel).<br/><br/> |
 | Integração via API | <br/>Programa a frequência do seu relatório de acordo com as suas necessidades. Pode ser tanto de forma manual como de forma programada.<br/><br/>Como no painel, também é possível efetuar customizações no relatório.<br/><br/>Leia a documentação para [gerar relatórios por API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/account-money/api). <br/><br/> |
 
 ## Características técnicas do relatório
