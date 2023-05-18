@@ -7,7 +7,7 @@ Con el Checkout API de Mercado Pago, es posible ofrecer, además de tarjeta y Pi
 >
 > Importante
 >
-> Además de las opciones disponibles en esta documentación, también es posible integrar pagos con tarjeta a través de la **SDK de React**. Consulte la documentación [SDK JS - React](/developers/es/docs/sdks-library/client-side/sdk-js-react-installation) para obtener más información.
+> Además de las opciones disponibles en esta documentación, también es posible integrar **otros medios de pago** utilizando el **Brick de Payment** en **React Js**. Consulta la documentación [Renderizado por defecto](/developers/es/docs/checkout-bricks/payment-brick/default-rendering#editor_2) de Payment para obtener más detalles.
 
 ------------
 
@@ -18,7 +18,7 @@ Con el Checkout API de Mercado Pago, también es posible ofrecer pagos con **Rap
 >
 > Importante
 >
-> Además de las opciones disponibles en esta documentación, también es posible integrar pagos con tarjeta a través de la **SDK de React**. Consulte la documentación [SDK JS - React](/developers/es/docs/sdks-library/client-side/sdk-js-react-installation) para obtener más información.
+> Además de las opciones disponibles en esta documentación, también es posible integrar **otros medios de pago** utilizando el **Brick de Payment** en **React Js**. Consulta la documentación [Renderizado por defecto](/developers/es/docs/checkout-bricks/payment-brick/default-rendering#editor_2) de Payment para obtener más detalles.
 ------------
 
 ----[mlm]----
@@ -28,7 +28,7 @@ Con el Checkout API de Mercado Pago, también se puede ofrecer pagos con **OXXO*
 >
 > Importante
 >
-> Además de las opciones disponibles en esta documentación, también es posible integrar pagos con tarjeta a través de la **SDK de React**. Consulte la documentación [SDK JS - React](/developers/es/docs/sdks-library/client-side/sdk-js-react-installation) para obtener más información.
+> Además de las opciones disponibles en esta documentación, también es posible integrar otros medios de pago utilizando el **Brick de Payment** en **React Js**. Consulta la documentación [Renderizado por defecto](/developers/es/docs/checkout-bricks/payment-brick/default-rendering#editor_2) de Payment para obtener más detalles.
 ------------
 
 ----[mpe]----
@@ -38,7 +38,7 @@ Con el Checkout API de Mercado Pago, también es posible ofrecer pagos a través
 >
 > Importante
 >
-> Además de las opciones disponibles en esta documentación, también es posible integrar pagos con tarjeta a través de la **SDK de React**. Consulte la documentación [SDK JS - React](/developers/es/docs/sdks-library/client-side/sdk-js-react-installation) para obtener más información.
+> Además de las opciones disponibles en esta documentación, también es posible integrar **otros medios de pago** utilizando el **Brick de Payment** en **React Js**. Consulta la documentación [Renderizado por defecto](/developers/es/docs/checkout-bricks/payment-brick/default-rendering#editor_2) de Payment para obtener más detalles.
 ------------
 
 ----[mco]----
@@ -48,7 +48,7 @@ Con el Checkout API de Mercado Pago, también se puede ofrecer pagos con **Efect
 >
 > Importante
 >
-> Además de las opciones disponibles en esta documentación, también es posible integrar pagos con tarjeta a través de la **SDK de React**. Consulte la documentación [SDK JS - React](/developers/es/docs/sdks-library/client-side/sdk-js-react-installation) para obtener más información.
+> Además de las opciones disponibles en esta documentación, también es posible integrar **otros medios de pago** utilizando el **Brick de Payment** en **React Js**. Consulta la documentación [Renderizado por defecto](/developers/es/docs/checkout-bricks/payment-brick/default-rendering#editor_2) de Payment para obtener más detalles.
 ------------
 
 ----[mlu]----
@@ -58,7 +58,7 @@ Con el Checkout API de Mercado Pago, también es posible ofrecer pagos con **Abi
 >
 > Importante
 >
-> Además de las opciones disponibles en esta documentación, también es posible integrar pagos con tarjeta a través de la **SDK de React**. Consulte la documentación [SDK JS - React](/developers/es/docs/sdks-library/client-side/sdk-js-react-installation) para obtener más información.
+> Además de las opciones disponibles en esta documentación, también es posible integrar **otros medios de pago** utilizando el **Brick de Payment** en **React Js**. Consulta la documentación [Renderizado por defecto](/developers/es/docs/checkout-bricks/payment-brick/default-rendering#editor_2) de Payment para obtener más detalles.
 ------------
 
 Para obtener una lista detallada de todos los medios de pago disponibles para integración, envía un **GET** con tu `access_token` al endpoint [/v1/payment_methods](/developers/es/reference/payment_methods/_payment_methods/get) y ejecuta la solicitud o, si lo prefieres, haz la solicitud utilizando uno de nuestros SDKs.

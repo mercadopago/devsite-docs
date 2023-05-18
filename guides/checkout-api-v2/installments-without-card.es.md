@@ -9,7 +9,7 @@ Al ofrecer esta opción en tu tienda, tus clientes podrán comprar un producto h
 >
 > Importante
 >
-> Además de las opciones disponibles en esta documentación, también es posible integrar pagos con tarjeta a través de la **SDK de React**. Consulte la documentación [SDK JS - React](/developers/es/docs/sdks-library/client-side/sdk-js-react-installation) para obtener más información.
+> Además de las opciones disponibles en esta documentación, también es posible configurar **cuotas sin tarjeta** utilizando el **Brick de Wallet** en **React Js**. Consulta la documentación [Renderizado por defecto](/developers/es/docs/checkout-bricks/wallet-brick/default-rendering#editor_2) de Wallet para obtener más detalles.
 
 En esta guía encontrarás los pasos necesarios para ofrecer cuotas sin tarjeta en tu tienda.
 

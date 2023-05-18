@@ -6,7 +6,7 @@ Pix is an instant electronic payment method offered by the Central Bank of Brazi
 >
 > Important
 >
-> In addition to the options available in this documentation, it is also possible to integrate card payments through the **React SDK**. See the [JS SDK - React](/developers/en/docs/sdks-library/client-side/sdk-js-react-installation) documentation for more information.
+> In addition to the options available in this documentation, it is also possible to integrate **payments with Pix** using the **Payment Brick** in **React Js**. Check [Default rendering](/developers/en/docs/checkout-bricks/payment-brick/default-rendering#editor_2) documentation of Payment for more details.
 
 To integrate payments with Pix, follow the steps below, but if you have already integrated card payments, start the integration from the [Add payment form](/developers/en/docs/checkout-api/integration-configuration/integrate-with-pix#bookmark_Add_payment_form) step.
 

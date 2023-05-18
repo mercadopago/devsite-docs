@@ -31,6 +31,42 @@ initMercadoPago('YOUR_PUBLIC_KEY');
 
 After completing the SDK installation, you can use the following modules to create the Checkout.
 
-- [Checkout Bricks](/developers/en/docs/sdks-library/client-side/sdk-js-react/checkout-bricks-installation)
-- [Métodos Core](/developers/en/docs/sdks-library/client-side/sdk-js-react/core-methods-installation)
+---
+future_product_avaible: 
+ - card_avaible: true
+ - card_icon: Pay
+ - card_title: Payment Brick
+ - card_description: Offer different payment methods from which your customers can choose, with the ability to save card details for future purchases.
+ - card_link: /developers/en/docs/checkout-bricks/payment-brick/default-rendering
+ - card_linkDescription: Learn more
+ - card_pillText: AVAILABLE
+ - card_avaible: true
+ - card_icon: Wallet
+ - card_title: Wallet Brick
+ - card_description: Link Mercado Pago Wallet and allow logged payments.
+ - card_link: /developers/en/docs/checkout-bricks/wallet-brick/default-rendering
+ - card_linkDescription: Learn more
+ - card_pillText: AVAILABLE
+ - card_avaible: true
+ - card_icon: Card
+ - card_title: Card Payment Brick
+ - card_description: Offer credit and debit card payments.
+ - card_link: /developers/en/docs/checkout-bricks/card-payment-brick/introduction
+ - card_linkDescription: Learn more
+ - card_pillText: AVAILABLE
+ - card_avaible: true
+ - card_icon: Loading
+ - card_title: Status Screen Brick
+ - card_description: Inform your customers of the results of the purchase process, after making the payment. 
+ - card_link: /developers/en/docs/checkout-bricks/status-screen-brick/default-rendering
+ - card_linkDescription: Learn more
+ - card_pillText: AVAILABLE
+---
+
+> NOTE
+>
+> Important
+>
+> If it is necessary to add or modify any logic in the flow of Core methods in React, please check the documentation [Core Methods](/developers/en/docs/sdks-library/client-side/sdk-js-react/core-methods-installation) in our SDK library.
+
 

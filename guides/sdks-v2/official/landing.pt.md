@@ -15,7 +15,7 @@ available_countries: mla, mlm, mco, mpe, mlu, mlm, mlc, mlb
 bullet_section_with_media: 
  - title: Client-side
  - type: normal
- - message: Com o MercadoPago.js instalado, você consegue fazer chamadas para o token de cartões e utilizar várias outras funcionalidades na integração.
+ - message: Com o MercadoPago.js e SDK de React instalados, você consegue fazer chamadas para o token de cartões e utilizar várias outras funcionalidades na integração.
  - image: /sdk/library-media-2.png 
 ---
 
