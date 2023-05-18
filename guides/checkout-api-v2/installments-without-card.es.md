@@ -1,19 +1,19 @@
 ----[mla, mlb, mlu, mco, mlc, mpe]----
-# Pagos en cuotas sin tarjeta
+# Financiación sin tarjeta
 
-**Mercado Crédito** es el método de financiación de Mercado Pago que permite pagar en cuotas sin tarjeta.
+**Mercado Crédito** es el método de financiación de Mercado Pago que ofrece la opción de pagar en cuotas sin contar con una tarjeta.
 
-Al ofrecer esta opción en tu tienda, tus clientes podrán comprar un producto hoy y pagarlo después en cuotas. Para tu negocio, la aprobación de la compra es inmediata y está garantizada, se te acredita la totalidad por adelantado y tus clientes nos pagan después.
+Con esta línea de crédito, administrada por Mercado Pago, el dinero se acredita en su totalidad en la cuenta del vendedor, mientras que el cliente puede optar por pagar en hasta 12 pagos fijos mensuales, sin necesidad de contar con una tarjeta. El usuario solamente tendrá que ingresar a su cuenta de Mercado Pago (o crear una), conocer su límite disponible y elegir en cuántas cuotas quiere pagar.
 
 En esta guía encontrarás los pasos necesarios para ofrecer cuotas sin tarjeta en tu tienda.
 
 ------------
 ----[mlm]----
-# Pagos en meses sin tarjeta de crédito
+# Financiamento sin tarjeta
 
-Mercado Crédito es el método de financiación de Mercado Pago que permite pagar en meses sin tarjeta de crédito.
+**Mercado Crédito** es el método de financiación de Mercado Pago que ofrece la opción de pagar en mensualidades sin contar con una tarjeta.
 
-Al ofrecer esta opción en tu tienda, tus clientes podrán comprar un producto hoy y pagarlo después a meses. Para tu negocio, la aprobación de la compra es inmediata y está garantizada, se te acredita la totalidad por adelantado y tus clientes nos pagan después.
+Con esta línea de crédito, administrada por Mercado Pago, el dinero se acredita en su totalidad en la cuenta del vendedor, mientras que el cliente puede optar por pagar en hasta 12 pagos fijos mensuales, sin necesidad de contar con una tarjeta. El usuario solamente tendrá que ingresar a su cuenta de Mercado Pago (o crear una), conocer su límite disponible y elegir en cuántos meses quiere pagar.
 
 En esta guía encontrarás los pasos necesarios para ofrecer meses sin tarjeta en tu tienda.
 

@@ -4,7 +4,22 @@ La opción de pagar con Cuenta de Mercado Pago, por defecto, se presenta en todo
 
 Esta opción permite a los usuarios registrados en Mercado Pago y/o Mercado Libre iniciar sesión y utilizar los métodos disponibles para realizar sus pagos, además de poder incluir nuevas opciones de pago, como tarjetas de crédito.
 
-Es posible pagar con **tarjeta**, **saldo disponible** y **Mercado Crédito** en un entorno seguro y optimizado, aumentando las posibilidades de conversión de ventas, además de permitir al vendedor ofrecer únicamente pagos con Cuenta de Mercado Pago. Con esto, la opción de pagar sin iniciar sesión no existirá, sin embargo, contribuirá a un aumento en la conversión de pagos.
+----[mco, mpe, mlu, mlc]----
+Es posible pagar con **tarjeta** y **saldo disponible** en un entorno seguro y optimizado, aumentando las posibilidades de conversión de ventas, además de permitir al vendedor ofrecer únicamente pagos con Cuenta de Mercado Pago. Con esto, la opción de pagar sin iniciar sesión no existirá, sin embargo, contribuirá a un aumento en la conversión de pagos. 
+
+------------
+----[mla]----
+Es posible pagar con **tarjeta**, **saldo disponible** y **financiación sin tarjeta** en un entorno seguro y optimizado, aumentando las posibilidades de conversión de ventas, además de permitir al vendedor ofrecer únicamente pagos con Cuenta de Mercado Pago. Con esto, la opción de pagar sin iniciar sesión no existirá, sin embargo, contribuirá a un aumento en la conversión de pagos. 
+
+------------
+----[mlm]----
+Es posible pagar con **tarjeta**, **saldo disponible** y **financiamento sin tarjeta** en un entorno seguro y optimizado, aumentando las posibilidades de conversión de ventas, además de permitir al vendedor ofrecer únicamente pagos con Cuenta de Mercado Pago. Con esto, la opción de pagar sin iniciar sesión no existirá, sin embargo, contribuirá a un aumento en la conversión de pagos. 
+
+------------
+----[mlb]----
+Es posible pagar con **tarjeta**, **saldo disponible**, **Pix** y **financiación sin tarjeta** en un entorno seguro y optimizado, aumentando las posibilidades de conversión de ventas, además de permitir al vendedor ofrecer únicamente pagos con Cuenta de Mercado Pago. Con esto, la opción de pagar sin iniciar sesión no existirá, sin embargo, contribuirá a un aumento en la conversión de pagos.
+
+------------
 
 > WARNING
 >

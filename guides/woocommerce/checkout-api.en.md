@@ -8,7 +8,9 @@ See below which payment methods are available for the store when integrating the
 ----[mlb]----
 * [Offline payment methods](/developers/en/docs/woocommerce/payments-configuration/checkout-api/offline-payments): cash payments (Mercado Pago account or boleto bancário) and lottery payment without a boleto bancário (with CPF) .
 * [Pix](/developers/en/docs/woocommerce/payments-configuration/checkout-api/pix): bank transfer available 24 hours a day. The Pix payment option will only be displayed if there is a Pix key registered on Mercado Pago. If you haven't created it yet, [click here](https://www.youtube.com/watch?v=60tApKYVnkA) and check the necessary steps.
+
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 * [Offline payment methods](/developers/en/docs/woocommerce/payments-configuration/checkout-api/offline-payments): cash (Mercado Pago account or ticket).
+
 ------------

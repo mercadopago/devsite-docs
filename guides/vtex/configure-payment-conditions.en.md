@@ -18,7 +18,7 @@ The configuration of payment conditions is done in the **Payment conditions** ta
 * **Debit Card:** this referers to debit card transactions. 
 ------------
 ----[mla, mlm, mlb]----
-* **Buy now, pay later Mercado Pago:** it's Mercado Pago's financing method that allows you to pay in installments without a credit card. To activate the **Buy now, pay later Mercado Pago** button, you must follow these steps listed below:
+* **Installments without card:** it's Mercado Pago's financing method that allows you to pay in installments without a credit card. To activate the **Buy now, pay later Mercado Pago** button, you must follow these steps listed below:
   * You must have created a MercadoPagoV2 gateway affiliation. If you haven't done it yet, you can learn how to do it in [this documentation](/developers/en/docs/vtex/gateway-affiliations).
   * In the VTEX administration panel, go to **Payments > Settings**.
   * Go to the **Payment Conditions** tab, click on the "+" button and search for **Buy now, pay later Mercado Pago**.

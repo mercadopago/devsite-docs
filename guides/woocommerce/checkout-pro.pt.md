@@ -62,18 +62,21 @@ No checkout, quando os compradores escolhem pagar com Mercado Pago, é apresenta
     - **Cartões de débito e crédito**.
     - **Dinheiro (saldo da conta Mercado Pago ou boleto bancário)**.
     - **Transferência bancária (Pix e PEC)**. A opção de pagamento Pix só será exibida se houver uma chave Pix cadastrada no Mercado Pago.
-    - **Parcelado sem cartão**. Ao configurar o Checkout Pro, você pode oferecer a opção de pagar em até 12 parcelas sem cartão. Caso queira exibir esta opção no checkout da sua loja, clique [aqui](/developers/pt/docs/woocommerce/payments-configuration/mercado-credito). 
+    - **Parcelamento sem cartão**. Ao configurar o Checkout Pro, você pode oferecer a opção de pagar em até 12 parcelas sem cartão. Caso queira exibir esta opção no checkout da sua loja, clique [aqui](/developers/pt/docs/woocommerce/payments-configuration/mercado-credito). 
+
 ------------
 ----[mla, mlm]----
     - **Cartões de débito e crédito**.
     - **Dinheiro (saldo da conta Mercado Pago)**.
     - **Transferência bancária**.
-    - **Parcelado sem cartão**. Ao configurar o Checkout Pro, você pode oferecer a opção de pagar em até 12 parcelas sem cartão. Se também quiser mostrar esta opção no checkout da sua loja, clique [aqui](/developers/pt/docs/woocommerce/payments-configuration/mercado-credito). 
+    - **Parcelamento sem cartão**. Ao configurar o Checkout Pro, você pode oferecer a opção de pagar em até 12 parcelas sem cartão. Se também quiser mostrar esta opção no checkout da sua loja, clique [aqui](/developers/pt/docs/woocommerce/payments-configuration/mercado-credito). 
+
 ------------
 ----[mpe, mco, mlu, mlc]----
     - **Cartões de débito e crédito**.
     - **Dinheiro (saldo da conta Mercado Pago)**.
     - **Transferência bancária**.
+
 ------------
 5. No campo **Parcelas máximas** você pode escolher quantas parcelas deseja oferecer aos clientes através do Mercado Pago. Você pode escolher entre 1 e 24 parcelas.
 
@@ -93,4 +96,3 @@ Se desejar, você pode alterar as opções nas configurações avançadas da for
 - **Comissões nos checkouts do Mercado Pago**: permite que você escolha um valor percentual adicional que deseja cobrar como comissão aos clientes que optarem por esta forma de pagamento. Para ativá-lo, você deve inserir uma porcentagem e selecionar o botão _Ativar e mostrar esta informação no checkout do Mercado Pago_.
 
 Para salvar as alterações nas configurações, clique no botão **Salvar alterações**.
-
