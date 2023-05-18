@@ -62,6 +62,7 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 | SUB_UNIT | Permite identificar el medio que se utilizó para cobrar una venta con Mercado Pago. | ------------  ----[mco, mlc, mpe, mlu]---- ------------
 | BALANCE_AMOUNT | En esta columna se visualiza el saldo que queda en una cuenta luego de que se ejecuta una operación que afecta el valor total. |
 | PAYOUT_BANK_ACCOUNT_NUMBER | Aquí se muestra el número completo de la cuenta a la que se envió dinero desde Mercado Pago. |
+| PRODUCT_SKU | Código con el que como vendedor podrás identificar tus productos. |
 > INFO
 >
 > (*) Esta información solo se podrá usar para conciliar, será tratada conforme a las leyes de protección de datos

@@ -62,6 +62,7 @@ If you have any doubts about the technical terms used, check the glossary below.
 | SUB_UNIT | Allows you to identify the method that was used to collect the payment of an order with Mercado Pago.| ------------ ----[mco, mlc, mpe, mlu]---- ------------
 | BALANCE_AMOUNT | This column shows the balance remaining in an account after a transaction that affects the total value is executed. |
 | PAYOUT_BANK_ACCOUNT_NUMBER | The full account number to which the money was sent from Mercado Pago is shown here. |
+| PRODUCT_SKU | SKU code with which you will be able to identify your sold products. |
 > 
 > INFO
 >
