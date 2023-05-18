@@ -10,7 +10,11 @@ Exemplo:
 curl --location --request GET 'https://api.mercadopago.com/v1/payments/search?access_token={{AccessToken}}&sort=date_created&criteria=desc&external_reference=njzY7fKb5HH5TgYwXO6jsh2xp&status=approved' \
 ```
 
-Alternativamente, é possível obter o ID do pagamento através de uma chamada na [API de busca de pagamentos](/developers/pt/reference/payments/_payments/post) utilizando sua referência externa e consultá-lo individualmente através da API de pagamentos. Para isso, realize um GET enviando o `external_reference` e o `access-token` (gerado pelo processo de autenticação do OAuth) ao endpoint [/v1/payments/{id}](/developers/pt/reference/payments/_payments/post). 
+Alternativamente, é possível obter o ID do pagamento através de uma chamada na [API de busca de pagamentos](/developers/pt/reference/payments/_payments/post) utilizando sua referência externa e consultá-lo individualmente através da API de pagamentos. 
+
+Para isso, realize um GET enviando o `external_reference` e o `access-token` (gerado pelo processo de autenticação do OAuth) ao endpoint [/v1/payments/{id}](/developers/pt/reference/payments/_payments/post). 
+
+- Nesse trecho "Para isso, realize um GET enviando o external_reference e o access-token (gerado pelo processo de autenticação do OAuth) ao endpoint /v1/payments/{id}." a chamada continua sendo ao endpoint de search "/v1/payments/search."
 
 Exemplo: 
 
@@ -21,7 +25,6 @@ curl -X GET  \
 
 Resposta: 
 
-[[[
 ```response
 {
     "results": [
@@ -31,9 +34,11 @@ Resposta:
     ]
 }
 ```
+
+Por fim, cada pagamento retornado na lista pode ser consultado com o `curl` abaixo.
+
 ```curl
 curl -X GET \
       'https://api.mercadopago.com/v1/payments/56789012345' \
       -H 'Authorization: Bearer {{AccessToken}}'
 ```
-]]]

@@ -21,7 +21,6 @@ curl -X GET \
 
 Respuesta:
 
-[[[
 ```response
 {
     "results": [
@@ -31,9 +30,11 @@ Respuesta:
     ]
 }
 ```
+
+Finalmente, cada pago devuelto en la lista se puede consultar con el `curl` a continuación.
+
 ```curl
 curl -X GET \
       'https://api.mercadopago.com/v1/payments/56789012345' \
       -H 'Authorization: Bearer {{AccessToken}}'
 ```
-]]]

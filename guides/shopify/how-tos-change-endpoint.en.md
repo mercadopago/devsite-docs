@@ -21,7 +21,6 @@ curl -X GET \
 
 Response:
 
-[[[
 ```response
 {
     "results": [
@@ -32,9 +31,10 @@ Response:
 }
 ```
 
+Finally, each payment returned in the list can be queried with the `curl` below.
+
 ```curl
 curl -X GET \
       'https://api.mercadopago.com/v1/payments/56789012345' \
       -H 'Authorization: Bearer {{AccessToken}}'
 ```
-]]]
