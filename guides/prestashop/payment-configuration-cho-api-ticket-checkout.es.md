@@ -1,7 +1,7 @@
 # Configurar pagos con ticket checkout
 
 ----[mlb]----
-Con **ticket checkout**, ofrezca pagos en efectivo en su tienda usando [Checkout Transparente](/developers/es/guides/checkout-api/landing).
+Con **ticket checkout**, ofrezca pagos en efectivo en su tienda usando [Checkout Transparente](/developers/es/guides/checkout-api/landing). 
 
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
