@@ -8,7 +8,7 @@ By offering this option in your store, your customers will be able to buy a prod
 >
 > Important
 >
-> In addition to the options available in this documentation, it is also possible to configure **installments without card** using the **Wallet Brick** in **React Js**. Check [Default rendering](/developers/en/docs/checkout-bricks/wallet-brick/default-rendering#editor_2) documentation of Wallet for more details.
+> In addition to the options available in this documentation, it is also possible to configure **installments without card** using the **Wallet Brick**. Check [Default rendering](/developers/en/docs/checkout-bricks/wallet-brick/default-rendering#editor_2) documentation of Wallet for more details.
 
 Follow the steps below to offer installments without card in your store.
 

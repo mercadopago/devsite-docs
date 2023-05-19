@@ -9,7 +9,7 @@ Al ofrecer esta opción en tu tienda, tus clientes podrán comprar un producto h
 >
 > Importante
 >
-> Además de las opciones disponibles en esta documentación, también es posible configurar **cuotas sin tarjeta** utilizando el **Brick de Wallet** en **React Js**. Consulta la documentación [Renderizado por defecto](/developers/es/docs/checkout-bricks/wallet-brick/default-rendering#editor_2) de Wallet para obtener más detalles.
+> Además de las opciones disponibles en esta documentación, también es posible configurar **cuotas sin tarjeta** utilizando el **Brick de Wallet**. Consulta la documentación [Renderizado por defecto](/developers/es/docs/checkout-bricks/wallet-brick/default-rendering#editor_2) de Wallet para obtener más detalles.
 
 En esta guía encontrarás los pasos necesarios para ofrecer cuotas sin tarjeta en tu tienda.
 

@@ -8,7 +8,7 @@ Ao oferecer esta opção na sua loja, seus clientes poderão comprar um produto 
 >
 > Importante
 >
-> Além das opções disponíveis nesta documentação, também é possível configurar **parcelamentos sem cartão** utilizando o **Brick de Wallet** em **React Js**. Veja a documentação [Renderização padrão](/developers/pt/docs/checkout-bricks/wallet-brick/default-rendering#editor_2) de Wallet para mais detalhes. 
+> Além das opções disponíveis nesta documentação, também é possível configurar **parcelamentos sem cartão** utilizando o **Brick de Wallet**. Veja a documentação [Renderização padrão](/developers/pt/docs/checkout-bricks/wallet-brick/default-rendering#editor_2) de Wallet para mais detalhes. 
 
 Siga os passos abaixo para oferecer o parcelamento sem cartão em sua loja.
 

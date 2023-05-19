@@ -7,7 +7,7 @@ Com o Checkout Transparente do Mercado Pago, é possível oferecer, além de car
 >
 > Importante
 >
-> Além das opções disponíveis nesta documentação, também é possível integrar **outros meios de pagamento** utilizando o **Brick de Payment** em **React Js**. Veja a documentação [Renderização padrão](/developers/pt/docs/checkout-bricks/payment-brick/default-rendering#editor_2) de Payment para mais detalhes. 
+> Além das opções disponíveis nesta documentação, também é possível integrar **outros meios de pagamento** utilizando o **Brick de Payment**. Veja a documentação [Renderização padrão](/developers/pt/docs/checkout-bricks/payment-brick/default-rendering#editor_2) de Payment para mais detalhes. 
 ------------
 
 ----[mla]----
@@ -17,7 +17,7 @@ Com o Checkout Transparente do Mercado Pago, também é possível oferecer pagam
 >
 > Importante
 >
-> Além das opções disponíveis nesta documentação, também é possível integrar **outros meios de pagamento** utilizando o **Brick de Payment** em **React Js**. Veja a documentação [Renderização padrão](/developers/pt/docs/checkout-bricks/payment-brick/default-rendering#editor_2) de Payment para mais detalhes. 
+> Além das opções disponíveis nesta documentação, também é possível integrar **outros meios de pagamento** utilizando o **Brick de Payment**. Veja a documentação [Renderização padrão](/developers/pt/docs/checkout-bricks/payment-brick/default-rendering#editor_2) de Payment para mais detalhes. 
 ------------
 
 ----[mlm]----
@@ -27,7 +27,7 @@ Com o Checkout Transparente do Mercado Pago, também é possível oferecer pagam
 >
 > Importante
 >
-> Além das opções disponíveis nesta documentação, também é possível integrar **outros meios de pagamento** utilizando o **Brick de Payment** em **React Js**. Veja a documentação [Renderização padrão](/developers/pt/docs/checkout-bricks/payment-brick/default-rendering#editor_2) de Payment para mais detalhes. 
+> Além das opções disponíveis nesta documentação, também é possível integrar **outros meios de pagamento** utilizando o **Brick de Payment**. Veja a documentação [Renderização padrão](/developers/pt/docs/checkout-bricks/payment-brick/default-rendering#editor_2) de Payment para mais detalhes. 
 ------------
 
 ----[mpe]----
@@ -37,7 +37,7 @@ Com o Checkout Transparente do Mercado Pago, também é possível oferecer pagam
 >
 > Importante
 >
-> Além das opções disponíveis nesta documentação, também é possível integrar **outros meios de pagamento** utilizando o **Brick de Payment** em **React Js**. Veja a documentação [Renderização padrão](/developers/pt/docs/checkout-bricks/payment-brick/default-rendering#editor_2) de Payment para mais detalhes. 
+> Além das opções disponíveis nesta documentação, também é possível integrar **outros meios de pagamento** utilizando o **Brick de Payment**. Veja a documentação [Renderização padrão](/developers/pt/docs/checkout-bricks/payment-brick/default-rendering#editor_2) de Payment para mais detalhes. 
 ------------
 
 ----[mco]----
@@ -47,7 +47,7 @@ Com o Checkout Transparente do Mercado Pago, também é possível oferecer pagam
 >
 > Importante
 >
-> Além das opções disponíveis nesta documentação, também é possível integrar **outros meios de pagamento** utilizando o **Brick de Payment** em **React Js**. Veja a documentação [Renderização padrão](/developers/pt/docs/checkout-bricks/payment-brick/default-rendering#editor_2) de Payment para mais detalhes. 
+> Além das opções disponíveis nesta documentação, também é possível integrar **outros meios de pagamento** utilizando o **Brick de Payment**. Veja a documentação [Renderização padrão](/developers/pt/docs/checkout-bricks/payment-brick/default-rendering#editor_2) de Payment para mais detalhes. 
 ------------
 
 ----[mlu]----
@@ -57,7 +57,7 @@ Com o Checkout Transparente do Mercado Pago, também é possível oferecer pagam
 >
 > Importante
 >
-> Além das opções disponíveis nesta documentação, também é possível integrar **outros meios de pagamento** utilizando o **Brick de Payment** em **React Js**. Veja a documentação [Renderização padrão](/developers/pt/docs/checkout-bricks/payment-brick/default-rendering#editor_2) de Payment para mais detalhes. 
+> Além das opções disponíveis nesta documentação, também é possível integrar **outros meios de pagamento** utilizando o **Brick de Payment**. Veja a documentação [Renderização padrão](/developers/pt/docs/checkout-bricks/payment-brick/default-rendering#editor_2) de Payment para mais detalhes. 
 ------------
 
 Para obter uma lista detalhada com todos os meios de pagamento disponíveis para integração, envie um **GET** com seu _Access token_ ao endpoint [/v1/payment_methods](/developers/pt/reference/payment_methods/_payment_methods/get) e execute a requisição ou, se preferir, faça a requisição utilizando os SDKs abaixo.

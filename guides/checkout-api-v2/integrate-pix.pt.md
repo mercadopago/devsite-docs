@@ -6,7 +6,7 @@ Pix é um meio de pagamento eletrônico instantâneo oferecido pelo Banco Centra
 >
 > Importante
 >
-> Além das opções disponíveis nesta documentação, também é possível integrar **pagamentos com Pix** utilizando o **Brick de Payment** em **React Js**. Veja a documentação [Renderização padrão](/developers/pt/docs/checkout-bricks/payment-brick/default-rendering#editor_2) de Payment para mais detalhes. 
+> Além das opções disponíveis nesta documentação, também é possível integrar **pagamentos com Pix** utilizando o **Brick de Payment**. Veja a documentação [Renderização padrão](/developers/pt/docs/checkout-bricks/payment-brick/default-rendering#editor_2) de Payment para mais detalhes. 
 
 Para integrar pagamentos via Pix, siga as etapas abaixo, mas caso você já tenha integrado pagamentos via cartão, inicie a integração a partir da etapa [Adicionar formulário de pagamento](/developers/pt/docs/checkout-api/integration-configuration/integrate-with-pix#bookmark_Adicionar_formulário_de_pagamento).
 

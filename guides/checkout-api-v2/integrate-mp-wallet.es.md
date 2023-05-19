@@ -6,7 +6,7 @@ La opción de pagar con Cuenta de Mercado Pago, por defecto, se presenta en todo
 >
 > Importante
 >
-> Además de las opciones disponibles en esta documentación, también es posible integrar pagos con **Cuenta Mercado Pago** utilizando el **Brick de Wallet** en **React Js**. Consulta la documentación [Renderizado por defecto](/developers/es/docs/checkout-bricks/wallet-brick/default-rendering#editor_2) de Wallet para obtener más detalles.
+> Además de las opciones disponibles en esta documentación, también es posible integrar pagos con **Cuenta Mercado Pago** utilizando el **Brick de Wallet**. Consulta la documentación [Renderizado por defecto](/developers/es/docs/checkout-bricks/wallet-brick/default-rendering#editor_2) de Wallet para obtener más detalles.
 
 Esta opción permite a los usuarios registrados en Mercado Pago y/o Mercado Libre iniciar sesión y utilizar los métodos disponibles para realizar sus pagos, además de poder incluir nuevas opciones de pago, como tarjetas de crédito.
 

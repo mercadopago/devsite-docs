@@ -8,7 +8,7 @@ As the card data is entered, an automatic search takes place for the issuer info
 >
 > Important
 >
-> In addition to the options available in this documentation, it is also possible to integrate **card payments** using the **CardPayment Brick** in **React Js**. Check [Default rendering](/developers/en/docs/checkout-bricks/card-payment-brick/default-rendering#editor_2) documentation of CardPayment for more details.
+> In addition to the options available in this documentation, it is also possible to integrate **card payments** using the **CardPayment Brick**. Check [Default rendering](/developers/en/docs/checkout-bricks/card-payment-brick/default-rendering#editor_2) documentation of CardPayment for more details.
 
 Check below the diagram that illustrates the card payment process using the Card Form.
 
