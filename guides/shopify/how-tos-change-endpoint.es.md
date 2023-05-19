@@ -12,7 +12,7 @@ Ejemplo:
 curl --location --request GET 'https://api.mercadopago.com/v1/payments/search?access_token={{AccessToken}}&sort=date_created&criteria=desc&external_reference=njzY7fKb5HH5TgYwXO6jsh2xp&status=approved' \
 ```
 
-Alternativamente, puede obtener una lista de solo los ID de pago asociados con una transacción de Shopify desde una llamada a la [API de búsqueda de pagos](/developers/en/reference/pagos/_pagos/post) usando su referencia externa y consultarlo individualmente a través de la API de pagos. 
+Alternativamente, puede obtener una lista de solo los ID de pago asociados con una transacción de Shopify desde una llamada a la [API de búsqueda de pagos](/developers/es/reference/payments/_payments_search/get) usando su referencia externa y consultarlo individualmente a través de la API de pagos. 
 
 Para hacerlo, realice un GET enviando `external_reference` y `access-token` (generados por el proceso de autenticación de OAuth) al endpoint [/v1/payments/{id}](/developers/es/reference/payments/_payments/post).
 
