@@ -18,15 +18,18 @@ Para integrar o Checkout Pro, siga os passos abaixo.
 7. Para configurar as experiências de pagamento da sua loja, clique em **Editar no site do Mercado Pago**.
 8. Em Checkout Mercado Pago, escolha os meios de pagamento que deseja oferecer no ambiente de pagamento do Mercado Pago, podendo ser: 
  ----[mlb]---- 
+ * **Parcelamento sem cartão**.
  * **Cartão de crédito**. Indique também o número máximo de parcelas permitidas.
  * **Cartão de débito**.
  * **Outros meios de pagamentos**. Indique também o número de dias para vencimento do boleto. Além disso, a opção de pagamento com Pix só será exibida se houver uma chave Pix cadastrada no Mercado Pago. Caso ainda não tenha criado, [clique aqui](https://www.youtube.com/watch?v=60tApKYVnkA) e veja o passo a passo.
 
  ------------ 
-----[mla, mlm, mpe, mco, mlu, mlc]---- 
+----[mla, mlm]----
+ * **Parcelamento sem cartão**.
  * **Cartão de crédito**.
  * **Cartão de débito**.
  * **Outros meios de pagamentos**. Indique também o número de dias para vencimento do boleto.
+
   ------------
 6. Por fim, clique em **Salvar configurações**.
 

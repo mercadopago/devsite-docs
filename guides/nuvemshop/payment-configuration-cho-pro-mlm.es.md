@@ -23,16 +23,19 @@ Para integrar Checkout Pro, sigue los pasos a continuación.
 7. Para configurar las experiencias de pago de su tienda, haz clic en **Editar en el sitio de Mercado Pago**.
 8. En el Checkout Mercado Pago, elige las formas de pago que quieres ofrecer en el entorno de pago de Mercado Pago, las cuales pueden ser:
 ----[mla, mpe, mco, mlu, mlc]---- 
+ * **Financiación sin tarjeta**.
  * **Tarjeta de crédito**. Elige también el número máximo de cuotas permitidas.
  * **Tarjeta de débito**.
  * **Otros medios de pago**. Elige también el número de días para vencimiento del ticket (incluye sábado y domingo). 
 ------------ 
 ----[mlb]---- 
+ * **Financiación sin tarjeta**.
  * **Tarjeta de crédito**. Elige también el número máximo de cuotas permitidas.
  * **Tarjeta de débito**.
  * **Otros medios de pago**. Elige también el número de días para vencimiento del ticket (incluye sábado y domingo). Además, la opción de pago con Pix solo se mostrará si existe una llave Pix registrada en Mercado Pago. Si aún no las creaste, [haz clic aquí](https://www.youtube.com/watch?v=60tApKYVnkA) y consulta el paso a paso.
 ------------ 
 ----[mlm]---- 
+ * **Financiamiento sin tarjeta**.
  * **Tarjeta de crédito**. Elige también el número máximo de meses permitidos.
  * **Tarjeta de débito**.
  * **Otros medios de pago**. Elige también el número de días para vencimiento del ticket (incluye sábado y domingo).
