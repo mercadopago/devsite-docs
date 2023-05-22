@@ -4,6 +4,13 @@ Neste método de integração, o responsável pela integração fica a cargo de 
 
 Na integração via Métodos Core, o integrador decide quando buscar as informações sobre o tipo de documento, além das informações do cartão (emissor e parcelas). Com isso, possui total flexibilidade na construção da experiência do fluxo de checkout.
 
+> NOTE
+>
+> Importante
+>
+> Além das opções disponíveis nesta documentação, também é possível integrar **pagamentos com cartão** utilizando o **Brick de CardPayment**. Veja a documentação [Renderização padrão](/developers/pt/docs/checkout-bricks/card-payment-brick/default-rendering#editor_2) do CardPayment para mais detalhes. 
+
+
 Confira abaixo o diagrama que ilustra o processo de pagamento via cartão utilizando Métodos Core.
 
 ![API-integration-flowchart](/images/api/api-integration-flowchart-coremethods-pt.png)
@@ -17,6 +24,10 @@ A primeira etapa do processo de integração de pagamentos com cartões é a **c
 <body>
   <script src="https://sdk.mercadopago.com/js/v2"></script>
 </body>
+```
+```bash
+npm install @mercadopago/sdk-js
+
 ```
 ]]]
 
@@ -33,10 +44,17 @@ As credenciais são chaves únicas com as quais identificamos uma integração n
 Esta é a primeira etapa de uma estrutura completa de código que deverá ser seguida para a correta integração do pagamento via cartão. Atente-se aos blocos abaixo para adicionar aos códigos conforme indicado.
 
 [[[
+```html
+<script>
+  const mp = new MercadoPago("YOUR_PUBLIC_KEY");
+</script>
+```
 ```javascript
-  <script>
-    const mp = new MercadoPago("YOUR_PUBLIC_KEY");
-  </script>
+import { loadMercadoPago } from "@mercadopago/sdk-js";
+
+await loadMercadoPago();
+const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
+
 ```
 ]]]
 

@@ -2,26 +2,63 @@
 
 ----[mlb]----
 Con el Checkout API de Mercado Pago, es posible ofrecer, además de tarjeta y Pix, **pagos vía boleto bancario y pago en agencias de lotería**.
+
+> NOTE
+>
+> Importante
+>
+> Además de las opciones disponibles en esta documentación, también es posible integrar **otros medios de pago** utilizando el **Brick de Payment**. Consulta la documentación [Renderizado por defecto](/developers/es/docs/checkout-bricks/payment-brick/default-rendering#editor_2) de Payment para obtener más detalles.
+
 ------------
 
 ----[mla]----
 Con el Checkout API de Mercado Pago, también es posible ofrecer pagos con **Rapipago** y/o **Pago Fácil**.
+
+> NOTE
+>
+> Importante
+>
+> Además de las opciones disponibles en esta documentación, también es posible integrar **otros medios de pago** utilizando el **Brick de Payment**. Consulta la documentación [Renderizado por defecto](/developers/es/docs/checkout-bricks/payment-brick/default-rendering#editor_2) de Payment para obtener más detalles.
 ------------
 
 ----[mlm]----
 Con el Checkout API de Mercado Pago, también se puede ofrecer pagos con **OXXO**, **Paycash**, **Citibanamex**, **Santander**, **BBVA Bancomer** y **Tarjeta Mercado Pago**.
+
+> NOTE
+>
+> Importante
+>
+> Además de las opciones disponibles en esta documentación, también es posible integrar **otros medios de pago** utilizando el **Brick de Payment**. Consulta la documentación [Renderizado por defecto](/developers/es/docs/checkout-bricks/payment-brick/default-rendering#editor_2) de Payment para obtener más detalles.
 ------------
 
 ----[mpe]----
 Con el Checkout API de Mercado Pago, también es posible ofrecer pagos a través de **PagoEfectivo**.
+
+> NOTE
+>
+> Importante
+>
+> Además de las opciones disponibles en esta documentación, también es posible integrar **otros medios de pago** utilizando el **Brick de Payment**. Consulta la documentación [Renderizado por defecto](/developers/es/docs/checkout-bricks/payment-brick/default-rendering#editor_2) de Payment para obtener más detalles.
 ------------
 
 ----[mco]----
 Con el Checkout API de Mercado Pago, también se puede ofrecer pagos con **Efecty**.
+
+> NOTE
+>
+> Importante
+>
+> Además de las opciones disponibles en esta documentación, también es posible integrar **otros medios de pago** utilizando el **Brick de Payment**. Consulta la documentación [Renderizado por defecto](/developers/es/docs/checkout-bricks/payment-brick/default-rendering#editor_2) de Payment para obtener más detalles.
 ------------
 
 ----[mlu]----
 Con el Checkout API de Mercado Pago, también es posible ofrecer pagos con **Abitab** y **Redpagos**.
+
+> NOTE
+>
+> Importante
+>
+> Además de las opciones disponibles en esta documentación, también es posible integrar **otros medios de pago** utilizando el **Brick de Payment**. Consulta la documentación [Renderizado por defecto](/developers/es/docs/checkout-bricks/payment-brick/default-rendering#editor_2) de Payment para obtener más detalles.
 ------------
 
 Para obtener una lista detallada de todos los medios de pago disponibles para integración, envía un **GET** con tu `access_token` al endpoint [/v1/payment_methods](/developers/es/reference/payment_methods/_payment_methods/get) y ejecuta la solicitud o, si lo prefieres, haz la solicitud utilizando uno de nuestros SDKs.
@@ -125,6 +162,10 @@ Esta captura se realiza incluyendo la biblioteca MercadoPago.js en tu proyecto, 
   <script src="https://sdk.mercadopago.com/js/v2"></script>
 </body>
 ```
+```bash
+npm install @mercadopago/sdk-js
+
+```
 ]]]
 
 
@@ -136,8 +177,19 @@ Esta es la primera etapa de una estructura de código completa que se debe segui
 
 
 [[[
+```html
+<script>
+  const mp = new MercadoPago("YOUR_PUBLIC_KEY");
+</script>
+
+```
 ```javascript
-const mp = new MercadoPago('YOUR_PUBLIC_KEY');
+
+import { loadMercadoPago } from "@mercadopago/sdk-js";
+
+await loadMercadoPago();
+const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
+
 ```
 ]]]
 

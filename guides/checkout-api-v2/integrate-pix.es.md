@@ -2,11 +2,11 @@
 
 Pix es un medio de pago electrónico instantáneo ofrecido por el Banco Central de Brasil a personas físicas y jurídicas. A través de Checkout API, es posible ofrecer esta opción de pago a través de un código QR o un código de pago.  
 
-> WARNING
+> NOTE
 >
 > Importante
 >
-> Para ofrecer pagos con Pix es necesario asegurarse de que las claves Pix han sido creadas. Si aún no las creaste, [haz clic aquí](https://www.youtube.com/watch?v=60tApKYVnkA) y consulta el paso a paso.
+> Además de las opciones disponibles en esta documentación, también es posible integrar **pagos con Pix** utilizando el **Brick de Payment**. Consulta la documentación [Renderizado por defecto](/developers/es/docs/checkout-bricks/payment-brick/default-rendering#editor_2) de Payment para obtener más detalles.
 
 Para integrar los pagos vía Pix, sigue las siguientes etapas; pero si ya integraste los pagos con tarjeta, inicia la integración desde la etapa [Añadir formulario de pago](/developers/es/docs/checkout-api/integration-configuration/integrate-with-pix#bookmark_Añadir_formulario_de_pago).
 
@@ -21,6 +21,10 @@ Después de crear las claves Pix, es necesario realizar la captura de datos para
   <script src="https://sdk.mercadopago.com/js/v2"></script>
 </body>
 ```
+```bash
+npm install @mercadopago/sdk-js
+
+```
 ]]]
 
 
@@ -31,11 +35,18 @@ Las credenciales son claves únicas con las que identificamos una integración e
 Esta es la primera etapa de una estructura de código completa que se debe seguir para integrar correctamente los pagos vía Pix. Presta atención a los siguientes bloques para añadirlos a los códigos como se indica.
 
 [[[
-```javascript
+```html
 
-  <script>
-    const mp = new MercadoPago("YOUR_PUBLIC_KEY");
-  </script>
+<script>
+  const mp = new MercadoPago("YOUR_PUBLIC_KEY");
+</script>
+```
+```javascript
+import { loadMercadoPago } from "@mercadopago/sdk-js";
+
+await loadMercadoPago();
+const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
+
 ```
 ]]]
 

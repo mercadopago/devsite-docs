@@ -4,6 +4,12 @@ La integración de los pagos con tarjeta se realiza a través de cardform. En es
 
 A medida que se introducen los datos de la tarjeta, se realiza una búsqueda automática de la información del emisor y las cuotas disponibles para ese método de pago. Con esto, la implementación del flujo es transparente para quien realiza la integración.
 
+> NOTE
+>
+> Importante
+>
+> Además de las opciones disponibles en esta documentación, también es posible integrar **pagos con tarjeta** utilizando el **Brick de CardPayment**. Consulta la documentación [Renderizado por defecto](/developers/es/docs/checkout-bricks/card-payment-brick/default-rendering#editor_2) de CardPayment para obtener más detalles.
+
 Consulta el siguiente diagrama que ilustra el proceso de pago con tarjeta utilizando Card Form.
 
 ![API-integration-flowchart](/images/api/api-integration-flowchart-cardform-2-es.png)
@@ -20,6 +26,11 @@ La primera etapa del proceso de integración de pagos con tarjeta es la captura 
   <script src="https://sdk.mercadopago.com/js/v2"></script>
 </body>
 ```
+```bash
+
+npm install @mercadopago/sdk-js
+
+```
 ]]]
 
 ## Configurar credencial
@@ -29,10 +40,17 @@ Las credenciales son claves únicas con las que identificamos una integración e
 Esta es la primera etapa de una estructura de código completa que se debe seguir para integrar correctamente pagos con tarjeta. Presta atención a los siguientes bloques para añadirlos a los códigos como se indica.
 
 [[[
+```html
+<script>
+  const mp = new MercadoPago("YOUR_PUBLIC_KEY");
+</script>
+```
 ```javascript
-  <script>
-    const mp = new MercadoPago("YOUR_PUBLIC_KEY");
-  </script>
+import { loadMercadoPago } from "@mercadopago/sdk-js";
+
+await loadMercadoPago();
+const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
+
 ```
 ]]]
 
