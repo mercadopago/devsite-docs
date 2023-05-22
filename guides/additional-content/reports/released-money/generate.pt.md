@@ -15,7 +15,7 @@ Você pode gerar um relatório de ----[mla]---- Liquidações ------------ ----[
 
 | Canais | Descrição |
 | --- | --- |
-| Painel do Mercado Pago | Para gerar manualmente o relatório a partir do seu painel Mercado Pago, vá até [Relatórios](https://www.mercadopago[FAKER][URL][DOMAIN]/movements) e selecione a opção "Relatórios criados".<br/><br/>Siga o passo a passo para [gerar seus relatórios a partir do painel](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/released-money/panel). |
+| Painel do Mercado Pago | Para gerar um relatório manualmente pelo Mercado Pago, vá até a seção [Relatórios e faturamento](https://www.mercadopago[FAKER][URL][DOMAIN]/movements)  clique em "Ir para Relatórios de pagamentos e extratos de conta" e escolha o relatório que desejar.<br/><br/>Siga o passo a passo para [gerar seus relatórios a partir do painel](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/released-money/panel). |
 | Integração via API | Para gerar manualmente o report ou agendar um de acordo com a frequência desejada, use a nossa integração via API. <br/><br/> Leia a documentação para [gerar relatórios por API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/released-money/api). |
 
 ## Características técnicas do relatório

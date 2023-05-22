@@ -25,7 +25,7 @@ A continuación se presentan los pasos para realizar una integración con 3DS.
 
 
 
-1. Debes usar el [SDK JS](/developers/es/docs/sdks-library/client-side/mp-js-v2) de Mercado Pago en el checkout para generar el [token de la tarjeta de crédito](/developers/es/docs/sdks-library/client-side/java/howto-migrate#bookmark_criar_token_do_cartão). 
+1. Debes usar el [SDK JS](/developers/es/docs/sdks-library/client-side/mp-js-v2) de Mercado Pago en el checkout para generar el [token de la tarjeta de crédito](/developers/es/docs/checkout-api/integration-configuration/card/integrate-via-cardform). 
 
 [[[
 ```Javascript

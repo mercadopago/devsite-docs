@@ -557,11 +557,11 @@ paths:
                   money_release_date:
                     type: string
                     example: 2019-07-24T14:47:58.000Z
-                    description: Date on which the payment is settled from the Payer's account (the payer) and is made available in the Mercado Pago account of the Collector (the one who receives the payment).
+                    description: Date on which the payment is settled and the money is made available in the Mercado Pago account of the Collector (the one who receives the payment).
                     x-description-i18n:
-                      eng: Date on which the payment is settled from the Payer's account (the payer) and is made available in the Mercado Pago account of the Collector (the one who receives the payment).
-                      spa: Fecha en que se liquida el pago de la cuenta del Payer (el pagador) y se pone a disposición en la cuenta de Mercado Pago del Collector (el que recibe el pago).
-                      por: Data em que o pagamento é liquidado da conta do Payer (o pagador) e é disponibilizado na conta Mercado Pago do Collector (aquele que recebe o pagamento).
+                      eng: Date on which the payment is settled and the money is made available in the Mercado Pago account of the Collector (the one who receives the payment).
+                      spa: Fecha en que se liquida el pago y se pone a disposición el dinero en la cuenta de Mercado Pago del Collector (el que recibe el pago).
+                      por: Data em que o pagamento é liquidado e o dinheiro é disponibilizado na conta Mercado Pago do Collector (aquele que recebe o pagamento).
                   operation_type:
                     $ref: '#/components/schemas/operation_type'
                   issuer_id:
@@ -1501,11 +1501,11 @@ paths:
                   money_release_date:
                     type: string
                     example: 2017-09-14T11:26:38.000Z
-                    description: Date on which the payment is settled from the Payer's account (the payer) and is made available in the Mercado Pago account of the Collector (the one who receives the payment).
+                    description: Date on which the payment is settled and the money is made available in the Mercado Pago account of the Collector (the one who receives the payment).
                     x-description-i18n:
-                      eng: Date on which the payment is settled from the Payer's account (the payer) and is made available in the Mercado Pago account of the Collector (the one who receives the payment).
-                      spa: Fecha en que se liquida el pago de la cuenta del Payer (el pagador) y se pone a disposición en la cuenta de Mercado Pago del Collector (el que recibe el pago).
-                      por: Data em que o pagamento é liquidado da conta do Payer (o pagador) e é disponibilizado na conta Mercado Pago do Collector (aquele que recebe o pagamento).
+                      eng: Date on which the payment is settled and the money is made available in the Mercado Pago account of the Collector (the one who receives the payment).
+                      spa: Fecha en que se liquida el pago y se pone a disposición el dinero en la cuenta de Mercado Pago del Collector (el que recibe el pago).
+                      por: Data em que o pagamento é liquidado e o dinheiro é disponibilizado na conta Mercado Pago do Collector (aquele que recebe o pagamento).
                   operation_type:
                     $ref: '#/components/schemas/operation_type'
                   issuer_id:
@@ -2118,11 +2118,11 @@ paths:
                   money_release_date:
                     type: string
                     example: 2019-07-24T14:47:58.000Z
-                    description: Date on which the payment is settled from the Payer's account (the payer) and is made available in the Mercado Pago account of the Collector (the one who receives the payment).
+                    description: Date on which the payment is settled and the money is made available in the Mercado Pago account of the Collector (the one who receives the payment).
                     x-description-i18n:
-                      eng: Date on which the payment is settled from the Payer's account (the payer) and is made available in the Mercado Pago account of the Collector (the one who receives the payment).
-                      spa: Fecha en que se liquida el pago de la cuenta del Payer (el pagador) y se pone a disposición en la cuenta de Mercado Pago del Collector (el que recibe el pago).
-                      por: Data em que o pagamento é liquidado da conta do Payer (o pagador) e é disponibilizado na conta Mercado Pago do Collector (aquele que recebe o pagamento).
+                      eng: Date on which the payment is settled and the money is made available in the Mercado Pago account of the Collector (the one who receives the payment).
+                      spa: Fecha en que se liquida el pago y se pone a disposición el dinero en la cuenta de Mercado Pago del Collector (el que recibe el pago).
+                      por: Data em que o pagamento é liquidado e o dinheiro é disponibilizado na conta Mercado Pago do Collector (aquele que recebe o pagamento).
                   operation_type:
                     $ref: '#/components/schemas/operation_type'
                   issuer_id:
@@ -3094,11 +3094,11 @@ paths:
                           money_release_date:
                             type: string
                             example: 2017-09-14T11:26:38.000Z
-                            description: Date on which the payment is settled from the Payer's account (the payer) and is made available in the Mercado Pago account of the Collector (the one who receives the payment).
+                            description: Date on which the payment is settled and the money is made available in the Mercado Pago account of the Collector (the one who receives the payment).
                             x-description-i18n:
-                              eng: Date on which the payment is settled from the Payer's account (the payer) and is made available in the Mercado Pago account of the Collector (the one who receives the payment).
-                              spa: Fecha en que se liquida el pago de la cuenta del Payer (el pagador) y se pone a disposición en la cuenta de Mercado Pago del Collector (el que recibe el pago).
-                              por: Data em que o pagamento é liquidado da conta do Payer (o pagador) e é disponibilizado na conta Mercado Pago do Collector (aquele que recebe o pagamento).
+                              eng: Date on which the payment is settled and the money is made available in the Mercado Pago account of the Collector (the one who receives the payment).
+                              spa: Fecha en que se liquida el pago y se pone a disposición el dinero en la cuenta de Mercado Pago del Collector (el que recibe el pago).
+                              por: Data em que o pagamento é liquidado e o dinheiro é disponibilizado na conta Mercado Pago do Collector (aquele que recebe o pagamento).
                           operation_type:
                             $ref: '#/components/schemas/operation_type'
                           issuer_id:

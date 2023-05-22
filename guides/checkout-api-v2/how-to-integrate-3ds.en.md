@@ -26,7 +26,7 @@ For **low-risk transactions**, the information sent at checkout is sufficient an
 Below are the steps to integrate with 3DS.
 
 
-1. Use the Mercado Pago [SDK JS](https://www.mercadopago.com.br/developers/en/docs/sdks-library/client-side/mp-js-v2) at checkout to generate the [credit card token](/developers/en/docs/sdks-library/client-side/java/howto-migrate#bookmark_create_card_token).
+1. Use the Mercado Pago [SDK JS](https://www.mercadopago.com.br/developers/en/docs/sdks-library/client-side/mp-js-v2) at checkout to generate the [credit card token](/developers/en/docs/checkout-api/integration-configuration/card/integrate-via-cardform).
 
 [[[
 ```Javascript

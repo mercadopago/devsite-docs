@@ -22,7 +22,7 @@ Para **transações de baixo risco**, as informações enviadas na finalização
 Abaixo estão as etapas para realizar uma integração com 3DS.
 
 
-1. Utilize o Mercado Pago [SDK JS](/developers/pt/docs/sdks-library/client-side/mp-js-v2) no checkout para gerar o [token do cartão de crédito](/developers/pt/docs/sdks-library/client-side/java/howto-migrate#bookmark_criar_token_do_cartão).
+1. Utilize o Mercado Pago [SDK JS](/developers/pt/docs/sdks-library/client-side/mp-js-v2) no checkout para gerar o [token do cartão de crédito](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform).
 
 [[[
 ```Javascript

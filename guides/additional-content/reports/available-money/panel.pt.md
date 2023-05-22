@@ -4,7 +4,7 @@ Gere seus relatórios de Dinheiro Disponível a partir do seu painel do Mercado 
 
  Siga estas etapas para gerar seus relatórios:
 
-1. Na sua conta do Mercado Pago, vá em [Relatórios](https://www.mercadopago.com.ar/balance/reports) e escolha a opção *Relatórios*.
+1. Na sua conta Mercado Pago, vá até a seção [Relatórios e faturamento](https://www.mercadopago.com.ar/balance/reports) e clique em *Relatórios de pagamentos e extratos de conta*.
 1. Vá na opção [Dinheiro Disponível](https://www.mercadopago.com.ar/balance/reports?page=1#!/bank-report) e clique em *Gerar relatório*.
 1. Pesquise retiradas por **período de tempo** e selecione as retiradas que quer conciliar.
 

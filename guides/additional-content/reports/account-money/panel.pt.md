@@ -4,7 +4,7 @@ Gere seus relatórios de Dinheiro em conta a partir do seu painel do Mercado Pag
 
 Siga estas etapas para gerar seus relatórios:
 
-1. Na sua conta do Mercado Pago, vá [em Relatórios](https://www.mercadopago.com.ar/balance/reports) e escolha a opção *Relatórios*.
+1. Na sua conta Mercado Pago, vá até a seção [Relatórios e faturamento](https://www.mercadopago.com.ar/balance/reports) e selecione *Relatórios de pagamentos e extratos de conta*.
 1. Vá em [relatório de Dinheiro em conta](https://www.mercadopago.com.ar/settings/release-options) e clique em *Gerar relatório*.
 1. Busque as transações por período de tempo e selecione as que quer conciliar.
 
