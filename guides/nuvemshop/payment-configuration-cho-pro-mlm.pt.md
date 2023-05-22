@@ -19,16 +19,16 @@ Para integrar o Checkout Pro, siga os passos abaixo.
 8. Em Checkout Mercado Pago, escolha os meios de pagamento que deseja oferecer no ambiente de pagamento do Mercado Pago, podendo ser: 
  ----[mlb]---- 
  * **Parcelamento sem cartão**: habilite a modalidade de financiamento do Mercado Pago, o Mercado Crédito, que oferece a opção de parcelar sem precisar de cartão. Com essa linha de crédito, administrada pelo Mercado Pago, o pagamento é creditado integralmente na conta do vendedor, podendo o cliente optar por pagar em até 12 parcelas fixas mensais e sem a necessidade de cartão. <br>
- * **Cartão de crédito**: selecione as bandeiras que deseja habilitar em sua loja e, logo abaixo, indique também o número máximo de parcelas a serem permitidas para parcelamento de compras. <br>
+ * **Cartão de crédito**: selecione as bandeiras que deseja habilitar em sua loja e, logo abaixo, indique também o **número máximo de parcelas a serem permitidas para parcelamento de compras**. <br>
  * **Cartão de débito**: selecione as bandeiras que deseja habilitar em sua loja. <br>
- * **Outros meios de pagamentos**: selecione outros tipos de meios de pagamento que deseja habilitar em sua loja como, por exemplo, Pix e boleto bancário e, logo abaixo, indique também o número de dias para vencimento do boleto. A opção de pagamento com Pix só será exibida se houver uma chave Pix cadastrada no Mercado Pago. Caso ainda não tenha criado, [clique aqui](https://www.youtube.com/watch?v=60tApKYVnkA) e veja o passo a passo.
+ * **Outros meios de pagamentos**: selecione outros tipos de meios de pagamento que deseja habilitar em sua loja como, por exemplo, Pix e boleto bancário e, logo abaixo, indique também o **número de dias para vencimento do boleto**. A opção de pagamento com Pix só será exibida se houver uma chave Pix cadastrada no Mercado Pago. Caso ainda não tenha criado, [clique aqui](https://www.youtube.com/watch?v=60tApKYVnkA) e veja o passo a passo.
 
  ------------ 
 ----[mla, mlm]----
  * **Parcelamento sem cartão**: habilite a modalidade de financiamento do Mercado Pago, o Mercado Crédito, que oferece a opção de parcelar sem precisar de cartão. Com essa linha de crédito, administrada pelo Mercado Pago, o pagamento é creditado integralmente na conta do vendedor, podendo o cliente optar por pagar em até 12 parcelas fixas mensais e sem a necessidade de cartão. <br>
- * **Cartão de crédito**: selecione as bandeiras que deseja habilitar em sua loja e, logo abaixo, indique também o número máximo de parcelas a serem permitidas para parcelamento de compras. <br>
+ * **Cartão de crédito**: selecione as bandeiras que deseja habilitar em sua loja e, logo abaixo, indique também o **número máximo de parcelas a serem permitidas para parcelamento de compras**. <br>
  * **Cartão de débito**: selecione as bandeiras que deseja habilitar em sua loja. <br>
- * **Outros meios de pagamentos**: selecione outros tipos de meios de pagamento que deseja habilitar em sua loja como, por exemplo, OXXO e Paycash e, logo abaixo, indique também o número de dias para vencimento do ticket.
+ * **Outros meios de pagamentos**: selecione outros tipos de meios de pagamento que deseja habilitar em sua loja como, por exemplo, OXXO e Paycash e, logo abaixo, indique também o **número de dias para vencimento do ticket**.
 
   ------------
 6. Por fim, clique em **Salvar configurações**.
