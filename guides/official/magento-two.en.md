@@ -1,4 +1,4 @@
-# Magento 2
+# Adobe Commerce (Magento)
 
 > WARNING
 >
@@ -6,7 +6,7 @@
 >
 > Protect your integration!
 >
-> In October 2022, the Magento 2 plugin versions before 3.5.0 will be discontinued. Keep your store always up to date with the latest version to avoid having to suspend transactions and exposing sensitive data.
+> In October 2022, the Adobe Commerce (Magento) plugin versions before 3.5.0 will be discontinued. Keep your store always up to date with the latest version to avoid having to suspend transactions and exposing sensitive data.
 >
 > This documentation is for internal team use only,  as it has been deprecated or is an exclusive product. For further details, talk to the sales or integrations team.
 

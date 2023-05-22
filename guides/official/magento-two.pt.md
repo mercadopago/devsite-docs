@@ -1,4 +1,4 @@
-# Magento 2
+# Adobe Commerce (Magento)
 
 > WARNING
 >
@@ -6,7 +6,7 @@
 >
 > Proteja a sua integração!
 >
-> Em outubro de 2022, versões do plugin Magento 2 anteriores a 3.5.0 serão descontinuadas. Mantenha sua loja sempre atualizada com a versão mais recente para não suspender transações e expor dados sensíveis.
+> Em outubro de 2022, versões do plugin Adobe Commerce (Magento) anteriores a 3.5.0 serão descontinuadas. Mantenha sua loja sempre atualizada com a versão mais recente para não suspender transações e expor dados sensíveis.
 >
 > Esta documentação é apenas para uso interno da equipe porque está obsoleta ou é um produto exclusivo. Para mais detalhes, fale com a equipe de vendas ou de integrações.
 
@@ -28,7 +28,7 @@
 
 ## Funcionalidades
 
-O módulo do Mercado Pago para o Magento esta integrado com as seguintes funcionalidades e soluções de pagamento:
+O módulo do Mercado Pago para o Adobe Commerce (Magento) esta integrado com as seguintes funcionalidades e soluções de pagamento:
 
 * [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/introduction)
     * [Pagamento com dois cartões](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations/#bookmark_pagamentos_com_2_cartão_de_crédito)

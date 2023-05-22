@@ -48,7 +48,7 @@ Veja abaixo a disponibilidade dos nossos produtos por plataforma em cada país e
 | Prestashop | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 |
 | Wix | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 |
 | Linx Commerce | - | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 |
-| Magento 2 | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 |
+| Adobe Commerce (Magento) | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 |
 | iSet | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 |
 | Yampi | - | 🇧🇷 |
 
@@ -65,7 +65,7 @@ Veja abaixo a disponibilidade dos nossos produtos por plataforma em cada país e
 | Prestashop | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 |
 | Wix | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 |
 | Linx Commerce | - | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 |
-| Magento 2 | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 |
+| Adobe Commerce (Magento) | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 |
 | iSet | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 |
 | Yampi | - | 🇧🇷 |
 

@@ -78,7 +78,7 @@ Si usas nuestras herramientas, para la nueva versión de la API es necesario que
 | Herramienta | Versión |
 | --- | --- |
 | Magento 1.x | 2.11.4 |
-| Magento 2.x | 2.2.0 |
+| MAdobe Commerce (Magento).x | 2.2.0 |
 | Opencart 3.x | 4.1 |
 | Opencart 2.3 | 3.2 |
 | WooCommerce | 3.0.17 |
