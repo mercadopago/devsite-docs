@@ -3343,11 +3343,11 @@ paths:
         eng: Catalog import
         spa: Importación de catálogo
         por: Importação de catálogo
-      description: Endpoint to send a catalog to be imported asynchronously, to one or more stores. Each store generates an import identifier that can be used to check the process status afterwards. http response status is 202 when all the publications were sent for processing, or 206 in case some publication failed. Validation errors will return http 400 and no publication will be created.
+      description: Endpoint to send a catalog to be imported asynchronously, to one or more stores. Each store generates an import identifier that can be used to check the process status afterwards.
       x-description-i18n:
-        eng: Endpoint to send a catalog to be imported asynchronously, to one or more stores. Each store generates an import identifier that can be used to check the process status afterwards. http response status is 202 when all the publications were sent for processing, or 206 in case some publication failed. Validation errors will return http 400 and no publication will be created.
-        spa: Endpoint para importar un catálogo asincrónicamente, a una o más tiendas. Cada tienda genera un identificador de importación que se puede utilizar para comprobar el estado del proceso posteriormente. El estado de respuesta de http es 202 cuando todas las publicaciones se enviaron para su procesamiento, o 206 en caso de que alguna publicación falle. Los errores de validación devolverán http 400 y no se creará ninguna publicación.
-        por: Endpoint para importar um catálogo de forma assíncrona, para uma ou mais lojas. Cada loja gera um identificador de importação que pode ser usado para verificar o status do processo posteriormente. O status da resposta http é 202 quando todas as publicações foram enviadas para processamento ou 206 caso alguma publicação tenha falhado. Os erros de validação retornarão http 400 e nenhuma publicação será criada.
+        eng: Endpoint to send a catalog to be imported asynchronously, to one or more stores. Each store generates an import identifier that can be used to check the process status afterwards
+        spa: Endpoint para importar un catálogo asincrónicamente, a una o más tiendas. Cada tienda genera un identificador de importación que se puede utilizar para comprobar el estado del proceso posteriormente
+        por: Endpoint para importar um catálogo de forma assíncrona, para uma ou mais lojas. Cada loja gera um identificador de importação que pode ser usado para verificar o status do processo posteriormente
       requestBody:
         content:
           application/json:
@@ -3559,8 +3559,8 @@ paths:
                                             por: Atual estado do item de comeplemento, pode estar ativo ("actived") ou pausado ("paused").
                                           example: "active"
                                           enum:
-                                            - active--Active the item.
-                                            - paused--Pause the item.
+                                            - active -- Active the item.
+                                            - paused -- Pause the item.
       responses:
         '200':
           description: Success
@@ -3677,9 +3677,9 @@ paths:
         por: Consulta ao status de publicação.
       description: Endpoint to check the current status of a catalog publication, using the generated id returned in the publication response.
       x-description-i18n:
-        eng: Endpoint to check the current status of a catalog publication, using the generated id returned in the publication response.
-        spa: Endpoint para verificar el estado actual de una publicación de catálogo, utilizando la ID generada devuelta en la respuesta de publicación.
-        por: Endpoint para verificar o status atual de uma publicação de catálogo, usando o id gerado retornado na resposta da publicação.
+        eng: Endpoint to check the current status of a catalog publication, using the generated id returned in the publication response
+        spa: Endpoint para verificar el estado actual de una publicación de catálogo, utilizando la ID generada devuelta en la respuesta de publicación
+        por: Endpoint para verificar o status atual de uma publicação de catálogo, usando o id gerado retornado na resposta da publicação
       parameters:
         - name: publication_id
           in: path
@@ -3723,9 +3723,9 @@ paths:
         por: Atualizar item.
       description: Endpoint to update an item status.
       x-description-i18n:
-        eng: Endpoint to update an item status.
-        spa: Endpoint para actualizar el estado de un ítem.
-        por: Endpoint para atualizar o status de um item.
+        eng: Endpoint to update an item status
+        spa: Endpoint para actualizar el estado de un ítem
+        por: Endpoint para atualizar o status de um item
       parameters:
         - name: external_store_id
           in: path
