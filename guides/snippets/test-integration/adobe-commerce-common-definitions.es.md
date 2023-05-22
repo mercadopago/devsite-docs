@@ -1,5 +1,3 @@
-En la sección **Common Payment Method Definitions**, es posible definir algunas características generales de la plataforma para el uso de Checkout Pro. Completa cada uno de los campos solicitados de acuerdo con sus respectivas descripciones.
-
 ----[mlb]----
 En la sección **Common Payment Method Definitions**, puedes definir algunas características generales de la plataforma para el uso de Checkout Transparente. Completa cada uno de los campos solicitados de acuerdo con la descripción a continuación.
 
