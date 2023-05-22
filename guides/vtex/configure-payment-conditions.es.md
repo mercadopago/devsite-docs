@@ -15,22 +15,23 @@ La configuración de los planes de pago se realiza en la pestaña **Planes de pa
 * **Tarjeta de Crédito:** se refiere a transacciones con tarjeta de crédito que se realizan en el sitio web de tu tienda. Esta configuración requiere que selecciones cada marca de tarjeta de crédito que desees en tu tienda. [Puedes hacer clic aquí para descubrir las marcas de tarjeta de crédito disponibles](/developers/es/docs/vtex/payment-methods). Además, dependiendo de las condiciones de pago que selecciones (Efectivo o Cuotas), tu configuración puede requerir que completes campos adicionales. Para obtener más información sobre cómo configurar las cuotas en VTEX, haz clic [aquí](https://help.vtex.com/es/tutorial/condicoes-de-pagamento--tutorials_455#parcelado-sem-juros). 
 
 ----[mla, mlu, mlc, mlm, mpe, mco]----
-* **Tarjeta de Débito:** se refiere a transacciones con tarjeta de débito. ------------
+* **Tarjeta de débito:** se refiere a transacciones con tarjeta de débito. 
 
+------------
 ----[mla, mlb]----
-* **Financiación sin tarjeta:** es el método de financiación de Mercado Pago que permite pagar en cuotas sin tarjeta. Para activar el botón de **Buy now, pay later Mercado Pago**, puedes seguir los pasos enumerados a continuación:
+* **Financiación sin tarjeta:** es el método de financiación de Mercado Pago, el "Mercado de Crédito, que ofrece la opción de pagar en mensualidades sin contar con una tarjeta. Con esta línea de crédito, administrada por Mercado Pago, el dinero se acredita en su totalidad en la cuenta del vendedor, mientras que el cliente puede optar por pagar en hasta 12 pagos fijos mensuales, sin necesidad de contar con una tarjeta. Para activar el botón de **Buy Now Pay Latter Mercado Pago**, puedes seguir los pasos enumerados a continuación:
   * Debes tener creada una afiliación de gateway de MercadoPagoV2. Si todavía no lo hiciste, puedes ver cómo hacerlo en [esta documentación](/developers/es/docs/vtex/gateway-affiliations).
   * En el panel de administración de VTEX, accede a **Pagos > Configuración**.
-  * Ingresa a la pestaña **Condiciones de Pago**, haz clic en el botón "+" y busca por **Buy now, pay later Mercado Pago**.
+  * Ingresa a la pestaña **Condiciones de Pago**, haz clic en el botón "+" y busca por **Buy Now Pay Latter Mercado Pago**.
   * Nombra la regla para facilitar su identificación y activa la condición de pago en el campo **Estado**.
   * En **Proceso con afiliación**, elige MercadoPagoV2 como tu afiliación.
   * Haz click en **Guardar**, ¡y listo!
 ------------
 ----[mlm]----
-* **Financiamiento sin tarjeta:** es el método de financiamento de Mercado Pago que permite pagar en cuotas sin tarjeta. Para activar el botón de **Buy now, pay later Mercado Pago**, puedes seguir los pasos enumerados a continuación:
+* **Financiamiento sin tarjeta:** es el método de financiamiento de Mercado Pago, el "Mercado de Crédito", que ofrece la opción de pagar en cuotas sin contar con una tarjeta. Con esta línea de crédito, administrada por Mercado Pago, el dinero se acredita en su totalidad en la cuenta del vendedor, mientras que el cliente puede optar por pagar en hasta 12 pagos fijos mensuales, sin necesidad de contar con una tarjeta. Para activar el botón de **Buy Now Pay Latter Mercado Pago**, puedes seguir los pasos enumerados a continuación:
   * Debes tener creada una afiliación de gateway de MercadoPagoV2. Si todavía no lo hiciste, puedes ver cómo hacerlo en [esta documentación](/developers/es/docs/vtex/gateway-affiliations).
   * En el panel de administración de VTEX, accede a **Pagos > Configuración**.
-  * Ingresa a la pestaña **Condiciones de Pago**, haz clic en el botón "+" y busca por **Buy now, pay later Mercado Pago**.
+  * Ingresa a la pestaña **Condiciones de Pago**, haz clic en el botón "+" y busca por **Buy Now Pay Latter Mercado Pago**.
   * Nombra la regla para facilitar su identificación y activa la condición de pago en el campo **Estado**.
   * En **Proceso con afiliación**, elige MercadoPagoV2 como tu afiliación.
   * Haz click en **Guardar**, ¡y listo!
