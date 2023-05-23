@@ -1,4 +1,3 @@
-----[mla, mlm, mlb]----
 # Installments without card
 
 **Mercado Credits** is Mercado Pago’s financing method that allows paying in installments without having a card.
@@ -8,7 +7,6 @@ With this line of credit, administered by Mercado Pago, the payment is credited 
 **Mercado Credits** is currently offered in our [Checkout Pro](/developers/en/docs/checkout-pro/landing), and now it is also possible to access directly from the store checkout. If you haven't set up Checkout Pro yet, you must access the [Configure payments with Checkout Pro](/developers/en/docs/woocommerce/payments-configuration/checkout-pro) section.
 
 If you want to **show Mercado Credits in your store's checkout**, follow the steps below.
-
 
 ## Configure the payment method in your store's checkout
 
@@ -29,5 +27,3 @@ If you want to **show Mercado Credits in your store's checkout**, follow the ste
 ![woo-credits-admin-en](/images/woocomerce/woo-credits-en.png)
 
 </center>
-------------
-

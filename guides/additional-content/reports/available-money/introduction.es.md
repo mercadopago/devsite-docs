@@ -48,7 +48,7 @@ Ten en cuenta que la generación del reporte lleva unos minutos dependiendo de c
 
 Una vez disponible, estará en tu bandeja de reportes y siempre lo podrás descargar de dos formas:
 
-* Desde un link de descarga que te enviaremos por e-mail.
+----[mla, mlm]---- * Desde tu cuenta de Mercado Pago, ve a *Informes y facturación*, elige la opción de "Reportes de tus cobros y estados de cuenta" y luego *Dinero retirado*. ------------ ----[mlb, mpe, mlu, mco]---- * Desde un link de descarga que te enviaremos por e-mail. ------------
 * Desde tu cuenta de Mercado Pago, en *Reportes de Dinero retirado*. 
 
 ### Valores del reporte

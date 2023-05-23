@@ -2,7 +2,7 @@
 # PSE
 Con el Checkout API de Mercado Pago puedes ofrecer pagos con **PSE -Pagos Seguros en Línea-**, el servicio que permite realizar compras y pagos a través de internet debitando los recursos en línea directamente de cuentas de ahorros, corriente o depósito electrónico.
 
-Para obtener una lista detallada de todos los medios de pago disponibles para integración, envía un **GET** con tu `access_token` al endpoint [/v1/payment_methods](/developers/es/reference/payment_methods/_payment_methods/get) y ejecuta la solicitud o, si lo prefieres, haz la solicitud utilizando uno de nuestros SDKs.
+Para obtener una lista detallada de todos los medios de pago disponibles para integración, envía un **GET** con tu _Access_token_ al endpoint [/v1/payment_methods](/developers/es/reference/payment_methods/_payment_methods/get) y ejecuta la solicitud o, si lo prefieres, haz la solicitud utilizando uno de nuestros SDKs.
 
 [[[
 ```php
@@ -145,7 +145,7 @@ Con la biblioteca `MercadoPago.js` incluida, añade el siguiente formulario de p
 
 Después de configurar la credencial y añadir el formulario de pago, es necesario obtener los tipos de documentos que se utilizarán para rellenar el formulario de pago.
 
-Al incluir el elemento `select` con el id: `form-checkout__identificationType` que se encuentra en el formulario, será posible completar automáticamente las opciones disponibles al llamar la siguiente función:
+Al incluir el elemento `select` con el ID `id = docType` que se encuentra en el formulario, será posible completar automáticamente las opciones disponibles al llamar la siguiente función:
 
 [[[
 ```javascript

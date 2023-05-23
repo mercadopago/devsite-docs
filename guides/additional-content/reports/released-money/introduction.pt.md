@@ -31,7 +31,7 @@ Lembre-se de que a geração deste relatório leva alguns minutos, dependendo de
 Ao estar disponível, ele ficará na sua bandeja de relatórios e você poderá baixá-lo de duas formas:
 
 * Por um link de download que enviaremos via e-mail.
-* Na sua conta do Mercado Pago, acesse seus relatórios e selecione a opção en *Relatório de liberação*. 
+* Na sua conta Mercado Pago, vá até "Relatórios de pagamentos e extratos de conta" e selecione o relatório *Liberações*. 
 
 ### Valores do relatório
 
@@ -48,7 +48,7 @@ Os prazos de liberação têm relação com os tempos dos bancos ou com os fluxo
 
 **Este relatório é usado para conciliar** o dinheiro que existe na sua conta em um determinado momento e inclui as transações que o compõem. 
 
-Gere o relatório de ----[mla]---- Liquidações ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------ toda vez que precisar reconciliar os detalhes do dinheiro liberado entre duas datas. Você poderá saber quando cada transação foi feita, em que conceito e por qual quantia, incluindo os casos de bloqueio e desbloqueio. 
+Gere o relatório de ----[mla]---- Liquidações ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------ toda vez que precisar reconciliar os detalhes do dinheiro liberado entre duas datas. Você poderá saber quando cada transação foi feita, em que conceito e por qual quantia. 
 
 
 ### Use o relatório para conhecer seu histórico
