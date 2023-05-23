@@ -8,10 +8,10 @@ With this line of credit, administered by Mercado Pago, the payment is credited 
 
 If you want to **show Mercado Credits in your store's checkout**, follow the steps below.
 
-## Configure the payment method in your store's checkout
+1. In your store's Administrative Panel at Nuvemshop, access **Potencializar > My apps**.
+2. Locate the Mercado Pago plugin in the list of applications and click on **Configure application**.
+3. In the list of payment methods, locate the Mercado Pago plugin and click on **Edit**.
+4. Scroll down to the bottom of the page and click on **Edit on Mercado Pago website**.
+5. Enable the **Installment without card** option.
 
-1. On the **Installments without card** button, click on **Settings**.
-2. Search for **Activate installments without a card** in your store checkout and click on the slider button to enable this payment method. You must check its status going from inactive to **active**.
-3. In the **Title in the checkout** field, you can choose the name with which this payment method will be displayed in the store. We recommend using **"Up to 12 installments without a card with Mercado Pago"**.
-4. To inform your clients of this new payment method in each product web page, you must search for the **Inform your customers about the option of paying in installments without a card**, and click on the slider button that will enable this component.
-5. Click the **Save all changes button** to finish with your configuration.
+Ready! The financing method is enabled in your store.
