@@ -324,8 +324,12 @@ Veja abaixo um exemplo da resposta:
 
 A resposta, como você pode ver no `json` acima, mostrará o status pendente até que o comprador efetue o pagamento.
 
-## Mostrar status do pagamento
+## Redirecione o comprador ao PSE
 
-Após criar o pagamento do backend com o SDK do Mercado Pago, utilize o **id** recebido na resposta para criar uma instância do [Status Screen Brick](/developers/pt/docs/checkout-bricks/status-screen-brick/introduction) e mostre ao comprador.
+Após criar o pagamento do backend com o SDK do Mercado Pago, utilize o **id** recebido na resposta para criar uma instância do [Status Screen Brick](/developers/pt/docs/checkout-bricks/status-screen-brick/introduction) e mostre ao comprador. Descubra como é fácil integrar [clique aqui](/developers/pt/docs/checkout-bricks/status-screen-brick/default-rendering).
 
-Além de mostrar o status do pagamento, o Status Screen Brick também exibirá informações relacionadas à compra e um botão no qual o usuário pode clicar e ser redirecionado para efetuar o pagamento. Descubra como é fácil integrar [clique aqui](/developers/pt/docs/checkout-bricks/status-screen-brick/default-rendering).
+O Status Screen Brick exibirá uma tela informando ao comprador que ele será redirecionado ao site do PSE para efetuar o pagamento. Nós cuidamos do fluxo de checkout com o PSE e, assim que o usuário pagar, redirecionaremos o comprador para o seu site utilizando o `callback_url` que nos foi enviado ao criar o checkout.
+
+## Mostrar status de pagamento
+
+Uma vez que o pagamento já foi concluído, também é possível continuar usando o Status Screen Brick para mostrar o status do pagamento ao usuário em seu site, por exemplo. Basta criar a instância da tela de status usando o ID de pagamento.

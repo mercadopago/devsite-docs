@@ -324,8 +324,12 @@ Below is an example of the response:
 
 The response, as you can see in the `json` above, will show the pending status until the buyer makes the payment.
 
+## Redirect buyer to PSE
+
+After creating the payment from the backend with the Mercado Pago SDK, use the **id** received in the response to create an instance of the [Status Screen Brick](/developers/en/docs/checkout-bricks/status-screen-brick/introduction) and show it to the buyer. Find out how easy it is to integrate [by clicking here](/developers/en/docs/checkout-bricks/status-screen-brick/default-rendering).
+
+The Status Screen Brick will display a screen informing the buyer that they will be redirected to the PSE site to make the payment. We take care of the checkout flow with the PSE, and once the user has paid, we'll redirect the buyer to your website, using the `callback_url` sent to us when creating the checkout.
+
 ## Show payment status
 
-After creating the payment from the backend with the Mercado Pago SDK, use the **id** received in the response to create an instance of the [Status Screen Brick](/developers/en/docs/checkout-bricks/status-screen-brick/introduction) and show it to the buyer.
-
-In addition to showing the status of the payment, the Status Screen Brick will also display information related to the purchase and a button that the user can click and be redirected to make the payment. Find out how easy it is to integrate [click here](/developers/en/docs/checkout-bricks/status-screen-brick/default-rendering).
+Once the payment has already been completed, it is also possible to continue using the Status Screen Brick to show the payment status to the user on your website, for example. Simply create the Status Screen instance using the payment ID.
