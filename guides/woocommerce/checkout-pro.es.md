@@ -65,7 +65,7 @@ Al concluir la compra, cuando los compradores eligen pagar con Mercado Pago, se 
     - **Financiación sin tarjeta**. Configurando Checkout Pro, puedes ofrecer la opción de pagar en hasta 12 veces sin tarjeta. Si, además, quieres mostrar esta opción en el checkout de tu tienda, haz clic [aquí](/developers/es/docs/woocommerce/payments-configuration/mercado-credito).
 
 ------------
-----[mla, mlm]----
+----[mla]----
     - **Tarjetas de débito y crédito**.
     - **Efectivo (saldo de cuenta de Mercado Pago)**.
     - **Transferencia bancaria**.

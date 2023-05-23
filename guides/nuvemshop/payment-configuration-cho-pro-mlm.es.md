@@ -27,29 +27,21 @@ Para integrar Checkout Pro, sigue los pasos a continuación.
 7. Para configurar las experiencias de pago de su tienda, haz clic en **Editar en el sitio de Mercado Pago**.
 8. En el Checkout Mercado Pago, elige las formas de pago que quieres ofrecer en el entorno de pago de Mercado Pago, las cuales pueden ser:
 ----[mla, mpe, mco, mlu, mlc]---- 
- * **Financiación sin tarjeta**: habilita el método de financiación de Mercado Pago, el "Mercado de Crédito, que ofrece la opción de pagar en mensualidades sin contar con una tarjeta. Con esta línea de crédito, administrada por Mercado Pago, el dinero se acredita en su totalidad en la cuenta del vendedor, mientras que el cliente puede optar por pagar en hasta 12 pagos fijos mensuales, sin necesidad de contar con una tarjeta. <br>
- * **Tarjeta de crédito**: seleccione las tarjetas que desea habilitar en su tienda y, después, elige también el **número máximo de cuotas permitidas para las compras a plazos**. <br>
- * **Tarjeta de débito**: seleccione las marcas que desea habilitar en su tienda. <br>
- * **Otros medios de pago**: seleccione otros tipos de medios de pago que desee habilitar en su tienda, por ejemplo, Oxxo y Santander y, después, indique también el **número de días para vencimiento del boleto (incluye sábado y domingo)**.
+ * **Tarjeta de crédito**. Seleccione las tarjetas que desea habilitar en su tienda y elige también el **número máximo de cuotas permitidas para las compras a plazos**. <br>
+ * **Tarjeta de débito**. Seleccione las tarjetas que desea habilitar en su tienda. <br>
+ * **Otros medios de pago**: seleccione otros tipos de medios de pago que desee habilitar en su tienda, como Pix, Financiación sin tarjeta (si, además, quieres mostrar esta opción en el checkout de tu tienda, haz clic [aquí](/developers/es/docs/nuvemshop/payments-configuration/mercado-credito), Paycash, OXXO, entre otros.Indique también, en el campo inferior, el **número de días de vencimiento del ticket** del medio de pago que lo requiera.
 
 ------------ 
 ----[mlb]---- 
- * **Financiación sin tarjeta**: habilita el método de financiación de Mercado Pago, el "Mercado de Crédito, que ofrece la opción de pagar en mensualidades sin contar con una tarjeta. Con esta línea de crédito, administrada por Mercado Pago, el dinero se acredita en su totalidad en la cuenta del vendedor, mientras que el cliente puede optar por pagar en hasta 12 pagos fijos mensuales, sin necesidad de contar con una tarjeta. <br>
- * **Tarjeta de crédito**: seleccione las tarjetas que desea habilitar en su tienda y, después, elige también el **número máximo de cuotas permitidas para las compras a plazos**. <br>
- * **Tarjeta de débito**: seleccione las marcas que desea habilitar en su tienda. <br>
- * **Otros medios de pago**: seleccione otros tipos de medios de pago que desee habilitar en su tienda, por ejemplo, Pix y boleto bancário y, después, indique también el **número de días para vencimiento del boleto (incluye sábado y domingo)**. La opción de pago Pix solo se mostrará si existe una clave Pix registrada en Mercado Pago. Si aún no lo ha creado, [haga clic aquí](https://www.youtube.com/watch?v=60tApKYVnkA) y vea el paso a paso.
+ * **Tarjeta de crédito**. Seleccione las tarjetas que desea habilitar en su tienda y elige también el **número máximo de cuotas permitidas para las compras a plazos**. <br>
+ * **Tarjeta de débito**. Seleccione las tarjetas que desea habilitar en su tienda. <br>
+ * **Otros medios de pago**: seleccione otros tipos de medios de pago que desee habilitar en su tienda, como Pix, Financiación sin tarjeta (si, además, quieres mostrar esta opción en el checkout de tu tienda, haz clic [aquí](/developers/es/docs/nuvemshop/payments-configuration/mercado-credito), boleto bancario (indique también, en el campo inferior, el **número de días de vencimiento del boleto**), entre otros. La opción de pago Pix solo se mostrará si existe una clave Pix registrada en Mercado Pago. Si aún no lo ha creado, [haga clic aquí](https://www.youtube.com/watch?v=60tApKYVnkA) y vea el paso a paso.
 
 ------------ 
 ----[mlm]---- 
- * **Financiamiento sin tarjeta**.
- * **Tarjeta de crédito**. Elige también el número máximo de meses permitidos.
- * **Tarjeta de débito**.
- * **Otros medios de pago**. Elige también el número de días para vencimiento del ticket (incluye sábado y domingo).
-
- * **Financiamiento sin tarjeta**: habilita el método de financiación de Mercado Pago, el "Mercado de Crédito, que ofrece la opción de pagar en mensualidades sin contar con una tarjeta. Con esta línea de crédito, administrada por Mercado Pago, el dinero se acredita en su totalidad en la cuenta del vendedor, mientras que el cliente puede optar por pagar en hasta 12 pagos fijos mensuales, sin necesidad de contar con una tarjeta. <br>
- * **Tarjeta de crédito**: seleccione las tarjetas que desea habilitar en su tienda y, después, elige también el **número máximo de meses permitidas para las compras a plazos**. <br>
- * **Tarjeta de débito**: seleccione las marcas que desea habilitar en su tienda. <br>
- * **Otros medios de pago**: seleccione otros tipos de medios de pago que desee habilitar en su tienda, por ejemplo, Oxxo y Santander y, después, indique también el **número de días para vencimiento del boleto (incluye sábado y domingo)**.
+ * **Tarjeta de crédito**. Seleccione las tarjetas que desea habilitar en su tienda y elige también el **número máximo de meses permitidos para las compras a plazos**. <br>
+ * **Tarjeta de débito**. Seleccione las tarjetas que desea habilitar en su tienda. <br>
+ * **Otros medios de pago**. Seleccione otros tipos de medios de pago que desee habilitar en su tienda, como Financiamiento sin tarjeta (si, además, quieres mostrar esta opción en el checkout de tu tienda, haz clic [aquí](/developers/es/docs/nuvemshop/payments-configuration/mercado-credito), Paycash, OXXO, entre otros.Indique también, en el campo inferior, el **número de días de vencimiento del ticket** del medio de pago que lo requiera.
 
 ------------
 9. Finalmente, haz clic en **Guardar cambios**.
