@@ -150,6 +150,7 @@ X-meli-session-id: device_id
 > Attention
 >
 > Remember to replace `device_id` with the name of the variable that contains your Device ID value.
+
 ### Implement the Device ID in your native mobile application
 
 If you have a native application, you can capture the device information with our SDK and send it when creating the token. Follow these steps:
@@ -166,10 +167,15 @@ pod ‘MercadoPagoDevicesSDK’
 ```
 ```android
 ===
-Add the following code in the **build.gradle** file.
+You need to add the repository and the dependency in the **build.gradle** file.
 ===
+repositories {
+    maven {
+        url "https://artifacts.mercadolibre.com/repository/android-releases"
+    }
+}
 dependencies {
-   implementation 'com.mercadolibre.android.device:sdk:2.0.1'
+   implementation 'com.mercadolibre.android.device:sdk:3.0.5'
 }
 ```
 ]]]
