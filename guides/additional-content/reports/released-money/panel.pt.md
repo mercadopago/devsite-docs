@@ -6,7 +6,7 @@ Gere seus relatórios de ----[mla]---- Liquidações ------------ ----[mlm, mlb,
 
 Siga estas etapas para gerar seus relatórios:
 
-1. Na sua conta do Mercado Pago, vá [em Relatórios](https://www.mercadopago.com.ar/balance/reports) e escolha a opção *Relatórios*.
+1. Desde tu cuenta de Mercado Pago, ve a ----[mla]---- [Informes y facturación](https://www.mercadopago.com.ar/balance/reports) ------------ ----[mlm]---- [Informes y facturación](https://www.mercadopago.com.ar/balance/reports) ------------ ----[mla, mlm]---- y elige la opción de *Reportes de tus cobros y estados de cuenta.* ------------ ----[mlb, mlc, mco, mlu, mpe]---- [tus Informes](https://www.mercadopago.com.ar/balance/reports) y elige la opción de *Reportes*. ------------
 1. Vá em [relatório de ----[mla]---- Liquidações ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------](https://www.mercadopago.com.ar/balance/reports/release) e clique em *Gerar relatório*.
 1. Busque as transações por período de tempo e selecione as que quer conciliar.
 

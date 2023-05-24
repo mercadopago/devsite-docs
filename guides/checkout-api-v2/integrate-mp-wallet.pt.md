@@ -2,6 +2,12 @@
 
 A opção de pagar com a Conta Mercado Pago, por padrão, é apresentada em todos os Checkouts do Mercado Pago em combinação com pagamentos de usuários guest (sem login). 
 
+> NOTE
+>
+> Importante
+>
+> Além das opções disponíveis nesta documentação, também é possível integrar pagamentos com a **Conta Mercado Pago** utilizando o **Brick de Wallet**. Veja a documentação [Renderização padrão](/developers/pt/docs/checkout-bricks/wallet-brick/default-rendering#editor_2) de Wallet para mais detalhes. 
+
 Esta opção permite que usuários cadastrados no Mercado Pago e/ou Mercado Livre façam login e utilizem-se dos métodos disponíveis para efetuar seus pagamentos, além de poder incluir novas opções de pagamento, como cartões de crédito. 
 
 É possível pagar com **cartão**, **saldo disponível** e **Mercado Crédito** em um ambiente seguro e otimizado, aumentando as chances de conversão de vendas, além de permitir ao vendedor oferecer somente pagamentos com Conta Mercado Pago. Com isso, a opção de pagar sem se logar não existirá, porém, contribuirá para um aumento na conversão de pagamentos.
@@ -168,32 +174,75 @@ preference = preference_response["response"]
 >
 > Adicionar checkout
 
-Com a preferência criada, é preciso exibir o botão de pagamento que permitirá o comprador utilizar a carteira Mercado Pago para pagamento. Para exibir o botão de pagamento, utilize um dos SDKs disponíveis abaixo.
+Após ter criado a preferência no backend, será necessário instalar o SDK de frontend do Mercado Pago ao projeto para adicionar o botão de pagamento.
+
+A instalação é feita, em **duas etapas**: **incluindo o SDK do Mercado Pago** ao projeto com suas credenciais configuradas e **iniciando o checkout** a partir da preferência gerada anteriormente. Para isso, siga os passos listados abaixo.
+
+1. Para incluir o SDK MercadoPago.js, adicione o código abaixo no HTML do projeto ou instale via NPM conforme indicado nos exemplos a seguir.
 
 [[[
 
 ```html
-<div class="cho-container"></div>
-<script src="https://sdk.mercadopago.com/js/v2"></script>
-<script>
-  const mp = new MercadoPago("PUBLIC_KEY");
-  mp.checkout({
-    preference: {
-      id: "YOUR_PREFERENCE_ID",
-    },
-    render: {
-      container: ".cho-container",
-      label: "Pagar com Mercado Pago",
-      type: "wallet",
-    },
-  });
-</script>
+<body>
+  <script src="https://sdk.mercadopago.com/js/v2"></script>
+</body>
 ```
+```bash
 
+npm install @mercadopago/sdk-js
+
+```
 ]]]
 
-> WARNING
+Em seguida, inicialize a integração definindo sua [chave pública](/developers/pt/docs/checkout-api/additional-content/credentials) usando o seguinte código.
+
+[[[
+```html
+
+<script>
+  const mp = new MercadoPago("YOUR_PUBLIC_KEY");
+</script>
+
+```
+```javascript
+
+import { loadMercadoPago } from "@mercadopago/sdk-js";
+
+
+await loadMercadoPago();
+const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
+
+```
+]]]
+
+Feito isso, é necessário criar um container para definir o local que o botão será inserido na tela. A criação do container é feita inserindo um elemento no código HTML da página no qual o componente será renderizado.
+
+> NOTE
 >
 > Importante
 >
-> Os pagamentos criados possuem os seguintes status: "Pendente", "Rejeitado" e "Aprovado". Para acompanhar as atualizações é necessário configurar seu sistema para receber as notificações de pagamentos e outras atualizações de status. Veja [Notificações](/developers/pt/docs/checkout-api/additional-content/notifications/introduction) para mais detalhes.
+> O valor exibido abaixo na **propriedade ID** é apenas um exemplo e pode ser alterado, mas deve sempre corresponder ao ID indicado na etapa de renderização.
+
+[[[
+```html
+
+<div id="wallet_container"></div>
+
+```
+]]]
+
+2. Ao finalizar a etapa anterior, inicialize seu checkout utilizando o ID da preferência previamente criada com o identificador do elemento onde o botão deverá ser exibido.
+
+[[[
+```javascript
+
+mp.bricks().create("wallet", "wallet_container", {
+  initialization: {
+    preferenceId: "<PREFERENCE_ID>",
+  },
+});
+
+```
+]]]
+
+Os pagamentos criados possuem os seguintes status: `Pendente`, `Rejeitado` e `Aprovado`. Para acompanhar as atualizações é necessário configurar seu sistema para receber as notificações de pagamentos e outras atualizações de status. Veja [Notificações](/developers/pt/docs/checkout-api/additional-content/notifications/introduction) para mais detalhes.

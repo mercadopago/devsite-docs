@@ -1,12 +1,12 @@
 # Pix
 
-Pix é um meio de pagamento eletrônico instantâneo oferecido pelo Banco Central do Brasil a pessoas físicas e jurídicas. Através do Checkout Transparente, é possível oferecer esta opção de pagamento por meio de código QR ou código de pagamento. 
+Pix é um meio de pagamento eletrônico instantâneo oferecido pelo Banco Central do Brasil a pessoas físicas e jurídicas. Através do Checkout Transparente, é possível oferecer esta opção de pagamento por meio de código QR ou código de pagamento.
 
-> WARNING
+> NOTE
 >
 > Importante
 >
-> Para oferecer pagamentos com Pix é preciso garantir que as chaves Pix tenham sido criadas. Caso ainda não tenha criado, [clique aqui](https://www.youtube.com/watch?v=60tApKYVnkA) e veja o passo a passo.
+> Além das opções disponíveis nesta documentação, também é possível integrar **pagamentos com Pix** utilizando o **Brick de Payment**. Veja a documentação [Renderização padrão](/developers/pt/docs/checkout-bricks/payment-brick/default-rendering#editor_2) de Payment para mais detalhes. 
 
 Para integrar pagamentos via Pix, siga as etapas abaixo, mas caso você já tenha integrado pagamentos via cartão, inicie a integração a partir da etapa [Adicionar formulário de pagamento](/developers/pt/docs/checkout-api/integration-configuration/integrate-with-pix#bookmark_Adicionar_formulário_de_pagamento).
 
@@ -21,6 +21,11 @@ Após a criação das chaves Pix, é preciso realizar a captura de dados para pa
   <script src="https://sdk.mercadopago.com/js/v2"></script>
 </body>
 ```
+```bash
+
+npm install @mercadopago/sdk-js
+
+```
 ]]]
 
 
@@ -31,11 +36,19 @@ As credenciais são chaves únicas com as quais identificamos uma integração n
 Esta é a primeira etapa de uma estrutura completa de código que deverá ser seguida para a correta integração do pagamento via Pix. Atente-se aos blocos abaixo para adicionar aos códigos conforme indicado.
 
 [[[
+```html
+
+<script>
+  const mp = new MercadoPago("YOUR_PUBLIC_KEY");
+</script>
+```
 ```javascript
 
-  <script>
-    const mp = new MercadoPago("YOUR_PUBLIC_KEY");
-  </script>
+import { loadMercadoPago } from "@mercadopago/sdk-js";
+
+
+await loadMercadoPago();
+const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
 ```
 ]]]
 

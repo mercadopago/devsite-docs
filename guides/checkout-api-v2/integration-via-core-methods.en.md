@@ -4,6 +4,12 @@ In this integration method, the person in charge of the integration is responsib
 
 In integration via Core Methods, the integrator decides when to look for information about the type of document, in addition to card information (issuer and installments). As a result, you have complete flexibility in building the checkout flow experience.
 
+> NOTE
+>
+> Important
+>
+> In addition to the options available in this documentation, it is also possible to integrate **card payments** using the **CardPayment Brick**. Check [Default rendering](/developers/en/docs/checkout-bricks/card-payment-brick/default-rendering#editor_2) documentation of CardPayment for more details
+
 Check below the diagram that illustrates the card payment process using Core Methods.
 
 ![API-integration-flowchart](/images/api/api-integration-flowchart-coremethods-en.png)
@@ -15,8 +21,12 @@ The first step in the card payment integration process is the **card data captur
 [[[
 ```html
 <body>
-<script src="https://sdk.mercadopago.com/js/v2"></script>
+  <script src="https://sdk.mercadopago.com/js/v2"></script>
 </body>
+```
+```bash
+npm install @mercadopago/sdk-js
+
 ```
 ]]]
 
@@ -33,10 +43,17 @@ Credentials are unique keys with which we identify an integration in your accoun
 This is the first step of a complete code structure that must be followed for the correct integration of payment via card. Pay attention to the blocks below to add to the codes as indicated.
 
 [[[
-```javascript
+```html
 <script>
-const mp = new MercadoPago("YOUR_PUBLIC_KEY");
+  const mp = new MercadoPago("YOUR_PUBLIC_KEY");
 </script>
+```
+```javascript
+import { loadMercadoPago } from "@mercadopago/sdk-js";
+
+await loadMercadoPago();
+const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
+
 ```
 ]]]
 
