@@ -268,7 +268,7 @@ const initialization = {
 
 ## PSE
 
-En el formulario que se muestra para el pago con PSE, puedes empezar con el **correo electrónico** ya rellenado. Para eso, es necesario pasar la siguiente configuración en el objeto de inicialización del Brick.
+En el formulario que se muestra para el pago con PSE, puedes empezar con el **correo electrónico**, **persona** y **identificación** ya rellenado. Para eso, es necesario pasar la siguiente configuración en el objeto de inicialización del Brick.
 
 [[[
 ```Javascript

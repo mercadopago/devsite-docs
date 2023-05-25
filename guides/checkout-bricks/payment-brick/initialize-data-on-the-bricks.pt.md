@@ -269,7 +269,7 @@ const initialization = {
 
 ## PSE
 
-No formulário exibido para pagamento com PSE, é possível inicializar com o campo de **e-mail** já preenchido. Para isso, é necessário passar a seguinte configuração no objeto de inicialização do Brick.
+No formulário exibido para pagamento com PSE, é possível inicializar com o campo de **e-mail**, **pessoa** e **id** já preenchidos. Para isso, é necessário passar a seguinte configuração no objeto de inicialização do Brick.
 
 [[[
 ```Javascript

@@ -6,9 +6,9 @@
 
 Para efetuar o pagamento com PSE, é necessário obter os dados que o frontend envia e adicionar algumas propriedades adicionais antes de efetuar o pagamento com os SDKs do backend, sendo elas:
 
-| Propriedades adicionais | Descrição |
+| Propriedades adicionais | Descrição | 
 | --- | --- |
-| descrição | Descrição do produto ou compra. |
+| description | Descrição do produto ou compra. |
 | adicionais_info.ip_address | Endereço de IP do comprador em que o pagamento é gerado. |
 | callback_url | Tela em que o comprador é redirecionado por padrão após efetuar o pagamento na da tela do banco. |
 

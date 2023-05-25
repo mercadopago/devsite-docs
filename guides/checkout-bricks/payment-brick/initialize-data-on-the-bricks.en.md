@@ -269,7 +269,7 @@ const initialization = {
 
 ## PSE
 
-In the form displayed for payment by PSE, you can start with the **email** field already filled in. For this, it is necessary to pass the following configuration in the Brick's initialization object.
+In the form shown for payment with PSE, you can start with the **email**, **person** and **id** already filled in. For this, it is necessary to pass the following configuration in the Brick's initialization object.
 
 [[[
 ```Javascript
