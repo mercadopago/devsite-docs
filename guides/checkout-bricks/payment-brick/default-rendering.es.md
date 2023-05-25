@@ -624,7 +624,6 @@ El resultado de renderizar el Brick debería parecerse a la imagen de abajo.
 </center>
 
 ------------
-
 ----[mla]----
 <center>
 
@@ -633,11 +632,18 @@ El resultado de renderizar el Brick debería parecerse a la imagen de abajo.
 </center>
 
 ------------
-
 ----[mlm]----
 <center>
 
 ![payment-Brick-layout-mlm](checkout-bricks/payment-brick-layout-mlm-es.gif)
+
+</center>
+
+------------
+----[mco]----
+<center>
+
+![payment-brick-layout-mco](checkout-bricks/payment-brick-layout-mco-es.gif)
 
 </center>
 

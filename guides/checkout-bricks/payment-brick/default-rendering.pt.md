@@ -632,22 +632,31 @@ O resultado de renderizar o Brick deve ser como na imagem abaixo.
 ![payment-Brick-layout-mla](checkout-bricks/payment-brick-layout-mla-pt.gif)
 
 </center>
-------------
 
+------------
 ----[mlm]----
 <center>
 
 ![payment-Brick-layout-mlm](checkout-bricks/payment-brick-layout-mlm-pt.gif)
 
 </center>
-------------
 
-----[mpe, mco, mlu, mlc]----
+------------
+----[mco]----
+<center>
+
+![payment-brick-layout-mco](checkout-bricks/payment-brick-layout-mco-pt.gif)
+
+</center>
+
+------------
+----[mpe, mlu, mlc]----
 <center>
 
 ![payment-brick-layout-all](checkout-bricks/payment-brick-layout-all-pt.gif)
 
 </center>
+
 ------------
 
 ## Habilitar pagamento com Mercado Pago

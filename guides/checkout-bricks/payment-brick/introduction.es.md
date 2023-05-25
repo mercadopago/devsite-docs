@@ -193,7 +193,7 @@ La posibilidad de guardar los datos de tarjetas que ya fueron cargadas en compra
 
 <center>
 
-![payment-Brick-layout-all](checkout-bricks/payment-brick-layout-all-es.gif)
+![payment-Brick-layout-mco](checkout-bricks/payment-brick-layout-mco-es.gif)
 
 </center>
 

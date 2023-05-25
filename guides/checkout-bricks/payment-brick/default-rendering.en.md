@@ -621,14 +621,15 @@ The result of rendering the Brick should look like the image below.
 ![payment-Brick-layout-mlb](checkout-bricks/payment-brick-layout-mlb-en.gif)
 
 </center>
-------------
 
+------------
 ----[mla]----
 <center>
 
 ![payment-Brick-layout-mla](checkout-bricks/payment-brick-layout-mla-en.gif)
 
 </center>
+
 ------------
 ----[mlm]----
 <center>
@@ -636,12 +637,23 @@ The result of rendering the Brick should look like the image below.
 ![payment-Brick-layout-mlm](checkout-bricks/payment-brick-layout-mlm-en.gif)
 
 </center>
+
+------------
+----[mco]----
+<center>
+
+![payment-brick-layout-mco](checkout-bricks/payment-brick-layout-mco-en.gif)
+
+</center>
+
+------------
 ----[mpe, mco, mlu, mlc]----
 <center>
 
 ![payment-brick-layout-all](checkout-bricks/payment-brick-layout-all-en.gif)
 
 </center>
+
 ------------
 
 ## Enable payment with Mercado Pago

@@ -193,7 +193,7 @@ A possibilidade de guardar os dados dos cartões que já foram debitados em comp
 
 <center>
 
-![payment-brick-layout-all](checkout-bricks/payment-brick-layout-all-pt.gif)
+![payment-brick-layout-mco](checkout-bricks/payment-brick-layout-mco-pt.gif)
 
 </center>
 

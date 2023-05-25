@@ -105,7 +105,7 @@ The possibility of saving the data of cards that have already been charged in pr
 
 <center>
 
-![payment-Brick-layout-all](checkout-bricks/payment-brick-layout-all-en.gif)
+![payment-Brick-layout-mco](checkout-bricks/payment-brick-layout-mco-en.gif)
 
 </center>
 
