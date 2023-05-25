@@ -324,7 +324,7 @@ Veja abaixo um exemplo da resposta:
 
 A resposta, como você pode ver no `json` acima, mostrará o status pendente até que o comprador efetue o pagamento.
 
-## Redirecione o comprador ao PSE
+## Redirecionar o comprador ao PSE
 
 Após criar o pagamento do backend com o SDK do Mercado Pago, utilize o **id** recebido na resposta para criar uma instância do [Status Screen Brick](/developers/pt/docs/checkout-bricks/status-screen-brick/introduction) e mostre ao comprador. Descubra como é fácil integrar [clique aqui](/developers/pt/docs/checkout-bricks/status-screen-brick/default-rendering).
 
