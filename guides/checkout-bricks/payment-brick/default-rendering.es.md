@@ -649,7 +649,7 @@ El resultado de renderizar el Brick debería parecerse a la imagen de abajo.
 
 ------------
 
-----[mpe, mco, mlu, mlc]----
+----[mpe, mlu, mlc]----
 <center>
 
 ![payment-brick-layout-all](checkout-bricks/payment-brick-layout-all-es.gif)

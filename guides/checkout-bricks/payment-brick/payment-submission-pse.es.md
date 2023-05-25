@@ -19,9 +19,7 @@ A continuación se muestran algunos ejemplos de cómo enviar pagos con PSE a Mer
 <?php
 require '../vendor/autoload.php';
 
-
 MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
-
 
 $payment = new MercadoPago\Payment();
 $payment->transaction_amount = 10000;
@@ -35,7 +33,6 @@ $payment->transaction_details = array(
 );
 $payment->callback_url = "<YOUR_WEB_SITE>";
 
-
 $payer = new MercadoPago\Payer();
 $payer->email = $_POST['email'];
 $payer->identification = array(
@@ -44,12 +41,9 @@ $payer->identification = array(
 );
 $payer->entity_type = "individual";
 
-
 $payment->payer = $payer;
 
-
 $payment->save();
-
 
 $response = array(
   'status' => $payment->status,
@@ -63,7 +57,6 @@ echo json_encode($response);
 const mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 var payment = req.body;
-
 
 var payment_data = {
  transaction_amount: 10000,
@@ -86,7 +79,6 @@ var payment_data = {
  callback_url: '<YOUR_WEB_SITE>'
 };
 
-
 mercadopago.payment.save(payment_data)
  .then(function(response) {
    res.status(response.status).json({
@@ -102,16 +94,13 @@ mercadopago.payment.save(payment_data)
 ```java
 MercadoPagoConfig.setAccessToken("YOUR_ACCESS_TOKEN");
 
-
 PaymentClient client = new PaymentClient();
-
 
 IdentificationRequest identification =
  IdentificationRequest.builder()
  .type(request.getPayer().getIdentification().getType())
  .number(request.getPayer().getIdentification().getNumber())
  .build();
-
 
 PaymentPayerRequest payer =
  PaymentPayerRequest.builder()
@@ -122,17 +111,14 @@ PaymentPayerRequest payer =
  .identification(identification)
  .build();
 
-
 PaymentAdditionalInfoRequest additionalInfo =
  PaymentAdditionalInfoRequest.builder()
  .ipAddress("<PAYER_IP_ADDRESS>")
  .build();
 
-
 PaymentTransactionDetailsRequest transactionDetails = PaymentTransactionDetailsRequest.builder()
  .financialInstitution("1009")
  .build();
-
 
 PaymentCreateRequest paymentCreateRequest = PaymentCreateRequest.builder()
  .transactionAmount(new BigDecimal(10000))
@@ -144,16 +130,13 @@ PaymentCreateRequest paymentCreateRequest = PaymentCreateRequest.builder()
  .payer(payer)
  .build();
 
-
 client.create(paymentCreateRequest);
 ```
 ```ruby
 require 'mercadopago'
 sdk = Mercadopago::SDK.new('ACCESS_TOKEN')
 
-
 payment_data = {
-
 
  transaction_amount: 5000,
  description: "description",
@@ -177,7 +160,6 @@ payment_data = {
  }
 }
 
-
 payment_response = sdk.payment.create(payment_data)
 payment = payment_response[: response]
 ```
@@ -188,18 +170,14 @@ using MercadoPago.Client.Payment;
 using MercadoPago.Config;
 using MercadoPago.Resource.Payment;
 
-
 MercadoPagoConfig.AccessToken = "ACCESS_TOKEN";
 
-
 var client = new PaymentClient();
-
 
 var identification = new IdentificationRequest() {
  Type = request.Payer.Identification.Type,
    Number = request.Payer.Identification.Number
 };
-
 
 var payer = new PaymentPayerRequest() {
    Email = "<PAYER_EMAIL>",
@@ -209,16 +187,13 @@ var payer = new PaymentPayerRequest() {
    Identification = identification
 };
 
-
 var additionalInfo = new PaymentAdditionalInfoRequest() {
  IpAddress = "<PAYER_IP_ADDRESS>"
 };
 
-
 var transactionDetails = new PaymentTransactionDetailsRequest() {
  FinancialInstitution = "1009"
 };
-
 
 var paymentCreateRequest = new PaymentCreateRequest() {
  TransactionAmount = 10000,
@@ -229,7 +204,6 @@ var paymentCreateRequest = new PaymentCreateRequest() {
    CallbackUrl = "<YOUR_WEB_SITE>",
    Payer = payer
 };
-
 
 var payment = await client.CreateAsync(paymentCreateRequest);
 ```
