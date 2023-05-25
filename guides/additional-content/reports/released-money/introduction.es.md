@@ -10,7 +10,7 @@ El reporte de ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, 
 
 ----[mlb]----
 > WARNING
->
+>   
 > Importante
 >
 > Los informes que generes a partir del 1 de enero de 2023 mostrarán los movimientos de tu dinero en orden cronológico, por eso podrás identificarlos más fácilmente y controlar mejor las finanzas de tu negocio. [Conoce cómo utilizarlo.](https://bit.ly/3QiCD2f)
