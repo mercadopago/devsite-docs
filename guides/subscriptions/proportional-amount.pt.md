@@ -2,6 +2,12 @@
 
 Pro rata é o valor cobrado do assinante caso a assinatura comece em um dia diferente da data de cobrança definida pelo vendedor. Ao criar uma assinatura o vendedor pode decidir se deseja ou não oferecer esta opção. 
 
+> WARNING
+>
+> Importante
+>
+> Para configurar um valor proporcional, os campos `frequency` e `frequency_type` precisam preenchidos com os valores `frequency`:`1` e `frequency_type`:`months` respectivamente. Isso significa que o cálculo proporcional é **aplicável somente em assinaturas mensais durante um período de 30 dias**.
+
 Abaixo mostramos um fluxo de como funciona a cobrança proporcional dos pagamentos.
 
 ![Basic-subscriptions](/images/subscriptions/linea-cobro-PT.png)
