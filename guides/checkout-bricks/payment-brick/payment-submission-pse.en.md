@@ -300,9 +300,11 @@ The response, as you can see in the `json` above, will show the pending status u
 
 ## Redirect buyer to PSE
 
-After creating the payment from the backend with the Mercado Pago SDK, use the **id** received in the response to create an instance of the [Status Screen Brick](/developers/en/docs/checkout-bricks/status-screen-brick/introduction) and show it to the buyer. Find out how easy it is to integrate [by clicking here](/developers/en/docs/checkout-bricks/status-screen-brick/default-rendering).
+After creating the payment in your backend with the Mercado Pago SDK, you need to redirect the buyer to the PSE platform to carry out the bank transfer. After making the payment, the buyer will be redirected back to your website. To run this flow, just follow these steps:
 
-The Status Screen Brick will display a screen informing the buyer that they will be redirected to the PSE site to make the payment. We take care of the checkout flow with the PSE, and once the user has paid, we'll redirect the buyer to your website, using the `callback_url` sent to us when creating the checkout.
+1. After creating the payment in your backend, use the **id** field received in the response to render the [Status Screen Brick](/developers/en/docs/checkout-bricks/status-screen-brick/introduction) on your frontend. This Brick will inform the user that we will take him to the PSE page and a few seconds later the redirection takes place automatically.
+
+2. When the buyer completes the payment on the PSE platform, he will be redirected to your website through the `callback_url` that was sent to us when creating the payment. In addition, the `payment_id` field will be added as a url parameter in this callback. In this way, you can re-render the Status Screen Brick so that the buyer can see the final payment status on your website.
 
 ![payment-loading-redirect-pse](checkout-bricks/payment-brick-redirect-pse-en.jpg)
 
