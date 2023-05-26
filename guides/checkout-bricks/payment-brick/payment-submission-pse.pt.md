@@ -9,7 +9,7 @@ Para efetuar o pagamento com PSE, é necessário obter os dados que o frontend e
 | Propriedades adicionais | Descrição | 
 | --- | --- |
 | description | Descrição do produto ou compra. |
-| adicionais_info.ip_address | Endereço de IP do comprador em que o pagamento é gerado. |
+| additional_info.ip_address | Endereço de IP do comprador em que o pagamento é gerado. |
 | callback_url | Tela em que o comprador é redirecionado por padrão após efetuar o pagamento na da tela do banco. |
 
 Abaixo estão alguns exemplos de como enviar pagamentos PSE para o Mercado Pago.
