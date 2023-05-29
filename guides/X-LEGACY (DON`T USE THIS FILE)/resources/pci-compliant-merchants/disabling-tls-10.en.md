@@ -1,71 +1,79 @@
-# Apagado del cifrado TLS 1.0 en Mercado Pago
+# Shutting down TLS 1.1 encryption at Mercado Pago.
 
-En Mercado Pago siempre buscamos optimizar nuestra plataforma ofreciendo la mayor capacidad y seguridad en el procesamiento de pagos.
+At Mercado Pago we always seek to optimize our platform by offering the greatest capacity and security in payment processing.
 
-En esta ocasión, estamos trabajando en el apagado de TLS 1.0 para los dominios https://api.mercadopago.com y https://pagamento.mercadopago.com con el objetivo de mantener los más altos estándares de calidad y promover la seguridad de los datos de nuestros clientes.
+On this occasion, we are working on turning off TLS 1.1 for the domains https://api.mercadopago.com and https://pagamento.mercadopago.com, with the aim of maintaining the highest quality standards and promoting the security of the data of our clients.
 
-En consecuencia, Mercado Pago requerirá que sus conexiones a los dominios https://api.mercadopago.com y https://pagamento.mercadopago.com sean a través del protocolo de cifrado TLS 1.2 o superior.
-
-Una vez que desactivemos TLS 1.0, cualquier conexión que establezcas utilizando TLS 1.0 fallará.
-
-### Puntos a tener en cuenta:
-
-* Si operás sólo en Mercado Libre este cambio no te afectará.
-* Si operás sólo con botones de pago de Mercado Pago este cambio no te afectará.
-* Si operás sólo en Mercado Shops este cambio no te afectará.
-* Si operás sólo en VTEX este cambio no te afectará.
-* Si tenés **tu propio e-commerce consulta a tu soporte técnico**.
-* Si operas con alguna **plataforma de e-commerce** por ejemplo: Magento, Shopify u otros **consulta a su soporte técnico**.
-
-## Introducción
-
-### ¿Qué es TLS?
-
-TLS es el acrónimo de “Transport Layer Security” (Seguridad de la capa de transporte). Es un protocolo que proporciona privacidad e integridad de los datos entre dos aplicaciones que se comunican.
-
-Es el protocolo de seguridad más extendido que se utiliza en la actualidad, y se emplea para navegadores y otras aplicaciones que requieran que los datos se intercambien de forma segura en una red. TLS garantiza que una conexión con un extremo remoto se realiza en el extremo que se espera a través de cifrado y la verificación de la identidad del extremo. Las versiones de TLS hasta la fecha son TLS 1.0, 1.1 y 1.2.
-
-Las conexiones de Internet y de API de Mercado Pago utilizan TLS como componente clave de su seguridad.
-
-HTTPS (web) y STARTTLS SMTP (email) también utilizan TLS como componente de seguridad.
-
-### ¿Por qué se va a realizar este cambio?
-
-En Mercado Pago nos tomamos muy en serio la seguridad y ayudamos a nuestros clientes a mejorarla empleando los protocolos de seguridad más recientes.
+> WARNING
+>
+> Important
+>
+> Once we disable TLS 1.1, **any connection you establish using TLS 1.1 will fail**. In addition to it, Mercado Pago will require that your connections to the domains https://api.mercadopago.com and https://pagamento.mercadopago.com be through the encryption protocol TLS 1.2 or higher.   
 
 
-## Acción requerida para integraciones de API
+## Points to consider
 
-Si tus integraciones que utilizan conexiones entrantes con Mercado Pago no tiene el protocolo TLS 1.2 o superior activado tras realizar este cambio, empezarán a fallar
+* If you operate only in Mercado Libre, this change will not affect you.
+* If you operate only with the Mercado Pago payment buttons, this change will not affect you.
+* If you operate only in Mercado Shops, this change will not affect you.
+* If you operate only in VTEX this change will not affect you.
+* If you have your **own e-commerce consult your technical support**.
+* If you **operate with an e-commerce platform**, for example: Magento, Shopify or others, **consult their technical support**.
 
-Te recomendamos que empieces a planificar la inclusión del protocolo TLS 1.2 tan pronto como sea posible.
 
-Consulte las directrices de compatibilidad a continuación:
+## Introduction
 
-| Plataforma | Notas de Compatibilidad |
+
+TLS is the acronym for “Transport Layer Security”. It is a protocol that provides privacy and data integrity between two communicating applications.
+
+It is the most widespread security protocol in use today, and is used for browsers and other applications that require data to be exchanged securely over a network. TLS ensures that a connection to a remote endpoint is made at the expected endpoint through encryption and verification of the endpoint's identity. TLS versions to date are TLS 1.0, 1.1, 1.2, and 1.3.
+
+Mercado Pago's Internet and API connections use TLS as a key component of their security.
+
+HTTPS (web) and STARTTLS SMTP (email) also use TLS as a security component.
+
+
+## Why is this change being made?
+
+At Mercado Pago we take security very seriously and we help our customers improve it by using the latest security protocols.
+
+
+## Action required for API integrations
+
+If your integrations that use incoming connections with Mercado Pago do not have TLS 1.2 or higher enabled after making this change, they will start to fail.
+
+> WARNING
+>
+> Important
+>
+> We recommend that you opt-in to the TLS 1.2 protocol **before June 12, 2023**.
+
+See compatibility guidelines below:
+
+| Plataform | Compatibility notes  |
 | --- | --- |
-| Java (Oracle) | Compatible con la versión más reciente, sin que el sistema operativo sea relevante. |
-| Java 8 (1.8) y versiones posteriores | Compatible con el cifrado TLS 1.2 o versiones posteriores de forma predeterminada. |
-| Java 7 (1.7) | Active TLS 1.2 utilizando la propiedad del sistema Java https.protocols para HttpsURLConnection. Para activar TLS 1.2 en conexiones sin HttpsURLConnection, establezca los protocolos activados en las instancias creadas de SSLSocket y SSLEngine dentro del código fuente de la aplicación. Cambiar a IBM Java puede ser una solución efectiva si la actualización a una versión de Oracle Java más reciente no es posible. |
-| Java 8 | Compatible con el cifrado TLS 1.2 o versiones posteriores de forma predeterminada. Es posible que tenga que establecer com.ibm.jsse2.overrideDefaultTLS=true si su aplicación o una biblioteca que la llame utiliza SSLContext.getinstance("TLS"). |
-| Java 7 y versiones posteriores, la actualización de servicio 1 de Java 6.0.1 (J9 VM2.6) y versiones posteriores y la actualización de servicio 10 de Java 6 y versiones posteriores | Active TLS 1.2 empleando la propiedad del sistema de Java https.protocols para HttpsURLConnection y la propiedad del sistema de Java com.ibm.jsse2.overrideDefaultProtocol para conexiones SSLSocket y SSLEngine, según recomienda la documentación de IBM. Es posible que también tenga que establecer com.ibm.jsse2.overrideDefaultTLS=true. |
-.| NET | Compatible con la versión más reciente cuando se ejecuta en un sistema operativo que admita TLS 1.2 |
-| .NET 4.6 y versiones posteriores | Compatible con el cifrado TLS 1.2 o versiones posteriores de forma predeterminada. |
-| .NET 4.5 a 4.5.2 | .NET 4.5, 4.5.1 y 4.5.2 no activan TLS 1.2 de forma predeterminada. Existen dos opciones para activarlas, como se describe a continuación. |
-| .NET 4.0 | .NET 4.0 no activa TLS 1.2 de forma predeterminada. Para activar TLS 1.2 de forma predeterminada, es posible instalar .NET Framework 4.5 o una versión posterior, y establecer el valor DWORD de SchUseStrongCrypto en 1 en las siguientes dos entradas del registro del sistema, creándolas si no existen: "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319" y "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319". No obstante, esas claves del registro del sistema pueden activar TLS 1.2 de forma predeterminada en todas las aplicaciones .NET 4.0, 4.5, 4.5.1 y 4.5.2 instaladas en ese sistema. Recomendamos probar este cambio antes de implementarlo en sus servidores de producción. Esto también está disponible como un archivo de importación para el registro del sistema.Sin embargo, estos valores del registro del sistema no afectarán a las aplicaciones .NET que establecen el valor System.Net.ServicePointManager.SecurityProtocol. |
-| .NET 3.5 y versiones anteriores | No son compatibles con el cifrado TLS 1.2 o versiones posteriores |
-| Python | Compatible con la versión más reciente cuando se ejecuta en un sistema operativo que admita TLS 1.2 |
-| Python 2.7.9 y versiones posteriores | Compatible con el cifrado TLS 1.2 o versiones posteriores de forma predeterminada. |
-| Python 2.7.8 y versiones anteriores | No son compatibles con el cifrado TLS 1.2 o versiones posteriores |
-| Ruby | Es compatible con la versión más reciente y estable cuando se vincula con OpenSSL 1.0.1 o versiones posteriores. |
-| Ruby 2.0.0 | TLS 1.2 se activa de forma predeterminada cuando se utiliza con OpenSSL 1.0.1 o versiones posteriores. El uso de los símbolos :TLSv1_2 con ssl_version de SSLContext ayuda a garantizar que se desactiva TLS 1.0 o versiones anteriores. |
-| Ruby 1.9.3 y versiones anteriores | El símbolo :TLSv1_2 no existe en la versión 1.9.3 y anteriores, pero es posible parchear Ruby para agregar ese símbolo y compilar Ruby con OpenSSL 1.0.1 o versiones posteriores. |
+| Java (Oracle)  | Compatible with the latest version, regardless of the operating system.  |
+| Java 8 (1.8) and later versions  | Supports TLS 1.2 or later encryption by default.  |
+| Java 7 (1.7)  | Enable TLS 1.2 by using the https.protocols Java system property for HttpsURLConnection. To enable TLS 1.2 on connections without HttpsURLConnection, set the enabled protocols on the created instances of SSLSocket and SSLEngine within the application source code. Switching to IBM Java can be an effective solution if upgrading to a newer version of Oracle Java is not possible.  |
+| Java 8  | Supports TLS 1.2 or later encryption by default. You might need to set com.ibm.jsse2.overrideDefaultTLS=true if your application or a library that calls it uses SSLContext.getinstance("TLS").  |
+| Java 7 and later, Java 6.0.1 (J9 VM2.6) Service Update 1 and later, and Java 6 Service Update 10 and later  | Enable TLS 1.2 using the https.protocols Java system property for HttpsURLConnection and the com.ibm.jsse2.overrideDefaultProtocol Java system property for SSLSocket and SSLEngine connections, as recommended by the IBM documentation. You might also need to set com.ibm.jsse2.overrideDefaultTLS=true.  |
+| .NET  | Compatible with the latest version when running on an operating system that supports TLS 1.2  |
+| .NET 4.6 and later versions  | Supports TLS 1.2 or later by default.  |
+| .NET 4.5 to 4.5.2  | .NET 4.5, 4.5.1, and 4.5.2 do not enable TLS 1.2 by default. There are two options to activate them, as described below.  |
+| .NET 4.0  | .NET 4.0 does not enable TLS 1.2 by default. To turn on TLS 1.2 by default, you can install the .NET Framework 4.5 or later, and set the SchUseStrongCrypto DWORD value to 1 in the following two system registry entries, creating them if they don't exist: "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft .NETFramework\v4.0.30319" and "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft.NETFramework\v4.0.30319". However, those system registry keys can enable TLS 1.2 by default in all .NET 4.0, 4.5, 4.5.1, and 4.5.2 applications installed on that system. We recommend testing this change before deploying it to your production servers. This is also available as an import file for the system registry. However, these system registry values will not affect .NET applications that set the System.Net.ServicePointManager.SecurityProtocol value.  |
+| .NET 3.5 and earlier versions  | They do not support TLS 1.2 or later  |
+| Python  | Compatible with the latest version when running on an operating system that supports TLS 1.2  |
+| Python 2.7.9 and later  | Supports TLS 1.2 or later encryption by default.  |
+| Python 2.7.8 and earlier versions  | They do not support TLS 1.2 or later versions  |
+| Ruby  | It is compatible with the latest and most stable version when linked with OpenSSL 1.0.1 or later.  |
+| Ruby 2.0.0  | TLS 1.2 is enabled by default when used with OpenSSL 1.0.1 or later. Using the :TLSv1_2 tokens with the ssl_version of the SSLContext helps ensure that TLS 1.0 or earlier is disabled.  |
+| Ruby 1.9.3 and earlier versions  | The :TLSv1_2 symbol does not exist in version 1.9.3 and earlier, but it is possible to patch Ruby to add that symbol and compile Ruby with OpenSSL 1.0.1 or later.  |
+| Android 5.x and higher  | TLS 1.2 is supported by default.  |
 
-En caso que requieras hacer adaptaciones, **es importante que recuerdes hacer este cambio en tiempo y forma, ya que de lo contrario es muy probable que tus conexiones con Mercado Pago comiencen a fallar.**
 
-## ¿Como puedo probar mi integración?
+## How can I check the current version of TLS?
 
-Para poder validar si tu integración mantiene una conexión usando un protocolo distinto a TLS 1.0, puedes usar el siguiente snippet dentro de tu aplicación para verificar que protocolo se esta usando por defecto para las conexiones.
+In order to validate if your integration maintains a connection using a protocol other than TLS 1.2, you can use the following snippet within your application to verify which protocol is being used by default for connections.
 
 [[[
 ```php
@@ -75,8 +83,8 @@ Para poder validar si tu integración mantiene una conexión usando un protocolo
 ?>
 ```
 ```java
-  SSLSocket ss = (SSLSocket) SSLSocketFactory.getDefault().createSocket("api.mercadopago.com", 443);
-  System.out.println("protocol: " + ss.getSession().getProtocol());
+SSLSocket ss = (SSLSocket) SSLSocketFactory.getDefault().createSocket("api.mercadopago.com", 443);
+System.out.println("protocol: " + ss.getSession().getProtocol());
 ```
 ```csharp
 string strWebsiteName = "api.mercadopago.com";
@@ -90,8 +98,3 @@ Console.WriteLine("protocol : " + _myStream.SslProtocol);
 ```
 ]]]
 
-
-
-Si tienes alguna duda o necesitas asistencia para completar exitosamente este cambio, puedes contactarnos a través del siguiente correo electrónico: soportemigraciones@mercadopago.com.
-
-El equipo de Mercado Pago.
