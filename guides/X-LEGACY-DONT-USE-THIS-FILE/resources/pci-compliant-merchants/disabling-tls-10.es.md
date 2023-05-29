@@ -1,4 +1,4 @@
-# Apagado del cifrado TLS 1.0 en Mercado Pago
+# Apagado del cifrado TLS 1.1 en Mercado Pago
 
 En Mercado Pago siempre buscamos optimizar nuestra plataforma ofreciendo la mayor capacidad y seguridad en el procesamiento de pagos.
 

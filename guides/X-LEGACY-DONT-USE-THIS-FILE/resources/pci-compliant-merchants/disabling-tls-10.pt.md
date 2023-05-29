@@ -1,4 +1,4 @@
-# Desativação da criptografia TLS 1.0 no Mercado Pago
+# Desativação da criptografia TLS 1.1 no Mercado Pago
 
 No Mercado Pago procuramos sempre otimizar nossa plataforma oferecendo a mais alta eficiência e segurança no processamento de pagamentos.
 
