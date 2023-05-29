@@ -1026,6 +1026,44 @@ paths:
                           spa: Tiempo estimado que el repartidor llegará al restaurante para tomar el pedido. Este atributo solo se muestra desde el momento en que se asigna un repartidor al pedido, y esto ocurre en el estado (ready_to_ship/on_route_to_pickup) del flujo de entrega Dropoff.
                           por: Horário estimado que o entregador chegará ao restaurante para receber o pedido. Este atributo só é mostrado a partir do momento em que um entregador é atribuído ao pedido e isso ocorre no status (ready_to_ship/on_route_to_pickup) do fluxo de entrega Dropoff.
                         example: "2022-02-21T22:00:55Z"
+                      paymentsInfo:
+                        type: array
+                        description: Array with payment ids. Each order item has its own payment_id for this reason, multiple payments may appear. In addition, the shipping cost also has its own payment_id.
+                        x-description-i18n:
+                          eng: Array with payment ids. Each order item has its own payment_id for this reason, multiple payments may appear. In addition, the shipping cost also has its own payment_id.
+                          spa: Array de ids de pagos. Cada item del pedido tiene su propio payment_id, por lo que pueden aparecer varios pagos. Además, el costo de envío también tiene su propio payment_id.
+                          por: Array de ids de pagamento. Cada item do pedido possui seu próprio payment_id por esse motivo poderão aparecer vários payments. Além disso, o custo de envio também tem seu próprio payment_id.
+                        items:
+                          type: object
+                          properties:
+                            id:
+                              type: number
+                              description: Payment ID.
+                              x-description-i18n:
+                                eng: Payment ID.
+                                spa: ID del pago.
+                                por: ID do pagamento.
+                              example: 58096990331
+                            entity:
+                              type: string
+                              description: Information about what the payment refers to.
+                              x-description-i18n:
+                                eng: Payment ID.
+                                spa: ID del pago.
+                                por: ID do pagamento.
+                              enum:
+                                - ORDER -- Payment of an item of the order.
+                                - SHIPMENT -- Payment for the shipping cost.
+                              example: ORDER
+                            entityId:
+                              type: number
+                              description: ID referring to the entity.
+                              x-description-i18n:
+                                eng: ID referring to the entity.
+                                spa: ID referente a la entidad.
+                                por: ID referente à entidade.
+                              example: 2000005654919550
+                        
         '401':
           description: Error
           x-description-i18n:
@@ -1747,7 +1785,7 @@ paths:
                                 eng: Store closing time on that weekday.
                                 spa: Hora de cierre de la tienda en ese día de la semana.
                                 por: Horário de fechamento da loja nesse dia da semana.
-                       wednesday:
+                       wendsday:
                          type: array
                          description: List of store opening hours on that weekday.
                          x-description-i18n:
@@ -2930,7 +2968,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 500-- Internal server error 
+                      - 500-- Internal server error
   /proximity-integration/stores/{store_id}/status:
     put:
       tags:
@@ -3521,8 +3559,8 @@ paths:
                                             por: Atual estado do item de comeplemento, pode estar ativo ("actived") ou pausado ("paused").
                                           example: "active"
                                           enum:
-                                            - active--Active the item.
-                                            - paused--Pause the item.
+                                            - active -- Active the item.
+                                            - paused -- Pause the item.
       responses:
         '200':
           description: Success
