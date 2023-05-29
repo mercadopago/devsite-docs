@@ -489,7 +489,7 @@ Learn all about these attributes in our [API Reference](https://www.mercadopago[
 
 Send data about your industry to improve your approval.<br>
 
-[Go to industry data](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/industry-data/additional-info)
+[Go to industry data](/developers/en/guides/additional-content/resources/industry-data/additional-info)
 
 ### Help your clients with their rejected payments
 
@@ -501,4 +501,4 @@ For instance, if a payment is rejected due to lack of funds, you can recommend t
 >
 > Note
 >
-> If you’re using Checkout Pro, don’t worry! All your messages are already set up. If you’re using another product, we recommend showing [a specific message for each rejection reason](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/handling-responses).
+> If you’re using Checkout Pro, don’t worry! All your messages are already set up. If you’re using another product, we recommend showing **a specific message for each rejection reason**.
