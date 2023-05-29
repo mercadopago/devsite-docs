@@ -1,6 +1,4 @@
-# How to improve payments approval
-
-## Why is a payment order rejected?
+# Why is a payment order rejected?
 
 Payment refusal is a reality in the world of online sales and can happen for several reasons. **A payment may be declined due to**:
  * an issue with the payment method;
@@ -28,7 +26,8 @@ You can **find the information and check the status of a payment** via the API, 
 > Important
 >
 > You can find more information about payments in the [Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/activities) account activity.
-### Rejections due to errors in data filling
+
+## Rejections due to errors in data filling
 
 These rejections are due to **errors committed during the checkout process**, that may happen for different reasons: trouble understanding the payment screen, problems with the customer's experience, lack of validations in certain fields, or common mistakes made by the client when completing their data, especially their card’s data.
 
@@ -39,7 +38,7 @@ In these cases, the `status_detail` field may return:
  * `cc_rejected_bad_filled_security_code`
 
 
-### Rejections made by the issuing bank
+## Rejections made by the issuing bank
 
 When paying with a **credit or debit card**, the issuing bank may refuse the charge for different reasons, such as the expiration date, insufficient balance or limit, or disabled or blocked card for online payments.
 
@@ -52,7 +51,7 @@ In these cases, the `status_detail` field may return:
  * `cc_rejected_max_attempts`
 
 
-### Rejections due to fraud prevention
+## Rejections due to fraud prevention
 
 We monitor transactions in real time in order to **recognize suspicious features and patterns** that may indicate a fraude attempt. This is made both by the Mercado Pago algorithm and the banks, in an attempt to reduce chargebacks to a minimum. 
 

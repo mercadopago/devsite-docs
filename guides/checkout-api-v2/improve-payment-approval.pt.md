@@ -1,12 +1,10 @@
-# Melhore a aprovação de seus pagamentos
-
-## Recomendações para melhorar sua aprovação
+# Recomendações para melhorar sua aprovação
 
 Para **evitar que um pagamento legítimo seja recusado** por não atender as validações de segurança, é necessário incluir o máximo de informações possíveis na hora de realizar a operação e também que seu checkout esteja com uma interface otimizada.
 
 Você pode ver em detalhes nossas **recomendações para melhorar sua aprovação** abaixo.
 
-### Coleta e envío de Device ID
+## Coleta e envío de Device ID
 
 O **Device ID** é uma informação importante para garantir uma melhor segurança e, consequentemente, uma melhor taxa de aprovação de pagamentos. Ele representa um identificador único para cada dispositivo do comprador no momento da compra.
 Caso um comprador frequente faça uma compra a partir de um dispositivo diferente do habitual, isso pode representar um comportamento atípico. Embora possa não ser necessariamente fraude, o ID do dispositivo nos ajuda a refinar a avaliação e nos impede de rejeitar pagamentos legítimos.
@@ -29,18 +27,18 @@ Você pode **adicionar o código de segurança do Mercado Pago** na sua página 
 >
 >Caso não tenha um valor disponível para a seção, você pode deixá-la vazia.
 
-### Utilizar informações do Device ID na web
+## Utilizar informações do Device ID na web
 
 Para usar o Device ID na web e evitar possíveis compras fraudulentas, é preciso seguir os passos abaixo:
 
-#### 1. Adicione o script de segurança do Mercado Pago
+### 1. Adicione o script de segurança do Mercado Pago
 Para implementar a geração do device ID em seu site, adicione o seguinte código na sua página de Checkout:
 
 ```html
 <script src="https://www.mercadopago.com/v2/security.js" view="checkout"></script>
 ```
 
-#### 2.Obtendo o Device ID
+### 2.Obtendo o Device ID
 Uma vez que você tenha adicionado o código de segurança do Mercado Pago em seu site, uma variável global de javascript é criada automaticamente com o nome `MP_DEVICE_SESSION_ID`, cujo valor é o Device ID.
 
 Se você preferir atribuí-lo a outra variável, indique o nome adicionando o atributo output ao script de segurança, como no exemplo a seguir:
@@ -54,7 +52,7 @@ Você também pode **criar sua própria variável**, bastando adicionar uma tag 
   <input type="hidden" id="deviceId">
 ```
 
-#### 3. Utilizando o Device ID
+### 3. Utilizando o Device ID
 Uma vez que você tenha o valor de Device ID, é preciso que você **o envie aos nossos servidores** ao criar um pagamento. Para isso, basta acrescentar o seguinte cabeçalho (*header*) à requisição:
 
 ```http
@@ -67,12 +65,12 @@ X-meli-session-id: device_id
 >
 > Lembre-se de substituir `device_id` pelo nome da variável que contém o seu valor de Device ID.
 
-### Utilizar Device ID em aplicações móveis
+## Utilizar Device ID em aplicações móveis
 
 Se você possui uma aplicação móvel nativa, pode capturar a informação do dispositivo com nosso SDK e enviar no momento de criar o token. Siga estas etapas:
 
 
-#### 1. Adicione a dependência
+### 1. Adicione a dependência
 
 [[[
 ```ios
@@ -97,7 +95,7 @@ dependencies {
 ```
 ]]]
 
-#### 2. Inicialize o módulo
+### 2. Inicialize o módulo
 
 [[[
 ```swift
@@ -133,7 +131,7 @@ DeviceSDK.getInstance().execute(this);
 ```
 ]]]
 
-#### 3. Capture a informação
+### 3. Capture a informação
 
 Execute alguma das funções abaixo para obter a informação no formato que precisar.
 
@@ -156,7 +154,7 @@ String jsonString = DeviceSDK.getInstance().getInfoAsJsonString() // Devolve uma
 ```
 ]]]
 
-#### 4. Envie a informação
+### 4. Envie a informação
 
 Por último, envie a informação obtida no campo `device` ao criar o `card_token`.
 
@@ -203,7 +201,7 @@ Por último, envie a informação obtida no campo `device` ao criar o `card_toke
 }
 ```
 
-### Detalhar todas as informações sobre o pagamento
+## Detalhar todas as informações sobre o pagamento
 
 Para otimizar a validação de segurança dos pagamentos e melhorar as aprovações, é importante fazer **o envio do máximo de dados sobre o comprador e o produto**.
 
@@ -214,7 +212,7 @@ Se atente a todos os atributos disponíveis ao criar um pagamento usando o méto
 
 Existem também **campos extras** que podem ser enviados de acordo com **o ramo de atividade**. Você pode encontrar mais detalhes sobre cada setor e os dados do comprador e do shipping que recomendamos incluir em cada um deles [aqui](/developers/pt/docs/checkout-api/additional-content/industry-data).
 
-### Melhorar a experiência do usuário
+## Melhorar a experiência do usuário
 Muitas vezes o comprador pode errar na hora de preencher seus dados no checkout. Por isso, vale a pena revisar cada passo, interações e até design, para checar se tudo está claro como deveria. 
 Caso opte por **criar seu front do zero**, você encontra dicas de como fazê-lo de forma eficiente [aqui](/developers/pt/docs/checkout-api/best-practices/ux-best-practices/ux-for-checkouts/introduction). 
 Se um pagamento for negado, é importante também que você explique aos seus clientes o motivo da recusa e que ação pode realizar para solucioná-lo. Assim, seus clientes terão todas as informações necessárias para pagar sem problemas. Você encontra **recomendações de mensagens para os principais motivos de recusa** [aqui](/developers/pt/docs/checkout-api/response-handling/collection-results). 

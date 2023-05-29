@@ -1,6 +1,4 @@
-# Melhore a aprovação de seus pagamentos
-
-## Por que um pagamento é recusado?
+# Por que um pagamento é recusado?
 
 A recusa de pagamentos é uma realidade no mundo das vendas online e pode acontecer por diversas razões. **Um pagamento pode ser recusado por**:
  * um erro com o meio de pagamento;
@@ -30,7 +28,7 @@ Você pode encontrar as **informações e checar o estado de um pagamento** via 
 >
 > Também é possível achar mais informações sobre pagamentos na atividade da conta de [Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/activities).
 
-### Recusas devido a erros de preenchimento
+## Recusas devido a erros de preenchimento
 
 Estes motivos de recusa acontecem devido a **erros no momento do checkout**. Isso pode acontecer por diversos motivos, como por exemplo falha de entendimento da tela de pagamento, problemas de experiência do comprador, falta de validação nos campos, ou também erros que o comprador pode cometer na hora de preencher seus dados, principalmente os dados de cartão.
 Nestes casos o campo `status_detail` poderá retornar: 
@@ -40,7 +38,7 @@ Nestes casos o campo `status_detail` poderá retornar:
  * `cc_rejected_bad_filled_security_code`
 
 
-### Recusas pelo banco emissor
+## Recusas pelo banco emissor
 
 Ao realizar um **pagamento com cartão de crédito ou débito**, por exemplo, o banco emissor pode recusar a cobrança por diferentes motivos, como a data de validade expirada, saldo ou limite insuficientes, cartão desabilitado ou bloqueado para compras online.
 Nestes casos o campo `status_detail` poderá retornar: 
@@ -52,7 +50,7 @@ Nestes casos o campo `status_detail` poderá retornar:
  * `cc_rejected_max_attempts`
 
 
-### Recusas por prevenção contra fraudes
+## Recusas por prevenção contra fraudes
 
 Fazemos o acompanhamento em tempo real das transações procurando **reconhecer recursos e padrões suspeitos** que apontam para uma tentativa de fraude. Isso é feito tanto pelos algoritmos do Mercado Pago quanto pelos bancos, tudo para evitar ao máximo chargebacks.
 

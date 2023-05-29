@@ -1,12 +1,10 @@
-# How to improve payments approval
-
-## Recommendations to improve your approval
+# Recommendations to improve payments approval
 
 **To prevent a legitimate payment from being refused** because it does not meet the security validations, it is necessary to include all possible information when carrying out the transaction, as well as having your checkout’s interface optimized. 
 
 You can see our **recommendations to improve your approval** in detail below.
 
-### Get and send the Device ID
+## Get and send the Device ID
 
 The **Device ID** is an important piece of information to ensure better security and, consequently, a better payment approval rate. It's a unique number that's used to identify a customer's device when they are buying.
 
@@ -31,11 +29,11 @@ If a customer makes a purchase on a different device than usual, this may repres
 >
 > In case of unavailable value for a section, leave it empty.
 
-### Implement the Device ID in your site
+## Implement the Device ID in your site
 
 To use the Device ID on your web and prevent possible fraudulent purchases, follow the steps below:
 
-#### 1. Add the security code
+### 1. Add the security code
 
 To generate device IDs on your website, add the following code to your Checkout page:
 
@@ -43,7 +41,7 @@ To generate device IDs on your website, add the following code to your Checkout 
 <script src="https://www.mercadopago.com/v2/security.js" view="checkout"></script>
 ```
 
-#### 2. Getting the device ID
+### 2. Getting the device ID
 
 When you add the Mercado Pago security code to your site, a global JavaScript variable is automatically created with the name `MP_DEVICE_SESSION_ID`, whose value is the device ID. 
 
@@ -59,7 +57,7 @@ You can also **create your own variable** by adding an HTML tag on your site as 
 <input type="hidden" id="deviceId">
 ```
 
-#### 3. Use the device ID
+### 3. Use the device ID
 
 Once you have the Device ID, you must **send it to our servers** when creating a payment. To do so, simply add the following header to the request:
 
@@ -73,11 +71,11 @@ X-meli-session-id: device_id
 >
 > Remember to replace `device_id` with the name of the variable that contains your Device ID value.
 
-### Implement the Device ID in your native mobile application
+## Implement the Device ID in your native mobile application
 
 If you have a native application, you can capture the device information with our SDK and send it when creating the token. Follow these steps:
 
-#### 1. Add dependency
+### 1. Add dependency
 
 [[[
 ```ios
@@ -102,7 +100,7 @@ dependencies {
 ```
 ]]]
 
-#### 2. Initialize module
+### 2. Initialize module
 
 [[[
 ```swift
@@ -138,7 +136,7 @@ DeviceSDK.getInstance().execute(this);
 ```
 ]]]
 
-#### 3. Capture information
+### 3. Capture information
 
 Execute one of these functions to obtain the information in the format that you prefer.
 
@@ -161,7 +159,7 @@ String jsonString = DeviceSDK.getInstance().getInfoAsJsonString() // Returns a J
 ```
 ]]]
 
-#### 4. Send information
+### 4. Send information
 
 Finally, send the information in the `device` field when creating the `card_token`.
 
@@ -208,7 +206,7 @@ Finally, send the information in the `device` field when creating the `card_toke
 }
 ```
 
-### Detail all information about the payment
+## Detail all information about the payment
 
 To optimize payment security validation and improve approvals, it is important to **submit as much buyer and item data as possible**.
 You can check all the available attributes when creating a payment by using the [Create payment](/developers/en/reference/payments/_payments/post) method. Pay special attention to the attributes present in `adicional_inf`, such as:
@@ -218,7 +216,7 @@ You can check all the available attributes when creating a payment by using the 
 
 There are also some **extra fields** that can be sent depending on the **branch of activities or industry of your store**. You can find details of every branch and the buyer and shipping data that we recommend to include for each of them [here](/developers/en/docs/checkout-api/additional-content/industry-data).
 
-### Improve the User Experience
+## Improve the User Experience
 
 Often, the buyer can make mistakes when filling in their details at checkout. That's why it's worth reviewing every step, interaction, and even the interface design, to ensure everything is as clear as it should be. 
 

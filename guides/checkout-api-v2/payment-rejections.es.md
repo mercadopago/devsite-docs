@@ -1,6 +1,4 @@
-# Mejora la aprobación de tus pagos
-
-## ¿Por qué se rechaza un pago?
+# ¿Por qué se rechaza un pago?
 
 La denegación de pagos es una realidad en el mundo de las ventas online y puede ocurrir por varias razones. Un **pago puede ser rechazado por**:
  * un error con el medio de pago;
@@ -31,7 +29,7 @@ Puedes encontrar **toda la información sobre un pago y verificar su estado** a 
 > Puedes encontrar más información sobre el detalle del pago en la actividad de la cuenta de [Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/activities).
 
 
-### Rechazos por errores en el relleno de datos
+## Rechazos por errores en el relleno de datos
 
 Estos rechazos ocurren debido a **errores al momento del checkout**, que pueden suceder por diversas razones: una falla de entendimiento en la pantalla de pago, problemas en la experiencia del comprador, o falta de validación de ciertos campos, así como errores que comete el cliente a la hora de completar sus datos, especialmente datos de tarjetas. 
 
@@ -42,7 +40,7 @@ En estos casos, el campo `status_detail` puede devolver:
  * `cc_rejected_bad_filled_security_code`
 
 
-### Rechazos del banco emisor
+## Rechazos del banco emisor
 
 Al ofrecer un **pago con tarjeta de crédito o débito**, el banco emisor puede rechazar el cobro por distintas razones: que la tarjeta se encuentre vencida, que sus fondos o límites sean insuficientes, o que se encuentre bloqueada para compras online.
 
@@ -55,7 +53,7 @@ En estos casos, el campo `status_detail` puede devolver:
  * `cc_rejected_max_attempts`
 
 
-### Rechazos para prevenir fraude
+## Rechazos para prevenir fraude
 
 Monitoreamos en tiempo real las transacciones, buscando **reconocer características y patrones sospechosos** que apunten a un intento de fraude. Esto es hecho tanto por los algoritmos de Mercado Pago como por los bancos, todo para evitar al máximo los contracargos (*chargebacks*). 
 

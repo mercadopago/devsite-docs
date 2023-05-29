@@ -1,13 +1,11 @@
-# Mejora la aprobación de tus pagos
-
-## Recomendaciones para mejorar tu aprobación
+# Recomendaciones para mejorar la aprobación de pagos
 
 Para **evitar que un pago legítimo sea rechazado** por no cumplir con las validaciones de seguridad, es necesario incluir el máximo de información posible a la hora de realizar la operación, así como que tu checkout cuente con su interfaz optimizada. 
 
 Puedes ver en detalle nuestras **recomendaciones para mejorar tu aprobación** a continuación.
 
 
-### Obtén y envía el Device ID
+## Obtén y envía el Device ID
 El **Device ID** es una información importante para lograr una mejor seguridad y, en consecuencia, una mejor tasa de aprobación de pagos. Representa un identificador único para el dispositivo de cada comprador en el momento de la compra.
 
 Si un comprador frecuente hace una compra desde un dispositivo diferente al habitual, esto podría representar un comportamiento atípico. Si bien puede no ser necesariamente un fraude, el Device ID nos ayuda a refinar la evaluación y evitar el rechazo de pagos legítimos.
@@ -30,10 +28,10 @@ Puedes **agregar el código de seguridad de Mercado Pago** a tu sitio reemplazan
 >
 > En caso de no tener un valor disponible para la sección, puedes dejarlo vacío.
 
-### Uso del device ID en la web
+## Uso del device ID en la web
 Para usar el Device ID en la web y prevenir posibles compras fraudulentas, debes seguir los siguientes pasos:
 
-#### 1. Agrega nuestro código de seguridad
+### 1. Agrega nuestro código de seguridad
 
 Para implementar la generación del Device ID en tu sitio, agrega el siguiente código a tu página de Checkout:
 
@@ -41,7 +39,7 @@ Para implementar la generación del Device ID en tu sitio, agrega el siguiente c
 <script src="https://www.mercadopago.com/v2/security.js" view="checkout"></script>
 ```
 
-#### 2. Obtén el device ID
+### 2. Obtén el device ID
 
 Una vez que hayas agregado el código de seguridad de Mercado Pago a tu sitio, automáticamente se crea una variable JavaScript global con el nombre `MP_DEVICE_SESSION_ID`, cuyo valor es el ID del dispositivo. 
 
@@ -55,7 +53,7 @@ También puedes **crear tu propia variable** agregando una etiqueta HTML a tu si
   <input type="hidden" id="deviceId">
 ```
 
-#### 3. Uso del device ID
+### 3. Uso del device ID
 
 Una vez que tengas el valor del Device ID, debes **enviarlo a nuestros servidores** al crear un pago. Para hacer esto, agrega el siguiente encabezado (*header*) a la solicitud:
 
@@ -70,11 +68,11 @@ X-meli-session-id: device_id
 > Recuerda reemplazar `device_id` con el nombre de la variable que contiene su valor de ID del dispositivo.
 
 
-### Implementa el device ID en tu aplicación móvil nativa
+## Implementa el device ID en tu aplicación móvil nativa
 
 Si tienes una aplicación nativa, puedes capturar la información del dispositivo con nuestro SDK y enviarla al momento de crear el token. Sigue estos pasos:
 
-#### 1. Agrega la dependencia
+### 1. Agrega la dependencia
 
 [[[
 ```ios
@@ -99,7 +97,7 @@ dependencies {
 ```
 ]]]
 
-#### 2. Inicializa el módulo
+### 2. Inicializa el módulo
 
 [[[
 ```swift
@@ -135,7 +133,7 @@ DeviceSDK.getInstance().execute(this);
 ```
 
 ]]]
-#### 3. Captura la información
+### 3. Captura la información
 
 Ejecuta alguna de estas funciones para obtener la información en el formato que prefieras.
 
@@ -158,7 +156,7 @@ String jsonString = DeviceSDK.getInstance().getInfoAsJsonString() // devuelve un
 ```
 ]]]
 
-#### 4. Envía la información
+### 4. Envía la información
 
 Por último, envía la información en el campo `device` al crear el `card_token`.
 
@@ -205,7 +203,7 @@ Por último, envía la información en el campo `device` al crear el `card_token
 }
 ```
 
-### Detalla toda la información sobre el pago
+## Detalla toda la información sobre el pago
 
 Para optimizar la validación de la seguridad de los pagos y mejorar sus aprobaciones, es valioso enviar la mayor cantidad posible de **datos del comprador y del ítem**.
 Puedes ver todos los atributos disponibles al crear un pago usando el método [Crear pago](/developers/es/reference/payments/_payments/post). Presta especial atención a los atributos del nodo `adicional_inf`, particularmente a:
@@ -215,7 +213,7 @@ Puedes ver todos los atributos disponibles al crear un pago usando el método [C
 
 Existen también **campos extra** que pueden ser enviados dependiendo del **ramo de actividades o industria** de tu tienda. Puedes encontrar más detalles sobre cada ramo y los datos del comprador y del envío que recomendamos incluir en cada uno de ellos [aquí](/developers/es/docs/checkout-api/additional-content/industry-data).
 
-### Mejora la experiencia del usuario
+## Mejora la experiencia del usuario
 A menudo, el comprador puede cometer un error al completar sus datos en el checkout, así que vale la pena revisar cada paso, posibles interacciones, e incluso el diseño, para comprobar que todo esté tan claro como debería ser. 
 
 En caso de que optes por **crear tu front-end desde cero**, puedes encontrar consejos para hacerlo de forma eficiente [aquí](/developers/es/docs/checkout-api/best-practices/ux-best-practices/ux-for-checkouts/introduction). 
