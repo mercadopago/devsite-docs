@@ -210,7 +210,7 @@ For cases where the Challenge is necessary, the status will show the value `pend
 
 
 
-4. To **display the challenge**, you need to generate an iframe (min height: 500px, min width: 600px) containing a form with `method post` and `action`, which will be the URL obtained in the field `external_resource_url`, and a hidden input with the value returned in `creq`. Then, you must post the form below to start the challenge.
+4. To **display the challenge**, you need to generate an iframe (min height: 500px, min width: 600px) containing a form with `method post`, `action`, which will be the URL obtained in the field `external_resource_url`, and a hidden input with the value returned in `creq`. Then, you must post the form below to start the challenge.
 
 [[[
 ```javascript
