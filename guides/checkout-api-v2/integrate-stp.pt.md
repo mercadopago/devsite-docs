@@ -1,12 +1,12 @@
-# STP
+# Transferências SPEI
 
 ----[mlb]----
-Com o Checkout Transparente do Mercado Pago, é possível oferecer pagamentos com STP **(Sistema de Transferências e Pagamentos)**. Este serviço permite fazer pagamentos de qualquer banco ou instituição financeira usando sua CLABE **(Clave Bancaria Estandarizada)**.
+Com o Checkout Transparente do Mercado Pago, é possível oferecer pagamentos via **Transferências SPEI**. Este serviço permite fazer pagamentos de qualquer banco ou instituição financeira usando sua CLABE **(Clave Bancaria Estandarizada)**.
 
 ------------
 
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-Com o Checkout API do Mercado Pago, é possível oferecer pagamentos com STP **(Sistema de Transferências e Pagamentos)**. Este serviço permite fazer pagamentos de qualquer banco ou instituição financeira usando sua CLABE **(Clave Bancaria Estandarizada)**.
+Com o Checkout API do Mercado Pago, é possível oferecer pagamentos via **Transferências SPEI**. Este serviço permite fazer pagamentos de qualquer banco ou instituição financeira usando sua CLABE **(Clave Bancaria Estandarizada)**.
 
 ------------
 
@@ -75,7 +75,7 @@ curl -X GET \
 ```
 ]]]
 
-Para oferecer **pagamentos com STP**, siga as etapas abaixo.
+Para oferecer **pagamentos via Transferências SPEI**, siga as etapas abaixo.
 
 ## Importar MercadoPago.js
 
@@ -127,16 +127,6 @@ Com a **biblioteca MercadoPago.js** incluída e as **credenciais configuradas**,
         <label for="email">E-mail</label>
         <input id="form-checkout__email" name="email" type="text">
       </div>
-      <div>
-        <label for="identificationType">Type of document</label>
-        <select id="form-checkout__identificationType" name="identificationType" type="text"></select>
-      </div>
-      <div>
-        <label for="identificationNumber">Document number</label>
-        <input id="form-checkout__identificationNumber" name="identificationNumber" type="text">
-      </div>
-    </div>
-
     <div>
       <div>
         <input type="hidden" name="transactionAmount" id="transactionAmount" value="100">
@@ -198,7 +188,7 @@ elem.appendChild(tempOptions);
 
 Ao finalizar a inclusão do formulário de pagamento e a obtenção dos tipos de documento, é necessário encaminhar o e-mail do comprador, tipo e número de documento, o meio de pagamento utilizado e o detalhe do valor a ser pago utilizando nossa **API de Pagamentos** ou um de nossos **SDKs**.
 
-Para configurar pagamentos com **STP**, envie um **POST** com os seguintes parâmetros ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, utilize um de nossos SDKs abaixo.
+Para configurar pagamentos via **Transferências SPEI**, envie um **POST** com os seguintes parâmetros ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, utilize um de nossos SDKs abaixo.
 
 [[[
 ```php
@@ -405,7 +395,7 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
 ```
 ]]]
 
-A resposta mostrará o status `pendente` até que o comprador realize o pagamento. Além disso, na resposta à requisição, o parâmetro `external_resource_url` devolverá uma URL que contém as instruções para que o comprador realize o pagamento. Você pode redirecioná-lo para este mesmo link para conclusão do fluxo de pagamento. Veja abaixo um exemplo de retorno.
+A resposta mostrará o status `pendente` até que o comprador realize o pagamento. Além disso, na resposta à requisição, o parâmetro `payment_method.data.external_resource_url` devolverá uma URL que contém as instruções para que o comprador realize o pagamento. Você pode redirecioná-lo para este mesmo link para conclusão do fluxo de pagamento. Veja abaixo um exemplo de retorno.
 
 [[[
 ```json
@@ -440,3 +430,14 @@ A resposta mostrará o status `pendente` até que o comprador realize o pagament
 > Importante
 >
 > Caso receba um erro ao gerar um pagamento, consulte a lista de possíveis erros na seção [Referência de API](/developers/pt/reference/payments/_payments/post).
+
+## Visualização do pagamento
+
+Para que o usuário possa realizar a transferência, direcione-o diretamente para a URL disponível em `external_resource_url` ou disponibilize-a por meio de um botão, seguindo o exemplo abaixo.
+
+[[[
+```html
+<a href="https://www.mercadopago.com.co/payments/123456789/ticket?caller_id=123456&hash=123e4567-e89b-12d3-a456-426655440000" target="_blank">Pagar con Transferencias SPEI</a>
+
+```
+]]]

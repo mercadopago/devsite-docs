@@ -1,6 +1,6 @@
-# STP
+# Transferencias SPEI
 
-Con el Checkout API de Mercado Pago puedes ofrecer pagos con STP **(Sistema de Transferencias y Pagos)**, el servicio que permite realizar pagos desde cualquier banco o entidad financiera utilizando su CLABE **(Clave Bancaria Estandarizada)**.
+Con el Checkout API de Mercado Pago puedes ofrecer pagos a través de **Transferências SPEI**. Este servicio permite realizar pagos desde cualquier banco o institución financiera utilizando tu CLABE **(Clave Bancaria Estandarizada)**.
 
 Para una lista detallada de todos los medios de pago disponibles para integración, envía un **GET** con tu `access_token` al endpoint [/v1/payment_methods](/developers/es/reference/payment_methods/_payment_methods/get) y ejecuta la solicitud o, si lo prefieres, haz la solicitud utilizando uno de nuestros SDKs.
 
@@ -67,7 +67,7 @@ curl -X GET \
 ```
 ]]]
 
-Para ofrecer pagos con STP, sigue los siguientes pasos.
+Para ofrecer pagos a través de **Transferencias SPEI**, sigue los siguientes pasos.
 
 ## Importar MercadoPago.js
 
@@ -117,16 +117,6 @@ Con la **biblioteca MercadoPago.js incluida** y las **credenciales configuradas*
         <label for="email">E-mail</label>
         <input id="form-checkout__email" name="email" type="text">
       </div>
-      <div>
-        <label for="identificationType">Type of document</label>
-        <select id="form-checkout__identificationType" name="identificationType" type="text"></select>
-      </div>
-      <div>
-        <label for="identificationNumber">Document number</label>
-        <input id="form-checkout__identificationNumber" name="identificationNumber" type="text">
-      </div>
-    </div>
-
     <div>
       <div>
         <input type="hidden" name="transactionAmount" id="transactionAmount" value="100">
@@ -187,7 +177,7 @@ elem.appendChild(tempOptions);
 
 Al finalizar la inclusión del formulario de pago y obtener los tipos de documentos, es necesario enviar el email del comprador, el tipo y número de documento, el medio de pago utilizado y el detalle del importe a pagar utilizando nuestra **API de Pagos** o uno de nuestros **SDKs**.
 
-Para configurar pagos con **STP**, envía un **POST** con los parámetros requeridos al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) y ejecuta la solicitud o, si lo prefieres, utiliza uno de nuestros SDKs indicados a continuación.
+Para configurar pagos con **Transferencias SPEI**, envía un **POST** con los parámetros requeridos al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) y ejecuta la solicitud o, si lo prefieres, utiliza uno de nuestros SDKs indicados a continuación.
 
 [[[
 ```php
@@ -394,7 +384,7 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
 ```
 ]]]
 
-La respuesta mostrará el status `pendiente` hasta que el comprador realice el pago. Además, en la respuesta a la solicitud, el parámetro transaction_details.`external_resource_url` devolverá una URL que contiene las instrucciones para que el comprador efectúe el pago. Puedes redirigirlo a este mismo link para finalizar el flujo de pago.
+La respuesta mostrará el status `pendiente` hasta que el comprador realice el pago. Además, en la respuesta a la solicitud, el parámetro transaction_details.`payment_method.data.external_resource_url` devolverá una URL que contiene las instrucciones para que el comprador efectúe el pago. Puedes redirigirlo a este mismo link para finalizar el flujo de pago.
 
 [[[
 ```json
@@ -429,3 +419,15 @@ La respuesta mostrará el status `pendiente` hasta que el comprador realice el p
 > Importante
 >
 > En caso de recibir un error al generar un pago, puedes consultar el listado de errores posibles en la sección [Referencia de API](/developers/es/reference/payments/_payments/post).
+
+## Visualización del pago
+
+Para que el usuario pueda realizar la transferencia, diríjalo directamente a la URL disponible en `external_resource_url` o póngala a su disposición mediante un botón, siguiendo el ejemplo a continuación.
+
+[[[
+```html
+<a href="https://www.mercadopago.com.co/payments/123456789/ticket?caller_id=123456&hash=123e4567-e89b-12d3-a456-426655440000" target="_blank">Pagar con Transferencias SPEI</a>
+
+```
+]]]
+

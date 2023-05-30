@@ -1,6 +1,6 @@
-# STP
+# SPEI Transfers
 
-With Mercado Pago's Checkout API, it is possible to offer payments using the STP **(Payment Transfer System)**. This service allows you to make payments from any bank or financial institution using your CLABE **(Clave Bancaria Estandarizada)**.
+With Mercado Pago's Checkout API, it is possible to offer payments using **SPEI Transfers**. This service allows you to make payments from any bank or financial institution using your CLABE **(Clave Bancaria Estandarizada)**.
 
 For a detailed list of all available payment methods for integration, send a **GET** request with your `access_token` to the endpoint [/v1/payment_methods](/developers/pt/reference/payment_methods/_payment_methods/get) and execute the request. Alternatively, you can make the request using one of our SDKs.
 
@@ -67,7 +67,7 @@ curl -X GET \
 ```
 ]]]
 
-To offer **payments with STP**, follow the steps below.
+To offer payments via **SPEI Transfers**, follow the steps below.
 
 
 ## Import MercadoPago.js
@@ -120,16 +120,6 @@ With the **MercadoPago.js library** included and the **credentials configured**.
         <label for="email">E-mail</label>
         <input id="form-checkout__email" name="email" type="text">
       </div>
-      <div>
-        <label for="identificationType">Type of document</label>
-        <select id="form-checkout__identificationType" name="identificationType" type="text"></select>
-      </div>
-      <div>
-        <label for="identificationNumber">Document number</label>
-        <input id="form-checkout__identificationNumber" name="identificationNumber" type="text">
-      </div>
-    </div>
-
     <div>
       <div>
         <input type="hidden" name="transactionAmount" id="transactionAmount" value="100">
@@ -192,7 +182,7 @@ elem.appendChild(tempOptions);
 
 When finalizing the inclusion of the payment form and obtaining the types of documents, it is necessary to forward the buyer's email, type and document number, the payment method used and the details of the amount to be paid using our **Payments API** or one of our **SDKs**.
 
-To configure payments with **STP**, send a **POST** with the following parameters to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post) and run the request or, if you prefer, use one of our SDKs below.
+To configure payments via **SPEI Transfers**, send a **POST** with the following parameters to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post) and run the request or, if you prefer, use one of our SDKs below.
 
 [[[
 ```php
@@ -399,7 +389,7 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
 ```
 ]]]
 
-The response will show the `pending` status until the buyer completes the payment. Also, in the response to the request, the `external_resource_url `parameter will return a URL that contains instructions for the buyer to make the payment. You can redirect to this same link to complete the payment flow. See below for an example response.
+The response will show the `pending` status until the buyer completes the payment. Also, in the response to the request, the `payment_method.data.external_resource_url` parameter will return a URL that contains instructions for the buyer to make the payment. You can redirect to this same link to complete the payment flow. See below for an example response.
 
 [[[
 ```json
@@ -434,3 +424,15 @@ The response will show the `pending` status until the buyer completes the paymen
 > Important
 >
 > If you receive an error while generating a payment, please refer to the list of possible errors in the [API Reference](/developers/en/reference/payments/_payments/post) section.
+
+## Payment visualization
+
+
+In order for the user to make the transfer, direct them directly to the URL available at `external_resource_url` or make it available through a button, following the example below.
+
+[[[
+```html
+<a href="https://www.mercadopago.com.co/payments/123456789/ticket?caller_id=123456&hash=123e4567-e89b-12d3-a456-426655440000" target="_blank">Pagar con Transferencias SPEI</a>
+
+```
+]]]
