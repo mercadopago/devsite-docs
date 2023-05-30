@@ -27,22 +27,6 @@ Below are the steps to integrate with 3DS.
 
 
 1. Use the Mercado Pago [SDK JS](https://www.mercadopago.com.br/developers/en/docs/sdks-library/client-side/mp-js-v2) at checkout to generate the [credit card token](/developers/en/docs/checkout-api/integration-configuration/card/integrate-via-cardform).
-
-[[[
-```Javascript
-
-async function createCardToken(){ 
-    const token = await mp.fields.createCardToken({
-        cardholderName,
-        identificationType, 
-        identificationNumber, 
-    });
-    ...
-}
-```
-]]]
-
-
 2. Next, send the **checkout data** along with the **card token** to the backend.
 3. After that, make a request to create a new payment with the received data. The `three_d_secure_mode` attribute needs to be sent with one of the following values:
     1. `not_supported`: 3DS must not be used (this is the default value).
@@ -197,7 +181,7 @@ For cases where the Challenge is necessary, the status will show the value `pend
 >
 > Important
 >
-> In the latter case, the response will show a payment attribute called `three_dsinfo` with the fields `external_resource_url`, which contains the Challenge URL, and `creq`, a Challenge request identifier. It will be necessary to display the Challenge and treat its result with the following steps.
+> In the latter case, the response will show a payment attribute called `three_ds_info` with the fields `external_resource_url`, which contains the Challenge URL, and `creq`, a Challenge request identifier. It will be necessary to display the Challenge and treat its result with the following steps.
 
 
 
@@ -213,7 +197,7 @@ For cases where the Challenge is necessary, the status will show the value `pend
     "status": "pending",
     "status_detail": "pending_challenge",
     ...
-    "three_dsinfo":
+    "three_ds_info":
     {
         "external_resource_url": "https://acs-public.tp.mastercard.com/api/v1/browser_Challenges",
         "creq": "eyJ0aHJlZURTU2VydmVyVHJhbnNJRCI6ImJmYTVhZjI0LTliMzAtNGY1Yi05MzQwLWJkZTc1ZjExMGM1MCIsImFjc1RyYW5zSUQiOiI3MDAwYTI2YS1jYWQ1LTQ2NjQtOTM0OC01YmRlZjUwM2JlOWYiLCJjaGFsbGVuZ2VXaW5kb3dTaXplIjoiMDQiLCJtZXNzYWdlVHlwZSI6IkNSZXEiLCJtZXNzYWdlVmVyc2lvbiI6IjIuMS4wIn0"
@@ -226,7 +210,7 @@ For cases where the Challenge is necessary, the status will show the value `pend
 
 
 
-4. To **display the challenge**, you need to generate an iframe (min height: 500px, min width: 600px) containing a form with `method post` and `action`, which will be the URL obtained in the field `external_resource_url`, and a hidden input with the value returned in `creq`. Then, you must post the form below to start the challenge.
+4. To **display the challenge**, you need to generate an iframe (min height: 500px, min width: 600px) containing a form with `method post`, `action` containing the URL obtained in the field `external_resource_url`, and a hidden input with the value returned in `creq`. Then, you must post the form below to start the challenge.
 
 [[[
 ```javascript
@@ -236,7 +220,7 @@ function doChallenge(payment) {
     const {
       status,
       status_detail,
-      three_dsinfo: { creq, external_resource_url },
+      three_ds_info: { creq, external_resource_url },
     } = payment;
     if (status === "pending" && status_detail === "pending_challenge") {
       var iframe = document.createElement("iframe");

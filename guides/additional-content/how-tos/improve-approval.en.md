@@ -18,8 +18,7 @@ You can find the information and check the status of a payment via the API, thro
 >
 > Important
 >
-> You can also find more information about payments in the [Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/activities) account activity.
-
+> You can also find more information about payments in the [Mercado Pago.](https://www.mercadopago[FAKER][URL][DOMAIN]/activities) account activity
 
 ### Errors made by the buyer
 
@@ -49,9 +48,9 @@ In these cases, the `status_detail` field may return: `cc_rejected_blacklist`, `
 
 > WARNING
 >
-> Important
+> Attention
 >
-> We recommend assessing your [integration’s quality](/developers/en/docs/checkout-api/additional-content/integration-quality) before going to production to check if you are meeting the Mercado Pago quality and security standards that would help you obtain a good payment approval rate.
+> We recommend assessing your [integration’s quality](/developers/en/docs/checkout-pro/additional-content/integration-quality) before going to production to check if you are meeting the Mercado Pago quality and security standards that would help you obtain a good payment approval rate.
 
 To prevent a legitimate payment from being refused because it does not meet security validations, **it is necessary to include all possible information** when carrying out the transaction. Furthermore, you must pay attention to some security requirements, such as our **Security Code** and **Device ID**.
 
@@ -83,12 +82,7 @@ The reason for refusing payment must be explained to your customers. They need t
 
 For example, if a payment is declined because the user does not have enough funds in their bank account, you could recommend they try using a different payment method to complete the transaction.
 
-> NOTE
->
-> Important
->
-> If you’re using Checkout Pro, don’t worry! All your messages are already set up. If you’re using another product, we recommend showing [a specific message for each rejection reason](/developers/en/guides/online-payments/checkout-api/handling-responses).
-
+> If you’re using Checkout Pro, don’t worry! All your messages are already set up. If you’re using another product, we recommend showing **a specific message for each rejection reason**.
 
 ### Add the security code
 

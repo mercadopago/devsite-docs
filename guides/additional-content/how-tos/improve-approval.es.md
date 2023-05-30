@@ -14,13 +14,11 @@ La denegación de pagos es una realidad en el mundo de las ventas online y puede
 
 Puedes encontrar la información y verificar el estado de un pago a través de la API por medio del método [Obtener pago](/developers/es/reference/payments/_payments_id/get). El campo de `status` indica si el pago fue aprobado o no, mientras que el campo `status_detail` proporciona más detalles, incluidos los motivos del rechazo.
 
-
 > NOTE
 >
 > Importante
 >
-> Puedes encontrar más información sobre el detalle del pago en la actividad de la cuenta de [Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/activities).
-
+> Puedes encontrar más información sobre el detalle del pago en la actividad de la cuenta de [Mercado Pago.](https://www.mercadopago[FAKER][URL][DOMAIN]/activities)
 
 ### Errores de relleno del comprador
 
@@ -40,14 +38,13 @@ A la hora de efectuar un pago tenemos una serie de comprobaciones, tanto por par
 
 En estos casos, el campo `status_detail` puede devolver: `cc_rejected_blacklist`, `cc_rejected_high_risk`
 
-
 ## Recomendaciones para mejorar tu aprobación
 
 > WARNING
 > 
-> Importante
+> Atención
 >
-> Recomendamos  evaluar la [calidad de tu integración](/developers/es/docs/checkout-api/additional-content/integration-quality) antes de salir a producción para que puedas validar si estás cumpliendo con los estándares de calidad y seguridad de Mercado Pago  que pueden mejorar tu tasa de aprobación de pagos.
+> Recomendamos  evaluar la [calidad de tu integración](/developers/es/docs/checkout-pro/additional-content/integration-quality) antes de salir a producción para que puedas validar si estás cumpliendo con los estándares de calidad y seguridad de Mercado Pago  que pueden mejorar tu tasa de aprobación de pagos.
 
 Para evitar que un pago real sea rechazado porque no cumple con las validaciones de seguridad, **es necesario incluir toda la información posible** al realizar la transacción y también prestar atención a algunos requisitos de seguridad, como nuestro **Código de seguridad** y el **device ID**.
 
@@ -79,12 +76,7 @@ Es importante que expliques a tus clientes el motivo de la denegación del pago 
 
 Por ejemplo, si se rechaza un pago por fondos insuficientes, puedes recomendarles que intenten nuevamente con otro método de pago para completar la transacción.
 
-> NOTE
->
-> Importante
->
-> Si utilizas el Checkout Pro, no te preocupes, ya tienes configurados los mensajes según cada caso. Y si usas otro de nuestros productos, te recomendamos mostrar un [mensaje específico por cada motivo de rechazo](/developers/es/guides/online-payments/checkout-api/handling-responses).
-
+> Si utilizas el Checkout Pro, no te preocupes, ya tienes configurados los mensajes según cada caso. Y si usas otro de nuestros productos, te recomendamos mostrar un **mensaje específico por cada motivo de rechazo**.
 
 ### Agrega nuestro código de seguridad en tu sitio
 
