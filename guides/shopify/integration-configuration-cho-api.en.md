@@ -28,27 +28,3 @@ To install Checkout Transparente in a Shopify store, follow the steps below:
 > Important
 >
 > After installed, the Transparent Checkout can take up to 10 minutes to appear linked in the Shopify store due to the storage in the cache. If you need help to install Transparent Checkout, contact [Support.](https://www.mercadopago.com/developers/en/support)
-
-
-
-> WARNING
->
-> Attention
->
-> If you are using the old Mercado Pago app ("Mercado Pago"), [click here](/developers/en/docs/shopify/how-tos/migration) to find out how to migrate to the current version ("Checkout Mercado Pago" ).
-
-To install Checkout Pro in a Shopify store, follow the steps below:
-
-1. Go to your [Shopify](https://accounts.shopify.com/store-login) store.
-2. In the store's administrative panel, click on **Settings**.
-3. Once there, select the **Payments** option. 
-4. In "Additional payment methods", click on the **Add payment methods** option.
-5. Go to the **Search by provider** tab and look for the new app with the name "Checkout Mercado Pago".
-6. Once you have found it, select it and click **Activate** and then **Connect**.
-7. Select **Install App** and then **Manage**.
-8. Put your **production credentials** (`public key` and `access token`) in the fields that request it and click **Save**. Remember to keep your [credentials](/developers/en/docs/shopify/additional-content/credentials) handy.
-9. To finish the installation, select **Activate Checkout Mercado Pago**.
-
-> In this step, you can select the images of the means of payment that you want to show in your store for illustrative purposes. Also, if you wish, you can enable [test mode.](/developers/en/docs/shopify/sales-processing/integration-test)
-> <br/><br/>
-> In case of renewing your credentials, remember to replace both the production and test credentials in your integration.
