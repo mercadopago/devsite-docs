@@ -10,7 +10,7 @@ En esta sección, nos aseguraremos de que tu aplicación cumpla con los requisit
 
 El puntaje indica qué tan segura y alineada con las buenas prácticas de integración de Mercado Pago está la configuración de tu aplicación.
 
-Haz clic en **Actualizar puntaje** para iniciar el proceso de análisis de tu integración. Revisa los puntos de mejora identificados durante el análisis y haz los cambios necesarios en tu integración. Durante este proceso, se analizarán una serie de campos asociados. Para obtener más información, consulta la documentación sobre [Calidad de integración](/developers/pt/guides/additional-content/homologator/homologator).
+Haz clic en **Actualizar puntaje** para iniciar el proceso de análisis de tu integración. Revisa los puntos de mejora identificados durante el análisis y haz los cambios necesarios en tu integración. Durante este proceso, se analizarán una serie de campos asociados.
 
 > Después de realizar las mejoras, haz clic nuevamente en **Actualizar puntaje** para reevaluar tu integración y verificar si cumple con los estándares requeridos.
 

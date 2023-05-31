@@ -355,7 +355,7 @@ En la notificación recibirás un `JSON` con la siguiente información que conti
 >
 > Importante
 >
-> También puedes obtener más información de la orden utilizando la api [Obtener orden](/developers/es/reference/merchant_orders/_merchant_orders_id/get)
+> También puedes obtener más información de la orden utilizando la api [Obtener orden](/developers/es/reference/merchant_orders/_merchant_orders_id/get).
 
 
 <br>

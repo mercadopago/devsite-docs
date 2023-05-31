@@ -11,7 +11,7 @@ In this section, we will ensure that your application meets the quality and secu
 
 The score indicates how secure and aligned with Mercado Pago's integration best practices your application's configuration is.
 
-Click on **Update score** to start the process of analyzing your integration. Review the improvement points identified during the analysis and make the necessary changes to your integration. In this process, a series of associated fields will be analyzed. To learn more, read the [Integration Quality](/developers/en/guides/additional-content/homologator/homologator) documentation.
+Click on **Update score** to start the process of analyzing your integration. Review the improvement points identified during the analysis and make the necessary changes to your integration. In this process, a series of associated fields will be analyzed.
 
 > After making the improvements, click on **Update score** again to reassess your integration and verify if it meets the required standards.
 

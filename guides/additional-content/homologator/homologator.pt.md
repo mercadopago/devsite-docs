@@ -41,10 +41,10 @@ Você pode ver esses atributos avaliados e a importância de cada um abaixo:
 
 Para medir a qualidade sa sua aplicação, siga os passos abaixo.
 
-1. No [Devsite](/developers/pt/docs), acesse o menu **Suas integrações >** [Dashboard](https://mercadopago[FAKER][URL][DOMAIN]/developers/panel/app).
-2. Na área de [Suas aplicações](/developers/pt/guides/additional-content/dashboard/applications) do Dashboard, **clique no card** da aplicação desejada. É necessário que seja uma aplicação em que haja um produto a ser integrado daqueles em que a ferramenta de medição está disponível (Checkout Pro, ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------ ----[mlb]---- Checkout Transparente ------------, Checkout Bricks ou Mercado Pago Point).
-3. Em seguida, clique em **Detalhes da pontuação** para acessar a ferramenta em que você poderá **medir a qualidade da sua aplicação** e visualizar a pontuação que indica o quanto a configuração da sua aplicação é segura e está alinhada com as boas práticas de integração do Mercado Pago. 
-4. Na tela **"Qualidade da integração"**, clique em **Avaliar qualidade** e insira o `payment ID` de um pagamento recente feito com [credenciais](/developers/pt/guides/additional-content/credentials/credentials) de produção da aplicação você está certificando. Sempre que possível, insira no campo de preenchimento o último `payment ID` produtivo que você identifica na aplicação em questão.
+1. No [Devsite](/developers/pt/docs), acesse o menu [Suas integrações](https://www.mercadopago.com.br/developers/panel/app).
+2. No [Painel do desenvolvedor](https://www.mercadopago.com.br/developers/panel/app), **clique no card** da aplicação desejada. É necessário que seja uma aplicação em que haja um produto a ser integrado daqueles em que a ferramenta de medição está disponível (Checkout Pro, ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------ ----[mlb]---- Checkout Transparente ------------, Checkout Bricks ou Mercado Pago Point).
+3. Em seguida, clique em **Atualizar pontuação** para acessar a ferramenta em que você poderá **medir a qualidade da sua aplicação** e visualizar a pontuação que indica o quanto a configuração da sua aplicação é segura e está alinhada com as boas práticas de integração do Mercado Pago. 
+4. Na tela **"Qualidade da integração"**, clique em **Atualizar pontuação** e insira o `payment ID` de um pagamento recente feito com [credenciais](/developers/pt/guides/additional-content/credentials/credentials) de produção da aplicação você está certificando. Sempre que possível, insira no campo de preenchimento o último `payment ID` produtivo que você identifica na aplicação em questão.
 
 Pronto! Você realizou a medição de qualidade. Agora poderá saber sua pontuação e quais aspectos de sua integração você pode melhorar.
 

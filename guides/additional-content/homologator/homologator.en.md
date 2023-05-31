@@ -30,10 +30,11 @@ You can see the assessed attributes and the importance of each of them below.
 
 To measure the quality of your application, follow the steps below.
 
-1. In [Devsite](/developers/en/docs), access the menu **Your integrations >** [Dashboard](https://mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)**.
-2. In the [Your applications](/developers/en/guides/additional-content/dashboard/applications) area of ​​the Dashboard, **click on the desired application**. It must be an application in which you have integrated a product admitted by the homologation tool (Checkout Pro, Checkout Bricks, ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------ ----[mlb]---- Checkout Transparente ------------, or Mercado Pago Point).
-3. Then click on **Score details** to access the tool where you can **measure the quality of your application** and view the score that indicates how secure and aligned your application configuration is with the good practices of Mercado Pago integration.
-4. On the **Integration Quality** screen, click **Evaluate quality** and enter the `payment ID` of a recent payment made with production [credentials](/developers/en/guides/additional-content/credentials/credentials) of the application you wish to homologate. Whenever possible, use the last productive `payment ID` identified in the application in question.
+1. In the [Devsite](/developers/en/docs), click on [Your integrations](https://www.mercadopago.com.br/developers/panel/app) menu.
+2. In the [Developer dashboard](https://www.mercadopago.com.br/developers/panel/app)
+, **click on the desired application**. It must be an application in which you have integrated a product admitted by the homologation tool (Checkout Pro, Checkout Bricks, ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------ ----[mlb]---- Checkout Transparente ------------, or Mercado Pago Point).
+3. Then click on **Update score** to access the tool where you can **measure the quality of your application** and view the score that indicates how secure and aligned your application configuration is with the good practices of Mercado Pago integration.
+4. On the **Integration Quality** screen, click **Update score** and enter the `payment ID` of a recent payment made with production [credentials](/developers/en/guides/additional-content/credentials/credentials) of the application you wish to homologate. Whenever possible, use the last productive `payment ID` identified in the application in question.
 
 Ready! The quality measurement has been performed. Now, you can learn your score and which are the aspects you can improve of your homologation.
 

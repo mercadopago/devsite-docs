@@ -351,7 +351,7 @@ In the notification, you will receive a `JSON` with the following information co
 >
 > Important
 >
-> You can also get more order information using the [Get order](/developers/en/reference/merchant_orders/_merchant_orders_id/get) api.
+> You can also get more order information using the [Get order](/developers/en/reference/merchant_orders/_merchant_orders_id/get) API.
 
 
 

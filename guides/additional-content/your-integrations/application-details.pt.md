@@ -12,7 +12,7 @@ Nesta seção, vamos garantir que sua aplicação atenda aos requisitos de quali
 
 A pontuação indica o quão segura e alinhada com as boas práticas de integração do Mercado Pago é a configuração da sua aplicação.
 
-Clique em **Atualizar pontuação** para iniciar o processo de análise da sua integração. Analise os pontos de melhoria identificados durante a análise e faça as alterações necessárias na sua integração. Nesse processo, serão analisados ​​uma série de campos associados, para saber mais, leia a documentação [Qualidade da integração](/developers/pt/guides/additional-content/homologator/homologator).
+Clique em **Atualizar pontuação** para iniciar o processo de análise da sua integração. Analise os pontos de melhoria identificados durante a análise e faça as alterações necessárias na sua integração. Nesse processo, serão analisados ​​uma série de campos associados.
 
 > Após realizar as melhorias, clique novamente em **Atualizar pontuação** para reavaliar sua integração e verificar se atende aos padrões exigidos.
 
@@ -59,6 +59,7 @@ Caso você não esteja utilizando uma plataforma de comércio eletrônico, marqu
 * **Redirect URL**: URL (em https) na qual você deseja receber o código de autorização quando sua integração for configurada como Marketplace ou realizada através de OAuth. Veja [OAuth](/developers/pt/docs/security/oauth/introduction) para mais detalhes.
 * **Permissões da aplicação**: opções de acesso da sua aplicação, sendo elas: read (ler), offline access (acesso offline) e write (escrever). Por padrão, sua aplicação é criada com todas as permissões ativadas, mas você pode desativar uma permissão clicando na caixa de seleção referente à permissão que você deseja alterar.
 </br>
+
 ### Excluir aplicação
 Para remover uma aplicação, siga estas etapas: 
 1. Acesse a página "Editar aplicação". 
