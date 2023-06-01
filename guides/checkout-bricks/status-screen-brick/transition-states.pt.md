@@ -1,6 +1,6 @@
 # Estados de transição
 
-Além de lidar com estados convencionais de pagamentos (`pending`, `approved` ou `rejected`), o Status Screen Brick também oferece uma experiência adicional para **pagamentos pendentes** por `Challenge`, no caso de [3DS 2.0](/developers/pt/docs/checkout-bricks/how-tos/improve-payment-approval/3ds), ou outros casos que exijam redirecionamento para domínios externos. 
+Além de lidar com estados convencionais de pagamentos (`pending`, `approved` ou `rejected`), o Status Screen Brick também oferece uma experiência adicional para **pagamentos pendentes** por `Challenge`, no caso de [3DS 2.0](/developers/pt/docs/checkout-bricks/how-tos/improve-payment-approval/3ds), ou outros casos que exijam redirecionamento para domínios externos.
 
 <center>
 
