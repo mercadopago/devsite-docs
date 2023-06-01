@@ -1,29 +1,22 @@
-# Cómo integrar 3DS con Checkout API?
+# Cómo integrar 3DS con Checkout API
 
-3DS 2.0 es una tecnología que permite la autenticación de transacciones con tarjeta de crédito y débito en comercio electrónico. Es decir, permite validar que la persona que realiza la compra es realmente el titular de la tarjeta, o tiene acceso a las cuentas del titular para realizar el pago.
-
-Una transacción autenticada tiene varios beneficios, que incluyen una mayor probabilidad de aprobación, evitar pérdidas por chargeback para el seller, menor riesgo de fraude para el buyer, entre otros.
-
+En esta documentación encontrarás toda la información necesaria para realizar la integración con 3DS con Checkout API. Para obtener más información sobre cómo funciona este tipo de autenticación, consulte [3DS 2.0](/developers/es/docs/checkout-api/how-tos/improve-payment-approval/3ds).
 
 > NOTE
 >
 > Importante
 >
-> Para llevar a cabo la integración con 3DS, debes cumplir con ciertos requisitos. Antes de avanzar a los siguientes pasos, revisa la sección de [Requisitos previos](/developers/es/docs/checkout-api/prerequisites) y asegúrate de que se cumplan todos.
-
-
-En esta documentación encontrarás toda la información necesaria para realizar la integración con 3DS.
-
+> Para integrarse con 3DS, se deben cumplir ciertos requisitos. Antes de continuar con los siguientes pasos, revise la sección [Requisitos previos](/developers/es/docs/checkout-api/prerequisites) y asegúrese de que se cumplan todos.
 
 ## Integrar con 3DS
 
-La autenticación 3DS se puede realizar a través de dos flujos distintos: **con o sin _Challenge_**, que son pasos adicionales que el comprador debe completar para garantizar su identidad. La decisión de incluir o no el _Challenge_ depende del emisor de la tarjeta y del perfil de riesgo de la transacción que se realiza.  
+La autenticación 3DS se puede realizar a través de dos flujos distintos: **con o sin _Challenge_**, que son pasos adicionales que el comprador debe completar para garantizar su identidad. La decisión de incluir o no el _Challenge_ depende del emisor de la tarjeta y del perfil de riesgo de la transacción que se realiza.
+
+> Obtenga también información sobre las integraciones a través de [Checkout Bricks](/developers/es/docs/checkout-bricks/how-tos/integrate-3ds), un método de pago modular, seguro y personalizable que automatiza varios de los procesos que se describen a continuación.
 
 Para **transacciones de bajo riesgo**, la información enviada en el momento del pago es suficiente y los pasos adicionales de _Challenge_ **no son necesarios**. Sin embargo, **para casos donde existe un alto riesgo de fraude**, _Challenge_ es requerido para **verificar la identidad del comprador**, lo que aumenta la conversión de las transacciones con tarjeta.
 
 A continuación se presentan los pasos para realizar una integración con 3DS.
-
-
 
 1. Debes usar el [SDK JS](/developers/es/docs/sdks-library/client-side/mp-js-v2) de Mercado Pago en el checkout para generar el [token de la tarjeta de crédito](/developers/es/docs/checkout-api/integration-configuration/card/integrate-via-cardform). 
 2. Después, postea los **datos del checkout** unto con el **token de la tarjeta** para su backend.
@@ -171,7 +164,6 @@ payment = payment_response["response"]
 ```
 ]]]
 
-
 En caso de que no sea necesario utilizar el flujo de _Challenge_, el campo `status` del pago tendrá valor `approved` y no será necesario mostrarlo, por lo que puedes seguir con el flujo de tu aplicación. 
 
 Para casos en que el _Challenge_ es necesario, el `status` mostrará el valor `pending`, y el `status_detail` será `pending_challenge`.
@@ -182,9 +174,7 @@ Para casos en que el _Challenge_ es necesario, el `status` mostrará el valor `p
 >
 > En este último caso, la respuesta mostrará un atributo del pago llamado `three_ds_info` con los campos `external_resource_url`, que contiene la URL del challenge, y `creq`, un identificador del challenge request. Será necesario mostrar el challenge y tratar su resultado con los pasos siguientes.
 
-
 ### Overview del response (se omitió información)
-
 
 [[[
 ```Json
@@ -205,7 +195,6 @@ Para casos en que el _Challenge_ es necesario, el `status` mostrará el valor `p
 
 ```
 ]]]
-
 
 4. Para **mostrar el _Challenge_**, es necesario que generes un _iframe_ (altura mínima: 500px, ancho mínimo: 600px) que contenga un formulario con `method post`, `action` que contenga la URL obtenida en el campo `external_resource_url`, y un input oculto con el valor obtenido en `creq`. Después, debes hacer el post del form a continuación para empezar el challenge.
 
@@ -253,7 +242,6 @@ function doChallenge(payment) {
 ```
 ]]]
 
-
 Cuando el challenge es finalizado, el status del pago será actualizado. Será `approved` si la autenticación fue exitosa, `rejected` si no lo fue y, en caso de que la autenticación no fuera  hecha, el pago permanecerá `pending`. Esta actualización no es inmediata, puede tardar unos instantes. 
 
 > NOTE
@@ -278,7 +266,6 @@ Para **tratar el evento del iframe**, sigue los pasos a continuación.
 
 Utilice el código JavaScript a continuación para implementar y escuchar el evento que indica que el _Challenge_ ha finalizado, de esta manera es posible redirigir al cliente a la pantalla de confirmación.
 
-
 [[[
 ```javascript
 
@@ -294,7 +281,6 @@ window.addEventListener("message", (e) => {
 ### Buscar status del pago
 
 El siguiente Javascript indica cómo se puede realizar la búsqueda del status de pago actualizado y mostrarlo en la pantalla de confirmación.
-
 
 [[[
 ```javascript
@@ -330,7 +316,6 @@ async function init() {
 
 Después de seguir estos pasos, tu integración está lista para autenticar transacciones con 3DS.
 
-
 ## Posibles status del pago 
 
 Una transacción con 3DS puede devolver diferentes status según el tipo de integración realizada (con o sin challenge). En un pago sin _Challenge_, el estado de la transacción será directamente "approved" o "rejected".
@@ -339,14 +324,11 @@ En un pago con _Challenge_, la transacción estará en status `pending` y se ini
 
 A continuación se muestra una tabla con los posibles status y sus descripciones correspondientes.
 
-
 | Status  | Descrição  |
 | --- | --- |
 | “pending”  | Transacción pendiente de autenticación o timeout del challenge.  |
 | “approved”  | Transacción aprobada con autenticación.  |
 | “rejected”  | Transacción denegada sin autenticación.  |
-
-
 
 ## Prueba de integración
 
@@ -354,11 +336,8 @@ Antes de pasar a producción, es posible probar la integración para asegurarse 
 
 Para realizar una compra de prueba, además de las credenciales de prueba de tu usuario de producción, es necesario utilizar una tarjeta de crédito de prueba con 3DS habilitado. 
 
-
 > WARNING
 >
 > Importante
 >
 > Para la realización de pruebas, recomendamos que te pongas en contacto con tu consultor de Mercado Pago.
-
-
