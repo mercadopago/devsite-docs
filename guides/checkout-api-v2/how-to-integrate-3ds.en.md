@@ -1,6 +1,6 @@
 # How to integrate 3DS with Checkout API
 
-In this documentation you will find all the necessary information to carry out the integration with 3DS with Transparent Checkout. For more information on how this type of authentication works, see [3DS 2.0](/developers/en/docs/checkout-api/how-tos/improve-payment-approval/3ds).
+In this documentation you will find all the necessary information to carry out the integration with 3DS with Checkout API. For more information on how this type of authentication works, see [3DS 2.0](/developers/en/docs/checkout-api/how-tos/improve-payment-approval/3ds).
 
 > NOTE
 >
