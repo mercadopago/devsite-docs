@@ -6,7 +6,11 @@ An authenticated transaction has several benefits, including a higher probabilit
 
 The flow below represents, in a simplified way, how the 3DS 2.0 authentication process works:
 
-[IMAGEM]
+<center>
+
+![how-tos-3ds](how-tos/improve-approval-3ds-en.gif)
+
+</center>
 
 You will find all the information necessary to carry out the integration with 3DS in the following links, according to your type of integration:
 

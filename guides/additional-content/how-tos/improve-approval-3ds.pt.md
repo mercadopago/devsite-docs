@@ -6,7 +6,11 @@ Uma transação autenticada tem vários benefícios, incluindo uma maior probabi
 
 O fluxo a seguir representa de maneira simplificada como se dá o processo de autenticação 3DS 2.0:
 
-[IMAGEM]
+<center>
+
+![how-tos-3ds](how-tos/improve-approval-3ds-pt.gif)
+
+</center>
 
 Você encontrará toda a informação necessária para realizar a integração com 3DS nos links a seguir, de acordo com seu tipo de integração:
 
