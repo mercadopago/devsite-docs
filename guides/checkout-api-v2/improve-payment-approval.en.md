@@ -6,7 +6,7 @@ You can see our **recommendations to improve your approval** in detail below.
 
 ## Get and send the Device ID
 
-The **Device ID** is an important piece of information to ensure better security and, consequently, a better payment approval rate. It's a unique number that's used to identify a customer's device when they are buying.
+The **Device ID** is an important piece of information to ensure better security and, consequently, a better payment approval rate. It's a **unique number that's used to identify a customer's device** when they are buying.
 
 If a customer makes a purchase on a different device than usual, this may represent an atypical behaviour. Even if it’s not necessarily a fraude, the Device ID could help us to make a correct assessment and avoid legitimate payment rejections.
 
@@ -59,7 +59,7 @@ You can also **create your own variable** by adding an HTML tag on your site as 
 
 ### 3. Use the device ID
 
-Once you have the Device ID, you must **send it to our servers** when creating a payment. To do so, simply add the following header to the request:
+Once you have the Device ID, you must **send it to our servers** when creating a payment. To do so, simply add the following **header** to the request:
 
 ```http
 X-meli-session-id: device_id

@@ -6,7 +6,7 @@ Puedes ver en detalle nuestras **recomendaciones para mejorar tu aprobación** a
 
 
 ## Obtén y envía el Device ID
-El **Device ID** es una información importante para lograr una mejor seguridad y, en consecuencia, una mejor tasa de aprobación de pagos. Representa un identificador único para el dispositivo de cada comprador en el momento de la compra.
+El **Device ID** es una información importante para lograr una mejor seguridad y, en consecuencia, una mejor tasa de aprobación de pagos. Representa un **identificador único para el dispositivo de cada comprador** en el momento de la compra.
 
 Si un comprador frecuente hace una compra desde un dispositivo diferente al habitual, esto podría representar un comportamiento atípico. Si bien puede no ser necesariamente un fraude, el Device ID nos ayuda a refinar la evaluación y evitar el rechazo de pagos legítimos.
 
@@ -55,7 +55,7 @@ También puedes **crear tu propia variable** agregando una etiqueta HTML a tu si
 
 ### 3. Uso del device ID
 
-Una vez que tengas el valor del Device ID, debes **enviarlo a nuestros servidores** al crear un pago. Para hacer esto, agrega el siguiente encabezado (*header*) a la solicitud:
+Una vez que tengas el valor del Device ID, debes **enviarlo a nuestros servidores** al crear un pago. Para hacer esto, agrega el siguiente **encabezado (*header*)** a la solicitud:
 
 ```html
 X-meli-session-id: device_id
