@@ -3451,7 +3451,7 @@ paths:
                                 - paused--Pause the item.
                             options:
                               type: array
-                              description: Optional field. Array containing group of complements present in the main item.
+                              description: Optional field. Array containing a group of complements present in the main item.
                               x-description-i18n:
                                 eng: Optional field. Array containing a group of complements present in the main item.
                                 spa: Campo opcional. Array que contiene grupos de complementos presentes en el ítem principal.
@@ -3538,7 +3538,7 @@ paths:
                                           description: Name of the complement item.
                                           x-description-i18n:
                                             eng: Name of the complement item.
-                                            spa: Nombre del item de complemento.
+                                            spa: Nombre del ítem de complemento.
                                             por: Nome do item de complemento.
                                           example: Chocolate ice cream
                                         price:
@@ -3547,7 +3547,7 @@ paths:
                                           x-description-i18n:
                                             eng: The complement item price, which could be zero if it is free or included in the main item price.
                                             spa: El precio del ítem complementario, que puede ser cero si es gratuito o está incluido en el precio del ítem principal.
-                                            por: O preço do item complementar, que pode ser zero se for gratuito ou incluído no preço do item principal.
+                                            por: O preço do item complementar, que pode ser zero, se for gratuito, ou incluído no preço do item principal.
                                           example: 7.25
                                         status:
                                           type: string
@@ -3555,7 +3555,7 @@ paths:
                                           x-description-i18n:
                                             eng: The complemenet item current status, can be active if it is available ("actived"), or paused if it is not ("paused"). 
                                             spa: El estado actual del ítem de complemento puede estar activo ("actived") o en pausa ("paused").
-                                            por: Atual estado do item de comeplemento, pode estar ativo ("actived") ou pausado ("paused").
+                                            por: Estado atual do item de complemento, podendo estar ativo ("actived") ou pausado ("paused").
                                           example: "active"
                                           enum:
                                             - active -- Active the item.
@@ -3580,7 +3580,7 @@ paths:
                     type: array
                     description: Array of publication results per store. List of publications that were sent to the processing queue.
                     x-description-i18n:
-                      eng: Array of publication results per store.List of publications that were sent to the processing queue.
+                      eng: Array of publication results per store. List of publications that were sent to the processing queue.
                       spa: Array de resultados de publicación por tienda. Lista de publicaciones que se enviaron a la cola de procesamiento.
                       por: Array de resultados de publicações por loja. Lista de publicações que foram enviadas para a fila de processamento.
                     items:
@@ -3632,7 +3632,7 @@ paths:
                     type: array
                     description: Array of publication results per store. List of publications that were sent to the processing queue.
                     x-description-i18n:
-                      eng: Array of publication results per store.List of publications that were sent to the processing queue.
+                      eng: Array of publication results per store. List of publications that were sent to the processing queue.
                       spa: Array de resultados de publicación por tienda. Lista de publicaciones que se enviaron a la cola de procesamiento.
                       por: Array de resultados de publicações por loja. Lista de publicações que foram enviadas para a fila de processamento.
                     items:
@@ -3744,8 +3744,8 @@ paths:
       description: Endpoint to check the current status of a catalog publication, using the generated id returned in the publication response
       x-description-i18n:
         eng: Endpoint to check the current status of a catalog publication, using the generated id returned in the publication response.
-        spa: Endpoint para verificar el estado actual de una publicación de catálogo, utilizando la ID generada devuelta en la respuesta de publicación.
-        por: Endpoint para verificar o status atual de uma publicação de catálogo, usando o id gerado retornado na resposta da publicação.
+        spa: Endpoint para verificar el estado actual de una publicación de catálogo, utilizando la ID devuelta en la respuesta de publicación.
+        por: Endpoint para verificar o status atual de uma publicação de catálogo, utilizando o id gerado retornado na resposta da publicação.
       parameters:
         - name: publication_id
           in: path
@@ -3773,7 +3773,7 @@ paths:
                     x-description-i18n:
                       eng: Current catalog publication process status.
                       spa: Estado actual del proceso de publicación del catálogo
-                      por: Atual status do processo de publicação do catálogo.
+                      por: Status atual do processo de publicação do catálogo.
                     enum:
                       - processing -- The catalog is being processed.
                       - error -- The publication process has been aborted because some irrecoverable error occurred.
