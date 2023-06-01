@@ -40,7 +40,7 @@ Nestes casos o campo `status_detail` poderá retornar:
 
 ## Recusas pelo banco emissor
 
-Ao realizar um **pagamento com cartão de crédito ou débito**, por exemplo, o banco emissor pode recusar a cobrança por diferentes motivos, como a data de validade expirada, saldo ou limite insuficientes, cartão desabilitado ou bloqueado para compras online.
+Ao realizar um **pagamento com cartão de crédito ou débito**, por exemplo, o banco emissor pode recusar a cobrança por diferentes motivos, como data de validade expirada, saldo ou limite insuficientes, cartão desabilitado ou bloqueado para compras online.
 Nestes casos o campo `status_detail` poderá retornar: 
  * `cc_rejected_call_for_authorize`
  * `cc_rejected_card_disabled`

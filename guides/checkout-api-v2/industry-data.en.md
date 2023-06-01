@@ -6,7 +6,7 @@ Depending on the branch of activities or industry of your store, there is a seri
 > 
 > Attention
 > 
-> This information applies only for Payment API integrations. To see information about the standard integration with payments api, click [here.](/developers/en/reference/payments/_payments/post)
+> This information applies only for Payment API integrations. To see information about the standard integration with payments api, click [here](/developers/en/reference/payments/_payments/post).
 
 ## Apparel
 

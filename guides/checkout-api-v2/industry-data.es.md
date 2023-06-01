@@ -6,7 +6,7 @@ Dependiendo del ramo de actividades o industria de tu tienda, existen una serie 
 > 
 > Atención
 > 
-> Esta información solo funciona para las integraciones con Payment API. Para ver información sobre integraciones estándar, haz clic [aquí.](/developers/es/reference/payments/_payments/post)
+> Esta información solo funciona para las integraciones con Payment API. Para ver información sobre integraciones estándar, haz clic [aquí](/developers/es/reference/payments/_payments/post).
 
 ## Apparel
 

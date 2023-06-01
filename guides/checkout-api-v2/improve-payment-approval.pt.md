@@ -47,7 +47,7 @@ Se você preferir atribuí-lo a outra variável, indique o nome adicionando o at
   <script src="https://www.mercadopago.com/v2/security.js" view="checkout" output="deviceId"></script>
 ```
 
-Você também pode **criar sua própria variável**, bastando adicionar uma tag HTML no seu site com o identificado `id="deviceID"`, como no exemplo abaixo.
+Você também pode **criar sua própria variável**. Para isso, adicione uma tag HTML no seu site com o identificador `id="deviceID"`, como no exemplo abaixo.
 ```html
   <input type="hidden" id="deviceId">
 ```
@@ -205,7 +205,7 @@ Por último, envie a informação obtida no campo `device` ao criar o `card_toke
 
 Para otimizar a validação de segurança dos pagamentos e melhorar as aprovações, é importante fazer **o envio do máximo de dados sobre o comprador e o produto**.
 
-Se atente a todos os atributos disponíveis ao criar um pagamento usando o método [Criar pagamento](/developers/pt/reference/payments/_payments/post). Preste atenção especial aos atributos do nó `“adicional_inf”`, como:
+Se atente a todos os atributos disponíveis ao criar um pagamento usando o método [Criar pagamento](/developers/pt/reference/payments/_payments/post). Preste atenção especialmente aos atributos em `“adicional_inf”`, como:
  * Dados do comprador,
  * Dados do produto,
  * Dados do envio.
@@ -215,7 +215,7 @@ Existem também **campos extras** que podem ser enviados de acordo com **o ramo 
 ## Melhorar a experiência do usuário
 Muitas vezes o comprador pode errar na hora de preencher seus dados no checkout. Por isso, vale a pena revisar cada passo, interações e até design, para checar se tudo está claro como deveria. 
 Caso opte por **criar seu front do zero**, você encontra dicas de como fazê-lo de forma eficiente [aqui](/developers/pt/docs/checkout-api/best-practices/ux-best-practices/ux-for-checkouts/introduction). 
-Se um pagamento for negado, é importante também que você explique aos seus clientes o motivo da recusa e que ação pode realizar para solucioná-lo. Assim, seus clientes terão todas as informações necessárias para pagar sem problemas. Você encontra **recomendações de mensagens para os principais motivos de recusa** [aqui](/developers/pt/docs/checkout-api/response-handling/collection-results). 
+Se um pagamento for negado, é importante também que você explique aos seus clientes o motivo da recusa e o que eles poderão fazer para resolver o problema. Assim, seus clientes terão todas as informações necessárias para pagar sem problemas. Você encontra **recomendações de mensagens para os principais motivos de recusa** [aqui](/developers/pt/docs/checkout-api/response-handling/collection-results). 
 
 Se, em vez disso, você quiser garantir uma interface otimizada, pode utilizar os **componentes visuais de [Checkout Bricks](/developers/pt/docs/checkout-bricks/landing)** e também aproveitar um componente visual já pronto com as melhores mensagens com o **[Status Screen Brick](/developers/pt/docs/checkout-bricks/status-screen-brick/introduction)**.
 

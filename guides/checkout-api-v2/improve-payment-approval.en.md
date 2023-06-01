@@ -14,7 +14,7 @@ If a customer makes a purchase on a different device than usual, this may repres
 > 
 > Attention
 >
-> If you are already using the [JS SDK of Mercado Pago](/developers/es/docs/sdks-library/client-side/mp-js-v2), it **won’t** be necessary to add the security script because the Device ID information is already being collected.
+> If you are already using the [JS SDK of Mercado Pago](/developers/en/docs/sdks-library/client-side/mp-js-v2), it **won’t** be necessary to add the security script because the Device ID information is already being collected.
 
 **Add the Mercado Pago security script** to your page by replacing the `view` value with the name of the section in which you wish to add it. Adding it to your **checkout URL** is the most important, but doing it in **other pages**, such as home, search or item, may be helpful to collect even more information.
 
@@ -220,7 +220,7 @@ There are also some **extra fields** that can be sent depending on the **branch 
 
 Often, the buyer can make mistakes when filling in their details at checkout. That's why it's worth reviewing every step, interaction, and even the interface design, to ensure everything is as clear as it should be. 
 
-In case you wish to **create your front-end from scratch**, you can find some advice on how to do so in an efficient way [here](/developers/en/docs/checkout-api/best-practices/ux-best-practices/ux-for-checkouts/introduction). If a payment is rejected, it is also important to explain to your customers why it is and what they can do to fix it. By doing so, your clients would have all the information they need to pay without any problems. You can find some **recommendations on how to inform the main rejection reasons** [here](/developers/es/docs/checkout-api/response-handling/collection-results).
+In case you wish to **create your front-end from scratch**, you can find some advice on how to do so in an efficient way [here](/developers/en/docs/checkout-api/best-practices/ux-best-practices/ux-for-checkouts/introduction). If a payment is rejected, it is also important to explain to your customers why and what they can do to fix it. By doing so, your clients would have all the information they need to pay without any further problems. You can find some **recommendations on how to inform the main rejection reasons** [here](/developers/en/docs/checkout-api/response-handling/collection-results).
 
 In case you wish to guarantee an optimized interface, you can use the **visual components of [Checkout Bricks](/developers/en/docs/checkout-bricks/landing)**, and also use a **predefined visual component** with the best messages with [Status Screen Brick](/developers/en/docs/checkout-bricks/status-screen-brick/introduction).
 

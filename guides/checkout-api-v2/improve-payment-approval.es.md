@@ -14,7 +14,7 @@ Si un comprador frecuente hace una compra desde un dispositivo diferente al habi
 > 
 > Atención
 >
->Si estás utilizando el [JS SDK de Mercado Pago](/developers/es/docs/sdks-library/client-side/mp-js-v2), **no** será necesario agregar el código de seguridad, ya que la información relativa al Device ID será obtenida por defecto.
+> Si estás utilizando el [JS SDK de Mercado Pago](/developers/es/docs/sdks-library/client-side/mp-js-v2), **no** será necesario agregar el código de seguridad, ya que la información relativa al Device ID será obtenida por defecto.
 
 Puedes **agregar el código de seguridad de Mercado Pago** a tu sitio reemplazando el valor de `view` con el nombre de la sección de tu web en la que deseas agregarlo. Si bien lo más importante es hacerlo en la **página del checkout**, también puedes hacerlo en **otras páginas**, tales como home, search o ítem, ya que ayuda a enriquecer la información recolectada.
 
@@ -28,7 +28,7 @@ Puedes **agregar el código de seguridad de Mercado Pago** a tu sitio reemplazan
 >
 > En caso de no tener un valor disponible para la sección, puedes dejarlo vacío.
 
-## Uso del device ID en la web
+## Uso del Device ID en la web
 Para usar el Device ID en la web y prevenir posibles compras fraudulentas, debes seguir los siguientes pasos:
 
 ### 1. Agrega nuestro código de seguridad
@@ -68,7 +68,7 @@ X-meli-session-id: device_id
 > Recuerda reemplazar `device_id` con el nombre de la variable que contiene su valor de ID del dispositivo.
 
 
-## Implementa el device ID en tu aplicación móvil nativa
+## Implementa el Device ID en tu aplicación móvil nativa
 
 Si tienes una aplicación nativa, puedes capturar la información del dispositivo con nuestro SDK y enviarla al momento de crear el token. Sigue estos pasos:
 
@@ -217,7 +217,7 @@ Existen también **campos extra** que pueden ser enviados dependiendo del **ramo
 A menudo, el comprador puede cometer un error al completar sus datos en el checkout, así que vale la pena revisar cada paso, posibles interacciones, e incluso el diseño, para comprobar que todo esté tan claro como debería ser. 
 
 En caso de que optes por **crear tu front-end desde cero**, puedes encontrar consejos para hacerlo de forma eficiente [aquí](/developers/es/docs/checkout-api/best-practices/ux-best-practices/ux-for-checkouts/introduction). 
-Si un pago resultara denegado, es importante también que expliques a tus clientes el motivo y qué medidas pueden tomar para solucionarlo. De esta forma, tendrán toda la información que necesitan para pagar sin problemas. Puedes encontrar **recomendaciones de mensajes para los principales motivos de rechazo** [aquí](/developers/es/docs/checkout-api/response-handling/collection-results).
+Si un pago resultara rechazado, es importante también que expliques a tus clientes el motivo y qué medidas pueden tomar para solucionarlo. De esta forma, tendrán toda la información que necesitan para pagar sin problemas. Puedes encontrar **recomendaciones de mensajes para los principales motivos de rechazo** [aquí](/developers/es/docs/checkout-api/response-handling/collection-results).
 Si, en cambio, quieres garantizar una interfaz optimizada, puedes utilizar los **componentes visuales de [Checkout Bricks](/developers/es/docs/checkout-bricks/landing)**, así como aprovechar el componente visual ya listo con los mejores mensajes del **[Status Screen Brick](/developers/es/docs/checkout-bricks/status-screen-brick/introduction)**.
 
 > WARNING
