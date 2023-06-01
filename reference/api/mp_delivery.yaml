@@ -3444,7 +3444,7 @@ paths:
                               x-description-i18n:
                                 eng: The item current status, can be active if it is available ("active"), or paused if it is not ("paused"). 
                                 spa: El estado actual del ítem puede estar activo ("active") o en pausa ("paused").
-                                por: Atual estado do item, pode estar ativo ("active") ou pausado ("paused").
+                                por: Estado atual do item, podendo estar ativo ("active") ou pausado ("paused").
                               example: "active"
                               enum:
                                 - active--Active the item.
@@ -3453,7 +3453,7 @@ paths:
                               type: array
                               description: Optional field. Array containing group of complements present in the main item.
                               x-description-i18n:
-                                eng: Optional field. Array containing group of complements present in the main item.
+                                eng: Optional field. Array containing a group of complements present in the main item.
                                 spa: Campo opcional. Array que contiene grupos de complementos presentes en el ítem principal.
                                 por: Campo opcional. Array contendo grupos de complementos presentes no item principal.
                               items:
@@ -3503,11 +3503,11 @@ paths:
                                           example: "Complement description"
                                         external_id:
                                           type: string
-                                          description: Required string. The complement item public identifier (SKU), must be unique for each store. Used for future item updates.
+                                          description: Required string. The complement item public identifier (SKU), must be unique for each store. It is used for future item updates.
                                           x-description-i18n:
-                                            eng: Required string.The complement item public identifier (SKU), must be unique for each store. Used for future item updates.
+                                            eng: Required string.The complement item public identifier (SKU) must be unique for each store. It is used for future item updates.
                                             spa: String requerida. El identificador público (SKU) del elemento complementario debe ser único para cada tienda. Se utiliza para futuras actualizaciones de elementos.
-                                            por: String obrigatória. O identificador público do item complementar (SKU) deve ser único para cada loja. Usado para futuras atualizações de itens.
+                                            por: String obrigatória. O identificador público do item complementar (SKU) deve ser único para cada loja. Utilizado para futuras atualizações de itens.
                                           example: "D184"
                                         image:
                                           type: string
