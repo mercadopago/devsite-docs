@@ -227,8 +227,14 @@ curl -X POST \
 }
 ```
 
-> O callback de onSubmit do Brick contém todos os dados necessários para a criação de um pagamento, porém, caso deseje, é possível incluir detalhes adicionais, o que pode facilitar o reconhecimento da compra por parte do comprador e aumentar a taxa de aprovação dos pagamentos.<br/></br>   
-> <br/></br>  
-> Para fazer isso, adicione campos relevantes ao objeto enviado, que vem na resposta do callback onSubmit do Brick. Alguns desses campos são: `description` (esse campo pode ser exibido nos boletos emitidos) e `external_reference` (id da compra no seu site, que permite o reconhecimento da compra mais fácil). Também é possível adicionar dados complementares sobre o comprador. <br/></br>
-> <br/></br>
-> Conheça todos os campos disponíveis para realizar um pagamento completo nas [Referências de API.](/developers/pt/reference/payments/_payments/post)
+O callback de onSubmit do Brick contém todos os dados necessários para a criação de um pagamento, porém, caso deseje, é possível incluir detalhes adicionais, o que pode facilitar o reconhecimento da compra por parte do comprador e aumentar a taxa de aprovação dos pagamentos.
+
+Para fazer isso, adicione campos relevantes ao objeto enviado, que vem na resposta do callback onSubmit do Brick. Alguns desses campos são: `description` (esse campo pode ser exibido nos boletos emitidos) e `external_reference` (id da compra no seu site, que permite o reconhecimento da compra mais fácil). Também é possível adicionar dados complementares sobre o comprador. 
+
+Conheça todos os campos disponíveis para realizar um pagamento completo nas [Referências de API](/developers/pt/reference/payments/_payments/post).
+
+> NOTE
+>
+> Importante
+>
+> Tendo em vista uma ampliação na probabilidade de aprovação de seus pagamentos, recomendamos a adesão do protocolo [3DS 2.0](/developers/pt/docs/checkout-bricks/how-tos/improve-payment-approval/3ds), o qual pode ser feito como descrito [aqui.](/developers/pt/docs/checkout-bricks/how-tos/integrate-3ds)

@@ -225,9 +225,14 @@ curl -X POST \
 }
 ```
 
-> El callback onSubmit de Brick contiene todos los datos necesarios para crear un pago; sin embargo, si lo desea, puede incluir detalles adicionales que pueden facilitar el reconocimiento de la compra por parte del comprador y aumentar la tasa de aprobación del pago. <br/></br>
-> <br/></br>
-> Para hacer esto, agregue campos relevantes al objeto enviado, que viene en la respuesta del callback onSubmit de Brick.
-Algunos de estos campos son: `description` (este campo se puede mostrar en los tickets emitidos) y `external_reference` (id de compra en su sitio web, lo que permite un reconocimiento de compra más fácil). También es posible añadir datos adicionales sobre el comprador. <br/></br>
-> <br/></br> 
-> Conoce todos los campos disponibles para realizar un pago completo en las [Referencias de API.](/developers/es/reference/payments/_payments/post)
+El callback onSubmit de Brick contiene todos los datos necesarios para crear un pago; sin embargo, si lo desea, puede incluir detalles adicionales que pueden facilitar el reconocimiento de la compra por parte del comprador y aumentar la tasa de aprobación del pago.
+
+Para hacer esto, agregue campos relevantes al objeto enviado, que viene en la respuesta del callback onSubmit de Brick. Algunos de estos campos son: `description` (este campo se puede mostrar en los tickets emitidos) y `external_reference` (id de compra en su sitio web, lo que permite un reconocimiento de compra más fácil). También es posible añadir datos adicionales sobre el comprador.
+
+> NOTE
+>
+> Importante
+>
+> En vista de un aumento en la probabilidad de aprobación de sus pagos, recomendamos adherirse al protocolo [3DS 2.0](/developers/es/docs/checkout-bricks/how-tos/improve-payment-approval/3ds), que se puede hacer como se describe [aquí.](/developers/es/docs/checkout-bricks/how-tos/integrate-3ds)
+
+Conoce todos los campos disponibles para realizar un pago completo en las [Referencias de API](/developers/es/reference/payments/_payments/post).

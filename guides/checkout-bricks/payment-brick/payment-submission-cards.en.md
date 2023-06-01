@@ -263,4 +263,10 @@ The onSubmit callback contains all the necessary data for a payment creation, ho
 To do that, add the relevant fields to the recieved object, contained in the Brick's onSubmit callback.
 Some of these fields are: `description` (this field can be shown in created tickets) and `external_reference` (id of the purchase in your website, which eases the purchase recognition for the buyer). It is also possible to add complementary buyer's data.
 
-> Check [API References](/developers/en/reference/payments/_payments/post) to learn about all the available fields for full payments.
+> NOTE
+>
+> Important
+>
+> In view of an increase in the probability of approval of your payments, we recommend adherence to the protocol [3DS 2.0](/developers/en/docs/checkout-bricks/how-tos/improve-payment-approval/3ds), which can be done as described [here.](/developers/en/docs/checkout-bricks/how-tos/integrate-3ds)
+
+Check [API References](/developers/en/reference/payments/_payments/post) to learn about all the available fields for full payments.
