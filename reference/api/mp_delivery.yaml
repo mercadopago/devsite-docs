@@ -1028,10 +1028,10 @@ paths:
                         example: "2022-02-21T22:00:55Z"
                       paymentsInfo:
                         type: array
-                        description: Array with payment ids. Each order item has its own payment_id for this reason, multiple payments may appear. In addition, the shipping cost also has its own payment_id.
+                        description: Array with payment ids. Each order item has its own payment_id and, for this reason, multiple payments may appear. In addition, the shipping cost also has its own payment_id.
                         x-description-i18n:
-                          eng: Array with payment ids. Each order item has its own payment_id for this reason, multiple payments may appear. In addition, the shipping cost also has its own payment_id.
-                          spa: Array de ids de pagos. Cada item del pedido tiene su propio payment_id, por lo que pueden aparecer varios pagos. Además, el costo de envío también tiene su propio payment_id.
+                          eng: Array with payment ids. Each order item has its own payment_id and, for this reason, multiple payments may appear. In addition, the shipping cost also has its own payment_id.
+                          spa: Array de ids de pagos. Cada ítem del pedido tiene su propio payment_id, por lo que pueden aparecer varios pagos. Además, el costo de envío también tiene su propio payment_id.
                           por: Array de ids de pagamento. Cada item do pedido possui seu próprio payment_id por esse motivo poderão aparecer vários payments. Além disso, o custo de envio também tem seu próprio payment_id.
                         items:
                           type: object
