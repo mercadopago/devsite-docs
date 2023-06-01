@@ -3346,7 +3346,7 @@ paths:
       x-description-i18n:
         eng: This endpoint sends a catalog to be imported asynchronously to one or more stores. Each store generates an import identifier that can be used to check the process status afterwards. It will return a '202 - Success' response when all requests were sent successfully, or '206 - Partial Error' if any post fails
         spa: Este endpoint importa un catálogo de manera asíncrona a una o más tiendas. Cada tienda genera un identificador de importación que se puede utilizar para comprobar el estado del proceso posteriormente.  Retornará una respuesta '202 - Success' cuando todas las solicitudes se enviaron correctamente, o '206 - Partial Error' en caso de que alguna publicación falle
-        por: Esse endpoint importa um catálogo de forma assíncrona para uma ou mais lojas. Cada loja gera um identificador de importação que pode ser usado para verificar o status do processo posteriormente. Retornará uma resposta '202 - Success' quando todas as requisições forem enviadas corretamente ou '206 - Partial error' se alguma requisição tenha falhado
+        por: Esse endpoint importa um catálogo de forma assíncrona para uma ou mais lojas. Cada loja gera um identificador de importação que pode ser usado para verificar o status do processo posteriormente. Retornará uma resposta '202 - Success' quando todas as requisições forem enviadas corretamente ou '206 - Partial error' caso alguma requisição falhe.
       requestBody:
         content:
           application/json:
@@ -3368,7 +3368,7 @@ paths:
                   x-description-i18n:
                     eng: Array of objects that contain information about the sections that should be imported into the catalog.
                     spa: Array de objetos que contienen información sobre las secciones que deben importarse al catálogo.
-                    por: Array de objetos que contem informações das seções que deverão ser importados para o catálogo.
+                    por: Array de objetos que contém informações das seções que deverão ser importados para o catálogo.
                   items:
                     type: object
                     properties:
@@ -3379,7 +3379,7 @@ paths:
                         x-description-i18n:
                           eng: Optional string that describes the catalog section.
                           spa: String opcional que describe la sección del catálogo.
-                          por: String opcional, que descreve a seção do catálogo.
+                          por: String opcional que descreve a seção do catálogo.
                       name:
                         type: string
                         example: "Hamburguers"
@@ -3408,11 +3408,11 @@ paths:
                               example: "Item Description"
                             external_id:
                               type: string
-                              description: The item public identifier (SKU), must be unique for each store. Used for future item updates.
+                              description: The item public identifier (SKU) must be unique for each store. It is used for future item updates.
                               x-description-i18n:
-                                eng: The item public identifier (SKU), must be unique for each store. Used for future item updates.
-                                spa: El identificador público (SKU) del item debe ser único para cada tienda. Se utiliza para futuras actualizaciones de elementos.
-                                por: O identificador público do item (SKU), deve ser único para cada loja. Usado para futuras atualizações de itens.
+                                eng: The item public identifier (SKU) must be unique for each store. It is used for future item updates.
+                                spa: El identificador público (SKU) del ítem debe ser único para cada tienda. Se utiliza para futuras actualizaciones de elementos.
+                                por: O identificador público do item (SKU) deve ser único para cada loja. Utilizado para futuras atualizações de itens.
                               example: "M147"
                             image:
                               type: string
