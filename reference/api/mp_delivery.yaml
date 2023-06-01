@@ -3343,11 +3343,11 @@ paths:
         eng: Catalog import
         spa: Importación de catálogo
         por: Importação de catálogo
-      description: Endpoint to send a catalog to be imported asynchronously, to one or more stores. Each store generates an import identifier that can be used to check the process status afterwards. http response status is 202 when all the publications were sent for processing, or 206 in case some publication failed. Validation errors will return http 400 and no publication will be created.
+      description: Endpoint to send a catalog to be imported asynchronously, to one or more stores. Each store generates an import identifier that can be used to check the process status afterwards
       x-description-i18n:
-        eng: Endpoint to send a catalog to be imported asynchronously, to one or more stores. Each store generates an import identifier that can be used to check the process status afterwards. http response status is 202 when all the publications were sent for processing, or 206 in case some publication failed. Validation errors will return http 400 and no publication will be created.
-        spa: Endpoint para importar un catálogo asincrónicamente, a una o más tiendas. Cada tienda genera un identificador de importación que se puede utilizar para comprobar el estado del proceso posteriormente. El estado de respuesta de http es 202 cuando todas las publicaciones se enviaron para su procesamiento, o 206 en caso de que alguna publicación falle. Los errores de validación devolverán http 400 y no se creará ninguna publicación.
-        por: Endpoint para importar um catálogo de forma assíncrona, para uma ou mais lojas. Cada loja gera um identificador de importação que pode ser usado para verificar o status do processo posteriormente. O status da resposta http é 202 quando todas as publicações foram enviadas para processamento ou 206 caso alguma publicação tenha falhado. Os erros de validação retornarão http 400 e nenhuma publicação será criada.
+        eng: Endpoint to send a catalog to be imported asynchronously, to one or more stores. Each store generates an import identifier that can be used to check the process status afterwards
+        spa: Endpoint para importar un catálogo asincrónicamente, a una o más tiendas. Cada tienda genera un identificador de importación que se puede utilizar para comprobar el estado del proceso posteriormente
+        por: Endpoint para importar um catálogo de forma assíncrona, para uma ou mais lojas. Cada loja gera um identificador de importação que pode ser usado para verificar o status do processo posteriormente
       requestBody:
         content:
           application/json:
@@ -3614,6 +3614,58 @@ paths:
                           enum:
                             - processing -- The catalog has been sent successfully to the processing queue.
                             - error -- the publication could not be started because some error in the request or an internal failure.
+        '202':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  msg:
+                    type: string
+                    description: Description of the operation result.
+                    x-description-i18n:
+                      eng: Description of the operation result.
+                      spa: Descripción del resultado de la operación.
+                      por: Descrição do resultado da operação.
+                    example: "Success"
+                  results:
+                    type: array
+                    description: Array of publication results per store. List of publications that were sent to the processing queue.
+                    x-description-i18n:
+                      eng: Array of publication results per store.List of publications that were sent to the processing queue.
+                      spa: Array de resultados de publicación por tienda. Lista de publicaciones que se enviaron a la cola de procesamiento.
+                      por: Array de resultados de publicações por loja. Lista de publicações que foram enviadas para a fila de processamento.
+                    items:
+                      type: object
+                      properties:
+                        store_id:
+                          type: string
+                          description: External_id of store of the catalog publication.
+                          x-description-i18n:
+                            eng: External_id of store of the catalog publication.
+                            spa: External_id de la tienda de la publicación del catálogo.
+                            por: External_id da loja da publicação do catálogo.
+                          example: "external_store_id_01"
+                        catalog_id:
+                          type: string
+                          description: Catalog Publish Operation ID.
+                          x-description-i18n:
+                            eng: Catalog Publish Operation ID.
+                            spa: ID de la operación de publicación de catálogo.
+                            por: ID da operação de publicação de catálogo.
+                          example: "b2f6b992-5133-11ed-a81f-acde48001122"
+                        status:
+                          type: string
+                          description: Status of the publication process.
+                          x-description-i18n:
+                            eng: Status of the publication process.
+                            spa: Estado del proceso de publicación.
+                            por: Status do processo de publicação.
+                          example: processing
+                          enum:
+                            - processing -- The catalog has been sent successfully to the processing queue.
+                            - error -- the publication could not be started because some error in the request or an internal failure.
         '206':
           description: Partial Error
           content:
@@ -3666,6 +3718,21 @@ paths:
                           enum:
                             - processing -- The catalog has been sent successfully to the processing queue.
                             - error -- the publication could not be started because some error in the request or an internal failure.
+        '400':
+          description: Publication error caused by some inconsistency in the fields.
+          x-description-i18n:
+            eng: Description of the error.
+            spa: Descripción del error.
+            por: Descrição do erro.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - error -- Publication error caused by some inconsistency in the fields.
   /proximity/integration/v1/catalog/{publication_id}:
     get:
       tags:
@@ -3712,6 +3779,21 @@ paths:
                       - processing -- The catalog is being processed.
                       - error -- The publication process has been aborted because some irrecoverable error occurred.
                       - success -- the catalog has been published.
+        '400':
+          description: Publication error caused by some inconsistency in the fields.
+          x-description-i18n:
+            eng: Description of the error.
+            spa: Descripción del error.
+            por: Descrição do erro.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - error -- Publication error caused by some inconsistency in the fields.
   /proximity/integration/v1/catalog/stores/{external_store_id}/items/{external_item_id}:
     put:
       tags:
@@ -3782,3 +3864,18 @@ paths:
                       eng: Status of the item updated. 
                       spa: Estado del ítem actualizado.
                       por: Statudo atualizado do item.
+        '400':
+          description: Publication error caused by some inconsistency in the fields.
+          x-description-i18n:
+            eng: Description of the error.
+            spa: Descripción del error.
+            por: Descrição do erro.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - error -- Publication error caused by some inconsistency in the fields.
