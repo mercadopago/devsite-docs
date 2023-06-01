@@ -306,7 +306,7 @@ Depois de criar o pagamento em seu backend com a SDK do Mercado Pago, é preciso
 
 2. Quando o comprador finalizar o pagamento na plataforma PSE, ele será redirecionado para o seu site através da `callback_url` que nos foi enviada na criação do pagamento. Além disso, será adicionado o campo `payment_id` como parâmetro de URL nesse callback. Dessa maneira, você pode renderizar novamente o Status Screen Brick para que o comprador veja no seu site o status final do pagamento.
 
-![payment-loading-redirect-pse](checkout-bricks/payment-brick-redirect-pse-pt.jpg)
+![payment-loading-pse-redirect](checkout-bricks/payment-brick-pse-redirect-pt.jpg)
 
 ## Mostrar status de pagamento
 
