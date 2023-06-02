@@ -3436,7 +3436,7 @@ paths:
                               x-description-i18n:
                                 eng: The item price, which must be a positive number. Zero is not allowed.
                                 spa: El precio del ítem, que debe ser un número positivo. El cero no está permitido.
-                                por: O preço do item, que deve ser um número positivo. Zero não é permitido.
+                                por: Preço do item. O campo deve ser um número positivo, não sendo permitida a utilização do número Zero.
                               example: 25.50
                             status:
                               type: string
