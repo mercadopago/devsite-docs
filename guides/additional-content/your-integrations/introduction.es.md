@@ -11,4 +11,5 @@ La página de **Detalles de la aplicación** se compone de diferentes secciones 
 * **Notificaciones**: configura la aplicación para recibir notificaciones de eventos relacionados con transacciones, como por ejemplo, avisos de pagos, fraudes, disputas, etc.
     1. **IPN**
     2. **Webhooks**
+    
 * **Producción**: activa las **Credenciales de producción** para comenzar a recibir pagos en tu tienda en línea y en otras aplicaciones.
