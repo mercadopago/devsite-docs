@@ -6,25 +6,32 @@ Com o [Checkout Transparente](/developers/pt/docs/checkout-api/landing), todo o 
 >
 > Atenção
 >
-> Para integrar o Checkout Transparente, você deve ter o Checkout Pro na sua loja da Shopify. Para saber como integrá-lo, consulte a [documentação.](/developers/pt/docs/shopify/integration-configuration/checkout-pro)
+> Caso esteja utilizando a versão antiga do app Mercado Pago ("Mercado Pago"), [clique aqui](/developers/pt/docs/shopify/how-tos/migration) para saber como migrar para a versão atual ("Checkout Mercado Pago").
 
-Para instalar o Checkout Transparente em uma loja Shopify, siga os passos abaixo:
+Para instalar o Checkout Transparente em sua loja Shopify, siga os passos abaixo:
 
-1. Faça login na sua loja [Shopify](https://accounts.shopify.com/store-login).
-2. Acesse o site de instalação do Mercado Pago Checkout Transparente [clicando aqui](https://apps.shopify.com/checkout-transparente-mp).
-3. Clique no botão **Adicionar app**. Você será redirecionado para uma tela de autorização, onde serão mostradas as permissões que você outorgará à aplicação do Checkout Transparente. Para continuar, clique em **Instalar app**. 
-4. Na próxima tela, você precisará inserir as suas credenciais Public Key e Access Token de teste e de produção. Acesse o [Dashboard](https://www.mercadopago.com.ar/developers/panel) para obter as credenciais da sua aplicação. Se você ainda não criou uma aplicação, aprenda como fazê-lo em [esta documentação](/developers/pt/docs/shopify/additional-content/dashboard/introduction). 
-5. No campo **Como você quer operar?**, selecione a opção "Ativar Modo Teste para checkouts Mercado Pago" para poder realizar transações de teste e garantir o correto funcionamento do checkout.
-6. A seguir, você poderá **configurar parcelamento e juros** caso deseje que a loja o ofereça. Para configurar isso, clique em **Editar**.
-7. Na seção **Quais meios de pagamento você quer oferecer?**, selecione o tipo de meio de pagamento que você deseja que a loja ofereça através do Checkout Transparente. Você pode escolher Mercado Pago, cartões de crédito, boleto ou Pix.
-8. Clique em **Salvar alterações** para finalizar a instalação.
+1. Vá para a sua loja [Shopify](https://accounts.shopify.com/store-login).
+2. No painel administrativo da loja, clique em **Configurações**.
+3. Uma vez lá, selecione a opção **Pagamentos**. 
+4. Em "Formas de pagamento adicionais", clique em **Adicionar formas de pagamento**.
+5. Acesse a aba **Pesquisar por fornecedor** e procure o novo app com o nome "Checkout Mercado Pago".
+6. Após localizá-lo, selecione-o, clique em **Ativar** e, por fim, em **Conectar**.
+7. Selecione **Instalar app** e, depois, clique em **Gerenciar**.
+8. Insira as suas **credenciais de produção** (`public key` e `access token`) nos campos solicitados e clique em **Salvar**. Lembre-se de ter suas [credenciais](/developers/pt/docs/shopify/additional-content/credentials) à mão e, no caso de renovar suas credenciais, lembre-se de substituir as credenciais de produção e de teste em sua integração.
+9. Em seguida, clique em **Validar conta** para garantir a validade das credencias inseridas e manter a sua conta segura. O processo de validação é feito totalmente pelo Mercado Pago.
+10. Selecione o **modelo de negócio** para auxiliar o Mercado Pago a enviar soluções personalizadas para a loja. As opções disponíveis são: **dropshipping**, **e-commerce tracicional** e **produtos ou serviçOes digitais**.
+11. Habilite os **meios de pagamento** que serão oferecidos, podendo ser:
 
-> No caso de renovar suas credenciais, lembre-se de substituir as credenciais de produção e de teste em sua integração.
+ - **Cartões de crédito e débito**. Para saber quais cartões são aceitos, verifique a lista completa [aqui](/developers/pt/docs/sales-processing/payment-methods).
+ - **Pix**. Selecione o prazo para pagamento do código Pix. Para oferecer pagamentos com Pix é preciso garantir que as chaves Pix tenham sido criadas. Caso ainda não tenha criado, [clique aqui](https://www.youtube.com/watch?v=60tApKYVnkA) e veja o passo a passo.
+ - **Boleto e lotérica**. Selecione o prazo para vencimento do boleto, não incluindo sábado e domingo.
 
-![installation choapi](/images/shopify/configurar-chotransparente-pt.gif)
+12. [Configure](https://www.mercadopago.com.br/costs-section#from-section=menu), diretamente na conta Mercado Pago associada à loja, as informações de parcelamento e juros que serão oferecidas.
+13. Clique em **Salvar configurações > Entendi** para retornar ao painel administrativo da loja e finalizar a instalação.
+14. Por fim, clique em **Ativar Checkout Mercado Pago**.
 
-> NOTE
+> WARNING
 >
-> Importante
+> Atenção
 >
-> Depois de instalado, o Checkout Transparente pode levar até 10 minutos para aparecer vinculado na loja da Shopify devido ao armazenamento em cache. Se precisar de ajuda para instalar o Checkout Transparente, entre em contato com o [Suporte.](https://www.mercadopago.com/developers/pt/support)
+> Importante salientar que instalação só estará finalizada **após clique em "Ativar Checkout Mercado Pago"**.

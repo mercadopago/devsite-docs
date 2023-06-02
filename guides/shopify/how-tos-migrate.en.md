@@ -1,15 +1,24 @@
-# Configurar el Checkout Transparente
+# How to migrate to the new version of the Mercado Pago app
 
-Con el [Checkout Transparente](/developers/es/docs/checkout-api/landing), todo el proceso de pago se realizará dentro del entorno de la tienda en línea, sin necesidad de redirigir a una página externa. Además de permitir un mayor control en el proceso de personalización e integración, el checkout ofrece una estructura completa para el procesamiento de pagos con los principales medios disponibles en el mercado.
+Learn how to install the new app and uninstall the old one to avoid service interruption in Shopify.
 
-> WARNING
->
-> Atención
->
-> Si estás usando la app antigua de Mercado Pago ("Mercado Pago"), [haz clic aquí](/developers/es/docs/shopify/how-tos/migration) para saber cómo migrar a la versión actual ("Checkout Mercado Pago").
+## Install the new app
 
-Para instalar Checkout Transparente en una tienda Shopify, sigue los pasos a continuación:
+----[mla, mlm, mpe, mco, mlu, mlc]----
+1. Go to your [Shopify](https://accounts.shopify.com/store-login) store.
+2. In the store's administrative panel, click on **Settings**.
+3. Once there, select the **Payments** option. 
+4. In "Additional payment methods", click on the **Add payment methods** option.
+5. Go to the **Search by provider** tab and look for the new app with the name "Checkout Mercado Pago".
+6. Once you have found it, select it and click **Activate** and then **Connect**.
+7. Select **Install App** and then **Manage**.
+8. Put your **production credentials** (`public key` and `access token`) in the fields that request it and click **Save**. Remember to keep your [credentials](/developers/en/docs/shopify/additional-content/credentials) handy.
+9. To finish the installation, select **Activate Checkout Mercado Pago**.
 
+> In this step, you can select the images of the means of payment that you want to show in your store for illustrative purposes. Also, if you wish, you can enable [test mode.](/developers/en/docs/shopify/sales-processing/integration-test)
+
+------------
+----[mlb]----
 1. Vá para a sua loja [Shopify](https://accounts.shopify.com/store-login).
 2. No painel administrativo da loja, clique em **Configurações**.
 3. Uma vez lá, selecione a opção **Pagamentos**. 
@@ -35,3 +44,27 @@ Para instalar Checkout Transparente en una tienda Shopify, sigue los pasos a con
 > Atenção
 >
 > Importante salientar que instalação só estará finalizada **após clique em "Ativar Checkout Mercado Pago"**.
+
+------------
+
+> NOTE
+>
+> Important
+>
+> At this exact moment, you are going to have both versions installed on your site. This will ensure that your store does not run out of payment methods while the migration steps are taking place.
+
+## Deactivate the old app
+
+After installing the new version, it is necessary to uninstall the old version following the step by step below.
+
+1. Go to your [Shopify](https://accounts.shopify.com/store-login) store.
+2. In the store's administrative panel, click on **Settings**.
+3. Once there, select the **Payments** option. 
+4. Find the old app with the name "Mercado Pago" and select **Manage**.
+5. To finish, click on **Deactivate Mercado Pago**.
+
+> WARNING
+>
+> Attention
+>
+> Be careful to not uninstall the new version.
