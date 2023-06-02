@@ -16,7 +16,7 @@ For **low-risk transactions**, the information sent at checkout is sufficient an
 
 Below are the steps to integrate with 3DS.
 
-1. Após gerar uma intenção de pagamento usando [Card Payment Brick](/developers/pt/docs/checkout-bricks/card-payment-brick/introduction) ou [Payment Brick](/developers/pt/docs/checkout-bricks/payment-brick/introduction), é necessário enviar, a partir do seu backend, uma solicitação de pagamento ao Mercado Pago através das nossas APIs. A  ativação do fluxo de 3DS 2.0 se dá pela adição do campo `three_d_secure_mode: 'optional'` nessa requisição.
+1. After generating a payment intent using [Card Payment Brick](/developers/en/docs/checkout-bricks/card-payment-brick/introduction) or [Payment Brick](/developers/en/docs/checkout-bricks/payment-brick/introduction), it is necessary to send, from your backend, a payment request to Mercado Pago through our APIs. Enabling the 3DS 2.0 stream is done by adding the `three_d_secure_mode: 'optional'` field to this request.
 
 ```javascript
 var mercadopago = require('mercadopago');
@@ -37,7 +37,7 @@ mercadopago.payment.save(paymentData)
   });
 ```
 
-Visão geral da resposta:
+Response overview:
 
 ```javascript
 {
@@ -54,13 +54,13 @@ Visão geral da resposta:
 
 > NOTE
 >
-> Importante
+> Important
 >
-> O campo retornado `three_ds_info` contém as informações necessárias para continuar o processo de pagamento caso o `status_detail` seja `pending_challenge`.
+> The returned field `three_ds_info` contains the necessary information to continue the payment process if the `status_detail` is `pending_challenge`.
 
-2. Para continuar o fluxo e exibir o _Challenge_ de forma simplificada, é recomendado integrar com o [Status Screen Brick](/developers/pt/docs/checkout-bricks/status-screen-brick/default-rendering), informando o ID do pagamento gerado, além do conteúdo do objeto `three_ds_info`, o qual foi retornados pela API de pagamentos.
+2. To continue the flow and display the _Challenge_ in a simplified way, it is recommended to integrate with the [Status Screen Brick](/developers/en/docs/checkout-bricks/status-screen-brick/default-rendering), informing the ID generated payment, in addition to the content of the `three_ds_info` object, which was returned by the payment API.
 
-Caso não deseje utilizar o Status Screen Brick nessa etapa, aconselhamos acessar a seção de [Realizar implantação](/developers/pt/docs/checkout-api/how-tos/how-to-integrate-3ds) na documentação de [Checkout Transparente(/developers/pt/docs/checkout-api/landing), visto que serão necessários passos adicionais para, por exemplo, capturar o evento emitido quando o _Challenge_ for finalizado.
+If you do not want to use the Status Screen Brick at this stage, we advise you to access the [Deployment](/developers/en/docs/checkout-api/how-tos/how-to-integrate-3ds) section in the [Checkout API](/developers/en/docs/checkout-api/landing) documentation, as additional steps will be needed to, for example, capture the event emitted when the _Challenge_ is completed.
 
 ```javascript
 {
@@ -90,7 +90,7 @@ renderStatusScreenBrick(bricksBuilder);
 
 ```
 
-O Status Screen Brick exibirá uma transição indicando redirecionamento e logo em seguida será exibido o _Challenge_ do banco em questão.
+The Status Screen Brick will display a transition indicating redirection and then the _Challenge_ of the bank in question will be displayed.
 
 <center>
 
@@ -98,15 +98,15 @@ O Status Screen Brick exibirá uma transição indicando redirecionamento e logo
 
 </center>
 
-O usuário deve responder ao desafio para que a transição seja validada devidamente. Vale ressaltar que a experiência do _Challenge_ é de responsabilidade exclusiva do banco encarregado.
+The user must respond to the challenge for the transition to be properly validated. It is worth noting that the _Challenge_ experience is the sole responsibility of the bank in charge.
 
 > NOTE
-> 
-> Importante
-> 
-> Por questões de segurança, caso o processo de _Challenge_ não seja iniciado em até 30 segundos após a criação do pagamento, o mesmo será rejeitado, pois isso é importante que o desafio se inicie exatamente após a sua geração.
+>
+> Important
+>
+> For security reasons, the payment will be rejected if the _Challenge_ process is not started within 30 seconds after its creation. Therefore, it is important that the challenge starts exactly after its generation.
 
-3. Após a resolução do desafio, será exibido o resultado final do pagamento, de acordo com a resposta emitida pelo banco ao finalizar o _Challenge_.
+3. After solving the challenge, the final result of the payment will be displayed according to the answer issued by the bank at the end of the _Challenge_.
 
 ----[mlb]----
 <center>
@@ -115,7 +115,6 @@ O usuário deve responder ao desafio para que a transição seja validada devida
 
 </center>
 ------------
-
 ----[mla]----
 <center>
 
