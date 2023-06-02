@@ -3499,7 +3499,7 @@ paths:
                                           x-description-i18n:
                                             eng: Optional string. A description of the complement item to be displayed to the buyer.
                                             spa: String opcional. Una descripción del ítem de complemento que se mostrará al comprador.
-                                            por: String opcional. Uma descrição do item complementar a ser exibido ao comprador.
+                                            por: String opcional. Descrição do item complementar a ser exibido ao comprador.
                                           example: "Complement description"
                                         external_id:
                                           type: string
