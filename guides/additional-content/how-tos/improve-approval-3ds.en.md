@@ -14,5 +14,5 @@ The flow below represents, in a simplified way, how the 3DS 2.0 authentication p
 
 You will find all the information necessary to carry out the integration with 3DS in the following links, according to your type of integration:
 
-- [How to Integrate 3DS with Checkout Bricks](/developers/en/docs/checkout-bricks/how-tos/how-to-integrate-3ds)
-- [How to Integrate 3DS with Checkout API](/developers/en/docs/checkout-api/how-tos/how-to-integrate-3ds)
+- [How to Integrate 3DS with Checkout Bricks](/developers/en/docs/checkout-bricks/how-tos/integrate-3ds)
+- [How to Integrate 3DS with Checkout API](/developers/en/docs/checkout-api/how-tos/integrate-3ds)

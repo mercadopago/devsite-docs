@@ -14,5 +14,5 @@ El siguiente flujo representa, de forma simplificada, cómo funciona el proceso 
 
 Encontrarás toda la información necesaria para realizar la integración con 3DS en los siguientes enlaces, según tu tipo de integración:
 
-- [Cómo integrar 3DS con Checkout Bricks](/developers/es/docs/checkout-bricks/how-tos/how-to-integrate-3ds)
-- [Cómo integrar 3DS con Checkout API](/developers/es/docs/checkout-api/how-tos/how-to-integrate-3ds)
+- [Cómo integrar 3DS con Checkout Bricks](/developers/es/docs/checkout-bricks/how-tos/integrate-3ds)
+- [Cómo integrar 3DS con Checkout API](/developers/es/docs/checkout-api/how-tos/integrate-3ds)

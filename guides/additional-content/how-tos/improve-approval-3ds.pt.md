@@ -14,5 +14,5 @@ O fluxo a seguir representa de maneira simplificada como se dá o processo de au
 
 Você encontrará toda a informação necessária para realizar a integração com 3DS nos links a seguir, de acordo com seu tipo de integração:
 
-- [Como integrar 3DS com Checkout Bricks](/developers/pt/docs/checkout-bricks/how-tos/how-to-integrate-3ds)
-- [Como integrar 3DS com Checkout Transparente](/developers/pt/docs/checkout-api/how-tos/how-to-integrate-3ds)
+- [Como integrar 3DS com Checkout Bricks](/developers/pt/docs/checkout-bricks/how-tos/integrate-3ds)
+- [Como integrar 3DS com Checkout Transparente](/developers/pt/docs/checkout-api/how-tos/integrate-3ds)
