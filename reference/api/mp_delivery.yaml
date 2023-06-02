@@ -3394,7 +3394,7 @@ paths:
                         x-description-i18n:
                           eng: Array of objects containing the items to be imported into the section.
                           spa: Array de objetos que contienen los items que deberán ser importados en la sección.
-                          por: Array de objetos que contem os itens que deverão ser importados dentro da seção.
+                          por: Array de objetos que contém os itens que deverão ser importados dentro da seção.
                         items:
                           type: object
                           properties:
