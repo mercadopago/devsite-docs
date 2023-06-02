@@ -60,7 +60,7 @@ mercadopago.payment.save(paymentData)
 
 2. Para continuar o fluxo e exibir o _Challenge_ de forma simplificada, é recomendado integrar com o [Status Screen Brick](/developers/pt/docs/checkout-bricks/status-screen-brick/default-rendering), informando o ID do pagamento gerado, além do conteúdo do objeto `three_ds_info`, o qual foi retornados pela API de pagamentos.
 
- Caso não deseje utilizar o Status Screen Brick nessa etapa, aconselhamos acessar a seção de [Realizar implantação](/developers/pt/docs/checkout-api/how-tos/how-to-integrate-3ds) na documentação de [Checkout Transparente](/developers/pt/docs/checkout-api/landing), visto que serão necessários passos adicionais para, por exemplo, capturar o evento emitido quando o _Challenge_ for finalizado.
+Caso não deseje utilizar o Status Screen Brick nessa etapa, aconselhamos acessar a seção de [Realizar implantação](/developers/pt/docs/checkout-api/how-tos/how-to-integrate-3ds) na documentação de [Checkout Transparente](/developers/pt/docs/checkout-api/landing), visto que serão necessários passos adicionais para, por exemplo, capturar o evento emitido quando o _Challenge_ for finalizado.
 
 ```javascript
 {
@@ -90,21 +90,21 @@ renderStatusScreenBrick(bricksBuilder);
 
 ```
 
- O Status Screen Brick exibirá uma transição indicando redirecionamento e, logo em seguida, será exibido o _Challenge_ do banco em questão.
+O Status Screen Brick exibirá uma transição indicando redirecionamento e, logo em seguida, será exibido o _Challenge_ do banco em questão.
 
- <center>
+<center>
 
- ![how-to-integrate-3ds](checkout-bricks/how-to-integrate-3ds-pt.gif)
+![how-to-integrate-3ds](checkout-bricks/how-to-integrate-3ds-pt.gif)
 
- </center>
+</center>
 
- O usuário deve responder ao desafio para que a transição seja validada devidamente. Vale ressaltar que a experiência do _Challenge_ é de responsabilidade exclusiva do banco encarregado.
+O usuário deve responder ao desafio para que a transição seja validada devidamente. Vale ressaltar que a experiência do _Challenge_ é de responsabilidade exclusiva do banco encarregado.
 
- > NOTE
- > 
- > Importante
- > 
- > Por questões de segurança, o pagamnto será rejeitado caso o processo de _Challenge_ não seja iniciado em até 30 segundos após a sua criação. Portanto, é importante que o desafio se inicie exatamente após a sua geração.
+>  NOTE
+> 
+> Importante
+> 
+> Por questões de segurança, o pagamnto será rejeitado caso o processo de _Challenge_ não seja iniciado em até 30 segundos após a sua criação. Portanto, é importante que o desafio se inicie exatamente após a sua geração.
 
 3. Após a resolução do desafio, será exibido o resultado final do pagamento de acordo com a resposta emitida pelo banco ao finalizar o _Challenge_.
 
