@@ -19,7 +19,7 @@ En esta documentación, explicaremos las configuraciones necesarias para recibir
 A continuación explicaremos cómo indicar las URLs que serán notificadas y cómo configurar los eventos para los que se recibirán notificaciones.
 
 
-![webhooks](/images/notifications/webhook_es.png)
+![webhooks](/images/dashboard/webhooks_es_.png)
 
 
 1. Caso aún no tengas una aplicación, crea una en el [Panel del desarrollador](developers/panel/app).

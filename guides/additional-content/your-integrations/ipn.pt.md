@@ -18,7 +18,7 @@ Nesta documentação explicaremos as configurações necessárias para o recebim
 Abaixo explicaremos como indicar as URLs que serão notificadas e como configurar os eventos dos quais se receberá a notificação.
 
 
-![ipn](/images/notifications/ipn__pt.png)
+![ipn](/images/dashboard/ipn_pt_.png)
 
 
 1. Caso ainda não tenha, crie uma aplicação no [Painel do desenvolvedor](developers/panel/app). 
