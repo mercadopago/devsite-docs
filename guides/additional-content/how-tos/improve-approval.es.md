@@ -24,13 +24,13 @@ Puedes encontrar la información y verificar el estado de un pago a través de l
 
 Esta es una de las principales razones por las que se rechaza un pago. A menudo, el comprador puede cometer un error al completar sus datos, **especialmente la dirección, datos de identificación y los números de tarjeta**.
 
-En estos casos, el campo `status_detail` puede devolver: `cc_rejected_bad_filled_date`, `cc_rejected_bad_filled_other`, `cc_rejected_bad_filled_security_code`
+En estos casos, el campo `status_detail` puede devolver: `cc_rejected_bad_filled_date`, `cc_rejected_bad_filled_other`, `cc_rejected_bad_filled_security_code`.
 
 ### Pagos rechazados por el banco
 
 Al realizar un pago con tarjeta de crédito o débito el banco emisor puede rechazar el cargo por diferentes motivos. Por ejemplo, fecha de vencimiento caduca, saldo o límite insuficientes, tarjeta deshabilitada o bloqueada para compras online. 
 
-En estos casos, el campo `status_detail` puede devolver: `cc_rejected_call_for_authorize`, `cc_rejected_card_disabled`, `cc_rejected_duplicated_payment`, `cc_rejected_insufficient_amount`
+En estos casos, el campo `status_detail` puede devolver: `cc_rejected_call_for_authorize`, `cc_rejected_card_disabled`, `cc_rejected_duplicated_payment`, `cc_rejected_insufficient_amount`.
 
 ### Pagos rechazados para prevenir fraude
 

@@ -24,19 +24,19 @@ You can find the information and check the status of a payment via the API, thro
 
 This is one of the main reasons a payment might be declined. Occasionally, the buyer can make a mistake when filling in their data, **especially address, card numbers, and identification numbers**.
 
-In these cases, the `status_detail` field may return: `cc_rejected_bad_filled_date`, `cc_rejected_bad_filled_other`, `cc_rejected_bad_filled_security_code`
+In these cases, the `status_detail` field may return: `cc_rejected_bad_filled_date`, `cc_rejected_bad_filled_other`, `cc_rejected_bad_filled_security_code`.
 
 ### Bank rejected payments
 
 When paying with a credit or debit card, for example, the issuing bank may refuse the charge for different reasons such as the expiration date, insufficient balance or limit, card disabled or blocked for online payments. 
 
-In these cases, the `status_detail` field may return: `cc_rejected_call_for_authorize`, `cc_rejected_card_disabled`, `cc_rejected_duplicated_payment`, `cc_rejected_insufficient_amount`
+In these cases, the `status_detail` field may return: `cc_rejected_call_for_authorize`, `cc_rejected_card_disabled`, `cc_rejected_duplicated_payment`, `cc_rejected_insufficient_amount`.
 
 ### Payments rejected due to fraud prevention
 
 When paying, both the issuing bank and Mercado Pago do a series of checks. If our anti-fraud system detects any unusual movement that characterizes a scam or fraud, it will be blocked. 
 
-In these cases, the `status_detail` field may return: `cc_rejected_blacklist`, `cc_rejected_high_risk`
+In these cases, the `status_detail` field may return: `cc_rejected_blacklist`, `cc_rejected_high_risk`.
 
 > WARNING
 > 

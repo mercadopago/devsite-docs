@@ -24,13 +24,13 @@ Você pode encontrar as informações e checar o estado de um pagamento via API,
 
 Este é um dos principais motivos para que um pagamento seja recusado. Muitas vezes o comprador pode errar na hora de preencher seus dados, principalmente os de **endereço, CPF e números do cartão**.
 
-Nestes casos o campo `status_detail` poderá retornar: `cc_rejected_bad_filled_date`, `cc_rejected_bad_filled_other`, `cc_rejected_bad_filled_security_code`
+Nestes casos o campo `status_detail` poderá retornar: `cc_rejected_bad_filled_date`, `cc_rejected_bad_filled_other`, `cc_rejected_bad_filled_security_code`.
 
 ### Pagamentos recusados pelo banco
 
 Ao realizar um pagamento com cartão de crédito ou débito, por exemplo, o banco emissor pode recusar a cobrança por diferentes motivos como a data de validade expirada, saldo ou limite insuficientes, cartão desabilitado ou bloqueado para compras online. 
 
-Nestes casos o campo `status_detail` poderá retornar: `cc_rejected_call_for_authorize`, `cc_rejected_card_disabled`, `cc_rejected_duplicated_payment`, `cc_rejected_insufficient_amount`
+Nestes casos o campo `status_detail` poderá retornar: `cc_rejected_call_for_authorize`, `cc_rejected_card_disabled`, `cc_rejected_duplicated_payment`, `cc_rejected_insufficient_amount`.
 
 ### Prevenção contra fraudes
 
