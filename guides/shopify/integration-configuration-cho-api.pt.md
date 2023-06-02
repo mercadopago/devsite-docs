@@ -23,7 +23,7 @@ Para instalar o Checkout Transparente em sua loja Shopify, siga os passos abaixo
 11. Habilite os **meios de pagamento** que serão oferecidos, podendo ser:
 
  - **Cartões de crédito e débito**. Para saber quais cartões são aceitos, verifique a lista completa [aqui](/developers/pt/docs/sales-processing/payment-methods).
- - **Pix**. Selecione o prazo para pagamento do código Pix. Para oferecer pagamentos com Pix é preciso garantir que as chaves Pix tenham sido criadas. Caso ainda não tenha criado, [clique aqui](https://www.youtube.com/watch?v=60tApKYVnkA) e veja o passo a passo.
+ - **Pix**. Selecione o prazo para pagamento do código Pix. Para oferecer pagamentos com Pix é preciso garantir que as chaves Pix tenham sido criadas. Você poderá cadastrá-las neste momento de configuração ou, caso opte por cadastrá-las em outro momento, [clique aqui](https://www.youtube.com/watch?v=60tApKYVnkA) e veja o passo a passo.
  - **Boleto e lotérica**. Selecione o prazo para vencimento do boleto, não incluindo sábado e domingo.
 
 12. [Configure](https://www.mercadopago.com.br/costs-section#from-section=menu), diretamente na conta Mercado Pago associada à loja, as informações de parcelamento e juros que serão oferecidas.
