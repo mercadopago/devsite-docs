@@ -37,13 +37,7 @@ Learn how to install the new app and uninstall the old one to avoid service inte
 
 12. [Configure](https://www.mercadopago.com.br/costs-section#from-section=menu), diretamente na conta Mercado Pago associada à loja, as informações de parcelamento e juros que serão oferecidas.
 13. Clique em **Salvar configurações > Entendi** para retornar ao painel administrativo da loja e finalizar a instalação.
-14. Por fim, clique em **Ativar Checkout Mercado Pago**.
-
-> WARNING
->
-> Atenção
->
-> Importante salientar que instalação só estará finalizada **após clique em "Ativar Checkout Mercado Pago"**.
+14. Por fim, clique em **Ativar Checkout Mercado Pago**. Importante salientar que instalação só estará finalizada **após clique em "Ativar Checkout Mercado Pago"**.
 
 ------------
 
