@@ -279,7 +279,7 @@ settings = {
     ...,
     payer: {
       email: '<PAYER_EMAIL>',
-      entity_type: 'individual',
+      entityType: 'individual',
       identification: {
         type: '<PAYER_IDENTIFICATION_TYPE>',
         number: '<PAYER_IDENTIFICATION_NUMBER>'
@@ -293,7 +293,7 @@ const initialization = {
    ...,
    payer: {
     email: '<PAYER_EMAIL>',
-    entity_type: 'individual',
+    entityType: 'individual',
     identification: {
       type: '<YOUR_IDENTIFICATION_TYPE>',
       number: '<YOUR_IDENTIFICATION_NUMBER>'
