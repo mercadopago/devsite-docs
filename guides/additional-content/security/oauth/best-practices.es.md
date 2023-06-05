@@ -8,6 +8,6 @@ A continuación, encontrarás una guía de posibles errores y de buenas práctic
 
 Utiliza siempre los header `accept` y `Content-Type` en tu solicitud POST. Ten cuidado de no agregar valores a los headers que no sean parte de la integración para evitar recibir un error de respuesta.
 
-![oauth-params](/images/oauth/oauth-params-v3.png)
+![oauth-params](/images/oauth/oauth-params-v4.png)
 
 
