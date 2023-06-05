@@ -7,9 +7,9 @@ content_section_with_media:
 
 --- mini_landing_separator ---
 
->>>> Descarga y documentación <<<<
+>>>> Descargar y documentación <<<<
 
-|      SDK      |                    Versiones compatibles                  |  Descarga | Documentación |
+|      SDK      |                    Versiones compatibles                  |  Descargar | Documentación |
 |:-------------:|:--------------------------------------------------------:|:---------:|:------------:|
 | PHP 2.4.9    | PHP 5.6, 7.1 o superior  | [Packagist](https://packagist.org/packages/mercadopago/dx-php)| [GitHub](https://github.com/mercadopago/sdk-php)  |
 | Java 2.1.2   | Java 1.8 o superior | [Maven](https://search.maven.org/artifact/com.mercadopago/sdk-java-)    | [GitHub](https://github.com/mercadopago/sdk-java)    |
