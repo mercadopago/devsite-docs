@@ -2,6 +2,12 @@
 
 Pro rata is the amount billed to the subscriber if the subscription starts on a day other than the billing date set by the seller. When creating a subscription, the seller can decide whether or not to offer this option.
 
+> WARNING
+>
+> Important
+>
+> To set a proportional value, the fields `frequency` and `frequency_type` need to be filled with the values `frequency`:`1` and `frequency_type`:`months` respectively. This means that the proportional calculation is **only applicable to monthly subscriptions during a 30-day period**.
+
 Below we show a flow of how the proportional collection of payments works.
 
 ![Basic-subscriptions](/images/subscriptions/linea-cobro-EN.png)

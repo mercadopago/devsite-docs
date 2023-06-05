@@ -14,7 +14,7 @@ Para criar um _agreement_, envie um **POST** com os atributos necessários ao en
 ```curl
 
 curl -X POST \
-      'https://api.mercadopago.com/v2/wallet_connect/agreements?client.id=2451675580092619' \
+      'https://api.mercadopago.com/v2/wallet_connect/agreements?client.id=<CLIENT.ID>' \
       -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
       -H 'Content-Type: application/json' \ 
       -H 'x-platform-id: YOUR_ACCESS_TOKEN' \
