@@ -4,7 +4,7 @@
 >
 > Configurar cuotas
 
-| Brick | Card Payment Brick |
+| Brick | Payment Brick |
 | --- | --- |
 | Momento de personalización | Al renderizar Brick. |
 | Propiedad | customization.paymentMethods.minInstallments && customization.paymentMethods.maxInstallments |

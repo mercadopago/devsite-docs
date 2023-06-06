@@ -4,7 +4,7 @@
 >
 > Configurar parcelamento 
 
-| Brick  | Card Payment Brick  |
+| Brick  | Payment Brick  |
 | --- | --- |
 | Momento da customização  | Ao renderizar Brick.  |
 | Propriedade  | customization.paymentMethods.minInstallments && customization.paymentMethods.maxInstallments  |

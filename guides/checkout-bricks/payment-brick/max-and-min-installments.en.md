@@ -4,7 +4,7 @@
 >
 > Configure installments
 
-| Brick | Card Payment Brick |
+| Brick | Payment Brick |
 | --- | --- |
 | Customization moment | When rendering Brick. |
 | Property | customization.paymentMethods.minInstallments && customization.paymentMethods.maxInstallments |
