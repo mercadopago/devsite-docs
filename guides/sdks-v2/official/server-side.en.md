@@ -7,9 +7,9 @@ content_section_with_media:
 
 --- mini_landing_separator ---
 
->>>> Descargas y documentación <<<<
+>>>> Download and documentation <<<<
 
-|      SDK      |                    Versões compatíveis                   |  Download | Documentação |
+|      SDK      |                    Supported versions                  |  Download | Documentation |
 |:-------------:|:--------------------------------------------------------:|:---------:|:------------:|
 | PHP 2.4.9    | PHP 5.6, 7.1 or superior  | [Packagist](https://packagist.org/packages/mercadopago/dx-php)| [GitHub](https://github.com/mercadopago/sdk-php)  |
 | Java 2.1.2   | Java 1.8 or superior | [Maven](https://search.maven.org/artifact/com.mercadopago/sdk-java-)    | [GitHub](https://github.com/mercadopago/sdk-java)    |
@@ -18,6 +18,4 @@ content_section_with_media:
 | .NET 2.1.0    | .NET Standard 2.0+ .NET Core 2.0+  .NET Framework 4.6.1+ | [NuGet](https://www.nuget.org/packages/mercadopago-sdk)   | [GitHub](https://github.com/mercadopago/sdk-dotnet)   |
 | Python 2.1.0 | Python 3+   | [pypi](https://pypi.org/project/mercadopago/)   | [GitHub](https://github.com/mercadopago/sdk-python)     |
 
->
->Check the back sessions for code snippets and features present in the backend SDKs.
->
+> Check the back sessions for code snippets and features present in the backend SDKs.
