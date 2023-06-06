@@ -13,7 +13,7 @@ Create your application and obtain your credentials to integrate with Mercado Pa
 2. Click on **Create application**.
 3. Enter a name to identify your application (limit of 50 characters).
 4. Choose a payment solution to integrate, either **Online Payments** or **In-person Payments**.
-   - **Online payments**: If you are going to use an e-commerce platform, mark **Yes**. Then, select the **platform** you will integrate with. Finally, choose the **product** you are integrating.
+  - **Online payments**: If you are going to use an e-commerce platform, mark **Yes**. Then, select the **platform** you will integrate with. Finally, choose the **product** you are integrating.
 
 If you are not using an e-commerce platform, mark **No** and select the **product** you are integrating. If you select the QR Code option, optionally you can also choose the integration model(s).
 
