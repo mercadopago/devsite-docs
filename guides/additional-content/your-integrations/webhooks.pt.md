@@ -1,20 +1,14 @@
 # Webhooks
 
-
 O Webhooks (também conhecido como retorno de chamada web) é um método simples que facilita com que um app ou sistema forneça informações em tempo real sempre que um evento acontece, ou seja, é um modo de receber dados entre dois sistemas de forma passiva através de um `HTTP POST`.
 
-
-As notificações Webhooks poderão ser configuradas para uma ou mais aplicações criadas em seu [Painel do desenvolvedor](developers/panel/app).
-
+As notificações Webhooks poderão ser configuradas para uma ou mais aplicações criadas em seu [Painel do desenvolvedor](/developers/panel/app).
 
 Uma vez configurado, o Webhook será enviado sempre que ocorrer um ou mais eventos cadastrados, evitando que haja um trabalho de pesquisa a cada minuto em busca de uma resposta e, por consequência, que ocorra uma sobrecarga do sistema e a perda de dados sempre que houver alguma situação. Após receber uma notificação na sua plataforma, o Mercado Pago aguardará uma resposta para validar se você a recebeu corretamente.
 
-
 Nesta documentação, explicaremos as configurações necessárias para o recebimento das mensagens (através do Painel do desenvolvedor ou durante a criação de pagamentos), além de apresentar quais são as ações necessárias que você deverá ter para que o Mercado Pago valide que as notificações foram devidamente recebidas.
 
-
 ## Configuração através do Painel do desenvolvedor
-
 
 Abaixo explicaremos como indicar as URLs que serão notificadas e como configurar os eventos dos quais se receberá a notificação.
 
@@ -22,7 +16,7 @@ Abaixo explicaremos como indicar as URLs que serão notificadas e como configura
 ![webhooks](/images/dashboard/webhooks_pt_.png)
 
 
-1. Caso ainda não tenha, crie uma aplicação no [Painel do desenvolvedor](developers/panel/app).
+1. Caso ainda não tenha, crie uma aplicação no [Painel do desenvolvedor](/developers/panel/app).
 2. Com a aplicação criada, navegue até a seção Webhooks na página de Detalhes da aplicação e configure as URLs de **produção** e **teste** da qual serão recebidas as notificações.
 3. Você também poderá experimentar e testar se a URL indicada está recebendo as notificações corretamente, podendo verificar a solicitação, a resposta dada pelo servidor e a descrição do evento.
 4. Caso seja necessário identificar múltiplas contas, no final da URL indicada você poderá indicar o parâmetro `?cliente=(nomedovendedor) endpoint` para identificar os vendedores.
@@ -273,9 +267,7 @@ curl -X POST \
 ```
 ]]]
 
-
 2. Implemente o receptor de notificações usando o seguinte código como exemplo:
-
 
 ```php
 <?php
@@ -300,9 +292,7 @@ curl -X POST \
 ?>
 ```
 
-
 3. Feitas as devidas configurações, a notificação via Webhooks terá o seguinte formato:
-
 
 > NOTE
 >
@@ -329,7 +319,6 @@ curl -X POST \
 ```
 Isso indica que foi criado o pagamento **999999999** para o usuário **44444** em modo de produção com a versão V1 da API e que esse evento ocorreu na data **2016-03-25T10:04:58.396-04:00**.
 
-
 | Atributo | Descrição |
 | --- | --- |
 | **id** | ID de notificação |
@@ -345,11 +334,12 @@ Isso indica que foi criado o pagamento **999999999** para o usuário **44444** e
 | **resource** (delivery) | Tipo de notificação recebida, indicando se se trata da atualização de um recurso ou da criação de um novo |
 | **sent** (delivery) | Data de envio da notificação |
 | **topic** (delivery) | Tipo de notificação recebida  |
+
+
 4. Caso deseje receber notificações apenas de Webhook e não de IPN, você pode adicionar na `notification_url` o parâmetro `source_news=webhook`. Por exemplo: https://www.yourserver.com/notifications?source_news=webhooks
 
 
 ## Ações necessárias após receber uma notificação
-
 
 [TXTSNIPPET][/guides/snippets/test-integration/notification-response]
 
@@ -360,9 +350,7 @@ Isso indica que foi criado o pagamento **999999999** para o usuário **44444** e
 >
 > No caso do tipo de evento `delivery`, para evitar que o tópico de notificações realize novas tentativas de envio será necessário confirmar o recebimento das mensagens retornando um `HTTP STATUS 200 (OK)` em até **500 ms**. Caso não seja enviada uma mensagem confirmando o recebimento da notificação, **novas tentativas serão feitas em um período de 12 horas**.
 
-
 Depois de dar um retorno à notificação e confirmar o seu recebimento, você obterá as informações completas do recurso notificado acessando o endpoint correspondente da API:
-
 
 | Tipo | URL | Documentação |
 | --- | --- | --- |
@@ -372,6 +360,5 @@ Depois de dar um retorno à notificação e confirmar o seu recebimento, você o
 | subscription_authorized_payment | `https://api.mercadopago.com/authorized_payments` | [ver documentación](/developers/pt/reference/subscriptions/_authorized_payments_id/get) |
 | point_integration_wh | - | [ver documentação](/developers/pt/guides/mp-point/introduction) |
 | delivery | - | [ver documentação](/developers/pt/reference/mp_delivery/_proximity-integration_shipments_shipment_id_accept/put) |
-
 
 Com essas informações, você poderá realizar as atualizações necessárias na sua plataforma como, por exemplo, atualizar um pagamento aprovado.

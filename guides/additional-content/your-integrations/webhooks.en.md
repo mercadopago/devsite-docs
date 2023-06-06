@@ -1,36 +1,26 @@
 # Webhooks
 
-
 Webhook (also known as web callback) is a simple method that makes it easy for an app or system to provide real-time information whenever an event happens, that is, it is a way to passively receive data between two systems through of an `HTTP POST`.
 
-
-Webhook notifications can be configured for one or more applications created in your [Developer Dashboard](developers/panel/app).
-
+Webhook notifications can be configured for one or more applications created in your [Developer Dashboard](/developers/panel/app).
 
 Uma vez configurado, o Webhook será enviado sempre que ocorrer um ou mais eventos cadastrados, evitando que haja um trabalho de pesquisa a cada minuto em busca de uma resposta e, por consequência, que ocorra uma sobrecarga do sistema e a perda de dados sempre que houver alguma situação. Após receber uma notificação na sua plataforma, o Mercado Pago aguardará uma resposta para validar se você a recebeu corretamente.
 
-
 Once configured, the Webhook will be sent whenever one or more registered events occur, avoiding a search job every minute in search of an answer and, consequently, a system overload and data loss whenever there is some situation. After receiving a notification on your platform, Mercado Pago will wait for a response to validate that you received it correctly
-
 
 In this documentation, we will explain the necessary settings to receive messages (through the Dashboard or when creating payments), in addition to showing the necessary actions that you must take for Mercado Pago to validate that the notifications were properly received.
 
-
 ## Configuration via Dashboard
-
 
 Below we will explain how to indicate the URLs that will be notified and how to configure the events for which notification will be received.
 
-
 ![webhooks](/images/notifications/webhooks_es.png)
 
-
-1. If you haven't done so already, create an application in the [Developer Dashboard](developers/panel/app).
+1. If you haven't done so already, create an application in the [Developer Dashboard](/developers/panel/app).
 2. Once the application is created, navigate to the Webhooks section in the Application Details page and configure the **production** and **test** URLs where notifications will be received.
 3. You will also be able to experiment and test if the indicated URL is receiving notifications correctly, being able to verify the request, the response given by the server and the description of the event.
 4. If you need to identify multiple accounts, at the end of the indicated URL you can indicate the parameter `?customer=(sellername) endpoint` to identify the sellers.
 5. Next, select the **events** from which you will receive notifications in `json` format via an `HTTP POST` to the URL specified above. An event is any type of update to the reported object, including status or attribute changes. See the events that can be configured in the table below.
-
 
 | Notification Type | Action | Description |
 | :--- | :--- | :--- |
@@ -46,15 +36,11 @@ Below we will explain how to indicate the URLs that will be notified and how to 
 | `point_integration_wh` | `state_ERROR` | An error occurred while processing the payment attempt |
 | `delivery` | `delivery.updated`| Shipping data and order update |
 
-
 ## Setup while creating payments
-
 
 It is possible to configure the notification URL more specifically for each payment using the `notification_url` field. See below how to do this using the SDKs.
 
-
 1. In the `notification_url` field, indicate the URL from which notifications will be received, as shown below.
-
 
 [[[
 ```php
@@ -276,9 +262,7 @@ curl -X POST \
 ```
 ]]]
 
-
 2. Implement the notifications receiver using the following code as an example:
-
 
 ```php
 <?php
@@ -303,9 +287,7 @@ curl -X POST \
 ?>
 ```
 
-
 3. Once the necessary settings have been made, the notification via Webhook will have the following format:
-
 
 > NOTE
 >
@@ -314,7 +296,6 @@ curl -X POST \
 > For the event type `point_integration_wh` the notification format changes. [Click here](/developers/en/docs/mp-point/introduction) to consult the documentation of **Mercado Pago Point**.
 > <br/>
 > In the case of the `delivery` event, we will also have some different attributes in the response. Check the table below for these features.
-
 
 ```json
 {
@@ -331,9 +312,7 @@ curl -X POST \
 }
 ```
 
-
 This indicates that payment **999999999** was created for user **44444** in production mode with API version V1 and that this event occurred on date **2016-03-25T10:04:58.396-04 :00**.
-
 
 | Attribute | Description |
 | --- | --- |
@@ -350,18 +329,13 @@ This indicates that payment **999999999** was created for user **44444** in prod
 | **sent** (delivery) | Notification sent date |
 | **topic** (delivery) | Type of notification received |
 
-
 4. If you want to receive notifications only from Webhook and not from IPN, you can add in the `notification_url` the parameter `source_news=webhook`. For example: https://www.yourserver.com/notifications?source_news=webhooks
-
 
 ## Actions required after receiving notification
 
-
 [TXTSNIPPET][/guides/snippets/test-integration/notification-response]
 
-
 After returning the notification and confirming its receipt, you will obtain the full information of the notified resource by accessing the corresponding API endpoint:
-
 
 | Type | URL | Documentation |
 | --- | --- | --- |
@@ -371,6 +345,5 @@ After returning the notification and confirming its receipt, you will obtain the
 | subscription_authorized_payment | `https://api.mercadopago.com/authorized_payments` | [check documentation](/developers/en/reference/subscriptions/_authorized_payments_id/get) |
 | point_integration_wh | - | [check documentation](/developers/en/guides/mp-point/introduction) |
 | delivery | - | [check documentation](/developers/en/reference/mp_delivery/_proximity-integration_shipments_shipment_id_accept/put)
-
 
 With this information, you will be able to carry out the necessary updates to your platform, such as updating an approved payment.

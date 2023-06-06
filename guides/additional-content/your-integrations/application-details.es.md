@@ -48,11 +48,11 @@ Puedes hacer clic en el botón **Editar datos** para ver y editar las configurac
 * **Sector**: elige la categoría que mejor describa tu negocio.
 * **URL del sitio en producción** (opcional).
 * **Solución de pago a integrar**: edita la solución de pago a integrar entre **Pagos online** y **Pagos presenciales**.
-   - **Pagos online**: si vas a utilizar una plataforma de comercio electrónico, marca **Sí**. Luego, selecciona la **plataforma** con la que vas a integrar. Por último, selecciona el **producto** que estás integrando. 
+* **Pagos online**: si vas a utilizar una plataforma de comercio electrónico, marca **Sí**. Luego, selecciona la **plataforma** con la que vas a integrar. Por último, selecciona el **producto** que estás integrando. 
 
 Si no estás utilizando una plataforma de comercio electrónico, marca **No** y selecciona el **producto** que estás integrando. Opcionalmente, podrás seeccionar el/los modelos de integración.
 
-  - **Pagos presenciales**: Selecciona el **producto** que estás integrando. Si seleccionas la opción Código QR, opcionalmente también podrás eligir el/los modelos de integración.
+* **Pagos presenciales**: Selecciona el **producto** que estás integrando. Si seleccionas la opción Código QR, opcionalmente también podrás eligir el/los modelos de integración.
 * **URL de redireccionamiento**: URL (en https) donde deseas recibir el código de autorización cuando tu integración sea configurada como Marketplace o se realice a través de OAuth. Consulta [OAuth](/developers/es/docs/security/oauth/introduction) para obtener más detalles.
 * **Permisos de la aplicación**: son opciones de acceso de tu aplicación: leer (read), acceso sin conexión (offline access) y escribir (write). Por defecto, tu aplicación se crea con todos los permisos activados, pero puedes desactivar un permiso haciendo clic en la casilla de verificación correspondiente al permiso que deseas cambiar.
 </br>

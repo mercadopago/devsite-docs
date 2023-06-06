@@ -12,7 +12,7 @@ Abaixo explicaremos como indicar as URLs que serão notificadas e como configura
 
 ![ipn](/images/dashboard/ipn_pt_.png)
 
-1. Caso ainda não tenha, crie uma aplicação no [Painel do desenvolvedor](developers/panel/app). 
+1. Caso ainda não tenha, crie uma aplicação no [Painel do desenvolvedor](/developers/panel/app). 
 2. Com a aplicação criada, navegue até a seção IPN na página de **Detalhes da aplicação**.
 3. Em seguida, configure a **URL** de **produção** no qual serão recebidas as notificações.
 4. Você também poderá experimentar e testar se a URL indicada está recebendo as notificações corretamente, podendo verificar a solicitação, a resposta dada pelo servidor e a descrição do evento.

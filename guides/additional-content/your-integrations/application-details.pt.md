@@ -37,10 +37,10 @@ Clique em **Atualizar pontuação** para iniciar o processo de análise da sua i
 
 ## Dados da aplicação
 * **Dados da aplicação**: esta seção exibe os dados básicos da aplicação, incluindo:
- - **User ID**: número de identificação do usuário criado automaticamente.
- - **Número da aplicação**: número de identificação da aplicação criado automaticamente.
- - **Integração com**: o produto ou plataforma integrada com a aplicação. 
- - **Modelo da integração** (se houver): as opções de modelo de integração são disponibilizadas de acordo com o produto ou plataforma utilizada. 
+  - **User ID**: número de identificação do usuário criado automaticamente.
+  - **Número da aplicação**: número de identificação da aplicação criado automaticamente.
+  - **Integração com**: o produto ou plataforma integrada com a aplicação. 
+  - **Modelo da integração** (se houver): as opções de modelo de integração são disponibilizadas de acordo com o produto ou plataforma utilizada. 
 
 ### Editar dados
 Você pode clicar no botão **Editar dados** para visualizar e editar as configurações avançadas que incluem os dados da sua aplicação e o produto a ser integrado. São elas:
@@ -51,11 +51,11 @@ Você pode clicar no botão **Editar dados** para visualizar e editar as configu
 * **Setor**: escolha a categoria que melhor descreve seu negócio.
 * **URL do site em produção** (opcional).
 * **Solução de pagamento a ser integrada**: edite a solução de pagamento a ser integrada entre **Pagamentos on-line** e **Pagamentos presenciais**.
-- **Pagamentos online**: se você pretende utilizar uma plataforma de comércio eletrônico, marque **Sim**. Em seguida, selecione a **plataforma** com a qual você irá integrar. Por fim, escolha o **produto** que está integrando.
+* **Pagamentos online**: se você pretende utilizar uma plataforma de comércio eletrônico, marque **Sim**. Em seguida, selecione a **plataforma** com a qual você irá integrar. Por fim, escolha o **produto** que está integrando.
 
 Caso você não esteja utilizando uma plataforma de comércio eletrônico, marque **Não** e selecione o **produto** que está integrando. Opcionalmente, você poderá selecionar o(s) modelo(s) de integração.
 
-  - **Pagamentos presenciais**: selecione o **produto** que você está integrando. Se você selecionar a opção Código QR, opcionalmente você também poderá escolher o(s) modelo(s) de integração.
+* **Pagamentos presenciais**: selecione o **produto** que você está integrando. Se você selecionar a opção Código QR, opcionalmente você também poderá escolher o(s) modelo(s) de integração.
 * **Redirect URL**: URL (em https) na qual você deseja receber o código de autorização quando sua integração for configurada como Marketplace ou realizada através de OAuth. Veja [OAuth](/developers/pt/docs/security/oauth/introduction) para mais detalhes.
 * **Permissões da aplicação**: opções de acesso da sua aplicação, sendo elas: read (ler), offline access (acesso offline) e write (escrever). Por padrão, sua aplicação é criada com todas as permissões ativadas, mas você pode desativar uma permissão clicando na caixa de seleção referente à permissão que você deseja alterar.
 </br>
