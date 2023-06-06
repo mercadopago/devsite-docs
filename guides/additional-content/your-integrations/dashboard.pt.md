@@ -12,11 +12,11 @@ Crie sua aplicação e obtenha suas credenciais para fazer a integração com o 
 2. Clique em **Criar aplicação**.
 3. Digite um nome para identificar sua aplicação (limite de 50 caracteres).
 4. Escolha uma solução de pagamento a ser integrada entre **Pagamentos on-line** e **Pagamentos presenciais**.
-  - **Pagamentos online**: Se você pretende usar uma plataforma de comércio eletrônico, selecione **Sim**. Em seguida, escolha a **plataforma** com a qual você irá integrar. Por último, selecione o **produto** que você está integrando.
+   - **Pagamentos online**: Se você pretende usar uma plataforma de comércio eletrônico, selecione **Sim**. Em seguida, escolha a **plataforma** com a qual você irá integrar. Por último, selecione o **produto** que você está integrando.
 
 Caso você não esteja usando uma plataforma de comércio eletrônico, selecione **Não** e escolha o **produto** que você está integrando. Se você selecionar a opção Código QR, opcionalmente você também poderá escolher o(s) modelo(s) de integração.
 
-  - **Pagamentos presenciais**: Selecione o **produto** que você está integrando. Caso você tenha selecionado a opção "CódigoQR", selecione também o(s) modelo(s) de integração (opcional).
+   - **Pagamentos presenciais**: Selecione o **produto** que você está integrando. Caso você tenha selecionado a opção "CódigoQR", selecione também o(s) modelo(s) de integração (opcional).
 5. Marque a caixa de seleção para autorizar o uso dos seus dados pessoais conforme a [Declaração de Privacidade](https://www.mercadopago.com.br/privacidade) e certificar que sua conta usa as ferramentas do Mercado Pago de acordo com os [Termos e condições](https://www.mercadopago.com.br/developers/pt/docs/resources/legal/terms-and-conditions).
 6. Marque a caixa de seleção "N˜ao sou um robô".
 7. Clique em "Criar aplicação".

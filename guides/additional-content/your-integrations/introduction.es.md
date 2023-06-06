@@ -10,6 +10,5 @@ La página de **Detalles de la aplicación** se compone de diferentes secciones 
 * **Pruebas**: prueba el funcionamiento de la integración y simula diferentes transacciones con las **Credenciales**, las **Cuentas de prueba** y las **Tarjetas de prueba**.
 * **Notificaciones**: configura la aplicación para recibir notificaciones de eventos relacionados con transacciones, como por ejemplo, avisos de pagos, fraudes, disputas, etc.
     1. **IPN**
-    2. **Webhooks**
-    
+    2. **Webhooks**  
 * **Producción**: activa las **Credenciales de producción** para comenzar a recibir pagos en tu tienda en línea y en otras aplicaciones.

@@ -11,5 +11,4 @@ The **Application Details** page consists of different sections, each with a dif
 * **Notifications**: configure the application to receive notifications for transaction-related events, such as payment alerts, fraud notifications, disputes, etc. There are two types of notifications available for configuration:
   1. **IPN**
   2. **Webhooks**
-
 * **Production**: activate **Production Credentials** to start receiving payments in your online store and other applications.
