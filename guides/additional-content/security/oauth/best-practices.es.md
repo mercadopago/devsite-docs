@@ -1,6 +1,6 @@
 # Buenas prácticas de integración de OAuth
 
-A la hora de utilizar OAuth, es importante tener en cuenta ciertos aspectos para que la integración funcione correctamente y puedas recibir el ‘authorization_code’ que solicitaste.
+A la hora de utilizar OAuth, es importante tener en cuenta ciertos aspectos para que la integración funcione correctamente y puedas recibir el `authorization_code` que solicitaste.
 
 A continuación, encontrarás una guía de posibles errores y de buenas prácticas a tener en cuenta. 
 
@@ -10,9 +10,9 @@ Utiliza siempre los header `accept` y `Content-Type` en tu solicitud POST. Ten c
 
 ![oauth_header](/images/oauth/oauth_header.png)
 
-## Uso correcto de los valores ‘params’
+## Uso correcto de los valores `params`
 
-En tu llamada POST, ten cuidado de utilizar sólo los valores ‘params’ solicitados. No agregues otros valores no requeridos ya que, de hacerlo, recibirás un código de error como respuesta.
+En tu llamada POST, ten cuidado de utilizar sólo los valores `params` solicitados. No agregues otros valores no requeridos ya que, de hacerlo, recibirás un código de error como respuesta.
 
 ![oauth_params](/images/oauth/oauth-1.png)
 
