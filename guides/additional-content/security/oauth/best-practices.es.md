@@ -35,7 +35,7 @@ Para aumentar la seguridad de la integración, recomendamos incluir el parámetr
 
 Ten en cuenta que el `redirect_uri` debe ser una URL estática. En caso de que quieras enviar parametros en esta URL, utiliza `state` para enviar esta información. De lo contrario, la llamada recibirá una respuesta de error ya que el `redirect_uri` no coincide exactamente con el configurado en la aplicación.
 
-![oauth_state](/image/oauth/oauth_state.png)
+![oauth_state](/image/oauth/oauth_state_v2.png)
 
 > Para encontrar más información acerca de la solicitud, sus parámetros y las posibles respuestas de éxito y error que puedes recibir, ve a la documentación de [Referencia de API](/developers/es/reference/oauth/_oauth_token/post).
 
