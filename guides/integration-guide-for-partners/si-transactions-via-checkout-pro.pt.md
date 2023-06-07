@@ -58,7 +58,7 @@ curl --location --request POST 'https://api.mercadolibre.com/checkout/preference
 }'
 ```
 
-> IMPORTANT
+> NOTE
 >
 > Atenção!
 >

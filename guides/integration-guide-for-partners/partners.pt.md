@@ -6,7 +6,7 @@ Para parceiros certificados PCI, será necessário o envio da AOC para que a equ
 
 ## Parceiro sem certificação PCI
 
-A tokenização dos pagamentos via cartão de crédito deve ser feita utilizando a nossa [SDK JS V2(https://www.mercadopago.com.br/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform), por meio do cardform.
+A tokenização dos pagamentos via cartão de crédito deve ser feita utilizando a nossa [SDK JS V2](https://www.mercadopago.com.br/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform), por meio do cardform.
 O MercadoPago.js é responsável pelos fluxos necessários para obtenção das informações obrigatórias para a criação de um pagamento.
 
 ```html
