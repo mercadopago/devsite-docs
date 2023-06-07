@@ -27,7 +27,7 @@ Remember not to send any parameters inside Query Params. Send the parameters wit
 
 Always use the `grant_type` field in your requests with the `authorization_code` value. Remember that if you send another value, it is possible that you will receive an error in response.
 
-![oauth_grant_type](/image/oauth/oauth_granttype_v2.png)
+![oauth_grant_type](/images/oauth/oauth_granttype_v2.png)
 
 ## Using the `state` field within a `redirect_uri`
 
@@ -35,7 +35,7 @@ To increase the security of the integration, we recommend including the `state` 
 
 Note that the `redirect_uri` must be a static URL. In case you want to send parameters at this URL, use `state` to send this information. Otherwise, the call will receive an error response if the `redirect_uri` does not exactly match the one configured in the application.
 
-![oauth_state](/image/oauth/oauth_state_v3.png)
+![oauth_state](/images/oauth/oauth_state_v3.png)
 
 > To find more information about the request, its parameters, and the possible success and error responses you may receive, go to [API Reference](/developers/en/reference/oauth/_oauth_token/post) documentation.
 
