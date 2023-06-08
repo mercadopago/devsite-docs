@@ -29,13 +29,13 @@ Utiliza siempre el campo `grant_type` en tus solicitudes con el valor `authoriza
 
 ![oauth_grant_type](/images/oauth/oauth_granttype_v2.png)
 
-## Uso del campo `state` dentro de un `redirect_uri`
+## Uso del campo `state`
 
-Para aumentar la seguridad de la integración, recomendamos incluir el parámetro `state` dentro del `redirect_uri` y así garantizar que la respuesta pertenezca a una solicitud iniciada por la misma aplicación. 
+Para aumentar la seguridad de la integración, recomendamos incluir el parámetro `state` para garantizar que la respuesta pertenezca a una solicitud iniciada por la misma aplicación. 
 
 Ten en cuenta que el `redirect_uri` debe ser una URL estática. En caso de que quieras enviar parametros en esta URL, utiliza `state` para enviar esta información. De lo contrario, la llamada recibirá una respuesta de error ya que el `redirect_uri` no coincide exactamente con el configurado en la aplicación.
 
-![oauth_state](/images/oauth/oauth_state_v3.png)
+![oauth_state](/images/oauth/oauth_state_v4.png)
 
 Para encontrar más información acerca de la solicitud, sus parámetros y las posibles respuestas de éxito y error que puedes recibir, ve a la documentación de [Referencia de API](/developers/es/reference/oauth/_oauth_token/post).
 
