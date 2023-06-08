@@ -37,5 +37,5 @@ Note that the `redirect_uri` must be a static URL. In case you want to send para
 
 ![oauth_state](/images/oauth/oauth_state_v3.png)
 
-> To find more information about the request, its parameters, and the possible success and error responses you may receive, go to [API Reference](/developers/en/reference/oauth/_oauth_token/post) documentation.
+To find more information about the request, its parameters, and the possible success and error responses you may receive, go to [API Reference](/developers/en/reference/oauth/_oauth_token/post) documentation.
 

@@ -1,4 +1,10 @@
 # OAuth
+
+> WARNING
+>
+> Important
+>
+> As of July 1, 2023, all OAuth integrations that will not serve the required standards will receive an error response and will not be validated. Make sure you adhere to the [Best practices for OAuth integration](/developers/en/security/oauth/best-practices) and, for more information, visit [API Reference](/developers/en/reference/oauth/_oauth_token/post).
  
 OAuth is an authorization protocol that allows applications to have limited access to the private information of Mercado Pago accounts, through the HTTP protocol that introduces an authentication and authorization layer in which you request access to the protected resources of sellers, through an access token limited to a particular application, without the need for the credentials of the sellers through the access flows.
  
@@ -7,8 +13,8 @@ The flows, also called grant types, refer to the way in which an application obt
 * **Access token**: code used in different requests of public origin to access a protected resource that represents an authorization granted by a seller to a client application that contains scopes and a limited period of time for such access.
 * **Temporal grants**: temporal codes used to exchange for an access token. Sound of type `authorization_code` and `refresh_token`.
  
-> WARNING
+> NOTE
 >
-> Important
+> Note
 >
 > The use of the OAuth protocol differs from the shared use of credentials process. OAuth does not address questions related to client authentication, nor information related to that, its responsibility lies in the methods of obtaining a token to access a resource.
