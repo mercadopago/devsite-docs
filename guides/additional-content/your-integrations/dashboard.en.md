@@ -16,7 +16,7 @@ Create your application and obtain your credentials to integrate with Mercado Pa
 >
 > Important
 >
-> During the creation of your application, you may need to reauthenticate your identity. If you have already completed the verification process, you will be prompted to reauthenticate. If you have not yet completed the verification, you will be redirected to submit the necessary documents.
+> During the creation of your application, you may need to reauthenticate your identity. If you have already completed the verification process, you will be prompted to reauthenticate. If you have not yet completed the verification, you will be redirected to submit the necessary documents. 
 >
 > This additional authentication step is essential to protect your account and ensure compliance with operations. Follow the provided instructions to successfully create your application.
 

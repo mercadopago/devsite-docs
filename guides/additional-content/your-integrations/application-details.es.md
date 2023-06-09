@@ -6,7 +6,7 @@ Para acceder a los datos generales de tu aplicación, ve al [Panel del desarroll
 
 En esta sección, nos aseguraremos de que tu aplicación cumpla con los requisitos de calidad y seguridad necesarios para brindar la mejor experiencia tanto a vendedores como a compradores con Mercado Pago.
 
-### Actualizar puntaje
+### Evaluar calidad
 
 El puntaje indica qué tan segura y alineada con las buenas prácticas de integración de Mercado Pago está la configuración de tu aplicación.
 

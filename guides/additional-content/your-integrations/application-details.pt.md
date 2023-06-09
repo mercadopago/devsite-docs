@@ -8,7 +8,7 @@ Para acessar os dados gerais da sua aplicação, navegue até o [Painel do desen
 Nesta seção, vamos garantir que sua aplicação atenda aos requisitos de qualidade e segurança necessários para proporcionar a melhor experiência tanto para vendedores quanto para compradores com o Mercado Pago.
 
 
-### Atualizar pontuação
+### Avaliar a qualidade
 
 A pontuação indica o quão segura e alinhada com as boas práticas de integração do Mercado Pago é a configuração da sua aplicação.
 

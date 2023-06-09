@@ -6,7 +6,7 @@ To access the general data of your application, navigate to the [Developer Dashb
 
 In this section, we will ensure that your application meets the quality and security requirements necessary to provide the best experience for both sellers and buyers with Mercado Pago.
 
-### Update score
+### Evaluate quality
 
 The score indicates how secure and aligned with Mercado Pago's integration best practices your application's configuration is.
 

@@ -17,7 +17,7 @@ Crie sua aplicação e obtenha suas credenciais para fazer a integração com o 
 >
 > Importante
 >
-> Durante a criação da sua aplicação, pode ser necessário realizar reautenticação de identidade. Se você já concluiu o processo de verificação, será solicitado a reautenticar. Se ainda não realizou a verificação, será redirecionado para enviar os documentos necessários.
+> Durante a criação da sua aplicação, pode ser necessário realizar reautenticação de identidade. Se você já concluiu o processo de verificação, será solicitado a reautenticar. Se ainda não realizou a verificação, será redirecionado para enviar os documentos necessários. 
 >
 > Essa etapa adicional de autenticação é essencial para proteger sua conta e garantir a conformidade das operações. Siga as instruções fornecidas para criar sua aplicação com sucesso.
 
@@ -49,4 +49,4 @@ Você pode solicitar acesso às credenciais de aplicação de outras pessoas e i
 4. Clique em **Solicitar credenciais**.
 Após o acesso às credenciais ser concedido, você pode usá-las para integrar soluções. Quando as integrações forem concluídas, remova as permissões de acesso para as credenciais que foram compartilhadas e cuide da segurança dos dados.
 
-> Ao solicitar acesso a outras credenciais, você pede para que outras contas do Mercado Pago compartilhem as chaves públicas e privadas das aplicações com você para fazer integrações. Não use as credenciais de outras contas sem o devido consentimento.
+> Ao solicitar acesso a outras credenciais, você pede para que outras contas do Mercado Pago compartilhem com você as chaves públicas e privadas das aplicações para fazer integrações. Não use as credenciais de outras contas sem o devido consentimento.

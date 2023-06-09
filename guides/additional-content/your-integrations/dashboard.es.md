@@ -17,7 +17,7 @@ Crea tu aplicación y obtén tus credenciales para integrarte con Mercado Pago. 
 >
 > Importante
 >
-> Durante la creación de tu aplicación, es posible que debas realizar una reautenticación de identidad. Si ya has completado el proceso de verificación, se te solicitará reautenticarte. Si aún no has realizado la verificación, serás redirigido/a para enviar los documentos necesarios.
+> Durante la creación de tu aplicación, es posible que debas realizar una reautenticación de identidad. Si ya has completado el proceso de verificación, se te solicitará reautenticarte. Si aún no has realizado la verificación, serás redirigido/a para enviar los documentos necesarios. 
 >
 > Este paso adicional de autenticación es esencial para proteger tu cuenta y garantizar el cumplimiento de las operaciones. Sigue las instrucciones proporcionadas para crear tu aplicación con éxito.
 
