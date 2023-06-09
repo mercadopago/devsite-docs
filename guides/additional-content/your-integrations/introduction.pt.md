@@ -8,7 +8,7 @@ Suas integrações é o seu ambiente de gerenciamento de integrações criado au
 A página de **Detalhes da aplicação** é composta por diferentes seções, cada uma com um objetivo diferente.
 * **Informações gerais**: exibe as informações gerais da aplicação.
 * **Testes**: teste o funcionamento da integração, faça testes e simule diferentes transações com as **Credenciais**, **Contas de teste** e **Cartões de teste**.
-* **Notificações**: configure a aplicação para receber notificações de eventos relacionados a transações, como por exemplo, avisos de pagamentos, fraudes, contestações, etc. Existe dois tipos de notificações disponíveis para configuração:
+* **Notificações**: configure a aplicação para receber notificações de eventos relacionados a transações, como por exemplo, avisos de pagamentos, fraudes, contestações, etc. Existem dois tipos de notificações disponíveis para configuração:
     1. **IPN**
     2. **Webhooks**
 * **Produção**: ative as **Credenciais de produção** para começar a receber pagamentos na sua loja on-line e em outras aplicações.
