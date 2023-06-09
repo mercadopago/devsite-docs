@@ -177,7 +177,7 @@ dependencies {
 [[[
 ```swift
 ===
-Recomendamos realizar a inicialização no envento didFinishLaunchingWithOptions do AppDelegate.
+Recomendamos realizar a inicialização no evento didFinishLaunchingWithOptions do AppDelegate.
 ===
 import MercadoPagoDevicesSDK
 ...
@@ -189,7 +189,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 ```
 ```objective-c
 ===
-Recomendamos realizar a inicialização no envento didFinishLaunchingWithOptions do AppDelegate.
+Recomendamos realizar a inicialização no evento didFinishLaunchingWithOptions do AppDelegate.
 ===
 @import ‘MercadoPagoDevicesSDK’;
 ...

@@ -70,7 +70,7 @@ print_r ($cards["response"]);
 <?php
 require_once ('mercadopago.php');
 $mp = new MP ("ENV_ACCESS_TOKEN");
-$card_token = $mp->post ("/v1/card_tokens", array("card_id" => "cardId"));
+$card_token = $mp->post ("/v1/card_tokens", array("json_data" => array("card_id" => "cardId" )));
 print_r ($card_token);
 ?>
 
