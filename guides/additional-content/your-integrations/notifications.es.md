@@ -19,5 +19,5 @@ Hay **dos tipos** de notificaciones disponibles para la configuración, que una 
 
 | Tipo | Descripción |
 | --- | --- |
-| **Webhooks** | Utiliza HTTP REST y notifica instantáneamente las actualizaciones. Para aprender a configurar las notificaciones de webhook [haz clic aquí](/developers/es/guides/additional-content/notifications/webhooks/webhooks). |
-| **IPN** | La notificación puede tardar unos minutos en enviarse. Para aprender a configurar las notificaciones IPN [haz clic aquí](/developers/es/guides/additional-content/notifications/ipn/introduction). |
+| **Webhooks** | Utiliza HTTP REST y notifica instantáneamente las actualizaciones. Para aprender a configurar las notificaciones de webhook [haz clic aquí](/developers/pt/guides/additional-content/your-integrations/webhooks). |
+| **IPN** | La notificación puede tardar unos minutos en enviarse. Para aprender a configurar las notificaciones IPN [haz clic aquí](/developers/pt/guides/additional-content/your-integrations/ipn). |

@@ -12,7 +12,13 @@ Nesta seção, vamos garantir que sua aplicação atenda aos requisitos de quali
 
 A pontuação indica o quão segura e alinhada com as boas práticas de integração do Mercado Pago é a configuração da sua aplicação.
 
-Clique em **Atualizar pontuação** para iniciar o processo de análise da sua integração. Analise os pontos de melhoria identificados durante a análise e faça as alterações necessárias na sua integração. Nesse processo, serão analisados ​​uma série de campos associados.
+Clique em **Avaliar a qualidade** para iniciar o processo de análise da sua integração. Analise os pontos de melhoria identificados durante a análise e faça as alterações necessárias na sua integração. Nesse processo, serão analisados ​​uma série de campos associados.
+
+> NOTE
+>
+> Nota
+>
+> Antes de realizar a avaliação, certifique-se de ter concluído o processo de homologação da aplicação em ambiente de produção. Além disso, é necessário ter realizado pelo menos um pagamento produtivo.
 
 > Após realizar as melhorias, clique novamente em **Atualizar pontuação** para reavaliar sua integração e verificar se atende aos padrões exigidos.
 
@@ -46,7 +52,7 @@ Clique em **Atualizar pontuação** para iniciar o processo de análise da sua i
 Você pode clicar no botão **Editar dados** para visualizar e editar as configurações avançadas que incluem os dados da sua aplicação e o produto a ser integrado. São elas:
 * **Logotipo**: imagem em formato JPG ou PNG de até 1MB.
 * **Nome de aplicação**: para identificar suas aplicações com mais facilidade (máximo de 50 caracteres).
-* **Nome curto da aplicação**: para identificação pessoal do usuário criador da aplicação. 
+* **Nome curto da aplicação**: identificador secundário da aplicação (este campo não pode ter espaços ou caracteres especiais). 
 * **Descrição da aplicação** (máximo de 150 caracteres).
 * **Setor**: escolha a categoria que melhor descreve seu negócio.
 * **URL do site em produção** (opcional).

@@ -10,7 +10,13 @@ En esta sección, nos aseguraremos de que tu aplicación cumpla con los requisit
 
 El puntaje indica qué tan segura y alineada con las buenas prácticas de integración de Mercado Pago está la configuración de tu aplicación.
 
-Haz clic en **Actualizar puntaje** para iniciar el proceso de análisis de tu integración. Revisa los puntos de mejora identificados durante el análisis y haz los cambios necesarios en tu integración. Durante este proceso, se analizarán una serie de campos asociados.
+Haz clic en **Evaluar calidad** para iniciar el proceso de análisis de tu integración. Revisa los puntos de mejora identificados durante el análisis y haz los cambios necesarios en tu integración. Durante este proceso, se analizarán una serie de campos asociados.
+
+> NOTE
+>
+> Nota
+>
+> Antes de realizar la evaluación, asegúrate de haber completado el proceso de aprobación de la aplicación en el entorno de producción. Además, es necesario haber realizado al menos un pago productivo exitoso.
 
 > Después de realizar las mejoras, haz clic nuevamente en **Actualizar puntaje** para reevaluar tu integración y verificar si cumple con los estándares requeridos.
 
@@ -43,7 +49,7 @@ Haz clic en **Actualizar puntaje** para iniciar el proceso de análisis de tu in
 Puedes hacer clic en el botón **Editar datos** para ver y editar las configuraciones avanzadas que incluyen los datos de tu aplicación y el producto a integrar. Estas son:
 * **Logo**: imagen en formato JPG o PNG de hasta 1 MB.
 * **Nombre de la aplicación**: sirve para identificar tus aplicaciones con más facilidad (permite un máximo de 50 caracteres).
-* **Nombre corto de la aplicación**: sirve para identificación personal del usuario creador de la aplicación.
+* **Nombre corto de la aplicación**: identificador secundario de la aplicación (este campo no puede contener espacios ni caracteres especiales).
 * **Descripción de la aplicación** (máximo 150 caracteres).
 * **Sector**: elige la categoría que mejor describa tu negocio.
 * **URL del sitio en producción** (opcional).
