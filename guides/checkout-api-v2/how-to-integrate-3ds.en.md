@@ -24,31 +24,32 @@ Below are the steps to integrate with 3DS.
     1. `not_supported`: 3DS must not be used (this is the default value).
     2. `optional`: 3DS may or may not be required, depending on the risk profile of the transaction.
 
+
 [[[
 ```curl
 
 curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
---header 'Authorization: ENV_ACCESS_TOKEN' \
+--header 'Authorization: <ENV_ACCESS_TOKEN>' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "payer": {
-        "email": "test_payer_12345@testuser.com"
+        "email": "<BUYER_EMAIL>"
     },
     "additional_info": {
         "items": [
             {
-                "quantity": 1,
-                "category_id": "MLA91058",
-                "title": "Clases De Payments",
-                "unit_price": 100
+                "quantity": <ITEM_QUANTITY>,
+                "category_id": <CATEGORY_ID>,
+                "title": <ITEM_TITLE>,
+                "unit_price": <TRANSACTION_AMOUNT>
             }
         ]
     },
-    "payment_method_id": "master",
+    "payment_method_id": <PAYMENT_METHOD_ID>,
     "marketplace": "NONE",
-    "installments": 1,
-    "transaction_amount": 100,
-    "description": "description",
+    "installments": <INSTALLLMENTS_NUMBER>,
+    "transaction_amount": <TRANSACTION_AMOUNT>,
+    "description": "<DESCRIPTION>",
     "token": "CARD_TOKEN",
     "three_d_secure_mode": "optional",
     "capture": true,
@@ -56,38 +57,38 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
 }'
 ```
 ```java
-MercadoPagoConfig.setAccessToken("ENV_ACCESS_TOKEN");
+MercadoPagoConfig.setAccessToken("<ENV_ACCESS_TOKEN>");
     PaymentClient client = new PaymentClient();
     PaymentCreateRequest createRequest =
         PaymentCreateRequest.builder()
-            .transactionAmount(new BigDecimal(100))
-            .token("CARD_TOKEN")
-            .description("description")
-            .installments(1)
-            .paymentMethodId("visa")
+            .transactionAmount(new BigDecimal(<TRANSACTION_AMOUNT>))
+            .token("<CARD_TOKEN>")
+            .description("<DESCRIPTION>")
+            .installments(<INSTALLLMENTS_NUMBER>)
+            .paymentMethodId("<PAYMENT_METHOD_ID>")
             .payer(
                PaymentPayerRequest.builder()
-                 .email("test_payer_12345@testuser.com")
+                 .email("<BUYER_EMAIL>")
                  .build()
             )
             .threeDSecureMode("optional")
             .build();
     client.create(createRequest);
 ```
-```dotnet
+```csharp
 using MercadoPago.Config;
 using MercadoPago.Client.Payment;
 using MercadoPago.Resource.Payment;
-MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
+MercadoPagoConfig.AccessToken = "<ENV_ACCESS_TOKEN>";
 var request = new PaymentCreateRequest
 {
-    TransactionAmount = 100,
-    Token = "CARD_TOKEN",
-    Description = "description",
-    Installments = 1,
+    TransactionAmount = <TRANSACTION_AMOUNT>,
+    Token = "<CARD_TOKEN>",
+    Description = "<DESCRIPTION>",
+    Installments = <INSTALLLMENTS_NUMBER>,
     Payer = new PaymentPayerRequest
     {
-        Email = "test_payer_12345@testuser.com",
+        Email = "<BUYER_EMAIL>",
     },
     ThreeDSecureMode = "optional",
 };
@@ -97,14 +98,14 @@ Payment payment = await client.CreateAsync(request);
 ```php
 
 <?php
-  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+  MercadoPago\SDK::setAccessToken("<ENV_ACCESS_TOKEN>");
   $payment = new MercadoPago\Payment();
-  $payment->transaction_amount = 100;
+  $payment->transaction_amount = <TRANSACTION_AMOUNT>;
   $payment->token = "CARD_TOKEN";
-  $payment->description = "description";
-  $payment->installments = 1;
+  $payment->description = "<DESCRIPTION>";
+  $payment->installments = <INSTALLLMENTS_NUMBER>;
   $payment->payer = array(
-        "email" => "test_payer_12345@testuser.com"
+        "email" => "<BUYER_EMAIL>"
     );
   $payment->three_d_secure_mode = "optional";
   $payment->save();
@@ -112,15 +113,15 @@ Payment payment = await client.CreateAsync(request);
 ```
 ```node
 
-var Mercadopago = require('mercadopago');
+var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 var payment_data = {
-  transaction_amount: 100,
-  token: 'CARD_TOKEN',
-  description: 'description',
-  installments: 1,
+  transaction_amount: <TRANSACTION_AMOUNT>,
+  token: '<CARD_TOKEN>',
+  description: '<DESCRIPTION>',
+  installments: <INSTALLLMENTS_NUMBER>,
   payer: {
-    email: 'test_payer_12345@testuser.com'
+    email: '<BUYER_EMAIL>'
   },
   three_d_secure_mode: 'optional'
 };
@@ -131,14 +132,14 @@ mercadopago.payment.create(payment_data).then(function (data) {
 ```ruby
 
 require 'mercadopago'
-sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
+sdk = Mercadopago::SDK.new('<ENV_ACCESS_TOKEN>')
 payment_request = {
-  token: 'CARD_TOKEN',
-  installments: 1,
-  transaction_amount: 100,
-  description: 'description',
+  token: '<CARD_TOKEN>',
+  installments: <INSTALLLMENTS_NUMBER>,
+  transaction_amount: <TRANSACTION_AMOUNT>,
+  description: '<DESCRIPTION>',
   payer: {
-    email: 'test_payer_12345@testuser.com',
+    email: '<BUYER_EMAIL>',
   },
   three_d_secure_mode: 'optional'
 }
@@ -147,20 +148,19 @@ payment = payment_response[:response]
 ```
 ```python
 import mercadopago
-sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
+sdk = mercadopago.SDK("<ENV_ACCESS_TOKEN>")
 payment_data = {
-    "transaction_amount": 100,
-    "token": "CARD_TOKEN",
-    "description": "description",
-    "installments": 1,
+    "transaction_amount": <TRANSACTION_AMOUNT>,
+    "token": "<CARD_TOKEN>",
+    "description": "<DESCRIPTION>",
+    "installments": <INSTALLLMENTS_NUMBER>,
     "payer": {
-        "email": "test_payer_12345@testuser.com",
+        "email": "<BUYER_EMAIL>",
     },
     "three_d_secure_mode": "optional"
 }
 payment_response = sdk.payment().create(payment_data)
 payment = payment_response["response"]
-
 ```
 ]]]
 

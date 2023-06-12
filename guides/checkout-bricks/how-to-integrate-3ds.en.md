@@ -39,7 +39,7 @@ mercadopago.payment.save(paymentData)
   });
 ```
 
- Response overview:
+ Simplified response overview:
 
 ```javascript
 {
