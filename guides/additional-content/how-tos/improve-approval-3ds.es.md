@@ -14,5 +14,19 @@ El siguiente flujo representa, de forma simplificada, cómo funciona el proceso 
 
 Encontrarás toda la información necesaria para realizar la integración con 3DS en los siguientes enlaces, según tu tipo de integración:
 
-- [Cómo integrar 3DS con Checkout Bricks](/developers/es/docs/checkout-bricks/how-tos/integrate-3ds)
-- [Cómo integrar 3DS con Checkout API](/developers/es/docs/checkout-api/how-tos/integrate-3ds)
+---
+future_product_avaible: 
+ - card_avaible: true
+ - card_title: Checkout Bricks
+ - card_description: Una solución de pago modular, segura y personalizable en la que controla toda la experiencia y elige qué bloque y tema usar en función de las necesidades de su sitio web.
+ - card_link: /developers/es/docs/checkout-bricks/how-tos/integrate-3ds
+ - card_linkDescription: Saiba mais
+ - card_pillText: DISPONÍVEL
+ - card_avaible: true
+ - card_title: Checkout API
+ - card_description: Una solución versátil para que construyas tu procesador de pagos en tu sitio web. Usted controla toda la experiencia, desde la configuración básica hasta la avanzada.
+ - card_link: /developers/es/docs/checkout-api/how-tos/integrate-3ds
+ - card_linkDescription: Saiba mais
+ - card_pillText: DISPONÍVEL
+---
+

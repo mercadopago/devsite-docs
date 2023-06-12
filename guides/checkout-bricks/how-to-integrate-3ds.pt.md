@@ -10,9 +10,11 @@ Nesta documentação você encontrará toda a informação necessária para real
 
 ## Integrar com 3DS
 
-A autenticação 3DS pode ser feita através de dois fluxos diferentes: **com e sem _Challenge_**, sendo estas etapas adicionais que o comprador deve cumprir para garantir sua identidade. A decisão de incluir ou não o _Challenge_ depende do emissor do cartão e do perfil de risco da transação que está sendo realizada.
+A integração com 3DS resulta em um processo de autenticação que é executado através de dois fluxos: com ou sem _Challenge_, sendo _Challenge_ as etapas adicionais que o comprador deve cumprir para garantir sua identidade. 
 
-Para **transações de baixo risco**, as informações enviadas na finalização da compra são suficientes e as etapas adicionais do _Challenge_ **não são necessárias**. Porém, **para casos de alto risco de fraude**, o _Challenge_ é necessário para **verificar a identidade do comprador**, o que aumenta a aprovação das transações com cartão.
+Para **transações de baixo risco**, as informações enviadas na finalização da compra são suficientes, o fluxo segue de forma transparente e as etapas adicionais do _Challenge_ não são necessárias. Porém, **para casos de alto risco de fraude**, o _Challenge_ é necessário para verificar a identidade do comprador, o que aumenta a aprovação das transações com cartão.
+
+A decisão de incluir ou não o _Challenge_ depende do emissor do cartão e do perfil de risco da transação que está sendo realizada.
 
 Abaixo estão as etapas para realizar uma integração com 3DS.
 

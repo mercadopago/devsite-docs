@@ -14,5 +14,18 @@ The flow below represents, in a simplified way, how the 3DS 2.0 authentication p
 
 You will find all the information necessary to carry out the integration with 3DS in the following links, according to your type of integration:
 
-- [How to Integrate 3DS with Checkout Bricks](/developers/en/docs/checkout-bricks/how-tos/integrate-3ds)
-- [How to Integrate 3DS with Checkout API](/developers/en/docs/checkout-api/how-tos/integrate-3ds)
+---
+future_product_avaible: 
+ - card_avaible: true
+ - card_title: Checkout Bricks
+ - card_description: A modular, secure and customizable payment solution where you control the entire experience and choose which brick and theme to use based on your website needs.
+ - card_link: /developers/en/docs/checkout-bricks/how-tos/integrate-3ds
+ - card_linkDescription: Saiba mais
+ - card_pillText: DISPONÍVEL
+ - card_avaible: true
+ - card_title: Checkout API
+ - card_description: A versatile solution for you to build your payment processor on your website. You control the entire experience, from basic to advanced settings.
+ - card_link: /developers/en/docs/checkout-api/how-tos/integrate-3ds
+ - card_linkDescription: Saiba mais
+ - card_pillText: DISPONÍVEL
+---

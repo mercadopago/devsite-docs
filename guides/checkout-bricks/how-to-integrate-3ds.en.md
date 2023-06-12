@@ -10,9 +10,11 @@ In this documentation you will find all the necessary information to carry out t
 
 ## Integrate with 3DS
 
-3DS authentication can be done through two different flows: **with or without Challenge**, which are additional steps that the buyer must complete to ensure their identity. The decision to include or exclude the Challenge depends on the card issuer and the risk profile of the transaction being performed.
+The integration with 3DS results in an authentication process that is carried out through two flows: with or without _Challenge_, with _Challenge_ being the additional steps that the buyer must take to guarantee their identity.
 
-For **low-risk transactions**, the information sent at checkout is sufficient and the additional Challenge steps are not necessary. However, **for cases of high fraud risk**, the Challenge is necessary to **verify the buyer's identity**, which increases card transaction conversion.
+For **low-risk transactions**, the information submitted at checkout is sufficient, the flow proceeds transparently, and additional _Challenge_ steps are not required. However, **for high fraud risk cases**, the _Challenge_ is required to verify the buyer's identity, which increases the approval of card transactions.
+
+The decision to include the _Challenge_ or not depends on the card issuer and the risk profile of the transaction being carried out.
 
 Below are the steps to integrate with 3DS.
 
