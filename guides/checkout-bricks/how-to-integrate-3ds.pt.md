@@ -60,7 +60,9 @@ Visão geral simplificada da resposta:
 >
 > O campo retornado `three_ds_info` contém as informações necessárias para continuar o processo de pagamento caso o `status_detail` seja `pending_challenge`.
 
-2. Para continuar o fluxo e exibir o _Challenge_ de forma simplificada, é recomendado integrar com o [Status Screen Brick](/developers/pt/docs/checkout-bricks/status-screen-brick/default-rendering), informando o ID do pagamento gerado, além do conteúdo do objeto `three_ds_info`, o qual foi retornados pela API de pagamentos.
+2. Para continuar o fluxo e exibir o _Challenge_ de forma simplificada, é recomendado integrar com o [Status Screen Brick](/developers/pt/docs/checkout-bricks/status-screen-brick/default-rendering), informando o ID do pagamento gerado, além do conteúdo do objeto `three_ds_info`, os quais foram retornados pela API de pagamentos.
+
+2. Para continuar el flujo y mostrar el _Desafío_ de manera simplificada, se recomienda integrar con el [Bloque de pantalla de estado](/developers/pt/docs/checkout-bricks/status-screen-brick/default-rendering), informando el ID de pago generado, además del contenido del objeto `three_ds_info`, que fueron devueltos por la API de pago.
 
 Caso não deseje utilizar o Status Screen Brick nessa etapa, aconselhamos acessar a seção de [Realizar implantação](/developers/pt/docs/checkout-api/how-tos/how-to-integrate-3ds) na documentação de [Checkout Transparente](/developers/pt/docs/checkout-api/landing), visto que serão necessários passos adicionais para, por exemplo, capturar o evento emitido quando o _Challenge_ for finalizado.
 
@@ -149,20 +151,6 @@ O usuário deve responder ao desafio para que a transição seja validada devida
  </center>
 
  ------------
-
-## Possíveis status de pagamento 
-
-Uma transação com 3DS pode retornar diferentes status dependendo do tipo de integração realizada (com ou sem _Challenge_). Em um pagamento **sem _Challenge_**, o status da transação será diretamente `approved` ou `rejected`.
-
-Em um pagamento **com _Challenge_**, a transação ficará com status `pending` e o processo de autenticação junto ao banco será iniciado. Somente após esta etapa o status final será exibido.
-
-Veja abaixo a tabela com os possíveis status e suas respectivas descrições.
-
-| Status  | Descrição  |
-| --- | --- |
-| `pending` | Transação com autenticação pendente ou timeout do _Challenge_. |
-| `approved` | Transação aprovada com autenticação. |
-| `rejected` | Transação negada sem autenticação. |
 
 ## Teste de integração
 

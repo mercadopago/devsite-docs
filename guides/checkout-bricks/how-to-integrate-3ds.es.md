@@ -60,7 +60,7 @@ Descripción general simplificada de la respuesta:
 >
 > El campo devuelto `three_ds_info` contiene la información necesaria para continuar con el proceso de pago si `status_detail` es `pending_challenge`.
 
-2. Para continuar el flujo y mostrar el _Challenge_ de manera simplificada, se recomienda integrar con el [Status Screen Brick](/developers/es/docs/checkout-bricks/status-screen-brick/default-rendering), informando el ID de pago generado, además del contenido del objeto `three_ds_info`, que fue devuelto por la API de pago.
+2. Para continuar el flujo y mostrar el _Challenge_ de manera simplificada, se recomienda integrar con el [Status Screen Brick](/developers/es/docs/checkout-bricks/status-screen-brick/default-rendering), informando el ID de pago generado, además del contenido del objeto `three_ds_info`, que fueron devueltos por la API de pago.
 
 Si no desea utilizar el Status Screen Brick en esta etapa, le recomendamos que acceda a la sección [Implementación](/developers/es/docs/checkout-api/how-tos/how-to-integrate-3ds) en la documentación de [Checkout API](/developers/es/docs/checkout-api/landing), ya que se necesitarán pasos adicionales para, por ejemplo, capturar el evento emitido cuando se completa el _Challenge_.
 
@@ -149,20 +149,6 @@ El usuario debe responder al desafío para que la transición se valide correcta
 </center>
 
 ------------
-
-## Posibles status del pago 
-
-Una transacción con 3DS puede devolver diferentes status según el tipo de integración realizada (con o sin challenge). En un pago sin _Challenge_, el estado de la transacción será directamente "approved" o "rejected".
-
-En un pago con _Challenge_, la transacción estará en status `pending` y se iniciará el proceso de autenticación con el banco. Solo después de esta etapa se mostrará el status final.
-
-A continuación se muestra una tabla con los posibles status y sus descripciones correspondientes.
-
-| Status  | Descrição  |
-| --- | --- |
-| “pending”  | Transacción pendiente de autenticación o timeout del challenge.  |
-| “approved”  | Transacción aprobada con autenticación.  |
-| “rejected”  | Transacción denegada sin autenticación.  |
 
 ## Prueba de integración
 

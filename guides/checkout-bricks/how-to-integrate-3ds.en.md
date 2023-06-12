@@ -60,7 +60,7 @@ mercadopago.payment.save(paymentData)
 >
 > The returned field `three_ds_info` contains the necessary information to continue the payment process if the `status_detail` is `pending_challenge`.
 
-2. To continue the flow and display the _Challenge_ in a simplified way, it is recommended to integrate with the [Status Screen Brick](/developers/en/docs/checkout-bricks/status-screen-brick/default-rendering), informing the ID generated payment, in addition to the content of the `three_ds_info` object, which was returned by the payment API.
+2. To continue the flow and display the _Challenge_ in a simplified way, it is recommended to integrate with the [Status Screen Brick](/developers/en/docs/checkout-bricks/status-screen-brick/default-rendering), informing the ID generated payment, in addition to the content of the `three_ds_info` object, which were returned by the payment API.
 
 If you do not want to use the Status Screen Brick at this stage, we advise you to access the [Deployment](/developers/en/docs/checkout-api/how-tos/how-to-integrate-3ds) section in the [Checkout API](/developers/en/docs/checkout-api/landing) documentation, as additional steps will be needed to, for example, capture the event emitted when the _Challenge_ is completed.
 
@@ -149,20 +149,6 @@ The user must respond to the challenge for the transition to be properly validat
 </center>
 
 ------------
-
-## Possible payment statuses
-
-A transaction with 3DS can return different statuses depending on the type of integration performed (with or without Challenge). In a payment **without Challenge**, the transaction status will be directly `approved` or `rejected`.
-
-In a payment **with Challenge**, the transaction will have a `pending` status and the authentication process with the bank will be initiated. Only after this step, the final status will be displayed.
-
-See below the table with the possible statuses and their respective descriptions.
-
-| Status | Description |
-| --- | --- |
-| `pending` | Transaction with pending authentication or Challenge timeout. |
-| `approved` | Transaction approved with authentication. |
-| `rejected`| Transaction denied without authentication. |
 
 ## Integration test
 
