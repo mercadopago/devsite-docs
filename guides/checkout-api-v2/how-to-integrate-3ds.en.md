@@ -12,7 +12,7 @@ In this documentation you will find all the necessary information to carry out t
 
 3DS authentication can be done through two different flows: **with or without Challenge**, which are additional steps that the buyer must complete to ensure their identity. The decision to include or exclude the Challenge depends on the card issuer and the risk profile of the transaction being performed.
 
-> Also learn about the integrations via [Checkout Bricks](/developers/en/docs/checkout-bricks/how-tos/integrate-3ds), a modular, secure and customizable payment method that automates several of the processes described below.
+> Also learn about the integrations via [Checkout Bricks,](/developers/en/docs/checkout-bricks/how-tos/integrate-3ds) a modular, secure and customizable payment method that automates several of the processes described below.
 
 For **low-risk transactions**, the information sent at checkout is sufficient and the additional Challenge steps are not necessary. However, **for cases of high fraud risk**, the Challenge is necessary to **verify the buyer's identity**, which increases card transaction conversion.
 
@@ -339,6 +339,6 @@ To make a test purchase, you will need to have the test credentials of your prod
 
 > WARNING
 >
-> Important
+> Attention
 >
 > To perform the tests, we recommend that you contact your Mercado Pago consultant.

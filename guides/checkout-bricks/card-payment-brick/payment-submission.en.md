@@ -234,6 +234,6 @@ Some of these fields are: `description` (this field can be shown in created tick
 >
 > Important
 >
-> In view of an increase in the probability of approval of your payments, we recommend adherence to the protocol [3DS 2.0](/developers/en/docs/checkout-bricks/how-tos/improve-payment-approval/3ds), which can be done as described [here.](/developers/en/docs/checkout-bricks/how-tos/integrate-3ds)
+> We recommend adherence to the 3DS 2.0 protocol, in order to increase the probability of approval of your payments, which can be done as described [here.](/developers/en/docs/checkout-bricks/how-tos/integrate-3ds)
 
 Check [API References](/developers/en/reference/payments/_payments/post) to learn about all the available fields for full payments.

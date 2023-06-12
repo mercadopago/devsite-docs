@@ -39,6 +39,10 @@ mercadopago.payment.save(paymentData)
   });
 ```
 
+Caso não seja necessário utilizar o fluxo do _Challenge_, o campo `status` do pagamento terá valor `approved` e não será necessário exibi-lo, dessa forma, o fluxo de pagamento seguirá normalmente.
+
+Para os casos em que o _Challenge_ é necessário, o `status` mostrará o valor `pending`, e o `status_detail` será `pending_challenge`.
+
 Visão geral simplificada da resposta:
 
 ```javascript
@@ -62,12 +66,9 @@ Visão geral simplificada da resposta:
 
 2. Para continuar o fluxo e exibir o _Challenge_ de forma simplificada, é recomendado integrar com o [Status Screen Brick](/developers/pt/docs/checkout-bricks/status-screen-brick/default-rendering), informando o ID do pagamento gerado, além do conteúdo do objeto `three_ds_info`, os quais foram retornados pela API de pagamentos.
 
-2. Para continuar el flujo y mostrar el _Desafío_ de manera simplificada, se recomienda integrar con el [Bloque de pantalla de estado](/developers/pt/docs/checkout-bricks/status-screen-brick/default-rendering), informando el ID de pago generado, además del contenido del objeto `three_ds_info`, que fueron devueltos por la API de pago.
-
-Caso não deseje utilizar o Status Screen Brick nessa etapa, aconselhamos acessar a seção de [Realizar implantação](/developers/pt/docs/checkout-api/how-tos/how-to-integrate-3ds) na documentação de [Checkout Transparente](/developers/pt/docs/checkout-api/landing), visto que serão necessários passos adicionais para, por exemplo, capturar o evento emitido quando o _Challenge_ for finalizado.
+Caso não deseje utilizar o Status Screen Brick nessa etapa, aconselhamos acessar a seção de [Realizar implantação](/developers/pt/docs/checkout-api/how-tos/integrate-3ds) na documentação de [Checkout Transparente](/developers/pt/docs/checkout-api/landing), visto que serão necessários passos adicionais para, por exemplo, capturar o evento emitido quando o _Challenge_ for finalizado.
 
 ```javascript
-{
 const renderStatusScreenBrick = async (bricksBuilder) => {
  const settings = {
    initialization: {
@@ -91,7 +92,6 @@ const renderStatusScreenBrick = async (bricksBuilder) => {
  );
 };
 renderStatusScreenBrick(bricksBuilder);
-
 ```
 
 O Status Screen Brick exibirá uma transição indicando redirecionamento e, logo em seguida, será exibido o _Challenge_ do banco em questão.

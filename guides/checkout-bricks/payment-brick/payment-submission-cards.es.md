@@ -266,6 +266,6 @@ Para hacer esto, agregue campos relevantes al objeto enviado, que viene en la re
 >
 > Importante
 >
-> En vista de un aumento en la probabilidad de aprobación de sus pagos, recomendamos adherirse al protocolo [3DS 2.0](/developers/es/docs/checkout-bricks/how-tos/improve-payment-approval/3ds), que se puede hacer como se describe [aquí.](/developers/es/docs/checkout-bricks/how-tos/integrate-3ds)
+> Recomendamos adherirse al protocolo 3DS 2.0 para aumentar la probabilidad de aprobación de sus pagos, lo cual se puede hacer como se describe [aquí.](/developers/es/docs/checkout-bricks/how-tos/integrate-3ds)
 
 Conoce todos los campos disponibles para realizar un pago completo en las [Referencias de API](/developers/es/reference/payments/_payments/post).
