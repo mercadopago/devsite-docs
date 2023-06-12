@@ -82,6 +82,10 @@ Esta captura se realiza incluyendo la **biblioteca MercadoPago.js** en tu proyec
 </body>
 
 ```
+```bash
+npm install @mercadopago/sdk-js
+
+```
 ]]]
 
 ## Configurar credencial
@@ -193,10 +197,8 @@ $payment->payment_method_id = "clabe";
 
 $payer = new MercadoPago\Payer();
 $payer->email = $_POST['email'];
-$payer->identification = array(
-     "type" => $_POST['identificationType'],
-     "number" => $_POST['identificationNumber']
-);
+$payer->first_name = $_POST['payerFirstName']
+$payer->last_name = $_POST['payerLastName']
 $payer->entity_type = "individual";
 
 $payment->payer = $payer;
@@ -226,10 +228,8 @@ var payment_data = {
  	payer: {
  		entity_type: 'individual',
  		email: payment.email,
- 		identification: {
- 			type: payment.identificationType,
- 			number: payment.identificationNumber
- 		}
+ 		first_name: payment.payerFirstName,
+            Last_name: payment.payerLastName
  	}
 };
 
@@ -253,18 +253,13 @@ MercadoPagoConfig.setAccessToken("YOUR_ACCESS_TOKEN");
 
   PaymentClient client = new PaymentClient();
 
-  IdentificationRequest identification =
-  	IdentificationRequest.builder()
-  	.type(request.getPayer().getIdentification().getType())
-  	.number(request.getPayer().getIdentification().getNumber())
-  	.build();
-
   PaymentPayerRequest payer =
   	PaymentPayerRequest.builder()
   	.type("customer")
-  	.email(request.getPayer().getEmail())
+  	.email(request.getEmail())
+      .firstName(request.getPayerFirstName())
+      .lastName(request.getPayerLastName())
   	.entityType("individual")
-  	.identification(identification)
   	.build();
 
   PaymentCreateRequest paymentCreateRequest = PaymentCreateRequest.builder()
@@ -291,10 +286,8 @@ payment_data = {
     type: "customer",
     email: params[: email],
     entity_type: "individual",
-    identification: {
-      type: params[: identificationType],
-      number: params[: identificationNumber]
-    }
+    first_name: params[: payerFirstName]
+    last_name: params[: payerLastName]
   }
 }
 
@@ -314,16 +307,12 @@ MercadoPagoConfig.AccessToken = "ACCESS_TOKEN";
 
 var client = new PaymentClient();
 
-var identification = new IdentificationRequest() {
-  Type = request.Payer.Identification.Type,
-    Number = request.Payer.Identification.Number
-};
-
 var payer = new PaymentPayerRequest() {
     Type = "customer",
-    Email = request.Payer.Email,
+    Email = request.Email,
     EntityType = "individual",
-    Identification = identification
+    FirstName = request.PayerFirstName,
+    LastName = request.PayerLastName
 };
 
 var paymentCreateRequest = new PaymentCreateRequest() {
@@ -351,10 +340,8 @@ payment_data = {
        "type": "customer",
        "email": request.POST.get("email"),
        "entity_type": "individual",
-       "identification": {
-           "type": request.POST.get("type"), 
-           "number": request.POST.get("number")
-       }
+       "first_name": request.POST.get("first_name"),
+       "last_name": request.POST.get("last_name"),
    }
 }
  
@@ -374,10 +361,8 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
     "payer": {
         "email": "test_user_19549678@testuser.com",
         "entity_type": "individual",
-        "identification": {
-            "type": "CC",
-            "number": "76262349"
-        }
+        "First_name": "John",
+        "Last_name": "Doe"
     }
 }'
 
@@ -400,15 +385,12 @@ La respuesta mostrará el status `pendiente` hasta que el comprador realice el p
         "type": "bank_transfer",
         "data": {
             "reference_id": "6410293433784980810",
-            "external_reference_id": "1009"
+            "external_reference_id": "1009",
+            "external_resource_url": "https://www.mercadopago.com.mx/payments/51096146182/ticket?caller_id=34728475&hash=f3a8630a-f06a-48e4-b2a6-f95750af7346"
         }
     },
     "status": "pending",
     ...
-    "transaction_details": {
-        "external_resource_url": "https://www.mercadopago.com.mx/payments/51096146182/ticket?caller_id=34728475&hash=f3a8630a-f06a-48e4-b2a6-f95750af7346"
-    ...
-    }
 }
 
 ```
