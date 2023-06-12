@@ -2,6 +2,8 @@
 
 Ao realizar uma requisição de pagamento (`/checkout/preferences`), basta atribuir o ID da sua conta Mercado Pago ao campo `sponsor_id` no corpo (body) da requisição.
 
+Exemplo:
+
 ```bash
 curl --location --request POST 'https://api.mercadolibre.com/checkout/preferences' \
 --header 'Content-Type: application/json' \
@@ -63,14 +65,14 @@ curl --location --request POST 'https://api.mercadolibre.com/checkout/preference
 > Atenção!
 >
 > A informação do campo `collector_id` não é a mesma do `sponsor_id`.
-    - O `collector-id`: é o vendedor;
-    - O `sponsor-id`: é a plataforma (onde está o vendedor), como Vtex, LI, Magento, etc.
+  * O `collector-id`: é o vendedor;
+  * O `sponsor-id`: é a plataforma (onde está o vendedor), como Vtex, LI, Magento, etc.
 
 > NOTE
 >
 > Observação
 >
-> Tanto o `collector` quanto o `sponsor-id` podem ser obtidos no passo "Como obter o Sponsor ID". No entanto, são contas do Mercado Pago distintas.
+> Tanto o `collector` quanto o `sponsor-id` podem ser obtidos no passo [Como obter o Sponsor ID](/guides/integration-guide-for-partners/how-to-get-sponsor-id). No entanto, são contas do Mercado Pago distintas.
 Se você enviar a mesma informação nos dois campos, a API retornará um erro: "Invalid users involved".
 
 > Ainda tem dúvidas sobre credenciais? Acesse o material a seguir: [Onde posso encontrar as credenciais](https://www.mercadopago.com.br/developers/pt/support/20214).

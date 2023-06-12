@@ -1,6 +1,6 @@
 # Transações via Checkout Pro
 
-Após receber o seu ID referente ao `PLATFORM_ID` de sua plataforma, o mesmo poderá ser adicionado ao cabeçalho da requisição de pagamento (`/checkout/preferences`) ao criar uma preferência de pagamento junto ao Mercado Pago.
+Após receber o seu ID referente ao `PLATFORM_ID` de sua plataforma, você poderá adicioná-lo ao cabeçalho da requisição de pagamento (`/checkout/preferences`) ao criar uma preferência de pagamento junto ao Mercado Pago.
 
 Exemplo:
 

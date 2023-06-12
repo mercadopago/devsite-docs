@@ -11,4 +11,4 @@ Exemplo via header:
 ```
 
 ## Pré-requisito
-Antes de obter o seu `platform_id`, é necessário solicitar ao time de Partners e aguardar a aprovação da sua solução. Após a aprovação, o `platform_id` será criado e fornecido para que você possa atribuir o ID correspondente em sua integração.
+Antes de obter o seu `platform_id`, é necessário solicitar ao time de Partners e aguardar a aprovação da sua solução. Depois de aprovado, o `platform_id` será criado e fornecido para que você possa atribuir o ID correspondente em sua integração.

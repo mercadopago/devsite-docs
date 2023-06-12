@@ -1,6 +1,6 @@
 # Transações via Checkout Transparente
 
-Após receber o seu ID referente ao `PLATFORM_ID` de sua plataforma, o mesmo poderá ser adicionado ao **Header** da requisição de pagamento (`/v1/payments`) ao criar uma transação junto ao Mercado Pago.
+Após receber o seu ID referente ao `PLATFORM_ID` de sua plataforma, você poderá adicioná-lo ao **Header** da requisição de pagamento (`/v1/payments`) ao criar uma transação junto ao Mercado Pago.
 
 Exemplo:
 

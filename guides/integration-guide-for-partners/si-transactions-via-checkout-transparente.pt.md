@@ -2,6 +2,8 @@
 
 Ao realizar uma requisição de pagamento (`/v1/payments`), basta atribuir o ID da sua conta Mercado Pago ao campo `sponsor_id` no corpo (body) da requisição.
 
+Exemplo:
+
 ```bash
 curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
 --header 'Authorization: Bearer {{ACCESS_TOKEN}}' \

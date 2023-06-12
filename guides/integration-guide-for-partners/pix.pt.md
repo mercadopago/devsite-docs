@@ -1,6 +1,6 @@
 # Modelo de pagamento - Pix
 
-Por padrão, a data de vencimento para pagamentos via Pix é de 24 horas, mas você pode alterá-lo enviando o campo "date_of_expiration" na solicitação de criação de pagamento. É recomendado que você defina um período mínimo de 30 minutos para expiração.
+Por padrão, a data de vencimento para pagamentos via Pix é de 24 horas, mas você pode alterá-lo enviando o campo `date_of_expiration` na solicitação de criação de pagamento. É recomendado que você defina um período mínimo de 30 minutos para expiração.
 
 Para utilizar esse campo, é necessário seguir o formato de data ISO 8601: yyyy-MM-dd'T'HH:mm:ssz.
 
