@@ -8,4 +8,4 @@ Además de manejar estados de pago convencionales (`pending`, `approved` o `reje
 
 </center>
 
-El proceso de integración es el mismo que para los demás estados, sin necesidad de configuraciones adicionales. Consulte [aquí](/developers/es/docs/checkout-bricks/status-screen-brick/default-rendering) para obtener más detalles sobre el proceso de integración.
+El proceso de integración sigue la misma estructura que los demás estados. Consulte [aquí](/developers/es/docs/checkout-bricks/status-screen-brick/default-rendering) para obtener más detalles sobre el proceso.

@@ -8,4 +8,4 @@ In addition to handling conventional payment statuses (`pending`, `approved` or 
 
 </center>
 
-The integration process is the same as for the other states, with no additional configurations required. See [here](/developers/en/docs/checkout-bricks/status-screen-brick/default-rendering) for more details on the integration process.
+The integration process follows the same structure as the other states. Check out [here](/developers/en/docs/checkout-bricks/status-screen-brick/default-rendering) for more details on the process.

@@ -8,4 +8,4 @@ Além de lidar com estados convencionais de pagamentos (`pending`, `approved` ou
 
 </center>
 
-O processo de integração é o mesmo feito para os demais estados, sem configurações adicionais necessárias. Veja [aqui](/developers/pt/docs/checkout-bricks/status-screen-brick/default-rendering) mais detalhes do processo de integração.
+O processo de integração segue a mesma estrutura dos demais estados. Veja [aqui](/developers/pt/docs/checkout-bricks/status-screen-brick/default-rendering) mais detalhes do processo.
