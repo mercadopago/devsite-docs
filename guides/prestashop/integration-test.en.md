@@ -15,14 +15,14 @@ Once the initial purchase process is complete, see below how to test the integra
 
 1. Select the option **I want to pay with Mercado Pago at no additional cost**.
 2. Click on **order with mandatory payment** to be redirected to the Mercado Pago payment environment.
-3. On the checkout screen, choose to pay with a new credit card and use the [test cards](/developers/en/guides/additional-content/testing/test-cards) to make the payment. It is important not to log in to the Mercado Pago account or try to pay with cards for personal use.
+3. On the checkout screen, choose to pay with a new credit card and use the [test cards](/developers/en/guides/additional-content/your-integrations/test/cards) to make the payment. It is important not to log in to the Mercado Pago account or try to pay with cards for personal use.
 3. Add the indicated test card information (card number, CVV and expiration date).
 4. At the end of the purchase, you will be able to view, within Mercado Pago, the proof that the purchase was made and you will be redirected to the store again.
 
 ## Checkout API
 
 1. Select the option **I want to pay by credit card**.
-2. Choose to pay with a new credit card and use the [test cards](/developers/en/guides/additional-content/testing/test-cards) to make the payment. It is important not to pay with cards for personal use.
+2. Choose to pay with a new credit card and use the [test cards](/developers/en/guides/additional-content/your-integrations/test/cards) to make the payment. It is important not to pay with cards for personal use.
 3. Add the indicated test card information (card number, CVV and expiration date).
 4. Click on **order with payment required**.
 5. At the end of the purchase, it will be possible to see that the purchase has been approved.

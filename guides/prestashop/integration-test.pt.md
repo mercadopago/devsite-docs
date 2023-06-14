@@ -15,7 +15,7 @@ Feito o processo inicial de compra, veja abaixo como testar a integração de ac
 
 1. Selecione a opção **Quero pagar com Mercado Pago sem custo adicional**.
 2. Clique em **pedido com pagamento obrigatório** para ser redirecionado o ambiente de pagamento do Mercado Pago. 
-3. Na tela de checkout, escolha pagar com um novo cartão de crédito e utilize os [cartões de teste](/developers/pt/guides/additional-content/testing/test-cards) para realizar o pagamento. Importante não efetuar o login na conta do Mercado Pago ou tentar realizar o pagamento com cartões de uso pessoal. 
+3. Na tela de checkout, escolha pagar com um novo cartão de crédito e utilize os [cartões de teste](/developers/pt/guides/additional-content/your-integrations/test/cards) para realizar o pagamento. Importante não efetuar o login na conta do Mercado Pago ou tentar realizar o pagamento com cartões de uso pessoal. 
 3. Adicione as informações do cartão de teste indicado (nº do cartão, CVV e data de validade). 
 4. Ao finalizar a compra você poderá visualizar, dentro do Mercado Pago, a comprovação de que a compra foi realizada e será redirecionado à loja novamente. 
 
@@ -27,7 +27,7 @@ Feito o processo inicial de compra, veja abaixo como testar a integração de ac
 ------------
 
 1. Selecione a opção **Quero pagar com cartão de crédito**.
-2. Escolha pagar com um novo cartão de crédito e utilize os [cartões de teste](/developers/pt/guides/additional-content/testing/test-cards) para realizar o pagamento. É importante não realizar o pagamento com cartões de uso pessoal.
+2. Escolha pagar com um novo cartão de crédito e utilize os [cartões de teste](/developers/pt/guides/additional-content/your-integrations/test/cards) para realizar o pagamento. É importante não realizar o pagamento com cartões de uso pessoal.
 3. Adicione as informações do cartão de teste indicado (nº do cartão, CVV e data de validade). 
 4. Clique em **pedido com pagamento obrigatório**.
 5. Ao finalizar a compra será possível visualizar que a compra foi aprovada.

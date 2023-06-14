@@ -8,7 +8,7 @@ Con las credenciales configuradas, siga los pasos a continuación para realizar 
 
 1. Inicie la integración configurada con sus **Credenciales de prueba**.
 2. Ingrese cualquier correo electrónico como usuario pagador (recordando que debe ser diferente al correo que usas en Mercado Pago).
-4. Ingresa los datos de una de nuestras [tarjetas de prueba](/developers/es/guides/additional-content/testing/test-cards).
+4. Ingresa los datos de una de nuestras [tarjetas de prueba](/developers/es/guides/additional-content/your-integrations/test/cards).
 3. Confirma la compra.
 
 ¡Listo! Una vez que se completen estos pasos, la integración estará completa y podrá usar sus credenciales de producción para usar el Checkout Bricks.
