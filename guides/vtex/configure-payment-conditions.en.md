@@ -19,10 +19,10 @@ The configuration of payment conditions is done in the **Payment conditions** ta
 
 ------------
 ----[mla, mlm, mlb]----
-* **Installments without card:** is Mercado Pago’s financing method, the "Mercado Credits", that allows paying in installments without having a card. With this line of credit, administered by Mercado Pago, the payment is credited in full to the seller's account, while the customer can choose to pay in up to 12 fixed monthly installments, no card needed. To activate the **Buy Now Pay Latter Mercado Pago** button, you must follow these steps listed below:
+* **Installments without card:** is Mercado Pago’s financing method, the Mercado Crédito, that allows paying in installments without having a card. With this line of credit, administered by Mercado Pago, the payment is credited in full to the seller's account, while the customer can choose to pay in up to 12 fixed monthly installments, no card needed. To activate the **Buy Now Pay Later Mercado Pago** button, you must follow these steps listed below:
   * You must have created a MercadoPagoV2 gateway affiliation. If you haven't done it yet, you can learn how to do it in [this documentation](/developers/en/docs/vtex/gateway-affiliations).
   * In the VTEX administration panel, go to **Payments > Settings**.
-  * Go to the **Payment Conditions** tab, click on the "+" button and search for **BBuy Now Pay Latter Mercado Pago**.
+  * Go to the **Payment Conditions** tab, click on the "+" button and search for **BBuy Now Pay Later Mercado Pago**.
   * Name the rule to facilitate its identification and activate the payment condition in the **Status** field.
   * In **Process with affiliation**, choose MercadoPagoV2 as your affiliation.
   * Save your changes by clicking on **Save**.

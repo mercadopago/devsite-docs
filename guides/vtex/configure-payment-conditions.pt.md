@@ -19,10 +19,10 @@ A configuração das condições de pagamento é feita na aba **Condições de p
 
 ------------
 ----[mla, mlm, mlb]----
-* **Parcelamento sem cartão:** é a modalidade de financiamento do Mercado Pago, o Mercado Crédito, que oferece a opção de parcelar sem precisar de cartão. Com essa linha de crédito, administrada pelo Mercado Pago, o pagamento é creditado integralmente na conta do vendedor, podendo o cliente optar por pagar em até 12 parcelas fixas mensais e sem a necessidade de cartão. Para ativar o botão **Buy Now Pay Latter Mercado Pago**, você pode seguir os passos detalhados abaixo:
+* **Parcelamento sem cartão:** é a modalidade de financiamento do Mercado Pago, o Mercado Crédito, que oferece a opção de parcelar sem precisar de cartão. Com essa linha de crédito, administrada pelo Mercado Pago, o pagamento é creditado integralmente na conta do vendedor, podendo o cliente optar por pagar em até 12 parcelas fixas mensais e sem a necessidade de cartão. Para ativar o botão **Buy Now Pay Later Mercado Pago**, você pode seguir os passos detalhados abaixo:
   * Você deve criar uma afiliação de gateway MercadoPagoV2, se ainda não tiver uma. Como? Aqui está o [passo a passo](/developers/pt/docs/vtex/gateway-affiliations).
   * No painel administrativo da VTEX, acesse **Pagamentos** e, em seguida, **Configurações**.
-  * Vá na aba **Condições de pagamento**, clique no botão “+” e procure por **Buy Now Pay Latter Mercado Pago**.
+  * Vá na aba **Condições de pagamento**, clique no botão “+” e procure por **Buy Now Pay Later Mercado Pago**.
   * Nomeie a regra para facilitar a identificação e ative a condição de pagamento no campo **Status**.
   * Em **Processo com afiliação**, escolha MercadoPagoV2 como afiliação.
   * Clique em **Salvar** e pronto!
