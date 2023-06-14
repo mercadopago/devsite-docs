@@ -17,12 +17,14 @@ You will find all the information necessary to carry out the integration with 3D
 ---
 future_product_avaible: 
  - card_avaible: true
+ - card_icon: Pay
  - card_title: Checkout Bricks
  - card_description: A modular, secure and customizable payment solution where you control the entire experience and choose which brick and theme to use based on your website needs.
  - card_link: /developers/en/docs/checkout-bricks/how-tos/integrate-3ds
  - card_linkDescription: Saiba mais
  - card_pillText: DISPONÍVEL
  - card_avaible: true
+ - card_icon: Pay
  - card_title: Checkout API
  - card_description: A versatile solution for you to build your payment processor on your website. You control the entire experience, from basic to advanced settings.
  - card_link: /developers/en/docs/checkout-api/how-tos/integrate-3ds
