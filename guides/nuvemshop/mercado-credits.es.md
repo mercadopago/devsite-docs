@@ -21,12 +21,12 @@ Para **configurar Mercado Crédito en el checkout de tu tienda**, sigue los paso
 
 ## Configurar el medio de pago en el checkout de tu tienda
 
-1. En el Panel Administrativo de tu Tiendanube, accede a **Mis aplicaciones > Ver todas las aplicaciones**. 
-2. Localiza el plugin Mercado Pago en la lista de aplicaciones y haz clic en **Configurar aplicación**.
-3. En la lista de métodos de pago, localiza el plugin Mercado Pago y haz clic en **Editar**.
-4. Desplázate hasta la parte inferior de la página y haz clic en **Editar en el sitio web de Mercado Pago**.
+1. Entra al panel de administrador de tu **Tiendanube >> Configuración (parte inferior izquierda)**. 
+2. Al entrar a configuración, luego debes ir a **Métodos de Pago**.
+3. Localiza el plugin "Mercado Pago" y haz clic en **Editar**.
+4. Desplázate hasta la parte inferior de la página y haz clic en **Editar** en el sitio web de Mercado Pago.
 ----[mla, mlb]----
-5. En la pantalla en cuestión, activa la opción **Financiación sin tarjeta**.
+5. EEn la pantalla, activa la opción **Financiación sin tarjeta de crédito**.
 
 ¡Listo! La modalidad de financiamiento está habilitada en tu tienda.
 
