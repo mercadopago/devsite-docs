@@ -15,40 +15,12 @@ O fluxo a seguir representa de maneira simplificada como se dá o processo de au
 Você encontrará toda a informação necessária para realizar a integração com 3DS nos links a seguir, de acordo com seu tipo de integração:
 
 ----[mlb]----
-
----
-future_product_avaible: 
- - card_avaible: true
- - card_icon: Pay
- - card_title: Checkout Bricks
- - card_description: Uma solução de pagamento modular, segura e personalizável, onde você controla toda a experiência e escolhe qual brick e tema usar com base nas necessidades do seu site.
- - card_link: /developers/pt/docs/checkout-bricks/how-tos/integrate-3ds
- - card_linkDescription: Saiba mais
- - card_avaible: true
- - card_icon: Pay
- - card_title: Checkout Transparente
- - card_description: Uma solução versátil para que você construa seu processador de pagamentos no seu site. Você controla toda a experiência, de configurações básicas a avançadas.
- - card_link: /developers/pt/docs/checkout-api/how-tos/integrate-3ds
- - card_linkDescription: Saiba mais
----
+- [Checkout Bricks](/developers/pt/docs/checkout-bricks/how-tos/integrate-3ds): uma solução de pagamento modular, segura e personalizável, onde você controla toda a experiência e escolhe qual brick e tema usar com base nas necessidades do seu site.
+- [Checkout Transparente](/developers/pt/docs/checkout-api/how-tos/integrate-3ds): uma solução versátil para que você construa seu processador de pagamentos no seu site. Você controla toda a experiência, de configurações básicas a avançadas.
 
 ------------
 ----[mla, mlm, mco, mpe, mlc]---- 
-
----
-future_product_avaible: 
- - card_avaible: true
- - card_icon: Pay
- - card_title: Checkout Bricks
- - card_description: Uma solução de pagamento modular, segura e personalizável, onde você controla toda a experiência e escolhe qual brick e tema usar com base nas necessidades do seu site.
- - card_link: /developers/pt/docs/checkout-bricks/how-tos/integrate-3ds
- - card_linkDescription: Saiba mais
- - card_avaible: true
- - card_icon: Pay
- - card_title: Checkout API
- - card_description: Uma solução versátil para que você construa seu processador de pagamentos no seu site. Você controla toda a experiência, de configurações básicas a avançadas.
- - card_link: /developers/pt/docs/checkout-api/how-tos/integrate-3ds
- - card_linkDescription: Saiba mais
----
+- [Checkout Bricks](/developers/pt/docs/checkout-bricks/how-tos/integrate-3ds): uma solução de pagamento modular, segura e personalizável, onde você controla toda a experiência e escolhe qual brick e tema usar com base nas necessidades do seu site.
+- [Checkout API](/developers/pt/docs/checkout-api/how-tos/integrate-3ds): uma solução versátil para que você construa seu processador de pagamentos no seu site. Você controla toda a experiência, de configurações básicas a avançadas.
 
 ------------
