@@ -125,7 +125,7 @@ With the **MercadoPago.js library** included and the **credentials configured**.
       </div>
     <div>
       <div>
-        <input type="hidden" name="transactionAmount" id="transactionAmount" value="100">
+        <input type="hidden" name="transactionAmount" id="transactionAmount" value="5000">
         <input type="hidden" name="description" id="description" value="Nome do Produto">
         <br>
         <button type="submit">Pay</button>
@@ -233,7 +233,7 @@ var payment_data = {
  		entity_type: 'individual',
  		email: payment.email,
  		first_name: payment.payerFirstName,
-            Last_name: payment.payerLastName
+    last_name: payment.payerLastName
  	}
 };
 
@@ -261,8 +261,8 @@ MercadoPagoConfig.setAccessToken("YOUR_ACCESS_TOKEN");
   	PaymentPayerRequest.builder()
   	.type("customer")
   	.email(request.getEmail())
-      .firstName(request.getPayerFirstName())
-      .lastName(request.getPayerLastName())
+    .firstName(request.getPayerFirstName())
+    .lastName(request.getPayerLastName())
   	.entityType("individual")
   	.build();
 
@@ -365,8 +365,8 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
     "payer": {
         "email": "test_user_19549678@testuser.com",
         "entity_type": "individual",
-        "First_name": "John",
-        "Last_name": "Doe"
+        "first_name": "John",
+        "last_name": "Doe"
     }
 }'
 
@@ -413,7 +413,7 @@ In order for the user to make the transfer, direct them directly to the URL avai
 
 [[[
 ```html
-<a href="https://www.mercadopago.com.co/payments/123456789/ticket?caller_id=123456&hash=123e4567-e89b-12d3-a456-426655440000" target="_blank">Pagar con Transferencias SPEI</a>
+<a href="https://www.mercadopago.com.mx/payments/51096146182/ticket?caller_id=34728475&hash=f3a8630a-f06a-48e4-b2a6-f95750af7346" target="_blank">Pay with SPEI Transfers</a>
 
 ```
 ]]]
