@@ -21,7 +21,7 @@ Para criar um cliente e cartão, utilize um dos códigos abaixo.
   $card->token = "9b2d63e00d66a8c721607214cedaecda";
   $card->customer_id = $customer->id();
   $card->issuer = array("id" => "3245612");
-  $card->payment_method = array("id" => "debit_card");
+  $card->payment_method = array("id" => "visa");
   $card->save();
 
 ?>
@@ -42,7 +42,7 @@ mercadopago.customers.create(customer_data).then(function (customer) {
     "token": "9b2d63e00d66a8c721607214cedaecda",
     "customer_id": customer.id,
     "issuer_id": "23",
-    "payment_method_id": "debit_card"
+    "payment_method_id": "visa"
   }
 
   mercadopago.card.create(card_data).then(function (card) {
@@ -92,7 +92,7 @@ customer = customer_response[:response]
 card_request = {
   token: '9b2d63e00d66a8c721607214cedaecda',
   issuer_id: '3245612',
-  payment_method_id: 'debit_card'
+  payment_method_id: 'visa'
 }
 card_response = sdk.card.create(customer['id'], card_request)
 card = card_response[:response]
@@ -130,7 +130,7 @@ customer = customer_response["response"]
 card_data = {
   "token": "9b2d63e00d66a8c721607214cedaecda",
   "issuer_id": "3245612",
-  "payment_method_id": "debit_card"
+  "payment_method_id": "visa"
 }
 card_response = sdk.card().create(customer["id"], card_data)
 card = card_response["response"]
@@ -142,7 +142,7 @@ curl -X POST \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
   'https://api.mercadopago.com/v1/customers/CUSTOMER_ID/cards' \
-  -d '{"token": "9b2d63e00d66a8c721607214cedaecda", "issuer_id": "3245612", "payment_method_id": "debit_card"}'
+  -d '{"token": "9b2d63e00d66a8c721607214cedaecda", "issuer_id": "3245612", "payment_method_id": "visa"}'
 
 ```
 ]]]
@@ -171,15 +171,6 @@ A resposta trará o seguinte resultado.
 
 > WARNING
 >
-> Importante
+> Atenção
 >
 > Caso a resposta da requisição retorne um erro do tipo `invalid parameter` com código HTTP 400, revise os parâmetros `payment_method_id` e `issuer_id` e garanta que os valores tenham sido inseridos de maneira correta. Além disso, ao utilizar usuários de teste, tenha em mente o seguinte formato para o e-mail do cliente: `test_payer_[0-9]{1,10}@testuser.com` Por exemplo: `test_payer_12345@testuser.com`.
-
-
-> NEXT_STEP_CARD_PT
->
-> Modificar cliente
->
-> Saiba como alterar dados de um cliente previamente criado
->
-> [Modificar cliente](/developers/pt/docs/checkout-api/cards-and-customers-management/modify-customer)

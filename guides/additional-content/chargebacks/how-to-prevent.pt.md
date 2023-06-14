@@ -2,7 +2,7 @@
 
 Não é possível evitar todas as contestações, porém, você pode diminuir a probabilidade de que um pagamento vire uma contestação seguindo as recomendações a seguir:
 
-1. [Mantenha todos os dados atualizados](https://www.mercadopago[FAKE][URL][DOMAIN]/business#from-section=menu) na sua conta para que seus compradores te reconheçam.
+1. **Mantenha todos os dados atualizados na sua conta** para que seus compradores te reconheçam.
    
 2. Adicione o código de segurança do Mercado Pago na sua página, substituindo o valor de `view` pelo nome da seção na qual deseja adicioná-lo (Ex.: home, search, item).
 ```html
