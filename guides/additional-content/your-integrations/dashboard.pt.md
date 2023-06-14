@@ -32,8 +32,8 @@ Caso você não esteja usando uma plataforma de comércio eletrônico, selecione
 ![Configuração](/images/dashboard/dashboard_02_pt.png)
 
 5. Marque a caixa de seleção para autorizar o uso dos seus dados pessoais conforme a [Declaração de Privacidade](https://www.mercadopago.com.br/privacidade) e certificar que sua conta usa as ferramentas do Mercado Pago de acordo com os [Termos e condições](https://www.mercadopago.com.br/developers/pt/docs/resources/legal/terms-and-conditions).
-6. Marque a caixa de seleção "Não sou um robô".
-7. Clique em "Criar aplicação".
+6. Marque a caixa de seleção **Não sou um robô**.
+7. Clique em **Criar aplicação**.
 
 ![Finalizar](/images/dashboard/dashboard_03_pt.png)
 

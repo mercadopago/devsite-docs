@@ -31,9 +31,9 @@ Si no estás utilizando una plataforma de comercio electrónico, marca **No** y 
 
 ![Pagos](/images/dashboard/dashboard_02_es.png)
 
-5. Marca la casilla para autorizar el uso de tus datos personales de acuerdo con la [Declaración de Privacidad](https://www.mercadopago.com.br/privacidade) y certificar que tu cuenta utiliza las herramientas de Mercado Pago de acuerdo con los [Términos y Condiciones](https://www.mercadopago.com.br/developers/pt/docs/resources/legal/terms-and-conditions).
-6. Marca la casilla de selección "No soy un robot".
-7. Haz clic en "Crear aplicación".
+5. Marca la casilla para autorizar el uso de tus datos personales de acuerdo con la [Declaración de Privacidad](https://www.mercadopago.com.br/privacidade) y certificar que tu cuenta utiliza las herramientas de Mercado Pago de acuerdo con los [Términos y Condiciones](/developers/es/docs/resources/legal/terms-and-conditions).
+6. Marca la casilla de selección **No soy un robot**.
+7. Haz clic en **Crear aplicación**.
 
 ![Crear aplicación](/images/dashboard/dashboard_03_es.png)
 
