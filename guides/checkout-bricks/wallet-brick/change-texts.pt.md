@@ -25,7 +25,7 @@ Confira a seguir os textos disponíveis para alteração e um exemplo de código
 | Chave | Opções disponíveis | Padrão |
 |--- |--- | --- |
 | action | pay, buy | pay |
-| valueProp | practicality, convenience, security_details, security_safety, smart_option | security_safety |
+| valueProp | practicality, convenience_all, security_details, security_safety, smart_option, convenience_credits | security_safety |
 
 Veja quais são os textos relacionados a cada opção:
 
@@ -34,10 +34,17 @@ Veja quais são os textos relacionados a cada opção:
 |action |pay | Pagar com Mercado Pago |
 |action |buy | Comprar com Mercado Pago |
 |valueProp |practicality | Use cartões salvos ou seu saldo em conta |
-|valueProp |convenience | Parcelamento com ou sem cartão |
+|valueProp |convenience_all | Parcelamento com ou sem cartão |
 |valueProp |security_details | Proteção para seus dados |
 |valueProp |security_safety | Pague com segurança |
-|valueProp |smart_option| O texto será escolhido automaticamente pelo Wallet Brick para aumentar as chances de venda de acordo com as características da compra. | 
+|valueProp |smart_option| O texto será escolhido automaticamente pelo Wallet Brick para aumentar as chances de venda de acordo com as características da compra. |
+|valueProp |convenience_credits| **WAITING UX** |
+
+> NOTE
+>
+> Importante
+>
+> Para utilizar a Value Prop de `convenience_credits`, é preciso que o Brick seja [inicializado com uma preferência](/developers/pt/docs/checkout-bricks/wallet-brick/additional-customization/preferences) e que a preferência tenha o `purpose` de [onboarding_credits.](/developers/pt/docs/checkout-bricks/wallet-brick/additional-customization/preference-startup)
 
 ------------
 ----[mlu, mlc, mco, mpe]----
