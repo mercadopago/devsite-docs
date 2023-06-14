@@ -25,7 +25,7 @@ Consulte a continuación los textos disponibles para modificar y un código de e
 | Clave | Opciones disponibles | Predeterminado |
 |--- |--- | --- |
 | action | pay, buy | pay |
-| valueProp | practicality, convenience, security_details, security_safety | security_safety |
+| valueProp | practicality, convenience, security_details, security_safety, smart_option | security_safety |
 
 Consulte los textos relacionados con cada opción:
 
@@ -37,13 +37,14 @@ Consulte los textos relacionados con cada opción:
 |valueProp |convenience | Cuotas con o sin tarjeta |
 |valueProp |security_details | Todos tus datos protegidos |
 |valueProp |security_safety | Pagá de forma segura |
+|valueProp |smart_option| El texto será elegido automáticamente por Wallet Brick para aumentar las posibilidades de venta según las características de la compra. |
 
 ------------
 ----[mlm]----
 | Clave | Opciones disponibles | Predeterminado |
 |--- |--- | --- |
 | action | pay, buy | pay |
-| valueProp | practicality, convenience, security_details, security_safety | security_safety |
+| valueProp | practicality, convenience, security_details, security_safety, smart_option | security_safety |
 
 Consulte los textos relacionados con cada opción:
 
@@ -55,13 +56,14 @@ Consulte los textos relacionados con cada opción:
 |valueProp |convenience | Meses con o sin tarjeta de crédito |
 |valueProp |security_details | Todos tus datos protegidos |
 |valueProp |security_safety | Paga de forma segura |
+|valueProp |smart_option| El texto será elegido automáticamente por Wallet Brick para aumentar las posibilidades de venta según las características de la compra. |
 
 ------------
 ----[mlu, mlc, mco, mpe]----
 | Clave | Opciones disponibles | Predeterminado |
 |--- |--- | --- |
 | action | pay, buy | pay |
-| valueProp | practicality, security_details, security_safety | security_safety |
+| valueProp | practicality, security_details, security_safety, smart_option | security_safety |
 
 Consulte los textos relacionados con cada opción:
 
@@ -72,6 +74,7 @@ Consulte los textos relacionados con cada opción:
 |valueProp |practicality | Usa tarjetas guardadas o dinero en cuenta |
 |valueProp |security_details | Todos tus datos protegidos |
 |valueProp |security_safety | Paga de forma segura |
+|valueProp |smart_option| El texto será elegido automáticamente por Wallet Brick para aumentar las posibilidades de venta según las características de la compra. |
 
 ------------
 
