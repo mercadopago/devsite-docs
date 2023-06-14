@@ -4,8 +4,8 @@ Para **evitar que un pago legítimo sea rechazado** por no cumplir con las valid
 
 Puedes ver en detalle nuestras **recomendaciones para mejorar tu aprobación** a continuación.
 
-
 ## Obtén y envía el Device ID
+
 El **Device ID** es una información importante para lograr una mejor seguridad y, en consecuencia, una mejor tasa de aprobación de pagos. Representa un **identificador único para el dispositivo de cada comprador** en el momento de la compra.
 
 Si un comprador frecuente hace una compra desde un dispositivo diferente al habitual, esto podría representar un comportamiento atípico. Aunque puede no ser necesariamente un fraude, el Device ID nos ayuda a refinar la evaluación y evitar el rechazo de pagos legítimos.
@@ -66,7 +66,6 @@ X-meli-session-id: device_id
 > Atención
 >
 > Recuerda reemplazar `device_id` con el nombre de la variable que contiene su valor de ID del dispositivo.
-
 
 ## Implementa el Device ID en tu aplicación móvil nativa
 
@@ -131,8 +130,8 @@ Te recomendamos iniciarlo en la clase MainApplication.
 import com.mercadolibre.android.device.sdk.DeviceSDK;
 DeviceSDK.getInstance().execute(this);
 ```
-
 ]]]
+
 ### 3. Captura la información
 
 Ejecuta alguna de estas funciones para obtener la información en el formato que prefieras.

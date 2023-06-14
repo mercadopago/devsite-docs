@@ -22,7 +22,6 @@ If a customer makes a purchase on a different device than usual, this may repres
 <script src="https://www.mercadopago.com/v2/security.js" view="home"></script>
 ```
 
-
 > NOTE
 >
 > Important
