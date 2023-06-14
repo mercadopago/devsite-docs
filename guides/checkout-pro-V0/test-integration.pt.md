@@ -19,7 +19,7 @@ Gere uma preferência com as [credenciais](/developers/pt/docs/checkout-pro/addi
 Ao abrir o checkout criado com os dados do seu usuário vendedor:
 
 1. Selecione `Cartão` como meio de pagamento.
-2. Insira os dados de um [cartão de teste](/developers/pt/docs/checkout-pro/additional-content/test-cards).
+2. Insira os dados de um [cartão de teste](/developers/pt/docs/checkout-pro/additional-content/your-integrations/test/cards).
 3. Informe o e-mail desejado.
 
 #### Comprando como usuário cadastrado
@@ -28,7 +28,7 @@ Ao abrir o checkout criado com os dados do seu usuário vendedor:
 
 1. Acesse uma conta Mercado Pago usando o seu usuário de teste comprador.
 2. Selecione `Cartão` como meio de pagamento.
-3. Selecione um dos cartões previamente salvos ou insira os dados de um [cartão de teste](/developers/pt/docs/checkout-pro/additional-content/test-cards).
+3. Selecione um dos cartões previamente salvos ou insira os dados de um [cartão de teste](/developers/pt/docs/checkout-pro/additional-content/your-integrations/test/cards).
 
 >WARNING
 >

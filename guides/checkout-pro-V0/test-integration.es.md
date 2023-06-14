@@ -19,7 +19,7 @@ Genera una preferencia con las [credenciales](/developers/es/docs/checkout-pro/a
 Al abrir el checkout creado con los datos de tu usuario vendedor:
 
 1. Selecciona `Tarjeta` como medio de pago.
-2. Ingresa los datos de una [tarjeta de prueba](/developers/es/docs/checkout-pro/additional-content/test-cards).
+2. Ingresa los datos de una [tarjeta de prueba](/developers/es/docs/checkout-pro/additional-content/your-integrations/test/cards).
 3. Completa el e-mail deseado.
 
 #### Comprar como usuario registrado 
@@ -28,7 +28,7 @@ Al abrir el checkout creado con los datos de tu usuario vendedor:
 
 1. Inicia sesión en una cuenta Mercado Pago con el usuario de prueba comprador.
 2. Selecciona `Tarjeta` como medio de pago.
-3. Elige una tarjeta guardada o ingresa los datos de una [tarjeta de prueba](/developers/es/docs/checkout-pro/additional-content/test-cards).
+3. Elige una tarjeta guardada o ingresa los datos de una [tarjeta de prueba](/developers/es/docs/checkout-pro/additional-content/your-integrations/test/cards).
 
 
 >WARNING

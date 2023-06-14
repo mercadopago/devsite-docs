@@ -16,7 +16,7 @@ Sigue los pasos descriptos en esta documentación para configurar el plugin de M
 >
 > Importante
 >
-> Para realizar ventas reales o probar la tienda, es necesario tener a mano las credenciales de producción y/o prueba. Si aún no has creado tus credenciales, accede a la documentación [Credenciales](/developers/es/guides/additional-content/credentials/credentials) y aprende cómo crearlas antes de seguir con los siguientes pasos.
+> Para realizar ventas reales o probar la tienda, es necesario tener a mano las credenciales de producción y/o prueba. Si aún no has creado tus credenciales, accede a la documentación [Credenciales](/developers/es/guides/additional-content/your-integrations/credentials) y aprende cómo crearlas antes de seguir con los siguientes pasos.
 
 
 ## Integración con Mercado Pago

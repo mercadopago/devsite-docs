@@ -19,7 +19,7 @@ Generate a preference with the [credentials](/developers/en/docs/checkout-pro/ad
 When opening the checkout created with the data of your seller user:
 
 1. Select `Card` as the payment method.
-2. Enter the details of a [test card](/developers/en/docs/checkout-pro/additional-content/test-cards).
+2. Enter the details of a [test card](/developers/en/docs/checkout-pro/additional-content/your-integrations/test/cards).
 3. Fill in the desired email.
 
 #### Buy as a registered user
@@ -28,7 +28,7 @@ When opening the checkout created with the data of your seller user:
 
 1. Log in to a Mercado Pago account with your buyer test user.
 2. Select `Card` as the payment method.
-3. Choose a pre saved card or enter the details of a new [test card](/developers/en/docs/checkout-pro/additional-content/test-cards).
+3. Choose a pre saved card or enter the details of a new [test card](/developers/en/docs/checkout-pro/additional-content/your-integrations/test/cards).
 
 >WARNING
 >

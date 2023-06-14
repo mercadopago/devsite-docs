@@ -17,7 +17,7 @@ Siga os passos descritos nesta documentação para configurar o plugin do Mercad
 >
 > Importante
 >
-> Para realizar vendas reais ou testar a loja, é preciso ter em mãos as credenciais de produção e/ou teste. Caso ainda não tenha criado suas credenciais, acesse a documentação [Credenciais](/developers/pt/guides/additional-content/credentials/credentials) e saiba como criá-las antes de seguir para as próximas etapas.
+> Para realizar vendas reais ou testar a loja, é preciso ter em mãos as credenciais de produção e/ou teste. Caso ainda não tenha criado suas credenciais, acesse a documentação [Credenciais](/developers/pt/guides/additional-content/your-integrations/credentials) e saiba como criá-las antes de seguir para as próximas etapas.
 
 
 ## Integração com o Mercado Pago
