@@ -583,4 +583,4 @@ We recommend using [response handling](/developers/en/docs/checkout-api/response
 
 Finally, you always need to be notified of new payments and status updates.  For example, if they were approved, rejected, or are pending.
 
-[Configure webhook notifications](/developers/en/guides/notifications/webhooks/webhooks) or [IPN notifications](/developers/en/guides/checkout-api/additional-content/notifications/ipn/introduction).
+[Configure webhook notifications](/developers/en/guides/notifications/webhooks/webhooks) or [IPN notifications](/developers/en/guides/checkout-api/additional-content/your-integrations/notifications/ipn).

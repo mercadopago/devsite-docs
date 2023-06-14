@@ -23,7 +23,7 @@ Instalar el Checkout Pro consta de dos pasos:
 >
 > &nbsp;1. Genera tu preferencia
 
-Suma la [SDK de Mercado Pago](/developers/es/docs/checkout-pro/requirements#bookmark_pré_requisitos#bookmark_requisitos_previos) y las [credenciales](/developers/es/docs/checkout-pro/additional-content/credentials) necesarias en tu proyecto para habilitar el uso de preferencias:
+Suma la [SDK de Mercado Pago](/developers/es/docs/checkout-pro/requirements#bookmark_pré_requisitos#bookmark_requisitos_previos) y las [credenciales](/developers/es/docs/checkout-pro/additional-content/your-integrations/credentials) necesarias en tu proyecto para habilitar el uso de preferencias:
 
 [[[
 ```php

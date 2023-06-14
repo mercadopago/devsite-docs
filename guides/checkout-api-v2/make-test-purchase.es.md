@@ -2,7 +2,7 @@
 
 La etapa de prueba permite analizar si la integración se realizó correctamente y si los pagos se están procesando sin errores, evitando que aparezcan errores al poner el checkout a disposición de los compradores finales.
 
-Para realizar una compra de prueba, debe usar las **credenciales de prueba** de su **usuario de producción**. Para obtenerlos, vaya a **Dashboard > Su aplicación > Credenciales de prueba** y copie la información disponible.
+Para realizar una compra de prueba, debe usar las **credenciales de prueba** de su **usuario de producción**. Para obtenerlos, vaya a **Panel del desarrollador > Su aplicación > Credenciales de prueba** y copie la información disponible.
 
 
 Con las credenciales configuradas, siga los pasos a continuación para realizar la compra de prueba.

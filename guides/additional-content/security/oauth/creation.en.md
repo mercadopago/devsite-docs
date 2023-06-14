@@ -22,13 +22,13 @@ To generate the authorization code, the following requirements must be met.
 >
 > Remember that you will use sensitive information from your sellers. Make sure you store it safely. Do not use it in the authentication URL and manage the entire process only from your server.
  
-1. Edit your application so that it contains your Redirect URL. See [Edit Application](/developers/en/guides/additional-content/dashboard/applications).
+1. Edit your application so that it contains your Redirect URL. See [Edit Application](/developers/en/guides/additional-content/your-integrations/application-details).
 2. Send the authentication URL to the seller whose account you want to link to yours with the following fields:
 
     |Description|URL| 
     |---|---|
     | Authentication URL | https://auth.mercadopago.com/authorization?client_id=APP_ID&response_type=code&platform_id=mp&state=RANDOM_ID&redirect_uri=https://www.redirect-url.com |
-     * **client_id**: replace the "APP_ID" value with your application ID. Check [Application ID](/developers/en/guides/additional-content/dashboard/applications).
+     * **client_id**: replace the "APP_ID" value with your application ID. Check [Application ID](/developers/en/guides/additional-content/your-integrations/application-details).
      * **state**: replace the "RANDOM_ID" value with an identifier that is unique for each attempt and does not include sensitive information so that you can identify who the received code is from.
      * **redirect_uri**: add the reported URL in the Redirect URL field of your application.
      <br/>

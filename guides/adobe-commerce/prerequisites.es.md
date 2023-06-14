@@ -12,7 +12,7 @@ Para utilizar la integración de Mercado Pago con Adobe Commerce (Magento) en tu
 
 | Requisitos | Descripción | Especificaciones |
 | --- | --- | --- |
-| Aplicación | Las aplicaciones son las diversas integraciones contenidas en una o varias tiendas. Puedes crear una aplicación para cada solución que implementes a fin de tener todo organizado y mantener un control que facilite la gestión. Consulta [Dashboard](/developers/es/guides/additional-content/your-integrations/introduction) para obtener más información sobre cómo crear una aplicación. | N/A |
+| Aplicación | Las aplicaciones son las diversas integraciones contenidas en una o varias tiendas. Puedes crear una aplicación para cada solución que implementes a fin de tener todo organizado y mantener un control que facilite la gestión. Consulta [Tus integraciones](/developers/es/guides/additional-content/your-integrations/introduction) para obtener más información sobre cómo crear una aplicación. | N/A |
 | Ambiente | Servicio de alojamiento | LAMP (Linux, Apache, MySQL y PHP) <br/> Pila LNMP | 
 | Base de datos | Conjuntos de archivos relacionados entre sí con registros sobre personas, lugares o cosas. | MySQL 5.6 (MariaDB y Percona) |
 | Configuración adicional | Ajustes recomendados para un mejor desempeño y correcto funcionamiento de Magento 2 y el módulo de Mercado Pago. | Mínimo 2 GB de RAM |

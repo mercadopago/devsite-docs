@@ -11,7 +11,7 @@ Las credenciales son las **claves que te proporcionamos para que puedas configur
 
 Para poder encontrarlas, ve la [sección de Credenciales]([FAKER][CREDENTIALS][URL]).
 
-> ¿Tienes dudas sobre credenciales? Lee [Credenciales](/developers/es/guides/additional-content/credentials/credentials) para obtener más información.
+> ¿Tienes dudas sobre credenciales? Lee [Credenciales](/developers/es/guides/additional-content/your-integrations/credentials) para obtener más información.
 
 ## Utiliza nuestras librerías siempre
 Te recomendamos usar las librerías oficiales para tu integración. Esto permite cuidar los datos sensibles de tus clientes, cumplir con los estándares de seguridad requeridos y estar siempre actualizado.

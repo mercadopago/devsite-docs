@@ -46,4 +46,4 @@ To define a pro rata for subscriptions payments, send a POST to the [/preapprova
 >
 > Check that the integration was done correctly and that the subscription acquisition is working without errors.
 >
-> [Create test user](/developers/en/docs/subscriptions/integration-test/create-test-user)
+> [Create test user](/developers/en/docs/subscriptions/additional-content/your-integrations/test/accounts)

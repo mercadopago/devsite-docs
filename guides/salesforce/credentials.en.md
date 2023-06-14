@@ -1,6 +1,6 @@
 # Fill in the credentials
 
-To receive payments with Mercado Pago, you must first have the credentials. You can check your credentials in the [Dashboard](/developers/panel/app). If you want to know more about Mercado Pago credentials, go to [this documentation](/developers/en/docs/salesforce-commerce-cloud/additional-content/credentials).
+To receive payments with Mercado Pago, you must first have the credentials. You can check your credentials in the [Dashboard](/developers/panel/app). If you want to know more about Mercado Pago credentials, go to [this documentation](/developers/en/docs/salesforce-commerce-cloud/additional-content/your-integrations/credentials).
 
 Follow these steps to set up credentials.
 

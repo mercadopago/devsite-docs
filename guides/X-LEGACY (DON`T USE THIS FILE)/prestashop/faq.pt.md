@@ -17,7 +17,7 @@ Para instalar o plugin de forma manual, siga os passos abaixo:
  
 ### Como validar as notificações?
  
-No plugin da PrestaShop são recebidas apenas notificações do tipo IPN. Para mais informações, [clique aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/notifications/ipn/introduction).
+No plugin da PrestaShop são recebidas apenas notificações do tipo IPN. Para mais informações, [clique aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/your-integrations/notifications/ipn).
  
 ### O plugin faz conversão de moeda?
  

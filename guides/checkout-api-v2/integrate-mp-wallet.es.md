@@ -193,7 +193,7 @@ npm install @mercadopago/sdk-js
 ```
 ]]]
 
-Luego, inicializa la integración al definir tu [clave pública](/developers/es/docs/checkout-api/additional-content/credentials) usando el siguiente código.
+Luego, inicializa la integración al definir tu [clave pública](/developers/es/docs/checkout-api/additional-content/your-integrations/credentials) usando el siguiente código.
 
 [[[
 ```html
@@ -240,4 +240,4 @@ mp.bricks().create("wallet", "wallet_container", {
 ```
 ]]]
 
-Al crear un pago es posible recibir 3 estados diferentes: `Pendiente`, `Rechazado` y `Aprobado`. Para mantenerse al día con las actualizaciones, debe configurar su sistema para recibir notificaciones de pago y otras actualizaciones de estado. Consulte [Notificaciones](/developers/es/docs/checkout-api/additional-content/notifications/introduction) para obtener más detalles.
+Al crear un pago es posible recibir 3 estados diferentes: `Pendiente`, `Rechazado` y `Aprobado`. Para mantenerse al día con las actualizaciones, debe configurar su sistema para recibir notificaciones de pago y otras actualizaciones de estado. Consulte [Notificaciones](/developers/es/docs/checkout-api/additional-content/your-integrations/notifications) para obtener más detalles.

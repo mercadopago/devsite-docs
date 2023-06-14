@@ -35,7 +35,7 @@ Renew your credentials in a simple way by following these steps:
 
 1. Go to [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app).
 2. Access the application whose credentials you want to renew.
-3. Select Production Credentials.
+3. Select **Production credentials** > **Share my credentials**..
 4. Once there, you can renew both the Access Token and the Client Secret. To do so, click **More Options > Renew**.
 
 > WARNING 

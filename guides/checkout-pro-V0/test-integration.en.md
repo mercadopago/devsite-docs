@@ -10,7 +10,7 @@
 
 ### 1. Configure the checkout with the information of your selling user
 
-Generate a preference with the [credentials](/developers/en/docs/checkout-pro/additional-content/credentials) of the test user that you want to use as a seller.
+Generate a preference with the [credentials](/developers/en/docs/checkout-pro/additional-content/your-integrations/credentials) of the test user that you want to use as a seller.
 
 ### 2. Make a payment with your buyer user
 
@@ -44,7 +44,7 @@ When opening the checkout created with the data of your seller user:
 
 ## Receive payments
 
-To start charging, you must [activate your credentials](/developers/en/docs/checkout-pro/additional-content/credentials).
+To start charging, you must [activate your credentials](/developers/en/docs/checkout-pro/additional-content/your-integrations/credentials).
 
 Before activating them, verify if the credentials used in your integration are the same as those of the account responsible for receiving the money from sales.
 

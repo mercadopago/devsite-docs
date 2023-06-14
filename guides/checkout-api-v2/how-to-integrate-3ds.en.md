@@ -287,7 +287,7 @@ See the section below for more details on how to check the status of each transa
 
 To find out the result of each transaction, there are three options:
 
-* **Notifications**: A notification of the payment status change will be received through Webhooks and the buyer must be redirected to a screen indicating that the transaction was successful. Check the [Webhooks](/developers/en/docs/checkout-api/additional-content/notifications/webhooks)  section and learn how to set it up.
+* **Notifications**: A notification of the payment status change will be received through Webhooks and the buyer must be redirected to a screen indicating that the transaction was successful. Check the [Webhooks](/developers/en/docs/checkout-api/additional-content/your-integrations/notifications/webhooks)  section and learn how to set it up.
 * **Payments API**: It will be necessary to make a [Payments](developers/en/reference/payments/_payments/post) pooling and if the status changes, redirect the buyer to a confirmation screen.
 * **Treat the iframe event (recommended)**: Keep in mind that the event only indicates that the Challenge has ended and not that the payment has reached a final status, as the update is not immediate and may take a few moments. Make a request to [Payments](/developers/en/reference/payments/_payments/post) and if the status changes, redirect the buyer to a screen indicating that the transaction was successful.
 
