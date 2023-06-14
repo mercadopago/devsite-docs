@@ -4,7 +4,7 @@ As aplicações são as diferentes integrações contidas em uma ou mais lojas. 
  
 Cada aplicação possui um conjunto de credenciais e a possibilidade de configurar suas próprias notificações. Cada card representa uma aplicação criada e exibe o **nome**, a **descrição**, o **ID da aplicação** e um **botão que permite gerenciar a aplicação**.
 
-> Por padrão a tela exibe apenas 3 aplicações criadas. Para visualizar as outras aplicaçÕes, clique em **Ver todas as aplicações**.
+> Por padrão a tela exibe apenas 3 aplicações criadas. Para visualizar as outras aplicações, clique em **Ver todas as aplicações**.
  
 ## Criar nova aplicação
  
