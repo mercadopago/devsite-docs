@@ -7,7 +7,7 @@ Para configurar Pix Cobrança, é importante atender aos requisitos e ter em mã
 | Requisito  | Descrição  |
 | --- | --- |
 | Conta Mercado Pago  | Para configurar Pix Cobrança, é preciso uma conta de vendedor no Mercado Pago. Caso não tenha, clique aqui para criar.  |
-| Aplicação  | As aplicações são as diferentes integrações contidas em uma ou mais lojas. Você pode criar uma aplicação para cada solução que implementar, a fim de ter tudo organizado e manter um controle que facilite a gestão. Veja [Dashboard](/developers/pt/docs/pix-payments/additional-content/dashboard/introduction) para mais informações sobre como criar uma aplicação.  |
+| Aplicação  | As aplicações são as diferentes integrações contidas em uma ou mais lojas. Você pode criar uma aplicação para cada solução que implementar, a fim de ter tudo organizado e manter um controle que facilite a gestão. Veja [Dashboard](/developers/pt/docs/pix-payments/additional-content/your-integrations/introduction) para mais informações sobre como criar uma aplicação.  |
 | Certificado de transação  | Criar e cadastrar certificado de transação conforme seção [Criar e cadastrar certificado de transação](/developers/pt/docs/pix-payments/integration-configuration/certificate-creation).  |
 
 ### Conceitos

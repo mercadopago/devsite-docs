@@ -7,10 +7,10 @@ Tenha em mãos os principais termos técnicos do fluxo da integração com o Che
 | Termo | Descrição |
 | --- | --- |
 | Preferência (`preference`) | São as **informações do produto ou serviço que você quer oferecer.** Entre os atributos mais importantes de uma preferência estão a descrição, o valor e os itens. Ao gerá-la, você obtém uma URL para iniciar o fluxo de pagamento. |
-| Credenciais (`credentials`) | Suas credenciais são as **chaves únicas que fornecemos para que você possa configurar as suas integrações.** Existem dois tipos de credenciais: Public key e Access Token. <br/><br/>**Public key é a chave pública da aplicação** para saber os meios de pagamento e criptografar os dados do cartão, por exemplo. Você deve usá-la somente para as suas integrações.<br/><br/>**Access token é a chave privada da aplicação** para gerar pagamentos. Você deve usá-la somente para suas integrações.<br/><br/>Para encontrá-las, confira a [seção de Credenciais](/developers/pt/docs/checkout-pro/additional-content/credentials) no seu [Dashboard](/developers/pt/docs/checkout-pro/additional-content/dashboard/introduction) e selecione as produtivas. |
+| Credenciais (`credentials`) | Suas credenciais são as **chaves únicas que fornecemos para que você possa configurar as suas integrações.** Existem dois tipos de credenciais: Public key e Access Token. <br/><br/>**Public key é a chave pública da aplicação** para saber os meios de pagamento e criptografar os dados do cartão, por exemplo. Você deve usá-la somente para as suas integrações.<br/><br/>**Access token é a chave privada da aplicação** para gerar pagamentos. Você deve usá-la somente para suas integrações.<br/><br/>Para encontrá-las, confira a [seção de Credenciais](/developers/pt/docs/checkout-pro/additional-content/credentials) no seu [Dashboard](/developers/pt/docs/checkout-pro/additional-content/your-integrations/introduction) e selecione as produtivas. |
 | Ponto de inicio (`init_point`) | É a **URL obtida na hora de gerar uma preferência** e que dá início ao fluxo de pagamento do Checkout Pro. |
 | Item (`item`) | Faz referência ao **produto ou serviço que se quer oferecer**. Pode ser um ou uma lista. |
-| Aplicação (`application`) | As aplicações são usadas para processar os pagamentos do vendedor. **Cada aplicação identifica uma integração específica**, pois cada uma possui credenciais próprias. Uma conta do Mercado Pago pode ter diversas aplicações.<br/><br/>Você pode encontrar as informações de cada uma na seção de [Credenciais](/developers/pt/docs/checkout-pro/additional-content/credentials) no seu [Dashboard](/developers/pt/docs/checkout-pro/additional-content/dashboard/introduction). Ao entrar na seção, uma aplicação será criada automaticamente ou você poderá [criar uma manualmente](https://applications.mercadopago.com) sempre que precisar. |
+| Aplicação (`application`) | As aplicações são usadas para processar os pagamentos do vendedor. **Cada aplicação identifica uma integração específica**, pois cada uma possui credenciais próprias. Uma conta do Mercado Pago pode ter diversas aplicações.<br/><br/>Você pode encontrar as informações de cada uma na seção de [Credenciais](/developers/pt/docs/checkout-pro/additional-content/credentials) no seu [Dashboard](/developers/pt/docs/checkout-pro/additional-content/your-integrations/introduction). Ao entrar na seção, uma aplicação será criada automaticamente ou você poderá [criar uma manualmente](https://applications.mercadopago.com) sempre que precisar. |
 
 ## Pré-requisitos
 
@@ -89,7 +89,7 @@ pip3 install mercadopago
 
 As credenciais são chaves únicas que fornecemos para que você possa configurar as suas integrações.
 
-Para encontrá-las, veja a [seção de Credenciais](/developers/pt/docs/checkout-pro/additional-content/credentials) no seu [Dashboard](/developers/pt/docs/checkout-pro/additional-content/dashboard/introduction) de desenvolvedor.
+Para encontrá-las, veja a [seção de Credenciais](/developers/pt/docs/checkout-pro/additional-content/credentials) no seu [Dashboard](/developers/pt/docs/checkout-pro/additional-content/your-integrations/introduction) de desenvolvedor.
 
 > NOTE
 >

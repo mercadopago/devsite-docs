@@ -5,7 +5,7 @@ Para integrar el Mercado Pago con PrestaShop, debes cumplir con los requisitos a
 | Requisitos | Descripción | Especificaciones |
 | --- | --- | --- |
 | Ambiente | Servicio de hospedaje | AMP (Linux, Apache, MySQL y PHP) o LNMP stack. |
-| Aplicación | Las aplicaciones son las diversas integraciones contenidas en una o varias tiendas. Puedes crear una aplicación para cada solución que implementes a fin de tener todo organizado y mantener un control que facilite la gestión. Consulta [Dashboard](/developers/es/docs/prestashop/additional-content/dashboard/introduction) para obtener más información sobre cómo crear una aplicación. | N/A |
+| Aplicación | Las aplicaciones son las diversas integraciones contenidas en una o varias tiendas. Puedes crear una aplicación para cada solución que implementes a fin de tener todo organizado y mantener un control que facilite la gestión. Consulta [Dashboard](/developers/es/docs/prestashop/additional-content/your-integrations/introduction) para obtener más información sobre cómo crear una aplicación. | N/A |
 | Base de dados | Conjunto de archivos relacionados con registros sobre personas, lugares o cosas. | MySql 5.6 o superior (Oracle o Percona) |
 | Configuración adicional | Ajustes recomendados para un mejor rendimiento y correcto funcionamiento del módulo PrestaShop y Mercado Pago. | safe_mode off memory_limit superior a 256 MB (se recomiendan 512 MB) |
 | Conta de vendedor Mercado Pago | Para realizar ventas, necesitas una cuenta de vendedor en Mercado Pago. Si no la tienes, [haz clic aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) para crearla. | Cuenta de vendedor en Mercado Pago |

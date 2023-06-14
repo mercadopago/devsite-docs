@@ -7,10 +7,10 @@ Have the main technical terms for the Checkout Pro integration flow at hand befo
 | Term | Description |
 | --- | --- |
 | `Preference`| It is the **information of the product or service that you want to offer.** Among the most important attributes of a preference are, namely, the description, the amount, and the items. When generating it, you get the URL to start the payment flow. |
-| `Credentials` | Your credentials are the **unique keys we provide so you can configure your integrations.** There are two types: Public Key and Access Token. <br/><br/> **Public key is the application's public key** to know the payment methods and encrypt card details, for example. You must use it only for your integrations.<br/><br/> **Access Token is the application's private key** to generate payments. You must use it only for your integrations.<br/><br/>To find them, access the [Credentials](/developers/en/docs/checkout-pro/additional-content/credentials) section on your [Dashboard](/developers/en/docs/checkout-pro/additional-content/dashboard/introduction) and select the productive ones. |
+| `Credentials` | Your credentials are the **unique keys we provide so you can configure your integrations.** There are two types: Public Key and Access Token. <br/><br/> **Public key is the application's public key** to know the payment methods and encrypt card details, for example. You must use it only for your integrations.<br/><br/> **Access Token is the application's private key** to generate payments. You must use it only for your integrations.<br/><br/>To find them, access the [Credentials](/developers/en/docs/checkout-pro/additional-content/credentials) section on your [Dashboard](/developers/en/docs/checkout-pro/additional-content/your-integrations/introduction) and select the productive ones. |
 | `Initial Point (init_point)` | It is the **URL obtained at the time of generating the preference**, which starts the payment flow of the Checkout Pro. |
 | `Ítem` | It refers to the **product or service you want to offer**. It can be one or a list. |
-| `Application` | The applications are used to process the seller's payments. **Each application identifies a particular integration** since each one has its credentials. One Mercado Pago account can have multiple applications.<br/><br/>You can find the information of each one in the [Credentials](/developers/en/docs/checkout-pro/additional-content/credentials) section on your [Dashboard](/developers/en/docs/checkout-pro/additional-content/dashboard/introduction). Upon entering, an application will be created automatically or you can [create an application](https://applications.mercadopago.com) manually every time you need one. |
+| `Application` | The applications are used to process the seller's payments. **Each application identifies a particular integration** since each one has its credentials. One Mercado Pago account can have multiple applications.<br/><br/>You can find the information of each one in the [Credentials](/developers/en/docs/checkout-pro/additional-content/credentials) section on your [Dashboard](/developers/en/docs/checkout-pro/additional-content/your-integrations/introduction). Upon entering, an application will be created automatically or you can [create an application](https://applications.mercadopago.com) manually every time you need one. |
 
 ## Prerequisites
 
@@ -89,7 +89,7 @@ pip3 install mercadopago
 
 Your credentials are unique keys we provide so you can configure your integrations.
 
-You can find the information of each one in the [Credentials](/developers/en/docs/checkout-pro/additional-content/credentials) section on your [Dashboard](/developers/en/docs/checkout-pro/additional-content/dashboard/introduction).
+You can find the information of each one in the [Credentials](/developers/en/docs/checkout-pro/additional-content/credentials) section on your [Dashboard](/developers/en/docs/checkout-pro/additional-content/your-integrations/introduction).
 
 > NOTE
 >

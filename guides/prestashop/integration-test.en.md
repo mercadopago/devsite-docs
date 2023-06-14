@@ -3,7 +3,7 @@
 The Mercado Pago plugin comes with the **Sandbox test environment** active by default. In this environment you'll be able to simulate in-store payments and see if everything is working correctly before you start receiving real payments from your customers. To perform the test, follow the steps below.
  
 1. On the Admin Panel of your Prestashop store, access the Modules and Services menu, locate the Mercado Pago plugin and click on **configure**.
-2. On the plugin management screen, confirm that the test [credentials](/developers/en/guides/additional-content/credentials/credentials) are properly filled in accordingly with the information available on its [Dashboard](/developers/en/guides/additional-content/dashboard/introduction).
+2. On the plugin management screen, confirm that the test [credentials](/developers/en/guides/additional-content/credentials/credentials) are properly filled in accordingly with the information available on its [Dashboard](/developers/en/guides/additional-content/your-integrations/introduction).
 3. Then scroll down to the **Test Your Store** section and click on **I want to test my sales**.  
 4. On your PrestaShop store home page, select a product and click to add to your cart.
 5. With the product selected, complete the order.
