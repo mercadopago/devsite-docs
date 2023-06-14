@@ -112,45 +112,11 @@ O usuário deve responder ao desafio para que a transição seja validada devida
 
 3. Após a resolução do desafio, será exibido o resultado final do pagamento de acordo com a resposta emitida pelo banco ao finalizar o _Challenge_.
 
- ----[mlb]----
- <center>
+<center>
 
- ![payment-Brick-layout-mlb](checkout-bricks/payment-brick-layout-mlb-pt.gif)
+![status-screen-Brick](checkout-bricks/status-screen-brick-pt.jpg)
 
- </center>
- ------------
- ----[mla]----
- <center>
-
- ![payment-Brick-layout-mla](checkout-bricks/payment-brick-layout-mla-pt.gif)
-
- </center>
-
- ------------
- ----[mlm]----
- <center>
-
- ![payment-Brick-layout-mlm](checkout-bricks/payment-brick-layout-mlm-pt.gif)
-
- </center>
-
- ------------
- ----[mco]----
- <center>
-
- ![payment-brick-layout-mco](checkout-bricks/payment-brick-layout-mco-pt.gif)
-
- </center>
-
- ------------
- ----[mpe, mlu, mlc]----
- <center>
-
- ![payment-brick-layout-all](checkout-bricks/payment-brick-layout-all-pt.gif)
-
- </center>
-
- ------------
+</center>
 
 ## Teste de integração
 

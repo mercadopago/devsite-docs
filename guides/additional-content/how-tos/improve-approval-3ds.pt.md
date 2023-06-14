@@ -8,7 +8,7 @@ O fluxo a seguir representa de maneira simplificada como se dá o processo de au
 
 <center>
 
-![how-tos-3ds](how-tos/improve-approval-3ds-pt.gif)
+![how-tos-3ds](how-tos/improve-approval-3ds-pt.png)
 
 </center>
 

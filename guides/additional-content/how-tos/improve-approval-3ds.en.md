@@ -8,7 +8,7 @@ The flow below represents, in a simplified way, how the 3DS 2.0 authentication p
 
 <center>
 
-![how-tos-3ds](how-tos/improve-approval-3ds-en.gif)
+![how-tos-3ds](how-tos/improve-approval-3ds-en.png)
 
 </center>
 

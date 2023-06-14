@@ -8,7 +8,7 @@ El siguiente flujo representa, de forma simplificada, cómo funciona el proceso 
 
 <center>
 
-![how-tos-3ds](how-tos/improve-approval-3ds-es.gif)
+![how-tos-3ds](how-tos/improve-approval-3ds-es.png)
 
 </center>
 
