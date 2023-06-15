@@ -30,6 +30,7 @@ En esta sección encontrarás todos los pasos necesarios para configurar cada un
 [TXTSNIPPET][/guides/snippets/test-integration/adobe-commerce-common-definitions]
 
 ------------
+
 ----[mla]----
 Con Checkout Transparente, es posible ofrecer dos medios de pago offline: **Rapipago** y **Pago Facil**.
 
@@ -60,6 +61,7 @@ En esta sección encontrarás todos los pasos necesarios para configurar cada un
 [TXTSNIPPET][/guides/snippets/test-integration/adobe-commerce-common-definitions]
 
 ------------
+
 ----[mco]----
 Con Checkout Transparente, es posible ofrecer uno medio de pago offline: **PSE**.
 
@@ -80,6 +82,7 @@ En esta sección encontrarás todos los pasos necesarios para configurar cada un
 [TXTSNIPPET][/guides/snippets/test-integration/adobe-commerce-common-definitions]
 
 ------------
+
 ----[mlm]----
 Con Checkout Transparente, es posible ofrecer medios de pago offline a través de instituciones de pago como las listadas a continuación (que aceptan depósitos/pagos en efectivo).
 

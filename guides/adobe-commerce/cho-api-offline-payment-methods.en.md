@@ -30,6 +30,7 @@ In this section, you will find all the necessary steps to configure each one.
 [TXTSNIPPET][/guides/snippets/test-integration/adobe-commerce-common-definitions]
 
 ------------
+
 ----[mla]----
 With Checkout Transparente, you can offer two offline payment methods: **Rapipago** and **Pago Facil**.
 
@@ -60,6 +61,7 @@ In this section, you will find all the necessary steps to configure each one.
 [TXTSNIPPET][/guides/snippets/test-integration/adobe-commerce-common-definitions]
 
 ------------
+
 ----[mco]----
 With Checkout Transparente, you can offer one offline payment method: **PSE**.
 
@@ -80,6 +82,7 @@ In this section, you will find all the necessary steps to configure it.
 [TXTSNIPPET][/guides/snippets/test-integration/adobe-commerce-common-definitions]
 
 ------------
+
 ----[mlm]----
 With Transparent Checkout, it is possible to offer offline payments through payment institutions such as those listed below (which accept cash deposits/payments).
 
