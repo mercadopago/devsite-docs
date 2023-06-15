@@ -1,12 +1,12 @@
 # Best practices for OAuth integration
 
-When using OAuth, it is important to take certain aspects into account so that the integration works correctly and you can receive the `authorization_code` that you requested.
+When using OAuth, it is important to take certain aspects into account so that the integration works correctly.
 
 Below, you will find a guide to possible errors and good practices to keep in mind.
 
 ## Correct use of values in request headers
 
-Always use the `accept` and `Content-Type` headers in your POST request. Be careful not to add values to headers that are not part of the integration to avoid getting a response error.
+Always use the `accept` and `content-type` headers in your POST request. Be careful not to add values to headers that are not part of the integration to avoid getting a response error.
 
 ![oauth_header](/images/oauth/oauth_header.png)
 
@@ -21,7 +21,7 @@ In your POST call, be careful to use only the requested `params` values. Do not 
 
 Remember not to send any parameters inside Query Params. Send the parameters within the request body as indicated in [API Reference](/developers/en/reference/oauth/_oauth_token/post).
 
-![oauth_queryparams](/images/oauth/oauth_queryparams.png)
+![oauth_queryparams](/images/oauth/oauth_queryparams_v2.png)
 
 ## Correct use of the `grant_type` field
 
@@ -29,9 +29,9 @@ Always use the `grant_type` field in your requests with the `authorization_code`
 
 ![oauth_grant_type](/images/oauth/oauth_granttype_v2.png)
 
-## Using the `state` field
+## Using the `state` field in the `authorization code` request
 
-To increase the security of the integration, we recommend including the `state` parameter to ensure that the response belongs to a request initiated by the same application.
+To enhance integration security, we recommend including the `state` parameter in the `authorization code` request flow. This way, you can ensure that the response belongs to a request initiated by the same application.
 
 Note that the `redirect_uri` must be a static URL. In case you want to send parameters at this URL, use `state` to send this information. Otherwise, the call will receive an error response if the `redirect_uri` does not exactly match the one configured in the application.
 
