@@ -38,7 +38,7 @@ Veja quais são os textos relacionados a cada opção:
 |valueProp |security_details | Proteção para seus dados |
 |valueProp |security_safety | Pague com segurança |
 |valueProp |smart_option| O texto será escolhido automaticamente pelo Wallet Brick para aumentar as chances de venda de acordo com as características da compra. |
-|valueProp |convenience_credits| **WAITING UX** |
+|valueProp |convenience_credits| Até 12x sem cartão |
 
 > NOTE
 >

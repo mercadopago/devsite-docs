@@ -38,7 +38,7 @@ Consulte los textos relacionados con cada opción:
 |valueProp |security_details | Todos tus datos protegidos |
 |valueProp |security_safety | Pagá de forma segura |
 |valueProp |smart_option| El texto será elegido automáticamente por Wallet Brick para aumentar las posibilidades de venta según las características de la compra. |
-|valueProp |convenience_credits| **WAITING UX** |
+|valueProp |convenience_credits| Hasta 12 cuotas sin tarjeta  |
 
 > NOTE
 >
@@ -64,7 +64,7 @@ Consulte los textos relacionados con cada opción:
 |valueProp |security_details | Todos tus datos protegidos |
 |valueProp |security_safety | Paga de forma segura |
 |valueProp |smart_option| El texto será elegido automáticamente por Wallet Brick para aumentar las posibilidades de venta según las características de la compra. |
-|valueProp |convenience_credits| **WAITING UX** |
+|valueProp |convenience_credits| Hasta 12 mensualidades sin tarjeta |
 
 > NOTE
 >

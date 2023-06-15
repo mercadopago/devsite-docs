@@ -38,7 +38,7 @@ See the texts related to each option:
 |valueProp |security_details | Protection for your data |
 |valueProp |security_safety | Pay securely |
 |valueProp |smart_option| The text will be chosen automatically by Wallet Brick to increase the chances of sale according to the characteristics of the purchase. |
-|valueProp |convenience_credits| **WAITING UX** |
+|valueProp |convenience_credits| Up to 12 installments without card |
 
 > NOTE
 >
