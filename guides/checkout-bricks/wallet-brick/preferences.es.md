@@ -307,9 +307,9 @@ curl -X POST \
 ----[mlm]----
 # Financiamiento sin tarjeta
 
-Con Mercado Pago es posible pagar hasta en 12 meses sin tarjeta de crédito, esta opción de pago se llama Mercado Crédito.
+Con Mercado Pago es posible pagar hasta en 12 mensualidades sin tarjeta de crédito, esta opción de pago se llama Mercado Crédito.
 
-Al ofrecer esta opción en tu tienda, tus clientes podrán comprar un producto hoy y pagarlo después en meses. Para tu negocio, la aprobación de la compra es inmediata y garantizada, abonando el importe íntegro por adelantado y pagándonos después tus clientes.
+Al ofrecer esta opción en tu tienda, tus clientes podrán comprar un producto hoy y pagarlo después en mensualidades. Para tu negocio, la aprobación de la compra es inmediata y garantizada, abonando el importe íntegro por adelantado y pagándonos después tus clientes.
 
 El primer paso para configurar pagos con Mercado Crédito es crear una preferencia. Para hacerlo, envíe un POST con el parámetro `propósito` y el valor `onboarding_credits` al endpoint [/checkout/preferences](/developers/es/reference/preferences/_checkout_preferences/post) y ejecute la solicitud o, si prefiere, use uno de nuestros SDK a continuación.
 
