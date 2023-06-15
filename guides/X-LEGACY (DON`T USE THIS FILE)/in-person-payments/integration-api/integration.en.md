@@ -30,7 +30,7 @@ Next, you will need to create an application to obtain the credentials. It's eas
 
 ### Access your application credentials
 
-Once you have created an application, you will be able to access [your credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/credentials). With them you can connect an integration to your account and configure it your way.
+Once you have created an application, you will be able to access your credentials. You can find them in the **Application details > Credentials** within the [Developer dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app). With them you can connect an integration to your account and configure it your way.
 
 ### Generate test users
 
