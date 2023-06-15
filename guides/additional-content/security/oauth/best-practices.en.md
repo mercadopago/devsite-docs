@@ -10,7 +10,7 @@ Always use the `accept` and `content-type` headers in your POST request. Be care
 
 ![oauth_header](/images/oauth/oauth_header.png)
 
-## Correct use of `params` values
+## Correct use of 'params' values
 
 In your POST call, be careful to use only the requested `params` values. Do not add any other non-required values, otherwise you will receive an error code in response.
 
@@ -23,13 +23,13 @@ Remember not to send any parameters inside Query Params. Send the parameters wit
 
 ![oauth_queryparams](/images/oauth/oauth_queryparams_v2.png)
 
-## Correct use of the `grant_type` field
+## Correct use of the 'grant_type' field
 
 Always use the `grant_type` field in your requests with the `authorization_code` value. Remember that if you send another value, it is possible that you will receive an error in response.
 
 ![oauth_grant_type](/images/oauth/oauth_granttype_v2.png)
 
-## Using the `state` field in the `authorization code` request
+## Using the 'state' field in the 'authorization code' request
 
 To enhance integration security, we recommend including the `state` parameter in the `authorization code` request flow. This way, you can ensure that the response belongs to a request initiated by the same application.
 

@@ -10,7 +10,7 @@ Utiliza siempre los header `accept` y `content-type` en tu solicitud POST. Ten c
 
 ![oauth_header](/images/oauth/oauth_header.png)
 
-## Uso correcto de los valores `params`
+## Uso correcto de los valores 'params'
 
 En tu llamada POST, ten cuidado de utilizar sólo los valores `params` solicitados. No agregues otros valores no requeridos ya que, de hacerlo, recibirás un código de error como respuesta.
 
@@ -23,13 +23,13 @@ Recuerda no enviar ningún parámetro dentro de Query Params. Envía los paráme
 
 ![oauth_queryparams](/images/oauth/oauth_queryparams_v2.png)
 
-## Uso correcto del campo `grant_type`
+## Uso correcto del campo 'grant_type'
 
 Utiliza siempre el campo `grant_type` en tus solicitudes con el valor `authorization_code`. Recuerda que si envias otro valor, es posible que recibas un error como respuesta.
 
 ![oauth_grant_type](/images/oauth/oauth_granttype_v2.png)
 
-## Uso del campo `state`en la solicitud del `autorization code`
+## Uso del campo 'state' en la solicitud del 'autorization code'
 
 Para aumentar la seguridad de la integración, recomendamos incluir el parámetro `state` en el flujo de solicitud del `authorization code`. Así, podrás garantizar que la respuesta pertenezca a una solicitud iniciada por la misma aplicación. 
 
