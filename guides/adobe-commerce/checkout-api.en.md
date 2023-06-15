@@ -45,7 +45,9 @@ See below for the payment methods available to the store when integrating Checko
 | --- | --- |
 | Cards | Allows integration with credit and debit cards. |
 | 2 Cards | Allows integration with 2 credit and debit cards. |
-| Mercado Pago account balance | |
+| Mercado Pago account balance | 
+| Rapipago | Bank transfers  |
+| Pago Facil | Bank transfers  |
 
 ------------
 
