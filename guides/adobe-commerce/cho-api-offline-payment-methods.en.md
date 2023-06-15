@@ -25,12 +25,7 @@ In this section, you will find all the necessary steps to configure each one.
    2. In **Title**, define how you want this payment method to appear in the checkout.
    3. In **Deadline for payment**, choose the time that the customer has to complete the payment.
 
-### Common payment method definitions
-
-[TXTSNIPPET][/guides/snippets/test-integration/adobe-commerce-common-definitions]
-
 ------------
-
 ----[mla]----
 With Checkout Transparente, you can offer two offline payment methods: **Rapipago** and **Pago Facil**.
 
@@ -56,12 +51,7 @@ In this section, you will find all the necessary steps to configure each one.
    2. In **Title**, define how you want this payment method to appear in the checkout.
    3. In **Deadline for payment**, choose the time that the customer has to complete the payment.
 
-### Common payment method definitions
-
-[TXTSNIPPET][/guides/snippets/test-integration/adobe-commerce-common-definitions]
-
 ------------
-
 ----[mco]----
 With Checkout Transparente, you can offer one offline payment method: **PSE**.
 
@@ -77,12 +67,7 @@ In this section, you will find all the necessary steps to configure it.
    2. In **Title**, define how you want this payment method to appear in the checkout.
    3. In **Deadline for payment**, choose the time that the customer has to complete the payment.
 
-### Common payment method definitions
-
-[TXTSNIPPET][/guides/snippets/test-integration/adobe-commerce-common-definitions]
-
 ------------
-
 ----[mlm]----
 With Transparent Checkout, it is possible to offer offline payments through payment institutions such as those listed below (which accept cash deposits/payments).
 
@@ -117,8 +102,7 @@ In this section, you will find all the necessary steps to configure each one.
    2. In **Title**, define how you want this payment method to appear in the checkout.
    3. In **Deadline for payment**, choose the time that the customer has to complete the payment.
 
+------------
 ### Common payment method definitions
 
 [TXTSNIPPET][/guides/snippets/test-integration/adobe-commerce-common-definitions]
-
-------------
