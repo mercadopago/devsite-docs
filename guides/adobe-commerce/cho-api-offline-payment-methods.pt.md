@@ -27,7 +27,7 @@ Nesta seção você encontra todas as etapas necessárias para configurar cada u
 
 ### Definições comuns de meios de pagamento
 
-[TXTSNIPPET][/guides/snippets/test-integration/adobe-commerce-common-definitions]
+
 
 ------------
 
@@ -58,7 +58,7 @@ Nesta seção você encontra todas as etapas necessárias para configurar cada u
 
 ### Definições comuns de meios de pagamento
 
-[TXTSNIPPET][/guides/snippets/test-integration/adobe-commerce-common-definitions]
+
 
 ------------
 
@@ -79,7 +79,7 @@ Nesta seção você encontra todas as etapas necessárias para configurar esse m
 
 ### Definições comuns de meios de pagamento
 
-[TXTSNIPPET][/guides/snippets/test-integration/adobe-commerce-common-definitions]
+
 
 ------------
 
@@ -119,6 +119,6 @@ Nesta seção você encontra todas as etapas necessárias para configurar estes 
 
 ### Definições comuns de meios de pagamento
 
-[TXTSNIPPET][/guides/snippets/test-integration/adobe-commerce-common-definitions]
+
 
 ------------
