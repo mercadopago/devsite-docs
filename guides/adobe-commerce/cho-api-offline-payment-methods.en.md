@@ -35,7 +35,7 @@ With Checkout Transparente, you can offer two offline payment methods: **Rapipag
 
 In this section, you will find all the necessary steps to configure each one.
 
-## Rappipago
+## Rapipago
 
 1. In the store Control Panel, go to **Stores > Configuration > Sales > Payment Methods**.
 2. In the Mercado Pago plugin, click **Configure**.
@@ -60,7 +60,7 @@ In this section, you will find all the necessary steps to configure each one.
 [TXTSNIPPET][/guides/snippets/test-integration/adobe-commerce-common-definitions]
 
 ------------
-----[mlc]----
+----[mco]----
 With Checkout Transparente, you can offer one offline payment method: **PSE**.
 
 In this section, you will find all the necessary steps to configure it.

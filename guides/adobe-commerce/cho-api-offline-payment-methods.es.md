@@ -31,11 +31,11 @@ En esta sección encontrarás todos los pasos necesarios para configurar cada un
 
 ------------
 ----[mla]----
-Con Checkout Transparente, es posible ofrecer dos medios de pago offline: **Rappipago** y **Pago Facil**.
+Con Checkout Transparente, es posible ofrecer dos medios de pago offline: **Rapipago** y **Pago Facil**.
 
 En esta sección encontrarás todos los pasos necesarios para configurar cada uno de ellos.
 
-## Rappipago
+## Rapipago
 
 1. En el panel de control de la tienda, ve a **Stores > Configuration > Sales > Payment method**.
 2. En el complemento de Mercado Pago, haz clic en **Configure**.
@@ -60,7 +60,7 @@ En esta sección encontrarás todos los pasos necesarios para configurar cada un
 [TXTSNIPPET][/guides/snippets/test-integration/adobe-commerce-common-definitions]
 
 ------------
-----[mlc]----
+----[mco]----
 Con Checkout Transparente, es posible ofrecer uno medio de pago offline: **PSE**.
 
 En esta sección encontrarás todos los pasos necesarios para configurar cada uno de ellos.

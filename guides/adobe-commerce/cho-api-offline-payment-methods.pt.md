@@ -10,7 +10,7 @@ Nesta seção você encontra todas as etapas necessárias para configurar cada u
 1. No Painel de Controle da loja, acesse **Lojas > Configuração > Vendas > Forma de pagamento**.
 2. No plugin do Mercado pago, clique em **Configurar**.
 3. Clique na aba **Checkout Transparente** e então, clique em **Meios offline**.
-4. Na opção **Casas Lotéricas**, complete os campos de acordo com as descrições abaixo.
+4. Na opção Casas Lotéricas, complete os campos de acordo com as descrições abaixo.
     1. Em **Habilitado**, escolha entre "Sim" ou "Não". Esta opção define se o método de pagamento estará disponível para uso.
     2. Em **Título**, defina a maneira como deseja que esse meio de pagamento apareça no checkout.
     3. Em **Prazo limite para pagamento**, escolha o tempo que o cliente tem para concluir o pagamento.
@@ -31,11 +31,11 @@ Nesta seção você encontra todas as etapas necessárias para configurar cada u
 
 ------------
 ----[mla]----
-Com o Checkout Transparente, é possível oferecer dois meios de pagamento offline: **Rappipago** e **Pago Facil**.
+Com o Checkout Transparente, é possível oferecer dois meios de pagamento offline: **Rapipago** e **Pago Facil**.
 
 Nesta seção você encontra todas as etapas necessárias para configurar cada um deles.
 
-## Rappipago
+## Rapipago
 
 1. No Painel de Controle da loja, acesse **Lojas > Configuração > Vendas > Forma de pagamento**.
 2. No plugin do Mercado pago, clique em **Configurar**.
@@ -44,7 +44,6 @@ Nesta seção você encontra todas as etapas necessárias para configurar cada u
     1. Em **Habilitado**, escolha entre "Sim" ou "Não". Esta opção define se o método de pagamento estará disponível para uso.
     2. Em **Título**, defina a maneira como deseja que esse meio de pagamento apareça no checkout.
     3. Em **Prazo limite para pagamento**, escolha o tempo que o cliente tem para concluir o pagamento.
-
 
 ## Pago Facil
 
@@ -61,7 +60,7 @@ Nesta seção você encontra todas as etapas necessárias para configurar cada u
 [TXTSNIPPET][/guides/snippets/test-integration/adobe-commerce-common-definitions]
 
 ------------
-----[mlc]----
+----[mco]----
 Com o Checkout Transparente, é possível oferecer um meio de pagamento offline: **PSE**.
 
 Nesta seção você encontra todas as etapas necessárias para configurar esse meio de pagamento.
@@ -110,7 +109,7 @@ Nesta seção você encontra todas as etapas necessárias para configurar estes 
 1. No Painel de Controle da loja, acesse **Lojas > Configuração > Vendas > Forma de pagamento**.
 2. No plugin do Mercado pago, clique em **Configurar**.
 3. Clique na aba **Checkout Transparente** e então, clique em **Meios offline**.
-4. Na opção PSE, complete os campos de acordo com as descrições abaixo.
+4. Na opção Meios offline, complete os campos de acordo com as descrições abaixo.
     1. Em **Habilitado**, escolha entre "Sim" ou "Não". Esta opção define se o método de pagamento estará disponível para uso.
     2. Em **Título**, defina a maneira como deseja que esse meio de pagamento apareça no checkout.
     3. Em **Prazo limite para pagamento**, escolha o tempo que o cliente tem para concluir o pagamento.
