@@ -10,7 +10,7 @@
 
 ### 1. Configure o checkout com os dados do seu usuário vendedor
 
-Gere uma preferência com as [credenciais](/developers/pt/docs/checkout-pro/additional-content/credentials) do usuário de teste que quiser usar como vendedor no fluxo de pagamento.
+Gere uma preferência com as [credenciais](/developers/pt/docs/checkout-pro/additional-content/your-integrations/credentials) do usuário de teste que quiser usar como vendedor no fluxo de pagamento.
 
 ### 2. Faça um pagamento de teste com o seu usuário comprador
 
@@ -43,7 +43,7 @@ Ao abrir o checkout criado com os dados do seu usuário vendedor:
 
 ## Receba os pagamentos
 
-Para começar a cobrar, você deve [ativar as suas credenciais](/developers/pt/docs/checkout-pro/additional-content/credentials).
+Para começar a cobrar, você deve [ativar as suas credenciais](/developers/pt/docs/checkout-pro/additional-content/your-integrations/credentials).
 
 Antes ativá-las, certifique-se de que as credenciais usadas na sua integração são as da conta que deverá receber o dinheiro das vendas.
 

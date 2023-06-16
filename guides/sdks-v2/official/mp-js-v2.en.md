@@ -38,7 +38,7 @@ npm install @mercadopago/sdk-js
 ```
 ]]]
 
-Then, add the Public key of the account being integrated so that it can be identified when connecting to Mercado Pago. Learn more about Public key in [Credentials](/developers/en/docs/checkout-api/additional-content/credentials).
+Then, add the Public key of the account being integrated so that it can be identified when connecting to Mercado Pago. Learn more about Public key in [Credentials](/developers/en/docs/checkout-api/additional-content/your-integrations/credentials).
 
 [[[
 ```html

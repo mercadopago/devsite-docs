@@ -10,7 +10,7 @@
 
 ### 1. Configura el checkout con los datos de tu usuario vendedor
 
-Genera una preferencia con las [credenciales](/developers/es/docs/checkout-pro/additional-content/credentials) del usuario de prueba que quieras usar como vendedor.
+Genera una preferencia con las [credenciales](/developers/es/docs/checkout-pro/additional-content/your-integrations/credentials) del usuario de prueba que quieras usar como vendedor.
 
 ### 2. Realiza un pago con tu usuario comprador
 
@@ -44,7 +44,7 @@ Al abrir el checkout creado con los datos de tu usuario vendedor:
 
 ## Recibe los pagos
 
-Para empezar a cobrar, debes [activar tus credenciales](/developers/es/docs/checkout-pro/additional-content/credentials).
+Para empezar a cobrar, debes [activar tus credenciales](/developers/es/docs/checkout-pro/additional-content/your-integrations/credentials).
 
 Antes de activarlas, verifica si las credenciales utilizadas en tu integración son las de la cuenta que debería recibir el dinero de las ventas.
 

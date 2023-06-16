@@ -190,7 +190,7 @@ npm install @mercadopago/sdk-js
 ```
 ]]]
 
-Em seguida, inicialize a integração definindo sua [chave pública](/developers/pt/docs/checkout-api/additional-content/credentials) usando o seguinte código.
+Em seguida, inicialize a integração definindo sua [chave pública](/developers/pt/docs/checkout-api/additional-content/your-integrations/credentials) usando o seguinte código.
 
 [[[
 ```html

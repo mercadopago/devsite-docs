@@ -46,4 +46,4 @@ Para definir uma pro-rata no pagamento de assinaturas, envie um POST com os par�
 >
 > Analise se a integração foi feita de maneira correta e se a aquisição de assinaturas está funcionando sem erros.
 >
-> [Criar usuário de teste](/developers/pt/docs/subscriptions/integration-test/create-test-user)
+> [Criar usuário de teste](/developers/pt/docs/subscriptions/additional-content/your-integrations/test/accounts)

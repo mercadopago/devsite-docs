@@ -17,6 +17,6 @@ To activate the “int_mercadopago” cartridge and use it as a payment processo
 
 ## Mercado Pago credentials configuration
 
-To use Mercado Pago with Salesforce Commerce Cloud, you must have a Mercado Pago account. Follow [this documentation](/developers/en/docs/salesforce-commerce-cloud/additional-content/credentials) to generate your credentials. After that, go to **Merchant Tools > Custom Preferences > MercadopagoCredentials** and fill in the **Public Key** and **Access Token** fields.
+To use Mercado Pago with Salesforce Commerce Cloud, you must have a Mercado Pago account. Follow [this documentation](/developers/en/docs/salesforce-commerce-cloud/additional-content/your-integrations/credentials) to generate your credentials. After that, go to **Merchant Tools > Custom Preferences > MercadopagoCredentials** and fill in the **Public Key** and **Access Token** fields.
 
 Done! You can now use the Mercado Pago cartridges on your Salesforce Commerce Cloud store site.

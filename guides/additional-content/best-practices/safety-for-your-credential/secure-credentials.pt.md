@@ -42,14 +42,15 @@ Renove suas credenciais de maneira simples seguindo estas etapas:
 > Importante
 > 
 > Ao renovar suas credenciais de produção, você terá 12 horas durante as quais as credenciais antigas permanecerão ativas. É importante que você renove as credenciais em sua integração dentro desse prazo.
-## Compartilhe suas credenciais pelo Dashboard
+
+## Compartilhe suas credenciais pelo Painel do desenvolvedor
 
 Se você precisar compartilhar as credenciais da sua aplicação com outras contas do Mercado Pago, faça isso de forma segura por meio de Suas Aplicações.
 Ao compartilhar suas credenciais, você permite que outra conta do Mercado Pago as veja e use. Para fazer isso, siga estas etapas:
 
-1. Acesse o [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app).
+1. Acesse o [Painel do desenvolvedor](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app).
 2. Acesse a aplicação cujas credenciais você deseja compartilhar.
-3. Clique em **Compartilhar minhas credenciais**.
+3. Clique em **Credenciais de produção** > **Compartilhar minhas credenciais**.
 4. Insira os e-mails das contas do Mercado Pago com as quais deseja compartilhar suas credenciais. Tanto as de teste quanto as de produção serão compartilhadas.
 5. Por fim, clique em **Compartilhar credenciais**.
 

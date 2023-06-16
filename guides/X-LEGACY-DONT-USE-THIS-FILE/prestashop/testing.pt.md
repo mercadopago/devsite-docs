@@ -9,7 +9,7 @@ O plugin do Mercado Pago vem com o **ambiente Sandbox** ativo por padrão. Nesse
 5. Com o produto selecionado, finalize o pedido.
 6. Preencha com as informações pessoais, indique um endereço de entrega e selecione um método de envio. Lembrando que todas essas informações são apenas para o teste.
 7. Selecione a opção de pagamento com a solução do Mercado Pago que você configurou.
-8. Utilize os [cartões de crédito de teste](/developers/pt/guides/additional-content/testing/test-cards) para realizar o pagamento.
+8. Utilize os [cartões de crédito de teste](/developers/pt/guides/additional-content/additional-content/your-integrations/test/cards) para realizar o pagamento.
 9. Ao concluir o preenchimento, **finalize a compra**.
  
 Após finalizar as etapas anteriores, ative o **modo Produção** para receber pagamentos reais.

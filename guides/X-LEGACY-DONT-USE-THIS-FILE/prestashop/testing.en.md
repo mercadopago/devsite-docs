@@ -9,7 +9,7 @@ The Mercado Pago plugin comes with the **Sandbox test environment** active by de
 5. With the product selected, complete the order.
 6. Fill in with personal information, indicate a shipping address and select a shipping method. Remember that all this information is just for testing.
 7. Select the payment option with the Mercado Pago solution you configured.
-8. Use the [test credit cards](/developers/en/guides/additional-content/testing/test-cards) to make the payment.
+8. Use the [test credit cards](/developers/en/guides/additional-content/additional-content/your-integrations/test/cards) to make the payment.
 9. When you've completed everything, **finalize the purchase**.
  
 After completing the previous steps, activate **Production mode** to receive real payments.

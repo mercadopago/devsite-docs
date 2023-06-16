@@ -7,10 +7,10 @@ Ten a mano los principales términos técnicos del flujo de integración del Che
 | Término | Descripción |
 | --- | --- |
 | Preferencia (`preference`) | Es la **información del producto o servicio que se quiere ofrecer.** Entre los atributos más importantes de una preferencia están la descripción, el monto y los items. Al generarla se obtiene la URL para iniciar el flujo de pago. |
-| Credenciales (`credentials`) | Tus credenciales son las **claves únicas que te proporcionamos para que puedas configurar tus integraciones.** Hay dos tipos de credenciales: Public key y Access token. <br/><br/>**Public key es la clave pública de la aplicación** para conocer los medios de pago y cifrar datos de tarjeta, por ejemplo. Debes usarla solo para tus integraciones. <br/><br/>**Access token es la clave privada de la aplicación** para generar pagos. Debes usarla solo para tus integraciones.<br/><br/>Para encontrarlas, consulta la sección [Credenciales](/developers/es/docs/checkout-pro/additional-content/credentials) en el [Dashboard](/developers/es/docs/checkout-pro/additional-content/your-integrations/introduction) y selecciona las productivas.<br/><br/> |
+| Credenciales (`credentials`) | Tus credenciales son las **claves únicas que te proporcionamos para que puedas configurar tus integraciones.** Hay dos tipos de credenciales: Public key y Access token. <br/><br/>**Public key es la clave pública de la aplicación** para conocer los medios de pago y cifrar datos de tarjeta, por ejemplo. Debes usarla solo para tus integraciones. <br/><br/>**Access token es la clave privada de la aplicación** para generar pagos. Debes usarla solo para tus integraciones.<br/><br/>Para encontrarlas, consulta la sección [Credenciales](/developers/es/docs/checkout-pro/additional-content/your-integrations/credentials) en el [Panel del desarrollador](/developers/es/docs/checkout-pro/additional-content/your-integrations/introduction) y selecciona las productivas.<br/><br/> |
 | Punto de inicio (`init_point`) | Es la **URL que se obtiene al momento de generar la preferencia** y que da inicio al flujo de pago del Checkout Pro. |
 | Ítem (`ítem`) | Hace referencia al **producto o servicio que se quiere ofrecer**. Puede ser uno o una lista. |
-| Aplicación (`application`) | Las aplicaciones sirven para procesar los pagos del vendedor. **Cada aplicación identifica a una integración en particular**, ya que cada una tiene sus credenciales propias. Una cuenta de Mercado Pago puede tener múltiples aplicaciones.<br/><br/>Puedes encontrar la información de cada una en la sección [Credenciales](/developers/es/docs/checkout-pro/additional-content/credentials) de tu [Dashboard](/developers/es/docs/checkout-pro/additional-content/your-integrations/introduction). Al ingresar, se creará una aplicación automáticamente o puedes [crear una aplicación](https://applications.mercadopago.com) cada vez que lo necesites. |
+| Aplicación (`application`) | Las aplicaciones sirven para procesar los pagos del vendedor. **Cada aplicación identifica a una integración en particular**, ya que cada una tiene sus credenciales propias. Una cuenta de Mercado Pago puede tener múltiples aplicaciones.<br/><br/>Puedes encontrar la información de cada una en la sección [Credenciales](/developers/es/docs/checkout-pro/additional-content/your-integrations/credentials) de tu [Panel del desarrollador](/developers/es/docs/checkout-pro/additional-content/your-integrations/introduction). Al ingresar, se creará una aplicación automáticamente o puedes [crear una aplicación](https://applications.mercadopago.com) cada vez que lo necesites. |
 
 ## Requisitos previos
 
@@ -87,13 +87,13 @@ pip3 install mercadopago
 ### 3. Ten a mano tus credenciales
 Las credenciales son claves únicas que te proporcionamos para que puedas configurar tus integraciones.
 
-Para encontrarlas, consulta la sección [Credenciales](/developers/es/docs/checkout-pro/additional-content/credentials) en el [Dashboard](/developers/es/docs/checkout-pro/additional-content/your-integrations/introduction).
+Para encontrarlas, consulta la sección [Credenciales](/developers/es/docs/checkout-pro/additional-content/your-integrations/credentials) en el [Tus integraciones](/developers/es/docs/checkout-pro/additional-content/your-integrations/introduction).
 
 > NOTE
 >
 > Nota
 > 
-> ¿Tienes dudas sobre las credenciales? Lee [nuestra documentación](/developers/es/docs/checkout-pro/additional-content/credentials) para obtener más información.
+> ¿Tienes dudas sobre las credenciales? Lee [nuestra documentación](/developers/es/docs/checkout-pro/additional-content/your-integrations/credentials) para obtener más información.
 
 ---
 
