@@ -44,7 +44,7 @@ Veja quais são os textos relacionados a cada opção:
 >
 > Importante
 >
-> Para utilizar a Value Prop de `convenience_credits`, é preciso que o Brick seja [inicializado com uma preferência](/developers/pt/docs/checkout-bricks/wallet-brick/additional-customization/preferences) e que a preferência tenha o `purpose` de [onboarding_credits.](/developers/pt/docs/checkout-bricks/wallet-brick/additional-customization/preference-startup)
+> Para utilizar a Value Prop de `convenience_credits`, é preciso que o Brick seja [inicializado com uma preferência](/developers/pt/docs/checkout-bricks/wallet-brick/additional-customization/preference-startup) e que a preferência tenha o `purpose` de [onboarding_credits.](/developers/pt/docs/checkout-bricks/wallet-brick/additional-customization/preferences)
 
 ------------
 ----[mlu, mlc, mco, mpe]----

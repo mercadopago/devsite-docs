@@ -157,9 +157,9 @@ If you offer high-value purchases, for example, you can [exclude undesired payme
  ```
 ------------
 ----[mla, mlb, mlm]----
-# Installment without card
+## Installment without card
 
-With Mercado Pago it is possible to pay in up to 12 installments without a credit card, this payment option is called Mercado Crédito.
+With Mercado Pago it is possible to pay in up to **12 installments without a credit card**, this payment option is called **Mercado Crédito**.
 
 By offering this option in your store, your customers will be able to buy a product today and pay later in installments. For your business, approval of the purchase is immediate and guaranteed, with the full amount being credited in advance and your customers paying us later.
 
@@ -171,8 +171,7 @@ The first step to set up payments with Mercado Crédito is to create a preferenc
 // Create a preference object
 $preference = new MercadoPago\Preference();
 
-
-// Creates an item in preference
+// Create an item in the preference
 $item = new MercadoPago\Item();
 $item->title = 'My product';
 $item->quantity = 1;
@@ -195,8 +194,7 @@ quantity: 1,
 purpose: 'onboarding_credits'
 };
 
-
-mercadopago.preferences.create(preference)
+Mercadopago.preferences.create(preference)
 .then(function(response){
 // This value will replace the string "<%= global.id %>" in your HTML
 global.id = response.body.id;
@@ -208,8 +206,7 @@ console.log(error);
 // Create a preference object
 PreferenceClient client = new PreferenceClient();
 
-
-// Creates an item in preference
+// Create an item in the preference
 PreferenceItemRequest item =
 PreferenceItemRequest.builder()
 .title("My product")
@@ -217,14 +214,11 @@ PreferenceItemRequest.builder()
 .unitPrice(new BigDecimal("75"))
 .build();
 
-
 List<PreferenceItemRequest> items = new ArrayList<>();
 items.add(item);
 
-
 PreferenceRequest request =
 PreferenceRequest.builder().items(items).purpose("onboarding_credits").build();
-
 
 client.create(request);
 ```
@@ -244,7 +238,6 @@ purpose: 'onboarding_credits'
 preference_response = sdk.preference.create(preference_data)
 preference = preference_response[:response]
 
-
 # This value will replace the string "<%= @preference_id %>" in your HTML
 @preference_id = preference['id']
 ```
@@ -256,9 +249,9 @@ Items = new List<PreferenceItemRequest>
 {
 new PreferenceItemRequest
 {
-Title = "My product",
-Quantity = 1,
-CurrencyId = "BRL",
+Title = "My product,
+quantity = 1,
+CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
 UnitPrice = 75m,
 },
 },
@@ -280,25 +273,24 @@ preference_data = {
 "purpose": "onboarding_credits"
 }
 
-
 preference_response = sdk.preference().create(preference_data)
 preference = preference_response["response"]
 ```
 ```curl
 curl -X POST \
-'https://api.mercadopago.com/checkout/preferences' \
--H 'Content-Type: application/json' \
--H 'cache-control: no-cache' \
--H 'Authorization: Bearer **PROD_ACCESS_TOKEN**' \
--d '{
-"items": [
-{
-"title": "My product",
-"quantity": 1,
-"unit_price": 75
-}
-],
-"purpose": "onboarding_credits"
+  'https://api.mercadopago.com/checkout/preferences' \
+  -H 'Content-Type: application/json' \
+  -H 'cache-control: no-cache' \
+  -H 'Authorization: Bearer **PROD_ACCESS_TOKEN**' \
+  -d '{
+    "items": [
+        {
+            "title": "Meu produto",
+            "quantity": 1,
+            "unit_price": 75
+        }
+    ],
+    "purpose": "onboarding_credits"
 }'
 ```
 ]]]

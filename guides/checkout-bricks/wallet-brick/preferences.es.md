@@ -157,9 +157,9 @@ Si ofreces compras de alto valor, por ejemplo, puedes [excluir métodos de pago]
  ```
 ------------
 ----[mla, mlb]----
-# Financiación sin tarjeta
+## Financiación sin tarjeta
 
-Con Mercado Pago es posible pagar hasta en 12 cuotas sin tarjeta de crédito, esta opción de pago se llama Mercado Crédito.
+Con Mercado Pago es posible pagar **hasta en 12 cuotas sin tarjeta de crédito**, esta opción de pago se llama **Mercado Crédito**.
 
 Al ofrecer esta opción en tu tienda, tus clientes podrán comprar un producto hoy y pagarlo después en cuotas. Para tu negocio, la aprobación de la compra es inmediata y garantizada, abonando el importe íntegro por adelantado y pagándonos después tus clientes.
 
@@ -168,11 +168,10 @@ El primer paso para configurar pagos con Mercado Crédito es crear una preferenc
 [[[
 ```php
 <?php
-// Crear un objeto de preferencia
+// Crea un objeto de preferencia
 $preference = new MercadoPago\Preference();
 
-
-// Crea un elemento en la preferencia
+// Crea un ítem en la preferencia
 $item = new MercadoPago\Item();
 $item->title = 'Mi producto';
 $item->quantity = 1;
@@ -183,131 +182,124 @@ $preference->save();
 ?>
 ```
 ```node
-// Crear un objeto de preferencia
+// Crea un objeto de preferencia
 let preference = {
-items: [
-{
-title: 'Mi producto',
-unit_price: 100,
-quantity: 1,
-}
-],
-purpose: 'onboarding_credits'
+  items: [
+    {
+      title: 'Mi producto',
+      unit_price: 100,
+      quantity: 1,
+    }
+  ],
+  purpose: 'onboarding_credits'
 };
-
 
 mercadopago.preferences.create(preference)
 .then(function(response){
-// Este valor reemplazará la string "<%= global.id %>" en tu HTML
-global.id = response.body.id;
+// Este valor substituirá a la string "<%= global.id %>" en tu HTML
+  global.id = response.body.id;
 }).catch(function(error){
-console.log(error);
+  console.log(error);
 });
 ```
 ```java
-// Crear un objeto de preferencia
+// Crea un objeto de preferencia
 PreferenceClient client = new PreferenceClient();
 
-
-// Crea un elemento en la preferencia
+// Crea un ítem en la preferencia
 PreferenceItemRequest item =
-PreferenceItemRequest.builder()
-.title("Mi producto")
-.quantity(1)
-.unitPrice(new BigDecimal("75"))
-.build();
-
+   PreferenceItemRequest.builder()
+       .title("Mi producto")
+       .quantity(1)
+       .unitPrice(new BigDecimal("75"))
+       .build();
 
 List<PreferenceItemRequest> items = new ArrayList<>();
 items.add(item);
 
-
 PreferenceRequest request =
-PreferenceRequest.builder().items(items).purpose("onboarding_credits").build();
-
+   PreferenceRequest.builder().items(items).purpose("onboarding_credits").build();
 
 client.create(request);
 ```
 ```ruby
 sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
-# Crear un objeto de preferencia
+# Crea un objeto de preferencia
 preference_data = {
-items: [
-{
-title: 'Mi producto',
-unit_price: 100,
-quantity: 1
-}
-],
-purpose: 'onboarding_credits'
+  items: [
+    {
+      title: 'Mi producto',
+      unit_price: 100,
+      quantity: 1
+    }
+  ],
+  purpose: 'onboarding_credits'
 }
 preference_response = sdk.preference.create(preference_data)
 preference = preference_response[:response]
 
-
-# Este valor reemplazará la string "<%= @preference_id %>" en tu HTML
+# Este valor substituirá a la string "<%= @preference_id %>" en tu HTML
 @preference_id = preference['id']
 ```
 ```csharp
-// Crear el objeto de request de preferencia
+// Crea el objeto de request de la preferencia
 var request = new PreferenceRequest
 {
-Items = new List<PreferenceItemRequest>
-{
-new PreferenceItemRequest
-{
-Title = "Mi producto",
-Quantity = 1,
-CurrencyId = "BRL",
-UnitPrice = 75m,
-},
-},
-Purpose = "onboarding_credits",
+    Items = new List<PreferenceItemRequest>
+    {
+        new PreferenceItemRequest
+        {
+            Title = "Mi producto",
+            Quantity = 1,
+            CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
+            UnitPrice = 75m,
+        },
+    },
+    Purpose = "onboarding_credits",
 };
-// Crear la preferencia
+// Crea la preferencia
 var client = new PreferenceClient();
 Preference preference = await client.CreateAsync(request);
 ```
 ```python
 preference_data = {
-"items": [
-{
-"title": "Mi producto",
-"unit_price": 100,
-"quantity": 1
+    "items": [
+        {
+            "title": "Mi producto",
+            "unit_price": 100,
+            "quantity": 1
+        }
+    ],
+    "purpose": "onboarding_credits"
 }
-],
-"purpose": "onboarding_credits"
-}
-
 
 preference_response = sdk.preference().create(preference_data)
 preference = preference_response["response"]
 ```
 ```curl
 curl -X POST \
-'https://api.mercadopago.com/checkout/preferences' \
--H 'Content-Type: application/json' \
--H 'cache-control: no-cache' \
--H 'Authorization: Bearer **PROD_ACCESS_TOKEN**' \
--d '{
-"items": [
-{
-"title": "Mi producto",
-"quantity": 1,
-"unit_price": 75
-}
-],
-"purpose": "onboarding_credits"
+  'https://api.mercadopago.com/checkout/preferences' \
+  -H 'Content-Type: application/json' \
+  -H 'cache-control: no-cache' \
+  -H 'Authorization: Bearer **PROD_ACCESS_TOKEN**' \
+  -d '{
+    "items": [
+        {
+            "title": "Meu produto",
+            "quantity": 1,
+            "unit_price": 75
+        }
+    ],
+    "purpose": "onboarding_credits"
 }'
 ```
 ]]]
 
 ------------
 ----[mlm]----
-# Financiamiento sin tarjeta
+## Financiamiento sin tarjeta
 
-Con Mercado Pago es posible pagar hasta en 12 mensualidades sin tarjeta de crédito, esta opción de pago se llama Mercado Crédito.
+Con Mercado Pago es posible pagar **hasta en 12 mensualidades sin tarjeta de crédito**, esta opción de pago se llama **Mercado Crédito**.
 
 Al ofrecer esta opción en tu tienda, tus clientes podrán comprar un producto hoy y pagarlo después en mensualidades. Para tu negocio, la aprobación de la compra es inmediata y garantizada, abonando el importe íntegro por adelantado y pagándonos después tus clientes.
 
@@ -316,11 +308,10 @@ El primer paso para configurar pagos con Mercado Crédito es crear una preferenc
 [[[
 ```php
 <?php
-// Crear un objeto de preferencia
+// Crea un objeto de preferencia
 $preference = new MercadoPago\Preference();
 
-
-// Crea un elemento en la preferencia
+// Crea un ítem en la preferencia
 $item = new MercadoPago\Item();
 $item->title = 'Mi producto';
 $item->quantity = 1;
@@ -331,122 +322,115 @@ $preference->save();
 ?>
 ```
 ```node
-// Crear un objeto de preferencia
+// Crea un objeto de preferencia
 let preference = {
-items: [
-{
-title: 'Mi producto',
-unit_price: 100,
-quantity: 1,
-}
-],
-purpose: 'onboarding_credits'
+  items: [
+    {
+      title: 'Mi producto',
+      unit_price: 100,
+      quantity: 1,
+    }
+  ],
+  purpose: 'onboarding_credits'
 };
-
 
 mercadopago.preferences.create(preference)
 .then(function(response){
-// Este valor reemplazará la string "<%= global.id %>" en tu HTML
-global.id = response.body.id;
+// Este valor substituirá a la string "<%= global.id %>" en tu HTML
+  global.id = response.body.id;
 }).catch(function(error){
-console.log(error);
+  console.log(error);
 });
 ```
 ```java
-// Crear un objeto de preferencia
+// Crea un objeto de preferencia
 PreferenceClient client = new PreferenceClient();
 
-
-// Crea un elemento en la preferencia
+// Crea un ítem en la preferencia
 PreferenceItemRequest item =
-PreferenceItemRequest.builder()
-.title("Mi producto")
-.quantity(1)
-.unitPrice(new BigDecimal("75"))
-.build();
-
+   PreferenceItemRequest.builder()
+       .title("Mi producto")
+       .quantity(1)
+       .unitPrice(new BigDecimal("75"))
+       .build();
 
 List<PreferenceItemRequest> items = new ArrayList<>();
 items.add(item);
 
-
 PreferenceRequest request =
-PreferenceRequest.builder().items(items).purpose("onboarding_credits").build();
-
+   PreferenceRequest.builder().items(items).purpose("onboarding_credits").build();
 
 client.create(request);
 ```
 ```ruby
 sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
-# Crear un objeto de preferencia
+# Crea un objeto de preferencia
 preference_data = {
-items: [
-{
-title: 'Mi producto',
-unit_price: 100,
-quantity: 1
-}
-],
-purpose: 'onboarding_credits'
+  items: [
+    {
+      title: 'Mi producto',
+      unit_price: 100,
+      quantity: 1
+    }
+  ],
+  purpose: 'onboarding_credits'
 }
 preference_response = sdk.preference.create(preference_data)
 preference = preference_response[:response]
 
-
-# Este valor reemplazará la string "<%= @preference_id %>" en tu HTML
+# Este valor substituirá a la string "<%= @preference_id %>" en tu HTML
 @preference_id = preference['id']
 ```
 ```csharp
-// Crear el objeto de request de preferencia
+// Crea el objeto de request de la preferencia
 var request = new PreferenceRequest
 {
-Items = new List<PreferenceItemRequest>
-{
-new PreferenceItemRequest
-{
-Title = "Mi producto",
-Quantity = 1,
-CurrencyId = "BRL",
-UnitPrice = 75m,
-},
-},
-Purpose = "onboarding_credits",
+    Items = new List<PreferenceItemRequest>
+    {
+        new PreferenceItemRequest
+        {
+            Title = "Mi producto",
+            Quantity = 1,
+            CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
+            UnitPrice = 75m,
+        },
+    },
+    Purpose = "onboarding_credits",
 };
-// Crear la preferencia
+// Crea la preferencia
 var client = new PreferenceClient();
 Preference preference = await client.CreateAsync(request);
 ```
 ```python
 preference_data = {
-"items": [
-{
-"title": "Mi producto",
-"unit_price": 100,
-"quantity": 1
+    "items": [
+        {
+            "title": "Mi producto",
+            "unit_price": 100,
+            "quantity": 1
+        }
+    ],
+    "purpose": "onboarding_credits"
 }
-],
-"purpose": "onboarding_credits"
-}
-
 
 preference_response = sdk.preference().create(preference_data)
 preference = preference_response["response"]
 ```
 ```curl
 curl -X POST \
-'https://api.mercadopago.com/checkout/preferences' \
--H 'Content-Type: application/json' \
--H 'cache-control: no-cache' \
--H 'Authorization: Bearer **PROD_ACCESS_TOKEN**' \
--d '{
-"items": [
-{
-"title": "Mi producto",
-"quantity": 1,
-"unit_price": 75
-}
-],
-"purpose": "onboarding_credits"
+  'https://api.mercadopago.com/checkout/preferences' \
+  -H 'Content-Type: application/json' \
+  -H 'cache-control: no-cache' \
+  -H 'Authorization: Bearer **PROD_ACCESS_TOKEN**' \
+  -d '{
+    "items": [
+        {
+            "title": "Meu produto",
+            "quantity": 1,
+            "unit_price": 75
+        }
+    ],
+    "purpose": "onboarding_credits"
 }'
 ```
 ]]]
