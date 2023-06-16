@@ -44,9 +44,11 @@ Veja abaixo quais são os meios de pagamento disponíveis para a loja ao integra
 
 | Meio de pagamento  | Descrição  |
 | --- | --- |
-| Cartões  | Permite integração com cartão de crédito e débito.  |
-| 2 cartões  | Permite integração com 2 cartões de crédito e débito.  |
-| Saldo em conta Mercado Pago |  |
+| Cartões  | Permite integração com cartão de crédito e débito. |
+| 2 cartões  | Permite integração com 2 cartões de crédito e débito. |
+| Saldo em conta Mercado Pago | |
+| Rapipago | Transferências bancárias  |
+| Pago Facil | Transferências bancárias  |
 
 ------------
 

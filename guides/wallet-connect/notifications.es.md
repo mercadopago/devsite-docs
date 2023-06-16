@@ -12,7 +12,7 @@ Luego de recibir una notificación en su plataforma, Mercado Pago esperará una 
 >
 > Importante
 >
-> Las notificaciones de webhook se pueden configurar para una o más aplicaciones creadas en su Dashboard.
+> Las notificaciones de webhook se pueden configurar para una o más aplicaciones creadas en su Panel del desarrollador.
 
 ## Requisitos previos
 

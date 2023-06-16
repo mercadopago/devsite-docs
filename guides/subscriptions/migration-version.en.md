@@ -12,7 +12,7 @@ The new version has a superior architecture with much more functionality and has
 * Subscription charge;
 * Change of plans.
 
-In addition to email notifications, the new version also has [Webhooks](/developers/en/guides/additional-content/notifications/webhooks/webhooks) for `plans`, `subscriptions` and `invoices`.
+In addition to email notifications, the new version also has [Webhooks](/developers/en/guides/additional-content/your-integrations/notifications/webhooks) for `plans`, `subscriptions` and `invoices`.
 
 > WARNING
 >

@@ -18,7 +18,7 @@ curl --location --request GET 'https://api.mercadopago.com/merchant_orders?exter
 >
 > Note
 >
-> This solution uses the same [API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/merchant_orders/_merchant_orders_id/get) that was used in the section [Merchant order query](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/notifications/ipn/inperson-order-query), adding the param `external_reference` to look for the payment in case a notification wasn't received.
+> This solution uses the same [API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/merchant_orders/_merchant_orders_id/get) that was used in the section [Merchant order query](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/your-integrations/notifications/ipn), adding the param `external_reference` to look for the payment in case a notification wasn't received.
 
 The answer will be the same as using the order ID and they must use the same criteria mentioned above to confirm the payment of the order.
 

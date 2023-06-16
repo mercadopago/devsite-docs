@@ -84,7 +84,7 @@ Esta captura é feita a partir da inclusão da biblioteca `MercadoPago.js` em se
 
 ## Configurar credencial
 
-As [credenciais](/developers/pt/guides/additional-content/credentials/credentials) são senhas únicas com as quais identificamos uma integração na sua conta, servindo para capturar pagamentos em lojas virtuais e outras aplicações de forma segura.
+As [credenciais](/developers/pt/guides/additional-content/your-integrations/credentials) são senhas únicas com as quais identificamos uma integração na sua conta, servindo para capturar pagamentos em lojas virtuais e outras aplicações de forma segura.
 
 Essa é a primeira etapa de uma estrutura completa de código que deverá ser seguida para a correta integração dos pagamentos. Atente-se aos blocos abaixo para adicionar aos códigos conforme indicado.
 

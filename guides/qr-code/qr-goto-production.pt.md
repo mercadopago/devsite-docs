@@ -1,6 +1,6 @@
 # Entrar em produção
 
-Quando a aplicação estiver **funcionando** em modo teste e chegue a hora de processar pagamentos reais, você deve [ativar suas credenciais](developers/pt/docs/qr-code/additional-content/credentials), e **solicitar o processo de homologação à equipe de integrações**.
+Quando a aplicação estiver **funcionando** em modo teste e chegue a hora de processar pagamentos reais, você deve [ativar suas credenciais](developers/pt/docs/qr-code/additional-content/your-integrations/credentials), e **solicitar o processo de homologação à equipe de integrações**.
 
 ## Homologação
 

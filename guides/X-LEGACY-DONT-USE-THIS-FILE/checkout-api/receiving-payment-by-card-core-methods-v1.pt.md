@@ -602,5 +602,5 @@ Te recomendamos usar as [mensagens de respostas](/developers/pt/guides/checkout-
 
 Por último, é importante que esteja sempre informado sobre a criação nos novos pagamentos e as atualizações dos seus estados. Por exemplo se foram aprovados, rejeitados ou caso encontram-se pendentes.
 
-[Configure notificações webhooks](/developers/pt/guides/notifications/webhooks/webhooks) ou [notificações IPN](/developers/pt/guides/checkout-api/additional-content/notifications/ipn/introduction).
+[Configure notificações webhooks](/developers/pt/guides/notifications/webhooks/webhooks) ou [notificações IPN](/developers/pt/guides/checkout-api/additional-content/your-integrations/notifications/ipn).
 
