@@ -2,7 +2,7 @@
 
 No es posible evitar todos los contracargos, pero puedes disminuir la probabilidad de que se reviertan siguiendo estas recomendaciones:
 
-1. Completa la [información de tu negocio](https://www.mercadopago[FAKE][URL][DOMAIN]/business#from-section=menu) para definir cómo quieres aparecer en los resúmenes de tarjetas y en los SMS de confirmación de pago.
+1. **Completa la información de tu negocio** para definir cómo quieres aparecer en los resúmenes de tarjetas y en los SMS de confirmación de pago.
    
 2. Agrega el código de seguridad de Mercado Pago a tu sitio, reemplazando el valor de `view` con el nombre de la sección en la que deseas agregarlo (Ej.: home, search, item).
 ```html

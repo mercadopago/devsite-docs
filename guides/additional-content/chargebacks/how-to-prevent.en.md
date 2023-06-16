@@ -2,7 +2,7 @@
 
 It is not possible to avoid all chargebacks; however, you can reduce the probability of having a payment charged back by following these recommendations:
 
-1. Keep all the [business data in your account up to date](https://www.mercadopago[FAKE][URL][DOMAIN]/business#from-section=menu) so that your buyers can recognize you.
+1. **Keep all the [business data in your account up to date** so that your buyers can recognize you.
    
 2. Add the Mercado Pago security script to your page and replace the `view` value with the name of the section (e.g., home, search, item)
 ```html
