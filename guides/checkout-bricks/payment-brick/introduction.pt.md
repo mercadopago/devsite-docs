@@ -62,7 +62,7 @@ O layout do Payment Brick foi construído com base nas melhores práticas de UX 
 
 O Payment Brick é uma solução modular e personalizável que permite adicionar vários métodos de pagamento à sua loja com apenas um Brick, permitindo que você salve os dados do cartão para compras futuras. Ao utilizar o Payment Brick, você terá diferentes métodos de pagamento à sua disposição e poderá escolher quais habilitar para o seu site.
 
-Você poderá dar aos seus clientes a possibilidade de efetuarem **pagamentos através de cartões de débito e crédito, pagamentos em dinheiro via ticket, utilizar a Conta Mercado Pago ou Parcelamento sem cartão**. 
+Você poderá dar aos seus clientes a possibilidade de efetuarem **pagamentos através de cartões de débito e crédito, pagamentos em dinheiro com ticket, utilizar a Conta Mercado Pago ou Parcelamento sem cartão**. 
 
 A possibilidade de guardar os dados dos cartões que já foram debitados em compras anteriores torna o processo de pagamento mais eficiente e rápido. Para o comprador, não é mais necessário recarregar os dados cada vez que entrar no checkout.
 
@@ -91,7 +91,7 @@ O layout do Payment Brick foi construído com base nas melhores práticas de UX 
 
 O Payment Brick é uma solução modular e personalizável que permite adicionar vários métodos de pagamento à sua loja com apenas um Brick, permitindo que você salve os dados do cartão para compras futuras. Ao utilizar o Payment Brick, você terá diferentes métodos de pagamento à sua disposição e poderá escolher quais habilitar para o seu site.
 
-Você poderá dar aos seus clientes a possibilidade de efetuarem **pagamentos com cartões de débito e crédito, PagoEfectivo ou utilizar a Conta Mercado Pago**.
+Você poderá dar aos seus clientes a possibilidade de efetuarem **pagamentos com cartões de débito e crédito, pagamentos em dinheiro com PagoEfectivo ou utilizar a Conta Mercado Pago**.
 
 A possibilidade de guardar os dados dos cartões que já foram debitados em compras anteriores torna o processo de pagamento mais eficiente e rápido. Para o comprador, não é mais necessário recarregar os dados cada vez que entrar no checkout.
 
@@ -120,7 +120,7 @@ O layout do Payment Brick foi construído com base nas melhores práticas de UX 
 
 O Payment Brick é uma solução modular e personalizável que permite adicionar vários métodos de pagamento à sua loja com apenas um Brick, permitindo que você salve os dados do cartão para compras futuras. Ao utilizar o Payment Brick, você terá diferentes métodos de pagamento à sua disposição e poderá escolher quais habilitar para o seu site.
 
-Você poderá dar aos seus clientes a possibilidade de efetuarem **pagamentos através de cartões de débito e crédito, Efecty ou utilizar a Conta Mercado Pago**. 
+Você poderá dar aos seus clientes a possibilidade de efetuarem **pagamentos através de cartões de débito e crédito, pagamentos em dinheiro com Efecty, transferência bancária com PSE (Pagos Seguros en Línea) ou utilizar a Conta Mercado Pago**. 
 
 A possibilidade de guardar os dados dos cartões que já foram debitados em compras anteriores torna o processo de pagamento mais eficiente e rápido. Para o comprador, não é mais necessário recarregar os dados cada vez que entrar no checkout.
 
