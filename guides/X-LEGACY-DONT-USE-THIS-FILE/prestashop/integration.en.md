@@ -5,7 +5,7 @@ To integrate with Mercado Pago, follow the procedures below.
 1. On the Admin Panel of your Prestashop store, access the **Modules and Services** menu, find the Mercado Pago plugin and click on **configure**.
 2. On the plugin management screen, fill in the required fields according to your business information.
 3. In the `Location` field, select the country of operation of your Mercado Pago account.
-4. In the **Credentials** section, confirm that the fields are properly filled in according to the [credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/credentials/credentials) indicated in their [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/dashboard/introduction).  
+4. In the **Credentials** section, confirm that the fields are properly filled in according to the [credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/credentials/credentials) indicated in their [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/your-integrations/introduction).  
 5. Next, set up the necessary business information to identify your store.
  
 * **Store Name:** enter your store name.

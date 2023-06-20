@@ -6,7 +6,7 @@ Checkout Pro tiene características extra que te permiten optimizar su integraci
 
 Las notificaciones IPN (_Notificación de Pago Instantáneo_) son una forma automática de notificar la creación de nuevos pagos y las actualizaciones de su _estado_, es decir, si fueron aprobados, rechazados o si están pendientes.
 
-Las notificaciones automáticas te permiten administrar tu inventario y mantener tu sistema sincronizado con los flujos de pago de tu negocio. Aprende a recibir notificaciones IPN [aquí](/developers/es/docs/checkout-pro/additional-content/notifications/ipn/introduction).
+Las notificaciones automáticas te permiten administrar tu inventario y mantener tu sistema sincronizado con los flujos de pago de tu negocio. Aprende a recibir notificaciones IPN [aquí](/developers/es/docs/checkout-pro/additional-content/your-integrations/notifications/ipn).
 
 ## Agrega información adicional a la preferencia
 

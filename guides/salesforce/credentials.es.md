@@ -1,6 +1,6 @@
 # Completar las credenciales
 
-Para recibir pagos con Mercado Pago, primero deberás contar con las credenciales. Puedes consultar tus credenciales en el [Dashboard](/developers/panel/app). Si quieres saber más sobre las credenciales de Mercado Pago, ve a [esta documentación](/developers/es/docs/salesforce-commerce-cloud/additional-content/credentials).
+Para recibir pagos con Mercado Pago, primero deberás contar con las credenciales. Puedes consultar tus credenciales en el [Panel del desarrollador](/developers/panel/app). Si quieres saber más sobre las credenciales de Mercado Pago, ve a [esta documentación](/developers/es/docs/salesforce-commerce-cloud/additional-content/your-integrations/credentials).
 
 Sigue estos pasos para configurar las credenciales.
 

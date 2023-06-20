@@ -34,7 +34,7 @@ Puedes ver más información en la [sección de Mejora la aprobación](/develope
 ## Notificaciones y búsqueda de pagos
 
 Para poder aprovechar al máximo los beneficios de la integración de Mercado Pago, uno de los puntos claves a destacar es la utilización de notificaciones para la actualización de los pedidos en tiempo real en tu sistema.
-Ambos tipos de notificaciones, [IPN](/developers/es/guides/additional-content/notifications/ipn/introduction) o [Webhooks](/developers/es/guides/notifications/webhooks/webhooks), se envían de un servidor a otro mediante una llamada `HTTP POST` en relación a tus transacciones.
+Ambos tipos de notificaciones, [IPN](/developers/es/guides/additional-content/your-integrations/notifications/ipn) o [Webhooks](/developers/es/guides/notifications/webhooks/webhooks), se envían de un servidor a otro mediante una llamada `HTTP POST` en relación a tus transacciones.
 Implementando estas notificaciones, podrás enterarte de todas las actualizaciones de tus transacciones en el momento.
 
 ## Experiencia de usuario
