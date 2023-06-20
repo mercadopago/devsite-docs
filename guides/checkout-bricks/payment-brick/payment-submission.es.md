@@ -6,7 +6,7 @@
 
 Para continuar el proceso de pago hacia Mercado Pago, es necesario que tu backend sepa recibir la información del formulario con el token generado y los datos completados. Su backend debe disponibilizar un endpoint `/process_payment` para recibir allí todos los datos luego de realizar la acción submit.
 
-Ya estando en tu backend con toda la información recolectada, es momento de enviar la solicitud a Mercado Pago a través de nuestras APIs. Los campos mínimos requeridos a enviar son: `token`, `transaction_amount`, `installments`, `payment_method_id` y el `payer.email`.
+Ya estando en tu backend con toda la información recolectada, es momento de enviar la solicitud a Mercado Pago a través de nuestras APIs.
 
 Ten en cuenta que para que este paso funcione es necesario que configures tu [clave privada](/developers/es/guides/additional-content/your-integrations/credentials) y que para interactuar con nuestras APIs recomendamos utilizar la [SDK oficial de Mercado Pago](/developers/es/docs/sdks-library/landing).
 
@@ -46,6 +46,7 @@ En las siguientes secciones, vea cómo enviar a Mercado Pago pagos realizados co
 ----[mco]----
 * [Tarjetas](/developers/es/docs/checkout-bricks/payment-brick/payment-submission/cards)
 * [Cuenta de Mercado Pago](/developers/es/docs/checkout-bricks/payment-brick/payment-submission/wallet)
+* [PSE](/developers/es/docs/checkout-bricks/payment-brick/payment-submission/pse)
 * [Otros medios de pago](/developers/es/docs/checkout-bricks/payment-brick/payment-submission/other-payment-methods/colombia)
 
 ------------

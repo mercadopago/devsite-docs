@@ -6,7 +6,7 @@
 
 To continue with the Mercado Pago payment process, your backend should know how to receive form information with the generated token and the filled out data. Your backend should make available a `/process_payment` endpoint to receive all the data.
 
-Once the request –with all the collected information– is in your backend, it should be submitted to Mercado Pago through our APIs.  The minimum mandatory fields to submit are: `token`, `transaction_amount`, `installments`, `payment_method_id` and `payer.email`.
+Once the request –with all the collected information– is in your backend, it should be submitted to Mercado Pago through our APIs.
 
 For this to work, you should configure your [private key](/developers/en/guides/additional-content/your-integrations/credentials). Also, to interact with our APIs, you should use [Mercado Pago official SDK](/developers/en/docs/sdks-library/landing).
 
@@ -46,6 +46,7 @@ In the following sections, check out how to send to Mercado Pago payments made w
 ----[mco]----
 * [Cards](/developers/en/docs/checkout-bricks/payment-brick/payment-submission/cards)
 * [Mercado Pago Wallet](/developers/en/docs/checkout-bricks/payment-brick/payment-submission/wallet)
+* [PSE](/developers/en/docs/checkout-bricks/payment-brick/payment-submission/pse)
 * [Other payment methods](/developers/en/docs/checkout-bricks/payment-brick/payment-submission/other-payment-methods/colombia)
 
 ------------
