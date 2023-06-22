@@ -11,11 +11,3 @@ Neste guia, mostraremos como construir sua própria experiência de checkout atr
 > Importante
 > 
 > Para saber o desempenho do seu checkout após a implementação dessas boas práticas, recomendamos que você integre uma ferramenta de rastreamento e realize otimizações com base nos resultados para melhorar a experiência de seus usuários e ter mais conversões.
-
-> NEXT_STEP_CARD_PT
->
-> Otimize a experiência de checkout
->
-> Confira os componentes principais de um checkout e saiba como otimizá-los para aumentar a conversão de vendas e oferecer uma experiência de compra ainda melhor.
->
-> [Experiência otimizada](/developers/pt/guides/additional-content/best-practices/ux-for-checkouts/optimized-experience)

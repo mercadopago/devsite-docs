@@ -124,19 +124,3 @@ Although most users review their purchase at the end, they feel more secure if t
 Also, before finalizing the purchase, allow your users to **review** the entire process and the final price. For this, add a confirmation or review page, prior to making the payment, that includes a summary of all the decisions made, all the information uploaded and the detail of the total to pay. It is important to give the possibility to edit any of the data from there, without the need to go back to the previous steps.
 
 ![en confrima tu compra](/images/best-practices-guide/EngAspectosGeneralesConfirmaTuCompra_V2.gif)
-
-> PREV_STEP_CARD_EN
->
-> UX for checkouts
->
-> An introduction to the guide of best practices.
->
-> [Introduction](/developers/en/guides/additional-content/best-practices/ux-for-checkouts/introduction)
-
-> NEXT_STEP_CARD_EN
->
-> Make conversions easy
->
-> Follow these steps to create an easy to navigate and understand checkout.
->
-> [Ease of conversions](/developers/en/guides/additional-content/best-practices/ux-for-checkouts/ease-of-conversion)

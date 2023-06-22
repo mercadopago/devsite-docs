@@ -12,4 +12,3 @@ Con las credenciales configuradas, siga los pasos a continuación para realizar 
 3. Confirma la compra.
 
 ¡Listo! Una vez que se completen estos pasos, la integración estará completa y podrá usar sus credenciales de producción para usar el Checkout API. Para más información, consulte la sección [Requisitos para salir a producción](/developers/es/docs/checkout-api/integration-test/go-to-production-requirements)
-
