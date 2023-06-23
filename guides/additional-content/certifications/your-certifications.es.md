@@ -16,26 +16,19 @@ Número único que te identifica como miembro del **&lt;dev&gt;program** generad
  
 El **&lt;dev&gt;program** es un programa de beneficios para desarrolladores exclusivo y gratuito, diseñado para que seas parte de nuestra comunidad y recibas beneficios adicionales. Para participar, debes aprobar algunas de las certificaciones oficiales de Mercado Pago.
  
-Consulta la página del [&lt;dev&gt;program](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/developer-program) y realiza la certificación del producto deseado, recibe tu ID de integrador e introdúcelo en tus integraciones para recibir beneficios adicionales.
-
-> NEXT_STEP_CARD_ES
->
-> Tus integraciones
->
-> Accede a información acerca de tus integraciones creadas.
->
-> [Tus integraciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/your-integrations/introduction)
+Consulta la página del [&lt;dev&gt;program](/developers/es/developer-program) y realiza la certificación del producto deseado, recibe tu ID de integrador e introdúcelo en tus integraciones para recibir beneficios adicionales.
 
 En [Tus certificaciones](/developers/panel/developer-program), haz clic en **Conocer más** para obtener información detallada sobre el proceso de certificación de cada producto. Esta sección proporcionará orientación específica para ayudarte durante el proceso de certificación.
 
 > NOTE
 >
-> Observación
+> Importante
 >
 > Para obtener el Integrator ID, es necesario realizar al menos una prueba de certificación.
 
 Ten en cuenta que el proceso de utilización del Integrator ID en la integración puede variar dependiendo del producto en el que estás buscando certificarte. Lee las siguientes documentaciones de cada producto para saber cómo incluir el Integrator ID en tus integraciones:
-   - [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/checkout-pro/additional-content/integration-metrics)
-   - [Integración de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/woocommerce/integration-configuration/plugin-configuration)
-   - [Adobe Commerce (Magento)](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/additional-content/integration-metrics)
-   - [Configuración de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/woocommerce/integration-configuration/plugin-configuration)
+
+   - [Checkout Pro](/developers/es/docs/checkout-pro/additional-content/integration-metrics)
+   - [Integración de WooCommerce](/developers/es/docs/woocommerce/integration-configuration/plugin-configuration)
+   - [Adobe Commerce (Magento)](/developers/es/docs/additional-content/integration-metrics)
+   - [Configuración de WooCommerce](/developers/es/docs/woocommerce/integration-configuration/plugin-configuration)

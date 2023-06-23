@@ -6,7 +6,7 @@ The **certificates** can be downloaded to your computer's local files, in additi
  
 The **badges** act as a way to identify developers who have already completed our official certification process and, like the certificates, have different colors for each type of certification. They can also be downloaded to your computer's local files and added to a professional profile through HTML, for example.
  
-Check the [&lt;dev&gt;program](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/developer-program) page for more information.
+Check the [&lt;dev&gt;program](/developers/en/developer-program) page for more information.
 
 ## Integrator ID
  
@@ -14,26 +14,19 @@ Unique number that identifies you as a member of the **&lt;dev&gt;program** auto
  
 The **&lt;dev&gt;program** is a free and exclusive developer program designed for you to join our community and receive extra benefits. To be a part of it, you must have some of the official Mercado Pago certifications.
  
-Check out the [&lt;dev&gt;program](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/developer-program) page and choose which product you want to earn your certification for. Then, use your integrator ID and enter it into your integrations to receive extra benefits.
-
-> NEXT_STEP_CARD_EN
->
-> Your integrations
->
-> Check information about your created integrations.
->
-> [Your integrations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/your-integrations/introduction)
+Check out the [&lt;dev&gt;program](/developers/en/developer-program) page and choose which product you want to earn your certification for. Then, use your integrator ID and enter it into your integrations to receive extra benefits.
 
 In [Your certifications](/developers/panel/developer-program), click on **Learn more** to obtain detailed information about the certification process for each product. This section will provide specific guidelines to assist you throughout the certification process.
 
 > NOTE
 >
-> Note
+> Important
 >
 > Please note that in order to obtain the Integrator ID, you must complete at least one certification test.
 
 Please be aware that the process of using the Integrator ID in integration may vary depending on the product you are seeking certification for. Please refer to the following product documentation to learn how to include the Integrator ID in your integrations:
-   - [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/checkout-pro/additional-content/integration-metrics)
-   - [WooCommerce Integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/woocommerce/integration-configuration/plugin-configuration)
-   - [Adobe Commerce (Magento)](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/additional-content/integration-metrics)
-   - [WooCommerce Configuration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/woocommerce/integration-configuration/plugin-configuration)
+
+   - [Checkout Pro](/developers/en/docs/checkout-pro/additional-content/integration-metrics)
+   - [WooCommerce Integration](/developers/en/docs/woocommerce/integration-configuration/plugin-configuration)
+   - [Adobe Commerce (Magento)](/developers/en/docs/additional-content/integration-metrics)
+   - [WooCommerce Configuration](/developers/en/docs/woocommerce/integration-configuration/plugin-configuration)
