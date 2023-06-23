@@ -14,11 +14,11 @@ Consulta la página [&lt;dev&gt;program](https://www.mercadopago[FAKER][URL][DOM
  
 Número único que te identifica como miembro del **&lt;dev&gt;program** generado automáticamente después de tu primera certificación exitosa. Se encuentra junto a tu ID de Mercado Pago (ID de usuario) y solo aparece después de que se haya generado.
  
-El **&lt;dev&gt;program** es un programa de beneficios para desarrolladores exclusivo y gratuito, diseñado para que seas parte de nuestra comunidad y recibas beneficios adicionales. Para participar, debes aprobar algunas de las certificaciones oficiales de Mercado Pago.
+El **&lt;dev&gt;program** es un programa de Mercado Pago para desarrolladores que integran nuestras soluciones de pago. El desarrollador realiza una prueba de certificación, gratuita y en línea, y si es aprobado, obtiene acceso a ventajas exclusivas.
  
 Consulta la página del [&lt;dev&gt;program](/developers/es/developer-program) y realiza la certificación del producto deseado, recibe tu ID de integrador e introdúcelo en tus integraciones para recibir beneficios adicionales.
 
-En [Tus certificaciones](/developers/panel/developer-program), haz clic en **Conocer más** para obtener información detallada sobre el proceso de certificación de cada producto. Esta sección proporcionará orientación específica para ayudarte durante el proceso de certificación.
+En [Tus certificaciones](/developers/panel/developer-program), haz clic en **Conocer más** para obtener información detallada sobre el proceso de certificación de cada producto. 
 
 > NOTE
 >
