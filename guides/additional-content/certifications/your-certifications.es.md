@@ -24,4 +24,18 @@ Consulta la página del [&lt;dev&gt;program](https://www.mercadopago[FAKER][URL]
 >
 > Accede a información acerca de tus integraciones creadas.
 >
-> [Tus aplicaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/your-integrations/introduction)
+> [Tus integraciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/your-integrations/introduction)
+
+En [Tus certificaciones](/developers/panel/developer-program), haz clic en **Conocer más** para obtener información detallada sobre el proceso de certificación de cada producto. Esta sección proporcionará orientación específica para ayudarte durante el proceso de certificación.
+
+> NOTE
+>
+> Observación
+>
+> Para obtener el Integrator ID, es necesario realizar al menos una prueba de certificación.
+
+Ten en cuenta que el proceso de utilización del Integrator ID en la integración puede variar dependiendo del producto en el que estás buscando certificarte. Lee las siguientes documentaciones de cada producto para saber cómo incluir el Integrator ID en tus integraciones:
+   - [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/checkout-pro/additional-content/integration-metrics)
+   - [Integración de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/woocommerce/integration-configuration/plugin-configuration)
+   - [Adobe Commerce (Magento)](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/additional-content/integration-metrics)
+   - [Configuración de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/woocommerce/integration-configuration/plugin-configuration)
