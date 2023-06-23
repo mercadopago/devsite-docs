@@ -6,7 +6,6 @@ You can adapt the Wallet Brick integration to your business model by setting [pr
 If you offer high-value purchases, for example, you can accept [payments with two credit cards](#bookmark_accept_payments_with_2_credit_cards) or [delete undesired payment methods](#bookmark_define_the_desired_payment_methods) for your operation.
 
 ------------
-
 ----[mlm, mlc, mlu, mco, mpe]----
 If you offer high-value purchases, for example, you can [exclude undesired payment methods](#bookmark_define_the_desired_payment_methods) for your operation.
 
@@ -157,7 +156,146 @@ If you offer high-value purchases, for example, you can [exclude undesired payme
 }
  ```
 ------------
+----[mla, mlb, mlm]----
+## Installment without card
 
+With Mercado Pago it is possible to pay in up to **12 installments without a credit card**, this payment option is called **Mercado Crédito**.
+
+By offering this option in your store, your customers will be able to buy a product today and pay later in installments. For your business, approval of the purchase is immediate and guaranteed, with the full amount being credited in advance and your customers paying us later.
+
+The first step to set up payments with Mercado Crédito is to create a preference. To do so, send a POST with the `purpose` parameter and the `onboarding_credits` value to the endpoint [/checkout/preferences](/developers/en/reference/preferences/_checkout_preferences/post) and execute the request or, if you prefer, use one of our SDKs below.
+
+[[[
+```php
+<?php
+// Create a preference object
+$preference = new MercadoPago\Preference();
+
+// Create an item in the preference
+$item = new MercadoPago\Item();
+$item->title = 'My product';
+$item->quantity = 1;
+$item->unit_price = 75;
+$preference->items = array($item);
+$preference->purpose = 'onboarding_credits';
+$preference->save();
+?>
+```
+```node
+// Create a preference object
+let preference = {
+items: [
+{
+title: 'My product',
+unit_price: 100,
+quantity: 1,
+}
+],
+purpose: 'onboarding_credits'
+};
+
+Mercadopago.preferences.create(preference)
+.then(function(response){
+// This value will replace the string "<%= global.id %>" in your HTML
+global.id = response.body.id;
+}).catch(function(error){
+console.log(error);
+});
+```
+```java
+// Create a preference object
+PreferenceClient client = new PreferenceClient();
+
+// Create an item in the preference
+PreferenceItemRequest item =
+PreferenceItemRequest.builder()
+.title("My product")
+.quantity(1)
+.unitPrice(new BigDecimal("75"))
+.build();
+
+List<PreferenceItemRequest> items = new ArrayList<>();
+items.add(item);
+
+PreferenceRequest request =
+PreferenceRequest.builder().items(items).purpose("onboarding_credits").build();
+
+client.create(request);
+```
+```ruby
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
+# Create a preference object
+preference_data = {
+items: [
+{
+title: 'My product',
+unit_price: 100,
+quantity: 1
+}
+],
+purpose: 'onboarding_credits'
+}
+preference_response = sdk.preference.create(preference_data)
+preference = preference_response[:response]
+
+# This value will replace the string "<%= @preference_id %>" in your HTML
+@preference_id = preference['id']
+```
+```csharp
+// Create the preference request object
+var request = new PreferenceRequest
+{
+Items = new List<PreferenceItemRequest>
+{
+new PreferenceItemRequest
+{
+Title = "My product,
+quantity = 1,
+CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
+UnitPrice = 75m,
+},
+},
+Purpose = "onboarding_credits",
+};
+// Create the preference
+var client = new PreferenceClient();
+Preference preference = await client.CreateAsync(request);
+```
+```python
+preference_data = {
+"items": [
+{
+"title": "My product",
+"unit_price": 100,
+"quantity": 1
+}
+],
+"purpose": "onboarding_credits"
+}
+
+preference_response = sdk.preference().create(preference_data)
+preference = preference_response["response"]
+```
+```curl
+curl -X POST \
+  'https://api.mercadopago.com/checkout/preferences' \
+  -H 'Content-Type: application/json' \
+  -H 'cache-control: no-cache' \
+  -H 'Authorization: Bearer **PROD_ACCESS_TOKEN**' \
+  -d '{
+    "items": [
+        {
+            "title": "Meu produto",
+            "quantity": 1,
+            "unit_price": 75
+        }
+    ],
+    "purpose": "onboarding_credits"
+}'
+```
+]]]
+
+------------
 ----[mla]---- 
 ## Define the desired payment methods
 
@@ -170,6 +308,7 @@ Through payment preference, you can configure a default payment method to be ren
 | `excluded_payment_methods` | Method that excludes specific credit and debit card brands, such as Visa, Mastercard, American Express, etc. |
 | `installments` | Method that defines the maximum number of installments to be offered. |
 | `purpose` | By indicating the value `wallet_purchase` in this method, Wallet Brick will only accept payments from registered users in Mercado Pago, with card and account balance. |
+
 ------------
 
 ----[mlb]---- 
@@ -186,7 +325,6 @@ Through payment preference, you can configure a default payment method to be ren
 | `purpose` | By indicating the value `wallet_purchase` in this method, Wallet Brick will only accept payments from registered users in Mercado Pago, with card and account balance. |
 
 ------------
-
 ----[mlm]---- 
 ## Define the desired payment methods
 
@@ -201,7 +339,6 @@ Through payment preference, you can configure a default payment method to be ren
 | `purpose` | By indicating the value `wallet_purchase` in this method, Wallet Brick will only accept payments from registered users in Mercado Pago, with card and account balance. |
 
 ------------
-
 ----[mlc, mco, mpe, mlu]---- 
 ## Define the desired payment methods
 
@@ -347,6 +484,7 @@ You can activate the option to offer payments with two credit cards from the Mer
 To activate this payment option, go to "[Business Options](https://www.mercadopago.com.ar/settings/my-business)" and select the option "Receive payments with 2 credit cards".
 
 ![Config pago 2 tarjetas](/images/web-payment-checkout/config_pago_dos_tarjetas.gif)
+
 ------------
 
 ## Accept payments from registered users only
@@ -355,7 +493,6 @@ To activate this payment option, go to "[Business Options](https://www.mercadopa
 You can accept payments with the Mercado Pago wallet only from registered users, with a credit card, money in account, or Mercado Crédito.
 
 ------------
-
 ----[mlm, mlc, mco, mpe, mlu]----
 You can accept payments with the Mercado Pago wallet only from registered users, with a credit card or money in account.
 

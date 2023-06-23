@@ -71,7 +71,7 @@ print_r ($cards["response"]);
 <?php
 require_once ('mercadopago.php');
 $mp = new MP ("ENV_ACCESS_TOKEN");
-$card_token = $mp->post ("/v1/card_tokens", array("card_id" => "cardId"));
+$card_token = $mp->post ("/v1/card_tokens", array("json_data" => array("card_id" => "cardId" )));
 print_r ($card_token);
 ?>
  ```
@@ -107,7 +107,7 @@ $payment = $mp->post("/v1/payments", $payment_data);
 
 ## Listen for notifications of payments
 
- Every time a payment is made and there is a novelty about the payment, Mercado Pago will send you a notification so you can update your systems. You can see the step by step in our section of [notifications](/developers/en/guides/additional-content/notifications/webhooks/webhooks)
+ Every time a payment is made and there is a novelty about the payment, Mercado Pago will send you a notification so you can update your systems. You can see the step by step in our section of [notifications](/developers/en/guides/additional-content/your-integrations/notifications/webhooks)
  
  ## Retries
 
@@ -130,7 +130,7 @@ $payment = $mp->post("/v1/payments", $payment_data);
 | Perú | 4009 1753 3280 6176 | no disponible | no disponible |
 | Uruguay | 4157 2362 1173 6486 |5808 8877 7464 1586| no disponible |
 
-Also [you can use test cards of local payment methods in each country](/developers/en/guides/additional-content/testing/test-cards).
+Also [you can use test cards of local payment methods in each country](/developers/en/guides/additional-content/additional-content/your-integrations/test/cards).
 Test all possible scenarios of approved, pending or rejected payment. To do this you must enter in the form in the field `card_holder_name` any of the following prefixes:
 
 * **APRO**: Pago aprobado.  

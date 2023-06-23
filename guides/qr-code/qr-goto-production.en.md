@@ -1,6 +1,6 @@
 # Go to production
 
-Once your application is **ready and running** in test mode, you can start processing payments by [activating your credentials](/developers/en/docs/qr-code/additional-content/credentials), and **requesting the homologation process to the integrations team**.
+Once your application is **ready and running** in test mode, you can start processing payments by [activating your credentials](/developers/en/docs/qr-code/additional-content/your-integrations/credentials), and **requesting the homologation process to the integrations team**.
 
 ## Homologation
 

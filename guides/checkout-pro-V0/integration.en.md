@@ -23,7 +23,7 @@ Installing the Checkout Pro consists of two main steps:
 >
 > &nbsp;1. Generate your preference
 
-Add the [Mercado Pago SDK](/developers/pt/docs/checkout-pro/requirements#bookmark_pré_requisitos#bookmark_previous_requirements) and the needed [credentials](/developers/en/docs/checkout-pro/additional-content/credentials) in your project to enable the use of preferences:
+Add the [Mercado Pago SDK](/developers/pt/docs/checkout-pro/requirements#bookmark_pré_requisitos#bookmark_previous_requirements) and the needed [credentials](/developers/en/docs/checkout-pro/additional-content/your-integrations/credentials) in your project to enable the use of preferences:
 :
 
 [[[

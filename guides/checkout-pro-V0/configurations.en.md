@@ -987,7 +987,7 @@ Use headers in your payment preference to work with metrics, adding the identifi
 >
 > Note
 >
-> Remember to add the `integrator_id` it to your integrations to receive additional benefits of the program. You can find your `integrator_id` in your developer [Dashboard](/developers/en/docs/checkout-pro/additional-content/dashboard/introduction).
+> Remember to add the `integrator_id` it to your integrations to receive additional benefits of the program. You can find your `integrator_id` in your developer [Dashboard](/developers/en/docs/checkout-pro/additional-content/your-integrations/introduction).
 
 [[[
 ```php
