@@ -124,7 +124,7 @@ const onReady = async () => {
 > 
 > Attention
 >
-> If it is necessary to dismantle and reassemble a Brick, it is recommended to destroy the current instance and generate a new one. To do so, use the *unmount* method available in Brick's *controller*, in this case: `window.paymentBrickController.unmount()`.
+> Whenever the user leaves the screen where some Brick is displayed, it is necessary to destroy the current instance with the command `window.walletBrickController.unmount()`. When entering again, a new instance must be generated.
 
 This [preference onSubmit](/developers/en/docs/checkout-bricks/wallet-brick/configure-integration/preference-onsubmit) creation flow is designed for sellers who have one-click flows, if you want, you can also send preference on startup. See more information in the [Preference on startup](/developers/en/docs/checkout-bricks/wallet-brick/additional-customization/preference-startup) section.
 
@@ -168,7 +168,7 @@ The result of rendering the Brick should look like the image below.
 
 To use a payment method (paymentMethods) of the "mercadoPago" type, a preference must be sent during Brick initialization, replacing the value <PREFERENCE_ID> by the ID of the preference created.
 
-To create a preference in your backend, add the [Mercado Pago SDK](/developers/en/docs/sdks-library/landing) and the necessary [credentials](/developers/en/guides/additional-content/credentials/credentials) to your project to enable the preference usage:
+To create a preference in your backend, add the [Mercado Pago SDK](/developers/en/docs/sdks-library/landing) and the necessary [credentials](/developers/en/guides/additional-content/your-integrations/credentials) to your project to enable the preference usage:
 
 [[[
 ```php

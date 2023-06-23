@@ -117,7 +117,7 @@ available_payments: credit, debit, mercadopago
 ----[mco]---- 
 
 ---
-available_payments: credit, debit, mercadopago
+available_payments: credit, debit, mercadopago, efectivo, pse
 
 ---
 ------------

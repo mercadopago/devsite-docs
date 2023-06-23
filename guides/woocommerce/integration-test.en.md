@@ -14,7 +14,7 @@ To activate test mode for your store, follow these steps:
 ## CheckoutPro
 1. Select the option **I want to pay with Mercado Pago at no additional cost**.
 1. Click **order with mandatory payment** to be redirected to the Mercado Pago payment environment.
-1. On the payment screen, choose to pay with a new credit card and use the [test cards](/developers/es/docs/woocommerce/additional-content/test-cards) to make the payment. It is important not to log in to the Mercado Pago account or try to pay with cards for personal use.
+1. On the payment screen, choose to pay with a new credit card and use the [test cards](/developers/es/docs/woocommerce/additional-content/your-integrations/test/cards) to make the payment. It is important not to log in to the Mercado Pago account or try to pay with cards for personal use.
 1. Add the information of the indicated test card (card number, CVV and expiration date).
 1. At the end of the purchase, you will be able to view, within Mercado Pago, proof that the purchase was made and you will be redirected back to the store.
 
@@ -25,7 +25,7 @@ To activate test mode for your store, follow these steps:
 ## Checkout API
 ------------
 1. Select the option **I want to pay by credit card**.
-1. Choose to pay with a new credit card and use the [test cards](/developers/es/docs/woocommerce/additional-content/test-cards) to make the payment. It is important not to pay with cards for personal use.
+1. Choose to pay with a new credit card and use the [test cards](/developers/es/docs/woocommerce/additional-content/your-integrations/test/cards) to make the payment. It is important not to pay with cards for personal use.
 1. Add the indicated test card information (card number, CVV and expiration date).
 1. Click **order with payment required**.
 1. At the end of the purchase, you can see that the purchase has been approved.

@@ -5,7 +5,7 @@
 > Importante
 >
 > * Esta integração está disponível apenas para Android versão 2.8.0 ou superior.<br>
-> * Não disponível para iOS.
+> * Não disponível para iOS. 
 
 A outra forma de integração com o aplicativo Mercado Pago para cobrar com nosso Point é através de nossas APIs.
 

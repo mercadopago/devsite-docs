@@ -1,6 +1,6 @@
 ---
 content_section_with_media: 
- - title: MercadoPago.js  V2
+ - title: SDK JS - ES Module
  - message: Version 2 of the client-side SDK has functions based on Promises. In addition, it has a renewed interface for developers and handles errors more efficiently.
  - media_image: /sdk/mpjsv1.png
 ---
@@ -24,22 +24,35 @@ bullet_section_with_media:
 
 >>>> Instalación <<<<
 
-To install the frontend SDK, you must include MercadoPago.js in the HTML of your application, as shown in the code below.
+To install the frontend SDK, include MercadoPago.js in your application's HTML or install the package on npm according to the code below.
 
 [[[
-```javascript
-<script src="https://sdk.mercadopago.com/js/v2"></script>
+```html
+<body>
+  <script src="https://sdk.mercadopago.com/js/v2"></script>
+</body>
+```
+```bash
+npm install @mercadopago/sdk-js
+
 ```
 ]]]
 
-Then, you must add the Public Key of the account you are integrating so that it can be identified when connecting to Mercado Pago. 
+Then, add the Public key of the account being integrated so that it can be identified when connecting to Mercado Pago. Learn more about Public key in [Credentials](/developers/en/docs/checkout-api/additional-content/your-integrations/credentials).
 
 [[[
+```html
+<script>
+  const mp = new MercadoPago("YOUR_PUBLIC_KEY");
+</script>
+```
 ```javascript
-const mp = new MercadoPago('YOUR_PUBLIC_KEY');
+import { loadMercadoPago } from "@mercadopago/sdk-js";
+
+
+await loadMercadoPago();
+const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
+
 ```
 ]]]
 
->
->Learn more about the Public Key at Credentials
->

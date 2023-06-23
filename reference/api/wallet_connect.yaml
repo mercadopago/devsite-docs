@@ -29,7 +29,7 @@ paths:
             por: ID único que identifica um cliente específico
           schema:
             type: number
-            example: 2451675580092619
+            example: <CLIENT.ID>
         - name: x-platform-id
           in: header
           description: Field intended for platforms or modules that offer Mercado Pago in their solutions
@@ -204,7 +204,7 @@ paths:
           required: true
           schema:
             type: number
-            example: 1451895580758649
+            example: <CLIENT.ID>
         - name: caller.id
           in: query
           description: Unique ID that identifies a specific Caller
@@ -215,7 +215,7 @@ paths:
           required: true
           schema:
             type: number
-            example: 832564722
+            example: <CALLER.ID>
         - name: x-platform-id
           in: header
           description: Field intended for platforms or modules that offer Mercado Pago in their solutions

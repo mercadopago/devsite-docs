@@ -989,7 +989,7 @@ Para trabalhar com métricas, utilize _headers_ na sua preferência de pagamento
 >
 > Nota
 >
-> Não deixe de adicionar o _header_ `integrator_id` em suas integrações para receber benefícios adicionais do programa. Você consegue encontrar seu `integrator_id` no seu [Dashboard de desenvolvedor](/developers/pt/docs/checkout-pro/additional-content/dashboard/introduction). 
+> Não deixe de adicionar o _header_ `integrator_id` em suas integrações para receber benefícios adicionais do programa. Você consegue encontrar seu `integrator_id` no seu [Painel do desenvolvedor](/developers/pt/docs/checkout-pro/additional-content/your-integrations/dashboard). 
 
 [[[
 ```php

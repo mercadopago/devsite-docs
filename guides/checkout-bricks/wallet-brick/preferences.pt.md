@@ -6,7 +6,6 @@ Você pode adaptar a integração do Wallet Brick ao seu modelo negócio configu
 Se você oferece compras de valores altos, por exemplo, pode aceitar [pagamentos com dois cartões de crédito](#bookmark_aceite_pagamentos_com_2_cartões_de_crédito) ou ainda [excluir meios de pagamento](#bookmark_defina_os_meios_de_pagamento_desejados) indesejados para a sua operação.
 
 ------------
-
 ----[mlm, mlc, mlu, mco, mpe]----
 Se você oferece compras de valores altos, por exemplo, pode [excluir meios de pagamento](#bookmark_defina_os_meios_de_pagamento_desejados) indesejados para a sua operação.
 
@@ -156,8 +155,148 @@ Se você oferece compras de valores altos, por exemplo, pode [excluir meios de p
 	]
 }
  ```
-------------
 
+------------
+----[mla, mlb, mlm]----
+## Parcelamento sem cartão
+
+Com o Mercado Pago é possível realizar um **parcelamento em até 12x sem um cartão de crédito**, essa opção de pagamento se chama **Mercado Crédito**.
+
+Ao oferecer esta opção na sua loja, seus clientes poderão comprar um produto hoje e pagar depois em parcelas. Para o seu negócio, a aprovação da compra é imediata e está garantida, sendo creditado o valor total adiantado e os seus clientes nos pagam depois.
+
+A primeira etapa para configurar pagamentos com Mercado Crédito é a criação da preferência. Para isso, envie um POST com o parâmetro `purpose` e o valor `onboarding_credits` ao endpoint [/checkout/preferences](/developers/pt/reference/preferences/_checkout_preferences/post) e execute a requisição ou, se preferir, utilize um dos nossos SDKs abaixo.
+
+[[[
+```php
+<?php
+// Cria um objeto de preferência
+$preference = new MercadoPago\Preference();
+
+// Cria um item na preferência
+$item = new MercadoPago\Item();
+$item->title = 'Meu produto';
+$item->quantity = 1;
+$item->unit_price = 75;
+$preference->items = array($item);
+$preference->purpose = 'onboarding_credits';
+$preference->save();
+?>
+```
+```node
+// Cria um objeto de preferência
+let preference = {
+  items: [
+    {
+      title: 'Meu produto',
+      unit_price: 100,
+      quantity: 1,
+    }
+  ],
+  purpose: 'onboarding_credits'
+};
+
+mercadopago.preferences.create(preference)
+.then(function(response){
+// Este valor substituirá a string "<%= global.id %>" no seu HTML
+  global.id = response.body.id;
+}).catch(function(error){
+  console.log(error);
+});
+```
+```java
+// Cria um objeto de preferência
+PreferenceClient client = new PreferenceClient();
+
+// Cria um item na preferência
+PreferenceItemRequest item =
+   PreferenceItemRequest.builder()
+       .title("Meu produto")
+       .quantity(1)
+       .unitPrice(new BigDecimal("75"))
+       .build();
+
+List<PreferenceItemRequest> items = new ArrayList<>();
+items.add(item);
+
+PreferenceRequest request =
+   PreferenceRequest.builder().items(items).purpose("onboarding_credits").build();
+
+client.create(request);
+```
+```ruby
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
+# Cria um objeto de preferência
+preference_data = {
+  items: [
+    {
+      title: 'Meu produto',
+      unit_price: 100,
+      quantity: 1
+    }
+  ],
+  purpose: 'onboarding_credits'
+}
+preference_response = sdk.preference.create(preference_data)
+preference = preference_response[:response]
+
+# Este valor substituirá a string "<%= @preference_id %>" no seu HTML
+@preference_id = preference['id']
+```
+```csharp
+// Cria o objeto de request da preferência
+var request = new PreferenceRequest
+{
+    Items = new List<PreferenceItemRequest>
+    {
+        new PreferenceItemRequest
+        {
+            Title = "Meu produto,
+            Quantity = 1,
+            CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
+            UnitPrice = 75m,
+        },
+    },
+    Purpose = "onboarding_credits",
+};
+// Cria a preferência
+var client = new PreferenceClient();
+Preference preference = await client.CreateAsync(request);
+```
+```python
+preference_data = {
+    "items": [
+        {
+            "title": "Meu produto",
+            "unit_price": 100,
+            "quantity": 1
+        }
+    ],
+    "purpose": "onboarding_credits"
+}
+
+preference_response = sdk.preference().create(preference_data)
+preference = preference_response["response"]
+```
+```curl
+curl -X POST \
+  'https://api.mercadopago.com/checkout/preferences' \
+  -H 'Content-Type: application/json' \
+  -H 'cache-control: no-cache' \
+  -H 'Authorization: Bearer **PROD_ACCESS_TOKEN**' \
+  -d '{
+    "items": [
+        {
+            "title": "Meu produto",
+            "quantity": 1,
+            "unit_price": 75
+        }
+    ],
+    "purpose": "onboarding_credits"
+}'
+```
+]]]
+
+------------
 ----[mla]----
 ## Defina os meios de pagamento desejados
 
@@ -172,7 +311,6 @@ Por meio da preferência de pagamento, você pode configurar um meio de pagament
 | `purpose` | Ao indicar o valor `wallet_purchase` neste método, o Wallet Brick apenas aceitará pagamentos de usuários cadastrados no Mercado Pago, com cartão e saldo em conta. |
 
 ------------
-
 ----[mlb]----
 ## Defina os meios de pagamento desejados
 
@@ -187,7 +325,6 @@ Por meio da preferência de pagamento, você pode configurar um meio de pagament
 | `purpose` | Ao indicar o valor `wallet_purchase` neste método, o Wallet Brick apenas aceitará pagamentos de usuários cadastrados no Mercado Pago, com cartão e saldo em conta. |
 
 ------------
-
 ----[mlm]----
 ## Defina os meios de pagamento desejados
 
@@ -202,7 +339,6 @@ Por meio da preferência de pagamento, você pode configurar um meio de pagament
 | `purpose` | Ao indicar o valor `wallet_purchase` neste método, o Wallet Brick apenas aceitará pagamentos de usuários cadastrados no Mercado Pago, com cartão e saldo em conta. |
 
 ------------
-
 ----[mlc, mco, mpe, mlu]----
 ## Defina os meios de pagamento desejados
 

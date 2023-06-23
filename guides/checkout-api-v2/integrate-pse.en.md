@@ -3,7 +3,7 @@
 
 With Mercado Pago Checkout API you can offer payments with **PSE -Secure Online Payments-**, the service that allows you to make purchases and payments over the Internet by debiting online resources directly from savings and checking accounts, or electronic deposits.
 
-To get a detailed list of all payment methods available for integration, send a **GET** with your **Access token** to the endpoint [/v1/payment_methods](/developers/en/reference/payment_methods/_payment_methods/get) and run the request or, if you prefer, make the request using the SDKs below.
+To get a detailed list of all payment methods available for integration, send a **GET** with your _Access_token_ to the endpoint [/v1/payment_methods](/developers/en/reference/payment_methods/_payment_methods/get) and run the request or, if you prefer, make the request using the SDKs below.
 
 [[[
 ```php
@@ -95,11 +95,9 @@ const mp = new MercadoPago('YOUR_PUBLIC_KEY');
 ```
 ]]]
 
-
 ## Add payment form
 
 With the `MercadoPago.js` library included, add the payment form below to your project to ensure the secure capture of buyer data. In this step, it is important to use the list you consulted to obtain the available payment methods to create the payment options you want to offer.
-
 
 [[[
 ```html
@@ -140,12 +138,11 @@ With the `MercadoPago.js` library included, add the payment form below to your p
 ```
 ]]]
 
-
 ## Get document types
 
 After configuring the credential, it is necessary to obtain the types of documents that will be part of filling out the payment form.
 
-By including the element of type `select` with the ID: `id = docType` that is on the form, it will be possible to automatically fill in the available options when calling the following function:
+By including the element of type `select` with the ID `id = docType` that is on the form, it will be possible to automatically fill in the available options when calling the following function:
 
 [[[
 ```javascript
@@ -511,7 +508,6 @@ The response will show the **pending status** until the buyer completes the paym
 > Important
 >
 > In case an error is returned when generating a payment, you can check the list of possible errors in the [API Reference](/developers/en/reference/payments/_payments/post) section.
-
 
 ## Expiration
 

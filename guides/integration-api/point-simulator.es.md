@@ -14,20 +14,25 @@ El simulador cuenta con dos modos de uso:
 
 ### 1. Configura tus credenciales
 
+> WARNING
+>
+> Atención
+>
+> El simulador solo funciona con [cuentas de prueba.](/developers/es/docs/mp-point/additional-content/create-test-user)
+
 Al utilizar el simulador por primera vez, deberás ingresar tus credenciales y seleccionar uno de tus dispositivos disponibles. 
 
 * **PDV mode:** debes ingresar tu `access-token` de prueba y el simulador te asignará un dispositivo virtual.
 
 * **Device mode:** debes ingresar tu `access-token` de prueba y la Identificación del dispositivo obtenido al [listar tus dispositivos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/integration-api/create-payment-intent#bookmark_obtén_el_listado_de_tus_dispositivos_disponibles).
 
-> WARNING
+> NOTE
 >
 > Importante
 > 
-> * Recuerda que para utilizar el simulador debes configurar un `access-token` de prueba (`TEST-XXXXX-XXXXX-XXXXXXX`) y lo puedes obtener en tus [integraciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/applications), opción **Mis credenciales > Credenciales de prueba**.
-> * Para consultar un pago realizado por el simulador a través de la [API de Pagos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/get), debes utilizar el `access-token` de prueba  (el mismo que se usa en el simulador).
-> * Si vas a hacer uso del modo device del simulador recuerda debes poner en el header `X-Test-Scope:sandbox` para lograr que el intento de pago llegue al dispositivo del simulador. 
-
+> Recuerda que para utilizar el simulador debes configurar un `access-token` de prueba (`TEST-XXXXX-XXXXX-XXXXXXX`) y lo puedes obtener en tus [integraciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/applications), opción **Mis credenciales > Credenciales de prueba**.
+> Para consultar un pago realizado por el simulador a través de la [API de Pagos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/get), debes utilizar el `access-token` de prueba  (el mismo que se usa en el simulador).
+> Si vas a hacer uso del modo device del simulador recuerda debes poner en el header `X-Test-Scope:sandbox` para lograr que el intento de pago llegue al dispositivo del simulador. 
 
 ### 2. Simula una intención de pago
 
@@ -52,9 +57,5 @@ Si el paso anterior fue exitoso, puedes dar clic en la animación de la tarjeta,
 
 Si realizaste los pasos de configuración de las [notificaciones Webhooks](/developers/es/docs/mp-point/integration-configuration/integrate-with-pdv/notifications), es momento de que revises tus registros. Allí verás que fue enviada la notificación del estado de la transacción.
 
-> NOTE
->
-> Nota
->
 > El simulador te permitirá realizar pagos de prueba. Puedes consultar toda la información correspondiente en la sección [API de Pagos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/get).
 

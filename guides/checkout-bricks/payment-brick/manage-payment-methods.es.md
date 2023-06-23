@@ -69,6 +69,7 @@ La siguiente tabla muestra los medios de pago disponibles:
 | debitCard | string[] |  Para conocer los montos de tarjetas de débito disponibles, consulte la API [Obtener medios de pago](/developers/es/reference/payment_methods/_payment_methods/get). |
 | mercadoPago | string[] |  ['wallet_purchase'] |
 | ticket | string[] |  ['efecty'] |
+| bankTransfer |  string[] | ['pse'] |
 
 ------------
 ----[mlu]---- 

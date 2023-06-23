@@ -11,7 +11,6 @@
 Creae la configuración de inicio de Brick
 
 ----[mlb]----
-
 [[[
 ```Javascript
 const renderPaymentBrick = async (bricksBuilder) => {
@@ -126,7 +125,6 @@ const onReady = async () => {
 
 ------------
 ----[mlm]----
-
 [[[
 ```Javascript
 const renderPaymentBrick = async (bricksBuilder) => {
@@ -240,122 +238,7 @@ const onReady = async () => {
 ]]]
 
 ------------
-----[mla, mlu, mpe, mco]----
-
-[[[
-```Javascript
-const renderPaymentBrick = async (bricksBuilder) => {
- const settings = {
-   initialization: {
-     /*
-      "amount" es el monto total a pagar por todos los medios de pago con excepción de la Cuenta de Mercado Pago y Cuotas sin tarjeta de crédito, las cuales tienen su valor de procesamiento determinado en el backend a través del "preferenceId"
-     */
-     amount: 100,
-     preferenceId: "<PREFERENCE_ID>",
-   },
-   customization: {
-     paymentMethods: {
-       ticket: "all",
-       creditCard: "all",
-       debitCard: "all",
-       mercadoPago: "all",
-     },
-   },
-   callbacks: {
-     onReady: () => {
-       /*
-        Callback llamado cuando el Brick está listo.
-        Aquí puede ocultar cargamentos de su sitio, por ejemplo.
-       */
-     },
-     onSubmit: ({ selectedPaymentMethod, formData }) => {
-       // callback llamado al hacer clic en el botón enviar datos
-       return new Promise((resolve, reject) => {
-         fetch("/process_payment", {
-           method: "POST",
-           headers: {
-             "Content-Type": "application/json",
-           },
-           body: JSON.stringify(formData),
-         })
-           .then((response) => response.json())
-           .then((response) => {
-             // recibir el resultado del pago
-             resolve();
-           })
-           .catch((error) => {
-             // manejar la respuesta de error al intentar crear el pago
-             reject();
-           });
-       });
-     },
-     onError: (error) => {
-       // callback llamado para todos los casos de error de Brick
-       console.error(error);
-     },
-   },
- };
- window.paymentBrickController = await bricksBuilder.create(
-   "payment",
-   "paymentBrick_container",
-   settings
- );
-};
-renderPaymentBrick(bricksBuilder);
-```
-```react-jsx
-const initialization = {
- amount: 100,
- preferenceId: "<PREFERENCE_ID>",
-};
-const customization = {
- paymentMethods: {
-   ticket: "all",
-   creditCard: "all",
-   debitCard: "all",
-   mercadoPago: "all",
- },
-};
-const onSubmit = async (
- { selectedPaymentMethod, formData }
-) => {
- // callback llamado al hacer clic en el botón enviar datos
- return new Promise((resolve, reject) => {
-   fetch("/process_payment", {
-     method: "POST",
-     headers: {
-       "Content-Type": "application/json",
-     },
-     body: JSON.stringify(formData),
-   })
-     .then((response) => response.json())
-     .then((response) => {
-       // recibir el resultado del pago
-       resolve();
-     })
-     .catch((error) => {
-       // manejar la respuesta de error al intentar crear el pago
-       reject();
-     });
- });
-};
-const onError = async (error) => {
- // callback llamado para todos los casos de error de Brick
- console.log(error);
-};
-const onReady = async () => {
- /*
-   Callback llamado cuando el Brick está listo.
-   Aquí puede ocultar cargamentos de su sitio, por ejemplo.
- */
-};
-```
-]]]
-
-------------
-
 ----[mlc]----
-
 [[[
 ```Javascript
 
@@ -469,12 +352,238 @@ const onReady = async () => {
 ]]]
 
 ------------
+----[mco]----
+[[[
+```Javascript
+const renderPaymentBrick = async (bricksBuilder) => {
+ const settings = {
+   initialization: {
+     /*
+      "amount" es el monto total a pagar por todos los medios de pago con excepción de la Cuenta de Mercado Pago y Cuotas sin tarjeta de crédito, las cuales tienen su valor de procesamiento determinado en el backend a través del "preferenceId"
+     */
+     amount: 10000,
+     preferenceId: "<PREFERENCE_ID>",
+   },
+   customization: {
+     paymentMethods: {
+       ticket: "all",
+       bankTransfer: "all",
+       creditCard: "all",
+       debitCard: "all",
+       mercadoPago: "all",
+     },
+   },
+   callbacks: {
+     onReady: () => {
+       /*
+        Callback llamado cuando el Brick está listo.
+        Aquí puede ocultar cargamentos de su sitio, por ejemplo.
+       */
+     },
+     onSubmit: ({ selectedPaymentMethod, formData }) => {
+       // callback llamado al hacer clic en el botón enviar datos
+       return new Promise((resolve, reject) => {
+         fetch("/process_payment", {
+           method: "POST",
+           headers: {
+             "Content-Type": "application/json",
+           },
+           body: JSON.stringify(formData),
+         })
+           .then((response) => response.json())
+           .then((response) => {
+             // recibir el resultado del pago
+             resolve();
+           })
+           .catch((error) => {
+             // manejar la respuesta de error al intentar crear el pago
+             reject();
+           });
+       });
+     },
+     onError: (error) => {
+       // callback llamado para todos los casos de error de Brick
+       console.error(error);
+     },
+   },
+ };
+ window.paymentBrickController = await bricksBuilder.create(
+   "payment",
+   "paymentBrick_container",
+   settings
+ );
+};
+renderPaymentBrick(bricksBuilder);
+```
+```react-jsx
+const initialization = {
+ amount: 10000,
+ preferenceId: "<PREFERENCE_ID>",
+};
+const customization = {
+ paymentMethods: {
+   ticket: "all",
+   bankTransfer: "all",
+   creditCard: "all",
+   debitCard: "all",
+   mercadoPago: "all",
+ },
+};
+const onSubmit = async (
+ { selectedPaymentMethod, formData }
+) => {
+ // callback llamado al hacer clic en el botón enviar datos
+ return new Promise((resolve, reject) => {
+   fetch("/process_payment", {
+     method: "POST",
+     headers: {
+       "Content-Type": "application/json",
+     },
+     body: JSON.stringify(formData),
+   })
+     .then((response) => response.json())
+     .then((response) => {
+       // recibir el resultado del pago
+       resolve();
+     })
+     .catch((error) => {
+       // manejar la respuesta de error al intentar crear el pago
+       reject();
+     });
+ });
+};
+const onError = async (error) => {
+ // callback llamado para todos los casos de error de Brick
+ console.log(error);
+};
+const onReady = async () => {
+ /*
+   Callback llamado cuando el Brick está listo.
+   Aquí puede ocultar cargamentos de su sitio, por ejemplo.
+ */
+};
+```
+]]]
+
+------------
+----[mla, mlu, mpe]----
+[[[
+```Javascript
+const renderPaymentBrick = async (bricksBuilder) => {
+ const settings = {
+   initialization: {
+     /*
+      "amount" es el monto total a pagar por todos los medios de pago con excepción de la Cuenta de Mercado Pago y Cuotas sin tarjeta de crédito, las cuales tienen su valor de procesamiento determinado en el backend a través del "preferenceId"
+     */
+     amount: 100,
+     preferenceId: "<PREFERENCE_ID>",
+   },
+   customization: {
+     paymentMethods: {
+       ticket: "all",
+       creditCard: "all",
+       debitCard: "all",
+       mercadoPago: "all",
+     },
+   },
+   callbacks: {
+     onReady: () => {
+       /*
+        Callback llamado cuando el Brick está listo.
+        Aquí puede ocultar cargamentos de su sitio, por ejemplo.
+       */
+     },
+     onSubmit: ({ selectedPaymentMethod, formData }) => {
+       // callback llamado al hacer clic en el botón enviar datos
+       return new Promise((resolve, reject) => {
+         fetch("/process_payment", {
+           method: "POST",
+           headers: {
+             "Content-Type": "application/json",
+           },
+           body: JSON.stringify(formData),
+         })
+           .then((response) => response.json())
+           .then((response) => {
+             // recibir el resultado del pago
+             resolve();
+           })
+           .catch((error) => {
+             // manejar la respuesta de error al intentar crear el pago
+             reject();
+           });
+       });
+     },
+     onError: (error) => {
+       // callback llamado para todos los casos de error de Brick
+       console.error(error);
+     },
+   },
+ };
+ window.paymentBrickController = await bricksBuilder.create(
+   "payment",
+   "paymentBrick_container",
+   settings
+ );
+};
+renderPaymentBrick(bricksBuilder);
+```
+```react-jsx
+const initialization = {
+ amount: 100,
+ preferenceId: "<PREFERENCE_ID>",
+};
+const customization = {
+ paymentMethods: {
+   ticket: "all",
+   creditCard: "all",
+   debitCard: "all",
+   mercadoPago: "all",
+ },
+};
+const onSubmit = async (
+ { selectedPaymentMethod, formData }
+) => {
+ // callback llamado al hacer clic en el botón enviar datos
+ return new Promise((resolve, reject) => {
+   fetch("/process_payment", {
+     method: "POST",
+     headers: {
+       "Content-Type": "application/json",
+     },
+     body: JSON.stringify(formData),
+   })
+     .then((response) => response.json())
+     .then((response) => {
+       // recibir el resultado del pago
+       resolve();
+     })
+     .catch((error) => {
+       // manejar la respuesta de error al intentar crear el pago
+       reject();
+     });
+ });
+};
+const onError = async (error) => {
+ // callback llamado para todos los casos de error de Brick
+ console.log(error);
+};
+const onReady = async () => {
+ /*
+   Callback llamado cuando el Brick está listo.
+   Aquí puede ocultar cargamentos de su sitio, por ejemplo.
+ */
+};
+```
+]]]
+
+------------
 
 > WARNING
 > 
 > Atención
 >
-> Si es necesario desmontar y volver a montar un Brick, se recomienda destruir la instancia actual y generar una nueva. Para hacerlo, usa el método *unmount* disponible en el *controller* de Brick, en este caso: `window.paymentBrickController.unmount()`.
+> Cada vez que el usuario sale de la pantalla donde se muestra algún Brick, es necesario destruir la instancia actual con el comando `window.paymentBrickController.unmount()`. Al ingresar nuevamente se debe generar una nueva instancia.
 
 Para utilizar un método de pago (`paymentMethods`) del tipo "mercadoPago", se debe enviar una preferencia durante la inicialización del Brick, reemplazando el valor `<PREFERENCE_ID>` por el ID de la preferencia creada. Las instrucciones para crear una preferencia se encuentran en la sección [Habilitar pago con Mercado Pago](/developers/es/docs/checkout-bricks/payment-brick/default-rendering#bookmark_habilitar_pago_con_mercado_pago).
 
@@ -515,7 +624,6 @@ El resultado de renderizar el Brick debería parecerse a la imagen de abajo.
 </center>
 
 ------------
-
 ----[mla]----
 <center>
 
@@ -524,7 +632,6 @@ El resultado de renderizar el Brick debería parecerse a la imagen de abajo.
 </center>
 
 ------------
-
 ----[mlm]----
 <center>
 
@@ -533,8 +640,16 @@ El resultado de renderizar el Brick debería parecerse a la imagen de abajo.
 </center>
 
 ------------
+----[mco]----
+<center>
 
-----[mpe, mco, mlu, mlc]----
+![payment-brick-layout-mco](checkout-bricks/payment-brick-layout-mco-es.gif)
+
+</center>
+
+------------
+
+----[mpe, mlu, mlc]----
 <center>
 
 ![payment-brick-layout-all](checkout-bricks/payment-brick-layout-all-es.gif)
@@ -547,7 +662,7 @@ El resultado de renderizar el Brick debería parecerse a la imagen de abajo.
 
 Para utilizar un método de pago (paymentMethods) del tipo "mercadoPago", se debe enviar una preferencia durante la inicialización del Brick, reemplazando el valor <PREFERENCE_ID> por el ID de la preferencia creada.
 
-Para crear una preferencia en su backend, agrega el [SDK de Mercado Pago](/developers/es/docs/sdks-library/landing) y las [credenciales](/developers/es/guides/additional-content/credentials/credentials) necesarias a tu proyecto para habilitar el uso de preferencias:
+Para crear una preferencia en su backend, agrega el [SDK de Mercado Pago](/developers/es/docs/sdks-library/landing) y las [credenciales](/developers/es/guides/additional-content/your-integrations/credentials) necesarias a tu proyecto para habilitar el uso de preferencias:
 
 [[[
 ```php

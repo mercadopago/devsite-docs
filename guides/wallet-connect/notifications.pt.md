@@ -12,7 +12,7 @@ Após receber uma notificação na sua plataforma, o Mercado Pago aguardará uma
 >
 > Importante
 >
-> As notificações Webhooks poderão ser configuradas para uma ou mais aplicações criadas em seu Dashboard.
+> As notificações Webhooks poderão ser configuradas para uma ou mais aplicações criadas em seu Painel do desenvolvedor.
 
 
 ## Pré-requisitos
@@ -150,13 +150,13 @@ Na tabela abaixo mostramos com mais detalhes os possíveis valores que são envi
 
 ## Configuração 
 
-A configuração dos webhooks é feita através do Dashboard. Abaixo explicaremos como indicar as URLs que serão notificadas e como configurar os eventos dos quais se receberá a notificação.
+A configuração dos webhooks é feita através do Painel do desenvolvedor. Abaixo explicaremos como indicar as URLs que serão notificadas e como configurar os eventos dos quais se receberá a notificação.
 
 ![webhooks](/images/notifications/webhooks_pt.png)
 
 
-1. Se ainda não tiver uma aplicação criada, acesse seu [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) e clique em **Entrar** para fazer seu login caso ainda não esteja logado.
-2. Com a aplicação criada, acesse a aba Notificações Webhooks em seu Dashboard e configure as [URLs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/webhooks) de **produção** e **teste** da qual serão recebidas as notificações. 
+1. Se ainda não tiver uma aplicação criada, acesse seu [Painel do desenvolvedor](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) e clique em **Entrar** para fazer seu login caso ainda não esteja logado.
+2. Com a aplicação criada, acesse a aba Notificações Webhooks em seu Painel do desenvolvedor e configure as [URLs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/webhooks) de **produção** e **teste** da qual serão recebidas as notificações. 
 3. Você também poderá experimentar e testar se a URL indicada está recebendo as notificações corretamente, podendo verificar a solicitação, a resposta dada pelo servidor e a descrição do evento.
 4. Caso seja necessário identificar múltiplas contas, no final do URL indicada você poderá indicar o parâmetro `?customer=(sellername) endpoint` para identificar os vendedores.
 5. Em seguida, selecione o evento **Wallet Connect** do qual você receberá notificações em formato `json` através de um `HTTP POST` para a URL especificada anteriormente. Um evento é qualquer tipo de atualização no objeto relatado, incluindo alterações de status ou atributo. Veja na tabela abaixo os eventos que poderão ser configurados.
