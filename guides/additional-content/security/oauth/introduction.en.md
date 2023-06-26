@@ -1,10 +1,4 @@
 # OAuth
-
-> WARNING
->
-> Important
->
-> As of July 1, 2023, all OAuth integrations that will not serve the required standards will receive an error response and will not be validated. Make sure you adhere to the [Best practices for OAuth integration](/developers/en/security/oauth/best-practices) and, for more information, visit [API Reference](/developers/en/reference/oauth/_oauth_token/post).
  
 OAuth is an authorization protocol that allows applications to have limited access to the private information of Mercado Pago accounts, through the HTTP protocol that introduces an authentication and authorization layer in which you request access to the protected resources of sellers, through an access token limited to a particular application, without the need for the credentials of the sellers through the access flows.
  

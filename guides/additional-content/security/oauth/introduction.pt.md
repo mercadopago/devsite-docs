@@ -1,10 +1,5 @@
 # OAuth
- 
-> WARNING
->
-> Importante
->
-> A partir de 1º de julho de 2023, todas as integrações OAuth que não atenderem aos padrões exigidos receberão uma resposta de erro e não serão validadas. Certifique-se de aderir às [Boas práticas de uso do OAuth](/developers/pt/security/oauth/best-practices) e, para obter mais informações, visite [Referência da API](/developers/es/reference/oauth/_oauth_token/post).
+
 
 OAuth é um protocolo de autorização que permite que aplicações tenham acesso limitado às informações privadas de contas Mercado Pago através do protocolo HTTP que introduz uma camada de autenticação e autorização na qual você solicita acesso a recursos protegidos dos vendedores mediante um token de acesso limitado à uma determinada aplicação sem precisar das credenciais dos vendedores através de fluxos de acesso.
  
