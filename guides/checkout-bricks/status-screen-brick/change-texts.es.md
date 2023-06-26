@@ -12,26 +12,28 @@
 | Observaciones  | Al enviar texto vacío, la pantalla presentará el texto definido por el layout predeterminado. En cambio, al enviar un texto personalizado, reemplazará el texto predeterminado. <br><br>  Si los textos personalizados son más grandes que el espacio disponible, el texto mostrado se interrumpirá hasta el tamaño máximo permitido y el excedente será reemplazado por el símbolo "...".  |
 
 [[[
-```Javascript
+```javascript
 const settings = {
-   ...,
-   customization: {
-       visual: {
-           texts: {
-               ctaGeneralErrorLabel: 'Custom Label',
-               ...,
-           },
-       }
-   },
-}
+    customization: {
+        visual: {
+            texts: {
+                ctaGeneralErrorLabel: "",
+                ctaCardErrorLabel: "",
+                ctaReturnLabel: "",
+            },
+        },
+    },
+};
 ```
 ```react-jsx
 const customization = {
- visual: {
-   texts: {
-     ctaGeneralErrorLabel: 'Custom Label'
-   }
- }
+    visual: {
+        texts: {
+            ctaGeneralErrorLabel: "",
+            ctaCardErrorLabel: "",
+            ctaReturnLabel: "",
+        },
+    },
 };
 ```
 ]]]

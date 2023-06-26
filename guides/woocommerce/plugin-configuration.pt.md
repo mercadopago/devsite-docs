@@ -14,7 +14,7 @@ A seguir, explicaremos como configurar cada item do plugin. Clique nos títulos 
 ## Integrar loja ao Mercado Pago
 
 As credenciais de teste e produção são solicitadas neste campo.
-1. Clique no botão **Verificar credenciais** para entrar no painel do Mercado Pago e ver suas credenciais. Você também pode acessar suas credenciais em [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app). **Importante**: Observe que as credenciais de teste serão solicitadas primeiro e depois as credenciais de produção.
+1. Clique no botão **Verificar credenciais** para entrar no painel do Mercado Pago e ver suas credenciais. Você também pode acessar suas credenciais em [Painel do desenvolvedor](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app). **Importante**: Observe que as credenciais de teste serão solicitadas primeiro e depois as credenciais de produção.
 2. Preencha os campos solicitados e clique em **Salvar e continuar**.
 
 ## Personalizar negócio

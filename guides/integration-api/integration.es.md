@@ -52,7 +52,7 @@ Luego, necesitarás crear una aplicación para obtener las credenciales. Es fác
 
 ### Accede a las credenciales de tu aplicación
 
-Una vez que tengas una aplicación creada, podrás acceder a [tus credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/credentials). Con ellas puedes conectar una integración a tu cuenta y configurarla a tu manera.
+Después de crear una aplicación, puedes acceder a ellas en Detalles de la aplicación > Credenciales dentro del [Panel del desarrollador](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app). Con ellas puedes conectar una integración a tu cuenta y configurarla a tu manera.
 
 ### Genera usuarios de prueba
 

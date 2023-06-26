@@ -37,7 +37,7 @@ npm install @mercadopago/sdk-js
 ```
 ]]]
 
-Em seguida, adicione a _Public key_ da conta que está sendo integrada para que seja possível identificá-la ao conectar com o Mercado Pago. Saiba mais sobre a _Public key_ em [Credenciais](/developers/pt/docs/checkout-api/additional-content/credentials).
+Em seguida, adicione a _Public key_ da conta que está sendo integrada para que seja possível identificá-la ao conectar com o Mercado Pago. Saiba mais sobre a _Public key_ em [Credenciais](/developers/pt/docs/checkout-api/additional-content/your-integrations/credentials).
 
 [[[
 ```html

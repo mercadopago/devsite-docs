@@ -25,7 +25,7 @@ Check below the texts available for alteration and a code example.
 | Key | Available options | Default |
 |--- |--- | --- |
 | action | pay, buy | pay |
-| valueProp | practicality, convenience, security_details, security_safety | security_safety |
+| valueProp | practicality, convenience_all, security_details, security_safety, smart_option, convenience_credits | security_safety |
 
 See the texts related to each option:
 
@@ -34,16 +34,24 @@ See the texts related to each option:
 |action |pay | Pay with Mercado Pago |
 |action |buy | Buy with Mercado Pago |
 |valueProp |practicality | Use saved cards or your account balance |
-|valueProp |convenience | Installment with or without card |
+|valueProp |convenience_all | Installment with or without card |
 |valueProp |security_details | Protection for your data |
 |valueProp |security_safety | Pay securely |
+|valueProp |smart_option| The text will be chosen automatically by Wallet Brick to increase the chances of sale according to the characteristics of the purchase. |
+|valueProp |convenience_credits| Up to 12 installments without card |
+
+> NOTE
+>
+> Important
+>
+> To use the Value Prop of `convenience_credits`, the Brick must be [initialized with a preference](/developers/en/docs/checkout-bricks/wallet-brick/additional-customization/preference-startup) and the preference must have the `purpose` from [onboarding_credits.](/developers/en/docs/checkout-bricks/wallet-brick/additional-customization/preferences)
 
 ------------
 ----[mlu, mlc, mco, mpe]----
 | Key | Available options | Default |
 |--- |--- | --- |
 | action | pay, buy | pay |
-| valueProp | practicality, security_details, security_safety | security_safety |
+| valueProp | practicality, security_details, security_safety, smart_option | security_safety |
 
 See the texts related to each option:
 
@@ -54,6 +62,7 @@ See the texts related to each option:
 |valueProp |practicality | Use saved cards or your account balance |
 |valueProp |security_details | Protection for your data |
 |valueProp |security_safety | Pay securely |
+|valueProp |smart_option| The text will be chosen automatically by Wallet Brick to increase the chances of sale according to the characteristics of the purchase. |
 
 ------------
 
