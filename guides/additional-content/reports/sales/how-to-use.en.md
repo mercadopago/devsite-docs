@@ -8,15 +8,7 @@ To consult it, we recommend downloading it in *.csv* format and opening it in a 
 
 ### What does the report contain?
 
-The report consists of a list of transactions made by the sellers linked to a marketplace. Each row represents an independent transaction with details about the different amounts and fees, as well as their **status** and **status_detail**.
-
-| Status   | Status_detail                      |
-| -------- | --------------------------------- |
-| Approved | accredited                        |
-| Rejected | cc_rejected_insufficient_amount   |
-| Rejected | cc_rejected_bad_filled_security_code |
-| Rejected | cc_rejected_other_reason          |
-| Rejected | cc_rejected_high_risk             |
+The report consists of a list of transactions made by the sellers linked to a marketplace. Each row represents an independent transaction with details about the different amounts and fees, as well as their **status** and **status_detail**. The `status` field indicates whether the payment was approved or not, while the `status_detail` field provides more details, including the reasons for rejection. You can find more information about the ***status*** and ***status_detail*** in the **Response Parameters** section of the [Payments API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments/post) documentation.
 
 > NOTE
 >

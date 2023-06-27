@@ -8,15 +8,7 @@ Para consultarlo, te recomendamos descargarlo en formato *.csv* y abrirlo, o bie
 
 ### ¿Qué contiene el reporte?
 
-El reporte está compuesto por un listado de transacciones realizadas por los *sellers* vinculados a un marketplace. Cada fila representa una transacción independiente con el detalle de los distintos montos y *fees*, así como su **status** y **status_detail**. 
-
-| Status   | Status_detail                      |
-| -------- | --------------------------------- |
-| Approved | accredited                        |
-| Rejected | cc_rejected_insufficient_amount   |
-| Rejected | cc_rejected_bad_filled_security_code |
-| Rejected | cc_rejected_other_reason          |
-| Rejected | cc_rejected_high_risk             |
+El reporte está compuesto por un listado de transacciones realizadas por los *sellers* vinculados a un marketplace. Cada fila representa una transacción independiente con el detalle de los distintos montos y *fees*, así como su **status** y **status_detail**. El campo de `status` indica si el pago fue aprobado o no, mientras que el campo `status_detail` proporciona más detalles, incluidos los motivos del rechazo. Puedes encontrar más información sobre los ***status*** y ***status_detail*** en la sección **Parámetros de respuesta** de la documentación de la [API de Pagos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments/post).
 
 > NOTE
 >
