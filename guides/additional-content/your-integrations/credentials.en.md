@@ -1,6 +1,6 @@
 # Credentials
 
-Credentials are unique passwords used to identify an integration in your account. They play a key role in securely capturing payments in online stores and other applications. You can find them in the **Application details > Credentials** within the [Developer dashboard](/developers/panel/app) or in your Mercado Pago account by accessing [Your Business > Settings > Management and Administration > Credentials](https://www.mercadopago/settings/account/credentials).
+Credentials are unique passwords used to identify an integration in your account. They play a key role in securely capturing payments in online stores and other applications. You can find them in the **Application details > Credentials** within the [Developer dashboard](/developers/panel/app) or in your Mercado Pago account by accessing [Your Business > Settings > Management and Administration > Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).
 
 > WARNING
 >
