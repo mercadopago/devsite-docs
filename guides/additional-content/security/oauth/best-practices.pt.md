@@ -29,7 +29,7 @@ Use o campo `grant_type` com o valor `authorization_code` em todas as suas requi
 
 ![oauth_grant_type](/images/oauth/oauth_granttype_v2.png)
 
-## Usando o campo 'state0 na solicitação do 'autorization code'
+## Usando o campo 'state' na solicitação do 'autorization code'
 
 Para aumentar a segurança da integração, inclua o parâmetro `state` no fluxo de solicitação do `authorization code`. Isso garantirá que a resposta pertença a uma solicitação iniciada pelo mesmo aplicativo.
 
