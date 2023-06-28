@@ -160,8 +160,8 @@ curl --location --request DELETE 'https://api.mercadopago.com/v1/account/marketp
 
 Uma vez que você tenha criado as configurações e agendado o envio do relatório de vendas do Marketplace, você poderá gerá-lo e obtê-lo automaticamente por e-mail ou manualmente através de um arquivo de texto. Os diagramas abaixo ilustram cada processo.
 
-[IMG]
-[IMG]
+![Automática](/images/manage-account/reports/marketplace-sales/image3.png)
+![Manual](/images/manage-account/reports/marketplace-sales/image4.png)
 
 ### Geração para download automático
 
@@ -182,7 +182,7 @@ curl --location 'https://api.mercadopago.com/v1/account/marketplace_sales_report
 
 A geração do relatório é um processo assíncrono. Por esse motivo, você receberá o e-mail que permitirá o download do relatório após alguns minutos.
 
-![Texto Alternativo](URL_da_Imagem)
+![Automática](/images/manage-account/reports/marketplace-sales/image1.png)
 
 ### Geração para download manual
 

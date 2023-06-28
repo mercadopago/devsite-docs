@@ -76,7 +76,9 @@ A continuación encontrarás un listado de los parámetros obligatorios y opcion
 | `columns`                 | Obligatorio              | Datos que se desean incluir en el informe. Para más detalles sobre cada uno, consulta los Usos del report.                                        |
 
 Una vez definidas estas configuraciones puedes continuar con la generación del reporte. Si, en cambio, deseas consultar las configuraciones definidas, sigue los pasos a continuación.
+
 ### Consulta y modificación de configuraciones anteriores
+
 Si ya has generado un reporte de ventas de Marketplace anteriormente, puedes consultar las configuraciones definidas y modificarlas, si así lo deseas. 
 
 Para consultar las configuraciones definidas previamente, envía un GET con el siguiente cURL:
@@ -162,6 +164,9 @@ curl --location --request DELETE 'https://api.mercadopago.com/v1/account/marketp
 Una vez que hayas creado las configuraciones y programado el envío del reporte de ventas de Marketplace, podrás generarlo y obtenerlo de manera automática, vía email, o de manera manual, vía archivo de texto. 
 En los diagramas a continuación puedes ver cómo es cada proceso.
 
+![Automática](/images/manage-account/reports/marketplace-sales/image3.png)
+![Manual](/images/manage-account/reports/marketplace-sales/image4.png)
+
 ### Generación para descarga automática
 
 Para realizar la generación del reporte y su descarga de manera automática, vía email, deberás hacerlo mediante el siguiente cURL:
@@ -181,7 +186,7 @@ curl --location 'https://api.mercadopago.com/v1/account/marketplace_sales_report
 
 La generación del reporte es un proceso asíncrono. Por este motivo, recibirás el email que te permitirá descargar el reporte luego de algunos minutos.  
 
-![Texto Alternativo](URL_da_Imagem)
+![Automática](/images/manage-account/reports/marketplace-sales/image1.png)
 
 ### Generación para descarga manual
 

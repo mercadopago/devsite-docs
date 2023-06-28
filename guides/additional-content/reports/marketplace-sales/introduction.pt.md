@@ -2,7 +2,7 @@
 
 ## O que é o relatório de vendas do Marketplace do Mercado Pago?
 
-O relatório de vendas do Marketplace do Mercado Pago é um novo tipo de relatório disponível para download nos formatos *csv* e xlsx*, que **permite que você tenha acesso a todas as informações relacionadas às transações dos vendedores vinculados**. Ele contém detalhes sobre as transações realizadas em um determinado período de tempo, as diferentes taxas (*fees*) relacionadas a cada transação, bem como os casos de liquidação de dinheiro, bloqueios e desbloqueios.
+O relatório de vendas do Marketplace do Mercado Pago é um novo tipo de relatório disponível para download nos formatos *csv* e *xlsx*, que **permite que você tenha acesso a todas as informações relacionadas às transações dos vendedores vinculados**. Ele contém detalhes sobre as transações realizadas em um determinado período de tempo, as diferentes taxas (*fees*) relacionadas a cada transação, bem como os casos de liquidação de dinheiro, bloqueios e desbloqueios.
 No momento, o relatório de vendas do Marketplace do Mercado Pago está disponível apenas por meio da API.
 
 ## Como faço para baixar o relatório?

@@ -12,8 +12,8 @@ O relatório é composto por uma lista de transações realizadas pelos vendedor
 
 > NOTE
 >
-> Além disso, na coluna **Net Received Amt LC**, você encontrará o impacto real em seu dinheiro.
+> Além disso, na coluna Net Received Amt LC, você encontrará o impacto real em seu dinheiro.
 
 Observe como o relatório de vendas do *Marketplace* está estruturado neste exemplo para identificar as operações e ler seus próprios relatórios:
 
-[IMG]
+![Exemplo para identificar operações e ler seus próprios relatórios](/images/manage-account/reports/marketplace-sales/image2.png)

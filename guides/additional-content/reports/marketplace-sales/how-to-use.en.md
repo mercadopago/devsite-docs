@@ -12,8 +12,8 @@ The report consists of a list of transactions made by the sellers linked to a ma
 
 > NOTE
 >
-> Additionally, in the **Net Received Amt LC** column, you will find the actual impact on your money.
+> Additionally, in the Net Received Amt LC column, you will find the actual impact on your money.
 
 Observe how the sales report of the *Marketplace* is structured in this example to identify the operations and read your own reports:
 
-[IMG]
+![Example to identify operations and read your own reports](/images/manage-account/reports/marketplace-sales/image2.png)

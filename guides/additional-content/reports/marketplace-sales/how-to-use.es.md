@@ -12,6 +12,8 @@ El reporte está compuesto por un listado de transacciones realizadas por los *s
 
 > NOTE
 >
-> Además, en la columna **Net Received Amt LC** encontrarás el impacto real sobre tu dinero.
+> Además, en la columna Net Received Amt LC encontrarás el impacto real sobre tu dinero.
 
 Observa cómo está compuesto el reporte de ventas de *Marketplace* en este ejemplo para identificar las operaciones y leer tus propios reportes:
+
+![Ejemplo para identificar las operaciones y leer tus propios reportes](/images/manage-account/reports/marketplace-sales/image2.png)
