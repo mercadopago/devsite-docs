@@ -26,7 +26,7 @@ Para **configurar Mercado Crédito en el checkout de tu tienda**, sigue los paso
 3. Localiza el plugin "Mercado Pago" y haz clic en **Editar**.
 4. Desplázate hasta la parte inferior de la página y haz clic en **Editar** en el sitio web de Mercado Pago.
 ----[mla, mlb]----
-5. EEn la pantalla, activa la opción **Financiación sin tarjeta de crédito**.
+5. En la pantalla, activa la opción **Financiación sin tarjeta de crédito**.
 
 ¡Listo! La modalidad de financiamiento está habilitada en tu tienda.
 
