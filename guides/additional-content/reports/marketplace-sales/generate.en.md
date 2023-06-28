@@ -167,7 +167,7 @@ Once you have created the settings and scheduled the delivery of the Marketplace
 
 To generate the report and automatically download it via email, you must use the following cURL:
 
-```bash
+```curl
 curl --location 'https://api.mercadopago.com/v1/account/marketplace_sales_report' \
 --header 'accept: application/json' \
 --header 'content-type: application/json' \
@@ -188,7 +188,7 @@ The report generation is an asynchronous process. For this reason, you will rece
 
 To generate the report and manually download it, you must do so using the following cURL:
 
-```bash
+```curl
 curl --location 'https://api.mercadopago.com/v1/account/marketplace_sales_report/{{REPORT_FILE_NAME}}' \
 --header 'Authorization: Bearer {{APP_USER_TOKEN}}'
 ```
