@@ -6,7 +6,7 @@ A continuación, encontrarás una guía de posibles errores y de buenas práctic
 
 ## Uso correcto de los valores en los header de la solicitud
 
-Utiliza siempre los header `accept` y `content-type` en tu solicitud POST. Ten cuidado de no agregar valores a los headers que no sean parte de la integración para evitar recibir un error de respuesta.
+Utiliza siempre los header `accept` y `content-type` en tu solicitud POST. Ten cuidado de no agregar valores a los headers que no sean parte de la integración para evitar recibir un error como respuesta.
 
 ![oauth_header](/images/oauth/oauth_header.png)
 
