@@ -16,7 +16,7 @@ Para crear la configuración del reporte de ventas de Marketplace por primera ve
 
 Si es la primera vez que configuras y generas el reporte de ventas de Marketplace, deberás enviar un POST con el siguiente cURL:
 
-```bash
+```curl
 curl --location 'https://api.mercadopago.com/v1/account/marketplace_sales_report/config' \
 --header 'accept: application/json' \
 --header 'content-type: application/json' \
@@ -83,7 +83,7 @@ Si ya has generado un reporte de ventas de Marketplace anteriormente, puedes con
 
 Para consultar las configuraciones definidas previamente, envía un GET con el siguiente cURL:
 
-```bash
+```curl
 curl --location 'https://api.mercadopago.com/v1/account/marketplace_sales_report/config' \
 --header 'accept: application/json' \
 --header 'content-type: application/json' \
@@ -92,7 +92,7 @@ curl --location 'https://api.mercadopago.com/v1/account/marketplace_sales_report
 
 Para modificar las configuraciones establecidas en reportes de ventas de Marketplace previos, envía un PUT con el siguiente cURL:
 
-```bash
+```curl
 curl --location 'https://api.mercadopago.com/v1/account/marketplace_sales_report/config' \
 --header 'accept: application/json' \
 --header 'content-type: application/json' \
@@ -141,7 +141,7 @@ curl --location 'https://api.mercadopago.com/v1/account/marketplace_sales_report
 
 Si a la hora de configurar tu reporte de ventas de Marketplace elegiste la periodicidad con la que deseas recibirlo, deberás también activar su envío programado. Puedes hacerlo mediante el siguiente cURL:
 
-```bash
+```curl
 curl --location --request POST 'https://api.mercadopago.com/v1/account/marketplace_sales_report/schedule' \
 --header 'accept: application/json' \
 --header 'content-type: application/json' \
@@ -152,7 +152,7 @@ curl --location --request POST 'https://api.mercadopago.com/v1/account/marketpla
 
 También es posible deshacer la programación del envío del reporte. Para eso, realiza un llamado con el siguiente cURL:
 
-```bash
+```curl
 curl --location --request DELETE 'https://api.mercadopago.com/v1/account/marketplace_sales_report/schedule' \
 --header 'accept: application/json' \
 --header 'content-type: application/json' \
@@ -171,7 +171,7 @@ En los diagramas a continuación puedes ver cómo es cada proceso.
 
 Para realizar la generación del reporte y su descarga de manera automática, vía email, deberás hacerlo mediante el siguiente cURL:
 
-```bash
+```curl
 curl --location 'https://api.mercadopago.com/v1/account/marketplace_sales_report' \
 --header 'accept: application/json' \
 --header 'content-type: application/json' \
@@ -192,7 +192,7 @@ La generación del reporte es un proceso asíncrono. Por este motivo, recibirás
 
 Para realizar la generación del reporte y realizar su descarga de manera manual, deberás realizarlo con el siguiente cURL: 
 
-```bash
+```curl
 curl --location 'https://api.mercadopago.com/v1/account/marketplace_sales_report/{{REPORT_FILE_NAME}}' \
 --header 'Authorization: Bearer {{APP_USER_TOKEN}}'
 ```
@@ -205,13 +205,13 @@ Dejamos a continuación una collection de Postman para que puedan utilizar como 
 
 Cuando desees consultar los reportes que tienes configurados, puedes hacerlo con el siguiente cURL:
 
-```bash
+```curl
 curl --location 'https://api.mercadopago.com/v1/account/marketplace_sales_report'/list?access_token={{USER_APP_TOKEN}}'
 ```
 
 El llamado devolverá una respuesta similar a la siguiente:
 
-```bash
+```curl
 [
     {
         "id": 34326722,

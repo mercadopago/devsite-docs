@@ -17,7 +17,7 @@ To create the Marketplace sales report configuration for the first time, follow 
 
 If this is the first time you set up and generate the Marketplace sales report, you must send a POST with the following cURL:
 
-```bash
+```curl
 curl --location 'https://api.mercadopago.com/v1/account/marketplace_sales_report/config' \
 --header 'accept: application/json' \
 --header 'content-type: application/json' \
@@ -80,7 +80,7 @@ If you have previously generated a Marketplace sales report, you can query the d
 
 To query the previously defined configurations, send a GET request with the following cURL:
 
-```bash
+```curl
 curl --location 'https://api.mercadopago.com/v1/account/marketplace_sales_report/config' \
 --header 'accept: application/json' \
 --header 'content-type: application/json' \
@@ -89,7 +89,7 @@ curl --location 'https://api.mercadopago.com/v1/account/marketplace_sales_report
 
 To modify the settings established in previous Marketplace sales reports, send a PUT request using the following cURL:
 
-```bash
+```curl
 curl --location 'https://api.mercadopago.com/v1/account/marketplace_sales_report/config' \
 --header 'accept: application/json' \
 --header 'content-type: application/json' \
@@ -138,7 +138,7 @@ curl --location 'https://api.mercadopago.com/v1/account/marketplace_sales_report
 
 If you chose the frequency for receiving your Marketplace sales report when configuring it, you will also need to enable scheduled delivery. You can do this using the following cURL:
 
-```bash
+```curl
 curl --location --request POST 'https://api.mercadopago.com/v1/account/marketplace_sales_report/schedule' \
 --header 'accept: application/json' \
 --header 'content-type: application/json' \
@@ -149,7 +149,7 @@ curl --location --request POST 'https://api.mercadopago.com/v1/account/marketpla
 
 You can also undo the scheduling of the report delivery. To do this, make a call using the following cURL:
 
-```bash
+```curl
 curl --location --request DELETE 'https://api.mercadopago.com/v1/account/marketplace_sales_report/schedule' \
 --header 'accept: application/json' \
 --header 'content-type: application/json' \
@@ -201,13 +201,13 @@ Here is a Postman collection that you can use as an example: file
 
 When you want to query the reports you have configured, you can do so with the following cURL:
 
-```bash
+```curl
 curl --location 'https://api.mercadopago.com/v1/account/marketplace_sales_report'/list?access_token={{USER_APP_TOKEN}}'
 ```
 
 The call will return a response similar to the following:
 
-```bash
+```curl
 [
     {
         "id": 34326722,

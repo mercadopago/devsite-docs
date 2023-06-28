@@ -17,7 +17,7 @@ Para criar as configurações do relatório de vendas do Marketplace pela primei
 
 Se esta é a primeira vez que você configura e gera o relatório de vendas do Marketplace, você deve enviar um POST com o seguinte cURL:
 
-```bash
+```curl
 curl --location 'https://api.mercadopago.com/v1/account/marketplace_sales_report/config' \
 --header 'accept: application/json' \
 --header 'content-type: application/json' \
@@ -80,7 +80,7 @@ Se você já gerou um relatório de vendas do Marketplace anteriormente, pode co
 
 Para consultar as configurações definidas anteriormente, envie um GET com o seguinte cURL:
 
-```bash
+```curl
 curl --location 'https://api.mercadopago.com/v1/account/marketplace_sales_report/config' \
 --header 'accept: application/json' \
 --header 'content-type: application/json' \
@@ -89,7 +89,7 @@ curl --location 'https://api.mercadopago.com/v1/account/marketplace_sales_report
 
 Para modificar as configurações estabelecidas em relatórios de vendas anteriores do Marketplace, envie uma solicitação PUT usando o seguinte cURL:
 
-```bash
+```curl
 curl --location 'https://api.mercadopago.com/v1/account/marketplace_sales_report/config' \
 --header 'accept: application/json' \
 --header 'content-type: application/json' \
@@ -138,7 +138,7 @@ curl --location 'https://api.mercadopago.com/v1/account/marketplace_sales_report
 
 Se você escolheu a frequência para receber o relatório de vendas do Marketplace ao configurá-lo, também será necessário ativar o envio programado. Você pode fazer isso usando o seguinte cURL:
 
-```bash
+```curl
 curl --location --request POST 'https://api.mercadopago.com/v1/account/marketplace_sales_report/schedule' \
 --header 'accept: application/json' \
 --header 'content-type: application/json' \
@@ -149,7 +149,7 @@ curl --location --request POST 'https://api.mercadopago.com/v1/account/marketpla
 
 Também é possível desfazer o agendamento do envio do relatório. Para isso, faça uma chamada usando o seguinte cURL:
 
-```bash
+```curl
 curl --location --request DELETE 'https://api.mercadopago.com/v1/account/marketplace_sales_report/schedule' \
 --header 'accept: application/json' \
 --header 'content-type: application/json' \
@@ -167,7 +167,7 @@ Uma vez que você tenha criado as configurações e agendado o envio do relatór
 
 Para gerar o relatório e fazer o download automaticamente por e-mail, você deve usar o seguinte cURL:
 
-```bash
+```curl
 curl --location 'https://api.mercadopago.com/v1/account/marketplace_sales_report' \
 --header 'accept: application/json' \
 --header 'content-type: application/json' \
@@ -188,7 +188,7 @@ A geração do relatório é um processo assíncrono. Por esse motivo, você rec
 
 Para gerar o relatório e fazer o download manualmente, você deve usar o seguinte cURL:
 
-```bash
+```curl
 curl --location 'https://api.mercadopago.com/v1/account/marketplace_sales_report/{{REPORT_FILE_NAME}}' \
 --header 'Authorization: Bearer {{APP_USER_TOKEN}}'
 ```
@@ -201,13 +201,13 @@ Aqui está uma coleção do Postman que você pode utilizar como exemplo: arquiv
 
 Quando desejar consultar os relatórios que você configurou, você pode fazer isso com o seguinte cURL:
 
-```bash
+```curl
 curl --location 'https://api.mercadopago.com/v1/account/marketplace_sales_report'/list?access_token={{USER_APP_TOKEN}}'
 ```
 
 A chamada retornará uma resposta semelhante à seguinte:
 
-```bash
+```curl
 [
     {
         "id": 34326722,
