@@ -46,4 +46,4 @@ Para establecer un prorrateo para el pago de suscripciones, envía un POST con l
 >
 > Cree usuarios de prueba para analizar si la incorporación se realizó sin problemas y si la adquisición de la suscripción funciona sin errores.
 >
-> [Criar usuário de teste](/developers/es/docs/subscriptions/integration-test/create-test-user)
+> [Criar usuário de teste](/developers/es/docs/subscriptions/additional-content/your-integrations/test/accounts)

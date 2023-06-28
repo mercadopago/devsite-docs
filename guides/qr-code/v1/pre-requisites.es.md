@@ -39,7 +39,7 @@ Una vez creados los usuarios de pruebas, ya puedes comenzar con la integración 
 Si eres un integrador que trabajará con varios comercios para que operen con Mercado Pago, te recomendamos realizar el proceso 
 OAuth - autenticación entre cuentas, este proceso consiste en que el cliente permita que sus datos sean compartidos con un sistema de terceros de forma segura. 
  
-El access token no se puede compartir de ninguna otra forma que no sea mediante OAuth. [Mas informaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/qr-code/additional-content/credentials)
+El access token no se puede compartir de ninguna otra forma que no sea mediante OAuth. [Mas informaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/qr-code/additional-content/your-integrations/credentials)
 
 ## 5. Cómo identificar tu integración (Sponsor ID)
 

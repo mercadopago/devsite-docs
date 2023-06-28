@@ -17,12 +17,3 @@ For **mobile**, choose short steps that focus attention and are easy to navigate
 ![en Consistencia](/images/best-practices-guide/EngCreaUnChoAgilConsistenciaDoDonts.png)
 
 Now you have everything you need to create the best payment experience for your customers! Integrate our products and optimize your UX with these best practices.
-
-> PREV_STEP_CARD_EN
->
-> Optimize your checkout experience
->
-> Learn about the main components of a checkout and how to optimize them to offer a better experience for your users and get more conversion.
->
-> [Optimized experience](/developers/en/guides/additional-content/best-practices/ux-for-checkouts/optimized-experience)
-

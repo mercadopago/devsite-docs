@@ -239,3 +239,68 @@ const initialization = {
 ]]]
 
 ------------
+----[mco]----
+## Other payment methods
+
+In the form displayed for payment by other payment methods, you can start with the fields already filled in. For this, it is necessary to pass the following configuration in the Brick's initialization object.
+
+[[[
+```Javascript
+settings = {
+  ...,
+  initialization: {
+    ...,
+    payer: {
+      ...,
+      email: '<PAYER_EMAIL>',
+    }
+  }
+}
+```
+```react-jsx
+const initialization = {
+ ...,
+ payer: {
+   email: '<PAYER_EMAIL>',
+ },
+};
+```
+]]]
+
+## PSE
+
+In the form shown for payment with PSE, you can start with the **email**, **person** and **id** already filled in. For this, it is necessary to pass the following configuration in the Brick's initialization object.
+
+[[[
+```Javascript
+settings = {
+  ...,
+  initialization: {
+    ...,
+    payer: {
+      email: '<PAYER_EMAIL>',
+      entityType: 'individual',
+      identification: {
+        type: '<PAYER_IDENTIFICATION_TYPE>',
+        number: '<PAYER_IDENTIFICATION_NUMBER>'
+      }
+    }
+  }
+}
+```
+```react-jsx
+const initialization = {
+   ...,
+   payer: {
+    email: '<PAYER_EMAIL>',
+    entityType: 'individual',
+    identification: {
+      type: '<YOUR_IDENTIFICATION_TYPE>',
+      number: '<YOUR_IDENTIFICATION_NUMBER>'
+    }
+  }
+};
+```
+]]]
+
+------------

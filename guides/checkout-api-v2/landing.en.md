@@ -38,7 +38,7 @@ bullet_section_with_media:
 
 
 --- mini_landing_separator ---
->>>> Accepted Payment types <<<<
+>>>> Accepted payment types <<<<
 
 ----[mlb]----
 
@@ -60,7 +60,7 @@ available_payments: credit, debit, mercadopago, efectivo, atm
 ----[mlm]---- 
 
 ---
-available_payments: credit, debit, mercadopago, efectivo, atm, moneda
+available_payments: credit, debit, mercadopago, efectivo, atm, moneda, spei
 
 ----
 ------------

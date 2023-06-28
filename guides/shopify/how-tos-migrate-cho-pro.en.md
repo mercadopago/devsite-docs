@@ -11,7 +11,7 @@ Learn how to install the new app and uninstall the old one to avoid service inte
 5. Go to the **Search by provider** tab and look for the new app with the name "Checkout Mercado Pago".
 6. Once you have found it, select it and click **Activate** and then **Connect**.
 7. Select **Install App** and then **Manage**.
-8. Put your **production credentials** (`public key` and `access token`) in the fields that request it and click **Save**. Remember to keep your [credentials](/developers/en/docs/shopify/additional-content/credentials) handy.
+8. Put your **production credentials** (`public key` and `access token`) in the fields that request it and click **Save**. Remember to keep your [credentials](/developers/en/docs/shopify/additional-content/your-integrations/credentials) handy.
 9. To finish the installation, select **Activate Checkout Mercado Pago**.
 
 > In this step, you can select the images of the means of payment that you want to show in your store for illustrative purposes. Also, if you wish, you can enable [test mode.](/developers/en/docs/shopify/sales-processing/integration-test)

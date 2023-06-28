@@ -2,7 +2,7 @@
 
 Webhook (también conocido como devolución de llamada web) es un método simple que facilita que una aplicación o sistema proporcione información en tiempo real cada vez que ocurre un evento, es decir, es una forma de recibir datos pasivamente entre dos sistemas a través de un `HTTP POST`.
 
-Las notificaciones de webhook se pueden configurar para una o más aplicaciones creadas en su [Dashboard](/developers/es/guides/additional-content/dashboard/introduction).
+Las notificaciones de webhook se pueden configurar para una o más aplicaciones creadas en su [Dashboard](/developers/es/guides/additional-content/your-integrations/introduction).
 
 Una vez configurado, el Webhook se enviará siempre que se produzcan uno o más eventos registrados, evitando un trabajo de búsqueda cada minuto en busca de una respuesta y, en consecuencia, una sobrecarga del sistema y pérdida de datos siempre que se presente alguna situación. Luego de recibir una notificación en su plataforma, Mercado Pago esperará una respuesta para validar si la recibió correctamente.
 

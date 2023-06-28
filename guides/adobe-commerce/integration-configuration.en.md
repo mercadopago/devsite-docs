@@ -16,7 +16,7 @@ Follow the steps described in this documentation to configure the Mercado Pago p
 >
 > Important
 >
-> To make real sales or test the store, you need to have production and/or test credentials. If you haven't created your credentials yet, access the [Credentials](/developers/en/guides/additional-content/credentials/credentials) documentation and learn how to create them before moving on to the next steps.
+> To make real sales or test the store, you need to have production and/or test credentials. If you haven't created your credentials yet, access the [Credentials](/developers/en/guides/additional-content/your-integrations/credentials) documentation and learn how to create them before moving on to the next steps.
 
 
 ## Mercado Pago integration
