@@ -37,4 +37,4 @@ Observe que o `redirect_uri` deve ser uma URL estática. Caso queira enviar par�
 
 ![oauth_state](/images/oauth/oauth_state_v4.png)
 
-Para encontrar mais informações sobre a solicitação, seus parâmetros e as possíveis respostas de sucesso e erro que você pode receber, acesse a documentação [Referência da API](/developers/pt/reference/oauth/_oauth_token/post).
+Para obter mais informações sobre a solicitação, seus parâmetros e as possíveis respostas de sucesso e erro, consulte nossa [Referência da API](/developers/pt/reference/oauth/_oauth_token/post).
