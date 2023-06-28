@@ -1,4 +1,4 @@
-# Report uses
+# Report use
 
 ## How to use the report?
 
