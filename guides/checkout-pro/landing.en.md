@@ -37,7 +37,7 @@ bullet_section_with_media:
 
 --- mini_landing_separator ---
 
->>>> Accepted Payment types <<<<
+>>>> Accepted payment types <<<<
 
 ----[mlb]----
 
