@@ -1,6 +1,6 @@
 # Modelo de pagamento Cartão de Crédito - PSP/Mensageria
 
-```bash
+```curl
 curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
 --header 'x-platform-id: {{PLATFORM_ID fornecido pelo time de Partners}}' \
 --header 'Authorization: Bearer {{ACCESS_TOKEN}}' \

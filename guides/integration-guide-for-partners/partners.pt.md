@@ -88,7 +88,7 @@ O MercadoPago.js é responsável pelos fluxos necessários para obtenção das i
 
 ### Inicializar formulário de pagamento
 
-```bash
+```javascript
 const cardForm = mp.cardForm({
   amount: "100.5",
   autoMount: true,

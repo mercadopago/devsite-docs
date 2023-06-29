@@ -1,6 +1,6 @@
 # Modelo de pagamento Cartão de Crédito - Eventos/Tickets
 
-```bash
+```curl
 curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
 --header 'x-platform-id: {{PLATFORM_ID fornecido pelo time de Partners}}' \
 --header 'Authorization: Bearer {{ACCESS_TOKEN}}' \
@@ -45,7 +45,7 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
                 "title": "DD/MM/AAAA | NOME DO EVENTO",
                 "description": "DD/MM/AAAA | NOME DO EVENTO",
                 "picture_url": null,
-                "category_id": "Tickets",
+                "category_id": "tickets",
                 "quantity": 1,
                 "unit_price": 120.34,
                 "event_date": "2019-12-25T19:30:00.000-03:00"

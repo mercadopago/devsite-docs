@@ -6,11 +6,11 @@ Para utilizar esse campo, é necessário seguir o formato de data ISO 8601: yyyy
 
 Exemplo:
 
-```json
+```curl
 "date_of_expiration": "2023-01-28T22:59:59.000-04:00"
 ```
 
-```bash
+```curl
 curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
 --header 'x-platform-id: {{PLATFORM_ID fornecido pelo time de Partners}}' \
 --header 'Authorization: Bearer {{ACCESS_TOKEN}}' \

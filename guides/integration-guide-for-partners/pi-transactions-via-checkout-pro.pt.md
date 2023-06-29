@@ -4,7 +4,7 @@ Após receber o seu ID referente ao `PLATFORM_ID` de sua plataforma, você poder
 
 Exemplo:
 
-```bash
+```curl
 curl --location --request POST 'https://api.mercadolibre.com/checkout/preferences' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer {{ACCESS_TOKEN}}' \

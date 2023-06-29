@@ -4,7 +4,7 @@ Ao realizar uma requisição de pagamento (`/v1/payments`), basta atribuir o ID 
 
 Exemplo:
 
-```bash
+```curl
 curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
 --header 'Authorization: Bearer {{ACCESS_TOKEN}}' \
 --header 'Content-Type: application/json' \

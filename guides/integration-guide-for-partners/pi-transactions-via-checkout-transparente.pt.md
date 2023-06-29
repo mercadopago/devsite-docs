@@ -4,7 +4,7 @@ Após receber o seu ID referente ao `PLATFORM_ID` de sua plataforma, você poder
 
 Exemplo:
 
-```bash
+```curl
 curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
 --header 'x-platform-id: {{PLATFORM_ID fornecido pelo time de Partners}}' \
 --header 'Authorization: Bearer {{ACCESS_TOKEN}}' \

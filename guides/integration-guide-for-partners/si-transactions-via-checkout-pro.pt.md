@@ -4,7 +4,7 @@ Ao realizar uma requisição de pagamento (`/checkout/preferences`), basta atrib
 
 Exemplo:
 
-```bash
+```curl
 curl --location --request POST 'https://api.mercadolibre.com/checkout/preferences' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer {{ACCESS_TOKEN}}' \

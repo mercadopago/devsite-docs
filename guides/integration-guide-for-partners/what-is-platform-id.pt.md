@@ -6,7 +6,7 @@ Sua aplicação consiste em atribuir o ID fornecido pela equipe de Partners no *
 
 Exemplo via header:
 
-```bash
+```curl
 --header 'x-platform-id: (PLATFORM_ID fornecido pelo time de Partners)'
 ```
 
