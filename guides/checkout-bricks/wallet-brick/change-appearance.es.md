@@ -4,7 +4,7 @@
 >
 > Cambiar de aspecto
 
-# Propiedades de estilo
+## Propiedades de estilo
 
 | - | Descripción |
 | --- | --- |

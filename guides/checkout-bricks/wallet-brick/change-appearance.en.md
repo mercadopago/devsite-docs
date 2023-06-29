@@ -4,7 +4,7 @@
 >
 > Change appearance
 
-# Style properties
+## Style properties
 
 | - | Description |
 | --- | --- |

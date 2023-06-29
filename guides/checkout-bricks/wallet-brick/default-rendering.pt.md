@@ -23,7 +23,7 @@ const renderWalletBrick = async (bricksBuilder) => {
    },
    onSubmit: (formData) => {
      // callback chamado ao clicar no Wallet Brick
-     // isso é possível porque o brick é um botão
+     // isso é possível porque o Brick é um botão
      // neste momento de submit, você deve criar a preferência
      const yourRequestBodyHere = {
        items: [
@@ -70,7 +70,7 @@ renderWalletBrick(bricksBuilder);
 ```react-jsx
 const onSubmit = async (formData) => {
  // callback chamado ao clicar no Wallet Brick
- // isso é possível porque o brick é um botão
+ // isso é possível porque o Brick é um botão
  // neste momento de submit, você deve criar a preferência
  const yourRequestBodyHere = {
    items: [

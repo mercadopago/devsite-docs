@@ -4,7 +4,7 @@
 >
 > Importante
 >
-> Para realizar el renderizado de Wallet Brick, primero realice los [pasos de inicialización](/developers/es/docs/checkout-bricks/common-initialization) compartidos entre todos los Bricks. 
+> Para realizar el renderizado de Wallet Brick, primero ejecuta los [pasos de inicialización](/developers/es/docs/checkout-bricks/common-initialization) compartidos entre todos los Bricks. 
 
 ## Configurar el Brick
 
@@ -18,12 +18,12 @@ const renderWalletBrick = async (bricksBuilder) => {
      onReady: () => {
      /*
       Callback llamado cuando Brick está listo.
-      Aquí puedes ocultar cargamentos de su sitio, por ejemplo.
+      Aquí puedes ocultar loadings de su sitio, por ejemplo.
      */
    },
    onSubmit: (formData) => {
      // callback llamado al hacer clic en Wallet Brick
-     // esto es posible porque el ladrillo es un botón
+     // esto es posible porque el Brick es un botón
      // en este momento del envío, debe crear la preferencia
      const yourRequestBodyHere = {
        items: [
@@ -70,7 +70,7 @@ renderWalletBrick(bricksBuilder);
 ```react-jsx
 const onSubmit = async (formData) => {
  // callback llamado al hacer clic en Wallet Brick
- // esto es posible porque el ladrillo es un botón
+ // esto es posible porque el Brick es un botón
  // en este momento del envío, debe crear la preferencia
  const yourRequestBodyHere = {
    items: [
@@ -114,7 +114,7 @@ const onError = async (error) => {
 const onReady = async () => {
  /*
    Callback llamado cuando Brick está listo.
-   Aquí puedes ocultar cargamentos de su sitio, por ejemplo.
+   Aquí puedes ocultar loadings de su sitio, por ejemplo.
  */
 };
 ```
@@ -268,7 +268,7 @@ let preference = {
 
 mercadopago.preferences.create(preference)
   .then(function (response) {
-    // Este valor es el ID de preferencia que se enviará al ladrillo al inicio
+    // Este valor es el ID de preferencia que se enviará al Brick al inicio
     const preferenceId = response.body.id;
   }).catch(function (error) {
     console.log(error);
