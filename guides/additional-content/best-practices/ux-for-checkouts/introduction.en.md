@@ -11,11 +11,3 @@ In this guide we will show you how to build your own checkout experience through
 > Important
 > 
 > To know how your checkout performs once these best practices have been implemented, we recommend that you integrate a tracking tool and perform optimizations based on the results to improve the experience of your users and have more conversions.
-
-> NEXT_STEP_CARD_EN
->
-> Optimize your checkout experience
->
-> Learn about the main components of a checkout and how to optimize them to offer a better experience for your users and get more conversion.
->
-> [Optimized experience](/developers/en/guides/additional-content/best-practices/ux-for-checkouts/optimized-experience)

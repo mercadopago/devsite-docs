@@ -53,10 +53,11 @@ See below for the payment methods available to the store when integrating Checko
 | Payment method | Description |
 |------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cards | Allows integration with credit and debit cards. |
-| 2 cards | Allows integration with 2 credit and debit cards. |
-| Mercado Pago account balance | Allows payments with money available in the Mercado Pago customer’s account. |
+| 2 cards                                              | Allows integration with 2 credit and debit cards.                                                                                                                                   |
+| Mercado Pago account balance                         | Allows payments with money available in the Mercado Pago customer’s account.                                                                                                        |
+| Rapipago                                             | Offline payment                                                                                                                                                                     |
+| Pago Fácil                                           | Offline payment                                                                                                                                                                     |
 | Up to 12 installments without card with Mercado Pago | Allows the customer the option to finance a purchase without a card, while the seller receives the total amount of the money thanks to this Mercado Pago administrated credit line. |
-
 
 ------------
 

@@ -27,5 +27,5 @@ A opção de pagamento com Pix só será exibida se houver uma chave Pix cadastr
 Aqui estão alguns pontos a observar para aumentar a qualidade das suas integrações:
 
 + Melhore a [aprovação de pagamentos](/developers/pt/guides/additional-content/how-tos/improve-approval) enviando informações do item e do pagador, dados de envio e informações da indústria.
-+ Mantenha o status dos pedidos atualizados em seus sistemas, usando e processando as notificações [IPN](/developers/pt/guides/additional-content/notifications/ipn/introduction) ou [Webhooks](/developers/pt/guides/additional-content/notifications/webhooks/webhooks).
++ Mantenha o status dos pedidos atualizados em seus sistemas, usando e processando as notificações [IPN](/developers/pt/guides/additional-content/your-integrations/notifications/ipn) ou [Webhooks](/developers/pt/guides/additional-content/your-integrations/notifications/webhooks).
 + Use relatórios de reconciliação via API para melhorar a gestão financeira do negócio.

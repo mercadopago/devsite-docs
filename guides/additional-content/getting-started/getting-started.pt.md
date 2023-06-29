@@ -14,10 +14,10 @@ No caso das soluções integráveis, o fluxo inicial de integração é sempre o
 
 Com a conta ativa, você tem acesso a dois painéis diferentes com informações importantes:
 
-* [Painel de Negócios](https://www.mercadopago[FAKER][URL][DOMAIN]/subscription-plans/list#from-section=menu) que permite gerenciar o perfil e a atividade financeira, considerando frentes de caixa, faturamento, métricas, colaboradores, catálogo de produtos e muito mais.
-* [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) que permite gerenciar integrações com desenvolvimento de código.
+* [Painel de negócios](https://www.mercadopago[FAKER][URL][DOMAIN]/subscription-plans/list#from-section=menu) que permite gerenciar o perfil e a atividade financeira, considerando frentes de caixa, faturamento, métricas, colaboradores, catálogo de produtos e muito mais.
+* [Painel do desenvolvedor](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) que permite gerenciar integrações com desenvolvimento de código.
 
-Tanto no [Painel de Negócios](https://www.mercadopago[FAKER][URL][DOMAIN]/subscription-plans/list#from-section=menu) quanto no [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app), você terá acesso às [credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/credentials/credentials), que são senhas únicas que capturam pagamentos em lojas virtuais e outras aplicações de forma segura com as quais identificamos uma integração na sua conta. 
+Tanto no [Painel de negócios](https://www.mercadopago[FAKER][URL][DOMAIN]/subscription-plans/list#from-section=menu) quanto no [Painel do desenvolvedor](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app), você terá acesso às [credenciais](/developers/pt/docs/your-integrations/credentials), que são senhas únicas que capturam pagamentos em lojas virtuais e outras aplicações de forma segura com as quais identificamos uma integração na sua conta. 
 
 Com as credenciais em mãos, você pode integrar as soluções conectando às plataformas de e-commerce nas quais estamos presentes ou colocando a mão na massa escrevendo linhas de código. 
 

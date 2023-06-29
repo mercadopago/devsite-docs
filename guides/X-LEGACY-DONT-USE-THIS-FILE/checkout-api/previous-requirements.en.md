@@ -11,7 +11,7 @@ Your credentials are the **keys we provide you to configure your integrations**.
 
 Check the [Credentials]([FAKER][CREDENTIALS][URL]) section to learn how to obtain these informations.
 
-> Do you have any questions about credentials? Read [Credentials](/developers/en/guides/additional-content/credentials/credentials) for more information.
+> Do you have any questions about credentials? Read [Credentials](/developers/en/guides/additional-content/your-integrations/credentials) for more information.
 
 ## Always use our libraries
 We recommend that you use our official libraries for your integration. This helps protect your customer's sensitive data, meet the required security standards, and keep yourself up to date.

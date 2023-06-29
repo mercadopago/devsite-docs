@@ -18,7 +18,7 @@ curl --location --request GET 'https://api.mercadopago.com/merchant_orders?exter
 >
 > Nota
 >
-> Esta solución utiliza la misma [API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/merchant_orders/_merchant_orders_id/get) que usamos en la sección [Consulta de la orden](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/notifications/ipn/inperson-order-query), agregando el query param `external_reference` para buscar el pago en caso de no recibir la notificación.
+> Esta solución utiliza la misma [API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/merchant_orders/_merchant_orders_id/get) que usamos en la sección [Consulta de la orden](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/your-integrations/notifications/ipn), agregando el query param `external_reference` para buscar el pago en caso de no recibir la notificación.
 
 La respuesta será la misma que utilizando el ID de la orden y deberán utilizar los mismos criterios antes mencionados para confirmar el pago de la misma.
 

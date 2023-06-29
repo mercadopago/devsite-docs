@@ -17,6 +17,6 @@ Para activar el cartucho “int_mercadopago” y utilizarlo como procesador de p
 
 ## Configuración de credenciales de Mercado Pago
 
-Para usar Mercado Pago con Salesforce Commerce Cloud, debes tener una cuenta de Mercado Pago. Sigue [esta documentación](/developers/es/docs/salesforce-commerce-cloud/additional-content/credentials) para generar tus credenciales. Después de eso, ve a **Herramientas comerciales > Preferencias personalizadas > MercadopagoCredentials** y completa los campos **Public Key** y **Access Token**.
+Para usar Mercado Pago con Salesforce Commerce Cloud, debes tener una cuenta de Mercado Pago. Sigue [esta documentación](/developers/es/docs/salesforce-commerce-cloud/additional-content/your-integrations/credentials) para generar tus credenciales. Después de eso, ve a **Herramientas comerciales > Preferencias personalizadas > MercadopagoCredentials** y completa los campos **Public Key** y **Access Token**.
 
 ¡Listo! Ya puedes usar el cartucho de Mercado Pago en el sitio de tu tienda Salesforce Commerce Cloud.

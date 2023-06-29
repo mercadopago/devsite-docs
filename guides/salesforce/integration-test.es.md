@@ -18,7 +18,7 @@ Para realizar una prueba, sigue estos pasos:
 1. Haz clic en el botón "comprar".
 1. Continúa la compra como un usuario invitado y completa la información de envío. Luego, haz clic en "Siguente: pago".
 1. En la página de pago, selecciona la opción **Mercado Pago**.
-1. Completa la transacción en la página de Mecado Pago utilizando uno de los métodos de pago disponibles. Si eliges pagar con tarjeta de crédito, recuerda utilizar las [tarjetas de prueba](/developers/es/docs/salesforce-commerce-cloud/additional-content/test-cards) para realizar el pago. **Nunca utilices tarjetas de uso personal**.
+1. Completa la transacción en la página de Mecado Pago utilizando uno de los métodos de pago disponibles. Si eliges pagar con tarjeta de crédito, recuerda utilizar las [tarjetas de prueba](/developers/es/docs/salesforce-commerce-cloud/additional-content/your-integrations/test/cards) para realizar el pago. **Nunca utilices tarjetas de uso personal**.
 1. Haz clic en el botón **Pagar**.
 
 Si la prueba fue exitosa, te mostrará la pantalla de éxito de compra de Mercado Pago.
@@ -32,7 +32,7 @@ Para realizar una prueba, sigue estos pasos:
 1. Haz clic en el botón "comprar".
 1. Continúa la compra como un usuario invitado y completa la información de envío. Luego, haz clic en "Siguente: pago".
 1. En la página de pago, selecciona la opción **Tarjeta de crédito**.
-1. Elige pagar con una nueva tarjeta de crédito y utiliza las [tarjetas de prueba](/developers/es/docs/salesforce-commerce-cloud/additional-content/test-cards) para realizar el pago. **Es importante no pagar con tarjetas para uso personal**.
+1. Elige pagar con una nueva tarjeta de crédito y utiliza las [tarjetas de prueba](/developers/es/docs/salesforce-commerce-cloud/additional-content/your-integrations/test/cards) para realizar el pago. **Es importante no pagar con tarjetas para uso personal**.
 1. Agrega la información de la tarjeta de prueba indicada (número de tarjeta, CVV y fecha de vencimiento).
 1. Haz clic en el botón **Pagar**.
 

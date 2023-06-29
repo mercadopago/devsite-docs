@@ -12,7 +12,7 @@ As credenciais são as **chaves que te oferecemos para que possa configurar sua 
 
 Para poder encontrá-las, veja a [seção de Credenciais]([FAKER][CREDENTIALS][URL]).
 
-> Tem dúvidas sobre credenciais? Leia [Credenciais](/developers/pt/guides/additional-content/credentials/credentials) para mais informações. 
+> Tem dúvidas sobre credenciais? Leia [Credenciais](/developers/pt/guides/additional-content/your-integrations/credentials) para mais informações. 
 
 ## Sempre utilize nossas bibliotecas
 Recomendamos que utilize as bibliotecas oficiais para sua integração. Isso permite cuidar dos dados sensíveis dos seus clientes, cumprir com os padrões de segurança requeridos e estar sempre atualizado.

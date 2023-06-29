@@ -54,7 +54,10 @@ A continuación, se muestran los medios de pago disponibles para la tienda al in
 | Tarjetas | Permite la integración con tarjetas de crédito y débito. |
 | 2 tarjetas | Permite la integración con 2 tarjetas de crédito y débito. |
 | Saldo en cuenta de Mercado Pago | |
-| Hasta 12 cuotas sin tarjeta con Mercado Pago | Permite al cliente la opción de financiar su compra sin contar con una tarjeta, mientras que el vendedor percibe el monto de dinero completo en su cuenta gracias a esta línea de crédito administrada por Mercado Pago. |
+| Rapipago                                     | Pago offline                                                                                                                                                                                                              |
+| Pago Fácil                                   | Pago offline                                                                                                                                                                                                              |
+| Hasta 12 cuotas sin tarjeta con Mercado Pago | Permite al cliente la opción de financiar su compra sin contar con una tarjeta, mientras que el vendedor percibe el monto de dinero completo en su cuenta gracias a esta línea de crédito administrada por Mercado Pago.  |
+
 
 
 ------------

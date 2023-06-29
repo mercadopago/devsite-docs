@@ -50,13 +50,14 @@ Veja abaixo quais são os meios de pagamento disponíveis para a loja ao integra
 
 ----[mla]----
 
-
-| Meio de pagamento | Descrição |
-|---------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cartões | Permite integração com cartão de crédito e débito. |
-| 2 cartões | Permite integração com 2 cartões de crédito e débito. |
-| Meios offline | Paycash |
-| Parcelamento em até 12 meses sem cartão no Mercado Pago | Permite ao cliente a opção de financiar sua compra sem ter cartão, enquanto o vendedor recebe o valor integral em sua conta graças a esta linha de crédito administrada pelo Mercado Pago. |
+| Meio de pagamento                                  | Descrição                                                                                                                                                                                  |
+|----------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Cartões                                            | Permite integração com cartão de crédito e débito.                                                                                                                                         |
+| 2 cartões                                          | Permite integração com 2 cartões de crédito e débito.                                                                                                                                      |
+| Saldo em conta Mercado Pago                        | Allows payments with money available in the Mercado Pago customer’s account.                                                                                                               |
+| Rapipago                                           | Pagamento offline                                                                                                                                                                          |
+| Pago Fácil                                         | Pagamento offline                                                                                                                                                                          |
+| Parcelamento em até 12x sem cartão no Mercado Pago | Permite ao cliente a opção de financiar sua compra sem ter cartão, enquanto o vendedor recebe o valor integral em sua conta graças a esta linha de crédito administrada pelo Mercado Pago. |
 
 
 ------------

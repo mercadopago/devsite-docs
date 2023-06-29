@@ -34,7 +34,7 @@ You can see more information in the [Improves approval section](/developers/en/g
 ## Notifications and payment search
 
 In order to take full advantage of the Mercado Pago integration, one of the key points to highlight is the use of notifications to update orders in real time in your system.
-Both types of notifications, [IPN](/developers/en/guides/additional-content/notifications/ipn/introduction) or [Webhooks](/developers/en/guides/notifications/webhooks/webhooks), are sent from one server to another through an `HTTP POST` request informing your transactions.
+Both types of notifications, [IPN](/developers/en/guides/additional-content/your-integrations/notifications/ipn) or [Webhooks](/developers/en/guides/notifications/webhooks/webhooks), are sent from one server to another through an `HTTP POST` request informing your transactions.
 By implementing these notifications, you will be able to find out all the updates of your transactions at the moment.
 
 ## User experience

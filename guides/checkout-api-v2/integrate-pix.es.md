@@ -395,7 +395,7 @@ Con Pix, también puedes elegir el plazo que el cliente tendrá para pagar la co
 >
 > Importante
 >
-> Por defecto, la fecha de vencimiento para pagos con Pix es de **24 horas**, pero puedes modificarla enviando el campo `date_of_expiration` en el request de creación del pago. La fecha configurada debe estar entre **5 minutos y hasta 30 días** a partir de la fecha de emisión del pago.
+> Por defecto, la fecha de vencimiento para pagos con Pix es de **24 horas**, pero puedes modificarla enviando el campo `date_of_expiration` en el request de creación del pago. La fecha configurada debe estar entre **30 minutos y hasta 30 días** a partir de la fecha de emisión del pago.
 
 ## Visualización del pago
 
