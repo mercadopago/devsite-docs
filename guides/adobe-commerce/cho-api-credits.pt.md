@@ -37,12 +37,12 @@ Atualmente, o Parcelamento em até 12 meses sem cartão no Mercado Pago é ofere
 Para configurar o Parcelamento em até 12x sem cartão no Mercado Pago no checkout da loja, siga os passos descritos abaixo.
 1. No **Painel de Controle** da loja, acesse **Lojas > Configuração > Vendas > Forma de pagamento**.
 2. Em **Outros meios de pagamento**, clique em **Configurar** no plugin do Mercado Pago.
- ![Tela de configuração do plugin do Mercado Pago](/images/adobe-commerce/cho-api-credits-config-mla-es.png)
+    ![Tela de configuração do plugin do Mercado Pago](/images/adobe-commerce/cho-api-credits-config-mla-es.png)
 3. Selecione a opção **Parcelamento em até 12 meses sem cartão no Mercado Pago** e configure os campos conforme indicado a seguir.
- 1. O campo **Ativado** define que o meio de pagamento estará disponível no checkout da loja. Escolha "Sim", ou deixe o valor definido pelo sistema se corresponder a esta opção.
- 2. Em **Título**, defina o título de como a forma de pagamento será exibida no checkout da loja. Recomendamos usar “Hasta 12 cuotas sin tarjeta con Mercado Pago”.
- 3. Em **Prazo limite para pagamento**, escolha o tempo que o cliente tem para concluir o pagamento.
-4. Em **Meio de pagamento exluído**, escolha "Redirecionamento" para que o cliente seja redirecionado para o site do Mercado Pago e possa finalizar seu pagamento parcelado sem cartão.
+    1. O campo **Ativado** define que o meio de pagamento estará disponível no checkout da loja. Escolha "Sim", ou deixe o valor definido pelo sistema se corresponder a esta opção.
+    2. Em **Título**, defina o título de como a forma de pagamento será exibida no checkout da loja. Recomendamos usar “Hasta 12 cuotas sin tarjeta con Mercado Pago”.
+    3. Em **Prazo limite para pagamento**, escolha o tempo que o cliente tem para concluir o pagamento.
+    4. Em **Meio de pagamento exluído**, escolha "Redirecionamento" para que o cliente seja redirecionado para o site do Mercado Pago e possa finalizar seu pagamento parcelado sem cartão.
 
 ![Tela de configuração do meio de pagamento](/images/adobe-commerce/cho-api-credits-config2-mla-es.png)
 

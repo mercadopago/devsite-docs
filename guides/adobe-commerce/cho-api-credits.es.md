@@ -37,12 +37,12 @@ Actualmente, Hasta 12 cuotas sin tarjeta con Mercado Pago es ofrecido en nuestro
 Para configurar Hasta 12 cuotas sin tarjeta con Mercado Pago en el checkout de la tienda, sigue los pasos a continuación.
 1. En el Panel de Control de la tienda, accede a **Stores> Configuration> Sales>Payments Methods**.
 2. En **Other Payments Methods**, haz click en **Configure** dentro del plugin de Mercado Pago.
- ![Pantalla con las opciones dentro del plugin de Mercado Pago](/images/adobe-commerce/cho-api-credits-config-mla-es.png)
+    ![Pantalla con las opciones dentro del plugin de Mercado Pago](/images/adobe-commerce/cho-api-credits-config-mla-es.png)
 3. Selecciona la opción **Hasta 12 cuotas sin tarjeta con Mercado Pago** y configura los campos de acuerdo a las indicaciones siguientes.
- 1. El campo **Activado** define si el medio de pago estará disponible en el checkout de la tienda. Selecciona “Sí”, o deja el valor definido por sistema en caso de que coincida.
- 2. En **Título**, define el nombre con el que el medio de pago será exhibido en el checkout de la tienda. Recomendamos usar “Hasta 12 cuotas sin tarjeta con Mercado Pago”.
- 3. En **Plazo límite para el pago**, elige el tiempo que el cliente tiene para finalizar su pago.
- 4. En **Medio de pago finalizado**, elige "Redireccionamiento" para que el cliente sea redireccionado al sitio de Mercado Pago y pueda finalizar su pago financiado sin tarjeta.
+    1. El campo **Activado** define si el medio de pago estará disponible en el checkout de la tienda. Selecciona “Sí”, o deja el valor definido por sistema en caso de que coincida.
+    2. En **Título**, define el nombre con el que el medio de pago será exhibido en el checkout de la tienda. Recomendamos usar “Hasta 12 cuotas sin tarjeta con Mercado Pago”.
+    3. En **Plazo límite para el pago**, elige el tiempo que el cliente tiene para finalizar su pago.
+    4. En **Medio de pago finalizado**, elige "Redireccionamiento" para que el cliente sea redireccionado al sitio de Mercado Pago y pueda finalizar su pago financiado sin tarjeta.
 
 ![Pantalla de configuración del medio de pago](/images/adobe-commerce/cho-api-credits-config2-mla-es.png)
 
