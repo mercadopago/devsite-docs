@@ -8,6 +8,7 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 > Importante
 >
 > Algumas definições não estão mais disponíveis ou foram alteradas. Use este glossário para saber os termos dos relatórios gerados a partir de outubro. Para relatórios que cobrem datas anteriores, [consulte este Glossário.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/additional-content/reports/released-money/glossary-old)
+
 ------------
 ----[mlb]----
 > WARNING
@@ -15,6 +16,7 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 > Importante
 >
 > Algumas definições não estão mais disponíveis ou foram alteradas. Utilize este glossário para saber os termos dos relatórios gerados a partir de janeiro. Para relatórios que cobrem datas anteriores, [consulte este Glossário.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/additional-content/reports/released-money/glossary-old)
+
 ------------
 
 | Nome da coluna do relatório | O que significa |
