@@ -5,8 +5,6 @@ Actualmente, Financiación vía Pix en hasta 12 veces es ofrecido en nuestro [Ch
 
 
 Para configurar Financiación vía Pix en hasta 12 veces en el checkout de la tienda, sigue los pasos a continuación.
-
-
 1. En el Panel de Control de la tienda, accede a **Stores> Configuration> Sales>Payments Methods**.
 2. En **Other Payments Methods**, haz click en **Configure** dentro del plugin de Mercado Pago.
 3. Selecciona la opción **Financiación vía Pix en hasta 12 veces** y configura los campos de acuerdo a las indicaciones siguientes.
@@ -37,8 +35,6 @@ Actualmente, Hasta 12 cuotas sin tarjeta con Mercado Pago es ofrecido en nuestro
 
 
 Para configurar Hasta 12 cuotas sin tarjeta con Mercado Pago en el checkout de la tienda, sigue los pasos a continuación.
-
-
 1. En el Panel de Control de la tienda, accede a **Stores> Configuration> Sales>Payments Methods**.
 2. En **Other Payments Methods**, haz click en **Configure** dentro del plugin de Mercado Pago.
  ![Pantalla con las opciones dentro del plugin de Mercado Pago](/images/adobe-commerce/cho-api-credits-config-mla-es.png)
@@ -70,8 +66,6 @@ Actualmente, Hasta 12 meses sin tarjeta con Mercado Pago es ofrecido en nuestro 
 
 
 Para configurar Hasta 12 meses sin tarjeta con Mercado Pago en el checkout de la tienda, sigue los pasos a continuación.
-
-
 1. En el Panel de Control de la tienda, accede a **Stores> Configuration> Sales>Payments Methods**.
 2. En **Other Payments Methods**, haz click en **Configure** dentro del plugin de Mercado Pago.
 3. Selecciona la opción **Hasta 12 meses sin tarjeta con Mercado Pago** y configura los campos de acuerdo a las indicaciones siguientes.
