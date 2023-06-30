@@ -4,4 +4,4 @@ Este guia fornece um passo a passo detalhado sobre como integrar uma plataforma 
 
 > Collection do Postman
 >
-> * [Link da collection do Postman](https://documenter.getpostman.com/view/8396191/2s93RRxZ1Y)
+> - [Link da collection do Postman](https://documenter.getpostman.com/view/8396191/2s93RRxZ1Y)
