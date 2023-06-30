@@ -1,4 +1,4 @@
-# Configurar pagos con ticket checkout
+# Ticket checkout
 
 ----[mlb]----
 Con **ticket checkout**, ofrezca pagos en efectivo en su tienda usando [Checkout Transparente](/developers/es/guides/checkout-api/landing). 

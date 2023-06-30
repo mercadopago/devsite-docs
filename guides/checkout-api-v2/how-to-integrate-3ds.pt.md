@@ -23,23 +23,6 @@ Abaixo estão as etapas para realizar uma integração com 3DS.
 
 
 1. Utilize o Mercado Pago [SDK JS](/developers/pt/docs/sdks-library/client-side/mp-js-v2) no checkout para gerar o [token do cartão de crédito](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform).
-
-[[[
-```Javascript
-
-async function createCardToken(){ 
-    const token = await mp.fields.createCardToken({
-        cardholderName,
-        identificationType, 
-        identificationNumber, 
-    });
-    ...
-}
-```
-]]]
-
-
-
 2. Em seguida, envie os **dados do checkout** junto com o **token do cartão** para o backend.
 3. Feito isso, faça uma chamada para criar um novo pagamento com os dados recebidos. O atributo `three_d_secure_mode` precisa ser enviado com um dos seguintes valores:
     1. `not_supported`: 3DS não deve ser usado (é o valor padrão).
@@ -194,7 +177,7 @@ Para os casos em que o _Challenge_ é necessário, o `status` mostrará o valor 
 >
 > Importante
 >
-> Neste último caso, a resposta mostrará um atributo de pagamento chamado `three_dsinfo` com os campos `external_resource_url`, que contém a URL do _Challenge_, e `creq`, um identificador da solicitação do _Challenge_. Para exibi-lo e tratar seu resultado siga os passos abaixo.
+> Neste último caso, a resposta mostrará um atributo de pagamento chamado `three_ds_info` com os campos `external_resource_url`, que contém a URL do _Challenge_, e `creq`, um identificador da solicitação do _Challenge_. Para exibi-lo e tratar seu resultado siga os passos abaixo.
 
 
 ### Visão geral da resposta (informação omitida)
@@ -209,7 +192,7 @@ Para os casos em que o _Challenge_ é necessário, o `status` mostrará o valor 
     "status": "pending",
     "status_detail": "pending_challenge",
     ...
-    "three_dsinfo":
+    "three_ds_info":
     {
         "external_resource_url": "https://acs-public.tp.mastercard.com/api/v1/browser_Challenges",
         "creq": "eyJ0aHJlZURTU2VydmVyVHJhbnNJRCI6ImJmYTVhZjI0LTliMzAtNGY1Yi05MzQwLWJkZTc1ZjExMGM1MCIsImFjc1RyYW5zSUQiOiI3MDAwYTI2YS1jYWQ1LTQ2NjQtOTM0OC01YmRlZjUwM2JlOWYiLCJjaGFsbGVuZ2VXaW5kb3dTaXplIjoiMDQiLCJtZXNzYWdlVHlwZSI6IkNSZXEiLCJtZXNzYWdlVmVyc2lvbiI6IjIuMS4wIn0"
@@ -221,7 +204,7 @@ Para os casos em que o _Challenge_ é necessário, o `status` mostrará o valor 
 ]]]
 
 
-4. Para **exibir o _Challenge_**, é necessário gerar um _iframe_ (altura mínima: 500px, largura mínima: 600px) que contenha um formulário com `method post` e `action`, que será a URL obtida no campo `external_resource_url`, e um input oculto com o valor obtido em `creq`. Em seguida, faça o post do formulário abaixo para iniciar o _Challenge_.
+4. Para **exibir o _Challenge_**, é necessário gerar um _iframe_ (altura mínima: 500px, largura mínima: 600px) que contenha um formulário com `method post`, `action` contendo a URL obtida no campo `external_resource_url`, e um input oculto com o valor obtido em `creq`. Em seguida, faça o post do formulário abaixo para iniciar o _Challenge_.
 
 [[[
 ```javascript
@@ -231,7 +214,7 @@ function doChallenge(payment) {
     const {
       status,
       status_detail,
-      three_dsinfo: { creq, external_resource_url },
+      three_ds_info: { creq, external_resource_url },
     } = payment;
     if (status === "pending" && status_detail === "pending_challenge") {
       var iframe = document.createElement("iframe");
@@ -281,7 +264,7 @@ Consulte a seção abaixo para obter mais detalhes sobre como verificar o status
 
 Para saber qual é o resultado de cada transação, existem três opções:
 
-* **Notificações**: Uma notificação da alteração do status do pagamento será recebida por meio de Webhooks e o comprador deverá ser redirecionado para uma tela indicando que a transação foi bem-sucedida. Consulte a seção [Webhooks](/developers/es/docs/checkout-api/additional-content/notifications/webhooks) e saiba como realizar sua configuração..
+* **Notificações**: Uma notificação da alteração do status do pagamento será recebida por meio de Webhooks e o comprador deverá ser redirecionado para uma tela indicando que a transação foi bem-sucedida. Consulte a seção [Webhooks](/developers/es/docs/checkout-api/additional-content/your-integrations/notifications/webhooks) e saiba como realizar sua configuração..
 * **API de pagamentos**: Será necessário fazer um _pooling_ em [Payments](/developers/pt/reference/payments/_payments/post) e, se o status mudar, redirecionar o comprador para uma tela de confirmação.
 * **Tratar o evento iframe (recomendado)**: Tenha em mente que o evento apenas indica que o _Challenge_ terminou e não que o pagamento chegou a um status final, pois a atualização não é imediata e pode demorar alguns instantes. Faça uma consulta em [Payments](/developers/pt/reference/payments/_payments/post) e, caso o status mude, redirecione o comprador para uma tela indicando que a transação foi realizada com sucesso.
 

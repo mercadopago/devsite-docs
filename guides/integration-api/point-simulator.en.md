@@ -18,7 +18,7 @@ The simulator has two modes of usage:
 >
 > Attention
 >
-> The simulator only works with [test accounts.](/developers/en/guides/additional-content/testing/create-test-user)
+> The simulator only works with [test accounts.](/developers/en/docs/mp-point/additional-content/your-integrations/test/accounts)
 
 When using the simulator for the first time, you will need to enter your keys and select one of your available devices.
 

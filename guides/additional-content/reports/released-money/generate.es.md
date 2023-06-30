@@ -1,4 +1,3 @@
-
 # ¿Cómo generar tu reporte de Liberaciones?
 
 ----[mla]----
@@ -7,6 +6,7 @@
 > Lleva con facilidad el control de tus ventas con QR
 >
 > Creamos nuevas columnas que te permiten identificar las billeteras virtuales o los bancos que tus clientes usan para pagar cuando les cobras con un QR de Mercado Pago. Actualiza tus preferencias de configuración [desde el panel](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports/release/settings) o [vía API](/developers/es/guides/additional-content/reports/released-money/api) para incluir las columnas en tus reportes.
+
 ------------
 ----[mco, mlc]----
 > WARNING
@@ -14,6 +14,7 @@
 > Importante
 >
 > Los reportes que generes a partir de junio presentarán tus movimientos en orden cronológico, para que sea más fácil identificar cuándo se realizaron. [Conoce cómo usar este reporte.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/subscriptions/additional-content/reports/released-money/how-to-use)
+
 ------------
 
 ## Canales de generación

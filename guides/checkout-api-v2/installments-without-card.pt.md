@@ -1,8 +1,8 @@
 # Parcelamento sem cartão
 
-A opção de parcelamento sem cartão do Mercado Pago se chama **Mercado Crédito** e é um método de financiamento próprio que permite pagar em até 12x.
+O **Mercado Crédito** é a modalidade de financiamento do Mercado Pago que oferece a opção de parcelar sem precisar de cartão.
 
-Ao oferecer esta opção na sua loja, seus clientes poderão comprar um produto hoje e pagar depois em parcelas. Para o seu negócio, a aprovação da compra é imediata e está garantida, sendo creditado o valor total adiantado e os seus clientes nos pagam depois.
+Com essa linha de crédito, administrada pelo Mercado Pago, o pagamento é creditado integralmente na conta do vendedor, podendo o cliente optar por pagar em até 12 parcelas fixas mensais e sem a necessidade de cartão. O usuário terá apenas que entrar em sua conta no Mercado Pago (ou criar uma), saber o limite disponível e escolher em quantas parcelas deseja pagar.
 
 > NOTE
 >
@@ -19,7 +19,7 @@ Para realizar a integração é importante atender aos requisitos mostrados abai
 | Requisitos | Descrição |
 |---|---|
 | Conta de vendedor Mercado Pago ou Mercado Livre | Para integrar é preciso uma conta de vendedor no Mercado Pago ou Mercado Livre. Caso não tenha, [clique aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) para criar. | 
-| Aplicação  | As aplicações são as diferentes integrações contidas em uma ou mais lojas. Você pode criar uma aplicação para cada solução que implementar, a fim de ter tudo organizado e manter um controle que facilite a gestão. Veja [Dashboard](/developers/pt/docs/checkout-api/additional-content/dashboard/introduction) para mais informações sobre como criar uma aplicação. |
+| Aplicação  | As aplicações são as diferentes integrações contidas em uma ou mais lojas. Você pode criar uma aplicação para cada solução que implementar, a fim de ter tudo organizado e manter um controle que facilite a gestão. Veja [Dashboard](/developers/pt/docs/checkout-api/additional-content/your-integrations/introduction) para mais informações sobre como criar uma aplicação. |
 | Instale o SDK do Mercado Pago | Instale os SDKs oficiais para simplificar sua integração com nossas [APIs](/developers/pt/reference/payments/_payments/post). Para mais informações, [clique aqui](/developers/pt/docs/sdks-library/landing). |
 
 Se todos os pré-requisitos foram cumpridos, siga as próximas etapas para integração do parcelamento sem cartão.
@@ -190,7 +190,7 @@ npm install @mercadopago/sdk-js
 ```
 ]]]
 
-Em seguida, inicialize a integração definindo sua [chave pública](/developers/pt/docs/checkout-api/additional-content/credentials) usando o seguinte código.
+Em seguida, inicialize a integração definindo sua [chave pública](/developers/pt/docs/checkout-api/additional-content/your-integrations/credentials) usando o seguinte código.
 
 [[[
 ```html

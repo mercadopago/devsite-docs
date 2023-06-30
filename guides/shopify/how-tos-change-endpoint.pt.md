@@ -4,7 +4,7 @@ Na nova integração com a Shopify, houve uma mudança na informação disponív
 
 Com a mudança, para obter os detalhes do pagamento utilizando as APIs do Mercado Pago, ao invés de consultar o pagamento diretamente através de seu ID único (`id`), será necessário efetuar uma busca utilizando o seu ID de referência externa (`external_reference`) para retornar uma lista de objetos referentes aos pagamentos.
 
-Para isso, realize um GET enviando o `external_reference` e o `access-token` (obtido na seção de [Credenciais](/developers/pt/docs/shopify/additional-content/credentials) em seu [Dashboard](https://www.mercadopago.com/developers/panel/app) ou na sua conta [Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials)) ao endpoint [/v1/payments/search](/developers/pt/reference/payments/_payments_search/get). 
+Para isso, realize um GET enviando o `external_reference` e o `access-token` (obtido na seção de [Credenciais](/developers/pt/docs/shopify/additional-content/your-integrations/credentials) em seu [Dashboard](https://www.mercadopago.com/developers/panel/app) ou na sua conta [Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials)) ao endpoint [/v1/payments/search](/developers/pt/reference/payments/_payments_search/get). 
 
 Exemplo:
 

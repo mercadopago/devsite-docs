@@ -12,7 +12,7 @@ A nova versão tem uma arquitetura superior e conta com notificações por e-mai
 * Cobrança de assinatura;
 * Alteração de planos. 
 
-Além das notificações por e-mail, a nova versão também conta com [Webhooks](/developers/pt/guides/additional-content/notifications/webhooks/webhooks) para `plans`, `subscriptions` e `invoices`.
+Além das notificações por e-mail, a nova versão também conta com [Webhooks](/developers/pt/guides/additional-content/your-integrations/notifications/webhooks) para `plans`, `subscriptions` e `invoices`.
 
 > WARNING
 > 

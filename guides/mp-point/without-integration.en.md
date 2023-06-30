@@ -28,7 +28,7 @@ For each product you can insert an image, the price and name of it.
 
 ## Find out about your payments
 
-You can check your sales in the list of activities of the Mercado Pago account, or integrate [notifications](/developers/en/docs/mp-point/additional-content/notifications/webhooks) into your management system.
+You can check your sales in the list of activities of the Mercado Pago account, or integrate [notifications](/developers/en/docs/mp-point/additional-content/your-integrations/notifications/webhooks) into your management system.
 
 > NOTE
 > 

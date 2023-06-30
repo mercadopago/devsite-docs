@@ -18,7 +18,7 @@ El simulador cuenta con dos modos de uso:
 >
 > Atención
 >
-> El simulador solo funciona con [cuentas de prueba.](/developers/es/guides/additional-content/testing/create-test-user)
+> El simulador solo funciona con [cuentas de prueba.](/developers/es/docs/mp-point/additional-content/your-integrations/test/accounts)
 
 Al utilizar el simulador por primera vez, deberás ingresar tus credenciales y seleccionar uno de tus dispositivos disponibles. 
 

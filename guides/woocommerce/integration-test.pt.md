@@ -14,7 +14,7 @@ Para ativar o modo de teste para sua loja, siga estas etapas:
 ## Checkout Pro
 1. Selecione a opção **Quero pagar com Mercado Pago sem custo adicional**.
 1. Clique em **pedido com pagamento obrigatório** para ser redirecionado ao ambiente de pagamento do Mercado Pago.
-1. Na tela de pagamento, escolha pagar com um novo cartão de crédito e use os [cartões de teste](/developers/pt/docs/woocommerce/additional-content/test-cards) para efetuar o pagamento. É importante não fazer login na conta do Mercado Pago ou tentar pagar com cartões para uso pessoal.
+1. Na tela de pagamento, escolha pagar com um novo cartão de crédito e use os [cartões de teste](/developers/pt/docs/woocommerce/additional-content/your-integrations/test/cards) para efetuar o pagamento. É importante não fazer login na conta do Mercado Pago ou tentar pagar com cartões para uso pessoal.
 1. Adicione as informações do cartão de teste indicado (número do cartão, CVV e data de validade).
 1. Ao final da compra, você poderá visualizar, dentro do Mercado Pago, o comprovante de que a compra foi realizada e será redirecionado de volta à loja.
 
@@ -25,7 +25,7 @@ Para ativar o modo de teste para sua loja, siga estas etapas:
 ## Checkout API
 ------------
 1. Selecione a opção **Quero pagar com cartão de crédito**.
-1. Opte por pagar com um novo cartão de crédito e use os [cartões de teste](/developers/pt/docs/woocommerce/additional-content/test-cards) para faça o pagamento. É importante não pagar com cartões para uso pessoal.
+1. Opte por pagar com um novo cartão de crédito e use os [cartões de teste](/developers/pt/docs/woocommerce/additional-content/your-integrations/test/cards) para faça o pagamento. É importante não pagar com cartões para uso pessoal.
 1. Adicione as informações do cartão de teste indicado (número do cartão, CVV e data de validade).
 1. Clique em **pedido com pagamento obrigatório**.
 1. Ao final da compra, você pode ver que a compra foi aprovada.

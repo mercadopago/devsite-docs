@@ -46,6 +46,8 @@ A continuación, se muestran los medios de pago disponibles para la tienda al in
 | Tarjetas | Permite la integración con tarjetas de crédito y débito. |
 | 2 tarjetas | Permite la integración con 2 tarjetas de crédito y débito. |
 | Saldo en cuenta de Mercado Pago | |
+| Rapipago | Transferencias bancarias |
+| Pago Facil | Transferencias bancarias |
 
 ------------
 

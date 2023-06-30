@@ -6,12 +6,17 @@ To access the general data of your application, navigate to the [Developer Dashb
 
 In this section, we will ensure that your application meets the quality and security requirements necessary to provide the best experience for both sellers and buyers with Mercado Pago.
 
-
-### Update score
+### Evaluate quality
 
 The score indicates how secure and aligned with Mercado Pago's integration best practices your application's configuration is.
 
-Click on **Update score** to start the process of analyzing your integration. Review the improvement points identified during the analysis and make the necessary changes to your integration. In this process, a series of associated fields will be analyzed.
+Click on **Evaluate quality** to start the process of analyzing your integration. Review the improvement points identified during the analysis and make the necessary changes to your integration. In this process, a series of associated fields will be analyzed.
+
+> NOTE
+>
+> Note
+>
+> Before conducting the evaluation, make sure you have completed the application's approval process in the production environment. Additionally, it is necessary to have performed at least one successful production payment.
 
 > After making the improvements, click on **Update score** again to reassess your integration and verify if it meets the required standards.
 
@@ -45,7 +50,7 @@ Click on **Update score** to start the process of analyzing your integration. Re
 You can click on the **Edit data** button to view and edit the advanced settings that include the data of your application and the product to be integrated. They are:
 * **Logo**: JPG or PNG image format up to 1MB.
 * **Application name**: To easily identify your applications (maximum of 50 characters).
-* **Application short name**: For personal identification of the application's creator.
+* **Application short name**: secondary identifier of the application (this field cannot contain spaces or special characters).
 * **Application description** (maximum of 150 characters).
 * **Industry**: Choose the category that best describes your business.
 * **Production website URL** (optional).

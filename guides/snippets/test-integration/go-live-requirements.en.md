@@ -28,5 +28,5 @@ The Pix payment option will only be displayed if there is a Pix key registered] 
 We share some points of attention to increase the quality of your integrations:
 
 + Improve the [payment approval](/developers/en/guides/additional-content/how-tos/improve-approval) by submitting the item and payer information, shipping data, and industry information.
-+ Keep the status of orders updated in your systems by using and processing notifications correctly [IPN](/developers/en/guides/additional-content/notifications/ipn/introduction) or [Webhooks](/developers/en/guides/additional-content/notifications/webhooks/webhooks).
++ Keep the status of orders updated in your systems by using and processing notifications correctly [IPN](/developers/en/guides/additional-content/your-integrations/notifications/ipn) or [Webhooks](/developers/en/guides/additional-content/your-integrations/notifications/webhooks).
 + Use reconciliation reports via API to improve the financial management of the business.

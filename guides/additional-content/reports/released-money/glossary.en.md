@@ -8,6 +8,7 @@ If you have any doubts about the technical terms used, check the glossary below.
 > Important
 >
 > Some definitions are no longer available or have changed. Please use this glossary to check the terms for the reports you generate from October onwards. For reports that include previous dates, [please check this Glossary.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/additional-content/reports/released-money/glossary-old)
+
 ------------
 ----[mlb]----
 > WARNING
@@ -15,6 +16,7 @@ If you have any doubts about the technical terms used, check the glossary below.
 > Important
 >
 > Some definitions are no longer available or have changed. Please use this glossary to check the terms for the reports you generate from January onwards. For reports that include previous dates, [please check this Glossary.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/additional-content/reports/released-money/glossary-old)
+
 ------------
 
 | Name on the report column | What it means |

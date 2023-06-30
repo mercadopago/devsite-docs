@@ -1,9 +1,9 @@
-----[mla, mlb]----
-# Cuotas sin tarjeta
+----[mla, mlb, mlu, mco, mlc, mpe]----
+# Financiación sin tarjeta
 
-**Mercado Crédito** es el método de financiación de Mercado Pago que permite pagar en cuotas sin tarjeta.
+**Mercado Crédito** es el método de financiación de Mercado Pago que ofrece la opción de pagar en cuotas sin contar con una tarjeta.
 
-Al ofrecer esta opción en tu tienda, tus clientes podrán comprar un producto hoy y pagarlo después en cuotas. Para tu negocio, la aprobación de la compra es inmediata y está garantizada, se te acredita la totalidad por adelantado y tus clientes nos pagan después.
+Con esta línea de crédito, administrada por Mercado Pago, el dinero se acredita en su totalidad en la cuenta del vendedor, mientras que el cliente puede optar por pagar en hasta 12 pagos fijos mensuales, sin necesidad de contar con una tarjeta. El usuario solamente tendrá que ingresar a su cuenta de Mercado Pago (o crear una), conocer su límite disponible y elegir en cuántas cuotas quiere pagar.
 
 > NOTE
 >
@@ -15,11 +15,11 @@ En esta guía encontrarás los pasos necesarios para ofrecer cuotas sin tarjeta 
 
 ------------
 ----[mlm]----
-# Pagos en meses sin tarjeta de crédito
+# Financiamiento sin tarjeta
 
-Mercado Crédito es el método de financiación de Mercado Pago que permite pagar en meses sin tarjeta de crédito.
+**Mercado Crédito** es el método de financiación de Mercado Pago que ofrece la opción de pagar en mensualidades sin contar con una tarjeta.
 
-Al ofrecer esta opción en tu tienda, tus clientes podrán comprar un producto hoy y pagarlo después a meses. Para tu negocio, la aprobación de la compra es inmediata y está garantizada, se te acredita la totalidad por adelantado y tus clientes nos pagan después.
+Con esta línea de crédito, administrada por Mercado Pago, el dinero se acredita en su totalidad en la cuenta del vendedor, mientras que el cliente puede optar por pagar en hasta 12 pagos fijos mensuales, sin necesidad de contar con una tarjeta. El usuario solamente tendrá que ingresar a su cuenta de Mercado Pago (o crear una), conocer su límite disponible y elegir en cuántos meses quiere pagar.
 
 > NOTE
 >
@@ -38,7 +38,7 @@ Para realizar la integración es importante cumplir con los requisitos que se mu
 | Requisitos | Descripción | 
 |---|---|
 | Cuenta de vendedor de Mercado Pago o Mercado Libre | Para integrar necesitas una cuenta de vendedor en Mercado Pago o Mercado Libre. Si no, [haz clic aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) para crear. | 
-| Aplicación  | Las aplicaciones son las diversas integraciones contenidas en una o varias tiendas. Puedes crear una aplicación para cada solución que implementes a fin de tener todo organizado y mantener un control que facilite la gestión. Consulta [Dashboard](/developers/es/docs/checkout-bricks/additional-content/dashboard/introduction) para obtener más información sobre cómo crear una aplicación. |
+| Aplicación  | Las aplicaciones son las diversas integraciones contenidas en una o varias tiendas. Puedes crear una aplicación para cada solución que implementes a fin de tener todo organizado y mantener un control que facilite la gestión. Consulta [Tus integraciones](/developers/es/docs/checkout-bricks/additional-content/your-integrations/introduction) para obtener más información sobre cómo crear una aplicación. |
 | Instalar el SDK de Mercado Pago | Instale los SDK oficiales para simplificar su integración con nuestras [APIs](/developers/es/reference/payments/_payments/post). Para obtener más información, [haz clic aquí](/developers/es/docs/sdks-library/landing). |
 
 Si se cumplen todos los requisitos previos, podrás realizar la integración de pagos en cuotas sin tarjeta.
@@ -210,7 +210,7 @@ npm install @mercadopago/sdk-js
 ```
 ]]]
 
-Luego, inicializa la integración al definir tu [clave pública](/developers/es/docs/checkout-api/additional-content/credentials) usando el siguiente código.
+Luego, inicializa la integración al definir tu [clave pública](/developers/es/docs/checkout-api/additional-content/your-integrations/credentials) usando el siguiente código.
 
 [[[
 ```html
