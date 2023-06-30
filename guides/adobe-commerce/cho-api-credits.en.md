@@ -8,10 +8,10 @@ If you want to show Parcelamento via Pix em até 12x in the store's checkout, fo
 1. In the store **Control Panel**, go to **Stores > Configuration > Sales > Payment Methods**.
 2. In **Other payment methods**, click on the Mercado Pago plugin, and then on **Configure**.
 3. Select **Parcelamento via Pix em até 12x** and fill in the fields according to the descriptions below.
-  1. The **Enabled** field sets the availability of the payment method in the store’s checkout. Select "Yes", or leave the system value if it matches said option.
-  2. In **Title**, set the title of how the payment method will be displayed on the store checkout. We recommend using "Parcelamento via Pix em até 12x".
-  3. In **Deadline for payment**, choose the time period in which the customer must complete the payment.
-  4. In **Payment completion view**, choose “Redirect to Mercado Pago” to take the customer to the Mercado Pago environment, so it is possible to complete the financed payment without a card.
+    1. The **Enabled** field sets the availability of the payment method in the store’s checkout. Select "Yes", or leave the system value if it matches said option.
+    2. In **Title**, set the title of how the payment method will be displayed on the store checkout. We recommend using "Parcelamento via Pix em até 12x".
+    3. In **Deadline for payment**, choose the time period in which the customer must complete the payment.
+    4. In **Payment completion view**, choose “Redirect to Mercado Pago” to take the customer to the Mercado Pago environment, so it is possible to complete the financed payment without a card.
 
 ![Configuration of the payment method screen](/images/adobe-commerce/cho-api-config2-mlb-pt.png)
 
@@ -73,10 +73,10 @@ If you want to show Up to 12 installments without card with Mercado Pago in the 
 1. In the store **Control Panel**, go to **Stores > Configuration > Sales > Payment Methods**.
 2. In **Other payment methods**, click on the Mercado Pago plugin, and then on **Configure**.
 3. Select **Up to 12 installments without card with Mercado Pago** and fill in the fields according to the descriptions below.
- 1. The **Enabled** field sets the availability of the payment method in the store’s checkout. Select "Yes", or leave the system value if it matches said option.
- 2. In **Title**, set the title of how the payment method will be displayed on the store checkout. We recommend using "Up to 12 installments without card with Mercado Pago".
- 3. In **Deadline for payment**, choose the time period in which the customer must complete the payment.
- 4. In **Payment completion view**, choose “Redirect to Mercado Pago” to take the customer to the Mercado Pago environment, so it is possible to complete the financed payment without a card.
+    1. The **Enabled** field sets the availability of the payment method in the store’s checkout. Select "Yes", or leave the system value if it matches said option.
+    2. In **Title**, set the title of how the payment method will be displayed on the store checkout. We recommend using "Up to 12 installments without card with Mercado Pago".
+    3. In **Deadline for payment**, choose the time period in which the customer must complete the payment.
+    4. In **Payment completion view**, choose “Redirect to Mercado Pago” to take the customer to the Mercado Pago environment, so it is possible to complete the financed payment without a card.
 
 ![Configuration of the payment method screen](/images/adobe-commerce/cho-api-credits-config2-mlm-es.png)
 

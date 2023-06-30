@@ -8,10 +8,10 @@ Para configurar Financiación vía Pix en hasta 12 veces en el checkout de la ti
 1. En el Panel de Control de la tienda, accede a **Stores> Configuration> Sales>Payments Methods**.
 2. En **Other Payments Methods**, haz click en **Configure** dentro del plugin de Mercado Pago.
 3. Selecciona la opción **Financiación vía Pix en hasta 12 veces** y configura los campos de acuerdo a las indicaciones siguientes.
- 1. El campo **Activado** define si el medio de pago estará disponible en el checkout de la tienda. Selecciona “Sí”, o deja el valor definido por sistema en caso de que coincida.
- 2. En **Título**, define el nombre con el que el medio de pago será exhibido en el checkout de la tienda. Recomendamos usar “Parcelamento via Pix em até 12x”.
- 3. En **Plazo límite para el pago**, elige el tiempo que el cliente tiene para finalizar su pago.
- 4. En **Medio de pago finalizado**, elige "Redireccionamiento" para que el cliente sea redireccionado al sitio de Mercado Pago y pueda finalizar su pago financiado sin tarjeta.
+   1. El campo **Activado** define si el medio de pago estará disponible en el checkout de la tienda. Selecciona “Sí”, o deja el valor definido por sistema en caso de que coincida.
+   2. En **Título**, define el nombre con el que el medio de pago será exhibido en el checkout de la tienda. Recomendamos usar “Parcelamento via Pix em até 12x”.
+   3. En **Plazo límite para el pago**, elige el tiempo que el cliente tiene para finalizar su pago.
+   4. En **Medio de pago finalizado**, elige "Redireccionamiento" para que el cliente sea redireccionado al sitio de Mercado Pago y pueda finalizar su pago financiado sin tarjeta.
 
 ![Pantalla de configuración del medio de pago](/images/adobe-commerce/cho-api-config2-mlb-pt.png)
 
@@ -69,10 +69,10 @@ Para configurar Hasta 12 meses sin tarjeta con Mercado Pago en el checkout de la
 1. En el Panel de Control de la tienda, accede a **Stores> Configuration> Sales>Payments Methods**.
 2. En **Other Payments Methods**, haz click en **Configure** dentro del plugin de Mercado Pago.
 3. Selecciona la opción **Hasta 12 meses sin tarjeta con Mercado Pago** y configura los campos de acuerdo a las indicaciones siguientes.
- 1. El campo **Activado** define si el medio de pago estará disponible en el checkout de la tienda. Selecciona “Sí”, o deja el valor definido por sistema en caso de que coincida.
- 2. En **Título**, define el nombre con el que el medio de pago será exhibido en el checkout de la tienda. Recomendamos usar “Hasta 12 meses sin tarjeta con Mercado Pago”.
- 3. En **Plazo límite para el pago**, elige el tiempo que el cliente tiene para finalizar su pago.
- 4. En **Medio de pago finalizado**, elige "Redireccionamiento" para que el cliente sea redireccionado al sitio de Mercado Pago y pueda finalizar su pago financiado sin tarjeta.
+   1. El campo **Activado** define si el medio de pago estará disponible en el checkout de la tienda. Selecciona “Sí”, o deja el valor definido por sistema en caso de que coincida.
+   2. En **Título**, define el nombre con el que el medio de pago será exhibido en el checkout de la tienda. Recomendamos usar “Hasta 12 meses sin tarjeta con Mercado Pago”.
+   3. En **Plazo límite para el pago**, elige el tiempo que el cliente tiene para finalizar su pago.
+   4. En **Medio de pago finalizado**, elige "Redireccionamiento" para que el cliente sea redireccionado al sitio de Mercado Pago y pueda finalizar su pago financiado sin tarjeta.
 
 ![Pantalla de configuración del medio de pago](/images/adobe-commerce/cho-api-credits-config2-mlm-es.png)
 
