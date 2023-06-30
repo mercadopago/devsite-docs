@@ -33,7 +33,7 @@ Always use the `grant_type` field in your requests with the `authorization_code`
 
 To enhance integration security, we recommend including the `state` parameter in the `authorization code` request flow. This way, you can ensure that the response belongs to a request initiated by the same application.
 
-Note that the `redirect_uri` must be a static URL. In case you want to send parameters at this URL, use `state` to send this information. Otherwise, the call will receive an error response if the `redirect_uri` does not exactly match the one configured in the application.
+**Make sure that the `redirect_uri` is a static URL**. If you want to send additional parameters in that URL, use the `state` parameter to include that information. Otherwise, the call will receive an error response if the `redirect_uri` does not exactly match the application's configuration.
 
 ![oauth_state](/images/oauth/oauth_state_v4.png)
 
