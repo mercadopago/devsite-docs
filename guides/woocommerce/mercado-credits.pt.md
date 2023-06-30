@@ -1,4 +1,3 @@
-----[mla, mlm, mlb]----
 # Parcelamento sem cartão
 
 O **Mercado Crédito** é a modalidade de financiamento do Mercado Pago que oferece a opção de parcelar sem precisar de cartão.
@@ -28,4 +27,3 @@ Para **exibir o Mercado Crédito no checkout da sua loja**, siga os passos abaix
 ![woo-credits-admin-pt](/images/woocomerce/woo-credits-pt.png)
 
 </center>
-------------

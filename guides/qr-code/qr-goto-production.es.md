@@ -1,6 +1,6 @@
 # Salida a producción
 
-Cuando tengas la aplicación **lista y funcionando** en modalidad de prueba y quieras empezar a procesar pagos reales, debes [activar tus credenciales](/developers/es/docs/qr-code/additional-content/credentials), y **solicitar el proceso de homologación al equipo de integraciones**.
+Cuando tengas la aplicación **lista y funcionando** en modalidad de prueba y quieras empezar a procesar pagos reales, debes [activar tus credenciales](/developers/es/docs/qr-code/additional-content/your-integrations/credentials), y **solicitar el proceso de homologación al equipo de integraciones**.
 
 ## Homologación
 

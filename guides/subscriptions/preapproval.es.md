@@ -70,7 +70,7 @@ print_r ($cards["response"]);
 <?php
 require_once ('mercadopago.php');
 $mp = new MP ("ENV_ACCESS_TOKEN");
-$card_token = $mp->post ("/v1/card_tokens", array("card_id" => "cardId"));
+$card_token = $mp->post ("/v1/card_tokens", array("json_data" => array("card_id" => "cardId" )));
 print_r ($card_token);
 ?>
 
@@ -108,7 +108,7 @@ $payment = $mp->post("/v1/payments", $payment_data);
 
 ## Escucha notificaciones de los pagos
 
-Cada que vez que se curse un pago y haya una novedad sobre el pago, Mercado Pago te enviará una notificación para que puedas actualizar tus sistemas. Podrás ver el paso a paso en nuestra sección de [notificaciones](/developers/es/guides/additional-content/notifications/webhooks/webhooks)
+Cada que vez que se curse un pago y haya una novedad sobre el pago, Mercado Pago te enviará una notificación para que puedas actualizar tus sistemas. Podrás ver el paso a paso en nuestra sección de [notificaciones](/developers/es/guides/additional-content/your-integrations/notifications/webhooks)
 
 ## Reintentos
 
@@ -132,7 +132,7 @@ Cuentas con un par de [credenciales de _sandbox_]([FAKER][CREDENTIALS][URL]), qu
 | Perú | 4009 1753 3280 6176 | no disponible | no disponible |
 | Uruguay | 4157 2362 1173 6486 |5808 8877 7464 1586| no disponible |
 
-También [puedes utilizar tarjetas de prueba de medios de pago locales de cada país](/developers/es/guides/additional-content/testing/test-cards).
+También [puedes utilizar tarjetas de prueba de medios de pago locales de cada país](/developers/es/guides/additional-content/additional-content/your-integrations/test/cards).
 
 Prueba todos los escenarios posibles de pago aprobado, pendiente o rechazado. Para ello debes ingresar en el formulario en el campo `card_holder_name` alguno de los siguientes prefijos:
 

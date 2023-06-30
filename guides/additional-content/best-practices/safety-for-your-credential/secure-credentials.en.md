@@ -2,7 +2,7 @@
 
 By integrating Mercado Pago solutions, you will handle sensitive data that you must protect from possible losses or vulnerabilities. This data can be your credentials, those of your integrations and those of your clients.
 
-Credentials are unique passwords with which we identify an integration in your account. They are used to capture payments in online stores and other applications securely. To find out detailed information about credentials, go to [Credentials](/developers/en/guides/additional-content/credentials/credentials).
+Credentials are unique passwords with which we identify an integration in your account. They are used to capture payments in online stores and other applications securely. To find out detailed information about credentials, go to [Credentials](/developers/en/guides/additional-content/your-integrations/credentials).
 
 We will show you how you can optimize the security of your integrations simply and quickly.
 
@@ -25,7 +25,7 @@ https://api.mercadolibre.com/users/me
 
 ## Use the Public Key on the front-end
 
-Public Key is a key of the application that is normally used in the frontend and allows, for example, to know the payment methods and to encrypt the card data. Remember to only use this type of key in the public side of your integration. To learn more, go to [Credentials](/developers/en/guides/additional-content/credentials/credentials).
+Public Key is a key of the application that is normally used in the frontend and allows, for example, to know the payment methods and to encrypt the card data. Remember to only use this type of key in the public side of your integration. To learn more, go to [Credentials](/developers/en/guides/additional-content/your-integrations/credentials).
 
 ## Renew your credentials periodically
 
@@ -35,7 +35,7 @@ Renew your credentials in a simple way by following these steps:
 
 1. Go to [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app).
 2. Access the application whose credentials you want to renew.
-3. Select Production Credentials.
+3. Select **Production credentials** > **Share my credentials**..
 4. Once there, you can renew both the Access Token and the Client Secret. To do so, click **More Options > Renew**.
 
 > WARNING 

@@ -18,8 +18,7 @@ Você pode encontrar as informações e checar o estado de um pagamento via API,
 >
 > Importante
 >
-> Também é possível achar mais informações sobre pagamentos na atividade da conta de [Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/activities).
-
+> Também é possível achar mais informações sobre pagamentos na atividade da conta de [Mercado Pago.](https://www.mercadopago[FAKER][URL][DOMAIN]/activities)
 
 ### Erros de preenchimento pelo comprador
 
@@ -46,6 +45,12 @@ Nestes casos o campo `status_detail` poderá retornar: `cc_rejected_blacklist`, 
 > É importante considerar que se o emissor do cartão de crédito não indicar o motivo da recusa, você verá o detalhe do pagamento como `cc_rejected_other_reason`. Nesse caso, é recomendável alterar o meio de pagamento ou entrar em contato com o banco para resolver o problema.
 
 ## Recomendações para melhorar sua aprovação
+
+> WARNING
+>
+> Atenção
+>
+> Recomendamos avaliar a [qualidade de sua integração](/developers/pt/docs/checkout-pro/additional-content/integration-quality) antes de entrar em produção para verificar se você está cumprindo os padrões de qualidade e segurança do Mercado Pago que podem melhorar sua taxa de aprovação de pagamentos.
 
 Para evitar que um pagamento legítimo seja recusado por não atender as validações de segurança, é necessário **incluir todas as informações possíveis na hora de realizar a operação** e também se atentar a alguns requisitos de segurança, como nosso **Código de Segurança** e o **Device ID**.
 
@@ -78,12 +83,7 @@ Muitas vezes o comprador pode errar na hora de preencher seus dados no checkout.
 
 Por exemplo, se um pagamento for recusado por fundos insuficientes, poderá recomendar a eles que tentem novamente com outro meio de pagamento para completar a operação.
 
-> NOTE
->
-> Nota
->
-> Se você utilizar o Checkout Pro, não se preocupe, já tem as mensagens configuradas em cada caso. E se utilizar outro dos nossos produtos, recomendamos para você mostrar uma [mensagem específica por cada motivo de recusa](/developers/pt/guides/online-payments/checkout-api/handling-responses).
-
+> Se você utilizar o Checkout Pro, não se preocupe, já tem as mensagens configuradas em cada caso. E se utilizar outro dos nossos produtos, recomendamos para você mostrar uma **mensagem específica por cada motivo de recusa**.
 
 ### Adicionar o código de segurança
 
@@ -139,14 +139,13 @@ X-meli-session-id: device_id
 
 > WARNING
 > 
-> Importante
+> Atenção
 >
 > Lembre-se de substituir `device_id` pelo nome da variável que contém o seu valor de Device ID.
 
 ### Utilizar Device ID em aplicações móveis
 
 Se você possui uma aplicação móvel nativa, pode capturar a informação do dispositivo com nosso SDK e enviar no momento de criar o token. Siga estas etapas:
-
 
 #### 1. Adicione a dependência
 
@@ -178,7 +177,7 @@ dependencies {
 [[[
 ```swift
 ===
-Recomendamos realizar a inicialização no envento didFinishLaunchingWithOptions do AppDelegate.
+Recomendamos realizar a inicialização no evento didFinishLaunchingWithOptions do AppDelegate.
 ===
 import MercadoPagoDevicesSDK
 ...
@@ -190,7 +189,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 ```
 ```objective-c
 ===
-Recomendamos realizar a inicialização no envento didFinishLaunchingWithOptions do AppDelegate.
+Recomendamos realizar a inicialização no evento didFinishLaunchingWithOptions do AppDelegate.
 ===
 @import ‘MercadoPagoDevicesSDK’;
 ...

@@ -1,6 +1,12 @@
-# Mercado Pago Wallet
+# Mercado Pago Account
 
 The option to pay with Mercado Pago Wallet, by default, is presented in all Mercado Pago Checkouts in combination with guest user payments (no login).
+
+> NOTE
+>
+> Important
+>
+> In addition to the options available in this documentation, it is also possible to integrate payments with **Mercado Pago Account** using the **Wallet Brick**. Check [Default rendering](/developers/en/docs/checkout-bricks/wallet-brick/default-rendering#editor_2) documentation of Payment for more details.
 
 This option allows users registered in Mercado Pago and/or Mercado Livre to log in and use the available methods to make their payments, in addition to being able to include new payment options, such as credit cards.
 
@@ -169,32 +175,71 @@ preference = preference_response["response"]
 >
 > Add checkout
 
-With the preference created, it is necessary to display the payment button that will allow the buyer to use the Mercado Pago Wallet as a payment method. To display the payment button, use the HTML below.
+After creating the preference in the backend, it will be necessary to install the Mercado Pago frontend SDK to the project to add the payment button.
+
+The installation is done in **two steps**: **including the Mercado Pago SDK** to the project with its configured credentials and **initiating checkout** from the preference generated previously. To do this, follow the steps listed below.
+
+1. To include the MercadoPago.js SDK, add the code below to the project's HTML or install it via NPM as indicated in the examples below.
 
 
 [[[
 ```html
-<div class="cho-container"></div>
-<script src="https://sdk.mercadopago.com/js/v2"></script>
-<script>
-  const mp = new MercadoPago('PUBLIC_KEY');
-  mp.checkout({
-    preference: {
-      id: 'YOUR_PREFERENCE_ID'
-    },
-    render: {
-      container: '.cho-container',
-      label: 'Pagar com Mercado Pago',
-      type: 'wallet',
-    }
-  });
-</script>
+<body>
+  <script src="https://sdk.mercadopago.com/js/v2"></script>
+</body>
+```
+```bash
+npm install @mercadopago/sdk-js
+
 ```
 ]]]
 
-> WARNING
+Next, initialize the integration by setting your [public key](/developers/en/docs/checkout-pro/additional-content/your-integrations/credentials) using the following code.
+
+[[[
+```html
+<script>
+  const mp = new MercadoPago("YOUR_PUBLIC_KEY");
+</script>
+
+```
+```javascript
+import { loadMercadoPago } from "@mercadopago/sdk-js";
+
+
+await loadMercadoPago();
+const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
+
+```
+]]]
+
+Once this is done, it is necessary to create a container to define the location where the button will be inserted on the screen. The container is created by inserting an element into the HTML code of the page where the component will be rendered.
+
+> NOTE
 >
-> Importante
+> Important
 >
-> When creating a payment it is possible to receive 3 different statuses: "Pending", "Rejected" and "Approved". To keep up with updates, you need to configure your system to receive payment notifications and other status updates. See [Notifications](/developers/en/docs/checkout-api/additional-content/notifications/introduction) for more details.
+> The value displayed below in the **ID property** is just an example and can be changed, but it must always match the ID indicated in the rendering step.
+
+[[[
+```html
+<div id="wallet_container"></div>
+
+```
+]]]
+
+2. After completing the previous step, initialize your checkout using the ID of the preference previously created with the identifier of the element where the button should be displayed.
+
+[[[
+```javascript
+mp.bricks().create("wallet", "wallet_container", {
+  initialization: {
+    preferenceId: "<PREFERENCE_ID>",
+  },
+});
+
+```
+]]]
+
+When creating a payment it is possible to receive 3 different statuses: `Pending`, `Rejected` and `Approved`. To keep up with updates, you need to configure your system to receive payment notifications and other status updates. See [Notifications](/developers/en/docs/checkout-api/additional-content/your-integrations/notifications) for more details.
 
