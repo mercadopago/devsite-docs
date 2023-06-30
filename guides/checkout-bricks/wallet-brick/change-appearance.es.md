@@ -11,7 +11,7 @@
 | Momento de personalización  | Al renderizar el Brick  |
 | Propiedad  | customization.visual.{buttonBackground, buttonHeight, borderRadius, valuePropColor, verticalPadding, horizontalPadding} |
 | Tipo  | String  |
-| Observaciones  | Al enviar una propiedad vacía, la pantalla presentará el texto definido por el layout predeterminado. Por otro lado, al enviar un valor alternativo, reemplazará el valor predeterminado. Para comprobar cuáles son los valores por defecto, consulta la tabla a continuación. |
+| Observaciones  | Al enviar una propiedad vacía, la pantalla presentará el aspecto definido por el layout predeterminado que se muestra después de la [renderización del Brick](/developers/es/docs/checkout-bricks/wallet-brick/default-rendering#bookmark_renderizar_o_brick). Por otro lado, al enviar un valor alternativo, reemplazará el valor predeterminado. Para comprobar cuáles son los valores por defecto, consulta la tabla a continuación. |
 
 | Clave | Opciones disponibles | Predeterminado | Observaciones |
 |--- |--- | --- | --- |

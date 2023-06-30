@@ -17,7 +17,7 @@ Wallet Brick ofrece dos niveles de lectura: el **call to action (botón)** y la 
 | Momento de personalización  | Al renderizar el Brick  |
 | Propiedad  | customization.texts.{action, valueProp} |
 | Tipo  | String  |
-| Observaciones  | Al enviar texto vacío, la pantalla presentará el texto definido por el layout predeterminado. Por otro lado, al enviar un texto alternativos, reemplazará el texto predeterminado. Para comprobar cuáles son los textos por defecto, consulta la tabla a continuación. |
+| Observaciones  | Al enviar un texto vacío, la pantalla presentará el texto definido por el layout predeterminado que se muestra después de la [renderización del Brick](/developers/es/docs/checkout-bricks/wallet-brick/default-rendering#bookmark_renderizar_o_brick). Por otro lado, al enviar un texto alternativos, reemplazará el texto predeterminado. Para comprobar cuáles son los textos por defecto, consulta la tabla a continuación. |
 
 Consulta a continuación los textos disponibles para modificar y un código de ejemplo.
 

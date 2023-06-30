@@ -154,7 +154,7 @@ import { Wallet } from '@mercadopago/sdk-react';
 ```
 ]]]
 
-The result of rendering the Brick should look like the image below.
+The result of rendering the Brick should blook like the image below, presenting a text and a standard visual.
 
 <center>
 
@@ -162,7 +162,7 @@ The result of rendering the Brick should look like the image below.
 
 </center>
 
-> If you want to change the Brick text, check the [Change texts](/developers/en/docs/checkout-bricks/wallet-brick/additional-customization/change-texts) section.
+> If you want to change the text and the standard visual of the Brick, check the sections [Change texts](/developers/en/docs/checkout-bricks/wallet-brick/additional-customization/change-texts) and [Change appearance](/developers/en/docs/checkout-bricks/wallet-brick/additional-customization/change-appearance), respectively.
 
 ## Enable payment with Mercado Pago
 
