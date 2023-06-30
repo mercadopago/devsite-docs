@@ -33,7 +33,7 @@ Use o campo `grant_type` com o valor `authorization_code` em todas as suas requi
 
 Para aumentar a segurança da integração, inclua o parâmetro `state` no fluxo de solicitação do `authorization code`. Isso garantirá que a resposta pertença a uma solicitação iniciada pelo mesmo aplicativo.
 
-Observe que o `redirect_uri` deve ser uma URL estática. Caso queira enviar parâmetros nesta URL, use `state` para enviar esta informação. Caso contrário, a chamada receberá uma resposta de erro se o `redirect_uri` não corresponder exatamente ao configurado no aplicativo.
+**Certifique-se de que o redirect_uri seja uma URL estática**. Se desejar enviar parâmetros adicionais nessa URL, utilize o parâmetro `state` para incluir essas informações. Caso contrário, a chamada receberá uma resposta de erro se o `redirect_uri` não corresponder exatamente à configuração do aplicativo.
 
 ![oauth_state](/images/oauth/oauth_state_v4.png)
 
