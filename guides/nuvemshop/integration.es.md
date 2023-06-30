@@ -22,7 +22,6 @@ Para integrar Mercado Pago a tu Tiendanube, sigue los procedimientos a continuac
 
 ------------
 ----[mlb, mla, mpe, mco, mlu, mlc]----
-
 1. Crea una [cuenta vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/activities) en Mercado Pago si todavía no tienes una.
 1. Instala la aplicación dentro de la tienda.
 1. Configura las formas de pago con Mercado Pago.
@@ -31,16 +30,12 @@ Para integrar Mercado Pago a tu Tiendanube, sigue los procedimientos a continuac
 
 Para **vincular tu cuenta de Mercado Pago a Tiendanube**, sigue estos pasos:
 
-1. Accede a las ----[mlb]---- [configuraciones de medios de pago](https://lojavirtualnuvem.com.br/admin/payments/) ------------ ----[mla, mlc, mlu, mpe, mco]---- [configuraciones de medios de pago](https://mitiendanube.com/admin/payments/) ------------ en el menú de tu tienda.
+1. Accede a las [configuraciones de medios de pago](https://mitiendanube.com/admin/payments/) en el menú de tu tienda.
 2. Busca en la lista de medios de pago a Mercado Pago.
 3. Haz clic en "Configurar" y luego en "Activar".
 4. Vas a ser redirigido a Mercado Pago para que ingreses con los datos de tu cuenta. Para autorizar la conexión, haz clic en "Permitir".
 
-----[mlb]----
-![Payments Connect - Nuvem Shop](/images/nuvemshop/nuvemshop_connect_1.gif)
-
-------------
-----[mla]----
+----[mla, mlb]----
 ![Payments Connect - Nuvem Shop](/images/nuvemshop/ar_tientanube_connect.gif)
 
 ------------
@@ -74,7 +69,7 @@ Si quieres cambiar la cuenta de Mercado Pago asociada a tu tienda, es necesario 
 ----[mlb, mla, mpe, mco, mlu, mlc]----
 1. Cierra tu cuenta de Mercado Pago si la tienes abierta en tu navegador.
 2. Selecciona "Salir" en el menú de opciones.
-3. Accede a las ----[mlb]---- [configuraciones de medios de pago](https://lojavirtualnuvem.com.br/admin/payments/) ------------ ----[mla, mlm, mlc, mlu, mpe, mco]---- [configuraciones de medios de pago](https://mitiendanube.com/admin/payments/) ------------ en el menú de tu tienda, busca "Mercado Pago" y selecciona "Editar".
+3. Accede a las [configuraciones de medios de pago](https://mitiendanube.com/admin/payments/) en el menú de tu tienda, busca "Mercado Pago" y selecciona "Editar".
 4. Finalmente, haz clic en "Cambiar usuario" para desvincular tu cuenta actual.
 5. ¡Y listo! La desvinculación fue exitosa y ahora puedes **agregar una nueva cuenta**.
 

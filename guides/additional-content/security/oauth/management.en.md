@@ -10,3 +10,9 @@ Currently there are different ways in which the **access tokens** and **temporal
 * **Application elimination**: when an application is eliminated, all tokens and temporal grants belonging to it are deleted.
  
 You can receive webhook notifications every time a seller authorizes or deauthorizes your application. To configure them, read [Dashboard](/developers/en/guides/additional-content/your-integrations/dashboard).
+
+To configure them, see more information on [Webhooks](/developers/en/docs/checkout-pro/additional-content/your-integrations/notifications/webhooks) in [Your integrations](/developers/en/docs/checkout-pro/additional-content/your-integrations/introduction).
+
+
+
+

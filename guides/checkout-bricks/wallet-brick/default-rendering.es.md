@@ -4,7 +4,7 @@
 >
 > Importante
 >
-> Para realizar el renderizado de Wallet Brick, primero realice los [pasos de inicialización](/developers/es/docs/checkout-bricks/common-initialization) compartidos entre todos los Bricks. 
+> Para realizar el renderizado de Wallet Brick, primero ejecuta los [pasos de inicialización](/developers/es/docs/checkout-bricks/common-initialization) compartidos entre todos los Bricks. 
 
 ## Configurar el Brick
 
@@ -18,12 +18,12 @@ const renderWalletBrick = async (bricksBuilder) => {
      onReady: () => {
      /*
       Callback llamado cuando Brick está listo.
-      Aquí puedes ocultar cargamentos de su sitio, por ejemplo.
+      Aquí puedes ocultar loadings de su sitio, por ejemplo.
      */
    },
    onSubmit: (formData) => {
      // callback llamado al hacer clic en Wallet Brick
-     // esto es posible porque el ladrillo es un botón
+     // esto es posible porque el Brick es un botón
      // en este momento del envío, debe crear la preferencia
      const yourRequestBodyHere = {
        items: [
@@ -70,7 +70,7 @@ renderWalletBrick(bricksBuilder);
 ```react-jsx
 const onSubmit = async (formData) => {
  // callback llamado al hacer clic en Wallet Brick
- // esto es posible porque el ladrillo es un botón
+ // esto es posible porque el Brick es un botón
  // en este momento del envío, debe crear la preferencia
  const yourRequestBodyHere = {
    items: [
@@ -114,7 +114,7 @@ const onError = async (error) => {
 const onReady = async () => {
  /*
    Callback llamado cuando Brick está listo.
-   Aquí puedes ocultar cargamentos de su sitio, por ejemplo.
+   Aquí puedes ocultar loadings de su sitio, por ejemplo.
  */
 };
 ```
@@ -154,7 +154,7 @@ import { Wallet } from '@mercadopago/sdk-react';
 ```
 ]]]
 
-El resultado de renderizar el Brick debería parecerse a la imagen de abajo.
+El resultado de renderizar el Brick debe ser como se muestra en la imagen a continuación, presentando un texto y un aspecto predeterminado.
 
 <center>
 
@@ -162,7 +162,7 @@ El resultado de renderizar el Brick debería parecerse a la imagen de abajo.
 
 </center>
 
-> Si desea cambiar el texto del Brick, consulte la sección [Cambiar textos.](/developers/es/docs/checkout-bricks/wallet-brick/additional-customization/change-texts)
+> Si desea cambiar el texto y el aspecto predeterminado del Brick, consulte las secciones de [Cambiar textos](/developers/es/docs/checkout-bricks/wallet-brick/additional-customization/change-texts) y [Cambiar de aspecto](/developers/es/docs/checkout-bricks/wallet-brick/additional-customization/change-appearance), respectivamente.
 
 ## Habilitar pago con Mercado pago
 
@@ -268,7 +268,7 @@ let preference = {
 
 mercadopago.preferences.create(preference)
   .then(function (response) {
-    // Este valor es el ID de preferencia que se enviará al ladrillo al inicio
+    // Este valor es el ID de preferencia que se enviará al Brick al inicio
     const preferenceId = response.body.id;
   }).catch(function (error) {
     console.log(error);

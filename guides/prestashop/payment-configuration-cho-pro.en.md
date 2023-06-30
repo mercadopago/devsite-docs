@@ -1,4 +1,4 @@
-# Configure payments Checkout Pro
+# Checkout Pro
  
 With [Checkout Pro](/developers/en/docs/checkout-pro/landing), the buyer will be directed from the store to the Mercado Pago website where he must fill in the requested information and make the payment. This way, the transaction is processed and completed outside your store environment. It is not necessary for the buyer to have a Mercado Pago account and, at the end of the transaction, the buyer can be returned to your store.
  

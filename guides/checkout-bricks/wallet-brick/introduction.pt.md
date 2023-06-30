@@ -8,6 +8,6 @@ O Wallet Brick permite oferecer pagamentos a partir da conta do Mercado Pago em 
 
 <center>
 
-![wallet-brick-themes](checkout-bricks/wallet-brick-themes-pt.png)
+![wallet-brick-themes](checkout-bricks/wallet-brick-theme-pt.png)
 
 </center>
