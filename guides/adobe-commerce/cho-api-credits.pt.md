@@ -11,7 +11,7 @@ Para configurar o Parcelamento via Pix em até 12x no checkout da loja, siga os 
     1. O campo **Ativado** define que o meio de pagamento estará disponível no checkout da loja. Escolha "Sim", ou deixe o valor definido pelo sistema se corresponder a esta opção.
     2. Em **Título**, defina o título de como a forma de pagamento será exibida no checkout da loja. Recomendamos usar “Parcelamento via Pix em até 12x”.
     3. Em **Prazo limite para pagamento**, escolha o tempo que o cliente tem para concluir o pagamento.
-    4. Em **Meio de pagamento excluído**, escolha "Redirecionamento" para que o cliente seja redirecionado para o site do Mercado Pago e possa finalizar seu pagamento parcelado sem cartão.
+    4. Em **Meio de pagamento excluído**, escolha "Redirecionamento" para que o cliente seja redirecionado para o site do Mercado Pago e finalize o pagamento.
 
 ![Tela de configuração do meio de pagamento](/images/adobe-commerce/cho-api-config2-mlb-pt.png)
 
