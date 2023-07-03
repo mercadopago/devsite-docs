@@ -21,23 +21,24 @@ Haz clic en **Evaluar calidad** para iniciar el proceso de análisis de tu integ
 > Después de realizar las mejoras, haz clic nuevamente en **Actualizar puntaje** para reevaluar tu integración y verificar si cumple con los estándares requeridos.
 
 ----[mla, mlm, mlu, mco, mlc, mpe]----
+
 > WARNING
 >
 > Atención
 >
-> Por el momento, la sección **Calidad de integración** solo está disponible para integraciones con [Checkout Pro](/developers/es/docs/checkout-pro/landing), [Mercado Pago Point](/developers/es/docs/mp-point/landing), [Checkout API](/developers/es/docs/checkout-api/landing) y [Checkout Bricks](/developers/es/docs/checkout-bricks/landing).
-
+> Por el momento, la sección **Calidad de integración** solo está disponible para integraciones con [Checkout Pro,](/developers/es/docs/checkout-pro/landing) [Mercado Pago Point,](/developers/es/docs/mp-point/landing) [Checkout API](/developers/es/docs/checkout-api/landing) y [Checkout Bricks.](/developers/es/docs/checkout-bricks/landing)
 
 ------------
 ----[mlb]----
+
 > WARNING
 >
 > Atención
 >
-> Por el momento, la sección **Calidad de integración** solo está disponible para integraciones con [Checkout Pro](/developers/es/docs/checkout-pro/landing), [Mercado Pago Point](/developers/es/docs/mp-point/landing), [Checkout Transparente](/developers/es/docs/checkout-api/landing) y [Checkout Bricks](/developers/es/docs/checkout-bricks/landing).
-
+> Por el momento, la sección **Calidad de integración** solo está disponible para integraciones con [Checkout Pro,](/developers/es/docs/checkout-pro/landing) [Mercado Pago Point,](/developers/es/docs/mp-point/landing) [Checkout Transparente](/developers/es/docs/checkout-api/landing) y [Checkout Bricks.](/developers/es/docs/checkout-bricks/landing)
 
 ------------
+
 ## Datos de la aplicación
 * **Datos de la aplicación**: esta sección muestra los datos básicos de la aplicación, incluyendo:
   - **ID de usuario**: número de identificación de usuario, que es creado automáticamente.

@@ -5,7 +5,7 @@ To perform the test, you must have at least two accounts:
 * **Seller**: account required to **configure application and credentials**. This is your user account.
 * **Buyer**: account required to **test the purchase process**.
 
-In addition to these accounts, it is also important to use [test cards](/developers/en/docs/additional-content/your-integrations/test/cards) to test payment integration and simulate the purchase process, as well as **balance in the test user's Mercado Pago account**. See more details below.
+In addition to these accounts, it is also important to use [test cards](/developers/en/guides/additional-content/your-integrations/test-cards) to test payment integration and simulate the purchase process, as well as **balance in the test user's Mercado Pago account**. See more details below.
 
 To create accounts and test how the integrations work, follow the steps below.
 
@@ -13,7 +13,7 @@ To create accounts and test how the integrations work, follow the steps below.
 2. On the application page, go to the **Test accounts** section and click the **+ Create test account** button.
 3. In the "Create new account" screen, enter a description for the account identification. Example: "Seller - Store 1".
 4. Next, select the **operating country** for the account. This information **cannot be edited later**, and furthermore, the Buyer and Seller users need to be from the same country.
-5. Fill in with a **fictional money value** that will serve as a reference for testing your applications. This value will appear as the balance in the Mercado Pago account of the test user and can be used for payment simulation, just like with the [test cards](/developers/en/docs/additional-content/your-integrations/test/cards).
+5. Fill in with a **fictional money value** that will serve as a reference for testing your applications. This value will appear as the balance in the Mercado Pago account of the test user and can be used for payment simulation, just like with the [test cards](/developers/en/guides/additional-content/your-integrations/test-cards).
 6. Authorize the use of your personal data in accordance with the [Privacy Statement](https://www.mercadopago.com.br/privacidade) and ensure that your account uses Mercado Pago's tools in accordance with the [Terms and Conditions](https://www.mercadopago.com.br/developers/en/docs/resources/legal/terms-and-conditions) by checking the checkbox.
 7. Click on **Create test account**.
 
