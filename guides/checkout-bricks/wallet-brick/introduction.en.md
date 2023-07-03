@@ -8,6 +8,6 @@ Wallet Brick allows you to offer payments from your Mercado Pago account at any 
 
 <center>
 
-![wallet-brick-themes](checkout-bricks/wallet-brick-themes-en.png)
+![wallet-brick-themes](checkout-bricks/wallet-brick-theme-en.png)
 
 </center>
