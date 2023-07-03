@@ -24,7 +24,7 @@ See below for the payment methods available to the store when integrating Checko
 |---|---|
 | Cards | Allows integration with credit and debit cards |
 | 2 Cards | Allows integration with 2 credit and debit cards |
-| Pix | Bank transfer available 24 hours a day. The Pix payment option will only be displayed if a Pix key is registered in Mercado Pago. If you haven't created one yet, click [here](https://www.youtube.com/watch?v=60tApKYVnkA) and see the step-by-step. |
+| Pix | Bank transfer available 24 hours a day. The Pix payment option will only be displayed if a Pix key is registered in Mercado Pago. If you haven't created one yet, [see the step-by-step](https://www.youtube.com/watch?v=60tApKYVnkA). |
 | Offline methods | Payments via boleto bancário and lottery house. |
 | Parcelamento via Pix em até 12x | Allows the customer the option to finance a purchase without a card, while the seller receives the total amount of the money thanks to this Mercado Pago administrated credit line. |
 
