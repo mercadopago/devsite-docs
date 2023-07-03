@@ -19,11 +19,11 @@ It is not possible to avoid all chargebacks; however, you can reduce the probabi
    
 4. [Send the payment voucher](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/16170) to your customer via e-mail or text message.
    
-
 ## Fraud Alert
-We'll let you know via IPN notifications any time we notice irregular activity or there's a fraud alert on your account. In this situation, you must [cancel the purchase](/docs/checkout-api/payment-management/cancellations-and-refunds) and return the money to the buyer to avoid a dispute. 
 
-Configure and enable [IPN notifications](/developers/panel/ipn) on your dashboard to receive alerts for irregular behavior by enabling **Fraud Alert** (`delivery_cancellation`) 
+We'll let you know via IPN notifications any time we notice irregular activity or there's a fraud alert on your account. In this situation, you must [cancel the purchase](/developers/en/guides/additional-content/sales-processing/cancellations-and-refunds) and return the money to the buyer to avoid a dispute. 
+
+Configure and enable [IPN notifications](/developers/panel/ipn) on your dashboard to receive alerts for irregular behavior by enabling **Fraud Alert** (`delivery_cancellation`).
 
 > NOTE
 >
