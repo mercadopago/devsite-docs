@@ -26,16 +26,13 @@ Puedes generar un reporte de ----[mla]---- Liquidaciones ------------ ----[mlm, 
 | Panel de Mercado Pago | Para generar manualmente un reporte desde tu panel de Mercado Pago, ve a ----[mla, mlm]---- [Informes y facturación](https://www.mercadopago[FAKER][URL][DOMAIN]/movements), luego haz clic en *Ir a Reportes de tus cobros y estados de cuenta* y elige el reporte que deseas. ------------ ----[mlb, mpe, mlu, mco]---- [Reportes](https://www.mercadopago[FAKER][URL][DOMAIN]/movements) y elige la opción de *Ver reportes creados*. ------------ <br/><br/>Sigue el paso a paso para [generar reportes desde el panel](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/panel). |
 | Integración vía API | Para generar manualmente un reporte o programar la frecuencia de uno según tus necesidades, utiliza nuestra integración vía API. <br/><br/>Lee la documentación para [generar reportes por API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/api). |
 
-
 ## Características técnicas del reporte
 
 Ten en cuenta la siguiente información técnica cuando quieras generar tus reportes.
 
-
 ### Estructura del reporte
 
 Conoce las características de los elementos que conforman tu reporte.
-
 
 | Elemento o acción | Características |
 | --- | --- |
@@ -45,7 +42,6 @@ Conoce las características de los elementos que conforman tu reporte.
 | Moneda | Local (basada en el país donde esté registrada la cuenta de Mercado Pago) |
 | Zona horaria de las columnas con fechas | GMT-4 <br/> <br/> Toma como referencia el lugar desde el que se descarga el reporte. |
 | Selección de fechas vía web | Debe basarse en el timezone de la cuenta. <br/> Por ejemplo, a la cuenta registrada en Brasil le corresponde el timezone de São Paulo. |
-
 
 ### Exportación del reporte
 

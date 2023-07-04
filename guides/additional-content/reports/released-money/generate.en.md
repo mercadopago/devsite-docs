@@ -8,7 +8,6 @@
 > We have created new columns that allow you to identify which digital wallets or banks your clients use when they pay with a Mercado Pago QR Code. Update your settings preferences [from the panel](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports/release/settings) or [via API](/developers/en/guides/additional-content/reports/released-money/api) so that you can include these columns in your reports.
 
 ------------
-
 ----[mco, mlc]----
 > WARNING
 >
