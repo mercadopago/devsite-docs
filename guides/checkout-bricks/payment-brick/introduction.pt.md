@@ -8,11 +8,16 @@ Você poderá dar aos seus clientes a possibilidade de efetuarem **pagamentos at
 
 A possibilidade de guardar os dados dos cartões que já foram debitados em compras anteriores torna o processo de pagamento mais eficiente e rápido. Para o comprador, não é mais necessário recarregar os dados cada vez que entrar no checkout.
 
-<center>
-
-![payment-Brick-layout-mlb](checkout-bricks/payment-brick-layout-mlb-pt.gif)
-
-</center>
+---
+live_demo_code_action:
+ - title: Experimente nosso Brick
+ - description: Construa e confira a experiência visual do Payment Brick em tempo real. Quando estiver tudo pronto, baixe ou copie o código gerado.
+ - link: /developers/pt/live-demo/payment-brick
+ - image:https://http2.mlstatic.com/frontend-assets/dx-devsite/images/payment-brick.png
+ - linkName: Demo
+ - buttonDescription: Construir seu Payment Brick
+---
+<br>
 
 Por sua vez, nosso processador cumpre todas as garantias de segurança para oferecer aos usuários a máxima proteção ao salvar seus dados. Essa é uma das grandes vantagens de adicionar o Checkout Bricks ao seu site: a tranquilidade de oferecer uma solução segura, respaldada pelo Mercado Pago, mas customizada para as necessidades da sua empresa.
 
