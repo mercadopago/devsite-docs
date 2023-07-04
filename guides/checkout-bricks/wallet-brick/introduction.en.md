@@ -16,3 +16,9 @@ live_demo_code_action:
  - buttonDescription: Build your Wallet Brick
 ---
 <br>
+=======
+<center>
+
+![wallet-brick-themes](checkout-bricks/wallet-brick-theme-en.png)
+
+</center>

@@ -1,4 +1,4 @@
-# Configurar os pagamentos com  Checkout Transparente 
+# Checkout Transparente 
 
 Com o [Checkout Transparente](/developers/pt/guides/checkout-api/landing), todo o processo de finalização de compra acontecerá dentro do ambiente da loja online, sem a necessidade de redirecionamento para uma página externa. Além de permitir maior controle no processo de customização e integração, o checkout oferece uma estrutura completa para processamento de pagamentos com os principais meios disponíveis no mercado. 
 

@@ -31,7 +31,6 @@ Dependiendo de las [tasas y plazos](https://www.mercadopago[FAKER][URL][DOMAIN]/
 
 Los plazos de liquidación tienen que ver con los tiempos de los bancos o por los flujos de intermediación cuando las operaciones se realizan en Mercado Libre. Otras operaciones que pueden afectar la liquidación de tu dinero son los Contracargos y Reclamos que puedas recibir por una venta.
 
-
 > Para saber la fecha exacta en la que estará disponible el dinero de una operación, revisa el [detalle de tus cobros acreditados](https://www.mercadopago[FAKER][URL][DOMAIN]/activities/balance).
 
 ## Para qué usar el reporte
@@ -54,6 +53,7 @@ Además, puedes usar el reporte para conocer el historial de dinero ----[mla]---
 > Encuentra con mayor facilidad todos tus movimientos
 >
 > A partir de ------------ ----[mpe]----enero de 2022 ------------  ----[mlu]---- marzo de 2022 ------------ ----[mpe, mlu]---- este reporte muestra tus movimientos en orden cronológico, para que sea más fácil identificar cuándo se realizaron. Este cambio no se visualiza en los reportes que generes con fechas previas.
+
 ------------
 ----[mlm, mlb, mlc, mco, mla]----
 > NOTE
@@ -61,4 +61,5 @@ Además, puedes usar el reporte para conocer el historial de dinero ----[mla]---
 > Nota
 >
 > Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/glossary) de ------------ ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu]---- Liberaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mla]---- para revisarlo cuando lo necesites o quieras consultar algún término técnico.
+
 ------------

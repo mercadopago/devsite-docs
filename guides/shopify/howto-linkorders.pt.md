@@ -1,4 +1,4 @@
-# Vincule um pedido entre o painel Shopify e o painel Mercado Pago
+# Como vincular um pedido no painel Mercado Pago
 
 Para vincular um pedido do painel da Shopify com o pedido no painel de atividades do Mercado Pago, siga os passos abaixo:
 

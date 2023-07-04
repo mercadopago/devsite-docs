@@ -1,4 +1,4 @@
-# Configurar pagos con Checkout Pro
+# Checkout Pro
  
 Con [Checkout Pro](/developers/es/docs/checkout-pro/landing), el comprador será dirigido desde la tienda al sitio web de Mercado Pago donde deberá completar los datos solicitados y realizar el pago. De esta manera, la transacción se procesa y completa fuera del entorno de su tienda. No es necesario que el comprador tenga una cuenta de Mercado Pago y, al finalizar la transacción, el comprador puede ser devuelto a tu tienda.
  
