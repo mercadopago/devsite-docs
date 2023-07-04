@@ -8,11 +8,16 @@ Por el momento, podrás darle a tus clientes la posibilidad de hacer **pagos a t
 
 La posibilidad de guardar los datos de tarjetas que ya fueron cargadas en compras anteriores, hace que el proceso de pago sea más eficiente y rápido. Para el comprador ya no es necesario tener que volver a cargar los datos cada vez que ingrese al checkout. 
 
-<center>
-
-![payment-Brick-layout-mlb](checkout-bricks/payment-brick-layout-mlb-es.gif)
-
-</center>
+---
+live_demo_code_action:
+ - title: Prueba nuestro Brick
+ - description: Construye y comprueba la experiencia visual de Payment Brick en tiempo real. Cuando esté todo listo, descarga o copia el código generado.
+ - link: /developers/es/live-demo/payment-brick
+ - image:https://http2.mlstatic.com/frontend-assets/dx-devsite/images/payment-brick.png
+ - linkName: Demo
+ - buttonDescription: Construir tu Payment Brick
+---
+<br>
 
 A su vez, nuestro procesador cumple con todas las garantías de seguridad para darle a los usuarios la máxima protección al guardar sus datos. Esa es una de las grandes ventajas de sumar Checkout Bricks a su sitio: la tranquilidad de brindar una solución segura, con el respaldo de Mercado Pago, pero personalizado a las necesidades de su empresa.
 
