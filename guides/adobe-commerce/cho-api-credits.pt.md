@@ -29,7 +29,7 @@ Clique em **Gravar Configuração** para salvar as alterações realizadas, e pr
 
 
 ----[mla]----
-# Parcelamento em até 12x sem cartão no Mercado Pago
+# Parcelamento em até 12 meses sem cartão no Mercado Pago
 Com o Checkout API, é possível oferecer **Parcelamento em até 12 meses sem cartão no Mercado Pago**. Com essa linha de crédito, administrada pelo Mercado Pago, o pagamento é creditado integralmente na conta do vendedor, podendo o cliente optar por pagar em até 12 parcelas fixas mensais e sem a necessidade de cartão.
 Atualmente, o Parcelamento em até 12 meses sem cartão no Mercado Pago é oferecido em nosso [Checkout Pro](/developers/pt/docs/checkout-pro/landing), e agora também é possível acessá-lo diretamente do checkout da loja via Checkout API.
 
