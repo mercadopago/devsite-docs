@@ -108,7 +108,7 @@ O usuário deve responder ao desafio para que a transição seja validada devida
 > 
 > Importante
 > 
-> Por questões de segurança, o pagamnto será rejeitado caso o processo de _Challenge_ não seja iniciado em até 30 segundos após a sua criação. Portanto, é importante que o desafio se inicie exatamente após a sua geração.
+> Por questões de segurança, o pagamento será rejeitado caso o processo de _Challenge_ não seja iniciado em até 30 segundos após a sua criação. Portanto, é importante que o desafio se inicie exatamente após a sua geração.
 
 3. Após a resolução do desafio, será exibido o resultado final do pagamento de acordo com a resposta emitida pelo banco ao finalizar o _Challenge_.
 
