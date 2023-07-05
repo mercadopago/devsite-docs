@@ -22,11 +22,11 @@ paths:
       parameters:
         - name: id
           in: path
-          description: Unique chargeback identifier
+          description: The "id" parameter represents a unique identifier for the chargeback transaction. If you do not have this specific information, simply insert the payment ID for which you want to obtain the chargeback details. It is important to note that when using the payment ID, a small modification to the endpoint is required in order to make the call following the following format - https://api.mercadopago.com/v1/chargebacks/search?payment_id=PAYMENT_ID_.
           x-description-i18n:
-            eng: Unique chargeback identifier
-            spa: Identificador único del contracargo
-            por: Identificador único do estorno
+            eng: The "id" parameter represents a unique identifier for the chargeback transaction. If you do not have this specific information, simply insert the payment ID for which you want to obtain the chargeback details. It is important to note that when using the payment ID, a small modification to the endpoint is required in order to make the call following the following format - https://api.mercadopago.com/v1/chargebacks/search?payment_id=PAYMENT_ID_.
+            spa: El parámetro "id" corresponde a un identificador único para la transacción de reembolso. En caso de no contar con esta información, simplemente debes ingresar el ID de pago para el cual deseas obtener los detalles del reembolso. Es importante resaltar que al utilizar el ID de pago, es necesario realizar una pequeña modificación en el endpoint para poder realizar la llamada de la siguiente manera - https://api.mercadopago.com/v1/chargebacks/search?payment_id=PAYMENT_ID.
+            por: O parâmetro "id" refere-se a um identificador exclusivo para a transação de estorno. Caso não possua essa informação, basta inserir o ID do pagamento para o qual deseja obter os detalhes do estorno. É fundamental destacar que, ao utilizar o ID de pagamento, é necessário efetuar uma pequena alteração no endpoint a fim de realizar a chamada corretamente. A URL modificada deve seguir o seguinte formato - https://api.mercadopago.com/v1/chargebacks/search?payment_id=PAYMENT_ID.
           required: true
           schema:
             type: string
