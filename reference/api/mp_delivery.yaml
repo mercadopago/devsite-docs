@@ -3342,11 +3342,11 @@ paths:
         eng: Catalog import
         spa: Importación de catálogo
         por: Importação de catálogo
-      description: This endpoint sends a catalog to be imported asynchronously to one or more stores. Each store generates an import identifier that can be used to check the process status afterwards. It will return a '202 - Success' response when all requests were sent successfully, or '206 - Partial Error' if any post fails
+      description: This endpoint sends a catalog to be imported asynchronously to one or more stores. Each store generates an import identifier that can be used to check the process status afterwards. It will return a 202 - Success response when all requests were sent successfully, or 206 - Partial Error if any post fails
       x-description-i18n:
-        eng: This endpoint sends a catalog to be imported asynchronously to one or more stores. Each store generates an import identifier that can be used to check the process status afterwards. It will return a '202 - Success' response when all requests were sent successfully, or '206 - Partial Error' if any post fails
-        spa: Este endpoint importa un catálogo de manera asíncrona a una o más tiendas. Cada tienda genera un identificador de importación que se puede utilizar para comprobar el estado del proceso posteriormente.  Retornará una respuesta '202 - Success' cuando todas las solicitudes se enviaron correctamente, o '206 - Partial Error' en caso de que alguna publicación falle
-        por: Esse endpoint importa um catálogo de forma assíncrona para uma ou mais lojas. Cada loja gera um identificador de importação que pode ser usado para verificar o status do processo posteriormente. Retornará uma resposta '202 - Success' quando todas as requisições forem enviadas corretamente ou '206 - Partial error' caso alguma requisição falhe.
+        eng: This endpoint sends a catalog to be imported asynchronously to one or more stores. Each store generates an import identifier that can be used to check the process status afterwards. It will return a 202 - Success response when all requests were sent successfully, or 206 - Partial Error if any post fails
+        spa: Este endpoint importa un catálogo de manera asíncrona a una o más tiendas. Cada tienda genera un identificador de importación que se puede utilizar para comprobar el estado del proceso posteriormente.  Retornará una respuesta 202 - Success cuando todas las solicitudes se enviaron correctamente, o 206 - Partial Error en caso de que alguna publicación falle
+        por: Esse endpoint importa um catálogo de forma assíncrona para uma ou mais lojas. Cada loja gera um identificador de importação que pode ser usado para verificar o status do processo posteriormente. Retornará uma resposta 202 - Success quando todas as requisições forem enviadas corretamente ou 206 - Partial error caso alguma requisição falhe.
       requestBody:
         content:
           application/json:
