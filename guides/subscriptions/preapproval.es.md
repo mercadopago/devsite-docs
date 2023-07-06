@@ -1,7 +1,3 @@
----
-  indexable: false
----
-
 # Pagos sin CVV
 
 > NOTE
@@ -15,9 +11,9 @@
 > Con los pagos sin cvv, se podrán realizar cobros recurrentes con Mercado Pago teniendo la libertad de amoldar la solución de la forma más óptima para tu negocio.
 > <br/>
 > Se facilita este instructivo con el objetivo de  brindarle todas las herramientas para poder realizar la integración de la solución. El Vendedor deberá cumplir con las políticas de integración de Mercado Pago:
-> * El Vendedor deberá comunicar en forma clara e inequívoca a su base de usuarios o clientes que la plataforma de pago en su sitio web es provista por Mercado Pago, y los plazos o fechas y los montos de los pagos recurrentes.
-> * En caso de que usuarios o clientes existentes del Vendedor estuvieran siendo migrados a la plataforma de Pagos Recurrentes de Mercado Pago, el Vendedor deberá comunicarlo por escrito indicando que Mercado Pago procesará los pagos, informando que en el resumen verá el cargo como Mercado Pago/Mercado Libre” (*).
-> * Pre-Approval solo está disponible a través del Checkout Pro personalizado o Web Tokenize Checkout, es decir, vía la utilización de nuestras API’s.
+> - El Vendedor deberá comunicar en forma clara e inequívoca a su base de usuarios o clientes que la plataforma de pago en su sitio web es provista por Mercado Pago, y los plazos o fechas y los montos de los pagos recurrentes.
+> - En caso de que usuarios o clientes existentes del Vendedor estuvieran siendo migrados a la plataforma de Pagos Recurrentes de Mercado Pago, el Vendedor deberá comunicarlo por escrito indicando que Mercado Pago procesará los pagos, informando que en el resumen verá el cargo como Mercado Pago/Mercado Libre” (*).
+> - Pre-Approval solo está disponible a través del Checkout Pro personalizado o Web Tokenize Checkout, es decir, vía la utilización de nuestras API’s.
 
 ## Crea una aplicación
 
@@ -29,7 +25,7 @@ Para la primer transacción siempre se tendrán que solicitar los datos de la ta
 
 ## Crea un customer y asociale la tarjeta utilizada
 
-Una vez cursado el primer pago, y habiéndote asegurado que la tarjeta es válida, crea un Cliente que estará asociado a tu cuenta y asóciale una tarjeta. Podrás hacer esto siguiendo el paso a paso indicando en nuestra integración de [Usuarios y Tarjetas](/developers/es/guides//checkout-api/advanced-integration)
+Una vez cursado el primer pago, y habiéndote asegurado que la tarjeta es válida, crea un Cliente que estará asociado a tu cuenta y asóciale una tarjeta. Podrás hacer esto siguiendo el paso a paso indicando en nuestra integración de [Usuarios y Tarjetas](/developers/es/guides/checkout-api/advanced-integration)
 
 ## Cobra de forma recurrente a tus clientes
 
@@ -37,7 +33,6 @@ Una vez cursado el primer pago, y habiéndote asegurado que la tarjeta es válid
 
 Para conocer los datos de tu cliente, podrás obtenerlo de la siguiente forma:
 
-[[[
 ```php
 <?php
 require_once ('mercadopago.php'); $mp = new MP ("ENV_ACCESS_TOKEN"); 
@@ -46,13 +41,11 @@ $customer = $mp->get("/v1/customers/search", $filters);
 print_r ($customer);
 ?>
 ```
-]]]
 
 ### Obtené la tarjeta asociada a tu cliente
 
 Una vez hayas obtenido el id de tu cliente, puedes buscar la tarjeta de la siguiente forma:
 
-[[[
 ```php
 <?php
 require_once ('mercadopago.php');
@@ -61,11 +54,9 @@ $cards = $mp->get ("/v1/customers/[CUSTOMER_ID]/cards");
 print_r ($cards["response"]);
 ?>
 ```
-]]]
 
 ### Tokeniza la tarjeta con el card_id
 
-[[[
 ```php
 <?php
 require_once ('mercadopago.php');
@@ -75,11 +66,10 @@ print_r ($card_token);
 ?>
 
 ```
-]]]
 
 > NOTE
 >
-> Nota
+> Importante
 >
 > Sigue el paso a paso y evita pagos fraudulentos con nuestras recomendaciones para [mejorar la aprobación de tus pagos](/developers/es/guides/additional-content/resources/pci-compliant-merchants/receiving-payment-by-card/#bookmark_mejora_la_aprobación_enviando_el_device_fingerprint).
 
@@ -87,7 +77,6 @@ print_r ($card_token);
 
 Al estar usando un token creado con el card_id, deberás realizar el posteo del pago indicando el id del customer asociado a la tarjeta:
 
-[[[
 ```php
 <?php
 require_once ('mercadopago.php');
@@ -104,11 +93,10 @@ $payment_data = array(
 $payment = $mp->post("/v1/payments", $payment_data);
 ?>
 ```
-]]]
 
 ## Escucha notificaciones de los pagos
 
-Cada que vez que se curse un pago y haya una novedad sobre el pago, Mercado Pago te enviará una notificación para que puedas actualizar tus sistemas. Podrás ver el paso a paso en nuestra sección de [notificaciones](/developers/es/guides/additional-content/your-integrations/notifications/webhooks)
+Cada que vez que se curse un pago y haya una novedad sobre el pago, Mercado Pago te enviará una notificación para que puedas actualizar tus sistemas. Podrás ver el paso a paso en nuestra sección de [notificaciones](/developers/es/docs/your-integrations/notifications/webhooks).
 
 ## Reintentos
 
@@ -120,7 +108,7 @@ Es muy importante que antes de salir a producción realices pruebas del flujo co
 
 Una buena experiencia de tus clientes en el _checkout_ ayuda a mejorar la conversión.
 
-Cuentas con un par de [credenciales de _sandbox_]([FAKER][CREDENTIALS][URL]), que te permitián probar toda la integración en una réplica exacta del Modo Producción pudiendo simular transacciones utilizando las tarjetas de prueba:
+Cuentas con un par de [credenciales de _sandbox_](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials), que te permitián probar toda la integración en una réplica exacta del Modo Producción pudiendo simular transacciones utilizando las tarjetas de prueba:
 
 | País | Visa | Mastercard | American Express |
 | --- | --- | --- | --- |
@@ -132,7 +120,7 @@ Cuentas con un par de [credenciales de _sandbox_]([FAKER][CREDENTIALS][URL]), qu
 | Perú | 4009 1753 3280 6176 | no disponible | no disponible |
 | Uruguay | 4157 2362 1173 6486 |5808 8877 7464 1586| no disponible |
 
-También [puedes utilizar tarjetas de prueba de medios de pago locales de cada país](/developers/es/guides/additional-content/additional-content/your-integrations/test/cards).
+También [puedes utilizar tarjetas de prueba de medios de pago locales de cada país](/developers/es/docs/your-integrations/test/cards).
 
 Prueba todos los escenarios posibles de pago aprobado, pendiente o rechazado. Para ello debes ingresar en el formulario en el campo `card_holder_name` alguno de los siguientes prefijos:
 
