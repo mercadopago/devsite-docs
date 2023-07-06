@@ -136,7 +136,7 @@ Once the configurations are created, enter the code below to render the brick.
 >
 > Important
 >
-> El id 'walletBrick_container' de la div HTML abajo debe corresponder que el valor enviado en el metodo create() de la etapa anterior.
+> El id `walletBrick_container` de la div HTML abajo debe corresponder que el valor enviado en el metodo create() de la etapa anterior.
 
 [[[
 ```html

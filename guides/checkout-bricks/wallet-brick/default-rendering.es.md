@@ -136,7 +136,7 @@ Una vez creadas las configuraciones, ingrese el código a continuación.
 >
 > Importante
 >
-> El id 'walletBrick_container' de la div HTML abajo debe corresponder que el valor enviado en el metodo create() de la etapa anterior.
+> El id `walletBrick_container` de la div HTML abajo debe corresponder que el valor enviado en el metodo create() de la etapa anterior.
 
 [[[
 ```html
