@@ -6,8 +6,8 @@ Tus integraciones es un entorno que te permite gestionar tus integraciones. Este
 
 La página de [Detalles de la aplicación]((/developers/es/docs/your-integrations/application-details)) se compone de diferentes secciones y cada una cumple un objetivo específico:
 * **Información general**: muestra la información general de la aplicación.
-* **Pruebas**: prueba el funcionamiento de la integración y simula diferentes transacciones con las [Credenciales](/developers/es/docs/your-integrations/credentials), [Cuentas de prueba](/developers/es/docs/your-integrations/test/accounts) y [Tarjetas de prueba](/developers/es/docs/your-integrations/test/cards).
+* **Pruebas**: prueba el funcionamiento de la integración y simula diferentes transacciones con las [Credenciales](/developers/es/guides/additional-content/your-integrations/credentials), [Cuentas de prueba](/developers/es/guides/additional-content/your-integrations/test-accounts) y [Tarjetas de prueba](/developers/es/guides/additional-content/your-integrations/test-cards).
 * **Notificaciones**: configura la aplicación para recibir notificaciones de eventos relacionados con transacciones, como por ejemplo, avisos de pagos, fraudes, disputas, etc.
-    1. [Webhooks](/developers/es/docs/your-integrations/notifications/ipn)  
-    2. [IPN](/developers/es/docs/your-integrations/notifications/webhooks)
+    1. [Webhooks](/developers/es/guides/additional-content/your-integrations/webhooks)  
+    2. [IPN](/developers/es/guides/additional-content/your-integrations/ipn)
 * **Producción**: activa las **Credenciales de producción** para comenzar a recibir pagos en tu tienda en línea y en otras aplicaciones.
