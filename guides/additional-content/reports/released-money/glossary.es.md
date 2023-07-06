@@ -8,7 +8,6 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 > Importante
 >
 > Algunas definiciones ya no están disponibles o han cambiado. Usa este glosario para conocer los términos de los reportes que generes a partir de octubre. Para los reportes que abarquen fechas previas [consulta este Glosario.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/additional-content/reports/released-money/glossary-old)
-
 ------------
 ----[mlb]----
 > WARNING
@@ -16,7 +15,6 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 > Importante
 >
 > Algunas definiciones ya no están disponibles o han cambiado. Usa este glosario para conocer los términos de los reportes que generes a partir de enero. Para los reportes que abarquen fechas previas [consulta este Glosario.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/additional-content/reports/released-money/glossary-old)
-
 ------------
 
 | Nombre de la columna del reporte | Qué significa |
