@@ -1,10 +1,10 @@
 ----[mlb]----
 # Financiación vía Pix en hasta 12 veces
 Con Checkout Transparente, es posible ofrecer **Financiación vía Pix en hasta 12 veces**. Con esta línea de crédito, administrada por Mercado Pago, el dinero se acredita en su totalidad en la cuenta del vendedor, mientras que el cliente puede optar por pagar en hasta 12 pagos fijos mensuales, sin necesidad de contar con una tarjeta.
-Actualmente, Financiación vía Pix en hasta 12 veces es ofrecido en nuestro [Checkout Pro](/developers/es/docs/checkout-pro/landing), y ahora también es posible acceder directo desde el checkout de la tienda vía Checkout Transparente.
+Actualmente, **Financiación vía Pix en hasta 12 veces** es ofrecido en nuestro [Checkout Pro](/developers/es/docs/checkout-pro/landing), y ahora también es posible acceder directo desde el checkout de la tienda vía Checkout Transparente.
 
 
-Para configurar Financiación vía Pix en hasta 12 veces en el checkout de la tienda, sigue los pasos a continuación.
+Para configurar **Financiación vía Pix en hasta 12 veces** en el checkout de la tienda, sigue los pasos a continuación.
 1. En el Panel de Control de la tienda, accede a **Stores> Configuration> Sales>Payments Methods**.
 2. En **Other Payments Methods**, haz click en **Configure** dentro del plugin de Mercado Pago.
 3. Selecciona la opción **Financiación vía Pix en hasta 12 veces** y configura los campos de acuerdo a las indicaciones siguientes.
@@ -24,17 +24,19 @@ En la sección **Common Payment Method Definitions**, puedes definir algunas car
 
 ![Pantalla de definiciones comunes de medios de pago](/images/adobe-commerce/cho-api-credits-definitions-mlb-pt.png)
 
-Haz clic en **Guardar configuración** para guardar los cambios, ¡y listo! Ya puedes ofrecer Financiación vía Pix en hasta 12 veces como medio de pago en el checkout de tu tienda.
+Haz clic en **Guardar configuración** para guardar los cambios.
+
+¡Y listo! Ya puedes ofrecer **Financiación vía Pix en hasta 12 veces** como medio de pago en el checkout de tu tienda.
 ------------
 
 
 ----[mla]----
 # Hasta 12 cuotas sin tarjeta con Mercado Pago
 Con Checkout API, es posible ofrecer **Hasta 12 cuotas sin tarjeta con Mercado Pago**. Con esta línea de crédito, administrada por Mercado Pago, el dinero se acredita en su totalidad en la cuenta del vendedor, mientras que el cliente puede optar por pagar en hasta 12 pagos fijos mensuales, sin necesidad de contar con una tarjeta.
-Actualmente, Hasta 12 cuotas sin tarjeta con Mercado Pago es ofrecido en nuestro [Checkout Pro](/developers/es/docs/checkout-pro/landing), y ahora también es posible acceder directo desde el checkout de la tienda via Checkout API.
+Actualmente, **Hasta 12 cuotas sin tarjeta con Mercado Pago** es ofrecido en nuestro [Checkout Pro](/developers/es/docs/checkout-pro/landing), y ahora también es posible acceder directo desde el checkout de la tienda via Checkout API.
 
 
-Para configurar Hasta 12 cuotas sin tarjeta con Mercado Pago en el checkout de la tienda, sigue los pasos a continuación.
+Para configurar **Hasta 12 cuotas sin tarjeta con Mercado Pago** en el checkout de la tienda, sigue los pasos a continuación.
 1. En el Panel de Control de la tienda, accede a **Stores> Configuration> Sales>Payments Methods**.
 2. En **Other Payments Methods**, haz click en **Configure** dentro del plugin de Mercado Pago.
     ![Pantalla con las opciones dentro del plugin de Mercado Pago](/images/adobe-commerce/cho-api-credits-config-mla-es.png)
@@ -55,14 +57,16 @@ En la sección **Common Payment Method Definitions**, puedes definir algunas car
 
 ![Pantalla de definiciones comunes de medios de pago](/images/adobe-commerce/cho-api-credits-definitions-mla-es.png)
 
-Haz clic en **Guardar configuración** para guardar los cambios, ¡y listo! Ya puedes ofrecer Hasta 12 cuotas sin tarjeta con Mercado Pago como medio de pago en el checkout de tu tienda.
+Haz clic en **Guardar configuración** para guardar los cambios.
+
+¡Y listo! Ya puedes ofrecer **Hasta 12 cuotas sin tarjeta con Mercado Pago** como medio de pago en el checkout de tu tienda.
 ------------
 
 
 ----[mlm]----
 # Hasta 12 meses sin tarjeta con Mercado Pago
 Con Checkout API, es posible ofrecer **Hasta 12 meses sin tarjeta con Mercado Pago**. Con esta línea de crédito, administrada por Mercado Pago, el dinero se acredita en su totalidad en la cuenta del vendedor, mientras que el cliente puede optar por pagar en hasta 12 pagos fijos mensuales, sin necesidad de contar con una tarjeta.
-Actualmente, Hasta 12 meses sin tarjeta con Mercado Pago es ofrecido en nuestro [Checkout Pro](/developers/es/docs/checkout-pro/landing), y ahora también es posible acceder directo desde el checkout de la tienda via Checkout API.
+Actualmente, **Hasta 12 meses sin tarjeta con Mercado Pago** es ofrecido en nuestro [Checkout Pro](/developers/es/docs/checkout-pro/landing), y ahora también es posible acceder directo desde el checkout de la tienda via Checkout API.
 
 
 Para configurar Hasta 12 meses sin tarjeta con Mercado Pago en el checkout de la tienda, sigue los pasos a continuación.
@@ -85,5 +89,7 @@ En la sección **Common Payment Method Definitions**, puedes definir algunas car
 
 ![Pantalla de definiciones comunes de medios de pago](/images/adobe-commerce/cho-api-credits-definitions-mla-es.png)
 
-Haz clic en **Guardar configuración** para guardar los cambios, ¡y listo! Ya puedes ofrecer Hasta 12 meses sin tarjeta con Mercado Pago como medio de pago en el checkout de tu tienda.
+Haz clic en **Guardar configuración** para guardar los cambios.
+
+¡Y listo! Ya puedes ofrecer **Hasta 12 meses sin tarjeta con Mercado Pago** como medio de pago en el checkout de tu tienda.
 ------------
