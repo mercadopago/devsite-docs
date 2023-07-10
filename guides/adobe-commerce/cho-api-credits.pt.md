@@ -11,7 +11,7 @@ Para configurar o **Parcelamento via Pix em até 12x** no checkout da loja, siga
     1. O campo **Ativado** define que o meio de pagamento estará disponível no checkout da loja. Escolha "Sim", ou deixe o valor definido pelo sistema se corresponder a esta opção.
     2. Em **Título**, defina o título de como a forma de pagamento será exibida no checkout da loja. Recomendamos usar “Parcelamento via Pix em até 12x”.
     3. Em **Prazo limite para pagamento**, escolha o tempo que o cliente tem para concluir o pagamento.
-    4. Quando o cliente não tiver linha de crédito ativa para utilizar Parcelamento via Pix em até 12x, iremos redirecioná-lo para o Mercado Pago. A opção **Meio de pagamento concluído** permite a remoção de meios de pagamento do Mercado Pago e, caso o cliente queira utilizar algum deles mesmo assim, deverá retornar ao checkout para finalizar o pagamento.
+    4. Quando o cliente não tiver linha de crédito ativa para utilizar Parcelamento via Pix em até 12x, iremos redirecioná-lo para o Mercado Pago. A opção **Meio de pagamento excluído** permite a remoção de meios de pagamento do Mercado Pago e, caso o cliente queira utilizar algum deles mesmo assim, deverá retornar ao checkout para finalizar o pagamento.
 
 ![Tela de configuração do meio de pagamento](/images/adobe-commerce/cho-api-config2-mlb-pt.png)
 
@@ -42,7 +42,7 @@ Para configurar o **Parcelamento em até 12x sem cartão no Mercado Pago** no ch
     1. O campo **Ativado** define que o meio de pagamento estará disponível no checkout da loja. Escolha "Sim", ou deixe o valor definido pelo sistema se corresponder a esta opção.
     2. Em **Título**, defina o título de como a forma de pagamento será exibida no checkout da loja. Recomendamos usar “Hasta 12 cuotas sin tarjeta con Mercado Pago”.
     3. Em **Prazo limite para pagamento**, escolha o tempo que o cliente tem para concluir o pagamento.
-    4. Quando o cliente não tiver linha de crédito ativa para utilizar Parcelamento em até 12x sem cartão no Mercado Pago, iremos redirecioná-lo para o Mercado Pago. A opção **Meio de pagamento concluído** permite a remoção de meios de pagamento do Mercado Pago e, caso o cliente queira utilizar algum deles mesmo assim, deverá retornar ao checkout para finalizar o pagamento.
+    4. Quando o cliente não tiver linha de crédito ativa para utilizar Parcelamento em até 12x sem cartão no Mercado Pago, iremos redirecioná-lo para o Mercado Pago. A opção **Meio de pagamento excluído** permite a remoção de meios de pagamento do Mercado Pago e, caso o cliente queira utilizar algum deles mesmo assim, deverá retornar ao checkout para finalizar o pagamento.
 
 ![Tela de configuração do meio de pagamento](/images/adobe-commerce/cho-api-credits-config2-mla-es.png)
 
@@ -72,7 +72,7 @@ Para configurar o **Até 12 meses sem cartão no Mercado Pago** no checkout da l
     1. O campo **Ativado** define que o meio de pagamento estará disponível no checkout da loja. Escolha "Sim", ou deixe o valor definido pelo sistema se corresponder a esta opção.
     2. Em **Título**, defina o título de como a forma de pagamento será exibida no checkout da loja. Recomendamos usar “Hasta 12 meses sin tarjeta con Mercado Pago”.
     3. Em **Prazo limite para pagamento**, escolha o tempo que o cliente tem para concluir o pagamento.
-    4. Quando o cliente não tiver linha de crédito ativa para utilizar Até 12 meses sem cartão no Mercado Pago, iremos redirecioná-lo para o Mercado Pago. A opção **Meio de pagamento concluído** permite a remoção de meios de pagamento do Mercado Pago e, caso o cliente queira utilizar algum deles mesmo assim, deverá retornar ao checkout para finalizar o pagamento.
+    4. Quando o cliente não tiver linha de crédito ativa para utilizar Até 12 meses sem cartão no Mercado Pago, iremos redirecioná-lo para o Mercado Pago. A opção **Meio de pagamento excluído** permite a remoção de meios de pagamento do Mercado Pago e, caso o cliente queira utilizar algum deles mesmo assim, deverá retornar ao checkout para finalizar o pagamento.
 
 ![Tela de configuração do meio de pagamento](/images/adobe-commerce/cho-api-credits-config2-mlm-es.png)
 
