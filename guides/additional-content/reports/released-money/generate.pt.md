@@ -22,11 +22,9 @@ Você pode gerar um relatório de ----[mla]---- Liquidações ------------ ----[
 
 Considere as seguintes informações técnicas sempre que for gerar, programar e configurar seus relatórios.
 
-
 ### Estrutura do relatório
 
 Saiba as características dos elementos que compõem seu relatório.
-
 
 | Ações e componentes | Características |
 | --- | --- |
@@ -37,7 +35,6 @@ Saiba as características dos elementos que compõem seu relatório.
 | Fuso horário das colunas: | GMT-4 <br/> <br/> Tome como referência o lugar de onde o relatório é baixado. |
 | Seleção de datas via web | Deve ter como base o fuso horário da conta do usuário. <br/>Por exemplo, a conta do usuário cadastrada no Brasil corresponde ao fuso horário de São Paulo. |
 
-
 ### Exportação do relatório
 
 Todas as opções disponíveis na hora de baixar seu relatório.
@@ -47,7 +44,6 @@ Todas as opções disponíveis na hora de baixar seu relatório.
 | Formato do nome do arquivo | Quando o relatório é programado ou manual:<br/> "prefixo-configuravel-<span style='color:#999999;'>data-de-criacao.csv</span>" <br/> Exemplo: minhaloja-28-05-2019.csv |
 | Formatos de download | .csv, .xlsx <br/><br/>Dica: baixe o relatório em .csv para importar os dados e usá-los em outros aplicativos. Baixe-o em .xlsx para ler as informações nas tabelas da planilha. |
 | Arquivo | Os relatórios gerados ficam salvos na sua conta do Mercado Pago. |
-
 
 ## Notificações
 

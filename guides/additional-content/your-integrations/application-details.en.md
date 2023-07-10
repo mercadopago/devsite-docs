@@ -21,20 +21,22 @@ Click on **Evaluate quality** to start the process of analyzing your integration
 > After making the improvements, click on **Update score** again to reassess your integration and verify if it meets the required standards.
 
 ----[mla, mlm, mlu, mco, mlc, mpe]----
+
 > WARNING
 >
 > Attention
 >
-> For now, the **Integration quality** section is only available for integrations with [Checkout Pro](/developers/en/docs/checkout-pro/landing), [Mercado Pago Point](/developers/en/docs/mp-point/landing), [Checkout API](/developers/en/docs/checkout-api/landing), and [Checkout Bricks](/developers/en/docs/checkout-bricks/landing).
+> For now, the **Integration quality** section is only available for integrations with [Checkout Pro,](/developers/en/docs/checkout-pro/landing) [Mercado Pago Point,](/developers/en/docs/mp-point/landing) [Checkout API](/developers/en/docs/checkout-api/landing) and [Checkout Bricks](/developers/en/docs/checkout-bricks/landing).
 
 
 ------------
 ----[mlb]----
+
 > WARNING
 >
 > Attention
 >
-> For now, the **Integration quality** section is only available for integrations with [Checkout Pro](/developers/en/docs/checkout-pro/landing), [Mercado Pago Point](/developers/en/docs/mp-point/landing), [Transparent Checkout](/developers/en/docs/checkout-api/landing), and [Checkout Bricks](/developers/en/docs/checkout-bricks/landing).
+> For now, the **Integration quality** section is only available for integrations with [Checkout Pro,](/developers/en/docs/checkout-pro/landing) [Mercado Pago Point,](/developers/en/docs/mp-point/landing) [Checkout API](/developers/en/docs/checkout-api/landing) and [Checkout Bricks.](/developers/en/docs/checkout-bricks/landing)
 
 
 ------------

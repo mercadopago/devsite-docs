@@ -4,8 +4,13 @@ The Status Screen Brick allows you to show the buyer the status of a purchase ma
 
 With this Brick it is possible to view the purchase summary, process additional confirmations, in the case of [3DS 2.0](/developers/en/docs/checkout-bricks/how-tos/improve-payment-approval/3ds), as well know the current payment status and view the details of payment tickets.
 
-<center>
-
-![status-screen-brick-layout](checkout-bricks/status-screen-brick-layout-en.gif)
-
-</center>
+---
+live_demo_code_action:
+ - title: Try our Brick
+ - description: Build and check out the Status Screen Brick visual experience in real time. When you are ready, download or copy the generated code.
+ - link: /developers/en/live-demo/status-screen-brick
+ - image:https://http2.mlstatic.com/frontend-assets/dx-devsite/images/status-screen-brick.png
+ - linkName: Demo
+ - buttonDescription: Build your Status Screen Brick
+---
+<br>

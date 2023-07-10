@@ -2,7 +2,7 @@
 
 Se desejar, você pode receber notificações Webhooks. Estas são enviadas de nossa API de Integrações para o seu sistema de recebimento por meio de uma chamada `HTTP POST` em relação às mudanças de status apresentadas por uma intenção de pagamento.
 
-Para integrar notificações Webhook, siga as instruções [nesta documentação](/developers/pt/guides/additional-content/your-integrations/notifications/webhooks).
+Para integrar notificações Webhook, siga as instruções [nesta documentação](/developers/pt/docs/mp-point/additional-content/your-integrations/notifications/webhooks).
 
 > WARNING
 >

@@ -12,16 +12,13 @@ Nesta documentação, explicaremos as configurações necessárias para o recebi
 
 Abaixo explicaremos como indicar as URLs que serão notificadas e como configurar os eventos dos quais se receberá a notificação.
 
-
 ![webhooks](/images/dashboard/webhooks_pt_.png)
-
 
 1. Caso ainda não tenha, crie uma aplicação no [Painel do desenvolvedor](/developers/panel/app).
 2. Com a aplicação criada, navegue até a seção Webhooks na página de Detalhes da aplicação e configure as URLs de **produção** e **teste** da qual serão recebidas as notificações.
 3. Você também poderá experimentar e testar se a URL indicada está recebendo as notificações corretamente, podendo verificar a solicitação, a resposta dada pelo servidor e a descrição do evento.
 4. Caso seja necessário identificar múltiplas contas, no final da URL indicada você poderá indicar o parâmetro `?cliente=(nomedovendedor) endpoint` para identificar os vendedores.
 5. Em seguida, selecione os **eventos** dos quais você receberá notificações em formato `json` através de um `HTTP POST` para a URL especificada anteriormente. Um evento é qualquer tipo de atualização no objeto relatado, incluindo alterações de status ou atributo. Veja na tabela abaixo os eventos que poderão ser configurados.
-
 
 | Tipo de notificação | Ação | Descrição |
 | :--- | :--- | :--- |
@@ -37,15 +34,11 @@ Abaixo explicaremos como indicar as URLs que serão notificadas e como configura
 | `point_integration_wh` | `state_ERROR`| Ocorreu um erro ao processar a tentativa de pagamento |
 | `delivery` | `delivery.updated`| Dados de envio e atualização do pedido |
 
-
 ## Configuração durante a criação de pagamentos
-
 
 É possível configurar a URL de notificação de modo mais específico, para cada pagamento utilizando o campo `notification_url`. Veja abaixo como fazer isso com uso dos SDKs.
 
-
 1. No campo `notificaction_url`, indique a URL da qual serão recebidas as notificações como exemplificado abaixo.
-
 
 [[[
 ```php
@@ -335,14 +328,11 @@ Isso indica que foi criado o pagamento **999999999** para o usuário **44444** e
 | **sent** (delivery) | Data de envio da notificação |
 | **topic** (delivery) | Tipo de notificação recebida  |
 
-
 4. Caso deseje receber notificações apenas de Webhook e não de IPN, você pode adicionar na `notification_url` o parâmetro `source_news=webhook`. Por exemplo: https://www.yourserver.com/notifications?source_news=webhooks
-
 
 ## Ações necessárias após receber uma notificação
 
 [TXTSNIPPET][/guides/snippets/test-integration/notification-response]
-
 
 > NOTE
 >
