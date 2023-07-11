@@ -6,7 +6,7 @@
 >
 > This documentation is for internal team use only,  as it has been deprecated or is an exclusive product. For further details, talk to the sales or integrations team.
 > <br><br>
-> In the case of Master and Amex credit cards, the credit card will appear as: `MERPAG*&ltbrand_name&gt`. So for these means that for this payments methods you can communicate: "In your summary you will see the charge as `MERPAG*&ltbrand_name&gt`" where `*&ltbrand_name&gt` is configured from the Market account Seller payment: **Menu > Settings > Name of my business**.
+> In the case of Master and Amex credit cards, the credit card will appear as: `MERPAG*&lt;brand_name&gt;`. So for these means that for this payments methods you can communicate: "In your summary you will see the charge as `MERPAG*&lt;brand_name&gt;`" where `*&lt;brand_name&gt;` is configured from the Market account Seller payment: **Menu > Settings > Name of my business**.
 > <br><br>
 > With the payments without cvv, you can make recurring charges with Mercado Pago having the freedom to adapt the solution in the most optimal way for your business
 > <br><br>
