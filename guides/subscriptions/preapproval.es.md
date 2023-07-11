@@ -6,7 +6,7 @@
 >
 > Esta documentación es solo para uso por parte del equipo interno, ya que fue deprecada o es un producto exclusivo. Para más detalles, hablar con el equipo comercial o de integraciones.
 > <br><br>
-> En el caso de tarjetas de crédito Master y Amex, en la tarjeta de crédito aparecerá como: `MERPAG*&gtbrand_name&gt`. Por lo que para estos medios de pago podrán comunicar: “En tu resumen verás el cargo como `MERPAG*&gtbrand_name&gt`” donde `&gtbrand_name&gt` se configura desde la cuenta de Mercado Pago del vendedor: **Menu -> Configuracion > Nombre de mi negocio**.
+> En el caso de tarjetas de crédito Master y Amex, en la tarjeta de crédito aparecerá como: `MERPAG*&ltbrand_name&gt`. Por lo que para estos medios de pago podrán comunicar: “En tu resumen verás el cargo como `MERPAG*&ltbrand_name&gt`” donde `&ltbrand_name&gt` se configura desde la cuenta de Mercado Pago del vendedor: **Menu > Configuracion > Nombre de mi negocio**.
 > <br><br>
 > Con los pagos sin cvv, se podrán realizar cobros recurrentes con Mercado Pago teniendo la libertad de amoldar la solución de la forma más óptima para tu negocio.
 > <br><br>
