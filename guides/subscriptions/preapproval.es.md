@@ -33,51 +33,50 @@ Una vez cursado el primer pago, y habiéndote asegurado que la tarjeta es válid
 
 Para conocer los datos de tu cliente, podrás obtenerlo de la siguiente forma:
 
-```php
+\`\`\`php
 <?php
 require_once ('mercadopago.php'); $mp = new MP ("ENV_ACCESS_TOKEN"); 
 $filters = array ("email" => "your.payer@email"); 
 $customer = $mp->get("/v1/customers/search", $filters);
 print_r ($customer);
 ?>
-```
+\`\`\`
 
 ### Obtené la tarjeta asociada a tu cliente
 
 Una vez hayas obtenido el id de tu cliente, puedes buscar la tarjeta de la siguiente forma:
 
-```php
+\`\`\`php
 <?php
 require_once ('mercadopago.php');
 $mp = new MP ("ENV_ACCESS_TOKEN");
 $cards = $mp->get ("/v1/customers/[CUSTOMER_ID]/cards");
 print_r ($cards["response"]);
 ?>
-```
+\`\`\`
 
 ### Tokeniza la tarjeta con el card_id
 
-```php
+\`\`\`php
 <?php
 require_once ('mercadopago.php');
 $mp = new MP ("ENV_ACCESS_TOKEN");
 $card_token = $mp->post ("/v1/card_tokens", array("json_data" => array("card_id" => "cardId" )));
 print_r ($card_token);
 ?>
-
-```
+\`\`\`
 
 > NOTE
 >
 > Importante
 >
-> Sigue el paso a paso y evita pagos fraudulentos con nuestras recomendaciones para [mejorar la aprobación de tus pagos](/developers/es/guides/additional-content/resources/pci-compliant-merchants/receiving-payment-by-card/#bookmark_mejora_la_aprobación_enviando_el_device_fingerprint).
+> Sigue el paso a paso y evita pagos fraudulentos con nuestras recomendaciones para [mejorar la aprobación de tus pagos.](/developers/es/guides/additional-content/how-tos/improve-payment-approval)
 
 ### Realizá el cobro:
 
 Al estar usando un token creado con el card_id, deberás realizar el posteo del pago indicando el id del customer asociado a la tarjeta:
 
-```php
+\`\`\`php
 <?php
 require_once ('mercadopago.php');
 $mp = new MP('ENV_ACCESS_TOKEN');
@@ -92,7 +91,7 @@ $payment_data = array(
 );
 $payment = $mp->post("/v1/payments", $payment_data);
 ?>
-```
+\`\`\`
 
 ## Escucha notificaciones de los pagos
 
