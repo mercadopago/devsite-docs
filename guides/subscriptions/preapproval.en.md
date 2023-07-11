@@ -6,15 +6,15 @@
 >
 > This documentation is for internal team use only,  as it has been deprecated or is an exclusive product. For further details, talk to the sales or integrations team.
 > <br><br>
-> In the case of Master and Amex credit cards, the credit card will appear as: `MERPAG*< brand_name >`. So for these means that for this payments methods you can communicate: "In your summary you will see the charge as `MERPAG*< brand_name >`" where `< brand_name >` is configured from the Market account Seller payment: **Menu -> Settings> Name of my business**.
+> In the case of Master and Amex credit cards, the credit card will appear as: `MERPAG*< brand_name >`. So for these means that for this payments methods you can communicate: "In your summary you will see the charge as `MERPAG*< brand_name >`" where `\<brand_name\>` is configured from the Market account Seller payment: **Menu -> Settings> Name of my business**.
 > <br><br>
 > With the payments without cvv, you can make recurring charges with Mercado Pago having the freedom to adapt the solution in the most optimal way for your business
 > <br><br>
 > This information is provided with the aim of providing all the tools to be able to perform the integration of the solution. The Seller must comply with the integration policies of Mercado Pago:
 > <br><br>
-> The Seller must communicate clearly and unequivocally to its user base or clients that the payment platform on its website is provided by Mercado Pago, and the terms or dates and the amounts of recurring payments.
-> In the event that existing users or customers of the Seller are being migrated to the Payments Recurrent Payment Market platform, the Seller must communicate in writing indicating that Mercado Pago will process the payments, informing that in the summary it will see the charge as MercadoPago / MercadoLibre" (*).
-> Pre-Approval is only available through the personalized Checkout Pro or web tokenize checkout, that is, via the use of our API's.
+> - The Seller must communicate clearly and unequivocally to its user base or clients that the payment platform on its website is provided by Mercado Pago, and the terms or dates and the amounts of recurring payments.
+> - In the event that existing users or customers of the Seller are being migrated to the Payments Recurrent Payment Market platform, the Seller must communicate in writing indicating that Mercado Pago will process the payments, informing that in the summary it will see the charge as MercadoPago / MercadoLibre" (*).
+> - Pre-Approval is only available through the personalized Checkout Pro or web tokenize checkout, that is, via the use of our API's.
  
 ## Create an application
 
