@@ -34,38 +34,38 @@ Once the first payment has been made, and having been assured that the card is v
 
 To know the data of your client, you can obtain it in the following way:
 
-\`\`\`php
+---php
 <?php
 require_once ('mercadopago.php'); $mp = new MP ("ENV_ACCESS_TOKEN"); 
 $filters = array ("email" => "your.payer@email"); 
 $customer = $mp->get ("/v1/customers/search", $filters);
 print_r ($customer);
 ?>
-\`\`\`
+---
 
 ### Get the card associated with your client
 
 Once you have obtained the id of your client, you can look for the card in the following way:
 
-\`\`\`php
+---php
 <?php
 require_once ('mercadopago.php');
 $mp = new MP ("ENV_ACCESS_TOKEN");
 $cards = $mp->get ("/v1/customers/[CUSTOMER_ID]/cards");
 print_r ($cards["response"]);
 ?>
-\`\`\`
+---
 
 ### Get a token with the card_id
 
-\`\`\`php
+---php
 <?php
 require_once ('mercadopago.php');
 $mp = new MP ("ENV_ACCESS_TOKEN");
 $card_token = $mp->post ("/v1/card_tokens", array("json_data" => array("card_id" => "cardId" )));
 print_r ($card_token);
 ?>
-\`\`\`
+---
 
 > NOTE
 >
@@ -77,7 +77,7 @@ print_r ($card_token);
 
 How are you using a token created with the card_id, you will have to post the payment indicating the customer id associated with the card:
 
-\`\`\`php
+---php
 <?php
 require_once ('mercadopago.php');
 $mp = new MP('ENV_ACCESS_TOKEN');
@@ -92,7 +92,7 @@ $payment_data = array(
 );
 $payment = $mp->post("/v1/payments", $payment_data);
 ?>
-\`\`\`
+---
 
 ## Listen for notifications of payments
 
