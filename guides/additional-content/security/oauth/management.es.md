@@ -9,4 +9,8 @@ Actualmente existen diferentes formas en las que los **access tokens** y las **t
 * **Limpieza de sesión de usuario**: activa la actualización de todos los tokens de vendedores y temporal grants.
 * **Eliminación de la aplicación**: cuando se elimina una aplicación, se eliminan todos los tokens y temporal grants que le pertenecen.
  
-Puedes recibir notificaciones de webhook cada vez que un vendedor autorice o desautorice tu aplicación. Para configurarlos, lee [Your applications](/developers/es/guides/additional-content/dashboard/applications) a través del Dashboard.
+Puedes recibir notificaciones de webhook cada vez que un vendedor autorice o desautorice tu aplicación. Para configurarlas, consulta más información sobre [Webhooks](/developers/es/docs/checkout-pro/additional-content/your-integrations/notifications/webhooks) en [Tus integraciones](/developers/es/docs/checkout-pro/additional-content/your-integrations/introduction).
+
+
+
+

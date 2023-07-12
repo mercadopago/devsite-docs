@@ -2,6 +2,9 @@
 
 When you have your integration ready and want to start receiving payments, you must [activate your credentials]([FAKER][CREDENTIALS][URL]) for production and replace the test credentials if needed.
 
+You must also test your [integration’s quality](/developers/en/docs/checkout-api/additional-content/integration-quality) to verify if you are meeting the Mercado Pago quality and security standards.
+
+
 ## Do not forget to have an SSL certificate
 
 In order for you to be secure and to take care of the data, **it is necessary that you have an SSL certificate and that the payment form be made available on an HTTPS page**. This allows to protect the transactions carried out by buyers and their data.
@@ -25,5 +28,5 @@ The Pix payment option will only be displayed if there is a Pix key registered] 
 We share some points of attention to increase the quality of your integrations:
 
 + Improve the [payment approval](/developers/en/guides/additional-content/how-tos/improve-approval) by submitting the item and payer information, shipping data, and industry information.
-+ Keep the status of orders updated in your systems by using and processing notifications correctly [IPN](/developers/en/guides/additional-content/notifications/ipn/introduction) or [Webhooks](/developers/en/guides/additional-content/notifications/webhooks/webhooks).
++ Keep the status of orders updated in your systems by using and processing notifications correctly [IPN](/developers/en/guides/additional-content/your-integrations/notifications/ipn) or [Webhooks](/developers/en/guides/additional-content/your-integrations/notifications/webhooks).
 + Use reconciliation reports via API to improve the financial management of the business.

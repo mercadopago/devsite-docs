@@ -1,4 +1,4 @@
-# Configurar os pagamentos com cartões
+# Cartões
 
 ----[mlb]----
 Com o [Checkout Transparente](/developers/pt/guides/checkout-api/landing), ofereça pagamentos com **cartões de crédito ou débito** diretamente em sua loja, sem que o comprador precise ser redirecionado para realizar o pagamento.

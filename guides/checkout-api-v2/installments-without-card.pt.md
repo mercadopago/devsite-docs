@@ -1,8 +1,14 @@
-# Parcelamento sem cartão de crédito
+# Parcelamento sem cartão
 
-A opção de parcelamento sem cartão do Mercado Pago se chama **Mercado Crédito** e é um método de financiamento próprio que permite pagar em até 12x.
+O **Mercado Crédito** é a modalidade de financiamento do Mercado Pago que oferece a opção de parcelar sem precisar de cartão.
 
-Ao oferecer esta opção na sua loja, seus clientes poderão comprar um produto hoje e pagar depois em parcelas. Para o seu negócio, a aprovação da compra é imediata e está garantida, sendo creditado o valor total adiantado e os seus clientes nos pagam depois.
+Com essa linha de crédito, administrada pelo Mercado Pago, o pagamento é creditado integralmente na conta do vendedor, podendo o cliente optar por pagar em até 12 parcelas fixas mensais e sem a necessidade de cartão. O usuário terá apenas que entrar em sua conta no Mercado Pago (ou criar uma), saber o limite disponível e escolher em quantas parcelas deseja pagar.
+
+> NOTE
+>
+> Importante
+>
+> Além das opções disponíveis nesta documentação, também é possível configurar **parcelamentos sem cartão** utilizando o **Brick de Wallet**. Veja a documentação [Renderização padrão](/developers/pt/docs/checkout-bricks/wallet-brick/default-rendering#editor_2) de Wallet para mais detalhes. 
 
 Siga os passos abaixo para oferecer o parcelamento sem cartão em sua loja.
 
@@ -13,7 +19,7 @@ Para realizar a integração é importante atender aos requisitos mostrados abai
 | Requisitos | Descrição |
 |---|---|
 | Conta de vendedor Mercado Pago ou Mercado Livre | Para integrar é preciso uma conta de vendedor no Mercado Pago ou Mercado Livre. Caso não tenha, [clique aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) para criar. | 
-| Aplicação  | As aplicações são as diferentes integrações contidas em uma ou mais lojas. Você pode criar uma aplicação para cada solução que implementar, a fim de ter tudo organizado e manter um controle que facilite a gestão. Veja [Dashboard](/developers/pt/docs/checkout-api/additional-content/dashboard/introduction) para mais informações sobre como criar uma aplicação. |
+| Aplicação  | As aplicações são as diferentes integrações contidas em uma ou mais lojas. Você pode criar uma aplicação para cada solução que implementar, a fim de ter tudo organizado e manter um controle que facilite a gestão. Veja [Dashboard](/developers/pt/docs/checkout-api/additional-content/your-integrations/introduction) para mais informações sobre como criar uma aplicação. |
 | Instale o SDK do Mercado Pago | Instale os SDKs oficiais para simplificar sua integração com nossas [APIs](/developers/pt/reference/payments/_payments/post). Para mais informações, [clique aqui](/developers/pt/docs/sdks-library/landing). |
 
 Se todos os pré-requisitos foram cumpridos, siga as próximas etapas para integração do parcelamento sem cartão.
@@ -164,59 +170,84 @@ curl -X POST \
 >
 > h3
 >
-> Adicionar botão no checkout
+> Adicionar checkout
 
-Com a preferência criada, é preciso exibir o botão de pagamento que permitirá o comprador utilizar o Mercado Crédito como meio de pagamento. Para exibir o botão de pagamento, insira o código abaixo diretamente em seu projeto.
+Após ter criado a preferência no backend, será necessário instalar o SDK de frontend do Mercado Pago ao projeto para adicionar o botão de pagamento.
 
+A instalação é feita em **duas etapas**: **incluindo o SDK do Mercado Pago** ao projeto com suas credenciais configuradas e **iniciando o checkout** a partir da preferência gerada anteriormente.
+
+1. Para incluir o SDK MercadoPago.js, adicione o código abaixo no HTML do projeto ou instale via NPM conforme indicado nos exemplos a seguir.
+
+[[[
 ```html
-<div class="cho-container"></div>
-<script src="https://sdk.mercadopago.com/js/v2"></script>
-<script>
-  const mp = new MercadoPago('PUBLIC_KEY');
+<body>
+  <script src="https://sdk.mercadopago.com/js/v2"></script>
+</body>
+```
+```bash
 
-  mp.checkout({
-    preference: {
-      id: 'YOUR_PREFERENCE_ID'
-    },
-    render: {
-      container: '.cho-container',
-      label: 'Em até 12x sem cartão com Mercado Pago',
-      type: 'credits',
-    }
-  });
+npm install @mercadopago/sdk-js
+```
+]]]
+
+Em seguida, inicialize a integração definindo sua [chave pública](/developers/pt/docs/checkout-api/additional-content/your-integrations/credentials) usando o seguinte código.
+
+[[[
+```html
+
+<script>
+  const mp = new MercadoPago("YOUR_PUBLIC_KEY");
 </script>
 ```
+```javascript
 
-Ao inserir este código, você deverá visualizar um botão similar ao exemplo ilustrado abaixo.
+import { loadMercadoPago } from "@mercadopago/sdk-js";
 
-![parcelamento ser cartao](api/button-installments-w-card-pt.png)
 
-### Exemplo do fluxo de pagamento
+await loadMercadoPago();
+const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
 
-![exemplo fluxo](api/flow-installments-w-card-pt.gif)
+```
+]]]
 
-### Sugestões de uso e boas práticas
+Feito isso, é necessário criar um container para definir o local que o botão será inserido na tela. A criação do container é feita inserindo um elemento no código HTML da página no qual o componente será renderizado.
 
-Para oferecer a melhor experiência para seus clientes usando Mercado Crédito, sugerimos:
+> NOTE
+>
+> Importante
+>
+> O valor exibido abaixo na **propriedade ID** é apenas um exemplo e pode ser alterado, mas deve sempre corresponder ao ID indicado na etapa de renderização.
 
-* Utilizar maiúsculas nas iniciais da marca: Mercado Pago
+[[[
+```html
 
-![iniciais](api/suggestions1-installments-w-card-pt.png)
+<div id="wallet_container"></div>
 
-* Manter o logo do Mercado Pago
+```
+]]]
 
-![logo](api/suggestions2-installments-w-card-pt.png)
 
-* Manter a proposta de valor de parcelas sem cartão
+2. Ao finalizar a etapa anterior, inicialize seu checkout utilizando o ID da preferência previamente criada com o identificador do elemento onde o botão deverá ser exibido.
 
-![proposta](api/suggestions3-installments-w-card-pt.png)
+[[[
+```javascript
 
-* Manter o alinhamento e os espaços dos elementos do botão
+mp.bricks().create("wallet", "wallet_container", {
+  initialization: {
+    preferenceId: "<PREFERENCE_ID>",
+  },
+  customization: {
+    texts: {
+      valueProp: "convenience",
+    },
+  },
+});
 
-![alinhamento](api/suggestions4-installments-w-card-pt.png)
+```
+]]]
 
-Para explicar melhor a seus clientes como funciona Mercado Crédito, compartilhe com eles as etapas a seguir.
+Pronto! Ao concluir os passos descritos acima, o botão para pagamento será exibido na tela e você terá finalizado a integração. Siga os passos abaixo para explicar aos  seus clientes como funciona Mercado Crédito.
 
 1. [Crie uma conta](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) ou entre com seu login e senha no Mercado Pago.
 2. Selecione **Mercado Crédito** e escolha em quantas vezes quer pagar 
-3. Pronto! Pague as parcelas todo mês como preferir, no **app do Mercado Pago**.
+3. Pague as parcelas todo mês como preferir, no **app do Mercado Pago**.

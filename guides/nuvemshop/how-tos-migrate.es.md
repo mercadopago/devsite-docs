@@ -2,6 +2,8 @@
 
 Aprende a migrar a la versión actual del plugin de Mercado Pago para Tiendanube.
 
+## Instala el plugin nuevo
+
 1. En el Panel Administrativo de tu Tiendanube, accede a **Mis aplicaciones > Ver todas las aplicaciones**. 
 2. Localiza el método de pago Mercado Pago y haz clic en **Instalar**.
 3. Da tu consentimiento a los permisos de aplicación y, por fin, haz clic en **Aceptar**
@@ -9,9 +11,13 @@ Aprende a migrar a la versión actual del plugin de Mercado Pago para Tiendanube
 
 > En este exacto momento, vas a tener las dos versiones del plugin instaladas en tu sitio. Esto impedirá que tu tienda tenga medios de pago mientras se realizan los pasos de migración.
 
-5. En el Panel Administrativo de tu Tiendanube, accede a **Mis aplicaciones > Ver todas las aplicaciones**. 
-6. Localiza el método de pago Mercado Pago en la lista de aplicaciones y haz clic en **Configurar aplicación**.
-7. En la lista de métodos de pago, localiza **la versión antigua del plugin Mercado Pago** y haz clic en **Desinstalar**.
+## Desactiva el plugin antiguo
+
+Después de instalar la nueva versión, es necesario desinstalar la versión anterior siguiendo el paso a paso a continuación.
+
+1. En el Panel Administrativo de tu Tiendanube, accede a **Mis aplicaciones > Ver todas las aplicaciones**. 
+2. Localiza el método de pago Mercado Pago en la lista de aplicaciones y haz clic en **Configurar aplicación**.
+3. En la lista de métodos de pago, localiza **la versión antigua del plugin Mercado Pago** y haz clic en **Desinstalar**.
 
 > WARNING
 >

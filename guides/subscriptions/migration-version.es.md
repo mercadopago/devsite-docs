@@ -12,7 +12,7 @@ La nueva versión tiene una arquitectura superior y cuenta con notificaciones po
 * Cargo por suscripción;
 * Cambio de planes.
 
-Además de las notificaciones por correo electrónico, la nueva versión también tiene [Webhooks](/developers/es/guides/additional-content/notifications/webhooks/webhooks) para `plans`, `subscriptions` e `invoices`.
+Además de las notificaciones por correo electrónico, la nueva versión también tiene [Webhooks](/developers/es/guides/additional-content/your-integrations/notifications/webhooks) para `plans`, `subscriptions` e `invoices`.
 
 > WARNING
 >

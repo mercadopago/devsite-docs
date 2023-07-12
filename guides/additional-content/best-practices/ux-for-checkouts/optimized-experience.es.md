@@ -121,20 +121,3 @@ Además, antes de finalizar la compra, permite que tus usuarios puedan **revisar
 
 
 ![es confrima tu compra](/images/best-practices-guide/EspAspectosGeneralesConfirmaTuCompra_V2.gif)
-
-
-> PREV_STEP_CARD_ES
->
-> UX para checkouts
->
-> Una introducción a la guía de buenas prácticas-
->
-> [Introducción](/developers/es/guides/additional-content/best-practices/ux-for-checkouts/introduction)
-
-> NEXT_STEP_CARD_ESadditional-content/
->
-> Facilita las conversiones
->
-> Sigue los pasos para crear un checkout fácil de recorrer y entender.
->
-> [Facilidad de conversión](/developers/es/guides/additional-content/best-practices/ux-for-checkouts/ease-of-conversion)

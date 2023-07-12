@@ -1,4 +1,3 @@
-
 # Generación por API
 
 Genera el reporte de ----[mla]----Liquidaciones------------ ----[mlm, mlb, mlc, mco, mlu, mpe]----Liberaciones------------ de forma manual las veces que quieras o prográmalo según tus necesidades de frecuencia a través de nuestra API.
@@ -9,9 +8,9 @@ Conoce los campos que puedes configurar para ajustar tus preferencias antes de e
 
 > WARNING
 >
-> Importante
+> Atención
 >
-> Configurar el atributo `frequency` no implica que el reporte se genere automáticamente. La configuración aplicará solo cuando se active la programación automática. Para mayor detalle puedes dirigirte a la sección [Programa tus reportes](#bookmark_programa_tus_reportes_automáticos).
+> Configurar el atributo `frequency` no implica que el reporte se genere automáticamente. La configuración aplicará solo cuando se active la programación automática. Para mayor detalle puedes dirigirte a la sección [Programa tus reportes.](#bookmark_programa_tus_reportes_automáticos)
 
 | Campo configurable | Descripción |
 | --- | --- |

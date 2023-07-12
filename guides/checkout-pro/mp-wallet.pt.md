@@ -4,7 +4,18 @@ A opção de pagar com a Conta Mercado Pago, por padrão, é apresentada em todo
 
 Esta opção permite que usuários cadastrados no Mercado Pago e/ou Mercado Livre façam login e utilizem-se dos métodos disponíveis para efetuar seus pagamentos, além de poder incluir novas opções de pagamento, como cartões de crédito. 
 
-É possível pagar com **cartão**, **saldo disponível** e **Mercado Crédito** em um ambiente seguro e otimizado, aumentando as chances de conversão de vendas, além de permitir ao vendedor oferecer somente pagamentos com Conta Mercado Pago. Com isso, a opção de pagar sem se logar não existirá, porém, contribuirá para um aumento na conversão de pagamentos.
+----[mco, mpe, mlu, mlc]----
+É possível pagar com **cartão** e **saldo disponível** em um ambiente seguro e otimizado, aumentando as chances de conversão de vendas, além de permitir ao vendedor oferecer somente pagamentos com Conta Mercado Pago. Com isso, a opção de pagar sem se logar não existirá, porém, contribuirá para um aumento na conversão de pagamentos.
+
+------------
+----[mla, mlm]----
+É possível pagar com **cartão**, **saldo disponível** e **parcelamento sem cartão** em um ambiente seguro e otimizado, aumentando as chances de conversão de vendas, além de permitir ao vendedor oferecer somente pagamentos com Conta Mercado Pago. Com isso, a opção de pagar sem se logar não existirá, porém, contribuirá para um aumento na conversão de pagamentos.
+
+------------
+----[mlb]----
+É possível pagar com **cartão**, **saldo disponível**, **Pix** e **parcelamento sem cartão** em um ambiente seguro e otimizado, aumentando as chances de conversão de vendas, além de permitir ao vendedor oferecer somente pagamentos com Conta Mercado Pago. Com isso, a opção de pagar sem se logar não existirá, porém, contribuirá para um aumento na conversão de pagamentos.
+
+------------
 
 > WARNING
 >

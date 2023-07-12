@@ -1,4 +1,4 @@
-# Configurar pagos con Checkout Pro
+# Checkout Pro
 
 Al instalar [Checkout Pro](/developers/es/docs/checkout-pro/landing), puede haber un **aumento en la tasa de aprobación de las ventas en la tienda en línea**. Esto sucede porque los compradores podrán pagar con una cuenta de Mercado Pago y todo el proceso de compra se realizará en nuestro entorno, lo que facilita el pago. Al final de la transacción, estos compradores son redirigidos al entorno de la tienda.
 
@@ -63,17 +63,27 @@ Al concluir la compra, cuando los compradores eligen pagar con Mercado Pago, se 
     - **Efectivo (saldo de cuenta de Mercado Pago o boleta bancaria)**.
     - **Transferencia bancaria (Pix y PEC)**. La opción de pago Pix solo se mostrará si existe una clave Pix registrada en Mercado Pago.
     - **Financiación sin tarjeta**. Configurando Checkout Pro, puedes ofrecer la opción de pagar en hasta 12 veces sin tarjeta. Si, además, quieres mostrar esta opción en el checkout de tu tienda, haz clic [aquí](/developers/es/docs/woocommerce/payments-configuration/mercado-credito).
+
 ------------
-----[mla, mlm]----
+----[mla]----
     - **Tarjetas de débito y crédito**.
     - **Efectivo (saldo de cuenta de Mercado Pago)**.
     - **Transferencia bancaria**.
     - **Financiación sin tarjeta**. Configurando Checkout Pro, puedes ofrecer la opción de pagar en hasta 12 veces sin tarjeta. Si, además, quieres mostrar esta opción en el checkout de tu tienda, haz clic [aquí](/developers/es/docs/woocommerce/payments-configuration/mercado-credito).
+
+------------
+----[mlm]----
+    - **Tarjetas de débito y crédito**.
+    - **Efectivo (saldo de cuenta de Mercado Pago)**.
+    - **Transferencia bancaria**.
+    - **Financiamiento sin tarjeta**. Configurando Checkout Pro, puedes ofrecer la opción de pagar en hasta 12 meses sin tarjeta. Si, además, quieres mostrar esta opción en el checkout de tu tienda, haz clic [aquí](/developers/es/docs/woocommerce/payments-configuration/mercado-credito).
+
 ------------
 ----[mpe, mco, mlu, mlc]----
     - **Tarjetas de débito y crédito**.
     - **Efectivo (saldo de cuenta de Mercado Pago)**.
     - **Transferencia bancaria**.
+
 ------------
 5. En el campo **Máximo de cuotas** puedes elegir cuántas cuotas quieres ofrecer a los clientes a través de Mercado Pago. Puedes escoger entre 1 y 24 cuotas. 
 

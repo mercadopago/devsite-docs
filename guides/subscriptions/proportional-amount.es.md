@@ -2,6 +2,12 @@
 
 El prorrateo es la cantidad facturada al suscriptor si la suscripción comienza en un día diferente a la fecha de facturación establecida por el vendedor. Al crear una suscripción, el vendedor puede decidir si ofrece o no esta opción. 
 
+> WARNING
+>
+> Importante
+>
+> Para configurar un monto proporcional, los campos `frequency` y `frequency_type` deben ser completados con los valores `frequency`:`1` y `frequency_type`:`months`, respectivamente. Esto significa que el cálculo proporcional es **aplicable únicamente a suscripciones mensuales durante un período de 30 días**.
+
 A continuación mostramos un flujo de cómo funciona el cobro proporcional de pagos.
 
 ![Basic-subscriptions](/images/subscriptions/linea-cobro-ES.png)
@@ -40,4 +46,4 @@ Para establecer un prorrateo para el pago de suscripciones, envía un POST con l
 >
 > Cree usuarios de prueba para analizar si la incorporación se realizó sin problemas y si la adquisición de la suscripción funciona sin errores.
 >
-> [Criar usuário de teste](/developers/es/docs/subscriptions/integration-test/create-test-user)
+> [Criar usuário de teste](/developers/es/docs/subscriptions/additional-content/your-integrations/test/accounts)

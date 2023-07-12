@@ -8,7 +8,6 @@ Para consultar o relatório, recomendamos baixá-lo em formato .csv para poder a
 
 O relatório é composto por:
 
-
 | Composição do relatório | Descrição |
 | --- | --- |
 | Initial Available Balance |<br/> Saldo inicial.<br/><br/>|
@@ -18,9 +17,7 @@ O relatório é composto por:
 | Subtotal | <br/>É a soma das transações que compõem cada seção.<br/><br/>|
 | Total| <br/> É o resultado final composto pela soma de todos os subtotais. <br/><br/>Ou seja:<br/> subtotal `Release` + subtotal `Block` + subtotal `Unblock` = resultado total<br/><br/> |
 
-
 Além disso, o relatório reflete os conceitos de *débito* (dinheiro a pagar) e *crédito* (dinheiro a receber) em duas colunas, uma para cada conceito: 
-
 
 > Seu **a receber** estará na coluna `NET_CREDIT`
 ><br>
@@ -32,10 +29,9 @@ Você verá o saldo disponível das transações liberadas nas colunas `NET_CRED
 
 Caso isso aconteça, o relatório continuará válido. O dinheiro voltará à sua conta e a transação aparecerá no relatório em uma nova linha na coluna `NET_CREDIT`.
 
-
 > NOTE
 >
-> Nota
+> Importante
 >
 > Tenha em mãos o [Glossário do relatório](/developers/pt/guides/additional-content/reports/released-money/glossary) de ----[mla]---- Liquidações ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------ para consultá-lo quando precisar ou queira conferir algum termo técnico.
 
@@ -45,9 +41,11 @@ Observe como está composto o relatório de dinheiro ----[mla]---- liquidado ---
 
 ----[mla]----
 ![Relatório de liquidaçoes](/images/manage-account/reports/example-release-pt.jpg)
+
 ------------
 ----[mlm, mlb, mlc, mco, mlu, mpe]----
 ![Relatório de liberações](/images/manage-account/reports/example-release-pt.jpg)
+
 ------------
 
 A versão padrão mostrará uma visualização estendida das colunas. O relatório final terá a maior quantidade de detalhes possível. 

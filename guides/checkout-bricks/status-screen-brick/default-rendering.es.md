@@ -6,7 +6,6 @@
 >
 > Para realizar el renderizado de Status Screen Brick, primero realice los [pasos de inicialización](/developers/es/docs/checkout-bricks/common-initialization) compartidos entre todos los Bricks. 
 
-
 ## Configurar el Brick
 
 Creae la configuración de inicio de Brick
@@ -60,10 +59,9 @@ const onReady = async () => {
 > 
 > Atención
 >
-> Si es necesario desmontar y volver a montar un Brick, se recomienda destruir la instancia actual y generar una nueva. Para hacerlo, usa el método *unmount* disponible en el *controller* de Brick, en este caso: `window.statusScreenBrickController.unmount()`.
+> Cada vez que el usuario sale de la pantalla donde se muestra algún Brick, es necesario destruir la instancia actual con el comando `window.statusScreenBrickController.unmount()`. Al ingresar nuevamente se debe generar una nueva instancia.
 
 El `paymentId` que se debe enviar a Brick para su inicialización es el ID que devuelve la [API de Pagos](/developers/pt/reference/payments/_payments/post) al generar un pago con Mercado Pago.
-
 
 ## Renderizar el Brick
 
@@ -73,7 +71,7 @@ Una vez creadas las configuraciones, ingrese el código a continuación para ren
 >
 > Importante
 >
-> El id 'statusScreenBrick_container' de la div HTML abajo debe corresponder que el valor enviado en el metodo create() de la etapa anterior.
+> El id `statusScreenBrick_container` de la div HTML abajo debe corresponder que el valor enviado en el metodo create() de la etapa anterior.
 
 [[[
 ```html

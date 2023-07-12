@@ -228,6 +228,12 @@ Obtendrás esta respuesta:
 
 Una vez creada la intención de pago, puedes obtenerla desde tu dispositivo Point oprimiendo el botón para iniciar cobro (en caso de Point Plus y  Point Pro 2 el **botón verde** y, en el caso de Point Smart, el **botón digital “Cobrar ahora”**) y continuando con los pasos que se muestran en la pantalla para completar el pago.
 
+> NOTE
+>
+> Importante
+>
+> Recomendamos evaluar la [calidad de tu integración](/developers/es/docs/checkout-api/additional-content/integration-quality) para validar si estás cumpliendo con los estándares de calidad y seguridad de Mercado Pago que pueden mejorar tu tasa de aprobación de pagos. 
+
 ## Consulta el estado de tu intención de pago
 
 Puedes consultar el estado actual de tu intención de pago utilizando el `id` que recibiste en la respuesta al momento de crear la intención de pago.

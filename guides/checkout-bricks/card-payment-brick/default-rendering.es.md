@@ -108,7 +108,7 @@ const onReady = async () => {
 > 
 > Atención
 >
-> Si es necesario desmontar y volver a montar un Brick, se recomienda destruir la instancia actual y generar una nueva. Para hacerlo, usa el método *unmount* disponible en el *controller* de Brick, en este caso: `window.cardPaymentBrickController.unmount()`.
+> Cada vez que el usuario sale de la pantalla donde se muestra algún Brick, es necesario destruir la instancia actual con el comando `window.cardPaymentBrickController.unmount()`. Al ingresar nuevamente se debe generar una nueva instancia.
 
 ## Renderizar el Brick
 
@@ -118,7 +118,7 @@ Una vez creadas las configuraciones, ngrese el código a continuación para rend
 >
 > Importante
 >
-> El id 'cardPaymentBrick_container' de la div HTML abajo debe corresponder que el valor enviado en el metodo create() de la etapa anterior.
+> El id `cardPaymentBrick_container` de la div HTML abajo debe corresponder que el valor enviado en el metodo create() de la etapa anterior.
 
 [[[
 ```html

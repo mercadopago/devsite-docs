@@ -4,12 +4,11 @@
 >
 > Importante
 >
-> Para realizar el renderizado de Wallet Brick, primero realice los [pasos de inicialización](/developers/es/docs/checkout-bricks/common-initialization) compartidos entre todos los Bricks. 
-
+> Para realizar el renderizado de Wallet Brick, primero ejecuta los [pasos de inicialización](/developers/es/docs/checkout-bricks/common-initialization) compartidos entre todos los Bricks. 
 
 ## Configurar el Brick
 
-Creae la configuración de inicio de Brick
+Crea la configuración de inicio de Brick
 
 [[[
 ```Javascript
@@ -19,12 +18,12 @@ const renderWalletBrick = async (bricksBuilder) => {
      onReady: () => {
      /*
       Callback llamado cuando Brick está listo.
-      Aquí puedes ocultar cargamentos de su sitio, por ejemplo.
+      Aquí puedes ocultar loadings de su sitio, por ejemplo.
      */
    },
    onSubmit: (formData) => {
      // callback llamado al hacer clic en Wallet Brick
-     // esto es posible porque el ladrillo es un botón
+     // esto es posible porque el Brick es un botón
      // en este momento del envío, debe crear la preferencia
      const yourRequestBodyHere = {
        items: [
@@ -71,7 +70,7 @@ renderWalletBrick(bricksBuilder);
 ```react-jsx
 const onSubmit = async (formData) => {
  // callback llamado al hacer clic en Wallet Brick
- // esto es posible porque el ladrillo es un botón
+ // esto es posible porque el Brick es un botón
  // en este momento del envío, debe crear la preferencia
  const yourRequestBodyHere = {
    items: [
@@ -115,7 +114,7 @@ const onError = async (error) => {
 const onReady = async () => {
  /*
    Callback llamado cuando Brick está listo.
-   Aquí puedes ocultar cargamentos de su sitio, por ejemplo.
+   Aquí puedes ocultar loadings de su sitio, por ejemplo.
  */
 };
 ```
@@ -125,7 +124,7 @@ const onReady = async () => {
 > 
 > Atención
 >
-> Si es necesario desmontar y volver a montar un Brick, se recomienda destruir la instancia actual y generar una nueva. Para hacerlo, usa el método *unmount* disponible en el *controller* de Brick, en este caso: `window.paymentBrickController.unmount()`.
+> Cada vez que el usuario sale de la pantalla donde se muestra algún Brick, es necesario destruir la instancia actual con el comando `window.walletBrickController.unmount()`. Al ingresar nuevamente se debe generar una nueva instancia.
 
 Este flujo de creación de [preferencia en onSubmit](/developers/es/docs/checkout-bricks/wallet-brick/configure-integration/preference-onsubmit) está diseñado para vendedores que tienen flujos de one clic, si lo desea, también puede enviar Preferencia en el inicio. Ver más información en la sección [Preferencia en el inicio](/developers/es/docs/checkout-bricks/wallet-brick/additional-customization/preference-startup).
 
@@ -137,7 +136,7 @@ Una vez creadas las configuraciones, ingrese el código a continuación.
 >
 > Importante
 >
-> El id 'walletBrick_container' de la div HTML abajo debe corresponder que el valor enviado en el metodo create() de la etapa anterior.
+> El id `walletBrick_container` de la div HTML abajo debe corresponder que el valor enviado en el metodo create() de la etapa anterior.
 
 [[[
 ```html
@@ -155,7 +154,7 @@ import { Wallet } from '@mercadopago/sdk-react';
 ```
 ]]]
 
-El resultado de renderizar el Brick debería parecerse a la imagen de abajo.
+El resultado de renderizar el Brick debe ser como se muestra en la imagen a continuación, presentando un texto y un aspecto predeterminado.
 
 <center>
 
@@ -163,13 +162,13 @@ El resultado de renderizar el Brick debería parecerse a la imagen de abajo.
 
 </center>
 
-> Si desea cambiar el texto del Brick, consulte la sección [Cambiar textos.](/developers/es/docs/checkout-bricks/wallet-brick/additional-customization/change-texts)
+> Si desea cambiar el texto y el aspecto predeterminado del Brick, consulte las secciones de [Cambiar textos](/developers/es/docs/checkout-bricks/wallet-brick/additional-customization/change-texts) y [Cambiar de aspecto](/developers/es/docs/checkout-bricks/wallet-brick/additional-customization/change-appearance), respectivamente.
 
 ## Habilitar pago con Mercado pago
 
 Para utilizar un método de pago (paymentMethods) del tipo "mercadoPago", se debe enviar una preferencia durante la inicialización del Brick, reemplazando el valor <PREFERENCE_ID> por el ID de la preferencia creada.
 
-Para crear una preferencia en su backend, agrega el [SDK de Mercado Pago](/developers/es/docs/sdks-library/landing) y las [credenciales](/developers/es/guides/additional-content/credentials/credentials) necesarias a tu proyecto para habilitar el uso de preferencias:
+Para crear una preferencia en su backend, agrega el [SDK de Mercado Pago](/developers/es/docs/sdks-library/landing) y las [credenciales](/developers/es/guides/additional-content/your-integrations/credentials) necesarias a tu proyecto para habilitar el uso de preferencias:
 
 [[[
 ```php
@@ -269,7 +268,7 @@ let preference = {
 
 mercadopago.preferences.create(preference)
   .then(function (response) {
-    // Este valor es el ID de preferencia que se enviará al ladrillo al inicio
+    // Este valor es el ID de preferencia que se enviará al Brick al inicio
     const preferenceId = response.body.id;
   }).catch(function (error) {
     console.log(error);
@@ -384,4 +383,3 @@ curl -X POST \
 > Para más detalles sobre cómo configurarlo, acceda a la sección [Preferencias.](/developers/es/docs/checkout-bricks/wallet-brick/additional-customization/preferences)<br/></br>
 > <br/></br>
 > Considera que cuando un usuario elige realizar un pago a través de la Billetera de Mercado Pago, será redirigido a la página de Mercado Pago para completar el pago. Por lo tanto, es necesario configurar `back_urls` si desea volver a su sitio al finalizar el pago. Para obtener más información, visite la sección [Redirigir al comprador a su sitio web.](/developers/es/docs/checkout-bricks/wallet-brick/additional-customization/preferences#bookmark_redirigir_al_comprador_a_tu_sitio_web)
-

@@ -369,7 +369,7 @@ npm install @mercadopago/sdk-react
 ```
 ]]]
 
-Em seguida, inicialize a integração definindo sua [chave pública](/developers/pt/docs/checkout-pro/additional-content/credentials) usando o seguinte código JavaScript.
+Em seguida, inicialize a integração definindo sua [chave pública](/developers/pt/docs/checkout-pro/additional-content/your-integrations/credentials) usando o seguinte código JavaScript.
 
 [[[
 ```Javascript
@@ -424,7 +424,7 @@ No exemplo acima, um botão de pagamento será renderizado e ficará responsáve
 >
 > É de extrema importância que se atente, durante a criação da preferência, para a configuração das `back_urls` porque elas serão responsáveis por guiar o fluxo de retorno ao seu website quando o checkout for finalizado. É possível definir três URLs de retorno diferentes, para cenários de pagamento pendentes, sucesso ou erro. Para mais informações, veja a seção de [URLs de retorno.](/developers/pt/docs/checkout-pro/checkout-customization/user-interface/redirection)
 
-Os pagamentos criados possuem os seguintes status: `Pendente`, `Rejeitado` e `Aprovado`. Para acompanhar as atualizações é necessário configurar seu sistema para receber as notificações de pagamentos e outras atualizações de status. Veja [Notificações](/developers/pt/docs/checkout-pro/additional-content/notifications/Introduction) para mais detalhes.
+Os pagamentos criados possuem os seguintes status: `Pendente`, `Rejeitado` e `Aprovado`. Para acompanhar as atualizações é necessário configurar seu sistema para receber as notificações de pagamentos e outras atualizações de status. Veja [Notificações](/developers/pt/docs/checkout-pro/additional-content/your-integrations/notifications) para mais detalhes.
 
 ## Exemplo de implementação
 

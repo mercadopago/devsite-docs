@@ -23,7 +23,7 @@ const renderWalletBrick = async (bricksBuilder) => {
    },
    onSubmit: (formData) => {
      // callback called when clicking Wallet Brick
-     // this is possible because the brick is a button
+     // this is possible because the Brick is a button
      // at this time of submit, you must create the preference
      const yourRequestBodyHere = {
        items: [
@@ -70,7 +70,7 @@ renderWalletBrick(bricksBuilder);
 ```react-jsx
 const onSubmit = async (formData) => {
  // callback called when clicking Wallet Brick
- // this is possible because the brick is a button
+ // this is possible because the Brick is a button
  // at this time of submit, you must create the preference
  const yourRequestBodyHere = {
    items: [
@@ -124,7 +124,7 @@ const onReady = async () => {
 > 
 > Attention
 >
-> If it is necessary to dismantle and reassemble a Brick, it is recommended to destroy the current instance and generate a new one. To do so, use the *unmount* method available in Brick's *controller*, in this case: `window.paymentBrickController.unmount()`.
+> Whenever the user leaves the screen where some Brick is displayed, it is necessary to destroy the current instance with the command `window.walletBrickController.unmount()`. When entering again, a new instance must be generated.
 
 This [preference onSubmit](/developers/en/docs/checkout-bricks/wallet-brick/configure-integration/preference-onsubmit) creation flow is designed for sellers who have one-click flows, if you want, you can also send preference on startup. See more information in the [Preference on startup](/developers/en/docs/checkout-bricks/wallet-brick/additional-customization/preference-startup) section.
 
@@ -136,7 +136,7 @@ Once the configurations are created, enter the code below to render the brick.
 >
 > Important
 >
-> El id 'walletBrick_container' de la div HTML abajo debe corresponder que el valor enviado en el metodo create() de la etapa anterior.
+> El id `walletBrick_container` de la div HTML abajo debe corresponder que el valor enviado en el metodo create() de la etapa anterior.
 
 [[[
 ```html
@@ -154,7 +154,7 @@ import { Wallet } from '@mercadopago/sdk-react';
 ```
 ]]]
 
-The result of rendering the Brick should look like the image below.
+The result of rendering the Brick should blook like the image below, presenting a text and a standard visual.
 
 <center>
 
@@ -162,13 +162,13 @@ The result of rendering the Brick should look like the image below.
 
 </center>
 
-> If you want to change the Brick text, check the [Change texts](/developers/en/docs/checkout-bricks/wallet-brick/additional-customization/change-texts) section.
+> If you want to change the text and the standard visual of the Brick, check the sections [Change texts](/developers/en/docs/checkout-bricks/wallet-brick/additional-customization/change-texts) and [Change appearance](/developers/en/docs/checkout-bricks/wallet-brick/additional-customization/change-appearance), respectively.
 
 ## Enable payment with Mercado Pago
 
 To use a payment method (paymentMethods) of the "mercadoPago" type, a preference must be sent during Brick initialization, replacing the value <PREFERENCE_ID> by the ID of the preference created.
 
-To create a preference in your backend, add the [Mercado Pago SDK](/developers/en/docs/sdks-library/landing) and the necessary [credentials](/developers/en/guides/additional-content/credentials/credentials) to your project to enable the preference usage:
+To create a preference in your backend, add the [Mercado Pago SDK](/developers/en/docs/sdks-library/landing) and the necessary [credentials](/developers/en/guides/additional-content/your-integrations/credentials) to your project to enable the preference usage:
 
 [[[
 ```php
@@ -380,4 +380,4 @@ curl -X POST \
 >
 > For more details on how to configure it, access the [Preferences](/developers/en/docs/checkout-bricks/wallet-brick/additional-customization/preferences) section.<br/></br>
 > <br/></br>
-> Consider that when a user chooses to make a payment using the Mercado Pago Wallet, he will be redirected to the Mercado Pago page to complete the payment. Therefore, it is necessary to configure the `back_urls` if you want to return to your site at the end of the payment. For more information, visit the [Redirect buyer to your website](/developers/en/docs/checkout-bricks/wallet-brick/additional-customization/preferences#bookmark_redirect_the_buyer_to_your_site) section.
+> Consider that when a user chooses to make a payment using the Mercado Pago Wallet, he will be redirected to the Mercado Pago page to complete the payment. Therefore, it is necessary to configure the `back_urls` if you want to return to your site at the end of the payment. For more information, visit the [Redirect buyer to your website.](/developers/en/docs/checkout-bricks/wallet-brick/additional-customization/preferences#bookmark_redirect_the_buyer_to_your_site) section

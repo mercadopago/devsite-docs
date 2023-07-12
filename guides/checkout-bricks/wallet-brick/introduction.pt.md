@@ -6,8 +6,13 @@ O Wallet Brick permite oferecer pagamentos a partir da conta do Mercado Pago em 
 * **Ambiente seguro**
 * **Aumento na taxa de aprovação dos pagamentos**
 
-<center>
-
-![wallet-brick-themes](checkout-bricks/wallet-brick-themes-pt.png)
-
-</center>
+---
+live_demo_code_action:
+ - title: Experimente nosso Brick
+ - description: Construa e confira a experiência visual do Wallet Brick em tempo real. Quando estiver tudo pronto, baixe ou copie o código gerado.
+ - link: /developers/pt/live-demo/wallet-brick
+ - image:https://http2.mlstatic.com/frontend-assets/dx-devsite/images/wallet-brick.png
+ - linkName: Demo
+ - buttonDescription: Construir seu Wallet Brick
+---
+<br>
