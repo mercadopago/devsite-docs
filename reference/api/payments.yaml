@@ -1326,8 +1326,13 @@ paths:
                       - 2006--Card Token not found.
                       - 2007--Connection to Card Token API fail.
                       - 2009--Card token issuer can't be null.
+                      - 2034-–Invalid users involved 2041 – GET to API APPLICATION fail. 
                       - 2060--The customer can't be equal to the collector.
+                      - 2062-–Invalid card token.
+                      - 2072-–Invalid value for transaction_amount. 
                       - 2077--Deferred capture not supported.
+                      - 2123-–Invalid operators users involved.
+                      - 2131–-Cannot infer Payment Method.
                       - 3000--You must provide your cardholder_name with your card data.
                       - 3001--You must provide your cardissuer_id with your card data.
                       - 3003--Invalid card_token_id.
@@ -1358,6 +1363,8 @@ paths:
                       - 3028--Invalid payment_method_id.
                       - 3029--Invalid card expiration month.
                       - 3030--Invalid card expiration year.
+                      - 3031-–Secure_code_id can't be null.
+                      - 3032–-Invalid security_code_length 3033 3034 - Invalid card_number_validation.
                       - 4000--card atributte can't be null.
                       - 4001--payment_method_id atributte can't be null.
                       - 4002--transaction_amount atributte can't be null.
@@ -1388,6 +1395,7 @@ paths:
                       - 4039--application_fee cannot be a negative value.
                       - 4050--payer.email must be a valid email.
                       - 4051--payer.email must be shorter than 254 characters.
+                      - 6033--User unavailable.
                       - 7523--Invalid expiration date.
         '403':
           description: Error
