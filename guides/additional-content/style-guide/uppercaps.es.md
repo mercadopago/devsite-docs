@@ -21,8 +21,8 @@ Algunos términos frecuentes cuyo uso de mayúsculas puede generar dudas, son:
 
 A diferencia del inglés, en español y portugués los meses del año y los días de la semana no van en mayúscula.
 
-    ✔ maio/mayo
-
-    ✘ Maio/Mayo
+| DO | DON’T |
+|---|---|
+| maio/mayo | Maio/Mayo |
 
 
