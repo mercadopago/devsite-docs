@@ -5,13 +5,13 @@
 > Important
 >
 > This documentation is for internal team use only,  as it has been deprecated or is an exclusive product. For further details, talk to the sales or integrations team.
-> <br/>
-> In the case of Master and Amex credit cards, the credit card will appear as: "MERPAG * <brand_name>". So for these means that for this payments methods you can communicate: "In your summary you will see the charge as MERPAG * <brand_name>" where <Brand_name> is configured from the Market account Seller payment: Menu -> Settings> Name of my business.
-> <br/>
+> <br><br>
+> In the case of Master and Amex credit cards, the credit card will appear as: `MERPAG*&lt;brand_name&gt;`. So for these means that for this payments methods you can communicate: "In your summary you will see the charge as `MERPAG*&lt;brand_name&gt;`" where `*&lt;brand_name&gt;` is configured from the Market account Seller payment: **Menu > Settings > Name of my business**.
+> <br><br>
 > With the payments without cvv, you can make recurring charges with Mercado Pago having the freedom to adapt the solution in the most optimal way for your business
-> <br/>
+> <br><br>
 > This information is provided with the aim of providing all the tools to be able to perform the integration of the solution. The Seller must comply with the integration policies of Mercado Pago:
-> <br/>
+> <br><br>
 > - The Seller must communicate clearly and unequivocally to its user base or clients that the payment platform on its website is provided by Mercado Pago, and the terms or dates and the amounts of recurring payments.
 > - In the event that existing users or customers of the Seller are being migrated to the Payments Recurrent Payment Market platform, the Seller must communicate in writing indicating that Mercado Pago will process the payments, informing that in the summary it will see the charge as MercadoPago / MercadoLibre" (*).
 > - Pre-Approval is only available through the personalized Checkout Pro or web tokenize checkout, that is, via the use of our API's.
@@ -26,7 +26,7 @@ For the first transaction you will always have to request the data of the card, 
  
 ## Create a customer and associate the used card
  
-Once the first payment has been made, and having been assured that the card is valid, create a Customer that will be associated with your account and associate a card with it. You can do this following the step by step indicating in our integration of [Users and Cards](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/advanced-integration)
+Once the first payment has been made, and having been assured that the card is valid, create a Customer that will be associated with your account and associate a card with it. You can do this following the step by step indicating in our integration of [Users and Cards](/developers/en/guides/checkout-api/advanced-integration).
 
 ## Recurring your customers
 
@@ -34,50 +34,53 @@ Once the first payment has been made, and having been assured that the card is v
 
 To know the data of your client, you can obtain it in the following way:
 
-```php
+---php
 <?php
 require_once ('mercadopago.php'); $mp = new MP ("ENV_ACCESS_TOKEN"); 
 $filters = array ("email" => "your.payer@email"); 
 $customer = $mp->get ("/v1/customers/search", $filters);
 print_r ($customer);
 ?>
-```
+
+---
 
 ### Get the card associated with your client
 
 Once you have obtained the id of your client, you can look for the card in the following way:
 
-```php
+---php
 <?php
 require_once ('mercadopago.php');
 $mp = new MP ("ENV_ACCESS_TOKEN");
 $cards = $mp->get ("/v1/customers/[CUSTOMER_ID]/cards");
 print_r ($cards["response"]);
 ?>
-```
+
+---
 
 ### Get a token with the card_id
 
-```php
+---php
 <?php
 require_once ('mercadopago.php');
 $mp = new MP ("ENV_ACCESS_TOKEN");
 $card_token = $mp->post ("/v1/card_tokens", array("json_data" => array("card_id" => "cardId" )));
 print_r ($card_token);
 ?>
-```
+
+---
 
 > NOTE
 >
 > Important
 >
-> Follow the step by step and avoid fraudulent payments with our recommendations to [improve the approval process](/guides/additional-content/resources/pci-compliant-merchants/receiving-payment-by-card/#bookmark_get_approval_faster_by_submitting_the_device_fingerprint).
+> Follow the step by step and avoid fraudulent payments with our recommendations to [improve the approval process.](/developers/en/guides/additional-content/how-tos/improve-payment-approval)
 
 ### Do the Payment:
 
 How are you using a token created with the card_id, you will have to post the payment indicating the customer id associated with the card:
 
-```php
+---php
 <?php
 require_once ('mercadopago.php');
 $mp = new MP('ENV_ACCESS_TOKEN');
@@ -92,7 +95,8 @@ $payment_data = array(
 );
 $payment = $mp->post("/v1/payments", $payment_data);
 ?>
-```
+
+---
 
 ## Listen for notifications of payments
 

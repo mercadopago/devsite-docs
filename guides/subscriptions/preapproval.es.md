@@ -5,11 +5,11 @@
 > Importante
 >
 > Esta documentación es solo para uso por parte del equipo interno, ya que fue deprecada o es un producto exclusivo. Para más detalles, hablar con el equipo comercial o de integraciones.
-> <br/>
-> En el caso de tarjetas de crédito Master y Amex, en la tarjeta de crédito aparecerá como: “MERPAG*<brand_name>”. Por lo que para estos medios de pago podrán comunicar: “En tu resumen verás el cargo como MERPAG*<brand_name>” donde <Brand_name> se configura desde la cuenta de Mercado Pago del vendedor: Menu -> Configuracion > Nombre de mi negocio.
-> <br/>
+> <br><br>
+> En el caso de tarjetas de crédito Master y Amex, en la tarjeta de crédito aparecerá como: `MERPAG*&ltbrand_name&gt`. Por lo que para estos medios de pago podrán comunicar: “En tu resumen verás el cargo como `MERPAG*&ltbrand_name&gt`” donde `&ltbrand_name&gt` se configura desde la cuenta de Mercado Pago del vendedor: **Menu > Configuracion > Nombre de mi negocio**.
+> <br><br>
 > Con los pagos sin cvv, se podrán realizar cobros recurrentes con Mercado Pago teniendo la libertad de amoldar la solución de la forma más óptima para tu negocio.
-> <br/>
+> <br><br>
 > Se facilita este instructivo con el objetivo de  brindarle todas las herramientas para poder realizar la integración de la solución. El Vendedor deberá cumplir con las políticas de integración de Mercado Pago:
 > - El Vendedor deberá comunicar en forma clara e inequívoca a su base de usuarios o clientes que la plataforma de pago en su sitio web es provista por Mercado Pago, y los plazos o fechas y los montos de los pagos recurrentes.
 > - En caso de que usuarios o clientes existentes del Vendedor estuvieran siendo migrados a la plataforma de Pagos Recurrentes de Mercado Pago, el Vendedor deberá comunicarlo por escrito indicando que Mercado Pago procesará los pagos, informando que en el resumen verá el cargo como Mercado Pago/Mercado Libre” (*).
@@ -64,14 +64,13 @@ $mp = new MP ("ENV_ACCESS_TOKEN");
 $card_token = $mp->post ("/v1/card_tokens", array("json_data" => array("card_id" => "cardId" )));
 print_r ($card_token);
 ?>
-
 ```
 
 > NOTE
 >
 > Importante
 >
-> Sigue el paso a paso y evita pagos fraudulentos con nuestras recomendaciones para [mejorar la aprobación de tus pagos](/developers/es/guides/additional-content/resources/pci-compliant-merchants/receiving-payment-by-card/#bookmark_mejora_la_aprobación_enviando_el_device_fingerprint).
+> Sigue el paso a paso y evita pagos fraudulentos con nuestras recomendaciones para [mejorar la aprobación de tus pagos.](/developers/es/guides/additional-content/how-tos/improve-payment-approval)
 
 ### Realizá el cobro:
 
