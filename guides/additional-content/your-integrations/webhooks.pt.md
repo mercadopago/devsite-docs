@@ -33,6 +33,7 @@ Abaixo explicaremos como indicar as URLs que serão notificadas e como configura
 | `point_integration_wh` | `state_CANCELED` | Processo de pagamento cancelado |
 | `point_integration_wh` | `state_ERROR`| Ocorreu um erro ao processar a tentativa de pagamento |
 | `delivery` | `delivery.updated`| Dados de envio e atualização do pedido |
+| `delivery_cancellation` | `case_created`| Solicitação de cancelamento do envio |
 
 ## Configuração durante a criação de pagamentos
 

@@ -35,6 +35,7 @@ Below we will explain how to indicate the URLs that will be notified and how to 
 | `point_integration_wh` | `state_CANCELED` | Payment process canceled |
 | `point_integration_wh` | `state_ERROR` | An error occurred while processing the payment attempt |
 | `delivery` | `delivery.updated`| Shipping data and order update |
+| `delivery_cancellation` | `case_created`| Shipment cancellation request |
 
 ## Setup while creating payments
 
