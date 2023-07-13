@@ -359,7 +359,7 @@ Para realizar uma compra de teste, será necessário ter em mãos as credenciais
 >
 > Para a realização dos testes, recomendamos que você entre em contato com seu consultor do Mercado Pago.
 
-## Testes em ambiente *sandbox*
+## Testes em ambiente sandbox
 
 Para que seja possível validar pagamentos com 3DS, disponibilizamos um ambiente de testes do tipo *sandbox* que retorna resultados falsos apenas para simulação e validação da implementação.
 
@@ -378,7 +378,7 @@ Os passos para criar o pagamento são os mesmos. Em caso de dúvida sobre como c
 
 > NOTE
 >
-> Para garantir que o pagamento seja criado com 3DS, lembre-se de incluir o atributo `three_d_secure_mode` com o valor `optional`.
+> Para garantir que o pagamento seja criado com 3DS, lembre-se de incluir o atributo **three_d_secure_mode** com o valor **optional**.
  
 [[[
 ```curl

@@ -210,7 +210,7 @@ For cases where the Challenge is necessary, the status will show the value `pend
 
 
 
-4. To **display the challenge**, you need to generate an iframe (min height: 500px, min width: 600px) containing a form with `method post`, `action` containing the URL obtained in the field `external_resource_url`, and a hidden input with the value returned in `creq`. Then, you must post the form below to start the challenge.
+4. To **display the Challenge**, you need to generate an iframe (min height: 500px, min width: 600px) containing a form with `method post`, `action` containing the URL obtained in the field `external_resource_url`, and a hidden input with the value returned in `creq`. Then, you must post the form below to start the Challenge.
 
 [[[
 ```javascript
@@ -263,7 +263,7 @@ When the Challenge is completed, the payment status will be updated to `approved
 >
 > Important
 >
-> When the Challenge is initiated, the user has about 5 minutes to complete it. If it is not completed, the bank will decline the transaction and Mercado Pago will consider the payment cancelled. If the user never completes the challenge, the payment will remain as `pending_challenge`.
+> When the Challenge is initiated, the user has about 5 minutes to complete it. If it is not completed, the bank will decline the transaction and Mercado Pago will consider the payment cancelled. If the user never completes the Challenge, the payment will remain as `pending_challenge`.
 
 See the section below for more details on how to check the status of each transaction.
 
@@ -374,14 +374,14 @@ To test payments in a sandbox environment, specific cards should be used to test
 
 | Card        | Flow                    | Number              | Security Code | Expiration Date |
 |-------------|-------------------------|---------------------|----------------|-----------------|
-| Mastercard  | Successful Challenge    | 5483 9281 6457 4623 | 123            | 11/25           |
-| Mastercard  | Unauthorized Challenge | 5361 9568 0611 7557 | 123            | 11/25           |
+| Mastercard  | Successful challenge    | 5483 9281 6457 4623 | 123            | 11/25           |
+| Mastercard  | Unauthorized challenge | 5361 9568 0611 7557 | 123            | 11/25           |
 
 The steps to create the payment remain the same. If you have any doubts about how to create card payments, please refer to the [documentation on Cards](https://www.mercadopago.com.br/developers/en/docs/checkout-api/integration-configuration/card/integrate-via-cardform).
 
 > NOTE
 >
-> To ensure that the payment is created with 3DS, remember to include the `three_d_secure_mode` attribute with the value `optional`.
+> To ensure that the payment is created with 3DS, remember to include the **three_d_secure_mode** attribute with the value **optional**.
 
 [[[
 ```curl
@@ -578,8 +578,8 @@ print(payment)
 
 ### Challenge
 
-In both the success and failure flows, the challenge, which is a screen similar to the one shown below, should be displayed within the iframe:
+In both the success and failure flows, the Challenge, which is a screen similar to the one shown below, should be displayed within the iframe:
 
 ![Challenge](/images/api/sandbox.png)
 
-The provided verification code is for illustrative purposes only. To complete the test flow, simply click the **Confirm** button. After completing this action, follow the detailed instructions in the **Verify Transaction Status** section to determine when the *challenge* has been completed and how to check for payment updates. 
+The provided verification code is for illustrative purposes only. To complete the test flow, simply click the **Confirm** button. After completing this action, follow the detailed instructions in the **Verify Transaction Status** section to determine when the Challenge has been completed and how to check for payment updates. 
