@@ -378,7 +378,7 @@ Los pasos para crear el pago son los mismos. En caso de duda sobre cómo crear p
 
 > NOTE
 >
-> Para asegurarte de que el pago se cree con 3DS, recuerda incluir el atributo **three_d_secure_mode** con el valor **optional**.
+> Para asegurarte de que el pago se cree con 3DS, recuerda incluir el atributo three_d_secure_mode con el valor optional.
 
 [[[
 ```curl

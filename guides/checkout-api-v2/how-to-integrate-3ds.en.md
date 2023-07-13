@@ -381,7 +381,7 @@ The steps to create the payment remain the same. If you have any doubts about ho
 
 > NOTE
 >
-> To ensure that the payment is created with 3DS, remember to include the **three_d_secure_mode** attribute with the value **optional**.
+> To ensure that the payment is created with 3DS, remember to include the three_d_secure_mode attribute with the value optional.
 
 [[[
 ```curl
