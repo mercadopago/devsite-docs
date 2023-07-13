@@ -338,14 +338,12 @@ Em um pagamento **com _Challenge_**, a transação ficará com status `pending` 
 
 Veja abaixo a tabela com os possíveis status e suas respectivas descrições.
 
-
-| Status  | Descrição  |
-| --- | --- |
-| `pending` | Transação com autenticação pendente ou timeout do _Challenge_. |
-| `approved` | Transação aprovada com autenticação. |
-| `rejected` | Transação negada sem autenticação. |
-
-
+| Status     | Status_detail                 | Descrição                                                         |
+|------------|-------------------------------|-------------------------------------------------------------------|
+| "approved" | ""                            | Transação aprovada sem autenticação.                               |
+| "rejected" | ""                            | Transação rejeitada sem autenticação.                              |
+| "pending"  | "pending_challenge"           | Transação pendente de autenticação ou *timeout* do *challenge*.       |
+| "rejected" | "cc_rejected_3ds_challenge"   | Transação rejeitada devido a falha no *challenge*.                  |
 
 ## Teste de integração
 
@@ -360,3 +358,224 @@ Para realizar uma compra de teste, será necessário ter em mãos as credenciais
 > Importante
 >
 > Para a realização dos testes, recomendamos que você entre em contato com seu consultor do Mercado Pago.
+
+## Testes em ambiente *sandbox*
+
+Para que seja possível validar pagamentos com 3DS, disponibilizamos um ambiente de testes do tipo *sandbox* que retorna resultados falsos apenas para simulação e validação da implementação.
+
+> NOTE
+>
+> Lembre-se de utilizar as credenciais de teste da sua aplicação. 
+
+Para realizar testes de pagamento em um ambiente *sandbox*, é necessário utilizar cartões específicos que permitem testar a implementação do *challenge* com os fluxos de sucesso e falha. A tabela a seguir apresenta os detalhes desses cartões:
+
+| Cartão    | Fluxo                    | Número             | Código de segurança | Data de vencimento |
+|-----------|--------------------------|--------------------|---------------------|--------------------|
+| Mastercard | Challenge com sucesso    | 5483 9281 6457 4623 | 123                 | 11/25              |
+| Mastercard | Challenge não autorizado | 5361 9568 0611 7557 | 123                 | 11/25              |
+
+Os passos para criar o pagamento são os mesmos. Em caso de dúvida sobre como criar pagamentos com cartão, consulte a [documentação sobre Cartões](https://www.mercadopago.com.br/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform). 
+
+> NOTE
+>
+> Para garantir que o pagamento seja criado com 3DS, lembre-se de incluir o atributo `three_d_secure_mode` com o valor `optional`.
+ 
+[[[
+```curl
+curl -X POST \
+   -H 'accept: application/json' \
+   -H 'content-type: application/json' \
+   -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
+   'https://api.mercadopago.com/v1/payments' \
+   -d '{
+         "transaction_amount": 100,
+         "token": "CARD_TOKEN",
+         "description": "Blue shirt",
+         "installments": 1,
+         "payment_method_id": "master",
+         "issuer_id": 310,
+         "payer": {
+           "email": "PAYER_EMAIL"
+         },
+         "three_d_secure_mode": "optional"
+   }'
+```
+```php
+<?php
+   require_once 'vendor/autoload.php';
+ 
+   MercadoPago\SDK::setAccessToken("YOUR_ACCESS_TOKEN");
+ 
+   $payment = new MercadoPago\Payment();
+   $payment->transaction_amount = (float)$_POST['transactionAmount'];
+   $payment->token = $_POST['token'];
+   $payment->description = $_POST['description'];
+   $payment->installments = (int)$_POST['installments'];
+   $payment->payment_method_id = $_POST['paymentMethodId'];
+   $payment->issuer_id = (int)$_POST['issuer'];
+ 
+   $payer = new MercadoPago\Payer();
+   $payer->email = $_POST['email'];
+   $payer->identification = array(
+       "type" => $_POST['identificationType'],
+       "number" => $_POST['identificationNumber']
+   );
+   $payment->payer = $payer;
+   $payment->three_d_secure_mode = "optional";
+ 
+   $payment->save();
+ 
+   $response = array(
+       'status' => $payment->status,
+       'status_detail' => $payment->status_detail,
+       'id' => $payment->id
+   );
+   echo json_encode($response);
+?>
+```
+```node
+var mercadopago = require('mercadopago');
+mercadopago.configurations.setAccessToken("YOUR_ACCESS_TOKEN");
+ 
+Var payment = req.body;
+var payment_data = {
+  transaction_amount: payment.transactionAmount,
+  description: payment.description,
+  token: payment.cardToken,
+  installments: payment.installments,
+  payment_method_id: payment.paymentMethodId,
+  issuer_id: payment.issuer,
+  payer: {
+    email: payment.email
+    identification: {
+      type: payment.identificationType,
+      number: payment.identificationNumber
+    }
+  },
+  three_d_secure_mode: "optional"
+};
+
+
+mercadopago.payment.create(payment).then(function (data) {
+console.log(data.response);
+}).catch(function (error) {
+console.log(error);
+});
+```
+```java
+PaymentClient client = new PaymentClient();
+
+PaymentCreateRequest paymentCreateRequest =
+   PaymentCreateRequest.builder()
+       .transactionAmount(request.getTransactionAmount())
+       .token(request.getToken())
+       .description(request.getDescription())
+       .installments(request.getInstallments())
+       .paymentMethodId(request.getPaymentMethodId())
+       .payer(
+           PaymentPayerRequest.builder()
+               .email(request.getPayer().getEmail())
+               .firstName(request.getPayer().getFirstName())
+               .identification(
+                   IdentificationRequest.builder()
+                       .type(request.getPayer().getIdentification().getType())
+                       .number(request.getPayer().getIdentification().getNumber())
+                       .build())
+               .build())
+       .threeDSecureMode("optional")
+       .build();
+
+client.create(paymentCreateRequest);
+```
+```ruby
+require 'mercadopago'
+sdk = Mercadopago::SDK.new('YOUR_ACCESS_TOKEN')
+ 
+payment_data = {
+ transaction_amount: params[:transactionAmount].to_f,
+ token: params[:token],
+ description: params[:description],
+ installments: params[:installments].to_i,
+ payment_method_id: params[:paymentMethodId],
+ payer: {
+   email: params[:email],
+   identification: {
+     type: params[:identificationType],
+     number: params[:identificationNumber]
+   }
+ three_d_secure_mode: "optional",
+ }
+}
+ 
+payment_response = sdk.payment.create(payment_data)
+payment = payment_response[:response]
+ 
+puts payment
+```
+```csharp
+using System;
+using MercadoPago.Client.Common;
+using MercadoPago.Client.Payment;
+using MercadoPago.Config;
+using MercadoPago.Resource.Payment;
+ 
+MercadoPagoConfig.AccessToken = "YOUR_ACCESS_TOKEN";
+ 
+var paymentRequest = new PaymentCreateRequest
+{
+   TransactionAmount = decimal.Parse(Request["transactionAmount"]),
+   Token = Request["token"],
+   Description = Request["description"],
+   Installments = int.Parse(Request["installments"]),
+   PaymentMethodId = Request["paymentMethodId"],
+   Payer = new PaymentPayerRequest
+   {
+       Email = Request["email"],
+       Identification = new IdentificationRequest
+       {
+           Type = Request["identificationType"],
+           Number = Request["identificationNumber"],
+       },
+   },
+ThreeDSecureMode = "optional",
+};
+ 
+var client = new PaymentClient();
+Payment payment = await client.CreateAsync(paymentRequest);
+ 
+Console.WriteLine(payment.Status);
+```
+```python
+import mercadopago
+sdk = mercadopago.SDK("ACCESS_TOKEN")
+ 
+payment_data = {
+   "transaction_amount": float(request.POST.get("transaction_amount")),
+   "token": request.POST.get("token"),
+   "description": request.POST.get("description"),
+   "installments": int(request.POST.get("installments")),
+   "payment_method_id": request.POST.get("payment_method_id"),
+   "payer": {
+       "email": request.POST.get("email"),
+       "identification": {
+           "type": request.POST.get("type"), 
+           "number": request.POST.get("number")
+       }
+   }
+   "three_d_secure_mode": "optional"
+}
+ 
+payment_response = sdk.payment().create(payment_data)
+payment = payment_response["response"]
+ 
+print(payment)
+```
+]]]
+
+### Challenge
+
+Em ambos os fluxos (sucesso e falha), o *challenge*, que é uma tela semelhante à mostrada abaixo, deve ser exibido dentro do *iframe*:
+
+![Challenge](/images/api/sandbox.png)
+
+O código de verificação fornecido é apenas ilustrativo. Para concluir o fluxo de teste, basta clicar no botão **Confirmar**. Após concluir essa ação, siga as instruções detalhadas na seção **Verificar o Status da Transação** para identificar quando o *challenge* foi concluído e como verificar a atualização do pagamento. 
