@@ -20,6 +20,7 @@ Some terms are new and you may not be familiar with them. Use this glossary so y
 | Abandoned | Final status of a payment intent when hasn’t been processed after a certain time. |
 | Canceled | Final status of a payment intent when it is canceled. |
 | Error | Final status of a payment intent when a transaction error occurs. |
+| Confirmation_required | Final status of a payment intent when it ends without obtaining a payment status. When you receive this, you must confirm on your device what the payment status is, using the `payment_id` received in the response, before delivering your product or service.  |
 | Finished | Final status of a payment intent when the transaction ends. |
 | On Terminal | Intermediate status of a payment intent when obtaining it from the Point device. |
 | Open | Initial status of a payment intent when creating it from the POS. |

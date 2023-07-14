@@ -1,10 +1,10 @@
 #  Start processing your payments
 
-To start processing your payments, follow these steps:
+To start processing your payments with POS, follow the steps below.
 
 ## Get the list of your available devices
 
-Before creating a payment intent, you must obtain the list of Point devices associated with your account. You can do it in the following way:
+Before creating a payment intent, you must obtain the list of Point devices associated with your account. You can do it through the following call:
 
 ``` curl
 curl --location --request GET 'https://api.mercadopago.com/point/integration-api/devices?offset=0&limit=50' \ 
@@ -78,6 +78,8 @@ You will receive a response like this:
 
 ## Create the payment intent
 
+A payment intent is a call that contains all the details of the transaction to be made, and it must be created in order to start a payment. It is an attempt that, if successful, will return a payment `id`  and its status.
+
 You can create a payment intent and assign it to your Point device in the following way:
 
 ----[mla]----
@@ -94,12 +96,12 @@ curl --location --request POST 'https://api.mercadopago.com/point/integration-ap
 }'
 ```
 
-Field | Description
-:--- | :--- |
-'amount'             | Total amount of the payment intent. **Important**: this field does not allow decimal points. Therefore, if you want to generate a payment intent, you must consider the two decimals of the value in its total. For example: to generate payment order value "15.00" you must enter "1500". |
-'external_reference' | Field exclusively used by the integrator to include references to their system.|
-'print_on_terminal'  | Field that determines if the device prints the payment receipt. |
-'ticket_number'      | Ticket number of the payment intent. |
+| Field | Description |
+|---|---|
+| `amount` | Total amount of the payment intent. **Minimum amount allowed**: 500 (POS devices), 100 (SMART devices). **Maximum amount allowed**: 400000000 (both devices). **Important**: this field does not allow decimal points. Therefore, if you want to generate a payment intent, you must consider the two decimals of the value in its total. For example: to generate payment order value "15.00" you must enter "1500". |
+| `external_reference` | Field exclusively used by the integrator to include references to their system. |
+| `print_on_terminal` | Field that determines if the device prints the payment receipt. |
+| `ticket_number` | Ticket number of the payment intent. |
 
 In response, you will receive something similar to this:
 
@@ -134,15 +136,15 @@ curl --location --request POST 'https://api.mercadopago.com/point/integration-ap
    }
 }'
 ```
-Field | Description
-:--- | :---
-amount                    | Total amount of the payment intent. |
-description               | Description of payment intent. |
-payment.type              | Payment method type. |
-payment.installments      | Number of payment installments. |
-payment.installments_cost | Cost for payment installments. This field determines who takes the cost and the accepted values are `seller` and `buyer` |
-external_reference        | Field exclusively used by the integrator to include references to their system. |
-print_on_terminal         | Field that determines if the device prints the payment receipt. |
+| Field | Description |
+|---|---|
+| `amount` | Total amount of the payment intent. **Minimum amount allowed**: 100 (POS and SMART devices). **Maximum amount allowed**: 7000000 (both devices). **Important**: this field does not allow decimal points. Therefore, if you want to generate a payment intent, you must consider the two decimals of the value in its total. For example: to generate payment order value "15.00" you must enter "1500". |
+| `description` | Description of payment intent. |
+| `payment.type` | Payment method type. |
+| `payment.installments` | Number of payment installments |
+| `payment.installments_cost` | Cost for payment installments. This field determines who takes the cost and the accepted values are `seller` and `buyer`. |
+| `external_reference` | Field exclusively used by the integrator to include references to their system. |
+| `print_on_terminal` | Field that determines if the device prints the payment receipt. |
 
 In response, you will receive something similar to this:
 
@@ -180,11 +182,11 @@ curl --location --request POST 'https://api.mercadopago.com/point/integration-ap
 }'
 ```
 
-| Campo |  Descrição |
-| --- | --- |
-| amount | Total amount of the payment intention. Important: this field does not allow decimal places, so if you want to generate a payment intent, you must consider the two decimal places of the total amount. For example: to generate a payment order for the amount "15.00" you must enter "1500". |
-| external_reference | Integrator-only field to include references specific to your system. |
-| print_on_terminal | Field that determines whether the device prints the payment receipt. |
+| Field | Description |
+|---|---|
+| `amount` | Total amount of the payment intent. **Minimum amount allowed**: 500 (SMART devices). **Maximum amount allowed**: 35000000. **Important**: this field does not allow decimal points. Therefore, if you want to generate a payment intent, you must consider the two decimals of the value in its total. For example: to generate payment order value "15.00" you must enter "1500". |
+| `external_reference` | Field exclusively used by the integrator to include references to their system. |
+| `print_on_terminal` | Field that determines if the device prints the payment receipt. |
 
 You will receive a response like this:
 
@@ -225,7 +227,7 @@ You will receive this response:
 
 ## Process your payment intent
 
-Once the payment intent has been created, you can obtain it from your Point device by pressing on the key to pay (in the case of Point Plus and Point Pro 2 the **green button** and, in the case of the Point Smart, the **digital button “Charge now”**) and following the steps shown on the screen to complete the payment.
+Once the payment intent has been created, you can obtain it from your Point device by pressing on the key to pay (in the case of Point Plus and Point Pro 2 the **green button** and, in the case of the Point Smart, the **digital button “Charge now”**). You must follow the steps shown on the screen afterwards to complete the payment.
 
 > WARNING
 >
@@ -235,14 +237,24 @@ Once the payment intent has been created, you can obtain it from your Point devi
 
 ## Check the status of your payment intent
 
-You can check the current status of your payment intent using the `id` that you received in the response when creating the payment intent.
+You can check the current status of your payment intent using the `id` that you received in the response when creating it.
+
+Remember that `id`and `status`of the **payment intent** are not the same as `id`and `status`of the payment. In this case, you will be trying to obtain the details of an attempt. If you want to check out all the information corresponding to the payment, access the [Payment API section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_id/get) in our API Reference.
+
+
+> WARNING
+>
+> Important
+>
+> The main recommended mechanism to know the result of a payment intent is the subscription to [integration notifications](developers/en/docs/mp-point/integration-configuration/integrate-with-pdv/notifications). The endpoint presented here is recommended only as an alternative mechanism.
+
 
 ``` curl
 curl --location --request GET 'https://api.mercadopago.com/point/integration-api/payment-intents/:paymentIntentID' \
 --header 'Authorization: Bearer ${ACCESS_TOKEN}'
 ```
 
-Sample response:
+You will receive a response similar to this one below:
 
 ----[mlb]----
 ``` json
@@ -304,8 +316,10 @@ Sample response:
 
 ------------
 
-> NOTE
+> WARNING
 >
-> Note
+> Important
 >
-> Check out all the information corresponding to the payment in the section [Payment API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_id/get) of our API Reference.
+> If you receive a `confirmation_required` status as a response to the payment intention, you must check on your device the status of the payment, using the `payment_id` given in said response. Do not deliver your service or product until you verify it.
+
+You can check all the possible status of a payment intent by accessing our [Glossary](/developers/en/docs/mp-point/integration-api/glossary).

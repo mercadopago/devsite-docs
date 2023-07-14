@@ -1,8 +1,8 @@
 # Configura tus notificaciones
 
-Si quieres, puedes recibir notificaciones de Webhooks. Estas se envían desde nuestra API de Integraciones a tu sistema receptor mediante una llamada `HTTP POST` en relación a los cambios de estado que presente una intención de pago.
+Si quieres, puedes recibir notificaciones de Webhooks. Estas se envían desde nuestra API de Integraciones a tu sistema receptor mediante una llamada `HTTP POST` en relación a los cambios de estado que presente una intención de pago. 
+Sigue las instrucciones de la [documentación sobre notificaciones Webhook](/developers/es/docs/mp-point/additional-content/your-integrations/notifications/webhooks) para integrarlas.
 
-Para integrar las notificaciones Webhook, sigue las instrucciones de [esta documentación](/developers/es/docs/mp-point/additional-content/your-integrations/notifications/webhooks).
 
 > WARNING
 >
@@ -14,7 +14,8 @@ Para integrar las notificaciones Webhook, sigue las instrucciones de [esta docum
 
 Una vez que hayas implementado las notificaciones y realizado los ajustes necesarios, estas tendrán el siguiente formato:
 
-#### Estado Finished:
+#### Estado Finished
+Es el estado final de una intención de pago cuando finaliza la transacción.
 
 ----[mla]----
 ```json
@@ -80,7 +81,77 @@ Una vez que hayas implementado las notificaciones y realizado los ajustes necesa
 ```
 ------------
 
-#### Estado Canceled:
+#### Estado Confirmation_required
+Sucede cuando la intención de pago finalizó sin recibir un estado del pago. Cuando lo recibes, debes confirmar en tu dispositivo cuál es el estado del pago, utilizando el `payment_id` recibido en la respuesta, antes de entregar tu producto o servicio.
+
+
+----[mla]----
+```json
+{
+ "amount": 100,
+ "caller_id": 09876543,
+ "client_id": 1234567890,
+ "created_at": "2021-11-29 17:10:37",
+ "id": "abcdef123-8ab5-4139-9aa3-abcd123",
+ "payment": {
+   "id": 123456789,
+   "state": "",
+   "type": ""
+ },
+ "state": "CONFIRMATION_REQUIRED",
+ "additional_info": {
+   "external_reference": "information",
+   "ticket_number": "39SHDKKDJ"
+ }
+}
+```
+------------
+
+----[mlb]----
+```json
+{
+"amount": 100,
+"caller_id": 09876543,
+"client_id": 1234567890,
+"created_at": "2021-11-29 17:10:37",
+"id": "abcdef123-8ab5-4139-9aa3-abcd123",
+"payment": {
+  "id": 123456789,
+  "state": "",
+  "type": ""
+},
+"state": "CONFIRMATION_REQUIRED",
+"additional_info": {
+  "external_reference": "information"
+}
+}
+```
+------------
+
+----[mlm]----
+```json
+{
+ "amount": 100,
+ "caller_id": 09876543,
+ "client_id": 1234567890,
+ "created_at": "2021-11-29 17:10:37",
+ "id": "abcdef123-8ab5-4139-9aa3-abcd123",
+ "payment": {
+   "id": 123456789,
+   "state": "",
+   "type": ""
+ },
+ "state": "CONFIRMATION_REQUIRED",
+ "additional_info": {
+   "external_reference": "information"
+ }
+}
+```
+------------
+
+
+#### Estado Canceled
+Es el estado final de una intención de pago cuando se cancela.
 
 ----[mla]----
 ```json
@@ -131,7 +202,8 @@ Una vez que hayas implementado las notificaciones y realizado los ajustes necesa
 ```
 ------------
 
-#### Estado Error:
+#### Estado Error
+Estado final de una intención de pago cuando ocurre un error en la transacción.
 
 ----[mla]----
 ```json
@@ -184,36 +256,29 @@ Una vez que hayas implementado las notificaciones y realizado los ajustes necesa
 
 ## Notificaciones de mis dispositivos point
 
-Puedes recibir notificaciones sobre eventos generados por cada uno de tus dispositivos point, de esta manera lograrás
-tener control y seguimiento de tus dispositivos. Estas notificaciones pueden ser ocasionadas por:
+Al recibir notificaciones sobre eventos generados por cada uno de tus dispositivos point,  lograrás tener control y hacer un seguimiento de tus dispositivos. Estas notificaciones pueden ser ocasionadas por:
 
 - Reinicios de la terminal.
 - Deslogueos.
 - Cambio en el modo de operación de PDV a STANDALONE o viceversa.
 
-Las notificaciones llegarán a tu correo electrónico registrado en MercadoPago, en caso de que no lo encuentres asegúrate
-de revisar tu carpeta de SPAM.
+Las notificaciones llegarán a tu correo electrónico registrado en MercadoPago. En caso de que no las encuentres, asegúrate de revisar tu carpeta de SPAM.
 
 
 > WARNING
 >
 > Importante
 >
-> Recibirás notificaciones de todos los dispositivos asociados a tus credenciales de acceso (access token).
-Ejemplo de notificación.
+> Recibirás notificaciones de todos los dispositivos asociados a tus credenciales de acceso (`access token`).
+
+Puedes ver un ejemplo de cómo lucen estas notificaciones a continuación:
 
 ![Email notification](/images/point-api/email-notification-es.png)
 
 ## Activar notificaciones
 
-Para activar las notificaciones es necesario habilitar el canal de correo electrónico del integrador, puedes utilizar el
+Para activar las notificaciones es necesario habilitar el canal de correo electrónico del integrador. Para hacerlo, puedes utilizar el
 siguiente comando:
-
-> WARNING
->
-> Importante
->
-> Las notificaciones estarán disponibles 30 minutos después de haber realizado el proceso de activación.
 
 ```curl
 curl --location --request PATCH 'https://api.mercadopago.com/point/integration-api/integrator' \
@@ -226,9 +291,16 @@ curl --location --request PATCH 'https://api.mercadopago.com/point/integration-a
 }'
 ```
 
+> WARNING
+>
+> Importante
+>
+> Las notificaciones estarán disponibles 30 minutos después de haber realizado el proceso de activación.
+
+
 ## Consultar canales habilitados
 
-Una vez configurado el canal de notificación puedes consultar su estado ejecutando el siguiente comando:
+Una vez configurado el canal por el que se recibirán las notificaciones, puedes consultar su estado ejecutando el siguiente comando:
 
 ```curl
 curl --location --request GET 'https://api.mercadopago.com/point/integration-api/integrator' \
@@ -237,7 +309,7 @@ curl --location --request GET 'https://api.mercadopago.com/point/integration-api
 
 ------------
 
-Ejemplo de respuesta:
+Recibirás una respuesta similar a la siguiente:
 
 ```json
 {

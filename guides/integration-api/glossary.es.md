@@ -17,9 +17,10 @@ Algunos términos son nuevos y quizás no estés familiarizado con ellos. Usa es
 
 | Término | Descripción |
 | --- | --- |
-| Abandoned | Estado final de una intención de pago cuando no se procesa después de determinado tiempo |
+| Abandoned | Estado final de una intención de pago cuando no se procesa después de determinado tiempo. |
 | Canceled | Estado final de una intención de pago cuando se cancela. |
 | Error | Estado final de una intención de pago cuando ocurre un error en la transacción. |
+| Confirmation_required | Estado final del intento cuando ha finalizado sin recibir un estado del pago. Cuando lo obtienes, debes confirmar en tu dispositivo cuál es el estado del pago, utilizando el payment_id recibido en la respuesta, antes de entregar tu producto o servicio. |
 | Finished | Estado final de una intención de pago cuando finaliza la transacción. |
 | On Terminal | Estado intermedio de una intención de pago al momento de obtenerla desde el dispositivo Point. |
 | Open | Estado inicial de una intención de pago al crearlo desde el PDV. |
