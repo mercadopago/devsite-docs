@@ -78,6 +78,7 @@ Recibirás una respuesta como esta:
 
 ## Crea la intención de pago
 Una intención de pago es un llamado que contiene los detalles de la transacción a realizarse, y que debe ser creada para poder iniciar un cobro. Se trata de un intento que, de ser exitoso, devolverá un `id` del pago y su estado.
+
 Puedes crear una intención de pago y asignarla a tu dispositivo Point de esta manera:
 
 ----[mla]----
@@ -96,7 +97,7 @@ curl --location --request POST 'https://api.mercadopago.com/point/integration-ap
 
 | Campo | Descripción |
 |---|---|
-| `amount` | Monto total de la intención de pago.  **Monto mínimo permitido**: 500 (dispositivos POS) y 100 (dispositivos SMART). **Monto máximo permitido**: 400000000 (ambos dispositivos). **Importante**: este campo no admite puntos decimales. Si deseas generar una intención de pago, debes contemplar los dos decimales del valor en su total. Por ejemplo: para generar orden de pago de valor "15,00" deberás ingresar "1500". |
+| `amount` | Monto total de la intención de pago.  <br>**Monto mínimo permitido**: 500 (dispositivos POS) y 100 (dispositivos SMART). <br>**Monto máximo permitido**: 400000000 (ambos dispositivos). <br>**Importante**: este campo no admite puntos decimales. Si deseas generar una intención de pago, debes contemplar los dos decimales del valor en su total. Por ejemplo: para generar orden de pago de valor "15,00" deberás ingresar "1500". |
 | `external_reference` | Campo de uso exclusivo del integrador para incluir referencias propias de su sistema. |
 | `print_on_terminal` | Campo que determina si el dispositivo realiza la impresión del comprobante de pago. |
 | `ticket_number` | Número de ticket de la intención de pago. |
@@ -136,7 +137,7 @@ curl --location --request POST 'https://api.mercadopago.com/point/integration-ap
 ```
 | Campo | Descripción |
 |:---:|---|
-| `amount` | Monto total de la intención de pago. **Monto mínimo permitido**: 100 (dispositivos POINT y SMART).  **Monto máximo permitido**: 7000000 (ambos dispositivos).  **Importante**: este campo no admite puntos decimales. Si deseas generar una intención de pago, debes contemplar los dos decimales del valor en su total. Por ejemplo: para generar orden de pago de valor "15,00" deberás ingresar "1500". |
+| `amount` | Monto total de la intención de pago. <br>**Monto mínimo permitido**: 100 (dispositivos POINT y SMART).  <br>**Monto máximo permitido**: 7000000 (ambos dispositivos). <br>**Importante**: este campo no admite puntos decimales. Si deseas generar una intención de pago, debes contemplar los dos decimales del valor en su total. Por ejemplo: para generar orden de pago de valor "15,00" deberás ingresar "1500". |
 | `description` | Descripción de la intención de pago. |
 | `payment.type` | Tipo de método de pago. |
 | `payment.installments` | Cantidad de cuotas de pago. |
@@ -184,7 +185,7 @@ curl --location --request POST 'https://api.mercadopago.com/point/integration-ap
 
 | Campo | Descripción |
 |:---:|---|
-| `amount` | Monto total de la intención de pago. **Monto mínimo permitido**: 500 (dispositivos SMART).  **Monto máximo permitido**: 35000000.  **Importante**: este campo no admite puntos decimales. Si deseas generar una intención de pago, debes contemplar los dos decimales del valor en su total. Por ejemplo: para generar orden de pago de valor "15,00" deberás ingresar "1500". |
+| `amount` | Monto total de la intención de pago. <br>**Monto mínimo permitido**: 500 (dispositivos SMART). <br>**Monto máximo permitido**: 35000000.  <br>**Importante**: este campo no admite puntos decimales. Si deseas generar una intención de pago, debes contemplar los dos decimales del valor en su total. Por ejemplo: para generar orden de pago de valor "15,00" deberás ingresar "1500". |
 | `external_reference` | Campo de uso exclusivo del integrador para incluir referencias propias de su sistema. |
 | `print_on_terminal` | Campo que determina si el dispositivo realiza la impresión del comprobante de pago. |
 
@@ -228,6 +229,7 @@ Obtendrás esta respuesta:
 ## Procesa tu intención de pago
 
 Una vez creada la intención de pago, puedes obtenerla desde tu dispositivo Point oprimiendo el botón para iniciar cobro (en caso de Point Plus y  Point Pro 2 el **botón verde** y, en el caso de Point Smart, el **botón digital “Cobrar ahora”**).
+
 Luego, continúa con los pasos que se muestran en la pantalla para completar el pago.
 
 > NOTE
@@ -240,6 +242,7 @@ Luego, continúa con los pasos que se muestran en la pantalla para completar el 
 ## Consulta el estado de tu intención de pago
 
 Puedes consultar el estado actual de tu intención de pago utilizando el `id` que recibiste en la respuesta al momento de crearla.
+
 Recuerda que `id` y estado de la intención de pago son diferentes a `id` y estado del pago. En este caso, se trata de consultar los detalles de un intento. Si quieres consultar la información correspondiente al pago, accede a la sección [API de Pagos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/get) en Referencia de API. 
 
 > WARNING

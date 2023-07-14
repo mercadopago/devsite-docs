@@ -98,7 +98,7 @@ curl --location --request POST 'https://api.mercadopago.com/point/integration-ap
 
 | Field | Description |
 |---|---|
-| `amount` | Total amount of the payment intent. **Minimum amount allowed**: 500 (POS devices), 100 (SMART devices). **Maximum amount allowed**: 400000000 (both devices). **Important**: this field does not allow decimal points. Therefore, if you want to generate a payment intent, you must consider the two decimals of the value in its total. For example: to generate payment order value "15.00" you must enter "1500". |
+| `amount` | Total amount of the payment intent. <br>**Minimum amount allowed**: 500 (POS devices), 100 (SMART devices). <br>**Maximum amount allowed**: 400000000 (both devices). <br>**Important**: this field does not allow decimal points. Therefore, if you want to generate a payment intent, you must consider the two decimals of the value in its total. For example: to generate payment order value "15.00" you must enter "1500". |
 | `external_reference` | Field exclusively used by the integrator to include references to their system. |
 | `print_on_terminal` | Field that determines if the device prints the payment receipt. |
 | `ticket_number` | Ticket number of the payment intent. |
@@ -138,7 +138,7 @@ curl --location --request POST 'https://api.mercadopago.com/point/integration-ap
 ```
 | Field | Description |
 |---|---|
-| `amount` | Total amount of the payment intent. **Minimum amount allowed**: 100 (POS and SMART devices). **Maximum amount allowed**: 7000000 (both devices). **Important**: this field does not allow decimal points. Therefore, if you want to generate a payment intent, you must consider the two decimals of the value in its total. For example: to generate payment order value "15.00" you must enter "1500". |
+| `amount` | Total amount of the payment intent. <br>**Minimum amount allowed**: 100 (POS and SMART devices). <br>**Maximum amount allowed**: 7000000 (both devices). <br>**Important**: this field does not allow decimal points. Therefore, if you want to generate a payment intent, you must consider the two decimals of the value in its total. For example: to generate payment order value "15.00" you must enter "1500". |
 | `description` | Description of payment intent. |
 | `payment.type` | Payment method type. |
 | `payment.installments` | Number of payment installments |
@@ -184,7 +184,7 @@ curl --location --request POST 'https://api.mercadopago.com/point/integration-ap
 
 | Field | Description |
 |---|---|
-| `amount` | Total amount of the payment intent. **Minimum amount allowed**: 500 (SMART devices). **Maximum amount allowed**: 35000000. **Important**: this field does not allow decimal points. Therefore, if you want to generate a payment intent, you must consider the two decimals of the value in its total. For example: to generate payment order value "15.00" you must enter "1500". |
+| `amount` | Total amount of the payment intent. <br>**Minimum amount allowed**: 500 (SMART devices). <br>**Maximum amount allowed**: 35000000. <br>**Important**: this field does not allow decimal points. Therefore, if you want to generate a payment intent, you must consider the two decimals of the value in its total. For example: to generate payment order value "15.00" you must enter "1500". |
 | `external_reference` | Field exclusively used by the integrator to include references to their system. |
 | `print_on_terminal` | Field that determines if the device prints the payment receipt. |
 
@@ -246,7 +246,7 @@ Remember that `id`and `status`of the **payment intent** are not the same as `id`
 >
 > Important
 >
-> The main recommended mechanism to know the result of a payment intent is the subscription to [integration notifications](developers/en/docs/mp-point/integration-configuration/integrate-with-pdv/notifications). The endpoint presented here is recommended only as an alternative mechanism.
+> The main recommended mechanism to know the result of a payment intent is the subscription to [integration notifications](/developers/en/docs/mp-point/integration-configuration/integrate-with-pdv/notifications). The endpoint presented here is recommended only as an alternative mechanism.
 
 
 ``` curl

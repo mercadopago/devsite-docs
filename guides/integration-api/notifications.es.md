@@ -1,6 +1,7 @@
 # Configura tus notificaciones
 
 Si quieres, puedes recibir notificaciones de Webhooks. Estas se envían desde nuestra API de Integraciones a tu sistema receptor mediante una llamada `HTTP POST` en relación a los cambios de estado que presente una intención de pago. 
+
 Sigue las instrucciones de la [documentación sobre notificaciones Webhook](/developers/es/docs/mp-point/additional-content/your-integrations/notifications/webhooks) para integrarlas.
 
 
@@ -262,7 +263,7 @@ Al recibir notificaciones sobre eventos generados por cada uno de tus dispositiv
 - Deslogueos.
 - Cambio en el modo de operación de PDV a STANDALONE o viceversa.
 
-Las notificaciones llegarán a tu correo electrónico registrado en MercadoPago. En caso de que no las encuentres, asegúrate de revisar tu carpeta de SPAM.
+Las notificaciones llegarán a tu correo electrónico registrado en Mercado Pago. En caso de que no las encuentres, asegúrate de revisar tu carpeta de SPAM.
 
 
 > WARNING

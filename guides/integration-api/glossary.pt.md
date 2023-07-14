@@ -20,7 +20,7 @@ Alguns termos são novos e você pode não estar familiarizado com eles. Use est
 | Abandoned | Status final de uma intenção de pagamento quando ela não é processada após um certo tempo. |
 | Canceled | Status final de uma intenção de pagamento quando ela é cancelada. |
 | Error | Status final de uma intenção de pagamento quando ocorre um erro de transação. |
-| Confirmation_required | Status final de uma intenção de pagamento quando concluiu sem recever um status do pagamento.Ao recebê-lo, você deve confirmar em seu dispositivo qual é o status do pagamento, usando o payment_id recebido na resposta, antes de entregar seu produto ou serviço. |
+| Confirmation_required | Status final de uma intenção de pagamento quando concluiu sem recever um status do pagamento.Ao recebê-lo, você deve confirmar em seu dispositivo qual é o status do pagamento, usando o `payment_id` recebido na resposta, antes de entregar seu produto ou serviço. |
 | Finished | Status final de uma intenção de pagamento quando a transação termina. |
 | On Terminal | Status intermediário de uma intenção de pagamento ao obtê-la do dispositivo Point. |
 | Open | Status inicial de uma intenção de pagamento ao criá-la a partir do PDV. |

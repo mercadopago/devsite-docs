@@ -96,7 +96,7 @@ curl --location --request POST 'https://api.mercadopago.com/point/integration-ap
 
 | Campo | Descrição |
 |:---:|---|
-| `amount` | Valor total da intenção de pagamento.  **Valor mínimo permitido**: 500 (dispositivos POS) - 100 (dispositivos SMART). **Valor máximo permitido**: 400000000 (ambos dispositivos). **Importante**: este campo não admite vírgulas decimais, então se deseja gerar uma intenção de pagamento deve-se considerar as duas casas decimais do valor em seu total. Por exemplo: para gerar o valor da ordem de pagamento "15,00" você deve inserir "1500". |
+| `amount` | Valor total da intenção de pagamento.  <br>**Valor mínimo permitido**: 500 (dispositivos POS) - 100 (dispositivos SMART). <br>**Valor máximo permitido**: 400000000 (ambos dispositivos). <br>**Importante**: este campo não admite vírgulas decimais, então se deseja gerar uma intenção de pagamento deve-se considerar as duas casas decimais do valor em seu total. Por exemplo: para gerar o valor da ordem de pagamento "15,00" você deve inserir "1500". |
 | `external_reference` | Campo de uso exclusivo do integrador para incluir referências de seu sistema. |
 | `print_on_terminal` | Campo que determina se o dispositivo imprime o comprovante de pagamento. |
 | `ticket_number` | Número do bilhete da intenção de pagamento. |
@@ -136,7 +136,7 @@ curl --location --request POST 'https://api.mercadopago.com/point/integration-ap
 ```
 | Campo | Descrição |
 |:---:|---|
-| `amount` | Valor total da intenção de pagamento.  **Valor mínimo permitido**: 100 (dispositivos POS y SMART). **Valor máximo permitido**: 7000000 (ambos dispositivos). **Importante**: este campo não admite vírgulas decimais, então se deseja gerar uma intenção de pagamento deve-se considerar as duas casas decimais do valor em seu total. Por exemplo: para gerar o valor da ordem de pagamento "15,00" você deve inserir "1500". |
+| `amount` | Valor total da intenção de pagamento.  <br>**Valor mínimo permitido**: 100 (dispositivos POS y SMART). <br>**Valor máximo permitido**: 7000000 (ambos dispositivos). <br>**Importante**: este campo não admite vírgulas decimais, então se deseja gerar uma intenção de pagamento deve-se considerar as duas casas decimais do valor em seu total. Por exemplo: para gerar o valor da ordem de pagamento "15,00" você deve inserir "1500". |
 | `description` | Descrição da intenção de pagamento. |
 | `payment.type` | Tipo de método de pagamento. |
 | `payment.installments` | Valor das parcelas de pagamento. |
@@ -182,7 +182,7 @@ curl --location --request POST 'https://api.mercadopago.com/point/integration-ap
 
 | Campo | Descrição |
 |:---:|---|
-| `amount` | Valor total da intenção de pagamento.  **Valor mínimo permitido**: 500 (dispositivos SMART). **Valor máximo permitido**: 35000000. **Importante**: este campo não admite vírgulas decimais, então se deseja gerar uma intenção de pagamento deve-se considerar as duas casas decimais do valor em seu total. Por exemplo: para gerar o valor da ordem de pagamento "15,00" você deve inserir "1500". |
+| `amount` | Valor total da intenção de pagamento.  <br>**Valor mínimo permitido**: 500 (dispositivos SMART). <br>**Valor máximo permitido**: 35000000. <br>**Importante**: este campo não admite vírgulas decimais, então se deseja gerar uma intenção de pagamento deve-se considerar as duas casas decimais do valor em seu total. Por exemplo: para gerar o valor da ordem de pagamento "15,00" você deve inserir "1500". |
 | `external_reference` | Campo de uso exclusivo do integrador para incluir referências de seu sistema. |
 | `print_on_terminal` | Campo que determina se o dispositivo imprime o comprovante de pagamento. |
 
