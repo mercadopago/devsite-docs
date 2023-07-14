@@ -19,7 +19,7 @@ Para configurar pagamento com Pix, envie um POST ao endpoint [/v1/payments](/dev
  $payment->transaction_amount = 100;
  $payment->payment_method_id = "pix";
  $payment->payer = array(
-    "email" => "test@test.com",
+    "email" => "PAYER_EMAIL_HERE",
   );
 
  $payment->save();
@@ -34,7 +34,7 @@ var payment_data = {
   transaction_amount: 100,
   payment_method_id: 'pix',
   payer: {
-    email: 'test@test.com',
+    email: 'PAYER_EMAIL_HERE',
   }
 };
 
@@ -56,7 +56,7 @@ PaymentCreateRequest paymentCreateRequest =
        .paymentMethodId("pix")
        .payer(
            PaymentPayerRequest.builder()
-               .email("test@test.com")
+               .email("PAYER_EMAIL_HERE")
                .build())
        .build();
 
@@ -70,7 +70,7 @@ payment_request = {
   transaction_amount: 100,
   payment_method_id: 'pix',
   payer: {
-    email: 'test@test.com',
+    email: 'PAYER_EMAIL_HERE',
   }
 }
 
@@ -93,7 +93,7 @@ var request = new PaymentCreateRequest
     PaymentMethodId = "pix",
     Payer = new PaymentPayerRequest
     {
-        Email = "test@test.com",
+        Email = "PAYER_EMAIL_HERE",
     },
 };
 
@@ -109,7 +109,7 @@ payment_data = {
     "transaction_amount": 100,
     "payment_method_id": "pix",
     "payer": {
-        "email": "test@test.com",
+        "email": "PAYER_EMAIL_HERE",
     }
 }
 
