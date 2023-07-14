@@ -19,10 +19,10 @@ Algunos términos frecuentes cuyo uso de mayúsculas puede generar dudas, son:
 - iSET
 - MP Delivery
 
+<br>
+
 A diferencia del inglés, en español y portugués los meses del año y los días de la semana no van en mayúscula.
 
-| DO | DON’T |
-|---|---|
-| maio/mayo | Maio/Mayo |
-
+✅ maio/mayo <br>
+❌ Maio/Mayo
 

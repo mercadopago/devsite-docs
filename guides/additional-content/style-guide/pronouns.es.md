@@ -8,23 +8,20 @@ Cuando hablamos con nuestro público, usamos preferentemente la 1era persona del
 Para evitar perpetuar estereotipos de género, procuramos usar voces y nombres neutros.
 Evita siempre usar el universal masculino. Para ello, elige opciones dentro de la lengua española que incluyan a todos los géneros y no alteren la lengua. Para eso puedes usar distintos recursos de escritura inclusiva: 
 
-- **Privilegiar el uso de pronombres personales en segunda persona**, por sobre expresiones o sustantivos con marcación de género.
-    
-    | DO | DON’T |
-    |---|---|
-    | Si estás desarrollando esta feature... | Si eres desarrollador... |
+- **Privilegiar el uso de pronombres personales en segunda persona**, por sobre expresiones o sustantivos con marcación de género. <br>
 
-- **Paráfrasis**: se trata de decir lo mismo, pero parafraseando la idea original.
+✅ Si estás desarrollando esta feature... <br>
+❌ Si eres desarrollador...
 
-    | DO | DON’T |
-    |---|---|
-    | Las personas que desarrollan - Quienes realicen compras/quienes accedan a la tienda. | Los desarrolladores  - Los clientes |
+- **Paráfrasis**: se trata de decir lo mismo, pero parafraseando la idea original. <br>
 
-- **Usar sustantivos colectivos sin marca de género**.
+✅ **Las personas que desarrollan** - Quienes realicen compras/quienes accedan a la tienda <br>
+❌ **Los desarrolladores**  - Los clientes
 
-    | DO | DON’T |
-    |---|---|
-    | El equipo de Mercado Pago. | Los integrantes de Mercado Pago. |
+- **Usar sustantivos colectivos sin marca de género**. <br>
+
+✅ El equipo de Mercado Pago. <br>
+❌ Los integrantes de Mercado Pago.
 
 > WARNING
 >
