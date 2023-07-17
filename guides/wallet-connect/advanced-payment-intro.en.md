@@ -1,6 +1,6 @@
-# Advanced Payments
+# Payment flow
 
-Advanced Payments are specific payments for Wallet Connect in which the integrator obtains a "payer token" from the payer when carrying out the Agreement flow. This "payer token" is used by the integrator to make the payment from the payer's digital wallet.
+Payment flows are specific configurations for Wallet Connect in which the integrator obtains a "payer token" from the payer when carrying out the Agreement flow. This "payer token" is used by the integrator to make the payment from the payer's digital wallet.
 
 
 > WARNING
