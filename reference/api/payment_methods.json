@@ -38,7 +38,18 @@
                           "en": "Descriptive name of the payment method, for example Visa, American Express, etc.",
                           "es": "Nombre descriptivo del método de pago, por ejemplo Visa, American Express, etc.",
                           "pt": "Nome descritivo da forma de pagamento como, por exemplo, Visa, American Express, etc."
-                        }
+                        },
+                        "sites-enabled": ["mla", "mlb", "mlm"]
+                      },
+                      "name": {
+                        "type": "string",
+                        "example": "Mastercad",
+                        "description": {
+                          "en": "Descriptive name of the payment method, for example Mastercard.",
+                          "es": "Nombre descriptivo del método de pago, por ejemplo Mastercard.",
+                          "pt": "Nome descritivo da forma de pagamento como, por exemplo, Mastercard."
+                        },
+                        "sites-enabled": ["mco", "mlu", "mpe", "mlc"]
                       },
                       "payment_type_id": {
                         "type": "string",
