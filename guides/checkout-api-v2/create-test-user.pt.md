@@ -6,13 +6,10 @@ Para realizar o teste de integração, serão necessários usuários de teste qu
 
 Abaixo listamos os dois tipos de usuários necessários para testar o fluxo de pagamento do Checkout Transparente.
 
-
-
 * **Vendedor:** É a conta que você usa para configurar a aplicação e as credenciais para a cobrança.
 * **Comprador:** É a conta que você usa para testar o processo de compra.
 
 Para criar um usuário de teste, envie sua **credencial de produção** _Access token_ ao endpoint [/users/test_user](/developers/pt/reference/test_user/_users_test_user/post) e execute a requisição.
-
 
 > WARNING
 >

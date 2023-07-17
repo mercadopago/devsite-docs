@@ -1,37 +1,64 @@
-# Recommendations to improve payments approval
-
-**To prevent a legitimate payment from being refused** because it does not meet the security validations, it is necessary to include all possible information when carrying out the transaction, as well as having your checkout’s interface optimized. 
-
-You can see our **recommendations to improve your approval** in detail below.
-
-## Get and send the Device ID
-
-The **Device ID** is an important piece of information to ensure better security and, consequently, a better payment approval rate. It's a **unique number that's used to identify a customer's device** when they are buying.
-
-If a customer makes a purchase on a different device than usual, this may represent an atypical behaviour. Even if it’s not necessarily a fraude, the Device ID could help us to make a correct assessment and avoid legitimate payment rejections.
+# Recommendations to improve your approval
 
 > WARNING
-> 
+>
 > Attention
 >
-> If you are already using the [JS SDK of Mercado Pago](/developers/en/docs/sdks-library/client-side/mp-js-v2), it **won’t** be necessary to add the security script because the Device ID information is already being collected.
+> We recommend assessing your [integration’s quality](/developers/en/guides/additional-content/homologator/homologator) before going to production to check if you are meeting the Mercado Pago quality and security standards that would help you obtain a good payment approval rate.
 
-**Add the Mercado Pago security script** to your page by replacing the `view` value with the name of the section in which you wish to add it. Adding it to your **checkout URL** is the most important, but doing it in **other pages**, such as home, search or item, may be helpful to collect even more information.
-
-```html
-<script src="https://www.mercadopago.com/v2/security.js" view="home"></script>
-```
-
+To prevent a legitimate payment from being refused because it does not meet security validations, **it is necessary to include all possible information** when carrying out the transaction. Furthermore, you must pay attention to some security requirements, such as our **Security Code** and **Device ID**.
 
 > NOTE
 >
 > Important
 >
-> In case of unavailable value for a section, leave it empty.
+> If you use Checkout Pro, you already implement our security methods to prevent fraud.
+
+## Detail all information about the payment
+
+To optimize payment security validation and improve approvals, it is important to submit as much buyer and item data as possible. 
+ 
+When you use the [Create payment](/developers/en/reference/payments/_payments/post) method, make sure to fill in all the available fields. 
+
+## Configure preferences
+
+You can adapt **the Checkout Pro integration** to your business model by configuring preference attributes, which help improve approvals.
+
+For more details, visit the [Checkout Pro preference setting](/developers/en/docs/checkout-pro/checkout-customization/preferences) documentation.
+
+## Improve the User Experience
+
+Often, the buyer can make mistakes when filling in their details at checkout. That's why it's worth reviewing every step, interaction, and even the interface design, to ensure everything is as clear as it should be. Please make the necessary changes to prevent confusion or issues.
+
+## Help your customers with their declined payments
+
+The reason for refusing payment must be explained to your customers. They need to be able to pay easily!
+
+For example, if a payment is declined because the user does not have enough funds in their bank account, you could recommend they try using a different payment method to complete the transaction.
+
+> If you’re using Checkout Pro, don’t worry! All your messages are already set up. If you’re using another product, we recommend showing **a specific message for each rejection reason**.
+
+## Add the security code
+
+Add the Mercado Pago security script to your page and replace the `view` value with the name of the section (e.g., home, search, item)
+
+```html
+<script src="https://www.mercadopago.com/v2/security.js" view="home"></script>
+```
+
+> NOTE
+>
+> Important
+>
+> In case of unavailable value for a section, left empty.
 
 ## Implement the Device ID in your site
 
-To use the Device ID on your web and prevent possible fraudulent purchases, follow the steps below:
+The Device ID is an important piece of information to ensure better security and, consequently, a better payment approval rate. **It's a unique number that's used to identify a customer's device** when they are buying.
+
+If a customer makes a purchase on a different device than usual, this may mean that the purchase was fake and should not be done.
+
+To use it on the web, follow the steps below:
 
 ### 1. Add the security code
 
@@ -45,21 +72,19 @@ To generate device IDs on your website, add the following code to your Checkout 
 
 When you add the Mercado Pago security code to your site, a global JavaScript variable is automatically created with the name `MP_DEVICE_SESSION_ID`, whose value is the device ID. 
 
-If you prefer that we assign it to another variable, indicate the name by adding the attribute `output`, as in the following example:  
+  - If you prefer that we assign it to another variable, indicate the name by adding the attribute `output`, as in the following example:  
+  ```html
+  <script src="https://www.mercadopago.com/v2/security.js" view="checkout" output="deviceId"></script>
+  ```
 
-```html
-<script src="https://www.mercadopago.com/v2/security.js" view="checkout" output="deviceId"></script>
-```
+  - If you want your own variable, you can add an HTML tag on your site as `id="deviceId"` and the code will automatically assign the value device_id.
+  ```html
+  <input type="hidden" id="deviceId">
+  ```
 
-You can also **create your own variable** by adding an HTML tag on your site as `id="deviceId"` and the code will automatically assign the value device_id.
+### 3. Using the device ID
 
-```html
-<input type="hidden" id="deviceId">
-```
-
-### 3. Use the device ID
-
-Once you have the Device ID, you must **send it to our servers** when creating a payment. To do so, simply add the following **header** to the request:
+When creating a payment, you need to send us the Device ID value. To do so, simply add the following header to the request:
 
 ```http
 X-meli-session-id: device_id
@@ -132,6 +157,8 @@ We recommend initializing it in the _didFinishLaunchingWithOptions_ event of the
 We recommend initializing it in the _MainApplication_ class.
 ===
 import com.mercadolibre.android.device.sdk.DeviceSDK;
+
+
 DeviceSDK.getInstance().execute(this);
 ```
 ]]]
@@ -205,27 +232,3 @@ Finally, send the information in the `device` field when creating the `card_toke
       }
 }
 ```
-
-## Detail all information about the payment
-
-To optimize payment security validation and improve approvals, it is important to **submit as much buyer and item data as possible**.
-You can check all the available attributes when creating a payment by using the [Create payment](/developers/en/reference/payments/_payments/post) method. Pay special attention to the attributes present in `adicional_inf`, such as:
- * Buyer’s data,
- * Product data,
- * Shipping data.
-
-There are also some **extra fields** that can be sent depending on the **branch of activities or industry of your store**. You can find details of every branch and the buyer and shipping data that we recommend to include for each of them [here](/developers/en/docs/checkout-api/additional-content/industry-data).
-
-## Improve the User Experience
-
-Often, the buyer can make mistakes when filling in their details at checkout. That's why it's worth reviewing every step, interaction, and even the interface design, to ensure everything is as clear as it should be. 
-
-In case you wish to **create your front-end from scratch**, you can find some advice on how to do so in an efficient way [here](/developers/en/docs/checkout-api/best-practices/ux-best-practices/ux-for-checkouts/introduction). If a payment is rejected, it is also important to explain to your customers why and what they can do to fix it. By doing so, your clients would have all the information they need to pay without any further problems. You can find some **recommendations on how to inform the main rejection reasons** [here](/developers/en/docs/checkout-api/response-handling/collection-results).
-
-In case you wish to guarantee an optimized interface, you can use the **visual components of [Checkout Bricks](/developers/en/docs/checkout-bricks/landing)**, and also use a **predefined visual component** with the best messages with [Status Screen Brick](/developers/en/docs/checkout-bricks/status-screen-brick/introduction).
-
-> WARNING
-> 
-> Important
->
-> We recommend assessing your [integration’s quality](/developers/en/docs/checkout-api/additional-content/integration-quality) before going to production to check if you are meeting the Mercado Pago quality and security standards that would help you obtain a good payment approval rate.

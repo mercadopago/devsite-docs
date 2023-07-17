@@ -32,28 +32,28 @@ future_product_avaible:
  - card_title: Card Payment Brick
  - card_description: Offer credit and debit card payments.
  - card_link: /developers/en/docs/checkout-bricks/card-payment-brick/introduction
- - card_linkDescription: Learn more
+ - card_linkDescription: Learn more and test Brick's visual experience
  - card_pillText: AVAILABLE
  - card_avaible: true
  - card_icon: Pay
  - card_title: Payment Brick
  - card_description: Offer different payment methods from which your customers can choose, with the ability to save card details for future purchases.
  - card_link: /developers/en/docs/checkout-bricks/payment-brick/introduction
- - card_linkDescription: Learn more
+ - card_linkDescription: Learn more and test Brick's visual experience
  - card_pillText: AVAILABLE
   - card_avaible: true
  - card_icon: Loading
  - card_title: Status Screen Brick
  - card_description: Inform your customers of the results of the purchase process, after making the payment. 
  - card_link: /developers/en/docs/checkout-bricks/status-screen-brick/introduction
- - card_linkDescription: Learn more
+ - card_linkDescription: Learn more and test Brick's visual experience
  - card_pillText: AVAILABLE
  - card_avaible: true
  - card_icon: Wallet
  - card_title: Wallet Brick
  - card_description:  Link Mercado Pago Wallet and allow logged payments.
  - card_link: /developers/en/docs/checkout-bricks/wallet-brick/introduction
- - card_linkDescription: Learn more
+ - card_linkDescription: Learn more and test Brick's visual experience
  - card_pillText: AVAILABLE
  - card_avaible: false
  - card_icon: User
