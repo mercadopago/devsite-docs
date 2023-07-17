@@ -32,9 +32,7 @@ future_product_avaible:
  - card_title: Card Payment Brick
  - card_description: Ofereça pagamentos com cartão de crédito e débito.
  - card_link: /developers/pt/docs/checkout-bricks/card-payment-brick/introduction
- - card_linkDescription: Saiba mais
- - card_link: /live-demo/card-payment-brick
- - card_linkDescription: Teste a experiência visual do Brick
+ - card_linkDescription: Saiba mais e teste a experiência visual do Brick
  - card_pillText: DISPONÍVEL
  - card_avaible: true
  - card_icon: Pay
@@ -46,17 +44,14 @@ future_product_avaible:
  - card_avaible: true
  - card_icon: Loading
  - card_title: Status Screen Brick
- - card_description: Informe os clientes dos resultados do processo de compra após efetuar o pagamento. 
+ - card_description: Informe os clientes dos resultados do processo de compra após efetuar o pagamento. Antes de integrar este Brick, teste a sua experiência visual!
  - card_link: /developers/pt/docs/checkout-bricks/status-screen-brick/introduction
  - card_linkDescription: Saiba mais
-  - card_description: Integre este Brick e teste a sua experiência visual 
- - card_link: /live-demo/status-screen-brick
- - card_linkDescription: Teste aqui!
  - card_pillText: DISPONÍVEL
  - card_avaible: true
  - card_icon: Wallet
  - card_title: Wallet Brick
- - card_description: Vincule a conta Mercado Pago e permita pagamentos registrados. <br><br> Antes de integrar este Brick você poderá testar a sua experiência visual!
+ - card_description: Vincule a conta Mercado Pago e permita pagamentos registrados.Antes de integrar este Brick, teste a sua experiência visual!
  - card_link: /developers/pt/docs/checkout-bricks/wallet-brick/introduction
  - card_linkDescription: Saiba mais
  - card_pillText: DISPONÍVEL
