@@ -347,4 +347,28 @@ Luego de devolver la notificación y confirmar su recepción, obtendrás la info
 | point_integration_wh| - | [ver documentación](/developers/es/docs/mp-point/integration-configuration/integrate-with-pdv/notifications) |
 | delivery | - | [ver documentación](/developers/es/reference/mp_delivery/_proximity-integration_shipments_shipment_id_accept/put)
 
-Con esta información podrás realizar las actualizaciones necesarias a tu plataforma, como actualizar un pago aprobado.
+
+En el caso de las alertas de fraude, específicamente, no entregues el pedido, y utiliza la [API de Cancelaciones](/developers/es/reference/chargebacks/_payments_payment_id/put) para realizar su cancelación.
+
+En la notificación recibirás un `JSON` con la siguiente información que contiene el payment id para realizar la cancelación.
+
+
+[[[
+```Json
+
+
+ "description": ".....",
+ "merchant_order": 4945357007,
+ "payment_id": 23064274473
+
+
+```
+]]]
+
+> NOTE
+>
+> Importante
+>
+> También puedes obtener más información sobre la orden utilizando la API [Obtener orden](/developers/es/reference/merchant_orders/_merchant_orders_id/get).
+
+Con esta información, podrás realizar las actualizaciones necesarias en tu plataforma, como actualizar un pago aprobado.

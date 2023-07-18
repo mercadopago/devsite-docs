@@ -336,6 +336,7 @@ This indicates that payment **999999999** was created for user **44444** in prod
 
 [TXTSNIPPET][/guides/snippets/test-integration/notification-response]
 
+
 After returning the notification and confirming its receipt, you will obtain the full information of the notified resource by accessing the corresponding API endpoint:
 
 | Type | URL | Documentation |
@@ -346,5 +347,28 @@ After returning the notification and confirming its receipt, you will obtain the
 | subscription_authorized_payment | `https://api.mercadopago.com/authorized_payments` | [check documentation](/developers/en/reference/subscriptions/_authorized_payments_id/get) |
 | point_integration_wh | - | [check documentation](/developers/en/docs/mp-point/integration-configuration/integrate-with-pdv/notifications) |
 | delivery | - | [check documentation](/developers/en/reference/mp_delivery/_proximity-integration_shipments_shipment_id_accept/put)
+
+Also, specifically in fraud alerts, you must not deliver the order and you will need to do the cancellation through the [cancellations API](/developers/en/reference/chargebacks/_payments_payment_id/put).
+
+In the notification, you will receive a `JSON` with the following information containing the payment id to cancel.
+
+[[[
+```Json
+
+
+ "description": ".....",
+ "merchant_order": 4945357007,
+ "payment_id": 23064274473
+
+
+```
+]]]
+
+
+> NOTE
+>
+> Important
+>
+> You can also get more order information using the [Get order](/developers/en/reference/merchant_orders/_merchant_orders_id/get) API.
 
 With this information, you will be able to carry out the necessary updates to your platform, such as updating an approved payment.
