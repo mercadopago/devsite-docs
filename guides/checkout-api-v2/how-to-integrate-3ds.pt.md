@@ -342,7 +342,7 @@ Veja abaixo a tabela com os possíveis status e suas respectivas descrições.
 |------------|-------------------------------|-------------------------------------------------------------------|
 | "approved" | "accredited"                  | Transação aprovada sem autenticação.                               |
 | "rejected" | ""                            | Transação rejeitada sem autenticação.                              |
-| "pending"  | "pending_challenge"           | Transação aprovada sem autenticação. Para conferir os motivos, consulte a lista padrão de [status detail](https://mercadopago.com.br/developers/pt/docs/checkout-api/response-handling/collection-results).       |
+| "pending"  | "pending_challenge"           | Transação aprovada sem autenticação. Para conferir os motivos, consulte a [lista padrão de status detail](https://mercadopago.com.br/developers/pt/docs/checkout-api/response-handling/collection-results).       |
 | "rejected" | "cc_rejected_3ds_challenge"   | Transação rejeitada devido a falha no *challenge*.                  |
 
 ## Teste de integração
