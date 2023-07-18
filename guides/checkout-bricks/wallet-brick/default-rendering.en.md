@@ -162,7 +162,7 @@ The result of rendering the Brick should blook like the image below, presenting 
 
 </center>
 
-> If you want to change the text and the standard visual of the Brick, check the sections [Change texts](/developers/en/docs/checkout-bricks/wallet-brick/additional-customization/change-texts) and [Change appearance](/developers/en/docs/checkout-bricks/wallet-brick/additional-customization/change-appearance), respectively.
+> If you want to change the text and the standard visual of the Brick, check the sections [Change texts](/developers/en/docs/checkout-bricks/wallet-brick/additional-customization/change-texts) and [Change appearance,](/developers/en/docs/checkout-bricks/wallet-brick/additional-customization/change-appearance) respectively.
 
 ## Enable payment with Mercado Pago
 

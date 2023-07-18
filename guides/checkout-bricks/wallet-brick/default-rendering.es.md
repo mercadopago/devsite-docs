@@ -162,7 +162,7 @@ El resultado de renderizar el Brick debe ser como se muestra en la imagen a cont
 
 </center>
 
-> Si desea cambiar el texto y el aspecto predeterminado del Brick, consulte las secciones de [Cambiar textos](/developers/es/docs/checkout-bricks/wallet-brick/additional-customization/change-texts) y [Cambiar de aspecto](/developers/es/docs/checkout-bricks/wallet-brick/additional-customization/change-appearance), respectivamente.
+> Si desea cambiar el texto y el aspecto predeterminado del Brick, consulte las secciones de [Cambiar textos](/developers/es/docs/checkout-bricks/wallet-brick/additional-customization/change-texts) y [Cambiar de aspecto,](/developers/es/docs/checkout-bricks/wallet-brick/additional-customization/change-appearance) respectivamente.
 
 ## Habilitar pago con Mercado pago
 
