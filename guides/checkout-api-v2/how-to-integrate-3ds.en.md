@@ -344,25 +344,13 @@ See below the table with the possible statuses and their respective descriptions
 
 | Status     | Status_detail                 | Description                                                      |
 |------------|-------------------------------|------------------------------------------------------------------|
-| "approved" | ""                            | Transaction approved without authentication.                     |
+| "approved" | "accredited"                  | Transaction approved without authentication.                     |
 | "rejected" | ""                            | Transaction rejected without authentication.                     |
-| "pending"  | "pending_challenge"           | Transaction pending authentication or *challenge* timeout.       |
+| "pending"  | "pending_challenge"           | Transaction approved without authentication. To check the reasons, please refer to the standard list of [status details](https://mercadopago.com.br/developers/en/docs/checkout-api/response-handling/collection-results).
+       |
 | "rejected" | "cc_rejected_3ds_challenge"   | Transaction rejected due to *challenge* failure.                 |
 
 ## Integration test
-
-Before going into production, it is possible to test the integration to ensure that the 3DS flow works correctly and that payments are processed without errors. This way, it avoids buyers from abandoning the transaction because they can't complete it.
-
-To make a test purchase, you will need to have the test credentials of your production user and a test credit card with 3DS enabled.
-
-
-> WARNING
->
-> Important
->
-> To perform the tests, we recommend that you contact your Mercado Pago consultant.
-
-## Testing in sandbox environment
 
 To facilitate the validation of 3DS payments, we have created a sandbox testing environment. This environment returns fictional results that are only used for simulating and validating the implementation.
 

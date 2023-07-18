@@ -341,25 +341,13 @@ A continuación se muestra una tabla con los posibles status y sus descripciones
 
 | Status    | Status_detail               | Descripción                                                      |
 |-----------|-----------------------------|------------------------------------------------------------------|
-| "approved" | ""                          | Transacción aprobada sin autenticación.                          |
+| "approved" | "accredited"                | Transacción aprobada sin autenticación.                          |
 | "rejected" | ""                          | Transacción denegada sin autenticación.                          |
-| "pending"  | "pending_challenge"         | Transacción pendiente de autenticación o *timeout* del *challenge*. |
+| "pending"  | "pending_challenge"         | Transacción aprobada sin autenticación. Para verificar los motivos, consulta la lista estándar de [detalles de estado](https://mercadopago.com.br/developers/es/docs/checkout-api/response-handling/collection-results).
+ |
 | "rejected" | "cc_rejected_3ds_challenge" | Transacción denegada debido a falla en el *challenge*.            |
 
 ## Prueba de integración
-
-Antes de pasar a producción, es posible probar la integración para asegurarse de que el flujo de 3DS funcione correctamente y que los pagos se procesan sin errores. De esta manera, evitas que los compradores abandonen la transacción porque no pueden completar la compra.
-
-Para realizar una compra de prueba, además de las credenciales de prueba de tu usuario de producción, es necesario utilizar una tarjeta de crédito de prueba con 3DS habilitado. 
-
-
-> WARNING
->
-> Importante
->
-> Para la realización de pruebas, recomendamos que te pongas en contacto con tu consultor de Mercado Pago.
-
-## Pruebas en entorno sandbox
 
 Para facilitar la validación de pagos con 3DS, hemos creado un entorno de pruebas tipo *sandbox*. Este entorno devuelve resultados ficticios que sólo se utilizan para simular y validar la implementación.
 
