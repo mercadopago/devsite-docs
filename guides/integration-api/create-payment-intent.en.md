@@ -13,68 +13,48 @@ curl --location --request GET 'https://api.mercadopago.com/point/integration-api
 
 You will receive a response like this:
 
-----[mlb, mla]----
 
 ```json
 {
-   "devices": [
-       {
-           "id": "INGENICO_MOVE2500__ING-ARG-1123345670",
-           "operating_mode": "STANDALONE"
-       },
-       {
-           "id": "INGENICO_MOVE2500__ING-ARG-0987654P",
-           "operating_mode": "STANDALONE"
-       },
-       {
-           "id": "INGENICO_MOVE2500__ING-5467853",
-           "operating_mode": "PDV"
-       },
-       {
-           "id": "INGENICO_MOVE2500__ING-ARG-1233456",
-           "operating_mode": "STANDALONE"
-       }
-   ],
-   "paging": {
-       "total": 4,
-       "limit": 50,
-       "offset": 0
-   }
+    "devices": [
+        {
+            "id": "INGENICO_MOVE2500__ING-ARG-1123345670",
+            "pos_id": 47792476,
+            "store_id": "47792478",
+            "external_pos_id": "SUC0101POS",
+            "operating_mode": "PDV"
+        },
+        {
+            "id": "INGENICO_MOVE2500__ING-ARG-0987654P",
+            "pos_id": 47792476,
+            "store_id": "47792478",
+            "external_pos_id": "SUC0101POS",
+            "operating_mode": "STANDALONE"
+        },
+        {
+            "id": "INGENICO_MOVE2500__ING-5467853",
+            "operating_mode": "PDV",
+            "pos_id": 47792476,
+            "store_id": "47792478",
+            "external_pos_id": "SUC0101POS",
+        },
+        {
+            "id": "INGENICO_MOVE2500__ING-ARG-1233456",
+            "pos_id": 47792476,
+            "store_id": "47792478",
+            "external_pos_id": "SUC0101POS",
+            "operating_mode": "STANDALONE"
+        }
+    ],
+    "paging": {
+        "total": 4,
+        "limit": 50,
+        "offset": 0
+    }
 }
-```
-------------
 
-----[mlm]----
-
-```json
-{
-   "devices": [
-       {
-           "id": "PAX_A910__SMARTPOS1234567890",
-           "operating_mode": "STANDALONE"
-       },
-       {
-           "id": "PAX_A910__SMARTPOS12345678901",
-           "operating_mode": "STANDALONE"
-       },
-       {
-           "id": "INGENICO_MOVE2500__ING-5467853",
-           "operating_mode": "PDV"
-       },
-       {
-           "id": "PAX_A910__SMARTPOS123456789042",
-           "operating_mode": "STANDALONE"
-       }
-   ],
-   "paging": {
-       "total": 4,
-       "limit": 50,
-       "offset": 0
-   }
-}
 ```
 
-------------
 
 ## Create the payment intent
 
