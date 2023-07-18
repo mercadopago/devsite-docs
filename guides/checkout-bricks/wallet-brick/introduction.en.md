@@ -15,4 +15,15 @@ live_demo_code_action:
  - linkName: Demo
  - buttonDescription: Build your Wallet Brick
 ---
-<br>
+
+## Layout 
+
+The Wallet Brick layout is based on the best UX practices, so that it is possible to offer the best shopping experience without having to worry about design details.
+
+<center>
+
+![wallet-brick-render](checkout-bricks/wallet-brick-render-en.png)
+
+</center>
+
+> If you want to change the text and the standard visual of the Brick, check the sections [Change texts](/developers/en/docs/checkout-bricks/wallet-brick/additional-customization/change-texts) and [Change appearance,](/developers/en/docs/checkout-bricks/wallet-brick/additional-customization/change-appearance) respectively.
