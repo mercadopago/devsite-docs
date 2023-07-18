@@ -10,18 +10,18 @@ Evita siempre usar el universal masculino. Para ello, elige opciones dentro de l
 
 - **Privilegiar el uso de pronombres personales en segunda persona**, por sobre expresiones o sustantivos con marcación de género. <br>
 
-✅ Si estás desarrollando esta feature... <br>
-❌ Si eres desarrollador...
+✅ *Si estás desarrollando esta feature...* <br>
+❌ *Si eres desarrollador...*
 
 - **Paráfrasis**: se trata de decir lo mismo, pero parafraseando la idea original. <br>
 
-✅ **Las personas que desarrollan** - Quienes realicen compras/quienes accedan a la tienda <br>
-❌ **Los desarrolladores**  - Los clientes
+✅ **Las personas que desarrollan** *- Quienes realicen compras/quienes accedan a la tienda* <br>
+❌ **Los desarrolladores**  *- Los clientes*
 
 - **Usar sustantivos colectivos sin marca de género**. <br>
 
-✅ El equipo de Mercado Pago. <br>
-❌ Los integrantes de Mercado Pago.
+✅ *El equipo de Mercado Pago.* <br>
+❌ *Los integrantes de Mercado Pago.*
 
 > WARNING
 >
