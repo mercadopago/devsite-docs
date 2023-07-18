@@ -69,7 +69,6 @@ X-meli-session-id: device_id
 
 Se você possui uma aplicação móvel nativa, pode capturar a informação do dispositivo com nosso SDK e enviar no momento de criar o token. Siga estas etapas:
 
-
 ### 1. Adicione a dependência
 
 [[[
