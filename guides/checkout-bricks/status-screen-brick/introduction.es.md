@@ -21,6 +21,6 @@ El layout de Status Screen Brick se basa en las mejores prácticas UX para que s
 
 <center>
 
-![status-screen-Brick-layout](checkout-bricks/status-screen-brick-layout-es.jpg)
+![status-screen-Brick-layout](checkout-bricks/status-screen-brick-layout-es.gif)
 
 </center>
