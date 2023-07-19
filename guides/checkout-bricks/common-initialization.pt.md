@@ -44,28 +44,28 @@ future_product_avaible:
  - card_avaible: true
  - card_icon: Pay
  - card_title: Payment Brick
- - card_description: Ofereça diferentes métodos de pagamento para os clientes escolherem, com a capacidade de salvar detalhes do cartão para compras futuras. Integrate this Brick and test your experience.
+ - card_description: Ofereça diferentes métodos de pagamento para os clientes escolherem, com a capacidade de salvar detalhes do cartão para compras futuras. Teste a demonstração do Brick antes de integrá-lo.
  - card_link: /developers/pt/docs/checkout-bricks/payment-brick/introduction
  - card_linkDescription: Saiba mais
  - card_pillText: DISPONÍVEL
  - card_avaible: true
  - card_icon: Wallet
  - card_title: Wallet Brick
- - card_description: Vincule a conta Mercado Pago e permita pagamentos registrados. Integrate this Brick and test your experience.
+ - card_description: Vincule a conta Mercado Pago e permita pagamentos registrados. Teste a demonstração do Brick antes de integrá-lo.
  - card_link: /developers/pt/docs/checkout-bricks/wallet-brick/introduction
  - card_linkDescription: Saiba mais
  - card_pillText: DISPONÍVEL
  - card_avaible: true
  - card_icon: Card
  - card_title: Card Payment Brick
- - card_description: Ofereça pagamentos com cartão de crédito e débito. Integrate this Brick and test your experience.
+ - card_description: Ofereça pagamentos com cartão de crédito e débito. Teste a demonstração do Brick antes de integrá-lo.
  - card_link: /developers/pt/docs/checkout-bricks/card-payment-brick/introduction
  - card_linkDescription: Saiba mais
  - card_pillText: DISPONÍVEL
  - card_avaible: true
  - card_icon: Loading
  - card_title: Status Screen Brick
- - card_description: Informe os clientes dos resultados do processo de compra após efetuar o pagamento. Integrate this Brick and test your experience.
+ - card_description: Informe os clientes dos resultados do processo de compra após efetuar o pagamento. Teste a demonstração do Brick antes de integrá-lo.
  - card_link: /developers/pt/docs/checkout-bricks/status-screen-brick/introduction
  - card_linkDescription: Saiba mais
  - card_pillText: DISPONÍVEL
