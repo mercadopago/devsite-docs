@@ -30,7 +30,7 @@ future_product_avaible:
  - card_avaible: true
  - card_icon: Card
  - card_title: Card Payment Brick
- - card_description: Ofereça pagamentos com cartão de crédito e débito. Teste a demonstração do Brick antes de integrá-lo.
+ - card_description: Ofereça pagamentos com cartão de crédito e débito. Teste a [demonstração](/developers/pt/docs/checkout-bricks/payment-brick/introduction) do Brick antes de integrá-lo.
  - card_link: /developers/pt/docs/checkout-bricks/card-payment-brick/introduction
  - card_linkDescription: Saiba mais
  - card_pillText: DISPONÍVEL
