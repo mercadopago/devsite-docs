@@ -20,6 +20,6 @@ The Status Screen Brick layout is based on the best UX practices, so that it is 
 
 <center>
 
-![status-screen-Brick](checkout-bricks/status-screen-brick-en.jpg)
+![status-screen-Brick-layout](checkout-bricks/status-screen-brick-layout-en.jpg)
 
 </center>

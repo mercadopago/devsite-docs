@@ -22,7 +22,7 @@ O layout do Wallet Brick foi construído com base nas melhores práticas de UX p
 
 <center>
 
-![wallet-brick-render](checkout-bricks/wallet-brick-render-pt.png)
+![wallet-brick-theme](checkout-bricks/wallet-brick-theme-pt.png)
 
 </center>
 

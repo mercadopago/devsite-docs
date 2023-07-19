@@ -20,6 +20,6 @@ O layout do Status Screen Brick foi construído com base nas melhores práticas 
 
 <center>
 
-![status-screen-Brick](checkout-bricks/status-screen-brick-pt.jpg)
+![status-screen-Brick-layout](checkout-bricks/status-screen-brick-layout-pt.jpg)
 
 </center>
