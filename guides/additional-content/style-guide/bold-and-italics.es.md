@@ -15,7 +15,7 @@ En tecnología se utilizan muchos términos en inglés como parte del estándar.
 
 #### Recomendación
 
-No utilices más de un modo de resaltar o llamar la atención sobre un fragmento de texto. Si utilizas negritas, no uses cursivas o comillas. Excepcionalmente, puedes combinar negritas y cursivas cuando el nombre de una función o botón no son traducibles.
+No utilices más de un modo de resaltar o llamar la atención sobre un fragmento de texto. Si utilizas negritas, no uses cursivas o comillas. Excepcionalmente, puedes combinar negritas y cursivas cuando el nombre de una función o botón no sean traducibles.
 
 > WARNING
 >

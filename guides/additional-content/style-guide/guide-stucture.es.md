@@ -1,6 +1,6 @@
 # Estructura de las guías
 
-Nuestras guías independientes de contenio 
+Nuestras guías independientes se estructuran de acuerdo a las siguientes secciones:
 
 ## Landing
 
@@ -30,8 +30,8 @@ Si hay problemas comunes que los desarrolladores pueden encontrar y que las part
 
 ## Preguntas frecuentes
 
-La mayoría de las documentaciones no requieren esta sección, pero sus partes interesadas pueden solicitarla. Si este es el caso, asegúrate de que las preguntas frecuentes solo contengan información que no se pueda incluir en ninguna otra sección de la documentación. De lo contrario, simplemente inclúyelo en la sección correspondiente. Deben estar separadas del flujo normal de integración.
+La mayoría de las documentaciones no requieren esta sección, pero sus partes interesadas pueden solicitarla. Si este es el caso, asegúrate de que las preguntas frecuentes solo contengan información que no se pueda incluir en ninguna otra sección de la documentación. De lo contrario, simplemente inclúyela en la sección correspondiente. Deben estar separadas del flujo normal de integración.
 
 ## Contenido adicional
 
-Se puede solicitar que se incluya otra información que, si bien es importante, no forma parte del flujo de integración. Puedes agregar esta información, pero mantenla separada con una línea, del flujo de integración, para evitar confundir a tus lectores. El nombre "contenido adicional" se entiende como un ejemplo. Deberás pensar en un nombre apropiado para cada sección que agregues como otra información.
+Se puede solicitar que se incluya otra información que, si bien es importante, no forma parte del flujo de integración. Puedes agregar esta información, pero mantenla separada con una línea del flujo de integración, para evitar confundir a tus lectores. El nombre "contenido adicional" se entiende como un ejemplo. Deberás pensar en un nombre apropiado para cada sección que agregues como otra información.

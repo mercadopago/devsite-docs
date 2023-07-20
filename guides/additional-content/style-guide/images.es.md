@@ -13,5 +13,5 @@ A excepción de las Landings, que tienen imágenes ilustrativas, las imágenes e
 * Si la imagen es meramente decorativa, no es necesario incluir el texto alternativo.
 * En los botones, la descripción debe referirse a la acción que se ejecutará.
 * No utilices imágenes de tablas, ya que los lectores de pantalla no pueden escanear el contenido.
-* No uses imágenes que contengan información sensible y, de ser posible, tomarlas desde usuarios de test.
+* No uses imágenes que contengan información sensible y, de ser posible, tómalas desde usuarios de test.
 
