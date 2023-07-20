@@ -334,9 +334,6 @@ Veja abaixo a tabela com os possíveis status e suas respectivas descrições.
 
 Para que seja possível validar pagamentos com 3DS, disponibilizamos um ambiente de testes do tipo *sandbox* que retorna resultados falsos apenas para simulação e validação da implementação.
 
-> NOTE
-Para realizar uma compra de teste, você precisará ter as credenciais de teste do seu usuário de produção e um cartão de crédito de teste com 3DS habilitado.
-
 > WARNING
 >
 > Lembre-se de utilizar as credenciais de teste da sua aplicação. 

@@ -334,9 +334,6 @@ A continuación se muestra una tabla con los posibles status y sus descripciones
 
 Para facilitar la validación de pagos con 3DS, hemos creado un entorno de pruebas tipo *sandbox*. Este entorno devuelve resultados ficticios que sólo se utilizan para simular y validar la implementación.
 
-> NOTE
-Para realizar una compra de prueba, necesitarás tener las credenciales de prueba de tu usuario de producción y una tarjeta de crédito de prueba habilitada para 3DS.
-
 > WARNING
 >
 > Recuerda utilizar las credenciales de prueba de tu aplicación. 

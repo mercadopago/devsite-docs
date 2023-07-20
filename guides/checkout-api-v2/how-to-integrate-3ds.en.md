@@ -336,9 +336,6 @@ See below the table with the possible statuses and their respective descriptions
 
 To facilitate the validation of 3DS payments, we have created a sandbox testing environment. This environment returns fictional results that are only used for simulating and validating the implementation.
 
-> NOTE
-To make a test purchase, you will need to have the test credentials of your production user and a test credit card with 3DS enabled.
-
 > WARNING
 >
 > Remember to use the test credentials for your application.
