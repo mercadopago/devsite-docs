@@ -1,6 +1,6 @@
 # Como alterar a posicão dos provedores de pagamento
 
-Saiba como alterar a ordem de exibição dos provadores de pagamentos integrados em sua loja Shopify.
+Saiba como utilizar o app **MP Reorder** para alterar a ordem de exibição dos provadores de pagamentos integrados em sua loja Shopify.
 
 > NOTE
 >
