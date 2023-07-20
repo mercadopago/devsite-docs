@@ -78,7 +78,7 @@ curl --location --request POST 'https://api.mercadopago.com/point/integration-ap
 
 | Field | Description |
 |---|---|
-| `amount` | Total amount of the payment intent. <br>**Minimum amount allowed**: 500 (POS devices), 100 (SMART devices). <br>**Maximum amount allowed**: 400000000 (both devices). <br>**Important**: this field does not allow decimal points. Therefore, if you want to generate a payment intent, you must consider the two decimals of the value in its total. For example: to generate payment order value "15.00" you must enter "1500". |
+| `amount` | Total amount of the payment intent. <br>**Minimum amount allowed**: 500 (POS and SMART devices). <br>**Maximum amount allowed**: 400000000 (both devices). <br>**Important**: this field does not allow decimal points. Therefore, if you want to generate a payment intent, you must consider the two decimals of the value in its total. For example: to generate payment order value "15.00" you must enter "1500". |
 | `external_reference` | Field exclusively used by the integrator to include references to their system. |
 | `print_on_terminal` | Field that determines if the device prints the payment receipt. |
 | `ticket_number` | Ticket number of the payment intent. |
