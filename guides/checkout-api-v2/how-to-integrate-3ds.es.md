@@ -260,7 +260,7 @@ Cuando el challenge es finalizado, el status del pago será actualizado. Será `
 >
 > Importante
 >
-> Cuando se inicia el proceso de challenge, el usuario tiene 5 minutos, aproximadamente, para realizarlo. En caso de que no sea hecho, el banco recusará la transacción y Mercado Pago considerará el pago cancelado. Si el usuario nunca realiza el challenge, el pago quedará como `pending_challenge`.
+> Cuando se inicia el proceso de challenge, el usuario tiene 5 minutos, aproximadamente, para realizarlo. En caso de que no sea hecho, el banco recusará la transacción y Mercado Pago considerará el pago cancelado. Mientras el usuario no complete el _Challenge_, el pago quedará como `pending_challenge`.
 
 Mira la sección a continuación para más detalles sobre cómo consultar el status de cada transacción.
 
@@ -333,7 +333,7 @@ Después de seguir estos pasos, tu integración está lista para autenticar tran
 
 ## Posibles status del pago 
 
-Una transacción con 3DS puede devolver diferentes status según el tipo de integración realizada (con o sin challenge). En un pago sin _Challenge_, el estado de la transacción será directamente "approved" o "rejected".
+Una transacción con 3DS puede devolver diferentes status según el tipo de autenticación realizada (con o sin challenge). En un pago sin _Challenge_, el estado de la transacción será directamente "approved" o "rejected".
 
 En un pago con _Challenge_, la transacción estará en status `pending` y se iniciará el proceso de autenticación con el banco. Solo después de esta etapa se mostrará el status final.
 
@@ -342,8 +342,8 @@ A continuación se muestra una tabla con los posibles status y sus descripciones
 | Status    | Status_detail               | Descripción                                                      |
 |-----------|-----------------------------|------------------------------------------------------------------|
 | "approved" | "accredited"                | Transacción aprobada sin autenticación.                          |
-| "rejected" | ""                          | Transacción denegada sin autenticación.                          |
-| "pending"  | "pending_challenge"         | Transacción aprobada sin autenticación. Para verificar los motivos, consulta la [lista estándar de status detail](https://mercadopago.com.br/developers/es/docs/checkout-api/response-handling/collection-results). |
+| "rejected" | -                          | Transacción denegada sin autenticación. Para verificar los motivos, consulta la [lista estándar de status detail](https://mercadopago.com.br/developers/es/docs/checkout-api/response-handling/collection-results).                          |
+| "pending"  | "pending_challenge"         | Transacción pendiente de autenticación o _timeout_ del challenge. |
 | "rejected" | "cc_rejected_3ds_challenge" | Transacción denegada debido a falla en el *challenge*.            |
 
 ## Prueba de integración
@@ -445,9 +445,9 @@ var payment_data = {
 
 
 mercadopago.payment.create(payment).then(function (data) {
-console.log(data.response);
+  console.log(data.response);
 }).catch(function (error) {
-console.log(error);
+  console.log(error);
 });
 ```
 ```java

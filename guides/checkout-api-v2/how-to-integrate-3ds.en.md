@@ -263,7 +263,7 @@ When the Challenge is completed, the payment status will be updated to `approved
 >
 > Important
 >
-> When the Challenge is initiated, the user has about 5 minutes to complete it. If it is not completed, the bank will decline the transaction and Mercado Pago will consider the payment cancelled. If the user never completes the Challenge, the payment will remain as `pending_challenge`.
+> When the Challenge is initiated, the user has about 5 minutes to complete it. If it is not completed, the bank will decline the transaction and Mercado Pago will consider the payment cancelled. While the user doesn't complete the Challenge, the payment will remain as `pending_challenge`.
 
 See the section below for more details on how to check the status of each transaction.
 
@@ -336,7 +336,7 @@ After following these steps, your integration is ready to authenticate transacti
 
 ## Possible payment statuses
 
-A transaction with 3DS can return different statuses depending on the type of integration performed (with or without Challenge). In a payment **without Challenge**, the transaction status will be directly `approved` or `rejected`.
+A transaction with 3DS can return different statuses depending on the type of authentication performed (with or without Challenge). In a payment **without Challenge**, the transaction status will be directly `approved` or `rejected`.
 
 In a payment **with Challenge**, the transaction will have a `pending` status and the authentication process with the bank will be initiated. Only after this step, the final status will be displayed.
 
@@ -345,8 +345,8 @@ See below the table with the possible statuses and their respective descriptions
 | Status     | Status_detail                 | Description                                                      |
 |------------|-------------------------------|------------------------------------------------------------------|
 | "approved" | "accredited"                  | Transaction approved without authentication.                     |
-| "rejected" | ""                            | Transaction rejected without authentication.                     |
-| "pending"  | "pending_challenge"           | Transaction approved without authentication. To check the reasons, please refer to the standard [list of status details](https://mercadopago.com.br/developers/en/docs/checkout-api/response-handling/collection-results). |
+| "rejected" | -                            | Transaction rejected without authentication. To check the reasons, please refer to the standard [list of status details](https://mercadopago.com.br/developers/en/docs/checkout-api/response-handling/collection-results).                     |
+| "pending"  | "pending_challenge"           | Transaction pending authentication or challenge timeout. |
 | "rejected" | "cc_rejected_3ds_challenge"   | Transaction rejected due to *challenge* failure.                 |
 
 ## Integration test
@@ -447,9 +447,9 @@ var payment_data = {
 
 
 mercadopago.payment.create(payment).then(function (data) {
-console.log(data.response);
+  console.log(data.response);
 }).catch(function (error) {
-console.log(error);
+  console.log(error);
 });
 ```
 ```java
