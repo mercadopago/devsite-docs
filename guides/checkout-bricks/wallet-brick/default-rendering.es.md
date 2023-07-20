@@ -162,11 +162,11 @@ El resultado de renderizar el Brick debe ser como se muestra en la imagen a cont
 
 </center>
 
-> Si desea cambiar el texto y el aspecto predeterminado del Brick, consulte las secciones de [Cambiar textos](/developers/es/docs/checkout-bricks/wallet-brick/additional-customization/change-texts) y [Cambiar de aspecto](/developers/es/docs/checkout-bricks/wallet-brick/additional-customization/change-appearance), respectivamente.
+> Si desea cambiar el texto y el aspecto predeterminado del Brick, consulte las secciones de [Cambiar textos](/developers/es/docs/checkout-bricks/wallet-brick/additional-customization/change-texts) y [Cambiar de aspecto,](/developers/es/docs/checkout-bricks/wallet-brick/additional-customization/change-appearance) respectivamente.
 
 ## Habilitar pago con Mercado pago
 
-Para utilizar un método de pago (paymentMethods) del tipo "mercadoPago", se debe enviar una preferencia durante la inicialización del Brick, reemplazando el valor <PREFERENCE_ID> por el ID de la preferencia creada.
+Para utilizar un método de pago (`paymentMethods`) del tipo "mercadoPago", se debe enviar una preferencia durante la inicialización del Brick, reemplazando el valor `&ltPREFERENCE_ID&gt` por el ID de la preferencia creada.
 
 Para crear una preferencia en su backend, agrega el [SDK de Mercado Pago](/developers/es/docs/sdks-library/landing) y las [credenciales](/developers/es/guides/additional-content/your-integrations/credentials) necesarias a tu proyecto para habilitar el uso de preferencias:
 

@@ -1,8 +1,6 @@
-# Como integrar 3DS com Checkout Transparente?
+# Como integrar 3DS com Checkout Transparente
 
-3DS 2.0 é uma tecnologia que permite a autenticação de transações com cartão de crédito e débito em e-commerces, ou seja, permite validar que a pessoa que realiza a compra é realmente o titular do cartão ou tem acesso às contas do titular para concluir o pagamento.
-
-Uma transação autenticada tem vários benefícios, incluindo uma maior probabilidade de aprovação, evitando perdas por chargeback para o vendedor, menor risco de fraude para o comprador, entre outros.
+Nesta documentação você encontrará toda a informação necessária para realizar a integração com 3DS com Checkout Transparente. Para mais informações sobre como esse tipo de autenticação funciona, veja [3DS 2.0](/developers/pt/docs/checkout-api/how-tos/improve-payment-approval/3ds).
 
 > NOTE
 >
@@ -10,17 +8,15 @@ Uma transação autenticada tem vários benefícios, incluindo uma maior probabi
 >
 > Para realizar a integração com 3DS, é preciso atender a determinados requisitos. Antes de avançar para os próximos passos, revise a seção [Pré-requisitos](/developers/pt/docs/checkout-api/prerequisites) e certifique-se de que todos sejam cumpridos.
 
-Nesta documentação você encontrará toda a informação necessária para realizar a integração com 3DS.
-
-
 ## Integrar com 3DS
 
 A autenticação 3DS pode ser feita através de dois fluxos diferentes: **com e sem _Challenge_**, sendo estas etapas adicionais que o comprador deve cumprir para garantir sua identidade. A decisão de incluir ou não o _Challenge_ depende do emissor do cartão e do perfil de risco da transação que está sendo realizada.
 
+> Conheça também as integrações via [Checkout Bricks,](/developers/pt/docs/checkout-bricks/how-tos/integrate-3ds) uma forma de pagamento modular, segura e personalizável, que automatiza vários dos processos descritos a seguir.
+
 Para **transações de baixo risco**, as informações enviadas na finalização da compra são suficientes e as etapas adicionais do _Challenge_ **não são necessárias**. Porém, **para casos de alto risco de fraude**, o _Challenge_ é necessário para **verificar a identidade do comprador**, o que aumenta a aprovação das transações com cartão.
 
 Abaixo estão as etapas para realizar uma integração com 3DS.
-
 
 1. Utilize o Mercado Pago [SDK JS](/developers/pt/docs/sdks-library/client-side/mp-js-v2) no checkout para gerar o [token do cartão de crédito](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform).
 2. Em seguida, envie os **dados do checkout** junto com o **token do cartão** para o backend.
@@ -32,27 +28,27 @@ Abaixo estão as etapas para realizar uma integração com 3DS.
 ```curl
 
 curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
---header 'Authorization: ENV_ACCESS_TOKEN' \
+--header 'Authorization: <ENV_ACCESS_TOKEN>' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "payer": {
-        "email": "test_payer_12345@testuser.com"
+        "email": "<BUYER_EMAIL>"
     },
     "additional_info": {
         "items": [
             {
-                "quantity": 1,
-                "category_id": "MLA91058",
-                "title": "Clases De Payments",
-                "unit_price": 100
+                "quantity": <ITEM_QUANTITY>,
+                "category_id": <CATEGORY_ID>,
+                "title": <ITEM_TITLE>,
+                "unit_price": <TRANSACTION_AMOUNT>
             }
         ]
     },
-    "payment_method_id": "master",
+    "payment_method_id": <PAYMENT_METHOD_ID>,
     "marketplace": "NONE",
-    "installments": 1,
-    "transaction_amount": 100,
-    "description": "description",
+    "installments": <INSTALLLMENTS_NUMBER>,
+    "transaction_amount": <TRANSACTION_AMOUNT>,
+    "description": "<DESCRIPTION>",
     "token": "CARD_TOKEN",
     "three_d_secure_mode": "optional",
     "capture": true,
@@ -60,38 +56,38 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
 }'
 ```
 ```java
-MercadoPagoConfig.setAccessToken("ENV_ACCESS_TOKEN");
+MercadoPagoConfig.setAccessToken("<ENV_ACCESS_TOKEN>");
     PaymentClient client = new PaymentClient();
     PaymentCreateRequest createRequest =
         PaymentCreateRequest.builder()
-            .transactionAmount(new BigDecimal(100))
-            .token("CARD_TOKEN")
-            .description("description")
-            .installments(1)
-            .paymentMethodId("visa")
+            .transactionAmount(new BigDecimal(<TRANSACTION_AMOUNT>))
+            .token("<CARD_TOKEN>")
+            .description("<DESCRIPTION>")
+            .installments(<INSTALLLMENTS_NUMBER>)
+            .paymentMethodId("<PAYMENT_METHOD_ID>")
             .payer(
                PaymentPayerRequest.builder()
-                 .email("test_payer_12345@testuser.com")
+                 .email("<BUYER_EMAIL>")
                  .build()
             )
             .threeDSecureMode("optional")
             .build();
     client.create(createRequest);
 ```
-```dotnet
+```csharp
 using MercadoPago.Config;
 using MercadoPago.Client.Payment;
 using MercadoPago.Resource.Payment;
-MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
+MercadoPagoConfig.AccessToken = "<ENV_ACCESS_TOKEN>";
 var request = new PaymentCreateRequest
 {
-    TransactionAmount = 100,
-    Token = "CARD_TOKEN",
-    Description = "description",
-    Installments = 1,
+    TransactionAmount = <TRANSACTION_AMOUNT>,
+    Token = "<CARD_TOKEN>",
+    Description = "<DESCRIPTION>",
+    Installments = <INSTALLLMENTS_NUMBER>,
     Payer = new PaymentPayerRequest
     {
-        Email = "test_payer_12345@testuser.com",
+        Email = "<BUYER_EMAIL>",
     },
     ThreeDSecureMode = "optional",
 };
@@ -101,14 +97,14 @@ Payment payment = await client.CreateAsync(request);
 ```php
 
 <?php
-  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+  MercadoPago\SDK::setAccessToken("<ENV_ACCESS_TOKEN>");
   $payment = new MercadoPago\Payment();
-  $payment->transaction_amount = 100;
+  $payment->transaction_amount = <TRANSACTION_AMOUNT>;
   $payment->token = "CARD_TOKEN";
-  $payment->description = "description";
-  $payment->installments = 1;
+  $payment->description = "<DESCRIPTION>";
+  $payment->installments = <INSTALLLMENTS_NUMBER>;
   $payment->payer = array(
-        "email" => "test_payer_12345@testuser.com"
+        "email" => "<BUYER_EMAIL>"
     );
   $payment->three_d_secure_mode = "optional";
   $payment->save();
@@ -119,12 +115,12 @@ Payment payment = await client.CreateAsync(request);
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 var payment_data = {
-  transaction_amount: 100,
-  token: 'CARD_TOKEN',
-  description: 'description',
-  installments: 1,
+  transaction_amount: <TRANSACTION_AMOUNT>,
+  token: '<CARD_TOKEN>',
+  description: '<DESCRIPTION>',
+  installments: <INSTALLLMENTS_NUMBER>,
   payer: {
-    email: 'test_payer_12345@testuser.com'
+    email: '<BUYER_EMAIL>'
   },
   three_d_secure_mode: 'optional'
 };
@@ -135,14 +131,14 @@ mercadopago.payment.create(payment_data).then(function (data) {
 ```ruby
 
 require 'mercadopago'
-sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
+sdk = Mercadopago::SDK.new('<ENV_ACCESS_TOKEN>')
 payment_request = {
-  token: 'CARD_TOKEN',
-  installments: 1,
-  transaction_amount: 100,
-  description: 'description',
+  token: '<CARD_TOKEN>',
+  installments: <INSTALLLMENTS_NUMBER>,
+  transaction_amount: <TRANSACTION_AMOUNT>,
+  description: '<DESCRIPTION>',
   payer: {
-    email: 'test_payer_12345@testuser.com',
+    email: '<BUYER_EMAIL>',
   },
   three_d_secure_mode: 'optional'
 }
@@ -151,23 +147,21 @@ payment = payment_response[:response]
 ```
 ```python
 import mercadopago
-sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
+sdk = mercadopago.SDK("<ENV_ACCESS_TOKEN>")
 payment_data = {
-    "transaction_amount": 100,
-    "token": "CARD_TOKEN",
-    "description": "description",
-    "installments": 1,
+    "transaction_amount": <TRANSACTION_AMOUNT>,
+    "token": "<CARD_TOKEN>",
+    "description": "<DESCRIPTION>",
+    "installments": <INSTALLLMENTS_NUMBER>,
     "payer": {
-        "email": "test_payer_12345@testuser.com",
+        "email": "<BUYER_EMAIL>",
     },
     "three_d_secure_mode": "optional"
 }
 payment_response = sdk.payment().create(payment_data)
 payment = payment_response["response"]
-
 ```
 ]]]
-
 
 Caso não seja necessário utilizar o fluxo do _Challenge_, o campo `status` do pagamento terá valor `approved` e não será necessário exibi-lo, dessa forma, siga normalmente com o fluxo de sua aplicação. 
 
@@ -179,9 +173,7 @@ Para os casos em que o _Challenge_ é necessário, o `status` mostrará o valor 
 >
 > Neste último caso, a resposta mostrará um atributo de pagamento chamado `three_ds_info` com os campos `external_resource_url`, que contém a URL do _Challenge_, e `creq`, um identificador da solicitação do _Challenge_. Para exibi-lo e tratar seu resultado siga os passos abaixo.
 
-
 ### Visão geral da resposta (informação omitida)
-
 
 [[[
 ```Json
@@ -202,7 +194,6 @@ Para os casos em que o _Challenge_ é necessário, o `status` mostrará o valor 
 
 ```
 ]]]
-
 
 4. Para **exibir o _Challenge_**, é necessário gerar um _iframe_ (altura mínima: 500px, largura mínima: 600px) que contenha um formulário com `method post`, `action` contendo a URL obtida no campo `external_resource_url`, e um input oculto com o valor obtido em `creq`. Em seguida, faça o post do formulário abaixo para iniciar o _Challenge_.
 
@@ -274,7 +265,6 @@ Para **tratar o evento iframe**, siga as etapas abaixo.
 
 Utilize o código Javascript a seguir para implementar e escutar o evento que indica que o _Challenge_ foi encerrado, assim é possível redirecionar o cliente para a tela de confirmação.
 
-
 [[[
 ```javascript
 
@@ -287,12 +277,9 @@ window.addEventListener("message", (e) => {
 ```
 ]]]
 
-
 ### Buscar status de pagamento
 
 O Javascript a seguir indica como buscar o status do pagamento atualizado e exibi-lo na tela de confirmação.
-
-
 
 [[[
 ```javascript
@@ -320,7 +307,6 @@ async function init() {
 ```
 ]]]
 
-
 > NOTE
 >
 > Importante
@@ -328,7 +314,6 @@ async function init() {
 > Caso o pagamento ainda esteja `pending` após o timeout do _Challenge_, será necessário redirecionar o comprador para uma tela informando que o pagamento expirou e que é necessário criar um novo (a atualização não é imediata, pode demorar alguns momentos).
 
 Após seguir estes passos, sua integração está pronta para autenticar transações com 3DS.
-
 
 ## Possíveis status de pagamento 
 
@@ -350,6 +335,9 @@ Veja abaixo a tabela com os possíveis status e suas respectivas descrições.
 Para que seja possível validar pagamentos com 3DS, disponibilizamos um ambiente de testes do tipo *sandbox* que retorna resultados falsos apenas para simulação e validação da implementação.
 
 > NOTE
+Para realizar uma compra de teste, você precisará ter as credenciais de teste do seu usuário de produção e um cartão de crédito de teste com 3DS habilitado.
+
+> WARNING
 >
 > Lembre-se de utilizar as credenciais de teste da sua aplicação. 
 
