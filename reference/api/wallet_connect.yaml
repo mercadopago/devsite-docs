@@ -1035,11 +1035,11 @@ paths:
         eng: Confirm or cancel an advanced payment
         spa: Confirmar o cancelar un advanced payment
         por: Confirmar ou cancelar um advanced payment
-      description: This endpoint allows to perform one of two actions. Capture or cancel and advanced payment. To confirm you must send the wallet payment data and field capture in true. To cancel you send wallet payment data and field status 'cancelled'
+      description: This endpoint allows to perform one of two actions. Capture or cancel and advanced payment. To confirm you must send the wallet payment data and field capture in true. To cancel you send wallet payment data and field status "cancelled"
       x-description-i18n:
-        eng: This endpoint allows to perform one two actions. Capture or cancel and advanced payment. To confirm you must send the wallet payment data and field capture in true. To cancel you send wallet payment data and field status 'cancelled'
-        spa: Este endpoint le permite realizar dos acciones. Capturar o cancelar un advanced payment. Para confirmar, es necesario enviar los datos de pago de la billetera y el campo de captura en true. Para cancelar, envíe los detalles de pago de su billetera y el campo de status 'cancelled'
-        por: Este endpoint permite executar duas ações. Captura ou cancelamento de um advanced payment. Para confirmar, é preciso enviar os dados de pagamento da carteira e o campo de captura em true. Para cancelar, envie os dados de pagamento da carteira e o campo status 'cancelled'
+        eng: This endpoint allows to perform one two actions. Capture or cancel and advanced payment. To confirm you must send the wallet payment data and field capture in true. To cancel you send wallet payment data and field status "cancelled"
+        spa: Este endpoint le permite realizar dos acciones. Capturar o cancelar un advanced payment. Para confirmar, es necesario enviar los datos de pago de la billetera y el campo de captura en true. Para cancelar, envíe los detalles de pago de su billetera y el campo de status "cancelled"
+        por: Este endpoint permite executar duas ações. Captura ou cancelamento de um advanced payment. Para confirmar, é preciso enviar os dados de pagamento da carteira e o campo de captura em true. Para cancelar, envie os dados de pagamento da carteira e o campo status "cancelled"
       parameters:
         - name: advanced_payment_id
           in: path
