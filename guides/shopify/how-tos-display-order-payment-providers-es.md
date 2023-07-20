@@ -1,6 +1,6 @@
 # Cómo cambiar la posición de los proveedores de pago
 
-Aprende cómo cambiar el orden de visualización de los proveedores de pagos integrados en tu tienda Shopify.
+Aprende cómo utilizar la app **MP Reorder** para cambiar el orden de visualización de los proveedores de pagos integrados en tu tienda Shopify.
 
 > NOTE
 >

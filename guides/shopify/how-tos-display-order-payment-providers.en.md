@@ -1,6 +1,6 @@
 # How to change the display order of payment providers
 
-Learn how to change the display order of integrated payment providers in your Shopify store.
+Learn how to use the **MP Reorder** app to change the display order of integrated payment providers in your Shopify store.
 
 > NOTE
 >
