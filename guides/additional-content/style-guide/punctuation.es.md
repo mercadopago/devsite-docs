@@ -16,5 +16,5 @@ Respetamos el uso normativo de los signos de puntuación. Algunas consideracione
 * Los títulos no deben llevar punto final.
 <br>
 
-* Como nuestro registro es instruccional, evitamos el uso de signos exclamativos para que nuestros textos no parezcan órdenes. Los signos de interrogación, por su parte, son bienvenidos en títulos y subtítulos de How-tos y documentación problem solving, ya que nos permiten presentar en el texto las preguntas que se hace el lector, y dar respuesta.
+* Como nuestro registro es instruccional, evitamos el uso de signos exclamativos para que nuestros textos no parezcan órdenes. Los signos de interrogación, por su parte, son bienvenidos en títulos y subtítulos de How-tos y documentación *problem solving*, ya que nos permiten presentar en el texto las preguntas que se hace el lector, y dar respuesta.
 

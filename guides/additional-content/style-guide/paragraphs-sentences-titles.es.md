@@ -2,8 +2,8 @@
 
 La documentación técnica debe ser precisa, clara y concisa. Es por esto que priorizamos la escritura de **oraciones simples y breves**. Una buena práctica cuando nos enfrentamos a oraciones complejas es intentar separarlas en dos distintas.
 
-✅ *La integración, que puede ser hecha de dos maneras distintas, no es compleja* <br>
-❌ *La integración no es compleja. Puede ser hecha de dos maneras distintas*
+✅ *La integración no es compleja. Puede ser hecha de dos maneras distintas* <br>
+❌ *La integración, que puede ser hecha de dos maneras distintas, no es compleja*
 
 Los **párrafos** también deben ser breves, preferentemente de no más de 5 oraciones simples. Cuanto más largos sean, más complejo se vuelve para el lector ubicar la información necesaria y concentrarse en lo específico.
 
