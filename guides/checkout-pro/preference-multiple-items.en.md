@@ -12,7 +12,7 @@ To create a preference for multiple items, use one of the SDKs available below.
 # Create a preference object
 $preference = new MercadoPago\Preference();
 # Create items in preference
-$item1 = new MercadoPago\Item
+$item1 = new MercadoPago\Item();
 $item1->title = "Test Item 1";
 $item1->quantity = 2;
 $item1->unit_price = 11.96;
