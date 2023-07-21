@@ -39,7 +39,7 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval?access_t
     "payer_email": "test_user+1020927396@testuser.com",
     "card_token_id": "{{EL_CARD_TOKEN_QUE_CREASTE}}",
     "status": "authorized"
-}
+}'
 ```
 ]]]
 
