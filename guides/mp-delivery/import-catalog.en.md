@@ -4,6 +4,12 @@ To bulk import a catalog to multiple stores of the same user, make a POST reques
 
 When inserting the IDs of the stores that will receive the catalog, include the `external_ids`. The external ID of a store can be configured through the endpoint [/proximity-integration/stores/{StoreID}/external_id](/developers/en/reference/mp_delivery/_proximity-integration_stores_StoreID_external_id/put).
 
+| Response | Description |
+|---|---|
+| 202 - Success | All requests were sent successfully. |
+| 206 - Partial Error | Some requests were not sent correctly and contain an error. |
+
+
 In the [Catalog API Reference documentation](/developers/en/reference/mp_delivery/_proximity_integrationcatalog/post), you can find a complete description of the fields that can be sent in the request body.
 
 > WARNING

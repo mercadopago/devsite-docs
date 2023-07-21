@@ -4,6 +4,12 @@ Para importar em massa um catálogo para várias lojas do mesmo usuário, faça 
 
 Ao inserir os IDs das lojas que receberão o catálogo, insira os `external_ids`. O ID externo de uma loja pode ser configurado através do endpoint [/proximity-integration/stores/{StoreID}/external_id](/developers/pt/reference/mp_delivery/_proximity-integration_stores_StoreID_external_id/put).
 
+| Resposta | Descrição |
+|---|---|
+| 202 - Success | Todas as solicitações foram enviadas com sucesso. |
+| 206 - Partial Error | Algumas solicitações não foram enviadas corretamente e contêm um erro. |
+
+
 Na [documentação do Referência de API de catálogo](/developers/pt/reference/mp_delivery/_proximity_integrationcatalog/post), é possível obter uma descrição completa dos campos que podem ser enviados no corpo da solicitação.
 
 > WARNING
