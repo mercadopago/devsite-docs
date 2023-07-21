@@ -10,4 +10,4 @@ En la [documentación de la API del catálogo](/developers/es/reference/mp_deliv
 >
 > Importante
 >
-> Debido a que el proceso de carga del catálogo es asíncrono, se debe usar el endpoint [Consultar de estado de publicación](/developers/es/reference/mp_delivery/_proximity_integrationcatalog_publication_id/get) para verificar si el catálogo se importó correctamente. Si hay un error en la validación de esta publicación, se recomienda implementar un mecanismo de reintentos.
+> Debido a que el proceso de carga del catálogo es asíncrono, se debe usar el endpoint [Consultar de estado de publicación](/developers/es/reference/mp_delivery/_proximity_integrationcatalog_publication_id/get) para verificar si el catálogo se importó correctamente. Si hay un error en la validación de esta publicación, recomendamos implementar un mecanismo de reintentos.
