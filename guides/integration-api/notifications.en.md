@@ -82,7 +82,8 @@ Final status of a payment intent when the transaction ends.
 ------------
 
 #### Confirmation_required Status
-It occurs when the payment intent ends without a payment status. When you receive it, you must confirm on your device what the payment status is, using the `payment_id` received in the response, before delivering your product or service.
+It occurs when the payment intent ends without a payment status. Once obtained, this status will not change. When you receive it, you must confirm on your device what the payment status is, using the `payment_id` received in the response, before delivering your product or service.
+
 
 ----[mla]----
 ```json
