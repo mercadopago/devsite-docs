@@ -22,7 +22,7 @@ Algunos términos son nuevos y quizás no estés familiarizado con ellos. Usa es
 | Processing | Estado intermedio de una intención de pago al momento de conciliar con una entidad financiera. |
 | Processed | Estado intermedio de una intención de pago al momento de finalizar la conciliación con una entidad financiera. |
 | Finished | Estado final de una intención de pago cuando finaliza la transacción. |
-| Confirmation_required | Estado final del intento cuando ha finalizado sin recibir un estado del pago. Cuando lo obtienes, debes confirmar en tu dispositivo cuál es el estado del pago, utilizando el `payment_id` recibido en la respuesta, antes de entregar tu producto o servicio. |
+| Confirmation_required | Estado final de la intención cuando ha finalizado sin recibir un estado del pago. Una vez obtenido, este estado no cambiará. Cuando es recibido, debes confirmar en tu dispositivo cuál es el estado del pago, utilizando el `payment_id` recibido en la respuesta, antes de entregar tu producto o servicio. |
 | Canceled | Estado final de una intención de pago cuando se cancela. |
 | Error | Estado final de una intención de pago cuando ocurre un error en la transacción. |
 | Abandoned | Estado final de una intención de pago cuando no se procesa después de determinado tiempo. |

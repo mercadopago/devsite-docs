@@ -82,7 +82,7 @@ Status final de uma intenção de pagamento quando a transação termina.
 ------------
 
 #### Status Confirmation_required
-Ocorre quando a intenção de pagamento concluiu sem receber um status de pagamento. Ao recebê-lo, você deve confirmar em seu dispositivo qual é o status do pagamento, usando o `payment_id` recebido na resposta, antes de entregar seu produto ou serviço.
+Ocorre quando a intenção de pagamento concluiu sem receber um status de pagamento. Uma vez obtido, esse status não mudará. Ao recebê-lo, você deve confirmar em seu dispositivo qual é o status do pagamento, usando o `payment_id` recebido na resposta, antes de entregar seu produto ou serviço.
 
 ----[mla]----
 ```json

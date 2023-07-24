@@ -300,6 +300,6 @@ You will receive a response similar to this one below:
 >
 > Important
 >
-> If you receive a `confirmation_required` status as a response to the payment intention, you must check on your device the status of the payment, using the `payment_id` given in said response. Do not deliver your service or product until you verify it.
+> `Confirmation_required` is a final status and will not change. If you receive it as a response to the payment intent, you must check on your device the status of the payment, using the `payment_id` given in said response. Do not deliver your service or product until you verify it.
 
 You can check all the possible status of a payment intent by accessing our [Glossary](/developers/en/docs/mp-point/integration-api/glossary).

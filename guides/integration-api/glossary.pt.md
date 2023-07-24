@@ -22,7 +22,7 @@ Alguns termos são novos e você pode não estar familiarizado com eles. Use est
 | Processing | Declaração provisória de intenção de pagar no momento da reconciliação com uma instituição financeira. |
 | Processed | Status provisório de intenção de pagamento no momento de finalizar a reconciliação com uma instituição financeira. |
 | Finished | Status final de uma intenção de pagamento quando a transação termina. |
-| Confirmation_required | Status final de uma intenção de pagamento quando concluiu sem recever um status do pagamento.Ao recebê-lo, você deve confirmar em seu dispositivo qual é o status do pagamento, usando o `payment_id` recebido na resposta, antes de entregar seu produto ou serviço. |
+| Confirmation_required | Status final de uma intenção de pagamento quando concluiu sem recever um status do pagamento. Uma vez obtido, esse status não mudará. Ao recebê-lo, você deve confirmar em seu dispositivo qual é o status do pagamento, usando o `payment_id` recebido na resposta, antes de entregar seu produto ou serviço. |
 | Canceled | Status final de uma intenção de pagamento quando ela é cancelada. |
 | Error | Status final de uma intenção de pagamento quando ocorre um erro de transação. |
 | Abandoned | Status final de uma intenção de pagamento quando ela não é processada após um certo tempo. |

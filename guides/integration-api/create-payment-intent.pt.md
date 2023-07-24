@@ -298,7 +298,7 @@ A resposta será semelhante a isso:
 >
 > Importante
 >
-> Caso você receba `confirmation_required` no status da intenção de pagamento, deverá confirmar em seu dispositivo qual é o status de pagamento que corresponde ao `payment_id` recebido na resposta. Não entregue seu produto ou serviço até que você o verifique.
+> O `confirmation_required` é um status final e não mudará depois de recebido. No caso de você obtê-lo como uma resposta da intenção de pagamento, deverá confirmar em seu dispositivo qual é o status de pagamento que corresponde ao `payment_id` recebido na resposta. Não entregue seu produto ou serviço até que você o verifique.
 
 Você pode verificar os possíveis estados de uma intenção de pagamento acessando nosso [Glossário](/developers/pt/docs/mp-point/integration-api/glossary).
 

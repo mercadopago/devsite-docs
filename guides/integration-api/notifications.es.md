@@ -83,7 +83,7 @@ Es el estado final de una intención de pago cuando finaliza la transacción.
 ------------
 
 #### Estado Confirmation_required
-Sucede cuando la intención de pago finalizó sin recibir un estado del pago. Cuando lo recibes, debes confirmar en tu dispositivo cuál es el estado del pago, utilizando el `payment_id` recibido en la respuesta, antes de entregar tu producto o servicio.
+Sucede cuando la intención de pago finalizó sin recibir un estado del pago. Una vez obtenido, este estado no cambiará. Cuando es recibido, debes confirmar en tu dispositivo cuál es el estado del pago, utilizando el `payment_id` recibido en la respuesta, antes de entregar tu producto o servicio.
 
 
 ----[mla]----
@@ -257,7 +257,7 @@ Estado final de una intención de pago cuando ocurre un error en la transacción
 
 ## Notificaciones de mis dispositivos point
 
-Al recibir notificaciones sobre eventos generados por cada uno de tus dispositivos point,  lograrás tener control y hacer un seguimiento de tus dispositivos. Estas notificaciones pueden ser ocasionadas por:
+Al recibir notificaciones sobre eventos generados por cada uno de tus dispositivos point, lograrás tener control y hacer un seguimiento de los mismos. Estas notificaciones pueden ser ocasionadas por:
 
 - Reinicios de la terminal.
 - Deslogueos.

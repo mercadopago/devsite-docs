@@ -303,7 +303,7 @@ Recibirás una respuesta similar a la siguiente:
 >
 > Importante
 >
-> Si en el estado de la intención recibes el valor `confirmation_required`, deberás confirmar en tu dispositivo cuál es el estado del pago que se corresponde con el  `payment_id` recibido en la respuesta. No entregues tu producto o servicio hasta verificarlo.
+> `Confirmation_required` es un estado final y no cambiará una vez recibido. Si efectivamente lo recibes en el estado de la intención, deberás confirmar en tu dispositivo cuál es el estado del pago que se corresponde con el  `payment_id` recibido en la respuesta. No entregues tu producto o servicio hasta verificarlo.
 
 
 Puedes consultar los estados posibles de una intención de pago accediendo a nuestro [Glosario](/developers/es/docs/mp-point/integration-api/glossary).
