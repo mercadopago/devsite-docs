@@ -135,6 +135,10 @@ To enable the validation of payments with 3DS, we provide a **sandbox testing en
 
 In both flows (success and failure), the Challenge, which is a screen similar to the one shown below, must be displayed by the [Status Screen Brick](/developers/pt/docs/checkout-bricks/status-screen-brick/introduction).
 
-IMAGE
+<center>
+
+![bricks_sandbox](checkout-bricks/bricks_sandbox-en.png)
+
+</center>
 
 The provided verification code is for illustrative purposes only. To complete the test flow, simply click the **Confirm** button, and the Status Screen will display the final state of the payment.

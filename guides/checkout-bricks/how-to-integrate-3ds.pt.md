@@ -135,6 +135,10 @@ Para que seja possível validar pagamentos com 3DS, disponibilizamos um **ambien
 
 Em ambos os fluxos (sucesso e falha), o Challenge, que é uma tela semelhante à exibida abaixo, deve ser exibido pelo [Status Screen Brick](/developers/pt/docs/checkout-bricks/status-screen-brick/introduction).
 
-IMAGEM
+<center>
+
+![bricks_sandbox](checkout-bricks/bricks_sandbox-pt.png)
+
+</center>
 
 O código de verificação fornecido é apenas ilustrativo. Para concluir o fluxo de teste, basta clicar no botão **Confirmar** e o Status Screen irá exibir o estado final do pagamento.
