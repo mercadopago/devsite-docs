@@ -1,4 +1,3 @@
-
 # ¿Cómo generar tu reporte de Liberaciones?
 
 ----[mla]----
@@ -7,6 +6,7 @@
 > Lleva con facilidad el control de tus ventas con QR
 >
 > Creamos nuevas columnas que te permiten identificar las billeteras virtuales o los bancos que tus clientes usan para pagar cuando les cobras con un QR de Mercado Pago. Actualiza tus preferencias de configuración [desde el panel](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports/release/settings) o [vía API](/developers/es/guides/additional-content/reports/released-money/api) para incluir las columnas en tus reportes.
+
 ------------
 ----[mco, mlc]----
 > WARNING
@@ -14,6 +14,7 @@
 > Importante
 >
 > Los reportes que generes a partir de junio presentarán tus movimientos en orden cronológico, para que sea más fácil identificar cuándo se realizaron. [Conoce cómo usar este reporte.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/subscriptions/additional-content/reports/released-money/how-to-use)
+
 ------------
 
 ## Canales de generación
@@ -22,19 +23,16 @@ Puedes generar un reporte de ----[mla]---- Liquidaciones ------------ ----[mlm, 
 
 | Canales | Descripción |
 | --- | --- |
-| Panel de Mercado Pago | Para generar manualmente un reporte desde tu panel de Mercado Pago, ve a [Reportes](https://www.mercadopago[FAKER][URL][DOMAIN]/movements) y elige la opción de "Ver reportes creados".<br/><br/>Sigue el paso a paso para [generar reportes desde el panel](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/panel). |
+| Panel de Mercado Pago | Para generar manualmente un reporte desde tu panel de Mercado Pago, ve a ----[mla, mlm]---- [Informes y facturación](https://www.mercadopago[FAKER][URL][DOMAIN]/movements), luego haz clic en *Ir a Reportes de tus cobros y estados de cuenta* y elige el reporte que deseas. ------------ ----[mlb, mpe, mlu, mco]---- [Reportes](https://www.mercadopago[FAKER][URL][DOMAIN]/movements) y elige la opción de *Ver reportes creados*. ------------ <br/><br/>Sigue el paso a paso para [generar reportes desde el panel](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/panel). |
 | Integración vía API | Para generar manualmente un reporte o programar la frecuencia de uno según tus necesidades, utiliza nuestra integración vía API. <br/><br/>Lee la documentación para [generar reportes por API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/api). |
-
 
 ## Características técnicas del reporte
 
 Ten en cuenta la siguiente información técnica cuando quieras generar tus reportes.
 
-
 ### Estructura del reporte
 
 Conoce las características de los elementos que conforman tu reporte.
-
 
 | Elemento o acción | Características |
 | --- | --- |
@@ -44,7 +42,6 @@ Conoce las características de los elementos que conforman tu reporte.
 | Moneda | Local (basada en el país donde esté registrada la cuenta de Mercado Pago) |
 | Zona horaria de las columnas con fechas | GMT-4 <br/> <br/> Toma como referencia el lugar desde el que se descarga el reporte. |
 | Selección de fechas vía web | Debe basarse en el timezone de la cuenta. <br/> Por ejemplo, a la cuenta registrada en Brasil le corresponde el timezone de São Paulo. |
-
 
 ### Exportación del reporte
 

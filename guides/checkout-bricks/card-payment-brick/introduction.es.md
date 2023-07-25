@@ -15,11 +15,16 @@ live_demo_code_action:
  - linkName: Demo
  - buttonDescription: Construir tu Card Payment Brick
 ---
-<br>
 
 ## Layout 
 
 El layout de Card Payment Brick se basa en las mejores prácticas de UX para que sea posible ofrecer la mejor experiencia de compra sin que debas preocuparte por detalles de diseño. El layout presenta los elementos que se detallan a continuación.
+
+<center>
+
+![cardform](checkout-bricks/card-form-es.png)
+
+</center>
 
 | Elemento  | Características  | Observaciones  |
 | --- | --- | --- |
@@ -28,10 +33,7 @@ El layout de Card Payment Brick se basa en las mejores prácticas de UX para que
 | Campo para ingresar la fecha de vencimiento de la tarjeta <br><br> Propiedad: expirationDate  | **Valor:** N/A <br> **Label:** Fecha de vencimiento <br> **Placeholder:** MM/AA <br> **Tipo:** date <br> **Formato:** MM/AA <br> **Máx. caracteres:** 5  | Obligatorio <br> personalizable (label, placeholder y máximo de caracteres incorrectos)  |
 | Campo para ingresar el código de seguridad <br><br> Propiedad: securityCode  | **Valor:** N/A <br> **Label:** Código de seguridad <br> **Placeholder:** 1234 <br> **Tipo:** integer <br> **Formato:** N/A <br> **Máx. caracteres:** 4  | Obligatorio <br> personalizable (label, placeholder)  |
 | Campo para ingresar el nombre del titular de la tarjeta <br><br> Propiedad: cardholderName  | **Valor:** N/A <br> **Label:** Nombre del titular tal y como aparece en la tarjeta <br> **Placeholder:** João Silva <br> **Tipo:** string <br> **Formato:** N/A <br> **Máx. caracteres:** 100  | Obligatorio <br><br> personalizable (label, placeholder, tipo, formato y máximo de caracteres incorrectos.)  |
-| Campo para seleccionar el documento del titular de la tarjeta <br><br> Propiedad: cardholderIdentificationType  | **Valor:** ----[mlb]----CPF, CNPJ------------ ----[mla]----DNI, CI, LC, LE, Otro------------ ----[mco]----CC, CE, NIT, Otro------------ ----[mlc]----RUT, Otro
------------- ----[mlu]----CI, Otro
------------- ----[mpe]----DNI, C.E, RUC, Otro
------------- <br> **Label:** Documento <br> **Placeholder:** N/A <br> **Tipo:** select <br> **Formato:** N/A <br> **Máx. caracteres:** N/A  | Obligatorio* <br> Personalizable (label, placeholder) <br><br> *Si los datos de tipo y número de documento se proporcionaron y guardaron previamente, este elemento se vuelve opcional.  |
+| Campo para seleccionar el documento del titular de la tarjeta <br><br> Propiedad: cardholderIdentificationType  | **Valor:** ----[mlb]----CPF, CNPJ------------ ----[mla]----DNI, CI, LC, LE, Otro------------ ----[mco]----CC, CE, NIT, Otro ------------ ----[mlc]----RUT, Otro ------------ ----[mlu]----CI, Otro ------------ ----[mpe]----DNI, C.E, RUC, Otro ------------ <br> **Label:** Documento <br> **Placeholder:** N/A <br> **Tipo:** select <br> **Formato:** N/A <br> **Máx. caracteres:** N/A  | Obligatorio* <br> Personalizable (label, placeholder) <br><br> *Si los datos de tipo y número de documento se proporcionaron y guardaron previamente, este elemento se vuelve opcional.  |
 | Campo para ingresar el número de documento del titular de la tarjeta <br><br> Propiedad: cardholderIdentificationNumber  | **Valor:** N/A <br> **Label:** N/A <br> **Placeholder:** ----[mlb]----999.999.999-99 para CPF ou 99.999.9999/9999-99 para CNPJ------------ ----[mla, mlm, mpe, mco, mlu, mlc]----N/A------------. <br> **Tipo:** number <br> **Formato:** N/A <br> **Máx. caracteres:** N/A  | Obligatorio <br> no personalizable  |
 | Campo para ingresar el correo electrónico del comprador <br> Propiedad: email  | **Valor:** N/A <br> **Label:** Email <br> **Placeholder:** joaosilva@email.com <br> **Tipo:** string <br> **Formato:** formato de e-mail convencional (ejemplo@email.com)  **Máx. caracteres:** X  | Obligatorio* <br> personalizable (label, placeholder) <br><br> *Si los datos se proporcionaron y guardaron previamente, este elemento se vuelve opcional.  |
 | Botón de pago <br> Propiedad: formSubmit  | **Valor:** [imagen] Pagar <br> **Label:** N/A  **Placeholder:** N/A <br> **Tipo:** text <br> **callback:** onSubmit <br> **função**: promise(cardFormData)  | Opcional <br> Ocultable y personalizable <br><br> *La función recibe los datos del formulario, incluido el token de la tarjeta, y presenta una animación de carga.  |

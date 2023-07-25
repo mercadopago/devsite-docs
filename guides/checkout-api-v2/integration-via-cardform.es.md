@@ -4,6 +4,12 @@ La integración de los pagos con tarjeta se realiza a través de cardform. En es
 
 A medida que se introducen los datos de la tarjeta, se realiza una búsqueda automática de la información del emisor y las cuotas disponibles para ese método de pago. Con esto, la implementación del flujo es transparente para quien realiza la integración.
 
+> NOTE
+>
+> Importante
+>
+> Además de las opciones disponibles en esta documentación, también es posible integrar **pagos con tarjeta** utilizando el **Brick de CardPayment**. Consulta la documentación [Renderizado por defecto](/developers/es/docs/checkout-bricks/card-payment-brick/default-rendering#editor_2) de CardPayment para obtener más detalles.
+
 Consulta el siguiente diagrama que ilustra el proceso de pago con tarjeta utilizando Card Form.
 
 ![API-integration-flowchart](/images/api/api-integration-flowchart-cardform-2-es.png)
@@ -20,6 +26,11 @@ La primera etapa del proceso de integración de pagos con tarjeta es la captura 
   <script src="https://sdk.mercadopago.com/js/v2"></script>
 </body>
 ```
+```bash
+
+npm install @mercadopago/sdk-js
+
+```
 ]]]
 
 ## Configurar credencial
@@ -29,10 +40,17 @@ Las credenciales son claves únicas con las que identificamos una integración e
 Esta es la primera etapa de una estructura de código completa que se debe seguir para integrar correctamente pagos con tarjeta. Presta atención a los siguientes bloques para añadirlos a los códigos como se indica.
 
 [[[
+```html
+<script>
+  const mp = new MercadoPago("YOUR_PUBLIC_KEY");
+</script>
+```
 ```javascript
-  <script>
-    const mp = new MercadoPago("YOUR_PUBLIC_KEY");
-  </script>
+import { loadMercadoPago } from "@mercadopago/sdk-js";
+
+await loadMercadoPago();
+const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
+
 ```
 ]]]
 
@@ -40,8 +58,15 @@ Esta es la primera etapa de una estructura de código completa que se debe segui
 
 La captura de los datos de la tarjeta se realiza a través del CardForm de la biblioteca MercadoPago.js. Nuestro CardForm se conectará a tu formulario de pago HTML, facilitando la obtención y validación de todos los datos necesarios para procesar el pago.
 
+> WARNING
+>
+> Importante
+>
+> El cardtoken puede ser utilizado **solo una vez** y caduca en un plazo de **7 días**.
+
 Para añadir el formulario de pago, inserta el siguiente HTML directamente en el proyecto. 
 
+----[mla, mlu, mpe, mco, mlb, mlc]----
 [[[
 ```html
   <style>
@@ -71,15 +96,52 @@ Para añadir el formulario de pago, inserta el siguiente HTML directamente en el
     <input type="email" id="form-checkout__cardholderEmail" />
 
     <button type="submit" id="form-checkout__submit">Pagar</button>
-    <progress value="0" class="progress-bar">Carregando...</progress>
+    <progress value="0" class="progress-bar">Cargando...</progress>
   </form>
 ```
 ]]]
+
+------------
+----[mlm]----
+[[[
+```html
+  <style>
+    #form-checkout {
+      display: flex;
+      flex-direction: column;
+      max-width: 600px;
+    }
+
+    .container {
+      height: 18px;
+      display: inline-block;
+      border: 1px solid rgb(118, 118, 118);
+      border-radius: 2px;
+      padding: 1px 2px;
+    }
+  </style>
+  <form id="form-checkout">
+    <div id="form-checkout__cardNumber" class="container"></div>
+    <div id="form-checkout__expirationDate" class="container"></div>
+    <div id="form-checkout__securityCode" class="container"></div>
+    <input type="text" id="form-checkout__cardholderName" />
+    <select id="form-checkout__issuer"></select>
+    <select id="form-checkout__installments"></select>
+    <input type="email" id="form-checkout__cardholderEmail" />
+
+    <button type="submit" id="form-checkout__submit">Pagar</button>
+    <progress value="0" class="progress-bar">Cargando...</progress>
+  </form>
+```
+]]]
+
+------------
 
 ## Inicializar formulario de pago
 
 Después de añadir el formulario de pago, es necesario inicializarlo. Esta etapa consiste en relacionar el ID de cada campo del formulario con los atributos correspondientes. La biblioteca se encargará de rellenar, obtener y validar todos los datos necesarios en la confirmación del pago.  
 
+----[mla, mlu, mpe, mco, mlb, mlc]----
 [[[
 ```javascript
 
@@ -182,9 +244,105 @@ Después de añadir el formulario de pago, es necesario inicializarlo. Esta etap
 ```
 ]]]
 
+------------
+----[mlm]----
+[[[
+```javascript
+
+    const cardForm = mp.cardForm({
+      amount: "100.5",
+      iframe: true,
+      form: {
+        id: "form-checkout",
+        cardNumber: {
+          id: "form-checkout__cardNumber",
+          placeholder: "Numero de tarjeta",
+        },
+        expirationDate: {
+          id: "form-checkout__expirationDate",
+          placeholder: "MM/YY",
+        },
+        securityCode: {
+          id: "form-checkout__securityCode",
+          placeholder: "Código de seguridad",
+        },
+        cardholderName: {
+          id: "form-checkout__cardholderName",
+          placeholder: "Titular de la tarjeta",
+        },
+        issuer: {
+          id: "form-checkout__issuer",
+          placeholder: "Banco emisor",
+        },
+        installments: {
+          id: "form-checkout__installments",
+          placeholder: "Cuotas",
+        },        
+        cardholderEmail: {
+          id: "form-checkout__cardholderEmail",
+          placeholder: "E-mail",
+        },
+      },
+      callbacks: {
+        onFormMounted: error => {
+          if (error) return console.warn("Form Mounted handling error: ", error);
+          console.log("Form mounted");
+        },
+        onSubmit: event => {
+          event.preventDefault();
+
+          const {
+            paymentMethodId: payment_method_id,
+            issuerId: issuer_id,
+            cardholderEmail: email,
+            amount,
+            token,
+            installments,
+            identificationNumber,
+            identificationType,
+          } = cardForm.getCardFormData();
+
+          fetch("/process_payment", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              token,
+              issuer_id,
+              payment_method_id,
+              transaction_amount: Number(amount),
+              installments: Number(installments),
+              description: "Descripción del producto",
+              payer: {
+                email,
+                identification: {
+                  type: identificationType,
+                  number: identificationNumber,
+                },
+              },
+            }),
+          });
+        },
+        onFetching: (resource) => {
+          console.log("Fetching resource: ", resource);
+
+          // Animate progress bar
+          const progressBar = document.querySelector(".progress-bar");
+          progressBar.removeAttribute("value");
+
+          return () => {
+            progressBar.setAttribute("value", "0");
+          };
+        }
+      },
+    });
+```
+]]]
+
+------------
 
 Al enviar el formulario, se genera un token que representa de forma segura los datos de la tarjeta. Se puede acceder a este a través de la función`getCardFormData`, como se mostró anteriormente en el callback `onSubmit`. Además, este token también se almacena en un input oculto en el formulario y puede ser encontrado con el nombre `MPHiddenInputToken`.
-
 
 > NOTE
 >
@@ -200,14 +358,11 @@ En el ejemplo de la sección previa, enviamos todos los datos necesarios para la
 
 Con toda la información recopilada en el backend, envía un **POST** con los atributos requeridos, prestando atención a los parámetros `token`, `transaction_amount`, `installments`, `payment_method_id` y `payer.email` al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) y ejecuta la solicitud o, si lo prefieres, envía la información utilizando nuestros SDKs.
 
-
 > NOTE
 >
 > Importante
 >
-> Para aumentar las posibilidades de aprobación del pago y evitar que el análisis antifraude no autorice la transacción, recomendamos introducir toda la información posible sobre el comprador al realizar la solicitud. Para más detalles sobre cómo aumentar las posibilidades de aprobación, consulta [Cómo mejorar la aprobación de los pagos](/developers/es/docs/checkout-api/how-tos/improve-payment-approval).
-
-
+> Para aumentar las posibilidades de aprobación del pago y evitar que el análisis antifraude no autorice la transacción, recomendamos introducir toda la información posible sobre el comprador al realizar la solicitud. Para más detalles sobre cómo aumentar las posibilidades de aprobación, consulta [Cómo mejorar la aprobación de los pagos.](/developers/es/docs/checkout-api/how-tos/improve-payment-approval)
 
 [[[
 ```php
@@ -402,7 +557,7 @@ curl -X POST \
          "payment_method_id": "visa",
          "issuer_id": 310,
          "payer": {
-           "email": "test@test.com"
+           "email": "PAYER_EMAIL"
          }
    }'
  
@@ -432,31 +587,22 @@ La respuesta devolverá el siguiente resultado
 >
 > Importante
 >
-> Al crear un pago es posible recibir 3 estados diferentes: "Pendiente", "Rechazado" y "Aprobado". Para mantenerse al día con las actualizaciones, debe configurar su sistema para recibir notificaciones de pago y otras actualizaciones de estado. Consulte [Notificaciones](/developers/es/docs/checkout-api/additional-content/notifications/introduction) para obtener más detalles.
+> Al crear un pago es posible recibir 3 estados diferentes: "Pendiente", "Rechazado" y "Aprobado". Para mantenerse al día con las actualizaciones, debe configurar su sistema para recibir notificaciones de pago y otras actualizaciones de estado. Consulte [Notificaciones](/developers/es/docs/checkout-api/additional-content/your-integrations/notifications) para obtener más detalles.
 
 ## Ejemplo de código
 
+----[mlb]----
+> GIT
+>
+> Checkout Transparente
+>
+> Para ejemplos completos de código, consulte nuestros [ejemplos completos de integración.](http://github.com/mercadopago/card-payment-sample/tree/1.0.0)
+------------
+
+----[mla, mlm, mpe, mco, mlu, mlc]----
 > GIT
 >
 > Checkout API
 >
-> Para ejemplos completos de código, consulte nuestros [ejemplos completos de integración](http://github.com/mercadopago/card-payment-sample/tree/1.0.0).
-
+> Para ejemplos completos de código, consulte nuestros [ejemplos completos de integración.](http://github.com/mercadopago/card-payment-sample/tree/1.0.0)
 ------------
-
-> PREV_STEP_CARD_ES
->
-> Requisitos previos
->
-> Consulta los requisitos previos que se necesitan para integrar Checkout API.
->
-> [Integrar Checkout API](/developers/es/docs/checkout-api/prerequisites)
-
-
-> NEXT_STEP_CARD_ES
->
-> Otros medios de pagos
->
-> Descubre las otras opciones de pago disponibles para la integración.
->
-> [Otros medios de pagos](/developers/es/docs/checkout-api/integration-configuration/other-payment-methods)

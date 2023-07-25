@@ -2,7 +2,7 @@
 >
 > h1
 >
-> Payment submission (Pix)
+> Pix
 
 When finalizing the inclusion of the payment form, it is necessary to send the buyer's email, type and document number, the payment method used (pix) and the value detail.
 
@@ -11,66 +11,36 @@ To configure payment with Pix, send a **POST** to the endpoint [/v1/payments](/d
 [[[
 ```php
 <?php
-require_once 'vendor/autoload.php';
+ require_once 'vendor/autoload.php';
 
-MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+ MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
 
-$payment = new MercadoPago\Payment();
-$payment->transaction_amount = 100;
-$payment->description = "Product title";
-$payment->payment_method_id = "pix";
-$payment->payer = array(
-"email" => "test@test.com",
-"first_name" => "Test",
-"last_name" => "User",
-"identification" => array(
-"type" => "CPF",
-"number" => "19119119100"
-),
-"address"=> array(
-"zip_code" => "06233200",
-"street_name" => "Avenida das Nações Unidas",
-"street_number" => "3003",
-"neighborhood" => "Bonfim",
-"city" => "Osasco",
-"federal_unit" => "SP"
-)
-);
+ $payment = new MercadoPago\Payment();
+ $payment->transaction_amount = 100;
+ $payment->payment_method_id = "pix";
+ $payment->payer = array(
+    "email" => "PAYER_EMAIL_HERE",
+  );
 
-$payment->save();
+ $payment->save();
 
 ?>
 ```
 ```node
-var Mercadopago = require('mercadopago');
-Mercadopago.configurations.setAccessToken(config.access_token);
+var mercadopago = require('mercadopago');
+mercadopago.configurations.setAccessToken(config.access_token);
 
 var payment_data = {
-transaction_amount: 100,
-description: 'Product title',
-payment_method_id: 'pix',
-payer: {
-email: 'test@test.com',
-first_name: 'Test',
-last_name: 'User',
-identification: {
-type: 'CPF',
-number: '19119119100'
-},
-address: {
-zip_code: '06233200',
-street_name: '"Avenida das Nações Unidas"',
-street_number: '3003',
-neighborhood: 'Bonfim',
-city: 'Osasco',
-federal_unit: 'SP'
-}
-}
+  transaction_amount: 100,
+  payment_method_id: 'pix',
+  payer: {
+    email: 'PAYER_EMAIL_HERE',
+  }
 };
 
-Mercadopago.payment.create(payment_data).then(function (data) {
+mercadopago.payment.create(payment_data).then(function (data) {
 
-}).catch(function(error) {
+}).catch(function (error) {
 
 });
 
@@ -81,19 +51,14 @@ MercadoPagoConfig.setAccessToken("ENV_ACCESS_TOKEN");
 PaymentClient client = new PaymentClient();
 
 PaymentCreateRequest paymentCreateRequest =
-PaymentCreateRequest.builder()
-.transactionAmount(new BigDecimal("100"))
-.description("Product Title")
-.paymentMethodId("pix")
-.dateOfExpiration(OffsetDateTime.of(2023, 1, 10, 10, 10, 10, 0, ZoneOffset.UTC))
-.payer(
-PaymentPayerRequest.builder()
-.email("test@test.com")
-.firstName("Test")
-.identification(
-IdentificationRequest.builder().type("CPF").number("19119119100").build())
-.build())
-.build();
+   PaymentCreateRequest.builder()
+       .transactionAmount(new BigDecimal("100"))
+       .paymentMethodId("pix")
+       .payer(
+           PaymentPayerRequest.builder()
+               .email("PAYER_EMAIL_HERE")
+               .build())
+       .build();
 
 client.create(paymentCreateRequest);
 ```
@@ -102,16 +67,11 @@ require 'mercadopago'
 sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
 payment_request = {
-transaction_amount: 100,
-description: 'Product title',
-payment_method_id: 'pix',
-payer: {
-email: 'test@test.com',
-identification: {
-type: 'CPF',
-number: '19119119100',
-}
-}
+  transaction_amount: 100,
+  payment_method_id: 'pix',
+  payer: {
+    email: 'PAYER_EMAIL_HERE',
+  }
 }
 
 payment_response = sdk.payment.create(payment_request)
@@ -129,20 +89,12 @@ MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
 
 var request = new PaymentCreateRequest
 {
-TransactionAmount = 105,
-Description = "Product Title",
-PaymentMethodId = "pix",
-Payer = new PaymentPayerRequest
-{
-Email = "test@test.com",
-FirstName = "Test",
-LastName = "User",
-Identification = new IdentificationRequest
-{
-Type = "CPF",
-Number = "191191191-00",
-},
-},
+    TransactionAmount = 105,
+    PaymentMethodId = "pix",
+    Payer = new PaymentPayerRequest
+    {
+        Email = "PAYER_EMAIL_HERE",
+    },
 };
 
 var client = new PaymentClient();
@@ -150,30 +102,15 @@ Payment payment = await client.CreateAsync(request);
 
 ```
 ```python
-import market
-sdk = Mercadopago.SDK("ENV_ACCESS_TOKEN")
+import mercadopago
+sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
 
 payment_data = {
-"transaction_amount": 100,
-"description": "Product title",
-"payment_method_id": "pix",
-"payer": {
-"email": "test@test.com",
-"first_name": "Test",
-"last_name": "User",
-"identification": {
-"type": "CPF",
-"number": "191191191-00"
-},
-"address": {
-"zip_code": "06233-200",
-"street_name": "Avenida das Nações Unidas",
-"street_number": "3003",
-"neighborhood": "Bonfim",
-"city": "Osasco",
-"federal_unit": "SP"
-}
-}
+    "transaction_amount": 100,
+    "payment_method_id": "pix",
+    "payer": {
+        "email": "PAYER_EMAIL_HERE",
+    }
 }
 
 payment_response = sdk.payment().create(payment_data)
@@ -181,32 +118,17 @@ payment = payment_response["response"]
 ```
 ```curl
 curl -X POST \
--H 'accept: application/json' \
--H 'content-type: application/json' \
--H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
-'https://api.mercadopago.com/v1/payments' \
--d '{
-"transaction_amount": 100,
-"description": "Product title",
-"payment_method_id": "pix",
-"payer": {
-"email": "test@test.com",
-"first_name": "Test",
-"last_name": "User",
-"identification": {
-"type": "CPF",
-"number": "19119119100"
-},
-"address": {
-"zip_code": "06233200",
-"street_name": "Avenida das Nações Unidas",
-"street_number": "3003",
-"neighborhood": "Bonfim",
-"city": "Osasco",
-"federal_unit": "SP"
-}
-}
-}'
+    -H 'accept: application/json' \
+    -H 'content-type: application/json' \
+    -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/payments' \
+    -d '{
+      "transaction_amount": 100,
+      "payment_method_id": "pix",
+      "payer": {
+        "email": "PAYER_EMAIL_HERE"
+      }
+    }'
 ```
 ]]]
 
@@ -247,6 +169,7 @@ The response will show the payment **pending status** and all the information yo
 ## Show payment status
 
 After the payment creation in the backend using the Mercado Pago SDK, use the **id** received in the response to instantiate the Status Screen Brick and show it to the buyer.
+
 In addition to displaying the payment status, Status Screen Brick will also display the Pix code to copy and paste and the QRCode for the buyer to scan and pay. Learn how simple it is to integrate [click here](/developers/en/docs/checkout-bricks/status-screen-brick/configure-integration).
 
 > WARNING
@@ -255,4 +178,8 @@ In addition to displaying the payment status, Status Screen Brick will also disp
 >
 > If you used production credentials from a test user to generate the Pix payment, an error will occur when clicking the button that takes you to the QR Code page. To view correctly, just remove `/sandbox` from the URL of the opened page.
 
+<center>
+
 ![payment-submission-pix-status](checkout-bricks/payment-submission-pix-status-en.jpg)
+
+</center>

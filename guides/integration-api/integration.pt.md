@@ -49,11 +49,11 @@ E pronto!
 >
 > Nota
 >
-> Se você vai realizar operações em nome de outros vendedores, pode gerenciar a ligação segura integrando [OAuth.](/developers/pt/docs/seguridad/additional-content/security/oauth/introduction)
+> Se você vai realizar operações em nome de outros vendedores, pode gerenciar a ligação segura integrando [OAuth.](/developers/pt/docs/mp-point/additional-content/security/oauth/introduction)
 
 ### Acesse as credenciais da sua aplicação
 
-Depois de criar uma aplicação, você poderá acessar as [suas credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/credentials). Com elas você pode conectar uma integração à sua conta e configurá-la do seu jeito.
+Depois de criar uma aplicação, você poderá acessar as suas credenciais. Você pode localizá-las em **Detalhes da aplicação > Credenciais** dentro do [Painel do desenvolvedor](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app). Com elas você pode conectar uma integração à sua conta e configurá-la do seu jeito.
 
 ### Gere usuários de teste
 

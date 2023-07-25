@@ -1,4 +1,4 @@
-# Configurar os pagamentos com Checkout Pro
+# Checkout Pro
  
 Com o [Checkout Pro](/developers/pt/docs/checkout-pro/landing), o comprador será direcionado da loja para o site do Mercado Pago onde deverá preencher as informações solicitadas e efetuar o pagamento. Dessa forma, a transação é processada e concluída fora do ambiente de sua loja. Não é necessário que o comprador possua uma conta no Mercado Pago e, ao final da transação, o comprador pode ser devolvido à sua loja.
  
@@ -9,7 +9,7 @@ Para integrar o Checkout Pro, siga os passos abaixo.
  ----[mlb]---- 
  * Cartões de débito e crédito; 
  * Dinheiro (saldo da conta do Mercado Pago ou boleto bancário); 
- * Transferência bancária (Pix e PEC). A opção de pagamento com Pix só será exibida se houver uma [chave Pix cadastrada](/developers/pt/guides/checkout-api/receiving-payment-by-pix) no Mercado Pago. 
+ * Transferência bancária (Pix e PEC). A opção de pagamento com Pix só será exibida se houver uma chave Pix cadastrada no Mercado Pago. Caso ainda não tenha criado, [clique aqui](https://www.youtube.com/watch?v=60tApKYVnkA) e veja o passo a passo.
  ------------ 
 ----[mla, mlm, mpe, mco, mlu, mlc]---- 
  * Cartões de débito e crédito;

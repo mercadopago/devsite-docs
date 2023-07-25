@@ -126,10 +126,15 @@ pod ‘MercadoPagoDevicesSDK’
 ```
 ```android
 ===
-Add the following code in the **build.gradle** file.
+You need to add the repository and the dependency in the **build.gradle** file.
 ===
+repositories {
+    maven {
+        url "https://artifacts.mercadolibre.com/repository/android-releases"
+    }
+}
 dependencies {
-   implementation 'com.mercadolibre.android.device:sdk:2.0.1'
+   implementation 'com.mercadolibre.android.device:sdk:3.0.5'
 }
 ```
 ]]]
@@ -484,7 +489,7 @@ Learn all about these attributes in our [API Reference](https://www.mercadopago[
 
 Send data about your industry to improve your approval.<br>
 
-[Go to industry data](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/industry-data/additional-info)
+[Go to industry data](/developers/en/guides/additional-content/resources/industry-data/additional-info)
 
 ### Help your clients with their rejected payments
 
@@ -496,4 +501,4 @@ For instance, if a payment is rejected due to lack of funds, you can recommend t
 >
 > Note
 >
-> If you’re using Checkout Pro, don’t worry! All your messages are already set up. If you’re using another product, we recommend showing [a specific message for each rejection reason](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/handling-responses).
+> If you’re using Checkout Pro, don’t worry! All your messages are already set up. If you’re using another product, we recommend showing **a specific message for each rejection reason**.

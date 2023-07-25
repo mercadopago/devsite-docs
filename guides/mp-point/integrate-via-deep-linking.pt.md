@@ -12,7 +12,7 @@ Uma vez que o pagamento é processado, o usuário será redirecionado a `success
 
 ## Criação do Deep Linking
 
-A URL a ser interceptada é a seguinte: `https://www.mercadopago.com/mp-brasil/point/lojas`
+A URL a ser interceptada é a seguinte: `https://www.mercadopago.com/point/integrations`
 
 Os parâmetros que se podem incluir são:
 

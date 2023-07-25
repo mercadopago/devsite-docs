@@ -125,10 +125,15 @@ pod ‘MercadoPagoDevicesSDK’
 ```
 ```android
 ===
-Adicionar o seguinte código no arquivo **build.gradle**.
+Você precisa adicionar o repositório e a dependência no arquivo **build.gradle**.
 ===
+repositories {
+    maven {
+        url "https://artifacts.mercadolibre.com/repository/android-releases"
+    }
+}
 dependencies {
-   implementation 'com.mercadolibre.android.device:sdk:2.0.1'
+   implementation 'com.mercadolibre.android.device:sdk:3.0.5'
 }
 ```
 ]]]
@@ -477,13 +482,13 @@ preference_data = {
 ```
 ]]]
 
-Você pode obter mais informações sobre cada atributo nas [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments/post).
+Você pode obter mais informações sobre cada atributo nas [Referências de API](/developers/pt/reference/payments/_payments/post).
 
 ### Dados de indústria
 
 Envia os dados sobre sua indústria para melhorar sua aprovação.<br>
 
-[Ir para dados de indústria](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/industry-data/additional-info)
+[Ir para dados de indústria](/developers/pt/guides/additional-content/resources/industry-data/additional-info)
 
 ### Auxilie os seus clientes com seus pagamentos recusados
 
@@ -491,8 +496,5 @@ Envia os dados sobre sua indústria para melhorar sua aprovação.<br>
 
 Por exemplo, se um pagamento for recusado por fundos insuficientes, poderá recomendar a eles que tentem novamente com outro meio de pagamento para completar a operação.
 
-> NOTE
 >
-> Nota
->
-> Se você utilizar o Checkout Pro, não se preocupe, já tem as mensagens configuradas em cada caso. E se utilizar outro dos nossos produtos, recomendamos para você mostrar uma [mensagem específica por cada motivo de recusa](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/handling-responses).
+> Se você utilizar o Checkout Pro, não se preocupe, já tem as mensagens configuradas em cada caso. E se utilizar outro dos nossos produtos, recomendamos para você mostrar uma **mensagem específica por cada motivo de recusa**.

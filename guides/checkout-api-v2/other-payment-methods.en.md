@@ -2,26 +2,62 @@
 
 ----[mlb]----
 With Mercado Pago's Checkout API, it is possible to offer, in addition to card and Pix, **payments via boleto bancário and pagamento em lotérica**.
+
+> NOTE
+>
+> Important
+>
+> In addition to the options available in this documentation, it is also possible to integrate **other payment methods** using the **Payment Brick**. Check [Default rendering](/developers/en/docs/checkout-bricks/payment-brick/default-rendering#editor_2) documentation of Payment for more details.
 ------------
 
 ----[mla]----
 With Mercado Pago's Checkout API, it is also possible to offer payments with **Rapipago** and/or **Pago Fácil**.
+
+> NOTE
+>
+> Important
+>
+> In addition to the options available in this documentation, it is also possible to integrate **other payment methods** using the **Payment Brick**. Check [Default rendering](/developers/en/docs/checkout-bricks/payment-brick/default-rendering#editor_2) documentation of Payment for more details.
 ------------
 
 ----[mlm]----
 With the Mercado Pago's Checkout API, it is also possible to offer payments with **OXXO**, **Paycash**, **Citibanamex**, **Santander**, **BBVA Bancomer** and **Mercado Pago Card**.
+
+> NOTE
+>
+> Important
+>
+> In addition to the options available in this documentation, it is also possible to integrate **other payment methods** using the **Payment Brick**. Check [Default rendering](/developers/en/docs/checkout-bricks/payment-brick/default-rendering#editor_2) documentation of Payment for more details.
 ------------
 
 ----[mpe]----
 With Mercado Pago's Checkout API, it is also possible to offer payments through **PagoEfectivo**.
+
+> NOTE
+>
+> Important
+>
+> In addition to the options available in this documentation, it is also possible to integrate **other payment methods** using the **Payment Brick**. Check [Default rendering](/developers/en/docs/checkout-bricks/payment-brick/default-rendering#editor_2) documentation of Payment for more details.
 ------------
 
 ----[mco]----
-With Mercado Pago's Checkout API, it is also possible to offer payments with **Efecty** and **PSE**.
+With Mercado Pago's Checkout API, it is also possible to offer payments with **Efecty**.
+
+> NOTE
+>
+> Important
+>
+> In addition to the options available in this documentation, it is also possible to integrate **other payment methods** using the **Payment Brick**. Check [Default rendering](/developers/en/docs/checkout-bricks/payment-brick/default-rendering#editor_2) documentation of Payment for more details.
 ------------
 
 ----[mlu]----
 With Mercado Pago's Checkout API, it is also possible to offer payments with **Abitab** and **Redpagos**.
+
+> NOTE
+>
+> Important
+>
+> In addition to the options available in this documentation, it is also possible to integrate **other payment methods** using the **Payment Brick**. Check [Default rendering](/developers/en/docs/checkout-bricks/payment-brick/default-rendering#editor_2) documentation of Payment for more details.
 ------------
 
 To get a detailed list of all payment methods available for integration, send a **GET** with your **Access token** to the endpoint [/v1/payment_methods](/developers/en/reference/payment_methods/_payment_methods/get) and run the request or, if you prefer, make the request using the SDKs below.
@@ -103,7 +139,7 @@ To offer **PagoEfectivo** payments, please follow the steps below.
 ------------
 
 ----[mco]----
-To offer **Efecty** and/or **PSE** payments, please follow the steps below.
+To offer **Efecty** payments, please follow the steps below.
 ------------
 
 ----[mlu]----
@@ -119,10 +155,14 @@ This capture is made by including the MercadoPago.js library in your project, fo
 
 [[[
 ```html
-
 <body>
-<script src="https://sdk.mercadopago.com/js/v2"></script>
+  <script src="https://sdk.mercadopago.com/js/v2"></script>
 </body>
+
+```
+```bash
+npm install @mercadopago/sdk-js
+
 ```
 ]]]
 
@@ -134,8 +174,17 @@ This is the first step of a complete code structure that must be followed for th
 
 
 [[[
+```html
+<script>
+  const mp = new MercadoPago("YOUR_PUBLIC_KEY");
+</script>
+```
 ```javascript
-const mp = new MercadoPago('YOUR_PUBLIC_KEY');
+import { loadMercadoPago } from "@mercadopago/sdk-js";
+
+await loadMercadoPago();
+const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
+
 ```
 ]]]
 
@@ -145,7 +194,7 @@ const mp = new MercadoPago('YOUR_PUBLIC_KEY');
 With the MercadoPago.js library included, add the payment form below to your project to ensure the secure capture of buyer data. In this step, it is important to use the list you consulted to obtain the available payment methods to create the payment options you want to offer.
 
 
-[[[[
+[[[
 ```html
 
   <form id="form-checkout" action="/process_payment" method="post">
@@ -264,7 +313,7 @@ $payment->transaction_amount = 100;
 $payment->description = "Product title";
 $payment->payment_method_id = "bolbradesco";
 $payment->payer = array(
-"email" => "test@test.com",
+"email" => "PAYER_EMAIL",
 "first_name" => "Test",
 "last_name" => "User",
 "identification" => array(
@@ -294,7 +343,7 @@ transaction_amount: 100,
 description: 'Product title',
 payment_method_id: 'bolbradesco',
 payer: {
-email: 'test@test.com',
+email: 'PAYER_EMAIL',
 first_name: 'Test',
 last_name: 'User',
 identification: {
@@ -330,7 +379,7 @@ PaymentCreateRequest.builder()
 .dateOfExpiration(OffsetDateTime.of(2023, 1, 10, 10, 10, 10, 0, ZoneOffset.UTC))
 .payer(
 PaymentPayerRequest.builder()
-.email("test@test.com")
+.email("PAYER_EMAIL")
 .firstName("Test")
 .lastName("User")
 .identification(
@@ -349,7 +398,7 @@ transaction_amount: 100,
 description: 'Product title',
 payment_method_id: 'bolbradesco',
 payer: {
-email: 'test@test.com',
+email: 'PAYER_EMAIL',
 first_name: 'Test',
 last_name: 'User',
 identification: {
@@ -387,7 +436,7 @@ Description = "Product Title",
 PaymentMethodId = "bolbradesco",
 Payer = new PaymentPayerRequest
 {
-Email = "test@test.com",
+Email = "PAYER_EMAIL",
 FirstName = "Test",
 LastName = "User",
 Identification = new IdentificationRequest
@@ -411,7 +460,7 @@ payment_data = {
 "description": "Product title",
 "payment_method_id": "bolbradesco",
 "payer": {
-"email": "test@test.com",
+"email": "PAYER_EMAIL",
 "first_name": "Test",
 "last_name": "User",
 "identification": {
@@ -443,7 +492,7 @@ curl -X POST \
 "description": "Product title",
 "payment_method_id": "bolbradesco",
 "payer": {
-"email": "test@test.com",
+"email": "PAYER_EMAIL",
 "first_name": "Test",
 "last_name": "User",
 "identification": {
@@ -464,7 +513,7 @@ curl -X POST \
 ]]]
 
 
-The response will show the **pending status** until the buyer completes the payment. Also, in the response to the request, the `external_resource_url` parameter will return a URL that contains instructions for the buyer to make the payment. You can redirect to this same link to complete the payment flow. See below for an example return.
+The response will show the `pending` status until the buyer completes the payment. Also, in the response to the request, the `external_resource_url` parameter will return a URL that contains instructions for the buyer to make the payment. You can redirect to this same link to complete the payment flow. See below for an example return.
 
 [[[
 ```json
@@ -1155,13 +1204,13 @@ If a payment expires within 30 days, the cancellation is automatic and the final
 
 ----[mco]----
 
-To configure payments with **Efecty** and/or **PSE**, send a **POST** with the appropriate parameters to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post ) and execute the request or, if you prefer, use one of our SDKs below.
+To configure payments with **Efecty**, send a **POST** with the appropriate parameters to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post ) and execute the request or, if you prefer, use one of our SDKs below.
 
 > WARNING
 >
 > Important
 >
-> To receive payments with **PSE**, it is necessary to send, when creating the payment, the `financial_institution` parameter with the number of the financial institution responsible for processing the payment.
+> For this step, when making the request via API or SDKs, it is necessary to send your Private Key - Access token.
 
 [[[
 ```php
@@ -1553,20 +1602,3 @@ Take into consideration that you can only cancel payments that are in
 To cancel a payment, see the [Refunds and Cancellations](/developers/en/docs/checkout-api/payment-management/cancellations-and-refunds) section.
 
 ------------
-
-> PREV_STEP_CARD_EN
->
-> Prerequisites
->
-> See the necessary prerequisites to integrate the Checkout API.
->
-> [Integrate Checkout API](/developers/en/docs/checkout-api/prerequisites)
-
-
-> NEXT_STEP_CARD_EN
->
-> Integration test
->
-> Learn how to test the Checkout API integration in your store.
->
-> [Integration Test](/developers/en/docs/checkout-api/integration-test/make-test-purchase)

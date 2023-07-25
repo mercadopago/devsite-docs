@@ -2,7 +2,7 @@
 >
 > h1
 >
-> Enviar pagamento (cartões)
+> Cartões
 
 Com todas as informações coletadas no backend, envie um POST com os atributos necessários ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, faça o envio das informações utilizando nossos SDKs.
 
@@ -205,7 +205,7 @@ curl -X POST \
           "payment_method_id": "visa",
           "issuer_id": 310,
           "payer": {
-            "email": "test@test.com",
+            "email": "PAYER_EMAIL_HERE",
             "identification": {
                 "number": 19119119100
             }
@@ -229,7 +229,7 @@ curl -X POST \
           "payment_method_id": "visa",
           "issuer_id": 310,
           "payer": {
-            "email": "test@test.com",
+            "email": "PAYER_EMAIL_HERE",
             "identification": {
                 "number": 19119119100,
                 "type": "CPF"
@@ -260,6 +260,12 @@ curl -X POST \
 
 O callback de onSubmit do Brick contém todos os dados necessários para a criação de um pagamento, porém, caso deseje, é possível incluir detalhes adicionais, o que pode facilitar o reconhecimento da compra por parte do comprador e aumentar a taxa de aprovação dos pagamentos.
 
-Para fazer isso, adicione campos relevantes ao objeto enviado, que vem na resposta do callback onSubmit do Brick. Alguns desses campos são: `description` (esse campo pode ser exibido nos boletos emitidos) e `external_reference` (id da compra no seu site, que permite o reconhecimento da compra mais fácil). Também é possível adicionar dados complementares sobre o comprador. 
+Para fazer isso, adicione campos relevantes ao objeto enviado, que vem na resposta do callback onSubmit do Brick. Alguns desses campos são: `description` (esse campo pode ser exibido nos boletos emitidos) e `external_reference` (id da compra no seu site, que permite o reconhecimento da compra mais fácil). Também é possível adicionar dados complementares sobre o comprador.
 
-> Conheça todos os campos disponíveis para realizar um pagamento completo nas [Referências de API.](/developers/pt/reference/payments/_payments/post)
+> NOTE
+>
+> Importante
+>
+> Recomendamos a adesão do protocolo 3DS 2.0, tendo em vista ampliar a probabilidade de aprovação de seus pagamentos, o qual pode ser feito como descrito [aqui.](/developers/pt/docs/checkout-bricks/how-tos/integrate-3ds)
+
+Conheça todos os campos disponíveis para realizar um pagamento completo nas [Referências de API](/developers/pt/reference/payments/_payments/post).

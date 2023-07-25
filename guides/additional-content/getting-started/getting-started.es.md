@@ -17,9 +17,9 @@ En el caso de las soluciones integrables, el flujo de integración inicial es si
 Con la cuenta ya activa, tienes acceso a dos paneles diferentes con información crucial:
 
 * El [Panel de Negocios](https://www.mercadopago[FAKER][URL][DOMAIN]/subscription-plans/list#from-section=menu) te permite administrar el perfil y la actividad financiera, considerando frentes de caja, facturación, métricas, empleados, catálogo de productos y mucho más.
-* El [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel) te permite administrar integraciones con desarrollo de código.
+* El [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) te permite administrar integraciones con desarrollo de código.
 
-En el [Panel de Negocios](https://www.mercadopago[FAKER][URL][DOMAIN]/subscription-plans/list#from-section=menu) y el [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel), tienes acceso a tus [credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/credentials/credentials), que son contraseñas únicas encargadas de capturar pagos de forma segura en tiendas virtuales y otras aplicaciones, y con las que identificamos una integración en tu cuenta.
+En el [Panel de Negocios](https://www.mercadopago[FAKER][URL][DOMAIN]/subscription-plans/list#from-section=menu) y el [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app), tienes acceso a tus [credenciales](/developers/es/docs/your-integrations/credentials), que son contraseñas únicas encargadas de capturar pagos de forma segura en tiendas virtuales y otras aplicaciones, y con las que identificamos una integración en tu cuenta.
 
 Con las credenciales en mano, puedes integrar las soluciones conectándolas a las plataformas de comercio electrónico en las que estamos presentes o poniendo manos a la obra escribiendo líneas de código.
 

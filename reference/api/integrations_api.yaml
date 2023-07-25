@@ -92,9 +92,33 @@ paths:
                         id:
                           type: string
                           example: "INGENICO_MOVE2500__ING-23976989"
+                        pos_id:
+                          type: integer
+                          description: POS identifier
+                          x-description-i18n:
+                            eng: POS identifier
+                            spa: Identificador del POS
+                            por: Identificador do POS
+                          example: 47792476
+                        store_id: 
+                          type: string
+                          description: STORE identifier
+                          x-description-i18n:
+                            eng: STORE identifier
+                            spa: Identificador de la tienda
+                            por: Identificador da loja
+                          example: 47792478
+                        external_pos_id: 
+                          type: string
+                          description: External_id of the store to which the pos belongs
+                          x-description-i18n:
+                            eng: External_id of the store to which the pos belongs
+                            spa: External_id de la tienda a la que pertenece el POS
+                            por: External_id da loja a qual pertence o POS
+                          example: SUC0101POS
                         operating_mode:
                           type: string
-                          example: "STANDALONE"
+                          example: “PDV” | “STANDALONE”
                   paging:
                     type: object
                     properties:
@@ -215,11 +239,11 @@ paths:
                   example: 1500
                   required: true
                   minimum: 1
-                  description: A positive integer representing how much to charge. The value must have two decimal places in the integer part (e.g., 175 to charge $1.75). The value must be between [100, 250000] (e.g., a value to charge between $1,00 to $250.000,00 ARS)
+                  description: A positive integer representing how much to charge. The value must have two decimal places in the integer part (e.g., 175 to charge $1.75). 
                   x-description-i18n:
-                    eng: A positive integer representing how much to charge. The value must have two decimal places in the integer part (e.g., 175 to charge $1.75). The value must be between [100, 250000] (e.g., a value to charge between $1,00 to $250.000,00 ARS)
-                    spa: Un valor entero positivo que representa cuánto cobrar. El valor debe tener dos decimales en la parte entera (por ejemplo, 175 para cobrar $1,75). El valor debe estar entre [100, 250000] (por ejemplo, un valor a cobrar entre $1,00 y $250.000,00 ARS)
-                    por: Um número inteiro positivo que representa quanto carregar. O valor deve ter duas casas decimais na parte inteira (por exemplo, 175 para cobrar R$ 1,75). O valor deve estar entre [100.250.000] (por exemplo, um recebível entre $ 1,00 e $ 250.000,00 ARS)
+                    eng: A positive integer representing how much to charge. The value must have two decimal places in the integer part (e.g., 175 to charge $1.75). 
+                    spa: Un valor entero positivo que representa cuánto cobrar. El valor debe tener dos decimales en la parte entera (por ejemplo, 175 para cobrar $1,75). 
+                    por: Um número inteiro positivo que representa quanto carregar. O valor deve ter duas casas decimais na parte inteira (por exemplo, 175 para cobrar R$ 1,75). 
                 additional_info:
                   type: object
                   required: true

@@ -16,91 +16,120 @@ If the customized texts are larger than the available space, the displayed text 
 
 Customizable texts are displayed below.
 
+[[[
 ```javascript
 const settings = {
-  "customization": {
-      "visual": {
-          "texts": {
-               "formTitle": "",
-               "emailSectionTitle": "",
-               "installmentsSectionTitle": "",
-               "cardholderName": {
-                   "label": "",
-                   "placeholder": ""
-               },
-               "email": {
-                   "label": "",
-                   "placeholder": ""
-               },
-               "cardholderIdentification": {
-                   "label": ""
-               },
-               "cardNumber": {
-                   "label": "",
-                   "placeholder": ""
-               },
-               "expirationDate": {
-                   "label": "",
-                   "placeholder": ""
-               },
-               "securityCode": {
-                   "label": "",
-                   "placeholder": ""
-               },
-               "selectInstallments": "",
-               "selectIssuerBank": "",
-               "formSubmit": "",
-               "payerFirstName": {
-               "placeholder": "",
-                   "label": ""
-               },
-               "payerLastName": {
-                   "placeholder": "",
-                   "label": ""
-               },
-               "zipCode": {
-                   "placeholder": "",
-                   "label": ""
-               },
-               "addressState": {
-                   "placeholder": "",
-                   "label": ""
-               },
-               "addressCity": {
-                   "placeholder": "",
-                   "label": ""
-               },
-               "addressNeighborhood": {
-                   "placeholder": "",
-                   "label": ""
-               },
-               "addressStreet": {
-                   "placeholder": "",
-                   "label": ""
-               },
-               "addressNumber": {
-                   "label": ""
-               },
-               "addressComplement": {
-                   "label": ""
-               },
-               "paymentMethods": {
-                   "newCreditCardTitle": "",
-                   "creditCardTitle": "",
-                   "creditCardValueProp": "",
-                   "newDebitCardTitle": "",
-                   "debitCardTitle": "",
-                   "debitCardValueProp": "",
-                   "ticketTitle": "",
-                   "ticketValueProp": "",
-                   "bankTransferTitle": "",
-                   "bankTransferValueProp": "",
-                 }
-           }
-      },
-  }
+    "customization": {
+        "visual": {
+            "texts": {
+                "formTitle": "",
+                "emailSectionTitle": "",
+                "installmentsSectionTitle": "",
+                "cardholderName": {
+                    "label": "",
+                    "placeholder": ""
+                },
+                "email": {
+                    "label": "",
+                    "placeholder": ""
+                },
+                "cardholderIdentification": {
+                    "label": ""
+                },
+                "cardNumber": {
+                    "label": "",
+                    "placeholder": ""
+                },
+                "expirationDate": {
+                    "label": "",
+                    "placeholder": ""
+                },
+                "securityCode": {
+                    "label": "",
+                    "placeholder": ""
+                },
+                "entityType": {
+                    "placeholder": "",
+                    "label": ""
+                },
+                "financialInstitution": {
+                    "placeholder": "",
+                    "label": ""
+                },
+                "selectInstallments": "",
+                "selectIssuerBank": "",
+                "formSubmit": "",
+                "paymentMethods": {
+                    "newCreditCardTitle": "aaaaaa",
+                    "creditCardTitle": "bbbbbbb",
+                    "creditCardValueProp": " cccccc",
+                    "newDebitCardTitle": "aaaaaaa",
+                    "debitCardTitle": "ddddd",
+                    "debitCardValueProp": "",
+                    "ticketTitle": "",
+                    "ticketValueProp": "",
+                }
+            }
+        },
+    }
 };
 ```
+```react-jsx
+const customization = {
+  visual: {
+    texts: {
+      formTitle: "string",
+      emailSectionTitle: "string",
+      installmentsSectionTitle: "string",
+      cardholderName: {
+        label: "string",
+        placeholder: "string",
+      },
+      email: {
+        label: "string",
+        placeholder: "string",
+      },
+      cardholderIdentification: {
+        label: "string",
+      },
+      cardNumber: {
+        label: "string",
+        placeholder: "string",
+      },
+      expirationDate: {
+        label: "string",
+        placeholder: "string",
+      },
+      securityCode: {
+        label: "string",
+        placeholder: "string",
+      },
+      entityType: {
+        placeholder: "",
+        label: "",
+      },
+      financialInstitution: {
+        placeholder: "",
+        label: "",
+      },
+      selectInstallments: "string",
+      selectIssuerBank: "string",
+      formSubmit: "string",
+      paymentMethods: {
+        newCreditCardTitle: "string",
+        creditCardTitle: "string",
+        creditCardValueProp: "string",
+        newDebitCardTitle: "string",
+        debitCardTitle: "string",
+        debitCardValueProp: "string",
+        ticketTitle: "string",
+        ticketValueProp: "string",
+      },
+    },
+  },
+};
+```
+]]]
 
 To change the texts of offline payment methods (tickets, Pix and ATM, for example), within the `paymentMethods` object, use the pattern `{paymentMethodId}{ValueProp/Title} `.
 

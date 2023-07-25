@@ -3,7 +3,6 @@ Puedes usar tarjetas de prueba de métodos de pago locales y simular diferentes 
 Para eso, dependiendo de tu país, utiliza una de las tarjetas que te proporcionamos a continuación.
 
 ----[mla]----
-
 | Tarjeta | Número | Código de seguridad | Fecha de caducidad |
 | :--- | :---: | :---: | :---: |
 | Mastercard | 5031 7557 3453 0604 | 123 | 11/25 |
@@ -14,8 +13,8 @@ Para **probar diferentes resultados de pago**, completa el estado deseado en el 
  
 | Estado de pago | Descripción | Documento de identidad |
 | --- | --- | --- |
-| `APRO` | Pago aprobado | DNI del usuario de prueba |
-| `OTHE` | Rechazado por error general | DNI del usuario de prueba |
+| `APRO` | Pago aprobado | (DNI) 12345678 |
+| `OTHE` | Rechazado por error general | (DNI) 12345678 |
 | `CONT` | Pendiente de pago | - | 
 | `CALL` | Rechazado con validación para autorizar | - |
 | `FUND` | Rechazado por importe insuficiente | - |
@@ -23,16 +22,8 @@ Para **probar diferentes resultados de pago**, completa el estado deseado en el 
 | `EXPI` | Rechazado debido a un problema de fecha de vencimiento | - |
 | `FORM` | Rechazado debido a un error de formulario | - |
 
-> WARNING
->
-> Importante
->
-> El DNI asociado a la tarjeta debe ser el mismo que el del usuario de prueba que realiza la compra. Para confirmar esta información, en tu cuenta de usuario de Mercado Pago, accede a **Tu perfil > Tus datos** y revisa el campo **Documento**, asegurando que será el mismo asociado a la tarjeta.
-
 ------------
-
 ----[mlb]----
-
 | Tarjeta | Número | Código de seguridad | Fecha de caducidad |
 | :--- | :---: | :---: | :---: |
 | Mastercard | 5031 7557 3453 0604 | 123 | 11/25 |
@@ -53,9 +44,7 @@ Para **probar diferentes resultados de pago**, completa el estado deseado en el 
 | `FORM` | Rechazado debido a un error de formulario | - |
 
 ------------
-
 ----[mlc]----
-
 | Tarjeta | Número | Código de seguridad | Fecha de caducidad |
 | :--- | :---: | :---: | :---: |
 | Mastercard | 5416 7526 0258 2580 | 123 | 11/25 |
@@ -76,13 +65,11 @@ Para **probar diferentes resultados de pago**, completa el estado deseado en el 
 | `FORM` | Rechazado debido a un error de formulario | - |
 
 ------------
-
 ----[mco]----
-
 | Tarjeta | Número | Código de seguridad | Fecha de caducidad |
 | :--- | :---: | :---: | :---: |
-| Mastercard | 5254 1336 7440 3564 | 123 | 11/25 |
-| Visa | 4013 5406 8274 6260 | 123 | 11/25 |
+| Mastercard | 5120 6944 7061 6271 | 123 | 11/25 |
+| Visa | 4099 8333 6166 3634 | 123 | 11/25 |
 | American Express | 3743 781877 55283 | 1234 | 11/25 |
 
 Para **probar diferentes resultados de pago**, completa el estado deseado en el nombre del titular de la tarjeta:
@@ -99,11 +86,10 @@ Para **probar diferentes resultados de pago**, completa el estado deseado en el 
 | `FORM` | Rechazado debido a un error de formulario | - |
 
 ------------
-
 ----[mlm]----
-
 | Tarjeta | Número | Código de seguridad | Fecha de caducidad |
 | :--- | :---: | :---: | :---: |
+| Mastercard | 5474 9254 3267 0366 | 123 | 11/25 |
 | Visa | 4075 5957 1648 3764 | 123 | 11/25 |
 
 Para **probar diferentes resultados de pago**, completa el estado deseado en el nombre del titular de la tarjeta:
@@ -120,9 +106,7 @@ Para **probar diferentes resultados de pago**, completa el estado deseado en el 
 | `FORM` | Rechazado debido a un error de formulario |
 
 ------------
-
 ----[mlu]----
-
 | Tarjeta | Número | Código de seguridad | Fecha de caducidad |
 | :--- | :---: | :---: | :---: |
 | Mastercard | 5031 7557 3453 0604 | 123 | 11/25 |
@@ -142,9 +126,7 @@ Para **probar diferentes resultados de pago**, completa el estado deseado en el 
 | `FORM` | Rechazado debido a un error de formulario | - |
 
 ------------
-
 ----[mpe]----
-
 | Tarjeta | Número | Código de seguridad | Fecha de caducidad |
 | :--- | :---: | :---: | :---: |
 | Mastercard | 5031 7557 3453 0604 | 123 | 11/25 |

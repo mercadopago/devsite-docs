@@ -84,7 +84,7 @@ paths:
                               eng: Image URL.
                               spa: URL de imagen
                               por: URL da imagem
-                            example: https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium@2x.png
+                            example: https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium2x.png
                           category_id:
                             type: string
                             description: It is the category of the purchased item. It is possible to mention two main forms of category_id - categories inserted through a code, such as “MLB189908”, or those that are a tag, such as “phone”.
@@ -134,6 +134,14 @@ paths:
                             spa: Es el campo de apellido del comprador.
                             por: É o campo do sobrenome do comprador.
                           example: Test
+                        e-mail:
+                          type: string
+                          description: Payer's e-mail
+                          x-description-i18n:
+                            eng: Payer's e-mail
+                            spa: Email del comprador
+                            por: E-mail do comprador
+                          example: test_user_123@testuser.com
                         phone:
                           type: object
                           description: Buyer's phone.
@@ -265,23 +273,6 @@ paths:
                                 eng: Delivery address apartment number.
                                 spa: Número de departamento de la dirección de entrega.
                                 por: Número do apartamento do endereço de entrega.
-                    barcode:
-                      type: object
-                      description: Barcode information.
-                      x-description-i18n:
-                        eng: Barcode information.
-                        spa: Información de código de barra
-                        por: Informação de código de barra
-                      properties:
-                        type:
-                          $ref: '#/components/schemas/barcode_type'
-                        content:
-                          type: string
-                          description: Barcode generated.
-                          x-description-i18n:
-                            eng: Barcode generated.
-                            spa: Código de barras generado
-                            por: Código de barras gerado
                         width:
                           type: number
                           description: Width of barcode.
@@ -513,6 +504,7 @@ paths:
                     spa: Identificador del token card. (obligatorio para tarjeta de crédito). El token de la tarjeta se crea a partir de la información de la propia tarjeta, aumentando la seguridad durante el flujo de pago. Además, una vez que el token se usa en una compra determinada, se descarta, lo que requiere la creación de un nuevo token para futuras compras.
                     por: Identificador de token card (obrigatório para cartão de crédito). O token do cartão é criado a partir das próprias informações do cartão, aumentando a segurança durante o fluxo do pagamento. Além disso, uma vez que o token é utilizado em determinada compra, ele é descartado, sendo necessária a criação de um novo token para compras futuras. 
                   required: true
+                  example: "ff8080814c11e237014c1ff593b57b4d"
                 transaction_amount:
                   type: number
                   description: Product’s cost. Example - The sale of a product for R$100.00 will have a transactionAmount = 100.
@@ -573,11 +565,11 @@ paths:
                   money_release_date:
                     type: string
                     example: 2019-07-24T14:47:58.000Z
-                    description: Date on which the payment is settled from the Payer's account (the payer) and is made available in the Mercado Pago account of the Collector (the one who receives the payment).
+                    description: Date on which the payment is settled and the money is made available in the Mercado Pago account of the Collector (the one who receives the payment).
                     x-description-i18n:
-                      eng: Date on which the payment is settled from the Payer's account (the payer) and is made available in the Mercado Pago account of the Collector (the one who receives the payment).
-                      spa: Fecha en que se liquida el pago de la cuenta del Payer (el pagador) y se pone a disposición en la cuenta de Mercado Pago del Collector (el que recibe el pago).
-                      por: Data em que o pagamento é liquidado da conta do Payer (o pagador) e é disponibilizado na conta Mercado Pago do Collector (aquele que recebe o pagamento).
+                      eng: Date on which the payment is settled and the money is made available in the Mercado Pago account of the Collector (the one who receives the payment).
+                      spa: Fecha en que se liquida el pago y se pone a disposición el dinero en la cuenta de Mercado Pago del Collector (el que recibe el pago).
+                      por: Data em que o pagamento é liquidado e o dinheiro é disponibilizado na conta Mercado Pago do Collector (aquele que recebe o pagamento).
                   operation_type:
                     $ref: '#/components/schemas/operation_type'
                   issuer_id:
@@ -806,7 +798,7 @@ paths:
                             picture_url:
                               type: string
                               example: 
-                                https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium@2x.png
+                                https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium2x.png
                               description: Image URL.
                               x-description-i18n:
                                 eng: Image URL.
@@ -1342,7 +1334,13 @@ paths:
                       - 2006--Card Token not found.
                       - 2007--Connection to Card Token API fail.
                       - 2009--Card token issuer can't be null.
+                      - 2034-–Invalid users involved 2041 – GET to API APPLICATION fail. 
                       - 2060--The customer can't be equal to the collector.
+                      - 2062-–Invalid card token.
+                      - 2072-–Invalid value for transaction_amount. 
+                      - 2077--Deferred capture not supported.
+                      - 2123-–Invalid operators users involved.
+                      - 2131–-Cannot infer Payment Method.
                       - 3000--You must provide your cardholder_name with your card data.
                       - 3001--You must provide your cardissuer_id with your card data.
                       - 3003--Invalid card_token_id.
@@ -1373,6 +1371,8 @@ paths:
                       - 3028--Invalid payment_method_id.
                       - 3029--Invalid card expiration month.
                       - 3030--Invalid card expiration year.
+                      - 3031-–Secure_code_id can't be null.
+                      - 3032–-Invalid security_code_length 3033 3034 - Invalid card_number_validation.
                       - 4000--card atributte can't be null.
                       - 4001--payment_method_id atributte can't be null.
                       - 4002--transaction_amount atributte can't be null.
@@ -1403,6 +1403,7 @@ paths:
                       - 4039--application_fee cannot be a negative value.
                       - 4050--payer.email must be a valid email.
                       - 4051--payer.email must be shorter than 254 characters.
+                      - 6033--User unavailable.
                       - 7523--Invalid expiration date.
         '403':
           description: Error
@@ -1516,11 +1517,11 @@ paths:
                   money_release_date:
                     type: string
                     example: 2017-09-14T11:26:38.000Z
-                    description: Date on which the payment is settled from the Payer's account (the payer) and is made available in the Mercado Pago account of the Collector (the one who receives the payment).
+                    description: Date on which the payment is settled and the money is made available in the Mercado Pago account of the Collector (the one who receives the payment).
                     x-description-i18n:
-                      eng: Date on which the payment is settled from the Payer's account (the payer) and is made available in the Mercado Pago account of the Collector (the one who receives the payment).
-                      spa: Fecha en que se liquida el pago de la cuenta del Payer (el pagador) y se pone a disposición en la cuenta de Mercado Pago del Collector (el que recibe el pago).
-                      por: Data em que o pagamento é liquidado da conta do Payer (o pagador) e é disponibilizado na conta Mercado Pago do Collector (aquele que recebe o pagamento).
+                      eng: Date on which the payment is settled and the money is made available in the Mercado Pago account of the Collector (the one who receives the payment).
+                      spa: Fecha en que se liquida el pago y se pone a disposición el dinero en la cuenta de Mercado Pago del Collector (el que recibe el pago).
+                      por: Data em que o pagamento é liquidado e o dinheiro é disponibilizado na conta Mercado Pago do Collector (aquele que recebe o pagamento).
                   operation_type:
                     $ref: '#/components/schemas/operation_type'
                   issuer_id:
@@ -2056,13 +2057,6 @@ paths:
                     eng: Payment’s expiration date. The valid format of the attribute is as follows - "yyyy-MM-dd'T'HH:mm:ssz". Ex - 2022-11-17T09:37:52.000-04:00.
                     spa: Fecha de vencimiento del pago. El formato válido del atributo es el siguiente - "yyyy-MM-dd'T'HH:mm:ssz". Por ejemplo - 2022-11-17T09:37:52.000-04:00.
                     por: Data de expiração do pagamento. O formato válido do atributo é o seguinte - "yyyy-MM-dd'T'HH:mm:ssz". Por exemplo - 2022-11-17T09:37:52.000-04:00.
-                metadata:
-                  type: object
-                  description: This is an optional key-value object where the customer can add additional information that needs to be recorded at checkout. Ex - {"payments_group_size":1,"payments_group_timestamp":"2022-11-18T15:01:44Z","payments_group_uuid":"96cfd2a4-0b06-4dea-b25f-c5accb02ba10"}.
-                  x-description-i18n:
-                    eng: This is an optional key-value object where the customer can add additional information that needs to be recorded at checkout. Ex - {"payments_group_size":1,"payments_group_timestamp":"2022-11-18T15:01:44Z","payments_group_uuid":"96cfd2a4-0b06-4dea-b25f-c5accb02ba10"}.
-                    spa: Este es un objeto clave-valor opcional en el que el cliente puede agregar información adicional que debe registrarse al finalizar la compra. Por ejemplo - {"payments_group_size":1,"payments_group_timestamp":"2022-11-18T15:01:44Z","payments_group_uuid":"96cfd2a4-0b06-4dea-b25f-c5accb02ba10"}.
-                    por: Este é um objeto opcional do tipo chave-valor  no qual o cliente  pode adicionar informações adicionais que precisam ser registradas no pagamento. Ex. - {"payments_group_size":1,"payments_group_timestamp":"2022-11-18T15:01:44Z","payments_group_uuid":"96cfd2a4-0b06-4dea-b25f-c5accb02ba10"}.
                 status:
                   type: string
                   description: It is the current state of payment. It can be two following types.
@@ -2140,11 +2134,11 @@ paths:
                   money_release_date:
                     type: string
                     example: 2019-07-24T14:47:58.000Z
-                    description: Date on which the payment is settled from the Payer's account (the payer) and is made available in the Mercado Pago account of the Collector (the one who receives the payment).
+                    description: Date on which the payment is settled and the money is made available in the Mercado Pago account of the Collector (the one who receives the payment).
                     x-description-i18n:
-                      eng: Date on which the payment is settled from the Payer's account (the payer) and is made available in the Mercado Pago account of the Collector (the one who receives the payment).
-                      spa: Fecha en que se liquida el pago de la cuenta del Payer (el pagador) y se pone a disposición en la cuenta de Mercado Pago del Collector (el que recibe el pago).
-                      por: Data em que o pagamento é liquidado da conta do Payer (o pagador) e é disponibilizado na conta Mercado Pago do Collector (aquele que recebe o pagamento).
+                      eng: Date on which the payment is settled and the money is made available in the Mercado Pago account of the Collector (the one who receives the payment).
+                      spa: Fecha en que se liquida el pago y se pone a disposición el dinero en la cuenta de Mercado Pago del Collector (el que recibe el pago).
+                      por: Data em que o pagamento é liquidado e o dinheiro é disponibilizado na conta Mercado Pago do Collector (aquele que recebe o pagamento).
                   operation_type:
                     $ref: '#/components/schemas/operation_type'
                   issuer_id:
@@ -2376,7 +2370,7 @@ paths:
                                 por: Descrição do artigo
                             picture_url:
                               type: string
-                              example: https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium@2x.png
+                              example: https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium2x.png
                               description: Image URL.
                               x-description-i18n:
                                 eng: Image URL.
@@ -3116,11 +3110,11 @@ paths:
                           money_release_date:
                             type: string
                             example: 2017-09-14T11:26:38.000Z
-                            description: Date on which the payment is settled from the Payer's account (the payer) and is made available in the Mercado Pago account of the Collector (the one who receives the payment).
+                            description: Date on which the payment is settled and the money is made available in the Mercado Pago account of the Collector (the one who receives the payment).
                             x-description-i18n:
-                              eng: Date on which the payment is settled from the Payer's account (the payer) and is made available in the Mercado Pago account of the Collector (the one who receives the payment).
-                              spa: Fecha en que se liquida el pago de la cuenta del Payer (el pagador) y se pone a disposición en la cuenta de Mercado Pago del Collector (el que recibe el pago).
-                              por: Data em que o pagamento é liquidado da conta do Payer (o pagador) e é disponibilizado na conta Mercado Pago do Collector (aquele que recebe o pagamento).
+                              eng: Date on which the payment is settled and the money is made available in the Mercado Pago account of the Collector (the one who receives the payment).
+                              spa: Fecha en que se liquida el pago y se pone a disposición el dinero en la cuenta de Mercado Pago del Collector (el que recibe el pago).
+                              por: Data em que o pagamento é liquidado e o dinheiro é disponibilizado na conta Mercado Pago do Collector (aquele que recebe o pagamento).
                           operation_type:
                             $ref: '#/components/schemas/operation_type'
                           issuer_id:

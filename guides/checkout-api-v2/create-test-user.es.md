@@ -16,14 +16,3 @@ Para crear un usuario de prueba, envíe su **credencial de producción** _Access
 > Importante
 >
 > Puedes generar hasta 10 cuentas de usuarios de prueba en simultáneo. Por eso, te recomendamos guardar el email y password de cada uno. Además, los usuarios de prueba caducan luego de 60 días sin actividad en Mercado Pago. Tanto el comprador como el vendedor deben ser usuarios de prueba.
-
-> NEXT_STEP_CARD_ES
->
-> Hacer compra de prueba
->
-> Obtenga información sobre cómo realizar una compra para probar la integración de Checkout API.
->
-> [Hacer compra de prueba](/developers/es/docs/checkout-api/integration-test/make-test-purchase)
-
-
-

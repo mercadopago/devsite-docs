@@ -1,6 +1,10 @@
+# Ocultar elemento
+
+Ve a continuación cómo ocultar elementos de Card Payment Brick.
+
 > CLIENT_SIDE
 >
-> h1
+> h2
 >
 > Ocultar título y banderas
 
@@ -11,7 +15,8 @@
 | Tipo  | Boolean  |
 | Observaciones  | Cuando **true**, oculta la línea de título y las banderas aceptadas.  |
 
-```javascript
+[[[
+```Javascript
 const settings = {
    ...,
    customization: {
@@ -21,10 +26,18 @@ const settings = {
    }
 }
 ```
+```react-jsx
+const customization = {
+ visual: {
+   hideFormTitle: true
+ }
+};
+```
+]]]
 
 > CLIENT_SIDE
 >
-> h1
+> h2
 >
 > Ocultar botón de pago
 
@@ -35,15 +48,16 @@ const settings = {
 | Tipo  | Boolean  |
 | Observaciones  | Cuando true, el botón de envío del formulario no se muestra y pasa a ser necesario usar la función getFormData para obtener los datos del formulario (ver el ejemplo a continuación).  |
 
+[[[
 ```javascript
 const settings = {
     ...,
     callbacks: {
         onReady: () => {
-            // callback chamado quando o Brick estiver pronto
+            // callback llamado cuando el ladrillo está listo
         },
         onError: (error) => { 
-            // callback chamado para todos os casos de erro do Brick
+            // callback llamado para todos los casos de error de Brick
         },
     },
     customization: {
@@ -53,12 +67,22 @@ const settings = {
     }
 }
 ```
+```react-jsx
+const customization = {
+ visual: {
+   hidePaymentButton: true
+ }
+};
+```
+]]]
+
+Dado que el botón de pago predeterminado se ha ocultado, deberá agregar algún reemplazo. Los siguientes bloques de código ejemplifican cómo implementar su botón de pago personalizado.
 
 ```html
 <button type="button" onclick="createPayment();">Custom Payment Button</button>
 ```
 
-```javascript
+```Javascript
 function createPayment(){
     window.cardPaymentBrickController.getFormData()
         .then((cardFormData) => {
@@ -72,11 +96,10 @@ function createPayment(){
             })
         })
         .catch((error) => {
-            // tratamiento de error al intentar llamar getFormData()
+            // manejo de errores al llamar a getFormData()
         });
 };
 ```
-
 
 > NOTE
 >

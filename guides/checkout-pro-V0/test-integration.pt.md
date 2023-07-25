@@ -10,7 +10,7 @@
 
 ### 1. Configure o checkout com os dados do seu usuário vendedor
 
-Gere uma preferência com as [credenciais](/developers/pt/docs/checkout-pro/additional-content/credentials) do usuário de teste que quiser usar como vendedor no fluxo de pagamento.
+Gere uma preferência com as [credenciais](/developers/pt/docs/checkout-pro/additional-content/your-integrations/credentials) do usuário de teste que quiser usar como vendedor no fluxo de pagamento.
 
 ### 2. Faça um pagamento de teste com o seu usuário comprador
 
@@ -19,7 +19,7 @@ Gere uma preferência com as [credenciais](/developers/pt/docs/checkout-pro/addi
 Ao abrir o checkout criado com os dados do seu usuário vendedor:
 
 1. Selecione `Cartão` como meio de pagamento.
-2. Insira os dados de um [cartão de teste](/developers/pt/docs/checkout-pro/additional-content/test-cards).
+2. Insira os dados de um [cartão de teste](/developers/pt/docs/checkout-pro/additional-content/your-integrations/test/cards).
 3. Informe o e-mail desejado.
 
 #### Comprando como usuário cadastrado
@@ -28,7 +28,7 @@ Ao abrir o checkout criado com os dados do seu usuário vendedor:
 
 1. Acesse uma conta Mercado Pago usando o seu usuário de teste comprador.
 2. Selecione `Cartão` como meio de pagamento.
-3. Selecione um dos cartões previamente salvos ou insira os dados de um [cartão de teste](/developers/pt/docs/checkout-pro/additional-content/test-cards).
+3. Selecione um dos cartões previamente salvos ou insira os dados de um [cartão de teste](/developers/pt/docs/checkout-pro/additional-content/your-integrations/test/cards).
 
 >WARNING
 >
@@ -43,7 +43,7 @@ Ao abrir o checkout criado com os dados do seu usuário vendedor:
 
 ## Receba os pagamentos
 
-Para começar a cobrar, você deve [ativar as suas credenciais](/developers/pt/docs/checkout-pro/additional-content/credentials).
+Para começar a cobrar, você deve [ativar as suas credenciais](/developers/pt/docs/checkout-pro/additional-content/your-integrations/credentials).
 
 Antes ativá-las, certifique-se de que as credenciais usadas na sua integração são as da conta que deverá receber o dinheiro das vendas.
 

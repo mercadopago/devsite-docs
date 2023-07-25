@@ -4,6 +4,13 @@ Neste método de integração, o responsável pela integração fica a cargo de 
 
 Na integração via Métodos Core, o integrador decide quando buscar as informações sobre o tipo de documento, além das informações do cartão (emissor e parcelas). Com isso, possui total flexibilidade na construção da experiência do fluxo de checkout.
 
+> NOTE
+>
+> Importante
+>
+> Além das opções disponíveis nesta documentação, também é possível integrar **pagamentos com cartão** utilizando o **Brick de CardPayment**. Veja a documentação [Renderização padrão](/developers/pt/docs/checkout-bricks/card-payment-brick/default-rendering#editor_2) do CardPayment para mais detalhes. 
+
+
 Confira abaixo o diagrama que ilustra o processo de pagamento via cartão utilizando Métodos Core.
 
 ![API-integration-flowchart](/images/api/api-integration-flowchart-coremethods-pt.png)
@@ -18,15 +25,17 @@ A primeira etapa do processo de integração de pagamentos com cartões é a **c
   <script src="https://sdk.mercadopago.com/js/v2"></script>
 </body>
 ```
-]]]
+```bash
+npm install @mercadopago/sdk-js
 
+```
+]]]
 
 > NOTE
 >
 > Importante
 >
 > A informação do cartão será convertida em um token para que envie os dados aos seus servidores de modo seguro.
-
 
 ## Configurar credencial
 
@@ -35,13 +44,19 @@ As credenciais são chaves únicas com as quais identificamos uma integração n
 Esta é a primeira etapa de uma estrutura completa de código que deverá ser seguida para a correta integração do pagamento via cartão. Atente-se aos blocos abaixo para adicionar aos códigos conforme indicado.
 
 [[[
+```html
+<script>
+  const mp = new MercadoPago("YOUR_PUBLIC_KEY");
+</script>
+```
 ```javascript
-  <script>
-    const mp = new MercadoPago("YOUR_PUBLIC_KEY");
-  </script>
+import { loadMercadoPago } from "@mercadopago/sdk-js";
+
+await loadMercadoPago();
+const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
+
 ```
 ]]]
-
 
 ## Adicionar formulário de pagamento
 
@@ -49,7 +64,7 @@ A captura dos dados do cartão (número do cartão, código de segurança e data
 
 Para obter esses dados e processar os pagamentos, insira o HTML abaixo diretamente no projeto.
 
-
+----[mla, mlu, mpe, mco, mlb, mlc]----
 [[[
 ```html
 
@@ -95,6 +110,50 @@ Para obter esses dados e processar os pagamentos, insira o HTML abaixo diretamen
 ```
 ]]]
 
+------------
+----[mlm]----
+[[[
+```html
+
+  <style>
+    #form-checkout {
+      display: flex;
+      flex-direction: column;
+      max-width: 600px;
+    }
+
+    .container {
+      height: 18px;
+      display: inline-block;
+      border: 1px solid rgb(118, 118, 118);
+      border-radius: 2px;
+      padding: 1px 2px;
+    }
+  </style>
+  <form id="form-checkout" action="/process_payment" method="POST">
+    <div id="form-checkout__cardNumber" class="container"></div>
+    <div id="form-checkout__expirationDate" class="container"></div>
+    <div id="form-checkout__securityCode" class="container"></div>
+    <input type="text" id="form-checkout__cardholderName" placeholder="Titular do cartão" />
+    <select id="form-checkout__issuer" name="issuer">
+      <option value="" disabled selected>Banco emissor</option>
+    </select>
+    <select id="form-checkout__installments" name="installments">
+      <option value="" disabled selected>Parcelas</option>
+    </select>
+    <input type="email" id="form-checkout__email" name="email" placeholder="E-mail" />
+
+    <input id="token" name="token" type="hidden">
+    <input id="paymentMethodId" name="paymentMethodId" type="hidden">
+    <input id="transactionAmount" name="transactionAmount" type="hidden" value="100">
+    <input id="description" name="description" type="hidden" value="Nome do Produto">
+
+    <button type="submit" id="form-checkout__submit">Pagar</button>
+  </form>
+```
+]]]
+
+------------
 
 ## Inicializar campos de cartão
 
@@ -117,13 +176,12 @@ Ao finalizar a inicialização dos campos, as divs conterão os iframes com os i
 ```
 ]]]
 
-
+----[mla, mlu, mpe, mco, mlb, mlc]----
 ## Obter tipos de documento
 
 Após configurar a credencial, adicionar o formulário de pagamento e inicializar os campos de cartão, é preciso obter os tipos de documento que farão parte do preenchimento do formulário para pagamento.
 
 Incluindo o elemento do tipo `select` com o id: `form-checkout__identificationType` que está no formulário, será possível preencher automaticamente as opções disponíveis quando chamar a função abaixo.
-
 
 [[[
 ```javascript
@@ -165,7 +223,6 @@ Incluindo o elemento do tipo `select` com o id: `form-checkout__identificationTy
 ## Obter métodos de pagamento do cartão
 
 Nesta etapa ocorre a validação dos dados dos compradores no momento em que realizam o preenchimento dos campos necessários para efetuar o pagamento. Para que seja possível identificar o meio de pagamento utilizado pelo comprador, insira o código abaixo diretamente no projeto. 
-
 
 [[[
 ```javascript
@@ -241,13 +298,11 @@ Nesta etapa ocorre a validação dos dados dos compradores no momento em que rea
 ```
 ]]]
 
-
 ## Obter banco emissor
 
 Durante o preenchimento do formulário de pagamento, é possível identificar o banco emissor do cartão, evitando conflitos de processamento de dados entre os diferentes emissores. Além disso, é a partir dessa identificação que as opções de parcelamento são exibidas.
 
 O banco emissor é obtido através do parâmetro `issuer_id`. Para obtê-lo, utilize o Javascript abaixo.
-
 
 [[[
 ```javascript
@@ -274,12 +329,9 @@ O banco emissor é obtido através do parâmetro `issuer_id`. Para obtê-lo, uti
 ```
 ]]]
 
-
-
 ## Obter quantidade de parcelas
 
 Um dos campos obrigatórios que compõem o formulário de pagamento é a **quantidade de parcelas**. Para ativá-lo e exibir as parcelas disponíveis no ato do pagamento, utilize a função abaixo. 
-
 
 [[[
 ```javascript
@@ -300,8 +352,6 @@ Um dos campos obrigatórios que compõem o formulário de pagamento é a **quant
     }
 ```
 ]]]
-
-
 
 ## Criar token do cartão
 
@@ -340,7 +390,6 @@ O token do cartão é criado a partir das próprias informações do cartão, au
 ```
 ]]]
 
-
 ## Enviar pagamento
 
 Para finalizar o processo de integração de pagamento via cartão, é necessário que o backend receba a informação do formulário com o token gerado e os dados completos conforme etapas anteriores.
@@ -353,7 +402,6 @@ Com todas as informações coletadas no backend, envie um POST com os atributos 
 > Importante
 >
 > Para aumentar as chances de aprovação do pagamento e evitar que a análise antifraude não autorize a transação, recomendamos inserir o máximo de informação sobre o comprador ao realizar a requisição. Para mais detalhes sobre como aumentar as chances de aprovação, veja [Como melhorar a aprovação dos pagamentos](/developers/pt/docs/checkout-api/how-tos/improve-payment-approval).
-
 
 [[[
 ```php
@@ -577,22 +625,4 @@ curl -X POST \
 >
 > Importante
 >
-> Ao criar um pagamento é possível receber 3 status diferentes: "Pendente", "Rejeitado" e "Aprovado". Para acompanhar as atualizações é necessário configurar seu sistema para receber as notificações de pagamentos e outras atualizações de status. Veja [Notificações](/developers/pt/docs/checkout-api/additional-content/notifications/introduction) para mais detalhes.
-
-
-> PREV_STEP_CARD_PT
->
-> Pré-requisitos
->
-> Veja os pré-requisitos necessários para integrar o Checkout Transparente.
->
-> [Integrar Checkout Transparente](/developers/pt/docs/checkout-api/prerequisites)
-
-
-> NEXT_STEP_CARD_PT
->
-> Teste de integração
->
-> Saiba como testar a integração do Checkout Transparente em sua loja.
->
-> [Teste de integração](/developers/pt/docs/checkout-api/test-integration/create-test-user)
+> Ao criar um pagamento é possível receber 3 status diferentes: "Pendente", "Rejeitado" e "Aprovado". Para acompanhar as atualizações é necessário configurar seu sistema para receber as notificações de pagamentos e outras atualizações de status. Veja [Notificações](/developers/pt/docs/checkout-api/additional-content/your-integrations/notifications) para mais detalhes.

@@ -4,7 +4,7 @@ A dispute occurs when **you want to argue the chargeback claim** with supporting
 
 All the information necessary to manage chargeback disputes made can be found here:
 
-1. Configure [IPN notifications](/developers/panel/notifications/ipn) on your dashboard and enable the **Chargebacks** option
+1. Configure [IPN notifications](/developers/panel/ipn) on your dashboard and enable the **Chargebacks** option
    
 2. Check all the information related to a chargeback using the [Get chargeback request](/developers/pt/reference/chargebacks/_chargebacks_id/get)
    1. Check if the chargeback [can be covered](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/294) and assure whether any documentation is required, via the `coverage_eligible` and `documentation_required` fields, respectively.
@@ -34,7 +34,18 @@ https://api.mercadopago.com/v1/chargebacks/ID/documentation
 >
 > Files can be `.jpg`, `.png` or `.pdf` and should not exceed 10mb overall.
 
+----[mla, mlm, mpe, mco, mlu, mlc]----
+
 If the documentation has been successfully uploaded, the API will answer with `200 OK`, and the `documentation_status` value will change to `review_pending`.
+
+------------
+
+----[mlb]----
+
+If the documentation is successfully uploaded to the site, the API will respond with status `200 OK` and keep the value of `documentation_status` as `pending`. After reviewing the documentation, this same value is changed to `valid` or `not supplied`.
+
+------------
+
 
 4. Upon resolution, a new IPN notification will be sent so that you can verify the case. Check the dispute using the [Get Chargeback](/developers/pt/reference/chargebacks/_chargebacks_id/get) method. The `coverage_applied` value could have taken on one of the possible values:
 

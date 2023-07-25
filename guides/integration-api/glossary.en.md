@@ -17,11 +17,12 @@ Some terms are new and you may not be familiar with them. Use this glossary so y
 
 | Term | Description |
 | --- | --- |
-| Abandoned | Final status of a payment intent when hasn’t been processed after a certain time. |
+| Open | Initial status of a payment intent when creating it from the POS. |
+| On Terminal | Intermediate status of a payment intent when obtaining it from the Point device. |
+| Processing | Intermediate status of a payment intent at the time of reconciliation with a financial institution. |
+| Processed | Intermediate status of a payment intent at the time of finalizing the reconciliation with a financial institution. |
+| Finished | Final status of a payment intent when the transaction ends. |
+| Confirmation_required | Final status of a payment intent when it ends without obtaining a payment status. Once obtained, this status will not change. When you receive this, you must confirm on your device what the payment status is, using the `payment_id` received in the response, before delivering your product or service.  |
 | Canceled | Final status of a payment intent when it is canceled. |
 | Error | Final status of a payment intent when a transaction error occurs. |
-| Finished | Final status of a payment intent when the transaction ends. |
-| On Terminal | Intermediate status of a payment intent when obtaining it from the Point device. |
-| Open | Initial status of a payment intent when creating it from the POS. |
-| Processed | Intermediate status of a payment intent at the time of finalizing the reconciliation with a financial institution. |
-| Processing | Intermediate status of a payment intent at the time of reconciliation with a financial institution. |
+| Abandoned | Final status of a payment intent when hasn’t been processed after a certain time. |

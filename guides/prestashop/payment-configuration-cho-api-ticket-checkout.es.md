@@ -1,12 +1,11 @@
-# Configurar pagos con ticket checkout
+# Ticket checkout
 
 ----[mlb]----
-Con **pago de boletos**, ofrezca pagos en efectivo en su tienda usando [Checkout Transparente](/developers/es/guides/checkout-api/landing).
+Con **ticket checkout**, ofrezca pagos en efectivo en su tienda usando [Checkout Transparente](/developers/es/guides/checkout-api/landing). 
 
------------- 
-
-----[mla , mlm, mpe, mco, mlu, mlc]----
-Con **pago de boletos**, ofrezca pagos en efectivo en su tienda usando [Checkout API](/developers/es/guides/checkout-api/landing).
+------------
+----[mla, mlm, mpe, mco, mlu, mlc]----
+Con **ticket checkout**, ofrezca pagos en efectivo en su tienda usando [Checkout API](/developers/es/guides/checkout-api/landing).
 
 ------------
 
@@ -16,10 +15,10 @@ Para integrar el método de pago, siga los pasos a continuación.
 2. Elige el medio de pago que quieres ofrecer, que puede ser:
  ----[mlb]----
  * Efectivo (saldo en Mercado Pago o boleto bancário);
- * Pago en la lotería sin boleto (con CPF).
+ * Pago en la lotería sin boleto bancário (con CPF).
  ------------
  ----[mla, mlm, mpe, mco, mlu, mlc]----
- * Efectivo (saldo en Mercado Pago o efectivo);
+ * Efectivo (saldo en Mercado Pago o efectivo).
  ------------
 3. Indicar a los cuantos días de su emisión caducarán.
 4. De ser necesario, define un porcentaje de descuento para clientes que paguen con Mercado Pago.

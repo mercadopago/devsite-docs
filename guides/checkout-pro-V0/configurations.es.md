@@ -1002,7 +1002,7 @@ Para obtener métricas comerciales, utiliza _headers_ en tu preferencia de pago,
 > 
 > Nota
 > 
-> Recuerda agregar el _header_ `integrator_id` a tus integraciones para recibir beneficios adicionales del programa. Puedes encontrar tu `integrator_id` en el developer [Dashboard](/developers/es/docs/checkout-pro/additional-content/dashboard/introduction). 
+> Recuerda agregar el _header_ `integrator_id` a tus integraciones para recibir beneficios adicionales del programa. Puedes encontrar tu `integrator_id` en el developer [Dashboard](/developers/es/docs/checkout-pro/additional-content/your-integrations/introduction). 
 
 Por ejemplo:
 

@@ -1,8 +1,14 @@
-# Installments without credit card
+# Installments without card
 
-Mercado Pago’s card-free installment option is called **Mercado Crédito** and is a proprietary financing method that allows you to pay in up to 12 installments.
+**Mercado Credits** is Mercado Pago’s financing method that allows paying in installments without having a card.
 
-By offering this option in your store, your customers will be able to buy a product today and pay in installments later. For your business, approval of the purchase is immediate and guaranteed, with the total amount being credited in advance and your customers paying us later.
+With this line of credit, administered by Mercado Pago, the payment is credited in full to the seller's account, while the customer can choose to pay in up to 12 fixed monthly installments, no card needed. The user just has to enter their Mercado Pago account (or create one), determine their available limit, and choose how many installments they want to pay in.
+
+> NOTE
+>
+> Important
+>
+> In addition to the options available in this documentation, it is also possible to configure **installments without card** using the **Wallet Brick**. Check [Default rendering](/developers/en/docs/checkout-bricks/wallet-brick/default-rendering#editor_2) documentation of Wallet for more details.
 
 Follow the steps below to offer installments without card in your store.
 
@@ -13,8 +19,8 @@ To perform a Card Payment Brick integration, you must meet the requirements list
 | Requirements | Description | 
 |---|---|
 | Mercado Pago or Mercado Libre seller account | To integrate you need a seller account on Mercado Pago or Mercado Libre. If not, [click here](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) to create. |
-| Application | Applications are the different integrations in one or more stores. You can create an application for each solution you implement to keep everything organized and on track for easier management. Check [Dashboard](/developers/en/docs/checkout-bricks/additional-content/dashboard/introduction) for more information on how to create an application. |
-| Credentials | Unique passwords with which we identify an integration in your account. To perform the integrations, you will need the _Public key_ and the _Access Token_. [Click here](/developers/en/guides/additional-content/credentials/credentials) for more information. |
+| Application | Applications are the different integrations in one or more stores. You can create an application for each solution you implement to keep everything organized and on track for easier management. Check [Your integrations](/developers/en/docs/checkout-bricks/additional-content/your-integrations/introduction) for more information on how to create an application. |
+| Credentials | Unique passwords with which we identify an integration in your account. To perform the integrations, you will need the _Public key_ and the _Access Token_. [Click here](/developers/en/guides/additional-content/your-integrations/credentials) for more information. |
 | Install the Mercado Pago SDK | Install the official SDKs to simplify your integration with our [APIs](/developers/en/reference/payments/_payments/post). For more information, [click here](/developers/en/docs/sdks-library/landing). |
 
 If all prerequisites have been met, follow the next steps to integrate installments without credit card.
@@ -165,40 +171,82 @@ curl -X POST \
 >
 > h3
 >
-> Add button at checkout
+> Add checkout
 
-With the preference created, it is necessary to display the payment button that will allow the buyer to use Mercado Crédito as a means of payment. To display the payment button, insert the code below directly into your project.
+After creating the preference in the backend, it is necessary to install the Mercado Pago frontend SDK to the project to add the payment button.
 
+The installation is done in **two steps**: **including the Mercado Pago SDK** to the project with its configured credentials and **initiating the checkout** from the preference generated previously.
+
+1. To include the MercadoPago.js SDK, add the following to the project's HTML or install it via NPM as indicated in the examples below.
+
+[[[
 ```html
-<div class="cho-container"></div>
-<script src="https://sdk.mercadopago.com/js/v2"></script>
-<script>
-  const mp = new MercadoPago('PUBLIC_KEY');
+<body>
+  <script src="https://sdk.mercadopago.com/js/v2"></script>
+</body>
 
-  mp.checkout({
-    preference: {
-      id: 'YOUR_PREFERENCE_ID'
-    },
-    render: {
-      container: '.cho-container',
-      label: 'Em até 12x sem cartão com Mercado Pago',
-      type: 'credits',
-    }
-  });
-</script>
 ```
+```bash
+npm install @mercadopago/sdk-js
 
-### Suggestions for use and best practices
+```
+]]]
 
-To offer the best experience to your customers using Mercado Crédito, we suggest:
+Next, initialize the integration by setting your [public key](/developers/es/docs/checkout-api/additional-content/your-integrations/credentials) using the following code.
 
-* Use capital letters in the initials of the brand: Mercado Pago
-* Keep the Mercado Pago logo
-* Maintain the value proposition of installments without a card
-* Maintain alignment and spaces of button elements
+[[[
+```html
+<script>
+  const mp = new MercadoPago("YOUR_PUBLIC_KEY");
+</script>
 
-To better explain to your customers how Mercado Crédito works, share the following steps with them.
+```
+```javascript
+import { loadMercadoPago } from "@mercadopago/sdk-js";
+
+await loadMercadoPago();
+const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
+
+```
+]]]
+
+Once this is done, you need to create a container to define the location where the button will be inserted on the screen. The container is created by inserting an element into the HTML code of the page where the component will be rendered.
+
+> NOTE
+>
+> Important
+>
+> The value displayed below in the **ID property** is just an example and can be changed, but it must always match the ID indicated in the rendering step.
+
+[[[
+```html
+<div id="wallet_container"></div>
+
+```
+]]]
+
+2. After completing the previous step, initialize your checkout using the ID of the preference previously created with the identifier of the element where the button should be displayed.
+
+[[[
+```javascript
+mp.bricks().create("wallet", "wallet_container", {
+  initialization: {
+    preferenceId: "<PREFERENCE_ID>",
+  },
+  customization: {
+    texts: {
+      valueProp: "convenience",
+    },
+  },
+});
+
+```
+]]]
+
+
+
+Done! After completing the steps described above, the payment button will be displayed on the screen and you will have finished the integration. Follow the steps below to explain to your customers how Mercado Crédito works.
 
 1. [Create an account](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) or sign in to Mercado Pago. If you use **Mercado Livre**, you already have this account!
 2. Select **Mercado Crédito** and choose how many times you want to pay
-3. Ready! Pay the installments every month as you prefer, in the **Mercado Pago app**.
+3. Pay the installments every month as you prefer, in the **Mercado Pago app**.

@@ -38,4 +38,4 @@ An IPN **(Instant Payment Notification)** notification is an **automatic message
 
 Implement IPN `merchant_order` with an order search by `external_reference` as a contingency method.
 
-[Receive IPN notifications](/developers/en/docs/qr-code/additional-content/notifications/ipn)
+[Receive IPN notifications](/developers/en/docs/qr-code/additional-content/your-integrations/notifications/ipn)

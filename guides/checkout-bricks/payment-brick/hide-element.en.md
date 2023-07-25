@@ -1,6 +1,10 @@
+# Hide element
+
+See below how to hide Payment Brick elements.
+
 > CLIENT_SIDE
 >
-> h1
+> h2
 >
 > Hide title
 
@@ -11,7 +15,8 @@
 | Type  | Boolean  |
 | Comments  | When **true**, hides the title line.  |
 
-```javascript
+[[[
+```Javascript
 const settings = {
    ...,
    customization: {
@@ -21,10 +26,18 @@ const settings = {
    }
 }
 ```
+```react-jsx
+const customization = {
+ visual: {
+   hideFormTitle: true
+ }
+};
+```
+]]]
 
 > CLIENT_SIDE
 >
-> h1
+> h2
 >
 > Hide payment button
 
@@ -35,15 +48,16 @@ const settings = {
 | Type  | Boolean  |
 | Comments  | When true, the form submit button is not displayed and it becomes necessary to use the getFormData function to get the form data (see example below). |
 
-```javascript
+[[[
+```Javascript
 const settings = {
     ...,
     callbacks: {
         onReady: () => {
-            // callback chamado quando o Brick estiver pronto
+            // callback called when brick is ready
         },
         onError: (error) => { 
-            // callback chamado para todos os casos de erro do Brick
+            // callback called for all Brick error cases
         },
     },
     customization: {
@@ -53,25 +67,33 @@ const settings = {
     }
 }
 ```
+```react-jsx
+const customization = {
+ visual: {
+   hidePaymentButton: true
+ }
+};
+```
+]]]
+
+Since the default payment button has been hidden, you will need to add some replacement. The following code blocks exemplify how to implement your custom payment button.
 
 ```html
 <button type="button" onclick="createPayment();">Custom Payment Button</button>
 ```
 
-```javascript
+```Javascript
 function createPayment(){
     window.paymentBrickController.getFormData()
-        .then(({ paymentType, formData }) => {
+        .then(({ formData }) => {
             console.log('formData received, creating payment...');
-            if (paymentType === 'credit_card' || paymentType === 'debit_card') {
-                fetch("/process_payment", {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json",
-                    },
-                    body: JSON.stringify(formData),
-                })
-            }
+            fetch("/process_payment", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(formData),
+            })
         })
         .catch((error) => {
             // error handling when calling getFormData()
@@ -81,7 +103,7 @@ function createPayment(){
 
 > CLIENT_SIDE
 >
-> h1
+> h2
 >
 > Hide Mercado Pago Wallet panel
 
@@ -92,7 +114,8 @@ function createPayment(){
 | Type  | Boolean  |
 | Comments  | When **true**, hides within the payment option with the Mercado Pago Wallet, the redirection panel to the Mercado Pago website. |
 
-```javascript
+[[[
+```Javascript
 const settings = {
    ...,
    customization: {
@@ -102,6 +125,14 @@ const settings = {
    }
 }
 ```
+```react-jsx
+const customization = {
+ visual: {
+   hideRedirectionPanel: true
+ }
+};
+```
+]]]
 
 > NOTE
 >

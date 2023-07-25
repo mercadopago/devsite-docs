@@ -132,18 +132,3 @@ The response will bring the following result.
 }
 ```
 
-> PREV_STEP_CARD_EN
->
-> Modify customer
->
-> Learn how to change data from a previously created customer
->
-> [Modify Customer](/developers/en/docs/checkout-api/cards-and-customers-management/modify-customer)
-
-> NEXT_STEP_CARD_EN
->
-> Add new cards to a customer
->
-> Learn how to add new cards to a previously created customer.
->
-> [Add new cards to a customer](/developers/en/docs/checkout-api/cards-and-customers-management/add-new-cards-to-customer)

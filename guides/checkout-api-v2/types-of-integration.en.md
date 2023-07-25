@@ -39,20 +39,3 @@ The three types of integration mentioned above are eligible for **PCI SAQ A cert
 
 In addition to the payment methods shown in the table above, it is also possible to offer other payment methods. For a detailed list of all available options for integration, send a **GET** to the endpoint [/v1/payment_methods](/developers/en/reference/payment_methods/_payment_methods/get) and execute the request. In the answer you will have access to each of the options.
 
-
-> PREV_STEP_CARD_EN
->
-> Home page
->
-> Return to the Checkout API documentation home page.
->
-> [Home](/developers/en/docs/checkout-api/landing)
-
-
-> NEXT_STEP_CARD_EN
->
-> Prerequisites
->
-> See the necessary prerequisites to integrate the Checkout API.
->
-> [Integrate Checkout API](/developers/en/docs/checkout-api/prerequisites)

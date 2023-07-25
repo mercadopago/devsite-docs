@@ -31,7 +31,7 @@ O relatório de Dinheiro disponível é um **relatório para ser baixado que te 
 >
 > Importante
 >
-> Nos seus relatórios de Janeiro e dos próximos meses, suas movimentações estarão ordenadas por data de criação para que você possa identificá-las mais facilmente. [Saiba como analisar seu relatório.](https://bit.ly/3UivgKt)
+> A partir de 1 de março de 2023, não será mais possível criar novos relatórios de **Dinheiro disponível**. Para continuar controlando as transferências, saques e movimentações do seu saldo disponível, [utilize o relatório Liberações.](http://bit.ly/41KIWC4)
 ------------
 
 ## Como baixar o relatório?
@@ -41,7 +41,7 @@ Lembre-se de que a geração deste relatório leva alguns minutos, dependendo de
 Ao estar disponível, ele ficará na sua bandeja de relatórios e você poderá baixá-lo de duas formas: 
 
 * Por um link de download que enviaremos via e-mail.
-* Na sua conta do Mercado Pago, acesse ----[mla]---- [seus relatórios](https://www.mercadopago.com.ar/balance/reports?page=1#!/settlement-report) ------------ ----[mlm]---- [seus relatórios](https://www.mercadopago.com.mx/balance/reports?page=1#!/settlement-report) ------------ ----[mlu]---- [seus relatórios](https://www.mercadopago.com.uy/balance/reports?page=1#!/settlement-report) ------------ ----[mlc]---- [seus relatórios](https://www.mercadopago.cl/balance/reports?page=1#!/settlement-report) ------------ ----[mco]---- [seus relatórios](https://www.mercadopago.com.co/balance/reports?page=1#!/settlement-report) ------------ ----[mpe]---- [seus relatórios](https://www.mercadopago.com.pe/balance/reports?page=1#!/settlement-report) ------------ ----[mlb]---- [seus relatórios](https://www.mercadopago.com.br/balance/reports?page=1#!/settlement-report) ------------ e selecione a opção *Relatórios de Dinheiro disponível*.
+* Na sua conta do Mercado Pago, ----[mlb]---- vá até a seção ------------  ----[mla, mlm, mlc, mlu, mco, mpe]---- seus  ------------ ----[mla]---- [seus relatórios](https://www.mercadopago.com.ar/balance/reports?page=1#!/settlement-report) ------------ ----[mlm]---- [seus relatórios](https://www.mercadopago.com.mx/balance/reports?page=1#!/settlement-report) ------------ ----[mlu]---- [seus relatórios](https://www.mercadopago.com.uy/balance/reports?page=1#!/settlement-report) ------------ ----[mlc]---- [seus relatórios](https://www.mercadopago.cl/balance/reports?page=1#!/settlement-report) ------------ ----[mco]---- [seus relatórios](https://www.mercadopago.com.co/balance/reports?page=1#!/settlement-report) ------------ ----[mpe]---- [seus relatórios](https://www.mercadopago.com.pe/balance/reports?page=1#!/settlement-report) ------------ ----[mlb]---- [Relatórios e faturamento](https://www.mercadopago.com.br/balance/reports?page=1#!/settlement-report), selecione *Relatórios de pagamentos e extratos de conta* e, depois, *Dinheiro disponível*. ------------  ----[mla, mlm, mlc, mlu, mco, mpe]---- e selecione a opção Relatórios de *Dinheiro disponível*.  ------------
 
 ## Valores do relatório
 

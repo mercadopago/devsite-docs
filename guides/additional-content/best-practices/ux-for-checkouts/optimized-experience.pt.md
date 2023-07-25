@@ -121,19 +121,3 @@ Apesar da maioria dos usuários revisarem a compra no passo final, eles se sente
 Além disso, antes da conclusão da compra, permita que os usuários possam **revisar** todo o processo e o preço final. Para isso, inclua uma página de confirmação ou revisão, antes de o usuário concluir o pagamento. É importante dar a possibilidade de o usuário editar qualquer dado ali mesmo, sem precisar voltar às etapas anteriores.
 
 ![pt confrima tu compra](/images/best-practices-guide/PortAspectosGeneralesConfirmaTuCompra_V2.gif)
-
-> PREV_STEP_CARD_PT
->
-> UX para checkouts
->
-> Conheça o guia de boas práticas pensado para desenvolvedores, vendedores e agências.
->
-> [Introdução](/developers/pt/guides/additional-content/best-practices/ux-for-checkouts/introduction)
-
-> NEXT_STEP_CARD_PT
->
-> Facilite as conversões
->
-> Siga estas etapas para criar um checkout fácil de navegar e entender.
->
-> [Facilidade de conversão](/developers/pt/guides/additional-content/best-practices/ux-for-checkouts/ease-of-conversion)

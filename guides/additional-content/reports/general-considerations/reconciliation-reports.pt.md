@@ -4,7 +4,7 @@ Os relatórios do Mercado Pago são conjuntos de informações financeiras que a
 
 Confira a tabela abaixo para mais detalhes sobre os tipos de relatório disponíveis.
 
-* Relatórios de contabilidade
+* Movimentações gerais
     ----[mla]----
     + [Liquidaçoes](/developers/pt/guides/additional-content/reports/released-money/introduction)
     ------------

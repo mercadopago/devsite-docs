@@ -127,10 +127,15 @@ pod ‘MercadoPagoDevicesSDK’
 ```
 ```android
 ===
-Agrega el siguiente código en el archivo **build.gradle**.
+Necesitas agregar el repositorio y la dependencia en el archivo **build.gradle**.
 ===
+repositories {
+    maven {
+        url "https://artifacts.mercadolibre.com/repository/android-releases"
+    }
+}
 dependencies {
-   implementation 'com.mercadolibre.android.device:sdk:2.0.1'
+   implementation 'com.mercadolibre.android.device:sdk:3.0.5'
 }
 ```
 ]]]
@@ -479,13 +484,13 @@ preference_data = {
 ```
 ]]]
 
-Puedes obtener más información sobre cada atributo en las [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments/post).
+Puedes obtener más información sobre cada atributo en las [Referencias de API](/developers/es/reference/payments/_payments/post).
 
 ### Datos de industria
 
 Envía los datos sobre tu industria para mejorar tu aprobación.<br>
 
-[Ir a datos sobre industrias](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/industry-data/additional-info)
+[Ir a datos sobre industrias](/developers/es/guides/additional-content/resources/industry-data/additional-info)
 
 ### Ayuda a tus clientes con sus pagos rechazados
 
@@ -493,9 +498,4 @@ Es importante que le expliques a tus clientes el motivo de rechazo del pago y qu
 
 Por ejemplo, si un pago se rechaza por fondos insuficientes, puedes recomendarles que vuelva a intentar con otro medio de pago para completar la operación.
 
-
-> NOTE
->
-> Nota
->
-> Si utilizas el Checkout Pro, no te preocupes, ya tienes configurados los mensajes según cada caso. Y si usas otro de nuestros productos, te recomendamos mostrar un [mensaje específico por cada motivo de rechazo](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/handling-responses).
+> Si utilizas el Checkout Pro, no te preocupes, ya tienes configurados los mensajes según cada caso. Y si usas otro de nuestros productos, te recomendamos mostrar un **mensaje específico por cada motivo de rechazo**.

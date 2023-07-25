@@ -2,7 +2,7 @@
 
 Al integrar las soluciones de Mercado Pago, manejarás datos sensibles que deberás proteger de posibles pérdidas o vulnerabilidades. Estos datos pueden ser tus credenciales, las de tus integraciones y las de tus clientes. 
 
-Las credenciales son contraseñas únicas con las que identificamos una integración en tu cuenta. Sirven para capturar pagos en tiendas online y otras aplicaciones de forma segura. Para conocer información en detalle de las credenciales, ve a [Credenciales](/developers/es/guides/additional-content/credentials/credentials).
+Las credenciales son contraseñas únicas con las que identificamos una integración en tu cuenta. Sirven para capturar pagos en tiendas online y otras aplicaciones de forma segura. Para conocer información en detalle de las credenciales, ve a [Credenciales](/developers/es/guides/additional-content/your-integrations/credentials).
 
 Te mostraremos cómo puedes optimizar la seguridad de tus integraciones de manera simple y rápida.
 
@@ -24,7 +24,7 @@ https://api.mercadolibre.com/users/me
 
 ## Usa la Public Key en el front-end
 
-Public Key es una llave pública de la aplicación que normalmente se utiliza en el frontend y permite, por ejemplo, conocer los métodos de pago y cifrar los datos de la tarjeta. Recuerda utilizar únicamente este tipo de llave del lado público end de tu integración. Para conocer más, ve a [Credenciales](/developers/es/guides/additional-content/credentials/credentials).
+Public Key es una llave pública de la aplicación que normalmente se utiliza en el frontend y permite, por ejemplo, conocer los métodos de pago y cifrar los datos de la tarjeta. Recuerda utilizar únicamente este tipo de llave del lado público end de tu integración. Para conocer más, ve a [Credenciales](/developers/es/guides/additional-content/your-integrations/credentials).
 
 ## Renueva tus credeciales periódicamente
 
@@ -32,7 +32,7 @@ Te recomendamos renovar tus credenciales de forma frecuente para evitar posibles
 
 Renueva tus credenciales de forma simple siguiendo estos pasos:
 
-1. Ve al [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel). 
+1. Ve al [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app). 
 2. Accede a la aplicación cuyas credenciales quieres renovar.
 3. Selecciona Credenciales de Producción.
 4. Una vez allí, podrás renovar el Access Token y el Client Secret. Haz clic en **Más opciones > Renovar**.
@@ -47,7 +47,7 @@ Renueva tus credenciales de forma simple siguiendo estos pasos:
 Si necesitas compartir las credenciales de tu aplicación con otras cuentas de Mercado Pago, hazlo de manera segura a través de Tus Aplicaciones. 
 Cuando compartes tus credenciales permites que otra cuenta de Mercado Pago las vea y pueda usarlas. Para hacerlo, sigue estos pasos:
 
-1. Ve al [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel).
+1. Ve al [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app).
 2. Accede a la aplicación cuyas credenciales deseas compartir.
 3. Haz clic en **Compartir mis credenciales**.
 4. Ingresa los e-mail de las cuentas de Mercado Pago con quien deseas compartir tus credenciales. Se compartirán tanto las de prueba como las de producción. 

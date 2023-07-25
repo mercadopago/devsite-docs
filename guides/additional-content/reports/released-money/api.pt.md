@@ -1,4 +1,3 @@
-
 # Geração via API
 
 Gere o relatório de ----[mla]----Liquidações------------ ----[mlm, mlb, mlc, mco, mlu, mpe]----Liberações------------ manualmente quantas vezes quiser ou programe-o de acordo com a frequência desejada por meio de nossa API.
@@ -9,9 +8,9 @@ Confira os campos que você pode configurar para ajustar as suas preferências a
 
 > WARNING
 >
-> Importante
+> Atenção
 >
-> Configurar este atributo de `frequency` não significa que o relatório será gerado automaticamente. A configuração será aplicada somente quando o agendamento automático for ativado. Para mais detalhes, confira a seção [Agende seus relatórios](#bookmark_agende_seus_relatórios_automáticos).
+> Configurar este atributo de `frequency` não significa que o relatório será gerado automaticamente. A configuração será aplicada somente quando o agendamento automático for ativado. Para mais detalhes, confira a seção [Agende seus relatórios.](#bookmark_agende_seus_relatórios_automáticos)
 
 | Campo configurável | Descrição |
 | --- | --- |

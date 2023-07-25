@@ -2,11 +2,11 @@
 
 Pix is an instant electronic payment method offered by the Central Bank of Brazil to individuals and legal entities. Through the Checkout API, it is possible to offer this payment option through QR code or payment code.
 
-> WARNING
+> NOTE
 >
 > Important
 >
-> To offer payments with Pix, you must ensure that the Pix keys have been created. If you haven't created it yet, [click here](https://www.youtube.com/watch?v=60tApKYVnkA) and check the necessary steps.
+> In addition to the options available in this documentation, it is also possible to integrate **payments with Pix** using the **Payment Brick**. Check [Default rendering](/developers/en/docs/checkout-bricks/payment-brick/default-rendering#editor_2) documentation of Payment for more details.
 
 To integrate payments with Pix, follow the steps below, but if you have already integrated card payments, start the integration from the [Add payment form](/developers/en/docs/checkout-api/integration-configuration/integrate-with-pix#bookmark_Add_payment_form) step.
 
@@ -16,10 +16,14 @@ After creating the Pix keys, it is necessary to capture data for payment. This c
 
 [[[
 ```html
-
 <body>
-<script src="https://sdk.mercadopago.com/js/v2"></script>
+  <script src="https://sdk.mercadopago.com/js/v2"></script>
 </body>
+
+```
+```bash
+npm install @mercadopago/sdk-js
+
 ```
 ]]]
 
@@ -31,11 +35,18 @@ Credentials are unique keys with which we identify an integration in your accoun
 This is the first step of a complete code structure that must be followed for the correct integration of payment via Pix. Pay attention to the blocks below to add to the codes as indicated.
 
 [[[
-```javascript
-
+```html
 <script>
-const mp = new MercadoPago("YOUR_PUBLIC_KEY");
+  const mp = new MercadoPago("YOUR_PUBLIC_KEY");
 </script>
+
+```
+```javascript
+import { loadMercadoPago } from "@mercadopago/sdk-js";
+
+await loadMercadoPago();
+const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
+
 ```
 ]]]
 
@@ -148,7 +159,7 @@ $payment->transaction_amount = 100;
 $payment->description = "Product title";
 $payment->payment_method_id = "pix";
 $payment->payer = array(
-"email" => "test@test.com",
+"email" => "PAYER_EMAIL",
 "first_name" => "Test",
 "last_name" => "User",
 "identification" => array(
@@ -178,7 +189,7 @@ transaction_amount: 100,
 description: 'Product title',
 payment_method_id: 'pix',
 payer: {
-email: 'test@test.com',
+email: 'PAYER_EMAIL',
 first_name: 'Test',
 last_name: 'User',
 identification: {
@@ -216,7 +227,7 @@ PaymentCreateRequest.builder()
 .dateOfExpiration(OffsetDateTime.of(2023, 1, 10, 10, 10, 10, 0, ZoneOffset.UTC))
 .payer(
 PaymentPayerRequest.builder()
-.email("test@test.com")
+.email("PAYER_EMAIL")
 .firstName("Test")
 .identification(
 IdentificationRequest.builder().type("CPF").number("19119119100").build())
@@ -234,7 +245,7 @@ transaction_amount: 100,
 description: 'Product title',
 payment_method_id: 'pix',
 payer: {
-email: 'test@test.com',
+email: 'PAYER_EMAIL',
 identification: {
 type: 'CPF',
 number: '19119119100',
@@ -262,7 +273,7 @@ Description = "Product Title",
 PaymentMethodId = "pix",
 Payer = new PaymentPayerRequest
 {
-Email = "test@test.com",
+Email = "PAYER_EMAIL",
 FirstName = "Test",
 LastName = "User",
 Identification = new IdentificationRequest
@@ -286,7 +297,7 @@ payment_data = {
 "description": "Product title",
 "payment_method_id": "pix",
 "payer": {
-"email": "test@test.com",
+"email": "PAYER_EMAIL",
 "first_name": "Test",
 "last_name": "User",
 "identification": {
@@ -318,7 +329,7 @@ curl -X POST \
 "description": "Product title",
 "payment_method_id": "pix",
 "payer": {
-"email": "test@test.com",
+"email": "PAYER_EMAIL",
 "first_name": "Test",
 "last_name": "User",
 "identification": {
@@ -380,8 +391,11 @@ The response will show the payment **pending status** and all the information yo
 
 With Pix, you can also choose the period that the customer will have to pay for the purchase, defining the expiration date of the payment code sent after the order is placed.
 
-By default, the expiration date for payments with Pix is **24 hours**, but you can change it by submitting the `date_of_expiration` field in the payment creation request.
-
+> NOTE
+>
+> Important
+>
+> By default, the expiration date for payments with Pix is **24 hours**, but you can change it by submitting the `date_of_expiration` field in the payment creation request. The configured date must be between **30 minutes and 30 days** from the payment issue date.
 
 ## Payment visualization
 
@@ -430,19 +444,4 @@ Follow the steps below to render the QR code and make copy and paste available.
 
 Upon completing these steps, the QR code will have been rendered and will be displayed to the buyer at checkout.
 
-> PREV_STEP_CARD_EN
->
-> Prerequisites
->
-> See the necessary prerequisites to integrate the Checkout API.
->
-> [Integrate Checkout API](/developers/en/docs/checkout-api/prerequisites)
 
-
-> NEXT_STEP_CARD_EN
->
-> Integration test
->
-> Learn how to test the Checkout API integration in your store.
->
-> [Integration Test](/developers/en/docs/checkout-api/integration-test/make-test-purchase)

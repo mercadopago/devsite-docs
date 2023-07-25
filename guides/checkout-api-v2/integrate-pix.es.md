@@ -2,11 +2,11 @@
 
 Pix es un medio de pago electrónico instantáneo ofrecido por el Banco Central de Brasil a personas físicas y jurídicas. A través de Checkout API, es posible ofrecer esta opción de pago a través de un código QR o un código de pago.  
 
-> WARNING
+> NOTE
 >
 > Importante
 >
-> Para ofrecer pagos con Pix es necesario asegurarse de que las claves Pix han sido creadas. Si aún no las creaste, [haz clic aquí](https://www.youtube.com/watch?v=60tApKYVnkA) y consulta el paso a paso.
+> Además de las opciones disponibles en esta documentación, también es posible integrar **pagos con Pix** utilizando el **Brick de Payment**. Consulta la documentación [Renderizado por defecto](/developers/es/docs/checkout-bricks/payment-brick/default-rendering#editor_2) de Payment para obtener más detalles.
 
 Para integrar los pagos vía Pix, sigue las siguientes etapas; pero si ya integraste los pagos con tarjeta, inicia la integración desde la etapa [Añadir formulario de pago](/developers/es/docs/checkout-api/integration-configuration/integrate-with-pix#bookmark_Añadir_formulario_de_pago).
 
@@ -21,6 +21,10 @@ Después de crear las claves Pix, es necesario realizar la captura de datos para
   <script src="https://sdk.mercadopago.com/js/v2"></script>
 </body>
 ```
+```bash
+npm install @mercadopago/sdk-js
+
+```
 ]]]
 
 
@@ -31,11 +35,18 @@ Las credenciales son claves únicas con las que identificamos una integración e
 Esta es la primera etapa de una estructura de código completa que se debe seguir para integrar correctamente los pagos vía Pix. Presta atención a los siguientes bloques para añadirlos a los códigos como se indica.
 
 [[[
-```javascript
+```html
 
-  <script>
-    const mp = new MercadoPago("YOUR_PUBLIC_KEY");
-  </script>
+<script>
+  const mp = new MercadoPago("YOUR_PUBLIC_KEY");
+</script>
+```
+```javascript
+import { loadMercadoPago } from "@mercadopago/sdk-js";
+
+await loadMercadoPago();
+const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
+
 ```
 ]]]
 
@@ -148,7 +159,7 @@ Para configurar los pagos con Pix, envía un **POST** al endpoint [/v1/payments]
  $payment->description = "Título del producto";
  $payment->payment_method_id = "pix";
  $payment->payer = array(
-     "email" => "test@test.com",
+     "email" => "PAYER_EMAIL",
      "first_name" => "Test",
      "last_name" => "User",
      "identification" => array(
@@ -178,7 +189,7 @@ var payment_data = {
   description: 'Título del producto',
   payment_method_id: 'pix',
   payer: {
-    email: 'test@test.com',
+    email: 'PAYER_EMAIL',
     first_name: 'Test',
     last_name: 'User',
     identification: {
@@ -216,7 +227,7 @@ PaymentCreateRequest paymentCreateRequest =
        .dateOfExpiration(OffsetDateTime.of(2023, 1, 10, 10, 10, 10, 0, ZoneOffset.UTC))
        .payer(
            PaymentPayerRequest.builder()
-               .email("test@test.com")
+               .email("PAYER_EMAIL")
                .firstName("Test")
                .identification(
                    IdentificationRequest.builder().type("CPF").number("19119119100").build())
@@ -234,7 +245,7 @@ payment_request = {
   description: 'Título del producto',
   payment_method_id: 'pix',
   payer: {
-    email: 'test@test.com',
+    email: 'PAYER_EMAIL',
     identification: {
       type: 'CPF',
       number: '19119119100',
@@ -262,7 +273,7 @@ var request = new PaymentCreateRequest
     PaymentMethodId = "pix",
     Payer = new PaymentPayerRequest
     {
-        Email = "test@test.com",
+        Email = "PAYER_EMAIL",
         FirstName = "Test",
         LastName = "User",
         Identification = new IdentificationRequest
@@ -286,7 +297,7 @@ payment_data = {
     "description": "Título del producto",
     "payment_method_id": "pix",
     "payer": {
-        "email": "test@test.com",
+        "email": "PAYER_EMAIL",
         "first_name": "Test",
         "last_name": "User",
         "identification": {
@@ -318,7 +329,7 @@ curl -X POST \
       "description": "Título del producto",
       "payment_method_id": "pix",
       "payer": {
-        "email": "test@test.com",
+        "email": "PAYER_EMAIL",
         "first_name": "Test",
         "last_name": "User",
         "identification": {
@@ -380,8 +391,11 @@ La respuesta mostrará el estado del pago pendiente y toda la información que n
 
 Con Pix, también puedes elegir el plazo que el cliente tendrá para pagar la compra, definiendo la validez del código de pago que se le envía después de realizar el pedido.
 
-Por defecto, la fecha de vencimiento para pagos con Pix es de **24 horas**, pero puedes modificarla enviando el campo `date_of_expiration` en la solicitud de creación del pago. 
-
+> NOTE
+>
+> Importante
+>
+> Por defecto, la fecha de vencimiento para pagos con Pix es de **24 horas**, pero puedes modificarla enviando el campo `date_of_expiration` en el request de creación del pago. La fecha configurada debe estar entre **30 minutos y hasta 30 días** a partir de la fecha de emisión del pago.
 
 ## Visualización del pago
 
@@ -430,19 +444,4 @@ Sigue las etapas que se indican a continuación para renderizar el código QR y 
 
 Al finalizar estas etapas, el código QR estará renderizado y se mostrará al comprador durante el pago. 
 
-> PREV_STEP_CARD_ES
->
-> Requisitos previos
->
-> Consulta los requisitos previos que se necesitan para integrar Checkout API.
->
-> [Integrar Checkout API](/developers/es/docs/checkout-api/prerequisites)
 
-
-> NEXT_STEP_CARD_ES
->
-> Prueba de integración
->
-> Aprende cómo probar la integración de Checkout API en tu tienda.
->
-> [Prueba de integración](/developers/es/docs/checkout-api/integration-test/make-test-purchase)

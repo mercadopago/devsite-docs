@@ -1,10 +1,10 @@
 #  Comece a processar seus pagamentos
 
-Para começar a processar seus pagamentos, siga estas etapas:
+Para começar a processar seus pagamentos com o ponto de venda (PDV), siga estas etapas:
 
 ## Obtenha a lista de seus dispositivos disponíveis
 
-Antes de criar uma intenção de pagamento, você deve obter os dispositivos Point associados à sua conta. Você pode fazer desta maneira:
+Antes de criar uma intenção de pagamento, você deve obter os dispositivos Point associados à sua conta. Você pode fazeê-lo através da seguinte chamada:
 
 ``` curl
 curl --location --request GET 'https://api.mercadopago.com/point/integration-api/devices?offset=0&limit=50' \ 
@@ -12,70 +12,51 @@ curl --location --request GET 'https://api.mercadopago.com/point/integration-api
 ```
 Você receberá uma resposta como esta:
 
-----[mlb, mla]----
 
 ```json
 {
-   "devices": [
-       {
-           "id": "INGENICO_MOVE2500__ING-ARG-1123345670",
-           "operating_mode": "STANDALONE"
-       },
-       {
-           "id": "INGENICO_MOVE2500__ING-ARG-0987654P",
-           "operating_mode": "STANDALONE"
-       },
-       {
-           "id": "INGENICO_MOVE2500__ING-5467853",
-           "operating_mode": "PDV"
-       },
-       {
-           "id": "INGENICO_MOVE2500__ING-ARG-1233456",
-           "operating_mode": "STANDALONE"
-       }
-   ],
-   "paging": {
-       "total": 4,
-       "limit": 50,
-       "offset": 0
-   }
+    "devices": [
+        {
+            "id": "INGENICO_MOVE2500__ING-ARG-1123345670",
+            "pos_id": 47792476,
+            "store_id": "47792478",
+            "external_pos_id": "SUC0101POS",
+            "operating_mode": "PDV"
+        },
+        {
+            "id": "INGENICO_MOVE2500__ING-ARG-0987654P",
+            "pos_id": 47792476,
+            "store_id": "47792478",
+            "external_pos_id": "SUC0101POS",
+            "operating_mode": "STANDALONE"
+        },
+        {
+            "id": "INGENICO_MOVE2500__ING-5467853",
+            "operating_mode": "PDV",
+            "pos_id": 47792476,
+            "store_id": "47792478",
+            "external_pos_id": "SUC0101POS",
+        },
+        {
+            "id": "INGENICO_MOVE2500__ING-ARG-1233456",
+            "pos_id": 47792476,
+            "store_id": "47792478",
+            "external_pos_id": "SUC0101POS",
+            "operating_mode": "STANDALONE"
+        }
+    ],
+    "paging": {
+        "total": 4,
+        "limit": 50,
+        "offset": 0
+    }
 }
-```
-------------
 
-----[mlm]----
-
-```json
-{
-   "devices": [
-       {
-           "id": "PAX_A910__SMARTPOS1234567890",
-           "operating_mode": "STANDALONE"
-       },
-       {
-           "id": "PAX_A910__SMARTPOS12345678901",
-           "operating_mode": "STANDALONE"
-       },
-       {
-           "id": "INGENICO_MOVE2500__ING-5467853",
-           "operating_mode": "PDV"
-       },
-       {
-           "id": "PAX_A910__SMARTPOS123456789042",
-           "operating_mode": "STANDALONE"
-       }
-   ],
-   "paging": {
-       "total": 4,
-       "limit": 50,
-       "offset": 0
-   }
-}
 ```
 
-------------
 
 ## Criar uma intenção de pagamento
+Uma intenção de pagamento é uma chamada que contém os detalhes da transação a ser realizada, e que deve ser criada para inciar um pagamento. Esta é uma tentativa que, se bem-sucedida, retornará um `id` do pagamento e seu `status`.
 
 Você pode criar uma intenção de pagamento e atribuí-la ao seu dispositivo Point desta forma:
 
@@ -93,12 +74,12 @@ curl --location --request POST 'https://api.mercadopago.com/point/integration-ap
 }'
 ```
 
-Campo | Descrição
-:--- | :--- |
-'amount'             | Valor total da intenção de pagamento. **Importante**: este campo não admite vírgulas decimais, então se deseja gerar uma intenção de pagamento deve-se considerar as duas casas decimais do valor em seu total. Por exemplo: para gerar o valor da ordem de pagamento "15,00" você deve inserir "1500". |
-'external_reference' | Campo de uso exclusivo do integrador para incluir referências de seu sistema. |
-'print_on_terminal'  | Campo que determina se o dispositivo imprime o comprovante de pagamento. |
-'ticket_number'      | Número do bilhete da intenção de pagamento. |
+| Campo | Descrição |
+|:---:|---|
+| `amount` | Valor total da intenção de pagamento.  <br>**Valor mínimo permitido**: 500 (dispositivos POS y SMART). <br>**Valor máximo permitido**: 400000000 (ambos dispositivos). <br>**Importante**: este campo não admite vírgulas decimais, então se deseja gerar uma intenção de pagamento deve-se considerar as duas casas decimais do valor em seu total. Por exemplo: para gerar o valor da ordem de pagamento "15,00" você deve inserir "1500". |
+| `external_reference` | Campo de uso exclusivo do integrador para incluir referências de seu sistema. |
+| `print_on_terminal` | Campo que determina se o dispositivo imprime o comprovante de pagamento. |
+| `ticket_number` | Número do bilhete da intenção de pagamento. |
 
 Em resposta, você receberá algo semelhante a isso:
 
@@ -133,15 +114,15 @@ curl --location --request POST 'https://api.mercadopago.com/point/integration-ap
    }
 }'
 ```
-Campo | Descrição
-:--- | :---
-amount                    | Valor total da intenção de pagamento. |
-description               | Descrição da intenção de pagamento. |
-payment.type              | Tipo de método de pagamento. |
-payment.installments      | Valor das parcelas de pagamento. |
-payment.installments_cost | Custo das parcelas de pagamento. Este campo determina quem assume o custo e os valores aceitos são `seller` e `buyer`|
-external_reference        | Campo de uso exclusivo do integrador para incluir referências de seu sistema. |
-print_on_terminal         | Campo que determina se o dispositivo imprime o comprovante de pagamento. |
+| Campo | Descrição |
+|:---:|---|
+| `amount` | Valor total da intenção de pagamento.  <br>**Valor mínimo permitido**: 100 (dispositivos POS y SMART). <br>**Valor máximo permitido**: 7000000 (ambos dispositivos). <br>**Importante**: este campo não admite vírgulas decimais, então se deseja gerar uma intenção de pagamento deve-se considerar as duas casas decimais do valor em seu total. Por exemplo: para gerar o valor da ordem de pagamento "15,00" você deve inserir "1500". |
+| `description` | Descrição da intenção de pagamento. |
+| `payment.type` | Tipo de método de pagamento. |
+| `payment.installments` | Valor das parcelas de pagamento. |
+| `payment.installments_cost` | Custo das parcelas de pagamento. Este campo determina quem assume o custo e os valores aceitos são seller e buyer |
+| `external_reference` | Campo de uso exclusivo do integrador para incluir referências de seu sistema. |
+| `print_on_terminal` | Campo que determina se o dispositivo imprime o comprovante de pagamento. |
 
 Em resposta, você receberá algo semelhante a isso:
 
@@ -179,11 +160,11 @@ curl --location --request POST 'https://api.mercadopago.com/point/integration-ap
 }'
 ```
 
-| Campo |  Descrição |
-| --- | --- |
-| amount | Valor total da intenção de pagamento. Importante: este campo não permite casas decimais, portanto, se você deseja gerar uma intenção de pagamento, deve considerar as duas casas decimais do valor total. Por exemplo: para gerar uma ordem de pagamento para o valor "15,00" deve-se inserir "1500". |
-| external_reference | Campo de uso exclusivo do integrador para incluir referências específicas do seu sistema. |
-| print_on_terminal | Campo que determina se o aparelho imprime o comprovante de pagamento. |
+| Campo | Descrição |
+|:---:|---|
+| `amount` | Valor total da intenção de pagamento.  <br>**Valor mínimo permitido**: 500 (dispositivos SMART). <br>**Valor máximo permitido**: 35000000. <br>**Importante**: este campo não admite vírgulas decimais, então se deseja gerar uma intenção de pagamento deve-se considerar as duas casas decimais do valor em seu total. Por exemplo: para gerar o valor da ordem de pagamento "15,00" você deve inserir "1500". |
+| `external_reference` | Campo de uso exclusivo do integrador para incluir referências de seu sistema. |
+| `print_on_terminal` | Campo que determina se o dispositivo imprime o comprovante de pagamento. |
 
 Em resposta, você receberá algo semelhante a isso:
 
@@ -225,16 +206,33 @@ Você receberá esta resposta:
 
 Uma vez que a intenção de pagamento é criada, você pode obtê-la de seu dispositivo Point pressionando a tecla para iniciar o pagamento (no caso de Point Plus e Point Pro 2 o **botão verde** e, no caso de Point Smart, o **botão digital “Charge now”**) e continuar com as etapas mostradas em tela para concluir o pagamento.
 
+> WARNING
+>
+> Importante
+>
+> Recomendamos avaliar a [qualidade de sua integração](/developers/pt/docs/checkout-api/additional-content/integration-quality) para verificar se você está cumprindo os padrões de qualidade e segurança do Mercado Pago que podem melhorar sua taxa de aprovação de pagamentos.
+
+
 ## Verifique o status da sua intenção de pagamento
 
-Você pode verificar o status atual de sua intenção de pagamento usando o `id` que você recebeu na resposta ao criar a intenção de pagamento.
+Você pode verificar o status atual de sua intenção de pagamento usando o `id` que você recebeu na resposta ao criá-la.
+
+Lembre-se que o `id` e status da intenção de pagamento são diferentes do `id` e status do pagamento. Neste caso, trata-se de consultar os detalhes de uma tentativa. Você pode consultar todas as informações correspondentes ao pagamento na seção [API de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_id/get) de Referência da API.
+
+
+> WARNING
+>
+> Importante
+>
+> O principal mecanismo recomendado para saber o resultado de uma intenção de pagamento é a assinatura de [notificações de integrações](/developers/pt/docs/mp-point/integration-configuration/integrate-with-pdv/notifications). Aconselhamos usar o endpoint aqui presente apenas como um mecanismo alternativo.
+
 
 ``` curl
 curl --location --request GET 'https://api.mercadopago.com/point/integration-api/payment-intents/:paymentIntentID' \
 --header 'Authorization: Bearer ${ACCESS_TOKEN}'
 ```
 
-Exemplo de resposta:
+A resposta será semelhante a isso:
 
 ----[mlb]----
 ``` json
@@ -296,8 +294,11 @@ Exemplo de resposta:
 
 ------------
 
-> NOTE
+> WARNING
 >
-> Nota
+> Importante
 >
-> Consulte todas as informações correspondentes ao pagamento na seção [API de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_id/get) de Referência da API.
+> O `confirmation_required` é um status final e não mudará depois de recebido. No caso de você obtê-lo como uma resposta da intenção de pagamento, deverá confirmar em seu dispositivo qual é o status de pagamento que corresponde ao `payment_id` recebido na resposta. Não entregue seu produto ou serviço até que você o verifique.
+
+Você pode verificar os possíveis estados de uma intenção de pagamento acessando nosso [Glossário](/developers/pt/docs/mp-point/integration-api/glossary).
+

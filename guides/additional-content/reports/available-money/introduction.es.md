@@ -15,7 +15,7 @@ El reporte de Dinero retirado es un **informe descargable que te permite conocer
 >
 > Importante
 >
-> En tus reportes de Enero y de los próximos meses verás los movimientos de tu dinero ordenados por fecha de creación para que puedas identificarlos más fácilmente. [usa el reporte Liberaciones.](https://bit.ly/3QiCD2f)
+> A partir del 1 de Marzo del 2023 no podrás crear nuevos reportes Dinero retirado. Para seguir llevando el control de todos los retiros y movimientos de tu dinero disponible [usa el reporte Liberaciones.](https://bit.ly/3JzFPEG)
 ------------
 
 ----[mla]----
@@ -48,7 +48,7 @@ Ten en cuenta que la generación del reporte lleva unos minutos dependiendo de c
 
 Una vez disponible, estará en tu bandeja de reportes y siempre lo podrás descargar de dos formas:
 
-* Desde un link de descarga que te enviaremos por e-mail.
+----[mla, mlm]---- * Desde tu cuenta de Mercado Pago, ve a *Informes y facturación*, elige la opción de "Reportes de tus cobros y estados de cuenta" y luego *Dinero retirado*. ------------ ----[mlb, mpe, mlu, mco]---- * Desde un link de descarga que te enviaremos por e-mail. ------------
 * Desde tu cuenta de Mercado Pago, en *Reportes de Dinero retirado*. 
 
 ### Valores del reporte

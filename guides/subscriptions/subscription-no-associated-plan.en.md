@@ -26,20 +26,19 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval?access_t
 --header 'Content-Type: application/json' \
 --header 'X-scope: stage' \
 --data-raw '{
-		"back_url":"https://www.google.com",
-	"reason":"Test Subscription",
-	"auto_recurring":{
-         "frequency": 1,
-         "frequency_type": "months",
-         "start_date": "2020-06-02T13:07:14.260Z",
-         "end_date": "2022-07-20T15:59:52.581Z",
-         "transaction_amount": 10,
-         "currency_id": "ARS"
-		}
-	},
+    "back_url": "https://www.google.com",
+    "reason": "Test Subscription",
+    "auto_recurring": {
+        "frequency": 1,
+        "frequency_type": "months",
+        "start_date": "2020-06-02T13:07:14.260Z",
+        "end_date": "2022-07-20T15:59:52.581Z",
+        "transaction_amount": 10,
+        "currency_id": "ARS"
+    },
     "payer_email": "test_user+1020927396@testuser.com",
-    "card_token_id":"{{INSERT_THE_CREATED_CARD_TOKEN}}",
-	"status":"authorized"
+    "card_token_id": "{{EL_CARD_TOKEN_QUE_CREASTE}}",
+    "status": "authorized"
 }'
 ```
 ]]]

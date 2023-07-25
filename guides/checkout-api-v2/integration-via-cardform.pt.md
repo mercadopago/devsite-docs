@@ -2,7 +2,13 @@
 
 A integração de pagamentos via cartão é feita via cardform. Neste modo de integração, o **MercadoPago.js** é responsável pelos fluxos necessários para obtenção das informações obrigatórias para a criação de um pagamento. Quando inicializado, uma busca é realizada para recolher os tipos de documentos disponíveis para o país em questão.
 
-À medida que os dados do cartão são inseridos, ocorre uma busca automática das informações de emissor e parcelas disponíveis para aquele meio de pagamento Com isso, a implementação do fluxo é transparente para quem realiza a integração.
+À medida que os dados do cartão são inseridos, ocorre uma busca automática das informações de emissor e parcelas disponíveis para aquele meio de pagamento. Com isso, a implementação do fluxo é transparente para quem realiza a integração.
+
+> NOTE
+>
+> Importante
+>
+> Além das opções disponíveis nesta documentação, também é possível integrar **pagamentos com cartão** utilizando o **Brick de CardPayment**. Veja a documentação [Renderização padrão](/developers/pt/docs/checkout-bricks/card-payment-brick/default-rendering#editor_2) do CardPayment para mais detalhes. 
 
 Confira abaixo o diagrama que ilustra o processo de pagamento via cartão utilizando o Card Form.
 
@@ -10,7 +16,7 @@ Confira abaixo o diagrama que ilustra o processo de pagamento via cartão utiliz
 
 Para integrar pagamentos com cartão no Checkout Transparente siga as etapas abaixo.
 
-##  Importar MercadoPago.js
+## Importar MercadoPago.js
 
 A primeira etapa do processo de integração de pagamentos com cartões é a captura de dados do cartão. Esta captura é feita a partir da inclusão da biblioteca MercadoPago.js em seu projeto, seguida do formulário de pagamento. Utilize o código abaixo para importar a biblioteca MercadoPago.js antes de adicionar o formulário de pagamento.
 
@@ -20,8 +26,12 @@ A primeira etapa do processo de integração de pagamentos com cartões é a cap
   <script src="https://sdk.mercadopago.com/js/v2"></script>
 </body>
 ```
-]]]
+```bash
 
+npm install @mercadopago/sdk-js
+
+```
+]]]
 
 ## Configurar credencial
 
@@ -30,10 +40,17 @@ As credenciais são chaves únicas com as quais identificamos uma integração n
 Esta é a primeira etapa de uma estrutura completa de código que deverá ser seguida para a correta integração do pagamento via cartão. Atente-se aos blocos abaixo para adicionar aos códigos conforme indicado.
 
 [[[
+```html
+<script>
+  const mp = new MercadoPago("YOUR_PUBLIC_KEY");
+</script>
+```
 ```javascript
-  <script>
-    const mp = new MercadoPago("YOUR_PUBLIC_KEY");
-  </script>
+import { loadMercadoPago } from "@mercadopago/sdk-js";
+
+await loadMercadoPago();
+const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
+
 ```
 ]]]
 
@@ -41,8 +58,15 @@ Esta é a primeira etapa de uma estrutura completa de código que deverá ser se
 
 A captura dos dados do cartão é feita através do CardForm da biblioteca MercadoPago.js. Nosso CardForm se conectará ao seu formulário de pagamento HTML, facilitando a obtenção e validação de todos os dados necessários para processar o pagamento.
 
+> WARNING
+>
+> Importante
+>
+> O cardtoken pode ser usado **somente uma vez** e expira dentro de **7 dias**.
+
 Para adicionar o formulário de pagamento, insira o HTML abaixo diretamente no projeto. 
 
+----[mla, mlu, mpe, mco, mlb, mlc]----
 [[[
 ```html
   <style>
@@ -77,12 +101,47 @@ Para adicionar o formulário de pagamento, insira o HTML abaixo diretamente no p
 ```
 ]]]
 
+------------
+----[mlm]----
+[[[
+```html
+  <style>
+    #form-checkout {
+      display: flex;
+      flex-direction: column;
+      max-width: 600px;
+    }
+
+    .container {
+      height: 18px;
+      display: inline-block;
+      border: 1px solid rgb(118, 118, 118);
+      border-radius: 2px;
+      padding: 1px 2px;
+    }
+  </style>
+  <form id="form-checkout">
+    <div id="form-checkout__cardNumber" class="container"></div>
+    <div id="form-checkout__expirationDate" class="container"></div>
+    <div id="form-checkout__securityCode" class="container"></div>
+    <input type="text" id="form-checkout__cardholderName" />
+    <select id="form-checkout__issuer"></select>
+    <select id="form-checkout__installments"></select>
+    <input type="email" id="form-checkout__cardholderEmail" />
+
+    <button type="submit" id="form-checkout__submit">Pagar</button>
+    <progress value="0" class="progress-bar">Carregando...</progress>
+  </form>
+```
+]]]
+
+------------
 
 ## Inicializar formulário de pagamento
 
 Após adicionar o formulário de pagamento, é preciso inicializá-lo. Esta etapa consiste em relacionar o ID de cada campo do formulário com os atributos correspondentes. A biblioteca será responsável pelo preenchimento, obtenção e validação de todos os dados necessários no momento de confirmação do pagamento. 
 
-
+----[mla, mlu, mpe, mco, mlb, mlc]----
 [[[
 ```javascript
 
@@ -185,16 +244,111 @@ Após adicionar o formulário de pagamento, é preciso inicializá-lo. Esta etap
 ```
 ]]]
 
+------------
+----[mlm]----
+[[[
+```javascript
+
+    const cardForm = mp.cardForm({
+      amount: "100.5",
+      iframe: true,
+      form: {
+        id: "form-checkout",
+        cardNumber: {
+          id: "form-checkout__cardNumber",
+          placeholder: "Número do cartão",
+        },
+        expirationDate: {
+          id: "form-checkout__expirationDate",
+          placeholder: "MM/YY",
+        },
+        securityCode: {
+          id: "form-checkout__securityCode",
+          placeholder: "Código de segurança",
+        },
+        cardholderName: {
+          id: "form-checkout__cardholderName",
+          placeholder: "Titular do cartão",
+        },
+        issuer: {
+          id: "form-checkout__issuer",
+          placeholder: "Banco emissor",
+        },
+        installments: {
+          id: "form-checkout__installments",
+          placeholder: "Parcelas",
+        },        
+        cardholderEmail: {
+          id: "form-checkout__cardholderEmail",
+          placeholder: "E-mail",
+        },
+      },
+      callbacks: {
+        onFormMounted: error => {
+          if (error) return console.warn("Form Mounted handling error: ", error);
+          console.log("Form mounted");
+        },
+        onSubmit: event => {
+          event.preventDefault();
+
+          const {
+            paymentMethodId: payment_method_id,
+            issuerId: issuer_id,
+            cardholderEmail: email,
+            amount,
+            token,
+            installments,
+            identificationNumber,
+            identificationType,
+          } = cardForm.getCardFormData();
+
+          fetch("/process_payment", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              token,
+              issuer_id,
+              payment_method_id,
+              transaction_amount: Number(amount),
+              installments: Number(installments),
+              description: "Descrição do produto",
+              payer: {
+                email,
+                identification: {
+                  type: identificationType,
+                  number: identificationNumber,
+                },
+              },
+            }),
+          });
+        },
+        onFetching: (resource) => {
+          console.log("Fetching resource: ", resource);
+
+          // Animate progress bar
+          const progressBar = document.querySelector(".progress-bar");
+          progressBar.removeAttribute("value");
+
+          return () => {
+            progressBar.setAttribute("value", "0");
+          };
+        }
+      },
+    });
+```
+]]]
+
+------------
 
 Ao enviar o formulário, um token é gerado representando, de forma segura, os dados do cartão. É possível acessá-lo através da função `getCardFormData`, como mostrado anteriormente no callback `onSubmit`. Além disso, este token também é armazenado em um input oculto dentro do formulário no qual poderá ser encontrado com a nomenclatura `MPHiddenInputToken`.
-
 
 > NOTE
 >
 > Importante
 >
 > Caso necessite adicionar ou modificar alguma lógica no fluxo dos métodos do Javascript consulte a documentação: [Integração via Métodos Core](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-core-methods)
-
 
 ## Enviar pagamento
 
@@ -204,13 +358,11 @@ No exemplo da seção anterior, enviamos todos os dados necessários para criar 
 
 Com todas as informações coletadas no backend, envie um POST com os atributos necessários, atentando-se aos parâmetros `token`, `transaction_amount`, `installments`, `payment_method_id` e o `payer.email` ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, faça o envio das informações utilizando nossos SDKs.
 
-
 > NOTE
 >
 > Importante
 >
 > Para aumentar as chances de aprovação do pagamento e evitar que a análise antifraude não autorize a transação, recomendamos inserir o máximo de informação sobre o comprador ao realizar a requisição. Para mais detalhes sobre como aumentar as chances de aprovação, veja [Como melhorar a aprovação dos pagamentos](/developers/pt/docs/checkout-api/how-tos/improve-payment-approval).
-
 
 [[[
 ```php
@@ -404,13 +556,12 @@ curl -X POST \
          "payment_method_id": "visa",
          "issuer_id": 310,
          "payer": {
-           "email": "test@test.com"
+           "email": "PAYER_EMAIL"
          }
    }'
  
 ```
 ]]]
-
 
 A resposta trará o seguinte resultado
 
@@ -429,14 +580,11 @@ A resposta trará o seguinte resultado
    ...
 }
 ```
-
 > WARNING
 >
 > Importante
 >
-> Os pagamentos criados possuem os seguintes status: "Pendente", "Rejeitado" e "Aprovado". Para acompanhar as atualizações é necessário configurar seu sistema para receber as notificações de pagamentos e outras atualizações de status. Veja [Notificações](/developers/pt/docs/checkout-api/additional-content/notifications/introduction) para mais detalhes.
-
-
+> Os pagamentos criados possuem os seguintes status: "Pendente", "Rejeitado" e "Aprovado". Para acompanhar as atualizações é necessário configurar seu sistema para receber as notificações de pagamentos e outras atualizações de status. Veja [Notificações](/developers/pt/docs/checkout-api/additional-content/your-integrations/notifications) para mais detalhes.
 
 ## Exemplo de código
 
@@ -455,20 +603,3 @@ A resposta trará o seguinte resultado
 >
 > Para exemplos completos de código, confira os [exemplos completos de integração](https://github.com/mercadopago/card-payment-sample) disponíveis no GitHub.
 ------------
-
-> PREV_STEP_CARD_PT
->
-> Pré-requisitos
->
-> Veja os pré-requisitos necessários para integrar o Checkout Transparente.
->
-> [Integrar Checkout Transparente](/developers/pt/docs/checkout-api/prerequisites)
-
-
-> NEXT_STEP_CARD_PT
->
-> Outros meios de pagamento
->
-> Conheça as outras opções de pagamento disponíveis para integração.
->
-> [Outros meios de pagamento](/developers/pt/docs/checkout-api/integration-configuration/other-payment-methods)

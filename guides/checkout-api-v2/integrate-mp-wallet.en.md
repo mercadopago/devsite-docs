@@ -1,17 +1,24 @@
-# Mercado Pago Wallet
+# Mercado Pago Account
 
-The Mercado Pago Wallet is a payment method that allows you to accept payments only from registered users. By offering this option, users will be able to pay by card, available balance and Mercado Crédito.
+The option to pay with Mercado Pago Wallet, by default, is presented in all Mercado Pago Checkouts in combination with guest user payments (no login).
 
+> NOTE
+>
+> Important
+>
+> In addition to the options available in this documentation, it is also possible to integrate payments with **Mercado Pago Account** using the **Wallet Brick**. Check [Default rendering](/developers/en/docs/checkout-bricks/wallet-brick/default-rendering#editor_2) documentation of Payment for more details.
+
+This option allows users registered in Mercado Pago and/or Mercado Livre to log in and use the available methods to make their payments, in addition to being able to include new payment options, such as credit cards.
+
+It is possible to pay with **card**, **available balance** and **Mercado Crédito** in a safe and optimized environment, increasing the chances of converting sales, in addition to allowing the seller to only offer payments with wallet. With this, the option to pay without logging in will not exist, however, it will contribute to an increase in the conversion of payments.
 
 > WARNING
 >
 > Important
 >
-> By adding this option, it will not be possible to receive payments from users who are not registered in Mercado Pago, as well as you will not be able to receive payments via cash or bank transfer.
-
+> By adding this option, it will not be possible to receive payments from users not registered in Mercado Pago, as well as you will not be able to receive payments via cash or bank transfer.
 
 Follow the steps below to configure the Mercado Pago Wallet as a payment method.
-
 
 > SERVER_SIDE
 >
@@ -19,9 +26,9 @@ Follow the steps below to configure the Mercado Pago Wallet as a payment method.
 >
 > Create preference
 
+If you are a user and want all your payments to be made via Wallet, you can determine this via an attribute in the preferences API. To create a preference, use one of the SDKs below.
 
-The first step to configure payments with Mercado Pago Wallet is to create the preference. To do this, send a **POST** with the `purpose` parameter and the `wallet_purchase` value to the endpoint [/checkout/preferences](/developers/en/reference/preferences/_checkout_preferences/post) and execute the request or, if you prefer, use one of the SDKs below.
-
+> In addition to the SDKs, it is also possible to create a preference through the preferences API. For that, send a **POST** with the parameter `purpose` and the value `wallet_purchase` to the endpoint [/checkout/preferences](/developers/en/reference/preferences/_checkout_preferences/post) and execute the request or, if you prefer, use one of the SDKs below.
 
 
 [[[
@@ -150,26 +157,6 @@ preference_data = {
 preference_response = sdk.preference().create(preference_data)
 preference = preference_response["response"]
 ```
-```curl
-===
-Wallet mode works by adding the _purpose_ attribute to the preference.
-===
-curl -X POST \
-'https://api.mercadopago.com/checkout/preferences' \
--H 'Content-Type: application/json' \
--H 'cache-control: no-cache' \
--H 'Authorization: Bearer **PROD_ACCESS_TOKEN**' \
--d '{
-"items": [
-{
-"title": "My product",
-"quantity": 1,
-"unit_price": 75
-}
-],
-"purpose": "wallet_purchase"
-}'
-```
 ]]]
 
 ----[mlc, mco]----
@@ -179,6 +166,7 @@ curl -X POST \
 > Important
 >
 > The `unit_price` value must be an integer.
+
 ------------
 
 > CLIENT_SIDE
@@ -187,52 +175,71 @@ curl -X POST \
 >
 > Add checkout
 
+After creating the preference in the backend, it will be necessary to install the Mercado Pago frontend SDK to the project to add the payment button.
 
-With the preference created, it is necessary to display the payment button that will allow the buyer to use the Mercado Pago Wallet as a payment method. To display the payment button, use the HTML below.
+The installation is done in **two steps**: **including the Mercado Pago SDK** to the project with its configured credentials and **initiating checkout** from the preference generated previously. To do this, follow the steps listed below.
 
+1. To include the MercadoPago.js SDK, add the code below to the project's HTML or install it via NPM as indicated in the examples below.
 
 
 [[[
 ```html
-<div class="cho-container"></div>
-<script src="https://sdk.mercadopago.com/js/v2"></script>
-<script>
-  const mp = new MercadoPago('PUBLIC_KEY');
+<body>
+  <script src="https://sdk.mercadopago.com/js/v2"></script>
+</body>
+```
+```bash
+npm install @mercadopago/sdk-js
 
-  mp.checkout({
-    preference: {
-      id: 'YOUR_PREFERENCE_ID'
-    },
-    render: {
-      container: '.cho-container',
-      label: 'Pagar com Mercado Pago',
-      type: 'wallet',
-    }
-  });
-</script>
 ```
 ]]]
 
-> WARNING
->
-> Importante
->
-> When creating a payment it is possible to receive 3 different statuses: "Pending", "Rejected" and "Approved". To keep up with updates, you need to configure your system to receive payment notifications and other status updates. See [Notifications](/developers/en/docs/checkout-api/additional-content/notifications/introduction) for more details.
+Next, initialize the integration by setting your [public key](/developers/en/docs/checkout-pro/additional-content/your-integrations/credentials) using the following code.
+
+[[[
+```html
+<script>
+  const mp = new MercadoPago("YOUR_PUBLIC_KEY");
+</script>
+
+```
+```javascript
+import { loadMercadoPago } from "@mercadopago/sdk-js";
 
 
-> PREV_STEP_CARD_EN
->
-> Prerequisites
->
-> See the necessary prerequisites to integrate Checkout API.
->
-> [Integrate Checkout API](/developers/en/docs/checkout-api/prerequisites)
+await loadMercadoPago();
+const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
 
+```
+]]]
 
-> NEXT_STEP_CARD_EN
+Once this is done, it is necessary to create a container to define the location where the button will be inserted on the screen. The container is created by inserting an element into the HTML code of the page where the component will be rendered.
+
+> NOTE
 >
-> Integration test
+> Important
 >
-> Learn how to test the Checkout API integration in your store.
->
-> [Integration Test](/developers/en/docs/checkout-api/integration-test/make-test-purchase)
+> The value displayed below in the **ID property** is just an example and can be changed, but it must always match the ID indicated in the rendering step.
+
+[[[
+```html
+<div id="wallet_container"></div>
+
+```
+]]]
+
+2. After completing the previous step, initialize your checkout using the ID of the preference previously created with the identifier of the element where the button should be displayed.
+
+[[[
+```javascript
+mp.bricks().create("wallet", "wallet_container", {
+  initialization: {
+    preferenceId: "<PREFERENCE_ID>",
+  },
+});
+
+```
+]]]
+
+When creating a payment it is possible to receive 3 different statuses: `Pending`, `Rejected` and `Approved`. To keep up with updates, you need to configure your system to receive payment notifications and other status updates. See [Notifications](/developers/en/docs/checkout-api/additional-content/your-integrations/notifications) for more details.
+

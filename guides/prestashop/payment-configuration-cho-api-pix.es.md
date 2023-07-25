@@ -1,4 +1,4 @@
-# Configurar pagos con Pix
+# Pix
 
 ----[mlb]----
 Con el [Checkout Transparente](/developers/es/guides/checkout-api/landing), ofrece pagos de **Pix** directamente en tu tienda. Pix es un método de pago instantáneo disponible las 24 horas del día.
@@ -14,11 +14,9 @@ Con el [Checkout API](/developers/es/guides/checkout-api/landing), ofrece pagos 
 >
 > Importante
 > 
-> La opción de pago con Pix solo se mostrará si existe una chave Pix cadastrada en Mercado Pago. Si aún no las creaste, [haz clic aquí](https://www.youtube.com/watch?v=60tApKYVnkA) y consulta el paso a paso. <br>
-> </br> <br/>
-> Además, existe un límite al valor de Pix, establecido por el Banco Central de Brasil, que se puede mover en el período de la noche (entre las 20 y las 6 horas) de R$ 1 mil. Para el período diurno (entre las 6 am y las 8 pm), sin embargo, no hay límite de movimiento.
+> La opción de pago con Pix solo se mostrará si existe una llave Pix registrada en Mercado Pago. Si aún no la creaste, [haz clic aquí](https://www.youtube.com/watch?v=60tApKYVnkA) y consulta el paso a paso.
 
-Para integrar el método de pago, siga los pasos a continuación.
+Para integrar el método de pago, sigue los pasos a continuación.
 
 1. Selecciona **Sí** para activar la experiencia de Mercado Pago para pagos con Pix en el checkout de tu tienda. Siempre puedes administrar la(s) clave(s) Pix que registraste en tu cuenta usando la app de Mercado Pago.
 2. Indicar la fecha de caducidad que tendrán los clientes para realizar la transferencia vía Pix.

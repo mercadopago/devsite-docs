@@ -1,7 +1,16 @@
-# Carteira Mercado Pago
+# Conta Mercado Pago
 
-A Carteira Mercado Pago é uma forma de pagamento que permite aceitar pagamentos apenas de usuários cadastrados. Ao oferecer esta opção, os usuários poderão pagar com cartão, saldo disponível e Mercado Crédito. 
+A opção de pagar com a Conta Mercado Pago, por padrão, é apresentada em todos os Checkouts do Mercado Pago em combinação com pagamentos de usuários guest (sem login). 
 
+> NOTE
+>
+> Importante
+>
+> Além das opções disponíveis nesta documentação, também é possível integrar pagamentos com a **Conta Mercado Pago** utilizando o **Brick de Wallet**. Veja a documentação [Renderização padrão](/developers/pt/docs/checkout-bricks/wallet-brick/default-rendering#editor_2) de Wallet para mais detalhes. 
+
+Esta opção permite que usuários cadastrados no Mercado Pago e/ou Mercado Livre façam login e utilizem-se dos métodos disponíveis para efetuar seus pagamentos, além de poder incluir novas opções de pagamento, como cartões de crédito. 
+
+É possível pagar com **cartão**, **saldo disponível** e **Mercado Crédito** em um ambiente seguro e otimizado, aumentando as chances de conversão de vendas, além de permitir ao vendedor oferecer somente pagamentos com Conta Mercado Pago. Com isso, a opção de pagar sem se logar não existirá, porém, contribuirá para um aumento na conversão de pagamentos.
 
 > WARNING
 >
@@ -9,9 +18,7 @@ A Carteira Mercado Pago é uma forma de pagamento que permite aceitar pagamentos
 >
 > Ao adicionar esta opção, não será possível receber pagamentos de usuários não cadastrados no Mercado Pago, assim como não poderá receber pagamentos via dinheiro ou transferência.
 
-
-Siga as etapas abaixo para configurar a Carteira Mercado Pago como meio de pagamento.
-
+Siga as etapas abaixo para configurar a Conta Mercado Pago como meio de pagamento.
 
 > SERVER_SIDE
 >
@@ -19,15 +26,14 @@ Siga as etapas abaixo para configurar a Carteira Mercado Pago como meio de pagam
 >
 > Criar preferência
 
+Se você é um usuário e deseja que todos os seus pagamentos sejam feitos via Wallet, é possível determinar isso através de um atributo na chamada de preferências. Para criar uma preferência, utilize um dos SDKs disponíveis abaixo.
 
-A primeira etapa para configurar pagamentos com Carteira Mercado Pago é a criação da preferência. Para isso, envie um **POST** com o parâmetro `purpose` e o valor `wallet_purchase` ao endpoint [/checkout/preferences](/developers/pt/reference/preferences/_checkout_preferences/post) e execute a requisição ou, se preferir, utilize um dos SDKs abaixo.
-
-
+> Além dos SDKs, também é possível criar uma preferência através da API de preferências. Para isso, envie um **POST** com o parâmetro `purpose` e o valor `wallet_purchase` ao endpoint [/checkout/preferences](/developers/pt/reference/preferences/_checkout_preferences/post) e execute a requisição.
 
 [[[
 ```php
 ===
-O modo carteira funciona adicionando o atributo _purpose_ na preferência.
+O modo Conta Mercado Pago funciona adicionando o atributo _purpose_ na preferência.
 ===
 <?php
 // Cria um objeto de preferência
@@ -45,7 +51,7 @@ $preference->save();
 ```
 ```node
 ===
-O modo carteira funciona adicionando o atributo _purpose_ na preferência.
+O modo Conta Mercado Pago funciona adicionando o atributo _purpose_ na preferência.
 ===
 // Cria um objeto de preferência
 let preference = {
@@ -69,7 +75,7 @@ mercadopago.preferences.create(preference)
 ```
 ```java
 ===
-O modo carteira funciona adicionando o atributo _purpose_ na preferência.
+O modo Conta Mercado Pago funciona adicionando o atributo _purpose_ na preferência.
 ===
 // Cria um objeto de preferência
 PreferenceClient client = new PreferenceClient();
@@ -92,7 +98,7 @@ client.create(request);
 ```
 ```ruby
 ===
-O modo carteira funciona adicionando o atributo _purpose_ na preferência.
+O modo Conta Mercado Pago funciona adicionando o atributo _purpose_ na preferência.
 ===
 sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 # Cria um objeto de preferência
@@ -114,7 +120,7 @@ preference = preference_response[:response]
 ```
 ```csharp
 ===
-O modo carteira funciona adicionando o atributo _purpose_ na preferência.
+O modo Conta Mercado Pago funciona adicionando o atributo _purpose_ na preferência.
 ===
 // Cria o objeto de request da preferência
 var request = new PreferenceRequest
@@ -150,26 +156,6 @@ preference_data = {
 preference_response = sdk.preference().create(preference_data)
 preference = preference_response["response"]
 ```
-```curl
-===
-O modo carteira funciona adicionando o atributo _purpose_ na preferência.
-===
-curl -X POST \
-  'https://api.mercadopago.com/checkout/preferences' \
-  -H 'Content-Type: application/json' \
-  -H 'cache-control: no-cache' \
-  -H 'Authorization: Bearer **PROD_ACCESS_TOKEN**' \
-  -d '{
-    "items": [
-        {
-            "title": "Meu produto",
-            "quantity": 1,
-            "unit_price": 75
-        }
-    ],
-    "purpose": "wallet_purchase"
-}'
-```
 ]]]
 
 ----[mlc, mco]----
@@ -179,6 +165,7 @@ curl -X POST \
 > Importante
 >
 > O valor `unit_price` deve ser um número inteiro.
+
 ------------
 
 > CLIENT_SIDE
@@ -187,52 +174,75 @@ curl -X POST \
 >
 > Adicionar checkout
 
+Após ter criado a preferência no backend, será necessário instalar o SDK de frontend do Mercado Pago ao projeto para adicionar o botão de pagamento.
 
-Com a preferência criada, é preciso exibir o botão de pagamento que permitirá o comprador utilizar a carteira Mercado Pago para pagamento. Para exibir o botão de pagamento, utilize um dos SDKs disponíveis abaixo.
+A instalação é feita, em **duas etapas**: **incluindo o SDK do Mercado Pago** ao projeto com suas credenciais configuradas e **iniciando o checkout** a partir da preferência gerada anteriormente. Para isso, siga os passos listados abaixo.
 
-
+1. Para incluir o SDK MercadoPago.js, adicione o código abaixo no HTML do projeto ou instale via NPM conforme indicado nos exemplos a seguir.
 
 [[[
-```html
-<div class="cho-container"></div>
-<script src="https://sdk.mercadopago.com/js/v2"></script>
-<script>
-  const mp = new MercadoPago('PUBLIC_KEY');
 
-  mp.checkout({
-    preference: {
-      id: 'YOUR_PREFERENCE_ID'
-    },
-    render: {
-      container: '.cho-container',
-      label: 'Pagar com Mercado Pago',
-      type: 'wallet',
-    }
-  });
-</script>
+```html
+<body>
+  <script src="https://sdk.mercadopago.com/js/v2"></script>
+</body>
+```
+```bash
+
+npm install @mercadopago/sdk-js
+
 ```
 ]]]
 
-> WARNING
+Em seguida, inicialize a integração definindo sua [chave pública](/developers/pt/docs/checkout-api/additional-content/your-integrations/credentials) usando o seguinte código.
+
+[[[
+```html
+
+<script>
+  const mp = new MercadoPago("YOUR_PUBLIC_KEY");
+</script>
+
+```
+```javascript
+
+import { loadMercadoPago } from "@mercadopago/sdk-js";
+
+
+await loadMercadoPago();
+const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
+
+```
+]]]
+
+Feito isso, é necessário criar um container para definir o local que o botão será inserido na tela. A criação do container é feita inserindo um elemento no código HTML da página no qual o componente será renderizado.
+
+> NOTE
 >
 > Importante
 >
-> Os pagamentos criados possuem os seguintes status: "Pendente", "Rejeitado" e "Aprovado". Para acompanhar as atualizações é necessário configurar seu sistema para receber as notificações de pagamentos e outras atualizações de status. Veja [Notificações](/developers/pt/docs/checkout-api/additional-content/notifications/introduction) para mais detalhes.
+> O valor exibido abaixo na **propriedade ID** é apenas um exemplo e pode ser alterado, mas deve sempre corresponder ao ID indicado na etapa de renderização.
 
+[[[
+```html
 
-> PREV_STEP_CARD_PT
->
-> Pré-requisitos
->
-> Veja os pré-requisitos necessários para integrar o Checkout Transparente.
->
-> [Integrar Checkout Transparente](/developers/pt/docs/checkout-api/prerequisites)
+<div id="wallet_container"></div>
 
+```
+]]]
 
-> NEXT_STEP_CARD_PT
->
-> Teste de integração
->
-> Saiba como testar a integração do Checkout Transparente em sua loja.
->
-> [Teste de integração](/developers/pt/docs/checkout-api/integration-test/make-test-purchase)
+2. Ao finalizar a etapa anterior, inicialize seu checkout utilizando o ID da preferência previamente criada com o identificador do elemento onde o botão deverá ser exibido.
+
+[[[
+```javascript
+
+mp.bricks().create("wallet", "wallet_container", {
+  initialization: {
+    preferenceId: "<PREFERENCE_ID>",
+  },
+});
+
+```
+]]]
+
+Os pagamentos criados possuem os seguintes status: `Pendente`, `Rejeitado` e `Aprovado`. Para acompanhar as atualizações é necessário configurar seu sistema para receber as notificações de pagamentos e outras atualizações de status. Veja [Notificações](/developers/pt/docs/checkout-api/additional-content/your-integrations/notifications) para mais detalhes.

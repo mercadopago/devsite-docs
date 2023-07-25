@@ -2,7 +2,7 @@
 >
 > h1
 >
-> Enviar pagamento (Pix)
+> Pix
 
 Ao finalizar a inclusão do formulário de pagamento, é preciso enviar o **e-mail do comprador**, o **tipo e o número do documento**, o **meio de pagamento utilizado (pix)** e o **detalhe do valor**.
 
@@ -17,25 +17,10 @@ Para configurar pagamento com Pix, envie um POST ao endpoint [/v1/payments](/dev
 
  $payment = new MercadoPago\Payment();
  $payment->transaction_amount = 100;
- $payment->description = "Título do produto";
  $payment->payment_method_id = "pix";
  $payment->payer = array(
-     "email" => "test@test.com",
-     "first_name" => "Test",
-     "last_name" => "User",
-     "identification" => array(
-         "type" => "CPF",
-         "number" => "19119119100"
-      ),
-     "address"=>  array(
-         "zip_code" => "06233200",
-         "street_name" => "Av. das Nações Unidas",
-         "street_number" => "3003",
-         "neighborhood" => "Bonfim",
-         "city" => "Osasco",
-         "federal_unit" => "SP"
-      )
-   );
+    "email" => "PAYER_EMAIL_HERE",
+  );
 
  $payment->save();
 
@@ -47,24 +32,9 @@ mercadopago.configurations.setAccessToken(config.access_token);
 
 var payment_data = {
   transaction_amount: 100,
-  description: 'Título do produto',
   payment_method_id: 'pix',
   payer: {
-    email: 'test@test.com',
-    first_name: 'Test',
-    last_name: 'User',
-    identification: {
-        type: 'CPF',
-        number: '19119119100'
-    },
-    address:  {
-        zip_code: '06233200',
-        street_name: 'Av. das Nações Unidas',
-        street_number: '3003',
-        neighborhood: 'Bonfim',
-        city: 'Osasco',
-        federal_unit: 'SP'
-    }
+    email: 'PAYER_EMAIL_HERE',
   }
 };
 
@@ -83,15 +53,10 @@ PaymentClient client = new PaymentClient();
 PaymentCreateRequest paymentCreateRequest =
    PaymentCreateRequest.builder()
        .transactionAmount(new BigDecimal("100"))
-       .description("Título do produto")
        .paymentMethodId("pix")
-       .dateOfExpiration(OffsetDateTime.of(2023, 1, 10, 10, 10, 10, 0, ZoneOffset.UTC))
        .payer(
            PaymentPayerRequest.builder()
-               .email("test@test.com")
-               .firstName("Test")
-               .identification(
-                   IdentificationRequest.builder().type("CPF").number("19119119100").build())
+               .email("PAYER_EMAIL_HERE")
                .build())
        .build();
 
@@ -103,14 +68,9 @@ sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
 payment_request = {
   transaction_amount: 100,
-  description: 'Título do produto',
   payment_method_id: 'pix',
   payer: {
-    email: 'test@test.com',
-    identification: {
-      type: 'CPF',
-      number: '19119119100',
-    }
+    email: 'PAYER_EMAIL_HERE',
   }
 }
 
@@ -130,18 +90,10 @@ MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
 var request = new PaymentCreateRequest
 {
     TransactionAmount = 105,
-    Description = "Título do produto",
     PaymentMethodId = "pix",
     Payer = new PaymentPayerRequest
     {
-        Email = "test@test.com",
-        FirstName = "Test",
-        LastName = "User",
-        Identification = new IdentificationRequest
-        {
-            Type = "CPF",
-            Number = "191191191-00",
-        },
+        Email = "PAYER_EMAIL_HERE",
     },
 };
 
@@ -155,24 +107,9 @@ sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
 
 payment_data = {
     "transaction_amount": 100,
-    "description": "Título do produto",
     "payment_method_id": "pix",
     "payer": {
-        "email": "test@test.com",
-        "first_name": "Test",
-        "last_name": "User",
-        "identification": {
-            "type": "CPF",
-            "number": "191191191-00"
-        },
-        "address": {
-            "zip_code": "06233-200",
-            "street_name": "Av. das Nações Unidas",
-            "street_number": "3003",
-            "neighborhood": "Bonfim",
-            "city": "Osasco",
-            "federal_unit": "SP"
-        }
+        "email": "PAYER_EMAIL_HERE",
     }
 }
 
@@ -187,24 +124,9 @@ curl -X POST \
     'https://api.mercadopago.com/v1/payments' \
     -d '{
       "transaction_amount": 100,
-      "description": "Título do produto",
       "payment_method_id": "pix",
       "payer": {
-        "email": "test@test.com",
-        "first_name": "Test",
-        "last_name": "User",
-        "identification": {
-            "type": "CPF",
-            "number": "19119119100"
-        },
-        "address": {
-            "zip_code": "06233200",
-            "street_name": "Av. das Nações Unidas",
-            "street_number": "3003",
-            "neighborhood": "Bonfim",
-            "city": "Osasco",
-            "federal_unit": "SP"
-        }
+        "email": "PAYER_EMAIL_HERE"
       }
     }'
 ```
@@ -247,6 +169,7 @@ A resposta mostrará o estado pendente do pagamento e todas as informações que
 ## Mostre o status do pagamento
 
 Após criar o pagamento pelo backend utilizando a SDK do Mercado Pago, utilize o **id** recebido na resposta para instanciar o Status Screen Brick e mostrar para o comprador.
+
 Além de exibir o status do pagamento, o Status Screen Brick também exibirá o código Pix para copiar e colar e o QRCode para o comprador escanear e pagar. Saiba como é simples integrar [clicando aqui](/developers/pt/docs/checkout-bricks/status-screen-brick/configure-integration).
 
 > WARNING
@@ -255,4 +178,8 @@ Além de exibir o status do pagamento, o Status Screen Brick também exibirá o 
 >
 > Caso você tenha utilizado as credenciais de produção de um usuário de teste para gerar o pagamento com Pix, ocorrerá um erro de visualização ao clicar no botão que leva a página do QR Code. Para visualizá-la corretamente, remova o trecho `/sandbox` da URL da página aberta.
 
+<center>
+
 ![payment-submission-pix-status](checkout-bricks/payment-submission-pix-status-pt.jpg)
+
+</center>

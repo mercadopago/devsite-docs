@@ -84,18 +84,3 @@ curl -X GET \
 ```
 ]]]
 
-> PREV_STEP_CARD_ES
->
-> Modificar cliente
->
-> Aprende cómo modificar datos de un cliente previamente creado
->
-> [Modificar cliente](/developers/es/docs/checkout-api/cards-and-customers-management/modify-customer)
-
-> NEXT_STEP_CARD_ES
->
-> Agregar nuevas tarjetas a un cliente
->
-> Aprende cómo buscar agregar nuevas tarjetas a un cliente previamente creado.
->
-> [Agregar nuevas tarjetas a un cliente](/developers/es/docs/checkout-api/cards-and-customers-management/add-new-cards-to-customer)
