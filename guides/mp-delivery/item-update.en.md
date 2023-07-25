@@ -4,7 +4,7 @@ To change the status of an item, make a PUT request to the endpoint [/proximity/
 
 > The `external_id` of a store can be configured through the endpoint [/proximity-integration/stores/{StoreID}/external_id](/developers/en/reference/mp_delivery/_proximity-integration_stores_StoreID_external_id/put).
 
-Additionally, you will need to include the `access-token` of the user who received the publication in the header. The `access-token` can be generated through the OAuth authentication process. Refer to the [OAuth documentation](/developers/en/docs/mp-delivery/additional-content/security/oauth/introduction) for more information.
+Additionally, you will need to include the `access_token` of the user who received the publication in the header. The `access_token` can be generated through the OAuth authentication process. Refer to the [OAuth documentation](/developers/en/docs/mp-delivery/additional-content/security/oauth/introduction) for more information.
 
 An item can return the following states in the response:
 

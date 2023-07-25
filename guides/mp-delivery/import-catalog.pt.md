@@ -1,6 +1,6 @@
 # Importar Catálogo
 
-Para importar em massa um catálogo para várias lojas do mesmo usuário, faça um POST informando o `access-token` do usuário no cabeçalho para o seguinte endpoint [/proximity/integration/v1/catalog](/developers/pt/reference/mp_delivery/_proximity_integrationcatalog/post). O `access-token` pode ser gerado através do processo de autenticação OAuth. Consulte a [documentação de OAuth](/developers/pt-br/docs/mp-delivery/additional-content/security/oauth/introduction) para obter mais informações.
+Para importar em massa um catálogo para várias lojas do mesmo usuário, faça um POST informando o `access_token` do usuário no cabeçalho para o seguinte endpoint [/proximity/integration/v1/catalog](/developers/pt/reference/mp_delivery/_proximity_integrationcatalog/post). O `access_token` pode ser gerado através do processo de autenticação OAuth. Consulte a [documentação de OAuth](/developers/pt-br/docs/mp-delivery/additional-content/security/oauth/introduction) para obter mais informações.
 
 Ao inserir os IDs das lojas que receberão o catálogo, insira os `external_ids`. O ID externo de uma loja pode ser configurado através do endpoint [/proximity-integration/stores/{StoreID}/external_id](/developers/pt/reference/mp_delivery/_proximity-integration_stores_StoreID_external_id/put).
 

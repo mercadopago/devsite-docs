@@ -3,7 +3,7 @@
 Al importar un catálogo, es importante observar que el proceso se complete correctamente. Para eso, realiza un GET al endpoint [/proximity/integration/v1/catalog/{publication_id}](/developers/es/reference/mp_delivery/_proximity_integrationcatalog_publication_id/get) informando los siguientes valores:
 
 * `publication_id`: esta información se obtiene con la respuesta del endpoint de importación del catálogo.
-* `access-token`: esta información deberá ser incluida en el header. Corresponde al usuario que recibió la publicación. El access-token puede ser generado por el proceso de autenticación de OAuth. Consulta la [documentación de OAuth](/developers/es/docs/mp-delivery/additional-content/security/oauth/introduction) para obtener más información.
+* `access_token`: esta información deberá ser incluida en el header. Corresponde al usuario que recibió la publicación. El access_token puede ser generado por el proceso de autenticación de OAuth. Consulta la [documentación de OAuth](/developers/es/docs/mp-delivery/additional-content/security/oauth/introduction) para obtener más información.
 
 Este endpoint puede devolver los siguientes estados en la respuesta:
 
