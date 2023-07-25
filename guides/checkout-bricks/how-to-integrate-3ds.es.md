@@ -122,10 +122,19 @@ El usuario debe responder al desafío para que la transición se valide correcta
 
 Antes de pasar a producción, es posible probar la integración para asegurarse de que el flujo de 3DS funcione correctamente y que los pagos se procesan sin errores. De esta manera, evitas que los compradores abandonen la transacción porque no pueden completar la compra.
 
-Para realizar una compra de prueba, además de las credenciales de prueba de tu usuario de producción, es necesario utilizar una tarjeta de crédito de prueba con 3DS habilitado. 
+Para poder validar pagos con 3DS, ponemos a disposición un **entorno de pruebas tipo sandbox** que devuelve resultados simulados solo para la simulación y validación de la implementación. Para realizar pruebas de pago en un entorno sandbox, es necesario utilizar sus **credenciales de prueba y tarjetas específicas** que permitan probar la implementación del Challenge con flujos de éxito y fallo. La tabla a continuación muestra los detalles de estas tarjetas:
 
-> WARNING
->
-> Importante
->
-> Para la realización de pruebas, recomendamos que te pongas en contacto con tu consultor de Mercado Pago.
+| Flujo	 | Número | Código de seguridad | Fecha de vencimiento |
+|---|---|---|---|
+| Challenge exitoso	 | 5483 9281 6457 4623| 123 | 11/25 |
+| Challenge no autorizado	 | 5361 9568 0611 7557| 123 | 11/25 |
+
+> Los pasos para generar el pago son los mismos [ejemplificados anteriormente](/developers/es/docs/checkout-bricks/how-tos/integrate-3ds#bookmark_integrar_com_3ds) en esta sección.
+
+### Challenge
+
+En ambos los flujos (éxito y fallo), el Challenge, que es una pantalla similar a la mostrada a continuación, debe ser mostrado por el [Status Screen Brick](/developers/en/docs/checkout-bricks/status-screen-brick/introduction).
+
+IMAGEN
+
+El código de verificación proporcionado es solo ilustrativo. Para concluir el flujo de prueba, simplemente haz clic en el botón **Confirmar** y el Status Screen mostrará el estado final del pago.
