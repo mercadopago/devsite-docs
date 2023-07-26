@@ -122,18 +122,18 @@ The user must respond to the challenge for the transition to be properly validat
 
 Before going into production, it is possible to test the integration to ensure that the 3DS flow works correctly and that payments are processed without errors. This way, it avoids buyers from abandoning the transaction because they can't complete it.
 
-To enable the validation of payments with 3DS, we provide a **sandbox testing environment** that returns simulated results solely for simulation and implementation validation purposes. To perform payment tests in a sandbox environment, it is necessary to use your **test credentials and specific cards** that allow testing the challenge implementation with success and failure flows. The following table presents the details of these cards
+To enable the validation of payments with 3DS, we provide a **sandbox testing environment** that returns simulated results solely for simulation and implementation validation purposes. To perform payment tests in a sandbox environment, it is necessary to use your **test credentials and specific cards** that allow testing the _Challenge_ implementation with success and failure flows. The following table presents the details of these cards
 
 | Flow | Number | Security code | Expiration date |
 |---|---|---|---|
-| Successful challenge | 5483 9281 6457 4623| 123 | 11/25 |
-| Unauthorized challenge	 | 5361 9568 0611 7557| 123 | 11/25 |
+| Successful _Challenge_ | 5483 9281 6457 4623| 123 | 11/25 |
+| Unauthorized _Challenge_	 | 5361 9568 0611 7557| 123 | 11/25 |
 
 > The steps to generate the payment are the same as [exemplified previously](/developers/en/docs/checkout-bricks/how-tos/integrate-3ds#bookmark_integrar_com_3ds) in this section.
 
 ### Challenge
 
-In both flows (success and failure), the Challenge, which is a screen similar to the one shown below, must be displayed by the [Status Screen Brick](/developers/pt/docs/checkout-bricks/status-screen-brick/introduction).
+In both flows (success and failure), the _Challenge_, which is a screen similar to the one shown below, must be displayed by the [Status Screen Brick](/developers/pt/docs/checkout-bricks/status-screen-brick/introduction).
 
 <center>
 
