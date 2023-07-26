@@ -2,7 +2,7 @@
 
 Se desejar, você pode receber notificações Webhooks. Estas são enviadas de nossa API de Integrações para o seu sistema de recebimento por meio de uma chamada `HTTP POST` em relação às mudanças de status apresentadas por uma intenção de pagamento.
 
-Para integrar notificações Webhook, siga as instruções [nesta documentação](/developers/pt/docs/mp-point/additional-content/your-integrations/notifications/webhooks).
+Siga as instruções [na documentação de notificações Webhook](/developers/pt/docs/mp-point/additional-content/your-integrations/notifications/webhooks) para integrá-las.
 
 > WARNING
 >
@@ -14,7 +14,8 @@ Para integrar notificações Webhook, siga as instruções [nesta documentação
 
 Depois de implementar as notificações e fazer os ajustes necessários, elas terão o seguinte formato:
 
-#### Status Finished:
+#### Status Finished
+Status final de uma intenção de pagamento quando a transação termina.
 
 ----[mla]----
 ```json
@@ -80,7 +81,75 @@ Depois de implementar as notificações e fazer os ajustes necessários, elas te
 ```
 ------------
 
-#### Status Canceled:
+#### Status Confirmation_required
+Ocorre quando a intenção de pagamento concluiu sem receber um status de pagamento. Uma vez obtido, esse status não mudará. Ao recebê-lo, você deve confirmar em seu dispositivo qual é o status do pagamento, usando o `payment_id` recebido na resposta, antes de entregar seu produto ou serviço.
+
+----[mla]----
+```json
+{
+ "amount": 100,
+ "caller_id": 09876543,
+ "client_id": 1234567890,
+ "created_at": "2021-11-29 17:10:37",
+ "id": "abcdef123-8ab5-4139-9aa3-abcd123",
+ "payment": {
+   "id": 123456789,
+   "state": "",
+   "type": ""
+ },
+ "state": "CONFIRMATION_REQUIRED",
+ "additional_info": {
+   "external_reference": "information",
+   "ticket_number": "39SHDKKDJ"
+ }
+}
+```
+------------
+
+----[mlb]----
+```json
+{
+"amount": 100,
+"caller_id": 09876543,
+"client_id": 1234567890,
+"created_at": "2021-11-29 17:10:37",
+"id": "abcdef123-8ab5-4139-9aa3-abcd123",
+"payment": {
+  "id": 123456789,
+  "state": "",
+  "type": ""
+},
+"state": "CONFIRMATION_REQUIRED",
+"additional_info": {
+  "external_reference": "information"
+}
+}
+```
+------------
+
+----[mlm]----
+```json
+{
+ "amount": 100,
+ "caller_id": 09876543,
+ "client_id": 1234567890,
+ "created_at": "2021-11-29 17:10:37",
+ "id": "abcdef123-8ab5-4139-9aa3-abcd123",
+ "payment": {
+   "id": 123456789,
+   "state": "",
+   "type": ""
+ },
+ "state": "CONFIRMATION_REQUIRED",
+ "additional_info": {
+   "external_reference": "information"
+ }
+}
+```
+------------
+
+#### Status Canceled
+Status final de uma intenção de pagamento quando ela é cancelada.
 
 ----[mla]----
 ```json
@@ -131,7 +200,9 @@ Depois de implementar as notificações e fazer os ajustes necessários, elas te
 ```
 ------------
 
-#### Status Error:
+#### Status Error
+Status final de uma intenção de pagamento quando ocorre um erro de transação.
+
 
 ----[mla]----
 ```json
@@ -191,29 +262,24 @@ ter controle e monitoramento de seus dispositivos. Essas notificações podem se
 - Logouts.
 - Mudança no modo de operação de PDV para STANDALONE ou vice-versa.
 
-As notificações chegarão ao seu e-mail cadastrado no MercadoPago, caso não encontre
-verifique sua pasta de SPAM.
+As notificações chegarão ao seu e-mail cadastrado no MercadoPago. Caso não encontre verifique sua pasta de SPAM.
 
 
 > WARNING
 >
 > Importante
 >
-> Você receberá notificações de todos os dispositivos associados às suas credenciais de acesso (Acess Token).
-Exemplo de notificação.
+> Você receberá notificações de todos os dispositivos associados às suas credenciais de acesso (`Acess Token`).
+
+Você pode ver um exemplo dessas notificações abaixo:
 
 ![Email notification](/images/point-api/email-notification-pt.png)
 
+
 ## Ativar notificações
 
-Para ativar as notificações é necessário habilitar o canal de e-mail do integrador, você pode usar o
+Para ativar as notificações é necessário habilitar o canal de e-mail do integrador. Para faze-lo, você pode usar o
 seguinte comando:
-
-> WARNING
->
-> Importante
->
-> As notificações estarão disponíveis 30 minutos após o processo de ativação.
 
 ```curl
 curl --location --request PATCH 'https://api.mercadopago.com/point/integration-api/integrator' \
@@ -226,6 +292,13 @@ curl --location --request PATCH 'https://api.mercadopago.com/point/integration-a
 }'
 ```
 
+> WARNING
+>
+> Importante
+>
+> As notificações estarão disponíveis 30 minutos após o processo de ativação.
+
+
 ## Verifique os canais ativados
 
 Uma vez configurado o canal de notificação, você pode verificar seu status executando o seguinte comando:
@@ -237,7 +310,7 @@ curl --location --request GET 'https://api.mercadopago.com/point/integration-api
 
 ------------
 
-Exemplo de resposta:
+A resposta será semelhante a isso:
 
 ```json
 {

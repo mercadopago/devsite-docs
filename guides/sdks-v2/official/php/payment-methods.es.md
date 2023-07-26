@@ -8,7 +8,7 @@ Es posible consultar los métodos de pago disponibles y obtener una lista con lo
 
   MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
 
-  $payment_methods = MercadoPago::get("/v1/payment_methods");
+  $payment_methods = MercadoPago\PaymentMethod::all();
 
 ?>
 ```
