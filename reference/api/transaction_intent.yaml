@@ -5,10 +5,10 @@ info:
   title: Mercado Pago API Reference
   version: "1.0"
 paths:
-  /online-payments/v1/transaction-intents/{id}:
+  /v1/transaction-intents/{id}:
     get:
       tags:
-        - $ref: "#/tags/checkout-api"
+        - $ref: '#/tags/checkout-api'
       summary: Get transaction intent by ID
       x-summary-i18n:
         eng: Get transaction intent by ID
@@ -171,7 +171,7 @@ paths:
                                 properties:
                                   enabled:
                                     type: array
-                                    example: ["visa", "master"]
+                                    example: visa, master
                                     description: Payment methods included
                                     items:
                                       type: object
@@ -220,7 +220,7 @@ paths:
                                     type: array
                                     items:
                                       type: string
-                                      example: ["ticket", "account_money"]
+                                      example: ticket, account_money
                                       description: Methods of payment not included
                                       x-description-i18n:
                                         eng: Methods of payment not included
