@@ -6,9 +6,9 @@ Saiba como utilizar o app **MP Reorder** para alterar a ordem de exibição dos 
 >
 > Importante
 >
-> Este app é instalado automaticamente quando for feita a [integração](/developers/pt/docs/shopify/integration-configuration/checkout-pro) do **Checkout Mercado Pago** e, para que o seu funcionamento ocorra corretamente, é necessário desativar outros apps de ordenação instalados.
+> Para que o funcionamento do **MP Reorder** ocorra corretamente, é necessário desativar outros apps de ordenação instalados.
 
-## Altere a posicão dos provedores
+## Altere a posição dos provedores
 
 1. Vá para a sua loja [Shopify](https://accounts.shopify.com/store-login).
 2. No painel administrativo da loja, clique em **Apps**.
