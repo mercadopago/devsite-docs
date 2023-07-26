@@ -122,10 +122,23 @@ O usuário deve responder ao desafio para que a transição seja validada devida
 
 Antes de ir à produção, é possível testar a integração para garantir que o fluxo 3DS funcione corretamente e que os pagamentos sejam processados sem erros. Dessa forma, evita-se que os compradores abandonem a transação por não conseguirem concluí-la.
 
-Para realizar uma compra de teste, será necessário ter em mãos as credenciais de teste do seu usuário de produção, além de um cartão de crédito de teste com 3DS habilitado.
+Para que seja possível validar pagamentos com 3DS, disponibilizamos um **ambiente de testes do tipo sandbox** que retorna resultados simulados apenas para simulação e validação da implementação. Para realizar testes de pagamento em um ambiente sandbox, é necessário utilizar suas **credenciais de teste e cartões específicos** que permitam testar a implementação do _Challenge_ com os fluxos de sucesso e falha. A tabela a seguir apresenta os detalhes desses cartões:
 
-> WARNING
->
-> Importante
->
-> Para a realização dos testes, recomendamos que você entre em contato com seu consultor do Mercado Pago.
+| Fluxo | Número | Código de segurança | Data de vencimento |
+|---|---|---|---|
+| _Challenge_ com sucesso | 5483 9281 6457 4623| 123 | 11/25 |
+| _Challenge_ não autorizado | 5361 9568 0611 7557| 123 | 11/25 |
+
+> Os passos para gerar o pagamento são os mesmos [exemplificados anteriormente](/developers/pt/docs/checkout-bricks/how-tos/integrate-3ds#bookmark_integrar_com_3ds) nesta seção.
+
+### Challenge
+
+Em ambos os fluxos (sucesso e falha), o _Challenge_, que é uma tela semelhante à exibida abaixo, deve ser exibido pelo [Status Screen Brick](/developers/pt/docs/checkout-bricks/status-screen-brick/introduction).
+
+<center>
+
+![bricks_sandbox](checkout-bricks/bricks_sandbox-pt.png)
+
+</center>
+
+O código de verificação fornecido é apenas ilustrativo. Para concluir o fluxo de teste, basta clicar no botão **Confirmar** e o Status Screen irá exibir o estado final do pagamento.
