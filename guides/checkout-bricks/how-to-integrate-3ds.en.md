@@ -122,10 +122,23 @@ The user must respond to the challenge for the transition to be properly validat
 
 Before going into production, it is possible to test the integration to ensure that the 3DS flow works correctly and that payments are processed without errors. This way, it avoids buyers from abandoning the transaction because they can't complete it.
 
-To make a test purchase, you will need to have the test credentials of your production user and a test credit card with 3DS enabled.
+To enable the validation of payments with 3DS, we provide a **sandbox testing environment** that returns simulated results solely for simulation and implementation validation purposes. To perform payment tests in a sandbox environment, it is necessary to use your **test credentials and specific cards** that allow testing the challenge implementation with success and failure flows. The following table presents the details of these cards
 
-> WARNING
->
-> Important
->
-> To perform the tests, we recommend that you contact your Mercado Pago consultant.
+| Flow | Number | Security code | Expiration date |
+|---|---|---|---|
+| Successful challenge | 5483 9281 6457 4623| 123 | 11/25 |
+| Unauthorized challenge	 | 5361 9568 0611 7557| 123 | 11/25 |
+
+> The steps to generate the payment are the same as [exemplified previously](/developers/en/docs/checkout-bricks/how-tos/integrate-3ds#bookmark_integrar_com_3ds) in this section.
+
+### Challenge
+
+In both flows (success and failure), the Challenge, which is a screen similar to the one shown below, must be displayed by the [Status Screen Brick](/developers/pt/docs/checkout-bricks/status-screen-brick/introduction).
+
+<center>
+
+![bricks_sandbox](checkout-bricks/bricks_sandbox-en.png)
+
+</center>
+
+The provided verification code is for illustrative purposes only. To complete the test flow, simply click the **Confirm** button, and the Status Screen will display the final state of the payment.
