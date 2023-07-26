@@ -16,9 +16,9 @@ paths:
         por: Obter transaction intent por ID
       description: Consult by ID retrieves an existing Transaction Intent
       x-description-i18n:
-        eng:
-        spa:
-        por:
+        eng: Consult by ID retrieves an existing Transaction Intent
+        spa: Consultar por ID recupera una Transaction Intent existente.
+        por: Consultar por ID recupera uma Transaction Intent existente
       parameters:
         - name: id
           in: path
@@ -28,9 +28,9 @@ paths:
             example: "00001njp2i"
             description: Transaction Intent's Id
             x-description-i18n:
-              eng:
-              spa:
-              por:
+              eng: Transaction Intent's Id
+              spa: ID de la Transaction Intent 
+              por: ID da Transaction Intent
       responses:
         "200":
           description: success
