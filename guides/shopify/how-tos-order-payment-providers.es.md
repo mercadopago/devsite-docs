@@ -1,26 +1,31 @@
 # Cómo cambiar la posición de los proveedores de pago
 
-Aprende cómo utilizar la app **MP Reorder** para cambiar el orden de visualización de los proveedores de pagos integrados en tu tienda Shopify.
+Aprende cómo utilizar la app **Mercado Pago Ordena Checkouts** para cambiar el orden de visualización de los proveedores de pagos integrados en tu tienda Shopify.
 
 > NOTE
 >
 > Importante
 >
-> Este app é instalado automaticamente quando for feita a [integração](/developers/es/docs/shopify/integration-configuration/checkout-pro) do **Checkout Mercado Pago** e, para que o seu funcionamento ocorra corretamente, é necessário desativar outros apps de ordenação instalados.
+> Para que el funcionamiento de la app **Mercado Pago Ordena Checkouts** ocurra correctamente, es necesario desactivar otras apps de ordenación instaladas.
 
-## Altere a posicão dos provedores
+## Instala la app
 
-1. Vá para a sua loja [Shopify](https://accounts.shopify.com/store-login).
-2. No painel administrativo da loja, clique em **Apps**.
-3. Uma vez lá, selecione a opção **MP Reorder**. 
-4. Na tela em questão, utilize a barra de busca para localizar e adicionar os provedores de pagamento, sendo que os **nomes inseridos para busca deverão ser idênticos aos nomes do app do provedor instalado na sua loja**. Serão disponibilizados os provedores de maior uso no país como sugestão e também será possível consultá-los clicando em **Conferir meus provedores provedores**.
-5. Os provedores selecionados serão listados de acordo com a sua seleção e, caso necessário, poderão ser deletados. 
-----[mla, mlm, mpe, mco, mlu, mlc]----
-6. Para reordenar a posição dos provedores, **clique e segure** o card do provedor e arraste-o (_drag n drop_) para a posição desejada. Não será possível alterar a posição do Mercado Pago entre os provedores.
+1. [Haz clic](https://apps.shopify.com/mercado-pago-ordena-checkouts) aquí para acceder a la **app store de Shopify** e instalar la aplicación **Mercado Pago Ordena Checkouts**.
+2. En la pantalla correspondiente, haz clic en **Agregar aplicación**, y cuando sea necesario, selecciona la cuenta asociada a la tienda donde se realizará la instalación de la aplicación.
+3. Haz clic en **Instalar app** y finalmente en **Activar**.
+
+## Cambia la posición de los proveedores
+
+1. Con la app **Mercado Pago Ordena Checkout**s abierta, utiliza la barra de búsqueda para localizar y agregar los proveedores de pago, asegurándote de que los **nombres ingresados para la búsqueda sean idénticos a los nombres de la app del proveedor instalada en tu tienda**. Se sugerirán los proveedores más utilizados en el país, y también podrás consultarlos haciendo clic en **Ver mis proveedores seleccionados**.
+2. Los proveedores seleccionados se listarán según tu elección y, si es necesario, podrán ser eliminados.
+----[mla, mpe, mco, mlu, mlc]----
+3. Para reordenar la posición de los proveedores, **haz clic y mantén presionada** la tarjeta del proveedor y arrástrala (_drag n drop_) a la posición deseada. No será posible cambiar la posición de Mercado Pago entre los proveedores.
+
 ------------
 ----[mlm]----
-7. Para reordenar a posição dos provedores, **clique e segure** o card do provedor e arraste-o (_drag n drop_) para a posição desejada. Lembrando que com o **Checkout Mercado Pago** na primeira posição, a loja terá maiores taxas de aprovação em pagamentos com cartões salvos e oferecerá uma experiência de compra mais completa para 90 milhões de clientes que pagam com o Mercado Pago.
-------------
-8. Para confirmar as alterações, clique em **Salvar ordem de exibição**.
+3. Para reordenar la posición de los proveedores, **haz clic y mantén presionada** la tarjeta del proveedor y arrástrala (_drag n drop_) a la posición deseada. Ten en cuenta que con el **Checkout Mercado Pago** en la primera posición, la tienda tendrá mayores tasas de aprobación para pagos con tarjetas guardadas y ofrecerá una experiencia de compra más completa para los 90 millones de clientes que pagan con Mercado Pago.
 
-Pronto! A nova ordem de exibição dos provadores de pagamentos está configurada.
+------------
+4. Para confirmar los cambios, haz clic en **Guardar orden de visualización**.
+
+¡Listo! La nueva orden de exhibición de los proveedores de pagos está configurada.

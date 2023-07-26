@@ -1,26 +1,31 @@
 # How to change the display order of payment providers
 
-Learn how to use the **MP Reorder** app to change the display order of integrated payment providers in your Shopify store.
+Learn how to use the **Mercado Pago Ordena Checkouts** app to change the display order of integrated payment providers in your Shopify store.
 
 > NOTE
 >
 > Importante
 >
-> Este app é instalado automaticamente quando for feita a [integração](/developers/en/docs/shopify/integration-configuration/checkout-pro) do **Checkout Mercado Pago** e, para que o seu funcionamento ocorra corretamente, é necessário desativar outros apps de ordenação instalados.
+> For the proper functioning of **Mercado Pago Ordena Checkouts**, it is necessary to deactivate other installed checkout apps.
 
-## Altere a posicão dos provedores
+## Install the app
 
-1. Vá para a sua loja [Shopify](https://accounts.shopify.com/store-login).
-2. No painel administrativo da loja, clique em **Apps**.
-3. Uma vez lá, selecione a opção **MP Reorder**. 
-4. Na tela em questão, utilize a barra de busca para localizar e adicionar os provedores de pagamento, sendo que os **nomes inseridos para busca deverão ser idênticos aos nomes do app do provedor instalado na sua loja**. Serão disponibilizados os provedores de maior uso no país como sugestão e também será possível consultá-los clicando em **Conferir meus provedores provedores**.
-5. Os provedores selecionados serão listados de acordo com a sua seleção e, caso necessário, poderão ser deletados. 
+1. [Click here](https://apps.shopify.com/mercado-pago-ordena-checkouts) to access the **Shopify app store** and install the **Mercado Pago Ordena Checkouts** app.
+2. On the respective screen, click on **Add app**, and when necessary, select the account associated with the store where you want to install the app.
+3. Click on **Install app**, and finally, click on **Activate**.
+
+## Change the position of the providers
+
+1. With the **Mercado Pago Ordena Checkouts** app open, use the search bar to locate and add the payment providers, making sure that the **search terms used should be identical to the names of the provider's app installed in your store**. The most commonly used providers in the country will be suggested, and you can also check them by clicking on **Check my selected provider**.
+2. The selected providers will be listed according to your choices, and if necessary, they can be deleted.
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-6. Para reordenar a posição dos provedores, **clique e segure** o card do provedor e arraste-o (_drag n drop_) para a posição desejada. Não será possível alterar a posição do Mercado Pago entre os provedores.
+3. To reorder the position of the providers, **click and hold** the provider's card and drag it (_drag n drop_) to the desired position. The position of Mercado Pago among the providers cannot be changed.
+
 ------------
 ----[mlm]----
-7. Para reordenar a posição dos provedores, **clique e segure** o card do provedor e arraste-o (_drag n drop_) para a posição desejada. Lembrando que com o **Checkout Mercado Pago** na primeira posição, a loja terá maiores taxas de aprovação em pagamentos com cartões salvos e oferecerá uma experiência de compra mais completa para 90 milhões de clientes que pagam com o Mercado Pago.
-------------
-8. Para confirmar as alterações, clique em **Salvar ordem de exibição**.
+3. To reorder the position of the providers, **click and hold** the provider's card and drag it (_drag n drop_) to the desired position. Keep in mind that with **Checkout Mercado Pago** in the first position, the store will have higher approval rates for payments with saved cards and will offer a more complete shopping experience to 90 million customers who pay with Mercado Pago.
 
-Pronto! A nova ordem de exibição dos provadores de pagamentos está configurada.
+------------
+4. To confirm the changes, click on **Save display order**.
+
+Done! The new display order for the payment providers is configured.
