@@ -14,7 +14,7 @@ Aprende cómo utilizar la app **Mercado Pago Ordena Checkouts** para cambiar el 
 2. En la pantalla correspondiente, haz clic en **Agregar app** y, cuando te sea solicitado, selecciona la cuenta asociada a la tienda donde se realizará la instalación de la aplicación.
 3. Haz clic en **Instalar app** y finalmente en **Activar**.
 
-## Cambia la visualización de los proveedores
+## Cambiar la visualización de los proveedores
 
 1. Con la app **Mercado Pago Ordena Checkouts** abierta, utiliza la barra de búsqueda para localizar y agregar los proveedores de pago, asegurándote de que los **nombres ingresados para la búsqueda sean idénticos a los nombres de la app del proveedor instalada en tu tienda**. Se sugerirán los proveedores más utilizados en el país, y también podrás consultarlos haciendo clic en **Ver mis proveedores seleccionados**.
 2. Los proveedores seleccionados se listarán según tu elección y, si es necesario, podrán ser eliminados.
