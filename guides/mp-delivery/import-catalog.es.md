@@ -9,7 +9,7 @@ Al insertar los IDs de las tiendas que recibirán el catálogo, se deben inserta
 | 202 - Success | Todas las solicitudes se enviaron correctamente. |
 | 206 - Partial Error | Alguna solicitud no fue enviada correctamente y contiene un error. |
 
-En la [documentación de la API del catálogo](/developers/es/reference/mp_delivery/_proximity_integrationcatalog/post), es posible obtener una descripción completa de los campos que se pueden enviar en el cuerpo de la solicitud.
+En la [documentación de la API de catálogo](/developers/es/reference/mp_delivery/_proximity_integrationcatalog/post), es posible obtener una descripción completa de los campos que se pueden enviar en el cuerpo de la solicitud.
 
 > WARNING
 >

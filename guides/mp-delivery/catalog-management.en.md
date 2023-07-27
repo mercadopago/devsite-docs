@@ -1,6 +1,6 @@
 # Catalog management
 
-Catalog management is carried out through API REST, which allow you to perform the following functionalities:
+Catalog management is carried out through API REST, which allows you to perform the following functionalities:
 
 * Perform bulk catalog upload for multiple stores.
 * Verify the successful completion of the catalog upload process.

@@ -2,7 +2,7 @@
 
 También existe la posibilidad de crear un ID externo (`external_id`) para una determinada sucursal. Este campo es opcional, pero se puede utilizar como identificador para el sistema de software de gestión de pedidos.
 
-Para ingresar el valor de una ID externa en una sucursal, realiza un PUT enviando el `store_id` y el `access_token` (generados por el proceso de autenticación OAuth) al punto final [/proximity-integration/stores/{StoreID}/external_id](/developers/es/reference/mp_delivery/_proximity-integration_stores_StoreID_external_id/put). Consulta [Seguridad](/developers/es/guides/additional-content/security/oauth/introduction) para obtener más información sobre OAuth.
+Para ingresar el valor de una ID externa en una sucursal, realiza un PUT enviando el `store_id` y el `access_token` (generados por el proceso de autenticación OAuth) al endpoint [/proximity-integration/stores/{StoreID}/external_id](/developers/es/reference/mp_delivery/_proximity-integration_stores_StoreID_external_id/put). Consulta [Seguridad](/developers/es/guides/additional-content/security/oauth/introduction) para obtener más información sobre OAuth.
 
 > NOTE
 >
