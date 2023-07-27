@@ -8,7 +8,7 @@ Aprende cómo utilizar la app **Mercado Pago Ordena Checkouts** para cambiar el 
 >
 > Para que el funcionamiento de la app **Mercado Pago Ordena Checkouts** ocurra correctamente, es necesario desactivar otras apps de ordenación instaladas.
 
-## Instala la app
+## Instalar la app
 
 1. [Haz clic](https://apps.shopify.com/mercado-pago-ordena-checkouts) aquí para acceder a la **app store de Shopify** e instalar la aplicación **Mercado Pago Ordena Checkouts**.
 2. En la pantalla correspondiente, haz clic en **Agregar app**, y cuando sea necesario, selecciona la cuenta asociada a la tienda donde se realizará la instalación de la aplicación.
