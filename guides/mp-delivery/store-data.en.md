@@ -4,7 +4,7 @@ To get information about all stores that are linked to **a specific user**, perf
 
 It is also possible to consult information for a **specific store** using its **ID**. To do this, perform a GET sending the `store_id` and `access_token` to the endpoint [/proximity-integration/stores/{StoreID}](/developers/en/reference/mp_delivery/_proximity-integration_users_SellerID_stores_external_id_ExternalID/get).
 
-This endpoint point returns all data from the previous endpoint, plus information about the current ("enabled", "paused" or "disabled") store health status. See [Change Store Status](/developers/en/docs/mp-delivery/store-management/change-store-status) for more information about statuses.
+This endpoint returns all data from the previous endpoint, plus information about the current ("enabled", "paused" or "disabled") store health status. See [Change Store Status](/developers/en/docs/mp-delivery/store-management/change-store-status) for more information about statuses.
 
 > NOTE
 >

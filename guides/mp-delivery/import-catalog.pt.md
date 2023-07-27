@@ -16,4 +16,4 @@ Na [documentação de Referência de API de catálogo](/developers/pt/reference/
 >
 > Importante
 >
-> Devido ao processo de carga do catálogo ser assíncrono, é necessário utilizar o endpoint [Consultar estado de publicação](/developers/pt/reference/mp_delivery/_proximity_integrationcatalog_publication_id/get) para verificar se o catálogo foi importado corretamente. Se houver erro na validação dessa publicação, é recomendável implementar um mecanismo de tentativas repetidas.
+> Devido ao processo de carga do catálogo ser assíncrono, é necessário utilizar o endpoint [Consultar status de publicação](/developers/pt/reference/mp_delivery/_proximity_integrationcatalog_publication_id/get) para verificar se o catálogo foi importado corretamente. Se houver erro na validação dessa publicação, é recomendável implementar um mecanismo de tentativas repetidas.
