@@ -17,13 +17,18 @@ live_demo_code_action:
  - linkName: Demo
  - buttonDescription: Build your Payment Brick
 ---
-<br>
 
 In turn, our processor complies with all security guarantees to give users maximum protection when saving their data. This is one of the great advantages of adding Checkout Bricks to your site: the peace of mind of providing a secure solution, backed by Mercado Pago, but customized to the needs of your company.
 
 ## Layout 
 
-The Payment Brick layout is based on the best UX practices, so that it is possible to offer the best shopping experience without having to worry about design details. 
+The Payment Brick layout is based on the best UX practices, so that it is possible to offer the best shopping experience without having to worry about design details.
+
+<center>
+
+![payment-Brick-layout-mlb](checkout-bricks/payment-brick-layout-mlb-en.gif)
+
+</center>
 
 > WARNING
 >
@@ -41,17 +46,27 @@ You can give your customers the possibility to make **payments through debit and
 
 The possibility of saving the data of cards that have already been charged in previous purchases, makes the payment process more efficient and faster. For the buyer, it is no longer necessary to have to reload the data each time they enter the checkout.
 
-<center>
-
-![payment-Brick-layout-mla](checkout-bricks/payment-brick-layout-mla-en.gif)
-
-</center>
+---
+live_demo_code_action:
+ - title: Try our Brick
+ - description: Build and check out the Payment Brick visual experience in real time. When you are ready, download or copy the generated code.
+ - link: /developers/en/live-demo/payment-brick
+ - image:https://http2.mlstatic.com/frontend-assets/dx-devsite/images/payment-brick.png
+ - linkName: Demo
+ - buttonDescription: Build your Payment Brick
+---
 
 In turn, our processor complies with all security guarantees to give users maximum protection when saving their data. This is one of the great advantages of adding Checkout Bricks to your site: the peace of mind of providing a secure solution, backed by Mercado Pago, but customized to the needs of your company.
 
 ## Layout 
 
 The Payment Brick layout is based on the best UX practices, so that it is possible to offer the best shopping experience without having to worry about design details.
+
+<center>
+
+![payment-Brick-layout-mla](checkout-bricks/payment-brick-layout-mla-en.gif)
+
+</center>
 
 > WARNING
 >
@@ -69,17 +84,27 @@ You can give your customers the possibility to make **payments through debit and
 
 The possibility of saving the data of cards that have already been charged in previous purchases, makes the payment process more efficient and faster. For the buyer, it is no longer necessary to have to reload the data each time they enter the checkout.
 
-<center>
-
-![payment-Brick-layout-mco](checkout-bricks/payment-brick-layout-mco-en.gif)
-
-</center>
+---
+live_demo_code_action:
+ - title: Try our Brick
+ - description: Build and check out the Payment Brick visual experience in real time. When you are ready, download or copy the generated code.
+ - link: /developers/en/live-demo/payment-brick
+ - image:https://http2.mlstatic.com/frontend-assets/dx-devsite/images/payment-brick.png
+ - linkName: Demo
+ - buttonDescription: Build your Payment Brick
+---
 
 In turn, our processor complies with all security guarantees to give users maximum protection when saving their data. This is one of the great advantages of adding Checkout Bricks to your site: the peace of mind of providing a secure solution, backed by Mercado Pago, but customized to the needs of your company.
 
 ## Layout 
 
 The Payment Brick layout is based on the best UX practices, so that it is possible to offer the best shopping experience without having to worry about design details.
+
+<center>
+
+![payment-Brick-layout-mco](checkout-bricks/payment-brick-layout-mco-en.gif)
+
+</center>
 
 > WARNING
 >
@@ -97,17 +122,27 @@ You can give your customers the possibility to make **payments through debit and
 
 The possibility of saving the data of cards that have already been charged in previous purchases, makes the payment process more efficient and faster. For the buyer, it is no longer necessary to have to reload the data each time they enter the checkout.
 
-<center>
-
-![payment-brick-layout-all](checkout-bricks/payment-brick-layout-all-en.gif)
-
-</center>
+---
+live_demo_code_action:
+ - title: Try our Brick
+ - description: Build and check out the Payment Brick visual experience in real time. When you are ready, download or copy the generated code.
+ - link: /developers/en/live-demo/payment-brick
+ - image:https://http2.mlstatic.com/frontend-assets/dx-devsite/images/payment-brick.png
+ - linkName: Demo
+ - buttonDescription: Build your Payment Brick
+---
 
 In turn, our processor complies with all security guarantees to give users maximum protection when saving their data. This is one of the great advantages of adding Checkout Bricks to your site: the peace of mind of providing a secure solution, backed by Mercado Pago, but customized to the needs of your company.
 
 ## Layout 
 
 The Payment Brick layout is based on the best UX practices, so that it is possible to offer the best shopping experience without having to worry about design details.
+
+<center>
+
+![payment-brick-layout-all](checkout-bricks/payment-brick-layout-all-en.gif)
+
+</center>
 
 > WARNING
 >
@@ -125,17 +160,27 @@ You can give your customers the possibility to make **payments through debit and
 
 The possibility of saving the data of cards that have already been charged in previous purchases, makes the payment process more efficient and faster. For the buyer, it is no longer necessary to have to reload the data each time they enter the checkout.
 
-<center>
-
-![payment-Brick-layout-all](checkout-bricks/payment-brick-layout-all-en.gif)
-
-</center>
+---
+live_demo_code_action:
+ - title: Try our Brick
+ - description: Build and check out the Payment Brick visual experience in real time. When you are ready, download or copy the generated code.
+ - link: /developers/en/live-demo/payment-brick
+ - image:https://http2.mlstatic.com/frontend-assets/dx-devsite/images/payment-brick.png
+ - linkName: Demo
+ - buttonDescription: Build your Payment Brick
+---
 
 In turn, our processor complies with all security guarantees to give users maximum protection when saving their data. This is one of the great advantages of adding Checkout Bricks to your site: the peace of mind of providing a secure solution, backed by Mercado Pago, but customized to the needs of your company.
 
 ## Layout 
 
 The Payment Brick layout is based on the best UX practices, so that it is possible to offer the best shopping experience without having to worry about design details.
+
+<center>
+
+![payment-Brick-layout-all](checkout-bricks/payment-brick-layout-all-en.gif)
+
+</center>
 
 > WARNING
 >
@@ -153,17 +198,27 @@ For now, you will be able to give your customers the possibility of making **pay
 
 The possibility of saving the data of cards that have already been charged in previous purchases, makes the payment process more efficient and faster. For the buyer, it is no longer necessary to have to reload the data each time they enter the checkout.
 
-<center>
-
-![payment-Brick-layout-all](checkout-bricks/payment-brick-layout-all-en.gif)
-
-</center>
+---
+live_demo_code_action:
+ - title: Try our Brick
+ - description: Build and check out the Payment Brick visual experience in real time. When you are ready, download or copy the generated code.
+ - link: /developers/en/live-demo/payment-brick
+ - image:https://http2.mlstatic.com/frontend-assets/dx-devsite/images/payment-brick.png
+ - linkName: Demo
+ - buttonDescription: Build your Payment Brick
+---
 
 In turn, our processor complies with all security guarantees to give users maximum protection when saving their data. This is one of the great advantages of adding Checkout Bricks to your site: the peace of mind of providing a secure solution, backed by Mercado Pago, but customized to the needs of your company.
 
 ## Layout 
 
 The Payment Brick layout is based on the best UX practices, so that it is possible to offer the best shopping experience without having to worry about design details.
+
+<center>
+
+![payment-Brick-layout-all](checkout-bricks/payment-brick-layout-all-en.gif)
+
+</center>
 
 > WARNING
 >
@@ -181,17 +236,27 @@ You can give your customers the possibility to make **payments through debit and
 
 The possibility of saving the data of cards that have already been charged in previous purchases, makes the payment process more efficient and faster. For the buyer, it is no longer necessary to have to reload the data each time they enter the checkout.
 
-<center>
-
-![payment-Brick-layout-mlm](checkout-bricks/payment-brick-layout-mlm-en.gif)
-
-</center>
+---
+live_demo_code_action:
+ - title: Try our Brick
+ - description: Build and check out the Payment Brick visual experience in real time. When you are ready, download or copy the generated code.
+ - link: /developers/en/live-demo/payment-brick
+ - image:https://http2.mlstatic.com/frontend-assets/dx-devsite/images/payment-brick.png
+ - linkName: Demo
+ - buttonDescription: Build your Payment Brick
+---
 
 In turn, our processor complies with all security guarantees to give users maximum protection when saving their data. This is one of the great advantages of adding Checkout Bricks to your site: the peace of mind of providing a secure solution, backed by Mercado Pago, but customized to the needs of your company.
 
 ## Layout 
 
 The Payment Brick layout is based on the best UX practices, so that it is possible to offer the best shopping experience without having to worry about design details.
+
+<center>
+
+![payment-Brick-layout-mlm](checkout-bricks/payment-brick-layout-mlm-en.gif)
+
+</center>
 
 > WARNING
 >
