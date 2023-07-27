@@ -1,4 +1,4 @@
-# Cómo cambiar la posición de los proveedores de pago
+# Cómo cambiar la visualización de los proveedores de pago
 
 Aprende cómo utilizar la app **Mercado Pago Ordena Checkouts** para cambiar el orden de visualización de los proveedores de pagos integrados en tu tienda Shopify.
 
@@ -14,18 +14,27 @@ Aprende cómo utilizar la app **Mercado Pago Ordena Checkouts** para cambiar el 
 2. En la pantalla correspondiente, haz clic en **Agregar app**, y cuando sea necesario, selecciona la cuenta asociada a la tienda donde se realizará la instalación de la aplicación.
 3. Haz clic en **Instalar app** y finalmente en **Activar**.
 
-## Cambia la posición de los proveedores
+## Cambia la visualización de los proveedores
 
 1. Con la app **Mercado Pago Ordena Checkout**s abierta, utiliza la barra de búsqueda para localizar y agregar los proveedores de pago, asegurándote de que los **nombres ingresados para la búsqueda sean idénticos a los nombres de la app del proveedor instalada en tu tienda**. Se sugerirán los proveedores más utilizados en el país, y también podrás consultarlos haciendo clic en **Ver mis proveedores seleccionados**.
 2. Los proveedores seleccionados se listarán según tu elección y, si es necesario, podrán ser eliminados.
 ----[mla, mpe, mco, mlu, mlc]----
-3. Para reordenar la posición de los proveedores, **haz clic y mantén presionada** la tarjeta del proveedor y arrástrala (_drag n drop_) a la posición deseada. No será posible cambiar la posición de Mercado Pago entre los proveedores.
+3. Para reordenar la visualización de los proveedores, **haz clic y mantén presionada** la tarjeta del proveedor y arrástrala (_drag n drop_) a la posición deseada. No será posible cambiar la posición de Mercado Pago entre los proveedores.
 
 ------------
 ----[mlm]----
-3. Para reordenar la posición de los proveedores, **haz clic y mantén presionada** la tarjeta del proveedor y arrástrala (_drag n drop_) a la posición deseada. Ten en cuenta que con el **Checkout Mercado Pago** en la primera posición, la tienda tendrá mayores tasas de aprobación para pagos con tarjetas guardadas y ofrecerá una experiencia de compra más completa para los 90 millones de clientes que pagan con Mercado Pago.
+3. Para reordenar la visualización de los proveedores, **haz clic y mantén presionada** la tarjeta del proveedor y arrástrala (_drag n drop_) a la posición deseada. Ten en cuenta que con el **Checkout Mercado Pago** en la primera posición, la tienda tendrá mayores tasas de aprobación para pagos con tarjetas guardadas y ofrecerá una experiencia de compra más completa para los 90 millones de clientes que pagan con Mercado Pago.
 
 ------------
 4. Para confirmar los cambios, haz clic en **Guardar orden de visualización**.
 
-¡Listo! La nueva orden de exhibición de los proveedores de pagos está configurada.
+¡Listo! La nueva orden de visualización de los proveedores de pagos está configurada.
+
+----[mla, mlb, mpe, mco, mlu, mlc]----
+<center>
+
+![mercado-pago-ordena](shopify/mercado-pago-ordena-es.png)
+
+</center>
+
+------------
