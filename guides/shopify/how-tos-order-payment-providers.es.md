@@ -11,7 +11,7 @@ Aprende cómo utilizar la app **Mercado Pago Ordena Checkouts** para cambiar el 
 ## Instalar la app
 
 1. Haz clic [aquí](https://apps.shopify.com/mercado-pago-ordena-checkouts) para acceder a la **app store de Shopify** e instalar la aplicación **Mercado Pago Ordena Checkouts**.
-2. En la pantalla correspondiente, haz clic en **Agregar app**, y cuando sea necesario, selecciona la cuenta asociada a la tienda donde se realizará la instalación de la aplicación.
+2. En la pantalla correspondiente, haz clic en **Agregar app** y, cuando te sea solicitado, selecciona la cuenta asociada a la tienda donde se realizará la instalación de la aplicación.
 3. Haz clic en **Instalar app** y finalmente en **Activar**.
 
 ## Cambia la visualización de los proveedores
