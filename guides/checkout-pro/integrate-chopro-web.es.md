@@ -1,18 +1,24 @@
-# Integrar Checkout Pro 
+> CLIENT_SIDE
+>
+> h1
+>
+> Añadir checkout
 
-[TXTSNIPPET][/guides/snippets/chopro-integration-serverside]
+Una vez que hayas creado la [preferencia en tu backend](/developers/es/docs/checkout-pro/common-initialization), deberás instalar el SDK de frontend de Mercado Pago en tu proyecto para agregar el botón de pago.
+
+La instalación se realiza, básicamente, en **dos pasos**: 
+
+1. Agregar el SDK de Mercado Pago al proyecto con tus credenciales configuradas
+2. Iniciar el checkout desde la preferencia generada previamente
 
 > CLIENT_SIDE
 >
 > h2
 >
-> Añadir checkout
+> Agregar el SDK de Mercado Pago al proyecto
 
-Una vez que hayas creado la preferencia en tu backend, deberás instalar el SDK de frontend de Mercado Pago en tu proyecto para agregar el botón de pago.
 
-La instalación se realiza, básicamente, en **dos pasos**: agregar el SDK de Mercado Pago al proyecto con tus credenciales configuradas e iniciar el checkout desde la preferencia generada previamente.
-
-1. Para incluir el SDK de Mercado Pago.js, agrega el siguiente código al HTML del proyecto o instale la biblioteca para ReactJs.
+Para incluir el SDK de Mercado Pago.js, agrega el siguiente código al HTML del proyecto o instale la biblioteca para ReactJs.
 
 [[[
 ```html
@@ -49,7 +55,13 @@ Para las integraciones de JavaScript/HTML, a través de CDN, deberá crear un co
 >
 > El valor que se muestra en la propiedad de ID a continuación es solo un ejemplo y se puede cambiar, pero siempre debe coincidir con el ID indicado en el paso de renderizado. 
 
-2. Al finalizar el paso anterior, **inicializa tu checkout usando el ID de la preferencia previamente creada con el identificador del elemento donde se debe mostrar el botón**, si estás usando la integración `Javascript/HTML`, o por instanciando el componente, en el caso de la biblioteca `React`, como se muestra en los ejemplos a continuación.
+> CLIENT_SIDE
+>
+> h2
+>
+>  Iniciar el checkout desde la preferencia
+
+Al finalizar el paso anterior, **inicializa tu checkout usando el ID de la preferencia previamente creada con el identificador del elemento donde se debe mostrar el botón**, si estás usando la integración `Javascript/HTML`, o por instanciando el componente, en el caso de la biblioteca `React`, como se muestra en los ejemplos a continuación.
 
 [[[
 ```Javascript
@@ -87,20 +99,3 @@ Al crear un pago es posible recibir 3 estados diferentes: `Pendiente`, `Rechazad
 Consulta el [ejemplo de integración completa](http://github.com/mercadopago/checkout-payment-sample) en GitHub para **PHP** o **NodeJS** para descargar un proyecto básico para una implementación rápida de Checkout Pro en tu sitio.
 
 
----
-future_product_avaible: 
- - card_avaible: true
- - card_icon: Card
- - card_title: Checkout Pro para Web
- - card_description: Integra Checkout Pro para Web
- - card_link:  /developers/es/docs/checkout-pro/integrate-checkout-pro/web
- - card_linkDescription: Saber más
- - card_pillText: DISPONIBLE
- - card_avaible: true
- - card_icon: Loading
- - card_title: Integra Checkout Pro para Mobile
- - card_description: Realiza integraciones de Checkout Pro en aplicaciones Mobile.
- - card_link: /developers/es/docs/checkout-pro/integrate-checkout-pro/mobile
- - card_linkDescription: Saber más
- - card_pillText: DISPONIBLE
----
