@@ -11,7 +11,11 @@ En este paso vamos a instalar y configurar las dependencias necesarias para impl
 * react-native 0.71.8
 * react-native-inappbrowser-reborn 3.7.0
 
-## Uso de InAppBrowser
+> CLIENT_SIDE
+>
+> h2
+>
+> Uso de InAppBrowser
 
 Con React Native CLI, te sugerimos usar [React-Native-InAppBrowser](https://www.npmjs.com/package/react-native-inappbrowser-reborn), una dependencia  altamente flexible que brinda una solución integral para integrar un navegador web dentro de tu aplicación de React Native. Al considerar el uso de React-Native-InAppBrowser-Reborn se tuvieron en cuenta los siguientes aspectos:
 
@@ -24,21 +28,21 @@ Para instalarla, ejecuta el siguiente comando en tu terminal
 [[[
 ```npm
 npm install react-native-inappbrowser-reborn --save
-´´´
+```
 ```yarn
 yarn add react-native-inappbrowser-reborn
-´´´
+```
 ]]]
 
 > Para las versiones de React Native >0.60 no es necesario importar y configurar manualmente las dependencias en el código nativo ya que este se hace automáticamente.
 
 Para la instalación con React Native CLI debes **verificar el archivo android/build.gradle**.
 
-[[[
-```Android support
-===
+### Android support
+
 Si utilizas Android support, tu archivo debería tener estas propiedades. En caso de faltar alguna, agrégala. Las versiones pueden ser iguales o superiores.
-===
+
+```
 buildscript {
   ext {
     buildToolsVersion = "28.0.3"
@@ -49,10 +53,12 @@ buildscript {
     supportLibVersion = "28.0.0"
   }
 ```
-```AndroidX
-===
+
+### AndroidX
+
 Si utilizas AndroidX, tu archivo debería tener estas propiedades. En caso de faltar alguna, agrégala. Las versiones pueden ser iguales o superiores.
-===
+
+```
 buildscript {
   ext {
     buildToolsVersion = "30.0.2"
@@ -66,9 +72,13 @@ buildscript {
     // Put here other AndroidX dependencies
   }
 ```
-]]]
 
-### Implementación de React-Native-Inappbrowser
+
+> CLIENT_SIDE
+>
+> h2
+>
+> Implementación de React-Native-Inappbrowser
 
 Para implementar la dependencia React-Native-Inappbrowser, ejecuta el siguiente comando.
 
