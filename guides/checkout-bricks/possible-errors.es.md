@@ -30,13 +30,13 @@ Durante el proceso de integración del Brick, es posible que **al momento de ins
 | Error al buscar la cantidad y los montos de las cuotas de pago según el amount enviado por el integrador  | Ocurrió un error. Por favor, inténtalo nuevamente más tarde.  | Failed to get payment installments<br><br>_Error al obtener las cuotas de pago._  | No  | get_payment_installments_failed  |
 | Campos de pago incompletos por algún motivo (cuotas, emisor de la tarjeta, payment_method_id)  | Ocurrió un error. Por favor, inténtalo nuevamente más tarde.  | Se devolverá uno de los siguientes mensajes según el tipo de error: <br><br> -The payment method id is missing<br> -The payment installments are missing<br> -The card issuer is missing <br><br>_-Falta el id del medio de pago._ <br> _-Faltan las cuotas de pago._ <br> _-Falta el emisor de la tarjeta._ | No  | missing_payment_information  |
 
-## Como atualizar dados enviados durante a inicialização de um Brick
+# Cómo actualizar datos enviados durante la inicialización de un Brick
 
-Caso seja necessário atualizar os valores enviados durante a inicialização de um Brick, é necessário explicitar a assincronicidade do código e se valer da função de unmount disponibilizada no Controller do Brick antes de atualizar os dados. Além disso, o objeto de configurações precisa ser enviado completo, uma vez que se trata de uma renderização
+En caso de ser necesario actualizar los valores enviados durante la inicialización de un Brick, es necesario explicitar la asincronicidad del código y valerse de la función de `unmount` disponible en el _Controller_ del Brick antes de actualizar los datos. Además, el objeto de configuraciones debe ser enviado completo, dado que se trata de una renderización.
 
-Lembrando que não se deve apenas chamar a função de renderização com os novos valores. Isto levaria a uma duplicação de Brick em tela, sendo que a segunda renderização exibirá um erro.
+Es importante recordar que no se debe simplemente llamar a la función de renderización con los nuevos valores, ya que esto provocaría una duplicación del Brick en pantalla, y la segunda renderización mostrará un error.
 
-O código incompleto exemplifica o fluxo utilizando a atualização de uma preferência em Payment Brick, mas o fluxo em si é válido para atualização necessária em dados de inicialização de qualquer brick.
+El código incompleto ejemplifica el flujo utilizando la actualización de una preferencia en el [Payment Brick](/developers/es/docs/checkout-bricks/payment-brick/introduction), pero el flujo en sí es válido para la actualización necesaria en datos de inicialización de cualquier Brick.
 
 ```Javascript
 //First render
@@ -83,13 +83,13 @@ await secondRenderPaymentBrick(bricksBuilder);
 <div id="paymentBrick_container"></div>
 ```
 
-## Erro "Container Not Found"
+## Error "Container Not Found"
 
-Para a correta renderização, é necessário que o ID do container no DOM no qual o Brick será renderizado seja informado de maneira idêntica ao da função de criação do Brick. Qualquer string pode ser utilizada como nome, desde que os nomes sejam iguais, este erro não ocorrerá.
+Para que la renderización ocurra correctamente, es necesario que el ID del contenedor en el `DOM` donde se renderizará el Brick sea proporcionado de manera idéntica a la función de creación del Brick. Se puede utilizar cualquier cadena como nombre, y siempre y cuando los nombres sean iguales, este error no ocurrirá.
 
-Outro ponto importante é garantir que ao chamar a função de renderização do Brick o container dele já esteja renderizado em tela. Reforçamos este ponto devido a possibilidade de o container do brick estar dentro de outros contêineres. Essa sequência de renderização é importante para evitar o erro em questão.
+Otro punto importante es asegurarse de que al llamar a la función de renderización del Brick, su contenedor ya esté renderizado en la pantalla. Reforzamos este punto debido a la posibilidad de que el contenedor del brick esté dentro de otros contenedores. Esta secuencia de renderización es importante para evitar el error mencionado.
 
-Abaixo temos um trecho de código exemplificando o ponto utilizando o [Payment Brick](/developers/pt/docs/checkout-bricks/payment-brick/introduction).
+A continuación, tenemos un fragmento de código que ejemplifica este punto utilizando el [Payment Brick](/developers/es/docs/checkout-bricks/payment-brick/introduction).
 
 ```Javascript
 const renderPaymentBrick = async (bricksBuilder) => {
@@ -108,13 +108,13 @@ await renderPaymentBrick(bricksBuilder);
 <div id="paymentBrick_container"></div>
 ```
 
-## Utilização de Bricks com Next.js
+## Uso de Bricks con Next.js
 
-**Next.js** é um framework para criação de interfaces com componentes React. Diante disso, é possível utilizar nossa [SDK React](/developers/pt/docs/sdks-library/client-side/sdk-js-react-installation) para integrar os Bricks, bem como outras soluções fornecidas através da SDK React.
+**Next.js** es un framework para crear interfaces con componentes React. Por lo tanto, es posible utilizar nuestra [SDK de React](/developers/es/docs/sdks-library/client-side/sdk-js-react-installation) para integrar Bricks, así como otras soluciones proporcionadas a través de la SDK de React.
 
-Contudo, nossa SDK foi estruturada para renderização no cliente (_Client Side Rendering_) enquanto via de regra o Next.js atua com _Server Side Rendering_. Assim, ao utilizar nossa SDK é preciso levar isso em consideração. É possível realizar essa integração utilizando a importação da SDK dinamicamente - conforme indicado na [documentação do Next.js](https://nextjs.org/docs/pages/building-your-application/optimizing/lazy-loading#nextdynamic).
+Sin embargo, nuestra SDK fue estructurada para renderizar en el cliente (_Client Side Rendering_), mientras que Next.js generalmente funciona con el _Server Side Rendering_ (SSR). Por lo tanto, al utilizar nuestra SDK, es necesario tener esto en cuenta.
 
-Abaixo você encontra um exemplo de código de importação dinâmica de um componente disponibilizado em nossa SDK, o `getPaymentMethods`.
+Es posible realizar esta integración mediante la importación dinámica de la SDK, como se indica en la [documentación de Next.js](https://nextjs.org/docs/pages/building-your-application/optimizing/lazy-loading#nextdynamic). A continuación, encontrarás un ejemplo de código para importar dinámicamente un componente proporcionado en nuestra SDK, el `getPaymentMethods`.
 
 ```react-jsx
 
@@ -166,7 +166,7 @@ const CheckoutMercadoPago = () => {
   };
   const onSubmit = async ({ selectedPaymentMethod, formData }) => {
    
- // callback chamado ao clicar no botão de submissão dos dados
+ // callback llamado al hacer clic en el botón enviar datos
     return new Promise((resolve, reject) => {
       fetch("/process_payment", {
         method: "POST",
@@ -177,24 +177,24 @@ const CheckoutMercadoPago = () => {
       })
         .then((response) => response.json())
         .then((response) => {
-          // receber o resultado do pagamento
+          // recibir el resultado del pago
           resolve();
         })
         .catch((error) => {
-          // lidar com a resposta de erro ao tentar criar o pagamento
+          // manejar la respuesta de error al intentar crear el pago
           reject();
         });
     });
   };
   const onError = async (error) => {
-    // callback chamado para todos os casos de erro do Brick
+    // callback llamado para todos los casos de error de Brick
     console.log(error);
   };
   const onReady = async () => {
-    /*
-    Callback chamado quando o Brick estiver pronto.
-    Aqui você pode ocultar loadings do seu site, por exemplo.
-  */
+   /*
+    Callback llamado cuando el Brick está listo.
+    Aquí puede ocultar cargamentos de su sitio, por ejemplo.
+   */
   };
 
   return (

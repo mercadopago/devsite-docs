@@ -34,11 +34,11 @@ Durante o processo de integração do Brick, é possível que diferentes erros r
 
 ## Como atualizar dados enviados durante a inicialização de um Brick
 
-Caso seja necessário atualizar os valores enviados durante a inicialização de um Brick, é necessário explicitar a assincronicidade do código e se valer da função de unmount disponibilizada no Controller do Brick antes de atualizar os dados. Além disso, o objeto de configurações precisa ser enviado completo, uma vez que se trata de uma renderização
+Caso seja necessário atualizar os valores enviados durante a inicialização de um Brick, é necessário explicitar a assincronicidade do código e se valer da função de `unmount` disponibilizada no _Controller_ do Brick antes de atualizar os dados. Além disso, o objeto de configurações precisa ser enviado completo, uma vez que se trata de uma renderização
 
 Lembrando que não se deve apenas chamar a função de renderização com os novos valores. Isto levaria a uma duplicação de Brick em tela, sendo que a segunda renderização exibirá um erro.
 
-O código incompleto exemplifica o fluxo utilizando a atualização de uma preferência em Payment Brick, mas o fluxo em si é válido para atualização necessária em dados de inicialização de qualquer brick.
+O código incompleto exemplifica o fluxo utilizando a atualização de uma preferência em [Payment Brick](/developers/pt/docs/checkout-bricks/payment-brick/introduction), mas o fluxo em si é válido para atualização necessária em dados de inicialização de qualquer Brick.
 
 ```Javascript
 //First render
@@ -114,7 +114,7 @@ await renderPaymentBrick(bricksBuilder);
 
 **Next.js** é um framework para criação de interfaces com componentes React. Diante disso, é possível utilizar nossa [SDK React](/developers/pt/docs/sdks-library/client-side/sdk-js-react-installation) para integrar os Bricks, bem como outras soluções fornecidas através da SDK React.
 
-Contudo, nossa SDK foi estruturada para renderização no cliente (_Client Side Rendering_) enquanto via de regra o Next.js atua com _Server Side Rendering_. Assim, ao utilizar nossa SDK é preciso levar isso em consideração. É possível realizar essa integração utilizando a importação da SDK dinamicamente - conforme indicado na [documentação do Next.js](https://nextjs.org/docs/pages/building-your-application/optimizing/lazy-loading#nextdynamic).
+Contudo, nossa SDK foi estruturada para renderização no cliente (_Client Side Rendering_) enquanto via de regra o Next.js atua com _Server Side Rendering_. Assim, ao utilizar nossa SDK é preciso levar isso em consideração. É possível realizar essa integração utilizando a importação da SDK dinamicamente, conforme indicado na [documentação do Next.js](https://nextjs.org/docs/pages/building-your-application/optimizing/lazy-loading#nextdynamic).
 
 Abaixo você encontra um exemplo de código de importação dinâmica de um componente disponibilizado em nossa SDK, o `getPaymentMethods`.
 
