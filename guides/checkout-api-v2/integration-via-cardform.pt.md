@@ -8,7 +8,7 @@ A integração de pagamentos via cartão é feita via cardform. Neste modo de in
 >
 > Importante
 >
-> Além das opções disponíveis nesta documentação, também é possível integrar **pagamentos com cartão** utilizando o **Brick de CardPayment**. Veja a documentação [Renderização padrão](/developers/pt/docs/checkout-bricks/card-payment-brick/default-rendering#editor_2) do CardPayment para mais detalhes. 
+> Além das opções disponíveis nesta documentação, também é possível integrar **pagamentos com cartão** utilizando o **Brick de CardPayment**. Veja a documentação [Renderização padrão](/developers/pt/docs/checkout-bricks/card-payment-brick/default-rendering#editor_2) do CardPayment para mais detalhes. Também recomendamos a adoção do protocolo 3DS 2.0 para aumentar a probabilidade de aprovação dos seus pagamentos. Para obter mais informações, consulte a documentação sobre [Como integrar 3DS com Checkout Transparente](https://www.mercadopago.com.br/developers/pt/docs/checkout-api/how-tos/integrate-3ds).
 
 Confira abaixo o diagrama que ilustra o processo de pagamento via cartão utilizando o Card Form.
 
