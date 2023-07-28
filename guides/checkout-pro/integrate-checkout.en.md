@@ -148,7 +148,6 @@ let preference = {
 
 mercadopago.preferences.create(preference)
 .then(function(response){
-// This value replaces the String "<%= global.id %>" in your HTML
   global.id = response.body.id;
 }).catch(function(error){
   console.log(error);
