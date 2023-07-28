@@ -89,20 +89,6 @@ Consulta el [ejemplo de integración completa](http://github.com/mercadopago/che
 
 ---
 future_product_avaible: 
- - card_avaible: false
- - card_icon: Pay
- - card_title: Checkout Pro para Web
- - card_description: Integra Checkout Pro para web.
- - card_link: /developers/es/docs/checkout-pro/integrate-checkout-pro/web
- - card_linkDescription: Saber más
- - card_pillText: DISPONIBLE
- - card_avaible: false
- - card_icon: Wallet
- - card_title: Wallet Brick
- - card_description: Vincula la cuenta de Mercado Pago y permite pagos logueados. Prueba la demostración del Brick antes de integrarlo.
- - card_link: /developers/es/docs/checkout-bricks/wallet-brick/introduction
- - card_linkDescription: Saber más
- - card_pillText: DISPONIBLE
  - card_avaible: true
  - card_icon: Card
  - card_title: Checkout Pro para Web
