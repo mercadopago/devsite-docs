@@ -1,6 +1,6 @@
 # Integrar Checkout Pro 
 
-En el desarrollo de aplicaciones móviles con React Native, a menudo surge la necesidad de mostrar contenido web dentro de la aplicación. Para lograr esto, existen varias opciones, entre las cuales se destacan el uso de Custom Tabs y Safari View Controller. Estas tecnologías permiten abrir páginas web en un navegador nativo integrado en la aplicación, brindando una experiencia de navegación más fluida y coherente para los usuarios.
+En el desarrollo de aplicaciones móviles con React Native, a menudo surge la necesidad de mostrar contenido web dentro de la aplicación. Para lograr esto, existen varias opciones, entre las cuales se destacan el uso deCustom Tabs (para Android) y Safari View Controller (para iOS). Estas tecnologías permiten abrir páginas web en un navegador nativo integrado en la aplicación, brindando una experiencia de navegación más fluida y coherente para los usuarios.
 
 En este paso vamos a instalar y configurar las dependencias necesarias para implementar **Custom Tabs** en tu proyecto desarrollado en React Native. Para eso, puedes utilizar React Native CLI, que brinda un mayor control sobre la compilación y configuración de la aplicación, lo que permite personalizar y optimizar la experiencia de integración de contenido web de acuerdo con los requisitos específicos del proyecto. 
 
@@ -36,43 +36,11 @@ yarn add react-native-inappbrowser-reborn
 
 > Para las versiones de React Native >0.60 no es necesario importar y configurar manualmente las dependencias en el código nativo ya que este se hace automáticamente.
 
-Para la instalación con React Native CLI debes **verificar el archivo android/build.gradle**.
-
-### Android support
-
-Si utilizas Android support, tu archivo debería tener estas propiedades. En caso de faltar alguna, agrégala. Las versiones pueden ser iguales o superiores.
+Para la plataforma de iOS es necesario realizar el siguiente paso.
 
 ```
-buildscript {
-  ext {
-    buildToolsVersion = "28.0.3"
-    minSdkVersion = 16
-    compileSdkVersion = 28
-    targetSdkVersion = 28
-    // Only using Android Support libraries
-    supportLibVersion = "28.0.0"
-  }
+cd ios && pod install && cd ..
 ```
-
-### AndroidX
-
-Si utilizas AndroidX, tu archivo debería tener estas propiedades. En caso de faltar alguna, agrégala. Las versiones pueden ser iguales o superiores.
-
-```
-buildscript {
-  ext {
-    buildToolsVersion = "30.0.2"
-    minSdkVersion = 21
-    compileSdkVersion = 30
-    targetSdkVersion = 30
-    ndkVersion = "21.4.7075529"
-    // Remove 'supportLibVersion' property and put specific versions for AndroidX libraries
-    androidXAnnotation = "1.2.0"
-    androidXBrowser = "1.3.0"
-    // Put here other AndroidX dependencies
-  }
-```
-
 
 > CLIENT_SIDE
 >
@@ -83,28 +51,48 @@ buildscript {
 Para implementar la dependencia React-Native-Inappbrowser, ejecuta el siguiente comando.
 
 ```JavaScript
-import {Button, Linking} from 'react-native';
+import {
+	Button,
+	Linking
+} from 'react-native';
 import InAppBrowser from 'react-native-inappbrowser-reborn';
-const ButtonCustomTabs = () => { const openUrl = async (url) => {
-if (await InAppBrowser.isAvailable()) { InAppBrowser.open(url, {
-// iOS Properties
-dismissButtonStyle: 'cancel', preferredBarTintColor: '#453AA4', preferredControlTintColor: 'white', readerMode: false,
-animated: true,
-modalEnabled: true,
-// Android Properties
-showTitle: true,
-toolbarColor: '#6200EE', secondaryToolbarColor: 'black', enableUrlBarHiding: true, enableDefaultShare: true, forceCloseOnRedirection: false, // Animation
-animations: {
-startEnter: 'slide_in_right', startExit: 'slide_out_left', endEnter: 'slide_in_left', endExit: 'slide_out_right',
-}, });
-} else { Linking.openURL(url);
-} };
-return ( <Button
-title="Press Me" onPress={() =>
-openUrl('https://url-to-open.com') }
-/> );
-};
-export default ButtonCustomTabs;
+const ButtonCustomTabs = () => {
+		const openUrl = async (url) => {
+			if (await InAppBrowser.isAvailable()) {
+				InAppBrowser.open(url, {
+					// iOS Properties
+					dismissButtonStyle: 'cancel',
+					preferredBarTintColor: '#453AA4',
+					preferredControlTintColor: 'white',
+					readerMode: false,
+					animated: true,
+					modalEnabled: true,
+					// Android Properties
+					showTitle: true,
+					toolbarColor: '#6200EE',
+					secondaryToolbarColor: 'black',
+					enableUrlBarHiding: true,
+					enableDefaultShare: true,
+					forceCloseOnRedirection: false, // Animation
+					animations: {
+						startEnter: 'slide_in_right',
+						startExit: 'slide_out_left',
+						endEnter: 'slide_in_left',
+						endExit: 'slide_out_right',
+					},
+				});
+			} else {
+				Linking.openURL(url);
+			}
+		};
+		return ( < Button title = "Press Me"
+			onPress = {
+				() =>
+				openUrl('https://url-to-open.com')
+			}
+			/> );
+		};
+		export default ButtonCustomTabs;
 ```
 
 > CLIENT_SIDE
@@ -134,27 +122,88 @@ Para esto debemos agregar en la creación de la preferencia de pago las propieda
 > Configuración de la aplicación para la gestión del Deep Link
 
 Para poder recibir y gestionar el Deep Link es necesario configurar en nuestro proyecto de React Native el scheme y path que componen los Deep Links que recibimos para redireccionar a alguna parte de tu aplicación. 
-Para ello, agrega el deep link en el archivo android **/app/src/main/AndroidManifest.xml** entre las etiquetas "activity".
+Para ello, desde Xcode ubícate en la información de su proyecto y agregue una nueva URL Types.
 
-```AndroidManifest.xml
-<activity ....> ....
-<intent-filter data-generated="true">
-<action android:name="android.intent.action.VIEW"/>
-<data android:scheme="myapp" android:host="checkout" android:pathPrefix="/congrats"/> <category android:name="android.intent.category.BROWSABLE"/>
-<category android:name="android.intent.category.DEFAULT"/>
-</intent-filter>
-.... </activity>
+![xcode-paso1](/images/cow/xcode-paso1.png)
+
+Ingresa el **identifier** de su aplicación y la **URL Schemes** del Deep Link.
+
+![xcode-paso2](/images/cow/xcode-paso2.png)
+
+Esto generará el siguiente código en el archivo **ios/appname/Info.plist**:
+
+```info.plist
+<key>CFBundleURLTypes</key>
+    <array>
+        <dict> <key>CFBundleURLSchemes
+            </key>
+            <array>
+                <string>myapp</string>
+                <string>com.test.TestExpoBrowser</string>
+            </array>
+        </dict> 
+    </array>
 ```
 
+Agrega el siguiente código al archivo **ios/appname/AppDelegate.mm**
+
+
+```AppDelegate.mm
+// iOS 9.x or newer
+#import < React / RCTLinkingManager.h >
+	-(BOOL) application: (UIApplication * ) application
+openURL: (NSURL * ) url options: (NSDictionary < UIApplicationOpenURLOptionsKey, id > * ) options {
+	return [RCTLinkingManager application: application openURL: url options: options];
+}
+```
 
 > CLIENT_SIDE
 >
 > h2
 >
-> Deep Links: Recepción y gestión del DeepLink 
+> Recepción y gestión del Deep Link 
 
 Por último, veremos cómo podemos configurar nuestra aplicación de React Native para recibir y gestionar los Deep Links. Esto se abordará usando la dependencia react-native-inappbrowser. 
 
-En el caso de Android, **el cierre del custom tab se hace de manera automática** al momento de redireccionar a un Deep Link válido. En que caso que el link no sea válido, no se ejecutará ninguna acción de redireccionamiento desde el custom tab.
+En el caso de iOS **es necesario cerrar la Safari View Controller de manera manual**. Para esto, deberás escuchar el evento de cuando cambia la url desde el componente que abre la ventana o el punto de entrada de la aplicación, y luego llamar el método para cerrar la Safari View Controller.
 
+```AppDelegate.mm
+// iOS 9.x or newer
+#import < React / RCTLinkingManager.h >
+	-(BOOL) application: (UIApplication * ) application
+openURL: (NSURL * ) url options: (NSDictionary < UIApplicationOpenURLOptionsKey, id > * ) options {
+	return [RCTLinkingManager application: application openURL: url options: options];
+}
+```
+
+### Usando react-native-inappbrowser-reborn
+
+```JavaScript
+import {
+	useEffect
+} from 'react';
+import React from 'react';
+import MainStack from './navigation/MainStack';
+import {
+	Linking
+} from 'react-native';
+import InAppBrowser from 'react-native-inappbrowser-reborn';
+import * as RootNavigation from './RootNavigation';
+
+function App(): JSX.Element {
+	useEffect(() => {
+		Linking.addEventListener('url', event => {
+			const {
+				url
+			} = event;
+			if (url !== null && url.includes('myapp://')) {
+				InAppBrowser.close();
+				RootNavigation.navigate('Congrats');
+			}
+		});
+	}, []);
+	return <MainStack / > ;
+}
+export default App;
+```
 

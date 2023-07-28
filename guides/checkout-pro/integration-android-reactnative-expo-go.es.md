@@ -1,6 +1,6 @@
 # Integrar Checkout Pro 
 
-En el desarrollo de aplicaciones móviles con React Native, a menudo surge la necesidad de mostrar contenido web dentro de la aplicación. Para lograr esto, existen varias opciones, entre las cuales se destacan el uso de Custom Tabs y Safari View Controller. Estas tecnologías permiten abrir páginas web en un navegador nativo integrado en la aplicación, brindando una experiencia de navegación más fluida y coherente para los usuarios.
+En el desarrollo de aplicaciones móviles con React Native, a menudo surge la necesidad de mostrar contenido web dentro de la aplicación. Para lograr esto, existen varias opciones, entre las cuales se destacan el uso de Custom Tabs (para Android) y Safari View Controller (para iOS). Estas tecnologías permiten abrir páginas web en un navegador nativo integrado en la aplicación, brindando una experiencia de navegación más fluida y coherente para los usuarios.
 
 En este paso vamos a instalar y configurar las dependencias necesarias para implementar **Custom Tabs** en tu proyecto desarrollado en React Native. Para eso, puedes utilizar React Native CLI, que brinda un mayor control sobre la compilación y configuración de la aplicación, lo que permite personalizar y optimizar la experiencia de integración de contenido web de acuerdo con los requisitos específicos del proyecto. 
 
@@ -18,7 +18,7 @@ En este paso vamos a instalar y configurar las dependencias necesarias para impl
 >
 > h2
 >
-> Uso de expo-web-browser
+> Uso de Expo-Web-Browser
 
 Esta dependencia provee el acceso al navegador, en este caso Custom tabs para Android. También realiza el manejo del redireccionamiento.
 
@@ -122,7 +122,7 @@ En caso de correr un **prebuild** de la aplicación, debemos verificar que el de
 >
 > h2
 >
-> Deep Links: Recepción y gestión del DeepLink 
+> Recepción y gestión del Deep Link 
 
 Por último, veremos cómo podemos configurar nuestra aplicación de React Native para recibir y gestionar los Deep Links. Esto se abordará usando la dependencia react-native-inappbrowser. 
 
