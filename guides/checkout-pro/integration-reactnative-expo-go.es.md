@@ -7,104 +7,47 @@ En este paso vamos a instalar y configurar las dependencias necesarias para impl
 ### Especificaciones técnicas
 
 * Node 14.17.0
+* expo ~48.0.15
+* expo-web-browser ^12.1.1
 * react 18.2.0
+* react-dom 18.2.0
 * react-native 0.71.8
-* react-native-inappbrowser-reborn 3.7.0
+
 
 > CLIENT_SIDE
 >
 > h2
 >
-> Uso de InAppBrowser
+> Uso de expo-web-browser
 
-Con React Native CLI, te sugerimos usar [React-Native-InAppBrowser](https://www.npmjs.com/package/react-native-inappbrowser-reborn), una dependencia  altamente flexible que brinda una solución integral para integrar un navegador web dentro de tu aplicación de React Native. Al considerar el uso de React-Native-InAppBrowser-Reborn se tuvieron en cuenta los siguientes aspectos:
-
-* Es una dependencia que permite brindar una experiencia de navegación web integrada y fluida dentro de la aplicación.
-* Cuenta con una gran variedad de funciones personalizables para adaptarse a las necesidades específicas de la aplicación.
-* Mantiene a los usuarios dentro del contexto de la aplicación aumentando la retención y la coherencia de la experiencia.
+Esta dependencia provee el acceso al navegador, en este caso Custom tabs para Android. También realiza el manejo del redireccionamiento.
 
 Para instalarla, ejecuta el siguiente comando en tu terminal
 
-[[[
-```npm
-npm install react-native-inappbrowser-reborn --save
-```
 ```yarn
-yarn add react-native-inappbrowser-reborn
+yarn add expo-web-browser
 ```
-]]]
-
-> Para las versiones de React Native >0.60 no es necesario importar y configurar manualmente las dependencias en el código nativo ya que este se hace automáticamente.
-
-Para la instalación con React Native CLI debes **verificar el archivo android/build.gradle**.
-
-### Android support
-
-Si utilizas Android support, tu archivo debería tener estas propiedades. En caso de faltar alguna, agrégala. Las versiones pueden ser iguales o superiores.
-
-```
-buildscript {
-  ext {
-    buildToolsVersion = "28.0.3"
-    minSdkVersion = 16
-    compileSdkVersion = 28
-    targetSdkVersion = 28
-    // Only using Android Support libraries
-    supportLibVersion = "28.0.0"
-  }
-```
-
-### AndroidX
-
-Si utilizas AndroidX, tu archivo debería tener estas propiedades. En caso de faltar alguna, agrégala. Las versiones pueden ser iguales o superiores.
-
-```
-buildscript {
-  ext {
-    buildToolsVersion = "30.0.2"
-    minSdkVersion = 21
-    compileSdkVersion = 30
-    targetSdkVersion = 30
-    ndkVersion = "21.4.7075529"
-    // Remove 'supportLibVersion' property and put specific versions for AndroidX libraries
-    androidXAnnotation = "1.2.0"
-    androidXBrowser = "1.3.0"
-    // Put here other AndroidX dependencies
-  }
-```
-
 
 > CLIENT_SIDE
 >
 > h2
 >
-> Implementación de React-Native-Inappbrowser
+> Implementación de Expo-Web-Browser
 
-Para implementar la dependencia React-Native-Inappbrowser, ejecuta el siguiente comando.
+Para implementar la dependencia Expo-Web-Browser, ejecuta el siguiente comando.
 
 ```JavaScript
-import {Button, Linking} from 'react-native';
-import InAppBrowser from 'react-native-inappbrowser-reborn';
-const ButtonCustomTabs = () => { const openUrl = async (url) => {
-if (await InAppBrowser.isAvailable()) { InAppBrowser.open(url, {
-// iOS Properties
-dismissButtonStyle: 'cancel', preferredBarTintColor: '#453AA4', preferredControlTintColor: 'white', readerMode: false,
-animated: true,
-modalEnabled: true,
-// Android Properties
-showTitle: true,
-toolbarColor: '#6200EE', secondaryToolbarColor: 'black', enableUrlBarHiding: true, enableDefaultShare: true, forceCloseOnRedirection: false, // Animation
-animations: {
-startEnter: 'slide_in_right', startExit: 'slide_out_left', endEnter: 'slide_in_left', endExit: 'slide_out_right',
+import { StatusBar } from "expo-status-bar";
+import { StyleSheet, Button, View } from "react-native"; import { openBrowserAsync } from "expo-web-browser";
+export default function ExpoWebBrowserExample(url) { return (
+<View style={styles.container}> <Button
+title="Open Browser"
+onPress={() => openBrowserAsync('https://url-to-open.com')} /> <StatusBar style="auto" />
+</View> );
+}
+const styles = StyleSheet.create({ container: {
+flex: 1, backgroundColor: "#fff", alignItems: "center", justifyContent: "center",
 }, });
-} else { Linking.openURL(url);
-} };
-return ( <Button
-title="Press Me" onPress={() =>
-openUrl('https://url-to-open.com') }
-/> );
-};
-export default ButtonCustomTabs;
 ```
 
 > CLIENT_SIDE
@@ -131,21 +74,49 @@ Para esto debemos agregar en la creación de la preferencia de pago las propieda
 >
 > h2
 >
-> Configuración de la aplicación para la gestión del Deep Link
+> Configuración de la aplicación para la gestión del Deep Link 
 
 Para poder recibir y gestionar el Deep Link es necesario configurar en nuestro proyecto de React Native el scheme y path que componen los Deep Links que recibimos para redireccionar a alguna parte de tu aplicación. 
-Para ello, agrega el deep link en el archivo android **/app/src/main/AndroidManifest.xml** entre las etiquetas "activity".
+Para ello, agrega la siguiente configuración a ru archivo app.json ubicado en la raíz de tu proyecto:
+
+```JavaScript
+{
+"expo": {
+"android": { "intentFilters": [
+{
+"action": "VIEW", "data": [
+{
+"scheme": "myapp", "host": "checkout", "pathPrefix": "/congrats"
+} ],
+"category": ["BROWSABLE", "DEFAULT"]
+} ]
+} }
+}
+```
+
+* En este ejemplo, el deep link que se espera para redireccionar a la app es **myapp://checkout/congrats**
+* La propiedad `pathPrefix` es **opcional**
+
+En caso que el proyecto todavía no tenga un **prebuild**, se puede testear el deep link usando expo go desde la terminal de la siguiente forma:
+
+```
+// url local del dispositivo de test
+npx uri-scheme open exp://192.168.0.7:19000/--/checkout/congrats --android
+// Nota: No es requerido pasar el scheme en estas pruebas
+```
+
+En caso de correr un **prebuild** de la aplicación, debemos verificar que el deep link para Android se haya configurado en el  archivo `android/app/src/main/AndroidManifest.xml`. El deep link debe estar entre las etiquetas activity.
 
 ```AndroidManifest.xml
 <activity ....> ....
 <intent-filter data-generated="true">
 <action android:name="android.intent.action.VIEW"/>
 <data android:scheme="myapp" android:host="checkout" android:pathPrefix="/congrats"/> <category android:name="android.intent.category.BROWSABLE"/>
-<category android:name="android.intent.category.DEFAULT"/>
-</intent-filter>
-.... </activity>
-```
+<category android:name="android.intent.category.DEFAULT"/> </intent-filter>
+....
+</activity>
 
+```
 
 > CLIENT_SIDE
 >
