@@ -38,7 +38,7 @@ Caso seja necessário atualizar os valores enviados durante a inicialização de
 
 Lembrando que não se deve apenas chamar a função de renderização com os novos valores. Isto levaria a uma duplicação de Brick em tela, sendo que a segunda renderização exibirá um erro.
 
-O código incompleto exemplifica o fluxo utilizando a atualização de uma preferência em [Payment Brick](/developers/pt/docs/checkout-bricks/payment-brick/introduction), mas o fluxo em si é válido para atualização necessária em dados de inicialização de qualquer Brick.
+O exemplo de código abaixo exemplifica o fluxo utilizando a atualização de uma preferência em [Payment Brick](/developers/pt/docs/checkout-bricks/payment-brick/introduction), mas o fluxo em si é válido para atualização necessária em dados de inicialização de qualquer Brick.
 
 ```Javascript
 //First render
@@ -87,7 +87,7 @@ await secondRenderPaymentBrick(bricksBuilder);
 
 ## Erro "Container Not Found"
 
-Para a correta renderização, é necessário que o ID do container no DOM no qual o Brick será renderizado seja informado de maneira idêntica ao da função de criação do Brick. Qualquer string pode ser utilizada como nome, desde que os nomes sejam iguais, este erro não ocorrerá.
+Para a correta renderização, é necessário que o ID do container no DOM no qual o Brick será renderizado seja informado de maneira idêntica ao da função de criação do Brick. Qualquer string pode ser utilizada como nome, desde que os nomes sejam iguais, este erro não ocorrerá. Note que não são aceitas classes como container para o Brick, é necessário que seja um ID
 
 Outro ponto importante é garantir que ao chamar a função de renderização do Brick o container dele já esteja renderizado em tela. Reforçamos este ponto devido a possibilidade de o container do brick estar dentro de outros contêineres. Essa sequência de renderização é importante para evitar o erro em questão.
 
@@ -117,6 +117,8 @@ await renderPaymentBrick(bricksBuilder);
 Contudo, nossa SDK foi estruturada para renderização no cliente (_Client Side Rendering_) enquanto via de regra o Next.js atua com _Server Side Rendering_. Assim, ao utilizar nossa SDK é preciso levar isso em consideração. É possível realizar essa integração utilizando a importação da SDK dinamicamente, conforme indicado na [documentação do Next.js](https://nextjs.org/docs/pages/building-your-application/optimizing/lazy-loading#nextdynamic).
 
 Abaixo você encontra um exemplo de código de importação dinâmica de um componente disponibilizado em nossa SDK, o `getPaymentMethods`.
+
+Abaixo você encontra um exemplo de código de importação dinâmica de um componente disponibilizado em nossa SDK, o [Payment Brick](/developers/pt/docs/checkout-bricks/payment-brick/introduction).
 
 ```react-jsx
 
