@@ -1,0 +1,21 @@
+----[mla, mlb, mlm]----
+
+# Activar el modo PDV en el dispositivo Point
+
+Para activar el modo PDV en tu dispositivo Point, primero tendrás que identificarlo. Para esto, deberás realizar una solicitud GET a la API [https://api.mercadopago.com/instore-api/point/v1/devices?offset=0&limit=50]():
+
+> Esta solicitud retornará como respuesta los dispositivos asociados a la cuenta de Mercado Pago. Si en el listado te aparecen varios dispositivos, puedes identificar el Point que deseas por medio de los últimos caracteres del campo `id`. Los últimos números de este valor deben coincidir con el serial que aparece en la etiqueta trasera del dispositivo Point con el que estás integrando.
+
+Luego, realiza una solicitud PATCH a la API [https://api.mercadopago.com/instore-api/point/v1/devices/{{device.id}}]() , reemplazando `device.id` por el valor obtenido en ese campo en la respuesta a la solicitud GET anterior.
+
+Por último, reinicia el dispositivo Point. Cuando se reactive, verás en la pantalla una confirmación, y tu Point estará vinculado al modo PDV. 
+
+> WARNING
+>
+> Importante
+>
+> Ten en cuenta que sólo se permite un único dispositivo en modo PDV por caja.
+
+
+
+------------
