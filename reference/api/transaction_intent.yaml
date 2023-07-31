@@ -1140,7 +1140,6 @@ paths:
     post:
       tags:
         - $ref: "#/tags/checkout-api"
-<<<<<<< HEAD
       summary: Create a Transaction Intent
       x-summary-i18n:
         eng: Create a Transaction Intent
@@ -1151,18 +1150,6 @@ paths:
         eng: Creates a new Transaction Intent in mode Builder. With the ID of this TI it is possible to edit it through the Endpoint Pacht, and Process it through the Endpoint Process
         spa: Crea una nueva Transaction Intent en modo Builder. Con el ID de esta Transaction Intent es posible editarla a través del endpoint Patch y procesarla a través del endpoint Process
         por: Cria uma nova Transaction Intent em modo Builder. Com o ID desta Transaction Intent é possível editá-lo através do Endpoint Patch, e processá-lo através do Endpoint Process
-=======
-      summary: Creates a new Transaction Intent in mode Builder.
-      x-summary-i18n:
-        eng: Creates a new Transaction Intent in mode Builder.
-        spa: Crea una nueva Transaction Intent en modo Builder.
-        por: Cria uma nova Transaction Intent em modo Builder.
-      description: Creates a new Transaction Intent in mode Builder. With the ID of this TI it is possible to edit it through the Endpoint Pacht, and Process it through the Endpoint Process
-      x-description-i18n:
-        eng: Creates a new Transaction Intent in mode Builder. With the ID of this TI it is possible to edit it through the Endpoint Pacht, and Process it through the Endpoint Process
-        spa: Crea una nueva Transaction Intent en modo Builder.
-        por: Cria uma nova Transaction Intent em modo Builder.
->>>>>>> d3b7c548d647135094cdef34b1eda6b5f7e1db63
       parameters:
         - in: header
           name: X-Product-ID
