@@ -1,6 +1,12 @@
 ----[mla, mlb, mlm]----
 # Iniciar sesión en un dispositivo Point
 
+> WARNING
+>
+> Importante
+>
+> Este paso sólo es necesario para integrar dispositivos Point. 
+
 Para iniciar sesión en tu dispositivo Point, ingresa a la app de Mercado Pago desde tu móvil con tu usuario y contraseña.
 
 Luego, todavía desde la app de Mercado Pago en tu móvil, escanea el código QR que aparece en la pantalla de tu Point.

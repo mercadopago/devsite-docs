@@ -33,6 +33,5 @@ Además, en el menú ubicado del lado izquierdo del panel de información genera
 
 | Tipo de información | Definición |
 |---|---|
-| PRUEBAS > Credenciales de prueba | Utiliza las [credenciales](/developers/es/docs/ecosistema-presencial/additional-content/your-integrations/credentials) de prueba para probar tus integraciones. Pueden combinarse con tarjetas de prueba para simular transacciones y verificar el correcto funcionamiento de las integraciones. En esta<br>sección encontrarás tu `access_token` de prueba. |
 | NOTIFICACIÓN > Webhooks | Webhook (también conocido como devolución de llamada web) es un método simple que facilita que una aplicación o sistema proporcione información en tiempo real cada vez que ocurre un evento. Aquí podrás configurar una URL a la cual será notificado el estado final de los `intent`. |
 | PRODUCCIÓN > Credenciales de producción | Utiliza las [credenciales](/developers/es/docs/ecosistema-presencial/additional-content/your-integrations/credentials) de producción para recibir pagos. Aquí encontrarás tu `access_token` productivo. |
