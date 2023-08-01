@@ -17,19 +17,19 @@ Os dados pessoais são registrados em um banco de dados pelo qual o Mercado Livr
 ## Que dados pessoais coletamos e processamos?
 Os dados pessoais que coletamos para os fins explicados nesta Declaração são:
 
-● Nome comercial
-● E-mail de contato comercial
-● Telefone de contato comercial
-● ID do Integrador (número que identifica os Desenvolvedores no Programa)
-● País onde tem a sua maior atividade comercial
-● Países onde você opera
-● Descrição com a qual você será exposto na Central de Partners
-● Site web
-● Plugins que são usados   ou dominados pela Agência/Desenvolvedor
-● Linguagens de programação utilizadas pela Agência/desenvolvedor para implementar
-● O tipo de atividade em que a Agência/Desenvolvedor é especialista
-● Serviços adicionais oferecidos pela Agência/desenvolvedor
-● Soluções de pagamento que você implementa.
+* Nome comercial
+* E-mail de contato comercial
+* Telefone de contato comercial
+* ID do Integrador (número que identifica os Desenvolvedores no Programa)
+* País onde tem a sua maior atividade comercial
+* Países onde você opera
+* Descrição com a qual você será exposto na Central de Partners
+* Site web
+* Plugins que são usados   ou dominados pela Agência/Desenvolvedor
+* Linguagens de programação utilizadas pela Agência/desenvolvedor para implementar
+* O tipo de atividade em que a Agência/Desenvolvedor é especialista
+* Serviços adicionais oferecidos pela Agência/desenvolvedor
+* Soluções de pagamento que você implementa.
 
 Queremos que saiba que não é obrigado a nos fornecer os dados pessoais detalhados, embora a recusa em fornecê-los ou a sua inexatidão o impedirá de aproveitar os benefícios do Central de Partners.
 
@@ -42,11 +42,11 @@ O uso de seus dados para qualquer outra finalidade que não seja compatível com
 
 Em relação às finalidades que descrevemos no ponto anterior (“O que fazemos com os seus dados pessoais?”), seus dados pessoais podem ser acessados ou compartilhados com as seguintes categorias de destinatários:
 
-● Afiliados do Mercado Livre
-● Parceiros comerciais com os quais o Mercado Livre tem uma relação de colaboração ou aliança para anunciar, fornecer ou oferecer bens e/ou serviços.
-● Prestadores que prestam serviços e processam os dados em nome do Mercado Livre, seguindo as nossas instruções.
-● Autoridades competentes no exercício de suas funções.
-● A outra companhia, no âmbito de uma fusão, compra, venda ou qualquer outro tipo de aquisição ou combinação de operações envolvendo a totalidade ou parte dos ativos ou negócios do Mercado Livre.
+* Afiliados do Mercado Livre
+* Parceiros comerciais com os quais o Mercado Livre tem uma relação de colaboração ou aliança para anunciar, fornecer ou oferecer bens e/ou serviços.
+* Prestadores que prestam serviços e processam os dados em nome do Mercado Livre, seguindo as nossas instruções.
+* Autoridades competentes no exercício de suas funções.
+* A outra companhia, no âmbito de uma fusão, compra, venda ou qualquer outro tipo de aquisição ou combinação de operações envolvendo a totalidade ou parte dos ativos ou negócios do Mercado Livre.
 
 Sempre que compartilharmos seus dados pessoais com terceiros, assinaremos contratos de cessão ou transferência de dados de acordo com a legislação aplicável.
 
@@ -88,40 +88,40 @@ Caso o Mercado Livre faça alterações nesta Declaração, você será informad
 ### Entidades do Mercado Livre
 
 *Argentina:*
-● Mercado Libre S.R.L., CUIT 30-70308853-4, com endereço na Avenida Caseros 3039, Piso 2, Cidade Autônoma de Buenos Aires.
+* Mercado Libre S.R.L., CUIT 30-70308853-4, com endereço na Avenida Caseros 3039, Piso 2, Cidade Autônoma de Buenos Aires.
 
 *Brasil:*
-● EBAZAR.COM.BR LTDA, CNPJ/MF 03.007.331/0001-41, com endereço na Avenida das Nações Unidas, 3.003, Bonfim, Osasco/SP, Brasil.
+* EBAZAR.COM.BR LTDA, CNPJ/MF 03.007.331/0001-41, com endereço na Avenida das Nações Unidas, 3.003, Bonfim, Osasco/SP, Brasil.
 
 *Chile:*
-● Mercado Libre Chile Limitada, Rut: 77.398.220, com endereço em Av. Apoquindo 4.800, Torre 2, piso 21, Las Condes, Santiago de Chile.
-● Mercado Pago S.A., Rut: 76516950-K, com endereço em Av. Apoquindo 4.800, Torre 2, piso 21, Las Condes, Santiago de Chile.
+* Mercado Libre Chile Limitada, Rut: 77.398.220, com endereço em Av. Apoquindo 4.800, Torre 2, piso 21, Las Condes, Santiago de Chile.
+* Mercado Pago S.A., Rut: 76516950-K, com endereço em Av. Apoquindo 4.800, Torre 2, piso 21, Las Condes, Santiago de Chile.
 
 *Colômbia:*
-● Mercado Libre Colombia LTDA., NIT 830067394-6, com endereço em Carrera 17 No. 93-09, Piso 3, Bogotá D.C.
-● Mercadopago Colombia Ltda, NIT 9001163198, com endereço em Carrera 17 No. 93-09, Piso 3, Bogotá D.C.
+* Mercado Libre Colombia LTDA., NIT 830067394-6, com endereço em Carrera 17 No. 93-09, Piso 3, Bogotá D.C.
+* Mercadopago Colombia Ltda, NIT 9001163198, com endereço em Carrera 17 No. 93-09, Piso 3, Bogotá D.C.
 
 *México:*
-● MercadoLibre, S. de R.L. de C.V., com endereço na Av. Insurgentes Sur 1602, Piso 9, Suite 900, Colonia Crédito Constructor, Alcaldía Benito Juárez, C.P. 03940, Ciudad de México, CDMX.
+* MercadoLibre, S. de R.L. de C.V., com endereço na Av. Insurgentes Sur 1602, Piso 9, Suite 900, Colonia Crédito Constructor, Alcaldía Benito Juárez, C.P. 03940, Ciudad de México, CDMX.
 
 *Perú:*
-● Mercado Libre Perú S.R.L., RUC No. 20462540745, calle German Schreiber Gulsmanco Nº276, San Isidro, Lima, Peru.
+* Mercado Libre Perú S.R.L., RUC No. 20462540745, calle German Schreiber Gulsmanco Nº276, San Isidro, Lima, Peru.
 
 *Uruguai:*
-● Deremate.com de Uruguay S.R.L., R.U.T: 21411170001, com endereço em Calle Dr. Luis Bonavita 1266 Piso 39, Ciudad de Montevideo.
+* Deremate.com de Uruguay S.R.L., R.U.T: 21411170001, com endereço em Calle Dr. Luis Bonavita 1266 Piso 39, Ciudad de Montevideo.
 
 *Venezuela:*
-● MercadoLibre Venezuela S.R.L., com endereço em calle Eugenio Mendoza com Jose Angel Lamas, Edif. Torre la Castellana, Piso 8, Zona Postal 1060, Caracas, Venezuela.
+* MercadoLibre Venezuela S.R.L., com endereço em calle Eugenio Mendoza com Jose Angel Lamas, Edif. Torre la Castellana, Piso 8, Zona Postal 1060, Caracas, Venezuela.
 
 ## Anexo II:
 *Autoridades*
 
-● *Argentina*:  Agência de Acesso à Informação Pública.
-● *Brasil*: Autoridade Nacional de Proteção de Dados.
-● *Chile*: Serviço Nacional do Consumidor
-● *Colômbia*: Superintendência de Indústria e Comércio.
-● *Costa* Rica: Agência de Proteção de Dados dos Habitantes
-● *Equador*: Autoridade de Proteção de Dados Pessoais
-● *México*: Instituto Nacional de Transparência e Acesso à Informação e Proteção de Dados Pessoais
-● *Perú*: Direção Geral de Transparência, Acesso à Informação Pública e Proteção de Dados Pessoais
-● *Uruguai*: Unidade Reguladora e de Controle de Dados Pessoais.
+* *Argentina*:  Agência de Acesso à Informação Pública.
+* *Brasil*: Autoridade Nacional de Proteção de Dados.
+* *Chile*: Serviço Nacional do Consumidor
+* *Colômbia*: Superintendência de Indústria e Comércio.
+* *Costa* Rica: Agência de Proteção de Dados dos Habitantes
+* *Equador*: Autoridade de Proteção de Dados Pessoais
+* *México*: Instituto Nacional de Transparência e Acesso à Informação e Proteção de Dados Pessoais
+* *Perú*: Direção Geral de Transparência, Acesso à Informação Pública e Proteção de Dados Pessoais
+* *Uruguai*: Unidade Reguladora e de Controle de Dados Pessoais.
