@@ -139,20 +139,33 @@ Una vez que hayas configurado correctamente el método de pago, deberás agregar
     payment = payment_response["response"]
     ```
     ```curl
-    curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
-    --header 'Authorization: Bearer TOKEN' \
+   curl --location 'https://api.mercadopago.com/v1/payments' \
     --header 'Content-Type: application/json' \
+    --header 'Authorization: Bearer {{access_token}}' \
     --data-raw '{
-        "transaction_amount": 1000,
-        "description": "Teste Pix Open Finance",
-        "payment_method_id": "pix",
-        "payer": {
-            "email": "test_user_19734329@testuser.com"
-        },
-        "point_of_interaction": {
-            "linked_to": "openfinance"
-        },
-        "callback_url": "https://example.com"
+    "callback_url": "https://example.com/",
+    "payment_method_id": "pix",
+    "transaction_amount": 5,
+    "external_reference": "my_order_id_123",
+    "description": "Online Open Finance Payment",
+    "date_of_expiration": "2023-08-01T12:44:41.000-03:00",
+    "payer": {
+       "first_name": "Carlos",
+       "last_name": "Silva",
+       "email": "test_user_58128038@testuser.com",
+       "identification": {
+           "number": "12345678909",
+           "type": "CPF"
+       }
+    },
+    "point_of_interaction": {
+       "linked_to": "openfinance",
+       "transaction_data": {
+           "bank_info": {
+               "origin_bank_id": "908c846f-b4b5-4307-901e-b8882ef7ce99"
+           }
+       }
+    }
     }'
     ```
 ]]]
