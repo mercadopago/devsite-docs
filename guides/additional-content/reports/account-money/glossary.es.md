@@ -1,5 +1,6 @@
 # Glosario
 
+
 Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado con todos ellos. ¡Usa este glosario para no
 perderte!
 
@@ -51,11 +52,9 @@ perderte!
 | Número de identificación del pagador (PAYER_ID_NUMBER\*)                    | Número de identificación de quien hace un pago o una donación.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | ----------------[mla]---- ------------ 
 | Canal de venta (BUSINESS_UNIT)                                              | Corresponde al canal por medio del cual se generó una venta. Los canales son Mercado Pago, Mercado Libre, Mercado Shops y Delivery.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | Plataforma de cobro (SUB_UNIT)                                              | Permite identificar el medio que se utilizó para cobrar una venta con Mercado Pago.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-
 > INFO
 >
-> (\*) Esta información solo se podrá usar para conciliar, será tratada conforme a las leyes de protección de datos
-> personales aplicables y estará disponible cuando se reciban pagos con QR, transferencias o cuando reciba una donación
+> (*) Esta información solo se podrá usar para conciliar, será tratada conforme a las leyes de protección de datos 
+> personales aplicables y estará disponible cuando se reciban pagos con QR, transferencias o cuando reciba una donación 
 > como ONG.
-
----
+------------
