@@ -26,7 +26,7 @@ During the Brick integration process, it is possible that **when the Brick is in
 | Failed to get bin based card information  | An error occurred. Please try again later.  | Failed to get payment methods using card bin  | No  | get_card_bin_payment_methods_failed  |
 | Error searching card issuing banks  | An error occurred. Please try again later.  | Failed to get card issuer(s)  | No  | get_card_issuers_failed  |
 | Error when searching the amount and the values of the payment installments according to the _amount_ sent by the integrator  | An error occurred. Please try again later.  | Failed to get payment installments  | No  | get_payment_installments_failed  |
-| Incomplete payment fields for some reason (fees, card issuer, _payment_method_id_)  | An error occurred. Please try again later.  | SOne of the following messages will be returned according to the type of error: * The payment method id is missing * The payment installments are missing * The card issuer is missing  |  No  | missing_payment_information  |
+| Incomplete payment fields for some reason (fees, card issuer, _payment_method_id_)  | An error occurred. Please try again later.  | Some of the following messages will be returned according to the type of error: * The payment method id is missing * The payment installments are missing * The card issuer is missing  |  No  | missing_payment_information  |
 
 ## How to update data sent during the initialization of a Brick
 
