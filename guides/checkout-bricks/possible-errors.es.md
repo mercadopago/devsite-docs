@@ -32,7 +32,7 @@ Durante el proceso de integración del Brick, es posible que **al momento de ins
 
 # Cómo actualizar datos enviados durante la inicialización de un Brick
 
-En caso de ser necesario actualizar los valores enviados durante la inicialización de un Brick, es necesario explicitar la asincronicidad del código y valerse de la función de `unmount` disponible en el _Controller_ del Brick antes de actualizar los datos. Además, el objeto de configuraciones debe ser enviado completo, dado que se trata de una renderización.
+En caso de querer actualizar los valores enviados durante la inicialización de un Brick, es necesario explicitar la asincronicidad del código y valerse de la función de `unmount` disponible en el _Controller_ del Brick antes de actualizar los datos. Además, el objeto de configuraciones debe ser enviado completo, dado que se trata de una renderización.
 
 Es importante recordar que no se debe simplemente llamar a la función de renderización con los nuevos valores, ya que esto provocaría una duplicación del Brick en pantalla, y la segunda renderización mostrará un error.
 
