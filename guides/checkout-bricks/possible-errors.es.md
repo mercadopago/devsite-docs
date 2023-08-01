@@ -85,7 +85,7 @@ await secondRenderPaymentBrick(bricksBuilder);
 
 ## Error "Container Not Found"
 
-Para que la renderización ocurra correctamente, es necesario que el ID del contenedor en el `DOM` donde se renderizará el Brick sea proporcionado de manera idéntica a la función de creación del Brick. Se puede utilizar cualquier cadena como nombre, y siempre y cuando los nombres sean iguales, este error no ocurrirá. Ten en cuenta que las clases no son aceptadas como contenedor para el Brick, es necesario que sea un ID.
+Para que la renderización ocurra correctamente, es necesario que el ID del contenedor en el `DOM` donde se renderizará el Brick sea proporcionado de manera idéntica a la función de creación del Brick. Se puede utilizar cualquier cadena como nombre y, siempre y cuando los nombres sean iguales, este error no ocurrirá. Ten en cuenta que las clases no son aceptadas como contenedor para el Brick, es necesario que sea un ID.
 
 Otro punto importante es asegurarse de que al llamar a la función de renderización del Brick, su contenedor ya esté renderizado en la pantalla. Reforzamos este punto debido a la posibilidad de que el contenedor del brick esté dentro de otros contenedores. Esta secuencia de renderización es importante para evitar el error mencionado.
 
