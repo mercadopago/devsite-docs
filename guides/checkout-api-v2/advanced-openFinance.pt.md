@@ -55,6 +55,10 @@ Uma vez que você tenha configurado o meio de pagamento corretamente, será prec
         payment_method_id: 'pix',
         payer: {
             email: 'test@test.com'
+            identification: {
+                number: '12345678909',
+                type: 'CPF'
+           }
         },
         point_of_interaction: {
             linked_to: "openfinance"
@@ -91,6 +95,10 @@ Uma vez que você tenha configurado o meio de pagamento corretamente, será prec
         payment_method_id: 'pix',
         payer: {
             email: 'test@test.com'
+            identification: {
+                number: '12345678909',
+                type: 'CPF'
+           }
         },
         point_of_interaction: {
             linked_to: "openfinance"
@@ -110,6 +118,10 @@ Uma vez que você tenha configurado o meio de pagamento corretamente, será prec
         Payer = new PaymentPayerRequest
         {
             Email = "test@test.com"
+            Identification: {
+                number: "12345678909",
+                type: "CPF"
+           }
         },
         PointOfInteraction = new PaymentPointOfInteractionRequest
         {
@@ -128,6 +140,10 @@ Uma vez que você tenha configurado o meio de pagamento corretamente, será prec
         "payment_method_id": "pix",
         "payer": {
             "email": "test@test.com"
+            "identification": {
+                "number": "12345678909",
+                "type": "CPF"
+           }
         },
         "point_of_interaction": {
             "linked_to": "openfinance"

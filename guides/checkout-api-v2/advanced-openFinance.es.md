@@ -57,6 +57,10 @@ Una vez que hayas configurado correctamente el método de pago, deberás agregar
         payment_method_id: 'pix',
         payer: {
             email: 'test@test.com'
+            identification: {
+                number: '12345678909',
+                type: 'CPF'
+           }
         },
         point_of_interaction: {
             linked_to: "openfinance"
@@ -93,6 +97,10 @@ Una vez que hayas configurado correctamente el método de pago, deberás agregar
         payment_method_id: 'pix',
         payer: {
             email: 'test@test.com'
+            identification: {
+                number: '12345678909',
+                type: 'CPF'
+           }
         },
         point_of_interaction: {
             linked_to: "openfinance"
@@ -112,6 +120,10 @@ Una vez que hayas configurado correctamente el método de pago, deberás agregar
         Payer = new PaymentPayerRequest
         {
             Email = "test@test.com"
+            Identification: {
+                number: "12345678909",
+                type: "CPF"
+           }
         },
         PointOfInteraction = new PaymentPointOfInteractionRequest
         {
@@ -130,6 +142,10 @@ Una vez que hayas configurado correctamente el método de pago, deberás agregar
         "payment_method_id": "pix",
         "payer": {
             "email": "test@test.com"
+            "identification": {
+                "number": "12345678909",
+                "type": "CPF"
+           }
         },
         "point_of_interaction": {
             "linked_to": "openfinance"
@@ -139,7 +155,7 @@ Una vez que hayas configurado correctamente el método de pago, deberás agregar
     payment = payment_response["response"]
     ```
     ```curl
-   curl --location 'https://api.mercadopago.com/v1/payments' \
+    curl --location 'https://api.mercadopago.com/v1/payments' \
     --header 'Content-Type: application/json' \
     --header 'Authorization: Bearer {{access_token}}' \
     --data-raw '{
