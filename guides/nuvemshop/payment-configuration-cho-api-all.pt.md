@@ -1,4 +1,4 @@
-# Configurar os pagamentos com ----[mlb]---- Checkout Transparente ------------ ----[mpe, mco, mlu, mlc]---- Checkout API ------------
+# Configurar os pagamentos com ----[mlb]---- Checkout Transparente ------------ ----[mla, mpe, mco, mlu, mlc]---- Checkout API ------------
 
 ----[mlb]----
 Com o [Checkout Transparente](/developers/pt/docs/checkout-api/landing), todo o processo de finalização de compra acontecerá dentro do ambiente da loja online, sem a necessidade de redirecionamento para uma página externa. Além de permitir maior controle no processo de customização e integração, o checkout oferece uma estrutura completa para processamento de pagamentos com os principais meios disponíveis no mercado. 
@@ -12,7 +12,7 @@ Com o [Checkout Transparente](/developers/pt/docs/checkout-api/landing), todo o 
 Para integrar o Checkout Transparente, siga os passos abaixo.
 
 ------------
-----[mpe, mco, mlu, mlc]----
+----[mla, mpe, mco, mlu, mlc]----
 Com o [Checkout API](/developers/pt/docs/checkout-api/landing), todo o processo de finalização de compra acontecerá dentro do ambiente da loja online, sem a necessidade de redirecionamento para uma página externa. Além de permitir maior controle no processo de customização e integração, o checkout oferece uma estrutura completa para processamento de pagamentos com os principais meios disponíveis no mercado.
 
 Para integrar o Checkout API, siga os passos abaixo.

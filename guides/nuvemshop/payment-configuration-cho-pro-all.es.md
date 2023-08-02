@@ -10,7 +10,7 @@ Para integrar Checkout Pro, sigue los pasos a continuación.
 3. Selecciona las opciones de pago que deseas ofrecer en tu tienda. Estos pueden ser: tarjeta de crédito, transferencia bancaria, redes de pago en efectivo y Financiación sin tarjeta.
 
 ------------
-----[mlc, mlu, mpe, mco]----
+----[mla, mlc, mlu, mpe, mco]----
 3. Selecciona las opciones de pago que deseas ofrecer en tu tienda. Estos pueden ser: tarjeta de crédito, transferencia bancaria, redes de pago en efectivo y tarjeta de débito.
 
 ------------
@@ -22,7 +22,7 @@ Para integrar Checkout Pro, sigue los pasos a continuación.
 ![Payments Checkout Pro - Nuvem Shop](/images/nuvemshop/nuvemshop_checkout_redirect_3.gif)
 
 ------------
-----[mlc, mlu, mpe, mco]----
+----[mla, mlc, mlu, mpe, mco]----
 ![Payments Checkout Pro - Nuvem Shop](/images/nuvemshop/mx_tiendanube_checkout_redirect.gif)
 
 ------------

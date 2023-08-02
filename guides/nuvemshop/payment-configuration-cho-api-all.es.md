@@ -1,4 +1,4 @@
-# Configurar pagos con ----[mlb]---- Checkout Transparente ------------ ----[mpe, mco, mlu, mlc]---- Checkout API ------------
+# Configurar pagos con ----[mlb]---- Checkout Transparente ------------ ----[mla, mpe, mco, mlu, mlc]---- Checkout API ------------
 
 ----[mlb]----
 Con el [Checkout Transparente](/developers/es/guides/checkout-api/landing), todo el proceso de pago se realizará dentro del entorno de la tienda en línea, sin necesidad de redirigir a una página externa. Además de permitir un mayor control en el proceso de personalización e integración, el checkout ofrece una estructura completa para el procesamiento de pagos con los principales medios disponibles en el mercado.
@@ -12,7 +12,7 @@ Con el [Checkout Transparente](/developers/es/guides/checkout-api/landing), todo
 Para integrar Checkout Transparente, siga los pasos a continuación.
 
 ------------
-----[mpe, mco, mlu, mlc]----
+----[mla, mpe, mco, mlu, mlc]----
 Con el [Checkout API](/developers/es/guides/checkout-api/landing), todo el proceso de pago se realizará dentro del entorno de la tienda en línea, sin necesidad de redirigir a una página externa. Además de permitir un mayor control en el proceso de personalización e integración, el checkout ofrece una estructura completa para el procesamiento de pagos con los principales medios disponibles en el mercado.
 
 Para integrar Checkout API, siga los pasos a continuación.
@@ -32,7 +32,7 @@ Para integrar Checkout API, siga los pasos a continuación.
 ![Payments Checkout Transparente - Nuvem Shop](/images/nuvemshop/nuvemshop_checkout_transparente_2.gif) 
 
 ------------
-----[mlc, mlu, mpe, mco]----
+----[mla, mlc, mlu, mpe, mco]----
 ![Payments Checkout Transparente - Nuvem Shop](/images/nuvemshop/mx_tiendanube_checkout_transparente.gif)
 
 ------------
