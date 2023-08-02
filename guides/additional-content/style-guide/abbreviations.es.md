@@ -1,6 +1,6 @@
 # Uso de abreviaciones
 
-Evitamos el uso de abreviaciones para evitar posibles confusiones, salvo en los siguientes casos:
+Intentamos no usar abreviaciones para evitar posibles confusiones, salvo en los siguientes casos:
 
 * **Medidas** (GB, px., etc.)
 * **Monedas**

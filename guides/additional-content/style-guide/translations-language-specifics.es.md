@@ -6,5 +6,5 @@ En español y protugués, solemos omitir el sujeto en las oraciones cuando este 
 
 ✅ *Puedes continuar con las configuraciones opcionales* <br>
 ❌ *Tú puedes continuar con las configuraciones opcionales*
-
+Para MLB, Checkout API es siempre Checkout Transparente. En inglés, mantenemos también este nombre y no lo traducimos.
 Existen términos que no tienen una traducción exacta hacia otro idioma, tales como nombres propios de medios de pago (*ej: Boleto Bancário no tiene traducción, versus Tienda Nube que tiene su versión brasilera Nuvemshop*). En esos casos en donde traducirlos generaría más confusión, priorizamos mantener su nombre en el idioma de origen. 

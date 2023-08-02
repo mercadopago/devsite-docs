@@ -6,7 +6,7 @@ En nuestra documentación podemos incluir tres tipos de notas:
 ![nota-simple](/images/style-guide/nota-simple.png)
 
 ```markdown
-> Esto es un eemplo de nota.
+> Esto es un ejemplo de nota.
 ```
 
 2. **Nota de aclaración**: Sirve para brindar aclaraciones sobre algún paso del proceso que estamos documentando. Pueden incluirse para redirigir al lector a algún otro paso o documentación, brindar una vía de contacto para resolución de problemas, mencionar alternativas que puedan ser útiles en esa parte del proceso, entre otros.
