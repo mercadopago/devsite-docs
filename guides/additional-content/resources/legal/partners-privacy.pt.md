@@ -2,7 +2,7 @@
 
 _Última atualização em 17/07/2023_
 
-No Mercado Livre consideramos a proteção de dados pessoais uma oportunidade para gerar valor aos nossos parceiros de negócios. Para realizar o Central de Parceiros e fornecer soluções para o seu negócio, processaremos alguns de seus dados pessoais.
+No Mercado Livre consideramos a proteção de dados pessoais uma oportunidade para gerar valor aos nossos parceiros de negócios. Para realizar a Central de Parceiros e fornecer soluções para o seu negócio, processaremos alguns de seus dados pessoais.
 
 A Central de Parceiros é um espaço onde Mercado Livre, Mercado Shops e Mercado Pago, permitem aos vendedores divulgar os Parceiros com os quais trabalham e de forma que estejam disponíveis para contratação por outros vendedores.
 
@@ -15,6 +15,7 @@ Ao aceitar a presente Declaração, você nos autoriza expressamente a processar
 Os dados pessoais são registrados em um banco de dados pelo qual o Mercado Livre é responsável. Dependendo do país onde reside, uma ou mais entidades podem ser controladoras dos seus dados. Você poderá consultar os dados destas entidades no ANEXO I desta Declaração.
 
 ## Que dados pessoais coletamos e processamos?
+
 Os dados pessoais que coletamos para os fins explicados nesta Declaração são:
 
 * Nome comercial
@@ -31,11 +32,11 @@ Os dados pessoais que coletamos para os fins explicados nesta Declaração são:
 * Serviços adicionais oferecidos pela Agência/desenvolvedor
 * Soluções de pagamento que você implementa.
 
-Queremos que saiba que não é obrigado a nos fornecer os dados pessoais detalhados, embora a recusa em fornecê-los ou a sua inexatidão o impedirá de aproveitar os benefícios do Central de Parceiros.
+Queremos que saiba que não é obrigado a nos fornecer os dados pessoais detalhados, embora a recusa em fornecê-los ou a sua inexatidão o impedirá de aproveitar os benefícios da Central de Parceiros.
 
 ## O que fazemos com os dados pessoais?
 
-Tratamos seus dados pessoais no âmbito do Central de Parceiros para que os publiquemos nessa plataforma, para que outros vendedores o conheçam e o possam contratar.
+Tratamos seus dados pessoais no âmbito da Central de Parceiros para que os publiquemos nessa plataforma, para que outros vendedores o conheçam e o possam contratar.
 O uso de seus dados para qualquer outra finalidade que não seja compatível com as descritas nesta Declaração será comunicado em tempo hábil.
 
 ## Como compartilhamos os dados pessoais?
@@ -51,6 +52,7 @@ Em relação às finalidades que descrevemos no ponto anterior (“O que fazemos
 Sempre que compartilharmos seus dados pessoais com terceiros, assinaremos contratos de cessão ou transferência de dados de acordo com a legislação aplicável.
 
 ## Como são realizadas as transferências internacionais de dados pessoais?
+
 A operação do Mercado Livre é suportada por uma infraestrutura humana, organizacional e tecnológica, como servidores e serviços em nuvem, que podem estar estabelecidos em um país diferente do seu.
 
 Também pode acontecer de os destinatários dos dados indicados anteriormente na seção “Como compartilhamos as Informações Pessoais?” estarem em um país diferente.
@@ -78,9 +80,11 @@ Você poderá fazer qualquer consulta, reclamação e/ou solicitação sobre seu
 Você também tem o direito de registrar uma reclamação a uma autoridade de proteção de dados indicada no Anexo II, de acordo com o seu país de residência.
 
 ## Qual é a lei e jurisdição aplicáveis?
+
 No caso de qualquer controvérsia ou divergência relacionada à interpretação, validade, celebração ou conformidade desta Declaração de Privacidade, ela será resolvida pelos foros competentes de cada país incluído no Anexo I.
 
 ## Alterações na Declaração de Privacidade
+
 Caso o Mercado Livre faça alterações nesta Declaração, você será informado através de uma notificação individual através dos nossos canais de comunicação habituais (por exemplo, por e-mail), bem como através das nossas páginas web ou aplicativos (através de banners, pop- ups ou outros mecanismos de notificação). Nos casos em que necessitarmos do seu consentimento, iremos notificá-lo para que possa decidir se concorda.
 
 ## Anexo I
@@ -114,9 +118,10 @@ Caso o Mercado Livre faça alterações nesta Declaração, você será informad
 * MercadoLibre Venezuela S.R.L., com endereço em calle Eugenio Mendoza com Jose Angel Lamas, Edif. Torre la Castellana, Piso 8, Zona Postal 1060, Caracas, Venezuela.
 
 ## Anexo II:
+
 *Autoridades*
 
-* *Argentina*:  Agência de Acesso à Informação Pública.
+* *Argentina*: Agência de Acesso à Informação Pública.
 * *Brasil*: Autoridade Nacional de Proteção de Dados.
 * *Chile*: Serviço Nacional do Consumidor
 * *Colômbia*: Superintendência de Indústria e Comércio.
