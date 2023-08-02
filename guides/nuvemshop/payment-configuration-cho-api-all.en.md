@@ -10,14 +10,14 @@ To integrate the Checkout API, follow the steps below.
 3. Select the payment options you want to offer in your site. These can be Credit Card, Boleto Bancario and Pix.
 4. If you want to offer boleto bancario payments with a discount, enter the discount percentage in the "Discount for boleto barcario" field.
 5. Finally, click on "Save changes". ------------
-----[mla, mlc, mlu, mpe, mco]----
+----[mlc, mlu, mpe, mco]----
 3. Finally, click on "Save changes". ------------
 
 ----[mlb]----
 ![Payments Checkout Transparente - Nuvem Shop](/images/nuvemshop/nuvemshop_checkout_transparente_2.gif)
 
 ------------
-----[mla, mlc, mlu, mpe, mco]----
+----[mlc, mlu, mpe, mco]----
 ![Payments Checkout Transparente - Nuvem Shop](/images/nuvemshop/mx_tiendanube_checkout_transparente.gif)
 
 ------------
