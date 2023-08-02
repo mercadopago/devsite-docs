@@ -1,6 +1,6 @@
 # Traducciones: especificidades de idiomas
 
-Para las traducciones al español, debemos cuidar no utilizar los pronombres “usted” o “vos” para referirnos a la segunda persona del singular, y prestar particular atención a la conjugación de los verbos. Ante la duda, puedes consultar el paradigma de conjugaciones.
+Para las traducciones al español, debemos cuidar no utilizar los pronombres “usted” o “vos” para referirnos a la segunda persona del singular, y prestar particular atención a la conjugación de los verbos. Ante la duda, puedes consultar el [paradigma de conjugaciones](https://www.rae.es/dpd/ayuda/modelos-de-conjugacion-verbal).
 
 En español y protugués, solemos omitir el sujeto en las oraciones cuando este está representado por un pronombre personal
 
