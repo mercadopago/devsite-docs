@@ -1,4 +1,3 @@
-----[mla, mlb, mlm]----
 # Iniciar sesión en un dispositivo Point
 
 > WARNING
@@ -19,5 +18,3 @@ Continúa con el paso a paso indicado en la app de Mercado Pago, y completa la i
 
 Una vez que hayas completado esta información, y dependiendo de si tienes más de una caja creada, el dispositivo te mostrará un selector. Allí, selecciona el local y la caja que creaste en el paso anterior. De esta manera, vincularás tu dispositivo Point a la nueva caja.
 
-
-------------

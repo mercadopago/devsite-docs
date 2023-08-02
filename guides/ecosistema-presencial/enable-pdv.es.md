@@ -1,5 +1,3 @@
-----[mla, mlb, mlm]----
-
 # Activar el modo PDV en el dispositivo Point
 
 > WARNING
@@ -23,4 +21,3 @@ Por último, reinicia el dispositivo Point. Cuando se reactive, verás en la pan
 >
 > Ten en cuenta que sólo se permite un único dispositivo en modo PDV por caja.
 
-------------

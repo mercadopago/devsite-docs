@@ -1,5 +1,7 @@
 # Crear y administrar intents para QR
 
+A continuación, puedes ver cómo crear un intent para QR, cómo consultar su estado, y cómo cancelarlo, así como la vía para configurar sus notificaciones.
+
 ## Crear intent para QR
 
 Para crear un intent utilizando QR, realiza una llamada POST a la API [https://api.mercadopago.com/instore-api/integrations/v1/intents/qr/pos/{external.id}}]() reemplazando `external.id` por el valor obtenido al crear la caja.
@@ -47,7 +49,8 @@ A continuación, te mostramos un ejemplo de payload para crear un intent de las 
 
     Ten en cuenta que si en este tipo de operaciones envías la información necesaria para el campo `item`, no será requerido el campo `amount`. Este se calculará teniendo en cuenta el `total_amount` de cada uno de los ítems.
     De la misma forma, si envías el campo `amount`,  no es necesario que envíes la información correspondiente a los ítems.
-    <br>
+ 
+ <br>
 
  * **Creación de un retiro de dinero en efectivo (`CASH_OUT`)**
     
