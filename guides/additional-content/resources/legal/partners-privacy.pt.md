@@ -1,8 +1,8 @@
-# Declaração de Privacidade para Central de Partners do Mercado Livre 
+# Declaração de Privacidade para Central de Parceiros do Mercado Livre 
 
 _Última atualização em 17/07/2023_
 
-No Mercado Livre consideramos a proteção de dados pessoais uma oportunidade para gerar valor aos nossos parceiros de negócios. Para realizar o Central de Partners e fornecer soluções para o seu negócio, processaremos alguns de seus dados pessoais.
+No Mercado Livre consideramos a proteção de dados pessoais uma oportunidade para gerar valor aos nossos parceiros de negócios. Para realizar o Central de Parceiros e fornecer soluções para o seu negócio, processaremos alguns de seus dados pessoais.
 
 A Central de Parceiros é um espaço onde Mercado Livre, Mercado Shops e Mercado Pago, permitem aos vendedores divulgar os Parceiros com os quais trabalham e de forma que estejam disponíveis para contratação por outros vendedores.
 
@@ -23,7 +23,7 @@ Os dados pessoais que coletamos para os fins explicados nesta Declaração são:
 * ID do Integrador (número que identifica os Desenvolvedores no Programa)
 * País onde tem a sua maior atividade comercial
 * Países onde você opera
-* Descrição com a qual você será exposto na Central de Partners
+* Descrição com a qual você será exposto na Central de Parceiros
 * Site web
 * Plugins que são usados   ou dominados pela Agência/Desenvolvedor
 * Linguagens de programação utilizadas pela Agência/desenvolvedor para implementar
@@ -31,11 +31,11 @@ Os dados pessoais que coletamos para os fins explicados nesta Declaração são:
 * Serviços adicionais oferecidos pela Agência/desenvolvedor
 * Soluções de pagamento que você implementa.
 
-Queremos que saiba que não é obrigado a nos fornecer os dados pessoais detalhados, embora a recusa em fornecê-los ou a sua inexatidão o impedirá de aproveitar os benefícios do Central de Partners.
+Queremos que saiba que não é obrigado a nos fornecer os dados pessoais detalhados, embora a recusa em fornecê-los ou a sua inexatidão o impedirá de aproveitar os benefícios do Central de Parceiros.
 
 ## O que fazemos com os dados pessoais?
 
-Tratamos seus dados pessoais no âmbito do Central de Partners para que os publiquemos nessa plataforma, para que outros vendedores o conheçam e o possam contratar.
+Tratamos seus dados pessoais no âmbito do Central de Parceiros para que os publiquemos nessa plataforma, para que outros vendedores o conheçam e o possam contratar.
 O uso de seus dados para qualquer outra finalidade que não seja compatível com as descritas nesta Declaração será comunicado em tempo hábil.
 
 ## Como compartilhamos os dados pessoais?
