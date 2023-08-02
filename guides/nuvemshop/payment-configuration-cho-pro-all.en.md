@@ -5,11 +5,10 @@ When installing [Checkout Pro](/developers/en/docs/checkout-pro/landing), there 
 To integrate Checkout Pro, follow the steps below.
 
 ----[mlb]---- 
-
 1. Access the payment [methods settings](https://lojavirtualnuvem.com.br/admin/payments/) on your site menu, look for "Mercado Pago" and select "Edit".
 
 ------------
-----[mla, mlm, mlc, mlu, mpe, mco]----
+----[mla, mlc, mlu, mpe, mco]----
 1. Access the payment [methods settings](https://mitiendanube.com/admin/payments/) on your site menu, look for "Mercado Pago" and select "Edit".
 
 ------------
@@ -28,11 +27,7 @@ To integrate Checkout Pro, follow the steps below.
 ![Payments Checkout Pro - Nuvem Shop](/images/nuvemshop/nuvemshop_checkout_redirect_3.gif)
 
 ------------
-----[mla]----
-![Payments Checkout Pro - Nuvem Shop](/images/nuvemshop/ar_tiendanube_checkout_redirect.gif)
-
-------------
-----[mlc, mlu, mpe, mco]----
+----[mla, mlc, mlu, mpe, mco]----
 ![Payments Checkout Pro - Nuvem Shop](/images/nuvemshop/mx_tiendanube_checkout_redirect.gif)
 
 ------------

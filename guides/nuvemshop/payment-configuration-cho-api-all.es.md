@@ -25,19 +25,14 @@ Para integrar Checkout API, siga los pasos a continuación.
 3. Selecciona las opciones de pago que deseas ofrecer en tu tienda. Estas pueden ser Tarjeta de crédito, Boleto Bancario y Pix.
 4. Si deseas que el pago con boleto bancario tenga un descuento, introduce el porcentaje de descuento en el campo "Descuento por pagos con boleto bancario".
 5. Finalmente, haz clic en "Guardar cambios". ------------
-----[mla, mlm, mlc, mlu, mpe, mco]---- 
+----[mlc, mlu, mpe, mco]---- 
 3. Finalmente, haz clic en "Guardar cambios". ------------
-<p>&nbsp;</p>
-----[mlb]----
 
+----[mlb]----
 ![Payments Checkout Transparente - Nuvem Shop](/images/nuvemshop/nuvemshop_checkout_transparente_2.gif) 
 
 ------------
-----[mla]----
-![Payments Checkout Transparente - Nuvem Shop](/images/nuvemshop/ar_tiendanube_checkout_transparente.gif)
-
-------------
-----[mlc, mlu, mpe, mco]----
+----[mla, mlc, mlu, mpe, mco]----
 ![Payments Checkout Transparente - Nuvem Shop](/images/nuvemshop/mx_tiendanube_checkout_transparente.gif)
 
 ------------
