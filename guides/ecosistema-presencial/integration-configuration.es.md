@@ -5,4 +5,4 @@ Para comenzar a integrar el ecosistema presencial, deberás tener configurada tu
 1. [Crear una aplicación en Tus Integraciones](/developers/es/docs/ecosistema-presencial/integration-configuration/create-app)
 2. [Crear el local y la caja](/developers/es/docs/ecosistema-presencial/integration-configuration/create-store-point-of-sale)
 3. Si quieres integrar con Point, deberás [iniciar sesión en un dispositivo Point](/developers/es/docs/ecosistema-presencial/integration-configuration/signin-point)
-4. Si ya iniciaste sesión, deberás [activar el modo PDV en el dispositivo](/developers/es/docs/ecosistema-presencial/integration-configuration/enable-pdv)
+4. Si ya iniciaste sesión, deberás [activar el modo PDV en el dispositivo](/developers/es/docs/ecosistema-presencial/integration-configuration/enable-pdv) para terminar tu integración con Point.

@@ -4,7 +4,7 @@ A continuación, puedes ver cómo crear un intent para QR, cómo consultar su es
 
 ## Crear intent para QR
 
-Para crear un intent utilizando QR, realiza una llamada POST a la API [https://api.mercadopago.com/instore-api/integrations/v1/intents/qr/pos/{external.id}}]() reemplazando `external.id` por el valor obtenido al crear la caja.
+Para crear un intent utilizando QR, realiza una llamada POST al endpoint [Crear intent QR](developers/es/reference/instore-api/integrations/v1/intents/qr/pos) reemplazando `external.id` por el valor obtenido al crear la caja.
 
 A continuación, te mostramos un ejemplo de payload para crear un intent de las tres operaciones disponibles para QR:
 
@@ -217,7 +217,7 @@ A continuación, te mostramos un ejemplo de payload para crear un intent de las 
  |---|---|
  | `description` | Descripción del intent |
  | `external_reference` | Identificador del vendedor para la operación. |
- | `sponsor.id` | user_id del integrador, utilizado para identificar los intents realizados por un punto de venta. No debe confundirse con el user_id del vendedor. |
+ | `sponsor.id` | user_id utilizado para identificar al responsable de la integración. No debe confundirse con el user_id del vendedor. |
  | `operations` | Operación o conjunto de operaciones a ejecutar.  |
  | `operations.type` | Tipo de la operación. Valores posibles: `PURCHASE`, `CASH_OUT`. |
  | `operations.amount` | Monto por el cual se realiza la operación. Este campo es opcional en caso que se envíe un conjunto de ítems. |
@@ -236,7 +236,7 @@ A continuación, te mostramos un ejemplo de payload para crear un intent de las 
 
 ## Consultar el estado de un intent para QR
 
-Para conocer el estado actual de un intent, realiza una llamada GET a la API [https://api.mercadopago.com/instore-api/integrations/v1/intents/{{intent_id}}/qr](), reemplazando `intent_id` por el valor obtenido en ese campo al momento de crearlo. 
+Para conocer el estado actual de un intent, realiza una llamada GET al endpoint [Obtener información de un intent](https://api.mercadopago.com/instore-api/integrations/v1/intents/{{intent_id}}/qr), reemplazando `intent_id` por el valor obtenido en ese campo al momento de crearlo. 
 
 A continuación, te mostramos un ejemplo de respuesta a la consulta de un estado:
 
@@ -292,12 +292,14 @@ Este objeto se compone de la siguiente manera:
 | `id` | Es la identificación del pago. Con ella, puedes dirigirte a [Payments API](/developers/es/reference/payments/_payments_search/get) y consultar el estado final del pago. |
 | `source` | Entidad a la que pertenece el `id`.  Arrojará el valor `PAYMENT` cuando el flujo del pago se haya creado correctamente. Dirígete a [Payments API](/developers/es/reference/payments/_payments_search/get) para verificar el estado final del pago con el `id` recibido. |
 
+Esto ocurre tanto para las operaciones `PURCHASE` como `CASH_OUT`. 
+
 
 ## Cancelar un intent para QR
 
 Si todavía no se ha realizado el pago, puedes cancelar un intent y hacer que ya no esté disponible para su procesamiento. 
 
-Realiza una llamada DELETE a la API [https://api.mercadopago.com/instore-api/integrations/v1/intents/{{intent_id}}/qr/pos/{{external.id}}]() , reemplazando `external.id` e `intent_id` por los valores obtenidos al crear una caja y el intento de pago, respectivamente.
+Realiza una llamada DELETE al endpoint [Obtener información de un intent](https://api.mercadopago.com/instore-api/integrations/v1/intents/{{intent_id}}/qr/pos/{{external.id}}), reemplazando `external.id` e `intent_id` por los valores obtenidos al crear una caja y el intento de pago, respectivamente.
 
 
 ## Configurar notificaciones
@@ -310,7 +312,7 @@ Para configurar tus notificaciones, sigue las instrucciones proporcionadas en la
 >
 > Importante
 >
-> Para configurar las notificaciones de Ecosistema Presencial, deberás utilizar el evento **Integraciones Presenciales**. Por medio de este evento recibirás las notificaciones de estados finales de los intent, ya sean procesados por Point o QR en modo integrado.  
+> Para configurar las notificaciones de Ecosistema Presencial, deberás utilizar el evento **Integraciones Presenciales**, cuyo mensaje contendrá el campo `type` con el valor `topic_instore_integration_wh`.  Por medio de este evento recibirás las notificaciones de estados finales de los intent, ya sean procesados por Point o QR en modo integrado.  
 
 A continuación, te mostramos un ejemplo de notificación que puedes recibir para QR cuando un intent llega a un estado (`status`) final. 
 

@@ -4,7 +4,12 @@ A continuación, puedes ver cómo crear un intent en dispositivos Point, cómo c
 
 ## Crear intent en dispositivos Point
 
-Para crear un intent en tu dispositivo Point, realiza una llamada POST a la API [https://api.mercadopago.com/instore-api/integrations/v1/intents/point/pos/{external.id}}]() reemplazando `external.id` por el valor escogido al crear la caja.
+Para crear un intent en tu dispositivo Point, tienes dos posibilidades:
+ * Puedes realiza una llamada POST al endpoint [Crear intent para un dispositivo asociado a una caja](/developpers/es/reference/instore-api/), reemplazando `external.id` por el valor escogido al crear la caja.
+ * O bien, puedes realizar una llamada POST al endpoint [Crear intent para un diospositivo PDV](/developpers/es/reference/instore-api/), reemplazando `device.id` por el valor obtenido al consultar el listado de dispositivos. 
+
+Puedes elegir la opción que mejor se adapte a tus necesidades. El resultado será el mismo y habrás creado un intent para el dispositivo Point elegido.
+
 
 ----[mlb]----
 > Ten en cuenta que para el campo `amount`, el monto mínimo permitido es 1.00, y el máximo 70000.00. 
@@ -16,7 +21,7 @@ Para crear un intent en tu dispositivo Point, realiza una llamada POST a la API 
 
 ## Consultar el estado de un intent en dispositivos Point
 
-Para conocer el estado actual de un intent, realiza una llamada GET a la API [https://api.mercadopago.com/instore-api/integrations/v1/intents/{{intent_id}}/point](), reemplazando `intent_id` por el valor obtenido en ese campo al momento de crearlo. 
+Para conocer el estado actual de un intent, realiza una llamada GET al endpoint [Obtener información de un intent](/developpers/es/reference/instore-api/), reemplazando `intent_id` por el valor obtenido en ese campo al momento de crearlo. 
 
 A continuación, te mostramos un ejemplo de respuesta a la consulta de un estado:
 
@@ -34,7 +39,7 @@ A continuación, te mostramos un ejemplo de respuesta a la consulta de un estado
                     "id": 123456,
                     "source": "PAYMENT"
                 }
-            ],
+            ]
             ...
         }
     ],
@@ -64,7 +69,7 @@ Este objeto se compone de la siguiente manera:
 ## Cancelar un intent en dispositivos Point
 
 Si todavía no se ha realizado el pago y no has cargado el intent en el dispositivo, puedes cancelar una intención de pago y hacer que ese intento ya no esté disponible para su procesamiento. 
-Realiza una llamada DELETE a la API [https://api.mercadopago.com/instore-api/integrations/v1/intents/{{intent_id}}/point/pos/{{external.id}}]() , reemplazando `external.id` e `intent_id` por los valores obtenidos al crear una caja y el intento de pago, respectivamente.
+Realiza una llamada DELETE al endpoint [Obtener información de un intent](/developpers/es/reference/instore-api/), reemplazando `external.id` e `intent_id` por los valores obtenidos al crear una caja y el intento de pago, respectivamente.
 
 > WARNING
 >
@@ -82,7 +87,7 @@ Para configurar tus notificaciones, sigue las instrucciones proporcionadas en la
 >
 > Importante
 >
-> Para configurar las notificaciones de Ecosistema Presencial, deberás utilizar el evento **Integraciones Presenciales**. Por medio de este evento recibirás las notificaciones de estados finales de los intent, ya sean procesados por Point o QR en modo integrado.  
+> Para configurar las notificaciones de Ecosistema Presencial, deberás utilizar el evento **Integraciones Presenciales**, , cuyo mensaje contendrá el campo `type` con el valor  `topic_instore_integration_wh`. Por medio de este evento recibirás las notificaciones de estados finales de los intent, ya sean procesados por Point o QR en modo integrado.  
 
 
 A continuación, te mostramos un ejemplo de notificación que puedes recibir para un dispositivo Point cuando un intent llega a un estado (`status`) final. Ten en cuenta que la información que se notifica dentro del nodo `data` va a depender de la información con la que se cree el intent.
