@@ -8,7 +8,7 @@ It is possible to consult the available payment methods and obtain a list with t
 
   MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
 
-  $payment_methods = MercadoPago::get("/v1/payment_methods");
+  $payment_methods = MercadoPago\PaymentMethod::all();
 
 ?>
 ```

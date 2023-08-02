@@ -9,10 +9,9 @@ En esta sección encontrarás las principales formas de gestionar los pagos reci
 - [Capturar pago autorizado](/developers/es/docs/checkout-api/payment-management/capture-authorized-payment)
 - [Cancelar reserva](/developers/es/docs/checkout-api/payment-management/cancel-reserve)
 - [Reembolsos y cancelaciones](/developers/es/docs/checkout-api/payment-management/cancellations-and-refunds)
-------------
 
-----[mlu]----
-- [Reservar fondos](/developers/es/docs/checkout-api/payment-management/make-value-reserve)
-- [Cancelar reserva](/developers/es/docs/checkout-api/payment-management/cancel-reserve)
+------------
+----[mlu, mlc, mco]----
 - [Reembolsos y cancelaciones](/developers/es/docs/checkout-api/payment-management/cancellations-and-refunds)
+
 ------------
