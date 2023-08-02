@@ -49,14 +49,14 @@ Para integrar Checkout API, siga los pasos a continuación.
 ------------
 9. Finalmente, haz clic en **Guardar configuraciones**.
 
-----[mla, mlb, mpe, mco, mlu, mlc]----
+----[mlb, mpe, mco, mlu, mlc]----
 </center>
 
 ![Payments Checkout API - Nuvemshop](/images/nuvemshop/cho-api-all-es.gif)
 
 </center>
 ------------
-----[mlm]---- 
+----[mlm, mla]---- 
 </center>
 
 ![Payments Checkout API - Nuvemshop](/images/nuvemshop/cho-api-mlm-es.gif)
