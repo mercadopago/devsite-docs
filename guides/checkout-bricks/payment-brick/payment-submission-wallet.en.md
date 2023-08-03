@@ -43,7 +43,7 @@ const settings = {
 After completing these steps, Checkout Bricks will have been integrated into the marketplace and will be ready to process payments.
 
 > WARNING
-
+>
 > Attention
-
+>
 > In the marketplace flow, it is not possible to enable installment payments without a credit card.
