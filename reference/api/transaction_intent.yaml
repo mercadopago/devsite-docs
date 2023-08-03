@@ -3008,6 +3008,7 @@ paths:
                         por: Configuração do vendedor sobre opções disponíveis na transação
                       properties:
                         payment_methods:
+                          required: true
                           type: object
                           properties:
                             coupons:
