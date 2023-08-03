@@ -9,16 +9,16 @@ paths:
     post:
       tags:
         - $ref: '#/tags/mp-point'
-      summary: Create an intent for a device associated to a POS (Point of sale) in a store.
+      summary: Create an intent for a device associated to a POS (Point of sale) in a store
       x-summary-i18n:
-        eng: Create an intent for a device associated to a POS (Point of sale) in a store.
-        spa: Crear un intent para un dispositivo asociado a una caja (punto de venta) en una tienda.
-        por: Criar um intent para um dispositivo associado a um caixa (ponto de venda) em uma loja.
-      description: Creates an intent associated with a Point device, linked to a specific POS by external_id.
+        eng: Create an intent for a device associated to a POS (Point of sale) in a store
+        spa: Crear un intent para un dispositivo asociado a una caja (punto de venta) en una tienda
+        por: Criar um intent para um dispositivo associado a um caixa (ponto de venda) em uma loja
+      description: Creates an intent associated with a Point device, linked to a specific POS by external_id
       x-description-i18n:
-        eng: Creates an intent associated with a Point device, linked to a specific POS by external_id.
-        spa: Crea un intent asociado al dispositivo Point, vinculado a la caja por el external_id.
-        por: Cria um intent associado ao dispositivo Point, vinculado à caixa pelo external_id.
+        eng: Creates an intent associated with a Point device, linked to a specific POS by external_id
+        spa: Crea un intent asociado al dispositivo Point, vinculado a la caja por el external_id
+        por: Cria um intent associado ao dispositivo Point, vinculado à caixa pelo external_id
       requestBody:
         content:
           application/json:
@@ -58,7 +58,7 @@ paths:
                         type: string
                         example: "PURCHASE"
                         required: true
-                        description: Type of operation
+                        description: Type of operation.
                         x-description-i18n:
                           eng: Type of operation.
                           spa: Tipo de operación.
@@ -67,7 +67,7 @@ paths:
                         type: string
                         example: "12.47"
                         required: true
-                        description: Amount of operation
+                        description: Amount of operation.
                         x-description-i18n:
                           eng: Amount of operation.
                           spa: Monto de la operación.
@@ -298,16 +298,16 @@ paths:
     post:
       tags:
         - $ref: '#/tags/mp-point'
-      summary: Create an intent for a device in POS mode.
+      summary: Create an intent for a device in POS mode
       x-summary-i18n:
-        eng: Create an intent for a device in PDV mode.
-        spa: Crear un intent para un dispositivo en modo PDV.
-        por: Criar um intent para um dispositivo no modo PDV.
-      description: Creates an intent associated with the Point device in mode PDV. This device_id can be obtained using the Get devices request.
+        eng: Create an intent for a device in PDV mode
+        spa: Crear un intent para un dispositivo en modo PDV
+        por: Criar um intent para um dispositivo no modo PDV
+      description: Creates an intent associated with the Point device in mode PDV. This device_id can be obtained using the Get devices request
       x-description-i18n:
-        eng: Creates an intent associated with the Point device in mod PDV. This device_id can be obtained using the Get devices request.
-        spa: Crea un intent asociado a un dispositivo Point en modo PDV. El device_id puede ser obtenido usando la request Get devices.
-        por: Cria um intent associado a um dispositivo Point no modo PDV. O device_id pode ser obtido usando o método Get devices.
+        eng: Creates an intent associated with the Point device in mod PDV. This device_id can be obtained using the Get devices request
+        spa: Crea un intent asociado a un dispositivo Point en modo PDV. El device_id puede ser obtenido usando la request Get devices
+        por: Cria um intent associado a um dispositivo Point no modo PDV. O device_id pode ser obtido usando o método Get devices
       requestBody:
         content:
           application/json:
@@ -587,16 +587,16 @@ paths:
     get:
       tags:
         - $ref: '#/tags/mp-point'
-      summary: Get all information about an intent of a Point device.
+      summary: Get all information about an intent of a Point device
       x-summary-i18n:
-        eng: Get all information about an intent of a Point device.
-        spa: Obtener toda la información de un intent de un dispositivo Point.
-        por: Obter informações sobre o intent de um dispositivo Point.
-      description: Get all the information about an intent of a Point device in the current state.
+        eng: Get all information about an intent of a Point device
+        spa: Obtener toda la información de un intent de un dispositivo Point
+        por: Obter informações sobre o intent de um dispositivo Point
+      description: Get all the information about an intent of a Point device in the current state
       x-description-i18n:
-        eng: Get all the information about an intent of a Point device in the current state.
-        spa: Obtiene toda la información de un intent para un dispositivo point en el estado actual.
-        por: Obtém informações sobre o intent de um dispositivo Point no estado atual.
+        eng: Get all the information about an intent of a Point device in the current state
+        spa: Obtiene toda la información de un intent para un dispositivo point en el estado actual
+        por: Obtém informações sobre o intent de um dispositivo Point no estado atual
       parameters:
         - name: intent_id
           in: path
@@ -608,7 +608,7 @@ paths:
           required: true
           schema:
             type: string
-            example:  ABCD1234
+            example: ABCD1234
       responses:
         '200':
           description: Find
@@ -786,16 +786,16 @@ paths:
     delete:
       tags:
         - $ref: '#/tags/mp-point'
-      summary: Cancel an intent.
+      summary: Cancel an intent
       x-summary-i18n:
-        eng: Cancel an intent.
-        spa: Cancelar un intent.
-        por: Cancelar um intent.
-      description: Cancels an intent that is in the OPENED state and not sent yet to terminal.
+        eng: Cancel an intent
+        spa: Cancelar un intent
+        por: Cancelar um intent
+      description: Cancels an intent that is in the OPENED state and not sent yet to terminal
       x-description-i18n:
-        eng: Cancels an intent that is in OPENED state and not sent yet to terminal.
-        spa: Cancela un intento que está en estado OPENED y que todavía no fue enviado al dispositivo.
-        por: Cancela um intent que está no estado OPENED e ainda não foi enviada ao dispositivo.
+        eng: Cancels an intent that is in OPENED state and not sent yet to terminal
+        spa: Cancela un intento que está en estado OPENED y que todavía no fue enviado al dispositivo
+        por: Cancela um intent que está no estado OPENED e ainda não foi enviada ao dispositivo
       parameters:
         - name: intent_id
           in: path
@@ -850,14 +850,16 @@ paths:
     post:
       tags:
         - $ref: '#/tags/qr-code'
-      summary: Creates an intent qr to POS
+      summary: Create an intent qr for a point of sale
       x-summary-i18n:
-        eng: Creates an intent qr to POS
-        spa: Crea un intent qr al POS
-      description: Create an intent qr to the POS by external_id
+        eng: Creates an intent qr for a point of sale
+        spa: Crea un intent qr para un punto de venta
+        por: Cria um intent qr para um ponto de venda
+      description: Create an intent qr to the point of sale by external_id, its identification
       x-description-i18n:
-        eng: Create an intent qr to the POS by external_id
-        spa: Crear un intento qr a la caja por el external_id
+        eng: Creates an intent qr to the point of sale by external_id, its identification
+        spa: Crea un intent qr para la caja identificada con el external_id
+        por: Cria um intent qr para a caixa identificada com o external_id
       requestBody:
         content:
           application/json:
@@ -868,10 +870,11 @@ paths:
                   type: string
                   example: "description"
                   required: true
-                  description: Description of the intent given by the user. Length Max:255 Min:1
+                  description: Description of the intent given by the user. Length Max:255 - Min:1
                   x-description-i18n:
-                    eng: Description of the intent given by the user. Length Max:255 Min:1
-                    spa: Descripción del intento enviada por el usuario. Longitud Max:255 Min:1
+                    eng: Description of the intent given by the user. Length Max:255 - Min:1
+                    spa: Descripción del intento enviada por el usuario. Longitud Max:255 - Min:1
+                    por: Descrição do intent enviada pelo usuário. Comprimento máx:255 - mín:1
                 external_reference:
                   type: string
                   example: "abc-123-234"
@@ -880,6 +883,7 @@ paths:
                   x-description-i18n:
                     eng: Custom ID that you can sync with your sales system. Length Max:100 Min:1
                     spa: ID personalizado que puedes sincronizar con tu sistema de venta. Longitud Max:100 Min:1
+                    por: ID personalizado que pode sincronizar com seu sistema de vendas. Comprimento máx:100 min:1
                 sponsor: 
                   type: object
                   properties:
@@ -890,6 +894,7 @@ paths:
                       x-description-i18n:
                         eng: Integrator Identifier.
                         spa: Identificador del integrador.
+                        por: Identificador do desenvolvedor.
                 operations:
                   type: array
                   required: true
@@ -897,6 +902,7 @@ paths:
                   x-description-i18n:
                     eng: Set of operations to process. Size Max:2 Min:1
                     spa: Conjunto de operaciones a procesar. Tamaño Max:2 Min:1
+                    por: Conjunto de operações a processar. Max:2 Min:1
                   items:
                     type: object
                     properties:
@@ -906,17 +912,20 @@ paths:
                         required: true
                         description: Type of operation
                         x-description-i18n:
-                          eng: Type of operation
-                          spa: Tipo de la operación
+                          eng: Type of operation.
+                          spa: Tipo de operación.
+                          por: Tipo de operação.
                         enum:
                           - PURCHASE -- Type used to make purchases.
+                          - CASH_OUT -- Type used to make cash out.
                       amount:
                         type: string
                         example: 12.47
-                        description: Amount of operation. Value Min:"0.01"
+                       description: Amount of operation. This field is optional if you choose to send the items intead. Value Min:"0.01"
                         x-description-i18n:
-                          eng: Amount of operation. Value Min:"0.01"
-                          spa: Monto de la operación. Value Min:"0.01"
+                          eng: Amount of operation. This field is optional if you choose to send the items intead. Value Min:"0.01"
+                          spa: Monto de la operación. Este campo es opcional si eliges enviar un conjunto de ítems. Value Min:"0.01"
+                          por: Valor da operação. Este campo é opcional se você optar por enviar um conjunto de itens. Value Min:"0.01"
                       additional_configuration:
                         type: object 
                         properties:
@@ -926,13 +935,15 @@ paths:
                             x-description-i18n:
                               eng: This field allows the seller to choose whether or not the payer can change the amount he wishes to withdraw. This field is only used in the CASH_OUT operation.
                               spa: Este campo permite al vendedor elegir si el payer puede o no cambiar el monto que desea retirar. Este campo solo se utiliza en operaciones de tipo CASH_OUT.
+                              por: Este campo permite que o vendedor escolha se o pagador pode ou não alterar o valor que deseja sacar. Este campo é utilizado somente em operações do tipo CASH_OUT.
                           agency_type:
                             type: string
                             required: true
                             description: Withdrawal agent modality. This field is only used in the CASH_OUT operation.
                             x-description-i18n:
                               eng: Withdrawal agent modality. This field is only used in the CASH_OUT operation.
-                              spa: Modalidad del agente de retiro. Este campo solo se utiliza en operaciones de tipo CASH_OUT.                            
+                              spa: Modalidad del agente de retiro. Este campo solo se utiliza en operaciones de tipo CASH_OUT.
+                              por: Modalidad del agente de retiro. Este campo é utilizado somente em operações do tipo CASH_OUT.                           
                             enum:
                               - AGTEC
                               - AGTOT
@@ -943,6 +954,7 @@ paths:
                             x-description-i18n:
                               eng: BankID of the withdrawal service provider. This field is only used in the CASH_OUT operation.
                               spa: BankID del proveedor de servicio de retiro . Este campo solo se utiliza en operaciones de tipo CASH_OUT.
+                              por: BankID do provedor de serviços de retirada. Este campo é utilizado somente em operações do tipo CASH_OUT.
                             required: true
                       items:
                         type: array
@@ -956,6 +968,7 @@ paths:
                               x-description-i18n:
                                 eng: Item code. Length Max:100 Min:1
                                 spa: Código de artículo. Longitud Max:100 Min:1
+                                por: Código do artigo. Max:100 Min:1
                             title:
                               type: string
                               example: Name
@@ -964,6 +977,7 @@ paths:
                               x-description-i18n:
                                 eng: Item name. Length Max:100 Min:1
                                 spa: Nombre de artículo. Longitud Max:100 Min:1
+                                por: Nome do artigo. Max:100 Min:1
                             quantity:
                               type: number
                               example: 6
@@ -972,6 +986,7 @@ paths:
                               x-description-i18n:
                                 eng: Number of units of the item. Value Max:1000000 Min:1
                                 spa: Cantidad de unidades del ítem. Valor Max:1000000 Min:1
+                                por: Número de unidades do item. Valor máx:1000000 Mín:1
                             unit_measure:
                               type: string
                               example: UNIT
@@ -980,6 +995,7 @@ paths:
                               x-description-i18n:
                                 eng: Unit of measurement of the item.
                                 spa: Unidad de medida del ítem.
+                                por: Unidade de medida do item.
                               enum:
                                 - PACK --
                                 - UNIT --
@@ -988,9 +1004,10 @@ paths:
                               example: 12.45
                               required: true
                               description: Unit price of the item. Value Min:"0.01"
-                              x-description-i18n:
+                              xx-description-i18n:
                                 eng: Unit price of the item. Value Min:"0.01"
                                 spa: Precio unitario del ítem.  Valor Min:"0.01"
+                                por: Preço unitário do item. Valor Min:"0.01"
                             external_categories:
                               type: array
                               items:
@@ -1002,7 +1019,8 @@ paths:
                                     description: External item categories.
                                     x-description-i18n:
                                       eng: External item categories.
-                                      spa: Categorías externas del ítem.      
+                                      spa: Categorías externas del ítem.
+                                      por: Categorias externas do item.      
                             total_amount:
                               type: string
                               example: 12.45
@@ -1011,19 +1029,22 @@ paths:
                               x-description-i18n:
                                 eng: Total amount of the item. Value Min:"0.01"
                                 spa: Monto total del ítem. Valor Min:"0.01"
+                                por: Valor total do item. Valor Min:"0.01"
                 enabler_configuration:
                   type: object
                   description: Configurations for the enabler that processes the intent.
                   x-description-i18n:
                     eng: Configurations for the enabler that processes the intent.
-                    spa: Configuraciones para el habilitador que procesa el intento.
+                    spa: Configuraciones para el enabler que procesa el intento.
+                    por: Configurações para o enabler que processa o intent.
                   properties:
                     qr_payment_mode:
                       type: array
                       description: QR mode to use in the operation. It can be used individually or both at the same time.
                       x-description-i18n:
                         eng: QR mode to use in the operation. It can be used individually or both at the same time.
-                        spa: Modo de QR a utilizar en la operación. Se puede utilizar individual o ambos al mismo tiempo.
+                        spa: Modo de QR a utilizar en la operación. Se pueden utilizar individualmente o ambos al mismo tiempo.
+                        por: Modo QR para usar na operação. Eles podem ser usados individualmente ou ambos ao mesmo tempo.
                       items:
                         type: string
                         example: "STATIC"
@@ -1033,20 +1054,22 @@ paths:
       parameters:
         - name: external_id
           in: path
-          description: External POS ID of the POS(Point of sale).
+          description: External POS ID of the point of sale.
           x-description-i18n:
-            eng: External POS ID of the POS(Point of sale).
-            spa: External POS ID de la Caja.
+            eng: External POS ID of the point of sale.
+            spa: External POS ID de la caja.
+            por: External POS ID da caixa.
           required: true
           schema:
             type: string
             example:  ABCD1234
         - name: x-integrator-id
           in: header
-          description: "X-Integrator-ID is a unique identification code of our certified developers"
+          description: Unique identification code of our certified developers.
           x-description-i18n:
-            eng: "X-Integrator-ID is a unique identification code of our certified developers"
-            spa: "X-Integrator-ID es un código único de identificación de nuestros developers certificados"
+            eng: Unique identification code of our certified developers.
+            spa: Código único de identificación de nuestros developers certificados.
+            por: Código de identificação exclusivo de nossos desenvolvedores certificados.
           required: false
           schema:
             type: string
@@ -1065,26 +1088,24 @@ paths:
                     description: ID of the intent.
                     x-description-i18n:
                       eng: ID of the intent.
-                      spa: ID del intento.
+                      spa: ID del intent.
+                      por: ID do intent.
                   status:
                     type: string
                     example: "OPENED"
-                    description: This field refers to the way in which the order will be delivered.
+                    description: This field describes the current status of the intent.
                     x-description-i18n:
                       eng: This field describes the current status of the intent.
-                      spa: Este campo describe el estado actual de intento.
-                    enum:
-                      - OPENED -- the intent is created and ready to be fetched on the device.
-                      - CLOSED -- the intent ended and there is already a result.
-                      - CANCELED -- the intent is canceled by user request.
-                      - EXPIRED -- the intent takes more than an hour without being processed.
+                      spa: Este campo describe el estado actual del intent.
+                      por: Este campo descreve o estado atual do intent.
                   description:
                     type: string
                     example: "description"
                     description: Description of the intent given by the user.
                     x-description-i18n:
                       eng: Description of the intent given by the user.
-                      spa: Descripción del intento enviada por el usuario.
+                      spa: Descripción del intent enviada por el usuario.
+                      por: Descrição do intent enviada pelo usuário.
                   external_reference:
                     type: string
                     example: "abc-123-234"
@@ -1092,6 +1113,7 @@ paths:
                     x-description-i18n:
                       eng: Custom ID that you can sync with your sales system.
                       spa: ID personalizado que puedes sincronizar con tu sistema de venta.
+                      por: ID personalizado que pode sincronizar com seu sistema de vendas.
                   sponsor: 
                     type: object
                     properties:
@@ -1102,12 +1124,14 @@ paths:
                         x-description-i18n:
                           eng: Integrator Identifier.
                           spa: Identificador del integrador.
+                          por: Identificador do desenvolvedor.
                   operations:
                     type: array
                     description: Set of operations to process.
                     x-description-i18n:
                       eng: Set of operations to process.
                       spa: Conjunto de operaciones a procesar.
+                      por: Conjunto de operações a processar.
                     items:
                       type: object
                       properties:
@@ -1116,8 +1140,9 @@ paths:
                           example: "PURCHASE"
                           description: Type of operation
                           x-description-i18n:
-                            eng: Type of operation
-                            spa: Tipo de la operación
+                            eng: Type of operation.
+                            spa: Tipo de operación.
+                            por: Tipo de operação.
                           enum:
                             - PURCHASE -- Type used to make purchases.
                             - CASH_OUT -- Type used to make cash out. 
@@ -1126,8 +1151,9 @@ paths:
                           example: 12.47
                           description: Amount of operation
                           x-description-i18n:
-                            eng: Amount of operation
-                            spa: Monto de la operación
+                            eng: Amount of the operation.
+                            spa: Monto de la operación.
+                            por: Valor da operação.
                         additional_configuration:
                           type: object 
                           properties:
@@ -1135,15 +1161,17 @@ paths:
                               type: boolean
                               description: This field allows the seller to choose whether or not the payer can change the amount he wishes to withdraw. This field is only used in the CASH_OUT operation.
                               x-description-i18n:
-                                eng: This field allows the seller to choose whether or not the payer can change the amount he wishes to withdraw. This field is only used in the CASH_OUT operation.
-                                spa: Este campo permite al vendedor elegir si el payer puede o no cambiar el monto que desea retirar. Este campo solo se utiliza en operaciones de tipo CASH_OUT.
+                              eng: This field allows the seller to choose whether or not the payer can change the amount he wishes to withdraw. This field is only used in the CASH_OUT operation.
+                              spa: Este campo permite al vendedor elegir si el payer puede o no cambiar el monto que desea retirar. Este campo solo se utiliza en operaciones de tipo CASH_OUT.
+                              por: Este campo permite que o vendedor escolha se o pagador pode ou não alterar o valor que deseja sacar. Este campo é utilizado somente em operações do tipo CASH_OUT.
                             agency_type:
                               type: string
                               required: true
                               description: Withdrawal agent modality. This field is only used in the CASH_OUT operation.
                               x-description-i18n:
-                                eng: Withdrawal agent modality. This field is only used in the CASH_OUT operation.
-                                spa: Modalidad del agente de retiro. Este campo solo se utiliza en operaciones de tipo CASH_OUT.                            
+                              eng: Withdrawal agent modality. This field is only used in the CASH_OUT operation.
+                              spa: Modalidad del agente de retiro. Este campo solo se utiliza en operaciones de tipo CASH_OUT.
+                              por: Modalidad del agente de retiro. Este campo é utilizado somente em operações do tipo CASH_OUT.                            
                               enum:
                                 - AGTEC
                                 - AGTOT
@@ -1152,8 +1180,9 @@ paths:
                               type: string
                               description: BankID of the withdrawal service provider. This field is only used in the CASH_OUT operation.
                               x-description-i18n:
-                                eng: BankID of the withdrawal service provider. This field is only used in the CASH_OUT operation.
-                                spa: BankID del proveedor de servicio de retiro . Este campo solo se utiliza en operaciones de tipo CASH_OUT.
+                              eng: BankID of the withdrawal service provider. This field is only used in the CASH_OUT operation.
+                              spa: BankID del proveedor de servicio de retiro . Este campo solo se utiliza en operaciones de tipo CASH_OUT.
+                              por: BankID do provedor de serviços de retirada. Este campo é utilizado somente em operações do tipo CASH_OUT.
                               required: true             
                         items:
                           type: array
@@ -1167,6 +1196,7 @@ paths:
                                 x-description-i18n:
                                   eng: Item code.
                                   spa: Código de artículo.
+                                  por: Código do artigo.
                               title:
                                 type: string
                                 example: Name
@@ -1174,27 +1204,31 @@ paths:
                                 x-description-i18n:
                                   eng: Item name.
                                   spa: Nombre de artículo.
+                                  por: Nome do artigo.
                               quantity:
                                 type: number
                                 example: 6
                                 description: Number of units of the item.
                                 x-description-i18n:
                                   eng: Number of units of the item.
-                                  spa: Cantidad de unidades del ítem.                
+                                  spa: Cantidad de unidades del ítem.
+                                  por: Número de unidades do item.                
                               unit_measure:
                                 type: string
                                 example: UNIT
                                 description: Unit of measurement of the item.
                                 x-description-i18n:
                                   eng: Unit of measurement of the item.
-                                  spa: Unidad de medida del ítem.                
+                                  spa: Unidad de medida del ítem.
+                                  por: Unidade de medida do item.                 
                               unit_price:
                                 type: string
                                 example: 12.45
-                                description: Unit price of the item..
+                                description: Unit price of the item.
                                 x-description-i18n:
-                                  eng: Unit price of the item..
-                                  spa: Precio unitario del ítem..
+                                  eng: Unit price of the item.
+                                  spa: Precio unitario del ítem.
+                                  por: preço unitário do item.
                               external_categories:
                                 type: array
                                 items:
@@ -1206,7 +1240,8 @@ paths:
                                       description: External item categories.
                                       x-description-i18n:
                                         eng: External item categories.
-                                        spa: Categorías externas del ítem.      
+                                        spa: Categorías externas del ítem.
+                                        por: Categorias externas do item.      
                               total_amount:
                                 type: string
                                 example: 12.45
@@ -1214,19 +1249,22 @@ paths:
                                 x-description-i18n:
                                   eng: Total amount of the item.
                                   spa: Monto total del ítem.
+                                  por: Valor total do item.
                   enabler_configuration:
                     type: object
                     description: Configurations for the enabler that processes the intent.
                     x-description-i18n:
                       eng: Configurations for the enabler that processes the intent.
-                      spa: Configuraciones para el habilitador que procesa el intento.
+                      spa: Configuraciones para el enabler que procesa el intent.
+                      por: Configurações para o enabler que processa o intent.
                     properties:
                       qr_payment_mode:
                         type: array
                         description: QR mode to use in the operation. It can be used individually or both at the same time.
                         x-description-i18n:
-                          eng: QR mode to use in the operation. It can be used individually or both at the same time.
-                          spa: Modo de QR a utilizar en la operación. Se puede utilizar individual o ambos al mismo tiempo.
+                        eng: QR mode to use in the operation. It can be used individually or both at the same time.
+                        spa: Modo de QR a utilizar en la operación. Se pueden utilizar individualmente o ambos al mismo tiempo.
+                        por: Modo QR para usar na operação. Eles podem ser usados individualmente ou ambos ao mesmo tempo.
                         items:
                           type: string
                           example: "STATIC"
@@ -1312,21 +1350,24 @@ paths:
     get:
       tags:
         - $ref: '#/tags/qr-code'
-      summary: Get all information about an intent qr.
+      summary: Get all information about a qr intent
       x-summary-i18n:
-        eng: Get all information about an intent qr.
-        spa: Obtiene toda la información de un intento qr.
-      description: Get all the information about an intent qr in the current state.
+        eng: Get all information about a qr intent
+        spa: Obtener toda la información de un intent qr
+        por: Obter todas as informações de um intent qr
+      description: Gets all the information about a qr intent in the current state
       x-description-i18n:
-        eng: Get all the information about an intent qr in the current state.
-        spa: Obtiene toda la información de un intento qr en el estado actual.
+        eng: Gets all the information about a qr intent in the current state
+        spa: Obtiene toda la información de un intent qr en el estado actual
+        por: Obtém todas as informações de um intent qr no estado atual
       parameters:
         - name: intent_id
           in: path
-          description: Identifier of the intent generated in the creation.
+          description: Identifier of the intent, which is generated in its creation.
           x-description-i18n:
-            eng: Identifier of the intent generated in the creation.
-            spa: Identificador del intento generado en la creación.
+            eng: Identifier of the intent, which is generated in its creation.
+            spa: Identificador del intent, que es generado en su creación.
+            por: Identificador do intent, que é gerado na sua criação.
           required: true
           schema:
             type: string
@@ -1345,19 +1386,21 @@ paths:
                     description: ID of the intent.
                     x-description-i18n:
                       eng: ID of the intent.
-                      spa: ID del intento.
+                      spa: ID del intent.
+                      por: ID do intent.
                   status:
                     type: string
                     example: "OPENED"
-                    description: This field refers to the way in which the order will be delivered.
+                    description: This field describes the current status of the intent.
                     x-description-i18n:
                       eng: This field describes the current status of the intent.
-                      spa: Este campo describe el estado actual de intento.
+                      spa: Este campo describe el estado actual del intent.
+                      por: Este campo descreve o estado atual do intent.
                     enum:
                       - OPENED -- the intent is created and ready to be fetched on the device.
                       - CLOSED -- the intent ended and there is already a result.
                       - CANCELED -- the intent is canceled by user request.
-                      - EXPIRED -- the intent takes more than an hour without being processed.
+                      - EXPIRED -- the intent took more than an hour without being processed.
                   description:
                     type: string
                     example: "description"
@@ -1365,6 +1408,7 @@ paths:
                     x-description-i18n:
                       eng: Description of the intent given by the user.
                       spa: Descripción del intento enviada por el usuario.
+                      por: Descrição do intent enviada pelo usuário.
                   external_reference:
                     type: string
                     example: "abc-123-234"
@@ -1372,6 +1416,7 @@ paths:
                     x-description-i18n:
                       eng: Custom ID that you can sync with your sales system.
                       spa: ID personalizado que puedes sincronizar con tu sistema de venta.
+                      por: ID personalizado que pode sincronizar com seu sistema de vendas.
                   sponsor: 
                     type: object
                     properties:
@@ -1382,12 +1427,14 @@ paths:
                         x-description-i18n:
                           eng: Integrator Identifier.
                           spa: Identificador del integrador.
+                          por: Identificador do desenvolvedor.
                   operations:
                     type: array
                     description: Set of operations to process.
                     x-description-i18n:
                       eng: Set of operations to process.
                       spa: Conjunto de operaciones a procesar.
+                      por: Conjunto de operações a processar.
                     items:
                       type: object
                       properties:
@@ -1396,8 +1443,9 @@ paths:
                           example: "PURCHASE"
                           description: Type of operation
                           x-description-i18n:
-                            eng: Type of operation
-                            spa: Tipo de la operación
+                            eng: Type of operation.
+                            spa: Tipo de operación.
+                            por: Tipo de operação.
                           enum:
                             - PURCHASE -- Type used to make purchases.
                             - CASH_OUT -- Type used to make cash out. 
@@ -1406,8 +1454,9 @@ paths:
                           example: 12.47
                           description: Amount of operation
                           x-description-i18n:
-                            eng: Amount of operation
-                            spa: Monto de la operación
+                            eng: Amount of the operation.
+                            spa: Monto de la operación.
+                            por: Valor da operação.
                         additional_configuration:
                           type: object 
                           properties:
@@ -1415,15 +1464,17 @@ paths:
                               type: boolean
                               description: This field allows the seller to choose whether or not the payer can change the amount he wishes to withdraw. This field is only used in the CASH_OUT operation.
                               x-description-i18n:
-                                eng: This field allows the seller to choose whether or not the payer can change the amount he wishes to withdraw. This field is only used in the CASH_OUT operation.
-                                spa: Este campo permite al vendedor elegir si el payer puede o no cambiar el monto que desea retirar. Este campo solo se utiliza en operaciones de tipo CASH_OUT.
+                              eng: This field allows the seller to choose whether or not the payer can change the amount he wishes to withdraw. This field is only used in the CASH_OUT operation.
+                              spa: Este campo permite al vendedor elegir si el payer puede o no cambiar el monto que desea retirar. Este campo solo se utiliza en operaciones de tipo CASH_OUT.
+                              por: Este campo permite que o vendedor escolha se o pagador pode ou não alterar o valor que deseja sacar. Este campo é utilizado somente em operações do tipo CASH_OUT.
                             agency_type:
                               type: string
                               required: true
                               description: Withdrawal agent modality. This field is only used in the CASH_OUT operation.
                               x-description-i18n:
-                                eng: Withdrawal agent modality. This field is only used in the CASH_OUT operation.
-                                spa: Modalidad del agente de retiro. Este campo solo se utiliza en operaciones de tipo CASH_OUT.                            
+                              eng: Withdrawal agent modality. This field is only used in the CASH_OUT operation.
+                              spa: Modalidad del agente de retiro. Este campo solo se utiliza en operaciones de tipo CASH_OUT.
+                              por: Modalidad del agente de retiro. Este campo é utilizado somente em operações do tipo CASH_OUT.                            
                               enum:
                                 - AGTEC
                                 - AGTOT
@@ -1432,32 +1483,36 @@ paths:
                               type: string
                               description: BankID of the withdrawal service provider. This field is only used in the CASH_OUT operation.
                               x-description-i18n:
-                                eng: BankID of the withdrawal service provider. This field is only used in the CASH_OUT operation.
-                                spa: BankID del proveedor de servicio de retiro . Este campo solo se utiliza en operaciones de tipo CASH_OUT.
+                              eng: BankID of the withdrawal service provider. This field is only used in the CASH_OUT operation.
+                              spa: BankID del proveedor de servicio de retiro . Este campo solo se utiliza en operaciones de tipo CASH_OUT.
+                              por: BankID do provedor de serviços de retirada. Este campo é utilizado somente em operações do tipo CASH_OUT.
                               required: true                
                         results:
                           type: array
-                          description: Results of the execution of the operation, these arrays are only obtained when an intent reaches the CLOSED state.
+                          description: Results of the execution of the operation. These arrays are only obtained when an intent reaches the CLOSED state.
                           x-description-i18n:
-                            eng: Results of the execution of the operation, these arrays are only obtained when an intent reaches the CLOSED state.
-                            spa: Resultados de la ejecución de la operación, estos arreglo solo se obtiene cuando un intento llega al estado de CLOSED
+                            eng: Results of the execution of the operation. These arrays are only obtained when an intent reaches the CLOSED state.
+                            spa: Resultados de la ejecución de la operación. Estos arrays solo se obtienen cuando un intent llega al estado CLOSED.
+                            por: Resultados da execução da operação. Essos arrays são retornadas apenas quando um intent atinge o estado CLOSED.
                           items:
                             type: object
                             properties:
                               id:
                                 type: number
                                 example: 123456
-                                description: ID linked to the source with the transaction information. 
+                                description: Payment ID linked to the source with the transaction information. 
                                 x-description-i18n:
-                                  eng: ID linked to the source with the transaction information.
-                                  spa: ID vinculado a la fuente con la información de la transacción.
+                                  eng: Payment ID linked to the source with the transaction information.
+                                  spa: ID del pago vinculado a la fuente con la información de la transacción.
+                                  por: ID do pagamento vinculado à fonte com as informações da transação.
                               source:
                                 type: string
                                 example: PAYMENT
-                                description: ID linked to the source with the transaction information. 
+                                description: Source with the transaction information. 
                                 x-description-i18n:
-                                  eng: ID linked to the source with the transaction information.
-                                  spa: ID vinculado a la fuente con la información de la transacción.
+                                  eng: Source with the transaction information.
+                                  spa: Fuente con la información de la transacción.
+                                  por: Fonte com as informações da transação.
                                 enum:
                                   - PAYMENT -- ID field is related to a payment.
                                   - PAYOUT --  ID field is related to a payout.
@@ -1473,6 +1528,7 @@ paths:
                                 x-description-i18n:
                                   eng: Item code.
                                   spa: Código de artículo.
+                                  por: Código do artigo.
                               title:
                                 type: string
                                 example: Name
@@ -1480,27 +1536,31 @@ paths:
                                 x-description-i18n:
                                   eng: Item name.
                                   spa: Nombre de artículo.
+                                  por: Nome do artigo.
                               quantity:
                                 type: number
                                 example: 6
                                 description: Number of units of the item.
                                 x-description-i18n:
                                   eng: Number of units of the item.
-                                  spa: Cantidad de unidades del ítem.                
+                                  spa: Cantidad de unidades del ítem.
+                                  por: Número de unidades do item.                
                               unit_measure:
                                 type: string
                                 example: UNIT
                                 description: Unit of measurement of the item.
                                 x-description-i18n:
                                   eng: Unit of measurement of the item.
-                                  spa: Unidad de medida del ítem.                
+                                  spa: Unidad de medida del ítem.
+                                  por: Unidade de medida do item.                
                               unit_price:
                                 type: string
                                 example: 12.45
-                                description: Unit price of the item..
+                                description: Unit price of the item.
                                 x-description-i18n:
-                                  eng: Unit price of the item..
-                                  spa: Precio unitario del ítem..
+                                  eng: Unit price of the item.
+                                  spa: Precio unitario del ítem.
+                                  por: Preço unitário do item.
                               external_categories:
                                 type: array
                                 items:
@@ -1512,7 +1572,8 @@ paths:
                                       description: External item categories.
                                       x-description-i18n:
                                         eng: External item categories.
-                                        spa: Categorías externas del ítem.      
+                                        spa: Categorías externas del ítem.
+                                        por: Categorias externas do item.      
                               total_amount:
                                 type: string
                                 example: 12.45
@@ -1520,19 +1581,22 @@ paths:
                                 x-description-i18n:
                                   eng: Total amount of the item.
                                   spa: Monto total del ítem.
+                                  por: Valor total do item.
                   enabler_configuration:
                     type: object
                     description: Configurations for the enabler that processes the intent.
                     x-description-i18n:
                       eng: Configurations for the enabler that processes the intent.
-                      spa: Configuraciones para el habilitador que procesa el intento.
+                      spa: Configuraciones para el enabler que procesa el intent.
+                      por: Configurações para o enabler que processa o intent.
                     properties:
                       qr_payment_mode:
                         type: array
                         description: QR mode to use in the operation. It can be used individually or both at the same time.
                         x-description-i18n:
-                          eng: QR mode to use in the operation. It can be used individually or both at the same time.
-                          spa: Modo de QR a utilizar en la operación. Se puede utilizar individual o ambos al mismo tiempo.
+                        eng: QR mode to use in the operation. It can be used individually or both at the same time.
+                        spa: Modo de QR a utilizar en la operación. Se pueden utilizar individualmente o ambos al mismo tiempo.
+                        por: Modo QR para usar na operação. Eles podem ser usados individualmente ou ambos ao mesmo tempo.
                         items:
                           type: string
                           example: "STATIC"
@@ -1587,21 +1651,24 @@ paths:
     delete:
       tags:
         - $ref: '#/tags/qr-code'
-      summary: Cancel an intent
+      ssummary: Cancel an intent
       x-summary-i18n:
         eng: Cancel an intent
-        spa: Cancela un intento
+        spa: Cancelar un intent
+        por: Cancelar im intent
       description: Cancels an intent that is in the OPENED state
       x-description-i18n:
-        eng: Cancels an intent that is in the OPENED state.
-        spa: Cancela un intento que está en estado de OPENED.
+        eng: Cancels an intent that is in the OPENED state
+        spa: Cancela un intent que está en estado OPENED
+        por: Cancela um intent no estado OPENED
       parameters:
         - name: intent_id
           in: path
-          description: id of the intent generated in the creation.
+          description: id of the intent, which is generated in its creation.
           x-description-i18n:
-            eng: id of the intent generated in the creation.
-            spa: id del intento generado en la creación.
+            eng: id of the intent, which is generated in its creation.
+            spa: id del intent, que es generado en su creación.
+            por: id do intent, que é gerado na sua criação.
           required: true
           schema:
             type: string
@@ -1649,29 +1716,29 @@ paths:
         eng: Get devices
         spa: Obtener dispositivos
         por: Obter dispositivos
-      description: This endpoint allows you to get the devices. Devices can be filtered by pos and/or store
+      description: This endpoint allows you to get the devices. Devices can be filtered by POS and/or store
       x-description-i18n:
-        eng: This endpoint allows you to get the devices. Devices can be filtered by pos and/or store
+        eng: This endpoint allows you to get the devices. Devices can be filtered by POS and/or store
         spa: Este endpoint te permite obtener los dispositivos. Los dispositivos se pueden filtrar por punto de venta y/o tienda
         por: Este endpoint permite que você obtenha os dispositivos. Os dispositivos podem ser filtrados por ponto de venda e/ou loja
       parameters:
         - name: store_id
           in: query
-          description: Devices Store Id filter (Optional)
+          description: Optional field to filter by store's ID.
           x-description-i18n:
-            eng: Devices Store Id filter (Optional)
-            spa: Filtro de Id de tienda de dispositivos (opcional)
-            por: Filtro de ID de loja de dispositivos (opcional)
+            eng: Optional field to filter by store's ID.
+            spa: Campo opcional para filtrar por ID del local.
+            por: Campo opcional para filtrar por ID do local.
           schema:
             type: string
             example: "1235456678"
         - name: pos_id
           in: query
-          description: Devices Pos Id filter (Optional)
+          description: Optional field to filter by Device ID.
           x-description-i18n:
-            eng: Devices Pos Id filter (Optional)
-            spa: Filtro de Id de PDV de dispositivos (opcional)
-            por: Filtro de ID de PDV de dispositivos (opcional)
+            eng: Optional field to filter by Device ID.
+            spa: Campo opcional para filtrar por ID de dispositivo.
+            por: Campo opcional para filtrar por ID do dispositivo.
           schema:
             type: integer
             example: 1235456678
@@ -1701,7 +1768,7 @@ paths:
           description: Success - Paged devices list
           x-description-i18n:
             eng: Success - Paged devices list
-            spa: Exito - lista de dispositivos paginados
+            spa: Éxito - lista de dispositivos paginados
             por: Sucesso - lista de dispositivos paginados
           content:
             application/json:
@@ -1734,9 +1801,9 @@ paths:
                           example: 12345678
                         external_id: 
                           type: string
-                          description: External_id of the store to which the pos belongs
+                          description: External_id of the store to which the POS belongs
                           x-description-i18n:
-                            eng: External_id of the store to which the pos belongs
+                            eng: External_id of the store to which the POS belongs
                             spa: External_id de la tienda a la que pertenece el POS
                             por: External_id da loja a qual pertence o POS
                           example: SUC0101POS
@@ -1823,16 +1890,20 @@ paths:
       x-summary-i18n:
         eng: Change operating mode
         spa: Cambiar el modo de operación
-        por: Alterar modo de operação
-      description: This endpoint allows you to change the device operating mode, the options for operating mode are PDV and STANDALONE. PDV is used when you want to use device in mode integration with our API and STANDALONE is used when you want to process payments without our API
+        por: Alterar o modo de operação
+      description: This endpoint allows you to change the device operating mode. The options for operating mode are PDV and STANDALONE. PDV is used when you want to use device in mode integration with our API and STANDALONE is used when you want to process payments without our API
       x-description-i18n:
-        eng: This endpoint allows you to change the device operating mode, the options for operating mode are PDV and STANDALONE. PDV is used when you want to use device in mode integration with our API and STANDALONE is used when you want to process payments without our API
-        spa: Este endpoint te permite cambiar el modo de operación del dispositivo, las opciones para el modo de operación son PDV y STANDALONE. PDV se usa cuando deseas usar el dispositivo en modo de integración con nuestra API y STANDALONE se usa cuando deseas procesar pagos sin nuestra API
-        por: Este endpoint permite alterar o modo de operação do dispositivo, as opções para o modo de operação são PDV e STANDALONE. PDV é usado quando você deseja usar o dispositivo em modo de integração com nossa API e STANDALONE é usado quando você deseja processar pagamentos sem nossa API
+        eng: This endpoint allows you to change the device operating mode. The options for operating mode are PDV and STANDALONE. PDV is used when you want to use device in mode integration with our API and STANDALONE is used when you want to process payments without our API
+        spa: Este endpoint te permite cambiar el modo de operación del dispositivo. Las opciones para el modo de operación son PDV y STANDALONE. PDV se usa cuando deseas que el dispositivo esté en modo de integración con nuestra API, y STANDALONE se usa cuando deseas procesar pagos sin nuestra API
+        por: Este endpoint permite alterar o modo de operação do dispositivo. As opções para o modo de operação são PDV e STANDALONE. PDV é usado quando você deseja usar o dispositivo em modo de integração com nossa API, e STANDALONE é usado quando você deseja processar pagamentos sem nossa API
       parameters:
         - name: device_id
           in: path
           description: DeviceId
+          x-description-i18n:
+           eng: Device ID
+           spa: ID del dispositivo
+           por: ID do dispositivo
           required: true
           schema:
             type: string
@@ -1857,7 +1928,7 @@ paths:
           description: Success - Operating mode successfully changed
           x-description-i18n:
             eng: Success - Operating mode successfully changed
-            spa: Éxito - Modo de operación cambió correctamente
+            spa: Éxito - El modo de operación cambió correctamente
             por: Sucesso - Modo de operação alterado com sucesso
           content:
             application/json:
