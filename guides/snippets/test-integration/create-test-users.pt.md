@@ -23,7 +23,7 @@ Para criar contas e testar o funcionamento das integrações, siga os passos aba
 >
 > Atenção
 >
-> Você pode gerar até 15 contas de usuários de teste ao mesmo tempo e, por enquanto, ainda não é possível deletá-las.
+> Sempre que utilizar um usuário de teste, você deve usar suas **credenciais de produção**.
 
 Pronto! A conta de teste foi criada e será exibida na tabela com as seguintes informações:
 
@@ -37,4 +37,4 @@ Pronto! A conta de teste foi criada e será exibida na tabela com as seguintes i
 >
 > Importante
 >
-> Para editar a **identificação da conta** ou **adicionar mais dinheiro fictício** para testar suas aplicações, clique nos **3 pontos verticais** ao final da linha da tabela e selecione a opção **Editar dados**.
+> Para editar a **identificação da conta** ou **adicionar mais dinheiro fictício** para testar suas aplicações, clique nos **3 pontos verticais** ao final da linha da tabela e selecione a opção **Editar dados**.<br> <br> Você pode gerar **até 15 contas** de usuários de teste ao mesmo tempo e, por enquanto, ainda não é possível deletá-las.
