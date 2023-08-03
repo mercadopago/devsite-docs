@@ -157,7 +157,7 @@ paths:
                             spa: Código de área
                             por: Código de área
                         number:
-                          type: string
+                          type: number
                           description: Number.
                           x-description-i18n:
                             eng: Number.
@@ -703,7 +703,7 @@ paths:
                               spa: Código de área
                               por: Código de área
                           number:
-                            type: string
+                            type: number
                             description: Phone number.
                             x-description-i18n:
                               eng: Phone number.
@@ -2039,7 +2039,7 @@ paths:
                             spa: Código de área
                             por: Código de área
                         number:
-                          type: string
+                          type: number
                           description: Number.
                           x-description-i18n:
                             eng: Number.
@@ -2683,7 +2683,7 @@ paths:
                               spa: Código de área
                               por: Código de área
                           number:
-                            type: string
+                            type: number
                             description: Number.
                             x-description-i18n:
                               eng: Number.
