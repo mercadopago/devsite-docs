@@ -68,7 +68,6 @@ purpose: 'wallet_purchase'
 
 Mercadopago.preferences.create(preference)
 .then(function(response){
-// This value will replace the string "<%= global.id %>" in your HTML
 global.id = response.body.id;
 }).catch(function(error){
 console.log(error);

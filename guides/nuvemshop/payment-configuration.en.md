@@ -12,3 +12,5 @@ The integration of the Mercado Pago module with Tiendanube stores allows you to 
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 * [Checkout Pro](/developers/en/docs/nuvemshop/payment-configuration/checkout-pro): payment is made on the Mercado Pago page and buyers can pay using a Mercado Pago account, making it easier to pay with a credit card , debit and other means of payment (cash payment networks, ATM and Mercado Credit)
 * [Checkout API](/developers/en/docs/nuvemshop/payment-configuration/checkout-api): payment is made without leaving your virtual store using cards (credit and debit) and cash payment networks.
+
+------------
