@@ -111,7 +111,6 @@ De la misma forma, si envías el campo `amount`,  no es necesario que envíes la
     
 Para ejecutar esta operación, a diferencia de la creación de un intent de compra, sí es requerido que envíes el valor del campo `amount`.
 
-
 * **Creación de compra y retiro de dinero en una misma transacción (Extra cash)**
 
 ----[mla]----
