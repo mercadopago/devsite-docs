@@ -16,7 +16,6 @@ Algunos términos son nuevos y quizás no estés familiarizado con ellos. Usa es
 | QR              | Cash out         | Operación disponible para realizarse mediante Código QR. Consiste en la extracción de dinero en efectivo a partir de la generación de un código QR, o de la utilización del código QR asociado a la caja.                                                  |
 | QR              | Extra cash       | Operación disponible para realizarse mediante Código QR. Consiste en generar una orden mediante la cual un cliente puede pagar un producto y extraer dinero en efectivo en una sola transacción.                                                          |
 
-
 ## Posibles estados de un intent
 
 ### Point
@@ -32,7 +31,6 @@ Algunos términos son nuevos y quizás no estés familiarizado con ellos. Usa es
 | Canceled | Estado final de un intent cuando se cancela. |
 | Error | Estado final de un intent cuando ocurre un error en la transacción. |
 | Expired | Estado final de un intent cuando no se procesa luego de una hora de haber sido generado. |
-
 
 ### QR
 

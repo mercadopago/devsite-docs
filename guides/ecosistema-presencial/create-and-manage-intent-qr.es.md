@@ -8,10 +8,10 @@ Para crear un intent utilizando QR, realiza una llamada POST al endpoint [Crear 
 
 A continuación, te mostramos un ejemplo de payload para crear un intent de las tres operaciones disponibles para QR:
 
- * **Creación de una compra (`PURCHASE`)**
-    
-    ``` json
-    {
+* **Creación de una compra (`PURCHASE`)**
+  
+``` json
+{
         "description": "description",
         "external_reference": "external_reference",
         "sponsor": {
@@ -44,20 +44,18 @@ A continuación, te mostramos un ejemplo de payload para crear un intent de las 
                 "DYNAMIC"
             ]
         }
-    }
-    ```
+}
+```
 
-    Ten en cuenta que si en este tipo de operaciones envías la información necesaria para el campo `item`, no será requerido el campo `amount`. Este se calculará teniendo en cuenta el `total_amount` de cada uno de los ítems.
-    De la misma forma, si envías el campo `amount`,  no es necesario que envíes la información correspondiente a los ítems.
- 
- <br>
+Ten en cuenta que si en este tipo de operaciones envías la información necesaria para el campo `item`, no será requerido el campo `amount`. Este se calculará teniendo en cuenta el `total_amount` de cada uno de los ítems.
+De la misma forma, si envías el campo `amount`,  no es necesario que envíes la información correspondiente a los ítems.
 
- * **Creación de un retiro de dinero en efectivo (`CASH_OUT`)**
-    
-    ----[mla]----
+* **Creación de un retiro de dinero en efectivo (`CASH_OUT`)**
 
-    ``` json
-    {
+----[mla]----
+
+``` json
+{
         "description": "description",
         "external_reference": "external_reference",
         "sponsor": {
@@ -75,15 +73,15 @@ A continuación, te mostramos un ejemplo de payload para crear un intent de las 
                 "DYNAMIC"
             ]
         }
-    }
+}
 
-    ```
+```
 
-    ------------
-    ----[mlb]----
+------------
+----[mlb]----
 
-    ``` json
-    {
+``` json
+{
         "description": "description",
         "external_reference": "external_reference",
         "sponsor": {
@@ -106,20 +104,20 @@ A continuación, te mostramos un ejemplo de payload para crear un intent de las 
                 "DYNAMIC"
             ]
         }
-    }
+}
 
-    ```
-    ------------
+```
+------------
     
-    Para ejecutar esta operación, a diferencia de la creación de un intent de compra, sí es requerido que envíes el valor del campo `amount`.
- <br>
- 
- * **Creación de compra y retiro de dinero en una misma transacción (Extra cash)**
+Para ejecutar esta operación, a diferencia de la creación de un intent de compra, sí es requerido que envíes el valor del campo `amount`.
 
-    ----[mla]----
 
-    ``` json
-    {
+* **Creación de compra y retiro de dinero en una misma transacción (Extra cash)**
+
+----[mla]----
+
+``` json
+{
         "description": "description",
         "external_reference": "external_reference",
         "sponsor": {
@@ -158,13 +156,13 @@ A continuación, te mostramos un ejemplo de payload para crear un intent de las 
         }
     }
 
-    ```
+```
 
-    ------------
-    ----[mlb]----
+------------
+----[mlb]----
 
-    ``` json
-    {
+``` json
+{
         "description": "description",
         "external_reference": "external_reference",
         "sponsor": {
@@ -206,13 +204,12 @@ A continuación, te mostramos un ejemplo de payload para crear un intent de las 
                 "DYNAMIC"
             ]
         }
-    }
+}
 
-    ```
-    ------------
+```
+------------
 
- A este payload se aplican las reglas individuales expuestas anteriormente para los intents de compra y retiro de dinero.
-
+A este payload se aplican las reglas individuales expuestas anteriormente para los intents de compra y retiro de dinero.
 
 ## Consultar el estado de un intent para QR
 
@@ -274,13 +271,11 @@ Este objeto se compone de la siguiente manera:
 
 Esto ocurre tanto para las operaciones `PURCHASE` como `CASH_OUT`. 
 
-
 ## Cancelar un intent para QR
 
 Si todavía no se ha realizado el pago, puedes cancelar un intent y hacer que ya no esté disponible para su procesamiento. 
 
 Realiza una llamada DELETE al endpoint [Obtener información de un intent](https://api.mercadopago.com/instore-api/integrations/v1/intents/{{intent_id}}/qr/pos/{{external.id}}), reemplazando `external.id` e `intent_id` por los valores obtenidos al crear una caja y el intento de pago, respectivamente.
-
 
 ## Configurar notificaciones
 
@@ -308,12 +303,31 @@ A continuación, te mostramos un ejemplo de notificación que puedes recibir par
                 "STATIC" ,"DYNAMIC" 
             ]
         },
+        "qr": {
+           "data":"qr-data"
+        },
         "external_reference": "123132342341",
+        "description": "abc",
         "id": "1234567-12345-12345678-1234567890",
         "operations": [
             {
                 "amount": "10.14",
-                "type": "PURCHASE"
+                "type": "PURCHASE",
+                "items": [
+                   {
+                    "sku_number": "sku_number",
+                    "external_categories": [
+                        {
+                            "id": "category_id"
+                        }
+                    ],
+                    "title": "title",
+                    "unit_price": "10.14",
+                    "quantity": 1,
+                    "unit_measure": "UNIT",
+                    "total_amount": "10.14"
+                }
+              ]
             },
             {
                 "amount": "12.20",
@@ -329,10 +343,10 @@ A continuación, te mostramos un ejemplo de notificación que puedes recibir par
     "type": "topic_instore_integration_wh",
     "user_id": 123456678
 }
+
 ```
 
 ------------
-
 ----[mlb]----
 
 ``` json
@@ -341,17 +355,36 @@ A continuación, te mostramos un ejemplo de notificación que puedes recibir par
     "api_version": "v1",
     "data": {
         "enabler_configuration": {
-            "device_payment_mode": "CARD",
-            "print_on_terminal": [
-                "SELLER_TICKET"
+            "qr_payment_mode": [
+                "STATIC" ,"DYNAMIC" 
             ]
         },
+        "qr": {
+           "data":"qr-data"
+        },
+
         "external_reference": "123132342341",
+        "description": "abc",
         "id": "1234567-12345-12345678-1234567890",
         "operations": [
             {
                 "amount": "10.14",
-                "type": "PURCHASE"
+                "type": "PURCHASE",
+                "items": [
+                   {
+                    "sku_number": "sku_number",
+                    "external_categories": [
+                        {
+                            "id": "category_id"
+                        }
+                    ],
+                    "title": "title",
+                    "unit_price": "10.14",
+                    "quantity": 1,
+                    "unit_measure": "UNIT",
+                    "total_amount": "10.14"
+                }
+              ]
             },
             {
                 "amount": "12.20",
@@ -364,7 +397,7 @@ A continuación, te mostramos un ejemplo de notificación que puedes recibir par
             }
         ],
         "status": "CANCELED",
-        "url": "https://api.mercadopago.com/instore-api/integrations/v1/intents/1234567-12345-12345678-1234567890/point"
+        "url": "https://api.mercadopago.com/instore-api/integrations/v1/intents/1234567-12345-12345678-1234567890/qr"
     },
     "date_created": "2023-07-27 20:24:21.776642198-0400",
     "id": "1234567-12345-12345678-1234567890",
@@ -372,5 +405,14 @@ A continuación, te mostramos un ejemplo de notificación que puedes recibir par
     "type": "topic_instore_integration_wh",
     "user_id": 12345667
 }
+
 ```
 ------------
+
+## Devolver un pago
+
+Si, una vez que el pago fue realizado, necesitas realizar una devolución de ese dinero percibido, sigue los pasos a continuación:
+
+1. En la App de Mercado Pago en tu móvil, accede a la sección **Actividad**, ubicada en la esquina inferior izquierda.
+2. Allí, selecciona el pago que deseas devolver.
+3. Presiona la opción “Devolver cobro”, y confirma esa devolución.

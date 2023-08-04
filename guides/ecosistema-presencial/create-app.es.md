@@ -15,9 +15,7 @@ Para crear una aplicación en Tus Integraciones, sigue los pasos a continuación
 4. A la hora de elegir el producto a integrar, puedes elegir “CódigoQR” o “PointdeMercadoPago”. El resultado será el mismo independientemente de lo que elijas.
 5. Una vez que hayas completado la información solicitada, haz clic en **Crear aplicación** y ¡listo!
 
-
 > Puedes consultar la [documentación sobre el Panel del Desarrollador](/developers/es/docs/ecosistema-presencial/additional-content/your-integrations/dashboard) si tienes dudas sobre cómo utilizarlo.
-
 
 ## Información importante sobre tu aplicación
 
@@ -27,7 +25,6 @@ Una vez que hayas creado tu aplicación, serás redirigido al sitio de Informaci
 |---|---|---|
 | User ID | Número de identificación de usuario, que es creado automáticamente. | `user_id` |
 | Número de aplicación | Número de identificación de la aplicación, que es creado automáticamente. | `application.id` |
-
 
 Además, en el menú ubicado del lado izquierdo del panel de información general de tu aplicación, podrás acceder a más información útil, como se muestra a continuación: 
 
