@@ -2,7 +2,7 @@
 content_section_with_media: 
  - title: Ecosistema Presencial
  - message: La solución integral para tus cobros presenciales
- - media_image: /ecosistema-presencial/ecosistema-presencial-landing2.png
+ - media_image: /ecosistema-presencial/ecosistema-presencial-landing3.png
 ---
 
 ---
@@ -44,9 +44,17 @@ bullet_section_with_media:
  - title: Ventajas
  - type: reverse
  - benefit_title: Una sola integración, dos soluciones
- - benefit_message: Aprende a integrar en una única y completa solución los métodos de cobro presencial más populares.
+ - benefit_message: Integra en una única y completa solución los métodos de cobro presencial más populares.
  - benefit_title: Cobros con Código QR
- - benefit_message: Ya sea que prefieras imprimir el código para colocarlo en tu local, mostrarlo desde tu dispositivo móvil o generar un QR dinámico, tus clientes podrán pagar de manera rápida y sin problemas.
+ - benefit_message: Puedes imprimir el código para colocarlo en tu local, mostrarlo desde tu dispositivo móvil o generar un QR dinámico, y tus clientes pagarán de manera rápida y sin problemas.
+ - image: /ecosistema-presencial/ecosistema-presencial-landing.png
+
+---
+
+---
+bullet_section_with_media: 
+ - title: 
+ - type: normal
  - benefit_title: Pagos con Mercado Pago Point
  - benefit_message: Acepta tarjetas de crédito y débito en tu negocio con la facilidad y seguridad que ofrece Mercado Pago Point.
  - benefit_title: Todos los Beneficios de Mercado Pago
@@ -55,7 +63,9 @@ bullet_section_with_media:
  - benefit_message: Ofrece una experiencia segura y fluida en pagos desde cualquier dispositivo móvil, ya sea con tarjetas o wallet.
  - benefit_title: Seguridad garantizada
  - benefit_message: Todas las transacciones están protegidas con las más avanzadas medidas de seguridad de Mercado Pago, garantizando que tus datos y los de tus clientes estén siempre protegidos.
- - image: /ecosistema-presencial/ecosistema-presencial-landing.png
+
 ---
 
+ 
+ 
 > Para obtener detalles sobre los medios de pago aceptados en cada país, consulta la lista completa con [disponibilidad de medios de pago.](/developers/es/docs/sales-processing/payment-methods)
