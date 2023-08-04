@@ -92,8 +92,10 @@ Para configurar tus notificaciones, sigue las instrucciones proporcionadas en la
 
 A continuación, te mostramos un ejemplo de notificación que puedes recibir para un dispositivo Point cuando un intent llega a un estado (`status`) final. Ten en cuenta que la información que se notifica dentro del nodo `data` va a depender de la información con la que se cree el intent.
 
+----[mla]----
 ``` json
 {
+    "id": "1234567-12345-12345678-1234567890",
     "action": "topic_instore_integration_wh.application.authorized",
     "api_version": "v1",
     "data": {
@@ -105,6 +107,7 @@ A continuación, te mostramos un ejemplo de notificación que puedes recibir par
             ]
         },
         "external_reference": "123132342341",
+        "description": "abc",
         "id": "1234567-12345-12345678-1234567890",
         "operations": [
             {
@@ -116,10 +119,52 @@ A continuación, te mostramos un ejemplo de notificación que puedes recibir par
         "url": "https://api.mercadopago.com/instore-api/integrations/v1/intents/1234567-12345-12345678-1234567890/point"
     },
     "date_created": "2023-07-27 20:24:21.776642198-0400",
-    "id": "1234567-12345-12345678-1234567890",
     "live_mode": true,
     "type": "topic_instore_integration_wh",
     "user_id": 12345667
 }
 
 ```
+------------
+
+----[mlb]----
+``` json
+{
+    "id": "1234567-12345-12345678-1234567890",
+    "action": "topic_instore_integration_wh.application.authorized",
+    "api_version": "v1",
+    "data": {
+        "enabler_configuration": {
+            "device_payment_mode": "CARD",
+            "print_on_terminal": [
+                "SELLER_TICKET"
+            ]
+        },
+        "external_reference": "123132342341",
+        "description": "abc",
+        "id": "1234567-12345-12345678-1234567890",
+        "operations": [
+            {
+                "amount": "10.14",
+                "type": "PURCHASE"
+            }
+        ],
+        "status": "CANCELED",
+        "url": "https://api.mercadopago.com/instore-api/integrations/v1/intents/1234567-12345-12345678-1234567890/point"
+    },
+    "date_created": "2023-07-27 20:24:21.776642198-0400",
+    "live_mode": true,
+    "type": "topic_instore_integration_wh",
+    "user_id": 12345667
+}
+
+```
+------------
+
+## Devolver un pago
+
+Si, una vez que el pago fue realizado, necesitas realizar una devolución de ese dinero percibido, sigue los pasos a continuación:
+
+1. En tu dispositivo Point, presiona el botón **Menú**.
+2. Dirígete a la opción “Últimos pagos” y selecciona el pago que deseas devolver.
+3. Presiona la opción “Devolver cobro”, y confirma esa devolución.

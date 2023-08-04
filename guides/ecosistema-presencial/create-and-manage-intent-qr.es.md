@@ -308,12 +308,31 @@ A continuación, te mostramos un ejemplo de notificación que puedes recibir par
                 "STATIC" ,"DYNAMIC" 
             ]
         },
+        "qr": {
+           "data":"qr-data"
+        },
         "external_reference": "123132342341",
+        "description": "abc",
         "id": "1234567-12345-12345678-1234567890",
         "operations": [
             {
                 "amount": "10.14",
-                "type": "PURCHASE"
+                "type": "PURCHASE",
+                "items": [
+                   {
+                    "sku_number": "sku_number",
+                    "external_categories": [
+                        {
+                            "id": "category_id"
+                        }
+                    ],
+                    "title": "title",
+                    "unit_price": "10.14",
+                    "quantity": 1,
+                    "unit_measure": "UNIT",
+                    "total_amount": "10.14"
+                }
+              ]
             },
             {
                 "amount": "12.20",
@@ -329,6 +348,7 @@ A continuación, te mostramos un ejemplo de notificación que puedes recibir par
     "type": "topic_instore_integration_wh",
     "user_id": 123456678
 }
+
 ```
 
 ------------
@@ -341,17 +361,36 @@ A continuación, te mostramos un ejemplo de notificación que puedes recibir par
     "api_version": "v1",
     "data": {
         "enabler_configuration": {
-            "device_payment_mode": "CARD",
-            "print_on_terminal": [
-                "SELLER_TICKET"
+            "qr_payment_mode": [
+                "STATIC" ,"DYNAMIC" 
             ]
         },
+        "qr": {
+           "data":"qr-data"
+        },
+
         "external_reference": "123132342341",
+        "description": "abc",
         "id": "1234567-12345-12345678-1234567890",
         "operations": [
             {
                 "amount": "10.14",
-                "type": "PURCHASE"
+                "type": "PURCHASE",
+                "items": [
+                   {
+                    "sku_number": "sku_number",
+                    "external_categories": [
+                        {
+                            "id": "category_id"
+                        }
+                    ],
+                    "title": "title",
+                    "unit_price": "10.14",
+                    "quantity": 1,
+                    "unit_measure": "UNIT",
+                    "total_amount": "10.14"
+                }
+              ]
             },
             {
                 "amount": "12.20",
@@ -364,7 +403,7 @@ A continuación, te mostramos un ejemplo de notificación que puedes recibir par
             }
         ],
         "status": "CANCELED",
-        "url": "https://api.mercadopago.com/instore-api/integrations/v1/intents/1234567-12345-12345678-1234567890/point"
+        "url": "https://api.mercadopago.com/instore-api/integrations/v1/intents/1234567-12345-12345678-1234567890/qr"
     },
     "date_created": "2023-07-27 20:24:21.776642198-0400",
     "id": "1234567-12345-12345678-1234567890",
@@ -372,5 +411,14 @@ A continuación, te mostramos un ejemplo de notificación que puedes recibir par
     "type": "topic_instore_integration_wh",
     "user_id": 12345667
 }
+
 ```
 ------------
+
+## Devolver un pago
+
+Si, una vez que el pago fue realizado, necesitas realizar una devolución de ese dinero percibido, sigue los pasos a continuación:
+
+1. En la App de Mercado Pago en tu móvil, accede a la sección **Actividad**, ubicada en la esquina inferior izquierda.
+2. Allí, selecciona el pago que deseas devolver.
+3. Presiona la opción “Devolver cobro”, y confirma esa devolución.

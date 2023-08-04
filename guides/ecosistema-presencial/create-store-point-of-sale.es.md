@@ -4,7 +4,12 @@ Para crear un local, primero deberás realizar una llamada POST al endpoint [Cre
 
 Ten en cuenta que deberás reemplazar los valores `user_id` y `YOUR_ACCESS_TOKEN` con los obtenidos al crear tu aplicación. A su vez, deberás modificar las variables `name’, ‘business_hours` y `location` de acuerdo al negocio que estás creando.
 
+> NOTE
+>
+> NOTA
+>
 > El request se encuentra configurado con la información del site de Argentina. Recuerda modificar esta configuración según el país desde donde estés integrando.
+
 
 Luego, deberás crear una caja. Para eso, realiza una llamada POST al endpoint [Crear caja](/developers/es/reference/pos/_pos/post).
 
