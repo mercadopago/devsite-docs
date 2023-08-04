@@ -12,3 +12,9 @@ Si quieres integrar Checkout Pro a una aplicación mobile, a continuaciónte bri
 * [React Native CLI](/docs/checkout-pro/integrate-checkout-pro/mobile/ios/reactnative-cli)
 * [React Native Expo](/docs/checkout-pro/integrate-checkout-pro/mobile/ios/reactnative-expo-go)
 
+
+> WARNING
+>
+> Importante
+>
+> Antes de comenzar a integrar Checkout Pro para Mobile, deberás contar con una preferencia creada en tu backend. Si aún no lo has hecho, ve a [Creación de preferencia](/developers/es/docs/checkout-pro/common-initialization).
