@@ -213,26 +213,6 @@ A continuación, te mostramos un ejemplo de payload para crear un intent de las 
 
  A este payload se aplican las reglas individuales expuestas anteriormente para los intents de compra y retiro de dinero.
 
- | Campo | Descripción |
- |---|---|
- | `description` | Descripción del intent |
- | `external_reference` | Identificador del vendedor para la operación. |
- | `sponsor.id` | user_id utilizado para identificar al responsable de la integración. No debe confundirse con el user_id del vendedor. |
- | `operations` | Operación o conjunto de operaciones a ejecutar.  |
- | `operations.type` | Tipo de la operación. Valores posibles: `PURCHASE`, `CASH_OUT`. |
- | `operations.amount` | Monto por el cual se realiza la operación. Este campo es opcional en caso que se envíe un conjunto de ítems. |
- | `operations.items` | Conjunto de ítems asociados a la operación. Este conjunto es requerido en caso que no se envíe el campo `operations.amount`. |
- | `operations.items.sku_number` | Código del ítem. |
- | `operations.items.external_categories` | Categoría a la que pertenecen los ítems. |
- | `operations.items.title` | Nombre del ítem. |
- | `operations.items.unit_price` | Precio unitario del ítem. |
- | `operations.items.quantity` | Cantidad de unidades del ítem. |
- | `operations.items.unit_measure` | Unidad de medida del ítem. |
- | `operations.items.total_amount` | Monto total de ítems por la cantidad indicada. |
- | `enabler_configuration` | Conjunto de configuraciones asociadas al *enabler*. |
- | `enabler_configuration.qr_payment_mode` | Modo de integración QR. <br>`STATIC`: refiere al QR fijo impreso asociado a la caja o PDV.<br>`DYNAMIC`: refiere a la creación de un QR propio de la operación y de único uso.<br>`“STATIC”, “DYNAMIC`: permitirá realizar la operación o bien en el QR estático, o bien en un QR dinámico propio de la operación, que debe ser devuelto en la response. |
-
-
 
 ## Consultar el estado de un intent para QR
 
