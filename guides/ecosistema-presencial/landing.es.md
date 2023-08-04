@@ -2,7 +2,7 @@
 content_section_with_media: 
  - title: Ecosistema Presencial
  - message: La solución integral para tus cobros presenciales
- - media_image: /images/ecosistema-presencial/ecosistema-presencial-landing2.png
+ - media_image: /ecosistema-presencial/ecosistema-presencial-landing2.png
 ---
 
 ---
@@ -10,7 +10,7 @@ bullet_section_with_media:
  - title: 
  - type: normal
  - message: La API de Ecosistema Presencial ofrece una solución completa e integrada para que puedas aceptar pagos de forma rápida y segura en tu negocio, unificando las experiencias de las integraciones de QR y Point de Mercado Pago en una sola plataforma.
- - image: /images/ecosistema-presencial/ecosistema-presencial-api.png
+ - image: /ecosistema-presencial/ecosistema-presencial-api.png
 ---
 
 ---
@@ -19,7 +19,7 @@ bullet_section_with_media:
  - title: Una única integración para activar dos métodos de cobro
  - benefit_title: Código QR
  - benefit_message: Los códigos QR vinculados a las sucursales y cajas de tu cuenta de Mercado Pago te permiten recibir pagos de manera simple y segura. Puedes imprimirlo y colocarlo en un lugar visible, mostrarlo en tu dispositivo móvil para que los clientes escaneen y paguen desde la app de Mercado Pago, o generar un QR dinámico a partir de la creación de una orden de pago. Así, tus clientes podrán pagar de la manera que prefieran, sin complicaciones.
- - image: /images/ecosistema-presencial/ecosistema-presencial QR.png
+ - image: /ecosistema-presencial/ecosistema-presencial QR.png
 ---
 
 ---
@@ -28,7 +28,7 @@ bullet_section_with_media:
  - title: 
  - benefit_title: Mercado Pago Point
  - benefit_message: Point es la máquina de tarjetas de Mercado Pago que facilita los pagos presenciales con tarjetas de crédito o débito. Con Point, tus clientes podrán realizar pagos de manera rápida y segura, y además, tendrás la posibilidad de ofrecer cuotas con o sin interés, brindándoles más opciones de pago y fomentando las ventas en tu negocio.
- - image: /images/ecosistema-presencial/ecosistema-presencial-point.png
+ - image: /ecosistema-presencial/ecosistema-presencial-point.png
 ---
 
 --- mini_landing_separator ---
@@ -54,7 +54,7 @@ bullet_section_with_media:
  - benefit_message: Ofrece una experiencia segura y fluida en pagos desde cualquier dispositivo móvil, ya sea con tarjetas o wallet.
  - benefit_title: Seguridad garantizada
  - benefit_message: Todas las transacciones están protegidas con las más avanzadas medidas de seguridad de Mercado Pago, garantizando que tus datos y los de tus clientes estén siempre protegidos.
- - image: /images/ecosistema-presencial/ecosistema-presencial-landing.png
+ - image: /ecosistema-presencial/ecosistema-presencial-landing.png
 ---
 
 ------------
