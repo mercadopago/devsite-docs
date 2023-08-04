@@ -6,8 +6,8 @@ A continuación, puedes ver cómo crear un intent en dispositivos Point, cómo c
 
 Para crear un intent en tu dispositivo Point, tienes dos posibilidades:
 
-* Puedes realiza una llamada POST al endpoint [Crear intent para un dispositivo asociado a una caja](/developpers/es/reference/instore-api/), reemplazando `external.id` por el valor escogido al crear la caja.
-* O bien, puedes realizar una llamada POST al endpoint [Crear intent para un diospositivo PDV](/developpers/es/reference/instore-api/), reemplazando `device.id` por el valor obtenido al consultar el listado de dispositivos. 
+* Puedes realiza una llamada POST al endpoint [Crear intent para un dispositivo asociado a una caja](/developers/es/reference/instore-api/integrationsintents_point_pos_external_id/post), reemplazando `external.id` por el valor escogido al crear la caja.
+* O bien, puedes realizar una llamada POST al endpoint [Crear intent para un diospositivo PDV](/developers/es/reference/instore-api/integrationsintents_point_device_id/post), reemplazando `device.id` por el valor obtenido al consultar el listado de dispositivos. 
 
 Puedes elegir la opción que mejor se adapte a tus necesidades. El resultado será el mismo y habrás creado un intent para el dispositivo Point elegido.
 
@@ -21,7 +21,7 @@ Puedes elegir la opción que mejor se adapte a tus necesidades. El resultado ser
 
 ## Consultar el estado de un intent en dispositivos Point
 
-Para conocer el estado actual de un intent, realiza una llamada GET al endpoint [Obtener información de un intent](/developpers/es/reference/instore-api/), reemplazando `intent_id` por el valor obtenido en ese campo al momento de crearlo. 
+Para conocer el estado actual de un intent, realiza una llamada GET al endpoint [Obtener información de un intent](/developers/es/reference/instore-api/integrationsintents_intent_id_point/get), reemplazando `intent_id` por el valor obtenido en ese campo al momento de crearlo. 
 
 A continuación, te mostramos un ejemplo de respuesta a la consulta de un estado:
 
@@ -68,7 +68,7 @@ Este objeto se compone de la siguiente manera:
 ## Cancelar un intent en dispositivos Point
 
 Si todavía no se ha realizado el pago y no has cargado el intent en el dispositivo, puedes cancelar una intención de pago y hacer que ese intento ya no esté disponible para su procesamiento. 
-Realiza una llamada DELETE al endpoint [Obtener información de un intent](/developpers/es/reference/instore-api/), reemplazando `external.id` e `intent_id` por los valores obtenidos al crear una caja y el intento de pago, respectivamente.
+Realiza una llamada DELETE al endpoint [Obtener información de un intent](/developers/es/reference/instore-api/integrationsintents_intent_id_point/delete), reemplazando `external.id` e `intent_id` por los valores obtenidos al crear una caja y el intento de pago, respectivamente.
 
 > WARNING
 >

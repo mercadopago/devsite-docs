@@ -4,7 +4,7 @@ A continuación, puedes ver cómo crear un intent para QR, cómo consultar su es
 
 ## Crear intent para QR
 
-Para crear un intent utilizando QR, realiza una llamada POST al endpoint [Crear intent QR](developers/es/reference/instore-api/integrations/v1/intents/qr/pos) reemplazando `external.id` por el valor obtenido al crear la caja.
+Para crear un intent utilizando QR, realiza una llamada POST al endpoint [Crear intent QR](/developers/es/reference/instore-api/integrationsintents_qr_pos_external_id/post) reemplazando `external.id` por el valor obtenido al crear la caja.
 
 A continuación, te mostramos un ejemplo de payload para crear un intent de las tres operaciones disponibles para QR:
 
@@ -212,7 +212,7 @@ A este payload se aplican las reglas individuales expuestas anteriormente para l
 
 ## Consultar el estado de un intent para QR
 
-Para conocer el estado actual de un intent, realiza una llamada GET al endpoint [Obtener información de un intent](https://api.mercadopago.com/instore-api/integrations/v1/intents/{{intent_id}}/qr), reemplazando `intent_id` por el valor obtenido en ese campo al momento de crearlo. 
+Para conocer el estado actual de un intent, realiza una llamada GET al endpoint [Obtener información de un intent](/developers/es/reference/instore-api/integrationsintents_intent_id_qr/get), reemplazando `intent_id` por el valor obtenido en ese campo al momento de crearlo. 
 
 A continuación, te mostramos un ejemplo de respuesta a la consulta de un estado:
 
@@ -274,7 +274,7 @@ Esto ocurre tanto para las operaciones `PURCHASE` como `CASH_OUT`.
 
 Si todavía no se ha realizado el pago, puedes cancelar un intent y hacer que ya no esté disponible para su procesamiento. 
 
-Realiza una llamada DELETE al endpoint [Obtener información de un intent](https://api.mercadopago.com/instore-api/integrations/v1/intents/{{intent_id}}/qr/pos/{{external.id}}), reemplazando `external.id` e `intent_id` por los valores obtenidos al crear una caja y el intento de pago, respectivamente.
+Realiza una llamada DELETE al endpoint [Obtener información de un intent](/developers/es/reference/instore-api/integrationsintents_intent_id_qr/delete), reemplazando `external.id` e `intent_id` por los valores obtenidos al crear una caja y el intento de pago, respectivamente.
 
 ## Configurar notificaciones
 

@@ -6,11 +6,11 @@
 >
 > Este paso sólo es necesario para integrar dispositivos Point. 
 
-Para activar el modo PDV en tu dispositivo Point, primero tendrás que identificarlo. Para esto, deberás realizar una solicitud GET al endpoint [Obtener dispositivos](/developpers/es/reference/instore-api/point/v1/devices/get):
+Para activar el modo PDV en tu dispositivo Point, primero tendrás que identificarlo. Para esto, deberás realizar una solicitud GET al endpoint [Obtener dispositivos](/developers/es/reference/instore-api/_pointdevices/get):
 
 > Esta solicitud retornará como respuesta los dispositivos asociados a la cuenta de Mercado Pago. Si en el listado te aparecen varios dispositivos, puedes identificar el Point que deseas por medio de los últimos caracteres del campo `id`. Los últimos números de este valor deben coincidir con el serial que aparece en la etiqueta trasera del dispositivo Point con el que estás integrando.
 
-Luego, realiza una solicitud PATCH al endpoint [Cambiar el modo de operación](/developpers/es/reference/instore-api/point/v1/devices/patch), reemplazando `device.id` por el valor obtenido en ese campo en la respuesta a la solicitud GET anterior.
+Luego, realiza una solicitud PATCH al endpoint [Cambiar el modo de operación](/developers/es/reference/instore-api/pointdevices_device_id/patch), reemplazando `device.id` por el valor obtenido en ese campo en la respuesta a la solicitud GET anterior.
 
 Por último, reinicia el dispositivo Point. Cuando se reactive, verás en la pantalla una confirmación, y tu Point estará vinculado al modo PDV. 
 
