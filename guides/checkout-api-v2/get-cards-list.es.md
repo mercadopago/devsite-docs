@@ -2,14 +2,11 @@
 
 Es posible consultar la lista de tarjetas guardadas para un determinado cliente. Para eso, envía un **GET** con el cliente `customer_id` al endpoint [/v1/customers/{customer_id}/cards](/developers/es/reference/cards/_customers_customer_id_cards/get) y ejecuta la solicitud o, si lo prefieres, utiliza uno de nuestros SDKs a continuación.
 
-
 [[[
-
 ```php
 
 <?php
-    $customer = MercadoPago\Customer::find_by_id($id);
-    $cards = $customer->cards();
+      $cards = MercadoPago\Card::all(array("customer_id" => "0000000000-abcdEfghiJlm"));
 ?>
 
 ```
@@ -30,10 +27,10 @@ Es posible consultar la lista de tarjetas guardadas para un determinado cliente.
 
 MercadoPagoConfig.setAccessToken("ENV_ACCESS_TOKEN");
 
-CustomerClient customerClient = new CustomerClient();
+CustomerCardClient customerCardClient = new CustomerCardClient();
 
-Customer customer = customerClient.get("247711297-jxOV430go9fx2e");
-customerClient.listCards(customer.getId());
+MPResourceList<CustomerCard> list = customerCardClient.listAll("000000000-abcdEfghiJklM");
+List<CustomerCard> customerCards = list.getResults();
 
 ```
 ```ruby
@@ -63,5 +60,17 @@ curl -X GET \
 ```
 ]]]
 
+La respuesta traerá el siguiente resultado:
 
+### Respuesta
 
+```json
+[{
+    "id": "1490022319978",
+    "expiration_month": 12,
+    "expiration_year": 2020,
+    "first_six_digits": "415231",
+    "last_four_digits": "0001",
+    ...
+}]
+```
