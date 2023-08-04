@@ -7,8 +7,8 @@ content_section_with_media:
 
 ---
 bullet_section_with_media: 
- - title: 
  - type: normal
+ - title: 
  - message: La API de Ecosistema Presencial ofrece una solución completa e integrada para que puedas aceptar pagos de forma rápida y segura en tu negocio, unificando las experiencias de las integraciones de QR y Point de Mercado Pago en una sola plataforma.
  - image: /ecosistema-presencial/ecosistema-presencial-api.png
 ---
