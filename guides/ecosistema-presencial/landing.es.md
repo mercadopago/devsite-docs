@@ -19,7 +19,7 @@ bullet_section_with_media:
  - title: Una única integración para activar dos métodos de cobro
  - benefit_title: Código QR
  - benefit_message: Los códigos QR vinculados a las sucursales y cajas de tu cuenta de Mercado Pago te permiten recibir pagos de manera simple y segura. Puedes imprimirlo y colocarlo en un lugar visible, mostrarlo en tu dispositivo móvil para que los clientes escaneen y paguen desde la app de Mercado Pago, o generar un QR dinámico a partir de la creación de una orden de pago. Así, tus clientes podrán pagar de la manera que prefieran, sin complicaciones.
- - image: /ecosistema-presencial/ecosistema-presencial QR.png
+ - image: /ecosistema-presencial/ecosistema-presencial-qr.png
 ---
 
 ---
