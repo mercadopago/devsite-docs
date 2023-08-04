@@ -2,14 +2,7 @@
 
 En el desarrollo de aplicaciones móviles con React Native, a menudo surge la necesidad de mostrar contenido web dentro de la aplicación. Para lograr esto, existen varias opciones, entre las cuales se destacan el uso de Custom Tabs (para Android) y Safari View Controller (para iOS). Estas tecnologías permiten abrir páginas web en un navegador nativo integrado en la aplicación, brindando una experiencia de navegación más fluida y coherente para los usuarios.
 
-En este paso vamos a instalar y configurar las dependencias necesarias para implementar **Custom Tabs** en tu proyecto desarrollado en React Native. Para eso, puedes utilizar React Native CLI, que brinda un mayor control sobre la compilación y configuración de la aplicación, lo que permite personalizar y optimizar la experiencia de integración de contenido web de acuerdo con los requisitos específicos del proyecto. 
-
-### Especificaciones técnicas
-
-* Node 14.17.0
-* react 18.2.0
-* react-native 0.71.8
-* react-native-inappbrowser-reborn 3.7.0
+En este paso vamos a instalar y configurar las dependencias necesarias para implementar **Custom Tabs** en tu proyecto desarrollado en React Native. 
 
 > CLIENT_SIDE
 >
@@ -34,13 +27,12 @@ yarn add react-native-inappbrowser-reborn
 ```
 ]]]
 
-> Para las versiones de React Native >0.60 no es necesario importar y configurar manualmente las dependencias en el código nativo ya que este se hace automáticamente.
-
-Para la instalación con React Native CLI debes **verificar el archivo android/build.gradle**.
 
 ### Android support
 
 Si utilizas Android support, tu archivo debería tener estas propiedades. En caso de faltar alguna, agrégala. Las versiones pueden ser iguales o superiores.
+
+Para la instalación con React Native CLI debes **verificar el archivo android/build.gradle**.
 
 ```
 buildscript {
@@ -80,7 +72,7 @@ buildscript {
 >
 > Implementación de React-Native-Inappbrowser
 
-Para implementar la dependencia React-Native-Inappbrowser, ejecuta el siguiente comando.
+Para implementar la dependencia React-Native-Inappbrowser, sigue el ejemplo que mostramos a continuación.
 
 ```JavaScript
 import {
@@ -131,21 +123,15 @@ const ButtonCustomTabs = () => {
 >
 > h2
 >
-> Deep Links: Cómo volver a tu App 
+> Cómo volver a tu App 
 
-Los **Deep Links**, también conocidos como enlaces profundos, son una forma poderosa de permitir la navegación directa a pantallas o secciones específicas de una aplicación móvil. En React Native, configurar correctamente los Deep Links es esencial para garantizar una experiencia de usuario fluida y sin problemas.
-En esta sección de la documentación, nos centraremos en la configuración de los Deep Links en una aplicación de React Native. Revisaremos los pasos necesarios para habilitar los enlaces profundos y cómo manejarlos de manera efectiva en nuestra aplicación.
-Con la configuración adecuada de los Deep Links en React Native, podrás ofrecer a los usuarios la capacidad de acceder directamente a contenido específico en tu aplicación, mejorando la navegación y la experiencia general del usuario.
+Los **Deep Links**, también conocidos como enlaces profundos, son una forma poderosa de permitir la navegación directa a pantallas o secciones específicas de una aplicación móvil. 
 
 ### Crear un Deep Link
 Desde nuestro checkout es posible configurar Deep Links para volver a tu aplicación ya sea haciendo click en un link de “Volver” o de forma automática al terminar todo un flujo de pago exitoso, para luego ser redirigido a tu App.
 Para esto debemos agregar en la creación de la preferencia de pago las propiedades `back_urls` y `auto_rerturn` según corresponda.
 
-* Las `back_urls` contienen los Deep Links para redirigir a nuestra aplicación. Se componen de un *scheme* seguido del *path* a donde queremos redirigir al usuario.
-
-![back urls](/images/cow/back-urls.png)
-
-* La propiedad `auto_return` es **opcional**. Es utilizada para redirigir automáticamente al Deep Link al terminar exitosamente un flujo de pago.
+Para conocer más, puedes acceder a la documentación de [URLs de retorno](/developers/es/docs/checkout-pro/checkout-customization/user-interface/redirection).
 
 > CLIENT_SIDE
 >
