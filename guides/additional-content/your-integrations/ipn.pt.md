@@ -245,9 +245,7 @@ curl -X POST \
 ```
 ]]]
 
-
 2. Implemente o receptor de notificações usando o seguinte código como exemplo:
-
 
 ```php
 <?php
@@ -284,9 +282,7 @@ curl -X POST \
  ?>
 ```
 
-
 3. Feitas as configurações, o Mercado Pago notificará essa URL com dois parâmetros a cada vez que um recurso for criado ou atualizado:
-
 
 | Campo | Descrição |
 | --- | --- |
@@ -326,13 +322,10 @@ Na notificação, você receberá um `JSON` com as seguintes informações conte
 ```
 ]]]
 
-
 > NOTE
 >
 > Importante
 >
-> É possível obter mais detalhes sobre o pedido utilizando a API [Obter pedido](/developers/pt/reference/merchant_orders/_merchant_orders_id/get).
-
-<br>
+> É possível obter mais detalhes sobre o pedido utilizando a API [Obter pedido.](/developers/pt/reference/merchant_orders/_merchant_orders_id/get)
   
 Com essas informações, você poderá realizar as atualizações necessárias na sua plataforma como, por exemplo, atualizar um pagamento aprovado ou um pedido fechado.
