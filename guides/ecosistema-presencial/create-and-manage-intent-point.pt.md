@@ -162,7 +162,7 @@ Aqui está um exemplo de uma notificação que você pode receber para um dispos
 
 ## Devolver um pagamento
 
-Se, uma vez efetuado o pagamento, você precisar fazer a devolução desse dinheiro recebido, siga os passos abaixo:
+Se, uma vez que o pagamento foi realizado, você precisar fazer a devolução desse dinheiro recebido, siga os passos abaixo:
 1. No seu dispositivo Point, pressione o botão **Menu**.
 2. Vá para a opção "Últimos pagamentos" e selecione o pagamento que deseja devolver.
-3. Pressione a opção "Devolver pagamento" e confirme essa devolução.
+3. Pressione a opção "Devolver cobrança" e confirme essa devolução.

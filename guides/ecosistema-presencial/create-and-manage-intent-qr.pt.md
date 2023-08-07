@@ -412,7 +412,7 @@ A seguir, mostramos um exemplo de notificação que você pode receber para QR q
 
 ## Devolver um pagamento
 
-Se, uma vez efetuado o pagamento, você precisar fazer a devolução desse dinheiro recebido, siga os passos abaixo:
-1. No App do Mercado Pago no seu celular, acesse a seção **Atividade**, localizada no canto inferior esquerdo.
-2. Lá, selecione o pagamento que deseja devolver.
-3. Pressione a opção "Devolver pagamento" e confirme essa devolução.
+Se, uma vez que o pagamento foi realizado, você precisar fazer uma devolução daquele dinheiro recebido, siga os passos abaixo: 
+1. No aplicativo do Mercado Pago no seu celular, acesse a seção **Atividade**, localizada no canto inferior esquerdo.
+2. Em seguida, selecione o pagamento que deseja devolver.
+3. Clique na opção "Devolver cobrança" e confirme a devolução.
