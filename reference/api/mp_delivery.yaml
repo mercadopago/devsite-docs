@@ -3438,6 +3438,14 @@ paths:
                                 spa: El precio del ítem, que debe ser un número positivo. El cero no está permitido.
                                 por: Preço do item. O campo deve ser um número positivo, não sendo permitida a utilização do número Zero.
                               example: 25.50
+                            discount_price:
+                              type: number
+                              description: Optional field that informs the discounted value of the product. If the value is equal to 0 or null, the information will not be considered. The discount price value must be less than the regular price. In addition, the promotional value is valid for 3 months from its creation.
+                              x-description-i18n:
+                                eng: Optional field that informs the discounted value of the product. If the value is equal to 0 or null, the information will not be considered. The discount price value must be less than the regular price. In addition, the promotional value is valid for 3 months from its creation.
+                                spa: Campo opcional que informa el valor descontado del producto. Si el valor es igual a 0 o nulo, la información no será considerada. El valor del precio de descuento debe ser menor que el precio regular. Además, el valor promocional tiene una vigencia de 3 meses desde la creación.
+                                por: Campo opcional que informa o valor com desconto do produto. Se o valor for igual a 0 ou nulo, a informação não será considerada. O valor do preço com desconto deve ser menor que o preço normal. Além disso, o valor promocional é válido por 3 meses a partir da criação.
+                              example: 20.50
                             status:
                               type: string
                               description: The item current status, can be active if it is available ("active"), or paused if it is not ("paused"). 

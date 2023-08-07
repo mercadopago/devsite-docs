@@ -1,4 +1,4 @@
-# Configurar pagos con ----[mlb]---- Checkout Transparente ------------ ----[mla, mpe, mco, mlu, mlc]---- Checkout API ------------
+# Configurar pagos con ----[mlb]---- Checkout Transparente ------------ ----[mpe, mco, mlu, mlc]---- Checkout API ------------
 
 ----[mlb]----
 Con el [Checkout Transparente](/developers/es/guides/checkout-api/landing), todo el proceso de pago se realizará dentro del entorno de la tienda en línea, sin necesidad de redirigir a una página externa. Además de permitir un mayor control en el proceso de personalización e integración, el checkout ofrece una estructura completa para el procesamiento de pagos con los principales medios disponibles en el mercado.
@@ -12,7 +12,7 @@ Con el [Checkout Transparente](/developers/es/guides/checkout-api/landing), todo
 Para integrar Checkout Transparente, siga los pasos a continuación.
 
 ------------
-----[mla, mpe, mco, mlu, mlc]----
+----[mpe, mco, mlu, mlc]----
 Con el [Checkout API](/developers/es/guides/checkout-api/landing), todo el proceso de pago se realizará dentro del entorno de la tienda en línea, sin necesidad de redirigir a una página externa. Además de permitir un mayor control en el proceso de personalización e integración, el checkout ofrece una estructura completa para el procesamiento de pagos con los principales medios disponibles en el mercado.
 
 Para integrar Checkout API, siga los pasos a continuación.
@@ -25,16 +25,11 @@ Para integrar Checkout API, siga los pasos a continuación.
 3. Selecciona las opciones de pago que deseas ofrecer en tu tienda. Estas pueden ser Tarjeta de crédito, Boleto Bancario y Pix.
 4. Si deseas que el pago con boleto bancario tenga un descuento, introduce el porcentaje de descuento en el campo "Descuento por pagos con boleto bancario".
 5. Finalmente, haz clic en "Guardar cambios". ------------
-----[mla, mlm, mlc, mlu, mpe, mco]---- 
+----[mlc, mlu, mpe, mco]---- 
 3. Finalmente, haz clic en "Guardar cambios". ------------
-<p>&nbsp;</p>
+
 ----[mlb]----
-
 ![Payments Checkout Transparente - Nuvem Shop](/images/nuvemshop/nuvemshop_checkout_transparente_2.gif) 
-
-------------
-----[mla]----
-![Payments Checkout Transparente - Nuvem Shop](/images/nuvemshop/ar_tiendanube_checkout_transparente.gif)
 
 ------------
 ----[mlc, mlu, mpe, mco]----

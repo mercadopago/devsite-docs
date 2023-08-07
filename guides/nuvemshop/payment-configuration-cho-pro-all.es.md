@@ -4,12 +4,9 @@ Al instalar [Checkout Pro](/developers/es/docs/checkout-pro/landing), puede habe
  
 Para integrar Checkout Pro, sigue los pasos a continuación.
 
-----[mla, mlc, mlu, mpe, mco]----
 1. Accede a las [configuraciones de medios de pago](https://mitiendanube.com/admin/payments/) en el menú de tu tienda, busca "Mercado Pago" y selecciona "Editar".
-
-------------
 2. En el ítem "Tipo de integración" cambia a la opción "Proceso de compra en el sitio de Mercado Pago".
-----[mla]----
+----[mlb]----
 3. Selecciona las opciones de pago que deseas ofrecer en tu tienda. Estos pueden ser: tarjeta de crédito, transferencia bancaria, redes de pago en efectivo y Financiación sin tarjeta.
 
 ------------
@@ -23,10 +20,6 @@ Para integrar Checkout Pro, sigue los pasos a continuación.
 
 ----[mlb]----
 ![Payments Checkout Pro - Nuvem Shop](/images/nuvemshop/nuvemshop_checkout_redirect_3.gif)
-
-------------
-----[mla]----
-![Payments Checkout Pro - Nuvem Shop](/images/nuvemshop/ar_tiendanube_checkout_redirect.gif)
 
 ------------
 ----[mlc, mlu, mpe, mco]----

@@ -2,14 +2,11 @@
 
 É possível consultar a lista de cartões salvos para determinado cliente. Para isso, envie um **GET** com o `customer_id` do cliente ao endpoint [/v1/customers/{customer_id}/cards](/developers/pt/reference/cards/_customers_customer_id_cards/get) e execute a requisição ou, se preferir, utilize um de nossos SDKs abaixo.
 
-
 [[[
-
 ```php
 
 <?php
-    $customer = MercadoPago\Customer::find_by_id($id);
-    $cards = $customer->cards();
+      $cards = MercadoPago\Card::all(array("customer_id" => "0000000000-abcdEfghiJlm"));
 ?>
 
 ```
@@ -30,10 +27,10 @@
 
 MercadoPagoConfig.setAccessToken("ENV_ACCESS_TOKEN");
 
-CustomerClient customerClient = new CustomerClient();
+CustomerCardClient customerCardClient = new CustomerCardClient();
 
-Customer customer = customerClient.get("247711297-jxOV430go9fx2e");
-customerClient.listCards(customer.getId());
+MPResourceList<CustomerCard> list = customerCardClient.listAll("000000000-abcdEfghiJklM");
+List<CustomerCard> customerCards = list.getResults();
 
 ```
 ```ruby
@@ -63,9 +60,7 @@ curl -X GET \
 ```
 ]]]
 
-A resposta trará o seguinte resultado.
-
-### Resposta
+A resposta trará o seguinte resultado:
 
 ```json
 [{
