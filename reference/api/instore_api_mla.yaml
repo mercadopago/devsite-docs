@@ -1,0 +1,1941 @@
+openapi: 3.0.0
+servers:
+  - url: https://api.mercadopago.com
+info:
+  title: Mercado Pago API Reference
+  version: '1.0'
+paths:
+  /instore-api/integrations/v1/intents/point/pos/{external_id}:
+    post:
+      tags:
+        - $ref: '#/tags/mp-point'
+      summary: Create an intent for a device associated to a POS (Point of sale) in a store
+      x-summary-i18n:
+        eng: Create an intent for a device associated to a POS (Point of sale) in a store
+        spa: Crear un intent para un dispositivo asociado a una caja (punto de venta) en una tienda
+        por: Criar um intent para um dispositivo associado a um caixa (ponto de venda) em uma loja
+      description: Creates an intent associated with a Point device, linked to a specific POS by external_id
+      x-description-i18n:
+        eng: Create an intent associated with a Point device, linked to a specific POS by external_id
+        spa: Crea un intent asociado al dispositivo Point, vinculado a la caja por el external_id
+        por: Cria um intent associado ao dispositivo Point, vinculado à caixa pelo external_id
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                description:
+                  type: string
+                  example: "description"
+                  required: true
+                  description: Description of the intent given by the user. Length Max:255 - Min:1
+                  x-description-i18n:
+                    eng: Description of the intent given by the user. Length Max:255 - Min:1
+                    spa: Descripción del intento enviada por el usuario. Longitud Max:255 - Min:1
+                    por: Descrição do intent enviada pelo usuário. Comprimento máx:255 - mín:1
+                external_reference:
+                  type: string
+                  example: "abc-123-234"
+                  required: true
+                  description: Custom ID that you can sync with your sales system. Length Max:100 Min:1
+                  x-description-i18n:
+                    eng: Custom ID that you can sync with your sales system. Length Max:100 Min:1
+                    spa: ID personalizado que puedes sincronizar con tu sistema de venta. Longitud Max:100 Min:1
+                    por: ID personalizado que pode sincronizar com seu sistema de vendas. Comprimento máx:100 min:1
+                operations:
+                  type: array
+                  required: true
+                  description: Set of operations to process.
+                  x-description-i18n:
+                    eng: Set of operations to process.
+                    spa: Conjunto de operaciones a procesar.
+                    por: Conjunto de operações a processar.
+                  items:
+                    type: object
+                    properties:
+                      type:
+                        type: string
+                        example: "PURCHASE"
+                        required: true
+                        description: Type of operation
+                        x-description-i18n:
+                          eng: Type of operation.
+                          spa: Tipo de operación.
+                          por: Tipo de operação.
+                      amount:
+                        type: string
+                        example: "12.47"
+                        required: true
+                        description: Amount of operation
+                        x-description-i18n:
+                          eng: Amount of operation.
+                          spa: Monto de la operación.
+                          por: Valor da operação.
+                enabler_configuration:
+                  type: object
+                  description: Configurations for the enabler that processes the intent.
+                  x-description-i18n:
+                    eng: Configurations for the enabler that processes the intent.
+                    spa: Configuraciones para el enabler que procesa el intent.
+                    por: Configurações para o enabler que processa o intent.
+                  properties:
+                    device_payment_mode:
+                      type: string
+                      example: "CARD"
+                      description: Payment method by which the intent will be processed. Default:CARD 
+                      x-description-i18n:
+                        eng: Payment method by which the intent will be processed. Default:CARD 
+                        spa: Método de pago por el cual se va a procesar el intent. Valor por defecto:CARD
+                        por: Método de pagamento pelo qual o intent deve ser processado. Valor padrão:CARD 
+                    ticket_number:
+                      type: string
+                      example: "abc1"
+                      description: An alphanumeric value to identify the ticket number. It will be printed on the ticket of the device. Length Min:1 Max:100
+                      x-description-i18n:
+                        eng: An alphanumeric value to identify the ticket number. It will be printed on the ticket of the device. Length Min:1 Max:100
+                        spa: Un valor alfanumérico para identificar el número de factura o ticket. Se imprimirá en el ticket del dispositivo. Longitud Min:1 Max:100
+                        por: Um valor alfanumérico para identificar o número da fatura ou do ticket. Será impresso no ticket do aparelho. Comprimento Mín.:1 Máx.:100
+                    print_on_terminal:
+                      type: array
+                      description: Ticket to be printed on the device at the end of processing.
+                      x-description-i18n:
+                        eng: Ticket to be printed on the device at the end of processing.
+                        spa: Ticket que se desea imprimir en el dispositivo al finalizar el procesamiento.
+                        por: Ticket a ser impresso no dispositivo no final do processamento.
+                      items:
+                        type: string
+                        example: "SELLER_TICKET"
+                        enum:
+                          - SELLER_TICKET -- Print seller ticket.
+      parameters:
+        - name: external_id
+          in: path
+          description: External POS ID of the POS(Point of sale). It identifies a specific Point of sale in a store.
+          x-description-i18n:
+            eng: External POS ID of the POS(Point of sale). It identifies a specific Point of sale in a store.
+            spa: External POS ID de la Caja. Identifica a ese punto de venta específico en una tienda.
+            por: Externo POS ID da Caixa. Identifica esse ponto de venda específico em uma loja.
+          required: true
+          schema:
+            type: string
+            example:  ABCD1234
+        - name: x-integrator-id
+          in: header
+          description: Unique identification code of our certified developers.
+          x-description-i18n:
+            eng: Unique identification code of our certified developers.
+            spa: Código único de identificación de nuestros developers certificados.
+            por: Código de identificação exclusivo de nossos desenvolvedores certificados.
+          required: false
+          schema:
+            type: string
+            example: "234567"
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema:   
+                type: object
+                properties:
+                  id:
+                    type: string
+                    example: "a124567-123b-1234-1234-1234123455507"
+                    description: Identifier of the intent.
+                    x-description-i18n:
+                      eng: Identifier of the intent.
+                      spa: Identificador del intent.
+                      por: Identificador do intent.
+                  status:
+                    type: string
+                    example: "OPENED"
+                    description: This field describes the current status of the intent.
+                    x-description-i18n:
+                      eng: This field describes the current status of the intent.
+                      spa: Este campo describe el estado actual del intent.
+                      por: Este campo descreve o estado atual do intent.
+                    enum:
+                      - OPENED -- the intent is created and ready to be fetched on the device.
+                  description:
+                    type: string
+                    example: "description"
+                    description: Description of the intent given by the user.
+                    x-description-i18n:
+                      eng: Description of the intent given by the user.
+                      spa: Descripción del intento enviada por el usuario.
+                      por: Descrição do intent enviada pelo usuário.
+                  external_reference:
+                    type: string
+                    example: "abc-123-234"
+                    description: Custom ID that you can sync with your sales system.
+                    x-description-i18n:
+                      eng: Custom ID that you can sync with your sales system.
+                      spa: ID personalizado que puedes sincronizar con tu sistema de venta.
+                      por: ID personalizado que pode sincronizar com seu sistema de vendas.
+                  operations:
+                    type: array
+                    description: Set of operations to process.
+                    x-description-i18n:
+                      eng: Set of operations to process.
+                      spa: Conjunto de operaciones a procesar.
+                      por: Conjunto de operações a processar.
+                    items:
+                      type: object
+                      properties:
+                        type:
+                          type: string
+                          example: "PURCHASE"
+                          description: Type of operation.
+                          x-description-i18n:
+                            eng: Type of operation.
+                            spa: Tipo de operación.
+                            por: Tipo de operação.
+                        amount:
+                          type: string
+                          example: "12.47"
+                          description: Amount of the operation.
+                          x-description-i18n:
+                            eng: Amount of the operation.
+                            spa: Monto de la operación.
+                            por: Valor da operação.
+
+                  enabler_configuration:
+                    type: object
+                    description: Configurations for the enabler that processes the intent.
+                    x-description-i18n:
+                      eng: Configurations for the enabler that processes the intent.
+                      spa: Configuraciones para el enabler que procesa el intent.
+                      por: Configurações para o enabler que processa o intent.
+                    properties:
+                      device_payment_mode:
+                        type: string
+                        example: "CARD"
+                        description: Payment method by which the intent will be processed. Default:CARD
+                        x-description-i18n:
+                          eng: Payment method by which the intent will be processed. Default:CARD
+                          spa: Método de pago por el cual se va a procesar el intent. Valor por defecto:CARD
+                          por: Método de pagamento pelo qual o intent deve ser processado. Valor padrão:CARD 
+                      ticket_number:
+                        type: string
+                        example: "abc1"
+                        description: An alphanumeric value to identify the invoice or ticket number. It will be printed on the ticket of the device.
+                        x-description-i18n:
+                          eng: An alphanumeric value to identify the invoice or ticket number. It will be printed on the ticket of the device.
+                          spa: Un valor alfanumérico para identificar el número de factura o ticket. Se imprimirá en el ticket del dispositivo.
+                          por: Um valor alfanumérico para identificar o número da fatura ou do ticket. Será impresso no ticket do aparelho.
+                      print_on_terminal:
+                        type: array
+                        description: Ticket to be printed on the device at the end of processing.
+                        x-description-i18n:
+                          eng: Ticket to be printed on the device at the end of processing.
+                          spa: Ticket que se desea imprimir en el dispositivo al finalizar el procesamiento.
+                          por: Ticket a ser impresso no dispositivo no final do processamento.
+                        items:
+                          type: string
+                          example: "SELLER_TICKET"
+                          enum:
+                            - SELLER_TICKET -- Print seller ticket.
+        '400':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey: 
+                    type: string
+                    enum:
+                      - 400-- bad_request - Bad request                         
+        '401':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey: 
+                    type: string
+                    enum:
+                      - 401-- Unauthorized - Access Token is invalid            
+        '404':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 404-- pos_not_found - Point of sale with externalId {externalID} is not found
+        '409':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 409-- Conflict - There is already a queued intent for the device
+        '500':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500-- Internal server error
+  /instore-api/integrations/v1/intents/point/{device_id}:
+    post:
+      tags:
+        - $ref: '#/tags/mp-point'
+      summary: Create an intent for a device in POS mode
+      x-summary-i18n:
+        eng: Create an intent for a device in PDV mode
+        spa: Crear un intent para un dispositivo en modo PDV
+        por: Criar um intent para um dispositivo no modo PDV
+      description: Creates an intent associated with the Point device in mode PDV. This device_id can be obtained using the get devices request
+      x-description-i18n:
+        eng: Creates an intent associated with the Point device in mod PDV. This device_id can be obtained using the get devices request
+        spa: Crea un intent asociado a un dispositivo Point en modo PDV. El device_id puede ser obtenido usando la request get devices
+        por: Cria um intent associado a um dispositivo Point no modo PDV. O device_id pode ser obtido usando o método get devices
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                description:
+                  type: string
+                  example: "description"
+                  required: true
+                  description: Description of the intent given by the user.
+                  x-description-i18n:
+                    eng: Description of the intent given by the user.
+                    spa: Descripción del intento enviada por el usuario.
+                    por: Descrição do intent enviada pelo usuário.
+                external_reference:
+                  type: string
+                  example: "abc-123-234"
+                  required: true
+                  description: Custom ID that you can sync with your sales system.
+                  x-description-i18n:
+                    eng: Custom ID that you can sync with your sales system.
+                    spa: ID personalizado que puedes sincronizar con tu sistema de venta.
+                    por: ID personalizado que pode sincronizar com seu sistema de vendas.
+                operations:
+                  type: array
+                  required: true
+                  description: Set of operations to process.
+                  x-description-i18n:
+                    eng: Set of operations to process.
+                    spa: Conjunto de operaciones a procesar.
+                    por: Conjunto de operações a processar.
+                  items:
+                    type: object
+                    properties:
+                      type:
+                        type: string
+                        example: "PURCHASE"
+                        required: true
+                        description: Type of operation
+                        x-description-i18n:
+                          eng: Type of operation.
+                          spa: Tipo de operación.
+                          por: Tipo de operação.
+                      amount:
+                        type: string
+                        example: "12.47"
+                        required: true
+                        description: Amount of operation
+                        x-description-i18n:
+                          eng: Amount of operation.
+                          spa: Monto de la operación.
+                          por: Valor da operação.
+                enabler_configuration:
+                  type: object
+                  description: Configurations for the enabler that processes the intent.
+                  x-description-i18n:
+                    eng: Configurations for the enabler that processes the intent.
+                    spa: Configuraciones para el enabler que procesa el intent.
+                    por: Configurações para o enabler que processa o intent.
+                  properties:
+                    ticket_number:
+                      type: string
+                      example: "abc1"
+                      description: An alphanumeric value to identify the ticket number. It will be printed on the ticket of the device. Length Min:1 Max:100
+                      x-description-i18n:
+                        eng: An alphanumeric value to identify the ticket number. It will be printed on the ticket of the device. Length Min:1 Max:100
+                        spa: Un valor alfanumérico para identificar el número de factura o ticket. Se imprimirá en el ticket del dispositivo. Longitud Min:1 Max:100
+                        por: Um valor alfanumérico para identificar o número da fatura ou do ticket. Será impresso no ticket do aparelho. Comprimento Mín.:1 Máx.:100
+                    device_payment_mode:
+                      type: string
+                      example: "CARD"
+                      description: Payment method by which the intent will be processed. Default:CARD 
+                      x-description-i18n:
+                        eng: Payment method by which the intent will be processed. Default:CARD 
+                        spa: Método de pago por el cual se va a procesar el intent. Valor por defecto:CARD
+                        por: Método de pagamento pelo qual o intent deve ser processado. Valor padrão:CARD
+                    print_on_terminal:
+                      type: array
+                      description: Ticket to be printed on the device at the end of processing.
+                      x-description-i18n:
+                        eng: Ticket to be printed on the device at the end of processing.
+                        spa: Ticket que se desea imprimir en el dispositivo al finalizar el procesamiento.
+                        por: Ticket a ser impresso no dispositivo no final do processamento.
+                      items:
+                        type: string
+                        example: "SELLER_TICKET"
+                        enum:
+                          - SELLER_TICKET -- Print seller ticket.
+      parameters:
+        - name: device_id
+          in: path
+          description: Identifier of a point device in PDV mode. This identifier can be obtained using the get devices request.
+          x-description-i18n:
+            eng: Identifier of a Point device in PDV mode. This identifier can be obtained using the get devices request.
+            spa: Identificador de un dispositivo Point en modo PDV. El identificador puede ser obtenido usando la request de Get devices.
+            por: Identificador do dispositivo Point em modo PDV. O identificador pode ser obtido usando o método Get devices.
+          required: true
+          schema:
+            type: string
+            example:  PAX_A910__SMARTPOS123456789
+        - name: x-integrator-id
+          in: header
+          description: Unique identification code of our certified developers.
+          x-description-i18n:
+            eng: Unique identification code of our certified developers.
+            spa: Código único de identificación de nuestros developers certificados.
+            por: Código de identificação exclusivo de nossos desenvolvedores certificados.
+          required: false
+          schema:
+            type: string
+            example: "234567"
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                    example: "a124567-123b-1234-1234-1234123455507"
+                    description: Identifier of the intent.
+                    x-description-i18n:
+                      eng: Identifier of the intent.
+                      spa: Identificador del intent.
+                      por: Identificador do intent.
+                  status:
+                    type: string
+                    example: "OPENED"
+                    description: This field describes the current status of the intent.
+                    x-description-i18n:
+                      eng: This field describes the current status of the intent.
+                      spa: Este campo describe el estado actual del intent.
+                      por: Este campo descreve o estado atual do intent.
+                    enum:
+                      - OPENED -- the intent is created and ready to be fetched on the device.
+                  description:
+                    type: string
+                    example: "description"
+                    description: Description of the intent given by the user.
+                    x-description-i18n:
+                      eng: Description of the intent given by the user.
+                      spa: Descripción del intento enviada por el usuario.
+                      por: Descrição do intent enviada pelo usuário.
+                  external_reference:
+                    type: string
+                    example: "abc-123-234"
+                    description: Custom ID that you can sync with your sales system.
+                    x-description-i18n:
+                      eng: Custom ID that you can sync with your sales system.
+                      spa: ID personalizado que puedes sincronizar con tu sistema de venta.
+                      por: ID personalizado que pode sincronizar com seu sistema de vendas.
+                  operations:
+                    type: array
+                    description: Set of operations to process.
+                    x-description-i18n:
+                      eng: Set of operations to process.
+                      spa: Conjunto de operaciones a procesar.
+                      por: Conjunto de operações a processar.
+                    items:
+                      type: object
+                      properties:
+                        type:
+                          type: string
+                          example: "PURCHASE"
+                          description: Type of operation.
+                          x-description-i18n:
+                            eng: Type of operation.
+                            spa: Tipo de operación.
+                            por: Tipo de operação.
+                        amount:
+                          type: string
+                          example: "12.47"
+                          description: Amount of the operation.
+                          x-description-i18n:
+                            eng: Amount of the operation.
+                            spa: Monto de la operación.
+                            por: Valor da operação.
+                  enabler_configuration:
+                    type: object
+                    description: Configurations for the enabler that processes the intent.
+                    x-description-i18n:
+                      eng: Configurations for the enabler that processes the intent.
+                      spa: Configuraciones para el enabler que procesa el intent.
+                      por: Configurações para o enabler que processa o intent.
+                    properties:
+                      ticket_number:
+                        type: string
+                        example: "abc1"
+                        description: An alphanumeric value to identify the invoice or ticket number. It will be printed on the ticket of the device.
+                        x-description-i18n:
+                          eng: An alphanumeric value to identify the invoice or ticket number. It will be printed on the ticket of the device.
+                          spa: Un valor alfanumérico para identificar el número de factura o ticket. Se imprimirá en el ticket del dispositivo.
+                          por: Um valor alfanumérico para identificar o número da fatura ou do ticket. Será impresso no ticket do aparelho.
+                      device_payment_mode:
+                        type: string
+                        example: "CARD"
+                        description: Payment method by which the intent will be processed. Default:CARD
+                        x-description-i18n:
+                          eng: Payment method by which the intent will be processed. Default:CARD
+                          spa: Método de pago por el cual se va a procesar el intent. Valor por defecto:CARD
+                          por: Método de pagamento pelo qual o intent deve ser processado. Valor padrão:CARD
+                      print_on_terminal:
+                        type: array
+                        description: Ticket to be printed on the device at the end of processing.
+                        x-description-i18n:
+                          eng: Ticket to be printed on the device at the end of processing.
+                          spa: Ticket que se desea imprimir en el dispositivo al finalizar el procesamiento.
+                          por: Ticket a ser impresso no dispositivo no final do processamento.
+                        items:
+                          type: string
+                          example: "SELLER_TICKET"
+                          enum:
+                            - SELLER_TICKET -- Print seller ticket.
+        '400':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 400-- bad_request - Bad request
+        '401':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 401-- Unauthorized - Access Token is invalid
+        '404':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 404-- pos_not_found - Point of sale with externalId {externalID} is not found
+        '409':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 409-- Conflict - There is already a queued intent for the device
+        '500':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500-- Internal server error
+  /instore-api/integrations/v1/intents/{intent_id}/point:
+    get:
+      tags:
+        - $ref: '#/tags/mp-point'
+      summary: Get all information about an intent of a Point device
+      x-summary-i18n:
+        eng: Get all information about an intent of a Point device
+        spa: Obtener toda la información de un intent de un dispositivo Point
+        por: Obter informações sobre o intent de um dispositivo Point
+      description: Get all the information about an intent of a Point device in the current state
+      x-description-i18n:
+        eng: Get all the information about an intent of a Point device in the current state
+        spa: Obtiene toda la información de un intent para un dispositivo point en el estado actual
+        por: Obtém informações sobre o intent de um dispositivo Point no estado atual
+      parameters:
+        - name: intent_id
+          in: path
+          description: id of the intent, which is generated in its creation.
+          x-description-i18n:
+            eng: id of the intent, which is generated in its creation.
+            spa: id del intent, que es generado en su creación.
+            por: id do intent, que é gerado na sua criação.
+          required: true
+          schema:
+            type: string
+            example:  ABCD1234
+      responses:
+        '200':
+          description: Find
+          content:
+            application/json:
+              schema:   
+                type: object
+                properties:
+                  id:
+                    type: string
+                    example: "a124567-123b-1234-1234-1234123455507"
+                    description: ID of the intent.
+                    x-description-i18n:
+                      eng: ID of the intent.
+                      spa: ID del intent.
+                      por: ID do intent.
+                  status:
+                    type: string
+                    example: "CLOSED"
+                    description: This field describes the current status of the intent.
+                    x-description-i18n:
+                      eng: This field describes the current status of the intent.
+                      spa: Este campo describe el estado actual del intent.
+                      por: Este campo descreve o estado atual do intent.
+                    enum:
+                      - OPENED -- the intent is created and ready to be fetched on the device.
+                      - ON_TERMINAL -- the intent was already loaded on the point device.
+                      - PROCESSING -- started processing the intent.
+                      - PROCESSED -- the intent is processed and awaits a confirmation.
+                      - CLOSED -- the intent ended and there is already a result.
+                      - CANCELED -- the intent is canceled by user request.
+                      - EXPIRED -- the intent took more than an hour without being processed.
+                      - ERROR -- an error occurred during intent processing.
+                  description:
+                    type: string
+                    example: "description"
+                    description: Description of the intent given by the user.
+                    x-description-i18n:
+                      eng: Description of the intent given by the user.
+                      spa: Descripción del intento enviada por el usuario.
+                      por: Descrição do intent enviada pelo usuário.
+                  external_reference:
+                    type: string
+                    example: "abc-123-234"
+                    description: Custom ID that you can sync with your sales system.
+                    x-description-i18n:
+                      eng: Custom ID that you can sync with your sales system.
+                      spa: ID personalizado que puedes sincronizar con tu sistema de venta.
+                      por: ID personalizado que pode sincronizar com seu sistema de vendas.
+                  operations:
+                    type: array
+                    description: Set of operations to process.
+                    x-description-i18n:
+                      eng: Set of operations to process.
+                      spa: Conjunto de operaciones a procesar.
+                      por: Conjunto de operações a processar.
+                    items:
+                      type: object
+                      properties:
+                        type:
+                          type: string
+                          example: "PURCHASE"
+                          description: Type of operation.
+                          x-description-i18n:
+                            eng: Type of operation.
+                            spa: Tipo de operación.
+                            por: Tipo de operação.
+                        amount:
+                          type: string
+                          example: "12.47"
+                          description: Amount of the operation.
+                          x-description-i18n:
+                            eng: Amount of the operation.
+                            spa: Monto de la operación.
+                            por: Valor da operação.
+                        results:
+                          type: array
+                          description: Results of the execution of the operation. These arrays are only obtained when an intent reaches the CLOSED state.
+                          x-description-i18n:
+                            eng: Results of the execution of the operation. These arrays are only obtained when an intent reaches the CLOSED state.
+                            spa: Resultados de la ejecución de la operación. Estos arrays solo se obtienen cuando un intent llega al estado CLOSED.
+                            por: Resultados da execução da operação. Essos arrays são retornadas apenas quando um intent atinge o estado CLOSED.
+                          items:
+                            type: object
+                            properties:
+                              id:
+                                type: number
+                                example: 123456
+                                description: Payment ID linked to the source with the transaction information. 
+                                x-description-i18n:
+                                  eng: Payment ID linked to the source with the transaction information.
+                                  spa: ID del pago vinculado a la fuente con la información de la transacción.
+                                  por: ID do pagamento vinculado à fonte com as informações da transação.
+                              source:
+                                type: string
+                                example: PAYMENT
+                                description: Source with the transaction information. 
+                                x-description-i18n:
+                                  eng: Source with the transaction information.
+                                  spa: Fuente con la información de la transacción.
+                                  por: Fonte com as informações da transação.
+                  enabler_configuration:
+                    type: object
+                    description: Configurations for the enabler that processes the intent.
+                    x-description-i18n:
+                      eng: Configurations for the enabler that processes the intent.
+                      spa: Configuraciones para el enabler que procesa el intent.
+                      por: Configurações para o enabler que processa o intent.
+                    properties:
+                      device_payment_mode:
+                        type: string
+                        example: "CARD"
+                        description: Payment method by which the intent will be processed. Default:CARD
+                        x-description-i18n:
+                          eng: Payment method by which the intent will be processed. Default:CARD
+                          spa: Método de pago por el cual se va a procesar el intent. Valor por defecto:CARD
+                          por: Método de pagamento pelo qual o intent deve ser processado. Valor padrão:CARD
+                      ticket_number:
+                        type: string
+                        example: "abc1"
+                        description: An alphanumeric value to identify the invoice or ticket number. It will be printed on the ticket of the device.
+                        x-description-i18n:
+                          eng: An alphanumeric value to identify the invoice or ticket number. It will be printed on the ticket of the device.
+                          spa: Un valor alfanumérico para identificar el número de factura o ticket. Se imprimirá en el ticket del dispositivo.
+                          por: Um valor alfanumérico para identificar o número da fatura ou do ticket. Será impresso no ticket do aparelho.
+                      print_on_terminal:
+                        type: array
+                        description: Ticket to be printed on the device at the end of processing.
+                        x-description-i18n:
+                          eng: Ticket to be printed on the device at the end of processing.
+                          spa: Ticket que se desea imprimir en el dispositivo al finalizar el procesamiento.
+                          por: Ticket a ser impresso no dispositivo no final do processamento.
+                        items:
+                          type: string
+                          example: "SELLER_TICKET"
+                          enum:
+                            - SELLER_TICKET -- Print seller ticket.
+        '401':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey: 
+                    type: string
+                    enum:
+                      - 401-- Unauthorized - Access Token is invalid            
+        '404':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 404-- not_found - Register not found
+        '500':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500-- Internal server error
+    delete:
+      tags:
+        - $ref: '#/tags/mp-point'
+      summary: Cancel an intent.
+      x-summary-i18n:
+        eng: Cancel an intent.
+        spa: Cancelar un intent.
+        por: Cancelar um intent.
+      description: Cancels an intent that is in the OPENED state and not sent yet to terminal.
+      x-description-i18n:
+        eng: Cancels an intent that is in OPENED state and not sent yet to terminal.
+        spa: Cancela un intento que está en estado OPENED y que todavía no fue enviado al dispositivo.
+        por: Cancela um intent que está no estado OPENED e ainda não foi enviada ao dispositivo.
+      parameters:
+        - name: intent_id
+          in: path
+          description: id of the intent, which is generated in its creation.
+          x-description-i18n:
+            eng: id of the intent, which is generated in its creation.
+            spa: id del intent, que es generado en su creación.
+            por: id do intent, que é gerado na sua criação.
+          required: true
+          schema:
+            type: string
+            example:  ABCD1234
+      responses:
+        '204':
+          description: The intent was successfully canceled.
+          x-description-i18n:
+            eng: The intent was successfully canceled.
+            spa: El intent fue cancelado satisfactoriamente.
+            por: O intent foi cancelado com sucesso.
+        '404':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 404-- not_found - Not found The intent {intent_id} doesn't exist!
+                      - 404-- pos_not_found - Point of sale with externalId {external_id} is not found
+        '500':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500-- Internal server error  
+  /instore-api/integrations/v1/intents/qr/pos/{external_id}:
+    post:
+      tags:
+        - $ref: '#/tags/qr-code'
+      summary: Create an intent qr for a point of sale
+      x-summary-i18n:
+        eng: Creates an intent qr for a point of sale
+        spa: Crea un intent qr para un punto de venta
+        por: Cria um intent qr para um ponto de venda
+      description: Create an intent qr to the point of sale by external_id, its identification
+      x-description-i18n:
+        eng: Creates an intent qr to the point of sale by external_id, its identification
+        spa: Crea un intent qr para la caja identificada con el external_id
+        por: Cria um intent qr para a caixa identificada com o external_id
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                description:
+                  type: string
+                  example: "description"
+                  required: true
+                  description: Description of the intent given by the user. Length Max:255 - Min:1
+                  x-description-i18n:
+                    eng: Description of the intent given by the user. Length Max:255 - Min:1
+                    spa: Descripción del intento enviada por el usuario. Longitud Max:255 - Min:1
+                    por: Descrição do intent enviada pelo usuário. Comprimento máx:255 - mín:1
+                external_reference:
+                  type: string
+                  example: "abc-123-234"
+                  required: true
+                  description: Custom ID that you can sync with your sales system. Length Max:100 Min:1
+                  x-description-i18n:
+                    eng: Custom ID that you can sync with your sales system. Length Max:100 Min:1
+                    spa: ID personalizado que puedes sincronizar con tu sistema de venta. Longitud Max:100 Min:1
+                    por: ID personalizado que pode sincronizar com seu sistema de vendas. Comprimento máx:100 min:1
+                sponsor: 
+                  type: object
+                  properties:
+                    id:
+                      type: number
+                      example: 1234
+                      description: Integrator Identifier.
+                      x-description-i18n:
+                        eng: Integrator Identifier.
+                        spa: Identificador del integrador.
+                        por: Identificador do desenvolvedor.
+                operations:
+                  type: array
+                  required: true
+                  description: Set of operations to process. Size Max:2 Min:1
+                  x-description-i18n:
+                    eng: Set of operations to process. Size Max:2 Min:1
+                    spa: Conjunto de operaciones a procesar. Tamaño Max:2 Min:1
+                    por: Conjunto de operações a processar. Max:2 Min:1
+                  items:
+                    type: object
+                    properties:
+                      type:
+                        type: string
+                        example: "PURCHASE"
+                        required: true
+                        description: Type of operation.
+                        x-description-i18n:
+                          eng: Type of operation.
+                          spa: Tipo de operación.
+                          por: Tipo de operação.
+                        enum:
+                          - PURCHASE -- Type used to make purchases.
+                          - CASH_OUT -- Type used to make cash out. 
+                      amount:
+                        type: string
+                        example: 12.47
+                        description: Amount of operation. This field is optional if you choose to send the items intead. Value Min:"0.01"
+                        x-description-i18n:
+                          eng: Amount of operation. This field is optional if you choose to send the items intead. Value Min:"0.01"
+                          spa: Monto de la operación. Este campo es opcional si eliges enviar un conjunto de ítems. Value Min:"0.01"
+                          por: Valor da operação. Este campo é opcional se você optar por enviar um conjunto de itens. Value Min:"0.01"
+                      items:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            sku_number:
+                              type: string
+                              example: ABC123
+                              description: Item code. Length Max:100 Min:1
+                              x-description-i18n:
+                                eng: Item code. Length Max:100 Min:1
+                                spa: Código de artículo. Longitud Max:100 Min:1
+                                por: Código do artigo. Max:100 Min:1
+                            title:
+                              type: string
+                              example: Name
+                              required: true
+                              description: Item name. Length Max:100 Min:1
+                              x-description-i18n:
+                                eng: Item name. Length Max:100 Min:1
+                                spa: Nombre de artículo. Longitud Max:100 Min:1
+                                por: Nome do artigo. Max:100 Min:1
+                            quantity:
+                              type: number
+                              example: 6
+                              required: true
+                              description: Number of units of the item. Value Max:1000000 Min:1
+                              x-description-i18n:
+                                eng: Number of units of the item. Value Max:1000000 Min:1
+                                spa: Cantidad de unidades del ítem. Valor Max:1000000 Min:1
+                                por: Número de unidades do item. Valor máx:1000000 Mín:1
+                            unit_measure:
+                              type: string
+                              example: UNIT
+                              required: true
+                              description: Unit of measurement of the item.
+                              x-description-i18n:
+                                eng: Unit of measurement of the item.
+                                spa: Unidad de medida del ítem.
+                                por: Unidade de medida do item.
+                              enum:
+                                - PACK --
+                                - UNIT --
+                            unit_price:
+                              type: string
+                              example: 12.45
+                              required: true
+                              description: Unit price of the item. Value Min:"0.01"
+                              x-description-i18n:
+                                eng: Unit price of the item. Value Min:"0.01"
+                                spa: Precio unitario del ítem.  Valor Min:"0.01"
+                                por: Preço unitário do item. Valor Min:"0.01"
+                            external_categories:
+                              type: array
+                              items:
+                                type: object
+                                properties:
+                                  id:
+                                    type: string
+                                    example: abc
+                                    description: External item categories.
+                                    x-description-i18n:
+                                      eng: External item categories.
+                                      spa: Categorías externas del ítem.
+                                      por: Categorias externas do item.     
+                            total_amount:
+                              type: string
+                              example: 12.45
+                              required: true
+                              description: Total amount of the item. Value Min:"0.01"
+                              x-description-i18n:
+                                eng: Total amount of the item. Value Min:"0.01"
+                                spa: Monto total del ítem. Valor Min:"0.01"
+                                por: Valor total do item. Valor Min:"0.01"
+                enabler_configuration:
+                  type: object
+                  description: Configurations for the enabler that processes the intent.
+                  x-description-i18n:
+                    eng: Configurations for the enabler that processes the intent.
+                    spa: Configuraciones para el enabler que procesa el intento.
+                    por: Configurações para o enabler que processa o intent.
+                  properties:
+                    qr_payment_mode:
+                      type: array
+                      description: QR mode to use in the operation. It can be used individually or both at the same time.
+                      x-description-i18n:
+                        eng: QR mode to use in the operation. It can be used individually or both at the same time.
+                        spa: Modo de QR a utilizar en la operación. Se pueden utilizar individualmente o ambos al mismo tiempo.
+                        por: Modo QR para usar na operação. Eles podem ser usados individualmente ou ambos ao mesmo tempo.
+                      items:
+                        type: string
+                        example: "STATIC"
+                        enum:
+                          - STATIC -- Default. Refers to the printed fixed static QR associated with the POS
+                          - DYNAMIC -- Refers to the creation of a single-use QR of the operation.
+      parameters:
+        - name: external_id
+          in: path
+          description: External POS ID of the point of sale.
+          x-description-i18n:
+            eng: External POS ID of the point of sale.
+            spa: External POS ID de la caja.
+            por: External POS ID da caixa.
+          required: true
+          schema:
+            type: string
+            example:  ABCD1234
+        - name: x-integrator-id
+          in: header
+          description: Unique identification code of our certified developers.
+          x-description-i18n:
+            eng: Unique identification code of our certified developers.
+            spa: Código único de identificación de nuestros developers certificados.
+            por: Código de identificação exclusivo de nossos desenvolvedores certificados.
+          required: false
+          schema:
+            type: string
+            example: "234567"
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema:   
+                type: object
+                properties:
+                  id:
+                    type: string
+                    example: "a124567-123b-1234-1234-1234123455507"
+                    description: ID of the intent.
+                    x-description-i18n:
+                      eng: ID of the intent.
+                      spa: ID del intent.
+                      por: ID do intent.
+                  status:
+                    type: string
+                    example: "OPENED"
+                    description: This field describes the current status of the intent.
+                    x-description-i18n:
+                      eng: This field describes the current status of the intent.
+                      spa: Este campo describe el estado actual del intent.
+                      por: Este campo descreve o estado atual do intent.
+                  description:
+                    type: string
+                    example: "description"
+                    description: Description of the intent given by the user.
+                    x-description-i18n:
+                      eng: Description of the intent given by the user.
+                      spa: Descripción del intent enviada por el usuario.
+                      por: Descrição do intent enviada pelo usuário.
+                  external_reference:
+                    type: string
+                    example: "abc-123-234"
+                    description: Custom ID that you can sync with your sales system.
+                    x-description-i18n:
+                      eng: Custom ID that you can sync with your sales system.
+                      spa: ID personalizado que puedes sincronizar con tu sistema de venta.
+                      por: ID personalizado que pode sincronizar com seu sistema de vendas.
+                  sponsor: 
+                    type: object
+                    properties:
+                      id:
+                        type: number
+                        example: 1234
+                        description: Integrator Identifier.
+                        x-description-i18n:
+                          eng: Integrator Identifier.
+                          spa: Identificador del integrador.
+                          por: Identificador do desenvolvedor.
+                  operations:
+                    type: array
+                    description: Set of operations to process.
+                    x-description-i18n:
+                      eng: Set of operations to process.
+                      spa: Conjunto de operaciones a procesar.
+                      por: Conjunto de operações a processar.
+                    items:
+                      type: object
+                      properties:
+                        type:
+                          type: string
+                          example: "PURCHASE"
+                          description: Type of operation
+                          x-description-i18n:
+                            eng: Type of operation.
+                            spa: Tipo de operación.
+                            por: Tipo de operação.
+                          enum:
+                            - PURCHASE -- Type used to make purchases.
+                            - CASH_OUT -- Type used to make cash out. 
+                        amount:
+                          type: string
+                          example: 12.47
+                          description: Amount of operation
+                          x-description-i18n:
+                            eng: Amount of the operation.
+                            spa: Monto de la operación.
+                            por: Valor da operação.
+                        items:
+                          type: array
+                          items:
+                            type: object
+                            properties:
+                              sku_number:
+                                type: string
+                                example: ABC123
+                                description: Item code.
+                                x-description-i18n:
+                                  eng: Item code.
+                                  spa: Código de artículo.
+                                  por: Código do artigo.
+                              title:
+                                type: string
+                                example: Name
+                                description: Item name.
+                                x-description-i18n:
+                                  eng: Item name.
+                                  spa: Nombre de artículo.
+                                  por: Nome do artigo.
+                              quantity:
+                                type: number
+                                example: 6
+                                description: Number of units of the item.
+                                x-description-i18n:
+                                  eng: Number of units of the item.
+                                  spa: Cantidad de unidades del ítem.
+                                  por: Número de unidades do item.                
+                              unit_measure:
+                                type: string
+                                example: UNIT
+                                description: Unit of measurement of the item.
+                                x-description-i18n:
+                                  eng: Unit of measurement of the item.
+                                  spa: Unidad de medida del ítem.
+                                  por: Unidade de medida do item.                
+                              unit_price:
+                                type: string
+                                example: 12.45
+                                description: Unit price of the item.
+                                x-description-i18n:
+                                  eng: Unit price of the item.
+                                  spa: Precio unitario del ítem.
+                                  por: preço unitário do item.
+                              external_categories:
+                                type: array
+                                items:
+                                  type: object
+                                  properties:
+                                    id:
+                                      type: string
+                                      example: abc
+                                      description: External item categories.
+                                      x-description-i18n:
+                                        eng: External item categories.
+                                        spa: Categorías externas del ítem.
+                                        por: Categorias externas do item.      
+                              total_amount:
+                                type: string
+                                example: 12.45
+                                description: Total amount of the item.
+                                x-description-i18n:
+                                  eng: Total amount of the item.
+                                  spa: Monto total del ítem.
+                                  por: Valor total do item.
+                  enabler_configuration:
+                    type: object
+                    description: Configurations for the enabler that processes the intent.
+                    x-description-i18n:
+                      eng: Configurations for the enabler that processes the intent.
+                      spa: Configuraciones para el enabler que procesa el intent.
+                      por: Configurações para o enabler que processa o intent.
+                    properties:
+                      qr_payment_mode:
+                        type: array
+                        description: QR mode to use in the operation. It can be used individually or both at the same time.
+                        x-description-i18n:
+                          eng: QR mode to use in the operation. It can be used individually or both at the same time.
+                          spa: Modo de QR a utilizar en la operación. Se pueden utilizar individualmente o ambos al mismo tiempo.
+                          por: Modo QR para usar na operação. Eles podem ser usados individualmente ou ambos ao mesmo tempo.
+                        items:
+                          type: string
+                          example: "STATIC"
+                          enum:
+                            - STATIC -- Default. Refers to the printed fixed static QR associated with the POS
+                            - DYNAMIC -- Refers to the creation of a single-use QR of the operation.
+        '400':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey: 
+                    type: string
+                    enum:
+                      - 400-- bad_request - Bad request                         
+        '401':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey: 
+                    type: string
+                    enum:
+                      - 401-- Unauthorized - Access Token is invalid            
+        '404':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 404-- pos_not_found - Point of sale with externalId {externalID} is not found
+        '409':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 409-- Conflict - There is already a queued intent for the device
+        '500':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500-- Internal server error                      
+  /instore-api/integrations/v1/intents/{intent_id}/qr:
+    get:
+      tags:
+        - $ref: '#/tags/qr-code'
+      summary: Get all information about a qr intent
+      x-summary-i18n:
+        eng: Get all information about a qr intent
+        spa: Obtener toda la información de un intent qr
+        por: Obter todas as informações de um intent qr
+      description: Gets all the information about a qr intent in the current state
+      x-description-i18n:
+        eng: Gets all the information about a qr intent in the current state
+        spa: Obtiene toda la información de un intent qr en el estado actual
+        por: Obtém todas as informações de um intent qr no estado atual
+      parameters:
+        - name: intent_id
+          in: path
+          description: Identifier of the intent, which is generated in its creation.
+          x-description-i18n:
+            eng: Identifier of the intent, which is generated in its creation.
+            spa: Identificador del intent, que es generado en su creación.
+            por: Identificador do intent, que é gerado na sua criação.
+          required: true
+          schema:
+            type: string
+            example:  ABCD1234
+      responses:
+        '200':
+          description: Find
+          content:
+            application/json:
+              schema:   
+                type: object
+                properties:
+                  id:
+                    type: string
+                    example: "a124567-123b-1234-1234-1234123455507"
+                    description: ID of the intent.
+                    x-description-i18n:
+                      eng: ID of the intent.
+                      spa: ID del intent.
+                      por: ID do intent.
+                  status:
+                    type: string
+                    example: "OPENED"
+                    description: This field describes the current status of the intent.
+                    x-description-i18n:
+                      eng: This field describes the current status of the intent.
+                      spa: Este campo describe el estado actual del intent.
+                      por: Este campo descreve o estado atual do intent.
+                    enum:
+                      - OPENED -- the intent is created and ready to be fetched on the device.
+                      - CLOSED -- the intent ended and there is already a result.
+                      - CANCELED -- the intent is canceled by user request.
+                      - EXPIRED -- the intent took more than an hour without being processed.
+                  description:
+                    type: string
+                    example: "description"
+                    description: Description of the intent given by the user.
+                    x-description-i18n:
+                      eng: Description of the intent given by the user.
+                      spa: Descripción del intento enviada por el usuario.
+                      por: Descrição do intent enviada pelo usuário.
+                  external_reference:
+                    type: string
+                    example: "abc-123-234"
+                    description: Custom ID that you can sync with your sales system.
+                    x-description-i18n:
+                      eng: Custom ID that you can sync with your sales system.
+                      spa: ID personalizado que puedes sincronizar con tu sistema de venta.
+                      por: ID personalizado que pode sincronizar com seu sistema de vendas.
+                  sponsor: 
+                    type: object
+                    properties:
+                      id:
+                        type: number
+                        example: 1234
+                        description: Integrator Identifier.
+                        x-description-i18n:
+                          eng: Integrator Identifier.
+                          spa: Identificador del integrador.
+                          por: Identificador do desenvolvedor.
+                  operations:
+                    type: array
+                    description: Set of operations to process.
+                    x-description-i18n:
+                      eng: Set of operations to process.
+                      spa: Conjunto de operaciones a procesar.
+                      por: Conjunto de operações a processar.
+                    items:
+                      type: object
+                      properties:
+                        type:
+                          type: string
+                          example: "PURCHASE"
+                          description: Type of operation
+                          x-description-i18n:
+                            eng: Type of operation.
+                            spa: Tipo de operación.
+                            por: Tipo de operação.
+                          enum:
+                            - PURCHASE -- Type used to make purchases.
+                            - CASH_OUT -- Type used to make cash out. 
+                        amount:
+                          type: string
+                          example: 12.47
+                          description: Amount of operation
+                          x-description-i18n:
+                            eng: Amount of the operation.
+                            spa: Monto de la operación.
+                            por: Valor da operação.
+                        results:
+                          type: array
+                          description: Results of the execution of the operation. These arrays are only obtained when an intent reaches the CLOSED state.
+                          x-description-i18n:
+                            eng: Results of the execution of the operation. These arrays are only obtained when an intent reaches the CLOSED state.
+                            spa: Resultados de la ejecución de la operación. Estos arrays solo se obtienen cuando un intent llega al estado CLOSED.
+                            por: Resultados da execução da operação. Essos arrays são retornadas apenas quando um intent atinge o estado CLOSED.
+                          items:
+                            type: object
+                            properties:
+                              id:
+                                type: number
+                                example: 123456
+                                description: Payment ID linked to the source with the transaction information. 
+                                x-description-i18n:
+                                  eng: Payment ID linked to the source with the transaction information.
+                                  spa: ID del pago vinculado a la fuente con la información de la transacción.
+                                  por: ID do pagamento vinculado à fonte com as informações da transação.
+                              source:
+                                type: string
+                                example: PAYMENT
+                                description: Source with the transaction information. 
+                                x-description-i18n:
+                                  eng: Source with the transaction information.
+                                  spa: Fuente con la información de la transacción.
+                                  por: Fonte com as informações da transação.
+                                enum:
+                                  - PAYMENT -- ID field is related to a payment.
+                                  - PAYOUT --  ID field is related to a payout.
+                        items:
+                          type: array
+                          items:
+                            type: object
+                            properties:
+                              sku_number:
+                                type: string
+                                example: ABC123
+                                description: Item code.
+                                x-description-i18n:
+                                  eng: Item code.
+                                  spa: Código de artículo.
+                                  por: Código do artigo.
+                              title:
+                                type: string
+                                example: Name
+                                description: Item name.
+                                x-description-i18n:
+                                  eng: Item name.
+                                  spa: Nombre de artículo.
+                                  por: Nome do artigo.
+                              quantity:
+                                type: number
+                                example: 6
+                                description: Number of units of the item.
+                                x-description-i18n:
+                                  eng: Number of units of the item.
+                                  spa: Cantidad de unidades del ítem.
+                                  por: Número de unidades do item.                
+                              unit_measure:
+                                type: string
+                                example: UNIT
+                                description: Unit of measurement of the item.
+                                x-description-i18n:
+                                  eng: Unit of measurement of the item.
+                                  spa: Unidad de medida del ítem.
+                                  por: Unidade de medida do item.                 
+                              unit_price:
+                                type: string
+                                example: 12.45
+                                description: Unit price of the item.
+                                x-description-i18n:
+                                  eng: Unit price of the item.
+                                  spa: Precio unitario del ítem.
+                                  por: Preço unitário do item.
+                              external_categories:
+                                type: array
+                                items:
+                                  type: object
+                                  properties:
+                                    id:
+                                      type: string
+                                      example: abc
+                                      description: External item categories.
+                                      x-description-i18n:
+                                        eng: External item categories.
+                                        spa: Categorías externas del ítem.
+                                        por: Categorias externas do item.      
+                              total_amount:
+                                type: string
+                                example: 12.45
+                                description: Total amount of the item..
+                                x-description-i18n:
+                                  eng: Total amount of the item.
+                                  spa: Monto total del ítem.
+                                  por: Valor total do item.
+                  enabler_configuration:
+                    type: object
+                    description: Configurations for the enabler that processes the intent.
+                    x-description-i18n:
+                      eng: Configurations for the enabler that processes the intent.
+                      spa: Configuraciones para el enabler que procesa el intent.
+                      por: Configurações para o enabler que processa o intent.
+                    properties:
+                      qr_payment_mode:
+                        type: array
+                        description: QR mode to use in the operation. It can be used individually or both at the same time.
+                        x-description-i18n:
+                        eng: QR mode to use in the operation. It can be used individually or both at the same time.
+                        spa: Modo de QR a utilizar en la operación. Se pueden utilizar individualmente o ambos al mismo tiempo.
+                        por: Modo QR para usar na operação. Eles podem ser usados individualmente ou ambos ao mesmo tempo.
+                        items:
+                          type: string
+                          example: "STATIC"
+                          enum:
+                            - STATIC -- Default. Refers to the printed fixed static QR associated with the POS
+                            - DYNAMIC -- Refers to the creation of a single-use QR of the operation.
+        '401':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey: 
+                    type: string
+                    enum:
+                      - 401-- Unauthorized - Access Token is invalid            
+        '404':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 404-- not_found - Register not found
+        '500':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500-- Internal server error
+    delete:
+      tags:
+        - $ref: '#/tags/qr-code'
+      summary: Cancel an intent
+      x-summary-i18n:
+        eng: Cancel an intent
+        spa: Cancelar un intent
+        por: Cancelar im intent
+      description: Cancels an intent that is in the OPENED state
+      x-description-i18n:
+        eng: Cancels an intent that is in the OPENED state
+        spa: Cancela un intent que está en estado OPENED
+        por: Cancela um intent no estado OPENED
+      parameters:
+        - name: intent_id
+          in: path
+          description: id of the intent, which is generated in its creation.
+          x-description-i18n:
+            eng: id of the intent, which is generated in its creation.
+            spa: id del intent, que es generado en su creación.
+            por: id do intent, que é gerado na sua criação.
+          required: true
+          schema:
+            type: string
+            example:  ABCD1234
+      responses:
+        '204':
+          description: The intent was successfully canceled
+        '404':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 404-- not_found - Not found The intent {intent_id} doesn't exist!
+                      - 404-- pos_not_found - Point of sale with externalId {external_id} is not found
+        '500':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500-- Internal server error  
+  /instore-api/point/v1/devices:
+    get:
+      tags:
+        - $ref: '#/tags/mp-point'
+      summary: Get devices
+      x-summary-i18n:
+        eng: Get devices
+        spa: Obtener dispositivos
+        por: Obter dispositivos
+      description: This endpoint allows you to get the devices. Devices can be filtered by pos and/or store
+      x-description-i18n:
+        eng: This endpoint allows you to get the devices. Devices can be filtered by pos and/or store
+        spa: Este endpoint te permite obtener los dispositivos. Los dispositivos se pueden filtrar por punto de venta y/o tienda
+        por: Este endpoint permite que você obtenha os dispositivos. Os dispositivos podem ser filtrados por ponto de venda e/ou loja
+      parameters:
+        - name: store_id
+          in: query
+          description: Optional field to filter by store's ID.
+          x-description-i18n:
+            eng: Optional field to filter by store's ID.
+            spa: Campo opcional para filtrar por ID del local.
+            por: Campo opcional para filtrar por ID do local.
+          schema:
+            type: string
+            example: "1235456678"
+        - name: pos_id
+          in: query
+          description: Optional field to filter by Device ID.
+          x-description-i18n:
+            eng: Optional field to filter by Device ID.
+            spa: Campo opcional para filtrar por ID de dispositivo.
+            por: Campo opcional para filtrar por ID do dispositivo.
+          schema:
+            type: integer
+            example: 1235456678
+        - name: limit
+          in: query
+          description: pagination limit
+          x-description-i18n:
+            eng: pagination limit
+            spa: límite de paginación
+            por: limite de paginação
+          schema:
+            type: integer
+            example: 50
+        - name: offset
+          in: query
+          description: pagination offset
+          x-description-i18n:
+            eng: pagination offset
+            spa: offset de paginación
+            por: offset de paginação
+          schema:
+            type: integer
+            example: 0
+       
+      responses:
+        '200':
+          description: Success - Paged devices list
+          x-description-i18n:
+            eng: Success - Paged devices list
+            spa: Éxito - lista de dispositivos paginados
+            por: Sucesso - lista de dispositivos paginados
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  devices:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                          example: "INGENICO_MOVE2500__ING-12345678"
+                        pos_id:
+                          type: integer
+                          description: POS identifier
+                          x-description-i18n:
+                            eng: POS identifier
+                            spa: Identificador del POS
+                            por: Identificador do POS
+                          example: 1234567
+                        store_id: 
+                          type: string
+                          description: STORE identifier
+                          x-description-i18n:
+                            eng: Store identifier
+                            spa: Identificador de la tienda
+                            por: Identificador da loja
+                          example: 12345678
+                        external_id: 
+                          type: string
+                          description: External_id of the store to which the pos belongs
+                          x-description-i18n:
+                            eng: External_id of the store to which the pos belongs
+                            spa: External_id de la tienda a la que pertenece el POS
+                            por: External_id da loja a qual pertence o POS
+                          example: SUC0101POS
+                        operating_mode:
+                          type: string
+                          example: “PDV” | “STANDALONE”
+                  paging:
+                    type: object
+                    properties:
+                       total:
+                        type: integer
+                        example: 1
+                       offset:
+                        type: integer
+                        example: 0    
+                       limit:
+                        type: integer
+                        example: 50
+        '400':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey: 
+                    type: string
+                    enum:
+                      - 400--Bad Request - query param incorrect format            
+        '401':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                 type: object
+                 properties:
+                    errorKey:
+                      type: string
+                      enum:
+                        - 401-- Unauthorized - token is invalid 
+        '403':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 403-- Forbidden Integrator isn't registered 
+        '500':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500-- Internal server error
+  /instore-api/point/v1/devices/{device_id}:
+    patch:
+      tags:
+        - $ref: '#/tags/mp-point'
+      summary: Change operating mode
+      x-summary-i18n:
+        eng: Change operating mode
+        spa: Cambiar el modo de operación
+        por: Alterar modo de operação
+      description: This endpoint allows you to change the device operating mode. The options for operating mode are PDV and STANDALONE. PDV is used when you want to use device in mode integration with our API and STANDALONE is used when you want to process payments without our API
+      x-description-i18n:
+        eng: This endpoint allows you to change the device operating mode. The options for operating mode are PDV and STANDALONE. PDV is used when you want to use device in mode integration with our API and STANDALONE is used when you want to process payments without our API
+        spa: Este endpoint te permite cambiar el modo de operación del dispositivo. Las opciones para el modo de operación son PDV y STANDALONE. PDV se usa cuando deseas usar el dispositivo en modo de integración con nuestra API y STANDALONE se usa cuando deseas procesar pagos sin nuestra API
+        por: Este endpoint permite alterar o modo de operação do dispositivo. As opções para o modo de operação são PDV e STANDALONE. PDV é usado quando você deseja usar o dispositivo em modo de integração com nossa API e STANDALONE é usado quando você deseja processar pagamentos sem nossa API
+      parameters:
+        - name: device_id
+          in: path
+          description: Device Id
+          x-description-i18n:
+           eng: Device ID
+           spa: ID del dispositivo
+           por: ID do dispositivo
+          required: true
+          schema:
+            type: string
+            example: "{deviceId}"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+               type: object
+               properties:
+                  operating_mode:
+                    type: string
+                    required: true
+                    nullable: false
+                    example: "PDV"
+                    enum:
+                      - PDV -- point of sale, integrated mode with the API.
+                      - STANDALONE -- default device configuration, mode not integrated with the API.
+      responses:
+        '200':
+          description: Success - Operating mode successfully changed
+          x-description-i18n:
+            eng: Success - Operating mode successfully changed
+            spa: Éxito - Modo de operación cambió correctamente
+            por: Sucesso - Modo de operação alterado com sucesso
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  operating_mode:
+                    type: string
+                    nullable: false
+                    required: true
+                    example: "PDV"
+                    enum:
+                      - PDV -- point of sale, integrated mode with the API.
+                      - STANDALONE -- default device configuration, mode not integrated the API.
+        '400':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 400-- Bad-Request - Device id incorrect format
+        '403':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 403-- Unauthorized - User not logged into the device
+        '500':
+            description: Error
+            x-description-i18n:
+              eng: Error
+              spa: Error
+              por: Erro
+            content:
+              application/json:
+                schema:
+                  type: object
+                  properties:
+                    errorKey:
+                      type: string
+                      enum:
+                        - 500-- Internal server error
