@@ -38,7 +38,7 @@ paths:
                   type: string
                   example: "abc-123-234"
                   required: true
-                 description: Custom ID that you can sync with your sales system. Length Max:100 Min:1
+                  description: Custom ID that you can sync with your sales system. Length Max:100 Min:1
                   x-description-i18n:
                     eng: Custom ID that you can sync with your sales system. Length Max:100 Min:1
                     spa: ID personalizado que puedes sincronizar con tu sistema de venta. Longitud Max:100 Min:1
@@ -653,7 +653,7 @@ paths:
                   external_reference:
                     type: string
                     example: "abc-123-234"
-                     description: Custom ID that you can sync with your sales system.
+                    description: Custom ID that you can sync with your sales system.
                     x-description-i18n:
                       eng: Custom ID that you can sync with your sales system.
                       spa: ID personalizado que puedes sincronizar con tu sistema de venta.
@@ -921,7 +921,7 @@ paths:
                       amount:
                         type: string
                         example: 12.47
-                       description: Amount of operation. This field is optional if you choose to send the items intead. Value Min:"0.01"
+                        description: Amount of operation. This field is optional if you choose to send the items intead. Value Min:"0.01"
                         x-description-i18n:
                           eng: Amount of operation. This field is optional if you choose to send the items intead. Value Min:"0.01"
                           spa: Monto de la operación. Este campo es opcional si eliges enviar un conjunto de ítems. Value Min:"0.01"

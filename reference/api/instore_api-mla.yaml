@@ -364,7 +364,7 @@ paths:
                         type: string
                         example: "PURCHASE"
                         required: true
-                         description: Type of operation
+                        description: Type of operation
                         x-description-i18n:
                           eng: Type of operation.
                           spa: Tipo de operación.
@@ -389,7 +389,7 @@ paths:
                     ticket_number:
                       type: string
                       example: "abc1"
-                       description: An alphanumeric value to identify the ticket number. It will be printed on the ticket of the device. Length Min:1 Max:100
+                      description: An alphanumeric value to identify the ticket number. It will be printed on the ticket of the device. Length Min:1 Max:100
                       x-description-i18n:
                         eng: An alphanumeric value to identify the ticket number. It will be printed on the ticket of the device. Length Min:1 Max:100
                         spa: Un valor alfanumérico para identificar el número de factura o ticket. Se imprimirá en el ticket del dispositivo. Longitud Min:1 Max:100
@@ -507,7 +507,7 @@ paths:
                             por: Valor da operação.
                   enabler_configuration:
                     type: object
-                     description: Configurations for the enabler that processes the intent.
+                    description: Configurations for the enabler that processes the intent.
                     x-description-i18n:
                       eng: Configurations for the enabler that processes the intent.
                       spa: Configuraciones para el enabler que procesa el intent.
@@ -754,7 +754,7 @@ paths:
                       device_payment_mode:
                         type: string
                         example: "CARD"
-                         description: Payment method by which the intent will be processed. Default:CARD
+                        description: Payment method by which the intent will be processed. Default:CARD
                         x-description-i18n:
                           eng: Payment method by which the intent will be processed. Default:CARD
                           spa: Método de pago por el cual se va a procesar el intent. Valor por defecto:CARD
@@ -1242,10 +1242,10 @@ paths:
                       qr_payment_mode:
                         type: array
                         description: QR mode to use in the operation. It can be used individually or both at the same time.
-                      x-description-i18n:
-                        eng: QR mode to use in the operation. It can be used individually or both at the same time.
-                        spa: Modo de QR a utilizar en la operación. Se pueden utilizar individualmente o ambos al mismo tiempo.
-                        por: Modo QR para usar na operação. Eles podem ser usados individualmente ou ambos ao mesmo tempo.
+                        x-description-i18n:
+                          eng: QR mode to use in the operation. It can be used individually or both at the same time.
+                          spa: Modo de QR a utilizar en la operación. Se pueden utilizar individualmente o ambos al mismo tiempo.
+                          por: Modo QR para usar na operação. Eles podem ser usados individualmente ou ambos ao mesmo tempo.
                         items:
                           type: string
                           example: "STATIC"
@@ -1787,7 +1787,7 @@ paths:
                   errorKey: 
                     type: string
                     enum:
-                      - 400-- Bad Request - query param incorrect format            
+                      - 400--Bad Request - query param incorrect format            
         '401':
           description: Error
           x-description-i18n:
