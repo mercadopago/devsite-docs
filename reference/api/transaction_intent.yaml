@@ -2326,8 +2326,8 @@ paths:
       summary: Modify Transaction Intent 
       x-summary-i18n:
         eng: Modify Transaction Intent 
-        spa: Modifificar Transaction Intent 
-        por: Modifificar Transaction Intent
+        spa: Modificar Transaction Intent 
+        por: Modificar Transaction Intent
       description: This endpoint allows for the modification of a Transaction Intent created in Builder mode. By using the Transaction Intent ID, it's possible to make edits through the PATCH endpoint. This enables the alteration or addition of fields in the intent's body before its processing. It's important to note that it's not necessary to send all fields filled; only those you want to modify or add
       x-description-i18n:
         eng: This endpoint allows for the modification of a Transaction Intent created in Builder mode. By using the Transaction Intent ID, it's possible to make edits through the PATCH endpoint. This enables the alteration or addition of fields in the intent's body before its processing. It's important to note that it's not necessary to send all fields filled; only those you want to modify or add
