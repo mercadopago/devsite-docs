@@ -383,21 +383,7 @@ paths:
                           spa: Total de elementos.
                           por: Total de itens.
                         example: 100
-                taxes:
-                  type: array
-                  description: Information about the paid taxes.
-                  items:
-                    type: object
-                    properties:
-                      value:
-                        type: number
-                        description: Total amount of tax payed. This amount is not included in the total sum of the order.
-                        example: 19
-                      type:
-                        type: string
-                        description: type of tax payed.
-                        example: IVA
-                sponsor: 
+                sponsor:
                   type: object
                   description: Integrator information.
                   x-description-i18n:
