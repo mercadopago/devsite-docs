@@ -9,11 +9,11 @@ content_section_with_media:
 
 >>>> Country availability <<<<
 ---
-available_countries: mla, mlb, mlm, mlu, mco, mlc, mpe
+available_countries: mla, mlb, mlu, mlc
 
 ---
 
-----[mla, mlc, mlm, mco, mpe, mlu]----
+----[mla, mlc, mlu]----
 
 ---
 bullet_section_with_media: 
@@ -32,7 +32,6 @@ bullet_section_with_media:
 ---
 
 ------------
-
 ----[mlb]----
 
 ---
@@ -88,7 +87,6 @@ available_payments: credit, debit, mercadopago, boleto, pix, pec, moneda, carter
 
 ---
 ------------
-
 ----[mla]---- 
 
 ---
@@ -96,15 +94,6 @@ available_payments: credit, debit, mercadopago, efectivo, atm
 
 ----
 ------------
-
-----[mlm]---- 
-
----
-available_payments: credit, debit, mercadopago, efectivo, atm, moneda
-
-----
-------------
-
 ----[mlu]---- 
 
 ---
@@ -112,15 +101,6 @@ available_payments: credit, efectivo
 
 ----
 ------------
-
-----[mco]---- 
-
----
-available_payments: mercadopago, pse, credit, debit, cartera, efectivo
-
-----
-------------
-
 ----[mlc]---- 
 
 ---
@@ -128,7 +108,6 @@ available_payments: mercadopago, credit, debit
 
 ----
 ------------
-
 ----[mpe]---- 
 
 ---
@@ -136,4 +115,5 @@ available_payments: mercadopago, atm, credit, debit
 
 ----
 ------------
+
 > For details of accepted payment methods in each country, check the full list with [payment methods availability.](/developers/en/docs/sales-processing/payment-methods)
