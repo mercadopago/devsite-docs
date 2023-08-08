@@ -8,6 +8,12 @@ Ela está em constante crescimento, com novos aplicativos sendo integrados. A se
 
 Para acessá-la, basta entrar na seção **Mais opções** e, em seguida, selecionar a aba "Apps", no canto superior direito.
 
+<center>
+
+![miniapps-access](/mini-apps/miniapps-access-pt.gif)
+
+</center>
+
 ## Estrutura
 
 Ela é dividida em duas partes:

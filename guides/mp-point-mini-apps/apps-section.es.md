@@ -8,6 +8,12 @@ Point Smart está en crecimiento constante, con nuevas aplicaciones integradas. 
 
 Para ingresar, solo tienes que entrar en la sección **Más opciones** y luego, seleccionar la pestaña "Apps", en la esquina superior derecha.
 
+<center>
+
+![miniapps-access](/mini-apps/miniapps-access-es.gif)
+
+</center>
+
 ## Estructura
 
 Se divide en dos partes:
