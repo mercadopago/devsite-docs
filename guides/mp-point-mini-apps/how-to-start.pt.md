@@ -1,4 +1,4 @@
-## Como começar
+# Como começar
 
 ## Index File
 

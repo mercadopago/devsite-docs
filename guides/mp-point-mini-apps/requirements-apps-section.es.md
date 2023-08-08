@@ -23,7 +23,7 @@ Esta es la pantalla que la persona usuaria ve cuando no tiene apps instaladas. E
 > <br><br>
 > * Traer la función principal de tu app al resumen.
 > * Usar la versión simplificada del logo, con menos detalles, para que las personas usuarias puedan reconocerla.
->
+> <br>
 > **No tienes que**:
 > <br><br>
 > * Usar el nombre de Mercado Pago o de competidores.
@@ -87,7 +87,7 @@ Aquí, la persona usuaria tiene acceso a los detalles, beneficios y propuesta de
 > * Usar títulos claros que introduzcan el tema que se  tratará en el parágrafo siguiente.
 > * Incluir imágenes fáciles de identificar y entender, que muestren funcionalidades importantes de la app.
 > * Usar colores con buen nivel de contraste entre el fondo y la figura en primer plano de las imágenes.
->
+> <br>
 > **No tienes que**:
 > <br><br>
 > * Usar el nombre de Mercado Pago o de competidores.

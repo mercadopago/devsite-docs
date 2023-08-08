@@ -1,4 +1,4 @@
-# Configurar bluetooth
+# Bluetooth
 
 Para iniciar la pantalla de configuración de bluetooth, realiza un llamado a la función `launchBluetoothSettings`, como en el ejemplo a continuación.
 

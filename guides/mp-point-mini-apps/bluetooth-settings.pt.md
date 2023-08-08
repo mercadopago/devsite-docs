@@ -1,4 +1,4 @@
-# Configurações de bluetooth
+# Bluetooth
 
 Para iniciar a tela de configurações do bluetooth, chame a função `launchBluetoothSettings` como no exemplo abaixo.
 
