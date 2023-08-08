@@ -41,7 +41,7 @@ available_countries: mla, mlb
 
 ---
 bullet_section_with_media: 
- - title: Ventajas
+ - title: Vantagens
  - type: reverse
  - benefit_title: Uma única integração, duas soluções
  - benefit_message: Aprenda a integrar em uma única e completa solução os métodos de pagamento mais populares.
