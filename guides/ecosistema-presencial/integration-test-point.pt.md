@@ -23,12 +23,12 @@ Antes de ir para a produção, recomendamos testar o correto funcionamento da su
 1. Use suas credenciais do Mercado Pago para [criar um intent para o Point](/developers/pt/docs/ecosistema-presencial/payments-processing/create-and-manage-intent/point), seguindo a documentação. Lembre-se de que você não está usando usuários ou cartões de teste, portanto, recomendamos definir o valor do intent como o mínimo disponível.
 
 ----[mla]----
-2. Se estiver usando um dispositivo Point Smart, o dispositivo carregará automaticamente o intent na tela após a criação. Se isso não acontecer, você também pode tocar no botão "Cobrar" que aparece na tela do dispositivo.
-Se estiver usando um dispositivo Point Plus, pressione o botão verde para carregar o intent no dispositivo.
+2. Se estiver usando um **dispositivo Point Smart**, o dispositivo carregará automaticamente o intent na tela após a criação. Se isso não acontecer, você também pode tocar no botão "Cobrar" que aparece na tela do dispositivo.
+ Se estiver usando um **dispositivo Point Plus**, pressione o botão verde para carregar o intent no dispositivo.
 ------------
 ----[mlb]----
-2. Se estiver usando um dispositivo Point Smart, o dispositivo carregará automaticamente o intent na tela após a criação. Se isso não acontecer, você também pode tocar no botão "Cobrar" que aparece na tela do dispositivo.
-Se estiver usando um dispositivo Point Pro 2, pressione o botão verde para carregar o intent no dispositivo.
+2. Se estiver usando um **dispositivo Point Smart**, o dispositivo carregará automaticamente o intent na tela após a criação. Se isso não acontecer, você também pode tocar no botão "Cobrar" que aparece na tela do dispositivo.
+ Se estiver usando um **dispositivo Point Pro 2**, pressione o botão verde para carregar o intent no dispositivo.
 ------------
 3. Siga as instruções apresentadas pelo dispositivo para concluir o pagamento.
 4. Se você usou o campo `print_on_terminal` com o valor `SELLER_TICKET` ao criar o intent, o dispositivo imprimirá o comprovante. Caso contrário, o dispositivo não imprimirá o comprovante ao finalizar o pagamento.

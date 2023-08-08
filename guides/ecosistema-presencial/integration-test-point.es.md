@@ -23,13 +23,13 @@ El siguiente flujo te permitirá realizar pruebas para tu aplicación con Mercad
 
 1. Utiliza tus credenciales de Mercado Pago para [crear un intent para Point](/developers/es/docs/ecosistema-presencial/payments-processing/create-and-manage-intent/point), tal como se indica en la documentación. Recuerda que no estás utilizando usuarios ni tarjetas de prueba, por lo que recomendamos que el monto del intent sea el mínimo disponible.
 ----[mla]----
-2. Si estás utilizando un dispositivo Point Smart, el dispositivo cargará automáticamente el intent en pantalla luego de su creación. Si esto no sucede, también puedes tocar el botón Cobrar que aparece en la pantalla del dispositivo. 
-Si estás utilizando un dispositivo Point Plus, debes oprimir el botón verde para cargar el intent en el dispositivo.
+2. Si estás utilizando un **dispositivo Point Smart**, el dispositivo cargará automáticamente el intent en pantalla luego de su creación. Si esto no sucede, también puedes tocar el botón **Cobrar** que aparece en la pantalla del dispositivo. 
+ Si estás utilizando un **dispositivo Point Plus**, debes oprimir el botón verde para cargar el intent en el dispositivo.
 
 ------------
 ----[mlb]----
-2. Si estás utilizando un dispositivo Point Smart, el dispositivo cargará automáticamente el intent en pantalla luego de su creación. Si esto no sucede, también puedes tocar el botón Cobrar que aparece en la pantalla del dispositivo.
-Si estás utilizando un dispositivo Point Pro 2, oprime el botón verde para cargar el intent en el dispositivo.
+2. Si estás utilizando un **dispositivo Point Smart**, el dispositivo cargará automáticamente el intent en pantalla luego de su creación. Si esto no sucede, también puedes tocar el botón **Cobrar** que aparece en la pantalla del dispositivo.
+ Si estás utilizando un **dispositivo Point Pro 2**, oprime el botón verde para cargar el intent en el dispositivo.
 
 ------------
 3. Sigue las instrucciones que te presenta el dispositivo para realizar el pago. 

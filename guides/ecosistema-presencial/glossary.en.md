@@ -12,7 +12,7 @@ Some terms are new and you might not be familiar with them. Use this glossary to
 | Point and QR    |  Store   | It is a physical store where your customers can purchase your products or services. You can have multiple branches in the same account.                                                        |
 | Point           | Poi              | Serial number of the Point device. You can see it on the back of the device (SN, NS).                                                                                                           |
 | Point           | Poi Type         | Device type.                                                                                                                                                                                   |
-| Point           | Self-service     | It translates as "self-service", and it is the model where the customer can use the devices autonomously and self-manageably. This model is discouraged for devices in PDV mode.                  |
+| Point           | Self-service     | It is the model where the customer can use the devices autonomously and self-manageably. This model is discouraged for devices in PDV mode.                  |
 | QR              | Cash out         | Operation available to be carried out through the QR Code. It consists of cash withdrawal by generating a QR code or using the QR code associated with the cash register.                     |
 | QR              | Extra cash       | Operation available to be carried out through the QR Code. It consists of generating an order through which a customer can pay for a product and withdraw cash in a single transaction.      |
 

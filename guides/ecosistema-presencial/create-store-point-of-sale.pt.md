@@ -10,7 +10,7 @@ Lembre-se de substituir os valores `user_id` e `YOUR_ACCESS_TOKEN` pelos obtidos
 >
 > A solicitação está configurada com informações para o site da Argentina. Lembre-se de modificar essa configuração de acordo com o país de integração.
 
-Em seguida, você precisará criar uma caixa. Para isso, faça uma chamada POST para ao endpoint [Criar caixa](/developers/es/reference/pos/_pos/post) .
+Em seguida, você precisará criar uma caixa. Para isso, faça uma chamada POST para ao endpoint [Criar caixa](/developers/pt/reference/pos/_pos/post) .
 
 Observe que você deve primeiro executar a solicitação de criação da loja para que a solicitação de criação da caixa funcione corretamente.
 

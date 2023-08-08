@@ -5,7 +5,7 @@ Below, you can see how to create an intent on Point devices, how to check its st
 ## Create intent on Point devices
 
 To create an intent on your Point device, you have two options:
- * You can make a POST call to the endpoint [Create intent for a device associated with a cash register](/developers/en/reference/instore-api/), replacing `external.id` with the value chosen when creating the cash register.
+ * You can make a POST call to the endpoint [Create intent for a device associated with a point of sale](/developers/en/reference/instore-api/), replacing `external.id` with the value chosen when creating the point of sale.
  * Alternatively, you can make a POST call to the endpoint [Create intent for a POS device](/developers/en/reference/instore-api/), replacing `device.id` with the value obtained when querying the list of devices.
 
 You can choose the option that best suits your needs. The result will be the same, and you will have created an intent for the chosen Point device.
@@ -67,7 +67,7 @@ This object is composed as follows:
 | `id` | It is the payment ID. With it, you can go to the [Payments API](/developers/en/reference/payments/_payments_search/get) and check the final status of the payment. |
 | `source` | Entity to which the `id` belongs. It will return the value `PAYMENT` when the payment flow has been created correctly. Go to the [Payments API](/developers/en/reference/payments/_payments_search/get) to check the final status of the payment with the received `id`. |
 
-## Canceling an intent on Point devices
+## Cancel an intent on Point devices
 
 If the payment has not been made yet and you haven't loaded the intent on the device, you can cancel a payment intent and make that attempt no longer available for processing. 
 Make a DELETE call to the endpoint [Get information about an intent](/developpers/en/reference/instore-api/), replacing `external.id` and `intent_id` with the values obtained when creating a cash register and the payment intent, respectively.

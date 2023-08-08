@@ -12,7 +12,7 @@ Alguns termos são novos e talvez você não esteja familiarizado com eles. Util
 | Point e QR    | Loja (Store)    | É uma loja física onde seus clientes podem adquirir seus produtos ou serviços. Você pode ter várias filiais em uma única conta.
 | Point         | Poi             | Número de série do dispositivo Point. Você pode vê-lo na parte de trás do dispositivo (SN, NS).                                                                                                 |
 | Point         | Poi Type        | Tipo de dispositivo.                                                                                                                                                                           |
-| Point         | Self-service    | Traduzido como "autoserviço" e é o modelo em que o cliente pode usar os dispositivos de forma autônoma e auto-gerenciada. Esse modelo não é recomendado para dispositivos no modo PDV.           |                                                                 |
+| Point         | Self-service    | Traduzido como "autoserviço" e é o modelo em que o cliente pode usar os dispositivos de forma autônoma e auto-gerenciada. Esse modelo não é recomendado para dispositivos no modo PDV.           |
 | QR            | Cash out        | Operação disponível para ser realizada por código QR. Consiste na retirada de dinheiro em espécie a partir da geração de um código QR ou do uso do código QR associado à caixa.                      |
 | QR            | Extra cash      | Operação disponível para ser realizada por código QR. Consiste em gerar uma ordem pela qual um cliente pode pagar um produto e retirar dinheiro em espécie em uma única transação.                  |
 

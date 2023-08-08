@@ -2,7 +2,7 @@
 
 In order to create an app in Your Integrations, follow the steps below.
 
-1. Access the [Developer Panel](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/e). Once there, click on the **Your Integrations** button, located in the upper right corner, and then on **Create application**.
+1. Access the [Developer Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/e). Once there, click on the **Your Integrations** button, located in the upper right corner, and then on **Create application**.
 
     > NOTE
     >
@@ -16,7 +16,7 @@ In order to create an app in Your Integrations, follow the steps below.
 5. Once you have completed the requested information, click on **Create application**, and you're done!
 
 
-> You can consult the [documentation about the Developer Panel](/developers/en/docs/ecosistema-presencial/additional-content/your-integrations/dashboard) if you have any doubts on how to use it.
+> You can consult the [documentation about the Developer Dashboard](/developers/en/docs/ecosistema-presencial/additional-content/your-integrations/dashboard) if you have any doubts on how to use it.
 
 
 ## Important information about your application

@@ -20,8 +20,7 @@ El siguiente flujo te permitirá realizar pruebas para tu aplicación con Mercad
 
 1. Utiliza las credenciales del usuario de prueba de vendedor para [crear un intent para código QR](/developers/es/docs/ecosistema-presencial/payments-processing/create-and-manage-intent/qr), tal como se indica en la documentación.
 2. Genera un pago teniendo en cuenta:
- * Si utilizas el **campo `qr_payment_mode` = `STATIC`** o no defines ningún qr_payment_mode al crear el intent, ingresa a la web de Mercado Pago. Allí, dirígete a **Tu negocio > Locales y cajas**, y selecciona el local y la caja asociados. 
- Luego, haz clic en el símbolo de QR junto al nombre de la caja, y selecciona **Imprimir QR**. Este código QR estará asociado al intent que creaste en el paso anterior.
+ * Si utilizas el **campo `qr_payment_mode` = `STATIC`** o no defines ningún qr_payment_mode al crear el intent, ingresa a la web de Mercado Pago. Allí, dirígete a **Tu negocio > Locales y cajas**, y selecciona el local y la caja asociados. Luego, haz clic en el símbolo de QR junto al nombre de la caja, y selecciona **Imprimir QR**. Este código QR estará asociado al intent que creaste en el paso anterior.
 
  * Si utilizas el **campo `qr_payment_mode` = `DYNAMIC`**, obtendrás el campo `qr_data` en la respuesta con una trama de QR. Puedes utilizar herramientas o librerías que te ayudarán a convertir esta trama en una imagen de un código QR.
 

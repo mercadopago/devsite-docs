@@ -1,6 +1,6 @@
 # Ativar o modo PDV no dispositivo Point
 
-> AVISO
+> WARNING
 >
 > Importante
 >
@@ -15,7 +15,7 @@ Em seguida, faça uma solicitação PATCH ao endpoint [Alterar o modo de operaç
 
 Por fim, reinicie o dispositivo Point. Quando ele for reativado, você verá uma confirmação na tela, e seu Point estará vinculado ao modo PDV.
 
-> AVISO
+> WARNING
 >
 > Importante
 >

@@ -267,8 +267,8 @@ Este objeto é composto da seguinte forma:
 
 | Valor | Descrição |
 |---|---|
-| `id` | É a identificação do pagamento. Com ela, você pode acessar a [Payments API](/developers/es/reference/payments/_payments_search/get) e verificar o estado final do pagamento. |
-| `source` | Entidade à qual o `id` pertence. Irá retornar o valor `PAYMENT` quando o fluxo de pagamento for criado corretamente. Acesse a [Payments API](/developers/es/reference/payments/_payments_search/get) para verificar o estado final do pagamento com o `id` recebido. |
+| `id` | É a identificação do pagamento. Com ela, você pode acessar a [Payments API](/developers/pt/reference/payments/_payments_search/get) e verificar o estado final do pagamento. |
+| `source` | Entidade à qual o `id` pertence. Irá retornar o valor `PAYMENT` quando o fluxo de pagamento for criado corretamente. Acesse a [Payments API](/developers/pt/reference/payments/_payments_search/get) para verificar o estado final do pagamento com o `id` recebido. |
 
 Isso acontece tanto para as operações `PURCHASE` como `CASH_OUT`.
 
@@ -282,7 +282,7 @@ Faça uma chamada DELETE para o endpoint [Obter informações de um intent](http
 
 Além disso, recomendamos **configurar suas notificações de webhook**. Isso permitirá que você receba informações em tempo real sempre que um intent atingir um estado final.
 
-Para configurar suas notificações, siga as instruções fornecidas na [documentação de webhooks de notificações](/developers/es/docs/ecosistema-presencial/additional-content/your-integrations/notifications/webhooks).
+Para configurar suas notificações, siga as instruções fornecidas na [documentação de webhooks de notificações](developers/pt/docs/ecosistema-presencial/additional-content/your-integrations/notifications/webhooks).
 
 > WARNING
 >

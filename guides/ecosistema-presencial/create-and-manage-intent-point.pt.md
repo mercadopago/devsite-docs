@@ -63,13 +63,13 @@ Este objeto se compõe da seguinte maneira:
 
 | Valor | Descrição |
 |---|---|
-| `id` | É a identificação do pagamento. Com ela, você pode se dirigir à [Payments API](/developers/es/reference/payments/_payments_search/get) e consultar o estado final do pagamento. |
-| `source` | Entidade à qual pertence o `id`. Ele retornará o valor `PAYMENT` quando o fluxo do pagamento tiver sido criado corretamente. Acesse a [Payments API](/developers/es/reference/payments/_payments_search/get) para verificar o estado final do pagamento com o `id` recebido. |
+| `id` | É a identificação do pagamento. Com ela, você pode se dirigir à [Payments API](/developers/pt/reference/payments/_payments_search/get) e consultar o estado final do pagamento. |
+| `source` | Entidade à qual pertence o `id`. Ele retornará o valor `PAYMENT` quando o fluxo do pagamento tiver sido criado corretamente. Acesse a [Payments API](/developers/pt/reference/payments/_payments_search/get) para verificar o estado final do pagamento com o `id` recebido. |
 
 ## Cancelar um intent em dispositivos Point
 
 Se o pagamento ainda não foi realizado e o intent não foi carregado no dispositivo, você pode cancelar uma intenção de pagamento e fazer com que essa tentativa não esteja mais disponível para processamento. 
-Realiza uma chamada DELETE ao endpoint [Obter informações de um intent](/developers/es/reference/instore-api/integrationsintents_intent_id_point/delete), reemplazando `external.id` e `intent_id` por los valores obtenidos al criar una caja e o intento de pagamento, respectivamente.
+Realiza uma chamada DELETE ao endpoint [Obter informações de um intent](/developers/pt/reference/instore-api/integrationsintents_intent_id_point/delete), reemplazando `external.id` e `intent_id` por los valores obtenidos al criar una caja e o intento de pagamento, respectivamente.
 
 > WARNING
 >
@@ -88,7 +88,7 @@ Para configurar suas notificações, siga as instruções fornecidas na [documen
 >
 > Importante
 >
-> Para configurar as notificações do Ecosistema Presencial, deve-se utilizar o evento **integrações presenciair**, cuja mensagem conterá o campo `type` com o valor `topic_instore_integration_wh`. Através deste evento você receberá notificações dos estados finais dos intents, sejam eles processados ​​por Point ou QR em modo integrado. 
+> Para configurar as notificações do Ecosistema Presencial, deve-se utilizar o evento **integrações presenciais**, cuja mensagem conterá o campo `type` com o valor `topic_instore_integration_wh`. Através deste evento você receberá notificações dos estados finais dos intents, sejam eles processados ​​por Point ou QR em modo integrado. 
 
 Aqui está um exemplo de uma notificação que você pode receber para um dispositivo Point quando uma intenção atinge um `status` final. Observe que as informações relatadas no nó `data` dependerão das informações com as quais a intenção é criada.
 

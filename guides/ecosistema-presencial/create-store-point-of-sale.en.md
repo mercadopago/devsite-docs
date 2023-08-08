@@ -6,7 +6,7 @@ Keep in mind that you should replace the values `user_id` and `YOUR_ACCESS_TOKEN
 
 > NOTE
 >
-> NOTE
+> Note
 >
 > The request is configured with information for the site in Argentina. Remember to modify this configuration according to the country from which you are integrating.
 
