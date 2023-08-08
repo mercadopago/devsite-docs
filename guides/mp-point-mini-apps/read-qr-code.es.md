@@ -1,4 +1,6 @@
-# Leer código QR
+# Cámara
+
+## Leer código QR
 
 Para leer un código QR usando la cámara del dispositivo, llama a la función `launchScannerCode` como en el ejemplo a continuación.
 

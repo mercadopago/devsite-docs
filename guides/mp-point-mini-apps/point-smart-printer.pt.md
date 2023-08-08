@@ -1,4 +1,6 @@
-# Configure a impressão na Point Smart 
+# Impressora Point Smart (impressora térmica)
+
+## Configure o recibo HTML para impressão correta
 
 Para processar corretamente o recibo _HTML_ e imprimir todas as informações, deve-se incluir os seguintes scripts do Mercado Pago antes da tag `body`:
 
@@ -14,19 +16,21 @@ Exemplo:
 
 Além disso, o recibo _HTML_ deve chamar a `notifyHtmlReadyToPrint` quando o recibo estiver pronto para impressão (por exemplo, imprimir recibo após carregar uma imagem de um serviço).
 
-Veja abaixo um uxemplo de código, que notifica o _HTML_ pronto para imprimir, após consumir um serviço e carregar uma imagem.
+Veja abaixo um exemplo de código que notifica o _HTML_ pronto para imprimir após consumir um serviço e carregar uma imagem.
 
 ```html
 <img onload="notifyHtmlReadyToPrint()" src="https://mp.mp/code.aspx?tpcodigo=qrcode&vcodigo=abcd">
 
 ```
 
+# Inicie a impressora HTML
+
 Configurado o processamento do recibo _HTML_ corretamente, para iniciar a impressora _HTML_ a função `launchPrint` deve ser chamada enviando os parâmetros abaixo.
 
 | Parâmetro  | Tipo  | Obrigatório | Valores possíveis | Descrição |
 | --- | --- | --- | --- | --- |
-| data | string | false | path ou texto _HTML_ simples | Opcional: <br><br> O caminho do arquivo _HTML_ com/sem parâmetros, armazenado em um MiniApp <br><br> Texto _HTML_ simples como string |
-| callback | function | false | function callbackResult(result, error) | Retorna o resultado da impressão. |
+| data | string | Não | path ou texto _HTML_ simples | Opcional: <br><br> O caminho do arquivo _HTML_ com/sem parâmetros, armazenado em um MiniApp <br><br> Texto _HTML_ simples como string |
+| callback | function | Não | function callbackResult(result, error) | Retorno do resultado da impressão. |
 
 Exemplo de requisição com URL:
 
@@ -57,3 +61,11 @@ function callbackResult(result, error) {
    }
 }
 ```
+
+Como configurar o recibo HTML para impressão correta?
+
+Para processar corretamente o recibo HMTL e imprimir todas as informações, você deve incluir os scripts do Mercado Pago abaixo antes da tag ”</body>”:
+mobilewebkit.js.
+smart_render.js.
+
+Desta forma:

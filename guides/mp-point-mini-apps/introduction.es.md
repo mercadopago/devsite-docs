@@ -1,11 +1,21 @@
-# Point MiniApps
+# Introducción
 
-MiniApps es una solución híbrida basada en tecnologías web embebidas en un wrapper que brinda las capacidades nativas y los servicios de pago de Mercado Pago a través del dispositivo Point Smart.
+Las Mini Apps son una solución híbrida basada en tecnologías web integradas en un wrapper nativo que brinda las capacidades nativas y servicios de pago ofrecidos por Mercado Pago a través del [Point Smart](/developers/es/docs/mp-point/integration-configuration/integrate-with-pdv/introduction).
 
-Estos MiniApps se pueden desarrollar como cualquier otra solución web, usando **HTML**, **CSS** y **Javascript**. Este último puede ser **Javascript tradicional** (_Vanilla JS_), o un **Framework Javascript**, como _React JS_ o cualquier otra herramienta utilizada para crear interfaces de usuario web.
+## Compatibilidad
 
-> NOTE
->
-> Importante
->
-> Todas las URL deben funcionar sobre HTTPS.
+Para asegurar el correcto funcionamiento de las mini apps recomendamos utilizar como tecnologías:
+
+* **React**.
+* **Vanilla JS**.
+* **Versões de Angular menores ou iguais à 12**.
+
+> El navegador de los dispositivos A910 corresponde a la v**ersión 52.0.2743.100** por lo cual algunas tecnologías y versiones no son compatibles con estos dispositivos.
+
+# Seguridad
+
+Todas las URLs tienen que funcionar en HTTPS.
+
+En caso de que tu mini app sea nativa, para poder subirla al ecosistema de Mercado Pago y garantizar la seguridad de la aplicación y sus posteriores actualizaciones, los integradores deben firmarla de manera digital a través de un certificado.
+
+Este certificado debe ser el mismo tanto para el paquete inicial como para cada una de las nuevas versiones. Consulta cómo firmar la aplicación con el certificado generado por el desarrollador en la [documentación oficial de Android](https://developer.android.com/studio/publish/app-signing?hl=pt-419#generate-key).

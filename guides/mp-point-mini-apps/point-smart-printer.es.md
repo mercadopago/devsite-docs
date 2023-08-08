@@ -1,4 +1,6 @@
-# Configurar la impresión en Point Smart
+# Impresora Point Smart (impresora térmica)
+
+## Configura el recibo HTML para una impresión correcta
 
 Para procesar correctamente el recibo _HTML_ e imprimir toda la información, debes incluir los siguientes scripts de Mercado Pago antes de la etiqueta `body`:
 
@@ -20,12 +22,14 @@ Ve a continuación un ejemplo de código, que notifica el _HTML_ listo para impr
 <img onload="notifyHtmlReadyToPrint()" src="https://mp.mp/code.aspx?tpcodigo=qrcode&vcodigo=abcd">
 ```
 
+# Inicia la impresora HTML
+
 Una vez configurado correctamente el procesamiento del recibo _HTML_, para iniciar la impresora _HTML_ se debe llamar a la función `launchPrint` enviando los siguientes parámetros.
 
 | Parámetro | Tipo | Requerido | Valores posibles | Descripción |
 | --- | --- | --- | --- | --- |
-| data | string | false | path o texto _HTML_ simple | Opcional: <br><br> Ruta del archivo _HTML_ con/sin parámetros, almacenado en un MiniApp <br><br> Texto _HTML_ sin formato como string. |
-| callback | function | false | function callbackResult(result, error) | Devuelve el resultado de la impresión. |
+| data | string | No | path o texto _HTML_ simple | Opcional: <br><br> Ruta del archivo _HTML_ con/sin parámetros, almacenado en un MiniApp <br><br> Texto _HTML_ sin formato como string. |
+| callback | function | No | function callbackResult(result, error) | Devuelve el resultado de la impresión. |
 
 Ejemplo de solicitud con URL:
 
