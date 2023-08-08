@@ -1189,9 +1189,20 @@ paths:
       description: Consult by ID retrieves an existing Transaction Intent
       x-description-i18n:
         eng: Consult by ID retrieves an existing Transaction Intent
-        spa: Consultar por ID recupera una Transaction Intent existente.
+        spa: Consultar por ID recupera una Transaction Intent existente
         por: Consultar por ID recupera uma Transaction Intent existente
       parameters:
+        - in: header
+          name: Authorization
+          schema:
+            type: string
+            example: "Bearer token-89987654567f-numeroToken"
+          required: true
+          description: Access Token  - Application private key that must always be used in the backend to generate payments. It is essential that this information is kept secure on their servers.
+          x-description-i18n:
+            eng: Application private key that must always be used in the backend to generate payments. It is essential that this information is kept secure on their servers.
+            spa: Clave privada de la aplicación que siempre debe ser utilizada en el backend para generar pagos. Es fundamental que esta información se mantenga segura en sus servidores.
+            por: Chave privada do aplicativo que deve ser sempre usada no backend para gerar pagamentos. É essencial que essas informações sejam mantidas seguras em seus servidores.
         - name: id
           in: path
           required: true
@@ -2325,9 +2336,21 @@ paths:
         por: Este endpoint permite criar e processar uma nova Transaction Intent
       parameters:
         - in: header
+          name: Authorization
+          schema:
+            type: string
+            example: "Bearer token-89987654567f-numeroToken"
+          required: true
+          description: Access Token  - Application private key that must always be used in the backend to generate payments. It is essential that this information is kept secure on their servers.
+          x-description-i18n:
+            eng: Application private key that must always be used in the backend to generate payments. It is essential that this information is kept secure on their servers.
+            spa: Clave privada de la aplicación que siempre debe ser utilizada en el backend para generar pagos. Es fundamental que esta información se mantenga segura en sus servidores.
+            por: Chave privada do aplicativo que deve ser sempre usada no backend para gerar pagamentos. É essencial que essas informações sejam mantidas seguras em seus servidores.
+        - in: header
           name: X-Product-ID
           schema:
             type: string
+            example: "876542356788-mp"
           required: false
           description: Alphanumeric ID of the product
           x-description-i18n:
@@ -4153,6 +4176,17 @@ paths:
         spa: Este endpoint permite cancelar una Transaction Intent
         por: Este endpoint permite cancelar uma Transaction Intent
       parameters:
+        - in: header
+          name: Authorization
+          schema:
+            type: string
+            example: "Bearer token-89987654567f-numeroToken"
+          required: true
+          description: Access Token  - Application private key that must always be used in the backend to generate payments. It is essential that this information is kept secure on their servers.
+          x-description-i18n:
+            eng: Application private key that must always be used in the backend to generate payments. It is essential that this information is kept secure on their servers.
+            spa: Clave privada de la aplicación que siempre debe ser utilizada en el backend para generar pagos. Es fundamental que esta información se mantenga segura en sus servidores.
+            por: Chave privada do aplicativo que deve ser sempre usada no backend para gerar pagamentos. É essencial que essas informações sejam mantidas seguras em seus servidores.
         - in: path
           name: id
           schema:
@@ -5244,12 +5278,23 @@ paths:
         eng: Refund Transaction Intent
         spa: Reembolsar Transaction Intent
         por: Reembolsar Transaction Intent
-      description: If a Transaction Intent is successfully processed and the client wishes to initiate a cancellation, it will be possible to issue a refund through this endpoint.
+      description: If a Transaction Intent is successfully processed and the client wishes to initiate a cancellation, it will be possible to issue a refund through this endpoint
       x-description-i18n:
-        eng: If a Transaction Intent is successfully processed and the client wishes to initiate a cancellation, it will be possible to issue a refund through this endpoint.
-        spa: Si una Transaction intent es procesada correctamente y el cliente desea realizar una cancelación, será posible efectuar un reembolso a través de este endpoint.
+        eng: If a Transaction Intent is successfully processed and the client wishes to initiate a cancellation, it will be possible to issue a refund through this endpoint
+        spa: Si una Transaction intent es procesada correctamente y el cliente desea realizar una cancelación, será posible efectuar un reembolso a través de este endpoint
         por: Caso uma Transaction Intent seja devidamente processada e o cliente desejar efetuar um cancelamento, será possível efetuar um reembolso por meio deste endpoint
       parameters:
+        - in: header
+          name: Authorization
+          schema:
+            type: string
+            example: "Bearer token-89987654567f-numeroToken"
+          required: true
+          description: Access Token  - Application private key that must always be used in the backend to generate payments. It is essential that this information is kept secure on their servers.
+          x-description-i18n:
+            eng: Application private key that must always be used in the backend to generate payments. It is essential that this information is kept secure on their servers.
+            spa: Clave privada de la aplicación que siempre debe ser utilizada en el backend para generar pagos. Es fundamental que esta información se mantenga segura en sus servidores.
+            por: Chave privada do aplicativo que deve ser sempre usada no backend para gerar pagamentos. É essencial que essas informações sejam mantidas seguras em seus servidores.
         - in: path
           name: id
           schema:
