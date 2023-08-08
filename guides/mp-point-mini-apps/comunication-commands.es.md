@@ -98,7 +98,7 @@ function callbackResult(result, error) {
 }
 ```
 
-# Iniciar flujo de pago (payment_flow)
+## Iniciar flujo de pago (payment_flow)
 
 Para iniciar el flujo de pago, la función `launchPaymentFlow` debe ser llamada junto con los siguientes parámetros:
 

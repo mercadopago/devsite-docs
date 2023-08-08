@@ -19,15 +19,11 @@ Esta es la pantalla que la persona usuaria ve cuando no tiene apps instaladas. E
 5. **Botón "Saber más"**: lleva a la persona usuaria a la pantalla de detalle de la app.
 6. **Botón "Instalar"**: inicia la instalación de la aplicación.
 
-> NOTE
->
-> Importante
->
 > **Tienes que**:
 > <br><br>
 > * Traer la función principal de tu app al resumen.
 > * Usar la versión simplificada del logo, con menos detalles, para que las personas usuarias puedan reconocerla.
-> <br><br>
+>
 > **No tienes que**:
 > <br><br>
 > * Usar el nombre de Mercado Pago o de competidores.
@@ -78,16 +74,12 @@ Aquí, la persona usuaria tiene acceso a los detalles, beneficios y propuesta de
 
 4. **Contacto del desarrollador**: canales para que las personas usuarias puedan sacarse dudas, hacer sugerencias y saber más sobre la empresa. <br><br>
 
-   Limitaciones:
-   * E-mail: línea única/hasta 53 caracteres.
-   * Dirección: hasta 2 líneas/hasta 106 caracteres.
-   * Teléfono: línea única/hasta 53 caracteres.
-   * Site: línea única/hasta 53 caracteres.
+   * Limitaciones:
+   * E-mail - línea única/hasta 53 caracteres.
+   * Dirección - hasta 2 líneas/hasta 106 caracteres.
+   * Teléfono - línea única/hasta 53 caracteres.
+   * Site - línea única/hasta 53 caracteres.
 
-> NOTE
->
-> Importante
->
 > **Tienes que**:
 > <br><br>
 > * Construir el texto de descripción en bloques y parágrafos cortos.
@@ -95,7 +87,7 @@ Aquí, la persona usuaria tiene acceso a los detalles, beneficios y propuesta de
 > * Usar títulos claros que introduzcan el tema que se  tratará en el parágrafo siguiente.
 > * Incluir imágenes fáciles de identificar y entender, que muestren funcionalidades importantes de la app.
 > * Usar colores con buen nivel de contraste entre el fondo y la figura en primer plano de las imágenes.
-> <br><br>
+>
 > **No tienes que**:
 > <br><br>
 > * Usar el nombre de Mercado Pago o de competidores.

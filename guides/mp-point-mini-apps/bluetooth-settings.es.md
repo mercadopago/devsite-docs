@@ -17,8 +17,8 @@ function callbackResult(result, error) {
 
 Clique nas seções a seguir para mais informações sobre as comandos disponiveis.
 
-* [Conectar y desconectar]()
-* [Obtener el estado]()
-* [Descubrir dispositivos (vinculados o para iniciar una vinculación)]()
-* [Emparejar y desemparejar un dispositivo]()
-* [Imprimir usando impresora Bluetooth]()
+* [Conectar y desconectar](/developers/es/docs/mp-point/mini-apps/bluetooth/commands)
+* [Obtener status](/developers/es/docs/mp-point/mini-apps/bluetooth/commands#bookmark_obtener_status)
+* [Descubrir dispositivos (vinculados o para iniciar una vinculación)](/developers/es/docs/mp-point/mini-apps/bluetooth/commands#bookmark_descubrir_dispositivos_(vinculados_o_para_iniciar_una_vinculación))
+* [Emparejar y desemparejar un dispositivo](/developers/es/docs/mp-point/mini-apps/bluetooth/commands#bookmark_emparejar_y_desemparejar_un_dispositivo)
+* [Imprimir usando impresora Bluetooth](/developers/es/docs/mp-point/mini-apps/bluetooth/commands#bookmark_emparejar_y_desemparejar_un_dispositivo)
