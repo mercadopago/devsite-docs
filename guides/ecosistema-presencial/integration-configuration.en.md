@@ -1,7 +1,7 @@
 # Configure the integration
 
 
-To start integrating into the on-site ecosystem, you should have your integration configured, create your location and register, and log in to your Point device. To do that, follow the steps below:
+To start integrating into the Instore API, you should have your integration configured, create your location and register, and log in to your Point device. To do that, follow the steps below:
 
 1. [Create an application in Your Integrations](/developers/en/docs/ecosistema-presencial/integration-configuration/create-app)
 2. [Create the store and the point of sale](/developers/en/docs/ecosistema-presencial/integration-configuration/create-store-point-of-sale)

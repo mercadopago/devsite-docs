@@ -88,7 +88,7 @@ To configure your notifications, follow the instructions provided in the [Webhoo
 >
 > Important
 >
-> To set up notifications for the Presencial Ecosystem, you must use the event **Integraciones Presenciales**, whose message will contain the `type` field with the value `topic_instore_integration_wh`. Through this event, you will receive notifications of final states of the intents, whether processed by Point or QR in integrated mode.
+> To set up notifications for Instore API, you must use the event **Instore Integration**, whose message will contain the `type` field with the value `topic_instore_integration_wh`. Through this event, you will receive notifications of final states of the intents, whether processed by Point or QR in integrated mode.
 
 Here's an example of a notification you can receive for a Point device when an intent reaches a final `status`. Keep in mind that the information notified within the `data` node will depend on the information used to create the intent.
 

@@ -1,6 +1,6 @@
 ---
 content_section_with_media: 
- - title: Ecosistema Presencial
+ - title: Instore API
  - message: The integral solution for your instore payments
  - media_image: /ecosistema-presencial/ecosistema-presencial-landing3.png
 ---
@@ -9,7 +9,7 @@ content_section_with_media:
 bullet_section_with_media: 
  - type: normal
  - title: 
- - message: The On-site Ecosystem API offers a complete and integrated solution for you to accept payments quickly and securely in your business, unifying the experiences of QR and Point integrations from Mercado Pago into a single platform.
+ - message: The Instore API offers a complete and integrated solution for you to accept payments quickly and securely in your business, unifying the experiences of QR and Point integrations from Mercado Pago into a single platform.
  - image: /ecosistema-presencial/ecosistema-presencial-api.png
 ---
 

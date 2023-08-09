@@ -23,7 +23,7 @@ In order to create an app in Your Integrations, follow the steps below.
 
 Once you have created your application, you will be redirected to the general information site. Keep these data at hand to continue the integration in the next steps. 
 
-| Application data  | Definition                                                | Equivalent in the On-site ecosystem integration |
+| Application data  | Definition                                                | Equivalent in Instore API |
 |-------------------|-----------------------------------------------------------|-----------------------------------------------|
 | User ID           | User identification number, which is automatically created. | `user_id`                                      |
 | Application number | Application identification number, which is automatically created | `application.id`                                |
