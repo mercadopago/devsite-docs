@@ -35,7 +35,7 @@ let metadata = urlParams.get('metadata');
 **/ 	
 ```
 
-## Callbacks de funções nativas do JS
+## Callbacks de funções nativas do JavaScript
 
 Tendo configurado uma função de callback *JavaScript* ao iniciar o fluxo de checkout, os dados de pagamento podem ser obtidos da seguinte forma.
 
