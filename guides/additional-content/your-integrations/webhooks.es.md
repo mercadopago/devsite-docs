@@ -8,7 +8,7 @@ Una vez configurado, el Webhook se enviará siempre que se produzcan uno o más 
 
 En esta documentación, explicaremos las configuraciones necesarias para recibir los mensajes (a través del Panel del desarrollador o durante la creación de pagos), además de mostrar las acciones necesarias que debes realizar para que Mercado Pago valide que las notificaciones han sido recibidas correctamente.
 
-## Configuración a través del Painel de desarollador
+## Configuración a través del Panel del desarrollador
 
 A continuación explicaremos cómo indicar las URLs que serán notificadas y cómo configurar los eventos para los que se recibirán notificaciones.
 
