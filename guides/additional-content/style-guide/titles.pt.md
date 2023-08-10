@@ -13,4 +13,3 @@ Servem para contextualizar ou explicar qual ação deve ser realizada, podendo f
 ## Textos explicativos
 
 Use-os para fornecer explicações ou aprofundar informações, sempre que necessário, para evitar dúvidas.
-
