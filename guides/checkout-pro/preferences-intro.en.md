@@ -6,9 +6,7 @@ Preferences attribute settings allow you to **define installments**, **exclude a
 
 See below for a complete example of preference.
 
-[[[
 ```Json
-
 {
     "items": [
         {
@@ -42,8 +40,8 @@ See below for a complete example of preference.
     },
     "back_urls": {
         "success": "https://www.success.com",
-        "failure": "http://www.failure.com",
-        "pending": "http://www.pending.com"
+        "failure": "https://www.failure.com",
+        "pending": "https://www.pending.com"
     },
     "auto_return": "approved",
     "payment_methods": {
@@ -68,6 +66,5 @@ See below for a complete example of preference.
 }
 
 ```
-]]]
 
 In this section you will find all the customization possibilities available for the preferences.

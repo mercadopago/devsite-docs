@@ -7,7 +7,6 @@ La configuración de atributos de preferencia te permite **definir cuotas**, **e
 Mira a continuación un ejemplo completo de preferencia.
 
 ----[mlm, mla, mlb, mlc, mlu, mpe]----
-
 ```json
 {
     "items": [
@@ -42,8 +41,8 @@ Mira a continuación un ejemplo completo de preferencia.
     },
     "back_urls": {
         "success": "https://www.success.com",
-        "failure": "http://www.failure.com",
-        "pending": "http://www.pending.com"
+        "failure": "https://www.failure.com",
+        "pending": "https://www.pending.com"
     },
     "auto_return": "approved",
     "payment_methods": {
@@ -69,10 +68,8 @@ Mira a continuación un ejemplo completo de preferencia.
 ```
 
 ------------
-
 ----[mco]----
-
- ```json
+```json
 {
 	"items": [
 		{
@@ -107,8 +104,8 @@ Mira a continuación un ejemplo completo de preferencia.
 	},
 	"back_urls": {
 		"success": "https://www.success.com",
-		"failure": "http://www.failure.com",
-		"pending": "http://www.pending.com"
+		"failure": "https://www.failure.com",
+		"pending": "https://www.pending.com"
 	},
 	"auto_return": "approved",
 	"payment_methods": {
@@ -148,7 +145,8 @@ Mira a continuación un ejemplo completo de preferencia.
 		}
 	]
 }
- ```
+```
+ 
 ------------
 
 En esta sección encontrarás todas las posibilidades de personalización disponibles para las preferencias.
