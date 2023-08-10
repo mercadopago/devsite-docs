@@ -14,4 +14,3 @@ Por sua vez, quando definimos os caminhos que as documentações terão dentro d
 
 ✅ */guides/checkout-api/integration-configuration/integration-via-cardform* <br>
 ❌ */guides/checkout-api/cards*
-
