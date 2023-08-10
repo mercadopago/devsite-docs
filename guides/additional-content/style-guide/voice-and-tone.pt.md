@@ -21,4 +21,3 @@ Por isso, usamos a segunda pessoa do discurso, "você", com o pronome possessivo
 Para documentar guias, usamos um tom informal, mas cortês. A documentação que escrevemos é muito específica: ajuda desenvolvedores e integradores com diferentes níveis de experiência a fazer integrações. Pensando nisso, **nossa documentação deve contar uma história**: ela deve fluir, descrevendo o que eles vão precisar para começar a trabalhar na integração, como fazer e como finalizar o processo com sucesso.
 
 Pensar na melhor maneira de apresentar as informações é uma grande parte do nosso trabalho. Ela determina nosso tom e nível de formalidade, assim como o vocabulário utilizado e o nível de detalhamento nas descrições técnicas.
- 
