@@ -24,7 +24,7 @@ Em nossa documentação, podemos incluir três tipos de notas:
 
 3. **Nota de precaução:** Serve para chamar a atenção do leitor em alguma etapa do processo. Pode ser incluída para indicar a necessidade de cumprir alguma etapa anterior, mencionar limitações que possam surgir, indicar uma versão/pagamento desatualizado, entre outros.
 
-![nota-de-prevencao](/images/style-guide/nota-precaucao-pt.png)
+![nota-de-precaucao](/images/style-guide/nota-precaucao.png)
 
 ```markdown
 > WARNING
