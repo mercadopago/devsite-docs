@@ -34,3 +34,17 @@ Em nossa documentação, podemos incluir três tipos de notas:
 > Corpo da nota.
 ```
 
+<br><br><br><br><br><br>
+> Este é um exemplo de nota.
+<br><br><br><br><br><br>
+> NOTE
+>
+> Título
+>
+> Corpo da nota.
+<br><br><br><br><br><br>
+> WARNING
+>
+> Título
+>
+> Corpo da nota.

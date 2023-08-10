@@ -4,7 +4,7 @@ Nossos menus são estruturados por níveis. No **nível 0**, temos os títulos p
 
 Para os **subníveis**, como já mencionamos o verbo no nível 0, não será necessário incluí-lo novamente. 
 
-![exemplo-menu](/images/style-guide/ejemplo-menu-es.png)
+![exemplo-menu](/images/style-guide/menu-example-pt.png)
 
 > WARNING
 >
