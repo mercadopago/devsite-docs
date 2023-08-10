@@ -11,4 +11,3 @@ Para os **subníveis**, como já mencionamos o verbo no nível 0, não será nec
 > Atenção
 >
 > Devemos prestar atenção especial às **descrições** de cada seção do menu. Essas descrições orientam o usuário sobre o conteúdo que ele encontrará, partindo de um **verbo conjugado no imperativo**, e buscando descrever a seção em questão de forma concisa e breve (*Aprenda a configurar os métodos de pagamento*).
-
