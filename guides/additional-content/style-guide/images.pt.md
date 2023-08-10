@@ -9,7 +9,6 @@ Com exceção das Landings, que possuem imagens ilustrativas, as imagens nos gui
 ```markdown
 ![texto alternativo](path de la imagen dentro del repositorio) 
 ```
-
 ### Casos especiais
 * Se a imagem for meramente decorativa, não é necessário incluir o texto alternativo.
 * Nos botões, a descrição deve se referir à ação que será executada.
