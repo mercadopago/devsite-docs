@@ -28,5 +28,5 @@ Quando possível, evite usar o gênero masculino. Para isso, escolha opções do
 >
 > Importante
 >
-> Tenha em mente que nosso público não são apenas desenvolvedores, também são os vendedores. Por isso, evite usar pronomes possessivos ao se referir, por exemplo, às lojas (sua loja —> **a** loja). Você pode usar pronomes possessivos ao falar das integrações.
+> Tenha em mente que nosso público não são apenas desenvolvedores, também são os sellers. Por isso, evite usar pronomes possessivos ao se referir, por exemplo, às lojas (sua loja —> **a** loja). Você pode usar pronomes possessivos ao falar das integrações.
 

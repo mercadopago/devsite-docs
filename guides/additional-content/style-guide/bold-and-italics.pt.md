@@ -11,7 +11,7 @@ O ***itálico*** é usado para denotar que uma palavra está sendo utilizada em 
 
 #### Tip
 
-Na tecnologia, muitos termos em inglês são utilizados como parte do padrão. Por isso, em alguns casos, é preferível mencionar uma palavra em inglês no meio de um texto de outro idioma, pois é assim que a grande maioria dos leitores a reconhecerá. Se você quiser substituir algum termo, pode perguntar à equipe de DX para saber se ele é comumente utilizado.
+Na tecnologia, muitos termos em inglês são utilizados por padrão. Por isso, em alguns casos, é preferível mencionar uma palavra em inglês no meio de um texto de outro idioma, pois é assim que a grande maioria dos leitores a reconhecerá. Se você quiser substituir algum termo, pode perguntar à equipe de DX para saber se ele é comumente utilizado.
 
 #### Recomendação
 

@@ -15,6 +15,6 @@ Evitamos o uso de abreviações para evitar possíveis confusões, exceto nos se
     - USD (Dólar estadunidense)
 
 * **Números**: priorizamos o uso dos números (1, 2, 3) e não de suas transcrições.
-* **Siglas/acrónimos extendidos**: SDK, js (javascript), App, API, JSON, YAML.
+* **Siglas/acrônimos**: SDK, js (javascript), App, API, JSON, YAML.
 * **Para o português**: as cuotas/mensalidades podem ser indicadas como "x" (*parcelamento em até 12x*).
 

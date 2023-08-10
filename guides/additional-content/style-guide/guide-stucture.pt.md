@@ -8,11 +8,11 @@ Introdução que segue um padrão específico. Serve para apresentar o produto/p
 
 ## Introdução
 
-Breve descrição da ferramenta ou plugin a ser documentado. É uma boa prática enumerar e vincular os passos de integração aqui, indicando quando um ou mais são opcionais, mas recomendados.
+Breve descrição da ferramenta ou plugin a ser documentado. É uma boa prática enumerar e vincular os passos de integração aqui, indicando quando um ou mais são opcionais e no entanto recomendados.
 
 ## Requisitos prévios
 
-Lista de coisas que devem estar prontas para começar a integração. Geralmente, são apresentados em forma de tabela, contendo 3 colunas (requisito, descrição, especificações).
+Lista de coisas que devem estar prontas para começar a integração. Geralmente, são apresentados em forma de tabela, contendo 3 colunas (requisito, descrição e especificações).
 
 ## Passos da integração
 
@@ -22,7 +22,7 @@ Esta seção da documentação geralmente abrange mais de uma entrada de menu e 
 
 ## Fluxo de testes
 
-Se houver um fluxo de teste, ele deve ser incluído aqui. Se esse elemento estiver incluso, você também deve criar uma entrada de menu que explique como passar para a produção depois que o fluxo de teste for concluído.
+Se houver um fluxo de teste, ele deve ser incluído aqui. Se esse elemento estiver incluso, você também deve criar uma entrada de menu que explique como subir para produção depois que o fluxo de teste for concluído.
 
 ## Solução de problemas
 
@@ -34,4 +34,4 @@ A maioria das documentações não requer esta seção, mas as partes interessad
 
 ## Conteúdo adicional
 
-É possível solicitar a inclusão de outras informações que, embora sejam importantes, não fazem parte do fluxo de integração. Você pode adicionar essas informações, mas mantenha-as separadas do fluxo de integração com uma linha, para evitar confundir seus leitores. O termo "conteúdo adicional" é usado aqui como um exemplo. Você deve pensar em um nome apropriado para cada seção que adicionar como outra informação.
+É possível solicitar a inclusão de outras informações que, embora sejam importantes, não fazem parte do fluxo de integração. Você pode adicionar essas informações, mas mantenha-as separadas do fluxo de integração com uma linha para evitar confundir seus leitores. O termo "conteúdo adicional" é usado aqui como um exemplo. Você deve pensar em um nome apropriado para cada seção que adicionar como outra informação.
