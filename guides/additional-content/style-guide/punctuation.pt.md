@@ -17,4 +17,3 @@ Respeitamos o uso normativo dos sinais de pontuação. Algumas considerações e
 <br>
 
 * Como nosso estilo é instrucional, evitamos o uso de pontos de exclamação para que nossos textos não pareçam ordens. Os pontos de interrogação, por outro lado, são bem-vindos em títulos e subtítulos de *How-tos* e documentação de *problem solving*, pois nos permitem apresentar as perguntas que o leitor faz durante a leitura e fornecer respostas.
-
