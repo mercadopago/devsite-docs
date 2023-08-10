@@ -16,4 +16,3 @@ Para os subtítulos dentro de uma seção com título nominalizado, priorizamos 
 > Atenção
 >
 > Para documentações “How to”, sempre devemos iniciar o título com o interrogativo "como" (*Como melhorar a aprovação de pagamentos, Como medir a qualidade da integração*).
-
