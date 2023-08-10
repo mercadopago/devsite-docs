@@ -4,7 +4,6 @@ As tabelas nos servem para organizar informações em que precisamos incluir uma
 
 ![table-example](/images/style-guide/table-example-pt.png)
 
-
 ```markdown
 Column A | Column B | Column C
 ---------|----------|---------
