@@ -17,7 +17,7 @@ Wallet Brick offers two reading levels: the **call to action (button)** and the 
 | Customization moment  | When rendering the Brick  |
 | Property  | customization.texts.{action, valueProp} |
 | Type  | String  |
-| Comments  | When sending empty text, the screen will present the text defined by the default layout. On the other hand, when you submit a alternative text, it will replace the default text. To check what the default texts are, check out the table below. |
+| Comments  | When sending an empty text, the screen will present the text defined by the default layout shown after the [rendering of the Brick](/developers/en/docs/checkout-bricks/wallet-brick/default-rendering#bookmark_renderizar_o_brick). On the other hand, when you submit a alternative text, it will replace the default text. To check what the default texts are, check out the table below. |
 
 Check below the texts available for alteration and a code example.
 

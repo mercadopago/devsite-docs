@@ -11,8 +11,8 @@ Check the [&lt;dev&gt;program](/developers/en/developer-program) page for more i
 ## Integrator ID
  
 Unique number that identifies you as a member of the **&lt;dev&gt;program** automatically generated after your first successful certification. It is located next to your Mercado Pago ID (user ID) and only appears after it has been generated.
- 
-The **&lt;dev&gt;program** is a program from Mercado Pago for developers who integrate our checkout solutions. The developer takes a free online certification test, and if approved, gains access to exclusive benefits.
+
+The **&lt;dev&gt;program** is a program by Mercado Pago that recognizes those who integrate our checkout solutions. Simply take the test for one of our certifications, which is 100% free and online, and if approved, you gain access to exclusive advantages.
  
 Check out the [&lt;dev&gt;program](/developers/en/developer-program) page and choose which product you want to earn your certification for. Then, use your integrator ID and enter it into your integrations to receive extra benefits.
 

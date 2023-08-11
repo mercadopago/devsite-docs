@@ -1,9 +1,9 @@
 # Obtener datos de la orden
 
-Para consultar los datos de una orden, realiza un GET enviando `shipment_id` y `access-token` (generados por el proceso de autenticación OAuth) al endpoint[/proximity-integration/v1/orders/{shipmentId}](/developers/es/reference/mp_delivery/_proximity-integrationorders_shipment_id/get). Consulta [Seguridad](/developers/es/guides/additional-content/security/oauth/introduction) para obtener más información sobre OAuth.
+Para consultar los datos de una orden, realiza un GET enviando `shipment_id` y `access_token` (generados por el proceso de autenticación OAuth) al endpoint[/proximity-integration/v1/orders/{shipmentId}](/developers/es/reference/mp_delivery/_proximity-integrationorders_shipment_id/get). Consulta [Seguridad](/developers/es/guides/additional-content/security/oauth/introduction) para obtener más información sobre OAuth.
 
 * **Merchant**: información sobre el restaurante que recibió la orden.
-* **Items**: descripción de los artículos y artículos adicionales en la orden.
+* **Items**: descripción de los artículos y adicionales en la orden.
 * **OtherFees**: información de tarifas de transacción y envío.
 * **Discounts**: descuentos aplicados a la orden.
 * **Total**: importe total pagado en una orden.

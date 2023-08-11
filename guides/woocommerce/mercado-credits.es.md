@@ -21,6 +21,7 @@ Para **configurar Mercado Crédito en el checkout de tu tienda**, sigue los paso
 
 ## Configurar el medio de pago en el checkout de tu tienda
 
+----[mla, mlb]----
 > WARNING
 >
 > Atención
@@ -32,6 +33,22 @@ Para **configurar Mercado Crédito en el checkout de tu tienda**, sigue los paso
 3. En el campo **Título en el checkout** puedes elegir el nombre con el que se mostrará este medio de pago en la tienda. Recomendamos utilizar **“Hasta 12 pagos sin tarjeta con Mercado Pago”**.
 4. Para que tus clientes vean esta opción de pago en la página de cada producto, busca por **Informa a tus clientes sobre la opción de financiar sus compras en hasta 12 pagos sin tarjeta de crédito**, y haz clic en el botón slider que activará el componente **“Hasta 12 pagos sin tarjeta con Mercado Pago”**.
 5. Haz clic en **Guardar los cambios** para finalizar tu configuración.
+
+------------
+----[mlm]----
+> WARNING
+>
+> Atención
+>
+> Para poder ofrecer **Financiamiento sin tarjeta** como medio de pago en tu tienda WooCommerce, deberás **actualizar previamente el plugin de Mercado Pago** a la versión más reciente disponible. Para hacerlo, en el panel de administración de tu tienda ve a **Plugins > Plugins instalados**, busca por **Mercado Pago**, y haz clic en **Actualizar**.
+
+1. Dentro de la opción **Financiamiento sin tarjeta de crédito**, haz clic en **Configurar**.
+2. Busca por **Activar la opción de financiamiento sin tarjeta de crédito** y haz clic en el botón slider para disponibilizar Hasta 12 pagos sin tarjeta con Mercado Pago. Presta atención a que su estatus pase a ser **activo**.
+3. En el campo **Título en el checkout** puedes elegir el nombre con el que se mostrará este medio de pago en la tienda. Recomendamos utilizar **“Hasta 12 pagos sin tarjeta con Mercado Pago”**.
+4. Para que tus clientes vean esta opción de pago en la página de cada producto, busca por **Informa a tus clientes sobre la opción de financiar sus compras en hasta 12 pagos sin tarjeta de crédito**, y haz clic en el botón slider que activará el componente **“Hasta 12 pagos sin tarjeta con Mercado Pago”**.
+5. Haz clic en **Guardar los cambios** para finalizar tu configuración.
+
+------------
 
 <center>
 

@@ -337,6 +337,26 @@ This indicates that payment **999999999** was created for user **44444** in prod
 
 After returning the notification and confirming its receipt, you will obtain the full information of the notified resource by accessing the corresponding API endpoint:
 
+----[mpe, mco, mlu, mlc]---- 
+| Type | URL | Documentation |
+| --- | --- | --- |
+| payment | `https://api.mercadopago.com/v1/payments/[ID]` | [check documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_id/get) |
+| subscription_preapproval | `https://api.mercadopago.com/preapproval` | [check documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/subscriptions/_preapproval/post) |
+| subscription_preapproval_plan | `https://api.mercadopago.com/preapproval_plan` | [check documentation](/developers/en/reference/subscriptions/_preapproval_plan/post) |
+| subscription_authorized_payment | `https://api.mercadopago.com/authorized_payments` | [check documentation](/developers/en/reference/subscriptions/_authorized_payments_id/get) |
+
+------------
+----[mlm, mlb]---- 
+| Type | URL | Documentation |
+| --- | --- | --- |
+| payment | `https://api.mercadopago.com/v1/payments/[ID]` | [check documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_id/get) |
+| subscription_preapproval | `https://api.mercadopago.com/preapproval` | [check documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/subscriptions/_preapproval/post) |
+| subscription_preapproval_plan | `https://api.mercadopago.com/preapproval_plan` | [check documentation](/developers/en/reference/subscriptions/_preapproval_plan/post) |
+| subscription_authorized_payment | `https://api.mercadopago.com/authorized_payments` | [check documentation](/developers/en/reference/subscriptions/_authorized_payments_id/get) |
+| point_integration_wh | - | [check documentation](/developers/en/docs/mp-point/integration-configuration/integrate-with-pdv/notifications) |
+
+------------
+----[mla]----
 | Type | URL | Documentation |
 | --- | --- | --- |
 | payment | `https://api.mercadopago.com/v1/payments/[ID]` | [check documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_id/get) |
@@ -345,5 +365,7 @@ After returning the notification and confirming its receipt, you will obtain the
 | subscription_authorized_payment | `https://api.mercadopago.com/authorized_payments` | [check documentation](/developers/en/reference/subscriptions/_authorized_payments_id/get) |
 | point_integration_wh | - | [check documentation](/developers/en/docs/mp-point/integration-configuration/integrate-with-pdv/notifications) |
 | delivery | - | [check documentation](/developers/en/reference/mp_delivery/_proximity-integration_shipments_shipment_id_accept/put)
+
+------------
 
 With this information, you will be able to carry out the necessary updates to your platform, such as updating an approved payment.

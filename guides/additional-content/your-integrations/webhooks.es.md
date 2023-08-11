@@ -8,7 +8,7 @@ Una vez configurado, el Webhook se enviará siempre que se produzcan uno o más 
 
 En esta documentación, explicaremos las configuraciones necesarias para recibir los mensajes (a través del Panel del desarrollador o durante la creación de pagos), además de mostrar las acciones necesarias que debes realizar para que Mercado Pago valide que las notificaciones han sido recibidas correctamente.
 
-## Configuración a través del Painel do desenvolvedor
+## Configuración a través del Painel de desarollador
 
 A continuación explicaremos cómo indicar las URLs que serán notificadas y cómo configurar los eventos para los que se recibirán notificaciones.
 
@@ -337,6 +337,26 @@ Esto indica que el pago **999999999** fue creado para el usuario **44444** en mo
 
 Luego de devolver la notificación y confirmar su recepción, obtendrás la información completa del recurso notificado accediendo al endpoint de la API correspondiente:
 
+----[mpe, mco, mlu, mlc]---- 
+| Tipo | URL | Documentación |
+| --- | --- | --- |
+| payment | `https://api.mercadopago.com/v1/payments/[ID]` | [ver documentación](/developers/es/reference/payments/_payments_id/get)  |
+| subscription_preapproval | `https://api.mercadopago.com/preapproval` | [ver documentación](/developers/es/reference/subscriptions/_preapproval/post) |
+| subscription_preapproval_plan | `https://api.mercadopago.com/preapproval_plan` | [ver documentación](/developers/es/reference/subscriptions/_preapproval_plan/post)  |
+| subscription_authorized_payment | `https://api.mercadopago.com/authorized_payments` | [ver documentación](/developers/es/reference/subscriptions/_authorized_payments_id/get)  |
+
+------------
+----[mlm, mlb]---- 
+| Tipo | URL | Documentación |
+| --- | --- | --- |
+| payment | `https://api.mercadopago.com/v1/payments/[ID]` | [ver documentación](/developers/es/reference/payments/_payments_id/get)  |
+| subscription_preapproval | `https://api.mercadopago.com/preapproval` | [ver documentación](/developers/es/reference/subscriptions/_preapproval/post) |
+| subscription_preapproval_plan | `https://api.mercadopago.com/preapproval_plan` | [ver documentación](/developers/es/reference/subscriptions/_preapproval_plan/post)  |
+| subscription_authorized_payment | `https://api.mercadopago.com/authorized_payments` | [ver documentación](/developers/es/reference/subscriptions/_authorized_payments_id/get)  |
+| point_integration_wh| - | [ver documentación](/developers/es/docs/mp-point/integration-configuration/integrate-with-pdv/notifications) |
+
+------------
+----[mla]---- 
 | Tipo | URL | Documentación |
 | --- | --- | --- |
 | payment | `https://api.mercadopago.com/v1/payments/[ID]` | [ver documentación](/developers/es/reference/payments/_payments_id/get)  |
@@ -345,5 +365,7 @@ Luego de devolver la notificación y confirmar su recepción, obtendrás la info
 | subscription_authorized_payment | `https://api.mercadopago.com/authorized_payments` | [ver documentación](/developers/es/reference/subscriptions/_authorized_payments_id/get)  |
 | point_integration_wh| - | [ver documentación](/developers/es/docs/mp-point/integration-configuration/integrate-with-pdv/notifications) |
 | delivery | - | [ver documentación](/developers/es/reference/mp_delivery/_proximity-integration_shipments_shipment_id_accept/put)
+
+------------
 
 Con esta información podrás realizar las actualizaciones necesarias a tu plataforma, como actualizar un pago aprobado.

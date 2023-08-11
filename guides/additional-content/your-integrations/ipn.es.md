@@ -246,9 +246,7 @@ curl -X POST \
 ```
 ]]]
 
-
 2. Implementa el receptor de notificaciones usando el siguiente código como ejemplo:
-
 
 ```php
 <?php
@@ -285,21 +283,16 @@ curl -X POST \
  ?>
 ```
 
-
 3. Una vez realizadas las configuraciones, Mercado Pago notificará esa URL con dos parámetros cada vez que se cree o actualice un recurso:
-
 
 | Campo | Descripción |
 | --- | --- |
 | `topic` | Identifica cuál es el recurso, puede ser `payment`, `chargebacks`, `merchant_order ` o `point_integration_ipn`. |
 | `id` | Es un identificador único del recurso notificado. |
 
-
 > Por ejemplo, si configuras la URL: `https://www.yoursite.com/notifications`, recibirás notificaciones de pago como esta:` https://www.yoursite.com/notifications?topic=payment&id=123456789`.
 
-
 4. Si deseas recibir notificaciones solo de IPN y no de Webhooks, puedes agregar en el `notification_url` el parámetro `source_news=ipn`. Por ejemplo: `https://www.yourserver.com/notifications?source_news=ipn`.
-
 
 # Después de recibir la notificación
 
@@ -317,7 +310,6 @@ Además, específicamente en las alertas de fraude, no deberás entregar el paqu
 
 En la notificación recibirás un `JSON` con la siguiente información que contiene el payment id para realizar la cancelación.
 
-
 [[[
 ```Json
 
@@ -334,8 +326,6 @@ En la notificación recibirás un `JSON` con la siguiente información que conti
 >
 > Importante
 >
-> También puedes obtener más información de la orden utilizando la api [Obtener orden](/developers/es/reference/merchant_orders/_merchant_orders_id/get).
-
-<br>
+> También puedes obtener más información de la orden utilizando la api [Obtener orden.](/developers/es/reference/merchant_orders/_merchant_orders_id/get)
 
 Con esta información podrás realizar las actualizaciones necesarias a tu plataforma, como actualizar un pago aprobado o un pedido cerrado.

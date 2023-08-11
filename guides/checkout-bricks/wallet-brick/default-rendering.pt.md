@@ -23,7 +23,7 @@ const renderWalletBrick = async (bricksBuilder) => {
    },
    onSubmit: (formData) => {
      // callback chamado ao clicar no Wallet Brick
-     // isso é possível porque o brick é um botão
+     // isso é possível porque o Brick é um botão
      // neste momento de submit, você deve criar a preferência
      const yourRequestBodyHere = {
        items: [
@@ -70,7 +70,7 @@ renderWalletBrick(bricksBuilder);
 ```react-jsx
 const onSubmit = async (formData) => {
  // callback chamado ao clicar no Wallet Brick
- // isso é possível porque o brick é um botão
+ // isso é possível porque o Brick é um botão
  // neste momento de submit, você deve criar a preferência
  const yourRequestBodyHere = {
    items: [
@@ -136,7 +136,7 @@ Uma vez criadas as configurações, insira o código abaixo para renderizar o Br
 >
 > Importante
 >
-> O id "walletBrick_container" da div html abaixo, deve corresponder ao valor enviado dentro do método create() da etapa anterior.
+> O id `walletBrick_container` da div html abaixo, deve corresponder ao valor enviado dentro do método create() da etapa anterior.
 
 [[[
 ```html
@@ -154,7 +154,7 @@ import { Wallet } from '@mercadopago/sdk-react';
 ```
 ]]]
 
-O resultado de renderizar o Brick deve ser como na imagem abaixo.
+O resultado de renderizar o Brick deve ser como na imagem abaixo, apresentando um texto e um visual padrão.
 
 <center>
 
@@ -162,11 +162,11 @@ O resultado de renderizar o Brick deve ser como na imagem abaixo.
 
 </center>
 
-> Caso deseje alterar o texto do Brick, consulte a seção de [Alterar textos.](/developers/pt/docs/checkout-bricks/wallet-brick/additional-customization/change-texts)
+> Caso deseje alterar o texto e o visual padrão do Brick, consulte as seções de [Alterar textos](/developers/pt/docs/checkout-bricks/wallet-brick/additional-customization/change-texts) e [Alterar visual,](/developers/pt/docs/checkout-bricks/wallet-brick/additional-customization/change-appearance) respectivamente.
 
 ## Habilitar pagamento com Mercado Pago
 
-Para utilizar o método de pagamento (paymentMethods) do tipo "mercadoPago" é preciso enviar uma preferência durante a inicialização do Brick, substituindo o valor <PREFERENCE_ID> pelo ID da preferência criada. 
+Para utilizar o método de pagamento (`paymentMethods`) do tipo "mercadoPago" é preciso enviar uma preferência durante a inicialização do Brick, substituindo o valor `&ltPREFERENCE_ID&gt`  pelo ID da preferência criada. 
 
 Para criar uma preferência em seu backend, adicione o [SDK do Mercado Pago](/developers/pt/docs/sdks-library/landing) e as [credenciais](/developers/pt/guides/additional-content/your-integrations/credentials) necessárias ao seu projeto para habilitar o uso de preferências.
 

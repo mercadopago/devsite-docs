@@ -2,7 +2,7 @@
  
 To integrate with Mercado Pago, follow the procedures below.
 
-----[mlm]----
+----[mlm, mla]----
 > WARNING
 >
 > Attention
@@ -15,32 +15,38 @@ To integrate with Mercado Pago, follow the procedures below.
 4. You **will be redirected to a Mercado Pago** page to access with your data. Click **Allow** to authorize the connection.
 
 ------------
-----[mlb, mla, mpe, mco, mlu, mlc]----
+----[mlb]----
 1. Create a [seller account](https://www.mercadopago[FAKER][URL][DOMAIN]/activities) in Mercado Pago if you do not yet have one.
 1. Install the app on your site.
 1. Set the payment methods with Mercado Pago.
 
 ## Activate Mercado Pago on your site
 
-----[mlb]---- To **link your Mercado Pago account to Nuvemshop**, follow these steps: ------------ ----[mla, mlm, mlc, mlu, mpe, mco]---- To **link your Mercado Pago account to Tiendanube**, follow these steps: ------------
+To **link your Mercado Pago account to Nuvemshop**, follow these steps:
 
-1. Access the payment ----[mlb]---- [methods settings](https://lojavirtualnuvem.com.br/admin/payments/) ------------ ----[mla, mlm, mlc, mlu, mpe, mco]---- [methods settings](https://mitiendanube.com/admin/payments/) ------------ on your site menu.
+1. Access the payment [methods settings](https://lojavirtualnuvem.com.br/admin/payments/) on your site menu.
 2. Look for Mercado Pago in the payment methods list.
 3. Click on "Settings" and then on "Activate".
 4. You are going to be redirected to Mercado Pago so you can log in with your account information. To authorize the connection, click on "Allow".
 
-----[mlb]----
 ![Payments Connect - Nuvem Shop](/images/nuvemshop/nuvemshop_connect_1.gif)
 
 ------------
-----[mla]----
-![Payments Connect - Nuvem Shop](/images/nuvemshop/ar_tientanube_connect.gif)
+----[mlc, mlu, mpe, mco]----
+1. Create a [seller account](https://www.mercadopago[FAKER][URL][DOMAIN]/activities) in Mercado Pago if you do not yet have one.
+1. Install the app on your site.
+1. Set the payment methods with Mercado Pago.
 
-------------
-----[mlm, mlc, mlu, mpe, mco]----
+## Activate Mercado Pago on your site
+
+To **link your Mercado Pago account to Tiendanube**, follow these steps: ------------
+
+1. Access the payment [methods settings](https://mitiendanube.com/admin/payments/) on your site menu.
+2. Look for Mercado Pago in the payment methods list.
+3. Click on "Settings" and then on "Activate".
+4. You are going to be redirected to Mercado Pago so you can log in with your account information. To authorize the connection, click on "Allow".
+
 ![Payments Connect - Nuvem Shop](/images/nuvemshop/mx_tientanube_connect.gif)
-
-------------
 
 ------------
 
@@ -56,7 +62,7 @@ Once the initial settings are done, configure your store's payment experiences a
 
 If, for any reason, you need to change your current Mercado Pago account for another one, follow the steps below.
 
-----[mlm]----
+----[mlm, mla]----
 1. If you are still connected to your Mercado Pago account in a browser, disconnect it by accessing the "Options menu" and then clicking on **Exit**.
 2. In your store's Administrative Panel at Tiendanube, go to **My apps - See all apps**.
 3. Search for the Mercado Pago plugin, locate it in the list of payment methods and click on **Uninstall**.
@@ -64,10 +70,18 @@ If, for any reason, you need to change your current Mercado Pago account for ano
 5. Finally, you will be redirected to Mercado Pago so that you can enter your account details. To authorize the connection, click **Allow**.
 
 ------------
-----[mlb, mla, mpe, mco, mlu, mlc]----
+----[mlb]----
 1. Close your Mercado Pago account if you have it open in your browser.
 2. Click "Options Menu" and then "Exit".
-3. Access the payment ----[mlb]---- [methods settings](https://lojavirtualnuvem.com.br/admin/payments/) ------------ ----[mla, mlm, mlc, mlu, mpe, mco]---- [methods settings](https://mitiendanube.com/admin/payments/) ------------ on your site menu, look for "Mercado Pago" and select "Edit".
+3. Access the payment [methods settings](https://lojavirtualnuvem.com.br/admin/payments/) on your site menu, look for "Mercado Pago" and select "Edit".
+4. Finally, click on "Change user" to unlink your current account.
+5. Done! The unlinking was successful and now you can [add a new account](#bookmark_activate_mercado_pago_on_your_site).
+
+------------
+----[mpe, mco, mlu, mlc]----
+1. Close your Mercado Pago account if you have it open in your browser.
+2. Click "Options Menu" and then "Exit".
+3. Access the payment [methods settings](https://mitiendanube.com/admin/payments/) on your site menu, look for "Mercado Pago" and select "Edit".
 4. Finally, click on "Change user" to unlink your current account.
 5. Done! The unlinking was successful and now you can [add a new account](#bookmark_activate_mercado_pago_on_your_site).
 

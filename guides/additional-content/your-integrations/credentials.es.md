@@ -1,6 +1,6 @@
 # Credenciales
 
-Las credenciales son contraseñas exclusivas utilizadas para identificar una integración en tu cuenta. Desempeñan un papel fundamental en la captura segura de pagos en tiendas en línea y otras aplicaciones. Puedes encontrarlas en **Detalles de la aplicación > Credenciales** dentro del [Panel del desarrollador](/developers/panel/app) o en tu cuenta de Mercado Pago, accediendo a [Tu negocio > Configuraciones > Gestión y administración > Credenciales](https://www.mercadopago/settings/account/credentials).
+Las credenciales son contraseñas exclusivas utilizadas para identificar una integración en tu cuenta. Desempeñan un papel fundamental en la captura segura de pagos en tiendas en línea y otras aplicaciones. Puedes encontrarlas en **Detalles de la aplicación > Credenciales** dentro del [Panel del desarrollador](/developers/panel/app) o en tu cuenta de Mercado Pago, accediendo a [Tu negocio > Configuraciones > Gestión y administración > Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).
 
 > WARNING
 >

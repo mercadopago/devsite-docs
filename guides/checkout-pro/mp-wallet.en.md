@@ -4,7 +4,18 @@ The option to pay with Mercado Pago Wallet, by default, is presented in all Merc
 
 This option allows users registered in Mercado Pago and/or Mercado Livre to log in and use the available methods to make their payments, in addition to being able to include new payment options, such as credit cards.
 
-It is possible to pay with **card**, **available balance** and **Mercado Crédito** in a safe and optimized environment, increasing the chances of converting sales, in addition to allowing the seller to only offer payments with wallet. With this, the option to pay without logging in will not exist, however, it will contribute to an increase in the conversion of payments.
+----[mco, mpe, mlu, mlc]----
+It is possible to pay with **card** and **available balance** in a safe and optimized environment, increasing the chances of converting sales, in addition to allowing the seller to only offer payments with wallet. With this, the option to pay without logging in will not exist, however, it will contribute to an increase in the conversion of payments. 
+
+------------
+----[mla, mlm]----
+It is possible to pay with **card**, **available balance** and **installments without card** in a safe and optimized environment, increasing the chances of converting sales, in addition to allowing the seller to only offer payments with wallet. With this, the option to pay without logging in will not exist, however, it will contribute to an increase in the conversion of payments. 
+
+------------
+----[mlb]----
+It is possible to pay with **card**, **available balance**, **Pix** and **installments without card** in a safe and optimized environment, increasing the chances of converting sales, in addition to allowing the seller to only offer payments with wallet. With this, the option to pay without logging in will not exist, however, it will contribute to an increase in the conversion of payments. 
+
+------------
 
 > WARNING
 >

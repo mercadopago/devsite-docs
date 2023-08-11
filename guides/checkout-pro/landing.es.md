@@ -59,7 +59,7 @@ available_payments: credit, debit, mercadopago, efectivo, atm
 ----[mlm]---- 
 
 ---
-available_payments: credit, debit, mercadopago, efectivo, atm, moneda
+available_payments: credit, debit, mercadopago, efectivo, atm, moneda, spei
 
 ----
 ------------

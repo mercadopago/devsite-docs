@@ -3342,11 +3342,11 @@ paths:
         eng: Catalog import
         spa: Importación de catálogo
         por: Importação de catálogo
-      description: This endpoint sends a catalog to be imported asynchronously to one or more stores. Each store generates an import identifier that can be used to check the process status afterwards. It will return a '202 - Success' response when all requests were sent successfully, or '206 - Partial Error' if any post fails
+      description: This endpoint sends a catalog to be imported asynchronously to one or more stores. Each store generates an import identifier that can be used to check the process status afterwards. It will return a 202 - Success response when all requests were sent successfully, or 206 - Partial Error if any post fails
       x-description-i18n:
-        eng: This endpoint sends a catalog to be imported asynchronously to one or more stores. Each store generates an import identifier that can be used to check the process status afterwards. It will return a '202 - Success' response when all requests were sent successfully, or '206 - Partial Error' if any post fails
-        spa: Este endpoint importa un catálogo de manera asíncrona a una o más tiendas. Cada tienda genera un identificador de importación que se puede utilizar para comprobar el estado del proceso posteriormente.  Retornará una respuesta '202 - Success' cuando todas las solicitudes se enviaron correctamente, o '206 - Partial Error' en caso de que alguna publicación falle
-        por: Esse endpoint importa um catálogo de forma assíncrona para uma ou mais lojas. Cada loja gera um identificador de importação que pode ser usado para verificar o status do processo posteriormente. Retornará uma resposta '202 - Success' quando todas as requisições forem enviadas corretamente ou '206 - Partial error' caso alguma requisição falhe.
+        eng: This endpoint sends a catalog to be imported asynchronously to one or more stores. Each store generates an import identifier that can be used to check the process status afterwards. It will return a 202 - Success response when all requests were sent successfully, or 206 - Partial Error if any post fails
+        spa: Este endpoint importa un catálogo de manera asíncrona a una o más tiendas. Cada tienda genera un identificador de importación que se puede utilizar para comprobar el estado del proceso posteriormente.  Retornará una respuesta 202 - Success cuando todas las solicitudes se enviaron correctamente, o 206 - Partial Error en caso de que alguna publicación falle
+        por: Esse endpoint importa um catálogo de forma assíncrona para uma ou mais lojas. Cada loja gera um identificador de importação que pode ser usado para verificar o status do processo posteriormente. Retornará uma resposta 202 - Success quando todas as requisições forem enviadas corretamente ou 206 - Partial error caso alguma requisição falhe
       requestBody:
         content:
           application/json:
@@ -3438,6 +3438,14 @@ paths:
                                 spa: El precio del ítem, que debe ser un número positivo. El cero no está permitido.
                                 por: Preço do item. O campo deve ser um número positivo, não sendo permitida a utilização do número Zero.
                               example: 25.50
+                            discount_price:
+                              type: number
+                              description: Optional field that informs the discounted value of the product. If the value is equal to 0 or null, the information will not be considered. The discount price value must be less than the regular price. In addition, the promotional value is valid for 3 months from its creation.
+                              x-description-i18n:
+                                eng: Optional field that informs the discounted value of the product. If the value is equal to 0 or null, the information will not be considered. The discount price value must be less than the regular price. In addition, the promotional value is valid for 3 months from its creation.
+                                spa: Campo opcional que informa el valor descontado del producto. Si el valor es igual a 0 o nulo, la información no será considerada. El valor del precio de descuento debe ser menor que el precio regular. Además, el valor promocional tiene una vigencia de 3 meses desde la creación.
+                                por: Campo opcional que informa o valor com desconto do produto. Se o valor for igual a 0 ou nulo, a informação não será considerada. O valor do preço com desconto deve ser menor que o preço normal. Além disso, o valor promocional é válido por 3 meses a partir da criação.
+                              example: 20.50
                             status:
                               type: string
                               description: The item current status, can be active if it is available ("active"), or paused if it is not ("paused"). 

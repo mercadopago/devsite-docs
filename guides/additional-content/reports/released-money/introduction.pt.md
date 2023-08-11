@@ -6,7 +6,7 @@
 # O que é o relatório de Liberações?
 ------------
 
-O relatório de ----[mla]---- Liquidações ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------ e um **relatório para ser baixado que te permite saber como seu saldo disponível está composto no Mercado Pago. Ou seja, quanto você tem para usar**. Ele contém **detalhes de todos os valores envolvidos em um período de tempo,** e inclui os casos de ----[mla]---- liquidaçao ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- liberação ------------ de dinheiro, como de bloqueios e desbloqueios.
+O relatório de ----[mla]---- Liquidações ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------ é um **relatório para ser baixado que te permite saber como seu saldo disponível está composto no Mercado Pago. Ou seja, quanto você tem para usar**. Ele contém **detalhes de todos os valores envolvidos em um período de tempo,** e inclui os casos de ----[mla]---- liquidaçao ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- liberação ------------ de dinheiro, como de bloqueios e desbloqueios.
 
 ----[mla, mlm]----
 > WARNING

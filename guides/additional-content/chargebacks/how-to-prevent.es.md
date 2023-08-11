@@ -17,17 +17,16 @@ No es posible evitar todos los contracargos, pero puedes disminuir la probabilid
 
 3. Asegúrate de agregar todos los detalles de pago y del cliente, como nombre, dirección y medio de pago, en la solicitud [Crear pago](/developers/es/reference/payments/_payments/post).
    
-4. [Envía el comprobante del pago](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/16170) a tu cliente por e-mail o mensaje de texto.
+4. [Envía el comprobante del pago](https://www.mercadopago.com.ar/ayuda/16170) a tu cliente por e-mail o mensaje de texto.
    
-
 ## Alerta de fraude
-Te avisaremos vía notificaciones IPN  cuando detectemos un comportamiento irregular o recibamos una notificación de que la tarjeta usada fue robada. Además,  nos contactaremos  vía e-mail para avisarte. Ante esta situación, debes [cancelar la compra](/docs/checkout-api/payment-management/cancellations-and-refunds) y devolver el dinero al comprador para evitar el contracargo.
 
-Configura y habilita [las notificaciones IPN](/developers/panel/ipn) para recibir alertas por comportamiento irregular al habilitar **Alerta de fraude**(`delivery_cancellation`) 
+Te avisaremos vía notificaciones IPN  cuando detectemos un comportamiento irregular o recibamos una notificación de que la tarjeta usada fue robada. Además,  nos contactaremos  vía e-mail para avisarte. Ante esta situación, debes [cancelar la compra](/developers/es/guides/additional-content/sales-processing/cancellations-and-refunds) y devolver el dinero al comprador para evitar el contracargo.
+
+Configura y habilita [las notificaciones IPN](/developers/panel/ipn) para recibir alertas por comportamiento irregular al habilitar **Alerta de fraude**(`delivery_cancellation`).
 
 > NOTE
 >
 > Importante
 > 
 > Al cobrar con Point, revisa los datos del comprador y solicita siempre una identificación.
-
