@@ -3,9 +3,9 @@ servers:
   - url: https://api.mercadopago.com
 info:
   title: Mercado Pago API Reference
-  version: "1.0"
+  version: '1.0'
 paths:
-  /v1/transaction-intents/:
+  /v1/transaction-intents:
     post:
       tags:
         - $ref: '#/tags/checkout-api'
