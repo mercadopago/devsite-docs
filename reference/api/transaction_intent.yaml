@@ -137,8 +137,8 @@ paths:
                     description: Current status of the transaction intent
                     x-description-i18n:
                       eng: Current status of the transaction intent
-                      spa: Estado actual de la intención de transacción
-                      por: Estado atual da transação
+                      spa: Status actual de la intención de transacción
+                      por: Status atual da transação
                     enum:
                       - new--nova
                       - transaction_in_process--transação em processo
