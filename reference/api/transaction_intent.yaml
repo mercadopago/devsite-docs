@@ -175,120 +175,124 @@ paths:
                         properties:
                           purpose:
                             type: string
-                            description: Identifier of the purpose of the transaction, which allows load a predefined list of options
+                            description: Transaction purpose identifier that enables loading a list of predefined options.
                             x-description-i18n:
-                              eng: Identifier of the purpose of the transaction, which allows load a predefined list of options
-                              spa: Identificador del propósito de la transacción, que permite cargar un listado predefinido de opciones
-                              por: Identificador da finalidade da transação, que permite carregar uma lista de opções predefinidas
+                              eng: Transaction purpose identifier that enables loading a list of predefined options.
+                              spa: Identificador de propósito de transacción que permite cargar una lista de opciones predefinidas.
+                              por: Identificador da finalidade da transação, que permite carregar uma lista de opções predefinidas.
                             example: wallet_purchase, onboarding_credits
                           payment_methods:
                             type: object
                             properties:
                               coupons:
-                                description: Coupons can be used as a methods of payment in the transaction
+                                description: Coupons can be used as a payment method during the transaction.
                                 x-description-i18n:
-                                  eng: Coupons can be used as a methods of payment in the transaction
-                                  spa: Los cupones pueden ser utilizados como medio de pago en la transacción
-                                  por: Os cupons podem ser utilizados como meio de pagamento na transação
+                                  eng: Coupons can be used as a payment method during the transaction.
+                                  spa: Los cupones se pueden utilizar como método de pago durante la transacción.
+                                  por: Os cupons podem ser utilizados como forma de pagamento durante a transação.
                                 type: object
                                 properties:
                                   campaign_id:
                                     type: number
                                     example: 123456
-                                    description: Campaign identifier number
+                                    description: Identifier number of the campaign to which the coupon is linked.
                                     x-description-i18n:
-                                      eng: Campaign identifier number
-                                      spa: Número identificador de la campaña
-                                      por: Número identificador da campanha a qual o cupom está vinculadop
+                                      eng: Identifier number of the campaign to which the coupon is linked.
+                                      spa: Número identificador de la campaña a la cual el cupón está vinculado.
+                                      por: Número de identificação da campanha à qual o cupom está associado.
                                   amount:
                                     type: string
                                     example: "100.00"
-                                    description: Total value of coupon
+                                    description: Total value of coupon. For example, "100.00".
                                     x-description-i18n:
-                                      eng: Total value of coupon
-                                      spa: Valor total del cupón
-                                      por: Valor total do cupom
+                                      eng: Total value of coupon. For example, "100.00".
+                                      spa: Valor total del cupón. Por ejemplo, "100.00".
+                                      por: Valor total do cupom. Por exemplo, "100.00".
                               types:
                                 type: object
-                                description: Configuration by payment method type
+                                description: Configuration by payment method type.
                                 x-description-i18n:
-                                  eng: Configuration by payment method type
-                                  spa: Configuración por tipo de medio de pago
-                                  por: Configuração por tipo de meio de pagamento
+                                  eng: Configuration by payment method type.
+                                  spa: Configuración por tipo de medio de pago.
+                                  por: Configuração por tipo de meio de pagamento.
                                 properties:
                                   enabled:
                                     type: array
                                     items:
                                       type: string
                                       example: credit_card, debit_card
-                                      description: List of Payment Types included
+                                      description: List of Payment Types included. For example, credit_card, debit_card.
                                       x-description-i18n:
-                                        eng: List of Payment Types included
-                                        spa: Lista de tipos de medios de pago incluidos
-                                        por: Lista de tipos de meios de pagamento incluídos
+                                        eng: List of Payment Types included. For example, credit_card, debit_card.
+                                        spa: Lista de tipos de medios de pago incluidos. Por ejemplo, credit_card, debit_card.
+                                        por: Lista de tipos de meios de pagamento incluídos. Por exemplo, credit_card, debit_card.
                                   disabled:
                                     type: array
                                     items:
                                       type: string
                                       example: "credit_card"
-                                      description: Types of payment methods not included
+                                      description: Types of payment methods not covered. This parameter encompasses payments that will not be accepted in the transaction, such as "credit card".
                                       x-description-i18n:
-                                        eng: Types of payment methods not included
-                                        spa: Tipos de medios de pago no incluidos
-                                        por: Tipos de meios de pagamento não incluídos
+                                        eng: Types of payment methods not covered. This parameter encompasses payments that will not be accepted in the transaction, such as "credit card".
+                                        spa: Tipos de medios de pago no incluidos. Este parámetro abarca los pagos que no serán aceptados en la transacción, como por ejemplo, "credit card".
+                                        por: Tipos de meios de pagamento não abrangidos. Este parâmetro engloba os pagamentos que não serão aceitos na transação, como por exemplo, "credit card".
                               methods:
                                 type: object
-                                description: Configuration by specific payment method
+                                description: Configuration by specific payment method.
                                 x-description-i18n:
-                                  eng: Configuration by specific payment method
-                                  spa: Configuración por tipo específico de medio de pago
-                                  por: Configuração por tipo específico de meio de pagamento
+                                  eng: Configuration by specific payment method.
+                                  spa: Configuración por tipo específico de medio de pago.
+                                  por: Configuração por tipo específico de meio de pagamento.
                                 properties:
                                   enabled:
                                     type: array
                                     example: visa, master
-                                    description: Payment methods included
+                                    description: Payment methods included.
+                                    x-description-i18n:
+                                      eng: Payment methods included.
+                                      spa: Medios de pago incluidos.
+                                      por: Meios de pagamento incluídos.
                                     items:
                                       type: object
                                       properties:
                                         id:
                                           type: string
-                                          description: Payment method identifier
+                                          description: Payment method identifier.
                                           x-description-i18n:
-                                            eng: Payment method identifier
-                                            spa: Identificador del medio de pago
-                                            por: Identificador do meio de pagamento
+                                            eng: Payment method identifier.
+                                            spa: Identificador del medio de pago.
+                                            por: Identificador do meio de pagamento.
                                           example: "credit_card"
                                         installments:
                                           type: object
-                                          description: Configuration of the number of installments to offer for the payment method
+                                          description: Configuration of the installment quantity to be offered for each payment method.
                                           x-description-i18n:
-                                            eng: Configuration of the number of installments to offer for the payment method
-                                            spa: Configuración de cantidad de cuotas a ofrecer para el tipo de medio de pago
-                                            por: Configuração de quantidade de parcelas a oferecer para o tipo de meio de pagamento
+                                            eng: Configuration of the installment quantity to be offered for each payment method.
+                                            spa: Configuración de la cantidad de cuotas a ofrecer para cada medio de pago.
+                                            por: Configuração da quantidade de parcelas a serem disponibilizadas para cada meio de pagamento.
                                           properties:
                                             default:
-                                              description: Default number of installments to offer
+                                              description: Number of installments to be offered by default.
                                               x-description-i18n:
-                                                eng: Default number of installments to offer
-                                                spa: Cantidad de cuotas a ofrecer por defecto
-                                                por: Quantidade de parcelas a oferecer por padrão
+                                                eng: Number of installments to be offered by default.
+                                                spa: Número de cuotas a ofrecer de forma predeterminada.
+                                                por: Número de parcelas a serem disponibilizadas por padrão.
                                               type: string
                                               example: "3"
                                             max:
-                                              description: Maximum number of installments to offer
+                                              description: Maximum number of installments to offer.
                                               x-description-i18n:
-                                                eng: Maximum number of installments to offer
-                                                spa: Cantidad máxima de cuotas a ofrecer
-                                                por: Quantidade máxima de parcelas a oferecer
+                                                eng: Maximum number of installments to offer.
+                                                spa: Cantidad máxima de cuotas a ofrecer.
+                                                por: Quantidade máxima de parcelas a oferecer.
                                               type: string
                                               example: "6"
                                             min:
-                                              description: Minimum number of installments to offer
+                                              description: Minimum number of installments to offer.
                                               x-description-i18n:
-                                                eng: Minimum number of installments to offer
-                                                spa: Cantidad mínima de cuotas a ofrecer
-                                                por: Quantidade mínima de parcelas a oferecer
+                                                eng: Minimum number of installments to offer.
+                                                spa: Cantidad mínima de cuotas a ofrecer.
+                                                por: Quantidade mínima de parcelas a oferecer.
                                               type: string
                                               example: "1"
                                   disabled:
@@ -296,67 +300,67 @@ paths:
                                     items:
                                       type: string
                                       example: ticket, account_money
-                                      description: Methods of payment not included
+                                      description: Payment methods not included.
                                       x-description-i18n:
-                                        eng: Methods of payment not included
-                                        spa: Métodos de pago no incluidos
-                                        por: Métodos de pagamento não incluídos
+                                        eng: Payment methods not included.
+                                        spa: Medios de pago no incluidos.
+                                        por: Meios de pagamento não incluídos.
                                   default:
                                     type: string
                                     example: "credit_card"
-                                    description: Payment method to offer by default
+                                    description: Types of payment methods to be offered by default.
                                     x-description-i18n:
-                                      eng: Payment method to offer by default
-                                      spa: Tipo de medio de pago a ofrecer por defecto
-                                      por: Tipos de meios de pagamento a oferecer por padrão
+                                      eng: Types of payment methods to be offered by default.
+                                      spa: Tipos de medios de pago que se ofrecerán de manera predeterminada.
+                                      por: Tipos de meios de pagamento a serem disponibilizados por padrão.
                       integration:
                         type: object
-                        description: Configuration of the seller on integration
+                        description: Configuration of the seller on integration.
                         x-description-i18n:
-                          eng: Configuration of the seller on integration
-                          spa: Configuración del seller sobre la integración
-                          por: Configuração do vendedor sobre a integração
+                          eng: Configuration of the seller on integration.
+                          spa: Configuración del seller sobre la integración.
+                          por: Configuração do vendedor sobre a integração.
                         properties:
                           notification_url:
                             type: string
                             description: URL to which notifications will be sent
                             example: "https://www.integrator-site.com/notifications"
                             x-description-i18n:
-                              eng: URL to which notifications will be sent
-                              spa: URL a la cual se enviarán las notificaciones
-                              por: URL para a qual as notificações serão enviadas
+                              eng: URL to which notifications will be sent.
+                              spa: URL a la cual se enviarán las notificaciones.
+                              por: URL para a qual as notificações serão enviadas.
                           return_url_default:
-                            description: Default URL to redirect the buyer
+                            description: Default URL to redirect the buyer.
                             x-description-i18n:
-                              eng: Default URL to redirect the buyer
-                              spa: URL por defecto a la cual se redireccionará al comprador
-                              por: URL padrão para redirecionar o comprador
+                              eng: Default URL to redirect the buyer.
+                              spa: URL por defecto a la cual se redireccionará al comprador.
+                              por: URL padrão para redirecionar o comprador.
                             type: string
                             example: "https://www.integrator-site.com/order"
                           return_url_success:
-                            description: URL to redirect the buyer in case of successful payment
+                            description: URL to redirect the buyer in case of successful payment.
                             type: string
                             example: "https://www.integrator-site.com/order/success"
                             x-description-i18n:
-                              eng: URL to redirect the buyer in case of successful payment
-                              spa: URL a la cual se redireccionará al comprador en caso de pago exitoso
-                              por: URL para redirecionar o comprador em caso de pagamento bem-sucedido
+                              eng: URL to redirect the buyer in case of successful payment.
+                              spa: URL a la cual se redireccionará al comprador en caso de pago exitoso.
+                              por: URL para redirecionar o comprador em caso de pagamento bem-sucedido.
                           return_url_pending:
-                            description: URL to redirect the buyer in case of pending payment
+                            description: URL to redirect the buyer in case of pending payment.
                             type: string
                             example: "https://www.integrator-site.com/order/pending"
                             x-description-i18n:
-                              eng: URL to redirect the buyer in case of pending payment
-                              spa: URL a la cual se redireccionará al comprador en caso de pago pendiente
-                              por: URL para redirecionar o comprador em caso de pagamento pendente
+                              eng: URL to redirect the buyer in case of pending payment.
+                              spa: URL a la cual se redireccionará al comprador en caso de pago pendiente.
+                              por: URL para redirecionar o comprador em caso de pagamento pendente.
                           return_url_failure:
-                            description: URL to redirect the buyer in case of failed payment
+                            description: Redirection URL for the event of buyer payment failure.
                             type: string
                             example: "https://www.integrator-site.com/order/failed"
                             x-description-i18n:
-                              eng: URL to redirect the buyer in case of failed payment
-                              spa: URL a la cual se redireccionará al comprador en caso de pago fallido
-                              por: URL para redirecionar o comprador em caso de pagamento falhou
+                              eng: Redirection URL for the event of buyer payment failure.
+                              spa: URL de redirección para el caso de fallo en el pago del comprador.
+                              por: URL de redirecionamento para o caso de falha no pagamento do comprador.
                   order:
                     type: object
                     description: Common Order attributes for request and response
