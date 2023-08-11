@@ -321,13 +321,10 @@ In the notification, you will receive a `JSON` with the following information co
 ```
 ]]]
 
-
 > NOTE
 >
 > Important
 >
 > You can also get more order information using the [Get order](/developers/en/reference/merchant_orders/_merchant_orders_id/get) API.
-
-<br>
 
 With this information, you will be able to carry out the necessary updates to your platform, such as updating an approved payment or a closed order.
