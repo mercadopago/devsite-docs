@@ -42,8 +42,8 @@ Veja abaixo um exemplo completo de preferência.
     },
     "back_urls": {
         "success": "https://www.success.com",
-        "failure": "http://www.failure.com",
-        "pending": "http://www.pending.com"
+        "failure": "https://www.failure.com",
+        "pending": "https://www.pending.com"
     },
     "auto_return": "approved",
     "payment_methods": {
@@ -71,7 +71,7 @@ Veja abaixo um exemplo completo de preferência.
 ------------
 ----[mco]----
 
- ```json
+```json
 {
 	"items": [
 		{
@@ -106,8 +106,8 @@ Veja abaixo um exemplo completo de preferência.
 	},
 	"back_urls": {
 		"success": "https://www.success.com",
-		"failure": "http://www.failure.com",
-		"pending": "http://www.pending.com"
+		"failure": "https://www.failure.com",
+		"pending": "https://www.pending.com"
 	},
 	"auto_return": "approved",
 	"payment_methods": {
@@ -147,7 +147,8 @@ Veja abaixo um exemplo completo de preferência.
 		}
 	]
 }
- ```
+```
+
 ------------
 
 Nesta seção você encontrará todas as possibilidades de customização disponíveis para as preferências.
