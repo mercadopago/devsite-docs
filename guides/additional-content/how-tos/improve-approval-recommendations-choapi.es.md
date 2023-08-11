@@ -14,7 +14,7 @@ Si un comprador frecuente hace una compra desde un dispositivo diferente al habi
 > 
 > Atención
 >
-> Si estás utilizando el [JS SDK de Mercado Pago](/developers/es/docs/sdks-library/client-side/mp-js-v2), **no** será necesario agregar el código de seguridad, ya que la información relativa al Device ID será obtenida por defecto.
+> Si estás utilizando el [JS SDK de Mercado Pago](/developers/es/docs/sdks-library/client-side/mp-js-v2,) **no** será necesario agregar el código de seguridad, ya que la información relativa al Device ID será obtenida por defecto.
 
 Puedes **agregar el código de seguridad de Mercado Pago** a tu sitio reemplazando el valor de `view` con el nombre de la sección de tu web en la que deseas agregarlo. Si bien lo más importante es hacerlo en la **página del checkout**, también puedes hacerlo en **otras páginas**, tales como home, search o ítem, ya que ayuda a enriquecer la información recolectada.
 
@@ -213,6 +213,7 @@ Puedes ver todos los atributos disponibles al crear un pago usando el método [C
 Existen también **campos extra** que pueden ser enviados dependiendo del **ramo de actividades o industria** de tu tienda. Puedes encontrar más detalles sobre cada ramo y los datos del comprador y del envío que recomendamos incluir en cada uno de ellos [aquí](/developers/es/docs/checkout-api/additional-content/industry-data).
 
 ## Mejora la experiencia del usuario
+
 A menudo, el comprador puede cometer un error al completar sus datos en el checkout, así que vale la pena revisar cada paso, posibles interacciones, e incluso el diseño, para comprobar que todo esté tan claro como debería ser. 
 
 En caso de que optes por **crear tu front-end desde cero**, puedes encontrar consejos para hacerlo de forma eficiente [aquí](/developers/es/docs/checkout-api/best-practices/ux-best-practices/ux-for-checkouts/introduction). 
@@ -223,4 +224,4 @@ Si, en cambio, quieres garantizar una interfaz optimizada, puedes utilizar los *
 > 
 > Importante
 >
-> Recomendamos  evaluar la [calidad de tu integración](/developers/es/docs/checkout-api/additional-content/integration-quality) antes de salir a producción para que puedas validar si estás cumpliendo con los estándares de calidad y seguridad de Mercado Pago que pueden mejorar tu tasa de aprobación de pagos.
+> Recomendamos  evaluar la [calidad de tu integración](/developers/es/docs/checkout-api/how-tos/integration-quality) antes de salir a producción para que puedas validar si estás cumpliendo con los estándares de calidad y seguridad de Mercado Pago que pueden mejorar tu tasa de aprobación de pagos.
