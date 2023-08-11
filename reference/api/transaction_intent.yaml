@@ -14,11 +14,11 @@ paths:
         eng: Create Transaction Intent
         spa: Crear Transaction Intent
         por: Criar Transaction Intent
-      description: This endpoint allows to create a new Transaction Intent in mode Builder. With the ID of this TI it is possible to edit it through the Endpoint Patch, and Process it through the Endpoint Process
+      description: This endpoint enables the creation of a new Transaction Intent in Builder mode. Upon obtaining the ID of this Transaction Intent, it is possible to make edits through the Patch Endpoint and carry out the processing using the Process Endpoint
       x-description-i18n:
-        eng: This endpoint allows to create a new Transaction Intent in mode Builder. With the ID of this TI it is possible to edit it through the Endpoint Patch, and Process it through the Endpoint Process
-        spa: Este endpoint permite crear una nueva Transaction Intent en modo Builder. Con el ID de esta Transaction Intent es posible editarla a través del endpoint Patch y procesarla a través del endpoint Process
-        por: Este endpoint permite criar uma nova Transaction Intent em modo Builder. Com o ID desta Transaction Intent é possível editá-lo através do Endpoint Patch, e processá-lo através do Endpoint Process
+        eng: This endpoint enables the creation of a new Transaction Intent in Builder mode. Upon obtaining the ID of this Transaction Intent, it is possible to make edits through the Patch Endpoint and carry out the processing using the Process Endpoint
+        spa: Este endpoint permite la creación de una nueva Transaction Intent en modo Builder. Al obtener el ID de esta Transaction Intent, es posible realizar ediciones a través del endpoint Patch y llevar a cabo el procesamiento utilizando el endpoint Process
+        por: Este endpoint possibilita a criação de uma nova Transaction Intent no modo Builder. Ao obter o ID desta Transaction Intent, é possível efetuar edições por meio do Endpoint Patch e realizar o processamento utilizando o Endpoint Process
       parameters:
         - in: header
           name: Authorization
@@ -26,22 +26,22 @@ paths:
             type: string
             example: "Bearer token-89987654567f-numeroToken"
           required: true
-          description: Access Token  - Application private key that must always be used in the backend to generate payments. It is essential that this information is kept secure on their servers.
+          description: Access Token  - Application's private key must be used exclusively in the backend for payment generation, requiring these pieces of information to be kept secure on its servers.
           x-description-i18n:
-            eng: Application private key that must always be used in the backend to generate payments. It is essential that this information is kept secure on their servers.
-            spa: Clave privada de la aplicación que siempre debe ser utilizada en el backend para generar pagos. Es fundamental que esta información se mantenga segura en sus servidores.
-            por: Chave privada do aplicativo que deve ser sempre usada no backend para gerar pagamentos. É essencial que essas informações sejam mantidas seguras em seus servidores.
+            eng: Access Token  - Application's private key must be used exclusively in the backend for payment generation, requiring these pieces of information to be kept secure on its servers.
+            spa: Access Token - Clave privada de la aplicación debe ser utilizada exclusivamente en el backend para la generación de pagos, siendo necesario mantener esta información segura en sus servidores.
+            por: Acess Token - Chave privada do aplicativo deve ser usada exclusivamente no backend para a geração de pagamentos, sendo necessário manter essas informações seguras em seus servidores.
         - in: header
           name: X-Product-ID
           schema:
             type: string
             example: "876542356788-mp"
           required: false
-          description: Alphanumeric ID of the product
+          description: Alphanumeric product ID, for example, 876542356788-mp.
           x-description-i18n:
-            eng: Alphanumeric ID of the product
-            spa: ID alfanumérico del producto
-            por: ID alfanumérico do produto
+            eng: Alphanumeric product ID, for example, 876542356788-mp.
+            spa: Identificación alfanumérica del producto, por ejemplo, 876542356788-mp.
+            por: Identificação alfanumérica do produto, como por exemplo, 876542356788-mp.
         - in: header
           name: X-Platform-ID
           schema:
@@ -50,8 +50,8 @@ paths:
           description: Alphanumeric ID of the platform
           x-description-i18n:
             eng: Alphanumeric ID of the platform
-            spa: ID alfanumérico de la plataforma
-            por: ID alfanumérico da plataforma
+            spa: Identificación alfanumérica de la plataforma.
+            por: Identificação alfanumérica da plataforma.
         - in: header
           name: X-Integrator-ID
           schema:
@@ -60,52 +60,52 @@ paths:
           description: Alphanumeric ID of the integrator
           x-description-i18n:
             eng: Alphanumeric ID of the integrator
-            spa: ID alfanumérico del integrador
-            por: ID alfanumérico do integrador
+            spa: Identificación alfanumérica del integrador
+            por: Identificação alfanumérica do integrador
       requestBody:
-        description: Complete body for a Transaction Intent request in mode builder. Minimum body for this request is an order with the payer's email and the order amount.
+        description: Complete body for a Transaction Intent request in Builder mode. The minimum requirement for this body is a request containing the payer's email address and the order amount.
         x-description-i18n:
-          eng: Complete body for a Transaction Intent request in mode builder. Minimum body for this request is an order with the payer's email and the order amount.
-          spa: Body completo para una solicitud de Transaction Intent en modo builder. El cuerpo mínimo para esta solicitud es una orden con el correo electrónico del pagador y el monto del pedido.
-          por: Body completo para uma solicitação de Transaction Intent em modo builder. O corpo mínimo para esta solicitação é um pedido com o e-mail do pagador e o valor do pedido.
+          eng: Complete body for a Transaction Intent request in Builder mode. The minimum requirement for this body is a request containing the payer's email address and the order amount.
+          spa: Body completo para una solicitud de Transaction Intent en modo Builder. El requisito mínimo para este body es una solicitud que contenga la dirección de correo electrónico del pagador y el monto del pedido.
+          por: Body completo para uma requisição de Transaction Intent no modo Builder. O requisito mínimo para esse body consiste em um pedido contendo o endereço de e-mail do pagador e o valor do pedido.
         content:
           application/json:
             schema:
               type: object
               properties:
                 order:
-                  description: Order with all information to execute the transaction
+                  description: Order containing all the essential information for the execution of a transaction.
                   x-description-i18n:
-                    eng: Order with all information to execute the transaction
-                    spa: Orden con toda la información necesaria para poder ejecutar la transacción
-                    por: Ordem com todas as informações necessárias para executar uma transação
+                    eng: Order containing all the essential information for the execution of a transaction.
+                    spa: Orden que contiene toda la información esencial para la ejecución de una transacción.
+                    por: Ordem contendo todas as informações essenciais para a execução de uma transação.
                   type: object
                   properties:
                     amount:
                       required: true
                       type: string
                       example: "50.00"
-                      description: Total amount to be paid
+                      description: Total amount to be paid. For example, "50.00".
                       x-description-i18n:
-                        eng: Total amount to be paid
-                        spa: Monto total que se desea cobrar
-                        por: Valor total a ser pago
+                        eng: Total amount to be paid. For example, "50.00".
+                        spa: Monto total que se desea cobrar. Por ejemplo, "50.00".
+                        por: Valor total a ser pago. Por exemplo, "50.00".
                     payer:
                       type: object
-                      description: Buyer's information
+                      description: Buyer's information.
                       x-description-i18n:
-                        eng: Buyer's information
-                        spa: Información del comprador
-                        por: Informações do comprador
+                        eng: Buyer's information.
+                        spa: Información del comprador.
+                        por: Informações do comprador.
                       properties:
                         email:
                           required: true
                           type: string
-                          description: Buyer's email
+                          description: Buyer's email.
                           x-description-i18n:
-                            eng: Buyer's email
-                            spa: Email del comprador
-                            por: Email do comprador
+                            eng: Buyer's email.
+                            spa: Email del comprador.
+                            por: Email do comprador.
       responses:
         "200":
           description: success
@@ -117,19 +117,19 @@ paths:
                   id:
                     type: string
                     example: "00001njp2i"
-                    description: ID of a created Transaction Intent
+                    description: ID of a created Transaction Intent.
                     x-description-i18n:
-                      eng: ID of a created Transaction Intent
-                      spa: ID de la intención de transacción creada
-                      por: ID da intenção de transação criada
+                      eng: ID of a created Transaction Intent.
+                      spa: ID de la Transaction Intent creada.
+                      por: ID da Transaction Intent criada.
                   created_date:
                     type: string
                     example: "2023-09-06T08:00:00.000-03:00"
-                    description: Date of creation of the transaction intent
+                    description: Date of creation of the transaction intent. For example, "2023-09-06T08:00:00.000-03:00".
                     x-description-i18n:
-                      eng: Date of creation of the transaction intent
-                      spa: Fecha de creación de la intención de transacción
-                      por: Data de criação da intenção de transação
+                      eng: Date of creation of the transaction intent. For example, "2023-09-06T08:00:00.000-03:00".
+                      spa: Fecha de creación de la intención de transacción. Por ejemplo, "2023-09-06T08:00:00.000-03:00".
+                      por: Data de criação da intenção de transação. Por exemplo, "2023-09-06T08:00:00.000-03:00".
                     format: date-time
                   status:
                     type: string
@@ -140,23 +140,23 @@ paths:
                       spa: Estado actual de la intención de transacción
                       por: Estado atual da transação
                     enum:
-                      - new--novo
+                      - new--nova
                       - transaction_in_process--transação em processo
                       - partially_processed--parcialmente processada
                       - processed--processada
                       - partially_reverted--revertida parcialmente
                       - reverted--revertida
                       - failed--falhou
-                      - cancelled--cancelado
+                      - cancelled--cancelada
                       - authorized--autorizada
                   init_point:
                     type: string
                     example: "https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=123456789"
-                    description: URL that allows you to start the payment flow
+                    description: URL that allows you to start the payment flow. For example, "https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=123456789".
                     x-description-i18n:
-                      eng: URL that allows you to start the payment flow
-                      spa: URL que permite iniciar el flujo de pago
-                      por: URL que permite iniciar o fluxo de pagamento
+                      eng: URL that allows you to start the payment flow. For example, "https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=123456789".
+                      spa: URL que permite iniciar el flujo de pago. Por ejemplo, "https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=123456789".
+                      por: URL que permite iniciar o fluxo de pagamento. Por exemplo, "https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=123456789.
                   configuration:
                     type: object
                     description: Configuration parameters defined by the seller before starting the transaction
@@ -167,11 +167,11 @@ paths:
                     properties:
                       option:
                         type: object
-                        description: Seller's configuration on options available in the transaction
+                        description: Seller's configuration regarding the available options in the transaction.
                         x-description-i18n:
-                          eng: Seller's configuration on options available in the transaction
-                          spa: Configuración del seller sobre opciones disponibles en la transacción
-                          por: Configuração do vendedor sobre opções disponíveis na transação
+                          eng: Seller's configuration regarding the available options in the transaction.
+                          spa: Configuración del seller con respecto a las opciones disponibles en la transacción.
+                          por: Configuração do vendedor que abrange as opções disponíveis durante o processo de transação.
                         properties:
                           purpose:
                             type: string
