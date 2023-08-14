@@ -745,7 +745,7 @@ paths:
                             eng: Discounted amount from the total payment amount.
                             spa: Monto descontado del monto total del pago.
                             por: Valor descontado do valor total pago.
-                          example: 10
+                          example: 15.05
                         code: 
                           required: true
                           type: number
@@ -1859,21 +1859,21 @@ paths:
                 coupon:
                   required: false
                   type: string
-                  description: Unique ID that identifies coupon used for discount.
+                  description: Unique ID that identifies the coupon for discount application. This field should be filled out only when the user enters a coupon during the purchasing process with the seller.
                   x-description-i18n:
-                    eng: Unique ID that identifies coupon to create for discount.
-                    spa: ID unico que identifica el cupon a crear para el descuento.
-                    por: ID único que identifica o cupom para criação do desconto.
+                    eng: UUnique ID that identifies the coupon for discount application. This field should be filled out only when the user enters a coupon during the purchasing process with the seller.
+                    spa: ID único que identifica el cupón para la aplicación del descuento. Este campo debe ser completado solamente cuando el usuario ingrese un cupón durante el proceso de compra con el seller.
+                    por: ID único que identifica o cupom para aplicação do desconto. Este campo deve ser preenchido somente quando o usuário inserir um cupom durante o processo de compra junto ao seller.
                   example: WALLET10
                 amount:
                   required: true
                   type: number
-                  description: Total payment amount before aplying discount.
+                  description: Total payment amount before aplying discount. For example, 15.05.
                   x-description-i18n:
-                    eng: Total payment amount before aplying discount.
-                    spa: Monto total del pago previo a la aplicacion del descuento.
-                    por: Valor total do pagamento antes da aplicação do desconto.
-                  example: 550
+                    eng: Total payment amount before aplying discount. For example, 15.05.
+                    spa: Monto total del pago previo a la aplicacion del descuento. Por ejemplo, 15.05.
+                    por: Valor total do pagamento antes da aplicação do desconto. Por exemplo, 15.05.
+                  example: 15.05
       headers:
         properties: 
           x-payer-token:
@@ -1899,19 +1899,19 @@ paths:
                 properties:
                   transaction_amount:
                     type: number
-                    description: Total payment amount before aplying discount.
+                    description: Total payment amount before aplying discount. For example, 150.
                     x-description-i18n:
-                      eng: Total payment amount before aplying discount.
-                      spa: Monto total del pago previo a la aplicacion del descuento.
-                      por: Valor total do pagamento antes da aplicação do desconto.
+                      eng: Total payment amount before aplying discount. For example, 150.
+                      spa: Monto total del pago previo a la aplicacion del descuento. Por ejemplo, 150.
+                      por: Valor total do pagamento antes da aplicação do desconto. Por exemplo, 150.
                     example: 150
                   currency_id:
                     type: string
-                    description: Type of currency to be used in payment.
+                    description: Type of currency to be used in payment. For example, ARS for Argentina, BRL for Brazil. This field varies according to your location.
                     x-description-i18n:
-                      eng: Type of currency to be used in payment.
-                      spa: Tipo de moneda a usar en el pago.
-                      por: Tipo de moeda a ser utilizada no pagamento.
+                      eng: Type of currency to be used in payment. For example, ARS for Argentina, BRL for Brazil. This field varies according to your location.
+                      spa: Tipo de moneda a usar en el pago. Por ejemplo, ARS para Argentina, BRL para Brasil. Este campo varía según tu ubicación.
+                      por: Tipo de moeda a ser utilizada no pagamento. Por exemplo, ARS, para Argentina, BRL, para Brasil. Este campo varia de acordo com sua localidade.
                     example: ARS
                   legal_terms:
                     type: string
@@ -1951,7 +1951,7 @@ paths:
                               x-description-i18n:
                                 eng: Discount Limit. This field indicates the maximum amount to be deducted from the payment.
                                 spa: Límite de descuento. Este campo indica la cantidad máxima a deducir del pago.
-                                por: Limite do desconto. Este campo informa o valor máximo a ser descontado pagamento.
+                                por: Limite do desconto. Este campo informa o valor máximo a ser descontado do pagamento.
                               example: 1000000
                             type: 
                               type: string
