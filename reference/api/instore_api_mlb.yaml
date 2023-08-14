@@ -1161,17 +1161,17 @@ paths:
                               type: boolean
                               description: This field allows the seller to choose whether or not the payer can change the amount he wishes to withdraw. This field is only used in the CASH_OUT operation.
                               x-description-i18n:
-                              eng: This field allows the seller to choose whether or not the payer can change the amount he wishes to withdraw. This field is only used in the CASH_OUT operation.
-                              spa: Este campo permite al vendedor elegir si el payer puede o no cambiar el monto que desea retirar. Este campo solo se utiliza en operaciones de tipo CASH_OUT.
-                              por: Este campo permite que o vendedor escolha se o pagador pode ou não alterar o valor que deseja sacar. Este campo é utilizado somente em operações do tipo CASH_OUT.
+                                eng: This field allows the seller to choose whether or not the payer can change the amount he wishes to withdraw. This field is only used in the CASH_OUT operation.
+                                spa: Este campo permite al vendedor elegir si el payer puede o no cambiar el monto que desea retirar. Este campo solo se utiliza en operaciones de tipo CASH_OUT.
+                                por: Este campo permite que o vendedor escolha se o pagador pode ou não alterar o valor que deseja sacar. Este campo é utilizado somente em operações do tipo CASH_OUT.
                             agency_type:
                               type: string
                               required: true
                               description: Withdrawal agent modality. This field is only used in the CASH_OUT operation.
                               x-description-i18n:
-                              eng: Withdrawal agent modality. This field is only used in the CASH_OUT operation.
-                              spa: Modalidad del agente de retiro. Este campo solo se utiliza en operaciones de tipo CASH_OUT.
-                              por: Modalidad del agente de retiro. Este campo é utilizado somente em operações do tipo CASH_OUT.                            
+                                eng: Withdrawal agent modality. This field is only used in the CASH_OUT operation.
+                                spa: Modalidad del agente de retiro. Este campo solo se utiliza en operaciones de tipo CASH_OUT.
+                                por: Modalidad del agente de retiro. Este campo é utilizado somente em operações do tipo CASH_OUT.                            
                               enum:
                                 - AGTEC
                                 - AGTOT
@@ -1180,9 +1180,9 @@ paths:
                               type: string
                               description: BankID of the withdrawal service provider. This field is only used in the CASH_OUT operation.
                               x-description-i18n:
-                              eng: BankID of the withdrawal service provider. This field is only used in the CASH_OUT operation.
-                              spa: BankID del proveedor de servicio de retiro . Este campo solo se utiliza en operaciones de tipo CASH_OUT.
-                              por: BankID do provedor de serviços de retirada. Este campo é utilizado somente em operações do tipo CASH_OUT.
+                                eng: BankID of the withdrawal service provider. This field is only used in the CASH_OUT operation.
+                                spa: BankID del proveedor de servicio de retiro . Este campo solo se utiliza en operaciones de tipo CASH_OUT.
+                                por: BankID do provedor de serviços de retirada. Este campo é utilizado somente em operações do tipo CASH_OUT.
                               required: true             
                         items:
                           type: array
@@ -1262,9 +1262,9 @@ paths:
                         type: array
                         description: QR mode to use in the operation. It can be used individually or both at the same time.
                         x-description-i18n:
-                        eng: QR mode to use in the operation. It can be used individually or both at the same time.
-                        spa: Modo de QR a utilizar en la operación. Se pueden utilizar individualmente o ambos al mismo tiempo.
-                        por: Modo QR para usar na operação. Eles podem ser usados individualmente ou ambos ao mesmo tempo.
+                          eng: QR mode to use in the operation. It can be used individually or both at the same time.
+                          spa: Modo de QR a utilizar en la operación. Se pueden utilizar individualmente o ambos al mismo tiempo.
+                          por: Modo QR para usar na operação. Eles podem ser usados individualmente ou ambos ao mesmo tempo.
                         items:
                           type: string
                           example: "STATIC"
@@ -1464,17 +1464,17 @@ paths:
                               type: boolean
                               description: This field allows the seller to choose whether or not the payer can change the amount he wishes to withdraw. This field is only used in the CASH_OUT operation.
                               x-description-i18n:
-                              eng: This field allows the seller to choose whether or not the payer can change the amount he wishes to withdraw. This field is only used in the CASH_OUT operation.
-                              spa: Este campo permite al vendedor elegir si el payer puede o no cambiar el monto que desea retirar. Este campo solo se utiliza en operaciones de tipo CASH_OUT.
-                              por: Este campo permite que o vendedor escolha se o pagador pode ou não alterar o valor que deseja sacar. Este campo é utilizado somente em operações do tipo CASH_OUT.
+                                eng: This field allows the seller to choose whether or not the payer can change the amount he wishes to withdraw. This field is only used in the CASH_OUT operation.
+                                spa: Este campo permite al vendedor elegir si el payer puede o no cambiar el monto que desea retirar. Este campo solo se utiliza en operaciones de tipo CASH_OUT.
+                                por: Este campo permite que o vendedor escolha se o pagador pode ou não alterar o valor que deseja sacar. Este campo é utilizado somente em operações do tipo CASH_OUT.
                             agency_type:
                               type: string
                               required: true
                               description: Withdrawal agent modality. This field is only used in the CASH_OUT operation.
                               x-description-i18n:
-                              eng: Withdrawal agent modality. This field is only used in the CASH_OUT operation.
-                              spa: Modalidad del agente de retiro. Este campo solo se utiliza en operaciones de tipo CASH_OUT.
-                              por: Modalidad del agente de retiro. Este campo é utilizado somente em operações do tipo CASH_OUT.                            
+                                eng: Withdrawal agent modality. This field is only used in the CASH_OUT operation.
+                                spa: Modalidad del agente de retiro. Este campo solo se utiliza en operaciones de tipo CASH_OUT.
+                                por: Modalidad del agente de retiro. Este campo é utilizado somente em operações do tipo CASH_OUT.                            
                               enum:
                                 - AGTEC
                                 - AGTOT
@@ -1483,9 +1483,9 @@ paths:
                               type: string
                               description: BankID of the withdrawal service provider. This field is only used in the CASH_OUT operation.
                               x-description-i18n:
-                              eng: BankID of the withdrawal service provider. This field is only used in the CASH_OUT operation.
-                              spa: BankID del proveedor de servicio de retiro . Este campo solo se utiliza en operaciones de tipo CASH_OUT.
-                              por: BankID do provedor de serviços de retirada. Este campo é utilizado somente em operações do tipo CASH_OUT.
+                                eng: BankID of the withdrawal service provider. This field is only used in the CASH_OUT operation.
+                                spa: BankID del proveedor de servicio de retiro . Este campo solo se utiliza en operaciones de tipo CASH_OUT.
+                                por: BankID do provedor de serviços de retirada. Este campo é utilizado somente em operações do tipo CASH_OUT.
                               required: true                
                         results:
                           type: array
@@ -1594,9 +1594,9 @@ paths:
                         type: array
                         description: QR mode to use in the operation. It can be used individually or both at the same time.
                         x-description-i18n:
-                        eng: QR mode to use in the operation. It can be used individually or both at the same time.
-                        spa: Modo de QR a utilizar en la operación. Se pueden utilizar individualmente o ambos al mismo tiempo.
-                        por: Modo QR para usar na operação. Eles podem ser usados individualmente ou ambos ao mesmo tempo.
+                          eng: QR mode to use in the operation. It can be used individually or both at the same time.
+                          spa: Modo de QR a utilizar en la operación. Se pueden utilizar individualmente o ambos al mismo tiempo.
+                          por: Modo QR para usar na operação. Eles podem ser usados individualmente ou ambos ao mesmo tempo.
                         items:
                           type: string
                           example: "STATIC"
@@ -1651,7 +1651,7 @@ paths:
     delete:
       tags:
         - $ref: '#/tags/qr-code'
-      ssummary: Cancel an intent
+      summary: Cancel an intent
       x-summary-i18n:
         eng: Cancel an intent
         spa: Cancelar un intent
