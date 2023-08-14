@@ -14,7 +14,7 @@ If a customer makes a purchase on a different device than usual, this may repres
 > 
 > Attention
 >
-> If you are already using the [JS SDK of Mercado Pago](/developers/en/docs/sdks-library/client-side/mp-js-v2), it **won’t** be necessary to add the security script because the Device ID information is already being collected.
+> If you are already using the [JS SDK of Mercado Pago,](/developers/en/docs/sdks-library/client-side/mp-js-v2) it **won’t** be necessary to add the security script because the Device ID information is already being collected.
 
 **Add the Mercado Pago security script** to your page by replacing the `view` value with the name of the section in which you wish to add it. Adding it to your **checkout URL** is the most important, but doing it in **other pages**, such as home, search or item, may be helpful to collect even more information.
 
@@ -227,4 +227,4 @@ In case you wish to guarantee an optimized interface, you can use the **visual c
 > 
 > Important
 >
-> We recommend assessing your [integration’s quality](/developers/en/docs/checkout-api/additional-content/integration-quality) before going to production to check if you are meeting the Mercado Pago quality and security standards that would help you obtain a good payment approval rate.
+> We recommend assessing your [integration’s quality](/developers/en/docs/checkout-api/how-tos/integration-quality) before going to production to check if you are meeting the Mercado Pago quality and security standards that would help you obtain a good payment approval rate.

@@ -158,28 +158,6 @@ paths:
                           spa: Total de elementos.
                           por: Total de itens.
                         example: 100
-                taxes:
-                  type: array
-                  description: Information about the paid taxes
-                  x-description-i18n:
-                    eng: Information about the paid taxes
-                    spa: Información sobre los impuestos pagados
-                    por: Informações sobre os impostos pagos
-                  items:
-                    type: object
-                    properties:
-                      value:
-                        type: number
-                        description: Total amount of tax payed. This amount is not included in the total sum of the order
-                        x-description-i18n:
-                          eng: Total amount of tax payed. This amount is not included in the total sum of the order
-                          spa: Monto total de impuestos pagados. Este monto no está incluido en la suma total de los pedidos
-                          por: Valor total do imposto pago. Este valor não está incluído na soma total dos pedidos
-                        example: 19
-                      type:
-                        type: string
-                        description: type of tax paid
-                        example: IVA
                 sponsor: 
                   type: object
                   description: Integrator information.
@@ -424,28 +402,6 @@ paths:
                           spa: Total del ítem
                           por: Total do ítem
                         example: 100
-                taxes:
-                  type: array
-                  description: Information about the paid taxes
-                  x-description-i18n:
-                    eng: Information about the paid taxes
-                    spa: Información sobre los impuestos pagados
-                    por: Informações sobre os impostos pagos
-                  items:
-                    type: object
-                    properties:
-                      value:
-                        type: number
-                        description: Total amount of tax payed. This amount is not included in the total sum of the order
-                        x-description-i18n:
-                          eng: Total amount of tax payed. This amount is not included in the total sum of the order
-                          spa: Monto total de impuestos pagados. Este monto no está incluido en la suma total de los pedidos
-                          por: Valor total do imposto pago. Este valor não está incluído na soma total dos pedidos
-                        example: 19
-                      type:
-                        type: string
-                        description: type of tax paid
-                        example: IVA
                 sponsor: 
                   type: object
                   description: Integrator information.
