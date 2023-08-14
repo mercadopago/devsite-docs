@@ -1004,7 +1004,7 @@ paths:
                               example: 12.45
                               required: true
                               description: Unit price of the item. Value Min:"0.01"
-                              xx-description-i18n:
+                              x-description-i18n:
                                 eng: Unit price of the item. Value Min:"0.01"
                                 spa: Precio unitario del ítem.  Valor Min:"0.01"
                                 por: Preço unitário do item. Valor Min:"0.01"
