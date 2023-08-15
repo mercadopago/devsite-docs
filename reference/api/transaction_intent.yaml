@@ -26,11 +26,11 @@ paths:
             type: string
             example: "Bearer token-89987654567f-numeroToken"
           required: true
-          description: Access Token  - Application's private key must be used exclusively in the backend for payment generation, requiring these pieces of information to be kept secure on its servers.
+          description: Access Token  - Application's private key that must be used exclusively in the backend for payment generation, requiring these pieces of information to be kept secure on its servers.
           x-description-i18n:
-            eng: Access Token  - Application's private key must be used exclusively in the backend for payment generation, requiring these pieces of information to be kept secure on its servers.
-            spa: Access Token - Clave privada de la aplicación debe ser utilizada exclusivamente en el backend para la generación de pagos, siendo necesario mantener esta información segura en sus servidores.
-            por: Acess Token - Chave privada do aplicativo deve ser usada exclusivamente no backend para a geração de pagamentos, sendo necessário manter essas informações seguras em seus servidores.
+            eng: Access Token  - Application's private key that must be used exclusively in the backend for payment generation, requiring these pieces of information to be kept secure on its servers.
+            spa: Access Token - Clave privada de la aplicación que debe ser utilizada exclusivamente en el backend para la generación de pagos, siendo necesario mantener esta información segura en sus servidores.
+            por: Acess Token - Chave privada do aplicativo que deve ser usada exclusivamente no backend para a geração de pagamentos, sendo necessário manter essas informações seguras em seus servidores.
         - in: header
           name: X-Product-ID
           schema:
@@ -372,69 +372,69 @@ paths:
                       id:
                         type: number
                         example: 123456789
-                        description: ID of the order previously created in the integrator's system
+                        description: ID of the order previously created in the integrator's system.
                         x-description-i18n:
-                          eng: ID of the order previously created in the integrator's system
-                          spa: ID de orden previamente creada en el sistema del integrador
-                          por: ID da ordem criada anteriormente no sistema do integrador
+                          eng: ID of the order previously created in the integrator's system.
+                          spa: ID de orden previamente creada en el sistema del integrador.
+                          por: ID da ordem criada anteriormente no sistema do integrador.
                       external_reference:
                         type: string
                         example: "my_order_id"
-                        description: Reference of the order
+                        description: Reference of the order.
                         x-description-i18n:
-                          eng: ID of the order previously created in the integrator's system
-                          spa: ID en sistema externo del integrador
-                          por: ID da ordem criada anteriormente no sistema do integrador
+                          eng: Reference of the order.
+                          spa: Referencia de lá orden.
+                          por: Referência da ordem.
                       description:
                         type: string
                         example: "my_order_description"
-                        description: description for the order or transaction
+                        description: description for the order or transaction.
                         x-description-i18n:
-                          eng: description for the order or transaction
-                          spa: Motivo de la orden o transacción
-                          por: Motivo da ordem ou transação
+                          eng: Description for the order or transaction.
+                          spa: Descripción de la orden o transacción.
+                          por: Descrição da ordem ou transação.
                       amount:
                         example: "233.00"
                         type: string
-                        description: Total value of the transaction
+                        description: Total value of the transaction. For example, "233.00".
                         x-description-i18n:
-                          eng: Total value of the transaction
-                          spa: Monto total de la transacción
-                          por: Valor total da transação
+                          eng: Total value of the transaction. For example, "233.00".
+                          spa: Monto total de la transacción. Por ejemplo, "233.00".
+                          por: Valor total da transação. Por exemplo, "233.00".
                       items:
                         type: array
                         items:
                           type: object
-                          description: List of items included in the order
+                          description: List of items included in the order.
                           x-description-i18n:
-                            eng: List of items included in the order
-                            spa: Listado de ítems incluidos en la órden
-                            por: Lista de itens incluídos no pedido
+                            eng: List of items included in the order.
+                            spa: Listado de ítems incluidos en la órden.
+                            por: Lista de itens incluídos no pedido.
                           properties:
                             id:
                               type: string
                               example: "x76ax"
-                              description: Item identification code
+                              description: Item identification code. For example, "x76ax".
                               x-description-i18n:
-                                eng: Item identification code
-                                spa: Código de identificación del ítem
-                                por: Código de identificação do item
+                                eng: Item identification code. For example, "x76ax".
+                                spa: Código de identificación del ítem. Por ejemplo, "x76ax".
+                                por: Código de identificação do item. Por exemplo, "x76ax".
                             quantity:
                               type: number
                               example: 4
-                              description: Number of item included in the order
+                              description: Number of item included in the order.
                               x-description-i18n:
-                                eng: Number of item included in the order
-                                spa: Cantidad de ocurrencias del ítem incluidos en la órden
-                                por: Quantidade de itens incluídos no pedido
+                                eng: Number of item included in the order.
+                                spa: Cantidad de ocurrencias del ítem incluidos en la órden.
+                                por: Quantidade de itens incluídos no pedido.
                             unit_price:
                               type: string
                               example: "100.00"
-                              description: Unit price of the item
+                              description: Unit price of the item. For example, "100.00".
                               x-description-i18n:
-                                eng: Unit value of the item
-                                spa: Precio unitario del ítem
-                                por: Preço unitário do item
+                                eng: Unit value of the item. For example, "100.00".
+                                spa: Precio unitario del ítem. Por ejemplo, "100.00".
+                                por: Preço unitário do item. Por exemplo, "100.00".
                             dimensions:
                               type: string
                               example: "30x30x30"
@@ -446,137 +446,137 @@ paths:
                             description:
                               type: string
                               example: "Beautifully handmade laptop case/sleeve made in the Himalaya. "
-                              description: Description of the item that makes up the list of order items
+                              description: Description of the items comprising the list of products included in the order.
                               x-description-i18n:
-                                eng: Description of the item that makes up the list of order items
-                                spa: Descripción del artículo que componen el listado de items de la orden
-                                por: Descrição do item que compõe a lista de itens do pedido
+                                eng: Description of the items comprising the list of products included in the order.
+                                spa: Descripción de los artículos que componen la lista de productos incluidos en el pedido.
+                                por: Descrição dos itens que constituem a lista de produtos incluídos no pedido.
                       collectors:
                         type: object
-                        description: Seller user who receives the payment
+                        description: Seller user who receives the payment.
                         x-description-i18n:
-                          eng: Seller user who receives the payment
-                          spa: Usuario vendedor que recibe el pago
-                          por: Usuário vendedor que recebe o pagamento
+                          eng: Seller user who receives the payment.
+                          spa: Usuario vendedor que recibe el pago.
+                          por: Usuário vendedor que recebe o pagamento.
                         properties:
                           collector_id:
                             type: number
                             example: 123456789
-                            description: Collector identifier
+                            description: Collector identifier.
                             x-description-i18n:
-                              eng: Collector identifier
-                              spa: ID del collector
-                              por: Identificador do collector
+                              eng: Collector identifier.
+                              spa: ID del collector.
+                              por: Identificador do collector.
                           amount:
                             type: string
                             example: "50.00"
-                            description: Amount of the transaction corresponding to the collector
+                            description: Amount of the transaction corresponding to the collector.
                             x-description-i18n:
-                              eng: Amount of the transaction corresponding to the collector
-                              spa: Monto de la transacción que corresponde al collector
-                              por: Valor da transação correspondente ao collector
+                              eng: Amount of the transaction corresponding to the collector.
+                              spa: Monto de la transacción que corresponde al collector.
+                              por: Valor da transação correspondente ao collector.
                       payer:
                         type: object
-                        description: Buyer's information
+                        description: Buyer's information.
                         x-description-i18n:
-                          eng: Buyer's information
-                          spa: Información del comprador
-                          por: Informações do comprador
+                          eng: Buyer's information.
+                          spa: Información del comprador.
+                          por: Informações do comprador.
                         properties:
                           email:
                             type: string
-                            description: Buyer's email
+                            description: Buyer's email.
                             x-description-i18n:
-                              eng: Buyer's email
-                              spa: Email del comprador
-                              por: Email do comprador
+                              eng: Buyer's email.
+                              spa: Email del comprador.
+                              por: Email do comprador.
                           customer_id:
                             type: number
                             example: 123456
-                            description: ID of the Customer saved previously
+                            description: Previously stored buyer identification number.
                             x-description-i18n:
-                              eng: ID of the Customer saved previously
-                              spa: ID del Customer guardado anteriormente
-                              por: Número de identificação do comprador salvo anteriormente
+                              eng: Previously stored buyer identification number.
+                              spa: Número de identificación del comprador previamente almacenado.
+                              por: Número de identificação do comprador previamente armazenado.
                           identification:
                             type: object
-                            description: Type and number of legal document that identifies the person in the country
+                            description: This field refers to the type and number of the document used to identify a person within the country.
                             x-description-i18n:
-                              eng: Type and number of legal document that identifies the person in the country
-                              spa: Tipo y número de documento legal que identifica a la persona en el país
-                              por: Tipo e número de documento que identifica a pessoa no país
+                              eng: This field refers to the type and number of the document used to identify a person within the country.
+                              spa: Este campo se refiere al tipo y número del documento utilizado para identificar a una persona dentro del país.
+                              por: Este campo se refere ao tipo e número do documento usado para identificar uma pessoa dentro do país.
                             properties:
                               number:
-                                description: Number of the document
+                                description: Number of the document.
                                 x-description-i18n:
-                                  eng: Number of the document
-                                  spa: Número del documento
-                                  por: Número do documento
+                                  eng: Number of the document.
+                                  spa: Número del documento.
+                                  por: Número do documento.
                                 type: string
                                 example: "12345678098"
                               type:
-                                description: Type of the document
+                                description: Type of the document.
                                 x-description-i18n:
-                                  eng: Type of the document
-                                  spa: Tipo de documento
-                                  por: Tipo de documento
+                                  eng: Type of the documento.
+                                  spa: Tipo de documento.
+                                  por: Tipo de documento.
                                 type: string
                                 example: "CPF"
                           name:
                             type: string
                             example: "John"
-                            description: Buyer's name
+                            description: Buyer's name.
                             x-description-i18n:
-                              eng: Buyer's name
-                              spa: Nombre del comprador
-                              por: Nome do comprador
+                              eng: Buyer's name.
+                              spa: Nombre del comprador.
+                              por: Nome do comprador.
                           surname:
                             type: string
                             example: "Doe"
-                            description: Buyer's surname
+                            description: Buyer's surname.
                             x-description-i18n:
-                              eng: Buyer's surname
-                              spa: Apellido del comprador
-                              por: Sobrenome do comprador
+                              eng: Buyer's surname.
+                              spa: Apellido del comprador.
+                              por: Sobrenome do comprador.
                           address:
                             type: object
-                            description: Address of the buyer
+                            description: Address of the buyer.
                             x-description-i18n:
-                              eng: Address of the buyer
-                              spa: Dirección del comprador
-                              por: Endereço do comprador
+                              eng: Address of the buyer.
+                              spa: Dirección del comprador.
+                              por: Endereço do comprador.
                             properties:
                               street_name:
                                 type: string
                                 example: "Street MercadoLivre"
                                 description: Street name
                                 x-description-i18n:
-                                  eng: Street name
-                                  spa: Nombre de la calle
-                                  por: Nome da rua
+                                  eng: Street name.
+                                  spa: Nombre de la calle.
+                                  por: Nome da rua.
                               street_number:
                                 type: string
                                 example: "100"
-                                description: Street number
+                                description: Street number.
                                 x-description-i18n:
-                                  eng: Street number
-                                  spa: Número de la calle
-                                  por: Número da casa
+                                  eng: Street number.
+                                  spa: Número de la calle.
+                                  por: Número da casa.
                               zip_code:
                                 type: string
                                 example: "57000-865"
-                                description: Zip code
+                                description: Zip code.
                                 x-description-i18n:
-                                  eng: Zip code
-                                  spa: Código postal
-                                  por: Código postal
+                                  eng: Zip covered.
+                                  spa: Código postal.
+                                  por: Código postal.
                           phone:
                             type: object
-                            description: Buyer's phone number
+                            description: Buyer's phone number.
                             x-description-i18n:
-                              eng: Buyer's phone number
-                              spa: Número de teléfono del comprador
-                              por: Número de telefone do comprador
+                              eng: Buyer's phone number.
+                              spa: Número de teléfono del comprador.
+                              por: Número de telefone do comprador.
                             properties:
                               area_code:
                                 type: string
@@ -586,63 +586,63 @@ paths:
                                 example: "99999999"
                       advanced:
                         type: object
-                        description: Options for advanced transaction
+                        description: Options for advanced transaction.
                         x-description-i18n:
-                          eng: Options for advanced transaction
-                          spa: Agrupación de opciones avanzadas para la transacción
-                          por: Opções avançadas para a transação
+                          eng: Options for advanced transaction.
+                          spa: Agrupación de opciones avanzadas para la transacción.
+                          por: Opções avançadas para a transação.
                         properties:
                           binary_mode:
                             type: boolean
                             example: true
-                            description: Allows to require a final response from the transaction in your first processing (by disabling any offline or asynchronous processing option)
+                            description: Enables requesting a final transaction response during the initial processing, disabling any options for offline or asynchronous processing.
                             x-description-i18n:
-                              eng: Allows to require a final response from the transaction in your first processing (by disabling any offline or asynchronous processing option)
-                              spa: Permite exigir una respuesta final de la transacción en su primer procesamiento (deshabilitando cualquier opción de procesamiento offline o asíncrona)
-                              por: Permite exigir uma resposta final da transação no primeiro processamento (desabilitando qualquer opção de processamento offline ou assíncrono)
+                              eng: Enables requesting a final transaction response during the initial processing, disabling any options for offline or asynchronous processing.
+                              spa: Permite solicitar una respuesta definitiva de la transacción durante el procesamiento inicial, deshabilitando cualquier opción de procesamiento fuera de línea o asíncrono.
+                              por: Possibilita requerer uma resposta definitiva da transação no primeiro processamento, desabilitando quaisquer opções de processamento offline ou assíncrono.
                           sponsor_id:
                             type: number
                             example: 123456789
-                            description: ID of the Mercado Pago account that will pay the fees
+                            description: Identifier of the account in Mercado Pago that will be used to make commission payments. This means that when a commission is owed to someone, the funds will be withdrawn from this Mercado Pago account to make the payment.
                             x-description-i18n:
-                              eng: ID of the Mercado Pago account that will pay the fees
-                              spa: ID de la cuenta de Mercado Pago que pagará las comisiones
-                              por: ID da conta do Mercado Pago que pagará as comissões
+                              eng: Identifier of the account in Mercado Pago that will be used to make commission payments. This means that when a commission is owed to someone, the funds will be withdrawn from this Mercado Pago account to make the payment.
+                              spa: Identificador de la cuenta en Mercado Pago que se utilizará para realizar los pagos de comisiones. Esto significa que cuando se deba una comisión a alguien, los fondos se retirarán de esta cuenta de Mercado Pago para efectuar el pago.
+                              por: Identificador da conta no Mercado Pago que será utilizada para efetuar os pagamentos das comissões. Isso significa que, quando uma comissão for devida a alguém, os fundos serão retirados dessa conta do Mercado Pago para realizar o pagamento.
                       amount_details:
                         type: object
                         properties:
                           total:
                             type: string
                             example: "123.00"
-                            description: Details of the total value of the transaction
+                            description: Details of the total value of the transaction.
                             x-description-i18n:
-                              eng: Details of the total value of the transaction
-                              spa: Detalles del monto total de la transacción
-                              por: Detalhes do valor total da transação
+                              eng: Details of the total value of the transaction.
+                              spa: Detalles del monto total de la transacción.
+                              por: Detalhes do valor total da transação.
                           paid:
                             type: string
                             example: "100.00"
-                            description: Total paid
+                            description: Total paid.
                             x-description-i18n:
-                              eng: Total paid
-                              spa: Monto de la transacción pagado
-                              por: Valor pago
+                              eng: Total paid.
+                              spa: Monto de la transacción pagado.
+                              por: Valor pago.
                           refunded:
                             type: string
                             example: "100.00"
-                            description: Total value refunded
+                            description: Total value refunded.
                             x-description-i18n:
-                              eng: Total value refunded
-                              spa: Monto de la transacción devuelto
-                              por: Valor reembolsado
+                              eng: Total value refunded.
+                              spa: Monto de la transacción devuelto.
+                              por: Valor total reembolsado.
                           shipment:
                             type: string
                             example: "10.00"
-                            description: Total value charged per shipment
+                            description: Total value charged per shipment.
                             x-description-i18n:
-                              eng: Total value charged per shipment
-                              spa: Monto cobrado por envío (incluido en total)
-                              por: Valor cobrado por envio (incluído no total)
+                              eng: Total value charged per shipment.
+                              spa: Monto cobrado por envío (incluido en total).
+                              por: Valor cobrado por envio (incluído no total).
                       payment_method:
                         properties:
                           credit_cards:
@@ -652,115 +652,115 @@ paths:
                                 amount:
                                   type: string
                                   example: "50.00"
-                                  description: Total amount to be paid with this payment method
+                                  description: Total amount to be paid with this payment method.
                                   x-description-i18n:
-                                    eng: Total amount to be paid with this payment method
-                                    spa: Monto a pagar con este medio
-                                    por: Total a ser pago com este meio de pagamento
+                                    eng: Total amount to be paid with this payment method.
+                                    spa: Monto a pagar con este medio.
+                                    por: Total a ser pago com este meio de pagamento.
                                 token:
                                   type: string
                                   example: "1234567897yhjdsnfs78ry3iuthrbnfuve8h4t3unbf7e4rgb"
-                                  description: Card token that represents securely the credit card data
+                                  description: Card token that represents securely the credit card data. For example, "1234567897yhjdsnfs78ry3iuthrbnfuve8h4t3unbf7e4rgb".
                                   x-description-i18n:
-                                    eng: Card token that represents securely the credit card data
-                                    spa: card_token que representa de manera segura los datos de tarjeta
-                                    por: Card token que representa de maneira segura os dados do cartão
+                                    eng: Card token that represents securely the credit card data. For example, "1234567897yhjdsnfs78ry3iuthrbnfuve8h4t3unbf7e4rgb".
+                                    spa: card_token que representa de manera segura los datos de tarjeta. Por ejemplo, "1234567897yhjdsnfs78ry3iuthrbnfuve8h4t3unbf7e4rgb".
+                                    por: Card token que representa de maneira segura os dados do cartão. Por exemplo, "1234567897yhjdsnfs78ry3iuthrbnfuve8h4t3unbf7e4rgb".
                                 payment_id:
                                   type: number
                                   example: 12345432
-                                  description: Payment ID corresponding to the payment method
+                                  description: Payment ID corresponding to the payment method.
                                   x-description-i18n:
-                                    eng: Payment ID corresponding to the payment method
-                                    spa: ID de Pago correspondiente al medio
-                                    por: ID de pagamento correspondente ao meio de pagamento
+                                    eng: Payment ID corresponding to the payment method.
+                                    spa: ID de Pago correspondiente al medio.
+                                    por: ID de pagamento correspondente ao meio de pagamento.
                                 payment_method_id:
                                   type: string
                                   example: "visa"
-                                  description: Identifier of the chosen payment method
+                                  description: Identifier of the chosen payment method.
                                   x-description-i18n:
-                                    eng: Identifier of the chosen payment method
-                                    spa: Identificador del medio de pago elegido
-                                    por: Identificador do meio de pagamento escolhido
+                                    eng: Identifier of the chosen payment method.
+                                    spa: Identificador del medio de pago elegido.
+                                    por: Identificador do meio de pagamento escolhido.
                                 issuer:
                                   type: string
                                   example: "23"
-                                  description: In case it is required, identifier of the card issuer entity
+                                  description: If required, this is the identifier of the card issuer entity. This identifier is used to record the source of the payment card. In certain situations, having this information is important for tracking, security, and transaction analysis purposes.
                                   x-description-i18n:
-                                    eng: In case it is required, identifier of the card issuer entity
-                                    spa: En caso que sea requerido, identificador de la  entidad emisora de la tarjeta
-                                    por: Caso seja requerido, identificador da entidade emissora do cartão
+                                    eng: If required, this is the identifier of the card issuer entity. This identifier is used to record the source of the payment card. In certain situations, having this information is important for tracking, security, and transaction analysis purposes.
+                                    spa: En caso de ser necesario, este es el identificador de la entidad emisora de la tarjeta. Este identificador se utiliza para registrar el origen de la tarjeta de pago. En ciertas situaciones, contar con esta información es importante para fines de seguimiento, seguridad y análisis de transacciones.
+                                    por: Se necessário, este é o identificador da instituição que emitiu o cartão. Esse identificador é usado para registrar a origem do cartão de pagamento. Em algumas situações, é importante ter essa informação para fins de rastreamento, segurança e análise de transações.
                                 installments:
                                   type: number
-                                  description: Quantity of installments
+                                  description: Quantity of installments.
                                   x-description-i18n:
-                                    eng: Quantity of installments
-                                    spa: Cantidad de cuotas deseadas
-                                    por: Quantidade de parcelas desejadas
+                                    eng: Quantity of installments.
+                                    spa: Cantidad de cuotas deseadas.
+                                    por: Quantidade de parcelas desejadas.
                                   example: 1
                                 statement_descriptor:
                                   type: string
                                   example: "MERCADOPAGO"
-                                  description: Descriptor of the charge to be shown in the card statement
+                                  description: Charge descriptor to be displayed on the card statement. The charge descriptor is the text or name that will appear on the customer's credit card statement to identify the transaction. It provides a brief description that assists the customer in recognizing the nature of the transaction conducted.
                                   x-description-i18n:
-                                    eng: descriptor of the charge to be shown in the card statement
-                                    spa: Descriptor del cargo a utilizar en el resumen del emisor
-                                    por: Descritor da cobrança a ser mostrada no extrato do cartão
+                                    eng: Charge descriptor to be displayed on the card statement. The charge descriptor is the text or name that will appear on the customer's credit card statement to identify the transaction. It provides a brief description that assists the customer in recognizing the nature of the transaction conducted.
+                                    spa: Descriptor del cargo que se mostrará en el estado de cuenta de la tarjeta. El descriptor del cargo es el texto o nombre que aparecerá en el estado de cuenta de la tarjeta de crédito del cliente para identificar la transacción. Proporciona una breve descripción que ayuda al cliente a reconocer la naturaleza de la transacción realizada.
+                                    por: Descritor da cobrança a ser mostrada no extrato do cartão. O descritor da cobrança é o texto ou nome que aparecerá no extrato do cartão de crédito do cliente para identificar a transação. Ele fornece uma breve descrição que ajuda o cliente a reconhecer a natureza da transação realizada. 
                                 refunds:
-                                  description: List of refunds related to the payment method
+                                  description: List of refunds related to the payment method.
                                   x-description-i18n:
-                                    eng: List of refunds related to the payment method
-                                    spa: Listado de devoluciones relacionadas al medio de pago
-                                    por: Lista de reembolsos relacionados ao meio de pagamento
+                                    eng: List of refunds related to the payment method.
+                                    spa: Listado de devoluciones relacionadas al medio de pago.
+                                    por: Lista de reembolsos relacionados ao meio de pagamento.
                                   type: object
                                   properties:
                                     refund_id:
                                       type: number
                                       example: 123456789
-                                      description: ID of the refund
+                                      description: ID of the refund.
                                       x-description-i18n:
-                                        eng: ID of the refund
-                                        spa: ID de la devolución
-                                        por: ID do reembolso
+                                        eng: ID of the refunded.
+                                        spa: ID de la devolución.
+                                        por: ID do reembolso.
                                     refund_amount:
                                       type: string
                                       example: "50.00"
-                                      description: Amount of the refund
+                                      description: Amount of the refund.
                                       x-description-i18n:
-                                        eng: Amount of the refund
-                                        spa: Monto de la devolución
-                                        por: Valor do reembolso
+                                        eng: Amount of the refund.
+                                        spa: Monto de la devolución.
+                                        por: Valor do reembolso.
                                 status:
                                   type: string
                                   example: "pending"
-                                  description: Status of the payment
+                                  description: Status of the payment.
                                   x-description-i18n:
-                                    eng: Status of the payment
-                                    spa: Estado del pago
-                                    por: Estado do pagamento
+                                    eng: Status of the payment.
+                                    spa: Estado del pago.
+                                    por: Estado do pagamento.
                                 status_detail:
                                   type: object
-                                  description: Detail information about the status of the payment
+                                  description: Detail information about the status of the payment.
                                   x-description-i18n:
-                                    eng: Information about the status of the payment
-                                    spa: Información sobre el resultado del procesamiento
-                                    por: Informações detalhadas sobre o status do pagamento
+                                    eng: Information about the status of the payments.
+                                    spa: Información sobre el resultado del procesamiento.
+                                    por: Informações detalhadas sobre o status do pagamento.
                                   properties:
                                     code:
                                       type: string
                                       example: "400"
-                                      description: Status code
+                                      description: Status code.
                                       x-description-i18n:
-                                        eng: Status code
-                                        spa: Código del estado del pago
-                                        por: Código do Estado do Pagamento
+                                        eng: Status code.
+                                        spa: Código del estado del pago.
+                                        por: Código do Estado do Pagamento.
                                     message:
                                       type: string
                                       example: "acquirer rejected"
-                                      description: Status message
+                                      description: Status message.
                                       x-description-i18n:
-                                        eng: Status message
-                                        spa: Mensaje del estado del pago
-                                        por: Mensagem do Estado do Pagamento
+                                        eng: Status message.
+                                        spa: Mensaje del estado del pagos.
+                                        por: Mensagem do status do Pagamento.
                           debit_cards:
                             type: array
                             items:
@@ -768,107 +768,107 @@ paths:
                                 amount:
                                   type: string
                                   example: "50.00"
-                                  description: Total amount to be paid with this payment method
+                                  description: Total amount to be paid with this payment method.
                                   x-description-i18n:
-                                    eng: Total amount to be paid with this payment method
-                                    spa: Monto a pagar con este medio
-                                    por: Valor total a ser pago com este meio de pagamento
+                                    eng: Total amount to be paid with this payment method.
+                                    spa: Monto a pagar con este medio.
+                                    por: Valor total a ser pago com este meio de pagamento.
                                 token:
                                   type: string
                                   example: "1234567897yhjdsnfs78ry3iuthrbnfuve8h4t3unbf7e4rgb"
-                                  description: Card token that represents securely the credit card data
+                                  description: Card token that represents securely the credit card data. For example, "1234567897yhjdsnfs78ry3iuthrbnfuve8h4t3unbf7e4rgb".
                                   x-description-i18n:
-                                    eng: Card token that represents securely the credit card data
-                                    spa: card_token que representa de manera segura los datos de tarjeta
-                                    por: Card token que representa de maneira segura os dados do cartão
+                                    eng: Card token that represents securely the credit card data. For example, "1234567897yhjdsnfs78ry3iuthrbnfuve8h4t3unbf7e4rgb".
+                                    spa: card_token que representa de manera segura los datos de tarjeta. Por ejemplo, "1234567897yhjdsnfs78ry3iuthrbnfuve8h4t3unbf7e4rgb".
+                                    por: Card token que representa de maneira segura os dados do cartão. Por exemplo, "1234567897yhjdsnfs78ry3iuthrbnfuve8h4t3unbf7e4rgb".
                                 payment_id:
                                   type: number
                                   example: 1234565432
-                                  description: Payment ID corresponding to the payment method
+                                  description: Payment identification associated with the payment method used.
                                   x-description-i18n:
-                                    eng: Payment ID corresponding to the payment method
-                                    spa: ID de Pago correspondiente al medio
-                                    por: ID de pagamento correspondente ao meio de pagamento
+                                    eng: Payment identification associated with the payment method used.
+                                    spa: Identificación de pago asociada al medio de pago utilizado.
+                                    por: Identificação de pagamento associada ao meio de pagamento utilizado.
                                 payment_method_id:
                                   type: string
                                   example: "debvisa"
-                                  description: Identifier of the chosen payment method
+                                  description: Identifier of the chosen payment method.
                                   x-description-i18n:
-                                    eng: Identifier of the chosen payment method
-                                    spa: Identificador del medio de pago elegido
-                                    por: Identificador do meio de pagamento escolhido
+                                    eng: Identifier of the chosen payment method.
+                                    spa: Identificador del medio de pago elegido.
+                                    por: Identificador do meio de pagamento escolhido.
                                 issuer:
                                   type: string
                                   example: "23"
-                                  description: In case it is required, identifier of the card issuer entity
+                                  description: Se necessário, este é o identificador da instituição que emitiu o cartão. Esse identificador é usado para registrar a origem do cartão de pagamento. Em algumas situações, é importante ter essa informação para fins de rastreamento, segurança e análise de transações.
                                   x-description-i18n:
-                                    eng: In case it is required, identifier of the card issuer entity
-                                    spa: En caso que sea requerido, identificador de la  entidad emisora de la tarjeta
-                                    por: Caso seja requerido, identificador da entidade emissora do cartão
+                                    eng: Se necessário, este é o identificador da instituição que emitiu o cartão. Esse identificador é usado para registrar a origem do cartão de pagamento. Em algumas situações, é importante ter essa informação para fins de rastreamento, segurança e análise de transações.
+                                    spa: En caso de ser necesario, este es el identificador de la entidad emisora de la tarjeta. Este identificador se utiliza para registrar el origen de la tarjeta de pago. En ciertas situaciones, contar con esta información es importante para fines de seguimiento, seguridad y análisis de transacciones.
+                                    por: Se necessário, este é o identificador da instituição que emitiu o cartão. Esse identificador é usado para registrar a origem do cartão de pagamento. Em algumas situações, é importante ter essa informação para fins de rastreamento, segurança e análise de transações.
                                 statement_descriptor:
                                   type: string
                                   example: "MERCADOPAGO"
-                                  description: Descriptor of the charge to be shown in the card statement
+                                  description: Charge descriptor to be displayed on the card statement. The charge descriptor is the text or name that will appear on the customer's credit card statement to identify the transaction. It provides a brief description that assists the customer in recognizing the nature of the transaction conducted.
                                   x-description-i18n:
-                                    eng: descriptor of the charge to be shown in the card statement
-                                    spa: Descriptor del cargo a utilizar en el resumen del emisor
-                                    por: Descritor da cobrança a ser mostrada no extrato do cartão
+                                    eng: Charge descriptor to be displayed on the card statement. The charge descriptor is the text or name that will appear on the customer's credit card statement to identify the transaction. It provides a brief description that assists the customer in recognizing the nature of the transaction conducted.
+                                    spa: Descriptor del cargo que se mostrará en el estado de cuenta de la tarjeta. El descriptor del cargo es el texto o nombre que aparecerá en el estado de cuenta de la tarjeta de crédito del cliente para identificar la transacción. Proporciona una breve descripción que ayuda al cliente a reconocer la naturaleza de la transacción realizada.
+                                    por: Descritor da cobrança a ser mostrada no extrato do cartão. O descritor da cobrança é o texto ou nome que aparecerá no extrato do cartão de crédito do cliente para identificar a transação. Ele fornece uma breve descrição que ajuda o cliente a reconhecer a natureza da transação realizada. 
                                 refunds:
-                                  description: List of refunds related to the payment method
+                                  description: List of refunds related to the payment method.
                                   x-description-i18n:
-                                    eng: List of refunds related to the payment method
-                                    spa: Listado de devoluciones relacionadas al medio de pago
-                                    por: Lista de reembolsos relacionados ao meio de pagamento
+                                    eng: List of refunds related to the payment method.
+                                    spa: Listado de devoluciones relacionadas al medio de pago.
+                                    por: Lista de reembolsos relacionados ao meio de pagamento.
                                   type: object
                                   properties:
                                     refund_id:
                                       type: number
                                       example: 123456789
-                                      description: ID of the refund
+                                      description: ID of the refund.
                                       x-description-i18n:
-                                        eng: ID of the refund
-                                        spa: ID de la devolución
-                                        por: ID do reembolso
+                                        eng: ID of the refund.
+                                        spa: ID de la devolución.
+                                        por: ID do reembolso.
                                     refund_amount:
                                       type: string
                                       example: "50.00"
-                                      description: Amount of the refund
+                                      description: Amount of the refund.
                                       x-description-i18n:
-                                        eng: Amount of the refund
-                                        spa: Monto de la devolución
-                                        por: Valor do reembolso
+                                        eng: Amount of the refund.
+                                        spa: Monto de la devolución.
+                                        por: Valor do reembolso.
                                 status:
                                   type: string
                                   example: "pending"
-                                  description: Status of the payment
+                                  description: Status of the payment.
                                   x-description-i18n:
-                                    eng: Status of the payment
-                                    spa: Estado del pago
-                                    por: Estado do pagamento
+                                    eng: Status of the payment.
+                                    spa: Estado del pago.
+                                    por: Status do pagamento.
                                 status_detail:
                                   type: object
-                                  description: Detail information about the status of the payment
+                                  description: Detail information about the status of the payment.
                                   x-description-i18n:
-                                    eng: Information about the status of the payment
-                                    spa: Información sobre el resultado del procesamiento
-                                    por: Informações detalhadas sobre o status do pagamento
+                                    eng: Information about the status of the payment.
+                                    spa: Información sobre el resultado del procesamiento.
+                                    por: Informações detalhadas sobre o status do pagamento.
                                   properties:
                                     code:
                                       type: string
                                       example: "400"
                                       description: Status code
                                       x-description-i18n:
-                                        eng: Status code
-                                        spa: Código del estado del pago
-                                        por: Código do Estado do Pagamento
+                                        eng: Status code.
+                                        spa: Código del estado del pago.
+                                        por: Código do status do Pagamento.
                                     message:
                                       type: string
                                       example: "acquirer rejected"
                                       description: Status message
                                       x-description-i18n:
-                                        eng: Status message
-                                        spa: Mensaje del estado del pago
-                                        por: Mensagem do Estado do Pagamento
+                                        eng: Status message.
+                                        spa: Mensaje del estado del pago.
+                                        por: Mensagem do status do Pagamento.
                           tickets:
                             type: array
                             items:
@@ -876,90 +876,90 @@ paths:
                                 amount:
                                   type: string
                                   example: "50.00"
-                                  description: Total amount to be paid with this payment method
+                                  description: Total amount to be paid with this payment method.
                                   x-description-i18n:
-                                    eng: Total amount to be paid with this payment method
-                                    spa: Monto a pagar con este medio
-                                    por: Valor total a ser pago com este meio de pagamento
+                                    eng: Total amount to be paid with this payment method.
+                                    spa: Monto a pagar con este medio de pago.
+                                    por: Valor total a ser pago com este meio de pagamento.
                                 payment_method_id:
                                   type: string
                                   example: "pec"
-                                  description: Identifier of the chosen payment method
+                                  description: Identifier of the chosen payment method.
                                   x-description-i18n:
-                                    eng: Identifier of the chosen payment method
-                                    spa: Identificador del medio de pago elegido
-                                    por: Identificador do meio de pagamento escolhido
+                                    eng: Identifier of the chosen payment method.
+                                    spa: Identificador del medio de pago elegido.
+                                    por: Identificador do meio de pagamento escolhido.
                                 payment_id:
                                   type: number
                                   example: 1234567654
-                                  description: Payment ID corresponding to the payment method
+                                  description: Payment identification associated with the payment method used.
                                   x-description-i18n:
-                                    eng: Payment ID corresponding to the payment method
-                                    spa: ID de Pago correspondiente al medio
-                                    por: ID de pagamento correspondente ao meio de pagamento
+                                    eng: Payment identification associated with the payment method used.
+                                    spa: Identificación de pago asociada al medio de pago utilizado.
+                                    por: Identificação de pagamento associada ao meio de pagamento utilizado.
                                 status:
                                   type: string
                                   example: "pending"
-                                  description: Status of the payment
+                                  description: Status of the payment.
                                   x-description-i18n:
-                                    eng: Status of the payment
-                                    spa: Estado del pago
-                                    por: Estado do pagamento
+                                    eng: Status of the payment.
+                                    spa: Estado del pago.
+                                    por: Status do pagamento.
                                 status_detail:
                                   type: object
-                                  description: Detail information about the status of the payment
+                                  description: Detail information about the status of the payment.
                                   x-description-i18n:
-                                    eng: Information about the status of the payment
-                                    spa: Información sobre el resultado del procesamiento
-                                    por: Informações detalhadas sobre o status do pagamento
+                                    eng: Information about the status of the payment.
+                                    spa: Información sobre el resultado del procesamiento.
+                                    por: Informações detalhadas sobre o status do pagamento.
                                   properties:
                                     code:
                                       type: string
                                       example: "400"
-                                      description: Status code
+                                      description: Payment status code.
                                       x-description-i18n:
-                                        eng: Status code
-                                        spa: Código del estado del pago
-                                        por: Código do Estado do Pagamento
+                                        eng: Payment status code.
+                                        spa: Código del status del pago.
+                                        por: Código do status do Pagamento.
                                     message:
                                       type: string
                                       example: "acquirer rejected"
-                                      description: Status message
+                                      description: Payment status message.
                                       x-description-i18n:
-                                        eng: Status message
-                                        spa: Mensaje del estado del pago
-                                        por: Mensagem do Estado do Pagamento
+                                        eng: Payment status message.
+                                        spa: Mensaje del status del pago.
+                                        por: Mensagem do status do Pagamento.
                                 completion_url:
                                   type: string
-                                  description: For offline payments, URL that allows you to continue the payment flow
+                                  description: For offline payments, this is the URL that enables the continuation of the payment flow.
                                   x-description-i18n:
-                                    eng: For offline payments, URL that allows you to continue the payment flow
-                                    spa: Para pagos offline, URL que permite continuar el flujo de pago
-                                    por: Para pagamentos offline, URL que permite continuar o fluxo de pagamento
+                                    eng: For offline payments, this is the URL that enables the continuation of the payment flow.
+                                    spa: Para pagos offline, esta es la URL que permite continuar con el flujo de pago.
+                                    por: Para pagamentos realizados offline, é a URL que possibilita a continuação do processo de pagamento.
                                 refunds:
-                                  description: List of refunds related to the payment method
+                                  description: List of refunds related to the payment method.
                                   x-description-i18n:
-                                    eng: List of refunds related to the payment method
-                                    spa: Listado de devoluciones relacionadas al medio de pago
-                                    por: Lista de reembolsos relacionados ao meio de pagamento
+                                    eng: List of refunds related to the payment method.
+                                    spa: Listado de devoluciones relacionadas al medio de pago.
+                                    por: Lista de reembolsos relacionados ao meio de pagamento.
                                   type: object
                                   properties:
                                     refund_id:
                                       type: number
                                       example: 123456789
-                                      description: ID of the refund
+                                      description: Refund identifier.
                                       x-description-i18n:
-                                        eng: ID of the refund
-                                        spa: ID de la devolución
-                                        por: ID do reembolso
+                                        eng: Refund identifier.
+                                        spa: Identificador del reembolso.
+                                        por: Identificador do reembolso.
                                     refund_amount:
                                       type: string
                                       example: "50.00"
-                                      description: Amount of the refund
+                                      description: Refund amount.
                                       x-description-i18n:
-                                        eng: Amount of the refund
-                                        spa: Monto de la devolución
-                                        por: Valor do reembolso
+                                        eng: Refund amount.
+                                        spa: Monto del reembolso.
+                                        por: Valor do reembolso.
                           atms:
                             type: array
                             items:
@@ -968,90 +968,90 @@ paths:
                                 amount:
                                   type: string
                                   example: "50.00"
-                                  description: Total amount to be paid with this payment method
+                                  description: Total amount to be paid with this payment method.
                                   x-description-i18n:
-                                    eng: Total amount to be paid with this payment method
-                                    spa: Monto a pagar con este medio
-                                    por: Valor total a ser pago com este meio de pagamento
+                                    eng: Total amount to be paid with this payment method.
+                                    spa: Monto a pagar con este medio.
+                                    por: Valor total a ser pago com este meio de pagamento.
                                 payment_method_id:
                                   type: string
                                   example: "bapropagos"
-                                  description: Identifier of the chosen payment method
+                                  description: Identifier of the chosen payment method.
                                   x-description-i18n:
-                                    eng: Identifier of the chosen payment method
-                                    spa: Identificador del medio de pago elegido
-                                    por: Identificador do meio de pagamento escolhido
+                                    eng: Identifier of the chosen payment method.
+                                    spa: Identificador del medio de pago elegido.
+                                    por: Identificador do meio de pagamento escolhido.
                                 payment_id:
                                   type: number
                                   example: 12345432423
-                                  description: Payment ID corresponding to the payment method
+                                  description: Payment identification associated with the payment method used.
                                   x-description-i18n:
-                                    eng: Payment ID corresponding to the payment method
-                                    spa: ID de Pago correspondiente al medio
-                                    por: ID de pagamento correspondente ao meio de pagamento
+                                    eng: Payment identification associated with the payment method used.
+                                    spa: Identificación de pago asociada al método de pago utilizado.
+                                    por: Identificação de pagamento associada ao método de pagamento utilizado.
                                 status:
                                   type: string
                                   example: "pending"
-                                  description: Status of the payment
+                                  description: Payment status.
                                   x-description-i18n:
-                                    eng: Status of the payment
-                                    spa: Estado del pago
-                                    por: Estado do pagamento
+                                    eng: Payment status.
+                                    spa: Status del pago.
+                                    por: Status do pagamento.
                                 completion_url:
                                   type: string
-                                  description: For offline payments, URL that allows you to continue the payment flow
+                                  description: For offline payments, this is the URL that enables the continuation of the payment flow.
                                   x-description-i18n:
-                                    eng: For offline payments, URL that allows you to continue the payment flow
-                                    spa: Para pagos offline, URL que permite continuar el flujo de pago
-                                    por: Para pagamentos offline, URL que permite continuar o fluxo de pagamento
+                                    eng: For offline payments, this is the URL that enables the continuation of the payment flow.
+                                    spa: Para pagos offline, esta es la URL que permite continuar con el flujo de pago.
+                                    por: Para pagamentos realizados offline, é a URL que possibilita a continuação do processo de pagamento.
                                 refunds:
-                                  description: List of refunds related to the payment method
+                                  description: List of refunds related to the payment method.
                                   x-description-i18n:
-                                    eng: List of refunds related to the payment method
-                                    spa: Listado de devoluciones relacionadas al medio de pago
-                                    por: Lista de reembolsos relacionados ao meio de pagamento
+                                    eng: List of refunds related to the payment method.
+                                    spa: Listado de devoluciones relacionadas al medio de pago.
+                                    por: Lista de reembolsos relacionados ao meio de pagamento.
                                   type: object
                                   properties:
                                     refund_id:
                                       type: number
                                       example: 123456789
-                                      description: ID of the refund
+                                      description: Refund identifier.
                                       x-description-i18n:
-                                        eng: ID of the refund
-                                        spa: ID de la devolución
-                                        por: ID do reembolso
+                                        eng: Refund identifier.
+                                        spa: Identificador del reembolso.
+                                        por: Identificador do reembolso.
                                     refund_amount:
                                       type: string
                                       example: "50.00"
-                                      description: Amount of the refund
+                                      description: Refund amount.
                                       x-description-i18n:
-                                        eng: Amount of the refund
-                                        spa: Monto de la devolución
-                                        por: Valor do reembolso
+                                        eng: Refund amount.
+                                        spa: Monto del reembolso.
+                                        por: Valor do reembolso.
                                 status_detail:
                                   type: object
-                                  description: Detail information about the status of the payment
+                                  description: Detail information about the status of the payment.
                                   x-description-i18n:
-                                    eng: Information about the status of the payment
-                                    spa: Información sobre el resultado del procesamiento
-                                    por: Informações detalhadas sobre o status do pagamento
+                                    eng: Information about the status of the payment.
+                                    spa: Información sobre el resultado del procesamiento.
+                                    por: Informações detalhadas sobre o status do pagamento.
                                   properties:
                                     code:
                                       type: string
                                       example: "400"
-                                      description: Status code
+                                      description: Payment status code.
                                       x-description-i18n:
-                                        eng: Status code
-                                        spa: Código del estado del pago
-                                        por: Código do Estado do Pagamento
+                                        eng: Payment status code.
+                                        spa: Código del status del pago.
+                                        por: Código do status do Pagamento.
                                     message:
                                       type: string
                                       example: "acquirer rejected"
-                                      description: Status message
+                                      description: Payment status message.
                                       x-description-i18n:
-                                        eng: Status message
-                                        spa: Mensaje del estado del pago
-                                        por: Mensagem do Estado do Pagamento
+                                        eng: Payment status message.
+                                        spa: Mensaje del status del pago.
+                                        por: Mensagem do status do pagamento.
                           bank_transfers:
                             type: array
                             items:
@@ -1060,90 +1060,90 @@ paths:
                                 amount:
                                   type: string
                                   example: "50.00"
-                                  description: Total amount to be paid with this payment method
+                                  description: Total amount to be paid with this payment method.
                                   x-description-i18n:
-                                    eng: Total amount to be paid with this payment method
-                                    spa: Monto a pagar con este medio
-                                    por: Valor total a ser pago com este meio de pagamento
+                                    eng: Total amount to be paid with this payment method.
+                                    spa: Monto a pagar con este medio de pago.
+                                    por: Valor total a ser pago com este meio de pagamento.
                                 payment_method_id:
                                   type: string
                                   example: "banco_mp"
-                                  description: Identifier of the chosen payment method
+                                  description: Identifier of the chosen payment method.
                                   x-description-i18n:
-                                    eng: Identifier of the chosen payment method
-                                    spa: Identificador del medio de pago elegido
-                                    por: Identificador do meio de pagamento escolhido
+                                    eng: Identifier of the chosen payment method.
+                                    spa: Identificador del medio de pago elegido.
+                                    por: Identificador do meio de pagamento escolhido.
                                 payment_id:
                                   type: number
                                   example: 23421234543
-                                  description: Payment ID corresponding to the payment method
+                                  description: Payment identification associated with the payment method used.
                                   x-description-i18n:
-                                    eng: Payment ID corresponding to the payment method
-                                    spa: ID de Pago correspondiente al medio
-                                    por: ID de pagamento correspondente ao meio de pagamento
+                                    eng: Payment identification associated with the payment method used.
+                                    spa: Identificación de pago asociada al método de pago utilizado.
+                                    por: Identificação de pagamento associada ao meio de pagamento utilizado.
                                 status:
                                   type: string
                                   example: "pending"
-                                  description: Status of the payment
+                                  description: Payment status.
                                   x-description-i18n:
-                                    eng: Status of the payment
-                                    spa: Estado del pago
-                                    por: Estado do pagamento
+                                    eng: Payment status.
+                                    spa: Status del pago.
+                                    por: Status do pagamento.
                                 completion_url:
                                   type: string
-                                  description: For offline payments, URL that allows you to continue the payment flow
+                                  description: For offline payments, this is the URL that enables the continuation of the payment flow.
                                   x-description-i18n:
-                                    eng: For offline payments, URL that allows you to continue the payment flow
-                                    spa: Para pagos offline, URL que permite continuar el flujo de pago
-                                    por: Para pagamentos offline, URL que permite continuar o fluxo de pagamento
+                                    eng: For offline payments, this is the URL that enables the continuation of the payment flow.
+                                    spa: Para pagos offline, esta es la URL que permite continuar con el flujo de pago.
+                                    por: Para pagamentos realizados offline, é a URL que possibilita a continuação do processo de pagamento.
                                 refunds:
-                                  description: List of refunds related to the payment method
+                                  description: List of refunds related to the payment method.
                                   x-description-i18n:
-                                    eng: List of refunds related to the payment method
-                                    spa: Listado de devoluciones relacionadas al medio de pago
-                                    por: Lista de reembolsos relacionados ao meio de pagamento
+                                    eng: List of refunds related to the payment method.
+                                    spa: Listado de devoluciones relacionadas al medio de pago.
+                                    por: Lista de reembolsos relacionados ao meio de pagamento.
                                   type: object
                                   properties:
                                     refund_id:
                                       type: number
                                       example: 123456789
-                                      description: ID of the refund
+                                      description: Refund identifier.
                                       x-description-i18n:
-                                        eng: ID of the refund
-                                        spa: ID de la devolución
-                                        por: ID do reembolso
+                                        eng: Refund identifier.
+                                        spa: Identificador del reembolso.
+                                        por: Identificador do reembolso.
                                     refund_amount:
                                       type: string
                                       example: "50.00"
-                                      description: Amount of the refund
+                                      description: Amount of the refund.
                                       x-description-i18n:
-                                        eng: Amount of the refund
-                                        spa: Monto de la devolución
-                                        por: Valor do reembolso
+                                        eng: Amount of the refund.
+                                        spa: Monto de la devolución.
+                                        por: Valor do reembolso.
                                 status_detail:
                                   type: object
-                                  description: Detail information about the status of the payment
+                                  description: Detail information about the status of the payment.
                                   x-description-i18n:
-                                    eng: Information about the status of the payment
-                                    spa: Información sobre el resultado del procesamiento
+                                    eng: Information about the status of the payment.
+                                    spa: Información sobre el status del pago.
                                     por: Informações detalhadas sobre o status do pagamento
                                   properties:
                                     code:
                                       type: string
                                       example: "400"
-                                      description: Status code
+                                      description: Payment status code.
                                       x-description-i18n:
-                                        eng: Status code
-                                        spa: Código del estado del pago
-                                        por: Código do Estado do Pagamento
+                                        eng: Payment status code.
+                                        spa: Código del status del pago.
+                                        por: Código do status do pagamento.
                                     message:
                                       type: string
                                       example: "acquirer rejected"
-                                      description: Status message
+                                      description: Payment status message.
                                       x-description-i18n:
-                                        eng: Status message
-                                        spa: Mensaje del estado del pago
-                                        por: Mensagem do Estado do Pagamento
+                                        eng: Payment status message.
+                                        spa: Mensaje del status del pago.
+                                        por: Mensagem do status do Pagamento.
         "400":
           description: Error
           x-description-i18n:
