@@ -183,6 +183,11 @@ paths:
                             example: wallet_purchase, onboarding_credits
                           payment_methods:
                             type: object
+                            description: Information related to the payment methods defined for the transaction.
+                            x-description-i18n:
+                              eng: Information related to the payment methods defined for the transaction.
+                              spa: Información relacionada con los medios de pago definidos para la transacción.
+                              por: Informações relacionadas aos meios de pagamento definidos para a transação.
                             properties:
                               coupons:
                                 description: Coupons can be used as a payment method during the transaction.
@@ -218,24 +223,24 @@ paths:
                                 properties:
                                   enabled:
                                     type: array
+                                    description: List of Payment Types included. For example, credit_card, debit_card.
+                                    x-description-i18n:
+                                      eng: List of Payment Types included. For example, credit_card, debit_card.
+                                      spa: Lista de tipos de medios de pago incluidos. Por ejemplo, credit_card, debit_card.
+                                      por: Lista de tipos de meios de pagamento incluídos. Por exemplo, credit_card, debit_card.
                                     items:
                                       type: string
                                       example: credit_card, debit_card
-                                      description: List of Payment Types included. For example, credit_card, debit_card.
-                                      x-description-i18n:
-                                        eng: List of Payment Types included. For example, credit_card, debit_card.
-                                        spa: Lista de tipos de medios de pago incluidos. Por ejemplo, credit_card, debit_card.
-                                        por: Lista de tipos de meios de pagamento incluídos. Por exemplo, credit_card, debit_card.
                                   disabled:
+                                    example: "credit_card"
+                                    description: Types of payment methods not covered. This parameter encompasses payments that will not be accepted in the transaction, such as "credit card".
+                                    x-description-i18n:
+                                      eng: Types of payment methods not covered. This parameter encompasses payments that will not be accepted in the transaction, such as "credit card".
+                                      spa: Tipos de medios de pago no incluidos. Este parámetro abarca los pagos que no serán aceptados en la transacción, como por ejemplo, "credit card".
+                                      por: Tipos de meios de pagamento não abrangidos. Este parâmetro engloba os pagamentos que não serão aceitos na transação, como por exemplo, "credit card".
                                     type: array
                                     items:
                                       type: string
-                                      example: "credit_card"
-                                      description: Types of payment methods not covered. This parameter encompasses payments that will not be accepted in the transaction, such as "credit card".
-                                      x-description-i18n:
-                                        eng: Types of payment methods not covered. This parameter encompasses payments that will not be accepted in the transaction, such as "credit card".
-                                        spa: Tipos de medios de pago no incluidos. Este parámetro abarca los pagos que no serán aceptados en la transacción, como por ejemplo, "credit card".
-                                        por: Tipos de meios de pagamento não abrangidos. Este parâmetro engloba os pagamentos que não serão aceitos na transação, como por exemplo, "credit card".
                               methods:
                                 type: object
                                 description: Configuration by specific payment method.
@@ -580,9 +585,19 @@ paths:
                             properties:
                               area_code:
                                 type: string
+                                description: Buyer's area code.
+                                x-description-i18n:
+                                  eng: Buyer's area code.
+                                  spa: Código de área del comprador.
+                                  por: Código de área do comprador.
                                 example: "11"
                               number:
                                 type: string
+                                description: Buyer's phone number number.
+                                x-description-i18n:
+                                  eng: Buyer's phone number.
+                                  spa: Número de teléfono del comprador.
+                                  por: Número de telefone do comprador.
                                 example: "99999999"
                       advanced:
                         type: object
@@ -1359,7 +1374,11 @@ paths:
                                   enabled:
                                     type: array
                                     example: visa, master
-                                    description: Payment methods included
+                                    description: List of Payment Types included
+                                    x-description-i18n:
+                                      eng: List of Payment Types included
+                                      spa: Lista de tipos de medios de pago incluidos
+                                      por: Lista de tipos de meios de pagamento incluídos
                                     items:
                                       type: object
                                       properties:
@@ -1405,14 +1424,14 @@ paths:
                                               example: "1"
                                   disabled:
                                     type: array
+                                    description: Payment methods not included.
+                                    x-description-i18n:
+                                      eng: Payment methods not included.
+                                      spa: Medios de pago no incluidos.
+                                      por: Meios de pagamento não incluídos.
                                     items:
                                       type: string
                                       example: ticket, account_money
-                                      description: Methods of payment not included
-                                      x-description-i18n:
-                                        eng: Methods of payment not included
-                                        spa: Métodos de pago no incluidos
-                                        por: Métodos de pagamento não incluídos
                                   default:
                                     type: string
                                     example: "credit_card"
