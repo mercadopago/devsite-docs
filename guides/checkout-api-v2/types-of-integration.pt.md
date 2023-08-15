@@ -5,7 +5,7 @@ A integração com o Checkout Transparente pode ser feita utilizando procediment
 ----[mlb]---- 
 | Tipo de integração  | Meios de pagamento  | Complexidade a nível frontend  | User interface (UI)  |
 | --- | --- | --- | --- | 
-| [Checkout Bricks](/developers/pt/docs/checkout-bricks/landing) | Crédito, débito virtual Caixa, Pix, boleto, pagamento em lotérica e Conta Mercado Pago | Fácil  | Componentes com UI já definida e que pode ser personalizada caso necessário.  | 
+| [Checkout Bricks](/developers/pt/docs/checkout-bricks/landing) | Crédito, débito virtual Caixa, Pix, boleto, pagamento em lotérica, Conta Mercado Pago e Parcelamento sem cartão | Fácil  | Componentes com UI já definida e que pode ser personalizada caso necessário.  | 
 | [Cardform](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform)  | Todos os meios disponíveis  | Médio  | Formulário sem estilizações para começar as configurações do zero.  | 
 |  [Métodos Core](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-core-methods)  | Todos os meios disponíveis  | Alto | Crie seu formulário e suas estilizações  | 
 
