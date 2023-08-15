@@ -159,11 +159,11 @@ paths:
                       por: URL que permite iniciar o fluxo de pagamento. Por exemplo, "https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=123456789.
                   configuration:
                     type: object
-                    description: Configuration parameters defined by the seller before starting the transaction
+                    description: Configuration parameters defined by the seller before starting the transaction.
                     x-description-i18n:
-                      eng: Configuration parameters defined by the seller before starting the transaction
-                      spa: Parámetros de configuración definidos por el seller antes de iniciar la transacción
-                      por: Configuração definida pelo seller antes de iniciar a transação
+                      eng: Configuration parameters defined by the seller before starting the transaction.
+                      spa: Parámetros de configuración definidos por el seller antes de iniciar la transacción.
+                      por: Configuração definida pelo seller antes de iniciar a transação.
                     properties:
                       option:
                         type: object
@@ -301,15 +301,15 @@ paths:
                                               type: string
                                               example: "1"
                                   disabled:
+                                    description: Payment methods not included.
+                                    x-description-i18n:
+                                      eng: Payment methods not included.
+                                      spa: Medios de pago no incluidos.
+                                      por: Meios de pagamento não incluídos.
                                     type: array
                                     items:
                                       type: string
                                       example: ticket, account_money
-                                      description: Payment methods not included.
-                                      x-description-i18n:
-                                        eng: Payment methods not included.
-                                        spa: Medios de pago no incluidos.
-                                        por: Meios de pagamento não incluídos.
                                   default:
                                     type: string
                                     example: "credit_card"
