@@ -38,7 +38,7 @@ yarn add react-native-inappbrowser-reborn
 
 Si utilizas Android support, tu archivo debería tener estas propiedades. En caso de faltar alguna, agrégala. Las versiones pueden ser iguales o superiores.
 
-Para la instalación con React Native CLI debes **verificar el archivo android/build.gradle**.
+Si utilizas Android Support, tu archivo **android/build.gradle** debería tener las propiedades que describimos a continuación. En caso de faltar alguna, agrégala. Las versiones pueden ser iguales o superiores.
 
 ```
 buildscript {
@@ -135,7 +135,7 @@ Los **Deep Links**, también conocidos como enlaces profundos, son una forma pod
 
 ### Crear un Deep Link
 Desde nuestro checkout es posible configurar Deep Links para volver a tu aplicación ya sea haciendo click en un link de “Volver” o de forma automática al terminar todo un flujo de pago exitoso, para luego ser redirigido a tu App.
-Para esto debemos agregar en la creación de la preferencia de pago las propiedades `back_urls` y `auto_rerturn` según corresponda.
+Para esto debemos agregar en la creación de la preferencia de pago las propiedades `back_urls` y `auto_return` según corresponda.
 
 Para conocer más, puedes acceder a la documentación de [URLs de retorno](/developers/es/docs/checkout-pro/checkout-customization/user-interface/redirection).
 

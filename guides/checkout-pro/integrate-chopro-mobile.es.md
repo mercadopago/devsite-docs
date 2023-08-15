@@ -1,6 +1,6 @@
 # Integrar Checkout Pro para Mobile
 
-Si quieres integrar Checkout Pro a una aplicación mobile, a continuaciónte brindamos distintas de tecnologías para que elijas la que mejor se ajuste a tu proyecto y sus necesidades.
+Si quieres integrar Checkout Pro a una aplicación mobile, a continuación te brindamos distintas de tecnologías para que elijas la que mejor se ajuste a tu proyecto y sus necesidades.
 
 ## Android
 
