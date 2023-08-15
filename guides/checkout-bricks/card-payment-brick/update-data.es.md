@@ -6,7 +6,7 @@ Datos disponibles para la actualización:
 
 | Campo | Tipo | Descripción | Validación |
 | --- | --- | --- | --- |
-| amount | number | Monto del pago. | Antes de actualizar el `amount`, el Brick verifica si el nuevo valor es mayor o igual al valor mínimo permitido por el método de pago seleccionado por el usuario. Si la validación es exitosa, el método de actualización devolverá `true`. De lo contrario, devolverá `false`. |
+| amount | number | Monto del pago. | Antes de actualizar el `amount`, el Brick verifica si el nuevo valor es mayor o igual al valor mínimo permitido por el método de pago seleccionado por el usuario. <br> Si la validación es exitosa, el método de actualización devolverá `true`. De lo contrario, devolverá `false`. |
 
 ```javascript
 let amount = 95;
