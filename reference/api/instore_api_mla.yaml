@@ -1545,9 +1545,9 @@ paths:
                         type: array
                         description: QR mode to use in the operation. It can be used individually or both at the same time.
                         x-description-i18n:
-                        eng: QR mode to use in the operation. It can be used individually or both at the same time.
-                        spa: Modo de QR a utilizar en la operación. Se pueden utilizar individualmente o ambos al mismo tiempo.
-                        por: Modo QR para usar na operação. Eles podem ser usados individualmente ou ambos ao mesmo tempo.
+                          eng: QR mode to use in the operation. It can be used individually or both at the same time.
+                          spa: Modo de QR a utilizar en la operación. Se pueden utilizar individualmente o ambos al mismo tiempo.
+                          por: Modo QR para usar na operação. Eles podem ser usados individualmente ou ambos ao mesmo tempo.
                         items:
                           type: string
                           example: "STATIC"
@@ -1852,9 +1852,9 @@ paths:
           in: path
           description: Device Id
           x-description-i18n:
-           eng: Device ID
-           spa: ID del dispositivo
-           por: ID do dispositivo
+            eng: Device ID
+            spa: ID del dispositivo
+            por: ID do dispositivo
           required: true
           schema:
             type: string
