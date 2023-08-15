@@ -4,7 +4,7 @@ La forma en la que organizamos la información y planemos las experiencias debe 
 
 ## Replica los patrones
 
-Siempre que sea posible intenta replicar los mismos patrones de navegación e interacción de tu app nativa dentro de la Mini App del Smart.
+Siempre que sea posible intenta replicar los mismos patrones de navegación e interacción de tu app nativa dentro de la mini app del Smart.
 
 ## Mantén la misma arquitetura
 

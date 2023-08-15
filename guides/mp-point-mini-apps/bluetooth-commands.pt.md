@@ -142,38 +142,44 @@ MobileWebKit.executeNative(
     )
 ```
 
-## Imprimir utlizando impressora Bluetooth
+## Imprimir utilizando impressora Bluetooth
 
-Para emparelhar uma impressora, execute o comando JS `bluetooth_printer_devices` como no exemplo abaixo.
+Para emparelhar uma impressora, execute o comando `bluetooth_printer_devices` como no exemplo abaixo.
 
 ```javascript
-MobileWebKit.executeNative({
-            "method": 'bluetooth_printer_devices',
-            "args": {},
-            "callback": callback
-})
+MobileWebKit.executeNative(
+        {
+            "method": 'bluetooth_printer_devices',
+            "args": {
+            },
+            "callback": callback
+                }
+            }
+        }
+    )
 ```
 
-Com a impressora emparelhada, execute o comando JS `bluetooth_print` para imprimir nesta impressora. Envie o ID da impressora fornecido pelo comando de descobrir dispositivos (`bluetooth_devices`) e o texto a ser impresso.
+Com a impressora emparelhada, execute o comando `bluetooth_print` para imprimir nesta impressora. Envie o ID da impressora fornecido pelo comando de descobrir dispositivos (`bluetooth_devices`) e o texto a ser impresso.
+
+```javascript
+function printData(data, printerDeviceId){
+
+MobileWebKit.executeNative(
+        {
+            "method": 'bluetooth_print',
+            "args": {
+                "id": printerDeviceId,
+                "data": data
+            },
+            "callback": function (result,error){
+                console.log("Print Result: " + result + "Error: " + error);
+            }
+        }
+    )
+}
+```
 
 | Parâmetro  | Tipo  | Obrigatório | Valores possíveis | Descrição |
 | --- | --- | --- | --- | --- |
 | id | string | true | printerDeviceId | ID de impressora válido. |
-| data | string | true | texto | Dados a serem impressos.|
-
-Exemplo de código:
-
-```javascript
-function printData(data, printerDeviceId)  {
-    MobileWebKit.executeNative({
-	     "method": 'bluetooth_print',
-         "args": {
-             "id": printerDeviceId,
-             "data": data
-         },
-         "callback": function (result, erros) {
-             console.log("Print Result: " + result + ", Error: + error);
-         }
-    })
-}
-```
+| data | string | true | text printed | Dados a serem impressos.|

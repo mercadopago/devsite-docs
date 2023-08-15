@@ -1,6 +1,6 @@
 # Comunicação com Mercado Pago
 
-Para se comunicar com o aplicativo do Mercado Pago, o Mini App deve utilizar alguns comandos que estarão disponíveis para uso somente após o carregamento do Mini App. Veja mais informações na seção [Ciclo de vida dos MiniApps](/developers/pt/docs/mp-point/mini-apps/introduction/lifecycle).
+Para se comunicar com o aplicativo do Mercado Pago, o mini app deve utilizar alguns comandos que estarão disponíveis para uso somente após o carregamento do mini app. Veja mais informações na seção [Ciclo de vida dos MiniApps](/developers/pt/docs/mp-point/mini-apps/introduction/lifecycle).
 
 Todos os comandos disponíveis suportam os seguintes parâmetros:
 

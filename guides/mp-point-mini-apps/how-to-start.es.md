@@ -19,7 +19,7 @@ Los campos del archivo manifesto deben ser completados correctamente conforme lo
 
 ## CORS
 
-El dominio a ser utilizado en la Mini App tiene que estar añadido a las reglas CORS utilizadas por la API remota. Para esta etapa de test, el nombre del dominio formará parte del nombre del arquivo `.zip` com el sufijo `.mp`.
+El dominio a ser utilizado en la mini app tiene que estar añadido a las reglas CORS utilizadas por la API remota. Para esta etapa de test, el nombre del dominio formará parte del nombre del arquivo `.zip` com el sufijo `.mp`.
 
 Por ejemplo:
 
@@ -32,7 +32,7 @@ Después de recibir la notificación de que la mini aplicación está disponible
 
 ## Instala la Mini App
 
-Selecciona tu Mini App y presiona el botón de instalación. En el ejemplo de abajo, la mini aplicación se llama "Test de miniaplicación".
+Selecciona tu mini app y presiona el botón de instalación. En el ejemplo de abajo, la mini aplicación se llama "Test de miniaplicación".
 
 <center>
 
@@ -42,7 +42,7 @@ Selecciona tu Mini App y presiona el botón de instalación. En el ejemplo de ab
 
 ## Visualización
 
-Cuando la Mini App esté instalada, se verá como en la imagen de abajo. Para ingresar, solo debes tocar el ícono.
+Cuando la mini app esté instalada, se verá como en la imagen de abajo. Para ingresar, solo debes tocar el ícono.
 
 <center>
 

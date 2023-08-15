@@ -8,7 +8,7 @@ Evita usar términos complejos, rebuscados y que no forman parte del vocabulario
 
 ## Mantén la consistencia
 
-Establece patrones de navegación, interacción, layout y textos. Cuanto más familiares les resulte, más a gusto se sentirán tus personas usuarias al usar tu Mini App.
+Establece patrones de navegación, interacción, layout y textos. Cuanto más familiares les resulte, más a gusto se sentirán tus personas usuarias al usar tu mini app.
 
 ## Enfócate en lo esencial
 

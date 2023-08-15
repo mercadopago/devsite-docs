@@ -19,7 +19,7 @@ Os campos do arquivo manifesto devem ser preenchidos corretamente conforme indic
 
 ## CORS
 
-O domínio a ser utilizado no Mini App deve ser adicionado às regras CORS utilizadas pela API remota. Para esta etapa de teste, o nome de domínio fará parte do nome do arquivo `.zip` com o sufixo `.mp`.
+O domínio a ser utilizado no mini app deve ser adicionado às regras CORS utilizadas pela API remota. Para esta etapa de teste, o nome de domínio fará parte do nome do arquivo `.zip` com o sufixo `.mp`.
 
 Por exemplo:
 
@@ -42,7 +42,7 @@ Selecione seu mini aplicativo e pressione o botão de instalação. Neste exempl
 
 ## Visualização
 
-Quando o Mini App estiver instalado, ele pode ser visto como na imagem abaixo. Para acessá-lo, basta tocar no ícone.
+Quando o mini app estiver instalado, ele pode ser visto como na imagem abaixo. Para acessá-lo, basta tocar no ícone.
 
 <center>
 

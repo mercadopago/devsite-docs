@@ -1,6 +1,6 @@
 # Comandos disponibles
 
-Ve a continuación qué comandos están disponibles para usar solo después de cargar la Mini App.
+Ve a continuación qué comandos están disponibles para usar solo después de cargar la mini app.
 
 ## Comando: back 
 
@@ -106,7 +106,7 @@ Para iniciar el flujo de pago, la función `launchPaymentFlow` debe ser llamada 
 | --- | --- | --- | --- | --- |
 | amount | Number | Si | 0.01 <= n <  50000 | Monto a pagarse. |
 | metadata | string | No | SON Object como uma string | Información adicional que se devolverá al callback después que finalice el flujo de pago. |
-| callback_success | string | No | Paths| Indica el camino a donde se enviará la respuesta en caso de éxito. Esta ruta será relativa al dominio de la Mini App. |
+| callback_success | string | No | Paths| Indica el camino a donde se enviará la respuesta en caso de éxito. Esta ruta será relativa al dominio de la mini app. |
 | callback_error | string | No | Paths|Indica el camino donde se enviará la respuesta en caso de error. Esta ruta será relativa al dominio de la mini app. |
 
 Ejemplo de código:
@@ -127,7 +127,7 @@ Para iniciar el flujo de pago con medio de pago, la función `launchPaymentMetho
 | amount | Number | Si | 0.01 <= n <  50000 | Monto a pagarse. |
 | payment_method | string | Si | credit, debit, qr, link| Indica le método de pago que se usará. |
 | metadata | string | No | SON Object como uma string | Información adicional que se devolverá al callback después que finalice el flujo de pago. |
-| callback_success | string | No | Paths| Indica el camino a donde se enviará la respuesta en caso de éxito. Esta ruta será relativa al dominio de la Mini App. |
+| callback_success | string | No | Paths| Indica el camino a donde se enviará la respuesta en caso de éxito. Esta ruta será relativa al dominio de la mini app. |
 | callback_error | string | No | Paths|Indica el camino donde se enviará la respuesta en caso de error. Esta ruta será relativa al dominio de la mini app. |
 
 Ejemplo de código:

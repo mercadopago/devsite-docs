@@ -24,7 +24,7 @@ Las expresiones y formas de lenguaje muy típicas de un lugar casi siempre son i
 
 ## Identidad visual
 
-Consulta cómo adaptar la identidad y construcción visual de tu aplicación para que no infrinja la Guía de Mercado Pago. Estas reglas no solo cuentan para la  sección “Apps”, sino también para los flujos internos de la aplicación.
+Consulta cómo adaptar la identidad y construcción visual de tu aplicación para que no infrinja la [Guía de Mercado Pago](). Estas reglas no solo cuentan para la  sección “Apps”, sino también para los flujos internos de la aplicación.
 
 ### Colores
 

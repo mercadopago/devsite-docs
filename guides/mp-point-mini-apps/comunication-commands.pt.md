@@ -1,6 +1,6 @@
 # Comandos disponíveis
 
-Veja abaixo quais são os comandos disponíveis para uso somente após o carregamento do Mini App.
+Veja abaixo quais são os comandos disponíveis para uso somente após o carregamento do mini app.
 
 ## Comando: back 
 
@@ -107,7 +107,7 @@ Para iniciar o fluxo de pagamento, a função `launchPaymentFlow` deve ser chama
 | amount | Number | Sim | 0.01 <= n <  50000 | Valor a ser pago.  |
 | metadata | string | Não | SON Object como uma string | Informação adicional que será retornada no callback depois que o fluxo de pagamento estiver concluído. |
 | callback_success | string | Não | Paths| Indica o caminho para onde a resposta será enviada em caso de sucesso. Essa rota será relativa ao domínio do mini app.|
-| callback_error | string | Não | Paths| Indica o caminho para onde a resposta será enviada em caso de erro. Essa rota será relativa ao domínio do Mini App. |
+| callback_error | string | Não | Paths| Indica o caminho para onde a resposta será enviada em caso de erro. Essa rota será relativa ao domínio do mini app. |
 
 Exemplo de código:
 
@@ -128,7 +128,7 @@ Para iniciar o fluxo de pagamento com forma de pagamento, a função `launchPaym
 | payment_method | string | Sim | credit, debit, qr, link| Indica o método de pagamento a ser utilizado. |
 | metadata | string | Não | SON Object como uma string | Informação adicional que será retornada no callback depois que o fluxo de pagamento estiver concluído. |
 | callback_success | string | Não | Paths| Indica o caminho para onde a resposta será enviada em caso de sucesso. Essa rota será relativa ao domínio do mini app.|
-| callback_error | string | Não | Paths| Indica o caminho para onde a resposta será enviada em caso de erro. Essa rota será relativa ao domínio do Mini App. |
+| callback_error | string | Não | Paths| Indica o caminho para onde a resposta será enviada em caso de erro. Essa rota será relativa ao domínio do mini app. |
 
 Exemplo de código:
 

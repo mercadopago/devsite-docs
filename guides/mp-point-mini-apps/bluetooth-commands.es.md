@@ -4,7 +4,7 @@ Ve a continuación qué comandos están disponibles para conectar un dispositivo
 
 ## Conectar y desconectar
 
-Para conectar y desconectar un dispositivo bluetooth desde una Mini App, se debe ejecutar el comando JS `bluetooth_enable`, enviando como parámetro una acción para indicar la `action` a realizar.
+Para conectar y desconectar un dispositivo bluetooth desde una mini app, se debe ejecutar el comando JS `bluetooth_enable`, enviando como parámetro una acción para indicar la `action` a realizar.
 
 | Parámetro | Tipo | Requerido | Valores posibles | Descripción |
 | --- | --- | --- | --- | --- |
@@ -30,7 +30,7 @@ MobileWebKit.executeNative(
 
 ## Obtener status
 
-Para saber si el bluetooth está activado o no en la Mini App, debes ejecutar el comando JS `bluetooth_status`, cuyo resultado es un booleano que indica si está activado.
+Para saber si el bluetooth está activado o no en la mini app, debes ejecutar el comando JS `bluetooth_status`, cuyo resultado es un booleano que indica si está activado.
 
 Ejemplo de código:
 
@@ -144,36 +144,42 @@ MobileWebKit.executeNative(
 
 ## Imprimir usando impresora Bluetooth
 
-Para emparejar una impresora, ejecuta el comando JS `bluetooth_printer_devices` como en el ejemplo a continuación.
+Para emparejar una impresora, ejecuta el comando `bluetooth_printer_devices` como en el ejemplo a continuación.
 
 ```javascript
-MobileWebKit.executeNative({
-            "method": 'bluetooth_printer_devices',
-            "args": {},
-            "callback": callback
-})
+MobileWebKit.executeNative(
+        {
+            "method": 'bluetooth_printer_devices',
+            "args": {
+            },
+            "callback": callback
+                }
+            }
+        }
+    )
 ```
 
-Una vez emparejada, ejecuta el comando JS `bluetooth_print` para imprimir en esa impresora. Envía la ID de la impresora proporcionada por el comando de descubrimiento de dispositivos (`bluetooth_devices`) y el texto que se imprimirá.
+Una vez emparejada, ejecuta el comando `bluetooth_print` para imprimir en esa impresora. Envía la ID de la impresora proporcionada por el comando de descubrimiento de dispositivos (`bluetooth_devices`) y el texto que se imprimirá.
+
+```javascript
+function printData(data, printerDeviceId){
+
+MobileWebKit.executeNative(
+        {
+            "method": 'bluetooth_print',
+            "args": {
+                "id": printerDeviceId,
+                "data": data
+            },
+            "callback": function (result,error){
+                console.log("Print Result: " + result + "Error: " + error);
+            }
+        }
+    )
+}
+```
 
 | Parámetro | Tipo | Requerido | Valores posibles | Descripción |
 | --- | --- | --- | --- | --- |
 | id | string | true | printerDeviceId | ID de impresora válido. |
-| data | string | true | texto | Datos a imprimir.|
-
-Ejemplo de solicitud:
-
-```javascript
-function printData(data, printerDeviceId)  {
-    MobileWebKit.executeNative({
-	     "method": 'bluetooth_print',
-         "args": {
-             "id": printerDeviceId,
-             "data": data
-         },
-         "callback": function (result, erros) {
-             console.log("Print Result: " + result + ", Error: + error);
-         }
-    })
-}
-```
+| data | string | true | text printed | Datos a imprimir.|

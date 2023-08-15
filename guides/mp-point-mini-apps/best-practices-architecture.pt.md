@@ -2,7 +2,7 @@
 
 A forma como organizamos a informação e planejamos as experiências deve ser consistente com os modelos mentais de quem usa o mini app. As dicas a seguir te ajudarão nessa etapa.
 
-## Replicque os padrões
+## Replique os padrões
 
 Sempre que possível, tente replicar os mesmos padrões de navegação e interação do seu app nativo dentro do mini app da Point Smart.
 

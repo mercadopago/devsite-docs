@@ -4,24 +4,24 @@ O ciclo de vida dos Mini Apps é controlado por meio de eventos de callback que 
 
 ## GlobalState
 
-Esta categoria apresenda o estado do ciclo de vida geral do Mini App, podendo ser:
+Esta categoria apresenda o estado do ciclo de vida geral do mini app, podendo ser:
 
-* `GlobalState.shown`: o Mini App está visível e em primeiro plano.
-* `GlobalState.hidden`: o Mini pp não está visível e foi para o primeiro plano.
-* `GlobalState.error`: o Mini App fica em um estado inválido.
+* `GlobalState.shown`: o mini app está visível e em primeiro plano.
+* `GlobalState.hidden`: o mini app não está visível e foi para o primeiro plano.
+* `GlobalState.error`: o mini app fica em um estado inválido.
 
 ## PageState
 
-Esta categoria apresenda o estado do ciclo de vida da página do Mini App, podendo ser:
+Esta categoria apresenda o estado do ciclo de vida da página do mini app, podendo ser:
 
 * `PageState.ready`: se o MiniApp estiver pronto para ser usado, mas for para segundo plano antes de estar totalmente carregado, é possível que este evento seja enviado após o estado oculto (`GlobalState.hidden`).
-* `PageState.back`: se no manifest `control_back_action` for declarado como 'true' e o usuário pressionar o botão **Voltar** no dispositivo, este evento será enviado ao Mini App.
+* `PageState.back`: se no manifest `control_back_action` for declarado como 'true' e o usuário pressionar o botão **Voltar** no dispositivo, este evento será enviado ao mini app.
 
 ## PointPayment
 
 Esta categoria apresenta o estado de pagamentos, podendo ser:
 
-* `PointPayment.Success`: um fluxo de tentativa de pagamento foi iniciado, o pagamento foi concluído com sucesso e o Mini App foi totalmente carregado.
+* `PointPayment.Success`: um fluxo de tentativa de pagamento foi iniciado, o pagamento foi concluído com sucesso e o mini app foi totalmente carregado.
 * `PointPayment.Error`: um fluxo de tentativa de pagamento foi iniciado, mas o usuário pressionou o botão **Voltar** e pagamento não foi concluído.
 
 <center>

@@ -26,7 +26,7 @@ Expressões e formas de linguagem muito típicas de um lugar quase sempre são i
 
 ## Identidade visual
 
-Aprenda a adaptar a identidade e construção visual do seu aplicativo dentro dos parâmetros do Guia do Mercado Pago. Estas regras se aplicam não só à seção ”Apps”, mas também aos fluxos internos do aplicativo.
+Aprenda a adaptar a identidade e construção visual do seu aplicativo dentro dos parâmetros do [Guia do Mercado Pago](). Estas regras se aplicam não só à seção ”Apps”, mas também aos fluxos internos do aplicativo.
 
 ## Cores
 

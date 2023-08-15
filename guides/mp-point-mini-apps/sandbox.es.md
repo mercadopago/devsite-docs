@@ -6,7 +6,7 @@
 >
 > Atención
 >
-> Para instalar una Mini App localmente, debes tener **Android Studio** instalado en su computadora.
+> Para instalar una mini app localmente, debes tener **Android Studio** instalado en su computadora.
 
 1. Selecciona tu mini app de prueba y presiona el **botón de instalación**. En este caso, por ejemplo, la mini aplicación se llama "Prueba de mini app".
 
@@ -40,7 +40,7 @@
 
 </center>
 
-5. Cuando la Mini App se haya instalado, se puede ver de la siguinte forma:
+5. Cuando la mini app se haya instalado, se puede ver de la siguinte forma:
 
 <center>
 

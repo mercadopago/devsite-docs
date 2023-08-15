@@ -1,14 +1,14 @@
 # Sandbox
 
-## Instalar localmente una Mini App
+## Instalar localmente um Mini App
 
 > WARNING
 >
 > Atenção
 > 
-> Para poder instalar localmente um Mini App é necessário ter o **Android Studio** instalado em seu computador.
+> Para poder instalar localmente um mini app é necessário ter o **Android Studio** instalado em seu computador.
 
-1. Selecione seu Mini App de teste e pressione o **botão de instalação**. Neste caso, por exemplo, o mini aplicativo é chamado de "Teste de mini-aplicativo".
+1. Selecione seu mini app de teste e pressione o **botão de instalação**. Neste caso, por exemplo, o mini aplicativo é chamado de "Teste de mini-aplicativo".
 
 <center>
 
@@ -24,7 +24,7 @@
 
 </center>
 
-3. Após o download do conteúdo do Mini App, clique no botão **Voltar para tentar instalar novamente**.
+3. Após o download do conteúdo do mini app, clique no botão **Voltar para tentar instalar novamente**.
 
 <center>
 
@@ -40,7 +40,7 @@
 
 </center>
 
-5. Quando o Mini App for instalado, ele será visto da seguinte forma:
+5. Quando o mini app for instalado, ele será visto da seguinte forma:
 
 <center>
 

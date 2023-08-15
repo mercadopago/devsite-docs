@@ -1,8 +1,8 @@
 # Impressora Point Smart (impressora térmica)
 
-## Configure o recibo HTML para impressão correta
+## Configure o recibo HTML para impressão
 
-Para processar corretamente o recibo _HTML_ e imprimir todas as informações, deve-se incluir os seguintes scripts do Mercado Pago antes da tag `body`:
+Para processar corretamente o recibo _HTML_ e imprimir todas as informações, deve-se incluir os seguintes scripts do Mercado Pago antes da tag `</body>`:
 
 * `mobilewebkit.js`
 * `smart_render.js `
@@ -19,11 +19,11 @@ Além disso, o recibo _HTML_ deve chamar a `notifyHtmlReadyToPrint` quando o rec
 Veja abaixo um exemplo de código que notifica o _HTML_ pronto para imprimir após consumir um serviço e carregar uma imagem.
 
 ```html
-<img onload="notifyHtmlReadyToPrint()" src="https://mp.mp/code.aspx?tpcodigo=qrcode&vcodigo=abcd">
-
+<img onload="notifyHtmlReadyToPrint()" 
+src="https://mp.mp/code.aspx?tpcodigo=qrcode&vcodigo=abcd">
 ```
 
-# Inicie a impressora HTML
+## Inicie a impressora HTML
 
 Configurado o processamento do recibo _HTML_ corretamente, para iniciar a impressora _HTML_ a função `launchPrint` deve ser chamada enviando os parâmetros abaixo.
 
