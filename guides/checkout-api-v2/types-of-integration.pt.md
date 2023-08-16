@@ -29,7 +29,7 @@ A integração com o Checkout Transparente pode ser feita utilizando procediment
 
 ------------
 
-----[mlp]---- 
+----[mpe]---- 
 | Tipo de integração  | Meios de pagamento  | Complexidade a nível frontend  | User interface (UI)  |
 | --- | --- | --- | --- | 
 | [Checkout Bricks](/developers/pt/docs/checkout-bricks/landing)  | Crédito, débito, Conta Mercado Pago e Pago Efectivo | Fácil  | Componentes com UI já definida e que pode ser personalizada caso necessário.  | 
