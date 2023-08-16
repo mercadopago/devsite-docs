@@ -33,7 +33,7 @@ Além disso, no menu localizado no lado esquerdo do painel de informações gera
 
 | Tipo de informação       | Definição                                                                                           |
 |--------------------------|-----------------------------------------------------------------------------------------------------|
-| NOTIFICAÇÃO > Webhooks   | Webhook (também conhecido como retorno de chamada web) é um método simples que permite que uma aplicação ou sistema forneça informações em tempo real sempre que ocorre um evento. Aqui, você pode configurar uma URL para a qual o estado final do 'intent' será notificado. |
+| NOTIFICAÇÃO > Webhooks   | Webhook (também conhecido como retorno de chamada web) é um método simples que permite que uma aplicação ou sistema forneça informações em tempo real sempre que ocorre um evento. Aqui, você pode configurar uma URL para a qual o estado final do 'intent' será notificado. Para obter mais informações sobre as notificações Webhook, vá para a seção [Configurar notificações](developers/pt/docs/ecosistema-presencial/payments-processing/create-and-manage-intent/point). |
 | PRODUÇÃO > Credenciais de Produção | Utilize as [credenciais](/developers/pt/docs/ecosistema-presencial/additional-content/your-integrations/credentials) de produção para receber pagamentos. Aqui, você encontrará seu **access_token** de produção. |
 
 

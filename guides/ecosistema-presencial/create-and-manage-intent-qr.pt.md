@@ -4,7 +4,7 @@ A seguir, você pode ver como criar um intent para QR, como verificar seu status
 
 ## Criar intent para QR
 
-Para criar um intent usando QR, faça uma chamada POST para o endpoint [Criar intent QR](/developers/pt/reference/instore-api/integrationsintents_qr_pos_external_id/post) substituindo `external.id` pelo valor obtido ao criar a caixa.
+Para criar um intent usando QR, faça uma chamada POST para o endpoint [Criar intent QR](/developers/pt/reference/instore-api/integrationsintents_qr_pos_external_id/post) substituindo `external.id` pelo valor com que a caixa foi criada.
 
 Aqui está um exemplo de payload para criar um intent com as três operações disponíveis para QR:
 
@@ -261,14 +261,14 @@ A seguir, apresentamos um exemplo de resposta para a consulta de um estado:
 
 Dentro do campo `status`, você poderá ver o estado do intent. Os únicos estados finais são `CANCELED`, `CLOSED` e `EXPIRED`. Para obter mais informações sobre os estados possíveis de um intent, consulte o [Glossário](/developers/pt/docs/ecosistema-presencial/glossary).
 
-Tenha em mente que, para o estado final `Closed`, você verá um nó adicional na resposta chamado `results`. Esse nó contém informações de pagamento relacionadas aos resultados da operação, ou seja, a lista de transações associadas a ela.
+Tenha em mente que, para o estado final `CLOSED`, você verá um nó adicional na resposta chamado `results`. Esse nó contém informações de pagamento relacionadas aos resultados da operação, ou seja, a lista de transações associadas a ela.
 
 Este objeto é composto da seguinte forma:
 
 | Valor | Descrição |
 |---|---|
-| `id` | É a identificação do pagamento. Com ela, você pode acessar a [Payments API](/developers/pt/reference/payments/_payments_search/get) e verificar o estado final do pagamento. |
-| `source` | Entidade à qual o `id` pertence. Irá retornar o valor `PAYMENT` quando o fluxo de pagamento for criado corretamente. Acesse a [Payments API](/developers/pt/reference/payments/_payments_search/get) para verificar o estado final do pagamento com o `id` recebido. |
+| `id` | É a identificação do pagamento. Com ela, você pode acessar a [Payments API](/developers/pt/reference/payments/_payments_id/get) e verificar o estado final do pagamento. |
+| `source` | Entidade à qual o `id` pertence. Irá retornar o valor `PAYMENT` quando o fluxo de pagamento for criado corretamente. Acesse a [Payments API](/developers/pt/reference/payments/_payments_id/get) para verificar o estado final do pagamento com o `id` recebido. |
 
 Isso acontece tanto para as operações `PURCHASE` como `CASH_OUT`.
 
@@ -276,7 +276,7 @@ Isso acontece tanto para as operações `PURCHASE` como `CASH_OUT`.
 
 Se o pagamento ainda não foi realizado, você pode cancelar um intent e torná-lo indisponível para processamento.
 
-Faça uma chamada DELETE para o endpoint [Obter informações de um intent](https://api.mercadopago.com/instore-api/integrations/v1/intents/{{intent_id}}/qr/pos/{{external.id}}), substituindo `external.id` e `intent_id` pelos valores obtidos ao criar uma caixa e a tentativa de pagamento, respectivamente.
+Faça uma chamada DELETE para o endpoint [Cancelar um intent](https://api.mercadopago.com/instore-api/integrations/v1/intents/{{intent_id}}/qr/pos/{{external.id}}), substituindo `external.id` e `intent_id` pelos valores obtidos ao criar uma caixa e a tentativa de pagamento, respectivamente.
 
 ## Configurar notificações
 
@@ -412,7 +412,9 @@ A seguir, mostramos um exemplo de notificação que você pode receber para QR q
 
 ## Devolver um pagamento
 
-Se, uma vez que o pagamento foi realizado, você precisar fazer uma devolução daquele dinheiro recebido, siga os passos abaixo: 
+Se, uma vez que o pagamento foi realizado, você precisar fazer uma devolução daquele dinheiro recebido, recomendamos [criar um reembolso](/developers/en/reference/chargebacks/_payments_id_refunds/post) fazendo uma chamada API POST.
+
+Se você quiser fazer um reembolso manual, siga os passos abaixo: 
 1. No aplicativo do Mercado Pago no seu celular, acesse a seção **Atividade**, localizada no canto inferior esquerdo.
 2. Em seguida, selecione o pagamento que deseja devolver.
 3. Clique na opção "Devolver cobrança" e confirme a devolução.

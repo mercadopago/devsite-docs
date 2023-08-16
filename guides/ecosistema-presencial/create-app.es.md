@@ -30,5 +30,5 @@ Además, en el menú ubicado del lado izquierdo del panel de información genera
 
 | Tipo de información | Definición |
 |---|---|
-| NOTIFICACIÓN > Webhooks | Webhook (también conocido como devolución de llamada web) es un método simple que facilita que una aplicación o sistema proporcione información en tiempo real cada vez que ocurre un evento. Aquí podrás configurar una URL a la cual será notificado el estado final de los `intent`. |
+| NOTIFICACIÓN > Webhooks | Webhook (también conocido como devolución de llamada web) es un método simple que facilita que una aplicación o sistema proporcione información en tiempo real cada vez que ocurre un evento. Aquí podrás configurar una URL a la cual será notificado el estado final de los `intent`. Para obtener más información sobre notificaciones Webhooks, dirígete a la sección [Configurar notificaciones](developers/es/docs/ecosistema-presencial/payments-processing/create-and-manage-intent/point). |
 | PRODUCCIÓN > Credenciales de producción | Utiliza las [credenciales](/developers/es/docs/ecosistema-presencial/additional-content/your-integrations/credentials) de producción para recibir pagos. Aquí encontrarás tu `access_token` productivo. |

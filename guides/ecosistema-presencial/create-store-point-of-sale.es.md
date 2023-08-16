@@ -2,7 +2,7 @@
 
 Para crear un local, primero deberás realizar una llamada POST al endpoint [Crear sucursal](/developers/es/reference/stores/_users_user_id_stores/post).
 
-Ten en cuenta que deberás reemplazar los valores `user_id` y `YOUR_ACCESS_TOKEN` con los obtenidos al crear tu aplicación. A su vez, deberás modificar las variables `name’, ‘business_hours` y `location` de acuerdo al negocio que estás creando.
+Ten en cuenta que deberás reemplazar los valores `user_id` y `YOUR_ACCESS_TOKEN` con los obtenidos al crear tu aplicación. A su vez, deberás modificar las variables `name`, `business_hours` y `location` de acuerdo al negocio que estás creando.
 
 > NOTE
 >

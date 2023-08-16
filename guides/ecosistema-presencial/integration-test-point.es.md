@@ -42,8 +42,3 @@ El siguiente flujo te permitirá realizar pruebas para tu aplicación con Mercad
 
 Recuerda que también puedes probar el flujo de [devolución de un pago](/developers/es/docs/ecosistema-presencial/payments-processing/create-and-manage-intent/point) desde tu dispositivo Point para hacer un reintegro si lo deseas.
 
-> WARNING
->
-> Importante
->
-> Una vez que hayas finalizado y probado tu integración, y ya estés listo para pasar a producción, asegúrate de activar las [credenciales de producción](/developers/es/docs/ecosistema-presencial/additional-content/your-integrations/credentials) y reemplazar las credenciales de prueba si es necesario.

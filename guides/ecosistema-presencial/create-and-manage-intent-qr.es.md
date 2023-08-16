@@ -4,7 +4,7 @@ A continuación, puedes ver cómo crear un intent para QR, cómo consultar su es
 
 ## Crear intent para QR
 
-Para crear un intent utilizando QR, realiza una llamada POST al endpoint [Crear intent QR](/developers/es/reference/instore-api/integrationsintents_qr_pos_external_id/post) reemplazando `external.id` por el valor obtenido al crear la caja.
+Para crear un intent utilizando QR, realiza una llamada POST al endpoint [Crear intent QR](/developers/es/reference/instore-api/integrationsintents_qr_pos_external_id/post) reemplazando `external.id` por el valor con el que fue creada la caja.
 
 A continuación, te mostramos un ejemplo de payload para crear un intent de las tres operaciones disponibles para QR:
 
@@ -259,14 +259,14 @@ A continuación, te mostramos un ejemplo de respuesta a la consulta de un estado
 Dentro del campo `status` podrás ver el estado del intent. Los únicos estados finales son `CANCELED`, `CLOSED` y `EXPIRED`.  
 Para obtener más información sobre los estados posibles de un intent, dirígete al [Glosario](/developers/es/docs/ecosistema-presencial/glossary).
 
-Ten en cuenta que, para el estado final `Closed`,  verás en la respuesta el nodo adicional `results`. Este nodo contiene la información del pago relacionada a los resultados de la operación; es decir, el listado de transacciones asociadas a la misma. 
+Ten en cuenta que, para el estado final `CLOSED`,  verás en la respuesta el nodo adicional `results`. Este nodo contiene la información del pago relacionada a los resultados de la operación; es decir, el listado de transacciones asociadas a la misma. 
 
 Este objeto se compone de la siguiente manera: 
 
 | Valor | Descripción |
 |---|---|
-| `id` | Es la identificación del pago. Con ella, puedes dirigirte a [Payments API](/developers/es/reference/payments/_payments_search/get) y consultar el estado final del pago. |
-| `source` | Entidad a la que pertenece el `id`.  Arrojará el valor `PAYMENT` cuando el flujo del pago se haya creado correctamente. Dirígete a [Payments API](/developers/es/reference/payments/_payments_search/get) para verificar el estado final del pago con el `id` recibido. |
+| `id` | Es la identificación del pago. Con ella, puedes dirigirte a [Payments API](/developers/es/reference/payments/_payments_id/get) y consultar el estado final del pago. |
+| `source` | Entidad a la que pertenece el `id`.  Arrojará el valor `PAYMENT` cuando el flujo del pago se haya creado correctamente. Dirígete a [Payments API](/developers/es/reference/payments/_payments_id/get) para verificar el estado final del pago con el `id` recibido. |
 
 Esto ocurre tanto para las operaciones `PURCHASE` como `CASH_OUT`. 
 
@@ -274,7 +274,7 @@ Esto ocurre tanto para las operaciones `PURCHASE` como `CASH_OUT`.
 
 Si todavía no se ha realizado el pago, puedes cancelar un intent y hacer que ya no esté disponible para su procesamiento. 
 
-Realiza una llamada DELETE al endpoint [Obtener información de un intent](/developers/es/reference/instore-api/integrationsintents_intent_id_qr/delete), reemplazando `external.id` e `intent_id` por los valores obtenidos al crear una caja y el intento de pago, respectivamente.
+Realiza una llamada DELETE al endpoint [Cancelar un intent](/developers/es/reference/instore-api/integrationsintents_intent_id_qr/delete), reemplazando `external.id` e `intent_id` por los valores obtenidos al crear una caja y el intento de pago, respectivamente.
 
 ## Configurar notificaciones
 
@@ -410,7 +410,9 @@ A continuación, te mostramos un ejemplo de notificación que puedes recibir par
 
 ## Devolver un pago
 
-Si, una vez que el pago fue realizado, necesitas realizar una devolución de ese dinero percibido, sigue los pasos a continuación:
+Si, una vez que el pago fue realizado, necesitas realizar una devolución de ese dinero percibido, recomendamos [crear un reembolso](/developers/es/reference/chargebacks/_payments_id_refunds/post) realizando una llamada POST a la API. 
+
+Si, en cambio, quieres hacer un reembolso manual, sigue los pasos a continuación:
 
 1. En la App de Mercado Pago en tu móvil, accede a la sección **Actividad**, ubicada en la esquina inferior izquierda.
 2. Allí, selecciona el pago que deseas devolver.

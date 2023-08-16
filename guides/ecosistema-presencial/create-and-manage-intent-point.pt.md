@@ -11,12 +11,12 @@ Para criar um intent em seu dispositivo Point, você tem duas opções:
 Você pode escolher a opção que melhor se adapta às suas necessidades. O resultado será o mesmo, e você terá criado um intent para o dispositivo Point escolhido.
 
 ----[mlb]----
-> Tenha em mente que, para o campo `amount`, o valor mínimo permitido é 1,00, e o máximo é 70.000,00.
+> Tenha em mente que, para o campo `amount`, o valor mínimo permitido para dispositivos Point Pro 2 é 1,00, e o máximo é 70.000,00.
 
 ------------
 
 ----[mla]----
-> Tenha em mente que, para o campo `amount`, o valor mínimo permitido é 5,00, e o máximo é 4.000.000,00.
+> Tenha em mente que, para o campo `amount`, o valor mínimo permitido para dispositivos POS e SMART é 5,00, e o máximo é 4.000.000,00.
 
 ------------
 
@@ -57,30 +57,30 @@ A seguir, mostramos um exemplo de resposta à consulta de um estado:
 Dentro do campo `status`, você poderá ver o estado do intent. Os únicos estados finais são `CANCELED`, `CLOSED`, `EXPIRED`, `ERROR` e `CONFIRMATION_REQUIRED`.
 Para obter mais informações sobre os estados possíveis de um intent, consulte o [Glossário](/developers/pt/docs/ecosistema-presencial/glossary).
 
-Tenha em mente que, para o estado final `Closed`, você verá na resposta o nó adicional `results`. Este nó contém a informação do pagamento relacionada aos resultados da operação; ou seja, o listado de transações associadas a ela.
+Tenha em mente que, para o estado final `CLOSED`, você verá na resposta o nó adicional `results`. Este nó contém a informação do pagamento relacionada aos resultados da operação; ou seja, o listado de transações associadas a ela.
 
 Este objeto se compõe da seguinte maneira:
 
 | Valor | Descrição |
 |---|---|
-| `id` | É a identificação do pagamento. Com ela, você pode se dirigir à [Payments API](/developers/pt/reference/payments/_payments_search/get) e consultar o estado final do pagamento. |
-| `source` | Entidade à qual pertence o `id`. Ele retornará o valor `PAYMENT` quando o fluxo do pagamento tiver sido criado corretamente. Acesse a [Payments API](/developers/pt/reference/payments/_payments_search/get) para verificar o estado final do pagamento com o `id` recebido. |
+| `id` | É a identificação do pagamento. Com ela, você pode se dirigir à [Payments API](/developers/pt/reference/payments/_payments_id/get) e consultar o estado final do pagamento. |
+| `source` | Entidade à qual pertence o `id`. Ele retornará o valor `PAYMENT` quando o fluxo do pagamento tiver sido criado corretamente. Acesse a [Payments API](/developers/pt/reference/payments/_payments_id/get) para verificar o estado final do pagamento com o `id` recebido. |
 
 ## Cancelar um intent em dispositivos Point
 
 Se o pagamento ainda não foi realizado e o intent não foi carregado no dispositivo, você pode cancelar uma intenção de pagamento e fazer com que essa tentativa não esteja mais disponível para processamento. 
-Realiza uma chamada DELETE ao endpoint [Obter informações de um intent](/developers/pt/reference/instore-api/integrationsintents_intent_id_point/delete), reemplazando `external.id` e `intent_id` por los valores obtenidos al criar una caja e o intento de pagamento, respectivamente.
+Realiza uma chamada DELETE ao endpoint [Cancelar um intent](/developers/pt/reference/instore-api/integrationsintents_intent_id_point/delete), reemplazando `external.id` e `intent_id` por los valores obtenidos al criar una caja e o intento de pagamento, respectivamente.
 
 > WARNING
 >
 > Importante
 >
-> Tenha em conta que só é permitida a cancelação de um intent por este método se seu estado for `aberto`. Caso este não seja o estado atual do intent que você está querendo cancelar e, em vez disso, seja `no_terminal`, você deverá fazê-lo a partir do dispositivo Point. Para mais informações sobre os possíveis estados de um intent, consulte o [Glossário](/developers/pt/docs/ecosistema-presencial/glossary).
+> Tenha em conta que só é permitida a cancelação de um intent por este método se seu estado for `OPENED`. Caso este não seja o estado atual do intent que você está querendo cancelar e, em vez disso, seja `ON_TERMINAL`, você deverá fazê-lo a partir do dispositivo Point. Para mais informações sobre os possíveis estados de um intent, consulte o [Glossário](/developers/pt/docs/ecosistema-presencial/glossary).
 
 
 ## Configurar notificações
 
-Além disso, recomendamos **configurar suas notificações de Webhook**. Isso facilitará o recebimento de informações em tempo real sempre que uma intenção atingir um estado final.
+Recomendamos **configurar suas notificações de Webhook**. Isso facilitará o recebimento de informações em tempo real sempre que uma intenção atingir um estado final.
 
 Para configurar suas notificações, siga as instruções fornecidas na [documentação de notificações de Webhooks](developers/pt/docs/ecosistema-presencial/additional-content/your-integrations/notifications/webhooks).
 
@@ -162,7 +162,9 @@ Aqui está um exemplo de uma notificação que você pode receber para um dispos
 
 ## Devolver um pagamento
 
-Se, uma vez que o pagamento foi realizado, você precisar fazer a devolução desse dinheiro recebido, siga os passos abaixo:
+Se, uma vez que o pagamento foi realizado, você precisar fazer uma devolução daquele dinheiro recebido, recomendamos [criar um reembolso](/developers/en/reference/chargebacks/_payments_id_refunds/post) fazendo uma chamada API POST.
+
+Se você quiser fazer um reembolso manual, siga os passos abaixo: 
 1. No seu dispositivo Point, pressione o botão **Menu**.
 2. Vá para a opção "Últimos pagamentos" e selecione o pagamento que deseja devolver.
 3. Pressione a opção "Devolver cobrança" e confirme essa devolução.

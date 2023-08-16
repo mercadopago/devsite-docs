@@ -4,7 +4,7 @@ Below, you can see how to create an intent for QR, how to check its status, and 
 
 ## Create intent for QR
 
-To create an intent using QR, make a POST call to the endpoint [Create QR intent](developers/en/reference/instore-api/integrations/v1/intents/qr/pos) replacing `external.id` with the value obtained when creating the box.
+To create an intent using QR, make a POST call to the endpoint [Create QR intent](developers/en/reference/instore-api/integrations/v1/intents/qr/pos) replacing `external.id` for the value with which the point of sale was created.
 
 Here is an example payload for creating an intent with the three operations available for QR:
 
@@ -262,14 +262,14 @@ Below is an example response when querying the status:
 
 Within the `status` field, you can see the state of the intent. The only final states are `CANCELED`, `CLOSED`, and `EXPIRED`. For more information on the possible states of an intent, refer to the [Glossary](/developers/en/docs/ecosistema-presencial/glossary).
 
-Note that for the final state `Closed`, you will see an additional `results` node in the response. This node contains payment information related to the operation results, namely, the list of transactions associated with it.
+Note that for the final state `CLOSED`, you will see an additional `results` node in the response. This node contains payment information related to the operation results, namely, the list of transactions associated with it.
 
 This object is structured as follows:
 
 | Value | Description |
 |---|---|
-| `id` | Payment identification. You can use it to go to the [Payments API](/developers/en/reference/payments/_payments_search/get) and check the final status of the payment. |
-| `source` | Entity to which the `id` belongs. It will return `PAYMENT` when the payment flow has been successfully created. Go to [Payments API](/developers/en/reference/payments/_payments_search/get) to verify the final status of the payment with the received `id`. |
+| `id` | Payment identification. You can use it to go to the [Payments API](/developers/en/reference/payments/_payments_id/get) and check the final status of the payment. |
+| `source` | Entity to which the `id` belongs. It will return `PAYMENT` when the payment flow has been successfully created. Go to [Payments API](/developers/en/reference/payments/_payments_id/get) to verify the final status of the payment with the received `id`. |
 
 This applies to both `PURCHASE` and `CASH_OUT` operations.
 
@@ -278,7 +278,7 @@ This applies to both `PURCHASE` and `CASH_OUT` operations.
 
 If the payment has not yet been made, you can cancel an intent and make it no longer available for processing.
 
-Make a DELETE call to the endpoint [Get intent information](/developers/es/reference/instore-api/integrationsintents_intent_id_qr/delete), replacing `external.id` and `intent_id` with the values obtained when creating a box and the payment intent, respectively.
+Make a DELETE call to the endpoint [Cancel an intent](/developers/es/reference/instore-api/integrationsintents_intent_id_qr/delete), replacing `external.id` and `intent_id` with the values obtained when creating a box and the payment intent, respectively.
 
 
 ## Configure notifications
@@ -415,7 +415,10 @@ Below is an example of a notification you can receive for QR when an intent reac
 
 ## Refunding a Payment 
 
-If, once the payment has been made, you need to refund that received money, follow the steps below: 
+If, once the payment has been made, you need to refund that received money, we recomend to [Create a refund](/developers/en/reference/chargebacks/_payments_id_refunds/post) by making a POST request to our API.  
+
+If you want to refund the money manually, you can follow the steps below: 
+
 1. In the Mercado Pago app on your mobile device, access the **Activity** section, located in the bottom left corner. 
 2. There, select the payment you wish to refund. 
 3. Press the "Refund payment" option, and confirm the refund.

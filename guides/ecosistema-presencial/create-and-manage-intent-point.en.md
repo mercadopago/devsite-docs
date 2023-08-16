@@ -12,12 +12,12 @@ You can choose the option that best suits your needs. The result will be the sam
 
 
 ----[mlb]----
-> Keep in mind that for the `amount` field, the minimum allowed amount is 1.00, and the maximum is 70000.00.
+> Keep in mind that for the `amount` field, the minimum allowed amount for Point Pro 2 devices is 1.00, and the maximum is 70000.00.
 
 ------------
 
 ----[mla]----
-> Keep in mind that for the `amount` field, the minimum allowed amount is 5.00, and the maximum is 4000000.00.
+> Keep in mind that for the `amount` field, the minimum allowed amount for POS and SMART devices is 5.00, and the maximum is 4000000.00.
 
 ------------
 
@@ -58,29 +58,29 @@ Here's an example of a response when querying the status:
 Within the `status` field, you can see the status of the intent. The only final states are `CANCELED`, `CLOSED`, `EXPIRED`, `ERROR`, and `CONFIRMATION_REQUIRED`.
 For more information about the possible states of an intent, refer to the [Glossary](/developers/en/docs/ecosistema-presencial/glossary).
 
-Please note that for the final state `Closed`, you will see an additional `results` node in the response. This node contains payment information related to the results of the operation; that is, the list of transactions associated with it.
+Please note that for the final state `CLOSED`, you will see an additional `results` node in the response. This node contains payment information related to the results of the operation; that is, the list of transactions associated with it.
 
 This object is composed as follows:
 
 | Value | Description |
 |---|---|
-| `id` | It is the payment ID. With it, you can go to the [Payments API](/developers/en/reference/payments/_payments_search/get) and check the final status of the payment. |
-| `source` | Entity to which the `id` belongs. It will return the value `PAYMENT` when the payment flow has been created correctly. Go to the [Payments API](/developers/en/reference/payments/_payments_search/get) to check the final status of the payment with the received `id`. |
+| `id` | It is the payment ID. With it, you can go to the [Payments API](/developers/en/reference/payments/_payments_id/get) and check the final status of the payment. |
+| `source` | Entity to which the `id` belongs. It will return the value `PAYMENT` when the payment flow has been created correctly. Go to the [Payments API](/developers/en/reference/payments/_payments_id/get) to check the final status of the payment with the received `id`. |
 
 ## Cancel an intent on Point devices
 
 If the payment has not been made yet and you haven't loaded the intent on the device, you can cancel a payment intent and make that attempt no longer available for processing. 
-Make a DELETE call to the endpoint [Get information about an intent](/developpers/en/reference/instore-api/), replacing `external.id` and `intent_id` with the values obtained when creating a cash register and the payment intent, respectively.
+Make a DELETE call to the endpoint [Cancel an intent](/developpers/en/reference/instore-api/), replacing `external.id` and `intent_id` with the values obtained when creating a cash register and the payment intent, respectively.
 
 > WARNING
 >
 > Important
 >
-> Please note that you can only cancel an intent using this method if its status is `opened`. If this is not the current state of the intent you are trying to cancel and instead it is `on_terminal`, you must do it from the Point device. For more information about the possible states of an intent, refer to the [Glossary](/developers/en/docs/ecosistema-presencial/glossary).
+> Please note that you can only cancel an intent using this method if its status is `OPENED`. If this is not the current state of the intent you are trying to cancel and instead it is `ON_TERMINAL`, you must do it from the Point device. For more information about the possible states of an intent, refer to the [Glossary](/developers/en/docs/ecosistema-presencial/glossary).
 
 ## Configure notifications
 
-Additionally, we recommend **setting up your Webhook notifications**. These will facilitate receiving real-time information every time an intent reaches a final state.
+We recommend **setting up your Webhook notifications**. These will facilitate receiving real-time information every time an intent reaches a final state.
 
 To configure your notifications, follow the instructions provided in the [Webhooks notifications documentation](/developers/en/docs/ecosistema-presencial/additional-content/your-integrations/notifications/webhooks).
 
@@ -162,7 +162,9 @@ Here's an example of a notification you can receive for a Point device when an i
 
 ## Refunding a payment 
 
-If, once the payment has been made, you need to refund that received money, follow the steps below: 
+If, once the payment has been made, you need to refund that received money, we recomend to [Create a refund](/developers/en/reference/chargebacks/_payments_id_refunds/post) by making a POST request to our API.  
+
+If you want to refund the money manually, you can follow the steps below: 
 1. On your Point device, press the **Menu** button. 
 2. Go to the "Last payments" option and select the payment you want to refund. 
 3. Click on "Refund charge" option, and confirm the refund.

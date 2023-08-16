@@ -40,8 +40,4 @@ Antes de ir para a produção, recomendamos testar o correto funcionamento da su
 
 Lembre-se de que você também pode testar o fluxo de [reembolso de um pagamento](/developers/pt/docs/ecosistema-presencial/payments-processing/create-and-manage-intent/point) a partir do seu dispositivo Point para fazer um reembolso, se desejar.
 
-> AVISO
->
-> Importante
->
-> Uma vez que você tenha finalizado e testado sua integração, e esteja pronto para ir para produção, certifique-se de ativar as [credenciais de produção](/developers/pt/docs/ecosistema-presencial/additional-content/your-integrations/credentials) e substituir as credenciais de teste, se necessário.
+

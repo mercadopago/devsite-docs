@@ -8,17 +8,17 @@ O seguinte fluxo permitirá que você faça testes para sua aplicação com o Me
 >
 > Nota
 >
-> Os testes de integração são realizados com usuários e métodos de pagamento de teste. Dados e dinheiro reais não são usados. Siga as instruções abaixo para saber como configurá-los.
+> Os testes de integração são realizados com usuários e métodos de pagamento de teste. Dados e dinheiro reais não são usados. Lembre-se de que sempre que usar um usuário de teste, você deve usar suas credenciais de produção. Siga as instruções abaixo para saber como configurá-los.
 
 ### Teste de integração
 
 1. Crie um usuário de teste para simular o vendedor (*seller*) seguindo as instruções da [documentação de Testes](/developers/pt/docs/ecosistema-presencial/additional-content/your-integrations/test/accounts).
-2. Faça login no **site do Mercado Pago** com as credenciais do usuário de teste que você criou.
-3. [Crie uma loja e uma caixa](/developers/pt/docs/ecosistema-presencial/integration-configuration/create-store-point-of-sale) seguindo as instruções para configurar sua integração. Lembre-se de utilizar as credenciais do usuário de teste do vendedor.
+2. Faça login no **site do Mercado Pago** com as credenciais de produção do usuário de teste que você criou.
+3. [Crie uma loja e uma caixa](/developers/pt/docs/ecosistema-presencial/integration-configuration/create-store-point-of-sale) seguindo as instruções para configurar sua integração. Lembre-se de utilizar as credenciais de produção do usuário de teste do vendedor.
 
 ### Teste o processamento de pagamentos
 
-1. Utilize as credenciais do usuário de teste do vendedor para [criar um intent para código QR](/developers/pt/docs/ecosistema-presencial/payments-processing/create-and-manage-intent/qr), conforme indicado na documentação.
+1. Utilize as credenciais de produção do usuário de teste do vendedor para [criar um intent para código QR](/developers/pt/docs/ecosistema-presencial/payments-processing/create-and-manage-intent/qr), conforme indicado na documentação.
 2. Gere um pagamento levando em consideração:
    * Se você utilizar o **campo `qr_payment_mode` = `STATIC`** ou não definir nenhum qr_payment_mode ao criar o intent, acesse o site do Mercado Pago. Lá, vá para **Seu negócio > Locais e caixas**, e selecione a loja e a caixa associadas. Em seguida, clique no símbolo do QR ao lado do nome da caixa e selecione **Imprimir QR**. Este código QR estará associado ao intent que você criou na etapa anterior.
 

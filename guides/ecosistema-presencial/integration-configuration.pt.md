@@ -8,3 +8,8 @@ Para começar a integrar no ecossistema presencial, é necessário configurar su
 3. Se você deseja integrar com o Point, é necessário [fazer login em um dispositivo Point](/developers/pt/docs/ecosistema-presencial/integration-configuration/signin-point).
 4. Se já fez o login, é preciso [ativar o modo PDV no dispositivo](/developers/pt/docs/ecosistema-presencial/integration-configuration/enable-pdv) para concluir a integração com o Point.
 
+> WARNING
+>
+> Importante
+>
+> Visite a [documentação de usuários e cartões de teste](/developers/pt/docs/ecosistema-presencial/additional-content/your-integrations/test/accounts) para saber como configurá-los antes de ir para a produção.

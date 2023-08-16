@@ -38,8 +38,4 @@ Before going into production, we recommend testing the proper functioning of you
 
 Remember that you can also test the [payment refund flow](/developers/en/docs/ecosistema-presencial/payments-processing/create-and-manage-intent/point) from your Point device to issue a refund if desired.
 
-> WARNING
->
-> Important
->
-> Once you have finished testing your integration and are ready to go into production, be sure to activate the [production credentials](/developers/en/docs/ecosistema-presencial/additional-content/your-integrations/credentials) and replace any test credentials if necessary.
+

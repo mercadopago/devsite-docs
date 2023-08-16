@@ -41,7 +41,7 @@ paths:
                     eng: Define if the customer can insert the amount to be paid.
                     spa: Determina si el cliente puede insertar el monto a pagar
                     por: Determine se o cliente pode inserir o valor a ser pago
-                  example: false
+                  example: true
                 store_id:
                   type: string
                   description: Store identifier to which the point of sale belongs.
