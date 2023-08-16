@@ -4,7 +4,7 @@ A seguir, você pode ver como criar um intent para QR, como verificar seu status
 
 ## Criar intent para QR
 
-Para criar um intent usando QR, faça uma chamada POST para o endpoint ----[mla]----[Criar intent QR](developers/pt/reference/instore_api_mla/_instore-api_integrationsintents_qr_pos_external_id/post)------------ ----[mlb]----[Criar intent QR](developers/pt/reference/instore_api_mlb/_instore-api_integrationsintents_qr_pos_external_id/post)------------ substituindo `external.id` pelo valor com que a caixa foi criada.
+Para criar um intent usando QR, faça uma chamada POST para o endpoint ----[mla]----[Criar intent QR](/developers/pt/reference/instore_api_mla/_instore-api_integrationsintents_qr_pos_external_id/post)------------ ----[mlb]----[Criar intent QR](/developers/pt/reference/instore_api_mlb/_instore-api_integrationsintents_qr_pos_external_id/post)------------ substituindo `external.id` pelo valor com que a caixa foi criada.
 
 Aqui está um exemplo de payload para criar um intent com as três operações disponíveis para QR:
 
