@@ -5,8 +5,8 @@ A seguir, você pode ver como criar um intent em dispositivos Point, como consul
 ## Criar intent em dispositivos Point
 
 Para criar um intent em seu dispositivo Point, você tem duas opções:
-* Você pode fazer uma chamada POST ao endpoint [Criar intent para um dispositivo associado a uma caixa](/developers/pt/reference/instore-api/integrationsintents_point_pos_external_id/post), substituindo `external.id` pelo valor escolhido ao criar a caixa.
-* Ou então, você pode fazer uma chamada POST ao endpoint [Criar intent para um dispositivo PDV](/developers/pt/reference/instore-api/integrationsintents_point_device_id/post), substituindo `device.id` pelo valor obtido ao consultar a lista de dispositivos.
+* Você pode fazer uma chamada POST ao endpoint ----[mla]----[Criar intent para um dispositivo associado a uma caixa](/developers/pt/reference/instore_api_mla/_instore-api_integrationsintents_point_pos_external_id/post)------------ ----[mlb]----[Criar intent para um dispositivo associado a uma caixa](/developers/pt/reference/instore_api_mlb/_instore-api_integrationsintents_point_pos_external_id/post)------------, substituindo `external.id` pelo valor escolhido ao criar a caixa.
+* Ou então, você pode fazer uma chamada POST ao endpoint ----[mla]----[Criar intent para um dispositivo PDV](/developers/pt/reference/instore_api_mla/_instore-api_integrationsintents_point_device_id/post)------------ ----[mlb]----[Criar intent para um dispositivo PDV](//developers/pt/reference/instore_api_mlb/_instore-api_integrationsintents_point_device_id/post)------------, substituindo `device.id` pelo valor obtido ao consultar a lista de dispositivos.
 
 Você pode escolher a opção que melhor se adapta às suas necessidades. O resultado será o mesmo, e você terá criado um intent para o dispositivo Point escolhido.
 
@@ -22,7 +22,7 @@ Você pode escolher a opção que melhor se adapta às suas necessidades. O resu
 
 ## Consultar o estado de um intent em dispositivos Point
 
-Para conhecer o estado atual de um intent, faça uma chamada GET ao endpoint [Obter informações de um intent](/developers/pt-br/reference/instore-api/), substituindo `intent_id` pelo valor obtido nesse campo ao criá-lo.
+Para conhecer o estado atual de um intent, faça uma chamada GET ao endpoint ----[mla]----[Obter informações de um intent](/developers/pt/reference/instore_api_mla/_instore-api_integrationsintents_intent_id_point/get)------------ ----[mlb]----[Obter informações de um intent](/developers/pt/reference/instore_api_mlb/_instore-api_integrationsintents_intent_id_point/get)------------, substituindo `intent_id` pelo valor obtido nesse campo ao criá-lo.
 
 A seguir, mostramos um exemplo de resposta à consulta de um estado:
 
@@ -69,7 +69,7 @@ Este objeto se compõe da seguinte maneira:
 ## Cancelar um intent em dispositivos Point
 
 Se o pagamento ainda não foi realizado e o intent não foi carregado no dispositivo, você pode cancelar uma intenção de pagamento e fazer com que essa tentativa não esteja mais disponível para processamento. 
-Realiza uma chamada DELETE ao endpoint [Cancelar um intent](/developers/pt/reference/instore-api/integrationsintents_intent_id_point/delete), reemplazando `external.id` e `intent_id` por los valores obtenidos al criar una caja e o intento de pagamento, respectivamente.
+Realiza uma chamada DELETE ao endpoint ----[mla]----[Cancelar um intent](//developpers/pt/reference/instore_api_mla/_instore-api_integrationsintents_intent_id_point/delete)------------ ----[mlb]----[Cancelar um intent](/developpers/pt/reference/instore_api_mlb/_instore-api_integrationsintents_intent_id_point/delete)------------, reemplazando `external.id` e `intent_id` por los valores obtenidos al criar una caja e o intento de pagamento, respectivamente.
 
 > WARNING
 >
@@ -162,7 +162,7 @@ Aqui está um exemplo de uma notificação que você pode receber para um dispos
 
 ## Devolver um pagamento
 
-Se, uma vez que o pagamento foi realizado, você precisar fazer uma devolução daquele dinheiro recebido, recomendamos [criar um reembolso](/developers/en/reference/chargebacks/_payments_id_refunds/post) fazendo uma chamada API POST.
+Se, uma vez que o pagamento foi realizado, você precisar fazer uma devolução daquele dinheiro recebido, recomendamos [criar um reembolso](/developers/pt/reference/chargebacks/_payments_id_refunds/post) fazendo uma chamada API POST.
 
 Se você quiser fazer um reembolso manual, siga os passos abaixo: 
 1. No seu dispositivo Point, pressione o botão **Menu**.

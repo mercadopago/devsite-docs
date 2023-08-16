@@ -5,8 +5,8 @@ Below, you can see how to create an intent on Point devices, how to check its st
 ## Create intent on Point devices
 
 To create an intent on your Point device, you have two options:
- * You can make a POST call to the endpoint [Create intent for a device associated with a point of sale](/developers/en/reference/instore-api/), replacing `external.id` with the value chosen when creating the point of sale.
- * Alternatively, you can make a POST call to the endpoint [Create intent for a POS device](/developers/en/reference/instore-api/), replacing `device.id` with the value obtained when querying the list of devices.
+ * You can make a POST call to the endpoint  ----[mla]---- [Create intent for a device associated with a point of sale](/developers/en/reference/instore_api_mla/_instore-api_integrationsintents_point_pos_external_id/post)------------ ----[mlb]---- [Create intent for a device associated with a point of sale](/developers/en/reference/instore_api_mlb/_instore-api_integrationsintents_point_pos_external_id/post)------------, replacing `external.id` with the value chosen when creating the point of sale.
+ * Alternatively, you can make a POST call to the endpoint ----[mla]---- [Create intent for a POS device](/developers/en/reference/instore_api_mla/_instore-api_integrationsintents_point_device_id/post)------------ ----[mlb]----[Create intent for a POS device](/developers/en/reference/instore_api_mlb/_instore-api_integrationsintents_point_device_id/post)------------, replacing `device.id` with the value obtained when querying the list of devices.
 
 You can choose the option that best suits your needs. The result will be the same, and you will have created an intent for the chosen Point device.
 
@@ -23,7 +23,7 @@ You can choose the option that best suits your needs. The result will be the sam
 
 ## Check the status of an intent on Point devices
 
-To know the current status of an intent, make a GET call to the endpoint [Get information about an intent](/developers/en/reference/instore-api/), replacing `intent_id` with the value obtained in that field when creating it.
+To know the current status of an intent, make a GET call to the endpoint ----[mla]----[Get information about an intent](/developers/en/reference/instore_api_mla/_instore-api_integrationsintents_intent_id_point/get)------------ ----[mlb]----[Get information about an intent](/developers/en/reference/instore_api_mlb/_instore-api_integrationsintents_intent_id_point/get)------------, replacing `intent_id` with the value obtained in that field when creating it.
 
 Here's an example of a response when querying the status:
 
@@ -70,7 +70,7 @@ This object is composed as follows:
 ## Cancel an intent on Point devices
 
 If the payment has not been made yet and you haven't loaded the intent on the device, you can cancel a payment intent and make that attempt no longer available for processing. 
-Make a DELETE call to the endpoint [Cancel an intent](/developpers/en/reference/instore-api/), replacing `external.id` and `intent_id` with the values obtained when creating a cash register and the payment intent, respectively.
+Make a DELETE call to the endpoint ----[mla]----[Cancel an intent](/developpers/en/reference/instore_api_mla/_instore-api_integrationsintents_intent_id_point/delete)------------ ----[mlb]----[Cancel an intent](/developpers/en/reference/instore_api_mlb/_instore-api_integrationsintents_intent_id_point/delete)------------, replacing `external.id` and `intent_id` with the values obtained when creating a cash register and the payment intent, respectively.
 
 > WARNING
 >

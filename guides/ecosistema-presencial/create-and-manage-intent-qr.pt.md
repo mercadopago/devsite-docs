@@ -4,7 +4,7 @@ A seguir, você pode ver como criar um intent para QR, como verificar seu status
 
 ## Criar intent para QR
 
-Para criar um intent usando QR, faça uma chamada POST para o endpoint [Criar intent QR](/developers/pt/reference/instore-api/integrationsintents_qr_pos_external_id/post) substituindo `external.id` pelo valor com que a caixa foi criada.
+Para criar um intent usando QR, faça uma chamada POST para o endpoint ----[mla]----[Criar intent QR](developers/pt/reference/instore_api_mla/_instore-api_integrationsintents_qr_pos_external_id/post)------------ ----[mlb]----[Criar intent QR](developers/pt/reference/instore_api_mlb/_instore-api_integrationsintents_qr_pos_external_id/post)------------ substituindo `external.id` pelo valor com que a caixa foi criada.
 
 Aqui está um exemplo de payload para criar um intent com as três operações disponíveis para QR:
 
@@ -215,7 +215,7 @@ Este payload segue as regras individuais apresentadas anteriormente para os inte
 
 ## Consultar o estado de um intent para QR
 
-Para conhecer o estado atual de um intent, faça uma chamada GET ao endpoint [Obter informações de um intent](/developers/pt/reference/instore-api/integrationsintents_intent_id_qr/get), substituindo `intent_id` pelo valor obtido nesse campo no momento da criação.
+Para conhecer o estado atual de um intent, faça uma chamada GET ao endpoint ----[mla]----[Obter informações de um intent](/developers/pt/reference/instore_api_mla/_instore-api_integrationsintents_intent_id_qr/get)------------ ----[mlb]----[Obter informações de um intent](/developers/pt/reference/instore_api_mlb/_instore-api_integrationsintents_intent_id_qr/get)------------, substituindo `intent_id` pelo valor obtido nesse campo no momento da criação.
 
 A seguir, apresentamos um exemplo de resposta para a consulta de um estado:
 
@@ -276,7 +276,7 @@ Isso acontece tanto para as operações `PURCHASE` como `CASH_OUT`.
 
 Se o pagamento ainda não foi realizado, você pode cancelar um intent e torná-lo indisponível para processamento.
 
-Faça uma chamada DELETE para o endpoint [Cancelar um intent](https://api.mercadopago.com/instore-api/integrations/v1/intents/{{intent_id}}/qr/pos/{{external.id}}), substituindo `external.id` e `intent_id` pelos valores obtidos ao criar uma caixa e a tentativa de pagamento, respectivamente.
+Faça uma chamada DELETE para o endpoint ----[mla]----[Cancelar um intent](/developers/pt/reference/instore_api_mla/_instore-api_integrationsintents_intent_id_qr/delete)------------ ----[mlb]----[Cancelar um intent](/developers/pt/reference/instore_api_mlb/_instore-api_integrationsintents_intent_id_qr/delete)------------, substituindo `external.id` e `intent_id` pelos valores obtidos ao criar uma caixa e a tentativa de pagamento, respectivamente.
 
 ## Configurar notificações
 
@@ -412,7 +412,7 @@ A seguir, mostramos um exemplo de notificação que você pode receber para QR q
 
 ## Devolver um pagamento
 
-Se, uma vez que o pagamento foi realizado, você precisar fazer uma devolução daquele dinheiro recebido, recomendamos [criar um reembolso](/developers/en/reference/chargebacks/_payments_id_refunds/post) fazendo uma chamada API POST.
+Se, uma vez que o pagamento foi realizado, você precisar fazer uma devolução daquele dinheiro recebido, recomendamos [criar um reembolso](/developers/pt/reference/chargebacks/_payments_id_refunds/post) fazendo uma chamada API POST.
 
 Se você quiser fazer um reembolso manual, siga os passos abaixo: 
 1. No aplicativo do Mercado Pago no seu celular, acesse a seção **Atividade**, localizada no canto inferior esquerdo.
