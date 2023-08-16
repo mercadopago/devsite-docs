@@ -630,6 +630,11 @@ paths:
                               spa: Identificador de la cuenta en Mercado Pago que se utilizará para realizar los pagos de comisiones. Esto significa que cuando se deba una comisión a alguien, los fondos se retirarán de esta cuenta de Mercado Pago para efectuar el pago.
                               por: Identificador da conta no Mercado Pago que será utilizada para efetuar os pagamentos das comissões. Isso significa que, quando uma comissão for devida a alguém, os fundos serão retirados dessa conta do Mercado Pago para realizar o pagamento.
                       amount_details:
+                        description: This field encompasses transaction value details, including the amount paid, and in cases of refunds, the total refunded amount. Additionally, it covers the costs associated with shipping the purchased product.
+                        x-description-i18n:
+                          eng: This field encompasses transaction value details, including the amount paid, and in cases of refunds, the total refunded amount. Additionally, it covers the costs associated with shipping the purchased product.
+                          spa: Este campo abarca los detalles de valor de la transacción, incluyendo la cantidad pagada y, en casos de reembolso, la cantidad total reembolsada. Además, cubre los costos asociados con el envío del producto adquirido.
+                          por: Este campo abrange os detalhes relacionados aos montantes da transação, incluindo o valor pago e, em situações de reembolso, o montante total reembolsado. Também engloba os custos associados ao envio do produto adquirido.
                         type: object
                         properties:
                           total:
