@@ -17,7 +17,41 @@ Dados disponíveis para atualização:
 
 ------------
 
+[[[
 ```javascript
 let amount = 95;
 paymentBrickController.update({ amount });
 ```
+```react-jsx
+import Payment, { usePaymentBrick } from '@mercadopago/sdk-react';
+
+const App = () => {
+  const { update } = usePaymentBrick();
+
+  const customization = {
+    paymentMethods: {
+      creditCard: 'all',
+      debitCard: 'all',
+    },
+  };
+
+  return (
+    <>
+      <button type="button" onClick={() => update({ amount: 95 })}>
+        Update amount
+      </button>
+
+      <Payment
+        initialization={{ amount: 100 }}
+        customization={customization}
+        onSubmit={async (param) => {
+          console.log(param);
+        }}
+      />
+    </>
+  );
+};
+
+export default App;
+```
+]]]
