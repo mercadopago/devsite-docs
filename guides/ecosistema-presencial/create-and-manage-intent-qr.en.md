@@ -4,7 +4,7 @@ Below, you can see how to create an intent for QR, how to check its status, and 
 
 ## Create intent for QR
 
-To create an intent using QR, make a POST call to the endpoint ----[mla]----[Create QR intent](developers/en/reference/instore_api_mla/_instore-api_integrationsintents_qr_pos_external_id/post)------------ ----[mlb]----[Create QR intent](developers/en/reference/instore_api_mlb/_instore-api_integrationsintents_qr_pos_external_id/post)------------ replacing `external.id` for the value with which the point of sale was created.
+To create an intent using QR, make a POST call to the endpoint ----[mla]----[Create QR intent](/developers/en/reference/instore_api_mla/_instore-api_integrationsintents_qr_pos_external_id/post)------------ ----[mlb]----[Create QR intent](/developers/en/reference/instore_api_mlb/_instore-api_integrationsintents_qr_pos_external_id/post)------------ replacing `external.id` for the value with which the point of sale was created.
 
 Here is an example payload for creating an intent with the three operations available for QR:
 

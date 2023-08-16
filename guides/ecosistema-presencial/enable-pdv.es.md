@@ -6,11 +6,11 @@
 >
 > Este paso sólo es necesario para integrar dispositivos Point. 
 
-Para activar el modo PDV en tu dispositivo Point, primero tendrás que identificarlo. Para esto, deberás realizar una solicitud GET al endpoint ----[mla]----[Obtener dispositivos](/developers/es/reference/instore_api_mla/_instore-api_pointdevices/get)------------ ----[mlb]----[Obtener dispositivos](/developers/es/reference/instore_api_mlb/_instore-api_pointdevices/get)------------ :
+Para activar el modo PDV en tu dispositivo Point, primero tendrás que identificarlo. Para esto, deberás realizar una solicitud GET al endpoint ----[mla]----[Obtener dispositivos](/developers/es/reference/instore_api_mla/_instore-api_pointdevices/get)------------ ----[mlb]----[Obtener dispositivos](/developers/es/reference/instore_api_mlb/_instore-api_pointdevices/get)------------:
 
 > Esta solicitud retornará como respuesta los dispositivos asociados a la cuenta de Mercado Pago. Si en el listado te aparecen varios dispositivos, puedes identificar el Point que deseas por medio de los últimos caracteres del campo `id`. Los últimos números de este valor deben coincidir con el serial que aparece en la etiqueta trasera del dispositivo Point con el que estás integrando.
 
-Luego, realiza una solicitud PATCH al endpoint ----[mla]---- [Cambiar el modo de operación](/developers/es/reference/instore_api_mla/_instore-api_pointdevices_device_id/patch)------------ ----[mlb]---- [Cambiar el modo de operación](/reference/instore_api_mlb/_instore-api_pointdevices_device_id/patch)------------ , reemplazando `device.id` por el valor obtenido en ese campo en la respuesta a la solicitud GET anterior.
+Luego, realiza una solicitud PATCH al endpoint ----[mla]---- [Cambiar el modo de operación](/developers/es/reference/instore_api_mla/_instore-api_pointdevices_device_id/patch)------------ ----[mlb]---- [Cambiar el modo de operación](/reference/instore_api_mlb/_instore-api_pointdevices_device_id/patch)------------, reemplazando `device.id` por el valor obtenido en ese campo en la respuesta a la solicitud GET anterior.
 
 Por último, reinicia el dispositivo Point. Cuando se reactive, verás en la pantalla una confirmación, y tu Point estará vinculado al modo PDV. 
 

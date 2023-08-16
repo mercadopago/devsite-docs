@@ -68,7 +68,7 @@ Este objeto se compone de la siguiente manera:
 ## Cancelar un intent en dispositivos Point
 
 Si todavía no se ha realizado el pago y no has cargado el intent en el dispositivo, puedes cancelar una intención de pago y hacer que ese intento ya no esté disponible para su procesamiento. 
-Realiza una llamada DELETE al endpoint ----[mla]----[Cancelar un intent](/developpers/es/reference/instore_api_mla/_instore-api_integrationsintents_intent_id_point/delete)------------ ----[mlb]----[Cancelar un intent](/developpers/es/reference/instore_api_mlb/_instore-api_integrationsintents_intent_id_point/delete)------------, reemplazando `external.id` e `intent_id` por los valores obtenidos al crear una caja y el intento de pago, respectivamente.
+Realiza una llamada DELETE al endpoint ----[mla]----[Cancelar un intent](/developers/es/reference/instore_api_mla/_instore-api_integrationsintents_intent_id_point/delete)------------ ----[mlb]----[Cancelar un intent](/developers/es/reference/instore_api_mlb/_instore-api_integrationsintents_intent_id_point/delete)------------, reemplazando `external.id` e `intent_id` por los valores obtenidos al crear una caja y el intento de pago, respectivamente.
 
 > WARNING
 >

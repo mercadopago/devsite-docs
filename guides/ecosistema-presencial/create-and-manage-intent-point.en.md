@@ -70,7 +70,7 @@ This object is composed as follows:
 ## Cancel an intent on Point devices
 
 If the payment has not been made yet and you haven't loaded the intent on the device, you can cancel a payment intent and make that attempt no longer available for processing. 
-Make a DELETE call to the endpoint ----[mla]----[Cancel an intent](/developpers/en/reference/instore_api_mla/_instore-api_integrationsintents_intent_id_point/delete)------------ ----[mlb]----[Cancel an intent](/developpers/en/reference/instore_api_mlb/_instore-api_integrationsintents_intent_id_point/delete)------------, replacing `external.id` and `intent_id` with the values obtained when creating a cash register and the payment intent, respectively.
+Make a DELETE call to the endpoint ----[mla]----[Cancel an intent](/developers/en/reference/instore_api_mla/_instore-api_integrationsintents_intent_id_point/delete)------------ ----[mlb]----[Cancel an intent](/developers/en/reference/instore_api_mlb/_instore-api_integrationsintents_intent_id_point/delete)------------, replacing `external.id` and `intent_id` with the values obtained when creating a cash register and the payment intent, respectively.
 
 > WARNING
 >

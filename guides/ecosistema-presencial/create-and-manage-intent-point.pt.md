@@ -6,7 +6,7 @@ A seguir, você pode ver como criar um intent em dispositivos Point, como consul
 
 Para criar um intent em seu dispositivo Point, você tem duas opções:
 * Você pode fazer uma chamada POST ao endpoint ----[mla]----[Criar intent para um dispositivo associado a uma caixa](/developers/pt/reference/instore_api_mla/_instore-api_integrationsintents_point_pos_external_id/post)------------ ----[mlb]----[Criar intent para um dispositivo associado a uma caixa](/developers/pt/reference/instore_api_mlb/_instore-api_integrationsintents_point_pos_external_id/post)------------, substituindo `external.id` pelo valor escolhido ao criar a caixa.
-* Ou então, você pode fazer uma chamada POST ao endpoint ----[mla]----[Criar intent para um dispositivo PDV](/developers/pt/reference/instore_api_mla/_instore-api_integrationsintents_point_device_id/post)------------ ----[mlb]----[Criar intent para um dispositivo PDV](//developers/pt/reference/instore_api_mlb/_instore-api_integrationsintents_point_device_id/post)------------, substituindo `device.id` pelo valor obtido ao consultar a lista de dispositivos.
+* Ou então, você pode fazer uma chamada POST ao endpoint ----[mla]----[Criar intent para um dispositivo PDV](/developers/pt/reference/instore_api_mla/_instore-api_integrationsintents_point_device_id/post)------------ ----[mlb]----[Criar intent para um dispositivo PDV](/developers/pt/reference/instore_api_mlb/_instore-api_integrationsintents_point_device_id/post)------------, substituindo `device.id` pelo valor obtido ao consultar a lista de dispositivos.
 
 Você pode escolher a opção que melhor se adapta às suas necessidades. O resultado será o mesmo, e você terá criado um intent para o dispositivo Point escolhido.
 
@@ -69,7 +69,7 @@ Este objeto se compõe da seguinte maneira:
 ## Cancelar um intent em dispositivos Point
 
 Se o pagamento ainda não foi realizado e o intent não foi carregado no dispositivo, você pode cancelar uma intenção de pagamento e fazer com que essa tentativa não esteja mais disponível para processamento. 
-Realiza uma chamada DELETE ao endpoint ----[mla]----[Cancelar um intent](//developpers/pt/reference/instore_api_mla/_instore-api_integrationsintents_intent_id_point/delete)------------ ----[mlb]----[Cancelar um intent](/developpers/pt/reference/instore_api_mlb/_instore-api_integrationsintents_intent_id_point/delete)------------, reemplazando `external.id` e `intent_id` por los valores obtenidos al criar una caja e o intento de pagamento, respectivamente.
+Realiza uma chamada DELETE ao endpoint ----[mla]----[Cancelar um intent](/developers/pt/reference/instore_api_mla/_instore-api_integrationsintents_intent_id_point/delete)------------ ----[mlb]----[Cancelar um intent](/developers/pt/reference/instore_api_mlb/_instore-api_integrationsintents_intent_id_point/delete)------------, reemplazando `external.id` e `intent_id` por los valores obtenidos al criar una caja e o intento de pagamento, respectivamente.
 
 > WARNING
 >
