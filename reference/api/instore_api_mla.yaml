@@ -9,16 +9,16 @@ paths:
     post:
       tags:
         - $ref: '#/tags/mp-point'
-      summary: Create an intent for a device associated to a POS (Point of sale) in a store
+      summary: Create an intent for a device associated to a POS in a store
       x-summary-i18n:
-        eng: Create an intent for a device associated to a POS (Point of sale) in a store
-        spa: Crear un intent para un dispositivo asociado a una caja (punto de venta) en una tienda
-        por: Criar um intent para um dispositivo associado a um caixa (ponto de venda) em uma loja
-      description: Creates an intent associated with a Point device, linked to a specific POS by external_id
+        eng: Create an intent for a device associated to a POS in a store
+        spa: Crear un intent para un dispositivo asociado a una caja en una tienda
+        por: Criar um intent para um dispositivo associado a um caixa em uma loja
+      description: Creates an intent associated with a Point device, linked to a specific POS (Point of sale) by external_id
       x-description-i18n:
-        eng: Create an intent associated with a Point device, linked to a specific POS by external_id
-        spa: Crea un intent asociado al dispositivo Point, vinculado a la caja por el external_id
-        por: Cria um intent associado ao dispositivo Point, vinculado à caixa pelo external_id
+        eng: Create an intent associated with a Point device, linked to a specific POS (Point of sale) by external_id
+        spa: Crea un intent asociado al dispositivo Point, vinculado a la caja (punto de venta) por el external_id
+        por: Cria um intent associado ao dispositivo Point, vinculado à caixa (ponto de venda) pelo external_id
       requestBody:
         content:
           application/json:
@@ -315,16 +315,16 @@ paths:
     post:
       tags:
         - $ref: '#/tags/mp-point'
-      summary: Create an intent for a device in POS mode
+      summary: Create an intent for a device in PDV mode
       x-summary-i18n:
         eng: Create an intent for a device in PDV mode
         spa: Crear un intent para un dispositivo en modo PDV
         por: Criar um intent para um dispositivo no modo PDV
-      description: Creates an intent associated with the Point device in mode PDV. This device_id can be obtained using the get devices request
+      description: Creates an intent associated with the Point device in mode PDV. This device_id can be obtained using the Get devices request
       x-description-i18n:
-        eng: Creates an intent associated with the Point device in mod PDV. This device_id can be obtained using the get devices request
-        spa: Crea un intent asociado a un dispositivo Point en modo PDV. El device_id puede ser obtenido usando la request get devices
-        por: Cria um intent associado a um dispositivo Point no modo PDV. O device_id pode ser obtido usando o método get devices
+        eng: Creates an intent associated with the Point device in mod PDV. This device_id can be obtained using the Get devices request
+        spa: Crea un intent asociado a un dispositivo Point en modo PDV. El device_id puede ser obtenido usando la request Get devices
+        por: Cria um intent associado a um dispositivo Point no modo PDV. O device_id pode ser obtido usando o método Get devices
       requestBody:
         content:
           application/json:
@@ -620,15 +620,15 @@ paths:
     get:
       tags:
         - $ref: '#/tags/mp-point'
-      summary: Get all information about an intent of a Point device
+      summary: Get information about an intent for a Point device
       x-summary-i18n:
-        eng: Get all information about an intent of a Point device
-        spa: Obtener toda la información de un intent de un dispositivo Point
-        por: Obter informações sobre o intent de um dispositivo Point
-      description: Get all the information about an intent of a Point device in the current state
+        eng: Get information about an intent for a Point device
+        spa: Obtener información de un intent para un dispositivo Point
+        por: Obter informações sobre o intent para um dispositivo Point
+      description: Get all the information about an intent for a Point device in the current state
       x-description-i18n:
-        eng: Get all the information about an intent of a Point device in the current state
-        spa: Obtiene toda la información de un intent para un dispositivo point en el estado actual
+        eng: Get all the information about an intent for a Point device in the current state
+        spa: Obtiene información de un intent para un dispositivo Point en el estado actual
         por: Obtém informações sobre o intent de um dispositivo Point no estado atual
       parameters:
         - name: intent_id
@@ -827,16 +827,16 @@ paths:
     delete:
       tags:
         - $ref: '#/tags/mp-point'
-      summary: Cancel an intent.
+      summary: Cancel an intent
       x-summary-i18n:
-        eng: Cancel an intent.
-        spa: Cancelar un intent.
-        por: Cancelar um intent.
-      description: Cancels an intent that is in the OPENED state and not sent yet to terminal.
+        eng: Cancel an intent
+        spa: Cancelar un intent
+        por: Cancelar um intent
+      description: Cancels an intent that is in the OPENED status and not sent yet to terminal
       x-description-i18n:
-        eng: Cancels an intent that is in OPENED state and not sent yet to terminal.
-        spa: Cancela un intento que está en estado OPENED y que todavía no fue enviado al dispositivo.
-        por: Cancela um intent que está no estado OPENED e ainda não foi enviada ao dispositivo.
+        eng: Cancels an intent that is in OPENED status and not sent yet to terminal
+        spa: Cancela un intento que está en estado OPENED y que todavía no fue enviado al dispositivo
+        por: Cancela um intent que está no estado OPENED e ainda não foi enviada ao dispositivo
       parameters:
         - name: intent_id
           in: path
@@ -891,16 +891,16 @@ paths:
     post:
       tags:
         - $ref: '#/tags/qr-code'
-      summary: Create an intent qr for a point of sale
+      summary: Create an intent QR for a point of sale
       x-summary-i18n:
-        eng: Creates an intent qr for a point of sale
-        spa: Crea un intent qr para un punto de venta
-        por: Cria um intent qr para um ponto de venda
-      description: Create an intent qr to the point of sale by external_id, its identification
+        eng: Create an intent QR for a point of sale
+        spa: Crear un intent QR para un punto de venta
+        por: Criar um intent QR para um ponto de venda
+      description: Creates an intent QR to the point of sale by external_id, its identification
       x-description-i18n:
-        eng: Creates an intent qr to the point of sale by external_id, its identification
-        spa: Crea un intent qr para la caja identificada con el external_id
-        por: Cria um intent qr para a caixa identificada com o external_id
+        eng: Creates an intent QR to the point of sale by external_id, its identification
+        spa: Crea un intent QR para la caja identificada con el external_id
+        por: Cria um intent QR para a caixa identificada com o external_id
       requestBody:
         content:
           application/json:
@@ -1331,16 +1331,16 @@ paths:
     get:
       tags:
         - $ref: '#/tags/qr-code'
-      summary: Get all information about a qr intent
+      summary: Get information about a QR intent
       x-summary-i18n:
-        eng: Get all information about a qr intent
-        spa: Obtener toda la información de un intent qr
-        por: Obter todas as informações de um intent qr
-      description: Gets all the information about a qr intent in the current state
+        eng: Get information about a QR intent
+        spa: Obtener información de un intent QR
+        por: Obter todas as informações de um intent QR
+      description: Gets all the information about a QR intent in the current state
       x-description-i18n:
-        eng: Gets all the information about a qr intent in the current state
-        spa: Obtiene toda la información de un intent qr en el estado actual
-        por: Obtém todas as informações de um intent qr no estado atual
+        eng: Gets all the information about a QR intent in the current state
+        spa: Obtiene toda la información de un intent QR en el estado actual
+        por: Obtém todas as informações de um intent QR no estado atual
       parameters:
         - name: intent_id
           in: path
@@ -1602,16 +1602,16 @@ paths:
     delete:
       tags:
         - $ref: '#/tags/qr-code'
-      summary: Cancel an intent
+      summary: Cancel a QR intent
       x-summary-i18n:
-        eng: Cancel an intent
-        spa: Cancelar un intent
-        por: Cancelar im intent
-      description: Cancels an intent that is in the OPENED state
+        eng: Cancel a QR intent
+        spa: Cancelar un intent QR
+        por: Cancelar um intent QR
+      description: Cancels a QR intent that is in the OPENED state
       x-description-i18n:
-        eng: Cancels an intent that is in the OPENED state
-        spa: Cancela un intent que está en estado OPENED
-        por: Cancela um intent no estado OPENED
+        eng: Cancels a QR intent that is in the OPENED state
+        spa: Cancela un intent QR que está en estado OPENED
+        por: Cancela um intent QR no estado OPENED
       parameters:
         - name: intent_id
           in: path
@@ -1667,9 +1667,9 @@ paths:
         eng: Get devices
         spa: Obtener dispositivos
         por: Obter dispositivos
-      description: This endpoint allows you to get the devices. Devices can be filtered by pos and/or store
+      description: This endpoint allows you to get the devices. Devices can be filtered by POS and/or store
       x-description-i18n:
-        eng: This endpoint allows you to get the devices. Devices can be filtered by pos and/or store
+        eng: This endpoint allows you to get the devices. Devices can be filtered by POS and/or store
         spa: Este endpoint te permite obtener los dispositivos. Los dispositivos se pueden filtrar por punto de venta y/o tienda
         por: Este endpoint permite que você obtenha os dispositivos. Os dispositivos podem ser filtrados por ponto de venda e/ou loja
       parameters:
