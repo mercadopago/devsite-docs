@@ -102,15 +102,15 @@ O Status Screen Brick exibirá uma transição indicando redirecionamento e, log
 
 </center>
 
-O usuário deve responder ao desafio para que a transição seja validada devidamente. Vale ressaltar que a experiência do _Challenge_ é de responsabilidade exclusiva do banco encarregado.
+O usuário deve responder ao _Challenge_ para que a transição seja validada devidamente. Vale ressaltar que a experiência do _Challenge_ é de responsabilidade exclusiva do banco encarregado.
 
 >  NOTE
 > 
 > Importante
 > 
-> Por questões de segurança, o pagamento será rejeitado caso o processo de _Challenge_ não seja iniciado em até 30 segundos após a sua criação. Portanto, é importante que o desafio se inicie exatamente após a sua geração.
+> Por questões de segurança, o pagamento será rejeitado caso o processo de _Challenge_ não seja iniciado em até 30 segundos após a sua criação. Portanto, é importante que o _Challenge_ se inicie exatamente após a sua geração.
 
-3. Após a resolução do desafio, será exibido o resultado final do pagamento de acordo com a resposta emitida pelo banco ao finalizar o _Challenge_.
+3. Após a resolução do _Challenge_, será exibido o resultado final do pagamento de acordo com a resposta emitida pelo banco ao finalizar o _Challenge_.
 
 <center>
 
