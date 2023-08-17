@@ -282,7 +282,7 @@ Faça uma chamada DELETE para o endpoint ----[mla]----[Cancelar um intent](/deve
 
 Além disso, recomendamos **configurar suas notificações de webhook**. Isso permitirá que você receba informações em tempo real sempre que um intent atingir um estado final.
 
-Para configurar suas notificações, siga as instruções fornecidas na [documentação de webhooks de notificações](developers/pt/docs/ecosistema-presencial/additional-content/your-integrations/notifications/webhooks).
+Para configurar suas notificações, siga as instruções fornecidas na [documentação de webhooks de notificações](/developers/pt/docs/ecosistema-presencial/additional-content/your-integrations/notifications/webhooks).
 
 > WARNING
 >

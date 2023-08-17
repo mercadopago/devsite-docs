@@ -82,7 +82,7 @@ Realiza uma chamada DELETE ao endpoint ----[mla]----[Cancelar um intent](/develo
 
 Recomendamos **configurar suas notificações de Webhook**. Isso facilitará o recebimento de informações em tempo real sempre que uma intenção atingir um estado final.
 
-Para configurar suas notificações, siga as instruções fornecidas na [documentação de notificações de Webhooks](developers/pt/docs/ecosistema-presencial/additional-content/your-integrations/notifications/webhooks).
+Para configurar suas notificações, siga as instruções fornecidas na [documentação de notificações de Webhooks](/developers/pt/docs/ecosistema-presencial/additional-content/your-integrations/notifications/webhooks).
 
 > WARNING
 >
