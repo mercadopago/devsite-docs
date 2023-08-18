@@ -1350,21 +1350,6 @@ paths:
                     type: string
                     enum:
                       - 404-- pos_not_found - Point of sale with externalId {externalID} is not found
-        '409':
-          description: Error
-          x-description-i18n:
-            eng: Error
-            spa: Error
-            por: Erro
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  errorKey:
-                    type: string
-                    enum:
-                      - 409-- Conflict - There is already a queued intent for the device
         '500':
           description: Error
           x-description-i18n:

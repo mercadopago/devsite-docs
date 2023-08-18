@@ -6,9 +6,8 @@ A seguir, você pode ver como criar um intent para QR, como verificar seu status
 
 Para criar um intent usando QR, faça uma chamada POST para o endpoint ----[mla]----[Criar intent QR](/developers/pt/reference/instore_api_mla/_instore-api_integrationsintents_qr_pos_external_id/post)------------ ----[mlb]----[Criar intent QR](/developers/pt/reference/instore_api_mlb/_instore-api_integrationsintents_qr_pos_external_id/post)------------ substituindo `external.id` pelo valor com que a caixa foi criada.
 
-Aqui está um exemplo de payload para criar um intent com as três operações disponíveis para QR:
+Aqui está um exemplo de payload para criar um intent para QR:
 
-* **Criação de uma compra (`PURCHASE`)**
 
 ``` json
 {
@@ -49,169 +48,6 @@ Aqui está um exemplo de payload para criar um intent com as três operações d
 
 Tenha em mente que, se você enviar as informações necessárias para o campo `item` nesse tipo de operação, o campo `amount` não será necessário. Isso será calculado com base no `total_amount` de cada item. Da mesma forma, se você enviar o campo `amount`, não é necessário enviar informações correspondentes aos itens.
 
-<br>
-
-* **Criação de um saque em dinheiro (`CASH_OUT`)**
-
-----[mla]----
-
-``` json
-{
-        "description": "description",
-        "external_reference": "external_reference",
-        "sponsor": {
-            "id": 1234567,
-        },
-        "operations": [
-            {
-                "type": "CASH_OUT",
-                "amount": "14.53"
-            }
-        ],
-        "enabler_configuration": {
-            "qr_payment_mode": [
-                "STATIC",
-                "DYNAMIC"
-            ]
-        }
-}
-
-```
-
-------------
-----[mlb]----
-
-``` json
-{
-        "description": "description",
-        "external_reference": "external_reference",
-        "sponsor": {
-            "id": "1234567",
-        },
-        "operations": [
-            {
-                "type": "CASH_OUT",
-                "amount": "14.53",
-                "additional_configuration": {
-                    "fixed_amount": true,
-                    "agency_type": "AGTOT",
-                    "bank_service_code": "BANK CODE"
-                }
-            }
-        ],
-        "enabler_configuration": {
-            "qr_payment_mode": [
-                "STATIC",
-                "DYNAMIC"
-            ]
-        }
-}
-
-```
-------------
-
-Para executar esta operação, ao contrário da criação de um intent de compra, é necessário enviar o valor do campo `amount`.
-
-<br>
-
-* **Criação de compra e saque em dinheiro em uma mesma transação (Extra cash)**
-
-----[mla]----
-
-``` json
-{
-        "description": "description",
-        "external_reference": "external_reference",
-        "sponsor": {
-            "id": "1234567",
-        },
-        "operations": [
-            {
-                "type": "PURCHASE",
-                "amount": "14.53",
-                "items": [
-                    {
-                        "sku_number": "sku_number",
-                        "external_categories": [
-                            {
-                                "id": "category_id"
-                            }
-                        ],
-                        "title": "title",
-                        "unit_price": "14.53",
-                        "quantity": 1,
-                        "unit_measure": "UNIT",
-                        "total_amount": "14.53"
-                    }
-                ]
-            },
-            {
-                "type": "CASH_OUT",
-                "amount": "14.53"
-            }
-        ],
-        "enabler_configuration": {
-            "qr_payment_mode": [
-                "STATIC",
-                "DYNAMIC"
-            ]
-        }
-    }
-
-```
-
-------------
-----[mlb]----
-
-``` json
-{
-        "description": "description",
-        "external_reference": "external_reference",
-        "sponsor": {
-            "id": "1234567",
-        },
-        "operations": [
-            {
-                "type": "PURCHASE",
-                "amount": "14.53",
-                "items": [
-                    {
-                        "sku_number": "sku_number",
-                        "external_categories": [
-                            {
-                                "id": "category_id"
-                            }
-                        ],
-                        "title": "title",
-                        "unit_price": "14.53",
-                        "quantity": 1,
-                        "unit_measure": "UNIT",
-                        "total_amount": "14.53"
-                    }
-                ]
-            },
-            {
-                "type": "CASH_OUT",
-                "amount": "14.53",
-                "additional_configuration": {
-                    "fixed_amount": true,
-                    "agency_type": "AGTOT",
-                    "bank_service_code": "BANK CODE"
-                }
-            }
-        ],
-        "enabler_configuration": {
-            "qr_payment_mode": [
-                "STATIC",
-                "DYNAMIC"
-            ]
-        }
-}
-
-```
-------------
-
-Este payload segue as regras individuais apresentadas anteriormente para os intents de compra e retiro de dinheiro.
 
 ## Consultar o estado de um intent para QR
 
@@ -270,7 +106,7 @@ Este objeto é composto da seguinte forma:
 | `id` | É a identificação do pagamento. Com ela, você pode acessar a [Payments API](/developers/pt/reference/payments/_payments_id/get) e verificar o estado final do pagamento. |
 | `source` | Entidade à qual o `id` pertence. Irá retornar o valor `PAYMENT` quando o fluxo de pagamento for criado corretamente. Acesse a [Payments API](/developers/pt/reference/payments/_payments_id/get) para verificar o estado final do pagamento com o `id` recebido. |
 
-Isso acontece tanto para as operações `PURCHASE` como `CASH_OUT`.
+
 
 ## Cancelar um intent para QR
 
