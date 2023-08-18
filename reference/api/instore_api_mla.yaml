@@ -40,9 +40,9 @@ paths:
                   required: true
                   description: Custom ID that you can sync with your sales system. Length Max:100 Min:1
                   x-description-i18n:
-                    eng: Custom ID that you can sync with your sales system. Length Max:100 Min:1
-                    spa: ID personalizado que puedes sincronizar con tu sistema de venta. Longitud Max:100 Min:1
-                    por: ID personalizado que pode sincronizar com seu sistema de vendas. Comprimento máx:100 min:1
+                    eng: "Custom ID that you can sync with your sales system. Length Max:100 Min:1. Uppercase and lowercase letters, numbers, white spaces, as well as the following characters are allowed: -:_,."
+                    spa: "ID personalizado que puedes sincronizar con tu sistema de venta. Longitud Max:100 Min:1. Se permiten letras mayúsculas y minúsculas, números, espacios en blanco, así como los siguientes caracteres: -:_,."
+                    por: "ID personalizado que pode sincronizar com seu sistema de vendas. Comprimento máx:100 min:1. Letras maiúsculas e minúsculas, números, espaços em branco, bem como os seguintes caracteres são permitidos: -:_,."
                 operations:
                   type: array
                   required: true
@@ -69,9 +69,9 @@ paths:
                         required: true
                         description: Amount of operation
                         x-description-i18n:
-                          eng: Amount of operation.
-                          spa: Monto de la operación.
-                          por: Valor da operação.
+                          eng: Amount of operation. This field must have exactly two decimal digits and the (.) dot separator must be used.
+                          spa: Monto de la operación. Este campo debe tener exactamente dos cifras decimales y debe ser utilizado el separador (.) punto.
+                          por: Valor da operação. Este campo deve ter exatamente duas casas decimais e deve ser utilizado o separador ponto (.).
                 enabler_configuration:
                   type: object
                   description: Configurations for the enabler that processes the intent.
@@ -346,9 +346,9 @@ paths:
                   required: true
                   description: Custom ID that you can sync with your sales system.
                   x-description-i18n:
-                    eng: Custom ID that you can sync with your sales system.
-                    spa: ID personalizado que puedes sincronizar con tu sistema de venta.
-                    por: ID personalizado que pode sincronizar com seu sistema de vendas.
+                    eng: "Custom ID that you can sync with your sales system. Length Max:100 Min:1. Uppercase and lowercase letters, numbers, white spaces, as well as the following characters are allowed: -:_,."
+                    spa: "ID personalizado que puedes sincronizar con tu sistema de venta. Longitud Max:100 Min:1. Se permiten letras mayúsculas y minúsculas, números, espacios en blanco, así como los siguientes caracteres: -:_,."
+                    por: "ID personalizado que pode sincronizar com seu sistema de vendas. Letras maiúsculas e minúsculas, números, espaços em branco, bem como os seguintes caracteres são permitidos: -:_,."
                 operations:
                   type: array
                   required: true
@@ -375,9 +375,9 @@ paths:
                         required: true
                         description: Amount of operation
                         x-description-i18n:
-                          eng: Amount of operation.
-                          spa: Monto de la operación.
-                          por: Valor da operação.
+                          eng: Amount of operation. This field must have exactly two decimal digits and the (.) dot separator must be used.
+                          spa: Monto de la operación. Este campo debe tener exactamente dos cifras decimales y debe ser utilizado el separador (.) punto.
+                          por: Valor da operação. Este campo deve ter exatamente duas casas decimais e deve ser utilizado o separador ponto (.).
                 enabler_configuration:
                   type: object
                   description: Configurations for the enabler that processes the intent.
@@ -502,9 +502,9 @@ paths:
                           example: "12.47"
                           description: Amount of the operation.
                           x-description-i18n:
-                            eng: Amount of the operation.
-                            spa: Monto de la operación.
-                            por: Valor da operação.
+                            eng: Amount of the operation. This field must have exactly two decimal digits and the (.) dot separator must be used.
+                            spa: Monto de la operación. Este campo debe tener exactamente dos cifras decimales y debe ser utilizado el separador (.) punto.
+                            por: Valor da operação. Este campo deve ter exatamente duas casas decimais e deve ser utilizado o separador ponto (.).
                   enabler_configuration:
                     type: object
                     description: Configurations for the enabler that processes the intent.
@@ -856,6 +856,21 @@ paths:
             eng: The intent was successfully canceled.
             spa: El intent fue cancelado satisfactoriamente.
             por: O intent foi cancelado com sucesso.
+        '401':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 401-- Unauthorized - Access Token is invalid
         '404':
           description: Error
           x-description-i18n:
@@ -872,6 +887,21 @@ paths:
                     enum:
                       - 404-- not_found - Not found The intent {intent_id} doesn't exist!
                       - 404-- pos_not_found - Point of sale with externalId {external_id} is not found
+        '409':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 409-- conflict - The intent in the current state cannot be canceled.                      
         '500':
           description: Error
           x-description-i18n:
@@ -922,9 +952,9 @@ paths:
                   required: true
                   description: Custom ID that you can sync with your sales system. Length Max:100 Min:1
                   x-description-i18n:
-                    eng: Custom ID that you can sync with your sales system. Length Max:100 Min:1
-                    spa: ID personalizado que puedes sincronizar con tu sistema de venta. Longitud Max:100 Min:1
-                    por: ID personalizado que pode sincronizar com seu sistema de vendas. Comprimento máx:100 min:1
+                    eng: "Custom ID that you can sync with your sales system. Length Max:100 Min:1. Uppercase and lowercase letters, numbers, white spaces, as well as the following characters are allowed: -:_,."
+                    spa: "ID personalizado que puedes sincronizar con tu sistema de venta. Longitud Max:100 Min:1. Se permiten letras mayúsculas y minúsculas, números, espacios en blanco, así como los siguientes caracteres: -:_,."
+                    por: "ID personalizado que pode sincronizar com seu sistema de vendas. Comprimento máx:100 min:1.  Letras maiúsculas e minúsculas, números, espaços em branco, bem como os seguintes caracteres são permitidos:-:_,."
                 sponsor: 
                   type: object
                   properties:
@@ -964,9 +994,9 @@ paths:
                         example: 12.47
                         description: Amount of operation. This field is optional if you choose to send the items intead. Value Min:"0.01"
                         x-description-i18n:
-                          eng: Amount of operation. This field is optional if you choose to send the items intead. Value Min:"0.01"
-                          spa: Monto de la operación. Este campo es opcional si eliges enviar un conjunto de ítems. Value Min:"0.01"
-                          por: Valor da operação. Este campo é opcional se você optar por enviar um conjunto de itens. Value Min:"0.01"
+                          eng: Amount of operation. This field is optional if you choose to send the items intead. This field must have exactly two decimal digits and the (.) dot separator must be used. Value Min:"0.01"
+                          spa: Monto de la operación. Este campo es opcional si eliges enviar un conjunto de ítems. Este campo debe tener exactamente dos cifras decimales y debe ser utilizado el separador (.) punto. Valor mínimo:"0.01".
+                          por: Valor da operação. Este campo é opcional se você optar por enviar um conjunto de itens. Este campo deve ter exatamente duas casas decimais e deve ser utilizado o separador ponto (.). Value Min:"0.01"
                       items:
                         type: array
                         items:
@@ -1010,15 +1040,19 @@ paths:
                               enum:
                                 - PACK --
                                 - UNIT --
+                                - METER --
+                                - GRAM --
+                                - LITRE --
+                                - GALLON --                                
                             unit_price:
                               type: string
                               example: 12.45
                               required: true
                               description: Unit price of the item. Value Min:"0.01"
                               x-description-i18n:
-                                eng: Unit price of the item. Value Min:"0.01"
-                                spa: Precio unitario del ítem.  Valor Min:"0.01"
-                                por: Preço unitário do item. Valor Min:"0.01"
+                                eng: Unit price of the item. This field must have exactly two decimal digits and the (.) dot separator must be used. Value Min:"0.01"
+                                spa: Precio unitario del ítem. Este campo debe tener exactamente dos cifras decimales y debe ser utilizado el separador (.) punto. Valor Min:"0.01"
+                                por: Preço unitário do item. Este campo deve ter exatamente duas casas decimais e deve ser utilizado o separador ponto (.). Valor Min:"0.01". 
                             external_categories:
                               type: array
                               items:
@@ -1038,9 +1072,9 @@ paths:
                               required: true
                               description: Total amount of the item. Value Min:"0.01"
                               x-description-i18n:
-                                eng: Total amount of the item. Value Min:"0.01"
-                                spa: Monto total del ítem. Valor Min:"0.01"
-                                por: Valor total do item. Valor Min:"0.01"
+                                eng: Total amount of the item. This field must have exactly two decimal digits and the (.) dot separator must be used. Value Min:"0.01"
+                                spa: Monto total del ítem. Este campo debe tener exactamente dos cifras decimales y debe ser utilizado el separador (.) punto. Valor Min:"0.01"
+                                por: Valor total do item. Este campo deve ter exatamente duas casas decimais e deve ser utilizado o separador ponto (.). Valor Min:"0.01"
                 enabler_configuration:
                   type: object
                   description: Configurations for the enabler that processes the intent.
@@ -1627,6 +1661,21 @@ paths:
       responses:
         '204':
           description: The intent was successfully canceled
+        '401':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 401-- Unauthorized - Access Token is invalid
         '404':
           description: Error
           x-description-i18n:
@@ -1643,6 +1692,21 @@ paths:
                     enum:
                       - 404-- not_found - Not found The intent {intent_id} doesn't exist!
                       - 404-- pos_not_found - Point of sale with externalId {external_id} is not found
+        '409':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 409-- conflict - The intent in the current state cannot be canceled.
         '500':
           description: Error
           x-description-i18n:
@@ -1909,6 +1973,21 @@ paths:
                     type: string
                     enum:
                       - 400-- Bad-Request - Device id incorrect format
+        '401':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 401-- Unauthorized - Access Token is invalid
         '403':
           description: Error
           x-description-i18n:
