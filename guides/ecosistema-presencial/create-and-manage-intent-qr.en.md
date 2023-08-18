@@ -73,17 +73,6 @@ Below is an example response when querying the status:
                 }
             ],
             ...
-        },
-        {
-            "type": "CASH_OUT",
-            ....
-            "results": [
-                {
-                    "id": 123456,
-                    "source": "PAYOUT"
-                }
-            ],
-            ...
         }
     ],
     "enabler_configuration": {
@@ -167,12 +156,7 @@ Below is an example of a notification you can receive for QR when an intent reac
                     "total_amount": "10.14"
                 }
               ]
-            },
-            {
-                "amount": "12.20",
-                "type": "CASH_OUT"
-            }
-        ],
+            }        ],
         "status": "CANCELED",
         "url": "https://api.mercadopago.com/instore-api/integrations/v1/intents/1234567-12345-12345678-1234567890/qr"
     },
@@ -224,17 +208,7 @@ Below is an example of a notification you can receive for QR when an intent reac
                     "total_amount": "10.14"
                 }
               ]
-            },
-            {
-                "amount": "12.20",
-                "type": "CASH_OUT",
-                "additional_configuration": {
-                   "fixed_amount": true,
-                   "agency_type": "AGTOT",
-                   "bank_service_code": "BANK CODE"
-                }
-            }
-        ],
+            }        ],
         "status": "CANCELED",
         "url": "https://api.mercadopago.com/instore-api/integrations/v1/intents/1234567-12345-12345678-1234567890/qr"
     },
