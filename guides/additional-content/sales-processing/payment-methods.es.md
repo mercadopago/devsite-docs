@@ -5,14 +5,12 @@ Puedes obtener una lista completa de los tipos y medios de pago disponibles, as�
 
 | Medios de pago | 🇦🇷 <br> Argentina | 🇧🇷 <br> Brasil | 🇨🇱 <br> Chile | 🇨🇴 <br> Colombia | 🇲🇽 <br> México | 🇵🇪 <br> Perú | 🇺🇾 <br>Uruguay |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Efectivo en Cuenta | Mercado Pago* | Mercado Pago* | Mercado Pago* | Mercado Pago* | Mercado Pago* | Mercado Pago* | - |
-| ATM | Red Link** | - | - | - | Bancomer** <br> Banamex** <br> Serfin** | BCP <br> Continental <br> Otros| - |
-| Transferencia Bancaria | - | Pix* ** | - | PSE* | - | - | - |
-| Crédito | Visa <br> Mastercard <br> American Express <br> Diners Club <br> Naranja** <br> Nativa** <br> Shopping** <br> Ceconsud <br> Argencard <br> Cordial <br> Cordobesa <br> Cabal <br> CMR | Visa <br> Mastercard <br> American Express <br> Hipercard <br> Diners Club <br> Elo <br> Mercado Pago | Visa <br> Mastercard <br> American Express <br> Diners Club <br> CMR <br> Magna <br> Presto | Visa <br> Mastercard <br> American Express <br> Diners Club <br> Codensa | Visa <br> Mastercard <br> American Express** | Visa <br> Diners Club | Visa <br> Mastercard <br> Diners Club <br> Oca <br> Lider |
-| Débito | Visa** <br> Mastercard** <br> Maestro** <br> Cabal | Tarjeta de débito virtual CAIXA | Visa <br> Mastercard <br> RedCompra | Visa <br> Mastercard | Visa <br> Mastercard | Visa <br> Mastercard | - |
-| Moneda Digital | - | Giftcard** | - | - | Bitcoin** | - | - |
+| Efectivo en Cuenta | Mercado Pago* | Mercado Pago* | Mercado Pago* | Mercado Pago* | Mercado Pago* | Mercado Pago* | Mercado Pago* |
+| ATM |  -  | - | - | - | Bancomer** <br> Banamex** <br> Serfin** <br> PagoEfectivo | - |
+| Transferencia Bancaria | - | Pix* ** | - | PSE* | CLABE | - | - |
+| Crédito | Visa <br> Mastercard <br> American Express <br> Diners Club <br> Naranja** <br> Cabal | Visa <br> Mastercard <br> American Express <br> Hipercard <br> Elo | Visa <br> Mastercard <br> American Express | Visa <br> Mastercard <br> American Express <br> Diners Club <br> Codensa | Visa <br> Mastercard <br> American Express** | Visa <br> Diners Club <br> Mastercard <br> American Express | Visa <br> Mastercard <br> Oca <br> Lider <br> American Express <br> Creditel |
+| Débito | Visa** <br> Mastercard** <br> Maestro** <br> Cabal | Tarjeta de débito virtual CAIXA <br> Elo | Visa <br> Mastercard <br> RedCompra | Visa <br> Mastercard | Visa <br> Mastercard | Visa <br> Mastercard | Visa |
 | Tarjeta Prepago | - | - | - | - | Mercado Pago** | - | - |
-| Boleto/PEC/Efectivo | Rapipago** <br> Pago Fácil <br> Carga Virtual** <br> Cobro Express** | Boleto** <br> PEC | - | Efecty* | Oxxo** <br> PayCash | - | Abitab <br> Red Pagos |
+| Boleto/PEC/Efectivo | Rapipago** <br> Pago Fácil | Boleto** <br> PEC | - | Efecty* | Oxxo** <br> PayCash | - | Abitab <br> Red Pagos |
 
-_*Medios de pago no disponibles para Mobile Checkout._ <br>
 _**Medios de pago no disponibles para Suscripciones._
