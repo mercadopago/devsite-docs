@@ -14,5 +14,4 @@ Você pode obter uma lista completa dos tipos e meios de pagamento disponíveis 
 | Cartão Pré-pago | - | - | - | - | Mercado Pago** | - | - |
 | Boleto/PEC/Dinheiro | Rapipago** <br> Pago Facil <br> Carga Virtual** <br> Cobro Express** | Boleto** <br> PEC | - | Efecty* | Oxxo** <br> PayCash | - | Abitab <br> Red Pagos |
 
-_*Meios de pagamento não disponíveis para Mobile Checkout._ <br>
 _**Meios de pagamento não disponíveis para Assinaturas._
