@@ -17,13 +17,13 @@ Ambos tipos de credenciales constan de dos pares de claves que debes utilizar se
 
 | Tipo | Descripción |
 | :--- | :--- |
-| Clave pública | La clave pública de la aplicación se utiliza generalmente en el frontend. Permite, por ejemplo, acceder a información sobre los medios de pago y cifrar los datos de la tarjeta. |
-| Token de acceso | Clave privada de la aplicación que siempre se debe utilizar en el backend para generar pagos. Es esencial mantener esta información segura en tus servidores. |
+| Public Key | La clave pública de la aplicación se utiliza generalmente en el frontend. Permite, por ejemplo, acceder a información sobre los medios de pago y cifrar los datos de la tarjeta. |
+| Access token | Clave privada de la aplicación que siempre se debe utilizar en el backend para generar pagos. Es esencial mantener esta información segura en tus servidores. |
 
 | Tipo | Descripción |
 | :--- | :--- |
-| ID de cliente | El ID de cliente es un identificador único que representa tu integración. |
-| Secreto de cliente | Clave privada utilizada en algunos complementos para generar pagos. Es extremadamente importante mantener esta información segura en tus servidores y no permitir el acceso a ningún usuario del sistema o intruso. |
+| Client ID  | El ID de cliente es un identificador único que representa tu integración. |
+| Client secret | Clave privada utilizada en algunos complementos para generar pagos. Es extremadamente importante mantener esta información segura en tus servidores y no permitir el acceso a ningún usuario del sistema o intruso. |
 
 > NOTE
 >
