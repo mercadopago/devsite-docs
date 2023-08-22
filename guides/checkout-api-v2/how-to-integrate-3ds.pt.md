@@ -327,8 +327,8 @@ Veja abaixo a tabela com os possíveis status e suas respectivas descrições.
 |------------|-------------------------------|-------------------------------------------------------------------|
 | "approved" | "accredited"                  | Transação aprovada sem autenticação.                               |
 | "rejected" | -                            | Transação rejeitada sem autenticação. Para conferir os motivos, consulte a [lista padrão de status detail](https://mercadopago.com.br/developers/pt/docs/checkout-api/response-handling/collection-results).                              |
-| "pending"  | "pending_challenge"           | Transação pendente de autenticação ou _timeout_ do challenge.       |
-| "rejected" | "cc_rejected_3ds_challenge"   | Transação rejeitada devido a falha no *challenge*.                  |
+| "pending"  | "pending_challenge"           | Transação pendente de autenticação ou _timeout_ do _Challenge_.       |
+| "rejected" | "cc_rejected_3ds_challenge"   | Transação rejeitada devido a falha no _Challenge_.                  |
 
 ## Teste de integração
 
@@ -338,7 +338,7 @@ Para que seja possível validar pagamentos com 3DS, disponibilizamos um ambiente
 >
 > Lembre-se de utilizar as credenciais de teste da sua aplicação. 
 
-Para realizar testes de pagamento em um ambiente *sandbox*, é necessário utilizar cartões específicos que permitem testar a implementação do *challenge* com os fluxos de sucesso e falha. A tabela a seguir apresenta os detalhes desses cartões:
+Para realizar testes de pagamento em um ambiente *sandbox*, é necessário utilizar cartões específicos que permitem testar a implementação do _Challenge_ com os fluxos de sucesso e falha. A tabela a seguir apresenta os detalhes desses cartões:
 
 | Cartão    | Fluxo                    | Número             | Código de segurança | Data de vencimento |
 |-----------|--------------------------|--------------------|---------------------|--------------------|
@@ -545,8 +545,8 @@ print(payment)
 
 ### Challenge
 
-Em ambos os fluxos (sucesso e falha), o *challenge*, que é uma tela semelhante à mostrada abaixo, deve ser exibido dentro do *iframe*:
+Em ambos os fluxos (sucesso e falha), o _Challenge_, que é uma tela semelhante à mostrada abaixo, deve ser exibido dentro do *iframe*:
 
 ![Challenge](/images/api/sandbox.png)
 
-O código de verificação fornecido é apenas ilustrativo. Para concluir o fluxo de teste, basta clicar no botão **Confirmar**. Após concluir essa ação, siga as instruções detalhadas na seção **Verificar o Status da Transação** para identificar quando o *challenge* foi concluído e como verificar a atualização do pagamento. 
+O código de verificação fornecido é apenas ilustrativo. Para concluir o fluxo de teste, basta clicar no botão **Confirmar**. Após concluir essa ação, siga as instruções detalhadas na seção **Verificar o Status da Transação** para identificar quando o _Challenge_ foi concluído e como verificar a atualização do pagamento. 

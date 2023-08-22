@@ -108,6 +108,7 @@ Para capturar un monto inferior al monto reservado, envía el valor a capturar a
 > Importante
 >
 > Solo disponible para Visa, Cabal, Master y American Express.
+
 ------------
 
 [[[
