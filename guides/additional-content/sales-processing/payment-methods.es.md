@@ -5,8 +5,8 @@ Puedes obtener una lista completa de los tipos y medios de pago disponibles, as�
 
 | Medios de pago | 🇦🇷 <br> Argentina | 🇧🇷 <br> Brasil | 🇨🇱 <br> Chile | 🇨🇴 <br> Colombia | 🇲🇽 <br> México | 🇵🇪 <br> Perú | 🇺🇾 <br>Uruguay | 🇻🇪 <br> Venezuela |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Efectivo en Cuenta | Mercado Pago* | Mercado Pago* | Mercado Pago* | Mercado Pago* | Mercado Pago* | Mercado Pago* | Mercado Pago* |
-| Mercado Crédito | Mercado Pago* | Mercado Pago* | - | - | Mercado Pago* | - | - | - | - |
+| Efectivo en Cuenta | Mercado Pago* | Mercado Pago* | Mercado Pago* | Mercado Pago* | Mercado Pago* | Mercado Pago* | Mercado Pago* | Mercado Pago* |
+| Mercado Crédito | Mercado Pago* | Mercado Pago* | - | - | Mercado Pago* | - | - | - | 
 | ATM |  -  | - | - | - | Bancomer** <br> Banamex** <br> Serfin** | PagoEfectivo | - | Mercantil |
 | Transferencia Bancaria | - | Pix* ** | - | PSE* | CLABE | - | - | - |
 | Crédito | Visa <br> Mastercard <br> American Express <br> Diners Club <br> Naranja** <br> Cabal | Visa <br> Mastercard <br> American Express <br> Hipercard <br> Elo | Visa <br> Mastercard <br> American Express | Visa <br> Mastercard <br> American Express <br> Diners Club <br> Codensa | Visa <br> Mastercard <br> American Express** | Visa <br> Diners Club <br> Mastercard <br> American Express | Visa <br> Mastercard <br> Oca <br> Lider <br> American Express <br> Creditel | Mastercard <br> Visa |

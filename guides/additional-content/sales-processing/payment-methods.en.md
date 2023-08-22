@@ -5,7 +5,7 @@ You can get a complete list of available payment types and methods as well as th
 
 | Payment methods | 🇦🇷 <br> Argentina | 🇧🇷 <br> Brazil | 🇨🇱 <br>  Chile | 🇨🇴 <br>  Colombia | 🇲🇽 <br> Mexico | 🇵🇪 <br> Peru | 🇺🇾 <br> Uruguay | 🇻🇪 <br> Venezuela |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Cash in Account | Mercado Pago* | Mercado Pago* | Mercado Pago* | Mercado Pago* | Mercado Pago* | Mercado Pago* | Mercado Pago* |
+| Cash in Account | Mercado Pago* | Mercado Pago* | Mercado Pago* | Mercado Pago* | Mercado Pago* | Mercado Pago* | Mercado Pago* | Mercado Pago* |
 | Mercado Crédito | Mercado Pago* | Mercado Pago* | - | - | Mercado Pago* | - | - | - | - |
 | ATM | - | - | - | - | Bancomer** <br> Banamex** <br> Serfin** | PagoEfectivo | - | Mercantil |
 | Bank Transfer | - | Pix* ** | - | PSE* | CLABE | - | - | - |

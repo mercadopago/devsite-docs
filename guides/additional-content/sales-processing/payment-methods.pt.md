@@ -4,7 +4,7 @@ Você pode obter uma lista completa dos tipos e meios de pagamento disponíveis 
 
 
 | Meios de pagamento | 🇦🇷 <br> Argentina | 🇧🇷 <br> Brasil | 🇨🇱 <br> Chile | 🇨🇴 <br> Colômbia | 🇲🇽 <br> México | 🇵🇪 <br> Peru | 🇺🇾 <br> Uruguai | 🇻🇪 <br> Venezuela |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | 
 | Dinheiro em Conta | Mercado Pago* | Mercado Pago* | Mercado Pago* | Mercado Pago* | Mercado Pago* | Mercado Pago* | Mercado Pago* | Mercado Pago* |
 | Mercado Crédito | Mercado Pago* | Mercado Pago* | - | - | Mercado Pago* | - | - | - |
 | ATM |  -  | - | - | - | Bancomer** <br> Banamex** <br> Serfin** | PagoEfectivo | - | Mercantil |
