@@ -19,59 +19,59 @@ Os textos customizáveis estão indicados abaixo.
 [[[
 ```javascript
 const settings = {
-    "customization": {
-        "visual": {
-            "texts": {
-                "formTitle": "",
-                "emailSectionTitle": "",
-                "installmentsSectionTitle": "",
-                "cardholderName": {
-                    "label": "",
-                    "placeholder": ""
-                },
-                "email": {
-                    "label": "",
-                    "placeholder": ""
-                },
-                "cardholderIdentification": {
-                    "label": ""
-                },
-                "cardNumber": {
-                    "label": "",
-                    "placeholder": ""
-                },
-                "expirationDate": {
-                    "label": "",
-                    "placeholder": ""
-                },
-                "securityCode": {
-                    "label": "",
-                    "placeholder": ""
-                },
-                "entityType": {
-                    "placeholder": "",
-                    "label": ""
-                },
-                "financialInstitution": {
-                    "placeholder": "",
-                    "label": ""
-                },
-                "selectInstallments": "",
-                "selectIssuerBank": "",
-                "formSubmit": "",
-                "paymentMethods": {
-                    "newCreditCardTitle": "aaaaaa",
-                    "creditCardTitle": "bbbbbbb",
-                    "creditCardValueProp": " cccccc",
-                    "newDebitCardTitle": "aaaaaaa",
-                    "debitCardTitle": "ddddd",
-                    "debitCardValueProp": "",
-                    "ticketTitle": "",
-                    "ticketValueProp": "",
-                }
-            }
+  customization: {
+    visual: {
+      texts: {
+        formTitle: "string",
+        emailSectionTitle: "string",
+        installmentsSectionTitle: "string",
+        cardholderName: {
+          label: "string",
+          placeholder: "string",
         },
-    }
+        email: {
+          label: "string",
+          placeholder: "string",
+        },
+        cardholderIdentification: {
+          label: "string",
+        },
+        cardNumber: {
+          label: "string",
+          placeholder: "string",
+        },
+        expirationDate: {
+          label: "string",
+          placeholder: "string",
+        },
+        securityCode: {
+          label: "string",
+          placeholder: "string",
+        },
+        entityType: {
+          placeholder: "string",
+          label: "string",
+        },
+        financialInstitution: {
+          placeholder: "string",
+          label: "string",
+        },
+        selectInstallments: "string",
+        selectIssuerBank: "string",
+        formSubmit: "string",
+        paymentMethods: {
+          newCreditCardTitle: "string",
+          creditCardTitle: "string",
+          creditCardValueProp: " string",
+          newDebitCardTitle: "string",
+          debitCardTitle: "string",
+          debitCardValueProp: "string",
+          ticketTitle: "string",
+          ticketValueProp: "string",
+        },
+      },
+    },
+  },
 };
 ```
 ```react-jsx
@@ -105,12 +105,12 @@ const customization = {
         placeholder: "string",
       },
       entityType: {
-        placeholder: "",
-        label: "",
+        placeholder: "string",
+        label: "string",
       },
       financialInstitution: {
-        placeholder: "",
-        label: "",
+        placeholder: "string",
+        label: "string",
       },
       selectInstallments: "string",
       selectIssuerBank: "string",
