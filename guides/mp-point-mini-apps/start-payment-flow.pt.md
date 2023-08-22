@@ -1,5 +1,14 @@
 # Começar o fluxo de pagamento
 
+----[mlb, mla]----
+> En este momento, los medios de pago disponibles son: **tarjetas de crédito y débito**, **pago con [código QR](/developers/es/docs/qr-code/landing)** y **[link de pago](/developers/es/docs/payment-link/intro-button)**.
+
+------------
+----[mlm]----
+> En este momento, los medios de pago disponibles son: **tarjetas de crédito y débito** y **[link de pago](/developers/es/docs/payment-link/intro-button)**.
+
+------------
+
 Existem três formas de começar um fluxo de pagamento, dependendo do callback de resposta a ser utilizado. A função `launchPaymentFlow` permite indicar URLs como callbacks e funções _JavaScript_ nativas para receber uma notificação com o resultado do fluxo de pagamento. Você também pode usá-la para iniciar o fluxo de pagamento com um método de pagamento específico.
 
 Confira os exemplos de cada implementação a seguir.

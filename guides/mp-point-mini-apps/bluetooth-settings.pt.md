@@ -1,8 +1,8 @@
 # Bluetooth
 
-Para iniciar a tela de configurações do bluetooth, chame a função `launchBluetoothSettings` como no exemplo abaixo.
-
 > Os tipos de dispositivos bluetooth permitidos são: **teclados**, **leitores de códigos de barras** e **impressoras**.
+
+Para iniciar a tela de configurações do bluetooth, chame a função `launchBluetoothSettings` como no exemplo abaixo.
 
 ```javascript
 launchBluetoothSettings(callbackResult)

@@ -2,6 +2,8 @@
 
 Veja abaixo quais são os comandos disponíveis para conectar via bluetooth um dispositivo externo compatível.
 
+> Os tipos de dispositivos bluetooth permitidos são: **teclados**, **leitores de códigos de barras** e **impressoras**.
+
 ## Ligar e desligar
 
 Para ligar e desligar um dispositivo bluetooth a partir de um MiniApp, o comando JS `bluetooth_enable` deve ser executado enviando uma ação como parâmetro para indicar a `action` a ser realizada.

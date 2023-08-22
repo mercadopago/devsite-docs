@@ -20,3 +20,33 @@ bullet_section_with_media:
 available_countries: mla, mlb, mlm
 
 ---
+
+--- mini_landing_separator ---
+>>>> Tipos de pagamento aceitos <<<<
+
+----[mlb]----
+
+---
+available_payments: credit, debit, QR, link
+
+---
+
+------------
+
+----[mla]---- 
+
+---
+available_payments: credit, debit, QR, link
+
+---
+------------
+
+----[mlm]---- 
+
+---
+available_payments: credit, debit, link
+
+---
+------------
+
+> Para detalhes dos meios de pagamento aceitos em cada país, verifique a lista completa com a [disponibilidade de meios de pagamento.](/developers/pt/docs/sales-processing/payment-methods)

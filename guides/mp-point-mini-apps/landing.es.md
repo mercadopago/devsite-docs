@@ -5,6 +5,14 @@ content_section_with_media:
  - media_image: /mini-apps/landing1-es.png
 ---
 
+--- mini_landing_separator ---
+
+>>>> Disponibilidade por país <<<<
+---
+available_countries: mla, mlb, mlm
+
+---
+
 ---
 bullet_section_with_media: 
  - title: 
@@ -15,8 +23,31 @@ bullet_section_with_media:
 
 --- mini_landing_separator ---
 
->>>> Disponibilidade por país <<<<
----
-available_countries: mla, mlb, mlm
+>>>> Tipos de pago aceptados <<<<
+
+----[mlb]----
 
 ---
+available_payments: credit, debit, QR, link
+
+---
+
+------------
+
+----[mla]---- 
+
+---
+available_payments: credit, debit, QR, link
+
+---
+------------
+
+----[mlm]---- 
+
+---
+available_payments: credit, debit, link
+
+---
+------------
+
+> Para obtener detalles sobre los medios de pago aceptados en cada país, consulte la lista completa con [disponibilidad de medios de pago.](/developers/es/docs/sales-processing/payment-methods)
