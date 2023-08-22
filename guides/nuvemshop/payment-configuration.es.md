@@ -12,4 +12,5 @@ La integración del módulo de Mercado Pago en Tiendanube te permite utilizar do
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 * [Checkout Pro](/developers/es/docs/nuvemshop/payment-configuration/checkout-pro): los compradores podrán pagar con una cuenta de Mercado Pago y todo el proceso de compra se realizará en nuestro entorno, lo que facilita el pago con tarjetas de débito, de crédito y otros medios de pago (redes de pago en efectivo, ATM y Mercado Crédito).
 * [Checkout API](/developers/es/docs/nuvemshop/payment-configuration/checkout-api): el pago se realiza sin salir de tu tienda virtual con tarjetas (crédito y debito) y redes de pago en efectivo.
+
 ------------

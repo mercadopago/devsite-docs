@@ -2,7 +2,7 @@
  
 Para integrar Mercado Pago a tu Tiendanube, sigue los procedimientos a continuación.
 
-----[mlm]----
+----[mlm, mla]----
 > WARNING
 >
 > Atención
@@ -21,7 +21,7 @@ Para integrar Mercado Pago a tu Tiendanube, sigue los procedimientos a continuac
 </center>
 
 ------------
-----[mlb, mla, mpe, mco, mlu, mlc]----
+----[mlb, mpe, mco, mlu, mlc]----
 1. Crea una [cuenta vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/activities) en Mercado Pago si todavía no tienes una.
 1. Instala la aplicación dentro de la tienda.
 1. Configura las formas de pago con Mercado Pago.
@@ -35,7 +35,7 @@ Para **vincular tu cuenta de Mercado Pago a Tiendanube**, sigue estos pasos:
 3. Haz clic en "Configurar" y luego en "Activar".
 4. Vas a ser redirigido a Mercado Pago para que ingreses con los datos de tu cuenta. Para autorizar la conexión, haz clic en "Permitir".
 
-----[mla, mlb]----
+----[mlb]----
 ![Payments Connect - Nuvem Shop](/images/nuvemshop/ar_tientanube_connect.gif)
 
 ------------
@@ -58,7 +58,7 @@ Una vez que hayas realizado esta configuración inicial, configura también las 
 
 Si quieres cambiar la cuenta de Mercado Pago asociada a tu tienda, es necesario cerrar y reinstalar la aplicación. Para hacerlo, sigue los pasos a continuación.
 
-----[mlm]----
+----[mlm, mla]----
 1. Si todavía estás conectado a tu cuenta de Mercado Pago en un navegador, desconéctate accediendo al "Menú de opciones" y, luego, haz clic en **Salir**.
 2. En el Panel Administrativo de tu Tiendanube, accede a **Mis aplicaciones > Ver todas las aplicaciones**. 
 3. Busca el plugin de Mercado Pago, localízalo en la lista de métodos de pago y haz clic en **Desinstalar**.
@@ -66,7 +66,7 @@ Si quieres cambiar la cuenta de Mercado Pago asociada a tu tienda, es necesario 
 5. Finalmente, vas a ser redirigido a Mercado Pago para que ingreses con los datos de tu cuenta. Para autorizar la conexión, haz clic en **Permitir**.
 
 ------------
-----[mlb, mla, mpe, mco, mlu, mlc]----
+----[mlb, mpe, mco, mlu, mlc]----
 1. Cierra tu cuenta de Mercado Pago si la tienes abierta en tu navegador.
 2. Selecciona "Salir" en el menú de opciones.
 3. Accede a las [configuraciones de medios de pago](https://mitiendanube.com/admin/payments/) en el menú de tu tienda, busca "Mercado Pago" y selecciona "Editar".

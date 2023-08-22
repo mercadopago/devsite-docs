@@ -342,6 +342,26 @@ Isso indica que foi criado o pagamento **999999999** para o usuário **44444** e
 
 Depois de dar um retorno à notificação e confirmar o seu recebimento, você obterá as informações completas do recurso notificado acessando o endpoint correspondente da API:
 
+----[mpe, mco, mlu, mlc]---- 
+| Tipo | URL | Documentação |
+| --- | --- | --- |
+| payment | `https://api.mercadopago.com/v1/payments/[ID]` | [ver documentação](/developers/pt/reference/payments/_payments_id/get) |
+| subscription_preapproval | `https://api.mercadopago.com/preapproval` | [ver documentação](/developers/pt/reference/subscriptions/_preapproval/post) |
+| subscription_preapproval_plan | `https://api.mercadopago.com/preapproval_plan` | [ver documentación](/developers/pt/reference/subscriptions/_preapproval_plan/post)  |
+| subscription_authorized_payment | `https://api.mercadopago.com/authorized_payments` | [ver documentación](/developers/pt/reference/subscriptions/_authorized_payments_id/get) |
+
+------------
+----[mlm, mlb]---- 
+| Tipo | URL | Documentação |
+| --- | --- | --- |
+| payment | `https://api.mercadopago.com/v1/payments/[ID]` | [ver documentação](/developers/pt/reference/payments/_payments_id/get) |
+| subscription_preapproval | `https://api.mercadopago.com/preapproval` | [ver documentação](/developers/pt/reference/subscriptions/_preapproval/post) |
+| subscription_preapproval_plan | `https://api.mercadopago.com/preapproval_plan` | [ver documentación](/developers/pt/reference/subscriptions/_preapproval_plan/post)  |
+| subscription_authorized_payment | `https://api.mercadopago.com/authorized_payments` | [ver documentación](/developers/pt/reference/subscriptions/_authorized_payments_id/get) |
+| point_integration_wh | - | [ver documentação](/developers/pt/docs/mp-point/integration-configuration/integrate-with-pdv/notifications) |
+
+------------
+----[mla]---- 
 | Tipo | URL | Documentação |
 | --- | --- | --- |
 | payment | `https://api.mercadopago.com/v1/payments/[ID]` | [ver documentação](/developers/pt/reference/payments/_payments_id/get) |
@@ -350,5 +370,8 @@ Depois de dar um retorno à notificação e confirmar o seu recebimento, você o
 | subscription_authorized_payment | `https://api.mercadopago.com/authorized_payments` | [ver documentación](/developers/pt/reference/subscriptions/_authorized_payments_id/get) |
 | point_integration_wh | - | [ver documentação](/developers/pt/docs/mp-point/integration-configuration/integrate-with-pdv/notifications) |
 | delivery | - | [ver documentação](/developers/pt/reference/mp_delivery/_proximity-integration_shipments_shipment_id_accept/put) |
+
+------------
+
 
 Com essas informações, você poderá realizar as atualizações necessárias na sua plataforma como, por exemplo, atualizar um pagamento aprovado.

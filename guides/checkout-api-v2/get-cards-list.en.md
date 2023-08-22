@@ -2,14 +2,12 @@
 
 You can consult the list of saved cards for a particular customer. To do so, send a **GET** with the customer's `customer_id` to the endpoint [/v1/customers/{customer_id}/cards](/developers/en/reference/cards/_customers_customer_id_cards/get) and execute the request or, if you prefer, use one of our SDKs below.
 
-
 [[[
 
 ```php
 
 <?php
-$customer = MercadoPago\Customer::find_by_id($id);
-$cards = $customer->cards();
+      $cards = MercadoPago\Card::all(array("customer_id" => "0000000000-abcdEfghiJlm"));
 ?>
 
 ```
@@ -30,10 +28,10 @@ console.log(customer);
 
 MercadoPagoConfig.setAccessToken("ENV_ACCESS_TOKEN");
 
-CustomerClient customerClient = new CustomerClient();
+CustomerCardClient customerCardClient = new CustomerCardClient();
 
-Customer customer = customerClient.get("247711297-jxOV430go9fx2e");
-customerClient.listCards(customer.getId());
+MPResourceList<CustomerCard> list = customerCardClient.listAll("000000000-abcdEfghiJklM");
+List<CustomerCard> customerCards = list.getResults();
 
 ```
 ```ruby
@@ -63,7 +61,7 @@ curl -X GET \
 ```
 ]]]
 
-The response will bring the following result.
+The response will bring the following result:
 
 ```json
 [{
@@ -75,4 +73,3 @@ The response will bring the following result.
 ...
 }]
 ```
-
