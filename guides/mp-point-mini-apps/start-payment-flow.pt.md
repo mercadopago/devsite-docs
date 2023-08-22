@@ -1,11 +1,11 @@
 # Começar o fluxo de pagamento
 
 ----[mlb, mla]----
-> En este momento, los medios de pago disponibles son: **tarjetas de crédito y débito**, **pago con [código QR](/developers/es/docs/qr-code/landing)** y **[link de pago](/developers/es/docs/payment-link/intro-button)**.
+> En este momento, los medios de pago disponibles son: **tarjetas de crédito y débito**, **pago con [código QR](/developers/es/docs/qr-code/landing)** y **[link de pago.](/developers/es/docs/payment-link/intro-button)**
 
 ------------
 ----[mlm]----
-> En este momento, los medios de pago disponibles son: **tarjetas de crédito y débito** y **[link de pago](/developers/es/docs/payment-link/intro-button)**.
+> En este momento, los medios de pago disponibles son: **tarjetas de crédito y débito** y **[link de pago.](/developers/es/docs/payment-link/intro-button)**
 
 ------------
 

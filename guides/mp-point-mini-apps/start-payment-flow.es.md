@@ -1,11 +1,11 @@
 # Iniciar el flujo de pago
 
 ----[mlb, mla]----
-> Neste momento, os métodos de pagamento disponíveis são: **cartões de crédito e débito**, **pagamento com [código QR](/developers/es/docs/qr-code/landing)** e **[link de pagamento](/developers/es/docs/payment-link/intro-button)**.
+> Neste momento, os métodos de pagamento disponíveis são: **cartões de crédito e débito**, **pagamento com [código QR](/developers/es/docs/qr-code/landing)** e **[link de pagamento.](/developers/es/docs/payment-link/intro-button)**
 
 ------------
 ----[mlm]----
-> Neste momento, os métodos de pagamento disponíveis são: **cartões de crédito e débito** e **[link de pagamento](/developers/es/docs/payment-link/intro-button)**.
+> Neste momento, os métodos de pagamento disponíveis são: **cartões de crédito e débito** e **[link de pagamento.](/developers/es/docs/payment-link/intro-button)**
 
 ------------
 

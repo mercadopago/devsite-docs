@@ -5,6 +5,14 @@ content_section_with_media:
  - media_image: /mini-apps/landing1-pt.png
 ---
 
+--- mini_landing_separator ---
+
+>>>> Disponibilidade por país <<<<
+---
+available_countries: mla, mlb, mlm
+
+---
+
 ---
 bullet_section_with_media: 
  - title: 
@@ -15,19 +23,12 @@ bullet_section_with_media:
 
 --- mini_landing_separator ---
 
->>>> Disponibilidade por país <<<<
----
-available_countries: mla, mlb, mlm
-
----
-
---- mini_landing_separator ---
 >>>> Tipos de pagamento aceitos <<<<
 
 ----[mlb]----
 
 ---
-available_payments: credit, debit, QR, link
+available_payments: credit, debit, mercadopago
 
 ---
 
@@ -36,7 +37,7 @@ available_payments: credit, debit, QR, link
 ----[mla]---- 
 
 ---
-available_payments: credit, debit, QR, link
+available_payments: credit, debit, mercadopago
 
 ---
 ------------
@@ -44,7 +45,7 @@ available_payments: credit, debit, QR, link
 ----[mlm]---- 
 
 ---
-available_payments: credit, debit, link
+available_payments: credit, debit, mercadopago
 
 ---
 ------------

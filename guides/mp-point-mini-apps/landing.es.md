@@ -28,7 +28,7 @@ bullet_section_with_media:
 ----[mlb]----
 
 ---
-available_payments: credit, debit, QR, link
+available_payments: credit, debit, mercadopago
 
 ---
 
@@ -37,7 +37,7 @@ available_payments: credit, debit, QR, link
 ----[mla]---- 
 
 ---
-available_payments: credit, debit, QR, link
+available_payments: credit, debit, mercadopago
 
 ---
 ------------
@@ -45,7 +45,7 @@ available_payments: credit, debit, QR, link
 ----[mlm]---- 
 
 ---
-available_payments: credit, debit, link
+available_payments: credit, debit, mercadopago
 
 ---
 ------------
