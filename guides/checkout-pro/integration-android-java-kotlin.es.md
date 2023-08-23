@@ -40,7 +40,7 @@ CustomTabsIntent intent = new CustomTabsIntent.Builder()
 intent.launchUrl(MainActivity.this, Uri.parse(url));
 ```
 ```Kotlin
-   val url = "URL-PREFERENCE"
+val url = "URL-PREFERENCE"
     val intent = CustomTabsIntent.Builder()
         .build()
     intent.launchUrl(this@MainActivity, Uri.parse(url))

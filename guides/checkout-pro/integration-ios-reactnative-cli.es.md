@@ -113,7 +113,7 @@ Para conocer más, puedes acceder a la documentación de [URLs de retorno](/deve
 > Configuración de la aplicación para la gestión del Deep Link
 
 Para poder recibir y gestionar el Deep Link es necesario configurar en nuestro proyecto de React Native el scheme y path que componen los Deep Links que recibimos para redireccionar a alguna parte de tu aplicación. 
-Para ello, desde Xcode ubícate en la información de su proyecto y agregue una nueva URL Types.
+Para ello, desde Xcode ubícate en la información de tu proyecto y agregue una nueva URL Types.
 
 ![xcode-paso1](/images/cow/xcode-paso1.png)
 
@@ -121,7 +121,7 @@ Ingresa el **identifier** de su aplicación y la **URL Schemes** del Deep Link.
 
 ![xcode-paso2](/images/cow/xcode-paso2.png)
 
-Esto generará el siguiente código en el archivo **ios/appname/Info.plist**:
+Esto generará el siguiente código en el archivo **ios/<appname>/Info.plist**:
 
 ```info.plist
 <key>CFBundleURLTypes</key>
@@ -136,7 +136,7 @@ Esto generará el siguiente código en el archivo **ios/appname/Info.plist**:
     </array>
 ```
 
-Agrega el siguiente código al archivo **ios/appname/AppDelegate.mm**
+Agrega el siguiente código al archivo **ios/<appname>/AppDelegate.mm**
 
 
 ```AppDelegate.mm

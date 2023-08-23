@@ -50,7 +50,7 @@ export default function ExpoWebBrowserExample(url) {
 			styles.container
 		} > < Button title = "Open Browser"
 		onPress = {
-			() => openBrowserAsync('https://url-to-open.com')
+			() => openBrowserAsync('YOUR-URL-PREFERENCE')
 		}
 		/> <StatusBar style="auto" / >
 		<

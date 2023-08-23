@@ -118,7 +118,7 @@ const ButtonCustomTabs = () => {
 		return ( < Button title = "Press Me"
 			onPress = {
 				() =>
-				openUrl('https://url-to-open.com')
+				openUrl('YOUR-URL-PREFERENCE')
 			}
 			/> );
 		};
@@ -148,6 +148,8 @@ Para conocer más, puedes acceder a la documentación de [URLs de retorno](/deve
 Para poder recibir y gestionar el Deep Link es necesario configurar en nuestro proyecto de React Native el scheme y path que componen los Deep Links que recibimos para redireccionar a alguna parte de tu aplicación. 
 Para ello, agrega el deep link en el archivo android **/app/src/main/AndroidManifest.xml** entre las etiquetas "activity".
 
+En el ejemplo que te mostramos a continuación, configurarás un Deep Link de la forma _myapp://checkout/congrats_.
+
 ```AndroidManifest.xml
 <activity ....> ....
 <intent-filter data-generated="true">
@@ -157,6 +159,8 @@ Para ello, agrega el deep link en el archivo android **/app/src/main/AndroidMani
 </intent-filter>
 .... </activity>
 ```
+
+La propiedad `pathPrefix` es opcional y puede ser agregada para dirigir una vista específica de la aplicación.
 
 
 > CLIENT_SIDE
