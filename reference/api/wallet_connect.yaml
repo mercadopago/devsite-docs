@@ -672,11 +672,11 @@ paths:
         eng: Create an Advanced Payment
         spa: Crear un Advanced Payment
         por: Criar um Advanced Payment
-      description: Advanced Payments are particular payments for wallet connect where the integrator obtains a "payer token" from the payer when it performs the agreement flow. This “payer token” is used by the integrator to make payment from the payer's wallet
+      description: Advanced Payments are specific payments for Wallet Connect. During the agreement process, the integrator receives a "payer token" from the payer. This token allows the integrator to execute the payment directly from the payer's wallet. If you wish to apply discounts, it is necessary to first create a discount promise before using them
       x-description-i18n:
-        eng: Advanced Payments are particular payments for wallet connect where the integrator obtains a "payer token" from the payer when it performs the agreement flow. This “payer token” is used by the integrator to make payment from the payer's wallet
-        spa: Los Advanced Payments son pagos particulares para Wallet Connect donde el integrador obtiene un "payer token" del pagador cuando realiza el flujo del agreement. Este "payer token" es utilizado por el integrador para realizar el pago desde la billetera del pagador
-        por: Advanced Payments são pagamentos específicos para Wallet Connect nos quais o integrador obtém um "payer token" do pagador quando realiza o fluxo do agreement. Este “payer token” é usado pelo integrador para fazer o pagamento a partir da carteira do pagador
+        eng: Advanced Payments are specific payments for Wallet Connect. During the agreement process, the integrator receives a "payer token" from the payer. This token allows the integrator to execute the payment directly from the payer's wallet. If you wish to apply discounts, it is necessary to first create a discount promise before using them
+        spa: Los Advanced Payments son pagos específicos para Wallet Connect. Durante el proceso del agreement, el integrador recibe un "payer token" del pagador. Este token permite que el integrador realice el pago directamente desde la billetera del pagador. Si desea aplicar descuentos, primero es necesario crear una promesa de descuento antes de utilizarlos
+        por: Advanced Payments são pagamentos específicos para Wallet Connect. Durante o processo de agreement, o integrador recebe um "payer token" do pagador. Esse token permite que o integrador efetue o pagamento diretamente da carteira do pagador. Se desejar aplicar descontos, é necessário criar uma promessa de desconto antes de utilizá-los
       requestBody:
         description: Here are the fields needed to complete a request for create an Advanced Payments.
         x-description-i18n:
@@ -1874,16 +1874,16 @@ paths:
     post:
       tags:
         - $ref: '#/tags/wallet-connect'
-      summary: Post Discount Promise
+      summary: Create a Discount Promise
       x-summary-i18n:
         eng: Create a Discount Promise
         spa: Crear una Discount Promise
         por: Criar uma Discount Promise
-      description: This endpoint facilitates the creation of a Discount Promise, which serves as an entity for Wallet Connect. This promise is subsequently utilized during the generation of an Advanced Payment, enabling the addition of a designated discount to the respective payment
+      description: This endpoint allows you to create a "Discount Promise" for Wallet Connect. This "Discount Promise" serves as a reference that can be used when generating an Advanced Payment, enabling the application of a specific discount to the payment. During the payment creation process, it's essential to include the information from the previously provided "Discount Promise"
       x-description-i18n:
-        eng: This endpoint facilitates the creation of a Discount Promise, which serves as an entity for Wallet Connect. This promise is subsequently utilized during the generation of an Advanced Payment, enabling the addition of a designated discount to the respective payment
-        spa: Este endpoint facilita la creación de una Discount Promise, que sirve como entidad para Wallet Connect. Esta promesa se utiliza posteriormente durante la generación de un Advanced Payment, lo que permite agregar un descuento designado al respectivo pago.
-        por: Este endpoint permite a criação de uma Discount Promise, que funciona como uma entidade para o Wallet Connect. Essa promessa é posteriormente utilizada durante a criação de um Advanced Payment, permitindo a adição de um desconto específico a este pagamento
+        eng: This endpoint allows you to create a "Discount Promise" for Wallet Connect. This "Discount Promise" serves as a reference that can be used when generating an Advanced Payment, enabling the application of a specific discount to the payment. During the payment creation process, it's essential to include the information from the previously provided "Discount Promise"
+        spa: Este endpoint te permite crear una "Discount Promise" para Wallet Connect. Esta "Discount Promise" actúa como una referencia que se utilizará al generar un Advanced Payment, permitiendo aplicar un descuento específico al pago. Durante el proceso de creación del pago, es esencial incluir la información de la "Discount Promise" proporcionada anteriormente
+        por: Este endpoint permite criar uma "Discount Promise" para o Wallet Connect. Essa "Discount Promise" é uma referência que será usada ao gerar um Advanced Payment, possibilitando aplicar um desconto específico ao pagamento. Durante a criação do pagamento, é essencial incluir as informações da "Discount Promise" fornecida anteriormente
       requestBody:
         description: Here are the fields needed to complete a request for create an Discount Promise.
         x-description-i18n:
