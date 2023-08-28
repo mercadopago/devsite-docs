@@ -31,7 +31,7 @@ Pronto! A nova ordem de exibição dos provadores de pagamentos está configurad
 ----[mla, mlb, mpe, mco, mlu, mlc]----
 <center>
 
-![mercado-pago-ordena](shopify/mercado-pago-ordena1-pt.gif)
+![mercado-pago-ordena](/images/shopify/mercado-pago-ordena1-pt.gif)
 
 </center>
 
@@ -39,7 +39,7 @@ Pronto! A nova ordem de exibição dos provadores de pagamentos está configurad
 ----[mla, mlb, mpe, mco, mlu, mlc]----
 <center>
 
-![mercado-pago-ordena](shopify/mercado-pago-ordena2-pt.gif)
+![mercado-pago-ordena](/images/shopify/mercado-pago-ordena2-pt.gif)
 
 </center>
 

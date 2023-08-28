@@ -33,7 +33,7 @@ Aprende cómo utilizar la app **Mercado Pago Ordena Checkouts** para cambiar el 
 ----[mla, mlb, mpe, mco, mlu, mlc]----
 <center>
 
-![mercado-pago-ordena](shopify/mercado-pago-ordena-es.gif)
+![mercado-pago-ordena](/images/shopify/mercado-pago-ordena-es.gif)
 
 </center>
 
