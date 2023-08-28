@@ -30,11 +30,8 @@ Learn how to use the **Mercado Pago Ordena Checkouts** app to change the display
 
 Done! The new display order for the payment providers is configured.
 
-----[mla, mlb, mpe, mco, mlu, mlc]----
 <center>
 
-![mercado-pago-ordena](/images/shopify/mercado-pago-ordena-en.gif)
+![mercado-pago-ordena](/images/shopify/mercado-pago-ordena-pt.gif)
 
 </center>
-
-------------

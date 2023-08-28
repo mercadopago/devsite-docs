@@ -28,19 +28,8 @@ Saiba como utilizar o app **Mercado Pago Ordena Checkouts** para alterar a ordem
 
 Pronto! A nova ordem de exibição dos provadores de pagamentos está configurada.
 
-----[mla, mlb, mpe, mco, mlu, mlc]----
 <center>
 
-![mercado-pago-ordena](/images/shopify/mercado-pago-ordena1-pt.gif)
+![mercado-pago-ordena](/images/shopify/mercado-pago-ordena-pt.gif)
 
 </center>
-
-------------
-----[mla, mlb, mpe, mco, mlu, mlc]----
-<center>
-
-![mercado-pago-ordena](/images/shopify/mercado-pago-ordena2-pt.gif)
-
-</center>
-
-------------
