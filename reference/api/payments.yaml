@@ -134,11 +134,11 @@ paths:
                             spa: Es el campo de apellido del comprador.
                             por: É o campo do sobrenome do comprador.
                           example: Test
-                        e-mail:
+                        email:
                           type: string
-                          description: Payer's e-mail
+                          description: Payer's email
                           x-description-i18n:
-                            eng: Payer's e-mail
+                            eng: Payer's email
                             spa: Email del comprador
                             por: E-mail do comprador
                           example: test_user_123@testuser.com
