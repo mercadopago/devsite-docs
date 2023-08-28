@@ -1,32 +1,32 @@
-# Integrar Checkout Pro para iOS con Swift
+# Integrate Checkout Pro for iOS with Swift
 
 > WARNING
 >
-> Importante
+> Important
 >
-> Antes de comenzar a integrar Checkout Pro para Mobile, deberás contar con una preferencia creada en tu backend. Si aún no lo has hecho, ve a [Creación de preferencia](/developers/es/docs/checkout-pro/common-initialization).
+> Before you start integrating Checkout Pro for Mobile, you'll need to have a preference created in your backend. If you haven't already done so, go to [Preference Creation](/developers/en/docs/checkout-pro/common-initialization).
 
-Safari View Controller integra todo Safari dentro de su aplicación usando un controlador de vista opaco. Es decir, no puede diseñarlo, no puede interactuar con él y no puede extraer ningún dato privado de él. Como resultado, **SFSafariViewController** puede aprovechar los datos web seguros del usuario.
+Safari View Controller integrates all of Safari within your app using an opaque view controller. That is, you can't design it, you can't interact with it, and you can't extract any private data from it. As a result, **SFSafariViewController** can take advantage of the user's secure web data.
 
-En este paso vamos a instalar y configurar las dependencias necesarias para implementar **SFSafariViewController** en tu proyecto desarrollado en Swift. 
+In this step we are going to install and configure the necessary dependencies to implement **SFSafariViewController** in your project developed in Swift.
 
 > CLIENT_SIDE
 >
 > h2
 >
-> Instalación de SFSafariViewController
+> Installing SFSafariViewController
 
-SFSafariViewController no forma parte del [UIKit](https://developer.apple.com/documentation/uikit) por lo que, para usarlo, **deberás importar Safari Services Framework** que contiene los servicios necesarios para integrar comportamientos de Safari en tu aplicación iOS.
+SFSafariViewController is not part of the [UIKit](https://developer.apple.com/documentation/uikit) so to use it you **must import the Safari Services Framework** which contains the services needed to integrate Safari behaviors into your iOS app.
 
-> Asegúrate de que el framework SafariServices esté agregado a tu proyecto. Si aún no lo tienes, dirígete a "Build Phases" y agrégalo en "Link Binary With Libraries".
+> Make sure the SafariServices framework is added to your project. If you don't already have it, go to "Build Phases" and add it under "Link Binary With Libraries".
 
-Para instalarlo, ve al archivo en donde desees utilizar Safari View Controller e importa la biblioteca SafariServices.
+To install it, go to the file where you want to use the Safari View Controller and import the SafariServices library.
 
 ```Main.swift
 import SafariServices
 ```
 
-Al trabajar con SFSafariViewController, puedes abrir la URL de preferencia con sólo enviar la URL o agregando algunos ajustes de configuración. A continuación, te mostramos algunos ejemplos de referencia para la implementación de SFSafariViewController.
+When working with SFSafariViewController, you can open the preferred URL just by sending the URL or by adding some configuration settings. Here are some reference examples for the SFSafariViewController implementation.
 
 [[[
 ```SwiftUI
@@ -94,26 +94,27 @@ class ViewController: UIViewController {
 >
 > h2
 >
-> Cómo volver a tu App 
+> How to return to your app
 
-Los **Deep Links**, también conocidos como enlaces profundos, son una forma poderosa de permitir la navegación directa a pantallas o secciones específicas de una aplicación móvil. 
+**Deep Links** are a powerful way to allow direct navigation to specific screens or sections of a mobile application.
 
-### Crear un Deep Link
-Desde nuestro checkout es posible configurar Deep Links para volver a tu aplicación ya sea haciendo click en un link de “Volver” o de forma automática al terminar todo un flujo de pago exitoso, para luego ser redirigido a tu App.
-Para esto debemos agregar en la creación de la preferencia de pago las propiedades `back_urls` y `auto_return` según corresponda.
+### Create a Deep Link
 
-Para conocer más, puedes acceder a la documentación de [URLs de retorno](/developers/es/docs/checkout-pro/checkout-customization/user-interface/redirection).
+From our checkout, you can configure Deep Links to return to your application, either by clicking a "Back" link or automatically after completing a successful payment flow, redirecting you back to your application.
 
+For this, we must add the back_urls and auto_return properties when creating the payment preference, as needed.
+
+To learn more, you can visit the documentation on [Return URLs](/developers/es/docs/checkout-pro/checkout-customization/user-interface/redirection).
 
 > CLIENT_SIDE
 >
 > h2
 >
-> Configuración de la aplicación para la gestión del Deep Link
+> Application configuration to manage Deep Link
 
-Para configurar un Deep Link nativo en iOS, dirígete al archivo `<appname>/Info.plist` y agrega el código que se muestra a continuación según sea tu caso.
+To set up a native Deep Link on iOS, go to the `<appname>/Info.plist` file and add the code below as appropriate.
 
-El siguiente ejemplo aplica para un deep link de la forma _iosapp://_:
+The following example applies to a deep link of the form _iosapp://_:
 
 ```
 <dict>
@@ -137,33 +138,33 @@ El siguiente ejemplo aplica para un deep link de la forma _iosapp://_:
 </dict>
 ```
 
-El valor `CFBundleURLName` corresponde al identificador de la aplicación (Identifier) y `CFBundleURLSchemes` al scheme utilizado en el Deep Link. 
+The `CFBundleURLName` value corresponds to the application identifier (Identifier) and `CFBundleURLSchemes` to the scheme used in the Deep Link.
 
-### Configurar el Deep Link desde Xcode
+### Configure the Deep Link from Xcode
 
-También puedes **configurar el Deep Link desde Xcode**. Para esto, ubícate en la información de tu proyecto y agrega una nueva `URL Type`.
+You can also **configure the Deep Link from Xcode**. For this, go to your project information and add a new `URL Type`.
 
 ![urltype_swift](/images/cow/urltype_swift.png)
 
-Luego, ingresa el `identifier` de tu aplicación y la `URL Schemes` del Deep Link.
+Then, enter the `identifier` of your application and the `URL Schemes` of the Deep Link.
 
 ![deeplink-xcode-swift](/images/cow/deeplink-xcode-swift.png)
 
-Esto generará automáticamente el mismo código que se indicó anteriormente en el archivo `<appname>/Info.plist`.
+This will automatically generate the same code as above in the `<appname>/Info.plist` file.
 
 
 > CLIENT_SIDE
 >
 > h2
 >
-> Recepción y gestión del Deep Link 
+> Deep Link reception and management
 
-En iOS, cuando un deep link intenta redirigir al usuario a la aplicación desde una Safari View Controller es necesario configurar un manejador de este evento para cerrarla y cargar la vista o escena que corresponda.
+In iOS, when a deep link tries to redirect the user to the application from a Safari View Controller, it is necessary to configure a handler for this event to close it and load the corresponding view or scene.
 
 [[[
 ```SwiftUI
 ===
-Desde el ContentView de la aplicación recibirás un Deep Link de la forma iosapp://congrat/success y, luego de un intervalo de tiempo, deberás cerrar Safari View Controller para  cargar una vista llamada SuccessView. 
+From the application's ContentView you will receive a Deep Link of the form iosapp://congrat/success and after some time interval you will need to close Safari View Controller to load a view called SuccessView.
 ===
 struct ContentView: View {
     @State private var showSuccessView = false
@@ -188,7 +189,7 @@ struct ContentView: View {
         }
         
         
-// Aquí la recepción deep link
+// Here the deep link reception
 
 .onOpenURL { url in
             if let components = URLComponents(url: url, resolvingAgainstBaseURL: false),
@@ -216,7 +217,7 @@ struct ContentView_Previews: PreviewProvider {
 ```
 ```UIKit
 ===
-Desde el AppDelegate.swift o SceneDelegate.swift según sea tu caso, recibirás un Deep Link de la forma iosapp://congrat/success. Luego debéras cerrar Safari View Controller para cargar una vista llamada SuccessViewController.
+From the AppDelegate.swift or SceneDelegate.swift, depending on your case, you will receive a Deep Link in the form iosapp://congrat/success. You will then need to close Safari View Controller to load a view called SuccessViewController.
 ===
 import UIKit
 

@@ -1,4 +1,4 @@
-# Integre o Checkout Pro para Android com Java ou Kotlin
+# Integrar o Checkout Pro para Android com Java ou Kotlin
 
 > WARNING
 >
