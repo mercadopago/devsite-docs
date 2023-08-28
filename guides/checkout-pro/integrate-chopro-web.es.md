@@ -4,12 +4,14 @@
 >
 > Añadir checkout
 
-Una vez que hayas creado la [preferencia en tu backend](/developers/es/docs/checkout-pro/common-initialization), deberás instalar el SDK de frontend de Mercado Pago en tu proyecto para agregar el botón de pago.
+Primero, asegúrate de haber **creado la [preferencia en tu backend](/developers/es/docs/checkout-pro/common-initialization)**.
+
+Luego, deberás instalar el SDK de frontend de Mercado Pago en tu proyecto para agregar el botón de pago.
 
 La instalación se realiza, básicamente, en **dos pasos**: 
 
-1. Agregar el SDK de Mercado Pago al proyecto con tus credenciales configuradas
-2. Iniciar el checkout desde la preferencia generada previamente
+1. [Agregar el SDK de Mercado Pago al proyecto con tus credenciales configuradas](/developers/es/docs/checkout-pro/integrate-checkout-pro/web#bookmark_agregar_el_sdk_de_mercado_pago_al_proyecto)
+2. [Iniciar el checkout desde la preferencia generada previamente](/developers/es/docs/checkout-pro/integrate-checkout-pro/web#bookmark_iniciar_el_checkout_desde_la_preferencia)
 
 > CLIENT_SIDE
 >
@@ -30,7 +32,7 @@ npm install @mercadopago/sdk-react
 ```
 ]]]
 
-Luego, inicialice la integración configurando tu [clave pública](/developers/pt/docs/checkout-pro/additional-content/your-integrations/credentials) usando el siguiente código JavaScript.
+Luego, inicializa la integración configurando tu [clave pública](/developers/es/docs/checkout-pro/additional-content/your-integrations/credentials) usando el siguiente código JavaScript.
 
 [[[
 ```Javascript
@@ -43,7 +45,7 @@ initMercadoPago('YOUR_PUBLIC_KEY');
 ```
 ]]]
 
-Para las integraciones de JavaScript/HTML, a través de CDN, deberá crear un contenedor de identificador para definir la ubicación donde se insertará el botón en la pantalla. La creación del contenedor se realiza insertando un elemento en el código HTML de la página en la que se representará el componente.
+Para las integraciones de JavaScript/HTML, a través de CDN, deberás crear un contenedor de identificador para definir la ubicación donde se insertará el botón en la pantalla. La creación del contenedor se realiza insertando un elemento en el código HTML de la página en la que se representará el componente.
 
 ```html
  <div id="wallet_container"></div>
@@ -59,9 +61,9 @@ Para las integraciones de JavaScript/HTML, a través de CDN, deberá crear un co
 >
 > h2
 >
->  Iniciar el checkout desde la preferencia
+> Iniciar el checkout desde la preferencia
 
-Al finalizar el paso anterior, **inicializa tu checkout usando el ID de la preferencia previamente creada con el identificador del elemento donde se debe mostrar el botón**, si estás usando la integración `Javascript/HTML`, o por instanciando el componente, en el caso de la biblioteca `React`, como se muestra en los ejemplos a continuación.
+Al finalizar el paso anterior, **inicializa tu checkout usando el ID de la preferencia previamente creada con el identificador del elemento donde se debe mostrar el botón**, si estás usando la integración `Javascript/HTML`, o instanciando el componente, en el caso de la biblioteca `React`, como se muestra en los ejemplos a continuación.
 
 [[[
 ```Javascript
@@ -76,7 +78,7 @@ mp.bricks().create("wallet", "wallet_container", {
 ```
 ]]]
 
-A continuación, podrá observar el botón de pago que se muestra en su página.
+A continuación, encontrarás el botón de pago que se muestra en tu página.
 
 <center>
 
@@ -84,13 +86,13 @@ A continuación, podrá observar el botón de pago que se muestra en su página.
 
 </center>
 
-En el ejemplo anterior, se mostrará un botón de pago y será responsable por abrir el Checkout Pro. Si desea que la experiencia con Checkout Pro se realice en una **pestaña externa o de manera modal**, consulte la sección [Esquema de apertura](/developers/es/docs/checkout-pro/checkout-customization/user-interface/opening-schema)
+En el ejemplo anterior, se rederizará un botón de pago que será responsable por abrir el Checkout Pro. Si deseas que la experiencia con Checkout Pro se realice en una **pestaña externa o de manera modal**, consulta la sección [Esquema de apertura](/developers/es/docs/checkout-pro/checkout-customization/user-interface/opening-schema)
 
 > WARNING
 >
 > Importante
 >
-> Es sumamente importante prestar atención, al crear la preferencia, a la configuración de las `back_urls` porque serán las encargadas de guiar el flujo de regreso a su sitio web cuando se complete el pago. Es posible definir tres URL de retorno diferentes, para escenarios de pago pendiente, éxito o error. Para obtener más información, consulte la sección [URL de retorno.](/developers/es/docs/checkout-pro/checkout-customization/user-interface/redirection).\
+> Es sumamente importante prestar atención, al crear la preferencia, a la configuración de las `back_urls` ya que estas serán las encargadas de guiar el flujo de regreso a tu sitio web cuando se complete el pago. Es posible definir tres URL de retorno diferentes que corresponden a escenarios de pago pendiente, éxito o error. Para obtener más información, consulta la sección [URL de retorno](/developers/es/docs/checkout-pro/checkout-customization/user-interface/redirection).\
 
 Al crear un pago es posible recibir 3 estados diferentes: `Pendiente`, `Rechazado` y `Aprobado`. Para mantenerse al día con las actualizaciones, debes configurar tu sistema para recibir notificaciones de pago y otras actualizaciones de estado. Consulta [Notificaciones](/developers/es/docs/checkout-pro/additional-content/your-integrations/notifications) para obtener más detalles.
 
