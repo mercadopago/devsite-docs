@@ -22,7 +22,7 @@ Con React Native CLI, te sugerimos usar [React-Native-InAppBrowser](https://www.
 * Cuenta con una gran variedad de funciones personalizables para adaptarse a las necesidades específicas de la aplicación.
 * Mantiene a los usuarios dentro del contexto de la aplicación aumentando la retención y la coherencia de la experiencia.
 
-Para instalarla, ejecuta el siguiente comando en tu terminal
+Para instalarla, ejecuta el siguiente comando en tu terminal.
 
 [[[
 ```npm
@@ -112,8 +112,8 @@ Para conocer más, puedes acceder a la documentación de [URLs de retorno](/deve
 >
 > Configuración de la aplicación para la gestión del Deep Link
 
-Para poder recibir y gestionar el Deep Link es necesario configurar en nuestro proyecto de React Native el scheme y path que componen los Deep Links que recibimos para redireccionar a alguna parte de tu aplicación. 
-Para ello, desde Xcode ubícate en la información de tu proyecto y agregue una nueva URL Types.
+Para poder recibir y gestionar el Deep Link, deberás configurar en tu proyecto de React Native el scheme y path que componen los Deep Links que recibiste para redireccionar a alguna parte de tu aplicación. 
+Para ello, desde Xcode ubícate en la información de tu proyecto y agrega una nueva "URL Types".
 
 ![xcode-paso1](/images/cow/xcode-paso1.png)
 
