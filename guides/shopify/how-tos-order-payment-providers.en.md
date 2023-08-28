@@ -33,7 +33,7 @@ Done! The new display order for the payment providers is configured.
 ----[mla, mlb, mpe, mco, mlu, mlc]----
 <center>
 
-![mercado-pago-ordena](shopify/mercado-pago-ordena-en.png)
+![mercado-pago-ordena](shopify/mercado-pago-ordena-en.gif)
 
 </center>
 
