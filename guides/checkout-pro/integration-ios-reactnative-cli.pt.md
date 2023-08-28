@@ -16,11 +16,11 @@ Nesta etapa iremos instalar e configurar as dependências necessárias para impl
 >
 > Uso de InAppBrowser
 
-Com o React Native CLI, recomendamos o uso do [React-Native-InAppBrowser](https://www.npmjs.com/package/react-native-inappbrowser-reborn), uma dependência altamente flexível que oferece uma solução abrangente para integrar um navegador web dentro do seu aplicativo React Native. Ao considerar o uso do React-Native-InAppBrowser-Reborn, os seguintes aspectos foram levados em consideração:
+Com o React Native CLI, recomendamos o uso do [React-Native-InAppBrowser](https://www.npmjs.com/package/react-native-inappbrowser-reborn), uma dependência altamente flexível que oferece uma solução abrangente para integrar um navegador web dentro da sua aplicação React Native. Ao considerar o uso do React-Native-InAppBrowser-Reborn, os seguintes aspectos foram levados em consideração:
 
-* É uma dependência que permite oferecer uma experiência de navegação web integrada e fluída dentro do aplicativo.
-* Possui uma ampla variedade de funções personalizáveis para se adaptar às necessidades específicas do aplicativo.
-* Mantém os usuários dentro do contexto do aplicativo, aumentando a retenção e a coerência da experiência.
+* É uma dependência que permite oferecer uma experiência de navegação web integrada e fluída dentro da aplicação.
+* Possui uma ampla variedade de funções personalizáveis para se adaptar às necessidades específicas da aplicação.
+* Mantém os usuários dentro do contexto da aplicação, aumentando a retenção e a coerência da experiência.
 
 Para instalá-la, execute o seguinte comando no seu terminal.
 
@@ -116,11 +116,11 @@ Para saber mais, você pode acessar a documentação sobre [URLs de retorno](/de
 >
 > Configuração da aplicação para gerenciar o Deep Link
 
-Para receber e gerenciar o Deep Link, você deve configurar no seu projeto React Native o esquema (scheme) e o caminho (path) que compõem os Deep Links que você recebeu para redirecionar para alguma parte do seu aplicativo. Para fazer isso, no Xcode, vá para as informações do seu projeto e adicione um novo "URL Types".
+Para receber e gerenciar o Deep Link, você deve configurar no seu projeto React Native o esquema (scheme) e o caminho (path) que compõem os Deep Links que você recebeu para redirecionar para alguma parte da sua aplicação. Para fazer isso, no Xcode, vá para as informações do seu projeto e adicione um novo "URL Types".
 
 ![xcode-paso1](/images/cow/xcode-paso1.png)
 
-Insira o **identificador** do seu aplicativo e os **Esquemas de URL** do Deep Link.
+Insira o **identificador** da sua aplicação e os **Esquemas de URL** do Deep Link.
 
 ![xcode-paso2](/images/cow/xcode-paso2.png)
 
@@ -158,12 +158,12 @@ openURL: (NSURL * ) url options: (NSDictionary < UIApplicationOpenURLOptionsKey,
 
 Por fim, veremos como podemos configurar nossa aplicação React Native para receber e gerenciar Deep Links. Isso será resolvido usando a dependência react-native-inappbrowser.
 
-No caso do iOS **é necessário fechar o Safari View Controller manualmente**. Para fazer isso, você precisará ouvir o evento de alteração de URL do componente que abre a janela ou o ponto de entrada do aplicativo e, em seguida, chamar o método para fechar o Safari View Controller.
+No caso do iOS **é necessário fechar o Safari View Controller manualmente**. Para fazer isso, você precisará ouvir o evento de alteração de URL do componente que abre a janela ou o ponto de entrada da aplicação e, em seguida, chamar o método para fechar o Safari View Controller.
 
 
 ### Uso do react-native-inappbrowser-reborn
 
-No caso do iOS é necessário fechar o Safari View Controller manualmente. Para fazer isso, você precisará ouvir o evento de alteração de URL do componente que abre a janela ou o ponto de entrada do aplicativo e, em seguida, chamar o método para fechar o Safari View Controller.
+No caso do iOS é necessário fechar o Safari View Controller manualmente. Para fazer isso, você precisará ouvir o evento de alteração de URL do componente que abre a janela ou o ponto de entrada da aplicação e, em seguida, chamar o método para fechar o Safari View Controller.
 
 ```JavaScript
 import {

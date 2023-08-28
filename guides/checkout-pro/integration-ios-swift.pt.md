@@ -6,7 +6,7 @@
 >
 > Antes de começar a integrar o Checkout Pro para Mobile, você precisará ter uma preferência criada em seu backend. Se ainda não o fez, vá para [Criação de preferência](/developers/pt/docs/checkout-pro/integrate-preferences).
 
-Safari View Controller integra todo o Safari em seu aplicativo usando um controlador de visualização opaco. Ou seja, você não pode projetá-lo, não pode interagir com ele e não pode extrair dele nenhum dado privado. Como resultado, **SFSafariViewController** pode aproveitar as vantagens dos dados seguros da Web do usuário.
+Safari View Controller integra todo o Safari em sua aplicação usando um controlador de visualização opaco. Ou seja, você não pode projetá-lo, não pode interagir com ele e não pode extrair dele nenhum dado privado. Como resultado, **SFSafariViewController** pode aproveitar as vantagens dos dados seguros da Web do usuário.
 
 Nesta etapa iremos instalar e configurar as dependências necessárias para implementar o **SFSafariViewController** em seu projeto desenvolvido em Swift.
 
@@ -16,7 +16,7 @@ Nesta etapa iremos instalar e configurar as dependências necessárias para impl
 >
 > Instalação do SFSafariViewController
 
-SFSafariViewController não faz parte do [UIKit](https://developer.apple.com/documentation/uikit) então para usá-lo você **deve importar o Safari Services Framework** que contém os serviços necessários para integrar os comportamentos do Safari em seu aplicativo iOS.
+SFSafariViewController não faz parte do [UIKit](https://developer.apple.com/documentation/uikit) então para usá-lo você **deve importar o Safari Services Framework** que contém os serviços necessários para integrar os comportamentos do Safari em sua aplicação iOS.
 
 > Certifique-se de que a estrutura SafariServices seja adicionada ao seu projeto. Se você ainda não o possui, vá em "Build Phases" e adicione-o em "Link Binary With Libraries".
 

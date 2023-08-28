@@ -119,11 +119,11 @@ Quando você executa `npx expo prebuild`, seu arquivo `ios/appname/Info.plist` d
 
 Por fim, veremos como podemos configurar nossa aplicação React Native para receber e gerenciar Deep Links. Isso será resolvido usando a dependência react-native-inappbrowser.
 
-No caso do iOS **é necessário fechar o Safari View Controller manualmente**. Para fazer isso, você precisará ouvir o evento de alteração de URL do componente que abre a janela ou o ponto de entrada do aplicativo e, em seguida, chamar o método para fechar o Safari View Controller.
+No caso do iOS **é necessário fechar o Safari View Controller manualmente**. Para fazer isso, você precisará ouvir o evento de alteração de URL do componente que abre a janela ou o ponto de entrada da aplicação e, em seguida, chamar o método para fechar o Safari View Controller.
 
 ### Uso do Expo-Web-Browser
 
-No caso do iOS é necessário fechar o Safari View Controller manualmente. Para fazer isso, você precisará ouvir o evento de alteração de URL do componente que abre a janela ou o ponto de entrada do aplicativo e, em seguida, chamar o método para fechar o Safari View Controller.
+No caso do iOS é necessário fechar o Safari View Controller manualmente. Para fazer isso, você precisará ouvir o evento de alteração de URL do componente que abre a janela ou o ponto de entrada da aplicação e, em seguida, chamar o método para fechar o Safari View Controller.
 
 ```JavaScript
 import {

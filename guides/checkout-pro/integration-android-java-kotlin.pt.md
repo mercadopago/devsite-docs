@@ -91,7 +91,7 @@ Para configurar um Deep Link nativo no Android, vá para o arquivo Android **/ap
 </activity>
 ```
 
-Nos valores `intent`, você deverá definir a atividade como navegável por outros aplicativos. Com os valores `scheme` e `host`, você pode definir o Deep Link do aplicativo para uma atividade específica.
+Nos valores `intent`, você deverá definir a atividade como navegável por outras aplicações. Com os valores `scheme` e `host`, você pode definir o Deep Link da aplicacão para uma atividade específica.
 
 Lembre-se de que este Deep Link será usado em todos os `back_urls` da sua preferência. Nos ciclos da atividade que foi exposta (por exemplo, onCreate, onResume), você poderá inserir sua lógica de negócios após o pagamento.
 

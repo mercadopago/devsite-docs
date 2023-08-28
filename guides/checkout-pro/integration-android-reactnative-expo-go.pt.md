@@ -88,7 +88,7 @@ Para saber mais, você pode acessar a documentação sobre [URLs de retorno](/de
 >
 > Configuração da aplicação para gerenciar o Deep Link 
 
-Para receber e gerenciar o Deep Link, é necessário configurar no projeto React Native o esquema (scheme) e o caminho (path) que compõem os Deep Links que recebemos para redirecionar para alguma parte do seu aplicativo.
+Para receber e gerenciar o Deep Link, é necessário configurar no projeto React Native o esquema (scheme) e o caminho (path) que compõem os Deep Links que recebemos para redirecionar para alguma parte da sua aplicação.
 
 Para fazer isso, adicione a seguinte configuração ao seu arquivo app.json localizado na raiz do seu projeto:
 
@@ -107,7 +107,7 @@ Para fazer isso, adicione a seguinte configuração ao seu arquivo app.json loca
 }
 ```
 
-* Neste exemplo, o Deep Link esperado para redirecionar para o aplicativo é **myapp://checkout/congrats**
+* Neste exemplo, o Deep Link esperado para redirecionar para a aplicação é **myapp://checkout/congrats**
 * A propriedade `pathPrefix` é **opcional**
 
 Se o projeto ainda não tiver um **prebuild**, é possível testar o Deep Link usando o Expo Go no terminal da seguinte maneira:
@@ -118,7 +118,7 @@ npx uri-scheme open exp://192.168.0.7:19000/--/checkout/congrats --android
 // Nota: Não é necessário passar o scheme nestes testes
 ```
 
-Se você executar um **prebuild** do aplicativo, verifique se o Deep Link para Android foi configurado no arquivo `android/app/src/main/AndroidManifest.xml`. O Deep Link deve estar entre as tags activity.
+Se você executar um **prebuild** da aplicação, verifique se o Deep Link para Android foi configurado no arquivo `android/app/src/main/AndroidManifest.xml`. O Deep Link deve estar entre as tags activity.
 
 ```AndroidManifest.xml
 <activity ....> ....
@@ -137,7 +137,7 @@ Se você executar um **prebuild** do aplicativo, verifique se o Deep Link para A
 >
 > Recepcão e gerenciamiento do Deep Link
 
-Por último, você deve configurar seu aplicativo React Native para receber e gerenciar os Deep Links. Isso será abordado usando a dependência react-native-inappbrowser.
+Por último, você deve configurar sua aplicação React Native para receber e gerenciar os Deep Links. Isso será abordado usando a dependência react-native-inappbrowser.
 
 No caso do Android, **o fechamento do custom tab é feito automaticamente** ao redirecionar para um Deep Link válido. Caso o link não seja válido, nenhuma ação de redirecionamento será executada a partir do custom tab.
 

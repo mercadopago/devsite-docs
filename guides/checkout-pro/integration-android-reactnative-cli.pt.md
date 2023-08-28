@@ -16,11 +16,11 @@ Nesta etapa iremos instalar e configurar as dependências necessárias para impl
 >
 > Uso do InAppBrowser
 
-Com o React Native CLI, recomendamos o uso do [React-Native-InAppBrowser](https://www.npmjs.com/package/react-native-inappbrowser-reborn), uma dependência altamente flexível que oferece uma solução abrangente para integrar um navegador web dentro do seu aplicativo React Native. Ao considerar o uso do React-Native-InAppBrowser-Reborn, os seguintes aspectos foram levados em consideração:
+Com o React Native CLI, recomendamos o uso do [React-Native-InAppBrowser](https://www.npmjs.com/package/react-native-inappbrowser-reborn), uma dependência altamente flexível que oferece uma solução abrangente para integrar um navegador web dentro da sua aplicação React Native. Ao considerar o uso do React-Native-InAppBrowser-Reborn, os seguintes aspectos foram levados em consideração:
 
-* É uma dependência que permite fornecer uma experiência de navegação web integrada e fluida dentro do aplicativo.
-* Possui uma ampla variedade de funções personalizáveis para se adaptar às necessidades específicas do aplicativo.
-* Mantém os usuários dentro do contexto do aplicativo, aumentando a retenção e a coerência da experiência.
+* É uma dependência que permite fornecer uma experiência de navegação web integrada e fluida dentro da aplicação.
+* Possui uma ampla variedade de funções personalizáveis para se adaptar às necessidades específicas da aplicação.
+* Mantém os usuários dentro do contexto da aplicação, aumentando a retenção e a coerência da experiência.
 
 Para instalá-la, execute o seguinte comando no seu terminal.
 
@@ -145,7 +145,7 @@ Para saber mais, você pode acessar a documentação sobre [URLs de retorno](/de
 >
 > Configuração da aplicação para gerenciar o Deep Link
 
-Para poder receber e gerenciar o Deep Link, é necessário configurar no projeto do React Native o esquema (scheme) e o caminho (path) que compõem os Deep Links que você recebeu para redirecionar para alguma parte do seu aplicativo. Para fazer isso, adicione o Deep Link no arquivo Android **/app/src/main/AndroidManifest.xml** entre as tags "activity".
+Para poder receber e gerenciar o Deep Link, é necessário configurar no projeto do React Native o esquema (scheme) e o caminho (path) que compõem os Deep Links que você recebeu para redirecionar para alguma parte da sua aplicação. Para fazer isso, adicione o Deep Link no arquivo Android **/app/src/main/AndroidManifest.xml** entre as tags "activity".
 
 No exemplo a seguir, você configurará um Deep Link da forma _myapp://checkout/congrats_.
 
@@ -159,7 +159,7 @@ No exemplo a seguir, você configurará um Deep Link da forma _myapp://checkout/
 .... </activity>
 ```
 
-A propriedade pathPrefix é opcional e pode ser adicionada para direcionar a uma visualização específica do aplicativo.
+A propriedade pathPrefix é opcional e pode ser adicionada para direcionar a uma visualização específica da aplicação.
 
 > CLIENT_SIDE
 >
@@ -167,7 +167,7 @@ A propriedade pathPrefix é opcional e pode ser adicionada para direcionar a uma
 >
 > Recepção e gerenciamento de Deep LinkR
 
-Por fim, veremos como configurar nosso aplicativo React Native para receber e gerenciar os Deep Links. Isso será abordado usando a dependência react-native-inappbrowser.
+Por fim, veremos como configurar a aplicação React Native para receber e gerenciar os Deep Links. Isso será abordado usando a dependência react-native-inappbrowser.
 
 No caso do Android, **o fechamento do custom tab é feito automaticamente** ao redirecionar para um Deep Link válido. No caso em que o link não seja válido, nenhuma ação de redirecionamento será executada a partir do custom tab.
 
