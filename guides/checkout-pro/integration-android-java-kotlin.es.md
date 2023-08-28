@@ -67,7 +67,7 @@ Para conocer más, puedes acceder a la documentación de [URLs de retorno](/deve
 >
 > Configuración de la aplicación para la gestión del Deep Link
 
-Para configurar un deeplink nativo en android, dirígete al archivo android **/app/src/main/AndroidManifest.xml** y declara cuál es la actividad que va estar disponible como deeplink. A continuación te compartimos un ejemplo de cómo es un activity con deeplink.
+Para configurar un deeplink nativo en android, dirígete al archivo android **/app/src/main/AndroidManifest.xml** y declara cuál es la actividad que va estar disponible como deeplink. A continuación te compartimos un ejemplo de cómo es una actividad con Deep Link.
 
 ```AndroidManifest.xml
 <activity
