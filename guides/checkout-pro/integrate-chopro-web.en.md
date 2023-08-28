@@ -4,7 +4,7 @@
 >
 > Add checkout
 
-First, make sure you have **created the [preference in your backend](/developers/en/docs/checkout-pro/common-initialization)**.
+First, make sure you have **created the [preference in your backend](/developers/en/docs/checkout-pro/integrate-preferences)**.
 
 Then, you will need to install the Mercado Pago frontend SDK in your project to add the payment button.
 

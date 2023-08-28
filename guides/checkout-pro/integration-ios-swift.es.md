@@ -4,7 +4,7 @@
 >
 > Importante
 >
-> Antes de comenzar a integrar Checkout Pro para Mobile, deberás contar con una preferencia creada en tu backend. Si aún no lo has hecho, ve a [Creación de preferencia](/developers/es/docs/checkout-pro/common-initialization).
+> Antes de comenzar a integrar Checkout Pro para Mobile, deberás contar con una preferencia creada en tu backend. Si aún no lo has hecho, ve a [Creación de preferencia](/developers/es/docs/checkout-pro/integrate-preferences).
 
 Safari View Controller integra todo Safari dentro de su aplicación usando un controlador de vista opaco. Es decir, no puede diseñarlo, no puede interactuar con él y no puede extraer ningún dato privado de él. Como resultado, **SFSafariViewController** puede aprovechar los datos web seguros del usuario.
 

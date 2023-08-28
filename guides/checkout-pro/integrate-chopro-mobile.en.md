@@ -18,4 +18,4 @@ If you wish to integrate Checkout Pro into a mobile application, we provide you 
 >
 > Important
 >
-> Before you start integrating Checkout Pro for Mobile, you must have a preference created in your backend. If you haven't done so yet, go to [Preference Creation](/developers/en/docs/checkout-pro/common-initialization).
+> Before you start integrating Checkout Pro for Mobile, you must have a preference created in your backend. If you haven't done so yet, go to [Preference Creation](/developers/en/docs/checkout-pro/integrate-preferences).
