@@ -161,7 +161,9 @@ Por fim, veremos como podemos configurar nossa aplicação React Native para rec
 No caso do iOS **é necessário fechar o Safari View Controller manualmente**. Para fazer isso, você precisará ouvir o evento de alteração de URL do componente que abre a janela ou o ponto de entrada do aplicativo e, em seguida, chamar o método para fechar o Safari View Controller.
 
 
-### Usando react-native-inappbrowser-reborn
+### Uso do react-native-inappbrowser-reborn
+
+No caso do iOS é necessário fechar o Safari View Controller manualmente. Para fazer isso, você precisará ouvir o evento de alteração de URL do componente que abre a janela ou o ponto de entrada do aplicativo e, em seguida, chamar o método para fechar o Safari View Controller.
 
 ```JavaScript
 import {

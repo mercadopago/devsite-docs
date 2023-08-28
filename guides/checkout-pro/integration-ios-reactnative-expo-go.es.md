@@ -94,7 +94,7 @@ Para ello, verifica que ru archivo **app.json** contenga el nombre del scheme:
 	"scheme": "myapp"
 }
 ```
-Al ejecutar `npx expo prebuild` su archivo `ios/appname/Info.plist` debería contener algo similar al siguiente código
+Al ejecutar `npx expo prebuild` su archivo `ios/appname/Info.plist` debería contener algo similar al siguiente código.
 
 ```info.plist
 <key>CFBundleURLTypes</key>

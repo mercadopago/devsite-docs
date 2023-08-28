@@ -160,7 +160,9 @@ Finally, we will see how we can configure our React Native application to receiv
 In the case of iOS **it is necessary to close the Safari View Controller manually**. To do this, you'll need to listen for the url change event from the component that opens the window or application entry point, and then call the method to close the Safari View Controller.
 
 
-### Using react-native-inappbrowser-reborn
+### Use of react-native-inappbrowser-reborn
+
+In the case of iOS it is necessary to close the Safari View Controller manually. To do this, you'll need to listen for the url change event from the component that opens the window or application entry point, and then call the method to close the Safari View Controller.
 
 ```JavaScript
 import {
