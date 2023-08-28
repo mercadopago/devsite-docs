@@ -115,7 +115,7 @@ npx uri-scheme open exp://192.168.0.7:19000/--/checkout/congrats --android
 // Nota: No es requerido pasar el scheme en estas pruebas
 ```
 
-En caso de correr un **prebuild** de la aplicación, debemos verificar que el deep link para Android se haya configurado en el  archivo `android/app/src/main/AndroidManifest.xml`. El deep link debe estar entre las etiquetas activity.
+En caso de correr un **prebuild** de la aplicación, deberás verificar que el deep link para Android se haya configurado en el  archivo `android/app/src/main/AndroidManifest.xml`. El deep link debe estar entre las etiquetas activity.
 
 ```AndroidManifest.xml
 <activity ....> ....
@@ -134,7 +134,7 @@ En caso de correr un **prebuild** de la aplicación, debemos verificar que el de
 >
 > Recepción y gestión del Deep Link 
 
-Por último, veremos cómo podemos configurar nuestra aplicación de React Native para recibir y gestionar los Deep Links. Esto se abordará usando la dependencia react-native-inappbrowser. 
+Por último, deberás configurar tu aplicación de React Native para recibir y gestionar los Deep Links. Esto se abordará usando la dependencia react-native-inappbrowser. 
 
 En el caso de Android, **el cierre del custom tab se hace de manera automática** al momento de redireccionar a un Deep Link válido. En que caso que el link no sea válido, no se ejecutará ninguna acción de redireccionamiento desde el custom tab.
 

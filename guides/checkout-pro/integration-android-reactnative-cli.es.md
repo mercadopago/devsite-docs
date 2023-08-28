@@ -22,7 +22,7 @@ Con React Native CLI, te sugerimos usar [React-Native-InAppBrowser](https://www.
 * Cuenta con una gran variedad de funciones personalizables para adaptarse a las necesidades específicas de la aplicación.
 * Mantiene a los usuarios dentro del contexto de la aplicación aumentando la retención y la coherencia de la experiencia.
 
-Para instalarla, ejecuta el siguiente comando en tu terminal
+Para instalarla, ejecuta el siguiente comando en tu terminal.
 
 [[[
 ```npm
@@ -35,8 +35,6 @@ yarn add react-native-inappbrowser-reborn
 
 
 ### Android support
-
-Si utilizas Android support, tu archivo debería tener estas propiedades. En caso de faltar alguna, agrégala. Las versiones pueden ser iguales o superiores.
 
 Si utilizas Android Support, tu archivo **android/build.gradle** debería tener las propiedades que describimos a continuación. En caso de faltar alguna, agrégala. Las versiones pueden ser iguales o superiores.
 
@@ -145,7 +143,7 @@ Para conocer más, puedes acceder a la documentación de [URLs de retorno](/deve
 >
 > Configuración de la aplicación para la gestión del Deep Link
 
-Para poder recibir y gestionar el Deep Link es necesario configurar en nuestro proyecto de React Native el scheme y path que componen los Deep Links que recibimos para redireccionar a alguna parte de tu aplicación. 
+Para poder recibir y gestionar el Deep Link es necesario configurar en el proyecto de React Native el scheme y path que componen los Deep Links que recibiste para redireccionar a alguna parte de tu aplicación. 
 Para ello, agrega el deep link en el archivo android **/app/src/main/AndroidManifest.xml** entre las etiquetas "activity".
 
 En el ejemplo que te mostramos a continuación, configurarás un Deep Link de la forma _myapp://checkout/congrats_.
