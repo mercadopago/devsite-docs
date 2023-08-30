@@ -93,5 +93,5 @@ When creating a payment it is possible to receive 3 different statuses: `Pending
 
 ## Implementation example
 
-Check out the [full integration example](http://github.com/mercadopago/checkout-payment-sample) on GitHub for **PHP** or **NodeJS** to _download_ a basic project for quick implementation from Checkout Pro.
+Check out the [full integration example](http://github.com/mercadopago/checkout-payment-sample) on GitHub for **PHP** or **NodeJS** to download a basic project for quick implementation from Checkout Pro.
 
