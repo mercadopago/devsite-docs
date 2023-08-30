@@ -87,7 +87,7 @@ In the example above, a payment button will be rendered and will be responsible 
 >
 > Important
 >
-> It is extremely important to pay attention, when creating the preference, to the configuration of the `back_urls` because they will be responsible for guiding the return flow to your website when the checkout is completed. It is possible to define three different return URLs, for payment pending, success or error scenarios. For more information, see the [Return URLs](/developers/en/docs/checkout-pro/checkout-customization/user-interface/redirection) section.
+> It is extremely important to pay attention, when creating the preference, to the configuration of the `back_urls`. They will be responsible for guiding the return flow to your website when the checkout is completed. It is possible to define three different return URLs, for payment pending, success or error scenarios. For more information, see the [Return URLs](/developers/en/docs/checkout-pro/checkout-customization/user-interface/redirection) section.
 
 When creating a payment it is possible to receive 3 different statuses: `Pending`, `Rejected` and `Approved`. To keep up with updates, you need to configure your system to receive payment notifications and other status updates. See [Notifications](/developers/en/docs/checkout-pro/additional-content/your-integrations/notifications) for more details.
 

@@ -1,6 +1,6 @@
 # Integrar Checkout Pro para Mobile
 
-Si quieres integrar Checkout Pro a una aplicación mobile, a continuación te brindamos distintas de tecnologías para que elijas la que mejor se ajuste a tu proyecto y sus necesidades.
+Para integrar o Checkout Pro em uma aplicação móvel, disponibilizamos várias tecnologias, permitindo que selecione a mais adequada para o seu projeto e suas especificidades.
 
 ## Android
 
@@ -18,4 +18,4 @@ Si quieres integrar Checkout Pro a una aplicación mobile, a continuación te br
 >
 > Importante
 >
-> Antes de começar a integrar o Checkout Pro para Dispositivos Móveis, você precisará ter uma preferência criada no seu backend. Se ainda não fez isso, vá para [Criação de preferência](/developers/pt/docs/checkout-pro/integrate-preferences).
+> Antes de iniciar a integração do Checkout Pro para Dispositivos Móveis, é necessário criar uma preferência no seu backend. Caso ainda não tenha realizado esse passo, consulte o guia [Criação de preferência](/developers/pt/docs/checkout-pro/integrate-preferences) para mais informações.
