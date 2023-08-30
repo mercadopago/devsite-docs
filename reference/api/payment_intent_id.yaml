@@ -3,22 +3,22 @@ servers:
   - url: https://api.mercadopago.com
 info:
   title: Mercado Pago API Reference
-  version: '1.0'
+  version: "1.0"
 paths:
-  /v1/transaction-intents/{id}:
+  /v1/payment-intents/{id}:
     get:
       tags:
         - $ref: "#/tags/checkout-api"
-      summary: Get transaction intent by ID
+      summary: Get payment intent by ID
       x-summary-i18n:
-        eng: Get transaction intent by ID
-        spa: Obtener transaction intent por ID
-        por: Obter transaction intent por ID
-      description: This endpoint allows you to retrieve an existing 'Transaction Intent' using its ID as a parameter
+        eng: Get payment intent by ID
+        spa: Obtener payment intent por ID
+        por: Obter payment intent por ID
+      description: This endpoint allows you to retrieve an existing 'Payment Intent' using its ID as a parameter
       x-description-i18n:
-        eng: This endpoint allows you to retrieve an existing 'Transaction Intent' using its ID as a parameter
-        spa: Este endpoint permite consultar una Transaction Intent ya existente mediante su ID
-        por: Este endpoint permite consultar uma Transaction Intent existente utilizando seu ID como parâmetro
+        eng: This endpoint allows you to retrieve an existing 'Payment Intent' using its ID as a parameter
+        spa: Este endpoint permite consultar una Payment Intent ya existente mediante su ID
+        por: Este endpoint permite consultar uma Payment Intent existente utilizando seu ID como parâmetro
       parameters:
         - in: header
           name: Authorization
@@ -31,12 +31,22 @@ paths:
             eng: Access Token  - Application's private key that must be used exclusively in the backend for payment generation, requiring these pieces of information to be kept secure on its servers.
             spa: Access Token - Clave privada de la aplicación que debe ser utilizada exclusivamente en el backend para la generación de pagos, siendo necesario mantener esta información segura en sus servidores.
             por: Access Token - Chave privada do aplicativo que deve ser usada exclusivamente no backend para a geração de pagamentos, sendo necessário manter essas informações seguras em seus servidores.
-        - name: id
-          description: Transaction Intent's Id.
+        - in: header
+          name: X-Integrator-ID
+          schema:
+            type: string
+          required: false
+          description: Optinal ID for programmers or agencies  who are part of the <dev>program.
           x-description-i18n:
-            eng: Transaction Intent's Id.
-            spa: ID de la Transaction Intent.
-            por: ID da Transaction Intent.
+            eng: Optinal ID for programmers or agencies  who are part of the <dev>program.
+            spa: ID opcional para programadores o agencias que forman parte del programa <dev>.
+            por: ID opcional para programadores ou agências que fazem parte do programa <dev>.
+        - name: id
+          description: Payment Intent's Id.
+          x-description-i18n:
+            eng: Payment Intent's Id.
+            spa: ID de la Payment Intent.
+            por: ID da Payment Intent.
           in: path
           required: true
           schema:
@@ -53,31 +63,31 @@ paths:
                   id:
                     type: string
                     example: "00001njp2i"
-                    description: ID of a created Transaction Intent.
+                    description: ID of a created Payment Intent.
                     x-description-i18n:
-                      eng: ID of a created Transaction Intent.
-                      spa: ID de la Transaction Intent creada.
-                      por: ID da Transaction Intent criada.
+                      eng: ID of a created Payment Intent.
+                      spa: ID de la Payment Intent creada.
+                      por: ID da Payment Intent criada.
                   created_date:
                     type: string
                     example: "2023-09-06T08:00:00.000-03:00"
-                    description: Date of creation of the Transaction Intent. For example, "2023-09-06T08:00:00.000-03:00".
+                    description: Date of creation of the Payment Intent. For example, "2023-09-06T08:00:00.000-03:00".
                     x-description-i18n:
-                      eng: Date of creation of the Transaction Intent. For example, "2023-09-06T08:00:00.000-03:00".
-                      spa: Fecha de creación de la Transaction Intent. Por ejemplo, "2023-09-06T08:00:00.000-03:00".
-                      por: Data de criação da Transaction Intent. Por exemplo, "2023-09-06T08:00:00.000-03:00".
+                      eng: Date of creation of the Payment Intent. For example, "2023-09-06T08:00:00.000-03:00".
+                      spa: Fecha de creación de la Payment Intent. Por ejemplo, "2023-09-06T08:00:00.000-03:00".
+                      por: Data de criação da Payment Intent. Por exemplo, "2023-09-06T08:00:00.000-03:00".
                     format: date-time
                   status:
                     type: string
                     example: "authorized"
-                    description: Current status of the Transaction Intent.
+                    description: Current status of the Payment Intent.
                     x-description-i18n:
-                      eng: Current status of the Transaction Intent.
-                      spa: Status actual de la Transaction Intent.
-                      por: Status atual da Transaction Intent.
+                      eng: Current status of the Payment Intent.
+                      spa: Status actual de la Payment Intent.
+                      por: Status atual da Payment Intent.
                     enum:
                       - new--nova
-                      - transaction_in_process--transação em processo
+                      - payment_in_process--transação em processo
                       - partially_processed--parcialmente processada
                       - processed--processada
                       - partially_reverted--revertida parcialmente
@@ -95,40 +105,40 @@ paths:
                       por: URL que permite iniciar o fluxo de pagamento. Por exemplo, "https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=123456789".
                   configuration:
                     type: object
-                    description: Predefined configuration parameters set by the seller before initiating the transaction.
+                    description: Predefined configuration parameters set by the seller before initiating the payment.
                     x-description-i18n:
-                      eng: Predefined configuration parameters set by the seller before initiating the transaction.
+                      eng: Predefined configuration parameters set by the seller before initiating the payment.
                       spa: Parámetros de configuración predefinidos por el seller antes de iniciar la transacción.
                       por: Parâmetros de configuração pré-definidos pelo seller antes de iniciar a transação.
                     properties:
                       option:
                         type: object
-                        description: Seller-defined settings to determine the choices offered during the transaction. This field refers to the configurations the seller establishes to provide diverse options to buyers throughout the transaction process. This can encompass selections such as accepted payment methods, installment plans, shipping options, discounts, and other customizations that impact how the transaction is conducted.
+                        description: Seller-defined settings to determine the choices offered during the payment. This field refers to the configurations the seller establishes to provide diverse options to buyers throughout the payment process. This can encompass selections such as accepted payment methods, installment plans, shipping options, discounts, and other customizations that impact how the payment is conducted.
                         x-description-i18n:
-                          eng: Seller-defined settings to determine the choices offered during the transaction. This field refers to the configurations the seller establishes to provide diverse options to buyers throughout the transaction process. This can encompass selections such as accepted payment methods, installment plans, shipping options, discounts, and other customizations that impact how the transaction is conducted.
+                          eng: Seller-defined settings to determine the choices offered during the payment. This field refers to the configurations the seller establishes to provide diverse options to buyers throughout the payment process. This can encompass selections such as accepted payment methods, installment plans, shipping options, discounts, and other customizations that impact how the payment is conducted.
                           spa: Ajustes establecidos por el seller para determinar las opciones ofrecidas durante la transacción. Este campo se refiere a las configuraciones que el seller establece para proporcionar diferentes opciones a los compradores durante el proceso de transacción. Esto puede incluir elecciones como métodos de pago aceptados, cuotas, opciones de envío, descuentos y otras personalizaciones que afectan la forma en que se lleva a cabo la transacción.
                           por: Ajustes estabelecidos pelo seller para determinar as escolhas oferecidas durante a transação. Este campo e refere às configurações que o seller configura para fornecer diferentes opções aos compradores durante o processo de transação. Isso pode incluir escolhas como meios de pagamento aceitos, parcelamento, opções de envio, descontos e outras personalizações que afetam a forma como a transação é conduzida.
                         properties:
                           purpose:
                             type: string
-                            description: Transaction purpose identifier that enables loading a list of predefined options. For example, wallet_purchase, onboarding_credits.
+                            description: Payment purpose identifier that enables loading a list of predefined options. For example, wallet_purchase, onboarding_credits.
                             x-description-i18n:
-                              eng: Transaction purpose identifier that enables loading a list of predefined options. For example, wallet_purchase, onboarding_credits.
+                              eng: Payment purpose identifier that enables loading a list of predefined options. For example, wallet_purchase, onboarding_credits.
                               spa: Identificador de propósito de transacción que permite cargar una lista de opciones predefinidas. Por ejemplo, wallet_purchase, onboarding_credits.
                               por: Identificador da finalidade da transação, que permite carregar uma lista de opções predefinidas. Por exemplo, wallet_purchase, onboarding_credits.
                             example: wallet_purchase, onboarding_credits
                           payment_methods:
                             type: object
-                            description: Information related to the payment methods defined for the transaction.
+                            description: Information related to the payment methods defined for the payment.
                             x-description-i18n:
-                              eng: Information related to the payment methods defined for the transaction.
+                              eng: Information related to the payment methods defined for the payment.
                               spa: Información relacionada con los medios de pago definidos para la transacción.
                               por: Informações relacionadas aos meios de pagamento definidos para a transação.
                             properties:
                               coupons:
-                                description: Coupons can be used as a methods of payment in the transaction.
+                                description: Coupons can be used as a methods of payment in the payment.
                                 x-description-i18n:
-                                  eng: Coupons can be used as a methods of payment in the transaction.
+                                  eng: Coupons can be used as a methods of payment in the payment.
                                   spa: Los cupones pueden ser utilizados como medio de pago en la transacción.
                                   por: Os cupons podem ser utilizados como meio de pagamento na transação.
                                 type: object
@@ -168,9 +178,9 @@ paths:
                                       type: string
                                       example: credit_card, debit_card
                                   disabled:
-                                    description: Types of payment methods not covered. This parameter encompasses payments that will not be accepted in the transaction, such as "credit card".
+                                    description: Types of payment methods not covered. This parameter encompasses payments that will not be accepted in the payment, such as "credit card".
                                     x-description-i18n:
-                                      eng: Types of payment methods not covered. This parameter encompasses payments that will not be accepted in the transaction, such as "credit card".
+                                      eng: Types of payment methods not covered. This parameter encompasses payments that will not be accepted in the payment, such as "credit card".
                                       spa: Tipos de medios de pago no incluidos. Este parámetro abarca los pagos que no serán aceptados en la transacción, como por ejemplo, "credit card".
                                       por: Tipos de meios de pagamento não abrangidos. Este parâmetro engloba os pagamentos que não serão aceitos na transação, como por exemplo, "credit card".
                                     type: array
@@ -263,9 +273,9 @@ paths:
                           por: Configuração do seller sobre a integração.
                         properties:
                           notifications:
-                            description: Parameter related to the configuration of notification URLs for completed transactions.
+                            description: Parameter related to the configuration of notification URLs for completed payments.
                             x-description-i18n:
-                              eng: Parameter related to the configuration of notification URLs for completed transactions.
+                              eng: Parameter related to the configuration of notification URLs for completed payments.
                               spa: Parámetro relacionado con la configuración de las URLs de notificación para transacciones completadas.
                               por: Parâmetro relacionado às configurações das URLs de notificação para transações efetuadas.
                             type: object
@@ -353,9 +363,9 @@ paths:
                       reason:
                         type: string
                         example: "my_order_description"
-                        description: Reason for the order or transaction.
+                        description: Reason for the order or payment.
                         x-description-i18n:
-                          eng: Reason for the order or transaction.
+                          eng: Reason for the order or payment.
                           spa: Motivo de la orden o transacción.
                           por: Motivo da ordem ou transação.
                       amount:
@@ -367,11 +377,11 @@ paths:
                           spa: Monto total que se desea cobrar.
                           por: Valor total a ser pago.
                       items:
-                        description: Information relevant to the configuration of the items comprising the transaction, such as the list of items, their quantities, and prices. This encompasses details about the various products or services involved in the transaction, including the quantity of each item and the corresponding price for each of them.
+                        description: Information relevant to the configuration of the items comprising the payment, such as the list of items, their quantities, and prices. This encompasses details about the various products or services involved in the payment, including the quantity of each item and the corresponding price for each of them.
                         x-description-i18n:
-                          eng: Information relevant to the configuration of the items comprising the transaction, such as the list of items, their quantities, and prices. This encompasses details about the various products or services involved in the transaction, including the quantity of each item and the corresponding price for each of them.
+                          eng: Information relevant to the configuration of the items comprising the payment, such as the list of items, their quantities, and prices. This encompasses details about the various products or services involved in the payment, including the quantity of each item and the corresponding price for each of them.
                           spa: Información relevante para la configuración de los elementos que componen la transacción, como la lista de elementos, sus cantidades y precios. Esto abarca detalles sobre los diferentes productos o servicios involucrados en la transacción, incluyendo la cantidad de cada elemento y el precio correspondiente a cada uno de ellos.
-                          por: Informações pertinentes à configuração dos itens que constituem a transação, tais como a lista de itens, suas quantidades e preços. Isso abrange informações sobre os diferentes produtos ou serviços envolvidos na transação, incluindo a quantidade de cada item e o preço correspondente a cada um deles. 
+                          por: Informações pertinentes à configuração dos itens que constituem a transação, tais como a lista de itens, suas quantidades e preços. Isso abrange informações sobre os diferentes produtos ou serviços envolvidos na transação, incluindo a quantidade de cada item e o preço correspondente a cada um deles.
                         type: array
                         items:
                           type: object
@@ -435,9 +445,9 @@ paths:
                           amount:
                             type: string
                             example: "50.00"
-                            description: Amount of the transaction corresponding to the collector.
+                            description: Amount of the payment corresponding to the collector.
                             x-description-i18n:
-                              eng: Amount of the transaction corresponding to the collector.
+                              eng: Amount of the payment corresponding to the collector.
                               spa: Monto de la transacción que corresponde al collector.
                               por: Valor da transação correspondente ao collector.
                       payer:
@@ -561,18 +571,18 @@ paths:
                                 example: "99999999"
                       advanced:
                         type: object
-                        description: Options for advanced transaction.
+                        description: Options for advanced payment.
                         x-description-i18n:
-                          eng: Options for advanced transaction.
+                          eng: Options for advanced payment.
                           spa: Agrupación de opciones avanzadas para la transacción.
                           por: Opções avançadas para a transação.
                         properties:
                           binary_mode:
                             type: boolean
                             example: true
-                            description: Enables requesting a final transaction response during the initial processing, disabling any options for offline or asynchronous processing.
+                            description: Enables requesting a final payment response during the initial processing, disabling any options for offline or asynchronous processing.
                             x-description-i18n:
-                              eng: Enables requesting a final transaction response during the initial processing, disabling any options for offline or asynchronous processing.
+                              eng: Enables requesting a final payment response during the initial processing, disabling any options for offline or asynchronous processing.
                               spa: Permite solicitar una respuesta definitiva de la transacción durante el procesamiento inicial, deshabilitando cualquier opción de procesamiento fuera de línea o asíncrono.
                               por: Possibilita requerer uma resposta definitiva da transação no primeiro processamento, desabilitando quaisquer opções de processamento offline ou assíncrono.
                           marketplace:
@@ -600,9 +610,9 @@ paths:
                               spa: ID de la cuenta de Mercado Pago encargada de pagar las comisiones.
                               por: Identificação da conta do Mercado Pago responsável pelo pagamento das comissões.
                       amount_details:
-                        description: This field encompasses transaction value details, including the amount paid, and in cases of refunds, the total refunded amount. Additionally, it covers the costs associated with shipping the purchased product.
+                        description: This field encompasses payment value details, including the amount paid, and in cases of refunds, the total refunded amount. Additionally, it covers the costs associated with shipping the purchased product.
                         x-description-i18n:
-                          eng: This field encompasses transaction value details, including the amount paid, and in cases of refunds, the total refunded amount. Additionally, it covers the costs associated with shipping the purchased product.
+                          eng: This field encompasses payment value details, including the amount paid, and in cases of refunds, the total refunded amount. Additionally, it covers the costs associated with shipping the purchased product.
                           spa: Este campo abarca los detalles de valor de la transacción, incluyendo la cantidad pagada y, en casos de reembolso, la cantidad total reembolsada. Además, cubre los costos asociados con el envío del producto adquirido.
                           por: Este campo abrange os detalhes relacionados aos montantes da transação, incluindo o valor pago e, em situações de reembolso, o montante total reembolsado. Também engloba os custos associados ao envio do produto adquirido.
                         type: object
@@ -610,9 +620,9 @@ paths:
                           total:
                             type: string
                             example: "123.00"
-                            description: Details of the total value of the transaction.
+                            description: Details of the total value of the payment.
                             x-description-i18n:
-                              eng: Details of the total value of the transaction.
+                              eng: Details of the total value of the payment.
                               spa: Detalles del monto total de la transacción.
                               por: Detalhes do valor total da transação.
                           paid:
@@ -640,9 +650,9 @@ paths:
                               spa: Monto cobrado por envío (incluido en el otal).
                               por: Valor cobrado por envio (incluído no total).
                       payment_method:
-                        description: Detailed information about the available payment methods during the transaction, such as the total amount to be paid using a specific payment method, installment options, among others.
+                        description: Detailed information about the available payment methods during the payment, such as the total amount to be paid using a specific payment method, installment options, among others.
                         x-description-i18n:
-                          eng: Detailed information about the available payment methods during the transaction, such as the total amount to be paid using a specific payment method, installment options, among others.
+                          eng: Detailed information about the available payment methods during the payment, such as the total amount to be paid using a specific payment method, installment options, among others.
                           spa: Información detallada sobre los medios de pago disponibles durante la transacción, como por ejemplo, el monto total a pagar utilizando un método de pago específico, opciones de financiamiento, entre otros.
                           por: Informações detalhadas sobre os meios de pagamento disponíveis durante a transação, como por exemplo, valor total a ser pago com determinado meio de pagamento, parcelamento, entre outros.
                         type: object
@@ -691,9 +701,9 @@ paths:
                                 issuer:
                                   type: string
                                   example: "23"
-                                  description: If required, this is the identifier of the card issuer entity. This identifier is used to record the source of the payment card. In certain situations, having this information is important for tracking, security, and transaction analysis purposes.
+                                  description: If required, this is the identifier of the card issuer entity. This identifier is used to record the source of the payment card. In certain situations, having this information is important for tracking, security, and payment analysis purposes.
                                   x-description-i18n:
-                                    eng: If required, this is the identifier of the card issuer entity. This identifier is used to record the source of the payment card. In certain situations, having this information is important for tracking, security, and transaction analysis purposes.
+                                    eng: If required, this is the identifier of the card issuer entity. This identifier is used to record the source of the payment card. In certain situations, having this information is important for tracking, security, and payment analysis purposes.
                                     spa: En caso de ser necesario, este es el identificador de la entidad emisora de la tarjeta. Este identificador se utiliza para registrar el origen de la tarjeta de pago. En ciertas situaciones, contar con esta información es importante para fines de seguimiento, seguridad y análisis de transacciones.
                                     por: Se necessário, este é o identificador da instituição que emitiu o cartão. Esse identificador é usado para registrar a origem do cartão de pagamento. Em algumas situações, é importante ter essa informação para fins de rastreamento, segurança e análise de transações.
                                 installments:
@@ -707,11 +717,11 @@ paths:
                                 statement_descriptor:
                                   type: string
                                   example: "MERCADOPAGO"
-                                  description: Charge descriptor to be displayed on the card statement. The charge descriptor is the text or name that will appear on the customer's credit card statement to identify the transaction. It provides a brief description that assists the customer in recognizing the nature of the transaction conducted.
+                                  description: Charge descriptor to be displayed on the card statement. The charge descriptor is the text or name that will appear on the customer's credit card statement to identify the payment. It provides a brief description that assists the customer in recognizing the nature of the payment conducted.
                                   x-description-i18n:
-                                    eng: Charge descriptor to be displayed on the card statement. The charge descriptor is the text or name that will appear on the customer's credit card statement to identify the transaction. It provides a brief description that assists the customer in recognizing the nature of the transaction conducted.
+                                    eng: Charge descriptor to be displayed on the card statement. The charge descriptor is the text or name that will appear on the customer's credit card statement to identify the payment. It provides a brief description that assists the customer in recognizing the nature of the payment conducted.
                                     spa: Descriptor del cargo que se mostrará en el estado de cuenta de la tarjeta. El descriptor del cargo es el texto o nombre que aparecerá en el estado de cuenta de la tarjeta de crédito del cliente para identificar la transacción. Proporciona una breve descripción que ayuda al cliente a reconocer la naturaleza de la transacción realizada.
-                                    por: Descritor da cobrança a ser mostrada no extrato do cartão. O descritor da cobrança é o texto ou nome que aparecerá no extrato do cartão de crédito do cliente para identificar a transação. Ele fornece uma breve descrição que ajuda o cliente a reconhecer a natureza da transação realizada. 
+                                    por: Descritor da cobrança a ser mostrada no extrato do cartão. O descritor da cobrança é o texto ou nome que aparecerá no extrato do cartão de crédito do cliente para identificar a transação. Ele fornece uma breve descrição que ajuda o cliente a reconhecer a natureza da transação realizada.
                                 refunds:
                                   description: List of refunds related to the payment method.
                                   x-description-i18n:
@@ -812,19 +822,19 @@ paths:
                                 issuer:
                                   type: string
                                   example: "23"
-                                  description: If required, this is the identifier of the card issuer entity. This identifier is used to record the source of the payment card. In certain situations, having this information is important for tracking, security, and transaction analysis purposes.
+                                  description: If required, this is the identifier of the card issuer entity. This identifier is used to record the source of the payment card. In certain situations, having this information is important for tracking, security, and payment analysis purposes.
                                   x-description-i18n:
-                                    eng: If required, this is the identifier of the card issuer entity. This identifier is used to record the source of the payment card. In certain situations, having this information is important for tracking, security, and transaction analysis purposes.
+                                    eng: If required, this is the identifier of the card issuer entity. This identifier is used to record the source of the payment card. In certain situations, having this information is important for tracking, security, and payment analysis purposes.
                                     spa: En caso de ser necesario, este es el identificador de la entidad emisora de la tarjeta. Este identificador se utiliza para registrar el origen de la tarjeta de pago. En ciertas situaciones, contar con esta información es importante para fines de seguimiento, seguridad y análisis de transacciones.
                                     por: Se necessário, este é o identificador da instituição que emitiu o cartão. Esse identificador é usado para registrar a origem do cartão de pagamento. Em algumas situações, é importante ter essa informação para fins de rastreamento, segurança e análise de transações.
                                 statement_descriptor:
                                   type: string
                                   example: "MERCADOPAGO"
-                                  description: Charge descriptor to be displayed on the card statement. The charge descriptor is the text or name that will appear on the customer's credit card statement to identify the transaction. It provides a brief description that assists the customer in recognizing the nature of the transaction conducted.
+                                  description: Charge descriptor to be displayed on the card statement. The charge descriptor is the text or name that will appear on the customer's credit card statement to identify the payment. It provides a brief description that assists the customer in recognizing the nature of the payment conducted.
                                   x-description-i18n:
-                                    eng: Charge descriptor to be displayed on the card statement. The charge descriptor is the text or name that will appear on the customer's credit card statement to identify the transaction. It provides a brief description that assists the customer in recognizing the nature of the transaction conducted.
+                                    eng: Charge descriptor to be displayed on the card statement. The charge descriptor is the text or name that will appear on the customer's credit card statement to identify the payment. It provides a brief description that assists the customer in recognizing the nature of the payment conducted.
                                     spa: Descriptor del cargo que se mostrará en el estado de cuenta de la tarjeta. El descriptor del cargo es el texto o nombre que aparecerá en el estado de cuenta de la tarjeta de crédito del cliente para identificar la transacción. Proporciona una breve descripción que ayuda al cliente a reconocer la naturaleza de la transacción realizada.
-                                    por: Descritor da cobrança a ser mostrada no extrato do cartão. O descritor da cobrança é o texto ou nome que aparecerá no extrato do cartão de crédito do cliente para identificar a transação. Ele fornece uma breve descrição que ajuda o cliente a reconhecer a natureza da transação realizada. 
+                                    por: Descritor da cobrança a ser mostrada no extrato do cartão. O descritor da cobrança é o texto ou nome que aparecerá no extrato do cartão de crédito do cliente para identificar a transação. Ele fornece uma breve descrição que ajuda o cliente a reconhecer a natureza da transação realizada.
                                 refunds:
                                   description: List of refunds related to the payment method.
                                   x-description-i18n:
@@ -1211,16 +1221,16 @@ paths:
     patch:
       tags:
         - $ref: '#/tags/checkout-api'
-      summary: Modify Transaction Intent 
+      summary: Modify Payment Intent
       x-summary-i18n:
-        eng: Modify Transaction Intent 
-        spa: Modificar Transaction Intent 
-        por: Modificar Transaction Intent
-      description: This endpoint allows for the modification of a Transaction Intent created in Builder mode. By using the Transaction Intent ID, it is possible to make edits through the PATCH endpoint. This enables the alteration or addition of fields in the intents body before its processing. It iss important to note that it is not necessary to send all fields filled, only those you want to modify or add
+        eng: Modify Payment Intent
+        spa: Modificar Payment Intent
+        por: Modificar Payment Intent
+      description: This endpoint allows for the modification of a Payment Intent created in Builder mode. By using the Payment Intent ID, it is possible to make edits through the PATCH endpoint. This enables the alteration or addition of fields in the intents body before its processing. It iss important to note that it is not necessary to send all fields filled, only those you want to modify or add
       x-description-i18n:
-        eng: This endpoint allows for the modification of a Transaction Intent created in Builder mode. By using the Transaction Intent ID, it is possible to make edits through the PATCH endpoint. This enables the alteration or addition of fields in the intents body before its processing. It is important to note that it is not necessary to send all fields filled, only those you want to modify or add
-        spa: Este endpoint permite la modificación de una Transaction Intent creada en el modo Builder. Utilizando el ID de la Transaction Intent, es posible realizar ediciones a través del endpoint PATCH. Esto permite la modificación o adición de campos en el cuerpo de la intención antes de su procesamiento. Es importante tener en cuenta que no es necesario enviar todos los campos completos, solo aquellos que desea modificar o agregar
-        por: Este endpoint possibilita a modificação de uma Transaction Intent criada no modo Builder. Utilizando o ID da Transaction Intent, é possível realizar edições por meio do endpoint PATCH. Isso permite a alteração ou adição de campos no corpo da intenção antes de seu processamento. É importante observar que não é obrigatório enviar todos os campos preenchidos, apenas aqueles que você deseja modificar ou acrescentar
+        eng: This endpoint allows for the modification of a Payment Intent created in Builder mode. By using the Payment Intent ID, it is possible to make edits through the PATCH endpoint. This enables the alteration or addition of fields in the intents body before its processing. It is important to note that it is not necessary to send all fields filled, only those you want to modify or add
+        spa: Este endpoint permite la modificación de una Payment Intent creada en el modo Builder. Utilizando el ID de la Payment Intent, es posible realizar ediciones a través del endpoint PATCH. Esto permite la modificación o adición de campos en el cuerpo de la intención antes de su procesamiento. Es importante tener en cuenta que no es necesario enviar todos los campos completos, solo aquellos que desea modificar o agregar
+        por: Este endpoint possibilita a modificação de uma Payment Intent criada no modo Builder. Utilizando o ID da Payment Intent, é possível realizar edições por meio do endpoint PATCH. Isso permite a alteração ou adição de campos no corpo da intenção antes de seu processamento. É importante observar que não é obrigatório enviar todos os campos preenchidos, apenas aqueles que você deseja modificar ou acrescentar
       parameters:
         - in: header
           name: Authorization
@@ -1233,23 +1243,33 @@ paths:
             eng: Access Token  - Application's private key that must be used exclusively in the backend for payment generation, requiring these pieces of information to be kept secure on its servers.
             spa: Access Token - Clave privada de la aplicación que debe ser utilizada exclusivamente en el backend para la generación de pagos, siendo necesario mantener esta información segura en sus servidores.
             por: Access Token - Chave privada do aplicativo que deve ser usada exclusivamente no backend para a geração de pagamentos, sendo necessário manter essas informações seguras em seus servidores.
-        - name: id
-          description: ID of a created Transaction Intent.
+        - in: header
+          name: X-Integrator-ID
+          schema:
+            type: string
+          required: false
+          description: Optinal ID for programmers or agencies  who are part of the <dev>program.
           x-description-i18n:
-            eng: ID of a created Transaction Intent.
-            spa: ID de la Transaction Intent creada.
-            por: ID da Transaction Intent criada.
+            eng: Optinal ID for programmers or agencies  who are part of the <dev>program.
+            spa: ID opcional para programadores o agencias que forman parte del programa <dev>.
+            por: ID opcional para programadores ou agências que fazem parte do programa <dev>.
+        - name: id
+          description: ID of a created Payment Intent.
+          x-description-i18n:
+            eng: ID of a created Payment Intent.
+            spa: ID de la Payment Intent creada.
+            por: ID da Payment Intent criada.
           in: path
           required: true
           schema:
             type: string
             example: "00001njp2i"
       requestBody:
-        description: Complete body of a Transaction Intent. You can modify as needed. When updating, only send the fields you wish to change or add.
+        description: Complete body of a Payment Intent. You can modify as needed. When updating, only send the fields you wish to change or add.
         x-description-i18n:
-          eng: Complete body of a Transaction Intent. You can modify as needed. When updating, only send the fields you wish to change or add.
-          spa: Body completo de una Transaction Intent. Puedes modificarla según lo necesites. Al actualizar, envía solo los campos que desees cambiar o agregar.
-          por: Body completo de uma Transaction Intent. Você pode modificar conforme necessário. Ao atualizar, envie apenas os campos que deseja alterar ou adicionar.
+          eng: Complete body of a Payment Intent. You can modify as needed. When updating, only send the fields you wish to change or add.
+          spa: Body completo de una Payment Intent. Puedes modificarla según lo necesites. Al actualizar, envía solo los campos que desees cambiar o agregar.
+          por: Body completo de uma Payment Intent. Você pode modificar conforme necessário. Ao atualizar, envie apenas os campos que deseja alterar ou adicionar.
         content:
           application/json:
             schema:
@@ -1257,41 +1277,41 @@ paths:
               properties:
                 active_to_date:
                   type: string
-                  description: Maximum processing deadline for the transaction intent. This deadline sets the date by which the Transaction Intent is expected to be processed and completed. For example - "2023-09-06T10:00:00.000-03:00".
+                  description: Maximum processing deadline for the payment intent. This deadline sets the date by which the Payment Intent is expected to be processed and completed. For example - "2023-09-06T10:00:00.000-03:00".
                   x-description-i18n:
-                    eng: Maximum processing deadline for the transaction intent. This deadline sets the date by which the Transaction Intent is expected to be processed and completed. For example - "2023-09-06T10:00:00.000-03:00".
-                    spa: Plazo máximo de procesamiento para la Transaction Intent. Este plazo establece la fecha límite hasta la cual se espera que la Transaction Intent sea procesada y completada. Por ejemplo - "2023-09-06T10:00:00.000-03:00".
-                    por: Prazo máximo de processamento para a Transaction Intent. Este prazo determina a data-limite até a qual se espera que a Transaction Intent seja processada e finalizada. Por exemplo - "2023-09-06T10:00:00.000-03:00".
+                    eng: Maximum processing deadline for the payment intent. This deadline sets the date by which the Payment Intent is expected to be processed and completed. For example - "2023-09-06T10:00:00.000-03:00".
+                    spa: Plazo máximo de procesamiento para la Payment Intent. Este plazo establece la fecha límite hasta la cual se espera que la Payment Intent sea procesada y completada. Por ejemplo - "2023-09-06T10:00:00.000-03:00".
+                    por: Prazo máximo de processamento para a Payment Intent. Este prazo determina a data-limite até a qual se espera que a Payment Intent seja processada e finalizada. Por exemplo - "2023-09-06T10:00:00.000-03:00".
                   format: date-time
                   example: "2023-09-06T10:00:00.000-03:00"
                 configuration:
                   type: object
-                  description: Predefined configuration parameters set by the seller before initiating the transaction.
+                  description: Predefined configuration parameters set by the seller before initiating the payment.
                   x-description-i18n:
-                    eng: Predefined configuration parameters set by the seller before initiating the transaction.
+                    eng: Predefined configuration parameters set by the seller before initiating the payment.
                     spa: Parámetros de configuración predefinidos por el seller antes de iniciar la transacción.
                     por: Parâmetros de configuração pré-definidos pelo seller antes de iniciar a transação.
                   properties:
                     options:
                       type: object
-                      description: Seller-defined settings to determine the choices offered during the transaction. This field refers to the configurations the seller establishes to provide diverse options to buyers throughout the transaction process. This can encompass selections such as accepted payment methods, installment plans, shipping options, discounts, and other customizations that impact how the transaction is conducted.
+                      description: Seller-defined settings to determine the choices offered during the payment. This field refers to the configurations the seller establishes to provide diverse options to buyers throughout the payment process. This can encompass selections such as accepted payment methods, installment plans, shipping options, discounts, and other customizations that impact how the payment is conducted.
                       x-description-i18n:
-                        eng: Seller-defined settings to determine the choices offered during the transaction. This field refers to the configurations the seller establishes to provide diverse options to buyers throughout the transaction process. This can encompass selections such as accepted payment methods, installment plans, shipping options, discounts, and other customizations that impact how the transaction is conducted.
+                        eng: Seller-defined settings to determine the choices offered during the payment. This field refers to the configurations the seller establishes to provide diverse options to buyers throughout the payment process. This can encompass selections such as accepted payment methods, installment plans, shipping options, discounts, and other customizations that impact how the payment is conducted.
                         spa: Ajustes establecidos por el seller para determinar las opciones ofrecidas durante la transacción. Este campo se refiere a las configuraciones que el seller establece para proporcionar diferentes opciones a los compradores durante el proceso de transacción. Esto puede incluir elecciones como métodos de pago aceptados, cuotas, opciones de envío, descuentos y otras personalizaciones que afectan la forma en que se lleva a cabo la transacción.
                         por: Ajustes estabelecidos pelo seller para determinar as escolhas oferecidas durante a transação. Este campo e refere às configurações que o seller configura para fornecer diferentes opções aos compradores durante o processo de transação. Isso pode incluir escolhas como meios de pagamento aceitos, parcelamento, opções de envio, descontos e outras personalizações que afetam a forma como a transação é conduzida. 
                       properties:
                         payment_methods:
                           type: object
-                          description: Information related to the payment methods defined for the transaction.
+                          description: Information related to the payment methods defined for the payment.
                           x-description-i18n: 
-                            eng: Information related to the payment methods defined for the transaction.
+                            eng: Information related to the payment methods defined for the payment.
                             spa: Información relacionada con los medios de pago definidos para la transacción.
                             por: Informações relacionadas aos meios de pagamento definidos para a transação.
                           properties:
                             coupons:
-                              description: Coupons can be used as a payment method during the transaction.
+                              description: Coupons can be used as a payment method during the payment.
                               x-description-i18n:
-                                eng: Coupons can be used as a payment method during the transaction.
+                                eng: Coupons can be used as a payment method during the payment.
                                 spa: Los cupones se pueden utilizar como método de pago durante la transacción.
                                 por: Os cupons podem ser utilizados como forma de pagamento durante a transação.
                               type: object
@@ -1331,9 +1351,9 @@ paths:
                                     type: string
                                     example: [ "credit_card", "debit_card" ]
                                 disabled:
-                                  description: Types of payment methods not covered. This parameter encompasses payments that will not be accepted in the transaction, such as "credit card".
+                                  description: Types of payment methods not covered. This parameter encompasses payments that will not be accepted in the payment, such as "credit card".
                                   x-description-i18n:
-                                    eng: Types of payment methods not covered. This parameter encompasses payments that will not be accepted in the transaction, such as "credit card".
+                                    eng: Types of payment methods not covered. This parameter encompasses payments that will not be accepted in the payment, such as "credit card".
                                     spa: Tipos de medios de pago no incluidos. Este parámetro abarca los pagos que no serán aceptados en la transacción, como por ejemplo, "credit card".
                                     por: Tipos de meios de pagamento não abrangidos. Este parâmetro engloba os pagamentos que não serão aceitos na transação, como por exemplo, "credit card".
                                   type: array
@@ -1419,9 +1439,9 @@ paths:
                                     por: Tipos de meios de pagamento a serem disponibilizados por padrão.
                         purpose:
                           type: string
-                          description: Identifier of the purpose of the transaction, which allows load a predefined list of options. For example, "wallet_purchase" ou "onboarding_credits".
+                          description: Identifier of the purpose of the payment, which allows load a predefined list of options. For example, "wallet_purchase" ou "onboarding_credits".
                           x-description-i18n:
-                            eng: Identifier of the purpose of the transaction, which allows load a predefined list of options. For example, "wallet_purchase" ou "onboarding_credits".
+                            eng: Identifier of the purpose of the payment, which allows load a predefined list of options. For example, "wallet_purchase" ou "onboarding_credits".
                             spa: Identificador del propósito de la transacción, que permite cargar un listado predefinido de opciones, cómo por ejemplo, "wallet_purchase" ou "onboarding_credits".
                             por: Identificador da finalidade da transação, que permite carregar uma lista de opções predefinidas, como por exemplo, "wallet_purchase" ou "onboarding_credits".
                           example: [ "wallet_purchase", "onboarding_credits" ]
@@ -1434,18 +1454,18 @@ paths:
                         por: Configuração do seller sobre a integração.
                       properties:
                         notifications:
-                          description: Parameter concerning notification URL settings for conducted transactions.
+                          description: Parameter concerning notification URL settings for conducted payments.
                           x-description-i18n: 
-                            eng: Parameter concerning notification URL settings for conducted transactions.
+                            eng: Parameter concerning notification URL settings for conducted payments.
                             spa: Parámetro relacionado con la configuración de URL de notificación para transacciones realizadas.
                             por: Parâmetro relacionado às configurações das URLs de notificação para transações efetuadas.
                           type: object
                           properties:
                             notification_url:
                               type: string
-                              description: URL that provides the integrator with real-time information about the status of their transaction through Webhooks and Instant Payment Notifications (IPN).
+                              description: URL that provides the integrator with real-time information about the status of their payment through Webhooks and Instant Payment Notifications (IPN).
                               x-description-i18n:
-                                eng: URL that provides the integrator with real-time information about the status of their transaction through Webhooks and Instant Payment Notifications (IPN).
+                                eng: URL that provides the integrator with real-time information about the status of their payment through Webhooks and Instant Payment Notifications (IPN).
                                 spa: URL que proporciona al integrador información en tiempo real sobre el status de su transacción a través de Webhooks y Notificaciones Instantáneas de Pago (IPN).
                                 por: URL que oferece ao integrador informações atualizadas sobre o status de sua transação por meio de Webhooks e Notificações Instantâneas de Pagamento (IPN).
                               example: "https://www.integrator-site.com/api/notifications"
@@ -1498,9 +1518,9 @@ paths:
                             spa: Identificador del seller en el sistema del integrador.
                             por: Identificador do vendedor no sistema do integrador.
                 order:
-                  description: Order containing all the essential information for the execution of a transaction.
+                  description: Order containing all the essential information for the execution of a payment.
                   x-description-i18n:
-                      eng: Order containing all the essential information for the execution of a transaction.
+                      eng: Order containing all the essential information for the execution of a payment.
                       spa: Orden que contiene toda la información esencial para la ejecución de una transacción.
                       por: Ordem contendo todas as informações essenciais para a execução de uma transação.
                   type: object
@@ -1524,9 +1544,9 @@ paths:
                     reason:
                       type: string
                       example: "my_order_description"
-                      description: Reason for the order or transaction.
+                      description: Reason for the order or payment.
                       x-description-i18n:
-                        eng: Reason for the order or transaction.
+                        eng: Reason for the order or payment.
                         spa: Motivo de la orden o transacción.
                         por: Motivo da ordem ou transação.
                     amount:
@@ -1539,9 +1559,9 @@ paths:
                         spa: Monto total que se desea cobrar.
                         por: Valor total a ser pago.
                     items:
-                      description: Information relevant to the configuration of the items comprising the transaction, such as the list of items, their quantities, and prices. This encompasses details about the various products or services involved in the transaction, including the quantity of each item and the corresponding price for each of them.
+                      description: Information relevant to the configuration of the items comprising the payment, such as the list of items, their quantities, and prices. This encompasses details about the various products or services involved in the payment, including the quantity of each item and the corresponding price for each of them.
                       x-description-i18n:
-                        eng: Information relevant to the configuration of the items comprising the transaction, such as the list of items, their quantities, and prices. This encompasses details about the various products or services involved in the transaction, including the quantity of each item and the corresponding price for each of them.
+                        eng: Information relevant to the configuration of the items comprising the payment, such as the list of items, their quantities, and prices. This encompasses details about the various products or services involved in the payment, including the quantity of each item and the corresponding price for each of them.
                         spa: Información relevante para la configuración de los elementos que componen la transacción, como la lista de elementos, sus cantidades y precios. Esto abarca detalles sobre los diferentes productos o servicios involucrados en la transacción, incluyendo la cantidad de cada elemento y el precio correspondiente a cada uno de ellos.
                         por: Informações pertinentes à configuração dos itens que constituem a transação, tais como a lista de itens, suas quantidades e preços. Isso abrange informações sobre os diferentes produtos ou serviços envolvidos na transação, incluindo a quantidade de cada item e o preço correspondente a cada um deles. 
                       type: array
@@ -1715,18 +1735,18 @@ paths:
                               example: "99999999"
                     advanced:
                       type: object
-                      description: Options for advanced transaction.
+                      description: Options for advanced payment.
                       x-description-i18n:
-                        eng: Options for advanced transaction.
+                        eng: Options for advanced payment.
                         spa: Agrupación de opciones avanzadas para la transacción.
                         por: Opções avançadas para a transação.
                       properties:
                         binary_mode:
                           type: boolean
                           example: true
-                          description: Enables requesting a final transaction response during the initial processing, disabling any options for offline or asynchronous processing.
+                          description: Enables requesting a final payment response during the initial processing, disabling any options for offline or asynchronous processing.
                           x-description-i18n:
-                            eng: Enables requesting a final transaction response during the initial processing, disabling any options for offline or asynchronous processing.
+                            eng: Enables requesting a final payment response during the initial processing, disabling any options for offline or asynchronous processing.
                             spa: Permite solicitar una respuesta definitiva de la transacción durante el procesamiento inicial, deshabilitando cualquier opción de procesamiento fuera de línea o asíncrono.
                             por: Possibilita requerer uma resposta definitiva da transação no primeiro processamento, desabilitando quaisquer opções de processamento offline ou assíncrono.
                         marketplace:
@@ -1754,9 +1774,9 @@ paths:
                             spa: ID de la cuenta de Mercado Pago encargada de pagar las comisiones.
                             por: Identificação da conta do Mercado Pago responsável pelo pagamento das comissões.
                         payment_method:
-                          description: Detailed information about the available payment methods during the transaction, such as the total amount to be paid using a specific payment method, installment options, among others.
+                          description: Detailed information about the available payment methods during the payment, such as the total amount to be paid using a specific payment method, installment options, among others.
                           x-description-i18n:
-                            eng: Detailed information about the available payment methods during the transaction, such as the total amount to be paid using a specific payment method, installment options, among others.
+                            eng: Detailed information about the available payment methods during the payment, such as the total amount to be paid using a specific payment method, installment options, among others.
                             spa: Información detallada sobre los medios de pago disponibles durante la transacción, como por ejemplo, el monto total a pagar utilizando un método de pago específico, opciones de financiamiento, entre otros.
                             por: Informações detalhadas sobre os meios de pagamento disponíveis durante a transação, como por exemplo, valor total a ser pago com determinado meio de pagamento, parcelamento, entre outros.
                           type: object
@@ -1805,9 +1825,9 @@ paths:
                                   issuer:
                                     type: string
                                     example: "23"
-                                    description: If required, this is the identifier of the card issuer entity. This identifier is used to record the source of the payment card. In certain situations, having this information is important for tracking, security, and transaction analysis purposes.
+                                    description: If required, this is the identifier of the card issuer entity. This identifier is used to record the source of the payment card. In certain situations, having this information is important for tracking, security, and payment analysis purposes.
                                     x-description-i18n:
-                                      eng: If required, this is the identifier of the card issuer entity. This identifier is used to record the source of the payment card. In certain situations, having this information is important for tracking, security, and transaction analysis purposes.
+                                      eng: If required, this is the identifier of the card issuer entity. This identifier is used to record the source of the payment card. In certain situations, having this information is important for tracking, security, and payment analysis purposes.
                                       spa: En caso de ser necesario, este es el identificador de la entidad emisora de la tarjeta. Este identificador se utiliza para registrar el origen de la tarjeta de pago. En ciertas situaciones, contar con esta información es importante para fines de seguimiento, seguridad y análisis de transacciones.
                                       por: Se necessário, este é o identificador da instituição que emitiu o cartão. Esse identificador é usado para registrar a origem do cartão de pagamento. Em algumas situações, é importante ter essa informação para fins de rastreamento, segurança e análise de transações.
                                   installments:
@@ -1821,9 +1841,9 @@ paths:
                                   statement_descriptor:
                                     type: string
                                     example: "MERCADOPAGO"
-                                    description: Charge descriptor to be displayed on the card statement. The charge descriptor is the text or name that will appear on the customer's credit card statement to identify the transaction. It provides a brief description that assists the customer in recognizing the nature of the transaction conducted.
+                                    description: Charge descriptor to be displayed on the card statement. The charge descriptor is the text or name that will appear on the customer's credit card statement to identify the payment. It provides a brief description that assists the customer in recognizing the nature of the payment conducted.
                                     x-description-i18n:
-                                      eng: Charge descriptor to be displayed on the card statement. The charge descriptor is the text or name that will appear on the customer's credit card statement to identify the transaction. It provides a brief description that assists the customer in recognizing the nature of the transaction conducted.
+                                      eng: Charge descriptor to be displayed on the card statement. The charge descriptor is the text or name that will appear on the customer's credit card statement to identify the payment. It provides a brief description that assists the customer in recognizing the nature of the payment conducted.
                                       spa: Descriptor del cargo que se mostrará en el estado de cuenta de la tarjeta. El descriptor del cargo es el texto o nombre que aparecerá en el estado de cuenta de la tarjeta de crédito del cliente para identificar la transacción. Proporciona una breve descripción que ayuda al cliente a reconocer la naturaleza de la transacción realizada.
                                       por: Descritor da cobrança a ser mostrada no extrato do cartão. O descritor da cobrança é o texto ou nome que aparecerá no extrato do cartão de crédito do cliente para identificar a transação. Ele fornece uma breve descrição que ajuda o cliente a reconhecer a natureza da transação realizada. 
                                   refunds:
@@ -1926,17 +1946,17 @@ paths:
                                   issuer:
                                     type: string
                                     example: "23"
-                                    description: If required, this is the identifier of the card issuer entity. This identifier is used to record the source of the payment card. In certain situations, having this information is important for tracking, security, and transaction analysis purposes.
+                                    description: If required, this is the identifier of the card issuer entity. This identifier is used to record the source of the payment card. In certain situations, having this information is important for tracking, security, and payment analysis purposes.
                                     x-description-i18n:
-                                      eng: If required, this is the identifier of the card issuer entity. This identifier is used to record the source of the payment card. In certain situations, having this information is important for tracking, security, and transaction analysis purposes.
+                                      eng: If required, this is the identifier of the card issuer entity. This identifier is used to record the source of the payment card. In certain situations, having this information is important for tracking, security, and payment analysis purposes.
                                       spa: En caso de ser necesario, este es el identificador de la entidad emisora de la tarjeta. Este identificador se utiliza para registrar el origen de la tarjeta de pago. En ciertas situaciones, contar con esta información es importante para fines de seguimiento, seguridad y análisis de transacciones.
                                       por: Se necessário, este é o identificador da instituição que emitiu o cartão. Esse identificador é usado para registrar a origem do cartão de pagamento. Em algumas situações, é importante ter essa informação para fins de rastreamento, segurança e análise de transações.
                                   statement_descriptor:
                                     type: string
                                     example: "MERCADOPAGO"
-                                    description: Charge descriptor to be displayed on the card statement. The charge descriptor is the text or name that will appear on the customer's credit card statement to identify the transaction. It provides a brief description that assists the customer in recognizing the nature of the transaction conducted.
+                                    description: Charge descriptor to be displayed on the card statement. The charge descriptor is the text or name that will appear on the customer's credit card statement to identify the payment. It provides a brief description that assists the customer in recognizing the nature of the payment conducted.
                                     x-description-i18n:
-                                      eng: Charge descriptor to be displayed on the card statement. The charge descriptor is the text or name that will appear on the customer's credit card statement to identify the transaction. It provides a brief description that assists the customer in recognizing the nature of the transaction conducted.
+                                      eng: Charge descriptor to be displayed on the card statement. The charge descriptor is the text or name that will appear on the customer's credit card statement to identify the payment. It provides a brief description that assists the customer in recognizing the nature of the payment conducted.
                                       spa: Descriptor del cargo que se mostrará en el estado de cuenta de la tarjeta. El descriptor del cargo es el texto o nombre que aparecerá en el estado de cuenta de la tarjeta de crédito del cliente para identificar la transacción. Proporciona una breve descripción que ayuda al cliente a reconocer la naturaleza de la transacción realizada.
                                       por: Descritor da cobrança a ser mostrada no extrato do cartão. O descritor da cobrança é o texto ou nome que aparecerá no extrato do cartão de crédito do cliente para identificar a transação. Ele fornece uma breve descrição que ajuda o cliente a reconhecer a natureza da transação realizada. 
                                   refunds:
@@ -2296,31 +2316,31 @@ paths:
                   id:
                     type: string
                     example: "00001njp2i"
-                    description: ID of a created Transaction Intent.
+                    description: ID of a created Payment Intent.
                     x-description-i18n:
-                      eng: ID of a created Transaction Intent.
-                      spa: ID de la Transaction Intent creada.
-                      por: ID da Transaction Intent criada.
+                      eng: ID of a created Payment Intent.
+                      spa: ID de la Payment Intent creada.
+                      por: ID da Payment Intent criada.
                   created_date:
                     type: string
                     example: "2023-09-06T08:00:00.000-03:00"
-                    description: Date of creation of the Transaction Intent. For example, "2023-09-06T08:00:00.000-03:00".
+                    description: Date of creation of the Payment Intent. For example, "2023-09-06T08:00:00.000-03:00".
                     x-description-i18n:
-                      eng: Date of creation of the Transaction Intent. For example, "2023-09-06T08:00:00.000-03:00".
-                      spa: Fecha de creación de la Transaction Intent. Por ejemplo, "2023-09-06T08:00:00.000-03:00".
-                      por: Data de criação da Transaction Intent. Por exemplo, "2023-09-06T08:00:00.000-03:00".
+                      eng: Date of creation of the Payment Intent. For example, "2023-09-06T08:00:00.000-03:00".
+                      spa: Fecha de creación de la Payment Intent. Por ejemplo, "2023-09-06T08:00:00.000-03:00".
+                      por: Data de criação da Payment Intent. Por exemplo, "2023-09-06T08:00:00.000-03:00".
                     format: date-time
                   status:
                     type: string
                     example: "authorized"
-                    description: Current status of the Transaction Intent.
+                    description: Current status of the Payment Intent.
                     x-description-i18n:
-                      eng: Current status of the Transaction Intent.
-                      spa: Status actual de la Transaction Intent.
-                      por: Status atual da Transaction Intent.
+                      eng: Current status of the Payment Intent.
+                      spa: Status actual de la Payment Intent.
+                      por: Status atual da Payment Intent.
                     enum:
                       - new--nova
-                      - transaction_in_process--transação em processo
+                      - payment_in_process--transação em processo
                       - partially_processed--parcialmente processada
                       - processed--processada
                       - partially_reverted--revertida parcialmente
@@ -2338,40 +2358,40 @@ paths:
                       por: URL que permite iniciar o fluxo de pagamento. Por exemplo, "https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=123456789".
                   configuration:
                     type: object
-                    description: Predefined configuration parameters set by the seller before initiating the transaction.
+                    description: Predefined configuration parameters set by the seller before initiating the payment.
                     x-description-i18n:
-                      eng: Predefined configuration parameters set by the seller before initiating the transaction.
+                      eng: Predefined configuration parameters set by the seller before initiating the payment.
                       spa: Parámetros de configuración predefinidos por el seller antes de iniciar la transacción.
                       por: Parâmetros de configuração pré-definidos pelo seller antes de iniciar a transação.
                     properties:
                       option:
                         type: object
-                        description: Seller-defined settings to determine the choices offered during the transaction. This field refers to the configurations the seller establishes to provide diverse options to buyers throughout the transaction process. This can encompass selections such as accepted payment methods, installment plans, shipping options, discounts, and other customizations that impact how the transaction is conducted.
+                        description: Seller-defined settings to determine the choices offered during the payment. This field refers to the configurations the seller establishes to provide diverse options to buyers throughout the payment process. This can encompass selections such as accepted payment methods, installment plans, shipping options, discounts, and other customizations that impact how the payment is conducted.
                         x-description-i18n:
-                          eng: Seller-defined settings to determine the choices offered during the transaction. This field refers to the configurations the seller establishes to provide diverse options to buyers throughout the transaction process. This can encompass selections such as accepted payment methods, installment plans, shipping options, discounts, and other customizations that impact how the transaction is conducted.
+                          eng: Seller-defined settings to determine the choices offered during the payment. This field refers to the configurations the seller establishes to provide diverse options to buyers throughout the payment process. This can encompass selections such as accepted payment methods, installment plans, shipping options, discounts, and other customizations that impact how the payment is conducted.
                           spa: Ajustes establecidos por el seller para determinar las opciones ofrecidas durante la transacción. Este campo se refiere a las configuraciones que el seller establece para proporcionar diferentes opciones a los compradores durante el proceso de transacción. Esto puede incluir elecciones como métodos de pago aceptados, cuotas, opciones de envío, descuentos y otras personalizaciones que afectan la forma en que se lleva a cabo la transacción.
                           por: Ajustes estabelecidos pelo seller para determinar as escolhas oferecidas durante a transação. Este campo e refere às configurações que o seller configura para fornecer diferentes opções aos compradores durante o processo de transação. Isso pode incluir escolhas como meios de pagamento aceitos, parcelamento, opções de envio, descontos e outras personalizações que afetam a forma como a transação é conduzida.
                         properties:
                           purpose:
                             type: string
-                            description: Transaction purpose identifier that enables loading a list of predefined options. For example, wallet_purchase, onboarding_credits.
+                            description: Payment purpose identifier that enables loading a list of predefined options. For example, wallet_purchase, onboarding_credits.
                             x-description-i18n:
-                              eng: Transaction purpose identifier that enables loading a list of predefined options. For example, wallet_purchase, onboarding_credits.
+                              eng: Payment purpose identifier that enables loading a list of predefined options. For example, wallet_purchase, onboarding_credits.
                               spa: Identificador de propósito de transacción que permite cargar una lista de opciones predefinidas. Por ejemplo, wallet_purchase, onboarding_credits.
                               por: Identificador da finalidade da transação, que permite carregar uma lista de opções predefinidas. Por exemplo, wallet_purchase, onboarding_credits.
                             example: wallet_purchase, onboarding_credits
                           payment_methods:
                             type: object
-                            description: Information related to the payment methods defined for the transaction.
+                            description: Information related to the payment methods defined for the payment.
                             x-description-i18n:
-                              eng: Information related to the payment methods defined for the transaction.
+                              eng: Information related to the payment methods defined for the payment.
                               spa: Información relacionada con los medios de pago definidos para la transacción.
                               por: Informações relacionadas aos meios de pagamento definidos para a transação.
                             properties:
                               coupons:
-                                description: Coupons can be used as a methods of payment in the transaction.
+                                description: Coupons can be used as a methods of payment in the payment.
                                 x-description-i18n:
-                                  eng: Coupons can be used as a methods of payment in the transaction.
+                                  eng: Coupons can be used as a methods of payment in the payment.
                                   spa: Los cupones pueden ser utilizados como medio de pago en la transacción.
                                   por: Os cupons podem ser utilizados como meio de pagamento na transação.
                                 type: object
@@ -2411,9 +2431,9 @@ paths:
                                       type: string
                                       example: credit_card, debit_card
                                   disabled:
-                                    description: Types of payment methods not covered. This parameter encompasses payments that will not be accepted in the transaction, such as "credit card".
+                                    description: Types of payment methods not covered. This parameter encompasses payments that will not be accepted in the payment, such as "credit card".
                                     x-description-i18n:
-                                      eng: Types of payment methods not covered. This parameter encompasses payments that will not be accepted in the transaction, such as "credit card".
+                                      eng: Types of payment methods not covered. This parameter encompasses payments that will not be accepted in the payment, such as "credit card".
                                       spa: Tipos de medios de pago no incluidos. Este parámetro abarca los pagos que no serán aceptados en la transacción, como por ejemplo, "credit card".
                                       por: Tipos de meios de pagamento não abrangidos. Este parâmetro engloba os pagamentos que não serão aceitos na transação, como por exemplo, "credit card".
                                     type: array
@@ -2572,23 +2592,23 @@ paths:
                       description:
                         type: string
                         example: "my_order_description"
-                        description: Description for the order or transaction.
+                        description: Description for the order or payment.
                         x-description-i18n:
-                          eng: Description for the order or transaction.
+                          eng: Description for the order or payment.
                           spa: Descripción de la orden o transacción.
                           por: Descrição da ordem ou transação.
                       amount:
                         example: "233.00"
                         type: string
-                        description: Total value of the transaction. For example, "233.00".
+                        description: Total value of the payment. For example, "233.00".
                         x-description-i18n:
-                          eng: Total value of the transaction. For example, "233.00".
+                          eng: Total value of the payment. For example, "233.00".
                           spa: Monto total de la transacción. Por ejemplo, "233.00"..
                           por: Valor total da transação. Por exemplo, "233.00".
                       items:
-                        description: Information relevant to the configuration of the items comprising the transaction, such as the list of items, their quantities, and prices. This encompasses details about the various products or services involved in the transaction, including the quantity of each item and the corresponding price for each of them.
+                        description: Information relevant to the configuration of the items comprising the payment, such as the list of items, their quantities, and prices. This encompasses details about the various products or services involved in the payment, including the quantity of each item and the corresponding price for each of them.
                         x-description-i18n:
-                          eng: Information relevant to the configuration of the items comprising the transaction, such as the list of items, their quantities, and prices. This encompasses details about the various products or services involved in the transaction, including the quantity of each item and the corresponding price for each of them.
+                          eng: Information relevant to the configuration of the items comprising the payment, such as the list of items, their quantities, and prices. This encompasses details about the various products or services involved in the payment, including the quantity of each item and the corresponding price for each of them.
                           spa: Información relevante para la configuración de los elementos que componen la transacción, como la lista de elementos, sus cantidades y precios. Esto abarca detalles sobre los diferentes productos o servicios involucrados en la transacción, incluyendo la cantidad de cada elemento y el precio correspondiente a cada uno de ellos.
                           por: Informações pertinentes à configuração dos itens que constituem a transação, tais como a lista de itens, suas quantidades e preços. Isso abrange informações sobre os diferentes produtos ou serviços envolvidos na transação, incluindo a quantidade de cada item e o preço correspondente a cada um deles. 
                         type: array
@@ -2659,9 +2679,9 @@ paths:
                           amount:
                             type: string
                             example: "50.00"
-                            description: Amount of the transaction corresponding to the collector.
+                            description: Amount of the payment corresponding to the collector.
                             x-description-i18n:
-                              eng: Amount of the transaction corresponding to the collector.
+                              eng: Amount of the payment corresponding to the collector.
                               spa: Monto de la transacción que corresponde al collector.
                               por: Valor da transação correspondente ao collector.
                       payer:
@@ -2785,18 +2805,18 @@ paths:
                                 example: "99999999"
                       advanced:
                         type: object
-                        description: Options for advanced transaction.
+                        description: Options for advanced payment.
                         x-description-i18n:
-                          eng: Options for advanced transaction.
+                          eng: Options for advanced payment.
                           spa: Agrupación de opciones avanzadas para la transacción.
                           por: Opções avançadas para a transação.
                         properties:
                           binary_mode:
                             type: boolean
                             example: true
-                            description: Enables requesting a final transaction response during the initial processing, disabling any options for offline or asynchronous processing.
+                            description: Enables requesting a final payment response during the initial processing, disabling any options for offline or asynchronous processing.
                             x-description-i18n:
-                              eng: Enables requesting a final transaction response during the initial processing, disabling any options for offline or asynchronous processing.
+                              eng: Enables requesting a final payment response during the initial processing, disabling any options for offline or asynchronous processing.
                               spa: Permite solicitar una respuesta definitiva de la transacción durante el procesamiento inicial, deshabilitando cualquier opción de procesamiento fuera de línea o asíncrono.
                               por: Possibilita requerer uma resposta definitiva da transação no primeiro processamento, desabilitando quaisquer opções de processamento offline ou assíncrono.
                           sponsor_id:
@@ -2808,9 +2828,9 @@ paths:
                               spa: Identificador de la cuenta en Mercado Pago que se utilizará para realizar los pagos de comisiones. Esto significa que cuando se deba una comisión a alguien, los fondos se retirarán de esta cuenta de Mercado Pago para efectuar el pago.
                               por: Identificador da conta no Mercado Pago que será utilizada para efetuar os pagamentos das comissões. Isso significa que, quando uma comissão for devida a alguém, os fundos serão retirados dessa conta do Mercado Pago para realizar o pagamento.
                       amount_details:
-                        description: This field encompasses transaction value details, including the amount paid, and in cases of refunds, the total refunded amount. Additionally, it covers the costs associated with shipping the purchased product.
+                        description: This field encompasses payment value details, including the amount paid, and in cases of refunds, the total refunded amount. Additionally, it covers the costs associated with shipping the purchased product.
                         x-description-i18n:
-                          eng: This field encompasses transaction value details, including the amount paid, and in cases of refunds, the total refunded amount. Additionally, it covers the costs associated with shipping the purchased product.
+                          eng: This field encompasses payment value details, including the amount paid, and in cases of refunds, the total refunded amount. Additionally, it covers the costs associated with shipping the purchased product.
                           spa: Este campo abarca los detalles de valor de la transacción, incluyendo la cantidad pagada y, en casos de reembolso, la cantidad total reembolsada. Además, cubre los costos asociados con el envío del producto adquirido.
                           por: Este campo abrange os detalhes relacionados aos montantes da transação, incluindo o valor pago e, em situações de reembolso, o montante total reembolsado. Também engloba os custos associados ao envio do produto adquirido.
                         type: object
@@ -2818,9 +2838,9 @@ paths:
                           total:
                             type: string
                             example: "123.00"
-                            description: Details of the total value of the transaction.
+                            description: Details of the total value of the payment.
                             x-description-i18n:
-                              eng: Details of the total value of the transaction.
+                              eng: Details of the total value of the payment.
                               spa: Detalles del monto total de la transacción.
                               por: Detalhes do valor total da transação.
                           paid:
@@ -2848,9 +2868,9 @@ paths:
                               spa: Monto cobrado por envío (incluido en el otal).
                               por: Valor cobrado por envio (incluído no total).
                       payment_method:
-                        description: Detailed information about the available payment methods during the transaction, such as the total amount to be paid using a specific payment method, installment options, among others.
+                        description: Detailed information about the available payment methods during the payment, such as the total amount to be paid using a specific payment method, installment options, among others.
                         x-description-i18n:
-                          eng: Detailed information about the available payment methods during the transaction, such as the total amount to be paid using a specific payment method, installment options, among others.
+                          eng: Detailed information about the available payment methods during the payment, such as the total amount to be paid using a specific payment method, installment options, among others.
                           spa: Información detallada sobre los medios de pago disponibles durante la transacción, como por ejemplo, el monto total a pagar utilizando un método de pago específico, opciones de financiamiento, entre otros.
                           por: Informações detalhadas sobre os meios de pagamento disponíveis durante a transação, como por exemplo, valor total a ser pago com determinado meio de pagamento, parcelamento, entre outros.
                         type: object
@@ -2899,9 +2919,9 @@ paths:
                                 issuer:
                                   type: string
                                   example: "23"
-                                  description: If required, this is the identifier of the card issuer entity. This identifier is used to record the source of the payment card. In certain situations, having this information is important for tracking, security, and transaction analysis purposes.
+                                  description: If required, this is the identifier of the card issuer entity. This identifier is used to record the source of the payment card. In certain situations, having this information is important for tracking, security, and payment analysis purposes.
                                   x-description-i18n:
-                                    eng: If required, this is the identifier of the card issuer entity. This identifier is used to record the source of the payment card. In certain situations, having this information is important for tracking, security, and transaction analysis purposes.
+                                    eng: If required, this is the identifier of the card issuer entity. This identifier is used to record the source of the payment card. In certain situations, having this information is important for tracking, security, and payment analysis purposes.
                                     spa: En caso de ser necesario, este es el identificador de la entidad emisora de la tarjeta. Este identificador se utiliza para registrar el origen de la tarjeta de pago. En ciertas situaciones, contar con esta información es importante para fines de seguimiento, seguridad y análisis de transacciones.
                                     por: Se necessário, este é o identificador da instituição que emitiu o cartão. Esse identificador é usado para registrar a origem do cartão de pagamento. Em algumas situações, é importante ter essa informação para fins de rastreamento, segurança e análise de transações.
                                 installments:
@@ -2915,9 +2935,9 @@ paths:
                                 statement_descriptor:
                                   type: string
                                   example: "MERCADOPAGO"
-                                  description: Charge descriptor to be displayed on the card statement. The charge descriptor is the text or name that will appear on the customer's credit card statement to identify the transaction. It provides a brief description that assists the customer in recognizing the nature of the transaction conducted.
+                                  description: Charge descriptor to be displayed on the card statement. The charge descriptor is the text or name that will appear on the customer's credit card statement to identify the payment. It provides a brief description that assists the customer in recognizing the nature of the payment conducted.
                                   x-description-i18n:
-                                    eng: Charge descriptor to be displayed on the card statement. The charge descriptor is the text or name that will appear on the customer's credit card statement to identify the transaction. It provides a brief description that assists the customer in recognizing the nature of the transaction conducted.
+                                    eng: Charge descriptor to be displayed on the card statement. The charge descriptor is the text or name that will appear on the customer's credit card statement to identify the payment. It provides a brief description that assists the customer in recognizing the nature of the payment conducted.
                                     spa: Descriptor del cargo que se mostrará en el estado de cuenta de la tarjeta. El descriptor del cargo es el texto o nombre que aparecerá en el estado de cuenta de la tarjeta de crédito del cliente para identificar la transacción. Proporciona una breve descripción que ayuda al cliente a reconocer la naturaleza de la transacción realizada.
                                     por: Descritor da cobrança a ser mostrada no extrato do cartão. O descritor da cobrança é o texto ou nome que aparecerá no extrato do cartão de crédito do cliente para identificar a transação. Ele fornece uma breve descrição que ajuda o cliente a reconhecer a natureza da transação realizada. 
                                 refunds:
@@ -3020,17 +3040,17 @@ paths:
                                 issuer:
                                   type: string
                                   example: "23"
-                                  description: If required, this is the identifier of the card issuer entity. This identifier is used to record the source of the payment card. In certain situations, having this information is important for tracking, security, and transaction analysis purposes.
+                                  description: If required, this is the identifier of the card issuer entity. This identifier is used to record the source of the payment card. In certain situations, having this information is important for tracking, security, and payment analysis purposes.
                                   x-description-i18n:
-                                    eng: If required, this is the identifier of the card issuer entity. This identifier is used to record the source of the payment card. In certain situations, having this information is important for tracking, security, and transaction analysis purposes.
+                                    eng: If required, this is the identifier of the card issuer entity. This identifier is used to record the source of the payment card. In certain situations, having this information is important for tracking, security, and payment analysis purposes.
                                     spa: En caso de ser necesario, este es el identificador de la entidad emisora de la tarjeta. Este identificador se utiliza para registrar el origen de la tarjeta de pago. En ciertas situaciones, contar con esta información es importante para fines de seguimiento, seguridad y análisis de transacciones.
                                     por: Se necessário, este é o identificador da instituição que emitiu o cartão. Esse identificador é usado para registrar a origem do cartão de pagamento. Em algumas situações, é importante ter essa informação para fins de rastreamento, segurança e análise de transações.
                                 statement_descriptor:
                                   type: string
                                   example: "MERCADOPAGO"
-                                  description: Charge descriptor to be displayed on the card statement. The charge descriptor is the text or name that will appear on the customer's credit card statement to identify the transaction. It provides a brief description that assists the customer in recognizing the nature of the transaction conducted.
+                                  description: Charge descriptor to be displayed on the card statement. The charge descriptor is the text or name that will appear on the customer's credit card statement to identify the payment. It provides a brief description that assists the customer in recognizing the nature of the payment conducted.
                                   x-description-i18n:
-                                    eng: Charge descriptor to be displayed on the card statement. The charge descriptor is the text or name that will appear on the customer's credit card statement to identify the transaction. It provides a brief description that assists the customer in recognizing the nature of the transaction conducted.
+                                    eng: Charge descriptor to be displayed on the card statement. The charge descriptor is the text or name that will appear on the customer's credit card statement to identify the payment. It provides a brief description that assists the customer in recognizing the nature of the payment conducted.
                                     spa: Descriptor del cargo que se mostrará en el estado de cuenta de la tarjeta. El descriptor del cargo es el texto o nombre que aparecerá en el estado de cuenta de la tarjeta de crédito del cliente para identificar la transacción. Proporciona una breve descripción que ayuda al cliente a reconocer la naturaleza de la transacción realizada.
                                     por: Descritor da cobrança a ser mostrada no extrato do cartão. O descritor da cobrança é o texto ou nome que aparecerá no extrato do cartão de crédito do cliente para identificar a transação. Ele fornece uma breve descrição que ajuda o cliente a reconhecer a natureza da transação realizada. 
                                 refunds:
@@ -3416,20 +3436,20 @@ paths:
                     enum:
                       - 500--Unexpected Error.
                       - 503--Service Unavailable.
-  /v1/transaction-intents/{id}/cancel:
+  /v1/payment-intents/{id}/cancel:
     put:
       tags:
-        - $ref: '#/tags/checkout-api'
-      summary: Cancel Transaction Intent
+        - $ref: "#/tags/checkout-api"
+      summary: Cancel Payment Intent
       x-summary-i18n:
-        eng: Cancel Transaction Intent
-        spa: Cancelar Transaction Intent
-        por: Cancelar Transaction Intent
-      description: This endpoint allows to cancel a Transaction Intent
+        eng: Cancel Payment Intent
+        spa: Cancelar Payment Intent
+        por: Cancelar Payment Intent
+      description: This endpoint allows to cancel a Payment Intent
       x-description-i18n:
-        eng: This endpoint allows to cancel a Transaction Intent
-        spa: Este endpoint permite cancelar una Transaction Intent
-        por: Este endpoint permite cancelar uma Transaction Intent
+        eng: This endpoint allows to cancel a Payment Intent
+        spa: Este endpoint permite cancelar una Payment Intent
+        por: Este endpoint permite cancelar uma Payment Intent
       parameters:
         - in: header
           name: Authorization
@@ -3439,9 +3459,19 @@ paths:
           required: true
           description: Access Token  - Application's private key that must be used exclusively in the backend for payment generation, requiring these pieces of information to be kept secure on its servers.
           x-description-i18n:
-            eng: Access Token  - Application's private key that must be used exclusively in the backend for payment generation, requiring these pieces of information to be kept secure on its servers.
+            eng: Access Token - Application's private key that must be used exclusively in the backend for payment generation, requiring these pieces of information to be kept secure on its servers.
             spa: Access Token - Clave privada de la aplicación que debe ser utilizada exclusivamente en el backend para la generación de pagos, siendo necesario mantener esta información segura en sus servidores.
             por: Access Token - Chave privada do aplicativo que deve ser usada exclusivamente no backend para a geração de pagamentos, sendo necessário manter essas informações seguras em seus servidores.
+        - in: header
+          name: X-Integrator-ID
+          schema:
+            type: string
+          required: false
+          description: Optinal ID for programmers or agencies  who are part of the <dev>program.
+          x-description-i18n:
+            eng: Optinal ID for programmers or agencies  who are part of the <dev>program.
+            spa: Opción de ID para programadores o agencias que forman parte del programa <dev>.
+            por: ID opcional para programadores ou agências que fazem parte do programa <dev>.
         - in: path
           name: id
           schema:
@@ -3464,31 +3494,31 @@ paths:
                   id:
                     type: string
                     example: "00001njp2i"
-                    description: ID of a created Transaction Intent.
+                    description: ID of a created Payment Intent.
                     x-description-i18n:
-                      eng: ID of a created Transaction Intent.
-                      spa: ID de la Transaction Intent creada.
-                      por: ID da Transaction Intent criada.
+                      eng: ID of a created Payment Intent.
+                      spa: ID de la Payment Intent creada.
+                      por: ID da Payment Intent criada.
                   created_date:
                     type: string
                     example: "2023-09-06T08:00:00.000-03:00"
-                    description: Date of creation of the Transaction Intent. For example, "2023-09-06T08:00:00.000-03:00".
+                    description: Date of creation of the Payment Intent. For example, "2023-09-06T08:00:00.000-03:00".
                     x-description-i18n:
-                      eng: Date of creation of the Transaction Intent. For example, "2023-09-06T08:00:00.000-03:00".
-                      spa: Fecha de creación de la Transaction Intent. Por ejemplo, "2023-09-06T08:00:00.000-03:00".
-                      por: Data de criação da Transaction Intent. Por exemplo, "2023-09-06T08:00:00.000-03:00".
+                      eng: Date of creation of the Payment Intent. For example, "2023-09-06T08:00:00.000-03:00".
+                      spa: Fecha de creación de la Payment Intent. Por ejemplo, "2023-09-06T08:00:00.000-03:00".
+                      por: Data de criação da Payment Intent. Por exemplo, "2023-09-06T08:00:00.000-03:00".
                     format: date-time
                   status:
                     type: string
                     example: "authorized"
-                    description: Current status of the Transaction Intent.
+                    description: Current status of the Payment Intent.
                     x-description-i18n:
-                      eng: Current status of the Transaction Intent.
-                      spa: Status actual de la Transaction Intent.
-                      por: Status atual da Transaction Intent.
+                      eng: Current status of the Payment Intent.
+                      spa: Status actual de la Payment Intent.
+                      por: Status atual da Payment Intent.
                     enum:
                       - new--nova
-                      - transaction_in_process--transação em processo
+                      - payment_in_process--transação em processo
                       - partially_processed--parcialmente processada
                       - processed--processada
                       - partially_reverted--revertida parcialmente
@@ -3506,40 +3536,40 @@ paths:
                       por: URL que permite iniciar o fluxo de pagamento. Por exemplo, "https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=123456789".
                   configuration:
                     type: object
-                    description: Predefined configuration parameters set by the seller before initiating the transaction.
+                    description: Predefined configuration parameters set by the seller before initiating the payment.
                     x-description-i18n:
-                      eng: Predefined configuration parameters set by the seller before initiating the transaction.
+                      eng: Predefined configuration parameters set by the seller before initiating the payment.
                       spa: Parámetros de configuración predefinidos por el seller antes de iniciar la transacción.
                       por: Parâmetros de configuração pré-definidos pelo seller antes de iniciar a transação.
                     properties:
                       option:
                         type: object
-                        description: Seller-defined settings to determine the choices offered during the transaction. This field refers to the configurations the seller establishes to provide diverse options to buyers throughout the transaction process. This can encompass selections such as accepted payment methods, installment plans, shipping options, discounts, and other customizations that impact how the transaction is conducted.
+                        description: Seller-defined settings to determine the choices offered during the payment. This field refers to the configurations the seller establishes to provide diverse options to buyers throughout the payment process. This can encompass selections such as accepted payment methods, installment plans, shipping options, discounts, and other customizations that impact how the payment is conducted.
                         x-description-i18n:
-                          eng: Seller-defined settings to determine the choices offered during the transaction. This field refers to the configurations the seller establishes to provide diverse options to buyers throughout the transaction process. This can encompass selections such as accepted payment methods, installment plans, shipping options, discounts, and other customizations that impact how the transaction is conducted.
+                          eng: Seller-defined settings to determine the choices offered during the payment. This field refers to the configurations the seller establishes to provide diverse options to buyers throughout the payment process. This can encompass selections such as accepted payment methods, installment plans, shipping options, discounts, and other customizations that impact how the payment is conducted.
                           spa: Ajustes establecidos por el seller para determinar las opciones ofrecidas durante la transacción. Este campo se refiere a las configuraciones que el seller establece para proporcionar diferentes opciones a los compradores durante el proceso de transacción. Esto puede incluir elecciones como métodos de pago aceptados, cuotas, opciones de envío, descuentos y otras personalizaciones que afectan la forma en que se lleva a cabo la transacción.
                           por: Ajustes estabelecidos pelo seller para determinar as escolhas oferecidas durante a transação. Este campo e refere às configurações que o seller configura para fornecer diferentes opções aos compradores durante o processo de transação. Isso pode incluir escolhas como meios de pagamento aceitos, parcelamento, opções de envio, descontos e outras personalizações que afetam a forma como a transação é conduzida.
                         properties:
                           purpose:
                             type: string
-                            description: Transaction purpose identifier that enables loading a list of predefined options. For example, wallet_purchase, onboarding_credits.
+                            description: Payment purpose identifier that enables loading a list of predefined options. For example, wallet_purchase, onboarding_credits.
                             x-description-i18n:
-                              eng: Transaction purpose identifier that enables loading a list of predefined options. For example, wallet_purchase, onboarding_credits.
+                              eng: Payment purpose identifier that enables loading a list of predefined options. For example, wallet_purchase, onboarding_credits.
                               spa: Identificador de propósito de transacción que permite cargar una lista de opciones predefinidas. Por ejemplo, wallet_purchase, onboarding_credits.
                               por: Identificador da finalidade da transação, que permite carregar uma lista de opções predefinidas. Por exemplo, wallet_purchase, onboarding_credits.
                             example: wallet_purchase, onboarding_credits
                           payment_methods:
-                            description: Information related to the payment methods defined for the transaction.
+                            description: Information related to the payment methods defined for the payment.
                             x-description-i18n:
-                              eng: Information related to the payment methods defined for the transaction.
+                              eng: Information related to the payment methods defined for the payment.
                               spa: Información relacionada con los medios de pago definidos para la transacción.
                               por: Informações relacionadas aos meios de pagamento definidos para a transação.
                             type: object
                             properties:
                               coupons:
-                                description: Coupons can be used as a methods of payment in the transaction.
+                                description: Coupons can be used as a methods of payment in the payment.
                                 x-description-i18n:
-                                  eng: Coupons can be used as a methods of payment in the transaction.
+                                  eng: Coupons can be used as a methods of payment in the payment.
                                   spa: Los cupones pueden ser utilizados como medio de pago en la transacción.
                                   por: Os cupons podem ser utilizados como meio de pagamento na transação.
                                 type: object
@@ -3579,9 +3609,9 @@ paths:
                                       type: string
                                       example: credit_card, debit_card
                                   disabled:
-                                    description: Types of payment methods not covered. This parameter encompasses payments that will not be accepted in the transaction, such as "credit card".
+                                    description: Types of payment methods not covered. This parameter encompasses payments that will not be accepted in the payment, such as "credit card".
                                     x-description-i18n:
-                                      eng: Types of payment methods not covered. This parameter encompasses payments that will not be accepted in the transaction, such as "credit card".
+                                      eng: Types of payment methods not covered. This parameter encompasses payments that will not be accepted in the payment, such as "credit card".
                                       spa: Tipos de medios de pago no incluidos. Este parámetro abarca los pagos que no serán aceptados en la transacción, como por ejemplo, "credit card".
                                       por: Tipos de meios de pagamento não abrangidos. Este parâmetro engloba os pagamentos que não serão aceitos na transação, como por exemplo, "credit card".
                                     type: array
@@ -3673,51 +3703,51 @@ paths:
                           spa: Configuración del seller sobre la integración.
                           por: Configuração do seller sobre a integração.
                         properties:
-                              notification_url:
-                                type: string
-                                description: URL that provides the integrator with real-time information about the status of their transaction through Webhooks and Instant Payment Notifications (IPN).
-                                example: "https://www.integrator-site.com/notifications"
-                                x-description-i18n:
-                                  eng: URL that provides the integrator with real-time information about the status of their transaction through Webhooks and Instant Payment Notifications (IPN).
-                                  spa: URL que proporciona al integrador información en tiempo real sobre el status de su transacción a través de Webhooks y Notificaciones Instantáneas de Pago (IPN).
-                                  por: URL que oferece ao integrador informações atualizadas sobre o status de sua transação por meio de Webhooks e Notificações Instantâneas de Pagamento (IPN).
-                              return_url_default:
-                                    description: Default URL to redirect the buyer.
-                                    x-description-i18n:
-                                      eng: Default URL to redirect the buyer.
-                                      spa: URL por defecto a la cual se redireccionará al comprador.
-                                      por: URL padrão para redirecionar o comprador.
-                                    type: string
-                                    example: "https://www.integrator-site.com/order"
-                              return_url_success:
-                                    description: URL to redirect the buyer in case of successful payment.
-                                    type: string
-                                    example: "https://www.integrator-site.com/order/success"
-                                    x-description-i18n:
-                                      eng: URL to redirect the buyer in case of successful payment.
-                                      spa: URL a la cual se redireccionará al comprador en caso de pago exitoso.
-                                      por: URL para redirecionar o comprador em caso de pagamento bem-sucedido.
-                              return_url_pending:
-                                    description: URL to redirect the buyer in case of pending payment.
-                                    type: string
-                                    example: "https://www.integrator-site.com/order/pending"
-                                    x-description-i18n:
-                                      eng: URL to redirect the buyer in case of pending payment.
-                                      spa: URL a la cual se redireccionará al comprador en caso de pago pendiente.
-                                      por: URL para redirecionar o comprador em caso de pagamento pendente.
-                              return_url_failure:
-                                    description: URL to redirect the buyer in case of pending payment.
-                                    type: string
-                                    example: "https://www.integrator-site.com/order/failed"
-                                    x-description-i18n:
-                                      eng: URL to redirect the buyer in case of pending payment.
-                                      spa: URL a la cual se redireccionará al comprador en caso de fallo en el pago del comprador.
-                                      por: URL para redirecionar o comprador em caso de caso de falha no pagamento do comprador.
+                          notification_url:
+                            type: string
+                            description: URL that provides the integrator with real-time information about the status of their payment through Webhooks and Instant Payment Notifications (IPN).
+                            example: "https://www.integrator-site.com/notifications"
+                            x-description-i18n:
+                              eng: URL that provides the integrator with real-time information about the status of their payment through Webhooks and Instant Payment Notifications (IPN).
+                              spa: URL que proporciona al integrador información en tiempo real sobre el status de su transacción a través de Webhooks y Notificaciones Instantáneas de Pago (IPN).
+                              por: URL que oferece ao integrador informações atualizadas sobre o status de sua transação por meio de Webhooks e Notificações Instantâneas de Pagamento (IPN).
+                          return_url_default:
+                            description: Default URL to redirect the buyer.
+                            x-description-i18n:
+                              eng: Default URL to redirect the buyer.
+                              spa: URL por defecto a la cual se redireccionará al comprador.
+                              por: URL padrão para redirecionar o comprador.
+                            type: string
+                            example: "https://www.integrator-site.com/order"
+                          return_url_success:
+                            description: URL to redirect the buyer in case of successful payment.
+                            type: string
+                            example: "https://www.integrator-site.com/order/success"
+                            x-description-i18n:
+                              eng: URL to redirect the buyer in case of successful payment.
+                              spa: URL a la cual se redireccionará al comprador en caso de pago exitoso.
+                              por: URL para redirecionar o comprador em caso de pagamento bem-sucedido.
+                          return_url_pending:
+                            description: URL to redirect the buyer in case of pending payment.
+                            type: string
+                            example: "https://www.integrator-site.com/order/pending"
+                            x-description-i18n:
+                              eng: URL to redirect the buyer in case of pending payment.
+                              spa: URL a la cual se redireccionará al comprador en caso de pago pendiente.
+                              por: URL para redirecionar o comprador em caso de pagamento pendente.
+                          return_url_failure:
+                            description: URL to redirect the buyer in case of pending payment.
+                            type: string
+                            example: "https://www.integrator-site.com/order/failed"
+                            x-description-i18n:
+                              eng: URL to redirect the buyer in case of pending payment.
+                              spa: URL a la cual se redireccionará al comprador en caso de fallo en el pago del comprador.
+                              por: URL para redirecionar o comprador em caso de caso de falha no pagamento do comprador.
                   order:
                     type: object
-                    description: Order containing all the essential information for the execution of a transaction.
+                    description: Order containing all the essential information for the execution of a payment.
                     x-description-i18n:
-                      eng: Order containing all the essential information for the execution of a transaction.
+                      eng: Order containing all the essential information for the execution of a payment.
                       spa: Orden que contiene toda la información esencial para la ejecución de una transacción.
                       por: Ordem contendo todas as informações essenciais para a execução de uma transação.
                     properties:
@@ -3740,9 +3770,9 @@ paths:
                       description:
                         type: string
                         example: "my_order_description"
-                        description: Reason for the order or transaction.
+                        description: Reason for the order or payment.
                         x-description-i18n:
-                          eng: Reason for the order or transaction.
+                          eng: Reason for the order or payment.
                           spa: Motivo de la orden o transacción.
                           por: Motivo da ordem ou transação.
                       amount:
@@ -3754,11 +3784,11 @@ paths:
                           spa: Monto total que se desea cobrar.
                           por: Valor total a ser pago.
                       items:
-                        description: Information relevant to the configuration of the items comprising the transaction, such as the list of items, their quantities, and prices. This encompasses details about the various products or services involved in the transaction, including the quantity of each item and the corresponding price for each of them.
+                        description: Information relevant to the configuration of the items comprising the payment, such as the list of items, their quantities, and prices. This encompasses details about the various products or services involved in the payment, including the quantity of each item and the corresponding price for each of them.
                         x-description-i18n:
-                          eng: Information relevant to the configuration of the items comprising the transaction, such as the list of items, their quantities, and prices. This encompasses details about the various products or services involved in the transaction, including the quantity of each item and the corresponding price for each of them.
+                          eng: Information relevant to the configuration of the items comprising the payment, such as the list of items, their quantities, and prices. This encompasses details about the various products or services involved in the payment, including the quantity of each item and the corresponding price for each of them.
                           spa: Información relevante para la configuración de los elementos que componen la transacción, como la lista de elementos, sus cantidades y precios. Esto abarca detalles sobre los diferentes productos o servicios involucrados en la transacción, incluyendo la cantidad de cada elemento y el precio correspondiente a cada uno de ellos.
-                          por: Informações pertinentes à configuração dos itens que constituem a transação, tais como a lista de itens, suas quantidades e preços. Isso abrange informações sobre os diferentes produtos ou serviços envolvidos na transação, incluindo a quantidade de cada item e o preço correspondente a cada um deles. 
+                          por: Informações pertinentes à configuração dos itens que constituem a transação, tais como a lista de itens, suas quantidades e preços. Isso abrange informações sobre os diferentes produtos ou serviços envolvidos na transação, incluindo a quantidade de cada item e o preço correspondente a cada um deles.
                         type: array
                         items:
                           type: object
@@ -3827,9 +3857,9 @@ paths:
                           amount:
                             type: string
                             example: "50.00"
-                            description: Amount of the transaction corresponding to the collector.
+                            description: Amount of the payment corresponding to the collector.
                             x-description-i18n:
-                              eng: Amount of the transaction corresponding to the collector.
+                              eng: Amount of the payment corresponding to the collector.
                               spa: Monto de la transacción que corresponde al collector.
                               por: Valor da transação correspondente ao collector.
                       payer:
@@ -3953,18 +3983,18 @@ paths:
                                 example: "99999999"
                       advanced:
                         type: object
-                        description: Options for advanced transaction.
+                        description: Options for advanced payment.
                         x-description-i18n:
-                          eng: Options for advanced transaction.
+                          eng: Options for advanced payment.
                           spa: Agrupación de opciones avanzadas para la transacción.
                           por: Opções avançadas para a transação.
                         properties:
                           binary_mode:
                             type: boolean
                             example: true
-                            description: Enables requesting a final transaction response during the initial processing, disabling any options for offline or asynchronous processing.
+                            description: Enables requesting a final payment response during the initial processing, disabling any options for offline or asynchronous processing.
                             x-description-i18n:
-                              eng: Enables requesting a final transaction response during the initial processing, disabling any options for offline or asynchronous processing.
+                              eng: Enables requesting a final payment response during the initial processing, disabling any options for offline or asynchronous processing.
                               spa: Permite solicitar una respuesta definitiva de la transacción durante el procesamiento inicial, deshabilitando cualquier opción de procesamiento fuera de línea o asíncrono.
                               por: Possibilita requerer uma resposta definitiva da transação no primeiro processamento, desabilitando quaisquer opções de processamento offline ou assíncrono.
                           sponsor_id:
@@ -3976,9 +4006,9 @@ paths:
                               spa: ID de la cuenta de Mercado Pago encargada de pagar las comisiones.
                               por: Identificação da conta do Mercado Pago responsável pelo pagamento das comissões.
                       amount_details:
-                        description: This field encompasses transaction value details, including the amount paid, and in cases of refunds, the total refunded amount. Additionally, it covers the costs associated with shipping the purchased product.
+                        description: This field encompasses payment value details, including the amount paid, and in cases of refunds, the total refunded amount. Additionally, it covers the costs associated with shipping the purchased product.
                         x-description-i18n:
-                          eng: This field encompasses transaction value details, including the amount paid, and in cases of refunds, the total refunded amount. Additionally, it covers the costs associated with shipping the purchased product.
+                          eng: This field encompasses payment value details, including the amount paid, and in cases of refunds, the total refunded amount. Additionally, it covers the costs associated with shipping the purchased product.
                           spa: Este campo abarca los detalles de valor de la transacción, incluyendo la cantidad pagada y, en casos de reembolso, la cantidad total reembolsada. Además, cubre los costos asociados con el envío del producto adquirido.
                           por: Este campo abrange os detalhes relacionados aos montantes da transação, incluindo o valor pago e, em situações de reembolso, o montante total reembolsado. Também engloba os custos associados ao envio do produto adquirido.
                         type: object
@@ -3986,9 +4016,9 @@ paths:
                           total:
                             type: string
                             example: "123.00"
-                            description: Details of the total value of the transaction.
+                            description: Details of the total value of the payment.
                             x-description-i18n:
-                              eng: Details of the total value of the transaction.
+                              eng: Details of the total value of the payment.
                               spa: Detalles del monto total de la transacción.
                               por: Detalhes do valor total da transação.
                           paid:
@@ -4016,9 +4046,9 @@ paths:
                               spa: Monto cobrado por envío (incluido en total).
                               por: Valor cobrado por envio (incluído no total).
                       payment_method:
-                        description: Detailed information about the available payment methods during the transaction, such as the total amount to be paid using a specific payment method, installment options, among others.
+                        description: Detailed information about the available payment methods during the payment, such as the total amount to be paid using a specific payment method, installment options, among others.
                         x-description-i18n:
-                          eng: Detailed information about the available payment methods during the transaction, such as the total amount to be paid using a specific payment method, installment options, among others.
+                          eng: Detailed information about the available payment methods during the payment, such as the total amount to be paid using a specific payment method, installment options, among others.
                           spa: Información detallada sobre los medios de pago disponibles durante la transacción, como por ejemplo, el monto total a pagar utilizando un método de pago específico, opciones de financiamiento, entre otros.
                           por: Informações detalhadas sobre os meios de pagamento disponíveis durante a transação, como por exemplo, valor total a ser pago com determinado meio de pagamento, parcelamento, entre outros.
                         type: object
@@ -4067,9 +4097,9 @@ paths:
                                 issuer:
                                   type: string
                                   example: "23"
-                                  description: If required, this is the identifier of the card issuer entity. This identifier is used to record the source of the payment card. In certain situations, having this information is important for tracking, security, and transaction analysis purposes.
+                                  description: If required, this is the identifier of the card issuer entity. This identifier is used to record the source of the payment card. In certain situations, having this information is important for tracking, security, and payment analysis purposes.
                                   x-description-i18n:
-                                    eng: If required, this is the identifier of the card issuer entity. This identifier is used to record the source of the payment card. In certain situations, having this information is important for tracking, security, and transaction analysis purposes.
+                                    eng: If required, this is the identifier of the card issuer entity. This identifier is used to record the source of the payment card. In certain situations, having this information is important for tracking, security, and payment analysis purposes.
                                     spa: En caso de ser necesario, este es el identificador de la entidad emisora de la tarjeta. Este identificador se utiliza para registrar el origen de la tarjeta de pago. En ciertas situaciones, contar con esta información es importante para fines de seguimiento, seguridad y análisis de transacciones.
                                     por: Se necessário, este é o identificador da instituição que emitiu o cartão. Esse identificador é usado para registrar a origem do cartão de pagamento. Em algumas situações, é importante ter essa informação para fins de rastreamento, segurança e análise de transações.
                                 installments:
@@ -4083,11 +4113,11 @@ paths:
                                 statement_descriptor:
                                   type: string
                                   example: "MERCADOPAGO"
-                                  description: Charge descriptor to be displayed on the card statement. The charge descriptor is the text or name that will appear on the customer's credit card statement to identify the transaction. It provides a brief description that assists the customer in recognizing the nature of the transaction conducted.
+                                  description: Charge descriptor to be displayed on the card statement. The charge descriptor is the text or name that will appear on the customer's credit card statement to identify the payment. It provides a brief description that assists the customer in recognizing the nature of the payment conducted.
                                   x-description-i18n:
-                                    eng: Charge descriptor to be displayed on the card statement. The charge descriptor is the text or name that will appear on the customer's credit card statement to identify the transaction. It provides a brief description that assists the customer in recognizing the nature of the transaction conducted.
+                                    eng: Charge descriptor to be displayed on the card statement. The charge descriptor is the text or name that will appear on the customer's credit card statement to identify the payment. It provides a brief description that assists the customer in recognizing the nature of the payment conducted.
                                     spa: Descriptor del cargo que se mostrará en el estado de cuenta de la tarjeta. El descriptor del cargo es el texto o nombre que aparecerá en el estado de cuenta de la tarjeta de crédito del cliente para identificar la transacción. Proporciona una breve descripción que ayuda al cliente a reconocer la naturaleza de la transacción realizada.
-                                    por: Descritor da cobrança a ser mostrada no extrato do cartão. O descritor da cobrança é o texto ou nome que aparecerá no extrato do cartão de crédito do cliente para identificar a transação. Ele fornece uma breve descrição que ajuda o cliente a reconhecer a natureza da transação realizada. 
+                                    por: Descritor da cobrança a ser mostrada no extrato do cartão. O descritor da cobrança é o texto ou nome que aparecerá no extrato do cartão de crédito do cliente para identificar a transação. Ele fornece uma breve descrição que ajuda o cliente a reconhecer a natureza da transação realizada.
                                 refunds:
                                   description: List of refunds related to the payment method.
                                   x-description-i18n:
@@ -4188,19 +4218,19 @@ paths:
                                 issuer:
                                   type: string
                                   example: "23"
-                                  description: If required, this is the identifier of the card issuer entity. This identifier is used to record the source of the payment card. In certain situations, having this information is important for tracking, security, and transaction analysis purposes.
+                                  description: If required, this is the identifier of the card issuer entity. This identifier is used to record the source of the payment card. In certain situations, having this information is important for tracking, security, and payment analysis purposes.
                                   x-description-i18n:
-                                    eng: If required, this is the identifier of the card issuer entity. This identifier is used to record the source of the payment card. In certain situations, having this information is important for tracking, security, and transaction analysis purposes.
+                                    eng: If required, this is the identifier of the card issuer entity. This identifier is used to record the source of the payment card. In certain situations, having this information is important for tracking, security, and payment analysis purposes.
                                     spa: En caso de ser necesario, este es el identificador de la entidad emisora de la tarjeta. Este identificador se utiliza para registrar el origen de la tarjeta de pago. En ciertas situaciones, contar con esta información es importante para fines de seguimiento, seguridad y análisis de transacciones.
                                     por: Se necessário, este é o identificador da instituição que emitiu o cartão. Esse identificador é usado para registrar a origem do cartão de pagamento. Em algumas situações, é importante ter essa informação para fins de rastreamento, segurança e análise de transações.
                                 statement_descriptor:
                                   type: string
                                   example: "MERCADOPAGO"
-                                  description: Charge descriptor to be displayed on the card statement. The charge descriptor is the text or name that will appear on the customer's credit card statement to identify the transaction. It provides a brief description that assists the customer in recognizing the nature of the transaction conducted.
+                                  description: Charge descriptor to be displayed on the card statement. The charge descriptor is the text or name that will appear on the customer's credit card statement to identify the payment. It provides a brief description that assists the customer in recognizing the nature of the payment conducted.
                                   x-description-i18n:
-                                    eng: Charge descriptor to be displayed on the card statement. The charge descriptor is the text or name that will appear on the customer's credit card statement to identify the transaction. It provides a brief description that assists the customer in recognizing the nature of the transaction conducted.
+                                    eng: Charge descriptor to be displayed on the card statement. The charge descriptor is the text or name that will appear on the customer's credit card statement to identify the payment. It provides a brief description that assists the customer in recognizing the nature of the payment conducted.
                                     spa: Descriptor del cargo que se mostrará en el estado de cuenta de la tarjeta. El descriptor del cargo es el texto o nombre que aparecerá en el estado de cuenta de la tarjeta de crédito del cliente para identificar la transacción. Proporciona una breve descripción que ayuda al cliente a reconocer la naturaleza de la transacción realizada.
-                                    por: Descritor da cobrança a ser mostrada no extrato do cartão. O descritor da cobrança é o texto ou nome que aparecerá no extrato do cartão de crédito do cliente para identificar a transação. Ele fornece uma breve descrição que ajuda o cliente a reconhecer a natureza da transação realizada. 
+                                    por: Descritor da cobrança a ser mostrada no extrato do cartão. O descritor da cobrança é o texto ou nome que aparecerá no extrato do cartão de crédito do cliente para identificar a transação. Ele fornece uma breve descrição que ajuda o cliente a reconhecer a natureza da transação realizada.
                                 refunds:
                                   description: List of refunds related to the payment method.
                                   x-description-i18n:
@@ -4584,20 +4614,20 @@ paths:
                     enum:
                       - 500--Unexpected Error.
                       - 503--Service Unavailable.
-  /v1/transaction-intents/{id}/refund:
+  /v1/payment-intents/{id}/refund:
     put:
       tags:
-        - $ref: '#/tags/checkout-api'
-      summary: Refund Transaction Intent
+        - $ref: "#/tags/checkout-api"
+      summary: Refund Payment Intent
       x-summary-i18n:
-        eng: Refund Transaction Intent
-        spa: Reembolsar Transaction Intent
-        por: Reembolsar Transaction Intent
-      description: If a Transaction Intent is successfully processed and the client chooses to cancel, this endpoint allows for the initiation of a refund procedure
+        eng: Refund Payment Intent
+        spa: Reembolsar Payment Intent
+        por: Reembolsar Payment Intent
+      description: If a Payment Intent is successfully processed and the client chooses to cancel, this endpoint allows for the initiation of a refund procedure
       x-description-i18n:
-        eng: If a Transaction Intent is successfully processed and the client chooses to cancel, this endpoint allows for the initiation of a refund procedure
-        spa: Si una Transaction Intent se procesa con éxito y el cliente decide cancelar, este endpoint permite iniciar un procedimiento de reembolso
-        por: Se uma Transaction Intent for processada com sucesso e o cliente optar pelo cancelamento, este endpoint oferece a capacidade de iniciar um procedimento de reembolso
+        eng: If a Payment Intent is successfully processed and the client chooses to cancel, this endpoint allows for the initiation of a refund procedure
+        spa: Si una Payment Intent se procesa con éxito y el cliente decide cancelar, este endpoint permite iniciar un procedimiento de reembolso
+        por: Se uma Payment Intent for processada com sucesso e o cliente optar pelo cancelamento, este endpoint oferece a capacidade de iniciar um procedimento de reembolso
       parameters:
         - in: header
           name: Authorization
@@ -4610,17 +4640,27 @@ paths:
             eng: Access Token  - Application's private key that must be used exclusively in the backend for payment generation, requiring these pieces of information to be kept secure on its servers.
             spa: Access Token - Clave privada de la aplicación que debe ser utilizada exclusivamente en el backend para la generación de pagos, siendo necesario mantener esta información segura en sus servidores.
             por: Access Token - Chave privada do aplicativo que deve ser usada exclusivamente no backend para a geração de pagamentos, sendo necessário manter essas informações seguras em seus servidores.
+        - in: header
+          name: X-Integrator-ID
+          schema:
+            type: string
+          required: false
+          description: Optinal ID for programmers or agencies  who are part of the <dev>program.
+          x-description-i18n:
+            eng: Optinal ID for programmers or agencies  who are part of the <dev>program.
+            spa: ID opcional para programadores o agencias que forman parte del programa <dev>.
+            por: ID opcional para programadores ou agências que fazem parte do programa <dev>.
         - in: path
           name: id
           schema:
             type: string
             required: true
           required: true
-          description: Alphanumeric ID of the Transaction Intent to get.
+          description: Alphanumeric ID of the Payment Intent to get.
           x-description-i18n:
-            eng: Alphanumeric ID of the Transaction Intent to get.
-            spa: ID alfanumérico de la Transaction Intent a obtener.
-            por: ID alfanumérico da Transaction Intent a ser obtida.
+            eng: Alphanumeric ID of the Payment Intent to get.
+            spa: ID alfanumérico de la Payment Intent a obtener.
+            por: ID alfanumérico da Payment Intent a ser obtida.
       responses:
         "200":
           description: success
@@ -4632,31 +4672,31 @@ paths:
                   id:
                     type: string
                     example: "00001njp2i"
-                    description: ID of a created Transaction Intent.
+                    description: ID of a created Payment Intent.
                     x-description-i18n:
-                      eng: ID of a created Transaction Intent.
-                      spa: ID de la Transaction Intent creada.
-                      por: ID da Transaction Intent criada.
+                      eng: ID of a created Payment Intent.
+                      spa: ID de la Payment Intent creada.
+                      por: ID da Payment Intent criada.
                   created_date:
                     type: string
                     example: "2023-09-06T08:00:00.000-03:00"
-                    description: Date of creation of the Transaction Intent. For example, "2023-09-06T08:00:00.000-03:00".
+                    description: Date of creation of the Payment Intent. For example, "2023-09-06T08:00:00.000-03:00".
                     x-description-i18n:
-                      eng: Date of creation of the Transaction Intent. For example, "2023-09-06T08:00:00.000-03:00".
-                      spa: Fecha de creación de la Transaction Intent. Por ejemplo, "2023-09-06T08:00:00.000-03:00".
-                      por: Data de criação da Transaction Intent. Por exemplo, "2023-09-06T08:00:00.000-03:00".
+                      eng: Date of creation of the Payment Intent. For example, "2023-09-06T08:00:00.000-03:00".
+                      spa: Fecha de creación de la Payment Intent. Por ejemplo, "2023-09-06T08:00:00.000-03:00".
+                      por: Data de criação da Payment Intent. Por exemplo, "2023-09-06T08:00:00.000-03:00".
                     format: date-time
                   status:
                     type: string
                     example: "reverted"
-                    description: Current status of the Transaction Intent.
+                    description: Current status of the Payment Intent.
                     x-description-i18n:
-                      eng: Current status of the Transaction Intent.
-                      spa: Status actual de la Transaction Intent.
-                      por: Status atual da Transaction Intent.
+                      eng: Current status of the Payment Intent.
+                      spa: Status actual de la Payment Intent.
+                      por: Status atual da Payment Intent.
                     enum:
                       - new--nova
-                      - transaction_in_process--transação em processo
+                      - payment_in_process--transação em processo
                       - partially_processed--parcialmente processada
                       - processed--processada
                       - partially_reverted--revertida parcialmente
@@ -4674,40 +4714,40 @@ paths:
                       por: URL que permite iniciar o fluxo de pagamento. Por exemplo, "https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=123456789".
                   configuration:
                     type: object
-                    description: Predefined configuration parameters set by the seller before initiating the transaction.
+                    description: Predefined configuration parameters set by the seller before initiating the payment.
                     x-description-i18n:
-                      eng: Predefined configuration parameters set by the seller before initiating the transaction.
+                      eng: Predefined configuration parameters set by the seller before initiating the payment.
                       spa: Parámetros de configuración predefinidos por el seller antes de iniciar la transacción.
                       por: Parâmetros de configuração pré-definidos pelo seller antes de iniciar a transação.
                     properties:
                       option:
                         type: object
-                        description: Seller-defined settings to determine the choices offered during the transaction. This field refers to the configurations the seller establishes to provide diverse options to buyers throughout the transaction process. This can encompass selections such as accepted payment methods, installment plans, shipping options, discounts, and other customizations that impact how the transaction is conducted.
+                        description: Seller-defined settings to determine the choices offered during the payment. This field refers to the configurations the seller establishes to provide diverse options to buyers throughout the payment process. This can encompass selections such as accepted payment methods, installment plans, shipping options, discounts, and other customizations that impact how the payment is conducted.
                         x-description-i18n:
-                          eng: Seller-defined settings to determine the choices offered during the transaction. This field refers to the configurations the seller establishes to provide diverse options to buyers throughout the transaction process. This can encompass selections such as accepted payment methods, installment plans, shipping options, discounts, and other customizations that impact how the transaction is conducted.
+                          eng: Seller-defined settings to determine the choices offered during the payment. This field refers to the configurations the seller establishes to provide diverse options to buyers throughout the payment process. This can encompass selections such as accepted payment methods, installment plans, shipping options, discounts, and other customizations that impact how the payment is conducted.
                           spa: Ajustes establecidos por el seller para determinar las opciones ofrecidas durante la transacción. Este campo se refiere a las configuraciones que el seller establece para proporcionar diferentes opciones a los compradores durante el proceso de transacción. Esto puede incluir elecciones como métodos de pago aceptados, cuotas, opciones de envío, descuentos y otras personalizaciones que afectan la forma en que se lleva a cabo la transacción.
                           por: Ajustes estabelecidos pelo seller para determinar as escolhas oferecidas durante a transação. Este campo e refere às configurações que o seller configura para fornecer diferentes opções aos compradores durante o processo de transação. Isso pode incluir escolhas como meios de pagamento aceitos, parcelamento, opções de envio, descontos e outras personalizações que afetam a forma como a transação é conduzida.
                         properties:
                           purpose:
                             type: string
-                            description: Transaction purpose identifier that enables loading a list of predefined options. For example, wallet_purchase, onboarding_credits.
+                            description: Payment purpose identifier that enables loading a list of predefined options. For example, wallet_purchase, onboarding_credits.
                             x-description-i18n:
-                              eng: Transaction purpose identifier that enables loading a list of predefined options. For example, wallet_purchase, onboarding_credits.
+                              eng: Payment purpose identifier that enables loading a list of predefined options. For example, wallet_purchase, onboarding_credits.
                               spa: Identificador de propósito de transacción que permite cargar una lista de opciones predefinidas. Por ejemplo, wallet_purchase, onboarding_credits.
                               por: Identificador da finalidade da transação, que permite carregar uma lista de opções predefinidas. Por exemplo, wallet_purchase, onboarding_credits.
                             example: wallet_purchase, onboarding_credits
                           payment_methods:
                             type: object
-                            description: Information related to the payment methods defined for the transaction.
+                            description: Information related to the payment methods defined for the payment.
                             x-description-i18n:
-                              eng: Information related to the payment methods defined for the transaction.
+                              eng: Information related to the payment methods defined for the payment.
                               spa: Información relacionada con los medios de pago definidos para la transacción.
                               por: Informações relacionadas aos meios de pagamento definidos para a transação.
                             properties:
                               coupons:
-                                description: Coupons can be used as a methods of payment in the transaction.
+                                description: Coupons can be used as a methods of payment in the payment.
                                 x-description-i18n:
-                                  eng: Coupons can be used as a methods of payment in the transaction.
+                                  eng: Coupons can be used as a methods of payment in the payment.
                                   spa: Los cupones pueden ser utilizados como medio de pago en la transacción.
                                   por: Os cupons podem ser utilizados como meio de pagamento na transação.
                                 type: object
@@ -4747,9 +4787,9 @@ paths:
                                       type: string
                                       example: credit_card, debit_card
                                   disabled:
-                                    description: Types of payment methods not covered. This parameter encompasses payments that will not be accepted in the transaction, such as "credit card".
+                                    description: Types of payment methods not covered. This parameter encompasses payments that will not be accepted in the payment, such as "credit card".
                                     x-description-i18n:
-                                      eng: Types of payment methods not covered. This parameter encompasses payments that will not be accepted in the transaction, such as "credit card".
+                                      eng: Types of payment methods not covered. This parameter encompasses payments that will not be accepted in the payment, such as "credit card".
                                       spa: Tipos de medios de pago no incluidos. Este parámetro abarca los pagos que no serán aceptados en la transacción, como por ejemplo, "credit card".
                                       por: Tipos de meios de pagamento não abrangidos. Este parâmetro engloba os pagamentos que não serão aceitos na transação, como por exemplo, "credit card".
                                     type: array
@@ -4841,46 +4881,46 @@ paths:
                           spa: Configuración del seller sobre la integración.
                           por: Configuração do seller sobre a integração.
                         properties:
-                              notification_url:
-                                type: string
-                                description: URL to which notifications will be sent.
-                                example: "https://www.integrator-site.com/notifications"
-                                x-description-i18n:
-                                  eng: URL to which notifications will be sent.
-                                  spa: URL a la cual se enviarán las notificaciones.
-                                  por: URL para a qual as notificações serão enviadas.
-                              return_url_default:
-                                    description: Default URL to redirect the buyer.
-                                    x-description-i18n:
-                                      eng: Default URL to redirect the buyer.
-                                      spa: URL por defecto a la cual se redireccionará al comprador.
-                                      por: URL padrão para redirecionar o comprador.
-                                    type: string
-                                    example: "https://www.integrator-site.com/order"
-                              return_url_success:
-                                    description: URL to redirect the buyer in case of successful payment.
-                                    type: string
-                                    example: "https://www.integrator-site.com/order/success"
-                                    x-description-i18n:
-                                      eng: URL to redirect the buyer in case of successful payment.
-                                      spa: URL a la cual se redireccionará al comprador en caso de pago exitoso.
-                                      por: URL para redirecionar o comprador em caso de pagamento bem-sucedido.
-                              return_url_pending:
-                                    description: URL to redirect the buyer in case of pending payment.
-                                    type: string
-                                    example: "https://www.integrator-site.com/order/pending"
-                                    x-description-i18n:
-                                      eng: URL to redirect the buyer in case of pending payment.
-                                      spa: URL a la cual se redireccionará al comprador en caso de pago pendiente.
-                                      por: URL para redirecionar o comprador em caso de pagamento pendente.
-                              return_url_failure:
-                                    description: Redirection URL for the event of buyer payment failure.
-                                    type: string
-                                    example: "https://www.integrator-site.com/order/failed"
-                                    x-description-i18n:
-                                      eng: Redirection URL for the event of buyer payment failure.
-                                      spa: URL de redirección para el caso de fallo en el pago del comprador.
-                                      por: URL de redirecionamento para o caso de falha no pagamento do comprador.
+                          notification_url:
+                            type: string
+                            description: URL to which notifications will be sent.
+                            example: "https://www.integrator-site.com/notifications"
+                            x-description-i18n:
+                              eng: URL to which notifications will be sent.
+                              spa: URL a la cual se enviarán las notificaciones.
+                              por: URL para a qual as notificações serão enviadas.
+                          return_url_default:
+                            description: Default URL to redirect the buyer.
+                            x-description-i18n:
+                              eng: Default URL to redirect the buyer.
+                              spa: URL por defecto a la cual se redireccionará al comprador.
+                              por: URL padrão para redirecionar o comprador.
+                            type: string
+                            example: "https://www.integrator-site.com/order"
+                          return_url_success:
+                            description: URL to redirect the buyer in case of successful payment.
+                            type: string
+                            example: "https://www.integrator-site.com/order/success"
+                            x-description-i18n:
+                              eng: URL to redirect the buyer in case of successful payment.
+                              spa: URL a la cual se redireccionará al comprador en caso de pago exitoso.
+                              por: URL para redirecionar o comprador em caso de pagamento bem-sucedido.
+                          return_url_pending:
+                            description: URL to redirect the buyer in case of pending payment.
+                            type: string
+                            example: "https://www.integrator-site.com/order/pending"
+                            x-description-i18n:
+                              eng: URL to redirect the buyer in case of pending payment.
+                              spa: URL a la cual se redireccionará al comprador en caso de pago pendiente.
+                              por: URL para redirecionar o comprador em caso de pagamento pendente.
+                          return_url_failure:
+                            description: Redirection URL for the event of buyer payment failure.
+                            type: string
+                            example: "https://www.integrator-site.com/order/failed"
+                            x-description-i18n:
+                              eng: Redirection URL for the event of buyer payment failure.
+                              spa: URL de redirección para el caso de fallo en el pago del comprador.
+                              por: URL de redirecionamento para o caso de falha no pagamento do comprador.
                   order:
                     type: object
                     description: Common Order attributes for request and response.
@@ -4908,25 +4948,25 @@ paths:
                       description:
                         type: string
                         example: "my_order_description"
-                        description: Description for the order or transaction.
+                        description: Description for the order or payment.
                         x-description-i18n:
-                          eng: Description for the order or transaction.
+                          eng: Description for the order or payment.
                           spa: Descripción de la orden o transacción.
                           por: Descrição da ordem ou transação.
                       amount:
                         example: "233.00"
                         type: string
-                        description: Total value of the transaction. For example, "233.00".
+                        description: Total value of the payment. For example, "233.00".
                         x-description-i18n:
-                          eng: Total value of the transaction. For example, "233.00".
+                          eng: Total value of the payment. For example, "233.00".
                           spa: Monto total de la transacción. Por ejemplo, "233.00"..
                           por: Valor total da transação. Por exemplo, "233.00".
                       items:
-                        description: Information relevant to the configuration of the items comprising the transaction, such as the list of items, their quantities, and prices. This encompasses details about the various products or services involved in the transaction, including the quantity of each item and the corresponding price for each of them.
+                        description: Information relevant to the configuration of the items comprising the payment, such as the list of items, their quantities, and prices. This encompasses details about the various products or services involved in the payment, including the quantity of each item and the corresponding price for each of them.
                         x-description-i18n:
-                          eng: Information relevant to the configuration of the items comprising the transaction, such as the list of items, their quantities, and prices. This encompasses details about the various products or services involved in the transaction, including the quantity of each item and the corresponding price for each of them.
+                          eng: Information relevant to the configuration of the items comprising the payment, such as the list of items, their quantities, and prices. This encompasses details about the various products or services involved in the payment, including the quantity of each item and the corresponding price for each of them.
                           spa: Información relevante para la configuración de los elementos que componen la transacción, como la lista de elementos, sus cantidades y precios. Esto abarca detalles sobre los diferentes productos o servicios involucrados en la transacción, incluyendo la cantidad de cada elemento y el precio correspondiente a cada uno de ellos.
-                          por: Informações pertinentes à configuração dos itens que constituem a transação, tais como a lista de itens, suas quantidades e preços. Isso abrange informações sobre os diferentes produtos ou serviços envolvidos na transação, incluindo a quantidade de cada item e o preço correspondente a cada um deles. 
+                          por: Informações pertinentes à configuração dos itens que constituem a transação, tais como a lista de itens, suas quantidades e preços. Isso abrange informações sobre os diferentes produtos ou serviços envolvidos na transação, incluindo a quantidade de cada item e o preço correspondente a cada um deles.
                         type: array
                         items:
                           type: object
@@ -4995,9 +5035,9 @@ paths:
                           amount:
                             type: string
                             example: "50.00"
-                            description: Amount of the transaction corresponding to the collector.
+                            description: Amount of the payment corresponding to the collector.
                             x-description-i18n:
-                              eng: Amount of the transaction corresponding to the collector.
+                              eng: Amount of the payment corresponding to the collector.
                               spa: Monto de la transacción que corresponde al collector.
                               por: Valor da transação correspondente ao collector.
                       payer:
@@ -5121,18 +5161,18 @@ paths:
                                 example: "99999999"
                       advanced:
                         type: object
-                        description: Options for advanced transaction.
+                        description: Options for advanced payment.
                         x-description-i18n:
-                          eng: Options for advanced transaction.
+                          eng: Options for advanced payment.
                           spa: Agrupación de opciones avanzadas para la transacción.
                           por: Opções avançadas para a transação.
                         properties:
                           binary_mode:
                             type: boolean
                             example: true
-                            description: Enables requesting a final transaction response during the initial processing, disabling any options for offline or asynchronous processing.
+                            description: Enables requesting a final payment response during the initial processing, disabling any options for offline or asynchronous processing.
                             x-description-i18n:
-                              eng: Enables requesting a final transaction response during the initial processing, disabling any options for offline or asynchronous processing.
+                              eng: Enables requesting a final payment response during the initial processing, disabling any options for offline or asynchronous processing.
                               spa: Permite solicitar una respuesta definitiva de la transacción durante el procesamiento inicial, deshabilitando cualquier opción de procesamiento fuera de línea o asíncrono.
                               por: Possibilita requerer uma resposta definitiva da transação no primeiro processamento, desabilitando quaisquer opções de processamento offline ou assíncrono.
                           sponsor_id:
@@ -5144,9 +5184,9 @@ paths:
                               spa: Identificador de la cuenta en Mercado Pago que se utilizará para realizar los pagos de comisiones. Esto significa que cuando se deba una comisión a alguien, los fondos se retirarán de esta cuenta de Mercado Pago para efectuar el pago.
                               por: Identificador da conta no Mercado Pago que será utilizada para efetuar os pagamentos das comissões. Isso significa que, quando uma comissão for devida a alguém, os fundos serão retirados dessa conta do Mercado Pago para realizar o pagamento.
                       amount_details:
-                        description: This field encompasses transaction value details, including the amount paid, and in cases of refunds, the total refunded amount. Additionally, it covers the costs associated with shipping the purchased product.
+                        description: This field encompasses payment value details, including the amount paid, and in cases of refunds, the total refunded amount. Additionally, it covers the costs associated with shipping the purchased product.
                         x-description-i18n:
-                          eng: This field encompasses transaction value details, including the amount paid, and in cases of refunds, the total refunded amount. Additionally, it covers the costs associated with shipping the purchased product.
+                          eng: This field encompasses payment value details, including the amount paid, and in cases of refunds, the total refunded amount. Additionally, it covers the costs associated with shipping the purchased product.
                           spa: Este campo abarca los detalles de valor de la transacción, incluyendo la cantidad pagada y, en casos de reembolso, la cantidad total reembolsada. Además, cubre los costos asociados con el envío del producto adquirido.
                           por: Este campo abrange os detalhes relacionados aos montantes da transação, incluindo o valor pago e, em situações de reembolso, o montante total reembolsado. Também engloba os custos associados ao envio do produto adquirido.
                         type: object
@@ -5154,9 +5194,9 @@ paths:
                           total:
                             type: string
                             example: "123.00"
-                            description: Details of the total value of the transaction.
+                            description: Details of the total value of the payment.
                             x-description-i18n:
-                              eng: Details of the total value of the transaction.
+                              eng: Details of the total value of the payment.
                               spa: Detalles del monto total de la transacción.
                               por: Detalhes do valor total da transação.
                           paid:
@@ -5184,9 +5224,9 @@ paths:
                               spa: Monto cobrado por envío (incluido en el otal).
                               por: Valor cobrado por envio (incluído no total).
                       payment_method:
-                        description: Detailed information about the available payment methods during the transaction, such as the total amount to be paid using a specific payment method, installment options, among others.
+                        description: Detailed information about the available payment methods during the payment, such as the total amount to be paid using a specific payment method, installment options, among others.
                         x-description-i18n:
-                          eng: Detailed information about the available payment methods during the transaction, such as the total amount to be paid using a specific payment method, installment options, among others.
+                          eng: Detailed information about the available payment methods during the payment, such as the total amount to be paid using a specific payment method, installment options, among others.
                           spa: Información detallada sobre los medios de pago disponibles durante la transacción, como por ejemplo, el monto total a pagar utilizando un método de pago específico, opciones de financiamiento, entre otros.
                           por: Informações detalhadas sobre os meios de pagamento disponíveis durante a transação, como por exemplo, valor total a ser pago com determinado meio de pagamento, parcelamento, entre outros.
                         type: object
@@ -5235,9 +5275,9 @@ paths:
                                 issuer:
                                   type: string
                                   example: "23"
-                                  description: If required, this is the identifier of the card issuer entity. This identifier is used to record the source of the payment card. In certain situations, having this information is important for tracking, security, and transaction analysis purposes.
+                                  description: If required, this is the identifier of the card issuer entity. This identifier is used to record the source of the payment card. In certain situations, having this information is important for tracking, security, and payment analysis purposes.
                                   x-description-i18n:
-                                    eng: If required, this is the identifier of the card issuer entity. This identifier is used to record the source of the payment card. In certain situations, having this information is important for tracking, security, and transaction analysis purposes.
+                                    eng: If required, this is the identifier of the card issuer entity. This identifier is used to record the source of the payment card. In certain situations, having this information is important for tracking, security, and payment analysis purposes.
                                     spa: En caso de ser necesario, este es el identificador de la entidad emisora de la tarjeta. Este identificador se utiliza para registrar el origen de la tarjeta de pago. En ciertas situaciones, contar con esta información es importante para fines de seguimiento, seguridad y análisis de transacciones.
                                     por: Se necessário, este é o identificador da instituição que emitiu o cartão. Esse identificador é usado para registrar a origem do cartão de pagamento. Em algumas situações, é importante ter essa informação para fins de rastreamento, segurança e análise de transações.
                                 installments:
@@ -5251,11 +5291,11 @@ paths:
                                 statement_descriptor:
                                   type: string
                                   example: "MERCADOPAGO"
-                                  description: Charge descriptor to be displayed on the card statement. The charge descriptor is the text or name that will appear on the customer's credit card statement to identify the transaction. It provides a brief description that assists the customer in recognizing the nature of the transaction conducted.
+                                  description: Charge descriptor to be displayed on the card statement. The charge descriptor is the text or name that will appear on the customer's credit card statement to identify the payment. It provides a brief description that assists the customer in recognizing the nature of the payment conducted.
                                   x-description-i18n:
-                                    eng: Charge descriptor to be displayed on the card statement. The charge descriptor is the text or name that will appear on the customer's credit card statement to identify the transaction. It provides a brief description that assists the customer in recognizing the nature of the transaction conducted.
+                                    eng: Charge descriptor to be displayed on the card statement. The charge descriptor is the text or name that will appear on the customer's credit card statement to identify the payment. It provides a brief description that assists the customer in recognizing the nature of the payment conducted.
                                     spa: Descriptor del cargo que se mostrará en el estado de cuenta de la tarjeta. El descriptor del cargo es el texto o nombre que aparecerá en el estado de cuenta de la tarjeta de crédito del cliente para identificar la transacción. Proporciona una breve descripción que ayuda al cliente a reconocer la naturaleza de la transacción realizada.
-                                    por: Descritor da cobrança a ser mostrada no extrato do cartão. O descritor da cobrança é o texto ou nome que aparecerá no extrato do cartão de crédito do cliente para identificar a transação. Ele fornece uma breve descrição que ajuda o cliente a reconhecer a natureza da transação realizada. 
+                                    por: Descritor da cobrança a ser mostrada no extrato do cartão. O descritor da cobrança é o texto ou nome que aparecerá no extrato do cartão de crédito do cliente para identificar a transação. Ele fornece uma breve descrição que ajuda o cliente a reconhecer a natureza da transação realizada.
                                 refunds:
                                   description: List of refunds related to the payment method.
                                   x-description-i18n:
@@ -5356,19 +5396,19 @@ paths:
                                 issuer:
                                   type: string
                                   example: "23"
-                                  description: If required, this is the identifier of the card issuer entity. This identifier is used to record the source of the payment card. In certain situations, having this information is important for tracking, security, and transaction analysis purposes.
+                                  description: If required, this is the identifier of the card issuer entity. This identifier is used to record the source of the payment card. In certain situations, having this information is important for tracking, security, and payment analysis purposes.
                                   x-description-i18n:
-                                    eng: If required, this is the identifier of the card issuer entity. This identifier is used to record the source of the payment card. In certain situations, having this information is important for tracking, security, and transaction analysis purposes.
+                                    eng: If required, this is the identifier of the card issuer entity. This identifier is used to record the source of the payment card. In certain situations, having this information is important for tracking, security, and payment analysis purposes.
                                     spa: En caso de ser necesario, este es el identificador de la entidad emisora de la tarjeta. Este identificador se utiliza para registrar el origen de la tarjeta de pago. En ciertas situaciones, contar con esta información es importante para fines de seguimiento, seguridad y análisis de transacciones.
                                     por: Se necessário, este é o identificador da instituição que emitiu o cartão. Esse identificador é usado para registrar a origem do cartão de pagamento. Em algumas situações, é importante ter essa informação para fins de rastreamento, segurança e análise de transações.
                                 statement_descriptor:
                                   type: string
                                   example: "MERCADOPAGO"
-                                  description: Charge descriptor to be displayed on the card statement. The charge descriptor is the text or name that will appear on the customer's credit card statement to identify the transaction. It provides a brief description that assists the customer in recognizing the nature of the transaction conducted.
+                                  description: Charge descriptor to be displayed on the card statement. The charge descriptor is the text or name that will appear on the customer's credit card statement to identify the payment. It provides a brief description that assists the customer in recognizing the nature of the payment conducted.
                                   x-description-i18n:
-                                    eng: Charge descriptor to be displayed on the card statement. The charge descriptor is the text or name that will appear on the customer's credit card statement to identify the transaction. It provides a brief description that assists the customer in recognizing the nature of the transaction conducted.
+                                    eng: Charge descriptor to be displayed on the card statement. The charge descriptor is the text or name that will appear on the customer's credit card statement to identify the payment. It provides a brief description that assists the customer in recognizing the nature of the payment conducted.
                                     spa: Descriptor del cargo que se mostrará en el estado de cuenta de la tarjeta. El descriptor del cargo es el texto o nombre que aparecerá en el estado de cuenta de la tarjeta de crédito del cliente para identificar la transacción. Proporciona una breve descripción que ayuda al cliente a reconocer la naturaleza de la transacción realizada.
-                                    por: Descritor da cobrança a ser mostrada no extrato do cartão. O descritor da cobrança é o texto ou nome que aparecerá no extrato do cartão de crédito do cliente para identificar a transação. Ele fornece uma breve descrição que ajuda o cliente a reconhecer a natureza da transação realizada. 
+                                    por: Descritor da cobrança a ser mostrada no extrato do cartão. O descritor da cobrança é o texto ou nome que aparecerá no extrato do cartão de crédito do cliente para identificar a transação. Ele fornece uma breve descrição que ajuda o cliente a reconhecer a natureza da transação realizada.
                                 refunds:
                                   description: List of refunds related to the payment method.
                                   x-description-i18n:
