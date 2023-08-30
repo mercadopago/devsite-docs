@@ -9,14 +9,14 @@ paths:
     get:
       tags:
         - $ref: "#/tags/checkout-api"
-      summary: Get payment intent by ID
+      summary: Get Payment Intent by ID
       x-summary-i18n:
-        eng: Get payment intent by ID
-        spa: Obtener payment intent por ID
-        por: Obter payment intent por ID
+        eng: Get Payment Intent by ID
+        spa: Obtener Payment Intent por ID
+        por: Obter Payment Intent por ID
       description: This endpoint allows you to retrieve an existing 'Payment Intent' using its ID as a parameter
       x-description-i18n:
-        eng: This endpoint allows you to retrieve an existing 'Payment Intent' using its ID as a parameter
+        eng: This endpoint allows you to retrieve an existing Payment Intent by using its ID as a parameter
         spa: Este endpoint permite consultar una Payment Intent ya existente mediante su ID
         por: Este endpoint permite consultar uma Payment Intent existente utilizando seu ID como parâmetro
       parameters:
