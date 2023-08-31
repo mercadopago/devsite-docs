@@ -75,8 +75,8 @@ export default function ExpoWebBrowserExample(url) {
 Los **Deep Links**, también conocidos como enlaces profundos, son una forma poderosa de permitir la navegación directa a pantallas o secciones específicas de una aplicación móvil. 
 
 ### Crear un Deep Link
-Desde nuestro checkout es posible configurar Deep Links para volver a tu aplicación ya sea haciendo click en un link de “Volver” o de forma automática al terminar todo un flujo de pago exitoso, para luego ser redirigido a tu App.
-Para esto debemos agregar en la creación de la preferencia de pago las propiedades `back_urls` y `auto_return` según corresponda.
+Desde nuestro checkout es posible configurar Deep Links para volver a tu aplicación, ya sea haciendo click en un link de “Volver”, o de forma automática al terminar todo un flujo de pago exitoso, para luego ser redirigido a tu App.
+Para esto, debemos agregar en la creación de la preferencia de pago las propiedades `back_urls` y `auto_return`, según corresponda.
 
 Para conocer más, puedes acceder a la documentación de [URLs de retorno](/developers/es/docs/checkout-pro/checkout-customization/user-interface/redirection).
 
@@ -87,7 +87,7 @@ Para conocer más, puedes acceder a la documentación de [URLs de retorno](/deve
 > Configuración de la aplicación para la gestión del Deep Link 
 
 Para poder recibir y gestionar el Deep Link es necesario configurar en nuestro proyecto de React Native el scheme y path que componen los Deep Links que recibimos para redireccionar a alguna parte de tu aplicación. 
-Para ello, verifica que ru archivo **app.json** contenga el nombre del scheme:
+Para ello, verifica que tu archivo **app.json** contenga el nombre del scheme:
 
 ```app.json
 "expo": {

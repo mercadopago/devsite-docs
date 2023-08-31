@@ -20,7 +20,7 @@ With the React Native CLI, we suggest using [React-Native-InAppBrowser](https://
 
 * It is a dependency that allows to provide an integrated and fluid web browsing experience within the application.
 * It has a wide variety of customizable functions to adapt to the specific needs of the application.
-* Keeps users within the context of the application increasing retention and consistency of the experience.
+* Keeps users within the context of the application, increasing retention and consistency of the experience.
 
 To install it, run the following command in your terminal.
 
