@@ -2,14 +2,14 @@
 >
 > h1
 >
-> Adicionar o checkout
+> Adicionar checkout
 
 
 Primeiro, certifique-se de ter **criado a [preferência no seu backend](/developers/pt/docs/checkout-pro/integrate-preferences)**.
 
-Em seguida, você deverá instalar o SDK de frontend do Mercado Pago no seu projeto para adicionar o botão de pagamento.
+Em seguida, instale o SDK de frontend do Mercado Pago no seu projeto para adicionar o botão de pagamento.
 
-A instalação é feita, essencialmente, em **dois passos**:
+A instalação é feita em **duas etapas**:
 
 1. [Adicionar o SDK do Mercado Pago ao projeto com suas credenciais configuradas](/developers/pt/docs/checkout-pro/integrate-checkout-pro/web#bookmark_agregar_el_sdk_de_mercado_pago_al_proyecto)
 2. [Iniciar o checkout a partir da preferência gerada anteriormente](/developers/pt/docs/checkout-pro/integrate-checkout-pro/web#bookmark_iniciar_el_checkout_desde_la_preferencia)

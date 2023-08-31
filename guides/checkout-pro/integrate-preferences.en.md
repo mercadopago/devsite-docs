@@ -1,6 +1,6 @@
 # Integrate Checkout Pro
 
-The integration with Checkout Pro allows you to charge via our web form from any device in a simple, fast and secure way.
+The integration with Checkout Pro allows you to receive payments via our web form from any device in a simple, fast and secure way.
 
 In this documentation you will find all the necessary steps to integrate Checkout Pro through **our SDKs**. To do this, follow the steps described below.
 
