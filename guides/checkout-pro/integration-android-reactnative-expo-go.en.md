@@ -28,9 +28,9 @@ yarn add expo-web-browser
 >
 > h2
 >
-> Implementación de Expo-Web-Browser
+> Implementation of Expo-Web-Browser
 
-Para implementar la dependencia Expo-Web-Browser, sigue el ejemplo que mostramos a continuación.
+To implement the Expo-Web-Browser dependency, follow the example below.
 
 ```JavaScript
 import {

@@ -115,7 +115,7 @@ sdk = mercadopago.SDK("PROD_ACCESS_TOKEN")
 ```
 ]]]
 
-Cuando termines de crear la preferencia, debes configurarla de acuerdo con tu producto o servicio. Para ello, utiliza uno de los códigos disponibles a continuación, completando los atributos con la información respectiva.
+Cuando termines de crear la preferencia, debes configurarla de acuerdo con tu producto o servicio. Para ello, utiliza uno de los códigos disponibles a continuación, completando los atributos con la información que corresponda.
 
 ----[mla, mlb, mlu, mpe, mlm]----
 
