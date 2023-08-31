@@ -36,17 +36,17 @@ Para crear una **afiliación de gateway de pago con MercadoPagoV2**, sigue los p
 4. Completa los campos correspondientes:
    - **Application Key:** se refiere a tus [credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/credentials/credentials) de producción de Mercado Pago. Completa con tu Public Key.
    - **Application Token:** se refiere a tus [credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/credentials/credentials) de Mercado Pago. Completa con tu Access Token.
-   - **Prazo de vencimento do boleto - Periodo de vencimiento del ticket:** plazo, en días hábiles, para el vencimiento de la orden de compra. También definirá el plazo del método de pago. Si el cliente paga fuera de plazo, el dinero se depositará en su cuenta de Mercado Pago.
-   - **Nome da loja - Nombre para resúmenes:** Nombre de la tienda. El valor de este campo aparecerá en la factura de la tarjeta del cliente.
+   - **Periodo de vencimiento del ticket:** plazo, en días hábiles, para el vencimiento de la orden de compra. También definirá el plazo del método de pago. Si el cliente paga fuera de plazo, el dinero se depositará en su cuenta de Mercado Pago.
+   - **Nombre para resúmenes:** Nombre de la tienda. El valor de este campo aparecerá en la factura de la tarjeta del cliente.
    - **Parcelamento máximo - Cuotas máximas:** número máximo de cuotas disponibles.
-   - **Categoría principal da loja - Categoría principal de la tienda:** categoría de la tienda.
+   - **Categoría principal de la tienda:** categoría de la tienda.
    - **Reembolso automático / manual:** selecciona si deseas que Mercado Pago reembolse automáticamente en caso de cancelación o si deseas retener el monto pagado para que el cliente lo use en futuras compras.
-   - **Modo binário - binário:** configura si el pago puede pasar por revisión manual o no.
-   - **Métodos de pagamento excluídos - Métodos de pago excluídos:** métodos de pago que se excluirán en el momento de la compra. [Mira las opciones aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/vtex/payment-methods). Aplicable solo para MercadoPagoPRO, MercadoPagoWallet y MercadoPAgoOff.
-   - **Tipos de pagamento excluídos - Tipos de pago excluidos:** tipos de pago que se excluirán en el momento de la compra. [Mira las opciones aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/vtex/payment-methods). Aplicable solo para MercadoPagoPRO, MercadoPagoWallet y MercadoPagoOff.
-   - **Modo de processamento - Modo de procesamiento:** configura el pago a través del modelo agregador.
+   - **Modo binário:** configura si el pago puede pasar por revisión manual o no.
+   - **Métodos de pago excluídos:** métodos de pago que se excluirán en el momento de la compra. [Mira las opciones aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/vtex/payment-methods). Aplicable solo para MercadoPagoPRO, MercadoPagoWallet y MercadoPAgoOff.
+   - **Tipos de pago excluidos:** tipos de pago que se excluirán en el momento de la compra. [Mira las opciones aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/vtex/payment-methods). Aplicable solo para MercadoPagoPRO, MercadoPagoWallet y MercadoPagoOff.
+   - **Modo de procesamiento:** configura el pago a través del modelo agregador.
    - **Integrator ID:** para programadores o agencias que realizan la integración.
-   - **Moeda - Moneda:** moneda a configurar (USD o Local).
+   - **Moneda:** moneda a configurar (USD o Local).
    - **Plazo de captura de pagamento aprobado - Plazo de captura de pagos aprobado:** configura un retraso en la captura automática de VTEX.
 5. Haz clic en **Salva**.
 

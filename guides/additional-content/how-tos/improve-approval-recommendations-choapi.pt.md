@@ -13,7 +13,7 @@ Caso um comprador frequente faça uma compra a partir de um dispositivo diferent
 > 
 > Atenção
 >
-> Caso já esteja utilizando o [SDK JS do Mercado Pago](/developers/pt/docs/sdks-library/client-side/mp-js-v2), **não** será necessário adicionar o código de segurança, pois o Device ID será obtido por padrão.
+> Caso já esteja utilizando o [SDK JS do Mercado Pago](/developers/pt/docs/sdks-library/client-side/mp-js-v2,) **não** será necessário adicionar o código de segurança, pois o Device ID será obtido por padrão.
 Você pode **adicionar o código de segurança do Mercado Pago** na sua página substituindo o valor de `view` pelo nome da seção na qual deseja adicioná-lo. O mais importante é adicioná-lo na **página do checkout**, porém adicionar em **outras páginas**, como home, search ou item, também ajuda a enriquecer as informações coletadas.
 
 ```html
@@ -212,6 +212,7 @@ Se atente a todos os atributos disponíveis ao criar um pagamento usando o méto
 Existem também **campos extras** que podem ser enviados de acordo com **o ramo de atividade**. Você pode encontrar mais detalhes sobre cada setor e os dados do comprador e do shipping que recomendamos incluir em cada um deles [aqui](/developers/pt/docs/checkout-api/additional-content/industry-data).
 
 ## Melhorar a experiência do usuário
+
 Muitas vezes o comprador pode errar na hora de preencher seus dados no checkout. Por isso, vale a pena revisar cada passo, interações e até design, para checar se tudo está claro como deveria. 
 Caso opte por **criar seu front do zero**, você encontra dicas de como fazê-lo de forma eficiente [aqui](/developers/pt/docs/checkout-api/best-practices/ux-best-practices/ux-for-checkouts/introduction). 
 Se um pagamento for negado, é importante também que você explique aos seus clientes o motivo da recusa e o que eles poderão fazer para resolver o problema. Assim, seus clientes terão todas as informações necessárias para pagar sem problemas. Você encontra **recomendações de mensagens para os principais motivos de recusa** [aqui](/developers/pt/docs/checkout-api/response-handling/collection-results). 
@@ -222,4 +223,4 @@ Se, em vez disso, você quiser garantir uma interface otimizada, pode utilizar o
 > 
 > Importante
 >
-> Recomendamos avaliar a [qualidade de sua integração](/developers/pt/docs/checkout-api/additional-content/integration-quality) antes de entrar em produção para verificar se você está cumprindo os padrões de qualidade e segurança do Mercado Pago que garantem uma boa taxa de aprovação de pagamentos.
+> Recomendamos avaliar a [qualidade de sua integração](/developers/pt/docs/checkout-api/how-tos/integration-quality) antes de entrar em produção para verificar se você está cumprindo os padrões de qualidade e segurança do Mercado Pago que garantem uma boa taxa de aprovação de pagamentos.

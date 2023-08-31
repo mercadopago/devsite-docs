@@ -29,14 +29,14 @@ Ambos os tipos de credenciais são compostos por dois pares de chaves que você 
 >
 > Observação
 >
->Se necessário, você pode renovar suas credenciais por motivos de segurança ou qualquer outro motivo relevante. Para renová-las, basta clicar em **Mais opções** > **Renovar**.
+>Se necessário, você pode renovar suas credenciais por motivos de segurança ou qualquer outro motivo relevante. Para renová-las, basta clicar em **Mais opções** (três pontos ao final do card) > **Renovar**.
 
 ## Compartilhar credenciais
 
 Quando receber assistência na integração ou configuração dos seus canais de pagamento, é possível compartilhar suas credenciais com segurança. Para fazer isso, siga as etapas abaixo:
 
 1. Acesse a sua conta Mercado Pago.
-2. Navegue até [Seu negócio > Configurações > Gestão e Administração > Credenciais](https://www.mercadopago/settings/account/credentials).
+2. Navegue até [Seu negócio > Configurações > Gestão e Administração > Credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).
 3. Dentro dessa página, selecione a opção "Compartilhar minhas credenciais".
 4. Insira o e-mail da pessoa para a qual deseja conceder acesso.
 5. Certifique-se de que o e-mail esteja associado à conta do Mercado Pago da pessoa em questão.
