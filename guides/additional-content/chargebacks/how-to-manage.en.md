@@ -6,7 +6,7 @@ All the information necessary to manage chargeback disputes made can be found he
 
 1. Configure [IPN notifications](/developers/panel/ipn) on your dashboard and enable the **Chargebacks** option
    
-2. Check all the information related to a chargeback using the [Get chargeback request](/developers/pt/reference/chargebacks/_chargebacks_id/get)
+2. Check all the information related to a chargeback using the [Get chargeback request](/developers/en/reference/chargebacks/_chargebacks_id/get)
    1. Check if the chargeback [can be covered](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/294) and assure whether any documentation is required, via the `coverage_eligible` and `documentation_required` fields, respectively.
 
 > WARNING
