@@ -20,7 +20,7 @@ La instalación se realiza, básicamente, en **dos pasos**:
 > Agregar el SDK de Mercado Pago al proyecto
 
 
-Para incluir el SDK de Mercado Pago.js, agrega el siguiente código al HTML del proyecto o instale la biblioteca para ReactJs.
+Para incluir el SDK de Mercado Pago.js, agrega el siguiente código al HTML del proyecto o instala la biblioteca para ReactJs.
 
 [[[
 ```html
@@ -92,7 +92,7 @@ En el ejemplo anterior, se rederizará un botón de pago que será responsable p
 >
 > Importante
 >
-> Es sumamente importante prestar atención, al crear la preferencia, a la configuración de las `back_urls` ya que estas serán las encargadas de guiar el flujo de regreso a tu sitio web cuando se complete el pago. Es posible definir tres URL de retorno diferentes que corresponden a escenarios de pago pendiente, éxito o error. Para obtener más información, consulta la sección [URL de retorno](/developers/es/docs/checkout-pro/checkout-customization/user-interface/redirection).\
+> Es sumamente importante prestar atención, al crear la preferencia, a la configuración de las `back_urls`. Estas serán las encargadas de guiar el flujo de regreso a tu sitio web cuando se complete el pago. Es posible definir tres URL de retorno diferentes que corresponden a escenarios de pago pendiente, éxito o error. Para obtener más información, consulta la sección [URL de retorno](/developers/es/docs/checkout-pro/checkout-customization/user-interface/redirection).
 
 Al crear un pago es posible recibir 3 estados diferentes: `Pendiente`, `Rechazado` y `Aprobado`. Para mantenerse al día con las actualizaciones, debes configurar tu sistema para recibir notificaciones de pago y otras actualizaciones de estado. Consulta [Notificaciones](/developers/es/docs/checkout-pro/additional-content/your-integrations/notifications) para obtener más detalles.
 
