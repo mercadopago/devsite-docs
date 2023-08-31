@@ -6,7 +6,7 @@
 >
 > Antes de começar a integrar o Checkout Pro para Mobile, você precisará ter uma preferência criada em seu backend. Se ainda não o fez, vá para [Criação de preferência](/developers/pt/docs/checkout-pro/integrate-preferences).
 
-No desenvolvimento de aplicações móveis, muitas vezes surge a necessidade de exibir conteúdo da web dentro da aplicação. Para isso, existem diversas opções, entre as quais se destacam a utilização de Custom Tabs (para Android) e Safari View Controller (para iOS). Essas tecnologias permitem que páginas da web sejam abertas em um navegador nativo incorporado á aplicação, proporcionando uma experiência de navegação mais suave e consistente aos usuários.
+No desenvolvimento de aplicações móveis, muitas vezes surge a necessidade de exibir conteúdo da web dentro da aplicação. Para isso, existem diversas opções, entre as quais se destacam a utilização de Custom Tabs (para Android) e Safari View Controller (para iOS). Essas tecnologias permitem que páginas da web sejam abertas em um navegador nativo incorporado à aplicação, proporcionando uma experiência de navegação mais fluida e consistente aos usuários.
 
 Nesta etapa iremos instalar e configurar as dependências necessárias para implementar **Custom Tabs** em seu projeto desenvolvido em Java ou Kotlin.
 
@@ -26,7 +26,7 @@ dependencies {
 ```
 
 
-O próximo passo é **implementar as Custom Tab**. Para fazer isso, você só precisa instanciá-las. A seguir, compartilhamos um exemplo de uma Custom Tab simples.
+O próximo passo é **implementar as Custom Tabs**. Para fazer isso, você só precisa instanciá-las. A seguir, compartilhamos um exemplo de uma Custom Tab simples.
 
 > As Custom Tabs podem ser configuradas com estilos personalizáveis. Para saber mais, acesse o [guia de Custom Tabs](https://developer.chrome.com/docs/android/custom-tabs/guide-get-started/).
 
@@ -52,7 +52,7 @@ val url = "URL-PREFERENCE"
 >
 > h2
 >
-> Como retornar ao sua app
+> Como retornar à sua app
 
 **Deep Links**, também conhecidos como links diretos, são uma forma poderosa de permitir a navegação direta para telas ou seções específicas de uma aplicação móvel.
 

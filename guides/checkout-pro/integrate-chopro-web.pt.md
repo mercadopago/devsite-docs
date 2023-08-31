@@ -79,7 +79,7 @@ mp.bricks().create("wallet", "wallet_container", {
 ```
 ]]]
 
-Em seguida, você poderá observar o botão de pagamento renderizado em sua página.
+Em seguida, observe o botão de pagamento renderizado em sua página.
 
 <center>
 

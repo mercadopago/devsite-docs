@@ -363,7 +363,7 @@ future_product_avaible:
  - card_avaible: true
  - card_icon: Loading
  - card_title: Checkout Pro para Mobile
- - card_description: Ofereça diferentes métodos de pagamento aos clientes na sua aplicação móvel, utilizando a linguagem que melhor se adapte ao seu projeto.
+ - card_description: Ofereça diferentes meios de pagamento aos clientes na sua aplicação móvel, utilizando a linguagem que melhor se adapte ao seu projeto.
  - card_link: /developers/pt/docs/checkout-pro/integrate-checkout-pro/mobile
  - card_linkDescription: Integrar
  - card_pillText: DISPONÍVEL
