@@ -6,7 +6,7 @@ Para integrar o Checkout Pro em uma aplicação móvel, disponibilizamos várias
 
 * [React Native CLI](/developers/pt/docs/checkout-pro/integrate-checkout-pro/mobile/android/reactnative-cli)
 * [React Native Expo](/developers/pt/docs/checkout-pro/integrate-checkout-pro/mobile/android/reactnative-expo-go)
-* [Java o Kotlin](/developers/es/pt/checkout-pro/integrate-checkout-pro/mobile/android/java-kotlin)
+* [Java o Kotlin](/developers/pt/checkout-pro/integrate-checkout-pro/mobile/android/java-kotlin)
 
 ## iOS
 
