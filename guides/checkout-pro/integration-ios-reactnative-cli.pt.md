@@ -163,7 +163,7 @@ No caso do iOS **é necessário fechar o Safari View Controller manualmente**. P
 
 ### Uso do react-native-inappbrowser-reborn
 
-No caso do iOS é necessário fechar o Safari View Controller manualmente. Para fazer isso, você precisará ouvir o evento de alteração de URL do componente que abre a janela ou o ponto de entrada da aplicação e, em seguida, chamar o método para fechar o Safari View Controller.
+Siga o exemplo abaixo para fechar o Safari View Controller manualmente usando **react-native-inappbrowser-reborn**.
 
 ```JavaScript
 import {

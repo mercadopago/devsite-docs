@@ -346,9 +346,9 @@ preference = preference_response["response"]
 
 ------------
 
-## Escolher o tipo de integração
+## Choosing the type of integration
 
-Com a SDK instalada e configurada corretamente no seu projeto, você está pronto para prosseguir com a integração. Para isso, escolha o tipo de integração que melhor se adapte às suas necessidades, seja **Web** ou **Mobile**, e siga os passos detalhados na seção correspondente ao tipo de solução escolhida.
+With the SDK installed and configured correctly in your project, you are ready to proceed with the integration. To isso, choose the type of integration that best suits your needs, choose **Web** or **Mobile**, and follow the steps detailed in the section corresponding to the type of solution chosen
 
 
 ---
@@ -356,8 +356,8 @@ future_product_avaible:
  - card_avaible: true
  - card_icon: Card
  - card_title: Checkout Pro for Web
- - card_description: OOffer different payment methods to customers on a website in a simple, fast, and secure manner.
- - card_link:  /developers/en/docs/checkout-pro/integrate-checkout-pro/web
+ - card_description: Offer different payment methods to customers on a website in a simple, fast, and secure manner.
+ - card_link: /developers/en/docs/checkout-pro/integrate-checkout-pro/web
  - card_linkDescription: Integrar
  - card_pillText: AVAILABLE
  - card_avaible: true

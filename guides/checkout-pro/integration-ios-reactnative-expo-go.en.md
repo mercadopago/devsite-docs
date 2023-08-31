@@ -123,7 +123,7 @@ In the case of iOS **it is necessary to close the Safari View Controller manuall
 
 ### Use of Expo-Web-Browser
 
-In the case of iOS it is necessary to close the Safari View Controller manually. To do this, you'll need to listen for the url change event from the component that opens the window or application entry point, and then call the method to close the Safari View Controller.
+Follow the example below to manually close the Safari View Controller using **Expo-Web-Browser**.
 
 ```JavaScript
 import {

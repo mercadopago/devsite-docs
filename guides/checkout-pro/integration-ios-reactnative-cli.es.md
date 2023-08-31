@@ -156,12 +156,12 @@ openURL: (NSURL * ) url options: (NSDictionary < UIApplicationOpenURLOptionsKey,
 
 Por último, veremos cómo podemos configurar nuestra aplicación de React Native para recibir y gestionar los Deep Links. Esto se abordará usando la dependencia react-native-inappbrowser. 
 
-En el caso de iOS **es necesario cerrar la Safari View Controller de manera manual**. Para esto, deberás escuchar el evento de cuando cambia la url desde el componente que abre la ventana o el punto de entrada de la aplicación, y luego llamar el método para cerrar la Safari View Controller.
+En el caso de iOS **es necesario cerrar Safari View Controller de manera manual**. Para esto, deberás escuchar el evento de cuando cambia la url desde el componente que abre la ventana o el punto de entrada de la aplicación, y luego llamar el método para cerrar Safari View Controller.
 
 
 ### Uso de react-native-inappbrowser-reborn
 
-En el caso de iOS es necesario cerrar la Safari View Controller de manera manual. Para esto, deberás escuchar el evento de cuando cambia la url desde el componente que abre la ventana o el punto de entrada de la aplicación, y luego llamar el método para cerrar la Safari View Controller.
+Sigue el siguiente ejemplo para cerrar Safari View Controller manualmente utilizando **react-native-inappbrowser-reborn**.
 
 ```JavaScript
 import {
