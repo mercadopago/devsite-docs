@@ -121,7 +121,7 @@ En el caso de iOS **es necesario cerrar la Safari View Controller de manera manu
 
 ### Uso de Expo-Web-Browser
 
-Siga o exemplo abaixo para fechar o Safari View Controller manualmente usando **Expo-Web-Browser**.
+Sigue el ejemplo a continuación para cerrar manualmente Safari View Controller usando **Expo-Web-Browser**.
 
 ```JavaScript
 import {
