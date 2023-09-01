@@ -13,7 +13,7 @@ Para cada estado de pago, puedes elegir un estado de pedido. Entonces, cuando tu
 >
 > El módulo está preparado para recibir las notificaciones de pago de forma automática, es decir, sin la necesidad de configurar tu cuenta de Mercado Pago o el módulo.</br>
 > </br><br/>
-> [Haz clic aquí](/developers/es/guides/additional-content/notifications/webhooks/webhooks) para obtener más información sobre las notificaciones de Webhooks.
+> [Haz clic aquí](/developers/es/guides/additional-content/your-integrations/notifications/webhooks) para obtener más información sobre las notificaciones de Webhooks.
 
 ¡Listo! El estado de notificación se ha configurado correctamente.
 

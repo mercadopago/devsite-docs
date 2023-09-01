@@ -5,7 +5,7 @@ El módulo de Mercado Pago viene con el **ambiente Sandbox** activo por defecto.
 1. Ve al menú **Stores > Configuration > Sales > Payment Methods**.
 2. En el campo **Merchant Country**, selecciona el país de operación de su tienda.
 3. A continuación, acceda a la sección **Mercado Pago > Credentials** para habilitar los métodos de pago disponibles en el país de origen de la tienda.
-4. En la página en cuestión, encontrarás los campos **Public key** y **Access token**, que deberás completar con las [credenciales](/developers/es/guides/additional-content/credentials/credentials) de **prueba** indicada en su [Dashboard](/developers/es/guides/additional-content/dashboard/introduction).
+4. En la página en cuestión, encontrarás los campos **Public key** y **Access token**, que deberás completar con las [credenciales](/developers/es/guides/additional-content/your-integrations/credentials) de **prueba** indicada en su [Dashboard](/developers/es/guides/additional-content/your-integrations/introduction).
 5. Después de configurar sus credenciales, haz clic en el botón **Save Config** en la esquina superior derecha. Es importante que guardes tus credenciales antes de continuar, ya que esto habilitará los métodos de pago disponibles en su país.
 6. Una vez que hayas realizado la configuración, vaya a la página de inicio de su tienda Magento, seleccione un producto y haga clic en **Add to Cart**.
 7. Con el producto en el carrito, haz clic en **Proceed to Checkout**.
@@ -17,7 +17,7 @@ Una vez que se complete el proceso de compra inicial, observa a continuación c�
 
 1. Selecciona la opción **I want to pay with Mercado Pago at no additional cost**.
 2. Haz clic en **pedido con pago obligatorio** para ser redirigido al entorno de pago de Mercado Pago.
-3. En la pantalla de pago, elige pagar con una nueva tarjeta de crédito y usa las [tarjetas de prueba](/developers/es/guides/additional-content/testing/test-cards) para realizar el pago. Es importante no iniciar sesión en la cuenta de Mercado Pago ni intentar pagar con tarjetas para uso personal.
+3. En la pantalla de pago, elige pagar con una nueva tarjeta de crédito y usa las [tarjetas de prueba](/developers/es/guides/additional-content/your-integrations/test/cards) para realizar el pago. Es importante no iniciar sesión en la cuenta de Mercado Pago ni intentar pagar con tarjetas para uso personal.
 3. Agrega la información de la tarjeta de prueba indicada (número de tarjeta, CVV y fecha de vencimiento).
 4. Al finalizar la compra, podrás visualizar, dentro de Mercado Pago, el comprobante de que se realizó la compra y serás redirigido nuevamente a la tienda.
 
@@ -29,7 +29,7 @@ Una vez que se complete el proceso de compra inicial, observa a continuación c�
 ------------
 
 1. Selecciona la opción **Credit and Debit Card - Mercado Pago**.
-2. Elige pagar con una nueva tarjeta de crédito y utilice las [tarjetas de prueba](/developers/es/guides/additional-content/testing/test-cards) para realizar el pago. Es importante no pagar con tarjetas para uso personal.
+2. Elige pagar con una nueva tarjeta de crédito y utilice las [tarjetas de prueba](/developers/es/guides/additional-content/your-integrations/test/cards) para realizar el pago. Es importante no pagar con tarjetas para uso personal.
 3. Agrega la información de la tarjeta de prueba indicada (número de tarjeta, CVV y fecha de vencimiento).
 4. Al finalizar la compra, se podrá ver que la compra ha sido aprobada.
 

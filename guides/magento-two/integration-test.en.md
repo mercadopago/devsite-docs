@@ -5,7 +5,7 @@ The Mercado Pago module comes with the **Sandbox environment** active by default
 1. Go to the **Stores > Configuration > Sales > Payment Methods** menu.
 2. In the **Merchant Country** field, select the country of operation for your store.
 3. Next, access the **Mercado Pago > Credentials** section to enable the payment methods available in the store's country of origin.
-4. On the page in question, you will find the **Public key** and **Access token** fields, which you must fill in with the [credentials](/developers/en/guides/additional-content/credentials/credentials) of **test** indicated in your [Dashboard](/developers/en/guides/additional-content/dashboard/introduction).
+4. On the page in question, you will find the **Public key** and **Access token** fields, which you must fill in with the [credentials](/developers/en/guides/additional-content/your-integrations/credentials) of **test** indicated in your [Dashboard](/developers/en/guides/additional-content/your-integrations/introduction).
 5. After setting your credentials, click the **Save Config** button in the upper right corner. It is important that you save your credentials before proceeding as this will enable the payment methods available in your country.
 6. Once the settings have been made, go to your Magento store homepage, select a product and click **Add to Cart**.
 7. With the product in the cart, click on **Proceed to Checkout**.
@@ -17,7 +17,7 @@ Once the initial purchase process is complete, see below how to test the integra
 
 1. Select the option **I want to pay with Mercado Pago at no additional cost**.
 2. Click on **order with mandatory payment** to be redirected to the Mercado Pago payment environment.
-3. On the checkout screen, choose to pay with a new credit card and use the [test cards](/developers/en/guides/additional-content/testing/test-cards) to make the payment. It is important not to log in to the Mercado Pago account or try to pay with cards for personal use.
+3. On the checkout screen, choose to pay with a new credit card and use the [test cards](/developers/en/guides/additional-content/your-integrations/test/cards) to make the payment. It is important not to log in to the Mercado Pago account or try to pay with cards for personal use.
 3. Add the indicated test card information (card number, CVV and expiration date).
 4. At the end of the purchase, you will be able to view, within Mercado Pago, the proof that the purchase was made and you will be redirected to the store again.
 
@@ -29,7 +29,7 @@ Once the initial purchase process is complete, see below how to test the integra
 ------------
 
 1. Select the option **Credit and Debit Card - Mercado Pago**.
-2. Choose to pay with a new credit card and use the [test cards](/developers/en/guides/additional-content/testing/test-cards) to make the payment. It is important not to pay with cards for personal use.
+2. Choose to pay with a new credit card and use the [test cards](/developers/en/guides/additional-content/your-integrations/test/cards) to make the payment. It is important not to pay with cards for personal use.
 3. Add the indicated test card information (card number, CVV and expiration date).
 4. At the end of the purchase, it will be possible to see that the purchase has been approved.
 

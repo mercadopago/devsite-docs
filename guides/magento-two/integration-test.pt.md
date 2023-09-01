@@ -5,7 +5,7 @@ O módulo do Mercado Pago vem com o **ambiente Sandbox** ativo por padrão. Ness
 1. Vá para o menu **Stores > Configuration > Sales > Payment Methods**.
 2. No campo **Merchant Country**, selecione o país de operação da sua loja.
 3. Em seguida, acesse a seção **Mercado Pago > Credentials** para habilitar os meios de pagamento disponíveis no país de origem da loja.
-4. Na página em questão você encontrará os campos **Public key** e **Access token**, que você deve preencher com as com as [credenciais](/developers/pt/guides/additional-content/credentials/credentials) de **teste** indicadas em seu seu [Dashboard](/developers/pt/guides/additional-content/dashboard/introduction).
+4. Na página em questão você encontrará os campos **Public key** e **Access token**, que você deve preencher com as com as [credenciais](/developers/pt/guides/additional-content/your-integrations/credentials) de **teste** indicadas em seu seu [Dashboard](/developers/pt/guides/additional-content/your-integrations/introduction).
 5. Depois de definir suas credenciais, clique no botão **Save Config** no canto superior direito. É importante que você salve suas credenciais antes de continuar porque isso habilitará os meios de pagamento disponíveis em seu país.
 6. Feitas as devidas configurações, acesse aa página inicial da sua loja na Magento, selecione um produto e clique em **Add to Cart**.
 7. Com o produto no carrinho, clique em **Proceed to Checkout**.
@@ -17,7 +17,7 @@ Feito o processo inicial de compra, veja abaixo como testar a integração de ac
 
 1. Selecione a opção **I want to pay with Mercado Pago at no additional cost**.
 2. Clique em **pedido com pagamento obrigatório** para ser redirecionado o ambiente de pagamento do Mercado Pago. 
-3. Na tela de checkout, escolha pagar com um novo cartão de crédito e utilize os [cartões de teste](/developers/pt/guides/additional-content/testing/test-cards) para realizar o pagamento. Importante não efetuar o login na conta do Mercado Pago ou tentar realizar o pagamento com cartões de uso pessoal. 
+3. Na tela de checkout, escolha pagar com um novo cartão de crédito e utilize os [cartões de teste](/developers/pt/guides/additional-content/your-integrations/test/cards) para realizar o pagamento. Importante não efetuar o login na conta do Mercado Pago ou tentar realizar o pagamento com cartões de uso pessoal. 
 3. Adicione as informações do cartão de teste indicado (nº do cartão, CVV e data de validade). 
 4. Ao finalizar a compra você poderá visualizar, dentro do Mercado Pago, a comprovação de que a compra foi realizada e será redirecionado à loja novamente. 
 
@@ -29,7 +29,7 @@ Feito o processo inicial de compra, veja abaixo como testar a integração de ac
 ------------
 
 1. Selecione a opção **Credit and Debit Card - Mercado Pago**.
-2. Escolha pagar com um novo cartão de crédito e utilize os [cartões de teste](/developers/pt/guides/additional-content/testing/test-cards) para realizar o pagamento. É importante não realizar o pagamento com cartões de uso pessoal.
+2. Escolha pagar com um novo cartão de crédito e utilize os [cartões de teste](/developers/pt/guides/additional-content/your-integrations/test/cards) para realizar o pagamento. É importante não realizar o pagamento com cartões de uso pessoal.
 3. Adicione as informações do cartão de teste indicado (nº do cartão, CVV e data de validade). 
 4. Ao finalizar a compra será possível visualizar que a compra foi aprovada.
 
