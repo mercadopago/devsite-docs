@@ -354,7 +354,6 @@ preference = preference_response["response"]
 
 Com a SDK instalada e configurada corretamente no seu projeto, você está pronto para prosseguir com a integração. Para isso, escolha o tipo de integração que melhor se adapte às suas necessidades, seja **Web** ou **Mobile**, e siga os passos detalhados na seção correspondente ao tipo de solução escolhida.
 
-
 ---
 future_product_avaible: 
  - card_avaible: true
