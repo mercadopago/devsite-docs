@@ -38,11 +38,11 @@ See below for a comparison of the diagrams.
 
 * **V1 sequence diagram**
 
-![java-v1](/images/sdk/sdk-java-v1-en.png)
+![java-v1](/images/sdk/sdk-java-v1-pt.png)
 
 * **V2 sequence diagram**
 
-![java-v2](/images/sdk/sdk-java-v2-en.png)
+![java-v2](/images/sdk/sdk-java-v2-pt.png)
 
 ## Changing the script import
 

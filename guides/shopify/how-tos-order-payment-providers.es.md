@@ -30,11 +30,8 @@ Aprende cómo utilizar la app **Mercado Pago Ordena Checkouts** para cambiar el 
 
 ¡Listo! La nueva orden de visualización de los proveedores de pagos está configurada.
 
-----[mla, mlb, mpe, mco, mlu, mlc]----
 <center>
 
-![mercado-pago-ordena](shopify/mercado-pago-ordena-es.png)
+![mercado-pago-ordena](/images/shopify/mercado-pago-ordena-pt.gif)
 
 </center>
-
-------------
