@@ -50,7 +50,7 @@ available_countries: mla, mlb, mlm, mlu, mco, mlc, mpe
 ----[mlb]----
 
 ---
-available_payments: credit, debit, mercadopago, boleto, pix, pec, moneda
+available_payments: credit, debit, mercadopago, boleto, pix, pec
 
 ---
 ------------
@@ -66,7 +66,7 @@ available_payments: credit, debit, mercadopago, efectivo, atm
 ----[mlm]---- 
 
 ---
-available_payments: credit, debit, mercadopago, efectivo, atm, moneda
+available_payments: credit, debit, mercadopago, efectivo, atm
 
 ----
 ------------

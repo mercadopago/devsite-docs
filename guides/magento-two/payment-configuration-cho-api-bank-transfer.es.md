@@ -1,10 +1,9 @@
-# Configurar pagos por transferencia bancaria
+# Transferencia bancaria
 
 ----[mlb]----
 Con el [Checkout Transparente](/developers/es/guides/checkout-api/landing), ofrezca pagos por **transferencia bancaria** directamente en su tienda.
 
 ------------
-
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 Con el [Checkout API](/developers/es/guides/checkout-api/landing), ofrece pagos por **transferencia bancaria** directamente en tu tienda.
 

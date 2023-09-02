@@ -1,4 +1,4 @@
-# Configure offline payments (ticket)
+# Offline payment methods (ticket)
 
 With **ticket**, offer the buyer the option to make payments using offline payment methods (cash and ATM), using the [Checkout API](/developers/en/guides/checkout-api/landing).
 
@@ -12,4 +12,3 @@ To integrate the payment method, follow the steps below.
 6. In the **Exclude Payment Methods** field, select only the offline payment methods you want to accept in your store. By default, the module will show the buyer all ticket and ATM (ATM) payment methods.
 7. In **Checkout Position**, indicate the position in which the payment method will be available to the buyer in the checkout flow.
 8. Then click** **Save Config** to save your preferences.
-

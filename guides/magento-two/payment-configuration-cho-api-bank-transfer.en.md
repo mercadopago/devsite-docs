@@ -1,4 +1,4 @@
-# Configure bank transfer payments
+# Bank transfer
 
 With the [Checkout API](/developers/en/guides/checkout-api/landing), offer **bank transfer** payments directly in your store.
 

@@ -1,4 +1,4 @@
-# Configure card payments
+# Cards
 
 With the [Checkout API](/developers/en/guides/checkout-api/landing), offer payments with **credit or debit cards** (available in the country where the store is installed) directly in your store, without the buyer needs to be redirected to make the payment.
 

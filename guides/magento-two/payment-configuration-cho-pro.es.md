@@ -1,4 +1,4 @@
-# Configurar pagos con Checkout Pro 
+# Checkout Pro 
  
 Con [Checkout Pro](/developers/es/guides/checkout-pro/landing), el comprador será dirigido desde la tienda al sitio web de Mercado Pago donde deberá completar los datos solicitados y realizar el pago. De esta manera, la transacción se procesa y completa fuera del entorno de su tienda. No es necesario que el comprador tenga una cuenta de Mercado Pago y, al finalizar la transacción, el comprador puede ser devuelto a tu tienda.
  
@@ -17,4 +17,3 @@ Para integrar Checkout Pro, sigue los pasos a continuación.
 11. En **Checkout Position**, indica la posición en la que el método de pago estará disponible para el comprador en el flujo de pago.
 12. Haz clic en **Configurar cuota e interés** para [configurar en Mercado Pago](https://www.mercadopago.com.ar/costs-section#from-section=menu) la tarifa que se pagará en cada compra y además ofrecer cuotas sin intereses a tus clientes.
 13. Haz clic en **Save Config** para guardar tus preferencias.
-

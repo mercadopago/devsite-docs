@@ -1,20 +1,20 @@
 # Preguntas frecuentes
 
-Aqui, puedes sacarte las dudas principales sobre la sección ”Apps” y el proceso de integración de tu mini app.
+Aquí, puedes sacarte las dudas principales sobre la sección ”Apps” y el proceso de integración de tu mini app.
 
-## ¿Cuánto tiempo tarda la Mini App en quedar disponible en la tienda?
+## ¿Cuánto tiempo tarda la mini app en quedar disponible en la tienda?
 
 El proceso de aprobación de una mini app tarda, en promedio, 7 días. Sin embargo, si es necesario hacer alguna modificación durante la validación, el plazo puede variar.
 
-## ¿Cómo funciona la verificación para que la Mini App sea aprobada?
+## ¿Cómo funciona la verificación para que la mini app sea aprobada?
 
 El proceso de verificación es manejado por el equipo de Mercado Pago, que revisa el código estático, la seguridad y la configuración de la mini app, además de chequear si las [Guías y reglas](/developers/es/docs/mp-point/mini-apps/additional-content/requirements/general) están siendo cumplidas.
 
-## ¿En qué idiomas debe estar disponible mi Mini App?
+## ¿En qué idiomas debe estar disponible mi mini app?
 
 Tu mini app debe estar traducida a los idiomas de los países en los que será publicada. Actualmente, [Point Smart](/developers/es/docs/mp-point/integration-configuration/integrate-with-pdv/introduction) es usada por vendedores de Brasil, Argentina y México.
 
-## ¿Cómo puedo probar mi Mini App en el lector?
+## ¿Cómo puedo probar mi mini app en el lector?
 
 En el kit del integrador, disponibilizamos un apk de sandbox para hacer la instalación en el lector y la prueba de la mini app. También puedes ver más información en la sección [Sandbox](/developers/pt/docs/mp-point/mini-apps/sandbox).
 

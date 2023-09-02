@@ -1,12 +1,11 @@
-# Configurar pagos offline (ticket)
+# Medios offline (ticket)
 
 ----[mlb]----
-Con **ticket**, ofrezca al comprador la opción de realizar pagos mediante métodos de pago fuera de línea (boleto bancário y cajero automático), usando [Checkout Transparente](/developers/es/guides/checkout-api/landing).
+Con **ticket**, ofrezca al comprador la opción de realizar pagos mediante medios de pago fuera de línea (boleto bancário y cajero automático), usando [Checkout Transparente](/developers/es/guides/checkout-api/landing).
 
 ------------
-
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-Con **ticket**, ofrezca al comprador la opción de realizar pagos utilizando métodos de pago fuera de línea (efectivo y cajero automático), utilizando la [Checkout API](/developers/es/guides/checkout-api/landing).
+Con **ticket**, ofrezca al comprador la opción de realizar pagos utilizando medios de pago fuera de línea (efectivo y cajero automático), utilizando la [Checkout API](/developers/es/guides/checkout-api/landing).
 
 ------------
 
