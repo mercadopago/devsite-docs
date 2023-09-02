@@ -348,7 +348,11 @@ preference = preference_response["response"]
 
 ------------
 
-## Eligir el tipo de integración
+> CLIENT_SIDE
+>
+> h2
+>
+> Eligir el tipo de integración
 
 Con la SDK instalada y configurada correctamente en tu proyecto, ya estás listo para continuar con la integración. Para ello, elige el tipo de integración que mejor se adapte a tus necesidades, ya sea **Web** o **Mobile**, y sigue los pasos detallados en el apartado correspondiente al tipo de solución elegida.
 

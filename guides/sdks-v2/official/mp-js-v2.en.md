@@ -22,7 +22,7 @@ bullet_section_with_media:
 
 --- mini_landing_separator ---
 
->>>> Instalación <<<<
+>>>> Installation <<<<
 
 To install the frontend SDK, include MercadoPago.js in your application's HTML or install the package on npm according to the code below.
 
@@ -55,4 +55,3 @@ const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
 
 ```
 ]]]
-
