@@ -18,7 +18,7 @@ Aquí, presentamos las reglas y limitaciones que se deben seguir para que tu app
 
 Los términos en inglés y otras lenguas no nativas pueden generar dudas o incluso incomprensión. Opta por palabras usadas en el idioma de cada país.
 
-### Expressiones regionales
+### Expresiones regionales
 
 Las expresiones y formas de lenguaje muy típicas de un lugar casi siempre son incomprensibles para los demás públicos. Ten en cuenta las diferencias que puede haber de un mismo idioma hablado en diferentes países.
 

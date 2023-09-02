@@ -12,7 +12,7 @@ Sugerimos hacer un formato de preguntas frecuentes, las FAQs. Consulta algunos c
 
 Evita palabras técnicas y que las personas usuarias puedan desconocer. Elabora los contenidos teniendo en cuenta cómo hablan, el país donde viven y sus aspectos culturales.
 
-* **oco en el objetivo**:
+* **Foco en el objetivo**:
 
 Coloca información clara, directa y concisa, que responda a la pregunta. Elimina contenidos que no tengan relación con el tema.
 

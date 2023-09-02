@@ -12,7 +12,7 @@ Para conectar y desconectar un dispositivo bluetooth desde una mini app, se debe
 | --- | --- | --- | --- | --- |
 | action | string | true | on <br><br> off | Conect o desconecta el dispositivo bluetooth. |
 
-Si el comando tiene éxito, la devolución del llamado enviará un valor de "éxito".
+Si el comando tiene éxito, la devolución del llamado enviará un valor de `success`.
 
 Ejemplo de código:
 

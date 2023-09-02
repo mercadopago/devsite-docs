@@ -61,11 +61,3 @@ function callbackResult(result, error) {
    }
 }
 ```
-
-Como configurar o recibo HTML para impressão correta?
-
-Para processar corretamente o recibo HMTL e imprimir todas as informações, você deve incluir os scripts do Mercado Pago abaixo antes da tag ”</body>”:
-mobilewebkit.js.
-smart_render.js.
-
-Desta forma:
