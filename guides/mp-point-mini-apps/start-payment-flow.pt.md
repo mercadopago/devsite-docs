@@ -1,11 +1,11 @@
-# Começar o fluxo de pagamento
+# Iniciar o fluxo de pagamento
 
 ----[mlb, mla]----
-> En este momento, los medios de pago disponibles son: **tarjetas de crédito y débito**, **pago con [código QR](/developers/es/docs/qr-code/landing)** y **[link de pago.](/developers/es/docs/payment-link/intro-button)**
+> Neste momento, os métodos de pagamento disponíveis são: **cartões de crédito e débito**, **pagamento com [código QR](/developers/pt/docs/qr-code/landing)** e **[link de pagamento.](/developers/pt/docs/payment-link/intro-button)**
 
 ------------
 ----[mlm]----
-> En este momento, los medios de pago disponibles son: **tarjetas de crédito y débito** y **[link de pago.](/developers/es/docs/payment-link/intro-button)**
+> Neste momento, os métodos de pagamento disponíveis são: **cartões de crédito e débito** e **[link de pagamento.](/developers/pt/docs/payment-link/intro-button)**
 
 ------------
 
@@ -15,13 +15,13 @@ Confira os exemplos de cada implementação a seguir.
 
 ## Uso básico
 
-Esta é a implementação básica, em que não se configura nenhum callback customizado para notificar o resultado. Nesse caso, é necessário ouvir os eventos globais que notificam o resultado do pagamento para validar o comportamento do aplicativo ao concluir o fluxo. Neste exemplo, o fluxo de pagamento é iniciado com o valor de R$ 20 e sem callback customizado.
+Esta é a implementação básica, em que não se configura nenhum callback customizado para notificar o resultado. Nesse caso, é necessário ouvir os eventos globais que notificam o resultado do pagamento para validar o comportamento do aplicativo ao concluir o fluxo. Neste exemplo, o fluxo de pagamento é iniciado com o valor de R$20 e sem callback customizado.
 
 ```javascript
  launchPaymentFlow(20.0)
 ```
 
-Neste exemplo, o fluxo é iniciado com o valor de R$ 35, com o cartão de crédito selecionado como forma de pagamento e sem callback customizado.
+Neste exemplo, o fluxo é iniciado com o valor de R$35, com o cartão de crédito selecionado como forma de pagamento e sem callback customizado.
 
 ```javascript
 launchPaymentMethod(35.0, "credit")
@@ -84,8 +84,8 @@ Parâmetros de configuração:
 
 | Parâmetro  | Tipo  | Obrigatório  | Valores possíveis | Descrição |
 | --- | --- | --- | --- | --- |
-| setAmount | number | true | 0.01 <= n <  50000 | Define o valor a ser cobrado. | 
-| setPaymentMethod | string | true | crédito, débito, qr e link | Indica se o fluxo de cobrança é iniciado diretamente para um meio de pagamento sem passar pelo seletor de meio de pagamento. | 
-| setMetadata | string | no | objeto Json como uma string | Informações adicionais em formato JSON com codificação de URL e que serão retornadas no callback quando o fluxo de pagamento for finalizado. | 
-| setCallbackSuccess | string | no | paths | Define um callback quando o pagamento for concluído com sucesso. Esse callback pode ser um caminho relativo ou um nome de função. | 
-| setCallbackError | string | no | paths | Define um callback quando o pagamento não é concluído por qualquer motivo. Esse callback pode ser um caminho relativo ou um nome de função. | 
+| Amount | number | true | 0.01 <= n <  50000 | Define o valor a ser cobrado. | 
+| PaymentMethod | string | true | crédito, débito, qr e link | Indica se o fluxo de cobrança é iniciado diretamente para um meio de pagamento sem passar pelo seletor de meio de pagamento. | 
+| metadata | string | no | objeto Json como uma string | Informações adicionais em formato JSON com codificação de URL e que serão retornadas no callback quando o fluxo de pagamento for finalizado. | 
+| CallbackSuccess | string | no | paths | Define um callback quando o pagamento for concluído com sucesso. Esse callback pode ser um caminho relativo ou um nome de função. | 
+| CallbackError | string | no | paths | Define um callback quando o pagamento não é concluído por qualquer motivo. Esse callback pode ser um caminho relativo ou um nome de função. | 

@@ -109,7 +109,7 @@ window.addEventListener("PointPayment.Error", (event) => {
 
 ## Datos de retorno de callback con éxito
 
-Cuando un flujo de pagamento es finalizado con éxito, los siguintes datos son enviados al callback de éxito.
+Cuando un flujo de pagamento es finalizado con éxito, los siguientes datos son enviados al callback de éxito.
 
 Parámetros de respuesta:
 

@@ -1,11 +1,11 @@
 # Iniciar el flujo de pago
 
 ----[mlb, mla]----
-> Neste momento, os métodos de pagamento disponíveis são: **cartões de crédito e débito**, **pagamento com [código QR](/developers/es/docs/qr-code/landing)** e **[link de pagamento.](/developers/es/docs/payment-link/intro-button)**
+> En este momento, los medios de pago disponibles son: **tarjetas de crédito y débito**, **pago con [código QR](/developers/es/docs/qr-code/landing)** y **[link de pago.](/developers/es/docs/payment-link/intro-button)**
 
 ------------
 ----[mlm]----
-> Neste momento, os métodos de pagamento disponíveis são: **cartões de crédito e débito** e **[link de pagamento.](/developers/es/docs/payment-link/intro-button)**
+> En este momento, los medios de pago disponibles son: **tarjetas de crédito y débito** y **[link de pago.](/developers/es/docs/payment-link/intro-button)**
 
 ------------
 
@@ -15,7 +15,7 @@ A continuación, veremos ejemplos de cada implementación.
 
 ## Uso básico
 
-Esta es la implementación básica para iniciar un flujo de pago, donde no se configura ningún callback customizado para notificar el resultado. En este caso, es necesario oir los eventos globales que notifican el resultado de pago para validar el comportamento de la aplicación al finalizar el flujo de pago.En este ejemplo, el flujo de pago se inicia con el monto de $ 20,00 y sin callback customizado.
+Esta es la implementación básica para iniciar un flujo de pago, donde no se configura ningún callback customizado para notificar el resultado. En este caso, es necesario oir los eventos globales que notifican el resultado de pago para validar el comportamento de la aplicación al finalizar el flujo de pago. En este ejemplo, el flujo de pago se inicia con el monto de $ 20,00 y sin callback customizado.
 
 ```javascript
  launchPaymentFlow(20.0)
@@ -84,8 +84,8 @@ Parámetros de configuración:
 
 | Parámetro | Tipo | Requerido | Valores posibles | Descripción |
 | --- | --- | --- | --- | --- |
-| setAmount | number | true | 0.01 <= n <  50000 | Define el monto a cobrar.| 
-| setPaymentMethod | string | true | crédito, débito, qr y link | Indica si el flujo de facturación se inicia directamente para un método de pago sin pasar por el selector de métodos de pago. | 
-| setMetadata | string | no | objeto Json como una string | Información adicional en formato JSON con codificación de URL que se devolverá en el callback cuando se complete el flujo de pago. | 
-| setCallbackSuccess | string | no | paths | Define un callback cuando el pago se completa con éxito. Este callback puede ser una ruta relativa o un nombre de función. | 
-| setCallbackError | string | no | paths | Define un callback cuando el pago falla por cualquier motivo. Este callback puede ser una ruta relativa o un nombre de función. | 
+| Amount | number | true | 0.01 <= n <  50000 | Define el monto a cobrar.| 
+| PaymentMethod | string | true | crédito, débito, qr y link | Indica si el flujo de facturación se inicia directamente para un método de pago sin pasar por el selector de métodos de pago. | 
+| Metadata | string | no | objeto Json como una string | Información adicional en formato JSON con codificación de URL que se devolverá en el callback cuando se complete el flujo de pago. | 
+| CallbackSuccess | string | no | paths | Define un callback cuando el pago se completa con éxito. Este callback puede ser una ruta relativa o un nombre de función. | 
+| CallbackError | string | no | paths | Define un callback cuando el pago falla por cualquier motivo. Este callback puede ser una ruta relativa o un nombre de función. | 

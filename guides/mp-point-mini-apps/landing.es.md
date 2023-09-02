@@ -7,7 +7,7 @@ content_section_with_media:
 
 --- mini_landing_separator ---
 
->>>> Disponibilidade por país <<<<
+>>>> Disponibilidad por país <<<<
 ---
 available_countries: mla, mlb, mlm
 

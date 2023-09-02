@@ -15,7 +15,7 @@ function callbackResult(result, error) {
 }
 ```
 
-Clique nas seções a seguir para mais informações sobre as comandos disponiveis.
+Haz clic en las secciones siguientes para obtener más información sobre los comandos disponibles.
 
 * [Conectar y desconectar](/developers/es/docs/mp-point/mini-apps/bluetooth/commands)
 * [Obtener status](/developers/es/docs/mp-point/mini-apps/bluetooth/commands#bookmark_obtener_status)
