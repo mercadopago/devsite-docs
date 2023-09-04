@@ -12,7 +12,7 @@ Para definir o status do pedido para notificações de pagamento, siga estas eta
 >
 > O módulo está preparado para receber notificações de pagamento automaticamente, ou seja, sem a necessidade de configurar sua conta no Mercado Pago ou o módulo. </br>
 > </br><br/>
-> [Clique aqui](/developers/pt/guides/additional-content/your-integrations/notifications/webhooks) para mais informações sobre as notificações do tipo Webhooks.
+> [Clique aqui](/developers/pt/docs/magento-two/additional-content/your-integrations/notifications/webhooks) para mais informações sobre as notificações do tipo Webhooks.
 
 Pronto! O status de notificação foi configurado com sucesso.
 
