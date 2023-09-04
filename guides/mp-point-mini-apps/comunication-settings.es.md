@@ -1,6 +1,6 @@
 # Comunicación con Mercado Pago
 
-Para comunicarse con la aplicación de Mercado Pago, la mini app debe utilizar algunos comandos que solo estarán disponibles para su uso después de cargarla. Ve más información en la sección [Ciclo de vida de las MiniApps](/developers/es/docs/mp-point/mini-apps/introduction/lifecycle).
+Para comunicarse con la aplicación de Mercado Pago, la mini app debe utilizar algunos comandos que solo estarán disponibles para su uso después de cargarla. Ve más información en la sección [Ciclo de vida de las mini apps](/developers/es/docs/mini-apps/introduction/lifecycle).
 
 Todos los comandos disponibles admiten los siguientes parámetros:
 
@@ -32,11 +32,11 @@ MobileWebKit.executeNative(exampleCommand)
 
 Haz clic en las secciones siguientes para obtener más información sobre los comandos disponibles.
 
-* [Comando: back](/developers/es/docs/mp-point/mini-apps/comunication-mercado-pago/commands#bookmark_comando:_back) 
-* [Comando: close](/developers/es/docs/mp-point/mini-apps/comunication-mercado-pago/commands#bookmark_comando:_close)
-* [Comando: history](/developers/es/docs/mp-point/mini-apps/comunication-mercado-pago/commands#bookmark_comando:_history)
-* [Comando: info_device](/developers/es/docs/mp-point/mini-apps/comunication-mercado-pago/commands#bookmark_comando:_info_device)
-* [Comando: clear_history](/developers/es/docs/mp-point/mini-apps/comunication-mercado-pago/commands#bookmark_comando:_clear_history)
-* [Iniciar flujo de pago (payment_flow)](/developers/es/docs/mp-point/mini-apps/comunication-mercado-pago/commands#bookmark_iniciar_flujo_de_pago_(payment_flow))
-* [Iniciar medio de pago (payment_flow)](/developers/es/docs/mp-point/mini-apps/comunication-mercado-pago/commands#bookmark_iniciar_medio_de_pago_(payment_flow))
-* [Ingresar medios de pagos disponibles (payment_methods)](/developers/es/docs/mp-point/mini-apps/comunication-mercado-pago/commands#bookmark_ingresar_medios_de_pagos_disponibles_(payment_methods))
+* [Comando: back](/developers/es/docs/mini-apps/comunication-mercado-pago/commands#bookmark_comando:_back) 
+* [Comando: close](/developers/es/docs/mini-apps/comunication-mercado-pago/commands#bookmark_comando:_close)
+* [Comando: history](/developers/es/docs/mini-apps/comunication-mercado-pago/commands#bookmark_comando:_history)
+* [Comando: info_device](/developers/es/docs/mini-apps/comunication-mercado-pago/commands#bookmark_comando:_info_device)
+* [Comando: clear_history](/developers/es/docs/mini-apps/comunication-mercado-pago/commands#bookmark_comando:_clear_history)
+* [Iniciar flujo de pago (payment_flow)](/developers/es/docs/mini-apps/comunication-mercado-pago/commands#bookmark_iniciar_flujo_de_pago_(payment_flow))
+* [Iniciar medio de pago (payment_flow)](/developers/es/docs/mini-apps/comunication-mercado-pago/commands#bookmark_iniciar_medio_de_pago_(payment_flow))
+* [Ingresar medios de pagos disponibles (payment_methods)](/developers/es/docs/mini-apps/comunication-mercado-pago/commands#bookmark_ingresar_medios_de_pagos_disponibles_(payment_methods))

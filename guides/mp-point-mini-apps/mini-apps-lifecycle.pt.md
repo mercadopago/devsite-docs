@@ -1,6 +1,6 @@
-# Ciclo de vida do Mini App
+# Ciclo de vida do mini app
 
-O ciclo de vida dos Mini Apps é controlado por meio de eventos de callback que podem ser inscritos como qualquer evento personalizado `DOM`. Existem três categorias de eventos de ciclo de vida, veja mais informações abaixo sobre os eventos suportados.
+O ciclo de vida dos mini apps é controlado por meio de eventos de callback que podem ser inscritos como qualquer evento personalizado `DOM`. Existem três categorias de eventos de ciclo de vida, veja mais informações abaixo sobre os eventos suportados.
 
 ## GlobalState
 

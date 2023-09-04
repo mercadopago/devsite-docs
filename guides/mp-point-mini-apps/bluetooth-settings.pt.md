@@ -17,8 +17,8 @@ function callbackResult(result, error) {
 
 Clique nas seções a seguir para mais informações sobre as comandos disponiveis.
 
-* [Ligar e desligar](/developers/pt/docs/mp-point/mini-apps/bluetooth/commands#bookmark_ligar_e_desligar)
-* [Obter status](/developers/pt/docs/mp-point/mini-apps/bluetooth/commands#bookmark_obter_status)
-* [Descobrir dispositivos (emparelhados e para emparelhamento)](/developers/pt/docs/mp-point/mini-apps/bluetooth/commands#bookmark_descobrir_dispositivos_(emparelhados_e_para_emparelhamento))
-* [Emparelhar e desemparelhar um dispositivo](/developers/pt/docs/mp-point/mini-apps/bluetooth/commands#bookmark_emparelhar_e_desemparelhar_um_dispositivo)
-* [Imprimir utlizando impressora Bluetooth](/developers/pt/docs/mp-point/mini-apps/bluetooth/commands#bookmark_imprimir_utlizando_impressora_bluetooth)
+* [Ligar e desligar](/developers/pt/docs/mini-apps/bluetooth/commands#bookmark_ligar_e_desligar)
+* [Obter status](/developers/pt/docs/mini-apps/bluetooth/commands#bookmark_obter_status)
+* [Descobrir dispositivos (emparelhados e para emparelhamento)](/developers/pt/docs/mini-apps/bluetooth/commands#bookmark_descobrir_dispositivos_(emparelhados_e_para_emparelhamento))
+* [Emparelhar e desemparelhar um dispositivo](/developers/pt/docs/mini-apps/bluetooth/commands#bookmark_emparelhar_e_desemparelhar_um_dispositivo)
+* [Imprimir utlizando impressora Bluetooth](/developers/pt/docs/mini-apps/bluetooth/commands#bookmark_imprimir_utlizando_impressora_bluetooth)

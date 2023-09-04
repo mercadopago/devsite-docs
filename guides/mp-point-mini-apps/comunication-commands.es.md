@@ -116,7 +116,7 @@ launchPaymentFlow(amount, encodeURIComponent({"attr":"123"}),
 'response/congrats.html', 'response/error.html')
 ```
 
-Para más información, consultá la sección [Como empezar](/developers/es/docs/mp-point/mini-apps/introduction/how-to-start).
+Para más información, consultá la sección [Como empezar](/developers/es/docs/mini-apps/introduction/how-to-start).
 
 ## Iniciar medio de pago (payment_flow)
 
