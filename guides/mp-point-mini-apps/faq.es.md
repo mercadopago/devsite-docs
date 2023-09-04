@@ -8,7 +8,7 @@ El proceso de aprobación de una mini app tarda, en promedio, 7 días. Sin embar
 
 ## ¿Cómo funciona la verificación para que la mini app sea aprobada?
 
-El proceso de verificación es manejado por el equipo de Mercado Pago, que revisa el código estático, la seguridad y la configuración de la mini app, además de chequear si las [Guías y reglas](/developers/es/docs/mp-point/mini-apps/additional-content/requirements/general) están siendo cumplidas.
+El proceso de verificación es manejado por el equipo de Mercado Pago, que revisa el código estático, la seguridad y la configuración de la mini app, además de chequear si las [Guías y reglas](/developers/es/docs/mini-apps/additional-content/requirements/general) están siendo cumplidas.
 
 ## ¿En qué idiomas debe estar disponible mi mini app?
 
@@ -16,7 +16,7 @@ Tu mini app debe estar traducida a los idiomas de los países en los que será p
 
 ## ¿Cómo puedo probar mi mini app en el lector?
 
-En el kit del integrador, disponibilizamos un apk de sandbox para hacer la instalación en el lector y la prueba de la mini app. También puedes ver más información en la sección [Sandbox](/developers/pt/docs/mp-point/mini-apps/sandbox).
+En el kit del integrador, disponibilizamos un apk de sandbox para hacer la instalación en el lector y la prueba de la mini app. También puedes ver más información en la sección [Sandbox](/developers/pt/docs/mini-apps/sandbox).
 
 ## ¿Cómo puedo saber cuál va a ser la versión de SmartPOS instalada en mi lector?
 

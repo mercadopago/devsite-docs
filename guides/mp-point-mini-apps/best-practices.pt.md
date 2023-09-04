@@ -4,7 +4,7 @@ Nesta seção, apresentamos algumas recomendações de usabilidade que podem aju
 
 Veja nas seções abaixo quais são essas boas práticas.
 
-* [Heurísticas](/developers/pt/docs/mp-point/mini-apps/best-practices/heuristics)
-* [Acessibilidade](/developers/pt/docs/mp-point/mini-apps/best-practices/accessibility)
-* [Conteúdo](/developers/pt/docs/mp-point/mini-apps/best-practices/content)
-* [Arquitetura e navegação](/developers/pt/docs/mp-point/mini-apps/best-practices/architecture)
+* [Heurísticas](/developers/pt/docs/mini-apps/best-practices/heuristics)
+* [Acessibilidade](/developers/pt/docs/mini-apps/best-practices/accessibility)
+* [Conteúdo](/developers/pt/docs/mini-apps/best-practices/content)
+* [Arquitetura e navegação](/developers/pt/mini-apps/best-practices/architecture)

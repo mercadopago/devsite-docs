@@ -1,6 +1,6 @@
 # Perguntas frequentes
 
-Aqui, você pode tirar as principais dúvidas sobre a seção ”Apps” e o processo de integração do seu Mini App.
+Aqui, você pode tirar as principais dúvidas sobre a seção ”Apps” e o processo de integração do seu mini app.
 
 ## Quanto tempo demora para o mini app ficar disponível na loja?
 
@@ -8,7 +8,7 @@ O processo de aprovação de um mini app costuma levar, em média, 7 dias. No en
 
 ## Como funciona a verificação para o mini app ser aprovado?
 
-O processo de verificação é conduzido pela equipe do Mercado Pago, que revisa o código estático, a segurança e as configurações do mini app, além de checar se as [Guias e regras](/developers/pt/docs/mp-point/mini-apps/additional-content/requirements/general) estão sendo cumpridas.
+O processo de verificação é conduzido pela equipe do Mercado Pago, que revisa o código estático, a segurança e as configurações do mini app, além de checar se as [Guias e regras](/developers/pt/docs/mini-apps/additional-content/requirements/general) estão sendo cumpridas.
 
 ## Em quais idiomas meu mini app precisa estar disponível?
 
@@ -16,7 +16,7 @@ Seu mini app deve estar traduzido para os idiomas dos países em que será publi
 
 ## Como posso testar meu mini app na maquininha?
 
-No kit do integrador, disponibilizamos uma apk do sandbox para que seja feita a instalação e a testagem do mini app na maquininha. Você também pode obter mais informações na seção [Sandbox](/developers/pt/docs/mp-point/mini-apps/sandbox).
+No kit do integrador, disponibilizamos uma apk do sandbox para que seja feita a instalação e a testagem do mini app na maquininha. Você também pode obter mais informações na seção [Sandbox](/developers/pt/docs/mini-apps/sandbox).
 
 ## Como descubro qual a versão de SmartPOS instalada na minha maquininha?
 

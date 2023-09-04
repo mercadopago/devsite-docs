@@ -1,6 +1,6 @@
 # Gerais
 
-Aqui, apresentamos as regras e limitações que devem ser seguidas para que seu aplicativo seja integrado à seção ”Apps”.
+Aqui, apresentamos as regras e limitações que devem ser seguidas para que seu aplicativo seja integrado à seção "Apps”.
 
 ## Idioma e escrita
 

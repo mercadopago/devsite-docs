@@ -1,6 +1,6 @@
 # Sandbox
 
-## Instalar localmente um Mini App
+## Instalar localmente um mini app
 
 > WARNING
 >

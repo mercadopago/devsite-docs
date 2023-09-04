@@ -26,11 +26,11 @@ Por exemplo:
 * **Arquivo compactado**: miniapp_app123.zip.
 * **Domínio do aplicativo**: app123.mp.
 
-## Cheque se o Mini App está disponível
+## Cheque se o mini app está disponível
 
 Depois de receber a notificação de que o mini aplicativo está disponível, vá para ”Mais opções” e selecione a aba ”Apps” no dispositivo SmartPOS.
 
-## Instale o Mini App
+## Instale o mini app
 
 Selecione seu mini aplicativo e pressione o botão de instalação. Neste exemplo abaixo, ele é chamado de "Teste de mini-aplicativo".
 

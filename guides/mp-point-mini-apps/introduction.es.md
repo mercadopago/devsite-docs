@@ -1,6 +1,6 @@
 # Introducción
 
-Las Mini Apps son una solución híbrida basada en tecnologías web integradas en un wrapper nativo que brinda las capacidades nativas y servicios de pago ofrecidos por Mercado Pago a través del [Point Smart](/developers/es/docs/mp-point/integration-configuration/integrate-with-pdv/introduction).
+Las mini apps son una solución híbrida basada en tecnologías web integradas en un wrapper nativo que brinda las capacidades nativas y servicios de pago ofrecidos por Mercado Pago a través del [Point Smart](/developers/es/docs/mp-point/integration-configuration/integrate-with-pdv/introduction).
 
 ## Compatibilidad
 
