@@ -26,5 +26,5 @@ Para integrar a forma de pagamento, siga os passos abaixo.
 5. Se dejar, você poderá personalizar um **banner** com os meios de pagamento disponível alterando a URL da imagem em questão. Por padrão, o módulo Mercado Pago irá configurar um banner com os meios de pagamento disponíveis de acordo com o seu país.
 6. Em **Checkout Position**, indique a posição em que o meio de pagamento ficará disponível para o comprador no fluxo de checkout. 
 7. No campo **Redirect Payer**,	indique se o comprador será automaticamente redirecionado para a página de pagamento do banco, sem a necessidade de passar por uma página intermediária da sua loja.
-8. Em seguida, clique em** **Save Config** para salvar suas preferências.
+8. Em seguida, clique em **Save Config** para salvar suas preferências.
 

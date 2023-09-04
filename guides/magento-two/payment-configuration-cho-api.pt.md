@@ -16,7 +16,7 @@ Veja abaixo quais são os meios de pagamento disponíveis para a loja ao integra
 * [Cartões](/developers/pt/docs/magento-two/payment-configuration/checkout-api/cards): cartões de crédito e débito.
 ----[mlb]----
 * [Ticket](/developers/pt/docs/magento-two/payment-configuration/checkout-api/ticket): pagamentos offline (boleto e caixa eletrônico).
-* [Pix](/developers/pt/docs/magento-two/payment-configuration/checkout-api/pix): transferência bancária disponível 24h por dia. A opção de pagamento com Pix só será exibida se houver uma chave Pix cadastrada no Mercado Pago. Caso ainda não tenha criado, [clique aqui]((https://www.youtube.com/watch?v=60tApKYVnkA)) e veja o passo a passo.
+* [Pix](/developers/pt/docs/magento-two/payment-configuration/checkout-api/pix): transferência bancária disponível 24h por dia. A opção de pagamento com Pix só será exibida se houver uma chave Pix cadastrada no Mercado Pago. Caso ainda não tenha criado, [clique aqui](https://www.youtube.com/watch?v=60tApKYVnkA) e veja o passo a passo.
 
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]---- 

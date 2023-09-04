@@ -21,5 +21,5 @@ Para integrar el método de pago, siga los pasos a continuación.
 8. En **Checkout Position**, indique la posición en la que el método de pago estará disponible para el comprador en el flujo de pago.
 9. En el campo **Cards saved in Mercado Pago**, indica si deseas que el comprador tenga la opción de guardar los datos de su tarjeta para futuros pagos o usar su saldo en Mercado Pago para realizar pagos. Los clientes pagan más rápido y usted aumenta la conversión con esta función.
 10. Haga clic en **Set up installment and interest** para [configurar en Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/costs-section#from-section=menu) la tarifa que se pagará en cada compra y además ofrecer cuotas sin intereses a sus clientes.
-11. Luego haga clic en **Save Config**para guardar sus preferencias.
+11. Luego haga clic en **Save Config** para guardar sus preferencias.
 
