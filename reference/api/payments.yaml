@@ -3649,7 +3649,6 @@ components:
       example: customer
       enum:
         - customer -- Payer is a Customer and belongs to the collector.
-        - registered -- The account corresponds to a Mercado Pago registered user.
         - guest -- The payer doesn't have an account.
     currency_id:
       type: string
