@@ -13,7 +13,7 @@ For each payment status, you can select an order status. Then, when your store r
 >
 > The module is prepared to receive payment notifications automatically, that is, without the need to configure your Mercado Pago account or the module. </br>
 > </br><br/>
-> [Click here](/developers/en/docs/magento-two/additional-content/your-integrations/notifications/webhooks) for more information about Webhooks notifications.
+> [Click here](/developers/en/docs/your-integrations/notifications/webhooks) for more information about Webhooks notifications.
 
 Ready! Notification status has been configured successfully.
 
