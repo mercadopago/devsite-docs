@@ -137,7 +137,7 @@ En ambos los flujos (éxito y fallo), el _Challenge_, que es una pantalla simila
 
 <center>
 
-![bricks_sandbox](checkout-bricks/bricks_sandbox-es.png)
+![bricks_sandbox](checkout-bricks/sandbox-v1-es.png)
 
 </center>
 

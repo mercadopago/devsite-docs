@@ -550,6 +550,6 @@ print(payment)
 
 In both the success and failure flows, the Challenge, which is a screen similar to the one shown below, should be displayed within the iframe:
 
-![Challenge](/images/api/sandbox.png)
+![Challenge](/images/api/sandbox-v1-en.png)
 
 The provided verification code is for illustrative purposes only. To complete the test flow, simply click the **Confirm** button. After completing this action, follow the detailed instructions in the **Verify Transaction Status** section to determine when the Challenge has been completed and how to check for payment updates. 

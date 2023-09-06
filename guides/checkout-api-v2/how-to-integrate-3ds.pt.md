@@ -547,6 +547,6 @@ print(payment)
 
 Em ambos os fluxos (sucesso e falha), o _Challenge_, que é uma tela semelhante à mostrada abaixo, deve ser exibido dentro do *iframe*:
 
-![Challenge](/images/api/sandbox.png)
+![Challenge](/images/api/sandbox-v1-pt.png)
 
 O código de verificação fornecido é apenas ilustrativo. Para concluir o fluxo de teste, basta clicar no botão **Confirmar**. Após concluir essa ação, siga as instruções detalhadas na seção **Verificar o Status da Transação** para identificar quando o _Challenge_ foi concluído e como verificar a atualização do pagamento. 
