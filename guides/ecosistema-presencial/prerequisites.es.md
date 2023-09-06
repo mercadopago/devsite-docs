@@ -1,9 +1,0 @@
-# Requisitos previos
-
-| Requisito | Descripción |
-|:---:|---|
-| Cuenta de vendedor Mercado Pago | Para integrar la API de Ecosistema Presencial, necesitas una cuenta de vendedor en Mercado Pago. Si no tienes una, puedes [crearla](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) de manera gratuita. |
-| Aplicación Mercado Pago | Es necesario contar con la aplicación Mercado Pago para gestionar los cobros realizados. Puedes descargar su versión para [dispositivos Android](https://play.google.com/store/apps/details?id=com.mercadopago.wallet&hl=es_419), o bien para [dispositivos iOS](https://apps.apple.com/ar/app/mercado-pago/id925436649). |
-| Credenciales | Contraseñas exclusivas utilizadas para identificar una integración en tu cuenta y que permiten la navegación segura y la protección de datos de los usuarios. Consulta la [documentación de Credenciales](/developers/es/docs/ecosistema-presencial/additional-content/your-integrations/credentials) para obtener más información. |
-| Cuentas de prueba | Las cuentas de prueba te permiten realizar testeos en la aplicación para corroborar que todo está funcionando correctamente. Las puedes crear en [Tus Integraciones](/developers/panel/app). |
-| Dispositivo Point | Para integrar la API de Ecosistema Presencial, es necesario contar con la máquina. Los dispositivos soportados son:<br> ----[mla]---- Point Plus (POS) y [Point Smart](https://www.mercadopago.com.ar/point/invite?device=29&code=POINT_ORG) .------------ ----[mlb]---- [Point Pro 2](https://www.mercadopago.com.br/point/invite?device=28&code=POINT_ORG&pog=true) .------------ ----[mlm]---- [Point Smart](https://www.mercadopago.com.mx/point/invite?device=30&code=POINT_ORG) .------------ <br>Puedes conocer sus especificidades y comprar uno, si aún no lo has hecho, accediendo a la [tienda oficial](https://www.mercadopago[FAKER][URL][DOMAIN]/herramientas-para-vender/lectores-point). |

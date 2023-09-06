@@ -1,0 +1,9 @@
+# Requisitos prévios
+
+| Requisito | Descrição |
+|:---:|---|
+| Conta de vendedor do Mercado Pago | Para integrar a InStore API, você precisa de uma conta de vendedor no Mercado Pago. Se você ainda não tem, pode [criar uma](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) gratuitamente. |
+| Aplicativo do Mercado Pago | É necessário ter o aplicativo do Mercado Pago para gerenciar os pagamentos recebidos. Você pode baixar a versão para [dispositivos Android](https://play.google.com/store/apps/details?id=com.mercadopago.wallet&hl=pt_BR) ou [dispositivos iOS](https://apps.apple.com/ar/app/mercado-pago/id925436649). |
+| Credenciais | Senhas exclusivas utilizadas para identificar uma integração em sua conta e que permitem a navegação segura e a proteção dos dados dos usuários. Consulte a [documentação de Credenciais](/developers/pt/docs/instore-api/additional-content/your-integrations/credentials) para obter mais informações. |
+| Contas de teste | As contas de teste permitem que você faça testes no aplicativo para verificar se tudo está funcionando corretamente. Você pode criar contas de teste em [Suas Integrações](/developers/pt/panel/app). |
+| Dispositivo Point | Para integrar a InStore API, é necessário ter a máquina. Os dispositivos suportados são:<br> ----[mla]---- Point Plus (POS) e [Point Smart](https://www.mercadopago.com.ar/point/invite?device=29&code=POINT_ORG) .------------ ----[mlb]---- [Point Pro 2](https://www.mercadopago.com.br/point/invite?device=28&code=POINT_ORG&pog=true) .------------ ----[mlm]---- [Point Smart](https://www.mercadopago.com.mx/point/invite?device=30&code=POINT_ORG) .------------ <br> Você pode conhecer suas especificações e comprar um, se ainda não o fez, acessando a [loja oficial](https://www.mercadopago[FAKER][URL][DOMAIN]/ferramentas-para-vender/maquininhas-point). |
