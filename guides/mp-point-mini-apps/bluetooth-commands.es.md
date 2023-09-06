@@ -10,7 +10,7 @@ Para conectar y desconectar un dispositivo bluetooth desde una mini app, se debe
 
 | Parámetro | Tipo | Requerido | Valores posibles | Descripción |
 | --- | --- | --- | --- | --- |
-| action | string | true | on <br><br> off | Conect o desconecta el dispositivo bluetooth. |
+| action | string | true | on <br><br> off | Conecta o desconecta el dispositivo bluetooth. |
 
 Si el comando tiene éxito, la devolución del llamado enviará un valor de `success`.
 
@@ -23,7 +23,7 @@ MobileWebKit.executeNative(
        "args": {"action": on},
        "callback": function (result, error) {
            if (result === "success") {
-               //  Escribe el código con éxito aquí
+               //  Escribe el código para el resultado exitoso aquí
            }
        }
    }
