@@ -8,7 +8,7 @@ O processo de aprovação de um mini app costuma levar, em média, 7 dias. No en
 
 ## Como funciona a verificação para o mini app ser aprovado?
 
-O processo de verificação é conduzido pela equipe do Mercado Pago, que revisa o código estático, a segurança e as configurações do mini app, além de checar se as [Guias e regras](/developers/pt/docs/mini-apps/additional-content/requirements/general) estão sendo cumpridas.
+O processo de verificação é conduzido pela equipe do Mercado Pago, que revisa o código estático, a segurança e as configurações do mini app, além de checar se as [Guias e regras](/developers/pt/docs/mini-apps/requirements/general) estão sendo cumpridas.
 
 ## Em quais idiomas meu mini app precisa estar disponível?
 
