@@ -109,7 +109,7 @@ available_payments: credit, debit, mercadopago, efectivo, atm
 ----[mlu]---- 
 
 ---
-available_payments: credit, debit, mercadopago
+available_payments: credit, debit, mercadopago, efectivo
 
 ---
 ------------
