@@ -18,4 +18,4 @@ Please note that you must first execute the store creation request for the cash 
 >
 > Important
 >
-> The Instore API is based on the `external_id` sent during the creation of the cash register in the POST call. Remember that it is a unique identification for the created cash register and the user. If you need to create more cash registers, you must ensure that they all have a different `external_id`.
+> The InStore API is based on the `external_id` sent during the creation of the cash register in the POST call. Remember that it is a unique identification for the created cash register and the user. If you need to create more cash registers, you must ensure that they all have a different `external_id`.

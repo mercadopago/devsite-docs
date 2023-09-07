@@ -115,7 +115,7 @@ To configure your notifications, follow the instructions provided in the [Webhoo
 >
 > Important
 >
-> To set up notifications for Instore API, you must use the **Instore Integration** event, which will contain the `type` field with the value `topic_instore_integration_wh`. Through this event, you will receive notifications of the final states of intents, whether processed by Point or QR in integrated mode.
+> To set up notifications for InStore API, you must use the **Instore Integration** event, which will contain the `type` field with the value `topic_instore_integration_wh`. Through this event, you will receive notifications of the final states of intents, whether processed by Point or QR in integrated mode.
 
 Below is an example of a notification you can receive for QR when an intent reaches a final (`status`) state.
 
