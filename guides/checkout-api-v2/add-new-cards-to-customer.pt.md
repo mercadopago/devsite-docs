@@ -2,6 +2,11 @@
 
 Caso necessário, é possível adicionar novos cartões a um determinado cliente. Para isso, busque o cliente e defina os novos dados de cartão utilizando um dos códigos disponíveis abaixo.
 
+> NOTE
+>
+> Importante
+>
+> Caso seja necessário excluir um cartão antes de adicionar novos cartões a um cliente, envie um **DELETE** ao endpoint [/v1/customers/{customer_id}/cards/{id}](/developers/pt/reference/cards/_customers_customer_id_cards_id/delete) fornecendo o `customer_id` e o `id` do cartão que deseja excluir. Após a execução bem-sucedida da requisição, você poderá adicionar o novo cartão.
 
 [[[
 ```php
