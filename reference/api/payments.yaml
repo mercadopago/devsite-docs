@@ -487,6 +487,7 @@ paths:
                     - Debin_transfer -- Digital payment method used in Argentina that immediately debits an amount from an account, requesting prior authorization.
                     - Ted -- It is the Electronic Transfer Available payment, used in Brazil, that has fees to be used. The payment is made the same day of the transaction, but for this it is necessary to make the transfer within the stipulated period;
                     - Cvu -- Payment method used in Argentina.
+                    - PSE -- 
                   required: true
                   example: visa
                 statement_descriptor:
@@ -3729,8 +3730,8 @@ components:
       example: credit_card
       enum:
         - account_money -- Money in the Mercado Pago account.
-        - ticket -- Boletos, Caixa Electronica Payment, PayCash and Oxxo, etc.
-        - bank_transfer -- Bank transfer (pix).
+        - ticket -- Boletos, Caixa Electronica Payment, PayCash, Efecty, Oxxo, etc.
+        - bank_transfer -- Pix and PSE.
         - atm -- ATM payment (widely used in Mexico through BBVA Bancomer).
         - credit_card -- Payment by credit card.
         - debit_card -- Payment by debit card.
