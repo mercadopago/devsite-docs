@@ -53,7 +53,7 @@ available_payments: credit, debit, mercadopago, boleto, pix, pec
 ----[mla]---- 
 
 ---
-available_payments: credit, debit, mercadopago, efectivo
+available_payments: credit, debit, mercadopago, rapipago, pagofacil
 
 ----
 ------------
@@ -69,7 +69,7 @@ available_payments: credit, debit, mercadopago, efectivo, atm, spei
 ----[mlu]---- 
 
 ---
-available_payments: credit, efectivo, debit
+available_payments: credit, debit, efectivo, mercadopago
 
 ----
 ------------

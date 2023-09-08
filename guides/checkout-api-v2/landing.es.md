@@ -52,7 +52,7 @@ available_payments: credit, debit, mercadopago, boleto, pix, pec
 ----[mla]---- 
 
 ---
-available_payments: credit, debit, mercadopago, efectivo
+available_payments: credit, debit, mercadopago, rapipago, pagofacil
 
 ----
 ------------
