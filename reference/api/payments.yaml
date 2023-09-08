@@ -487,6 +487,7 @@ paths:
                     - Debin_transfer -- Digital payment method used in Argentina that immediately debits an amount from an account, requesting prior authorization.
                     - Ted -- It is the Electronic Transfer Available payment, used in Brazil, that has fees to be used. The payment is made the same day of the transaction, but for this it is necessary to make the transfer within the stipulated period;
                     - Cvu -- Payment method used in Argentina.
+                    - PSE -- Digital payment method used in Colombia which users authorize the debit of funds from their bank through virtual banking. your savings, checking or electronic deposit accounts.
                   required: true
                   example: visa
                 statement_descriptor:
@@ -1539,13 +1540,14 @@ paths:
                     x-description-i18n:
                       eng: It indicates the identifier of the payment method selected to make the transaction. Here are some examples.
                       spa: Indica el identificador del medio de pago seleccionado para realizarlo. A continuación presentamos algunos ejemplos.
-                      por:  Indica o identificador do meio de pagamento selecionado para efetuar o pagamento. A seguir, apresentamos alguns exemplos.
+                      por: Indica o identificador do meio de pagamento selecionado para efetuar o pagamento. A seguir, apresentamos alguns exemplos.
                     enum:
                       - pix -- Instant digital payment method used in Brazil;
                       - account_money -- When the payment is debited directly from a Mercado Pago account;
                       - debin_transfer -- Digital payment method used in Argentina that immediately debits an amount from an account, requesting prior authorization;
                       - ted -- It is the Electronic Transfer Available payment, used in Brazil, that has fees to be used. The payment is made the same day of the transaction, but for this it is necessary to make the transfer within the stipulated period;
-                      - cvu -- Payment method used in Argentina.
+                      - cvu -- Payment method used in Argentina;
+                      - pse -- Digital payment method used in Colombia which users authorize the debit of funds from their bank through virtual banking. your savings, checking or electronic deposit accounts.
                   payment_type_id:
                     $ref: '#/components/schemas/payment_type_id'
                   status:
@@ -2162,7 +2164,8 @@ paths:
                       - account_money -- When the payment is debited directly from a Mercado Pago account;
                       - debin_transfer -- Digital payment method used in Argentina that immediately debits an amount from an account, requesting prior authorization;
                       - ted -- It is the Electronic Transfer Available payment, used in Brazil, that has fees to be used. The payment is made the same day of the transaction, but for this it is necessary to make the transfer within the stipulated period;
-                      - cvu -- Payment method used in Argentina. 
+                      - cvu -- Payment method used in Argentina;
+                      - pse -- Digital payment method used in Colombia which users authorize the debit of funds from their bank through virtual banking. your savings, checking or electronic deposit accounts.
                   payment_type_id:
                     $ref: '#/components/schemas/payment_type_id'
                   status:
@@ -3138,7 +3141,8 @@ paths:
                               - account_money -- When the payment is debited directly from a Mercado Pago account.
                               - debin_transfer -- Digital payment method used in Argentina that immediately debits an amount from an account, requesting prior authorization.
                               - ted -- It is the Electronic Transfer Available payment, used in Brazil, that has fees to be used. The payment is made the same day of the transaction, but for this it is necessary to make the transfer within the stipulated period.
-                              - cvu -- Payment method used in Argentina.
+                              - cvu -- Payment method used in Argentina;
+                              - pse -- Digital payment method used in Colombia which users authorize the debit of funds from their bank through virtual banking. your savings, checking or electronic deposit accounts.
                           payment_type_id:
                             $ref: '#/components/schemas/payment_type_id'
                           status:
@@ -3729,8 +3733,8 @@ components:
       example: credit_card
       enum:
         - account_money -- Money in the Mercado Pago account.
-        - ticket -- Boletos, Caixa Electronica Payment, PayCash and Oxxo, etc.
-        - bank_transfer -- Bank transfer (pix).
+        - ticket -- Boletos, Caixa Electronica Payment, PayCash, Efecty, Oxxo, etc.
+        - bank_transfer -- Pix and PSE (Pagos Seguros en Línea).
         - atm -- ATM payment (widely used in Mexico through BBVA Bancomer).
         - credit_card -- Payment by credit card.
         - debit_card -- Payment by debit card.
