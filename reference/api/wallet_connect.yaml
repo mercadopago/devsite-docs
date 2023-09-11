@@ -1870,7 +1870,7 @@ paths:
                     enum:
                       - 500--Error--Internal server error
                       - 500--Error--IInternal Error in Discarded List.
-  /v2/wallet_connect/payment/discounts: 
+  /v2/wallet_connect/discounts: 
     post:
       tags:
         - $ref: '#/tags/wallet-connect'
