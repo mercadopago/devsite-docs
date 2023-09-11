@@ -1,6 +1,6 @@
 # Gestión de catálogos
 
-La gestión de catálogo se realiza a través de de API REST, con las que podrás realizar las siguientes funcionalidades:
+La gestión de catálogo se realiza a través de API REST, con las que podrás realizar las siguientes funcionalidades:
 
 * Realizar la carga masiva de catálogo para múltiples tiendas.
 * Verificar que el proceso de carga del catálogo haya sido exitoso.
