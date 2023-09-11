@@ -109,6 +109,21 @@ paths:
                               spa: Precio unitario del ítem comprado.
                               por: Preço unitário do item comprado.
                             example: 58.8
+                          type:
+                            type: string
+                            description: Type of item being sold
+                            x-description-i18n:
+                              eng: Type of item being sold
+                              spa: Tipo de ítem que se está vendiendo
+                              por: Tipo de item sendo vendido
+                            example: headphones
+                          warranty:
+                            type: boolean
+                            description: Indicates if the product has warranty or not. True if it does, false if it doesn't.
+                            x-description-i18n:
+                              eng: Indicates if the product has warranty or not. True if it does, false if it doesn't.
+                              spa: Indica si el producto tiene garantía o no. True si tiene, false si no.
+                              por: Indica se o produto tem garantia ou não. True se tiver, false se não.   
                     payer:
                       type: object
                       description: The payer is the one who makes the payment. This field is an object that has the payer's information.
@@ -134,11 +149,11 @@ paths:
                             spa: Es el campo de apellido del comprador.
                             por: É o campo do sobrenome do comprador.
                           example: Test
-                        email:
+                        e-mail:
                           type: string
-                          description: Payer's email
+                          description: Payer's e-mail
                           x-description-i18n:
-                            eng: Payer's email
+                            eng: Payer's e-mail
                             spa: Email del comprador
                             por: E-mail do comprador
                           example: test_user_123@testuser.com
@@ -203,6 +218,39 @@ paths:
                             eng: Date of registration of the buyer (payer) on your website. The valid format of the attribute is as follows - "yyyy-MM-dd'T'HH:mm:ssz". Ex - 2021-06-15T19:22:41.001-03:00.
                             spa: Fecha de registro del comprador (payer) en tu sitio web. El formato válido del atributo es el siguiente - "yyyy-MM-dd'T'HH:mm:ssz". Ej - 2021-06-15T19:22:41.001-03:00.
                             por: Data de cadastro do comprador (payer) em seu site.  O formato válido do atributo é o seguinte - "yyyy-MM-dd'T'HH:mm:ssz". Ex - 2021-06-15T19:22:41.001-03:00.
+                        is_prime_user:
+                          type: string
+                          description: Indicates if the payer is a premium user. Valid values are as follows - "1" if it is, "0" if it isn't.
+                          x-description-i18n:
+                            eng: Indicates if the payer is a premium user. Valid values are as follows - "1" if it is, "0" if it isn't.
+                            spa: Indica si el pagador es un usuario premium. Los valores válidos son los siguientes - "1" si lo es, "0" si no lo es.
+                            por: Indica se o pagador é um usuário premium. Os valores válidos são os seguintes - "1" se for, "0" se não for.
+                        is_first_purchase_online:
+                          type: string
+                          description: Indicates if the payer has made a purchase on your website before. Valid values are as follows - "1" if it is, "0" if it isn't.
+                          x-description-i18n:
+                            eng: Indicates if the payer has made a purchase on your website before. Valid values are as follows - "1" if it is, "0" if it isn't.
+                            spa: Indica si el pagador ha realizado una compra en tu sitio web anteriormente. Los valores válidos son los siguientes - "1" si lo es, "0" si no lo es.
+                            por: Indica se o pagador já realizou uma compra em seu site anteriormente. Os valores válidos são os seguintes - "1" se for, "0" se não for.
+                        last_purchase:
+                          type: string
+                          description: Date of the last purchase made by the payer on your website. The valid format of the attribute is as follows - "yyyy-MM-dd'T'HH:mm:ssz". Ex - 2021-06-15T19:22:41.001-03:00.
+                          x-description-i18n:
+                            eng: Date of the last purchase made by the payer on your website. The valid format of the attribute is as follows - "yyyy-MM-dd'T'HH:mm:ssz". Ex - 2021-06-15T19:22:41.001-03:00.
+                            spa: Fecha de la última compra realizada por el pagador en tu sitio web. El formato válido del atributo es el siguiente - "yyyy-MM-dd'T'HH:mm:ssz". Ej - 2021-06-15T19:22:41.001-03:00.
+                            por: Data da última compra realizada pelo pagador em seu site. O formato válido do atributo é o seguinte - "yyyy-MM-dd'T'HH:mm:ssz". Ex - 2021-06-15T19:22:41.001-03:00.
+                        authentication_type:
+                          type: string
+                          description: Type of authentication used by payer
+                          x-description-i18n:
+                            eng: Type of authentication used by payer
+                            spa: Tipo de autenticación utilizada por el pagador
+                            por: Tipo de autenticação utilizada pelo pagador
+                          enum:
+                            - Gmail
+                            - Facebook
+                            - Native web
+                            - Other
                     shipments:
                       type: object
                       description: Object containing all the information for shipping the customer's purchase.
@@ -287,6 +335,20 @@ paths:
                             eng: Height of barcode.
                             spa: Altura del código de barras
                             por: Altura do código de barras
+                        express_shipment:
+                          type: string
+                          description: Indicates if the shipment is express or not. Valid values are as follows - "1" if it is, "0" if it isn't.
+                          x-description-i18n:
+                            eng: Indicates if the shipment is express or not. Valid values are as follows - "1" if it is, "0" if it isn't.
+                            spa: Indica si el envío es express o no. Los valores válidos son los siguientes - "1" si lo es, "0" si no lo es.
+                            por: Indica se o envio é expresso ou não. Os valores válidos são os seguintes - "1" se for, "0" se não for.
+                        pickup_on_seller:
+                          type: string
+                          description: Indicates if the customer will pick up the product at the seller's address. Valid values are as follows - "1" if it is, "0" if it isn't.
+                          x-description-i18n:
+                            eng: Indicates if the customer will pick up the product at the seller's address. Valid values are as follows - "1" if it is, "0" if it isn't.
+                            spa: Indica si el cliente recogerá el producto en la dirección del vendedor. Los valores válidos son los siguientes - "1" si lo es, "0" si no lo es.
+                            por: Indica se o cliente irá retirar o produto no endereço do vendedor. Os valores válidos são os seguintes - "1" se for, "0" se não for.
                 application_fee:
                   type: number
                   description: Commission (fee) that third parties (integrators) charge their customers, in this case, sellers, for using the marketplace platform and other services. This is a value in reais to be defined by the integrator to the seller.
@@ -487,7 +549,6 @@ paths:
                     - Debin_transfer -- Digital payment method used in Argentina that immediately debits an amount from an account, requesting prior authorization.
                     - Ted -- It is the Electronic Transfer Available payment, used in Brazil, that has fees to be used. The payment is made the same day of the transaction, but for this it is necessary to make the transfer within the stipulated period;
                     - Cvu -- Payment method used in Argentina.
-                    - PSE -- Digital payment method used in Colombia which users authorize the debit of funds from their bank through virtual banking. your savings, checking or electronic deposit accounts.
                   required: true
                   example: visa
                 statement_descriptor:
@@ -626,7 +687,7 @@ paths:
                     x-description-i18n:
                       eng: Description sent in the payment creation request. Ex. - In a pix payment, the description is “Payment of Credit Market installments”. In another cases, such as a purchase in a physical store where the customer uses the machine to pay, we can find the description “Sale in person”. In marketplace purchases, the purchase description usually corresponds to a purchased product - “Pendrive Multilaser Twist Pd590 64gb 2.0 Black And Silver + 1 product”.
                       spa: Descripción enviada en el request de creación de pago. Por ejemplo - En un pago con pix, se encuentra la descripción “Pago de cuotas Mercado Crédito”. En otro caso, una compra en una tienda física donde el cliente utiliza la máquina para pagar, podemos encontrar la descripción “Venta en persona”. En las compras en marketplace, la descripción de compra suele corresponder a un producto comprado - “Pendrive Multilaser Twist Pd590 64gb 2.0 Negro Y Plata + 1 producto”.
-                      por: Descrição enviada na solicitação de criação de pagamento. Por exemplo - Em um pagamento pix, há a descrição “Pagamento de parcelas de Mercado Crédito”. Em outro caso, uma compra em loja física onde o cliente utiliza a maquininha para pagar, podemos encontrar a descrição - “Venda presencial”. Já em compras do marketplace, a descrição da compra geralmente corresponde a um produto comprado - “	Pendrive Multilaser Twist Pd590 64gb 2.0 Preto E Prateado + 1 produto”.
+                      por: Descrição enviada na solicitação de criação de pagamento. Por exemplo - Em um pagamento pix, há a descrição “Pagamento de parcelas de Mercado Crédito”. Em outro caso, uma compra em loja física onde o cliente utiliza a maquininha para pagar, podemos encontrar a descrição - “Venda presencial”. Já em compras do marketplace, a descrição da compra geralmente corresponde a um produto comprado - “  Pendrive Multilaser Twist Pd590 64gb 2.0 Preto E Prateado + 1 produto”.
                   live_mode:
                     type: boolean
                     description: Indicates whether the Payment was made in a production environment or in a Test environment. If TRUE, then the chargeback will be processed in production mode. If FALSE, then the chargeback will be processed in sandbox mode.
