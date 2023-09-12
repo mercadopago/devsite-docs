@@ -1478,17 +1478,6 @@ paths:
           schema:
             type: number
             example: 12345678
-        - in: query
-          name: client.id
-          required: true         
-          description: This is the client unique identificator.
-          x-description-i18n:
-            eng: This is the client unique identificator.
-            spa: Se refiere al advanced payment con el id 'advanced_payment_id' para ser confirmado.
-            por: Refere-se ao advanced payment com o id 'advanced_payment_id' a ser confirmado.
-          schema:
-            type: number
-            example: <CLIENT.ID>
       responses:
         '200':
           description: Advanced Payments confirmed.
