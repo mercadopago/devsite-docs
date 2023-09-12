@@ -37,4 +37,4 @@ Para atualizar seu plugin instalando a nova versão, basta seguir os passos de i
 >
 > Nota
 >
-> O novo plugin é compatível com as versões 1.2, 1.3 e 1.4. Caso já esteja utilizando o novo plugin, que está disponível no [GitHub](https://github.com/mercadopago/adb-payment), você pode atualizá-lo seguindo o mesmo método utilizado para instalação anteriormente (Composer, Adobe Commerce (Magento) ou via FTP).
+> O novo plugin é compatível com as versões 1.2, 1.3 e 1.4. Caso já esteja utilizando o novo plugin, que está disponível no [GitHub,](https://github.com/mercadopago/adb-payment) você pode atualizá-lo seguindo o mesmo método utilizado para instalação anteriormente (Composer, Adobe Commerce (Magento) ou via FTP).

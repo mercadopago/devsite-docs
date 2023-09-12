@@ -35,6 +35,7 @@ bullet_section_with_media:
 ---
 ------------
 
+--- mini_landing_separator ---
 Hemos lanzado nuestro último plugin para Adobe Commerce (Magento), con más funcionalidades y total compatibilidad con las últimas actualizaciones de la plataforma. Si está utilizando versiones entre **3.5 y 3.19**, recomendamos la actualización para aprovechar las mejoras del **nuevo plugin**.
 
 > WARNING
