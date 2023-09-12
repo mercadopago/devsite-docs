@@ -123,7 +123,65 @@ paths:
                             x-description-i18n:
                               eng: Indicates if the product has warranty or not. True if it does, false if it doesn't.
                               spa: Indica si el producto tiene garantía o no. True si tiene, false si no.
-                              por: Indica se o produto tem garantia ou não. True se tiver, false se não.   
+                              por: Indica se o produto tem garantia ou não. True se tiver, false se não.    
+                          category_descriptor:
+                            type: object
+                            properties:
+                              passenger:
+                                type: object
+                                properties:
+                                  first_name:
+                                    type: string
+                                    description: Passenger's first name.
+                                    x-description-i18n:
+                                      eng: Passenger's first name.
+                                      spa: Nombre del pasajero
+                                      por: Primeiro nome do passageiro
+                                  last_name:
+                                    type: string
+                                    description: Passenger's last name.
+                                    x-description-i18n:
+                                      eng: Passenger's last name.
+                                      spa: Apellido del pasajero
+                                      por: Sobrenome do passageiro
+                          route:
+                            type: object
+                            properties:
+                              departure:
+                                type: string
+                                description: Departure city.
+                                x-description-i18n:
+                                  eng: Departure city.
+                                  spa: Ciudad de salida
+                                  por: Cidade de partida
+                              destination:
+                                type: string
+                                description: Destination city.
+                                x-description-i18n:
+                                  eng: Destination city.
+                                  spa: Ciudad de destino
+                                  por: Cidade de destino
+                              departure_date_time:
+                                type: string
+                                description: Departure date and time.
+                                x-description-i18n:
+                                  eng: Departure date and time. Valid format is as follows - "yyyy-MM-ddTHH:mm:ss.sssZ". Example - 2023-12-31T09:37:52.000-04:00.
+                                  spa: Fecha y hora de salida. El formato válido es el siguiente - "yyyy-MM-ddTHH:mm:ss.sssZ". Ejemplo - 2023-12-31T09:37:52.000-04:00.
+                                  por: Data e hora de partida. O formato válido é o seguinte - "yyyy-MM-ddTHH:mm:ss.sssZ". Exemplo - 2023-12-31T09:37:52.000-04:00.
+                              arrival_date_time:
+                                type: string
+                                description: Arrival date and time.
+                                x-description-i18n:
+                                  eng: Arrival date and time. Valid format is as follows - "yyyy-MM-ddTHH:mm:ss.sssZ". Example - 2023-12-31T09:37:52.000-04:00.
+                                  spa: Fecha y hora de llegada. El formato válido es el siguiente - "yyyy-MM-ddTHH:mm:ss.sssZ". Ejemplo - 2023-12-31T09:37:52.000-04:00.
+                                  por: Data e hora de chegada. O formato válido é o seguinte - "yyyy-MM-ddTHH:mm:ss.sssZ". Exemplo - 2023-12-31T09:37:52.000-04:00.
+                              company:
+                                type: string
+                                description: Company name.
+                                x-description-i18n:
+                                  eng: Company name.
+                                  spa: Nombre de la empresa
+                                  por: Nome da empresa
                     payer:
                       type: object
                       description: The payer is the one who makes the payment. This field is an object that has the payer's information.
