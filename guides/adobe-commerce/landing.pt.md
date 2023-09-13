@@ -35,18 +35,6 @@ bullet_section_with_media:
 ---
 ------------
 
---- mini_landing_separator ---
-
-Lançamos o nosso mais recente plugin para Adobe Commerce (Magento), com mais funcionalidades e total compatibilidade com as atualizações mais recentes da plataforma. Se você está utilizando as versões entre **3.5 e 3.19**, recomendamos a atualização para aproveitar as melhorias do **novo plugin**. 
-
-> WARNING
->
-> Importante
->
-> É importante ressaltar que as versões mais antigas não receberão mais atualizações, nem funcionalidades nem correções.
-
-Para saber como atualizar o plugin para a nova versão, leia a documentação [Como atualizar para o novo plugin Adobe Commerce](/developers/pt/docs/adobe-commerce/upgrade-to-the-new-plugin).
-
 
 --- mini_landing_separator ---
  
