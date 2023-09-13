@@ -55,12 +55,12 @@ paths:
                         properties:
                           id:
                             type: string
-                            description: It is the purchased product ad identifier. For example - “MLB2907679857”.
+                            description: It is the purchased product ad identifier. For example - “MLB3578920938”.
                             x-description-i18n:
-                              eng: It is the purchased product ad identifier. For example - “MLB2907679857”.
-                              spa: Es el identificador del anuncio del producto adquirido. Por ejemplo - “MLB2907679857”.
-                              por: É o identificador do anúncio do produto comprado. Por exemplo - “MLB2907679857”.
-                            example: MLB2907679857
+                              eng: It is the purchased product ad identifier. For example - “MLB3578920938”.
+                              spa: Es el identificador del anuncio del producto adquirido. Por ejemplo - “MLB3578920938”.
+                              por: É o identificador do anúncio do produto comprado. Por exemplo - “MLB3578920938”.
+                            example: MLB3578920938
                           title:
                             type: string
                             description: Item name.
@@ -68,7 +68,7 @@ paths:
                               eng: Item name.
                               spa: Nombre de ítem
                               por: Nome do item
-                            example: Point Mini
+                            example: flight ticket to Miami
                           description:
                             type: string
                             description: Long item description.
@@ -76,7 +76,7 @@ paths:
                               eng: Long item description.
                               spa: Descripción de item
                               por: Descrição do artigo
-                            example: Producto Point para cobros con tarjetas mediante bluetooth
+                            example: round-trip flight ticket to Miami
                           picture_url:
                             type: string
                             description: Image URL.
@@ -92,7 +92,7 @@ paths:
                               eng: It is the category of the purchased item. It is possible to mention two main forms of category_id - categories inserted through a code, such as “MLB189908”, or those that are a tag, such as “phone”.
                               spa: Es la categoría del ítem que se compró. Es posible citar dos formas principales de category_id - categorías insertadas a través de un código, como “MLB189908”, o aquellas que son una tag, como “phone”.
                               por: É a categoria do item que foi comprado. É possível citar duas formas principais de category_id - as categorias inseridas por meio de um código, como “MLB189908”, ou as que são uma tag, como “phone”.
-                            example: electronics
+                            example: travel
                           quantity:
                             type: number
                             description: Item quantity.
@@ -108,7 +108,7 @@ paths:
                               eng: Unit price of the purchased item.
                               spa: Precio unitario del ítem comprado.
                               por: Preço unitário do item comprado.
-                            example: 58.8
+                            example: 3500
                           type:
                             type: string
                             description: Type of item being sold
@@ -116,7 +116,7 @@ paths:
                               eng: Type of item being sold
                               spa: Tipo de ítem que se está vendiendo
                               por: Tipo de item sendo vendido
-                            example: headphones
+                            example: tickets
                           warranty:
                             type: boolean
                             description: Indicates if the product has warranty or not. True if it does, false if it doesn't.
@@ -124,6 +124,7 @@ paths:
                               eng: Indicates if the product has warranty or not. True if it does, false if it doesn't.
                               spa: Indica si el producto tiene garantía o no. True si tiene, false si no.
                               por: Indica se o produto tem garantia ou não. True se tiver, false se não.
+                            example: false 
                           category_descriptor:
                             type: object
                             properties:
@@ -137,6 +138,7 @@ paths:
                                       eng: Passenger's first name.
                                       spa: Nombre del pasajero
                                       por: Primeiro nome do passageiro
+                                    example: John
                                   last_name:
                                     type: string
                                     description: Passenger's last name.
@@ -144,49 +146,50 @@ paths:
                                       eng: Passenger's last name.
                                       spa: Apellido del pasajero
                                       por: Sobrenome do passageiro
-                          route:
-                            type: object
-                            properties:
-                              departure:
-                                type: string
-                                description: Departure city.
-                                x-description-i18n:
-                                  eng: Departure city.
-                                  spa: Ciudad de salida
-                                  por: Cidade de partida
-                                example: Buenos Aires
-                              destination:
-                                type: string
-                                description: Destination city.
-                                x-description-i18n:
-                                  eng: Destination city.
-                                  spa: Ciudad de destino
-                                  por: Cidade de destino
-                                example: Buenos Aires
-                              departure_date_time:
-                                type: string
-                                description: Departure date and time.
-                                x-description-i18n:
-                                  eng: Departure date and time. Valid format is as follows - "yyyy-MM-ddTHH:mm:ss.sssZ". Example - 2023-12-31T09:37:52.000-04:00.
-                                  spa: Fecha y hora de salida. El formato válido es el siguiente - "yyyy-MM-ddTHH:mm:ss.sssZ". Ejemplo - 2023-12-31T09:37:52.000-04:00.
-                                  por: Data e hora de partida. O formato válido é o seguinte - "yyyy-MM-ddTHH:mm:ss.sssZ". Exemplo - 2023-12-31T09:37:52.000-04:00.
-                                example: 2023-12-31T09:37:52.000-04:00
-                              arrival_date_time:
-                                type: string
-                                description: Arrival date and time.
-                                x-description-i18n:
-                                  eng: Arrival date and time. Valid format is as follows - "yyyy-MM-ddTHH:mm:ss.sssZ". Example - 2023-12-31T09:37:52.000-04:00.
-                                  spa: Fecha y hora de llegada. El formato válido es el siguiente - "yyyy-MM-ddTHH:mm:ss.sssZ". Ejemplo - 2023-12-31T09:37:52.000-04:00.
-                                  por: Data e hora de chegada. O formato válido é o seguinte - "yyyy-MM-ddTHH:mm:ss.sssZ". Exemplo - 2023-12-31T09:37:52.000-04:00.
-                                example: 2023-12-31T09:37:52.000-04:00
-                              company:
-                                type: string
-                                description: Company name.
-                                x-description-i18n:
-                                  eng: Company name.
-                                  spa: Nombre de la empresa
-                                  por: Nome da empresa
-                                example: Mercado Pago
+                                    example: Doe
+                              route:
+                                type: object
+                                properties:
+                                  departure:
+                                    type: string
+                                    description: Departure city.
+                                    x-description-i18n:
+                                      eng: Departure city.
+                                      spa: Ciudad de salida
+                                      por: Cidade de partida
+                                    example: Sao Paulo
+                                  destination:
+                                    type: string
+                                    description: Destination city.
+                                    x-description-i18n:
+                                      eng: Destination city.
+                                      spa: Ciudad de destino
+                                      por: Cidade de destino
+                                    example: Miami 
+                                  departure_date_time:
+                                    type: string
+                                    description: Departure date and time.
+                                    x-description-i18n:
+                                      eng: Departure date and time. Valid format is as follows - "yyyy-MM-ddTHH:mm:ss.sssZ". Example - 2023-12-31T09:37:52.000-04:00.
+                                      spa: Fecha y hora de salida. El formato válido es el siguiente - "yyyy-MM-ddTHH:mm:ss.sssZ". Ejemplo - 2023-12-31T09:37:52.000-04:00.
+                                      por: Data e hora de partida. O formato válido é o seguinte - "yyyy-MM-ddTHH:mm:ss.sssZ". Exemplo - 2023-12-31T09:37:52.000-04:00.
+                                    example: 2023-12-31T09:37:52.000-04:00
+                                  arrival_date_time:
+                                    type: string
+                                    description: Arrival date and time.
+                                    x-description-i18n:
+                                      eng: Arrival date and time. Valid format is as follows - "yyyy-MM-ddTHH:mm:ss.sssZ". Example - 2023-12-31T09:37:52.000-04:00.
+                                      spa: Fecha y hora de llegada. El formato válido es el siguiente - "yyyy-MM-ddTHH:mm:ss.sssZ". Ejemplo - 2023-12-31T09:37:52.000-04:00.
+                                      por: Data e hora de chegada. O formato válido é o seguinte - "yyyy-MM-ddTHH:mm:ss.sssZ". Exemplo - 2023-12-31T09:37:52.000-04:00.
+                                    example: 2023-12-31T09:37:52.000-04:00
+                                  company:
+                                    type: string
+                                    description: Company name.
+                                    x-description-i18n:
+                                      eng: Company name.
+                                      spa: Nombre de la empresa
+                                      por: Nome da empresa
+                                    example: Latam 
                     payer:
                       type: object
                       description: The payer is the one who makes the payment. This field is an object that has the payer's information.
@@ -300,7 +303,7 @@ paths:
                             eng: Indicates if the payer has made a purchase on your website before. Valid values are as follows - "1" if it is, "0" if it isn't.
                             spa: Indica si el pagador ha realizado una compra en tu sitio web anteriormente. Los valores válidos son los siguientes - "1" si lo es, "0" si no lo es.
                             por: Indica se o pagador já realizou uma compra em seu site anteriormente. Os valores válidos são os seguintes - "1" se for, "0" se não for.
-                          example: 1
+                          example: 0
                         last_purchase:
                           type: string
                           description: Date of the last purchase made by the payer on your website. The valid format of the attribute is as follows - "yyyy-MM-dd'T'HH:mm:ssz". Ex - 2021-06-15T19:22:41.001-03:00.
@@ -316,12 +319,12 @@ paths:
                             eng: Type of authentication used by payer
                             spa: Tipo de autenticación utilizada por el pagador
                             por: Tipo de autenticação utilizada pelo pagador
-                          example: Facebook
+                          example: Other
                           enum:
-                            - Gmail
-                            - Facebook
-                            - Native web
-                            - Other
+                            - Gmail -- Authentication via Gmail
+                            - Facebook -- Authentication via Facebook login
+                            - Native web -- Authentication via Native web
+                            - Other -- Other type of identification
                     shipments:
                       type: object
                       description: Object containing all the information for shipping the customer's purchase.
