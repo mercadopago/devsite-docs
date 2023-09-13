@@ -76,18 +76,16 @@ Para crear una preferencia, utiliza uno de los SDK disponibles a continuación, 
 ```php
 <?php
 // SDK de Mercado Pago
-require __DIR__ .  '/vendor/autoload.php';
+use MercadoPago\MercadoPagoConfig;
 // Agrega credenciales
-MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
+MercadoPagoConfig::setAccessToken("PROD_ACCESS_TOKEN");
 ?>
 ```
 ```node
 // SDK de Mercado Pago
-const mercadopago = require("mercadopago");
+import MercadoPago from 'mercadopago';
 // Agrega credenciales
-mercadopago.configure({
-  access_token: "PROD_ACCESS_TOKEN",
-});
+const client = new MercadoPago({ accessToken: 'access_token' });
 ```
 ```java
 // SDK de Mercado Pago
@@ -122,38 +120,33 @@ Cuando termines de crear la preferencia, debes configurarla de acuerdo con tu pr
 [[[
 ```php
 <?php
-// Crea un objeto de preferencia
-$preference = new MercadoPago\Preference();
-
-// Crea un ítem en la preferencia
-$item = new MercadoPago\Item();
-$item->title = 'Mi producto';
-$item->quantity = 1;
-$item->unit_price = 75.56;
-$preference->items = array($item);
-$preference->save();
+$client = new PreferenceClient();
+$preference = $client->create([
+  "items"=> array(
+    array(
+      "title" => "Meu produto",
+      "quantity" => 1,
+      "currency_id" => "BRL",
+      "unit_price" => 75.56$
+    )
+  )
+]);
 ?>
 ```
 ```node
-// Crea un objeto de preferencia
-let preference = {
-  items: [
-    {
-      title: "Mi producto",
-      unit_price: 100,
-      quantity: 1,
-    },
-  ],
-};
+const preference = new Preference(client);
 
-mercadopago.preferences
-  .create(preference)
-  .then(function (response) {
-    // En esta instancia deberás asignar el valor dentro de response.body.id por el ID de preferencia solicitado en el siguiente paso
-  })
-  .catch(function (error) {
-    console.log(error);
-  });
+preference.create({
+  'items': [
+     {
+	 'title': 'Meu produto',
+	 'quantity': 1,
+	 'currency_id': 'BRL',
+	 'unit_price': 75.56
+     }
+  ]
+}).then((result) => console.log(result))
+	.catch((error) => console.log(error));
 ```
 ```java
  PreferenceItemRequest itemRequest =
@@ -234,38 +227,40 @@ preference = preference_response["response"]
 [[[
 ```php
 <?php
-// Crea un objeto de preferencia
-$preference = new MercadoPago\Preference();
-
-// Crea un ítem en la preferencia
-$item = new MercadoPago\Item();
-$item->title = 'Mi producto';
-$item->quantity = 1;
-$item->unit_price = 75;
-$preference->items = array($item);
-$preference->save();
+   $client = new PreferenceClient();
+   $preference = $client->create([
+          "items"=> array(
+            array(
+              "title" => "My product",
+              "description" => "Test product",
+              "picture_url" => "http://i.mlcdn.com.br/portaldalu/fotosconteudo/48029_01.jpg",
+              "category_id" => "electronics",
+              "quantity" => 1,
+              "currency_id" => "BRL",
+              "unit_price" => 5.00
+            )
+          )
+  ]);
+  echo implode($preference);
 ?>
 ```
 ```node
-// Crea un objeto de preferencia
-let preference = {
-  items: [
-    {
-      title: "Mi producto",
-      unit_price: 100,
-      quantity: 1,
-    },
-  ],
-};
+const client = new MercadoPago({ accessToken: 'access_token', options: { timeout: 5000 } });
 
-mercadopago.preferences
-  .create(preference)
-  .then(function (response) {
-    global.id = response.body.id;
-  })
-  .catch(function (error) {
-    console.log(error);
-  });
+const preference = new Preference(client);
+preference.create({
+  'items': [
+    {
+      'title': 'My Product',
+      'description': 'Product Test',
+      'category_id': 'electronics',
+      'quantity': 2,
+      'currency_id': 'BRL',
+      'unit_price': 5.00
+    }
+  ]
+}).then((result) => console.log(result))
+	.catch((error) => console.log(error));
 ```
 ```java
  PreferenceItemRequest itemRequest =
