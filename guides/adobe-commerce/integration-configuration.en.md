@@ -6,12 +6,7 @@ With the Mercado Pago Plugin installed, it will be necessary to configure it to 
 >
 > Important
 >
-> We have released our latest plugin for Adobe Commerce (Magento), with additional features and full compatibility with the latest updates of the platform. If you are using a version between **3.5 and 3.19**, we recommend you upgrade to benefit from the improvements of the **new plugin**.
->
-> **It is important to note that older versions will no longer receive updates, including new features and bug fixes.**
->
-> To learn how to update the plugin to the new version, please refer to the documentation [How to upgrade to the new Adobe Commerce plugin?](/developers/en/docs/adobe-commerce/upgrade-to-the-new-plugin).
-
+> We have released a **new plugin** for Adobe Commerce (Magento) that is compatible with the latest platform updates. We recommend users of versions **3.5 to 3.19** to update in order to take advantage of the new features. Older versions will no longer receive updates, features, or fixes. Learn how to update the plugin in the [Adobe Commerce documentation](/developers/en/docs/adobe-commerce/upgrade-to-the-new-plugin).
 
 ----[mlb]----
 The basic configuration of the plugin is done in 3 steps: **Mercado Pago integration**, **Store Name**, **Category and Integrator ID**, and **Integration API**, followed by **Payment configuration** (Checkout Transparente and Checkout Pro).
