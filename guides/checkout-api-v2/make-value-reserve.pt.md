@@ -15,26 +15,28 @@ Para realizar uma autorização de reserva de valores, envie um **POST** com com
 
 [[[
 ```php
-
 <?php
+  use MercadoPago\Client\Payment\PaymentClient;
 
-  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
 
-  $payment = new MercadoPago\Payment();
+  MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
 
-  $payment->transaction_amount = 100;
-  $payment->token = "ff8080814c11e237014c1ff593b57b4d";
-  $payment->description = "Título do produto";
-  $payment->installments = 1;
-  $payment->payment_method_id = "visa";
-  $payment->payer = array(
-    "email" => "test_user_19653727@testuser.com"
-  );
+  $client = new PaymentClient();
+  $request_options = new MPRequestOptions();
+  $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
-  $payment->capture=false;
-
-  $payment->save();
-
+  $payment = $client->create([
+    "transaction_amount" => 100.0,
+    "token" => "123456",
+    "description" => "My product",
+    "installments" => 1,
+    "payment_method_id" => "visa",
+    "payer" => [
+      "email" => "my.user@example.com",
+    ],
+    "capture" => false
+  ], $request_options);
+  echo implode($payment);
 ?>
 ```
 ```java
@@ -58,28 +60,24 @@ client.create(request);
 
 ```
 ```node
+import MercadoPago, { Payments } from 'mercadopago';
 
-var mercadopago = require('mercadopago');
-mercadopago.configurations.setAccessToken(config.access_token);
+const client = new MercadoPago({ accessToken: 'YOUR_ACCESS_TOKEN' });
+const payments = new Payments(client);
 
-var payment_data = {
-  transaction_amount: 100,
-  token: 'ff8080814c11e237014c1ff593b57b4d'
-  description: 'Título do produto',
+payments.create({
+  transaction_amount: 100.0,
+  token: "123456",
+  description: "My product",
   installments: 1,
-  payment_method_id: 'visa',
+  payment_method_id: "visa",
   payer: {
-    email: 'test_user_3931694@testuser.com'
+    email: "my.user@example.com",
   },
-  capture: false
-};
-
-mercadopago.payment.create(payment_data).then(function (data) {
-
-}).catch(function (error) {
-
-});
-
+  capture: false 
+}, { idempotencyKey: '<SOME_UNIQUE_VALUE>' })
+  .then((result) => console.log(result))
+  .catch((error) => console.log(error));
 ```
 ```ruby
 

@@ -14,25 +14,18 @@ La primera etapa consiste en mostrar al comprador la lista de tarjetas guardadas
 [[[
 
 ```php
-
 <?php
-    $customer = MercadoPago\Customer::find_by_id($id);
-    $cards = $customer->cards();
+  $customer_client = new CustomerClient();
+  $cards = $client->list("customer_id");
+  echo implode ($cards);
 ?>
-
 ```
 ```node
+const client = new MercadoPago({ accessToken: 'access_token' });
+const customerClient = new Customer(client);
 
-  var filters = {
-    id: customer_id
-  };
-
-  mercadopago.customers.search({
-    qs: filters
-  }).then(function (customer) {
-    console.log(customer);
-  });
-
+customerClient.listCards({ customerId: '123' })
+	.then((result) => console.log(result));
 ```
 ```java
 

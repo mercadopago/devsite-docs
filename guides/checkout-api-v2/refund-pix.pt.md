@@ -50,38 +50,24 @@ requestOptions.CustomHeaders.Add("X-Render-In-Process-Refunds", "true");
 var refund = client.Refund(paymentId, 20, requestOptions);
 
 ```
-```nodejs
+```node
+import MercadoPago, { Payments } from 'mercadopago';
 
-var refund = {
- payment_id: payment_id,
- amount: 20,
- config: {
-  headers: {
-   'X-Render-In-Process-Refunds': 'true'
-  }
- }
-};
+const client = new MercadoPago({ accessToken: 'YOUR_ACCESS_TOKEN' });
+const paymentRefunds = new PaymentRefunds(client);
 
-mercadopago.configure({
- access_token: 'YOUR_ACCESS_TOKEN'
-});
-
-mercadopago.refund.create(refund, {idempotency: 'value'}).then((result) => {
- console.log(result.response.id)
-});
-
+paymentRefunds.refund({ id: '123', amount: 20 }).then((result) => console.log(result))
+	.catch((error) => console.log(error));
 ```
 ```php
-
-MercadoPago\SDK::setAccessToken("YOUR_ACCESS_TOKEN");
-
-$refund = new MercadoPago\Refund();
-$refund->setCustomHeader("Content-Type", "application/json");
-$refund->setCustomHeader("X-Render-In-Process-Refunds", "true");
-$refund->amount = 20;
-$refund->payment_id = $payment_id;
-$refund->save();
-
+<?php
+  use MercadoPago\Client\Payment\PaymentRefundClient;
+  MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
+  
+  $client = new PaymentRefundClient();
+  $refund = $client->refund($payment_id, 20);
+  echo $refund->id;
+?>
 ```
 ```python
 

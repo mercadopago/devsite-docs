@@ -29,12 +29,12 @@ Para fazer a captura do valor total de uma reserva, envie o valor que deve ser c
 [[[
 ```php
 <?php
-
-  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
-
-  $payment = MercadoPago\Payment::find_by_id($payment_id);
-  $payment->capture = true;
-  $payment->update();
+  use MercadoPago\Client\Payment\PaymentRefundClient;
+  MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
+  
+  $client = new PaymentRefundClient();
+  $refund = $client->refund($payment_id, 20);
+  echo $refund->id;
 ?>
 ```
 ```java
@@ -47,18 +47,15 @@ PaymentClient client = new PaymentClient();
 client.capture(paymentId);
 ```
 ```node
-var mercadopago = require('mercadopago');
-mercadopago.configurations.setAccessToken(config.access_token);
+import MercadoPago, { Payments } from 'mercadopago';
 
-let paymentId = 123;
+const client = new MercadoPago({ accessToken: 'YOUR_ACCESS_TOKEN' });
+const payments = new Payments(client);
+const paymentId = '123';
 
-mercadopago.payment.capture(paymentId, mercadopago, (error, response) => {
-    if (error){
-        console.log(error);
-    }else{
-        console.log(response)
-    }
-});
+payments.capture(paymentId, { idempotencyKey: '<SOME_UNIQUE_VALUE>' }
+  .then((result) => console.log(result))
+  .catch((error) => console.log(error));
 ```
 ```ruby
 require 'mercadopago'
