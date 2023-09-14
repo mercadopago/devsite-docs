@@ -84,7 +84,7 @@ paths:
                               eng: Image URL.
                               spa: URL de imagen
                               por: URL da imagem
-                            example: https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium2x.png
+                            example: https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/tickets-promo_medium2x.png
                           category_id:
                             type: string
                             description: It is the category of the purchased item. It is possible to mention two main forms of category_id - categories inserted through a code, such as “MLB189908”, or those that are a tag, such as “phone”.
