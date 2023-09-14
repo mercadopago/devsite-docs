@@ -366,57 +366,58 @@ Com todas as informações coletadas no backend, envie um POST com os atributos 
 
 [[[
 ```php
-===
-Encontre o estado do pagamento no campo _status_.
-===
 <?php
-   require_once 'vendor/autoload.php';
- 
-   MercadoPago\SDK::setAccessToken("YOUR_ACCESS_TOKEN");
- 
-   $payment = new MercadoPago\Payment();
-   $payment->transaction_amount = (float)$_POST['transactionAmount'];
-   $payment->token = $_POST['token'];
-   $payment->description = $_POST['description'];
-   $payment->installments = (int)$_POST['installments'];
-   $payment->payment_method_id = $_POST['paymentMethodId'];
-   $payment->issuer_id = (int)$_POST['issuer'];
- 
-   $payer = new MercadoPago\Payer();
-   $payer->email = $_POST['email'];
-   $payer->identification = array(----[mla, mlb, mlu, mlc, mpe, mco]----
-       "type" => $_POST['identificationType'],------------
-       "number" => $_POST['identificationNumber']
-   );
-   $payment->payer = $payer;
- 
-   $payment->save();
- 
-   $response = array(
-       'status' => $payment->status,
-       'status_detail' => $payment->status_detail,
-       'id' => $payment->id
-   );
-   echo json_encode($response);
- 
+  use MercadoPago\Client\Payment\PaymentClient;
+  use MercadoPago\MercadoPagoConfig;
+
+
+  MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
+
+  $client = new PaymentClient();
+  $request_options = new MPRequestOptions();
+  $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
+
+  $payment = $client->create([
+    "transaction_amount" => (float) $_POST['transactionAmount'],
+    "token" => $_POST['token'],
+    "description" => $_POST['description'],
+    "installments" => $_POST['installments'],
+    "payment_method_id" => $_POST['paymentMethodId'],
+    "issuer_id" => $_POST['issuer'],
+    "payer" => [
+      "email" => $_POST['email'],
+      "identification" => [
+        "type" => $_POST['identificationType'],
+        "number" => $_POST['number']
+      ]
+    ]
+  ], $request_options);
+  echo implode($payment);
 ?>
 ```
 ```node
-===
-Encontre o estado do pagamento no campo _status_.
-===
- 
-var mercadopago = require('mercadopago');
-mercadopago.configurations.setAccessToken("YOUR_ACCESS_TOKEN");
- 
-mercadopago.payment.save(req.body)
-  .then(function(response) {
-    const { status, status_detail, id } = response.body;
-    res.status(response.status).json({ status, status_detail, id });
-  })
-  .catch(function(error) {
-    console.error(error);
-  });
+import MercadoPago, { Payments } from 'mercadopago';
+
+const client = new MercadoPago({ accessToken: 'YOUR_ACCESS_TOKEN' });
+const payments = new Payments(client);
+
+payments.create({
+  transaction_amount: req.transaction_amount,
+  token: req.token,
+  description: req.description,
+  installments: req.installments,
+  payment_method_id: req.paymentMethodId,
+  issuer_id: req.issuer,
+  payer: {
+    email: req.email,
+    identification: {
+      type: req.identificationType,
+      number: req.number
+    }
+  } 
+}, { idempotencyKey: '<SOME_UNIQUE_VALUE>' })
+  .then((result) => console.log(result))
+  .catch((error) => console.log(error));
 ```
 ```java
 ===
