@@ -1,251 +1,334 @@
 # Gerar relatório
 
-## Como gerar o seu relatório de vendas do Marketplace?
+Até o momento, é possível gerar o relatório através da API. Para fazer isso, primeiro você deve **criar as configurações** necessárias, onde poderá definir os e-mails para os quais o relatório será enviado ou a frequência com que deseja que ele seja gerado, entre outras opções. Em seguida, você deve **criar o relatório**, que pode ser de **forma automática** (_event_) ou **manual** (_statement_).
 
-Atualmente, o relatório de vendas do Marketplace do Mercado Pago só pode ser gerado por meio da API.
-Esse processo envolve três etapas:
-   1. **Criação das configurações**: você poderá definir os e-mails para os quais o relatório será enviado ou a frequência com que deseja que ele seja gerado, entre outras opções.
-   2. **Programação do relatório**: você habilitará o envio programado do relatório de acordo com os parâmetros configurados na etapa anterior.
-   3. **Geração do relatório**: você fará a chamada para gerar o relatório de acordo com as configurações feitas anteriormente.
+> NOTA
+>
+> Importante
+>
+> Para gerar os relatórios, será necessário ter o Access Token de suas credenciais de produção. Este é uma chave privada da aplicação que sempre deve ser usada no backend para gerar pagamentos. Se você ainda não possui essas informações, siga as etapas descritas em Gerar Access Token.
 
-## Criação das configurações
+## Gerar Access Token
+As credenciais são senhas exclusivas usadas para identificar uma integração em sua conta. Elas desempenham um papel fundamental na captura segura de pagamentos em lojas online e outras aplicações. Você pode encontrá-las em **Detalhes da aplicação > Credenciais** dentro do [Painel do desenvolvedor](https://www.mercadopago.com.uy/developers/panel/app) ou em sua conta do Mercado Pago, acessando [Seu negócio > Configurações > Gestão e administração > Credenciais](https://www.mercadopago.com.uy/settings/account/credentials).
 
-O processo de criação das configurações pode variar dependendo se é a primeira vez que você gera esse relatório ou se você já o gerou anteriormente e deseja consultar e modificar as configurações anteriores. 
-Para criar as configurações do relatório de vendas do Marketplace pela primeira vez, siga os passos abaixo. Se você já o gerou anteriormente e deseja consultar e modificar as configurações anteriores, você pode pular para a próxima etapa.
+Existem dois tipos diferentes de credenciais:
+* **Credenciais de teste**: Use as credenciais de teste para testar suas integrações. Elas podem ser combinadas com cartões de crédito de teste para simular transações e verificar o funcionamento correto das integrações. Recomenda-se usar essas credenciais antes de passar para as credenciais de produção.
+* **Credenciais de produção**: Use as credenciais de produção para receber pagamentos.
 
-### Criação das configurações pela primeira vez
+Ambos os tipos de credenciais consistem em dois pares de chaves que você deve usar de acordo com o produto escolhido. Consulte a documentação específica de cada produto para obter detalhes sobre as chaves a serem usadas.
 
-Se esta é a primeira vez que você configura e gera o relatório de vendas do Marketplace, você deve enviar um POST com o seguinte cURL:
+| Tipo            | Descripción                                                                   |
+|-----------------|-------------------------------------------------------------------------------|
+| Public key      | A chave pública da aplicação é geralmente usada no frontend. Permite, por exemplo, acessar informações sobre métodos de pagamento e criptografar os dados do cartão. |
+| Access token    | Access token é a chave privada da aplicação que sempre deve ser usada no backend para gerar pagamentos. É essencial manter esta informação segura em seus servidores.    |
+
+Para gerar o relatório de vendas, você deve usar o seu **Access Token** de produção.
+
+## Criação da configuração
+Antes de gerar o relatório, você deve criar as configurações correspondentes, o que permitirá personalizar os e-mails para os quais o relatório será enviado, a frequência de geração e sua estrutura.
+
+A criação das configurações consiste em 2 etapas: primeiro, definir a [estrutura do relatório]() e, em seguida, configurar as [vias de notificação]().
+
+### Estrutura do relatório
+Criar a estrutura do relatório permite definir as características que ele terá no momento da geração. Através dos _structures_, você pode especificar o fuso horário em que deseja que o relatório seja gerado, adicionar um prefixo para identificar o arquivo gerado e incorporar a quantidade de colunas desejadas, juntamente com separadores de colunas e decimais.
+
+Para definir esta estrutura, faça a seguinte chamada à API, levando em consideração as especificações da tabela abaixo:
 
 ```curl
-curl --location 'https://api.mercadopago.com/v1/account/marketplace_sales_report/config' \
---header 'accept: application/json' \
---header 'content-type: application/json' \
---header 'Authorization: Bearer {{ACCESS_TOKEN}}' \
+curl --location --request POST 'https://api.mercadopago.com/v1/reports/marketplace_sellers_sales/structures' \
+--header 'Authorization: Bearer {{TOKEN}}' \
+--header 'Content-Type: application/json' \
 --data-raw '{
-            "file_name_prefix": "release-report-MKP-test-v1",
-            "display_timezone": "GMT-03",
-            "notification_email_list": [
-                "juanpablo.rozada@mercadolibre.com"
-            ],
-            "frequency": {
-                "hour": 15,
-                "type": "weekly",
-                "value": "tuesday"
-            },
-            "columns": [
-                {
-                    "key": "DATE"
-                },
-                {
-                    "key": "SOURCE_ID"
-                },
-                {
-                    "key": "EXTERNAL_REFERENCE"
-                },
-                {
-                    "key": "MP_FEE_AMOUNT"
-                },
-                {
-                    "key": "PAYMENT_METHOD"
-                },
-                {
-                    "key": "STORE_NAME"
-                },
-                {
-                    "key": "RECORD_TYPE"
-                },
-                {
-                    "key": "DESCRIPTION"
-                }
-            ]
-    }'
-
-```
-
-| Parâmetro                 | ¿Obrigatório ou opcional? | Descrição                                                                                                                                       |
-|---------------------------|----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| `file_name_prefix`        | Obrigatório                | Prefixo que comporá o nome do relatório ao ser baixado.                                                                                           |
-| `display_timezone`        | Opcional                   | Fuso horário que será utilizado nos horários do relatório. Se deixado em branco, será utilizado o GMT-04 como padrão.                             |
-| `notification_email_list` | Opcional                   | Frequência desejada de geração do relatório. Deve ser especificado:                                                                               |
-|                           |                            | - `hour`: hora do dia em que o relatório será gerado.                                                                                             |
-|                           |                            | - `type`: frequência de geração (mensal para mensal, semanal para semanal, diária para diária).                                                  |
-|                           |                            | - `value`: dia da semana em que o relatório será gerado.                                                                                          |
-|                           |                            | **Atenção**: este parâmetro configura apenas a frequência. Para efetivamente programar o envio do relatório, siga para a etapa "Programação do relatório". |
-| `columns`                 | Obrigatório                | Dados que deseja incluir no relatório. Para detalhes sobre cada um, consulte Usos do relatório.                                                     |
-
-### Consulta e modificação de configurações anteriores
-
-Se você já gerou um relatório de vendas do Marketplace anteriormente, pode consultar as configurações definidas e modificá-las, se desejar.
-
-Para consultar as configurações definidas anteriormente, envie um GET com o seguinte cURL:
-
-```curl
-curl --location 'https://api.mercadopago.com/v1/account/marketplace_sales_report/config' \
---header 'accept: application/json' \
---header 'content-type: application/json' \
---header 'Authorization: Bearer {{ACCESS_TOKEN}}'
-```
-
-Para modificar as configurações estabelecidas em relatórios de vendas anteriores do Marketplace, envie uma solicitação PUT usando o seguinte cURL:
-
-```curl
-curl --location 'https://api.mercadopago.com/v1/account/marketplace_sales_report/config' \
---header 'accept: application/json' \
---header 'content-type: application/json' \
---header 'Authorization: Bearer {{ACCESS_TOKEN}}' \
---data-raw '{
-            "file_name_prefix": "release-report-MKP-test-v1",
-            "display_timezone": "GMT-03",
-            "notification_email_list": [
-                "exemplo@exemplo.com"
-            ],
-            "frequency": {
-                "hour": 15,
-                "type": "weekly",
-                "value": "tuesday"
-            },
-            "columns": [
-                {
-                    "key": "DATE"
-                },
-                {
-                    "key": "SOURCE_ID"
-                },
-                {
-                    "key": "EXTERNAL_REFERENCE"
-                },
-                {
-                    "key": "MP_FEE_AMOUNT"
-                },
-                {
-                    "key": "PAYMENT_METHOD"
-                },
-                {
-                    "key": "STORE_NAME"
-                },
-                {
-                    "key": "RECORD_TYPE"
-                },
-                {
-                    "key": "DESCRIPTION"
-                }
-            ]
-    }'
-```
-
-## Agendamento do relatório 
-
-Se você escolheu a frequência para receber o relatório de vendas do Marketplace ao configurá-lo, também será necessário ativar o envio programado. Você pode fazer isso usando o seguinte cURL:
-
-```curl
-curl --location --request POST 'https://api.mercadopago.com/v1/account/marketplace_sales_report/schedule' \
---header 'accept: application/json' \
---header 'content-type: application/json' \
---header 'Authorization: Bearer {{ACCESS_TOKEN}}'
-```
-
-> Este cURL apenas habilita o envio programado. Para configurar a frequência com a qual deseja que esse envio ocorra, você deve fazê-lo durante a criação das configurações.
-
-Também é possível desfazer o agendamento do envio do relatório. Para isso, faça uma chamada usando o seguinte cURL:
-
-```curl
-curl --location --request DELETE 'https://api.mercadopago.com/v1/account/marketplace_sales_report/schedule' \
---header 'accept: application/json' \
---header 'content-type: application/json' \
---header 'Authorization: Bearer {{ACCESS_TOKEN}}'
-```
-
-## Geração do relatório
-
-Uma vez que você tenha criado as configurações e agendado o envio do relatório de vendas do Marketplace, você poderá gerá-lo e obtê-lo automaticamente por e-mail ou manualmente através de um arquivo de texto. Os diagramas abaixo ilustram cada processo.
-
-![Automática](/images/manage-account/reports/marketplace-sales/image3.png)
-![Manual](/images/manage-account/reports/marketplace-sales/image4.png)
-
-### Geração para download automático
-
-Para gerar o relatório e fazer o download automaticamente por e-mail, você deve usar o seguinte cURL:
-
-```curl
-curl --location 'https://api.mercadopago.com/v1/account/marketplace_sales_report' \
---header 'accept: application/json' \
---header 'content-type: application/json' \
---header 'Authorization: Bearer {{ACCESS_TOKEN}}' \
---data '{
-    "marketplaces": ["MP-MKT-3362814541380534"],
-    "site": "MLB",
-    "begin_date": "2023-06-01T00:00:00Z",
-    "end_date": "2023-06-10T00:00:00Z"
+    "display_timezone": "GMT-03",
+    "name": "Structure de mi marketplace",
+    "file_format": {
+        "prefix": "marketplace",
+        "column_separator": ";",
+        "decimal_separator": "."
+    },
+    "columns": [
+        {
+            "key": "COLLECTOR",
+            "alias": ""
+        },
+        {
+            "key": "COLLECTOR_NICKNAME",
+            "alias": ""
+        },
+        {
+            "key": "PAYMENT",
+            "alias": ""
+        },
+        {
+            "key": "STATUS_DESCRIPTION",
+            "alias": ""
+        },
+        {
+            "key": "STATUS_DETAIL",
+            "alias": ""
+        },
+        {
+            "key": "PURCHASE_ORDER",
+            "alias": ""
+        },
+        {
+            "key": "PAYMENT_METHOD_TYPE",
+            "alias": ""
+        },
+        {
+            "key": "TRANSACTION_AMOUNT",
+            "alias": ""
+        },
+        {
+            "key": "DATE_CREATED",
+            "alias": ""
+        },
+        {
+            "key": "DATE_APPROVED",
+            "alias": ""
+        },
+        {
+            "key": "MARKETPLACE_FEE_AMOUNT",
+            "alias": ""
+        },
+        {
+            "key": "MERCADOPAGO_FEE_AMOUNT",
+            "alias": ""
+        },
+        {
+            "key": "TOTAL_PAID_AMOUNT",
+            "alias": ""
+        },
+        {
+            "key": "NET_RECEIVED_AMOUNT",
+            "alias": ""
+        }
+    ]
 }'
 ```
 
-A geração do relatório é um processo assíncrono. Por esse motivo, você receberá o e-mail que permitirá o download do relatório após alguns minutos.
+#### Response
+```json
+{
+    "id": {{structure_id}},
+    "version": 0,
+    "date_created": null,
+    "date_last_updated": null,
+    "name": null,
+    "file_format": null,
+    "columns": null,
+    "file_config": null,
+    "report_translation": null,
+    "include_withdraw": null,
+    "refund_detailed": null,
+    "show_fee_prevision": null,
+    "coupon_detailed": null,
+    "show_chargeback_cancel": null
+}
+``````
 
-![Automática](/images/manage-account/reports/marketplace-sales/image1.png)
 
-### Geração para download manual
+| Campo                      | Descrição                                                                                          |
+|----------------------------|----------------------------------------------------------------------------------------------------|
+| `display_timezone` (opcional)  | Este campo determina a data e a hora que são exibidas nos relatórios. Se você não configurar este campo com um fuso horário, o sistema usará o valor padrão GMT-04. Se você escolher um fuso horário que utiliza horário de verão, será necessário fazer o ajuste manual quando houver mudança de horário. |
+| `columns` (obrigatório)       | Campo com os detalhes das colunas a serem incluídas em seu relatório. Encontre todos os possíveis valores na seção [Glossário](). |
+| `name` (obrigatório)          | Campo para atribuir um nome à **estrutura**. |
+| `file_format.prefix` (obrigatório) | Prefixo que compõe o nome do relatório uma vez gerado. |
+| `file_column_separator` (obrigatório) | Caractere que você pode usar no arquivo .csv quando não deseja que o separador seja um ponto e vírgula. |
 
-Para gerar o relatório e fazer o download manualmente, você deve usar o seguinte cURL:
+### Vias de notificação
+Após criar a estrutura do relatório, você precisará definir os métodos pelos quais deseja receber as notificações. Atualmente, você pode recebê-las por e-mail ou por _SFTP_.
+Para fazer isso, você deve criar um _notifier_, conforme mostrado abaixo. Observe as especificações de cada campo, detalhadas na tabela a seguir.
 
+#### Curl email
 ```curl
-curl --location 'https://api.mercadopago.com/v1/account/marketplace_sales_report/{{REPORT_FILE_NAME}}' \
---header 'Authorization: Bearer {{APP_USER_TOKEN}}'
-```
-
-O relatório será retornado pela API no formato de texto como resultado.
-
-Aqui está uma coleção do Postman que você pode utilizar como exemplo: arquivo
-
-## Consultar os relatórios configurados
-
-Quando desejar consultar os relatórios que você configurou, você pode fazer isso com o seguinte cURL:
-
-```curl
-curl --location 'https://api.mercadopago.com/v1/account/marketplace_sales_report'/list?access_token={{USER_APP_TOKEN}}'
-```
-
-A chamada retornará uma resposta semelhante à seguinte:
-
-```curl
-[
-    {
-        "id": 34326722,
-        "account_id": 1214966328,
-        "begin_date": "2023-04-11T19:00:00Z",
-        "created_from": "schedule",
-        "currency_id": "BRL",
-        "date_created": "2023-04-18T15:00:03.000-04:00",
-        "download_date": null,
-        "end_date": "2023-04-18T18:59:59Z",
-        "file_name": "reserve-release-report-4-USER_ID-2023-04-18-160003.csv",
-        "internal_management": "{\"notify\": true, \"is_visible\": true, \"use_exact_time\": false}",
-        "is_visible": true,
-        "metadata": "{\"user_tags\": [\"test_user\", \"normal\"], \"generation_model\": \"reserve\"}",
-        "origin": "date_range",
-        "status": "enabled",
-        "subtype": "release",
-        "user_id": 1291581847
+curl --location --request POST 'https://api.mercadopago.com/v1/reports/notifiers' \
+--header 'Authorization: Bearer {{TOKEN}}' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "type": "email",
+    "data": {
+        "recipients": ["test@mercadolibre.com"]
     },
-    {
-        "id": 34203258,
-        "account_id": 1214966328,
-        "begin_date": "2023-02-28T03:00:00Z",
-        "created_from": "manual",
-        "currency_id": "BRL",
-        "date_created": "2023-04-13T08:04:50.000-04:00",
-        "download_date": null,
-        "end_date": "2023-03-12T02:59:59Z",
-        "file_name": "reserve-release-report-4-USER_ID-2023-04-13-090450.csv",
-        "internal_management": "{\"notify\": true, \"is_visible\": true, \"use_exact_time\": false}",
-        "is_visible": true,
-        "metadata": "{\"user_tags\": [\"test_user\", \"normal\"], \"generation_model\": \"reserve\", \"last_movement_id\": 164882712542}",
-        "origin": "date_range",
-        "status": "enabled",
-        "subtype": "release",
-        "user_id": 1291581847
-    }
-]
+    "description": "test notifier email"
+}'
 ```
 
-Para distinguir cada relatório, você pode usar os parâmetros `id` e `file_name`, que indicarão o número de identificação de cada um e o nome configurado para o download do arquivo, respectivamente.
+#### Resposta
+```json
+{
+    "id": {{notifier_id}},
+    "type": "email",
+    "data": {
+        "recipients": [
+            "test@mercadolibre.com"
+        ]
+    },
+    "description": null,
+    "version": 0,
+    "status": "ACTIVE",
+    "is_pii_data": true
+}
+``````
+
+#### Curl email
+```curl
+curl --location --request POST 'https://api.mercadopago.com/v1/reports/notifiers?type=ftp' \
+--header 'Authorization: Bearer {{TOKEN}}' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "type": "ftp",
+    "data": {
+        "ip": "test.files.com",
+        "port": 22,
+        "password": "test",
+        "protocol": "SFTP",
+        "username": "test@mercadolibre.com",
+        "remote_dir": "/"
+    },
+    "description": "test notifier sftp"
+}'
+```
+
+#### Resposta
+```json
+{
+    "id": {{notifier_id}},
+    "type": "ftp",
+    "data": {
+        "protocol": "SFTP",
+        "ip": "test.files.com",
+        "username": "test@mercadolibre.com",
+        "password": "test",
+        "remote_dir": "/",
+        "port": 22
+    },
+    "description": null,
+    "version": 0,
+    "status": "ACTIVE",
+    "is_pii_data": false
+}
+```
+
+| Campo             | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `type` (obrigatório) | Define o tipo de notificação a ser configurado. Valores possíveis: email; ftp.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| `data` (obrigatório) | Contém as informações do destinatário do notifier. Dependendo do valor indicado em `type`, pode conter os seguintes objetos:
+                       - **email:** Contém o campo `recipients`, onde você pode indicar os e-mails para os quais o relatório será enviado. Pode ser mais de um, se desejar.
+                       - **ftp:** Contém os seguintes campos:
+                         - `ip`: URL do servidor FTP
+                         - `port`: Porta do servidor FTP
+                         - `password`: Senha de acesso ao servidor FTP
+                         - `protocol`: `SFTP`
+                         - `username`: Nome de usuário para acessar o servidor FTP
+                         - `remote_dir`: Diretório remoto de destino no servidor FTP. |
+
+
+## Criação dos relatórios
+Após criar as configurações necessárias, você precisará criar o relatório. Para isso, tem duas opções:
+ * **Agendar um evento**: Isso permitirá automatizar a criação de relatórios, definindo sua periodicidade.
+ * **Gerar um evento manualmente**: Você poderá criar um relatório sob demanda, definindo o período que deseja abranger.
+
+### Agendar um relatório (Events)
+O agendamento de um evento permite que você crie relatórios automaticamente, definindo sua periodicidade.
+Para fazer isso, você deve criar um _event_, conforme mostrado abaixo. Além disso, tenha à mão as configurações que você criou anteriormente e as informações da tabela abaixo para poder agendar a criação do relatório com sucesso.
+
+```curl
+curl --location --request POST 'https://api.mercadopago.com/v1/reports/marketplace_sellers_sales/events' \
+--header 'Authorization: Bearer {{TOKEN}}' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "type": "frequency",
+    "data": {
+        "period": "daily",
+        "value": 0,
+        "hour": 0
+    },
+    "description": "event test",
+    "structure_id": {{structure_id}},
+    "notifiers": [      
+       {{notifier_id}}
+    ],
+    "status": "ACTIVE",
+    "version": 0
+}'
+```
+
+#### Reposta
+```json
+{
+    "id": {{event_id}},
+    "type": "frequency",
+    "data": {
+        "period": "daily",
+        "value": 0,
+        "hour": 20,
+        "skip_non_working_days": false
+    },
+    "description": "event test",
+    "structure_id": {{structure_id}},
+    "notifiers": [],
+    "status": "ACTIVE",
+    "version": 0,
+    "user_id": {{user_id}}
+}
+```
+
+Você pode ver a descrição dos campos presentes nos _curls_ na tabela abaixo.
+
+| Campo            | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `type` (obrigatório) | Este campo define o tipo de evento. O único valor possível é `frequência`.
+| `data` (obrigatório) | Este campo contém a frequência com que o relatório será gerado. Pode ser diariamente (`period=daily`), semanalmente (`period=weekly`) ou mensalmente (`period=monthly`).
+                      Dentro de `value`, você pode definir qual dia da semana deseja que o relatório seja gerado (se `period=weekly`), atribuindo um número de 1 a 7, ou qual dia do mês (se `period=monthly`), atribuindo um número de 1 a 31.
+                      Além disso, no campo _hour_, você pode programar a hora do dia em que o relatório será gerado. |
+| `description` (obrigatório) | Campo para atribuir um nome ao evento. Máximo de 50 caracteres.
+| `structure_id` (obrigatório) | Campo para atribuir a estrutura com a qual o relatório será gerado. Você deve preenchê-lo com o valor obtido para este mesmo campo na resposta à criação da estrutura.
+| `notifier_id` (obrigatório) | Campo para atribuir a forma pela qual deseja receber as notificações. Você deve preenchê-lo com a identificação obtida na resposta à criação das notificações.
+
+### Gerar relatório manualmente (Statements)
+A geração manual de um relatório permite que você crie um relatório sob demanda, definindo o período que deseja abranger.
+
+Para realizar essa criação manual, você precisará criar uma _statement_, como mostrado abaixo. Além disso, tenha em mãos as configurações que você criou anteriormente e as informações da tabela abaixo para poder gerar um relatório com sucesso.
+
+```curl
+curl --location --request POST 'https://api.mercadopago.com/v1/reports/marketplace_sellers_sales/statements' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer {{TOKEN}}' \
+--data-raw '{
+    "user_description": "",
+    "created_by": "automatic",
+    "origin": {
+        "type": "date_range",
+        "data": {
+            "date_start": "2023-04-01T03:00:00Z",
+    		"date_end": "2023-04-02T02:27:44Z"
+        }
+    },
+    "structure_id": {{structure_id}},
+    "notifiers_id": [{{notifier_id}}]
+}'
+```
+
+#### Resposta
+```json
+{
+    "status_code": 201,
+    "request_id": {{statement_id}},
+    "message": ""
+}
+
+```
+
+Você pode ver a descrição dos campos presentes nos _Curls_ na tabela abaixo.
+
+| Campo                | Descrição                                                                                                                                                                        |
+|----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| user_description (obrigatório) | Descrição desejada. Extensão máxima: 50 caracteres.                                                                                                                                 |
+| created_by (obrigatório)       | Criador da solicitação. No momento, só pode receber o valor _automatic_.                                                                                                              |
+| Origin (obrigatório)          | Este campo contém a informação do período que deseja incluir no relatório.                                                                                                           |
+                           - `type`: o único valor possível é `date_range`, já que você deverá indicar o período a ser consultado.                                                                           |
+                           - `date_start`: indica o início do período que deseja consultar no formato: **yyyy-MM-dd HH:mm:ss.SSS**.                                                                                  
+                           - `date_end`: indica o fim do período que deseja consultar no formato: **yyyy-MM-dd HH:mm:ss.SSS**.                                                                                       |
+| structure_id (obrigatório)    | Campo para atribuir a estrutura com a qual o relatório será gerado. Você deverá preenchê-lo com o valor obtido para este mesmo campo na resposta à criação da estrutura.     |
+| notifiers_id (obrigatório)    | Campo para atribuir a forma como deseja receber as notificações. Você deverá preenchê-lo com a identificação obtida na resposta à criação de notificações.                 |
