@@ -22,6 +22,7 @@ Ambos tipos de credenciales constan de dos pares de claves que debes utilizar se
 | Access token | Clave privada de la aplicación que siempre se debe utilizar en el backend para generar pagos. Es esencial mantener esta información segura en tus servidores.       |
 
 Para poder generar el reporte de ventas, deberás utilizar tu **Access Token** productivo.
+
 ![Generar Access Token](/images/manage-account/reports/marketplace-sales/image1.png)
 
 ## Creación de la configuración
@@ -139,7 +140,7 @@ curl --location --request POST 'https://api.mercadopago.com/v1/reports/marketpla
 Una vez creada la estructura del reporte, deberás definir las vías por las que quieres recibir las notificaciones. Actualmente, puedes recibirlas vía email o vía SFTP.
 Para ello, deberás crear un notifier, tal como se muestra a continuación. Ten en cuenta las especificaciones de cada campo, detalladas en la tabla debajo.
 
-#### Curl email
+#### Email
 ```curl
 curl --location --request POST 'https://api.mercadopago.com/v1/reports/notifiers' \
 --header 'Authorization: Bearer {{TOKEN}}' \
@@ -170,7 +171,7 @@ curl --location --request POST 'https://api.mercadopago.com/v1/reports/notifiers
 }
 ```
 
-#### Curl SFTP
+#### SFTP
 ```curl
 curl --location --request POST 'https://api.mercadopago.com/v1/reports/notifiers?type=ftp' \
 --header 'Authorization: Bearer {{TOKEN}}' \
