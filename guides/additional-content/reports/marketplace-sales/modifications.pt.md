@@ -9,7 +9,7 @@ Se, após consultar as configurações de estruturas, notificações ou eventos,
 > Tenha em mente que **não é possível** modificar um relatório gerado manualmente (_statements_).
 
 ### PUT Structures
-```
+```curl
 curl --location --request PUT 'https://api.mercadopago.com/v1/reports/marketplace_sellers_sales/structures/{{structure_id}}' \
 --header 'Authorization: Bearer {{TOKEN}}' \
 --header 'Content-Type: application/json' \

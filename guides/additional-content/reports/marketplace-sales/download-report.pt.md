@@ -4,11 +4,11 @@
 >
 > Importante
 >
-> O download de relatórios só está disponível para _statements_; ou seja, relatórios gerados manualmente. Atualmente, o download de relatórios gerados automaticamente (_events_) não está disponível.
+> O download de relatórios só está disponível para `statements`; ou seja, relatórios gerados manualmente. Atualmente, o download de relatórios gerados automaticamente (_events_) não está disponível.
 
 Após gerar o relatório manualmente, você poderá fazer o download dele. Para isso, faça uma chamada à API conforme mostrado abaixo, substituindo _statement_id_ pelo valor obtido na resposta à geração do relatório. Além disso, lembre-se de indicar o formato no qual deseja realizar o download, conforme indicado na tabela abaixo.
 
-```
+```curl
 curl --location --request GET 'https://api.mercadopago.com/v1/reports/marketplace_sellers_sales/statements/{{statement_id}}/download?format=csv' \
 --header 'Authorization: Bearer {{TOKEN}}'
 ```

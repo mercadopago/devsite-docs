@@ -2,7 +2,7 @@
 
 Até o momento, é possível gerar o relatório através da API. Para fazer isso, primeiro você deve **criar as configurações** necessárias, onde poderá definir os e-mails para os quais o relatório será enviado ou a frequência com que deseja que ele seja gerado, entre outras opções. Em seguida, você deve **criar o relatório**, que pode ser de **forma automática** (_event_) ou **manual** (_statement_).
 
-> NOTA
+> NOTE
 >
 > Importante
 >
@@ -170,7 +170,7 @@ curl --location --request POST 'https://api.mercadopago.com/v1/reports/notifiers
 }
 ```
 
-#### Curl email
+#### Curl SFTP
 ```curl
 curl --location --request POST 'https://api.mercadopago.com/v1/reports/notifiers?type=ftp' \
 --header 'Authorization: Bearer {{TOKEN}}' \
@@ -209,26 +209,17 @@ curl --location --request POST 'https://api.mercadopago.com/v1/reports/notifiers
 }
 ```
 
-| Campo             | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `type` (obrigatório) | Define o tipo de notificação a ser configurado. Valores possíveis: email; ftp.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| `data` (obrigatório) | Contém as informações do destinatário do notifier. Dependendo do valor indicado em `type`, pode conter os seguintes objetos:
-                       - **email:** Contém o campo `recipients`, onde você pode indicar os e-mails para os quais o relatório será enviado. Pode ser mais de um, se desejar.
-                       - **ftp:** Contém os seguintes campos:
-                         - `ip`: URL do servidor FTP
-                         - `port`: Porta do servidor FTP
-                         - `password`: Senha de acesso ao servidor FTP
-                         - `protocol`: `SFTP`
-                         - `username`: Nome de usuário para acessar o servidor FTP
-                         - `remote_dir`: Diretório remoto de destino no servidor FTP. |
-
+| Campo              | Descrição                                                                                                                    |
+|-------------------|---------------------------------------------------------------------------------------------------------------------------------|
+| `type` (obrigatório) | Define o tipo de notificação a ser configurado. Valores possíveis: email; ftp.                                      |
+| `data` (obrigatório) | Contém as informações do destinatário do notifier. Dependendo do valor indicado em `type`, pode conter os seguintes objetos: <br>- **email:** Contém o campo `recipients`, onde você pode indicar os e-mails para os quais o relatório será enviado. Pode ser mais de um, se desejar. <br>- **ftp:** Contém os seguintes campos: <br>   - `ip`: URL do servidor FTP <br>   - `port`: Porta do servidor FTP <br>   - `password`: Senha de acesso ao servidor FTP <br>   - `protocolo`: `SFTP` <br>   - `username`: Nome de usuário para acessar o servidor FTP <br>   - `remote_dir`: Diretório remoto de destino no servidor FTP.   |
 
 ## Criação dos relatórios
 Após criar as configurações necessárias, você precisará criar o relatório. Para isso, tem duas opções:
  * **Agendar um evento**: Isso permitirá automatizar a criação de relatórios, definindo sua periodicidade.
  * **Gerar um evento manualmente**: Você poderá criar um relatório sob demanda, definindo o período que deseja abranger.
 
-### Agendar um relatório (_Events_)
+### Agendar um relatório 
 O agendamento de um evento permite que você crie relatórios automaticamente, definindo sua periodicidade.
 Para fazer isso, você deve criar um _event_, conforme mostrado abaixo. Além disso, tenha à mão as configurações que você criou anteriormente e as informações da tabela abaixo para poder agendar a criação do relatório com sucesso.
 
@@ -275,17 +266,15 @@ curl --location --request POST 'https://api.mercadopago.com/v1/reports/marketpla
 
 Você pode ver a descrição dos campos presentes nos _curls_ na tabela abaixo.
 
-| Campo            | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `type` (obrigatório) | Este campo define o tipo de evento. O único valor possível é `frequência`.
-| `data` (obrigatório) | Este campo contém a frequência com que o relatório será gerado. Pode ser diariamente (`period=daily`), semanalmente (`period=weekly`) ou mensalmente (`period=monthly`).
-                      Dentro de `value`, você pode definir qual dia da semana deseja que o relatório seja gerado (se `period=weekly`), atribuindo um número de 1 a 7, ou qual dia do mês (se `period=monthly`), atribuindo um número de 1 a 31.
-                      Além disso, no campo _hour_, você pode programar a hora do dia em que o relatório será gerado. |
-| `description` (obrigatório) | Campo para atribuir um nome ao evento. Máximo de 50 caracteres.
-| `structure_id` (obrigatório) | Campo para atribuir a estrutura com a qual o relatório será gerado. Você deve preenchê-lo com o valor obtido para este mesmo campo na resposta à criação da estrutura.
-| `notifier_id` (obrigatório) | Campo para atribuir a forma pela qual deseja receber as notificações. Você deve preenchê-lo com a identificação obtida na resposta à criação das notificações.
+| Campo                    | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+|--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `type` (obrigatório)     | Este campo define o tipo de evento. O único valor possível é `frequência`.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| `data` (obrigatório)     | Este campo contém a frequência com que o relatório será gerado. Pode ser diariamente (`period=daily`), semanalmente (`period=weekly`) ou mensalmente (`period=monthly`).<br>Dentro de `value`, você pode definir qual dia da semana deseja que o relatório seja gerado (se `period=weekly`), atribuindo um número de 1 a 7, ou qual dia do mês (se `period=monthly`), atribuindo um número de 1 a 31.<br>Além disso, no campo _hour_, você pode programar a hora do dia em que o relatório será gerado. |
+| `description` (obrigatório) | Campo para atribuir um nome ao evento. Máximo de 50 caracteres.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| `structure_id` (obrigatório) | Campo para atribuir a estrutura com a qual o relatório será gerado. Você deve preenchê-lo com o valor obtido para este mesmo campo na resposta à criação da estrutura.                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| `notifier_id` (obrigatório)  | Campo para atribuir a forma pela qual deseja receber as notificações. Você deve preenchê-lo com a identificação obtida na resposta à criação das notificações.                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 
-### Gerar relatório manualmente (_Statements_)
+### Gerar relatório manualmente 
 A geração manual de um relatório permite que você crie um relatório sob demanda, definindo o período que deseja abranger.
 
 Para realizar essa criação manual, você precisará criar uma _statement_, como mostrado abaixo. Além disso, tenha em mãos as configurações que você criou anteriormente e as informações da tabela abaixo para poder gerar um relatório com sucesso.
@@ -319,15 +308,12 @@ curl --location --request POST 'https://api.mercadopago.com/v1/reports/marketpla
 
 ```
 
-Você pode ver a descrição dos campos presentes nos _Curls_ na tabela abaixo.
+Você pode ver a descrição dos campos presentes nos _curls_ na tabela abaixo.
 
 | Campo                | Descrição                                                                                                                                                                        |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | user_description (obrigatório) | Descrição desejada. Extensão máxima: 50 caracteres.                                                                                                                                 |
 | created_by (obrigatório)       | Criador da solicitação. No momento, só pode receber o valor _automatic_.                                                                                                              |
-| Origin (obrigatório)          | Este campo contém a informação do período que deseja incluir no relatório.                                                                                                           |
-                           - `type`: o único valor possível é `date_range`, já que você deverá indicar o período a ser consultado.                                                                           |
-                           - `date_start`: indica o início do período que deseja consultar no formato: **yyyy-MM-dd HH:mm:ss.SSS**.                                                                                  
-                           - `date_end`: indica o fim do período que deseja consultar no formato: **yyyy-MM-dd HH:mm:ss.SSS**.                                                                                       |
+| Origin (obrigatório)          | Este campo contém a informação do período que deseja incluir no relatório.<br>- `type`: o único valor possível é `date_range`, já que você deverá indicar o período a ser consultado.<br>- `date_start`: indica o início do período que deseja consultar no formato: **yyyy-MM-dd HH:mm:ss.SSS**.<br>- `date_end`: indica o fim do período que deseja consultar no formato: **yyyy-MM-dd HH:mm:ss.SSS**.                       |
 | structure_id (obrigatório)    | Campo para atribuir a estrutura com a qual o relatório será gerado. Você deverá preenchê-lo com o valor obtido para este mesmo campo na resposta à criação da estrutura.     |
 | notifiers_id (obrigatório)    | Campo para atribuir a forma como deseja receber as notificações. Você deverá preenchê-lo com a identificação obtida na resposta à criação de notificações.                 |
