@@ -30,7 +30,6 @@ Para ativar este tipo de pagamento, siga os passos abaixo.
 > No momento não é possível configurar pagamentos parcelados através do Checkout Transparente.
 
 ------------
-
 ----[mla, mlu, mlc, mco, mpe, mlm]----
 ## Pagamentos com Checkout API
 
@@ -50,7 +49,4 @@ Para ativar este tipo de pagamento, siga os passos abaixo.
 
 ------------
 
-<p>&nbsp;</p>
-
 ![Activating Checkout API](/images/wix/activacion-choapi.gif)
-<p>&nbsp;</p>

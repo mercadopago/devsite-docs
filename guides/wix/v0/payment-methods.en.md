@@ -30,7 +30,6 @@ To activate this type of payment, do the following.
 > At the moment, it is not possible to configure payments in installments through the Transparent Checkout.
 
 ------------
-
 ----[mla, mlu, mlc, mco, mpe, mlm]----
 ## Payments with Checkout API
 
@@ -50,7 +49,4 @@ To activate this type of payment, do the following.
 
 ------------
 
-<p>&nbsp;</p>
-
 ![Activating Checkout API](/images/wix/activacion-choapi.gif)
-<p>&nbsp;</p>

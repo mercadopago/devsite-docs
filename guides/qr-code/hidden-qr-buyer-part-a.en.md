@@ -1,14 +1,4 @@
----
-sites_supported:
-  - mla
-  - mpe
-  - mco
-  - mlu
-  - mlm
-  - mlc
----
-
-# Payments with QR Buyer model
+# Payments with QR buyer model
 
 > WARNING
 >
@@ -37,4 +27,6 @@ The main characteristics are:
 - Allows offline payments (without internet connection) to the payer.
 - By submitting the billing API, the payment validation takes place synchronously.
 
----
+# Integration
+
+To integrate this billing model, access the documentation on [Integrate the QR Buyer model](/developers/en/docs/qr-code/qr-buyer/qr-buyer-part-b)

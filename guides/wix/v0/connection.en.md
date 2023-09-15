@@ -17,7 +17,4 @@ To finish configuring Mercado Pago as a means of payment, on the plugin configur
 
 Done! Your integration is set up and you are already offering Mercado Pago as a payment method in your store.
 
-<p>&nbsp;</p>
-
 ![Setting active in Wix](/images/wix/conectar-wix.gif)
-<p>&nbsp;</p>
