@@ -2,7 +2,7 @@
 
 La generación del reporte, por ahora, sólo puede hacerse vía API. Para ello deberás, primero, realizar la **creación de las configuraciones** necesarias, donde podrás definir los emails a los que se enviará el reporte o la frecuencia con la que quieres que se genere, entre otras opciones. Luego, deberás **crear el reporte**, que podrá ser de **forma automática** (_event_) o **manual** (_statement_).
 
-> NOTE
+> WARNING
 >
 > Importante
 >

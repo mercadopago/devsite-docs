@@ -8,7 +8,7 @@ curl --location --request GET 'https://api.mercadopago.com/v1/reports/marketplac
 --header 'Authorization: Bearer {{TOKEN}}'
 ```
 
-### Respuesta
+#### Respuesta
 ```json
 [
     {
@@ -98,7 +98,7 @@ curl --location --request GET 'https://api.mercadopago.com/v1/reports/notifiers'
 --header 'Authorization: Bearer {{TOKEN}}'
 ```
 
-### Respuesta
+#### Respuesta
 ```json
 [
     {
@@ -126,7 +126,7 @@ curl --location --request GET 'https://api.mercadopago.com/v1/reports/marketplac
 --header 'Authorization: Bearer {{TOKEN}}'
 ```
 
-### Respuesta
+#### Respuesta
 ```json
 [
     {
@@ -159,7 +159,7 @@ curl --location --request GET 'https://api.mercadopago.com/v1/reports/marketplac
 --header 'Authorization: Bearer {{TOKEN}}'
 ```
 
-## Respuesta
+#### Respuesta
 ```json
 {
     "id": {{statement_id}},

@@ -83,7 +83,7 @@ curl --location --request PUT 'https://api.mercadopago.com/v1/reports/marketplac
 }'
 ```
 
-### Respuesta
+#### Respuesta
 ```json
 {
     "id": {{structure_id}},
@@ -183,8 +183,10 @@ curl --location --request PUT 'https://api.mercadopago.com/v1/reports/marketplac
     "status": "ACTIVE",
     "version": 0
 }'
-### Respuesta
+```
 
+#### Respuesta
+```json
 {
     "id": {{event_id}},
     "type": "frequency",
