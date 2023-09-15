@@ -672,11 +672,11 @@ paths:
         eng: Create an Advanced Payment
         spa: Crear un Advanced Payment
         por: Criar um Advanced Payment
-      description: Advanced Payments are particular payments for wallet connect where the integrator obtains a "payer token" from the payer when it performs the agreement flow. This “payer token” is used by the integrator to make payment from the payer's wallet
+      description: Advanced Payments are specific payments for Wallet Connect. During the agreement process, the integrator receives a "payer token" from the payer. This token allows the integrator to execute the payment directly from the payer's wallet. If you wish to apply discounts, it is necessary to first create a discount promise before using them
       x-description-i18n:
-        eng: Advanced Payments are particular payments for wallet connect where the integrator obtains a "payer token" from the payer when it performs the agreement flow. This “payer token” is used by the integrator to make payment from the payer's wallet
-        spa: Los Advanced Payments son pagos particulares para Wallet Connect donde el integrador obtiene un "payer token" del pagador cuando realiza el flujo del agreement. Este "payer token" es utilizado por el integrador para realizar el pago desde la billetera del pagador
-        por: Advanced Payments são pagamentos específicos para Wallet Connect nos quais o integrador obtém um "payer token" do pagador quando realiza o fluxo do agreement. Este “payer token” é usado pelo integrador para fazer o pagamento a partir da carteira do pagador
+        eng: Advanced Payments are specific payments for Wallet Connect. During the agreement process, the integrator receives a "payer token" from the payer. This token allows the integrator to execute the payment directly from the payer's wallet. If you wish to apply discounts, it is necessary to first create a discount promise before using them
+        spa: Los Advanced Payments son pagos específicos para Wallet Connect. Durante el proceso del agreement, el integrador recibe un "payer token" del pagador. Este token permite que el integrador realice el pago directamente desde la billetera del pagador. Si desea aplicar descuentos, primero es necesario crear una promesa de descuento antes de utilizarlos
+        por: Advanced Payments são pagamentos específicos para Wallet Connect. Durante o processo de agreement, o integrador recebe um "payer token" do pagador. Esse token permite que o integrador efetue o pagamento diretamente da carteira do pagador. Se desejar aplicar descontos, é necessário criar uma promessa de desconto antes de utilizá-los
       requestBody:
         description: Here are the fields needed to complete a request for create an Advanced Payments.
         x-description-i18n:
@@ -728,23 +728,95 @@ paths:
                         spa: Una string para permitir la identificación del pago en caso de un problema.
                         por: Uma string que permite identificar um pagamento caso haja algum problema.
                       example: Payment_seller_123
+                    discount:
+                      required: false
+                      type: object
+                      description: Information of the discount to be used in payment.
+                      x-description-i18n:
+                        eng: Information of the discount to be used in payment.
+                        spa: informacion del descuento a utilizar en el pago.
+                        por: Informação do desconto a ser utilizado no pagamento.
+                      properties:
+                        amount: 
+                          required: true
+                          type: number
+                          description: Discounted amount from the total payment amount.
+                          x-description-i18n:
+                            eng: Discounted amount from the total payment amount
+                            spa: Monto descontado del monto total del pago.
+                            por: Valor descontado do valor total do pagamento.
+                          example: 10
+                        description:
+                          required: true
+                          type: string
+                          description: Description of discount to be aplied.
+                          x-description-i18n:
+                            eng: Description of discount to be aplied.
+                            spa: Descripcion del descuento a aplicar.
+                            por: Descrição do desconto a ser aplicado.
+                          example: DESC20
+                        code: 
+                          required: false
+                          type: number
+                          description: Unique ID that identifies coupon used for discount. This field must be only sent when the user fulfilled the coupon field in the seller flow.
+                          x-description-i18n:
+                            eng: Unique ID that identifies coupon used for discount. This field must be only sent when the user fulfilled the coupon field in the seller flow.
+                            spa: ID único que identifica el cupón utilizado para el descuento. Este campo solo debe ser enviado cuando el usuario haya completado el campo del cupón en el proceso de compra del vendedor.
+                            por: ID único que identifica o cupom usado para o desconto. Este campo deve ser enviado apenas quando o usuário preencher o campo de cupom no fluxo do vendedor.
+                          example: WALLET10
+                        detail:
+                            required: true
+                            type: object
+                            description: Discount information details.
+                            x-description-i18n:
+                              eng: Discount information details.
+                              spa: Informacion detallada del descuento.
+                              por: Informação detalhada sobre o desconto.
+                            properties:
+                              cap: 
+                                required: true
+                                type: number
+                                description: Discount cap. This parameter is used to limit the maximum amount to be deducted from the payment.
+                                x-description-i18n:
+                                  eng: Discount cap. This parameter is used to limit the maximum amount to be deducted from the payment.
+                                  spa: Límite de descuento. Este parámetro é usado para limitar o valor máximo a ser deduzido do pagamento.
+                                  por: Limite do desconto. Este parâmetro é utilizado para limitar o valor máximo a ser descontado do pagamento.
+                                example: 1000000
+                              type: 
+                                required: true
+                                type: string
+                                description: Type of discount applied.
+                                x-description-i18n:
+                                  eng: Type of discount applied.
+                                  spa: Tipo de descuento aplicado.
+                                  por: Tipo de desconto aplicado.
+                                example: percentage
+                              value: 
+                                required: true
+                                type: number
+                                description: Value of discount based on its type.
+                                x-description-i18n:
+                                  eng: Value of discount based on its type.
+                                  spa: Valor del descuento segun su tipo.
+                                  por: Valor do desconto segundo seu tipo.
+                                example: 10.0
                 payer:
                   required: true
                   type: object
                   description: Payer information required to craete the advanced payment.
                   x-description-i18n:
                     eng: Payer information required to craete the advanced payment. 
-                    spa: Información del pagador requerida para crear el pago adelantado.
+                    spa: Información del pagador requerida para crear el advanced payment.
                     por: Informação obrigatória sobre o pagador para criar o advanced payment.
                   properties:
                     token:
                       required: true
                       type: string
-                      description: The payer token is the token used by the integrator to make payment from the payer's wallet.
+                      description: The payer token is a code used by the integrator to make payments from the payer's wallet.
                       x-description-i18n:
-                        eng: The payer token is the token used by the integrator to make payment from the payer's wallet.
-                        spa: El payer token es el token utilizado por el integrador para realizar el pago desde la billetera del pagador.
-                        por: O payer token é o token usado pelo integrador para fazer o pagamento da carteira do pagador.
+                        eng: The payer token is a code used by the integrator to make payments from the payer's wallet.
+                        spa: El payer token es una clave utilizada por el integrador para realizar el pago desde la billetera del pagador.
+                        por: O payer token é uma chave utilizada pelo integrador para efetuar o pagamento a partir da conta do pagador.
                       example: abcdef1e23f4567d8e9123eb6591ff68df74c57930551ed980239f4538a7e530
                     type_token:
                       required: true
@@ -772,7 +844,7 @@ paths:
                     por: É um campo booleano encontrado em pagamentos em duas etapas (como cartão de débito). Nesse tipo de pagamento, que é realizado de forma assíncrona, o valor da compra é reservado primeiro (capture = false). Esse valor é capturado e não debitado da conta instantaneamente. Quando o dinheiro é realmente transferido para o cobrador (quem recebe o pagamento) o valor é capturado (capture = true).
                   example: true
       responses:
-        '200': 
+        '201': 
           description: Advanced payment created. Check SCHEMAS Status for variants, payment associated to the advanced payments may be rejected.
           x-description-i18n:
             eng: Advanced payment created. Check SCHEMAS Status for variants, payment associated to the advanced payments may be rejected.
@@ -927,6 +999,31 @@ paths:
                           spa: Una string para permitir la identificación del pago en caso de un problema.
                           por: Uma string que permite identificar um pagamento caso haja algum problema.
                         example: Payment_seller_123
+                      discount:
+                          type: object
+                          description: Information of the discount to be used in payment.
+                          x-description-i18n:
+                            eng: Information of the discount to be used in payment.
+                            spa: informacion del descuento a utilizar en el pago.
+                            por: Informação do desconto a ser utilizado no pagamento.
+                          properties:
+                            amount: 
+                              type: number
+                              description: Discounted amount from the total payment amount.
+                              x-description-i18n:
+                                eng: Discounted amount from the total payment amount
+                                spa: Monto descontado del monto total del pago.
+                                por: Valor descontado do valor total do pagamento.
+                              example: 10
+                            code: 
+                              required: true
+                              type: number
+                              description: Unique ID that identifies coupon used for discount.
+                              x-description-i18n:
+                                eng: Unique ID that identifies coupon used for discount.
+                                spa: ID unico que identifica el cupón usado para el descuento
+                                por: ID único que identifica o cupom utilizado para o desconto.
+                              example: WALLET10
                   disbursements:
                     type: array
                     items:
@@ -1035,11 +1132,11 @@ paths:
         eng: Confirm or cancel an advanced payment
         spa: Confirmar o cancelar un advanced payment
         por: Confirmar ou cancelar um advanced payment
-      description: This endpoint allows to perform one of two actions. Capture or cancel and advanced payment. To confirm you must send the wallet payment data and field capture in true. To cancel you send wallet payment data and field status 'cancelled'
+      description: This endpoint allows to perform one of two actions. Capture or cancel and advanced payment. To confirm you must send the wallet payment data and field capture in true. To cancel you send wallet payment data and field status "cancelled"
       x-description-i18n:
-        eng: This endpoint allows to perform one two actions. Capture or cancel and advanced payment. To confirm you must send the wallet payment data and field capture in true. To cancel you send wallet payment data and field status 'cancelled'
-        spa: Este endpoint le permite realizar dos acciones. Capturar o cancelar un advanced payment. Para confirmar, es necesario enviar los datos de pago de la billetera y el campo de captura en true. Para cancelar, envíe los detalles de pago de su billetera y el campo de status 'cancelled'
-        por: Este endpoint permite executar duas ações. Captura ou cancelamento de um advanced payment. Para confirmar, é preciso enviar os dados de pagamento da carteira e o campo de captura em true. Para cancelar, envie os dados de pagamento da carteira e o campo status 'cancelled'
+        eng: This endpoint allows to perform one two actions. Capture or cancel and advanced payment. To confirm you must send the wallet payment data and field capture in true. To cancel you send wallet payment data and field status "cancelled"
+        spa: Este endpoint le permite realizar dos acciones. Capturar o cancelar un advanced payment. Para confirmar, es necesario enviar los datos de pago de la billetera y el campo de captura en true. Para cancelar, envíe los detalles de pago de su billetera y el campo de status "cancelled"
+        por: Este endpoint permite executar duas ações. Captura ou cancelamento de um advanced payment. Para confirmar, é preciso enviar os dados de pagamento da carteira e o campo de captura em true. Para cancelar, envie os dados de pagamento da carteira e o campo status "cancelled"
       parameters:
         - name: advanced_payment_id
           in: path
@@ -1381,16 +1478,6 @@ paths:
           schema:
             type: number
             example: 12345678
-        - in: query
-          name: client.id
-          required: true         
-          description: This is the client unique identificator.
-          x-description-i18n:
-            eng: This is the client unique identificator.
-            spa: Se refiere al advanced payment con el id 'advanced_payment_id' para ser confirmado.
-            por: Refere-se ao advanced payment com o id 'advanced_payment_id' a ser confirmado.
-          schema:
-            type: number
       responses:
         '200':
           description: Advanced Payments confirmed.
@@ -1773,3 +1860,180 @@ paths:
                     enum:
                       - 500--Error--Internal server error
                       - 500--Error--IInternal Error in Discarded List.
+  /v2/wallet_connect/discounts: 
+    post:
+      tags:
+        - $ref: '#/tags/wallet-connect'
+      summary: Create a Discount Promise
+      x-summary-i18n:
+        eng: Create a Discount Promise
+        spa: Crear una Discount Promise
+        por: Criar uma Discount Promise
+      description: This endpoint allows you to create a "Discount Promise" for Wallet Connect. This "Discount Promise" serves as a reference that can be used when generating an Advanced Payment, enabling the application of a specific discount to the payment. During the payment creation process, it's essential to include the information from the previously provided "Discount Promise"
+      x-description-i18n:
+        eng: This endpoint allows you to create a "Discount Promise" for Wallet Connect. This "Discount Promise" serves as a reference that can be used when generating an Advanced Payment, enabling the application of a specific discount to the payment. During the payment creation process, it's essential to include the information from the previously provided "Discount Promise"
+        spa: Este endpoint te permite crear una "Discount Promise" para Wallet Connect. Esta "Discount Promise" actúa como una referencia que se utilizará al generar un Advanced Payment, permitiendo aplicar un descuento específico al pago. Durante el proceso de creación del pago, es esencial incluir la información de la "Discount Promise" proporcionada anteriormente
+        por: Este endpoint permite criar uma "Discount Promise" para o Wallet Connect. Essa "Discount Promise" é uma referência que será usada ao gerar um Advanced Payment, possibilitando aplicar um desconto específico ao pagamento. Durante a criação do pagamento, é essencial incluir as informações da "Discount Promise" fornecida anteriormente
+      requestBody:
+        description: Here are the fields needed to complete a request for create an Discount Promise.
+        x-description-i18n:
+          eng: Here are the fields needed to complete a request for create an Discount Promise.
+          spa: Estos son los campos necesarios para completar un request para crear una Discount Promise.
+          por: Aqui estão os campos necessários para completar uma solicitação para criar uma Discount Promise.
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              description: Discount Promise data.
+              x-description-i18n:
+                eng: Discount Promise data. 
+                spa: Datos del Discount Promise.
+                por: Dados do Discount Promise.              
+              properties: 
+                coupon:
+                  required: false
+                  type: string
+                  description: Unique ID that identifies the coupon for discount application. This field should be filled out only when the user enters a coupon during the purchasing process with the seller.
+                  x-description-i18n:
+                    eng: UUnique ID that identifies the coupon for discount application. This field should be filled out only when the user enters a coupon during the purchasing process with the seller.
+                    spa: ID único que identifica el cupón para la aplicación del descuento. Este campo debe ser completado solamente cuando el usuario ingrese un cupón durante el proceso de compra con el seller.
+                    por: ID único que identifica o cupom para aplicação do desconto. Este campo deve ser preenchido somente quando o usuário inserir um cupom durante o processo de compra junto ao seller.
+                  example: WALLET10
+                amount:
+                  required: true
+                  type: number
+                  description: Total payment amount before aplying discount. For example, 15.05.
+                  x-description-i18n:
+                    eng: Total payment amount before aplying discount. For example, 15.05.
+                    spa: Monto total del pago previo a la aplicacion del descuento. Por ejemplo, 15.05.
+                    por: Valor total do pagamento antes da aplicação do desconto. Por exemplo, 15.05.
+                  example: 15.05
+      headers:
+        properties: 
+          x-payer-token:
+            required: true
+            type: string
+            description: Token of the payer for the payment to which the discount will be applied and which is being created.
+            x-description-i18n:
+              eng: Token of the payer for the payment to which the discount will be applied and which is being created.
+              spa: Token del pagador para el pago al cual se aplicará el descuento y que se está creando.
+              por: Token do pagador para o pagamento ao qual o desconto será aplicado e que está sendo criado.
+            example: e9449535fe074e0e8ff4f2055f604e51
+      responses:
+        '200': 
+          description: Discount Promise created.
+          x-description-i18n:
+            eng: Discount Promise created.
+            spa: Discount Promise creada.
+            por: Discount Promise criada.
+          content:
+            application/json:
+              schema:
+                type: object  
+                properties:
+                  transaction_amount:
+                    type: number
+                    description: Total payment amount before aplying discount. For example, 150.
+                    x-description-i18n:
+                      eng: Total payment amount before aplying discount. For example, 150.
+                      spa: Monto total del pago previo a la aplicacion del descuento. Por ejemplo, 150.
+                      por: Valor total do pagamento antes da aplicação do desconto. Por exemplo, 150.
+                    example: 150
+                  currency_id:
+                    type: string
+                    description: Type of currency to be used in payment. For example, ARS for Argentina, BRL for Brazil. This field varies according to your location.
+                    x-description-i18n:
+                      eng: Type of currency to be used in payment. For example, ARS for Argentina, BRL for Brazil. This field varies according to your location.
+                      spa: Tipo de moneda a usar en el pago. Por ejemplo, ARS para Argentina, BRL para Brasil. Este campo varía según tu ubicación.
+                      por: Tipo de moeda a ser utilizada no pagamento. Por exemplo, ARS, para Argentina, BRL, para Brasil. Este campo varia de acordo com sua localidade.
+                    example: ARS
+                  legal_terms:
+                    type: string
+                    description: Terms and conditions of discount.
+                    x-description-i18n:
+                      eng: Terms and conditions of discount.
+                      spa: Terminos y condiciones del descuento.
+                      por: Termos e condições do desconto.
+                    example: https://api.mercadopago.com/v2/discounts/campaign/10580513/terms/html
+                  discount: 
+                    type: object
+                    description: Discount description.
+                    x-description-i18n:
+                      eng: Discount description.
+                      spa: Descripcion del descuento.
+                      por: Descrição do desconto.
+                    properties:
+                      amount: 
+                        type: number
+                        description: Discounted amount from the total payment amount.
+                        x-description-i18n:
+                          eng: Discounted amount from the total payment amount.
+                          spa: Monto descontado del monto total del pago.
+                          por: Valor descontado do valor total do pagamento.
+                        example: 15
+                      detail:
+                          type: object
+                          description: Discount information details.
+                          x-description-i18n:
+                            eng: Discount information details.
+                            spa: Informacion detallada del descuento.
+                            por: Informação detalhada do desconto
+                          properties:
+                            cap: 
+                              type: number
+                              description: Discount Limit. This field indicates the maximum amount to be deducted from the payment.
+                              x-description-i18n:
+                                eng: Discount Limit. This field indicates the maximum amount to be deducted from the payment.
+                                spa: Límite de descuento. Este campo indica la cantidad máxima a deducir del pago.
+                                por: Limite do desconto. Este campo informa o valor máximo a ser descontado do pagamento.
+                              example: 1000000
+                            type: 
+                              type: string
+                              description: Type of discount applied.
+                              x-description-i18n:
+                                eng: Type of discount applied.
+                                spa: Tipo de descuento aplicado.
+                                por: Tipo de desconto aplicado.
+                              example: percentage
+                            value: 
+                              type: number
+                              description: Discount value determined by its type.
+                              x-description-i18n:
+                                eng: Discount value determined by its type.
+                                spa: Valor del descuento según su tipo
+                                por: Valor do desconto com base no seu tipo.
+                              example: 10
+        '400':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 400--Bad-Request--Invalid amount in discount.
+                      - 400--Bad-Request--Invalid coupon in discount.
+                      - 400--Bad-Request--Invalid payer token.
+        '500':
+          description: Error
+          x-description-i18n:
+            eng: Error
+            spa: Error
+            por: Erro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500--Error--Internal server error
+                      - 500--Error--Internal Error in Discarded List.

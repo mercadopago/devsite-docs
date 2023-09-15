@@ -11,7 +11,7 @@ Para obter informações de determinado pagamento, envie um **GET** ao endpoint 
 ```curl
 
 curl -X GET \
-    'https://api.mercadopago.com/v1/advanced_payments/ADVANCED_PAYMENT_ID?client.id=CLIENT_ID' \
+    'https://api.mercadopago.com/v1/advanced_payments/ADVANCED_PAYMENT_ID' \
       -H 'Authorization: Bearer YOUR_ACCESS_TOKEN'
 
 ```

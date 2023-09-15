@@ -5,7 +5,7 @@ Para realizar la prueba, debes tener al menos dos cuentas:
 * **Vendedor**: cuenta requerida para **configurar la aplicación y las credenciales**. Esta es tu cuenta de usuario.
 * **Comprador**: cuenta necesaria para **probar el proceso de compra**.
 
-Además de estas cuentas, también es importante utilizar las [tarjetas de prueba](/developers/es/docs/additional-content/your-integrations/test/cards) para probar la integración de pago y simular el proceso de compra, así como el **saldo en la cuenta de Mercado Pago del usuario de prueba**. Te mostramos más detalles a continuación.
+Además de estas cuentas, también es importante utilizar las [tarjetas de prueba](/developers/es/guides/additional-content/your-integrations/test-cards) para probar la integración de pago y simular el proceso de compra, así como el **saldo en la cuenta de Mercado Pago del usuario de prueba**. Te mostramos más detalles a continuación.
 
 ![testuser](test-user/create-test-users-es.png)
 
@@ -15,15 +15,16 @@ Para crear cuentas y probar el funcionamiento de las integraciones, sigue los si
 2. En la página de la aplicación, ve a la sección **Cuentas de prueba** y haz clic en el botón **+ Crear cuenta de prueba**.
 3. En la pantalla "Crear nueva cuenta", ingresa una descripción para identificar la cuenta. Por ejemplo: "Vendedor - tienda 1".
 4. A continuación, selecciona el **país de operación** de la cuenta. Esta información **no se podrá editar más adelante**, y además, los usuarios Comprador y Vendedor deben ser del mismo país.
-5. Ingresa un **valor ficticio en dinero** que servirá como referencia para probar tus aplicaciones. Este valor aparecerá como saldo en la cuenta de Mercado Pago del usuario de prueba y se podrá utilizar para simular pagos, al igual que con las [tarjetas de prueba](/developers/pt/docs/additional-content/your-integrations/test/cards).
-6. Autoriza el uso de tus datos personales de acuerdo con la [Declaración de Privacidad](https://www.mercadopago.com.br/privacidade) y asegúrate de que tu cuenta utiliza las herramientas de Mercado Pago según los [Términos y Condiciones](https://www.mercadopago.com.br/developers/pt/docs/resources/legal/terms-and-conditions) marcando la casilla de selección.
+5. Ingresa un **valor ficticio en dinero** que servirá como referencia para probar tus aplicaciones. Este valor aparecerá como saldo en la cuenta de Mercado Pago del usuario de prueba y se podrá utilizar para simular pagos, al igual que con las [tarjetas de prueba](/developers/es/guides/additional-content/your-integrations/test-cards).
+6. Autoriza el uso de tus datos personales de acuerdo con la [Declaración de Privacidad](https://www.mercadopago.com.br/privacidade) y asegúrate de que tu cuenta utiliza las herramientas de Mercado Pago según los [Términos y Condiciones](/developers/es/docs/resources/legal/terms-and-conditions) marcando la casilla de selección.
 7. Haz clic en **Crear cuenta de prueba**.
 
 > WARNING
 >
-> Aviso
+> Uso de credenciales
 >
-> Puedes generar hasta 15 cuentas de usuarios de prueba al mismo tiempo y, por ahora, no es posible eliminarlas.
+> Siempre que utilices un usuario de prueba, deberás usar sus **credenciales de producción**.
+
 
 ¡Listo! La cuenta de prueba se ha creado y se mostrará en la tabla con la siguiente información:
 
@@ -37,4 +38,4 @@ Para crear cuentas y probar el funcionamiento de las integraciones, sigue los si
 >
 > Importante
 >
-> Para editar la **identificación de la cuenta** o **agregar más dinero ficticio** para probar tus aplicaciones, haz clic en los **3 puntos verticales** al final de la línea de la tabla y selecciona la opción **Editar datos**.
+> Para editar la **identificación de la cuenta** o **agregar más dinero ficticio** para probar tus aplicaciones, haz clic en los **3 puntos verticales** al final de la línea de la tabla y selecciona la opción **Editar datos**.<br> <br> Puedes generar hasta **15 cuentas** de usuarios de prueba al mismo tiempo y, por ahora, **no es posible eliminarlas**.

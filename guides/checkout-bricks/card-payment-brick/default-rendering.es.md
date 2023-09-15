@@ -118,7 +118,7 @@ Una vez creadas las configuraciones, ngrese el código a continuación para rend
 >
 > Importante
 >
-> El id 'cardPaymentBrick_container' de la div HTML abajo debe corresponder que el valor enviado en el metodo create() de la etapa anterior.
+> El id `cardPaymentBrick_container` de la div HTML abajo debe corresponder que el valor enviado en el metodo create() de la etapa anterior.
 
 [[[
 ```html

@@ -1,6 +1,6 @@
-# Advanced Payments
+# Fluxo de pagamentos
 
-Advanced Payments são pagamentos específicos para Wallet Connect nos quais o integrador obtém um "payer token" do pagador ao realizar o fluxo do Agreement. Este "payer token" é usado pelo integrador para fazer o pagamento a partir da carteira digital do pagador. 
+Fluxo de pagamentos são configurações específicas para Wallet Connect nas quais o integrador obtém um "payer token" do pagador ao realizar o fluxo do Agreement. Este "payer token" é usado pelo integrador para fazer o pagamento a partir da carteira digital do pagador. 
 
 > WARNING
 >

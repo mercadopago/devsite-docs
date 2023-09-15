@@ -30,28 +30,28 @@ future_product_avaible:
  - card_avaible: true
  - card_icon: Card
  - card_title: Card Payment Brick
- - card_description: Offer credit and debit card payments.
+ - card_description: Offer credit and debit card payments. Test the Brick demonstration before integrating it.
  - card_link: /developers/en/docs/checkout-bricks/card-payment-brick/introduction
  - card_linkDescription: Learn more
  - card_pillText: AVAILABLE
  - card_avaible: true
  - card_icon: Pay
  - card_title: Payment Brick
- - card_description: Offer different payment methods from which your customers can choose, with the ability to save card details for future purchases.
+ - card_description: Offer different payment methods from which your customers can choose, with the ability to save card details for future purchases. Test the Brick demonstration before integrating it.
  - card_link: /developers/en/docs/checkout-bricks/payment-brick/introduction
  - card_linkDescription: Learn more
  - card_pillText: AVAILABLE
   - card_avaible: true
  - card_icon: Loading
  - card_title: Status Screen Brick
- - card_description: Inform your customers of the results of the purchase process, after making the payment. 
+ - card_description: Inform your customers of the results of the purchase process, after making the payment. Test the Brick demonstration before integrating it.
  - card_link: /developers/en/docs/checkout-bricks/status-screen-brick/introduction
  - card_linkDescription: Learn more
  - card_pillText: AVAILABLE
  - card_avaible: true
  - card_icon: Wallet
  - card_title: Wallet Brick
- - card_description:  Link Mercado Pago Wallet and allow logged payments.
+ - card_description: Link Mercado Pago Wallet and allow logged payments. Test the Brick demonstration before integrating it.
  - card_link: /developers/en/docs/checkout-bricks/wallet-brick/introduction
  - card_linkDescription: Learn more
  - card_pillText: AVAILABLE
@@ -109,7 +109,7 @@ available_payments: credit, debit, mercadopago, efectivo, atm
 ----[mlu]---- 
 
 ---
-available_payments: credit, debit, mercadopago
+available_payments: credit, debit, mercadopago, efectivo
 
 ---
 ------------

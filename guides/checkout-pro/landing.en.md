@@ -37,20 +37,50 @@ bullet_section_with_media:
 
 --- mini_landing_separator ---
 
->>>> Accepted Payment types <<<<
+>>>> Accepted payment types <<<<
 
 ----[mlb]----
+
 ---
-available_payments: credit, debit, Mercadopago, ticket, pix, pec
+available_payments: credit, debit, mercadopago, boleto, pix, pec
+
 ---
-available_payments: credit, efectivo
+------------
+
+----[mla]---- 
+
+---
+available_payments: credit, debit, mercadopago, rapipago, pagofacil
 
 ----
 ------------
 
-----[mla, mlm, mlu, mco, mlc, mpe]----
+----[mlm]---- 
+
 ---
-available_payments: credit, debit, Mercadopago, ticket
+available_payments: credit, debit, mercadopago, efectivo, atm, spei
+
+----
+------------
+
+----[mlu]---- 
+
+---
+available_payments: credit, debit, mercadopago, efectivo
+
+----
+------------
+
+----[mco]---- 
+
+---
+available_payments: mercadopago, pse, credit, debit, efectivo
+
+----
+------------
+
+----[mlc]---- 
+
 ---
 available_payments: mercadopago, credit, debit
 

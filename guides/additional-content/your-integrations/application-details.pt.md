@@ -2,11 +2,9 @@
 
 Para acessar os dados gerais da sua aplicação, navegue até o [Painel do desenvolvedor](/developers/panel/app)  e clique sobre o card de uma aplicação para acessar os **Detalhes da aplicação**.
 
-
 ## Qualidade da aplicação
 
 Nesta seção, vamos garantir que sua aplicação atenda aos requisitos de qualidade e segurança necessários para proporcionar a melhor experiência tanto para vendedores quanto para compradores com o Mercado Pago.
-
 
 ### Avaliar a qualidade
 
@@ -16,13 +14,14 @@ Clique em **Avaliar a qualidade** para iniciar o processo de análise da sua int
 
 > NOTE
 >
-> Nota
+> Importante
 >
 > Antes de realizar a avaliação, certifique-se de ter concluído o processo de homologação da aplicação em ambiente de produção. Além disso, é necessário ter realizado pelo menos um pagamento produtivo.
 
 > Após realizar as melhorias, clique novamente em **Atualizar pontuação** para reavaliar sua integração e verificar se atende aos padrões exigidos.
 
 ----[mla, mlm, mlu, mco, mlc, mpe]----
+
 > WARNING
 >
 > Atenção
@@ -32,6 +31,7 @@ Clique em **Avaliar a qualidade** para iniciar o processo de análise da sua int
 
 ------------
 ----[mlb]----
+
 > WARNING
 >
 > Atenção

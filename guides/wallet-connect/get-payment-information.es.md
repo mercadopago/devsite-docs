@@ -10,7 +10,7 @@ Para obtener información sobre un pago específico, envía un **GET** al endpoi
 ```curl
 
 curl -X GET \
-    'https://api.mercadopago.com/v1/advanced_payments/ADVANCED_PAYMENT_ID?client.id=CLIENT_ID' \
+    'https://api.mercadopago.com/v1/advanced_payments/ADVANCED_PAYMENT_ID' \
       -H 'Authorization: Bearer YOUR_ACCESS_TOKEN'
 
 ```

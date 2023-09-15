@@ -1,6 +1,6 @@
 # Credenciales
 
-Las credenciales son contraseñas exclusivas utilizadas para identificar una integración en tu cuenta. Desempeñan un papel fundamental en la captura segura de pagos en tiendas en línea y otras aplicaciones. Puedes encontrarlas en **Detalles de la aplicación > Credenciales** dentro del [Panel del desarrollador](/developers/panel/app) o en tu cuenta de Mercado Pago, accediendo a [Tu negocio > Configuraciones > Gestión y administración > Credenciales](https://www.mercadopago/settings/account/credentials).
+Las credenciales son contraseñas exclusivas utilizadas para identificar una integración en tu cuenta. Desempeñan un papel fundamental en la captura segura de pagos en tiendas en línea y otras aplicaciones. Puedes encontrarlas en **Detalles de la aplicación > Credenciales** dentro del [Panel del desarrollador](/developers/panel/app) o en tu cuenta de Mercado Pago, accediendo a [Tu negocio > Configuraciones > Gestión y administración > Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).
 
 > WARNING
 >
@@ -17,26 +17,26 @@ Ambos tipos de credenciales constan de dos pares de claves que debes utilizar se
 
 | Tipo | Descripción |
 | :--- | :--- |
-| Clave pública | La clave pública de la aplicación se utiliza generalmente en el frontend. Permite, por ejemplo, acceder a información sobre los medios de pago y cifrar los datos de la tarjeta. |
-| Token de acceso | Clave privada de la aplicación que siempre se debe utilizar en el backend para generar pagos. Es esencial mantener esta información segura en tus servidores. |
+| Public Key | La clave pública de la aplicación se utiliza generalmente en el frontend. Permite, por ejemplo, acceder a información sobre los medios de pago y cifrar los datos de la tarjeta. |
+| Access token | Clave privada de la aplicación que siempre se debe utilizar en el backend para generar pagos. Es esencial mantener esta información segura en tus servidores. |
 
 | Tipo | Descripción |
 | :--- | :--- |
-| ID de cliente | El ID de cliente es un identificador único que representa tu integración. |
-| Secreto de cliente | Clave privada utilizada en algunos complementos para generar pagos. Es extremadamente importante mantener esta información segura en tus servidores y no permitir el acceso a ningún usuario del sistema o intruso. |
+| Client ID  | El ID de cliente es un identificador único que representa tu integración. |
+| Client secret | Clave privada utilizada en algunos complementos para generar pagos. Es extremadamente importante mantener esta información segura en tus servidores y no permitir el acceso a ningún usuario del sistema o intruso. |
 
 > NOTE
 >
 > Observación
 >
-> Si es necesario, puedes renovar tus credenciales por motivos de seguridad o cualquier otro motivo relevante. Para renovarlas, simplemente haz clic en **Más opciones** > **Renovar**.
+> Si es necesario, puedes renovar tus credenciales por motivos de seguridad o cualquier otro motivo relevante. Para renovarlas, simplemente haz clic en **Más opciones** (tres puntos al final de la tarjeta) > **Renovar**.
 
 ## Compartir credenciales
 
 Cuando recibas ayuda en la integración o configuración de tus canales de pago, puedes compartir tus credenciales de forma segura. Para hacerlo, sigue los pasos a continuación:
 
 1. Accede a tu cuenta de Mercado Pago.
-2. Navega hasta [Tu negocio > Configuraciones > Gestión y administración > Credenciales](https://www.mercadopago/settings/account/credentials).
+2. Navega hasta [Tu negocio > Configuraciones > Gestión y administración > Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).
 3. Dentro de esta página, selecciona la opción "Compartir mis credenciales".
 4. Ingresa el correo electrónico de la persona a la que deseas otorgar acceso.
 5. Asegúrate de que el correo electrónico esté asociado a la cuenta de Mercado Pago de la persona en cuestión.

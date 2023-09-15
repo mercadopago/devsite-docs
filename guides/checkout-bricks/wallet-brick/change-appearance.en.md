@@ -4,14 +4,14 @@
 >
 > Change appearance
 
-# Style properties
+## Style properties
 
 | - | Description |
 | --- | --- |
 | Customization moment  | When rendering the Brick  |
 | Property  | customization.visual.{buttonBackground, buttonHeight, borderRadius, valuePropColor, verticalPadding, horizontalPadding} |
 | Type  | String  |
-| Comments  | When sending an empty property, the screen will present the text defined by the default layout. On the other hand, when you submit a alternative value, it will replace the default value. To check what the default values are, check out the table below. |
+| Comments  | When sending an empty property, the screen will present the appearance defined by the default layout shown after the [rendering of the Brick](/developers/en/docs/checkout-bricks/wallet-brick/default-rendering#bookmark_renderizar_o_brick). On the other hand, when you submit a alternative value, it will replace the default value. To check what the default values are, check out the table below. |
 
 | Key | Available options | Default | Comments |
 |--- |--- | --- | --- |

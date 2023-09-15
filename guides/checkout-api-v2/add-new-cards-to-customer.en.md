@@ -3,6 +3,12 @@
 
 If necessary, it is possible to add new cards to a specific customer. To do this, search for the customer and define the new card data using one of the codes available below.
 
+> NOTE
+>
+> Important
+>
+> If it is necessary to delete a card before adding new ones to a customer, send a **DELETE** to the endpoint [/v1/customers/{customer_id}/cards/{id}](/developers/en/reference/cards/_customers_customer_id_cards_id/delete) providing the `customer_id` and the `id` of the card you wish to delete. After the successful execution of the request, you will be able to add the new card.
+
 
 [[[
 ```php

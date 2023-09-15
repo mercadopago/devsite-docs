@@ -84,7 +84,7 @@ paths:
                               eng: Image URL.
                               spa: URL de imagen
                               por: URL da imagem
-                            example: https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium@2x.png
+                            example: https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium2x.png
                           category_id:
                             type: string
                             description: It is the category of the purchased item. It is possible to mention two main forms of category_id - categories inserted through a code, such as “MLB189908”, or those that are a tag, such as “phone”.
@@ -134,6 +134,14 @@ paths:
                             spa: Es el campo de apellido del comprador.
                             por: É o campo do sobrenome do comprador.
                           example: Test
+                        email:
+                          type: string
+                          description: Payer's email
+                          x-description-i18n:
+                            eng: Payer's email
+                            spa: Email del comprador
+                            por: E-mail do comprador
+                          example: test_user_123@testuser.com
                         phone:
                           type: object
                           description: Buyer's phone.
@@ -479,6 +487,7 @@ paths:
                     - Debin_transfer -- Digital payment method used in Argentina that immediately debits an amount from an account, requesting prior authorization.
                     - Ted -- It is the Electronic Transfer Available payment, used in Brazil, that has fees to be used. The payment is made the same day of the transaction, but for this it is necessary to make the transfer within the stipulated period;
                     - Cvu -- Payment method used in Argentina.
+                    - PSE -- Digital payment method used in Colombia which users authorize the debit of funds from their bank through virtual banking. your savings, checking or electronic deposit accounts.
                   required: true
                   example: visa
                 statement_descriptor:
@@ -790,7 +799,7 @@ paths:
                             picture_url:
                               type: string
                               example: 
-                                https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium@2x.png
+                                https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium2x.png
                               description: Image URL.
                               x-description-i18n:
                                 eng: Image URL.
@@ -1326,8 +1335,13 @@ paths:
                       - 2006--Card Token not found.
                       - 2007--Connection to Card Token API fail.
                       - 2009--Card token issuer can't be null.
+                      - 2034-–Invalid users involved 2041 – GET to API APPLICATION fail. 
                       - 2060--The customer can't be equal to the collector.
+                      - 2062-–Invalid card token.
+                      - 2072-–Invalid value for transaction_amount. 
                       - 2077--Deferred capture not supported.
+                      - 2123-–Invalid operators users involved.
+                      - 2131–-Cannot infer Payment Method.
                       - 3000--You must provide your cardholder_name with your card data.
                       - 3001--You must provide your cardissuer_id with your card data.
                       - 3003--Invalid card_token_id.
@@ -1358,6 +1372,8 @@ paths:
                       - 3028--Invalid payment_method_id.
                       - 3029--Invalid card expiration month.
                       - 3030--Invalid card expiration year.
+                      - 3031-–Secure_code_id can't be null.
+                      - 3032–-Invalid security_code_length 3033 3034 - Invalid card_number_validation.
                       - 4000--card atributte can't be null.
                       - 4001--payment_method_id atributte can't be null.
                       - 4002--transaction_amount atributte can't be null.
@@ -1388,6 +1404,7 @@ paths:
                       - 4039--application_fee cannot be a negative value.
                       - 4050--payer.email must be a valid email.
                       - 4051--payer.email must be shorter than 254 characters.
+                      - 6033--User unavailable.
                       - 7523--Invalid expiration date.
         '403':
           description: Error
@@ -1523,13 +1540,14 @@ paths:
                     x-description-i18n:
                       eng: It indicates the identifier of the payment method selected to make the transaction. Here are some examples.
                       spa: Indica el identificador del medio de pago seleccionado para realizarlo. A continuación presentamos algunos ejemplos.
-                      por:  Indica o identificador do meio de pagamento selecionado para efetuar o pagamento. A seguir, apresentamos alguns exemplos.
+                      por: Indica o identificador do meio de pagamento selecionado para efetuar o pagamento. A seguir, apresentamos alguns exemplos.
                     enum:
                       - pix -- Instant digital payment method used in Brazil;
                       - account_money -- When the payment is debited directly from a Mercado Pago account;
                       - debin_transfer -- Digital payment method used in Argentina that immediately debits an amount from an account, requesting prior authorization;
                       - ted -- It is the Electronic Transfer Available payment, used in Brazil, that has fees to be used. The payment is made the same day of the transaction, but for this it is necessary to make the transfer within the stipulated period;
-                      - cvu -- Payment method used in Argentina.
+                      - cvu -- Payment method used in Argentina;
+                      - pse -- Digital payment method used in Colombia which users authorize the debit of funds from their bank through virtual banking. your savings, checking or electronic deposit accounts.
                   payment_type_id:
                     $ref: '#/components/schemas/payment_type_id'
                   status:
@@ -2146,7 +2164,8 @@ paths:
                       - account_money -- When the payment is debited directly from a Mercado Pago account;
                       - debin_transfer -- Digital payment method used in Argentina that immediately debits an amount from an account, requesting prior authorization;
                       - ted -- It is the Electronic Transfer Available payment, used in Brazil, that has fees to be used. The payment is made the same day of the transaction, but for this it is necessary to make the transfer within the stipulated period;
-                      - cvu -- Payment method used in Argentina. 
+                      - cvu -- Payment method used in Argentina;
+                      - pse -- Digital payment method used in Colombia which users authorize the debit of funds from their bank through virtual banking. your savings, checking or electronic deposit accounts.
                   payment_type_id:
                     $ref: '#/components/schemas/payment_type_id'
                   status:
@@ -2354,7 +2373,7 @@ paths:
                                 por: Descrição do artigo
                             picture_url:
                               type: string
-                              example: https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium@2x.png
+                              example: https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium2x.png
                               description: Image URL.
                               x-description-i18n:
                                 eng: Image URL.
@@ -3122,7 +3141,8 @@ paths:
                               - account_money -- When the payment is debited directly from a Mercado Pago account.
                               - debin_transfer -- Digital payment method used in Argentina that immediately debits an amount from an account, requesting prior authorization.
                               - ted -- It is the Electronic Transfer Available payment, used in Brazil, that has fees to be used. The payment is made the same day of the transaction, but for this it is necessary to make the transfer within the stipulated period.
-                              - cvu -- Payment method used in Argentina.
+                              - cvu -- Payment method used in Argentina;
+                              - pse -- Digital payment method used in Colombia which users authorize the debit of funds from their bank through virtual banking. your savings, checking or electronic deposit accounts.
                           payment_type_id:
                             $ref: '#/components/schemas/payment_type_id'
                           status:
@@ -3633,7 +3653,6 @@ components:
       example: customer
       enum:
         - customer -- Payer is a Customer and belongs to the collector.
-        - registered -- The account corresponds to a Mercado Pago registered user.
         - guest -- The payer doesn't have an account.
     currency_id:
       type: string
@@ -3714,8 +3733,8 @@ components:
       example: credit_card
       enum:
         - account_money -- Money in the Mercado Pago account.
-        - ticket -- Boletos, Caixa Electronica Payment, PayCash and Oxxo, etc.
-        - bank_transfer -- Bank transfer (pix).
+        - ticket -- Boletos, Caixa Electronica Payment, PayCash, Efecty, Oxxo, etc.
+        - bank_transfer -- Pix and PSE (Pagos Seguros en Línea).
         - atm -- ATM payment (widely used in Mexico through BBVA Bancomer).
         - credit_card -- Payment by credit card.
         - debit_card -- Payment by debit card.

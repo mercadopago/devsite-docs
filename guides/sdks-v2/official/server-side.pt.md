@@ -1,7 +1,7 @@
 ---
 content_section_with_media: 
  - title: Server-side
- - message: O uso dos SDKs de backend é opcional. Com eles, você pode obter funcionalidades server-side das nossas soluções de pagamento on-line como criar e saber o status de diferentes pagamentos, integrar pagamentos com cartão e outros meios de pagamento e fazer devoluções ou estornos.
+ - message: Ao utilizar nossos SDKs de backend, você ganha acesso facilitado às funcionalidades server-side das nossas soluções. Isso permite criar e consultar o status de diferentes transações, integrar pagamentos via cartão e outros métodos, além de realizar reembolsos ou estornos.
  - media_image: /sdk/library-media-3.png
 ---
 
@@ -12,7 +12,7 @@ content_section_with_media:
 |      SDK      |                    Versões compatíveis                   |  Download | Documentação |
 |:-------------:|:--------------------------------------------------------:|:---------:|:------------:|
 | PHP 2.4.9    | PHP 5.6, 7.1 ou superior  | [Packagist](https://packagist.org/packages/mercadopago/dx-php)| [GitHub](https://github.com/mercadopago/sdk-php)  |
-| Java 2.1.2   | Java 1.8 ou superior | [Maven](https://search.maven.org/artifact/com.mercadopago/sdk-java-)    | [GitHub](https://github.com/mercadopago/sdk-java)    |
+| Java 2.1.2   | Java 1.8 ou superior | [Maven](https://search.maven.org/artifact/com.mercadopago/sdk-java)    | [GitHub](https://github.com/mercadopago/sdk-java)    |
 | NodeJS 1.5.14 | Node.js 10 ou superior  | [NPM](https://www.npmjs.com/package/mercadopago)    | [GitHub](https://github.com/mercadopago/sdk-nodejs)   |
 | Ruby 2.1.0    | Ruby 2.3+ | [Gem](https://rubygems.org/gems/mercadopago-sdk)   | [GitHub](https://github.com/mercadopago/sdk-ruby)    |
 | .NET 2.1.0    | .NET Standard 2.0+ .NET Core 2.0+  .NET Framework 4.6.1+ | [NuGet](https://www.nuget.org/packages/mercadopago-sdk)   | [GitHub](https://github.com/mercadopago/sdk-dotnet)   |

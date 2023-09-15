@@ -1,4 +1,4 @@
-# Configure payments with Checkout API
+# Checkout API
 
 With [Checkout API](/developers/en/docs/checkout-pro/landing), the entire checkout process will take place within the online store environment, without the need to redirect to an external page. In addition to allowing greater control in the customization and integration process, the checkout offers a complete structure for processing payments with the main means available on the market.
 
@@ -10,18 +10,14 @@ To integrate the Checkout API, follow the steps below.
 3. Select the payment options you want to offer in your site. These can be Credit Card, Boleto Bancario and Pix.
 4. If you want to offer boleto bancario payments with a discount, enter the discount percentage in the "Discount for boleto barcario" field.
 5. Finally, click on "Save changes". ------------
-----[mla, mlc, mlu, mpe, mco]----
+----[mlc, mlu, mpe, mco]----
 3. Finally, click on "Save changes". ------------
 
 ----[mlb]----
 ![Payments Checkout Transparente - Nuvem Shop](/images/nuvemshop/nuvemshop_checkout_transparente_2.gif)
 
 ------------
-----[mla]----
-![Payments Checkout Transparente - Nuvem Shop](/images/nuvemshop/ar_tiendanube_checkout_transparente.gif)
-
-------------
-----[mlm, mlc, mlu, mpe, mco]----
+----[mlc, mlu, mpe, mco]----
 ![Payments Checkout Transparente - Nuvem Shop](/images/nuvemshop/mx_tiendanube_checkout_transparente.gif)
 
 ------------

@@ -17,7 +17,7 @@ Existem dois tipos diferentes de credenciais:
 
 Ambos os tipos de credenciais consistem em dois pares de chaves que você deve usar de acordo com o produto escolhido. Consulte a documentação específica de cada produto para obter detalhes sobre as chaves a serem usadas.
 
-| Tipo            | Descripción                                                                   |
+| Tipo            | Descrição                                                                   |
 |-----------------|-------------------------------------------------------------------------------|
 | Public key      | A chave pública da aplicação é geralmente usada no frontend. Permite, por exemplo, acessar informações sobre métodos de pagamento e criptografar os dados do cartão. |
 | Access token    | Access token é a chave privada da aplicação que sempre deve ser usada no backend para gerar pagamentos. É essencial manter esta informação segura em seus servidores.    |
@@ -107,7 +107,7 @@ curl --location --request POST 'https://api.mercadopago.com/v1/reports/marketpla
 }'
 ```
 
-#### Response
+#### Resposta
 ```json
 {
     "id": {{structure_id}},
@@ -125,8 +125,7 @@ curl --location --request POST 'https://api.mercadopago.com/v1/reports/marketpla
     "coupon_detailed": null,
     "show_chargeback_cancel": null
 }
-``````
-
+```
 
 | Campo                      | Descrição                                                                                          |
 |----------------------------|----------------------------------------------------------------------------------------------------|
@@ -169,7 +168,7 @@ curl --location --request POST 'https://api.mercadopago.com/v1/reports/notifiers
     "status": "ACTIVE",
     "is_pii_data": true
 }
-``````
+```
 
 #### Curl email
 ```curl
@@ -229,7 +228,7 @@ Após criar as configurações necessárias, você precisará criar o relatório
  * **Agendar um evento**: Isso permitirá automatizar a criação de relatórios, definindo sua periodicidade.
  * **Gerar um evento manualmente**: Você poderá criar um relatório sob demanda, definindo o período que deseja abranger.
 
-### Agendar um relatório (Events)
+### Agendar um relatório (_Events_)
 O agendamento de um evento permite que você crie relatórios automaticamente, definindo sua periodicidade.
 Para fazer isso, você deve criar um _event_, conforme mostrado abaixo. Além disso, tenha à mão as configurações que você criou anteriormente e as informações da tabela abaixo para poder agendar a criação do relatório com sucesso.
 
@@ -286,7 +285,7 @@ Você pode ver a descrição dos campos presentes nos _curls_ na tabela abaixo.
 | `structure_id` (obrigatório) | Campo para atribuir a estrutura com a qual o relatório será gerado. Você deve preenchê-lo com o valor obtido para este mesmo campo na resposta à criação da estrutura.
 | `notifier_id` (obrigatório) | Campo para atribuir a forma pela qual deseja receber as notificações. Você deve preenchê-lo com a identificação obtida na resposta à criação das notificações.
 
-### Gerar relatório manualmente (Statements)
+### Gerar relatório manualmente (_Statements_)
 A geração manual de um relatório permite que você crie um relatório sob demanda, definindo o período que deseja abranger.
 
 Para realizar essa criação manual, você precisará criar uma _statement_, como mostrado abaixo. Além disso, tenha em mãos as configurações que você criou anteriormente e as informações da tabela abaixo para poder gerar um relatório com sucesso.

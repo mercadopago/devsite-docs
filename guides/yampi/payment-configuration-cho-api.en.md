@@ -1,4 +1,4 @@
-# Configure payments with Checkout Transparente
+# Checkout Transparente
 
 With the [Checkout Transparente](/developers/en/guides/checkout-api/landing), the entire checkout process will take place within the online store environment, without the need to redirect to an external page. In addition to allowing greater control in the customization and integration process, the checkout offers a complete structure for processing payments with the main means available on the market.
 

@@ -12,16 +12,13 @@ Nesta documentação, explicaremos as configurações necessárias para o recebi
 
 Abaixo explicaremos como indicar as URLs que serão notificadas e como configurar os eventos dos quais se receberá a notificação.
 
-
 ![webhooks](/images/dashboard/webhooks_pt_.png)
-
 
 1. Caso ainda não tenha, crie uma aplicação no [Painel do desenvolvedor](/developers/panel/app).
 2. Com a aplicação criada, navegue até a seção Webhooks na página de Detalhes da aplicação e configure as URLs de **produção** e **teste** da qual serão recebidas as notificações.
 3. Você também poderá experimentar e testar se a URL indicada está recebendo as notificações corretamente, podendo verificar a solicitação, a resposta dada pelo servidor e a descrição do evento.
 4. Caso seja necessário identificar múltiplas contas, no final da URL indicada você poderá indicar o parâmetro `?cliente=(nomedovendedor) endpoint` para identificar os vendedores.
 5. Em seguida, selecione os **eventos** dos quais você receberá notificações em formato `json` através de um `HTTP POST` para a URL especificada anteriormente. Um evento é qualquer tipo de atualização no objeto relatado, incluindo alterações de status ou atributo. Veja na tabela abaixo os eventos que poderão ser configurados.
-
 
 | Tipo de notificação | Ação | Descrição |
 | :--- | :--- | :--- |
@@ -36,16 +33,13 @@ Abaixo explicaremos como indicar as URLs que serão notificadas e como configura
 | `point_integration_wh` | `state_CANCELED` | Processo de pagamento cancelado |
 | `point_integration_wh` | `state_ERROR`| Ocorreu um erro ao processar a tentativa de pagamento |
 | `delivery` | `delivery.updated`| Dados de envio e atualização do pedido |
-
+| `delivery_cancellation` | `case_created`| Solicitação de cancelamento do envi
 
 ## Configuração durante a criação de pagamentos
 
-
 É possível configurar a URL de notificação de modo mais específico, para cada pagamento utilizando o campo `notification_url`. Veja abaixo como fazer isso com uso dos SDKs.
 
-
 1. No campo `notificaction_url`, indique a URL da qual serão recebidas as notificações como exemplificado abaixo.
-
 
 [[[
 ```php
@@ -335,14 +329,11 @@ Isso indica que foi criado o pagamento **999999999** para o usuário **44444** e
 | **sent** (delivery) | Data de envio da notificação |
 | **topic** (delivery) | Tipo de notificação recebida  |
 
-
 4. Caso deseje receber notificações apenas de Webhook e não de IPN, você pode adicionar na `notification_url` o parâmetro `source_news=webhook`. Por exemplo: https://www.yourserver.com/notifications?source_news=webhooks
-
 
 ## Ações necessárias após receber uma notificação
 
 [TXTSNIPPET][/guides/snippets/test-integration/notification-response]
-
 
 > NOTE
 >
@@ -352,6 +343,26 @@ Isso indica que foi criado o pagamento **999999999** para o usuário **44444** e
 
 Depois de dar um retorno à notificação e confirmar o seu recebimento, você obterá as informações completas do recurso notificado acessando o endpoint correspondente da API:
 
+----[mpe, mco, mlu, mlc]---- 
+| Tipo | URL | Documentação |
+| --- | --- | --- |
+| payment | `https://api.mercadopago.com/v1/payments/[ID]` | [ver documentação](/developers/pt/reference/payments/_payments_id/get) |
+| subscription_preapproval | `https://api.mercadopago.com/preapproval` | [ver documentação](/developers/pt/reference/subscriptions/_preapproval/post) |
+| subscription_preapproval_plan | `https://api.mercadopago.com/preapproval_plan` | [ver documentación](/developers/pt/reference/subscriptions/_preapproval_plan/post)  |
+| subscription_authorized_payment | `https://api.mercadopago.com/authorized_payments` | [ver documentación](/developers/pt/reference/subscriptions/_authorized_payments_id/get) |
+
+------------
+----[mlm, mlb]---- 
+| Tipo | URL | Documentação |
+| --- | --- | --- |
+| payment | `https://api.mercadopago.com/v1/payments/[ID]` | [ver documentação](/developers/pt/reference/payments/_payments_id/get) |
+| subscription_preapproval | `https://api.mercadopago.com/preapproval` | [ver documentação](/developers/pt/reference/subscriptions/_preapproval/post) |
+| subscription_preapproval_plan | `https://api.mercadopago.com/preapproval_plan` | [ver documentación](/developers/pt/reference/subscriptions/_preapproval_plan/post)  |
+| subscription_authorized_payment | `https://api.mercadopago.com/authorized_payments` | [ver documentación](/developers/pt/reference/subscriptions/_authorized_payments_id/get) |
+| point_integration_wh | - | [ver documentação](/developers/pt/docs/mp-point/integration-configuration/integrate-with-pdv/notifications) |
+
+------------
+----[mla]---- 
 | Tipo | URL | Documentação |
 | --- | --- | --- |
 | payment | `https://api.mercadopago.com/v1/payments/[ID]` | [ver documentação](/developers/pt/reference/payments/_payments_id/get) |
@@ -360,5 +371,31 @@ Depois de dar um retorno à notificação e confirmar o seu recebimento, você o
 | subscription_authorized_payment | `https://api.mercadopago.com/authorized_payments` | [ver documentación](/developers/pt/reference/subscriptions/_authorized_payments_id/get) |
 | point_integration_wh | - | [ver documentação](/developers/pt/docs/mp-point/integration-configuration/integrate-with-pdv/notifications) |
 | delivery | - | [ver documentação](/developers/pt/reference/mp_delivery/_proximity-integration_shipments_shipment_id_accept/put) |
+
+------------
+
+Além disso, especificamente em alertas de fraude, o pedido não deve ser entregue e o cancelamento precisa ser realizado através da [API de cancelamentos](/developers/pt/reference/chargebacks/_payments_payment_id/put).
+
+Na notificação, você receberá um `JSON` com as seguintes informações contendo o id de pagamento para efetuar o cancelamento.
+
+[[[
+```Json
+
+
+ "description": ".....",
+ "merchant_order": 4945357007,
+ "payment_id": 23064274473
+
+
+```
+]]]
+
+
+> NOTE
+>
+> Importante
+>
+> É possível obter mais detalhes sobre o pedido utilizando a API [Obter pedido](/developers/pt/reference/merchant_orders/_merchant_orders_id/get).
+
 
 Com essas informações, você poderá realizar as atualizações necessárias na sua plataforma como, por exemplo, atualizar um pagamento aprovado.

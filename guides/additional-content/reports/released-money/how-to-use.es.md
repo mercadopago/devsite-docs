@@ -46,9 +46,11 @@ Observa cómo está compuesto el reporte de ----[mla]---- Liquidaciones --------
 
 ----[mla]----
 ![Reporte de liquidaciones](/images/manage-account/reports/example-release-es.jpg)
+
 ------------
 ----[mlm, mlb, mlc, mco, mlu, mpe]----
 ![Reporte de liberaciones](/images/manage-account/reports/example-release-es.jpg)
+
 ------------
 
 La versión por defecto mostrará una vista extendida de las columnas. El informe final tendrá la mayor cantidad de detalle posible.

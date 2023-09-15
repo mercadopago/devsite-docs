@@ -92,9 +92,33 @@ paths:
                         id:
                           type: string
                           example: "INGENICO_MOVE2500__ING-23976989"
+                        pos_id:
+                          type: integer
+                          description: POS identifier
+                          x-description-i18n:
+                            eng: POS identifier
+                            spa: Identificador del POS
+                            por: Identificador do POS
+                          example: 47792476
+                        store_id: 
+                          type: string
+                          description: STORE identifier
+                          x-description-i18n:
+                            eng: STORE identifier
+                            spa: Identificador de la tienda
+                            por: Identificador da loja
+                          example: 47792478
+                        external_pos_id: 
+                          type: string
+                          description: External_id of the store to which the pos belongs
+                          x-description-i18n:
+                            eng: External_id of the store to which the pos belongs
+                            spa: External_id de la tienda a la que pertenece el POS
+                            por: External_id da loja a qual pertence o POS
+                          example: SUC0101POS
                         operating_mode:
                           type: string
-                          example: "STANDALONE"
+                          example: “PDV” | “STANDALONE”
                   paging:
                     type: object
                     properties:

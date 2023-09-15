@@ -1,4 +1,4 @@
-# Configure payments with ticket checkout
+# Ticket checkout
 
 With **ticket checkout**, offer cash payments in your store using the [Checkout API](/developers/en/guides/checkout-api/landing).
 

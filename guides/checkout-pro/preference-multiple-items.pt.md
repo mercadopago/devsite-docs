@@ -12,7 +12,7 @@ Para criar uma preferência para diversos itens, utilize um dos SDKs disponívei
   # Criar um objeto preferência
   $preference = new MercadoPago\Preference();
   # Cria itens na preferência
-  $item1 = new MercadoPago\Item
+  $item1 = new MercadoPago\Item();
   $item1->title = "Item de Teste 1";
   $item1->quantity = 2;
   $item1->unit_price = 11.96;

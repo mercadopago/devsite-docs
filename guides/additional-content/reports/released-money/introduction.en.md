@@ -1,6 +1,5 @@
 # What is the Releases report?
 
-
 Releases report is a **downloadable report that allows you to know the liquidity of your business and to know how your available money is composed in Mercado Pago.** It contains the **detail of all funds involved in a date period,** and includes money release cases as well as blockings and unblockings.
 
 ----[mlm, mla]----

@@ -16,7 +16,6 @@ Notifications are messages sent by the Mercado Pago server from events carried o
 
 There are **two types** of notifications available for configuration which ,once configured, allow you to program your store's backend to, for example, update the status of orders when a payment is created, send an order confirmation email from store when an order is updated on Mercado Pago, update a customer's record when a subscription plan is linked, or any other actions arising from the events listed above.
 
-
 | Type | Description |
 | --- | --- |
 | **Webhooks** | It uses HTTP REST and instantly notifies updates. To learn how to configure webhook notifications [click here](/developers/pt/guides/additional-content/your-integrations/webhooks). |
