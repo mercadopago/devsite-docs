@@ -211,15 +211,15 @@ curl --location --request POST 'https://api.mercadopago.com/v1/reports/notifiers
 
 | Campo              | Descrição                                                                                                                    |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| `type` (obrigatório) | Define o tipo de notificação a ser configurado. Valores possíveis: email; ftp.                                      |
-| `data` (obrigatório) | Contém as informações do destinatário do notifier. Dependendo do valor indicado em `type`, pode conter os seguintes objetos: <br>- **email:** Contém o campo `recipients`, onde você pode indicar os e-mails para os quais o relatório será enviado. Pode ser mais de um, se desejar. <br>- **ftp:** Contém os seguintes campos: <br>   - `ip`: URL do servidor FTP <br>   - `port`: Porta do servidor FTP <br>   - `password`: Senha de acesso ao servidor FTP <br>   - `protocolo`: `SFTP` <br>   - `username`: Nome de usuário para acessar o servidor FTP <br>   - `remote_dir`: Diretório remoto de destino no servidor FTP.   |
+| `type` (obrigatório) | Define o tipo de notificação a ser configurado. Valores possíveis: **email**; **ftp**.                                      |
+| `data` (obrigatório) | Contém as informações do destinatário do **notifier**. Dependendo do valor indicado em `type`, pode conter os seguintes objetos: <br><br>- **email:** Contém o campo `recipients`, onde você pode indicar os e-mails para os quais o relatório será enviado. Pode ser mais de um, se desejar. <br><br>- **ftp:** Contém os seguintes campos: <br> - `ip`: URL do servidor FTP <br>   - `port`: Porta do servidor FTP <br>   - `password`: Senha de acesso ao servidor FTP <br>   - `protocolo`: `SFTP` <br>   - `username`: Nome de usuário para acessar o servidor FTP <br>   - `remote_dir`: Diretório remoto de destino no servidor FTP.   |
 
 ## Criação dos relatórios
 Após criar as configurações necessárias, você precisará criar o relatório. Para isso, tem duas opções:
  * **Agendar um evento**: Isso permitirá automatizar a criação de relatórios, definindo sua periodicidade.
  * **Gerar um evento manualmente**: Você poderá criar um relatório sob demanda, definindo o período que deseja abranger.
 
-### Agendar um relatório 
+### Agendar um relatório (Events)
 O agendamento de um evento permite que você crie relatórios automaticamente, definindo sua periodicidade.
 Para fazer isso, você deve criar um _event_, conforme mostrado abaixo. Além disso, tenha à mão as configurações que você criou anteriormente e as informações da tabela abaixo para poder agendar a criação do relatório com sucesso.
 
@@ -274,7 +274,7 @@ Você pode ver a descrição dos campos presentes nos _curls_ na tabela abaixo.
 | `structure_id` (obrigatório) | Campo para atribuir a estrutura com a qual o relatório será gerado. Você deve preenchê-lo com o valor obtido para este mesmo campo na resposta à criação da estrutura.                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | `notifier_id` (obrigatório)  | Campo para atribuir a forma pela qual deseja receber as notificações. Você deve preenchê-lo com a identificação obtida na resposta à criação das notificações.                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 
-### Gerar relatório manualmente 
+### Gerar relatório manualmente (Statements)
 A geração manual de um relatório permite que você crie um relatório sob demanda, definindo o período que deseja abranger.
 
 Para realizar essa criação manual, você precisará criar uma _statement_, como mostrado abaixo. Além disso, tenha em mãos as configurações que você criou anteriormente e as informações da tabela abaixo para poder gerar um relatório com sucesso.
