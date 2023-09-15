@@ -1,12 +1,12 @@
 # Gerar relatório
 
-Até o momento, é possível gerar o relatório através da API. Para fazer isso, primeiro você deve **criar as configurações** necessárias, onde poderá definir os e-mails para os quais o relatório será enviado ou a frequência com que deseja que ele seja gerado, entre outras opções. Em seguida, você deve **criar o relatório**, que pode ser de **forma automática** (_event_) ou **manual** (_statement_).
+Até o momento, é possível gerar o relatório através da API. Para fazer isso, primeiro você deve [criar as configurações](/developers/pt/docs/checkout-pro/additional-content/reports/marketplace-sales-report/generate-report#bookmark_criação_da_configuração) necessárias, onde poderá definir os e-mails para os quais o relatório será enviado ou a frequência com que deseja que ele seja gerado, entre outras opções. Em seguida, você deve [criar o relatório](/developers/pt/docs/checkout-pro/additional-content/reports/marketplace-sales-report/generate-report#bookmark_criação_dos_relatórios), que pode ser de **forma automática** (_event_) ou **manual** (_statement_).
 
 > NOTE
 >
 > Importante
 >
-> Para gerar os relatórios, será necessário ter o Access Token de suas credenciais de produção. Este é uma chave privada da aplicação que sempre deve ser usada no backend para gerar pagamentos. Se você ainda não possui essas informações, siga as etapas descritas em Gerar Access Token.
+> Para gerar os relatórios, será necessário ter o Access Token de suas credenciais de produção. Este é uma chave privada da aplicação que sempre deve ser usada no backend para gerar pagamentos. Se você ainda não possui essas informações, siga as etapas descritas em [Gerar Access Token](/developers/pt/docs/checkout-pro/additional-content/reports/marketplace-sales-report/generate-report#bookmark_gerar_access_token).
 
 ## Gerar Access Token
 As credenciais são senhas exclusivas usadas para identificar uma integração em sua conta. Elas desempenham um papel fundamental na captura segura de pagamentos em lojas online e outras aplicações. Você pode encontrá-las em **Detalhes da aplicação > Credenciais** dentro do [Painel do desenvolvedor](https://www.mercadopago.com.uy/developers/panel/app) ou em sua conta do Mercado Pago, acessando [Seu negócio > Configurações > Gestão e administração > Credenciais](https://www.mercadopago.com.uy/settings/account/credentials).
@@ -23,11 +23,12 @@ Ambos os tipos de credenciais consistem em dois pares de chaves que você deve u
 | Access token    | Access token é a chave privada da aplicação que sempre deve ser usada no backend para gerar pagamentos. É essencial manter esta informação segura em seus servidores.    |
 
 Para gerar o relatório de vendas, você deve usar o seu **Access Token** de produção.
+![Gerar Access Token](/images/manage-account/reports/marketplace-sales/image1pt.png)
 
 ## Criação da configuração
 Antes de gerar o relatório, você deve criar as configurações correspondentes, o que permitirá personalizar os e-mails para os quais o relatório será enviado, a frequência de geração e sua estrutura.
 
-A criação das configurações consiste em 2 etapas: primeiro, definir a [estrutura do relatório]() e, em seguida, configurar as [vias de notificação]().
+A criação das configurações consiste em 2 etapas: primeiro, definir a **estrutura do relatório** e, em seguida, configurar as **vias de notificação**.
 
 ### Estrutura do relatório
 Criar a estrutura do relatório permite definir as características que ele terá no momento da geração. Através dos _structures_, você pode especificar o fuso horário em que deseja que o relatório seja gerado, adicionar um prefixo para identificar o arquivo gerado e incorporar a quantidade de colunas desejadas, juntamente com separadores de colunas e decimais.

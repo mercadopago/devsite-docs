@@ -2,7 +2,7 @@
 
 Después de crear el reporte, puedes realizar un llamado GET a la API como se indica a continuación para comprobar la correcta creación de estructuras, notificaciones, o de ambos tipos de reportes.
 
-### GET Structures
+## GET Structures
 ```curl
 curl --location --request GET 'https://api.mercadopago.com/v1/reports/marketplace_sellers_sales/structures' \
 --header 'Authorization: Bearer {{TOKEN}}'
@@ -92,7 +92,7 @@ curl --location --request GET 'https://api.mercadopago.com/v1/reports/marketplac
 ]
 ```
 
-### GET Notifiers
+## GET Notifiers
 ```curl
 curl --location --request GET 'https://api.mercadopago.com/v1/reports/notifiers' \
 --header 'Authorization: Bearer {{TOKEN}}'
@@ -120,7 +120,7 @@ curl --location --request GET 'https://api.mercadopago.com/v1/reports/notifiers'
 ]
 ```
 
-### GET Event
+## GET Event
 ```curl
 curl --location --request GET 'https://api.mercadopago.com/v1/reports/marketplace_sellers_sales/events' \
 --header 'Authorization: Bearer {{TOKEN}}'
@@ -152,7 +152,7 @@ curl --location --request GET 'https://api.mercadopago.com/v1/reports/marketplac
 ]
 ```
 
-### GET Statement
+## GET Statement
 ```curl
 curl --location --request GET 'https://api.mercadopago.com/v1/reports/marketplace_sellers_sales/statements/{{statement_id}}' \
 --header 'Content-Type: application/json' \

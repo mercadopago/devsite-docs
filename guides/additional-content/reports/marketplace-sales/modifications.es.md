@@ -8,7 +8,7 @@ Si, luego de haber consultado las configuraciones de estructuras, notificaciones
 >
 > Ten en cuenta que **no es posible** modificar uno reporte generados manualmente (statements).
 
-### PUT Structures
+## PUT Structures
 ```curl
 curl --location --request PUT 'https://api.mercadopago.com/v1/reports/marketplace_sellers_sales/structures/{{structure_id}}' \
 --header 'Authorization: Bearer {{TOKEN}}' \
@@ -165,7 +165,7 @@ curl --location --request PUT 'https://api.mercadopago.com/v1/reports/marketplac
 }
 ```
 
-### PUT Event
+## PUT Event
 ```curl
 curl --location --request PUT 'https://api.mercadopago.com/v1/reports/marketplace_sellers_sales/events/{{event_id}}' \
 --header 'Authorization: Bearer {{TOKEN}}' \
@@ -207,9 +207,9 @@ curl --location --request PUT 'https://api.mercadopago.com/v1/reports/marketplac
 }
 ```
 
-### PUT Notifier
+## PUT Notifier
 
-#### Curl email
+### Curl email
 ```curl
 curl --location --request PUT 'https://api.mercadopago.com/v1/reports/notifiers/{{notifier_id}}' \
 --header 'Authorization: Bearer {{TOKEN}}' \
@@ -240,7 +240,7 @@ curl --location --request PUT 'https://api.mercadopago.com/v1/reports/notifiers/
 }
 ```
 
-#### Curl SFTP
+### Curl SFTP
 ```curl
 curl --location --request PUT 'https://api.mercadopago.com/v1/reports/notifiers/{{notifier_id}}?type=ftp' \
 --header 'Authorization: Bearer {{TOKEN}}' \
