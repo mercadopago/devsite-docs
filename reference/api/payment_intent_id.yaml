@@ -3445,11 +3445,11 @@ paths:
         eng: Cancel Payment-Intent
         spa: Cancelar Payment-Intent
         por: Cancelar Payment-Intent
-      description: This endpoint allows you to cancel a Payment-Intent only in the authorization flow
+      description: This endpoint allows for the cancellation of a Payment-Intent solely during the authorization phase. A 204 response code confirms the successful cancellation, and as a result, the response body will be empty.
       x-description-i18n:
-        eng: This endpoint allows you to cancel a Payment-Intent only in the authorization flow
-        spa: Este endpoint le permite cancelar una Payment-Intent solo en el flujo de autorización
-        por: Este endpoint permite cancelar uma Payment-Intent apenas no fluxo de autorização
+        eng: This endpoint allows for the cancellation of a Payment-Intent solely during the authorization phase. A 204 response code confirms the successful cancellation, and as a result, the response body will be empty.
+        spa: Este endpoint permite cancelar una Payment-Intent únicamente en la fase de autorización. Un código de respuesta 204 confirma que el cancelamiento se ha realizado con éxito, y, por lo tanto, el cuerpo de la respuesta estará vacío.
+        por: Este endpoint possibilita o cancelamento de uma Payment-Intent apenas no fluxo de autorização. Um retorno de resposta 204 confirma o cancelamento bem-sucedido, e, consequentemente, o corpo da resposta estará vazio.
       parameters:
         - in: header
           name: Authorization
@@ -3466,7 +3466,6 @@ paths:
           name: id
           schema:
             type: string
-            required: true
           required: true
           description: Alphanumeric identification of the authorized Payment-Intent ID. For example 876542356788-mp.
           x-description-i18n:
