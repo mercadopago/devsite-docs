@@ -1,16 +1,8 @@
----
-sites_supported:
-  - mla
-  - mpe
-  - mco
-  - mlu
-  - mlm
-  - mlc
----
-
-# How to integrate the QR Buyer model
+# Integrate the QR buyer model
 
 To use this model, you must read the QR and send the code and the order information (value, items and quantity). This way, the transaction will be processed automatically in the Mercado Pago application.
+
+> For more information about this billing model, please refer to the documentation [Payments with QR Buyer model.](/developers/en/docs/qr-code/qr-buyer/qr-buyer-part-a)
 
 ## Pre-requirements 
 

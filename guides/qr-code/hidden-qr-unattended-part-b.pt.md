@@ -1,21 +1,12 @@
----
-sites_supported:
-  - mla
-  - mpe
-  - mco
-  - mlu
-  - mlm
-  - mlc
-  - mlb
----
-
-# Integrar o modelo autônomo do QR
+# Integrar o modelo desatendido do QR
 
 > WARNING
 >
 > Contato comercial necessário
 >
 > Você só pode integrar este produto se o seu contato comercial compartilhar todas as informações necessárias para isso.
+>
+> Para saber mais informações sobre este modelo de cobrança, acesse a documentação [Pagamentos QR modelo desatendido.](/developers/pt/docs/qr-code/qr-unattended/qr-unattended-part-a)
 
 Para integrar o modelo desatendido, é necessário: 
   
@@ -142,5 +133,3 @@ Deve informar ao seu assessor técnico atribuído, o URL base de seu domínio ao
 > ATENÇÃO
 > 
 > A integração não dará certo se você não cumprir este passo. 
-
----

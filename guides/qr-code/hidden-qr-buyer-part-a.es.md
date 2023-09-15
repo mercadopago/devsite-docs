@@ -1,13 +1,3 @@
----
-sites_supported:
-  - mla
-  - mpe
-  - mco
-  - mlu
-  - mlm
-  - mlc
----
-
 # Pagos con QR modelo comprador
 
 > WARNING
@@ -37,4 +27,6 @@ Sus principales características son:
 - Permite realizar pagos offline (sin conexión de internet) para el pagador. 
 - Cuando el pago se envía a la API de cobros, se responde con la validación, lo que logra que se verifiquen las transacciones de forma sincronizada.
 
----
+## Integración
+
+Para integrar este modelo de facturación, accede a la documentación sobre [Integrar QR modelo comprador](/developers/es/docs/qr-code/qr-buyer/qr-buyer-part-b)
