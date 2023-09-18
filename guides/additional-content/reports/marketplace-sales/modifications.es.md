@@ -209,7 +209,7 @@ curl --location --request PUT 'https://api.mercadopago.com/v1/reports/marketplac
 
 ## PUT Notifier
 
-### Curl email
+### Email
 ```curl
 curl --location --request PUT 'https://api.mercadopago.com/v1/reports/notifiers/{{notifier_id}}' \
 --header 'Authorization: Bearer {{TOKEN}}' \
@@ -240,7 +240,7 @@ curl --location --request PUT 'https://api.mercadopago.com/v1/reports/notifiers/
 }
 ```
 
-### Curl SFTP
+### SFTP
 ```curl
 curl --location --request PUT 'https://api.mercadopago.com/v1/reports/notifiers/{{notifier_id}}?type=ftp' \
 --header 'Authorization: Bearer {{TOKEN}}' \
