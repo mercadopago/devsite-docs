@@ -1,37 +1,37 @@
 # Reporte de ventas del Marketplace de Mercado Pago
 
-## ¿Qué es el reporte de ventas del Marketplace de Mercado Pago?
+El Reporte de Ventas del Marketplace de Mercado Pago proporciona una **visión completa de las transacciones de los vendedores vinculados**, disponible para su descarga en formatos _csv_ y _json_. Este reporte detalla las operaciones realizadas durante un período de tiempo específico, abarcando desde las diferentes tarifas (_fees_) relacionadas con cada transacción hasta casos de liquidación, bloqueo y desbloqueo financiero. En él, también podrás encontrar datos importantes como el monto total de la transacción, tarifa del marketplace, tarifa de Mercado Pago y monto total de dinero recibido
 
-El reporte de ventas del Marketplace de Mercado Pago es un nuevo tipo de informe, descargable en formato *csv* y *xlsx*, que te **permite conocer toda la información relacionada a los movimientos de tus selleres vinculados**. Contiene el detalle de las transacciones realizadas en un período de tiempo, las diferentes tarifas (fees) relacionadas a cada movimiento, y también los casos de liquidación de dinero, bloqueos y desbloqueos.
+> NOTE
+>
+> Importante
+>
+> Este reporte solo puede ser utilizado a través de la API.
 
-Por el momento, el reporte de ventas del Marketplace de Mercado Pago está disponible solamente vía API.
+## Descargar reporte
 
-## ¿Cómo descargo el reporte?
+Para descargar el reporte de ventas del Marketplace de Mercado Pago, es necesario configurarlo a través de la API. Este proceso se puede realizar de dos formas: **manualmente** o **automáticamente**. Sin embargo, en ambas opciones, es necesario realizar algunas configuraciones preliminares como se indica a continuación.
 
-La descarga del reporte de ventas del Marketplace de Mercado Pago deberá ser configurada vía API. Puede solicitarse de dos maneras, manual o automática, pero en ambos casos será necesario realizar algunas configuraciones previas, por ejemplo:
    - Frecuencia.
    - Listado de mails que recibirán el reporte.
    - Listado de columnas o atributos que se desean incluir.
 
-Ten en cuenta que la generación del reporte lleva unos minutos dependiendo del período de tiempo que quieras que incluya. Una vez disponible, lo podrás descargar desde un link que te enviaremos por email, o a través de la API.
+> NOTE
+>
+> Nota
+> 
+> Tenga en cuenta que la creación del reporte puede llevar algunos minutos, variando según el intervalo de tiempo seleccionado. Una vez que esté listo, proporcionaremos un enlace de descarga que recibirá por email o podrá acceder a través de la API.
 
-### Valores del reporte
+## Usar el reporte
 
-En el reporte de ventas del Marketplace de Mercado Pago encontrarás el detalle de cada transacción realizada por un seller vinculado, en el plazo de tiempo seleccionado, incluyendo: monto total de la transacción, *fee del marketplace*, *fee* de Mercado Pago y monto total de dinero recibido.
+El reporte puede ser utilizado como una **herramienta de conciliación** entre el total de transacciones realizadas por tus vendedores vinculados en nuestra plataforma con tus sistemas o herramientas de conciliación.
 
-## ¿Para qué usar el reporte?
+Al ser creado, proporciona información detallada como fechas, conceptos, _status_, montos y tarifas de cada transacción, así como la identificación del _seller_ responsable. El reporte es especialmente útil para:
 
-### Usa el reporte para conciliar
+ 1. Rastrear las ventas de los vendedores vinculados durante períodos específicos.
+ 2. Identificar los vendedores que tienen un mayor impacto económico.
+ 3. Establecer tarifas preferenciales basadas en el volumen de ventas.
+ 4. Coordinar campañas colaborativas con los vendedores.
+ 5. Evaluar la prevalencia de diferentes medios de pago, como débito, crédito y dinero en cuenta.
 
-**Este reporte se usa para conciliar** el dinero total de las transacciones realizadas por tus sellers en nuestra plataforma con tus sistemas o herramientas de conciliación.
-
-Genera el reporte de ventas cada vez que necesites conciliar el detalle del dinero facturado entre dos fechas. Podrás saber cuándo se realizó cada transacción, bajo qué conceptos, su *status*, montos, tarifas, y el nombre de usuario del seller que la realizó.
-
-### Usa el reporte para conocer tu historial
-
-Puedes usar el reporte para hacer un seguimiento detallado de las ventas realizadas por los sellers vinculados a tu marketplace en un plazo de tiempo dado.
-A su vez, este reporte te permitirá:
-   - Analizar cuáles son los sellers que generan un mayor impacto económico.
-   - Asignar tarifas preferenciales a sellers en base a ventas.
-   - Generar campañas en conjunto con los sellers.
-   - Conocer cuáles son los medios de pago más y menos utilizados (débito, crédito, dinero en cuenta, etc.).
+Recomendamos el uso de este reporte siempre que necesite una conciliación financiera detallada entre dos fechas específicas.

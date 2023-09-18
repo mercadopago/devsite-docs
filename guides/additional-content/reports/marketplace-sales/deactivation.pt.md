@@ -1,8 +1,17 @@
 # Desativação
 
-Se desejar, você pode desativar uma estrutura, notificação ou evento previamente criados. Para isso, utilize os seguintes endpoints, dependendo do que deseja desativar.
+Caso queira desativar uma estrutura, notificação ou evento criados anteriormente, utilize os _endpoints_ correspondentes listados a seguir.
+
+> WARNING
+>
+> Importante
+>
+> Se a solicitação for bem-sucedida, não haverá resposta. Se houver um erro, será retornado o código de _status_ 404. Após remover qualquer um dos elementos citados, é essencial confirmar se os relatórios, manuais ou automáticos, ainda operam adequadamente.
 
 ## DELETE Structures
+
+Esta chamada permitirá desativar os relatórios criados tanto manualmente quanto automaticamente.
+
 ```curl
 curl --location --request DELETE 'https://api.mercadopago.com/v1/reports/marketplace_sellers_sales/structures/{{structure_id}}' \
 --header 'Authorization: Bearer {{TOKEN}}' 
@@ -19,11 +28,3 @@ curl --location --request DELETE 'https://api.mercadopago.com/v1/reports/marketp
 	curl --location --request DELETE 'https://api.mercadopago.com/v1/reports/{{notifier_id}}' \
 --header 'Authorization: Bearer {{TOKEN}}' 
 ```
-
-> WARNING
->
-> Importante
->
-> Em caso de sucesso, as solicitações não gerarão uma resposta. Em caso de erro, um código de status 404 será retornado.
-
-> Lembre-se de que, após excluir qualquer um dos elementos mencionados acima, será necessário verificar se os relatórios, sejam eles manuais ou automáticos, continuam funcionando corretamente.

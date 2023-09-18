@@ -1,6 +1,6 @@
 # Consultas e validações
 
-Após criar o relatório, você pode fazer uma chamada GET à API conforme indicado abaixo para verificar a correta criação de estruturas, notificações ou de ambos os tipos de relatórios.
+Após a criação do relatório, é possível validar a estrutura e as notificações efetuando uma chamada **GET** à nossa API, conforme orientações a seguir. Isso se aplica a ambos os tipos de relatórios.
 
 ## GET Structures
 ```curl

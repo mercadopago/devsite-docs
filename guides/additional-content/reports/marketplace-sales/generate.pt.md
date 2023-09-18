@@ -1,6 +1,6 @@
 # Gerar relatório
 
-Até o momento, é possível gerar o relatório através da API. Para fazer isso, primeiro você deve [criar as configurações](/developers/pt/docs/checkout-pro/additional-content/reports/marketplace-sales-report/generate-report#bookmark_criação_da_configuração) necessárias, onde poderá definir os emails para os quais o relatório será enviado ou a frequência com que deseja que ele seja gerado, entre outras opções. Em seguida, você deve [criar o relatório](/developers/pt/docs/checkout-pro/additional-content/reports/marketplace-sales-report/generate-report#bookmark_criação_dos_relatórios), que pode ser de **forma automática** (_event_) ou **manual** (_statement_).
+Para gerar o relatório, primeiro você deve [criar as configurações](/developers/pt/docs/checkout-pro/additional-content/reports/marketplace-sales-report/generate-report#bookmark_criação_da_configuração) necessárias, onde poderá definir os emails para os quais o relatório será enviado ou a frequência com que deseja que ele seja gerado, entre outras opções. Em seguida, você deve [criar o relatório](/developers/pt/docs/checkout-pro/additional-content/reports/marketplace-sales-report/generate-report#bookmark_criação_dos_relatórios), que pode ser de **forma automática** (_event_) ou **manual** (_statement_).
 
 > NOTE
 >
@@ -9,6 +9,7 @@ Até o momento, é possível gerar o relatório através da API. Para fazer isso
 > Para gerar os relatórios, será necessário ter o Access Token de suas credenciais de produção. Este é uma chave privada da aplicação que sempre deve ser usada no backend para gerar pagamentos. Se você ainda não possui essas informações, siga as etapas descritas em [Gerar Access Token](/developers/pt/docs/checkout-pro/additional-content/reports/marketplace-sales-report/generate-report#bookmark_gerar_access_token).
 
 ## Gerar Access Token
+
 As credenciais são senhas exclusivas usadas para identificar uma integração em sua conta. Elas desempenham um papel fundamental na captura segura de pagamentos em lojas online e outras aplicações. Você pode encontrá-las em **Detalhes da aplicação > Credenciais** dentro do [Painel do desenvolvedor](https://www.mercadopago.com.uy/developers/panel/app) ou em sua conta do Mercado Pago, acessando [Seu negócio > Configurações > Gestão e administração > Credenciais](https://www.mercadopago.com.uy/settings/account/credentials).
 
 Existem dois tipos diferentes de credenciais:
@@ -26,12 +27,14 @@ Para gerar o relatório de vendas, você deve usar o seu **Access Token** de pro
 
 ![Gerar Access Token](/images/manage-account/reports/marketplace-sales/image1pt.png)
 
-## Criação da configuração
+## Criar configuração
+
 Antes de gerar o relatório, você deve criar as configurações correspondentes, o que permitirá personalizar os emails para os quais o relatório será enviado, a frequência de geração e sua estrutura.
 
 A criação das configurações consiste em 2 etapas: primeiro, definir a **estrutura do relatório** e, em seguida, configurar as **vias de notificação**.
 
-### Estrutura do relatório
+### Estruturar relatório
+
 Criar a estrutura do relatório permite definir as características que ele terá no momento da geração. Através dos _structures_, você pode especificar o fuso horário em que deseja que o relatório seja gerado, adicionar um prefixo para identificar o arquivo gerado e incorporar a quantidade de colunas desejadas, juntamente com separadores de colunas e decimais.
 
 Para definir esta estrutura, faça a seguinte chamada à API, levando em consideração as especificações da tabela abaixo:
@@ -132,14 +135,14 @@ curl --location --request POST 'https://api.mercadopago.com/v1/reports/marketpla
 | Campo                      | Descrição                                                                                          |
 |----------------------------|----------------------------------------------------------------------------------------------------|
 | `display_timezone` (opcional)  | Este campo determina a data e a hora que são exibidas nos relatórios. Se você não configurar este campo com um fuso horário, o sistema usará o valor padrão GMT-04. Se você escolher um fuso horário que utiliza horário de verão, será necessário fazer o ajuste manual quando houver mudança de horário. |
-| `columns` (obrigatório)       | Campo com os detalhes das colunas a serem incluídas em seu relatório. Encontre todos os possíveis valores na seção [Glossário](). |
+| `columns` (obrigatório)       | Campo com os detalhes das colunas a serem incluídas em seu relatório. Encontre todos os possíveis valores na seção [Glossário](/developers/es/docs/checkout-pro/additional-content/reports/marketplace-sales-report/report-fields). |
 | `name` (obrigatório)          | Campo para atribuir um nome à **estrutura**. |
 | `file_format.prefix` (obrigatório) | Prefixo que compõe o nome do relatório uma vez gerado. |
 | `file_column_separator` (obrigatório) | Caractere que você pode usar no arquivo .csv quando não deseja que o separador seja um ponto e vírgula. |
 
 ### Vias de notificação
-Após criar a estrutura do relatório, você precisará definir os métodos pelos quais deseja receber as notificações. Atualmente, você pode recebê-las por email ou por _SFTP_.
-Para fazer isso, você deve criar um _notifier_, conforme mostrado abaixo. Observe as especificações de cada campo, detalhadas na tabela a seguir.
+
+Depois de estabelecer a estrutura do relatório, determine como deseja receber as notificações, seja por email ou SFTP. Configure um _notifier_ conforme mostrado abaixo, e atente-se às características de cada campo descritas na tabela a seguir.
 
 #### Email
 ```curl
@@ -216,14 +219,15 @@ curl --location --request POST 'https://api.mercadopago.com/v1/reports/notifiers
 | `type` (obrigatório) | Define o tipo de notificação a ser configurado. Valores possíveis: **email**; **ftp**.                                      |
 | `data` (obrigatório) | Contém as informações do destinatário do **notifier**. Dependendo do valor indicado em `type`, pode conter os seguintes objetos: <br><br>- **email:** Contém o campo `recipients`, onde você pode indicar os emails para os quais o relatório será enviado. Pode ser mais de um, se desejar. <br><br>- **ftp:** Contém os seguintes campos: <br> - `ip`: URL do servidor FTP <br>   - `port`: Porta do servidor FTP <br>   - `password`: Senha de acesso ao servidor FTP <br>   - `protocolo`: `SFTP` <br>   - `username`: Nome de usuário para acessar o servidor FTP <br>   - `remote_dir`: Diretório remoto de destino no servidor FTP.   |
 
-## Criação dos relatórios
-Após criar as configurações necessárias, você precisará criar o relatório. Para isso, tem duas opções:
- * **Agendar um evento**: Isso permitirá automatizar a criação de relatórios, definindo sua periodicidade.
- * **Gerar um evento manualmente**: Você poderá criar um relatório sob demanda, definindo o período que deseja abranger.
+## Criar relatório
+
+Após criar as configurações iniciais, você tem duas opções para criar o relatório:
+ * **Agendar um evento**: Isso automatiza a criação de relatórios, permitindo que você defina a frequência.
+ * **Gerar um evento manualmente**: Você poderá criar um relatório sob demanda para um período específico de sua escolha
 
 ### Agendar um relatório (Events)
-O agendamento de um evento permite que você crie relatórios automaticamente, definindo sua periodicidade.
-Para fazer isso, você deve criar um _event_, conforme mostrado abaixo. Além disso, tenha à mão as configurações que você criou anteriormente e as informações da tabela abaixo para poder agendar a criação do relatório com sucesso.
+
+Ao agendar um evento, é possível gerar relatórios de forma automática e definir sua periodicidade. Para executar essa ação, crie um _event_, seguindo o exemplo abaixo. Certifique-se de ter em mãos as configurações previamente estabelecidas e as informações da tabela a seguir para garantir um agendamento bem-sucedido do relatório.
 
 ```curl
 curl --location --request POST 'https://api.mercadopago.com/v1/reports/marketplace_sellers_sales/events' \
@@ -277,9 +281,10 @@ Você pode ver a descrição dos campos presentes nos _curls_ na tabela abaixo.
 | `notifier_id` (obrigatório)  | Campo para atribuir a forma pela qual deseja receber as notificações. Você deve preenchê-lo com a identificação obtida na resposta à criação das notificações.                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 
 ### Gerar relatório manualmente (Statements)
-A geração manual de um relatório permite que você crie um relatório sob demanda, definindo o período que deseja abranger.
 
-Para realizar essa criação manual, você precisará criar uma _statement_, como mostrado abaixo. Além disso, tenha em mãos as configurações que você criou anteriormente e as informações da tabela abaixo para poder gerar um relatório com sucesso.
+A criação manual possibilita gerar um relatório sob demanda, especificando o intervalo de tempo desejado.
+
+Para isso, crie uma _statement_, conforme mostrado abaixo. Além disso, tenha em mãos as configurações que você criou anteriormente e as informações da tabela a seguir para garantir a criação bem-sucedida do relatório.
 
 ```curl
 curl --location --request POST 'https://api.mercadopago.com/v1/reports/marketplace_sellers_sales/statements' \

@@ -1,18 +1,20 @@
 # Usos del reporte
 
-## ¿Cómo usar el reporte?
-
 Una vez listo y descargado el reporte, tendrás un archivo para consultar las planillas de cálculo o importar en el programa de conciliación que desees.
 
 Para consultarlo, te recomendamos descargarlo en formato *.csv* y abrirlo, o bien en una hoja de cálculos, o bien en cualquier programa de visualización. Si eliges esta última opción, es importante que configures previamente el programa para que soporte el formato *UTF-8*, y así evites problemas de lectura.
 
-### ¿Qué contiene el reporte?
+### Contenido del reporte
 
-El reporte está compuesto por un listado de transacciones realizadas por los *sellers* vinculados a un marketplace. Cada fila representa una transacción independiente con el detalle de los distintos montos y *fees*, así como su **status** y **status_detail**. El campo de `status` indica si el pago fue aprobado o no, mientras que el campo `status_detail` proporciona más detalles, incluidos los motivos del rechazo. Puedes encontrar más información sobre los ***status*** y ***status_detail*** en la sección **Parámetros de respuesta** de la documentación de la [API de Pagos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments/post).
+El reporte enumera las transacciones realizadas por vendedores asociados a un marketplace. Cada línea detalla una transacción independiente, incluyendo valores, tarifas, *status* y *status_detail*. Mientras que el campo *status* indica la aprobación del pago, *status_detail* proporciona información adicional, como razones de rechazo.
+
+Para obtener más detalles sobre *status* y *status_detail*, consulta la sección "Parámetros de respuesta" en la documentación de la [API de Pagos](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments/post).
 
 > NOTE
 >
-> Además, en la columna Net Received Amt LC encontrarás el impacto real sobre tu dinero.
+> Nota
+> 
+> Además, en la columna **Net Received Amt LC** encontrarás el impacto real sobre tu dinero.
 
 Observa cómo está compuesto el reporte de ventas de *Marketplace* en este ejemplo para identificar las operaciones y leer tus propios reportes:
 

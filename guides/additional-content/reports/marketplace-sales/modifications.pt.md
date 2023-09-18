@@ -1,6 +1,6 @@
 # Modificações
 
-Se, após consultar as configurações de estruturas, notificações ou eventos, desejar fazer alguma modificação, você pode fazê-lo através dos seguintes endpoints:
+Se, após revisar as configurações de estruturas, notificações ou eventos, você quiser fazer alterações, utilize os _endpoints_ especificados a seguir.
 
 > WARNING
 >

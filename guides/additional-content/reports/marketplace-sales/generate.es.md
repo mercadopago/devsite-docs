@@ -1,6 +1,6 @@
 # Generar reporte
 
-La generación del reporte, por ahora, sólo puede hacerse vía API. Para ello deberás, primero, realizar la [creación de las configuraciones](/developers/es/docs/checkout-pro/additional-content/reports/marketplace-sales-report/generate-report#bookmark_creación_de_la_configuración) necesarias, donde podrás definir los emails a los que se enviará el reporte o la frecuencia con la que quieres que se genere, entre otras opciones. Luego, deberás [crear el reporte](/developers/es/docs/checkout-pro/additional-content/reports/marketplace-sales-report/generate-report#bookmark_creación_de_los_reportes), que podrá ser de **forma automática** (_event_) o **manual** (_statement_).
+Para generar el reporte, primero debes realizar la [creación de las configuraciones](/developers/es/docs/checkout-pro/additional-content/reports/marketplace-sales-report/generate-report#bookmark_creación_de_la_configuración) necesarias, donde podrás definir los emails a los que se enviará el reporte o la frecuencia con la que quieres que se genere, entre otras opciones. Luego, deberás [crear el reporte](/developers/es/docs/checkout-pro/additional-content/reports/marketplace-sales-report/generate-report#bookmark_creación_de_los_reportes), que podrá ser de **forma automática** (_event_) o **manual** (_statement_).
 
 > WARNING
 >
@@ -9,6 +9,7 @@ La generación del reporte, por ahora, sólo puede hacerse vía API. Para ello d
 > Para generar los reportes, será necesario contar con el Access Token de tus credenciales de producción. Se trata de una clave privada de la aplicación, que siempre debe ser usada en el backend para generar pagos. En caso de no contar con esta información todavía, sigue los pasos descritos en [Generar Access Token](/developers/es/docs/checkout-pro/additional-content/reports/marketplace-sales-report/generate-report#bookmark_generar_access_token).
 
 ## Generar Access Token
+
 Las credenciales son contraseñas exclusivas utilizadas para identificar una integración en tu cuenta. Desempeñan un papel fundamental en la captura segura de pagos en tiendas en línea y otras aplicaciones. Puedes encontrarlas en **Detalles de la aplicación > Credenciales** dentro del [Panel del desarrollador](https://www.mercadopago.com.uy/developers/panel/app) o en tu cuenta de Mercado Pago, accediendo a [Tu negocio > Configuraciones > Gestión y administración > Credenciales](https://www.mercadopago.com.uy/settings/account/credentials).
 
 Existen dos tipos diferentes de credenciales:
@@ -25,11 +26,13 @@ Para poder generar el reporte de ventas, deberás utilizar tu **Access Token** p
 
 ![Generar Access Token](/images/manage-account/reports/marketplace-sales/image1.png)
 
-## Creación de la configuración
+## Crear configuración
+
 Previo a la generación del reporte, deberás crear las configuraciones del mismo, que te permitirán personalizar los emails a los que se enviará el reporte o la frecuencia con la que quieres que se genere, además de su estructura.
 La creación de configuraciones consta de 2 pasos: primero, definir la **estructura del reporte**, y luego, configurar las **vías de notificación**.
 
-### Estructura del reporte
+### Estructurar reporte
+
 Crear la estructura del reporte te permitirá definir las características que este tendrá al momento de su generación. 
 A través de _structures_ podrás indicar la zona horaria en la que quieres que el reporte se genere, agregar un prefijo para identificar el archivo generado e incorporar la cantidad de columnas deseadas, junto con separadores de columnas y decimales. 
 Para definir esta estructura, realiza el siguiente llamado a la API, teniendo en cuenta las especificaciones de la tabla a continuación:
@@ -130,15 +133,14 @@ curl --location --request POST 'https://api.mercadopago.com/v1/reports/marketpla
 | Campo                       | Descripción                                                                                                                                                                                                                                                                                                                                                                   |
 |-----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `display_timezone` (opcional) | Este campo determina la fecha y la hora que se visualiza en los reportes. Si no configuras este campo con una zona horaria, el sistema tomará por defecto el valor GMT-04. Si eliges una zona horaria que utiliza horario de verano, es necesario que hagas el ajuste manual cuando cambie la hora.                                                                                                                                                                    |
-| `columns` (obrigatório)       | Campo con el detalle de columnas a incluir en tu reporte. Encuentra todos los posibles valores en la sección Glosario.                                                                                                                                                                                                                                                                                                                        |
+| `columns` (obrigatório)       | Campo con el detalle de columnas a incluir en tu reporte. Encuentra todos los posibles valores en la sección [Glosario](/developers/es/docs/checkout-pro/additional-content/reports/marketplace-sales-report/report-fields).                                                                                                                                                                                                                                                                                                                        |
 | `name` (obrigatório)          | Campo para asignar nombre a la estructura.                                                                                                                                                                                                                                                                                                                                                                                                   |
 | `file_format.prefix` (obrigatório) | Prefijo que compone el nombre del reporte una vez generado.                                                                                                                                                                                                                                                                                                                                                                                  |
 | `file_column_separator` (obrigatório) | Caracter que puedes usar en el archivo .csv cuando no quieras que el separador sea un punto y coma.                                                                                                                                                                                                                                                                                                                                         |
 
 ### Vías de notificación
 
-Una vez creada la estructura del reporte, deberás definir las vías por las que quieres recibir las notificaciones. Actualmente, puedes recibirlas vía email o vía SFTP.
-Para ello, deberás crear un notifier, tal como se muestra a continuación. Ten en cuenta las especificaciones de cada campo, detalladas en la tabla debajo.
+Después de establecer la estructura del reporte, determine cómo desea recibir las notificaciones, ya sea por email o SFTP. Configure un _notifier_ como se muestra a continuación y preste atención a las características de cada campo descritas en la tabla siguiente.
 
 #### Email
 ```curl
@@ -215,15 +217,16 @@ curl --location --request POST 'https://api.mercadopago.com/v1/reports/notifiers
 | `type` (obligatorio) | Define el tipo de notificación a configurar. Valores posibles: **email**; **ftp**.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | `data` (obligatorio) | Contiene la información del destinatario del **notifier**. Dependiendo del valor indicado en `type`, puede contener los siguientes objetos: <br><br> - **email:** Contendrá el campo `recipients`, donde podrás indicar los emails a los que el reporte será enviado. Puede ser más de uno, si lo deseas. <br><br> - **ftp:** Contendrá los siguientes campos: <br>   - `ip`: URL del servidor FTP <br>   - `port`: Puerto del servidor FTP <br>   - `password`: Contraseña de acceso al servidor FTP <br>   - `protocolo`: `SFTP` <br>   - `username`: Usuario para acceder al servidor FTP <br>   - `remote_dir`: Carpeta destino en el servidor FTP.   |
 
-## Creación de los reportes
-Luego de crear las configuraciones necesarias, deberás realizar la creación del reporte. Para esto, tienes dos opciones:
- * **Programar un evento**: te permitirá automatizar la creación de reportes, indicando su periodicidad. 
- * **Generar un evento manualmente**: podrás crear un reporte a demanda, definiendo el período que deseas que abarque.
+## Crear reporte
+
+Después de crear las configuraciones iniciales, tienes dos opciones para crear el reporte:
+
+* **Programar un evento**: Esto automatiza la creación de reportes, indicando su periodicidad. 
+* **Generar un evento manualmente**: Puedes crear un reporte a demanda, definiendo el período que deseas que abarque.
 
 ### Programar un reporte (Events)
 
-La programación de un evento te permitirá generar reportes de manera automática, definiendo su periodicidad. 
-Para realizar esta programación, deberás crear un _event_, tal como se muestra a continuación. Ten a mano, además, las configuraciones que creaste previamente y la información de la tabla aquí debajo para poder programar la generación de manera exitosa.
+Al programar un evento, es posible generar reportes de manera automática y establecer su periodicidad. Para realizar esta programación, crea un _event_ siguiendo el ejemplo a continuación. Asegúrate de tener las configuraciones previamente establecidas y la información de la tabla a continuación a mano para garantizar una programación exitosa del reporte.
 
 ```curl
 curl --location --request POST 'https://api.mercadopago.com/v1/reports/marketplace_sellers_sales/events' \
@@ -278,8 +281,9 @@ Puedes ver la descripción de los campos presente en los _curls_ en la tabla a c
 
 ### Generar reporte manualmente (Statements)
 
-La generación de manera manual te permitirá crear un reporte a demanda, definiendo el período que deseas que abarque.
-Para realizar esta generación manual, deberás crear un _statement_, tal como se muestra a continuación. Ten a mano, además, las configuraciones que creaste previamente y la información de la tabla aquí debajo para poder generar un reporte de manera exitosa.
+La creación manual permite generar un reporte a demanda, especificando el intervalo de tiempo deseado.
+
+Para hacerlo, crea una _statement_, como se muestra a continuación. Además, asegúrate de tener a mano las configuraciones que creaste previamente y la información de la tabla siguiente para garantizar la creación exitosa del reporte.
 
 ```curl
 curl --location --request POST 'https://api.mercadopago.com/v1/reports/marketplace_sellers_sales/statements' \

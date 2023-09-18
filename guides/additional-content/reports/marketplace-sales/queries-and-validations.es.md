@@ -1,6 +1,6 @@
 # Consultas y validaciones
 
-Después de crear el reporte, puedes realizar un llamado GET a la API como se indica a continuación para comprobar la correcta creación de estructuras, notificaciones, o de ambos tipos de reportes.
+Después de crear el reporte, puedes validar la estructura y las notificaciones haciendo una llamada **GET** a nuestra API, siguiendo las instrucciones a continuación. Esto se aplica a ambos tipos de reportes.
 
 ## GET Structures
 ```curl
