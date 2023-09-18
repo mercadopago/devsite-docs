@@ -223,14 +223,6 @@ paths:
                             spa: Es el campo de apellido del comprador.
                             por: É o campo do sobrenome do comprador.
                           example: Test
-                        e-mail:
-                          type: string
-                          description: Payer's e-mail
-                          x-description-i18n:
-                            eng: Payer's e-mail
-                            spa: Email del comprador
-                            por: E-mail do comprador
-                          example: test_user_123@testuser.com
                         phone:
                           type: object
                           description: Buyer's phone.
@@ -426,7 +418,7 @@ paths:
                             spa: Indica si el envío es express o no. Los valores válidos son los siguientes - "1" si lo es, "0" si no lo es.
                             por: Indica se o envio é expresso ou não. Os valores válidos são os seguintes - "1" se for, "0" se não for.
                           example: 1
-                        pickup_on_seller:
+                        pick_up_on_seller:
                           type: string
                           description: Indicates if the customer will pick up the product at the seller's address. Valid values are as follows - "1" if it is, "0" if it isn't.
                           x-description-i18n:
