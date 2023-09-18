@@ -1,18 +1,10 @@
----
-sites_supported:
-  - mla
-  - mpe
-  - mco
-  - mlu
-  - mlm
-  - mlc
----
-
-# Como integrar QR modelo comprador
+# Integrar QR modelo comprador
 
 Para cobrar a través de este modelo, es necesario leer el QR y enviar el código de esta lectura junto con la información del pedido (valor, artículos, cantidad). De esta forma, la transacción se procesará automáticamente en la aplicación de Mercado Pago.
 
-## Requisitos  previos
+> Para obtener más información sobre este modelo de facturación, consulta la documentación [Pagos con QR modelo comprador.](/developers/es/docs/qr-code/qr-buyer/qr-buyer-part-a)
+
+## Requisitos previos
 
 Para que la integración funcione correctamente, es necesario:
 

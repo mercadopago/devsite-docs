@@ -30,7 +30,6 @@ Para activar este tipo de pago, sigue los pasos a continuación.
 > Por el momento, no es posible configurar pagos en cuotas a través del Checkout Transparente.
 
 ------------
-
 ----[mla, mlu, mlc, mco, mpe, mlm]----
 ## Pagos con Checkout API
 
@@ -42,7 +41,6 @@ Para activar este tipo de pago, sigue los pasos a continuación.
 1. En "Mercado Pago", haz clic en el botón **Administrar**.
 1. En la sección **Métodos de pago disponibles con Mercado Pago**, activa la opción "Tarjetas de crédito".
 ------------
-
 ----[mla, mlu, mlc, mco, mpe]----
 > WARNING
 >
@@ -51,7 +49,6 @@ Para activar este tipo de pago, sigue los pasos a continuación.
 > Por el momento, no es posible configurar pagos en cuotas a través del Checkout API.
 
 ------------
-
 ----[mlm]----
 > WARNING
 >
@@ -61,11 +58,4 @@ Para activar este tipo de pago, sigue los pasos a continuación.
 
 ------------
 
-
-<p>&nbsp;</p>
-
 ![Activating Checkout API](/images/wix/activacion-choapi.gif)
-<p>&nbsp;</p>
-
-
-

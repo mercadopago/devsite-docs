@@ -1,14 +1,3 @@
----
-sites_supported:
-  - mla
-  - mpe
-  - mco
-  - mlu
-  - mlm
-  - mlc
-  - mlb
----
-
 # Pagamentos QR modelo desatendido
 
 > WARNING
@@ -31,10 +20,6 @@ As características principais são:
 - Quando o cliente escaneia o QR do caixa, Mercado Pago realiza um request de forma recorrente ao URL associado ao caixa e quando o pedido estiver pronto exibirá ao cliente no app o valor a pagar. 
 - O cliente poderá pagar somente se existe um pedido criado para o QR que escaneou. 
 
-> NOTE
-> 
-> OBS.
-> 
 > O URL deverá objetivar um serviço de seu domínio onde você exponha por caixa de sua sucursal se tem ou não um pedido pronto para pagamento. 
 
 ## Fluxo do modelo
@@ -62,10 +47,6 @@ Explicamos a você o funcionamento do modelo desatendido:
    (B) Mercado Pago restitui os dados correspondentes, como seu estado, informação de pagamentos, entre outros. 
 9. Se o pedido estiver encerrado (**closed**), o comprovante pode ser impresso para finalizar a transação. 
 
-> NOTE
-> 
-> OBS.
-> 
 > No item 5 deverá executar os passos 8A e 8B para obter o estado do pedido. 
 
 ## Caixa para el modelo desatendido
@@ -89,4 +70,6 @@ https://api.mercadopago.com/pos \
 ```
 ]]]
 
----
+## Integração
+
+Para integrar este modelo de cobrança, acesse a documentação de [Integrar QR modelo desatendido](/developers/pt/docs/qr-code/qr-unattended/qr-unattended-part-b).
