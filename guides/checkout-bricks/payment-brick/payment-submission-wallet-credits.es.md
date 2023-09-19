@@ -9,7 +9,7 @@ Los pagos con **Cuenta de Mercado Pago y Financiación sin tarjeta**, la opción
 
 Si el usuario selecciona esta opción como medio de pago, el `preferenceId` enviado en la inicialización del Brick es el encargado de redirigir al comprador al sitio web de Mercado Pago, donde el pago se realizará directamente en nuestro sitio. 
 
-Para redirigir al comprador a tu sitio, puede configurar `back_urls` como se describe [en este artículo](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/preferences#bookmark_redirigir_al_comprador_a_tu_sitio_web).
+Para redirigir al comprador a tu sitio, puede configurar `back_urls` como se describe [en este artículo](/developers/es/docs/checkout-bricks/payment-brick/advanced-features/preferences#bookmark_redirigir_al_comprador_a_tu_sitio_web).
  
 ------------
 ----[mlm]---- 
@@ -23,7 +23,7 @@ Los pagos con **Cuenta de Mercado Pago y Financiamiento sin tarjeta**, la opció
 
 Si el usuario selecciona esta opción como medio de pago, el `preferenceId` enviado en la inicialización del Brick es el encargado de redirigir al comprador al sitio web de Mercado Pago, donde el pago se realizará directamente en nuestro sitio. 
 
-Para redirigir al comprador a tu sitio, puede configurar `back_urls` como se describe [en este artículo](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/preferences#bookmark_redirigir_al_comprador_a_tu_sitio_web).
+Para redirigir al comprador a tu sitio, puede configurar `back_urls` como se describe [en este artículo](/developers/es/docs/checkout-bricks/payment-brick/advanced-features/preferences#bookmark_redirigir_al_comprador_a_tu_sitio_web).
 
 ------------
 
