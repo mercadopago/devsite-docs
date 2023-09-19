@@ -17,8 +17,8 @@ paths:
       description: This endpoint provides the functionality to create and process a new Payment Intent. If you wish to defer the processing at the time of creation, simply omit the "payment_method" parameter. Subsequently, you can modify the Payment Intent using the PATCH /v1/payment-intents/:id endpoint for updates
       x-description-i18n:
         eng: This endpoint provides the functionality to create and process a new Payment Intent. If you wish to defer the processing at the time of creation, simply omit the "payment_method" parameter. Subsequently, you can modify the Payment Intent using the PATCH /v1/payment-intents/:id endpoint for updates
-        spa: Este endpoint permite crear y procesar una nueva Payment Intent. Si desea evitar el procesamiento inmediato durante la creación, simplemente omita el parámetro "payment_method". Posteriormente, puede modificar la Intención de Pago utilizando el endpoint PATCH /v1/payment-intents/:id para actualizaciones
-        por: Este endpoint oferece a capacidade de criar e processar uma nova Payment Intent. Se você deseja evitar o processamento imediato durante a criação, basta omitir o parâmetro "payment_method". Posteriormente, é possível modificar a Intenção de Pagamento utilizando o endpoint PATCH /v1/payment-intents/:id para atualizações
+        spa: Este endpoint permite crear y procesar una nueva Payment Intent. Si desea evitar el procesamiento inmediato durante la creación, simplemente omita el parámetro "payment_method". Posteriormente, puede modificar la Payment Intent utilizando el endpoint PATCH /v1/payment-intents/:id para actualizaciones
+        por: Este endpoint oferece a capacidade de criar e processar uma nova Payment Intent. Se você deseja evitar o processamento imediato durante a criação, basta omitir o parâmetro "payment_method". Posteriormente, é possível modificar a Payment Intent utilizando o endpoint PATCH /v1/payment-intents/:id para atualizações
       parameters:
         - in: header
           name: Authorization
