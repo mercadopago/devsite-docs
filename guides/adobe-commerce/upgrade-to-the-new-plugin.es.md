@@ -14,22 +14,22 @@ Para actualizar tu plugin e instalar la nueva versión, simplemente sigue los pa
 > Puedes instalar el nuevo plugin sin afectar el funcionamiento del plugin antiguo. Una vez que haya confirmado el correcto funcionamiento del nuevo plugin, procede a desactivar la versión anterior.
 
 ## Funcionalidades por versión
-| Plugin nuevo                          | Plugin antiguo                       |
-|--------------------------------------|--------------------------------------|
-| Pagos con tarjetas                   | Pagos con tarjetas                   |
-| Pix                                  | Pix                                  |
-| Medios offline                           | Medios offline                           |
-| Descuentos por productos y medios de pagos | Descuentos por productos y medios de pagos |
-| Cuotas **con** interés                   | Cuotas **con** interés                   |
-| Secure Fields / PCI                  | Secure Fields / PCI                  |
-| Cuotas **sin** Interes                   | Cuotas **sin** Interes                   |
-| Checkout Pro Modal                        | -                                    |
-| Buy Now Pay Later - Mercado Crédito    | -                                    |
-| Pagos con 2 tarjetas                 | -                                    |
-| Refunds directamente a través de la plataforma | -                             |
-| Fecha de vencimiento en medios offline    | -                                    |
-| Desactivar medios de Pago en Checkout Pro  | -                                    |
-| Guardar tarjetas                     | -                                    |
+| Funcionalidad                                    | Plugin Nuevo | Plugin Antiguo |
+|--------------------------------------------------|--------------|----------------|
+| Pagos con tarjetas                               | ✅           | ✅              |
+| Pix                                              | ✅           | ✅              |
+| Medios offline                                   | ✅           | ✅              |
+| Descuentos por productos y medios de pagos      | ✅           | ✅              |
+| Cuotas **con** interés                          | ✅           | ✅              |
+| Secure Fields / PCI                             | ✅           | ✅              |
+| Cuotas **sin** interés                          | ✅           | ✅              |
+| Checkout Pro Modal                              | ✅           | ❌              |
+| Buy Now Pay Later - Mercado Crédito              | ✅           | ❌              |
+| Pagos con 2 tarjetas                            | ✅           | ❌              |
+| Refunds directamente a través de la plataforma   | ✅           | ❌              |
+| Fecha de vencimiento en medios offline           | ✅           | ❌              |
+| Desactivar medios de Pago en Checkout Pro        | ✅           | ❌              |
+| Guardar tarjetas                                | ✅           | ❌              |
 
 > Las versiones antiguas siguen funcionando y reciben soporte de manera normal, pero sólo habrá nuevas actualizaciones para el nuevo plugin.
 
