@@ -36,4 +36,4 @@ To update your plugin by installing the new version, simply follow the installat
 >
 > Note
 >
-> If you are already using the new plugin, be sure to keep an eye out for the latest releases to take advantage of the new features. To update, simply follow the same method you used for installation previously, whether it's via [Composer](/developers/en/docs/adobe-commerce/installation/composer), [Adobe Commerce (Magento) Marketplace](/developers/en/docs/adobe-commerce/installation/magento-marketplace), or [FTP](/developers/en/docs/adobe-commerce/installation/ftp).
+> If you are already using the new plugin, be sure to keep an eye out for the latest releases to take advantage of the new features. To update, simply follow the same method you used for installation previously, whether it's via [Composer,](/developers/en/docs/adobe-commerce/installation/composer) [Adobe Commerce (Magento) Marketplace,](/developers/en/docs/adobe-commerce/installation/magento-marketplace) or [FTP.](/developers/en/docs/adobe-commerce/installation/ftp)
