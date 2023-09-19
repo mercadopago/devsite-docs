@@ -14,22 +14,22 @@ Para atualizar seu plugin instalando a nova versão, basta seguir os passos de i
 
 
 ## Funcionalidades por versão
-| Plugin novo                            | Plugin antigo                         |
-|----------------------------------------|--------------------------------------|
-| Pagamentos com cartões                 | Pagamentos com cartões                |
-| Pix                                    | Pix                                  |
-| Meios offline                          | Meios offline                         |
-| Descontos por produtos e meios de pagamento | Descontos por produtos e meios de pagamento |
-| Parcelas **com** juros                     | Parcelas **com** juros                    |
-| Secure Fields / PCI                    | Secure Fields / PCI                   |
-| Parcelas **sem** juros                     | Parcelas **sem** juros                    |
-| Checkout Pro Modal                          | -                                    |
-| Buy Now Pay Later - Mercado Crédito      | -                                    |
-| Pagamentos com 2 cartões               | -                                    |
-| Reembolsos diretamente através da plataforma | -                                    |
-| Data de vencimento em meios offline    | -                                    |
-| Desativar meios de pagamento em Checkout Pro | -                                    |
-| Salvar cartões                         | -                                    |
+| Funcionalidade                              | Plugin novo | Plugin antigo |
+|---------------------------------------------|-------------|---------------|
+| Pagamentos com cartões                      | ✅           | ✅             |
+| Pix                                         | ✅           | ✅             |
+| Meios offline                               | ✅           | ✅             |
+| Descontos por produtos e meios de pagamento | ✅           | ✅             |
+| Parcelas **com** juros                     | ✅           | ✅             |
+| Secure Fields / PCI                        | ✅           | ✅             |
+| Parcelas **sem** juros                     | ✅           | ✅             |
+| Checkout Pro Modal                         | ✅           | ❌             |
+| Buy Now Pay Later - Mercado Crédito        | ✅           | ❌             |
+| Pagamentos com 2 cartões                   | ✅           | ❌             |
+| Reembolsos diretamente através da plataforma | ✅           | ❌             |
+| Data de vencimento em meios offline        | ✅           | ❌             |
+| Desativar meios de pagamento em Checkout Pro | ✅           | ❌             |
+| Salvar cartões                             | ✅           | ❌             |
 
 > As versões antigas continuam funcionando e recebem suporte normalmente, mas só teremos novas atualizações para o novo plugin.
 
@@ -37,4 +37,4 @@ Para atualizar seu plugin instalando a nova versão, basta seguir os passos de i
 >
 > Nota
 >
-> O novo plugin é compatível com as versões 1.2, 1.3 e 1.4. Caso já esteja utilizando o novo plugin, que está disponível no [GitHub,](https://github.com/mercadopago/adb-payment) você pode atualizá-lo seguindo o mesmo método utilizado para instalação anteriormente (Composer, Adobe Commerce (Magento) ou via FTP).
+> Se você já utiliza o novo plugin, esteja atento aos lançamentos das versões mais recentes para aproveitar as novas funcionalidades. Para atualizar, basta seguir o mesmo método que utilizou para a instalação anteriormente, seja via [Composer](/developers/pt/docs/adobe-commerce/installation/composer), [Adobe Commerce (Magento)](/developers/pt/docs/adobe-commerce/installation/magento-marketplace) ou via do [FTP](/developers/pt/docs/adobe-commerce/installation/ftp).
