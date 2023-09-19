@@ -74,6 +74,48 @@ future_product_avaible:
 ---
 
 ------------
+----[mlm]----
+
+---
+future_product_avaible: 
+ - card_avaible: true
+ - card_icon: Pay
+ - card_title: Payment Brick
+ - card_description: Ofrece diferentes medios de pago entre los que podrán elegir tus clientes, con la posibilidad de guardar los datos de la tarjeta para futuras compras. Prueba la demostración del Brick antes de integrarlo.
+ - card_link: /developers/es/docs/checkout-bricks/payment-brick/introduction
+ - card_linkDescription: Saber más
+ - card_pillText: DISPONIBLE
+ - card_avaible: true
+ - card_icon: Wallet
+ - card_title: Wallet Brick
+ - card_description: Vincula la cuenta de Mercado Pago y permite pagos logueados. Prueba la demostración del Brick antes de integrarlo.
+ - card_link: /developers/es/docs/checkout-bricks/wallet-brick/introduction
+ - card_linkDescription: Saber más
+ - card_pillText: DISPONIBLE
+ - card_avaible: true
+ - card_icon: Card
+ - card_title: Card Payment Brick
+ - card_description: Ofrece pagos con tarjeta de crédito y débito. Prueba la demostración del Brick antes de integrarlo.
+ - card_link: /developers/es/docs/checkout-bricks/card-payment-brick/introduction
+ - card_linkDescription: Saber más
+ - card_pillText: DISPONIBLE
+ - card_avaible: true
+ - card_icon: Loading
+ - card_title: Status Screen Brick
+ - card_description: Informa a tus clientes los resultados del proceso de compra, luego de realizado el pago. Prueba la demostración del Brick antes de integrarlo.
+ - card_link: /developers/es/docs/checkout-bricks/status-screen-brick/introduction
+ - card_linkDescription: Saber más
+ - card_pillText: DISPONIBLE
+ - card_avaible: true
+ - card_icon: Check
+ - card_title: Review & Confirm
+ - card_description: Muestra un resumen de todo el proceso de compra, con la información más relevante, para que tus clientes puedan revisar antes de confirmar la compra.
+ - card_link: /developers/es/docs/checkout-bricks/payment-brick/advanced-features/add-confirmation-step
+ - card_linkDescription: Saber más
+ - card_pillText: DISPONIBLE
+---
+
+------------
 ----[mlb, mlm, mpe, mco, mlc, mlu]----
 
 ---
