@@ -4,7 +4,7 @@ Una vez listo y descargado el reporte, tendrás un archivo para consultar las pl
 
 Para consultarlo, te recomendamos descargarlo en formato *.csv* y abrirlo, o bien en una hoja de cálculos, o bien en cualquier programa de visualización. Si eliges esta última opción, es importante que configures previamente el programa para que soporte el formato *UTF-8*, y así evites problemas de lectura.
 
-### Contenido del reporte
+## Contenido del reporte
 
 El reporte enumera las transacciones realizadas por vendedores asociados a un marketplace. Cada línea detalla una transacción independiente, incluyendo valores, tarifas, *status* y *status_detail*. Mientras que el campo *status* indica la aprobación del pago, *status_detail* proporciona información adicional, como razones de rechazo.
 

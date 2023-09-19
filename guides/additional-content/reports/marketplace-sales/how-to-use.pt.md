@@ -4,7 +4,7 @@ Uma vez que o relatório estiver pronto e baixado, você terá um arquivo para c
 
 Para consultar, recomendamos que você faça o download no formato *.csv* e abra-o em uma planilha de cálculo ou em qualquer programa de visualização. Se optar pela última opção, é importante configurar previamente o programa para suportar o formato *UTF-8* e evitar problemas de leitura.
 
-### Conteúdo do relatório
+## Conteúdo do relatório
 
 O relatório lista as transações efetuadas por vendedores associados a um marketplace. Cada linha detalha uma transação independente, abordando valores, taxas, *status* e *status_detail*. Enquanto o campo *status* informa sobre a aprovação do pagamento, o *status_detail* esclarece aspectos adicionais, como razões de rejeição.
 
