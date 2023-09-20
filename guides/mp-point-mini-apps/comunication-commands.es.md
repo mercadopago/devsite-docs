@@ -118,9 +118,9 @@ launchPaymentFlow(amount, encodeURIComponent({"attr":"123"}),
 
 Para más información, consultá la sección [Como empezar](/developers/es/docs/mini-apps/introduction/how-to-start).
 
-## Iniciar medio de pago (payment_flow)
+## Iniciar método de pago (payment_flow)
 
-Para iniciar el flujo de pago con medio de pago, la función `launchPaymentMethod` debe ser llamada junto con los siguientes parámetros:
+Para iniciar el flujo de pago con un método de pago, la función `launchPaymentMethod` debe ser llamada junto con los siguientes parámetros:
 
 | Parámetro | Tipo | Requerido | Valores posibles | Descripción |
 | --- | --- | --- | --- | --- |
@@ -139,9 +139,9 @@ launchPaymentMethod(25.6, "debit", encodeURIComponent({"attr":"123"}),
 
 Para más información, consultá [Iniciar método de pago]().
 
-## Ingresar medios de pagos disponibles (payment_methods)
+## Ingresar métodos de pagos disponibles (payment_methods)
 
-Obtiene las variantes de medios de pago permitidos para iniciar el flujo de pago, con un medio de pago específico.
+Obtiene las variantes de métodos de pago permitidos para iniciar el flujo de pago con un método específico.
 
 Las variantes compatibles con esta versión son:
 

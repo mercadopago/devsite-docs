@@ -1,4 +1,4 @@
-# Boas prácticas
+# Boas práticas
 
 Nesta seção, apresentamos algumas recomendações de usabilidade que podem ajudar você e sua equipe a criar experiências mais satisfatórias e eficientes para as pessoas usuárias da [Point Smart](/developers/pt/docs/mp-point/integration-configuration/integrate-with-pdv/introduction).
 

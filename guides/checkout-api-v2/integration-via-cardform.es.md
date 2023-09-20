@@ -142,6 +142,12 @@ Para añadir el formulario de pago, inserta el siguiente HTML directamente en el
 
 Después de añadir el formulario de pago, es necesario inicializarlo. Esta etapa consiste en relacionar el ID de cada campo del formulario con los atributos correspondientes. La biblioteca se encargará de rellenar, obtener y validar todos los datos necesarios en la confirmación del pago.  
 
+> NOTE
+>
+> Importante
+>
+> Al enviar el formulario, se genera un token que representa de manera segura los datos de la tarjeta. Es posible acceder a él mediante la función `cardForm.getCardFormData()`, como se muestra a continuación en el callback `onSubmit`. Además, este token también se almacena en un campo oculto dentro del formulario, donde se puede encontrar con la nomenclatura `MPHiddenInputToken`.
+
 ----[mla, mlu, mpe, mco, mlb, mlc]----
 [[[
 ```javascript
@@ -343,13 +349,11 @@ Después de añadir el formulario de pago, es necesario inicializarlo. Esta etap
 
 ------------
 
-Al enviar el formulario, se genera un token que representa de forma segura los datos de la tarjeta. Se puede acceder a este a través de la función`getCardFormData`, como se mostró anteriormente en el callback `onSubmit`. Además, este token también se almacena en un input oculto en el formulario y puede ser encontrado con el nombre `MPHiddenInputToken`.
-
 > NOTE
 >
 > Importante
 >
-> Si necesitas añadir o modificar alguna lógica en el flujo de los métodos de Javascript consulta la documentación: [Integración vía Métodos Core](/developers/es/docs/checkout-api/integration-configuration/card/integrate-via-core-methods)
+> Si necesitas añadir o modificar alguna lógica en el flujo de los métodos de Javascript consulta la documentación [Integración vía Métodos Core](/developers/es/docs/checkout-api/integration-configuration/card/integrate-via-core-methods)
 
 ## Enviar pago
 
