@@ -142,6 +142,12 @@ To add the payment form, insert the HTML below directly into the project.
 
 After adding the payment form, you will need to initialize it. This step consists of relating the ID of each form field with the corresponding attributes. The library will be responsible for filling out, obtaining and validating all necessary data at the time of payment confirmation.
 
+> NOTE
+>
+> Important
+>
+> When submitting the form, a token is generated securely representing the card data. You can access it via the `cardForm.getCardFormData()` function, as shown abive in the `onSubmit` callback. Furthermore, this token is also stored in a hidden input within the form where it can be found with the name `MPHiddenInputToken`.
+
 ----[mla, mlu, mpe, mco, mlb, mlc]----
 [[[
 ```javascript
@@ -343,13 +349,11 @@ progressBar.setAttribute("value", "0");
 
 ------------
 
-When submitting the form, a token is generated securely representing the card data. You can access it via the `getCardFormData` function, as shown earlier in the `onSubmit` callback. Furthermore, this token is also stored in a hidden input within the form where it can be found with the name `MPHiddenInputToken`.
-
 > NOTE
 >
 > Important
 >
-> If you need to add or modify some logic in the flow of Javascript methods, consult the documentation: [Integration via Core Methods](/developers/en/docs/checkout-api/integration-configuration/card/integrate-via-core-methods)
+> If you need to add or modify some logic in the flow of Javascript methods, consult the documentation [Integration via Core Methods](/developers/en/docs/checkout-api/integration-configuration/card/integrate-via-core-methods)
 
 ## Send payment
 
