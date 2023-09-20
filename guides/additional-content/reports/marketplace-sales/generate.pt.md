@@ -1,6 +1,6 @@
 # Gerar relatório
 
-Para gerar o relatório, primeiro você deve [criar as configurações](/developers/pt/docs/checkout-pro/additional-content/reports/marketplace-sales-report/generate-report#bookmark_criação_da_configuração) necessárias, onde poderá definir os emails para os quais o relatório será enviado ou a frequência com que deseja que ele seja gerado, entre outras opções. Em seguida, você deve [criar o relatório](/developers/pt/docs/checkout-pro/additional-content/reports/marketplace-sales-report/generate-report#bookmark_criação_dos_relatórios), que pode ser de **forma automática** (_event_) ou **manual** (_statement_).
+Para gerar o relatório, primeiro você deve [criar as configurações](/developers/pt/docs/checkout-pro/additional-content/reports/marketplace-sales-report/generate-report#bookmark_criar_configuração) necessárias, onde poderá definir os emails para os quais o relatório será enviado ou a frequência com que deseja que ele seja gerado, entre outras opções. Em seguida, você deve [criar o relatório](/developers/pt/docs/checkout-pro/additional-content/reports/marketplace-sales-report/generate-report#bookmark_criar_relatório), que pode ser de **forma automática** (_event_) ou **manual** (_statement_).
 
 > NOTE
 >

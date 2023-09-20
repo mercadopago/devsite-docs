@@ -21,7 +21,7 @@ COLLECTOR;COLLECTOR_NICKNAME;PAYMENT;STATUS_DESCRIPTION;STATUS_DETAIL;PURCHASE_O
 
 | Campo                   | Descripción                                                                                                          |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------|
-| statement_id (obligatorio) | Identificación del reporte, obtenida en la respuesta a su creación.                                                    |
-| format (opcional)        | Formato en el que se desea descargar el reporte. Puede ser csv o json. Por defecto, csv.                            |
+| `statement_id` (obligatorio) | Identificación del reporte, obtenida en la respuesta a su creación.                                                    |
+| `format` (opcional)        | Formato en el que se desea descargar el reporte. Puede ser csv o json. Por defecto, csv.                            |
 
 > En caso de que haya un error en la creación del reporte, el _status_ devuelto será 404 y el cuerpo de la respuesta estará vacio.
