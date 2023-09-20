@@ -15,7 +15,7 @@ Para interactuar con el [Point Smart](/developers/es/docs/mp-point/integration-c
 
 ## Archivo manifesto
 
-Los campos del archivo manifesto deben ser completados correctamente conforme lo indicado en la sección [Mini apps manifesto](/developers/es/), y el archivo debe estar localizado en la raíz del `.zip`, nombrado como `miniapp_manifest.json`.
+Los campos del archivo manifesto deben ser completados correctamente conforme lo indicado en la sección [Mini apps manifesto](/developers/es/docs/mini-apps/introduction/manifest), y el archivo debe estar localizado en la raíz del `.zip`, nombrado como `miniapp_manifest.json`.
 
 ## CORS
 
