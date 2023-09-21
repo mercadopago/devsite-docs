@@ -2,7 +2,7 @@
 
 Após a criação do relatório, é possível validar a estrutura e as notificações efetuando uma chamada **GET** à nossa API, conforme orientações a seguir. Isso se aplica a ambos os tipos de relatórios.
 
-Para efetuar solicitações GET a Structures, Notifiers, Events e Statements, é preciso incluir o `{{TOKEN}}` no corpo da solicitação. Além disso, ao realizar solicitações GET por ID a Structures, Notifiers, Events e Statements, é obrigatório enviar os seguintes parâmetros correspondentes: `structure_id`, `notifier_id`, `event_id` e `statement_id`.
+> Para efetuar solicitações GET a Structures, Notifiers, Events e Statements, é preciso incluir o `TOKEN` no _header_ da solicitação. Além disso, ao realizar solicitações GET por ID a Structures, Notifiers, Events e Statements, é obrigatório enviar os seguintes parâmetros correspondentes: `structure_id`, `notifier_id`, `event_id` e `statement_id`.
 
 ## GET Structures
 ```curl
@@ -90,7 +90,10 @@ curl --location --request GET 'https://api.mercadopago.com/v1/reports/marketplac
         "show_fee_prevision": null,
         "coupon_detailed": null,
         "show_chargeback_cancel": null
-    }
+    },
+  {
+	//more structures
+  }
 ]
 ```
 

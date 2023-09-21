@@ -9,6 +9,9 @@ Si, después de revisar las configuraciones de estructuras, notificaciones o eve
 > Ten en cuenta que **no es posible** modificar uno reporte generados manualmente (statements).
 
 ## PUT Structures
+
+> Al realizar una solicitud PUT en 'Structures', recuerde incluir los parámetros obligatorios siguientes: `display_timezone`, `name`, `file_format` y `columns`.
+
 ```curl
 curl --location --request PUT 'https://api.mercadopago.com/v1/reports/marketplace_sellers_sales/structures/{{structure_id}}' \
 --header 'Authorization: Bearer {{TOKEN}}' \
@@ -166,6 +169,9 @@ curl --location --request PUT 'https://api.mercadopago.com/v1/reports/marketplac
 ```
 
 ## PUT Event
+
+> Al realizar una solicitud PUT a 'Events', recuerde incluir los parámetros obligatorios siguientes: `type`, `data` (`period`, `value`, `hour`), `description`, `structure_id` y `notifiers`.
+
 ```curl
 curl --location --request PUT 'https://api.mercadopago.com/v1/reports/marketplace_sellers_sales/events/{{event_id}}' \
 --header 'Authorization: Bearer {{TOKEN}}' \
@@ -209,6 +215,8 @@ curl --location --request PUT 'https://api.mercadopago.com/v1/reports/marketplac
 
 ## PUT Notifier
 
+> Al realizar una solicitud PUT a Notifier Email, recuerde incluir los parámetros obligatorios siguientes: `type`, `data` (`recipients`) y `description`.
+
 ### Email
 ```curl
 curl --location --request PUT 'https://api.mercadopago.com/v1/reports/notifiers/{{notifier_id}}' \
@@ -241,6 +249,9 @@ curl --location --request PUT 'https://api.mercadopago.com/v1/reports/notifiers/
 ```
 
 ### SFTP
+
+> Al realizar una solicitud PUT en Notifier SFTP, recuerde incluir los siguientes parámetros obligatorios: `type`, `data` (`ip`, `port`, `password`, `protocol`, `username`, `remote_dir`) y `description`.
+
 ```curl
 curl --location --request PUT 'https://api.mercadopago.com/v1/reports/notifiers/{{notifier_id}}?type=ftp' \
 --header 'Authorization: Bearer {{TOKEN}}' \
