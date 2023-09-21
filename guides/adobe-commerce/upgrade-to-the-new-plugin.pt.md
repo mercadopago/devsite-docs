@@ -13,6 +13,7 @@ Para atualizar seu plugin instalando a nova versão, basta seguir os passos de i
 > Você poderá instalar o novo plugin sem interferir no funcionamento do plugin antigo. Uma vez que tenha confirmado o correto funcionamento do novo plugin, proceda com a desativação da antiga versão. 
 
 ## Funcionalidades por versão
+
 | Funcionalidade                              | Plugin novo | Plugin antigo |
 |---------------------------------------------|-------------|---------------|
 | Pagamentos com cartões                      | ✅           | ✅             |
