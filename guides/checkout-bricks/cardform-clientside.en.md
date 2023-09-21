@@ -198,11 +198,3 @@ renderPaymentBrick(bricksBuilder);
 `````
 
 > On Server-Side, no changes are needed.
-
-> PREV_STEP_CARD_EN
->
-> How to migrate to Checkout Bricks
->
-> Learn how to migrate your integration from another product to Checkout Bricks.
->
-> [How to migrate to Checkout Bricks](/developers/en/docs/checkout-bricks/how-tos/how-to-migrate)

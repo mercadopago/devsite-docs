@@ -1,8 +1,8 @@
 # Agregar etapa de confirmación
 
-Após o preenchimento dos dados necessários para processar o pagamento, é possível apresentar ao comprador uma área de revisão dos itens, valores e forma de pagamento, assim como o endereço de entrega e o endereço de faturamento.
+Después de completar los datos necesarios para procesar el pago, es posible mostrar al comprador un área de revisión de los elementos, valores y método de pago, así como la dirección de entrega y la dirección de facturación.
 
-Essa etapa adicional proporciona ao comprador uma experiência mais transparente e segura, pois permite que ele revise e edite as informações antes de confirmar o pagamento. Além disso, para os integradores, ela agiliza o desenvolvimento de uma experiência de pagamento consistente e completa.
+Esta etapa adicional brinda al comprador una experiencia más transparente y segura, ya que le permite revisar y editar la información antes de confirmar el pago. Además, para los integradores, acelera el desarrollo de una experiencia de pago coherente y completa.
 
 <center>
 
@@ -10,13 +10,13 @@ Essa etapa adicional proporciona ao comprador uma experiência mais transparente
 
 </center>
 
-Para integrar essa funcionalidade, faz-se necessário o envio de informações adicionais durante a inicialização do Payment Brick. Apresentamos agora um exemplo do objeto de configuração com destaque para a propriedade `enableReviewStep`, que habilita o fluxo de revisão:
+Para integrar esta funcionalidad, es necesario enviar información adicional durante la inicialización de Payment Brick. Presentamos ahora un ejemplo del objeto de configuración con énfasis en la propiedad `enableReviewStep`, que habilita el flujo de revisión:
 
 > WARNING
 >
-> Atenção
+> Atención
 >
-> Certifique-se de substituir todos os valores numéricos e textuais entre "<>".
+> Asegúrese de reemplazar todos los valores numéricos y de texto entre "<>".
 
 ```Javascript
 const settings = {
@@ -118,29 +118,21 @@ const settings = {
 };
 ```
 
-Vamos examinar cada aspecto dessas configurações em detalhes a seguir.
+Vamos a examinar cada aspecto de estas configuraciones en detalle a continuación.
 
 > WARNING
 >
-> Atenção
+> Atención
 >
-> As propriedades definidas neste trecho de documentação como obrigatórias são exclusivas à etapa de revisão, sendo desconsideradas em outros momentos do fluxo de pagamento.
+> Las propiedades definidas en este fragmento de documentación como obligatorias son exclusivas de la etapa de revisión y se ignoran en otros momentos del flujo de pago.
 
-> Obligatorio
->
-> h2
->
-> Chaveamento da funcionalidade
+## Habilitación de la funcionalidad (obligatorio)
 
-A propriedade `enableReviewStep` é responsável pelo chaveamento da funcionalidade, ou seja, a seção de revisão será renderizada somente quando essa propriedade estiver definida como true.
+La propiedad `enableReviewStep` es responsable de habilitar la funcionalidad, es decir, la sección de revisión se renderizará solo cuando esta propiedad esté definida como _true_.
 
-> Obligatorio
->
-> h2
->
-> Items
+## Ítems (opcional)
 
-Define quais os itens que compõem o pedido, sendo obrigatório o preenchimento desta propriedade. A seguir, tem-se um exemplo: 
+Define los elementos que componen el pedido, siendo obligatorio completar esta propiedad. A continuación, se muestra un ejemplo:
 
 ```Javascript
 const items = {
@@ -157,13 +149,9 @@ const items = {
 };
 ```
 
-> Opcional
->
-> h2
->
-> Payer
+## Payer (opcional)
 
-Identificação do comprador que será exibida no quadro junto com as informações de pagamento. Recomendamos fortemente que essa propriedade seja preenchida.
+Identificación del comprador que se mostrará en el cuadro junto con la información de pago. **Recomendamos completar esta propiedad.**
 
 ```Javascript
 const payer = {
@@ -171,13 +159,9 @@ const payer = {
 }
 ```
 
-> Opcional
->
-> h2
->
-> Shipping 
+## Shipping (opcional)
 
-Dados relativos ao quadro de endereço de entrega, sendo que o mesmo somente será renderizado quando tais informações forem disponibilizadas.
+Datos relacionados con la dirección de entrega, que solo se renderizará cuando esta información esté disponible.
 
 <center>
 
@@ -185,7 +169,7 @@ Dados relativos ao quadro de endereço de entrega, sendo que o mesmo somente ser
 
 </center>
 
- Segue um exemplo do objeto de _shipping_:
+A continuación se muestra un ejemplo del objeto de _shipping_:
 
 ```Javascript
 const shipping = {
@@ -203,13 +187,9 @@ const shipping = {
 };
 ```
 
-> Opcional
->
-> h2
->
-> Billing
+## Billing (opcional)
 
-Quadro que exibe os dados fiscais do pedido, sendo que o mesmo somente será renderizado quando tais informações forem disponibilizadas.
+Cuadro que muestra los datos fiscales del pedido, que solo se renderizará cuando esta información esté disponible.
 
 <center>
 
@@ -217,7 +197,7 @@ Quadro que exibe os dados fiscais do pedido, sendo que o mesmo somente será ren
 
 </center>
 
-Segue um exemplo do objeto de _billing_:
+A continuación se muestra un ejemplo del objeto de _billing_:
 
 ```Javascript
 const billing = {
@@ -240,13 +220,9 @@ const billing = {
 };
 ```
 
-> Opcional
->
-> h2
->
-> Discounts
+## Discounts (opcional)
 
-No campo `discounts` é possível informar cupons ou outros tipos de desconto que tenham sido aplicados ao pedido:
+En el campo `discounts`, es posible indicar cupones u otros tipos de descuento aplicados al pedido:
 
 <center>
 
@@ -268,40 +244,32 @@ const discounts = {
 
 > WARNING
 >
-> Atenção
+> Atención
 >
-> O informe de descontos, incluso do valor total, é apenas uma representação visual e não será subtraído automaticamente do valor total do pagamento.
+> La presentación de los descuentos, incluido el monto total, es solo una representación visual y no se restará automáticamente del monto total del pago.
 
-> Opcional
->
-> h2
->
-> Customizando a disposição dos quadros de informações
+## Personalización de la disposición de los cuadros de información (opcional)
 
-A disposição dos quadros com informações do comprador segue por padrão a uma ordem tendo em vista o mais comumente utilizado: `payment_method`, `shipping` e `billing`.
+La disposición de los cuadros con la información del comprador sigue por defecto un orden basado en el más comúnmente utilizado: `payment_method`, `shipping` e `billing`.
 
-Para garantir uma experiência fluida, sugerimos que você organize os quadros na mesma sequência em que as informações são solicitadas nas etapas anteriores do processo. Para fazer isso, você pode utilizar a propriedade `reviewCardsOrder`. 
+Para garantizar una experiencia fluida, sugerimos que organice los cuadros en la misma secuencia en la que se solicitan las informaciones en las etapas anteriores del proceso. Para hacerlo, puede utilizar la propiedad `reviewCardsOrder`. 
 
-Segue um exemplo de customização no qual o quadro de shipping é exibido na primeira posição:
+A continuación, se muestra un ejemplo de personalización en el cual el cuadro de _shipping_ se muestra en la primera posición:
 
 ```Javascript
 reviewCardsOrder: ['shipping','payment_method', 'billing'],
 ```
 
-> Opcionais
->
-> h2
->
-> Callbacks de edição
+## Callbacks de edición (opcionales)
 
-Cada quadro da seção de revisão está associado a uma _callback_, que é acionada quando o comprador deseja editar os dados correspondentes. As callbacks são: `onClickEditShippingData` e `onClickEditBillingData`. No entanto, o quadro com os dados de pagamento é uma exceção, pois o redirecionamento pela edição é feito pelo próprio Brick.
+Cada cuadro de la sección de revisión está asociado a una _callback_, que se activa cuando el comprador desea editar los datos correspondientes. Las callbacks son: `onClickEditShippingData` y `onClickEditBillingData`. Sin embargo, el cuadro con los datos de pago es una excepción, ya que la redirección para la edición se realiza a través del propio Brick.
 
-| Callback | Descrição | Obrigatório |
+| Callback | Descripción | Obligatorio |
 |---|---|---|
-| `onClickEditShippingData` | O comprador deseja editar os dados de envio. | Sim (quando dados de _shipping_ forem informados) |
-| `onClickEditBillingData` | O comprador deseja editar os dados de faturamento. | Sim (quando dados de _billing_ forem informados) |
+| `onClickEditShippingData` | El comprador desea editar los datos de envío.	 | Si (cuando se proporcionen datos de _shipping_) |
+| `onClickEditBillingData` | El comprador desea editar los datos de facturación. | Si (cuando se proporcionen datos de _billing_) |
 
-Tais _callbacks_ permitem que o integrador construa um mecanismo de edição de acordo com sua conveniência. Para construir tal mecanismo, o _controller_ retornado ao instanciar o Brick possui um método `update`, que permite a edição desses dados. Consulte a [página de renderização](/developers/es/docs/checkout-bricks/payment-brick/default-rendering) para mais detalhes sobre o funcionamento do _controller_.
+Estas _callbacks_ permiten que el integrador construya un mecanismo de edición según su conveniencia. Para construir dicho mecanismo, el _controller_ devuelto al instanciar el Brick tiene un método `update`, que permite la edición de estos datos. Consulte la [página de renderización](/developers/es/docs/checkout-bricks/payment-brick/default-rendering) para obtener más detalles sobre el funcionamiento del _controller_.
 
 ```Javascript
 window.paymentBrickController = await bricksBuilder.create(
@@ -317,25 +285,25 @@ window.paymentBrickController = await bricksBuilder.create(
 }
 ```
 
-Diferente das _callbacks_ `onClickEditShippingData` e `onClickEditBillingData`, a função de edição do meio de pagamento irá reconduzir o comprador ao Payment Brick, para que o mesmo possa editar os dados de pagamento assim como o email associado.
+A diferencia de las _callbacks_ `onClickEditShippingData` y `onClickEditBillingData`, la función de edición del método de pago redirigirá al comprador al Payment Brick para que pueda editar los datos de pago y el email asociado.
 
-Tem-se também as _callbacks_ opcionais `onRenderNextStep` e `onRenderPreviousStep`, as quais indicam que o comprador avançou ou retornou alguma etapa no processo de pagamento, sendo útil em experiências de pagamento com etapas visuais definidas, por exemplo.
+También hay _callbacks_ opcionales, `onRenderNextStep` y `onRenderPreviousStep`, que indican que el comprador avanzó o retrocedió en alguna etapa del proceso de pago, lo cual es útil en experiencias de pago con etapas visuales definidas, por ejemplo.
 
-| Callback | Descrição | Obrigatório |
+| Callback | Descripción | Obligatorio |
 |---|---|---|
-| `onRenderNextStep` | Indica que o comprador avançou da etapa de preenchimento dos dados no Payment Brick para o fluxo de revisão. | Não |
-| `onRenderPreviousStep` | Indica que o comprador retornou da etapa de revisão para a etapa de preenchimento dos dados. | Não |
+| `onRenderNextStep` | Indica que el comprador avanzó desde la etapa de completar los datos en Payment Brick hasta el flujo de revisión. | No |
+| `onRenderPreviousStep` | Indica que el comprador retrocedió desde la etapa de revisión a la etapa de completar los datos. | No |
 
-> Caso tenha optado pela customização que [oculta o botão de pagamento](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/hide-element), deve-se utilizar a função `nextStep`,disponibilizada pelo controller do Brick para navegar pelo fluxo de pagamento. Por exemplo: `window.paymentBrickController.nextStep();`
+> Si ha optado por la personalización que [oculta el botón de pago](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/hide-element), debe utilizar la función `nextStep`, proporcionada por el controlador del Brick para navegar por el flujo de pago. Por ejemplo: `window.paymentBrickController.nextStep();`
 
-## Efetuação do pagamento
+## Proceso de pago
 
-Por fim, ao clicar em **Pagar**, é acionada a _callback_ `onSubmit`, a qual segue com o envio dos dados de pagamento para o endpoint especificado em seu backend. Os dados disponibilizados por essa _callback_ já estão formatados de acordo com o contrato da [API de pagamentos](/developers/es/reference/payments/_payments/post).
+Finalmente, al hacer clic en **Pagar**, se activa la _callback_ `onSubmit`, que envía los datos de pago al endpoint especificado en su backend. Los datos proporcionados por esta _callback_ ya están formateados según el contrato de la [API de pagos](/developers/es/reference/payments/_payments/post).
 
-As informações de itens e shipping serão retornadas no objeto `formData`, e para dados adicionais, tem-se o campo `additionalData`, que inclui dentre outros dados, os últimos quatro dígitos para compras com cartão. 
+La información de los ítems y el envío se devolverá en el objeto `formData`, y para datos adicionales, existe el campo `additionalData`, que incluye, entre otros datos, los últimos cuatro dígitos para compras con tarjeta.
 
-Consulte esse [tópico](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/additional-data) especializado caso deseje utilizar o campo `additionalData`. Já para mais detalhes sobre o processo de submissão, consulte a seção de [envio de pagamentos](/developers/es/docs/checkout-bricks/payment-brick/payment-submission).
+Consulte este [tema] especializado si desea utilizar el campo `additionalData`. Para obtener más detalles sobre el proceso de envío, consulte la sección de [envío de pagos](/developers/es/docs/checkout-bricks/payment-brick/payment-submission).
 
-## Customização dos textos 
+## Personalización de textos
 
-É possível alterar os textos que vêm carregados no Brick. Para isso, no objeto de inicialização do Brick, é preciso enviar o objeto `customization.visual.texts` com os valores de textos desejados. Para mais detalhes, consulte a página de [alterações dos textos](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/change-texts).
+Es posible cambiar los textos que se cargan en el Brick. Para ello, en el objeto de inicialización del Brick, debe enviar el objeto `customization.visual.texts` con los valores de los textos deseados. Para obtener más detalles, consulte la página de [cambio de textos](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/change-texts).

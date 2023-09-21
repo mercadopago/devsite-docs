@@ -128,7 +128,7 @@ Vamos examinar cada aspecto dessas configurações em detalhes a seguir.
 
 ## Chaveamento da funcionalidade (obrigatório)
 
-A propriedade `enableReviewStep` é responsável pelo chaveamento da funcionalidade, ou seja, a seção de revisão será renderizada somente quando essa propriedade estiver definida como true.
+A propriedade `enableReviewStep` é responsável pelo chaveamento da funcionalidade, ou seja, a seção de revisão será renderizada somente quando essa propriedade estiver definida como _true_.
 
 ## Items (obrigatório)
 
@@ -151,7 +151,7 @@ const items = {
 
 ## Payer (opcional)
 
-Identificação do comprador que será exibida no quadro junto com as informações de pagamento. Recomendamos fortemente que essa propriedade seja preenchida.
+Identificação do comprador que será exibida no quadro junto com as informações de pagamento. **Recomendamos que essa propriedade seja preenchida**.
 
 ```Javascript
 const payer = {
@@ -254,7 +254,7 @@ A disposição dos quadros com informações do comprador segue por padrão a um
 
 Para garantir uma experiência fluida, sugerimos que você organize os quadros na mesma sequência em que as informações são solicitadas nas etapas anteriores do processo. Para fazer isso, você pode utilizar a propriedade `reviewCardsOrder`. 
 
-Segue um exemplo de customização no qual o quadro de shipping é exibido na primeira posição:
+Segue um exemplo de customização no qual o quadro de _shipping_ é exibido na primeira posição:
 
 ```Javascript
 reviewCardsOrder: ['shipping','payment_method', 'billing'],
@@ -285,7 +285,7 @@ window.paymentBrickController = await bricksBuilder.create(
 }
 ```
 
-Diferente das _callbacks_ `onClickEditShippingData` e `onClickEditBillingData`, a função de edição do meio de pagamento irá reconduzir o comprador ao Payment Brick, para que o mesmo possa editar os dados de pagamento assim como o email associado.
+Diferente das _callbacks_ `onClickEditShippingData` e `onClickEditBillingData`, a função de edição do meio de pagamento irá reconduzir o comprador ao Payment Brick, para que o mesmo possa editar os dados de pagamento assim como o e-mail associado.
 
 Tem-se também as _callbacks_ opcionais `onRenderNextStep` e `onRenderPreviousStep`, as quais indicam que o comprador avançou ou retornou alguma etapa no processo de pagamento, sendo útil em experiências de pagamento com etapas visuais definidas, por exemplo.
 
@@ -296,11 +296,11 @@ Tem-se também as _callbacks_ opcionais `onRenderNextStep` e `onRenderPreviousSt
 
 > Caso tenha optado pela customização que [oculta o botão de pagamento](/developers/pt/docs/checkout-bricks/payment-brick/additional-customization/hide-element), deve-se utilizar a função `nextStep`,disponibilizada pelo controller do Brick para navegar pelo fluxo de pagamento. Por exemplo: `window.paymentBrickController.nextStep();`
 
-## Efetuação do pagamento
+## Processamento do pagamento
 
 Por fim, ao clicar em **Pagar**, é acionada a _callback_ `onSubmit`, a qual segue com o envio dos dados de pagamento para o endpoint especificado em seu backend. Os dados disponibilizados por essa _callback_ já estão formatados de acordo com o contrato da [API de pagamentos](/developers/pt/reference/payments/_payments/post).
 
-As informações de itens e shipping serão retornadas no objeto `formData`, e para dados adicionais, tem-se o campo `additionalData`, que inclui dentre outros dados, os últimos quatro dígitos para compras com cartão. 
+As informações de itens e _shipping_ serão retornadas no objeto `formData`, e para dados adicionais, tem-se o campo `additionalData`, que inclui dentre outros dados, os últimos quatro dígitos para compras com cartão. 
 
 Consulte esse [tópico](/developers/pt/docs/checkout-bricks/payment-brick/additional-customization/additional-data) especializado caso deseje utilizar o campo `additionalData`. Já para mais detalhes sobre o processo de submissão, consulte a seção de [envio de pagamentos](/developers/pt/docs/checkout-bricks/payment-brick/payment-submission).
 
