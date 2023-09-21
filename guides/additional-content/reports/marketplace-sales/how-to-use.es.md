@@ -16,6 +16,6 @@ Para obtener más detalles sobre *status* y *status_detail*, consulta la secció
 > 
 > Además, en la columna **Net Received Amt LC** encontrarás el impacto real sobre tu dinero.
 
-Observa cómo está compuesto el reporte de ventas de *Marketplace* en este ejemplo para identificar las operaciones y leer tus propios reportes:
+Observa cómo está compuesto el reporte de ventas en este ejemplo para identificar las operaciones y leer tus propios reportes:
 
 ![Ejemplo para identificar las operaciones y leer tus propios reportes](/images/manage-account/reports/marketplace-sales/image2.png)

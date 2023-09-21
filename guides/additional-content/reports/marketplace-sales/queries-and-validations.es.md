@@ -97,7 +97,7 @@ curl --location --request GET 'https://api.mercadopago.com/v1/reports/marketplac
 ]
 ```
 
-## GET Structures por ID
+## GET Structure por ID
 ```curl
 curl --location --request GET 'https://api.mercadopago.com/v1/reports/marketplace_sellers_sales/structures/:structure_id' \
 --header 'Authorization: Bearer {{TOKEN}}'
@@ -185,7 +185,7 @@ curl --location --request GET 'https://api.mercadopago.com/v1/reports/marketplac
 }
 ```
 
-## GET Notifier
+## GET Notifiers
 ```curl
 curl --location --request GET 'https://api.mercadopago.com/v1/reports/notifiers' \
 --header 'Authorization: Bearer {{TOKEN}}'
@@ -236,7 +236,7 @@ curl --location --request GET 'https://api.mercadopago.com/v1/reports/notifiers/
 }
 ```
 
-## GET Event
+## GET Events
 ```curl
 curl --location --request GET 'https://api.mercadopago.com/v1/reports/marketplace_sellers_sales/events' \
 --header 'Authorization: Bearer {{TOKEN}}'
@@ -296,9 +296,9 @@ curl --location --request GET 'https://api.mercadopago.com/v1/reports/marketplac
 }
 ```
 
-## GET Statement
+## GET Statements
 ```curl
-curl --location --request GET 'https://api.mercadopago.com/v1/reports/marketplace_sellers_sales/statements/{{statement_id}}' \
+curl --location --request GET 'https://api.mercadopago.com/v1/reports/marketplace_sellers_sales/statements' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer {{TOKEN}}'
 ```

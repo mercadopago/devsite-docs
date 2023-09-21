@@ -6,7 +6,7 @@ Se, após revisar as configurações de estruturas, notificações ou eventos, v
 >
 > Importante
 >
-> Tenha em mente que **não é possível** modificar um relatório gerado manualmente (_statements_).
+> Tenha em mente que **não é possível** modificar relatórios gerados manualmente (_statements_).
 
 ## PUT Structures
 

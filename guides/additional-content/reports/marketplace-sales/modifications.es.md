@@ -6,7 +6,7 @@ Si, después de revisar las configuraciones de estructuras, notificaciones o eve
 >
 > Importante
 >
-> Ten en cuenta que **no es posible** modificar uno reporte generados manualmente (statements).
+> Ten en cuenta que **no es posible** modificar los reportes generados manualmente (statements).
 
 ## PUT Structures
 

@@ -6,11 +6,9 @@ Caso queira desativar uma estrutura, notificação ou evento criados anteriormen
 >
 > Importante
 >
-> Se a solicitação for bem-sucedida, não haverá resposta. Se houver um erro, será retornado o código de _status_ 404. Após remover qualquer um dos elementos citados, é essencial confirmar se os relatórios, manuais ou automáticos, ainda operam adequadamente.
+> Se a solicitação for bem-sucedida, não haverá resposta. Se houver um erro, será retornado o código de _status_ 404. Após remover qualquer um dos elementos citados, é essencial confirmar se os relatórios ainda operam adequadamente. Tenha em mente que **não é possível** desativar relatórios gerados manualmente (_statements_).
 
 ## DELETE Structures
-
-Esta chamada permitirá desativar os relatórios criados tanto manualmente quanto automaticamente.
 
 ```curl
 curl --location --request DELETE 'https://api.mercadopago.com/v1/reports/marketplace_sellers_sales/structures/{{structure_id}}' \
