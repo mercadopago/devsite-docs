@@ -126,19 +126,11 @@ Vamos examinar cada aspecto dessas configurações em detalhes a seguir.
 >
 > As propriedades definidas neste trecho de documentação como obrigatórias são exclusivas à etapa de revisão, sendo desconsideradas em outros momentos do fluxo de pagamento.
 
-> Obrigatório
->
-> h2
->
-> Chaveamento da funcionalidade
+## Chaveamento da funcionalidade (obrigatório)
 
 A propriedade `enableReviewStep` é responsável pelo chaveamento da funcionalidade, ou seja, a seção de revisão será renderizada somente quando essa propriedade estiver definida como true.
 
-> Obrigatório
->
-> h2
->
-> Items
+## Items (obrigatório)
 
 Define quais os itens que compõem o pedido, sendo obrigatório o preenchimento desta propriedade. A seguir, tem-se um exemplo: 
 
@@ -157,11 +149,7 @@ const items = {
 };
 ```
 
-> Opcional
->
-> h2
->
-> Payer
+## Payer (opcional)
 
 Identificação do comprador que será exibida no quadro junto com as informações de pagamento. Recomendamos fortemente que essa propriedade seja preenchida.
 
@@ -171,11 +159,7 @@ const payer = {
 }
 ```
 
-> Opcional
->
-> h2
->
-> Shipping 
+## Shipping (opcional)
 
 Dados relativos ao quadro de endereço de entrega, sendo que o mesmo somente será renderizado quando tais informações forem disponibilizadas.
 
@@ -185,7 +169,7 @@ Dados relativos ao quadro de endereço de entrega, sendo que o mesmo somente ser
 
 </center>
 
- Segue um exemplo do objeto de _shipping_:
+Segue um exemplo do objeto de _shipping_:
 
 ```Javascript
 const shipping = {
@@ -203,11 +187,7 @@ const shipping = {
 };
 ```
 
-> Opcional
->
-> h2
->
-> Billing
+## Billing (opcional)
 
 Quadro que exibe os dados fiscais do pedido, sendo que o mesmo somente será renderizado quando tais informações forem disponibilizadas.
 
@@ -240,11 +220,7 @@ const billing = {
 };
 ```
 
-> Opcional
->
-> h2
->
-> Discounts
+## Discounts (opcional)
 
 No campo `discounts` é possível informar cupons ou outros tipos de desconto que tenham sido aplicados ao pedido:
 
@@ -272,11 +248,7 @@ const discounts = {
 >
 > O informe de descontos, incluso do valor total, é apenas uma representação visual e não será subtraído automaticamente do valor total do pagamento.
 
-> Opcional
->
-> h2
->
-> Customizando a disposição dos quadros de informações
+## Customizando a disposição dos quadros de informações (opcional)
 
 A disposição dos quadros com informações do comprador segue por padrão a uma ordem tendo em vista o mais comumente utilizado: `payment_method`, `shipping` e `billing`.
 
@@ -288,11 +260,7 @@ Segue um exemplo de customização no qual o quadro de shipping é exibido na pr
 reviewCardsOrder: ['shipping','payment_method', 'billing'],
 ```
 
-> Opcionais
->
-> h2
->
-> Callbacks de edição
+## Callbacks de edição (opcionais)
 
 Cada quadro da seção de revisão está associado a uma _callback_, que é acionada quando o comprador deseja editar os dados correspondentes. As callbacks são: `onClickEditShippingData` e `onClickEditBillingData`. No entanto, o quadro com os dados de pagamento é uma exceção, pois o redirecionamento pela edição é feito pelo próprio Brick.
 
