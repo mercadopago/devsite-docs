@@ -8,7 +8,7 @@ Se, após revisar as configurações de estruturas, notificações ou eventos, v
 >
 > Tenha em mente que **não é possível** modificar relatórios gerados manualmente (_statements_).
 
-## PUT Structures
+## PUT Structure
 
 > Ao realizar uma solicitação PUT a Structures, lembre-se de incluir os parâmetros obrigatórios a seguir: `display_timezone`, `name`, `file_format` e `columns`.
 

@@ -8,7 +8,7 @@ Si, después de revisar las configuraciones de estructuras, notificaciones o eve
 >
 > Ten en cuenta que **no es posible** modificar los reportes generados manualmente (statements).
 
-## PUT Structures
+## PUT Structure
 
 > Al realizar una solicitud PUT a Structures, recuerde incluir los parámetros obligatorios siguientes: `display_timezone`, `name`, `file_format` y `columns`.
 
