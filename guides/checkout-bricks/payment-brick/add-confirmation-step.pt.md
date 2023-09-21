@@ -126,9 +126,9 @@ Vamos examinar cada aspecto dessas configurações em detalhes a seguir.
 >
 > As propriedades definidas neste trecho de documentação como obrigatórias são exclusivas à etapa de revisão, sendo desconsideradas em outros momentos do fluxo de pagamento.
 
-## Chaveamento da funcionalidade (obrigatório)
+## Ativação da funcionalidade (obrigatório)
 
-A propriedade `enableReviewStep` é responsável pelo chaveamento da funcionalidade, ou seja, a seção de revisão será renderizada somente quando essa propriedade estiver definida como _true_.
+A propriedade `enableReviewStep` é responsável pelo acionamento da funcionalidade, ou seja, a seção de revisão será renderizada somente quando essa propriedade estiver definida como _true_.
 
 ## Items (obrigatório)
 
@@ -285,7 +285,7 @@ window.paymentBrickController = await bricksBuilder.create(
 }
 ```
 
-Diferente das _callbacks_ `onClickEditShippingData` e `onClickEditBillingData`, a função de edição do meio de pagamento irá reconduzir o comprador ao Payment Brick, para que o mesmo possa editar os dados de pagamento assim como o e-mail associado.
+Ao contrário das _callbacks_ `onClickEditShippingData` e `onClickEditBillingData`, a função de edição do meio de pagamento irá reconduzir o comprador ao Payment Brick para que este possa editar os dados de pagamento, assim como o e-mail associado.
 
 Tem-se também as _callbacks_ opcionais `onRenderNextStep` e `onRenderPreviousStep`, as quais indicam que o comprador avançou ou retornou alguma etapa no processo de pagamento, sendo útil em experiências de pagamento com etapas visuais definidas, por exemplo.
 

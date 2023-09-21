@@ -126,7 +126,7 @@ Vamos a examinar cada aspecto de estas configuraciones en detalle a continuació
 >
 > Las propiedades definidas en este fragmento de documentación como obligatorias son exclusivas de la etapa de revisión y se ignoran en otros momentos del flujo de pago.
 
-## Habilitación de la funcionalidad (obligatorio)
+## Activación de funcionalidad (obligatorio)
 
 La propiedad `enableReviewStep` es responsable de habilitar la funcionalidad, es decir, la sección de revisión se renderizará solo cuando esta propiedad esté definida como _true_.
 
