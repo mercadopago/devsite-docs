@@ -294,7 +294,7 @@ También hay _callbacks_ opcionales, `onRenderNextStep` y `onRenderPreviousStep`
 | `onRenderNextStep` | Indica que el comprador avanzó desde la etapa de completar los datos en Payment Brick hasta el flujo de revisión. | No |
 | `onRenderPreviousStep` | Indica que el comprador retrocedió desde la etapa de revisión a la etapa de completar los datos. | No |
 
-> Si ha optado por la personalización que [oculta el botón de pago](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/hide-element), debe utilizar la función `nextStep`, proporcionada por el controlador del Brick para navegar por el flujo de pago. Por ejemplo: `window.paymentBrickController.nextStep();`
+> Si ha optado por la personalización que [oculta el botón de pago,](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/hide-element) debe utilizar la función `nextStep`, proporcionada por el controlador del Brick para navegar por el flujo de pago. Por ejemplo: `window.paymentBrickController.nextStep();`
 
 ## Proceso de pago
 

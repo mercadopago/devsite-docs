@@ -302,7 +302,7 @@ There are also optional callbacks, `onRenderNextStep` and `onRenderPreviousStep`
 | `onRenderNextStep` | Indicates that the buyer has advanced from the data filling stage in Payment Brick to the review flow. | No |
 | `onRenderPreviousStep` | Indicates that the buyer returned from the review stage to the data filling stage. | No |
 
-> If you have opted for the customization that [hides the payment button](/developers/en/docs/checkout-bricks/payment-brick/additional-customization/hide-element), you should use the `nextStep` function provided by the Brick controller to navigate through the payment flow. For example: `window.paymentBrickController.nextStep();`
+> If you have opted for the customization that [hides the payment button,](/developers/en/docs/checkout-bricks/payment-brick/additional-customization/hide-element) you should use the `nextStep` function provided by the Brick controller to navigate through the payment flow. For example: `window.paymentBrickController.nextStep();`
 
 ## Payment processing
 
