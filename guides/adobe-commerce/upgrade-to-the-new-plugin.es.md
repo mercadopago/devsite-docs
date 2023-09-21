@@ -6,7 +6,6 @@ Para actualizar tu plugin e instalar la nueva versión, simplemente sigue los pa
  * [Instalación a través de Adobe Commerce (Magento)](https://www.mercadopago.com.br/developers/es/docs/adobe-commerce/installation/magento-marketplace)
  * [Instalación a través de FTP](https://www.mercadopago.com.br/developers/es/docs/adobe-commerce/installation/ftp)
 
-
 > NOTE
 >
 > Nota
