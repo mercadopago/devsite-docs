@@ -2,7 +2,7 @@
 
 Após a criação do relatório, é possível validar a estrutura e as notificações efetuando uma chamada **GET** à nossa API, conforme orientações a seguir. Isso se aplica a ambos os tipos de relatórios.
 
-> Para efetuar solicitações GET a Structures, Notifiers, Events e Statements, é preciso incluir o `TOKEN` no _header_ da solicitação. Além disso, ao realizar solicitações GET por ID a Structures, Notifiers, Events e Statements, é obrigatório enviar os seguintes parâmetros correspondentes: `structure_id`, `notifier_id`, `event_id` e `statement_id`.
+> Para efetuar solicitações GET a Structures, Notifier, Event e Statement, é preciso incluir o `TOKEN` no _header_ da solicitação. Além disso, ao realizar solicitações GET por ID a Structures, Notifier, Event e Statement, é obrigatório enviar os seguintes parâmetros correspondentes: `structure_id`, `notifier_id`, `event_id` e `statement_id`.
 
 ## GET Structures
 ```curl
@@ -185,7 +185,7 @@ curl --location --request GET 'https://api.mercadopago.com/v1/reports/marketplac
 }
 ```
 
-## GET Notifiers
+## GET Notifier
 ```curl
 curl --location --request GET 'https://api.mercadopago.com/v1/reports/notifiers' \
 --header 'Authorization: Bearer {{TOKEN}}'
@@ -213,7 +213,7 @@ curl --location --request GET 'https://api.mercadopago.com/v1/reports/notifiers'
 ]
 ```
 
-## GET Notifiers por ID
+## GET Notifier por ID
 ```curl
 curl --location --request GET 'https://api.mercadopago.com/v1/reports/notifiers/:notifier:id' \
 --header 'Authorization: Bearer {{TOKEN}}'
@@ -236,7 +236,7 @@ curl --location --request GET 'https://api.mercadopago.com/v1/reports/notifiers/
 }
 ```
 
-## GET Events
+## GET Event
 ```curl
 curl --location --request GET 'https://api.mercadopago.com/v1/reports/marketplace_sellers_sales/events' \
 --header 'Authorization: Bearer {{TOKEN}}'
@@ -268,7 +268,7 @@ curl --location --request GET 'https://api.mercadopago.com/v1/reports/marketplac
 ]
 ```
 
-## GET Events por ID
+## GET Event por ID
 ```curl
 curl --location --request GET 'https://api.mercadopago.com/v1/reports/marketplace_sellers_sales/events/:event_id' \
 --header 'Authorization: Bearer {{TOKEN}}'

@@ -170,7 +170,7 @@ curl --location --request PUT 'https://api.mercadopago.com/v1/reports/marketplac
 
 ## PUT Event
 
-> Ao realizar uma solicitação PUT a Events, lembre-se de incluir os parâmetros obrigatórios a seguir: `type`, `data` (`period`, `value`, `hour`), `description`, `structure_id` e `notifiers`.
+> Ao realizar uma solicitação PUT a Event, lembre-se de incluir os parâmetros obrigatórios a seguir: `type`, `data` (`period`, `value`, `hour`), `description`, `structure_id` e `notifiers`.
 
 ```curl
 curl --location --request PUT 'https://api.mercadopago.com/v1/reports/marketplace_sellers_sales/events/{{event_id}}' \

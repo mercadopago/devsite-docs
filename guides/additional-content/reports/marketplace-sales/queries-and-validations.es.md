@@ -2,7 +2,7 @@
 
 Después de crear el reporte, puedes validar la estructura y las notificaciones haciendo una llamada **GET** a nuestra API, siguiendo las instrucciones a continuación. Esto se aplica a ambos tipos de reportes.
 
-> Para realizar solicitudes GET a Structures, Notifiers, Events y Statements, es necesario incluir el `TOKEN` en el _header_ de la solicitud. Además, al efectuar solicitudes GET por ID a Structures, Notifiers, Events y Statements, es obligatorio enviar los siguientes parámetros correspondientes: `structure_id`, `notifier_id`, `event_id` y `statement_id`.
+> Para realizar solicitudes GET a Structures, Notifier, Event y Statement, es necesario incluir el `TOKEN` en el _header_ de la solicitud. Además, al efectuar solicitudes GET por ID a Structures, Notifier, Event y Statement, es obligatorio enviar los siguientes parámetros correspondientes: `structure_id`, `notifier_id`, `event_id` y `statement_id`.
 
 ## GET Structures
 ```curl
@@ -185,7 +185,7 @@ curl --location --request GET 'https://api.mercadopago.com/v1/reports/marketplac
 }
 ```
 
-## GET Notifiers
+## GET Notifier
 ```curl
 curl --location --request GET 'https://api.mercadopago.com/v1/reports/notifiers' \
 --header 'Authorization: Bearer {{TOKEN}}'
@@ -213,7 +213,7 @@ curl --location --request GET 'https://api.mercadopago.com/v1/reports/notifiers'
 ]
 ```
 
-## GET Notifiers por ID
+## GET Notifier por ID
 ```curl
 curl --location --request GET 'https://api.mercadopago.com/v1/reports/notifiers/:notifier:id' \
 --header 'Authorization: Bearer {{TOKEN}}'
@@ -236,7 +236,7 @@ curl --location --request GET 'https://api.mercadopago.com/v1/reports/notifiers/
 }
 ```
 
-## GET Events
+## GET Event
 ```curl
 curl --location --request GET 'https://api.mercadopago.com/v1/reports/marketplace_sellers_sales/events' \
 --header 'Authorization: Bearer {{TOKEN}}'
@@ -268,7 +268,7 @@ curl --location --request GET 'https://api.mercadopago.com/v1/reports/marketplac
 ]
 ```
 
-## GET Events por ID
+## GET Event por ID
 ```curl
 curl --location --request GET 'https://api.mercadopago.com/v1/reports/marketplace_sellers_sales/events/:event_id' \
 --header 'Authorization: Bearer {{TOKEN}}'
@@ -296,7 +296,7 @@ curl --location --request GET 'https://api.mercadopago.com/v1/reports/marketplac
 }
 ```
 
-## GET Statements
+## GET Statement
 ```curl
 curl --location --request GET 'https://api.mercadopago.com/v1/reports/marketplace_sellers_sales/statements/{{statement_id}}' \
 --header 'Content-Type: application/json' \
@@ -362,7 +362,7 @@ curl --location --request GET 'https://api.mercadopago.com/v1/reports/marketplac
 }
 ```
 
-## GET Statements por ID
+## GET Statement por ID
 ```curl
 curl --location --request GET 'https://api.mercadopago.com/v1/reports/marketplace_sellers_sales/statements/:statement_id' \
 --header 'Content-Type: application/json' \
