@@ -13,6 +13,7 @@ To update your plugin by installing the new version, simply follow the installat
 > You can install the new plugin without interfering with the operation of the old plugin. Once you have confirmed the correct operation of the new plugin, proceed to disable the old version.
 
 ## Features by version
+
 | Feature                               | New plugin | Old plugin |
 |--------------------------------------------|------------|------------|
 | Card payments                               | ✅          | ✅          |
