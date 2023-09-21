@@ -126,19 +126,11 @@ We will examine each aspect of these settings in detail below.
 >
 > The properties defined in this section of the documentation as mandatory are exclusive to the review stage and are disregarded at other times in the payment flow.
 
-> Required
->
-> h2
->
-> Feature activation (mandatory)
+## Feature activation (mandatory)
 
 The `enableReviewStep` property is responsible for triggering the feature, meaning the review section will be rendered only when this property is set to true.
 
-> Optional
->
-> h2
->
-> Items (mandatory)
+## Items (mandatory)
 
 Define the items that make up the order, and filling in this property is mandatory. Here's an example:
 

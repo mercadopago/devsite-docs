@@ -248,7 +248,7 @@ const discounts = {
 >
 > La presentación de los descuentos, incluido el monto total, es solo una representación visual y no se restará automáticamente del monto total del pago.
 
-## Personalización de la disposición de los cuadros de información (opcional)
+## Personalización de la disposición de cuadros de información (opcional)
 
 La disposición de los cuadros con la información del comprador sigue por defecto un orden basado en el más comúnmente utilizado: `payment_method`, `shipping` e `billing`.
 
