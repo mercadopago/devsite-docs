@@ -11,7 +11,7 @@ Luego, deberás instalar el SDK de frontend de Mercado Pago en tu proyecto para 
 La instalación se realiza, básicamente, en **dos pasos**: 
 
 1. [Agregar el SDK de Mercado Pago al proyecto con tus credenciales configuradas](/developers/es/docs/checkout-pro/integrate-checkout-pro/web#bookmark_agregar_el_sdk_de_mercado_pago_al_proyecto)
-2. [Iniciar el checkout desde la preferencia generada previamente](/developers/es/docs/checkout-pro/integrate-checkout-pro/web#bookmark_iniciar_el_checkout_desde_la_preferencia)
+2. [Iniciar el checkout desde la preferencia](/developers/es/docs/checkout-pro/integrate-checkout-pro/web#bookmark_iniciar_el_checkout_desde_la_preferencia)
 
 > CLIENT_SIDE
 >
@@ -99,5 +99,4 @@ Al crear un pago es posible recibir 3 estados diferentes: `Pendiente`, `Rechazad
 ## Ejemplo de implementación
 
 Consulta el [ejemplo de integración completa](http://github.com/mercadopago/checkout-payment-sample) en GitHub para **PHP** o **NodeJS** para descargar un proyecto básico para una implementación rápida de Checkout Pro en tu sitio.
-
 
