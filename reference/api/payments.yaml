@@ -152,44 +152,44 @@ paths:
                                       eng: Passenger's last name.
                                       spa: Apellido del pasajero
                                       por: Sobrenome do passageiro
-                          route:
-                            type: object
-                            properties:
-                              departure:
-                                type: string
-                                description: Departure city.
-                                x-description-i18n:
-                                  eng: Departure city.
-                                  spa: Ciudad de salida
-                                  por: Cidade de partida
-                              destination:
-                                type: string
-                                description: Destination city.
-                                x-description-i18n:
-                                  eng: Destination city.
-                                  spa: Ciudad de destino
-                                  por: Cidade de destino
-                              departure_date_time:
-                                type: string
-                                description: Departure date and time.
-                                x-description-i18n:
-                                  eng: Departure date and time. Valid format is as follows - "yyyy-MM-ddTHH:mm:ss.sssZ". Example - 2023-12-31T09:37:52.000-04:00.
-                                  spa: Fecha y hora de salida. El formato válido es el siguiente - "yyyy-MM-ddTHH:mm:ss.sssZ". Ejemplo - 2023-12-31T09:37:52.000-04:00.
-                                  por: Data e hora de partida. O formato válido é o seguinte - "yyyy-MM-ddTHH:mm:ss.sssZ". Exemplo - 2023-12-31T09:37:52.000-04:00.
-                              arrival_date_time:
-                                type: string
-                                description: Arrival date and time.
-                                x-description-i18n:
-                                  eng: Arrival date and time. Valid format is as follows - "yyyy-MM-ddTHH:mm:ss.sssZ". Example - 2023-12-31T09:37:52.000-04:00.
-                                  spa: Fecha y hora de llegada. El formato válido es el siguiente - "yyyy-MM-ddTHH:mm:ss.sssZ". Ejemplo - 2023-12-31T09:37:52.000-04:00.
-                                  por: Data e hora de chegada. O formato válido é o seguinte - "yyyy-MM-ddTHH:mm:ss.sssZ". Exemplo - 2023-12-31T09:37:52.000-04:00.
-                              company:
-                                type: string
-                                description: Company name.
-                                x-description-i18n:
-                                  eng: Company name.
-                                  spa: Nombre de la empresa
-                                  por: Nome da empresa
+                              route:
+                                type: object
+                                properties:
+                                  departure:
+                                    type: string
+                                    description: Departure city.
+                                    x-description-i18n:
+                                      eng: Departure city.
+                                      spa: Ciudad de salida
+                                      por: Cidade de partida
+                                  destination:
+                                    type: string
+                                    description: Destination city.
+                                    x-description-i18n:
+                                      eng: Destination city.
+                                      spa: Ciudad de destino
+                                      por: Cidade de destino
+                                  departure_date_time:
+                                    type: string
+                                    description: Departure date and time.
+                                    x-description-i18n:
+                                      eng: Departure date and time. Valid format is as follows - "yyyy-MM-ddTHH:mm:ss.sssZ". Example - 2023-12-31T09:37:52.000-04:00.
+                                      spa: Fecha y hora de salida. El formato válido es el siguiente - "yyyy-MM-ddTHH:mm:ss.sssZ". Ejemplo - 2023-12-31T09:37:52.000-04:00.
+                                      por: Data e hora de partida. O formato válido é o seguinte - "yyyy-MM-ddTHH:mm:ss.sssZ". Exemplo - 2023-12-31T09:37:52.000-04:00.
+                                  arrival_date_time:
+                                    type: string
+                                    description: Arrival date and time.
+                                    x-description-i18n:
+                                      eng: Arrival date and time. Valid format is as follows - "yyyy-MM-ddTHH:mm:ss.sssZ". Example - 2023-12-31T09:37:52.000-04:00.
+                                      spa: Fecha y hora de llegada. El formato válido es el siguiente - "yyyy-MM-ddTHH:mm:ss.sssZ". Ejemplo - 2023-12-31T09:37:52.000-04:00.
+                                      por: Data e hora de chegada. O formato válido é o seguinte - "yyyy-MM-ddTHH:mm:ss.sssZ". Exemplo - 2023-12-31T09:37:52.000-04:00.
+                                  company:
+                                    type: string
+                                    description: Company name.
+                                    x-description-i18n:
+                                      eng: Company name.
+                                      spa: Nombre de la empresa
+                                      por: Nome da empresa
                     payer:
                       type: object
                       description: The payer is the one who makes the payment. This field is an object that has the payer's information.
@@ -305,10 +305,10 @@ paths:
                             spa: Tipo de autenticación utilizada por el pagador
                             por: Tipo de autenticação utilizada pelo pagador
                           enum:
-                            - Gmail
-                            - Facebook
-                            - Native web
-                            - Other
+                            - Gmail -- Authentication via Gmail
+                            - Facebook -- Authentication via Facebook login
+                            - Native web -- Authentication via web application
+                            - Other -- Other type of identification
                     shipments:
                       type: object
                       description: Object containing all the information for shipping the customer's purchase.
@@ -400,7 +400,7 @@ paths:
                             eng: Indicates if the shipment is express or not. Valid values are as follows - "1" if it is, "0" if it isn't.
                             spa: Indica si el envío es express o no. Los valores válidos son los siguientes - "1" si lo es, "0" si no lo es.
                             por: Indica se o envio é expresso ou não. Os valores válidos são os seguintes - "1" se for, "0" se não for.
-                        pickup_on_seller:
+                        pick_up_on_seller:
                           type: string
                           description: Indicates if the customer will pick up the product at the seller's address. Valid values are as follows - "1" if it is, "0" if it isn't.
                           x-description-i18n:
