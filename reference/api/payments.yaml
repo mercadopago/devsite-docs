@@ -134,6 +134,13 @@ paths:
                             spa: Es el campo de apellido del comprador.
                             por: É o campo do sobrenome do comprador.
                           example: Test
+                        email:
+                          type: string
+                          description: Buyer's email.
+                          x-description-i18n:
+                            eng: Buyer's email.
+                            spa: E-mail del comprador.
+                            por: E-mail do comprador.
                         phone:
                           type: object
                           description: Buyer's phone.
@@ -484,6 +491,7 @@ paths:
                         eng: Email associated with the payer. This value will only return a response when status=approved, status=refunded, or status=charged_back.
                         spa: Correo electrónico asociado al payer. Este valor sólo devolverá una respuesta cuando status=approved, status=refunded o status=charged_back.
                         por: Email associado ao payer. Este valor só retornará uma resposta quando status=approved, status=refunded ou status=charged_back.
+                      example: test_user_80507629@testuser.com
                       required: true
                     identification:
                       type: object
